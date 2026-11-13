@@ -1,0 +1,1086 @@
+{
+ "intro": "Koe kattaa koko moduulin: valosähköinen ilmiö ja fotoni, spektrit ja atomin energiatasot, vetyatomi, kvanttimekaaninen atomimalli, LED ja laser, atomiydin ja radioaktiivinen hajoaminen, hajoamislaki, sidosenergia, fissio ja fuusio, ionisoiva säteily ja säteilyannokset, säteily lääketieteessä sekä standardimalli. Käytä tarvittaessa arvoja: Planckin vakio $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, valon nopeus $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$ (joten $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$) ja atomimassayksikkö $1\\,\\text{u} = 931{,}5\\,\\text{MeV}/c^2 = 1{,}6605 \\cdot 10^{-27}\\,\\text{kg}$. Vetyatomin energiatasot ovat $E_n = -13{,}6\\,\\text{eV} / n^2$. Laskin ja taulukkolaskenta ovat sallittuja. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
+ "minutes": 120,
+ "max_points": 70,
+ "sections": [
+  {
+   "title": "Osa 1: Perusosaaminen",
+   "tasks": [
+    "fy8-k1"
+   ]
+  },
+  {
+   "title": "Osa 2: Perustehtävät",
+   "choose": 2,
+   "tasks": [
+    "fy8-k2",
+    "fy8-k3",
+    "fy8-k4",
+    "fy8-k5"
+   ]
+  },
+  {
+   "title": "Osa 3: Soveltavat tehtävät",
+   "choose": 1,
+   "tasks": [
+    "fy8-k6",
+    "fy8-k7"
+   ]
+  }
+ ],
+ "tasks": [
+  {
+   "id": "fy8-k1",
+   "title": "Monivalinnat",
+   "text": "Valitse jokaisessa kohdassa yksi vaihtoehto. Oikea vastaus on $2$ p, väärä tai puuttuva $0$ p.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "choice",
+     "points": 2,
+     "text": "Metallilevyyn osuu monokromaattista ultraviolettivaloa, ja valosähköinen ilmiö tapahtuu. Valon taajuus pysyy samana, mutta sen intensiteetti kaksinkertaistetaan. Miten irtoavien elektronien suurin liike-energia ja irtoavien elektronien lukumäärä aikayksikössä muuttuvat?",
+     "options": [
+      "Suurin liike-energia kaksinkertaistuu, ja elektronien lukumäärä pysyy samana.",
+      "Suurin liike-energia pysyy samana, ja elektronien lukumäärä kaksinkertaistuu.",
+      "Sekä suurin liike-energia että elektronien lukumäärä kaksinkertaistuvat.",
+      "Suurin liike-energia ja elektronien lukumäärä pysyvät molemmat samoina."
+     ],
+     "correct": 1,
+     "tag": "concept"
+    },
+    {
+     "id": "b",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kuvaajassa on metallin pysäytysjännite $U_\\text{s}$ valon taajuuden $f$ funktiona. Mikä on metallin irrotustyö?",
+     "options": [
+      "$2{,}3 \\cdot 10^{-19}\\,\\text{J}$",
+      "$3{,}7 \\cdot 10^{-19}\\,\\text{J}$",
+      "$3{,}7\\,\\text{eV}$",
+      "$5{,}6 \\cdot 10^{-19}\\,\\text{J}$"
+     ],
+     "correct": 1,
+     "tag": "graph",
+     "figure": "fy8-koe/fy8-k1-stop"
+    },
+    {
+     "id": "c",
+     "kind": "choice",
+     "points": 2,
+     "text": "Valkoinen valo kulkee kylmän, harvan kaasun läpi, ja spektrissä näkyy jatkuvan taustan seassa tummia viivoja. Mikä päätelmä on oikein?",
+     "options": [
+      "Kaasu on itse lähettänyt viivojen aallonpituudet, joten ne ovat kaasun emissioviivoja.",
+      "Kaasun atomit absorboivat vain fotoneja, joiden energia vastaa energiatasojen eroa; viivat paljastavat alkuaineen.",
+      "Viivojen aallonpituudet riippuvat kaasun tiheydestä mutta eivät siitä, mitä alkuainetta kaasu on.",
+      "Valonlähde ei lähetä tummien viivojen kohdalla lainkaan valoa, joten viivat kertovat lähteen koostumuksesta."
+     ],
+     "correct": 1,
+     "tag": "concept"
+    },
+    {
+     "id": "d",
+     "kind": "choice",
+     "points": 2,
+     "text": "Vetyatomin energiatasot ovat $E_n = -13{,}6\\,\\text{eV} / n^2$. Atomi siirtyy ensimmäisessä tapauksessa tasolta $n = 2$ perustilalle $n = 1$ ja toisessa tapauksessa tasolta $n = 3$ tasolle $n = 2$. Kuinka moninkertainen on ensimmäisessä siirtymässä lähtevän fotonin energia toisen siirtymän fotoniin verrattuna?",
+     "options": [
+      "noin $1{,}0$-kertainen",
+      "noin $3{,}0$-kertainen",
+      "noin $5{,}4$-kertainen",
+      "noin $0{,}6$-kertainen"
+     ],
+     "correct": 2,
+     "tag": "math"
+    },
+    {
+     "id": "e",
+     "kind": "choice",
+     "points": 2,
+     "text": "Punaisen LEDin valon aallonpituus on $650\\,\\text{nm}$ ja sen kynnysjännite on $1{,}9\\,\\text{V}$. Sinisen LEDin valon aallonpituus on $450\\,\\text{nm}$. Mikä on sinisen LEDin kynnysjännite likimain, kun $eU_\\text{k} \\approx hf$?",
+     "options": [
+      "$2{,}7\\,\\text{V}$",
+      "$1{,}3\\,\\text{V}$",
+      "$4{,}0\\,\\text{V}$",
+      "$1{,}9\\,\\text{V}$"
+     ],
+     "correct": 0,
+     "tag": "math"
+    },
+    {
+     "id": "f",
+     "kind": "choice",
+     "points": 2,
+     "text": "Laserin toiminta perustuu stimuloituun emissioon. Mitä siinä tapahtuu?",
+     "options": [
+      "Ohi kulkeva fotoni saa virittyneen atomin lähettämään samanlaisen fotonin: sama taajuus, suunta ja vaihe.",
+      "Atomi absorboi fotonin ja lähettää sen hetken kuluttua uudelleen mihin suuntaan tahansa, joten valo hajaantuu.",
+      "Perustilassa oleva atomi lähettää fotonin törmätessään toiseen atomiin, ja taajuus on satunnainen.",
+      "Yksi fotoni jakautuu kahdeksi fotoniksi, joilla kummallakin on puolet alkuperäisestä energiasta."
+     ],
+     "correct": 0,
+     "tag": "concept"
+    },
+    {
+     "id": "g",
+     "kind": "choice",
+     "points": 2,
+     "text": "Radioaktiivisen näytteen puoliintumisaika on $4{,}0\\,\\text{h}$ ja sen aktiivisuus on aluksi $3{,}2\\,\\text{MBq}$. Kuinka kauan kuluu, ennen kuin aktiivisuus on pienentynyt arvoon $0{,}10\\,\\text{MBq}$?",
+     "options": [
+      "$7{,}8\\,\\text{h}$",
+      "$16\\,\\text{h}$",
+      "$20\\,\\text{h}$",
+      "$32\\,\\text{h}$"
+     ],
+     "correct": 2,
+     "tag": "math"
+    },
+    {
+     "id": "h",
+     "kind": "choice",
+     "points": 2,
+     "text": "Uraani-235-ytimen fissiossa vapautuu energiaa noin $200\\,\\text{MeV}$ ja hiiliatomin palamisessa hiilidioksidiksi noin $4\\,\\text{eV}$. Kuinka monta kertaa suurempi energia vapautuu yhtä fissiota kohti kuin yhtä palavaa hiiliatomia kohti?",
+     "options": [
+      "noin $50$",
+      "noin $5 \\cdot 10^{4}$",
+      "noin $5 \\cdot 10^{7}$",
+      "noin $5 \\cdot 10^{10}$"
+     ],
+     "correct": 2,
+     "tag": "math"
+    },
+    {
+     "id": "i",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kudokseen absorboituu sama energia kahdessa tapauksessa: gammasäteilynä ja alfasäteilynä. Absorboitunut annos on molemmissa $1{,}0\\,\\text{mGy}$. Säteilyn painotuskerroin on gammasäteilylle $1$ ja alfasäteilylle $20$. Mikä väite pitää paikkansa?",
+     "options": [
+      "Absorboitunut annos on alfasäteilylle $20$ kertaa suurempi, koska alfahiukkanen on raskas ja hidas.",
+      "Ekvivalenttiannokset ovat yhtä suuret, koska kudokseen absorboitui sama energia ja annos on sama.",
+      "Ekvivalenttiannos on gammasäteilylle suurempi, koska gammasäteily läpäisee kudoksen syvemmälle.",
+      "Alfasäteilyn ekvivalenttiannos on $20\\,\\text{mSv}$ ja gammasäteilyn $1{,}0\\,\\text{mSv}$."
+     ],
+     "correct": 3,
+     "tag": "concept"
+    },
+    {
+     "id": "j",
+     "kind": "choice",
+     "points": 2,
+     "text": "Neutroni hajoaa beeta-miinushajoamisessa protoniksi, elektroniksi ja elektronin antineutriinoksi. Mikä kuvaa tapahtumaa kvarkkitasolla?",
+     "options": [
+      "Vahva vuorovaikutus muuttaa neutronin kvarkin $\\text{d}$ kvarkiksi $\\text{u}$, ja syntyy protoni.",
+      "Heikko vuorovaikutus muuttaa neutronin kvarkin $\\text{u}$ kvarkiksi $\\text{d}$.",
+      "Sähkömagneettinen vuorovaikutus muuttaa neutronin kvarkin $\\text{d}$ suoraan elektroniksi ja protoniksi.",
+      "Heikko vuorovaikutus muuttaa neutronin kvarkin $\\text{d}$ kvarkiksi $\\text{u}$; samalla syntyy elektroni."
+     ],
+     "correct": 3,
+     "tag": "concept"
+    }
+   ],
+   "skills": [
+    "fy8-1",
+    "fy8-2",
+    "fy8-3",
+    "fy8-6",
+    "fy8-7",
+    "fy8-9",
+    "fy8-11",
+    "fy8-13",
+    "fy8-15"
+   ],
+   "links": {
+    "concept": "fy8-1",
+    "graph": "fy8-1",
+    "math": "fy8-3",
+    "experiment": "fy8-6"
+   }
+  },
+  {
+   "id": "fy8-k2",
+   "title": "LEDit ja Planckin vakio",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia.",
+   "text": "Opiskelija tutki, miten LEDin kynnysjännite $U_\\text{k}$ riippuu LEDin valon taajuudesta, ja yritti määrittää Planckin vakion. Hän kytki viisi eri värin LEDiä vuorotellen suojavastuksen kautta säädettävään jännitelähteeseen, nosti jännitettä hitaasti ja luki jännitemittarilla sen jännitteen, jolla LED alkoi juuri tuottaa näkyvää valoa. Valon aallonpituus $\\lambda$ on LEDin spektrin huipun kohta valmistajan tietojen mukaan. Jännitelukeman epävarmuus on $\\pm 0{,}05\\,\\text{V}$ jokaisessa mittauksessa.\n\n| $\\lambda\\ (\\text{nm})$ | $U_\\text{k}\\ (\\text{V})$ |\n|---|---|\n| $625$ | $1{,}91$ |\n| $590$ | $2{,}07$ |\n| $525$ | $2{,}31$ |\n| $470$ | $2{,}62$ |\n| $430$ | $2{,}84$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 5,
+     "text": "Laske valon taajuudet ja piirrä $(f, U_\\text{k})$-kuvaaja virhepalkkeineen. Sovita pisteisiin suora.",
+     "criteria": [
+      {
+       "text": "Laskee taajuudet $f = c / \\lambda$ oikein: noin $4{,}80$, $5{,}08$, $5{,}71$, $6{,}38$ ja $6{,}97 \\cdot 10^{14}\\,\\text{Hz}$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 1,
+       "detail": "Jokaiseen pisteeseen on piirretty virhepalkki $\\pm 0{,}05\\,\\text{V}$."
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Pisteisiin on sovitettu suora, joka kulkee kaikkien virhepalkkien lähellä; suora ei ole murtoviiva."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä kuvaajan avulla Planckin vakion arvo.",
+     "answer": {
+      "value": 6.81e-34,
+      "unit": "J s",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Kynnysjännitteelle $eU_\\text{k} \\approx hf$, joten kulmakerroin on $\\tfrac{h}{e}$ ja $h = e \\cdot \\text{kulmakerroin}$."
+      },
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(5{,}0 \\cdot 10^{14}\\,\\text{Hz};\\ 2{,}02\\,\\text{V})$ ja $(6{,}8 \\cdot 10^{14}\\,\\text{Hz};\\ 2{,}78\\,\\text{V})$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$h \\approx 6{,}8 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Arvioi kohdassa b määritetyn Planckin vakion epävarmuus piirtämällä jyrkin ja loivin suora, jotka vielä kulkevat kaikkien viiden virhepalkin sisällä. Sopiiko tulos tunnettuun arvoon $6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$?",
+     "answer": {
+      "value": 6e-35,
+      "unit": "J s",
+      "tolerance": 0.2
+     },
+     "criteria": [
+      {
+       "key": "uncertainty",
+       "points": 2,
+       "detail": "Jyrkin ja loivin suora kulkevat kaikkien virhepalkkien sisällä; kulmakertoimista lasketaan $h_\\text{max} \\approx 7{,}4 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ ja $h_\\text{min} \\approx 6{,}2 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$; epävarmuus on niiden eron puolikas."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Tulos on $(6{,}8 \\pm 0{,}6) \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, ja tunnettu arvo kuuluu väliin: mittaus on sopusoinnussa."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 2,
+     "text": "Kuvaajan suora ei kulje origon kautta, vaikka malli $eU_\\text{k} = hf$ ennustaa suoran origon kautta. Nimeä yksi virhelähde ja selitä, miten se vaikuttaa tulokseen.",
+     "criteria": [
+      {
+       "key": "error_sources",
+       "points": 2,
+       "detail": "Nimeää virhelähteen ja päättelee sen suunnan oikein (väärän suunnan lähde ansaitsee enintään 1 p): pisteet ovat mallin $\\tfrac{hf}{e}$ alapuolella (suora leikkaa pystyakselin noin $-0{,}1\\,\\text{V}$:ssa). Esimerkiksi LEDin spektri on leveä ja kaistaväli on huipun fotonin energiaa pienempi; vaikutus kulmakertoimeen on perusteltava, sillä värin mukaan muuttuva virhe voi muuttaa myös kulmakerrointa."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy8-6",
+    "fy8-1"
+   ],
+   "links": {
+    "math": "fy8-6",
+    "graph": "fy8-6",
+    "experiment": "fy8-6",
+    "communication": "fy8-6"
+   }
+  },
+  {
+   "id": "fy8-k3",
+   "title": "Lyhytikäisen näytteen hajoaminen",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia.",
+   "text": "Opiskelija seurasi lyhytikäisen radioaktiivisen näytteen hajoamista Geiger-mittarilla, joka rekisteröi suuren osan näytteen lähettämistä hiukkasista. Hän laski jokaisen minuutin alussa $30\\,\\text{s}$:n aikana rekisteröityjen pulssien lukumäärän $N$. Taustasäteilyn osuus on merkityksetön.\n\n| $t\\ (\\text{min})$ | $0$ | $1$ | $2$ | $3$ | $4$ | $6$ | $8$ | $10$ |\n|---|---|---|---|---|---|---|---|---|\n| $N$ | $803$ | $631$ | $535$ | $409$ | $345$ | $205$ | $150$ | $88$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 5,
+     "text": "Piirrä $(t, N)$-kuvaaja ja sovita pisteisiin sopiva malli.",
+     "criteria": [
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 1
+      },
+      {
+       "text": "Valitsee mallin, jossa lukumäärä pienenee eksponentiaalisesti: $N = N_0 e^{-\\lambda t}$ tai muu perusteltu valinta.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Pisteisiin on sovitettu sileä, laskeva, alaspäin kupera käyrä, joka alkaa noin arvosta $800$; pisteitä ei ole yhdistetty murtoviivaksi."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 3,
+     "text": "Määritä näytteen puoliintumisaika kuvaajalta.",
+     "answer": {
+      "value": 3.18,
+      "unit": "min",
+      "tolerance": 0.06
+     },
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 2,
+       "detail": "Luetaan aika, jossa käyrä on puolittunut alkuarvosta $\\approx 800$ arvoon $\\approx 400$; tarkistus toisella puolittumisella ($400 \\to 200$)."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$T_{1/2} \\approx 3{,}2\\,\\text{min}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske hajoamisvakio ja ennusta, kuinka monta pulssia rekisteröidään $30\\,\\text{s}$:n aikana hetkestä $t = 15\\,\\text{min}$ alkaen.",
+     "answer": [
+      {
+       "name": "lam",
+       "value": 0.218,
+       "unit": "1/min",
+       "tolerance": 0.05
+      },
+      {
+       "name": "N",
+       "value": 30.5,
+       "unit": "",
+       "tolerance": 0.08
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\lambda = \\tfrac{\\ln 2}{T_{1/2}}$ ja $N = N_0 e^{-\\lambda t}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\lambda \\approx 0{,}22\\,\\text{min}^{-1}$ ja $N \\approx 31$ pulssia."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Ennuste on noin $4\\,\\%$ alkuarvosta, sillä $15\\,\\text{min}$ on noin $4{,}7$ puoliintumisaikaa ($15\\,\\text{min} : 3{,}2\\,\\text{min}$)."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 3,
+     "text": "Ensimmäinen mittaus $N = 803$ on satunnaismuuttuja, jonka hajonta on likimain $\\sqrt{N}$. Laske sen suhteellinen epävarmuus prosentteina ja selitä, miksi pisteet eivät ole täsmälleen käyrällä, vaikka hajoamislaki pätee.",
+     "answer": {
+      "value": 3.5,
+      "unit": "%",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\sqrt{803} \\approx 28$, suhteellinen epävarmuus $28 : 803 \\approx 3{,}5\\,\\%$."
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Pisteiden poikkeamat käyrästä ovat enintään noin $\\sqrt{N}$:n suuruisia ($10$–$20$ pulssia)."
+      },
+      {
+       "text": "Selittää, että yksittäisen ytimen hajoaminen on satunnaista: laki kuvaa suuren joukon keskimääräistä käyttäytymistä, joten lukumäärä vaihtelee sattumanvaraisesti odotusarvonsa ympärillä.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy8-9",
+    "fy8-8"
+   ],
+   "links": {
+    "graph": "fy8-9",
+    "math": "fy8-9",
+    "transfer": "fy8-9",
+    "experiment": "fy8-9",
+    "concept": "fy8-8"
+   }
+  },
+  {
+   "id": "fy8-k4",
+   "title": "Deuterium-tritiumfuusio",
+   "source": "example",
+   "source_note": "Atomimassat ovat taulukkoarvoja (AME2020, pyöristetty), ja hiilen palamislämpö on likiarvo.",
+   "text": "Tulevaisuuden fuusiovoimalan polttoaineena on suunniteltu käytettävän vedyn isotooppeja deuteriumia ja tritiumia. Reaktio on $\\,{}^{2}_{1}\\text{D} + {}^{3}_{1}\\text{T} \\to {}^{4}_{2}\\text{He} + {}^{1}_{0}\\text{n}$. Atomimassat: $m({}^{1}\\text{H}) = 1{,}007825\\,\\text{u}$, $m({}^{2}\\text{D}) = 2{,}014102\\,\\text{u}$, $m({}^{3}\\text{T}) = 3{,}016049\\,\\text{u}$, $m({}^{4}\\text{He}) = 4{,}002603\\,\\text{u}$ ja neutronin massa $m_\\text{n} = 1{,}008665\\,\\text{u}$. Kivihiilen palamislämpö on likimain $30\\,\\text{MJ/kg}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Laske helium-4-ytimen sidosenergia ja sidosenergia nukleonia kohti.",
+     "answer": [
+      {
+       "name": "E",
+       "value": 28.3,
+       "unit": "MeV",
+       "tolerance": 0.02
+      },
+      {
+       "name": "per",
+       "value": 7.07,
+       "unit": "MeV",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Massavaje $\\Delta m = Zm_\\text{H} + Nm_\\text{n} - m_\\text{atomi}$ ja $E_\\text{s} = \\Delta m \\cdot c^2$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$E_\\text{s} \\approx 28{,}3\\,\\text{MeV}$ ja $7{,}07\\,\\text{MeV}$ nukleonia kohti; sekä atomimassayksikkö ja $931{,}5\\,\\text{MeV}$ että kilogrammat ja $c^2$ hyväksytään."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske yhden fuusioreaktion vapauttama energia megaelektronivoltteina.",
+     "answer": {
+      "value": 17.59,
+      "unit": "MeV",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$Q = (m_\\text{alku} - m_\\text{loppu})c^2$ atomimassoilla; elektronit ovat molemmin puolin yhtä monta."
+      },
+      {
+       "key": "calculation",
+       "points": 2,
+       "detail": "Massojen summat $5{,}030151\\,\\text{u}$ ja $5{,}011268\\,\\text{u}$, massan väheneminen $0{,}018883\\,\\text{u}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$Q \\approx 17{,}6\\,\\text{MeV}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka paljon energiaa vapautuu, kun fuusioituu yksi kilogramma deuterium–tritium-seosta, jossa on yhtä monta deuteriumia ja tritiumia? Vertaa kivihiilen palamislämpöön.",
+     "answer": {
+      "value": 337000000000000.0,
+      "unit": "J/kg",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "text": "Päättelee, että yhtä reaktiota kohti kuluu yksi D ja yksi T, joten polttoaineen massa reaktiota kohti on $m_\\text{D} + m_\\text{T}$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$Q = 17{,}59\\,\\text{MeV} = 2{,}818 \\cdot 10^{-12}\\,\\text{J}$ ja massa $8{,}35 \\cdot 10^{-27}\\,\\text{kg}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\approx 3{,}4 \\cdot 10^{14}\\,\\text{J/kg}$."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Energiaa vapautuu noin $10^{7}$-kertaisesti kivihiileen verrattuna."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 4,
+     "text": "Sidosenergia nukleonia kohti on deuteriumilla $1{,}11\\,\\text{MeV}$, tritiumilla $2{,}83\\,\\text{MeV}$ ja helium-4:llä $7{,}07\\,\\text{MeV}$. Selitä näiden avulla, miksi reaktio vapauttaa energiaa, ja miksi fuusion käynnistäminen vaatii noin sadan miljoonan kelvinin lämpötilan.",
+     "criteria": [
+      {
+       "text": "Vertaa sidosenergioita nukleonia kohti ($7{,}07$ vs. $1{,}11$ ja $2{,}83\\,\\text{MeV}$): lopputila on tiukemmin sidottu, joten sen massa on pienempi ja massaero vapautuu energiana.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "text": "Selittää, että positiivisesti varatut ytimet hylkivät toisiaan sähköisesti, joten reaktio ei käynnisty itsestään: ytimien on päästävä lähelle toisiaan, kunnes lyhyen kantaman vahva vuorovaikutus sitoo ne, ja siihen tarvitaan suuri liike-energia eli korkea lämpötila.",
+       "tag": "concept",
+       "points": 2
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy8-10",
+    "fy8-11"
+   ],
+   "links": {
+    "math": "fy8-10",
+    "transfer": "fy8-11",
+    "concept": "fy8-11",
+    "communication": "fy8-11"
+   }
+  },
+  {
+   "id": "fy8-k5",
+   "title": "Vetyatomin energiatilat",
+   "source": "example",
+   "source_note": "Tehtävän tilanteet ja luvut on laadittu esimerkiksi; energiatasot on annettu tehtävänannossa.",
+   "text": "Vetyatomin energiatasot ovat $E_n = -13{,}6\\,\\text{eV} / n^2$, missä $n = 1, 2, 3, \\ldots$ ja $n = 1$ on perustila.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Vetyatomi siirtyy tasolta $n = 3$ tasolle $n = 2$. Laske lähtevän fotonin aallonpituus ja päättele, onko valo näkyvää.",
+     "answer": {
+      "value": 656.5,
+      "unit": "nm",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Fotonin energia on energiatasojen erotus $E = E_3 - E_2$ ja $E = \\tfrac{hc}{\\lambda}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$E \\approx 1{,}889\\,\\text{eV} = 3{,}026 \\cdot 10^{-19}\\,\\text{J}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\lambda \\approx 656\\,\\text{nm}$."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "$656\\,\\text{nm}$ on punaista, näkyvää valoa."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kylmä vetykaasu on perustilassa, ja sen läpi kulkee valkoista valoa. Selitä, miksi näkyvän valon alueelle ei synny absorptioviivoja, ja laske pisin aallonpituus, jonka kaasu voi absorboida.",
+     "answer": {
+      "value": 121.6,
+      "unit": "nm",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Selittää, että atomi absorboi vain fotonin, jonka energia on täsmälleen kahden energiatason erotus, ja perustilasta lähtevistä siirtymistä pienin energiaero on $E_2 - E_1$.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\lambda = \\tfrac{hc}{E_2 - E_1}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$E_2 - E_1 = 10{,}2\\,\\text{eV}$, $\\lambda \\approx 122\\,\\text{nm}$ eli ultravioletti."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Atomi on virittyneessä tilassa $n = 2$, ja siihen osuu fotoni, jonka aallonpituus on $200\\,\\text{nm}$. Ionisoiko fotoni atomin? Jos ionisoi, mikä on vapautuvan elektronin liike-energia?",
+     "answer": {
+      "value": 2.8,
+      "unit": "eV",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "text": "Vertaa fotonin energiaa tason $n = 2$ ionisaatioenergiaan $3{,}4\\,\\text{eV}$ ja päättelee, että ionisaatio tapahtuu, koska fotonin energia on suurempi.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$E_\\text{k} = hf - E_\\text{ion}$ (energian säilyminen)."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Fotonin energia $\\tfrac{hc}{\\lambda} \\approx 6{,}20\\,\\text{eV}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$E_\\text{k} \\approx 2{,}8\\,\\text{eV} \\approx 4{,}5 \\cdot 10^{-19}\\,\\text{J}$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Aaltomekaanisessa atomimallissa elektronilla ei ole Bohrin mallin tapaan tarkkaa rataa. Selitä, mitä orbitaali tarkoittaa ja miksi atomin energiat ovat kvantittuneet.",
+     "criteria": [
+      {
+       "text": "Kertoo, että orbitaali on alue, jossa elektroni löytyy suurella todennäköisyydellä; se ei kuvaa elektronin rataa.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Selittää, että ytimen ympärillä rajoitetun elektronin aaltofunktio on seisova aalto, jolle sopivat vain tietyt tilat, joten energiat ovat erillisiä eli kvantittuneita.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Kertoo, että jokaista sallittua seisovaa aaltoa eli tilaa vastaa oma energiansa, joten tilojen välillä ei ole muita energioita.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy8-2",
+    "fy8-3",
+    "fy8-5"
+   ],
+   "links": {
+    "math": "fy8-3",
+    "concept": "fy8-5",
+    "communication": "fy8-5"
+   }
+  },
+  {
+   "id": "fy8-k6",
+   "title": "Lyijysuoja gammalähteelle",
+   "source": "example",
+   "source_note": "Mittaustulokset ja lähteen annosnopeus on laadittu esimerkiksi; väestön vuosiannosraja on $1\\,\\text{mSv}$ (säteilylaki 859/2018).",
+   "text": "Tutkimuslaboratorio asentaa gammalähteen kellarihuoneeseen. Viereisessä huoneessa, $3{,}0\\,\\text{m}$ lähteestä, oleskelee työntekijöitä $2000\\,\\text{h}$ vuodessa; heidän vuosiannoksensa lähteestä ei saa ylittää väestön annosrajaa $1\\,\\text{mSv}$. Lähteen annosnopeus ilman suojaa on $160\\,\\mu\\text{Sv/h}$ etäisyydellä $1{,}0\\,\\text{m}$. Lähteen eteen aiotaan laittaa lyijylevy. Lyijyn vaikutuksen mittaamiseksi lähteen ja Geiger-mittarin väliin asetettiin eripaksuisia lyijylevyjä, ja mittari laski pulssinopeuden $R$, kun jokainen mittaus kesti $100\\,\\text{s}$. Ilman lähdettä mitattiin myös taustapulssinopeus, $0{,}8\\,\\text{s}^{-1}$, samoin $100\\,\\text{s}$:n ajan. Mittaukset:\n\n| $d\\ (\\text{mm})$ | $0$ | $3$ | $6$ | $9$ | $12$ | $18$ | $24$ |\n|---|---|---|---|---|---|---|---|\n| $R\\ (\\text{s}^{-1})$ | $120{,}9$ | $85{,}7$ | $61{,}3$ | $43{,}2$ | $31{,}4$ | $16{,}0$ | $8{,}7$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Laske lähteen aiheuttama nettopulssinopeus paksuudella $24\\,\\text{mm}$ ja perustele, miksi tausta on vähennettävä ennen tulosten käsittelyä.",
+     "answer": {
+      "value": 7.9,
+      "unit": "1/s",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "text": "Perustelee, että tausta ei riipu lyijyn paksuudesta eikä lähteestä: vain lähteen osuus vaimenee lyijyssä, joten taustaa ei saa jättää mukaan.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$8{,}7\\,\\text{s}^{-1} - 0{,}8\\,\\text{s}^{-1}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$7{,}9\\,\\text{s}^{-1}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "graph",
+     "points": 5,
+     "text": "Tutki sopivan kuvaajan avulla, miten nettopulssinopeus riippuu lyijyn paksuudesta.",
+     "criteria": [
+      {
+       "text": "Valitsee muuttujat, joilla riippuvuus on suora: $\\ln R$ paksuuden $d$ funktiona. Myös muu perusteltu suoraksi oikaiseva tai eksponentiaalinen sovitus hyväksytään.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 1
+      },
+      {
+       "key": "graph_fit",
+       "points": 1,
+       "detail": "Pisteisiin on sovitettu suora; pisteet ovat lähellä suoraa."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Suora osoittaa, että pulssinopeus vaimenee eksponentiaalisesti paksuuden kasvaessa."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä kuvaajan avulla lyijyn vaimennuskerroin ja puoliintumispaksuus.",
+     "answer": [
+      {
+       "name": "mu",
+       "value": 0.1137,
+       "unit": "1/mm",
+       "tolerance": 0.05
+      },
+      {
+       "name": "d",
+       "value": 6.1,
+       "unit": "mm",
+       "tolerance": 0.05
+      }
+     ],
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(0;\\ 4{,}78)$ ja $(24\\,\\text{mm};\\ 2{,}05)$."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\ln R = \\ln R_0 - \\mu d$, joten $\\mu = -\\text{kulmakerroin}$, ja $d_{1/2} = \\tfrac{\\ln 2}{\\mu}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\mu \\approx 0{,}114\\,\\text{mm}^{-1}$ ja $d_{1/2} \\approx 6{,}1\\,\\text{mm}$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka paksu lyijylevy tarvitaan, jotta viereisen huoneen työntekijöiden vuosiannos pysyy väestön annosrajassa?",
+     "answer": {
+      "value": 31.4,
+      "unit": "mm",
+      "tolerance": 0.06
+     },
+     "criteria": [
+      {
+       "text": "Laskee sallitun annosnopeuden $1000\\,\\mu\\text{Sv} : 2000\\,\\text{h} = 0{,}5\\,\\mu\\text{Sv/h}$ ja annosnopeuden ilman suojaa $3{,}0\\,\\text{m}$:n päässä etäisyyden neliölain mukaan, $160 : 9 \\approx 17{,}8\\,\\mu\\text{Sv/h}$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\dot{H} = \\dot{H}_0 e^{-\\mu d}$, josta $d = \\tfrac{1}{\\mu}\\ln\\tfrac{\\dot{H}_0}{\\dot{H}}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$d \\approx 31\\,\\text{mm}$."
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "calc",
+     "points": 4,
+     "text": "Arvioi nettopulssinopeuden suhteellinen epävarmuus paksuudella $24\\,\\text{mm}$, kun pulssien lukumäärän hajonta on $\\sqrt{N}$, ja arvioi, onko kohdan d vastaus luotettava. Miten suojan paksuus kannattaa valita?",
+     "answer": {
+      "value": 3.9,
+      "unit": "%",
+      "tolerance": 0.15
+     },
+     "criteria": [
+      {
+       "key": "uncertainty",
+       "points": 2,
+       "detail": "Pulsseja $N = 870$ ja taustapulsseja $80$; netto $790 \\pm \\sqrt{870 + 80} \\approx 790 \\pm 31$, suhteellinen epävarmuus $\\approx 3{,}9\\,\\%$."
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Malli on testattu vain alueella $0$–$24\\,\\text{mm}$ ja olettaa kapean, yhden energian säteilykimpun; tulos $31\\,\\text{mm}$ on ekstrapolointia."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Suosittelee varmuusmarginaalia, esimerkiksi paksumpaa levyä tai lisämittauksia suuremmilla paksuuksilla."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy8-9",
+    "fy8-12",
+    "fy8-13",
+    "fy8-14"
+   ],
+   "links": {
+    "concept": "fy8-13",
+    "transfer": "fy8-13",
+    "graph": "fy8-9",
+    "math": "fy8-9",
+    "experiment": "fy8-13",
+    "communication": "fy8-13"
+   }
+  },
+  {
+   "id": "fy8-k7",
+   "title": "PET-merkkiaine sairaalan ulkopuolelta",
+   "source": "example",
+   "source_note": "Tilanne ja annoskerroin $0{,}019\\,\\text{mSv/MBq}$ on laadittu esimerkiksi; fluori-18:n puoliintumisaika on taulukkoarvo ja suomalaisen keskimääräinen annos on STUK-A263 (2020).",
+   "text": "Sairaalan PET-kuvauksissa käytetään fluori-18-merkkiainetta, jonka puoliintumisaika on $109{,}8\\,\\text{min}$. Merkkiaine valmistetaan syklotronilaitoksessa, ja siitä kuljetetaan sairaalaan; valmistuksen ja injektion välinen aika on yhteensä $4{,}5\\,\\text{h}$, josta kuljetus on $3{,}0\\,\\text{h}$. Potilaan injektioon tarvitaan injektiohetkellä aktiivisuus $280\\,\\text{MBq}$; injektio tapahtuu $4{,}5\\,\\text{h}$ valmistuksen jälkeen. Merkkiaine hajoaa beeta-plus-hajoamisella: ydin lähettää positronin, joka annihiloituu lähellä olevan elektronin kanssa. Arvioidaan, että potilaan efektiivinen annos on $0{,}019\\,\\text{mSv}$ jokaista injisoitua megabecquerelia kohti. Suomalaisen keskimääräinen efektiivinen annos on noin $5{,}9\\,\\text{mSv}$ vuodessa (STUK-A263, 2020). Elektronin massa on $m_\\text{e} = 9{,}109 \\cdot 10^{-31}\\,\\text{kg}$.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri osa fluori-18-ytimistä on jäljellä, kun kuljetuksessa on kulunut $3{,}0\\,\\text{h}$?",
+     "answer": {
+      "value": 0.321,
+      "unit": "",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$N = N_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$t = 180\\,\\text{min}$, $\\tfrac{180}{109{,}8} \\approx 1{,}64$ puoliintumisaikaa."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\approx 0{,}32$ eli $32\\,\\%$ alkuperäisestä."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Kuinka suuri aktiivisuus merkkiainetta on valmistettava, jotta injektiohetkellä, $4{,}5\\,\\text{h}$ valmistuksen jälkeen, aktiivisuus on $280\\,\\text{MBq}$?",
+     "answer": {
+      "value": 1540,
+      "unit": "MBq",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$A = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}$ ratkaistuna: $A_0 = A \\cdot 2^{t/T_{1/2}}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$t = 270\\,\\text{min}$, $2^{270/109{,}8} \\approx 5{,}5$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$A_0 \\approx 1{,}5 \\cdot 10^{3}\\,\\text{MBq}$."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Valmistettavan aktiivisuuden on oltava suurempi kuin injektiohetken, koska aktiivisuus pienenee."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 5,
+     "text": "Selitä, miksi positronin ja elektronin annihilaatiossa syntyy kaksi fotonia vastakkaisiin suuntiin, ja laske yhden fotonin energia kiloelektronivoltteina ja aallonpituus pikometreinä. Oletetaan, että positroni ja elektroni ovat lähes levossa.",
+     "answer": [
+      {
+       "name": "E",
+       "value": 511,
+       "unit": "keV",
+       "tolerance": 0.02
+      },
+      {
+       "name": "lam",
+       "value": 2.43,
+       "unit": "pm",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Selittää, että alkutilan liikemäärä on lähes nolla, joten liikemäärän säilymisen vuoksi syntyviä fotoneja on vähintään kaksi ja ne lähtevät vastakkaisiin suuntiin yhtä suurella liikemäärällä.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Energian säilyminen: $2E = 2m_\\text{e}c^2$, joten $E = m_\\text{e}c^2$; $\\lambda = \\tfrac{hc}{E}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$E \\approx 511\\,\\text{keV}$ ja $\\lambda \\approx 2{,}4\\,\\text{pm}$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske potilaan efektiivinen annos ja vertaa sitä suomalaisen keskimääräiseen vuosiannokseen. Onko tutkimus perusteltu?",
+     "answer": {
+      "value": 5.32,
+      "unit": "mSv",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$H_\\text{E} = k \\cdot A$, missä $k = 0{,}019\\,\\text{mSv/MBq}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$H_\\text{E} \\approx 5{,}3\\,\\text{mSv}$, noin $90\\,\\%$ vuosiannoksesta."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Annos on suuri mutta kertaluokaltaan tavallisen vuosiannoksen suuruinen; tutkimus on perusteltu, kun diagnostinen hyöty on suurempi kuin säteilyn haitta."
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "word",
+     "points": 4,
+     "text": "Sairaala voisi käyttää fluori-18:n sijasta hiili-11:tä, jonka puoliintumisaika on $20{,}4\\,\\text{min}$. Arvioi, kumpi merkkiaine soveltuu paremmin, kun syklotroni on kolmen tunnin matkan päässä. Perustele laskulla kuljetuksen ($3{,}0\\,\\text{h}$) ja koko valmistus–injektio-ajan ($4{,}5\\,\\text{h}$) avulla.",
+     "criteria": [
+      {
+       "text": "Vertaa jäljelle jäävää osuutta $3{,}0\\,\\text{h}$:n kuluttua: fluori-18 noin $0{,}32$, hiili-11 noin $0{,}002$ ($0{,}5^{180/20{,}4}$).",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Nimeää oletuksen, esimerkiksi että merkkiaineen kemia, valmistus ja hinta ovat samanlaisia, tai että valmistus ja kuvaus kestävät saman ajan."
+      },
+      {
+       "key": "conclusion",
+       "points": 2,
+       "detail": "Päättelee, että fluori-18 soveltuu kuljetukseen, ja hiili-11 vain syklotronin vieressä; huomioi, että hiili-11:tä pitäisi valmistaa noin $2{,}7\\,\\text{TBq}$ ($2^{270/20{,}4} \\approx 9{,}6 \\cdot 10^{3}$), mikä on epäkäytännöllistä."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy8-8",
+    "fy8-9",
+    "fy8-13",
+    "fy8-14",
+    "fy8-15"
+   ],
+   "links": {
+    "math": "fy8-9",
+    "concept": "fy8-14",
+    "communication": "fy8-14",
+    "transfer": "fy8-14"
+   }
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 4d9d133ebee00405
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 168f21fdc9f07e20
+SCOPE: delta added-exercise from cbd7c30a036d9d76 base 81db4a6fd727
 
 ## Blocking
 - none
@@ -9,8 +9,9 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- L1 Mars: "ilmanvastus jätetään huomiotta" states the model condition; 3,71 · 6,0 = 22 m/s unchanged
-- L2-08 reason feedback "Maa myös vetää sitä heikommin": correct (weight ∝ m, inertia ∝ m, a = g); the correct option and other feedback unchanged
-- planet B: readings at grid crossings; removal of the 3 % sentence leaves the tolerance in exercises.json unchanged
-- hammer/feather Kysytty now allows "same time": correct, not leading
-- Kaava lines: duplicate formula removed, no content change; answers.py unchanged
+- fy1-6-L1-09 only (delta, added exercise); hash the same at start and end.
+- Recomputed independently: v = gt = 1,62 m/s² · 3,0 s = 4,86 m/s (key 4.866 from MAFY 1,622 m/s²).
+- MAFY Moon surface free-fall acceleration 1,62 m/s² is right; the hint names the right table (Aurinkokunta).
+- Conditions: the task states both that the hammer falls from rest and that there is no air resistance, so v = gt holds. This is the chapter's own model.
+- Rounding: 4,9 m/s, two figures as in t = 3,0 s, is justified; it is 0,7 % from the key, inside the tolerance 0,04.
+- Reasonableness: about one sixth of the Earth value of 29,4 m/s, which is a real check.

@@ -175,7 +175,7 @@
     {
       "id": "fy1-8-L1-10",
       "level": 1,
-      "text": "The speed of sound in air ($20\\,{}^\\circ\\text{C}$) is measured with hand timing whose uncertainty is $0.2\\,\\text{s}$. The relative uncertainty of the measured time may be at most $5\\,\\%$. Look up the speed of sound in air in the MAFY table (mafytaulukot.fi). What is the shortest distance over which the sound must be measured to travel? Give the answer in km.",
+      "text": "The speed of sound in air ($20\\,{}^\\circ\\text{C}$) is measured with hand timing whose uncertainty is $0.2\\,\\text{s}$. The relative uncertainty of the measured time may be at most $5\\,\\%$. Look up the speed of sound in air in the MAFY table (mafytaulukot.fi). What is the shortest distance over which the sound must be measured to travel? Give the answer in $\\text{km}$.",
       "lookup": "MAFY",
       "answer": 1.3736,
       "unit": "km",

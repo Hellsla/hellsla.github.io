@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 05cefb32bec1ef00
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 1eceddd9c27ef416
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- solutions.md (L1-10 Answer line) — the reason for three significant figures (the mean distance is not the exact path) is physical, while the lesson's rule is "as few significant figures as the least precise datum", and both data have four. A student may see a conflict. Fix, optional: add "(the lesson's rule would allow four, but the mean distance is only an approximation)".
 
 ## Checked
-- fy1-2-L3-02: question now asks for a ratio (how many times one screen width), so it no longer reads as a count of whole screens (675); answer 674.4, tolerance 0.02 unchanged; unit "" as in other ratio tasks.
-- Kysytty, Periaate, Vastaus describe the same ratio N; Järkevyys still fits.
-- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- exercises.json fy1-2-L1-10: answer 1.28 s equals 3.844e8 / 2.998e8 = 1.2822 rounded to three significant figures; unit s unchanged.
+- Tolerance 0.04 (about 3 %) still sits inside the stated 4 % and accepts both 1.28 and the earlier 1.282.
+- solutions.md L1-10: substitution shows 1.282 s, then 1.28 s; the km to m conversion is explained before it; the answer line and the 4 % note agree with the JSON.
+- The reasonableness check (a little over a second) agrees with 1.28 s.
+- answers.py: round(384400e3/2.998e8, 2) gives 1.28, consistent with exercises.json.
+- The task text is unchanged: situation, lookup, hint, question last. The rest of the set is unchanged since the earlier pass.
+- The packet contained no SCOPE line, so none is written.

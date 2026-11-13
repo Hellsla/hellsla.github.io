@@ -200,6 +200,6 @@
 **Principle:** A radio signal travels in vacuum at the constant speed $c$, so the travel time is the distance divided by the speed.
 **Formula:** $t = \dfrac{s}{c}$
 **Conversions:** The speed is in $\text{m/s}$, so the distance is converted to metres: $s = 384\,400\,\text{km} = 384\,400\cdot10^{3}\,\text{m} = 3.844\cdot10^{8}\,\text{m}$.
-**Substitution:** $t = \dfrac{3.844\cdot10^{8}\,\text{m}}{2.998\cdot10^{8}\,\text{m/s}} = 1.28\,\text{s}$
-**Answer:** $t \approx 1.3\,\text{s}$ (calculated value $1.28\,\text{s}$). The distance is from the MAFY table (Aurinkokunta); an answer within about $\pm 4\,\%$ is accepted.
+**Substitution:** $t = \dfrac{3.844\cdot10^{8}\,\text{m}}{2.998\cdot10^{8}\,\text{m/s}} = 1.282\,\text{s} \approx 1.28\,\text{s}$
+**Answer:** $t \approx 1.28\,\text{s}$ to three significant figures. The Moon's distance in the MAFY table (Aurinkokunta) is a mean value, centre to centre, and the signal path is not exactly that, so three significant figures are enough. An answer within about $\pm 4\,\%$ is accepted.
 **Reasonableness:** Light travels about $3\cdot10^{8}\,\text{m}$ in a second and the distance to the Moon is about $4\cdot10^{8}\,\text{m}$, so the travel time is a little over a second. The result agrees.

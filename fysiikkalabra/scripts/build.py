@@ -591,6 +591,7 @@ def study_guide():
     return (f'<section class="study-intro" id="{STUDY_ID}" aria-labelledby="h-study"><h1 id="h-study">{esc(g("title"))}</h1><p class="lead">{esc(g("lead"))}</p></section>'
             f'<section class="study-sec" id="alkuun" aria-labelledby="h-start"><h2 id="h-start">{esc(g("start_h"))}</h2>'
             f'<ol class="study-steps">{steps}</ol></section>'
+            f'<section class="study-sec" id="ydinpolku" aria-labelledby="h-core"><h2 id="h-core">{esc(g("core_h"))}</h2><p class="section-lead">{esc(g("core_text"))}</p></section>'
             f'<section class="study-sec stuck" id="jumissa" aria-labelledby="h-stuck"><h2 id="h-stuck">{esc(g("stuck_h"))}</h2>'
             f'<p class="section-lead">{esc(g("stuck_lead"))} {esc(g("stuck_note"))}</p>'
             f'<div class="stuck-map"><p class="stuck-q">{esc(g("stuck_question"))}</p>{lines(fan, "fan")}'

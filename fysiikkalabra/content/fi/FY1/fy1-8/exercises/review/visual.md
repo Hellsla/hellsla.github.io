@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 50b79f966167569c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 5c531bbbd7f99c5c
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none (round 1 polish done: the unit in the question is now $\text{km}$).
 
 ## Checked
-- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
-- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
-- Language version fi judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-8-open-exercises-1280-9 and -10: task 8-10 (situation then question as its own sentence) and its solution; two-row Kaava aligned at =, Vastaus with the rounding reason, Järkevyys check block; no clipping or overflow.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

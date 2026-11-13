@@ -145,8 +145,8 @@ for lang in i18n.languages():
     rp = (out / "lukuvinkit.html").read_text(); sp = (out / "nain-opiskelet.html").read_text() if (out / "nain-opiskelet.html").is_file() else ""
     main_sp = re.search(r'<main[^>]*>(.*?)</main>', sp, re.S); main_sp = main_sp.group(1) if main_sp else ""
     heads = re.findall(r'<h2 id="h-[a-z]+">([^<]*)</h2>', main_sp)
-    expect(f"{lang}: nain-opiskelet.html: Näin opit fysiikkaa with its three parts in order (teacher 2026-11-08)",
-           f'<h1 id="h-study">{_h.escape(T("guide.title"))}</h1>' in main_sp and heads == [_h.escape(T("guide." + k)) for k in ("start_h", "stuck_h", "tips_h")], heads)
+    expect(f"{lang}: nain-opiskelet.html: Näin opit fysiikkaa with its four parts in order (teacher 2026-11-08; Ydinpolku ja valinnaiset tehtävät 2026-11-13)",
+           f'<h1 id="h-study">{_h.escape(T("guide.title"))}</h1>' in main_sp and heads == [_h.escape(T("guide." + k)) for k in ("start_h", "core_h", "stuck_h", "tips_h")], heads)
     chips = re.findall(r'<span class="study-chip"><span class="study-chip-no" aria-hidden="true">(\d)</span>([^<]*)</span>', main_sp)
     expect(f"{lang}: the four steps name the chapter stages as a lesson's stage bar numbers them",
            main_sp.count('<li><h3>') >= 4 and chips == [(str(n), _h.escape(x)) for n, x in zip(range(1, 7), [T("inquiry.stage_" + k) for k in ["herata", "ennusta", "tutki", "selita", "sovella"]] + [T("lesson.exercises")])], chips)

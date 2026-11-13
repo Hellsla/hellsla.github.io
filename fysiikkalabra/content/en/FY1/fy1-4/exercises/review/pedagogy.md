@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3a7b65d208dc939d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 4a0ff6dc31b1442a
+SCOPE: delta added-exercise from b79a628ab354a3a9 base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- fy1-4-L1-09 is a plain m = rho V; the graph-model link is only in the Principle line. Acceptable.
 
 ## Checked
-- exercises diff: units set as \text, 'lukumäärään', 'suureiden välistä riippuvuutta', Reasonableness products now carry units (2,5 m/s = 2,5·3,6 km/h), 'tulos on uskottava'; numbers and answers unchanged.
-- Language en: matches the Finnish fixes; fi-easy stays plain Finnish.
+- Added exercise judged: level 1, wording (situation then question), table lookup is needed and stated, step-by-step solution, arithmetic verified.
+- Fit within the set of 22: progression, kinds and no repeat of the worked example.
+- Phone/language: nothing in the added text that clips; English reads plainly.

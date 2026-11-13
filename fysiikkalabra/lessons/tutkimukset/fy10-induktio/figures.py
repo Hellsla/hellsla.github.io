@@ -117,7 +117,10 @@ def flux():
                 bx, by = field(x, y); mm = math.hypot(bx, by)
                 x += 2 * bx / mm; y += 2 * by / mm
                 pts.append((x, y))
-                if math.hypot(x - pl[0], y - pl[1]) < 8 or not (-20 < x < 620 and -20 < y < 350): break
+                if math.hypot(x - pl[0], y - pl[1]) < 8 or not (-20 < x < 566 and 36 < y < 278): break
+            # a line is drawn from where it leaves the magnet: its start points spread over the red half's surface, not one pole point
+            pts = [q for q in pts if not (cx - 70 <= q[0] <= cx + 70 and abs(q[1] - cy) <= 20)]
+            if len(pts) < 4: continue
             through = any(abs(px - x0) < 1.5 and abs(py - cy) < ry - 4 for px, py in pts)
             op = "" if through else ' stroke-opacity="0.45"'
             f.path("M" + " L".join(f"{n(px)},{n(py)}" for px, py in pts), stroke=GOOD, w=2 if through else 1.6, extra=op.strip())
@@ -152,7 +155,7 @@ def flux():
     f.tex(x1 + 12, 292, r"U", "start")
     f.arrow(104, 116, 196, 116, VELOCITY, 4, 16); f.tex(206, 112, r"\overline{v}", "start", VELOCITY)
     f.tex(cx, 222, r"\text{magneetti}", "middle", MUTED, bg=True)
-    f.tex(427, 84, r"\text{käämi, } N \text{ kierrosta}", "middle", MUTED, bg=True)
+    f.tex(427, 34, r"\text{käämi, } N \text{ kierrosta}", "middle", MUTED, bg=True)
     return f.svg()
 
 

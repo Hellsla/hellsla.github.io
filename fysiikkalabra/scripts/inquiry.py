@@ -579,7 +579,7 @@ def chapter_href(title):
 def intro_html(intro, inquiry, n_opt, md):
     """The opening (teacher 2026-10-27): the title and the Miksi question first, across the reading column; under them
     the chapter's illustration and "Tällä tunnilla opit" (2–3 goals) side by side, both starting at the same height and
-    about as tall (.intro-row); then "Pohjatiedot" as a list and the core path in one quiet line (.intro-more). One
+    about as tall (.intro-row); then "Pohjatiedot" as a list (.intro-more; the core path note moved to Näin opiskelet, teacher 2026-11-13). One
     column on a phone: title, question, illustration, goals, prior knowledge."""
     m = re.search(r"<p>\s*<svg\b", intro)
     head, media = (intro[:m.start()], intro[m.start():]) if m else (intro, "")
@@ -590,7 +590,6 @@ def intro_html(intro, inquiry, n_opt, md):
     aside = f'<div class="learn"><h2 class="intro-h">{T("inquiry.learn")}</h2>{goals}</div>'
     prior = inquiry.get("prior") or []
     more = f'<div class="prior"><h2 class="intro-h">{T("inquiry.prior")}</h2><ul>' + "".join(prior_html(x, md) for x in prior) + "</ul></div>" if prior else ""
-    if n_opt: more += f'<p class="path-note">{T("inquiry.core_path", n=n_opt)}</p>'   # what is the path, what may be left (spec 2026-10-26)
     row = (f'<div class="intro-row' + ("" if media else " no-media") + '">' + (f'<div class="intro-media">{media}</div>' if media else "")
            + f'<aside class="intro-aside">{aside}</aside></div>')
     return f'<div class="intro"><div class="intro-head">{head}</div>{row}' + (f'<div class="intro-more">{more}</div>' if more else "") + '</div>'
