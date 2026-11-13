@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: bd646f704080b1bf
-Mode: full (translation review against the reviewed Finnish set, new task L2-08)
-Round 2
+CONTENT-HASH: fd518ed27faaddd3
+SCOPE: delta added-exercise from bd646f704080b1bf base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- none.
 
 ## Checked
-- New task fy5-13-L2-08 compared with content/fi: id, kind tags, correct flag, choice count and order, answer, tolerance and unit identical; every number and formula identical (decimal comma to point).
-- Recomputed: L2-08 pipes, f1 = v/2L open; closed L/2 gives v/(4*L/2) = v/2L, unchanged; distractors x2 (closed as open), /2 (plug only), x4 (plug reversed).
-- Solution keeps all lead-ins, the symbolic step before numbers and the explanation of each distractor.
-- Natural English for an upper-secondary reader.
-- check_i18n: nothing for fy5-13; build.py fy5-13 succeeds.
+- fy5-13-L1-09: open-open pipe f₁ = v/(2L); Δf = (971 − 331.5)/(1.00 m) = 639.5 Hz → 6.4·10² Hz; ±4 % covers other table values; the helium-voice remark (vocal-tract resonances rise, fold frequency hardly changes) is correct physics.
+- fy5-13-L2-09: four loops on L = 1.20 m: λ = 2L/4 = 0.60 m, f = v/λ = 75.0/0.60 = 125 Hz; f₁ = 31.25 Hz, 4f₁ check right.
+- Figure fy5-13/kuvio-tehtava: English ruler values 0 … 1.20 and x (m) match what the solution reads; four loops, five nodes as stated.
+- Compared with the Finnish set by script: all numbers, answers, units and tolerances identical; answers.py agrees.
+- Hash unchanged at start and end.

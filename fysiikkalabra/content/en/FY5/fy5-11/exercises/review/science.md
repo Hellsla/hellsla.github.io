@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b75218b13b7a7480
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 3401498419e442f3
+SCOPE: delta added-exercise from b75218b13b7a7480 base 81db4a6fd727
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed)
-
 ## Polish
-(none)
+- none.
 
 ## Checked
-- New task fy5-11-L2-08 (ordering four slit setups by lambda:b (D 0.25, A 0.50, C 1.3, B 2.5)) compared with content/fi: answer, unit, tolerance, correct flags, choices/statements/order, every number and formula identical; English decimal point used; wording natural.
-- Recomputed independently: answers and all numbers in the task and its solution agree with fi.
-- solutions.md section for fy5-11-L2-08: same structure and numbers as fi; the physics and its conditions unchanged.
-- check_i18n.py: no errors for fy5-11; build.py fy5-11 succeeds.
+- fy5-11-L2-09: λ = 4 squares = 8.0 cm; v = fλ = 32 cm/s. Realism checked: deep-water limit √(gλ/2π) = 0.35 m/s, so f ≤ 4.4 Hz for λ = 8 cm; 0.32 m/s corresponds to about 1.5 cm depth, plausible for a ripple tank.
+- fy5-11-L2-10: b = 6 squares = 12 cm, λ' = λ/2 = 4.0 cm, b/λ' = 3.0; the constant-speed assumption is stated in the task and its limit (dispersion) named in the solution (B condition met).
+- Diffraction conclusion (wider gap relative to λ, less spreading) correct.
+- Figure fy5-11/rako-ruudukko: English labels "direction of the waves", "wall", "1 square = 2.0 cm" agree with the solutions; λ and b not marked.
+- Compared with the Finnish set by script: all numbers, answers, units and tolerances identical; answers.py agrees.
+- Hash unchanged at start and end.
