@@ -268,9 +268,9 @@
       "kind": [
         "graph"
       ],
-      "text": "The figure shows the bottom of a ripple tank seen from above. Plane waves travel from left to right and hit a wall with a gap in it. The wave generator vibrates at a frequency of $7.0\\,\\text{Hz}$. Read the value you need from the figure. What is the speed of the wave in the tank? Give the answer in $\\text{cm/s}$.",
+      "text": "The figure shows the bottom of a ripple tank seen from above. Plane waves travel from left to right and hit a wall with a gap in it. The wave generator vibrates at a frequency of $4.0\\,\\text{Hz}$. Read the value you need from the figure. What is the speed of the wave in the tank? Give the answer in $\\text{cm/s}$.",
       "figure": "fy5-11/rako-ruudukko",
-      "answer": 56,
+      "answer": 32,
       "unit": "cm/s",
       "tolerance": 0.02
     },
