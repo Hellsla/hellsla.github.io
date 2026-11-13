@@ -405,7 +405,7 @@
       {
        "key": "reasonableness",
        "points": 1,
-       "detail": "Ennuste on noin $4\\,\\%$ alkuarvosta, sillä $15\\,\\text{min}$ on noin viisi puoliintumisaikaa."
+       "detail": "Ennuste on noin $4\\,\\%$ alkuarvosta, sillä $15\\,\\text{min}$ on noin $4{,}7$ puoliintumisaikaa ($15\\,\\text{min} : 3{,}2\\,\\text{min}$)."
       }
      ]
     },
@@ -489,7 +489,7 @@
       {
        "key": "units_precision",
        "points": 1,
-       "detail": "$E_\\text{s} \\approx 28{,}3\\,\\text{MeV}$ ja $7{,}07\\,\\text{MeV}$ nukleonia kohti; massaa ei muunneta kilogrammoiksi."
+       "detail": "$E_\\text{s} \\approx 28{,}3\\,\\text{MeV}$ ja $7{,}07\\,\\text{MeV}$ nukleonia kohti; sekä atomimassayksikkö ja $931{,}5\\,\\text{MeV}$ että kilogrammat ja $c^2$ hyväksytään."
       }
      ]
     },
@@ -697,12 +697,12 @@
        "points": 1
       },
       {
-       "text": "Selittää, että ytimen ympärillä rajoitetun elektronin aaltofunktio on seisova aalto, jolle sopivat vain tietyt tilat, joten myös energiat ovat erillisiä.",
+       "text": "Selittää, että ytimen ympärillä rajoitetun elektronin aaltofunktio on seisova aalto, jolle sopivat vain tietyt tilat, joten energiat ovat erillisiä eli kvantittuneita.",
        "tag": "concept",
        "points": 1
       },
       {
-       "text": "Mainitsee, että elektronin tila on seisova aalto, joka sallii vain tietyt energiat, tai että paikkaa ja nopeutta ei voi tietää tarkasti yhtä aikaa.",
+       "text": "Erottaa mallin Bohrin mallista nimeämällä eron: elektronin paikkaa ja nopeutta ei voi tietää tarkasti yhtä aikaa, joten sillä ei ole määrättyä rataa.",
        "tag": "communication",
        "points": 1
       }

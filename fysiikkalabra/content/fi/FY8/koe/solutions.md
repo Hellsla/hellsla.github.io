@@ -4,7 +4,11 @@
 **Perustelu:** Valosähköisessa ilmiössä yksi fotoni irrottaa yhden elektronin. Elektronin suurin liike-energia on $E_\text{k,max} = hf - W$, joka riippuu vain taajuudesta ja irrotustyöstä, ei intensiteetistä. Intensiteetin kaksinkertaistaminen tarkoittaa kaksi kertaa niin monta fotonia sekunnissa, joten myös irtoavia elektroneja on kaksi kertaa niin paljon. Vaihtoehto, jossa liike-energia kaksinkertaistuu, perustuu virheelliseen käsitykseen, että kirkkaampi valo antaa jokaiselle elektronille enemmän energiaa; energia kasvaisi vain taajuuden kasvaessa.
 
 ### b)
-**Perustelu:** Pysäytysjännitteelle $eU_\text{s} = hf - W$, joten kuvaajan suora leikkaa vaaka-akselin kynnystaajuudella $f_0$, jolla $hf_0 = W$. Jatkamalla suoraa kohti jännitettä $0$ saadaan $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$, joten $W = hf_0$. Sijoitus: $W = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 5{,}6 \cdot 10^{14}\,\text{Hz}$, eli $W \approx 3{,}7 \cdot 10^{-19}\,\text{J}$, ja elektronivoltteina $W \approx 2{,}3\,\text{eV}$. Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu luku $2{,}3$ sekoitetaan joulemäärään, ja $3{,}7\,\text{eV}$ kun jouleissa saatu luku sekoitetaan elektronivoltteihin. Kynnystaajuus $5{,}6 \cdot 10^{14}$ on taajuus, ei energia.
+**Perustelu:** Pysäytysjännitteelle $eU_\text{s} = hf - W$, joten kuvaajan suora leikkaa vaaka-akselin kynnystaajuudella $f_0$, jolla $hf_0 = W$. Jatkamalla suoraa kohti jännitettä $0$ saadaan $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$, joten $W = hf_0$. Sijoitus (omalla rivillään):
+
+$W = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 5{,}6 \cdot 10^{14}\,\text{Hz}$ $\approx 3{,}7 \cdot 10^{-19}\,\text{J}$ $\approx 2{,}3\,\text{eV}$.
+
+Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu luku $2{,}3$ sekoitetaan joulemäärään, ja $3{,}7\,\text{eV}$ kun jouleissa saatu luku sekoitetaan elektronivoltteihin. Kynnystaajuus $5{,}6 \cdot 10^{14}$ on taajuus, ei energia.
 
 ### c)
 **Perustelu:** Kun jatkuvan spektrin valo kulkee kaasun läpi, kaasun atomit absorboivat vain fotoneja, joiden energia on täsmälleen jonkin atomin kahden energiatason erotus. Näiden aallonpituuksien kohdalla spektriin jää tummia viivoja, ja viivojen paikat ovat alkuaineelle ominaiset. Uudelleen emittoitu valo lähtee kaikkiin suuntiin, joten suoraan kulkevassa valossa viivat ovat tummia; ne eivät siis ole kaasun emissioviivoja. Tummat viivat eivät kerro lähteen koostumuksesta, koska lähde lähettää jatkuvaa spektriä, ja viivojen paikat riippuvat alkuaineesta eivätkä tiheydestä.
@@ -111,7 +115,7 @@
   <line x1="90" y1="244.5" x2="260" y2="244.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="387.5" y1="128" x2="387.5" y2="390" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="90" y1="128" x2="387.5" y2="128" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <foreignObject x="204.5" y="337" width="154" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{ekstrapolointi}$</span></div></foreignObject>
+  <foreignObject x="222.5" y="323" width="154" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{ekstrapolointi}$</span></div></foreignObject>
   <foreignObject x="395.5" y="142" width="115" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(7{,}0;\ 2{,}87)$</span></div></foreignObject>
   <foreignObject x="270" y="258.5" width="115" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(4{,}0;\ 1{,}59)$</span></div></foreignObject>
 </svg>
@@ -125,7 +129,7 @@
 **Kuvaajan lukeminen:** Suoralta luetaan kaukana toisistaan olevat pisteet $(4{,}0 \cdot 10^{14}\,\text{Hz};\ 1{,}59\,\text{V})$ ja $(7{,}0 \cdot 10^{14}\,\text{Hz};\ 2{,}87\,\text{V})$.
 **Kaava:** $h = e \cdot \dfrac{\Delta U_\text{k}}{\Delta f}$
 **Muunnokset:** $4{,}0 \cdot 10^{14}\,\text{Hz}$ ja $7{,}0 \cdot 10^{14}\,\text{Hz}$ ovat suoraan hertseinä, ja $1\,\text{V} = 1\,\text{J/C}$.
-**Sijoitus:** kulmakerroin $\dfrac{2{,}87\,\text{V} - 1{,}59\,\text{V}}{7{,}0 \cdot 10^{14}\,\text{Hz} - 4{,}0 \cdot 10^{14}\,\text{Hz}}$ $\approx 4{,}27 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja $h = 1{,}602 \cdot 10^{-19}\,\text{C}$ $\cdot\ 4{,}27 \cdot 10^{-15}\,\text{V}\,\text{s}$ $\approx 6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Sijoitus:** $\Delta U = 2{,}87\,\text{V} - 1{,}59\,\text{V} = 1{,}28\,\text{V}$ ja $\Delta f = 7{,}0 \cdot 10^{14}\,\text{Hz}$ $- 4{,}0 \cdot 10^{14}\,\text{Hz}$ $= 3{,}0 \cdot 10^{14}\,\text{Hz}$, joten kulmakerroin $\dfrac{1{,}28\,\text{V}}{3{,}0 \cdot 10^{14}\,\text{Hz}}$ $\approx 4{,}27 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja $h = 1{,}602 \cdot 10^{-19}\,\text{C}$ $\cdot\ 4{,}27 \cdot 10^{-15}\,\text{V}\,\text{s}$ $\approx 6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Vastaus:** Planckin vakio on noin $6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$.
 **Järkevyys:** Arvo on lähellä tunnettua arvoa $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, noin $3\,\%$ suurempi; suhteellinen virhe on mittauksen tarkkuuden kokoluokkaa. Kulmakertoimen yksikkö $\text{V}\,\text{s}$ kerrottuna varauksella antaa $\text{J}\,\text{s}$.
 
@@ -143,7 +147,7 @@
 ### d)
 **Kysytty:** virhelähde, joka selittää suoran poikkeaman origosta
 **Periaate:** Jos malli $eU_\text{k} = hf$ pitäisi täsmälleen, suora kulkisi origon kautta. Systemaattinen virhe, joka vaikuttaa kaikkiin mittauksiin yhtä paljon, siirtää suoraa mutta ei muuta sen kulmakerrointa.
-**Mallivastaus:** Suora leikkaa pystyakselin noin $-0{,}1\,\text{V}$:n kohdalla, eli mitatut kynnysjännitteet ovat kaikilla väreillä noin $0{,}1\,\text{V}$ pienempiä kuin malli $\tfrac{hf}{e}$ ennustaa. Yksi syy on, että todellisen LEDin valo on leveä spektri, ja LED alkaa tuottaa valoa jo kaistaväliä vastaavalla energialla, joka on pienempi kuin spektrin huipun fotonin energia $hf$; kynnysjännite on siis $hf$:ää vastaavaa jännitettä pienempi. Silmän herkkyys riippuu värin mukaan, joten silmämääräinen havainto voi vaikuttaa eri väreihin eri tavalla ja muuttaa myös kulmakerrointa, ei vain siirtää suoraa. Jos virhe on likimain vakio, kulmakerroin ja $h$ säilyvät lähes ennallaan.
+**Mallivastaus:** Suora leikkaa pystyakselin noin $-0{,}1\,\text{V}$:n kohdalla, ja mitatut kynnysjännitteet ovat kaikilla väreillä $0{,}02$–$0{,}07\,\text{V}$ pienempiä kuin malli $\tfrac{hf}{e}$ ennustaa. Suoran leikkauspiste ei ole sama asia kuin pisteiden poikkeama mallista: piste-erot vaihtelevat värin mukaan, ja siksi myös kulmakerroin poikkeaa hieman mallin arvosta. Yksi syy on, että todellisen LEDin valo on leveä spektri, ja LED alkaa tuottaa valoa jo kaistaväliä vastaavalla energialla, joka on pienempi kuin spektrin huipun fotonin energia $hf$; kynnysjännite on siis $hf$:ää vastaavaa jännitettä pienempi. Silmän herkkyys riippuu värin mukaan, joten silmämääräinen havainto voi vaikuttaa eri väreihin eri tavalla ja muuttaa myös kulmakerrointa, ei vain siirtää suoraa. Jos virhe olisi täsmälleen vakio, se siirtäisi vain suoraa ja kulmakerroin ja $h$ säilyisivät ennallaan.
 
 ### Yleisiä virheitä
 - Kuvaajaan laitetaan aallonpituus taajuuden sijasta, jolloin pisteet eivät ole suoralla.
@@ -340,7 +344,7 @@
 **Periaate:** Kun atomi siirtyy ylemmältä energiatasolta alemmalle, se lähettää fotonin, jonka energia on tasojen energiaero. Fotonin energia ja aallonpituus liittyvät yhtälöllä $E = hf = \tfrac{hc}{\lambda}$.
 **Kaava:** $E = E_3 - E_2$ ja $\lambda = \dfrac{hc}{E}$
 **Muunnokset:** $1{,}889\,\text{eV} = 1{,}889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$ $= 3{,}026 \cdot 10^{-19}\,\text{J}$
-**Sijoitus:** $E$ $= -\dfrac{13{,}6\,\text{eV}}{9} - \left(-\dfrac{13{,}6\,\text{eV}}{4}\right)$ $= 1{,}889\,\text{eV}$ ja $\lambda$ $= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{3{,}026 \cdot 10^{-19}\,\text{J}}$ $\approx 6{,}565 \cdot 10^{-7}\,\text{m}$
+**Sijoitus:** $E$ $= -\dfrac{13{,}6\,\text{eV}}{9} - \left(-\dfrac{13{,}6\,\text{eV}}{4}\right)$ $= 1{,}889\,\text{eV}$ ja $\lambda$ $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 2{,}998 \cdot 10^{8}\,\text{m/s}$ $= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $= \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}026 \cdot 10^{-19}\,\text{J}}$ $\approx 6{,}565 \cdot 10^{-7}\,\text{m}$
 **Vastaus:** Fotonin aallonpituus on noin $656\,\text{nm}$, eli valo on näkyvää punaista valoa.
 **Järkevyys:** Näkyvän valon aallonpituudet ovat $400\text{–}700\,\text{nm}$, ja $656\,\text{nm}$ on vedyn Balmerin sarjan punainen viiva H$\alpha$.
 
@@ -350,7 +354,7 @@
 **Periaate:** Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen jonkin sallitun tasoparin energiaero. Perustilassa olevan atomin pienin mahdollinen energianotto on siirtymä $1 \to 2$.
 **Kaava:** $\lambda = \dfrac{hc}{E_2 - E_1}$
 **Muunnokset:** $E_2 - E_1 = -3{,}4\,\text{eV} + 13{,}6\,\text{eV} = 10{,}2\,\text{eV}$ $= 1{,}634 \cdot 10^{-18}\,\text{J}$
-**Sijoitus:** $\lambda$ $= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{1{,}634 \cdot 10^{-18}\,\text{J}}$ $\approx 1{,}216 \cdot 10^{-7}\,\text{m}$
+**Sijoitus:** $\lambda$ $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 2{,}998 \cdot 10^{8}\,\text{m/s}$ $= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $= \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}634 \cdot 10^{-18}\,\text{J}}$ $\approx 1{,}216 \cdot 10^{-7}\,\text{m}$
 **Vastaus:** Perustilassa oleva vety absorboi fotoneja vain, kun fotonin energia on vähintään $10{,}2\,\text{eV}$. Näkyvän valon fotonien energiat ovat noin $1{,}8\text{–}3{,}1\,\text{eV}$, joten ne eivät riitä viemään atomia perustilalta yhdellekään ylemmälle tasolle, eikä kylmään vetykaasuun synny absorptioviivoja näkyvälle alueelle. Pisin absorboituva aallonpituus on noin $122\,\text{nm}$ eli ultravioletti.
 **Järkevyys:** Tulos on Lymanin sarjan ensimmäinen viiva, ultraviolettia. Näkyvät Balmerin viivat vaativat atomin olevan jo virittyneessä tilassa $n = 2$, mikä tapahtuu vasta kuumassa kaasussa.
 
@@ -360,7 +364,7 @@
 **Periaate:** Tilassa $n = 2$ olevan atomin ionisoimiseen tarvitaan energia $\lvert E_2 \rvert$. Jos fotonin energia on suurempi, ylimääräinen energia muuttuu vapautuneen elektronin liike-energiaksi (energian säilyminen).
 **Kaava:** $E_\text{k} = \dfrac{hc}{\lambda} - \lvert E_2 \rvert$
 **Muunnokset:** $\lambda = 200\,\text{nm} = 2{,}00 \cdot 10^{-7}\,\text{m}$ ja $\lvert E_2 \rvert = \dfrac{13{,}6\,\text{eV}}{4} = 3{,}4\,\text{eV}$
-**Sijoitus:** $\dfrac{hc}{\lambda}$ $= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{2{,}00 \cdot 10^{-7}\,\text{m}}$ $= 9{,}93 \cdot 10^{-19}\,\text{J} = 6{,}20\,\text{eV}$ ja $E_\text{k} = 6{,}20\,\text{eV} - 3{,}4\,\text{eV} = 2{,}8\,\text{eV}$
+**Sijoitus:** $\dfrac{hc}{\lambda}$ $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 2{,}998 \cdot 10^{8}\,\text{m/s}$ $= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $= \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}00 \cdot 10^{-7}\,\text{m}}$ $= 9{,}93 \cdot 10^{-19}\,\text{J} = 6{,}20\,\text{eV}$ ja $E_\text{k} = 6{,}20\,\text{eV} - 3{,}4\,\text{eV} = 2{,}8\,\text{eV}$
 **Vastaus:** Fotonin energia $6{,}2\,\text{eV}$ on suurempi kuin ionisaatioenergia $3{,}4\,\text{eV}$, joten atomi ionisoituu. Vapautuvan elektronin liike-energia on noin $2{,}8\,\text{eV}$ eli $4{,}5 \cdot 10^{-19}\,\text{J}$.
 **Järkevyys:** Tilan $n = 2$ ionisaatioraja on aallonpituudella $365\,\text{nm}$; $200\,\text{nm}$ on sen alapuolella, joten ionisaatio on mahdollinen.
 
@@ -529,7 +533,7 @@
 **Periaate:** Liikemäärän säilymisen mukaan lähes levossa olevan hiukkaspareen kokonaisliikemäärä on nolla, ja syntyvien fotonien kokonaisliikemäärän täytyy olla nolla. Yksi fotoni ei voi täyttää ehtoa, koska sillä on aina liikemäärä, joten fotoneja on kaksi ja ne lähtevät vastakkaisiin suuntiin. Energian säilymisen mukaan hiukkasten lepoenergia $2m_\text{e}c^2$ jakautuu kahdelle yhtä suurelle fotonille.
 **Kaava:** $E = m_\text{e}c^2$ ja $\lambda = \dfrac{hc}{E}$
 **Muunnokset:** $1\,\text{keV} = 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$
-**Sijoitus:** $E$ $= 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2$ $= 8{,}187 \cdot 10^{-14}\,\text{J}$ $= \dfrac{8{,}187 \cdot 10^{-14}}{1{,}602 \cdot 10^{-16}}\,\text{keV}$ $\approx 511\,\text{keV}$ ja $\lambda$ $= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{8{,}187 \cdot 10^{-14}\,\text{J}}$ $\approx 2{,}43 \cdot 10^{-12}\,\text{m}$
+**Sijoitus:** $E$ $= 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2$ $= 8{,}187 \cdot 10^{-14}\,\text{J}$ $= \dfrac{8{,}187 \cdot 10^{-14}}{1{,}602 \cdot 10^{-16}}\,\text{keV}$ $\approx 511\,\text{keV}$ ja $\lambda$ $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 2{,}998 \cdot 10^{8}\,\text{m/s}$ $= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $= \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{8{,}187 \cdot 10^{-14}\,\text{J}}$ $\approx 2{,}43 \cdot 10^{-12}\,\text{m}$
 **Vastaus:** Syntyy kaksi vastakkaisiin suuntiin lähtevää fotonia. Kummankin energia on noin $511\,\text{keV}$ ja aallonpituus noin $2{,}4\,\text{pm}$.
 **Järkevyys:** Elektronin lepoenergia on tunnetusti $0{,}511\,\text{MeV}$. Aallonpituus on gammasäteilylle tyypillinen, noin $\tfrac{1}{40}$ atomin koosta ($0{,}1\,\text{nm}$).
 

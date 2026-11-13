@@ -47,7 +47,7 @@ def leds():
         ax.line([(a, b - dU2), (a, b + dU2)], COLD, 2)
         ax.point(a, b, COLD, 5.5)
     ax.guide(4.0, S2 * 4.0 + B2); ax.guide(7.0, S2 * 7.0 + B2)
-    f.tex(ax.X(2.6) + 4, ax.Y(0.45), r"\text{ekstrapolointi}", "start", MUTED, size=20, bg=True)
+    f.tex(ax.X(2.6) + 22, ax.Y(0.6), r"\text{ekstrapolointi}", "start", MUTED, size=20, bg=True)
     f.tex(ax.X(7.0) + 8, ax.Y(S2 * 7.0 + B2) + 26, r"(7{,}0;\ 2{,}87)", "start", INK, size=20, bg=True)
     f.tex(ax.X(4.0) + 10, ax.Y(S2 * 4.0 + B2) + 26, r"(4{,}0;\ 1{,}59)", "start", INK, size=20, bg=True)
     return f.svg()
