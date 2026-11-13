@@ -1,24 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: b38642a6e641d4f2
-ROUND: 1
+VERDICT: FAIL
+CONTENT-HASH: 6b0d9bd95acee718
 
 ## Blocking
-- none
+- [Major] fy3-13-L2-09 solution, "Kuvaajan lukeminen" (figure fy3-3/extrapolation-points) — the solution says that drawing the line by eye to the horizontal axis gives a value in `-260 … -286 °C`, but the graph's axis ends at about `-150 °C` (captures L2-1280-13 and -14; the figure description says the same) and the line never reaches zero pressure in the picture — it tells the student a method the figure cannot support, and the acceptance range is then justified by something impossible — rewrite: "Kuvaajan akseli ulottuu vain noin `-150\,{}^\circ\text{C}`:een, joten nollakohtaa ei voi lukea kuvasta; se lasketaan kulmakertoimesta. Kuvaajasta luettujen pisteiden epävarmuuden vuoksi hyväksytään `-260 … -286\,{}^\circ\text{C}`." Remove the same "piirtämällä silmämääräisesti" wording from fy3-13-L2-10 only if the point is outside the axis (it is inside: `-73\,{}^\circ\text{C}`, so that one may stay).
 
 ## Polish
-- [Minor] fy3-13-L2-08 data table at 390 px — caption (esimerkkiaineisto) is 334 px wide in a 328 px table, so it touches the card edge and the table scrolls by 6 px — shorten the caption (e.g. "Pullon ilman paine, esimerkkiaineisto") or let it wrap.
-- [Minor] solutions.md L2-08 Kysytty — "mikä päätelmä on se, jonka … tukevat" is clumsy — "mitkä päätelmistä aineisto ja epävarmuus $\Delta p = 1{,}0\,\text{kPa}$ tukevat".
-- [Minor] solutions.md L2-08 Mallivastaus — one dense eight-sentence paragraph after the display line; split before "Muut päätelmät eivät kestä."
-- [Minor] Option 4 asks about a fitted line (62 kPa at -100 °C) that the task never shows; the student cannot check the number — say "pisteisiin sovitettu suora" in the stem or the option.
-- [Minor] Carried: the L3-01 and L3-02 paragraph splits are text-only checked.
+- [Minor] fy3-13-L2-09 and L2-10 — both reuse the same graph and the same two readings `(0\,{}^\circ\text{C}; 75\,\text{kPa})` and `(100\,{}^\circ\text{C}; 102{,}5\,\text{kPa})`; `102{,}5` cannot be read from a grid of `25\,\text{kPa}` (only from the description); say "luetaan noin `102\,\text{kPa}`" or accept it as the description's value.
+- [Minor] fy3-13-L2-10 Muunnokset — `\theta = 200 - 273{,}15 = -73{,}15\,{}^\circ\text{C}` has bare numbers; put `200\,\text{K} - 273{,}15\,\text{K}`.
 
 ## Checked
-- delta review 2026-11-07 round 2 (follow-up consistency edits): L1-08 correct option shortened (definition moved to its feedback, answer = option); opened fy3-13-fi-l2opt-390: options now similar in length and form, no give-away.
-- delta review 2026-11-07 (teacher's proofread replacement texts): L1-08: new answer/choice text, feedback and model answer read in exercises.json and solutions.md; opened fy3-13-fi-a-390 and -1280 (choice wraps cleanly, no overflow; the capture shows the choice, the feedback was judged from source). Answer and choice text identical, terminology (mittausalue, lineaarinen riippuvuus) consistent.
-- Method: the packet's contact sheets and shots/ folder were not present in the worktree, so I rendered the new task myself with Playwright chromium at 390 px from preview/FYID.html, with solution, hints and feedback open (screenshots opened in three to four segments each). Text-only checks are named as such.
-- Opened fy3-13-L2-08 at 390 px (stem, table, four options, all feedback, Vastaus/Kirjoita ratkaisu, answer, Kysytty/Periaate/Mallivastaus). No page overflow (scrollWidth 390); every KaTeX span fits the card; the inline chain is one short line.
-- Form check (text): the correct option is not the longest nor the only hedged one; it is one of two "Paine kasvoi" options, so form does not give it away. Distractors catch the chapter's warned mistakes (uncertainty ignored, absence of evidence read as evidence of absence, extrapolation stated as certain). Within the chapter's scope.
-- L3-01 and L3-02 paragraph splits: text only.
+- Round 1, delta. Opened fy3-13-open-exercises-1280-9 and -10 (4-9: task, closed "Vihje" box, whole solution), L2-1280-13, -14, -15, -16 (4-18 with graph, 4-19 with graph, both solutions).
+- Graph: axes with quantity and unit, ticks, five points distinct without a fitted line (right for an extrapolation task), grid readable; description lists the points. Typography, answer boxes and reasonableness panels fine.
+- Hash at start and end the same.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

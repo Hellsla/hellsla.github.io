@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 89e1824f0f4efd16
+CONTENT-HASH: f337c2ab9702c30f
 Mode: delta
 Round: 1
 
@@ -7,11 +7,14 @@ Round: 1
 (none)
 
 ## Polish
-[Minor] The student's lines 3 in task and solution show the substitution without units (base units stated in feedback); acceptable.
+- [Minor] solutions.md fy3-6-L1-09 Sijoitus and Muunnokset — the unit is a stacked fraction ($0{,}896\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}}$) while the same unit is written $\text{kJ/(kg}\cdot\text{K)}$ in the paragraph under it; use one form in the chain.
+- [Minor] fy3-6-L1-09 Annettu — "ominaislämpökapasiteetteja: kiinteät aineet" is a table title and reads as a sentence fragment; put the title in italics as elsewhere in the set.
+- [Minor] fy3-6/c-bars (fy3-6-L2-09) — the task says "Kuvassa" while the page labels it as a graph; harmless, no change needed beyond using "kuvassa" consistently with the other tasks.
 
 ## Checked
-- New task fy3-6-L2-08 at 390 px (fi-easy), own render of preview/fi-easy/fy3-6.html: task text, every option and its feedback open, solution card open; page and card have no horizontal overflow (scrollWidth equals width).
-- Delta covers only the new task and its solution; surrounding exercises were not changed.
+- fy3-6-open-exercises-1280-9 (L1-09: Vihje box, answer row, full solution; units, thin spaces, chain rows, Järkevyys).
+- fy3-6-open-exercises-L2-1280-12 and -13 (L2-09: c-bars horizontal bar chart with axis title and unit, ticks, value labels, bars to scale, nothing clipped; task text split into situation and question; solution, absolute value bars, Järkevyys).
+- Captures are the lesson's review/shots (current for this hash).
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
