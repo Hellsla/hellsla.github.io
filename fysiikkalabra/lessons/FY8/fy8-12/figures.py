@@ -53,7 +53,7 @@ def energia():
         f.tex(X(10 ** k), 226, "1" if k == 0 else f"10^{{{k}}}", "middle")
     f.tex(512, 200, r"E\ (\text{eV})", "start")
     # visible light: a rainbow strip
-    cols = ["#7048e8", "#1971c2", "#2b8a3e", "#e9c98a", "#e8590c", "#c92a2a"]
+    cols = ["#c92a2a", "#e8590c", "#e9c98a", "#2b8a3e", "#1971c2", "#7048e8"]
     w = (X(vis1) - X(vis0)) / len(cols)
     for i, c in enumerate(cols):
         f.rect(X(vis0) + i * w, 150, w, 50, c)

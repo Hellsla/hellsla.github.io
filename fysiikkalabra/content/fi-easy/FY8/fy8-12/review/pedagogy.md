@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 353aa98f11ab5972
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: 9536f03d31dd0fcd
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- Round-1 polish items (photon-interaction table length, koe-1/koe-2 overlap, ennuste-2 wording, detection paragraph split) are unchanged by this diff and still stand as optional.
 
 ## Checked
-- Diff since origin/main: changed exit-ticket questions and answers (fy8-2, fy8-12, fy8-14) and the fy8-9 source note and worked-example sign read clearly for a 16-19-year-old; questions remain answerable from the lesson; model answers match the question.
-- fi-easy: short plain sentences, no new jargon; en matches fi; no bold in task statements, decimal convention kept.
+- Diff only reorders the six colour strips of the visible-light band in the photon-energy figure (lesson.md ~l.35-40): now red at the low-energy end, violet at the high-energy end, which is correct because photon energy rises from red to violet along the E axis.
+- The figure's text, labels and description are untouched; the strips are still an illustration beside a labelled "näkyvä valo", so colour is not the only carrier of meaning.
+- Previously approved path, activities, example, checks and exit ticket are not touched by the diff.
