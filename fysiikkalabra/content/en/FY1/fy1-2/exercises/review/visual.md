@@ -1,15 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 5e975748c76234a9
+VERDICT: PASS
+CONTENT-HASH: 61f5aabd12ab2d28
+SCOPE: delta, task fy1-2-L1-10 (2-10) only, round 3
 
 ## Blocking
-- [Major] exercises.json fy1-2-L1-10 (fy1-2-open-exercises-1280-9) — the edit left a broken sentence: "...in the MAFY table (mafytaulukot.fi) and The travel time is t = s/c, and the distance is converted to metres first. Calculate how long..." — "and" dangles, "The" is capitalised mid-sentence, and the lookup instruction is cut off — a serious language error in edited text — fix: "Look up the mean distance of the Moon from the Earth in the MAFY table (mafytaulukot.fi). The travel time is $t = \tfrac{s}{c}$, and the distance is converted to metres first. Calculate how long the signal takes to travel that distance."
-
-## Polish
 - none
 
+## Polish
+- [Minor] solutions.md fy1-2-L1-10 Answer — the line under the boxed answer starts as a fragment ("To four significant figures, because both data ... have four significant figures.") — write "The answer is given to four significant figures, because both data (...) have four significant figures."
+
 ## Checked
-- fy1-2-open-exercises-1280-9 (task 2-10 text, hint, answer check), -10 (solution: formula, conversions, substitution, answer, reasonableness: layout fine, answer paragraph with 3 s.f. reads well)
-- diff read for exercises.json, solutions.md
+- fy1-2-open-exercises-1280-9 (task 2-10: text now reads as separate sentences, $t = \tfrac{s}{c}$ renders, hint, answer box "t ≈ 1.282 s", Given/Asked start)
+- fy1-2-open-exercises-1280-10 (solution: Principle, Formula, Conversions, Substitution rows aligned at "=", boxed Answer 1.282 s, significant-figure justification, Reasonableness)
+- Diff read for exercises.json and solutions.md; the round 2 Major (broken sentence) is fixed; significant figures agree across the answer line, substitution and answer text.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 3 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
