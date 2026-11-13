@@ -297,6 +297,15 @@
           "feedback": "The calculation has an error in row 3: the kinetic energy is given by the potential difference $V_B - V_A$ between the points, not by the potential of the end point. The electron started from point A, whose potential is not zero."
         }
       ]
+    },
+    {
+      "id": "fy6-12-L2-09",
+      "level": 2,
+      "text": "The graph shows the potential of the uniform field between two parallel plates, where $x$ is the distance from the negative plate. An electron is released from rest at $x = 1.0\\,\\text{cm}$ and travels all the way to the positive plate. Only the electric force does work on the electron. The charge of the electron is $-e$, where $e = 1.602 \\cdot 10^{-19}\\,\\text{C}$, and its mass is $m = 9.109 \\cdot 10^{-31}\\,\\text{kg}$. What is the speed of the electron at the positive plate? Read the values you need from the graph and answer in $\\text{m/s}$.",
+      "figure": "fy6-12/ex-vgraph",
+      "answer": 8390000.0,
+      "unit": "m/s",
+      "tolerance": 0.02
     }
   ],
   "level3": [

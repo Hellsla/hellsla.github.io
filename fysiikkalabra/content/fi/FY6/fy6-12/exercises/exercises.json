@@ -297,6 +297,15 @@
           "feedback": "Laskussa on virhe rivillä 3: liike-energian antaa kohtien potentiaaliero $V_B - V_A$, ei loppukohdan potentiaali. Elektroni lähti kohdasta A, jonka potentiaali ei ole nolla."
         }
       ]
+    },
+    {
+      "id": "fy6-12-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa on kahden yhdensuuntaisen levyn välisen homogeenisen kentän potentiaali, kun $x$ on etäisyys negatiivisesta levystä. Elektroni vapautetaan levosta kohdassa $x = 1{,}0\\,\\text{cm}$, ja se kulkee positiiviselle levylle asti. Vain sähköinen voima tekee elektroniin työtä. Elektronin varaus on $-e$, missä $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$, ja massa $m = 9{,}109 \\cdot 10^{-31}\\,\\text{kg}$. Kuinka suuri on elektronin nopeus positiivisella levyllä? Lue tarvittavat arvot kuvaajasta ja vastaa yksikössä $\\text{m/s}$.",
+      "figure": "fy6-12/ex-vgraph",
+      "answer": 8390000.0,
+      "unit": "m/s",
+      "tolerance": 0.02
     }
   ],
   "level3": [
