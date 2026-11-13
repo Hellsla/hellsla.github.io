@@ -1,17 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: bdc0541fa16d2777
+VERDICT: PASS
+CONTENT-HASH: 2d86ef406e58a1c7
+SCOPE: delta added-exercise from bf811b5954b48e62 base 89bcb63b7431
 
 ## Blocking
-- exercises/exercises.json (fy3-7-L2-09) + solutions.md "Kuvaajan lukeminen" — A (assessment): the start temperature $-16\,{}^\circ\text{C}$ is not on a grid crossing, as the solution claims. In `fy3-7/melting-curve` the T grid is 10 °C, the axis starts at an unlabelled −20 °C, and the first point sits between the −20 and −10 lines (shot L2-12). Reading it as −15 or −17 °C gives $c = 2222$ or $1961\,\text{J/(kg·K)}$, 6–7 % off, while the tolerance is 0,03 (2021–2146). The answer hangs on a value the figure does not let the student read. — Fix (keeps the figure, which L1-05 also uses): give the start temperature in the task text ("Jään alkulämpötila on $-16\,{}^\circ\text{C}$") and keep reading only $Q = 20\,\text{kJ}$ from the figure, or widen the tolerance to what a reading of ±1 °C allows (about 0,07). Correct "ruudukon risteyksestä" in the solution either way.
 
 ## Polish
-- exercises/exercises.json (fy3-7-L1-09) — "sitoo ihosta": the model assumes that all the heat of evaporation comes from the skin (part comes from the air and from the ethanol's own cooling). B-type, mild at this level; optional "Oleta, että kaikki lämpö tulee ihosta."
+- exercises/solutions.md (fy3-7-L2-09, Kuvaajan lukeminen) — "(alkupiste on origossa, $0\,\text{kJ}$)": the start point is $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$, not the origin. Write "alkupisteessä $Q = 0\,\text{kJ}$".
+- exercises/solutions.md (fy3-7-L2-09, Vastaus) — the reason for "hyväksytään $2020\ldots2150$" is that the heat is read from a grid crossing, but an exact crossing gives no reading spread. The range is in fact the 3 % tolerance. Say so, or drop the range.
+- exercises/exercises.json (fy3-7-L1-09) — as in round 1: "sitoo ihosta" assumes that all the heat of evaporation comes from the skin. Optional: "Oleta, että kaikki lämpö tulee ihosta."
 
 ## Checked
-- MAFY value verified on mafytaulukot.fi (*Aineiden olomuodon muutokset*): etanoli $r = 840\,\text{kJ/kg}$ at its boiling point 78,4 °C, as the solution uses.
-- L1-09 recomputed: $Q = rm = 840\,\text{kJ/kg} \cdot 0{,}0050\,\text{kg} = 4{,}2\,\text{kJ}$; answers.py agrees; with 855 kJ/kg 4,3 kJ, inside tolerance 0,04.
-- L1-09 solution notes rightly that the table value holds at the boiling point and is somewhat larger at skin temperature; g → kg conversion shown; comparison with water (11 kJ) a real check.
-- L2-09 recomputed with the figure's own data: $c = 20\,000\,\text{J} / (0{,}60\,\text{kg} \cdot 16\,\text{K}) = 2083\,\text{J/(kg·K)}$; answers.py agrees; physics ($Q = cm\Delta T$ only on the rising part, no melting) right.
-- Figure code: (0; −16), (20; 0), (220; 0), (300; 31,9) consistent with $c_\text{jää} \approx 2100$, $s \approx 333\,\text{kJ/kg}$, $c_\text{vesi} \approx 4180$ for 0,60 kg; description lists −16 °C, so only sighted readers lack the value.
-- Both within FY3 (latent heat, heating curve).
-- Rest of the set unchanged since PASS; hash same at start and end.
+- Round-1 blocker fixed: the start temperature $-16\,{}^\circ\text{C}$ is now in the task text, and the student reads only $Q = 20\,\text{kJ}$ at the crossing $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$ of the 20 kJ / 10 °C grid.
+- L2-09 recomputed: $c = Q/(m\Delta T) = 20\,000\,\text{J}/(0{,}60\,\text{kg} \cdot 16\,\text{K}) = 2083\,\text{J/(kg·K)}$, which matches answers.py. Tolerance 0,03 (2021–2146) accepts $2{,}1 \cdot 10^3$.
+- L2-09 physics: $Q = cm\Delta T$ is used only on the rising part, before any melting. The solution is complete (symbols first, kJ → J, two figures from 0,60 kg), and the check against $c_\text{vesi}$ and the energy balance is real.
+- L1-09 unchanged since round 1: $Q = rm = 840\,\text{kJ/kg} \cdot 0{,}0050\,\text{kg} = 4{,}2\,\text{kJ}$, MAFY value as verified then; the remark that the boiling-point value applies is right.
+- Figure description lists the same points; it does not name the parts or give $c$ or $s$.
+- In FY3 scope; rest of the set unchanged since PASS; hash same at start and end.

@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0fe3461097d29d49
-SCOPE: delta added-exercise from 599e9ef3449e91a0 base 89bcb63b7431
+CONTENT-HASH: 803fbf1569f6cbbf
+SCOPE: delta added-exercise from 0fe3461097d29d49 base c52e6381769f
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (fy3-1-L1-10) — the lesson's own table gives $g_\text{Mars} = 3{,}71\,\text{m/s}^2$ and the task asks for the MAFY value $3{,}72\,\text{m/s}^2$; the solution already says the tables differ slightly and the $\pm 4\,\%$ tolerance accepts both (315 N vs 316 N). Optional: one clause "luvun taulukossa $3{,}71\,\text{m/s}^2$" so a student who uses the chapter's table knows it is fine.
+- exercises/solutions.md (fy3-1-L2-08, Kuvaajan lukeminen) — "vastaus $58$–$62\,\text{N}$ hyväksytään" is a little wider than the stored tolerance 0,03 (58,2–61,8 N), and since the points sit exactly on grid crossings and the answer comes from $g$, no reading spread is involved — say "vastaus lasketaan suoran kulmakertoimesta" or quote the real range.
+- exercises/solutions.md (fy3-1-L2-08) — "$G/m = 5\,\text{N/kg}$": the house rule writes $g$ in m/s² only; the solution does convert in Muunnokset, but writing $5{,}0\,\text{m/s}^2$ straight away would be more consistent.
 
 ## Checked
-- MAFY value verified on mafytaulukot.fi (*Aurinkokunta*): Mars putoamiskiihtyvyys pinnalla $3{,}72\,\text{m/s}^2$, as the solution uses.
-- L1-10 recomputed: $G = 85{,}0 \cdot 3{,}72 = 316{,}2\,\text{N}$ (answers.py same); with 3,71: 315,4 N, 0,3 % off, inside tolerance 0,04.
-- Model $G = mg$ is the chapter's law; mass the same on Mars; in FY3 scope (no Newton's laws).
-- Unit N; three significant figures justified by 85,0 kg and 3,72 m/s²; reasonableness check ($0{,}38 \cdot 834\,\text{N} \approx 317\,\text{N}$) is a real check.
-- Solution complete: given, principle, formula (already solved), conversions, substitution with units, rounding reason, check.
-- Data realistic (astronaut with suit 85 kg is plausible; light suit, but not a physics error).
-- Rest of the set unchanged since PASS (added_exercises verified by script).
+- Figure generator: five points $(m, 5m)$ for m = 2…10 kg, on the 2 kg / 10 N grid; the description lists the same points and gives no $g$ or answer.
+- Recomputed: $g = 50/10 = 20/4 = 5{,}0\,\text{m/s}^2$, $G = 12 \cdot 5{,}0 = 60\,\text{N}$; answers.py gives 60, so it matches.
+- Model $G = mg$ with the same $g$ for every body at one surface; extrapolating to 12 kg (just past the range of the data) is justified by proportionality, as the solution says. FY3 scope, no Newton's laws.
+- Unit N; two significant figures justified by 12 kg; the reasonableness check (1,2 × 50 N) really checks the result.
+- Solution complete: given, principle, how the graph is read, formula in symbols, conversions, substitution with units, rounding, check.
+- $g = 5\,\text{m/s}^2$ is a plausible value for an imagined celestial body.
+- Rest of the set unchanged since PASS (packet: added_exercises verified).
 - Hash same at start and end.
