@@ -220,3 +220,25 @@ $B_2 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{240 \cdot 1
 $B_2 \approx 2{,}26 \cdot 10^{-3}\,\text{T}$
 
 Kenttä kasvaa siis noin $1{,}5\,\text{mT}$:sta noin $2{,}3\,\text{mT}$:iin. Jos pelkkä kierrosten kokonaismäärä ratkaisisi, kolminkertainen virta antaisi kolminkertaisen kentän. Käämin venyttäminen kuitenkin harventaa kierroksia ja heikentää kenttää.
+
+## fy7-3-L2-09
+**Annettu:** kuvaaja $B(I)$ käämin keskeltä; käämin pituus $l = 0{,}250\,\text{m}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Kysytty:** kierrosten lukumäärä $N$
+**Periaate:** Pitkän käämin sisällä $B = \mu_0 \dfrac{N I}{l}$. Kenttä $B$ on siis suoraan verrannollinen virtaan $I$, ja $(I, B)$-pisteet ovat suoralla. Suoran kulmakerroin on $k = \mu_0 N : l$. Kierrosluvun voi laskea siitä.
+**Kuvaajan lukeminen:** Sovitettu suora lähtee origosta ja kulkee pisteen $(2{,}0\,\text{A};\ 5{,}0\,\text{mT})$ kautta. Kulmakerroin on $k = \Delta B : \Delta I = 5{,}0\,\text{mT} : 2{,}0\,\text{A} = 2{,}5\,\tfrac{\text{mT}}{\text{A}}$. Viimeinen mittauspiste antaa $6{,}2\,\text{mT} : 2{,}5\,\text{A} = 2{,}5\,\tfrac{\text{mT}}{\text{A}}$, joten suora sopii pisteisiin hyvin.
+**Kaava:** $k = \dfrac{\mu_0 N}{l}$, josta $N = \dfrac{k\,l}{\mu_0}$
+**Muunnokset:** $k = 2{,}5\,\tfrac{\text{mT}}{\text{A}} = 2{,}5 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}}$
+**Sijoitus:** $N = \dfrac{2{,}5 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}} \cdot 0{,}250\,\text{m}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}} = 497$
+**Vastaus:** Käämissä on noin $5{,}0 \cdot 10^2$ kierrosta (laskettu $497$), kaksi merkitsevää numeroa, koska luettu kulmakerroin on kahden numeron tarkkuudella.
+**Järkevyys:** Tarkistus: $B = \mu_0 N I : l = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 497 \cdot 1{,}0\,\text{A} : 0{,}250\,\text{m} = 2{,}5\,\text{mT}$, mikä vastaa suoran arvoa virralla $1{,}0\,\text{A}$. Kierrosluku on käämille tavallinen.
+
+## fy7-3-L2-10
+**Annettu:** kuvaaja $B(r)$ pitkälle suoralle johtimelle; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Kysytty:** johtimen virta $I$ ampeereina
+**Periaate:** Pitkän suoran johtimen kenttä on $B = \dfrac{\mu_0 I}{2\pi r}$. Luetaan kuvaajasta yksi piste $(r, B)$. Sitten virta ratkaistaan kaavasta.
+**Kuvaajan lukeminen:** Etäisyydellä $r = 2{,}0\,\text{cm}$ käyrä on kolmannella vaakaviivalla, ja ruudukon väli on $20\,\mu\text{T}$, joten $B = 3 \cdot 20\,\mu\text{T} = 60\,\mu\text{T}$. Tarkistus: etäisyydellä $1{,}0\,\text{cm}$ kenttä on $120\,\mu\text{T}$ ja etäisyydellä $4{,}0\,\text{cm}$ se on $30\,\mu\text{T}$, joten $B$ on kääntäen verrannollinen etäisyyteen.
+**Kaava:** $B = \dfrac{\mu_0 I}{2\pi r}$, josta $I = \dfrac{2\pi r B}{\mu_0}$
+**Muunnokset:** $r = 2{,}0\,\text{cm} = 0{,}020\,\text{m}$ ja $B = 60\,\mu\text{T} = 60 \cdot 10^{-6}\,\text{T}$
+**Sijoitus:** $I = \dfrac{2\pi \cdot 0{,}020\,\text{m} \cdot 60 \cdot 10^{-6}\,\text{T}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}} = 6{,}0\,\text{A}$
+**Vastaus:** $6{,}0\,\text{A}$, kaksi merkitsevää numeroa, koska luettu kenttä on $60\,\mu\text{T}$.
+**Järkevyys:** Tarkistus: $2 \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 6{,}0\,\text{A} : 0{,}010\,\text{m} = 1{,}2 \cdot 10^{-4}\,\text{T} = 120\,\mu\text{T}$, mikä on kuvaajan arvo etäisyydellä $1{,}0\,\text{cm}$. Virta on arkielämän laitteille tavallinen.

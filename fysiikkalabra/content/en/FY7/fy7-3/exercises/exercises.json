@@ -273,6 +273,30 @@
           "feedback": "Here only the stretching of the coil has been taken into account. Halving the turn density would halve the field, but at the same time the current triples, and the field is directly proportional to the current."
         }
       ]
+    },
+    {
+      "id": "fy7-3-L2-09",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "The graph shows the magnetic flux density $B$ measured at the centre of a coil as a function of the current $I$. The length of the coil is $0.250\\,\\text{m}$, and it has a single layer of turns. The coil is much longer than it is wide. How many turns does the coil have? Read the slope of the fitted line from the graph.",
+      "figure": "fy7-3/coil-fit",
+      "answer": 497.36,
+      "unit": "turns",
+      "tolerance": 0.04
+    },
+    {
+      "id": "fy7-3-L2-10",
+      "level": 2,
+      "kind": [
+        "data"
+      ],
+      "text": "The graph shows the magnetic flux density $B$ of a long straight wire as a function of the distance $r$. The current in the wire is unknown. How great is the current in the wire? Read the value of the field at the distance $r = 2.0\\,\\text{cm}$ from the graph.",
+      "figure": "fy7-3/wire-graph-task",
+      "answer": 6.0,
+      "unit": "A",
+      "tolerance": 0.05
     }
   ],
   "level3": [
