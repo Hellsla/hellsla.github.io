@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 62b370cfcdb672b5
+CONTENT-HASH: 9be5f443c02c19e3
 
 ## Blocking
-
-None. L3-03 defines epsilon = Q_1/W with Q_1 (heat given indoors) and W (pump's electric energy).
+None.
 
 ## Polish
-
-1. solutions.md L3-03 Formula line: the added sentence about Q_1 and W follows the formula without a full stop or line break; add a period/newline.
+- L1-09/L2-09 fit their levels. Optional: L1-09 states c is taken at 20 C although the water is hot; the 4 % tolerance covers it, one clause in the hint would help.
 
 ## Checked
-
-Diff since previous PASS and the MAFY notation in lesson/solutions; symbols defined where first used; numbers and levels unchanged.
+Changed symbols (P_a/P_o, Q1) and the added exercises read in full: solutions follow the staged format, symbols are defined where used, added L1-09 (lookup) and L2-09 (figure) match their levels and chapter.
