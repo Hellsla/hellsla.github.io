@@ -39,6 +39,8 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
 10. English concept cards for FY6 and FY8 (queue: later, the teacher's decision).
 11. Ahjo and LUMA-tutor onto the shared unit template (`jaksot.py` blocks, as Kilparobotiikka). Last; shared files,
     so alone.
+12. Printed A5 booklets for FY1–FY8 in the current compact layout (`print_book.py --publish`): FY1–FY4 again, FY5–FY8
+    new; each course after its MAFY formulas (step 3) are merged.
 
 Area D waits for the teacher's decision on which plan (FY10, Dronelabra, others) is approved for building.
 

@@ -74,6 +74,14 @@ vielä osin omilla moduuleillaan (`ahjo.py`, `lumatutor.py`). Siirretään ne sa
 tavulleen samoina kuten Kilparobotiikassa, ja puuttuvat lohkot lisätään yhteiseen lohkokirjastoon. Jaettuja
 tiedostoja: tehdään yksin.
 
+## 12. Vihkot FY1–FY8 nykyisellä tiiviillä asettelulla (opettaja 2026-11-13)
+
+Tulostettavat A5-vihkot (`python scripts/print_book.py <C> --lang fi|en --publish`, README "Printed A5 book") kaikille
+kursseille FY1–FY8 sivuja säästävällä tiiviillä asettelulla (#393). FY1–FY4:llä vihko on (7.11.), mutta sisältö on
+muuttunut sen jälkeen (MAFY-kaavat, käsitteet, korjaukset), joten ne tehdään uudelleen; FY5–FY8 ovat uusia. Kurssin
+vihko tehdään vasta, kun sen kohdan 3 MAFY-kaavat on yhdistetty, ettei sitä tarvitse tehdä kahdesti. Rakenna sivusto
+vihkojen jälkeen (Vihkot-sivu).
+
 ## Kirjattu päätös: luvut ilman käsitekortteja (opettaja 2026-11-13)
 
 Luvut fy3-13, fy3-14, fy3-16 ja fy4-16 jäävät ilman omia kortteja ja alleviivauksia (#526:n siirtojen jälkeen).
