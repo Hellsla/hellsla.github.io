@@ -93,6 +93,18 @@
       "answer": 25.4996,
       "unit": "°",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy7-10-L1-09",
+      "level": 1,
+      "text": "A ray of light arrives from the air at the surface of water at an angle of incidence of $52.0^\\circ$. Look up the refractive index of water in the MAFY table and calculate the angle of refraction in the water. Use $1.00$ as the refractive index of air.",
+      "lookup": "MAFY",
+      "answer": 36.2391,
+      "unit": "°",
+      "tolerance": 0.02,
+      "hints": [
+        "The value is in the MAFY table *Taitekertoimia* (refractive indices)."
+      ]
     }
   ],
   "level2": [
@@ -236,6 +248,15 @@
           "feedback": "There is an error in the calculation, on line 3. The result $19.2^\\circ$ is smaller than the angle of incidence $30.0^\\circ$, although according to line 1 the beam must be refracted away from the normal. In the law of refraction $n_1$ belongs to the material the light comes from."
         }
       ]
+    },
+    {
+      "id": "fy7-10-L2-09",
+      "level": 2,
+      "text": "The figure shows the measurements of a laser experiment in which light arrives from the air into acrylic, and a straight line fitted to the points. Read from the line two points at which $\\sin\\alpha_2$ is $0.20$ and $0.60$, and determine the slope of the line. Use it to deduce the refractive index of acrylic when the refractive index of air is $1.00$. What is the angle of refraction in the acrylic when light arrives from the air at an angle of incidence of $35.0^\\circ$?",
+      "figure": "fy7-10/fit",
+      "answer": 22.6407,
+      "unit": "°",
+      "tolerance": 0.03
     }
   ],
   "level3": [
