@@ -151,6 +151,16 @@ sitten sijoitus. Korjataan kurssi kerrallaan `/exercises`- ja `/practice`-putkel
 scope-säännön mukaan); järjestys kuten kohta 2. Ei rinnakkain saman kurssin tehtäväkatselmoinnin kanssa: yhdistetään
 samaan ketjuun, kun kurssin katselmointi on vielä kesken (FY5, FY6, FY7).
 
+## 8h. Ensimmäinen ennuste näkyy aina (opettaja 2026-11-13)
+
+Ennusta-vaihe on nyt yksi suljettu laatikko "Tee ennusteet ennen tutkimista · N kysymystä" (CLAUDE.md Lesson page 3,
+2026-10-26), joten vaihe näyttää tyhjältä. Opettaja: "ehkä ensimmäinen ennuste pitäisi aina näkyä. Nyt jää muuten
+turhan tyhjäksi tuo ennuste-kohta." Muutos: ensimmäinen ennustekysymys näkyy auki vaiheen alussa, muut (jos on)
+laatikossa "Lisää ennusteita · N kysymystä"; yhden ennusteen luvussa ei laatikkoa lainkaan. Sitoutuminen ennen
+vastausta (gating), tallennus ja Palaa ennusteisiisi -yhteenveto ennallaan. Sivupohjan muutos (inquiry.py/js,
+site.css), ei lukujen tekstejä; korjaa CLAUDE.md:n Lesson page 3 samassa PR:ssä; test_inquiry ja test_progress.
+Yhdistetään #546:n jälkeen (sama Ennusta-alue).
+
 ## 9. Esimerkkikokeet FY7 ja FY8 (opettaja 2026-11-13)
 
 FY1–FY6:lla on esimerkkikoe (`content/fi/<COURSE>/koe/`), FY7:llä ja FY8:lla ei. `/exam FY7` ja `/exam FY8`
