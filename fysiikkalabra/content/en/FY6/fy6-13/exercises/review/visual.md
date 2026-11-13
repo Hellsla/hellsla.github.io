@@ -1,16 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: a1a0baded87547f2
-Mode: delta (new YO-skill task fy6-13-L1-09, type 8 true/false statements)
+CONTENT-HASH: 70401639c33a7a24
+SCOPE: delta added-exercise from a1a0baded87547f2 base 8f23aa7ae3bd
+Round 1
+Mode: delta (added exercises fy6-13-L1-10 and fy6-13-L2-08, shown as 13-12 and 13-18)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy6-13-L1-09 solution — the inline fractions $\tfrac{Q}{U}$ in "so C = Q/U is still" render small at 1280 px (inline \tfrac is the house rule, readable but tight); no change needed unless the line is re-set.
-- [Minor] fy6-13-L1-09 intro — "Decide which statements are true and which are false" is followed by the widget prompt "Is the statement true or false?"; the two sentences repeat each other.
+- [Minor] fy6-13-L1-10 Reasonableness — the air estimate is a bare-size \tfrac fraction whose exponents and decimals are tiny (capture 1280-12); write it with \dfrac as the Substitution line does.
+- [Minor] fy6-13-L1-10 and L2-08 solutions — the label is "Asked:" (shown ASKED) while the neighbouring solutions, e.g. 13-17, show FIND; use "Find:" so the set reads as one.
+- [Minor] fy6-13-L1-10 Given — the MAFY table name is Finnish in italics with the English gloss only in the hint; fine, but give the gloss once in the solution too.
 
 ## Checked
-- fy6-13-open-exercises-1280-9.png (task start, statements 1-2), -10.png (statements 3-5, the Answer button, the answer chip "1 true, 2 false, ...", Find, Principle, Model answer with the Q and W chains) and -11.png (end of the solution): True/False toggles are whole, labelled, wrap cleanly; units with thin spaces, decimal points, $\mu\text{F}$, $+Q$/$-Q$ render correctly; nothing clipped or overflowing.
+- fy6-13-open-exercises-1280-11.png and -12.png (task 13-12: statement, hint, full solution, conversion and substitution rows).
+- fy6-13-open-exercises-L2-1280-8.png, -9.png, -10.png (task 13-17 above for context, 13-18 statement, graph and full solution).
+- Graph ex-qu2: axes with quantity and unit, ticks every 20 $\mu\text{C}$ and 1 V, straight line from the origin, nothing written that gives the capacitance; consistent with its description.
+- Units in LaTeX, decimal point, aligned chains, answer chips all fine.
 
 ## Scores
-illustrations n/a (4) · typography 4 · English 5 · accessibility 4
+illustrations 4 · typography 4 · English 5 · accessibility 4

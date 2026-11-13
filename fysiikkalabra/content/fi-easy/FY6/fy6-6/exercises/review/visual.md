@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: bd18cf01612b6d99
+CONTENT-HASH: d41d82457f2f3aac
+SCOPE: delta added-exercise from bd18cf01612b6d99 base c7f5e91173b0
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] solutions.md fy6-6-L2-08 — inline \tfrac fractions with units ($\tfrac{1{,}5\,\text{W}}{6{,}0\,\text{W}}$, $\tfrac{(6{,}0\,\text{V})^2}{24\,\Omega}$) are very small in running text; a colon division would match the house style.
+- [Minor] fy6-6-L2-09 solution — ranges "0-3,0 min", "3,0-8,0 min", "0,5-2,0 kW" are written with a hyphen — use an en dash.
 
 ## Checked
-- Delta: new L2-08 (prediction choice, shown as 6-16), solution; answers.py comment only.
-- Opened fi-easy fy6-6-open-exercises-L2-1280-9 (6-16 text, choices, feedback) and -10 (Kysytty/Periaate/Mallivastaus, both blocks, closing paragraph).
-- Decimal comma and units render as maths; the Finnish is plain and ordered (situation, change, question); the explanation names Joule's law and the square of the current in separate short sentences, suited to S2 readers.
-- No red KaTeX, no clipping, no overflow.
-- Figures: none changed.
+- fy6-6-L2-09 (task 6-17) in open-exercises-L2-1280 parts 10 and 11: task text, figure ex-pt (power in three steps, axes with units, ticks every minute readable, gridlines, 2000/1000/500 W readable), solution with aligned Kaava, Muunnokset and Sijoitus rows, Vastaus, Järkevyys. Nothing clipped; the set reads as one.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5
