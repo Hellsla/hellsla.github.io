@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 50b79f966167569c
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 7b152209cf589af5
+SCOPE: delta — uusi MAFY-taulukkotehtävä fy1-8-L1-10 (teksti, ratkaisu, answers.py) ja opettajan hyväksymät tehtäväkuvat (kuvat vain asettelun osalta)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-8-L1-10 — "Anna vastaus yksikössä g/kg/km": yksikkö pelkkänä tekstinä; kirjoita $\text{km}$ jne. LaTeXina kuten muu teksti.
 
 ## Checked
-- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
-- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
-- Language version fi judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- open-exercises-1280 (uuden tehtävän fy1-8-L1-10 kysymys, vihje, vastauskenttä ja avattu ratkaisu) ja viereiset tehtävät
+- ratkaisun vaiheet: Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys; yksiköt LaTeXina, desimaalipilkku, \cdot, ei vaakasuuntaista ylivuotoa
+- tehtäväkuvat tarkistettu kontaktilehdiltä / otoksina (fy1-1 eclipse luettavissa, ei sumeaa tai leikkautunutta)
+
+## Scores
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 230907cc3cdb0470
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: f5b8668b0e07b561
+SCOPE: delta — uusi MAFY-taulukkotehtävä fy1-7-L1-09 (teksti, ratkaisu, answers.py) ja opettajan hyväksymät tehtäväkuvat (kuvat vain asettelun osalta)
 
 ## Blocking
 - none
 
 ## Polish
-- none beyond wording; checked units/decimal comma/\,\text notation in all changed lines ($2{,}4\,\text{t}$, $1{,}8\,\text{t}$ etc. correct).
+- [Minor] fy1-7-L1-09 — "Anna vastaus yksikössä g/kg/km": yksikkö pelkkänä tekstinä; kirjoita $\text{km}$ jne. LaTeXina kuten muu teksti.
 
 ## Checked
-- Exercise and solution diff read for notation (decimal comma, thin-space units, \text) and readable language; no figures changed.
+- open-exercises-1280 (uuden tehtävän fy1-7-L1-09 kysymys, vihje, vastauskenttä ja avattu ratkaisu) ja viereiset tehtävät
+- ratkaisun vaiheet: Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys; yksiköt LaTeXina, desimaalipilkku, \cdot, ei vaakasuuntaista ylivuotoa
+- tehtäväkuvat tarkistettu kontaktilehdiltä / otoksina (fy1-1 eclipse luettavissa, ei sumeaa tai leikkautunutta)
+
+## Scores
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

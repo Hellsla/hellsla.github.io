@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3e5427fe956328a7
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 0efea0196a78b548
+SCOPE: delta — uusi MAFY-taulukkotehtävä fy1-3-L1-09 (teksti, ratkaisu, answers.py) ja opettajan hyväksymät tehtäväkuvat (kuvat vain asettelun osalta)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-3-L1-09 Vastaus — virhearvion rivi ($\Delta x$ murtolukuna ja välin $1{,}005\ldots1{,}015\,\text{g/cm}^3$ samassa kappaleessa) on tiivis; harkitse omaa riviä.
 
 ## Checked
-- fy1-3-L3-05: Periaate now names the check as a simplified comparison of the stated uncertainty estimates; Vastaus says the results are not consistent per these estimates, the estimates are not hard limits and separation alone does not decide statistical significance.
-- Gap 0.04 g/cm³ and intervals 2,69–2,79 / 2,55–2,65 unchanged and correct.
-- Language version fi judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- open-exercises-1280 (uuden tehtävän fy1-3-L1-09 kysymys, vihje, vastauskenttä ja avattu ratkaisu) ja viereiset tehtävät
+- ratkaisun vaiheet: Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys; yksiköt LaTeXina, desimaalipilkku, \cdot, ei vaakasuuntaista ylivuotoa
+- tehtäväkuvat tarkistettu kontaktilehdiltä / otoksina (fy1-1 eclipse luettavissa, ei sumeaa tai leikkautunutta)
+
+## Scores
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

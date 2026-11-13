@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 3e5427fe956328a7
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 0efea0196a78b548
+SCOPE: delta added-exercise from 8ce9535a28c5573f base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- content/fi/FY1/fy1-3/exercises/solutions.md:210 — the answer 1,2 % has no reason for its two figures — add "kaksi merkitsevää numeroa, koska erotus $1{,}010 - 0{,}998 = 0{,}012$ on kahden numeron tarkkuinen".
 
 ## Checked
-- fy1-3-L3-05: Periaate now names the check as a simplified comparison of the stated uncertainty estimates; Vastaus says the results are not consistent per these estimates, the estimates are not hard limits and separation alone does not decide statistical significance.
-- Gap 0.04 g/cm³ and intervals 2,69–2,79 / 2,55–2,65 unchanged and correct.
-- Language version fi judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-3-L1-09 only (delta, added exercise); hash the same at start and end.
+- Recomputed independently: x̄ = 5,050/5 = 1,010 g/cm³; (1,010 − 0,998206)/0,998206 · 100 % = 1,18 % (key 1.18).
+- MAFY water density at 20 °C is 0,998206 g/cm³ (998,21 kg/m³), which is right; the hint names the right table.
+- Δx = (1,014 − 1,004)/2 = 0,005 g/cm³ is the lesson's virhearvio (half the range). The interval 1,005…1,015 leaves out 0,998, so "todennäköisesti systemaattinen virhe" is right and is hedged as the guardrails ask. The mean's uncertainty is smaller still, so the conclusion only gets stronger.
+- Terms agree with the glossary: you find a systematic error by comparing with a known reference value.
+- The sign is right: every result is above the table value, so the deviation is positive.
+- Tolerance 0,04 is fine; the shown 1,2 % is 1,7 % from the key.
