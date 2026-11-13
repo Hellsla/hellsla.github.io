@@ -42,7 +42,7 @@
 **Given:** read from the figure, $341\,\tfrac{\text{W}}{\text{m}^2}$ comes from the Sun and $102\,\tfrac{\text{W}}{\text{m}^2}$ of it is reflected; the mean temperature of the Earth stays constant
 **Find:** the power per square metre leaving into space as thermal radiation $P_\text{rad}$
 **Principle:** The temperature stays constant, so the Earth is in energy balance: the power it absorbs is equal to the thermal radiation leaving into space. The reflected radiation does not warm the Earth, so the absorbed part is the incoming power minus the reflected power.
-**Reading the graph:** The left arrow of the figure gives the incoming power $P_\text{in} = 341\,\tfrac{\text{W}}{\text{m}^2}$ and the upper right arrow the reflected power $P_\text{refl} = 102\,\tfrac{\text{W}}{\text{m}^2}$. The lower right arrow, whose value is a question mark, is the thermal radiation asked for.
+**Reading the graph:** The left arrow of the figure gives the incoming power $P_\text{in} = 341\,\tfrac{\text{W}}{\text{m}^2}$ and the arrow between the Sun and the Earth that points up and to the left the reflected power $P_\text{refl} = 102\,\tfrac{\text{W}}{\text{m}^2}$. The lower right arrow, whose value is a question mark, is the thermal radiation asked for.
 **Formula:** $P_\text{abs} = P_\text{in} - P_\text{refl}$ and in balance $P_\text{rad} = P_\text{abs}$
 **Conversions:** Not needed: all the powers are in the unit $\tfrac{\text{W}}{\text{m}^2}$.
 **Substitution:** $P_\text{rad} = 341\,\tfrac{\text{W}}{\text{m}^2} - 102\,\tfrac{\text{W}}{\text{m}^2} = 239\,\tfrac{\text{W}}{\text{m}^2}$
@@ -219,7 +219,7 @@ From smallest to largest: door, roof, windows, wall. The U-value alone would giv
 **Given:** read from the figure, $P_\text{in} = 341\,\tfrac{\text{W}}{\text{m}^2}$ comes from the Sun and $P_\text{refl} = 102\,\tfrac{\text{W}}{\text{m}^2}$ of it is reflected
 **Find:** the share of the incoming radiation that is reflected, as a percentage
 **Principle:** The share is found by comparing the reflected power with the incoming power over the same area. Both powers are given per square metre, so the units cancel.
-**Reading the graph:** The left arrow of the figure gives the incoming power $341\,\tfrac{\text{W}}{\text{m}^2}$ and the upper right arrow the reflected power $102\,\tfrac{\text{W}}{\text{m}^2}$. The question mark of the lower arrow is not needed.
+**Reading the graph:** The left arrow of the figure gives the incoming power $341\,\tfrac{\text{W}}{\text{m}^2}$ and the arrow between the Sun and the Earth that points up and to the left the reflected power $102\,\tfrac{\text{W}}{\text{m}^2}$. The question mark of the lower arrow is not needed.
 **Formula:** share $= \dfrac{P_\text{refl}}{P_\text{in}}$, and as a percentage $\dfrac{P_\text{refl}}{P_\text{in}} \cdot 100\,\%$
 **Conversions:** The quotient is a plain number, and multiplying it by $100\,\%$ gives the percentage. The powers need no conversion.
 **Substitution:** $\dfrac{102\,\tfrac{\text{W}}{\text{m}^2}}{341\,\tfrac{\text{W}}{\text{m}^2}} \cdot 100\,\% = 0.2991 \cdot 100\,\% = 29.9\,\%$

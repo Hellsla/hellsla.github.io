@@ -42,7 +42,7 @@
 **Annettu:** kuvasta luettuna Auringosta tulee $341\,\tfrac{\text{W}}{\text{m}^2}$ ja siitä heijastuu $102\,\tfrac{\text{W}}{\text{m}^2}$; maapallon keskilämpötila pysyy vakiona
 **Kysytty:** avaruuteen lämpösäteilynä lähtevä teho neliömetriä kohti $P_\text{säteily}$
 **Periaate:** Lämpötila pysyy vakiona, joten maapallo on energiatasapainossa: sen imemä teho on yhtä suuri kuin avaruuteen lähtevä lämpösäteily. Heijastunut säteily ei lämmitä maapalloa, joten imeytyvä osa on tuleva teho miinus heijastunut teho.
-**Kuvaajan lukeminen:** Kuvan vasen nuoli kertoo tulevan tehon $P_\text{tulo} = 341\,\tfrac{\text{W}}{\text{m}^2}$ ja ylempi oikea nuoli heijastuvan tehon $P_\text{heij} = 102\,\tfrac{\text{W}}{\text{m}^2}$. Alempi oikea nuoli, jonka arvo on kysymysmerkki, on kysytty lämpösäteily.
+**Kuvaajan lukeminen:** Kuvan vasen nuoli kertoo tulevan tehon $P_\text{tulo} = 341\,\tfrac{\text{W}}{\text{m}^2}$ ja Auringon ja Maan välissä ylös vasemmalle osoittava nuoli heijastuvan tehon $P_\text{heij} = 102\,\tfrac{\text{W}}{\text{m}^2}$. Alempi oikea nuoli, jonka arvo on kysymysmerkki, on kysytty lämpösäteily.
 **Kaava:** $P_\text{im} = P_\text{tulo} - P_\text{heij}$ ja tasapainossa $P_\text{säteily} = P_\text{im}$
 **Muunnokset:** Ei tarvita: kaikki tehot ovat yksikössä $\tfrac{\text{W}}{\text{m}^2}$.
 **Sijoitus:** $P_\text{säteily} = 341\,\tfrac{\text{W}}{\text{m}^2} - 102\,\tfrac{\text{W}}{\text{m}^2} = 239\,\tfrac{\text{W}}{\text{m}^2}$
@@ -219,7 +219,7 @@ Pienimmästä suurimpaan: ovi, yläpohja, ikkunat, seinä. Pelkkä U-arvo antais
 **Annettu:** kuvasta luettuna Auringosta tulee $P_\text{tulo} = 341\,\tfrac{\text{W}}{\text{m}^2}$ ja siitä heijastuu $P_\text{heij} = 102\,\tfrac{\text{W}}{\text{m}^2}$
 **Kysytty:** heijastuneen säteilyn osuus tulevasta säteilystä prosentteina
 **Periaate:** Osuus saadaan vertaamalla heijastunutta tehoa tulevaan tehoon samalla pinta-alalla. Molemmat tehot on annettu neliömetriä kohti, joten yksiköt supistuvat.
-**Kuvaajan lukeminen:** Kuvan vasen nuoli kertoo tulevan tehon $341\,\tfrac{\text{W}}{\text{m}^2}$ ja ylempi oikea nuoli heijastuvan tehon $102\,\tfrac{\text{W}}{\text{m}^2}$. Alemman nuolen kysymysmerkkiä ei tarvita.
+**Kuvaajan lukeminen:** Kuvan vasen nuoli kertoo tulevan tehon $341\,\tfrac{\text{W}}{\text{m}^2}$ ja Auringon ja Maan välissä ylös vasemmalle osoittava nuoli heijastuvan tehon $102\,\tfrac{\text{W}}{\text{m}^2}$. Alemman nuolen kysymysmerkkiä ei tarvita.
 **Kaava:** osuus $= \dfrac{P_\text{heij}}{P_\text{tulo}}$, ja prosentteina $\dfrac{P_\text{heij}}{P_\text{tulo}} \cdot 100\,\%$
 **Muunnokset:** Osamäärä on lukuarvo, jonka kertominen luvulla $100\,\%$ antaa prosentit. Tehoja ei tarvitse muuntaa.
 **Sijoitus:** $\dfrac{102\,\tfrac{\text{W}}{\text{m}^2}}{341\,\tfrac{\text{W}}{\text{m}^2}} \cdot 100\,\% = 0{,}2991 \cdot 100\,\% = 29{,}9\,\%$

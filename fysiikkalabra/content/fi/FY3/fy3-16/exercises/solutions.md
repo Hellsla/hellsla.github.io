@@ -235,7 +235,7 @@ Yhteensä $Q = 21{,}32 \cdot 10^{9}\,\text{J}$, ja teho $P = \dfrac{21{,}32 \cdo
 **Annettu:** kuvaajasta luettuna lämpötila nousee pisteestä $(0\,\text{s};\ 20\,{}^\circ\text{C})$ pisteeseen $(180\,\text{s};\ 60\,{}^\circ\text{C})$; $m = 2{,}0\,\text{kg}$ ja $P = 400\,\text{W}$
 **Kysytty:** ominaislämpökapasiteetti $c$ yksikössä $\text{J/(kg}\cdot\text{K)}$
 **Periaate:** Energia säilyy, ja koko vastuksen teho siirtyy kappaleeseen, joten ajassa $t$ siirtyvä energia $Pt$ lämmittää kappaletta: $Pt = Q = cm\Delta T$.
-**Kuvaajan lukeminen:** Kuvaaja on suora, joten teho on vakio. Alkupiste on ruudukon risteyksessä $(0\,\text{s};\ 20\,{}^\circ\text{C})$ ja loppupiste risteyksessä $(180\,\text{s};\ 60\,{}^\circ\text{C})$. Ruudukon väli on $20\,\text{s}$ ja $10\,{}^\circ\text{C}$. Aika on siis $t = 180\,\text{s}$ ja lämpötilan muutos $\Delta T = 60 - 20 = 40\,{}^\circ\text{C} = 40\,\text{K}$.
+**Kuvaajan lukeminen:** Teho on vakio, joten kuvaaja on suora. Alkupiste on ruudukon risteyksessä $(0\,\text{s};\ 20\,{}^\circ\text{C})$ ja loppupiste risteyksessä $(180\,\text{s};\ 60\,{}^\circ\text{C})$. Ruudukon väli on $20\,\text{s}$ ja $10\,{}^\circ\text{C}$. Aika on siis $t = 180\,\text{s}$ ja lämpötilan muutos $\Delta T = 60 - 20 = 40\,{}^\circ\text{C} = 40\,\text{K}$.
 **Kaava:** $Pt = cm\Delta T$, joten $c = \dfrac{Pt}{m\Delta T}$
 **Muunnokset:** Lämpötilan muutos on yhtä suuri celsiusasteina ja kelvineinä, $\Delta T = 40\,\text{K}$. Teho $\text{W}$ kertaa aika $\text{s}$ on jouleina, joten muita muunnoksia ei tarvita.
 **Sijoitus:** $c = \dfrac{400\,\text{W} \cdot 180\,\text{s}}{2{,}0\,\text{kg} \cdot 40\,\text{K}} = \dfrac{72\,000\,\text{J}}{80\,\text{kg}\cdot\text{K}} = 900\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$
