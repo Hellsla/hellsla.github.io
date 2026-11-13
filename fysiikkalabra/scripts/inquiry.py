@@ -718,14 +718,35 @@ TUTKI_FOLD_COURSES = {f"FY{i}" for i in range(1, 10)}   # the modules whose Tutk
 TUTKI_VISIBLE = 2                                  # at most this many tasks of Tutki in view (teacher 2026-11-06)
 
 
-SOURCE_SHOWN = ("measured", "statistics")   # teacher 2026-11-13: no provenance tag on example, simulated or model data; a real source stays as a small source line
+_URL = re.compile(r"https?://[^\s,;)<>]+|(?<![\w@.-])(?:[a-z0-9-]+\.)+(?:fi|com|org|io|eu|gov|net)(?:/[^\s,;)<>]*)?", re.I)
+
+
+def source_short(note, limit=120):
+    """The short, visible part of a source note: the first sentence without parentheses, cut at a word at about
+    `limit` characters (never inside a $formula$); (short, url or None). The whole note stays in the title attribute."""
+    url = _URL.search(note); url = url.group(0).rstrip(".") if url else None
+    t = re.sub(r"\s*\([^()]*\)", "", note.strip())
+    t = re.split(r"(?<=[a-zäöå\)])\.\s+(?=[A-ZÄÖÅ])", t, maxsplit=1)[0].rstrip(" .;")
+    if len(t) > limit:
+        t = t[:limit].rsplit(" ", 1)[0]
+        if t.count("$") % 2: t = t[:t.rfind("$")].rstrip(" ,;:")
+        t = t.rstrip(" ,;:") + "…"
+    return t, url
 
 
 def source_line(src, note, inline):
-    """The small source line of a data table or task (teacher 2026-11-13, "esimerkkiaineisto-merkki pois"): the note
-    naming who measured it or which statistics it is, never a tag. Example, simulated and model data show nothing;
-    the `source` field stays in the source and the validation (invented numbers are never presented as measured)."""
-    return f'<p class="source" data-source="{src}">{inline(note)}</p>' if src in SOURCE_SHOWN and note else ""
+    """The small source line under a data table or graph (teacher 2026-11-13, "esimerkkiaineisto-merkki pois", then
+    "ei pillereitä"): no tag and no background. measured and statistics: "Lähde: <name year>", a link when the note
+    names an address, the long method note only in the title; example and simulated: "Esimerkkiaineisto."; model: nothing.
+    The `source` field stays in the source and the validation (invented numbers are never presented as measured)."""
+    if src in ("example", "simulated"): return f'<p class="source" data-source="{src}">{T("inquiry.source_line_example")}</p>'
+    if src not in ("measured", "statistics") or not note: return ""
+    short, url = source_short(note)
+    text = inline(short)
+    if url:
+        href = url if url.lower().startswith("http") else "https://" + url
+        text = f'<a href="{esc(href)}" rel="noopener">{text}</a>'
+    return f'<p class="source" data-source="{src}" title="{esc(plain(note))}">{T("inquiry.source_label")} {text}</p>'
 
 
 def tutki_split(items):
@@ -845,7 +866,7 @@ def render(folder, inquiry, parts, md):
         elif t == "interpret":
             src = a.get("source")
             badge = source_line(src, a.get("source_note"), lambda x: inline(md, x))
-            content = f'<div class="interpret">{badge}<div class="representation">{md(a["text"])}{fig_of(a)}</div>{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
+            content = f'<div class="interpret"><div class="representation">{md(a["text"])}{fig_of(a)}</div>{badge}{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
         elif t == "theory":
             content = "".join(parts["sections"][s] for s in a["sections"])
             if aid in shown and "Esimerkki" in a["sections"]:   # the box itself says "Esimerkki 1: <name>"; no heading above it (teacher 2026-11-06)

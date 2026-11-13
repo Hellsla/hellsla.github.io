@@ -431,6 +431,14 @@ def errs_of(mutate):
 def act(d, aid): return next(a for a in d["activities"] if a["id"] == aid)   # by id: inserting an activity must not shift the tests
 
 e = errs_of(lambda d: d.__setitem__("version", 2)); check("wrong version named", any("version" in x and x.startswith("fy3-2 inquiry.json") for x in e), str(e))
+# the source line (teacher 2026-11-13): no pill; a short "Lähde: …" for measured and statistics (a link when the note names an address),
+# "Esimerkkiaineisto." for example and simulated, nothing for a model; the long method note only in the title
+_long = "Tilastokeskus: Sähkön ja lämmön tuotanto 2024 (ydinvoiman ja bioperäisten polttoaineiden luvut johdettu prosenttiosuuksista, pyöristetty; muut lähteet = …)."
+_ln = inquiry.source_line("statistics", _long, lambda x: x)
+check("source line: statistics shows a short Lähde: line without the method note", "Lähde: Tilastokeskus: Sähkön ja lämmön tuotanto 2024<" in _ln and "ydinvoiman" in _ln.split(">")[0] and "ydinvoiman" not in _ln.split(">", 1)[1], _ln)
+check("source line: example and simulated say Esimerkkiaineisto., a model nothing", all(inquiry.source_line(k, "x", lambda x: x).endswith("Esimerkkiaineisto.</p>") for k in ("example", "simulated")) and inquiry.source_line("model", "x", lambda x: x) == "")
+check("source line: an address in the note makes a link; a cut never splits a formula", 'href="https://nrel.github.io/turbine-models"' in inquiry.source_line("statistics", "Teho, $82\\,\\text{m}$: NREL (nrel.github.io/turbine-models), luettu 2026. " + "sana " * 40, lambda x: x) and inquiry.source_short("a $b c$ " * 30, 20)[0].count("$") % 2 == 0)
+check("source line: no pill classes or tag text left in the rendered markup", "<strong>" not in _ln)
 e = errs_of(lambda d: d["activities"][2]["choices"][1].pop("feedback")); check("missing feedback names lesson, activity and choice", any("activities[2].choices[1].feedback" in x for x in e), str(e))
 e = errs_of(lambda d: d["activities"][2].__setitem__("reveal", {"after": "nope"})); check("reveal must point at an experiment", any("reveal.after" in x for x in e), str(e))
 e = errs_of(lambda d: act(d, "exp-1")["locked"].append("s")); check("varied parameter cannot be locked", any("locked" in x for x in e), str(e))
