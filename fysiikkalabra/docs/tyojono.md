@@ -43,6 +43,19 @@ Sama tahti kuin FY4:stä alkaen: jokaisessa luvussa vähintään kaksi kuvateht�
 kolmannessa luvussa (#521, #528). Arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit lähde-URL:n kanssa. Aloitetaan,
 kun kohdan 2 katselmoinnit on tehty, jotta katselmoimattomien sarjojen jono ei kasva.
 
+## 7. Työpöytäasettelu: keskitetty tekstiraita ja marginaaliraita (opettaja 2026-11-13)
+
+Isoin jäljellä oleva rakenteellinen UI-muutos. Työpöydällä lukupalsta keskitetään, ja sen viereen tulee
+marginaaliraita (kuvat, kaavat, huomautukset). Jaettuja tiedostoja (`templates/`, `site.css`, `check_layout.py`):
+tehdään yksin ja yhdistetään ennen muita. Ennen toteutusta vaiheittainen arvio ja vertailukuvat opettajalle
+(CLAUDE.md "Where direction B goes": ei laajaa uudistusta yhdellä kertaa).
+
+## 8. Virhekäsitys omana komponenttinaan (opettaja 2026-11-13)
+
+Toistuva osa Teoria-vaiheeseen: väite yhdellä lauseella, sitten miksi se ei päde
+(`docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md` kohta 5.2). Komponentti kerran, sitten sisältötyö luku
+kerrallaan: lukujen sisältö muuttuu, joten jokainen luku tarvitsee tiede-, pedagogiikka- ja ulkoasukatselmoinnin.
+
 ## Puute: englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
 `kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole

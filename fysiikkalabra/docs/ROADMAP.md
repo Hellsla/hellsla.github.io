@@ -31,8 +31,12 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
    overflowing element. Shared files: alone, merged first.
 6. Picture and MAFY-table tasks for FY8, FY9, FY10 and FY14 (queue). They add review work, so they start when step 2
    is done.
-7. Area D: the teacher decides which plan (FY10, Dronelabra, others) is approved for building.
-8. English concept cards for FY6 and FY8 (queue: later, the teacher's decision).
+7. Desktop layout: a centred text column and a margin column. The largest structural UI change left; shared files,
+   so alone, after an assessment with comparison captures for the teacher.
+8. Misconception as its own component in Teoria: the component once, then content chapter by chapter, each with
+   all three reviews.
+9. Area D: the teacher decides which plan (FY10, Dronelabra, others) is approved for building.
+10. English concept cards for FY6 and FY8 (queue: later, the teacher's decision).
 
 ## In parallel
 At most three worker sessions, each on a different course or area:
