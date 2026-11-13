@@ -140,6 +140,15 @@
           "feedback": "The unit of the expression is $\\tfrac{\\text{m}}{\\text{Nm}} = \\tfrac{1}{\\text{N}}$, not newton. The division has been turned upside down: solved from $M = Fr$, the force is the moment divided by the lever arm."
         }
       ]
+    },
+    {
+      "id": "fy5-1-L1-10",
+      "level": 1,
+      "text": "In the figure, a rod turns about the axis of rotation $O$. A horizontal force $F$ acts on the rod at the point $P$, and its moment about the axis $O$ is $21\\,\\text{Nm}$. One square of the grid corresponds to $0.10\\,\\text{m}$. Read the lever arm of the force from the figure. What is the force $F$?",
+      "answer": 70,
+      "unit": "N",
+      "tolerance": 0.02,
+      "figure": "fy5-1/ruutu"
     }
   ],
   "level2": [

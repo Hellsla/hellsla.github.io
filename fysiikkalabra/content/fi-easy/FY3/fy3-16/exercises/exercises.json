@@ -109,6 +109,18 @@
       "answer": 250,
       "unit": "s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-16-L1-09",
+      "level": 1,
+      "text": "Saunassa kiukaalle heitetään $0{,}30\\,\\text{kg}$ vettä. Vesi on jo $100\\,{}^\\circ\\text{C}$:ssa ja höyrystyy kokonaan. Höyrystymiseen tarvittava lämpö on $Q = rm$. Tässä $r$ on veden ominaishöyrystymislämpö eli lämpö, joka höyrystää yhden kilogramman vettä.\n\nHae veden ominaishöyrystymislämpö MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon lämpöä kiukaan kivistä sitoutuu veden höyrystymiseen? Anna vastaus kilojouleina.",
+      "lookup": "MAFY",
+      "answer": 678.0,
+      "unit": "kJ",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukon taulukossa *Aineiden olomuodon muutokset: Nesteet*."
+      ]
     }
   ],
   "level2": [
@@ -261,6 +273,24 @@
           "feedback": "Tässä unohtuu ulkolämpötilan nousu. Seinän läpi tuleva teho $P = UA\\Delta T$ kasvaa, kun lämpötilaero kasvaa kertoimella $1{,}5$. Silloin jää sulaa nopeammin, ja kestoaika on lyhyempi kuin kolminkertainen."
         }
       ]
+    },
+    {
+      "id": "fy3-16-L2-09",
+      "level": 2,
+      "text": "Metallikappaletta lämmitetään sähkövastuksella tasaisella teholla. Kuvaajassa on kappaleen lämpötila ajan funktiona. Kappaleen massa on $2{,}0\\,\\text{kg}$. Vastuksen teho on $400\\,\\text{W}$. Oleta, että koko sähköteho siirtyy lämpönä kappaleeseen. Lue kuvaajasta lämpötilan muutos ja siihen kulunut aika. Laske metallin ominaislämpökapasiteetti. Anna vastaus yksikössä $\\text{J/(kg}\\cdot\\text{K)}$.",
+      "figure": "fy3-6/heating-line",
+      "answer": 900.0,
+      "unit": "J/(kg·K)",
+      "tolerance": 0.04
+    },
+    {
+      "id": "fy3-16-L2-10",
+      "level": 2,
+      "text": "Kylmälaukkuun pakataan $0{,}60\\,\\text{kg}$ jäätä. Jää on otettu pakastimesta, ja sen lämpötila on alussa $-16\\,{}^\\circ\\text{C}$. Kuvaajassa on tämän jään lämpötila siirretyn energian funktiona. Laukun seinien läpi siirtyy jäähän lämpöä tasaisesti teholla $25\\,\\text{W}$. Kuinka kauan kestää, ennen kuin kaikki jää on sulanut vedeksi, jonka lämpötila on $0\\,{}^\\circ\\text{C}$? Lue tarvittava energia kuvaajasta ja anna vastaus tunteina.",
+      "figure": "fy3-7/melting-curve",
+      "answer": 2.4444,
+      "unit": "h",
+      "tolerance": 0.03
     }
   ],
   "level3": [

@@ -361,6 +361,21 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-14-L2-08",
+      "level": 2,
+      "kind": [
+        "graph",
+        "data",
+        "model"
+      ],
+      "text": "Laskuvarjohyppääjän massa varusteineen on $75{,}0\\,\\text{kg}$. Hän putoaa vatsa alaspäin ennen kuin varjo avataan. Kuvaajassa ovat hänen nopeutensa alaspäin mittauspisteet ajan funktiona.\n\na) Kuinka suuri ilmanvastus on hetkellä $t = 8{,}0\\,\\text{s}$? Arvioi kiihtyvyys pisteistä $t = 6{,}0\\,\\text{s}$ ja $t = 10{,}0\\,\\text{s}$ ja valitse positiiviseksi suunnaksi alas.\n\nb) Kuinka monta prosenttia painosta ilmanvastus tällöin on? Päättele kuvaajasta, mihin nopeus lähestyy ja kuinka suuri ilmanvastus on silloin.\n\nVastauslaatikkoon tulee kohdan a) tulos.",
+      "answer": 623.25,
+      "unit": "N",
+      "tolerance": 0.05,
+      "figure": "fy4-14/hyppy-vt-points",
+      "fbd": "equations"
     }
   ],
   "level3": [

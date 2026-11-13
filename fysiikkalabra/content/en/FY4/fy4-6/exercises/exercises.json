@@ -117,6 +117,22 @@
           "feedback": "The weight does not point along the slope. Its component $G_y$ presses the body against the surface, so the normal force is not zero."
         }
       ]
+    },
+    {
+      "id": "fy4-6-L1-09",
+      "level": 1,
+      "text": "A sled on steel runners, with a mass of $45\\,\\text{kg}$, is pulled horizontally on ice at a constant velocity. Look up the coefficient of kinetic friction between steel and ice in the MAFY table (mafytaulukot.fi). How large is the pulling force? Air resistance is neglected.",
+      "kind": [
+        "data"
+      ],
+      "lookup": "MAFY",
+      "answer": 6.1803,
+      "unit": "N",
+      "tolerance": 0.04,
+      "fbd": "equations",
+      "hints": [
+        "The value is in the MAFY table *Kitkakertoimia* (coefficients of friction)."
+      ]
     }
   ],
   "level2": [
@@ -327,6 +343,20 @@
       "answer": "Box B ($30\\,\\text{N}$), box C ($44\\,\\text{N}$), box A ($59\\,\\text{N}$), box D ($1.2\\cdot 10^2\\,\\text{N}$).",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-6-L2-09",
+      "level": 2,
+      "text": "Below is example data: the kinetic friction of a wooden block measured at different normal forces. The graph shows the measurement points. A block with a mass of $0.50\\,\\text{kg}$ slides horizontally on the same table. Only the weight, the normal force and friction act on it. How large is the deceleration of the block? Determine the coefficient of kinetic friction from the graph.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 2.1,
+      "unit": "m/s²",
+      "tolerance": 0.05,
+      "figure": "fy4-6/mittaus",
+      "fbd": "equations"
     }
   ],
   "level3": [

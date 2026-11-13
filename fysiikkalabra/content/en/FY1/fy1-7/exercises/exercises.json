@@ -113,6 +113,18 @@
       "answer": 56.5,
       "unit": "g",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L1-09",
+      "level": 1,
+      "text": "A piece of copper has a volume of $50\\,\\text{cm}^3$. Look up the density of copper in the MAFY table (mafytaulukot.fi). What is the mass of the piece? Give the answer in kg.",
+      "lookup": "MAFY",
+      "answer": 0.448,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is found in the MAFY table under *Tiheyksiä* (densities), densities of solids."
+      ]
     }
   ],
   "level2": [

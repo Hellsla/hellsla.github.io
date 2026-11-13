@@ -217,3 +217,24 @@ Calculate the pressure:
 $$\begin{aligned} \Delta p &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1000\,\text{m} \\ &= 9.81 \cdot 10^{6}\,\text{Pa} \end{aligned}$$
 
 The number $9.81 \cdot 10^{6}$ is closer to $10^{7}$ than to $10^{6}$, so the order of magnitude is $10^{7}\,\text{Pa}$. The answer $10^{5}\,\text{Pa}$ is the order of magnitude of atmospheric pressure and does not take the depth into account. The answer $10^{6}\,\text{Pa}$ corresponds to the depth $100\,\text{m}$ and the answer $10^{8}\,\text{Pa}$ to the depth $10\,\text{km}$. Estimate: in water the pressure grows by about $10\,\text{kPa}$ per metre, so $1000\,\text{m}$ gives $10^{7}\,\text{Pa}$.
+
+## fy3-4-L1-10
+**Given:** $h = 25\,\text{m}$, $p_0 = 101\,\text{kPa}$, $g = 9.81\,\text{m/s}^2$; from the table (MAFY table *Tiheyksiä: Nesteiden tiheyksiä*, sea water) $\rho = 1.02 \cdot 10^{3}\,\text{kg/m}^3$
+**Find:** the total pressure $p$ at the diver in kilopascals
+**Principle:** The diver feels the weight of the water and the weight of the air above the water surface. The surface of a liquid transmits the air pressure to the whole liquid, and the hydrostatic pressure $\rho g h$ comes on top of it. So the pressures are added.
+**Formula:** $p = p_0 + \rho g h$; the unknown $p$ is already alone on the left-hand side
+**Conversions:** The density $1.02 \cdot 10^{3}\,\text{kg/m}^3 = 1020\,\text{kg/m}^3$. The hydrostatic pressure is calculated in pascals and converted to kilopascals: $1\,\text{kPa} = 1000\,\text{Pa}$.
+**Substitution:** $\rho g h = 1020\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 25\,\text{m} = 250\,155\,\text{Pa} = 250.2\,\text{kPa}$; $p = 101\,\text{kPa} + 250.2\,\text{kPa} = 351.2\,\text{kPa}$
+**Answer:** $p \approx 351\,\text{kPa}$, three significant figures as in the air pressure and the density. The density $\rho = 1.02 \cdot 10^{3}\,\text{kg/m}^3$ is from the MAFY table *Tiheyksiä: Nesteiden tiheyksiä*; tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** Estimate: $10\,\text{m}$ of water adds about $100\,\text{kPa}$ to the pressure, so $25\,\text{m}$ adds about $250\,\text{kPa}$. The air pressure of about $100\,\text{kPa}$ is added, giving about $350\,\text{kPa}$, or about $3.5$ atmospheres.
+
+## fy3-4-L2-08
+**Given:** read from the graph, the line of liquid B passes through the points $(0\,\text{m};\ 100\,\text{kPa})$ and $(10\,\text{m};\ 250\,\text{kPa})$; $g = 9.81\,\text{m/s}^2$
+**Find:** the density $\rho_\text{B}$ of liquid B in $\text{kg/m}^3$
+**Principle:** In a liquid $p = p_0 + \rho g h$, so the $(h, p)$ graph is a line whose slope is $k = \rho g$. The density is obtained by reading the slope from the graph and dividing it by $g$.
+**Reading the graph:** Line B starts at $(0\,\text{m};\ 100\,\text{kPa})$, where the pressure is the air pressure, and ends at the grid crossing $(10\,\text{m};\ 250\,\text{kPa})$. The slope is $k_\text{B} = \dfrac{(250 - 100)\,\text{kPa}}{10\,\text{m}} = 15\,\dfrac{\text{kPa}}{\text{m}}$.
+**Formula:** $k = \rho g$, so $\rho_\text{B} = \dfrac{k_\text{B}}{g}$
+**Conversions:** $15\,\dfrac{\text{kPa}}{\text{m}} = 15\,000\,\dfrac{\text{Pa}}{\text{m}}$, and $1\,\text{Pa} = 1\,\dfrac{\text{kg}}{\text{m} \cdot \text{s}^2}$, so $\dfrac{\text{Pa/m}}{\text{m/s}^2}$ is $\text{kg/m}^3$.
+**Substitution:** $\rho_\text{B} = \dfrac{15\,000\,\text{Pa/m}}{9.81\,\text{m/s}^2} = 1529\,\text{kg/m}^3$
+**Answer:** $\rho_\text{B} \approx 1.5 \cdot 10^{3}\,\text{kg/m}^3$, that is $1500\,\text{kg/m}^3$, two significant figures, because the values of the graph were read from the grid lines. A value read by eye between $1450$ and $1600\,\text{kg/m}^3$ is accepted.
+**Reasonableness:** The slope of liquid A is $10\,\text{kPa/m}$ and its density $\dfrac{10\,000}{9.81} \approx 1020\,\text{kg/m}^3$, almost that of water. Liquid B is steeper by a factor of $1.5$, so its density is $1.5$ times as large: about $1.5 \cdot 1020\,\text{kg/m}^3 \approx 1530\,\text{kg/m}^3$.

@@ -1,21 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ab3a7a9c0b52be41
-Mode: delta (new task fy2-8-L2-08 only)
-Round: 2
+CONTENT-HASH: eb49af87d3a81c59
+SCOPE: delta added-exercise from ab3a7a9c0b52be41 base 611fb7d5c174
 
 ## Blocking
-- none
-
-## Fixed
-- exercises.json L2-08 option 2 feedback: "a more efficient equipment" -> "more efficient equipment" (grammar).
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- fy2-8-L2-08 (exercises.json and solutions.md) against the reviewed Finnish: same table (5 rows, E and m), uncertainty 10 kt, correct option (2020 to 2024, 100 kt = 10 x 10 kt), exactly one correct flag, same five choices in the same order, tolerance and kinds equal.
-- Recomputed: 520 - 420 = 100 kt; 520 - 515 = 5 kt < 10 kt; intervals 510-530 and 410-430 kt do not overlap (2020/2021 intervals 510-530 and 505-525 do); slope -25 kt/a x 10 a from 420 gives 170 kt for 2034; 1000 GWh in both years sits in column E.
-- Each distractor still has one error and feedback that names it (wrong uncertainty comparison, unsupported cause, extrapolation, wrong column); no feedback gives a false number.
-- Solutions section keeps Find / Principle / Model answer as in fi; numbers equal.
-- English decimal point not applicable (integers only); natural English: "uncertainty range", "over-interpreting", "extrapolating too far".
-- check_i18n.py: nothing for fy2-8; build.py fy2-8 succeeds.
+- L1-09: E = Hm = 47 x 2.0 = 94 MJ, m = eE = 55 g/MJ x 94 MJ = 5.17 kg; ~2.6 kg CO2 per kg gas plausible (CH4 gives 2.75); carbon as CO2 source right. Emission factor's source not reported (teacher 2026-11-12).
+- L2-09: fy2-8/emissions coal 820, gas 490 g CO2-eq/kWh (IPCC AR5); (820 - 490) x 20 000 kWh = 6.6 t; 16.4 t and 9.8 t check, 40 % right.
+- check script (one run): every added answer recomputed from the task text with my own formulas, equal to answers.py and exercises.json; answer, unit, tolerance, figure and lookup identical to the reviewed Finnish; every number of the task texts and solutions identical en/fi.
+- MAFY lookup values agree with docs/mafy-arvot.tsv (VERIFIED 2026-11-12).
+- No scope breach, no guardrail break (A or B) found.

@@ -320,6 +320,32 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-8-L2-08",
+      "level": 2,
+      "text": "Kuvaaja näyttää pallon liike-energian pallon nopeuden mukaan. Pallo heitetään maasta suoraan ylös nopeudella $6{,}0\\,\\text{m/s}$. Ilmanvastus jätetään huomiotta. Kuinka korkealla maasta pallon nopeus on $4{,}0\\,\\text{m/s}$?",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 1.0,
+      "unit": "m",
+      "tolerance": 0.04,
+      "figure": "fy4-7/pallo-ek"
+    },
+    {
+      "id": "fy4-8-L2-09",
+      "level": 2,
+      "text": "Kuvassa ovat kelkan energiat rinteen yläpäässä ja alapäässä. Kelkka lähtee levosta. Se liukuu rinnettä pitkin matkan $6{,}0\\,\\text{m}$. Kelkkaan vaikuttavat paino ja tukivoima. Lisäksi siihen vaikuttaa kitka, jonka suuruus ei muutu. Kitka osoittaa rinnettä vastaan. Ilmanvastus jätetään huomiotta. Kuinka suuri on kitkavoima?",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 2.5,
+      "unit": "N",
+      "tolerance": 0.05,
+      "figure": "fy4-8/palkit-asteikko"
     }
   ],
   "level3": [

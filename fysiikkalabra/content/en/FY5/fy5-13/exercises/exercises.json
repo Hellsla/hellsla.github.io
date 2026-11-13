@@ -113,6 +113,18 @@
       "answer": 100.0,
       "unit": "Hz",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-13-L1-09",
+      "level": 1,
+      "text": "An open-open pipe (open at both ends) is $0.50\\,\\text{m}$ long. The pipe is filled first with helium and then with air, and the temperature of both gases is $0\\,{}^\\circ\\text{C}$. Look up the speed of sound in each gas in the MAFY table (mafytaulukot.fi). By how many hertz is the fundamental frequency of the pipe higher with helium than with air?",
+      "lookup": "MAFY",
+      "answer": 639.5,
+      "unit": "Hz",
+      "tolerance": 0.04,
+      "hints": [
+        "The values are found in the MAFY table under *Aaltoliike* (wave motion), in the table *Äänen nopeuksia eri väliaineissa* (speeds of sound in different media)."
+      ]
     }
   ],
   "level2": [
@@ -283,6 +295,15 @@
           "feedback": "Here the effect of the plug has been read the wrong way round. The fundamental frequency of a closed pipe is $\\tfrac{v}{4L}$, so the plug halves the fundamental frequency and does not double it. Only halving the length doubles the fundamental frequency."
         }
       ]
+    },
+    {
+      "id": "fy5-13-L2-09",
+      "level": 2,
+      "text": "In the rope in the figure the speed of the wave is $75\\,\\text{m/s}$. The rope between the vibrator and the pulley vibrates as a standing wave, and the positions of the vibrator and the pulley are nodes. At what frequency does the vibrator vibrate? Read the necessary data from the figure.",
+      "figure": "fy5-13/kuvio-tehtava",
+      "answer": 125.0,
+      "unit": "Hz",
+      "tolerance": 0.02
     }
   ],
   "level3": [

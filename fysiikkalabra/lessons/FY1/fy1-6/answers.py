@@ -38,4 +38,5 @@ a["fy1-6-L2-07"] = (v2 - v1) / (0.575 - 0.320)       # g = Δv / Δt = 2,505 / 0
 a["fy1-6-L3-04"] = (g * 0.40 - 1.49) / (g * 0.40) * 100   # filter paper at 0,40 s: model 3,924 m/s vs 1,49 m/s -> 62,0 %
 g5 = (24.5 - 4.9) / (2.65 - 0.65)                    # slope of the readings: 9,8 m/s² (the ratios v/t = 7,5; 8,9; 9,2 are too small because the clock started early)
 a["fy1-6-L3-05"] = 0.65 - 4.9 / g5                   # clock offset t0 = t − v/g = 0,65 s − 0,50 s = 0,15 s
+a["fy1-6-L1-09"] = 1.622 * 3.0                  # MAFY: Moon surface g = 1,622 m/s²; v = g t = 1,622 m/s² · 3,0 s = 4,866 m/s
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

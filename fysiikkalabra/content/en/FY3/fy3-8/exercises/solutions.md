@@ -207,3 +207,24 @@ b) The change in winter is $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25.0\,\t
 $h = \dfrac{22.0\,\text{mm}^3 - 0.54\,\text{mm}^3}{0.283\,\text{mm}^2} = 75.9\,\text{mm}$
 **Answer:** a) $h \approx 75.9\,\text{mm}$, three significant figures as calculated; the coefficients $1.1 \cdot 10^{-3}$ and $9.0 \cdot 10^{-6}$ are values with 2–3 figures, so in practice the rise is about $76\,\text{mm}$. Model answer b): without the expansion of the bulb the rise would be $\dfrac{22.0\,\text{mm}^3}{0.283\,\text{mm}^2} = 77.8\,\text{mm}$, that is $\dfrac{77.8\,\text{mm} - 75.9\,\text{mm}}{75.9\,\text{mm}} = 2.5\,\%$ greater. So the expansion of the bulb is a small but not negligible correction. Model answer c): with water $\gamma = 0.21 \cdot 10^{-3}\,\tfrac{1}{\text{K}}$ the growth in volume would be $4.2\,\text{mm}^3$, of which the bulb's share $0.54\,\text{mm}^3$ leaves $3.66\,\text{mm}^3$, that is a rise of only $12.9\,\text{mm}$. That is less than a fifth of the rise of the ethanol, so the scale would be dense and the uncertainty of reading large. In addition, water shrinks over $0\,{}^\circ\text{C} \ldots 4\,{}^\circ\text{C}$ and freezes, so the column would not work correctly in the cold.
 **Reasonableness:** The density of the scale is $\dfrac{75.9\,\text{mm}}{20\,\text{K}} = 3.8\,\tfrac{\text{mm}}{\text{K}}$, so reading one degree is possible, and the length of the column, $76\,\text{mm}$, fits in an ordinary thermometer. The relative growth in the volume of the ethanol is $1.1 \cdot 10^{-3}\,\tfrac{1}{\text{K}} \cdot 20\,\text{K} = 2.2\,\%$ and that of the bulb only $0.054\,\%$, so the effect of the bulb is small, as the result shows.
+
+## fy3-8-L1-09
+**Given:** length $L_0 = 25\,\text{m}$, temperature change $\Delta T = 50\,\text{K}$; from the table (MAFY table, coefficients of linear expansion, steel) $\alpha = 12 \cdot 10^{-6}\,\dfrac{1}{\text{K}}$
+**Find:** the change in length of the rail, $\Delta L$, in millimetres
+**Principle:** The length of a solid body changes with temperature in proportion to the initial length and the temperature change: $\Delta L = \alpha L_0 \Delta T$.
+**Formula:** $\Delta L = \alpha L_0 \Delta T$
+**Conversions:** Finally $1\,\text{m} = 1000\,\text{mm}$.
+**Substitution:** $\Delta L = 12 \cdot 10^{-6}\,\dfrac{1}{\text{K}} \cdot 25\,\text{m} \cdot 50\,\text{K} = 0.015\,\text{m} = 15\,\text{mm}$
+**Answer:** $15\,\text{mm}$, two significant figures, like the data $25\,\text{m}$ and $50\,\text{K}$. The value $12 \cdot 10^{-6}\,\text{1/K}$ of the coefficient is from the MAFY table; the values of different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** A steel bar grows by about $1.2\,\text{mm}$ per metre when the temperature rises by $100\,\text{K}$, that is $0.6\,\text{mm}$ per metre for $50\,\text{K}$. Times $25\,\text{m}$ gives $15\,\text{mm}$. The result is reasonable, and it explains why expansion gaps are left between rails.
+
+## fy3-8-L2-09
+**Given:** change in length $\Delta L = 2.0\,\text{mm}$ from the starting temperature $20\,{}^\circ\text{C}$; the $(T,\Delta L)$ graph
+**Find:** the temperature $T$ at which $\Delta L = 2.0\,\text{mm}$
+**Principle:** The measurement points lie on a line, so the change in length is directly proportional to the change in temperature: $\Delta L = k\,\Delta T$. The slope $k$ comes from the end points of the graph, and it is used to solve $\Delta T$.
+**Reading the graph:** The line starts at the grid intersection $(20\,{}^\circ\text{C};\ 0\,\text{mm})$ and ends at the intersection $(70\,{}^\circ\text{C};\ 3.0\,\text{mm})$. So $\Delta T_\text{whole} = 70\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 50\,\text{K}$ and $\Delta L_\text{whole} = 3.0\,\text{mm}$.
+**Formula:** $k = \dfrac{\Delta L_\text{whole}}{\Delta T_\text{whole}}$, $\Delta T = \dfrac{\Delta L}{k}$ and $T = 20\,{}^\circ\text{C} + \Delta T$
+**Conversions:** None needed: all lengths are in millimetres and the temperature changes in kelvins.
+**Substitution:** $k = \dfrac{3.0\,\text{mm}}{50\,\text{K}} = 0.060\,\dfrac{\text{mm}}{\text{K}}$, so $\Delta T = \dfrac{2.0\,\text{mm}}{0.060\,\text{mm/K}} = 33.3\,\text{K}$ and $T = 20\,{}^\circ\text{C} + 33.3\,\text{K} = 53.3\,{}^\circ\text{C}$
+**Answer:** $53\,{}^\circ\text{C}$, two significant figures, like the datum $2.0\,\text{mm}$. The values are read from grid intersections, so $51.7\ldots54.9\,{}^\circ\text{C}$ is accepted.
+**Reasonableness:** The change in length $2.0\,\text{mm}$ is two thirds of the whole change $3.0\,\text{mm}$, so the temperature must be two thirds of the way from $20\,{}^\circ\text{C}$ to $70\,{}^\circ\text{C}$: $20 + \dfrac{2}{3} \cdot 50 \approx 53\,{}^\circ\text{C}$. The result is inside the measured range $20\ldots70\,{}^\circ\text{C}$.

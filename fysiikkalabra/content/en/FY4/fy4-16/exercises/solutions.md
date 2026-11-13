@@ -364,3 +364,14 @@ $40.2\,\text{m} - 39.5\,\text{m} = 0.7\,\text{m}$
 They are smaller than $2\Delta x = 2.0\,\text{m}$, so the uncertainty intervals overlap, and the heavier sled travelled farther from the height $2.00\,\text{m}$ but a shorter distance from the height $4.00\,\text{m}$. So the data do not show that the heavier sled would travel farther. They do not prove, however, that the mass has no effect at all, because an effect of under $2\,\text{m}$ would be lost in the uncertainty. The result fits the model $x = \tfrac{h}{\mu}$, in which the mass cancels out.
 
 The distance $80\,\text{m}$ from the height $8.00\,\text{m}$ would be an estimate extended outside the measured range, and it assumes the same coefficient of friction for the whole distance, so it is not a certain result. The result is reasonable: the ratio $h : x \approx 0.10$ is almost the same in every row and is a reasonable coefficient of kinetic friction between snow and a sled.
+
+## fy4-16-L2-09
+**Given:** $m = 60.0\,\text{kg}$; from the graph the normal force in the slowing-down phase $N = 550\,\text{N}$; $g = 9.81\,\text{m/s}^2$
+**Find:** the magnitude of the acceleration $a$ of the lift in $\text{m/s}^2$
+**Principle:** The weight acts on the person downwards and the normal force upwards, and by Newton's second law their sum gives the acceleration. In a lift the reading of the plate equals the weight only when the lift does not accelerate, so the acceleration comes from the difference between the reading and the weight.
+**Reading the graph:** At the start and at a steady speed the reading is about $589\,\text{N}$, the weight of the person. From $9.0\,\text{s}$ on the reading is on the grid line $550\,\text{N}$, smaller than the weight, and stays there until about $12.2\,\text{s}$. Then the acceleration points down: a lift moving up slows down.
+**Formula:** positive direction up, $N - mg = ma$, so $a = \dfrac{N - mg}{m}$
+**Conversions:** All quantities are in SI units, so no conversions are needed.
+**Substitution:** $a = \dfrac{550\,\text{N} - 60.0\,\text{kg} \cdot 9.81\,\text{m/s}^2}{60.0\,\text{kg}} = \dfrac{550\,\text{N} - 588.6\,\text{N}}{60.0\,\text{kg}} = -0.643\,\text{m/s}^2$
+**Answer:** the magnitude of the acceleration is $0.643\,\text{m/s}^2$ and its direction is down, three significant figures like the mass $60.0\,\text{kg}$.
+**Reasonableness:** The reading is only about $7\,\%$ smaller than the weight, so the acceleration is a small part of the free-fall acceleration: $0.643 : 9.81 \approx 0.066$. A lift usually slows down at about $0.5\ldots1\,\text{m/s}^2$, so the result fits.

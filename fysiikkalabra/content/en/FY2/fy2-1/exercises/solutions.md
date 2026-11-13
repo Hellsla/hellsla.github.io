@@ -64,6 +64,16 @@
 **Principle:** Energy is neither created nor destroyed but changes form: in an isolated system $E_\text{initial} = E_\text{final}$. The sum includes all forms of energy, also thermal energy. In the collision and because of air resistance, mechanical energy changes into thermal energy.
 **Model answer:** Statements 1, 3 and 5 are true. The mechanical energy $E_\text{p} + E_\text{k}$ decreases in every bounce, but the total energy of the ball, the floor and the air stays the same. At the end the ball has no kinetic energy and no potential energy gained from being above the floor, and the same energy is thermal energy in the ball, the floor and the air. Statements 2 and 4 are false: energy is not used up, and thermal energy is part of the total energy, so the total energy does not decrease.
 
+## fy2-1-L1-10
+**Given:** mass of fuel $m = 2.0\,\text{kg}$ (petrol); from the table (MAFY table, heating values of fuels, petrol) $H = 43.4\,\text{MJ/kg}$
+**Asked:** the chemical energy $E$ released in combustion, in $\text{MJ}$
+**Principle:** Energy is neither created nor destroyed but changes form. In combustion the chemical energy of the petrol changes into kinetic and thermal energy, and the amount that changes equals the chemical energy released. The heating value $H$ gives the energy released per unit of mass.
+**Formula:** $E = Hm$
+**Conversions:** The heating value is already in $\text{MJ/kg}$ and the mass in kilograms, so the answer comes out directly in megajoules and no conversions are needed.
+**Substitution:** $E = 43.4\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2.0\,\text{kg} = 86.8\,\text{MJ}$
+**Answer:** $E \approx 87\,\text{MJ}$, two significant figures as in the mass $2.0\,\text{kg}$. The heating value $H = 43.4\,\text{MJ/kg}$ is from the MAFY table (heating values of fuels, petrol); tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** A rough estimate: $40\,\text{MJ/kg} \cdot 2\,\text{kg} = 80\,\text{MJ}$, so the result is of the right order of magnitude. Since $1\,\text{kWh} = 3.6\,\text{MJ}$, $87\,\text{MJ}$ is about $24\,\text{kWh}$, and petrol holds much more energy per kilogram than wood, whose heating value is about $16\,\text{MJ/kg}$.
+
 ## fy2-1-L2-01
 **Given:** chemical energy released from the battery $E_\text{chem} = 3.00\,\text{kJ}$, kinetic energy of the scooter and rider $E_\text{k} = 2150\,\text{J}$
 **Find:** energy changed into thermal energy $E_\text{thermal}$ in $\text{J}$
@@ -133,6 +143,17 @@
 **Substitution:** $E_\text{thermal,incand} = 216\,\text{kJ} - 11\,\text{kJ} = 205\,\text{kJ}$ and $E_\text{thermal,LED} = 216\,\text{kJ} - 54\,\text{kJ} = 162\,\text{kJ}$, so $\Delta E_\text{thermal} = 205\,\text{kJ} - 162\,\text{kJ} = 43\,\text{kJ}$
 **Answer:** The incandescent lamp produces $43\,\text{kJ}$ more thermal energy. Two significant figures match the accuracy of the energy of light $11\,\text{kJ}$.
 **Reasonableness:** The thermal energy of the incandescent lamp is greater because its share of light is smaller ($11\,\text{kJ}$ is only $5\,\%$ of the electrical energy, while the $54\,\text{kJ}$ of the LED is $25\,\%$). Checking backwards: LED $54\,\text{kJ} + 162\,\text{kJ} = 216\,\text{kJ}$. Justification: when the same amount of light is wanted, the LED lamp needs less electrical energy, and less energy changes into useless thermal energy, so the LED is the wiser choice in terms of energy.
+
+## fy2-1-L2-08
+**Given:** energies read from the figure: at A $E_\text{p,A} = 700\,\text{J}$ and $E_\text{k,A} = 0\,\text{J}$, at B $E_\text{p,B} = 300\,\text{J}$ and $E_\text{k,B} = 300\,\text{J}$
+**Asked:** the share of the initial energy that has changed into thermal energy by point B, as a percentage
+**Principle:** The skater, the half-pipe and the surroundings form an isolated system, so energy is conserved. Friction changes mechanical energy into thermal energy, so the thermal energy is the difference between the initial energy and the mechanical energy at B.
+**Reading the graph:** At A there is only a potential-energy bar, whose top is at the gridline $700\,\text{J}$, and the kinetic energy is zero because the skater is at rest. At B the potential-energy bar and the kinetic-energy bar each reach the gridline $300\,\text{J}$.
+**Formula:** $E_\text{A} = E_\text{B} + E_\text{thermal}$, so $E_\text{thermal} = E_\text{A} - E_\text{B}$, and the share is $p = \dfrac{E_\text{thermal}}{E_\text{A}} \cdot 100\,\%$
+**Conversions:** All energies are in joules, so no conversions are needed.
+**Substitution:** $E_\text{thermal} = (700\,\text{J} + 0\,\text{J}) - (300\,\text{J} + 300\,\text{J}) = 100\,\text{J}$, and $p = \dfrac{100\,\text{J}}{700\,\text{J}} \cdot 100\,\% = 14.3\,\%$
+**Answer:** $p \approx 14\,\%$, rounded to whole percent, because the energies are read from the figure to the nearest hundred joules.
+**Reasonableness:** The share is positive and below $100\,\%$, as it should be with friction. Check: $600\,\text{J} + 100\,\text{J} = 700\,\text{J}$.
 
 ## fy2-1-L3-01
 **Given:** at point A $E_\text{p} = 900\,\text{J}$ and $E_\text{k} = 0\,\text{J}$; at point B $E_\text{p} = 400\,\text{J}$ and $E_\text{k} = 480\,\text{J}$; at point C $E_\text{p} = 0\,\text{J}$ and $E_\text{k} = 750\,\text{J}$

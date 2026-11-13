@@ -50,4 +50,5 @@ n_days = 2922                                     # 8 years with the leap days 2
 ds_au = V_VOY * n_days * DAY / AU                 # 15,341 km/s · 252 460 800 s / 149 597 870,7 km = 25,889 AU
 print(f"# model check: d(2026-02-15) = {D0_VOY + v_au_day * 2659:.2f} AU from the Sun (JPL, Feb 2026: 143,05 AU from Earth)")
 print(f"# worked example: distance travelled {ds_au:.4f} AU, d = {D0_VOY + ds_au:.3f} AU, one-way signal {(D0_VOY + ds_au) * AU * 1000 / C / 3600:.2f} h")
+a["fy1-5-L1-09"] = 1482.3 * 2.0 / 1000      # MAFY: sound in water at 20 °C 1482,3 m/s; s = v t = 1482,3 m/s · 2,0 s = 2964,6 m = 2,9646 km
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

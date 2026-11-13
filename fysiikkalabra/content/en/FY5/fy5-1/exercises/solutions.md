@@ -209,3 +209,14 @@ The expression $M d\sin\alpha$ would give a larger force with a longer spanner, 
 **Substitution:** Spanner A: $r = 0.250\,\text{m}\cdot\sin 90^\circ = 0.250\,\text{m}$ and $F = 60.0\,\text{Nm} : 0.250\,\text{m} = 240\,\text{N}$. Spanner B: $r = 0.400\,\text{m}\cdot\sin 65^\circ = 0.3625\,\text{m}$ and $F = 60.0\,\text{Nm} : 0.3625\,\text{m} = 165.5\,\text{N}$. Spanner C: $r = 0.600\,\text{m}\cdot\sin 30^\circ = 0.300\,\text{m}$ and $F = 60.0\,\text{Nm} : 0.300\,\text{m} = 200\,\text{N}$.
 **Answer:** $166\,\text{N}$ with spanner B, three significant figures like the moment and the length. Only spanner B is usable, because spanners A and C would need $240\,\text{N}$ and $200\,\text{N}$. The longest spanner C is not the best, because of the oblique pull its lever arm $0.300\,\text{m}$ is shorter than the lever arm of spanner B.
 **Reasonableness:** With a perpendicular pull the longest spanner would need only $60.0\,\text{Nm} : 0.600\,\text{m} = 100\,\text{N}$, but the angle $30^\circ$ halves its lever arm. Check: $165.5\,\text{N}\cdot 0.3625\,\text{m} = 60.0\,\text{Nm}$, and $166\,\text{N} < 170\,\text{N}$.
+
+## fy5-1-L1-10
+**Given:** horizontal force $F$ at the point $P$, moment $M = 21\,\text{Nm}$ about the axis $O$; one square of the grid is $0.10\,\text{m}$
+**Find:** the magnitude of the force $F$ in the unit $\text{N}$
+**Principle:** The rod rotates about the axis $O$, so the turning effect of the force is given by its moment $M = Fr$. The lever arm is the perpendicular distance of the axis from the line of action of the force, not the length $OP$ of the rod.
+**Reading the figure:** The force is horizontal, so its line of action is the horizontal dashed line through the point $P$. The axis $O$ is three squares below this line, so the lever arm is three squares. The length of the rod, five squares, is not the lever arm.
+**Formula:** $M = Fr$, so $F = \dfrac{M}{r}$
+**Conversions:** $r = 3\cdot 0.10\,\text{m} = 0.30\,\text{m}$
+**Substitution:** $F = \dfrac{21\,\text{Nm}}{0.30\,\text{m}} = 70\,\text{N}$
+**Answer:** $70\,\text{N}$, two significant figures like the moment $21\,\text{Nm}$.
+**Reasonableness:** If the length of the rod, $0.50\,\text{m}$, were taken as the lever arm, the force would come out as $42\,\text{N}$. That would be wrong, because a horizontal force pulls the rod partly along its own direction. The true force is larger because the lever arm is shorter. Check: $70\,\text{N}\cdot 0.30\,\text{m} = 21\,\text{Nm}$.

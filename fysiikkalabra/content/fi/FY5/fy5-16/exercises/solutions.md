@@ -238,3 +238,25 @@ t_\text{v} &= \frac{8\,\text{h}}{2^{\,2{,}33}} \\
 Kohta c: annos on $\dfrac{3{,}0\,\text{h}}{1{,}59\,\text{h}} = 1{,}89$ eli $190\,\%$. Etäisyydellä $16\,\text{m}$ taso on $100\,\text{dB} - 6\,\text{dB} = 94\,\text{dB}$ ja tulpat korvissa $86\,\text{dB}$. Silloin $n = \dfrac{1}{3}$, $t_\text{v} = \dfrac{8\,\text{h}}{2^{1/3}} = 6{,}35\,\text{h}$ ja annos on $\dfrac{3{,}0\,\text{h}}{6{,}35\,\text{h}} = 0{,}47$ eli $47\,\%$.
 **Vastaus:** a) $100\,\text{dB}$. b) $1{,}6\,\text{h}$, kaksi merkitsevää numeroa kuten vaimennuksessa ja kestossa. c) Paikallaan etäisyydellä $8{,}0\,\text{m}$ annos on $190\,\%$ vertailuannoksesta. Jos kuulija pitää tulpat korvissa myös etäisyydellä $16\,\text{m}$, annos putoaa noin $47\,\%$:iin eli jää vertailuannoksen alle. Se ei takaa kuulon turvallisuutta, mutta pienentää rasitusta selvästi.
 **Järkevyys:** Ilman tulppia vertailuaika olisi vain $8\,\text{h} : 2^5 = 0{,}25\,\text{h}$, joten $8\,\text{dB}$:n vaimennus pidentää sitä noin kuusinkertaiseksi, ja $1{,}59\,\text{h} : 0{,}25\,\text{h} = 6{,}3 \approx 2^{8/3} = 6{,}35$.
+
+## fy5-16-L1-09
+**Annettu:** kuvasta ruohonleikkurin taso $L = 90\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
+**Kysytty:** vertailuaika $t_\text{v}$ tunteina
+**Periaate:** Melualtistus lasketaan energian keskiarvona: jokainen $3\,\text{dB}$:n nousu kaksinkertaistaa intensiteetin ja puolittaa ajan, jossa sama annos kertyy.
+**Kuvaajan lukeminen:** Asteikolla ruohonleikkurin merkki on kohdassa $90\,\text{dB}$, punaisella merkityn kuulovaurion vaara -alueen sisällä, joka alkaa kohdasta $85\,\text{dB}$.
+**Kaava:** $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Muunnokset:** Ei tarvita: tasot ovat desibeleinä ja aika saadaan tunteina.
+**Sijoitus:** $n = \dfrac{90\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{5}{3}$, $t_\text{v} = \dfrac{8\,\text{h}}{2^{5/3}} = \dfrac{8\,\text{h}}{3{,}175} = 2{,}52\,\text{h}$
+**Vastaus:** $2{,}5\,\text{h}$. Taso luetaan kuvasta kokonaisena desibelinä ja sääntö on arvio, joten kaksi merkitsevää numeroa riittää.
+**Järkevyys:** Taso $90\,\text{dB}$ on kahden askeleen ($91\,\text{dB}$, $2\,\text{h}$) ja yhden askeleen ($88\,\text{dB}$, $4\,\text{h}$) välissä lähempänä jälkimmäistä, ja $2{,}5\,\text{h}$ on kahden ja neljän tunnin välissä.
+
+## fy5-16-L2-09
+**Annettu:** kuvasta rock-konsertin taso $L = 105\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
+**Kysytty:** vertailuaika $t_\text{v}$ minuutteina
+**Periaate:** Annos riippuu tasosta ja ajasta: jokainen $3\,\text{dB}$:n nousu puolittaa vertailuajan, koska melualtistus lasketaan energian keskiarvona.
+**Kuvaajan lukeminen:** Rock-konsertin merkki on asteikolla kohdassa $105\,\text{dB}$, kuulovaurion vaara -alueella, $20\,\text{dB}$ ylempää toiminta-arvoa $85\,\text{dB}$ korkeammalla.
+**Kaava:** $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Muunnokset:** $t_0 = 8\,\text{h} = 8 \cdot 60\,\text{min} = 480\,\text{min}$.
+**Sijoitus:** $n = \dfrac{105\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{20}{3}$, $t_\text{v} = \dfrac{480\,\text{min}}{2^{20/3}} = \dfrac{480\,\text{min}}{101{,}6} = 4{,}72\,\text{min}$
+**Vastaus:** $4{,}7\,\text{min}$. Taso luetaan kuvasta kokonaisena desibelinä ja sääntö on arvio, joten kaksi merkitsevää numeroa riittää.
+**Järkevyys:** Taso on $20\,\text{dB}$ vertailutason yläpuolella, joten intensiteetti on noin $100$-kertainen ja aika noin sadasosa: $480\,\text{min} : 100 = 4{,}8\,\text{min}$. Konsertti kestää tunteja, joten kuulonsuojaimet tarvitaan.

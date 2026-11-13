@@ -96,6 +96,27 @@
       "answer": 400,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-4-L1-09",
+      "level": 1,
+      "text": "Kuuhun laskeutuva alus hidastaa laskeutumistaan rakettimoottorilla. Aluksen massa on $15\\,000\\,\\text{kg}$. Moottorin työntövoima osoittaa ylöspäin. Aluksen kiihtyvyys on $0{,}50\\,\\text{m/s}^2$ ylöspäin. Alukseen vaikuttaa vain sen paino ja työntövoima. Etsi putoamiskiihtyvyys Kuun pinnalla MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Kuinka suuri on työntövoima?",
+      "lookup": "MAFY",
+      "answer": 31.83,
+      "unit": "kN",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukossa kohdassa *Aurinkokunta*."
+      ]
+    },
+    {
+      "id": "fy4-4-L1-10",
+      "level": 1,
+      "text": "Kuvaaja esittää kahden kärryn, A:n ja B:n, kiihtyvyyden kokonaisvoiman funktiona. Kärryjen massoja ei kerrota. Mikä on kärryn A massa?",
+      "answer": 0.5,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "figure": "fy4-4/kuvaaja-ab"
     }
   ],
   "level2": [
@@ -265,6 +286,15 @@
           "feedback": "Laskussa on virhe rivillä 4: siinä on käytetty painoa $G$ massan $m$ paikalla. Vaakasuoralla lattialla tukivoima kumoaa painon eli on sen kanssa yhtä suuri ja vastakkaissuuntainen. Kiihtyvyyttä pienentää massa, ei paino."
         }
       ]
+    },
+    {
+      "id": "fy4-4-L2-09",
+      "level": 2,
+      "text": "Kuvaaja esittää kahden kärryn, A:n ja B:n, kiihtyvyyden kokonaisvoiman funktiona. Kärryjen massoja ei kerrota. Kärryyn B vaikuttaa vaakasuora kokonaisvoima $2{,}4\\,\\text{N}$. Mikä on kärryn B kiihtyvyys?",
+      "answer": 2.4,
+      "unit": "m/s²",
+      "tolerance": 0.02,
+      "figure": "fy4-4/kuvaaja-ab"
     }
   ],
   "level3": [

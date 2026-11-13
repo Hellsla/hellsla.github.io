@@ -218,9 +218,40 @@ def tF():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "pysahtyminen": pysahtyminen, "jarrutus": jarrutus, "tormays": tormays, "tv": tv, "tF": tF}
+def ex_tv_jarrutus():
+    """Exercise L2-09: a car's (t, v) from the moment the driver sees the danger to a stop (nothing shaded, nothing marked)."""
+    f = Fig("fy411-ex-tv-jarrutus", 340, "Kuvaaja mittakaavassa: auton nopeus ajan funktiona siitä hetkestä, kun kuljettaja huomaa vaaran, "
+            "pysähtymiseen. Nopeus on 20 metriä sekunnissa hetkeen 1,0 sekuntia asti, ja sitten se pienenee tasaisesti nollaan "
+            "hetkellä 3,5 sekuntia. Vaaka-akselilla aika 0–4 sekuntia 0,5 sekunnin välein, pystyakselilla nopeus 0–24 metriä "
+            "sekunnissa 4 metrin välein sekunnissa.")
+    ax = Axes(f, (92, 286), (478, 52), x=(0, 4), y=(0, 24), xticks=[0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4],
+              yticks=[0, 4, 8, 12, 16, 20, 24], xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})")
+    ax.line([(0, 20), (1.0, 20), (3.5, 0)], COLD, 3)
+    return f.svg()
+
+
+def ex_tv_tyyny():
+    """Exercise L3-06: two crash tests of the same dummy, (t, v) with the airbag and without it (nothing shaded)."""
+    f = Fig("fy411-ex-tv-tyyny", 340, "Kuvaaja mittakaavassa: törmäyskokeessa nuken nopeus ajan funktiona törmäyshetkestä alkaen kahdessa kokeessa. "
+            "Kummassakin nopeus on aluksi 15 metriä sekunnissa ja pienenee tasaisesti nollaan. Koe A, jyrkempi suora: nopeus on nolla "
+            "hetkellä 0,060 sekuntia. Koe B, loivempi suora: nopeus on nolla hetkellä 0,150 sekuntia. Vaaka-akselilla aika "
+            "0–0,16 sekuntia 0,02 sekunnin ruuduin, luvut 0,04 sekunnin välein, pystyakselilla nopeus 0–16 metriä sekunnissa, luvut 5 metrin välein.")
+    ax = Axes(f, (96, 290), (478, 52), x=(0, 0.16), y=(0, 16), xticks=[0, 0.02, 0.04, 0.06, 0.08, 0.10, 0.12, 0.14, 0.16],
+              yticks=[0, 5, 10, 15], xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})",
+              xfmt=lambda v: fi(v) if round(v * 100) % 4 == 0 else "")
+    ax.line([(0, 15), (0.06, 0), (0.16, 0)], COPPER, 3)
+    ax.line([(0, 15), (0.15, 0)], COLD, 3)
+    f.tex(ax.X(0.03) - 26, ax.Y(7.5) - 4, r"\text{A}", "middle", COPPER)
+    f.tex(ax.X(0.09) + 10, ax.Y(6.0) - 14, r"\text{B}", "middle", COLD)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "pysahtyminen": pysahtyminen, "jarrutus": jarrutus, "tormays": tormays, "tv": tv, "tF": tF,
+           "ex-tv-jarrutus": ex_tv_jarrutus, "ex-tv-tyyny": ex_tv_tyyny}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
+    "ex-tv-jarrutus": "safe: a car's (t, v) from sighting the danger to a stop, reaction and braking readable at grid crossings, nothing shaded",
+    "ex-tv-tyyny": "safe: (t, v) of a dummy in two crash tests, stopping times readable at grid crossings, nothing shaded",
     "pysahtyminen": "reveals: the stopping distances at 50 and 100 km/h (t_r 1,0 s, a 9,0 m/s²): s_r doubles, s_j quadruples",
     "jarrutus": "reveals: the force diagram of a car braking on a level road (friction backwards, a backwards)",
     "tormays": "reveals: the occupant's (t, v) in a 50 km/h crash with and without a belt (same Δv, Δt 0,10 s and 0,010 s)",

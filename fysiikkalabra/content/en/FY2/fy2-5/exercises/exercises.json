@@ -94,6 +94,18 @@
       "answer": 40,
       "unit": "kWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L1-09",
+      "level": 1,
+      "text": "Ethanol is burnt as a fuel, $0.50\\,\\text{kg}$ of it. Look up the heat of combustion of ethanol in the MAFY table (mafytaulukot.fi). How much energy is released when the ethanol burns? Give the answer in megajoules.",
+      "lookup": "MAFY",
+      "answer": 13.35,
+      "unit": "MJ",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Polttoaineiden LHV-lämpöarvoja*."
+      ]
     }
   ],
   "level2": [
@@ -274,6 +286,15 @@
       ],
       "answer": "Petrol (about $65\\,\\text{MJ}$), firewood ($75\\,\\text{MJ}$), coal ($104\\,\\text{MJ}$), milled peat ($120\\,\\text{MJ}$).",
       "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy2-5-L2-09",
+      "level": 2,
+      "text": "The bar chart in the figure shows heats of combustion of fuels. Read the heats of combustion of petrol and air-dry firewood from the figure. How many kilograms of firewood would have to be burnt to release as much energy as $12\\,\\text{kg}$ of petrol? Give the answer in kilograms.",
+      "figure": "fy2-5/lampoarvot",
+      "answer": 34.4,
+      "unit": "kg",
       "tolerance": 0.02
     }
   ],

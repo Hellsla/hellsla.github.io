@@ -31,4 +31,6 @@ load = [9.5, 9.8, 10.2, 10.6, 10.1, 8.7, 8.4]    # GW per day
 a["fy2-6-L3-04"] = max(l - 3.5 - w for l, w in zip(load, wind))   # others = load - nuclear 3,5 GW - wind: max 6,7 GW on Thursday (wind week 489,6 GWh = 32 % of 9,0 GW rated)
 E_wind = 0.33 * 100 * h_year                # wind park 289 080 MWh per year
 a["fy2-6-L3-05"] = round(120e6 / (E_wind * 25))    # two significant figures; build cost 120 million euro : (289 080 MWh · 25 a) = 16,6 -> 17 euro/MWh (nuclear 10,6)
+a["fy2-6-L1-10"] = 2.0 * 3600 / 10                      # P t = 2,0 MW · 3600 s = 7200 MJ; MAFY (Polttoaineiden LHV-lämpöarvoja) jyrsinturve H = 10 MJ/kg: m = 720 kg
+a["fy2-6-L2-08"] = 20.2 * 1000 / 8784                    # wind 20,2 TWh read off fy2-6/fi-bars = 20 200 GWh; 20 200 : 8784 h = 2,30 GW
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

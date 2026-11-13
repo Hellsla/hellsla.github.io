@@ -218,3 +218,13 @@ $\tfrac{1}{2}\,a = \tfrac{1}{2} \cdot (-2.0\,\text{m/s}^2)$, that is $\tfrac{1}{
 $\tfrac{1}{2}\,a\,t^2 = -1.0\,\text{m/s}^2 \cdot (4.0\,\text{s})^2$, that is $\tfrac{1}{2}\,a\,t^2 = -16\,\text{m}$
 
 $s_2 = 32\,\text{m} - 16\,\text{m}$, that is $s_2 = 16\,\text{m}$
+
+## fy4-2-L1-09
+**Given:** drop height $h = 20\,\text{m}$, initial velocity $v_0 = 0$; from the table (MAFY table, Solar System, Jupiter) free-fall acceleration $g = 24.79\,\text{m/s}^2$
+**Find:** the time of the fall $t$ in $\text{s}$
+**Principle:** Air resistance is ignored, so the stone falls freely and its acceleration is constant, $a = g$. The motion is then uniformly accelerated and the equation for position applies.
+**Formula:** Take downward as positive and the starting point as the origin, so $x_0 = 0$ and $x = h$. The equation $x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$ becomes $h = \tfrac{1}{2}\,g\,t^2$, which gives $t = \sqrt{\dfrac{2h}{g}}$
+**Conversions:** All quantities are in SI units, so no conversions are needed.
+**Substitution:** $t = \sqrt{\dfrac{2 \cdot 20\,\text{m}}{24.79\,\text{m/s}^2}} = \sqrt{1.613\,\text{s}^2} \approx 1.270\,\text{s}$
+**Answer:** $1.3\,\text{s}$ (more exactly $1.27\,\text{s}$). The height $20\,\text{m}$ is taken as exact, so the result has three significant figures like the table value $24.79\,\text{m/s}^2$; different tables give slightly different values, and the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** On Earth the same drop would take $\sqrt{2 \cdot 20\,\text{m} : 9.81\,\text{m/s}^2} \approx 2.02\,\text{s}$. Jupiter's free-fall acceleration is about $2.5$ times as large, and the time is $\sqrt{2.5} \approx 1.6$ times shorter: $2.02\,\text{s} : 1.6 \approx 1.27\,\text{s}$.

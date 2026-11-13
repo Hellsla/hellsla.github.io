@@ -39,4 +39,6 @@ dV_etanoli = 1.1e-3 * 1000 * (30 - 10)                       # thermometer: bulb
 dV_pallo = 3 * 9.0e-6 * 1000 * (30 - 10)                     # glass bulb's inner volume grows like glass: 27e-6 · 1000 · 20 = 0,54 mm³
 A_kapillaari = 3.141592653589793 * 0.30**2                   # capillary cross-section π · (0,30 mm)² = 0,283 mm²
 a["fy3-8-L3-05"] = (dV_etanoli - dV_pallo) / A_kapillaari    # column rise (22,0 − 0,54) mm³ / 0,283 mm² = 75,9 mm (without bulb 77,8 mm = +2,5 %; water: (4,2 − 0,54) / 0,283 = 12,9 mm)
+a["fy3-8-L1-09"] = 12e-6 * 25 * 50 * 1000                     # steel rail 25 m, ΔT = 50 K: α = 12e-6 1/K (MAFY), ΔL = 0,015 m = 15 mm
+a["fy3-8-L2-09"] = 20 + 2.0 / (3.0 / 50)                     # figure fy3-8/length-graph: (20 °C; 0 mm) to (70 °C; 3,0 mm), k = 0,060 mm/K; ΔL = 2,0 mm -> ΔT = 33,3 K -> 53,3 °C
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

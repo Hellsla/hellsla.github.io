@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: be130260722cc92a
-
-Round 3: there were no blocking items in round 2. Commit 442c889ba made two changes to fi fy2-4, both in L2-08. It split the η chain in the correct option's feedback (exercises.json) and the Rivi 2 line of the model answer (solutions.md) into shorter inline formulas joined by "eli". Nothing else in the exercise set or answers.py changed.
+CONTENT-HASH: 6c7acbf24ababf6e
+Mode: delta
+Round: 2
 
 ## Blocking
-(none)
 
 ## Polish
-- exercises.json:256 (fy2-4-L2-08, carried over) — η = 60 % is low for a 2,5 kW motor (typically 80–90 %). This is optional: E_a = 510 kJ (85 %) keeps the same error pattern.
-- lessons/FY2/fy2-4/answers.py (carried over) — add the comment "# fy2-4-L2-08 is multiple choice: no number (η = 360 kJ : 600 kJ = 0,60)".
-- solutions.md L3-05 (carried over) — write "suoraan lämmöksi": the light also ends up as thermal energy.
-- docs/exercise-bank/FY2.md:29–30 (carried over) — the plan still lists c·m·ΔT and chain-efficiency tasks (FY3).
+- fy2-4-L2-09: η = 25 % is still low for an electric motor (typically 70–90 %). It is fine for a small hobby motor (C), and "pieni leikkimoottori" in the text would make that clear.
 
 ## Checked
-- Diff 9fd1b2088..HEAD for fi fy2-4: only the two L2-08 lines changed. answers.py and every other task are unchanged.
-- Feedback, recomputed: the split chain is η = E_a : E_o, eli η = 360 kJ : 600 kJ = 0,60, eli 60 %. The formula, the numbers and the direction of the ratio are as before and right. Splitting at "eli" leaves no false equality.
-- Solution, recomputed: the Rivi 2 line is E_o = 2500 W · 240 s, eli E_o = 600 000 J = 600 kJ. 2500 · 240 = 600 000 is right, and the line still agrees with Rivi 2 of the task and with the option feedback.
-- Exactly one option is still correct (Rivi 4), the wrong options' feedback is unchanged and right, and the task still says "tasaisesti".
-- The hash was be130260722cc92a at the start and at the end.
+- Hash 6c7acbf24ababf6e at the start and the end. I judged only the two-line diff in solutions.md.
+- solutions.md L1-09 Vastaus now says that the task uses the MAFY value 40,6 MJ/kg. This fixes my round-1 point that other sources (about 42,7 MJ/kg) fall outside ±4 %. η = 80 : (40,6 · 2,5) = 78,8 % ≈ 79 % did not change.
+- solutions.md L2-09 Kuvaajan lukeminen: the sentence now begins "Luetaan energiavuokaaviota". The reading is still 8 squares in and 2 squares useful, as in the figure (H = 8 · 20, η = 0,25), so η = 25 %.
+- No answer, unit, tolerance or answers.py line changed.

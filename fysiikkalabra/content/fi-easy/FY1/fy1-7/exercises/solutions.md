@@ -225,3 +225,13 @@ $\rho_\text{D} = 120\,\text{g} : 100\,\text{cm}^3 = 1{,}2\,\tfrac{\text{g}}{\tex
 Pienimmästä suurimpaan järjestys on B, D, A, C.
 
 Kappale B kelluisi vedessä ja muut uppoaisivat. Massan mukaan järjestys olisi eri: kappale C on raskain ja kappale D kevein. Tiheys kertoo kuitenkin massan tilavuutta kohti, ei kappaleen kokonaismassaa. Järjestyksen ratkaisemiseen riittää kaksi merkitsevää numeroa, koska tiheydet eroavat selvästi toisistaan.
+
+## fy1-7-L1-09
+**Annettu:** tilavuus $V = 50\,\text{cm}^3$; taulukosta (MAFY-taulukko, Tiheyksiä, kiinteät aineet, kupari) tiheys $\rho = 8{,}96 \cdot 10^3\,\text{kg/m}^3$
+**Kysytty:** massa $m$ yksikössä $\text{kg}$
+**Periaate:** Tiheys kertoo, kuinka suuri massa on yhdessä tilavuusyksikössä. Siksi massa on tiheys kerrottuna tilavuudella.
+**Kaava:** $\rho = \dfrac{m}{V}$, josta $m = \rho V$
+**Muunnokset:** $1\,\text{cm}^3 = 10^{-6}\,\text{m}^3$. Siksi $V = 50 \cdot 10^{-6}\,\text{m}^3 = 5{,}0 \cdot 10^{-5}\,\text{m}^3$.
+**Sijoitus:** $m = 8{,}96 \cdot 10^3\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5{,}0 \cdot 10^{-5}\,\text{m}^3 = 0{,}448\,\text{kg}$
+**Vastaus:** $0{,}45\,\text{kg}$ (tarkemmin $0{,}448\,\text{kg}$). Tilavuus $50\,\text{cm}^3$ on annettu kahdella merkitsevällä numerolla, joten vastauskin on. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Kupari on noin $9$ kertaa vettä tiheämpää. Vettä $50\,\text{cm}^3$ painaa $50\,\text{g}$. Kuparia on siis noin $9 \cdot 50\,\text{g} = 450\,\text{g} = 0{,}45\,\text{kg}$.

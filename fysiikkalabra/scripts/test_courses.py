@@ -161,6 +161,11 @@ expect("site build publishes fy4-1 with its assets", code == 0 and (site / "fy4-
 expect("FY4.html links fy4-1 and lists the other FY4 slots as coming; FY3.html does not list it",
        'href="fy4-1.html"' in (site / "FY4.html").read_text() and "tulossa" in (site / "FY4.html").read_text() and "fy4-1" not in (site / "FY3.html").read_text())
 nolang = lambda f: re.sub(r'<details class="lang-menu">.*?</details>|<nav class="chapter-nav".*?</nav>|<nav class="crumbs".*?</nav>|<script id="fl-course"[^>]*>.*?</script>|<li><a href="tyokalut\.html">[^<]*</a></li>|<a (?:class="nav-teacher" )?href="tyokalut\.html">[^<]*</a>', "", f.read_text(), flags=re.S)   # the real site has its translations and neighbouring chapters to link to (also in the path's chapter menu and the course's task list), and the footer's Työkalut link, which needs the grading file (palautus/) this copy has not
+# while the real fy3-2 has new exercises waiting for review (a draft set), the real page keeps the exercises last
+# reviewed, which this copy (no history) cannot rebuild: compare the page without its exercises section then (2026-11-12)
+_real_ex = subprocess.run([sys.executable, str(SRC / "scripts/reviews.py"), "status", "fy3-2"], capture_output=True, text=True, cwd=SRC).stdout
+if "exercises: draft" in _real_ex:
+    _nolang = nolang; nolang = lambda f: re.sub(r'<section class="stage stage-practice" id="exercises".*?</section>', "", _nolang(f), flags=re.S)
 expect("fy3-2 is built exactly as the real site has it", nolang(site / "fy3-2.html") == nolang(SRC / "site/fy3-2.html") and (site / "fy3-2-sim.js").read_bytes() == (SRC / "site/fy3-2-sim.js").read_bytes())
 code, out = run("check_choices.py", "--all", "--site")
 expect("answer positions are checked per course on the site", code == 0 and "FY4:" in out and "FY3:" in out, out)

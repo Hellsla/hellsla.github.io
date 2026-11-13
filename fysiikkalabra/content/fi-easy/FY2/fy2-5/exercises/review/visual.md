@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 02606fa88d01b0b2
-Round: 3 (delta)
+CONTENT-HASH: 05926100d039f73b
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L2-06 solution, Model answer — $E = Hm = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} = 78\,000\,\text{MJ}$ is one inline chain wider than the column at 390 px (render shows "= 78 00("); old unchanged line, same in fi — follow-up with the site-wide handling of long inline chains.
-- [Minor] Other long inline chains at 360 px (measured only, not opened): the L2-08 petrol line $E = Hm = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot ...$ in both languages and, in fi-easy, $360\,000\,\text{MJ} : 3600\,\text{s} = 100\,\text{MW}$ — same follow-up. At 390 px only the L2-06 chain is over.
-- [Minor] data tables scroll sideways at 390 px by design.
+- [Minor] 5-18 task text — asks for "ilmakuivan polttopuun" value, but the bar chart labels the bar only "polttopuu" — write "polttopuu" in the task or "ilmakuiva polttopuu" in the figure.
+- [Minor] 5-18 Kaava — the chain "$H_\text{p}m_\text{p} = H_\text{b}m_\text{b} \Rightarrow m_\text{p}$" then "$= \dfrac{H_\text{b}m_\text{b}}{H_\text{p}}$" wraps after the implication, so the row starts with a bare "$=$" under a $\Rightarrow$ — optional: write the two steps as separate lines.
+- [Minor] 5-9 and 5-18 — "vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä" (5-9) is aimed at the teacher — optional.
+- [Minor] 5-9 task text — "(mafytaulukot.fi)" is plain text — link it or leave it out.
 
 ## Checked
-- Rebuilt preview/fi-easy/fy2-5.html (build.py fy2-5) and rendered at 390 px, all levels and solutions open. Opened the en L3-04 solution as an image: the three month groups now read "… that is 6700" etc., each fits the column, and the 6700 + 1300 + 5300 = 13 300 step and the aligned rows are intact. For fi-easy I confirmed by measurement only (same structure, "eli"); its image was not opened.
-- Measured every .katex in every solution step against its box at 390 and 360 px; the L3-04 groups no longer overflow at either width. Page scrollWidth 390.
-- Text only: wording of the split sentences, units, decimal separators. Packet captures (1280 px) not used.
+- Opened fy2-5-open-exercises-1280-8.png (5-9 task, Vihje box, answer row, solution start), -9.png (5-9 solution end), fy2-5-open-exercises-L2-1280-10.png (5-18 task with bar chart, answer row, solution start) and -11.png (5-18 solution end).
+- 5-9: situation then question; Vihje box under the task; fractions of units ($\tfrac{\text{MJ}}{\text{kg}}$) readable, thin spaces and decimal comma right; the extra estimate chain sits in its own box.
+- 5-18: chart fy2-5/lampoarvot has H (MJ/kg) as axis title, ticks 0–50, values printed at the bar ends, flat orange bars, labels in KaTeX; the values read in the solution (43 and 15) match the bars.
+- Unchanged exercises not re-opened. No 390 px exercise captures: phone layout not judged.
 
 ## Scores
-illustrations 4 · typography 4 · language 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

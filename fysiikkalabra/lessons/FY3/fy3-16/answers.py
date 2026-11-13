@@ -48,4 +48,7 @@ a["fy3-16-L3-04"] = cost_A - cost_B                       # saving 480,6 € -> 
 m_ice = 1000 * 60 * 30 * 0.030                            # 0,030 m layer of WATER (rho 1000): 54 m³ -> 54 000 kg
 Q_rink = m_ice * (c_vesi * 12 + s + c_jaa * 5.0)          # 2,715 + 18,04 + 0,567 GJ = 21,32 GJ
 a["fy3-16-L3-05"] = Q_rink / (10 * 3600) / 1e3            # P = 21,32 GJ / 36 000 s = 592 kW -> 590 kW (tolerance 0,03)
+a["fy3-16-L1-09"] = 2260 * 0.30                        # MAFY: r = 2260 kJ/kg; Q = rm = 2260 kJ/kg · 0,30 kg = 678 kJ
+a["fy3-16-L2-09"] = 400.0 * 180.0 / (2.0 * (60.0 - 20.0))   # fy3-6/heating-line: 20 °C -> 60 °C in 180 s; c = Pt/(mΔT) = 72 000 J / (2,0 kg · 40 K) = 900 J/(kg·K)
+a["fy3-16-L2-10"] = 220e3 / 25.0 / 3600                 # fy3-7/melting-curve: all 0,60 kg ice melted at Q = 220 kJ; t = Q/P = 220 000 J / 25 W = 8800 s = 2,444 h
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

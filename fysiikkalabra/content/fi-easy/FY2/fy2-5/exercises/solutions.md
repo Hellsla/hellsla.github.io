@@ -203,3 +203,24 @@ Polttopuu: $E = 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 5{,}0\,\text{kg} = 75\,\t
 Kivihiili: $E = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 4{,}0\,\text{kg} = 104\,\text{MJ}$
 Jyrsinturve: $E = 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,\text{kg} = 120\,\text{MJ}$
 Pienimmästä suurimpaan: bensiini, polttopuu, kivihiili, jyrsinturve. Massan mukaan järjestys olisi bensiini ($1{,}5\,\text{kg}$), kivihiili ($4{,}0\,\text{kg}$), polttopuu ($5{,}0\,\text{kg}$), jyrsinturve ($12\,\text{kg}$). Polttopuu ja kivihiili vaihtavat siis paikkaa: kivihiilen suurempi lämpöarvo korvaa sen pienemmän massan. Arvio: bensiinillä on yli $40\,\text{MJ}$ kilogrammaa kohti, mutta sitä on vain vähän. Siksi sen energia jää pienimmäksi. Tämä sopii tulokseen.
+
+## fy2-5-L1-09
+**Annettu:** etanolin massa $m = 0{,}50\,\text{kg}$; lämpöarvo MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja, etanoli) $H = 26{,}7\,\tfrac{\text{MJ}}{\text{kg}}$
+**Kysytty:** vapautuva energia $E$ megajouleina
+**Periaate:** Mitä enemmän polttoainetta palaa, sitä enemmän energiaa vapautuu. Lämpöarvo kertoo energian yhtä kilogrammaa kohti. Etanoli ei ole kirjan taulukossa, joten lämpöarvo haetaan MAFY-taulukosta.
+**Kaava:** $E = Hm$
+**Muunnokset:** Ei tarvita: massa on kilogrammoina ja lämpöarvo on megajouleina kilogrammaa kohti.
+**Sijoitus:** $E = 26{,}7\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0{,}50\,\text{kg} = 13{,}35\,\text{MJ}$
+**Vastaus:** $E \approx 13\,\text{MJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$. Lämpöarvo $26{,}7\,\tfrac{\text{MJ}}{\text{kg}}$ on MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja). Eri taulukoiden arvot eroavat vähän. Vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä.
+**Järkevyys:** Etanolin lämpöarvo on noin kaksi kolmasosaa bensiinin lämpöarvosta $43\,\tfrac{\text{MJ}}{\text{kg}}$. Arvio: $25\,\tfrac{\text{MJ}}{\text{kg}} \cdot 0{,}5\,\text{kg} \approx 12\,\text{MJ}$. Tulos on oikeaa suuruusluokkaa.
+
+## fy2-5-L2-09
+**Annettu:** bensiinin massa $m_\text{b} = 12\,\text{kg}$; lämpöarvot luetaan kuvasta: bensiini $H_\text{b} = 43\,\tfrac{\text{MJ}}{\text{kg}}$, polttopuu $H_\text{p} = 15\,\tfrac{\text{MJ}}{\text{kg}}$
+**Kysytty:** polttopuun massa $m_\text{p}$, kun energia on yhtä suuri
+**Periaate:** Kummastakin polttoaineesta vapautuu energiaa $E = Hm$. Energioiden pitää olla yhtä suuret. Lasketaan ensin bensiinin energia. Sitten lasketaan, kuinka paljon polttopuuta tarvitaan.
+**Kuvaajan lukeminen:** Lämpöarvot on kirjoitettu pylväiden päihin. Bensiinin pylvään päässä on $43$ ja polttopuun pylvään päässä $15$. Akselin yksikkö on $\text{MJ/kg}$. Siis $H_\text{b} = 43\,\tfrac{\text{MJ}}{\text{kg}}$ ja $H_\text{p} = 15\,\tfrac{\text{MJ}}{\text{kg}}$.
+**Kaava:** $H_\text{p}m_\text{p} = H_\text{b}m_\text{b} \Rightarrow m_\text{p} = \dfrac{H_\text{b}m_\text{b}}{H_\text{p}}$
+**Muunnokset:** Ei tarvita: massat ovat kilogrammoina.
+**Sijoitus:** $E = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,\text{kg} = 516\,\text{MJ}$, joten $m_\text{p} = \dfrac{516\,\text{MJ}}{15\,\tfrac{\text{MJ}}{\text{kg}}} = 34{,}4\,\text{kg}$
+**Vastaus:** $m_\text{p} \approx 34\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $12\,\text{kg}$.
+**Järkevyys:** Bensiinin lämpöarvo on noin kolme kertaa polttopuun lämpöarvo ($43 : 15 \approx 2{,}9$). Siksi puuta tarvitaan noin kolme kertaa enemmän: $3 \cdot 12\,\text{kg} \approx 36\,\text{kg}$. Tulos sopii tähän.

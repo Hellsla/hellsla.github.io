@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: eddb481aa99052bc
-Mode: delta
-Round: 2
+CONTENT-HASH: 0742e66b95ebc481
+SCOPE: delta added-exercise from eddb481aa99052bc base 611fb7d5c174
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+- [Minor] L2-09 solution: the block label "Reading the graph" with "Here we read the energy-flow diagram" is slightly redundant; "Reading the diagram" alone would do.
+- [Minor] mafytaulukot.fi is plain text (optional).
 
 ## Checked
-- Round-1 Major confirmed fixed by a live render at 390 px (Playwright, rebuilt preview/en/fy2-4.html, level open, every feedback and the solution open): fy2-4-L2-08, the correct-option feedback (η chain, now "…, that is/eli … = 0.60, which is/eli 60 %") and the Model answer line 2 (now "E_o = 2500 W · 240 s, that is/eli E_o = 600 000 J = 600 kJ"). Read in crops; measured every formula against its text column: none overflows, no clipped chain, KaTeX errors 0, no page-level horizontal overflow.
-- The wrapped lines break after "eli"/"that is" or at an operator, not mid-formula; the solution's fraction chain "η = E_a/E_o = 360 kJ/600 kJ = 0.60 = 60 %" still fits on one row.
-- Not opened: the fresh review/shots 1280 px captures and contact sheets (my render replaces them for this fix), the other tasks of the chapter (unchanged), en language judged from the task text in the render only.
-
-- Hash at the start and at the end of my round: identical.
+- Opened fy2-4-open-exercises-1280-9.png and fy2-4-open-exercises-L2-1280-11.png (content/en/FY2/fy2-4/review/shots/): L1-09 Answer and Reasonableness with the reworded sentence; L2-09 solution with "Here we read the energy-flow diagram: …" under the Reading the graph label; layout intact.
+- Delta round 2 at 1280 px only; 390 px captures not opened. Hash unchanged at the end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 (English) · accessibility 5
+illustrations 4 · typography 5 · English 4 · accessibility 4

@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: eb6030c5ebb1f4dc
+CONTENT-HASH: 3fc56c61e25476d8
+SCOPE: delta added-exercise from eb6030c5ebb1f4dc base 611fb7d5c174
 
 ## Blocking
 (none)
@@ -8,9 +9,8 @@ CONTENT-HASH: eb6030c5ebb1f4dc
 (none)
 
 ## Checked
-- New task fy2-2-L1-09 (unit prefixes, concept) compared with the reviewed Finnish: id, level, kind, answer $1000\,\text{kJ}$, unit, tolerance, four choices, correct flag on the same choice, all numbers identical.
-- Physics recomputed: 1 MJ = 1 000 000 J = 1000 kJ; 1 000 000 kJ = 1 GJ; 1000 GJ = 10^6 MJ; 1000 J = 1 kJ. Every distractor is really wrong and its feedback is right.
-- solutions.md L1-09: all seven steps and all formulas/numbers equal the Finnish; reasonableness check (1000 kJ x 1000 = 1 000 000 J) is valid.
-- Number format: decimal comma as in Finnish; term meanings kept (kilo, mega, giga explained). No scope breach (prefixes are FY1 content applied to energy).
-- check_i18n.py: nothing for fy2-2; build.py fy2-2 succeeds. No fixes were needed.
-- Round 2 (label only): the step label of the L1-09 solution is now 'Mallivastaus' instead of the plain answer label; the text, numbers, formulas and answer are unchanged, so the earlier findings stand. check_i18n.py shows nothing for fy2-2.
+- Hash taken at the start and at the end with `--lang fi-easy`; it did not change.
+- fy2-2-L1-10: 180 kcal = 180 000 cal; times 4,1868 J/cal (the international calorie) = 753 624 J = 753,6 kJ. My own recomputation, answers.py and exercises.json agree. A ±4 % tolerance covers tables that give 4,184 J (752 kJ). The check (about 4,2 kJ per kcal) is a real check. Unit conversion from FY1 is in scope.
+- fy2-2-L1-11: figure `fy2-2/tikapuut-kohteet` puts tea water at k = 5 and 1 kJ at k = 3, so 10^5 J = 100 kJ. The figure prints no value and does not give the answer away. Its description gives the same information. As a magnitude this is realistic: about 0,25 kg heated by 80 K needs about 84 kJ, and a 2 kW kettle takes about a minute.
+- Compared with the reviewed Finnish: answer, unit, tolerance, figure, lookup, level and every number in the task text and the solution are identical. The clearer wording keeps the physics and the conditions.
+- Both solutions have all seven steps.

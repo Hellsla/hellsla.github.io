@@ -47,4 +47,5 @@ a["fy1-7-inq-metalli"] = (224.3 - 45.1) / (25.0 - 5.0)         # copper-like met
 a["fy1-7-inq-siirto"] = 0.187 / (70e-6)          # stone: 187 g, displaced 70 ml: rho = 0,187 kg / 70e-6 m3 = 2671 kg/m3 -> 2,7e3 (readings to 1 ml, stated in the task)
 a["fy1-7-inq-virhe"] = 2.70 * 250   # Etsi virhe (not numeric): aluminium 250 cm3: m = 2,70 g/cm3 · 250 cm3 = 675 g
 a["fy1-7-inq-tarkistus-2"] = 500 * 0.200 ** 3   # pine cube: m = 500 kg/m3 · (0,200 m)^3 = 4,00 kg
+a["fy1-7-L1-09"] = 8960 * 50e-6                # MAFY: copper 8,96·10³ kg/m³; V = 50 cm³ = 50e-6 m³; m = rho V = 0,448 kg
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

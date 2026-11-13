@@ -224,3 +224,35 @@ $$\begin{aligned}
 The electric power is of the order of magnitude $2\,\text{MW}$. The power can be written as $P = \eta \cdot \tfrac{1}{2}v^2 \cdot \rho A v$, where $\tfrac{1}{2}v^2$ is the kinetic energy of one kilogram of air and $\rho A v$ is the mass of air that the undisturbed wind carries through the swept area per second. Both grow with the speed. The option $0.2\,\text{MW}$ comes from calculating the power as proportional to the square $v^2$: only the kinetic energy per kilogram is included, and the growth of the mass flow is forgotten. The option $20\,\text{kW}$ comes from calculating the power as proportional to the speed $v$: only the mass flow is included, and the growth of the kinetic energy per kilogram is forgotten. If the speed is substituted as the number $36$ without converting it, the result is about $47$ times too large, about $90\,\text{MW}$.
 
 The result is reasonable. The power of the wind is $P : \eta \approx 4.9\,\text{MW}$, and less than half of it becomes electricity. In the example of the chapter a $120\,\text{m}$ rotor produced about $2.3\,\text{MW}$ at a wind speed of $9.0\,\text{m/s}$, so the result is of the same order of magnitude.
+
+## fy4-15-L1-09
+**Given:** rotor diameter $d = 82\,\text{m}$, wind speed $v = 9.0\,\text{m/s}$, efficiency $\eta = 0.45$; from the MAFY table (*Tiheyksiä: Kaasujen tiheyksiä*) the density of air at $0\,{}^\circ\text{C}$ is $\rho = 1.29\,\text{kg/m}^3$
+**Find:** the electric power $P$ in $\text{kW}$
+**Principle:** The undisturbed wind carries the power $\tfrac{1}{2}\rho A v^3$ through the swept area, and the turbine turns the fraction $\eta$ of it into electricity. Cold air is denser than the $1.25\,\text{kg/m}^3$ used in the chapter, so the density from the table is substituted into the formula.
+**Formula:** $P = \tfrac{1}{2}\eta\rho A v^3$ and $A = \pi r^2$, so $P = \tfrac{1}{2}\eta\rho \pi r^2 v^3$
+**Conversions:** The radius is $r = 82\,\text{m} : 2 = 41\,\text{m}$; finally $1\,\text{kW} = 1000\,\text{W}$.
+**Substitution:** $A = \pi \cdot (41\,\text{m})^2 = 5281.0\,\text{m}^2$ and $P = \tfrac{1}{2} \cdot 0.45 \cdot 1.29\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5281.0\,\text{m}^2 \cdot \left(9.0\,\tfrac{\text{m}}{\text{s}}\right)^3 = 1\,117\,422\,\text{W} \approx 1100\,\text{kW}$
+**Answer:** $1100\,\text{kW}$, or about $1.1\,\text{MW}$, two significant figures like the efficiency $0.45$ and the wind speed $9.0\,\text{m/s}$.
+**Reasonableness:** With the density $1.25\,\text{kg/m}^3$ the power would be $1.08\,\text{MW}$. The density is about $3\,\%$ larger and the power is directly proportional to the density, so in frost the power is about $3\,\%$ larger. The result is smaller than that of the $120\,\text{m}$ turbine in the chapter, because the rotor is smaller.
+
+## fy4-15-L2-09
+**Given:** the power curve as points, wind speed $v = 7\,\text{m/s}$, time $t = 120\,\text{h}$
+**Find:** the electrical energy $E$ in $\text{MWh}$
+**Principle:** When the wind blows steadily, the electric power stays constant, so the energy is power times time. The power is read from the manufacturer's power curve, which gives the electric power directly.
+**Reading the graph:** Find the speed $7\,\text{m/s}$ on the horizontal axis and read the height of the point there: $P = 511\,\text{kW}$.
+**Formula:** $E = Pt$
+**Conversions:** $P = 511\,\text{kW} = 0.511\,\text{MW}$, and the time is kept in hours, so the energy comes out in megawatt-hours.
+**Substitution:** $E = 0.511\,\text{MW} \cdot 120\,\text{h} = 61.32\,\text{MWh} \approx 61.3\,\text{MWh}$
+**Answer:** $61.3\,\text{MWh}$, three significant figures like the power $511\,\text{kW}$ read from the graph.
+**Reasonableness:** The power is about $0.5\,\text{MW}$ and the time about $100\,\text{h}$, so the energy is about $50\,\text{MWh}$. The estimate fits only because the wind is assumed to be steady.
+
+## fy4-15-L2-10
+**Given:** the power curve as points, the wind speed rises from $9\,\text{m/s}$ to $12\,\text{m/s}$
+**Find:** the ratio $P_{12} : P_9$ and its comparison with the cubic model
+**Principle:** The reference power of the wind is proportional to the cube of the speed, so with a constant efficiency the electric power would be too. The power curve of a real turbine shows how the electric power really changes.
+**Reading the graph:** At $9\,\text{m/s}$ the height of the point is $P_9 = 1017\,\text{kW}$ and at $12\,\text{m/s}$ it is $P_{12} = 1637\,\text{kW}$. The curve is already bending towards the rated power $1650\,\text{kW}$.
+**Formula:** the real ratio $k = \dfrac{P_{12}}{P_9}$ and the ratio of the cubic model $k_\text{model} = \left(\dfrac{v_2}{v_1}\right)^3$
+**Conversions:** Both powers are in $\text{kW}$, so the unit cancels and no conversion is needed.
+**Substitution:** $\dfrac{P_{12}}{P_9} = \dfrac{1637\,\text{kW}}{1017\,\text{kW}} = 1.6096$ and the model: $\left(\dfrac{12\,\text{m/s}}{9\,\text{m/s}}\right)^3 = 2.370$
+**Answer:** the power becomes about $1.61$ times larger, three significant figures like the powers read. The cubic model would give $2.37$ times.
+**Reasonableness:** The difference arises because the power of the turbine approaches the rated power $1650\,\text{kW}$, which the generator cannot exceed, and the blades are turned to let part of the wind pass. Then the efficiency falls and the cubic model no longer holds. In weaker wind, for example at speeds $5\,\text{m/s}$ and $10\,\text{m/s}$, the power grows almost as the cube.

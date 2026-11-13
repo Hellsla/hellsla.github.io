@@ -42,6 +42,10 @@ expect("one language: nothing to compare", code == 0 and "fi only" in out, out)
 code, out = run("build.py")
 fi_page = (T / "site" / f"{LESSON}.html").read_text()
 site_page = re.sub(r'<details class="lang-menu">.*?</details>', "", (SRC / "site" / f"{LESSON}.html").read_text())  # the real site has languages
+if "exercises: draft" in subprocess.run([sys.executable, str(SRC / "scripts/reviews.py"), "status", LESSON], capture_output=True, text=True, cwd=SRC).stdout:
+    # an exercise set awaiting its reviews: the site keeps its last reviewed version from git, which this copy has no history for
+    _ex = lambda h: re.sub(r'<section class="stage stage-practice" id="exercises".*?</section>', "", h, flags=re.S)
+    fi_page, site_page = _ex(fi_page), _ex(site_page)
 expect("one language: the build is the committed site, without language links", code == 0 and fi_page == site_page and 'class="lang"' not in fi_page, out[-400:])
 
 # a second language: lang/en.json and content/en/, nothing else

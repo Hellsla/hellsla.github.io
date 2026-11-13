@@ -57,4 +57,8 @@ a["fy3-10-L3-04"] = (n_h1 - n_h3) * 4.0                   # used mass m = Δn M 
 # L3-05: weather balloon, n = p₀V₀/(RT₀) = 105,4 mol; V₁₀ = nRT/p at 10 km (26,5 kPa, −50,0 °C) = 7,379 m³ (V₁₅ = 15,69 m³ > 12,0 m³)
 n_pallo = 101e3 * 2.50 / (R * K(15.0))
 a["fy3-10-L3-05"] = n_pallo * R * K(-50.0) / 26.5e3
+# Added exercises (teacher 2026-11-12: MAFY table task, figure task)
+a["fy3-10-L1-09"] = (500 / 39.95) * R * 293 / 0.0100 / 1e6   # MAFY argon M = 39,95 g/mol: n = m/M = 12,52 mol; p = nRT/V = 3,047e6 Pa = 3,05 MPa
+# Added exercises (teacher 2026-11-12: MAFY table task, figure task)
+a["fy3-10-L2-09"] = 60e3 * 2.00e-3 / (R * 400)         # fy3-10/pt-suorat: gas B at (400 K; 60 kPa), V = 2,00 l: n = pV/(RT) = 120 J / 3324 J/mol = 0,03610 mol
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -87,6 +87,18 @@
       "answer": 32,
       "unit": "kJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-6-L1-09",
+      "level": 1,
+      "text": "Alumiinikattilan massa on $0{,}80\\,\\text{kg}$. Kattila lämpenee $20\\,{}^\\circ\\text{C}$:sta $100\\,{}^\\circ\\text{C}$:seen. Hae alumiinin ominaislämpökapasiteetti MAFY-taulukosta (mafytaulukot.fi). Ominaislämpökapasiteetti kertoo, kuinka paljon lämpöä $1\\,\\text{kg}$ ainetta tarvitsee, kun se lämpenee $1\\,\\text{K}$. Kuinka suuren lämpömäärän kattila ottaa vastaan? Anna vastaus kilojouleina.",
+      "lookup": "MAFY",
+      "answer": 57.344,
+      "unit": "kJ",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Ominaislämpökapasiteetteja: Kiinteät aineet*."
+      ]
     }
   ],
   "level2": [
@@ -262,6 +274,15 @@
           "feedback": "Laskussa on virhe rivillä 4. Levy jäähtyy, joten sen sisäenergia pienenee ja energiaa siirtyy levyltä ympäristöön. Rivit 1–3 ovat oikein, mutta rivi 4 kääntää energian suunnan väärin päin."
         }
       ]
+    },
+    {
+      "id": "fy3-6-L2-09",
+      "level": 2,
+      "text": "Kuvassa on eräiden aineiden ominaislämpökapasiteetteja. Lämmönvaihtimen kuparinen putki on $3{,}0\\,\\text{kg}$. Se jäähtyy $85\\,{}^\\circ\\text{C}$:sta $25\\,{}^\\circ\\text{C}$:seen. Lue kuparin ominaislämpökapasiteetti kuvasta. Kuinka suuren lämpömäärän putki luovuttaa ympäristöönsä? Anna vastaus kilojouleina positiivisena lukuna.",
+      "figure": "fy3-6/c-bars",
+      "answer": 69.3,
+      "unit": "kJ",
+      "tolerance": 0.03
     }
   ],
   "level3": [

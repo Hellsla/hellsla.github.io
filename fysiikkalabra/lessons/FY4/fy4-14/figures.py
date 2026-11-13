@@ -6,7 +6,7 @@ starts at the face the air presses on: the lower face of a falling body, the upp
 once a parachute opens. Velocity is blue, acceleration orange and forces red in every figure (FBD.motion, FBD.force)."""
 import math
 from figlib import (Fig, Axes, INK, MUTED, WHITE, RULE, RULE_LIGHT, SAND_LIGHT, SAND, SAND_DARK, GRAIN, COPPER, ICE, GLASS,
-                    COLD, COLD_LIGHT, HOT, HEAT, HEAT_LIGHT, GOOD, GOOD_LIGHT, IRON, ALUMINIUM, METAL_EDGE, WATER, WATER_LIGHT, n)
+                    COLD, COLD_LIGHT, HOT, HEAT, HEAT_LIGHT, GOOD, GOOD_LIGHT, IRON, ALUMINIUM, METAL_EDGE, WATER, WATER_LIGHT, n, fi)
 from fbd import FBD
 import herolib as H
 from herolib import grad, rnd
@@ -327,9 +327,25 @@ def ex_tangentti():
     return f.svg()
 
 
+# Exercise figure (L2-08): the measured speed of a skydiver falling belly down before the canopy is opened, points only.
+HYPPY_VT = [(0, 0.0), (2, 18.6), (4, 32.3), (6, 40.4), (8, 44.5), (10, 46.4), (12, 47.3)]
+
+
+def hyppy_vt_points():
+    """Exercise graph: (t, v) points of a skydiver in free fall with air resistance (the task reads the acceleration off two of them)."""
+    f = Fig("fy414-hyppy-vt", 340, "Kuvaaja mittakaavassa: laskuvarjohyppääjän nopeus alaspäin ajan funktiona hypyn alussa, ennen kuin varjo avataan. "
+            "Seitsemän mittauspistettä ilman piirrettyä käyrää: (0 s; 0 m/s), (2 s; 18,6 m/s), (4 s; 32,3 m/s), (6 s; 40,4 m/s), (8 s; 44,5 m/s), (10 s; 46,4 m/s) ja (12 s; 47,3 m/s). "
+            "Vaaka-akselin ruudukon väli on 2 sekuntia ja pystyakselin 5 metriä sekunnissa.")
+    ax = Axes(f, (92, 290), (450, 56), x=(0, 12), y=(0, 50), xticks=[2, 4, 6, 8, 10, 12], yticks=[5, 10, 15, 20, 25, 30, 35, 40, 45, 50],
+              xlabel=r"t\ (\text{s})", ylabel=r"v\ (\text{m/s})", yfmt=lambda v: fi(v) if v % 10 == 0 else "")
+    for t, v in HYPPY_VT:
+        ax.point(t, v, COLD)
+    return f.svg()
+
+
 FIGURES = {"hero": hero, "pudotus": pudotus, "vt": vt, "ylos": ylos, "varjo": varjo, "esimerkki": esimerkki,
            "valitse-a": valitse_a, "valitse-b": valitse_b, "valitse-c": valitse_c, "valitse-d": valitse_d,
-           "malli-alas": malli_alas, "ex-tangentti": ex_tangentti}
+           "malli-alas": malli_alas, "ex-tangentti": ex_tangentti, "hyppy-vt-points": hyppy_vt_points}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "pudotus": "reveals: the force diagrams of a skydiver just after the jump, speeding up and at the terminal speed",
@@ -342,5 +358,6 @@ REUSE = {
     "valitse-c": "safe: a wrong option (an invented upward force) for diagram selection",
     "valitse-d": "safe: a wrong option (air resistance missing) for diagram selection",
     "malli-alas": "reveals: the model diagram of a ball thrown down faster than its terminal speed (shown after the attempt)",
+    "hyppy-vt-points": "safe: (t, v) points of a skydiver falling before the canopy opens, no curve drawn; no mass, acceleration or force given",
     "ex-tangentti": "safe: a (t, v) curve with a tangent on a grid; the slope is not given",
 }

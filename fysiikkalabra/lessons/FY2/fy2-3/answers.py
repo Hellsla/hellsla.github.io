@@ -32,4 +32,6 @@ a["fy2-3-L3-04"] = sum(c - p for c, p in zip(cons, prod) if c > p) * 1.0 / 1000 
 run = 11.5 + 12.0 + 11.5 + 12.0; off = 18.0 + 18.5 + 17.5 + 18.0
 a["fy2-3-L3-05"] = (100 * run / (run + off) / 1000 * YEAR_H - 130) * PRICE   # 39,5 W; 346 kWh; (346 - 130) kWh · 0,20 €/kWh = 43,2 €
 # fy2-3-L2-08 is multiple choice: no number (P doubles: 6,0 kWh : 1,5 h = 4,0 kW vs 6,0 kWh : 3,0 h = 2,0 kW)
+a["fy2-3-L1-09"] = 5.0 * 735.5 * 30 * 60 / 1e6     # 5,0 hp · 735,5 W/hp (MAFY) = 3677,5 W; 30 min = 1800 s; E = Pt = 6 619 500 J = 6,6 MJ
+a["fy2-3-L1-10"] = ((120e3 - 60e3) / (80 - 40)) / (40e3 / 80)   # read off fy2-3/graph-ab: A (40 s; 60 kJ),(80 s; 120 kJ) -> 1500 W; B (80 s; 40 kJ) -> 500 W; ratio 3,0
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

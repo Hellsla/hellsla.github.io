@@ -113,6 +113,18 @@
       "answer": 56.5,
       "unit": "g",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L1-09",
+      "level": 1,
+      "text": "Kuparikappaleen tilavuus on $50\\,\\text{cm}^3$. Etsi kuparin tiheys MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Mikä on kappaleen massa? Anna vastaus yksikössä kg.",
+      "lookup": "MAFY",
+      "answer": 0.448,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukossa kohdassa *Tiheyksiä*, kiinteiden aineiden tiheydet."
+      ]
     }
   ],
   "level2": [

@@ -141,6 +141,18 @@
           "feedback": "This corresponds to a depth of about $10\\,\\text{km}$. Pressure grows in direct proportion to depth, so ten times the depth would give ten times the pressure. The given depth is only $1.0\\,\\text{km}$."
         }
       ]
+    },
+    {
+      "id": "fy3-4-L1-10",
+      "level": 1,
+      "text": "A diver is at a depth of $25\\,\\text{m}$ in the sea. The air pressure at the sea surface is $101\\,\\text{kPa}$. Look up the density of sea water in the MAFY table (mafytaulukot.fi). How large is the total pressure at the diver?",
+      "lookup": "MAFY",
+      "answer": 351.2,
+      "unit": "kPa",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Tiheyksiä: Nesteiden tiheyksiä* (densities of liquids)."
+      ]
     }
   ],
   "level2": [
@@ -297,6 +309,15 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy3-4-L2-08",
+      "level": 2,
+      "text": "The graph shows the pressures of two liquids, A and B, as a function of depth. What is the density of liquid B? Use $g = 9.81\\,\\text{m/s}^2$.",
+      "figure": "fy3-4/two-liquids",
+      "answer": 1529,
+      "unit": "kg/m³",
+      "tolerance": 0.04
     }
   ],
   "level3": [

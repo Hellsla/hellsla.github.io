@@ -355,6 +355,19 @@
      "feedback": "Päätelmä jatkaa riippuvuutta mittausalueen ulkopuolelle. Korkeus $8{,}00\\,\\text{m}$ on kaksinkertainen suurimpaan mitattuun nähden, ja arvo $80\\,\\text{m}$ olettaa, että matka kasvaa samassa suhteessa ja kitkakerroin pysyy samana. Se on arvio, ei mittaustulos."
     }
    ]
+  },
+  {
+   "id": "fy4-16-L2-09",
+   "level": 2,
+   "text": "Ihminen, jonka massa on $60{,}0\\,\\text{kg}$, seisoo voima-anturilevyllä hississä, joka liikkuu ylöspäin. Kuvaajassa on levyn lukema eli tukivoima ajan funktiona. Hissi hidastaa ennen pysähtymistä. Lue kuvaajasta tukivoima hidastusvaiheessa ja laske hissin kiihtyvyyden suuruus tänä aikana.",
+   "kind": [
+    "data",
+    "graph"
+   ],
+   "figure": "fy4-16/hissi-kuvaaja",
+   "answer": 0.6433,
+   "unit": "m/s²",
+   "tolerance": 0.02
   }
  ],
  "level3": [

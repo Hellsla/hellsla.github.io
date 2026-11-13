@@ -202,3 +202,35 @@ $$\begin{aligned}
 $T_\text{K} = 2{,}461 \cdot 1{,}00\,\text{s} \approx 2{,}46\,\text{s}$
 
 Heilurin jaksonaika kasvaa siis noin $2{,}5$-kertaiseksi, ja jousen jaksonaika pysyy samana. Perustelu: heilurin palauttava voima on osa painoa, joka pienenee Kuussa. Kiihdytettävä massa ei kuitenkaan pienene. Jousen voima riippuu vain poikkeamasta ja jousivakiosta. Putoamiskiihtyvyys on Kuussa noin kuudesosa Maan arvosta. Neliöjuuren vuoksi jaksonaika kasvaa kuitenkin vain noin $\sqrt{6{,}1} \approx 2{,}5$-kertaiseksi, ei kuusinkertaiseksi.
+
+## fy5-9-L1-09
+**Annettu:** heilurin pituus $l = 1{,}00\,\text{m}$; MAFY-taulukosta (Aurinkokunta, Mars) putoamiskiihtyvyys $g = 3{,}72\,\text{m/s}^2$
+**Kysytty:** jaksonaika $T$ sekunteina
+**Periaate:** Pienillä heilahduksilla matemaattinen heiluri on harmoninen värähtelijä. Sen palauttava voima on painon radan suuntainen osa. Massa supistuu pois. Siksi jaksonaika riippuu vain pituudesta ja putoamiskiihtyvyydestä.
+**Kaava:** $T = 2\pi\sqrt{\dfrac{l}{g}}$
+**Muunnokset:** Muunnoksia ei tarvita. Kaikki suureet ovat SI-yksiköissä.
+**Sijoitus:** $T = 2\pi\sqrt{\dfrac{1{,}00\,\text{m}}{3{,}72\,\text{m/s}^2}} = 2\pi \cdot 0{,}5185\,\text{s} = 3{,}258\,\text{s}$
+**Vastaus:** $3{,}26\,\text{s}$. Vastaus on annettu kolmella merkitsevällä numerolla kuten pituus $1{,}00\,\text{m}$. Arvo $g$ on MAFY-taulukosta (Aurinkokunta, Mars). Eri taulukoiden arvot poikkeavat hieman. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Maassa samanpituisen heilurin jaksonaika on $2\pi\sqrt{1{,}00/9{,}81}\,\text{s} = 2{,}01\,\text{s}$. Marsissa putoamiskiihtyvyys on pienempi. Siksi jaksonaika on pidempi: $\sqrt{9{,}81/3{,}72} = 1{,}62$-kertainen.
+
+## fy5-9-L1-10
+**Annettu:** kuvaajasta kappaleen paikka $x$ ajan $t$ funktiona välillä $0$–$1{,}0\,\text{s}$; jousivakio $k = 120\,\text{N/m}$
+**Kysytty:** värähtelyn energia $E$ joulina
+**Periaate:** Kitkattomassa värähtelyssä mekaaninen energia säilyy. Ääriasennossa nopeus on nolla. Silloin kaikki energia on jousen potentiaalienergiaa. Energia saadaan siis amplitudista.
+**Kuvaajan lukeminen:** Käyrän huiput ovat kohdassa $x = 3{,}0\,\text{cm}$ ja pohjat kohdassa $x = -3{,}0\,\text{cm}$. Amplitudi mitataan tasapainoasemasta $x = 0$ huippuun. Siksi $A = 3{,}0\,\text{cm}$.
+**Kaava:** $E = \dfrac{1}{2}kA^2$
+**Muunnokset:** $A = 3{,}0\,\text{cm} = 0{,}030\,\text{m}$
+**Sijoitus:** $E = \dfrac{1}{2} \cdot 120\,\text{N/m} \cdot (0{,}030\,\text{m})^2 = 0{,}054\,\text{J}$
+**Vastaus:** $0{,}054\,\text{J}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten amplitudi.
+**Järkevyys:** Energia on pieni, koska poikkeama on vain muutama senttimetri. Jos amplitudi kaksinkertaistuu, energia nelinkertaistuu, koska $E \propto A^2$.
+
+## fy5-9-L2-09
+**Annettu:** kuvaajasta kappaleen paikka $x$ ajan $t$ funktiona välillä $0$–$1{,}0\,\text{s}$; massa $m = 0{,}150\,\text{kg}$
+**Kysytty:** jousivakio $k$ yksikössä $\text{N/m}$
+**Periaate:** Jousen varassa värähtelevän kappaleen jaksonaika on $T = 2\pi\sqrt{\tfrac{m}{k}}$. Jaksonaika luetaan kuvaajasta. Jousivakio ratkaistaan kaavasta.
+**Kuvaajan lukeminen:** Käyrän huiput ovat hetkillä $0$, $0{,}40\,\text{s}$ ja $0{,}80\,\text{s}$. Kahden peräkkäisen huipun väli on yksi täysi värähdys. Siksi $T = 0{,}40\,\text{s}$. Pohjat hetkillä $0{,}20\,\text{s}$ ja $0{,}60\,\text{s}$ vahvistavat tuloksen.
+**Kaava:** $T = 2\pi\sqrt{\dfrac{m}{k}}$, joten $T^2 = \dfrac{4\pi^2 m}{k}$ ja $k = \dfrac{4\pi^2 m}{T^2}$
+**Muunnokset:** Muunnoksia ei tarvita. Kaikki suureet ovat SI-yksiköissä.
+**Sijoitus:** $k = \dfrac{4\pi^2 \cdot 0{,}150\,\text{kg}}{(0{,}40\,\text{s})^2} = \dfrac{5{,}922\,\text{kg}}{0{,}16\,\text{s}^2} = 37{,}0\,\text{N/m}$
+**Vastaus:** $37\,\text{N/m}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten jaksonaika $0{,}40\,\text{s}$.
+**Järkevyys:** Tarkistus: $T = 2\pi\sqrt{0{,}150/37{,}0}\,\text{s} = 0{,}40\,\text{s}$. Tulos sopii siis kuvaajaan. Arvo on tavallisen pienen jousen suuruusluokkaa.

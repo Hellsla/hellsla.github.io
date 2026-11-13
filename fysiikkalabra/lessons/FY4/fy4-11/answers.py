@@ -45,4 +45,10 @@ a["fy4-11-L3-04"] = round(vmax * 3.6, 0)                 # 66,0 km/h → 66 (sto
 vd = [15.0, 13.4, 10.1, 5.6, 2.2, 0.7, 0.0]              # dummy speed every 20 ms
 steps = [vd[i] - vd[i + 1] for i in range(6)]            # Δv per 20 ms interval; the largest is 4,5 m/s (40–60 ms)
 a["fy4-11-L3-05"] = round(80.0 * max(steps) / 0.020 / 1000, 1)   # F_max = m Δv/Δt = 80,0 kg · 4,5 m/s : 0,020 s = 18,0 kN
+# Level 1 addition: MAFY table task (rubber-asphalt sliding friction, range 0,5-0,8: the upper end 0,8 is told in the text)
+mu_mafy = 0.8                                            # MAFY, Kitkakertoimia: kumi-asfaltti, liukukitka 0,5-0,8
+a["fy4-11-L1-09"] = (80 / 3.6) ** 2 / (2 * mu_mafy * 9.81)   # a = μg = 7,85 m/s², s = v0²/(2a) = 31,46 m
+# Figure tasks (L2-09 reads fy4-11/ex-tv-jarrutus, L3-06 reads fy4-11/ex-tv-tyyny)
+a["fy4-11-L2-09"] = 20.0 * 1.0 + 0.5 * 20.0 * (3.5 - 1.0)    # rectangle 20 m + triangle 25 m = 45 m
+a["fy4-11-L3-06"] = (70 * 15 / 0.060 - 70 * 15 / 0.150) / 1000   # 17 500 N - 7000 N = 10,5 kN
 print(json.dumps(a))

@@ -399,6 +399,15 @@ Exam questions are studied for patterns only (§7); every task is original, with
   Keep such a change apart from other edits, or the whole set is reviewed in full. The delta packet carries the added
   (and replaced) exercises in full and a list of the whole set; the PASS names its base on line 3 (`SCOPE: …`) and
   `reviews.py verify` re-derives it in CI.
+- **A translated exercise set takes the Finnish science review** (teacher 2026-11-12). When the Finnish exercise set
+  has a science PASS for its current hash and the translation (`en`, `fi-easy`) is numerically equivalent to it (the
+  same ids, levels and order; identical answers, units, tolerances, figures, kinds, core and correct marks; the same
+  formulas in the same order and the same numbers in every text and solution, decimal comma and point alike; a
+  sub- or superscript word such as `E_\text{sähkö}` → `E_\text{elec}` translated one to one), `reviews.py scope
+  <id> --exercises --lang <lang>` gives the science reviewer `none` (`translation-of-passed`) and `reviews.py carry`
+  records it; `verify` re-derives the equivalence in CI, and a new Finnish hash ends the carry. Pedagogy and visual
+  review every language. Keep numbers, units and formulas exactly as in Finnish (a unit in words, `kpl`, is a
+  difference), or the science reviewer reviews the translation as before.
 - **Conceptual checks.** Tarkista osaamisesi has about 2–3 multiple-choice checks of the chapter's key concepts when
   the concepts call for them, each with misconception-based distractors and feedback of its own; prefer converting a
   good exit-ticket question or replacing a redundant task over adding one. `python scripts/assessment.py <COURSE>`

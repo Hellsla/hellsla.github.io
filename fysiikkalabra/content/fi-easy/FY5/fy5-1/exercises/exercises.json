@@ -140,6 +140,15 @@
           "feedback": "Lausekkeen yksikkö on $\\tfrac{\\text{m}}{\\text{Nm}} = \\tfrac{1}{\\text{N}}$, ei newton. Jakolasku on väärin päin. Kaavasta $M = Fr$ ratkaistu voima on momentti jaettuna varrella."
         }
       ]
+    },
+    {
+      "id": "fy5-1-L1-10",
+      "level": 1,
+      "text": "Kuvassa sauva kääntyy kiertoakselin $O$ ympäri. Sauvaan vaikuttaa kohdassa $P$ vaakasuora voima $F$. Sen momentti akselin $O$ suhteen on $21\\,\\text{Nm}$. Ruudukon yksi ruutu on $0{,}10\\,\\text{m}$. Lue kuvasta voiman varsi. Kuinka suuri on voima $F$?",
+      "answer": 70,
+      "unit": "N",
+      "tolerance": 0.02,
+      "figure": "fy5-1/ruutu"
     }
   ],
   "level2": [

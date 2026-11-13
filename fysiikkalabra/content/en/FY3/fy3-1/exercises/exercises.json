@@ -146,6 +146,18 @@
           "feedback": "The force $F_\\text{k}$ is the force of the body on the meter, and it acts on the meter, not on the body. A force diagram shows only the forces that act on the body, here $G$ and $F$."
         }
       ]
+    },
+    {
+      "id": "fy3-1-L1-10",
+      "level": 1,
+      "text": "The mass of an astronaut with equipment is $85.0\\,\\text{kg}$. Look up the free-fall acceleration on the surface of Mars in the MAFY table (mafytaulukot.fi). What is the weight of the astronaut on the surface of Mars?",
+      "lookup": "MAFY",
+      "answer": 316.2,
+      "unit": "N",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Aurinkokunta* (Solar System)."
+      ]
     }
   ],
   "level2": [

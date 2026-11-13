@@ -94,6 +94,18 @@
       "answer": 100,
       "unit": "kertaa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-3-L1-09",
+      "level": 1,
+      "text": "Veden tiheys mitattiin $20\\,{}^\\circ\\text{C}$:ssa viisi kertaa. Tulokset olivat $1{,}004$; $1{,}012$; $1{,}008$; $1{,}014$ ja $1{,}012$, kaikki yksikössä $\\text{g/cm}^3$. Hae veden tiheys $20\\,{}^\\circ\\text{C}$:ssa MAFY-taulukosta (mafytaulukot.fi). Kuinka monta prosenttia mittausten keskiarvo $\\bar{x}$ poikkeaa taulukon arvosta? Poikkeama on $\\dfrac{\\bar{x} - \\rho_\\text{taulukko}}{\\rho_\\text{taulukko}}\\cdot100\\,\\%$.",
+      "lookup": "MAFY",
+      "answer": 1.18,
+      "unit": "%",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Veden tiheys eri lämpötiloissa*."
+      ]
     }
   ],
   "level2": [

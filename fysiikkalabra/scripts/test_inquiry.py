@@ -502,7 +502,9 @@ check("every chip in the bar, Tehtävät too, has its number, and the numbers ru
       nos == list(range(1, len(nos) + 1)) and nos == heads and nav_html.count('<a href="#') == len(nos) and '<a href="#exercises"><span class="toc-no"' in nav_html, (nos, heads))
 check("Ennusta is a closed box", re.search(r'<section class="stage" id="ennusta"[^>]*><h2>.*?</h2><details class="fold" data-fold="ennusta">', page_html) is not None)
 check("no old names on the page", not any(x in page_html for x in ("Herätä kiinnostus", "Lähtölippu", ">Selitä<")))
-check("exercises and exit ticket kept (8/8/5, 1 item)", page_html.count('class="level"') == 3 and page_html.count("<li>$(s, F)$-kuvaajassa") == 1 and page_html.count('<span class="count">8 tehtävää') == 2 and '<span class="count">5 tehtävää' in page_html)
+_ex = json.loads((ROOT / "content/fi/FY3/fy3-2/exercises/exercises.json").read_text()); _lv = [len(_ex[f"level{k}"]) for k in (1, 2, 3)]
+check(f"exercises and exit ticket kept ({'/'.join(map(str, _lv))}, 1 item)", page_html.count('class="level"') == 3 and page_html.count("<li>$(s, F)$-kuvaajassa") == 1
+      and re.findall(r'<span class="count">(\d+) tehtävää', page_html) == [str(n) for n in _lv])
 check("no answer disclosed before commitment", 'class="feedback" data-for="0" hidden' in page_html)
 check("nav lists the stages", '<a href="#herata">' in page_html and '<a href="#tarkista">' in page_html)
 

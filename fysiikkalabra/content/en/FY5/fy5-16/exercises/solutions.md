@@ -238,3 +238,25 @@ t_\text{ref} &= \frac{8\,\text{h}}{2^{\,2.33}} \\
 Part c: the dose is $\dfrac{3.0\,\text{h}}{1.59\,\text{h}} = 1.89$, that is, $190\,\%$. At a distance of $16\,\text{m}$ the level is $100\,\text{dB} - 6\,\text{dB} = 94\,\text{dB}$ and with the earplugs in the ears $86\,\text{dB}$. Then $n = \dfrac{1}{3}$, $t_\text{ref} = \dfrac{8\,\text{h}}{2^{1/3}} = 6.35\,\text{h}$ and the dose is $\dfrac{3.0\,\text{h}}{6.35\,\text{h}} = 0.47$, that is, $47\,\%$.
 **Answer:** a) $100\,\text{dB}$. b) $1.6\,\text{h}$, two significant figures as in the attenuation and the duration. c) Standing still at a distance of $8.0\,\text{m}$ the dose is $190\,\%$ of the reference dose. If the listener keeps the earplugs in also at a distance of $16\,\text{m}$, the dose falls to about $47\,\%$, below the reference dose. That does not guarantee safe hearing, but it reduces the strain clearly.
 **Reasonableness:** Without the earplugs the reference time would be only $8\,\text{h} : 2^5 = 0.25\,\text{h}$, so the attenuation of $8\,\text{dB}$ lengthens it about sixfold, and $1.59\,\text{h} : 0.25\,\text{h} = 6.3 \approx 2^{8/3} = 6.35$.
+
+## fy5-16-L1-09
+**Given:** from the figure, the lawn mower's level $L = 90\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
+**Asked:** the reference time $t_\text{v}$ in hours
+**Principle:** Noise exposure is calculated as an energy average: every rise of $3\,\text{dB}$ doubles the intensity and halves the time in which the same dose builds up.
+**Reading the graph:** On the scale the lawn mower's mark is at $90\,\text{dB}$, inside the red hearing-damage range that starts at $85\,\text{dB}$.
+**Formula:** $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Conversions:** None needed: the levels are in decibels and the time comes out in hours.
+**Substitution:** $n = \dfrac{90\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{5}{3}$, $t_\text{v} = \dfrac{8\,\text{h}}{2^{5/3}} = \dfrac{8\,\text{h}}{3.175} = 2.52\,\text{h}$
+**Answer:** $2.5\,\text{h}$. The level is read from the figure as a whole decibel and the rule is an estimate, so two significant figures are enough.
+**Reasonableness:** $90\,\text{dB}$ lies between $88\,\text{dB}$ ($4\,\text{h}$) and $91\,\text{dB}$ ($2\,\text{h}$), closer to the latter, and $2.5\,\text{h}$ lies between two and four hours.
+
+## fy5-16-L2-09
+**Given:** from the figure, the rock concert's level $L = 105\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
+**Asked:** the reference time $t_\text{v}$ in minutes
+**Principle:** The dose depends on both level and time: every rise of $3\,\text{dB}$ halves the reference time, because noise exposure is calculated as an energy average.
+**Reading the graph:** The rock concert's mark is on the scale at $105\,\text{dB}$, in the hearing-damage range, $20\,\text{dB}$ above the upper action value $85\,\text{dB}$.
+**Formula:** $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Conversions:** $t_0 = 8\,\text{h} = 8 \cdot 60\,\text{min} = 480\,\text{min}$.
+**Substitution:** $n = \dfrac{105\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{20}{3}$, $t_\text{v} = \dfrac{480\,\text{min}}{2^{20/3}} = \dfrac{480\,\text{min}}{101.6} = 4.72\,\text{min}$
+**Answer:** $4.7\,\text{min}$. The level is read from the figure as a whole decibel and the rule is an estimate, so two significant figures are enough.
+**Reasonableness:** The level is $20\,\text{dB}$ above the reference level, so the intensity is about $100$ times larger and the time about a hundredth: $480\,\text{min} : 100 = 4.8\,\text{min}$. A concert lasts hours, so hearing protectors are needed.

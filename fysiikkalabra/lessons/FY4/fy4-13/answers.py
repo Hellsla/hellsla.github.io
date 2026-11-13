@@ -52,4 +52,8 @@ a["fy4-13-L3-04"] = within((18.0 + 12.0) * a_tr, 15, 0.04)                 # cou
 s_d, rows = 0.80, [(0.100, 1.29), (0.200, 0.96), (0.300, 0.80), (0.400, 0.73)]
 m1_list = [m2 * (g / (2 * s_d / t**2) - 1) for m2, t in rows]              # m1 = m2 (g/a − 1), a = 2 s/t²: 0,920; 0,930; 0,877; 0,907 kg
 a["fy4-13-L3-05"] = within(sum(m1_list) / len(m1_list), 0.91, 0.04)        # mean 0,9086 kg
+# Figure tasks (cart's (t, v) points: (0,0), (0,5; 1,0), (1,0; 2,0), (1,5; 2,9), (2,0; 3,9), read: a = 3,9/2,0 = 1,95 m/s²)
+a_fig = (3.9 - 0.0) / (2.0 - 0.0)                                           # slope of the points through the origin: 1,95 m/s²
+a["fy4-13-L2-09"] = within(0.80 * a_fig, 1.6, 0.04)                         # cart 0,80 kg on a frictionless track: T = m1 a = 1,56 N (the hanging mass is not needed)
+a["fy4-13-L3-06"] = within(0.20 * (g / a_fig - 1), 0.81, 0.04)             # hanging 0,20 kg: m2 g = (m1 + m2) a → m1 = m2 (g/a − 1) = 0,806 kg
 print(json.dumps(a))

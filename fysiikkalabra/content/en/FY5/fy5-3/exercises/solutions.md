@@ -272,3 +272,35 @@ t &= \frac{5378\,\text{m}}{1.2\,\text{m/s}} \\
 ```
 **Answer:** a) The rotation frequency is about $460\,\tfrac{1}{\text{min}}$ at the start of the groove and about $200\,\tfrac{1}{\text{min}}$ at the end. b) There are about $2.1 \cdot 10^{4}$ turns of the groove, the length of the groove is about $5.4\,\text{km}$ and the playing time is about $75\,\text{min}$, two significant figures like the spacing of the turns $1.6\,\mu\text{m}$. c) The laser follows the groove at a constant speed, and farther out the groove goes round a larger circle. Since $v = 2\pi r f$, at the same speed the rotation frequency must decrease as the radius grows. The answer box gets the playing time $75\,\text{min}$.
 **Reasonableness:** The playing time $75\,\text{min}$ corresponds to the playing time of an ordinary CD, which is about $74$–$80\,\text{min}$. The rotation frequency decreases in the ratio $\dfrac{r_1}{r_2} = \dfrac{25}{58}$, and $458 \cdot \dfrac{25}{58} = 197$, as at the calculated end. There are $20\,625$ turns and the playing time is $74.7\,\text{min}$, so the mean rotation frequency is $\dfrac{20\,625}{74.7\,\text{min}} = 276\,\tfrac{1}{\text{min}}$, which lies between $458\,\tfrac{1}{\text{min}}$ at the start and $198\,\tfrac{1}{\text{min}}$ at the end.
+
+## fy5-3-L1-10
+**Given:** period $T = 5.0\,\text{s}$; the distance of the point $B$ from the centre is read from the figure
+**Find:** orbital speed $v$ of the point $B$ in the unit $\text{m/s}$
+**Principle:** The carousel rotates uniformly, so every point moves in a circle with the same period. The orbital speed is the distance travelled in one revolution, the circumference $2\pi r$, divided by the period $T$.
+**Reading the figure:** The dimension line below the radius shows the distance of the point $B$ from the centre: $r = 1.80\,\text{m}$. The distance of the point $A$ is not needed here.
+**Formula:** $v = \dfrac{2\pi r}{T}$
+**Conversions:** The data is in SI units, so no conversions are needed.
+**Substitution:** $v = \dfrac{2\pi\cdot 1.80\,\text{m}}{5.0\,\text{s}} = 2.262\,\text{m/s}$
+**Answer:** $2.3\,\text{m/s}$, two significant figures like the period $5.0\,\text{s}$.
+**Reasonableness:** The point $B$ travels the circumference $2\pi\cdot 1.80\,\text{m} \approx 11\,\text{m}$ in $5\,\text{s}$, which is a brisk walking speed, as on the edge of a playground carousel.
+
+## fy5-3-L1-11
+**Given:** period $T = 365\,\text{d}$; from the table (MAFY table, Aurinkokunta, Earth) the mean distance from the Sun $r = 150\cdot 10^{6}\,\text{km}$
+**Find:** the orbital speed $v$ of the Earth in the unit $\text{km/s}$
+**Principle:** The orbit is modelled as a circle with the radius $r$ and the Earth moves along it uniformly, so the orbital speed is the circumference divided by the period.
+**Formula:** $v = \dfrac{2\pi r}{T}$
+**Conversions:** $T = 365\cdot 24\cdot 3600\,\text{s} = 3.15\cdot 10^{7}\,\text{s}$. The distance can be left in kilometres, because the answer is wanted in $\text{km/s}$.
+**Substitution:** $v = \dfrac{2\pi\cdot 150\cdot 10^{6}\,\text{km}}{3.15\cdot 10^{7}\,\text{s}} = 29.89\,\text{km/s}$
+**Answer:** $29.9\,\text{km/s}$, three significant figures like the data. The values of different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** The Earth travels about $940\cdot 10^{6}\,\text{km}$ in a year. This is $30\,\text{km}$ every second, about a hundred times the speed of a jet plane, and that is the speed known for the Earth.
+
+## fy5-3-L2-08
+**Given:** frequency $f = 20\,\tfrac{1}{\text{min}}$; the distances $r_\text{A} = 0.60\,\text{m}$ and $r_\text{B} = 1.80\,\text{m}$ are read from the figure
+**Find:** the difference $v_\text{B} - v_\text{A}$ of the orbital speeds in the unit $\text{m/s}$
+**Principle:** Every point of a rigid carousel has the same frequency, so the orbital speed of a point is $v = 2\pi r f$ and the points differ only by their radius.
+**Reading the figure:** The dimension lines show $r_\text{A} = 0.60\,\text{m}$ and $r_\text{B} = 1.80\,\text{m}$, both measured from the centre.
+**Formula:** $\Delta v = v_\text{B} - v_\text{A} = 2\pi f\,(r_\text{B} - r_\text{A})$
+**Conversions:** $f = 20\,\tfrac{1}{\text{min}} = \dfrac{20}{60\,\text{s}} = 0.3333\,\tfrac{1}{\text{s}}$
+**Substitution:** $\Delta v = 2\pi\cdot 0.3333\,\tfrac{1}{\text{s}}\cdot(1.80\,\text{m} - 0.60\,\text{m}) = 2.513\,\text{m/s}$
+**Answer:** $2.5\,\text{m/s}$, two significant figures like the frequency $20\,\tfrac{1}{\text{min}}$.
+**Reasonableness:** Separately $v_\text{B} = 3.77\,\text{m/s}$ and $v_\text{A} = 1.26\,\text{m/s}$, and the difference is $2.51\,\text{m/s}$. The point $B$ is three times as far from the centre, so its speed is three times as great.

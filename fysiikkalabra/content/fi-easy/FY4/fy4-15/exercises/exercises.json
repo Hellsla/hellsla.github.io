@@ -87,6 +87,18 @@
       "answer": 180.0,
       "unit": "kJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-09",
+      "level": 1,
+      "text": "Pakkaspäivänä ilman lämpötila on $0\\,{}^\\circ\\text{C}$. Tuulivoimalan roottorin halkaisija on $82\\,\\text{m}$. Tuulen nopeus on $9{,}0\\,\\text{m/s}$ ja voimalan hyötysuhde on $0{,}45$. Hae ilman tiheys lämpötilassa $0\\,{}^\\circ\\text{C}$ MAFY-taulukosta (mafytaulukot.fi). Tiheys kertoo, kuinka paljon $1\\,\\text{m}^3$ ilmaa painaa kilogrammoina. Kuinka suuri on voimalan sähköteho?",
+      "lookup": "MAFY",
+      "answer": 1117.4223,
+      "unit": "kW",
+      "tolerance": 0.04,
+      "hints": [
+        "Tiheys on MAFY-taulukon taulukossa *Tiheyksiä: Kaasujen tiheyksiä*."
+      ]
     }
   ],
   "level2": [
@@ -256,6 +268,24 @@
           "feedback": "Tämä tulos syntyy, kun nopeus sijoitetaan lukuna $36$ muuntamatta sitä yksikköön $\\text{m/s}$. Koska $36\\,\\text{km/h} = 10\\,\\text{m/s}$ ja $36^3 : 10^3 \\approx 47$, teho tulee noin $47$ kertaa liian suureksi."
         }
       ]
+    },
+    {
+      "id": "fy4-15-L2-09",
+      "level": 2,
+      "text": "Kuvaajassa on tuulivoimalan tehokäyrä pisteinä. Valmistaja on ilmoittanut sen. Tuuli puhaltaa tasaisesti nopeudella $7\\,\\text{m/s}$ viisi vuorokautta eli $120\\,\\text{h}$. Lue kuvaajasta voimalan sähköteho tällä nopeudella. Kuinka paljon sähköenergiaa voimala tuottaa tänä aikana? Anna vastaus megawattitunteina.",
+      "figure": "fy4-15/tehokayra-pisteet",
+      "answer": 61.32,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L2-10",
+      "level": 2,
+      "text": "Kuvaajassa on tuulivoimalan tehokäyrä pisteinä. Valmistaja on ilmoittanut sen. Tuulen nopeus kasvaa nopeudesta $9\\,\\text{m/s}$ nopeuteen $12\\,\\text{m/s}$. Lue kuvaajasta sähköteho kummallakin nopeudella. Laske, kuinka monta kertaa suuremmaksi teho kasvaa. Laske myös, kuinka monta kertaa suuremmaksi teho kasvaisi, jos se olisi verrannollinen nopeuden kolmanteen potenssiin. Selitä ero.",
+      "figure": "fy4-15/tehokayra-pisteet",
+      "answer": 1.6096,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [

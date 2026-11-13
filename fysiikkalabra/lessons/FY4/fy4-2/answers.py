@@ -46,4 +46,7 @@ a["fy4-2-L3-04"] = round(sum((vv[i] + vv[i + 1]) / 2 * 2.0 for i in range(4)), 1
 t7 = np.array([0, .5, 1, 1.5, 2, 2.5, 3, 3.5, 4]); v7 = np.array([2.41, 2.02, 1.62, 1.19, .82, .38, -.01, -.41, -.83])
 k7, b7 = np.polyfit(t7, v7, 1)                         # a = -0,81 m/s², v₀ = 2,42 m/s
 a["fy4-2-L3-05"] = round(float(b7 ** 2 / (2 * -k7)), 2)   # turning point v = 0: s = v₀² / (2|a|) = 3,61 m
+# MAFY lookup: free fall on Jupiter, g = 24,79 m/s² from the MAFY table (Aurinkokunta); h = ½ g t² -> t = √(2h/g)
+a["fy4-2-L1-09"] = math.sqrt(2 * 20 / 24.79)          # 1,27 s
+
 print(json.dumps(a))

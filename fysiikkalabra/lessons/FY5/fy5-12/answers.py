@@ -44,4 +44,11 @@ f2 = 340 / (2 * dpath(3.01) / 3)              # second quiet point n = 1: Δs = 
 assert abs(f1 - f2) / f1 < 0.01
 a["fy5-12-L3-05"] = round((f1 + f2) / 2, -1)  # two significant figures: 850 Hz
 # L2-08 is multiple choice (find the error): λ = 0,36/12 m = 3,0 cm, Δs = 6,0 cm = 2,0 λ -> constructive; row 4 calls it destructive; no number
+# L2-09 (figure fy5-12/ruudukko-tehtava, 1 square = 0,50 m): s1 = 12 sq = 6,0 m, d = 5 sq = 2,5 m, s2 = sqrt(6,0² + 2,5²) = 6,5 m; |Δs| = 0,50 m
+import math
+s1_g, d_g = 12 * 0.50, 5 * 0.50
+ds_g = math.sqrt(s1_g ** 2 + d_g ** 2) - s1_g
+a["fy5-12-L2-09"] = ds_g
+# L3-06 (same figure): the lowest f with destructive interference at P is n = 0, Δs = λ/2: f = v / (2Δs) = 340 / (2 · 0,50) = 340 Hz
+a["fy5-12-L3-06"] = 340 / (2 * ds_g)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

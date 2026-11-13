@@ -232,3 +232,24 @@ b) Tuulipuisto: $E_\text{kok} = 289\,080\,\text{MWh} \cdot 25 = 7\,227\,000\,\te
 c) Tuulipuisto: $289\,080\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 3{,}469 \cdot 10^{9}\,\text{g} = 3469\,\text{t}$. Ydinvoimala: $9\,460\,800\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 1{,}135 \cdot 10^{11}\,\text{g} = 113\,500\,\text{t}$.
 **Vastaus:** Tuulipuiston rakennuskustannus on $17\,\text{euroa/MWh}$ (laskettu arvo $16{,}6$; kaksi merkitsevää numeroa kuten osuudessa $33\,\%$) ja ydinvoimalan $11\,\text{euroa/MWh}$. Vuosienergiat ovat $2{,}9 \cdot 10^{5}\,\text{MWh}$ ja $9{,}5 \cdot 10^{6}\,\text{MWh}$. Vuoden tuotannolle kuuluvat elinkaaripäästöt ovat noin $3500\,\text{t}$ ja $114\,000\,\text{t}$. Päästöt energiaa kohti ovat samat ($12\,\text{g/kWh}$). Ydinvoimalan suuret vuosipäästöt johtuvat siis vain suuresta tuotannosta. Tässä aineistossa rakennuskustannus energiaa kohti on ydinvoimalla pienempi, koska se tuottaa suuremmalla osuudella nimellistehosta ja kauemmin. Ydinvoima on tasaista perusvoimaa, mutta sen tehoa ei voi säätää nopeasti, ja siihen liittyy ydinjäte. Tuulivoima on sääriippuvaista, joten se tarvitsee rinnalleen säätövoimaa tai varastoja. Perusteltu suositus on yhdistelmä. Päästöjen perusteella kumpikin kelpaa. Kustannuksen perusteella ydinvoima on edullisempi. Sääriippuvainen tuulivoima sopii täydentämään sitä, kun säätövoimaa on riittävästi. Suositus perustuu kuitenkin vain tähän esimerkkiaineistoon ja pelkkään rakennuskustannukseen.
 **Järkevyys:** Ydinvoimala tuottaa vuodessa $9\,460\,800 : 289\,080 \approx 33$ kertaa enemmän kuin tuulipuisto. Päästöt ovat $113\,500 : 3469 \approx 33$ kertaa suuremmat. Se vastaa tuotannon suhdetta, koska päästökerroin on kummallakin sama $12\,\text{g/kWh}$. Jos tuulipuisto toimisi koko vuoden täydellä teholla, se tuottaisi $100\,\text{MW} \cdot 8760\,\text{h} = 876\,000\,\text{MWh}$. Lasku $289\,080 : 876\,000 = 0{,}33$.
+
+## fy2-6-L1-10
+**Annettu:** teho $P = 2{,}0\,\text{MW}$, aika $t = 1\,\text{h}$; jyrsinturpeen lämpöarvo MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja, jyrsinturve) $H = 10\,\tfrac{\text{MJ}}{\text{kg}}$
+**Kysytty:** palavan turpeen massa $m$ kilogrammoina
+**Periaate:** Palamisessa vapautuva energia tunnissa on $E = Pt$, kun vapautumisteho on $P$. Toisaalta palamisessa vapautuva energia on $E = Hm$. Kun tämä ratkaistaan massan suhteen, saadaan $m$.
+**Kaava:** $E = Pt$ ja $E = Hm \Rightarrow m = \dfrac{Pt}{H}$
+**Muunnokset:** $2{,}0\,\text{MW} = 2{,}0\,\tfrac{\text{MJ}}{\text{s}}$ ja $1\,\text{h} = 3600\,\text{s}$. Siis $E = 2{,}0\,\tfrac{\text{MJ}}{\text{s}} \cdot 3600\,\text{s} = 7200\,\text{MJ}$.
+**Sijoitus:** $m = \dfrac{7200\,\text{MJ}}{10\,\tfrac{\text{MJ}}{\text{kg}}} = 720\,\text{kg}$
+**Vastaus:** $m \approx 720\,\text{kg}$, kaksi merkitsevää numeroa kuten tehossa $2{,}0\,\text{MW}$. Lämpöarvo $10\,\tfrac{\text{MJ}}{\text{kg}}$ on MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja). Eri taulukoiden arvot eroavat vähän. Vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä.
+**Järkevyys:** Turpeen lämpöarvo on pieni, joten sitä palaa paljon: noin $0{,}7$ tonnia tunnissa, eli noin $12\,\text{kg}$ minuutissa. Se sopii pieneen $2\,\text{MW}$:n voimalaan.
+
+## fy2-6-L2-08
+**Annettu:** tuulivoiman vuosituotanto $E$ luetaan kuvasta; aika $t = 8784\,\text{h}$
+**Kysytty:** keskiteho $P$ gigawatteina
+**Periaate:** Keskiteho kertoo, paljonko energiaa tuotetaan keskimäärin aikayksikössä. Käytetään kaavaa $E = Pt$ ja ratkaistaan siitä teho.
+**Kuvaajan lukeminen:** Tuulivoiman pylvään päässä on luku $20{,}2$. Akselin yksikkö on $\text{TWh}$. Siis $E = 20{,}2\,\text{TWh}$.
+**Kaava:** $E = Pt \Rightarrow P = \dfrac{E}{t}$
+**Muunnokset:** $20{,}2\,\text{TWh} = 20\,200\,\text{GWh}$, koska $1\,\text{TWh} = 1000\,\text{GWh}$.
+**Sijoitus:** $P = \dfrac{20\,200\,\text{GWh}}{8784\,\text{h}} = 2{,}30\,\text{GW}$
+**Vastaus:** $P \approx 2{,}30\,\text{GW}$, kolme merkitsevää numeroa kuten luetussa tuotannossa $20{,}2\,\text{TWh}$.
+**Järkevyys:** Tarkistus: $2{,}30\,\text{GW} \cdot 8784\,\text{h} \approx 20\,200\,\text{GWh}$. Luvun mallin mukaan tuulivoimalan keskiteho on noin kolmasosa nimellistehosta. Siis yhteenlaskettu nimellisteho on noin $3 \cdot 2{,}30\,\text{GW} \approx 6{,}9\,\text{GW}$. Se vastaa noin $1400$:aa voimalaa, joiden nimellisteho on $5\,\text{MW}$. Se on tuhansien voimaloiden suuruusluokkaa.

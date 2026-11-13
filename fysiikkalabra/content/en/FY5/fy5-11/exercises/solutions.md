@@ -250,3 +250,25 @@ D: $6.0\,\text{cm} : 24\,\text{cm} = 0.25$
 By the ratio from the smallest to the greatest, that is, by diffraction from the weakest to the strongest, the order is D, A, C, B. In setup D the slit is four wavelengths wide, so the wave bends only at the edges. In setups C and B the slit is narrower than the wavelength, and the wave spreads widely behind the slit, most strongly in setup B.
 
 The width of the slit alone does not decide the order: the narrowest slit is in C, but the wave in B spreads more, because its wavelength is greater. The wavelength alone does not decide it either: the wavelength of D is the greatest, but its slit is so wide that it bends the least.
+
+## fy5-11-L2-09
+**Given:** the grid on the bottom of the ripple tank (figure), one square is $2.0\,\text{cm}$, frequency of the wave generator $f = 7.0\,\text{Hz}$
+**Find:** the speed of the wave $v$ in $\text{cm/s}$
+**Principle:** The wavefronts of a plane wave are crests, so the distance between two successive fronts is the wavelength $\lambda$. In the tank the wave travels at a steady speed, and by the basic wave equation $v = f\lambda$.
+**Reading the graph:** To the left of the wall the two wavefronts are on vertical lines $1$ and $5$, so they are $5 - 1 = 4$ squares apart. The wavelength is $4 \cdot 2.0\,\text{cm} = 8.0\,\text{cm}$. The wall and the gap are not needed.
+**Formula:** $v = f\lambda$
+**Conversions:** Squares to centimetres: $4\ \text{squares} = 4 \cdot 2.0\,\text{cm} = 8.0\,\text{cm}$. Nothing else is needed, because the answer is asked in $\text{cm/s}$.
+**Substitution:** $v = 7.0\,\text{Hz} \cdot 8.0\,\text{cm} = 7.0\,\text{s}^{-1} \cdot 8.0\,\text{cm} = 56\,\text{cm/s}$
+**Answer:** $56\,\text{cm/s}$, two significant figures like the frequency $7.0\,\text{Hz}$ and the wavelength $8.0\,\text{cm}$.
+**Reasonableness:** The period is $T = \tfrac{1}{7.0\,\text{Hz}} = 0.143\,\text{s}$, and in that time the wave travels $56\,\text{cm/s} \cdot 0.143\,\text{s} = 8.0\,\text{cm}$, one wavelength. A speed of $0.56\,\text{m/s}$ is normal for waves in a ripple tank.
+
+## fy5-11-L2-10
+**Given:** the grid on the bottom of the ripple tank (figure), one square is $2.0\,\text{cm}$; the frequency doubles, $f' = 2f$, and the speed $v$ stays the same
+**Find:** the ratio of the width of the gap to the new wavelength $\tfrac{b}{\lambda'}$ (no unit)
+**Principle:** The speed of a wave depends on the medium, here the depth of the water, not on the frequency. When $v$ stays the same and $v = f\lambda$, doubling the frequency halves the wavelength. The width of the gap does not change.
+**Reading the graph:** To the left of the wall the wavefronts are on vertical lines $1$ and $5$, so $\lambda = 4 \cdot 2.0\,\text{cm} = 8.0\,\text{cm}$. The edges of the gap are on horizontal lines $1$ and $7$, so the gap is $7 - 1 = 6$ squares wide: $b = 6 \cdot 2.0\,\text{cm} = 12\,\text{cm}$.
+**Formula:** $v = f\lambda = 2f\lambda'$, so $\lambda' = \dfrac{\lambda}{2}$ and $\dfrac{b}{\lambda'} = \dfrac{2b}{\lambda}$
+**Conversions:** Squares to centimetres: $4 \cdot 2.0\,\text{cm} = 8.0\,\text{cm}$ and $6 \cdot 2.0\,\text{cm} = 12\,\text{cm}$. In the ratio the units of length cancel.
+**Substitution:** $\lambda' = \dfrac{8.0\,\text{cm}}{2} = 4.0\,\text{cm}$ and $\dfrac{b}{\lambda'} = \dfrac{12\,\text{cm}}{4.0\,\text{cm}} = 3.0$
+**Answer:** $3.0$ (no unit), two significant figures like the wavelength $8.0\,\text{cm}$.
+**Reasonableness:** For the waves in the figure the ratio was $\tfrac{12\,\text{cm}}{8.0\,\text{cm}} = 1.5$, and doubling the frequency doubles it, $2 \cdot 1.5 = 3.0$. The gap is now clearly wider than the wavelength, so diffraction weakens and the wave travels more straight ahead.

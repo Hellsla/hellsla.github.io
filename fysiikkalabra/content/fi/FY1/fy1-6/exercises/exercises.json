@@ -113,6 +113,18 @@
       "answer": 35.316,
       "unit": "km/h",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-6-L1-09",
+      "level": 1,
+      "text": "Astronautti pudottaa vasaran levosta Kuun pinnalla. Ilmanvastusta ei ole. Hae putoamiskiihtyvyys Kuun pinnalla MAFY-taulukosta (mafytaulukot.fi). Mikä on vasaran nopeus $3{,}0\\,\\text{s}$ pudotuksen alkamisesta?",
+      "lookup": "MAFY",
+      "answer": 4.866,
+      "unit": "m/s",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon kohdasta *Aurinkokunta*."
+      ]
     }
   ],
   "level2": [

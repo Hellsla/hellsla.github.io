@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 563ece0a62c60f6f
-Round: 1 (delta)
+CONTENT-HASH: 87d1286e80d3816b
+SCOPE: delta added-exercise from 563ece0a62c60f6f base 611fb7d5c174
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] data tables — captions and the right-hand columns are cut at 390 px and scroll sideways (design rule, NOTES §1); header cells stay left of right-aligned numbers.
+- [Minor] L1-09 task: inline $P = \Delta E/\Delta t$ uses a slash; \tfrac would match the house style.
+- [Minor] L1-10 solution: the Conversions block is split into three boxes joined by "with" and "and"; one chain would read more smoothly.
 
 ## Checked
-- Render at 390 px (own Playwright, preview/en/fy2-3.html, all levels open, solutions open, choices answered): page scrollWidth 390, no overflow; the only chains/KaTeX wider than their box are the data-table headers inside the scrolling .exp-table (by design). New L2-08 (choice task, model answer P1, P2, P2:P1 chain) opened as a card: all chains fit, no clipping.
-- L3-04, L3-05 cards (task text now split in paragraphs, a stage per paragraph) opened at 390 px (L3-05 en; L3-04 only measured).
-- Text only: solutions.md and exercises.json diffs (L2-08 choices and feedback, answers.py comment), wording, glossary use, number and unit LaTeX, decimal comma/point.
-- From earlier captures (1280 px, already current for this hash): en fy2-3 open-exercises-L2-1280-9 (L2-08) opened. Contact sheets and the other 1280 captures not opened; fi-easy fy2-5 had no captures (its preview page was empty), so all of its judgement is from my own render.
+- Opened fy2-3-open-exercises-1280-8, -9 and -10.png (content/en/FY2/fy2-3/review/shots/): L1-09 reworded task and solution (metric horsepower, mechanical energy); L1-10 reworded ratio task with the A/B graph, answer field without unit, and the new solution (A and B powers, ratio 3.0 as stacked fractions).
+- Graph axes, ticks, A and B labels legible; solution rows aligned, no red KaTeX, nothing clipped.
+- Delta round 2 at 1280 px only; 390 px captures not opened. Hash unchanged at the end.
 
 ## Scores
-illustrations 4 · typography 4 · language 4 · accessibility 4
+illustrations 4 · typography 5 · English 4 · accessibility 4

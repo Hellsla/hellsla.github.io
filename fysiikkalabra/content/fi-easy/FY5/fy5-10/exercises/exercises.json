@@ -148,6 +148,21 @@
           "feedback": "Epätosi: $(t, y)$-kuvaajan vaaka-akselilla on aika, joten huippujen väli on jaksonaika $T \\approx 0{,}67\\,\\text{s}$. Aallonpituus $1{,}2\\,\\text{m}$ luetaan valokuvasta eli $(x, y)$-kuvaajasta."
         }
       ]
+    },
+    {
+      "id": "fy5-10-L1-10",
+      "level": 1,
+      "kind": [
+        "data"
+      ],
+      "text": "Rautatankoon lyödään vasaralla. Tankoon syntyy pitkittäinen ääniaalto, jonka taajuus on $1{,}00\\,\\text{kHz}$. Pitkittäisessä aallossa hiukkaset värähtelevät aallon etenemissuunnassa. Tangon lämpötila on $20\\,{}^\\circ\\text{C}$. Hae äänen nopeus raudassa MAFY-taulukosta (mafytaulukot.fi). Kuinka pitkä on aallonpituus tangossa? Aallonpituus on kahden peräkkäisen tihentymän etäisyys.",
+      "lookup": "MAFY",
+      "answer": 5.12,
+      "unit": "m",
+      "tolerance": 0.04,
+      "hints": [
+        "Äänen nopeus on MAFY-taulukon taulukossa *Äänen nopeuksia eri väliaineissa: Kiinteät aineet*."
+      ]
     }
   ],
   "level2": [
@@ -278,6 +293,18 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy5-10-L2-08",
+      "level": 2,
+      "kind": [
+        "graph"
+      ],
+      "text": "Kuvassa on kireän narun valokuva yhdellä hetkellä. Narun päätä heilutetaan tasaisesti taajuudella $2{,}4\\,\\text{Hz}$. Lue tarvittava arvo kuvasta. Kuinka suuri on aallon nopeus narussa?",
+      "figure": "fy5-10/valokuva",
+      "answer": 3.6,
+      "unit": "m/s",
+      "tolerance": 0.02
     }
   ],
   "level3": [

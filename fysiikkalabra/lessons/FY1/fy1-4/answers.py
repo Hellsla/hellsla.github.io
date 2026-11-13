@@ -48,4 +48,5 @@ a["fy1-4-L3-04"] = round(fit(sx[:5])[0], 3)               # linear part 100…50
 k_hi, k_lo = (3.50 - 0.75) / (6.0 - 1.0), (2.60 - 1.40) / (5.0 - 2.0)   # steepest 0,55 m/s, shallowest 0,40 m/s (data table of L3-05; pupil wrongly used the whole difference 0,15 -> 32 %)
 a["fy1-4-L3-05"] = ((k_hi - k_lo) / 2) / ((k_hi + k_lo) / 2) * 100   # 0,075 / 0,475 = 15,8 % -> 16 %; the reasonableness check cites the least-squares slope of all six points, 0,51 m/s (inside 0,40…0,55)
 # Inquiry tasks (not in exercises.json): graph reading k = (50 − 20) km / (3,0 − 1,0) h = 15 km/h; walk tarkistus-2 k = 3,0 km/h, b = 4,0 km, t = 7,0 h (swapped k and b: (25 − 3,0)/4,0 = 5,5 h); kettle example k = (60,0 − 20,0)/5,0 = 8,0 °C/min, t(40 °C) = (40 − 20)/8,0 = 2,5 min
+a["fy1-4-L1-09"] = 2.70 * 45                            # MAFY table (Tiheyksiä): aluminium 2,70·10³ kg/m³ = 2,70 g/cm³; m = kV = 2,70 g/cm³ · 45 cm³ = 121,5 g
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -279,3 +279,35 @@ $a = \dfrac{\Sigma F}{m}$
 $a = \dfrac{36\,\text{N}}{18\,\text{kg}}$, that is $a = 2.0\,\text{m/s}^2$
 
 The acceleration is $2.0\,\text{m/s}^2$ in the direction of the pushing force, two significant figures like the forces and the mass. Check with units: $\text{N} : \text{kg} = \text{kg}\cdot\text{m/s}^2 : \text{kg}$, that is $\text{m/s}^2$, but the division $\text{N} : \text{N}$ on line 4 does not give the unit of acceleration at all. The correct answer is line 4.
+
+## fy4-4-L1-09
+**Given:** mass $m = 15\,000\,\text{kg}$, acceleration $a = 0.50\,\text{m/s}^2$ upward; from the table (MAFY table, Solar System, Moon) free-fall acceleration $g = 1.622\,\text{m/s}^2$
+**Find:** the magnitude of the thrust $F$ in $\text{kN}$
+**Principle:** The force diagram has two forces: the thrust $\overline{F}$ up and the weight $\overline{G}$ down. By Newton's second law the net force is $\Sigma F = ma$. Upward is chosen as positive because the acceleration points up.
+**Formula:** $\Sigma F = ma$, so $F - G = ma$. The weight is $G = mg$, which gives $F = m(g + a)$
+**Conversions:** The quantities are in SI units. The result comes out in newtons, and $1\,\text{kN} = 1000\,\text{N}$, so $31\,830\,\text{N} = 31.83\,\text{kN}$.
+**Substitution:** $F = 15\,000\,\text{kg} \cdot (1.622\,\text{m/s}^2 + 0.50\,\text{m/s}^2) = 31\,830\,\text{N} = 31.83\,\text{kN}$
+**Answer:** $32\,\text{kN}$, two significant figures like the acceleration $0.50\,\text{m/s}^2$. The table value $g = 1.622\,\text{m/s}^2$ is more precise than the acceleration; different tables give slightly different values, and the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** When hovering ($a = 0$) the thrust would equal the spacecraft's weight on the Moon, $15\,000\,\text{kg} \cdot 1.622\,\text{m/s}^2 \approx 24\,\text{kN}$. Slowing down needs $ma = 7.5\,\text{kN}$ more, $31.8\,\text{kN}$ in all. The thrust is greater than the weight because the net force points up.
+
+## fy4-4-L1-10
+**Given:** from the graph a point on cart A's line with net force $\Sigma F = 3.0\,\text{N}$ and acceleration $a = 6.0\,\text{m/s}^2$
+**Find:** the mass of cart A, $m$, in $\text{kg}$
+**Principle:** By Newton's second law $\Sigma F = ma$. Cart A's line passes through the origin, so the acceleration is directly proportional to the net force and the mass is the same at every point of the line.
+**Reading the graph:** Cart A's line is the steeper one (dark). Its rightmost data point is at a grid crossing: $\Sigma F = 3.0\,\text{N}$ on the horizontal axis and $a = 6.0\,\text{m/s}^2$ on the vertical axis. A point far from the origin gives the most accurate value.
+**Formula:** $\Sigma F = ma$, so $m = \dfrac{\Sigma F}{a}$
+**Conversions:** The force is in newtons and the acceleration in $\text{m/s}^2$, and $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$, so the result comes out in kilograms. No conversions are needed.
+**Substitution:** $m = \dfrac{3.0\,\text{N}}{6.0\,\text{m/s}^2} = 0.50\,\text{kg}$
+**Answer:** $0.50\,\text{kg}$, two significant figures like the values read from the graph.
+**Reasonableness:** The second point $(2.0\,\text{N};\, 4.0\,\text{m/s}^2)$ gives the mass $2.0\,\text{N} : 4.0\,\text{m/s}^2 = 0.50\,\text{kg}$, the same. Cart A's line is steeper than B's, so its mass is smaller: a smaller mass accelerates more with the same force.
+
+## fy4-4-L2-09
+**Given:** net force $\Sigma F = 2.4\,\text{N}$; from the graph a point on cart B's line $\Sigma F_1 = 3.0\,\text{N}$, $a_1 = 3.0\,\text{m/s}^2$
+**Find:** the acceleration of cart B, $a$, in $\text{m/s}^2$
+**Principle:** By Newton's second law $\Sigma F = ma$. The mass is a property of the cart and the same for every force, so it is found from a point of the graph and then used to find the acceleration for the new force.
+**Reading the graph:** Cart B's line is the gentler one (copper-coloured). Its rightmost data point is at a grid crossing: $\Sigma F_1 = 3.0\,\text{N}$ and $a_1 = 3.0\,\text{m/s}^2$. The force $2.4\,\text{N}$ lies between data points, so the acceleration is calculated through the mass.
+**Formula:** Mass $m = \dfrac{\Sigma F_1}{a_1}$, and the acceleration for the new force $a = \dfrac{\Sigma F}{m}$
+**Conversions:** The forces are in newtons and the accelerations in $\text{m/s}^2$, so no conversions are needed.
+**Substitution:** $m = \dfrac{3.0\,\text{N}}{3.0\,\text{m/s}^2} = 1.0\,\text{kg}$ and $a = \dfrac{2.4\,\text{N}}{1.0\,\text{kg}} = 2.4\,\text{m/s}^2$
+**Answer:** $2.4\,\text{m/s}^2$ in the direction of the force, two significant figures like the force $2.4\,\text{N}$.
+**Reasonableness:** The force $2.4\,\text{N}$ is smaller than $3.0\,\text{N}$, so the acceleration must be smaller than $3.0\,\text{m/s}^2$. In the graph B's line at $\Sigma F = 2.4\,\text{N}$ lies between $a = 2\,\text{m/s}^2$ and $a = 3\,\text{m/s}^2$, close to $2.4\,\text{m/s}^2$.

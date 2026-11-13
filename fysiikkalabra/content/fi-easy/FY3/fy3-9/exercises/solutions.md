@@ -269,3 +269,13 @@ $p_3 = \dfrac{100\,\text{kPa} \cdot 40\,\text{ml}}{10\,\text{ml}}$, eli $p_3 = 4
 Kuvaaja B kulkee pisteiden $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\text{ml};\ 200\,\text{kPa})$ ja $(10\,\text{ml};\ 400\,\text{kPa})$ kautta. Kuvaaja A on laskeva suora. Sen päätepisteet ovat oikein, mutta tilavuudella $20\,\text{ml}$ se antaa $300\,\text{kPa}$. Suorassa paine kasvaisi saman verran jokaista millilitraa kohti. Kuvaajassa C paine pysyy samana. Siinä vakiolämpötila sekoitetaan vakiopaineeseen. Kuvaajassa D paine pienenee puristettaessa, ikään kuin paine olisi suoraan verrannollinen tilavuuteen.
 
 **Kuvaajan lukeminen:** Jokaisesta kuvaajasta luetaan paine kolmella tilavuudella: $40\,\text{ml}$, $20\,\text{ml}$ ja $10\,\text{ml}$. Kuvaajat A ja B alkavat ja päättyvät samoihin pisteisiin. Ne erottaa vasta paine tilavuudella $20\,\text{ml}$: kuvaajassa A se on $300\,\text{kPa}$ ja kuvaajassa B $200\,\text{kPa}$.
+
+## fy3-9-L1-09
+**Annettu:** $V_1 = 2{,}0\,\textsf{l}$ ja $p_1 = 101\,\text{kPa}$. Lämpötila on vakio. Ilmaa ei pääse pois. Taulukosta (MAFY-taulukko, ilmanpaine, tiheys ja lämpötila eri korkeuksilla, korkeus $3000\,\text{m}$) $p_2 = 70\,100\,\text{Pa}$.
+**Kysytty:** ilman tilavuus $V_2$ litroina
+**Periaate:** Ilman määrä ja lämpötila pysyvät samoina. Silloin Boylen laki pätee: paineen ja tilavuuden tulo $pV$ pysyy vakiona. Todellisuudessa lämpötila laskee ylös mentäessä. Tehtävässä se oletetaan vakioksi.
+**Kaava:** $p_1 V_1 = p_2 V_2$, josta $V_2 = \dfrac{p_1 V_1}{p_2}$
+**Muunnokset:** $70\,100\,\text{Pa} = 70{,}1\,\text{kPa}$, koska $1\,\text{kPa} = 1000\,\text{Pa}$. Tilavuus pysyy litroina, koska paineyksiköt supistuvat.
+**Sijoitus:** $V_2 = \dfrac{101\,\text{kPa} \cdot 2{,}0\,\textsf{l}}{70{,}1\,\text{kPa}} = 2{,}882\,\textsf{l}$
+**Vastaus:** $V_2 \approx 2{,}9\,\textsf{l}$, kaksi merkitsevää numeroa kuten tilavuudessa $2{,}0\,\textsf{l}$. Paine $70\,100\,\text{Pa}$ on MAFY-taulukosta (ilmanpaine, tiheys ja lämpötila eri korkeuksilla). Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Paine pienenee. Siksi tilavuuden täytyy kasvaa. Painesuhde on $101 : 70{,}1 \approx 1{,}44$, ja $2{,}0\,\textsf{l} \cdot 1{,}44 \approx 2{,}9\,\textsf{l}$. Tulo $pV$ on lopussa $70{,}1\,\text{kPa} \cdot 2{,}882\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$. Se on sama kuin alussa: $101\,\text{kPa} \cdot 2{,}0\,\textsf{l} = 202\,\text{kPa}\cdot\textsf{l}$.

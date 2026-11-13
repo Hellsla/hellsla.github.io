@@ -268,3 +268,35 @@ F_\text{max} &= \frac{80{,}0\,\text{kg} \cdot 4{,}5\,\text{m/s}}{0{,}020\,\text{
 d) Liikemäärän muutos on $m\,\Delta v = 80{,}0\,\text{kg} \cdot 15{,}0\,\text{m/s} = 1200\,\text{kg}\cdot\text{m/s}$. Se on sama riippumatta siitä, suojaako nukkea vyö ja turvatyyny. Jos nukke pysähtyisi ajassa $0{,}010\,\text{s}$, keskimääräinen voima olisi $F_\text{ka} = \dfrac{1200\,\text{kg}\cdot\text{m/s}}{0{,}010\,\text{s}} = 120\,000\,\text{N}$ eli $120\,\text{kN}$.
 **Vastaus:** c) Suurin voima on $18{,}0\,\text{kN}$. Vastauksessa on kolme merkitsevää numeroa, kuten nopeuden muutoksessa $4{,}5\,\text{m/s}$ ja massassa $80{,}0\,\text{kg}$. Lisäksi a) pysähtymismatka on $0{,}79\,\text{m}$ ja b) keskimääräinen voima on $10\,\text{kN}$. d) Vyö ja turvatyyny pidentävät pysähtymisajan noin arvoon $0{,}12\,\text{s}$. Jäykkään pintaan osuessa aika olisi noin $0{,}010\,\text{s}$ ja keskimääräinen voima $120\,\text{kN}$, eli $12$-kertainen. Liikemäärän muutos ja impulssi ovat samat, joten pidempi aika tarkoittaa pienempää voimaa, $F_\text{ka} = \tfrac{m\,\Delta v}{\Delta t}$. Vyö pitää nuken auton mukana ja antaa sen hidastua yhdessä auton kanssa. Turvatyyny jakaa voiman suurelle alalle. Ne toimivat yhdessä, eivät toistensa sijasta. Voima vaihtelee törmäyksen aikana, joten suurin voima $18{,}0\,\text{kN}$ on suurempi kuin keskimääräinen.
 **Järkevyys:** Nuken paino on $80{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 785\,\text{N}$. Suurin voima on noin $23$-kertainen ja keskimääräinen voima noin $13$-kertainen painoon verrattuna. Suurin voima on $1{,}8$-kertainen keskimääräiseen nähden. Matkan voi tarkistaa keskinopeudella: koko ajan keskinopeus on noin $0{,}79\,\text{m} : 0{,}120\,\text{s} = 6{,}6\,\text{m/s}$. Se on alle puolet alkunopeudesta $15{,}0\,\text{m/s}$, koska nopeus on pienentynyt keskivaiheilla nopeammin kuin tasaisessa hidastumisessa.
+
+## fy4-11-L1-09
+**Annettu:** $v_0 = 80\,\text{km/h}$, lopussa $v = 0$. Liukukitkakerroin kumin ja asfaltin välillä on MAFY-taulukosta (taulukko *Kitkakertoimia*, kumi–asfaltti, liukukitka). Taulukossa on väli $0{,}5$–$0{,}8$. Käytetään suurinta arvoa $\mu = 0{,}8$. Lisäksi $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** jarrutusmatka $s$ yksikössä $\text{m}$
+**Periaate:** Tie on vaakasuora, joten tukivoima on yhtä suuri kuin paino, $N = mg$. Liukuvaan renkaaseen vaikuttava kitka $F_\mu = \mu N$ on ainoa vaakasuora voima. Newtonin toisen lain mukaan $\mu mg = ma$. Siksi hidastuvuus on $a = \mu g$, ja massa supistuu pois. Hidastuvuus on vakio, joten pysähtymismatka saadaan kaavasta $v_0^2 = 2as$.
+**Kaava:** $a = \mu g$ ja $s = \dfrac{v_0^2}{2a} = \dfrac{v_0^2}{2\mu g}$
+**Muunnokset:** $v_0 = 80\,\text{km/h} = \dfrac{80}{3{,}6}\,\text{m/s} = 22{,}22\,\text{m/s}$
+**Sijoitus:** $a = 0{,}8 \cdot 9{,}81\,\text{m/s}^2 = 7{,}85\,\text{m/s}^2$ ja $s = \dfrac{(22{,}22\,\text{m/s})^2}{2 \cdot 7{,}85\,\text{m/s}^2} = 31{,}5\,\text{m}$
+**Vastaus:** $31\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, kuten nopeudessa $80\,\text{km/h}$ ja kitkakertoimessa $0{,}8$. MAFY-taulukossa kitkakerroin on väli $0{,}5$–$0{,}8$ (taulukko *Kitkakertoimia*). Välin toisessa päässä $\mu = 0{,}5$ jarrutusmatka olisi $50\,\text{m}$. Tämä tulos on siis välin lyhyempi ääripää.
+**Järkevyys:** Jarrutusmatka $31\,\text{m}$ on samaa suuruusluokkaa kuin kuivan tien tyypillinen jarrutusmatka nopeudesta $80\,\text{km/h}$. Hidastuvuus $7{,}85\,\text{m/s}^2$ on pienempi kuin ABS-jarrutuksessa kuivalla asfaltilla ($\mu \approx 0{,}9$). Näin pitää olla, kun pyörät ovat lukossa ja liukuvat.
+
+## fy4-11-L2-09
+**Annettu:** kuvaajasta nopeus ajan funktiona: $v_0 = 20\,\text{m/s}$ hetkeen $t_\text{r} = 1{,}0\,\text{s}$ asti. Sitten auto hidastaa tasaisesti nollaan hetkellä $3{,}5\,\text{s}$
+**Kysytty:** kokonaismatka $s$ yksikössä $\text{m}$
+**Periaate:** Matka on $(t, v)$-kuvaajan ja aika-akselin välissä oleva pinta-ala. Nopeus on ensin vakio (reaktioaika). Sitten nopeus pienenee suoraviivaisesti (jarrutus). Siksi alue jakautuu suorakulmioon ja kolmioon.
+**Kuvaajan lukeminen:** Suorakulmion korkeus on $20\,\text{m/s}$ ja leveys $1{,}0\,\text{s}$. Kolmion korkeus on $20\,\text{m/s}$. Kolmion kanta on $3{,}5\,\text{s} - 1{,}0\,\text{s} = 2{,}5\,\text{s}$.
+**Kaava:** $s = s_\text{r} + s_\text{j} = v_0 t_\text{r} + \tfrac{1}{2} v_0 t_\text{j}$
+**Muunnokset:** Muunnoksia ei tarvita, koska suureet ovat SI-yksiköissä.
+**Sijoitus:** $s = 20\,\text{m/s} \cdot 1{,}0\,\text{s} + \tfrac{1}{2} \cdot 20\,\text{m/s} \cdot 2{,}5\,\text{s} = 20\,\text{m} + 25\,\text{m} = 45\,\text{m}$
+**Vastaus:** $45\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa, koska kuvaajan arvot luetaan niin tarkasti.
+**Järkevyys:** Nopeus $20\,\text{m/s}$ on $72\,\text{km/h}$, ja pysähtymismatka $45\,\text{m}$ on tyypillinen. Hidastuvuus on kuvaajan kulmakertoimen suuruus $\dfrac{20\,\text{m/s}}{2{,}5\,\text{s}} = 8{,}0\,\text{m/s}^2$. Se sopii kuivalle tielle. Matka on pienempi kuin $70\,\text{m}$, jonka auto kulkisi, jos nopeus olisi koko ajan $3{,}5\,\text{s}$ ajan $20\,\text{m/s}$. Näin pitää olla.
+
+## fy4-11-L3-06
+**Annettu:** nuken massa $m = 70\,\text{kg}$. Kuvaajasta luetaan kummassakin kokeessa alkunopeus $v_0 = 15\,\text{m/s}$. Kokeessa A nopeus on nolla hetkellä $\Delta t_\text{A} = 0{,}060\,\text{s}$. Kokeessa B nopeus on nolla hetkellä $\Delta t_\text{B} = 0{,}150\,\text{s}$
+**Kysytty:** voimien keskiarvojen erotus $F_\text{A} - F_\text{B}$ yksikössä $\text{kN}$
+**Periaate:** Impulssiperiaatteen mukaan nukkeen kohdistuvan voiman impulssi on yhtä suuri kuin liikemäärän muutos, $F_\text{ka}\,\Delta t = m\,\Delta v$. Nopeus pienenee kummassakin kokeessa suoraviivaisesti. Siksi voima on vakio, ja keskimääräinen voima on sama kuin hetkellinen voima.
+**Kuvaajan lukeminen:** Kummassakin kokeessa nopeus muuttuu arvosta $15\,\text{m/s}$ nollaan, joten $\Delta v = 15\,\text{m/s}$. Pysähtymisajat luetaan kohdista, joissa suora osuu aika-akseliin: $0{,}060\,\text{s}$ ja $0{,}150\,\text{s}$.
+**Kaava:** $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$, joten $F_\text{A} - F_\text{B} = m\,\Delta v \left(\dfrac{1}{\Delta t_\text{A}} - \dfrac{1}{\Delta t_\text{B}}\right)$
+**Muunnokset:** Muunnoksia ei tarvita, koska suureet ovat SI-yksiköissä. Lopuksi muunnetaan $1\,\text{kN} = 1000\,\text{N}$.
+**Sijoitus:** $F_\text{A} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0{,}060\,\text{s}} = 17\,500\,\text{N}$ ja $F_\text{B} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0{,}150\,\text{s}} = 7000\,\text{N}$, joten $F_\text{A} - F_\text{B} = 10\,500\,\text{N} = 10{,}5\,\text{kN}$
+**Vastaus:** $10{,}5\,\text{kN}$. Vastauksessa on kolme merkitsevää numeroa, koska kuvaajasta luetut ajat $0{,}060\,\text{s}$ ja $0{,}150\,\text{s}$ on annettu kolmella numerolla.
+**Järkevyys:** Kokeessa A voima $17{,}5\,\text{kN}$ on noin $25$-kertainen nuken painoon $70\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 690\,\text{N}$ verrattuna. Kokeessa B voima $7{,}0\,\text{kN}$ on noin $10$-kertainen. Voimien suhde $17{,}5/7{,}0 = 2{,}5$ on sama kuin aikojen käänteinen suhde $0{,}150/0{,}060 = 2{,}5$. Näin pitää olla: liikemäärän muutos on sama, aika on pidempi ja voima on pienempi.

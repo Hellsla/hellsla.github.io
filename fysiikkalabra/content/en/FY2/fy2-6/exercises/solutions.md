@@ -232,3 +232,24 @@ b) Wind farm: $E_\text{tot} = 289\,080\,\text{MWh} \cdot 25 = 7\,227\,000\,\text
 c) Wind farm: $289\,080\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 3.469 \cdot 10^{9}\,\text{g} = 3469\,\text{t}$. Nuclear power plant: $9\,460\,800\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 1.135 \cdot 10^{11}\,\text{g} = 113\,500\,\text{t}$.
 **Answer:** The construction cost of the wind farm is $17\,\text{euros/MWh}$ (calculated value $16.6$; two significant figures like the share $33\,\%$) and that of the nuclear power plant $11\,\text{euros/MWh}$. The annual energies are $2.9 \cdot 10^{5}\,\text{MWh}$ and $9.5 \cdot 10^{6}\,\text{MWh}$, and the life-cycle emissions that belong to one year's production are about $3500\,\text{t}$ and $114\,000\,\text{t}$. The emissions per energy are the same ($12\,\text{g/kWh}$), so the large annual emissions of the nuclear power plant are due only to its large production. In this data set the construction cost per energy is smaller for nuclear power, because it produces at a greater share of its rated power and for longer. Nuclear power is steady base load power, but it cannot be regulated quickly, and it involves nuclear waste. Wind power is weather-dependent, so it needs regulating power or storage alongside it. A justified recommendation is a combination: on the basis of emissions either is suitable, and on the basis of cost nuclear power is cheaper, but weather-dependent wind power suits complementing it when there is enough regulating power. The recommendation, however, rests only on this example data set and on the construction cost alone.
 **Reasonableness:** The nuclear power plant produces $9\,460\,800 : 289\,080 \approx 33$ times as much per year as the wind farm, and the emissions are $113\,500 : 3469 \approx 33$ times as large, which matches the ratio of production, because the emission factor is the same $12\,\text{g/kWh}$ for both. At full power for the whole year the wind farm would produce $100\,\text{MW} \cdot 8760\,\text{h} = 876\,000\,\text{MWh}$, and $289\,080 : 876\,000 = 0.33$.
+
+## fy2-6-L1-10
+**Given:** power $P = 2.0\,\text{MW}$, time $t = 1\,\text{h}$; heat of combustion of milled peat from the MAFY table (Polttoaineiden LHV-lämpöarvoja, jyrsinturve) $H = 10\,\tfrac{\text{MJ}}{\text{kg}}$
+**Find:** the mass of peat burnt, $m$, in kilograms
+**Principle:** The energy released by burning in an hour is $E = Pt$, where $P$ is the rate of release. On the other hand the energy released in burning is $E = Hm$, so the mass is found by solving for $m$.
+**Formula:** $E = Pt$ and $E = Hm \Rightarrow m = \dfrac{Pt}{H}$
+**Conversions:** $2.0\,\text{MW} = 2.0\,\tfrac{\text{MJ}}{\text{s}}$ and $1\,\text{h} = 3600\,\text{s}$, so $E = 2.0\,\tfrac{\text{MJ}}{\text{s}} \cdot 3600\,\text{s} = 7200\,\text{MJ}$.
+**Substitution:** $m = \dfrac{7200\,\text{MJ}}{10\,\tfrac{\text{MJ}}{\text{kg}}} = 720\,\text{kg}$
+**Answer:** $m \approx 720\,\text{kg}$, two significant figures like the power $2.0\,\text{MW}$. The heat of combustion $10\,\tfrac{\text{MJ}}{\text{kg}}$ is from the MAFY table (Polttoaineiden LHV-lämpöarvoja); different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** The heat of combustion of peat is small, so a lot burns: about $0.7$ tonnes per hour, or about $12\,\text{kg}$ per minute. This fits a small $2\,\text{MW}$ plant.
+
+## fy2-6-L2-08
+**Given:** the annual production of wind power $E$ is read from the figure; time $t = 8784\,\text{h}$
+**Find:** the average power $P$ in gigawatts
+**Principle:** Average power is the energy produced divided by the time, so we use the formula for the energy produced, $E = Pt$, solved for the power.
+**Reading the graph:** The number $20.2$ is printed at the end of the wind power bar. The unit on the horizontal axis is $\text{TWh}$, so $E = 20.2\,\text{TWh}$.
+**Formula:** $E = Pt \Rightarrow P = \dfrac{E}{t}$
+**Conversions:** $20.2\,\text{TWh} = 20\,200\,\text{GWh}$, because $1\,\text{TWh} = 1000\,\text{GWh}$.
+**Substitution:** $P = \dfrac{20\,200\,\text{GWh}}{8784\,\text{h}} = 2.30\,\text{GW}$
+**Answer:** $P \approx 2.30\,\text{GW}$, three significant figures like the production read, $20.2\,\text{TWh}$.
+**Reasonableness:** Check: $2.30\,\text{GW} \cdot 8784\,\text{h} \approx 20\,200\,\text{GWh}$. By the chapter's model a wind turbine's average power is about a third of its rated power, so the combined rated power is about $3 \cdot 2.30\,\text{GW} \approx 6.9\,\text{GW}$. That equals about $1400$ turbines of rated power $5\,\text{MW}$, a number of the order of thousands.

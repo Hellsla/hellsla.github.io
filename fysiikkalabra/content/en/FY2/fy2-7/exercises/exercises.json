@@ -88,6 +88,18 @@
       "answer": 72,
       "unit": "kW",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy2-7-L1-09",
+      "level": 1,
+      "text": "A day, $500\\,\\text{kWh}$ of electrical energy is fed into the grid, and $4.0\\,\\%$ of the energy fed in is lost in the grid. Convert the loss to joules: look up the conversion between the kilowatt-hour and the joule in the MAFY table (mafytaulukot.fi). How much energy is lost? Give the answer in megajoules.",
+      "lookup": "MAFY",
+      "answer": 72,
+      "unit": "MJ",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Yksikkömuunnoksia*."
+      ]
     }
   ],
   "level2": [
@@ -281,6 +293,15 @@
           "feedback": "Energy does travel very fast in the electricity grid, but speed does not explain the size of the loss. The loss comes from heating, and its amount is obtained from the share and the energy sent out."
         }
       ]
+    },
+    {
+      "id": "fy2-7-L2-09",
+      "level": 2,
+      "text": "The figure shows the energy flows of an electricity grid and a district heating network. A week, $250\\,\\text{MWh}$ of energy is fed into each of the two. Read from the figure what share of the energy fed in is lost in each network. How much more energy is lost in the district heating network than in the electricity grid in a week? Give the answer in megawatt-hours.",
+      "figure": "fy2-7/sankey",
+      "answer": 12.5,
+      "unit": "MWh",
+      "tolerance": 0.03
     }
   ],
   "level3": [

@@ -87,6 +87,18 @@
       "answer": 180.0,
       "unit": "kJ",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L1-09",
+      "level": 1,
+      "text": "On a frosty day the air temperature is $0\\,{}^\\circ\\text{C}$. The rotor diameter of a wind turbine is $82\\,\\text{m}$, the wind speed is $9.0\\,\\text{m/s}$ and the efficiency of the turbine is $0.45$. Look up the density of air at $0\\,{}^\\circ\\text{C}$ in the MAFY table (mafytaulukot.fi). What is the electric power of the turbine?",
+      "lookup": "MAFY",
+      "answer": 1117.4223,
+      "unit": "kW",
+      "tolerance": 0.04,
+      "hints": [
+        "The density is in the MAFY table *Tiheyksiä: Kaasujen tiheyksiä* (Densities: densities of gases)."
+      ]
     }
   ],
   "level2": [
@@ -256,6 +268,24 @@
           "feedback": "The result comes from substituting the speed as the number $36$ without converting it to the unit $\\text{m/s}$. Since $36\\,\\text{km/h} = 10\\,\\text{m/s}$ and $36^3 : 10^3 \\approx 47$, the power becomes about $47$ times too large."
         }
       ]
+    },
+    {
+      "id": "fy4-15-L2-09",
+      "level": 2,
+      "text": "The graph shows the manufacturer's power curve of a wind turbine as points. The wind blows steadily at $7\\,\\text{m/s}$ for five days, that is $120\\,\\text{h}$. Read the electric power of the turbine at this speed from the graph. How much electrical energy does the turbine produce in this time, in megawatt-hours?",
+      "figure": "fy4-15/tehokayra-pisteet",
+      "answer": 61.32,
+      "unit": "MWh",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy4-15-L2-10",
+      "level": 2,
+      "text": "The graph shows the manufacturer's power curve of a wind turbine as points. The wind speed rises from $9\\,\\text{m/s}$ to $12\\,\\text{m/s}$. Read the electric power at both speeds from the graph and calculate how many times larger the power becomes. Compare the result with the value that power proportional to the cube of the speed would give, and explain the difference.",
+      "figure": "fy4-15/tehokayra-pisteet",
+      "answer": 1.6096,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [

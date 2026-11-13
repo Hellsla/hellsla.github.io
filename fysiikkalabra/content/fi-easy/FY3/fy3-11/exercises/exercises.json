@@ -113,6 +113,18 @@
       "answer": 3.25,
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L1-09",
+      "level": 1,
+      "text": "Sylinterissä oleva kaasu laajenee ulkoilman paineessa. Paine on yksi ilmakehä ($1\\,\\text{atm}$). Ilmakehä on paineen yksikkö. Paine pysyy laajenemisen aikana vakiona. Kaasun tilavuus kasvaa $2{,}0\\,\\textsf{l}$.\n\nHae yksikkömuunnos ilmakehästä pascaleiksi MAFY-taulukosta (mafytaulukot.fi). Kuinka suuren työn kaasu tekee laajetessaan? Anna vastaus jouleina.",
+      "lookup": "MAFY",
+      "answer": 200,
+      "unit": "J",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukon taulukossa *Yksikkömuunnoksia*."
+      ]
     }
   ],
   "level2": [
@@ -309,6 +321,15 @@
           "feedback": "Väite on tosi, mutta se ei selitä vastausta. Se pätee kaikille lämpövoimakoneille, eikä se kerro, kumpi kone on parempi. Vertailun ratkaisee vasta osuus $W/Q_1$."
         }
       ]
+    },
+    {
+      "id": "fy3-11-L2-09",
+      "level": 2,
+      "text": "Pienen kaasumoottorin sylinterissä oleva kaasu lämpenee. Kaasu laajenee vakiopaineessa. Kuvaajassa on kaasun paine $p$ tilavuuden $V$ funktiona laajenemisen aikana. Sylinterin poikkipinta-ala on $50\\,\\text{cm}^2$.\n\nKuinka pitkän matkan mäntä liikkuu laajenemisen aikana? Lue tarvittavat arvot kuvaajasta. Anna vastaus metreinä.",
+      "figure": "fy3-11/pv-isobaari",
+      "answer": 0.6,
+      "unit": "m",
+      "tolerance": 0.02
     }
   ],
   "level3": [

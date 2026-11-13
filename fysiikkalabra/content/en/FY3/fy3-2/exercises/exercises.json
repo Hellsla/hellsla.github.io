@@ -110,6 +110,18 @@
           "feedback": "Correct: the load and the height are the same, so the lifting work $W = m g h$ is the same for both. The power $P = \\dfrac{W}{t}$ is greater for the crane whose time $t$ is shorter, that is, crane A."
         }
       ]
+    },
+    {
+      "id": "fy3-2-L1-09",
+      "level": 1,
+      "text": "A crane lifts a steel beam slowly to a height of $12\\,\\text{m}$. The volume of the beam is $0.020\\,\\text{m}^3$. The density $\\rho$ of a material tells the mass per volume, so the mass of the beam is $m = \\rho V$. Look up the density of steel in the MAFY table (mafytaulukot.fi). How much work does the crane do on the beam?",
+      "lookup": "MAFY",
+      "answer": 18.4,
+      "unit": "kJ",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table *Tiheyksiä: Kiinteiden aineiden tiheyksiä* (densities of solids)."
+      ]
     }
   ],
   "level2": [
@@ -277,6 +289,15 @@
           "feedback": "The statement is true, but it is only one of the two doublings. The distance also doubles, and the work depends on both."
         }
       ]
+    },
+    {
+      "id": "fy3-2-L2-09",
+      "level": 2,
+      "text": "The graph shows the magnitude of the force pulling a sledge, in the direction of motion, as a function of the distance travelled. How large a constant force would do the same total work over the whole distance of the graph?",
+      "figure": "fy3-2/pull-steps",
+      "answer": 19,
+      "unit": "N",
+      "tolerance": 0.03
     }
   ],
   "level3": [

@@ -212,3 +212,24 @@ $$\begin{aligned} Q &= 4190 \cdot 0{,}300 \cdot 17{,}5\,\text{J} \\ &= 21\,998\,
 Samoin muille väleille: lämpömäärät ovat $16{,}2$, $12{,}7$, $9{,}05$, $7{,}16$ ja $5{,}15\,\text{kJ}$, tehot $27{,}0$, $21{,}2$, $15{,}1$, $11{,}9$ ja $8{,}59\,\text{W}$ ja kertoimet $0{,}587$, $0{,}612$, $0{,}582$, $0{,}614$ ja $0{,}590\,\tfrac{\text{W}}{\text{K}}$.
 **Vastaus:** $0{,}60\,\tfrac{\text{W}}{\text{K}}$. Lämpötiloissa ja massassa on kolme merkitsevää numeroa, mutta $k$ vaihtelee väleittäin noin $\pm 3\,\%$. Siksi toinen numero on viimeinen merkityksellinen. c) Kaikki kuusi $k$:ta ovat välillä $0{,}58\ldots 0{,}61\,\tfrac{\text{W}}{\text{K}}$. Ne ovat alle $3\,\%$:n päässä keskiarvostaan, vaikka teho pienenee $36{,}7\,\text{W}$:sta $8{,}59\,\text{W}$:iin. Malli sopii mittauksiin hyvin. Pienet erot johtuvat lämpötilalukemien $0{,}1\,{}^\circ\text{C}$:n tarkkuudesta. Jäähtyminen hidastuu, koska luovutettu teho on verrannollinen lämpötilaeroon huoneeseen. Kun veden lämpötila laskee, ero pienenee ja teho pienenee samassa suhteessa.
 **Järkevyys:** Ensimmäisen ja viimeisen välin tehojen suhde on $\dfrac{36{,}66}{8{,}59} \approx 4{,}3$ ja lämpötilaerojen suhde $\dfrac{61{,}25}{14{,}55} \approx 4{,}2$. Teho siis todella seuraa lämpötilaeroa.
+
+## fy3-6-L1-09
+**Annettu:** massa $m = 0{,}80\,\text{kg}$, lämpötila $20\,{}^\circ\text{C} \to 100\,{}^\circ\text{C}$; taulukosta (MAFY-taulukko, ominaislämpökapasiteetteja: kiinteät aineet, alumiini) $c = 0{,}896\,\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}}$
+**Kysytty:** kattilan vastaanottama lämpömäärä $Q$ kilojouleina
+**Periaate:** Kappaleen lämmittämiseen tarvittava lämpö on $Q = cm\Delta T$, kun aine ei vaihda olomuotoa. Alumiini pysyy kiinteänä koko ajan.
+**Kaava:** $Q = cm\Delta T$, missä $\Delta T = T_\text{loppu} - T_\text{alku}$
+**Muunnokset:** Lämpötilan muutos on kelvineinä sama kuin celsiusasteina: $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$. Taulukon arvo on jo yksikössä $\text{kJ}/(\text{kg}\cdot\text{K})$. Siksi tulos tulee suoraan kilojouleina.
+**Sijoitus:** $Q = 0{,}896\,\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 0{,}80\,\text{kg} \cdot 80\,\text{K} = 57{,}344\,\text{kJ} \approx 57\,\text{kJ}$
+**Vastaus:** $57\,\text{kJ}$, kaksi merkitsevää numeroa kuten tiedoissa $0{,}80\,\text{kg}$ ja $80\,\text{K}$. Arvo $0{,}896\,\text{kJ}/(\text{kg}\cdot\text{K})$ on MAFY-taulukosta. Eri taulukoiden arvot poikkeavat hieman. Siksi vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Alumiinin $c \approx 0{,}9\,\text{kJ}/(\text{kg}\cdot\text{K})$. Siksi $0{,}80\,\text{kg}$ vaatii noin $0{,}72\,\text{kJ}$ jokaista kelviniä kohti. Kertaa $80\,\text{K}$ antaa noin $58\,\text{kJ}$. Se sopii tulokseen. Tulos on positiivinen, koska kattila lämpenee.
+
+## fy3-6-L2-09
+**Annettu:** kuparin massa $m = 3{,}0\,\text{kg}$, lämpötila $85\,{}^\circ\text{C} \to 25\,{}^\circ\text{C}$; kuvasta $c$
+**Kysytty:** putken luovuttama lämpömäärä $Q_\text{luov}$ kilojouleina
+**Periaate:** Kappale luovuttaa jäähtyessään lämpömäärän, jonka suuruus on $cm\left|\Delta T\right|$. Näin on, kun olomuoto ei muutu. Kupari pysyy kiinteänä.
+**Kuvaajan lukeminen:** Kuparin vaakapylväs päättyy lukuun $385$, joten $c = 385\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$. Se on pylvästen lyhin. Se sopii: kupari lämpenee ja jäähtyy helposti.
+**Kaava:** $Q_\text{luov} = cm\left|\Delta T\right|$
+**Muunnokset:** $\left|\Delta T\right| = 85\,{}^\circ\text{C} - 25\,{}^\circ\text{C} = 60\,\text{K}$ (muutos kelvineinä on sama kuin celsiusasteina). Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:** $Q_\text{luov} = 385\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 3{,}0\,\text{kg} \cdot 60\,\text{K} = 69\,300\,\text{J} = 69{,}3\,\text{kJ} \approx 69\,\text{kJ}$
+**Vastaus:** $69\,\text{kJ}$, kaksi merkitsevää numeroa kuten tiedoissa $3{,}0\,\text{kg}$ ja $60\,\text{K}$. Arvo $385$ luetaan suoraan pylvään vierestä. Siksi hyväksytään $67{,}2\ldots71{,}4\,\text{kJ}$.
+**Järkevyys:** Jos putki olisi vettä, sama lämpömäärä jäähdyttäisi sitä vain noin $\dfrac{69\,300\,\text{J}}{4190 \cdot 3{,}0} \approx 5{,}5\,\text{K}$. Kuparin $c$ on vain noin kymmenesosa veden $c$:stä. Siksi jokaisesta kilogrammasta kuparia irtoaa vähän lämpöä. Tulos on järkevä.

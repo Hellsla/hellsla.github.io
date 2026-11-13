@@ -131,6 +131,18 @@
           "correct": true
         }
       ]
+    },
+    {
+      "id": "fy5-17-L1-09",
+      "level": 1,
+      "text": "An ice fisher measures the depth of a lake through the ice with an echo sounder. The temperature of the water under the ice is $0\\,{}^\\circ\\text{C}$. The sounder sends a pulse straight down, and the echo from the bottom returns after $20\\,\\text{ms}$. Look up the speed of sound in water in the MAFY table (mafytaulukot.fi). How deep is the water? Answer in metres.",
+      "lookup": "MAFY",
+      "answer": 14.0,
+      "unit": "m",
+      "tolerance": 0.04,
+      "hints": [
+        "The value is in the MAFY table, under *Aaltoliike*, in the table *Äänen nopeuksia eri väliaineissa*."
+      ]
     }
   ],
   "level2": [
@@ -315,6 +327,15 @@
           "feedback": "The statement is true, but it does not explain the answer. It only tells the order of arrival of the waves, not how the time difference depends on the distance."
         }
       ]
+    },
+    {
+      "id": "fy5-17-L2-09",
+      "level": 2,
+      "text": "The figure shows an A-scan of a thigh from an ultrasound device. The echoes A, B and C come from three tissue boundaries. Sound travels in tissue at $1540\\,\\text{m/s}$. Read the times of echoes B and C from the figure. How thick is the tissue layer bounded by the boundaries that give echoes B and C? Give the answer in centimetres.",
+      "figure": "fy5-17/a-scan",
+      "answer": 3.08,
+      "unit": "cm",
+      "tolerance": 0.02
     }
   ],
   "level3": [

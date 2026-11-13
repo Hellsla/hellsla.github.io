@@ -315,6 +315,18 @@
           "feedback": "Laskussa on virhe. Vertaa rivin 4 päätelmää interferenssin ehtoihin. Suhde $2{,}0$ on kokonaisluku, joten se täyttää ehdon $\\Delta s = n\\lambda$. Se ei täytä ehtoa $\\Delta s = \\left(n + \\tfrac{1}{2}\\right)\\lambda$."
         }
       ]
+    },
+    {
+      "id": "fy5-12-L2-09",
+      "level": 2,
+      "kind": [
+        "graph"
+      ],
+      "text": "Kuvassa on kaksi kaiutinta $S_1$ ja $S_2$ ja piste P ruudukossa. Kaiuttimet ovat samassa vaiheessa. Lue tarvittavat arvot kuvasta. Kuinka suuri on matkaero $\\Delta s = |s_1 - s_2|$ pisteessä P? Matkaero on kahden etäisyyden erotus. Anna vastaus metreinä.",
+      "figure": "fy5-12/ruudukko-tehtava",
+      "answer": 0.5,
+      "unit": "m",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -382,6 +394,19 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy5-12-L3-06",
+      "level": 3,
+      "kind": [
+        "graph",
+        "reasoning"
+      ],
+      "text": "Kuvassa on kaksi kaiutinta $S_1$ ja $S_2$ ja piste P ruudukossa. Kaiuttimet ovat samassa vaiheessa ja soittavat samaa siniääntä. Äänen nopeus on $340\\,\\text{m/s}$. Oleta, ettei ääni heijastu mistään. Lue tarvittavat arvot kuvasta. Mikä on pienin taajuus, jolla pisteessä P on heikentävä interferenssi? Heikentävässä interferenssissä aallot vaimentavat toisiaan. Anna vastaus hertseinä.",
+      "figure": "fy5-12/ruudukko-tehtava",
+      "answer": 340,
+      "unit": "Hz",
+      "tolerance": 0.02
     }
   ]
 }

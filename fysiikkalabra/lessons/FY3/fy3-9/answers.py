@@ -52,4 +52,6 @@ p_iso = 101 * 40.0 / 10.0                                # L3-04: isothermal ste
 a["fy3-9-L3-04"] = K(20.0) * 481 / p_iso - 273.15        # isochoric heating 404 -> 481 kPa: T₂ = 293,15·481/404 = 349,0 K -> 75,9 °C -> 76 °C
 pV_dive = sum((p0 + rho_vesi * g * h / 1000) * V for h, V in ((0, 6.0), (5, 4.0), (10, 3.0), (20, 2.0))) / 4   # mean pV = 599,5 kPa·l (rounded pressures: 599,25)
 a["fy3-9-L3-05"] = (pV_dive / 1.5 - p0) / (rho_vesi * g / 1000)   # V = 1,5 l: p = 399,7 kPa, h = (p − p₀)/(ρg) = 30,4 m -> 30 m
+# Added exercises (teacher 2026-11-12: MAFY table task, figure task)
+a["fy3-9-L1-09"] = 101 * 2.0 / 70.1                    # MAFY 3000 m: p₂ = 70 100 Pa = 70,1 kPa; Boyle (T constant): V₂ = p₁V₁/p₂ = 202 kPa·l / 70,1 kPa = 2,882 l -> 2,9 l
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

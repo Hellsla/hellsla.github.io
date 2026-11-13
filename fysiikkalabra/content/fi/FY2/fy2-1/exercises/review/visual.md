@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a5e3a606c3d94d47
-Round: 3
+CONTENT-HASH: 1b1e4f5288cc758f
 
 ## Blocking
 - none
@@ -9,9 +8,9 @@ Round: 3
 - none
 
 ## Checked
-- Delta is one line: L2-05 Järkevyys sum check. From my own Playwright render at 390 px (preview/fy2-1.html, solution opened): "60 % + 17,5 % = 77,5 % ja 15 % + 7,5 % = 22,5 %, yhteensä 77,5 % + 22,5 % = 100 %" wraps on three short lines, nothing clipped, document width 390; decimal comma, units upright with thin space.
-- Not from a capture: I did not open the packet's 1280 px capture for this line; the 390 px render is what I judged.
-- Rest of the set unchanged since the round-2 PASS.
+- fy2-1-open-exercises-1280-9: task 1-10 with the new "Vihje" box (title, italic table name, inside the card above the answer row), situation and question in separate paragraphs, quantities in LaTeX.
+- fy2-1-open-exercises-1280-10: solution (Kaava, Muunnokset, Sijoitus aligned at =, Vastaus, Järkevyys) unchanged and intact.
+- Delta covers the one changed task (hint moved from the text to hints). 360 px from the packet's layout check only.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

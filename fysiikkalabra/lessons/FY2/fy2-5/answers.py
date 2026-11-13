@@ -36,4 +36,6 @@ E_year = kWh_year * 3.6                                   # 47 880 MJ useful
 a["fy2-5-L3-04"] = E_year / 0.85 / H["pelletti"]          # pellets: 47 880 : 0,85 : 17 = 3313 kg -> 3300 kg
 # L3-04 c) oil 47 880 : 0,90 : 43 = 1237 kg; d) eta 0,70: 4023 kg, i.e. 710 kg more
 a["fy2-5-L3-05"] = 36000 / 0.70 / H["polttopuu"] - 36000 / 0.85 / H["pelletti"]   # wood 3429 kg - pellets 2491 kg = 937 kg -> 940 kg (oil 930 kg; pellets at eta 0,75: 2824 kg)
+a["fy2-5-L1-09"] = 26.7 * 0.50                          # ethanol: MAFY (Polttoaineiden LHV-lämpöarvoja) H = 26,7 MJ/kg · 0,50 kg = 13,35 MJ -> 13 MJ
+a["fy2-5-L2-09"] = H["bensiini"] * 12 / H["polttopuu"]   # H read off fy2-5/lampoarvot: 43 · 12 = 516 MJ; 516 : 15 = 34,4 kg -> 34 kg
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

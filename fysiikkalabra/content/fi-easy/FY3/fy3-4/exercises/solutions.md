@@ -217,3 +217,24 @@ Lasketaan paine:
 $$\begin{aligned} \Delta p &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1000\,\text{m} \\ &= 9{,}81 \cdot 10^{6}\,\text{Pa} \end{aligned}$$
 
 Luku $9{,}81 \cdot 10^{6}$ on lähempänä arvoa $10^{7}$ kuin arvoa $10^{6}$, joten suuruusluokka on $10^{7}\,\text{Pa}$. Vastaus $10^{5}\,\text{Pa}$ on ilmanpaineen suuruusluokka eikä ota syvyyttä huomioon. Vastaus $10^{6}\,\text{Pa}$ vastaa syvyyttä $100\,\text{m}$ ja vastaus $10^{8}\,\text{Pa}$ syvyyttä $10\,\text{km}$. Arvio: vedessä paine kasvaa noin $10\,\text{kPa}$ metriä kohti, joten $1000\,\text{m}$ antaa $10^{7}\,\text{Pa}$.
+
+## fy3-4-L1-10
+**Annettu:** $h = 25\,\text{m}$, $p_0 = 101\,\text{kPa}$, $g = 9{,}81\,\text{m/s}^2$. Taulukosta (MAFY-taulukko *Tiheyksiä: Nesteiden tiheyksiä*, merivesi) $\rho = 1{,}02 \cdot 10^{3}\,\text{kg/m}^3$.
+**Kysytty:** kokonaispaine $p$ sukeltajan kohdalla kilopascaleina
+**Periaate:** Sukeltaja tuntee veden painon. Hän tuntee myös veden pinnalla olevan ilman painon. Nesteen pinta välittää ilmanpaineen koko nesteeseen. Sen päälle tulee hydrostaattinen paine $\rho g h$. Siksi paineet lasketaan yhteen.
+**Kaava:** $p = p_0 + \rho g h$. Tuntematon $p$ on jo yksin vasemmalla puolella.
+**Muunnokset:** Tiheys $1{,}02 \cdot 10^{3}\,\text{kg/m}^3 = 1020\,\text{kg/m}^3$. Hydrostaattinen paine lasketaan pascaleina. Sen jälkeen se muutetaan kilopascaleiksi: $1\,\text{kPa} = 1000\,\text{Pa}$.
+**Sijoitus:** $\rho g h = 1020\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 25\,\text{m} = 250\,155\,\text{Pa} = 250{,}2\,\text{kPa}$; $p = 101\,\text{kPa} + 250{,}2\,\text{kPa} = 351{,}2\,\text{kPa}$
+**Vastaus:** $p \approx 351\,\text{kPa}$. Vastauksessa on kolme merkitsevää numeroa, kuten ilmanpaineessa ja tiheydessä. Tiheys $\rho = 1{,}02 \cdot 10^{3}\,\text{kg/m}^3$ on MAFY-taulukosta *Tiheyksiä: Nesteiden tiheyksiä*. Eri taulukoiden arvot poikkeavat hieman toisistaan. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Arvio: $10\,\text{m}$ vettä lisää paineeseen noin $100\,\text{kPa}$. Siksi $25\,\text{m}$ lisää noin $250\,\text{kPa}$. Siihen lisätään ilmanpaine, noin $100\,\text{kPa}$. Yhteensä saadaan noin $350\,\text{kPa}$ eli noin $3{,}5$ ilmanpainetta.
+
+## fy3-4-L2-08
+**Annettu:** kuvaajasta luettuna nesteen B suora kulkee pisteiden $(0\,\text{m};\ 100\,\text{kPa})$ ja $(10\,\text{m};\ 250\,\text{kPa})$ kautta. Lisäksi $g = 9{,}81\,\text{m/s}^2$.
+**Kysytty:** nesteen B tiheys $\rho_\text{B}$ yksikössä $\text{kg/m}^3$
+**Periaate:** Nesteessä $p = p_0 + \rho g h$. Siksi $(h, p)$-kuvaaja on suora, ja sen kulmakerroin on $k = \rho g$. Kulmakerroin luetaan kuvaajalta. Sen jälkeen se jaetaan luvulla $g$, ja tulos on tiheys.
+**Kuvaajan lukeminen:** Suora B alkaa pisteestä $(0\,\text{m};\ 100\,\text{kPa})$. Siinä paine on ilmanpaine. Suora päättyy ruudukon risteykseen $(10\,\text{m};\ 250\,\text{kPa})$. Kulmakerroin on $k_\text{B} = \dfrac{(250 - 100)\,\text{kPa}}{10\,\text{m}} = 15\,\dfrac{\text{kPa}}{\text{m}}$.
+**Kaava:** $k = \rho g$, joten $\rho_\text{B} = \dfrac{k_\text{B}}{g}$
+**Muunnokset:** $15\,\dfrac{\text{kPa}}{\text{m}} = 15\,000\,\dfrac{\text{Pa}}{\text{m}}$. Lisäksi $1\,\text{Pa} = 1\,\dfrac{\text{kg}}{\text{m} \cdot \text{s}^2}$. Siksi $\dfrac{\text{Pa/m}}{\text{m/s}^2}$ on $\text{kg/m}^3$.
+**Sijoitus:** $\rho_\text{B} = \dfrac{15\,000\,\text{Pa/m}}{9{,}81\,\text{m/s}^2} = 1529\,\text{kg/m}^3$
+**Vastaus:** $\rho_\text{B} \approx 1{,}5 \cdot 10^{3}\,\text{kg/m}^3$ eli $1500\,\text{kg/m}^3$. Vastauksessa on kaksi merkitsevää numeroa, koska kuvaajan arvot on luettu ruudukon viivoilta. Silmällä luettu arvo $1450$–$1600\,\text{kg/m}^3$ hyväksytään.
+**Järkevyys:** Nesteen A kulmakerroin on $10\,\text{kPa/m}$. Sen tiheys on $\dfrac{10\,000}{9{,}81} \approx 1020\,\text{kg/m}^3$, eli lähes veden tiheys. Neste B on jyrkempi $1{,}5$-kertaisesti. Sen tiheys on siksi $1{,}5$-kertainen: noin $1{,}5 \cdot 1020\,\text{kg/m}^3 \approx 1530\,\text{kg/m}^3$.

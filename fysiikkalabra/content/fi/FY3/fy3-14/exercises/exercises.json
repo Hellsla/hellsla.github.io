@@ -114,6 +114,18 @@
           "feedback": "Ominaislämpökapasiteetti kertoo lämpenemisestä, ei sulamisesta. Sulaminen vaatii sulamislämmön, ja ratkaisevaa on, riittääkö veden luovuttama lämpö."
         }
       ]
+    },
+    {
+      "id": "fy3-14-L1-09",
+      "level": 1,
+      "text": "Juomaan pudotetaan $0\\,{}^\\circ\\text{C}$:n jääpalat, joiden yhteismassa on $80\\,\\text{g}$. Jää sulaa vedeksi, jonka lämpötila on myös $0\\,{}^\\circ\\text{C}$. Sulamiseen tarvittava lämpö on $Q = sm$, missä $s$ on jään ominaissulamislämpö.\n\nHae jään ominaissulamislämpö MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon lämpöä jään sulamiseen tarvitaan? Anna vastaus kilojouleina.",
+      "lookup": "MAFY",
+      "answer": 26.64,
+      "unit": "kJ",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Aineiden olomuodon muutokset: Nesteet*."
+      ]
     }
   ],
   "level2": [
@@ -279,6 +291,15 @@
           "feedback": "Väärin: keskiarvo unohtaa sulamislämmön, eikä massoilla painotettu keskiarvokaan (vettä $0{,}25\\,\\text{kg}$, jäätä $0{,}080\\,\\text{kg}$, tulos noin $14\\,{}^\\circ\\text{C}$) auta. Veden luovuttama lämpö kuluu jään sulattamiseen, eikä lämpötila voi nousta yli $0\\,{}^\\circ\\text{C}$:n, kun jäätä on vielä jäljellä."
         }
       ]
+    },
+    {
+      "id": "fy3-14-L2-09",
+      "level": 2,
+      "text": "Eristettyyn astiaan, jossa on vettä, lisätään pakastimesta otettua jäätä. Kuvaajan pylväät näyttävät tämän seoksen kolme lämpömäärää: lämmön, jonka vesi voi luovuttaa jäähtyessään $0\\,{}^\\circ\\text{C}$:seen, lämmön, jonka jään lämmittäminen $0\\,{}^\\circ\\text{C}$:seen vaatii, ja lämmön, jonka kaiken jään sulattaminen vaatisi. Lämpöä ei siirry astiaan eikä ympäristöön. Jään ominaissulamislämpö on $334\\,\\text{kJ/kg}$.\n\nKuinka monta grammaa jäätä jää sulamatta lämpötasapainon vallitessa? Lue arvot kuvasta ja anna vastaus grammoina.",
+      "figure": "fy3-14/energy-bars",
+      "answer": 119.76,
+      "unit": "g",
+      "tolerance": 0.02
     }
   ],
   "level3": [

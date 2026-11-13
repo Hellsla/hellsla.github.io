@@ -361,6 +361,21 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy4-14-L2-08",
+      "level": 2,
+      "kind": [
+        "graph",
+        "data",
+        "model"
+      ],
+      "text": "The mass of a skydiver with equipment is $75.0\\,\\text{kg}$. The skydiver falls belly down before the parachute is opened. The graph shows measured points of the downward speed as a function of time.\n\na) What is the air resistance at the moment $t = 8.0\\,\\text{s}$? Estimate the acceleration from the points $t = 6.0\\,\\text{s}$ and $t = 10.0\\,\\text{s}$ and choose down as the positive direction.\n\nb) What percentage of the weight is the air resistance then? Deduce from the graph what value the speed approaches and how large the air resistance is then.\n\nThe answer box takes the result of part a).",
+      "answer": 623.25,
+      "unit": "N",
+      "tolerance": 0.05,
+      "figure": "fy4-14/hyppy-vt-points",
+      "fbd": "equations"
     }
   ],
   "level3": [

@@ -252,3 +252,24 @@ Engine A: $\eta_\text{A} = \dfrac{120\,\text{kJ}}{400\,\text{kJ}} = 0.30$
 Engine B: $\eta_\text{B} = \dfrac{120\,\text{kJ}}{300\,\text{kJ}} = 0.40$
 
 The engines do the same work, but that does not make the efficiency the same: the extra $100\,\text{kJ}$ of heat taken by engine A is not converted into work but passes to the colder surroundings ($Q_2 = Q_1 - W$, that is, $280\,\text{kJ}$ and $180\,\text{kJ}$). The size of the absorbed heat alone does not decide either, and the comparison needs the fraction $W/Q_1$. The result is reasonable: both efficiencies stay below $100\,\%$, as they must for a heat engine.
+
+## fy3-11-L1-09
+**Given:** pressure $p = 1\,\text{atm}$ constant, change in volume $\Delta V = 2.0\,\textsf{l}$; from the table (MAFY table, unit conversions, pressure) $1\,\text{atm} = 101\,325\,\text{Pa}$
+**Find:** the work done by the gas $W_\text{g}$ in joules
+**Principle:** The pressure is constant, so the work done by the gas is the product of the pressure and the change in volume. The gas expands, so it does work on its surroundings and the work is positive.
+**Formula:** $W_\text{g} = p\,\Delta V$
+**Conversions:** $p = 1\,\text{atm} = 101\,325\,\text{Pa}$ and $\Delta V = 2.0\,\textsf{l} = 2.0 \cdot 0.001\,\text{m}^3 = 0.0020\,\text{m}^3$. Then $1\,\text{Pa} \cdot 1\,\text{m}^3 = 1\,\text{J}$.
+**Substitution:** $W_\text{g} = 101\,325\,\text{Pa} \cdot 0.0020\,\text{m}^3 = 202.65\,\text{J}$
+**Answer:** $W_\text{g} \approx 2.0 \cdot 10^{2}\,\text{J}$, two significant figures, as in the volume $2.0\,\textsf{l}$. The conversion $1\,\text{atm} = 101\,325\,\text{Pa}$ is from the MAFY table (unit conversions); the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** A rough estimate: $100\,000\,\text{Pa} \cdot 0.002\,\text{m}^3 = 200\,\text{J}$. In a $(V, p)$ graph the work of the gas is the area of a rectangle, and it is positive at constant pressure and expansion. About $200\,\text{J}$ is enough to lift a $2\,\text{kg}$ object about $10\,\text{m}$.
+
+## fy3-11-L2-09
+**Given:** read from the graph, the initial volume $V_1 = 1.0\,\textsf{l}$ and the final volume $V_2 = 4.0\,\textsf{l}$; cross-sectional area $A = 50\,\text{cm}^2$
+**Find:** the displacement of the piston $\Delta s$ in metres
+**Principle:** The cross-sectional area of the cylinder is constant, so the volume of the gas is $V = A s$ and the change in volume is $\Delta V = A\,\Delta s$. The more the volume increases, the farther the piston moves.
+**Reading the graph:** The pressure is constant, so the graph is a horizontal segment. Its start is at $V_1 = 1.0\,\textsf{l}$ and its end at $V_2 = 4.0\,\textsf{l}$. The value of the pressure is not needed, only the change in volume $\Delta V = V_2 - V_1$.
+**Formula:** $\Delta V = V_2 - V_1$ and $\Delta V = A\,\Delta s$, so $\Delta s = \dfrac{V_2 - V_1}{A}$
+**Conversions:** $V_2 - V_1 = 4.0\,\textsf{l} - 1.0\,\textsf{l} = 3.0\,\textsf{l} = 3.0 \cdot 0.001\,\text{m}^3 = 0.0030\,\text{m}^3$ and $A = 50\,\text{cm}^2 = 50 \cdot 0.0001\,\text{m}^2 = 0.0050\,\text{m}^2$.
+**Substitution:** $\Delta s = \dfrac{0.0030\,\text{m}^3}{0.0050\,\text{m}^2} = 0.60\,\text{m}$
+**Answer:** $\Delta s \approx 0.60\,\text{m}$, two significant figures, as in the volumes read and the area.
+**Reasonableness:** At the start the length of the gas column is $0.0010\,\text{m}^3 : 0.0050\,\text{m}^2 = 0.20\,\text{m}$ and at the end $0.0040\,\text{m}^3 : 0.0050\,\text{m}^2 = 0.80\,\text{m}$. The difference is $0.60\,\text{m}$, as calculated.

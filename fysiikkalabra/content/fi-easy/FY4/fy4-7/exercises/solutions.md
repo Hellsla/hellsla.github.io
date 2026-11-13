@@ -311,3 +311,25 @@ $G g h$: $\text{N}\cdot\dfrac{\text{m}}{\text{s}^2}\cdot\text{m} = \text{J}\cdot
 $\dfrac{v^2}{2g}$: $\dfrac{\text{m}^2/\text{s}^2}{\text{m/s}^2} = \text{m}$
 
 Vain lausekkeen $\dfrac{G v^2}{2g}$ yksikkö on joule. Se on liike-energia kirjoitettuna toisin. Kun painon paikalle sijoitetaan $G = mg$, $g$ supistuu pois eli kumoutuu, ja jäljelle jää liike-energia $E_\text{k} = \tfrac12 m v^2$. Lausekkeen $\tfrac{1}{2}\,m v$ yksikkö on $\text{kg}\cdot\text{m/s}$: siinä nopeus on ensimmäisessä potenssissa, vaikka liike-energia on verrannollinen nopeuden neliöön. Lauseke $\dfrac{v^2}{2g}$ on korkeus, jolle kitkaton kappale nousee nopeudesta $v$. Lausekkeessa $G g h$ paino on kirjoitettu massan paikalle, joten $g$ tulee kahteen kertaan. Oikein on $E_\text{p} = mgh = Gh$.
+
+## fy4-7-L2-08
+**Annettu:** kuvaajasta luetut pisteet: nopeudella $v_1 = 2{,}0\,\text{m/s}$ liike-energia on $E_{\text{k},1} = 1{,}0\,\text{J}$. Nopeudella $v_2 = 6{,}0\,\text{m/s}$ se on $E_{\text{k},2} = 9{,}0\,\text{J}$
+**Kysytty:** liike-energian muutos $\Delta E_\text{k}$ yksikössä $\text{J}$
+**Periaate:** Pallon liike-energia riippuu vain nopeudesta ja massasta. Siksi kuvaaja antaa liike-energian jokaisella nopeudella. Muutos on loppuarvo miinus alkuarvo.
+**Kuvaajan lukeminen:** Nopeuden $2{,}0\,\text{m/s}$ kohdalla käyrä kulkee pystyviivan ja $1{,}0\,\text{J}$:n vaakaviivan risteyksen kautta. Nopeuden $6{,}0\,\text{m/s}$ kohdalla se kulkee $9{,}0\,\text{J}$:n viivan risteyksen kautta.
+**Kaava:** $\Delta E_\text{k} = E_{\text{k},2} - E_{\text{k},1}$
+**Muunnokset:** Molemmat luvut luetaan akselilta, jonka yksikkö on joule. Muunnoksia ei tarvita.
+**Sijoitus:** $\Delta E_\text{k} = 9{,}0\,\text{J} - 1{,}0\,\text{J} = 8{,}0\,\text{J}$
+**Vastaus:** $8{,}0\,\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, koska kuvaajasta luetuissa arvoissa on kaksi.
+**Järkevyys:** Nopeus kolminkertaistuu. Siksi liike-energia kasvaa yhdeksänkertaiseksi: $9 \cdot 1{,}0\,\text{J} = 9{,}0\,\text{J}$. Kasvu on siis kahdeksankertainen alkuarvoon nähden: $8 \cdot 1{,}0\,\text{J} = 8{,}0\,\text{J}$. Tulos on positiivinen, koska pallo nopeutuu.
+
+## fy4-7-L2-09
+**Annettu:** kuvaajasta luettu piste: korkeudella $h = 2{,}0\,\text{m}$ potentiaalienergia on $E_\text{p} = 39\,\text{J}$; $g = 9{,}81\,\text{m/s}^2$
+**Kysytty:** laatikon massa $m$ yksikössä $\text{kg}$
+**Periaate:** Painovoiman potentiaalienergia nollatasosta mitattuna on $E_\text{p} = mgh$. Kuvaaja on suora, joka kulkee origon kautta. Suoran kulmakerroin on $mg$. Massa saadaan siis yhdestä hyvin luettavasta pisteestä.
+**Kuvaajan lukeminen:** Korkeudella $2{,}0\,\text{m}$ suoran piste on ruudukon viivojen $35\,\text{J}$ ja $40\,\text{J}$ välissä. Se on aivan $40\,\text{J}$:n viivan alapuolella, noin $39\,\text{J}$.
+**Kaava:** $E_\text{p} = mgh$, joten $m = \dfrac{E_\text{p}}{gh}$
+**Muunnokset:** Potentiaalienergia on jouleina, $1\,\text{J} = 1\,\text{kg}\cdot\text{m}^2/\text{s}^2$. Tulos tulee suoraan kilogrammoina.
+**Sijoitus:** $m = \dfrac{39\,\text{J}}{9{,}81\,\text{m/s}^2 \cdot 2{,}0\,\text{m}} = 1{,}99\,\text{kg}$
+**Vastaus:** $2{,}0\,\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa, koska korkeudessa $2{,}0\,\text{m}$ on kaksi.
+**Järkevyys:** Toinen luettu piste on korkeudella $1{,}0\,\text{m}$, ja siinä energia on noin $20\,\text{J}$. Se antaa $m = \dfrac{20\,\text{J}}{9{,}81\,\text{m/s}^2 \cdot 1{,}0\,\text{m}} \approx 2{,}0\,\text{kg}$. Suoran kulmakerroin $\dfrac{39\,\text{J}}{2{,}0\,\text{m}} \approx 19{,}5\,\text{N}$ on laatikon paino.

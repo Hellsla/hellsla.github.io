@@ -52,4 +52,6 @@ def F_part(h1, h2):
     return (rho_w * g * h1 + rho_w * g * h2) / 2 * (5.0 * 1.0) / 1000   # kN
 a["fy3-4-L3-05"] = F_part(15.0, 20.0)                  # (147,15 + 196,2)/2 kPa · 5,0 m² = 858,375 kN -> 858 kN
 assert abs(sum(F_part(5.0 * i, 5.0 * i + 5.0) for i in range(4)) - (196.2 / 2) * 20.0) < 1e-9   # sum 1962 kN = whole-wall check
+a["fy3-4-L1-10"] = 101 + 1.02e3 * g * 25 / 1000        # sea water: MAFY (Tiheyksiä: Nesteiden tiheyksiä) rho = 1,02 · 10³ kg/m³; p = p0 + rho g h = 101 kPa + 250,2 kPa = 351,2 kPa
+a["fy3-4-L2-08"] = k_B * 1000 / g                         # figure fy3-4/two-liquids: k_B = 15 kPa/m = rho g, rho = 15 000 Pa/m / 9,81 m/s² = 1529 kg/m³
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

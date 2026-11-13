@@ -1,14 +1,7 @@
 VERDICT: DONE
 
-Fix round 1. The orchestrator decided: J and kJ only (no MJ/GJ/mJ), and one level-3 task is qualitative.
+exercises.json (fi, fi-easy, en): L1-10 replaced by a MAFY lookup of the heating value of petrol, E = Hm, m = 2,0 kg, answer 86 MJ, tolerance 0,04, lookup MAFY kept, id kept, no "isolated" wording. L2-08: story kept on the skater (the figure shows one) with a new opening sentence unlike L1-03, "prosentin tarkkuudella" added.
+solutions.md (fi, fi-easy, en): new complete L1-10 solution (H = 43 MJ/kg, source named, tolerance for table differences, quantities as LaTeX). L2-08: "half-way" reasoning removed (per the coordinator's addition only the sum check 600 J + 100 J = 700 J remains, so the C comparison went too), rounding justified as whole percents from readings to 100 J.
+lessons/FY2/fy2-1/answers.py: L1-10 = 43 * 2.0 = 86.
 
-- **L1-02**: New context: a leaf turns 245 J of radiation into 6,0 J of chemical energy, answer 239 J. This removes the lamp "säteilyenergia" error and the repeat of check-2.
-- **L1-03**: 160 J of electricity, answer 640 J. The check now says 20 %, a typical share for a current panel.
-- **L1-04**: Was braking (it repeated Etsi virhe). Now a word task that names the start and useful end forms (fireplace, solar panel, hydro dam), with a model answer.
-- **L2-01**: Was the toy car (it repeated the exit ticket). Now an electric scooter: 3,00 kJ − 2150 J = 850 J.
-- **L2-02**: Mixed units, 2400 J + 0,60 kJ = 3,0 kJ.
-- **L2-03**: Was the ball in mJ. Now a swing: 0,36 kJ, and all of it becomes heat, 360 J "yhteensä". The system includes the air in both text and solution.
-- **L2-04**: kJ instead of MJ, answer in joules, 29 000 J.
-- **L3-02**: No product of factors. It gives 5,00 / 4,00 / 3,20 J and asks how much more heat the first bounce gives than the second: 0,20 J.
-- **L3-03**: Qualitative. It names the forms in a nuclear plant and explains with conservation where the other two thirds go.
-- **answers.py**: Updated. The word tasks have no number.
+Checks: lint_lesson 0 errors, check_solutions ok, check_lesson all ok.

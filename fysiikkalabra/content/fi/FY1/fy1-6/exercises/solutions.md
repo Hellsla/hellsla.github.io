@@ -199,3 +199,13 @@ $$\begin{aligned} \text{vaje} &= \dfrac{2{,}434\,\text{m/s}}{3{,}924\,\text{m/s}
 **Kysytty:** kevyemmän pallon nopeus $v$ hetkellä $2{,}0\,\text{s}$ ja syy, miksi se on sellainen.
 **Periaate:** Tyhjiössä ei ole ilmanvastusta, joten molemmat pallot ovat vapaassa pudotuksessa ja lähtevät levosta. Silloin nopeus on $v = g\,t$, ja putoamiskiihtyvyys $g = 9{,}81\,\text{m/s}^2$ on sama kaikille kappaleille massasta riippumatta.
 **Mallivastaus:** Kevyemmän pallon nopeus on sama kuin raskaamman eli $19{,}6\,\text{m/s}$, koska $v = g\,t = 9{,}81\,\text{m/s}^2 \cdot 2{,}0\,\text{s} = 19{,}62\,\text{m/s}$ ei sisällä massaa. Perustelu on, että $g$ on sama kaikille kappaleille ilman ilmanvastusta. Massan kasvattaminen lisää sekä Maan vetoa palloon että liikkeelle saamisen vaikeutta, ja nämä kumoavat toisensa. Tulos on sama kuin tehtävässä annettu raskaamman pallon nopeus $19{,}6\,\text{m/s}$.
+
+## fy1-6-L1-09
+**Annettu:** aika $t = 3{,}0\,\text{s}$, alkunopeus $0$; taulukosta (MAFY-taulukko, Aurinkokunta, Kuu) putoamiskiihtyvyys $g = 1{,}622\,\text{m/s}^2$
+**Kysytty:** nopeus $v$ yksikössä $\text{m/s}$
+**Periaate:** Ilmanvastusta ei ole, joten vasara on vapaassa pudotuksessa ja lähtee levosta. Silloin nopeus kasvaa tasaisesti ja $v = gt$.
+**Kaava:** $v = g\,t$
+**Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $v = 1{,}622\,\tfrac{\text{m}}{\text{s}^2} \cdot 3{,}0\,\text{s} = 4{,}866\,\tfrac{\text{m}}{\text{s}}$
+**Vastaus:** $4{,}9\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $3{,}0\,\text{s}$. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Maassa nopeus olisi $9{,}81\,\text{m/s}^2 \cdot 3{,}0\,\text{s} = 29{,}4\,\text{m/s}$. Kuun putoamiskiihtyvyys on noin kuudesosa Maan arvosta, joten myös nopeus on noin kuudesosa: $29{,}4\,\text{m/s} : 6 \approx 4{,}9\,\text{m/s}$.

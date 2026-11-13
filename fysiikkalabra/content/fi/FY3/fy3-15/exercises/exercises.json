@@ -94,6 +94,18 @@
       "answer": 12.0,
       "unit": "GWh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-15-L1-09",
+      "level": 1,
+      "text": "Yhteistuotantolaitos lämmittää kaukolämpöverkon vettä. Verkkoon virtaa vettä $80\\,\\text{kg/s}$, ja veden lämpötila nousee $40\\,\\text{K}$. Veteen siirtyvä kaukolämpöteho on $P_\\text{k} = c\\,q_m\\,\\Delta T$, missä $c$ on veden ominaislämpökapasiteetti, $q_m$ vesivirta ja $\\Delta T$ lämpötilan nousu.\n\nHae veden ominaislämpökapasiteetti MAFY-taulukosta (mafytaulukot.fi). Laske kaukolämpöteho megawatteina.",
+      "lookup": "MAFY",
+      "answer": 13.3824,
+      "unit": "MW",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Ominaislämpökapasiteetteja: Nesteet*."
+      ]
     }
   ],
   "level2": [
@@ -250,6 +262,15 @@
           "feedback": "Tulos syntyy, kun nousuksi $\\Delta T$ otetaan loppulämpötila kelvineinä, $291\\,\\text{K}$. Nousu on lämpötilojen erotus $10\\,\\text{K}$. Tulos ylittäisi myös laitoksen koko polttoaineen tehon $1200\\,\\text{MW}$, joten se on mahdoton."
         }
       ]
+    },
+    {
+      "id": "fy3-15-L2-09",
+      "level": 2,
+      "text": "Kuvassa on lauhdevoimalaitoksen teho energiaketjun eri vaiheissa: $P_0$ on polttoaineteho, $P_1$ teho kattilan jälkeen, $P_2$ teho höyrykierron jälkeen ja $P_3$ sähköteho. Laske höyrykierron hyötysuhde $\\eta_2$. Lue tarvittavat arvot kuvasta ja anna vastaus prosentteina.",
+      "figure": "fy3-15/chain-bars",
+      "answer": 42.857,
+      "unit": "%",
+      "tolerance": 0.03
     }
   ],
   "level3": [

@@ -39,4 +39,7 @@ a["fy5-16-L3-04"] = 3 * math.log2(D_shop)                   # protectors divide 
 L_fest = 112 - 6 * math.log2(8.0 / 2.0)                     # speaker 112 dB at 2,0 m, listener at 8,0 m: two doublings -> 100 dB
 a["fy5-16-L3-05"] = t_allowed(L_fest - 8)                   # earplugs 8 dB -> 92 dB: n = 7/3, t = 8 h / 2^(7/3) = 1,59 h (3,0 h = 190 %; at 16 m 86 dB: 6,35 h, 47 %)
 # L3-03: why active noise cancellation works best at low frequencies: answered in words
+# Figure tasks (read from fy5-16/scale): lawn mower 90 dB, rock concert 105 dB
+a["fy5-16-L1-09"] = t_allowed(90)                          # n = 5/3, t = 8 h / 2^(5/3) = 2,52 h
+a["fy5-16-L2-09"] = t_allowed(105) * 60                    # n = 20/3, t = 480 min / 2^(20/3) = 4,72 min
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

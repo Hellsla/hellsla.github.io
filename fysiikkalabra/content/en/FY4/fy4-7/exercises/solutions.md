@@ -311,3 +311,25 @@ $G g h$: $\text{N}\cdot\dfrac{\text{m}}{\text{s}^2}\cdot\text{m} = \text{J}\cdot
 $\dfrac{v^2}{2g}$: $\dfrac{\text{m}^2/\text{s}^2}{\text{m/s}^2} = \text{m}$
 
 Only the unit of the expression $\dfrac{G v^2}{2g}$ is joule. It is kinetic energy written in another way: when $G = mg$ is substituted for the weight, $g$ cancels and the kinetic energy $E_\text{k} = \tfrac12 m v^2$ remains. The unit of the expression $\tfrac{1}{2}\,m v$ is $\text{kg}\cdot\text{m/s}$: the speed is to the first power in it, although kinetic energy is proportional to the square of the speed. The expression $\dfrac{v^2}{2g}$ is the height to which a frictionless object rises from the speed $v$. In the expression $G g h$ the weight has been written in place of the mass, so $g$ appears twice; the correct form is $E_\text{p} = mgh = Gh$.
+
+## fy4-7-L2-08
+**Given:** points read from the graph: at the speed $v_1 = 2.0\,\text{m/s}$ the kinetic energy is $E_{\text{k},1} = 1.0\,\text{J}$ and at the speed $v_2 = 6.0\,\text{m/s}$ it is $E_{\text{k},2} = 9.0\,\text{J}$
+**Find:** the change in kinetic energy $\Delta E_\text{k}$ in $\text{J}$
+**Principle:** The kinetic energy of the ball depends only on its speed and mass, so the graph gives the kinetic energy at every speed. The change is the final value minus the initial value.
+**Reading the graph:** At the speed $2.0\,\text{m/s}$ the curve passes through the crossing of the vertical line and the horizontal $1.0\,\text{J}$ line, and at the speed $6.0\,\text{m/s}$ through the crossing with the $9.0\,\text{J}$ line.
+**Formula:** $\Delta E_\text{k} = E_{\text{k},2} - E_{\text{k},1}$
+**Conversions:** Both numbers are read from an axis whose unit is the joule, so no conversions are needed.
+**Substitution:** $\Delta E_\text{k} = 9.0\,\text{J} - 1.0\,\text{J} = 8.0\,\text{J}$
+**Answer:** $8.0\,\text{J}$, two significant figures, like the values read from the graph.
+**Reasonableness:** The speed triples, so the kinetic energy becomes nine times as large: $9 \cdot 1.0\,\text{J} = 9.0\,\text{J}$. The increase is therefore eight times the initial value, $8 \cdot 1.0\,\text{J} = 8.0\,\text{J}$. The result is positive, because the ball speeds up.
+
+## fy4-7-L2-09
+**Given:** a point read from the graph: at the height $h = 2.0\,\text{m}$ the potential energy is $E_\text{p} = 39\,\text{J}$; $g = 9.81\,\text{m/s}^2$
+**Find:** the mass $m$ of the crate in $\text{kg}$
+**Principle:** The gravitational potential energy measured from the zero level is $E_\text{p} = mgh$. The graph is a straight line through the origin whose slope is $mg$, so the mass follows from one point that can be read well.
+**Reading the graph:** At the height $2.0\,\text{m}$ the point of the line is between the grid lines $35\,\text{J}$ and $40\,\text{J}$, just below the $40\,\text{J}$ line, at about $39\,\text{J}$.
+**Formula:** $E_\text{p} = mgh$, so $m = \dfrac{E_\text{p}}{gh}$
+**Conversions:** The potential energy is in joules, $1\,\text{J} = 1\,\text{kg}\cdot\text{m}^2/\text{s}^2$, so the result comes directly in kilograms.
+**Substitution:** $m = \dfrac{39\,\text{J}}{9.81\,\text{m/s}^2 \cdot 2.0\,\text{m}} = 1.99\,\text{kg}$
+**Answer:** $2.0\,\text{kg}$, two significant figures, like the height $2.0\,\text{m}$.
+**Reasonableness:** Another point read from the graph, about $20\,\text{J}$ at the height $1.0\,\text{m}$, gives $m = \dfrac{20\,\text{J}}{9.81\,\text{m/s}^2 \cdot 1.0\,\text{m}} \approx 2.0\,\text{kg}$. The slope of the line, $\dfrac{39\,\text{J}}{2.0\,\text{m}} \approx 19.5\,\text{N}$, is the weight of the crate.

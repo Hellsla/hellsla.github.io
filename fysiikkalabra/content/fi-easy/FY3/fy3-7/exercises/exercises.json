@@ -110,6 +110,18 @@
       "answer": 0.602,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-7-L1-09",
+      "level": 1,
+      "text": "Käsidesin etanoli haihtuu iholta. Haihtuvan etanolin massa on $5{,}0\\,\\text{g}$. Hae etanolin ominaishöyrystymislämpö MAFY-taulukosta (mafytaulukot.fi). Ominaishöyrystymislämpö kertoo, kuinka paljon lämpöä $1\\,\\text{kg}$ nestettä tarvitsee muuttuakseen kaasuksi. Kuinka suuren lämpömäärän haihtuva etanoli sitoo ihosta? Anna vastaus kilojouleina.",
+      "lookup": "MAFY",
+      "answer": 4.2,
+      "unit": "kJ",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Aineiden olomuodon muutokset: Nesteet*."
+      ]
     }
   ],
   "level2": [
@@ -282,6 +294,15 @@
       "answer": "Teekannu (noin $84\\,\\text{kJ}$), jääpussi ($167\\,\\text{kJ}$), kattila (noin $201\\,\\text{kJ}$), kiehuva vesi ($226\\,\\text{kJ}$).",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-7-L2-09",
+      "level": 2,
+      "text": "Pakastimesta otettua $0{,}60\\,\\text{kg}$:n jääpalaa lämmitetään. Kuvaajassa on jään lämpötila siirretyn energian funktiona. Määritä kuvaajan avulla jään ominaislämpökapasiteetti. Käytä kuvaajan alkuosaa, jossa jään lämpötila nousee. Lue tarvittavat arvot kuvaajasta.",
+      "figure": "fy3-7/melting-curve",
+      "answer": 2083.3,
+      "unit": "J/(kg·K)",
+      "tolerance": 0.03
     }
   ],
   "level3": [

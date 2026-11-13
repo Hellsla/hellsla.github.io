@@ -246,3 +246,35 @@ $$\begin{aligned} \Delta\theta &= \dfrac{1.0\,\text{kPa}}{0.3660\,\text{kPa}/{}^
 $115.5\,\text{kPa} - 102.0\,\text{kPa} = 13.5\,\text{kPa}$
 
 which is more than ten times the uncertainty $1.0\,\text{kPa}$. The uncertainty intervals $101.0$–$103.0\,\text{kPa}$ and $114.5$–$116.5\,\text{kPa}$ are separate, so the pressure increased from the temperature $20.0\,{}^\circ\text{C}$ to the temperature $60.0\,{}^\circ\text{C}$. The other conclusions do not hold. The difference $0.8\,\text{kPa}$ between the readings at the temperatures $20.0\,{}^\circ\text{C}$ and $22.0\,{}^\circ\text{C}$ stays within the uncertainty $1.0\,\text{kPa}$, so an increase cannot be shown from this pair. The same difference does not, however, prove that the pressure does not change, because a small change can be lost in the uncertainty and in the whole data the increase is clearly visible. A line fitted to the points would give an estimate of about $62\,\text{kPa}$ at the temperature $-100\,{}^\circ\text{C}$, but the point is $120\,{}^\circ\text{C}$ below the measurement range, so the value is an uncertain estimate, not a certain result. The result is reasonable: an increase of pressure with temperature suits a sealed rigid bottle, where the pressure of a gas increases as the temperature rises.
+
+## fy3-13-L1-09
+**Given:** the kelvin temperature at the absolute zero $T = 0\,\text{K}$; from the table (MAFY table, unit conversions) $0\,{}^\circ\text{C} = 273.15\,\text{K}$, so $T_0 = 273.15\,\text{K}$
+**Find:** the Celsius temperature $\theta_0$ of the absolute zero in degrees Celsius
+**Principle:** The degrees of the Celsius and kelvin scales are equal, and the scales are shifted from each other by the constant $T_0$. The absolute zero is the zero point of the kelvin scale, so its Celsius temperature is obtained by setting $T = 0$.
+**Formula:** $T = \theta + T_0$, so $0 = \theta_0 + T_0$ and $\theta_0 = -T_0$
+**Conversions:** No conversions are needed: $T_0$ is already in the table, and a temperature change is equal in kelvins and in degrees Celsius.
+**Substitution:** $\theta_0 = -273.15\,{}^\circ\text{C}$
+**Answer:** $\theta_0 = -273.15\,{}^\circ\text{C} \approx -273\,{}^\circ\text{C}$. The value $T_0 = 273.15\,\text{K}$ is from the MAFY table (unit conversions); the table value is defined to be exact, and an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** The result is of the same order as the values extrapolated from gas pressure measurements, about $-270\,{}^\circ\text{C}$. It is also far below the boiling point of liquid nitrogen, $-195.8\,{}^\circ\text{C}$: nothing can be colder.
+
+## fy3-13-L2-09
+**Given:** reading from the graph, the points $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ and $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$; the points are on a straight line
+**Find:** the temperature $\theta_0$ at which the pressure of the line is zero, in degrees Celsius
+**Principle:** In a rigid closed container the amount of gas and the volume stay the same, so the pressure depends only on the temperature. The points are on a straight line, so the line can be continued outside the measured range, that is, extrapolated, until the pressure is zero.
+**Reading the graph:** The first point is at a crossing of the grid, $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$. The last point is slightly above the $100\,\text{kPa}$ line, at $102.5\,\text{kPa}$, at the temperature $100\,{}^\circ\text{C}$. From these two points the slope of the line is calculated. If you draw the line by eye, you get a value on the horizontal axis between $-260\,\ldots -285\,{}^\circ\text{C}$, which is accepted.
+**Formula:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and $p = p_1 + k(\theta - \theta_1) = 0$, so $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
+**Conversions:** No conversions are needed: the pressures are in kilopascals and the temperatures in degrees Celsius.
+**Substitution:** $k = \dfrac{(102.5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, and $\theta_0 = 0\,{}^\circ\text{C} - \dfrac{75\,\text{kPa}}{0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -272.7\,{}^\circ\text{C}$
+**Answer:** $\theta_0 \approx -273\,{}^\circ\text{C}$. The pressure read from the graph is accurate to about $1\,\text{kPa}$, so the uncertainty of the result is several degrees Celsius and the third digit is not reliable.
+**Reasonableness:** The result is close to the accepted value $-273.15\,{}^\circ\text{C}$. An independent check: if the pressure is proportional to the kelvin temperature, the slope is $75\,\text{kPa} / 273.15\,\text{K} = 0.275\,\text{kPa/K}$, which equals the slope read from the graph.
+
+## fy3-13-L2-10
+**Given:** reading from the graph, the points $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ and $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$; the pressure depends linearly on the temperature also outside the measured range; $T = 200\,\text{K}$
+**Find:** the pressure $p$ at $200\,\text{K}$ in kilopascals
+**Principle:** In a rigid closed container the amount of gas and the volume stay the same, so the pressure depends only on the temperature. The points are on a straight line, so the line can be continued outside the measured range. The temperature of the graph is in degrees Celsius, so the kelvin temperature must first be converted to degrees Celsius.
+**Reading the graph:** The first point is at a crossing of the grid, $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$, and the last is slightly above the $100\,\text{kPa}$ line, $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$. From these the slope of the line is calculated, and the line is continued to the left. Drawing the line by eye gives a value of $52$–$58\,\text{kPa}$, which is accepted.
+**Formula:** $\theta = T - 273.15\,\text{K}$ (in degrees Celsius), $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and $p = p_1 + k(\theta - \theta_1)$
+**Conversions:** $\theta = 200 - 273.15 = -73.15\,{}^\circ\text{C}$
+**Substitution:** $k = \dfrac{(102.5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, and $p = 75\,\text{kPa} + 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-73.15 - 0)\,{}^\circ\text{C} = 75\,\text{kPa} - 20.1\,\text{kPa} = 54.9\,\text{kPa}$
+**Answer:** $p \approx 55\,\text{kPa}$, two significant figures, because the pressure read from the graph is accurate to about $1\,\text{kPa}$.
+**Reasonableness:** The temperature $200\,\text{K}$ is below the lower end of the measured range, $273.15\,\text{K}$, so the pressure must be lower than $75\,\text{kPa}$ but above zero. An independent check: when the pressure is proportional to the kelvin temperature, $p \approx 75\,\text{kPa} \cdot \dfrac{200\,\text{K}}{273.15\,\text{K}} = 54.9\,\text{kPa}$.

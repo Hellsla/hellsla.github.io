@@ -1,329 +1,341 @@
 {
- "level1": [
-  {
-   "id": "fy1-7-L1-01",
-   "level": 1,
-   "core": true,
-   "text": "Kierrätyspisteellä punnitaan harmaa metallinen harkko. Sen massa on $340\\,\\text{g}$ ja tilavuus $30{,}0\\,\\text{cm}^3$. Kuinka suuri on harkon aineen tiheys? Anna vastaus yksikössä $\\text{g/cm}^3$.",
-   "answer": 11.3,
-   "unit": "g/cm³",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy1-7-L1-02",
-   "level": 1,
-   "core": true,
-   "text": "Alumiinilevyn tilavuus on $35{,}0\\,\\text{cm}^3$, ja alumiinin tiheys on $2{,}70\\,\\text{g/cm}^3$. Kuinka suuri on levyn massa? Anna vastaus grammoina.",
-   "answer": 94.5,
-   "unit": "g",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy1-7-L1-03",
-   "level": 1,
-   "text": "Kemian luokassa mitataan vaa'alla $316\\,\\text{g}$ etanolia, jonka tiheys on $0{,}79\\,\\text{g/cm}^3$. Kuinka suuri on nesteen tilavuus? Anna vastaus kuutiosenttimetreinä.",
-   "answer": 400,
-   "unit": "cm³",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy1-7-L1-04",
-   "level": 1,
-   "text": "Betonilaatan tilavuus on $0{,}75\\,\\text{m}^3$. Betonin tiheys on $2400\\,\\text{kg/m}^3$. Kuinka suuri on laatan massa? Anna vastaus kilogrammoina.",
-   "answer": 1800,
-   "unit": "kg",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy1-7-L1-05",
-   "level": 1,
-   "text": "Jäälohkon massa on $36{,}8\\,\\text{kg}$ ja tilavuus $0{,}0400\\,\\text{m}^3$. Kuinka suuri on jään tiheys? Anna vastaus yksikössä $\\text{kg/m}^3$.",
-   "answer": 920,
-   "unit": "kg/m³",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy1-7-L1-06",
-   "level": 1,
-   "text": "Tasalaatuinen alumiinipalikka sahataan kahteen yhtä suureen osaan. Mitä tapahtuu aineen tiheydelle?",
-   "kind": [
-    "concept"
-   ],
-   "answer": "Tiheys on kummassakin osassa sama kuin alkuperäisessä palikassa.",
-   "unit": "",
-   "tolerance": 0.02,
-   "choices": [
+  "level1": [
     {
-     "text": "Tiheys on kummassakin osassa sama kuin alkuperäisessä palikassa.",
-     "feedback": "Oikein: tiheys $\\rho = m : V$ on aineen ominaisuus. Kun palikka puolitetaan, sekä massa että tilavuus puolittuvat, joten niiden suhde pysyy samana. Alumiinin tiheys on $2{,}70\\,\\text{g/cm}^3$ palan koosta riippumatta.",
-     "correct": true
+      "id": "fy1-7-L1-01",
+      "level": 1,
+      "core": true,
+      "text": "Kierrätyspisteellä punnitaan harmaa metallinen harkko. Sen massa on $340\\,\\text{g}$ ja tilavuus $30{,}0\\,\\text{cm}^3$. Kuinka suuri on harkon aineen tiheys? Anna vastaus yksikössä $\\text{g/cm}^3$.",
+      "answer": 11.3,
+      "unit": "g/cm³",
+      "tolerance": 0.02
     },
     {
-     "text": "Tiheys puolittuu, koska kappale on nyt puolta pienempi.",
-     "feedback": "Puolittuu massa ja tilavuus, ei tiheys. Tiheys on massan ja tilavuuden suhde, ja kun molemmat pienenevät samassa suhteessa, suhde ei muutu."
+      "id": "fy1-7-L1-02",
+      "level": 1,
+      "core": true,
+      "text": "Alumiinilevyn tilavuus on $35{,}0\\,\\text{cm}^3$, ja alumiinin tiheys on $2{,}70\\,\\text{g/cm}^3$. Kuinka suuri on levyn massa? Anna vastaus grammoina.",
+      "answer": 94.5,
+      "unit": "g",
+      "tolerance": 0.02
     },
     {
-     "text": "Tiheys kaksinkertaistuu, koska pala on tiiviimpi.",
-     "feedback": "Sahaaminen ei purista ainetta tiiviimmäksi. Aine on samaa kuin ennen, ja jokaista kuutiosenttimetriä kohti on edelleen sama määrä massaa."
+      "id": "fy1-7-L1-03",
+      "level": 1,
+      "text": "Kemian luokassa mitataan vaa'alla $316\\,\\text{g}$ etanolia, jonka tiheys on $0{,}79\\,\\text{g/cm}^3$. Kuinka suuri on nesteen tilavuus? Anna vastaus kuutiosenttimetreinä.",
+      "answer": 400,
+      "unit": "cm³",
+      "tolerance": 0.02
     },
     {
-     "text": "Tiheys riippuu siitä, miten pala on leikattu.",
-     "feedback": "Tiheys ei riipu kappaleen muodosta tai koosta, kun kappale on yhtä ainetta. Pitkä ja lyhyt pala samaa alumiinia ovat yhtä tiheitä."
+      "id": "fy1-7-L1-04",
+      "level": 1,
+      "text": "Betonilaatan tilavuus on $0{,}75\\,\\text{m}^3$. Betonin tiheys on $2400\\,\\text{kg/m}^3$. Kuinka suuri on laatan massa? Anna vastaus kilogrammoina.",
+      "answer": 1800,
+      "unit": "kg",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L1-05",
+      "level": 1,
+      "text": "Jäälohkon massa on $36{,}8\\,\\text{kg}$ ja tilavuus $0{,}0400\\,\\text{m}^3$. Kuinka suuri on jään tiheys? Anna vastaus yksikössä $\\text{kg/m}^3$.",
+      "answer": 920,
+      "unit": "kg/m³",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L1-06",
+      "level": 1,
+      "text": "Tasalaatuinen alumiinipalikka sahataan kahteen yhtä suureen osaan. Mitä tapahtuu aineen tiheydelle?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Tiheys on kummassakin osassa sama kuin alkuperäisessä palikassa.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Tiheys on kummassakin osassa sama kuin alkuperäisessä palikassa.",
+          "feedback": "Oikein: tiheys $\\rho = m : V$ on aineen ominaisuus. Kun palikka puolitetaan, sekä massa että tilavuus puolittuvat, joten niiden suhde pysyy samana. Alumiinin tiheys on $2{,}70\\,\\text{g/cm}^3$ palan koosta riippumatta.",
+          "correct": true
+        },
+        {
+          "text": "Tiheys puolittuu, koska kappale on nyt puolta pienempi.",
+          "feedback": "Puolittuu massa ja tilavuus, ei tiheys. Tiheys on massan ja tilavuuden suhde, ja kun molemmat pienenevät samassa suhteessa, suhde ei muutu."
+        },
+        {
+          "text": "Tiheys kaksinkertaistuu, koska pala on tiiviimpi.",
+          "feedback": "Sahaaminen ei purista ainetta tiiviimmäksi. Aine on samaa kuin ennen, ja jokaista kuutiosenttimetriä kohti on edelleen sama määrä massaa."
+        },
+        {
+          "text": "Tiheys riippuu siitä, miten pala on leikattu.",
+          "feedback": "Tiheys ei riipu kappaleen muodosta tai koosta, kun kappale on yhtä ainetta. Pitkä ja lyhyt pala samaa alumiinia ovat yhtä tiheitä."
+        }
+      ]
+    },
+    {
+      "id": "fy1-7-L1-07",
+      "level": 1,
+      "text": "Ruokaöljyä kaadetaan varovasti vesilasiin. Öljyn tiheys on $920\\,\\text{kg/m}^3$ ja veden $1000\\,\\text{kg/m}^3$. Öljy ei sekoitu veteen. Mitä lasissa tapahtuu?",
+      "kind": [
+        "concept"
+      ],
+      "answer": "Öljy jää veden päälle, koska öljyn tiheys on pienempi kuin veden.",
+      "unit": "",
+      "tolerance": 0.02,
+      "choices": [
+        {
+          "text": "Öljy jää veden päälle, koska öljyn tiheys on pienempi kuin veden.",
+          "feedback": "Oikein: saman tilavuuden öljyssä on vähemmän massaa kuin vedessä ($0{,}92$ kertaa), joten öljy nousee veden päälle. Aineiden tiheyksiä verrataan, ei kappaleiden kokoa.",
+          "correct": true
+        },
+        {
+          "text": "Öljy vajoaa lasin pohjalle, koska öljy on sakeampaa.",
+          "feedback": "Sakeus eli viskositeetti ei ratkaise. Ratkaisevaa on tiheys: öljyn tiheys on pienempi kuin veden, joten öljy ei vajoa."
+        },
+        {
+          "text": "Öljy ja vesi sekoittuvat tasaisesti, koska ne ovat molemmat nesteitä.",
+          "feedback": "Öljy ja vesi eivät sekoitu toisiinsa, joten ne jäävät eri kerroksiksi; tiheys ratkaisee, kumpi kerros on päällä."
+        },
+        {
+          "text": "Öljy vajoaa pohjalle, jos öljyä on lasissa enemmän kuin vettä.",
+          "feedback": "Öljyn ja veden määrä ei vaikuta siihen, kumpi on päällä. Tiheys on aineen ominaisuus, ja pienempi tiheys tarkoittaa ylempää kerrosta, kun nesteet eivät sekoitu."
+        }
+      ]
+    },
+    {
+      "id": "fy1-7-L1-08",
+      "level": 1,
+      "text": "Ongen lyijypainon tilavuus on $5{,}00\\,\\text{cm}^3$. Lyijyn tiheys on $11{,}3\\,\\text{g/cm}^3$. Kuinka suuri on lyijypainon massa? Anna vastaus grammoina.",
+      "figure": "fy1-7/sinker",
+      "kind": [
+        "model"
+      ],
+      "answer": 56.5,
+      "unit": "g",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L1-09",
+      "level": 1,
+      "text": "Kuparikappaleen tilavuus on $50\\,\\text{cm}^3$. Hae kuparin tiheys MAFY-taulukosta (mafytaulukot.fi). Mikä on kappaleen massa? Anna vastaus yksikössä kg.",
+      "lookup": "MAFY",
+      "answer": 0.448,
+      "unit": "kg",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon kohdasta *Tiheyksiä*, kiinteiden aineiden tiheydet."
+      ]
     }
-   ]
-  },
-  {
-   "id": "fy1-7-L1-07",
-   "level": 1,
-   "text": "Ruokaöljyä kaadetaan varovasti vesilasiin. Öljyn tiheys on $920\\,\\text{kg/m}^3$ ja veden $1000\\,\\text{kg/m}^3$. Öljy ei sekoitu veteen. Mitä lasissa tapahtuu?",
-   "kind": [
-    "concept"
-   ],
-   "answer": "Öljy jää veden päälle, koska öljyn tiheys on pienempi kuin veden.",
-   "unit": "",
-   "tolerance": 0.02,
-   "choices": [
+  ],
+  "level2": [
     {
-     "text": "Öljy jää veden päälle, koska öljyn tiheys on pienempi kuin veden.",
-     "feedback": "Oikein: saman tilavuuden öljyssä on vähemmän massaa kuin vedessä ($0{,}92$ kertaa), joten öljy nousee veden päälle. Aineiden tiheyksiä verrataan, ei kappaleiden kokoa.",
-     "correct": true
+      "id": "fy1-7-L2-01",
+      "level": 2,
+      "text": "Kultaharkon mitat ovat $10{,}0\\,\\text{cm} \\cdot 5{,}0\\,\\text{cm} \\cdot 2{,}0\\,\\text{cm}$. Kullan tiheys on $19\\,300\\,\\text{kg/m}^3$. Kuinka suuri on harkon massa? Anna vastaus kilogrammoina.",
+      "figure": "fy1-7/gold-bar",
+      "answer": 1.9,
+      "unit": "kg",
+      "tolerance": 0.02
     },
     {
-     "text": "Öljy vajoaa lasin pohjalle, koska öljy on sakeampaa.",
-     "feedback": "Sakeus eli viskositeetti ei ratkaise. Ratkaisevaa on tiheys: öljyn tiheys on pienempi kuin veden, joten öljy ei vajoa."
+      "id": "fy1-7-L2-02",
+      "level": 2,
+      "text": "Laboratoriossa on pullo, jossa on $2{,}5\\,\\text{dm}^3$ etanolia. Etanolin tiheys on $790\\,\\text{kg/m}^3$. Kuinka suuri on nesteen massa? Anna vastaus kilogrammoina.",
+      "answer": 2.0,
+      "unit": "kg",
+      "tolerance": 0.02
     },
     {
-     "text": "Öljy ja vesi sekoittuvat tasaisesti, koska ne ovat molemmat nesteitä.",
-     "feedback": "Öljy ja vesi eivät sekoitu toisiinsa, joten ne jäävät eri kerroksiksi; tiheys ratkaisee, kumpi kerros on päällä."
+      "id": "fy1-7-L2-03",
+      "level": 2,
+      "text": "Metallikappaleen massa on $89{,}0\\,\\text{g}$. Kuvassa on mittalasi ennen kappaleen upottamista ja sen jälkeen. Kuinka suuri on kappaleen aineen tiheys? Anna vastaus yksikössä $\\text{kg/m}^3$.",
+      "figure": "fy1-7/cylinders-read",
+      "answer": 8900,
+      "unit": "kg/m³",
+      "tolerance": 0.03
     },
     {
-     "text": "Öljy vajoaa pohjalle, jos öljyä on lasissa enemmän kuin vettä.",
-     "feedback": "Öljyn ja veden määrä ei vaikuta siihen, kumpi on päällä. Tiheys on aineen ominaisuus, ja pienempi tiheys tarkoittaa ylempää kerrosta, kun nesteet eivät sekoitu."
+      "id": "fy1-7-L2-04",
+      "level": 2,
+      "text": "Tyhjän mittapullon massa on $215\\,\\text{g}$. Kun pulloon kaadetaan $250\\,\\text{cm}^3$ tuntematonta nestettä, vaaka näyttää $412\\,\\text{g}$. Kuinka suuri on nesteen tiheys? Anna vastaus yksikössä $\\text{kg/m}^3$.",
+      "answer": 788,
+      "unit": "kg/m³",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L2-05",
+      "level": 2,
+      "core": true,
+      "text": "Tasalaatuisesta metallista valmistettiin erikokoisia kappaleita, ja jokaisen tilavuus ja massa mitattiin. Piirrä mittauspisteistä $(V,m)$-kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Mikä on aineen tiheys yksikössä $\\text{g/cm}^3$? Mikä aine on kyseessä? Käytä luvun tiheystaulukkoa.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 2.7,
+      "unit": "g/cm³",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Metallikappaleiden massa tilavuuden funktiona",
+        "columns": [
+          "$V\\,(\\text{cm}^3)$",
+          "$m\\,(\\text{g})$"
+        ],
+        "rows": [
+          [
+            "10.0",
+            "27.3"
+          ],
+          [
+            "20.0",
+            "53.5"
+          ],
+          [
+            "30.0",
+            "81.6"
+          ],
+          [
+            "40.0",
+            "107.9"
+          ],
+          [
+            "50.0",
+            "135.4"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-7-L2-06",
+      "level": 2,
+      "text": "Nestettä kaadettiin mittalasiin vaiheittain, ja vaaka näytti mittalasin ja nesteen yhteismassan $m_\\text{yht}$ nesteen tilavuuden $V$ funktiona. Piirrä mittauspisteistä kuvaaja ja sovita pisteisiin suora. Mikä on nesteen tiheys yksikössä $\\text{kg/m}^3$? Määritä lisäksi tyhjän mittalasin massa ja selitä, miksi suora ei kulje origon kautta.",
+      "kind": [
+        "data",
+        "graph",
+        "reasoning"
+      ],
+      "answer": 920,
+      "unit": "kg/m³",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Mittalasin ja nesteen yhteismassa nesteen tilavuuden funktiona",
+        "columns": [
+          "$V\\,(\\text{cm}^3)$",
+          "$m_\\text{yht}\\,(\\text{g})$"
+        ],
+        "rows": [
+          [
+            "20.0",
+            "103.6"
+          ],
+          [
+            "40.0",
+            "121.2"
+          ],
+          [
+            "60.0",
+            "140.5"
+          ],
+          [
+            "80.0",
+            "158.9"
+          ],
+          [
+            "100.0",
+            "176.8"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy1-7-L2-07",
+      "level": 2,
+      "core": true,
+      "text": "Oppilas määritti metallikappaleen tiheyden vedensiirtomenetelmällä. Kappaleen massa on $107\\,\\text{g}$. Mittalasin lukema oli ennen upotusta $60\\,\\text{ml}$ ja upotuksen jälkeen $72\\,\\text{ml}$.\n\nOppilas laski $\\rho = 107\\,\\text{g} : 72\\,\\text{cm}^3 = 1{,}5\\,\\text{g/cm}^3$ ja päätteli kappaleen olevan kevyttä muovia.\n\nEtsi oppilaan virhe ja laske oikea tiheys yksikössä $\\text{g/cm}^3$. Mikä aine kappale voi olla?",
+      "kind": [
+        "error",
+        "experiment"
+      ],
+      "answer": 8.9,
+      "unit": "g/cm³",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy1-7-L2-08",
+      "level": 2,
+      "text": "Neljän tuntemattoman kiinteän kappaleen massat ja tilavuudet on ilmoitettu eri yksiköissä.\n\nKappale A: massa $135\\,\\text{g}$, tilavuus $50\\,\\text{cm}^3$\n\nKappale B: massa $0{,}36\\,\\text{kg}$, tilavuus $0{,}40\\,\\text{dm}^3$\n\nKappale C: massa $4{,}5\\,\\text{kg}$, tilavuus $500\\,\\text{cm}^3$\n\nKappale D: massa $120\\,\\text{g}$, tilavuus $100\\,\\text{ml}$\n\nMissä järjestyksessä kappaleet ovat tiheyden mukaan pienimmästä suurimpaan?",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "prompt": "Järjestä tiheyden mukaan pienimmästä suurimpaan.",
+      "order": [
+        {
+          "text": "Kappale B"
+        },
+        {
+          "text": "Kappale D"
+        },
+        {
+          "text": "Kappale A"
+        },
+        {
+          "text": "Kappale C"
+        }
+      ],
+      "answer": "Kappale B ($0{,}90\\,\\text{g/cm}^3$), kappale D ($1{,}2\\,\\text{g/cm}^3$), kappale A ($2{,}7\\,\\text{g/cm}^3$), kappale C ($9{,}0\\,\\text{g/cm}^3$).",
+      "unit": "",
+      "tolerance": 0.02
     }
-   ]
-  },
-  {
-   "id": "fy1-7-L1-08",
-   "level": 1,
-   "text": "Ongen lyijypainon tilavuus on $5{,}00\\,\\text{cm}^3$. Lyijyn tiheys on $11{,}3\\,\\text{g/cm}^3$. Kuinka suuri on lyijypainon massa? Anna vastaus grammoina.",
-   "figure": "fy1-7/sinker",
-   "kind": [
-    "model"
-   ],
-   "answer": 56.5,
-   "unit": "g",
-   "tolerance": 0.02
-  }
- ],
- "level2": [
-  {
-   "id": "fy1-7-L2-01",
-   "level": 2,
-   "text": "Kultaharkon mitat ovat $10{,}0\\,\\text{cm} \\cdot 5{,}0\\,\\text{cm} \\cdot 2{,}0\\,\\text{cm}$. Kullan tiheys on $19\\,300\\,\\text{kg/m}^3$. Kuinka suuri on harkon massa? Anna vastaus kilogrammoina.",
-   "figure": "fy1-7/gold-bar",
-   "answer": 1.9,
-   "unit": "kg",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy1-7-L2-02",
-   "level": 2,
-   "text": "Laboratoriossa on pullo, jossa on $2{,}5\\,\\text{dm}^3$ etanolia. Etanolin tiheys on $790\\,\\text{kg/m}^3$. Kuinka suuri on nesteen massa? Anna vastaus kilogrammoina.",
-   "answer": 2.0,
-   "unit": "kg",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy1-7-L2-03",
-   "level": 2,
-   "text": "Metallikappaleen massa on $89{,}0\\,\\text{g}$. Kuvassa on mittalasi ennen kappaleen upottamista ja sen jälkeen. Kuinka suuri on kappaleen aineen tiheys? Anna vastaus yksikössä $\\text{kg/m}^3$.",
-   "figure": "fy1-7/cylinders-read",
-   "answer": 8900,
-   "unit": "kg/m³",
-   "tolerance": 0.03
-  },
-  {
-   "id": "fy1-7-L2-04",
-   "level": 2,
-   "text": "Tyhjän mittapullon massa on $215\\,\\text{g}$. Kun pulloon kaadetaan $250\\,\\text{cm}^3$ tuntematonta nestettä, vaaka näyttää $412\\,\\text{g}$. Kuinka suuri on nesteen tiheys? Anna vastaus yksikössä $\\text{kg/m}^3$.",
-   "answer": 788,
-   "unit": "kg/m³",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy1-7-L2-05",
-   "level": 2,
-   "core": true,
-   "text": "Tasalaatuisesta metallista valmistettiin erikokoisia kappaleita, ja jokaisen tilavuus ja massa mitattiin. Piirrä mittauspisteistä $(V,m)$-kuvaaja ja sovita pisteisiin origon kautta kulkeva suora. Mikä on aineen tiheys yksikössä $\\text{g/cm}^3$? Mikä aine on kyseessä? Käytä luvun tiheystaulukkoa.",
-   "kind": [
-    "data",
-    "graph"
-   ],
-   "answer": 2.7,
-   "unit": "g/cm³",
-   "tolerance": 0.03,
-   "data": {
-    "caption": "Metallikappaleiden massa tilavuuden funktiona",
-    "columns": [
-     "$V\\,(\\text{cm}^3)$",
-     "$m\\,(\\text{g})$"
-    ],
-    "rows": [
-     [
-      "10.0",
-      "27.3"
-     ],
-     [
-      "20.0",
-      "53.5"
-     ],
-     [
-      "30.0",
-      "81.6"
-     ],
-     [
-      "40.0",
-      "107.9"
-     ],
-     [
-      "50.0",
-      "135.4"
-     ]
-    ]
-   }
-  },
-  {
-   "id": "fy1-7-L2-06",
-   "level": 2,
-   "text": "Nestettä kaadettiin mittalasiin vaiheittain, ja vaaka näytti mittalasin ja nesteen yhteismassan $m_\\text{yht}$ nesteen tilavuuden $V$ funktiona. Piirrä mittauspisteistä kuvaaja ja sovita pisteisiin suora. Mikä on nesteen tiheys yksikössä $\\text{kg/m}^3$? Määritä lisäksi tyhjän mittalasin massa ja selitä, miksi suora ei kulje origon kautta.",
-   "kind": [
-    "data",
-    "graph",
-    "reasoning"
-   ],
-   "answer": 920,
-   "unit": "kg/m³",
-   "tolerance": 0.03,
-   "data": {
-    "caption": "Mittalasin ja nesteen yhteismassa nesteen tilavuuden funktiona",
-    "columns": [
-     "$V\\,(\\text{cm}^3)$",
-     "$m_\\text{yht}\\,(\\text{g})$"
-    ],
-    "rows": [
-     [
-      "20.0",
-      "103.6"
-     ],
-     [
-      "40.0",
-      "121.2"
-     ],
-     [
-      "60.0",
-      "140.5"
-     ],
-     [
-      "80.0",
-      "158.9"
-     ],
-     [
-      "100.0",
-      "176.8"
-     ]
-    ]
-   }
-  },
-  {
-   "id": "fy1-7-L2-07",
-   "level": 2,
-   "core": true,
-   "text": "Oppilas määritti metallikappaleen tiheyden vedensiirtomenetelmällä. Kappaleen massa on $107\\,\\text{g}$. Mittalasin lukema oli ennen upotusta $60\\,\\text{ml}$ ja upotuksen jälkeen $72\\,\\text{ml}$.\n\nOppilas laski $\\rho = 107\\,\\text{g} : 72\\,\\text{cm}^3 = 1{,}5\\,\\text{g/cm}^3$ ja päätteli kappaleen olevan kevyttä muovia.\n\nEtsi oppilaan virhe ja laske oikea tiheys yksikössä $\\text{g/cm}^3$. Mikä aine kappale voi olla?",
-   "kind": [
-    "error",
-    "experiment"
-   ],
-   "answer": 8.9,
-   "unit": "g/cm³",
-   "tolerance": 0.03
-  },
-  {
-   "id": "fy1-7-L2-08",
-   "level": 2,
-   "text": "Neljän tuntemattoman kiinteän kappaleen massat ja tilavuudet on ilmoitettu eri yksiköissä.\n\nKappale A: massa $135\\,\\text{g}$, tilavuus $50\\,\\text{cm}^3$\n\nKappale B: massa $0{,}36\\,\\text{kg}$, tilavuus $0{,}40\\,\\text{dm}^3$\n\nKappale C: massa $4{,}5\\,\\text{kg}$, tilavuus $500\\,\\text{cm}^3$\n\nKappale D: massa $120\\,\\text{g}$, tilavuus $100\\,\\text{ml}$\n\nMissä järjestyksessä kappaleet ovat tiheyden mukaan pienimmästä suurimpaan?",
-   "kind": [
-    "model",
-    "reasoning"
-   ],
-   "prompt": "Järjestä tiheyden mukaan pienimmästä suurimpaan.",
-   "order": [
+  ],
+  "level3": [
     {
-     "text": "Kappale B"
+      "id": "fy1-7-L3-01",
+      "level": 3,
+      "text": "Kuparikappaleella ja alumiinikappaleella on sama massa. Kuinka moninkertainen on alumiinikappaleen tilavuus kuparikappaleen tilavuuteen verrattuna? Käytä taulukon tiheyksiä.",
+      "answer": 3.32,
+      "unit": "kertaa",
+      "tolerance": 0.02
     },
     {
-     "text": "Kappale D"
+      "id": "fy1-7-L3-02",
+      "level": 3,
+      "text": "Kappale tehdään valamalla yhteen $100\\,\\text{cm}^3$ alumiinia ja $50\\,\\text{cm}^3$ rautaa. Tilavuudet oletetaan yhteenlaskettaviksi. Kuinka suuri on kappaleen keskimääräinen tiheys? Käytä luvun tiheystaulukkoa. Anna vastaus yksikössä $\\text{g/cm}^3$.",
+      "answer": 4.42,
+      "unit": "g/cm³",
+      "tolerance": 0.02
     },
     {
-     "text": "Kappale A"
+      "id": "fy1-7-L3-03",
+      "level": 3,
+      "text": "Pyöreän kuparilangan halkaisija on $1{,}0\\,\\text{mm}$ ja massa $0{,}50\\,\\text{kg}$. Kuinka pitkä lanka on? Langan poikkileikkaus on ympyrä, jonka pinta-ala on $\\pi r^2$, ja langan tilavuus on pinta-ala kertaa pituus. Käytä luvun tiheystaulukkoa.",
+      "answer": 71,
+      "unit": "m",
+      "tolerance": 0.02
     },
     {
-     "text": "Kappale C"
+      "id": "fy1-7-L3-04",
+      "level": 3,
+      "text": "Oppilas määrittää metallikappaleen tiheyden vedensiirtomenetelmällä. Kappaleen massa on $113\\,\\text{g}$. Mittalasin lukema ennen upotusta on $50{,}0\\,\\text{ml}$ ja upotuksen jälkeen $62{,}0\\,\\text{ml}$.\n\nJälkeenpäin oppilas huomaa, että kappaleen pintaan oli jäänyt ilmakupla, jonka tilavuus on $2{,}0\\,\\text{ml}$.\n\nMikä on kappaleen todellinen tiheys yksikössä $\\text{g/cm}^3$? Laske myös oppilaan alun perin saama tiheys ja sen prosenttivirhe, päättele taulukon perusteella, mitä metallia kumpikin tiheys antaisi ymmärtää kappaleen olevan, ja kerro, miten kupla olisi voitu poistaa tai havaita.",
+      "kind": [
+        "data",
+        "error",
+        "reasoning"
+      ],
+      "answer": 11.3,
+      "unit": "g/cm³",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L3-05",
+      "level": 3,
+      "text": "Seoskappale on valettu kuparista ja alumiinista. Sen tilavuus on $100\\,\\text{cm}^3$ ja massa $520\\,\\text{g}$. Tilavuudet oletetaan yhteenlaskettaviksi. Kuinka monta kuutiosenttimetriä kuparia kappaleessa on? Käytä luvun tiheystaulukon tiheyksiä. Perustele myös, kumpaa metallia kappaleessa on enemmän tilavuuden ja kumpaa massan mukaan.",
+      "kind": [
+        "model",
+        "reasoning"
+      ],
+      "answer": 39.9,
+      "unit": "cm³",
+      "tolerance": 0.03
     }
-   ],
-   "answer": "Kappale B ($0{,}90\\,\\text{g/cm}^3$), kappale D ($1{,}2\\,\\text{g/cm}^3$), kappale A ($2{,}7\\,\\text{g/cm}^3$), kappale C ($9{,}0\\,\\text{g/cm}^3$).",
-   "unit": "",
-   "tolerance": 0.02
-  }
- ],
- "level3": [
-  {
-   "id": "fy1-7-L3-01",
-   "level": 3,
-   "text": "Kuparikappaleella ja alumiinikappaleella on sama massa. Kuinka moninkertainen on alumiinikappaleen tilavuus kuparikappaleen tilavuuteen verrattuna? Käytä taulukon tiheyksiä.",
-   "answer": 3.32,
-   "unit": "kertaa",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy1-7-L3-02",
-   "level": 3,
-   "text": "Kappale tehdään valamalla yhteen $100\\,\\text{cm}^3$ alumiinia ja $50\\,\\text{cm}^3$ rautaa. Tilavuudet oletetaan yhteenlaskettaviksi. Kuinka suuri on kappaleen keskimääräinen tiheys? Käytä luvun tiheystaulukkoa. Anna vastaus yksikössä $\\text{g/cm}^3$.",
-   "answer": 4.42,
-   "unit": "g/cm³",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy1-7-L3-03",
-   "level": 3,
-   "text": "Pyöreän kuparilangan halkaisija on $1{,}0\\,\\text{mm}$ ja massa $0{,}50\\,\\text{kg}$. Kuinka pitkä lanka on? Langan poikkileikkaus on ympyrä, jonka pinta-ala on $\\pi r^2$, ja langan tilavuus on pinta-ala kertaa pituus. Käytä luvun tiheystaulukkoa.",
-   "answer": 71,
-   "unit": "m",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy1-7-L3-04",
-   "level": 3,
-   "text": "Oppilas määrittää metallikappaleen tiheyden vedensiirtomenetelmällä. Kappaleen massa on $113\\,\\text{g}$. Mittalasin lukema ennen upotusta on $50{,}0\\,\\text{ml}$ ja upotuksen jälkeen $62{,}0\\,\\text{ml}$.\n\nJälkeenpäin oppilas huomaa, että kappaleen pintaan oli jäänyt ilmakupla, jonka tilavuus on $2{,}0\\,\\text{ml}$.\n\nMikä on kappaleen todellinen tiheys yksikössä $\\text{g/cm}^3$? Laske myös oppilaan alun perin saama tiheys ja sen prosenttivirhe, päättele taulukon perusteella, mitä metallia kumpikin tiheys antaisi ymmärtää kappaleen olevan, ja kerro, miten kupla olisi voitu poistaa tai havaita.",
-   "kind": [
-    "data",
-    "error",
-    "reasoning"
-   ],
-   "answer": 11.3,
-   "unit": "g/cm³",
-   "tolerance": 0.02
-  },
-  {
-   "id": "fy1-7-L3-05",
-   "level": 3,
-   "text": "Seoskappale on valettu kuparista ja alumiinista. Sen tilavuus on $100\\,\\text{cm}^3$ ja massa $520\\,\\text{g}$. Tilavuudet oletetaan yhteenlaskettaviksi. Kuinka monta kuutiosenttimetriä kuparia kappaleessa on? Käytä luvun tiheystaulukon tiheyksiä. Perustele myös, kumpaa metallia kappaleessa on enemmän tilavuuden ja kumpaa massan mukaan.",
-   "kind": [
-    "model",
-    "reasoning"
-   ],
-   "answer": 39.9,
-   "unit": "cm³",
-   "tolerance": 0.03
-  }
- ]
+  ]
 }

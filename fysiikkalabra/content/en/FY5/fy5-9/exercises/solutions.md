@@ -202,3 +202,35 @@ $$\begin{aligned}
 $T_\text{M} = 2.461 \cdot 1.00\,\text{s} \approx 2.46\,\text{s}$
 
 So the period of the pendulum becomes about $2.5$ times as long, and the period of the spring stays the same. Justification: the restoring force of the pendulum is a part of the weight, which is smaller on the Moon, but the mass to be accelerated does not decrease. The force of the spring depends only on the displacement and the spring constant. The acceleration of free fall on the Moon is about one sixth of the value on Earth, but because of the square root the period becomes only about $\sqrt{6.1} \approx 2.5$ times as long, not six times.
+
+## fy5-9-L1-09
+**Given:** pendulum length $l = 1.00\,\text{m}$; from the MAFY table (Solar System, Mars) free-fall acceleration $g = 3.72\,\text{m/s}^2$
+**Find:** the period $T$ in seconds
+**Principle:** With small swings a mathematical pendulum is a harmonic oscillator whose restoring force is the component of the weight along the path. The mass cancels, so the period depends only on the length and the free-fall acceleration.
+**Formula:** $T = 2\pi\sqrt{\dfrac{l}{g}}$
+**Conversions:** None needed, all quantities are in SI units.
+**Substitution:** $T = 2\pi\sqrt{\dfrac{1.00\,\text{m}}{3.72\,\text{m/s}^2}} = 2\pi \cdot 0.5185\,\text{s} = 3.258\,\text{s}$
+**Answer:** $3.26\,\text{s}$, three significant figures like the length $1.00\,\text{m}$. The value of $g$ is from the MAFY table (Solar System, Mars); different tables give slightly different values, and the answer is accepted within about $\pm 4\,\%$.
+**Reasonableness:** On the Earth a pendulum of the same length has a period of $2\pi\sqrt{1.00/9.81}\,\text{s} = 2.01\,\text{s}$. On Mars the free-fall acceleration is smaller, so the period is longer: $\sqrt{9.81/3.72} = 1.62$ times as long.
+
+## fy5-9-L1-10
+**Given:** from the graph the position $x$ of the body as a function of time $t$ over $0$–$1.0\,\text{s}$; spring constant $k = 120\,\text{N/m}$
+**Find:** the energy of the oscillation $E$ in joules
+**Principle:** In frictionless oscillation the mechanical energy is conserved. At an extreme position the speed is zero and all the energy is the spring's potential energy, so the energy is determined by the amplitude.
+**Reading the graph:** The peaks of the curve are at $x = 3.0\,\text{cm}$ and the troughs at $x = -3.0\,\text{cm}$. The amplitude is measured from the equilibrium position $x = 0$ to a peak, so $A = 3.0\,\text{cm}$.
+**Formula:** $E = \dfrac{1}{2}kA^2$
+**Conversions:** $A = 3.0\,\text{cm} = 0.030\,\text{m}$
+**Substitution:** $E = \dfrac{1}{2} \cdot 120\,\text{N/m} \cdot (0.030\,\text{m})^2 = 0.054\,\text{J}$
+**Answer:** $0.054\,\text{J}$, two significant figures like the amplitude.
+**Reasonableness:** The energy is small because the displacement is only a few centimetres. If the amplitude were doubled, the energy would be four times as great, because $E \propto A^2$.
+
+## fy5-9-L2-09
+**Given:** from the graph the position $x$ of the body as a function of time $t$ over $0$–$1.0\,\text{s}$; mass $m = 0.150\,\text{kg}$
+**Find:** the spring constant $k$ in $\text{N/m}$
+**Principle:** The period of a body oscillating on a spring is $T = 2\pi\sqrt{\tfrac{m}{k}}$. The period is read from the graph and the spring constant is solved from the formula.
+**Reading the graph:** The peaks of the curve are at the times $0$, $0.40\,\text{s}$ and $0.80\,\text{s}$. The interval between two successive peaks is one full oscillation, so $T = 0.40\,\text{s}$. The troughs at $0.20\,\text{s}$ and $0.60\,\text{s}$ confirm this.
+**Formula:** $T = 2\pi\sqrt{\dfrac{m}{k}}$, so $T^2 = \dfrac{4\pi^2 m}{k}$ and $k = \dfrac{4\pi^2 m}{T^2}$
+**Conversions:** None needed, all quantities are in SI units.
+**Substitution:** $k = \dfrac{4\pi^2 \cdot 0.150\,\text{kg}}{(0.40\,\text{s})^2} = \dfrac{5.922\,\text{kg}}{0.16\,\text{s}^2} = 37.0\,\text{N/m}$
+**Answer:** $37\,\text{N/m}$, two significant figures like the period $0.40\,\text{s}$.
+**Reasonableness:** Check: $T = 2\pi\sqrt{0.150/37.0}\,\text{s} = 0.40\,\text{s}$, so the result fits the graph. The value is of the order of an ordinary small spring.

@@ -246,3 +246,35 @@ $$\begin{aligned} \Delta\theta &= \dfrac{1{,}0\,\text{kPa}}{0{,}3660\,\text{kPa}
 $115{,}5\,\text{kPa} - 102{,}0\,\text{kPa} = 13{,}5\,\text{kPa}$
 
 mikä on yli kymmenkertainen epävarmuuteen $1{,}0\,\text{kPa}$ nähden. Epävarmuusvälit $101{,}0$–$103{,}0\,\text{kPa}$ ja $114{,}5$–$116{,}5\,\text{kPa}$ ovat erillään, joten paine kasvoi lämpötilasta $20{,}0\,{}^\circ\text{C}$ lämpötilaan $60{,}0\,{}^\circ\text{C}$. Muut päätelmät eivät kestä. Lämpötilojen $20{,}0\,{}^\circ\text{C}$ ja $22{,}0\,{}^\circ\text{C}$ lukemien ero $0{,}8\,\text{kPa}$ jää epävarmuuden $1{,}0\,\text{kPa}$ sisään, joten kasvua ei voi osoittaa tästä parista. Sama ero ei kuitenkaan todista, ettei paine muutu, koska pieni muutos voi hukkua epävarmuuteen ja koko aineistossa kasvu näkyy selvästi. Pisteisiin sovitettu suora antaisi lämpötilassa $-100\,{}^\circ\text{C}$ arvion noin $62\,\text{kPa}$, mutta piste on $120\,{}^\circ\text{C}$ mittausalueen alapuolella, joten arvo on epävarma arvio, ei varma tulos. Tulos on järkevä: paineen kasvu lämpötilan mukana sopii suljettuun jäykkään pulloon, jossa kaasun paine kasvaa lämpötilan noustessa.
+
+## fy3-13-L1-09
+**Annettu:** kelvinlämpötila nollapisteessä $T = 0\,\text{K}$; taulukosta (MAFY-taulukko, yksikkömuunnoksia) $0\,{}^\circ\text{C} = 273{,}15\,\text{K}$, joten $T_0 = 273{,}15\,\text{K}$
+**Kysytty:** absoluuttisen nollapisteen celsiuslämpötila $\theta_0$ celsiusasteina
+**Periaate:** Celsius- ja kelvinasteikon asteet ovat yhtä suuret, ja asteikot ovat siirtyneet toistensa suhteen vakion $T_0$ verran. Absoluuttinen nollapiste on kelvinasteikon nollakohta, joten sen celsiuslämpötila saadaan asettamalla $T = 0$.
+**Kaava:** $T = \theta + T_0$, joten $0 = \theta_0 + T_0$ ja $\theta_0 = -T_0$
+**Muunnokset:** Muunnoksia ei tarvita: $T_0$ on jo taulukossa, ja lämpötilan muutos on yhtä suuri kelvineinä ja celsiusasteina.
+**Sijoitus:** $\theta_0 = -273{,}15\,{}^\circ\text{C}$
+**Vastaus:** $\theta_0 = -273{,}15\,{}^\circ\text{C} \approx -273\,{}^\circ\text{C}$. Arvo $T_0 = 273{,}15\,\text{K}$ on MAFY-taulukosta (yksikkömuunnoksia); taulukon arvo on sovittu tarkaksi, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Tulos on samaa kokoluokkaa kuin kaasun painemittauksista ekstrapoloidut arvot, noin $-270\,{}^\circ\text{C}$. Se on myös selvästi alempana kuin nestetypen kiehumispiste $-195{,}8\,{}^\circ\text{C}$, eli kylmempää ei voi saada.
+
+## fy3-13-L2-09
+**Annettu:** kuvaajasta luettuna pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$; pisteet ovat suoralla
+**Kysytty:** lämpötila $\theta_0$, jossa suoran paine on nolla, celsiusasteina
+**Periaate:** Jäykässä suljetussa astiassa kaasun määrä ja tilavuus pysyvät samoina, joten paine riippuu vain lämpötilasta. Pisteet ovat suoralla, joten suoraa voidaan jatkaa mittausalueen ulkopuolelle eli ekstrapoloida, kunnes paine on nolla.
+**Kuvaajan lukeminen:** Ensimmäinen piste on ruudukon risteyksessä $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$. Viimeinen piste on hieman $100\,\text{kPa}$:n viivan yläpuolella, $102{,}5\,\text{kPa}$, lämpötilassa $100\,{}^\circ\text{C}$. Näistä kahdesta pisteestä lasketaan suoran kulmakerroin. Piirtämällä suora silmämääräisesti vaaka-akselille saa arvon, joka on välillä $-260\,\ldots -285\,{}^\circ\text{C}$ ja joka hyväksytään.
+**Kaava:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $p = p_1 + k(\theta - \theta_1) = 0$, joten $\theta_0 = \theta_1 - \dfrac{p_1}{k}$
+**Muunnokset:** Muunnoksia ei tarvita: paineet ovat kilopascaleina ja lämpötilat celsiusasteina.
+**Sijoitus:** $k = \dfrac{(102{,}5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, ja $\theta_0 = 0\,{}^\circ\text{C} - \dfrac{75\,\text{kPa}}{0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}} = -272{,}7\,{}^\circ\text{C}$
+**Vastaus:** $\theta_0 \approx -273\,{}^\circ\text{C}$. Kuvaajasta luetun paineen tarkkuus on noin $1\,\text{kPa}$, joten tuloksen epävarmuus on useita celsiusasteita eikä kolmas numero ole luotettava.
+**Järkevyys:** Tulos on lähellä hyväksyttyä arvoa $-273{,}15\,{}^\circ\text{C}$. Riippumaton tarkistus: jos paine on verrannollinen kelvinlämpötilaan, kulmakerroin on $75\,\text{kPa} / 273{,}15\,\text{K} = 0{,}275\,\text{kPa/K}$, mikä on sama kuin luettu kulmakerroin.
+
+## fy3-13-L2-10
+**Annettu:** kuvaajasta luettuna pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$; paine riippuu lämpötilasta lineaarisesti myös mittausalueen ulkopuolella; $T = 200\,\text{K}$
+**Kysytty:** paine $p$ lämpötilassa $200\,\text{K}$ kilopascaleina
+**Periaate:** Jäykässä suljetussa astiassa kaasun määrä ja tilavuus pysyvät samoina, joten paine riippuu vain lämpötilasta. Pisteet ovat suoralla, joten suoraa voidaan jatkaa mittausalueen ulkopuolelle. Kuvaajan lämpötila on celsiusasteina, joten kelvinlämpötila on ensin muunnettava celsiusasteiksi.
+**Kuvaajan lukeminen:** Ensimmäinen piste on ruudukon risteyksessä $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja viimeinen hieman $100\,\text{kPa}$:n viivan yläpuolella, $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$. Näistä lasketaan suoran kulmakerroin, ja suoraa jatketaan vasemmalle. Silmämääräisesti piirtämällä saa arvon $52$–$58\,\text{kPa}$, joka hyväksytään.
+**Kaava:** $\theta = T - 273{,}15\,\text{K}$ (celsiusasteina), $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $p = p_1 + k(\theta - \theta_1)$
+**Muunnokset:** $\theta = 200 - 273{,}15 = -73{,}15\,{}^\circ\text{C}$
+**Sijoitus:** $k = \dfrac{(102{,}5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, ja $p = 75\,\text{kPa} + 0{,}275\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-73{,}15 - 0)\,{}^\circ\text{C} = 75\,\text{kPa} - 20{,}1\,\text{kPa} = 54{,}9\,\text{kPa}$
+**Vastaus:** $p \approx 55\,\text{kPa}$, kaksi merkitsevää numeroa, koska kuvaajasta luettu paine on noin $1\,\text{kPa}$:n tarkkuudella.
+**Järkevyys:** Lämpötila $200\,\text{K}$ on alle mittausalueen alarajan $273{,}15\,\text{K}$, joten paineen pitää olla pienempi kuin $75\,\text{kPa}$ mutta yli nollan. Riippumaton tarkistus: kun paine on verrannollinen kelvinlämpötilaan, $p \approx 75\,\text{kPa} \cdot \dfrac{200\,\text{K}}{273{,}15\,\text{K}} = 54{,}9\,\text{kPa}$.

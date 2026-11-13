@@ -199,3 +199,25 @@ $\begin{aligned} v_\text{v} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\
 $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,}8\,\text{m/s} \end{aligned}$
 **Vastaus:** a) $196\,\text{Hz}$. Keskeltä näpäytettäessä puuttuvat parilliset harmoniset $392\,\text{Hz}$, $784\,\text{Hz}$ ja $1176\,\text{Hz}$. b) $255\,\text{m/s}$, kolme merkitsevää numeroa kuten pituudessa ja taajuudessa. c) Parillisilla harmonisilla on kielen keskellä solmu. Solmukohta ei lähde värähtelemään, joten ne puuttuvat. Parittomilla on keskellä kupu, joten ne syntyvät. Keskeltä näpätty ääni on lähes puhdas perussävel ja pehmeä. Sillan lähellä kaikki harmoniset syntyvät. Esimerkiksi kolmannen amplitudi on $0{,}30$ ja kuudennen $0{,}09$. Runsaat yläsävelet tekevät äänestä kirkkaan. Korkeus on sama, koska perustaajuus on molemmissa $196\,\text{Hz}$.
 **Järkevyys:** Aallonpituus on $\lambda_1 = 2 \cdot 0{,}650\,\text{m} = 1{,}30\,\text{m}$, ja $1{,}30\,\text{m} \cdot 196\,\text{Hz} \approx 255\,\text{m/s}$. Se on tavallinen suuruus kitaran kielelle. Taajuus $196\,\text{Hz}$ on sävel G3 eli kitaran kolmas kieli. Keskeltä näpäytettäessä parittomien amplitudit pienenevät suunnilleen kuten $\tfrac{1}{n^2}$: $\tfrac{1}{9} = 0{,}11$ ja $\tfrac{1}{25} = 0{,}04$, kuten taulukossa.
+
+## fy5-14-L1-10
+**Annettu:** kuvan spektrissä on viisi piikkiä; piikkien taajuudet luetaan kuvasta
+**Kysytty:** äänen perustaajuus $f_1$ hertseinä
+**Periaate:** Soittimen ääni koostuu perustaajuudesta ja sen monikerroista eli yläsävelistä. Spektrin piikit ovat siksi harmonisen sarjan taajuuksilla $f_1, 2f_1, 3f_1, \ldots$ Perustaajuus on sarjan alin taajuus. Se on yhtä suuri kuin vierekkäisten piikkien väli. Se ei ole aina voimakkain piikki.
+**Kuvaajan lukeminen:** Piikit ovat taajuuksilla $200\,\text{Hz}$, $400\,\text{Hz}$, $600\,\text{Hz}$, $800\,\text{Hz}$ ja $1000\,\text{Hz}$. Korkein piikki on kohdassa $400\,\text{Hz}$, ja alin piikki on kohdassa $200\,\text{Hz}$. Vierekkäisten piikkien väli on $200\,\text{Hz}$.
+**Kaava:** $f_n = n f_1$, joten $f_1 = f_n - f_{n-1}$ ja alin piikki on $f_1$
+**Muunnokset:** Niitä ei tarvita. Taajuudet luetaan hertseinä.
+**Sijoitus:** $f_1 = 200\,\text{Hz}$ ja tarkistus piikkien välistä: $f_1 = 400\,\text{Hz} - 200\,\text{Hz} = 200\,\text{Hz}$
+**Vastaus:** $200\,\text{Hz}$, kolme merkitsevää numeroa kuten kuvaajasta luettu taajuus. Voimakkain piikki $400\,\text{Hz}$ on ensimmäinen yläsävel eli toinen harmoninen, ei perustaajuus.
+**Järkevyys:** Kaikki piikit ovat perustaajuuden kokonaislukukertoja: $2 \cdot 200\,\text{Hz} = 400\,\text{Hz}$, $3 \cdot 200\,\text{Hz} = 600\,\text{Hz}$, $4 \cdot 200\,\text{Hz} = 800\,\text{Hz}$ ja $5 \cdot 200\,\text{Hz} = 1000\,\text{Hz}$. Jos perustaajuus olisi $400\,\text{Hz}$, piikki kohdassa $200\,\text{Hz}$ jäisi selittämättä. Korvalla kuultu sävelkorkeus vastaa perustaajuutta $200\,\text{Hz}$.
+
+## fy5-14-L2-08
+**Annettu:** toisen ääniraudan taajuus $f_2 = 523\,\text{Hz}$, ja se on korkeampi kuin toisen; huojuntajakso luetaan kuvasta
+**Kysytty:** toisen ääniraudan taajuus $f_1$ hertseinä
+**Periaate:** Kaksi lähes samantaajuista ääntä huojuu. Äänen voimakkuus vaihtelee, ja voimakkaita hetkiä on sekunnissa yhtä monta kuin taajuuksien erotus: $f_\text{h} = |f_2 - f_1|$. Pelkkä erotus ei kerro, kumpi ääni on korkeampi. Tehtävä kuitenkin kertoo, että $523\,\text{Hz}$ on korkeampi.
+**Kuvaajan lukeminen:** Äänen voimakkuus on suurimmillaan hetkillä $0$, $0{,}25\,\text{s}$, $0{,}50\,\text{s}$, $0{,}75\,\text{s}$ ja $1{,}00\,\text{s}$. Peräkkäisten voimakkaiden hetkien väli eli huojuntajakso on $T_\text{h} = 0{,}25\,\text{s}$.
+**Kaava:** $f_\text{h} = \dfrac{1}{T_\text{h}}$ ja $f_\text{h} = f_2 - f_1$, josta $f_1 = f_2 - f_\text{h}$
+**Muunnokset:** Niitä ei tarvita. Jakso on sekunteina, joten huojuntataajuus tulee hertseinä.
+**Sijoitus:** $f_\text{h} = \dfrac{1}{0{,}25\,\text{s}} = 4{,}0\,\text{Hz}$, joten $f_1 = 523\,\text{Hz} - 4{,}0\,\text{Hz} = 519\,\text{Hz}$
+**Vastaus:** $519\,\text{Hz}$, kokonaisina hertseinä kuten annettu taajuus $523\,\text{Hz}$.
+**Järkevyys:** Kuvassa on sekunnin aikana neljä voimakasta hetkeä ensimmäisen jälkeen, joten huojuntataajuus on $4\,\text{Hz}$, mikä on sama kuin taajuuksien erotus $523\,\text{Hz} - 519\,\text{Hz}$. Erotus on pieni verrattuna taajuuksiin. Siksi huojunta kuuluu hitaana vaihteluna eikä kahtena erillisenä sävelenä.

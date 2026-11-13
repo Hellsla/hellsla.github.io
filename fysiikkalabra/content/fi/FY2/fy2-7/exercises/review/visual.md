@@ -1,7 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d1be3d5c2b9e2503
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-2 polish diff (git diff HEAD~1, commit 29f864da6) only
-Round: 2
+CONTENT-HASH: d142b1dc9f41c8e8
 
 ## Blocking
 - none
@@ -10,5 +8,8 @@ Round: 2
 - none
 
 ## Checked
-- exercises.json first feedback: "johtimien sisäenergiaksi, joka siirtyy lämpönä ympäristöön" now matches the wording of the other edits; grammar correct.
-- Round-1 changes are not re-reviewed (they passed in round 1). No captures opened (diff judged from source).
+- fy2-7-open-exercises-1280-9: L1-09 solution Annettu to Järkevyys with the changed Vastaus sentence; rows aligned at =, units upright, nothing clipped.
+- 360 px from the packet's layout check only.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

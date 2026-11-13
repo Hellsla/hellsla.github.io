@@ -124,6 +124,27 @@
           "feedback": "Tässä etuliitteiden suunta on kääntynyt: giga on suurempi kuin mega, joten gigajoule on tuhat megajoulea. Tämä arvo on $1000\\,\\text{GJ} = 1\\,000\\,000\\,\\text{MJ}$."
         }
       ]
+    },
+    {
+      "id": "fy2-2-L1-10",
+      "level": 1,
+      "text": "Suklaapatukan pakkauksessa lukee, että patukan energiasisältö on $180\\,\\text{kcal}$. Energiaa ilmoitetaan joskus kaloreina ($\\text{cal}$), vaikka SI-yksikkö on joule. Hae kalorin ($1\\,\\text{cal}$) muunnos jouleiksi MAFY-taulukosta (mafytaulukot.fi). Kuinka paljon energiaa patukka sisältää kilojouleina?",
+      "lookup": "MAFY",
+      "answer": 753.6,
+      "unit": "kJ",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Yksikkömuunnoksia*."
+      ]
+    },
+    {
+      "id": "fy2-2-L1-11",
+      "level": 1,
+      "text": "Asteikolla jokainen pieni väli on kymmenkertainen edelliseen, ja siihen on merkitty kolme energiaa. Lue kuvasta, kuinka paljon energiaa teeveden kiehauttaminen vaatii. Anna vastaus kilojouleina.",
+      "figure": "fy2-2/tikapuut-kohteet",
+      "answer": 100,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level2": [

@@ -220,3 +220,35 @@ Yhteensä $Q = 21{,}32 \cdot 10^{9}\,\text{J}$, ja teho $P = \dfrac{21{,}32 \cdo
 **Vastaus:** $590\,\text{kW}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska vesikerroksen paksuus $0{,}030\,\text{m}$ ja jään lämpötila $-5{,}0\,{}^\circ\text{C}$ ovat kahdella numerolla.
 **Järkevyys:** Arvio: kun $54\,000\,\text{kg}$ jäätyy, tarvitaan noin $0{,}33\,\text{MJ/kg} \cdot 54\,000\,\text{kg} \approx 18\,\text{GJ}$ ja kaikkiaan noin $21\,\text{GJ}$. Se on $21{,}3\,\text{GJ} : 3{,}6\,\text{GJ/MWh} \approx 5{,}9\,\text{MWh}$ eli noin $5900\,\text{kWh}$. Kymmenessä tunnissa teho on noin $590\,\text{kW}$.
 **Mallivastaus d)-kohtaan:** jäätyminen vaatii eniten, noin $85\,\%$ koko energiasta. Jäätymislämpö $s = 334\,\text{kJ/kg}$ vastaa suunnilleen $80\,\text{K}$:n lämpötilan muutosta vedessä ($334 : 4{,}19 \approx 80$). Veden ja jään jäähtyminen on vain $12\,\text{K}$ ja $5{,}0\,\text{K}$. Todellinen tarvittava jäähdytysteho on laskettua suurempi, koska hallin ilmasta, valaistuksesta, katsojista, betonilaatasta ja maaperästä tulee lisää lämpöä. Malli antaa siis alarajan. Koneen sähköteho riippuu lisäksi sen kylmäkertoimesta.
+
+## fy3-16-L1-09
+**Annettu:** veden massa $m = 0{,}30\,\text{kg}$, lämpötila $100\,{}^\circ\text{C}$. Taulukosta (MAFY-taulukko, aineiden olomuodon muutokset, vesi) $r = 2260\,\text{kJ/kg}$.
+**Kysytty:** höyrystymiseen sitoutuva lämpö $Q$ kilojouleina
+**Periaate:** Vesi on jo kiehumispisteessä. Siksi sen lämpötila ei muutu. Kaikki lämpö kuluu olomuodon muutokseen. Ominaishöyrystymislämpö $r$ kertoo, kuinka paljon lämpöä tarvitaan yhden kilogramman höyrystämiseen. Lämpö otetaan kiukaan kivistä. Energia säilyy.
+**Kaava:** $Q = rm$
+**Muunnokset:** Ei tarvita. Luku $r$ on yksikössä $\text{kJ/kg}$ ja massa on kilogrammoina. Tulos tulee suoraan kilojouleina.
+**Sijoitus:** $Q = 2260\,\dfrac{\text{kJ}}{\text{kg}} \cdot 0{,}30\,\text{kg} = 678\,\text{kJ}$
+**Vastaus:** $Q \approx 680\,\text{kJ}$. Vastaus annetaan kahdella merkitsevällä numerolla, kuten massa $0{,}30\,\text{kg}$. Arvo $r = 2260\,\text{kJ/kg}$ on MAFY-taulukosta (aineiden olomuodon muutokset, vesi). Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Karkea arvio: $2300\,\text{kJ/kg} \cdot 0{,}3\,\text{kg} \approx 690\,\text{kJ}$. Höyrystyminen sitoo yli viisi kertaa enemmän lämpöä kuin saman veden lämmittäminen $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:seen. Lämmittämiseen kuluisi $0{,}30\,\text{kg} \cdot 4{,}19\,\text{kJ/(kg}\cdot\text{K)} \cdot 100\,\text{K} \approx 126\,\text{kJ}$. Siksi löylyvesi viilentää kiuasta voimakkaasti.
+
+## fy3-16-L2-09
+**Annettu:** kuvaajasta luettuna lämpötila nousee pisteestä $(0\,\text{s};\ 20\,{}^\circ\text{C})$ pisteeseen $(180\,\text{s};\ 60\,{}^\circ\text{C})$. Lisäksi $m = 2{,}0\,\text{kg}$ ja $P = 400\,\text{W}$.
+**Kysytty:** ominaislämpökapasiteetti $c$ yksikössä $\text{J/(kg}\cdot\text{K)}$
+**Periaate:** Energia säilyy. Koko vastuksen teho siirtyy kappaleeseen. Ajassa $t$ siirtyvä energia $Pt$ lämmittää kappaletta: $Pt = Q = cm\Delta T$.
+**Kuvaajan lukeminen:** Kuvaaja on suora. Siksi teho on vakio. Alkupiste on ruudukon risteyksessä $(0\,\text{s};\ 20\,{}^\circ\text{C})$. Loppupiste on risteyksessä $(180\,\text{s};\ 60\,{}^\circ\text{C})$. Ruudukon väli on $20\,\text{s}$ ja $10\,{}^\circ\text{C}$. Aika on siis $t = 180\,\text{s}$. Lämpötilan muutos on $\Delta T = 60 - 20 = 40\,{}^\circ\text{C} = 40\,\text{K}$.
+**Kaava:** $Pt = cm\Delta T$. Siis $c = \dfrac{Pt}{m\Delta T}$.
+**Muunnokset:** Lämpötilan muutos on yhtä suuri celsiusasteina ja kelvineinä, $\Delta T = 40\,\text{K}$. Teho $\text{W}$ kertaa aika $\text{s}$ on jouleina. Muita muunnoksia ei tarvita.
+**Sijoitus:** $c = \dfrac{400\,\text{W} \cdot 180\,\text{s}}{2{,}0\,\text{kg} \cdot 40\,\text{K}} = \dfrac{72\,000\,\text{J}}{80\,\text{kg}\cdot\text{K}} = 900\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Vastaus:** $c \approx 900\,\text{J/(kg}\cdot\text{K)}$. Vastaus annetaan kahdella merkitsevällä numerolla, kuten massa $2{,}0\,\text{kg}$.
+**Järkevyys:** Arvo on metallille tyypillinen. Se vastaa alumiinin ominaislämpökapasiteettia $900\,\text{J/(kg}\cdot\text{K)}$. Se on selvästi pienempi kuin veden $4190\,\text{J/(kg}\cdot\text{K)}$. Metalleilla näin onkin. Oletus häviöttömyydestä tekee todellisesta arvosta hieman pienemmän.
+
+## fy3-16-L2-10
+**Annettu:** jään massa $m = 0{,}60\,\text{kg}$, alkulämpötila $-16\,{}^\circ\text{C}$ ja siirtyvä teho $P = 25\,\text{W}$. Kuvaajasta luettuna kaiken jään sulaminen vaatii energian $Q$.
+**Kysytty:** aika $t$ tunteina, kunnes kaikki jää on sulanut
+**Periaate:** Energia säilyy. Seinän läpi siirtyvä energia $Pt$ lämmittää jään sulamispisteeseen ja sulattaa sen. Kuvaajasta nähdään koko tarvittava energia. Teho on tasainen, joten $t = Q/P$.
+**Kuvaajan lukeminen:** Lämpötila nousee pisteestä $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$ pisteeseen $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$. Sitten lämpötila pysyy $0\,{}^\circ\text{C}$:ssa, kun jää sulaa. Tämä jatkuu pisteeseen $(220\,\text{kJ};\ 0\,{}^\circ\text{C})$. Kaikki jää on sulanut, kun siirretty energia on $Q = 220\,\text{kJ}$. Luku sisältää sekä jään lämmittämisen että sulattamisen. Ruudukon väli on $20\,\text{kJ}$.
+**Kaava:** $Pt = Q$. Siis $t = \dfrac{Q}{P}$.
+**Muunnokset:** $Q = 220\,\text{kJ} = 220\,000\,\text{J}$ ja $1\,\text{h} = 3600\,\text{s}$
+**Sijoitus:** $t = \dfrac{220\,000\,\text{J}}{25\,\text{W}} = 8800\,\text{s} = \dfrac{8800}{3600}\,\text{h} = 2{,}44\,\text{h}$
+**Vastaus:** $t \approx 2{,}4\,\text{h}$ eli noin $2\,\text{h}\ 27\,\text{min}$. Vastaus annetaan kahdella merkitsevällä numerolla, koska teho $25\,\text{W}$ on kahden numeron arvo.
+**Järkevyys:** Tehdään riippumaton tarkistus. Jään lämmittäminen vaatii $c m \Delta T = 2100\,\text{J/(kg}\cdot\text{K)} \cdot 0{,}60\,\text{kg} \cdot 16\,\text{K} = 20{,}2\,\text{kJ}$. Sulattaminen vaatii $334\,\text{kJ/kg} \cdot 0{,}60\,\text{kg} = 200\,\text{kJ}$. Yhteensä tulee $220\,\text{kJ}$, kuten kuvaajassa. Muutaman tunnin säilymisaika sopii kylmälaukulle.

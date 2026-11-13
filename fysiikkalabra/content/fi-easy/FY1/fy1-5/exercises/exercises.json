@@ -94,6 +94,18 @@
       "answer": 2.5,
       "unit": "m/s",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-5-L1-09",
+      "level": 1,
+      "text": "Kaiuttimen ääni kulkee vedessä $2{,}0\\,\\text{s}$. Äänen nopeus ei muutu. Etsi äänen nopeus vedessä ($20\\,{}^\\circ\\text{C}$) MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Kuinka pitkän matkan ääni kulkee? Anna vastaus yksikössä km.",
+      "lookup": "MAFY",
+      "answer": 2.9646,
+      "unit": "km",
+      "tolerance": 0.04,
+      "hints": [
+        "Arvo on MAFY-taulukossa kohdassa *Äänen nopeuksia eri väliaineissa*."
+      ]
     }
   ],
   "level2": [

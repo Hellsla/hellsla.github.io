@@ -117,6 +117,22 @@
           "feedback": "Paino ei osoita rinnettä pitkin. Sen komponentti $G_y$ painaa kappaletta pintaa vasten, joten tukivoima ei ole nolla."
         }
       ]
+    },
+    {
+      "id": "fy4-6-L1-09",
+      "level": 1,
+      "text": "Teräsjalaksista kelkkaa, jonka massa on $45\\,\\text{kg}$, vedetään jäällä vaakasuoraan tasaisella nopeudella. Hae teräksen ja jään välinen liukukitkakerroin MAFY-taulukosta (mafytaulukot.fi). Kuinka suuri on vetovoima? Ilmanvastus jätetään huomiotta.",
+      "kind": [
+        "data"
+      ],
+      "lookup": "MAFY",
+      "answer": 6.1803,
+      "unit": "N",
+      "tolerance": 0.04,
+      "fbd": "equations",
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Kitkakertoimia*."
+      ]
     }
   ],
   "level2": [
@@ -327,6 +343,20 @@
       "answer": "Laatikko B ($30\\,\\text{N}$), laatikko C ($44\\,\\text{N}$), laatikko A ($59\\,\\text{N}$), laatikko D ($1{,}2\\cdot 10^2\\,\\text{N}$).",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy4-6-L2-09",
+      "level": 2,
+      "text": "Alla on esimerkkiaineisto: puupalikan liikekitka on mitattu eri tukivoimilla. Kuvaajassa ovat mittauspisteet. Palikka, jonka massa on $0{,}50\\,\\text{kg}$, liukuu samalla pöydällä vaakasuoraan. Siihen vaikuttavat vain paino, tukivoima ja kitka. Kuinka suuri on palikan hidastuvuus? Määritä liikekitkakerroin kuvaajasta.",
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "answer": 2.1,
+      "unit": "m/s²",
+      "tolerance": 0.05,
+      "figure": "fy4-6/mittaus",
+      "fbd": "equations"
     }
   ],
   "level3": [
