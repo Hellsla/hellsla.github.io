@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: dd6ef145574391a4
+CONTENT-HASH: 87f657abf999e6b7
 SCOPE: delta added-exercise from 696dd89d4770c31a base 81db4a6fd727
-
 ## Blocking
-(none)
 
 ## Polish
-- lessons/FY4/fy4-11/figures.py:233 — in ex-tv-tyyny the stop of test B at 0.150 s falls between the 0.14 s and 0.16 s grid lines, though the catalogue note says "readable at grid crossings"; reading halfway still keeps 10.5 kN inside 5 %, so not blocking — put the stop on a grid line or correct the note (fi equally).
 
 ## Checked
-- fy4-11-L1-09 (MAFY rubber–asphalt, sliding 0.5–0.8, upper end used as the text says): level road, N = mg, a = mu g = 7.85 m/s², s = v0²/(2 mu g) = 22.22²/15.70 = 31.5 m; the one-figure 30 m stays inside the 5 % tolerance; the mu = 0.5 comparison (50 m) is right.
-- fy4-11-L2-09: area under (t, v) of ex-tv-jarrutus: 20 m/s · 1.0 s + ½ · 20 m/s · 2.5 s = 45 m; slope 8.0 m/s² fits a dry road.
-- fy4-11-L3-06: impulse principle F_avg Δt = m Δv, 70 · 15 / 0.060 = 17.5 kN, 70 · 15 / 0.150 = 7.0 kN, difference 10.5 kN; 11 kN inside the tolerance; linear v(t) gives a constant force, as stated.
+- Round 2 diff, L1-09 Answer is now $\approx 31\,\text{m}$. Recomputed: $v_0 = 22.22\,\text{m/s}$, $a = 0.8 \cdot 9.81 = 7.85\,\text{m/s}^2$, $s = 31.46\,\text{m}$. This equals answers.py and exercises.json (31.46, tolerance 5 %).
+- The friction range is now stated correctly: $\mu = 0.8$ is the upper end of MAFY's 0.5–0.8, so 31 m is the shorter end. At $\mu = 0.5$, $s = 493.8 / 9.81 = 50\,\text{m}$, which is longer. The remark that the range dominates over rounding is right.
+- The task text's literal `\\n` was fixed to a real paragraph break; no wording changed.
+- The model is right: on a level road $N = mg$, sliding friction is the only horizontal force, and the deceleration is constant.
+- The Finnish diff makes the same change with the same numbers.
 - answers.py run: every numeric answer equals exercises.json.
-- Script comparison with content/fi for all 24 tasks: every field, correct flag and every number in texts and solutions.md identical.
+- Script comparison with content/fi for all 24 tasks: every number in the texts and solutions.md identical.

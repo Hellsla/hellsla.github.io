@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f4d1896786d727cb
+CONTENT-HASH: 7441d559115f1f83
 SCOPE: delta added-exercise from 61bbd8dbfca10bbc base 81db4a6fd727
 ## Blocking
 
 ## Polish
 
 ## Checked
-- L1-09: thrust up, weight down, a up 0.50 m/s²; F − mg = ma → F = m(g + a) = 15 000 kg · 2.122 m/s² = 31.83 kN (recomputed); Moon g = 1.622 m/s²; hover check 24 kN + 7.5 kN correct; 4 % tolerance covers table variants and rounding to 32 kN.
-- L1-10: kuvaaja-ab A points (1;2), (2;4), (3;6) → m_A = 3.0 N / 6.0 m/s² = 0.50 kg; second-point check consistent.
-- L2-09: B points (n;n) → m_B = 1.0 kg, a = 2.4 N / 1.0 kg = 2.4 m/s²; reading between grid lines is consistent.
-- Figure lines through the origin, masses not shown, description gives the same points; answers not marked.
-- answers.py lines equal my values and exercises.json.
-- en vs fi: answers, units, tolerances, figure ids, hints and every number of texts and solutions identical.
+- Round 2 change, L2-09 now asks about cart A: $m_\text{A} = 3.0\,\text{N} / 6.0\,\text{m/s}^2 = 0.50\,\text{kg}$, $a = 2.4\,\text{N} / 0.50\,\text{kg} = 4.8\,\text{m/s}^2$ (recomputed). The answer no longer equals the given force, as it did for B at $1.0\,\text{kg}$.
+- L2-09 reasonableness: A's line at $2.4\,\text{N}$ lies between $4$ and $6\,\text{m/s}^2$, which is right. The text, answer, Given, Reading, Substitution and Answer all name cart A.
+- L1-09 unchanged: $F = m(g + a) = 15\,000 \cdot 2.122 = 31.83\,\text{kN}$. L1-10: $m_\text{A} = 0.50\,\text{kg}$.
+- Figure kuvaaja-ab: the English labels "cart A" and "cart B" were added to figures.json. The points (1;2), (2;4), (3;6) for A agree with the solutions.
+- answers.py: the new `m_A` line gives 4.8, which equals exercises.json. Other entries differ only by rounding inside their tolerance (unchanged).
+- Script comparison with content/fi: answers, units, tolerances, figure ids and every number in the texts and solutions.md identical.

@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 849ed9d8e226ccfc
-
+CONTENT-HASH: d83301a5d06970e5
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- content/en/FY4/fy4-9/exercises/solutions.md:105 — L3-02 "When the force and the time are at their greatest". The time $0.12\,\text{s}$ is fixed; only the force has a maximum. Suggest "When the average force is at its greatest".
+- content/en/FY4/fy4-9/exercises/solutions.md:151 — L2-05 mean speed $v_\text{k}$ next to $\Delta t_\text{avg}$. Use one convention, e.g. $v_\text{avg}$.
+- content/en/FY4/fy4-9/exercises/solutions.md L2-07 Answer — "the velocity $1.50\,\text{m/s}$ rounded" is an unclear reason. The limiting data are the mass $0.50\,\text{kg}$ and the force values read.
 
 ## Checked
-- Recomputed every numeric answer with p = mv and the impulse principle F_avg Δt = Δp (area under (t, F) when the force varies): L1-01 5.1, L1-02 6.0, L1-03 4.86, L1-04 6.0, L1-05 150, L1-07 1.8, L1-08 18 000, L2-01 6.0 kN, L2-02 6.44 kN, L2-03 1.5, L2-04 25.65, L2-05 927 N, L2-06 5.0 N, L2-07 2.88 m/s, L2-08 450 N, L3-01 3.0 m/s, L3-02 57.6 km/h, L3-03 60 N, L3-04 50.45 km/h, L3-05 447.3 N; all equal answers.py and exercises.json.
-- Signs and rebound: L2-03 and L3-03 velocities with signs; L3-05 includes the weight during contact (N − mg).
-- New L1-09 (hailstone): one correct option (400 N); distractors 0.4 N (ms not converted), 4000 N (KE / time = power), 400 000 N (grams) each wrong for the reason its feedback gives.
-- New L2-08 from fy4-9/tarkistus-kolmio: triangle 900 N, 12 ms, F_avg = ½F_max = 450 N; the figure holds those values; ex-potku trapezoid gives 48 N·s.
-- L1-06: exactly one correct option, distractor feedback right.
-- Conditions stated in the tasks (weight neglected during short contacts, friction neglected, only the belt or airbag acting horizontally).
-- Script comparison with content/fi: every field, correct flag and number in exercises.json and solutions.md identical.
+- One Python script recomputed every answer from the task data: 5.1; 6.0; 4.86; 6.0; 150; 1.8; 18 000; 400 N (L1-09); 6.0 kN; 6.44 kN; 1.5; 25.65; 927.5; 5.0 (metal 67 N); 2.88; 450; 3.0; 57.6; 60; 50.45 (39.2 kN); 447.3 N (clay 251.1 N). All equal answers.py and exercises.json.
+- Sign conventions are right in the rebound tasks (L2-03, L3-03, L3-05). L3-05 includes the weight during contact: $N_\text{avg} = mg + m\Delta v/\Delta t$.
+- Trapezoid sums: L2-07 has seven intervals with interior sum 144.0 N; L3-04 has ten intervals with interior sum 98.1 kN. Endpoints are 0, so the shortcut is valid.
+- L1-09 distractors: each one really comes from its stated error (ms not converted 0.4 N; kinetic energy/time 4000; grams 400 000), and the feedback is right. L1-06 has exactly one correct option.
+- Figures: ex-potku (trapezoid area 48 N·s) and tarkistus-kolmio (triangle area 5.4 N·s) give every value at a grid point, the area is not shaded, and the descriptions match.
+- Diff (L2-08 Answer): the two-figure reason ($900\,\text{N}$, $12\,\text{ms}$ read to two figures) is now definite, as in the Finnish.
+- Physics stays within FY4 momentum and impulse. Neglected weights and friction are stated where they matter, and the reasonableness checks are real checks (L3-05 heights 1.23 m and 0.78 m).
+- Script comparison with content/fi: answers, units, tolerances, correct flags and every number in the texts and solutions.md identical.
