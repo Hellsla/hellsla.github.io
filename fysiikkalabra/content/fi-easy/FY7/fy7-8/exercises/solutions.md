@@ -213,3 +213,18 @@ $P_\text{h} = 0{,}50\,\Omega \cdot (150\,\text{A})^2$
 $P_\text{h} = 11\,250\,\text{W} \approx 11\,\text{kW}$
 
 Häviöteho on noin $11\,\text{kW}$, eli suuruusluokka on $10\,\text{kW}$. Se on vain noin $0{,}4\,\%$ siirrettävästä tehosta. Väärät vaihtoehdot syntyvät tyypillisistä virheistä. Tulo $RI = 75\,\text{V}$ on kaapelin jännitehäviö, ei teho. Se antaisi luvun $0{,}1\,\text{kW}$ suuruusluokan. Jos muuntajan unohtaa ja laskee virran jännitteellä $690\,\text{V}$, virraksi tulee noin $4\,350\,\text{A}$ ja häviötehoksi noin $9{,}5\,\text{MW}$. Se on enemmän kuin voimala tuottaa. Lauseke $U^2 : R$ siirtojännitteellä antaa $800\,\text{MW}$, eli suuruusluokka on $1000\,\text{MW}$. Se on vielä mahdottomampi. Järkevyys: muuntaja pienentää virran noin $29$-osaan ja häviöt noin $840$-osaan siitä, mitä ne olisivat jännitteellä $690\,\text{V}$.
+
+## fy7-8-L2-09
+**Annettu:** siirrettävä teho $P = 200\,\text{MW}$ ja kuvaajan käyrä. Käyrä näyttää, kuinka suuri osa tehosta $P_\text{h} : P$ muuttuu lämmöksi, kun siirtojännite $U$ muuttuu.
+**Kysytty:** johtimien yhteenlaskettu resistanssi $R$ ohmeina
+**Periaate:** Tehtävässä käytetään yksinkertaistettua kaksijohtimista mallia. Virta lämmittää johtoa, ja häviöteho on $P_\text{h} = R I^2$. Virran saa tehosta ja jännitteestä, $P = U I$. Luet käyrältä yhden pisteen. Osuudesta saat häviötehon, ja häviötehosta saat resistanssin.
+**Kuvaajan lukeminen:** Käyrä kulkee ruudukon pisteen ($200\,\text{kV}$; $3{,}0\,\%$) kautta. Jännitteellä $200\,\text{kV}$ lämmöksi muuttuu $3{,}0\,\%$ siirrettävästä tehosta.
+**Kaava:** $I = \dfrac{P}{U}$ ja $P_\text{h} = R I^2$, josta $R = \dfrac{P_\text{h}}{I^2}$, missä $P_\text{h} = 0{,}030\,P$
+**Muunnokset:** $200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $200\,\text{kV} = 200 \cdot 10^{3}\,\text{V}$ ja $3{,}0\,\% = 0{,}030$.
+**Sijoitus:** $P_\text{h} = 0{,}030 \cdot 200 \cdot 10^{6}\,\text{W} = 6{,}0 \cdot 10^{6}\,\text{W}$
+
+$I = \dfrac{200 \cdot 10^{6}\,\text{W}}{200 \cdot 10^{3}\,\text{V}} = 1000\,\text{A}$
+
+$R = \dfrac{6{,}0 \cdot 10^{6}\,\text{W}}{(1000\,\text{A})^2} = 6{,}0\,\Omega$
+**Vastaus:** $6{,}0\,\Omega$. Vastauksessa on kaksi merkitsevää numeroa, koska luettu osuus $3{,}0\,\%$ on annettu kahdella.
+**Järkevyys:** Tarkista toisella pisteellä. Jos jännite puolittuu arvoon $100\,\text{kV}$, virta kaksinkertaistuu ja häviöteho nelinkertaistuu. Silloin osuus on $4 \cdot 3{,}0\,\% = 12\,\%$. Käyrä antaa juuri tämän arvon kohdassa $100\,\text{kV}$. Muutaman ohmin resistanssi sopii satojen kilometrien voimajohdolle.

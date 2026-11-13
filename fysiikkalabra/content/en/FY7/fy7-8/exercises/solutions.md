@@ -213,3 +213,18 @@ $P_\text{h} = 0.50\,\Omega \cdot (150\,\text{A})^2$
 $P_\text{h} = 11\,250\,\text{W} \approx 11\,\text{kW}$
 
 The power loss is about $11\,\text{kW}$, so the order of magnitude is $10\,\text{kW}$. It is only about $0.4\,\%$ of the transmitted power. The wrong options come from typical mistakes. The product $RI = 75\,\text{V}$ is the voltage drop of the cable, not a power, and it would give an order of magnitude of $0.1\,\text{kW}$. If the transformer is forgotten and the current is calculated with the voltage $690\,\text{V}$, the current is about $4\,350\,\text{A}$ and the power loss about $9.5\,\text{MW}$, which is more than the turbine produces. The expression $U^2 : R$ with the transmission voltage gives $800\,\text{MW}$, that is, an order of magnitude of $1000\,\text{MW}$, which is even more impossible. Reasonableness: the transformer reduces the current to about $29$ times smaller and the losses to about $840$ times smaller than they would be at the voltage $690\,\text{V}$.
+
+## fy7-8-L2-09
+**Given:** the transmitted power $P = 200\,\text{MW}$ and the curve of the graph showing the share $P_\text{h} : P$ of the power loss as a function of the transmission voltage $U$
+**Find:** the total resistance $R$ of the conductors in ohms
+**Principle:** The task uses the simplified two-wire model. The line is heated by the current, and the power loss is $P_\text{h} = R I^2$. The current follows from the transmitted power and the transmission voltage, $P = U I$. When one point is read from the curve, the share gives the power loss and the power loss gives the resistance.
+**Reading the graph:** The curve passes through the grid point ($200\,\text{kV}$; $3.0\,\%$): at the voltage $200\,\text{kV}$ the power loss is $3.0\,\%$ of the transmitted power.
+**Formula:** $I = \dfrac{P}{U}$ and $P_\text{h} = R I^2$, so $R = \dfrac{P_\text{h}}{I^2}$, where $P_\text{h} = 0.030\,P$
+**Conversions:** $200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $200\,\text{kV} = 200 \cdot 10^{3}\,\text{V}$ and $3.0\,\% = 0.030$.
+**Substitution:** $P_\text{h} = 0.030 \cdot 200 \cdot 10^{6}\,\text{W} = 6.0 \cdot 10^{6}\,\text{W}$
+
+$I = \dfrac{200 \cdot 10^{6}\,\text{W}}{200 \cdot 10^{3}\,\text{V}} = 1000\,\text{A}$
+
+$R = \dfrac{6.0 \cdot 10^{6}\,\text{W}}{(1000\,\text{A})^2} = 6.0\,\Omega$
+**Answer:** $6.0\,\Omega$, two significant figures like the share $3.0\,\%$ read from the graph.
+**Reasonableness:** A check with another point of the curve: if the voltage is halved to $100\,\text{kV}$, the current doubles and the power loss becomes four times as large, so the share is $4 \cdot 3.0\,\% = 12\,\%$. This is exactly the value the curve gives at $100\,\text{kV}$. A resistance of a few ohms suits a power line hundreds of kilometres long.
