@@ -1,16 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: c7b59c1d134016eb
+VERDICT: PASS
+CONTENT-HASH: 31c49fc33ef52617
 
-Delta review (round 2, Kaava sign convention, 2026-11-13) of the version reviewed at 81704aa1f77b917f.
+Delta review (round 3, Kaava sign convention, 2026-11-13) of the version reviewed at c7b59c1d134016eb.
 
 ## Blocking
-1. [Major] inquiry.json, electron exercise, solution (Principle vs Formula): the symbol $U$ has two meanings in one solution. The Principle line says "potentiaalienergia pienenee määrän $eU$, kun $U$ on kuljettu potentiaaliero", i.e. $U = V - V_0$, positive. The new Formula line sets $U = V_0 - V$ ($= -150\,\text{V}$ here). The reader meets $eU$ with opposite signs; this hinders comprehension and breaks the order principle, symbol, substitution. Fix: make the Principle say "...ja sen potentiaalienergia pienenee määrän $e(V - V_0)$ (luku *Potentiaalienergia ja potentiaali sähkökentässä*)." and drop "kun $U$ on kuljettu potentiaaliero".
+(none)
 
 ## Polish
-- [Minor] Formula line: "kuljettu jännite" is unusual; "jännite lähtöpisteestä päätepisteeseen" reads better.
+(none)
 
 ## Checked
-- Round-2 diff only: the rewritten Formula line and its interaction with the Principle line in the same solution (source). KaTeX of the new chain ($W = QU = (-e)(V_0 - V) = e(V - V_0)$, \dfrac, \tfrac, \,\text units, \cdot) is well-formed and the order principle, symbolic equation, substitution, result is kept. No captures opened: the change is text inside a collapsed solution and the layout is unchanged from the version reviewed before.
+- Round-3 diff only: the Formula line against the Principle line of the same solution (source). U is now one quantity (U = V - V_0, positive, as in the Principle), U_AB = V_0 - V is named separately with a subscript, and "the voltage from the start to the point" wording is in place. The chain W = QU_AB = (-e)(V_0 - V) = e(V - V_0) = eU is well-formed KaTeX and keeps principle, symbolic equation, substitution, result. No captures opened: text-only change inside a collapsed solution, layout unchanged.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
