@@ -1,12 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 81704aa1f77b917f
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at bac2ad0da5027489.
+VERDICT: FAIL
+CONTENT-HASH: c7b59c1d134016eb
+
+Delta review (round 2, Kaava sign convention, 2026-11-13) of the version reviewed at 81704aa1f77b917f.
 
 ## Blocking
-(none)
+1. [Major] inquiry.json, electron exercise, solution (Principle vs Formula): the symbol $U$ has two meanings in one solution. The Principle line says "potentiaalienergia pienenee määrän $eU$, kun $U$ on kuljettu potentiaaliero", i.e. $U = V - V_0$, positive. The new Formula line sets $U = V_0 - V$ ($= -150\,\text{V}$ here). The reader meets $eU$ with opposite signs; this hinders comprehension and breaks the order principle, symbol, substitution. Fix: make the Principle say "...ja sen potentiaalienergia pienenee määrän $e(V - V_0)$ (luku *Potentiaalienergia ja potentiaali sähkökentässä*)." and drop "kun $U$ on kuljettu potentiaaliero".
 
 ## Polish
-(none)
+- [Minor] Formula line: "kuljettu jännite" is unusual; "jännite lähtöpisteestä päätepisteeseen" reads better.
 
 ## Checked
-Diff only, read in full. `check_latex.py` on the unit: all fragments parse in KaTeX. Merged inquiry solution (U = V - V_0 with v = sqrt(2e(V - V_0)/m) in Kaava and Sijoitus): both edits coexist without duplication. Charger solution and capacitor b). No contradiction between #522 formula names or notation and the #523 solutions found; no duplicated derivation; Finnish and typography (thin spaces, decimal comma, \cdot, colon division, LaTeX units) in the changed lines are correct. No captures made: the changes are text-only solution lines, no figure or layout changed.
+- Round-2 diff only: the rewritten Formula line and its interaction with the Principle line in the same solution (source). KaTeX of the new chain ($W = QU = (-e)(V_0 - V) = e(V - V_0)$, \dfrac, \tfrac, \,\text units, \cdot) is well-formed and the order principle, symbolic equation, substitution, result is kept. No captures opened: the change is text inside a collapsed solution and the layout is unchanged from the version reviewed before.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

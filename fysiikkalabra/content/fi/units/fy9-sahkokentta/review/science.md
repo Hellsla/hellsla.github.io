@@ -1,14 +1,14 @@
 VERDICT: FAIL
-CONTENT-HASH: 81704aa1f77b917f
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at bac2ad0da5027489.
+CONTENT-HASH: c7b59c1d134016eb
+Delta review (round 2, Kaava sign convention, 2026-11-13) of the version reviewed at 81704aa1f77b917f.
 
 ## Blocking
-1. inquiry.json, task with the electron in the potential graph (solution, **Kaava**), class B (internal consistency). The merged line "Potentiaaliero on $U = V - V_0$. Sähkökentän tekemä työ $W = eU$" defines $U$ as end minus start. The unit's formula *sähkökentän tekemä työ* $W = QU$ defines $U = U_{AB} = V_A - V_B$ (start minus end, unit.md line 356). The result is right only because two signs are flipped at once: $e$ is the magnitude of the charge, and $U$ has the opposite sign to the unit's $U$. A student who uses the unit's definition with $Q = -e$ meets an apparent contradiction. Corrected text: "**Kaava:** Elektronin varaus on $Q = -e$ ja kuljettu jännite $U = V_0 - V$, joten sähkökentän tekemä työ on $W = QU = (-e)(V_0 - V) = e(V - V_0)$. Työ muuttuu liike-energiaksi $E_\text{k} = \tfrac12 mv^2$. Alussa liike-energia on nolla, joten $\tfrac12 mv^2 = e(V - V_0)$, ja vauhti on $v = \sqrt{\dfrac{2e(V - V_0)}{m}}$". The Sijoitus line is unchanged.
+1. inquiry.json, the electron task in the potential graph (solution, **Periaate**). Class B, internal consistency. The new **Kaava** line is right and follows the unit's $W = QU$ with $U = U_{AB} = V_A - V_B$ (unit.md line 356): $Q = -e$, $U = V_0 - V = -150\,\text{V}$, $W = e(V - V_0) = 2{,}40 \cdot 10^{-17}\,\text{J}$. But the unchanged **Periaate** two lines above still says "sen potentiaalienergia pienenee määrän $eU$, kun $U$ on kuljettu potentiaaliero". With the Kaava's $U = V_0 - V$ (the same phrase, "kuljettu"), $eU = -2{,}40 \cdot 10^{-17}\,\text{J}$, so the sentence now says the potential energy *grows*. One symbol has two signs in one solution, which is exactly what round 1 fixed in the Kaava. Corrected text: "Sen potentiaalienergia pienenee määrän $e(V - V_0)$, kun $V - V_0$ on potentiaalin nousu (luku *Potentiaalienergia ja potentiaali sähkökentässä*)."
 
 ## Polish
 (none)
 
 ## Checked
-- Electron: $v = \sqrt{2e\cdot150\,\text{V}/m} = 7.264\cdot10^6$ m/s. Charging: $t = sW_0/(3\eta UI) = 3.86$ h. s5 capacitance: $b = 93 - 70.8 = 22.2$ pF.
-- The number and the direction of motion are right. The finding concerns only the sign convention of $U$ against the unit's #522 formula (guardrail 6).
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- The Kaava: $W = QU = (-e)(V_0 - V) = e(V - V_0)$ matches the unit's sign convention (start minus end) and the *Johda itse* result $\tfrac12 mv^2 = \lvert Q\rvert\,\lvert U\rvert$. Solved symbolically before any substitution. The Sijoitus factor $(150\,\text{V} - 0\,\text{V})$ is $V - V_0$, as in the Kaava.
+- Recomputed in my own script: $U = -150\,\text{V}$, $W = 2{,}403 \cdot 10^{-17}\,\text{J}$, $v^2 = 5{,}276 \cdot 10^{13}\,\text{m}^2/\text{s}^2$, $v = 7{,}264 \cdot 10^{6}\,\text{m/s}$, which is $2{,}4\,\%$ of $c$. All of these agree with the solution.
+- The LaTeX in the changed line is balanced. `units.py hash` gives c7b59c1d134016eb at the start and at the end.
