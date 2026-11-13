@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a71711e7c0c92d0d
+CONTENT-HASH: 9536f03d31dd0fcd
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md, vaimennuskerroin block — "luonnollinen logaritmi" ja $\ln$ eivät ole selkeän suomen lukijalle tuttuja — lisää puolilause, esim. "luonnollinen logaritmi eli $\ln$ on potenssin ^x$ käänteisfunktio".
-- [Minor] lesson.md — ensimmäinen kaava  = I_0 e^{-\mu d}$ nimeää symbolit vasta kaavan jälkeisessä virkkeessä ($, $ viitataan edelliseen kaavaan); toimii, mutta virkkeessä voisi sanoa "$ ja $ kuten edellä".
+- [Minor] fig 4 (näkyvä valo -nauha) — the band is only about 14 px wide at 390 px, so the six colour stripes are hard to tell apart — widen the band slightly if the teacher agrees; the figure is teacher-approved, so this may wait.
 
 ## Checked
-- fy8-12-theory-1280-4 and -5 (fi-easy captures): new vaimennuskerroin text, three display formulas (I = I_0 e^{-μd}, I/I_0 = 1/2 = e^{-μ d_{1/2}}, μ = ln 2 / d_{1/2}), inline units m^{-1}, cm^{-1}: KaTeX renders cleanly, display blocks centred, no overflow, the graph beside them unchanged and legible; changed misconception, absorbed-dose and summary text read in source (fluent, no plain-text quantities).
-- Photo caption change (hfir-refueling) judged from source; the figure itself is untouched.
-- Screenshot run ended with a missing stage-exercises capture error, but all theory captures were current; no figure was changed by the diff.
+- fy8-12-fig-4-390: the diff only reverses the order of the colour stripes in the visible-light band. Red is now at the low-energy left end and violet at the high-energy right end, which matches the energy axis increasing to the right. The band outline, the labels "näkyvä valo" and "1,7–3,3 eV" and the ionisoiva/ionisoimaton areas are intact, with no clipping or overlap.
+- Hash: now 9536f03d31dd0fcd, the same as the packet's.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5

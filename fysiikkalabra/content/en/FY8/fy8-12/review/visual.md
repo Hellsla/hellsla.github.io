@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 9ece00a460a2d407
-Mode: delta (round 1)
+CONTENT-HASH: 2253c95d75da8d51
+Mode: delta (round 2)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md, formula section — the sentence "Taking the natural logarithm gives $-\ln 2 = -\mu d_{1/2}$, that is," has a display equation after the comma; fine as written, but it could end with a colon ("…, that is:") for consistency with the other lead-ins.
+- [Minor] fig 4, visible-light strip — at 390 px the six bands are about 2.5 px wide each, so the colour order cannot be read; the label and the 1.7–3.3 eV range carry the information, so this is only decorative. Widening the strip slightly would let the spectrum read.
 
 ## Checked
-- theory-1280 part 3 (absorbed-dose paragraph, "Small doses are estimated to increase…", start of the attenuation formula), part 4 (the new attenuation-coefficient block: three display equations I = I_0 e^{-μd}, I/I_0 = 1/2 = e^{-μ d_{1/2}}, μ = ln 2 / d_{1/2}; the unchanged attenuation graph below), part 6 (revised misconception paragraph, the summary bullet with both formulas).
-- The new equations render without KaTeX errors, are aligned, use \frac in display and \tfrac inline, units m^{-1} and cm^{-1} in upright type, μ and d_{1/2} legible; the order principle, equation, derivation step and interpretation reads well on the page.
-- The photo caption change (Cherenkov, charged particles) is text only; the photo itself was not changed and was not opened.
-- The graph figure is unchanged by the diff; seen in part 4, its layout is intact.
-- No 390 px capture of the new block was opened; the display equations are short (under 25 characters), so wrapping is not at risk.
+- fy8-12-fig-4-390.png and fy8-12-fig-row-1280.png (figure 4 beside its paragraph). The diff only reverses the colour order of the visible-light strip.
+- The strip now runs red (lowest photon energy) to violet (highest) left to right. That matches the energy axis, which increases to the right, and the labelled 1.7–3.3 eV range.
+- The strip sits inside its outline, nothing overlaps the labels, and the figure layout and the text beside it are intact at both widths.
+- The rest of the lesson is unchanged by the diff and was not reopened.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4
