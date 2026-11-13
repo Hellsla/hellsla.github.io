@@ -341,10 +341,10 @@
     {
       "id": "fy3-10-L2-09",
       "level": 2,
-      "text": "The graph shows the pressure of the gas in two closed, rigid vessels, A and B, as a function of temperature when the vessels are heated. The volume of vessel B is $2.00\\,\\textsf{l}$.\n\nHow many moles of gas are there in vessel B? Read the values you need from the graph. Use $R = 8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$ and assume that the gas obeys the ideal gas law.",
+      "text": "The graph shows the pressure of the gas in two identical, closed, rigid vessels, A and B, as a function of temperature when the vessels are heated. Each vessel has a volume of $2.00\\,\\textsf{l}$.\n\nHow many times as much gas is there in vessel A as in vessel B? Read the values you need from the graph and reason from the ratio of the slopes of the lines. Assume that the gases obey the ideal gas law.",
       "figure": "fy3-10/pt-suorat",
-      "answer": 0.0361,
-      "unit": "mol",
+      "answer": 1.67,
+      "unit": "times",
       "tolerance": 0.03
     }
   ],

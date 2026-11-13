@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 0cb9ccd04c9d1ba6
-
-Mode: translation review (en) against the reviewed Finnish. Round 2, new task fy3-12-L2-08.
+CONTENT-HASH: e958149d90cd81ad
 
 ## Blocking
-(none)
 
 ## Polish
-- None.
 
 ## Checked
-- fy3-12-L2-08 recomputed independently: door 60 W, roof 216 W, windows 288 W, wall 459 W (UA = 2.0, 7.2, 9.6, 15.3 W/K, DeltaT = 30 K); order door < roof < windows < wall. Equals fi.
-- Answer, unit, tolerance, kind, order/statements/choices, correct flags and their order equal fi.
-- solutions.md of L2-08: every number, unit and formula equals fi; English decimal point used.
-- Physics and scope unchanged; no Finnish-only terms left in en.
-- No translation fix needed. check_i18n.py shows nothing for fy3-12; build.py fy3-12 succeeds.
+- L1-05 Reading the graph: the quoted label is now "heat radiation", which is what the English figure shows (content/en/FY3/fy3-12/figures.json maps "lämpösäteily" to "heat radiation"); my round-6 note that the figure's labels stay Finnish was wrong, and the new wording is right.
+- The asked arrow is still correctly identified: dashed, on the right, value "?", as figures.py draws it; the principle (balance, absorbed = incoming − reflected) is unchanged.
+- No number, answer or symbol changed; L2-09 still $102 \cdot 5.1\cdot10^{14}\,\text{W} = 52\,\text{PW}$ with the mean-over-the-surface sentence.
+- Numbers in the task texts still match the Finnish exercises.json (round-6 script; this diff touches solutions.md only).
+- Hash same at start and end.

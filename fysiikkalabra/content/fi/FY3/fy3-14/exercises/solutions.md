@@ -244,16 +244,16 @@ c) $\Delta T_\text{v,min} = \dfrac{36\,704{,}4\,\text{J}}{4190\,\tfrac{\text{J}}
 **Kaava:** $Q = sm$
 **Muunnokset:** $m = 80\,\text{g} = 0{,}080\,\text{kg}$
 **Sijoitus:** $Q = 333\,\dfrac{\text{kJ}}{\text{kg}} \cdot 0{,}080\,\text{kg} = 26{,}64\,\text{kJ}$
-**Vastaus:** $Q \approx 27\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $80\,\text{g}$. Arvo $s = 333\,\text{kJ/kg}$ on MAFY-taulukosta (aineiden olomuodon muutokset, vesi); tekstien arvo $334\,\text{kJ/kg}$ poikkeaa siitä alle prosentin, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Vastaus:** $Q \approx 27\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $80\,\text{g}$. Arvo $s = 333\,\text{kJ/kg}$ on MAFY-taulukosta (aineiden olomuodon muutokset, vesi); muissa tämän luvun tehtävissä käytetty arvo $334\,\text{kJ/kg}$ poikkeaa siitä alle prosentin, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Karkea arvio: $330\,\text{kJ/kg} \cdot 0{,}08\,\text{kg} \approx 26\,\text{kJ}$. Sama lämpö lämmittäisi $0{,}25\,\text{kg}$ vettä noin $\dfrac{26{,}6\,\text{kJ}}{4{,}19\,\text{kJ/(kg}\cdot\text{K)} \cdot 0{,}25\,\text{kg}} \approx 25\,\text{K}$, joten jää jäähdyttää juomaa tehokkaasti.
 
 ## fy3-14-L2-09
-**Annettu:** kuvasta luettuna veden luovuttama lämpö $Q_\text{vesi} = 25\,\text{kJ}$, jään lämmittämiseen tarvittava lämpö $Q_\text{lämm} = 5\,\text{kJ}$ ja kaiken jään sulattamiseen tarvittava lämpö $Q_\text{kaikki} = 60\,\text{kJ}$; $s = 334\,\text{kJ/kg}$
-**Kysytty:** sulamatta jäävän jään massa $m_\text{jäljellä}$ grammoina
-**Periaate:** Eristetyssä astiassa energia säilyy, joten veden luovuttama lämpö kuluu ensin jään lämmittämiseen ja loput sulattamiseen. Jos sulatukseen jäävä lämpö on pienempi kuin kaiken jään sulattamiseen tarvittava, kaikki jää ei sula ja seoksen lopputilan lämpötila on $0\,{}^\circ\text{C}$.
-**Kuvaajan lukeminen:** Pylväät päättyvät ruudukon viivoille: ylin kohtaan $25\,\text{kJ}$ (vesi), keskimmäinen kohtaan $5\,\text{kJ}$ (jään lämmittäminen) ja alin kohtaan $60\,\text{kJ}$ (kaiken jään sulattaminen). Sulatukseen jää $25 - 5 = 20\,\text{kJ}$, mikä on vähemmän kuin $60\,\text{kJ}$, joten osa jäästä jää sulamatta.
-**Kaava:** $Q_\text{sulaa} = Q_\text{vesi} - Q_\text{lämm}$, $Q = sm$, joten $m_\text{sulaa} = \dfrac{Q_\text{sulaa}}{s}$ ja $m_\text{jäljellä} = \dfrac{Q_\text{kaikki}}{s} - m_\text{sulaa}$
-**Muunnokset:** $\text{kJ}/(\text{kJ/kg}) = \text{kg}$ ja $1\,\text{kg} = 1000\,\text{g}$
-**Sijoitus:** $m_\text{sulaa} = \dfrac{20\,\text{kJ}}{334\,\text{kJ/kg}} = 0{,}0599\,\text{kg}$ ja jään kokonaismassa $\dfrac{60\,\text{kJ}}{334\,\text{kJ/kg}} = 0{,}1796\,\text{kg}$, joten $m_\text{jäljellä} = 0{,}1796\,\text{kg} - 0{,}0599\,\text{kg} = 0{,}1198\,\text{kg} = 119{,}8\,\text{g}$
-**Vastaus:** $m_\text{jäljellä} \approx 120\,\text{g}$, kaksi merkitsevää numeroa, koska pylväät luetaan viiden kilojoulen ruudukosta.
-**Järkevyys:** Sulamatta jää $\dfrac{60 - 20}{60} = \dfrac{2}{3}$ jäästä, ja $\dfrac{2}{3} \cdot 180\,\text{g} = 120\,\text{g}$. Tulos on pienempi kuin jään kokonaismassa $180\,\text{g}$ ja suurempi kuin nolla, kuten pitää.
+**Annettu:** kuvasta luettuna veden luovuttama lämpö $Q_\text{vesi} = 25\,\text{kJ}$, jään lämmittämiseen tarvittava lämpö $Q_\text{lämm} = 5\,\text{kJ}$ ja kaiken jään sulattamiseen tarvittava lämpö $Q_\text{kaikki} = 60\,\text{kJ}$
+**Kysytty:** lisälämpö $Q_\text{lisä}$ kilojouleina, joka astiaan pitäisi vielä tuoda, jotta kaikki jää sulaisi
+**Periaate:** Eristetyssä astiassa energia säilyy, joten veden luovuttama lämpö kuluu ensin jään lämmittämiseen ja loput sulattamiseen. Sulatukseen käytettävissä oleva lämpö on $Q_\text{vesi} - Q_\text{lämm}$, ja kaiken jään sulattamiseen tarvitaan $Q_\text{kaikki}$. Puuttuva osa on lisälämpö, joka pitäisi tuoda astiaan ulkoa: vesi ei voi luovuttaa sitä, koska se on jo $0\,{}^\circ\text{C}$:ssa ja alkaisi jäätyä.
+**Kuvaajan lukeminen:** Pylväät päättyvät ruudukon viivoille: ylin kohtaan $25\,\text{kJ}$ (vesi), keskimmäinen kohtaan $5\,\text{kJ}$ (jään lämmittäminen) ja alin kohtaan $60\,\text{kJ}$ (kaiken jään sulattaminen). Sulatukseen jää $25 - 5 = 20\,\text{kJ}$, mikä on vähemmän kuin $60\,\text{kJ}$, joten kaikki jää ei sula.
+**Kaava:** $Q_\text{lisä} = Q_\text{kaikki} - (Q_\text{vesi} - Q_\text{lämm})$
+**Muunnokset:** Ei tarvita, kaikki lämmöt ovat kilojouleina.
+**Sijoitus:** $Q_\text{lisä} = 60\,\text{kJ} - (25\,\text{kJ} - 5\,\text{kJ}) = 60\,\text{kJ} - 20\,\text{kJ} = 40\,\text{kJ}$
+**Vastaus:** $Q_\text{lisä} = 40\,\text{kJ}$, kaksi merkitsevää numeroa, koska pylväät luetaan viiden kilojoulen ruudukosta.
+**Järkevyys:** Lisälämpö on pienempi kuin kaiken jään sulattamiseen tarvittava $60\,\text{kJ}$ ja suurempi kuin nolla. Se on $\dfrac{40}{60} = \dfrac{2}{3}$ sulatuslämmöstä, joten kaksi kolmasosaa jäästä jää sulamatta, mikä sopii kuvaan, jossa vesi riittää vain kolmasosaan.

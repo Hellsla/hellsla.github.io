@@ -214,12 +214,12 @@ $$\begin{aligned} d &= \dfrac{1328.9\,\text{J}}{121\,200\,\text{N}} \\ &= 0.0109
 **Reasonableness:** At atmospheric pressure and room temperature $12.5\,\text{mol}$ of gas takes about $12.5 \cdot 24\,\textsf{l} = 300\,\textsf{l}$. It has been compressed into $10.0\,\textsf{l}$, that is, to about $30$ times the pressure: $30 \cdot 0.101\,\text{MPa} \approx 3\,\text{MPa}$.
 
 ## fy3-10-L2-09
-**Given:** read from the graph, the points of vessel B are $(200\,\text{K};\ 30\,\text{kPa})$ and $(400\,\text{K};\ 60\,\text{kPa})$; $V = 2.00\,\textsf{l}$, $R = 8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}$
-**Find:** the amount of substance $n$ in moles
-**Principle:** The vessel is closed and rigid, so the amount of gas and the volume stay the same and the gas obeys the ideal gas law $pV = nRT$. One point of the graph gives $p$ and $T$, and from them the amount of substance.
-**Reading the graph:** The line of vessel B goes through the grid points $(200\,\text{K};\ 30\,\text{kPa})$ and $(400\,\text{K};\ 60\,\text{kPa})$. We read the point $T = 400\,\text{K}$, $p = 60\,\text{kPa}$. The other point gives the same amount of substance, because $p/T = 0.15\,\tfrac{\text{kPa}}{\text{K}}$ is the same at both.
-**Formula:** $pV = nRT$, so $n = \dfrac{pV}{RT}$
-**Conversions:** $60\,\text{kPa} = 60 \cdot 1000\,\text{Pa} = 60\,000\,\text{Pa}$ and $2.00\,\textsf{l} = 2.00 \cdot 0.001\,\text{m}^3 = 0.00200\,\text{m}^3$. The temperature is already in kelvins.
-**Substitution:** $n = \dfrac{60\,000\,\text{Pa} \cdot 0.00200\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 400\,\text{K}} = \dfrac{120\,\text{J}}{3324\,\text{J/mol}} = 0.03610\,\text{mol}$
-**Answer:** $n \approx 0.0361\,\text{mol}$, three significant figures, as in the volume $2.00\,\textsf{l}$.
-**Reasonableness:** At atmospheric pressure and room temperature $1\,\text{mol}$ takes about $24\,\textsf{l}$. At the low pressure $60\,\text{kPa}$ and the high temperature $400\,\text{K}$ it takes more, about $50\,\textsf{l}$ per mole. Then $2.00\,\textsf{l}$ holds $2.00 : 50 \approx 0.04\,\text{mol}$.
+**Given:** $V_\text{A} = V_\text{B} = 2.00\,\textsf{l}$; read from the graph at $T = 400\,\text{K}$: $p_\text{A} = 100\,\text{kPa}$ and $p_\text{B} = 60\,\text{kPa}$
+**Find:** the ratio $n_\text{A}/n_\text{B}$
+**Principle:** The gas is sealed in a rigid vessel ($n$ and $V$ constant) and obeys $pV = nRT$. So the line $p(T)$ goes through the origin and its slope is $p/T = nR/V$. The vessels have the same volume and $R$ is the same, so the ratio of the slopes is the ratio of the amounts of substance.
+**Reading the graph:** Read both lines at the same temperature $T = 400\,\text{K}$, a vertical gridline: $p_\text{A} = 100\,\text{kPa}$ and $p_\text{B} = 60\,\text{kPa}$. The lines go through the origin.
+**Formula:** $\dfrac{p}{T} = \dfrac{nR}{V}$, so $n = \dfrac{V}{R} \cdot \dfrac{p}{T}$ and $\dfrac{n_\text{A}}{n_\text{B}} = \dfrac{p_\text{A}/T}{p_\text{B}/T} = \dfrac{p_\text{A}}{p_\text{B}}$
+**Conversions:** Not needed: the ratio of the pressures is the same in kilopascals as in pascals.
+**Substitution:** $\dfrac{n_\text{A}}{n_\text{B}} = \dfrac{100\,\text{kPa}}{60\,\text{kPa}} = 1.667$
+**Answer:** Vessel A holds about $1.67$ times as much gas as vessel B, three significant figures from the values read.
+**Reasonableness:** Line A is steeper than line B, so vessel A holds more gas. The amounts are $0.0602\,\text{mol}$ and $0.0361\,\text{mol}$, and their ratio is $1.67$, as in the task where the difference is calculated in moles.

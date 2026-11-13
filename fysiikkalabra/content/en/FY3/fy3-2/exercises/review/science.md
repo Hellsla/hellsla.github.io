@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e50f42266a867455
-Round: 4
+CONTENT-HASH: dea61a120921a332
+Round: 5
 Mode: delta
 
 ## Blocking
 (none)
 
-## Fixed
-(none; no translation edits were needed)
-
 ## Polish
 (none)
 
 ## Checked
-- New task fy3-2-L2-08 compared with the reviewed Finnish: same id, level, kind, unit, tolerance, answer and choice/reason order; exactly one correct option in each list, same as fi.
-- Recomputed: rubber band, triangle area (1/2)Fs: W1 = 1/2*20 N*0.10 m = 1.0 J, W2 = 1/2*40 N*0.20 m = 4.0 J, ratio 4. Correct answer 4 W1 (W1 = 1.0 J, W2 = 4.0 J; 3 W1 = 3.0 J is the second part only); all numbers and formulas in text, feedback and solution equal the Finnish.
-- Distractor feedback physics agrees with fi (same misconception named, same numbers).
-- Language: English decimal point used (JSON, LaTeX, feedback and solution), natural English, no Finnish left.
-- check_i18n.py shows nothing for fy3-2; build.py fy3-2 succeeds.
+- Diff: fy3-2-L2-09 reasonableness line, "6 m vs 4 m" changed to "6 m and 4 m"; wording only, the reason (the larger force acts over the longer distance, so the average lies nearer 25 N) and the check 19 N * 10 m = 190 J unchanged and correct.
+- Recomputed: W = 25 N * 6 m + 10 N * 4 m = 190 J, F_av = 190 J / 10 m = 19 N; agrees with figure pull-steps and answers.py.
+- Scripted comparison with the Finnish exercises.json: all 23 exercises have the same answers, units, tolerances, figures and numbers in the task texts.
+- All answers.py values recomputed in one run: every answer within its tolerance.
+- Hash identical at start and end.

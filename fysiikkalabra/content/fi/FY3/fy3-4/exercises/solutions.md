@@ -219,13 +219,13 @@ $$\begin{aligned} \Delta p &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,
 Luku $9{,}81 \cdot 10^{6}$ on lähempänä arvoa $10^{7}$ kuin arvoa $10^{6}$, joten suuruusluokka on $10^{7}\,\text{Pa}$. Vastaus $10^{5}\,\text{Pa}$ on ilmanpaineen suuruusluokka eikä ota syvyyttä huomioon. Vastaus $10^{6}\,\text{Pa}$ vastaa syvyyttä $100\,\text{m}$ ja vastaus $10^{8}\,\text{Pa}$ syvyyttä $10\,\text{km}$. Arvio: vedessä paine kasvaa noin $10\,\text{kPa}$ metriä kohti, joten $1000\,\text{m}$ antaa $10^{7}\,\text{Pa}$.
 
 ## fy3-4-L1-10
-**Annettu:** $h = 25\,\text{m}$, $p_0 = 101\,\text{kPa}$, $g = 9{,}81\,\text{m/s}^2$; taulukosta (MAFY-taulukko *Tiheyksiä: Nesteiden tiheyksiä*, merivesi) $\rho = 1{,}02 \cdot 10^{3}\,\text{kg/m}^3$
+**Annettu:** $h = 25{,}0\,\text{m}$, $p_0 = 101\,\text{kPa}$, $g = 9{,}81\,\text{m/s}^2$; taulukosta (MAFY-taulukko *Tiheyksiä: Nesteiden tiheyksiä*, merivesi) $\rho = 1{,}02 \cdot 10^{3}\,\text{kg/m}^3$
 **Kysytty:** kokonaispaine $p$ sukeltajan kohdalla kilopascaleina
 **Periaate:** Sukeltaja tuntee veden painon ja veden pinnalla olevan ilman painon. Nesteen pinta välittää ilmanpaineen koko nesteeseen, ja sen päälle tulee hydrostaattinen paine $\rho g h$. Siksi paineet lasketaan yhteen.
 **Kaava:** $p = p_0 + \rho g h$; tuntematon $p$ on jo yksin vasemmalla puolella
 **Muunnokset:** Tiheys $1{,}02 \cdot 10^{3}\,\text{kg/m}^3 = 1020\,\text{kg/m}^3$. Hydrostaattinen paine lasketaan pascaleina ja muutetaan kilopascaleiksi: $1\,\text{kPa} = 1000\,\text{Pa}$.
-**Sijoitus:** $\rho g h = 1020\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 25\,\text{m} = 250\,155\,\text{Pa} = 250{,}2\,\text{kPa}$; $p = 101\,\text{kPa} + 250{,}2\,\text{kPa} = 351{,}2\,\text{kPa}$
-**Vastaus:** $p \approx 351\,\text{kPa}$, kolme merkitsevää numeroa kuten ilmanpaineessa ja tiheydessä. Tiheys $\rho = 1{,}02 \cdot 10^{3}\,\text{kg/m}^3$ on MAFY-taulukosta *Tiheyksiä: Nesteiden tiheyksiä*; eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Sijoitus:** $\rho g h = 1020\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 25{,}0\,\text{m} = 250\,155\,\text{Pa} = 250{,}2\,\text{kPa}$; $p = 101\,\text{kPa} + 250{,}2\,\text{kPa} = 351{,}2\,\text{kPa}$
+**Vastaus:** $p \approx 351\,\text{kPa}$, kolme merkitsevää numeroa kuten syvyydessä $25{,}0\,\text{m}$, ilmanpaineessa ja tiheydessä. Tiheys $\rho = 1{,}02 \cdot 10^{3}\,\text{kg/m}^3$ on MAFY-taulukosta *Tiheyksiä: Nesteiden tiheyksiä*; eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Arvio: $10\,\text{m}$ vettä lisää paineeseen noin $100\,\text{kPa}$, joten $25\,\text{m}$ lisää noin $250\,\text{kPa}$. Siihen lisätään ilmanpaine noin $100\,\text{kPa}$, ja yhteensä saadaan noin $350\,\text{kPa}$ eli noin $3{,}5$ ilmanpainetta.
 
 ## fy3-4-L2-08

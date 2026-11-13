@@ -224,18 +224,18 @@ Yhteensä $Q = 21{,}32 \cdot 10^{9}\,\text{J}$, ja teho $P = \dfrac{21{,}32 \cdo
 ## fy3-16-L1-09
 **Annettu:** veden massa $m = 0{,}30\,\text{kg}$, lämpötila $100\,{}^\circ\text{C}$; taulukosta (MAFY-taulukko, aineiden olomuodon muutokset, vesi) $r = 2260\,\text{kJ/kg}$
 **Kysytty:** höyrystymiseen sitoutuva lämpö $Q$ kilojouleina
-**Periaate:** Vesi on jo kiehumispisteessä, joten sen lämpötila ei muutu ja kaikki lämpö kuluu olomuodon muutokseen. Ominaishöyrystymislämpö $r$ kertoo, kuinka paljon lämpöä tarvitaan yhden kilogramman höyrystämiseen. Lämpö otetaan kiukaan kivistä, joten energia säilyy.
+**Periaate:** Vesi on jo kiehumispisteessä, joten sen lämpötila ei muutu ja kaikki lämpö kuluu olomuodon muutokseen. Ominaishöyrystymislämpö $r$ kertoo, kuinka paljon lämpöä tarvitaan yhden kilogramman höyrystämiseen. Lämpö otetaan keittolevyltä, joten energia säilyy.
 **Kaava:** $Q = rm$
 **Muunnokset:** Ei tarvita: $r$ on yksikössä $\text{kJ/kg}$ ja massa kilogrammoina, joten tulos tulee suoraan kilojouleina.
 **Sijoitus:** $Q = 2260\,\dfrac{\text{kJ}}{\text{kg}} \cdot 0{,}30\,\text{kg} = 678\,\text{kJ}$
 **Vastaus:** $Q \approx 680\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}30\,\text{kg}$. Arvo $r = 2260\,\text{kJ/kg}$ on MAFY-taulukosta (aineiden olomuodon muutokset, vesi), ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Karkea arvio: $2300\,\text{kJ/kg} \cdot 0{,}3\,\text{kg} \approx 690\,\text{kJ}$. Höyrystyminen sitoo yli viisi kertaa enemmän lämpöä kuin saman veden lämmittäminen $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:seen, $0{,}30\,\text{kg} \cdot 4{,}19\,\text{kJ/(kg}\cdot\text{K)} \cdot 100\,\text{K} \approx 126\,\text{kJ}$, ja siksi löylyvesi viilentää kiuasta voimakkaasti.
+**Järkevyys:** Karkea arvio: $2300\,\text{kJ/kg} \cdot 0{,}3\,\text{kg} \approx 690\,\text{kJ}$. Höyrystyminen sitoo yli viisi kertaa enemmän lämpöä kuin saman veden lämmittäminen $0\,{}^\circ\text{C}$:sta $100\,{}^\circ\text{C}$:seen, $0{,}30\,\text{kg} \cdot 4{,}19\,\text{kJ/(kg}\cdot\text{K)} \cdot 100\,\text{K} \approx 126\,\text{kJ}$, ja siksi veden höyrystäminen vaatii paljon enemmän energiaa kuin sen lämmittäminen.
 
 ## fy3-16-L2-09
 **Annettu:** kuvaajasta luettuna lämpötila nousee pisteestä $(0\,\text{s};\ 20\,{}^\circ\text{C})$ pisteeseen $(180\,\text{s};\ 60\,{}^\circ\text{C})$; $m = 2{,}0\,\text{kg}$ ja $P = 400\,\text{W}$
 **Kysytty:** ominaislämpökapasiteetti $c$ yksikössä $\text{J/(kg}\cdot\text{K)}$
 **Periaate:** Energia säilyy, ja koko vastuksen teho siirtyy kappaleeseen, joten ajassa $t$ siirtyvä energia $Pt$ lämmittää kappaletta: $Pt = Q = cm\Delta T$.
-**Kuvaajan lukeminen:** Kuvaaja on suora, joten teho on vakio. Alkupiste on ruudukon risteyksessä $(0\,\text{s};\ 20\,{}^\circ\text{C})$ ja loppupiste risteyksessä $(180\,\text{s};\ 60\,{}^\circ\text{C})$. Ruudukon väli on $20\,\text{s}$ ja $10\,{}^\circ\text{C}$. Aika on siis $t = 180\,\text{s}$ ja lämpötilan muutos $\Delta T = 60 - 20 = 40\,{}^\circ\text{C} = 40\,\text{K}$.
+**Kuvaajan lukeminen:** Teho on vakio, joten kuvaaja on suora. Alkupiste on ruudukon risteyksessä $(0\,\text{s};\ 20\,{}^\circ\text{C})$ ja loppupiste risteyksessä $(180\,\text{s};\ 60\,{}^\circ\text{C})$. Ruudukon väli on $20\,\text{s}$ ja $10\,{}^\circ\text{C}$. Aika on siis $t = 180\,\text{s}$ ja lämpötilan muutos $\Delta T = 60 - 20 = 40\,{}^\circ\text{C} = 40\,\text{K}$.
 **Kaava:** $Pt = cm\Delta T$, joten $c = \dfrac{Pt}{m\Delta T}$
 **Muunnokset:** Lämpötilan muutos on yhtä suuri celsiusasteina ja kelvineinä, $\Delta T = 40\,\text{K}$. Teho $\text{W}$ kertaa aika $\text{s}$ on jouleina, joten muita muunnoksia ei tarvita.
 **Sijoitus:** $c = \dfrac{400\,\text{W} \cdot 180\,\text{s}}{2{,}0\,\text{kg} \cdot 40\,\text{K}} = \dfrac{72\,000\,\text{J}}{80\,\text{kg}\cdot\text{K}} = 900\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$

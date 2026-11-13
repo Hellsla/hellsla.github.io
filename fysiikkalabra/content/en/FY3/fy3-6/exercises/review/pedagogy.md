@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e101465bc2fd382b
+CONTENT-HASH: 951a60bfd236ffed
 
 ## Blocking
 (none)
 
-## Fixed
-- nothing needed fixing in the new task L2-08
-
 ## Polish
-- none new (the Finnish polish items on the "no error" feedback and the unit-less row 3 apply equally; Finnish untouched)
+- As before: fy3-6-L2-09 could carry a second step if a task is added later. Optional.
 
 ## Checked
-- L2-08 keeps the Finnish structure: situation, four short lines, question last, "no error" option last; one defensible answer.
-- Distractor feedback names the misconception (adding 273, separate cooling formula, minus sign as slip) and the solution follows the lines step by step.
-- Natural English for 16-18-year-olds, terms as in terms.md.
+- The diff is empty and the hash equals the version I passed, so the earlier PASS stands.
+- The figures c-bars and heating-line and their descriptions are unchanged.

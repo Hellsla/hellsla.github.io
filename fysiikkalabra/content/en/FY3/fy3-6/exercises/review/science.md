@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: e101465bc2fd382b
+CONTENT-HASH: 951a60bfd236ffed
+SCOPE: delta added-exercise from e101465bc2fd382b base 89bcb63b7431
+Round: 5
+Mode: delta
 
 ## Blocking
 (none)
 
-## Fixed
-- nothing needed fixing in the new task L2-08
-
 ## Polish
-- none (the sig-fig remark on "243 kJ" in the Finnish review is mirrored identically; the Finnish file is not touched)
+(none)
 
 ## Checked
-- Compared L2-08 (find the error) in exercises.json and solutions.md with the reviewed Finnish: stem lines 1-4, answer "line 4", five choices, one correct flag, feedback, numbers (-180 K, 1350, -243 000 J, 243 kJ) identical.
-- Physics recomputed: 450*3.0*(-180) = -243 000 J; sign means the plate gives out heat; Delta T equal in K and degC; line 4 is the only wrong line.
-- Format: English decimal point (3.0, no comma); check_i18n silent for fy3-6; build.py fy3-6 succeeds.
+- Diff since the passed version is empty: the content hash 951a60bfd236ffed is the one I passed in round 1, so that judgement stands.
+- fy3-6-L1-09 and fy3-6-L2-09 recomputed again: 0.896 kJ/(kg K) * 0.80 kg * 80 K = 57.3 kJ; 385 J/(kg K) * 3.0 kg * 60 K = 69.3 kJ; both within tolerance.
+- Scripted comparison with the Finnish exercises.json: all 23 exercises have the same answers, units, tolerances, figures and numbers in the task texts.
+- All answers.py values recomputed in one run: every answer within its tolerance (L1-08 32.4 kJ shown as 32 kJ, as in the Finnish).
+- Hash identical at start and end.

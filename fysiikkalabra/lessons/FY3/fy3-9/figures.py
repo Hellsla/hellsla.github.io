@@ -197,6 +197,19 @@ def boyle_points():
     return f.svg()
 
 
+def kelvin_points():
+    """Task fy3-9-L2-09: four isochoric (T, p) measurements of one closed rigid container, without a line or its
+    extension; the description gives the points, not the constant p/T or the extrapolation."""
+    f = Fig("fy39-kelvin-points", 330, "Kuvaaja mittakaavassa: suljetun jäykän astian ilman paine p kelvinlämpötilan T funktiona, neljä mittauspistettä "
+            "ilman piirrettyä suoraa. Pisteet ovat (200 K; 80 kPa), (250 K; 100 kPa), (300 K; 120 kPa) ja (350 K; 140 kPa). "
+            "Ruudukon väli on 50 K ja 20 kPa.")
+    a = Axes(f, (96, 280), (430, 56), x=(0, 400), y=(0, 160), xticks=[50, 100, 150, 200, 250, 300, 350, 400], yticks=[20, 40, 60, 80, 100, 120, 140, 160],
+             xlabel=r"T\ (\text{K})", ylabel=r"p\ (\text{kPa})", xfmt=lambda v: fi(v) if v % 100 == 0 else "", yfmt=lambda v: fi(v) if v % 40 == 0 else "")
+    for t in [200, 250, 300, 350]:
+        a.point(t, 0.4 * t, WATER)
+    return f.svg()
+
+
 # Kuvaajan valinta (task fy3-9-L2-08, docs/exercise-types.md type 2): 40 ml of air at 100 kPa is pushed slowly to 10 ml
 # at a constant temperature, so pV = 4000 kPa·ml: 200 kPa at 20 ml and 400 kPa at 10 ml. Four (V, p) option graphs on
 # the same grid over 10–40 ml; only "pick-boyle" is right.
@@ -244,13 +257,14 @@ def pick_rising():
 
 
 FIGURES = {"hero": hero, "micro-boyle": micro_boyle, "boyle-graphs": boyle_graphs, "absolute-zero": absolute_zero,
-           "iso-processes": iso_processes, "boyle-points": boyle_points,
+           "iso-processes": iso_processes, "boyle-points": boyle_points, "kelvin-points": kelvin_points,
            "pick-boyle": pick_boyle, "pick-line": pick_line, "pick-flat": pick_flat, "pick-rising": pick_rising}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "micro-boyle": "reveals: half the volume gives twice the pressure",
     "boyle-graphs": "reveals: pV = 2000 kPa·ml and the straight p(1/V) line (boyle-points: the points only)",
     "boyle-points": "safe: five (V, p) points without the curve; the description lists the points",
+    "kelvin-points": "safe: four isochoric (T, p) points without a line or extension; the description lists the points",
     "absolute-zero": "reveals: the extrapolation to 0 K",
     "iso-processes": "safe: the isobaric and isochoric setups, no values",
     "pick-boyle": "reveals: the right option of task fy3-9-L2-08 (40 ml at 100 kPa pushed to 10 ml, pV = 4000 kPa·ml)",

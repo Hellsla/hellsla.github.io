@@ -237,4 +237,4 @@ The ratio is $4.0\,\text{J} : 1.0\,\text{J} = 4$, so the work is $4\,W_1$. The r
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:** $W = 25\,\text{N} \cdot 6\,\text{m} + 10\,\text{N} \cdot 4\,\text{m} = 190\,\text{J}$ and $F_\text{av} = \dfrac{190\,\text{J}}{10\,\text{m}} = 19\,\text{N}$
 **Answer:** $19\,\text{N}$, two significant figures, because the values of the graph were read from the grid lines as whole numbers.
-**Reasonableness:** The result $19\,\text{N}$ lies between the smallest ($10\,\text{N}$) and the largest ($25\,\text{N}$) value of the force, and closer to the largest, because the large force acts over the longer distance ($6\,\text{m}$ vs $4\,\text{m}$). Check: $19\,\text{N} \cdot 10\,\text{m} = 190\,\text{J}$.
+**Reasonableness:** The result $19\,\text{N}$ lies between the smallest ($10\,\text{N}$) and the largest ($25\,\text{N}$) value of the force, and closer to the largest, because the large force acts over the longer distance ($6\,\text{m}$ and $4\,\text{m}$). Check: $19\,\text{N} \cdot 10\,\text{m} = 190\,\text{J}$.

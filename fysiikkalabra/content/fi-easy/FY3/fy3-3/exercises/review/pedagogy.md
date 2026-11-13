@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7701b8401cab51a9
-Mode: translation
-Round: 2
+CONTENT-HASH: 84cdf45ac45c57f4
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+- fy3-3-L2-08 — the task text does not say that the last point lies a little above the 100 kPa line; only the solution does. A student reading it as 100 kPa gets about 100 °C, outside the 8 % band (84–98 °C). The description lists 102,5 kPa, so a reader of it is fine; consider a hint 'viimeinen piste on hieman viivan yläpuolella'.
 
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): L1-04 Sijoitus now reads ΔT = (45 − 20) K = 25 K, the bracket form used in the other solutions and consistent with the Kaava ΔT/K = (θ_2 − θ_1)/°C.
-- delta review 2026-11-07 round 3 (fixes to round 2 findings): the round-2 Polish items are done: L1-04 Kaava now shows the constant 273,15 cancelling (ΔT/K = (θ_2 − θ_1)/°C), consistent with its Periaate; L2-04 ratio uses θ/°C + 273,15 top and bottom; L2-01 reads T_2 = (288 + 45) K = 333 K. Results unchanged.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): every Kaava now uses T/K = θ/°C + 273,15 and every substitution carries its unit in brackets ((21 + 273,15) K = 294,15 K); algebra, results and significant figures unchanged; the 390 px solution capture reads cleanly.
-- L1-09 is a level 1 concept choice: setting first, the question as its own sentence, the proportional model given, nothing the lesson did not prepare.
-- Distractors are misconception-based (multiplying units, inverting, forgetting K) and each feedback repairs the error with a cancellation check.
-- Solution is stepwise: solve for c, substitute units, check c*T, then an example value.
-- Reading level fits selkosuomi: short sentences, 'kohdistuvat eli osuvat' or 'luku, jolla lämpötila kerrotaan' glossed; same structure as the reviewed Finnish.
+- L2-08 is now a real figure-reading task: no values in the text, grid step given, p0 on a grid line, a distant second point; the figure is needed.
+- Solution reads the graph first, solves symbolically, then substitutes; reasonableness check between 75 and 100 °C is good.
+- Tolerance 8 % matches stated reading error; answer 91 °C with two figures justified.
+- The description still lists the points, so a non-visual reader has the same data without the answer.

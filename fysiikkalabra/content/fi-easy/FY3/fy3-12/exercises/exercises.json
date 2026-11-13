@@ -311,10 +311,10 @@
     {
       "id": "fy3-12-L2-09",
       "level": 2,
-      "text": "Kuvassa on maapallon energiavirtoja neliömetriä kohti ilmakehän ylärajalla. Kuinka monta prosenttia Auringosta tulevasta säteilystä heijastuu takaisin avaruuteen? Lue tarvittavat arvot kuvasta.",
+      "text": "Kuvassa on maapallon energiavirtoja neliömetriä kohti ilmakehän ylärajalla. Maapallon pinta-ala on $5{,}1 \\cdot 10^{14}\\,\\text{m}^2$.\n\nLue kuvasta, kuinka suuri teho neliömetriä kohti heijastuu takaisin avaruuteen. Luku on keskimäärin koko maapallon pintaa kohti. Laske sitten heijastuneen säteilyn kokonaisteho koko maapallon alalla. Anna vastaus petawatteina ($1\\,\\text{PW} = 10^{15}\\,\\text{W}$).",
       "figure": "fy3-12/earth-flows",
-      "answer": 29.9,
-      "unit": "%",
+      "answer": 52.02,
+      "unit": "PW",
       "tolerance": 0.02
     }
   ],
@@ -338,7 +338,7 @@
     {
       "id": "fy3-12-L3-03",
       "level": 3,
-      "text": "Omakotitaloa lämmittää ilma-vesilämpöpumppu. Sen lämpökerroin on lämmityskaudella keskimäärin 2,8.\n\nYläpohjaan puhalletaan lisää eristevillaa. Silloin yläpohjan U-arvo pienenee $0{,}35\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$:sta $0{,}10\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$:iin. Yläpohjan pinta-ala on $100\\,\\text{m}^2$. Lämmityskausi kestää $5800\\,\\text{h}$. Sen aikana sisä- ja ulkolämpötilan ero on keskimäärin $19\\,\\text{K}$.\n\nKuinka monta kilowattituntia sähköä lisäeristys säästää lämmityskaudessa?\n\nNaapurin mielestä eristämisellä ei ole lämpöpumpun omistajalle väliä, koska pumppu ottaa lämmön ilmaiseksi ulkoilmasta. Perustele, miksi eristäminen silti kannattaa.",
+      "text": "Omakotitaloa lämmittää ilma-vesilämpöpumppu. Sen lämpökerroin on lämmityskaudella keskimäärin 2,8. Lämpökerroin kertoo, kuinka monta kilowattituntia lämpöä pumppu luovuttaa taloon yhtä käyttämäänsä sähkökilowattituntia kohti.\n\nYläpohjaan puhalletaan lisää eristevillaa. Silloin yläpohjan U-arvo pienenee $0{,}35\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$:sta $0{,}10\\,\\text{W/(m}^2\\text{}\\cdot\\text{K)}$:iin. Yläpohjan pinta-ala on $100\\,\\text{m}^2$. Lämmityskausi kestää $5800\\,\\text{h}$. Sen aikana sisä- ja ulkolämpötilan ero on keskimäärin $19\\,\\text{K}$.\n\nKuinka monta kilowattituntia sähköä lisäeristys säästää lämmityskaudessa?\n\nNaapurin mielestä eristämisellä ei ole lämpöpumpun omistajalle väliä, koska pumppu ottaa lämmön ilmaiseksi ulkoilmasta. Perustele, miksi eristäminen silti kannattaa.",
       "answer": 984,
       "unit": "kWh",
       "tolerance": 0.02

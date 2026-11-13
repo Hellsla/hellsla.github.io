@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ba420448372c48ee
-Mode: translation
-Round: 2
+CONTENT-HASH: e5a8473323aac32e
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+- fy3-3-L2-08 — as before: the last point (102.5 kPa) is only 2.5 kPa above the 100 kPa grid line; a student reading it as 100 kPa gets 100 degC, just outside the 84-98 degC range. A hint in the task that it lies slightly above the line would help. Optional.
+- fy3-3-L2-08 — the solution rounds 90.9 to 91; add "(90.9 unrounded)". Optional.
 
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): L1-04 Sijoitus now reads ΔT = (45 − 20) K = 25 K, the bracket form used in the other solutions and consistent with the Kaava ΔT/K = (θ_2 − θ_1)/°C.
-- delta review 2026-11-07 round 3 (fixes to round 2 findings): the round-2 Polish items are done: L1-04 Kaava now shows the constant 273.15 cancelling (ΔT/K = (θ_2 − θ_1)/°C), consistent with its Periaate; L2-04 ratio uses θ/°C + 273.15 top and bottom; L2-01 reads T_2 = (288 + 45) K = 333 K. Results unchanged.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): every Kaava now uses T/K = θ/°C + 273.15 and every substitution carries its unit in brackets ((21 + 273.15) K = 294.15 K); algebra, results and significant figures unchanged; the 390 px solution capture reads cleanly.
-- L1-09 is a level 1 concept choice: setting first, the question as its own sentence, the proportional model given, nothing the lesson did not prepare.
-- Distractors are misconception-based (multiplying units, inverting, forgetting K) and each feedback repairs the error with a cancellation check.
-- Solution is stepwise: solve for c, substitute units, check c*T, then an example value.
-- English reads naturally, structure and feedback equal the Finnish, nothing clipped in the exercise layout.
+- The only change is "nearer $100$" to "nearer the upper end" in the reasonableness note of L2-08.
+- The new phrase is correct and clearer: the temperature lies between 75 and 100 degC, closer to 100, and the bare "100" could be mistaken for a pressure.
+- No number, symbol, answer or tolerance changed, and the figure and its description are unchanged.
+- The rest of the solution (reading, symbolic slope, formula solved for theta, substitution, check) stands as I passed it.

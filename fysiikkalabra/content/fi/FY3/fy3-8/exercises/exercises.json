@@ -302,7 +302,7 @@
     {
       "id": "fy3-8-L2-09",
       "level": 2,
-      "text": "Metallipalkkia lämmitetään ja sen pituuden muutosta mitataan. Kuvaajassa on pituuden muutos $\\Delta L$ lämpötilan funktiona; mittaus alkaa lämpötilasta $20\\,{}^\\circ\\text{C}$. Missä lämpötilassa palkki on $2{,}0\\,\\text{mm}$ pidempi kuin $20\\,{}^\\circ\\text{C}$:ssa? Lue tarvittavat arvot kuvaajasta.",
+      "text": "Metallipalkkia lämmitetään ja sen pituuden muutosta mitataan. Kuvaajassa on pituuden muutos $\\Delta l$ lämpötilan funktiona; mittaus alkaa lämpötilasta $20\\,{}^\\circ\\text{C}$. Missä lämpötilassa palkki on $2{,}0\\,\\text{mm}$ pidempi kuin $20\\,{}^\\circ\\text{C}$:ssa? Lue tarvittavat arvot kuvaajasta.",
       "figure": "fy3-8/length-graph",
       "answer": 53.3,
       "unit": "°C",

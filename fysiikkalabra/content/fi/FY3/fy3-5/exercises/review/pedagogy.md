@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 23beb0210afaa772
+CONTENT-HASH: eb87ee7962362258
+SCOPE: delta added-exercise from 23beb0210afaa772 base 81db4a6fd727
 ## Blocking
 (none)
 ## Polish
-- (carried from round 1, unchanged, optional) statement 1 repeats the number 60 J of the stem.
+- fy3-5-L2-08 is the first half of L2-01 (same figure, same piston; L2-01 needs W to get Q). Fine as a gentler warm-up, but place it before L2-01 or accept the overlap.
+- fy3-5-L1-10 mixes kcal, kJ and two terms; it is the top of level 1 yet one idea (convert, then add); keep.
+- solutions.md L1-10 Vastaus — 11,4 kJ rounded to "11 kJ" is within tolerance; fine.
 ## Checked
-- Feedback chain split with "eli"; the solution's ΔU line is a two-line display block; "Lämpöeristetyssä" matches the stem.
-- Statements, sign convention and answer unchanged and correct.
-- Round 2. Checked from text (the diff of 6bbde30c5 against my round-1 findings); no capture was re-opened, so the 390 px fit of the new display blocks and shortened chains is judged from text only.
+- L1-10: lookup of the calorie conversion with only the table name as hint; the principle (same unit for both terms) is stated first; signs explained.
+- L2-08: figure needed; the description lists both end points of the line, no area or work; trapezium area is the intended level-2 step; the adiabatic Q = 0 is given in words.
+- Solution order: Q = 0, Delta U = W, area; sanity check by average force.
+- Scope within FY3-5; Finnish fine.

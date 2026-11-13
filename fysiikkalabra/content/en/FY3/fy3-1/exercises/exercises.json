@@ -279,6 +279,15 @@
       "answer": 0.5,
       "unit": "kg",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-1-L2-08",
+      "level": 2,
+      "text": "The graph shows the weights of objects of different masses on an unknown celestial body. What is the weight of a $12\\,\\text{kg}$ object on the same celestial body?",
+      "figure": "fy3-1/weight-points",
+      "answer": 60,
+      "unit": "N",
+      "tolerance": 0.03
     }
   ],
   "level3": [

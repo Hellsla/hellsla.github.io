@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 717b427c7d574c97
-Round: 1
+CONTENT-HASH: e8571d0ddd50133c
+SCOPE: delta added-exercise from 717b427c7d574c97 base 81db4a6fd727
 
 ## Blocking
-(none)
 
 ## Polish
-- exercises.json:235 (L2-08) — the distractors are proportionality slips (U ignored, U read backwards, ΔT ignored), not the chapter's warned mistakes ("kylmä virtaa", temperature rising during melting, mean temperature); fine for a "change prediction" task, but the U-backwards option could mention that U describes how easily heat passes, to link it to the lesson's idea that energy flows in, not cold out.
-- lessons/FY3/fy3-16/answers.py — add L2-08 to the multiple-choice comment.
+- exercises/solutions.md (fy3-16-L1-09, Periaate) — "Lämpö otetaan keittolevyltä, joten energia säilyy" draws the wrong conclusion from the right fact. Better: "Energia säilyy: höyrystymiseen sitoutuva lämpö tulee keittolevyltä."
+- exercises/solutions.md (fy3-16-L2-09, Järkevyys) — "Oletus häviöttömyydestä tekee todellisesta arvosta hieman pienemmän" is still ambiguous (carried over). Meant: with losses, less than $Pt$ reaches the block, so the true $c$ is a little below the computed 900 J/(kg·K). Say that.
 
 ## Checked
-- Recomputed t = s m/(U A ΔT): t2/t1 = 1,5 · 2 · (20/30) = 2,0; U ignored 1,0; U backwards 0,5; ΔT ignored 3,0 — every option's value and feedback matches.
-- Exactly one correct option; options 1 and 2 share wording, so the correct one is not identifiable by length or hedging.
-- Model conditions stated in the task: no drinks, inside 0 °C until the ice is gone, all conducted heat melts ice, same wall area; ΔT = outside temperature in °C as the lesson says.
-- Formula and symbols (s, m, U, A, ΔT, t) exactly the lesson's t = s m/(UAΔT); within fy3-16.
-- Renders: measured at 390 px in Chromium with feedback and solution open: widest inline formula 185 px. Physics judged from text.
-- Hash identical at start and end.
+- L1-09 (new situation, boiling pan): water already at 100 °C, so $Q = rm$ alone applies; $2260 \cdot 0{,}30 = 678\,\text{kJ} \approx 680\,\text{kJ}$; MAFY 2260 kJ/kg as in docs/mafy-arvot.tsv (VERIFIED); answers.py agrees. The check against heating the same water 0→100 °C (126 kJ, ratio 5,4) is right.
+- L2-09: $c = Pt/(m\Delta T) = 400 \cdot 180/(2{,}0 \cdot 40) = 900\,\text{J/(kg·K)}$; the lossless assumption is stated in the task; both end points are on grid crossings of `fy3-6/heating-line`.
+- The same figure in the chapter *Aineen lämpeneminen ja jäähtyminen* (0,50 kg, 100 W) also gives 900 J/(kg·K), so the two chapters do not contradict each other.
+- L2-10: $t = Q/P = 220\,000/25 = 8800\,\text{s} = 2{,}44\,\text{h}$; answers.py gives 2,444. The figure's data agree with the task: $2100 \cdot 0{,}60 \cdot 16 + 334\,000 \cdot 0{,}60 = 20{,}2 + 200{,}4 = 220{,}6\,\text{kJ}$ (2,45 h, inside tolerance 0,03), and the solution's independent check says so.
+- L2-10: constant 25 W through the walls is stated as a task condition; the read point (220 kJ; 0 °C) is a grid crossing; the J and h conversions are shown; two figures from 25 W.
+- All three solutions are complete, solved in symbols first, with units carried; inside FY3 (lämpeneminen, olomuodon muutokset).
+- Rest of the set unchanged since PASS; hash same at start and end.

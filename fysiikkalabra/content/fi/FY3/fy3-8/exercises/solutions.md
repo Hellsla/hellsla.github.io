@@ -208,21 +208,21 @@ $h = \dfrac{22{,}0\,\text{mm}^3 - 0{,}54\,\text{mm}^3}{0{,}283\,\text{mm}^2} = 7
 **Järkevyys:** Asteikon tiheys on $\dfrac{75{,}9\,\text{mm}}{20\,\text{K}} = 3{,}8\,\tfrac{\text{mm}}{\text{K}}$, joten yhden asteen lukeminen onnistuu, ja pylvään pituus $76\,\text{mm}$ mahtuu tavalliseen lämpömittariin. Etanolin suhteellinen tilavuuden kasvu on $1{,}1 \cdot 10^{-3}\,\tfrac{1}{\text{K}} \cdot 20\,\text{K} = 2{,}2\,\%$, ja pallon vain $0{,}054\,\%$, joten pallon vaikutus on pieni kuten tulos osoittaa.
 
 ## fy3-8-L1-09
-**Annettu:** pituus $L_0 = 25\,\text{m}$, lämpötilan muutos $\Delta T = 50\,\text{K}$; taulukosta (MAFY-taulukko, pituuden lämpölaajenemiskertoimia, teräs) $\alpha = 12 \cdot 10^{-6}\,\dfrac{1}{\text{K}}$
-**Kysytty:** kiskon pituuden muutos $\Delta L$ millimetreinä
-**Periaate:** Kiinteän kappaleen pituus muuttuu lämpötilan muuttuessa suhteessa alkupituuteen ja lämpötilan muutokseen: $\Delta L = \alpha L_0 \Delta T$.
-**Kaava:** $\Delta L = \alpha L_0 \Delta T$
+**Annettu:** pituus $l_0 = 25\,\text{m}$, lämpötilan muutos $\Delta T = 50\,\text{K}$; taulukosta (MAFY-taulukko, pituuden lämpölaajenemiskertoimia, teräs) $\alpha = 12 \cdot 10^{-6}\,\dfrac{1}{\text{K}}$
+**Kysytty:** kiskon pituuden muutos $\Delta l$ millimetreinä
+**Periaate:** Kiinteän kappaleen pituus muuttuu lämpötilan muuttuessa suhteessa alkupituuteen ja lämpötilan muutokseen: $\Delta l = \alpha l_0 \Delta T$.
+**Kaava:** $\Delta l = \alpha l_0 \Delta T$
 **Muunnokset:** Lopuksi $1\,\text{m} = 1000\,\text{mm}$.
-**Sijoitus:** $\Delta L = 12 \cdot 10^{-6}\,\dfrac{1}{\text{K}} \cdot 25\,\text{m} \cdot 50\,\text{K} = 0{,}015\,\text{m} = 15\,\text{mm}$
+**Sijoitus:** $\Delta l = 12 \cdot 10^{-6}\,\dfrac{1}{\text{K}} \cdot 25\,\text{m} \cdot 50\,\text{K} = 0{,}015\,\text{m} = 15\,\text{mm}$
 **Vastaus:** $15\,\text{mm}$, kaksi merkitsevää numeroa kuten tiedoissa $25\,\text{m}$ ja $50\,\text{K}$. Kertoimen $12 \cdot 10^{-6}\,\text{1/K}$ arvo on MAFY-taulukosta; eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Teräspalkki pitenee noin $1{,}2\,\text{mm}$ metriä kohti, kun lämpötila nousee $100\,\text{K}$, eli $0{,}6\,\text{mm}$ metriä kohti $50\,\text{K}$:lla. Kertaa $25\,\text{m}$ antaa $15\,\text{mm}$. Tulos on järkevä, ja se selittää, miksi kiskojen väliin jätetään liikuntasauma.
 
 ## fy3-8-L2-09
-**Annettu:** pituuden muutos $\Delta L = 2{,}0\,\text{mm}$ alkulämpötilasta $20\,{}^\circ\text{C}$ alkaen; $(T,\Delta L)$-kuvaaja
-**Kysytty:** lämpötila $T$, jossa $\Delta L = 2{,}0\,\text{mm}$
-**Periaate:** Mittauspisteet ovat suoralla, joten pituuden muutos on suoraan verrannollinen lämpötilan muutokseen: $\Delta L = k\,\Delta T$. Kulmakerroin $k$ saadaan kuvaajan päätepisteistä, ja sen avulla ratkaistaan $\Delta T$.
-**Kuvaajan lukeminen:** Suora alkaa ruudukon risteyksestä $(20\,{}^\circ\text{C};\ 0\,\text{mm})$ ja päättyy risteykseen $(70\,{}^\circ\text{C};\ 3{,}0\,\text{mm})$. Siis $\Delta T_\text{koko} = 70\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 50\,\text{K}$ ja $\Delta L_\text{koko} = 3{,}0\,\text{mm}$.
-**Kaava:** $k = \dfrac{\Delta L_\text{koko}}{\Delta T_\text{koko}}$, $\Delta T = \dfrac{\Delta L}{k}$ ja $T = 20\,{}^\circ\text{C} + \Delta T$
+**Annettu:** pituuden muutos $\Delta l = 2{,}0\,\text{mm}$ alkulämpötilasta $20\,{}^\circ\text{C}$ alkaen; $(T,\Delta l)$-kuvaaja
+**Kysytty:** lämpötila $T$, jossa $\Delta l = 2{,}0\,\text{mm}$
+**Periaate:** Mittauspisteet ovat suoralla, joten pituuden muutos on suoraan verrannollinen lämpötilan muutokseen: $\Delta l = k\,\Delta T$. Kulmakerroin $k$ saadaan kuvaajan päätepisteistä, ja sen avulla ratkaistaan $\Delta T$.
+**Kuvaajan lukeminen:** Suora alkaa ruudukon risteyksestä $(20\,{}^\circ\text{C};\ 0\,\text{mm})$ ja päättyy risteykseen $(70\,{}^\circ\text{C};\ 3{,}0\,\text{mm})$. Siis $\Delta T_\text{koko} = 70\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 50\,\text{K}$ ja $\Delta l_\text{koko} = 3{,}0\,\text{mm}$.
+**Kaava:** $k = \dfrac{\Delta l_\text{koko}}{\Delta T_\text{koko}}$, $\Delta T = \dfrac{\Delta l}{k}$ ja $T = 20\,{}^\circ\text{C} + \Delta T$
 **Muunnokset:** Ei tarvita: kaikki pituudet ovat millimetreinä ja lämpötilan muutokset kelvineinä.
 **Sijoitus:** $k = \dfrac{3{,}0\,\text{mm}}{50\,\text{K}} = 0{,}060\,\dfrac{\text{mm}}{\text{K}}$, joten $\Delta T = \dfrac{2{,}0\,\text{mm}}{0{,}060\,\text{mm/K}} = 33{,}3\,\text{K}$ ja $T = 20\,{}^\circ\text{C} + 33{,}3\,\text{K} = 53{,}3\,{}^\circ\text{C}$
 **Vastaus:** $53\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten tiedossa $2{,}0\,\text{mm}$. Arvot luetaan ruudukon risteyksistä, joten hyväksytään $51{,}7\ldots54{,}9\,{}^\circ\text{C}$.

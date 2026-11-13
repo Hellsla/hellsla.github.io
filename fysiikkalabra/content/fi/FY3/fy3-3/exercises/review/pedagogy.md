@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e1dd7ab8f7baa8e3
+CONTENT-HASH: 839f1b0810ea0dcf
 ## Blocking
 (none)
 ## Polish
-- exercises.json (fy3-3-L1-09) — the distractors are unit-algebra slips only; none catches the chapter's warned mistake (°C instead of K, 0 °C as the lowest temperature). Consider replacing "kPa" by "kPa/°C" with feedback that the proportionality needs kelvins.
-- Stem: the second sentence "Paine annetaan kilopascaleina ja lämpötila kelvineinä." is fine; add that c is a constant measured for one fixed vessel if a student asks what c means (optional).
+- fy3-3-L1-10 still repeats L1-03 (liquid nitrogen, K and degrees C); the new part is only the MAFY lookup. Acceptable, but another substance would add variety.
+- L2-08 shares its figure with L2-03 and asks the same line-fit; the new part is interpolating to 100 kPa, so it is easier than L2-03 and placed before nothing harder; fine, order within level 2 is not a progression of difficulty.
+- L2-08 Vastaus: 'kaksi merkitsevää numeroa' with 8 % tolerance is fine; the figure's last point is read as about 102,5 kPa, which is a small reading step; hint could say to read it from above the 100 kPa line (the solution does).
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): L1-04 Sijoitus now reads ΔT = (45 − 20) K = 25 K, the bracket form used in the other solutions and consistent with the Kaava ΔT/K = (θ_2 − θ_1)/°C.
-- delta review 2026-11-07 round 3 (fixes to round 2 findings): the round-2 Polish items are done: L1-04 Kaava now shows the constant 273,15 cancelling (ΔT/K = (θ_2 − θ_1)/°C), consistent with its Periaate; L2-04 ratio uses θ/°C + 273,15 top and bottom; L2-01 reads T_2 = (288 + 45) K = 333 K. Results unchanged.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): every Kaava now uses T/K = θ/°C + 273,15 and every substitution carries its unit in brackets ((21 + 273,15) K = 294,15 K); algebra, results and significant figures unchanged; the 390 px solution capture reads cleanly.
-- Type 7 (yksikkö): correct option is not identifiable by form (all four are short unit expressions, two fractions, order shuffled by the page).
-- Feedback of every wrong option shows what unit c T would then have: repairs the misconception rather than restating the answer.
-- Stays inside FY3-3: p proportional to T is in the chapter summary; no derivation needed.
-- Model solution solves for c, checks by multiplying back, and gives a numerical example (0,40 kPa/K).
-- Finnish fine; question last as its own sentence.
-- Renders: the 1280 px open-solution captures of the new task (shuffled option order, feedback after a wrong try, solution block) were opened. The 390 px fit of inline chains was judged from text only (no phone capture of the exercises exists); each inline chain is short or breaks at = or ·.
+- L2-08 now a real figure task: stem no longer lists points, figure needed, description lists all five points without the answer or line.
+- Solution reads the graph first (p0, last point), then k, then solves for theta; accepted range 84–98 matches tolerance 0,08 around 90,9.
+- Reading ambiguity small: any reading of last point 100–104 kPa stays within tolerance.
+- L1-10: one lookup and offset 273,15, solution explains the scales and checks backwards; stem names the table only in the hint.
+- Scope fits FY3-3; Finnish fine.
+- Captures not opened.
