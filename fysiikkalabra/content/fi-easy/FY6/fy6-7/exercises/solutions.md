@@ -56,7 +56,7 @@
 **Kaava:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$
 **Muunnokset:** Ei tarvita: tehot luetaan kilowatteina ja ajat tunteina. Siksi energia tulee kilowattitunteina.
 **Sijoitus:** $E = 2{,}0\,\text{kW} \cdot 0{,}25\,\text{h} + 0{,}2\,\text{kW} \cdot 1{,}0\,\text{h} + 0{,}4\,\text{kW} \cdot 0{,}25\,\text{h} = 0{,}80\,\text{kWh}$
-**Vastaus:** $0{,}80\,\text{kWh}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska arvot luetaan $0{,}2\,\text{kW}$:n ja $0{,}25\,\text{h}$:n ruudukkoviivoilta.
+**Vastaus:** $0{,}80\,\text{kWh}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska arvot luetaan kuvaajasta kahden numeron tarkkuudella ($0{,}2\,\text{kW}$ on ruudukon välissä, $0{,}25\,\text{h}$ ruudukkoviivalla).
 **Järkevyys:** Lämmitys on lyhyt, mutta se käyttää yli puolet energiasta, $0{,}50\,\text{kWh}$. Syy on sen teho, joka on kymmenkertainen pesuun verrattuna. Puolentoista tunnin ohjelma keskimäärin noin $0{,}5\,\text{kW}$:n teholla antaisi $0{,}8\,\text{kWh}$.
 
 ## fy6-7-L2-02
@@ -242,7 +242,7 @@ Uuni käyttää noin $0{,}060\,\text{kWh}$ eli $60\,\text{Wh}$ sähköenergiaa. 
 **Kaava:** $E = Pt$
 **Muunnokset:** $1\,\text{kWh} = 3{,}6 \cdot 10^{6}\,\text{J} = 3{,}6\,\text{MJ}$
 **Sijoitus:** $E = 1{,}5\,\text{kW} \cdot 2{,}0\,\text{h} = 3{,}0\,\text{kWh}$ ja $3{,}0\,\text{kWh} \cdot 3{,}6\,\tfrac{\text{MJ}}{\text{kWh}} = 10{,}8\,\text{MJ}$
-**Vastaus:** $11\,\text{MJ}$, kaksi merkitsevää numeroa kuten tehossa $1{,}5\,\text{kW}$ ja ajassa $2{,}0\,\text{h}$. Muunnoskerroin on MAFY-taulukosta (Yksikkömuunnoksia), ja muunnos $1\,\text{kWh} = 3{,}6\,\text{MJ}$ on tarkka. Vastaus kelpaa, kun se on noin $\pm 4\,\%$ sisällä.
+**Vastaus:** $10{,}8\,\text{MJ}$. Lähtöarvot $1{,}5\,\text{kW}$ ja $2{,}0\,\text{h}$ on annettu kahdella merkitsevällä numerolla, joten pyöristetty tulos on $11\,\text{MJ}$. Muunnoskerroin $1\,\text{kWh} = 3{,}6\,\text{MJ}$ on tarkka ja MAFY-taulukosta (Yksikkömuunnoksia).
 **Järkevyys:** Yksi kilowattitunti on $3{,}6\,\text{MJ}$, joten $3{,}0\,\text{kWh}$ on noin $3 \cdot 4\,\text{MJ} = 12\,\text{MJ}$, hieman vähemmän. Tulos $10{,}8\,\text{MJ}$ sopii tähän.
 
 ## fy6-7-L2-08

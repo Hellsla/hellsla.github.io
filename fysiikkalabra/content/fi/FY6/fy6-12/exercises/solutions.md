@@ -221,8 +221,8 @@ Liike-energia on $90\,\text{eV}$ eli $1{,}4 \cdot 10^{-17}\,\text{J}$ kahden mer
 **Kysytty:** nopeus $v$ positiivisella levyllä
 **Periaate:** Vain sähköinen voima tekee työtä, joten liike-energian ja potentiaalienergian summa säilyy. Elektroni liikkuu kohti suurempaa potentiaalia, joten sen potentiaalienergia pienenee määrän $eU$ ja liike-energia kasvaa saman verran. Potentiaaliero luetaan kuvaajasta.
 **Kuvaajan lukeminen:** Kohdassa $x = 1{,}0\,\text{cm}$ suora on $50\,\text{V}$:n ruudukkoviivalla. Positiivinen levy on kohdassa $x = 5{,}0\,\text{cm}$, missä suora on $250\,\text{V}$:n viivalla. Potentiaaliero on $U = 250\,\text{V} - 50\,\text{V} = 200\,\text{V}$.
-**Kaava:** $\frac{1}{2}mv^2 = eU \;\Rightarrow\; v = \sqrt{\frac{2eU}{m}}$
+**Kaava:** $\frac{1}{2}mv^2 = eU$, josta $v = \sqrt{\dfrac{2eU}{m}}$
 **Muunnokset:** Ei tarvita: kaikki suureet ovat SI-yksiköissä, ja $\sqrt{1\,\text{C} \cdot 1\,\text{V} : 1\,\text{kg}} = 1\,\text{m/s}$.
-**Sijoitus:** $v = \sqrt{\frac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 200\,\text{V}}{9{,}109 \cdot 10^{-31}\,\text{kg}}} = 8{,}387 \cdot 10^{6}\,\text{m/s}$
+**Sijoitus:** $v = \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 200\,\text{V}}{9{,}109 \cdot 10^{-31}\,\text{kg}}} = 8{,}387 \cdot 10^{6}\,\text{m/s}$
 **Vastaus:** $v \approx 8{,}4 \cdot 10^{6}\,\text{m/s}$, kaksi merkitsevää numeroa, koska potentiaalit luetaan $50\,\text{V}$:n ruudukkoviivoilta ja paikka on annettu kahdella merkitsevällä numerolla.
 **Järkevyys:** Liike-energia on $200\,\text{eV}$, ja nopeus on noin $2{,}8\,\%$ valon nopeudesta $3{,}00 \cdot 10^{8}\,\text{m/s}$, joten lauseke $\tfrac{1}{2}mv^2$ pätee. Jännite $3{,}0\,\text{kV}$ antaisi nopeuden $3{,}2 \cdot 10^{7}\,\text{m/s}$, ja pienempi jännite antaa pienemmän nopeuden.
