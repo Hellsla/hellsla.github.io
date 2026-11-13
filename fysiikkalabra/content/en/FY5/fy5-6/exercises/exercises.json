@@ -130,9 +130,9 @@
     {
       "id": "fy5-6-L1-11",
       "level": 1,
-      "text": "A probe orbits Venus in an almost circular orbit at a height of $500\\,\\text{km}$ above the surface of Venus. Look up the mass and the radius of Venus in the MAFY table (mafytaulukot.fi). Calculate the probe's period of revolution. Give the answer in minutes.",
+      "text": "A probe orbits the Moon in an almost circular orbit at a height of $100\\,\\text{km}$ above the surface of the Moon. Look up the mass and the radius of the Moon in the MAFY table (mafytaulukot.fi). Calculate the probe's period of revolution. Give the answer in minutes.",
       "lookup": "MAFY",
-      "answer": 97.4,
+      "answer": 117.8,
       "unit": "min",
       "tolerance": 0.04,
       "hints": [

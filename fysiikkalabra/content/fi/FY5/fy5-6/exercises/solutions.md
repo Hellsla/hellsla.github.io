@@ -222,14 +222,14 @@ Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}
 **Järkevyys:** Kiihtyvyys on $\dfrac{v^2}{r} = \dfrac{(29{,}8 \cdot 10^{3}\,\text{m/s})^2}{1{,}496 \cdot 10^{11}\,\text{m}} \approx 5{,}9 \cdot 10^{-3}\,\text{m/s}^2$, sama kuin yllä. Se on noin tuhannesosa Maan putoamiskiihtyvyydestä $9{,}81\,\text{m/s}^2$, ja Aurinko on hyvin kaukana.
 
 ## fy5-6-L1-11
-**Annettu:** korkeus $h = 500\,\text{km}$; MAFY-taulukosta (Aurinkokunta, Venus) massa $M = 4{,}867 \cdot 10^{24}\,\text{kg}$ ja keskimääräinen säde $R = 6052\,\text{km}$; $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
+**Annettu:** korkeus $h = 100\,\text{km}$; MAFY-taulukosta (Aurinkokunta, Kuu) massa $M = 7{,}346 \cdot 10^{22}\,\text{kg}$ ja keskimääräinen säde $R = 1737\,\text{km}$; $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
 **Kysytty:** luotaimen kiertoaika $T$ minuutteina
-**Periaate:** Luotaimeen vaikuttaa vain Venuksen gravitaatiovoima, joka on ympyräliikkeen kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. Radan säde mitataan Venuksen keskipisteestä, joten $r = R + h$. Kiertoaika saadaan nopeudesta, koska luotain kulkee ajassa $T$ radan kehän $2\pi r$.
+**Periaate:** Luotaimeen vaikuttaa vain Kuun gravitaatiovoima, joka on ympyräliikkeen kokonaisvoima: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. Radan säde mitataan Kuun keskipisteestä, joten $r = R + h$. Kiertoaika saadaan nopeudesta, koska luotain kulkee ajassa $T$ radan kehän $2\pi r$.
 **Kaava:** $v = \sqrt{\dfrac{\gamma M}{r}}$ ja $T = \dfrac{2\pi r}{v}$
-**Muunnokset:** $r = 6052\,\text{km} + 500\,\text{km} = 6552\,\text{km} = 6{,}552 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{min} = 60\,\text{s}$.
-**Sijoitus:** $\gamma M = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 4{,}867 \cdot 10^{24}\,\text{kg} = 3{,}2482 \cdot 10^{14}\,\text{m}^3/\text{s}^2$, joten $v = \sqrt{\dfrac{3{,}2482 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6{,}552 \cdot 10^{6}\,\text{m}}} = 7041\,\text{m/s}$ ja $T = \dfrac{2\pi \cdot 6{,}552 \cdot 10^{6}\,\text{m}}{7041\,\text{m/s}} = 5847\,\text{s} = 97{,}4\,\text{min}$
-**Vastaus:** $97{,}4\,\text{min}$, kolme merkitsevää numeroa kuten taulukon massassa. Arvot ovat MAFY-taulukosta (Aurinkokunta, Venus); eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Venus on lähes Maan kokoinen ja massainen, joten matalan radan kiertoaika on lähes sama kuin Maan ympäri: ISS kiertää $420\,\text{km}$:n korkeudella noin $92\,\text{min}$:ssa. Luotain on vähän kauempana keskipisteestä, joten sen kiertoaika on hieman pidempi.
+**Muunnokset:** $r = 1737\,\text{km} + 100\,\text{km} = 1837\,\text{km} = 1{,}837 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{min} = 60\,\text{s}$.
+**Sijoitus:** $\gamma M = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 7{,}346 \cdot 10^{22}\,\text{kg} = 4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2$, joten $v = \sqrt{\dfrac{4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{1{,}837 \cdot 10^{6}\,\text{m}}} = 1634\,\text{m/s}$ ja $T = \dfrac{2\pi \cdot 1{,}837 \cdot 10^{6}\,\text{m}}{1634\,\text{m/s}} = 7065\,\text{s} = 117{,}8\,\text{min}$
+**Vastaus:** $118\,\text{min}$ ($117{,}8\,\text{min}$), kolme merkitsevää numeroa kuten taulukon massassa. Arvot ovat MAFY-taulukosta (Aurinkokunta, Kuu); eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Järkevyys:** Matalalla Maan radalla kiertoaika on noin $90\,\text{min}$ (ISS noin $92\,\text{min}$). Kuu on kevyempi, joten sama korkeus tarkoittaa hitaampaa kiertoa ja pidempää kiertoaikaa; noin $2\,\text{h}$ on järkevä.
 
 ## fy5-6-L2-08
 **Annettu:** kuvasta Halleyn komeetan rata: pienin etäisyys Auringosta $r_1 = 88\,\text{milj. km}$ ja suurin $r_2 = 5250\,\text{milj. km}$

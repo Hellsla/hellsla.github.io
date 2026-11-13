@@ -130,9 +130,9 @@
     {
       "id": "fy5-6-L1-11",
       "level": 1,
-      "text": "Luotain kiertää Venusta lähes ympyrärataa. Luotain on $500\\,\\text{km}$:n korkeudella Venuksen pinnasta. Etsi Venuksen massa ja säde MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Laske luotaimen kiertoaika. Anna vastaus minuutteina.",
+      "text": "Luotain kiertää Kuuta lähes ympyrärataa. Luotain on $100\\,\\text{km}$:n korkeudella Kuun pinnasta. Etsi Kuun massa ja säde MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Laske luotaimen kiertoaika. Anna vastaus minuutteina.",
       "lookup": "MAFY",
-      "answer": 97.4,
+      "answer": 117.8,
       "unit": "min",
       "tolerance": 0.04,
       "hints": [

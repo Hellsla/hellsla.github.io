@@ -43,6 +43,6 @@ a["fy5-6-L3-05"] = TA * TB / (TB - TA) / 3600                      # t/T_A − t
 # Added batch (teacher 2026-11-12): figure tasks and a MAFY table task
 M_sun = 1.99e30                                                    # mass of the Sun, kg
 a["fy5-6-L1-10"] = gam * M_sun / (0.5 * (147.1e9 + 152.1e9)) ** 2 * 1e3   # figure: r = 1,496·10¹¹ m: a = γM/r² = 5,934e-3 m/s² -> 5,93 mm/s²
-a["fy5-6-L1-11"] = 2 * math.pi * (6.052e6 + 0.500e6) / math.sqrt(gam * 4.867e24 / (6.052e6 + 0.500e6)) / 60   # MAFY: Venus M = 4,867·10²⁴ kg, R = 6052 km, h = 500 km: r = 6552 km, v = 7041 m/s, T = 5847 s -> 97,4 min
+a["fy5-6-L1-11"] = 2 * math.pi * (1.737e6 + 0.100e6) / math.sqrt(gam * 7.346e22 / (1.737e6 + 0.100e6)) / 60   # MAFY: Moon M = 7,346·10²² kg, R = 1737 km, h = 100 km: r = 1837 km, v = 1634 m/s, T = 7065 s -> 117,8 min
 a["fy5-6-L2-08"] = round(math.sqrt(5250 / 88), 1)                           # figure: Halley r_min = 88, r_max = 5250 milj. km: v1/v2 = sqrt(r2/r1) = 7,724 -> 7,7 (88 milj. km has two sig. figs; unrounded 7,724)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
