@@ -865,6 +865,7 @@ textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border
 .exp-setup{font-size:var(--fs-ui);margin:.6rem 0;padding:.5rem .8rem;background:var(--bg);border-radius:var(--inner-radius)}
 .exp-setup>div{display:grid;grid-template-columns:6.2rem 1fr;column-gap:.5rem;margin:.3rem 0}
 .exp-icons{display:inline-flex;gap:.5rem}
+@media (max-width:30rem){.exp-setup>div{grid-template-columns:1fr;row-gap:0}.exp-setup dd{min-width:0}}   /* a phone: the name over its value, so a formula that cannot wrap has the whole row */
 .exp-setup dt{font-weight:700}.exp-setup dt::after{content:":"}
 .exp-setup dd{margin:0}
 .exp-controls .exp-icon{display:inline-flex;align-items:center;justify-content:center;min-width:40px;padding:0}
