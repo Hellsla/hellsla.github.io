@@ -247,7 +247,7 @@
       {
        "key": "graph_read",
        "points": 1,
-       "detail": "Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(4{,}0 \\cdot 10^{14}\\,\\text{Hz};\\ 1{,}59\\,\\text{V})$ ja $(7{,}0 \\cdot 10^{14}\\,\\text{Hz};\\ 2{,}87\\,\\text{V})$."
+       "detail": "Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(5{,}0 \\cdot 10^{14}\\,\\text{Hz};\\ 2{,}02\\,\\text{V})$ ja $(6{,}8 \\cdot 10^{14}\\,\\text{Hz};\\ 2{,}78\\,\\text{V})$."
       },
       {
        "key": "calculation",
@@ -702,7 +702,7 @@
        "points": 1
       },
       {
-       "text": "Erottaa mallin Bohrin mallista nimeämällä eron: elektronin paikkaa ja nopeutta ei voi tietää tarkasti yhtä aikaa, joten sillä ei ole määrättyä rataa.",
+       "text": "Kertoo, että jokaista sallittua seisovaa aaltoa eli tilaa vastaa oma energiansa, joten tilojen välillä ei ole muita energioita.",
        "tag": "communication",
        "points": 1
       }

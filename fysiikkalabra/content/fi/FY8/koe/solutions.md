@@ -17,10 +17,10 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 **Perustelu:** Siirtymässä $2 \to 1$ fotonin energia on $13{,}6\,\text{eV}\,(1 - \tfrac{1}{4}) = 10{,}2\,\text{eV}$ ja siirtymässä $3 \to 2$ se on $13{,}6\,\text{eV}\,(\tfrac{1}{4} - \tfrac{1}{9}) \approx 1{,}89\,\text{eV}$. Suhde on $10{,}2 : 1{,}89 \approx 5{,}4$. Energiatasot tihenevät ylöspäin mentäessä, joten perustilalle johtava siirtymä on paljon suurempi kuin ylempien tasojen välinen. Suhde $3{,}0$ syntyy, jos energian luullaan olevan verrannollinen lukuun $\tfrac{1}{n}$: $\tfrac{1 - 1/2}{1/2 - 1/3} = 3{,}0$. Suhde $0{,}6$ syntyy, jos energian luullaan kasvavan lukuun $n^2$ verrannollisena: $\tfrac{4 - 1}{9 - 4} = 0{,}6$. Suhde $1{,}0$ syntyy, jos vain lasketaan, että kummassakin siirtymässä taso muuttuu yhdellä.
 
 ### e)
-**Perustelu:** Kun $eU_\text{k} \approx hf = \tfrac{hc}{\lambda}$, kynnysjännite on kääntäen verrannollinen aallonpituuteen. Sinisen LEDin kynnysjännite on $1{,}9\,\text{V} \cdot \tfrac{650}{450} \approx 2{,}7\,\text{V}$. Lyhyempi aallonpituus tarkoittaa suurempaa fotonin energiaa, joten jännite kasvaa; arvo $1{,}3\,\text{V}$ saadaan kääntämällä suhde väärinpäin. Arvo $4{,}0\,\text{V}$ syntyy, jos suhde korotetaan toiseen potenssiin ($1{,}9\,\text{V} \cdot 1{,}44^2 \approx 4{,}0\,\text{V}$), vaikka riippuvuus on suoraan käänteinen.
+**Perustelu:** Kun $eU_\text{k} \approx hf = \tfrac{hc}{\lambda}$, kynnysjännite on kääntäen verrannollinen aallonpituuteen. Sinisen LEDin kynnysjännite on $1{,}9\,\text{V} \cdot \tfrac{650}{450} \approx 2{,}7\,\text{V}$. Lyhyempi aallonpituus tarkoittaa suurempaa fotonin energiaa, joten jännite kasvaa; arvo $1{,}3\,\text{V}$ saadaan kääntämällä suhde väärinpäin. Arvo $4{,}0\,\text{V}$ syntyy, jos suhde korotetaan toiseen potenssiin ($1{,}9\,\text{V} \cdot 1{,}44^2 \approx 4{,}0\,\text{V}$), vaikka riippuvuus on suoraan käänteinen. Arvo $1{,}9\,\text{V}$ on punaisen LEDin kynnysjännite; se pätisi vain, jos aallonpituudella ei olisi vaikutusta.
 
 ### f)
-**Perustelu:** Stimuloidussa emissiossa virittyneen atomin ohi kulkeva fotoni, jonka energia vastaa siirtymää, saa atomin siirtymään alemmalle tasolle ja lähettämään toisen fotonin, joka on samassa vaiheessa, samalla taajuudella ja samaan suuntaan. Tästä kasvaa koherentti, yhdensuuntainen laservalo. Absorptio ja satunnaisiin suuntiin tapahtuva spontaani emissio kuvaavat tavallista valonlähdettä, ja fotoni ei jakaudu kahdeksi, koska energia säilyy: syntyy uusi fotoni ja atomi luovuttaa energiansa.
+**Perustelu:** Stimuloidussa emissiossa virittyneen atomin ohi kulkeva fotoni, jonka energia vastaa siirtymää, saa atomin siirtymään alemmalle tasolle ja lähettämään toisen fotonin, joka on samassa vaiheessa, samalla taajuudella ja samaan suuntaan. Tästä kasvaa koherentti, yhdensuuntainen laservalo. Absorptio ja satunnaisiin suuntiin tapahtuva spontaani emissio kuvaavat tavallista valonlähdettä, ja fotoni ei jakaudu kahdeksi: uuden fotonin energia tulee atomilta, joka luovuttaa koko siirtymän energian, joten molemmilla fotoneilla on koko siirtymän energia $hf$.
 
 ### g)
 **Perustelu:** Aktiivisuus puolittuu jokaisen puoliintumisajan kuluessa. Suhde $3{,}2 : 0{,}10 = 32 = 2^{5}$, joten tarvitaan viisi puoliintumisaikaa: $5 \cdot 4{,}0\,\text{h} = 20\,\text{h}$. Neljän puoliintumisajan ($16\,\text{h}$) jälkeen aktiivisuus olisi vielä $0{,}20\,\text{MBq}$. Vaihtoehto $7{,}8\,\text{h}$ syntyy lineaarisesta päättelystä: jos aktiivisuuden luullaan vähenevän tasaisesti puolella alkuarvostaan eli $1{,}6\,\text{MBq}$ per $4{,}0\,\text{h}$, aika on $\tfrac{3{,}1}{1{,}6} \cdot 4{,}0\,\text{h} \approx 7{,}8\,\text{h}$, vaikka puoliintuminen on suhteellista eikä vakiomäärän väheneminen. Vaihtoehto $16\,\text{h}$ on neljä puoliintumisaikaa, jolloin aktiivisuus on vielä $0{,}20\,\text{MBq}$. Vaihtoehto $32\,\text{h}$ syntyy, kun suhdeluku $32$ luetaan suoraan tunneiksi.
@@ -46,7 +46,7 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 **Kysytty:** taajuudet $f$ ja $(f, U_\text{k})$-kuvaaja virhepalkkeineen sekä sovitettu suora
 **Kuvaaja:** Vaaka-akselilla on taajuus $f$ ($10^{14}\,\text{Hz}$) ja pystyakselilla kynnysjännite $U_\text{k}$ ($\text{V}$), molemmilla tasavälinen asteikko. Taajuudet ovat $f = \tfrac{c}{\lambda}$: $4{,}80$, $5{,}08$, $5{,}71$, $6{,}38$ ja $6{,}97 \cdot 10^{14}\,\text{Hz}$. Jokaiseen pisteeseen piirretään pystysuora virhepalkki $\pm 0{,}05\,\text{V}$.
 
-<svg data-fig="fy8-k2-graph" viewBox="0 0 600 440" role="img" aria-label="Kuvaaja: LEDin kynnysjännite $U_\text{k}$ voltteina valon taajuuden $f$ funktiona, taajuus yksikössä $10^{14}$ hertsiä. Viisi mittauspistettä taajuuksilla 4,8, 5,1, 5,7, 6,4 ja 7,0 kymmenen potenssiin 14 hertsiä, kullakin pystysuora virhepalkki plus miinus 0,05 volttia. Pisteet ovat nousevalla suoralla, joka jatkuu katkoviivana alaspäin ja leikkaa vaaka-akselin noin taajuudella 2,6 kymmenen potenssiin 14 hertsiä. Suoran kulmakerroin luetaan pisteistä 4,0 ja 1,59 volttia sekä 7,0 ja 2,87 volttia." style="max-width:100%;font-size:24px">
+<svg data-fig="fy8-k2-graph" viewBox="0 0 600 440" role="img" aria-label="Kuvaaja: LEDin kynnysjännite $U_\text{k}$ voltteina valon taajuuden $f$ funktiona, taajuus yksikössä $10^{14}$ hertsiä. Viisi mittauspistettä taajuuksilla 4,8, 5,1, 5,7, 6,4 ja 7,0 kymmenen potenssiin 14 hertsiä, kullakin pystysuora virhepalkki plus miinus 0,05 volttia. Pisteet ovat nousevalla suoralla, joka jatkuu katkoviivana alaspäin ja leikkaa vaaka-akselin noin taajuudella 2,6 kymmenen potenssiin 14 hertsiä. Suoran kulmakerroin luetaan pisteistä 5,0 ja 2,02 volttia sekä 6,8 ja 2,78 volttia." style="max-width:100%;font-size:24px">
   <line x1="132.5" y1="390" x2="132.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="175" y1="390" x2="175" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="217.5" y1="390" x2="217.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -111,13 +111,13 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
   <circle cx="361" cy="150.5" r="5.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <polyline points="386.5,135 386.5,126" fill="none" stroke="#1971c2" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="386.5" cy="130.5" r="5.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <line x1="260" y1="244.5" x2="260" y2="390" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="90" y1="244.5" x2="260" y2="244.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="387.5" y1="128" x2="387.5" y2="390" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="90" y1="128" x2="387.5" y2="128" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="302.5" y1="206" x2="302.5" y2="390" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="90" y1="206" x2="302.5" y2="206" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="379" y1="136" x2="379" y2="390" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="90" y1="136" x2="379" y2="136" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <foreignObject x="222.5" y="323" width="154" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{ekstrapolointi}$</span></div></foreignObject>
-  <foreignObject x="395.5" y="142" width="115" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(7{,}0;\ 2{,}87)$</span></div></foreignObject>
-  <foreignObject x="270" y="258.5" width="115" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(4{,}0;\ 1{,}59)$</span></div></foreignObject>
+  <foreignObject x="387" y="150" width="115" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(6{,}8;\ 2{,}78)$</span></div></foreignObject>
+  <foreignObject x="312.5" y="220" width="115" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(5{,}0;\ 2{,}02)$</span></div></foreignObject>
 </svg>
 
 **Mallivastaus:** Pisteet asettuvat nousevalle suoralle: kynnysjännite kasvaa lähes suoraan verrannollisena taajuuteen, kuten malli $eU_\text{k} \approx hf$ ennustaa. Suora kulkee kaikkien virhepalkkien lähellä, ja sitä jatketaan katkoviivalla kohti vaaka-akselia. Pisteitä ei yhdistetä murtoviivaksi.
@@ -126,10 +126,10 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 **Annettu:** a-kohdan kuvaaja, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
 **Kysytty:** Planckin vakio $h$
 **Periaate:** Kynnysjännitteellä elektronin saama energia on likimain yhden fotonin energia, $eU_\text{k} \approx hf$. Kun $U_\text{k}$ on pystyakselilla ja $f$ vaaka-akselilla, suoran kulmakerroin on $\tfrac{h}{e}$.
-**Kuvaajan lukeminen:** Suoralta luetaan kaukana toisistaan olevat pisteet $(4{,}0 \cdot 10^{14}\,\text{Hz};\ 1{,}59\,\text{V})$ ja $(7{,}0 \cdot 10^{14}\,\text{Hz};\ 2{,}87\,\text{V})$.
+**Kuvaajan lukeminen:** Suoralta luetaan mittausalueella olevat, kaukana toisistaan olevat pisteet $(5{,}0 \cdot 10^{14}\,\text{Hz};\ 2{,}02\,\text{V})$ ja $(6{,}8 \cdot 10^{14}\,\text{Hz};\ 2{,}78\,\text{V})$.
 **Kaava:** $h = e \cdot \dfrac{\Delta U_\text{k}}{\Delta f}$
-**Muunnokset:** $4{,}0 \cdot 10^{14}\,\text{Hz}$ ja $7{,}0 \cdot 10^{14}\,\text{Hz}$ ovat suoraan hertseinä, ja $1\,\text{V} = 1\,\text{J/C}$.
-**Sijoitus:** $\Delta U = 2{,}87\,\text{V} - 1{,}59\,\text{V} = 1{,}28\,\text{V}$ ja $\Delta f = 7{,}0 \cdot 10^{14}\,\text{Hz}$ $- 4{,}0 \cdot 10^{14}\,\text{Hz}$ $= 3{,}0 \cdot 10^{14}\,\text{Hz}$, joten kulmakerroin $\dfrac{1{,}28\,\text{V}}{3{,}0 \cdot 10^{14}\,\text{Hz}}$ $\approx 4{,}27 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja $h = 1{,}602 \cdot 10^{-19}\,\text{C}$ $\cdot\ 4{,}27 \cdot 10^{-15}\,\text{V}\,\text{s}$ $\approx 6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Muunnokset:** Taajuudet ovat suoraan hertseinä, ja $1\,\text{V} = 1\,\text{J/C}$.
+**Sijoitus:** $\Delta U_\text{k} = 2{,}78\,\text{V} - 2{,}02\,\text{V} = 0{,}76\,\text{V}$ ja $\Delta f = 6{,}8 \cdot 10^{14}\,\text{Hz}$ $- 5{,}0 \cdot 10^{14}\,\text{Hz}$ $= 1{,}8 \cdot 10^{14}\,\text{Hz}$, joten kulmakerroin $\dfrac{0{,}76\,\text{V}}{1{,}8 \cdot 10^{14}\,\text{Hz}}$ $\approx 4{,}2 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja $h = 1{,}602 \cdot 10^{-19}\,\text{C}$ $\cdot\ 4{,}2 \cdot 10^{-15}\,\text{V}\,\text{s}$ $\approx 6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Vastaus:** Planckin vakio on noin $6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$.
 **Järkevyys:** Arvo on lähellä tunnettua arvoa $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, noin $3\,\%$ suurempi; suhteellinen virhe on mittauksen tarkkuuden kokoluokkaa. Kulmakertoimen yksikkö $\text{V}\,\text{s}$ kerrottuna varauksella antaa $\text{J}\,\text{s}$.
 
@@ -297,7 +297,7 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 **Periaate:** Sidosenergia on energia, joka vapautuu, kun ydin muodostuu erillisistä nukleoneista, eli massavaje kerrottuna $c^2$:lla. Atomimassoilla vetyatomien massa $m_\text{H}$ huomioi elektronit.
 **Kaava:** $E_\text{s} = (Zm_\text{H} + Nm_\text{n} - m_\text{atomi})\,c^2$
 **Muunnokset:** Massavaje lasketaan atomimassayksiköissä, ja $1\,\text{u} \cdot c^2 = 931{,}5\,\text{MeV}$.
-**Sijoitus:** $\Delta m = 2 \cdot 1{,}007825\,\text{u}$ $+ 2 \cdot 1{,}008665\,\text{u}$ $- 4{,}002603\,\text{u}$ $= 0{,}030377\,\text{u}$, joten $E_\text{s} = 0{,}030377 \cdot 931{,}5\,\text{MeV} \approx 28{,}3\,\text{MeV}$ ja nukleonia kohti $\tfrac{28{,}3\,\text{MeV}}{4} \approx 7{,}07\,\text{MeV}$
+**Sijoitus:** $\Delta m = 2 \cdot 1{,}007825\,\text{u}$ $+ 2 \cdot 1{,}008665\,\text{u}$ $- 4{,}002603\,\text{u}$ $= 0{,}030377\,\text{u}$, joten $E_\text{s} = 0{,}030377\,\text{u} \cdot 931{,}5\,\text{MeV/u}$ $\approx 28{,}3\,\text{MeV}$ ja nukleonia kohti $\tfrac{28{,}3\,\text{MeV}}{4} \approx 7{,}07\,\text{MeV}$
 **Vastaus:** Helium-4:n sidosenergia on noin $28{,}3\,\text{MeV}$ eli noin $7{,}07\,\text{MeV}$ nukleonia kohti.
 **Järkevyys:** Kevyiden ytimien sidosenergia nukleonia kohti on muutaman megaelektronivoltin luokkaa, ja helium-4 on poikkeuksellisen tiukasti sidottu; arvo $7{,}07\,\text{MeV}$ on lähellä rautaytimen arvoa $8{,}8\,\text{MeV}$ mutta sitä pienempi.
 
@@ -307,7 +307,7 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 **Periaate:** Energia vapautuu, kun reaktiossa syntyvien hiukkasten yhteismassa on pienempi kuin lähtöhiukkasten. Massaero kerrottuna $c^2$:lla on vapautuva energia. Elektronien määrä on reaktiossa sama, joten atomimassat voi sijoittaa suoraan.
 **Kaava:** $Q = (m_\text{alku} - m_\text{loppu})\,c^2$
 **Muunnokset:** $1\,\text{u} \cdot c^2 = 931{,}5\,\text{MeV}$
-**Sijoitus:** $m_\text{alku} = 2{,}014102\,\text{u} + 3{,}016049\,\text{u} = 5{,}030151\,\text{u}$ ja $m_\text{loppu} = 4{,}002603\,\text{u} + 1{,}008665\,\text{u} = 5{,}011268\,\text{u}$, joten $\Delta m = 0{,}018883\,\text{u}$ ja $Q = 0{,}018883 \cdot 931{,}5\,\text{MeV} \approx 17{,}59\,\text{MeV}$
+**Sijoitus:** $m_\text{alku} = 2{,}014102\,\text{u} + 3{,}016049\,\text{u} = 5{,}030151\,\text{u}$ ja $m_\text{loppu} = 4{,}002603\,\text{u} + 1{,}008665\,\text{u} = 5{,}011268\,\text{u}$, joten $\Delta m = 0{,}018883\,\text{u}$ ja $Q = 0{,}018883\,\text{u} \cdot 931{,}5\,\text{MeV/u}$ $\approx 17{,}59\,\text{MeV}$
 **Vastaus:** Yhdessä reaktiossa vapautuu energiaa noin $17{,}6\,\text{MeV}$.
 **Järkevyys:** Sama tulos saadaan sidosenergioista: sidosenergioiden erotus $28{,}30\,\text{MeV} - 2{,}22\,\text{MeV}$ $- 8{,}48\,\text{MeV}$ on noin $17{,}6\,\text{MeV}$, ja arvo on tunnettu D–T-fuusion energia.
 
@@ -319,7 +319,7 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 **Muunnokset:** $Q = 17{,}59 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$ $= 2{,}818 \cdot 10^{-12}\,\text{J}$ ja massa $m_\text{D} + m_\text{T} = 5{,}030151\,\text{u}$ $= 5{,}030151 \cdot 1{,}6605 \cdot 10^{-27}\,\text{kg}$ $= 8{,}353 \cdot 10^{-27}\,\text{kg}$
 **Sijoitus:** $\dfrac{E}{m}$ $= \dfrac{2{,}818 \cdot 10^{-12}\,\text{J}}{8{,}353 \cdot 10^{-27}\,\text{kg}}$ $\approx 3{,}37 \cdot 10^{14}\,\text{J/kg}$ ja suhde kivihiileen $\dfrac{3{,}37 \cdot 10^{14}\,\text{J/kg}}{30 \cdot 10^{6}\,\text{J/kg}}$ $\approx 1{,}1 \cdot 10^{7}$
 **Vastaus:** Yhdestä kilogrammasta polttoainetta vapautuu noin $3{,}4 \cdot 10^{14}\,\text{J}$, mikä on noin $10^{7}$-kertaisesti kivihiilen palamislämpöön verrattuna.
-**Järkevyys:** Ydinreaktion energia on miljoonia kertoja kemiallisen reaktion energiaa suurempi atomia kohti, ja massan suhde on sama, joten luku $10^{7}$ on uskottava.
+**Järkevyys:** Hiiliatomin palamisessa vapautuu noin $4\,\text{eV}$ massaa $12\,\text{u}$ kohti eli $0{,}33\,\text{eV/u}$, fuusiossa $17{,}59\,\text{MeV} : 5{,}03\,\text{u} = 3{,}5\,\text{MeV/u}$; suhde on noin $10^{7}$, joten tulos on uskottava.
 
 ### d)
 **Kysytty:** miksi reaktio vapauttaa energiaa ja miksi lämpötilan on oltava korkea
@@ -344,7 +344,7 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 **Periaate:** Kun atomi siirtyy ylemmältä energiatasolta alemmalle, se lähettää fotonin, jonka energia on tasojen energiaero. Fotonin energia ja aallonpituus liittyvät yhtälöllä $E = hf = \tfrac{hc}{\lambda}$.
 **Kaava:** $E = E_3 - E_2$ ja $\lambda = \dfrac{hc}{E}$
 **Muunnokset:** $1{,}889\,\text{eV} = 1{,}889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$ $= 3{,}026 \cdot 10^{-19}\,\text{J}$
-**Sijoitus:** $E$ $= -\dfrac{13{,}6\,\text{eV}}{9} - \left(-\dfrac{13{,}6\,\text{eV}}{4}\right)$ $= 1{,}889\,\text{eV}$ ja $\lambda$ $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 2{,}998 \cdot 10^{8}\,\text{m/s}$ $= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $= \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}026 \cdot 10^{-19}\,\text{J}}$ $\approx 6{,}565 \cdot 10^{-7}\,\text{m}$
+**Sijoitus:** $E = -\dfrac{13{,}6\,\text{eV}}{9}$ $- \left(-\dfrac{13{,}6\,\text{eV}}{4}\right)$ $= 1{,}889\,\text{eV}$. Ensin $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 2{,}998 \cdot 10^{8}\,\text{m/s}$ $= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$. Sitten $\lambda = \dfrac{hc}{E}$ $= \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}026 \cdot 10^{-19}\,\text{J}}$ $\approx 6{,}565 \cdot 10^{-7}\,\text{m}$
 **Vastaus:** Fotonin aallonpituus on noin $656\,\text{nm}$, eli valo on näkyvää punaista valoa.
 **Järkevyys:** Näkyvän valon aallonpituudet ovat $400\text{–}700\,\text{nm}$, ja $656\,\text{nm}$ on vedyn Balmerin sarjan punainen viiva H$\alpha$.
 
@@ -354,7 +354,7 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 **Periaate:** Atomi absorboi fotonin vain, jos fotonin energia on täsmälleen jonkin sallitun tasoparin energiaero. Perustilassa olevan atomin pienin mahdollinen energianotto on siirtymä $1 \to 2$.
 **Kaava:** $\lambda = \dfrac{hc}{E_2 - E_1}$
 **Muunnokset:** $E_2 - E_1 = -3{,}4\,\text{eV} + 13{,}6\,\text{eV} = 10{,}2\,\text{eV}$ $= 1{,}634 \cdot 10^{-18}\,\text{J}$
-**Sijoitus:** $\lambda$ $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 2{,}998 \cdot 10^{8}\,\text{m/s}$ $= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $= \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}634 \cdot 10^{-18}\,\text{J}}$ $\approx 1{,}216 \cdot 10^{-7}\,\text{m}$
+**Sijoitus:** Ensin $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 2{,}998 \cdot 10^{8}\,\text{m/s}$ $= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$. Sitten $\lambda = \dfrac{hc}{E_2 - E_1}$ $= \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}634 \cdot 10^{-18}\,\text{J}}$ $\approx 1{,}216 \cdot 10^{-7}\,\text{m}$
 **Vastaus:** Perustilassa oleva vety absorboi fotoneja vain, kun fotonin energia on vähintään $10{,}2\,\text{eV}$. Näkyvän valon fotonien energiat ovat noin $1{,}8\text{–}3{,}1\,\text{eV}$, joten ne eivät riitä viemään atomia perustilalta yhdellekään ylemmälle tasolle, eikä kylmään vetykaasuun synny absorptioviivoja näkyvälle alueelle. Pisin absorboituva aallonpituus on noin $122\,\text{nm}$ eli ultravioletti.
 **Järkevyys:** Tulos on Lymanin sarjan ensimmäinen viiva, ultraviolettia. Näkyvät Balmerin viivat vaativat atomin olevan jo virittyneessä tilassa $n = 2$, mikä tapahtuu vasta kuumassa kaasussa.
 
@@ -364,7 +364,7 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 **Periaate:** Tilassa $n = 2$ olevan atomin ionisoimiseen tarvitaan energia $\lvert E_2 \rvert$. Jos fotonin energia on suurempi, ylimääräinen energia muuttuu vapautuneen elektronin liike-energiaksi (energian säilyminen).
 **Kaava:** $E_\text{k} = \dfrac{hc}{\lambda} - \lvert E_2 \rvert$
 **Muunnokset:** $\lambda = 200\,\text{nm} = 2{,}00 \cdot 10^{-7}\,\text{m}$ ja $\lvert E_2 \rvert = \dfrac{13{,}6\,\text{eV}}{4} = 3{,}4\,\text{eV}$
-**Sijoitus:** $\dfrac{hc}{\lambda}$ $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 2{,}998 \cdot 10^{8}\,\text{m/s}$ $= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $= \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}00 \cdot 10^{-7}\,\text{m}}$ $= 9{,}93 \cdot 10^{-19}\,\text{J} = 6{,}20\,\text{eV}$ ja $E_\text{k} = 6{,}20\,\text{eV} - 3{,}4\,\text{eV} = 2{,}8\,\text{eV}$
+**Sijoitus:** Ensin $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 2{,}998 \cdot 10^{8}\,\text{m/s}$ $= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$. Fotonin energia on $\dfrac{hc}{\lambda}$ $= \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}00 \cdot 10^{-7}\,\text{m}}$ $= 9{,}93 \cdot 10^{-19}\,\text{J}$ $= 6{,}20\,\text{eV}$. Liike-energia on $E_\text{k} = \dfrac{hc}{\lambda} - \lvert E_2 \rvert$ $= 6{,}20\,\text{eV} - 3{,}4\,\text{eV}$ $= 2{,}8\,\text{eV}$
 **Vastaus:** Fotonin energia $6{,}2\,\text{eV}$ on suurempi kuin ionisaatioenergia $3{,}4\,\text{eV}$, joten atomi ionisoituu. Vapautuvan elektronin liike-energia on noin $2{,}8\,\text{eV}$ eli $4{,}5 \cdot 10^{-19}\,\text{J}$.
 **Järkevyys:** Tilan $n = 2$ ionisaatioraja on aallonpituudella $365\,\text{nm}$; $200\,\text{nm}$ on sen alapuolella, joten ionisaatio on mahdollinen.
 
@@ -503,7 +503,7 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 ### Hyväksytään myös
 - Kohdassa b nettopulssinopeus paksuuden funktiona (suoraan, ei logaritmia) ja siihen sovitettu eksponenttikäyrä (esimerkiksi taulukkolaskennalla); tällöin $\mu$ saadaan sovitteen eksponentista.
 - Kohdassa d tulos $29\text{–}33\,\text{mm}$.
-- Kohdassa e epävarmuus pelkällä $\sqrt{N}$:llä ($\sqrt{870} = 29$ eli $3{,}4\,\%$ tai $3{,}7\,\%$ nettoon verrattuna) ansaitsee täydet pisteet, kun se on perusteltu.
+- Kohdassa e epävarmuus pelkällä $\sqrt{N}$:llä ($\sqrt{870} \approx 29{,}5$ eli $3{,}4\,\%$ tai $3{,}7\,\%$ nettoon verrattuna) ansaitsee täydet pisteet, kun se on perusteltu.
 
 ## fy8-k7
 
@@ -533,7 +533,7 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 **Periaate:** Liikemäärän säilymisen mukaan lähes levossa olevan hiukkaspareen kokonaisliikemäärä on nolla, ja syntyvien fotonien kokonaisliikemäärän täytyy olla nolla. Yksi fotoni ei voi täyttää ehtoa, koska sillä on aina liikemäärä, joten fotoneja on kaksi ja ne lähtevät vastakkaisiin suuntiin. Energian säilymisen mukaan hiukkasten lepoenergia $2m_\text{e}c^2$ jakautuu kahdelle yhtä suurelle fotonille.
 **Kaava:** $E = m_\text{e}c^2$ ja $\lambda = \dfrac{hc}{E}$
 **Muunnokset:** $1\,\text{keV} = 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$
-**Sijoitus:** $E$ $= 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2$ $= 8{,}187 \cdot 10^{-14}\,\text{J}$ $= \dfrac{8{,}187 \cdot 10^{-14}}{1{,}602 \cdot 10^{-16}}\,\text{keV}$ $\approx 511\,\text{keV}$ ja $\lambda$ $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 2{,}998 \cdot 10^{8}\,\text{m/s}$ $= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $= \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{8{,}187 \cdot 10^{-14}\,\text{J}}$ $\approx 2{,}43 \cdot 10^{-12}\,\text{m}$
+**Sijoitus:** Ensin $c^2 = (2{,}998 \cdot 10^{8}\,\text{m/s})^2$ $= 8{,}988 \cdot 10^{16}\,\text{m}^2/\text{s}^2$. Sitten $E = m_\text{e}c^2$ $= 9{,}109 \cdot 10^{-31}\,\text{kg}$ $\cdot\ 8{,}988 \cdot 10^{16}\,\text{m}^2/\text{s}^2$ $= 8{,}187 \cdot 10^{-14}\,\text{J}$, ja $E = \dfrac{8{,}187 \cdot 10^{-14}\,\text{J}}{1{,}602 \cdot 10^{-16}\,\text{J/keV}}$ $\approx 511\,\text{keV}$. Aallonpituudelle: $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 2{,}998 \cdot 10^{8}\,\text{m/s}$ $= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$. Sitten $\lambda = \dfrac{hc}{E}$ $= \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{8{,}187 \cdot 10^{-14}\,\text{J}}$ $\approx 2{,}43 \cdot 10^{-12}\,\text{m}$
 **Vastaus:** Syntyy kaksi vastakkaisiin suuntiin lähtevää fotonia. Kummankin energia on noin $511\,\text{keV}$ ja aallonpituus noin $2{,}4\,\text{pm}$.
 **Järkevyys:** Elektronin lepoenergia on tunnetusti $0{,}511\,\text{MeV}$. Aallonpituus on gammasäteilylle tyypillinen, noin $\tfrac{1}{40}$ atomin koosta ($0{,}1\,\text{nm}$).
 

@@ -37,7 +37,7 @@ def leds():
     f = Fig("fy8-k2-graph", 440, "Kuvaaja: LEDin kynnysjännite $U_\\text{k}$ voltteina valon taajuuden $f$ funktiona, taajuus yksikössä $10^{14}$ hertsiä. "
             "Viisi mittauspistettä taajuuksilla 4,8, 5,1, 5,7, 6,4 ja 7,0 kymmenen potenssiin 14 hertsiä, kullakin pystysuora virhepalkki plus miinus 0,05 volttia. "
             "Pisteet ovat nousevalla suoralla, joka jatkuu katkoviivana alaspäin ja leikkaa vaaka-akselin noin taajuudella 2,6 kymmenen potenssiin 14 hertsiä. "
-            "Suoran kulmakerroin luetaan pisteistä 4,0 ja 1,59 volttia sekä 7,0 ja 2,87 volttia.")
+            "Suoran kulmakerroin luetaan pisteistä 5,0 ja 2,02 volttia sekä 6,8 ja 2,78 volttia.")
     ax = Axes(f, (90, 390), (430, 70), x=(0, 8), y=(0, 3.5), xticks=list(range(1, 9)), yticks=[0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5],
               xlabel=r"f\ (10^{14}\,\text{Hz})", ylabel=r"U_\text{k}\ (\text{V})")
     x0 = -B2 / S2
@@ -46,10 +46,10 @@ def leds():
     for a, b in zip(F2, UK2):
         ax.line([(a, b - dU2), (a, b + dU2)], COLD, 2)
         ax.point(a, b, COLD, 5.5)
-    ax.guide(4.0, S2 * 4.0 + B2); ax.guide(7.0, S2 * 7.0 + B2)
+    ax.guide(5.0, S2 * 5.0 + B2); ax.guide(6.8, S2 * 6.8 + B2)
     f.tex(ax.X(2.6) + 22, ax.Y(0.6), r"\text{ekstrapolointi}", "start", MUTED, size=20, bg=True)
-    f.tex(ax.X(7.0) + 8, ax.Y(S2 * 7.0 + B2) + 26, r"(7{,}0;\ 2{,}87)", "start", INK, size=20, bg=True)
-    f.tex(ax.X(4.0) + 10, ax.Y(S2 * 4.0 + B2) + 26, r"(4{,}0;\ 1{,}59)", "start", INK, size=20, bg=True)
+    f.tex(ax.X(6.8) + 8, ax.Y(S2 * 6.8 + B2) + 26, r"(6{,}8;\ 2{,}78)", "start", INK, size=20, bg=True)
+    f.tex(ax.X(5.0) + 10, ax.Y(S2 * 5.0 + B2) + 26, r"(5{,}0;\ 2{,}02)", "start", INK, size=20, bg=True)
     return f.svg()
 
 
