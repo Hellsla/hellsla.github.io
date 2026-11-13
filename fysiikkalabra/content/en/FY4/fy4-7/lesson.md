@@ -234,14 +234,14 @@ The kinetic energy and the potential energy of an object together are its **mech
 
 ## Formula: Kinetic energy and potential energy
 Gravitational potential energy is
-```latex
-E_\text{p} = m g h
+```kaavat
+gravitational potential energy near the Earth's surface :: E_\text{p} = m g h
 ```
 where $E_\text{p}$ is the potential energy ($\text{J}$), $m$ the mass ($\text{kg}$), $g = 9.81\,\text{m/s}^2$ the acceleration of free fall and $h$ the height from the chosen zero level ($\text{m}$). The expression holds near the surface of the Earth, where $g$ is constant. Below the zero level $h < 0$, so the potential energy is negative. The unit is $\text{kg} \cdot \text{m/s}^2 \cdot \text{m} = \text{N} \cdot \text{m} = \text{J}$.
 
 Kinetic energy is
-```latex
-E_\text{k} = \tfrac{1}{2}\,m v^2
+```kaavat
+kinetic energy :: E_\text{k} = \tfrac{1}{2}\,m v^2
 ```
 where $E_\text{k}$ is the kinetic energy ($\text{J}$), $m$ the mass ($\text{kg}$) and $v$ the speed ($\text{m/s}$). The expression is obtained from the rise height on a ramp. A frictionless cart rises to the height $h = \tfrac{v^2}{2g}$, and its potential energy then grows by $m g h = m g \cdot \tfrac{v^2}{2g} = \tfrac{1}{2}\,m v^2$. That is exactly how much kinetic energy the cart had at the foot of the ramp. Kinetic energy is never negative, and it does not depend on the direction of motion.
 

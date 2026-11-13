@@ -85,8 +85,8 @@
    "aihe": "fy4-liikkeen-suureet",
    "kasite": "Average velocity",
    "maaritelma": "The whole displacement divided by the time it took.",
-   "kaava": "v_{\\text{avg}} = \\dfrac{\\Delta x}{\\Delta t}",
-   "kaava_puhe": "v average equals delta x divided by delta t"
+   "kaava": "v_{\\text{k}} = \\dfrac{\\Delta x}{\\Delta t}",
+   "kaava_puhe": "v k is delta x divided by delta t"
   },
   {
    "id": "fy4-hetkellinen-nopeus",
@@ -528,8 +528,8 @@
    "aihe": "fy4-tyo-ja-mekaaninen-energia",
    "kasite": "Work–energy principle of mechanics",
    "maaritelma": "The change in mechanical energy equals the work done by the non-conservative forces.",
-   "kaava": "\\Delta E_{\\text{mech}} = W_{\\text{other}}",
-   "kaava_puhe": "delta E mech equals the work done by the other forces"
+   "kaava": "E_{\\text{p}0} + E_{\\text{k}0} + W = E_{\\text{p}} + E_{\\text{k}}",
+   "kaava_puhe": "E p zero plus E k zero plus W equals E p plus E k"
   },
   {
    "id": "fy4-tyoperiaate",
@@ -538,8 +538,8 @@
    "aihe": "fy4-tyo-ja-mekaaninen-energia",
    "kasite": "Work–kinetic energy principle",
    "maaritelma": "The work done by the net force on an object equals the change in its kinetic energy.",
-   "kaava": "W_{\\text{total}} = \\Delta E_{\\text{k}}",
-   "kaava_puhe": "the total work equals delta E k"
+   "kaava": "E_{\\text{k}0} + W = E_{\\text{k}}",
+   "kaava_puhe": "E k zero plus W equals E k"
   },
   {
    "id": "fy4-liikemaara",

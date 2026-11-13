@@ -520,8 +520,8 @@ Newtonin kolmas laki kirjoitetaan kahden kappaleen välisille voimille:
 Tässä $\overline{F}_{AB}$ on voima, jolla kappale A vaikuttaa kappaleeseen B (N), ja $\overline{F}_{BA}$ on voima, jolla B vaikuttaa A:han (N). Miinusmerkki kertoo, että voimat ovat vastakkaiset. Suuruudet ovat samat, $F_{AB} = F_{BA}$.
 
 Laskuissa tarvitaan usein painon suuruutta:
-```latex
-G = mg
+```kaavat
+kappaleeseen vaikuttava painovoima Maan pinnalla :: G = mg
 ```
 Tässä $G$ on paino (N), $m$ on kappaleen massa (kg) ja $g = 9{,}81\,\text{m/s}^2$ on putoamiskiihtyvyys. Painon vastavoima on kappaleen yhtä suuri vetovoima Maahan.
 

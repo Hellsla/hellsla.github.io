@@ -547,13 +547,13 @@ Kun nopeus kasvaa, paikka muuttuu jokaisessa sekunnissa enemmän kuin edellisess
 Kun ilmanvastus on pieni, kaikki kappaleet putoavat samalla kiihtyvyydellä massasta riippumatta. Tämä **putoamiskiihtyvyys** on Maan pinnalla $g = 9{,}81\,\text{m/s}^2$ ja suunnattu alaspäin. Pudotetun kiven nopeus kasvaa siis joka sekunti noin $9{,}8\,\text{m/s}$. Siksi kivi kulkee jokaisessa sekunnissa pidemmän matkan kuin edellisessä: levosta lähtevän kappaleen peräkkäisinä yhtä pitkinä aikaväleinä kulkemat matkat suhtautuvat kuin $1 : 3 : 5 : 7$.
 
 ## Kaava: Tasaisesti kiihtyvän liikkeen yhtälöt
-Kiihtyvyys on nopeuden muutos jaettuna siihen kuluneella ajalla:
-```latex
-a = \frac{\Delta v}{\Delta t}
+Keskikiihtyvyys on nopeuden muutos jaettuna siihen kuluneella ajalla:
+```kaavat
+keskikiihtyvyys :: a_\text{k} = \frac{\Delta v}{\Delta t}
 ```
-missä $a$ on kiihtyvyys ($\text{m/s}^2$), $\Delta v = v_2 - v_1$ nopeuden muutos ($\text{m/s}$) ja $\Delta t$ siihen kulunut aika ($\text{s}$). Kun kiihtyvyys on vakio ja ajanotto alkaa hetkestä $t = 0$, jolloin nopeus on $v_0$, nopeus muuttuu joka sekunti määrän $a$:
-```latex
-v = v_0 + a\,t
+missä $a_\text{k}$ on keskikiihtyvyys ($\text{m/s}^2$), $\Delta v = v_2 - v_1$ nopeuden muutos ($\text{m/s}$) ja $\Delta t$ siihen kulunut aika ($\text{s}$). Kun kiihtyvyys on vakio, se on joka hetki sama kuin keskikiihtyvyys, $a = a_\text{k}$. Kun ajanotto alkaa hetkestä $t = 0$, jolloin nopeus on $v_0$, nopeus muuttuu joka sekunti määrän $a$:
+```kaavat
+nopeus tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: v = v_0 + a\,t
 ```
 missä $v$ on nopeus hetkellä $t$ ($\text{m/s}$), $v_0$ alkunopeus ($\text{m/s}$), $a$ kiihtyvyys ($\text{m/s}^2$) ja $t$ aika ($\text{s}$).
 
@@ -586,8 +586,8 @@ Tasaisessa liikkeessä siirtymä $v\,t$ on $(t,v)$-kuvaajan alle jäävän suora
 </svg>
 
 Kun kappale on hetkellä $t = 0$ paikassa $x_0$, sen paikka on alkupaikka plus siirtymä:
-```latex
-x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
+```kaavat
+paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
 ```
 missä $x$ on paikka hetkellä $t$ ($\text{m}$) ja $x_0$ alkupaikka ($\text{m}$); muut symbolit ovat samat kuin edellä. Kun kysytään aikaa, tästä tulee toisen asteen yhtälö, jonka ratkaisuista valitaan se, joka sopii tilanteeseen.
 

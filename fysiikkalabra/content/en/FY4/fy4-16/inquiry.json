@@ -30,7 +30,7 @@
         {
           "text": "It decreases by $40\\,\\text{J}$, because friction does negative work.",
           "correct": true,
-          "feedback": "Correct. In the chapter *Conservation of mechanical energy and the work–energy principle* you learned that the change in mechanical energy is the work done by forces other than the weight, $\\Delta E_\\text{mech} = W_\\text{other}$. The height does not change, so all of the kinetic energy $40\\,\\text{J}$ turns into internal energy. In this chapter the same principle solves the sliding of the sled."
+          "feedback": "Correct. In the chapter *Conservation of mechanical energy and the work–energy principle* you learned that the change in mechanical energy is the work done by forces other than the weight, $\\Delta E_\\text{mech} = W$. The height does not change, so all of the kinetic energy $40\\,\\text{J}$ turns into internal energy. In this chapter the same principle solves the sliding of the sled."
         },
         {
           "text": "It is conserved, because energy does not disappear anywhere.",

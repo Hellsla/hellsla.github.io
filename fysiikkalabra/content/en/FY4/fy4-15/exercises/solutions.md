@@ -19,10 +19,10 @@
 **Reasonableness:** The estimate $1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 24\,\text{m} = 240\,\text{kJ}$ is close to the result. If hundreds of cubic metres fall every second, the power is hundreds of times $235\,\text{kW}$, that is tens or hundreds of megawatts, as in large hydropower plants.
 
 ## fy4-15-L1-03
-**Given:** power of the water flowing into the turbine $P_\text{o} = 50.0\,\text{MW}$, electric power $P_\text{s} = 46.0\,\text{MW}$
+**Given:** power of the water flowing into the turbine $P_\text{o} = 50.0\,\text{MW}$, electric power $P_\text{a} = 46.0\,\text{MW}$
 **Find:** the efficiency $\eta$ as a percentage
 **Principle:** Efficiency is the ratio of the useful power obtained to the power taken into the device. Here the useful power is the electric power and the power taken in is the power the water brings to the plant.
-**Formula:** $\eta = \dfrac{P_\text{s}}{P_\text{o}}$
+**Formula:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$
 **Conversions:** Both powers are in megawatts, so the unit cancels. A decimal number is changed to a percentage by multiplying by one hundred.
 **Substitution:** $\eta = \dfrac{46.0\,\text{MW}}{50.0\,\text{MW}} = 0.920 = 92.0\,\%$
 **Answer:** $92.0\,\%$, three significant figures like the powers $46.0\,\text{MW}$ and $50.0\,\text{MW}$.

@@ -300,20 +300,24 @@ Besides friction, other contact forces can act on an object. **Buoyancy** is the
 
 ## Formula: The friction force and the inclined plane
 The magnitude of the weight is
-```latex
-G = mg
+```kaavat
+weight of a body at the Earth's surface :: G = mg
 ```
 where $G$ is the weight (N), $m$ the mass (kg) and $g$ the acceleration of free fall, $9.81\,\text{m/s}^2$ on the surface of the Earth.
 
 Kinetic friction is proportional to the normal force:
-```latex
-F_\mu = \mu N
+```kaavat
+kinetic friction :: F_\mu = \mu N
 ```
 where $F_\mu$ is the magnitude of the kinetic friction (N), $\mu$ the **coefficient of kinetic friction** (no unit) and $N$ the magnitude of the normal force (N). Static friction is at most the product of the normal force and the **coefficient of static friction** $\mu_0$:
 ```latex
 F_{\mu 0} \le \mu_0 N
 ```
-where $F_{\mu 0}$ is the magnitude of the static friction (N). The coefficients of friction depend on the materials and the condition of the surfaces, and usually $\mu < \mu_0$. The formulas are empirical models that describe dry surfaces well. In them the friction does not depend on the area of contact or on the sliding speed.
+where $F_{\mu 0}$ is the magnitude of the static friction (N). The static friction is at its greatest just before the object starts to slide. This fully developed static friction is the **limiting static friction**:
+```kaavat
+limiting static friction :: F_{\mu 0} = \mu_0 N
+```
+The coefficients of friction depend on the materials and the condition of the surfaces, and usually $\mu < \mu_0$. The formulas are empirical models that describe dry surfaces well. In them the friction does not depend on the area of contact or on the sliding speed.
 
 On an inclined plane whose angle of inclination is $\alpha$, the $x$-axis is chosen along the slope and the $y$-axis perpendicular to the surface. The components of the weight are
 ```latex

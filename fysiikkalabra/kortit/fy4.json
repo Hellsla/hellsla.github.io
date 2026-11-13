@@ -85,8 +85,8 @@
    "aihe": "fy4-liikkeen-suureet",
    "kasite": "Keskinopeus",
    "maaritelma": "Koko siirtymä jaetaan siihen kuluneella ajalla.",
-   "kaava": "v_{\\text{ka}} = \\dfrac{\\Delta x}{\\Delta t}",
-   "kaava_puhe": "v keskiarvo on delta x jaettuna delta t:llä"
+   "kaava": "v_{\\text{k}} = \\dfrac{\\Delta x}{\\Delta t}",
+   "kaava_puhe": "v k on delta x jaettuna delta t:llä"
   },
   {
    "id": "fy4-hetkellinen-nopeus",
@@ -528,8 +528,8 @@
    "aihe": "fy4-tyo-ja-mekaaninen-energia",
    "kasite": "Energiaperiaate",
    "maaritelma": "Mekaanisen energian muutos on yhtä suuri kuin ei-konservatiivisten voimien tekemä työ.",
-   "kaava": "\\Delta E_{\\text{mek}} = W_{\\text{muut}}",
-   "kaava_puhe": "delta E mek on muiden voimien työ"
+   "kaava": "E_{\\text{p}0} + E_{\\text{k}0} + W = E_{\\text{p}} + E_{\\text{k}}",
+   "kaava_puhe": "E p nolla plus E k nolla plus W on E p plus E k"
   },
   {
    "id": "fy4-tyoperiaate",
@@ -538,8 +538,8 @@
    "aihe": "fy4-tyo-ja-mekaaninen-energia",
    "kasite": "Työperiaate",
    "maaritelma": "Kappaleeseen vaikuttavan kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos.",
-   "kaava": "W_{\\text{kok}} = \\Delta E_{\\text{k}}",
-   "kaava_puhe": "kokonaistyö on delta E k"
+   "kaava": "E_{\\text{k}0} + W = E_{\\text{k}}",
+   "kaava_puhe": "E k nolla plus W on E k"
   },
   {
    "id": "fy4-liikemaara",

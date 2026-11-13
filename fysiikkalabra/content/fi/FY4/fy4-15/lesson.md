@@ -211,7 +211,7 @@ Vesi- ja tuulivoimala eivät tuota energiaa tyhjästä. Ne muuntavat veden tai i
   <line x1="362" y1="194" x2="362" y2="220" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
   <line x1="374" y1="194" x2="374" y2="220" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
   <path d="M390,214 L466,214 L466,222 L488,207 L466,192 L466,200 L390,200 Z" fill="url(#fy415-vve)" stroke-linejoin="round"/>
-  <foreignObject x="496" y="192.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$P_\text{s}$</div></foreignObject>
+  <foreignObject x="496" y="192.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$P_\text{a}$</div></foreignObject>
   <line x1="272" y1="92" x2="578" y2="92" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <path d="M570,92 H578 V290 H570" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="542" y="185.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$h$</div></foreignObject>
@@ -227,9 +227,9 @@ Vesi- ja tuulivoimala eivät tuota energiaa tyhjästä. Ne muuntavat veden tai i
 Voimalaa kuvataan teholla: kuinka paljon energiaa se muuntaa sekunnissa. Kun yksi kuutiometri vettä eli $1000\,\text{kg}$ putoaa Imatran putouskorkeuden $24\,\text{m}$, sen potentiaalienergiaa vapautuu $mgh \approx 235\,\text{kJ}$. Jos turbiinien läpi virtaa sekunnissa satoja kuutiometrejä, teho on satoja megawatteja. Teho kasvaa siis kahdesta syystä: kun sekunnissa putoavaa vettä on enemmän ja kun se putoaa korkeammalta. Vuoksen vesi virtaa ensin Tainionkosken ja sitten Imatran voimalaitoksen läpi, joten virtaama on molemmissa sama. Imatran putouskorkeus on noin kolme kertaa suurempi, ja niin on sen tehokin.
 
 ### Hyötysuhde
-Kaikki veden menettämä energia ei muutu sähköksi. Vesi hankaa putken seiniä, turbiini ja generaattori lämpenevät, ja alaveteen purkautuvalla vedellä on vielä vähän liike-energiaa. Voimalan **hyötysuhde** on sen antaman sähkötehon $P_\text{s}$ ja siihen otetun tehon $P_\text{o}$ suhde:
-```latex
-\eta = \frac{P_\text{s}}{P_\text{o}}
+Kaikki veden menettämä energia ei muutu sähköksi. Vesi hankaa putken seiniä, turbiini ja generaattori lämpenevät, ja alaveteen purkautuvalla vedellä on vielä vähän liike-energiaa. Voimalan **hyötysuhde** on sen antotyön $W_\text{a}$ ja ottotyön $W_\text{o}$ suhde, ja yhtä hyvin antotehon $P_\text{a}$ ja ottotehon $P_\text{o}$ suhde. Voimalassa antoteho on sen antama sähköteho:
+```kaavat
+hyötysuhde :: \eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 missä $\eta$ (eta) on hyötysuhde, joka ilmoitetaan desimaalilukuna tai prosentteina. Hyötysuhde on enintään $100\,\%$. Todellisissa laitteissa se jää usein alle $100\,\%$, koska osa otetusta energiasta ei päädy määriteltyyn hyödylliseen käyttötarkoitukseen, tässä sähköksi. Suuren vesivoimalan hyötysuhde on noin $90\,\%$.
 
@@ -438,7 +438,7 @@ Usein ajatellaan, että voimala tuottaa energiaa. Voimala muuntaa energiaa: vesi
 
 ## Tiivistelmä
 - Vesi- ja tuulivoimala muuntavat mekaanista energiaa sähköksi: vesivoimala veden potentiaalienergiaa, tuulivoimala ilman liike-energiaa.
-- Hyötysuhde $\eta = \tfrac{P_\text{s}}{P_\text{o}}$ on enintään $100\,\%$; suuren vesivoimalan hyötysuhde on noin $90\,\%$ ja tuulivoimalan alle $50\,\%$.
+- Hyötysuhde $\eta = \tfrac{P_\text{a}}{P_\text{o}}$ on enintään $100\,\%$; suuren vesivoimalan hyötysuhde on noin $90\,\%$ ja tuulivoimalan alle $50\,\%$.
 - Vesivoimalan teho on $P = \eta\rho Q g h$: se on verrannollinen virtaamaan ja putouskorkeuteen.
 - Tuulivoimalan teho on $P = \tfrac{1}{2}\eta\rho A v^3$: kun hyötysuhde pysyy likimain vakiona, kaksinkertainen tuulen nopeus antaa noin kahdeksankertaisen tehon, kunnes voimala saavuttaa nimellistehonsa. Hyvin voimakkaassa tuulessa voimala pysäytetään.
 - Energia on teho kertaa aika, $E = Pt$.

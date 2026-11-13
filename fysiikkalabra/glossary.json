@@ -2201,6 +2201,19 @@
     "locked": false
   },
   {
+    "term": "lähtökitka",
+    "definition": "Lepokitkan suurin arvo eli täysin kehittynyt lepokitka juuri ennen kuin kappale lähtee liukumaan: F_μ0 = μ₀N, missä μ₀ on lepokitkakerroin ja N tukivoima.",
+    "lessons": [
+      "fy4-6"
+    ],
+    "see_also": [
+      "lepokitka",
+      "kitkakerroin",
+      "tukivoima"
+    ],
+    "locked": false
+  },
+  {
     "term": "liikekitka",
     "definition": "Kitka toistensa suhteen liukuvien pintojen välillä. Liikekitka on F_μ = μN, missä μ on liikekitkakerroin ja N tukivoima; se on yleensä pienempi kuin lepokitkan suurin arvo.",
     "lessons": [

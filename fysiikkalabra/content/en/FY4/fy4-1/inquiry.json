@@ -360,12 +360,12 @@
         "choices": [
           {
             "text": "$1.6\\,\\text{m/s}$, because the cart travelled $16\\,\\text{m}$ in $10\\,\\text{s}$.",
-            "feedback": "The number $16\\,\\text{m}$ is the distance travelled. The average velocity is calculated from the displacement: $v_\\text{avg} = \\dfrac{\\Delta x}{\\Delta t}$. The distance gives the average speed (distance travelled divided by time), and here it is $1.6\\,\\text{m/s}$."
+            "feedback": "The number $16\\,\\text{m}$ is the distance travelled. The average velocity is calculated from the displacement: $v_\\text{k} = \\dfrac{\\Delta x}{\\Delta t}$. The distance gives the average speed (distance travelled divided by time), and here it is $1.6\\,\\text{m/s}$."
           },
           {
             "text": "$0$, because the displacement is $\\Delta x = 0\\,\\text{m} - 0\\,\\text{m} = 0$.",
             "correct": true,
-            "feedback": "Correct. At the end the cart is at the same position as at the beginning, so $\\Delta x = 0$ and $v_\\text{avg} = \\dfrac{0}{10\\,\\text{s}} = 0$. The distance was still $16\\,\\text{m}$: displacement and distance are different quantities."
+            "feedback": "Correct. At the end the cart is at the same position as at the beginning, so $\\Delta x = 0$ and $v_\\text{k} = \\dfrac{0}{10\\,\\text{s}} = 0$. The distance was still $16\\,\\text{m}$: displacement and distance are different quantities."
           },
           {
             "text": "$2.0\\,\\text{m/s}$, because that was the velocity of the cart during the motion.",

@@ -352,10 +352,10 @@ A chain lift lifts the train to the top of the first hill. After that the train 
 
 ### Work and kinetic energy
 When an object moves in a straight line in one direction a distance $s$ and a constant force $\overline{F}$ acts on it, the work done by the force is
-```latex
-W = F_\parallel\, s
+```kaavat
+work done by a force :: W = F\, s
 ```
-where $F_\parallel$ is the component of the force in the direction of the motion ($\text{N}$), negative when the component points against the motion, and $s$ is the distance travelled ($\text{m}$). The unit of work is $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
+where $F$ is the component of the force in the direction of the motion ($\text{N}$), negative when the component points against the motion, and $s$ is the distance travelled ($\text{m}$). The unit of work is $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 
 When an object moves along the $x$-axis and a constant net force $\Sigma F_x$ along the axis acts on it, it accelerates uniformly, and its acceleration is $a = \tfrac{\Sigma F_x}{m}$. In the chapter *Acceleration and uniformly accelerated motion* you learned that in uniformly accelerated motion the acceleration is $a = \tfrac{v_2 - v_1}{t}$ and the displacement is the average velocity times the time, $\Delta x = \tfrac{v_1 + v_2}{2}\,t$. Here the velocities $v_1$ and $v_2$ are signed: a negative velocity means motion in the negative direction of the axis. When these equations are multiplied together, the time cancels:
 ```latex
@@ -366,23 +366,20 @@ When an object moves along the $x$-axis and a constant net force $\Sigma F_x$ al
 ```
 When the equation is multiplied on both sides by the mass $m$ and $ma = \Sigma F_x$ is substituted, we get $\Sigma F_x\, \Delta x = \tfrac{1}{2} m v_2^2 - \tfrac{1}{2} m v_1^2$, that is, $\Sigma F_x\, \Delta x = \Delta E_\text{k}$.
 
-The displacement $\Delta x$ is not the same as the distance travelled $s$. If the object moves in one direction all the time, the magnitude of the displacement equals the distance travelled, and the work of the net force is $\Sigma F_\parallel\, s$. If the object turns back, like a ball thrown upwards, the distance travelled is longer than the displacement. The work of a constant force is then calculated from the displacement, $W = F_x\, \Delta x$, or in parts so that on each part the motion is in one direction. Friction and air resistance, on the other hand, turn with the motion, so their work is always negative and its magnitude grows with the distance travelled. In both cases the work done by the net force equals the change in kinetic energy:
-```latex
-W_\text{net} = \Delta E_\text{k}
+The displacement $\Delta x$ is not the same as the distance travelled $s$. If the object moves in one direction all the time, the magnitude of the displacement equals the distance travelled, and the work of the net force is $\Sigma F\, s$. If the object turns back, like a ball thrown upwards, the distance travelled is longer than the displacement. The work of a constant force is then calculated from the displacement, $W = F_x\, \Delta x$, or in parts so that on each part the motion is in one direction. Friction and air resistance, on the other hand, turn with the motion, so their work is always negative and its magnitude grows with the distance travelled. In both cases the work done by the net force equals the change in kinetic energy:
+```kaavat
+work principle :: E_{\text{k}0} + W = E_\text{k}
 ```
-where $W_\text{net}$ is the work done together by all the forces acting on the object ($\text{J}$) and $\Delta E_\text{k} = E_{\text{k},2} - E_{\text{k},1}$ is the change in kinetic energy ($\text{J}$). For example, when the mass of a cart is $2.0\,\text{kg}$ and a net force of $12\,\text{N}$ accelerates it from rest over a distance of $3.0\,\text{m}$, the force does the work $36\,\text{J}$, and the speed of the cart at the end is $6.0\,\text{m/s}$.
+where $E_{\text{k}0}$ is the kinetic energy at the start and $E_\text{k}$ at the end ($\text{J}$) and $W$ the work done together by all the forces acting on the object ($\text{J}$). This is the **work principle**: the total work is the change in kinetic energy, $W = \Delta E_\text{k}$. For example, when the mass of a cart is $2.0\,\text{kg}$ and a net force of $12\,\text{N}$ accelerates it from rest over a distance of $3.0\,\text{m}$, the force does the work $36\,\text{J}$, and the speed of the cart at the end is $6.0\,\text{m/s}$.
 
 ### The work–energy principle
-The total work is divided into two parts: the work done by the weight $W_G$ and the work done by all the other forces $W_\text{other}$. Other forces include, for example, friction, air resistance, a pulling rope and a pushing hand. When an object descends a height $h$, the weight does the work $mgh$ and the potential energy decreases by the same amount, so $W_G = -\Delta E_\text{p}$. Substituting this into the equation $W_G + W_\text{other} = \Delta E_\text{k}$ gives the **work–energy principle of mechanics**:
-```latex
-\begin{aligned}
-&E_{\text{k},1} + E_{\text{p},1} + W_\text{other} \\
-&\quad = E_{\text{k},2} + E_{\text{p},2}
-\end{aligned}
+The total work is divided into two parts: the work done by the weight $W_G$ and the work done by all the other forces. Other forces include, for example, friction, air resistance, a pulling rope and a pushing hand. When an object descends a height $h$, the weight does the work $mgh$ and the potential energy decreases by the same amount, so $W_G = -\Delta E_\text{p}$. When the work of the weight is written in this way as a change in potential energy, only the work done by forces other than the weight is left as the work $W$ of the work principle. This gives the **work–energy principle of mechanics**:
+```kaavat
+work-energy principle of mechanics :: E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}
 ```
-where the index $1$ means the initial situation and $2$ the final situation, $E_\text{k} = \tfrac{1}{2} mv^2$ is the kinetic energy, $E_\text{p} = mgh$ is the potential energy at a height $h$ from the chosen zero level, and $W_\text{other}$ is the work done by forces other than the weight ($\text{J}$). In words: the change in mechanical energy equals the work done by forces other than the weight, $\Delta E_\text{mech} = W_\text{other}$. The zero level can be chosen freely, for example at the lowest point of the situation, because only the change in height affects the result.
+where the index $0$ means the initial situation and a quantity without an index the final situation, $E_\text{k} = \tfrac{1}{2} mv^2$ is the kinetic energy, $E_\text{p} = mgh$ is the potential energy at a height $h$ from the chosen zero level, and $W$ is the work done by forces other than the weight ($\text{J}$). In words: the change in mechanical energy equals the work done by forces other than the weight, $\Delta E_\text{mech} = W$. The zero level can be chosen freely, for example at the lowest point of the situation, because only the change in height affects the result.
 
-<svg data-fig="palkit" viewBox="0 0 600 360" role="img" aria-label="Energy bars, schematic diagram to scale: at the start the object has only potential energy E_p,1, and the kinetic energy E_k,1 is zero. Friction does the negative work W_other, whose bar points downward from the zero level. At the end the object has only kinetic energy E_k,2, and the potential energy E_p,2 is zero. The dashed line at the height of the initial mechanical energy shows that the final energy is smaller than the initial energy by exactly the work of friction." style="max-width:100%;font-size:24px">
+<svg data-fig="palkit" viewBox="0 0 600 360" role="img" aria-label="Energy bars, schematic diagram to scale: at the start the object has only potential energy E_p0, and the kinetic energy E_k0 is zero. Friction does the negative work W, whose bar points downward from the zero level. At the end the object has only kinetic energy E_k, and the potential energy E_p is zero. The dashed line at the height of the initial mechanical energy shows that the final energy is smaller than the initial energy by exactly the work of friction." style="max-width:100%;font-size:24px">
   <foreignObject x="53.5" y="11.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{at the start}$</div></foreignObject>
   <foreignObject x="426" y="11.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{at the end}$</div></foreignObject>
   <line x1="30" y1="232" x2="570" y2="232" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
@@ -393,22 +390,19 @@ where the index $1$ means the initial situation and $2$ the final situation, $E_
   <foreignObject x="360" y="135.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$=$</div></foreignObject>
   <line x1="180" y1="72" x2="540" y2="72" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <path d="M470,72 h8 V136 h-8" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-linejoin="round"/>
-  <foreignObject x="486" y="89.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$|W_\text{other}|$</div></foreignObject>
-  <foreignObject x="51" y="317.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$E_{\text{k},1}$</div></foreignObject>
-  <foreignObject x="131" y="317.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$E_{\text{p},1}$</div></foreignObject>
-  <foreignObject x="258.5" y="317.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$W_\text{other}$</div></foreignObject>
-  <foreignObject x="411" y="317.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$E_{\text{k},2}$</div></foreignObject>
-  <foreignObject x="491" y="317.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$E_{\text{p},2}$</div></foreignObject>
+  <foreignObject x="486" y="89.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#e8590c">$|W|$</div></foreignObject>
+  <foreignObject x="57.5" y="317.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$E_{\text{k}0}$</div></foreignObject>
+  <foreignObject x="137.5" y="317.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$E_{\text{p}0}$</div></foreignObject>
+  <foreignObject x="290" y="317.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$W$</div></foreignObject>
+  <foreignObject x="423.5" y="317.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$E_\text{k}$</div></foreignObject>
+  <foreignObject x="503.5" y="317.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#2b8a3e">$E_\text{p}$</div></foreignObject>
   <foreignObject x="70" y="199.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
   <foreignObject x="510" y="199.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$0$</div></foreignObject>
 </svg>
 
-When an object moves against a stationary surface or air, friction and air resistance oppose the motion and do negative work, so they decrease the mechanical energy. (A moving surface or the wind can also do positive work, for example a conveyor belt carrying a box.) A pulling rope or a motor can do positive work and increase it, like the chain lift that lifts the train. If the other forces do no work, $W_\text{other} = 0$, and the work–energy principle becomes the **law of conservation of mechanical energy**:
-```latex
-\begin{aligned}
-&E_{\text{k},1} + E_{\text{p},1} \\
-&\quad = E_{\text{k},2} + E_{\text{p},2}
-\end{aligned}
+When an object moves against a stationary surface or air, friction and air resistance oppose the motion and do negative work, so they decrease the mechanical energy. (A moving surface or the wind can also do positive work, for example a conveyor belt carrying a box.) A pulling rope or a motor can do positive work and increase it, like the chain lift that lifts the train. If the other forces do no work, $W = 0$, and the work–energy principle becomes the **law of conservation of mechanical energy**:
+```kaavat
+law of conservation of mechanical energy :: E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}
 ```
 When an object starts from rest at a height $h$ and descends to the zero level, the conservation law $mgh = \tfrac{1}{2} mv^2$ gives $v = \sqrt{2gh}$. The mass cancels, so the speed does not depend on the mass.
 
@@ -417,7 +411,7 @@ A child slides down a hill on a sled. The combined mass of the child and the sle
 
 <!-- vaihe -->
 
-**Given and find.** $m = 32\,\text{kg}$, difference in height $h = 5.0\,\text{m}$, initial speed $v_1 = 0$, final speed $v_2 = 7.6\,\text{m/s}$ and $g = 9.81\,\text{m/s}^2$. We want the work $W_\text{other}$ done together by friction and air resistance.
+**Given and find.** $m = 32\,\text{kg}$, difference in height $h = 5.0\,\text{m}$, initial speed $v_1 = 0$, final speed $v_2 = 7.6\,\text{m/s}$ and $g = 9.81\,\text{m/s}^2$. We want the work $W$ done together by friction and air resistance.
 
 <!-- vaihe -->
 
@@ -425,11 +419,11 @@ A child slides down a hill on a sled. The combined mass of the child and the sle
 
 <!-- vaihe -->
 
-**Formula solved.** At the start $E_{\text{k},1} = 0$ and $E_{\text{p},1} = mgh$, at the end $E_{\text{k},2} = \tfrac{1}{2} mv_2^2$ and $E_{\text{p},2} = 0$:
+**Formula solved.** At the start $E_{\text{k}0} = 0$ and $E_{\text{p}0} = mgh$, at the end $E_\text{k} = \tfrac{1}{2} mv_2^2$ and $E_\text{p} = 0$:
 ```latex
 \begin{aligned}
-&mgh + W_\text{other} = \tfrac{1}{2} m v_2^2 \\
-&W_\text{other} = \tfrac{1}{2} m v_2^2 - mgh
+&mgh + W = \tfrac{1}{2} m v_2^2 \\
+&W = \tfrac{1}{2} m v_2^2 - mgh
 \end{aligned}
 ```
 
@@ -448,7 +442,7 @@ A child slides down a hill on a sled. The combined mass of the child and the sle
 &mgh \\
 &= 32\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 5.0\,\text{m} \\
 &= 1569.6\,\text{J} \\[6pt]
-&W_\text{other} \\
+&W \\
 &= 924.16\,\text{J} - 1569.6\,\text{J} \\
 &= -645.44\,\text{J}
 \end{aligned}
@@ -456,7 +450,7 @@ A child slides down a hill on a sled. The combined mass of the child and the sle
 
 <!-- vaihe -->
 
-**Result.** Friction and air resistance together do the work $W_\text{other} \approx -6.5 \cdot 10^2\,\text{J}$. The result is given with two significant figures like the height $5.0\,\text{m}$ and the speed $7.6\,\text{m/s}$. The work is negative, because friction and air resistance oppose the motion: about $650\,\text{J}$ of mechanical energy turned into internal energy of the snow, the runners and the air.
+**Result.** Friction and air resistance together do the work $W \approx -6.5 \cdot 10^2\,\text{J}$. The result is given with two significant figures like the height $5.0\,\text{m}$ and the speed $7.6\,\text{m/s}$. The work is negative, because friction and air resistance oppose the motion: about $650\,\text{J}$ of mechanical energy turned into internal energy of the snow, the runners and the air.
 
 <!-- vaihe -->
 
@@ -469,7 +463,7 @@ Another mistake is to say that friction destroys energy. Friction decreases the 
 
 ## Summary
 - The mechanical energy $E_\text{mech} = E_\text{k} + E_\text{p}$ is conserved when only the weight does work, that is, when friction and air resistance can be ignored and nothing pulls or pushes. The normal force does no work, because it is perpendicular to the motion.
-- A force does work with its component in the direction of the motion, $W = F_\parallel s$ when the object moves in one direction: positive in the direction of the motion and negative against it.
-- The work done by the net force equals the change in kinetic energy, $W_\text{net} = \Delta E_\text{k}$.
-- The work–energy principle: the change in mechanical energy is the work done by forces other than the weight, $\Delta E_\text{mech} = W_\text{other}$. Friction and air resistance turn mechanical energy into internal energy, and the total energy is conserved.
+- A force does work with its component in the direction of the motion, $W = F s$ when the object moves in one direction: positive in the direction of the motion and negative against it.
+- The work done by the net force equals the change in kinetic energy, $W = \Delta E_\text{k}$.
+- The work–energy principle: the change in mechanical energy is the work done by forces other than the weight, $\Delta E_\text{mech} = W$. Friction and air resistance turn mechanical energy into internal energy, and the total energy is conserved.
 - The weight is a conservative force, because its work depends only on the difference in height. Friction and air resistance are non-conservative forces, because their work grows with the distance travelled.

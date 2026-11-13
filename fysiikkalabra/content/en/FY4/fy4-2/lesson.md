@@ -547,13 +547,13 @@ When the velocity grows, the position changes more in each second than in the on
 When air resistance is small, all objects fall with the same acceleration regardless of mass. This **acceleration of free fall** is $g = 9.81\,\text{m/s}^2$ at the Earth's surface, directed downwards. The velocity of a dropped stone therefore grows by about $9.8\,\text{m/s}$ every second. That is why the stone travels a longer distance in each second than in the one before: the distances that an object starting from rest covers in successive intervals of equal length are in the ratio $1 : 3 : 5 : 7$.
 
 ## Formula: Equations of uniformly accelerated motion
-Acceleration is the change in velocity divided by the time it took:
-```latex
-a = \frac{\Delta v}{\Delta t}
+The average acceleration is the change in velocity divided by the time it took:
+```kaavat
+average acceleration :: a_\text{k} = \frac{\Delta v}{\Delta t}
 ```
-where $a$ is the acceleration ($\text{m/s}^2$), $\Delta v = v_2 - v_1$ the change in velocity ($\text{m/s}$) and $\Delta t$ the time it took ($\text{s}$). When the acceleration is constant and timing starts at $t = 0$, when the velocity is $v_0$, the velocity changes by the amount $a$ every second:
-```latex
-v = v_0 + a\,t
+where $a_\text{k}$ is the average acceleration ($\text{m/s}^2$), $\Delta v = v_2 - v_1$ the change in velocity ($\text{m/s}$) and $\Delta t$ the time it took ($\text{s}$). When the acceleration is constant, it equals the average acceleration at every moment, $a = a_\text{k}$. When timing starts at $t = 0$, when the velocity is $v_0$, the velocity changes by the amount $a$ every second:
+```kaavat
+velocity in uniformly accelerated linear motion :: v = v_0 + a\,t
 ```
 where $v$ is the velocity at time $t$ ($\text{m/s}$), $v_0$ the initial velocity ($\text{m/s}$), $a$ the acceleration ($\text{m/s}^2$) and $t$ the time ($\text{s}$).
 
@@ -586,8 +586,8 @@ In uniform motion the displacement $v\,t$ is the area of the rectangle under the
 </svg>
 
 When the object is at the position $x_0$ at time $t = 0$, its position is the initial position plus the displacement:
-```latex
-x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
+```kaavat
+position in uniformly accelerated linear motion :: x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
 ```
 where $x$ is the position at time $t$ ($\text{m}$) and $x_0$ the initial position ($\text{m}$); the other symbols are the same as above. When the time is asked for, this becomes a quadratic equation, and of its solutions you choose the one that fits the situation.
 

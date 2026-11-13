@@ -1347,11 +1347,11 @@
       "normaali": "normal",
       "nopea": "fast",
       "selite": "The blue arrow is the speed of the car. The bars show the energies on the same scale.",
-      "lukemat": "<strong>$v_\\text{bottom} = {{vp}}\\,\\text{m/s}$, $h_2 = {{h2}}\\,\\text{m}$</strong><br>$h = {{h}}\\,\\text{m}$, $v = {{v}}\\,\\text{m/s}$, $s = {{s}}\\,\\text{m}$<br>$E_\\text{p} = {{Ep}}\\,\\text{kJ}$, $E_\\text{k} = {{Ek}}\\,\\text{kJ}$, $E_\\text{mech} = {{Em}}\\,\\text{kJ}$<br>$W_\\text{other} = {{W}}\\,\\text{kJ}$, $\\Delta E_\\text{mech} = {{dE}}\\,\\text{kJ}$",
+      "lukemat": "<strong>$v_\\text{bottom} = {{vp}}\\,\\text{m/s}$, $h_2 = {{h2}}\\,\\text{m}$</strong><br>$h = {{h}}\\,\\text{m}$, $v = {{v}}\\,\\text{m/s}$, $s = {{s}}\\,\\text{m}$<br>$E_\\text{p} = {{Ep}}\\,\\text{kJ}$, $E_\\text{k} = {{Ek}}\\,\\text{kJ}$, $E_\\text{mech} = {{Em}}\\,\\text{kJ}$<br>$W = {{W}}\\,\\text{kJ}$, $\\Delta E_\\text{mech} = {{dE}}\\,\\text{kJ}$",
       "energia": "$\\text{Energy}$",
-      "emek1": "$E_{\\text{mech},1}$",
+      "emek1": "$E_{\\text{mech}0}$",
       "emek": "$E_\\text{mech}$",
-      "wmuut": "$W_\\text{other}$"
+      "wmuut": "$W$"
     },
     "fy4-9": {
       "kaynnista": "Start",

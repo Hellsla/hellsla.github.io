@@ -392,14 +392,14 @@ Hyppääjä osuu alustaan samalla nopeudella, oli alusta kova tai pehmeä, ja py
 
 ### Liikemäärä ja impulssi
 Kappaleen liikemäärä on
-```latex
-\overline{p} = m\overline{v}
+```kaavat
+liikemäärä :: \overline{p} = m\overline{v}
 ```
 missä $m$ on kappaleen massa ($\text{kg}$) ja $\overline{v}$ sen nopeus ($\text{m/s}$). Liikemäärän yksikkö on $\text{kg}\cdot\text{m/s}$. Suoraviivaisessa liikkeessä vektorit korvataan etumerkillisillä luvuilla, $p = mv$, ja $v$ on negatiivinen, kun kappale liikkuu negatiiviseen suuntaan.
 
 Kun kappaleeseen vaikuttaa vakiovoima $\overline{F}$ aikavälin $\Delta t$, voiman impulssi on
-```latex
-\overline{I} = \overline{F}\,\Delta t
+```kaavat
+voiman impulssi :: \overline{I} = \overline{F}\,\Delta t
 ```
 missä $\overline{F}$ on voima ($\text{N}$) ja $\Delta t$ sen vaikutusaika ($\text{s}$). Impulssilla on voiman suunta, ja sen yksikkö on $\text{N}\cdot\text{s}$. Koska $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$, on $1\,\text{N}\cdot\text{s} = 1\,\text{kg}\cdot\text{m/s}$: impulssilla ja liikemäärällä on sama yksikkö.
 
@@ -409,8 +409,8 @@ Kun kokonaisvoima $\Sigma\overline{F}$ on vakio, kappale kiihtyy tasaisesti. Luv
 \Sigma\overline{F}\,\Delta t = m\overline{v} - m\overline{v}_0
 ```
 Vasemmalla on kokonaisvoiman impulssi ja oikealla liikemäärän muutos. Tämä on **impulssiperiaate**:
-```latex
-\Delta\overline{p} = \overline{I}
+```kaavat
+impulssi-liikemääräperiaate :: \overline{I} = \Delta\overline{p}
 ```
 missä $\Delta\overline{p} = \overline{p} - \overline{p}_0$ on liikemäärän muutos ($\text{kg}\cdot\text{m/s}$) ja $\overline{I}$ kappaleeseen vaikuttavan kokonaisvoiman impulssi ($\text{N}\cdot\text{s}$). Sanoin: kappaleen liikemäärä muuttuu yhtä paljon kuin kokonaisvoima antaa sille impulssia. Kun esimerkiksi $2{,}0\,\text{kg}$:n kärryä työnnetään liikkeen suuntaan $4{,}0\,\text{N}$:n kokonaisvoimalla $0{,}50\,\text{s}$, impulssi on $2{,}0\,\text{N}\cdot\text{s}$, ja kärryn nopeus kasvaa $1{,}0\,\text{m/s}$.
 

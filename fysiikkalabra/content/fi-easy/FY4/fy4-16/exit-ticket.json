@@ -1,7 +1,7 @@
 [
   {
     "q": "Pulkka liukuu suoraa rinnettä alas. Lumen tukivoima on suuri voima. Miksi se ei silti tee pulkkaan työtä?",
-    "a": "Tukivoima on kohtisuorassa rinnettä vastaan, joten se on kohtisuorassa pulkan liikettä vastaan. Työn tekee vain se osa voimasta, joka on liikkeen suuntainen. Se on $W = F_\\parallel s$. Tukivoimalla tämä osa on nolla. Tukivoima vaikuttaa kuitenkin välillisesti, sillä liikekitka on $\\mu N$."
+    "a": "Tukivoima on kohtisuorassa rinnettä vastaan, joten se on kohtisuorassa pulkan liikettä vastaan. Työn tekee vain se osa voimasta, joka on liikkeen suuntainen. Se on $W = F s$. Tukivoimalla tämä osa on nolla. Tukivoima vaikuttaa kuitenkin välillisesti, sillä liikekitka on $\\mu N$."
   },
   {
     "q": "Milloin käytät liikeyhtälöä ja milloin energiaperiaatetta? Anna kummastakin yksi esimerkki tämän luvun tilanteista.",

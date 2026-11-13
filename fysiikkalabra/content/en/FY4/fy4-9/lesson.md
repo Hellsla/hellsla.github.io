@@ -392,14 +392,14 @@ The jumper hits the surface at the same velocity whether it is hard or soft, and
 
 ### Momentum and impulse
 The momentum of an object is
-```latex
-\overline{p} = m\overline{v}
+```kaavat
+momentum :: \overline{p} = m\overline{v}
 ```
 where $m$ is the mass of the object ($\text{kg}$) and $\overline{v}$ its velocity ($\text{m/s}$). The unit of momentum is $\text{kg}\cdot\text{m/s}$. In straight-line motion the vectors are replaced by numbers with signs, $p = mv$, and $v$ is negative when the object moves in the negative direction.
 
 When a constant force $\overline{F}$ acts on an object for a time interval $\Delta t$, the impulse of the force is
-```latex
-\overline{I} = \overline{F}\,\Delta t
+```kaavat
+impulse of a force :: \overline{I} = \overline{F}\,\Delta t
 ```
 where $\overline{F}$ is the force ($\text{N}$) and $\Delta t$ the time it acts ($\text{s}$). The impulse has the direction of the force, and its unit is $\text{N}\cdot\text{s}$. Since $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$, we have $1\,\text{N}\cdot\text{s} = 1\,\text{kg}\cdot\text{m/s}$: impulse and momentum have the same unit.
 
@@ -409,8 +409,8 @@ When the net force $\Sigma\overline{F}$ is constant, the object accelerates unif
 \Sigma\overline{F}\,\Delta t = m\overline{v} - m\overline{v}_0
 ```
 On the left is the impulse of the net force and on the right the change in momentum. This is the **impulse–momentum principle**:
-```latex
-\Delta\overline{p} = \overline{I}
+```kaavat
+impulse-momentum principle :: \overline{I} = \Delta\overline{p}
 ```
 where $\Delta\overline{p} = \overline{p} - \overline{p}_0$ is the change in momentum ($\text{kg}\cdot\text{m/s}$) and $\overline{I}$ the impulse of the net force acting on the object ($\text{N}\cdot\text{s}$). In words: the momentum of an object changes by as much as the net force gives it impulse. For example, when a $2.0\,\text{kg}$ cart is pushed in the direction of motion with a net force of $4.0\,\text{N}$ for $0.50\,\text{s}$, the impulse is $2.0\,\text{N}\cdot\text{s}$, and the velocity of the cart increases by $1.0\,\text{m/s}$.
 

@@ -211,7 +211,7 @@ Hydro and wind power plants do not produce energy out of nothing. They convert t
   <line x1="362" y1="194" x2="362" y2="220" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
   <line x1="374" y1="194" x2="374" y2="220" stroke="#e9c98a" stroke-width="2" stroke-linecap="butt"/>
   <path d="M390,214 L466,214 L466,222 L488,207 L466,192 L466,200 L390,200 Z" fill="url(#fy415-vve)" stroke-linejoin="round"/>
-  <foreignObject x="496" y="192.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$P_\text{s}$</div></foreignObject>
+  <foreignObject x="496" y="192.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$P_\text{a}$</div></foreignObject>
   <line x1="272" y1="92" x2="578" y2="92" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <path d="M570,92 H578 V290 H570" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
   <foreignObject x="542" y="185.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$h$</div></foreignObject>
@@ -227,9 +227,9 @@ Hydro and wind power plants do not produce energy out of nothing. They convert t
 A power plant is described by its power: how much energy it converts in one second. When one cubic metre of water, that is $1000\,\text{kg}$, falls the $24\,\text{m}$ head of Imatra, it releases potential energy $mgh \approx 235\,\text{kJ}$. If hundreds of cubic metres flow through the turbines every second, the power is hundreds of megawatts. So power grows for two reasons: when more water falls each second, and when it falls from higher up. The water of the Vuoksi flows first through the Tainionkoski power plant and then through the Imatra power plant, so the flow rate is the same at both. The head at Imatra is about three times as large, and so is its power.
 
 ### Efficiency
-Not all the energy the water loses becomes electricity. The water rubs against the walls of the pipe, the turbine and the generator warm up, and the water leaving into the tailwater still has a little kinetic energy. The **efficiency** of a power plant is the ratio of the electric power it delivers $P_\text{s}$ to the power taken in $P_\text{o}$:
-```latex
-\eta = \frac{P_\text{s}}{P_\text{o}}
+Not all the energy the water loses becomes electricity. The water rubs against the walls of the pipe, the turbine and the generator warm up, and the water leaving into the tailwater still has a little kinetic energy. The **efficiency** of a power plant is the ratio of the output work $W_\text{a}$ to the input work $W_\text{o}$, or equally of the output power $P_\text{a}$ to the input power $P_\text{o}$. In a power plant the output power is the electric power it delivers:
+```kaavat
+efficiency :: \eta = \frac{W_\text{a}}{W_\text{o}} = \frac{P_\text{a}}{P_\text{o}}
 ```
 where $\eta$ (eta) is the efficiency, given as a decimal number or as a percentage. Efficiency is at most $100\,\%$. In real devices it is usually below $100\,\%$, because part of the energy taken in does not end up in the intended useful form, here electricity. The efficiency of a large hydropower plant is about $90\,\%$.
 
@@ -438,7 +438,7 @@ People often think that a power plant produces energy. A power plant converts en
 
 ## Summary
 - Hydro and wind power plants convert mechanical energy into electricity: a hydropower plant the potential energy of water, a wind turbine the kinetic energy of air.
-- The efficiency $\eta = \tfrac{P_\text{s}}{P_\text{o}}$ is at most $100\,\%$; for a large hydropower plant it is about $90\,\%$ and for a wind turbine below $50\,\%$.
+- The efficiency $\eta = \tfrac{P_\text{a}}{P_\text{o}}$ is at most $100\,\%$; for a large hydropower plant it is about $90\,\%$ and for a wind turbine below $50\,\%$.
 - The power of a hydropower plant is $P = \eta\rho Q g h$: it is proportional to the flow rate and the head.
 - The power of a wind turbine is $P = \tfrac{1}{2}\eta\rho A v^3$: when the efficiency stays roughly constant, double the wind speed gives about eight times the power, until the turbine reaches its rated power. In a very strong wind the turbine is stopped.
 - Energy is power times time, $E = Pt$.

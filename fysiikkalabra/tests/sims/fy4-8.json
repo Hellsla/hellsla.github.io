@@ -46,7 +46,7 @@
     "expr": "window.simState.Em0",
     "expected": 117720,
     "tol": 0.01,
-    "note": "E_mek,1 = m g h1 = 800 kg · 9,81 m/s² · 15 m"
+    "note": "E_mek0 = m g h1 = 800 kg · 9,81 m/s² · 15 m"
   },
   {
     "setup": "const R=[...document.querySelectorAll('#sim-root input[type=range]')]; const L=[...document.querySelectorAll('#sim-root select')]; const I=(e,v)=>{e.value=v; e.dispatchEvent(new Event('input',{bubbles:true})); e.dispatchEvent(new Event('change',{bubbles:true}));}; I(R[0],15); I(L[0],'800');",

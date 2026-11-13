@@ -547,13 +547,13 @@ Kun nopeus kasvaa, paikka muuttuu jokaisessa sekunnissa enemmän kuin edellisess
 Kun ilmanvastus on pieni, kaikki kappaleet putoavat samalla kiihtyvyydellä. Massa ei vaikuta siihen. Tämä **putoamiskiihtyvyys** on Maan pinnalla $g = 9{,}81\,\text{m/s}^2$, ja se osoittaa alaspäin. Pudotetun kiven nopeus kasvaa siis joka sekunti noin $9{,}8\,\text{m/s}$. Siksi kivi kulkee jokaisessa sekunnissa pidemmän matkan kuin edellisessä. Kappale lähtee levosta. Sen kulkemat matkat peräkkäisinä yhtä pitkinä aikaväleinä suhtautuvat kuin $1 : 3 : 5 : 7$.
 
 ## Kaava: Tasaisesti kiihtyvän liikkeen yhtälöt
-Kiihtyvyys on nopeuden muutos jaettuna ajalla, joka muutokseen kului:
-```latex
-a = \frac{\Delta v}{\Delta t}
+Keskikiihtyvyys on nopeuden muutos jaettuna ajalla, joka muutokseen kului:
+```kaavat
+keskikiihtyvyys :: a_\text{k} = \frac{\Delta v}{\Delta t}
 ```
-missä $a$ on kiihtyvyys ($\text{m/s}^2$), $\Delta v = v_2 - v_1$ on nopeuden muutos ($\text{m/s}$) ja $\Delta t$ on siihen kulunut aika ($\text{s}$). Oletetaan, että kiihtyvyys on vakio ja ajanotto alkaa hetkestä $t = 0$. Silloin nopeus on $v_0$, ja se muuttuu joka sekunti määrän $a$:
-```latex
-v = v_0 + a\,t
+missä $a_\text{k}$ on keskikiihtyvyys ($\text{m/s}^2$), $\Delta v = v_2 - v_1$ on nopeuden muutos ($\text{m/s}$) ja $\Delta t$ on siihen kulunut aika ($\text{s}$). Jos kiihtyvyys on vakio, se on joka hetki sama kuin keskikiihtyvyys: $a = a_\text{k}$. Oletetaan, että kiihtyvyys on vakio ja ajanotto alkaa hetkestä $t = 0$. Silloin nopeus on $v_0$, ja se muuttuu joka sekunti määrän $a$:
+```kaavat
+nopeus tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: v = v_0 + a\,t
 ```
 missä $v$ on nopeus hetkellä $t$ ($\text{m/s}$), $v_0$ on alkunopeus ($\text{m/s}$), $a$ on kiihtyvyys ($\text{m/s}^2$) ja $t$ on aika ($\text{s}$).
 
@@ -586,8 +586,8 @@ Tasaisessa liikkeessä siirtymä $v\,t$ on $(t,v)$-kuvaajan alle jäävän suora
 </svg>
 
 Kappale on hetkellä $t = 0$ paikassa $x_0$. Sen paikka on silloin alkupaikka plus siirtymä:
-```latex
-x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
+```kaavat
+paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä :: x = x_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2
 ```
 missä $x$ on paikka hetkellä $t$ ($\text{m}$) ja $x_0$ on alkupaikka ($\text{m}$). Muut symbolit ovat samat kuin edellä. Jos kysytään aikaa, tästä tulee toisen asteen yhtälö. Sen ratkaisuista valitaan se, joka sopii tilanteeseen.
 
