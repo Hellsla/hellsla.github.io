@@ -222,3 +222,35 @@ Jos kerroin $\cos\theta$ otettaisiin ilman neliötä, tilanteen A intensiteetiks
 **Vastaus:** $7{,}1\,\text{W/m}^2$, kaksi merkitsevää numeroa kuten häikäisyn intensiteetti $40\,\text{W/m}^2$. Auringon korkeus on $36{,}9^\circ$. Polaroidut lasit vähentävät häikäisyä enemmän, koska niiden läpi pääsee $7{,}1\,\text{W/m}^2$ ja tavallisen lasin läpi $12\,\text{W/m}^2$.
 **Järkevyys:** Jos pää olisi suorassa, kulma olisi $90^\circ$ ja häikäisy sammuisi kokonaan, joten pienikin kallistus päästää vähän valoa läpi, ja $7{,}1\,\text{W/m}^2$ on alle viidesosa alkuperäisestä $40\,\text{W/m}^2$. Polaroitu lasi on parempi, kun $\cos^2\theta < 0{,}30$ eli $\theta > 56{,}8^\circ$, ja tässä $\theta = 65{,}0^\circ$ täyttää ehdon.
 **Mallivastaus:** Polaroidut lasit vähentävät häikäisyä enemmän, koska häikäisy on täysin vaakasuuntaan polarisoitunutta ja kalvo absorboi sen, kun läpäisysuunta on lähes pystysuora. Tavallinen lasi vaimentaa häikäisyä ja muuta valoa yhtä paljon. Kun kallistus on yli $33{,}2^\circ$, tavallinen lasi olisi parempi. Polarisoimattoman valon intensiteetin polaroidut lasit puolittavat, kun taas tavallinen lasi päästää läpi $30\,\%$, joten muun valon osalta tavallinen lasi himmentää enemmän.
+
+## fy7-15-L1-10
+**Annettu:** polarisoituneen valon intensiteetti $I_0 = 400\,\text{W/m}^2$, kulma polarisaatiosuunnan ja läpäisysuunnan välillä $\theta = 35^\circ$; kuvaaja osuudesta $I : I_0$ kulman funktiona
+**Kysytty:** polarisaattorin läpi tuleva intensiteetti $I$ yksikössä $\text{W/m}^2$
+**Periaate:** Valo on jo polarisoitunutta, joten Malusin laki $I = I_0 \cos^2\theta$ pätee suoraan. Kuvaaja esittää osuuden $I : I_0 = \cos^2\theta$ kulman funktiona, joten osuus luetaan kuvaajalta kulman $35^\circ$ kohdalta ja kerrotaan tulevalla intensiteetillä.
+**Kuvaajan lukeminen:** Kulma $35^\circ$ on $30^\circ$:n ja $45^\circ$:n välissä. Pystyviiva sen kohdalta leikkaa käyrän kohdassa, jossa osuus on välillä $0{,}75$ ja $0{,}50$ ja lähempänä arvoa $0{,}75$, noin $0{,}67$. Hyvä lukema on $0{,}65\text{–}0{,}69$.
+**Kaava:** $I = I_0 \cdot \dfrac{I}{I_0}$, missä $\dfrac{I}{I_0} = \cos^2\theta$
+**Muunnokset:** Ei tarvita: intensiteetti pysyy yksikössä $\text{W/m}^2$, ja osuus on yksikötön luku.
+**Sijoitus:** $I = 400\,\text{W/m}^2 \cdot 0{,}67 = 268\,\text{W/m}^2$
+**Vastaus:** $270\,\text{W/m}^2$ (kuvaajalta luettuna $268\,\text{W/m}^2$), kaksi tai kolme merkitsevää numeroa lukematarkkuuden mukaan. Hyvä vastaus on $260\text{–}280\,\text{W/m}^2$.
+**Järkevyys:** Kulmalla $30^\circ$ osuus on $0{,}75$ ja kulmalla $45^\circ$ se on $0{,}50$, joten tulos $268\,\text{W/m}^2$ on välillä $300\,\text{W/m}^2$ ja $200\,\text{W/m}^2$. Tarkistus laskemalla: $400\,\text{W/m}^2 \cdot \cos^2 35^\circ = 268{,}4\,\text{W/m}^2$.
+
+## fy7-15-L1-11
+**Annettu:** ilman taitekerroin $n_1 = 1{,}00$; kruunulasin taitekerroin haetaan MAFY-taulukon taulukosta *Taitekertoimia*: $n_2 = 1{,}520$
+**Kysytty:** Brewsterin kulma $\alpha_\text{B}$ asteina
+**Periaate:** Eristeen pinnasta heijastunut valo on täysin polarisoitunutta, kun tulokulma on Brewsterin kulma. Silloin heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan, ja taittumislaista seuraa Brewsterin laki. Valo tulee ilmasta lasiin, joten $n_1$ on ilman taitekerroin ja $n_2$ lasin taitekerroin.
+**Kaava:** $\tan\alpha_\text{B} = \dfrac{n_2}{n_1}$, josta $\alpha_\text{B} = \tan^{-1}\dfrac{n_2}{n_1}$
+**Muunnokset:** Ei tarvita: taitekertoimilla ei ole yksikköä, ja kulma saadaan asteina.
+**Sijoitus:** $\alpha_\text{B} = \tan^{-1}\dfrac{1{,}520}{1{,}00} = \tan^{-1} 1{,}520 = 56{,}66^\circ$
+**Vastaus:** $56{,}7^\circ$, kolme merkitsevää numeroa kuten taitekertoimessa.
+**Järkevyys:** Kun $n_2 > n_1$, on $\tan\alpha_\text{B} > 1$, joten kulman pitää olla yli $45^\circ$. Tulos on hieman suurempi kuin tavallisen lasin ($n = 1{,}50$) kulma $56{,}3^\circ$, kuten pitääkin, koska kruunulasin taitekerroin on hieman suurempi. Tarkistus: taitekulma on $90^\circ - 56{,}66^\circ = 33{,}34^\circ$, ja $1{,}00 \cdot \sin 56{,}66^\circ = 0{,}835 = 1{,}520 \cdot \sin 33{,}34^\circ$.
+
+## fy7-15-L2-08
+**Annettu:** kuvan suora, joka kulkee likimain pisteiden $(0;\ 15\,\text{lx})$ ja $(1;\ 375\,\text{lx})$ kautta, kun vaaka-akselilla on $\cos^2\theta$; anturin lukema $E = 200\,\text{lx}$
+**Kysytty:** kalvon kulma $\theta$ asteina
+**Periaate:** Näytön valo on polarisoitunutta, joten Malusin lain mukaan sen osuus lukemasta on $E_0 \cos^2\theta$. Taustavalo lisää lukemaan vakion $E_\text{t}$, joten $E = E_0 \cos^2\theta + E_\text{t}$. Suoran vakiotermi on $E_\text{t}$ ja kulmakerroin $E_0$. Kulma saadaan ratkaisemalla $\cos^2\theta$ ja ottamalla kosinin käänteisfunktio.
+**Kuvaajan lukeminen:** Suora alkaa vaaka-akselin arvosta $\cos^2\theta = 0$ lukemasta $E_\text{t} = 15\,\text{lx}$ ja nousee arvoon $\cos^2\theta = 1$ lukemassa $375\,\text{lx}$, joten kulmakerroin on $E_0 = 375\,\text{lx} - 15\,\text{lx} = 360\,\text{lx}$. Lukemaa $200\,\text{lx}$ vastaa suoralla kohta, joka on hieman puolivälin ($\cos^2\theta = 0{,}5$) oikealla puolella, noin $\cos^2\theta = 0{,}51$. Luku luetaan suoralta, ei yksittäisistä mittauspisteistä.
+**Kaava:** $E = E_0 \cos^2\theta + E_\text{t}$, josta $\cos^2\theta = \dfrac{E - E_\text{t}}{E_0}$ ja $\theta = \cos^{-1}\sqrt{\dfrac{E - E_\text{t}}{E_0}}$
+**Muunnokset:** Ei tarvita: kaikki lukemat ovat luksiyksikössä, ja $\cos^2\theta$ on yksikötön luku.
+**Sijoitus:** $\cos^2\theta = \dfrac{200\,\text{lx} - 15\,\text{lx}}{360\,\text{lx}} = 0{,}514$ ja $\theta = \cos^{-1}\sqrt{0{,}514} = \cos^{-1} 0{,}717 = 44{,}2^\circ$
+**Vastaus:** $44^\circ$, kaksi merkitsevää numeroa kuvaajan lukutarkkuuden mukaan. Hyvä vastaus on $43\text{–}46^\circ$.
+**Järkevyys:** Lukema $200\,\text{lx}$ on lähellä väliä, jonka keskikohta $195\,\text{lx}$ vastaa kulmaa $45^\circ$ ($\cos^2 45^\circ = 0{,}50$), joten kulman pitää olla hieman alle $45^\circ$. Tarkistus: $360\,\text{lx} \cdot \cos^2 44{,}2^\circ + 15\,\text{lx} = 360\,\text{lx} \cdot 0{,}514 + 15\,\text{lx} = 200\,\text{lx}$.
