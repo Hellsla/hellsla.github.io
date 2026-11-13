@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 4ea094c3a76b7a09
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": round-2 diff since edb368de4 only)
+CONTENT-HASH: 331a2d8c7ba45ff5
+SCOPE: delta added-exercise from 67c7aa2652af10a6 base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- L3-05: the answer 142,5 AU is the distance from the Sun and 143,05 AU is from the Earth; the solution says this, and the 0,6 AU difference is under the stated 1 AU limit. Physically right (in February Voyager 2 lies about 50° from the Sun's direction, so Earth−probe ≈ d + 0,6 AU).
+- content/fi/FY1/fy1-1/exercises/solutions.md:214 — "kolme merkitsevää numeroa kuten taulukon arvoissa": the table values 695 700 km and 6 378 km carry four figures, so this reason does not explain the three — say "kolme merkitsevää numeroa riittää suuruusvertailuun" or give 109,1.
 
 ## Checked
-- diff exercises.json, solutions.md, answers.py (L3-04 10 min exact; L3-05 Voyager d0 119,0 AU).
-- Recomputed: 15,341 km/s · 7,25 · 3,156·10⁷ s = 3,510·10⁹ km = 23,46 AU; 119,0 + 23,46 = 142,46 → 142,5 AU (key 142.5). L3-04 1,19·10⁹ unchanged.
-- Voyager values agree across chapters: fy1-2 says Feb 2026 ≈ 142,5 AU, fy1-5 says 15.2.2026 142,6 AU (exact dates 142,4–142,7 AU).
+- fy1-1-L1-10 only (delta, added exercise); hash the same at start and end.
+- Recomputed independently: k = 2r_A/(2r_M) = 695 700/6 378 = 109,08 (key 109.08); the shown 109 is 0,07 % from the key.
+- MAFY values: Sun mean radius 695 700 km (IAU nominal) and Earth equatorial radius 6 378 km are right; the hint names the right table (Aurinkokunta).
+- Physics: the d = 2r step is stated and the factor 2 cancels; the ratio formula is the lesson's own k = d_suurempi/d_pienempi; no units are left in k.
+- Tolerance 0,04 covers other table editions (e.g. 6,96·10⁸ m gives 109,1).
+- Reasonableness: 10⁵ km / 10³ km ≈ 10², which is a real check and agrees with L2-04 (109,4 from 1,39·10⁹ m / 1,27·10⁷ m).
+- Scope: FY1 orders of magnitude, nothing beyond.
