@@ -241,7 +241,7 @@ Graph C goes through the points $(0\,\text{s};\ 6.0\,\text{m})$ and $(4.0\,\text
 **Given:** the $(t, x)$ graph of a cart with corner points $(0\,\text{s};\, 4\,\text{m})$, $(4\,\text{s};\, 16\,\text{m})$, $(6\,\text{s};\, 16\,\text{m})$ and $(10\,\text{s};\, 8\,\text{m})$; total time $\Delta t = 10\,\text{s}$
 **Find:** the average speed $v_\text{av}$ in the unit $\text{m/s}$
 **Principle:** Average speed is the distance travelled $s$ divided by the elapsed time. The distance is the sum of the absolute values of the changes in position of all the parts, because the cart returns part of the way and the distance grows then too. The displacement would not do: it would subtract the return with a minus sign.
-**Reading the graph:** The graph has three straight parts. During $0\ldots4\,\text{s}$ it rises from $4\,\text{m}$ to $16\,\text{m}$, so $\Delta x_1 = 16\,\text{m} - 4\,\text{m} = 12\,\text{m}$. During $4\ldots6\,\text{s}$ it is horizontal ($16\,\text{m}$), so $\Delta x_2 = 0$. During $6\ldots10\,\text{s}$ it falls from $16\,\text{m}$ to $8\,\text{m}$, so $\Delta x_3 = 8\,\text{m} - 16\,\text{m} = -6\,\text{m}$.
+**Reading the graph:** The graph has three straight parts. During $0\ldots4\,\text{s}$ it rises from $4\,\text{m}$ to $16\,\text{m}$, so $\Delta x_1 = 16\,\text{m} - 4\,\text{m} = 12\,\text{m}$. During $4\ldots6\,\text{s}$ it is horizontal ($16\,\text{m}$), so $\Delta x_2 = 0$. During $6\ldots10\,\text{s}$ it falls from $16\,\text{m}$ to $8\,\text{m}$, so $\Delta x_3 = 8\,\text{m} - 16\,\text{m} = -8\,\text{m}$.
 **Formula:** $s = |\Delta x_1| + |\Delta x_2| + |\Delta x_3|$ and $v_\text{av} = \dfrac{s}{\Delta t}$
 **Conversions:** The positions are in metres and the times in seconds, so no conversions are needed.
 **Substitution:**

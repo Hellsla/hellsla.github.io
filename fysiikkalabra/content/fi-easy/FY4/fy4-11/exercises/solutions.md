@@ -276,7 +276,7 @@ d) Liikemäärän muutos on $m\,\Delta v = 80{,}0\,\text{kg} \cdot 15{,}0\,\text
 **Kaava:** $a = \mu g$ ja $s = \dfrac{v_0^2}{2a} = \dfrac{v_0^2}{2\mu g}$
 **Muunnokset:** $v_0 = 80\,\text{km/h} = \dfrac{80}{3{,}6}\,\text{m/s} = 22{,}22\,\text{m/s}$
 **Sijoitus:** $a = 0{,}8 \cdot 9{,}81\,\text{m/s}^2 = 7{,}85\,\text{m/s}^2$ ja $s = \dfrac{(22{,}22\,\text{m/s})^2}{2 \cdot 7{,}85\,\text{m/s}^2} = 31{,}5\,\text{m}$
-**Vastaus:** $31\,\text{m}$. Vastauksessa on kitkakerroin $0{,}8$ on taulukon välin yläpää ja vain yhden numeron tarkkuudella, joten tulos on noin $30\,	ext{m}$, ilmoitettuna $31\,	ext{m}$. MAFY-taulukossa kitkakerroin on väli $0{,}5$–$0{,}8$ (taulukko *Kitkakertoimia*). Välin toisessa päässä $\mu = 0{,}5$ jarrutusmatka olisi $50\,\text{m}$. Tämä tulos on siis välin lyhyempi ääripää.
+**Vastaus:** $s \approx 30\,\text{m}$ (laskettuna $31\,\text{m}$). Kitkakerroin $0{,}8$ on taulukon välin yläpää. Se on vain yhden numeron tarkkuudella. Siksi tulos ilmoitetaan yhdellä merkitsevällä numerolla. MAFY-taulukossa kitkakerroin on väli $0{,}5$–$0{,}8$ (taulukko *Kitkakertoimia*). Välin toisessa päässä $\mu = 0{,}5$ jarrutusmatka olisi $50\,\text{m}$. Tämä tulos on siis välin lyhyempi ääripää.
 **Järkevyys:** Jarrutusmatka $31\,\text{m}$ on samaa suuruusluokkaa kuin kuivan tien tyypillinen jarrutusmatka nopeudesta $80\,\text{km/h}$. Hidastuvuus $7{,}85\,\text{m/s}^2$ on pienempi kuin ABS-jarrutuksessa kuivalla asfaltilla ($\mu \approx 0{,}9$). Näin pitää olla, kun pyörät ovat lukossa ja liukuvat.
 
 ## fy4-11-L2-09
@@ -298,5 +298,5 @@ d) Liikemäärän muutos on $m\,\Delta v = 80{,}0\,\text{kg} \cdot 15{,}0\,\text
 **Kaava:** $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$, joten $F_\text{A} - F_\text{B} = m\,\Delta v \left(\dfrac{1}{\Delta t_\text{A}} - \dfrac{1}{\Delta t_\text{B}}\right)$
 **Muunnokset:** Muunnoksia ei tarvita, koska suureet ovat SI-yksiköissä. Lopuksi muunnetaan $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $F_\text{A} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0{,}060\,\text{s}} = 17\,500\,\text{N}$ ja $F_\text{B} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0{,}150\,\text{s}} = 7000\,\text{N}$, joten $F_\text{A} - F_\text{B} = 10\,500\,\text{N} = 10{,}5\,\text{kN}$
-**Vastaus:** $10{,}5\,\text{kN}$. Massa $70\,	ext{kg}$ ja nopeus $15\,	ext{m/s}$ ovat kahden merkitsevän numeron arvoja, joten myös $11\,	ext{kN}$ hyväksytään; kolmas numero säilytetään, ettei välitulosten pyöristys vääristä tulosta.
+**Vastaus:** $10{,}5\,\text{kN}$. Massa $70\,\text{kg}$ ja nopeus $15\,\text{m/s}$ ovat kahden merkitsevän numeron arvoja, joten myös $11\,\text{kN}$ hyväksytään; kolmas numero säilytetään, ettei välitulosten pyöristys vääristä tulosta.
 **Järkevyys:** Kokeessa A voima $17{,}5\,\text{kN}$ on noin $25$-kertainen nuken painoon $70\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 690\,\text{N}$ verrattuna. Kokeessa B voima $7{,}0\,\text{kN}$ on noin $10$-kertainen. Voimien suhde $17{,}5/7{,}0 = 2{,}5$ on sama kuin aikojen käänteinen suhde $0{,}150/0{,}060 = 2{,}5$. Näin pitää olla: liikemäärän muutos on sama, aika on pidempi ja voima on pienempi.
