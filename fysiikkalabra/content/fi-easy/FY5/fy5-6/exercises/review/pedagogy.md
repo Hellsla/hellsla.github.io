@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: fc30f2daa21c1b57
+CONTENT-HASH: 2615e4af46870a85
 
 ## Blocking
-(none)
+none
 
 ## Polish
-- fy5-6-L1-10 / L1-11 still have 4-5 steps (readings, mean, formula, conversion); acceptable for level 1 but near the limit.
+1. L1-10 (figure: mean of two readings, formula, mm/s² conversion) is at the top of level 1; acceptable.
+2. L2-08 compares circular-orbit speeds for a comet that does not move on a circle; the solution says so, a student could still read 7,7 as a real ratio.
 
 ## Checked
-- L1-10: a = gamma M/r2 = 5,93 mm/s2 is correct; solution derives it from the second law and checks with v2/r; the ratio to 9,81 m/s2 gives sense.
-- L1-10 no longer repeats the speed task; both readings come from the figure, the circle model is justified.
-- L1-11: MAFY look-up, r = R + h trap named, v = 1634 m/s, T = 7065 s = 117,8 min correct; tolerance 4 % fits.
-- Sanity check with the ISS period is useful.
-- Finnish clear, units mm/s2 and min explained.
+- L1-11 now one formula: r given from the Moon centre, mass from MAFY, g = γM/r² = 1,448 m/s² recomputed; level 1, no overlap with L2-02 (which needs R + h) or L1-05 (speed).
+- Solution follows all seven steps with a sanity check against the surface value 1,62 m/s².
+- L1-10 a = 5,93 mm/s² and L2-08 √(5250/88) = 7,72 recomputed; figure radat gives all values, no answer.
+- Set mix and progression still fit.

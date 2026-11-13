@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 119f48447ec6e05e
+CONTENT-HASH: 7c46ff42f3980942
 SCOPE: delta added-exercise from 12247bcf797a5c2e base 81db4a6fd727
 
 ## Blocking
-(none)
+none
 
 ## Polish
-- fy5-17-L1-09 resembles L1-03 (echo sounder in a lake); the MAFY look-up and the 0 degC water make it different enough.
+1. L2-09 is close to the depth part of L2-05 (table instead of figure) but now asks a single depth with the figure to read and a µs and cm conversion; acceptable at level 2.
+2. L1-09 is near L1-03 (sonar depth); the MAFY lookup and ms conversion justify it.
 
 ## Checked
-- L1-09: MAFY value 1402,4 m/s for water at 0 degC, d = vt/2 = 14,0 m; the tissue value 1540 m/s (15,4 m) is outside the 4 % tolerance, so the trap is named and caught.
-- L2-09: echoes at 20 and 50 microseconds read from the figure, thickness of the layer = v(t_B - t_A)/2 = 2,31 cm; mu s conversion shown, check by depths 1,54 and 3,85 cm.
-- Figure gives times only, no depths; description matches.
-- Level fit and set mix: one look-up task at level 1, one figure task at level 2; no repeat of L2-05 (table).
+- L2-09 now asks the depth of echo C: d = vt/2 = 1540·90e-6/2 = 6,93 cm recomputed; the repeat of L2-05 b (layer thickness) is gone.
+- Figure a-scan gives C at 90 µs, no depths, description gives the same data without the answer.
+- L1-09: 14,0 m correct, MAFY table named, trap of 1540 m/s caught by tolerance.
+- Solutions complete; set mix fits.

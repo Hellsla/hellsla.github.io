@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9eba98da6db1e199
+CONTENT-HASH: 34b802bc7a3c2838
 SCOPE: delta added-exercise from 11d7d1d54e3ae477 base 81db4a6fd727
 
 ## Blocking
-(none)
+none
 
 ## Polish
-- fy5-17-L2-09 reasonableness: 'the echo A boundary lies at the fat layer beneath the skin' is a claim the data does not support; say 'a layer of a couple of centimetres is sensible for a thigh'.
-- fy5-17-L1-09: the answer 14.0 m shows 3 s.f. while the time 20 ms has two; the solution says so, but the data would justify 14 m.
+1. L2-09 is close to the depth part of L2-05 (table instead of figure) but now asks a single depth with the figure to read and a µs and cm conversion; acceptable at level 2.
+2. L1-09 is near L1-03 (sonar depth); the MAFY lookup and ms conversion justify it.
 
 ## Checked
-- L1-09: an authentic echo-sounder context; MAFY lookup with a precise hint; d = vt/2 = 14.0 m; the trap of using the tissue value 1540 m/s is addressed.
-- L2-09: the figure (A 20 us, B 50 us) is needed; the thickness is the difference of the echo times, 2.31 cm; the conversion of us is shown; the description gives no depths.
-- Both levels fit; no repeat of the worked example; solutions staged.
+- L2-09 now asks the depth of echo C: d = vt/2 = 1540·90e-6/2 = 6,93 cm recomputed; the repeat of L2-05 b (layer thickness) is gone.
+- Figure a-scan gives C at 90 µs, no depths, description gives the same data without the answer.
+- L1-09: 14,0 m correct, MAFY table named, trap of 1540 m/s caught by tolerance.
+- Solutions complete; set mix fits.
