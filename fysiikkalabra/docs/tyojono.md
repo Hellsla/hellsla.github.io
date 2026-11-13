@@ -161,6 +161,14 @@ vastausta (gating), tallennus ja Palaa ennusteisiisi -yhteenveto ennallaan. Sivu
 site.css), ei lukujen tekstejä; korjaa CLAUDE.md:n Lesson page 3 samassa PR:ssä; test_inquiry ja test_progress.
 Yhdistetään #546:n jälkeen (sama Ennusta-alue).
 
+## 8i. FY2: energialajit taulukoksi (opettaja 2026-11-13)
+
+fy2-1:n "Seitsemän energialajia" on luettelo pitkiä kohtia; opettaja: "tässäkin toimisi taulukko" (CLAUDE.md: "A table
+when the content is a table"). Taulukko, esim. sarakkeet Energialaji (ja tunnus) | Mihin liittyy | Esimerkki;
+käsitekorttien alleviivaukset säilyvät. Lämpöenergian kohdan selitys lämmön ja lämpöenergian erosta ei mahdu soluun:
+se jää taulukon alle omaksi kappaleekseen. Kaikki kielet (fi, en, fi-easy). Sisältömuutos: katselmoinnit
+`reviews.py scope fy2-1` mukaan (opettaja pyysi muutosta itse). Pieni oma PR.
+
 ## 9. Esimerkkikokeet FY7 ja FY8 (opettaja 2026-11-13)
 
 FY1–FY6:lla on esimerkkikoe (`content/fi/<COURSE>/koe/`), FY7:llä ja FY8:lla ei. `/exam FY7` ja `/exam FY8`
