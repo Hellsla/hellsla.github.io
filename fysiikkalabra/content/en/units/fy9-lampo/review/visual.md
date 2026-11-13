@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 2b4c3c134480ad0c
-
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: c0e5f30c40e0a14a
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 2b4c3c134480ad0c.
 
 ## Blocking
-None. Built fy9-lampo (en) with ?ratkaisut=1, every details element opened, at 390 and 1280 px. No .katex-error, no script errors; the changed Sijoitus, Kaava and Vastaus lines render with upright subscripts and units, thin spaces and \cdot (no x, no \times); decimal comma in fi and fi-easy, decimal point in en; the new symbol definitions ("missä ...") read naturally and the sentences are in the right language.
+(none)
 
 ## Polish
-1. Page-level horizontal overflow at 390 px when all details are open (45 px): long inline-math Sijoitus or answer lines in .reveal or .answer blocks do not wrap or scroll. Verified in the previous version (git 761b6673) for energia, voimat, sahkokentta and mittaaminen, so it is not a regression of this change (mittaaminen is about 40 px wider now). Fix when convenient: break such a substitution into a display line (\begin{aligned}) or let .reveal/.answer have overflow-x:auto.
+(none)
+
+## Checked
+Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: inquiry.json and sovella/solutions.md: $k_\text{h}$, $\ell$, $p$, $k$ share, $(P_1;\ \Delta m_1)$, $P/(P - P_\text{h})$. The symbol $k$ is used for a share in s6 and for a slope in s2; each part defines it locally, so no clash. No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.

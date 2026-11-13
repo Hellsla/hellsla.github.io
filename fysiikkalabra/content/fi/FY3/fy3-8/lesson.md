@@ -169,17 +169,23 @@ Nesteet laajenevat yleensä selvästi enemmän kuin kiinteät aineet, ja kaasut 
 Vesi on poikkeus: $0\,{}^\circ\text{C}$:n ja $4\,{}^\circ\text{C}$:n välillä se kutistuu lämmetessään, joten sen tiheys on suurin noin $4\,{}^\circ\text{C}$:ssa. Tihein, 4-asteinen vesi painuu pohjalle, ja kylmempi vesi jää pinnalle ja jäätyy. Siksi järvi jäätyy pinnalta alkaen, ja pohjalla on talvellakin noin 4-asteista vettä, jossa kalat selviävät.
 
 ## Kaava: Pituuden ja tilavuuden lämpölaajeneminen
-Kun kappaleen lämpötila muuttuu $\Delta T$, sen pituus muuttuu
-```latex
-\Delta L = \alpha L_0 \Delta T
+Kun kappaleen lämpötila muuttuu $\Delta T$, sen pituus on
+```kaavat
+pituuden lämpölaajeneminen :: l = l_0(1 + \alpha \Delta T)
 ```
-missä $\Delta L$ on pituuden muutos (m), $\alpha$ pituuden lämpötilakerroin (1/K), $L_0$ alkuperäinen pituus (m) ja $\Delta T$ lämpötilan muutos (K). Pituuden lämpötilakerroin $\alpha$ kertoo, kuinka suuren osan pituudestaan kappale pitenee, kun sen lämpötila nousee $1\,\text{K}$. Siksi muutos on verrannollinen alkuperäiseen pituuteen: kaksi kertaa pidemmässä sauvassa on kaksi kertaa enemmän hiukkasvälejä, joten se pitenee kaksi kertaa enemmän. Taulukon luku 12 tarkoittaa, että $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$. Uusi pituus on $L = L_0 + \Delta L$. Jäähtyessä $\Delta T$ on negatiivinen, joten myös $\Delta L$ on negatiivinen eli kappale lyhenee.
+missä $l$ on pituus lämpötilan muutoksen jälkeen (m), $l_0$ alkuperäinen pituus (m), $\alpha$ pituuden lämpötilakerroin (1/K) ja $\Delta T$ lämpötilan muutos (K). Pituuden lämpötilakerroin $\alpha$ kertoo, kuinka suuren osan pituudestaan kappale pitenee, kun sen lämpötila nousee $1\,\text{K}$. Taulukon luku 12 tarkoittaa, että $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$.
 
-Nesteiden (ja vakiopaineessa kaasujen) tilavuuden muutos lasketaan samalla tavalla:
+Kun alkuperäinen pituus vähennetään uudesta pituudesta, saadaan pituuden muutos, jota tämän luvun laskuissa käytetään:
 ```latex
-\Delta V = \gamma V_0 \Delta T
+\Delta l = l - l_0 = \alpha l_0 \Delta T
 ```
-missä $\Delta V$ on tilavuuden muutos (m³), $\gamma$ tilavuuden lämpötilakerroin (1/K) ja $V_0$ alkuperäinen tilavuus (m³). Kiinteällä aineella $\gamma \approx 3\alpha$, koska kappale laajenee kaikkiin kolmeen suuntaan: pituus, leveys ja korkeus kasvavat kukin suhteessa $\alpha \Delta T$, ja kun muutokset ovat pieniä, tilavuuden suhteellinen kasvu on lähes näiden summa $3\alpha \Delta T$. Kaavat ovat hyviä malleja, kun lämpötilan muutos on kohtuullinen. Kiinteillä aineilla se tarkoittaa esimerkiksi enintään noin sataa kelviniä. Nesteiden, varsinkin veden, kerroin $\gamma$ muuttuu selvästi lämpötilan mukana, joten taulukon $20\,{}^\circ\text{C}$:n arvoja käytetään vain lähellä $20\,{}^\circ\text{C}$:ta.
+Muutos on siis verrannollinen alkuperäiseen pituuteen: kaksi kertaa pidemmässä sauvassa on kaksi kertaa enemmän hiukkasvälejä, joten se pitenee kaksi kertaa enemmän. Jäähtyessä $\Delta T$ on negatiivinen, joten myös $\Delta l$ on negatiivinen eli kappale lyhenee.
+
+Nesteiden (ja vakiopaineessa kaasujen) tilavuus lasketaan samalla tavalla:
+```kaavat
+tilavuuden lämpölaajeneminen :: V = V_0(1 + \gamma \Delta T)
+```
+missä $V$ on tilavuus lämpötilan muutoksen jälkeen (m³), $V_0$ alkuperäinen tilavuus (m³) ja $\gamma$ tilavuuden lämpötilakerroin (1/K). Tilavuuden muutos on vastaavasti $\Delta V = V - V_0 = \gamma V_0 \Delta T$. Kiinteällä aineella $\gamma \approx 3\alpha$, koska kappale laajenee kaikkiin kolmeen suuntaan: pituus, leveys ja korkeus kasvavat kukin suhteessa $\alpha \Delta T$, ja kun muutokset ovat pieniä, tilavuuden suhteellinen kasvu on lähes näiden summa $3\alpha \Delta T$. Kaavat ovat hyviä malleja, kun lämpötilan muutos on kohtuullinen. Kiinteillä aineilla se tarkoittaa esimerkiksi enintään noin sataa kelviniä. Nesteiden, varsinkin veden, kerroin $\gamma$ muuttuu selvästi lämpötilan mukana, joten taulukon $20\,{}^\circ\text{C}$:n arvoja käytetään vain lähellä $20\,{}^\circ\text{C}$:ta.
 
 <svg data-fig="volume-expansion" viewBox="0 0 600 350" role="img" aria-label="Nesteen tilavuuden lämpölaajeneminen. Sama nestemäärä kolvissa, jonka kaulana on ohut putki: kylmänä nesteen tilavuus on V₀ ja pinta on alempana, lämpimänä neste on laajentunut ja pinta nousee ohuessa putkessa. Tilavuuden muutos ΔV on merkitty putkeen. Laajeneminen on piirretty liioiteltuna." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy38-liq-c" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><linearGradient id="fy38-liq-w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a69c"/><stop offset="1" stop-color="#c92a2a"/></linearGradient></defs>
@@ -234,22 +240,22 @@ missä $\Delta V$ on tilavuuden muutos (m³), $\gamma$ tilavuuden lämpötilaker
 | bensiini | 0,95 |
 | ilma (vakiopaineessa) | 3,4 |
 
-<svg data-fig="rod-expansion" viewBox="0 0 600 300" role="img" aria-label="Sama sauva kylmänä ja lämpimänä: lämmin sauva on pidempi, ja pituuden muutos ΔL on merkitty sauvan päähän. Sauva on kiinni seinässä vasemmassa päässä. Laajeneminen on piirretty liioiteltuna." style="max-width:100%;font-size:24px">
+<svg data-fig="rod-expansion" viewBox="0 0 600 300" role="img" aria-label="Sama sauva kylmänä ja lämpimänä: lämmin sauva on pidempi, ja pituuden muutos Δl on merkitty sauvan päähän. Sauva on kiinni seinässä vasemmassa päässä. Laajeneminen on piirretty liioiteltuna." style="max-width:100%;font-size:24px">
   <defs><pattern id="fy38-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="10" stroke="#6b7480" stroke-width="1.5"/></pattern><linearGradient id="fy38-cold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy38-warm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2a69c"/></linearGradient></defs>
   <rect x="36" y="56" width="14" height="164" fill="url(#fy38-hatch)"/>
   <line x1="50" y1="56" x2="50" y2="220" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
   <foreignObject x="66" y="23.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{kylmä, lämpötila } T_0$</div></foreignObject>
   <rect x="50" y="60" width="400" height="40" fill="url(#fy38-cold)" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="233.5" y="65.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$L_0$</div></foreignObject>
+  <foreignObject x="233.5" y="65.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$l_0$</div></foreignObject>
   <foreignObject x="66" y="111.5" width="270" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\text{lämmin, lämpötila } T_0 + \Delta T$</div></foreignObject>
   <rect x="50" y="148" width="470" height="40" fill="url(#fy38-warm)" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="250" y="153.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$L_0 + \Delta L$</div></foreignObject>
+  <foreignObject x="250" y="153.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$l_0 + \Delta l$</div></foreignObject>
   <line x1="450" y1="54" x2="450" y2="218" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="485" y1="206" x2="461" y2="206" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <path d="M450,206 L462,200.5 L462,211.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="485" y1="206" x2="509" y2="206" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <path d="M520,206 L508,211.5 L508,200.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <foreignObject x="468.5" y="221.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta L$</div></foreignObject>
+  <foreignObject x="468.5" y="221.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\Delta l$</div></foreignObject>
   <foreignObject x="305" y="271.5" width="283" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{laajeneminen liioiteltu}$</div></foreignObject>
 </svg>
 
@@ -258,32 +264,32 @@ Teräksisen sillan kansi on $120\,\text{m}$ pitkä. Paikkakunnalla lämpötila v
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kannen pituus $L_0 = 120\,\text{m}$, teräksen $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu), pienin lämpötila $-30\,{}^\circ\text{C}$ ja suurin $+30\,{}^\circ\text{C}$. Kysytään kannen pituuden muutosta $\Delta L$ koko vuoden aikana.
+**Tunnetut ja kysytty.** Kannen pituus $l_0 = 120\,\text{m}$, teräksen $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu), pienin lämpötila $-30\,{}^\circ\text{C}$ ja suurin $+30\,{}^\circ\text{C}$. Kysytään kannen pituuden muutosta $\Delta l$ koko vuoden aikana.
 
 <!-- vaihe -->
 
-**Periaate.** Kiinteän aineen hiukkasten värähtely voimistuu lämmetessä ja niiden keskimääräinen etäisyys kasvaa, joten kansi pitenee. Teräs pysyy kiinteänä koko vuoden, ja kansi saa laajentua vapaasti, joten pituuden muutos on verrannollinen alkupituuteen ja lämpötilan muutokseen: $\Delta L = \alpha L_0 \Delta T$.
+**Periaate.** Kiinteän aineen hiukkasten värähtely voimistuu lämmetessä ja niiden keskimääräinen etäisyys kasvaa, joten kansi pitenee. Teräs pysyy kiinteänä koko vuoden, ja kansi saa laajentua vapaasti, joten pituuden muutos on verrannollinen alkupituuteen ja lämpötilan muutokseen: $\Delta l = \alpha l_0 \Delta T$.
 
 <!-- vaihe -->
 
 **Kaava ratkaistuna.** Kysytty suure on jo yksin kaavan vasemmalla puolella, joten kaavaa ei tarvitse muokata:
 ```latex
 \begin{aligned}
-&\Delta L = \alpha L_0 \Delta T \\
+&\Delta l = \alpha l_0 \Delta T \\
 &\Delta T = T_\text{max} - T_\text{min}
 \end{aligned}
 ```
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Lämpötilan muutos on sama celsiusasteina ja kelvineinä, joten $\Delta T = 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) = 60\,\text{K}$. Pituudet ovat metreinä, joten $\Delta L$ tulee metreinä; lopuksi $1\,\text{m} = 1000\,\text{mm}$.
+**Yksikkömuunnokset.** Lämpötilan muutos on sama celsiusasteina ja kelvineinä, joten $\Delta T = 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) = 60\,\text{K}$. Pituudet ovat metreinä, joten $\Delta l$ tulee metreinä; lopuksi $1\,\text{m} = 1000\,\text{mm}$.
 
 <!-- vaihe -->
 
 **Sijoitus.** Sijoitetaan arvot yksiköineen:
 ```latex
 \begin{aligned}
-\Delta L &= \alpha L_0 \Delta T \\
+\Delta l &= \alpha l_0 \Delta T \\
 &= 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 120\,\text{m} \cdot 60\,\text{K} \\
 &= 0{,}0864\,\text{m} \\
 &= 86{,}4\,\text{mm}
@@ -303,7 +309,7 @@ Moni ajattelee, että lämmetessä hiukkaset itse kasvavat. Mikromallissa hiukka
 
 ## Tiivistelmä
 - Lämmetessä hiukkasten värähtely voimistuu ja niiden keskimääräinen etäisyys kasvaa, joten aine laajenee.
-- Pituuden muutos on $\Delta L = \alpha L_0 \Delta T$ ja tilavuuden muutos $\Delta V = \gamma V_0 \Delta T$. Kiinteällä aineella $\gamma \approx 3\alpha$.
+- Lämpötilan muutoksen jälkeen pituus on $l = l_0(1 + \alpha \Delta T)$ ja tilavuus $V = V_0(1 + \gamma \Delta T)$. Pituuden muutos on siis $\Delta l = \alpha l_0 \Delta T$ ja tilavuuden muutos $\Delta V = \gamma V_0 \Delta T$. Kiinteällä aineella $\gamma \approx 3\alpha$.
 - Nesteet laajenevat enemmän kuin kiinteät aineet ja kaasut paljon enemmän kuin nesteet.
 - Kappale laajenee kaikkiin suuntiin samassa suhteessa, joten myös reiät suurenevat.
 - Vesi on poikkeus: sen tiheys on suurin noin $4\,{}^\circ\text{C}$:ssa.

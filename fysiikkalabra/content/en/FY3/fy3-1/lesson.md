@@ -210,8 +210,8 @@ The weight of an object is a measure of the strength of the interaction between 
 
 ## Formula: Weight
 Two identical objects stretch the spring of a force meter twice as much as one, so weight is directly proportional to mass:
-```latex
-G = m g
+```kaavat
+gravitational force on a body at the Earth's surface :: G = m g
 ```
 where $G$ is the weight (N), $m$ the mass (kg) and $g$ the acceleration of free fall (m/s²), $9.81\,\text{m/s}^2$ on the surface of the Earth. When mass is in kilograms and $g$ in m/s², the weight comes out in newtons, because $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$ (this is justified in FY4). So the weight of a one-kilogram mass on Earth is $9.81\,\text{N}$. Elsewhere $g$ is different. The values in the table apply to the surface of the celestial body (for Jupiter, the level of the cloud tops):
 

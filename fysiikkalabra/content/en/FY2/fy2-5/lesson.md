@@ -168,8 +168,8 @@ Because the heat of combustion is energy per unit of mass, the energy released i
 
 ## Formula: Heat of combustion and released energy
 The energy released when a fuel burns is
-```latex
-E = Hm
+```kaavat
+heat released in combustion :: E = Hm
 ```
 where $E$ is the energy released ($\text{J}$ or $\text{MJ}$), $H$ is the heat of combustion of the fuel ($\text{MJ/kg}$) and $m$ is the mass of fuel burnt ($\text{kg}$). The mass must be in kilograms, because the heat of combustion is energy per kilogram. For example, $3.0\,\text{kg}$ of petrol releases $43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3.0\,\text{kg} = 129\,\text{MJ} \approx 130\,\text{MJ}$, because the mass is known to two figures.
 

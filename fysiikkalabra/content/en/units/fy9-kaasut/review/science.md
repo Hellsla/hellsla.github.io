@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 1926a5c556418511
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 6263b46de4aa9695
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at cb173dd417c974be.
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (solution practice, 2026-11-12) of the version passed before.
 (none)
 
 ## Checked
-s2 c ($\eta_\text{l}$ symbol; 84 %) and the restructured s6 c: $\Delta p_\text{m} = m(g+a)/(\mu_\text{m}A)$ = 37 380 Pa, $s$ = 1,61 (answers.py 37,4 kPa, 1,61); the physics (weight carried by static friction, $N = \Delta p A$), the conclusion and the rubric agree. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+Every hunk of the en merge diff (word diff). Suction lift: the recovered share $\eta_\text{h}$; the wet upright lift rewritten in full form: $\Delta p_\text{w} = m(g+a)/(\mu_\text{w}A) = 37\,380$ Pa, $s = 1.61$ recomputed (792.72 N); the conclusion (fails the factor 2) and the friction mechanism (the pressure force is horizontal, so friction carries the weight) unchanged and correct. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

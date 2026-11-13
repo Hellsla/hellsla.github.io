@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "When a gas expands it does work $W_\\text{g} = p\\,\\Delta V$, which shows up as an area in the $(V, p)$ graph. A piston engine that repeats its motion can turn heat into work only by giving up part of the heat to something colder. This limits the efficiency $\\eta = W/Q_1$ and makes combined heat and power production and heat pumps worthwhile.",
+  "contribution": "When a gas expands it does work $W = p\\,\\Delta V$, which shows up as an area in the $(V, p)$ graph. A piston engine that repeats its motion can turn heat into work only by giving up part of the heat to something colder. This limits the efficiency $\\eta = W/Q_1$ and makes combined heat and power production and heat pumps worthwhile.",
   "learn": [
     "calculate the work done by an expanding gas and interpret it as an area in the pressure–volume graph.",
     "explain why a heat engine turns heat into work only by releasing part of it to something colder.",
@@ -33,7 +33,7 @@
         {
           "text": "$\\Delta U = 250\\,\\text{J}$",
           "correct": true,
-          "feedback": "Correct: $\\Delta U = Q + W = 400\\,\\text{J} + (-150\\,\\text{J}) = 250\\,\\text{J}$. Part of the heat left as work when the gas pushed the piston. In this lesson the work done by the gas is written $W_\\text{g}$, so here $W_\\text{g} = 150\\,\\text{J}$ and $\\Delta U = Q - W_\\text{g}$. In this lesson you calculate how large that work is."
+          "feedback": "Correct: $\\Delta U = Q + W = 400\\,\\text{J} + (-150\\,\\text{J}) = 250\\,\\text{J}$. Part of the heat left as work when the gas pushed the piston. So the gas did $150\\,\\text{J}$ of work, and the work done on it was $W = -150\\,\\text{J}$. In this lesson you calculate how large that work is."
         },
         {
           "text": "$\\Delta U = 400\\,\\text{J}$",
@@ -51,7 +51,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 1: work done by a gas",
-      "prompt": "A gas in a cylinder is heated. Weights keep the pressure at $200\\,\\text{kPa}$, and the volume of the gas grows from $1.0\\,\\text{l}$ to $2.5\\,\\text{l}$. How much work $W_\\text{g}$ does the gas do when it lifts the piston? ($1\\,\\text{l} = 0.001\\,\\text{m}^3$)",
+      "prompt": "A gas in a cylinder is heated. Weights keep the pressure at $200\\,\\text{kPa}$, and the volume of the gas grows from $1.0\\,\\text{l}$ to $2.5\\,\\text{l}$. How much work $W$ does the gas do when it lifts the piston? ($1\\,\\text{l} = 0.001\\,\\text{m}^3$)",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -59,21 +59,21 @@
       },
       "choices": [
         {
-          "text": "$W_\\text{g} = 200\\,\\text{J}$, because the work is determined by the pressure, which stays at $200\\,\\text{kPa}$.",
-          "feedback": "In the experiment the pressure is $200\\,\\text{kPa}$ on every row, but in the model $W_\\text{g}$ grows with the change in volume: $\\Delta V = 1.00\\,\\text{l}$ gives $200\\,\\text{J}$ and $\\Delta V = 1.50\\,\\text{l}$ gives $300\\,\\text{J}$. Pressure alone does no work; the piston does work only when it moves."
+          "text": "$W = 200\\,\\text{J}$, because the work is determined by the pressure, which stays at $200\\,\\text{kPa}$.",
+          "feedback": "In the experiment the pressure is $200\\,\\text{kPa}$ on every row, but in the model $W$ grows with the change in volume: $\\Delta V = 1.00\\,\\text{l}$ gives $200\\,\\text{J}$ and $\\Delta V = 1.50\\,\\text{l}$ gives $300\\,\\text{J}$. Pressure alone does no work; the piston does work only when it moves."
         },
         {
-          "text": "$W_\\text{g} = 300\\,\\text{J}$",
+          "text": "$W = 300\\,\\text{J}$",
           "correct": true,
-          "feedback": "The values of the model support this: when the quantity of heat $Q = 750\\,\\text{J}$ takes the volume from $1.0\\,\\textsf{l}$ to $2.5\\,\\textsf{l}$, the model gives $W_\\text{g} = 300\\,\\text{J}$. The orange rectangle in the $(V, p)$ graph is $200\\,\\text{kPa}$ high and $1.5\\,\\textsf{l}$ wide: $200\\,000\\,\\text{Pa} \\cdot 0.0015\\,\\text{m}^3 = 300\\,\\text{J}$."
+          "feedback": "The values of the model support this: when the quantity of heat $Q = 750\\,\\text{J}$ takes the volume from $1.0\\,\\textsf{l}$ to $2.5\\,\\textsf{l}$, the model gives $W = 300\\,\\text{J}$. The orange rectangle in the $(V, p)$ graph is $200\\,\\text{kPa}$ high and $1.5\\,\\textsf{l}$ wide: $200\\,000\\,\\text{Pa} \\cdot 0.0015\\,\\text{m}^3 = 300\\,\\text{J}$."
         },
         {
-          "text": "$W_\\text{g} = 500\\,\\text{J}$",
-          "feedback": "This is the pressure times the final volume $2.5\\,\\textsf{l}$. In the experiment the orange rectangle in the $(V, p)$ graph starts at $1.0\\,\\textsf{l}$, because work is done only during the expansion. Its width is $\\Delta V = 1.5\\,\\text{l}$, and the model gives $W_\\text{g} = 300\\,\\text{J}$."
+          "text": "$W = 500\\,\\text{J}$",
+          "feedback": "This is the pressure times the final volume $2.5\\,\\textsf{l}$. In the experiment the orange rectangle in the $(V, p)$ graph starts at $1.0\\,\\textsf{l}$, because work is done only during the expansion. Its width is $\\Delta V = 1.5\\,\\text{l}$, and the model gives $W = 300\\,\\text{J}$."
         },
         {
-          "text": "$W_\\text{g} = 300\\,000\\,\\text{J}$",
-          "feedback": "Here the pascals have been multiplied by litres. In the experiment the model gives $W_\\text{g} = 300\\,\\text{J}$ for an expansion of $1.5\\,\\textsf{l}$: the volume must be converted to cubic metres, $1.5\\,\\text{l} = 0.0015\\,\\text{m}^3$."
+          "text": "$W = 300\\,000\\,\\text{J}$",
+          "feedback": "Here the pascals have been multiplied by litres. In the experiment the model gives $W = 300\\,\\text{J}$ for an expansion of $1.5\\,\\textsf{l}$: the volume must be converted to cubic metres, $1.5\\,\\text{l} = 0.0015\\,\\text{m}^3$."
         }
       ]
     },
@@ -82,9 +82,9 @@
       "stage": "tutki",
       "type": "sim",
       "text": "In the simulation a gas is heated in a cylinder whose piston is pressed down by two weights; the pressure of the gas is $200\\,\\text{kPa}$.",
-      "howto": "Choose the heat $Q$ and press *Heat*: the piston rises, and the work done by the gas fills in the $(V, p)$ graph. Then press *Return the piston*. With the choice *at the same pressure* the weights push the piston back; with the choice *cool first* the gas first cools to the pressure $p_2$ (slider). *Speed* changes only the pace, not the results. The orange area is the work $W_\\text{g}$ done by the gas, and the blue area is the work done on the gas; in the bars the same colour means the same energy.",
+      "howto": "Choose the heat $Q$ and press *Heat*: the piston rises, and the work done by the gas fills in the $(V, p)$ graph. Then press *Return the piston*. With the choice *at the same pressure* the weights push the piston back; with the choice *cool first* the gas first cools to the pressure $p_2$ (slider). *Speed* changes only the pace, not the results. The orange area is the work $p\\,\\Delta V$ done by the gas, and the blue area is the work done on the gas; in the bars the same colour means the same energy.",
       "model": "The readings are values of the model: the cylinder contains a monatomic ideal gas. The piston is frictionless and weightless, and there is no air above it, so the pressure is caused by the weights: $200\\,\\text{kPa}$ with two weights, and the lower weight alone gives the pressure $p_2$. The hot plate is always hotter than the gas and the cold water colder. No heat escapes elsewhere. The initial volume is $V_1 = 1.00\\,\\text{l}$.",
-      "calc": "The change in internal energy is $\\Delta U = \\tfrac{3}{2}nR\\Delta T = \\tfrac{3}{2}\\Delta(pV)$. At constant pressure $p_1$ the work done by the gas is $W_\\text{g} = p_1\\Delta V$ and $Q = \\Delta U + W_\\text{g} = \\tfrac{5}{2}p_1\\Delta V$, so $\\Delta V = \\dfrac{2Q}{5p_1}$. In the option *cool first* the upper weight is moved up onto a shelf and a new one is taken from below; when the piston is locked, the volume does not change. The net work of the cycle $W = (p_1 - p_2)\\Delta V$ is the energy used to lift the weight, and $Q_1 - Q_2 = W$. The efficiency is $\\eta = \\dfrac{W}{Q_1}$."
+      "calc": "The change in internal energy is $\\Delta U = \\tfrac{3}{2}nR\\Delta T = \\tfrac{3}{2}\\Delta(pV)$. At constant pressure $p_1$ the work done by the gas is $p_1\\Delta V$, so the work done on the gas is $W = -p_1\\Delta V$ and from the first law $Q = \\Delta U - W = \\Delta U + p_1\\Delta V = \\tfrac{5}{2}p_1\\Delta V$, so $\\Delta V = \\dfrac{2Q}{5p_1}$. In the option *cool first* the upper weight is moved up onto a shelf and a new one is taken from below; when the piston is locked, the volume does not change. The net work of the cycle $W = (p_1 - p_2)\\Delta V$ is the energy used to lift the weight, and $Q_1 - Q_2 = W$. The efficiency is $\\eta = \\dfrac{W}{Q_1}$."
     },
     {
       "id": "exp-1",
@@ -123,7 +123,7 @@
       "min": 2,
       "question": {
         "type": "numeric",
-        "prompt": "From the change in volume on the row $Q = 1000\\,\\text{J}$, calculate the work done by the gas $W_\\text{g} = p\\,\\Delta V$ when $p = 200\\,\\text{kPa}$. Give the answer in joules.",
+        "prompt": "From the change in volume on the row $Q = 1000\\,\\text{J}$, calculate the work done by the gas $W = p\\,\\Delta V$ when $p = 200\\,\\text{kPa}$. Give the answer in joules.",
         "answer": 400,
         "unit": "J",
         "tolerance": 0.02,
@@ -146,7 +146,7 @@
             "feedback": "This is the whole quantity of heat $Q$. The gas warms up, so part of the heat stays as its internal energy. The work is only $p\\,\\Delta V$."
           }
         ],
-        "solution": "**Given:** the measurement row with $Q = 1000\\,\\text{J}$ and constant pressure, $p = 200\\,\\text{kPa}$; from the table the change in volume $\\Delta V = 2.00\\,\\textsf{l}$\n\n**Find:** the work done by the gas $W_\\text{g}$ in joules\n\n**Principle:** The pressure stays constant because the weights do not change, so the force of the gas on the piston is the same throughout the expansion. Then the work is the pressure times the change in volume, that is, the area of the rectangle in the $(V, p)$ graph.\n\n**Formula:** $W_\\text{g} = p\\,\\Delta V$\n\n**Conversions:** $200\\,\\text{kPa} = 200\\,000\\,\\text{Pa}$ and $1\\,\\textsf{l} = 10^{-3}\\,\\text{m}^3$, so $2.00\\,\\textsf{l} = 0.00200\\,\\text{m}^3$. Then $\\text{Pa} \\cdot \\text{m}^3 = \\text{J}$.\n\n**Substitution:** $W_\\text{g} = 200\\,000\\,\\text{Pa} \\cdot 0.00200\\,\\text{m}^3 = 400\\,\\text{J}$\n\n**Answer:** $400\\,\\text{J}$, three significant figures. The limiting value is the change in volume $2.00\\,\\textsf{l}$ (three figures); the pressure $200\\,\\text{kPa}$ is a setting of the simulation that is not measured, so it does not limit the precision.\n\n**Reasonableness:** Estimate: $200\\,\\text{kPa} \\cdot 2\\,\\textsf{l} = 2 \\cdot 10^5\\,\\text{Pa} \\cdot 2 \\cdot 10^{-3}\\,\\text{m}^3 = 400\\,\\text{J}$. The work is smaller than the whole quantity of heat $Q = 1000\\,\\text{J}$, as it should be, because part of the heat stays as internal energy: on the row $\\Delta U = 600\\,\\text{J}$ and $\\Delta U + W_\\text{g} = 1000\\,\\text{J} = Q$. For the monatomic gas of the model, $\\tfrac{2}{5}$ of the heat always goes into work at constant pressure."
+        "solution": "**Given:** the measurement row with $Q = 1000\\,\\text{J}$ and constant pressure, $p = 200\\,\\text{kPa}$; from the table the change in volume $\\Delta V = 2.00\\,\\textsf{l}$\n\n**Find:** the work done by the gas $W$ in joules\n\n**Principle:** The pressure stays constant because the weights do not change, so the force of the gas on the piston is the same throughout the expansion. Then the work is the pressure times the change in volume, that is, the area of the rectangle in the $(V, p)$ graph.\n\n**Formula:** $W = p\\,\\Delta V$\n\n**Conversions:** $200\\,\\text{kPa} = 200\\,000\\,\\text{Pa}$ and $1\\,\\textsf{l} = 10^{-3}\\,\\text{m}^3$, so $2.00\\,\\textsf{l} = 0.00200\\,\\text{m}^3$. Then $\\text{Pa} \\cdot \\text{m}^3 = \\text{J}$.\n\n**Substitution:** $W = 200\\,000\\,\\text{Pa} \\cdot 0.00200\\,\\text{m}^3 = 400\\,\\text{J}$\n\n**Answer:** $400\\,\\text{J}$, three significant figures. The limiting value is the change in volume $2.00\\,\\textsf{l}$ (three figures); the pressure $200\\,\\text{kPa}$ is a setting of the simulation that is not measured, so it does not limit the precision.\n\n**Reasonableness:** Estimate: $200\\,\\text{kPa} \\cdot 2\\,\\textsf{l} = 2 \\cdot 10^5\\,\\text{Pa} \\cdot 2 \\cdot 10^{-3}\\,\\text{m}^3 = 400\\,\\text{J}$. The work is smaller than the whole quantity of heat $Q = 1000\\,\\text{J}$, as it should be, because part of the heat stays as internal energy: on the row $\\Delta U = 600\\,\\text{J}$ and $\\Delta U + p\\,\\Delta V = 1000\\,\\text{J} = Q$. For the monatomic gas of the model, $\\tfrac{2}{5}$ of the heat always goes into work at constant pressure."
       }
     },
     {
@@ -277,7 +277,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Go back to your predictions",
-      "prompt": "Compare your predictions with the values of the model in the experiments and with the formulas $W_\\text{g} = p\\,\\Delta V$, $W = Q_1 - Q_2$ and $\\eta = W/Q_1$. Then return to the opening question: where does the part of the fuel's energy that does not become electricity go, why can even better technology not turn all of it into electricity, and how can it still be put to use?",
+      "prompt": "Compare your predictions with the values of the model in the experiments and with the formulas $W = p\\,\\Delta V$, $W = Q_1 - Q_2$ and $\\eta = W/Q_1$. Then return to the opening question: where does the part of the fuel's energy that does not become electricity go, why can even better technology not turn all of it into electricity, and how can it still be put to use?",
       "predictions": [
         "pred-1",
         "pred-2"
@@ -297,24 +297,24 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the mistake",
-      "prompt": "A gas in a cylinder expands at the constant pressure $200\\,\\text{kPa}$, and its volume grows by $1.2\\,\\text{l}$. At the same time a quantity of heat $600\\,\\text{J}$ is transferred to the gas. A student calculates the change in internal energy like this: $W_\\text{g} = p\\,\\Delta V = 200\\,000\\,\\text{Pa} \\cdot 0.0012\\,\\text{m}^3 = 240\\,\\text{J}$, so $\\Delta U = Q + W_\\text{g} = 600\\,\\text{J} + 240\\,\\text{J} = 840\\,\\text{J}$. Where is the mistake?",
+      "prompt": "A gas in a cylinder expands at the constant pressure $200\\,\\text{kPa}$, and its volume grows by $1.2\\,\\text{l}$. At the same time a quantity of heat $600\\,\\text{J}$ is transferred to the gas. A student calculates the change in internal energy like this: $W = p\\,\\Delta V = 200\\,000\\,\\text{Pa} \\cdot 0.0012\\,\\text{m}^3 = 240\\,\\text{J}$, so $\\Delta U = Q + W = 600\\,\\text{J} + 240\\,\\text{J} = 840\\,\\text{J}$. Where is the mistake?",
       "choices": [
         {
           "text": "In the conversion of litres: $1.2\\,\\text{l}$ is $1.2\\,\\text{m}^3$.",
           "feedback": "A litre is a cubic decimetre, and $1\\,\\text{l} = 0.001\\,\\text{m}^3$, so $1.2\\,\\text{l} = 0.0012\\,\\text{m}^3$. The conversion is correct, and the work done by the gas really is $240\\,\\text{J}$; the mistake is elsewhere."
         },
         {
-          "text": "In the sign of the work: a gas that does work gives up energy, so $\\Delta U = Q - W_\\text{g} = 360\\,\\text{J}$.",
+          "text": "In the sign of the work: in the first law $W$ is the work done on the gas, and the work done on an expanding gas is $W = -240\\,\\text{J}$, so $\\Delta U = Q + W = 360\\,\\text{J}$.",
           "correct": true,
-          "feedback": "Correct. The gas does $240\\,\\text{J}$ of work, so part of the heat supplied leaves as work: $\\Delta U = 600\\,\\text{J} - 240\\,\\text{J} = 360\\,\\text{J}$. The same result comes from the form $\\Delta U = Q + W$ of the chapter *Internal energy, heat and conservation of energy*, when the work done on the gas by the surroundings is $W = -W_\\text{g} = -240\\,\\text{J}$."
+          "feedback": "Correct. The gas does $240\\,\\text{J}$ of work, so part of the heat supplied leaves as work. In the first law $\\Delta U = Q + W$ the work done on the gas is $W = -p\\,\\Delta V = -240\\,\\text{J}$, so $\\Delta U = 600\\,\\text{J} + (-240\\,\\text{J}) = 360\\,\\text{J}$."
         },
         {
           "text": "In the sign of the heat: $Q$ is negative, because the gas gives up energy when it expands.",
-          "feedback": "The heat is transferred to the gas, so $Q = +600\\,\\text{J}$. The gas gives up energy as work, not as heat; that is why the work is subtracted: $\\Delta U = Q - W_\\text{g}$."
+          "feedback": "The heat is transferred to the gas, so $Q = +600\\,\\text{J}$. The gas gives up energy as work, not as heat; that is why the work done on the gas is negative, $W = -p\\,\\Delta V$, and $\\Delta U = Q - p\\,\\Delta V$."
         },
         {
           "text": "There is no mistake in the calculation.",
-          "feedback": "In experiment 1 the internal energy always grew less than the heat supplied, because the gas did work. The internal energy of a gas that does work cannot grow more than the heat supplied, $600\\,\\text{J}$: $\\Delta U = Q - W_\\text{g}$."
+          "feedback": "In experiment 1 the internal energy always grew less than the heat supplied, because the gas did work. The internal energy of a gas that does work cannot grow more than the heat supplied, $600\\,\\text{J}$: $\\Delta U = Q - p\\,\\Delta V$."
         }
       ],
       "optional": true
@@ -368,8 +368,8 @@
       "tolerance": 0.03,
       "hints": [
         "From which two sources does the heat given to the district heating network come?",
-        "The coefficient of performance is $\\varepsilon = P_\\text{indoors}/P_\\text{pump}$, and energy is conserved: $P_\\text{indoors} = P_\\text{sewage} + P_\\text{pump}$.",
-        "The power given to the network is $P_\\text{indoors} = \\varepsilon P_\\text{pump} = 3.50 \\cdot 9.00\\,\\text{MW} = 31.5\\,\\text{MW}$. Subtract the electric power from it."
+        "The coefficient of performance is $\\varepsilon = P_1/P_\\text{pump}$, and energy is conserved: $P_1 = P_\\text{sewage} + P_\\text{pump}$.",
+        "The power given to the network is $P_1 = \\varepsilon P_\\text{pump} = 3.50 \\cdot 9.00\\,\\text{MW} = 31.5\\,\\text{MW}$. Subtract the electric power from it."
       ],
       "mistakes": [
         {
@@ -381,7 +381,7 @@
           "feedback": "You divided the electric power by the coefficient of performance. The coefficient of performance tells how many times as much heat power the pump gives out compared with its electric power, so the power given out is $3.5 \\cdot 9.0\\,\\text{MW}$."
         }
       ],
-      "solution": "**Given:** the electric power of the heat pump $P_\\text{pump} = 9.00\\,\\text{MW}$, coefficient of performance $\\varepsilon = 3.50$\n\n**Find:** the heat power taken from the waste water $P_\\text{sewage}$ in megawatts\n\n**Principle:** The coefficient of performance tells how many times as much heat power the pump gives to the network as its electric power. Energy is conserved: the power given to the network is the electric power of the pump and the power taken from the waste water together, because the pump only transfers heat.\n\n**Formula:** $P_\\text{indoors} = \\varepsilon P_\\text{pump}$ and $P_\\text{indoors} = P_\\text{sewage} + P_\\text{pump}$, so\n\n$$\\begin{aligned} &P_\\text{sewage} \\\\ &= P_\\text{indoors} - P_\\text{pump} \\\\ &= (\\varepsilon - 1) P_\\text{pump} \\end{aligned}$$\n\n**Conversions:** The power is already in megawatts and the coefficient of performance has no unit, so no conversions are needed.\n\n**Substitution:** $P_\\text{sewage} = (3.50 - 1) \\cdot 9.00\\,\\text{MW} = 2.50 \\cdot 9.00\\,\\text{MW} = 22.5\\,\\text{MW}$\n\n**Answer:** $22.5\\,\\text{MW}$, three significant figures. The limiting values are the electric power $9.00\\,\\text{MW}$ and the difference $\\varepsilon - 1 = 3.50 - 1 = 2.50$ (three figures, because the integer $1$ is exact); both are given with three figures.\n\n**Reasonableness:** The power going to the network is $3.50 \\cdot 9.00\\,\\text{MW} = 31.5\\,\\text{MW}$, and $22.5\\,\\text{MW} + 9.00\\,\\text{MW} = 31.5\\,\\text{MW}$ agrees. The power from the waste water is greater than the electric power, as it should be when the coefficient of performance is above 2. The pump does not create energy but transfers it.",
+      "solution": "**Given:** the electric power of the heat pump $P_\\text{pump} = 9.00\\,\\text{MW}$, coefficient of performance $\\varepsilon = 3.50$\n\n**Find:** the heat power taken from the waste water $P_\\text{sewage}$ in megawatts\n\n**Principle:** The coefficient of performance tells how many times as much heat power the pump gives to the network as its electric power. Energy is conserved: the power given to the network is the electric power of the pump and the power taken from the waste water together, because the pump only transfers heat.\n\n**Formula:** $P_1 = \\varepsilon P_\\text{pump}$ and $P_1 = P_\\text{sewage} + P_\\text{pump}$, so\n\n$$\\begin{aligned} &P_\\text{sewage} \\\\ &= P_1 - P_\\text{pump} \\\\ &= (\\varepsilon - 1) P_\\text{pump} \\end{aligned}$$\n\n**Conversions:** The power is already in megawatts and the coefficient of performance has no unit, so no conversions are needed.\n\n**Substitution:** $P_\\text{sewage} = (3.50 - 1) \\cdot 9.00\\,\\text{MW} = 2.50 \\cdot 9.00\\,\\text{MW} = 22.5\\,\\text{MW}$\n\n**Answer:** $22.5\\,\\text{MW}$, three significant figures. The limiting values are the electric power $9.00\\,\\text{MW}$ and the difference $\\varepsilon - 1 = 3.50 - 1 = 2.50$ (three figures, because the integer $1$ is exact); both are given with three figures.\n\n**Reasonableness:** The power going to the network is $3.50 \\cdot 9.00\\,\\text{MW} = 31.5\\,\\text{MW}$, and $22.5\\,\\text{MW} + 9.00\\,\\text{MW} = 31.5\\,\\text{MW}$ agrees. The power from the waste water is greater than the electric power, as it should be when the coefficient of performance is above 2. The pump does not create energy but transfers it.",
       "optional": true
     },
     {
@@ -399,12 +399,12 @@
       "choices": [
         {
           "text": "A lot of work, because the pressure is high and acts on the walls of the cylinder for the whole year.",
-          "feedback": "Pressure produces a force, but work is done only when the object the force acts on moves. The walls of the cylinder do not move and the volume of the gas does not change, so $W_\\text{g} = p\\,\\Delta V = 0$."
+          "feedback": "Pressure produces a force, but work is done only when the object the force acts on moves. The walls of the cylinder do not move and the volume of the gas does not change, so $W = p\\,\\Delta V = 0$."
         },
         {
           "text": "No work at all, because the volume of the gas does not change.",
           "correct": true,
-          "feedback": "Correct. The work done by a gas is $W_\\text{g} = p\\,\\Delta V$, and here $\\Delta V = 0$. The pressure only tells you that the gas could do work if it were allowed to expand."
+          "feedback": "Correct. The work done by a gas is $W = p\\,\\Delta V$, and here $\\Delta V = 0$. The pressure only tells you that the gas could do work if it were allowed to expand."
         },
         {
           "text": "Work equal to the internal energy of the gas.",
@@ -426,7 +426,7 @@
         {
           "text": "The pump takes $2.0\\,\\text{kWh}$ of heat from the outdoor air, and the heat given out indoors is the sum of the heat taken from outside and the electrical energy.",
           "correct": true,
-          "feedback": "Correct. By conservation of energy, $Q_\\text{indoors} = Q_\\text{outdoors} + E_\\text{el}$, so $Q_\\text{outdoors} = 3.0\\,\\text{kWh} - 1.0\\,\\text{kWh} = 2.0\\,\\text{kWh}$. The pump transfers heat from the cold outdoor air to the warm indoors, and this takes electricity. The coefficient of performance is $\\varepsilon = 3.0\\,\\text{kWh} / 1.0\\,\\text{kWh} = 3.0$."
+          "feedback": "Correct. By conservation of energy, $Q_1 = Q_2 + W$, so $Q_2 = 3.0\\,\\text{kWh} - 1.0\\,\\text{kWh} = 2.0\\,\\text{kWh}$. The pump transfers heat from the cold outdoor air to the warm indoors, and this takes electricity. The coefficient of performance is $\\varepsilon = 3.0\\,\\text{kWh} / 1.0\\,\\text{kWh} = 3.0$."
         },
         {
           "text": "In the pump, electricity turns into heat with a threefold efficiency.",
@@ -443,13 +443,13 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "3. Graph and calculation",
-      "prompt": "The $(V, p)$ graph of a gas is a horizontal line segment at the height $p = 150\\,\\text{kPa}$, starting at $V = 2.0\\,\\text{l}$ and ending at $V = 5.0\\,\\text{l}$. How much work $W_\\text{g}$ does the gas do? Give the answer in joules.",
+      "prompt": "The $(V, p)$ graph of a gas is a horizontal line segment at the height $p = 150\\,\\text{kPa}$, starting at $V = 2.0\\,\\text{l}$ and ending at $V = 5.0\\,\\text{l}$. How much work $W$ does the gas do? Give the answer in joules.",
       "answer": 450,
       "unit": "J",
       "tolerance": 0.02,
       "hints": [
         "What does the area between the line segment and the $V$ axis mean, and what shape is it?",
-        "The area of the rectangle is $W_\\text{g} = p\\,\\Delta V$, where $\\Delta V = V_2 - V_1$.",
+        "The area of the rectangle is $W = p\\,\\Delta V$, where $\\Delta V = V_2 - V_1$.",
         "$\\Delta V = 5.0\\,\\text{l} - 2.0\\,\\text{l} = 3.0\\,\\text{l} = 0.0030\\,\\text{m}^3$."
       ],
       "mistakes": [
@@ -462,7 +462,7 @@
           "feedback": "You used the final volume $5.0\\,\\text{l}$. The work is the area only during the expansion, so the width is the change in volume $\\Delta V = 3.0\\,\\text{l}$."
         }
       ],
-      "solution": "**Given:** the $(V, p)$ graph is a horizontal line segment with $p = 150\\,\\text{kPa}$, initial volume $V_1 = 2.0\\,\\textsf{l}$ and final volume $V_2 = 5.0\\,\\textsf{l}$\n\n**Find:** the work done by the gas $W_\\text{g}$ in joules\n\n**Principle:** The work done by a gas is the area between the $(V, p)$ graph and the $V$ axis. The pressure stays constant because the line segment is horizontal, so the region is a rectangle and the work is the pressure times the change in volume.\n\n**Reading the graph:** The height of the rectangle is the height of the line segment, $p = 150\\,\\text{kPa}$, and the width is the distance between the start and end points of the segment, $V_2 - V_1 = 5.0\\,\\textsf{l} - 2.0\\,\\textsf{l} = 3.0\\,\\textsf{l}$. The values of the start and end points are not multiplied together; their difference is the width.\n\n**Formula:** $W_\\text{g} = p\\,\\Delta V$, where $\\Delta V = V_2 - V_1$\n\n**Conversions:** $150\\,\\text{kPa} = 150\\,000\\,\\text{Pa}$ and $\\Delta V = 3.0\\,\\textsf{l} = 3.0 \\cdot 10^{-3}\\,\\text{m}^3 = 0.0030\\,\\text{m}^3$. Then $\\text{Pa} \\cdot \\text{m}^3 = \\text{J}$.\n\n**Substitution:** $W_\\text{g} = 150\\,000\\,\\text{Pa} \\cdot 0.0030\\,\\text{m}^3 = 450\\,\\text{J}$\n\n**Answer:** $450\\,\\text{J}$, two significant figures. The limiting value is the change in volume $\\Delta V = 5.0\\,\\textsf{l} - 2.0\\,\\textsf{l} = 3.0\\,\\textsf{l}$ (the difference of the readings has one decimal and two figures); the pressure $150\\,\\text{kPa}$ has at least two figures.\n\n**Reasonableness:** The work is positive because the volume grows. Estimate: $1.5 \\cdot 10^5\\,\\text{Pa} \\cdot 3 \\cdot 10^{-3}\\,\\text{m}^3 \\approx 450\\,\\text{J}$. If the final volume $5.0\\,\\textsf{l}$ had been used, the result would be $750\\,\\text{J}$, which would correspond to the whole rectangle from zero volume. During the expansion work is done only between $2.0$ and $5.0\\,\\textsf{l}$."
+      "solution": "**Given:** the $(V, p)$ graph is a horizontal line segment with $p = 150\\,\\text{kPa}$, initial volume $V_1 = 2.0\\,\\textsf{l}$ and final volume $V_2 = 5.0\\,\\textsf{l}$\n\n**Find:** the work done by the gas $W$ in joules\n\n**Principle:** The work done by a gas is the area between the $(V, p)$ graph and the $V$ axis. The pressure stays constant because the line segment is horizontal, so the region is a rectangle and the work is the pressure times the change in volume.\n\n**Reading the graph:** The height of the rectangle is the height of the line segment, $p = 150\\,\\text{kPa}$, and the width is the distance between the start and end points of the segment, $V_2 - V_1 = 5.0\\,\\textsf{l} - 2.0\\,\\textsf{l} = 3.0\\,\\textsf{l}$. The values of the start and end points are not multiplied together; their difference is the width.\n\n**Formula:** $W = p\\,\\Delta V$, where $\\Delta V = V_2 - V_1$\n\n**Conversions:** $150\\,\\text{kPa} = 150\\,000\\,\\text{Pa}$ and $\\Delta V = 3.0\\,\\textsf{l} = 3.0 \\cdot 10^{-3}\\,\\text{m}^3 = 0.0030\\,\\text{m}^3$. Then $\\text{Pa} \\cdot \\text{m}^3 = \\text{J}$.\n\n**Substitution:** $W = 150\\,000\\,\\text{Pa} \\cdot 0.0030\\,\\text{m}^3 = 450\\,\\text{J}$\n\n**Answer:** $450\\,\\text{J}$, two significant figures. The limiting value is the change in volume $\\Delta V = 5.0\\,\\textsf{l} - 2.0\\,\\textsf{l} = 3.0\\,\\textsf{l}$ (the difference of the readings has one decimal and two figures); the pressure $150\\,\\text{kPa}$ has at least two figures.\n\n**Reasonableness:** The work is positive because the volume grows. Estimate: $1.5 \\cdot 10^5\\,\\text{Pa} \\cdot 3 \\cdot 10^{-3}\\,\\text{m}^3 \\approx 450\\,\\text{J}$. If the final volume $5.0\\,\\textsf{l}$ had been used, the result would be $750\\,\\text{J}$, which would correspond to the whole rectangle from zero volume. During the expansion work is done only between $2.0$ and $5.0\\,\\textsf{l}$."
     },
     {
       "id": "check-3",

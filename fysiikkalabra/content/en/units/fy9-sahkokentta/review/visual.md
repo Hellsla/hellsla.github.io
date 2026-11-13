@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6937c332c556fe06
+CONTENT-HASH: f2ccc4940864b96a
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+Delta review (round 3, Kaava sign convention, 2026-11-13) of the version reviewed at c63477ece610534e.
 
 ## Blocking
-None. Built fy9-sahkokentta (en) with ?ratkaisut=1, every details element opened, at 390 and 1280 px. No .katex-error, no script errors; the changed Sijoitus, Kaava and Vastaus lines render with upright subscripts and units, thin spaces and \cdot (no x, no \times); decimal comma in fi and fi-easy, decimal point in en; the new symbol definitions ("missä ...") read naturally and the sentences are in the right language.
+(none)
 
 ## Polish
-1. Page-level horizontal overflow at 390 px when all details are open (136 px): long inline-math Sijoitus or answer lines in .reveal or .answer blocks do not wrap or scroll. Verified in the previous version (git 761b6673) for energia, voimat, sahkokentta and mittaaminen, so it is not a regression of this change (mittaaminen is about 40 px wider now). Fix when convenient: break such a substitution into a display line (\begin{aligned}) or let .reveal/.answer have overflow-x:auto.
+(none)
+
+## Checked
+- Round-3 diff only: the Formula line against the Principle line of the same solution (source). U is now one quantity (U = V - V_0, positive, as in the Principle), U_AB = V_0 - V is named separately with a subscript, and "the voltage from the start to the point" wording is in place. The chain W = QU_AB = (-e)(V_0 - V) = e(V - V_0) = eU is well-formed KaTeX and keeps principle, symbolic equation, substitution, result. No captures opened: text-only change inside a collapsed solution, layout unchanged.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

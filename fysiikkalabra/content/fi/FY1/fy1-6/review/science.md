@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: ff53abfcd8d48eca
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 6fcd799d6fd6f900
 
 ## Blocking
 - none
 
 ## Polish
-- none
+1. lesson.md, Kaava section, first sentence: the prose defines plain acceleration as Δv/Δt while the row is named average acceleration (keskikiihtyvyys); one word ("keskikiihtyvyys" / "average acceleration") in that sentence would match the row. Not blocking: the constant-acceleration condition for Δv = aΔt is stated.
 
 ## Checked
-- title, meta, exit ticket, inquiry and lang sims.fy1-6: $v = gt$ → $v = g\,t$ only (no remaining `gt`); 1,62 · 3,0 and 9,81 · 2,0 = 19,6 m/s unchanged
-- Muunnokset sentence split (m/s because g is in m/s²): correct
-- translations carry the same notation change
+a = Δv/Δt and Δv = aΔt correct and MAFY's; from rest Δv = v, Δt = t gives v = gt; symbols a, Δv, Δt defined with units; agrees with the slope Δv/Δt in the graph text, inquiry solutions and feedback; fi, fi-easy, en say the same; no number changed (diff); answers.py and lesson-answers.py output identical to 3ec8cc24.

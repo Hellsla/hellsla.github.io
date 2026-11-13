@@ -64,7 +64,7 @@
         },
         {
           "text": "The work is the area of the rectangle between the segment and the volume axis, because the height is the pressure and the width is the change in volume.",
-          "feedback": "Correct: $W_\\text{g} = p\\,\\Delta V$ is the product of the height $p$ and the width $\\Delta V$, so the work is the area of the rectangle. The unit $\\text{Pa}\\cdot\\text{m}^3$ is the joule.",
+          "feedback": "Correct: $W = p\\,\\Delta V$ is the product of the height $p$ and the width $\\Delta V$, so the work is the area of the rectangle. The unit $\\text{Pa}\\cdot\\text{m}^3$ is the joule.",
           "correct": true
         },
         {
@@ -98,7 +98,7 @@
         },
         {
           "text": "The pump transfers heat from the outdoor air to the inside, so the energy given out indoors is the sum of the heat taken from outdoors and the electricity.",
-          "feedback": "Correct: $Q_\\text{indoors} = Q_\\text{outdoors} + E_\\text{el}$. The pump uses electricity to transfer heat from cold to warm, and energy does not appear from nothing.",
+          "feedback": "Correct: $Q_1 = Q_2 + W$. The pump uses electricity to transfer heat from cold to warm, and energy does not appear from nothing.",
           "correct": true
         }
       ]
@@ -148,7 +148,7 @@
     {
       "id": "fy3-11-L2-03",
       "level": 2,
-      "text": "In a physics lesson there is air in a cylinder closed by a lightly moving piston. The air is heated, and a quantity of heat of $700.0\\,\\text{J}$ is transferred to it. The air expands so that its pressure stays at $125\\,\\text{kPa}$ and its volume grows by $1.60\\,\\textsf{l}$.\n\nBy how much does the internal energy of the air change? Use the first law $\\Delta U = Q - W_\\text{g}$, where $W_\\text{g}$ is the work done by the air. Give the answer with its sign.",
+      "text": "In a physics lesson there is air in a cylinder closed by a lightly moving piston. The air is heated, and a quantity of heat of $700.0\\,\\text{J}$ is transferred to it. The air expands so that its pressure stays at $125\\,\\text{kPa}$ and its volume grows by $1.60\\,\\textsf{l}$.\n\nBy how much does the internal energy of the air change? Use the first law $\\Delta U = Q + W$, where $W$ is the work done on the air. Give the answer with its sign.",
       "answer": 500,
       "unit": "J",
       "tolerance": 0.02
@@ -232,7 +232,7 @@
     {
       "id": "fy3-11-L2-07",
       "level": 2,
-      "text": "Example data: the operation of the air-source heat pump of a school was followed for four days. For each day the electrical energy $E_\\text{el}$ used by the pump and the heat given out indoors $Q_\\text{indoors}$ were measured. How much heat did the pump take from the outdoor air in total during these four days? Give the answer in kilowatt-hours.",
+      "text": "Example data: the operation of the air-source heat pump of a school was followed for four days. For each day the electrical energy $W$ used by the pump and the heat given out indoors $Q_1$ were measured. How much heat did the pump take from the outdoor air in total during these four days? Give the answer in kilowatt-hours.",
       "kind": [
         "data"
       ],
@@ -244,8 +244,8 @@
         "columns": [
           "Day",
           "$T_\\text{outdoor}\\,({}^\\circ\\text{C})$",
-          "$E_\\text{el}\\,(\\text{kWh})$",
-          "$Q_\\text{indoors}\\,(\\text{kWh})$"
+          "$W\\,(\\text{kWh})$",
+          "$Q_1\\,(\\text{kWh})$"
         ],
         "rows": [
           [
@@ -360,7 +360,7 @@
     {
       "id": "fy3-11-L3-04",
       "level": 3,
-      "text": "Example data: the heating of a detached house is being planned with a heat pump. The table shows the monthly heat demand $Q$ of the house in the winter season and the coefficient of performance $\\varepsilon$ of the pump at the average outdoor temperature of each month. The heat demand is covered entirely by the pump.\n\na) Calculate the electrical energy $E_\\text{el}$ that the pump uses in each month, and the total electrical energy of all the months.\n\nb) Calculate the coefficient of performance of the season $\\varepsilon_\\text{season}$, which is the ratio of the heat given out during the whole season to the electrical energy of the whole season.\n\nc) Explain why the coefficient of performance of the season must not be calculated as the ordinary average of the monthly coefficients of performance, and calculate how much electricity the pump saves compared with direct electric heating, where all the heat comes from electricity.\n\nWrite the result of part b) in the answer box.",
+      "text": "Example data: the heating of a detached house is being planned with a heat pump. The table shows the monthly heat demand $Q$ of the house in the winter season and the coefficient of performance $\\varepsilon$ of the pump at the average outdoor temperature of each month. The heat demand is covered entirely by the pump.\n\na) Calculate the electrical energy $W$ that the pump uses in each month, and the total electrical energy of all the months.\n\nb) Calculate the coefficient of performance of the season $\\varepsilon_\\text{season}$, which is the ratio of the heat given out during the whole season to the electrical energy of the whole season.\n\nc) Explain why the coefficient of performance of the season must not be calculated as the ordinary average of the monthly coefficients of performance, and calculate how much electricity the pump saves compared with direct electric heating, where all the heat comes from electricity.\n\nWrite the result of part b) in the answer box.",
       "kind": [
         "data",
         "model"
@@ -413,7 +413,7 @@
     {
       "id": "fy3-11-L3-05",
       "level": 3,
-      "text": "Example data: in a vertical cylinder there is air closed by a lightly moving piston. The cross-sectional area of the cylinder is $A = 200\\,\\text{cm}^2$, and according to the measurements the pressure of the air stays constant at $p = 125\\,\\text{kPa}$. The air is heated with an electric resistor whose power is $260\\,\\text{W}$. Assume that all the energy given out by the resistor is transferred to the air as heat. The table gives the height $h$ of the piston, measured from the bottom of the cylinder, during the heating.\n\na) Calculate the heat $Q$ transferred to the air in four seconds and the work $W_\\text{g}$ done by the air, using the first and last values of the table.\n\nb) Calculate the change in the internal energy of the air $\\Delta U$.\n\nc) Calculate what share of the heat turned into work, and justify why a single expansion like this is not yet a heat engine.\n\nWrite the result of part b) in kilojoules in the answer box.",
+      "text": "Example data: in a vertical cylinder there is air closed by a lightly moving piston. The cross-sectional area of the cylinder is $A = 200\\,\\text{cm}^2$, and according to the measurements the pressure of the air stays constant at $p = 125\\,\\text{kPa}$. The air is heated with an electric resistor whose power is $260\\,\\text{W}$. Assume that all the energy given out by the resistor is transferred to the air as heat. The table gives the height $h$ of the piston, measured from the bottom of the cylinder, during the heating.\n\na) Calculate the heat $Q$ transferred to the air in four seconds and the work $W$ done by the air, using the first and last values of the table.\n\nb) Calculate the change in the internal energy of the air $\\Delta U$.\n\nc) Calculate what share of the heat turned into work, and justify why a single expansion like this is not yet a heat engine.\n\nWrite the result of part b) in kilojoules in the answer box.",
       "kind": [
         "data",
         "model"

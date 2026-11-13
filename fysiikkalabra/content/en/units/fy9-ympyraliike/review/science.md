@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: a56d9a97a70df948
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: acdec75ed9fb3544
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 712d63b6ed8c62be.
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (solution practice, 2026-11-12) of the version passed before.
 (none)
 
 ## Checked
-s1 a ($m_\text{a} = F/g$ = 45,3 kg), s1 c ($\Delta x$ solved in symbols = 11,1 cm), s2 b ($q = \gamma M/(g r^2)$ = 0,783), s5 (lever arms $d_\text{p}, d_\text{k}, d_\text{m}$; 114,3 g) and the two inquiry torque tasks (142,8 N; 235,4 N) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+Every hunk of the en merge diff (word diff). Moment equations with symbolic arms ($F r_\text{f}$, $F r_\text{h}$, trailer $m_\text{n} = (m_\text{t}r_\text{t} + m_\text{b}r_\text{b})/r_\text{k}$, $\Delta x = (m_\text{n}r_\text{k} - m_\text{t}r_\text{t} - m_\text{b}r_\text{b})/m_\text{b}$); $q = \gamma M/(gr^2)$; the stick lever arms 30.0, 42.0, 10.0 cm from the stated positions. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

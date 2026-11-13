@@ -1,8 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4a1e0daa19b91386
+CONTENT-HASH: 28a3c34741ddd22d
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 4a1e0daa19b91386.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-Component form of the friction case with m' = m + m_x is clear. POLISH: s? mu0 Kaava uses alpha_max and alpha_min without defining them (largest and smallest accepted angle, 24 and 21 deg); add 'missa alpha_max ja alpha_min ovat hyvaksytyista kulmista suurin ja pienin'. Same physics and steps as fi in en (numbers match fi).
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+The force diagram (voimakuvio fence) in the inquiry solution still precedes the equations, and the acceleration is now solved symbolically before the numbers; extra-mass line change $k' = 1/m'$, $F_0' = \mu m' g$ matches the answer; static-friction mean and half-range formula.
+Read the diff hunks of this unit for how #522 notation and #523 symbolic-first solutions interact: no symbol used with two meanings inside one solution, no duplicated derivation, no contradiction with the unit text, LaTeX balanced, the answer lines still match the substitutions, and the formula still precedes the numbers (CLAUDE.md Lesson form 7). Staging of the worked solutions (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) is intact.

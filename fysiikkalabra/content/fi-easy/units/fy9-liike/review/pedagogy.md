@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 40fdf609551e84d5
+CONTENT-HASH: d0f3db03e34b9122
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at fe75e179cad98e03.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-y_l = y0 + v0^2/(2g) shown, and a_min, a_max in symbols in s5 a: a clean, short improvement. Same physics and steps as fi in fi-easy (numbers match fi).
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Diff only: y_l = y0 + v0^2/(2g) simplification shown; a_min, a_max formulas added before the numbers. Consistent with substitution values.

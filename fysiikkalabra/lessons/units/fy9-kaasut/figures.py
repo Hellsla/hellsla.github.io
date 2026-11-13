@@ -93,17 +93,18 @@ def hero():
 
 def kartta():
     """The concept map, stacked for a phone: pressure at the top, a spine down the left and three branches (liquid,
-    gas, heat engine), each a box of three laws with a grey word beside each."""
+    gas, heat engine), each a box of three laws with a grey word beside each (teacher 2026-11-12: the work of a heat
+    engine W = Q_1 - Q_2 is a "Johda itse" task in the text; the map shows the first law it comes from)."""
     f = Fig("fy9ka-kartta", 596, "Käsitekartta. Ylhäällä solmu paine: p = F / A. Siitä lähtee alas kolme haaraa. Neste: paine syvyydellä p = p0 "
             "+ ρ g h, ylipaine ρ g h ja kokonaispaine, joka on ilmanpaine ja ylipaine yhteensä. Kaasu: tilanyhtälö p V = n "
             "R T, yhdistetty kaasulaki p V / T = vakio ja kelvinlämpötila T = θ + 273,15 K. Lämpövoimakone: kaasun työ W = "
-            "p ΔV, energian säilyminen W = Q1 − Q2 ja hyötysuhde eeta = W / Q1.", width=380, size=21)
+            "p ΔV, lämpöopin 1. pääsääntö ΔU = Q + W ja hyötysuhde eeta = W / Q1.", width=380, size=21)
     groups = [
         ("neste", [(r"p = p_0 + \rho g h", "syvyydellä"), (r"\Delta p = \rho g h", "ylipaine"),
                    (r"p = p_0 + \Delta p", "kokonaispaine")]),
         ("kaasu", [(r"pV = nRT", "tilanyhtälö"), (r"pV/T = \text{vakio}", "sama kaasu"),
                    (r"T = \theta + 273{,}15\,\text{K}", "kelvinit")]),
-        ("lämpövoimakone", [(r"W = p\,\Delta V", "kaasun työ"), (r"W = Q_1 - Q_2", "säilyminen"),
+        ("lämpövoimakone", [(r"W = p\,\Delta V", "kaasun työ"), (r"\Delta U = Q + W", "1. pääsääntö"),
                             (r"\eta = W/Q_1", "hyötysuhde")]),
     ]
     hub_y, hub_h, x_box, gh, top = 8, 72, 44, 150, 100

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: bedac2c705f34dec
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 0775225e55ef25bc
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 9b293083aae3919e.
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (solution practice, 2026-11-12) of the version passed before.
 (none)
 
 ## Checked
-s1 c ($G = mg$, ratio 0,956), s2 b ($E_\text{k}'/E_\text{k}$ = 0,852), s3 c, s4 a ($P_2/P_1 = (v_2/v_1)^3$ = 3,375) and c ($P'/P = h'/h$), s5 a (−6,3 %), s6 d ($N k E_\text{h}/(c m_\text{t})$ = 7,14 K), both inquiry shares (41,7 %; $1 - v^2/(2gh)$ = 53,6 %) and the exit ticket ($v' = m_1v_1/(m_1+m_2)$ = 2,0 m/s) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+Every hunk of the en merge diff (word diff). Exit ticket $E_\text{k}$ and perfectly inelastic $v' = m_1v_1/(m_1+m_2)$; shares $1 - (m_A+m_B)v'^2/(m_Av_A^2)$, $1 - v^2/(2gh)$, $\Delta p/p$; $s_\text{p}/v_0 = t_\text{r} + v_0/(2a)$ so $t_\text{r} = y_1 - kv_1$, $a = 1/(2k)$; $(9/6)^3 = 3.375$; $P'/P = h'/h = 4/3$; pile $\Delta T = NkE_\text{loss}/(cm_\text{t})$. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

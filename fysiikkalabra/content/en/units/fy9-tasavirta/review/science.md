@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: c84cd25a785d53a6
-Delta review (solution practice, 2026-11-12) of the version passed before.
+CONTENT-HASH: 5990f23ea9ddfef8
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 5fb97cd3bc0ffb0e.
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (solution practice, 2026-11-12) of the version passed before.
 (none)
 
 ## Checked
-s2 d (436,8 Wh unrounded; 85,7 %, 6,6 snt), s3 b (symbols defined; $E_1$, $R_{\text{s}1}$), s3 d (osuus $= R/(R + R_\text{s})$ = 0,831, equals $P/(EI)$), s6 a (6,40 h) and the inquiry kettle task ($t = Nnt_1$ = 6,0 h, 2,09 €) recomputed. The fi, fi-easy and en diffs carry identical mathematics (every changed formula compared token by token); answers.py run; `units.py check` passes.
+Every hunk of the en merge diff (word diff). $t = Nnt_1$; $W_\text{ch} = 42.0\cdot10.4 = 436.8$ Wh, $\eta = 0.857$, $K = 0.066$ €; series cells $E_1 = E/3$, $R_{s1} = R_s/3$; $P/(EI) = R/(R+R_s)$; $Pt = Q = cm\Delta T$. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.

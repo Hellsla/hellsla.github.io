@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3131a232c18a887d
+CONTENT-HASH: dc13071f6130e116
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at b657e7155ea191a7.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- [Minor] Page-level horizontal overflow at 390 px with all details open (434 px wide kokeellisuus, 561 moderni) from long inline Sijoitus lines; known, carried from earlier reviews, not caused by these fixes. Let .reveal/.answer scroll or break into display lines.
+- fy9-moderni/sovella/solutions.md s5 a) Kuvaajan lukeminen: ln 393 = 5,974 is listed, then the fitted line passes (0; 5,993); say explicitly that the two points are on the fitted line, not data points.
 
 ## Checked
-- Delta re-review (solution practice, 2026-11-12) of the small text fixes: kokeellisuus s5 a rubric line ($2{,}7 \cdot 10^3$ kg/m3, two significant figures) and moderni s5 a answer, 157 s without background, 1,5 %, accepted range 147-159 s.
-- Built both units, opened preview/fi with ?ratkaisut=1 and every details element open at 390 px: 0 KaTeX errors, no script errors, changed lines present, decimal comma in fi and fi-easy, point in en, units and \cdot correct, wording natural.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+Diff only, read in full. `check_latex.py` on the unit: all fragments parse in KaTeX. s1 c,d; s2 a,d; s5 a,b and Hyvaksytaan myos; s6 b; tasks.json; answers.py not judged. The new s5 a) is a sensible log-fit presentation. No contradiction between #522 formula names or notation and the #523 solutions found; no duplicated derivation; Finnish and typography (thin spaces, decimal comma, \cdot, colon division, LaTeX units) in the changed lines are correct. No captures made: the changes are text-only solution lines, no figure or layout changed.

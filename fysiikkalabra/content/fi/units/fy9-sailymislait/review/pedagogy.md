@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 826d79025155d91f
+CONTENT-HASH: c744b5e13b28d510
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 513af1e7527c82c5.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-Exit-ticket answers now start from the law (E_k = mv^2/2, p conserved) and keep it short; shares (F/G, Ek'/Ek, dp/p) solved in symbols; N k E_h in d. Good.
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Exit ticket -vastaukset: kaava ennen lukuja; törmäysosuudet ja suhteet johdettu symboleissa ($1 - v^2/2gh$, osuus $E_k'/E_k$); impulssi, tuulivoima kuutioon, vesivoima, $N k E_\text{h}$ ja $y$-$v$-kuvaajan pisteet ($y = s_p/v_0$) määritelty. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.

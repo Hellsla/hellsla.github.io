@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b06084335558b3a5
+CONTENT-HASH: 282eb61fc0b60703
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+- L1-09 and L2-09 are good level fits. Optional: L1-09 solution could say why 4 % tolerance (atm 101325 vs 1e5 rounding).
 
 ## Checked
-- Round 2 (delta). The wrong reason now reads "Kone A ottaa enemmän lämpöä $Q_1$, joten sillä on enemmän muutettavaa työksi: $W = Q_1 - Q_2$." The correct reason is no longer the only one with a formula, so the form cue is gone; the reason still fails for the right cause (same W, so the extra heat goes to Q₂) and its feedback is unchanged and consistent.
-- Rest of the set unchanged since round 1. Text only; no new render opened.
+Changed symbols (P_a/P_o, Q1) and the added exercises read in full: solutions follow the staged format, symbols are defined where used, added L1-09 (lookup) and L2-09 (figure) match their levels and chapter.

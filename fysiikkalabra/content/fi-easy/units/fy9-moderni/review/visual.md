@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6bb9f4917aab2bd9
+CONTENT-HASH: 9ceb9eb8dad8fabb
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at a2a70e8ed2bea0c2.
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- [Minor] Page-level horizontal overflow at 390 px with all details open (434 px wide kokeellisuus, 561 moderni) from long inline Sijoitus lines; known, carried from earlier reviews, not caused by these fixes. Let .reveal/.answer scroll or break into display lines.
+(none)
 
 ## Checked
-- Delta re-review (solution practice, 2026-11-12) of the small text fixes: kokeellisuus s5 a rubric line ($2{,}7 \cdot 10^3$ kg/m3, two significant figures) and moderni s5 a answer, 157 s without background, 1,5 %, accepted range 147-159 s.
-- Built both units, opened preview/fi-easy with ?ratkaisut=1 and every details element open at 390 px: 0 KaTeX errors, no script errors, changed lines present, decimal comma in fi and fi-easy, point in en, units and \cdot correct, wording natural.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+Read every added line of the merge diff for this unit (fi-easy). check_latex.py on the unit: all fragments ok. Symbols introduced by the symbolic solutions (Annettu/Kaava/Sijoitus) compared with the unit text and neighbouring solutions: no clash with #522 formula names or notation found; no derivation duplicated; order principle, symbolic formula, substitution, result kept; units upright with thin space, decimal comma, no plain numbers with units in the added text. No capture built (source judged sufficient for these text-only changes).

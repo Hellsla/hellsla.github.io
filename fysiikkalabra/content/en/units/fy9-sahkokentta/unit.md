@@ -153,7 +153,7 @@
 
 The tasks of the lesson start from the same idea: **a charge creates an electric field around itself, and the field exerts a force on another charge**, $\overline{F} = q\overline{E}$. On a positive charge the force points in the direction of the field and on a negative charge against the field. When the field moves a charge, it does work, and the potential energy of the charge changes like the gravitational potential energy of a ball in the gravitational field. A capacitor stores energy in the field between its plates. Semiconductor components and electrical safety return to the same quantities: voltage, current and the field a dielectric can withstand.
 
-<svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Concept map. At the top is the node: a charge creates an electric field, and the field exerts a force on a charge, F = q E. Four branches go down from it. Charge and force: charge Q = n e, Coulomb&#x27;s law F E = k times the product of the charges divided by r squared, and the vector sum of the forces. Field and potential: uniform field U = E times d, work done by the field W = Q U and acceleration one half m v squared = charge times U. Capacitor: capacitance Q = C U, parallel-plate capacitor C = epsilon zero epsilon r A divided by d and energy E = one half C U squared. Components and safety: series resistor R = U minus U D divided by I, efficiency of a solar cell eta = P divided by G A, and current through the body I = U divided by R." style="max-width:100%;font-size:22px">
+<svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Concept map. At the top is the node: a charge creates an electric field, and the field exerts a force on a charge, F = q E. Four branches go down from it. Charge and force: charge Q = n e, Coulomb&#x27;s law F E = k times the product of the charges divided by r squared, and the vector sum of the forces. Field and potential: uniform field U = E times d, work done by the field W = Q U and in acceleration the kinetic energy E k = one half m v squared. Capacitor: capacitance Q = C U, parallel-plate capacitor C = epsilon zero epsilon r A divided by d and energy E = one half C U squared. Components and safety: series resistor from Kirchhoff&#x27;s second law, sum of delta V = 0, efficiency of a solar cell eta = P divided by G A, and current through the body I = U divided by R." style="max-width:100%;font-size:22px">
   <line x1="24" y1="80" x2="24" y2="638" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/>
   <foreignObject x="71.5" y="17" width="237" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:22px">$\text{a charge creates a field}$</div></foreignObject>
@@ -176,7 +176,7 @@ The tasks of the lesson start from the same idea: **a charge creates an electric
   <foreignObject x="292" y="328" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{uniform}$</div></foreignObject>
   <foreignObject x="58" y="362" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$W = QU$</div></foreignObject>
   <foreignObject x="230" y="365" width="132" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{work of the field}$</div></foreignObject>
-  <foreignObject x="58" y="399" width="134" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\tfrac12 mv^2 = |Q|U$</div></foreignObject>
+  <foreignObject x="58" y="399" width="111" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$E_\text{k} = \tfrac12 mv^2$</div></foreignObject>
   <foreignObject x="248" y="402" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{acceleration}$</div></foreignObject>
   <line x1="24" y1="466" x2="44" y2="466" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="44" y="444" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
@@ -192,11 +192,11 @@ The tasks of the lesson start from the same idea: **a charge creates an electric
   <rect x="44" y="616" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="625" width="237" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\textbf{components and safety}$</div></foreignObject>
   <line x1="54" y1="658" x2="362" y2="658" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="669" width="122" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$R = (U - U_\text{D})/I$</div></foreignObject>
+  <foreignObject x="58" y="669" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\Sigma \Delta V = 0$</div></foreignObject>
   <foreignObject x="230" y="672" width="132" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{series resistor}$</div></foreignObject>
   <foreignObject x="58" y="706" width="100" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$\eta = P/(GA)$</div></foreignObject>
   <foreignObject x="319" y="709" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{cell}$</div></foreignObject>
-  <foreignObject x="58" y="743" width="65" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$I = U/R$</div></foreignObject>
+  <foreignObject x="58" y="743" width="54" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$U = RI$</div></foreignObject>
   <foreignObject x="257" y="746" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{body current}$</div></foreignObject>
 </svg>
 
@@ -204,7 +204,7 @@ The spark of the opening is solved with these laws. When you walk on a woollen r
 
 The voltage is large, but the body is a small capacitor with a capacitance of about $100\,\text{pF}$, so the charge is only about $0.9\,\mu\text{C}$ and the energy about $4\,\text{mJ}$. The discharge lasts about a microsecond. A dangerous current, about $50\,\text{mA}$ for one second, would carry $0.05\,\text{C}$ through the body, over $50\,000$ times more charge.
 
-<svg data-fig="kipina" viewBox="0 0 600 540" role="img" aria-label="Schematic, not to scale. On the left a fingertip with negative charges on its surface. On the right the metal plate of the door handle, where positive charges have moved to the surface facing the finger because of induction. Between them there is an air gap of about 3 millimetres, crossed by green field lines from the plate to the finger and a bright bluish-white spark; the field is about 3 MV/m, the dielectric strength of air. Below, the calculation: the voltage U = E max times d is about 9 kV, the body is a capacitor with a capacitance of about 100 pF, so the charge Q = C U is about 0.9 microcoulombs and the energy W = one half C U squared about 4 millijoules." style="max-width:100%;font-size:24px">
+<svg data-fig="kipina" viewBox="0 0 600 540" role="img" aria-label="Schematic, not to scale. On the left a fingertip with negative charges on its surface. On the right the metal plate of the door handle, where positive charges have moved to the surface facing the finger because of induction. Between them there is an air gap of about 3 millimetres, crossed by green field lines from the plate to the finger and a bright bluish-white spark; the field is about 3 MV/m, the dielectric strength of air. Below, the calculation: the voltage U = E times d is about 9 kV, the body is a capacitor with a capacitance of about 100 pF, so the charge Q = C U is about 0.9 microcoulombs and the energy W = one half C U squared about 4 millijoules." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy9sk-plate" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e8c66e"/><stop offset="1" stop-color="#c9a046"/></linearGradient><radialGradient id="fy9sk-kglow"><stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/><stop offset="0.5" stop-color="#d0e6fb" stop-opacity="0.6"/><stop offset="1" stop-color="#d0e6fb" stop-opacity="0"/></radialGradient></defs>
   <path d="M10,70 L190,70 Q262,70 262,140 Q262,210 190,210 L10,210 Z" fill="#f1c9a5" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
   <path d="M150,100 Q200,94 222,118" fill="none" stroke="#d9a47c" stroke-width="2.5" stroke-linejoin="round"/>
@@ -255,7 +255,7 @@ The voltage is large, but the body is a small capacitor with a capacitance of ab
   <foreignObject x="62.5" y="223" width="95" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#6b7480">$\text{finger}$</div></foreignObject>
   <foreignObject x="457.5" y="253" width="95" height="34" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;color:#6b7480">$\text{handle}$</div></foreignObject>
   <line x1="10" y1="302" x2="590" y2="302" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
-  <foreignObject x="14" y="319.5" width="432" height="41" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:34px">$U = E_\text{max}d \approx 3\,\text{MV/m} \cdot 3\,\text{mm} \approx 9\,\text{kV}$</div></foreignObject>
+  <foreignObject x="14" y="319.5" width="379" height="41" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:34px">$U = Ed \approx 3\,\text{MV/m} \cdot 3\,\text{mm} \approx 9\,\text{kV}$</div></foreignObject>
   <foreignObject x="14" y="381.5" width="397" height="41" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:34px">$Q = CU \approx 100\,\text{pF} \cdot 9\,\text{kV} \approx 0.9\,\mu\text{C}$</div></foreignObject>
   <foreignObject x="14" y="443" width="238" height="82" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:34px">$W = \dfrac12 CU^2 \approx 4\,\text{mJ}$</div></foreignObject>
 </svg>
@@ -265,7 +265,7 @@ The voltage is large, but the body is a small capacitor with a capacitance of ab
 ### Charge, force and field
 
 ```kaavat
-charge as a multiple of the elementary charge :: Q = ne
+Q = ne
 magnitude of the Coulomb force :: F_E = k\,\frac{Q_1 Q_2}{r^2}
 electric field strength :: E = \frac{F_E}{Q}
 voltage in a uniform electric field :: U = Ed
@@ -351,10 +351,29 @@ where $n$ is the number of elementary charges, $e = 1.602 \cdot 10^{-19}\,\text{
 ```kaavat
 electric potential :: V = \frac{E_\text{p}}{Q}
 work done by an electric field :: W = QU
-kinetic energy of a particle accelerated in an electric field :: \tfrac12 mv^2 = \lvert Q \rvert U
 ```
 
-where $V$ is the potential at a point ($\text{V}$) relative to a chosen zero, $E_\text{p}$ the electric potential energy of the charge $Q$ ($\text{J}$), $W$ the work done by the field ($\text{J}$) when the charge $Q$ moves from the point A to the point B, and $U = U_{AB} = V_A - V_B$ the voltage between the points. The work does not depend on the path. The field points from higher potential to lower, and a charge starting from rest moves in the direction in which its potential energy decreases. The last equation holds for a particle starting from rest when only the electric force does work. The energy unit $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
+where $V$ is the potential at a point ($\text{V}$) relative to a chosen zero, $E_\text{p}$ the electric potential energy of the charge $Q$ ($\text{J}$), $W$ the work done by the field ($\text{J}$) when the charge $Q$ moves from the point A to the point B, and $U = U_{AB} = V_A - V_B$ the voltage between the points. The work does not depend on the path. The field points from higher potential to lower, and a charge starting from rest moves in the direction in which its potential energy decreases. The energy unit $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
+
+When a particle of mass $m$ ($\text{kg}$) and charge $Q$ starts from rest and is accelerated in an electric field through the voltage $U$, the work done by the field turns into the kinetic energy of the particle. Its final speed is $v$ ($\text{m/s}$).
+
+```johda
+A particle (mass $m$, charge $Q$) starts from rest and is accelerated in an electric field between two points with the voltage $U$ between them. Only the electric force does work. Derive an equation for the final speed $v$ of the particle.
+---
+By the work-energy principle of mechanics, the work done on the particle changes its kinetic energy. Only the electric force does work, and the particle starts from rest, so its initial kinetic energy is zero:
+
+$$W = E_\text{k} - 0 = \tfrac12 mv^2$$
+
+The work done by an electric field is $W = QU$. A charge starting from rest always moves in the direction in which the field does positive work, so the magnitude of the work is $\lvert Q \rvert U$, where $U$ is the magnitude of the voltage:
+
+$$\tfrac12 mv^2 = \lvert Q \rvert U$$
+
+Solve for the speed:
+
+$$v = \sqrt{\frac{2\lvert Q \rvert U}{m}}$$
+
+For example, an elementary charge accelerated through $1\,\text{V}$ gains the kinetic energy $1\,\text{eV}$.
+```
 
 ### The capacitor
 
@@ -362,20 +381,77 @@ where $V$ is the potential at a point ($\text{V}$) relative to a chosen zero, $E
 capacitor law :: Q = CU
 capacitance of a parallel-plate capacitor :: C = \varepsilon_0\varepsilon_\text{r}\,\frac{A}{d}
 energy of a capacitor :: E = \tfrac12 CU^2
-breakdown voltage :: U_\text{max} = E_\text{max}d
 ```
 
-where $C$ is the capacitance ($\text{F}$), $A$ the area of a plate ($\text{m}^2$), $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ the relative permittivity of the dielectric, $E$ the energy stored in the capacitor ($\text{J}$), also $E = \tfrac12 QU$, and $E_\text{max}$ the dielectric strength of the dielectric ($\text{V/m}$). The formula of the parallel-plate capacitor holds when $d$ is small compared with the size of the plates and the dielectric fills the gap. For a capacitor connected to a source the voltage stays the same; for a disconnected one, the charge.
+where $C$ is the capacitance ($\text{F}$), $A$ the area of a plate ($\text{m}^2$), $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$, $\varepsilon_\text{r}$ the relative permittivity of the dielectric, $E$ the energy stored in the capacitor ($\text{J}$), also $E = \tfrac12 QU$. The formula of the parallel-plate capacitor holds when $d$ is small compared with the size of the plates and the dielectric fills the gap. For a capacitor connected to a source the voltage stays the same; for a disconnected one, the charge.
+
+The dielectric strength $E_\text{max}$ ($\text{V/m}$) of a dielectric is the largest electric field strength it can withstand. If the field grows larger, the dielectric starts to conduct and breakdown occurs between the plates, so the voltage of the capacitor has a largest value $U_\text{max}$ ($\text{V}$).
+
+```johda
+The plates of a parallel-plate capacitor are a distance $d$ apart, and the dielectric filling the gap has the dielectric strength $E_\text{max}$. Derive the largest voltage $U_\text{max}$ the capacitor can withstand.
+---
+Between the plates the field is uniform, so the voltage in a uniform electric field is
+
+$$U = Ed$$
+
+When the voltage grows, the field grows in the same proportion. Breakdown occurs when the field reaches the dielectric strength, $E = E_\text{max}$:
+
+$$U_\text{max} = E_\text{max}d$$
+
+The same reasoning gives the voltage of the spark at the start: across an air gap $d$ the voltage can be at most the one at which the field equals the dielectric strength of air.
+```
 
 ### Components and safety
 
 ```kaavat
-series resistor of an LED :: R = \frac{U - U_\text{D}}{I}
-efficiency of a solar cell :: \eta = \frac{P}{GA}
-current through the body :: I = \frac{U}{R}
++ \eta = \frac{P}{GA}
+voltage drop across a conductor :: U = RI
 ```
 
-where $R$ is the series resistor of an LED ($\Omega$), $U_\text{D}$ the voltage of the LED ($\text{V}$), $P = UI$ the electric power of a solar cell at the maximum power point ($\text{W}$) and $G$ the light intensity ($\text{W/m}^2$). The last equation gives the current through the body when $U$ is the touch voltage and $R$ the resistance of the whole current path. A diode conducts only in the forward direction, when its voltage exceeds the threshold voltage. A fuse protects the cable, a residual current device the person.
+where $\eta$ is the efficiency of the solar cell, $P$ the electric power of the cell at the maximum power point ($\text{W}$), $G$ the intensity of the light falling on the cell, that is the power per unit area ($\text{W/m}^2$), and $A$ the area of the cell ($\text{m}^2$). The equation for the efficiency holds when the light falls perpendicular to the cell. The equation is extra information: it is not in the MAFY tables, and an exam gives it in the task when it is needed.
+
+In the equation for the voltage drop $U$ is the voltage ($\text{V}$), $R$ the resistance ($\Omega$) and $I$ the current ($\text{A}$). The equation gives the current through the body, $I = \tfrac{U}{R}$, when $U$ is the touch voltage and $R$ the resistance of the whole current path. A diode conducts only in the forward direction, when its voltage exceeds the threshold voltage. A fuse protects the cable, a residual current device the person.
+
+An LED is connected to a voltage source $U$ ($\text{V}$) in series with a series resistor $R$ ($\Omega$), which limits the current $I$ ($\text{A}$) to a suitable value. The voltage $U_\text{D}$ ($\text{V}$) of a conducting LED stays almost the same whatever the current.
+
+<svg data-fig="etuvastus" viewBox="0 0 600 300" role="img" aria-label="Circuit diagram, no numbers. On the left a voltage source with the voltage U, its positive terminal at the top. A series resistor R is connected in the upper wire. On the right an LED in the forward direction: its triangle points down, from the positive side towards the negative side, and two small arrows of light leave it. The voltage of the LED is U D. A violet current I flows from the positive terminal through the resistor and the LED back to the negative terminal." style="max-width:100%;font-size:24px">
+  <polyline points="140,152 140,70 250,70" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="330,70 440,70 440,142" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="440,176 440,250 140,250 140,168" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="114" y1="152" x2="166" y2="152" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="127" y1="168" x2="153" y2="168" stroke="#1f2933" stroke-width="7" stroke-linecap="butt"/>
+  <foreignObject x="174" y="123" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$+$</div></foreignObject>
+  <foreignObject x="86" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$U$</div></foreignObject>
+  <rect x="250" y="58" width="80" height="24" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="280" y="19.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$R$</div></foreignObject>
+  <path d="M422,142 L458,142 L440,174 Z" fill="#ffffff" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="420" y1="176" x2="460" y2="176" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="464" y1="156" x2="483.5" y2="136.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M490,130 L486,140.5 L479.5,134 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="468" y1="170" x2="487.5" y2="150.5" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <path d="M494,144 L490,154.5 L483.5,148 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <foreignObject x="502" y="170" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480">$\text{LED}$</div></foreignObject>
+  <line x1="400" y1="186" x2="400" y2="143" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M400,132 L405.5,144 L394.5,144 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="355" y="145.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$U_\text{D}$</div></foreignObject>
+  <path d="M225,70 L205,62 L205,78 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <path d="M280,250 L300,242 L300,258 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="205" y="29.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
+</svg>
+
+```johda
+An LED and a series resistor are connected in series to a voltage source $U$. The voltage of the LED is $U_\text{D}$, and the current in the circuit is to be $I$. Derive the resistance $R$ of the series resistor.
+---
+Go once round the circuit in the direction of the current using Kirchhoff's second law. The potential rises by $U$ in the source. It falls by the voltage drop $RI$ in the resistor (voltage drop across a conductor) and by $U_\text{D}$ in the LED:
+
+$$U - RI - U_\text{D} = 0$$
+
+Solve for the resistance:
+
+$$R = \frac{U - U_\text{D}}{I}$$
+
+Across the resistor there is therefore only the part of the source voltage that is not across the LED. The internal resistance of the source is assumed to be small.
+```
 
 ## Common mistakes {Virheet}
 

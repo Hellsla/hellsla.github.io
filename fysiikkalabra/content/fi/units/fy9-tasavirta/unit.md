@@ -166,13 +166,13 @@
 
 Tasavirtapiirissä lähde pitää yllä **jännitettä**, ja jännite ajaa piirin läpi **virran**. Virran suuruuden määrää koko piirin resistanssi, joten sama paristo antaa eri kuormille eri virrat. Virta ei kulu komponentissa: komponentti muuttaa varausten kuljettamaa sähköenergiaa valoksi, liikkeeksi tai sisäenergiaksi. **Teho** kertoo, kuinka nopeasti energiaa muuttuu.
 
-<svg data-fig="kartta" viewBox="0 0 380 912" role="img" aria-label="Käsitekartta. Ylhäällä solmu tasavirtapiiri: jännite U, virta I ja resistanssi R. Siitä lähtee alas neljä haaraa. Virta ja resistanssi, piirin suureet: virta I = delta Q per delta t, Ohmin laki U = R I ja johtimen resistanssi R = rho l per A. Kytkennät, Kirchhoffin lait: sarjaankytkentä R = R1 + R2, rinnankytkentä 1 per R = 1 per R1 + 1 per R2 ja silmukan potentiaalin muutosten summa nolla. Teho ja energia, Joulen laki: P = U I, vastukselle P = R I toiseen = U toiseen per R ja energia E = P t. Lähde, paristo ja akku: napajännite U = E miinus R s I, virta I = E per R plus R s ja akun kapasiteetti Q = I t." style="max-width:100%;font-size:20px">
-  <line x1="24" y1="80" x2="24" y2="734" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+<svg data-fig="kartta" viewBox="0 0 380 880" role="img" aria-label="Käsitekartta. Ylhäällä solmu tasavirtapiiri: jännite U, virta I ja resistanssi R. Siitä lähtee alas neljä haaraa. Virta ja resistanssi, piirin suureet: virta I = delta Q per delta t, Ohmin laki U = R I ja johtimen resistanssi R = rho l per A. Kytkennät, Kirchhoffin lait: sarjaankytkentä R kok = summa R, rinnankytkentä 1 per R kok = summa 1 per R ja silmukan potentiaalin muutosten summa nolla. Teho ja energia, Joulen laki: P = U I ja P = W per delta t. Lähde, paristo ja akku: napajännite silmukan potentiaalin muutosten summasta ja akun kapasiteetti virran I = delta Q per delta t avulla." style="max-width:100%;font-size:20px">
+  <line x1="24" y1="80" x2="24" y2="738" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
   <foreignObject x="113" y="18" width="154" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$\text{tasavirtapiiri}$</div></foreignObject>
   <foreignObject x="157" y="47" width="66" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px">$U,\ I,\ R$</div></foreignObject>
   <line x1="24" y1="122" x2="44" y2="122" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="100" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <rect x="44" y="100" width="328" height="206" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
   <foreignObject x="58" y="110" width="206" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{virta ja resistanssi}$</div></foreignObject>
   <foreignObject x="292" y="112" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{suureet}$</div></foreignObject>
   <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -180,41 +180,37 @@ Tasavirtapiirissä lähde pitää yllä **jännitettä**, ja jännite ajaa piiri
   <foreignObject x="310" y="158" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{virta}$</div></foreignObject>
   <foreignObject x="58" y="206" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$U = RI$</div></foreignObject>
   <foreignObject x="327" y="208" width="35" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Ohm}$</div></foreignObject>
-  <foreignObject x="58" y="256" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$R = \rho l/A$</div></foreignObject>
+  <foreignObject x="58" y="256" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$R = \rho \ell/A$</div></foreignObject>
   <foreignObject x="301" y="258" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{johdin}$</div></foreignObject>
-  <line x1="24" y1="326" x2="44" y2="326" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="304" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="314" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{kytkennät}$</div></foreignObject>
-  <foreignObject x="274" y="316" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Kirchhoff}$</div></foreignObject>
-  <line x1="54" y1="346" x2="362" y2="346" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="360" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$R = R_1 + R_2$</div></foreignObject>
-  <foreignObject x="310" y="362" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{sarja}$</div></foreignObject>
-  <foreignObject x="58" y="411" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$1/R = 1/R_1 + 1/R_2$</div></foreignObject>
-  <foreignObject x="301" y="412" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{rinnan}$</div></foreignObject>
-  <foreignObject x="58" y="450.5" width="55" height="43" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\sum \Delta V = 0$</div></foreignObject>
-  <foreignObject x="283" y="462" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{silmukka}$</div></foreignObject>
-  <line x1="24" y1="530" x2="44" y2="530" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="508" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="518" width="154" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{teho ja energia}$</div></foreignObject>
-  <foreignObject x="310" y="520" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Joule}$</div></foreignObject>
-  <line x1="54" y1="550" x2="362" y2="550" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="564" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = UI$</div></foreignObject>
-  <foreignObject x="319" y="566" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{teho}$</div></foreignObject>
-  <foreignObject x="58" y="614" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = RI^2 = U^2/R$</div></foreignObject>
-  <foreignObject x="301" y="616" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{vastus}$</div></foreignObject>
-  <foreignObject x="58" y="664" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$E = Pt$</div></foreignObject>
-  <foreignObject x="292" y="666" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{energia}$</div></foreignObject>
-  <line x1="24" y1="734" x2="44" y2="734" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="712" width="328" height="188" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="722" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{lähde}$</div></foreignObject>
-  <foreignObject x="248" y="724" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{paristo, akku}$</div></foreignObject>
-  <line x1="54" y1="754" x2="362" y2="754" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="769" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$U = E - R_\text{s} I$</div></foreignObject>
-  <foreignObject x="257" y="770" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{napajännite}$</div></foreignObject>
-  <foreignObject x="58" y="819" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$I = E/(R + R_\text{s})$</div></foreignObject>
-  <foreignObject x="310" y="820" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{virta}$</div></foreignObject>
-  <foreignObject x="58" y="868" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$Q = It$</div></foreignObject>
-  <foreignObject x="248" y="870" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kapasiteetti}$</div></foreignObject>
+  <line x1="24" y1="344" x2="44" y2="344" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="44" y="322" width="328" height="206" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="58" y="332" width="112" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{kytkennät}$</div></foreignObject>
+  <foreignObject x="274" y="334" width="88" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Kirchhoff}$</div></foreignObject>
+  <line x1="54" y1="364" x2="362" y2="364" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="58" y="379" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$R_\text{kok} = \Sigma R$</div></foreignObject>
+  <foreignObject x="310" y="380" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{sarja}$</div></foreignObject>
+  <foreignObject x="58" y="429" width="111" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$1/R_\text{kok} = \Sigma 1/R$</div></foreignObject>
+  <foreignObject x="301" y="430" width="61" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{rinnan}$</div></foreignObject>
+  <foreignObject x="58" y="479" width="55" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\Sigma \Delta V = 0$</div></foreignObject>
+  <foreignObject x="283" y="480" width="79" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{silmukka}$</div></foreignObject>
+  <line x1="24" y1="566" x2="44" y2="566" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="44" y="544" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="58" y="554" width="154" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{teho ja energia}$</div></foreignObject>
+  <foreignObject x="310" y="556" width="52" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{Joule}$</div></foreignObject>
+  <line x1="54" y1="586" x2="362" y2="586" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="58" y="600" width="50" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = UI$</div></foreignObject>
+  <foreignObject x="319" y="602" width="43" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{teho}$</div></foreignObject>
+  <foreignObject x="58" y="650" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$P = W/\Delta t$</div></foreignObject>
+  <foreignObject x="292" y="652" width="70" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{energia}$</div></foreignObject>
+  <line x1="24" y1="738" x2="44" y2="738" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="44" y="716" width="328" height="156" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="58" y="726" width="70" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px">$\textbf{lähde}$</div></foreignObject>
+  <foreignObject x="248" y="728" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{paristo, akku}$</div></foreignObject>
+  <line x1="54" y1="758" x2="362" y2="758" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="58" y="773" width="55" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$\Sigma \Delta V = 0$</div></foreignObject>
+  <foreignObject x="257" y="774" width="105" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{napajännite}$</div></foreignObject>
+  <foreignObject x="58" y="823" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px">$I = \Delta Q/\Delta t$</div></foreignObject>
+  <foreignObject x="248" y="824" width="114" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:17px;color:#6b7480">$\text{kapasiteetti}$</div></foreignObject>
 </svg>
 
 Kokeen piiritehtävässä kannattaa ensin selvittää kytkentä. Sarjaan kytkettyjen komponenttien läpi kulkee sama virta, ja rinnan kytkettyjen yli on sama jännite. Sen jälkeen Kirchhoffin lait ja Ohmin laki antavat virrat ja jännitteet, ja teho ja energia seuraavat niistä.
@@ -257,41 +253,95 @@ Tästä saadaan vastaus alun kysymykseen. Mökin laitteet on kytketty akkuun rin
 ```kaavat
 sähkövirta :: I = \frac{\Delta Q}{\Delta t}
 jännitehäviö johtimessa :: U = RI
-johtimen resistanssi :: R = \rho\,\frac{l}{A}
+johtimen resistanssi :: R = \rho\,\frac{\ell}{A}
 ```
 
-missä $I$ on virta ($\text{A}$), $\Delta Q$ poikkileikkauksen läpi kulkenut varaus ($\text{C}$), $\Delta t$ aika ($\text{s}$), $U$ komponentin jännite ($\text{V}$), $R$ resistanssi ($\Omega$), $\rho$ resistiivisyys ($\Omega\cdot\text{m}$), $l$ johtimen pituus ($\text{m}$) ja $A$ poikkipinta-ala ($\text{m}^2$). Ohmin lain mukaan metallijohtimen resistanssi on vakio, kun lämpötila pysyy samana. Hehkulampun resistanssi kasvaa langan kuumetessa. Virtamittari kytketään sarjaan ja jännitemittari rinnan.
+missä $I$ on virta ($\text{A}$), $\Delta Q$ poikkileikkauksen läpi kulkenut varaus ($\text{C}$), $\Delta t$ aika ($\text{s}$), $U$ komponentin jännite ($\text{V}$), $R$ resistanssi ($\Omega$), $\rho$ resistiivisyys ($\Omega\cdot\text{m}$), $\ell$ johtimen pituus ($\text{m}$) ja $A$ poikkipinta-ala ($\text{m}^2$). Ohmin lain mukaan metallijohtimen resistanssi on vakio, kun lämpötila pysyy samana. Hehkulampun resistanssi kasvaa langan kuumetessa. Virtamittari kytketään sarjaan ja jännitemittari rinnan.
 
 ### Kytkennät ja Kirchhoffin lait
 
 ```kaavat
-sarjaan kytkettyjen vastusten kokonaisresistanssi :: R = R_1 + R_2 + \dots
-rinnan kytkettyjen vastusten kokonaisresistanssi :: \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \dots
-Kirchhoffin 1. laki :: \sum I_\text{tulevat} = \sum I_\text{lähtevät}
-Kirchhoffin 2. laki :: \sum \Delta V = 0
+sarjaan kytkettyjen vastusten kokonaisresistanssi :: R_\text{kok} = \Sigma R
+rinnan kytkettyjen vastusten kokonaisresistanssi :: \frac{1}{R_\text{kok}} = \Sigma\frac{1}{R}
+Kirchhoffin 1. laki :: \Sigma I_\text{t} = \Sigma I_\text{l}
+Kirchhoffin 2. laki :: \Sigma \Delta V = 0
 ```
 
-Ensimmäinen on sarjaan ja toinen rinnan kytkettyjen vastusten kokonaisresistanssi $R$. Virtalaki pätee haarautumispisteelle, koska varaus säilyy. Jännitelaki pätee, kun silmukka kierretään kerran: potentiaali $V$ nousee lähteessä miinusnavalta plusnavalle ja laskee vastuksessa virran suuntaan $RI$:n verran. Siksi rinnakkaisten haarojen yli on sama jännite.
+Ensimmäinen on sarjaan ja toinen rinnan kytkettyjen vastusten kokonaisresistanssi $R_\text{kok}$, ja $\Sigma$ tarkoittaa summaa. Virtalaissa $I_\text{t}$ ovat haarautumispisteeseen tulevat ja $I_\text{l}$ siitä lähtevät virrat. Virtalaki pätee haarautumispisteelle, koska varaus säilyy. Jännitelaki pätee, kun silmukka kierretään kerran: potentiaali $V$ nousee lähteessä miinusnavalta plusnavalle ja laskee vastuksessa virran suuntaan $RI$:n verran. Siksi rinnakkaisten haarojen yli on sama jännite.
 
 ### Teho ja energia
 
 ```kaavat
 tehonkulutus johtimessa :: P = UI
-tehonkulutus resistanssin avulla :: P = RI^2 = \frac{U^2}{R}
-sähkölaitteen kuluttama energia :: E = Pt
+teho :: P = \frac{W}{\Delta t}
 ```
 
-missä $P$ on teho ($\text{W}$) ja $E$ ajassa $t$ muuttunut sähköenergia ($\text{J}$ tai $\text{kWh}$). Muoto $P = UI$ pätee kaikille komponenteille, Joulen lain muodot vain vastukselle. Sarjassa suurempi resistanssi saa suuremman tehon, rinnan pienempi. Energian yksiköt muunnetaan sijoittamalla: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Kun samassa tehtävässä on myös lähdejännite $E$, energialle käytetään kirjainta $W$.
+missä $P$ on teho ($\text{W}$) ja $W$ ajassa $\Delta t$ muuttunut sähköenergia ($\text{J}$ tai $\text{kWh}$). Muoto $P = UI$ pätee kaikille komponenteille. Vastuksen tehon voi laskea myös pelkästä virrasta tai pelkästä jännitteestä, kun tehoon sijoitetaan Ohmin laki (Johda itse alla). Sarjassa suurempi resistanssi saa suuremman tehon, rinnan pienempi. Energian yksiköt muunnetaan sijoittamalla: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Energialle käytetään kirjainta $W$, koska $E$ tarkoittaa lähdejännitettä.
+
+```johda
+Johda vastuksen teho $P$ virran $I$ avulla ja jännitteen $U$ avulla.
+---
+Teho on $P = UI$, ja vastuksen jännite on Ohmin lain mukaan $U = RI$. Sijoitetaan jännite tehoon:
+
+$$P = UI = RI \cdot I = RI^2$$
+
+Ohmin laista virta on $I = \tfrac{U}{R}$. Sijoitetaan virta tehoon:
+
+$$P = UI = U \cdot \frac{U}{R} = \frac{U^2}{R}$$
+
+Muodot pätevät vain vastukselle, jolle Ohmin laki pätee.
+```
 
 ### Paristo ja akku
 
-```kaavat
-jännitelähteen napajännite :: U = E - R_\text{s} I
-virta suljetussa virtapiirissä :: I = \frac{E}{R + R_\text{s}}
-akun varaus :: Q = It
+Paristoa kuvataan mallilla, jossa lähdejännite $E$ ($\text{V}$) ja sisäinen resistanssi $R_\text{s}$ ($\Omega$) ovat sarjassa. Kun paristosta kulkee virta $I$, osa lähdejännitteestä kuluu pariston sisällä, joten napajännite $U$ ($\text{V}$) eli napojen välinen jännite on lähdejännitettä pienempi. Ulkoisen piirin resistanssi on $R$ ($\Omega$).
+
+<svg data-fig="piiri" viewBox="0 0 600 330" role="img" aria-label="Kytkentäkaavio, ei lukuarvoja. Vasemmalla katkoviivalaatikko, paristo. Sen sisällä on sarjassa lähdejännite E, piirretty jännitelähteen merkillä, ja sisäinen resistanssi R s, piirretty vastuksena. Laatikon oikeassa reunassa ovat pariston navat, plusnapa ylhäällä ja miinusnapa alhaalla, ja niiden välissä napajännite U. Napoihin on kytketty ulkoinen vastus R. Violetti virta I kulkee plusnavasta vastuksen R kautta takaisin miinusnapaan." style="max-width:100%;font-size:24px">
+  <rect x="50" y="28" width="260" height="254" rx="12" fill="none" stroke="#6b7480" stroke-width="2.5" stroke-dasharray="9 7"/>
+  <foreignObject x="64" y="251" width="74" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:18px;color:#6b7480">$\text{paristo}$</div></foreignObject>
+  <polyline points="150,130 150,60 310,60 470,60 470,140" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="470,220 470,260 310,260 150,260 150,240" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="124" y1="142" x2="176" y2="142" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
+  <line x1="137" y1="158" x2="163" y2="158" stroke="#1f2933" stroke-width="7" stroke-linecap="butt"/>
+  <foreignObject x="184" y="121" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$+$</div></foreignObject>
+  <foreignObject x="96" y="135.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$E$</div></foreignObject>
+  <rect x="138" y="177" width="24" height="56" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="91" y="190.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$R_\text{s}$</div></foreignObject>
+  <circle cx="310" cy="60" r="6" fill="#1f2933"/>
+  <circle cx="310" cy="260" r="6" fill="#1f2933"/>
+  <foreignObject x="324" y="71" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$+$</div></foreignObject>
+  <foreignObject x="324" y="223" width="19" height="26" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:22px">$-$</div></foreignObject>
+  <line x1="280" y1="246" x2="280" y2="85" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M280,74 L285.5,86 L274.5,86 Z" fill="#6b7480" stroke-linejoin="round"/>
+  <foreignObject x="248" y="145.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$U$</div></foreignObject>
+  <rect x="458" y="140" width="24" height="80" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <foreignObject x="494" y="165.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$R$</div></foreignObject>
+  <path d="M400,60 L380,52 L380,68 Z" fill="#7048e8" stroke-linejoin="round"/>
+  <foreignObject x="380" y="19.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#7048e8">$I$</div></foreignObject>
+  <path d="M380,260 L400,252 L400,268 Z" fill="#7048e8" stroke-linejoin="round"/>
+</svg>
+
+```johda
+Pariston napoihin kytketään vastus $R$. Johda piirissä kulkeva virta $I$ ja pariston napajännite $U$.
+---
+Kierretään piiri kerran virran suuntaan Kirchhoffin 2. lailla. Potentiaali nousee lähteessä lähdejännitteen $E$ verran ja laskee sisäisessä resistanssissa $R_\text{s}I$ ja ulkoisessa vastuksessa $RI$:
+
+$$E - R_\text{s}I - RI = 0$$
+
+Ratkaistaan virta:
+
+$$I = \frac{E}{R + R_\text{s}}$$
+
+Napajännite on ulkoisen vastuksen jännite, eli lähdejännitteestä vähennetään sisäisen resistanssin jännitehäviö:
+
+$$U = RI = E - R_\text{s}I$$
 ```
 
-missä $E$ on lähdejännite ($\text{V}$), $R_\text{s}$ sisäinen resistanssi ($\Omega$), $U$ napajännite ($\text{V}$), $R$ ulkoisen piirin resistanssi ($\Omega$) ja $Q$ akun kapasiteetti ($\text{Ah}$ tai $\text{C}$). Malli olettaa, että $E$ ja $R_\text{s}$ pysyvät vakioina. Akun energia on $W = UQ$, missä $U$ on nimellisjännite, ja latauksessa napajännite on $U = E + R_\text{s} I$.
+```kaavat
+sähkövirta :: I = \frac{\Delta Q}{\Delta t}
+```
+
+missä $Q$ on akun kapasiteetti ($\text{Ah}$ tai $\text{C}$) eli varaus $\Delta Q$, jonka akku antaa ajassa $\Delta t$. Malli olettaa, että $E$ ja $R_\text{s}$ pysyvät vakioina. Akun energia on $W = UQ$, missä $U$ on nimellisjännite. Latauksessa virta kulkee akun läpi toiseen suuntaan, joten napajännite on lähdejännitettä suurempi.
 
 Pariston $(I, U)$-kuvaaja on laskeva suora. Se leikkaa pystyakselin lähdejännitteen $E$ kohdalla ja vaaka-akselin oikosulkuvirran $I_\text{k} = \tfrac{E}{R_\text{s}}$ kohdalla, ja sen kulmakerroin on $-R_\text{s}$.
 

@@ -1,8 +1,12 @@
 VERDICT: PASS
 CONTENT-HASH: d3680dc9c54e00c7
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at d3680dc9c54e00c7.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-9,8 m/s2 with a stated reason (0,46 s2 is a two-figure reading, uncertainty +-0,3) is a sound precision lesson, and the unit.md exact-quantity sentence matches. tasks.json accepts 9,8 or 9,81, consistent. Same physics and steps as fi in fi-easy (numbers match fi).
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Diff only: g answer now 9,8 with two significant figures justified by the read value 0,46 s^2; the unit text 'Vastauksen tarkkuus' now says exact quantities do not limit precision, consistent with that rule. Järkevyys still compares to 9,81 and the reading uncertainty.

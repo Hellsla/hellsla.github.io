@@ -1,8 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 1d8d8594c47d3b7a
+CONTENT-HASH: c909aa8d4fcf4b9e
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at ccddd23e0bb39d09.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-n, N, t_1, a named; P_lamp/P_source = R/(R + R_s) is a nice check; 436,8 Wh now used unrounded. Same physics and steps as fi in fi-easy (numbers match fi).
+## Polish
+(none)
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Diff only: t = N n t1 stated before substitution; series-battery formulas E1 = E/3, R_s1 = R_s/3; P/(EI) = R/(R+R_s); Pt = Q. Unit-conversion value 436,8 Wh made consistent with Sijoitus.

@@ -1,8 +1,12 @@
 VERDICT: PASS
 CONTENT-HASH: dffabae2d7e958c9
+Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at dffabae2d7e958c9.
 
-Delta review (solution practice, 2026-11-12) of the version passed before.
+## Blocking
+(none)
 
-Relative change solved as v'/v - 1 (L cancels), the thermal-expansion frequency change derived with its |dL| << L0 condition, Ohm's law step and the T = kz + T0 symbols are good exam practice; the new steps do not lengthen the chain much. Same physics and steps as fi in fi-easy (numbers match fi).
+## Polish
+- solutions.md fy9-harjoituskoe lämpölaajeneminen: `\Delta f/f_0` uses f_0 without defining it (the earlier part names f_1); write f_1 or say 'alkuperäinen taajuus'.
 
-Checked: diff since 761b6673, symbols defined, solved expression equals Sijoitus, answers.py output, tasks.json answer/criteria, cross-language number match.
+## Checked
+Diff only: derivations (epsilon = v'/v - 1, Ohm's law step, b = a m_j, k = 4pi^2/a) are short, staged and read as the symbolic step before substitution; no duplicated derivation. Level suits a practice exam.
