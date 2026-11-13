@@ -1,15 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: d14d9ed03047d517
+CONTENT-HASH: 5516d2430f384ce9
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- [Minor] lesson.md (paragraph beginning "Siirtymä $\Delta x$ ja kuljettu matka $s$ ovat eri asioita") — about 120 words with several ideas, dense for S2 readers — split after "Esimerkki on ylös heitetty pallo." if the teacher wants it lighter.
-
-## Checked
-- Delta review (editorial correction round, light, teacher 2026-11-07). Opened theory-1280-2 and stage-selita-390-3/-4 (390 px montage): new derivation with \Delta x, \Sigma F_x, \Delta E_\text{k} renders without error, the aligned chain keeps its rows, inline formulas stay on one line, no overflow.
-- Plain Finnish: new sentences short and concrete, terms as in the glossary; mathematical typography: \cdot, colon for division, decimal comma, units upright in inline LaTeX; no plain-text quantity in the changed text.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+1. Scope: MAFY-form symbols ( = Fs$, {\text{k}0} + W = E_\text{k}$, {\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$) in the fy4-8 lesson (fi-easy). Rendered at 390 and 1280 px (solutions open): formula tables show the MAFY name over/beside the formula, subscripts k, p, 0 upright, no overflow (scrollWidth = viewport), the energy-bar figure and scale figure carry {\text{p}0}$, {\text{k}0}$, $, \text{k}$ without clipping, the simulation labels ({\text{mech}0}$, $) read well. No leftover old symbols (W_muut, F_parallel, index 1/2 on energies) found in source.
+2. Minor: the text keeps $ (weight's work) beside $ (other forces); it is explained in place, so acceptable.

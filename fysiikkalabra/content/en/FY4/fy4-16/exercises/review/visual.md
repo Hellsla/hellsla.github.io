@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e255c42352d18799
+CONTENT-HASH: b51853db61eb872f
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
-
-## Checked
-- Delta of exercises.json and solutions.md (wording: undisturbed wind through the swept area; added safety remark in fy4-16 solution). Opened fy4-16-open-exercises-L3-1280-4 (solutions layout, aligned blocks). All quantities with units are inline LaTeX with the correct decimal sign, chains stay short or aligned, no clipping or overflow; language fluent and consistent with the lesson wording.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+1. Scope: MAFY-form symbols ( = Fs$, {\text{k}0} + W = E_\text{k}$, {\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$) in the fy4-16 exercise set (en). Rendered at 390 and 1280 px (solutions open): formula tables show the MAFY name over/beside the formula, subscripts k, p, 0 upright, no overflow (scrollWidth = viewport), the energy-bar figure and scale figure carry {\text{p}0}$, {\text{k}0}$, $, \text{k}$ without clipping, the simulation labels ({\text{mech}0}$, $) read well. No leftover old symbols (W_muut, F_parallel, index 1/2 on energies) found in source.
+2. Minor: the text keeps $ (weight's work) beside $ (other forces); it is explained in place, so acceptable.
