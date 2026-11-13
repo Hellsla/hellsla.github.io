@@ -171,6 +171,22 @@ with sync_playwright() as pw:
                 li.locator(".pad").scroll_into_view_if_needed()
                 shot = ROOT / "preview" / "writepad"; shot.mkdir(parents=True, exist_ok=True)
                 li.screenshot(path=str(shot / f"{page.replace('/', '_')}-{w}.png"))
+        if page.split("/")[-1] == "fy1-1.html":   # fi, en and fi-easy
+            # the toolbar's own box, ten openings in a row at 360 px (CI 2026-11-13: it sometimes ran past the window, 455 px wide rows
+            # inside it; the box is fixed to the window or, if a size container becomes its containing block, to that column)
+            bad = []
+            for k in range(10):
+                tp = ctx.new_page(); tp.set_viewport_size({"width": 360, "height": 800}); tp.goto(BASE + page); tp.wait_for_load_state("load")
+                tp.evaluate("document.querySelectorAll('#exercises details.level').forEach(d => { d.open = true; })")
+                l0 = tp.locator("#exercises li[id]:has(> .task)").first
+                l0.locator(".pad-open").scroll_into_view_if_needed(); l0.locator(".pad-open").click()
+                l0.locator(".rich-text-editor").wait_for(timeout=20000); tp.keyboard.type("x"); tp.wait_for_timeout(300)
+                r = tp.evaluate("""() => { const t = document.querySelector('.rich-text-editor-toolbar-root > div'), b = t && t.getBoundingClientRect();
+                    return { scroll: document.documentElement.scrollWidth - innerWidth, toolbar: !!t, left: b && Math.round(b.left), right: b && Math.round(b.right), width: b && Math.round(b.width),
+                             pos: t && getComputedStyle(t).position, parent: t && t.parentElement.className }; }""")
+                if not (r["toolbar"] and r["scroll"] <= 0 and r["left"] >= 0 and r["right"] <= 360): bad.append((k, r))
+                tp.close()
+            expect(f"{page} 360 px: the editor's toolbar box stays inside the window and the page does not scroll sideways, ten openings in a row", not bad, bad)
         expect(f"{page}: no script errors", not errs, errs)
         ctx.close()
     for page in sorted(p.relative_to(SITE).as_posix() for p in SITE.glob("**/*-sovella.html")):
