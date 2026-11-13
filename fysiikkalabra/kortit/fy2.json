@@ -777,6 +777,32 @@
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Kestävä kulutus",
    "maaritelma": "Energiaa käytetään tarpeisiin tehokkaasti ja ympäristövaikutuksia pyritään vähentämään."
+  },
+  {
+   "id": "fy2-lampoenergia",
+   "moduuli": "FY2",
+   "luku": "fy2-2",
+   "aihe": "fy2-energialajit",
+   "kasite": "Lämpöenergia",
+   "maaritelma": "Aineen hiukkasten satunnaiseen liikkeeseen liittyvä energia, johon osa energiasta muuttuu jokaisessa muuntumisen vaiheessa."
+  },
+  {
+   "id": "fy2-etuliite",
+   "moduuli": "FY2",
+   "luku": "fy2-2",
+   "aihe": "fy2-energialajit",
+   "kasite": "Etuliite",
+   "maaritelma": "Yksikön eteen kirjoitettava kerroin; kilo, mega, giga ja tera ovat kukin tuhatkertaisia edelliseen verrattuna."
+  },
+  {
+   "id": "fy2-megajoule",
+   "moduuli": "FY2",
+   "luku": "fy2-2",
+   "aihe": "fy2-energialajit",
+   "kasite": "Megajoule",
+   "maaritelma": "Energian kerrannaisyksikkö, joka on miljoona joulea.",
+   "kaava": "1\\,\\text{MJ} = 1000\\,\\text{kJ} = 10^{6}\\,\\text{J}",
+   "kaava_puhe": "yksi megajoule on tuhat kilojoulea eli 10 potenssiin 6 joulea"
   }
  ]
 }

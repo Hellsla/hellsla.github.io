@@ -837,6 +837,52 @@
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Climate change",
    "maaritelma": "The long-term warming of the Earth changes the energy balance, glaciers, oceans and other parts of the climate system."
+  },
+  {
+   "id": "fy3-energiaketju",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Energy chain",
+   "maaritelma": "The series of steps in which energy is converted, for example from fuel to electricity; the efficiency of the chain is the product of the efficiencies of the steps.",
+   "kaava": "\\eta = \\eta_1\\,\\eta_2\\,\\eta_3",
+   "kaava_puhe": "eta equals eta one times eta two times eta three"
+  },
+  {
+   "id": "fy3-lauhdevoimalaitos",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Condensing power plant",
+   "maaritelma": "A thermal power plant that produces only electricity, with an efficiency of electricity production of about $40\\,\\%$."
+  },
+  {
+   "id": "fy3-lauhdutin",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Condenser",
+   "maaritelma": "The device in which steam from the turbine condenses back into water and gives off heat to the cooling water.",
+   "kaava": "P_\\text{L} = c\\,q_m\\,\\Delta T",
+   "kaava_puhe": "P L equals c times q m times delta T"
+  },
+  {
+   "id": "fy3-yhteistuotanto",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Combined heat and power production",
+   "maaritelma": "Producing electricity and heat in the same plant so that the heat of the condenser is led into the district heating network."
+  },
+  {
+   "id": "fy3-kokonaishyotysuhde",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Overall efficiency",
+   "maaritelma": "The ratio of the sum of the electric power and district heating power of a combined heat and power plant to the fuel power.",
+   "kaava": "\\eta_\\text{tot} = \\dfrac{P_\\text{s} + P_\\text{k}}{P_\\text{o}}",
+   "kaava_puhe": "eta tot equals P s plus P k divided by P o"
   }
  ]
 }
