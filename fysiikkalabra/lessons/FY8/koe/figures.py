@@ -34,18 +34,19 @@ dU2 = 0.05
 
 
 def leds():
-    f = Fig("fy8-k2-graph", 440, "Kuvaaja: LEDin kynnysjännite $U_\\text{k}$ voltteina valon taajuuden $f$ funktiona, taajuus yksikössä $10^{14}$ hertsiä. "
+    f = Fig("fy8-k2-graph", 560, "Kuvaaja: LEDin kynnysjännite $U_\\text{k}$ voltteina valon taajuuden $f$ funktiona, taajuus yksikössä $10^{14}$ hertsiä. "
             "Viisi mittauspistettä taajuuksilla 4,8, 5,1, 5,7, 6,4 ja 7,0 kymmenen potenssiin 14 hertsiä, kullakin pystysuora virhepalkki plus miinus 0,05 volttia. "
-            "Pisteet ovat nousevalla suoralla, joka jatkuu katkoviivana alaspäin ja leikkaa vaaka-akselin noin taajuudella 2,6 kymmenen potenssiin 14 hertsiä. "
+            "Pisteet ovat nousevalla suoralla, joka jatkuu katkoviivana alaspäin ja leikkaa vaaka-akselin lähellä origoa, noin taajuudella 0,26 kymmenen potenssiin 14 hertsiä. "
             "Suoran kulmakerroin luetaan pisteistä 5,0 ja 2,02 volttia sekä 6,8 ja 2,78 volttia.")
-    ax = Axes(f, (90, 390), (430, 70), x=(0, 8), y=(0, 3.5), xticks=list(range(1, 9)), yticks=[0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5],
+    ax = Axes(f, (90, 510), (430, 70), x=(0, 8), y=(0, 3.5), xticks=list(range(1, 9)), yticks=[0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5],
               xlabel=r"f\ (10^{14}\,\text{Hz})", ylabel=r"U_\text{k}\ (\text{V})")
     x0 = -B2 / S2
     ax.line([(x0, 0), (4.5, S2 * 4.5 + B2)], MUTED, 2.5, dash="8 6")
     ax.line([(4.5, S2 * 4.5 + B2), (7.3, S2 * 7.3 + B2)], INK, 3)
     for a, b in zip(F2, UK2):
-        ax.line([(a, b - dU2), (a, b + dU2)], COLD, 2)
-        ax.point(a, b, COLD, 5.5)
+        ax.line([(a, b - dU2), (a, b + dU2)], COLD, 2.5)
+        for yy in (b - dU2, b + dU2): f.line(ax.X(a) - 7, ax.Y(yy), ax.X(a) + 7, ax.Y(yy), COLD, 2.5)
+        ax.point(a, b, COLD, 3.5)
     ax.guide(5.0, S2 * 5.0 + B2); ax.guide(6.8, S2 * 6.8 + B2)
     f.tex(ax.X(2.6) + 22, ax.Y(0.6), r"\text{ekstrapolointi}", "start", MUTED, size=20, bg=True)
     f.tex(ax.X(6.8) + 8, ax.Y(S2 * 6.8 + B2) + 26, r"(6{,}8;\ 2{,}78)", "start", INK, size=20, bg=True)
@@ -64,7 +65,7 @@ N0_3 = math.exp(sum(math.log(v) for v in N3) / 8 - _s * sum(T3) / 8)
 def decay():
     f = Fig("fy8-k3-graph", 420, "Kuvaaja: laskettu hajoamisten lukumäärä $N$ 30 sekunnin aikana ajan $t$ funktiona minuutteina. Kahdeksan mittauspistettä "
             "pienenee 803:sta arvoon 88 ajanhetkillä 0–10 minuuttia ja ne ovat laskevalla, alaspäin kuperalla eksponenttikäyrällä. Katkoviivat osoittavat, "
-            "että käyrä on puolittunut alkuarvostaan 401 noin 3,2 minuutin kohdalla.")
+            "että käyrä on puolittunut alkuarvostaan arvoon noin 400 3,2 minuutin kohdalla.")
     ax = Axes(f, (90, 380), (470, 70), x=(0, 10), y=(0, 900), xticks=list(range(1, 11)), yticks=[100 * i for i in range(1, 10)],
               xlabel=r"t\ (\text{min})", ylabel=r"N")
     ax.curve(lambda t: N0_3 * math.exp(-LAM3 * t), 0, 10.2, INK, 3)
