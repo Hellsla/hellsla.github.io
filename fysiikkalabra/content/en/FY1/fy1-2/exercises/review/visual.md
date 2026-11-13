@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 61f5aabd12ab2d28
+CONTENT-HASH: 1eceddd9c27ef416
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md fy1-2-L1-10 Answer — the line under the boxed answer starts as a fragment ("To four significant figures, because both data ... have four significant figures.") — write "The answer is given to four significant figures, because both data (...) have four significant figures."
+- [Minor] solutions.md fy1-2-L1-10 Answer — the line under the boxed answer still opens with a fragment ("To three significant figures.") — write "The answer is given to three significant figures."
 
 ## Checked
-- fy1-2-open-exercises-1280-9 (task 2-10: text now reads as separate sentences, $t = \tfrac{s}{c}$ renders, hint, answer box "t ≈ 1.282 s", Given/Asked start)
-- fy1-2-open-exercises-1280-10 (solution: Principle, Formula, Conversions, Substitution rows aligned at "=", boxed Answer 1.282 s, significant-figure justification, Reasonableness)
-- Diff read for exercises.json and solutions.md; the round 2 Major (broken sentence) is fixed; significant figures agree across the answer line, substitution and answer text.
+- fy1-2-open-exercises-1280-9 (task 2-10 with hint open: text, $t = \tfrac{s}{c}$, answer box "t ≈ 1.28 s", Given/Asked start)
+- fy1-2-open-exercises-1280-10 (solution: Principle, Formula, Conversions, Substitution rows aligned at "=" with 1.282 s then ≈ 1.28 s, boxed Answer 1.28 s, three-significant-figure justification, Reasonableness)
+- Diff read for exercises.json and solutions.md; significant figures agree across the answer line, substitution row, boxed answer and the task's answer box; layout survived.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4
