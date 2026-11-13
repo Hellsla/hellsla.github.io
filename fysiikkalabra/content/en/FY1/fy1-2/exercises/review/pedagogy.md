@@ -1,14 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: 6e469b6befc9ac40
-SCOPE: delta added-exercise from d7be126d63bbf8b3 base 81db4a6fd727
+VERDICT: FAIL
+CONTENT-HASH: 5e975748c76234a9
 
 ## Blocking
-- none
+- exercises.json fy1-2-L1-10 text — the round-1 reorder left a broken sentence: "...in the MAFY table (mafytaulukot.fi) and The travel time is $t = \tfrac{s}{c}$, and the distance is converted to metres first." (dangling "and", capital T) — fix: "...in the MAFY table (mafytaulukot.fi). The travel time is $t = \tfrac{s}{c}$, and the distance is converted to metres first. Calculate how long the signal takes to travel that distance."
 
 ## Polish
-- fy1-2-L1-10 is close to fy1-1-L1-07 (Moon light time) across lessons; it adds unit conversion km to m, so acceptable.
+- none
 
 ## Checked
-- Added exercise judged: level 1, wording (situation then question), table lookup is needed and stated, step-by-step solution, arithmetic verified.
-- Fit within the set of 22: progression, kinds and no repeat of the worked example.
-- Phone/language: nothing in the added text that clips; English reads plainly.
+- Question now last as its own sentence (the intent of the change is right); only the join above is broken.
+- solutions.md L1-10 Answer: 1.28 s to three significant figures, justified by four-figure data; arithmetic 3.844e8/2.998e8 = 1.28 verified; consistent with the answer field 1.28.
+- Rest of the set unchanged since the pass.
