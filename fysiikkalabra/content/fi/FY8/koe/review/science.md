@@ -1,26 +1,29 @@
 VERDICT: FAIL
-CONTENT-HASH: fcb044feb02ea296
+CONTENT-HASH: f88ddf35762aaa28
 
 ## Blocking
-1. **(A) fy8-k1 d, Perustelu.** The text says the distractor $2{,}0$ comes from energies proportional to $n$. That model gives $1$ ($E \propto 1/n$ gives $3$). No simple model gives $2{,}0$. Give the distractor a real origin, or change it and its feedback to match one (for example $3{,}0$ from $1/n$).
-2. **(A) fy8-k2 c, solution and rubric.** The task asks for the steepest and the shallowest lines that stay inside the error bars. The solution draws them through the two end bars only. Its steep line, $(4{,}80;\,1{,}86) \to (6{,}97;\,2{,}89)$, gives $1{,}995\,\text{V}$ at $5{,}08 \cdot 10^{14}\,\text{Hz}$, below that bar's $2{,}02$–$2{,}12\,\text{V}$. Its shallow line gives $2{,}564\,\text{V}$ at $6{,}38 \cdot 10^{14}\,\text{Hz}$, below that bar's $2{,}57\,\text{V}$. A search over lines through all five bars gives $h_\text{max} \approx 7{,}4$, $h_\text{min} \approx 6{,}2$ and $\Delta h \approx 0{,}6 \cdot 10^{-34}\,\text{J}\,\text{s}$. The solution and rubric give $7{,}6$, $6{,}1$ and $0{,}7$. Either recompute the lines, values and answer, or reword the task to use the end-point bars only. The conclusion (the known value is inside the range) still holds.
-3. **(A) fy8-k2 d, model answer and rubric.** The fitted line meets the $U$ axis at about $-0{,}11\,\text{V}$, so the points sit below $hf/e$. Needing a slightly higher voltage before the eye sees light moves the points up, not down. So it is not "saman suuntainen virhe". The eye's sensitivity also changes with colour, so this error need not keep the slope. Correct the sentence, and in the rubric credit the eye-threshold source only when its direction is stated correctly.
+1. **(A) fy8-k1 g, Perustelu and Yleisiä virheitä.** The options are $12{,}8$, $16$, $20$ and $32\,\text{h}$. The solution explains a distractor of $7{,}8\,\text{h}$ ("lineaarinen päättely"), which is not an option. It never explains $12{,}8\,\text{h}$, which comes from $3{,}2 \cdot 4{,}0$. A stray fragment also follows: "… vakiomäärän väheneminen. ja $32\,\text{h}$ syntyy …". The common-mistakes line "lasketaan puoliintumisaika lineaarisesti (g)" refers to no option. Make the options and the explanations match: either put $7{,}8\,\text{h}$ back as an option, or explain $12{,}8\,\text{h}$ by its real error.
+2. **(A) fy8-k1 h, Perustelu.** The options are $5 \cdot 10^{3}$, $5 \cdot 10^{5}$, $5 \cdot 10^{7}$ and $5 \cdot 10^{9}$. The solution explains $50$ and $5 \cdot 10^{4}$, which are not options, and leaves $5 \cdot 10^{3}$ and $5 \cdot 10^{5}$ unexplained. Each distractor needs a real error behind it, and the feedback must name it. For example, $5 \cdot 10^{5}$ comes from reading the energy as $2\,\text{MeV}$ or from losing two powers of ten.
+3. **(A) fy8-k7 c, Järkevyys.** The solution says $2{,}4\,\text{pm}$ is "noin tuhannesosa atomin koosta". An atom is about $0{,}1$–$0{,}3\,\text{nm}$, so the ratio is about $1/40$–$1/100$, not $1/1000$. Correct it, for example to "noin sadasosa atomin koosta" or "paljon atomia pienempi".
 
 ## Polish
-- fy8-k1 e: the squared-ratio error gives $3{,}96\,\text{V}$. The option should read $4{,}0\,\text{V}$, not $3{,}9\,\text{V}$.
-- fy8-k1 g: the solution does not show how "linear" reasoning gives $12{,}8\,\text{h}$. In h, dropping the MeV prefix gives $50$, which is not one of the options, so that sentence explains nothing.
-- fy8-k1 b: the figure's alt text says the line ends near $0{,}4\,\text{V}$. It ends at $0{,}24\,\text{V}$ (at $6{,}2 \cdot 10^{14}\,\text{Hz}$).
-- fy8-k5 a: the solution writes $6{,}57 \cdot 10^{-7}\,\text{m}$, but the value is $6{,}565 \cdot 10^{-7}\,\text{m}$, which the same line then gives as $656\,\text{nm}$.
-- fy8-k5 d: "aallonpituus sopii tilaan" uses the electron's wavelength, and the scope note says the de Broglie wavelength is not taught. Say "vain tietyt seisovat aallot mahtuvat atomiin".
-- fy8-k4 d: at $10^{8}\,\text{K}$, $kT \approx 9\,\text{keV}$, far below the Coulomb barrier ($\sim 0{,}4\,\text{MeV}$). The explanation "close enough by kinetic energy" is a fair simplification (C), but fusion actually needs tunnelling. Consider crediting it if a student mentions it.
-- fy8-k7 e rubric: `\\\\,\\\\text{TBq}` and `\\\\approx` are double-escaped and will render wrong.
-- fy8-k6 e Järkevyys: "pidempi mittausaika neljänkertaistaisi" should read "nelinkertainen mittausaika".
+- fy8-k2 c, Kuvaajan lukeminen: $(5{,}08;\ 2{,}02)$ is the lower end of the second bar (the $590\,\text{nm}$ point), not the third. The numbers are right.
+- fy8-k7 e: "saastuttaisi valmistuslaitoksen" is not a sound reason. A $\text{TBq}$-scale batch is a radiation-shielding and dose problem, not contamination. Say "vaatisi raskaan säteilysuojauksen" or drop it.
+- fy8-k4 d, third criterion: it largely repeats criteria 1 and 2 (assessment overlap, not physics).
 
 ## Checked
-- I recomputed every number in one script: k1 b, d, e, g, h and i; k2 frequencies, least-squares fit, read points, intercept and the extreme lines; k3 λ, $N(15)$ and $\sqrt N$; k4 binding energies, Q and J/kg; k5 a–c; k6 net rates, μ, $d_{1/2}$, $d$ and the uncertainty; k7 a–e. All match answers.py, apart from the items above.
-- Each choice item has exactly one correct option, and the physics of a, c, f, i and j is right.
-- k6 combines the inverse-square law with exponential shielding correctly. It uses the public dose limit of $1\,\text{mSv}$, and its assumptions (narrow beam, extrapolation) are stated.
-- In k7 the annihilation momentum argument and $m_\text{e}c^2$ are correct.
-- The exam stays within the FY8 central contents.
-- Section points add up: 20 + 2·15 + 20 = 70.
+- I recomputed every number in one script and compared it with answers.py and the solutions:
+  - k1: b ($f_0 = 5{,}61 \cdot 10^{14}\,\text{Hz}$, $W = 3{,}7 \cdot 10^{-19}\,\text{J} = 2{,}3\,\text{eV}$), d ($5{,}4$, distractors $3{,}0$ and $0{,}6$), e ($2{,}74$, $3{,}96$, $1{,}32\,\text{V}$), g ($20\,\text{h}$), h and i
+  - k2: frequencies, the read slope ($6{,}84 \cdot 10^{-34}$), the least-squares $h$ ($6{,}81 \cdot 10^{-34}$), the extreme lines through all five bars ($7{,}37$ and $6{,}18$, so $\Delta h = 0{,}60 \cdot 10^{-34}\,\text{J}\,\text{s}$), and the points sitting below $hf/e$ by $0{,}02$–$0{,}07\,\text{V}$
+  - k3: $\lambda$, $N(15) \approx 31$, $\sqrt{N}$ and the deviations
+  - k4: $28{,}30\,\text{MeV}$, $7{,}07\,\text{MeV}$, $17{,}59\,\text{MeV}$, $3{,}37 \cdot 10^{14}\,\text{J/kg}$
+  - k5: $656{,}5\,\text{nm}$, $121{,}6\,\text{nm}$, $2{,}80\,\text{eV}$
+  - k6: $\mu = 0{,}114\,\text{mm}^{-1}$, $d_{1/2} = 6{,}1\,\text{mm}$, $d = 31{,}4\,\text{mm}$, $3{,}9\,\%$
+  - k7: $0{,}321$, $1540\,\text{MBq}$, $511\,\text{keV}$, $2{,}43\,\text{pm}$, $5{,}32\,\text{mSv}$, $\text{C-11}$ $0{,}0022$ and $2{,}7\,\text{TBq}$
+- All of round 1's blocking items are fixed: k1 d distractor origins, the k2 c extreme lines, and the direction in k2 d with a colour-dependent error affecting the slope.
+- All of round 1's polish items are fixed except g and h, whose rewrite caused blocking items 1 and 2.
+- Each choice item has exactly one correct option. The physics of a, c, f, i and j is right. The figure fy8-k1-stop and its alt text match the data ($0{,}24\,\text{V}$ at $6{,}2 \cdot 10^{14}\,\text{Hz}$).
+- The binding-energy and fusion explanation is right, and tunnelling is credited in Hyväksytään myös. The k5 d standing-wave wording keeps out of de Broglie.
+- k6 combines the inverse-square law with exponential shielding and the public limit of $1\,\text{mSv}$. Its assumptions are stated.
+- The exam stays within the FY8 scope. The points add up: $20 + 2 \cdot 15 + 20 = 70$.
 - The content hash was the same at the start and the end.
