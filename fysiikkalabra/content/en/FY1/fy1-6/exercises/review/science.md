@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 3e9eeb5830f9cef2
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: eca909dafc4a2318
+SCOPE: delta added-exercise from 0c444b9a373a531a base 81db4a6fd727
 
 ## Blocking
 - none
@@ -9,9 +9,9 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- L1 Mars: "ilmanvastus jätetään huomiotta" states the model condition; 3,71 · 6,0 = 22 m/s unchanged
-- L2-08 reason feedback "Maa myös vetää sitä heikommin": correct (weight ∝ m, inertia ∝ m, a = g); the correct option and other feedback unchanged
-- planet B: readings at grid crossings; removal of the 3 % sentence leaves the tolerance in exercises.json unchanged
-- hammer/feather Kysytty now allows "same time": correct, not leading
-- Kaava lines: duplicate formula removed, no content change; answers.py unchanged
-- en: same changes as fi, meaning preserved
+- Added task fy1-6-L1-09 only; hash recomputed at start and end.
+- Table value: free-fall acceleration on the Moon 1.622 m/s^2 (about 1.62); correct.
+- Conditions for v = gt stated in the task: from rest, no air resistance; matches the FY1 linear model v = gt.
+- Independent recompute 4.866 m/s = answers.py; the shown 4.9 m/s is 0.7 % above it, within 4 %.
+- Two significant figures from t = 3.0 s; reasonableness via Earth's 29.4 m/s and the ratio 9.81/1.622 = 6.05 is right.
+- en numbers identical to the Finnish original.

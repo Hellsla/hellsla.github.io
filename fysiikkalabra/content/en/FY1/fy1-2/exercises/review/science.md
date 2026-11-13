@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 05cefb32bec1ef00
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 61f5aabd12ab2d28
+SCOPE: delta added-exercise from d7be126d63bbf8b3 base 81db4a6fd727
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- exercises/solutions.md fy1-2-L1-10 — the MAFY mean distance 384 400 km is centre to centre, while the signal goes from the Moon's surface to the Earth's; surface to surface gives 1.255 s (2 % less, inside the tolerance), so four significant figures overstate the precision — add "(centre-to-centre distance; the radii are small beside it)" or give 1.28 s.
 
 ## Checked
-- fy1-2-L3-02: question now asks for a ratio (how many times one screen width), so it no longer reads as a count of whole screens (675); answer 674.4, tolerance 0.02 unchanged; unit "" as in other ratio tasks.
-- Kysytty, Periaate, Vastaus describe the same ratio N; Järkevyys still fits.
-- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- Added task fy1-2-L1-10 only; hash recomputed at start and end.
+- Table value 384 400 km correct; c = 2.998·10^8 m/s given in the task.
+- t = s/c for a signal at constant speed c; km → m conversion right.
+- Independent recompute 1.28219 s = answers.py 1.282188; tolerance 4 % fits a table lookup.
+- Reasonableness check (4·10^8 m over 3·10^8 m/s, a little over 1 s) is real.
+- Inside FY1 scope (s = vt with c); en numbers identical to the Finnish original.
