@@ -323,7 +323,7 @@ def sum_grid():
 def incl_grid():
     """Task figure: Earth's field seen from the side as one arrow from the ground at the origin to the point 15 µT north
     and 50 µT down on a grid of 5 µT. The components are not drawn, B and I are not written."""
-    f = Fig("fy71-inclgrid", 340, "Kuvaaja mittakaavassa, sivulta nähtynä: vaakasuora maanpinta ja ruudukko, jonka ruutu on 5 µT. "
+    f = Fig("fy71-inclgrid", 372, "Kuvaaja mittakaavassa, sivulta nähtynä: vaakasuora maanpinta ja ruudukko, jonka ruutu on 5 µT. "
             "Vaaka-akseli on pohjoiseen ja pystyakseli alaspäin. Maanpinnan origosta lähtee yksi vihreä nuoli B, joka "
             "osoittaa viistosti alas pohjoiseen päin. Nuolen kärki on ruudukon pisteessä, jonka lukuarvot lukija "
             "lukee ruudukolta. Komponentteja ja kulmaa ei ole piirretty.")
@@ -339,8 +339,8 @@ def incl_grid():
         f.tex(x0 + t * k, y0 - 22, fi(t), "middle")
     for t in range(10, 51, 10):
         f.tex(x0 - 12, y0 + t * k, fi(t), "end")
-    f.tex(x0 + 40 * k + 14, y0 - 22, r"\text{pohjoinen}\ (\mu\text{T})", "start", w=150)
-    f.tex(x0 + 14, y0 + 55 * k + 18, r"\text{alas}\ (\mu\text{T})", "start", w=110)
+    f.tex(x0 + 40 * k + 48, y0 - 22, r"\text{pohjoinen}\ (\mu\text{T})", "start", w=150)
+    f.tex(x0 + 14, y0 + 55 * k + 22, r"\text{alas}\ (\mu\text{T})", "start", w=110)
     f.tex(x0 + 40 * k + 40, y0 + 18, r"\text{maanpinta}", "end", MUTED, w=130)
     f.arrow(x0, y0, x0 + 15 * k, y0 + 50 * k, FIELD, 5, 16)
     f.circle(x0, y0, 5, INK)

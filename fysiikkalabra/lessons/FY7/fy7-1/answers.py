@@ -41,4 +41,8 @@ a["fy7-1-L3-04"] = math.degrees(math.atan(20 / (52 * math.cos(rad(78)))))
 meas = [(12, 69), (14, 56), (16, 47), (20, 27), (24, 18), (30, 8)]
 k = sum(B_h * math.tan(rad(th)) * r**3 for r, th in meas) / len(meas)
 a["fy7-1-L3-05"] = (k / B_h) ** (1 / 3)
+# L2-08 (figure fy7-1/sum-grid): B_h = 15 µT north, B_m = 20 µT east read from the grid: B = 25,0 µT, θ = atan(B_m / B_h) = 53,1°
+a["fy7-1-L2-08"] = math.degrees(math.atan(20 / 15))
+# L2-09 (figure fy7-1/incl-grid): B_h = 15 µT, B_v = 50 µT read from the grid: B = sqrt(B_h² + B_v²) = 52,2 µT, I = atan(B_v / B_h) = 73,3°
+a["fy7-1-L2-09"] = math.hypot(15, 50)
 print(json.dumps(a))
