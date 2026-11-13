@@ -12,5 +12,6 @@
  " ja ": " and ",
  " rinnan": " in parallel",
  "Kytkentäkaavio: 12 voltin paristoon on kytketty 40 ohmin vastus R1 ja sen kanssa sarjaan kahden rinnakkaisen vastuksen ryhmä, jossa R2 on 60 ohmia ja R3 on 120 ohmia.": "Circuit diagram: a 12 volt battery is connected to a 40 ohm resistor R1, and in series with it a group of two parallel resistors, in which R2 is 60 ohms and R3 is 120 ohms.",
- "Kytkentäkaavio: 12 voltin paristoon on kytketty 20 ohmin vastus ja sen kanssa sarjaan kahden rinnakkaisen vastuksen ryhmä, jossa toinen vastus on 60 ohmia ja toinen 30 ohmia.": "Circuit diagram: a 12 volt battery is connected to a 20 ohm resistor, and in series with it a group of two parallel resistors, one of which is 60 ohms and the other 30 ohms."
+ "Kytkentäkaavio: 12 voltin paristoon on kytketty 20 ohmin vastus ja sen kanssa sarjaan kahden rinnakkaisen vastuksen ryhmä, jossa toinen vastus on 60 ohmia ja toinen 30 ohmia.": "Circuit diagram: a 12 volt battery is connected to a 20 ohm resistor, and in series with it a group of two parallel resistors, one of which is 60 ohms and the other 30 ohms.",
+ "Kytkentäkaavio: 9,0 voltin paristoon on kytketty rinnan kaksi vastusta, joista R1 on 30 ohmia ja R2 on 45 ohmia.": "Circuit diagram: a 9.0 volt battery is connected to two resistors in parallel, R1 of 30 ohms and R2 of 45 ohms."
 }

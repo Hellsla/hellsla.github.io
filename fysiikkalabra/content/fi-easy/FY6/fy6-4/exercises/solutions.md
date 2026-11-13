@@ -218,3 +218,14 @@ $R_\text{D} = 100\,\Omega + 165\,\Omega = 265\,\Omega$
 Kytkennässä E on yksi vastus, $R_\text{E} = 150\,\Omega$.
 
 Kokonaisresistanssin mukaan pienimmästä suurimpaan järjestys on C ($110\,\Omega$), B ($132\,\Omega$), E ($150\,\Omega$), D ($265\,\Omega$) ja A ($550\,\Omega$). Kytkennässä C on eniten vastuksia mutta pienin resistanssi, koska jokainen rinnakkainen haara on uusi kulkureitti virralle. Kytkennän B resistanssi on pienempi kuin yksittäisen $150\,\Omega$:n vastuksen, vaikka kumpikin sen vastuksista on suurempi kuin $150\,\Omega$. Jos rinnankytkennässä unohtaa kääntää luvun $\tfrac{1}{R}$, kytkennän B luku $0{,}0076\,\tfrac{1}{\Omega}$ ja kytkennän C luku $0{,}0091\,\tfrac{1}{\Omega}$ näyttävät pienimmiltä. Silloin B ja C vaihtavat paikkaa.
+
+## fy6-4-L2-09
+**Annettu:** kuvasta pariston jännite $U = 9{,}0\,\text{V}$ ja rinnan kytketyt vastukset $R_1 = 30\,\Omega$ ja $R_2 = 45\,\Omega$
+**Kysytty:** paristosta lähtevä kokonaisvirta $I$ milliampeereina
+**Periaate:** Vastukset ovat samojen kahden haarautumispisteen välissä, joten kummankin yli on pariston jännite $U$. Paristosta lähtevä virta on haaravirtojen summa. Sen saa myös korvaamalla rinnakkaiset vastukset yhdellä kokonaisresistanssilla $R$ ja käyttämällä Ohmin lakia.
+**Kuvan lukeminen:** Kuvasta luetaan arvot $9{,}0\,\text{V}$, $R_1 = 30\,\Omega$ ja $R_2 = 45\,\Omega$. Kumpikin vastus on omassa haarassaan. Haarat alkavat ja päättyvät samoihin pisteisiin, joten kytkentä on rinnankytkentä.
+**Kaava:** $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_2}$, eli $R = \dfrac{R_1 R_2}{R_1 + R_2}$, ja $I = \dfrac{U}{R}$
+**Muunnokset:** Ei tarvita laskun aikana. Lopuksi $1\,\text{A} = 1000\,\text{mA}$.
+**Sijoitus:** $R = \dfrac{30\,\Omega \cdot 45\,\Omega}{30\,\Omega + 45\,\Omega} = \dfrac{1350\,\Omega^2}{75\,\Omega} = 18\,\Omega$ ja $I = \dfrac{9{,}0\,\text{V}}{18\,\Omega} = 0{,}50\,\text{A} = 500\,\text{mA}$
+**Vastaus:** $500\,\text{mA}$, kaksi merkitsevää numeroa kuten jännitteessä $9{,}0\,\text{V}$.
+**Järkevyys:** Haaravirrat ovat $9{,}0\,\text{V} : 30\,\Omega = 0{,}30\,\text{A}$ ja $9{,}0\,\text{V} : 45\,\Omega = 0{,}20\,\text{A}$, yhteensä $0{,}50\,\text{A}$. Kokonaisresistanssi $18\,\Omega$ on pienempi kuin pienempi vastus $30\,\Omega$, kuten rinnankytkennässä pitää.

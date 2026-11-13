@@ -218,3 +218,14 @@ $R_\text{D} = 100\,\Omega + 165\,\Omega = 265\,\Omega$
 Circuit E has one resistor, $R_\text{E} = 150\,\Omega$.
 
 From the smallest to the largest total resistance the order is C ($110\,\Omega$), B ($132\,\Omega$), E ($150\,\Omega$), D ($265\,\Omega$) and A ($550\,\Omega$). Circuit C has the most resistors but the smallest resistance, because each parallel branch is a new path for the current. The resistance of circuit B is smaller than that of a single $150\,\Omega$ resistor, although both of its resistors are larger than $150\,\Omega$. If one forgets to invert the number $\tfrac{1}{R}$ in a parallel connection, the number of circuit B, $0.0076\,\tfrac{1}{\Omega}$, and that of circuit C, $0.0091\,\tfrac{1}{\Omega}$, look the smallest, and B and C change places.
+
+## fy6-4-L2-09
+**Given:** from the figure, battery voltage $U = 9.0\,\text{V}$ and resistors in parallel $R_1 = 30\,\Omega$ and $R_2 = 45\,\Omega$
+**Find:** the total current $I$ leaving the battery in milliamperes
+**Principle:** The resistors are between the same two branching points, so the battery voltage $U$ is across both. The current leaving the battery is the sum of the branch currents. It can also be found by replacing the parallel resistors with one total resistance $R$ and using Ohm's law.
+**Reading the figure:** From the figure we read the values $9.0\,\text{V}$, $R_1 = 30\,\Omega$ and $R_2 = 45\,\Omega$. Each resistor is in its own branch, and the branches start and end at the same points, so the connection is a parallel connection.
+**Formula:** $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_2}$, that is, $R = \dfrac{R_1 R_2}{R_1 + R_2}$, and $I = \dfrac{U}{R}$
+**Conversions:** Not needed during the calculation. At the end $1\,\text{A} = 1000\,\text{mA}$.
+**Substitution:** $R = \dfrac{30\,\Omega \cdot 45\,\Omega}{30\,\Omega + 45\,\Omega} = \dfrac{1350\,\Omega^2}{75\,\Omega} = 18\,\Omega$ and $I = \dfrac{9.0\,\text{V}}{18\,\Omega} = 0.50\,\text{A} = 500\,\text{mA}$
+**Answer:** $500\,\text{mA}$, two significant figures like the voltage $9.0\,\text{V}$.
+**Reasonableness:** The branch currents are $9.0\,\text{V} : 30\,\Omega = 0.30\,\text{A}$ and $9.0\,\text{V} : 45\,\Omega = 0.20\,\text{A}$, together $0.50\,\text{A}$. The total resistance $18\,\Omega$ is smaller than the smaller resistor $30\,\Omega$, as it must be in a parallel connection.
