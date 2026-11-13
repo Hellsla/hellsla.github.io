@@ -1,20 +1,25 @@
 VERDICT: PASS
-CONTENT-HASH: 0907b18528ce64eb
+CONTENT-HASH: 8c38f079e02d9c6d
 
 ## Blocking
 None.
 
 ## Polish
-- k5 d: criterion 3 still overlaps criterion 2 (both accept "seisova aalto sallii vain tietyt energiat"), so one idea can earn two points. Make criterion 3 only the position-velocity limit or another distinct idea (for example that the orbital's shape follows from the wave).
-- Osa 1 has no cosmology (fy8-16) item and little on biological effects (fy8-12/14); the goal "alkeishiukkasista kosmologiaan" rests on j and k7 c. Optional: swap one calculation item (h or e) for a concept item.
-- Workload: k2 and k6 are each 25-30 min; tight but feasible for 120 min with Osa 1. Spreadsheet use is allowed in the intro.
+1. Osa 1 test-wiseness: in items c, f, i and j the correct option is the longest and most specific (item i also the only one with numbers), so a student can guess it. Shorten it or lengthen the distractors. The correct-answer positions are well spread (2/3/3/2).
+2. k1-g: the distractor 7,8 h comes from an unnatural "linear halving" step and is unlikely to be a real student error. A more common one is 3,2/0,1 = 32 h, which is already there, or 5 + 4 h. Consider replacing 7,8 h.
+3. k6-a/b: the table gives gross rates, and only part a asks for one net value. Part b says "nettopulssinopeus" without telling the student to subtract the background from every point. The solution does so. Add "kaikille mittauksille" to part a or b so the unfamiliar step is explicit and a student who skips it is not penalised silently.
+4. k6-d: the model applies the Geiger count attenuation to the dose rate and assumes a point source. Part e's rubric names only the narrow-beam assumption. Add "pulssinopeuden vaimeneminen vastaa annosnopeuden vaimenemista" to the `assumptions` detail.
+5. Workload: k2 (graph with error bars, fit, slope, extreme lines, explanation) and k6 (five parts with ln graph) are heavy for about 30 to 35 minutes each. The 120 minutes is feasible but tight. Keep the arithmetic light and do not add parts.
+6. k2-d: the model answer's second half (intercept versus point offsets, eye sensitivity) is long and slightly circular for a 2 p part. Shorten the solution to the systematic offset and its direction.
+7. k3-b: the tolerance 0,06 min (about 2 %) is narrower than a hand-read graph can give. The rubric accepts about 3,2 min, so this only affects the automatic check. Consider widening it.
 
 ## Checked
-- Structure 20 + 2x15 + 1x20 = 70 p; the choose rules are stated; the Osa 3 tasks differ in kind (experimental data and shielding design versus a PET logistics and dose judgement).
-- Osa 1: items test understanding; the distractors are real errors (the intensity-energy mix-up, the Bohr levels, 1/n and n^2, linear decay, powers of ten, the weighting factor). Item types vary.
-- Osa 2 meets the guideline: graph from data (k2, k3), explanation (k4 d, k5 d), measurement uncertainty (k2 c, k3 d), main models. Any two choices still cover the core.
-- Osa 3: no part names the model (ln R graph, inverse-square law, annihilation momentum); the first part is accessible; both tasks end in evaluation (k6 e margin and extrapolation, k7 d and e choice of nuclide with assumption). Sources are marked as examples or cited.
-- Earlier polish items are fixed: k2 d now says a source with the wrong direction earns at most 1 p; k7 a/b give the 4,5 h total time and the 3,0 h transport time explicitly; the k5 d criteria are distinct apart from the point above.
-- Rubric points sum per part; the numbers in the criteria match the answers.py output (h = 6,8e-34, 31 mm, 5,3 mSv, 17,59 MeV).
-- Finnish is natural, with decimal commas and LaTeX. The Yleisiä virheitä in the solutions are real.
-- I skimmed the solutions rather than reading them line by line.
+- Structure fits the guideline: 10 choice items (20 p), four 15 p tasks (answer two), two 20 p tasks (answer one), maximum 70 p. Part points sum to 15 and 20: k2 5+4+4+2, k3 5+3+4+3, k4 3+4+4+4, k5 4+4+4+3, k6 3+5+4+4+4, k7 3+4+5+4+4.
+- Osa 2 as a set offers a graph from data (k2, k3), uncertainty (k2, k3), explanation (k4d, k5d) and the main quantitative models. Any two chosen cover the core.
+- Osa 3 tasks differ in kind: k6 is experimental and data-driven, k7 a technological and societal judgement with numbers. Each starts accessibly (3 p), needs unnamed models (inverse-square law, attenuation, decay) and ends in evaluation (extrapolation and margin, F-18 versus C-11).
+- No demanding part names its formula. Unfamiliar situations are authentic. Constants and data are given. Sources are marked `source: example`, with STUK-A263 (2020) named.
+- Distractors are real errors: the fy8-k1-stop figure is needed for b and its description does not give the answer; the prefix errors (g, h), the inverse and squared ratios (d, e), and J versus eV (b) are all explained in the solutions.
+- Rubrics are specific and award method, reasoning, result with unit and interpretation, with a propagated error losing points once. They give no points for irrelevant things, and alternative methods (ln N, spreadsheet fit, least squares) are accepted.
+- Worked solutions follow the seven-step form with the principle stated. Spot-checked numbers agree with answers.py (28,3 MeV, 17,59 MeV, 656 nm, 31 mm, 1540 MBq, 5,32 mSv, h in k2).
+- Common mistakes are real and specific. Finnish is clear.
+- Topic coverage and translations were decided by the teacher and are not judged. The hash is unchanged at the end of the review.
