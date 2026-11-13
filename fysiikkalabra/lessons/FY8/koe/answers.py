@@ -20,9 +20,10 @@ F1 = [6.5e14, 7.5e14, 8.5e14, 9.5e14]              # Hz, the four measured frequ
 US1 = [round((h * f - W_J) / e, 2) for f in F1]    # V, stopping voltages
 f0 = W_J / h
 out["k1-b"] = {"US": US1, "f0_Hz": f0, "W_J": h * 5.6e14, "W_eV": round(h * 5.6e14 / e, 2), "slope_Vs": h / e}
+out["k1-d-alt"] = {"inv_n": round((1 - 1 / 2) / (1 / 2 - 1 / 3), 2), "n_squared": round((4 - 1) / (9 - 4), 2)}
 out["k1-d"] = {"E21": 13.6 * (1 - 1 / 4), "E32": round(13.6 * (1 / 4 - 1 / 9), 4), "ratio": round(13.6 * 0.75 / (13.6 * (1 / 4 - 1 / 9)), 2)}
 out["k1-e"] = {"blue_V": round(1.9 * 650 / 450, 2), "wrong_squared": round(1.9 * (650 / 450) ** 2, 2), "wrong_inverse": round(1.9 * 450 / 650, 2)}
-out["k1-g"] = {"halvings": math.log2(3.2 / 0.10), "t_h": 4.0 * math.log2(3.2 / 0.10), "linear_wrong": 4.0 * 3.2 / 0.10 / 10}
+out["k1-g"] = {"halvings": math.log2(3.2 / 0.10), "t_h": 4.0 * math.log2(3.2 / 0.10), "linear_wrong": (3.2 - 0.10) / 1.6 * 4.0}
 out["k1-h"] = {"ratio": 200e6 / 4.0}
 out["k1-i"] = {"H_alpha_mSv": 20 * 1.0, "H_gamma_mSv": 1 * 1.0}
 
@@ -36,11 +37,20 @@ s_ls, b_ls = lsq(F2, UK2)
 s2 = (UK2[4] - UK2[0]) / (F2[4] - F2[0])           # the line read from the graph's end points
 out["fy8-k2-b"] = e * s_ls                          # h from the fitted line, J s
 h2 = e * s2
-dh2 = e * (2 * dU2) / (F2[4] - F2[0])              # steepest minus shallowest line through the error bars, halved
+# extreme lines through bar end points that stay inside ALL five error bars
+import itertools
+_pts = [(f, u + sg * dU2) for f, u in zip(F2, UK2) for sg in (-1, 1)]
+_ok = []
+for _p, _q in itertools.combinations(_pts, 2):
+    if _p[0] == _q[0]: continue
+    _a = (_q[1] - _p[1]) / (_q[0] - _p[0]); _b = _p[1] - _a * _p[0]
+    if all(abs(u - (_a * f + _b)) <= dU2 + 1e-9 for f, u in zip(F2, UK2)): _ok.append((_a, _p, _q))
+_ok.sort()
+smin, smax = _ok[0][0], _ok[-1][0]
+dh2 = e * (smax - smin) / 2
 out["fy8-k2-c"] = dh2
 out["k2"] = {"slope_end": s2, "h_end": h2, "slope_ls": s_ls, "h_ls": e * s_ls, "intercept_ls": b_ls, "dh": dh2,
-             "rel_dh": dh2 / h2, "dev": (h2 - h) / h, "smax": (UK2[4] + dU2 - (UK2[0] - dU2)) / (F2[4] - F2[0]),
-             "smin": (UK2[4] - dU2 - (UK2[0] + dU2)) / (F2[4] - F2[0]), "df": F2[4] - F2[0],
+             "rel_dh": dh2 / h2, "dev": (h2 - h) / h, "smax": smax, "smin": smin, "h_max": e * smax, "h_min": e * smin, "pts_max": _ok[-1][1:], "pts_min": _ok[0][1:], "df": F2[4] - F2[0],
              "hc_over_e_per_f": h / e, "rel_U_blue": dU2 / UK2[4], "rel_U_red": dU2 / UK2[0]}
 
 # ---------------------------------------------------------------- fy8-k3: decay of a sample, counts in 30 s

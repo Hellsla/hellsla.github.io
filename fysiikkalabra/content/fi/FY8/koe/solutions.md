@@ -10,19 +10,19 @@
 **Perustelu:** Kun jatkuvan spektrin valo kulkee kaasun läpi, kaasun atomit absorboivat vain fotoneja, joiden energia on täsmälleen jonkin atomin kahden energiatason erotus. Näiden aallonpituuksien kohdalla spektriin jää tummia viivoja, ja viivojen paikat ovat alkuaineelle ominaiset. Uudelleen emittoitu valo lähtee kaikkiin suuntiin, joten suoraan kulkevassa valossa viivat ovat tummia; ne eivät siis ole kaasun emissioviivoja. Tummat viivat eivät kerro lähteen koostumuksesta, koska lähde lähettää jatkuvaa spektriä, ja viivojen paikat riippuvat alkuaineesta eivätkä tiheydestä.
 
 ### d)
-**Perustelu:** Siirtymässä $2 \to 1$ fotonin energia on $13{,}6\,\text{eV}\,(1 - \tfrac{1}{4}) = 10{,}2\,\text{eV}$ ja siirtymässä $3 \to 2$ se on $13{,}6\,\text{eV}\,(\tfrac{1}{4} - \tfrac{1}{9}) \approx 1{,}89\,\text{eV}$. Suhde on $10{,}2 : 1{,}89 \approx 5{,}4$. Energiatasot tihenevät ylöspäin mentäessä, joten perustilalle johtava siirtymä on paljon suurempi kuin ylempien tasojen välinen. Suhde $2{,}0$ syntyy, jos energioiden luullaan olevan verrannollisia tasojen numeroihin eikä niiden käänteisneliöihin.
+**Perustelu:** Siirtymässä $2 \to 1$ fotonin energia on $13{,}6\,\text{eV}\,(1 - \tfrac{1}{4}) = 10{,}2\,\text{eV}$ ja siirtymässä $3 \to 2$ se on $13{,}6\,\text{eV}\,(\tfrac{1}{4} - \tfrac{1}{9}) \approx 1{,}89\,\text{eV}$. Suhde on $10{,}2 : 1{,}89 \approx 5{,}4$. Energiatasot tihenevät ylöspäin mentäessä, joten perustilalle johtava siirtymä on paljon suurempi kuin ylempien tasojen välinen. Suhde $3{,}0$ syntyy, jos energian luullaan olevan verrannollinen lukuun $\tfrac{1}{n}$: $\tfrac{1 - 1/2}{1/2 - 1/3} = 3{,}0$. Suhde $0{,}6$ syntyy, jos energian luullaan kasvavan lukuun $n^2$ verrannollisena: $\tfrac{4 - 1}{9 - 4} = 0{,}6$. Suhde $1{,}0$ syntyy, jos vain lasketaan, että kummassakin siirtymässä taso muuttuu yhdellä.
 
 ### e)
-**Perustelu:** Kun $eU_\text{k} \approx hf = \tfrac{hc}{\lambda}$, kynnysjännite on kääntäen verrannollinen aallonpituuteen. Sinisen LEDin kynnysjännite on $1{,}9\,\text{V} \cdot \tfrac{650}{450} \approx 2{,}7\,\text{V}$. Lyhyempi aallonpituus tarkoittaa suurempaa fotonin energiaa, joten jännite kasvaa; arvo $1{,}3\,\text{V}$ saadaan kääntämällä suhde väärinpäin. Arvo $3{,}9\,\text{V}$ syntyy, jos suhde korotetaan toiseen potenssiin, vaikka riippuvuus on suoraan käänteinen.
+**Perustelu:** Kun $eU_\text{k} \approx hf = \tfrac{hc}{\lambda}$, kynnysjännite on kääntäen verrannollinen aallonpituuteen. Sinisen LEDin kynnysjännite on $1{,}9\,\text{V} \cdot \tfrac{650}{450} \approx 2{,}7\,\text{V}$. Lyhyempi aallonpituus tarkoittaa suurempaa fotonin energiaa, joten jännite kasvaa; arvo $1{,}3\,\text{V}$ saadaan kääntämällä suhde väärinpäin. Arvo $4{,}0\,\text{V}$ syntyy, jos suhde korotetaan toiseen potenssiin ($1{,}9\,\text{V} \cdot 1{,}44^2 \approx 4{,}0\,\text{V}$), vaikka riippuvuus on suoraan käänteinen.
 
 ### f)
 **Perustelu:** Stimuloidussa emissiossa virittyneen atomin ohi kulkeva fotoni, jonka energia vastaa siirtymää, saa atomin siirtymään alemmalle tasolle ja lähettämään toisen fotonin, joka on samassa vaiheessa, samalla taajuudella ja samaan suuntaan. Tästä kasvaa koherentti, yhdensuuntainen laservalo. Absorptio ja satunnaisiin suuntiin tapahtuva spontaani emissio kuvaavat tavallista valonlähdettä, ja fotoni ei jakaudu kahdeksi, koska energia säilyy: syntyy uusi fotoni ja atomi luovuttaa energiansa.
 
 ### g)
-**Perustelu:** Aktiivisuus puolittuu jokaisen puoliintumisajan kuluessa. Suhde $3{,}2 : 0{,}10 = 32 = 2^{5}$, joten tarvitaan viisi puoliintumisaikaa: $5 \cdot 4{,}0\,\text{h} = 20\,\text{h}$. Neljän puoliintumisajan ($16\,\text{h}$) jälkeen aktiivisuus olisi vielä $0{,}20\,\text{MBq}$. Vaihtoehto $12{,}8\,\text{h}$ syntyy lineaarisesta päättelystä, ja $32\,\text{h}$ syntyy, kun suhdeluku $32$ luetaan suoraan tunneiksi.
+**Perustelu:** Aktiivisuus puolittuu jokaisen puoliintumisajan kuluessa. Suhde $3{,}2 : 0{,}10 = 32 = 2^{5}$, joten tarvitaan viisi puoliintumisaikaa: $5 \cdot 4{,}0\,\text{h} = 20\,\text{h}$. Neljän puoliintumisajan ($16\,\text{h}$) jälkeen aktiivisuus olisi vielä $0{,}20\,\text{MBq}$. Vaihtoehto $7{,}8\,\text{h}$ syntyy lineaarisesta päättelystä: jos aktiivisuuden luullaan vähenevän tasaisesti puolella alkuarvostaan eli $1{,}6\,\text{MBq}$ per $4{,}0\,\text{h}$, tarvittava aika on $\tfrac{(3{,}2 - 0{,}10)\,\text{MBq}}{1{,}6\,\text{MBq}} \cdot 4{,}0\,\text{h} \approx 7{,}8\,\text{h}$, mutta puoliintuminen on suhteellista eikä vakiomäärän väheneminen. ja $32\,\text{h}$ syntyy, kun suhdeluku $32$ luetaan suoraan tunneiksi.
 
 ### h)
-**Perustelu:** Energioiden suhde on $\tfrac{200 \cdot 10^{6}\,\text{eV}}{4\,\text{eV}} = 5 \cdot 10^{7}$. Ydinreaktiossa energia tulee ytimen sidosenergioiden muutoksesta, joka on miljoonia kertoja suurempi kuin atomien elektroniverhojen kemiallisten sidosten muutos. Muut vaihtoehdot ovat sata tai kymmenentuhatta kertaa pienempiä tai suurempia: ne syntyvät, jos megaelektronivoltin etuliite ($10^{6}$) unohdetaan tai se käsitellään väärin.
+**Perustelu:** Energioiden suhde on $\tfrac{200 \cdot 10^{6}\,\text{eV}}{4\,\text{eV}} = 5 \cdot 10^{7}$. Ydinreaktiossa energia tulee ytimen sidosenergioiden muutoksesta, joka on miljoonia kertoja suurempi kuin atomien elektroniverhojen kemiallisten sidosten muutos. Vaihtoehto $50$ syntyy, kun etuliite mega ($10^{6}$) unohdetaan ($200 : 4$); $5 \cdot 10^{4}$ syntyy, kun energia $200\,\text{MeV}$ luetaan kiloelektronivolteiksi ($200 \cdot 10^{3} : 4$); $5 \cdot 10^{9}$ syntyy, kun se luetaan gigaelektronivolteiksi.
 
 ### i)
 **Perustelu:** Ekvivalenttiannos on $H = w_\text{R} D$: alfasäteilylle $20 \cdot 1{,}0\,\text{mGy} = 20\,\text{mSv}$ ja gammasäteilylle $1{,}0\,\text{mSv}$. Painotuskerroin kuvaa sitä, että alfahiukkanen ionisoi lyhyellä matkalla tiheästi ja vaurioittaa soluja enemmän samalla absorboituneella energialla. Absorboitunut annos ei muutu, koska se mittaa vain kudokseen jäänyttä energiaa massayksikköä kohti. Väite yhtä suurista ekvivalenttiannoksista unohtaa painotuksen, ja gammasäteilyn läpäisykyky ei kasvata ekvivalenttiannosta.
@@ -111,6 +111,7 @@
   <line x1="90" y1="244.5" x2="260" y2="244.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="387.5" y1="128" x2="387.5" y2="390" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="90" y1="128" x2="387.5" y2="128" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <foreignObject x="204.5" y="337" width="154" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{ekstrapolointi}$</span></div></foreignObject>
   <foreignObject x="395.5" y="142" width="115" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(7{,}0;\ 2{,}87)$</span></div></foreignObject>
   <foreignObject x="270" y="258.5" width="115" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(4{,}0;\ 1{,}59)$</span></div></foreignObject>
 </svg>
@@ -132,17 +133,17 @@
 **Annettu:** viisi pistettä virhepalkkeineen $\pm 0{,}05\,\text{V}$, $h = 6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Kysytty:** $h$:n epävarmuus ja sopusointu tunnetun arvon kanssa
 **Periaate:** Piirretään jyrkin ja loivin suora, jotka vielä mahtuvat virhepalkkien sisään. Niiden kulmakertoimista saadaan $h$:n suurin ja pienin arvo, ja epävarmuus on niiden eron puolikas.
-**Kuvaajan lukeminen:** Ääripisteiden väliselle suoralle jyrkin suora kulkee pisteestä $(4{,}80;\ 1{,}86)$ pisteeseen $(6{,}97;\ 2{,}89)$ ja loivin pisteestä $(4{,}80;\ 1{,}96)$ pisteeseen $(6{,}97;\ 2{,}79)$ (jännitteet voltteina, taajuudet yksikössä $10^{14}\,\text{Hz}$).
+**Kuvaajan lukeminen:** Jyrkin suora, joka vielä kulkee kaikkien viiden virhepalkin sisällä, kulkee pisteen $(5{,}08;\ 2{,}02)$ (kolmannen palkin alapää) ja pisteen $(6{,}97;\ 2{,}89)$ (viimeisen palkin yläpää) kautta. Loivin suora kulkee pisteen $(4{,}80;\ 1{,}96)$ (ensimmäisen palkin yläpää) ja pisteen $(6{,}38;\ 2{,}57)$ (neljännen palkin alapää) kautta. Taajuudet ovat yksikössä $10^{14}\,\text{Hz}$ ja jännitteet voltteina; muut kolme palkkia ovat suorien sisällä.
 **Kaava:** $\Delta h = \dfrac{h_\text{max} - h_\text{min}}{2}$, missä $h = e \cdot \text{kulmakerroin}$
-**Muunnokset:** $\Delta f = 6{,}97 \cdot 10^{14}\,\text{Hz} - 4{,}80 \cdot 10^{14}\,\text{Hz} = 2{,}18 \cdot 10^{14}\,\text{Hz}$
-**Sijoitus:** $h_\text{max} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{1{,}03\,\text{V}}{2{,}18 \cdot 10^{14}\,\text{Hz}} \approx 7{,}6 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $h_\text{min} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}83\,\text{V}}{2{,}18 \cdot 10^{14}\,\text{Hz}} \approx 6{,}1 \cdot 10^{-34}\,\text{J}\,\text{s}$, joten $\Delta h = \dfrac{7{,}6 - 6{,}1}{2} \cdot 10^{-34}\,\text{J}\,\text{s} \approx 0{,}7 \cdot 10^{-34}\,\text{J}\,\text{s}$
-**Vastaus:** $h = (6{,}8 \pm 0{,}7) \cdot 10^{-34}\,\text{J}\,\text{s}$. Tunnettu arvo $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on tällä välillä, joten mittaus on sopusoinnussa tunnetun arvon kanssa.
-**Järkevyys:** Suhteellinen epävarmuus on noin $11\,\%$, mikä sopii viiden pisteen mittaukseen, jossa jokaisella jännitteellä on epävarmuus $\pm 0{,}05\,\text{V}$ eli $2$–$3\,\%$ lukemasta.
+**Muunnokset:** Jyrkin suora: $\Delta f = (6{,}97 - 5{,}08) \cdot 10^{14}\,\text{Hz} = 1{,}89 \cdot 10^{14}\,\text{Hz}$; loivin suora: $\Delta f = (6{,}38 - 4{,}80) \cdot 10^{14}\,\text{Hz} = 1{,}58 \cdot 10^{14}\,\text{Hz}$.
+**Sijoitus:** $h_\text{max} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}87\,\text{V}}{1{,}89 \cdot 10^{14}\,\text{Hz}} \approx 7{,}4 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $h_\text{min} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}61\,\text{V}}{1{,}58 \cdot 10^{14}\,\text{Hz}} \approx 6{,}2 \cdot 10^{-34}\,\text{J}\,\text{s}$, joten $\Delta h = \dfrac{7{,}4 - 6{,}2}{2} \cdot 10^{-34}\,\text{J}\,\text{s} \approx 0{,}6 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Vastaus:** $h = (6{,}8 \pm 0{,}6) \cdot 10^{-34}\,\text{J}\,\text{s}$. Tunnettu arvo $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on tällä välillä, joten mittaus on sopusoinnussa tunnetun arvon kanssa.
+**Järkevyys:** Suhteellinen epävarmuus on noin $9\,\%$, mikä sopii viiden pisteen mittaukseen, jossa jokaisella jännitteellä on epävarmuus $\pm 0{,}05\,\text{V}$ eli $2$–$3\,\%$ lukemasta.
 
 ### d)
 **Kysytty:** virhelähde, joka selittää suoran poikkeaman origosta
 **Periaate:** Jos malli $eU_\text{k} = hf$ pitäisi täsmälleen, suora kulkisi origon kautta. Systemaattinen virhe, joka vaikuttaa kaikkiin mittauksiin yhtä paljon, siirtää suoraa mutta ei muuta sen kulmakerrointa.
-**Mallivastaus:** Mallin mukaan elektronin energia $eU_\text{k}$ on likimain fotonin energia, mutta todellisen LEDin valo on leveä spektri, jonka huipun fotonin energia on hieman kaistaväliä suurempi. LEDin kynnysjännite on siten hieman huipun fotonin energiaa pienempi kaikilla väreillä, ja pisteet siirtyvät lähes vakiomäärän alaspäin. Suora leikkaa pystyakselin noin $-0{,}1\,\text{V}$:n kohdalla, mutta kulmakerroin ja $h$ pysyvät lähes ennallaan. Myös silmällä havaitun kynnyksen subjektiivisuus voi aiheuttaa saman suuntaisen virheen.
+**Mallivastaus:** Suora leikkaa pystyakselin noin $-0{,}1\,\text{V}$:n kohdalla, eli mitatut kynnysjännitteet ovat kaikilla väreillä noin $0{,}1\,\text{V}$ pienempiä kuin malli $\tfrac{hf}{e}$ ennustaa. Yksi syy on, että todellisen LEDin valo on leveä spektri, ja LED alkaa tuottaa valoa jo kaistaväliä vastaavalla energialla, joka on pienempi kuin spektrin huipun fotonin energia $hf$; kynnysjännite on siis $hf$:ää vastaavaa jännitettä pienempi. Silmän herkkyys riippuu värin mukaan, joten silmämääräinen havainto voi vaikuttaa eri väreihin eri tavalla ja muuttaa myös kulmakerrointa, ei vain siirtää suoraa. Jos virhe on likimain vakio, kulmakerroin ja $h$ säilyvät lähes ennallaan.
 
 ### Yleisiä virheitä
 - Kuvaajaan laitetaan aallonpituus taajuuden sijasta, jolloin pisteet eivät ole suoralla.
@@ -237,7 +238,7 @@
   <line x1="211" y1="242" x2="211" y2="380" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="90" y1="242" x2="211" y2="242" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <foreignObject x="219" y="346" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$3{,}2\,\text{min}$</span></div></foreignObject>
-  <foreignObject x="100" y="212" width="39" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$401$</span></div></foreignObject>
+  <foreignObject x="100" y="212" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$N = 401$</span></div></foreignObject>
 </svg>
 
 **Mallivastaus:** Pisteet laskevat nopeasti aluksi ja yhä hitaammin, joten malliksi sopii eksponentiaalinen väheneminen $N = N_0 e^{-\lambda t}$ eikä suora. Pisteisiin sovitetaan sileä, alaspäin kupera käyrä, joka alkaa noin arvosta $800$ ja lähestyy nollaa. Pisteitä ei yhdistetä murtoviivaksi. Pisteet poikkeavat käyrästä satunnaisesti molempiin suuntiin.
@@ -327,6 +328,7 @@
 - Fuusio-olosuhteiden syyksi sanotaan ytimien liikkeen puute eikä niiden sähköistä hylkimistä.
 
 ### Hyväksytään myös
+- Kohdassa d maininta, että fuusio tapahtuu käytännössä kvanttimekaanisen tunneloitumisen avulla, vaikka lämpöenergia on pienempi kuin sähköinen potentiaalivalli.
 - Kohdassa b reaktioenergia sidosenergioiden erotuksena $E_\text{s}(\text{He}) - E_\text{s}(\text{D}) - E_\text{s}(\text{T})$, kun tulos on $17{,}5\text{–}17{,}7\,\text{MeV}$.
 
 ## fy8-k5
@@ -337,7 +339,7 @@
 **Periaate:** Kun atomi siirtyy ylemmältä energiatasolta alemmalle, se lähettää fotonin, jonka energia on tasojen energiaero. Fotonin energia ja aallonpituus liittyvät yhtälöllä $E = hf = \tfrac{hc}{\lambda}$.
 **Kaava:** $E = E_3 - E_2$ ja $\lambda = \dfrac{hc}{E}$
 **Muunnokset:** $1{,}889\,\text{eV} = 1{,}889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}026 \cdot 10^{-19}\,\text{J}$
-**Sijoitus:** $E = -\dfrac{13{,}6\,\text{eV}}{9} - \left(-\dfrac{13{,}6\,\text{eV}}{4}\right) = 1{,}889\,\text{eV}$ ja $\lambda = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{3{,}026 \cdot 10^{-19}\,\text{J}} \approx 6{,}57 \cdot 10^{-7}\,\text{m}$
+**Sijoitus:** $E = -\dfrac{13{,}6\,\text{eV}}{9} - \left(-\dfrac{13{,}6\,\text{eV}}{4}\right) = 1{,}889\,\text{eV}$ ja $\lambda = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{3{,}026 \cdot 10^{-19}\,\text{J}} \approx 6{,}565 \cdot 10^{-7}\,\text{m}$
 **Vastaus:** Fotonin aallonpituus on noin $656\,\text{nm}$, eli valo on näkyvää punaista valoa.
 **Järkevyys:** Näkyvän valon aallonpituudet ovat $400\text{–}700\,\text{nm}$, ja $656\,\text{nm}$ on vedyn Balmerin sarjan punainen viiva H$\alpha$.
 
@@ -364,7 +366,7 @@
 ### d)
 **Kysytty:** orbitaalin merkitys ja energioiden kvantittuminen
 **Periaate:** Aaltomekaanisessa mallissa elektronia kuvataan aaltomaisella tilalla, jonka neliö kertoo löytymistodennäköisyyden. Atomissa rajoitettu aalto on seisova aalto.
-**Mallivastaus:** Orbitaali on ytimen ympärillä oleva alue, jossa elektroni löytyy suurella todennäköisyydellä, esimerkiksi $90\,\%$. Se ei ole rata, eikä elektronilla ole tarkkaa paikkaa ja nopeutta samaan aikaan, toisin kuin Bohrin mallissa. Ytimen ympärille rajoitettu elektroniaalto muodostaa vain tietynlaisia seisovia aaltoja, joiden aallonpituus sopii tilaan. Jokaista sallittua seisovaa aaltoa vastaa tietty energia, ja siksi atomin energiat ovat erillisiä eli kvantittuneita eivätkä jatkuvia.
+**Mallivastaus:** Orbitaali on ytimen ympärillä oleva alue, jossa elektroni löytyy suurella todennäköisyydellä, esimerkiksi $90\,\%$. Se ei ole rata, eikä elektronilla ole tarkkaa paikkaa ja nopeutta samaan aikaan, toisin kuin Bohrin mallissa. Ytimen ympärille rajoitettu elektronin tila on seisova aalto, ja vain tietyt seisovat aallot mahtuvat atomiin. Jokaista sallittua seisovaa aaltoa vastaa tietty energia, ja siksi atomin energiat ovat erillisiä eli kvantittuneita eivätkä jatkuvia.
 
 ### Yleisiä virheitä
 - Elektronivoltit jätetään muuntamatta jouleiksi, kun käytetään $h$:ta ja $c$:tä.
@@ -393,65 +395,65 @@
 **Kuvaaja:** Vaaka-akselilla on lyijyn paksuus $d$ ($\text{mm}$) ja pystyakselilla $\ln R$, missä $R$ on nettopulssinopeus yksikössä $\text{s}^{-1}$; molemmilla tasavälinen asteikko. Nettopulssinopeudet ovat $120{,}1$, $84{,}9$, $60{,}5$, $42{,}4$, $30{,}6$, $15{,}2$ ja $7{,}9\,\text{s}^{-1}$, ja niiden luonnolliset logaritmit $4{,}79$, $4{,}44$, $4{,}10$, $3{,}75$, $3{,}42$, $2{,}72$ ja $2{,}07$.
 
 <svg data-fig="fy8-k6-graph" viewBox="0 0 600 420" role="img" aria-label="Kuvaaja: nettolaskentanopeuden luonnollinen logaritmi $\ln R$ lyijykerroksen paksuuden $d$ funktiona millimetreinä. Seitsemän mittauspistettä paksuuksilla 0–24 mm asettuu laskevalle suoralle, jonka kulmakerroin on noin −0,114 per millimetri. Suoran pisteet 0 mm ja 4,78 sekä 24 mm ja 2,05 on merkitty katkoviivoin." style="max-width:100%;font-size:24px">
-  <line x1="134" y1="370" x2="134" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="177.5" y1="370" x2="177.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="221.5" y1="370" x2="221.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="265.5" y1="370" x2="265.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="309" y1="370" x2="309" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="353" y1="370" x2="353" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="397" y1="370" x2="397" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="441" y1="370" x2="441" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="90" y1="310" x2="470" y2="310" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="90" y1="250" x2="470" y2="250" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="90" y1="190" x2="470" y2="190" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="90" y1="130" x2="470" y2="130" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="90" y1="70" x2="470" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <line x1="89" y1="370" x2="484" y2="370" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <line x1="153.5" y1="370" x2="153.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="194.5" y1="370" x2="194.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="236" y1="370" x2="236" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="277" y1="370" x2="277" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="318.5" y1="370" x2="318.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="360" y1="370" x2="360" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="401" y1="370" x2="401" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="442.5" y1="370" x2="442.5" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="112" y1="310" x2="470" y2="310" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="112" y1="250" x2="470" y2="250" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="112" y1="190" x2="470" y2="190" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="112" y1="130" x2="470" y2="130" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="112" y1="70" x2="470" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <line x1="111" y1="370" x2="484" y2="370" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
   <path d="M496,370 L483,376 L483,364 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="90" y1="371" x2="90" y2="56" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M90,44 L96,57 L84,57 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="134" y1="370" x2="134" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="124" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3$</div></foreignObject>
-  <line x1="177.5" y1="370" x2="177.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="167.5" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$6$</div></foreignObject>
-  <line x1="221.5" y1="370" x2="221.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="211.5" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$9$</div></foreignObject>
-  <line x1="265.5" y1="370" x2="265.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="249" y="379.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$12$</div></foreignObject>
-  <line x1="309" y1="370" x2="309" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="292.5" y="379.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$15$</div></foreignObject>
-  <line x1="353" y1="370" x2="353" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="336.5" y="379.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$18$</div></foreignObject>
-  <line x1="397" y1="370" x2="397" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="380.5" y="379.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$21$</div></foreignObject>
-  <line x1="441" y1="370" x2="441" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="424.5" y="379.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$24$</div></foreignObject>
-  <line x1="83" y1="310" x2="90" y2="310" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="58" y="295.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$1$</div></foreignObject>
-  <line x1="83" y1="250" x2="90" y2="250" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="58" y="235.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$2$</div></foreignObject>
-  <line x1="83" y1="190" x2="90" y2="190" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="58" y="175.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$3$</div></foreignObject>
-  <line x1="83" y1="130" x2="90" y2="130" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="58" y="115.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$4$</div></foreignObject>
-  <line x1="83" y1="70" x2="90" y2="70" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
-  <foreignObject x="58" y="55.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$5$</div></foreignObject>
-  <foreignObject x="60" y="375.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
+  <line x1="112" y1="371" x2="112" y2="56" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
+  <path d="M112,44 L118,57 L106,57 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <line x1="153.5" y1="370" x2="153.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="143.5" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$3$</div></foreignObject>
+  <line x1="194.5" y1="370" x2="194.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="184.5" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$6$</div></foreignObject>
+  <line x1="236" y1="370" x2="236" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="226" y="379.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$9$</div></foreignObject>
+  <line x1="277" y1="370" x2="277" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="260.5" y="379.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$12$</div></foreignObject>
+  <line x1="318.5" y1="370" x2="318.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="302" y="379.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$15$</div></foreignObject>
+  <line x1="360" y1="370" x2="360" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="343.5" y="379.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$18$</div></foreignObject>
+  <line x1="401" y1="370" x2="401" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="384.5" y="379.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$21$</div></foreignObject>
+  <line x1="442.5" y1="370" x2="442.5" y2="377" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="426" y="379.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$24$</div></foreignObject>
+  <line x1="105" y1="310" x2="112" y2="310" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="80" y="295.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$1$</div></foreignObject>
+  <line x1="105" y1="250" x2="112" y2="250" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="80" y="235.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$2$</div></foreignObject>
+  <line x1="105" y1="190" x2="112" y2="190" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="80" y="175.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$3$</div></foreignObject>
+  <line x1="105" y1="130" x2="112" y2="130" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="80" y="115.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$4$</div></foreignObject>
+  <line x1="105" y1="70" x2="112" y2="70" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
+  <foreignObject x="80" y="55.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$5$</div></foreignObject>
+  <foreignObject x="82" y="375.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$0$</div></foreignObject>
   <foreignObject x="502" y="355.5" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$d\ (\text{mm})$</div></foreignObject>
-  <foreignObject x="80" y="13.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\ln(R / \text{s}^{-1})$</div></foreignObject>
-  <polyline points="90,83 470,260.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="90" cy="82.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="134" cy="103.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="177.5" cy="124" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="221.5" cy="145" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="265.5" cy="164.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="353" cy="206.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="441" cy="246" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <line x1="441" y1="247" x2="441" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="90" y1="247" x2="441" y2="247" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <line x1="90" y1="83" x2="90" y2="83" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="449" y="213" width="105" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(24;\ 2{,}05)$</span></div></foreignObject>
-  <foreignObject x="104" y="49" width="94" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(0;\ 4{,}78)$</span></div></foreignObject>
+  <foreignObject x="102" y="13.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\ln(R / \text{s}^{-1})$</div></foreignObject>
+  <polyline points="112,83 470,260.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="112" cy="82.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="153.5" cy="103.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="194.5" cy="124" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="236" cy="145" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="277" cy="164.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="360" cy="206.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="442.5" cy="246" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <line x1="442.5" y1="247" x2="442.5" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="112" y1="247" x2="442.5" y2="247" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
+  <line x1="112" y1="83" x2="112" y2="83" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="450.5" y="213" width="105" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(24;\ 2{,}05)$</span></div></foreignObject>
+  <foreignObject x="126" y="49" width="94" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(0;\ 4{,}78)$</span></div></foreignObject>
 </svg>
 
 **Mallivastaus:** Jos vaimeneminen on eksponentiaalista, $R = R_0 e^{-\mu d}$, niin $\ln R = \ln R_0 - \mu d$, joten $\ln R$ on suoraan verrannollinen paksuuteen $d$. Pisteet asettuvat suoralle, ja pienet poikkeamat ovat satunnaisia. Pulssinopeus vaimenee eksponentiaalisesti lyijyn paksuuden kasvaessa.
@@ -485,7 +487,7 @@
 **Muunnokset:** $N = 8{,}7\,\text{s}^{-1} \cdot 100\,\text{s} = 870$ ja $N_\text{t} = 0{,}8\,\text{s}^{-1} \cdot 100\,\text{s} = 80$
 **Sijoitus:** $\Delta N_\text{netto} = \sqrt{870 + 80} = 31$ ja $\dfrac{31}{870 - 80} = \dfrac{31}{790} \approx 0{,}039$
 **Vastaus:** Suhteellinen epävarmuus on noin $3{,}9\,\%$. Pisteet ovat hyvin suoralla, joten malli sopii mitatulle alueelle $0\text{–}24\,\text{mm}$, mutta tulos $31\,\text{mm}$ on ekstrapolointia mitatun alueen ulkopuolelle. Malli olettaa kapean, yhden energian säteilykimpun; todellisessa säteilyssä on myös hajaantunutta säteilyä, ja paksussa suojassa vaimennus voi poiketa tästä. Suojan paksuus kannattaa valita turvallisuuden vuoksi mallin antamaa arvoa paksummaksi, esimerkiksi $35\,\text{mm}$, tai mittaus kannattaa toistaa suuremmilla paksuuksilla.
-**Järkevyys:** Epävarmuus pienenee, kun lukumäärä kasvaa: pidempi mittausaika neljänkertaistaisi pulssien määrän ja puolittaisi suhteellisen epävarmuuden.
+**Järkevyys:** Epävarmuus pienenee, kun lukumäärä kasvaa: nelinkertainen mittausaika nelinkertaistaisi pulssien määrän ja puolittaisi suhteellisen epävarmuuden.
 
 ### Yleisiä virheitä
 - Taustaa ei vähennetä, jolloin $\ln R$ -kuvaajan kulmakerroin on liian loiva ($\mu \approx 0{,}110\,\text{mm}^{-1}$) ja tulos virheellinen.
@@ -496,6 +498,7 @@
 ### Hyväksytään myös
 - Kohdassa b nettopulssinopeus paksuuden funktiona (suoraan, ei logaritmia) ja siihen sovitettu eksponenttikäyrä (esimerkiksi taulukkolaskennalla); tällöin $\mu$ saadaan sovitteen eksponentista.
 - Kohdassa d tulos $29\text{–}33\,\text{mm}$.
+- Kohdassa e epävarmuus pelkällä $\sqrt{N}$:llä ($\sqrt{870} = 29$ eli $3{,}4\,\%$ tai $3{,}7\,\%$ nettoon verrattuna) ansaitsee täydet pisteet, kun se on perusteltu.
 
 ## fy8-k7
 
@@ -542,7 +545,7 @@
 ### e)
 **Kysytty:** kumpi merkkiaine soveltuu kolmen tunnin kuljetukseen
 **Periaate:** Merkkiaineen aktiivisuus pienenee puoliintumisajan mukaan koko kuljetuksen ajan. Kun puoliintumisaika on lyhyt verrattuna kuljetusaikaan, lähes kaikki aine ehtii hajota ennen käyttöä.
-**Mallivastaus:** Kolmen tunnin kuluttua fluori-18:aa on jäljellä $0{,}5^{180/109{,}8} \approx 0{,}32$ eli kolmannes, mutta hiili-11:tä $0{,}5^{180/20{,}4} = 0{,}5^{8{,}8} \approx 0{,}002$ eli vain $0{,}2\,\%$. Jos injektioon tarvitaan $280\,\text{MBq}$ $4{,}5\,\text{h}$:n kuluttua, hiili-11:tä pitäisi valmistaa noin $280\,\text{MBq} \cdot 2^{270/20{,}4} \approx 2{,}7\,\text{TBq}$ (fluori-18:aa $1{,}5\,\text{GBq}$), mikä on epäkäytännöllistä ja saastuttaisi valmistuslaitoksen. Oletuksena on, että kemia, valmistus ja kuvaus ovat muuten samanlaisia. Fluori-18 soveltuu siis kuljetukseen paljon paremmin; hiili-11:tä voi käyttää vain, jos syklotroni on samassa rakennuksessa ja merkkiaine voidaan antaa muutamassa minuutissa.
+**Mallivastaus:** Kuljetuksen aikana ($3{,}0\,\text{h}$) fluori-18:aa on jäljellä $0{,}5^{180/109{,}8} \approx 0{,}32$ eli kolmannes, mutta hiili-11:tä $0{,}5^{180/20{,}4} = 0{,}5^{8{,}8} \approx 0{,}002$ eli vain $0{,}2\,\%$. Jos injektioon tarvitaan $280\,\text{MBq}$ $4{,}5\,\text{h}$:n kuluttua, hiili-11:tä pitäisi valmistaa noin $280\,\text{MBq} \cdot 2^{270/20{,}4} \approx 2{,}7\,\text{TBq}$ (fluori-18:aa $1{,}5\,\text{GBq}$), mikä on epäkäytännöllistä ja saastuttaisi valmistuslaitoksen. Oletuksena on, että kemia, valmistus ja kuvaus ovat muuten samanlaisia. Fluori-18 soveltuu siis kuljetukseen paljon paremmin; hiili-11:tä voi käyttää vain, jos syklotroni on samassa rakennuksessa ja merkkiaine voidaan antaa muutamassa minuutissa.
 
 ### Yleisiä virheitä
 - Puoliintumisaika sekoitetaan hajoamisvakioon tai tunnit ja minuutit jätetään muuntamatta.

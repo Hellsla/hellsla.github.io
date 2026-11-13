@@ -1,5 +1,5 @@
 {
- "intro": "Koe kattaa koko moduulin: valosähköinen ilmiö ja fotoni, spektrit ja atomin energiatasot, vetyatomi, kvanttimekaaninen atomimalli, LED ja laser, atomiydin ja radioaktiivinen hajoaminen, hajoamislaki, sidosenergia, fissio ja fuusio, ionisoiva säteily ja säteilyannokset, säteily lääketieteessä sekä standardimalli. Käytä tarvittaessa arvoja: Planckin vakio $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, valon nopeus $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$ (joten $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$) ja atomimassayksikkö $1\\,\\text{u} = 931{,}5\\,\\text{MeV}/c^2 = 1{,}6605 \\cdot 10^{-27}\\,\\text{kg}$. Vetyatomin energiatasot ovat $E_n = -13{,}6\\,\\text{eV} / n^2$. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
+ "intro": "Koe kattaa koko moduulin: valosähköinen ilmiö ja fotoni, spektrit ja atomin energiatasot, vetyatomi, kvanttimekaaninen atomimalli, LED ja laser, atomiydin ja radioaktiivinen hajoaminen, hajoamislaki, sidosenergia, fissio ja fuusio, ionisoiva säteily ja säteilyannokset, säteily lääketieteessä sekä standardimalli. Käytä tarvittaessa arvoja: Planckin vakio $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, valon nopeus $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$ (joten $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$) ja atomimassayksikkö $1\\,\\text{u} = 931{,}5\\,\\text{MeV}/c^2 = 1{,}6605 \\cdot 10^{-27}\\,\\text{kg}$. Vetyatomin energiatasot ovat $E_n = -13{,}6\\,\\text{eV} / n^2$. Laskin ja taulukkolaskenta ovat sallittuja. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
  "minutes": 120,
  "max_points": 70,
  "sections": [
@@ -69,8 +69,8 @@
      "points": 2,
      "text": "Valkoinen valo kulkee kylmän, harvan kaasun läpi, ja spektrissä näkyy jatkuvan taustan seassa tummia viivoja. Mikä päätelmä on oikein?",
      "options": [
-      "Kaasu on lähettänyt viivojen aallonpituudet, joten ne ovat kaasun emissioviivoja.",
-      "Kaasun atomit imevät itseensä vain fotoneja, joiden energia on kahden energiatason erotus, ja viivat paljastavat kaasun alkuaineet.",
+      "Kaasu on itse lähettänyt viivojen aallonpituudet, joten ne ovat kaasun emissioviivoja.",
+      "Kaasun atomit absorboivat vain fotoneja, joiden energia vastaa energiatasojen eroa; viivat paljastavat alkuaineen.",
       "Viivojen aallonpituudet riippuvat kaasun tiheydestä mutta eivät siitä, mitä alkuainetta kaasu on.",
       "Valonlähde ei lähetä tummien viivojen kohdalla lainkaan valoa, joten viivat kertovat lähteen koostumuksesta."
      ],
@@ -84,9 +84,9 @@
      "text": "Vetyatomin energiatasot ovat $E_n = -13{,}6\\,\\text{eV} / n^2$. Atomi siirtyy ensimmäisessä tapauksessa tasolta $n = 2$ perustilalle $n = 1$ ja toisessa tapauksessa tasolta $n = 3$ tasolle $n = 2$. Kuinka moninkertainen on ensimmäisessä siirtymässä lähtevän fotonin energia toisen siirtymän fotoniin verrattuna?",
      "options": [
       "noin $1{,}0$-kertainen",
-      "noin $2{,}0$-kertainen",
+      "noin $3{,}0$-kertainen",
       "noin $5{,}4$-kertainen",
-      "noin $9{,}0$-kertainen"
+      "noin $0{,}6$-kertainen"
      ],
      "correct": 2,
      "tag": "math"
@@ -99,11 +99,11 @@
      "options": [
       "$2{,}7\\,\\text{V}$",
       "$1{,}3\\,\\text{V}$",
-      "$3{,}9\\,\\text{V}$",
+      "$4{,}0\\,\\text{V}$",
       "$1{,}9\\,\\text{V}$"
      ],
      "correct": 0,
-     "tag": "experiment"
+     "tag": "math"
     },
     {
      "id": "f",
@@ -111,9 +111,9 @@
      "points": 2,
      "text": "Laserin toiminta perustuu stimuloituun emissioon. Mitä siinä tapahtuu?",
      "options": [
-      "Virittyneen atomin ohi kulkeva fotoni saa atomin lähettämään toisen fotonin, jolla on sama taajuus, suunta ja vaihe.",
-      "Atomi absorboi fotonin ja lähettää sen hetken kuluttua uudelleen mihin suuntaan tahansa, joten valo kulkee eri suuntiin.",
-      "Perustilassa oleva atomi lähettää fotonin törmätessään toiseen atomiin, joten valon taajuus on satunnainen.",
+      "Ohi kulkeva fotoni saa virittyneen atomin lähettämään samanlaisen fotonin: sama taajuus, suunta ja vaihe.",
+      "Atomi absorboi fotonin ja lähettää sen hetken kuluttua uudelleen mihin suuntaan tahansa, joten valo hajaantuu.",
+      "Perustilassa oleva atomi lähettää fotonin törmätessään toiseen atomiin, ja taajuus on satunnainen.",
       "Yksi fotoni jakautuu kahdeksi fotoniksi, joilla kummallakin on puolet alkuperäisestä energiasta."
      ],
      "correct": 0,
@@ -153,10 +153,10 @@
      "points": 2,
      "text": "Kudokseen absorboituu sama energia kahdessa tapauksessa: gammasäteilynä ja alfasäteilynä. Absorboitunut annos on molemmissa $1{,}0\\,\\text{mGy}$. Säteilyn painotuskerroin on gammasäteilylle $1$ ja alfasäteilylle $20$. Mikä väite pitää paikkansa?",
      "options": [
-      "Absorboitunut annos on alfasäteilylle $20$ kertaa suurempi, koska alfahiukkanen on raskas.",
-      "Ekvivalenttiannokset ovat yhtä suuret, koska kudokseen absorboitui sama energia.",
+      "Absorboitunut annos on alfasäteilylle $20$ kertaa suurempi, koska alfahiukkanen on raskas ja hidas.",
+      "Ekvivalenttiannokset ovat yhtä suuret, koska kudokseen absorboitui sama energia ja annos on sama.",
       "Ekvivalenttiannos on gammasäteilylle suurempi, koska gammasäteily läpäisee kudoksen syvemmälle.",
-      "Ekvivalenttiannos on alfasäteilylle $20\\,\\text{mSv}$ ja gammasäteilylle $1{,}0\\,\\text{mSv}$, koska alfasäteily ionisoi tiheämmin."
+      "Alfasäteilyn ekvivalenttiannos on $20\\,\\text{mSv}$ ja gammasäteilyn $1{,}0\\,\\text{mSv}$."
      ],
      "correct": 3,
      "tag": "concept"
@@ -167,10 +167,10 @@
      "points": 2,
      "text": "Neutroni hajoaa beeta-miinushajoamisessa protoniksi, elektroniksi ja elektronin antineutriinoksi. Mikä kuvaa tapahtumaa kvarkkitasolla?",
      "options": [
-      "Vahva vuorovaikutus muuttaa neutronin kvarkin $\\text{d}$ kvarkiksi $\\text{u}$.",
+      "Vahva vuorovaikutus muuttaa neutronin kvarkin $\\text{d}$ kvarkiksi $\\text{u}$, ja syntyy protoni.",
       "Heikko vuorovaikutus muuttaa neutronin kvarkin $\\text{u}$ kvarkiksi $\\text{d}$.",
-      "Sähkömagneettinen vuorovaikutus muuttaa neutronin kvarkin $\\text{d}$ elektroniksi.",
-      "Heikko vuorovaikutus muuttaa neutronin kvarkin $\\text{d}$ kvarkiksi $\\text{u}$, ja syntyvät elektroni ja antineutriino."
+      "Sähkömagneettinen vuorovaikutus muuttaa neutronin kvarkin $\\text{d}$ suoraan elektroniksi ja protoniksi.",
+      "Heikko vuorovaikutus muuttaa neutronin kvarkin $\\text{d}$ kvarkiksi $\\text{u}$; samalla syntyy elektroni."
      ],
      "correct": 3,
      "tag": "concept"
@@ -264,9 +264,9 @@
      "id": "c",
      "kind": "calc",
      "points": 4,
-     "text": "Arvioi kohdassa b määritetyn Planckin vakion epävarmuus piirtämällä jyrkin ja loivin suora, jotka mahtuvat virhepalkkien sisään. Sopiiko tulos tunnettuun arvoon $6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$?",
+     "text": "Arvioi kohdassa b määritetyn Planckin vakion epävarmuus piirtämällä jyrkin ja loivin suora, jotka vielä kulkevat kaikkien viiden virhepalkin sisällä. Sopiiko tulos tunnettuun arvoon $6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$?",
      "answer": {
-      "value": 7.4e-35,
+      "value": 6e-35,
       "unit": "J s",
       "tolerance": 0.2
      },
@@ -274,7 +274,7 @@
       {
        "key": "uncertainty",
        "points": 2,
-       "detail": "Jyrkimmän ja loivimman suoran kulmakertoimista lasketaan $h_\\text{max} \\approx 7{,}6 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ ja $h_\\text{min} \\approx 6{,}1 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$; epävarmuus on niiden eron puolikas."
+       "detail": "Jyrkin ja loivin suora kulkevat kaikkien virhepalkkien sisällä; kulmakertoimista lasketaan $h_\\text{max} \\approx 7{,}4 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$ ja $h_\\text{min} \\approx 6{,}2 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$; epävarmuus on niiden eron puolikas."
       },
       {
        "key": "calculation",
@@ -283,7 +283,7 @@
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Tulos on $(6{,}8 \\pm 0{,}7) \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, ja tunnettu arvo kuuluu väliin: mittaus on sopusoinnussa."
+       "detail": "Tulos on $(6{,}8 \\pm 0{,}6) \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, ja tunnettu arvo kuuluu väliin: mittaus on sopusoinnussa."
       }
      ]
     },
@@ -296,7 +296,7 @@
       {
        "key": "error_sources",
        "points": 2,
-       "detail": "Esimerkiksi LEDin spektri on leveä ja huipun fotoni on energiaa suurempi kuin kaistaväli, tai valon havaitseminen silmällä vaatii hieman suuremman jännitteen; virhe siirtää suoraa, mutta kulmakerroin säilyy."
+       "detail": "Nimeää virhelähteen ja päättelee sen suunnan oikein: pisteet ovat mallin $\\tfrac{hf}{e}$ alapuolella (suora leikkaa pystyakselin noin $-0{,}1\\,\\text{V}$:ssa). Esimerkiksi LEDin spektri on leveä ja kaistaväli on huipun fotonin energiaa pienempi; vaikutus kulmakertoimeen on perusteltava, sillä värin mukaan muuttuva virhe voi muuttaa myös kulmakerrointa."
       }
      ]
     }
@@ -353,7 +353,7 @@
      "answer": {
       "value": 3.18,
       "unit": "min",
-      "tolerance": 0.08
+      "tolerance": 0.06
      },
      "criteria": [
       {
@@ -571,7 +571,7 @@
        "points": 1
       },
       {
-       "text": "Esitys on johdonmukainen ja käyttää käsitteitä oikein.",
+       "text": "Yhdistää selityksen lukuihin: mainitsee sekä sidosenergiat ($7{,}07\\,\\text{MeV}$ nukleonia kohti) että sähköisen hylkimisen ja päättelee, miksi energia vapautuu mutta reaktio ei käynnisty itsestään.",
        "tag": "communication",
        "points": 1
       }
@@ -707,7 +707,7 @@
        "points": 1
       },
       {
-       "text": "Erottaa mallin Bohrin mallista johdonmukaisesti.",
+       "text": "Mainitsee, että Bohrin mallin tarkka rata (paikka ja nopeus yhtä aikaa) korvautuu todennäköisyysjakaumalla.",
        "tag": "communication",
        "points": 1
       }
@@ -1053,7 +1053,7 @@
      "id": "e",
      "kind": "word",
      "points": 4,
-     "text": "Sairaala voisi käyttää fluori-18:n sijasta hiili-11:tä, jonka puoliintumisaika on $20{,}4\\,\\text{min}$. Arvioi, kumpi merkkiaine soveltuu paremmin, kun syklotroni on kolmen tunnin matkan päässä. Perustele laskulla.",
+     "text": "Sairaala voisi käyttää fluori-18:n sijasta hiili-11:tä, jonka puoliintumisaika on $20{,}4\\,\\text{min}$. Arvioi, kumpi merkkiaine soveltuu paremmin, kun syklotroni on kolmen tunnin matkan päässä. Perustele laskulla kuljetuksen ($3{,}0\\,\\text{h}$) ja koko valmistus–injektio-ajan ($4{,}5\\,\\text{h}$) avulla.",
      "criteria": [
       {
        "text": "Vertaa jäljelle jäävää osuutta $3{,}0\\,\\text{h}$:n kuluttua: fluori-18 noin $0{,}32$, hiili-11 noin $0{,}002$ ($0{,}5^{180/20{,}4}$).",
@@ -1068,7 +1068,7 @@
       {
        "key": "conclusion",
        "points": 2,
-       "detail": "Päättelee, että fluori-18 soveltuu kuljetukseen, ja hiili-11 vain syklotronin vieressä; huomioi, että hiili-11:tä pitäisi valmistaa noin $2{,}7\\\\,\\\\text{TBq}$ ($2^{270/20{,}4} \\\\approx 9{,}6 \\\\cdot 10^{3}$), mikä on epäkäytännöllistä."
+       "detail": "Päättelee, että fluori-18 soveltuu kuljetukseen, ja hiili-11 vain syklotronin vieressä; huomioi, että hiili-11:tä pitäisi valmistaa noin $2{,}7\\,\\text{TBq}$ ($2^{270/20{,}4} \\approx 9{,}6 \\cdot 10^{3}$), mikä on epäkäytännöllistä."
       }
      ]
     }

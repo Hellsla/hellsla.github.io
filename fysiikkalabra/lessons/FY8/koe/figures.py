@@ -15,7 +15,7 @@ US1 = [round((h * f * 1e14 - W_J) / e, 2) for f in F1]
 def stop():
     f = Fig("fy8-k1-stop", 420, "Kuvaaja: pysäytysjännite $U_\\text{s}$ voltteina valon taajuuden $f$ funktiona, taajuus yksikössä $10^{14}$ hertsiä. "
             "Neljä mittauspistettä taajuuksilla 6,5, 7,5, 8,5 ja 9,5 kymmenen potenssiin 14 hertsiä on suoralla, joka nousee vasemmalta oikealle. "
-            "Suora on piirretty vain mittausalueelle, ja se päättyy vasemmalla noin 0,4 voltin korkeudelle.")
+            "Suora on piirretty vain mittausalueelle, ja se päättyy vasemmalla noin 0,24 voltin korkeudelle taajuudella 6,2 kymmenen potenssiin 14 hertsiä.")
     ax = Axes(f, (90, 360), (430, 70), x=(0, 10), y=(0, 2), xticks=list(range(1, 11)), yticks=[0.5, 1.0, 1.5, 2.0],
               xlabel=r"f\ (10^{14}\,\text{Hz})", ylabel=r"U_\text{s}\ (\text{V})")
     k = h / e * 1e14
@@ -47,6 +47,7 @@ def leds():
         ax.line([(a, b - dU2), (a, b + dU2)], COLD, 2)
         ax.point(a, b, COLD, 5.5)
     ax.guide(4.0, S2 * 4.0 + B2); ax.guide(7.0, S2 * 7.0 + B2)
+    f.tex(ax.X(2.6) + 4, ax.Y(0.45), r"\text{ekstrapolointi}", "start", MUTED, size=20, bg=True)
     f.tex(ax.X(7.0) + 8, ax.Y(S2 * 7.0 + B2) + 26, r"(7{,}0;\ 2{,}87)", "start", INK, size=20, bg=True)
     f.tex(ax.X(4.0) + 10, ax.Y(S2 * 4.0 + B2) + 26, r"(4{,}0;\ 1{,}59)", "start", INK, size=20, bg=True)
     return f.svg()
@@ -71,7 +72,7 @@ def decay():
     th = math.log(2) / LAM3
     ax.guide(th, N0_3 / 2)
     f.tex(ax.X(th) + 8, ax.Y(0) - 22, r"3{,}2\,\text{min}", "start", MUTED, size=20, bg=True)
-    f.tex(ax.X(0) + 10, ax.Y(N0_3 / 2) - 18, r"401", "start", MUTED, size=20, bg=True)
+    f.tex(ax.X(0) + 10, ax.Y(N0_3 / 2) - 18, r"N = 401", "start", MUTED, size=20, bg=True)
     return f.svg()
 
 
@@ -87,7 +88,7 @@ def shield():
     f = Fig("fy8-k6-graph", 420, "Kuvaaja: nettolaskentanopeuden luonnollinen logaritmi $\\ln R$ lyijykerroksen paksuuden $d$ funktiona millimetreinä. "
             "Seitsemän mittauspistettä paksuuksilla 0–24 mm asettuu laskevalle suoralle, jonka kulmakerroin on noin −0,114 per millimetri. "
             "Suoran pisteet 0 mm ja 4,78 sekä 24 mm ja 2,05 on merkitty katkoviivoin.")
-    ax = Axes(f, (90, 370), (470, 70), x=(0, 26), y=(0, 5), xticks=[3 * i for i in range(1, 9)], yticks=[1, 2, 3, 4, 5],
+    ax = Axes(f, (112, 370), (470, 70), x=(0, 26), y=(0, 5), xticks=[3 * i for i in range(1, 9)], yticks=[1, 2, 3, 4, 5],
               xlabel=r"d\ (\text{mm})", ylabel=r"\ln(R / \text{s}^{-1})")
     ax.line([(0, B6), (26, B6 + S6 * 26)], INK, 3)
     for d, r in zip(D6, RN): ax.point(d, math.log(r), COLD)
