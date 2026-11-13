@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: be1a6f600135dff6
+CONTENT-HASH: a65ec454cabb7a0f
 
 ## Blocking
 None.
 
 ## Polish
-1. Only the energy-principle wording of the fy4-8/fy4-16 task solution changed. The Sovella page rendered at 390 and 1280 px (fi): no overflow, 4 figures intact. No old symbols remain.
+1. Delta: fy4-s2 b now writes $E_{\text{p}0}$ (was $E_\text{p}$); rendered line checked at 390 px, no KaTeX error, no overflow.
