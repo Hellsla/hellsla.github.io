@@ -91,7 +91,7 @@ The objects of physics come in hugely different sizes: a proton is about $1.7\cd
 
 ### Order of magnitude tells the rough size
 
-The **order of magnitude** is the power of ten that is closest to the number on the axis of powers of ten. The order of magnitude of $a\cdot10^{n}$ is $10^{n}$ when $a<\sqrt{10}\approx3.16$, and $10^{n+1}$ when $a>\sqrt{10}$. The limit $\sqrt{10}$ lies halfway between the points $10^{n}$ and $10^{n+1}$ on the axis of powers of ten. A person's height $1.7\,\text{m}$ is of the order $10^{0}\,\text{m}$, but the height of Mount Everest, $8.8\cdot10^{3}\,\text{m}$, is of the order $10^{4}\,\text{m}$.
+The **order of magnitude** is the power of ten that is closest to the number on the axis of powers of ten. For example, a person's height $1.7\,\text{m}$ is of the order $10^{0}\,\text{m}$, but the height of Mount Everest, $8.8\cdot10^{3}\,\text{m}$, is of the order $10^{4}\,\text{m}$.
 
 The sizes of objects are rounded values: people, ants and galaxies are not all the same size. That is why the order of magnitude is often enough for a comparison, and it is worth asking how accurate the numbers are.
 

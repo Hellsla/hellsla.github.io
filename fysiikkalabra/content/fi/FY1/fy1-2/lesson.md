@@ -478,12 +478,14 @@ Kun siirrytään pienempään yksikköön, lukuarvo kasvaa: $4{,}2\,\text{km} = 
 ### Jokaiselle mittakaavalle oma yksikkö
 Yksikkö valitaan niin, että lukuarvo on helppo lukea. Luvussa *Fysiikka tieteenä ja maailmankaikkeuden mittasuhteet* nähtiin, että aineen ja maailmankaikkeuden rakenteet ovat kymmenpotenssien portailla. Jokaiselle portaalle on kätevä yksikkö:
 
-- **Atomiydin**, noin $10^{-15}\,\text{m}$: femtometri, $1\,\text{fm} = 10^{-15}\,\text{m}$.
-- **Atomi**, noin $10^{-10}\,\text{m}$: nanometri, $1\,\text{nm} = 10^{-9}\,\text{m}$.
-- **Punasolu**, noin $10^{-5}\,\text{m}$: mikrometri, $1\,\mu\text{m} = 10^{-6}\,\text{m}$.
-- **Maa**, noin $10^{7}\,\text{m}$: kilometri, $1\,\text{km} = 10^{3}\,\text{m}$.
-- **Planeettojen radat**, noin $10^{12}\,\text{m}$: astronominen yksikkö, $1\,\text{AU} \approx 1{,}5\cdot10^{11}\,\text{m}$.
-- **Tähtien välimatkat**, noin $10^{16}\,\text{m}$ ja enemmän: valovuosi, noin $9{,}46\cdot10^{15}\,\text{m}$.
+| Rakenne | Koko | Yksikkö | Yksikön arvo |
+|---|---|---|---|
+| **Atomiydin** | noin $10^{-15}\,\text{m}$ | femtometri | $1\,\text{fm} = 10^{-15}\,\text{m}$ |
+| **Atomi** | noin $10^{-10}\,\text{m}$ | nanometri | $1\,\text{nm} = 10^{-9}\,\text{m}$ |
+| **Punasolu** | noin $10^{-5}\,\text{m}$ | mikrometri | $1\,\mu\text{m} = 10^{-6}\,\text{m}$ |
+| **Maa** | noin $10^{7}\,\text{m}$ | kilometri | $1\,\text{km} = 10^{3}\,\text{m}$ |
+| **Planeettojen radat** | noin $10^{12}\,\text{m}$ | astronominen yksikkö | $1\,\text{AU} \approx 1{,}5\cdot10^{11}\,\text{m}$ |
+| **Tähtien välimatkat** | noin $10^{16}\,\text{m}$ ja enemmän | valovuosi | noin $9{,}46\cdot10^{15}\,\text{m}$ |
 
 Esimerkiksi vetyatomin halkaisija on $0{,}11\,\text{nm}$ ja protonin $1{,}7\,\text{fm}$. Yksikkö ei muuta kokoa, vain sen kirjoitustapaa. Astronominen yksikkö ja valovuosi eivät ole SI-yksiköitä, mutta ne on määritelty metreinä, joten ne voi aina muuntaa metreiksi.
 

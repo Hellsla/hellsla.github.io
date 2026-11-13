@@ -478,12 +478,14 @@ When you move to a smaller unit, the numerical value grows: $4.2\,\text{km} = 4.
 ### A unit for every scale
 A unit is chosen so that the numerical value is easy to read. In the chapter *Physics as a science and the scales of the universe* you saw that the structures of matter and of the universe lie on steps of powers of ten. Each step has a convenient unit:
 
-- **Atomic nucleus**, about $10^{-15}\,\text{m}$: femtometre, $1\,\text{fm} = 10^{-15}\,\text{m}$.
-- **Atom**, about $10^{-10}\,\text{m}$: nanometre, $1\,\text{nm} = 10^{-9}\,\text{m}$.
-- **Red blood cell**, about $10^{-5}\,\text{m}$: micrometre, $1\,\mu\text{m} = 10^{-6}\,\text{m}$.
-- **Earth**, about $10^{7}\,\text{m}$: kilometre, $1\,\text{km} = 10^{3}\,\text{m}$.
-- **Orbits of the planets**, about $10^{12}\,\text{m}$: astronomical unit, $1\,\text{AU} \approx 1.5\cdot10^{11}\,\text{m}$.
-- **Distances between stars**, about $10^{16}\,\text{m}$ and more: light-year, about $9.46\cdot10^{15}\,\text{m}$.
+| Structure | Size | Unit | Value of the unit |
+|---|---|---|---|
+| **Atomic nucleus** | about $10^{-15}\,\text{m}$ | femtometre | $1\,\text{fm} = 10^{-15}\,\text{m}$ |
+| **Atom** | about $10^{-10}\,\text{m}$ | nanometre | $1\,\text{nm} = 10^{-9}\,\text{m}$ |
+| **Red blood cell** | about $10^{-5}\,\text{m}$ | micrometre | $1\,\mu\text{m} = 10^{-6}\,\text{m}$ |
+| **Earth** | about $10^{7}\,\text{m}$ | kilometre | $1\,\text{km} = 10^{3}\,\text{m}$ |
+| **Orbits of the planets** | about $10^{12}\,\text{m}$ | astronomical unit | $1\,\text{AU} \approx 1.5\cdot10^{11}\,\text{m}$ |
+| **Distances between stars** | about $10^{16}\,\text{m}$ and more | light-year | about $9.46\cdot10^{15}\,\text{m}$ |
 
 For example, the diameter of a hydrogen atom is $0.11\,\text{nm}$ and that of a proton $1.7\,\text{fm}$. A unit does not change the size, only the way of writing it. The astronomical unit and the light-year are not SI units, but they are defined in metres, so you can always convert them to metres.
 
