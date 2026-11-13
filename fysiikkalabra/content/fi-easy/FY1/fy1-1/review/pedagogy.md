@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 52e40c11931c671e
+CONTENT-HASH: c47f1ae7e8ee25d5
 
 ## Blocking
 
@@ -7,11 +7,12 @@ CONTENT-HASH: 52e40c11931c671e
 
 ## Polish
 
-- lesson.md:94 — the lesson no longer says when a number rounds up, yet the example "8,8·10^3 m → 10^4 m" and Tarkista check-1 (4,0·10^16 m → 10^17) need it. The student meets the rule only in check-1's wrong-answer feedback ("yli noin 3"). Fix: add one plain sentence after the examples, e.g. "Jos kerroinosa on yli noin 3, suuruusluokka on seuraava kymmenpotenssi, esimerkiksi $8{,}8\cdot10^{3}$ → $10^{4}$." No sqrt needed.
+- lesson.md:23 — "$10^{n}$" and "$10^{n+1}$" use n without saying what it is; add "Kun luku on $a\cdot10^{n}$ ja $a$ on kerroin, ..." or an example right after (the 8,8·10^3 example already follows, so minor).
 
 ## Checked
 
-- Diff only: the sqrt(10) sentences are gone; the "Toinen esimerkki" sentence reads cleanly and the paragraph is shorter (easier for S2).
-- Nothing else in lesson.md or inquiry.json refers to sqrt(10) or 3,16 (grep); no dangling reference, the exercises/solutions are not judged here.
-- The remaining definition ("lähimpänä lukua" on the power-of-ten axis) is still correct and matches the axis figure.
-- Content hash unchanged at start and end; no other part of the lesson touched.
+- Diff only: my earlier Polish finding is fixed; the rule "alle noin 3 / yli noin 3" is back in the Suuruusluokka paragraph.
+- Examples agree with the rule: 170 = 1,7·10^2 → 10^2; 1,7 m → 10^0; 8,8·10^3 m → 10^4.
+- Matches the glossary definition of suuruusluokka and the feedback of Tarkista check-1 (4,0·10^16 → 10^17).
+- Paragraph is still short, one idea, no wall of text.
+- Hash unchanged at start and end.
