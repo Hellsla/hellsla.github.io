@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: eee3497ff21144ab
+CONTENT-HASH: 52e40c11931c671e
 
 ## Blocking
 
 ## Polish
-- lesson.md:272 — the aria-label of the object-types figure says "Jokainen askel akselilla on kymmenkertainen koko", but the ticks are two powers of ten apart (labels $10^{4}$, $10^{8}$, … every four), so one tick interval is a 100-fold step — say "jokainen kymmenpotenssi on kymmenkertainen koko" or name the 2-decade tick spacing.
-- inquiry.json:115 (`howto`) — "Lähennä/Loitonna muuttavat näkymän leveyden kymmenesosaksi tai kymmenkertaiseksi": in the code (`goTo(ceil(L)-1)`, `goTo(floor(L)+1)`) the buttons go to the next whole power of ten, so from $10^{-9{,}4}\,\text{m}$ the view goes to $10^{-10}\,\text{m}$, not $10^{-10{,}4}\,\text{m}$. Say "siirtää näkymän seuraavaan kymmenpotenssiin".
-- sim-spec.md — it gives the visibility range as "1/2000 – 3", while the `calc` box gives "1/1000–3". The code reaches 50 % opacity at $d/W \approx 1/1200$, so `calc` is right. Align the spec.
+- inquiry.json `check-1` feedback (both the $10^{16}$ and the $10^{17}$ option) — the feedback gives the rule "kun kerroinosa on yli noin 3, lähin kymmenpotenssi on seuraava". After the teacher's edit the theory no longer states this cut-off. It only says "kymmenpotenssien akselilla lähimpänä". The feedback is still correct, because $\log_{10}4 = 0{,}60 > 0{,}5$ and its second sentence explains it on the axis. But a student meets the "noin 3" rule only here. Optionally lead with the axis sentence ("akselilla $4{,}0\cdot10^{16}$ on lähempänä kohtaa $10^{17}$") and give "noin 3" as a rule of thumb. This is not an error.
+- inquiry.json `simulaatio.howto` (carried from the earlier round) — "Lähennä/Loitonna muuttavat näkymän leveyden kymmenesosaksi tai kymmenkertaiseksi". In fact the buttons jump to the next whole power of ten.
 
 ## Checked
-- Delta (round 2): lang/fi-easy.json:1078 `sims.fy1-1.o_proxima` "Proxima Centauri" → "etäisyys Proxima Centauriin". The new label is correct. The OBJ value $4{,}0\cdot10^{16}\,\text{m}$ is the Sun–Proxima distance ($4{,}24$ light-years $= 4{,}01\cdot10^{16}\,\text{m}$), not the star's size. The drawing `DRAW.proxima` is a dashed line from the Sun to the star, so the label now names what is drawn. It matches lang/fi.json and check-1 ("Proxima Centaurin etäisyys"). No experiment uses this object. The content hash is unchanged (lang texts are outside it) and the diff in the packet was empty, so nothing else changed.
-- From round 1, still valid: one script recomputed every number in the lesson and inquiry.json next to lesson-answers.py. Exp-1 gives 5, exp-2 gives 8, exp-3 gives −4, siirto gives $12\,732\,\text{km}$, check-2 gives $57\,917$ and the example gives $6{,}47\cdot10^{4}$. All agree.
-- Each experiment's start state gives the object its intro names (`mainObj`). `kohdeExp = round(log10 m)` is the same as the $\sqrt{10}$ magnitude rule.
-- The physical values are right: the Sgr A* horizon, the Coulomb/gravity ratio for two protons ($10^{36}$), the observable universe, the Milky Way, the heliopause, the Oort cloud and the sim OBJ sizes. The to-scale axes in the figures are right too.
-- Interactions, Tunnista, the observable universe, the exit ticket and the check-3 model answers are correct. Exactly one option is right in each choice. The scope is within the FY1 brief.
+- Diff (commit 9e7b1d7): the Suuruusluokka paragraph lost its $\sqrt{10}\approx3{,}16$ sentences. What is left is correct. "The power of ten nearest the number on the power-of-ten axis" is well defined, because the figure just above it is an evenly spaced (logarithmic) axis drawn to scale. All three examples are right under either reading: $170 \to 10^{2}$, $1{,}7\,\text{m}\to10^{0}\,\text{m}$ and $8{,}8\cdot10^{3}\,\text{m}\to10^{4}\,\text{m}$. This is a fair level-C simplification and leaves no wrong picture.
+- The edited paragraph agrees with the Tiivistelmä ("lähin kymmenpotenssi"), with the glossary (cut-off about 3) and with the sim's `kohdeExp = round(log10 m)`. That rule gives $-10$, $-15$, $-35$, $27$, $-4$ (hair, $7{,}0\cdot10^{-5}$), $13$ (Neptune, $4{,}5\cdot10^{12}$) and $21$ (Milky Way). These are the values the experiments' answers use.
+- One script recomputed the lesson and inquiry numbers next to lesson-answers.py. Example: $k = 6{,}47\cdot10^{4}$, 5 steps. Exp-1: 5. Exp-2: 8. Exp-3: $-4$. Siirto: $12\,732\,\text{km}$; its distractors $40\,000$, $6366$ and $111$ are also right. Check-2: $57\,917$, with the distractor $1{,}73\cdot10^{-5}$. Virhe: $109$. Observable universe: $8{,}8\cdot10^{26}\,\text{m} = 93$ billion light-years. Everything agrees.
+- Check-1: exactly one option is correct, $10^{17}\,\text{m}$, and every distractor's feedback is right.
+- Rest of the lesson, re-read in full mode: structure of matter, nucleus/atom ratio, heliopause and Oort cloud, neutron star and Sgr A* horizon, the four interactions (Coulomb/gravity ratio $\sim10^{36}$ for two protons), Tunnista, Vuorovaikutukset, exit ticket and check-3 model answer. No error or unstated condition found. Scope stays within the FY1 brief.
+- Hash $52e40c11931c671e$ was the same at the start and at the end.
