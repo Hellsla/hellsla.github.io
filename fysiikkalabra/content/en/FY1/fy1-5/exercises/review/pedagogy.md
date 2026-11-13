@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 38db144aeccae4ef
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 30cb6983115dbf4a
+SCOPE: delta added-exercise from d354f1f5a2bbfb83 base 81db4a6fd727
 
 ## Blocking
 - none
@@ -9,5 +9,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- exercises diff: units to \text, Δs = vt for distance tasks (s_0 dropped from Given, consistent with lesson), 'opiskelija', 'lukumäärään', Reasonableness unit-bearing products, 'Maa vetää sitä heikommin', Mars wording; numbers and answers unchanged, answers.py untouched.
-- Language en: matches the Finnish fixes; fi-easy stays plain Finnish.
+- Added exercise judged: level 1, wording (situation then question), table lookup is needed and stated, step-by-step solution, arithmetic verified.
+- Fit within the set of 22: progression, kinds and no repeat of the worked example.
+- Phone/language: nothing in the added text that clips; English reads plainly.

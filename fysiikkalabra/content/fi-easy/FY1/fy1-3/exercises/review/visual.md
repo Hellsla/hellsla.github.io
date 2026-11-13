@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f4e03d96d0aea49d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 490cd5ebb646e9f3
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-3-L1-09 hint — "MAFY-taulukon taulukossa Veden tiheys …" still clumsy — "Arvo löytyy MAFY-taulukon kohdasta Veden tiheys eri lämpötiloissa."
+- [Minor] fy1-3-L1-09 Vastaus — the "(tarkemmin …)" sentence starts lowercase under the boxed answer; fine, but a full sentence would read better.
 
 ## Checked
-- fy1-3-L3-05: Periaate now names the check as a simplified comparison of the stated uncertainty estimates; Vastaus says the results are not consistent per these estimates, the estimates are not hard limits and separation alone does not decide statistical significance.
-- Gap 0.04 g/cm³ and intervals 2,69–2,79 / 2,55–2,65 unchanged and correct.
-- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- Delta: fy1-3-L1-09 (3-9) at 1280 px, open-exercises parts 9 and 10: task (situation, then question as its own sentence), hint, lock, Annettu, two-row Kaava and Sijoitus chains aligned at "=", Vastaus box, split-out "Lisäksi: virhearvio" paragraph, Järkevyys. KaTeX clean, units upright, decimal commas, no clipping; the solution layout fixed in round 1 holds.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

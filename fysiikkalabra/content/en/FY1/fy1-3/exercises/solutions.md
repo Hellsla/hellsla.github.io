@@ -205,8 +205,10 @@
 **Given:** measurements $1.004$; $1.012$; $1.008$; $1.014$; $1.012$ (in $\text{g/cm}^3$); from the table (MAFY table, density of water at different temperatures) $\rho_\text{table} = 0.998206\,\text{g/cm}^3$ at $20\,{}^\circ\text{C}$
 **Asked:** the deviation of the mean $\bar{x}$ from the table value in percent
 **Principle:** The measurement result is the mean $\bar{x}$, and it is compared with the known table value. The deviation is divided by the table value and given as a percentage.
-**Formula:** $\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{5}$ and deviation $= \dfrac{\bar{x} - \rho_\text{table}}{\rho_\text{table}}\cdot100\,\%$
+**Formula:** $\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{5}$ and $\text{deviation} = \dfrac{\bar{x} - \rho_\text{table}}{\rho_\text{table}}\cdot100\,\%$
 **Conversions:** All densities are in $\text{g/cm}^3$, so no conversions are needed; the deviation is a dimensionless ratio multiplied by one hundred to give percent.
-**Substitution:** $\bar{x} = \dfrac{1.004 + 1.012 + 1.008 + 1.014 + 1.012}{5}\,\dfrac{\text{g}}{\text{cm}^3} = 1.010\,\dfrac{\text{g}}{\text{cm}^3}$ and deviation $= \dfrac{1.010 - 0.998206}{0.998206}\cdot100\,\% = 1.18\,\%$
-**Answer:** the deviation is $1.2\,\%$ (calculated value $1.18\,\%$). The table value is from the MAFY table (density of water at different temperatures); an answer within about $\pm 4\,\%$ is accepted. The error estimate is $\Delta x = \dfrac{1.014 - 1.004}{2}\,\dfrac{\text{g}}{\text{cm}^3} = 0.005\,\dfrac{\text{g}}{\text{cm}^3}$, so the interval $\bar{x} \pm \Delta x$ is $1.005\ldots1.015\,\text{g/cm}^3$ and does not contain the table value: the measurements probably have a systematic error.
+**Substitution:** $\bar{x} = \dfrac{1.004 + 1.012 + 1.008 + 1.014 + 1.012}{5}\,\dfrac{\text{g}}{\text{cm}^3} = 1.010\,\dfrac{\text{g}}{\text{cm}^3}$ and $\text{deviation} = \dfrac{1.010 - 0.998206}{0.998206}\cdot100\,\% = 1.18\,\%$
+**Answer:** $1.2\,\%$ (more precisely $1.18\,\%$), two significant figures, because the difference $1.010\,\text{g/cm}^3 - 0.998\,\text{g/cm}^3 = 0.012\,\text{g/cm}^3$ has two significant figures. The table value is from the MAFY table (density of water at different temperatures); an answer within about $\pm 4\,\%$ is accepted.
+
+Additionally: the error estimate is $\Delta x = \tfrac{1.014 - 1.004}{2}\,\text{g/cm}^3 = 0.005\,\text{g/cm}^3$, so the interval $\bar{x} \pm \Delta x$ is $1.005\ldots1.015\,\text{g/cm}^3$ and does not contain the table value: the measurements probably have a systematic error.
 **Reasonableness:** All measurements are above the table value and the deviation is over one percent, but the density of water is about $1\,\text{g/cm}^3$, so the mean is of the right size and the deviation is small.

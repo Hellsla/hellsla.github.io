@@ -1,22 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 1e1a9cc52b4e89d7
+CONTENT-HASH: 14aa4c1c63c79a34
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- (visual, not physics) Lines leaving the bottom bound (y 278) stop about 12 px above the bottom fade (290); in the 390 px capture no abrupt end is visible, but a line clipped there would end in white.
 
-## Checked (delta 2026-10-31)
-- `topic` "sahko" fits the physics area.
-- E3 to E2 for `oma-tekija`: the extension repeats the same drop with another coil (one changed factor, same sensor and analysis), so E2 is justified and matches inventory (E2–E3).
-- Guides mittausohjelma, taulukkolaskenta and the fit guides fit voltage logging and peak/area analysis.
-- Report link `[[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]` fits the report task; no physics changed.
-
-## Delta 2 (2026-10-31)
-- Raportoi: the tvt-tyoselostus link moved to its own sentence; wording only, no physics changed.
-
-## Delta 4 (2026-10-31)
-
-- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
-- Selected-interval integral of the first pulse up to the sign change is $N\Delta\Phi$; recording it as an absolute value handles a reversed coil.
+## Checked (delta 2026-11-13)
+- Figure *flux* redrawn (figures.py, investigation.md SVG), capture fy10-induktio-fig-3-390.png viewed. The lines are still traced from the two-pole model (source at the red pole, sink at the blue); only the points inside the magnet are now dropped, so each line starts on the red half's surface and ends on the blue half's surface instead of at one pole point: physically better (field lines outside a bar magnet leave its N half and enter its S half). Direction arrows point away from the red pole on every line, so the lines leave red and return to blue. The lines through the coil ($x_0$, inside the turns) are the darker ones; the lighter ones curve past the coil back towards the blue half, and the frame fades them out rather than ending them. The alt text (four darker lines through the turns, lighter ones back to the blue end) matches. Label *käämi, N kierrosta* moved up to clear the lines: placement only. No text or physics changed.

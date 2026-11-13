@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 99cf25d118827e5e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 02a8e105c56f8695
+SCOPE: delta added-exercise from d5ef6e898d999fd5 base 81db4a6fd727
 
 ## Blocking
 - none
@@ -9,6 +9,10 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-1
 - none
 
 ## Checked
-- fy1-3-L3-05: Periaate now names the check as a simplified comparison of the stated uncertainty estimates; Vastaus says the results are not consistent per these estimates, the estimates are not hard limits and separation alone does not decide statistical significance.
-- Gap 0.04 g/cm³ and intervals 2,69–2,79 / 2,55–2,65 unchanged and correct.
-- Language version en judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- Added task fy1-3-L1-09 only; hash recomputed at start and end.
+- Table value: water at 20 °C 0.998206 g/cm^3; correct.
+- Mean 5.050/5 = 1.010 g/cm^3; deviation (1.010 − 0.998206)/0.998206 = 1.1815 %; answers.py 1.18 agrees; the shown 1.2 % is 1.6 % from it, inside the 4 % tolerance.
+- Rounding to two figures justified by the two-figure difference 0.012 g/cm^3.
+- Half the range Δx = 0.005 g/cm^3 named an error estimate, as the passed set's solutions do; the conclusion says the systematic error is only probable (guardrail: todennäköisesti), and the remark is not graded.
+- All five results above the table value backs the systematic-error reading.
+- en numbers identical to the Finnish original.

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 3a7b65d208dc939d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 4a0ff6dc31b1442a
+SCOPE: delta added-exercise from b79a628ab354a3a9 base 81db4a6fd727
 
 ## Blocking
 - none
@@ -9,9 +9,9 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Järkevyys checks now carry units: 0,5 cm/min · 30 min = 15 cm; 0,60 cm/vrk · 10 vrk + 4,0 cm = 10 cm; 0,85 m/s · 0,47 s = 0,40 m; 0,080 mm/g · 100 g = 8 mm; 2,5 m/s = 2,5 · 3,6 km/h = 9 km/h; all recomputed
-- L3-03: Δx as point separation vs Δk, Δy_luku as uncertainties: the added note is correct and the ratio 16 is unchanged
-- (0,475 ± 0,075) m/s = 0,40–0,55 m/s and (0,475 ± 0,15) m/s = 0,33–0,63 m/s correct
-- "suureiden välistä riippuvuutta" (instead of "ilmiön lakia") and "tulos on uskottava" (1,0 kg/l) are more accurate claims; lukumäärä N fine
-- answers.py unchanged; units upright in task texts
-- en: same changes as fi, meaning preserved
+- Added task fy1-4-L1-09 only; hash recomputed at start and end.
+- Table value: aluminium 2.70·10^3 kg/m^3; correct.
+- Linear model m = kV through the origin with k = ρ, matching the lesson's proportional model; conversion 2.70·10^3 kg/m^3 = 2.70 g/cm^3 right (10^3 g/kg, 10^6 cm^3/m^3).
+- Independent recompute 121.5 g = answers.py; the shown 1.2·10^2 g is 1.2 % below it, within 4 %.
+- Two significant figures from V = 45 cm^3; reasonableness check against water (45 g, ×2.7) is real.
+- en numbers identical to the Finnish original.

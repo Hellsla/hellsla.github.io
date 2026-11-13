@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5c84c3bbd0a47dd8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 06e2bb3f719a5f7d
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-2-L1-10 Vastaus — "Signaalin matka ei ole tarkalleen se, joten kolme merkitsevää numeroa riittää." The pronoun "se" is vague for an S2 reader; "Kuun etäisyys MAFY-taulukossa on keskiarvo keskipisteestä keskipisteeseen" is also heavy. Suggest: "Taulukon arvo on Kuun ja Maan keskipisteiden välinen keskietäisyys. Signaalin todellinen matka on hieman erilainen, joten kolme merkitsevää numeroa riittää."
+- [Minor] fy1-2-L1-10 Annettu — "taulukosta (MAFY-taulukko, Aurinkokunta) Kuun keskietäisyys Maasta $s = …$" still runs together (noted in earlier rounds) — "Kuun keskietäisyys Maasta (MAFY-taulukko, Aurinkokunta): $s = …$".
+- [Minor] fy1-2-L1-10 — the data has four significant figures but the answer is given with three; the new Vastaus paragraph explains it, so this is consistent. Optional: say "pyöristetään kolmeen merkitsevään numeroon" so the step is visible.
 
 ## Checked
-- fy1-2-L3-02: question now asks for a ratio (how many times one screen width), so it no longer reads as a count of whole screens (675); answer 674.4, tolerance 0.02 unchanged; unit "" as in other ratio tasks.
-- Kysytty, Periaate, Vastaus describe the same ratio N; Järkevyys still fits.
-- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- Delta, fresh captures (screenshot.py run at start): fy1-2-open-exercises-1280-9 (task 2-10: text, hint, answer chip "t ≈ 1,28 s", Annettu, Kaava) and -10 (Muunnokset, Sijoitus, Vastaus, Järkevyys), solution open.
+- Changed value: answer chip, Sijoitus chain "= 1,282 s ≈ 1,28 s" (aligned rows, fraction legible), boxed Vastaus "t ≈ 1,28 s" and the "kolmella merkitsevällä numerolla" text agree; ±4 % tolerance unchanged. Decimal comma, upright units, thin spaces and \cdot are correct; layout intact, no clipping.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

@@ -22,6 +22,8 @@ FY1–FY4 ja FY9 on tehty (#501, #522, #527, #529). Keskinopeuden tunnus on kaik
 
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
 
+Tehty (#549, erät 2–4): fy10-liukukitka, fy10-jousivakio, fy10-induktio (kuva osin, ks. PR), tvt-kuvaaja ja tvt-tyoselostus; fy10-hiuksen-paksuuden löydös ei pitänyt kuvasta (ei muutettu). Jäljellä: erä 1 (jaetut komponentit), Minor-erä ja yhteinen kuvasääntö.
+
 Auditointi on tehty (#536: 28 PASS, 8 FAIL, ei Critical-löydöksiä, 159 Minor). Korjataan `/quality-audit <id> --fix`
 #536:n kuvauksen järjestyksessä: ensin Major-löydökset tvt-epavarmuus, tvt-kuvaaja, tvt-tyoselostus, fy10-jousivakio,
 fy10-induktio, fy10-lammonjohtuminen, fy10-liukukitka ja fy10-hiuksen-paksuus. fy10-liukukitkan kallistusvirhe
@@ -124,6 +126,10 @@ palstassa, oikea palsta tyhjä, "oikealle kuva"): kuvateksteineen valokuva asett
 kappaleen viereen oikeaan palstaan samalla säännöllä kuin SVG-kuvat. Kyseinen kappale (~130 sanaa) ylittää myös
 120 sanan rajan: kirjataan kohtaan 8c (kappalejako) lukuun liittyväksi löydökseksi.
 
+
+Ennen/jälkeen-kuviin myös FY1 (opettaja 2026-11-13): fy1-1 "Aine koostuu sisäkkäisistä rakenteista" (väli väliotsikon
+ja kappaleen välissä, vieressä rakennekuva) ja "Atomi on ydintään kymmeniätuhansia kertoja suurempi" (väli kappaleen
+ylä- ja alapuolella).
 ## 8f. Animoitu kuva: hiukkasten värähtely ja lämpölaajeneminen (opettaja 2026-11-13, pilotti fy3-8)
 
 Opettaja kysyi, sopisiko looppaava animaatio fy3-8:n kuvan "kylmä / lämmin, d₀ / d > d₀" tilalle. Sopii, kun se
@@ -146,6 +152,40 @@ E_\text{hyöty}/E$, $E = Pt$, $Q = rm$, energiatase), sitten johdettu kaava, sie
 sitten sijoitus. Korjataan kurssi kerrallaan `/exercises`- ja `/practice`-putkella (sisältömuutos, katselmoinnit
 scope-säännön mukaan); järjestys kuten kohta 2. Ei rinnakkain saman kurssin tehtäväkatselmoinnin kanssa: yhdistetään
 samaan ketjuun, kun kurssin katselmointi on vielä kesken (FY5, FY6, FY7).
+
+## 8h. Ensimmäinen ennuste näkyy aina (opettaja 2026-11-13)
+
+Ennusta-vaihe on nyt yksi suljettu laatikko "Tee ennusteet ennen tutkimista · N kysymystä" (CLAUDE.md Lesson page 3,
+2026-10-26), joten vaihe näyttää tyhjältä. Opettaja: "ehkä ensimmäinen ennuste pitäisi aina näkyä. Nyt jää muuten
+turhan tyhjäksi tuo ennuste-kohta." Muutos: ensimmäinen ennustekysymys näkyy auki vaiheen alussa, muut (jos on)
+laatikossa "Lisää ennusteita · N kysymystä"; yhden ennusteen luvussa ei laatikkoa lainkaan. Sitoutuminen ennen
+vastausta (gating), tallennus ja Palaa ennusteisiisi -yhteenveto ennallaan. Sivupohjan muutos (inquiry.py/js,
+site.css), ei lukujen tekstejä; korjaa CLAUDE.md:n Lesson page 3 samassa PR:ssä; test_inquiry ja test_progress.
+Yhdistetään #546:n jälkeen (sama Ennusta-alue).
+
+## 8i. FY2: energialajit taulukoksi (opettaja 2026-11-13)
+
+fy2-1:n "Seitsemän energialajia" on luettelo pitkiä kohtia; opettaja: "tässäkin toimisi taulukko" (CLAUDE.md: "A table
+when the content is a table"). Taulukko, esim. sarakkeet Energialaji (ja tunnus) | Mihin liittyy | Esimerkki;
+käsitekorttien alleviivaukset säilyvät. Lämpöenergian kohdan selitys lämmön ja lämpöenergian erosta ei mahdu soluun:
+se jää taulukon alle omaksi kappaleekseen. Kaikki kielet (fi, en, fi-easy). Sisältömuutos: katselmoinnit
+`reviews.py scope fy2-1` mukaan (opettaja pyysi muutosta itse). Pieni oma PR.
+
+## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
+
+fy4-1:n Pohdinnassa ilmiö on pyöräilijän matka kauppaan ja takaisin (matkamittari 4,0 km, siirtymä 0 m) ja kysymys
+paikka–aika-kuvaajasta, mutta sen alla oleva "Kertaa yläkoulusta" -monivalinta kysyy juoksijan nopeutta (150 m,
+20 s). Opettaja: "tämä ei tunnu loogiselta, tuo monivalinta ei liity tuohon pohdintaan." Sääntö (CLAUDE.md, FY3/FY1
+-osio): Pohdinnan kertaustehtävä (`herata`-vaiheen retrieval-`choice`, docs/inquiry.md) kysyy pohjatietoa saman
+ilmiön kautta, esim. tässä pyöräilijän keskivauhti tai matkan ja siirtymän ero. Korjaus: ensin fy4-1 (fi, en,
+fi-easy), sitten kaikkien lukujen kertaustehtävät tarkistetaan pedagogisesti (`/quality-audit <id> --audit-only`
+vain tämän kohdan osalta tai skripti, joka listaa kertaustehtävän ja ilmiön rinnakkain opettajalle) ja korjataan
+kurssi kerrallaan. Sisältömuutos: pedagogy-katselmointi delta, science delta (uusi luku/arvo).
+
+Järjestys (opettaja 2026-11-13, "joo hyvä"): Pohdinta-vaihe näytetään järjestyksessä ilmiön kuvaus → kertaustehtävä
+samasta tilanteesta → pohdintakysymys (nyt kysymys on ennen kertaustehtävää). Sivupohjan muutos (inquiry.py/js),
+kerran kaikkiin lukuihin; tehdään vasta, kun kertaustehtävät on korjattu liittymään ilmiöihinsä, ja kirjataan
+CLAUDE.md:hen ja docs/inquiry.md:hen samassa PR:ssä.
 
 ## 9. Esimerkkikokeet FY7 ja FY8 (opettaja 2026-11-13)
 
