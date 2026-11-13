@@ -174,9 +174,7 @@
    "luku": "fy4-2",
    "aihe": "fy4-kiihtyva-liike",
    "kasite": "Kiihtyvyys",
-   "maaritelma": "Kertoo nopeuden muuttumisnopeuden.",
-   "kaava": "a = \\dfrac{\\Delta v}{\\Delta t}",
-   "kaava_puhe": "a on delta v jaettuna delta t:llä"
+   "maaritelma": "Kertoo nopeuden muuttumisnopeuden."
   },
   {
    "id": "fy4-keskikiihtyvyys",
@@ -184,7 +182,9 @@
    "luku": "fy4-2",
    "aihe": "fy4-kiihtyva-liike",
    "kasite": "Keskikiihtyvyys",
-   "maaritelma": "Nopeuden kokonaismuutos jaetaan siihen kuluneella ajalla."
+   "maaritelma": "Nopeuden kokonaismuutos jaetaan siihen kuluneella ajalla.",
+   "kaava": "a_{\\text{k}} = \\dfrac{\\Delta v}{\\Delta t}",
+   "kaava_puhe": "a k on delta v jaettuna delta t:llä"
   },
   {
    "id": "fy4-hetkellinen-kiihtyvyys",

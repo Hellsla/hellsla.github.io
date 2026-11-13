@@ -174,9 +174,7 @@
    "luku": "fy4-2",
    "aihe": "fy4-kiihtyva-liike",
    "kasite": "Acceleration",
-   "maaritelma": "The rate of change of velocity.",
-   "kaava": "a = \\dfrac{\\Delta v}{\\Delta t}",
-   "kaava_puhe": "a equals delta v divided by delta t"
+   "maaritelma": "The rate of change of velocity."
   },
   {
    "id": "fy4-keskikiihtyvyys",
@@ -184,7 +182,9 @@
    "luku": "fy4-2",
    "aihe": "fy4-kiihtyva-liike",
    "kasite": "Average acceleration",
-   "maaritelma": "The total change in velocity divided by the time it took."
+   "maaritelma": "The total change in velocity divided by the time it took.",
+   "kaava": "a_{\\text{k}} = \\dfrac{\\Delta v}{\\Delta t}",
+   "kaava_puhe": "a k equals delta v divided by delta t"
   },
   {
    "id": "fy4-hetkellinen-kiihtyvyys",
