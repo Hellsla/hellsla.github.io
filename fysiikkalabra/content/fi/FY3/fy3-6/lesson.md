@@ -259,9 +259,10 @@ Kalorimetrissä on $0{,}300\,\text{kg}$ vettä, jonka lämpötila on $20{,}0\,{}
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Merkitään lämpömäärät yhtä suuriksi ja ratkaistaan $c_\text{m}$:
+**Kaava ratkaistuna.** Metallin luovuttama lämpömäärä $Q_\text{m}$ on yhtä suuri kuin veden vastaanottama lämpömäärä $Q_\text{v}$. Kirjoitetaan se auki ja ratkaistaan $c_\text{m}$:
 ```latex
 \begin{aligned}
+&Q_\text{m} = Q_\text{v} \\[6pt]
 &c_\text{m} m_\text{m} (T_\text{m} - T) \\
 &\quad = c_\text{v} m_\text{v} (T - T_\text{v}) \\[6pt]
 &c_\text{m} = \frac{c_\text{v} m_\text{v} (T - T_\text{v})}{m_\text{m} (T_\text{m} - T)}

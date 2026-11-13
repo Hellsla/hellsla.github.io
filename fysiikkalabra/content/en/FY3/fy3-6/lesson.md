@@ -259,9 +259,10 @@ A calorimeter contains $0.300\,\text{kg}$ of water at a temperature of $20.0\,{}
 
 <!-- vaihe -->
 
-**Rearranged formula.** Set the quantities of heat equal and solve for $c_\text{m}$:
+**Rearranged formula.** The heat $Q_\text{m}$ given out by the metal equals the heat $Q_\text{w}$ received by the water. Write it out and solve for $c_\text{m}$:
 ```latex
 \begin{aligned}
+&Q_\text{m} = Q_\text{w} \\[6pt]
 &c_\text{m} m_\text{m} (T_\text{m} - T) \\
 &\quad = c_\text{w} m_\text{w} (T - T_\text{w}) \\[6pt]
 &c_\text{m} = \frac{c_\text{w} m_\text{w} (T - T_\text{w})}{m_\text{m} (T_\text{m} - T)}

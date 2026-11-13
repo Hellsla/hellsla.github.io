@@ -235,9 +235,10 @@ The specific latent heat of vaporisation of water is determined experimentally. 
 
 <!-- vaihe -->
 
-**Rearranged formula.** Set the quantities of heat equal and solve for $r$:
+**Rearranged formula.** The heat $Q_\text{h}$ given out by the heater equals the heat $Q_\text{v}$ needed for vaporisation. Write it out and solve for $r$:
 ```latex
 \begin{aligned}
+&Q_\text{h} = Q_\text{v} \\[6pt]
 &Pt = r\,\Delta m \\
 &r = \frac{Pt}{\Delta m}
 \end{aligned}

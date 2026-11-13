@@ -235,9 +235,10 @@ Veden ominaishöyrystymislämpö määritetään kokeellisesti. Avoin kalorimetr
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Merkitään lämpömäärät yhtä suuriksi ja ratkaistaan $r$:
+**Kaava ratkaistuna.** Lämmittimen luovuttama lämpömäärä $Q_\text{l}$ on yhtä suuri kuin höyrystymiseen kuluva lämpömäärä $Q_\text{h}$. Kirjoitetaan se auki ja ratkaistaan $r$:
 ```latex
 \begin{aligned}
+&Q_\text{l} = Q_\text{h} \\[6pt]
 &Pt = r\,\Delta m \\
 &r = \frac{Pt}{\Delta m}
 \end{aligned}
