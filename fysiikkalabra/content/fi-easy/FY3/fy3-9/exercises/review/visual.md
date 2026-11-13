@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2652c350745c0908
-Mode: delta
-Round: 3
+CONTENT-HASH: 65f7b748b1e5d4e4
 
 ## Blocking
-(none)
-
-## Fixed
-- Data-table captions: after the template change (table.ex-data caption wraps) every data caption in the page measures at 390 px with its right edge at 357 px or less and two lines at most, so "(example data)" / "(esimerkkiaineisto)" is fully visible. Round-2 Major closed. Round-1 fixes (en pick-* aria-labels, fy3-13 L2-08 caption) stay fixed.
+None.
 
 ## Polish
-- [Minor] small tick labels of the fy3-9 pick-* graphs at 390 px; optional.
+- [Minor] fy3-9-L2-09 solution, Muunnokset — `T_2 = 100 + 273{,}15\,\text{K}` mixes a bare number with a unit — write `T_2 = 100\,{}^\circ\text{C} + 273{,}15\,\text{K} = 373{,}15\,\text{K}`.
 
 ## Checked
-- Rebuilt fy3-9 and fy3-13; measured every exercise data caption of en and fi-easy pages at 390 px by script (all fit); opened crops of a two-line caption in fi-easy fy3-13 L3-04 and en fy3-9 L2-06 (wrapped, legible, table unharmed). Rounds 1-2 renders of the tasks and solutions (maths, units, layout) remain valid, as the content hash is unchanged by CSS. Hash re-run at the end: unchanged.
+- Delta: fy3-9-L1-09 solution (open-exercises-1280-10) and fy3-9-L2-09 card with kelvin-points graph plus open solution (open-exercises-L2-1280-13, -14). Graph: axes with units, four points as markers on gridlines, no line drawn, answer not given away; chains and Finnish read well; set still reads as one.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 717b427c7d574c97
+CONTENT-HASH: cdf6e6f6d0480a7d
+SCOPE: delta added-exercise from 717b427c7d574c97 base 81db4a6fd727
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- exercises.json fy3-16-L2-08, options — three options state "jään massa ja lämpötilaero kasvavat molemmat kertoimella 1,5" and so give the student the factors; and the correct one shares a phrase with each of the others (the "centre" cue). Ask only for the factor (puoleen / ei muutu / kaksinkertaiseksi / kolminkertaiseksi) and let the reasons be stage two, or give each wrong option a different cause.
-- solutions.md — the final paragraph tells "jos U-arvo luettaisiin väärin päin ..." in one long run; one line per wrong answer (as in fy3-9-L2-08) reads better.
+1. fy3-16-L1-09 — toistaa L1-02:n (kiuaskiville vettä, joka on jo 100 °C:ssa, Q = rm); vain massa ja MAFY-haku eroavat. Vaihda esim. kylmälaukun tai höyrykattilan tilanteeseen.
+2. fy3-16-L2-10 — jään massa 0,60 kg on tarpeeton, koska kuvaaja antaa energian; sanottu kuvaajasta lukemaan, ok, mutta tehtävä on lähes pelkkä luku ja t = Q/P; se on taso 2:n alalaitaa. Lisää esim. kysymys siitä, kuinka suuri osa energiasta kuluu sulamiseen.
+3. fy3-16-L2-09 — "Lue ... laske" kertoo menetelmän; riittää, mutta oppilaan päätettäväksi voisi jättää, mitkä arvot luetaan.
 
 ## Checked
-- L2-08 (ennuste muutoksesta, new): data and question as separate paragraphs, the question last; the ratio t₂/t₁ = 1,5 · 2 · (2/3) = 2 verified. Within fy3-16 (t = sm/(UAΔT)); different from the worked example (drinks plus ice).
-- Distractors are ignoring U, reading U upside down, ignoring the outdoor temperature; each feedback repairs it with the proportionality. The chapter's warned ideas (cold flowing, mixing) do not apply to a ratio task.
-- Solution: principle with t derived, ratio chain (about 200 px by estimate, fits 300 px), then the wrong answers.
-- Text only: no render opened for this chapter (no 390 px capture exists).
+- L1-09: taso 1, Q = rm = 678 kJ, vihje vain taulukon nimi; Järkevyys vertaa lämmittämiseen (126 kJ).
+- L2-09: kuva tarvitaan, kuvaus antaa pisteet (0 s; 20 °C) ja (180 s; 60 °C), ei c:tä; c = 400·180/(2,0·40) = 900 J/(kg·K) oikein; huomio häviöistä oikea suunta.
+- L2-10: kuvaus antaa 220 kJ päätepisteen; 220000/25 = 8800 s = 2,44 h; riippumaton tarkistus 20,2 + 200 kJ täsmää.
+- Yksiköt, muunnokset (kJ J, s h) ja suomen kieli kunnossa.
+- Kuvat eivät paljasta vastausta.

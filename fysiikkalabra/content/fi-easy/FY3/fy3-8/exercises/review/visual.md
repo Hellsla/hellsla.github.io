@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3ce9e680342bf801
+CONTENT-HASH: 65f7b748b1e5d4e4
 
 ## Blocking
-None. Built preview/fi-easy/fy3-8.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
+None.
 
 ## Polish
 none.
 
-(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)
+## Checked
+- Delta: fy3-8-L1-09 (card with closed Vihje box, open solution: open-exercises-1280-9, -10) and fy3-8-L2-09 (card with length-graph, open solution: open-exercises-L2-1280-13, -14). Layout, KaTeX chains, graph legibility (axes, units, ticks, end points marked, answer not shown), Finnish, set still reads as one.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

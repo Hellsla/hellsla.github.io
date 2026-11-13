@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7701b8401cab51a9
-Mode: translation
-Round: 2
+CONTENT-HASH: 3ff07ece3ff31169
+SCOPE: delta added-exercise from 7701b8401cab51a9 base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-- none
+- fy3-3-L2-08 — the task text lists all five points, so the figure is not needed to answer. Keep for accessibility, or remove the list from the text so the student reads the graph.
+- fy3-3-L2-08 asks for interpolation (90 kPa between 50 and 75 °C); L2-03 already has the same data type with extrapolation. Fine, but the new task adds little new skill.
+- fy3-3-L1-10 solution — "Kelvinlukema on positiivinen, kuten pitääkin" is good; add that the answer −196 °C alone is not the K value if students answer in °C (the unit field already guards it).
 
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): L1-04 Sijoitus now reads ΔT = (45 − 20) K = 25 K, the bracket form used in the other solutions and consistent with the Kaava ΔT/K = (θ_2 − θ_1)/°C.
-- delta review 2026-11-07 round 3 (fixes to round 2 findings): the round-2 Polish items are done: L1-04 Kaava now shows the constant 273,15 cancelling (ΔT/K = (θ_2 − θ_1)/°C), consistent with its Periaate; L2-04 ratio uses θ/°C + 273,15 top and bottom; L2-01 reads T_2 = (288 + 45) K = 333 K. Results unchanged.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): every Kaava now uses T/K = θ/°C + 273,15 and every substitution carries its unit in brackets ((21 + 273,15) K = 294,15 K); algebra, results and significant figures unchanged; the 390 px solution capture reads cleanly.
-- L1-09 is a level 1 concept choice: setting first, the question as its own sentence, the proportional model given, nothing the lesson did not prepare.
-- Distractors are misconception-based (multiplying units, inverting, forgetting K) and each feedback repairs the error with a cancellation check.
-- Solution is stepwise: solve for c, substitute units, check c*T, then an example value.
-- Reading level fits selkosuomi: short sentences, 'kohdistuvat eli osuvat' or 'luku, jolla lämpötila kerrotaan' glossed; same structure as the reviewed Finnish.
+- L1-10: lookup then conversion, reverse of L1-03; level 1 fits; MAFY hint names table.
+- L2-08: solution reads two points, computes slope, solves; sanity check against neighbouring points is good.
+- Tolerance 4 % fits both rounded (77) and exact (77,15) answers.
+- Finnish clear; lämpötila unit forms correct.
