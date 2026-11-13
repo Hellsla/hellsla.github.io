@@ -35,10 +35,12 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
    so alone, after an assessment with comparison captures for the teacher.
 8. Misconception as its own component in Teoria: the component once, then content chapter by chapter, each with
    all three reviews.
-9. Area D: the teacher decides which plan (FY10, Dronelabra, others) is approved for building.
+9. Example exams for FY7 and FY8 (`/exam`). FY8 can start any time; FY7 after its exercise reviews (step 2).
 10. English concept cards for FY6 and FY8 (queue: later, the teacher's decision).
 11. Ahjo and LUMA-tutor onto the shared unit template (`jaksot.py` blocks, as Kilparobotiikka). Last; shared files,
     so alone.
+
+Area D waits for the teacher's decision on which plan (FY10, Dronelabra, others) is approved for building.
 
 ## In parallel
 At most three worker sessions, each on a different course or area:
