@@ -49,14 +49,16 @@ marginaaliraita (kuvat, kaavat, huomautukset). Jaettuja tiedostoja (`templates/`
 tehdään yksin ja yhdistetään ennen muita. Ennen toteutusta vaiheittainen arvio ja vertailukuvat opettajalle
 (CLAUDE.md "Where direction B goes": ei laajaa uudistusta yhdellä kertaa).
 
-## 8. Virhekäsitys omana komponenttinaan (opettaja 2026-11-13)
+## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
 
 Toistuva osa Teoria-vaiheeseen: väite yhdellä lauseella, sitten miksi se ei päde
 (`docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md` kohta 5.2). Komponentti kerran, sitten sisältötyö luku
 kerrallaan: lukujen sisältö muuttuu, joten jokainen luku tarvitsee tiede-, pedagogiikka- ja ulkoasukatselmoinnin.
 
 Opettaja 2026-11-13: "Yleinen virhekäsitys" omassa laatikossaan avattavana (suljettu `<details>`, näppäimistöllä
-avattava, kuten Mallin oletukset ja Laskennan selitys).
+avattava, kuten Mallin oletukset ja Laskennan selitys). Samoin Tiivistelmä omaan avattavaan laatikkoonsa. Tämä osa
+on sivupohjan muutos (build, ei lukujen tekstejä), joten sen voi tehdä ennen virhekäsitysten sisältötyötä; tarkista,
+että käsitekorttien alleviivaus ja sirut Tiivistelmän perässä toimivat laatikon sisällä (test_home.py).
 
 ## 9. Esimerkkikokeet FY7 ja FY8 (opettaja 2026-11-13)
 
