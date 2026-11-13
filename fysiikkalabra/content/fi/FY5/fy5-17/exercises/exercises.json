@@ -333,7 +333,7 @@
       "level": 2,
       "text": "Kuvassa on ultraäänilaitteen A-kuvaus reidestä. Kaiut A, B ja C syntyvät kolmelta kudosrajalta. Ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$. Lue kuvasta kaikujen B ja C hetket. Kuinka paksu on kudoskerros, jota rajaavat kaikuja B ja C vastaavat rajapinnat? Anna vastaus senttimetreinä.",
       "figure": "fy5-17/a-scan",
-      "answer": 3.08,
+      "answer": 2.31,
       "unit": "cm",
       "tolerance": 0.02
     }

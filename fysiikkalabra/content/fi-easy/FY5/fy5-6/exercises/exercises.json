@@ -121,19 +121,19 @@
     {
       "id": "fy5-6-L1-10",
       "level": 1,
-      "text": "Kuvan vasemmalla puolella on Maan rata Auringon ympäri. Lue kuvasta, mikä on Maan pienin ja suurin etäisyys Auringosta. Laske niiden keskiarvo. Käytä keskiarvoa ympyräradan säteenä. Auringon massa on $1{,}99 \\cdot 10^{30}\\,\\text{kg}$. Laske Maan ratanopeus ympyräradan mallilla. Anna vastaus kilometreinä sekunnissa.",
+      "text": "Kuvan vasemmalla puolella on Maan rata Auringon ympäri. Lue kuvasta, mikä on Maan pienin ja suurin etäisyys Auringosta. Laske niiden keskiarvo. Käytä keskiarvoa ympyräradan säteenä. Auringon massa on $1{,}99 \\cdot 10^{30}\\,\\text{kg}$. Kuinka suuri on Maan kiihtyvyys ympyräradan mallilla? Anna vastaus yksikössä $\\text{mm/s}^2$.",
       "figure": "fy5-6/radat",
-      "answer": 29.8,
-      "unit": "km/s",
+      "answer": 5.93,
+      "unit": "mm/s²",
       "tolerance": 0.02
     },
     {
       "id": "fy5-6-L1-11",
       "level": 1,
-      "text": "Luotain kiertää Kuuta lähes ympyrärataa. Luotain on $300\\,\\text{km}$:n korkeudella Kuun pinnasta. Etsi Kuun massa ja säde MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Laske luotaimen ratanopeus. Anna vastaus kilometreinä sekunnissa.",
+      "text": "Luotain kiertää Venusta lähes ympyrärataa. Luotain on $500\\,\\text{km}$:n korkeudella Venuksen pinnasta. Etsi Venuksen massa ja säde MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Laske luotaimen kiertoaika. Anna vastaus minuutteina.",
       "lookup": "MAFY",
-      "answer": 1.55,
-      "unit": "km/s",
+      "answer": 97.4,
+      "unit": "min",
       "tolerance": 0.04,
       "hints": [
         "Arvot ovat MAFY-taulukossa kohdassa *Aurinkokunta*."

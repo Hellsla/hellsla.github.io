@@ -52,6 +52,7 @@ a["fy5-13-L3-05"] = round((v_a + v_b) / 2)               # 330,8 -> 331 m/s
 # L1-09 MAFY lookup: open pipe L = 0,50 m, helium 971 m/s and air (0 degC) 331,5 m/s (MAFY table, speed of sound in gases):
 # f1 = v/(2L); difference (971 - 331,5) / 1,00 m = 639,5 Hz
 a["fy5-13-L1-09"] = (971 - 331.5) / (2 * 0.50)
-# L2-09 figure fy5-13/kuvio-tehtava: L = 1,20 m, four loops (n = 4), v = 75,0 m/s: f = n v/(2L) = 300 / 2,40 = 125 Hz
-a["fy5-13-L2-09"] = 4 * 75 / (2 * 1.20)
+# L2-09 figure fy5-13/kuvio-tehtava: L = 1,20 m, four loops, v = 75,0 m/s; raise to five loops:
+# f4 = 125 Hz, f5 = 156,25 Hz, increase = f1 = v/(2L) = 31,25 Hz
+a["fy5-13-L2-09"] = 5 * 75 / (2 * 1.20) - 4 * 75 / (2 * 1.20)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

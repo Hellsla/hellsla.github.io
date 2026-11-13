@@ -341,9 +341,9 @@
     {
       "id": "fy5-5-L2-09",
       "level": 2,
-      "text": "Kuvassa on putoamiskiihtyvyys neljän taivaankappaleen pinnalla. Jupiterin päiväntasaajan säde on $7{,}15 \\cdot 10^{7}\\,\\text{m}$. Lue kuvasta Jupiterin pinnan gravitaatiokentän voimakkuus ja laske sen avulla Jupiterin massa. Anna vastaus yksikössä $10^{27}\\,\\text{kg}$.",
-      "answer": 1.90,
-      "unit": "10²⁷ kg",
+      "text": "Kuvassa on putoamiskiihtyvyys neljän taivaankappaleen pinnalla. Jupiterin päiväntasaajan säde on $7{,}15 \\cdot 10^{7}\\,\\text{m}$. Luotain, jonka massa on $850\\,\\text{kg}$, on Jupiterin päiväntasaajan yläpuolella korkeudella $7{,}15 \\cdot 10^{7}\\,\\text{m}$ pinnasta. Lue kuvasta Jupiterin pinnan gravitaatiokentän voimakkuus. Kuinka suurella voimalla Jupiter vetää luotainta? Anna vastaus kilonewtoneina.",
+      "answer": 5.27,
+      "unit": "kN",
       "tolerance": 0.02,
       "figure": "fy5-5/planeetat"
     }

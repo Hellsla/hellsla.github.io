@@ -282,7 +282,7 @@
    "level": 2,
    "text": "Kuvaaja esittää auton normaalikiihtyvyyttä $a_\\text{n}$ ratanopeuden $v$ funktiona vaakasuorassa, ympyrän muotoisessa kaarteessa. Auto ajaa kaarteen läpi tasaisella nopeudella. Käyrälle on merkitty yksi piste. Lue pisteen koordinaatit kuvaajasta ja laske kaarteen säde. Vastauslaatikkoon tulee säde metreinä.",
    "figure": "fy5-4/kuvaaja-a",
-   "answer": 80.0,
+   "answer": 75.0,
    "unit": "m",
    "tolerance": 0.02
   }

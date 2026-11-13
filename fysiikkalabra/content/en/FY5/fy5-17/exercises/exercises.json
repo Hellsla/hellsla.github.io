@@ -333,7 +333,7 @@
       "level": 2,
       "text": "The figure shows an A-scan of a thigh from an ultrasound device. The echoes A, B and C come from three tissue boundaries. Sound travels in tissue at $1540\\,\\text{m/s}$. Read the times of echoes B and C from the figure. How thick is the tissue layer bounded by the boundaries that give echoes B and C? Give the answer in centimetres.",
       "figure": "fy5-17/a-scan",
-      "answer": 3.08,
+      "answer": 2.31,
       "unit": "cm",
       "tolerance": 0.02
     }

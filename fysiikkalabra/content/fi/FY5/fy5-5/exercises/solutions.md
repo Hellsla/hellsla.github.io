@@ -293,12 +293,12 @@ Kiihtyvyyksien suhde on $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m_{\text{A}
 **Järkevyys:** Maassa voima olisi $85\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 834\,\text{N}$. Suhde $\dfrac{3{,}71}{9{,}81} = 0{,}38$ antaa $0{,}38\cdot 834\,\text{N} \approx 320\,\text{N}$, joten Marsissa astronautti painaa noin kaksi viidesosaa Maan painostaan.
 
 ## fy5-5-L2-09
-**Annettu:** päiväntasaajan säde $R = 7{,}15 \cdot 10^{7}\,\text{m}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; Jupiterin kentän voimakkuus luetaan kuvasta
-**Kysytty:** Jupiterin massa $M$ yksikössä $10^{27}\,\text{kg}$
-**Periaate:** Jupiterin pinnalla oleva massa $m$ on etäisyydellä $R$ keskipisteestä. Gravitaatiovoima on $F = mg$ ja Newtonin gravitaatiolain mukaan $F = \gamma\dfrac{M m}{R^2}$. Lausekkeet ovat yhtä suuret.
-**Kuvaajan lukeminen:** Jupiterin nuoli on merkitty arvolla $24{,}8\,\text{m/s}^2$, joten $g = 24{,}8\,\text{m/s}^2$.
-**Kaava:** $mg = \gamma\dfrac{M m}{R^2}$, joten kappaleen massa $m$ supistuu ja $M = \dfrac{g R^2}{\gamma}$
-**Muunnokset:** Tiedot ovat SI-yksiköissä. Tulos $M = 1{,}90\cdot 10^{27}\,\text{kg}$ ilmoitetaan lopuksi yksikössä $10^{27}\,\text{kg}$.
-**Sijoitus:** $M = \dfrac{24{,}8\,\text{m/s}^2\cdot (7{,}15 \cdot 10^{7}\,\text{m})^2}{6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}} = 1{,}900 \cdot 10^{27}\,\text{kg}$
-**Vastaus:** $1{,}90\cdot 10^{27}\,\text{kg}$, kolme merkitsevää numeroa kuten säteessä. Kuvan arvo $24{,}8\,\text{m/s}^2$ pätee päiväntasaajan säteellä, joten käytetään samaa sädettä, ei keskisädettä $6{,}99\cdot 10^{7}\,\text{m}$.
-**Järkevyys:** Maan massa on $5{,}97\cdot 10^{24}\,\text{kg}$, joten Jupiterin massa on noin $\dfrac{1{,}90\cdot 10^{27}}{5{,}97\cdot 10^{24}} \approx 320$-kertainen. Se on Jupiterin tunnettu suuruusluokka. Kentän voimakkuus on vain $2{,}5$-kertainen Maahan verrattuna, vaikka planeetta on $320$ kertaa massiivisempi, koska säde on suuri.
+**Annettu:** luotaimen massa $m = 850\,\text{kg}$, päiväntasaajan säde $R = 7{,}15 \cdot 10^{7}\,\text{m}$, korkeus pinnasta $h = 7{,}15 \cdot 10^{7}\,\text{m}$; Jupiterin kentän voimakkuus pinnalla luetaan kuvasta
+**Kysytty:** Jupiterin luotaimeen kohdistama gravitaatiovoima $F$ yksikössä $\text{kN}$
+**Periaate:** Gravitaatiokentän voimakkuus pienenee etäisyyden neliön mukaan, ja etäisyys mitataan planeetan keskipisteestä: $r = R + h$. Kun kentän voimakkuus luotaimen kohdalla tunnetaan, voima on $F = mg$.
+**Kuvaajan lukeminen:** Jupiterin nuoli on merkitty arvolla $24{,}8\,\text{m/s}^2$, joten pinnalla $g_0 = 24{,}8\,\text{m/s}^2$.
+**Kaava:** $g = g_0\left(\dfrac{R}{R + h}\right)^2$ ja $F = mg$
+**Muunnokset:** $r = R + h = 7{,}15 \cdot 10^{7}\,\text{m} + 7{,}15 \cdot 10^{7}\,\text{m} = 1{,}430 \cdot 10^{8}\,\text{m} = 2R$; lopuksi $1\,\text{kN} = 1000\,\text{N}$.
+**Sijoitus:** $g = 24{,}8\,\text{m/s}^2\cdot\left(\dfrac{7{,}15 \cdot 10^{7}\,\text{m}}{1{,}430 \cdot 10^{8}\,\text{m}}\right)^2 = 24{,}8\,\text{m/s}^2\cdot\dfrac{1}{4} = 6{,}20\,\text{m/s}^2$ ja $F = 850\,\text{kg}\cdot 6{,}20\,\text{m/s}^2 = 5270\,\text{N} = 5{,}27\,\text{kN}$
+**Vastaus:** $5{,}27\,\text{kN}$, kolme merkitsevää numeroa kuten kuvan arvossa $24{,}8\,\text{m/s}^2$ ja säteessä. Kuvan arvo pätee päiväntasaajan säteellä, joten käytetään samaa sädettä.
+**Järkevyys:** Etäisyys keskipisteestä kaksinkertaistuu, joten kentän voimakkuus ja voima ovat neljäsosa pinnan arvosta. Pinnalla voima olisi $850\,\text{kg}\cdot 24{,}8\,\text{m/s}^2 = 21{,}1\,\text{kN}$ ja $21{,}1\,\text{kN} : 4 = 5{,}27\,\text{kN}$.

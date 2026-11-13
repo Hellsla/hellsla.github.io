@@ -282,7 +282,7 @@
       "level": 2,
       "text": "Kuvaaja näyttää auton normaalikiihtyvyyden $a_\\text{n}$ eli kaarteessa kohti keskipistettä osoittavan kiihtyvyyden. Se on ratanopeuden $v$ funktio. Kaarre on vaakasuora ja pyöreä, ja auto ajaa sen tasaisella nopeudella. Käyrällä on yksi merkitty piste. Lue pisteen arvot kuvaajasta ja laske kaarteen säde. Vastauslaatikkoon tulee säde metreinä.",
       "figure": "fy5-4/kuvaaja-a",
-      "answer": 80.0,
+      "answer": 75.0,
       "unit": "m",
       "tolerance": 0.02
     }

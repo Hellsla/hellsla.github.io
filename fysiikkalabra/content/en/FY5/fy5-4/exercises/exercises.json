@@ -282,7 +282,7 @@
       "level": 2,
       "text": "The graph shows the centripetal acceleration $a_\\text{n}$ of a car as a function of its speed $v$ in a level, circular bend. The car goes through the bend at a steady speed. One point is marked on the curve. Read the coordinates of the point from the graph and calculate the radius of the bend. The answer box takes the radius in metres.",
       "figure": "fy5-4/kuvaaja-a",
-      "answer": 80.0,
+      "answer": 75.0,
       "unit": "m",
       "tolerance": 0.02
     }

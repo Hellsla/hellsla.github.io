@@ -38,5 +38,5 @@ a["fy5-5-L3-04"] = M_earth / (4 / 3 * math.pi * 6.371e6 ** 3)   # mean density 5
 a["fy5-5-L3-05"] = 62.0 * (9.81 - 4 * math.pi ** 2 * 6.378e6 / (6.0 * 3600) ** 2)  # scale reading at the equator, T = 6,0 h: N = m(g - a_n) = 574,8 N
 # Added batch (teacher 2026-11-12): figure tasks (fy5-5/planeetat)
 a["fy5-5-L1-09"] = round(85 * 3.71, -1)                                # F = m g = 315,35 N -> 3,2e2 N (m = 85 kg, two sig. figs)
-a["fy5-5-L2-09"] = 24.8 * (7.15e7) ** 2 / gamma / 1e27          # figure: g_Jupiter = 24,8 m/s²: equatorial R = 7,15e7 m: M = g R²/γ = 1,900e27 kg -> 1,90 (answer in 1e27 kg)
+a["fy5-5-L2-09"] = 850 * 24.8 * (7.15e7 / (2 * 7.15e7)) ** 2 / 1e3   # figure: g_Jupiter = 24,8 m/s², equatorial R; probe at h = R: r = 2R, g = 6,20 m/s², F = m g = 5270 N -> 5,27 kN
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

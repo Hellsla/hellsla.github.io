@@ -210,12 +210,12 @@ The frequencies are the same, that is, $f_1' = f_1$. Halving the length doubles 
 **Reasonableness:** Sound travels in helium at $971 : 331.5 = 2.93$ times the speed, so the fundamental frequency is the same multiple: $971\,\text{Hz} : 331.5\,\text{Hz} = 2.93$. The note rises to almost three times, about one and a half octaves, but a voice does not change the same way: the voice of a person who has breathed helium sounds odd because the resonances of the vocal tract rise, while the fundamental frequency of the vocal folds hardly changes. The difference is positive, as it should be, because helium is a lighter gas than air.
 
 ## fy5-13-L2-09
-**Given:** speed of the wave $v = 75.0\,\text{m/s}$; the positions of the vibrator and the pulley are nodes; the length of the vibrating part of the rope and the number of loops are read from the figure
-**Find:** the frequency of the vibrator $f$ in hertz
-**Principle:** The rope vibrates as a standing wave at a natural frequency that the vibrator excites. The frequency of the vibrator equals the frequency of the rope. When we know how many half wavelengths fit on the vibrating part, we get the wavelength, and the frequency follows from the basic wave equation $v = f\lambda$.
-**Reading the figure:** According to the ruler the vibrator is at $0$ and the pulley at $1.20\,\text{m}$, so the length of the vibrating part is $L = 1.20\,\text{m}$. The rope has four loops, that is, four antinodes and five nodes counting the ends, so $L$ is four half wavelengths: $n = 4$.
-**Formula:** $L = n \cdot \dfrac{\lambda}{2}$, so $\lambda = \dfrac{2L}{n}$, and $v = f\lambda$, which gives $f = \dfrac{v}{\lambda} = \dfrac{n v}{2L}$
+**Given:** speed of the wave $v = 75.0\,\text{m/s}$; the positions of the vibrator and the pulley are nodes; the length of the vibrating part of the rope and the present number of loops are read from the figure; the new pattern has five loops
+**Find:** the rise of the vibrator's frequency $\Delta f$ in hertz
+**Principle:** The rope vibrates as a standing wave at its natural frequencies $f_n = n\dfrac{v}{2L}$. The vibrator excites the rope at the natural frequency of the loop pattern it makes. The change from four loops to five is the difference of two natural frequencies.
+**Reading the figure:** According to the ruler the vibrator is at $0$ and the pulley at $1.20\,\text{m}$, so $L = 1.20\,\text{m}$. The rope has four loops, so the present pattern is $n = 4$ and the new one is $n = 5$.
+**Formula:** $f_n = n\dfrac{v}{2L}$, so $\Delta f = f_5 - f_4 = (5 - 4)\dfrac{v}{2L} = \dfrac{v}{2L}$
 **Conversions:** None are needed: the length is in metres and the speed in metres per second.
-**Substitution:** $\lambda = \dfrac{2 \cdot 1.20\,\text{m}}{4} = 0.60\,\text{m}$ and $f = \dfrac{75.0\,\text{m/s}}{0.60\,\text{m}} = 125\,\text{Hz}$
-**Answer:** $125\,\text{Hz}$, three significant figures like the speed $75.0\,\text{m/s}$ and the length $1.20\,\text{m}$ read from the ruler.
-**Reasonableness:** The fundamental frequency of the rope is $f_1 = \dfrac{75.0\,\text{m/s}}{2 \cdot 1.20\,\text{m}} = 31.25\,\text{Hz}$, and the fourth natural frequency is $4 \cdot 31.25\,\text{Hz} = 125\,\text{Hz}$, the same as the calculated frequency. One loop is $0.30\,\text{m}$ long, which is half of the wavelength $0.60\,\text{m}$.
+**Substitution:** $f_4 = \dfrac{4 \cdot 75.0\,\text{m/s}}{2 \cdot 1.20\,\text{m}} = 125\,\text{Hz}$ and $f_5 = \dfrac{5 \cdot 75.0\,\text{m/s}}{2 \cdot 1.20\,\text{m}} = 156.25\,\text{Hz}$, so $\Delta f = 156.25\,\text{Hz} - 125\,\text{Hz} = 31.25\,\text{Hz}$
+**Answer:** $31.3\,\text{Hz}$, three significant figures like the speed $75.0\,\text{m/s}$ and the length $1.20\,\text{m}$ read from the ruler.
+**Reasonableness:** The difference of two successive natural frequencies is the fundamental frequency $f_1 = \dfrac{75.0\,\text{m/s}}{2 \cdot 1.20\,\text{m}} = 31.25\,\text{Hz}$, the same as the calculated rise. The frequency must rise, since more loops means a shorter wavelength.

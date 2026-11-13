@@ -299,9 +299,9 @@
     {
       "id": "fy5-13-L2-09",
       "level": 2,
-      "text": "Kuvan narussa aallon nopeus on $75{,}0\\,\\text{m/s}$. Täryttäjän ja väkipyörän välinen naru värähtelee seisovana aaltona, ja täryttäjän ja väkipyörän kohdat ovat solmuja. Millä taajuudella täryttäjä värähtelee? Lue tarvittavat tiedot kuvasta.",
+      "text": "Kuvan narussa aallon nopeus on $75{,}0\\,\\text{m/s}$. Täryttäjän ja väkipyörän välinen naru värähtelee seisovana aaltona, ja täryttäjän ja väkipyörän kohdat ovat solmuja. Täryttäjän taajuus on nyt sellainen, että naru värähtelee kuvan neljän silmukan kuviona. Kuinka monta hertsiä taajuutta pitää nostaa, jotta narussa on viisi silmukkaa? Lue tarvittavat tiedot kuvasta.",
       "figure": "fy5-13/kuvio-tehtava",
-      "answer": 125.0,
+      "answer": 31.25,
       "unit": "Hz",
       "tolerance": 0.02
     }
