@@ -111,7 +111,7 @@
   {
    "id": "fy3-eristetty-systeemi",
    "moduuli": "FY3",
-   "luku": "fy3-3",
+   "luku": "fy3-5",
    "aihe": "fy3-lampotila-ja-systeemi",
    "kasite": "Eristetty systeemi",
    "maaritelma": "Ympäristön kanssa ei vaihdu ainetta eikä energiaa."
@@ -155,7 +155,7 @@
   {
    "id": "fy3-lampo",
    "moduuli": "FY3",
-   "luku": "fy3-8",
+   "luku": "fy3-5",
    "aihe": "fy3-lampolaajeneminen-ja-lammon-siirtyminen",
    "kasite": "Lämpö",
    "maaritelma": "Energiaa, joka siirtyy lämpötilaeron vuoksi kuumemmasta systeemistä kylmempään."
@@ -283,7 +283,7 @@
   {
    "id": "fy3-paine-ero",
    "moduuli": "FY3",
-   "luku": "fy3-1",
+   "luku": null,
    "aihe": "fy3-voima-ja-paine",
    "kasite": "Paine-ero",
    "maaritelma": "Kahden alueen erisuuruiset paineet voivat aiheuttaa kappaleeseen voiman."
@@ -291,7 +291,7 @@
   {
    "id": "fy3-kaasun-paine",
    "moduuli": "FY3",
-   "luku": "fy3-13",
+   "luku": "fy3-3",
    "aihe": "fy3-kaasun-tila",
    "kasite": "Kaasun paine",
    "maaritelma": "Rakenneosasten törmäykset säiliön seinämiin aiheuttavat makroskooppisesti havaittavan paineen."
@@ -333,7 +333,7 @@
   {
    "id": "fy3-isokoorinen-muutos",
    "moduuli": "FY3",
-   "luku": "fy3-13",
+   "luku": "fy3-9",
    "aihe": "fy3-kaasun-tila",
    "kasite": "Isokoorinen muutos",
    "maaritelma": "Tilavuus pysyy vakiona, joten paine on suoraan verrannollinen absoluuttiseen lämpötilaan."
@@ -341,7 +341,7 @@
   {
    "id": "fy3-isobaarinen-muutos",
    "moduuli": "FY3",
-   "luku": "fy3-13",
+   "luku": "fy3-9",
    "aihe": "fy3-kaasun-tila",
    "kasite": "Isobaarinen muutos",
    "maaritelma": "Paine pysyy vakiona, joten tilavuus on suoraan verrannollinen absoluuttiseen lämpötilaan."
@@ -349,7 +349,7 @@
   {
    "id": "fy3-isoterminen-muutos",
    "moduuli": "FY3",
-   "luku": "fy3-13",
+   "luku": "fy3-9",
    "aihe": "fy3-kaasun-tila",
    "kasite": "Isoterminen muutos",
    "maaritelma": "Lämpötila pysyy vakiona, joten paine ja tilavuus ovat kääntäen verrannolliset.",
@@ -439,7 +439,7 @@
   {
    "id": "fy3-lampeneminen",
    "moduuli": "FY3",
-   "luku": "fy3-16",
+   "luku": null,
    "aihe": "fy3-lampeneminen-ja-jaahtyminen",
    "kasite": "Lämpeneminen",
    "maaritelma": "Systeemin lämpötila nousee, kun sen sisäenergia kasvaa ilman olomuodon muutosta."
@@ -471,7 +471,7 @@
   {
    "id": "fy3-sulaminen",
    "moduuli": "FY3",
-   "luku": "fy3-14",
+   "luku": "fy3-7",
    "aihe": "fy3-olomuodon-muutokset",
    "kasite": "Sulaminen",
    "maaritelma": "Kiinteä aine muuttuu nesteeksi ja vastaanottaa energiaa."
@@ -611,7 +611,7 @@
   {
    "id": "fy3-mekaaninen-tyo",
    "moduuli": "FY3",
-   "luku": "fy3-5",
+   "luku": "fy3-2",
    "aihe": "fy3-tyo-ja-sisaenergia",
    "kasite": "Mekaaninen työ",
    "maaritelma": "Voiman avulla siirtyvä energia saadaan voiman ja voiman suuntaisen matkan tulona.",
@@ -621,7 +621,7 @@
   {
    "id": "fy3-sisaenergia",
    "moduuli": "FY3",
-   "luku": "fy3-2",
+   "luku": "fy3-5",
    "aihe": "fy3-tyo-ja-sisaenergia",
    "kasite": "Sisäenergia",
    "maaritelma": "Rakenneosasten liike- ja vuorovaikutusenergioiden muodostama systeemin energiamäärä."
@@ -655,7 +655,7 @@
   {
    "id": "fy3-tilavuustyo",
    "moduuli": "FY3",
-   "luku": "fy3-2",
+   "luku": null,
    "aihe": "fy3-tyo-ja-sisaenergia",
    "kasite": "Tilavuustyö",
    "maaritelma": "Vakiopaineessa kaasun tekemän työn suuruus riippuu paineesta ja tilavuuden muutoksesta.",
@@ -665,7 +665,7 @@
   {
    "id": "fy3-adiabaattinen-muutos",
    "moduuli": "FY3",
-   "luku": "fy3-2",
+   "luku": null,
    "aihe": "fy3-tyo-ja-sisaenergia",
    "kasite": "Adiabaattinen muutos",
    "maaritelma": "Systeemin ja ympäristön välillä ei siirry lämpöä, joten työ muuttaa sisäenergiaa."
@@ -729,7 +729,7 @@
   {
    "id": "fy3-kiertoprosessi",
    "moduuli": "FY3",
-   "luku": "fy3-11",
+   "luku": null,
    "aihe": "fy3-lampovoimakoneet",
    "kasite": "Kiertoprosessi",
    "maaritelma": "Systeemi käy läpi tilanmuutoksia ja palaa lopuksi alkuperäiseen tilaansa."
@@ -737,7 +737,7 @@
   {
    "id": "fy3-jaahdytyskone",
    "moduuli": "FY3",
-   "luku": "fy3-11",
+   "luku": null,
    "aihe": "fy3-lampovoimakoneet",
    "kasite": "Jäähdytyskone",
    "maaritelma": "Työn avulla siirtää energiaa kylmemmästä tilasta lämpimämpään ympäristöön."
@@ -753,7 +753,7 @@
   {
    "id": "fy3-kompressori",
    "moduuli": "FY3",
-   "luku": "fy3-11",
+   "luku": null,
    "aihe": "fy3-lampovoimakoneet",
    "kasite": "Kompressori",
    "maaritelma": "Puristaa jäähdytysainetta, jolloin sen paine ja yleensä myös lämpötila kasvavat."
@@ -793,7 +793,7 @@
   {
    "id": "fy3-albedo",
    "moduuli": "FY3",
-   "luku": "fy3-12",
+   "luku": null,
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Albedo",
    "maaritelma": "Kertoo, kuinka suuri osa pintaan saapuvasta säteilystä heijastuu takaisin."
@@ -801,7 +801,7 @@
   {
    "id": "fy3-jaapalaute",
    "moduuli": "FY3",
-   "luku": "fy3-12",
+   "luku": null,
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Jääpalaute",
    "maaritelma": "Jään väheneminen pienentää heijastavuutta ja lisää Auringon energian absorboitumista."
@@ -809,7 +809,7 @@
   {
    "id": "fy3-merien-lampeneminen",
    "moduuli": "FY3",
-   "luku": "fy3-12",
+   "luku": null,
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Merien lämpeneminen",
    "maaritelma": "Veden suuri ominaislämpökapasiteetti saa meret varastoimaan suuren määrän energiaa."
@@ -817,7 +817,7 @@
   {
    "id": "fy3-merenpinnan-nousu",
    "moduuli": "FY3",
-   "luku": "fy3-12",
+   "luku": null,
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Merenpinnan nousu",
    "maaritelma": "Johtuu erityisesti mannerjään sulamisesta ja meriveden lämpölaajenemisesta."
@@ -825,7 +825,7 @@
   {
    "id": "fy3-merijaan-sulaminen",
    "moduuli": "FY3",
-   "luku": "fy3-12",
+   "luku": null,
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Merijään sulaminen",
    "maaritelma": "Kelluvan jään sulaminen ei itsessään merkittävästi nosta merenpintaa."
@@ -837,6 +837,52 @@
    "aihe": "fy3-ilmasto-ja-lampo",
    "kasite": "Ilmastonmuutos",
    "maaritelma": "Maapallon pitkäaikainen lämpeneminen muuttaa energiatasapainoa, jäätiköitä, meriä ja muita ilmastojärjestelmän osia."
+  },
+  {
+   "id": "fy3-energiaketju",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Energiaketju",
+   "maaritelma": "Peräkkäiset vaiheet, joissa energia muuttuu esimerkiksi polttoaineesta sähköksi; ketjun hyötysuhde on vaiheiden hyötysuhteiden tulo.",
+   "kaava": "\\eta = \\eta_1\\,\\eta_2\\,\\eta_3",
+   "kaava_puhe": "eeta on eeta yksi kertaa eeta kaksi kertaa eeta kolme"
+  },
+  {
+   "id": "fy3-lauhdevoimalaitos",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Lauhdevoimalaitos",
+   "maaritelma": "Pelkkää sähköä tuottava lämpövoimalaitos, jonka sähköntuotannon hyötysuhde on noin $40\\,\\%$."
+  },
+  {
+   "id": "fy3-lauhdutin",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Lauhdutin",
+   "maaritelma": "Laite, jossa turbiinista tuleva höyry tiivistyy takaisin vedeksi ja luovuttaa lämpöä jäähdytysveteen.",
+   "kaava": "P_\\text{L} = c\\,q_m\\,\\Delta T",
+   "kaava_puhe": "P L on c kertaa q m kertaa delta T"
+  },
+  {
+   "id": "fy3-yhteistuotanto",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Yhteistuotanto",
+   "maaritelma": "Sähkön ja lämmön tuotanto samassa laitoksessa niin, että lauhduttimen lämpö johdetaan kaukolämpöverkkoon."
+  },
+  {
+   "id": "fy3-kokonaishyotysuhde",
+   "moduuli": "FY3",
+   "luku": "fy3-15",
+   "aihe": "fy3-lampovoimakoneet",
+   "kasite": "Kokonaishyötysuhde",
+   "maaritelma": "Yhteistuotantolaitoksen sähkötehon ja kaukolämpötehon summan suhde polttoainetehoon.",
+   "kaava": "\\eta_\\text{kok} = \\dfrac{P_\\text{s} + P_\\text{k}}{P_\\text{o}}",
+   "kaava_puhe": "eeta kok on P s plus P k jaettuna P o:lla"
   }
  ]
 }

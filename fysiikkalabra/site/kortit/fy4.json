@@ -557,7 +557,7 @@
    "luku": "fy4-9",
    "aihe": "fy4-liikemaara-ja-tormaykset",
    "kasite": "Impulssi",
-   "maaritelma": "Kuvaa voiman kokonaisvaikutusta tietyn ajan kuluessa; vakiovoimalla:",
+   "maaritelma": "Kuvaa voiman kokonaisvaikutusta tietyn ajan kuluessa; vakiovoimalla impulssi on voiman ja sen vaikutusajan tulo.",
    "kaava": "\\overline{I} = \\overline{F}\\Delta t",
    "kaava_puhe": "I on F kertaa delta t"
   },
@@ -626,6 +626,176 @@
    "aihe": "fy4-liikemaara-ja-tormaykset",
    "kasite": "Yksiulotteinen törmäys",
    "maaritelma": "Kappaleiden liike tapahtuu samalla suoralla, joten liikemäärän suunnat voidaan käsitellä etumerkeillä."
+  },
+  {
+   "id": "fy4-reaktioaika",
+   "moduuli": "FY4",
+   "luku": "fy4-11",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Reaktioaika",
+   "maaritelma": "Aika vaaran havaitsemisesta jarrutuksen alkuun; tavallisesti noin $1\\,\\text{s}$."
+  },
+  {
+   "id": "fy4-reaktiomatka",
+   "moduuli": "FY4",
+   "luku": "fy4-11",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Reaktiomatka",
+   "maaritelma": "Matka, jonka auto kulkee reaktioajan kuluessa vielä alkuperäisellä nopeudellaan.",
+   "kaava": "s_\\text{r} = v_0\\,t_\\text{r}",
+   "kaava_puhe": "s r on v nolla kertaa t r"
+  },
+  {
+   "id": "fy4-jarrutusmatka",
+   "moduuli": "FY4",
+   "luku": "fy4-11",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Jarrutusmatka",
+   "maaritelma": "Matka jarrutuksen alusta pysähtymiseen; vakiohidastuvuudella se on verrannollinen nopeuden neliöön.",
+   "kaava": "s_\\text{j} = \\dfrac{v_0^2}{2a}",
+   "kaava_puhe": "s j on v nolla toiseen jaettuna kahdella a:lla"
+  },
+  {
+   "id": "fy4-pysahtymismatka",
+   "moduuli": "FY4",
+   "luku": "fy4-11",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Pysähtymismatka",
+   "maaritelma": "Reaktiomatkan ja jarrutusmatkan summa eli koko matka vaaran havaitsemisesta pysähtymiseen.",
+   "kaava": "s_\\text{p} = v_0\\,t_\\text{r} + \\dfrac{v_0^2}{2a}",
+   "kaava_puhe": "s p on v nolla kertaa t r plus v nolla toiseen jaettuna kahdella a:lla"
+  },
+  {
+   "id": "fy4-hidastuvuus",
+   "moduuli": "FY4",
+   "luku": "fy4-11",
+   "aihe": "fy4-kiihtyva-liike",
+   "kasite": "Hidastuvuus",
+   "maaritelma": "Jarrutuksen kiihtyvyyden suuruus; vaakasuoralla tiellä täysjarrutuksessa sen määrää renkaiden ja tien välinen kitkakerroin.",
+   "kaava": "a = \\mu g",
+   "kaava_puhe": "a on myy kertaa g"
+  },
+  {
+   "id": "fy4-kohtaaminen",
+   "moduuli": "FY4",
+   "luku": "fy4-12",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Kohtaaminen",
+   "maaritelma": "Kaksi kappaletta on samassa paikassa samalla hetkellä; $(t,x)$-kuvaajassa se on viivojen leikkauspiste.",
+   "kaava": "x_\\text{A}(t) = x_\\text{B}(t)",
+   "kaava_puhe": "x A t:n funktiona on x B t:n funktiona"
+  },
+  {
+   "id": "fy4-ohitus",
+   "moduuli": "FY4",
+   "luku": "fy4-12",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Ohitus",
+   "maaritelma": "Takana kulkeva kappale tavoittaa edellä kulkevan ja menee sen ohi; ohitushetkellä takaa tuleva on nopeampi."
+  },
+  {
+   "id": "fy4-paikkafunktio",
+   "moduuli": "FY4",
+   "luku": "fy4-12",
+   "aihe": "fy4-liikkeen-suureet",
+   "kasite": "Paikkafunktio",
+   "maaritelma": "Lauseke, joka antaa kappaleen paikan ajan funktiona, esimerkiksi tasaisessa liikkeessä $x = x_0 + v\\,t$."
+  },
+  {
+   "id": "fy4-kytketty-kappale",
+   "moduuli": "FY4",
+   "luku": "fy4-13",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Kytketty kappale",
+   "maaritelma": "Langalla toiseen sidottu kappale; venymättömän langan päissä kappaleiden kiihtyvyyksillä on sama suuruus."
+  },
+  {
+   "id": "fy4-vakipyora",
+   "moduuli": "FY4",
+   "luku": "fy4-13",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Väkipyörä",
+   "maaritelma": "Pyörä, jonka yli lanka kulkee; kevyt ja kitkaton väkipyörä kääntää langan voiman suunnan muuttamatta sen suuruutta."
+  },
+  {
+   "id": "fy4-sisainen-voima",
+   "moduuli": "FY4",
+   "luku": "fy4-13",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Sisäinen voima",
+   "maaritelma": "Tarkasteltavien kappaleiden välinen voima; kun kappaleiden liikeyhtälöt lasketaan yhteen, se supistuu pois."
+  },
+  {
+   "id": "fy4-ulkoinen-voima",
+   "moduuli": "FY4",
+   "luku": "fy4-13",
+   "aihe": "fy4-voimat-ja-liikeyhtalo",
+   "kasite": "Ulkoinen voima",
+   "maaritelma": "Tarkasteltavien kappaleiden ulkopuolelta vaikuttava voima; se kuuluu vain sen kappaleen voimakuvioon, johon se vaikuttaa."
+  },
+  {
+   "id": "fy4-teho",
+   "moduuli": "FY4",
+   "luku": "fy4-15",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Teho",
+   "maaritelma": "Kertoo, kuinka paljon energiaa muuntuu tai siirtyy sekunnissa; yksikkö on watti, $1\\,\\text{W} = 1\\,\\text{J/s}$.",
+   "kaava": "P = \\dfrac{E}{t}",
+   "kaava_puhe": "P on E jaettuna t:llä"
+  },
+  {
+   "id": "fy4-hyotysuhde",
+   "moduuli": "FY4",
+   "luku": "fy4-15",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Hyötysuhde",
+   "maaritelma": "Laitteen antaman hyödyllisen tehon ja siihen otetun tehon suhde; enintään $100\\,\\%$.",
+   "kaava": "\\eta = \\dfrac{P_\\text{s}}{P_\\text{o}}",
+   "kaava_puhe": "eeta on P s jaettuna P o:lla"
+  },
+  {
+   "id": "fy4-virtaama",
+   "moduuli": "FY4",
+   "luku": "fy4-15",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Virtaama",
+   "maaritelma": "Kertoo, montako kuutiometriä vettä virtaa sekunnissa turbiinien läpi; yksikkö $\\text{m}^3\\text{/s}$.",
+   "kaava": "P = \\eta \\rho Q g h",
+   "kaava_puhe": "P on eeta kertaa roo kertaa Q kertaa g kertaa h"
+  },
+  {
+   "id": "fy4-putouskorkeus",
+   "moduuli": "FY4",
+   "luku": null,
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Putouskorkeus",
+   "maaritelma": "Vesivoimalan ylä- ja alaveden pintojen korkeusero $h$."
+  },
+  {
+   "id": "fy4-nimellisteho",
+   "moduuli": "FY4",
+   "luku": "fy4-15",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Nimellisteho",
+   "maaritelma": "Suurin sähköteho, jolle voimala on mitoitettu; sitä kovemmassa tuulessa tuulivoimalan teho ei enää kasva."
+  },
+  {
+   "id": "fy4-nollataso",
+   "moduuli": "FY4",
+   "luku": "fy4-7",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Nollataso",
+   "maaritelma": "Valittu korkeus, jolla painon potentiaalienergia on nolla; korkeus $h$ mitataan siitä."
+  },
+  {
+   "id": "fy4-kitkan-tyo",
+   "moduuli": "FY4",
+   "luku": "fy4-8",
+   "aihe": "fy4-tyo-ja-mekaaninen-energia",
+   "kasite": "Kitkan työ",
+   "maaritelma": "Liikekitkan tekemä negatiivinen työ; suoralla pinnalla se riippuu kuljetun matkan vaakasuorasta pituudesta $x$.",
+   "kaava": "W_\\mu = -\\mu m g x",
+   "kaava_puhe": "W myy on miinus myy kertaa m kertaa g kertaa x"
   }
  ]
 }

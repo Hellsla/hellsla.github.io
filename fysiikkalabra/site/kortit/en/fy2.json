@@ -51,7 +51,7 @@
   {
    "id": "fy2-energialahde",
    "moduuli": "FY2",
-   "luku": null,
+   "luku": "fy2-6",
    "aihe": "fy2-energia-ymparistossa",
    "kasite": "Energy source",
    "maaritelma": "A substance or phenomenon used to produce useful energy."
@@ -59,7 +59,7 @@
   {
    "id": "fy2-uusiutuva-energialahde",
    "moduuli": "FY2",
-   "luku": null,
+   "luku": "fy2-6",
    "aihe": "fy2-energia-ymparistossa",
    "kasite": "Renewable energy source",
    "maaritelma": "A natural resource or phenomenon that is replenished fast enough for human use."
@@ -67,7 +67,7 @@
   {
    "id": "fy2-uusiutumaton-energialahde",
    "moduuli": "FY2",
-   "luku": null,
+   "luku": "fy2-6",
    "aihe": "fy2-energia-ymparistossa",
    "kasite": "Non-renewable energy source",
    "maaritelma": "A natural resource of limited amount that does not form again quickly."
@@ -251,7 +251,7 @@
   {
    "id": "fy2-sisaenergia",
    "moduuli": "FY2",
-   "luku": "fy2-1",
+   "luku": null,
    "aihe": "fy2-energialajit",
    "kasite": "Internal energy",
    "maaritelma": "Energy of the motion and interactions of the particles of matter."
@@ -283,7 +283,7 @@
   {
    "id": "fy2-energiakaavio",
    "moduuli": "FY2",
-   "luku": "fy2-1",
+   "luku": null,
    "aihe": "fy2-energian-sailyminen",
    "kasite": "Energy diagram",
    "maaritelma": "A diagram that shows the forms of energy and how they transform and are conserved."
@@ -299,7 +299,7 @@
   {
    "id": "fy2-hukkaenergia",
    "moduuli": "FY2",
-   "luku": "fy2-1",
+   "luku": "fy2-4",
    "aihe": "fy2-energian-sailyminen",
    "kasite": "Wasted energy",
    "maaritelma": "Energy that is transformed into a form useless for the device's purpose."
@@ -307,7 +307,7 @@
   {
    "id": "fy2-hyotyenergia",
    "moduuli": "FY2",
-   "luku": "fy2-1",
+   "luku": "fy2-4",
    "aihe": "fy2-energian-sailyminen",
    "kasite": "Useful energy",
    "maaritelma": "The part of the energy taken in by a device that serves the intended purpose."
@@ -333,7 +333,7 @@
   {
    "id": "fy2-ottoteho",
    "moduuli": "FY2",
-   "luku": "fy2-3",
+   "luku": "fy2-4",
    "aihe": "fy2-teho",
    "kasite": "Input power",
    "maaritelma": "How fast a device takes energy from its energy source."
@@ -341,7 +341,7 @@
   {
    "id": "fy2-antoteho",
    "moduuli": "FY2",
-   "luku": "fy2-3",
+   "luku": "fy2-4",
    "aihe": "fy2-teho",
    "kasite": "Output power",
    "maaritelma": "How fast a device transfers energy to its intended purpose."
@@ -367,7 +367,7 @@
   {
    "id": "fy2-arvokilpi",
    "moduuli": "FY2",
-   "luku": "fy2-3",
+   "luku": null,
    "aihe": "fy2-teho",
    "kasite": "Rating plate",
    "maaritelma": "A label on a device that shows for example the power it takes from the grid."
@@ -393,7 +393,7 @@
   {
    "id": "fy2-tehohyotysuhde",
    "moduuli": "FY2",
-   "luku": "fy2-4",
+   "luku": null,
    "aihe": "fy2-hyotysuhde-ja-lampoarvo",
    "kasite": "Efficiency from power",
    "maaritelma": "The ratio of output power to input power.",
@@ -411,7 +411,7 @@
   {
    "id": "fy2-antoenergia",
    "moduuli": "FY2",
-   "luku": "fy2-4",
+   "luku": null,
    "aihe": "fy2-hyotysuhde-ja-lampoarvo",
    "kasite": "Output energy",
    "maaritelma": "The energy a device transfers or transforms for its intended purpose."
@@ -419,7 +419,7 @@
   {
    "id": "fy2-siirtohavio",
    "moduuli": "FY2",
-   "luku": "fy2-4",
+   "luku": "fy2-7",
    "aihe": "fy2-hyotysuhde-ja-lampoarvo",
    "kasite": "Transmission loss",
    "maaritelma": "In transmission part of the energy is transformed into an unused form, usually heat."
@@ -435,7 +435,7 @@
   {
    "id": "fy2-palamisenergia",
    "moduuli": "FY2",
-   "luku": "fy2-4",
+   "luku": "fy2-5",
    "aihe": "fy2-hyotysuhde-ja-lampoarvo",
    "kasite": "Energy of combustion",
    "maaritelma": "The energy released by a fuel can be calculated from its mass and heating value.",
@@ -445,7 +445,7 @@
   {
    "id": "fy2-energiatehokkuus",
    "moduuli": "FY2",
-   "luku": "fy2-4",
+   "luku": null,
    "aihe": "fy2-hyotysuhde-ja-lampoarvo",
    "kasite": "Energy efficiency",
    "maaritelma": "The desired benefit is achieved with as little energy and as few losses as possible."
@@ -453,7 +453,7 @@
   {
    "id": "fy2-energiantuotanto",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": null,
    "aihe": "fy2-energiantuotanto",
    "kasite": "Energy production",
    "maaritelma": "Turning energy found in nature into a form people can use, such as electricity or heat."
@@ -485,7 +485,7 @@
   {
    "id": "fy2-lampovoimalaitos",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": null,
    "aihe": "fy2-energiantuotanto",
    "kasite": "Thermal power plant",
    "maaritelma": "Thermal energy produces steam, which turns a turbine and a generator."
@@ -493,7 +493,7 @@
   {
    "id": "fy2-lauhdutin",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": null,
    "aihe": "fy2-energiantuotanto",
    "kasite": "Condenser",
    "maaritelma": "Cools the steam from the turbine back into water and at the same time transfers heat to the surroundings."
@@ -501,7 +501,7 @@
   {
    "id": "fy2-yhteistuotanto",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": null,
    "aihe": "fy2-energiantuotanto",
    "kasite": "Combined heat and power",
    "maaritelma": "The same plant produces both electricity and useful heat, which improves the efficiency."
@@ -509,7 +509,7 @@
   {
    "id": "fy2-kaukolampo",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": "fy2-7",
    "aihe": "fy2-energiantuotanto",
    "kasite": "District heating",
    "maaritelma": "Centrally produced thermal energy carried by hot water to heat buildings."
@@ -517,7 +517,7 @@
   {
    "id": "fy2-lauhdevoima",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": null,
    "aihe": "fy2-energiantuotanto",
    "kasite": "Condensing power",
    "maaritelma": "Electricity production in which the heat left after the turbine is usually not used for district heating."
@@ -549,7 +549,7 @@
   {
    "id": "fy2-bioenergia",
    "moduuli": "FY2",
-   "luku": "fy2-6",
+   "luku": null,
    "aihe": "fy2-tuotantotavat",
    "kasite": "Bioenergy",
    "maaritelma": "Chemical energy bound in organic matter, used for example by burning it."
@@ -605,7 +605,7 @@
   {
    "id": "fy2-maankaytto",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-ymparistovaikutukset",
    "kasite": "Land use",
    "maaritelma": "Different ways of production need different areas for plants, fuels and transmission lines."
@@ -613,7 +613,7 @@
   {
    "id": "fy2-luonnonvarat",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-ymparistovaikutukset",
    "kasite": "Natural resources",
    "maaritelma": "Energy production uses materials and fuels whose availability and renewal vary."
@@ -621,7 +621,7 @@
   {
    "id": "fy2-ekosysteemivaikutus",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-ymparistovaikutukset",
    "kasite": "Impact on ecosystems",
    "maaritelma": "Energy production can change habitats, waters and biodiversity."
@@ -629,7 +629,7 @@
   {
    "id": "fy2-terveysvaikutus",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-ymparistovaikutukset",
    "kasite": "Health impact",
    "maaritelma": "Emissions, accident risks and other factors of production can affect people's health."
@@ -637,7 +637,7 @@
   {
    "id": "fy2-suuruusluokka",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-ymparistovaikutukset",
    "kasite": "Order of magnitude",
    "maaritelma": "Ways of production can be compared by the scale of their power, emissions, costs or area."
@@ -653,7 +653,7 @@
   {
    "id": "fy2-hajautettu-tuotanto",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": null,
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Distributed generation",
    "maaritelma": "Energy is produced at many small sites close to consumers as well as in large central plants."
@@ -661,7 +661,7 @@
   {
    "id": "fy2-alykas-sahkoverkko",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": null,
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Smart grid",
    "maaritelma": "A digital grid controls production and consumption and passes information both ways."
@@ -669,7 +669,7 @@
   {
    "id": "fy2-saatovoima",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": "fy2-6",
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Balancing power",
    "maaritelma": "Electricity production whose output can be changed quickly to balance production and consumption."
@@ -685,7 +685,7 @@
   {
    "id": "fy2-lampovarasto",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": null,
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Thermal storage",
    "maaritelma": "Thermal energy is kept for later use, for example in water, soil or the structures of buildings."
@@ -693,7 +693,7 @@
   {
    "id": "fy2-vesipumppuvoimala",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": null,
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Pumped-storage plant",
    "maaritelma": "Surplus electricity pumps water uphill, and the energy is stored as potential energy of the water."
@@ -701,7 +701,7 @@
   {
    "id": "fy2-vauhtipyora",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": null,
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Flywheel",
    "maaritelma": "Kinetic energy is stored in a rotating body and can later be turned back into electricity."
@@ -709,7 +709,7 @@
   {
    "id": "fy2-mikroverkko",
    "moduuli": "FY2",
-   "luku": "fy2-7",
+   "luku": null,
    "aihe": "fy2-energiajarjestelma",
    "kasite": "Microgrid",
    "maaritelma": "A local energy grid that links nearby producers, storage and consumers."
@@ -725,7 +725,7 @@
   {
    "id": "fy2-ekologinen-kestavyys",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Ecological sustainability",
    "maaritelma": "Natural resources are used so that the environment's capacity to renew and to carry the load is not put at risk."
@@ -733,7 +733,7 @@
   {
    "id": "fy2-taloudellinen-kestavyys",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Economic sustainability",
    "maaritelma": "Energy solutions must be workable in the long run in cost and in the use of resources."
@@ -741,7 +741,7 @@
   {
    "id": "fy2-sosiaalinen-kestavyys",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Social sustainability",
    "maaritelma": "Energy solutions take into account people's well-being, safety and fair access to energy."
@@ -749,7 +749,7 @@
   {
    "id": "fy2-energian-saasto",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Saving energy",
    "maaritelma": "Reducing needless consumption by changing habits and using energy only as needed."
@@ -765,7 +765,7 @@
   {
    "id": "fy2-energian-varastointi",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Storing energy",
    "maaritelma": "Keeping energy for later use evens out the difference in time between production and consumption."
@@ -773,10 +773,36 @@
   {
    "id": "fy2-kestava-kulutus",
    "moduuli": "FY2",
-   "luku": "fy2-8",
+   "luku": null,
    "aihe": "fy2-kestava-energiatalous",
    "kasite": "Sustainable consumption",
    "maaritelma": "Energy is used efficiently for real needs and its environmental impacts are reduced."
+  },
+  {
+   "id": "fy2-lampoenergia",
+   "moduuli": "FY2",
+   "luku": "fy2-2",
+   "aihe": "fy2-energialajit",
+   "kasite": "Thermal energy",
+   "maaritelma": "Energy of the random motion of the particles of matter; part of the energy turns into it at every step of a conversion."
+  },
+  {
+   "id": "fy2-etuliite",
+   "moduuli": "FY2",
+   "luku": "fy2-2",
+   "aihe": "fy2-energialajit",
+   "kasite": "Prefix",
+   "maaritelma": "A multiplier written in front of a unit; kilo, mega, giga and tera are each a thousand times the previous one."
+  },
+  {
+   "id": "fy2-megajoule",
+   "moduuli": "FY2",
+   "luku": null,
+   "aihe": "fy2-energialajit",
+   "kasite": "Megajoule",
+   "maaritelma": "A multiple of the unit of energy equal to one million joules.",
+   "kaava": "1\\,\\text{MJ} = 1000\\,\\text{kJ} = 10^{6}\\,\\text{J}",
+   "kaava_puhe": "one megajoule equals a thousand kilojoules, or ten to the power six joules"
   }
  ]
 }

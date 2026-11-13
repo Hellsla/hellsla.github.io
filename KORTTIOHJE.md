@@ -46,7 +46,7 @@ yhteenveto luvuittain: `python3 scripts/concept_cards.py stats`.
 | `id` | kyllä | Pysyvä tunniste, alkaa moduulin koodilla (`fy4-…`). Opiskelijan kertauspakka tallentuu tällä tunnisteella, joten **älä muuta tai poista olemassa olevaa tunnistetta**. |
 | `luku` | ei | Luku, jonka Teoriatiivistelmään ja loppuun kortti kuuluu. `null` = kortti näkyy vain kokoelmassa. |
 | `aihe` | kyllä | Aiheen `id` tiedoston `aiheet`-listasta. Aiheita voi yhdistää kertauksessa. |
-| `kasite` | kyllä | Kortin etupuoli. Teoriatiivistelmän samanniminen lihavointi saa korttipopoverin. |
+| `kasite` | kyllä | Kortin etupuoli. Teoriatiivistelmän samanniminen lihavointi (myös taivutettuna, esim. *tehoksi*) saa korttipopoverin. Jos lihavointia ei ole, build alleviivaa luvun kortin käsitteen sen ensimmäisessä esiintymässä teoriatekstissä (ei otsikoissa, kuvissa eikä kaavoissa). |
 | `maaritelma` | kyllä | Takapuoli, yksi lause. Matematiikka LaTeXina `$…$`, esim. `$k$`. |
 | `kaava` | ei | Kaava LaTeXina ilman `$`-merkkejä. Vektorit `\overline{F}`, kertomerkki `\cdot`, suomeksi desimaalipilkku `{,}`. |
 | `kaava_puhe` | jos `kaava` | Kaava luettavassa muodossa ruudunlukijalle. |
