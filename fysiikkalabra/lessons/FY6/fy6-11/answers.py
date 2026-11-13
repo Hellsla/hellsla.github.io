@@ -29,6 +29,7 @@ a["fy6-11-L3-02"] = math.sqrt(2 * acc * 0.010) / 1000     # v = sqrt(2 a d) = 4,
 a["fy6-11-L3-03"] = 2.0e-3 * g * math.tan(math.radians(10)) / 1.5e5 * 1e9   # q = m g tan(alpha) / E = 23,1 nC
 # Exercise bank additions (teacher 2026-11-04): L1-06 and L1-07 are multiple choice (no number)
 a["fy6-11-L1-08"] = 3.0e3 / 4.0e5 * 1000                  # d = U / E = 7,5e-3 m = 7,5 mm
+a["fy6-11-L1-09"] = 3.0 * 2.5                              # MAFY air 3,0 kV/mm: U = E d = 7,5 kV
 dq = [2.0, 3.0, 4.0, 5.0, 6.0, 8.0]                       # L2-05: d in cm, F in µN, q = 5,0 nC
 fq = [102, 65.5, 51.0, 39.0, 34.0, 24.6]
 prod = [f * 1e-6 / 5.0e-9 * x / 100 for f, x in zip(fq, dq)]   # E d = 408, 393, 408, 390, 408, 393,6 V
