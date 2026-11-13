@@ -271,7 +271,7 @@ Ero on yli kymmenkertainen epävarmuuteen $1{,}0\,\text{kPa}$ verrattuna. Epäva
 ## fy3-13-L2-10
 **Annettu:** kuvaajasta luettuna pisteet $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ ja $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$. Paine riippuu lämpötilasta lineaarisesti myös mittausalueen ulkopuolella. Lämpötila on $T = 200\,\text{K}$.
 **Kysytty:** paine $p$ lämpötilassa $200\,\text{K}$ kilopascaleina
-**Periaate:** Jäykässä suljetussa astiassa kaasun määrä ja tilavuus pysyvät samoina. Siksi paine riippuu vain lämpötilasta. Pisteet ovat suoralla. Suoraa voi jatkaa mittausalueen ulkopuolelle. Kuvaajan lämpötila on celsiusasteina. Siksi kelvinlämpötila pitää ensin muuttaa celsiusasteiksi.
+**Periaate:** Jäykässä suljetussa astiassa kaasun määrä ja tilavuus pysyvät samoina. Siksi paine riippuu vain lämpötilasta. Pisteet ovat lähes suoralla. Suoraa voi jatkaa mittausalueen ulkopuolelle. Kuvaajan lämpötila on celsiusasteina. Siksi kelvinlämpötila pitää ensin muuttaa celsiusasteiksi.
 **Kuvaajan lukeminen:** Ensimmäinen piste on ruudukon risteyksessä $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$. Viimeinen piste on hieman $100\,\text{kPa}$:n viivan yläpuolella, $(100\,{}^\circ\text{C};\ 102{,}5\,\text{kPa})$. Näistä pisteistä lasketaan suoran kulmakerroin. Sitten suoraa jatketaan vasemmalle. Jos piirrät suoran silmämääräisesti, saat arvon $53$–$57\,\text{kPa}$. Se hyväksytään.
 **Kaava:** $\theta = T - 273{,}15\,\text{K}$ (celsiusasteina), $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja $p = p_1 + k(\theta - \theta_1)$
 **Muunnokset:** $\theta = 200 - 273{,}15 = -73{,}15\,{}^\circ\text{C}$

@@ -248,8 +248,8 @@ c) $\Delta T_\text{w,min} = \dfrac{36\,704.4\,\text{J}}{4190\,\tfrac{\text{J}}{\
 
 ## fy3-14-L2-09
 **Given:** reading from the figure, the heat given off by the water $Q_\text{water} = 25\,\text{kJ}$, the heat needed to warm the ice $Q_\text{warm} = 5\,\text{kJ}$ and the heat needed to melt all the ice $Q_\text{all} = 60\,\text{kJ}$
-**Find:** the extra heat $Q_\text{extra}$ in kilojoules that the water would still have to give off for all the ice to melt
-**Principle:** In an insulated container energy is conserved, so the heat given off by the water first goes to warming the ice and the rest to melting. The heat available for melting is $Q_\text{water} - Q_\text{warm}$, and melting all the ice needs $Q_\text{all}$. The missing part is the extra heat.
+**Find:** the extra heat $Q_\text{extra}$ in kilojoules that would still have to be brought into the container for all the ice to melt
+**Principle:** In an insulated container energy is conserved, so the heat given off by the water first goes to warming the ice and the rest to melting. The heat available for melting is $Q_\text{water} - Q_\text{warm}$, and melting all the ice needs $Q_\text{all}$. The missing part is the extra heat, which would have to be brought in from outside: the water cannot give it off, because it is already at $0\,{}^\circ\text{C}$ and would start to freeze.
 **Reading the graph:** The bars end on grid lines: the top one at $25\,\text{kJ}$ (water), the middle one at $5\,\text{kJ}$ (warming the ice) and the bottom one at $60\,\text{kJ}$ (melting all the ice). The heat left for melting is $25 - 5 = 20\,\text{kJ}$, which is less than $60\,\text{kJ}$, so not all the ice melts.
 **Formula:** $Q_\text{extra} = Q_\text{all} - (Q_\text{water} - Q_\text{warm})$
 **Conversions:** None needed, all the heats are in kilojoules.

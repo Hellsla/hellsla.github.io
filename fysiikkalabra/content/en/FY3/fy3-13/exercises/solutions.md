@@ -271,7 +271,7 @@ which is more than ten times the uncertainty $1.0\,\text{kPa}$. The uncertainty 
 ## fy3-13-L2-10
 **Given:** reading from the graph, the points $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ and $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$; the pressure depends linearly on the temperature also outside the measured range; $T = 200\,\text{K}$
 **Find:** the pressure $p$ at $200\,\text{K}$ in kilopascals
-**Principle:** In a rigid closed container the amount of gas and the volume stay the same, so the pressure depends only on the temperature. The points are on a straight line, so the line can be continued outside the measured range. The temperature of the graph is in degrees Celsius, so the kelvin temperature must first be converted to degrees Celsius.
+**Principle:** In a rigid closed container the amount of gas and the volume stay the same, so the pressure depends only on the temperature. The points are almost on a straight line, so the line can be continued outside the measured range. The temperature of the graph is in degrees Celsius, so the kelvin temperature must first be converted to degrees Celsius.
 **Reading the graph:** The first point is at a crossing of the grid, $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$, and the last is slightly above the $100\,\text{kPa}$ line, $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$. From these the slope of the line is calculated, and the line is continued to the left. Drawing the line by eye gives a value of $53$–$57\,\text{kPa}$, which is accepted.
 **Formula:** $\theta = T - 273.15\,\text{K}$ (in degrees Celsius), $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and $p = p_1 + k(\theta - \theta_1)$
 **Conversions:** $\theta = 200 - 273.15 = -73.15\,{}^\circ\text{C}$

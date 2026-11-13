@@ -248,8 +248,8 @@ c) $\Delta T_\text{v,min} = \dfrac{36\,704{,}4\,\text{J}}{4190\,\tfrac{\text{J}}
 
 ## fy3-14-L2-09
 **Annettu:** kuvasta luettuna veden luovuttama lämpö $Q_\text{vesi} = 25\,\text{kJ}$, jään lämmittämiseen tarvittava lämpö $Q_\text{lämm} = 5\,\text{kJ}$ ja kaiken jään sulattamiseen tarvittava lämpö $Q_\text{kaikki} = 60\,\text{kJ}$
-**Kysytty:** lisälämpö $Q_\text{lisä}$ kilojouleina, jonka veden pitäisi vielä luovuttaa, jotta kaikki jää sulaisi
-**Periaate:** Eristetyssä astiassa energia säilyy. Veden luovuttama lämpö kuluu ensin jään lämmittämiseen ja loput sulattamiseen. Sulatukseen käytettävissä oleva lämpö on $Q_\text{vesi} - Q_\text{lämm}$, ja kaiken jään sulattamiseen tarvitaan $Q_\text{kaikki}$. Puuttuva osa on lisälämpö.
+**Kysytty:** lisälämpö $Q_\text{lisä}$ kilojouleina, joka astiaan pitäisi vielä tuoda, jotta kaikki jää sulaisi
+**Periaate:** Eristetyssä astiassa energia säilyy. Veden luovuttama lämpö kuluu ensin jään lämmittämiseen ja loput sulattamiseen. Sulatukseen käytettävissä oleva lämpö on $Q_\text{vesi} - Q_\text{lämm}$, ja kaiken jään sulattamiseen tarvitaan $Q_\text{kaikki}$. Puuttuva osa on lisälämpö, joka pitäisi tuoda astiaan ulkoa: vesi ei voi luovuttaa sitä, koska se on jo $0\,{}^\circ\text{C}$:ssa ja alkaisi jäätyä.
 **Kuvaajan lukeminen:** Pylväät päättyvät ruudukon viivoille. Ylin kohtaan $25\,\text{kJ}$ (vesi). Keskimmäinen päättyy kohtaan $5\,\text{kJ}$ (jään lämmittäminen). Alin päättyy kohtaan $60\,\text{kJ}$ (kaiken jään sulattaminen). Sulatukseen jää $25 - 5 = 20\,\text{kJ}$. Se on vähemmän kuin $60\,\text{kJ}$. Siksi kaikki jää ei sula.
 **Kaava:** $Q_\text{lisä} = Q_\text{kaikki} - (Q_\text{vesi} - Q_\text{lämm})$
 **Muunnokset:** Ei tarvita, kaikki lämmöt ovat kilojouleina.
