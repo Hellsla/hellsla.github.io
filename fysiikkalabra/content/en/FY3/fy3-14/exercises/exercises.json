@@ -295,7 +295,7 @@
     {
       "id": "fy3-14-L2-09",
       "level": 2,
-      "text": "Ice taken from a freezer is added to an insulated container with water. The bars of the graph show three amounts of heat of this mixture: the heat that the water can give off when it cools to $0\\,{}^\\circ\\text{C}$, the heat needed to warm the ice to $0\\,{}^\\circ\\text{C}$, and the heat that melting all the ice would need. No heat is transferred to the container or to the surroundings.\n\nNot all the ice has time to melt. How much more heat would the water still have to give off for all the ice to melt? Read the values from the figure and give the answer in kilojoules.",
+      "text": "Ice taken from a freezer is added to an insulated container with water. The bars of the graph show three amounts of heat of this mixture: the heat that the water can give off when it cools to $0\\,{}^\\circ\\text{C}$, the heat needed to warm the ice to $0\\,{}^\\circ\\text{C}$, and the heat that melting all the ice would need. No heat is transferred to the container or to the surroundings.\n\nNot all the ice melts. How much more heat would still have to be brought into the container for all the ice to melt? Read the values from the figure and give the answer in kilojoules.",
       "figure": "fy3-14/energy-bars",
       "answer": 40,
       "unit": "kJ",

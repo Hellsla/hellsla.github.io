@@ -295,7 +295,7 @@
     {
       "id": "fy3-14-L2-09",
       "level": 2,
-      "text": "Eristettyyn astiaan, jossa on vettä, lisätään pakastimesta otettua jäätä. Kuvaajan pylväät näyttävät tämän seoksen kolme lämpömäärää. Ylin pylväs on lämpö, jonka vesi voi luovuttaa jäähtyessään $0\\,{}^\\circ\\text{C}$:seen. Keskimmäinen on lämpö, jonka jään lämmittäminen $0\\,{}^\\circ\\text{C}$:seen vaatii. Alin on lämpö, jonka kaiken jään sulattaminen vaatisi. Lämpöä ei siirry astiaan eikä ympäristöön.\n\nKaikki jää ei ehdi sulaa. Kuinka paljon lisälämpöä veden pitäisi vielä luovuttaa, jotta kaikki jää sulaisi? Lue arvot kuvasta ja anna vastaus kilojouleina.",
+      "text": "Eristettyyn astiaan, jossa on vettä, lisätään pakastimesta otettua jäätä. Kuvaajan pylväät näyttävät tämän seoksen kolme lämpömäärää. Ylin pylväs on lämpö, jonka vesi voi luovuttaa jäähtyessään $0\\,{}^\\circ\\text{C}$:seen. Keskimmäinen on lämpö, jonka jään lämmittäminen $0\\,{}^\\circ\\text{C}$:seen vaatii. Alin on lämpö, jonka kaiken jään sulattaminen vaatisi. Lämpöä ei siirry astiaan eikä ympäristöön.\n\nKaikki jää ei sula. Kuinka paljon lisälämpöä astiaan pitäisi vielä tuoda, jotta kaikki jää sulaisi? Lue arvot kuvasta ja anna vastaus kilojouleina.",
       "figure": "fy3-14/energy-bars",
       "answer": 40,
       "unit": "kJ",
