@@ -37,5 +37,7 @@ a["fy5-14-L3-05"] = 2 * 0.650 * (1176 / 6)            # 254,8 m/s -> 255 m/s
 # L1-10 figure fy5-14/spektri-tehtava: peaks at 200, 400, ... 1000 Hz; fundamental = lowest = 200 Hz; asked: seventh harmonic f7 = 7 f1
 a["fy5-14-L1-10"] = 7 * 200
 # L2-08 figure fy5-14/huojunta-tehtava: loud moments 0,25 s apart -> f_beat = 1 / 0,25 s = 4 Hz; lower fork 523 Hz -> higher 527 Hz
-a["fy5-14-L2-08"] = 523 + 1 / 0.25
+# L2-08 is multiple choice (answer in words): beat 4 Hz from the figure, wax lowers f_x and beats speed up -> f_x = 523 - 4 = 519 Hz
+L2_08_beat = 1 / 0.25
+L2_08_correct = 523 - L2_08_beat
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -201,23 +201,19 @@ $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,
 **Järkevyys:** Aallonpituus on $\lambda_1 = 2 \cdot 0{,}650\,\text{m} = 1{,}30\,\text{m}$, ja $1{,}30\,\text{m} \cdot 196\,\text{Hz} \approx 255\,\text{m/s}$. Se on tavallinen suuruus kitaran kielelle. Taajuus $196\,\text{Hz}$ on sävel G3 eli kitaran kolmas kieli. Keskeltä näpäytettäessä parittomien amplitudit pienenevät suunnilleen kuten $\tfrac{1}{n^2}$: $\tfrac{1}{9} = 0{,}11$ ja $\tfrac{1}{25} = 0{,}04$, kuten taulukossa.
 
 ## fy5-14-L1-10
-**Annettu:** kuvan spektrissä on viisi piikkiä; piikkien taajuudet luetaan kuvasta
+**Annettu:** kuvan spektrissä on viisi piikkiä. Piikkien taajuudet luetaan kuvasta.
 **Kysytty:** seitsemännen harmonisen taajuus $f_7$ hertseinä
-**Periaate:** Soittimen ääni koostuu perustaajuudesta ja sen monikerroista, joten piikit ovat harmonisen sarjan taajuuksilla $f_n = n f_1$. Perustaajuus $f_1$ on sarjan alin taajuus, ja kuvassa ei näy seitsemättä harmonista, joten se lasketaan perustaajuuden monikertana.
-**Kuvaajan lukeminen:** Piikit ovat taajuuksilla $200\,\text{Hz}$, $400\,\text{Hz}$, $600\,\text{Hz}$, $800\,\text{Hz}$ ja $1000\,\text{Hz}$. Alin piikki on kohdassa $200\,\text{Hz}$, joten $f_1 = 200\,\text{Hz}$. Voimakkain piikki $400\,\text{Hz}$ on toinen harmoninen, ei perustaajuus.
+**Periaate:** Piikit ovat perustaajuuden monikerroilla: $f_n = n f_1$. Perustaajuus $f_1$ on alin piikki. Kuvassa ei ole seitsemättä harmonista. Se lasketaan perustaajuuden monikertana.
+**Kuvaajan lukeminen:** Piikit ovat taajuuksilla $200\,\text{Hz}$, $400\,\text{Hz}$, $600\,\text{Hz}$, $800\,\text{Hz}$ ja $1000\,\text{Hz}$. Alin piikki on kohdassa $200\,\text{Hz}$. Siis $f_1 = 200\,\text{Hz}$. Voimakkain piikki $400\,\text{Hz}$ on toinen harmoninen. Se ei ole perustaajuus.
 **Kaava:** $f_n = n f_1$
-**Muunnokset:** Ei tarvita: taajuudet luetaan hertseinä.
+**Muunnokset:** Niitä ei tarvita. Taajuudet luetaan hertseinä.
 **Sijoitus:** $f_7 = 7 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$
-**Vastaus:** $1400\,\text{Hz}$, kolme merkitsevää numeroa kuten kuvaajasta luettu perustaajuus.
-**Järkevyys:** Seitsemäs harmoninen on viidettä piikkiä $1000\,\text{Hz}$ korkeammalla: $1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$, koska piikkien väli on $200\,\text{Hz}$.
+**Vastaus:** $1400\,\text{Hz}$, kolme merkitsevää numeroa kuten luettu perustaajuus.
+**Järkevyys:** Viides piikki on $1000\,\text{Hz}$. Seitsemäs harmoninen on kaksi piikkiväliä ylempänä: $1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$.
 
 ## fy5-14-L2-08
-**Annettu:** kahden yhtä aikaa soivan ääniraudan yhteinen ääni kuvassa; matalamman ääniraudan taajuus $f_1 = 523\,\text{Hz}$; huojuntajakso luetaan kuvasta
-**Kysytty:** korkeamman ääniraudan taajuus $f_2$ hertseinä
-**Periaate:** Kaksi lähes samantaajuista ääntä huojuu, ja voimakkaita hetkiä on sekunnissa yhtä monta kuin taajuuksien erotus, $f_\text{h} = f_2 - f_1$. Huojuntataajuus on huojuntajakson käänteisluku, ja korkeampi taajuus on $f_2 = f_1 + f_\text{h}$.
-**Kuvaajan lukeminen:** Äänen voimakkuus on suurimmillaan hetkillä $0$, $0{,}25\,\text{s}$, $0{,}50\,\text{s}$, $0{,}75\,\text{s}$ ja $1{,}00\,\text{s}$. Huojuntajakso on $T_\text{h} = 0{,}25\,\text{s}$.
-**Kaava:** $f_\text{h} = \dfrac{1}{T_\text{h}}$ ja $f_2 = f_1 + f_\text{h}$
-**Muunnokset:** Ei tarvita: jakso on sekunteina, joten huojuntataajuus tulee hertseinä.
-**Sijoitus:** $f_\text{h} = \dfrac{1}{0{,}25\,\text{s}} = 4{,}0\,\text{Hz}$ ja $f_2 = 523\,\text{Hz} + 4{,}0\,\text{Hz} = 527\,\text{Hz}$
-**Vastaus:** $527\,\text{Hz}$, kolme merkitsevää numeroa kuten ääniraudan $523\,\text{Hz}$ taajuus.
-**Järkevyys:** Erotus on vain $4\,\text{Hz}$ eli alle prosentti taajuudesta, joten huojunta kuuluu hitaana vaihteluna eikä kahtena erillisenä sävelenä. Kun $f_2 - f_1 = 527\,\text{Hz} - 523\,\text{Hz} = 4\,\text{Hz}$, tulos vastaa kuvan neljää voimakasta hetkeä sekunnissa.
+**Annettu:** kahden yhtä aikaa soivan ääniraudan yhteinen ääni kuvassa. Toinen äänirauta on $523\,\text{Hz}$. Vaha laskee tuntemattoman ääniraudan taajuutta, ja huojunta nopeutuu.
+**Kysytty:** tuntemattoman ääniraudan taajuus $f_x$ ennen vahaa
+**Periaate:** Huojuntataajuus on taajuuksien erotus: $f_\text{h} = |f_x - 523\,\text{Hz}|$. Se on huojuntajakson käänteisluku. Erotus ei kerro, kumpi taajuus on suurempi. Puoli päätellään vahasta, koska vaha laskee taajuutta $f_x$. Jos erotus kasvaa, $f_x$ oli jo alle $523\,\text{Hz}$. Jos erotus pienenee, $f_x$ oli yli $523\,\text{Hz}$.
+**Kuvaajan lukeminen:** Ääni on voimakkaimmillaan hetkillä $0$, $0{,}25\,\text{s}$, $0{,}50\,\text{s}$, $0{,}75\,\text{s}$ ja $1{,}00\,\text{s}$. Huojuntajakso on $T_\text{h} = 0{,}25\,\text{s}$.
+**Mallivastaus:** Huojuntataajuus on $f_\text{h} = \dfrac{1}{0{,}25\,\text{s}} = 4\,\text{Hz}$. Siis $f_x = 523\,\text{Hz} \pm 4\,\text{Hz}$ eli $519\,\text{Hz}$ tai $527\,\text{Hz}$. Vaha laski taajuutta $f_x$, ja huojunta nopeutui. Erotus siis kasvoi. Se on mahdollista vain, jos $f_x$ oli alle $523\,\text{Hz}$. Vastaus on $519\,\text{Hz}$. Tarkistus: jos $f_x$ olisi ollut $527\,\text{Hz}$, vaha toisi sen lähemmäs $523\,\text{Hz}$:ää ja huojunta hidastuisi.

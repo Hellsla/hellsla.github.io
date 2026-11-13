@@ -212,12 +212,8 @@ $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,
 **Järkevyys:** Seitsemäs harmoninen on viidettä piikkiä $1000\,\text{Hz}$ korkeammalla: $1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$, koska piikkien väli on $200\,\text{Hz}$.
 
 ## fy5-14-L2-08
-**Annettu:** kahden yhtä aikaa soivan ääniraudan yhteinen ääni kuvassa; matalamman ääniraudan taajuus $f_1 = 523\,\text{Hz}$; huojuntajakso luetaan kuvasta
-**Kysytty:** korkeamman ääniraudan taajuus $f_2$ hertseinä
-**Periaate:** Kaksi lähes samantaajuista ääntä huojuu, ja voimakkaita hetkiä on sekunnissa yhtä monta kuin taajuuksien erotus, $f_\text{h} = f_2 - f_1$. Huojuntataajuus on huojuntajakson käänteisluku, ja korkeampi taajuus on $f_2 = f_1 + f_\text{h}$.
+**Annettu:** kahden yhtä aikaa soivan ääniraudan yhteinen ääni kuvassa; toinen äänirauta $523\,\text{Hz}$; vaha laskee tuntemattoman ääniraudan taajuutta ja huojunta nopeutuu
+**Kysytty:** tuntemattoman ääniraudan taajuus $f_x$ ennen vahan lisäämistä
+**Periaate:** Huojuntataajuus on taajuuksien erotus, $f_\text{h} = |f_x - 523\,\text{Hz}|$, ja se on huojuntajakson käänteisluku. Erotus ei kerro, kumpi taajuus on suurempi, joten puoli päätellään vahasta: se laskee $f_x$:ää. Jos erotus kasvaa, $f_x$ on jo alempana kuin $523\,\text{Hz}$. Jos erotus pienenee, $f_x$ on ylempänä.
 **Kuvaajan lukeminen:** Äänen voimakkuus on suurimmillaan hetkillä $0$, $0{,}25\,\text{s}$, $0{,}50\,\text{s}$, $0{,}75\,\text{s}$ ja $1{,}00\,\text{s}$. Huojuntajakso on $T_\text{h} = 0{,}25\,\text{s}$.
-**Kaava:** $f_\text{h} = \dfrac{1}{T_\text{h}}$ ja $f_2 = f_1 + f_\text{h}$
-**Muunnokset:** Ei tarvita: jakso on sekunteina, joten huojuntataajuus tulee hertseinä.
-**Sijoitus:** $f_\text{h} = \dfrac{1}{0{,}25\,\text{s}} = 4{,}0\,\text{Hz}$ ja $f_2 = 523\,\text{Hz} + 4{,}0\,\text{Hz} = 527\,\text{Hz}$
-**Vastaus:** $527\,\text{Hz}$, kolme merkitsevää numeroa kuten ääniraudan $523\,\text{Hz}$ taajuus.
-**Järkevyys:** Erotus on vain $4\,\text{Hz}$ eli alle prosentti taajuudesta, joten huojunta kuuluu hitaana vaihteluna eikä kahtena erillisenä sävelenä. Kun $f_2 - f_1 = 527\,\text{Hz} - 523\,\text{Hz} = 4\,\text{Hz}$, tulos vastaa kuvan neljää voimakasta hetkeä sekunnissa.
+**Mallivastaus:** Huojuntataajuus on $f_\text{h} = \dfrac{1}{0{,}25\,\text{s}} = 4\,\text{Hz}$, joten $f_x = 523\,\text{Hz} \pm 4\,\text{Hz}$ eli $519\,\text{Hz}$ tai $527\,\text{Hz}$. Vaha laski taajuutta $f_x$ ja huojunta nopeutui eli erotus kasvoi. Se on mahdollista vain, jos $f_x$ oli alle $523\,\text{Hz}$. Vastaus on $519\,\text{Hz}$. Tarkistus: jos $f_x$ olisi ollut $527\,\text{Hz}$, vaha olisi tuonut sen lähemmäs $523\,\text{Hz}$:ää ja huojunta olisi hidastunut.

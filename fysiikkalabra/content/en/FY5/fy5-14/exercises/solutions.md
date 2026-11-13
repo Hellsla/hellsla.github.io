@@ -212,12 +212,8 @@ $\begin{aligned} v &= 2 \cdot 0.650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254.8\,
 **Reasonableness:** The seventh harmonic lies above the fifth peak $1000\,\text{Hz}$ by two spacings: $1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$, since the spacing of the peaks is $200\,\text{Hz}$.
 
 ## fy5-14-L2-08
-**Given:** the combined sound of two tuning forks sounding at the same time, in the figure; the frequency of the lower fork $f_1 = 523\,\text{Hz}$; the beat period is read from the figure
-**Find:** the frequency of the higher fork $f_2$ in hertz
-**Principle:** Two sounds of nearly the same frequency beat, and the number of loud moments per second equals the difference of the frequencies, $f_\text{b} = f_2 - f_1$. The beat frequency is the reciprocal of the beat period, and the higher frequency is $f_2 = f_1 + f_\text{b}$.
+**Given:** the combined sound of two tuning forks sounding at the same time, in the figure; one fork $523\,\text{Hz}$; wax lowers the frequency of the unknown fork and the beats get faster
+**Find:** the frequency $f_x$ of the unknown fork before the wax was added
+**Principle:** The beat frequency is the difference of the frequencies, $f_\text{b} = |f_x - 523\,\text{Hz}|$, and it is the reciprocal of the beat period. The difference does not tell which frequency is higher, so the side is decided by the wax: it lowers $f_x$. If the difference grows, $f_x$ was already below $523\,\text{Hz}$. If the difference shrinks, $f_x$ was above it.
 **Reading the figure:** The sound is loudest at the moments $0$, $0.25\,\text{s}$, $0.50\,\text{s}$, $0.75\,\text{s}$ and $1.00\,\text{s}$. The beat period is $T_\text{b} = 0.25\,\text{s}$.
-**Formula:** $f_\text{b} = \dfrac{1}{T_\text{b}}$ and $f_2 = f_1 + f_\text{b}$
-**Conversions:** None are needed: the period is in seconds, so the beat frequency comes out in hertz.
-**Substitution:** $f_\text{b} = \dfrac{1}{0.25\,\text{s}} = 4.0\,\text{Hz}$ and $f_2 = 523\,\text{Hz} + 4.0\,\text{Hz} = 527\,\text{Hz}$
-**Answer:** $527\,\text{Hz}$, three significant figures like the fork frequency $523\,\text{Hz}$.
-**Reasonableness:** The difference is only $4\,\text{Hz}$, less than one percent of the frequency, so the beats are heard as a slow variation and not as two separate notes. $f_2 - f_1 = 527\,\text{Hz} - 523\,\text{Hz} = 4\,\text{Hz}$ matches the four loud moments per second in the figure.
+**Model answer:** The beat frequency is $f_\text{b} = \dfrac{1}{0.25\,\text{s}} = 4\,\text{Hz}$, so $f_x = 523\,\text{Hz} \pm 4\,\text{Hz}$, that is $519\,\text{Hz}$ or $527\,\text{Hz}$. The wax lowered $f_x$ and the beats got faster, so the difference grew. That is possible only if $f_x$ was below $523\,\text{Hz}$. The answer is $519\,\text{Hz}$. Check: if $f_x$ had been $527\,\text{Hz}$, the wax would have brought it closer to $523\,\text{Hz}$ and the beats would have slowed down.

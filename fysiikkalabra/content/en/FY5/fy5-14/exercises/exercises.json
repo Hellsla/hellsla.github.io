@@ -289,11 +289,33 @@
     {
       "id": "fy5-14-L2-08",
       "level": 2,
-      "text": "The figure shows the combined sound of two tuning forks sounding at the same time, measured with a microphone. The lower fork is a $523\\,\\text{Hz}$ fork. What is the frequency of the higher fork? Read the necessary data from the figure.",
+      "text": "The figure shows the combined sound of two tuning forks sounding at the same time, measured with a microphone. One of the forks is a $523\\,\\text{Hz}$ fork, and the frequency of the other is unknown. When a little wax is added to the prong of the unknown fork, its frequency decreases and the beats get faster. What was the frequency of the unknown fork before the wax was added? Read the necessary data from the figure.",
       "figure": "fy5-14/huojunta-tehtava",
-      "answer": 527,
-      "unit": "Hz",
-      "tolerance": 0.002
+      "answer": "$519\\,\\text{Hz}$: the beat frequency is $4\\,\\text{Hz}$ and the fork was lower than $523\\,\\text{Hz}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "kind": [
+        "concept"
+      ],
+      "choices": [
+        {
+          "text": "$527\\,\\text{Hz}$: the beat frequency is $4\\,\\text{Hz}$ and the fork was higher than $523\\,\\text{Hz}$.",
+          "feedback": "The beat frequency $4\\,\\text{Hz}$ is right, but the side cannot be decided from the beats alone. If the unknown fork were higher, adding wax would lower it towards $523\\,\\text{Hz}$, the difference would shrink and the beats would slow down. The beats got faster, so the fork was lower."
+        },
+        {
+          "text": "$519\\,\\text{Hz}$: the beat frequency is $4\\,\\text{Hz}$ and the fork was lower than $523\\,\\text{Hz}$.",
+          "feedback": "Correct: from the figure the beat period is $0.25\\,\\text{s}$, so $f_\\text{b} = \\tfrac{1}{0.25\\,\\text{s}} = 4\\,\\text{Hz}$ and the frequencies differ by $4\\,\\text{Hz}$. Wax lowers the unknown frequency. The beats got faster, so the difference grew, and the unknown fork was already lower before the wax: $523\\,\\text{Hz} - 4\\,\\text{Hz} = 519\\,\\text{Hz}$.",
+          "correct": true
+        },
+        {
+          "text": "$523\\,\\text{Hz}$: beats occur when both forks sound at the same frequency.",
+          "feedback": "If the frequencies were equal, the difference would be zero and there would be no beats at all. The beat frequency is the difference of the frequencies, and in the figure it is $4\\,\\text{Hz}$."
+        },
+        {
+          "text": "$531\\,\\text{Hz}$: the beat frequency is $8\\,\\text{Hz}$ and the fork was higher than $523\\,\\text{Hz}$.",
+          "feedback": "This comes from reading the period wrongly, for example counting loud moments every other time. The loud moments are at $0$, $0.25\\,\\text{s}$, $0.50\\,\\text{s}$, $\\ldots$, so the spacing is $0.25\\,\\text{s}$ and the beat frequency $4\\,\\text{Hz}$, not $8\\,\\text{Hz}$."
+        }
+      ]
     }
   ],
   "level3": [
