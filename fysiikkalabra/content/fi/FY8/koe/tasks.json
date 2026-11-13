@@ -125,7 +125,7 @@
      "points": 2,
      "text": "Radioaktiivisen näytteen puoliintumisaika on $4{,}0\\,\\text{h}$ ja sen aktiivisuus on aluksi $3{,}2\\,\\text{MBq}$. Kuinka kauan kuluu, ennen kuin aktiivisuus on pienentynyt arvoon $0{,}10\\,\\text{MBq}$?",
      "options": [
-      "$12{,}8\\,\\text{h}$",
+      "$7{,}8\\,\\text{h}$",
       "$16\\,\\text{h}$",
       "$20\\,\\text{h}$",
       "$32\\,\\text{h}$"
@@ -139,8 +139,8 @@
      "points": 2,
      "text": "Uraani-235-ytimen fissiossa vapautuu energiaa noin $200\\,\\text{MeV}$ ja hiiliatomin palamisessa hiilidioksidiksi noin $4\\,\\text{eV}$. Kuinka monta kertaa suurempi energia vapautuu yhtä fissiota kohti kuin yhtä palavaa hiiliatomia kohti?",
      "options": [
-      "noin $5 \\cdot 10^{3}$",
-      "noin $5 \\cdot 10^{5}$",
+      "noin $50$",
+      "noin $5 \\cdot 10^{4}$",
       "noin $5 \\cdot 10^{7}$",
       "noin $5 \\cdot 10^{9}$"
      ],
@@ -558,22 +558,17 @@
      "id": "d",
      "kind": "word",
      "points": 4,
-     "text": "Selitä sidosenergian avulla, miksi reaktio vapauttaa energiaa, ja miksi fuusion käynnistäminen vaatii noin sadan miljoonan kelvinin lämpötilan.",
+     "text": "Sidosenergia nukleonia kohti on deuteriumilla $1{,}11\\,\\text{MeV}$, tritiumilla $2{,}83\\,\\text{MeV}$ ja helium-4:llä $7{,}07\\,\\text{MeV}$. Selitä näiden avulla, miksi reaktio vapauttaa energiaa, ja miksi fuusion käynnistäminen vaatii noin sadan miljoonan kelvinin lämpötilan.",
      "criteria": [
       {
-       "text": "Selittää, että heliumydin on sidosenergialtaan nukleonia kohti suurempi kuin deuterium ja tritium ($7{,}07$ vs. $1{,}11$ ja $2{,}83\\,\\text{MeV}$), joten lopputilan massa on pienempi ja massaero vapautuu energiana.",
+       "text": "Vertaa sidosenergioita nukleonia kohti ($7{,}07$ vs. $1{,}11$ ja $2{,}83\\,\\text{MeV}$): lopputila on tiukemmin sidottu, joten sen massa on pienempi ja massaero vapautuu energiana.",
        "tag": "concept",
        "points": 2
       },
       {
-       "text": "Selittää, että positiivisesti varatut ytimet hylkivät toisiaan sähköisesti, joten niiden on oltava hyvin suuren liike-energian (lämpötilan) ansiosta tarpeeksi lähellä, jotta lyhyen kantaman vahva vuorovaikutus sitoo ne.",
+       "text": "Selittää, että positiivisesti varatut ytimet hylkivät toisiaan sähköisesti, joten reaktio ei käynnisty itsestään: ytimien on päästävä lähelle toisiaan, kunnes lyhyen kantaman vahva vuorovaikutus sitoo ne, ja siihen tarvitaan suuri liike-energia eli korkea lämpötila.",
        "tag": "concept",
-       "points": 1
-      },
-      {
-       "text": "Yhdistää selityksen lukuihin: mainitsee sekä sidosenergiat ($7{,}07\\,\\text{MeV}$ nukleonia kohti) että sähköisen hylkimisen ja päättelee, miksi energia vapautuu mutta reaktio ei käynnisty itsestään.",
-       "tag": "communication",
-       "points": 1
+       "points": 2
       }
      ]
     }

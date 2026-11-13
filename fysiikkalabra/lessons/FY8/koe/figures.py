@@ -72,7 +72,7 @@ def decay():
     th = math.log(2) / LAM3
     ax.guide(th, N0_3 / 2)
     f.tex(ax.X(th) + 8, ax.Y(0) - 22, r"3{,}2\,\text{min}", "start", MUTED, size=20, bg=True)
-    f.tex(ax.X(0) + 10, ax.Y(N0_3 / 2) - 18, r"N = 401", "start", MUTED, size=20, bg=True)
+    f.tex(ax.X(0) + 10, ax.Y(N0_3 / 2) - 18, r"N = 400", "start", MUTED, size=20, bg=True)
     return f.svg()
 
 

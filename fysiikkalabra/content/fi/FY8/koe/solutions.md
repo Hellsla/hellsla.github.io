@@ -4,7 +4,7 @@
 **Perustelu:** Valosähköisessa ilmiössä yksi fotoni irrottaa yhden elektronin. Elektronin suurin liike-energia on $E_\text{k,max} = hf - W$, joka riippuu vain taajuudesta ja irrotustyöstä, ei intensiteetistä. Intensiteetin kaksinkertaistaminen tarkoittaa kaksi kertaa niin monta fotonia sekunnissa, joten myös irtoavia elektroneja on kaksi kertaa niin paljon. Vaihtoehto, jossa liike-energia kaksinkertaistuu, perustuu virheelliseen käsitykseen, että kirkkaampi valo antaa jokaiselle elektronille enemmän energiaa; energia kasvaisi vain taajuuden kasvaessa.
 
 ### b)
-**Perustelu:** Pysäytysjännitteelle $eU_\text{s} = hf - W$, joten kuvaajan suora leikkaa vaaka-akselin kynnystaajuudella $f_0$, jolla $hf_0 = W$. Jatkamalla suoraa kohti jännitettä $0$ saadaan $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$, joten $W = hf_0 = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5{,}6 \cdot 10^{14}\,\text{Hz} \approx 3{,}7 \cdot 10^{-19}\,\text{J} \approx 2{,}3\,\text{eV}$. Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu luku $2{,}3$ sekoitetaan joulemäärään, ja $3{,}7\,\text{eV}$ kun jouleissa saatu luku sekoitetaan elektronivoltteihin. Kynnystaajuus $5{,}6 \cdot 10^{14}$ on taajuus, ei energia.
+**Perustelu:** Pysäytysjännitteelle $eU_\text{s} = hf - W$, joten kuvaajan suora leikkaa vaaka-akselin kynnystaajuudella $f_0$, jolla $hf_0 = W$. Jatkamalla suoraa kohti jännitettä $0$ saadaan $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$, joten $W = hf_0$. Sijoitus: $W = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5{,}6 \cdot 10^{14}\,\text{Hz}$, eli $W \approx 3{,}7 \cdot 10^{-19}\,\text{J}$, ja elektronivoltteina $W \approx 2{,}3\,\text{eV}$. Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu luku $2{,}3$ sekoitetaan joulemäärään, ja $3{,}7\,\text{eV}$ kun jouleissa saatu luku sekoitetaan elektronivoltteihin. Kynnystaajuus $5{,}6 \cdot 10^{14}$ on taajuus, ei energia.
 
 ### c)
 **Perustelu:** Kun jatkuvan spektrin valo kulkee kaasun läpi, kaasun atomit absorboivat vain fotoneja, joiden energia on täsmälleen jonkin atomin kahden energiatason erotus. Näiden aallonpituuksien kohdalla spektriin jää tummia viivoja, ja viivojen paikat ovat alkuaineelle ominaiset. Uudelleen emittoitu valo lähtee kaikkiin suuntiin, joten suoraan kulkevassa valossa viivat ovat tummia; ne eivät siis ole kaasun emissioviivoja. Tummat viivat eivät kerro lähteen koostumuksesta, koska lähde lähettää jatkuvaa spektriä, ja viivojen paikat riippuvat alkuaineesta eivätkä tiheydestä.
@@ -19,10 +19,10 @@
 **Perustelu:** Stimuloidussa emissiossa virittyneen atomin ohi kulkeva fotoni, jonka energia vastaa siirtymää, saa atomin siirtymään alemmalle tasolle ja lähettämään toisen fotonin, joka on samassa vaiheessa, samalla taajuudella ja samaan suuntaan. Tästä kasvaa koherentti, yhdensuuntainen laservalo. Absorptio ja satunnaisiin suuntiin tapahtuva spontaani emissio kuvaavat tavallista valonlähdettä, ja fotoni ei jakaudu kahdeksi, koska energia säilyy: syntyy uusi fotoni ja atomi luovuttaa energiansa.
 
 ### g)
-**Perustelu:** Aktiivisuus puolittuu jokaisen puoliintumisajan kuluessa. Suhde $3{,}2 : 0{,}10 = 32 = 2^{5}$, joten tarvitaan viisi puoliintumisaikaa: $5 \cdot 4{,}0\,\text{h} = 20\,\text{h}$. Neljän puoliintumisajan ($16\,\text{h}$) jälkeen aktiivisuus olisi vielä $0{,}20\,\text{MBq}$. Vaihtoehto $7{,}8\,\text{h}$ syntyy lineaarisesta päättelystä: jos aktiivisuuden luullaan vähenevän tasaisesti puolella alkuarvostaan eli $1{,}6\,\text{MBq}$ per $4{,}0\,\text{h}$, tarvittava aika on $\tfrac{(3{,}2 - 0{,}10)\,\text{MBq}}{1{,}6\,\text{MBq}} \cdot 4{,}0\,\text{h} \approx 7{,}8\,\text{h}$, mutta puoliintuminen on suhteellista eikä vakiomäärän väheneminen. ja $32\,\text{h}$ syntyy, kun suhdeluku $32$ luetaan suoraan tunneiksi.
+**Perustelu:** Aktiivisuus puolittuu jokaisen puoliintumisajan kuluessa. Suhde $3{,}2 : 0{,}10 = 32 = 2^{5}$, joten tarvitaan viisi puoliintumisaikaa: $5 \cdot 4{,}0\,\text{h} = 20\,\text{h}$. Neljän puoliintumisajan ($16\,\text{h}$) jälkeen aktiivisuus olisi vielä $0{,}20\,\text{MBq}$. Vaihtoehto $7{,}8\,\text{h}$ syntyy lineaarisesta päättelystä: jos aktiivisuuden luullaan vähenevän tasaisesti puolella alkuarvostaan eli $1{,}6\,\text{MBq}$ per $4{,}0\,\text{h}$, aika on $\tfrac{3{,}1}{1{,}6} \cdot 4{,}0\,\text{h} \approx 7{,}8\,\text{h}$, vaikka puoliintuminen on suhteellista eikä vakiomäärän väheneminen. Vaihtoehto $16\,\text{h}$ on neljä puoliintumisaikaa, jolloin aktiivisuus on vielä $0{,}20\,\text{MBq}$. Vaihtoehto $32\,\text{h}$ syntyy, kun suhdeluku $32$ luetaan suoraan tunneiksi.
 
 ### h)
-**Perustelu:** Energioiden suhde on $\tfrac{200 \cdot 10^{6}\,\text{eV}}{4\,\text{eV}} = 5 \cdot 10^{7}$. Ydinreaktiossa energia tulee ytimen sidosenergioiden muutoksesta, joka on miljoonia kertoja suurempi kuin atomien elektroniverhojen kemiallisten sidosten muutos. Vaihtoehto $50$ syntyy, kun etuliite mega ($10^{6}$) unohdetaan ($200 : 4$); $5 \cdot 10^{4}$ syntyy, kun energia $200\,\text{MeV}$ luetaan kiloelektronivolteiksi ($200 \cdot 10^{3} : 4$); $5 \cdot 10^{9}$ syntyy, kun se luetaan gigaelektronivolteiksi.
+**Perustelu:** Energioiden suhde on $\tfrac{200 \cdot 10^{6}\,\text{eV}}{4\,\text{eV}} = 5 \cdot 10^{7}$. Ydinreaktiossa energia tulee ytimen sidosenergioiden muutoksesta, joka on miljoonia kertoja suurempi kuin atomien elektroniverhojen kemiallisten sidosten muutos. Vaihtoehto $50$ syntyy, kun etuliite mega ($10^{6}$) unohdetaan ($200 : 4$); $5 \cdot 10^{4}$ syntyy, kun $200\,\text{MeV}$ luetaan kiloelektronivolteiksi; $5 \cdot 10^{9}$ syntyy, kun se luetaan gigaelektronivolteiksi.
 
 ### i)
 **Perustelu:** Ekvivalenttiannos on $H = w_\text{R} D$: alfasäteilylle $20 \cdot 1{,}0\,\text{mGy} = 20\,\text{mSv}$ ja gammasäteilylle $1{,}0\,\text{mSv}$. Painotuskerroin kuvaa sitä, että alfahiukkanen ionisoi lyhyellä matkalla tiheästi ja vaurioittaa soluja enemmän samalla absorboituneella energialla. Absorboitunut annos ei muutu, koska se mittaa vain kudokseen jäänyttä energiaa massayksikköä kohti. Väite yhtä suurista ekvivalenttiannoksista unohtaa painotuksen, ja gammasäteilyn läpäisykyky ei kasvata ekvivalenttiannosta.
@@ -34,7 +34,7 @@
 - Luullaan, että kirkkaampi valo antaa jokaiselle irtoavalle elektronille enemmän energiaa (a).
 - Sekoitetaan elektronivoltit ja joulet tai taajuus ja energia (b).
 - Päätellään suhde väärinpäin tai korotetaan se toiseen potenssiin (d, e).
-- Lasketaan puoliintumisaika lineaarisesti (g) tai unohdetaan etuliite (h).
+- Lasketaan aktiivisuuden väheneminen lineaarisesti tai suhdeluku luetaan tunneiksi (g), tai unohdetaan etuliite (h).
 
 ## fy8-k2
 
@@ -125,7 +125,7 @@
 **Kuvaajan lukeminen:** Suoralta luetaan kaukana toisistaan olevat pisteet $(4{,}0 \cdot 10^{14}\,\text{Hz};\ 1{,}59\,\text{V})$ ja $(7{,}0 \cdot 10^{14}\,\text{Hz};\ 2{,}87\,\text{V})$.
 **Kaava:** $h = e \cdot \dfrac{\Delta U_\text{k}}{\Delta f}$
 **Muunnokset:** $4{,}0 \cdot 10^{14}\,\text{Hz}$ ja $7{,}0 \cdot 10^{14}\,\text{Hz}$ ovat suoraan hertseinä, ja $1\,\text{V} = 1\,\text{J/C}$.
-**Sijoitus:** $h = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{2{,}87\,\text{V} - 1{,}59\,\text{V}}{7{,}0 \cdot 10^{14}\,\text{Hz} - 4{,}0 \cdot 10^{14}\,\text{Hz}} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}25 \cdot 10^{-15}\,\text{V}\,\text{s} \approx 6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Sijoitus:** kulmakerroin $\dfrac{2{,}87\,\text{V} - 1{,}59\,\text{V}}{7{,}0 \cdot 10^{14}\,\text{Hz} - 4{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}25 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja $h = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}25 \cdot 10^{-15}\,\text{V}\,\text{s}$ $\approx 6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Vastaus:** Planckin vakio on noin $6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$.
 **Järkevyys:** Arvo on lähellä tunnettua arvoa $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, noin $3\,\%$ suurempi; suhteellinen virhe on mittauksen tarkkuuden kokoluokkaa. Kulmakertoimen yksikkö $\text{V}\,\text{s}$ kerrottuna varauksella antaa $\text{J}\,\text{s}$.
 
@@ -133,7 +133,7 @@
 **Annettu:** viisi pistettä virhepalkkeineen $\pm 0{,}05\,\text{V}$, $h = 6{,}8 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Kysytty:** $h$:n epävarmuus ja sopusointu tunnetun arvon kanssa
 **Periaate:** Piirretään jyrkin ja loivin suora, jotka vielä mahtuvat virhepalkkien sisään. Niiden kulmakertoimista saadaan $h$:n suurin ja pienin arvo, ja epävarmuus on niiden eron puolikas.
-**Kuvaajan lukeminen:** Jyrkin suora, joka vielä kulkee kaikkien viiden virhepalkin sisällä, kulkee pisteen $(5{,}08;\ 2{,}02)$ (kolmannen palkin alapää) ja pisteen $(6{,}97;\ 2{,}89)$ (viimeisen palkin yläpää) kautta. Loivin suora kulkee pisteen $(4{,}80;\ 1{,}96)$ (ensimmäisen palkin yläpää) ja pisteen $(6{,}38;\ 2{,}57)$ (neljännen palkin alapää) kautta. Taajuudet ovat yksikössä $10^{14}\,\text{Hz}$ ja jännitteet voltteina; muut kolme palkkia ovat suorien sisällä.
+**Kuvaajan lukeminen:** Jyrkin suora, joka vielä kulkee kaikkien viiden virhepalkin sisällä, kulkee pisteen $(5{,}08;\ 2{,}02)$ (toisen palkin alapää) ja pisteen $(6{,}97;\ 2{,}89)$ (viimeisen palkin yläpää) kautta. Loivin suora kulkee pisteen $(4{,}80;\ 1{,}96)$ (ensimmäisen palkin yläpää) ja pisteen $(6{,}38;\ 2{,}57)$ (neljännen palkin alapää) kautta. Taajuudet ovat yksikössä $10^{14}\,\text{Hz}$ ja jännitteet voltteina; muut kolme palkkia ovat suorien sisällä.
 **Kaava:** $\Delta h = \dfrac{h_\text{max} - h_\text{min}}{2}$, missä $h = e \cdot \text{kulmakerroin}$
 **Muunnokset:** Jyrkin suora: $\Delta f = (6{,}97 - 5{,}08) \cdot 10^{14}\,\text{Hz} = 1{,}89 \cdot 10^{14}\,\text{Hz}$; loivin suora: $\Delta f = (6{,}38 - 4{,}80) \cdot 10^{14}\,\text{Hz} = 1{,}58 \cdot 10^{14}\,\text{Hz}$.
 **Sijoitus:** $h_\text{max} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}87\,\text{V}}{1{,}89 \cdot 10^{14}\,\text{Hz}} \approx 7{,}4 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $h_\text{min} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}61\,\text{V}}{1{,}58 \cdot 10^{14}\,\text{Hz}} \approx 6{,}2 \cdot 10^{-34}\,\text{J}\,\text{s}$, joten $\Delta h = \dfrac{7{,}4 - 6{,}2}{2} \cdot 10^{-34}\,\text{J}\,\text{s} \approx 0{,}6 \cdot 10^{-34}\,\text{J}\,\text{s}$
@@ -152,6 +152,7 @@
 - Pisteet yhdistetään murtoviivaksi.
 
 ### Hyväksytään myös
+- Kohdassa d muu perusteltu virhelähde (esimerkiksi mittarin nollavirhe tai suojavastuksen jännitehäviö) kunhan sen vaikutuksen suunta on oikein perusteltu.
 - Kohdassa b pienimmän neliösumman suoran kulmakerroin; tulos $6{,}5\text{–}7{,}1 \cdot 10^{-34}\,\text{J}\,\text{s}$.
 - Kohdassa c epävarmuuden arviointi muulla perustellulla tavalla, kun tulos on $0{,}5\text{–}1{,}0 \cdot 10^{-34}\,\text{J}\,\text{s}$.
 
@@ -238,7 +239,7 @@
   <line x1="211" y1="242" x2="211" y2="380" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="90" y1="242" x2="211" y2="242" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <foreignObject x="219" y="346" width="81" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$3{,}2\,\text{min}$</span></div></foreignObject>
-  <foreignObject x="100" y="212" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$N = 401$</span></div></foreignObject>
+  <foreignObject x="100" y="212" width="60" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px;color:#6b7480"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$N = 400$</span></div></foreignObject>
 </svg>
 
 **Mallivastaus:** Pisteet laskevat nopeasti aluksi ja yhä hitaammin, joten malliksi sopii eksponentiaalinen väheneminen $N = N_0 e^{-\lambda t}$ eikä suora. Pisteisiin sovitetaan sileä, alaspäin kupera käyrä, joka alkaa noin arvosta $800$ ja lähestyy nollaa. Pisteitä ei yhdistetä murtoviivaksi. Pisteet poikkeavat käyrästä satunnaisesti molempiin suuntiin.
@@ -260,7 +261,7 @@
 **Periaate:** Puoliintumisaika ja hajoamisvakio liittyvät toisiinsa, ja hajoamislaki antaa lukumäärän ajan funktiona. Ikkunan pituus on sama kuin mittauksissa, joten alkuarvo $N_0$ on mittausikkunan lukumäärä.
 **Kaava:** $\lambda = \dfrac{\ln 2}{T_{1/2}}$ ja $N = N_0 e^{-\lambda t}$
 **Muunnokset:** Aika pysyy minuutteina, koska $\lambda$ ja $t$ ovat samassa yksikössä.
-**Sijoitus:** $\lambda = \dfrac{0{,}693}{3{,}2\,\text{min}} \approx 0{,}217\,\text{min}^{-1}$ ja $N = 800 \cdot e^{-0{,}217\,\text{min}^{-1} \cdot 15\,\text{min}} \approx 800 \cdot 0{,}0386 \approx 31$
+**Sijoitus:** $\lambda = \dfrac{0{,}693}{3{,}2\,\text{min}} \approx 0{,}217\,\text{min}^{-1}$. Eksponentti on $\lambda t = 0{,}217\,\text{min}^{-1} \cdot 15\,\text{min} = 3{,}25$, joten $N = 800 \cdot e^{-3{,}25}$ $\approx 800 \cdot 0{,}0386$ $\approx 31$
 **Vastaus:** Hajoamisvakio on noin $0{,}22\,\text{min}^{-1}$, ja $30\,\text{s}$:n aikana rekisteröidään noin $31$ pulssia.
 **Järkevyys:** $15\,\text{min}$ on noin $4{,}7$ puoliintumisaikaa, joten jäljelle jää $2^{-4{,}7} \approx 0{,}039$ eli noin $4\,\%$ alkuarvosta; $0{,}04 \cdot 800 \approx 31$.
 
@@ -304,14 +305,14 @@
 **Muunnokset:** $1\,\text{u} \cdot c^2 = 931{,}5\,\text{MeV}$
 **Sijoitus:** $m_\text{alku} = 2{,}014102\,\text{u} + 3{,}016049\,\text{u} = 5{,}030151\,\text{u}$ ja $m_\text{loppu} = 4{,}002603\,\text{u} + 1{,}008665\,\text{u} = 5{,}011268\,\text{u}$, joten $\Delta m = 0{,}018883\,\text{u}$ ja $Q = 0{,}018883 \cdot 931{,}5\,\text{MeV} \approx 17{,}59\,\text{MeV}$
 **Vastaus:** Yhdessä reaktiossa vapautuu energiaa noin $17{,}6\,\text{MeV}$.
-**Järkevyys:** Sama tulos saadaan sidosenergioista: $28{,}30\,\text{MeV} - 2{,}22\,\text{MeV} - 8{,}48\,\text{MeV} = 17{,}59\,\text{MeV}$, ja arvo on tunnettu D–T-fuusion energia.
+**Järkevyys:** Sama tulos saadaan sidosenergioista: sidosenergioiden erotus $28{,}30\,\text{MeV} - 2{,}22\,\text{MeV}$ $- 8{,}48\,\text{MeV}$ on $17{,}59\,\text{MeV}$, ja arvo on tunnettu D–T-fuusion energia.
 
 ### c)
 **Annettu:** $Q = 17{,}59\,\text{MeV}$, atomimassat, $1\,\text{u} = 1{,}6605 \cdot 10^{-27}\,\text{kg}$, kivihiilen palamislämpö $30\,\text{MJ/kg}$
 **Kysytty:** energia yhtä polttoainekilogrammaa kohti ja vertailu kivihiileen
 **Periaate:** Yhteen reaktioon kuluu yksi deuterium- ja yksi tritiumatomi. Energia kilogrammaa kohti on reaktion energia jaettuna näiden atomien yhteismassalla.
 **Kaava:** $\dfrac{E}{m} = \dfrac{Q}{m_\text{D} + m_\text{T}}$
-**Muunnokset:** $Q = 17{,}59\,\text{MeV} = 17{,}59 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}818 \cdot 10^{-12}\,\text{J}$ ja $m_\text{D} + m_\text{T} = 5{,}030151\,\text{u} = 5{,}030151 \cdot 1{,}6605 \cdot 10^{-27}\,\text{kg} = 8{,}353 \cdot 10^{-27}\,\text{kg}$
+**Muunnokset:** $Q = 17{,}59 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$ $= 2{,}818 \cdot 10^{-12}\,\text{J}$ ja massa $m_\text{D} + m_\text{T} = 5{,}030151\,\text{u}$ $= 5{,}030151 \cdot 1{,}6605 \cdot 10^{-27}\,\text{kg}$ $= 8{,}353 \cdot 10^{-27}\,\text{kg}$
 **Sijoitus:** $\dfrac{E}{m} = \dfrac{2{,}818 \cdot 10^{-12}\,\text{J}}{8{,}353 \cdot 10^{-27}\,\text{kg}} \approx 3{,}37 \cdot 10^{14}\,\text{J/kg}$ ja suhde kivihiileen $\dfrac{3{,}37 \cdot 10^{14}\,\text{J/kg}}{30 \cdot 10^{6}\,\text{J/kg}} \approx 1{,}1 \cdot 10^{7}$
 **Vastaus:** Yhdestä kilogrammasta polttoainetta vapautuu noin $3{,}4 \cdot 10^{14}\,\text{J}$, mikä on noin $10^{7}$-kertaisesti kivihiilen palamislämpöön verrattuna.
 **Järkevyys:** Ydinreaktion energia on miljoonia kertoja kemiallisen reaktion energiaa suurempi atomia kohti, ja massan suhde on sama, joten luku $10^{7}$ on uskottava.
@@ -530,7 +531,7 @@
 **Muunnokset:** $1\,\text{keV} = 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Sijoitus:** $E = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2 = 8{,}187 \cdot 10^{-14}\,\text{J} = \dfrac{8{,}187 \cdot 10^{-14}}{1{,}602 \cdot 10^{-16}}\,\text{keV} \approx 511\,\text{keV}$ ja $\lambda = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{8{,}187 \cdot 10^{-14}\,\text{J}} \approx 2{,}43 \cdot 10^{-12}\,\text{m}$
 **Vastaus:** Syntyy kaksi vastakkaisiin suuntiin lähtevää fotonia. Kummankin energia on noin $511\,\text{keV}$ ja aallonpituus noin $2{,}4\,\text{pm}$.
-**Järkevyys:** Elektronin lepoenergia on tunnetusti $0{,}511\,\text{MeV}$. Aallonpituus on gammasäteilylle tyypillinen, noin tuhannesosa atomin koosta.
+**Järkevyys:** Elektronin lepoenergia on tunnetusti $0{,}511\,\text{MeV}$. Aallonpituus on gammasäteilylle tyypillinen, noin $\tfrac{1}{40}$ atomin koosta ($0{,}1\,\text{nm}$).
 
 ### d)
 **Annettu:** $A = 280\,\text{MBq}$, annoskerroin $0{,}019\,\text{mSv/MBq}$, vuosiannos $5{,}9\,\text{mSv}$
@@ -545,7 +546,7 @@
 ### e)
 **Kysytty:** kumpi merkkiaine soveltuu kolmen tunnin kuljetukseen
 **Periaate:** Merkkiaineen aktiivisuus pienenee puoliintumisajan mukaan koko kuljetuksen ajan. Kun puoliintumisaika on lyhyt verrattuna kuljetusaikaan, lähes kaikki aine ehtii hajota ennen käyttöä.
-**Mallivastaus:** Kuljetuksen aikana ($3{,}0\,\text{h}$) fluori-18:aa on jäljellä $0{,}5^{180/109{,}8} \approx 0{,}32$ eli kolmannes, mutta hiili-11:tä $0{,}5^{180/20{,}4} = 0{,}5^{8{,}8} \approx 0{,}002$ eli vain $0{,}2\,\%$. Jos injektioon tarvitaan $280\,\text{MBq}$ $4{,}5\,\text{h}$:n kuluttua, hiili-11:tä pitäisi valmistaa noin $280\,\text{MBq} \cdot 2^{270/20{,}4} \approx 2{,}7\,\text{TBq}$ (fluori-18:aa $1{,}5\,\text{GBq}$), mikä on epäkäytännöllistä ja saastuttaisi valmistuslaitoksen. Oletuksena on, että kemia, valmistus ja kuvaus ovat muuten samanlaisia. Fluori-18 soveltuu siis kuljetukseen paljon paremmin; hiili-11:tä voi käyttää vain, jos syklotroni on samassa rakennuksessa ja merkkiaine voidaan antaa muutamassa minuutissa.
+**Mallivastaus:** Kuljetuksen aikana ($3{,}0\,\text{h}$) fluori-18:aa on jäljellä $0{,}5^{180/109{,}8} \approx 0{,}32$ eli kolmannes, mutta hiili-11:tä $0{,}5^{180/20{,}4} = 0{,}5^{8{,}8} \approx 0{,}002$ eli vain $0{,}2\,\%$. Jos injektioon tarvitaan $280\,\text{MBq}$ $4{,}5\,\text{h}$:n kuluttua, hiili-11:tä pitäisi valmistaa noin $280\,\text{MBq} \cdot 2^{270/20{,}4} \approx 2{,}7\,\text{TBq}$ (fluori-18:aa $1{,}5\,\text{GBq}$), mikä on epäkäytännöllistä, koska näin suuren aktiivisuuden käsittely vaatisi raskaan säteilysuojauksen ja aiheuttaisi suuren annoksen työntekijöille. Oletuksena on, että kemia, valmistus ja kuvaus ovat muuten samanlaisia. Fluori-18 soveltuu siis kuljetukseen paljon paremmin; hiili-11:tä voi käyttää vain, jos syklotroni on samassa rakennuksessa ja merkkiaine voidaan antaa muutamassa minuutissa.
 
 ### Yleisiä virheitä
 - Puoliintumisaika sekoitetaan hajoamisvakioon tai tunnit ja minuutit jätetään muuntamatta.
