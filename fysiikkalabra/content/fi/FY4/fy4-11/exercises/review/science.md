@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 97e11574a538b880
+CONTENT-HASH: 2f7544a1c68c1bc4
 SCOPE: delta added-exercise from 3a2e90bccdbd2345 base 81db4a6fd727
-
 ## Blocking
 
 ## Polish
-- content/fi/FY4/fy4-11/exercises/solutions.md (L3-06 Vastaus) — "kolmas numero säilytetään, ettei välitulosten pyöristys vääristä tulosta": 10,5 kN is the final answer, not an intermediate result. Better: "$11\,\text{kN}$ (kaksi merkitsevää numeroa); laskettu arvo $10{,}5\,\text{kN}$." Also "Massa" is capitalised after a comma.
-- exercises.json L1-09 — the text names the braking distance $s$, while the chapter uses $s_\text{j}$. Carried over from round 1.
+- content/fi/FY4/fy4-11/exercises/solutions.md (L1-09 Vastaus) — "kaksi merkitsevää numeroa nopeuden $80\,\text{km/h}$ tarkkuudella": tarkkuutta rajaa todellisuudessa taulukon $\mu = 0{,}8$, ja välin vaikutus selitetään heti perään. Lause "kaksi numeroa; kitkakertoimen väli vaikuttaa tulokseen enemmän kuin pyöristys" kattaisi molemmat.
+- solutions.md (L3-06 Vastaus) — "kolmas numero säilytetään, ettei välitulosten pyöristys vääristä tulosta": $10{,}5\,\text{kN}$ on lopputulos eikä välitulos. Lisäksi "Massa" on kirjoitettu isolla pilkun jälkeen. Huomio on siirtynyt edelliseltä kierrokselta.
+- exercises.json (L1-09) — tehtäväteksti käyttää jarrutusmatkasta tunnusta $s$, luku tunnusta $s_\text{j}$. Huomio on siirtynyt edelliseltä kierrokselta.
 
 ## Checked
-- The round-2 blocking findings are fixed. solutions.md has no literal TAB left (grep over every language's file). The five units are `\text{m}`, `\text{kg}`, `\text{m/s}` and `\text{kN}` again.
-- L1-09 Vastaus now leads with $s \approx 30\,\text{m}$ (calculated 31 m). The reason given is that μ = 0,8, the top of the MAFY range, has one significant figure. The answer and its reasoning now agree, and with tolerance 0,05 both 30 m (4,6 % off) and 31 m are accepted.
-- L1-09 physics: level road, locked sliding wheels, air resistance left out, N = mg, so a = μg and s = v₀²/(2μg). The other end of the range, μ = 0,5, gives 50,3 m, as the solution says.
-- Recomputed in one script (my formulas beside python -I answers.py): L1-09 31,46 m; L2-09 20 m + 25 m = 45 m; L3-06 17,5 kN − 7,0 kN = 10,5 kN. All agree with exercises.json.
-- L3-06 tolerance 0,05 accepts 11 kN (4,8 %). The force ratio 2,5 equals the inverse ratio of the stopping times.
-- Hash 97e11574a538b880 at the start and at the end.
+- L1-09: väli on nyt kuvattu oikein. $\mu = 0{,}8$ antaa $a = 7{,}85\,\text{m/s}^2$ ja $s = 31{,}46\,\text{m} \approx 31\,\text{m}$, mikä on välin lyhyempi ääripää. $\mu = 0{,}5$ antaa $50{,}3\,\text{m}$, mikä on pidempi. Tehtävä pyytää välin suurinta arvoa, ja vastaus vastaa sitä. Toleranssi 0,05 hyväksyy arvot $30$–$33\,\text{m}$. Sana "liukukitkakerroin" on opettajan valinta.
+- L1-09:n fysiikka: tie on vaakasuora, pyörät ovat lukossa ja ilmanvastus jätetään huomiotta, joten $N = mg$, $a = \mu g$ ja $s = v_0^2/(2\mu g)$. Vertailu ABS-jarrutukseen ($\mu \approx 0{,}9$, luvun $9{,}0\,\text{m/s}^2$) pitää paikkansa, koska liukuva rengas pitää huonommin.
+- Laskin vastaukset uudelleen yhdessä skriptissä `python -I answers.py`:n rinnalla. L1-09 antaa $31{,}46\,\text{m}$, L2-09 $20 + 25 = 45\,\text{m}$ ja L3-06 $17{,}5 - 7{,}0 = 10{,}5\,\text{kN}$. Kaikki täsmäävät exercises.json:n kanssa.
+- Kuvien arvot ovat ruudukon risteyksissä, ja kuvaukset antavat samat arvot.
+- Hash 2f7544a1c68c1bc4 sekä alussa että lopussa.

@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 654329c358771fa4
+CONTENT-HASH: 7c5b2c273c5f7baf
 SCOPE: delta added-exercise from 6f0e928ad88d259e base 81db4a6fd727
-
 ## Blocking
 
 ## Polish
-- content/fi/FY4/fy4-13/exercises/solutions.md (L3-06 Vastaus a) — the line says "$m_1 \approx 1{,}21\,\text{kg}$, kaksi merkitsevää numeroa", but 1,21 has three figures. Write $1{,}2\,\text{kg}$ (calculated 1,21 kg). The tolerance of 4 % accepts both.
-- solutions.md L2-09 and L3-06 Kuvaajan lukeminen — the slope is still taken from the raw point (2,0; 3,9) and the origin. Say that the point is read off a line drawn through the origin and the points. Carried over from round 1.
+- solutions.md L2-09 ja L3-06 Kuvaajan lukeminen — kulmakerroin lasketaan raakapisteestä $(2{,}0\,\text{s};\, 3{,}9\,\text{m/s})$ ja origosta. Sano, että piste luetaan origon ja pisteiden kautta piirretyltä suoralta. Huomio on siirtynyt edelliseltä kierrokselta.
 
 ## Checked
-- The round-1 blocking finding is fixed. L3-06 now has a hanging mass of 0,30 kg and a cart of 1,21 kg, so L2-09 (cart 0,80 kg) no longer gives away L3-06's answer, and L3-06 b's tension (2,36 N) is not L2-09's answer (1,56 N).
-- One figure fits both setups: m₂/(m₁ + m₂) = 0,30/1,51 ≈ 0,199 g, and 0,80 kg needs m₂ ≈ 0,20 kg for the same ratio. Both give a ≈ 1,95 m/s², as the figure shows.
-- Recomputed L3-06: m₁ = m₂(g/a − 1) = 0,30 kg · (9,81/1,95 − 1) = 1,209 kg. Reading a between 1,9 and 2,0 m/s² gives 1,17 to 1,25 kg, inside ±4 %. b) T = 2,36 N < m₂g = 2,94 N, and the reasoning (the hanging mass accelerates down, so m₂g − T = m₂a > 0) is right.
-- The force-diagram numbers have been updated: G₁ = N = 11,86 N, T₁ = T₂ = 2,358 N, G₂ = 2,943 N. T₂ is drawn shorter than G₂, and a points down for the hanging mass. They agree with the motion.
-- L2-09 unchanged: T = m₁a = 0,80 kg · 1,95 m/s² = 1,56 N, answer 1,6 N.
-- I recomputed both answers in one script, beside python -I answers.py. They agree with exercises.json (1.6 and 1.21).
-- Hash 654329c358771fa4 at the start and at the end.
+- L3-06:n Vastaus a on nyt $m_1 \approx 1{,}2\,\text{kg}$, jossa on kaksi merkitsevää numeroa. Perusteluna mainitaan $0{,}30\,\text{kg}$ ja luettu kiihtyvyys, joten rivi on johdonmukainen. Toleranssi 4 % hyväksyy sekä arvon $1{,}2$ että $1{,}21$.
+- Laskin vastaukset uudelleen yhdessä skriptissä `python -I answers.py`:n rinnalla. $a = 3{,}9/2{,}0 = 1{,}95\,\text{m/s}^2$. L2-09 antaa $T = 0{,}80 \cdot 1{,}95 = 1{,}56\,\text{N}$ (vastaus $1{,}6$, ero 2,5 %, toleranssi 4 %). L3-06 antaa $m_1 = 0{,}30\,(9{,}81/1{,}95 - 1) = 1{,}209\,\text{kg}$.
+- L3-06 b: $T = 2{,}36\,\text{N} < m_2 g = 2{,}94\,\text{N}$, ja perustelu ($m_2 g - T = m_2 a > 0$) pitää paikkansa.
+- Voimakuviot vastaavat liikettä: $G_1 = N$, $T_1 = T_2$, $T_2$ on lyhyempi kuin $G_2$ ja punnuksen $a$ osoittaa alas. Kolmannen lain pareja ei ole samassa kuviossa.
+- Hash 7c5b2c273c5f7baf sekä alussa että lopussa.
