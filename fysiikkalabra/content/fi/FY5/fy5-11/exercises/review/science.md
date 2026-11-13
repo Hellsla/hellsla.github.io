@@ -1,17 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 19c4b1112a3292c3
+VERDICT: FAIL
+CONTENT-HASH: 65fac7034d08e8df
+SCOPE: delta added-exercise from 19c4b1112a3292c3 base 81db4a6fd727
 
 ## Blocking
+- exercises.json:240, solutions.md:254 (L2-09) — A: the magnitude is impossible. Water waves with λ = 8,0 cm cannot have f = 7,0 Hz. The gravity–capillary relation ω² = (gk + σk³/ρ)·tanh(kh) gives at most f = 4,5 Hz (v = 36 cm/s) even in deep water, and shallow water is slower. The claim "0,56 m/s on aaltoaltaan aalloille tavallinen" is false: ripple-tank waves move at about 0,2–0,35 m/s, as L1-03 and L2-06 show. — Fix: f = 4,0 Hz, which gives v = 32 cm/s (consistent with a depth of about 1,3 cm). Update the answer (32), answers.py and the reasonableness check.
+- exercises.json:252, solutions.md:265 (L2-10) — A: the causality is wrong. "veden syvyys ja siis aallon nopeus pysyvät samoina" and "nopeus riippuu … veden syvyydestä, ei taajuudesta" contradict the prerequisite chapter, which says that the speed of water surface waves can depend on wavelength (dispersion). A ripple tank is dispersive. — Fix: state the speed as an assumption, as L2-08 does: "Oletetaan, että aallon nopeus pysyy samana myös uudella taajuudella." The solution then uses that assumption.
 
 ## Polish
-- fy5-11/exercises/exercises.json:238 and solutions.md:250 (L2-08) — C (λ/b ≈ 1,3) and B (2,5) both have λ > b. In both, the wave already spreads over the whole half-plane behind the slit, so "C leviää heikommin kuin B" is the weakest step in the order. Suggest b_C = 25 mm, which gives λ/b = 0,80. The order D, A, C, B is unchanged and now goes through b < λ only at B. The mm unit trap stays.
+- L2-10 is the same reasoning as L1-07 (f doubled → λ halved → b/λ doubled → weaker diffraction). The figure reading is what is new, so this is acceptable.
+- In the figure, the fronts behind the gap are full semicircles at b/λ = 1,5. That is a fair simplification (C), but it makes the spreading look stronger than it is.
 
 ## Checked
-- New task L2-08 (type 9, order). λ = v/f gives 3,0 / 5,0 / 2,0 / 6,0 cm. λ : b gives A 0,50, B 2,5, C 1,33 and D 0,25. Ascending is D, A, C, B, which matches `order` and the answer.
-- The prompt names the quantity and the direction ("heikoimmasta voimakkaimpaan").
-- The constant speed at every frequency is stated as an assumption in the task, which is needed because a ripple tank is dispersive.
-- The solution explains why neither b alone (C is the narrowest) nor λ alone (D is the longest) decides the order. This fits the lesson's warned "only a narrow slit diffracts" idea.
-- The scope is v = fλ from fy5-10 and the diffraction criterion from this chapter.
-- The solution chains are one fraction per line. From the text they fit 300 px. I did not render them.
-- answers.py ran once. All numeric answers agree with exercises.json within tolerance.
-- The hash was the same at the start and at the end.
+- The hash was the same at the start and at the end. Only L2-09 and L2-10 were judged.
+- Recomputed from figures.py: fronts at gridlines 1 and 5 give λ = 4 · 2,0 cm = 8,0 cm, and the wall blocks at rows 0–1 and 7–8 give b = 6 · 2,0 cm = 12 cm. The arcs behind the gap are spaced 4 squares apart, the same λ. Then v = 56 cm/s and b/λ' = 12/4,0 = 3,0, which equal answers.py.
+- The description gives the same gridline positions as the drawing and marks neither λ nor b. L2-09 needs only λ, and L2-10 also needs b, so neither gives the other away.
+- Sig figs: both answers have 2 (7,0 Hz and 2,0 cm per square), and the 2 % tolerance fits.
+- The diffraction criterion and $v = f\lambda$ are in the brief's scope (fy5-10 and fy5-11).
