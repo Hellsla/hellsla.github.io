@@ -194,6 +194,12 @@ kuten `teacher-figure`: `reviews.py approve-text <id> [--lang]` kirjaa hyväksyt
 Rivi kirjataan vain opettajan nimenomaisesta hyväksynnästä; mikä tahansa muu muutos samassa luvussa katselmoidaan
 normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yksin.
 
+## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
+
+FY7:n esimerkkikoe on valmis (#586); sen katselmointien Minor-huomioita ei korjattu siinä, ettei katselmoinnit vanhene.
+1. Jaettu, ajetaan yksin: `lang/fi.json` `koe.max` sitovilla välilyönneillä, jotta "120 p:n" ja "70 p." eivät katkea riviltä.
+2. FY7-kokeen Minor-korjaukset (uusi katselmointi tai kevyt kuljetus): k7 c:n Sijoitukseen yksikkö luvulle 50 (`· 50 €/MWh`) ja tulos; k4 c:ssä 2789 (ei 2788) tai 12,374 V ketjussa; k5 b:n keskiarvomurtoluku isompana (`\tfrac` tai oma rivi); k6 d:n "noin yhdeksässä vuodessa" → "noin 9–10 vuodessa"; k2 c:n rivi B²k tiukka 390 px:llä; k7 b nimeää Wienin vakion, harkitse. Pedagogiikan huomio: k3 ja k4 valittaessa ei kuvaaja- tai epävarmuusosaa, harkitse lyhyttä osaa toiseen.
+
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 
 Mittaus, päätökset ja rajaukset: `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. Matalalla kannettavalla
