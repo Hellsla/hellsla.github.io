@@ -279,8 +279,8 @@ R = \frac{U}{I}
 Tässä $R$ on resistanssi ($\Omega$), $U$ on komponentin jännite ($\text{V}$) ja $I$ on komponentin läpi kulkeva virta ($\text{A}$).
 
 **Ohmin laki:** metallijohtimen läpi kulkeva virta on suoraan verrannollinen jännitteeseen, kun johtimen lämpötila pysyy samana. Suoraan verrannollinen tarkoittaa tässä, että kun jännite kaksinkertaistuu, myös virta kaksinkertaistuu. Silloin resistanssi on vakio, ja
-```latex
-U = R I
+```kaavat
+jännitehäviö johtimessa :: U = R I
 ```
 Ohmin laki ei ole yleinen luonnonlaki. Se on monen johdinaineen ominaisuus. Laki pätee metalleille ja vastuksille, kun lämpötila pysyy samana. Se ei päde esimerkiksi hehkulampulle, jonka lanka kuumenee. Se ei päde myöskään diodille.
 
@@ -340,8 +340,8 @@ Komponentin **ominaiskäyrä** on kuvaaja, joka näyttää, miten komponentin j�
 
 ### Resistiivisyys
 Tasapaksun johtimen resistanssi on suoraan verrannollinen johtimen pituuteen $l$. Se on kääntäen verrannollinen poikkipinta-alaan $A$. Johtimen pitää olla samaa ainetta koko matkalta.
-```latex
-R = \rho \frac{l}{A}
+```kaavat
+johtimen resistanssi :: R = \rho \frac{l}{A}
 ```
 Tässä $R$ on johtimen resistanssi ($\Omega$), $l$ on pituus ($\text{m}$), $A$ on poikkipinta-ala ($\text{m}^2$) ja $\rho$ on aineen **resistiivisyys** ($\Omega\cdot\text{m}$). Kaksi kertaa pidempi lanka on kuin kaksi lankaa peräkkäin, joten resistanssi kaksinkertaistuu. Lanka, jonka poikkipinta-ala on kaksinkertainen, on kuin kaksi lankaa rinnakkain. Virta pääsee kulkemaan kahta reittiä, joten resistanssi puolittuu. Poikkipinta-ala ilmoitetaan usein neliömillimetreinä, ja $1\,\text{mm}^2 = (10^{-3}\,\text{m})^2 = 10^{-6}\,\text{m}^2$.
 

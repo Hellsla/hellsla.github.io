@@ -279,8 +279,8 @@ R = \frac{U}{I}
 where $R$ is the resistance ($\Omega$), $U$ the voltage across the component ($\text{V}$) and $I$ the current through it ($\text{A}$).
 
 **Ohm's law:** the current through a metal conductor is directly proportional to its voltage when the temperature of the conductor stays the same. Then the resistance is constant, and
-```latex
-U = R I
+```kaavat
+voltage drop in a conductor :: U = R I
 ```
 When the voltage doubles, the current doubles too. Ohm's law is not a general law of nature but a property of many conducting materials: it holds for metals and resistors at a constant temperature, but not, for example, for a filament lamp, whose wire heats up, nor for a diode.
 
@@ -340,8 +340,8 @@ The **characteristic curve** of a component is a graph that shows how the voltag
 
 ### Resistivity
 The resistance of a uniform conductor of one material is directly proportional to the length $l$ of the conductor and inversely proportional to its cross-sectional area $A$:
-```latex
-R = \rho \frac{l}{A}
+```kaavat
+resistance of a conductor :: R = \rho \frac{l}{A}
 ```
 where $R$ is the resistance of the conductor ($\Omega$), $l$ its length ($\text{m}$), $A$ its cross-sectional area ($\text{m}^2$) and $\rho$ the **resistivity** of the material ($\Omega\cdot\text{m}$). A wire twice as long is like two wires one after the other, so the resistance doubles. A wire with twice the cross-sectional area is like two wires side by side, so the current can take two routes and the resistance is halved. The cross-sectional area is often given in square millimetres, and $1\,\text{mm}^2 = (10^{-3}\,\text{m})^2 = 10^{-6}\,\text{m}^2$.
 

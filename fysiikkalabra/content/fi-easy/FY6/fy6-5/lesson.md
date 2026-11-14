@@ -170,20 +170,20 @@ Linnun jalat ovat saman johtimen kahdessa kohdassa. Kohdat ovat vain muutaman se
 
 ## Kaava: Kirchhoffin lait
 Kirchhoffin virtalaki haarautumispisteelle:
-```latex
-\sum I_\text{tulevat} = \sum I_\text{lähtevät}
+```kaavat
+Kirchhoffin 1. laki :: \sum I_\text{tulevat} = \sum I_\text{lähtevät}
 ```
 missä $I_\text{tulevat}$ ovat haarautumispisteeseen tulevat virrat (A) ja $I_\text{lähtevät}$ siitä lähtevät virrat (A). Kun virta jakautuu kahteen haaraan, $I_1 = I_2 + I_3$.
 
 Kohtien $A$ ja $B$ välinen jännite on potentiaalien erotus:
-```latex
-U_{AB} = V_A - V_B
+```kaavat
+kahden pisteen välinen jännite :: U_{AB} = V_A - V_B
 ```
 missä $U_{AB}$ on jännite (V) ja $V_A$ ja $V_B$ ovat kohtien potentiaalit (V) samaan nollakohtaan nähden. Jännite on positiivinen, kun $A$ on korkeammassa potentiaalissa.
 
 Kirchhoffin jännitelaki silmukalle:
-```latex
-\sum \Delta V = 0
+```kaavat
+Kirchhoffin 2. laki :: \sum \Delta V = 0
 ```
 missä $\Delta V$ (V) on potentiaalin muutos silmukan kussakin osassa, kun silmukka kierretään kerran. Lähteessä miinusnavalta plusnavalle $\Delta V = +U$. Vastuksessa virran suuntaan $\Delta V = -RI$. Johtimessa $\Delta V = 0$. Yhden silmukan piirissä on kaksi vastusta. Laki antaa silloin $U - R_1 I - R_2 I = 0$ eli $U = R_1 I + R_2 I$.
 
