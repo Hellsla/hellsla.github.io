@@ -161,12 +161,6 @@ sitten sijoitus. Korjataan kurssi kerrallaan `/exercises`- ja `/practice`-putkel
 scope-säännön mukaan); järjestys kuten kohta 2. Ei rinnakkain saman kurssin tehtäväkatselmoinnin kanssa: yhdistetään
 samaan ketjuun, kun kurssin katselmointi on vielä kesken (FY5, FY6, FY7).
 
-## 8h-b. Ennusta-laatikon otsikko (opettaja 2026-11-14)
-
-8h (#579) jätti laatikon otsikoksi "Tee ennusteet ennen tutkimista · N kysymystä", vaikka ensimmäinen ennuste on nyt
-auki. Opettaja 14.11 ("Joo"): otsikoksi "Lisää ennusteita · N kysymystä" (fi ja fi-easy), englanniksi "More
-predictions · N questions". Vain lang-avain (ja tarvittaessa inquiry.py); jaettu muutos, pieni; 4c:n (#584) jälkeen.
-
 ## 8i. FY2: energialajit taulukoksi (opettaja 2026-11-13)
 
 fy2-1:n "Seitsemän energialajia" on luettelo pitkiä kohtia; opettaja: "tässäkin toimisi taulukko" (CLAUDE.md: "A table
