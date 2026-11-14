@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d1e122ce80fd069c
+CONTENT-HASH: 5d5b49dbc8de8981
+SCOPE: delta added-exercise from d1e122ce80fd069c base 8f23aa7ae3bd
 
 ## Blocking
-
-## Fixed
-- None.
+- none
 
 ## Polish
+- none
 
 ## Checked
-- New task fy6-2-L2-08 is a YO-skill form task at the same level and kind as in fi; situation first, question last, clear instruction.
-- Distractors and feedback are misconception-based and repair the error (same as fi); no answer disclosed in the task text.
-- Model answer is complete and follows step by step as in fi.
-- Natural English at upper-secondary reading level.
+- The only change is the tolerance of fy6-2-L2-10 (0.1 to 0.12), the widening I suggested: a student who rounds the error limit to 0.03 V gets 2.67 and is now accepted.
+- The answer 2.98 is unchanged and still correct (0.08 : 0.02685); the solution matches it.
+- The change cannot hide a wrong answer: 0.12 around 2.98 still excludes the "consistent" conclusion.

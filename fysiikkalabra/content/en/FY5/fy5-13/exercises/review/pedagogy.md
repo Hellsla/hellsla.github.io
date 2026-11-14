@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bd646f704080b1bf
-Mode: full (translation review against the reviewed Finnish set, new task L2-08)
-Round 2
+CONTENT-HASH: c171c990ac869bc0
+SCOPE: delta added-exercise from bd646f704080b1bf base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- fy5-13-L2-09: the text says 'four-loop pattern of the figure'; the solution counts loops (four) correctly, so a student counting nodes (five) is warned by the figure description; fine.
 
 ## Checked
-- fy5-13-L2-08 keeps the Finnish pedagogy: a YO-skill task (error analysis or concept reasoning) with misconception-based distractors, each wrong choice with feedback naming its misconception and repairing it.
-- The stem gives no answer away; the correct option is not distinguishable by wording or length.
-- English is natural and keeps the task level 2 demand.
-- Solution is staged and readable on a phone; new task adds no extra workload.
+- L2-09 (reworked): L and n = 4 read from the figure, then f5 - f4 = v/(2L) = 31.25 Hz (31.3 Hz); the change of loops is a better question than a plain frequency and demands the harmonic idea.
+- The question (by how many hertz) is its own sentence last; the solution is staged and the check (difference = f1) is insightful.
+- Level 2 fits; no repeat of the worked example; answer tolerance 2 % covers 31.3.

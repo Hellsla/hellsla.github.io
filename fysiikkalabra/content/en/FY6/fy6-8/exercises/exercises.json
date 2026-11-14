@@ -343,7 +343,7 @@
         "graph",
         "data"
       ],
-      "text": "The graph shows the terminal voltage of a car starter battery as a function of the current at five loads of the starter motor (measured points) and a straight line drawn through the points. What is the internal resistance of the battery? Read the values from the graph.",
+      "text": "The graph shows the terminal voltage of a car starter battery as a function of the current at five loads of the starter motor (points calculated from a model) and a straight line drawn through the points. What is the internal resistance of the battery? Read the values from the graph.",
       "figure": "fy6-8/ex-graph-car",
       "answer": 0.02,
       "unit": "Ω",

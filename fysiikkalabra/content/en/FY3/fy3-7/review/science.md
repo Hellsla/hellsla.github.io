@@ -1,21 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: d2094534394d5a6a
+CONTENT-HASH: d7fea6532513f83e
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- lesson.md heating-curve figure — the horizontal parts are much shorter than to scale (at the drawn Q scale melting would be about 96 px and boiling about 650 px; drawn 36 and 186), so the picture undersells "more than five times as much as heating water". Only the aria-label says they are not to scale — add a small visible note "horizontal parts not to scale", or lengthen the boiling part.
+- inquiry.json check-2 solution, Reasonableness — 180 kJ would warm the 0.597 kg that boiled away by about 72 K, so it started at about 28 °C, not 20 °C. "Same order of magnitude" holds, but the check would be sharper if it used the mass it just found.
+- sim.js:865 (code comment) — "the energy breaks the bonds between particles" contradicts the guardrail wording the student sees ("changes the interactions … increases the interaction energy"). Reword it when the file is next edited (not student-facing).
+- lesson.md Formula paragraph — "At constant pressure the temperature does not change during a change of state" leaves out "pure substance", which Key idea and Summary both state. Add it for consistency (C, not blocking).
 
 ## Checked
-- delta review 2026-11-07 (teacher's proofread replacement texts): opening question and reflect prompt now say boiling water stays at about 100 °C at normal atmospheric pressure while energy flows in: correct condition (pure water, constant pressure) per guardrail; no other change. English text carries the same meaning as fi.
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md, inquiry.json, exit-ticket.json, figures.json (each value translates its own key). Science: every statement, number, unit, formula, sign and causal claim compared against the Finnish; chapter references against courses.json; decimal point and \cdot; sim labels (Heat/Reset/melts/boils) against lang/en.json sims.
-- Update 2026-10-28: figure or sim labels shortened so they fit at 360 px (layout check): air pressure, bottom pressure, column's weight, line through origin, path, heat radiation, Object's/Water's initial temperature; re-hashed.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson.md, inquiry.json (incl. the new check-c2 item, wording of the particle-model explanations, math-wrapped units), exit-ticket.json (now two questions), figures.json (new melting-curve text).
-
-## Delta review (2026-11-01)
-- Fixed: "0-degree ice into 0-degree water" (check item prompt) reworded to "ice at zero degrees into water at zero degrees", which is natural English with the same physics.
-- Checked: inquiry.json prose temperatures ("at zero degrees", "100 degrees", "130-degree steam", "100-degree steam/water") match the Finnish 0-asteinen/100-asteinen/130-asteinen: same values, same physics, no unit typed as text beside maths; maths formulas unchanged, so parity with the Finnish holds. Time-axis label shift is visual only.
-
-## Delta review (lesson.md, 2026-11-01)
-- Checked: two sentences changed since bd71b55: "100-degree steam burns worse than 100-degree water" and "ice at zero degrees and water at zero degrees". Both mirror the Finnish 100-asteinen / 0-asteista; same values and physics, no unit typed as text beside maths (the maths-wrapped $100\,{}^\circ\text{C}$ elsewhere is unchanged). No blocking issues.
+- One script recomputed every number from the task data: r/s = 6.77, r/(c·100 K) = 5.39, s/c = 79.7 K, worked example 2 343 750 J/kg (+3.7 %, Δm = 133 g), pr-lampo 210/2.1/419 kJ, 66.8 kJ, siirto 188 W (mistakes 27.8 and 11 300), check-2 0.597 kg (mistakes 0.677 and 4.04, 0.54 kg), check-3 264 J and a ratio of 9.6. All agree.
+- Plateau durations in pred-1, pred-2, the conclusion and the sim (sm/P, rm/P: 1130/565 s, 83.5/167 s) match the sim's computed values. exp-1 locks m and varies P, exp-2 locks P and varies m, and simState carries tMelt and tBoil.
+- Each prediction and check has exactly one correct option, and every distractor's feedback names the right mechanism (interaction energy, no change in mean kinetic energy, molecules intact).
+- The worked example solves symbolically first, the significant figures are justified by 128 g, and the loss argument gives the right sign (losses → r too large).
+- Sim model: the piecewise T(Q) is correct with the stated c, s and r values. The piston at 101 kPa explains the 100 °C plateau and c_p for steam, and its limits (open pan, rigid vessel) are stated in the model box. The 1280 px capture matches the readout.
+- Heating-curve slopes: ice and steam are 2.0× as steep as water (c ratios 2.0 and 2.1), as stated.
+- Phase diagram: the melting curve has a negative slope (correct for water), and the lower pressure on the mountain gives a lower boiling point.
+- The guardrail conditions (pure substance, constant pressure) are stated in Key idea, Summary, pred-3 and the contribution. The pΔV work (about 170 kJ/kg, 7 % of r) matches "a small part". The volume ratio of 1700 is right.
+- Scope: changes of state, the phase diagram and the r measurement are all within FY3's central contents and the slot.

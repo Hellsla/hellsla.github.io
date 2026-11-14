@@ -225,12 +225,12 @@ Heilurin jaksonaika kasvaa siis noin $2{,}5$-kertaiseksi, ja jousen jaksonaika p
 **Järkevyys:** Energia on pieni, koska poikkeama on vain muutama senttimetri. Jos amplitudi kaksinkertaistuu, energia nelinkertaistuu, koska $E \propto A^2$.
 
 ## fy5-9-L2-09
-**Annettu:** kuvaajasta kappaleen paikka $x$ ajan $t$ funktiona välillä $0$–$1{,}0\,\text{s}$; massa $m = 0{,}150\,\text{kg}$
-**Kysytty:** jousivakio $k$ yksikössä $\text{N/m}$
-**Periaate:** Jousen varassa värähtelevän kappaleen jaksonaika on $T = 2\pi\sqrt{\tfrac{m}{k}}$. Jaksonaika luetaan kuvaajasta. Jousivakio ratkaistaan kaavasta.
-**Kuvaajan lukeminen:** Käyrän huiput ovat hetkillä $0$, $0{,}40\,\text{s}$ ja $0{,}80\,\text{s}$. Kahden peräkkäisen huipun väli on yksi täysi värähdys. Siksi $T = 0{,}40\,\text{s}$. Pohjat hetkillä $0{,}20\,\text{s}$ ja $0{,}60\,\text{s}$ vahvistavat tuloksen.
-**Kaava:** $T = 2\pi\sqrt{\dfrac{m}{k}}$, joten $T^2 = \dfrac{4\pi^2 m}{k}$ ja $k = \dfrac{4\pi^2 m}{T^2}$
-**Muunnokset:** Muunnoksia ei tarvita. Kaikki suureet ovat SI-yksiköissä.
-**Sijoitus:** $k = \dfrac{4\pi^2 \cdot 0{,}150\,\text{kg}}{(0{,}40\,\text{s})^2} = \dfrac{5{,}922\,\text{kg}}{0{,}16\,\text{s}^2} = 37{,}0\,\text{N/m}$
-**Vastaus:** $37\,\text{N/m}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten jaksonaika $0{,}40\,\text{s}$.
-**Järkevyys:** Tarkistus: $T = 2\pi\sqrt{0{,}150/37{,}0}\,\text{s} = 0{,}40\,\text{s}$. Tulos sopii siis kuvaajaan. Arvo on tavallisen pienen jousen suuruusluokkaa.
+**Annettu:** kuvaajasta kappaleen paikka $x$ ajan $t$ funktiona välillä $0$–$1{,}0\,\text{s}$
+**Kysytty:** kappaleen suurin nopeus $v_{\max}$
+**Periaate:** Värähtelyn energia $\tfrac12 kA^2$ on tasapainoasemassa kokonaan liike-energiaa, $\tfrac12 m v_{\max}^2 = \tfrac12 kA^2$. Jaksonaika $T = 2\pi\sqrt{m/k}$ antaa $\sqrt{k/m} = 2\pi/T$. Siksi massaa ja jousivakiota ei tarvita. Amplitudi ja jaksonaika luetaan kuvaajasta.
+**Kuvaajan lukeminen:** Huiput ovat korkeudella $x = 3{,}0\,\text{cm}$ eli $A = 3{,}0\,\text{cm} = 0{,}030\,\text{m}$. Huiput ovat hetkillä $0$, $0{,}40\,\text{s}$ ja $0{,}80\,\text{s}$. Siis $T = 0{,}40\,\text{s}$. Pohjat hetkillä $0{,}20\,\text{s}$ ja $0{,}60\,\text{s}$ vahvistavat tuloksen.
+**Kaava:** $v_{\max} = A\sqrt{\dfrac{k}{m}} = \dfrac{2\pi A}{T}$
+**Muunnokset:** $A = 3{,}0\,\text{cm} = 3{,}0 \cdot 0{,}01\,\text{m} = 0{,}030\,\text{m}$
+**Sijoitus:** $v_{\max} = \dfrac{2\pi \cdot 0{,}030\,\text{m}}{0{,}40\,\text{s}} = \dfrac{0{,}1885\,\text{m}}{0{,}40\,\text{s}} = 0{,}471\,\text{m/s}$
+**Vastaus:** $0{,}47\,\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, koska amplitudissa $3{,}0\,\text{cm}$ ja jaksonajassa $0{,}40\,\text{s}$ on kaksi.
+**Järkevyys:** Kappale kulkee neljänneksessä jaksoa, $0{,}10\,\text{s}$, matkan $0{,}030\,\text{m}$. Keskinopeus on $0{,}30\,\text{m/s}$. Suurin nopeus on sitä suurempi, kuten pitääkin.

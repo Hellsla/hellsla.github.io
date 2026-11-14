@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4703625fe3ccea47
-Round: 2
-
-Delta: the clipped U chain split into two lines, E_k split, task text paragraph, feedback wording.
+CONTENT-HASH: fb8bc2ae3ac4c6db
+SCOPE: delta added-exercise from 4703625fe3ccea47 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] 12-16 options still appear in the order Rivi 1, 4, 3, 2 although the task says "rivi riviltä"; keep row order (last option stays last).
-- [Minor] 12-16 the correct option is still the longest row label (39 vs 24-33 characters); e.g. "Rivi 3: liike-energia".
+- [Minor] fy6-12-L2-09 Kuvaajan lukeminen — the page breaks the sentence "Potentiaaliero on" before the chain $U = 250\,\text{V} - 50\,\text{V} = 200\,\text{V}$; end the sentence before the chain or put the chain last.
+- [Minor] fy6-12/ex-vgraph — the y axis has no 0 tick, the x axis shows 0 once; harmless.
 
 ## Checked
-- Renders (own script, 390 px, correct option committed, all feedback, answer and solution open): page width = viewport, no element beyond the card; the U chain now reads `U = V_B − V_A` / `U = 120 V − 30 V = 90 V` on two lines, E_k on two lines; widest formula 256 px (under 300 px). The Round 1 clipping is gone.
-- Rendered: the correct feedback now reads "Laskettaessa tulee U = V_B − V_A = 90 V" inside the card, no overflow; the task text has the paragraph break before "Oppilas laskee".
-- Text only: option order and label lengths from the built HTML.
+- open-exercises-L2-1280-11 and -12 (task 12-17): task text, graph (axes with quantity and unit, ticks at 50 V and 1 cm, nothing marked), and the whole solution. Round-1 findings fixed: the root and fractions are now in display size (\dfrac), Kaava reads "…, josta $v = \sqrt{…}$" on one row, the substitution rows are aligned and legible.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

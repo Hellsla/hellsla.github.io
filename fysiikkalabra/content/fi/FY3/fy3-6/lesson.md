@@ -174,7 +174,11 @@ lämpökapasiteetti :: C = c m
 ```
 kertoo, kuinka monta joulea kappaleen lämpötilan nostaminen yhdellä kelvinillä vaatii. $C$ on lämpökapasiteetti (J/K), $c$ ominaislämpökapasiteetti ja $m$ massa. Kappale, jonka lämpökapasiteetti on suuri, lämpenee ja jäähtyy hitaasti.
 
-Eristetyssä astiassa kuuman kappaleen $1$ luovuttama lämpömäärä on yhtä suuri kuin kylmän kappaleen $2$ vastaanottama:
+Eristetyssä astiassa energia säilyy, kun astian omaa lämpökapasiteettia ei oteta huomioon. Kuuman kappaleen $1$ luovuttama lämpömäärä on yhtä suuri kuin kylmän kappaleen $2$ vastaanottama:
+```latex
+Q_\text{luovutettu} = Q_\text{vastaanotettu}
+```
+Kun kummallekin kappaleelle pätee $Q = c m \Delta T$, tämä on
 ```latex
 c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)
 ```
@@ -257,9 +261,10 @@ Kalorimetrissä on $0{,}300\,\text{kg}$ vettä, jonka lämpötila on $20{,}0\,{}
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Merkitään lämpömäärät yhtä suuriksi ja ratkaistaan $c_\text{m}$:
+**Kaava ratkaistuna.** Metallin luovuttama lämpömäärä $Q_\text{m}$ on yhtä suuri kuin veden vastaanottama lämpömäärä $Q_\text{v}$. Kirjoitetaan se auki ja ratkaistaan $c_\text{m}$:
 ```latex
 \begin{aligned}
+&Q_\text{m} = Q_\text{v} \\[6pt]
 &c_\text{m} m_\text{m} (T_\text{m} - T) \\
 &\quad = c_\text{v} m_\text{v} (T - T_\text{v}) \\[6pt]
 &c_\text{m} = \frac{c_\text{v} m_\text{v} (T - T_\text{v})}{m_\text{m} (T_\text{m} - T)}
@@ -290,12 +295,15 @@ Kalorimetrissä on $0{,}300\,\text{kg}$ vettä, jonka lämpötila on $20{,}0\,{}
 
 <!-- vaihe -->
 
-**Järkevyys.** Arvo on lähellä kuparin ominaislämpökapasiteettia $385\,\text{J/(kg}\cdot\text{K)}$, joten kappale on luultavasti kuparia. Häviöttömässä kalorimetrissä $0{,}200\,\text{kg}$:n kuparikappale nostaisi veden $24{,}6\,{}^\circ\text{C}$:seen (kokeile simulaatiossa); mitattu $0{,}1\,\text{K}$ pienempi lukema selittyy lukematarkkuudella tai sillä, että todellisuudessa osa lämmöstä siirtyi myös kalorimetrin astiaan ja ilmaan. Vesi lämpeni vain $4{,}5\,\text{K}$, vaikka metalli jäähtyi $75{,}5\,\text{K}$: veden lämpökapasiteetti on $0{,}300\,\text{kg} \cdot 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 1257\,\tfrac{\text{J}}{\text{K}}$, mikä on paljon enemmän kuin kappaleen lämpökapasiteetti $0{,}200\,\text{kg} \cdot 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 75\,\tfrac{\text{J}}{\text{K}}$.
+**Järkevyys.** Arvo on lähellä kuparin ominaislämpökapasiteettia $385\,\text{J/(kg}\cdot\text{K)}$, joten kappale on luultavasti kuparia. Häviöttömässä kalorimetrissä $0{,}200\,\text{kg}$:n kuparikappale nostaisi veden $24{,}6\,{}^\circ\text{C}$:seen (kokeile simulaatiossa); mitattu $0{,}1\,\text{K}$ pienempi lukema selittyy lukematarkkuudella tai sillä, että todellisuudessa osa lämmöstä siirtyi myös kalorimetrin astiaan ja ilmaan. Vesi lämpeni vain $4{,}5\,\text{K}$, vaikka metalli jäähtyi $75{,}5\,\text{K}$: veden lämpökapasiteetti on $C_\text{v} = m_\text{v} c_\text{v} = 0{,}300\,\text{kg} \cdot 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 1257\,\tfrac{\text{J}}{\text{K}}$, mikä on paljon enemmän kuin kappaleen lämpökapasiteetti $C_\text{m} = m_\text{m} c_\text{m} = 0{,}200\,\text{kg} \cdot 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 75\,\tfrac{\text{J}}{\text{K}}$.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että lämpömäärä ja lämpötila ovat sama asia, tai että samaan lämpötilaan lämmitetyt kappaleet ovat saaneet saman määrän energiaa. Kilon veden ja kilon raudan lämmittäminen $20\,{}^\circ\text{C}$:sta $60\,{}^\circ\text{C}$:seen vaatii vedelle lähes kymmenkertaisen energian. Toinen virhe on laskea tasapainolämpötila keskiarvona. Kun $1{,}0\,\text{kg}$ 80-asteista vettä kaadetaan $3{,}0\,\text{kg}$:aan 20-asteista vettä, veden ominaislämpökapasiteetti $c$ on yhtälön molemmilla puolilla ja supistuu pois:
 ```latex
 \begin{aligned}
+&Q_\text{luovutettu} = Q_\text{vastaanotettu} \\[6pt]
+&c \cdot 1{,}0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T) \\
+&\quad = c \cdot 3{,}0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C}) \\[6pt]
 &1{,}0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T) \\
 &\quad = 3{,}0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C}) \\[6pt]
 &80\,{}^\circ\text{C} - T = 3T - 60\,{}^\circ\text{C} \\
@@ -303,7 +311,7 @@ Moni ajattelee, että lämpömäärä ja lämpötila ovat sama asia, tai että s
 &T = 35\,{}^\circ\text{C}
 \end{aligned}
 ```
-Kuuma vesi on vasemmalla puolella kuten yleisessä yhtälössä. Kolmannella rivillä yhtälö on jaettu puolittain kilogrammalla ja sulut on kerrottu auki. Lopputulos ei siis ole $50\,{}^\circ\text{C}$ vaan $35\,{}^\circ\text{C}$, koska kylmää vettä on kolme kertaa enemmän kuin kuumaa. Sama tulos saadaan painotetulla keskiarvolla: $T = (3{,}0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1{,}0\,\text{kg} \cdot 80\,{}^\circ\text{C}) : 4{,}0\,\text{kg} = 35\,{}^\circ\text{C}$.
+Kuuma vesi on vasemmalla puolella kuten yleisessä yhtälössä. Viimeisen ryhmän ensimmäisellä rivillä yhtälö on jaettu puolittain kilogrammalla ja sulut on kerrottu auki. Lopputulos ei siis ole $50\,{}^\circ\text{C}$ vaan $35\,{}^\circ\text{C}$, koska kylmää vettä on kolme kertaa enemmän kuin kuumaa. Sama tulos saadaan painotetulla keskiarvolla: $T = (3{,}0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1{,}0\,\text{kg} \cdot 80\,{}^\circ\text{C}) : 4{,}0\,\text{kg} = 35\,{}^\circ\text{C}$.
 
 Kolmas virhe on muuntaa $\Delta T$ kelvineiksi lisäämällä 273: lämpötilan muutos on sama kummallakin asteikolla.
 

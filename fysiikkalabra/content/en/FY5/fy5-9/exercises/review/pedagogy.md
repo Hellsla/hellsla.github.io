@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 56d3a67124511b7c
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 4004f4d2e0ec049c
+SCOPE: delta added-exercise from 56d3a67124511b7c base 81db4a6fd727
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed)
-
 ## Polish
-(none)
+- fy5-9-L1-10 and L2-09 share one graph; say in L2-09 that the spring constant is not needed (the solution does), which is the point of the task and may surprise a student.
 
 ## Checked
-- fy5-9-L2-08: the pedagogy of the Finnish task is kept (situation first, question last; misconception-based distractors or statements; each feedback names the same error as fi and does not give the answer away before the student acts).
-- Solution keeps the Find / Principle / Model answer structure with the calculation staged step by step.
-- English reads naturally and uses the chapter's terms; no Finnish left.
+- L1-09: MAFY lookup of g for Mars with a hint; T = 2 pi sqrt(l/g) = 3.26 s; solution staged, ratio check 1.62 good.
+- L1-10: amplitude 3.0 cm read from the graph (trap: peak-to-peak not asked), E = kA^2/2 = 0.054 J; cm to m shown.
+- L2-09: amplitude and period (0.40 s) read from the graph, v_max = 2 pi A/T = 0.47 m/s via energy conservation; mass cancels, explained; level 2 fits.
+- Figure description matches and gives no answer; no repeat of the worked example.

@@ -1,21 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4d7d493e28a99432
-Mode: full (translation review against the reviewed Finnish set; new task fy5-14-L1-09)
-Round 1
+CONTENT-HASH: 3d819c47cdf8c4a4
+SCOPE: delta added-exercise from 4d7d493e28a99432 base 81db4a6fd727
 
 ## Blocking
 (none)
 
-## Fixed
-- None needed; new task fy5-14-L1-09 was already faithful to content/fi.
-
 ## Polish
-(none)
+- fy5-14-L1-10: the solution says 'three significant figures' for 1400 Hz; say 'the peaks are read to the nearest 100 Hz' instead.
+- fy5-14-L2-08: beats and the wax test must be taught in the chapter (not visible in this packet); verify the lesson covers beat frequency as the difference of the frequencies.
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: Doppler calculation tasks L1-04, L2-03, L2-04, L2-05, L2-07, L3-01, L3-04 carry the "Extension task" tag (Syventävä tehtävä) and are not core; core path is now L1-05, L1-07, L2-06, and the remaining unmarked Doppler items (L1-07, L1-09) are qualitative and need no formula. Consistent with the lesson's learn/deepen goals.
-- fy5-14-L1-09: situation first, question last as its own sentence; same structure, options and reasoning steps as fi; example-data notice kept where fi has it.
-- Solution has the same stages as fi (Find, Principle, Model answer) and can be followed step by step; nothing skipped or added.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Wording is natural textbook English; decimal point in JSON and LaTeX; no Finnish left.
-- No change to level, workload or figure use; check_i18n.py shows nothing for fy5-14; build.py fy5-14 succeeds.
+- L1-10: figure shows five peaks; the strongest (400 Hz) is the planted trap against the fundamental 200 Hz; f7 = 1400 Hz; description consistent and no fundamental written.
+- L2-08: a multiple choice with misconception-based distractors (wrong side, equal frequencies, counting quiet points as 8 Hz); each feedback repairs the misconception; the wax clue is not a giveaway of the sign.
+- Beat period 0.25 s is readable from the figure and its description; model answer complete.

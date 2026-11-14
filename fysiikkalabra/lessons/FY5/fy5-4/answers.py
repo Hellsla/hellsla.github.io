@@ -41,4 +41,7 @@ tan_al = math.tan(math.radians(8.0))                                            
 L3_05_v0 = math.sqrt(g * 130 * tan_al) * 3.6                                             # no friction: tan α = v²/(g r) → 13,39 m/s = 48,2 km/h
 a["fy5-4-L3-05"] = math.sqrt(g * 130 * (tan_al + 0.40) / (1 - 0.40 * tan_al)) * 3.6     # with friction down the slope: v² = g r (tan α + μ0)/(1 − μ0 tan α) → 27,03 m/s = 97,3 km/h
 L3_05_flat = math.sqrt(0.40 * g * 130) * 3.6                                             # flat curve for comparison: 81,3 km/h
+# Figure tasks (teacher 2026-11-13): values read from the figures' marked points
+a["fy5-4-L2-09"] = 15.0 ** 2 / 3.0                                                       # fig kuvaaja-a: point (15 m/s, 3,0 m/s²): r = v²/a_n = 75 m
+a["fy5-4-L3-06"] = 8.0e3 / (1200 * g)                                                    # fig kuvaaja-b: point (20 m/s, 8,0 kN): N = mg, mu0 = F/(mg) = 0,6796
 print(json.dumps(a))

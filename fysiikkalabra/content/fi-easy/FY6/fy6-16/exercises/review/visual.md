@@ -1,12 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 7cbc290e1ae44e71
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 9573a13d429ad8dd
+SCOPE: delta added-exercise from 7cbc290e1ae44e71 base 8f23aa7ae3bd
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] fy6-16/talo-ex — the time axis starts at 18 h but carries no "18" under the origin (ticks 19–22 only), so the start of the first step is not labelled; add $18$ at the origin.
+- [Minor] fy6-16-L2-09 Vastaus — an amount of money rounded to "$2{,}7\,\text{€}$" reads oddly; give "$2{,}72\,\text{€}$" and say that the cent value follows from the readings (the tolerance already allows it).
+- [Minor] fy6-16-L2-09 Järkevyys — "noin $4\,\text{kW}$:n teholla … noin $17\,\text{kWh}$" is fine, but the last sentence stacks three "noin"; one is enough.
 
 ## Checked
-- Word-level diff since origin/main of the fi-easy fy6-16 exercises files and neighbouring text; decimal convention (comma, Finnish), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items. Recomputed 8,0 A * 230 V = 1840 W = 1,8 kW; 40 kWh / 1,84 kW = 21,7 h so 'more than 21 h' holds; (16/10)^2 = 2,56 so +156 %.
+- fy6-16-open-exercises-L2-1280-11.png (end of the previous task and task 16-17 with figure talo-ex: orange steps $2$, $5$, $7$, $3\,\text{kW}$, axes $P\ (\text{kW})$ and $t\ (\text{h})$ with units, gridlines; nothing written on the figure about energy or cost) and -12 (solution rows, aligned chains, Vastaus, Järkevyys).
+- Figure and description agree; nothing clipped.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

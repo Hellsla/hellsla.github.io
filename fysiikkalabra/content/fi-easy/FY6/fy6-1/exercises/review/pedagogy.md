@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 25bea0e8e337cf85
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 9c35811b1982a8c7
+SCOPE: delta added-exercise from 25bea0e8e337cf85 base 8f23aa7ae3bd
 
 ## Blocking
 - none
@@ -9,7 +9,9 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff since origin/main for fy6-1 exercises (fi-easy) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
-- Standing rules in the changed lines: LaTeX maths and units, decimal comma, no bold in task statements, no lesson ids shown.
-- NOTES.md §12: same physics as the Finnish; new terms (kytkentämuutos, irradianssi, tehokerroin, vaihe-ero, pätöteho, mitoitettu, vakiovirtalähde etc.) are explained in the sentence where first used; whole natural sentences, one action per sentence in instructions.
-- Feedback wording 'almost immediately' / 'lähes heti' used consistently; the distinction between slow electrons and fast propagation is clear.
+- fy6-1-L2-08: level 2 fits (read a piecewise graph, area as charge, then E = UQ); the lesson teaches Q = It and U = E/Q, so nothing new.
+- Arithmetic checked: 20 C + 15 C = 35 C, 4,0 V · 35 C = 140 J; the solution is stepwise, with a sensibility check (200 J upper bound).
+- Figure lataus-kuvaaja gives every value needed (0,50 A, 40 s, 100 s); the description matches it and gives no charge or energy.
+- Not a repeat of L2-04 (graph charge only) or of the worked example: the added step to energy through the voltage is new.
+- Situation first, question last as its own sentence; Finnish and case after number+unit correct.
+- Set mix stays varied (calculation, graph, data, error, experiment); progression within level 2 is sound.

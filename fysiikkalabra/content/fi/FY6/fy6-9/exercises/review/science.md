@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e5c2c0ca37639b87
-Round: 3. Only the fy6-9-L1-09 solution changed since round 1 (commit 72e243f47): the unit lines now read "Lausekkeen X yksikkö on …", and UQ/t is set with \tfrac inline. The physics is unchanged.
+CONTENT-HASH: daa0330ac3b9a714
+SCOPE: delta added-exercise from e5c2c0ca37639b87 base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
-- solutions.md:156 (carried over) — "Lauseke UQ/t on latauksen keskimääräinen teho" is still not exact. The lesson teaches that the charger gives more energy than the battery stores (η < 100 %). Write "akkuun varastoitumisen keskimääräinen teho", as the option's own feedback already says.
-- solutions.md:152 — the line uses \tfrac for UQ/t but \dfrac for Wh/h. Use \tfrac for both, so the inline line keeps one height.
+- solutions.md (fy6-9-L2-08) — "kaksi merkitsevää numeroa kuten virran lukemissa": the reading 0,5 A has one significant figure written, but it is read off grid lines, so it is known to about 0,05 A. Say that the readings are known to the grid's precision instead of counting written digits.
 
 ## Checked
-- Hash e5c2c0ca37639b87 (the same as the packet) at start and end.
-- Lines 148–154: each unit is still right. Q is Ah (charge), UQ is V·Ah = Wh (energy), UQ/t is W (power), UQt is Wh·h. Exactly one option is an energy, and the solution still agrees with the options and their feedback.
-- The new wording "Lausekkeen … yksikkö on …" is correct Finnish and has the same meaning as the old lines.
-- answers.py and exercises.json are unchanged since round 1, where they had no mismatch.
-- I checked the formulas from the text only; the change makes nothing wider than in round 1, so I measured nothing again.
+- Hash daa0330ac3b9a714 at start and end; only fy6-9-L2-08 was judged (delta added-exercise).
+- Figure fy6-9/ex-current2 (figures.py): the steps are 2,0 A for 0–1,0 h, 1,5 A for 1,0–3,0 h and 0,5 A for 3,0–4,0 h, then zero. They match the solution's readings and the alt text, and the alt text does not give the charge.
+- I recomputed it myself: Q = Σ I·Δt = 2,0 + 3,0 + 0,5 = 5,5 Ah, so W = 11,1 V · 5,5 Ah = 61,05 Wh. This equals answers.py and the json answer; unit Wh, tolerance 0,02.
+- The model W = UQ with the nominal voltage is the lesson's formula. The task states the assumption explicitly, so the energy lost in charging (η < 100 %) does not make the answer wrong (finding C).
+- Physics: the charge is the area under the I(t) graph and the current is constant on each piece. 61 Wh is realistic for a laptop battery.
+- The solution has all seven parts, the symbolic Q and W before the numbers, the conversion 1 V·Ah = 1 Wh, and a real check (the mean current 1,4 A lies between the extremes).
+- In scope: akut ja latauspiiri (capacity, energy).

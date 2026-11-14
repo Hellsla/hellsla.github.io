@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a45736261bc2d590
+CONTENT-HASH: 728fc7919a95810a
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json:361 (L3-04) — "Nykyään laskun voi tehdä toisin päin" is vague (reverse of what?) — "Nykyään gravitaatiovakio tunnetaan. Siksi Maan massa ja keskitiheys saadaan putoamiskiihtyvyydestä."
+- solutions.md fy5-5-L2-09, Kaava — g = g_0 (R/(R+h))^2 is stated without a step; add one line: 'g = gamma M/r^2, joten g/g_0 = R^2/r^2'.
 
 ## Checked
-light delta review (teacher 2026-11-07): only the changed passages were judged, in context of the surrounding text, tasks, feedback and solutions; no full review even where the tooling asks for one; physics left to the science review; L3-04 stem against its solution (Järkevyys still compares with Cavendish's 5450 kg/m³).
+- L2-09 reworked: figure value g = 24,8 m/s2 needed, r = R + h = 2R named as the key step (distance from the centre), g = 6,20 m/s2, F = 5,27 kN.
+- Check against the surface weight 21,1 kN / 4 is correct and teaches the inverse-square law.
+- Level 2 fits (two steps); text gives all data, question last; unit kN consistent with answer.
+- Description of fy5-5/planeetat unchanged and gives the value without the answer.

@@ -211,12 +211,12 @@ Lauseke $M d\sin\alpha$ antaisi suuremman voiman pidemmällä avaimella, vaikka 
 **Järkevyys:** Kohtisuoralla vedolla pisin avain vaatisi vain $60{,}0\,\text{Nm} : 0{,}600\,\text{m} = 100\,\text{N}$, mutta kulma $30^\circ$ puolittaa sen varren. Tarkistus: $165{,}5\,\text{N}\cdot 0{,}3625\,\text{m} = 60{,}0\,\text{Nm}$, ja $166\,\text{N} < 170\,\text{N}$.
 
 ## fy5-1-L1-10
-**Annettu:** vaakasuora voima $F$ kohdassa $P$, momentti $M = 21\,\text{Nm}$ akselin $O$ suhteen; ruudukon yksi ruutu on $0{,}10\,\text{m}$
-**Kysytty:** voiman suuruus $F$ yksikössä $\text{N}$
-**Periaate:** Sauva kiertyy akselin $O$ ympäri, joten voiman vääntövaikutuksen kertoo momentti $M = Fr$. Varsi on akselin kohtisuora etäisyys voiman vaikutussuorasta. Se ei ole sauvan pituus $OP$.
-**Kuvaajan lukeminen:** Voima on vaakasuora, joten sen vaikutussuora on vaakasuora katkoviiva kohdan $P$ kautta. Akseli $O$ on kolme ruutua tämän suoran alapuolella. Varsi on siis kolme ruutua. Sauvan pituus, viisi ruutua, ei ole varsi.
-**Kaava:** $M = Fr$, josta $F = \dfrac{M}{r}$
-**Muunnokset:** $r = 3\cdot 0{,}10\,\text{m} = 0{,}30\,\text{m}$
-**Sijoitus:** $F = \dfrac{21\,\text{Nm}}{0{,}30\,\text{m}} = 70\,\text{N}$
-**Vastaus:** $70\,\text{N}$, kaksi merkitsevää numeroa kuten momentissa $21\,\text{Nm}$.
-**Järkevyys:** Jos varreksi otettaisiin sauvan pituus $0{,}50\,\text{m}$, voimaksi tulisi $42\,\text{N}$. Se olisi väärin, koska vaakasuora voima vetää sauvaa osittain sen omaan suuntaan. Oikea voima on suurempi, koska varsi on lyhyempi. Tarkistus: $70\,\text{N}\cdot 0{,}30\,\text{m} = 21\,\text{Nm}$.
+**Annettu:** voima $F = 30\,\text{N}$ kohdassa $P$ kohtisuorassa sauvaa $OP$ vastaan; ruudukon yksi ruutu on $0{,}10\,\text{m}$
+**Kysytty:** voiman momentti $M$ akselin $O$ suhteen yksikössä $\text{Nm}$
+**Periaate:** Sauva kiertyy akselin $O$ ympäri, joten voiman vääntövaikutuksen kertoo momentti $M = Fr$. Sauvaa vastaan kohtisuoran voiman varsi on koko sauva: vaikutussuora on kohtisuorassa sauvaa $OP$ vastaan kohdassa $P$, joten $r = OP$.
+**Kuvaajan lukeminen:** Piste $P$ on neljä ruutua oikealla ja kolme ruutua ylempänä kuin $O$. Sauva $OP$ on suorakulmaisen kolmion hypotenuusa, jonka kateetit ovat $4$ ja $3$ ruutua. Sen pituus on siis $\sqrt{4^2 + 3^2} = 5$ ruutua.
+**Kaava:** $M = Fr$, missä $r = OP$
+**Muunnokset:** $r = 5\cdot 0{,}10\,\text{m} = 0{,}50\,\text{m}$
+**Sijoitus:** $M = 30\,\text{N}\cdot 0{,}50\,\text{m} = 15\,\text{Nm}$
+**Vastaus:** $15\,\text{Nm}$, kaksi merkitsevää numeroa kuten voimassa $30\,\text{N}$; sauvan pituus luetaan ruudukosta tarkasti.
+**Järkevyys:** Kuvan vaakasuoran voiman varsi on vain $0{,}30\,\text{m}$. Kohtisuoran voiman varsi on pisin mahdollinen, koko sauva $0{,}50\,\text{m}$, joten sama $30\,\text{N}$:n voima antaa suuremman momentin: $30\,\text{N}\cdot 0{,}30\,\text{m} = 9{,}0\,\text{Nm} < 15\,\text{Nm}$.

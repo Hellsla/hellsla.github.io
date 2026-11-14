@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0be719f8b69971cc
+CONTENT-HASH: 2615e4af46870a85
+SCOPE: delta added-exercise from 0be719f8b69971cc base 81db4a6fd727
 
 ## Blocking
-(none)
 
 ## Polish
-- none.
 
 ## Checked
-- Recomputed T = 7.66 h and the three distractor values; same physics as the Finnish; NOTES §12 shorter sentences (one clarifying sentence on order of magnitude added).
-- fy5-6-L1-09 compared with the reviewed Finnish: id, level, kind, answer, unit, tolerance, choices, correct flag, feedback and solution steps identical in content.
-- No Finnish text left in en files; check_i18n clean for fy5-6; build.py fy5-6 succeeds.
+- Hash oli sama alussa ja lopussa. Kierros 6: tarkistin kierroksen 5 korjaukset. Diffissä muuttuivat vain L1-11:n unit ja vihje sekä L1-10:n järkevyystarkistus.
+- exercises.json:136 (L1-11): unit on nyt "m/s²". g = γM/r² = 1,448 m/s² → 1,45, kuten answers.py:ssä ja suomenkielisessä versiossa.
+- L1-11:n vihje "Arvo on MAFY-taulukossa" on yksikössä. Haettava arvo on Kuun massa, 7,346·10²² kg VERIFIED-riviltä.
+- L1-10: "alle tuhannesosa" on oikein, koska 5,93·10⁻³/9,81 = 6,0·10⁻⁴.
+- Kaikkien tehtävien answer, unit ja tolerance ovat samat kuin suomenkielisessä versiossa. L1-10:n, L1-11:n ja L2-08:n luvut ovat samat.

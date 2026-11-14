@@ -289,16 +289,16 @@ The ratio of the accelerations is $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m
 **Formula:** $F = mg$
 **Conversions:** The data is in SI units, so no conversions are needed.
 **Substitution:** $F = 85\,\text{kg}\cdot 3.71\,\text{m/s}^2 = 315.35\,\text{N}$
-**Answer:** $315\,\text{N}$, three significant figures like the acceleration $3.71\,\text{m/s}^2$.
-**Reasonableness:** On the Earth the force would be $85\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 834\,\text{N}$. The ratio $\dfrac{3.71}{9.81} = 0.38$ gives $0.38\cdot 834\,\text{N} \approx 315\,\text{N}$, so on Mars the astronaut weighs about two fifths of the weight on the Earth.
+**Answer:** $3.2\cdot 10^{2}\,\text{N}$ ($320\,\text{N}$). The mass $85\,\text{kg}$ has only two significant figures, so the result has two, even though $3.71\,\text{m/s}^2$ has three.
+**Reasonableness:** On the Earth the force would be $85\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 834\,\text{N}$. The ratio $\dfrac{3.71}{9.81} = 0.38$ gives $0.38\cdot 834\,\text{N} \approx 320\,\text{N}$, so on Mars the astronaut weighs about two fifths of the weight on the Earth.
 
 ## fy5-5-L2-09
-**Given:** radius $R = 6.99 \cdot 10^{7}\,\text{m}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$; the field strength of Jupiter is read from the figure
-**Find:** the mass $M$ of Jupiter in the unit $10^{27}\,\text{kg}$
-**Principle:** A body of mass $m$ on the surface of Jupiter is at the distance $R$ from the centre. The gravitational force is $F = mg$ and, by Newton's law of gravitation, $F = \gamma\dfrac{M m}{R^2}$. The two expressions are equal.
-**Reading the figure:** The arrow of Jupiter has the label $24.8\,\text{m/s}^2$, so $g = 24.8\,\text{m/s}^2$.
-**Formula:** $mg = \gamma\dfrac{M m}{R^2}$, so the mass $m$ of the body cancels and $M = \dfrac{g R^2}{\gamma}$
-**Conversions:** The data is in SI units; the answer $M = 1.82\cdot 10^{27}\,\text{kg}$ is converted to the unit $10^{27}\,\text{kg}$ at the end.
-**Substitution:** $M = \dfrac{24.8\,\text{m/s}^2\cdot (6.99 \cdot 10^{7}\,\text{m})^2}{6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}} = 1.816 \cdot 10^{27}\,\text{kg}$
-**Answer:** $1.82\,\cdot 10^{27}\,\text{kg}$, three significant figures like the radius.
-**Reasonableness:** The mass of the Earth is $5.97\cdot 10^{24}\,\text{kg}$, so the mass of Jupiter is about $\dfrac{1.82\cdot 10^{27}}{5.97\cdot 10^{24}} \approx 300$ times that, and this is the known size of Jupiter. The field strength is $2.5$ times that of the Earth even though the planet is $300$ times as massive, because the radius is large.
+**Given:** mass of the probe $m = 850\,\text{kg}$, equatorial radius $R = 7.15 \cdot 10^{7}\,\text{m}$, height above the surface $h = 7.15 \cdot 10^{7}\,\text{m}$; the field strength of Jupiter on the surface is read from the figure
+**Find:** the gravitational force $F$ of Jupiter on the probe in the unit $\text{kN}$
+**Principle:** The strength of the gravitational field decreases with the square of the distance, and the distance is measured from the centre of the planet: $r = R + h$. When the field strength at the probe is known, the force is $F = mg$.
+**Reading the figure:** The arrow of Jupiter has the label $24.8\,\text{m/s}^2$, so on the surface $g_0 = 24.8\,\text{m/s}^2$.
+**Formula:** $g = g_0\left(\dfrac{R}{R + h}\right)^2$ and $F = mg$
+**Conversions:** $r = R + h = 7.15 \cdot 10^{7}\,\text{m} + 7.15 \cdot 10^{7}\,\text{m} = 1.430 \cdot 10^{8}\,\text{m} = 2R$; finally $1\,\text{kN} = 1000\,\text{N}$.
+**Substitution:** $g = 24.8\,\text{m/s}^2\cdot\left(\dfrac{7.15 \cdot 10^{7}\,\text{m}}{1.430 \cdot 10^{8}\,\text{m}}\right)^2 = 24.8\,\text{m/s}^2\cdot\dfrac{1}{4} = 6.20\,\text{m/s}^2$ and $F = 850\,\text{kg}\cdot 6.20\,\text{m/s}^2 = 5270\,\text{N} = 5.27\,\text{kN}$
+**Answer:** $5.27\,\text{kN}$, three significant figures like the value $24.8\,\text{m/s}^2$ in the figure and the radius. The value in the figure holds at the equatorial radius, so the same radius is used.
+**Reasonableness:** The distance from the centre doubles, so the field strength and the force are one quarter of the surface values. On the surface the force would be $850\,\text{kg}\cdot 24.8\,\text{m/s}^2 = 21.1\,\text{kN}$ and $21.1\,\text{kN} : 4 = 5.27\,\text{kN}$.

@@ -151,9 +151,9 @@
     {
       "id": "fy5-14-L1-10",
       "level": 1,
-      "text": "Kuvassa on tuntemattoman soittimen äänen FFT-spektri. FFT-spektri näyttää, millä taajuuksilla äänessä on voimakkuutta. Mikä on äänen perustaajuus? Lue tarvittavat tiedot kuvasta.",
+      "text": "Kuvassa on tuntemattoman soittimen äänen FFT-spektri. FFT-spektri näyttää, millä taajuuksilla äänessä on voimakkuutta. Mikä on tämän äänen seitsemännen harmonisen taajuus? Lue tarvittavat tiedot kuvasta.",
       "figure": "fy5-14/spektri-tehtava",
-      "answer": 200.0,
+      "answer": 1400,
       "unit": "Hz",
       "tolerance": 0.02
     }
@@ -289,11 +289,33 @@
     {
       "id": "fy5-14-L2-08",
       "level": 2,
-      "text": "Kuvassa on kahden yhtä aikaa soivan ääniraudan yhteinen ääni mikrofonilla mitattuna. Toisen ääniraudan taajuus on $523\\,\\text{Hz}$, ja se on korkeampi kuin toisen. Mikä on toisen ääniraudan taajuus? Lue tarvittavat tiedot kuvasta.",
+      "text": "Kuvassa on kahden yhtä aikaa soivan ääniraudan yhteinen ääni mikrofonilla mitattuna. Toinen ääniraudoista on $523\\,\\text{Hz}$:n äänirauta, ja toisen taajuus ei ole tiedossa. Tuntemattoman ääniraudan haaraan lisätään hieman vahaa. Vaha pienentää sen taajuutta, ja huojunta nopeutuu. Mikä oli tuntemattoman ääniraudan taajuus ennen vahan lisäämistä? Lue tarvittavat tiedot kuvasta.",
       "figure": "fy5-14/huojunta-tehtava",
-      "answer": 519.0,
-      "unit": "Hz",
-      "tolerance": 0.02
+      "answer": "$519\\,\\text{Hz}$: huojuntataajuus on $4\\,\\text{Hz}$ ja ääniraudan taajuus oli matalampi kuin $523\\,\\text{Hz}$.",
+      "unit": "",
+      "tolerance": 0.02,
+      "kind": [
+        "concept"
+      ],
+      "choices": [
+        {
+          "text": "$527\\,\\text{Hz}$: huojuntataajuus on $4\\,\\text{Hz}$ ja ääniraudan taajuus oli korkeampi kuin $523\\,\\text{Hz}$.",
+          "feedback": "Huojuntataajuus $4\\,\\text{Hz}$ on oikein, mutta puolta ei voi päätellä pelkästä huojunnasta. Jos tuntematon äänirauta olisi korkeampi, vahan lisääminen laskisi sen taajuutta lähemmäs $523\\,\\text{Hz}$:ää, ja erotus pienenisi eli huojunta hidastuisi. Huojunta nopeutui, joten äänirauta oli matalampi."
+        },
+        {
+          "text": "$519\\,\\text{Hz}$: huojuntataajuus on $4\\,\\text{Hz}$ ja ääniraudan taajuus oli matalampi kuin $523\\,\\text{Hz}$.",
+          "feedback": "Oikein: kuvasta huojuntajakso on $0{,}25\\,\\text{s}$, joten $f_\\text{h} = \\tfrac{1}{0{,}25\\,\\text{s}} = 4\\,\\text{Hz}$ ja taajuudet eroavat $4\\,\\text{Hz}$. Vaha laskee tuntematonta taajuutta. Huojunta nopeutui, eli erotus kasvoi, joten tuntematon oli jo ennen vahaa matalampi: $523\\,\\text{Hz} - 4\\,\\text{Hz} = 519\\,\\text{Hz}$.",
+          "correct": true
+        },
+        {
+          "text": "$523\\,\\text{Hz}$: huojunta syntyy, kun molemmat ääniraudat soivat samalla taajuudella.",
+          "feedback": "Jos taajuudet olisivat samat, erotus olisi nolla eikä huojuntaa kuuluisi lainkaan. Huojuntataajuus on taajuuksien erotus, ja kuvassa se on $4\\,\\text{Hz}$."
+        },
+        {
+          "text": "$531\\,\\text{Hz}$: huojuntataajuus on $8\\,\\text{Hz}$ ja ääniraudan taajuus oli korkeampi kuin $523\\,\\text{Hz}$.",
+          "feedback": "Huojuntataajuus $8\\,\\text{Hz}$ tulee, jos myös hiljaiset kohdat lasketaan voimakkaiksi hetkiksi. Silloin väliksi saadaan $0{,}125\\,\\text{s}$. Voimakkaita hetkiä on $0$, $0{,}25\\,\\text{s}$, $0{,}50\\,\\text{s}$, $\\ldots$ Siksi huojuntajakso on $0{,}25\\,\\text{s}$ ja huojuntataajuus $4\\,\\text{Hz}$. Korkeampi taajuus ei myöskään sovi vahakokeeseen. Vaha laskee taajuutta. Jos tuntematon olisi ollut korkeampi, erotus olisi pienentynyt ja huojunta hidastunut. Huojunta kuitenkin nopeutui."
+        }
+      ]
     }
   ],
   "level3": [

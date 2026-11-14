@@ -228,7 +228,6 @@
     "stage_sovella": "Examples",
     "stage_tarkista": "Test and assess",
     "nav_tarkista": "Test and assess",
-    "lead_sovella": "Once you have studied the chapter's theory, move on to the guided examples. In the first you follow a worked solution step by step; in the next ones you make the choices yourself, and the hints help if you get stuck.",
     "example_n": "Example {{n}}",
     "task_choice": "Concept task",
     "task_numeric": "Calculation task",

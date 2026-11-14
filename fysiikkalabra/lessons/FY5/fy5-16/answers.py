@@ -41,5 +41,5 @@ a["fy5-16-L3-05"] = t_allowed(L_fest - 8)                   # earplugs 8 dB -> 9
 # L3-03: why active noise cancellation works best at low frequencies: answered in words
 # Figure tasks (read from fy5-16/scale): lawn mower 90 dB, rock concert 105 dB
 a["fy5-16-L1-09"] = t_allowed(90)                          # n = 5/3, t = 8 h / 2^(5/3) = 2,52 h
-a["fy5-16-L2-09"] = t_allowed(105) * 60                    # n = 20/3, t = 480 min / 2^(20/3) = 4,72 min
+a["fy5-16-L2-09"] = t_allowed(105 - 12) * 60               # concert 105 dB, earplugs -12 dB: 93 dB, n = 8/3, t = 480 min / 2^(8/3) = 75,6 min
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
