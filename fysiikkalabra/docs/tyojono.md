@@ -354,6 +354,8 @@ katkelmille (`reviews.py scope`); ei kokonaisten lukujen uutta katselmointia, ei
 tarkistetaan, onko korjaus jo tehty. fi, en ja fi-easy. Yksi haara ja yksi PR; raportti tehtävänannon kohdan F
 mukaan.
 
+Varattu: claude/fy4-6-kirjoitusvirhe (fy4-6)
+
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
 `kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
