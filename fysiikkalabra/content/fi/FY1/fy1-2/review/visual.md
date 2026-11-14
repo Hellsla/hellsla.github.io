@@ -1,6 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: 57593c472c0d402a
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 8d3fea90beacd643
+
+Mode: delta (table heading "Koko tai etäisyys")
 
 ## Blocking
 - none
@@ -9,5 +10,8 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Word-diff of lesson, inquiry, exit ticket: wording, \tfrac{s}{c}, units on s values; no figures.py change in this part, no figure label moved, so no render.
-- Notation in changed passages is LaTeX with thin-space units; decimal comma/point correct for the language.
+- fy1-2-theory-1280-2.png: the four-column table, the new heading fits on one line, columns aligned, LaTeX units intact.
+- fy1-2-stage-selita-390-3.png: the table as labelled cards at 390 px, the longer label fits, no clipping or overflow.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -38,18 +38,12 @@ Tapa ajaa selaintarkistukset CI:n kontissa (`mcr.microsoft.com/playwright/python
 layout-testien virheilmoitukset nimeämään ylivuotava elementti (`docs/QUALITY.md` aukot 1–2). Jaettuja tiedostoja:
 tehdään yksin ja yhdistetään ennen muita.
 
-## 6. Kuva- ja MAFY-taulukkotehtävät FY8, FY9, FY10 ja FY14 (opettaja 2026-11-13)
+## 6. Kuvatehtävät FY8, FY9, FY10 ja FY14, MAFY-taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13 ja 2026-11-14)
 
 Sama tahti kuin FY4:stä alkaen: jokaisessa luvussa vähintään kaksi kuvatehtävää ja MAFY-taulukkotehtävä noin joka
-kolmannessa luvussa (#521, #528). Arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit lähde-URL:n kanssa. Aloitetaan,
+kolmannessa luvussa (#521, #528). FY10:een ja FY14:ään ei lisätä MAFY-taulukkotehtäviä, vain kuvatehtävät (opettaja
+2026-11-14). Arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit lähde-URL:n kanssa. Aloitetaan,
 kun kohdan 2 katselmoinnit on tehty, jotta katselmoimattomien sarjojen jono ei kasva.
-
-## 7. Työpöytäasettelu: keskitetty tekstiraita ja marginaaliraita (opettaja 2026-11-13)
-
-Isoin jäljellä oleva rakenteellinen UI-muutos. Työpöydällä lukupalsta keskitetään, ja sen viereen tulee
-marginaaliraita (kuvat, kaavat, huomautukset). Jaettuja tiedostoja (`templates/`, `site.css`, `check_layout.py`):
-tehdään yksin ja yhdistetään ennen muita. Ennen toteutusta vaiheittainen arvio ja vertailukuvat opettajalle
-(CLAUDE.md "Where direction B goes": ei laajaa uudistusta yhdellä kertaa).
 
 ## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
 
@@ -130,6 +124,8 @@ kappaleen viereen oikeaan palstaan samalla säännöllä kuin SVG-kuvat. Kyseine
 Ennen/jälkeen-kuviin myös FY1 (opettaja 2026-11-13): fy1-1 "Aine koostuu sisäkkäisistä rakenteista" (väli väliotsikon
 ja kappaleen välissä, vieressä rakennekuva) ja "Atomi on ydintään kymmeniätuhansia kertoja suurempi" (väli kappaleen
 ylä- ja alapuolella).
+Toteutetaan kohdan 14 osana U3 (opettaja 2026-11-14).
+
 ## 8f. Animoitu kuva: hiukkasten värähtely ja lämpölaajeneminen (opettaja 2026-11-13, pilotti fy3-8)
 
 Opettaja kysyi, sopisiko looppaava animaatio fy3-8:n kuvan "kylmä / lämmin, d₀ / d > d₀" tilalle. Sopii, kun se
@@ -187,6 +183,17 @@ samasta tilanteesta → pohdintakysymys (nyt kysymys on ennen kertaustehtävää
 kerran kaikkiin lukuihin; tehdään vasta, kun kertaustehtävät on korjattu liittymään ilmiöihinsä, ja kirjataan
 CLAUDE.md:hen ja docs/inquiry.md:hen samassa PR:ssä.
 
+## 8k. Opettajan hyväksymä tekstimuutos ohittaa katselmoinnin (opettaja 2026-11-13)
+
+Nyt vain opettajan hyväksymät kuvat (`teacher-figure`) ja puhtaasti visuaaliset simulaatiomuutokset
+(`presentation-only`) voivat siirtää katselmoinnit muutoksen yli. Kun opettaja on itse lukenut ja hyväksynyt
+tekstimuutoksen (esim. fy1-1:n suuruusluokka-kappaleen lyhennys 13.11.), julkaisusääntö vaatii silti täyden
+tiedekatselmoinnin, jos poistetuissa riveissä on kaavoja tai lukuja (#551). Uusi kategoria `teacher-text`, joka toimii
+kuten `teacher-figure`: `reviews.py approve-text <id> [--lang]` kirjaa hyväksytyn muutoksen tarkan diffin tiedostoon
+(esim. `docs/teacher-text.tsv`, ei käsin), `scope` antaa sille none/carry, `verify` johtaa sen uudelleen CI:ssä.
+Rivi kirjataan vain opettajan nimenomaisesta hyväksynnästä; mikä tahansa muu muutos samassa luvussa katselmoidaan
+normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yksin.
+
 ## 9. Esimerkkikokeet FY7 ja FY8 (opettaja 2026-11-13)
 
 FY1–FY6:lla on esimerkkikoe (`content/fi/<COURSE>/koe/`), FY7:llä ja FY8:lla ei. `/exam FY7` ja `/exam FY8`
@@ -212,6 +219,124 @@ kursseille FY1–FY8 sivuja säästävällä tiiviillä asettelulla (#393). FY1�
 muuttunut sen jälkeen (MAFY-kaavat, käsitteet, korjaukset), joten ne tehdään uudelleen; FY5–FY8 ovat uusia. Kurssin
 vihko tehdään vasta, kun sen kohdan 3 MAFY-kaavat on yhdistetty, ettei sitä tarvitse tehdä kahdesti. Rakenna sivusto
 vihkojen jälkeen (Vihkot-sivu).
+
+## 13. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
+
+Mittaus, päätökset ja rajaukset: `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. Matalalla kannettavalla
+(1366×650) simulaation kuva kapenee 384 px:iin ja sen tekstit noin 7 px:iin; puhelimella kuva vierii pois säätimiä
+käytettäessä. Osat tässä järjestyksessä, kukin oma pull requestinsa. PR 1–PR 5 muuttavat jaettuja tiedostoja
+(`templates/`, `scripts/`): ne tehdään yksin, yksi kerrallaan, ja yhdistetään ennen sisältömuutoksia. Pilotit (PR 2,
+PR 4) pysähtyvät opettajan hyväksyntään ennen yleistystä. Yksikään osa ei muuta sim.js-tiedostoja, simulaatioiden
+lang-tekstejä tai fysiikkaa.
+
+- **PR 1:** kuvan todellinen leveys tekstikoon perustaksi (`sim-embed.js`) ja selaintesti 1366×650 (kuvan tekstit
+  vähintään 10 px) omina CI-jobeinaan.
+- **PR 2:** pilotti fy4-1: lukemat kuvan alle, toistorivi yhdelle riville, `.lab-side .sim-canvas`-säännön 25 rem:n
+  varaus pienemmäksi, kuvausteksti pois kokeiden vierestä.
+- **PR 3:** sama asettelu tyypeille A–C (aikaohjatut, jatkuvat, staattiset); tyyppi D, fy1-2, fy1-4 ja poikkeavat
+  jäävät nykyiselleen.
+- **PR 4:** tarttuva kuva puhelimella, pilotti fy4-1 ja yksi staattinen simulaatio.
+- **PR 5:** canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus.
+
+Myöhemmin kurssi kerrallaan, kunkin luvun seuraavan sisältömuutoksen yhteydessä katselmointeineen: tyyppi D (fy6-5,
+fy6-6, fy6-9, fy6-12, fy6-13, fy6-14), fy1-2:n säätimien ryhmittely, näppäinvaihtoehto raahaukselle, nimien
+yhtenäistäminen (Toisto / Tauko / Alusta) ja toistuvien seliterivien poisto.
+
+## 14. Tehtävänäkymä ja teorian taitto (opettaja 2026-11-14, UI/UX-auditoinnin tulos)
+
+**Yleislinja** (opettaja 2026-11-14; kirjataan `CLAUDE.md`:hen U1:n PR:ssä): käyttöliittymään ei lisätä tekstiä, ja
+käyttöliittymätekstejä poistetaan aina kun mahdollista. Uusi otsikko, ohjerivi, laskuri tai selite vaatii opettajan
+luvan.
+
+Jokainen osa U1–U4 on oma työntekijäketjunsa, haaransa ja luonnos-PR:nsä; ensimmäinen commit merkitsee osan
+`Varattu: <haara>`. Kaikki muuttavat jaettuja tiedostoja (`templates/`, `scripts/`, `site.css`, `lang/`), joten ne
+tehdään yksin, yksi kerrallaan, ja yhdistetään ennen sisältö-PR:iä. Järjestys: **U4, sitten U1, U2, U3.** U4 on pieni
+ja tehdään heti, kun mikään muu jaettu muutos ei ole auki. U1–U3 aloitetaan vasta, kun kohdan 13 (simulaatioiden
+käyttöliittymä) PR 1–PR 5 on yhdistetty, koska ne muuttavat samoja tiedostoja (`site.css`, `lesson.js`). Kohdat 8b, 8h
+ja 8 (avattavat Virhekäsitys ja Tiivistelmä) pysyvät ennallaan ja mahtuvat väleihin. Fysiikan sisältöön, vastauksiin,
+toleransseihin, tallennusavaimiin ja palautustiedoston muotoon ei kosketa. Mergen jälkeen katsotaan mainin CI-ajo.
+
+### U4. Kaksi tekstiä pois (pieni, ensin)
+- Teorian alun rivi "Et ole vielä vastannut: siirry ennusteeseen" poistetaan. Sama muistutus jää Tutki-vaiheen kokeen
+  kohdalle ja Palaa ennusteisiisi -laatikkoon.
+- Esimerkit-vaiheen johdanto ("Kun olet opiskellut luvun teorian…", lang `inquiry.lead_<vaihe>`) poistetaan kaikista
+  kielistä, kuten Testaa ja arvioi -vaiheen johdanto 13.11.
+- Samassa PR:ssä `CLAUDE.md`:n Lesson page 5 ("Esimerkit opens with one line…") korjataan.
+- Tiedostot: `inquiry.py` tai `inquiry.js`, `lang/*.json`. Testit: `test_inquiry`, `test_progress`, `check_layout`.
+
+### U1. Ydintehtävät auki Tehtävät-vaiheen alkuun
+Nyt vaihe on kolme suljettua tasolaatikkoa, eikä yhtään tehtävää näy. Tason ohje sanoo "Ydintehtävät ensin", mutta ne
+eivät ole ensin (FY4 luku 4: 4-4, 4-6, 4-13, 4-16).
+- Luvun ydintehtävät näkyvät auki heti otsikon "6 Tehtävät" alla, allekkain, yhdessä kortissa, tehtävänantoineen ja
+  vastaustoimintoineen. Tasoa ei tarvitse avata.
+- Ei uutta otsikkoa, laskuria ("Ydintehtävät 2/4 tehty" ei palaa; opettaja poisti sen 13.11. ja vahvisti 14.11.),
+  ohjeriviä eikä väliotsikkoa. Ydintehtävän tunnistaa nykyisestä Ydintehtävä-merkistä.
+- Niiden alla nykyiset kolme tasoa suljettuina; tasossa näkyvät vain sen muut tehtävät. Tasojen otsikot ja
+  "N/M tehty" toimivat kuten nyt, omilla määrillään.
+- Lause "Ydintehtävät ensin, loput lisäharjoitusta." poistetaan (lang `level_lead_1` ja `level_lead_2`, kaikki kielet).
+- Tallenna työ tiedostoon, Palauta ja Avaa tehtävät teorian viereen siirtyvät tasojen alle.
+- Ehdottomat ehdot:
+  - Tehtävä on DOM:ssa vain kerran (ei kopiota). Tunniste (`id`), numero (`data-num`), tarkistus, toleranssit,
+    vihjeet, ratkaisut ja Yritä ensin -lukitus eivät muutu. Tallennetut vastaukset ja tehty-tiedot säilyvät.
+  - `scripts/palautus_tasks.py` päättelee tehtävän tason ympäröivästä `details.level`-laatikosta (rivi ~131), joten
+    ydintehtävä menettäisi tasonsa opettajan arviointinäkymässä: `<li>` saa oman tasotiedon (esim. `data-level`), ja
+    se luetaan sieltä.
+  - `templates/lesson.js`: tasokohtainen tehty-laskuri (~rivi 69), pakollisten vastausten sääntö (~240), tehtävät
+    teorian vieressä (~845–875) ja koko näytön tila (~996) olettavat tehtävien olevan tasolaatikoissa; ne
+    päivitetään. Rivinumerot ovat 14.11. tilanteesta.
+  - Annetut tehtävät (`annetut.json`), Syventävä-merkki, tulostus ja vihkot toimivat.
+  - Toimii ilman JavaScriptiä: rakenne tulee `build.py`:stä, ei skriptin siirtämänä.
+  - fi, en ja fi-easy; FY1–FY8, FY9 ja FY14.
+- Tiedostot: `scripts/build.py` (tehtäväosion kokoaminen), `templates/lesson.js`, `scripts/palautus_tasks.py`,
+  `site.css`, `lang/*.json`.
+- Testit: `test_progress`, `test_palautus`, `test_tehty`, `test_writepad`, `test_koko`, `check_layout` (kaikki
+  leveydet, avoimet tilat), `palautus_tasks.py --check`, `check_a11y`. Jaettu muutos: selaintestit koko sivustolle
+  käsin ennen yhdistämistä.
+- Samassa PR:ssä `CLAUDE.md`: "Tehtävät last" korjataan (sivulla Tehtävät on vaihe 6 ja Testaa ja arvioi vaihe 7),
+  uusi rakenne kuvataan, ja yleislinja kirjataan.
+- Ei julkaistua pilottia: ennen/jälkeen-kuvat PR:ään (FY4 luku 4, 390 ja 1280 px, suljettuna ja yksi tehtävä
+  tarkistettuna), ja työ pysähtyy opettajan hyväksyntään.
+
+### U2. Tehtäväkortin ohjainten järjestys (U1:n jälkeen)
+Nyt Vastaus ja Näytä ratkaisu ovat otsikkorivillä ennen tehtävänantoa; täytetty päänappi on Kirjoita ratkaisu ja
+Tarkista on ääriviivanappi; puhelimella otsikkorivi rivittyy kahdelle riville ja lukko jää irralleen. Järjestys
+kortissa:
+1. numero, merkit (Ydintehtävä, Annettu, Syventävä) ja Avaa isoksi;
+2. tilanne ja kysymys;
+3. kuva tai taulukko;
+4. vastauskenttä, yksikkö ja Tarkista (täytetty päänappi); Kirjoita ratkaisu samalla rivillä ääriviivanappina
+   (puhelimella omalla rivillään Tarkista-rivin alla);
+5. palaute heti kentän alla;
+6. erotinviivan alla Vihjeet, Vastaus, Näytä ratkaisu ja lukko.
+
+Ei uusia tekstejä (lukon selite pysyy nykyisenä title- ja ruudunlukijatekstinä). Sama järjestys monivalinta- ja
+kirjoitustehtävissä. Lukituksen aria-kytkennät säilyvät. Kaikki, mitä skripti lisää korttiin, kirjataan
+`palautus_tasks.py`:n siivouslistaan. Tiedostot: `templates/lesson.js` (otsikkorivin kokoaminen, ~rivi 338),
+`site.css`. Testit: samat kuin U1 ja `check_a11y`. Ennen/jälkeen-kuvat 390 ja 1280 px.
+
+### U3. Teorian taitto: vaihtoehto B (korvaa entisen kohdan 7)
+Nykyinen 38 rem:n palsta säilyy, ja asettelu korjataan kohdan 8e mukaan:
+- teksti kuvarivin yläreunaan, ei tyhjää väliä kappaleen ylä- ja alapuolella;
+- valokuva kuvateksteineen selittämänsä kappaleen viereen oikealle;
+- kaksi pientä taulukkoa vierekkäin, kun mahtuvat;
+- jos kuva on selvästi kappaletta korkeampi, seuraava kappale sen viereen tai kuva alle.
+
+Tiedostot: `build.py` `fig_rows`, `site.css`, `check_layout.py` (tarkistus tyhjälle pystyvälille). Ennen/jälkeen-kuvat:
+fy3-8 ja fy4-3 leveyksillä 1280, 1440 ja 1920 px sekä fy1-1. Luonnoksessa Teoria-vaihe lyheni noin 8 % (fy3-8:
+4082 → 3775 px, fy4-3: 3703 → 3380 px leveydellä 1280 px).
+
+### Ei tehdä (opettaja 2026-11-14)
+- Ei Aloita-riviä moduulisivulle; Jatka-rivi pysyy ennallaan.
+- Ei "Näytä kaikki tehtävät" -toimintoa.
+- Ei etusivun uusia ryhmäotsikoita.
+- Ei marginaalipalstaa eikä keskitettyä lukupalstaa.
+- Ei yhden luvun julkaistua pilottia: esikatselukuvat riittävät.
+
+## Kirjattu päätös: teorian taitto, vaihtoehto B (opettaja 2026-11-14)
+
+Opettaja vertasi kolmea vaihtoehtoa 14.11. ja valitsi B:n: nykyinen 38 rem:n palsta säilyy, ja asettelu korjataan
+kohdan 8e mukaan (kohta 14, U3). Entinen kohta 7 (keskitetty tekstiraita ja marginaaliraita) poistettiin jonosta.
+Perustelu: marginaaliin mahtuva kuva olisi noin neljänneksen pienempi, ja Teoria olisi ainoa keskitetty vaihe.
 
 ## Kirjattu päätös: luvut ilman käsitekortteja (opettaja 2026-11-13)
 

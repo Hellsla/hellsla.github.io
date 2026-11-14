@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c82a3b21eb6adbee
-Mode: full, round 1 (reason: sim.js changed; the diff is label layout only, no change to the model, OBJ data or simState)
+CONTENT-HASH: 58fc8d7de6ebacca
 
 ## Blocking
 
 ## Polish
-- inquiry.json:117 (`calc`) — the threshold "noin 1/1000–3 kertaa näkymän leveys" does not match the code exactly: an object counts as visible from about 1/1200 of the view (fadeIn reaches 0,5 at about 0,47 px). sim-spec.md also gives 1/2000. — Use one value (for example "noin 1/1000") in both texts.
-- lesson.md:270 — Sgr A* is "noin neljä miljoonaa Auringon massaa" here and "noin 4,3 miljoonaa" in the sim's Mallin oletukset. The two agree as rounded values; writing 4,3 in both would remove the gap. (The horizon diameter 2,5·10¹⁰ m follows from 4,3·10⁶ M☉; with 4,0·10⁶ M☉ it would be 2,4·10¹⁰ m.)
+- lesson.md:376 (object-types aria-label) — the label says "jokainen askel on kymmenkertainen koko", but the ticks are two decades apart (10⁴, 10⁶, 10⁸ …), so each step is a factor of 100. The drawing is right. Fix: "satakertainen", or leave the step out.
+- sim-spec.md vs inquiry.json simulaatio.calc — the spec says objects show from 1/2000 of the view width, and calc says 1/1000. In sim.js an object reaches half opacity at about 1/1200, so calc's figure is the better one. Fix: align the spec.
 
 ## Checked
-- Recomputed in one script against lesson-answers.py: all 12 numbers agree. These are the example k = 6,47·10⁴ and Δn = 5, exp-1 5, exp-2 8, exp-3 −4, the Eratosthenes task d = 12 732 km (C 40 000, r 6366, 1° = 111 km), and check-2 5,79·10⁴ and its inverse.
-- Simulation (recomputed mainObj and kohdeExp = round(log₁₀ m)): initial states L = −9 / 7,7 / 27,5 give water / Earth / universe as stated in the intros. Each jump target is the nearest object at its own jump: atom −10, proton −15, quark −18, Sun 9, Neptune 13, Milky Way 21, Planck −35 (clamped at L = −34), hair −4. So exp-1, exp-2 and exp-3 answer as their solutions say. Rounding log₁₀ matches the √10 rule in the lesson.
-- OBJ sizes checked against reference values (nuclei, atoms, water, RBC, Everest, Moon, Jupiter, Sun, 120 AU = 1,8·10¹³ m, Oort 10⁵ AU, Proxima 4,0·10¹⁶ m, Orion, LMC, MW, Andromeda, Local Group, Virgo, Laniakea, 93 Gly = 8,8·10²⁶ m).
-- Sgr A* horizon diameter 2,54·10¹⁰ m; neutron star 1,4 M☉, 20–25 km; Coulomb/gravity for two protons 1,2·10³⁶. All correct.
-- Figures: the scale-axis and object-types positions are to scale (11,8 and 26 px per decade, every point within 0,1 decade). The ladder and matter figures are marked "ei mittakaavassa". The stadium/pea ratio of 4·10⁴ fits "kymmeniätuhansia". In the force arrows, gravity points toward the Sun and the EM pair is attractive.
-- The four interactions are right: β⁻ is weak, the residual strong force binds the nucleus, and the weak force takes part in the Sun's energy production. The text explains why gravity dominates at large scales (charge neutrality). It stays within the FY1 scope note: qualitative, no QM or cosmology equations.
-- Predictions: exactly one correct option in each, and every distractor's feedback is right (pred-2 "neljä" ≈ Neptune–Proxima, 10¹³ → 10¹⁷).
-- tunnista, vuorovaikutukset, virhe, menetelmat, exp-2 question, check-1 (4,0·10¹⁶ → 10¹⁷, log 16,60), check-c2: one correct option in each, and the feedback physics is right.
-- Model answer of check-3 (31 decades) and the exit ticket (residual strong force, short range) agree with the theory.
-- Simulation limits are stated: the Mallin oletukset box covers rounded values, nucleus drawn too large, orbits labelled with their radius but drawn as diameter, Planck grid symbolic, horizon not a solid sphere.
+- Changed lesson.md:198: "alle/yli noin 3" is a fair level-C wording of the √10 ≈ 3,16 boundary. It matches the glossary, check-1 (4,0·10¹⁶ → 10¹⁷), the examples (1,7 m → 10⁰, 8,8·10³ m → 10⁴) and sim.js `kohdeExp = Math.round(log10 m)`.
+- Recomputed in one script: example k = 6,5·10⁴ and Δn = 5; exp-1 5; exp-2 8; exp-3 −4 (the hair in the sim has n = −4); siirto 12 732 km (mistakes 40 000, 6 366, 111); check-2 57 917; virhe 109; reflection 42 and 62. lesson-answers.py agrees.
+- Magnitudes: proton 1,7 fm, nucleus/atom 10⁴–10⁵, stadium/pea 4·10⁴, nucleus over 99,9 % of the mass, Sgr A* horizon 2,5·10¹⁰ m, heliopause 120 AU, 93 Gly = 8,8·10²⁶ m, Coulomb/gravity 1,2·10³⁶.
+- The scale-axis and object-types figures are to scale, to within 0,05 decade. The not-to-scale figures carry the right values.
+- The sim's OBJ table agrees with the lesson. The initial states L = −9, 7,7 and 27,5 give the objects the intros name. The calc's 62 px is right. Orbits use the radius for n, as Mallin oletukset says.
+- Every choice item has exactly one correct option, and the distractor feedback is right.
+- The interactions, β⁻ decay, the neutron star and black hole facts and the observable universe are right and inside the qualitative scope. The exit ticket and check-3 agree with the theory.
+- The hash was the same at the start and at the end.

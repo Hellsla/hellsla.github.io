@@ -59,23 +59,19 @@
     } catch (err) { /* no storage here */ }
   });
   // Where the exercises stand (teacher 2026-11-10, work queue E "opiskelijan etenemisen selkeys"): Tehtävät opens with
-  // "Ydintehtävät 2/4 tehty" and each level's heading says how many of its tasks are done, so the 21 tasks behind three
-  // closed levels show their state before a level is opened. A task counts as on the module page (tehty.js): every
+  // each level's heading says how many of its tasks are done ("3/8 tehty"), so the 21 tasks behind three closed levels
+  // show their state before a level is opened (the line "Ydintehtävät 2/4 tehty" over them was removed, teacher 2026-11-13). A task counts as on the module page (tehty.js): every
   // Tarkista and Vastaa of it checked once (ruukkilabra:tarkistettu, above), or a solution saved in its editor
   // (ruukkilabra:ratkaistu, padstore.js). Read only; nothing new is stored. A chapter with assigned tasks keeps its own
-  // line "3/5 annettua tehtävää tehty" (tehty.js) and gets only the levels' counts.
+  // line "3/5 annettua tehtävää tehty" (tehty.js).
   (() => {
     const box = document.querySelector('#exercises .act-exercises'); if (!box) return;
     const levels = [...box.querySelectorAll('details.level')]; if (!levels.length) return;
     const map = (k) => { try { return JSON.parse(localStorage.getItem(k) || '{}') || {}; } catch (e) { return {}; } };
-    const core = [...box.querySelectorAll('li.core[id]')], assigned = !!box.querySelector('li.assigned');
-    let line = null;
-    if (core.length && !assigned) { line = document.createElement('p'); line.className = 'ex-progress'; line.setAttribute('aria-live', 'polite'); box.prepend(line); }
     const marks = levels.map((d) => { const m = document.createElement('span'); m.className = 'level-done'; m.hidden = true; d.querySelector('summary').append(' ', m); return m; });
     const draw = () => {
       const checked = map(CHECKED), saved = map('ruukkilabra:ratkaistu');
       const done = (li) => !!(checked[li.id] && checked[li.id].done) || typeof saved[li.id] === 'string';
-      if (line) line.textContent = msg('ex_core_done', { n: core.filter(done).length, total: core.length });
       levels.forEach((d, k) => { const all = [...d.querySelectorAll('ol > li[id]')], n = all.filter(done).length;
         marks[k].hidden = n === 0; marks[k].textContent = msg('ex_level_done', { n, total: all.length }); marks[k].classList.toggle('is-all', n === all.length && n > 0); });
     };
@@ -272,28 +268,10 @@
       onMark = visit; if (current) visit(current);
     }
     const DONE = msg('stage_done');
-    // After Ennusta a reminder waits for the predictions (teacher 2026-11-10): until the stage's required predictions
-    // are given, a row after it says "Tee ennusteet ennen tutkimista" and opens the prediction box. With the
-    // predictions given the row is gone (2026-11-12: there is no Seuraavaksi link for it to turn into). It is a <nav>
-    // after the section, so the read-aloud skips it and the stage's own last part stays its last child. Nothing is
-    // locked: the stage bar and scrolling take the reader anywhere, as before.
-    const lockNext = (s) => {
-      const fold = s.t.querySelector('details.fold'), title = fold && fold.querySelector('.fold-title');
-      if (!title || (s.t.nextElementSibling && s.t.nextElementSibling.matches('nav.next-stage'))) return;
-      const row = document.createElement('nav'); row.className = 'next-stage is-waiting'; row.setAttribute('aria-label', title.textContent.trim());
-      const a = document.createElement('a'); a.href = '#' + s.t.id;
-      const st = document.createElement('strong'); st.textContent = title.textContent.trim();
-      a.append(st); row.append(a); s.t.after(row);
-      a.addEventListener('click', (e) => { e.preventDefault(); fold.open = true; fold.scrollIntoView({ block: 'start' }); const f = fold.querySelector('input, button, textarea'); if (f) f.focus({ preventScroll: true }); });
-    };
-    function unlockNext(s) {
-      const row = s.t.nextElementSibling; if (row && row.matches('nav.next-stage')) row.remove();
-    }
-    stages.forEach((s) => { if (s.t.id === 'ennusta' && s.units.length && !saved.done.includes(s.t.id)) lockNext(s); });
+    // (no reminder row after Ennusta, teacher 2026-11-13: "turha nappi"; the prediction box itself stays)
     const show = (s) => {
       if (s.a.classList.contains('is-done')) return;
       s.a.classList.add('is-done');
-      unlockNext(s);
       toc.style.setProperty('--p', String(toc.querySelectorAll('a.is-done').length / Math.max(1, stages.length)));
       const sr = document.createElement('span'); sr.className = 'visually-hidden'; sr.textContent = ' (' + DONE + ')'; s.a.append(sr);
     };
