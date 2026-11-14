@@ -144,7 +144,7 @@ In combined heat and power production the heat of the condenser is led into the 
   <foreignObject x="312" y="8" width="280" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$P_\text{o} = 400\,\text{MW}$</div></foreignObject>
 </svg>
 
-The overall efficiency rises in combined production to as much as 85–$90\,\%$, but electricity and heat are not equally valuable. Electricity can be used for anything, and it can be transmitted hundreds of kilometres. District heating is good only for heating, and its network reaches only a town. That is why the ratio of electricity to heat in a combined heat and power plant is chosen according to the need for heat: in summer little heat is needed and the plant produces almost only electricity, in winter in frosty weather a lot of heat is needed.
+The overall efficiency rises in combined production to as much as 85–$90\,\%$, but electricity and heat are not equally valuable. Electricity can be used for anything, and it can be transmitted hundreds of kilometres. District heating is mainly used for heating buildings and domestic hot water, but it can also be used, for example, to produce cooling and in industrial heat processes. Its network reaches only a town. In summer the need for district heating is usually smaller than in winter. The ratio of electric to thermal power of a plant, and how it is run, depend on the type of plant and on the energy demand.
 
 <figure class="unit-photo"><img src="pics/fy3/nesjavellir.webp" alt="White power plant buildings in a green valley among mountains, with a tall white cloud rising from one of them."><figcaption>The Nesjavellir geothermal power plant in Iceland produces electricity and district heat. The cloud rising from the plant is condensed water vapour that carries waste heat to the surroundings.</figcaption></figure>
 
@@ -283,7 +283,7 @@ If heat is transferred to the surroundings at a temperature only slightly above 
 
 In combined heat and power production, part of the energy that would otherwise be left as waste heat can be used as district heating.
 
-Another mistake is to add the efficiencies of the steps or to take their mean. When the efficiencies of three steps are 0.92, 0.46 and 0.945, the efficiency of the chain is their product 0.40, not the mean 0.78. A third mistake is to take the overall efficiency of $88\,\%$ of combined production as a sign that all the energy would be equally valuable: electricity can be used for everything, district heating only for heating.
+Another mistake is to add the efficiencies of the steps or to take their mean. When the efficiencies of three steps are 0.92, 0.46 and 0.945, the efficiency of the chain is their product 0.40, not the mean 0.78. A third mistake is to take the overall efficiency of $88\,\%$ of combined production as a sign that all the energy would be equally valuable: electricity can be used for everything, district heating mainly for heating.
 
 ## Summary
 - A power plant converts energy step by step in an energy chain, and in each step part of it is transferred to the surroundings as heat.

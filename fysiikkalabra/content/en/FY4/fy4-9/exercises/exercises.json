@@ -20,7 +20,7 @@
   {
    "id": "fy4-9-L1-03",
    "level": 1,
-   "text": "A volleyball of mass $0.27\\,\\text{kg}$ is momentarily at rest at the highest point of its path when a player spikes it. The ball leaves the hand at $18\\,\\text{m/s}$. The effect of the ball's weight during the spike is neglected. How large an impulse does the hand give the ball?",
+   "text": "A volleyball of mass $0.27\\,\\text{kg}$ is thrown vertically upwards. A player spikes the ball when it is momentarily at rest at the highest point of its path. The ball leaves the hand at $18\\,\\text{m/s}$. The effect of the ball's weight during the spike is neglected. How large an impulse does the hand give the ball?",
    "answer": 4.86,
    "unit": "N·s",
    "tolerance": 0.02

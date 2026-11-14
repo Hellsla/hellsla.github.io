@@ -1,6 +1,6 @@
 # Conservation of mechanical energy and the work–energy principle
 
-> **Why** is the first hill of a roller coaster always the highest of the track, even though the train is no longer pulled up after it?
+> **Why** is the first hill of a traditional chain-lift roller coaster usually the highest, if the train is not given any more energy later?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a roller coaster in an amusement park on a summer day. On the left rises the first and highest hill of the track, and a red train has just reached its top. After that the track descends into a deep valley and rises to a second hill, which is clearly lower, and then to a third hill that is lower still. There are white support columns under the track and a spruce forest in the background." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy48h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy48h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy48h-grass" gradientUnits="userSpaceOnUse" x1="0" y1="500" x2="0" y2="900"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient></defs>

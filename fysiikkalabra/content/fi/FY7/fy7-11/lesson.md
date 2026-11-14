@@ -1,6 +1,6 @@
 # Dispersio: prisma ja sateenkaari
 
-> **Miksi** sateenkaaressa punainen on aina ulkoreunalla ja violetti sisäreunalla, ja miksi sateenkaaren näkee vain, kun aurinko on selän takana?
+> **Miksi** pääsateenkaaren ulkoreunalla on punaista ja sisäreunalla violettia, ja miksi sateenkaaren näkee vain, kun aurinko on selän takana?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: kesäsateen jälkeen pellon ja metsän yllä on kirkas sateenkaari, jonka ulkoreunalla on punainen ja sisäreunalla violetti. Sen ulkopuolella näkyy himmeämpi toinen sateenkaari, jossa värit ovat päinvastaisessa järjestyksessä, ja kaarten välissä taivas on tummempi. Taustalla on harmaita sadepilviä. Etualalla ihminen seisoo selin katsojaan ja katsoo kaarta." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy711h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a96a3"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy711h-field" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#e9c98a"/></linearGradient></defs>
@@ -150,7 +150,7 @@ Pieni sadepisara on lähes pallon muotoinen. Auringonvalo taittuu pisaraan, heij
   <foreignObject x="172.5" y="310.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$\text{violetti}$</div></foreignObject>
 </svg>
 
-### Miksi punainen on ulkoreunalla
+### Miksi punainen on pääsateenkaaren ulkoreunalla
 Kun aurinko on selän takana, auringonsäteet kulkevat pään ohi kohti **vastapistettä**, joka on oman pään varjon kohdalla horisontin alapuolella. Silmään tulee punaista valoa niistä pisaroista, jotka näkyvät $42^\circ$:n kulmassa vastapisteen suunnasta, ja violettia niistä, jotka näkyvät $40{,}6^\circ$:n kulmassa. Samassa kulmassa olevat pisarat muodostavat ympyrän, jonka keskipiste on vastapiste. Punaisen ympyrä on suurempi, joten punainen on kaaren ulkoreunalla. Eri värit lähtevät pisarasta voimakkaimpina hieman eri suuntiin. Siksi katsojan silmään tulee kustakin pisarasta erityisen voimakkaasti tietyn väristä valoa, ja pisaran muiden värien voimakkaimmat suunnat kulkevat silmän ohi. Siksi jokainen katsoja näkee oman sateenkaarensa.
 
 <svg data-fig="observer" viewBox="0 0 600 380" role="img" aria-label="Periaatekuva sivulta, kulmat eivät ole mittakaavassa: katsoja seisoo oikealla selkä aurinkoon päin, ja auringonsäteet tulevat oikealta ylhäältä vinosti alas vasemmalla olevaan sadekuuroon. Silmästä lähtee katkoviiva auringonsäteiden suuntaan alas vasemmalle kohti vastapistettä, joka on katsojan pään varjon kohdalla horisontin alapuolella. Ylempi pisara on 42 asteen kulmassa tästä suunnasta, ja siitä silmään tulee punainen valo; sen violetti valo kulkee silmän yläpuolelta ohi. Alempi pisara on noin 40,6 asteen kulmassa, ja siitä silmään tulee violetti valo; sen punainen valo osuu maahan katsojan eteen." style="max-width:100%;font-size:24px">

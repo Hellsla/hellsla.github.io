@@ -144,7 +144,7 @@ Sähkön ja lämmön yhteistuotannossa lauhduttimen lämpö johdetaan kaukolämp
   <foreignObject x="312" y="8" width="280" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$P_\text{o} = 400\,\text{MW}$</div></foreignObject>
 </svg>
 
-Kokonaishyötysuhde nousee yhteistuotannossa jopa 85–$90\,\%$:iin. Sähkö ja lämpö eivät kuitenkaan ole yhtä arvokkaita. Sähköä voi käyttää mihin tahansa, ja sitä voi siirtää satojen kilometrien päähän. Kaukolämpö kelpaa vain lämmitykseen, ja sen verkko ulottuu vain kaupunkiin. Siksi yhteistuotantolaitoksen sähkön ja lämmön suhde valitaan lämmön tarpeen mukaan. Kesällä lämpöä tarvitaan vähän, ja laitos tuottaa lähes pelkkää sähköä. Talvella pakkasella lämpöä tarvitaan paljon.
+Kokonaishyötysuhde nousee yhteistuotannossa jopa 85–$90\,\%$:iin. Sähkö ja lämpö eivät kuitenkaan ole yhtä arvokkaita. Sähköä voi käyttää mihin tahansa, ja sitä voi siirtää satojen kilometrien päähän. Kaukolämpöä käytetään pääasiassa rakennusten ja käyttöveden lämmittämiseen. Sitä voidaan hyödyntää myös esimerkiksi jäähdytyksen tuottamisessa ja teollisuuden lämpöprosesseissa. Sen verkko ulottuu vain kaupunkiin. Kesällä kaukolämmön tarve on yleensä pienempi kuin talvella. Laitoksen sähkö- ja lämpötehon suhde sekä käyttö riippuvat laitostyypistä ja energiantarpeesta.
 
 <figure class="unit-photo"><img src="pics/fy3/nesjavellir.webp" alt="Valkoisia rakennuksia vihreässä laaksossa. Yhdestä nousee valkoinen pilvi."><figcaption>Nesjavellirin voimalaitos Islannissa tekee sähköä ja kaukolämpöä maan lämmöstä. Valkoinen pilvi on tiivistynyttä vesihöyryä. Se vie hukkalämpöä ympäristöön.</figcaption></figure>
 
@@ -283,7 +283,7 @@ Lämpö voi siirtyä ympäristöön lämpötilassa, joka on vain vähän ympäri
 
 Sähkön ja lämmön yhteistuotannossa osa energiasta voidaan käyttää kaukolämpönä. Muuten tämä energia jäisi hukkalämmöksi.
 
-Toinen virhe on laskea vaiheiden hyötysuhteet yhteen tai ottaa niiden keskiarvo. Kolmen vaiheen hyötysuhteet ovat 0,92, 0,46 ja 0,945. Ketjun hyötysuhde on niiden tulo 0,40, ei keskiarvo 0,78. Kolmas virhe on pitää yhteistuotannon $88\,\%$:n kokonaishyötysuhdetta merkkinä siitä, että kaikki energia olisi yhtä arvokasta. Sähköä voi käyttää kaikkeen, kaukolämpöä vain lämmitykseen.
+Toinen virhe on laskea vaiheiden hyötysuhteet yhteen tai ottaa niiden keskiarvo. Kolmen vaiheen hyötysuhteet ovat 0,92, 0,46 ja 0,945. Ketjun hyötysuhde on niiden tulo 0,40, ei keskiarvo 0,78. Kolmas virhe on pitää yhteistuotannon $88\,\%$:n kokonaishyötysuhdetta merkkinä siitä, että kaikki energia olisi yhtä arvokasta. Sähköä voi käyttää kaikkeen, kaukolämpöä pääasiassa lämmitykseen.
 
 ## Tiivistelmä
 - Voimalaitos muuttaa energiaa vaihe vaiheelta energiaketjussa. Jokaisessa vaiheessa osa energiasta siirtyy lämpönä ympäristöön.
