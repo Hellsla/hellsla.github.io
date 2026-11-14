@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: ed672bb44b0bc64e
+CONTENT-HASH: df286322a33f1dbd
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] fy7-5/flux-task-2 — y tick labels 5 4 3 2 1 and −1 −2 −3 are close together; label every second gridline if the figure is next drawn.
 
 ## Checked
-- Added exercises L2-08 (fi-easy, FY7 fy7-5): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-5.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
-- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
-- Hash identical at start and end.
+- Delta: redrawn fy7-5/flux-task-2 in task 5-17 (fy7-5-open-exercises-L2-1280-10, full size). Labels 0,2 … 0,8 below the plot, clear of the line; decimal comma, axis units LaTeX; legible. Rest not re-reviewed.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
