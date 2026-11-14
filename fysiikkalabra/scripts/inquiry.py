@@ -937,11 +937,15 @@ def render(folder, inquiry, parts, md):
         if sid == "tarkista" and parts.get("selfassess"):   # Testaa ja arvioi (teacher 2026-11-10): the tasks first, then the goals' self-assessment, so the student assesses with the tasks' feedback in hand (the goals first until then, 2026-11-06)
             inner = inner + sa_goals_html(lid, inquiry, md, courses.lang_of(folder))   # no separate key: the chosen level's text shows under the scale (teacher 2026-11-06)
         if sid == cards_at: inner += parts["cards"]       # the chapter's concept cards close Esimerkit (teacher 2026-11-05)
-        if sid == "ennusta":                           # closed at first; reopened later, the answers are still there
-            k = sum(1 for a in items if a["type"] == "choice")
-            inner = (f'<details class="fold" data-fold="{sid}"><summary><span class="fold-title">{T("inquiry.fold_title")}</span> '
-                     f'<span class="fold-status" data-n="{k}">{T("inquiry.fold_question_one" if k == 1 else "inquiry.fold_question_many", n=k)}</span></summary>'
-                     f'<div class="fold-body">{inner}</div></details>')
+        if sid == "ennusta":                           # the first prediction is always in view; the others wait in a closed box (teacher 2026-11-13, work queue 8h); the answers stay when it is closed
+            fi = next((i for i, a in enumerate(items) if a["type"] == "choice" and not a.get("optional")), None)   # the first required prediction
+            head = [a for i, a in enumerate(items[:fi + 1]) if i == fi or a["type"] != "choice"] if fi is not None else []   # an optional prediction before it goes into the box with the rest
+            rest = [a for a in items if a not in head] if fi is not None else []
+            k = sum(1 for a in rest if a["type"] == "choice")
+            if k:                                      # one prediction: no box at all
+                inner = (flow(head) + f'<details class="fold" data-fold="{sid}"><summary><span class="fold-title">{T("inquiry.fold_title")}</span> '
+                         f'<span class="fold-status" data-n="{k}">{T("inquiry.fold_question_one" if k == 1 else "inquiry.fold_question_many", n=k)}</span></summary>'
+                         f'<div class="fold-body">{flow(rest)}</div></details>')
         lead = f'<p class="stage-lead">{T(f"inquiry.lead_{sid}")}</p>' if T.has(f"inquiry.lead_{sid}") else ""   # what the stage is for (teacher 2026-11-05)
         if sid == "tarkista" and parts.get("exercises"):   # Itsearvio closes the page, after the exercises (teacher 2026-11-06 evening)
             n -= 1; last = (sid, title, lead, inner); continue   # numbered after Tehtävät, so the bar reads 1, 2, 3 … in order

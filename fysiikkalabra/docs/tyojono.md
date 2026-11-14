@@ -152,6 +152,8 @@ samaan ketjuun, kun kurssin katselmointi on vielä kesken (FY5, FY6, FY7).
 
 ## 8h. Ensimmäinen ennuste näkyy aina (opettaja 2026-11-13)
 
+`Varattu: claude/8h-ensimmainen-ennuste`
+
 Ennusta-vaihe on nyt yksi suljettu laatikko "Tee ennusteet ennen tutkimista · N kysymystä" (CLAUDE.md Lesson page 3,
 2026-10-26), joten vaihe näyttää tyhjältä. Opettaja: "ehkä ensimmäinen ennuste pitäisi aina näkyä. Nyt jää muuten
 turhan tyhjäksi tuo ennuste-kohta." Muutos: ensimmäinen ennustekysymys näkyy auki vaiheen alussa, muut (jos on)
