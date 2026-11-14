@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: c282aa48e9d21cc9
-SCOPE: delta solution-wording from 913065a5d2b5c872 base c282aa48e9d21cc9
+SCOPE: delta added-exercise from 8f2bdb276d7840aa base 8f23aa7ae3bd
 
 ## Blocking
 - none

@@ -1,16 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: a91cf78bc4d94a74
+VERDICT: PASS
+CONTENT-HASH: 66110211ff5fce52
+SCOPE: delta added-exercise from 186e0da2b094809b base 8f23aa7ae3bd
 
 ## Blocking
-- [Major] fy7-16-L2-09, figure fy7-16/charger-points — the "puhelin" labels have a white box that covers the middle of the phone and the field lines through the receiver coil, which are the lines the task asks to count (6 and 4); in the right panel the leader of "vastaanotinkäämi" ends on a field line above the phone, not at the coil — the count cannot be checked from the picture and the label misleads — put the "puhelin" label outside the field area (below the charger or above the phone), and run the leader to the coil's conductor dots.
 
 ## Polish
-- none
+- [Minor] fy7-16/charger-points — the "receiver coil" leader in the right panel ends at the phone's upper edge, not at the coil in its base; extend it a little lower.
 
 ## Checked
-- Added exercises L2-09, L2-10 (fi-easy, FY7 fy7-16): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-16.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
-- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
-- Hash identical at start and end.
+- Added 16-17 and 16-18 (fy7-16-open-exercises-L2-1280-11, -12, -14, full size). Redrawn charger-points: labels clear of the phone and the counted field lines (the earlier Major is resolved); P : P₀ graph with units, aligned chains, decimal comma, units upright; the set reads as one.
+- Rest not re-reviewed.
 
 ## Scores
-illustrations 3 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -1,16 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 993fb6f56cf54ae9
+VERDICT: PASS
+CONTENT-HASH: 3d1e122452fa32a3
+SCOPE: delta added-exercise from 84431a520674b52a base 8f23aa7ae3bd
 
 ## Blocking
-- [Major] fy7-14-L3-06, figure fy7-14/soap-curve — the label "saippuakalvo" (white box) sits over the curve's maximum (about 7,7 % at 621 nm); the task asks the student to read exactly that peak, and the curve looks broken there — essential information hidden, the reading cannot be made — move the label to an empty area (e.g. inside the trough, right of the minimum at 500–550 nm, y about 1–2 %) or into the caption.
 
 ## Polish
-- [Minor] fy7-14-L2-08 solution Järkevyys — "Se on järkevää, koska pinnoitteen taitekerroin on suurempi kuin ihanteellinen" reads as if the cause were reassuring; for science: check the reasoning.
+- [Minor] 14-17 Järkevyys: wording "Se on odotettua, koska yksi pinnoitekerros ei voi kumota…" is fine now; no further change.
 
 ## Checked
-- Added exercises L2-08, L3-06 (fi-easy, FY7 fy7-14): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-14.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
-- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
-- Hash identical at start and end.
+- Added 14-17 (L2-08) and 14-23 (L3-06) with graphs and open solutions (fy7-14-open-exercises-L2-1280-10, -11, L3-1280-9, -10, full size). Redrawn soap-curve: label "saippuakalvo" now in the clear area below the peak, the earlier Major is resolved; coating graph labelled and legible; chains aligned, decimal comma, units upright; the set reads as one.
+- Rest not re-reviewed.
 
 ## Scores
-illustrations 3 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: ac12902ca6fb50a6
-SCOPE: delta added-exercise from a26ea5aec23e5d8e base ac12902ca6fb50a6
+SCOPE: delta added-exercise from 17151a3c70a4f503 base 8f23aa7ae3bd
 
 ## Blocking
 - none
