@@ -10,6 +10,8 @@ ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta
 
 ## 3. Kaavat taulukkokirjan muotoon FY8, FY10 ja FY14
 
+Varattu: claude/fy8-kaavanimet (FY8)
+
 FY1–FY7 ja FY9 on tehty (#501, #522, #527, #529, #572, #578, #580). FY5:ssä F pysyy gravitaatiolaissa (opettaja 14.11: F pysyy FY5:ssä); nimeämättä jääneet kaavat on listattu #572:n kuvauksessa opettajaa varten. Keskinopeuden tunnus on kaikkialla $v_\text{k}$, ei $v_\text{ka}$
 (opettaja 2026-11-13).
 
