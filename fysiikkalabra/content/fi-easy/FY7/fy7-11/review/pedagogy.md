@@ -1,11 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 9c433917541eecdb
+VERDICT: PASS
+CONTENT-HASH: 7fe022e04b0a183f
 
 ## Blocking
-- 'pääsateenkaari' is new in the Miksi question, goals, hook question, headings and prompts but is never explained in S2 (only the hook says 'toinen, himmeämpi kaari'). S2 rule: open a concept the first time. Add one sentence in the hook or the first theory paragraph: 'Kirkkaampaa kaarta sanotaan pääsateenkaareksi, himmeämpää sivusateenkaareksi.'
 
 ## Polish
-- Student-facing tasks otherwise consistent (prompt, model answer, criteria).
+- lesson.md:3 — "pääsateenkaaren" appears in the opening Miksi question before the hook defines it (the hook is the first stage of inquiry.json). A student reading top-down meets the term a few lines before its explanation; acceptable, but could say "Miksi kirkkaan sateenkaaren (pääsateenkaaren) ulkoreunalla..." on first use.
+- inquiry.json hook — "sivusateenkaari" is defined but never used again; fine as vocabulary, optional to drop if the reading level matters.
 
 ## Checked
-batch delta review: batch delta review: all changed lines read; the term is the only issue.
+- Previous blocking item fixed: the hook now says "Kirkkaampaa kaarta sanotaan pääsateenkaareksi ja himmeämpää sivusateenkaareksi." in plain words, right after the second faint arc is mentioned, so the term is opened at first use in the student's path.
+- Hook question "pääsateenkaaressa samassa järjestyksessä" is grammatical and consistent with the definition.
+- Reflect prompt, explain prompt and lesson heading "Miksi punainen on pääsateenkaaren ulkoreunalla" use the term consistently; the model answer and criteria still match the prompt (red outside, violet inside, why only with sun behind).
+- Rephrasing "punaista ... violettia" is correct Finnish (partitive).
+- No numbers or symbols changed; learning goals and the opening-question answer unchanged.
+- Hash identical at start and end.
