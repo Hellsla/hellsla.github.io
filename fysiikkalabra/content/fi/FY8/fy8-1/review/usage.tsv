@@ -1,0 +1,3 @@
+date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache_read	cache_write	context	turns	seconds	calls	verdict	cost_usd	source	ref
+2026-11-14T23:39Z	fy8-1	FY8	developer	develop	claude-sonnet-5-5	medium	write	1	1217702	32	20548	1093791	103331	104830	16	217	17		0.6826	transcript	9408341475c1
+2026-11-14T23:39Z	fy8-1	FY8	orchestrator	orchestrate	claude-sonnet-5-5		session/2	1	3281531	47	10074	3216824	54586	88918	44	1020	48		0.9625	transcript	be5ac0ad3416
