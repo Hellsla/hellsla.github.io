@@ -31,10 +31,10 @@ Tapa ajaa selaintarkistukset CI:n kontissa (`mcr.microsoft.com/playwright/python
 layout-testien virheilmoitukset nimeämään ylivuotava elementti (`docs/QUALITY.md` aukot 1–2). Jaettuja tiedostoja:
 tehdään yksin ja yhdistetään ennen muita.
 
-## 6. Kuvatehtävät FY8, FY9, FY10 ja FY14, MAFY-taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13 ja 2026-11-14)
+## 6. Kuvatehtävät FY8, FY9, FY10 ja FY14, taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13 ja 2026-11-14)
 
-Sama tahti kuin FY4:stä alkaen: jokaisessa luvussa vähintään kaksi kuvatehtävää ja MAFY-taulukkotehtävä noin joka
-kolmannessa luvussa (#521, #528). FY10:een ja FY14:ään ei lisätä MAFY-taulukkotehtäviä, vain kuvatehtävät (opettaja
+Sama tahti kuin FY4:stä alkaen: jokaisessa luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka
+kolmannessa luvussa (#521, #528). FY10:een ja FY14:ään ei lisätä taulukkotehtäviä, vain kuvatehtävät (opettaja
 2026-11-14). Arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit lähde-URL:n kanssa. Aloitetaan,
 kun kohdan 2 katselmoinnit on tehty, jotta katselmoimattomien sarjojen jono ei kasva.
 
@@ -326,12 +326,7 @@ koetila ja minikokeet, kertauspolku, kielten tarkistus) muuttavat jaettuja tiedo
 kerrallaan, kohdan 10 PR 1–PR 5:n ja kohdan 11 U1:n jälkeen; PR 9 Abitti 2 -ohje (sisältö); PR 10 kielimallin
 selvitys (dokumentti). Arvio noin 2,5–3,5 M tokenia.
 
-## 12. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
-
-`kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
-käsitekortteja eikä alleviivauksia.
-
-## 13. Kohdennetut sisältökorjaukset FY3–FY8 (opettaja 2026-11-14)
+## 12. Kohdennetut sisältökorjaukset FY3–FY8 (opettaja 2026-11-14)
 
 Opettajan tehtävänanto sellaisenaan: `docs/audits/2026-11-14-kohdennetut-sisaltokorjaukset.md`. Kolmetoista pientä
 korjausta jo katselmoituun sisältöön: FY8-16 (laajeneminen, sidosenergian maksimi), FY8-12 (gammasäteilyn
@@ -341,6 +336,11 @@ kesällä), FY4-6 (kirjoitusvirhe), FY3-12 (U-arvon termi, valinnainen). **Vain 
 katkelmille (`reviews.py scope`); ei kokonaisten lukujen uutta katselmointia, ei muita sisältömuutoksia; ensin
 tarkistetaan, onko korjaus jo tehty. fi, en ja fi-easy. Yksi haara ja yksi PR; raportti tehtävänannon kohdan F
 mukaan.
+
+## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
+
+`kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
+käsitekortteja eikä alleviivauksia.
 
 ## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; järjestys 2026-11-14)
 
