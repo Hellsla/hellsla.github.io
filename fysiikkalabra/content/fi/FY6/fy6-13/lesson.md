@@ -258,8 +258,8 @@ Suuri kondensaattori voi säilyttää vaarallisen jännitteen pitkään sen jäl
 
 ## Kaava: Kapasitanssi ja kondensaattorin energia
 Kondensaattorin kapasitanssi on varauksen ja jännitteen suhde:
-```latex
-C = \frac{Q}{U}
+```kaavat
+kondensaattorilaki :: C = \frac{Q}{U}
 ```
 missä $C$ on kapasitanssi ($\text{F}$), $Q$ kondensaattorin varaus ($\text{C}$) ja $U$ levyjen välinen jännite ($\text{V}$).
 
@@ -267,8 +267,8 @@ Kapasitanssin yksikkö on faradi, $1\,\text{F} = 1\,\tfrac{\text{C}}{\text{V}}$.
 
 ### Levykondensaattori
 Levykondensaattorin kapasitanssi on
-```latex
-C = \frac{\varepsilon_0 \varepsilon_\text{r} A}{d}
+```kaavat
+levykondensaattorin kapasitanssi :: C = \frac{\varepsilon_0 \varepsilon_\text{r} A}{d}
 ```
 missä $A$ on levyn pinta-ala ($\text{m}^2$), $d$ levyjen etäisyys ($\text{m}$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$ sähkövakio eli tyhjiön permittiivisyys ja $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys. Kaava pätee, kun levyjen etäisyys on pieni levyjen kokoon verrattuna (kenttä on homogeeninen eikä reunoja huomioida) ja eriste täyttää levyjen välin. Suhteellinen permittiivisyys kertoo, kuinka moninkertaiseksi eriste kasvattaa kapasitanssia tyhjiöön verrattuna. Ilmalle $\varepsilon_\text{r} \approx 1{,}0$.
 
@@ -325,8 +325,8 @@ Ladattaessa varaus kasvaa nollasta arvoon $Q$, ja jännite kasvaa samassa suhtee
 </svg>
 
 Kondensaattoriin varastoitunut energia on
-```latex
-W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2
+```kaavat
+kondensaattorin energia :: W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2
 ```
 missä $W$ on energia ($\text{J}$), $Q$ varaus ($\text{C}$), $U$ jännite ($\text{V}$) ja $C$ kapasitanssi ($\text{F}$). Jälkimmäinen muoto saadaan sijoittamalla $Q = CU$. Energiaa merkitään $W$:llä, koska $E$ tarkoittaa tässä luvussa sähkökentän voimakkuutta. Myös luvussa *Akut ja latauspiiri* energia oli $W$, koska $E$ oli siellä lähdejännite.
 

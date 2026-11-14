@@ -320,15 +320,15 @@ In an electric air purifier the air first passes through a charging section, whe
 
 ## Formula: Electric field strength
 The electric field strength at a point where an electric force $\overline{F}$ acts on a small test charge $q$ is
-```latex
-\overline{E} = \frac{\overline{F}}{q}
+```kaavat
+electric field strength :: \overline{E} = \frac{\overline{F}}{q}
 ```
 where $\overline{E}$ is the electric field strength ($\text{N/C}$), $\overline{F}$ the electric force ($\text{N}$) and $q$ the test charge ($\text{C}$). When the field is known, the force on any charge is obtained by multiplying: $\overline{F} = q\overline{E}$. If $q$ is negative, the force points against the field.
 
 ### The field from the voltage of the plates
 The strength of a uniform field can be calculated from the voltage between the plates. When a positive charge $q$ moves from the positive plate to the negative one, the same force $F = qE$ acts on it the whole way, and the field does the work $W = Fd = qEd$. According to the chapter *Circuit, electric current and voltage*, voltage tells the energy per unit charge, so the same work is also $W = qU$. When these are set equal, the charge cancels, and the strength of a uniform field is
-```latex
-E = \frac{U}{d}
+```kaavat
+voltage in a uniform electric field :: E = \frac{U}{d}
 ```
 where $E$ is the electric field strength ($\text{V/m}$), $U$ the voltage between the plates ($\text{V}$) and $d$ the distance between the plates ($\text{m}$). The units $\text{V/m}$ and $\text{N/C}$ are the same unit, because $1\,\text{V/m} = 1\,\tfrac{\text{J}}{\text{C} \cdot \text{m}} = 1\,\tfrac{\text{N} \cdot \text{m}}{\text{C} \cdot \text{m}} = 1\,\text{N/C}$. For example, a voltage of $2.0\,\text{kV}$ across a plate distance of $4.0\,\text{cm}$ gives the field $2000\,\text{V} : 0.040\,\text{m} = 5.0 \cdot 10^{4}\,\text{V/m}$.
 

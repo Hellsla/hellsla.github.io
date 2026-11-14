@@ -177,14 +177,14 @@ A connection of resistors can be replaced with a single resistor from which the 
 
 ## Formula: Total resistance of resistors
 In a series connection the voltages add up, $U = U_1 + U_2$, and the same current $I$ passes through every resistor. When the voltages are written using Ohm's law, we get $RI = R_1 I + R_2 I$, and the current $I$ cancels. So the total resistance of resistors connected in series is
-```latex
-R = R_1 + R_2 + R_3 + \dots
+```kaavat
+total resistance of resistors in series :: R = R_1 + R_2 + R_3 + \dots
 ```
 where $R$ is the total resistance ($\Omega$) and $R_1$, $R_2$, $R_3$, … are the resistances of the resistors ($\Omega$).
 
 In a parallel connection the currents add up, $I = I_1 + I_2$, and the same voltage $U$ is across every resistor. When the currents are written using Ohm's law, we get $\tfrac{U}{R} = \tfrac{U}{R_1} + \tfrac{U}{R_2}$, and the voltage $U$ cancels. For the total resistance of resistors connected in parallel
-```latex
-\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \dots
+```kaavat
+total resistance of resistors in parallel :: \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \dots
 ```
 where $R$ is the total resistance and $R_1$, $R_2$, $R_3$, … are the resistances of the branches. The equation first gives the number $\tfrac{1}{R}$, whose unit is $\tfrac{1}{\Omega}$. The total resistance is its reciprocal, so remember to invert at the end of the calculation. For two parallel resistors the equation can be solved in advance:
 ```latex

@@ -276,12 +276,14 @@
 <p>Suuri kondensaattori voi säilyttää vaarallisen jännitteen pitkään sen jälkeen, kun laite on irrotettu sähköverkosta. Esimerkiksi mikroaaltouunin ja salamalaitteen kondensaattorit voivat antaa sähköiskun, joten avattua laitetta ei kosketa ennen kuin kondensaattorit on purettu.</p>
 <h3 class="theory-h">Kapasitanssi ja kondensaattorin energia</h3>
 <p>Kondensaattorin kapasitanssi on varauksen ja jännitteen suhde:</p>
-<p>$$C = \frac{Q}{U}$$</p>
+<dl class="kaavat"><div class="kaava-rivi"><dt>kondensaattorilaki</dt><dd>$$C = \frac{Q}{U}$$</dd></div></dl>
+
 <p>missä $C$ on kapasitanssi ($\text{F}$), $Q$ kondensaattorin varaus ($\text{C}$) ja $U$ levyjen välinen jännite ($\text{V}$).</p>
 <p>Kapasitanssin yksikkö on faradi, $1\,\text{F} = 1\,\tfrac{\text{C}}{\text{V}}$. Faradi on suuri yksikkö, joten tavallisten kondensaattorien kapasitanssit ilmoitetaan mikro-, nano- tai pikofaradeina, esimerkiksi $470\,\mu\text{F} = 470 \cdot 10^{-6}\,\text{F}$.</p>
 <h4>Levykondensaattori</h4>
 <p>Levykondensaattorin kapasitanssi on</p>
-<p>$$C = \frac{\varepsilon_0 \varepsilon_\text{r} A}{d}$$</p>
+<dl class="kaavat"><div class="kaava-rivi"><dt>levykondensaattorin kapasitanssi</dt><dd>$$C = \frac{\varepsilon_0 \varepsilon_\text{r} A}{d}$$</dd></div></dl>
+
 <p>missä $A$ on levyn pinta-ala ($\text{m}^2$), $d$ levyjen etäisyys ($\text{m}$), $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$ sähkövakio eli tyhjiön permittiivisyys ja $\varepsilon_\text{r}$ eristeen suhteellinen permittiivisyys. Kaava pätee, kun levyjen etäisyys on pieni levyjen kokoon verrattuna (kenttä on homogeeninen eikä reunoja huomioida) ja eriste täyttää levyjen välin. Suhteellinen permittiivisyys kertoo, kuinka moninkertaiseksi eriste kasvattaa kapasitanssia tyhjiöön verrattuna. Ilmalle $\varepsilon_\text{r} \approx 1{,}0$.</p>
 <table>
 <thead>
@@ -353,7 +355,8 @@
   <foreignObject x="233.5" y="81" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$U = \tfrac{Q}{C}$</div></foreignObject>
 </svg></div></div>
 <p>Kondensaattoriin varastoitunut energia on</p>
-<p>$$W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2$$</p>
+<dl class="kaavat"><div class="kaava-rivi"><dt>kondensaattorin energia</dt><dd>$$W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2$$</dd></div></dl>
+
 <p>missä $W$ on energia ($\text{J}$), $Q$ varaus ($\text{C}$), $U$ jännite ($\text{V}$) ja $C$ kapasitanssi ($\text{F}$). Jälkimmäinen muoto saadaan sijoittamalla $Q = CU$. Energiaa merkitään $W$:llä, koska $E$ tarkoittaa tässä luvussa sähkökentän voimakkuutta. Myös luvussa <em>Akut ja latauspiiri</em> energia oli $W$, koska $E$ oli siellä lähdejännite.</p>
 <p>Kun aluksi varaamaton kondensaattori ladataan vakiojännitelähteestä tavallisessa latauspiirissä, jossa on resistanssia, lähde siirtää koko varauksen $Q$ täyden jännitteensä $U$ yli, joten se antaa energian $QU$. Kondensaattoriin varastoituu siitä vain puolet. Toinen puoli muuttuu latauksen aikana johtimien ja vastusten sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Puolet ei ole yleinen laki kaikille lataustavoille: se on tämän mallin tulos.</p>
 <h4>Eriste, kun lähde on kytkettynä tai irrotettuna</h4>
