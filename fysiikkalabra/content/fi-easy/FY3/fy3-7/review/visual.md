@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ad1c47c64c42562d
+CONTENT-HASH: fe8bebd525a0b695
 
 ## Blocking
 - none
@@ -8,5 +8,10 @@ CONTENT-HASH: ad1c47c64c42562d
 - none
 
 ## Checked
-- delta review 2026-11-07 (teacher's proofread replacement texts): the reworded Miksi question and the inquiry "Palaa ennusteisiisi" prompt ("pysyy noin $100\,{}^\circ\text{C}$:ssa"); opened fy3-7-fi-easy-a-390 and -1280 (callout wraps cleanly, unit typeset).
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy3-7.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- delta review round 2 (captures current for this hash): opened fy3-7-example-390-1.png and -2.png, which show the changed worked-example stages 3 (Kaava ratkaistuna) and 7 (Järkevyys) at 390 px.
+- Stage 3: the new lead sentence with $Q_\text{kuum}$ and $Q_\text{h}$ renders cleanly. The three rows (Q_kuum = Q_h, Pt = rΔm, r = Pt/Δm) are aligned and the principle comes before the combined form.
+- Stage 7: the chain "Δm = Q/r = Pt/r = 300 kJ / 2260 kJ/kg = 0,133 kg" starts with the quantity and has its equals signs aligned. No clipping or overflow, and the fractions are readable.
+- The inquiry.json wording changes (the prediction option and the Q = sm feedback) are text only and have no layout effect. I read them in the diff and did not open a separate capture.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -334,6 +334,43 @@ fy3-8 ja fy4-3 leveyksillä 1280, 1440 ja 1920 px sekä fy1-1. Luonnoksessa Teor
 - Ei marginaalipalstaa eikä keskitettyä lukupalstaa.
 - Ei yhden luvun julkaistua pilottia: esikatselukuvat riittävät.
 
+## 15. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14)
+
+Tavoite: FY1–FY8-oppimateriaali kaupallisen kustantajan julkaisuvalmiutta vastaavalle laatutasolle. Tarkistaja toimii
+kokeneena lukion fysiikan kustannustoimittajana, fysiikan didaktiikan asiantuntijana ja ohjelmistojen
+laadunvarmistajana. Pedagoginen perusrakenne on jo toimiva, eikä sitä uudisteta ilman todettua tarvetta: tämä on
+tarkistus- ja viimeistelyprojekti, ei uudelleensuunnitteluprojekti. **Ensin pelkkä raportti; korjaukset vasta, kun
+raportti on valmis ja opettaja on lukenut sen.**
+
+Tarkistetaan jokaisesta oppitunnista:
+1. fysiikan teorian, käsitteiden ja kaavojen oikeellisuus;
+2. esimerkkilaskujen, tehtävien ja malliratkaisujen oikeellisuus;
+3. simulaatioiden fysikaaliset mallit, laskenta, parametrit ja tehtävänannot;
+4. kuvitusten fysikaalinen oikeellisuus, visuaalinen selkeys ja yhdenmukaisuus;
+5. tehtävien pedagoginen monipuolisuus suhteessa oppitunnin tavoitteisiin;
+6. oppimistavoitteiden ja itsearvioinnin vastaavuus;
+7. suomen kielen täsmällisyys, käsitteiden yhdenmukaisuus ja kielitietoisuus;
+8. käyttöliittymän, saavutettavuuden ja tallennustoimintojen toimivuus.
+
+Työskentelytapa:
+- Kaikki FY1–FY8-oppitunnit järjestelmällisesti, kurssi kerrallaan.
+- LOPS 2019 (`docs/lops2019/`) on opetussuunnitelmallinen vertailuperusta.
+- Julkaistuja oppikirjoja ei käytetä eikä mainita vertailuaineistona (opettaja 2026-11-14).
+- Virheitä ei oleteta. Muutosta ei ehdoteta vain siksi, että asian voisi ilmaista toisin.
+- Tehtävien tunnisteita, oikeita vastausarvoja tai opiskelijan tallennusmuotoja ei muuteta ilman todettua virhettä.
+- Uusia tehtäviä tai simulaatioita ei lisätä ilman perusteltua pedagogista puutetta.
+- Lähdekoodia ei muokata tässä vaiheessa.
+
+Raportti (`docs/audits/`, kurssi kerrallaan) ilmoittaa jokaisesta todetusta ongelmasta: moduuli ja oppitunti,
+tiedosto ja yksilöitävä kohta, nykyinen toteutus, todettu ongelma ja sen perustelu, täsmällinen korjausehdotus,
+prioriteetti (kriittinen, merkittävä tai pieni) ja tarvittava tarkistus korjauksen jälkeen. Raportti erottaa
+varmennetut virheet, mahdolliset ongelmat ja vapaaehtoiset parannusehdotukset. Oppitunti, jolla ei ole korjattavaa,
+merkitään hyväksytyksi.
+
+**Jonon viimeinen kohta** (opettaja 2026-11-14): aloitetaan vasta, kun kaikki muut jonon kohdat on tehty. Työ on laaja
+(113 lukua), joten se tehdään kurssi kerrallaan omissa ketjuissaan (`/quality-audit <id> --audit-only`, budjetit
+`.claude/commands/lesson.md`).
+
 ## Kirjattu päätös: teorian taitto, vaihtoehto B (opettaja 2026-11-14)
 
 Opettaja vertasi kolmea vaihtoehtoa 14.11. ja valitsi B:n: nykyinen 38 rem:n palsta säilyy, ja asettelu korjataan

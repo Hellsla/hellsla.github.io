@@ -236,9 +236,10 @@ Veden ominaishöyrystymislämpö määritetään kokeellisesti. Avoin kalorimetr
 
 <!-- vaihe -->
 
-**Kaava ratkaistuna.** Merkitään lämpömäärät yhtä suuriksi ja ratkaistaan $r$:
+**Kaava ratkaistuna.** Kuumentimen luovuttama lämpömäärä $Q_\text{kuum}$ on yhtä suuri kuin höyrystymiseen kuluva lämpömäärä $Q_\text{h}$. Kirjoitetaan se auki ja ratkaistaan $r$:
 ```latex
 \begin{aligned}
+&Q_\text{kuum} = Q_\text{h} \\[6pt]
 &Pt = r\,\Delta m \\
 &r = \frac{Pt}{\Delta m}
 \end{aligned}
@@ -266,7 +267,7 @@ Veden ominaishöyrystymislämpö määritetään kokeellisesti. Avoin kalorimetr
 
 <!-- vaihe -->
 
-**Järkevyys.** Tulos $2{,}34\,\tfrac{\text{MJ}}{\text{kg}}$ on hieman taulukkoarvoa $2{,}26\,\tfrac{\text{MJ}}{\text{kg}}$ suurempi, noin $3{,}7\,\%$. Se on odotettu suunta: osa kuumentimen energiasta siirtyy astian kautta ympäröivään ilmaan eikä höyrystä vettä, joten oletus "kaikki energia veteen" antaa liian suuren $r$:n. Taulukkoarvolla höyrystyisi $\dfrac{300\,\text{kJ}}{2260\,\tfrac{\text{kJ}}{\text{kg}}} = 0{,}133\,\text{kg}$ eli $133\,\text{g}$, vain $5\,\text{g}$ enemmän kuin mitattu, joten tulos on muutaman prosentin tarkkuudella oikea.
+**Järkevyys.** Tulos $2{,}34\,\tfrac{\text{MJ}}{\text{kg}}$ on hieman taulukkoarvoa $2{,}26\,\tfrac{\text{MJ}}{\text{kg}}$ suurempi, noin $3{,}7\,\%$. Se on odotettu suunta: osa kuumentimen energiasta siirtyy astian kautta ympäröivään ilmaan eikä höyrystä vettä, joten oletus "kaikki energia veteen" antaa liian suuren $r$:n. Taulukkoarvolla höyrystyisi $\Delta m = \dfrac{Q}{r} = \dfrac{Pt}{r} = \dfrac{300\,\text{kJ}}{2260\,\tfrac{\text{kJ}}{\text{kg}}} = 0{,}133\,\text{kg}$ eli $133\,\text{g}$, vain $5\,\text{g}$ enemmän kuin mitattu, joten tulos on muutaman prosentin tarkkuudella oikea.
 
 ## Yleinen virhekäsitys
 Moni luulee, että lämmön lisääminen nostaa aina lämpötilaa. Puhtaan aineen olomuodon muutoksessa vakiopaineessa lämpötila pysyy vakiona, vaikka energiaa siirtyy paljon: jään sulattaminen vaatii yhtä paljon energiaa kuin saman veden lämmittäminen $0\,{}^\circ\text{C}$:sta $80\,{}^\circ\text{C}$:seen. Toinen virhe on pitää 0-asteista jäätä ja 0-asteista vettä samanarvoisina jäähdyttäjinä. Jää viilentää juomaa paljon tehokkaammin, koska se ottaa sulaessaan paljon energiaa ennen kuin alkaa lämmetä. Kolmas virhe on ajatella, että vesi kiehuu aina $100\,{}^\circ\text{C}$:ssa: kiehumispiste riippuu paineesta.

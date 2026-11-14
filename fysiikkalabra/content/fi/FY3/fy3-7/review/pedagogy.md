@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 04e74221f7690507
+CONTENT-HASH: 0e0f5d73568bcfbf
 
 ## Blocking
 - none
@@ -8,5 +8,7 @@ CONTENT-HASH: 04e74221f7690507
 - none
 
 ## Checked
-- delta review 2026-11-07 (teacher's proofread replacement texts): the hook and the closing inquiry prompt now say the boiling temperature stays at about 100 °C at normal pressure while energy keeps flowing in; the question still motivates the plateau the experiments show and gives no answer away.
-delta review: the only change is sim.js line 165, the time-axis label "t (s)" moved 3 units lower (ts(36) to ts(39)). In the 390 px simulation capture the label now sits clearly below the last tick label and no longer touches it; the axis stays inside the canvas, nothing is clipped, and text, controls, readout and tasks are unchanged.
+- delta review, round 2: both earlier polish items are done: "Kuumentimen luovuttama lämpömäärä" now matches the subscript Q_kuum and the rest of the example. The Järkevyys step now shows Δm = Q/r = Pt/r, so the 300 kJ is traced to Pt.
+- Inquiry prediction option now reads "kiehumisen ja sulamisen kestojen suhde kasvaa, kun massa kasvaa". The ratio is named, so the option is unambiguous. Its feedback (565/83,5 ≈ 6,8 and 1130/167 ≈ 6,8) refutes it with the student's own data and explains why (both durations are proportional to mass).
+- The check feedback on Q = sm now says the energy changes the particles' mutual interactions and raises their interaction energy. This agrees with the glossary's micro model and the slot's "mikromalli" goal. It repairs the misconception "ΔT = 0 means no energy goes in" without disclosing anything early.
+- No other lesson text, figure, simulation or exercise changed. The rest stands as approved.

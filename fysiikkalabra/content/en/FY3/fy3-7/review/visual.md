@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d2094534394d5a6a
+CONTENT-HASH: d7fea6532513f83e
 
 ## Blocking
 - none
@@ -8,5 +8,9 @@ CONTENT-HASH: d2094534394d5a6a
 - none
 
 ## Checked
-- delta review 2026-11-07 (teacher's proofread replacement texts): the reworded Miksi question and the inquiry "Palaa ennusteisiisi" prompt ("pysyy noin $100\,{}^\circ\text{C}$:ssa"); opened fy3-7-en-a-390 and -1280 (callout wraps cleanly, unit typeset).
-- batch delta review: opened fy3-7-1280-0, fy3-7-1280-1, fy3-7-360-0, fy3-7-360-1; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text. Other photo(s) on the page are untouched and only seen for layout.
+- delta, en: worked example captures fy3-7-example-390-1 and -2 at readable size. Step 3: the new sentence with $Q_\text{h}$ and $Q_\text{v}$ reads well, and the display now starts with $Q_\text{h} = Q_\text{v}$ with the equals signs aligned in one column. Step 7: the new chain $\Delta m = Q/r = Pt/r = \ldots$ is set as aligned rows that start with the quantity, and the surrounding sentence continues cleanly. Nothing is clipped and there is no overflow at 390 px.
+- inquiry.json changes (the pred-2 option wording and the interaction-energy feedback) are plain text with no new units. Read in source only: they are prose, with $\Delta T = 0$, $Q = sm$ and $\approx 6.8$ already typeset.
+- Figures are untouched by the diff and were not re-judged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
