@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 17151a3c70a4f503
-
-Scope: new task fy7-16-L2-08 (suuruusluokka, YO type 5).
+CONTENT-HASH: a26ea5aec23e5d8e
+SCOPE: delta added-exercise from 17151a3c70a4f503 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- exercises.json (choices) — option values are 12 us, 1,2 ms, 12 ms, 12 s: the last gap is a factor 1000, outside the "10-100 apart" rule in docs/exercise-types.md; replace 12 s by 120 ms (and a matching unit-slip feedback).
-- exercises.json (12 s feedback) — "valon nopeudeksi on otettu 300 000" is hard to reach since the task gives c in m/s; use a slip a student can make with the given data.
+- fy7-16-L2-10: the graph spans 0-40 km, so P at 35 km can be read straight from it and the attenuation step is bypassed; use 60 km or 80 km so the model is needed.
+- fy7-16-L2-09: the figure description does not give the line counts (6 and 4); add them to the alt text so a reader without sight has the data (it does not give the answer).
+- fy7-16-L2-09 Järkevyys: 'hyötysuhde laski luvun mittauksissa jyrkästi' refers to another exercise; name the data or drop it.
 
 ## Checked
-- Calculation verified: v = 2,04 x 10^8 m/s, s = 2,4 x 10^6 m, t = 11,8 ms; each wrong value follows from a named unit slip.
-- Forgetting n (8 ms) or the return trip (6 ms) lands near 12 ms, so the order of magnitude is robust; no distractor depends on that.
-- Correct option is not the longest or only hedged one; digits "12" repeat in three options, which hides it.
-- Within fy7-12 (t = ns/c) and earlier units; everyday context (ping).
-- Widest display chain 174 px, inline 187 px (render).
+- L2-09: flux proportional to the number of lines, 4,2 V x 4/6 = 2,8 V; Periaate ties e_0 = N 2 pi f Phi_0 to the proportionality.
+- L2-10: half-power length 10 km, a = 0,30 dB/km, P = 8,8 % at 35 km; the check 0,5^3,5 matches.
+- Language checked: fi. Hash a26ea5aec23e5d8e at start and end.

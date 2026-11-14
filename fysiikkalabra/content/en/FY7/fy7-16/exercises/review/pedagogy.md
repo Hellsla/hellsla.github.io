@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0311e476009c3306
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 38ba1f0d727942e3
+SCOPE: delta added-exercise from 0311e476009c3306 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- L2-10: the graph covers 0–40 km, so the answer at 35 km can be read straight off; use a length beyond the graph (e.g. 55 km).
+- L2-09 solution headed 'Reading the graph' but the figure is a diagram; a reader who cannot see it gets no line counts.
+- L2-09 and L2-10 lack 'kind'.
 
 ## Checked
-- Level counts and ids equal to fi; the new task fy7-16-L2-08 has the same form, prompt and options as fi.
-- Situation first, question last kept; the task needs no figure, so nothing to check at 360 px beyond long formulas, which break normally.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Solution keeps Kysytty/Find, Periaate/Principle, Mallivastaus/Model answer and the discussion of the wrong options.
-- English at the level of the existing en set.
+- L2-09: lines 6 and 4, e₀' = 2.8 V; L2-10: L½ = 10 km, a = 0.301 dB/km, 8.8 % verified.
+- Counting lines at 360 px was not checked (no capture available in the packet).
+- Language checked: en. Hash 38ba1f0d727942e3 at start and end.

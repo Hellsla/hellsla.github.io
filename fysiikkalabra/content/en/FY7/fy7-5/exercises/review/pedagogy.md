@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 06991c696df18874
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 60603fd33fb68666
+SCOPE: delta added-exercise from 16a047b5f70a77e7 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
-
-## Fixed
-(none)
+- none
 
 ## Polish
-(none)
+- Text and solution use decimal commas (`0{,}40`, `5{,}0`) in the English version; the rest of the English set uses points. Change to `0.40` etc.
+- Solution labels 'Asked' where the set uses 'Find'; also 'e_ka' is Finnish notation (keskiarvo), consider $e_\text{avg}$.
 
 ## Checked
-- decimal point in JSON, tables and LaTeX; plain English.
-- New task L1-09: prompt, options, feedback and solution (Kysytty/Periaate/Mallivastaus, Reasonableness) keep the fi level, order and staging; feedback repairs the misconception without giving the answer away before the choice.
-- Terminology consistent with the lesson and the rest of the set.
-- Figures (where the task has them): descriptions translated, no answer disclosed beyond fi.
+- L2-08: ΔΦ = −8.0 mWb, |e| = 200·0.020 V = 4.0 V verified.
+- It adds the flux that changes sign, a real misconception, beside L2-02 (monotonic graph); the reasonableness block names the wrong shortcut (1.5 V).
+- Language checked: en. Hash 60603fd33fb68666 at start and end.

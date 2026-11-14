@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c7a891d427fd5589
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 553ead30b1ebbc84
+SCOPE: delta added-exercise from c7a891d427fd5589 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- L2-08 asks for a relative reduction from two readings; 1.3 and 4.3 are hard to read from a curve, so the key 70.4 and the solution 69.8 differ; keep the tolerance 3 %.
+- Description of coating-curve and soap-curve gives no numerical points for a reader who cannot see.
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: only L3-04 (oil film) and L3-05 (air wedge) get the "Extension task" tag (Syventävä tehtävä); level 3 was never core, so the core path is unchanged; tag renders clearly before the task text.
-- Level counts and ids equal to fi; the new task fy7-14-L1-09 has the same form, prompt and options as fi.
-- Situation first, question last kept; the task needs no figure, so nothing to check at 360 px beyond long formulas, which break normally.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Solution keeps Kysytty/Find, Periaate/Principle, Mallivastaus/Model answer and the discussion of the wrong options.
-- English at the level of the existing en set.
+- L2-08: bare glass 4.26 %, coating minimum 1.26 %, 70.4 % verified.
+- L3-06: min 466 nm, max 621 nm, k = 2, d = 350 nm verified; the other visible extremes do not exist, so the reading is unique; level 3 reasoning (k' = k − 1) is explained.
+- Both fit their levels.
+- Language checked: en. Hash 553ead30b1ebbc84 at start and end.

@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 59eedd9cce3ae8b0
-
-Scope: new task fy7-14-L1-09 (mallin valinta, five expressions).
+CONTENT-HASH: a0e51cec13f9f7c7
+SCOPE: delta added-exercise from 59eedd9cce3ae8b0 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- exercises.json:124 — feedback of d = lambda/2 is muddled ("lisämatkaan 2d mahtuu yhtä monta aallonpituutta kuin ilmassa matkaan 2nd") — "Tässä on unohdettu taitekerroin. Kalvossa aallonpituus on $\lambda : n$, joten lisämatkaan $2d$ mahtuu $2nd : \lambda$ aallonpituutta, ei $2d : \lambda$."
+- fy7-14-L2-08 Järkevyys: 'järkevä, koska ... ihanteellinen sqrt(1,52)' brings in the ideal coating index which the lesson may not teach; drop it or say why the minimum is not zero.
+- fy7-14-L3-06: 'päättele ... kertaluku k ja paksuus' asks two things but answers only d; say 'Anna vastaus paksuutena nanometreinä'.
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: only L3-04 (oil film) and L3-05 (air wedge) get the "Syventävä tehtävä" tag; level 3 was never core, so the core path is unchanged; tag renders clearly before the task text.
-- Distractors carry the chapter's warned mistakes: forgetting the half-wave shift (lambda/(4n) = first bright ring, correctly explained), path nd instead of 2nd, air wavelength, wavelength growing in the film.
-- Correct option (middle, no extra words) not identifiable by form; five options of equal length.
-- Black spot = k = 0, first dark ring = k = 1: consistent with the lesson's soap film.
-- Within lesson; the half-wave shift is taught there for a soap film in air.
-- Solution gives the principle and names why each wrong expression arises; numeric example (221 nm) checks out.
-- Widest inline 185 px, display 84 px (render); no overflow.
+- L2-08: R_0 4,3 %, R_pinn 1,3 %, 70 % removed; reading steps explicit.
+- L3-06: min 466 nm, max 621 nm, k = 2, d = 350 nm; one min and one max in 400-700 nm, so the inference is unique; level 3 justified; no repeat of L3-03.
+- Language checked: fi. Hash a0e51cec13f9f7c7 at start and end.

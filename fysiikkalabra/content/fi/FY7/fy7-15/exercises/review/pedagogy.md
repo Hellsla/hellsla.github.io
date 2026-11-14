@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 49d3bc7f92e37a89
-
-Scope: new task fy7-15-L1-09 (järjestäminen, YO type 9, five situations).
+CONTENT-HASH: 00b8c689c34d85f6
+SCOPE: delta added-exercise from 49d3bc7f92e37a89 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- solutions.md:162 — display line I_E = 500 W/m2 x cos2 45 x cos2 45 measures 306 px at 390 px, just over the 300 px guide — split into two lines (I1 = 500 cos2 45 = 250, then I_E = 250 cos2 45).
-- solutions.md:151 — cos2 values (0,25 / 0,75 / 0,50) are not written out; add them so a weak student can follow.
-- exercises.json — six calculations on Level 1 is heavy; acceptable as a pilot, but consider keeping A-C-D only if the set feels long.
+- fy7-15-L1-10, L1-11 repeat L1-02/L1-03/L1-07 (Malus with given I0) and L1-04/L1-05/L1-08 (Brewster with given n): level 1 now has 11 tasks, 7 of them Malus or Brewster; they are extension content, so keep the added ones only if the lookup and graph reading are the aim.
+- fy7-15-L2-08: 'Lue suoralta, millä kulmalla' - the axis is cos^2 theta, so the student reads cos^2 and then computes theta; write 'Lue suoralta cos²θ ja laske kulma'.
 
 ## Checked
-- Delta: L1-09 solutions.md line 162 now 500 W/m² · (cos² 45°)²; equals cos²45° · cos²45° = 0.25 so I_E = 125 W/m² unchanged; only the layout (345 px) changed.
-- Intensities verified: D 100, E 125, A 150, B 200, C 240 W/m2, all distinct, so order is unambiguous.
-- Wrong approaches change the order: forgetting the half puts B first (400), cos without square gives A = 300, treating E as crossed gives 0.
-- The prompt names quantity and direction ("pienimmästä suurimpaan"); angle conventions per situation are stated.
-- Malus is used already in core task L1-01, so the content is within the set's path.
-- Letters are not in answer order, so the order can't be guessed.
+- L1-10: reading cos^2 35 deg = 0,67, 268 W/m2, with the formula check; tolerance covers 0,65-0,69.
+- L1-11: lookup crown glass 1,520, 56,7 deg; check by Snell.
+- L2-08: background light as the constant term E_t = 15 lx, E_0 = 360 lx, 44 deg; authentic data.
+- Language checked: fi. Hash 00b8c689c34d85f6 at start and end.
