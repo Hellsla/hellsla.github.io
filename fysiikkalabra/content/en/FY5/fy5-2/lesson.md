@@ -408,8 +408,8 @@ where $N_1$ and $N_2$ are the support forces ($\text{N}$) and $r_1$ and $r_2$ th
 
 ### Common centre of mass
 For two bodies of masses $m_1$ and $m_2$, the common centre of mass is at
-```latex
-x_\text{cm} = \frac{m_1 x_1 + m_2 x_2}{m_1 + m_2}
+```kaavat
+centre of mass :: x_\text{cm} = \frac{m_1 x_1 + m_2 x_2}{m_1 + m_2}
 ```
 where $x_1$ and $x_2$ are the positions of the centres of mass of the bodies ($\text{m}$) on the same axis. The formula follows from the moment condition: if the bodies are supported at $x_\text{cm}$, the moments of the weights about the point of support cancel each other. A loaded plank resting on two supports topples when the common centre of mass of the plank and the load moves outside the interval between the supports.
 
