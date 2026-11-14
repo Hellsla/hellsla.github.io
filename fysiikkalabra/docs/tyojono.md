@@ -10,6 +10,8 @@ ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta
 
 ## 3. Kaavat MAFY-muotoon FY5–FY8, FY10 ja FY14
 
+Varattu: FY5 – claude/fy5-mafy-kaavat
+
 FY1–FY4 ja FY9 on tehty (#501, #522, #527, #529). Keskinopeuden tunnus on kaikkialla $v_\text{k}$, ei $v_\text{ka}$
 (opettaja 2026-11-13).
 
