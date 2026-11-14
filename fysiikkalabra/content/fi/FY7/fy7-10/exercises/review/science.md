@@ -1,17 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: 0103d8f31883bc59
-ROUND: 1
+VERDICT: FAIL
+CONTENT-HASH: bbb52739624f488e
 
 ## Blocking
+- solutions.md:239 (L2-09, Sijoitus) — A: "(0,89 − 0,29) : (0,60 − 0,20) = 0,60 : 0,40 = 1,49" is false; 0,60 : 0,40 = 1,50 — fix: read the line to three decimals as answers.py does (0,294 and 0,890: 0,596 : 0,40 = 1,49, α₂ = 22,6°), or keep the two-decimal readings and write k = 1,50, α₂ = 22,5°. Both are in the 3 % tolerance.
 
 ## Polish
 
 ## Checked
-- New task L2-08 (find the error) only (additions only since b032dcb83~1). Checked from the text only; no renders.
-- Recomputed: α₁ = 30,0° (below the critical angle 41,1°, so the ray does leave the glass, as the task says); the right sin α₂ = 1,52 · 0,500 = 0,760, α₂ = 49,46° → 49,5°. The student's swapped sin α₂ = 0,500 : 1,52 = 0,329, 19,2°. Only row 3 is wrong; rows 1, 2 and 4 are right as written.
-- Each option's feedback gives that row's own check. The row 1 and row 2 distractors are the chapter's warned mistakes (always toward the normal; the angle measured from the surface).
-- "Laskussa ei ole virhettä" is last, as docs/exercise-types.md requires.
-- n₁ belongs to the medium the light comes from, as in the lesson's n₁ sin α₁ = n₂ sin α₂. Solution complete, with a real check (both sides 0,760; 49,5° > 30,0°).
-- Inline formulas (row 3's dfrac, "α₁ = 90° − 60,0° = 30,0°") are judged from the text, under 300 px.
-- answers.py: all 19 numeric answers agree with exercises.json.
-- Hash 0103d8f31883bc59 at start and end.
+- Delta: L1-09 and L2-09 added; hash identical at start and end.
+- L1-09: MAFY water 1,333; α₂ = asin(sin 52,0° : 1,333) = 36,24° = answers.py; the toward-normal check is right.
+- fit figure: least-squares line of the drawn data has slope 1,4895 and intercept −0,004, so the line is at 0,294 (0,20) and 0,890 (0,60) as answers.py assumes; acrylic 1,49 right.
+- Physics of L2-09: sin α₁ = (n₂/n₁) sin α₂ gives slope n₂ with n₁ = 1,00; reading from the line, not raw points, follows the guardrail.

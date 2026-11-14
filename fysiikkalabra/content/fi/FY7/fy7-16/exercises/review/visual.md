@@ -1,17 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 17151a3c70a4f503
-Round: 1
+VERDICT: FAIL
+CONTENT-HASH: a26ea5aec23e5d8e
 
 ## Blocking
+- [Major] 16-17 (fy7-16/charger-points) — the task needs the count of darkened lines through the receiver (6 and 4), but at 1280 px and a phone the rings around the conductor are not reliably countable: the 'puhelin' label box covers the coil's centre and the left panel's lines look equally thick, so no student can read the answer — the answer is unreachable from the figure — draw the through-lines clearly heavier, number or end them at the receiver plane, and move the label off the coil.
 
 ## Polish
-
+- [Minor] 16-18 — fine; graph legible.
 
 ## Checked
-- Kuvat 390 px (oma skripti vis_k7q.py, uusi tehtävä palautteineen ja ratkaisuineen auki): doc scrollWidth 390, ei vaakaylivuotoa, ei yli 300 px leveitä KaTeX-ketjuja, ei KaTeX-virheitä. Sivun 1280 px -kaappauksia en avannut; ne ja muu sivu katsottu vain tekstistä ja determinististen tarkistusten perusteella.
-- 16-x (L2-08): 390 px, palaute ja ratkaisu auki: aligned-lohkot ja murtolausekkeet mahtuvat, ei ylivuotoa.
-- Muoto: oikea vaihtoehto ei ole pisin; harhat ovat yksikkövirheet suuruusluokissa (kilometrit, $10^5$, km/s). Vaihtoehdot yhdenmuotoiset. Tekstistä ja renderistä.
-- L3-01..L3-03: kappalejako ok.
+- fy7-16 L2 captures 11-13 (16-17 figure zoomed twice, 16-18 graph, solutions).
+- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 3 · typography 5 · Finnish 5 · accessibility 3

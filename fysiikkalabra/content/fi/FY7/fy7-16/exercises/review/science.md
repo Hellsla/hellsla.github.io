@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 17151a3c70a4f503
-
-Round 1 (exercises): full review; new YO-skill task fy7-16-L2-08 (suuruusluokka), the rest of the set PASS before. Checked from the text only; no renders.
+CONTENT-HASH: a26ea5aec23e5d8e
+SCOPE: delta added-exercise from 17151a3c70a4f503 base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
-- exercises.json:227 (L2-08) — the distractors carry unit errors only, none of this chapter's warned mistakes (dB read as percent, range of the charger, hot glass). Physics is fine; flag for pedagogy whether a chapter-specific distractor is wanted.
-- exercises.json:252 (L2-08, "noin 12 s") — 1000 times the answer, outside docs/exercise-types.md's "factor 10–100". Acceptable; "noin 120 ms" (factor 10, e.g. n forgotten twice) would fit the rule.
-- Carried over: L1-06 aluminium distractor; L3-05 a) overlap.
+- exercises.json:258 (L2-09) — the line-count ratio equals the flux ratio only at the same transmitter current; the task fixes the frequency but not the current — add "lähetinkäämin virta pysyy samana".
 
 ## Checked
-- Hash 17151a3c70a4f503 at start and end.
-- L2-08 physics: v = c : n = 2,04 · 10⁸ m/s, s = 2 · 1,2 · 10⁶ m, t = 11,76 ms → "noin 12 ms"; check 4,9 µs per km · 2400 km = 11,8 ms right. Assumptions (axial ray, no device delays) stated in the task.
-- Distractors recomputed: L as 1200 m → 11,8 µs; 1,2 · 10⁵ m → 1,18 ms; v as 300 000 with L in m → 11,8 s. Each feedback names its error correctly.
-- Form: four options same form "noin 12 …"; correct not identifiable by form. Correct feedback right (11,8 ms).
-- Scope: t = s : v with v = c : n from prerequisite fy7-12; fits an applied chapter.
-- Solution complete, symbolic before substitution, conversion km → m shown; display lines short (text estimate).
-- answers.py output equals exercises.json for all 19 numeric answers.
+- Delta: L2-09 and L2-10 added; hash identical at start and end.
+- charger-points: lines at flux steps ref/6,5 with the coaxial-loop flux; 6 lines cross the receiver at 3 mm and 4 at 6 mm (model ratio 0,669), so e₀' = 4,2 V · 4/6 = 2,8 V = answers.py (model 2,81 V). e₀ = N·2πf·Φ₀ ∝ Φ₀ at fixed N, f right.
+- graph-curve is 0,30 dB/km: half power at 10,03 km (read 10 km); a = 10 dB · lg 2 / 10 km = 0,301 dB/km, 35 km → 10,5 dB → 8,84 % = answers.py (exact curve 8,91 %, inside 5 %); check 0,5^3,5 = 0,088 right.
+- Uniform fibre stated, so A = aL holds; solutions symbolic first.

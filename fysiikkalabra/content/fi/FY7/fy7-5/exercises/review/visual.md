@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fd4eb60f56237477
-Round: 3
+CONTENT-HASH: 0975c2635ee5d202
+SCOPE: delta added-exercise from fd4eb60f56237477 base 8f23aa7ae3bd
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] L1-09 Mallivastaus — the sign-of-e remark for situation E sits inside the ordering paragraph; could follow the Järkevyys (carried over).
+- [Minor] 5-17 (fy7-5/flux-task-2) — the green line runs through the tick label '0,2' because the time labels sit just above the axis at Φ = 0; move the t labels below the axis or to the plot's lower edge (NOTES §3: a line never runs over a label).
 
 ## Checked
-- Rendered fy7-5 L1-09 at 390 px (own script, scratchpad visual-fy7-1-k7q2): task, order widget with wrong order and feedback, Vastaus and full solution open. Document width 390 px, no overflow, no red KaTeX, no formula over 300 px; card 330/364 px.
-- Situation C now an electromagnet with constant current, 8,0 mWb; task, solution line and the "large flux" misconception sentence agree and read fluently. Järkevyys still its own block, unclipped.
-- Text only: Finnish and compound words (sähkömagneetin rautasydämen) read correctly; A 1,2, B 3,0, D 0,60, E 2,0 V recomputed.
+- fy7-5 L2 captures 10-11 (5-17 graph zoomed, solution).
+- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
