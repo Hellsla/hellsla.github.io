@@ -194,14 +194,6 @@ kuten `teacher-figure`: `reviews.py approve-text <id> [--lang]` kirjaa hyväksyt
 Rivi kirjataan vain opettajan nimenomaisesta hyväksynnästä; mikä tahansa muu muutos samassa luvussa katselmoidaan
 normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yksin.
 
-## 9. Esimerkkikokeet FY7 ja FY8 (opettaja 2026-11-13)
-
-Varattu: claude/fy7-koe (FY7)
-
-FY1–FY6:lla on esimerkkikoe (`content/fi/<COURSE>/koe/`), FY7:llä ja FY8:lla ei. `/exam FY7` ja `/exam FY8`
-(`docs/exam-guidelines.md`), kumpikin omana PR:nään ja kolmella katselmoinnilla. FY8:n tehtävät on katselmoitu, joten
-sen koe voi alkaa heti; FY7:n koe kohdan 2 FY7-katselmointien jälkeen, ettei sama kurssi ole kahdessa ketjussa.
-
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 
 Mittaus, päätökset ja rajaukset: `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. Matalalla kannettavalla
