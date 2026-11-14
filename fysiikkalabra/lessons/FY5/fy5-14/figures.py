@@ -328,7 +328,7 @@ REUSE = {
     "pitkittainen": "reveals: sound is a longitudinal pressure wave, compressions λ apart, pressure maxima at compressions",
     "alueet": "reveals: infrasound below 20 Hz, hearing 20 Hz–20 kHz, ultrasound above 20 kHz, with examples",
     "sointi": "reveals: same fundamental, different overtones; a harmonic spectrum at multiples of 220 Hz",
-    "huojunta": "reveals: the sum of two close frequencies swells and fades with the period T_h",
+    "huojunta": "reveals: the sum of two close frequencies swells and fades with the period T_H",
     "doppler": "reveals: wavefronts crowd ahead of a moving source; a moving listener sees the same λ",
     "spektri-tehtava": "safe: an FFT spectrum with peaks at 200…1000 Hz, the strongest at 400 Hz; no fundamental written",
     "huojunta-tehtava": "safe: an envelope of two forks over 0–1,0 s, loud moments every 0,25 s; no frequencies written",
