@@ -244,7 +244,7 @@
         },
         {
           "text": "Avaruus itse laajenee kaikkialla, joten jokaisesta galaksista katsoen kuva on sama eikä keskipistettä ole.",
-          "feedback": "Oikein. Laajeneminen ei tapahdu avaruudessa, vaan avaruus itse laajenee. Kaikki galaksien väliset etäisyydet kasvavat samassa suhteessa. Siksi jokaisesta galaksista katsoen kuva on sama.",
+          "feedback": "Oikein. Laajeneminen ei tapahdu avaruudessa, vaan avaruus itse laajenee. Kaukaisten galaksien väliset etäisyydet kasvavat keskimäärin samassa suhteessa. Siksi jokaisesta galaksista katsoen kuva on sama.",
           "correct": true
         }
       ]

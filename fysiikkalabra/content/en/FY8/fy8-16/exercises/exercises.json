@@ -244,7 +244,7 @@
         },
         {
           "text": "Space itself expands everywhere, so the picture is the same viewed from every galaxy and there is no centre.",
-          "feedback": "Correct: the expansion does not happen in space but space itself expands, and all distances between galaxies grow in the same proportion. That is why the picture is the same viewed from every galaxy.",
+          "feedback": "Correct: the expansion does not happen in space but space itself expands, and the distances between distant galaxies grow on average in the same proportion. That is why the picture is the same viewed from every galaxy.",
           "correct": true
         }
       ]

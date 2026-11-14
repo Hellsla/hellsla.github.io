@@ -21,7 +21,7 @@
 ## fy8-16-L1-03
 **Annettu:** galaksin etäisyys $d = 120\,\text{Mpc}$, Hubblen vakio $H_0 = 70\,\tfrac{\text{km/s}}{\text{Mpc}}$
 **Kysytty:** etääntymisnopeus $v$ kilometreinä sekunnissa
-**Periaate:** Hubblen ja Lemaîtren lain mukaan galaksin etääntymisnopeus on suoraan verrannollinen sen etäisyyteen, koska avaruuden laajeneminen kasvattaa kaikkia etäisyyksiä samassa suhteessa. Galaksin oma liike jätetään huomiotta.
+**Periaate:** Hubblen ja Lemaîtren lain mukaan galaksin etääntymisnopeus on suoraan verrannollinen sen etäisyyteen, koska avaruuden laajeneminen kasvattaa keskimäärin kaukaisten galaksien välisiä etäisyyksiä samassa suhteessa. Galaksin oma liike jätetään huomiotta.
 **Kaava:** $v = H_0\,d$
 **Muunnokset:** Ei tarvita: etäisyys on megaparsekeina, joten megaparsek supistuu ja nopeus saadaan kilometreinä sekunnissa.
 **Sijoitus:** $v = 70\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 120\,\text{Mpc} = 8400\,\text{km/s}$
@@ -162,7 +162,7 @@ b) Suora antaa etäisyydellä $28\,\text{Mpc}$ nopeuden $68{,}45 \cdot 28\,\text
 
 ## fy8-16-L2-07
 **Kysytty:** mikä oppilaan päättelyssä on virheellistä ja mikä korjaus on oikea.
-**Periaate:** Alkuräjähdys ei ollut räjähdys avaruuden tietyssä kohdassa, vaan avaruus itse alkoi laajeta kaikkialla. Laajenemisessa kaikki galaksien väliset etäisyydet kasvavat samassa suhteessa, joten jokaisesta galaksista katsoen muut galaksit loittonevat samalla tavalla: nopeus on verrannollinen etäisyyteen, $v = H_0\,d$. Siksi laajenemisella ei ole keskipistettä eikä reunaa.
+**Periaate:** Alkuräjähdys ei ollut räjähdys avaruuden tietyssä kohdassa, vaan avaruus itse alkoi laajeta kaikkialla. Laajenemisessa kaukaisten galaksien väliset etäisyydet kasvavat keskimäärin samassa suhteessa, joten jokaisesta galaksista katsoen muut galaksit loittonevat samalla tavalla: nopeus on verrannollinen etäisyyteen, $v = H_0\,d$. Siksi laajenemisella ei ole keskipistettä eikä reunaa.
 **Mallivastaus:** Oppilaan havainto on oikein, mutta johtopäätös on väärä: se, että galaksit loittonevat meistä joka suunnassa, ei tee Linnunradasta keskipistettä. Avaruus laajenee kaikkialla, joten jokaisesta galaksista katsoen muut loittonevat samalla tavalla eikä keskipistettä ole. Jos räjähdyksellä olisi paikka, loittoneminen näyttäisi eri galakseista erilaiselta, mutta havainnot eivät tue sitä. Hubblen ja Lemaîtren lain mukaan kaukaiset galaksit loittonevat nopeammin, eivät hitaammin, joten väite hitaammasta loittonemisesta kaukana on virheellinen. Väite väsyvästä valosta on myös väärä, koska galaksien väliset etäisyydet todella kasvavat avaruuden laajetessa.
 
 ## fy8-16-L2-08
