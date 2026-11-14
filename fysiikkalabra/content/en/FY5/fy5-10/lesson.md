@@ -263,8 +263,8 @@ The **wavelength** $\lambda$ is the distance between two successive crests or tw
 </svg>
 
 So the speed of the wave is the wavelength divided by the period. Since the frequency is $f = \tfrac{1}{T}$, we get the **fundamental equation of wave motion**
-```latex
-v = \frac{\lambda}{T} = f\lambda
+```kaavat
+wave equation :: v = \frac{\lambda}{T} = f\lambda
 ```
 where $v$ is the speed of propagation of the wave ($\text{m/s}$), $\lambda$ the wavelength ($\text{m}$), $T$ the period ($\text{s}$) and $f$ the frequency ($\text{Hz}$). The units agree, because $1\,\text{Hz} = 1\,\text{s}^{-1}$, so $1\,\text{Hz} \cdot 1\,\text{m} = 1\,\text{m/s}$. The speed of a pulse can also be measured directly: a pulse travels at a steady speed in the same medium, so $v = \tfrac{s}{t}$, where $s$ is the distance and $t$ the time it takes.
 

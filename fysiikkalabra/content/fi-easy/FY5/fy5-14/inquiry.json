@@ -95,7 +95,7 @@
         {
           "text": "Kuulija, jota kohti kaiutin liikkuu.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: $571\\,\\text{Hz}$ liikkuvan lähteen edessä ja $520\\,\\text{Hz}$ liikkuvalle kuulijalle. Liikkuva lähde lyhentää aallonpituutta edessään ($0{,}595\\,\\text{m}$). Liikkuva kuulija ei muuta aallonpituutta ($0{,}85\\,\\text{m}$). Hän kohtaa rintamat nopeudella $v + v_\\text{h}$."
+          "feedback": "Mallin arvot tukevat tätä: $571\\,\\text{Hz}$ liikkuvan lähteen edessä ja $520\\,\\text{Hz}$ liikkuvalle kuulijalle. Liikkuva lähde lyhentää aallonpituutta edessään ($0{,}595\\,\\text{m}$). Liikkuva kuulija ei muuta aallonpituutta ($0{,}85\\,\\text{m}$). Hän kohtaa rintamat nopeudella $v + v_\\text{H}$."
         },
         {
           "text": "Kuulija, joka itse liikkuu kaiutinta kohti.",
@@ -278,14 +278,14 @@
       "text": "Kaksi äänirautaa soi yhtä aikaa, ja mikrofoni tallentaa niiden yhteisen äänen sekunnin ajan. Huojuntataajuus kertoo, kuinka monta kertaa sekunnissa ääni voimistuu. Värähtely on niin tiheää, että kuvaajassa se näkyy täytettynä alueena. Alueen leveys kertoo, kuinka voimakas ääni on kullakin hetkellä.",
       "question": {
         "type": "numeric",
-        "prompt": "Kuinka suuri on huojuntataajuus $f_\\text{h}$? Lue tarvittava aika kuvaajasta ja anna vastaus hertseinä.",
+        "prompt": "Kuinka suuri on huojuntataajuus $f_\\text{H}$? Lue tarvittava aika kuvaajasta ja anna vastaus hertseinä.",
         "answer": 4.0,
         "unit": "Hz",
         "tolerance": 0.05,
         "hints": [
           "Voimakas hetki on kohta, jossa täytetty alue on leveimmillään. Millä hetkillä niitä on?",
-          "Kahden peräkkäisen voimakkaan hetken väli on huojunnan jaksonaika $T_\\text{h}$, ja $f_\\text{h} = \\tfrac{1}{T_\\text{h}}$.",
-          "Voimakkaat hetket ovat $0\\,\\text{s}$, $0{,}25\\,\\text{s}$, $0{,}50\\,\\text{s}$ … eli $T_\\text{h} = 0{,}25\\,\\text{s}$."
+          "Kahden peräkkäisen voimakkaan hetken väli on huojunnan jaksonaika $T_\\text{H}$, ja $f_\\text{H} = \\tfrac{1}{T_\\text{H}}$.",
+          "Voimakkaat hetket ovat $0\\,\\text{s}$, $0{,}25\\,\\text{s}$, $0{,}50\\,\\text{s}$ … eli $T_\\text{H} = 0{,}25\\,\\text{s}$."
         ],
         "mistakes": [
           {
@@ -294,10 +294,10 @@
           },
           {
             "value": 0.25,
-            "feedback": "$0{,}25\\,\\text{s}$ on huojunnan jaksonaika $T_\\text{h}$. Huojuntataajuus on sen käänteisluku, $f_\\text{h} = \\tfrac{1}{T_\\text{h}}$."
+            "feedback": "$0{,}25\\,\\text{s}$ on huojunnan jaksonaika $T_\\text{H}$. Huojuntataajuus on sen käänteisluku, $f_\\text{H} = \\tfrac{1}{T_\\text{H}}$."
           }
         ],
-        "solution": "**Annettu:** kuvaajasta voimakkaat hetket (täytetty alue leveimmillään) $t = 0$, $0{,}25$, $0{,}50$, $0{,}75$ ja $1{,}00\\,\\text{s}$\n\n**Kysytty:** huojuntataajuus $f_\\text{h}$ hertseinä\n\n**Periaate:** Kaksi lähes samantaajuista ääntä vahvistavat toisiaan, kun ne ovat samassa vaiheessa. Ne heikentävät toisiaan, kun ne ovat vastakkaisissa vaiheissa. Voimakkaiden hetkien väli on huojunnan jaksonaika $T_\\text{h}$. Voimakkaita hetkiä on sekunnissa $f_\\text{h}$.\n\n**Kuvaajan lukeminen:** Täytetty alue on leveimmillään hetkillä $0\\,\\text{s}$, $0{,}25\\,\\text{s}$, $0{,}50\\,\\text{s}$, $0{,}75\\,\\text{s}$ ja $1{,}00\\,\\text{s}$. Sekunnissa on siis neljä väliä. Kahden peräkkäisen voimakkaan hetken väli on $T_\\text{h} = 0{,}25\\,\\text{s}$.\n\n**Kaava:** $f_\\text{h} = \\dfrac{1}{T_\\text{h}}$\n\n**Muunnokset:** Aika on jo sekunteina, joten taajuus tulee hertseinä ($\\tfrac{1}{\\text{s}} = \\text{Hz}$).\n\n**Sijoitus:** $f_\\text{h} = \\dfrac{1}{0{,}25\\,\\text{s}} = 4{,}0\\,\\text{Hz}$\n\n**Vastaus:** $4{,}0\\,\\text{Hz}$. Vastauksessa on kaksi merkitsevää numeroa kuten kuvaajasta luetussa ajassa $0{,}25\\,\\text{s}$.\n\n**Järkevyys:** Kuvaajassa on sekunnissa neljä kapenevaa kohtaa ja neljä väliä voimakkaiden hetkien välillä. Se vastaa neljää huojahdusta sekunnissa. Jos toinen ääniraudoista on $440\\,\\text{Hz}$, toinen on $f_\\text{h} = |f_1 - f_2|$ mukaan joko $436\\,\\text{Hz}$ tai $444\\,\\text{Hz}$. Ero on alle $10\\,\\text{Hz}$, joten huojunta kuuluu selvästi."
+        "solution": "**Annettu:** kuvaajasta voimakkaat hetket (täytetty alue leveimmillään) $t = 0$, $0{,}25$, $0{,}50$, $0{,}75$ ja $1{,}00\\,\\text{s}$\n\n**Kysytty:** huojuntataajuus $f_\\text{H}$ hertseinä\n\n**Periaate:** Kaksi lähes samantaajuista ääntä vahvistavat toisiaan, kun ne ovat samassa vaiheessa. Ne heikentävät toisiaan, kun ne ovat vastakkaisissa vaiheissa. Voimakkaiden hetkien väli on huojunnan jaksonaika $T_\\text{H}$. Voimakkaita hetkiä on sekunnissa $f_\\text{H}$.\n\n**Kuvaajan lukeminen:** Täytetty alue on leveimmillään hetkillä $0\\,\\text{s}$, $0{,}25\\,\\text{s}$, $0{,}50\\,\\text{s}$, $0{,}75\\,\\text{s}$ ja $1{,}00\\,\\text{s}$. Sekunnissa on siis neljä väliä. Kahden peräkkäisen voimakkaan hetken väli on $T_\\text{H} = 0{,}25\\,\\text{s}$.\n\n**Kaava:** $f_\\text{H} = \\dfrac{1}{T_\\text{H}}$\n\n**Muunnokset:** Aika on jo sekunteina, joten taajuus tulee hertseinä ($\\tfrac{1}{\\text{s}} = \\text{Hz}$).\n\n**Sijoitus:** $f_\\text{H} = \\dfrac{1}{0{,}25\\,\\text{s}} = 4{,}0\\,\\text{Hz}$\n\n**Vastaus:** $4{,}0\\,\\text{Hz}$. Vastauksessa on kaksi merkitsevää numeroa kuten kuvaajasta luetussa ajassa $0{,}25\\,\\text{s}$.\n\n**Järkevyys:** Kuvaajassa on sekunnissa neljä kapenevaa kohtaa ja neljä väliä voimakkaiden hetkien välillä. Se vastaa neljää huojahdusta sekunnissa. Jos toinen ääniraudoista on $440\\,\\text{Hz}$, toinen on $f_\\text{H} = |f_1 - f_2|$ mukaan joko $436\\,\\text{Hz}$ tai $444\\,\\text{Hz}$. Ero on alle $10\\,\\text{Hz}$, joten huojunta kuuluu selvästi."
       }
     },
     {
@@ -347,12 +347,12 @@
       "type": "choice",
       "title": "Syventävä: etsi virhe",
       "optional": true,
-      "prompt": "Mopo lähestyy kuulijaa nopeudella $20{,}0\\,\\text{m/s}$, ja sen äänimerkin taajuus on $620\\,\\text{Hz}$. Opiskelija laskee kuullun taajuuden näin:\n\n$$\\begin{aligned} f &= f_0 \\cdot \\frac{v}{v + v_\\text{s}} \\\\ &= 620\\,\\text{Hz} \\cdot \\frac{340\\,\\text{m/s}}{360\\,\\text{m/s}} \\\\ &\\approx 586\\,\\text{Hz} \\end{aligned}$$\n\nMissä on virhe?",
+      "prompt": "Mopo lähestyy kuulijaa nopeudella $20{,}0\\,\\text{m/s}$, ja sen äänimerkin taajuus on $620\\,\\text{Hz}$. Opiskelija laskee kuullun taajuuden näin:\n\n$$\\begin{aligned} f &= f_0 \\cdot \\frac{v}{v + v_\\text{L}} \\\\ &= 620\\,\\text{Hz} \\cdot \\frac{340\\,\\text{m/s}}{360\\,\\text{m/s}} \\\\ &\\approx 586\\,\\text{Hz} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Etumerkki on väärä: lähestyvälle lähteelle nimittäjä on $v - v_\\text{s}$, ja oikea tulos on noin $659\\,\\text{Hz}$.",
+          "text": "Etumerkki on väärä: lähestyvälle lähteelle nimittäjä on $v - v_\\text{L}$, ja oikea tulos on noin $659\\,\\text{Hz}$.",
           "correct": true,
-          "feedback": "Oikein. Lähestyminen nostaa kuultua taajuutta, mutta opiskelijan tulos $586\\,\\text{Hz}$ on pienempi kuin $620\\,\\text{Hz}$. Kun lähde lähestyy, aaltorintamat tihenevät sen edessä ja aallonpituus on $(v - v_\\text{s}) T_0$. Siksi $f = 620\\,\\text{Hz} \\cdot \\tfrac{340}{320} \\approx 659\\,\\text{Hz}$."
+          "feedback": "Oikein. Lähestyminen nostaa kuultua taajuutta, mutta opiskelijan tulos $586\\,\\text{Hz}$ on pienempi kuin $620\\,\\text{Hz}$. Kun lähde lähestyy, aaltorintamat tihenevät sen edessä ja aallonpituus on $(v - v_\\text{L}) T_0$. Siksi $f = 620\\,\\text{Hz} \\cdot \\tfrac{340}{320} \\approx 659\\,\\text{Hz}$."
         },
         {
           "text": "Kaava on väärä: kun mopo liikkuu, pitää käyttää kuulijan kaavaa, koska kuulija on se, joka mittaa.",
@@ -380,24 +380,24 @@
       "tolerance": 0.01,
       "hints": [
         "Missä kohdassa ympyrää summeri liikkuu suoraan kuulijaa kohti? Kuinka suuri on silloin sen nopeus?",
-        "Tasaisessa ympyräliikkeessä ratanopeus on $v_\\text{s} = \\tfrac{2\\pi r}{T}$ (luku *Ympyrärata: jaksonaika ja ratanopeus*). Suurin taajuus kuuluu, kun summeri lähestyy kuulijaa tällä nopeudella.",
-        "$v_\\text{s} = \\tfrac{2\\pi \\cdot 1{,}00\\,\\text{m}}{0{,}500\\,\\text{s}} = 12{,}57\\,\\text{m/s}$ ja $f = f_0 \\cdot \\tfrac{v}{v - v_\\text{s}}$."
+        "Tasaisessa ympyräliikkeessä ratanopeus on $v_\\text{L} = \\tfrac{2\\pi r}{T}$ (luku *Ympyrärata: jaksonaika ja ratanopeus*). Suurin taajuus kuuluu, kun summeri lähestyy kuulijaa tällä nopeudella.",
+        "$v_\\text{L} = \\tfrac{2\\pi \\cdot 1{,}00\\,\\text{m}}{0{,}500\\,\\text{s}} = 12{,}57\\,\\text{m/s}$ ja $f = f_0 \\cdot \\tfrac{v}{v - v_\\text{L}}$."
       ],
       "mistakes": [
         {
           "value": 1929,
-          "feedback": "Tämä on *pienin* kuultu taajuus. Se kuuluu, kun summeri loittonee kuulijasta. Lähestyvälle lähteelle nimittäjä on $v - v_\\text{s}$."
+          "feedback": "Tämä on *pienin* kuultu taajuus. Se kuuluu, kun summeri loittonee kuulijasta. Lähestyvälle lähteelle nimittäjä on $v - v_\\text{L}$."
         },
         {
           "value": 2012,
-          "feedback": "Käytit nopeutena $\\tfrac{r}{T}$. Kierroksen pituus on ympyrän kehä $2\\pi r$, joten ratanopeus on $v_\\text{s} = \\tfrac{2\\pi r}{T} = 12{,}57\\,\\text{m/s}$."
+          "feedback": "Käytit nopeutena $\\tfrac{r}{T}$. Kierroksen pituus on ympyrän kehä $2\\pi r$, joten ratanopeus on $v_\\text{L} = \\tfrac{2\\pi r}{T} = 12{,}57\\,\\text{m/s}$."
         },
         {
           "value": 2000,
           "feedback": "$2000\\,\\text{Hz}$ on summerin oma taajuus. Kuulija kuulee sen vain silloin, kun summeri liikkuu poikittain eli ei kohti kuulijaa eikä hänestä poispäin. Kun summeri liikkuu suoraan kuulijaa kohti, taajuus on suurempi."
         }
       ],
-      "solution": "**Annettu:** ympyrän säde $r = 1{,}00\\,\\text{m}$, kierrosaika $T = 0{,}500\\,\\text{s}$, summerin taajuus $f_0 = 2{,}00\\,\\text{kHz}$, äänen nopeus $v = 340\\,\\text{m/s}$\n\n**Kysytty:** suurin kuultu taajuus $f$ hertseinä\n\n**Periaate:** Summeri liikkuu ympyrää tasaisella ratanopeudella. Kaukana oleva kuulija on ympyrän tasossa. Kuultuun taajuuteen vaikuttaa vain se osa nopeudesta, joka osoittaa kohti kuulijaa tai hänestä poispäin. Suurin taajuus kuuluu, kun summeri liikkuu suoraan kuulijaa kohti koko ratanopeudellaan. Kuulija on paikallaan, joten käytetään liikkuvan lähteen kaavaa lähestymisen merkillä.\n\n**Kaava:** $v_\\text{s} = \\dfrac{2\\pi r}{T}$ ja $f = f_0 \\cdot \\dfrac{v}{v - v_\\text{s}}$, joten $f = f_0 \\cdot \\dfrac{v}{v - \\tfrac{2\\pi r}{T}}$\n\n**Muunnokset:** $f_0 = 2{,}00\\,\\text{kHz} = 2000\\,\\text{Hz}$. Muut suureet ovat perusyksiköissä.\n\n**Sijoitus:** $v_\\text{s} = \\dfrac{2\\pi \\cdot 1{,}00\\,\\text{m}}{0{,}500\\,\\text{s}} = 12{,}566\\,\\text{m/s}$ ja $f = 2000\\,\\text{Hz} \\cdot \\dfrac{340\\,\\text{m/s}}{340\\,\\text{m/s} - 12{,}566\\,\\text{m/s}} = 2076{,}8\\,\\text{Hz}$\n\n**Vastaus:** $2{,}08\\,\\text{kHz}$ eli noin $2080\\,\\text{Hz}$. Vastauksessa on kolme merkitsevää numeroa kuten säteessä, kierrosajassa ja taajuudessa.\n\n**Järkevyys:** Summerin nopeus on noin $\\tfrac{12{,}6}{340} \\approx 3{,}7\\,\\%$ äänen nopeudesta. Taajuus nousee siis noin $3{,}7\\,\\%$ eli noin $75\\,\\text{Hz}$. Loitotessa taajuus on vastaavasti noin $1929\\,\\text{Hz}$. Kuulija kuulee äänen huojuvan noin $1930\\,\\text{Hz}$:n ja $2080\\,\\text{Hz}$:n välillä kaksi kertaa sekunnissa."
+      "solution": "**Annettu:** ympyrän säde $r = 1{,}00\\,\\text{m}$, kierrosaika $T = 0{,}500\\,\\text{s}$, summerin taajuus $f_0 = 2{,}00\\,\\text{kHz}$, äänen nopeus $v = 340\\,\\text{m/s}$\n\n**Kysytty:** suurin kuultu taajuus $f$ hertseinä\n\n**Periaate:** Summeri liikkuu ympyrää tasaisella ratanopeudella. Kaukana oleva kuulija on ympyrän tasossa. Kuultuun taajuuteen vaikuttaa vain se osa nopeudesta, joka osoittaa kohti kuulijaa tai hänestä poispäin. Suurin taajuus kuuluu, kun summeri liikkuu suoraan kuulijaa kohti koko ratanopeudellaan. Kuulija on paikallaan, joten käytetään liikkuvan lähteen kaavaa lähestymisen merkillä.\n\n**Kaava:** $v_\\text{L} = \\dfrac{2\\pi r}{T}$ ja $f = f_0 \\cdot \\dfrac{v}{v - v_\\text{L}}$, joten $f = f_0 \\cdot \\dfrac{v}{v - \\tfrac{2\\pi r}{T}}$\n\n**Muunnokset:** $f_0 = 2{,}00\\,\\text{kHz} = 2000\\,\\text{Hz}$. Muut suureet ovat perusyksiköissä.\n\n**Sijoitus:** $v_\\text{L} = \\dfrac{2\\pi \\cdot 1{,}00\\,\\text{m}}{0{,}500\\,\\text{s}} = 12{,}566\\,\\text{m/s}$ ja $f = 2000\\,\\text{Hz} \\cdot \\dfrac{340\\,\\text{m/s}}{340\\,\\text{m/s} - 12{,}566\\,\\text{m/s}} = 2076{,}8\\,\\text{Hz}$\n\n**Vastaus:** $2{,}08\\,\\text{kHz}$ eli noin $2080\\,\\text{Hz}$. Vastauksessa on kolme merkitsevää numeroa kuten säteessä, kierrosajassa ja taajuudessa.\n\n**Järkevyys:** Summerin nopeus on noin $\\tfrac{12{,}6}{340} \\approx 3{,}7\\,\\%$ äänen nopeudesta. Taajuus nousee siis noin $3{,}7\\,\\%$ eli noin $75\\,\\text{Hz}$. Loitotessa taajuus on vastaavasti noin $1929\\,\\text{Hz}$. Kuulija kuulee äänen huojuvan noin $1930\\,\\text{Hz}$:n ja $2080\\,\\text{Hz}$:n välillä kaksi kertaa sekunnissa."
     },
     {
       "id": "harjoitukset",
@@ -415,7 +415,7 @@
         {
           "text": "Pyöräilijä kohtaa aaltorintamia useammin, koska hän kulkee niitä vastaan, vaikka aallonpituus ei muutu.",
           "correct": true,
-          "feedback": "Oikein. Kun lähde on paikallaan, aaltorintamien väli on kaikkialla sama, $\\lambda = \\tfrac{v}{f_0}$. Pyöräilijään nähden rintamat lähestyvät nopeudella $v + v_\\text{h}$. Ne saapuvat siksi useammin: $f = f_0 \\cdot \\tfrac{v + v_\\text{h}}{v}$."
+          "feedback": "Oikein. Kun lähde on paikallaan, aaltorintamien väli on kaikkialla sama, $\\lambda = \\tfrac{v}{f_0}$. Pyöräilijään nähden rintamat lähestyvät nopeudella $v + v_\\text{H}$. Ne saapuvat siksi useammin: $f = f_0 \\cdot \\tfrac{v + v_\\text{H}}{v}$."
         },
         {
           "text": "Pyöräilijän edessä aallonpituus on lyhyempi, koska hänen liikkeensä puristaa aaltorintamia tiheämmäksi.",
@@ -423,7 +423,7 @@
         },
         {
           "text": "Äänen nopeus kasvaa, kun pyöräilijä ajaa sitä kohti, ja nopeampi ääni kuulostaa korkeammalta.",
-          "feedback": "Ääni etenee ilman suhteen nopeudella $v$. Pyöräilijän *suhteen* rintamat lähestyvät nopeudella $v + v_\\text{h}$, ja siksi hän kohtaa niitä useammin. Korkeus riippuu taajuudesta eli siitä, kuinka usein rintamat saapuvat korvaan. Se ei riipu äänen nopeudesta sinänsä."
+          "feedback": "Ääni etenee ilman suhteen nopeudella $v$. Pyöräilijän *suhteen* rintamat lähestyvät nopeudella $v + v_\\text{H}$, ja siksi hän kohtaa niitä useammin. Korkeus riippuu taajuudesta eli siitä, kuinka usein rintamat saapuvat korvaan. Se ei riipu äänen nopeudesta sinänsä."
         },
         {
           "text": "Kello värähtelee nopeammin, koska pyöräilijä lähestyy sitä.",

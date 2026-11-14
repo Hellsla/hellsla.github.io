@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c81dea66749f7d66
-SCOPE: delta added-exercise from dd7e8e614e3791d3 base 81db4a6fd727
+CONTENT-HASH: d1d0256fc1beb06a
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- fy5-15-L2-09: the task does not say which marked point to use; the solution picks 2.0 m. Either works, so add "use any marked point" or keep as a deliberate open choice.
-- fy5-15-L1-09: the Principle explains lg inversely in one sentence; a first-time reader may need "10^y undoes lg" with the 70 dB check (already in Reasonableness, move earlier if space).
+1. L2-05, L2-06, L2-07 and L3-04 — four data tasks in 23; good variety, but L2-07 (phone vs calibrated meter) needs its table's unit in the question.
+2. L1-02 solution: Kaava and Sijoitus differ in form (10 lg(...) dB versus 10 dB · lg); one clause would join them.
 
 ## Checked
-- L1-09: figure needed for L = 74.0 dB at 4 m; description lists the points, no intensity or power; I = 2.51e-5 W/m^2 verified; level 1 fits (inverse of the level formula).
-- L2-09: two steps (intensity from level, then P = 4 pi r^2 I); 5.03 mW verified; the second point as consistency check is good practice.
-- Both use the one graph; different questions; no repeat of L1-04 or L2-01 (there data are given in the text, here they are read).
-- Solutions staged, units and mW conversion explicit.
+Read exercises.json (all 23 tasks; levels 9/9/5, concept, data, error, model, figure kinds) and solutions.md (L1-02, L1-05, L2-03 in full, others by structure); levels progress from one formula to modelling (hyttynen, concert); no task repeats the concert example; fi, fi-easy and en have identical ids, kinds and answers (checked by script).

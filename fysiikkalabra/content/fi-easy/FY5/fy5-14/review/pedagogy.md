@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fdb52cc8dedcff71
+CONTENT-HASH: f1c2e6bb3424337d
 
 ## Blocking
+None.
 
 ## Polish
+1. lesson.md 'Lisätiedoksi: Dopplerin ilmiön laskukaavat' — the four formulas are headed as optional, yet the example and exercises L1-04, L2-03..05, L3-01 need them; say 'tarvitset näitä tehtävissä' or drop the 'Lisätiedoksi' label.
+2. inquiry.json Ennusta 1 and 2 — the correct options carry the reasoning ('pysyy samana', 'kasvaa suurempana') the wrong ones lack, so a student can pick by style; give each option an equally argued clause.
+3. Workload: speed of sound, pitch, timbre, FFT, beats and Doppler in one lesson (22 activities); mark more of them optional.
+4. fi 'pois päin' in the formula names: standard is 'poispäin' (MAFY wording permitting).
+5. The sim computes the wavefront geometry, so its numbers emerge; good. The v_L label in the first Doppler figure touches a wavefront; move it right.
 
 ## Checked
-- light delta review, round 1: the worked example's Doppler lines (lesson.md 590 and 593) now write m/s as a stacked fraction (\tfrac) inside the big fraction; the numbers, symbols and steps are unchanged.
-- The change is notation only: it is more legible than a slash inside a fraction and matches the unit style on lines 582 and 607. No effect on staging, the answer or the Finnish.
+Read whole lesson.md (fi; fi-easy and en by structure, the Doppler section, subscript note), inquiry.json activities and feedback, exit ticket; captures: sim 390 px, experiment 1 at 390 px, theory 1280 px (Doppler figure, first figure). The four formulas, signs, sentences 'which applies' and the train example (seven stages, symbols first) read well for a 17-year-old; misconception repairs name the evidence; fi-easy uses shorter sentences with the same steps; en explains the H/L subscripts.
+Packet was a delta with an empty diff; reviewed in full anyway.

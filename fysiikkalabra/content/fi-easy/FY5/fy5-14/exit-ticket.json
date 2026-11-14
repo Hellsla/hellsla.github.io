@@ -1,7 +1,7 @@
 [
   {
     "q": "Kaksi huilua soittaa yhtä aikaa ääniä, joiden taajuudet ovat $440\\,\\text{Hz}$ ja $437\\,\\text{Hz}$. Mitä kuulija kuulee?",
-    "a": "Yhden äänen, jonka korkeus vastaa taajuutta noin $438{,}5\\,\\text{Hz}$ ja jonka voimakkuus huojuu. Huojuntataajuus on $f_\\text{h} = |440\\,\\text{Hz} - 437\\,\\text{Hz}| = 3\\,\\text{Hz}$ eli kolme voimakasta hetkeä sekunnissa."
+    "a": "Yhden äänen, jonka korkeus vastaa taajuutta noin $438{,}5\\,\\text{Hz}$ ja jonka voimakkuus huojuu. Huojuntataajuus on $f_\\text{H} = |440\\,\\text{Hz} - 437\\,\\text{Hz}| = 3\\,\\text{Hz}$ eli kolme voimakasta hetkeä sekunnissa."
   },
   {
     "q": "Sama kaikumittaus tehdään kesähelteellä ja talvipakkasella. Kummalla kerralla kaiku palaa nopeammin, ja miksi?",

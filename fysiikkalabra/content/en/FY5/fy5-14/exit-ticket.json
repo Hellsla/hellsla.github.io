@@ -1,7 +1,7 @@
 [
   {
     "q": "Two flutes play at the same time notes with the frequencies $440\\,\\text{Hz}$ and $437\\,\\text{Hz}$. What does a listener hear?",
-    "a": "One sound whose pitch corresponds to a frequency of about $438.5\\,\\text{Hz}$ and whose loudness waxes and wanes: $f_\\text{h} = |440\\,\\text{Hz} - 437\\,\\text{Hz}| = 3\\,\\text{Hz}$, that is, three loud moments per second."
+    "a": "One sound whose pitch corresponds to a frequency of about $438.5\\,\\text{Hz}$ and whose loudness waxes and wanes: $f_\\text{H} = |440\\,\\text{Hz} - 437\\,\\text{Hz}| = 3\\,\\text{Hz}$, that is, three loud moments per second."
   },
   {
     "q": "The same echo measurement is made on a hot summer day and in a winter frost. On which occasion does the echo return sooner, and why?",

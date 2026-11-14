@@ -115,7 +115,7 @@
       "text": "Siirrä desibelimittaria ja lisää kaiuttimia. Katso, miten intensiteetti ja intensiteettitaso muuttuvat.",
       "howto": "Säädä yhden kaiuttimen äänitehoa $P$, kaiuttimien määrää ja mittarin etäisyyttä $r$ kaiuttimista. Mittarin yläpuolella on sen lukema eli intensiteettitaso $L$. Lukemissa näkyvät myös kokonaisteho, pallon pinta-ala $4\\pi r^2$ ja intensiteetti $I$. Kuvaaja näyttää tason etäisyyden funktiona nykyisillä kaiuttimilla. Rengas näyttää mittarin paikan. Kaarten kirkkaus kuvaa tasoa. *Nopeus* muuttaa vain kaarten liikkeen vauhtia, ei lukemia.",
       "model": "Kaiuttimet ovat samassa paikassa. Ne säteilevät tasaisesti joka suuntaan kuin yksi pistemäinen lähde. Ääni ei heijastu maasta eikä mistään muualta. Ilma ei myöskään vaimenna ääntä. Siksi koko teho kulkee jokaisen pallopinnan läpi. Kaiuttimet soittavat toisistaan riippumattomia ääniä, joten niiden tehot lasketaan yhteen. Ajatellaan kahta kaiutinta eri paikoissa. Jos ne toistaisivat samaa sävelaaltoa, aallot interferoisivat. Silloin taso vaihtelisi paikasta toiseen. Lukemat ovat mallin laskemia arvoja, eivät mittauksia. Kaarten liike on vain havainnollistus. Se ei ole äänen todellinen nopeus.",
-      "calc": "Kokonaisteho on $P_\\text{kok} = N P$, missä $N$ on kaiuttimien määrä. Intensiteetti etäisyydellä $r$ on\n\n$$I = \\frac{P_\\text{kok}}{4\\pi r^2}$$\n\nIntensiteettitaso on $L = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I}{I_0}$, missä $I_0 = 1{,}0 \\cdot 10^{-12}\\,\\text{W/m}^2$. Kokeiden taulukoissa intensiteetti on yksikössä $\\text{mW/m}^2$. Siinä $1\\,\\text{mW/m}^2 = 10^{-3}\\,\\text{W/m}^2$. Kuvaajan pystyakseli alkaa tasosta $40\\,\\text{dB}$."
+      "calc": "Kokonaisteho on $P_\\text{kok} = N P$, missä $N$ on kaiuttimien määrä. Intensiteetti etäisyydellä $r$ on\n\n$$I = \\frac{P_\\text{kok}}{4\\pi r^2}$$\n\nIntensiteettitaso on $L = 10\\lg\\left(\\tfrac{I}{I_0}\\right)\\,\\text{dB}$, missä $I_0 = 1{,}0 \\cdot 10^{-12}\\,\\text{W/m}^2$. Kokeiden taulukoissa intensiteetti on yksikössä $\\text{mW/m}^2$. Siinä $1\\,\\text{mW/m}^2 = 10^{-3}\\,\\text{W/m}^2$. Kuvaajan pystyakseli alkaa tasosta $40\\,\\text{dB}$."
     },
     {
       "id": "koe-1",
@@ -240,7 +240,7 @@
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
       "optional": true,
-      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja yhtälöön $L = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I}{I_0}$. Palaa sitten alun kysymykseen: Miksi konsertin ääni kuuluu vielä rinteelle asti, vaikka intensiteetti on siellä vain pieni osa lavan edustan intensiteetistä?",
+      "prompt": "Vertaa ennusteitasi kokeiden mallin arvoihin ja yhtälöön $L = 10\\lg\\left(\\tfrac{I}{I_0}\\right)\\,\\text{dB}$. Palaa sitten alun kysymykseen: Miksi konsertin ääni kuuluu vielä rinteelle asti, vaikka intensiteetti on siellä vain pieni osa lavan edustan intensiteetistä?",
       "predictions": [
         "ennuste-1",
         "ennuste-2"
@@ -269,7 +269,7 @@
         },
         {
           "text": "Jako $10\\,\\text{dB}$:llä on väärin. Oikea tulos on $\\lg \\tfrac{I}{I_0} = 650$.",
-          "feedback": "Jako on oikein: $L = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I}{I_0}$, joten $\\lg \\tfrac{I}{I_0} = \\tfrac{L}{10\\,\\text{dB}} = 6{,}5$. Virhe on seuraavalla rivillä. Siinä logaritmi pitäisi purkaa potenssiksi $10^{6{,}5}$."
+          "feedback": "Jako on oikein: $L = 10\\lg\\left(\\tfrac{I}{I_0}\\right)\\,\\text{dB}$, joten $\\lg \\tfrac{I}{I_0} = \\tfrac{L}{10\\,\\text{dB}} = 6{,}5$. Virhe on seuraavalla rivillä. Siinä logaritmi pitäisi purkaa potenssiksi $10^{6{,}5}$."
         },
         {
           "text": "Kuulokynnys on väärä. Sen pitäisi olla $0\\,\\text{W/m}^2$, koska kuulokynnyksen taso on $0\\,\\text{dB}$.",

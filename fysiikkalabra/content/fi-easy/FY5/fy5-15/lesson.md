@@ -274,8 +274,8 @@ Mittarin mikrofoni ei mittaa intensiteettiä. Se mittaa äänenpainetta eli ilma
 
 ### Intensiteetti
 Äänen intensiteetti on
-```latex
-I = \frac{P}{A}
+```kaavat
+intensiteetti :: I = \frac{P}{A}
 ```
 missä $I$ on intensiteetti ($\text{W/m}^2$), $P$ pinnan läpi kulkeva ääniteho ($\text{W}$) ja $A$ pinnan pinta-ala ($\text{m}^2$). Pistemäinen lähde säteilee tasaisesti joka suuntaan, eikä ääni heijastu. Silloin $A$ on pallon pinta-ala $4\pi r^2$:
 ```latex
@@ -285,8 +285,8 @@ missä $P$ on lähteen ääniteho ($\text{W}$) ja $r$ etäisyys lähteestä ($\t
 
 ### Intensiteettitaso
 Intensiteettitaso desibeleinä on
-```latex
-L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}
+```kaavat
+äänen intensiteettitaso :: L = 10\lg\left(\frac{I}{I_0}\right)\,\text{dB}
 ```
 missä $L$ on intensiteettitaso ($\text{dB}$), $I$ intensiteetti ja $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$ sovittu vertailuintensiteetti. Se on suunnilleen kuulokynnyksen suuruinen. Merkintä $\lg$ on kymmenkantainen logaritmi. Luku $\lg x$ kertoo, mihin potenssiin luku $10$ pitää korottaa, jotta saadaan $x$. Esimerkiksi $\lg 1000 = 3$, koska $10^3 = 1000$. Lisäksi $\lg 1 = 0$, joten $I = I_0$ antaa tason $0\,\text{dB}$.
 
@@ -482,6 +482,6 @@ Toinen virhe on ajatella, että kaksinkertainen desibelilukema tarkoittaa kaksin
 - Intensiteetti on teho pinta-alaa kohti: $I = \tfrac{P}{A}$, yksikkö $\text{W/m}^2$. Pistemäiselle lähteelle ilman heijastuksia $I = \tfrac{P}{4\pi r^2}$. Kaksinkertainen etäisyys antaa neljäsosan intensiteetistä.
 - Vertailuintensiteetti $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$ on suunnilleen kuulokynnys eli heikoin kuultava ääni. Kipukynnys on noin $1\,\text{W/m}^2$. Kynnykset ovat sovittuja likiarvoja. Ne vaihtelevat ihmisen ja taajuuden mukaan.
 - Melumittari mittaa äänenpainetasoa (usein A-painotettuna, $\text{dB(A)}$). Kun ääni etenee vapaasti, painottamaton äänenpainetaso on lukuarvoltaan suunnilleen sama kuin intensiteettitaso. Kaikuvassa huoneessa se voi olla erilainen.
-- Intensiteettitaso on $L = 10\,\text{dB} \cdot \lg \tfrac{I}{I_0}$. Kaksinkertainen intensiteetti lisää tasoa noin $3\,\text{dB}$ ja kymmenkertainen $10\,\text{dB}$.
+- Intensiteettitaso on $L = 10\lg\left(\tfrac{I}{I_0}\right)\,\text{dB}$. Kaksinkertainen intensiteetti lisää tasoa noin $3\,\text{dB}$ ja kymmenkertainen $10\,\text{dB}$.
 - Intensiteetti tasosta: $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$.
 - Riippumattomien lähteiden intensiteetit lasketaan yhteen. Desibelejä ei lasketa yhteen.

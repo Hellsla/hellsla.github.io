@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: fdb52cc8dedcff71
+CONTENT-HASH: f1c2e6bb3424337d
 
 ## Blocking
+None.
 
 ## Polish
+1. glossary.json (outside the lesson hash, not shown on the page): "huojunta" still says f_h and "Doppler-ilmiö" v_s, v_h and "∓/±"; update to f_H, v_L, v_H and the four cases so any later use matches the lesson.
+2. inquiry.json siirto, Järkevyys: "kuulee äänen huojuvan … kaksi kertaa sekunnissa" uses the word of beats for a pitch wobble; write "korkeuden vaihtelevan".
+3. lesson-answers.py docstring still names v_s, v_h, f_h (code comment only).
 
 ## Checked
-- Delta review, round 1: lesson.md worked example (Sijoitus, about lines 588–596). The only change is how the unit is typeset: m/s is now written as `\tfrac{\text{m}}{\text{s}}` in the two substitution rows. No number, symbol or formula changed.
-- Units: m/s over m/s cancels in v/(v ∓ v_s), so both rows still give hertz. The new form matches the m/s fraction already used in the Yksikkömuunnokset step.
-- Recomputed: f1 = 311·340/310 = 341,10 Hz; f2 = 311·340/370 = 285,78 Hz; Δf = 55,31 Hz (the lesson shows 55,32 because it subtracts the rounded values; it rounds to 55 Hz either way). Results 341 Hz, 286 Hz and about 55 Hz are unchanged and still correct.
-- Hash (`--lang fi-easy`) was fdb52cc8dedcff71 at the start and at the end.
+Full review (lesson.md, inquiry.json, exit-ticket.json, figures.py, sim-spec.md, sim.js with lang sims.fy5-14). The four Doppler formulas equal MAFY's, each with the right sign and the sentence saying when it applies; conditions stated (air at rest, motion along the line, only one moves, v_L < v). v_L, v_H, f_H, T_H defined where first used and the same in text, figures (v̄_L, v̄_H, T_H, aria text "T H"), sim labels and summary. Beat physics, harmonic series, octave, 17 m-1,7 cm, FFT resolution 10 Hz and Nyquist correct. Recomputed in my own script: worked example 341,10 / 285,78 / 55,32 Hz (+30, -25 Hz), predictions 444/440, 571/520 Hz, lambda 0,765/0,595/0,85 m, error item 586 to 659 Hz, buzzer 2077 (min 1929, r/T mistake 2012) Hz, check 2: 342,9 m/s (mistakes 0,343, 686), beats graph 4,0 Hz (mistakes 2,0, 0,25), exit 3 Hz / 438,5 Hz; all match lesson-answers.py. Sim: arrival-time geometry and spacing (v -/+ u)T0 derived by hand, correct for both cases; simState gives fA, fB, lamA at the experiments' values; tila and f0 locked, u varied; limits in Mallin oletukset. Each prediction has one correct option and its distractor feedback is right. Compared with fi: every number, correct option, tolerance, unit and experiment setup is identical (scripted comparison); the shorter sentences keep each causal step.

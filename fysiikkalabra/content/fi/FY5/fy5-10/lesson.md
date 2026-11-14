@@ -263,8 +263,8 @@ Aallot jaetaan kahteen lajiin sen mukaan, mihin suuntaan väliaineen hiukkaset v
 </svg>
 
 Aallon nopeus on siis aallonpituus jaettuna jaksonajalla. Koska taajuus on $f = \tfrac{1}{T}$, saadaan **aaltoliikkeen perusyhtälö**
-```latex
-v = \frac{\lambda}{T} = f\lambda
+```kaavat
+aaltoliikkeen perusyhtälö :: v = \frac{\lambda}{T} = f\lambda
 ```
 missä $v$ on aallon etenemisnopeus ($\text{m/s}$), $\lambda$ aallonpituus ($\text{m}$), $T$ jaksonaika ($\text{s}$) ja $f$ taajuus ($\text{Hz}$). Yksiköt sopivat yhteen, koska $1\,\text{Hz} = 1\,\text{s}^{-1}$, joten $1\,\text{Hz} \cdot 1\,\text{m} = 1\,\text{m/s}$. Pulssin nopeuden voi mitata myös suoraan: pulssi etenee samassa väliaineessa tasaisella nopeudella, joten $v = \tfrac{s}{t}$, missä $s$ on matka ja $t$ siihen kulunut aika.
 

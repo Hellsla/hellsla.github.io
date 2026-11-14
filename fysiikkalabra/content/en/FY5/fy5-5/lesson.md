@@ -197,8 +197,8 @@ The difference is in the accelerations. By Newton's second law the acceleration 
 ## Formula: Newton's law of gravitation
 The gravitational force between two bodies is greater the greater the masses of the bodies, and smaller the farther apart they are. Newton's law of gravitation says that the force is directly proportional to each mass and inversely proportional to the square of the distance (an inverse-square law):
 
-```latex
-F = \gamma \frac{m_1 m_2}{r^2}
+```kaavat
+Newton's law of gravitation :: F = \gamma \frac{m_1 m_2}{r^2}
 ```
 
 where $F$ is the magnitude of the gravitational force acting on each body (N), $m_1$ and $m_2$ are the masses of the bodies (kg), $r$ is the distance between the centres of the bodies (m) and $\gamma$ is the gravitational constant, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$. (Many English books write the gravitational constant as *G*; in this book *G* is the weight of a body, so the constant is written *γ*.) The force acts on each body towards the other body. In 1798 Henry Cavendish determined the mean density of the Earth by measuring the weak gravitational interaction between lead spheres. The value of the gravitational constant can be derived from his result.
