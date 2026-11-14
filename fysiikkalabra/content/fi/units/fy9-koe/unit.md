@@ -2,7 +2,7 @@
 
 > **Miksi** kaksi vastausta, joissa on sama lopputulos, voi saada aivan eri pisteet?
 
-<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: koepöytä ylhäältä vinosti nähtynä. Pöydällä on kannettava tietokone, jonka näytöllä on kuvaaja: mittauspisteet ja niihin sovitettu nouseva suora. Tietokoneen vieressä ovat laskin, ruutuvihko, jossa on lyijykynällä piirretty kappale ja nuolia, lyijykynä ja vesipullo. Seinällä on kello. Kuvassa ei ole tekstiä." class="fig-hero" style="max-width:100%;font-size:24px">
+<svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: koepöytä ylhäältä vinosti nähtynä. Pöydällä on kannettava tietokone, jonka näytöllä on kuvaaja: mittauspisteet ja niihin sovitettu nouseva suora. Tietokoneen vieressä ovat ruutuvihko, jossa on lyijykynällä piirretty kappale ja nuolia, lyijykynä ja vesipullo. Seinällä on kello. Kuvassa ei ole tekstiä." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy9koe-h-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#e3dccb"/></linearGradient><linearGradient id="fy9koe-h-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9b26a"/><stop offset="1" stop-color="#c79a52"/></linearGradient><linearGradient id="fy9koe-h-bottle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
   <rect x="0" y="0" width="1200" height="600" fill="#f6f1e6"/>
   <rect x="0" y="0" width="1200" height="330" fill="url(#fy9koe-h-wall)"/>
@@ -79,20 +79,6 @@
   <path d="M318,452 L352,410 L362,418 L328,460 Z" fill="#ffc078" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <path d="M318,452 L328,460 L312,470 Z" fill="#f1dfb5" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <path d="M352,410 L362,418 L368,410 L358,402 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <path d="M930,440 L1060,424 L1082,566 L952,582 Z" fill="#1f2933" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M948,452 L1046,440 L1052,478 L954,490 Z" fill="#b2f2bb" stroke-linejoin="round"/>
-  <rect x="958" y="502" width="17" height="14" rx="3" fill="#c4ccd4"/>
-  <rect x="982" y="499" width="17" height="14" rx="3" fill="#c4ccd4"/>
-  <rect x="1006" y="496" width="17" height="14" rx="3" fill="#c4ccd4"/>
-  <rect x="1030" y="493" width="17" height="14" rx="3" fill="#e8590c"/>
-  <rect x="961" y="524" width="17" height="14" rx="3" fill="#c4ccd4"/>
-  <rect x="985" y="521" width="17" height="14" rx="3" fill="#c4ccd4"/>
-  <rect x="1009" y="518" width="17" height="14" rx="3" fill="#c4ccd4"/>
-  <rect x="1033" y="515" width="17" height="14" rx="3" fill="#e8590c"/>
-  <rect x="964.5" y="546" width="17" height="14" rx="3" fill="#c4ccd4"/>
-  <rect x="988.5" y="543" width="17" height="14" rx="3" fill="#c4ccd4"/>
-  <rect x="1012.5" y="540" width="17" height="14" rx="3" fill="#c4ccd4"/>
-  <rect x="1036.5" y="537" width="17" height="14" rx="3" fill="#e8590c"/>
   <rect x="1118" y="330" width="46" height="200" rx="12" fill="url(#fy9koe-h-bottle)" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="1126" y="300" width="30" height="32" rx="5" fill="#1971c2" stroke="#1f2933" stroke-width="2.5"/>
   <line x1="1126" y1="380" x2="1156" y2="380" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
@@ -105,7 +91,7 @@ Fysiikan koe tehdään tietokoneella. Vastaus kirjoitetaan tekstinä, kaavat kaa
 
 - **Osa I** on pakollinen: yksi tehtävä, 20 pistettä. Siinä voi olla monivalintoja, väittämiä ja lyhyitä avoimia kysymyksiä eri puolilta fysiikkaa.
 - **Osa II**: valitse 4 tehtävää seitsemästä, kukin 15 pistettä. Tehtävissä vertaillaan, arvioidaan ja sovelletaan fysiikan tietoja.
-- **Osa III**: valitse 2 tehtävää kolmesta, kukin 20 pistettä. Tehtävissä käytetään aineistoja: luet, käsittelet ja muunnat dataa ja teet siitä päätelmiä.
+- **Osa III**: valitse 2 tehtävää kolmesta, kukin 20 pistettä. Tehtävissä käytetään aineistoja: luet, käsittelet ja muunnat dataa ja teet siitä päätelmiä. Aineistoja on myös useimmissa Osan II tehtävissä: viimeaikaisissa kokeissa neljässä tai viidessä seitsemästä.
 
 Yhteensä kokeesta saa enintään 120 pistettä. Tämä on kokeen yleinen rakenne: tehtävien kysymysmuodot ja Osan I kohtien määrä vaihtelevat kokeesta toiseen, joten tarkista ajantasainen rakenne ylioppilastutkintolautakunnan ohjeista. Sallitut apuvälineet ja ohjelmat on kerrottu ylioppilastutkintolautakunnan määräyksissä ja kokeen omissa ohjeissa. Tarkista ne ajantasaisina ennen koetta ja harjoittele kokeen ohjelmilla etukäteen.
 
