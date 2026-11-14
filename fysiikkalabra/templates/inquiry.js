@@ -530,7 +530,7 @@
   const promote = () => {
     if (promoted || !side || !more.isConnected || getComputedStyle(lab).getPropertyValue('--wide').trim() !== '1') return;
     if (side.getBoundingClientRect().height <= main.getBoundingClientRect().height + 8) return;
-    const body = more.querySelector(':scope > .fold-body'), first = body && body.firstElementChild;
+    const body = more.querySelector(':scope > .fold-body'), first = body && [...body.children].find((c) => !c.matches('details.opt'));   // never an optional investigation (teacher 2026-11-13: it stays inside Lisää tutkittavaa)
     if (!first) return;
     promoted = true;
     more.before(first);
