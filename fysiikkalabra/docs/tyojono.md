@@ -15,6 +15,8 @@ FY1–FY9 on tehty (#501, #522, #527, #529, #572, #578, #580, #583). FY5:ssä F 
 
 ## 3b. Kaavataulukon välistys `\\[Npt]` (2026-11-14, #580:n löydös)
 
+Varattu: claude/kaavat-pt-valitys
+
 `scripts/kaavat.py` (canonical/write) jättää rivinvaihdon välin `\\[4pt]` tekstinä "[4pt]" kaavarivin alkuun, joten
 lohkoa ei voi muuttaa kaavataulukoksi. Siksi FY7:ssä jäi nimeämättä neljä MAFY-kaavaa: fy7-7 sinimuotoinen
 vaihtojännite ja teholliset arvot, fy7-8 P = UI, fy7-15 Brewsterin laki. Jaettu muutos, pieni; korjaus muuttaa
