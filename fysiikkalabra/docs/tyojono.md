@@ -319,14 +319,25 @@ fy3-8 ja fy4-3 leveyksillä 1280, 1440 ja 1920 px sekä fy1-1. Luonnoksessa Teor
 `kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
 käsitekortteja eikä alleviivauksia.
 
-## 13. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; järjestys 2026-11-14)
+## 13. Kohdennetut sisältökorjaukset FY3–FY8 (opettaja 2026-11-14)
+
+Opettajan tehtävänanto sellaisenaan: `docs/audits/2026-11-14-kohdennetut-sisaltokorjaukset.md`. Kolmetoista pientä
+korjausta jo katselmoituun sisältöön: FY8-16 (laajeneminen, sidosenergian maksimi), FY8-12 (gammasäteilyn
+läpäisykyky, puoliintumispaksuus), FY4-8 (kitkan työ, vuoristoradan ensimmäinen mäki), FY7-11 (sateenkaaren
+värijärjestys), FY4-9 (lentopallotehtävä 13-3), FY5-12 (Fourier valinnaiseksi), FY3-15 (kaukolämpö, yhteistuotanto
+kesällä), FY4-6 (kirjoitusvirhe), FY3-12 (U-arvon termi, valinnainen). **Vain delta-review** muuttuneille
+katkelmille (`reviews.py scope`); ei kokonaisten lukujen uutta katselmointia, ei muita sisältömuutoksia; ensin
+tarkistetaan, onko korjaus jo tehty. fi, en ja fi-easy. Yksi haara ja yksi PR; raportti tehtävänannon kohdan F
+mukaan.
+
+## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; järjestys 2026-11-14)
 
 Kilparobotiikka on kirjoitettu jaksopohjan lohkoina (#516–#517, `scripts/jaksot.py`); Ahjo ja LUMA-tutor piirtyvät
 vielä osin omilla moduuleillaan (`ahjo.py`, `lumatutor.py`). Siirretään ne samaan pohjaan niin, että sivut pysyvät
 tavulleen samoina kuten Kilparobotiikassa, ja puuttuvat lohkot lisätään yhteiseen lohkokirjastoon. Jaettuja
 tiedostoja: tehdään yksin.
 
-## 14. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14)
+## 15. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14)
 
 Tavoite: FY1–FY8-oppimateriaali kaupallisen kustantajan julkaisuvalmiutta vastaavalle laatutasolle. Tarkistaja toimii
 kokeneena lukion fysiikan kustannustoimittajana, fysiikan didaktiikan asiantuntijana ja ohjelmistojen
@@ -360,11 +371,11 @@ varmennetut virheet, mahdolliset ongelmat ja vapaaehtoiset parannusehdotukset. O
 merkitään hyväksytyksi.
 
 **Toiseksi viimeinen kohta** (opettaja 2026-11-14): aloitetaan vasta, kun kaikki muut jonon kohdat paitsi vihkot
-(kohta 15) on tehty. Työ on laaja
+(kohta 16) on tehty. Työ on laaja
 (113 lukua), joten se tehdään kurssi kerrallaan omissa ketjuissaan (`/quality-audit <id> --audit-only`, budjetit
 `.claude/commands/lesson.md`).
 
-## 15. Vihkot FY1–FY8 nykyisellä tiiviillä asettelulla (opettaja 2026-11-13; jonon viimeinen 2026-11-14)
+## 16. Vihkot FY1–FY8 nykyisellä tiiviillä asettelulla (opettaja 2026-11-13; jonon viimeinen 2026-11-14)
 
 Tulostettavat A5-vihkot (`python scripts/print_book.py <C> --lang fi|en --publish`, README "Printed A5 book") kaikille
 kursseille FY1–FY8 sivuja säästävällä tiiviillä asettelulla (#393). FY1–FY4:llä vihko on (7.11.), mutta sisältö on

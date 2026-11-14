@@ -43,11 +43,13 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
     then U1, U2, U3, which start only after step 10's PR 1–PR 5 are merged (same `site.css`, `lesson.js`). Shared
     files: alone, one at a time, merged before content. No new interface text without the teacher's permission.
 12. English concept cards for FY6 and FY8 (queue: later, the teacher's decision).
-13. Ahjo and LUMA-tutor onto the shared unit template (`jaksot.py` blocks, as Kilparobotiikka). Shared files,
+13. Targeted content corrections in FY3–FY8 (queue 13, teacher 2026-11-14, `docs/audits/2026-11-14-kohdennetut-sisaltokorjaukset.md`):
+    thirteen small fixes to reviewed content, delta reviews of the changed passages only, one pull request.
+14. Ahjo and LUMA-tutor onto the shared unit template (`jaksot.py` blocks, as Kilparobotiikka). Shared files,
     so alone.
-14. Editorial final review of FY1–FY8 (queue 14, teacher 2026-11-14): after every other step except the booklets (step 15); a report first, course by course, with verified
+15. Editorial final review of FY1–FY8 (queue 15, teacher 2026-11-14): after every other step except the booklets (step 16); a report first, course by course, with verified
     errors, possible problems and optional improvements apart; no source changes until the teacher has read it.
-15. Last (teacher 2026-11-14): printed A5 booklets for FY1–FY8 in the current compact layout (`print_book.py --publish`): FY1–FY4 again, FY5–FY8
+16. Last (teacher 2026-11-14): printed A5 booklets for FY1–FY8 in the current compact layout (`print_book.py --publish`): FY1–FY4 again, FY5–FY8
     new; each course after its MAFY formulas (step 3) are merged.
 
 Area D waits for the teacher's decision on which plan (FY10, Dronelabra, others) is approved for building.
