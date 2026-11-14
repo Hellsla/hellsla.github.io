@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 4161a9356eed0c2b
-Mode: delta (new YO-skill task fy6-11-L2-08, type 3 force-diagram choice, four new figures pick-ylos/alas/nopeus/ilman; two tasks re-paragraphed)
+CONTENT-HASH: cb845d98a8762a90
+SCOPE: delta added-exercise from 4161a9356eed0c2b base 8f23aa7ae3bd
+Round 1
+Mode: delta (added exercise fy6-11-L1-09, shown as 11-9)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy6-11/pick-nopeus (option C) — the label of the velocity arrow is small and sits above the arrow end, almost as light as the axes; could be as large as the force labels. Colour (velocity blue, forces red) follows the FY4 convention.
-- [Minor] fy6-11 pick-* — the label of the electric force is above the arrow in A and below it in B, C and D (label offset follows the arrow direction); consistent within each diagram, so only an observation.
+- [Minor] fy6-11-L1-09 Given/Answer — the MAFY table name is given in Finnish in plain parentheses in the solution but in italics in the hint; use italics in both, and say once that the table's name is Finnish.
 
 ## Checked
-- fy6-11-open-exercises-L2-1280-10.png and -11.png: task text, all four option cards A-D at readable size (A open with its feedback), the answer chip and the full solution. Diagrams: rectangle body, G down, F_e down twice as long (B, C, D) or up (A), blue v arrow in C, weight missing in D; labels read $\overline{G}$, $\overline{F}_\text{e}$ (the Finnish s is correctly e in English), nothing clipped, arrow lengths match the text ("twice as long").
-- The re-paragraphed L2/L3 tasks were not opened; the change is mechanical.
+- fy6-11-open-exercises-1280-8.png (task 11-9 statement and open hint, flow after 11-8) and -9.png (full solution).
+- Typography: $E = U : d$, fraction, kV/mm units upright with thin space, decimal point in en, chains as aligned rows, answer chip, nothing clipped; no figure in this task.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations n/a (4) · typography 5 · English 5 · accessibility 4

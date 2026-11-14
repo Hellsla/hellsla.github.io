@@ -221,7 +221,7 @@ b) $f_\text{C} = 30\,\text{kHz} \cdot \sqrt{\dfrac{0.080\,\Omega}{0.040\,\Omega}
 **Reasonableness:** The ratio of the powers $2.59\,\text{kW} : 1.29\,\text{kW} = 2.0$ corresponds to the ratio of the resistances $0.080 : 0.040 = 2.0$. Raising the frequency by the factor $\sqrt{2} = 1.414$ increases the power by the factor $1.414^2 = 2.0$, so the power of pan C at the frequency $42.4\,\text{kHz}$ is $1.29\,\text{kW} \cdot 2.0 = 2.59\,\text{kW}$.
 
 ## fy7-16-L2-09
-**Given:** $e_0 = 4.2\,\text{V}$ at $3\,\text{mm}$, the frequency and the number of turns do not change, the numbers of lines to be read from the figure
+**Given:** $e_0 = 4.2\,\text{V}$ at $3\,\text{mm}$, the frequency, the number of turns and the current of the transmitter coil do not change, the numbers of lines to be read from the figure
 **Find:** the peak voltage $e_0'$ at $6\,\text{mm}$ in volts
 **Principle:** The peak voltage is $e_0 = N \cdot 2\pi f \cdot \Phi_0$. When $N$ and $f$ stay the same, $e_0$ is proportional to the flux $\Phi_0$. The field lines of the figure are drawn at equal flux steps, so the number $n$ of lines passing through the receiver coil is proportional to the flux and therefore to the voltage.
 **Reading the graph:** Count the darker lines that pass through the receiver coil. On the left ($3\,\text{mm}$) there are $6$ and on the right ($6\,\text{mm}$) $4$.
@@ -232,12 +232,12 @@ b) $f_\text{C} = 30\,\text{kHz} \cdot \sqrt{\dfrac{0.080\,\Omega}{0.040\,\Omega}
 **Reasonableness:** The phone is farther away and the flux is smaller, so the voltage falls: $2.8\,\text{V}$ is less than $4.2\,\text{V}$. The flux falls by a third over only $3\,\text{mm}$ more, which fits the efficiency measurements of the chapter falling steeply within a few millimetres.
 
 ## fy7-16-L2-10
-**Given:** the curve of the graph $P : P_0$ as a function of the length $L$, the length of the new fibre $L = 35\,\text{km}$
-**Find:** the attenuation coefficient $a$ and the power $P : P_0$ as a percentage at the length $35\,\text{km}$
+**Given:** the curve of the graph $P : P_0$ as a function of the length $L$, the length of the new fibre $L = 70\,\text{km}$
+**Find:** the attenuation coefficient $a$ and the power $P : P_0$ as a percentage at the length $70\,\text{km}$
 **Principle:** The fibre is the same along its whole length, so $A = aL$, and the attenuation tells the power ratio: $A = 10\,\text{dB} \cdot \lg \dfrac{P_0}{P}$. When the power has halved, $P_0 : P = 2$, so the attenuation is known without the numerical powers. The attenuation coefficient is obtained by dividing it by the length needed for the halving.
-**Reading the graph:** Draw a horizontal line at the height $50\,\%$ and go straight down from its crossing with the curve to the horizontal axis. The point is $L_{1/2} = 10\,\text{km}$.
+**Reading the graph:** Draw a horizontal line at the height $50\,\%$ and go straight down from its crossing with the curve to the horizontal axis. The point is $L_{1/2} = 10\,\text{km}$. The graph ends at $40\,\text{km}$, so the asked length $70\,\text{km}$ is calculated with the attenuation coefficient, not read from the graph.
 **Formula:** $a = \dfrac{10\,\text{dB} \cdot \lg 2}{L_{1/2}}$, $A = aL$ and $\dfrac{P}{P_0} = 10^{-A / (10\,\text{dB})}$
 **Conversions:** Not needed: the lengths are in kilometres and the attenuation coefficient is calculated in $\text{dB/km}$.
-**Substitution:** $a = \dfrac{10\,\text{dB} \cdot 0.301}{10\,\text{km}} = 0.301\,\text{dB/km}$. At the length $35\,\text{km}$: $A = 0.301\,\text{dB/km} \cdot 35\,\text{km} = 10.5\,\text{dB}$ and $\dfrac{P}{P_0} = 10^{-10.5 / 10} = 0.0884 = 8.8\,\%$.
-**Answer:** $8.8\,\%$, two significant figures; the attenuation coefficient is about $0.30\,\text{dB/km}$.
-**Reasonableness:** The length $35\,\text{km}$ is $3.5$ halving distances, so the power is $0.5^{3.5} = 0.088$, that is $8.8\,\%$. The result is less than $50\,\%$ and greater than $12.5\,\%$ (three halvings), as it should be.
+**Substitution:** $a = \dfrac{10\,\text{dB} \cdot 0.301}{10\,\text{km}} = 0.301\,\text{dB/km}$. At the length $70\,\text{km}$: $A = 0.301\,\text{dB/km} \cdot 70\,\text{km} = 21.07\,\text{dB}$ and $\dfrac{P}{P_0} = 10^{-21.07 / 10} = 0.00782 = 0.78\,\%$.
+**Answer:** $0.78\,\%$, two significant figures; the attenuation coefficient is about $0.30\,\text{dB/km}$.
+**Reasonableness:** The length $70\,\text{km}$ is $7$ halving distances, so the power is $0.5^{7} = 0.0078$, that is $0.78\,\%$. The graph ends at $40\,\text{km}$, where about $6\,\%$ remains, so a smaller value at $70\,\text{km}$ is right.

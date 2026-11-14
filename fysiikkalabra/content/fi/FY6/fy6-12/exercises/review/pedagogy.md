@@ -1,20 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4703625fe3ccea47
-Round: 2
+CONTENT-HASH: fb8bc2ae3ac4c6db
+SCOPE: delta numbers,typography from 9f84f4124a537fa5 base 36194da
 
 ## Blocking
-(none)
 
 ## Polish
-- exercises.json (fy6-12-L2-08) — rows 1 and 2 carry a reason ("koska"), rows 3 and 4 are bare calculations, so the error is easy to look for in rows 3-4; a short reason on row 3 would level the rows (carried over).
+- solutions.md fy6-12-L2-09 Järkevyys: the "3,0 kV antaisi nopeuden 3,2·10^7 m/s ... pienempi jännite antaa pienemmän nopeuden" comparison is arbitrary and trivial; the earlier polish remains (replace by the 200 eV / 2,8 % of c line alone).
+- exercises.json fy6-12-L2-09: the question is not the last sentence; carried over from the previous report.
 
 ## Checked
-- Text only (no render); chains measured at 16 px: U = 120 V - 30 V = 90 V 212 px, earlier 307 px line now split.
-- Round 1 items resolved: "Oikein" no longer repeated in the correct feedback; significant-figure clause now "kahden merkitsevän numeron tarkkuudella"; first paragraph split (33 and 13 words).
-- Recomputed: U = 90 V, E_k = 90 eV = 1,442·10^-17 J; exactly one row (3) is wrong, rows 1, 2 and 4 are right for their inputs.
-- Distractor feedback targets the lesson's warned mistakes (all charges go to lower potential; potential vs potential energy).
-- Correct option not identifiable by length or hedge; "Laskussa ei ole virhettä" last, its feedback points to row 3 only after the choice.
-- Within the chapter; question is the last sentence; Finnish correct.
-- Level 2, kind error + reasoning; not a duplicate of L2-06 or L1-07.
-- Solution splits the chain into steps and states the check by potential energy.
-- Hash unchanged at the start and end.
+- The diff changes only \frac to \tfrac and \dfrac in the Kaava and Sijoitus lines of fy6-12-L2-09; numbers and meaning unchanged.
+- Inline fraction in Kaava (\tfrac) and the display fraction under the root (\dfrac) read well; no clipping risk added.
+- 8,387 · 10^6 m/s still follows from 2 · 1,602 · 10^-19 · 200 : 9,109 · 10^-31.
+- Nothing else of the set touched since the version passed.

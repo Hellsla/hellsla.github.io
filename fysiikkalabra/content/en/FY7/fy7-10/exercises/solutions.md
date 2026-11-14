@@ -232,10 +232,10 @@ The correct angle of refraction is $\alpha_2 \approx 49.5^\circ$, three signific
 ## fy7-10-L2-09
 **Given:** the line in the figure describes measurements of acrylic, refractive index of air $n_1 = 1.00$, new angle of incidence $\alpha_1 = 35.0^\circ$
 **Asked:** the slope $k$ of the line, the refractive index of acrylic $n_2$ and the angle of refraction in the acrylic $\alpha_2$
-**Principle:** By the law of refraction $\sin\alpha_1 = \dfrac{n_2}{n_1}\sin\alpha_2$. When $\sin\alpha_1$ is on the vertical axis and $\sin\alpha_2$ on the horizontal axis, the data points lie on a line whose slope is $k = n_2 / n_1$. The slope gives the refractive index, and the refractive index gives the angle of refraction for any angle of incidence.
-**Reading the graph:** On the line, at $\sin\alpha_2 = 0.20$ we read $\sin\alpha_1 \approx 0.29$ and at $\sin\alpha_2 = 0.60$ we read $\sin\alpha_1 \approx 0.89$. We use points of the line, not data points.
+**Principle:** By the law of refraction $\sin\alpha_1 = \dfrac{n_2}{n_1}\sin\alpha_2$. When $\sin\alpha_1$ is on the vertical axis and $\sin\alpha_2$ on the horizontal axis, the data points lie on a line whose slope is $k = \dfrac{n_2}{n_1}$. The slope gives the refractive index, and the refractive index gives the angle of refraction for any angle of incidence.
+**Reading the graph:** On the line, at $\sin\alpha_2 = 0.20$ we read $\sin\alpha_1 \approx 0.30$ and at $\sin\alpha_2 = 0.60$ we read $\sin\alpha_1 \approx 0.90$. We use points of the line, not data points.
 **Formula:** $k = \dfrac{\Delta(\sin\alpha_1)}{\Delta(\sin\alpha_2)} = \dfrac{n_2}{n_1}$, so $n_2 = k\,n_1$, and $\sin\alpha_2 = \dfrac{n_1 \sin\alpha_1}{n_2}$
 **Conversions:** Not needed: sines and refractive indices have no unit.
-**Substitution:** $k = \dfrac{0.89 - 0.29}{0.60 - 0.20} = \dfrac{0.60}{0.40} = 1.49$, so $n_2 = 1.49 \cdot 1.00 = 1.49$. Then $\sin\alpha_2 = \dfrac{1.00 \cdot \sin 35.0^\circ}{1.49} = \dfrac{0.5736}{1.49} = 0.3850$, so $\alpha_2 = 22.6^\circ$
-**Answer:** $n_2 \approx 1.49$ and $\alpha_2 \approx 22.6^\circ$, three significant figures. The graph can be read to about $0.01$, so the angle of refraction is accurate to about $0.2^\circ$.
-**Reasonableness:** The refractive index is close to the table value of acrylic, $1.49$. The angle of refraction is smaller than the angle of incidence $35.0^\circ$, as it must be when entering a denser medium.
+**Substitution:** $k = \dfrac{0.90 - 0.30}{0.60 - 0.20} = \dfrac{0.60}{0.40} = 1.50$, so $n_2 = 1.50 \cdot 1.00 = 1.50$. Then $\sin\alpha_2 = \dfrac{1.00 \cdot \sin 35.0^\circ}{1.50} = \dfrac{0.5736}{1.50} = 0.3824$, so $\alpha_2 = 22.5^\circ$
+**Answer:** $n_2 \approx 1.50$ and $\alpha_2 \approx 22.5^\circ$, three significant figures. The graph can be read to about $0.01$, so the angle of refraction is accurate to about $0.2^\circ$.
+**Reasonableness:** The refractive index is close to the table value of acrylic, $1.49$, and the $1.50$ read from the graph is within reading accuracy. The angle of refraction is smaller than the angle of incidence $35.0^\circ$, as it must be when entering a denser medium.

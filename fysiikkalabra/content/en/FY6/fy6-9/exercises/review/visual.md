@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 51f6a10c66298771
-Round 2
-Mode: delta (fix of the Round 1 Major in fy6-9-L1-09; screenshots retaken)
+CONTENT-HASH: 30bb671b683987a1
+SCOPE: delta added-exercise from 51f6a10c66298771 base 8f23aa7ae3bd
+Round 1
+Mode: delta (added exercise fy6-9-L2-08, shown as 9-17)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy6-9-L1-09 Model answer, third line — $\tfrac{UQ}{t}$ is small beside the $\dfrac{\text{Wh}}{\text{h}}$ in the same line; if the line is re-set, use $\tfrac{\text{Wh}}{\text{h}}$ too. Readable as is.
+- [Minor] fy6-9/ex-current2 — the y tick "2.5" sits at the axis arrowhead and the x tick "4.5" is close to the arrow; fine to read, give the arrow a little more room if the figure is next re-drawn.
 
 ## Checked
-- fy6-9-open-exercises-1280-9.png (retaken): the four "The unit of … is …" lines now read as sentences, with no colon that could be taken for division; the final paragraph no longer opens the line spacing; options, feedback, answer chip, Find, Principle all render, nothing clipped.
-
-## Fixed since Round 1
-- Colon between maths expressions replaced by words; inline \dfrac changed to \tfrac.
+- fy6-9-open-exercises-L2-1280-9.png and -10.png (task 9-17 statement, graph, answer chip, full solution), -7 and -8 for the neighbouring tasks 9-15 and 9-16 and the set's flow.
+- Graph: axes with quantity and unit, ticks and grid, three steps readable, does not give the charge away; the description gives the same values.
+- Solution: units in LaTeX, chains set as aligned rows, colon division, decimal point in en, answer set apart, nothing clipped.
 
 ## Scores
-illustrations n/a (4) · typography 4 · English 4 · accessibility 4
+illustrations 4 · typography 5 · English 5 · accessibility 4

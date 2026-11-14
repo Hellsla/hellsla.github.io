@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bdef4444cc3b7d40
-ROUND: 1
+CONTENT-HASH: 1425766382012de9
+SCOPE: delta added-exercise from bdef4444cc3b7d40 base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
-- solutions.md:206 (L2-08) — "Pienin mahdollinen suhde" treats ±0,10 µm as a guaranteed limit (guardrail: an uncertainty is not a guaranteed limit) — "Pienin suhde epävarmuuden rajoissa saadaan, kun …".
 
 ## Checked
-- New task L2-08 only (additions only since b032dcb83~1). Checked from the text only; no renders.
-- Recomputed with b = 2,898·10⁻³ m·K: T = 707, 852, 865, 999 K; T₄ : T₁ = 1,41 (1,33–1,50 within ±0,10 µm); in Celsius 434 and 726 °C, ratio 1,67 → 1,7; T₃ − T₂ = 12,7 K → "noin 13 K", with intervals of 828–878 K and 840–892 K that overlap. All the numbers in the options, feedback and solution are right.
-- Exactly one conclusion is supported. Each distractor has its own error: a difference inside the uncertainty (type 10), °C in Wien's law (the chapter's warned mistake) and the inverse dependence read the wrong way.
-- Form: the four options are 92–95 characters and three share one sentence frame, so the right one is not identifiable by form.
-- The black-body condition and the uncertainty are stated in the task. The guardrail wording holds: a difference "ei voi päätellä", not "values equal".
-- Data caption short ("Spektrin huippu (esimerkkiaineisto)"); the unit is in the column header.
-- answers.py: all 19 numeric answers agree with exercises.json.
-- Hash bdef4444cc3b7d40 at start and end.
+- Delta round 3: L1-09 and L2-09 (added exercises); hash identical at start and end.
+- Round-2 polish fixed: L1-09 Järkevyys now 1,434 · 5772 K; 502 : 350 = 1,4343, × 5772 K = 8279 K ≈ 8280 K, consistent with the answer.
+- L1-09: T = b/λ_max with MAFY b = 2,897772·10⁻³ m·K gives 8279,3 K = answers.py (8279.35); with 2,898 → 8280 K; 2 % tolerance covers both; two significant figures follow 350 nm; black-body assumption stated; 350 nm is UV.
+- L2-09: figure peak at 1,20 µm (Planck curve at 2415 K = b/1,20 µm); λ₂ = b/1000 K = 2,898 µm, shift 1,698 µm = answers.py; 1000 K ≈ 727 °C, dull red glow with mostly infrared, consistent with the lesson's 800 K statement.
+- Both tasks within FY7 scope (Wien only, no photon, no Stefan–Boltzmann computation).

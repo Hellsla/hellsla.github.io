@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: d854aa8f386f0906
-Mode: delta (new task fy7-15-L1-09 and its solution), round 1
+CONTENT-HASH: 5f4c14bdd0bd3e40
+SCOPE: delta added-exercise from d854aa8f386f0906 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- [Minor] fy7-15-L1-10 (15-10) Answer — the answer line "$270\,\text{W/m}^2$ (read from the graph $268\,\text{W/m}^2$), two or three significant figures" sets 270 beside 268 and leaves the precision open, which reads as a contradiction — give one value ($270\,\text{W/m}^2$) and say "two significant figures, as the share read from the graph".
+- [Minor] fy7-15-L1-10 Formula — "$I = I_0 \cdot \tfrac{I}{I_0}$, where $\tfrac{I}{I_0} = \cos^2\theta$" is circular as set; for science: write $I = I_0\cos^2\theta$ and read the share $I : I_0$ from the graph.
+- [Minor] fy7-15-L1-10 Reading the graph — "closer to 0.75, about 0.67" is hard to see on a 0.1 grid with labels only every 0.2; label every gridline or leave out the "closer to" sentence.
 
 ## Checked
-- Rebuilt and captured fy7-15 (en); opened fy7-15-open-exercises captures at 1280 px (last parts of the level) showing fy7-15-L1-09 with its task text, options or input, feedback, answer and opened solution.
-- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
-- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; no Finnish left in the new task.
-- No figures in the new task; the lesson page and other tasks are unchanged (delta).
-
-- Re-check after the I_E line change to I_E = 500 W/m² · (cos² 45°)²: packet regenerated, recaptured; open-exercises-1280-10 shows the formula rendering correctly and fitting its box; check_layout (open state, every solution open) OK at 345 px and 390 px, no overflow.
+- fy7-15-open-exercises-1280-10, -11, -12 (en): tasks 15-10 (graph of $I : I_0$ against $\theta$; axes with units, magenta curve, grid) and 15-11 (crown glass from MAFY, hint), answer fields, opened solutions and the two-row reasonableness check.
+- fy7-15-open-exercises-L2-1280-9, -10, -11: task 15-19 with the $E(\cos^2\theta)$ graph (axis titles with units, black data markers distinct from the magenta fitted line), opened solution with aligned rows.
+- Typography: units upright with thin space, nested fractions and $\sqrt{\ }$ set cleanly, no red KaTeX, no overflow; the set reads as one.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

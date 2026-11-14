@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 17151a3c70a4f503
-
-Scope: new task fy7-16-L2-08 (suuruusluokka, YO type 5).
+CONTENT-HASH: ac12902ca6fb50a6
+SCOPE: delta added-exercise from 17151a3c70a4f503 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- exercises.json (choices) — option values are 12 us, 1,2 ms, 12 ms, 12 s: the last gap is a factor 1000, outside the "10-100 apart" rule in docs/exercise-types.md; replace 12 s by 120 ms (and a matching unit-slip feedback).
-- exercises.json (12 s feedback) — "valon nopeudeksi on otettu 300 000" is hard to reach since the task gives c in m/s; use a slip a student can make with the given data.
+- fy7-16-L2-09 Järkevyys: 'hyötysuhde laski luvun mittauksissa jyrkästi' refers to another exercise; name the data or drop it (carried over).
+- fy7-16/charger-points alt text explains which lines are counted but gives no counts (6 and 4); a reader without sight cannot answer. State them only if the teacher accepts that the counting is then not the task; otherwise leave as is.
 
 ## Checked
-- Calculation verified: v = 2,04 x 10^8 m/s, s = 2,4 x 10^6 m, t = 11,8 ms; each wrong value follows from a named unit slip.
-- Forgetting n (8 ms) or the return trip (6 ms) lands near 12 ms, so the order of magnitude is robust; no distractor depends on that.
-- Correct option is not the longest or only hedged one; digits "12" repeat in three options, which hides it.
-- Within fy7-12 (t = ns/c) and earlier units; everyday context (ping).
-- Widest display chain 174 px, inline 187 px (render).
+- L2-09: e0 proportional to flux (N, f fixed), 4,2 V x 4/6 = 2,8 V; principle ties e0 = N 2 pi f Phi0 to line counts; the figure alt now names the darker counted lines.
+- L2-10: half-power length 10 km (grid 5 km), a = 0,301 dB/km, 70 km = 7 halvings = 0,5^7 = 0,78 %; recomputed. The figure now ends at 40 km, so the model, not reading, is needed (earlier polish done).
+- Level 2 fits; L2-10 complements L1-08 (halving length) without repeating it; kinds mix graph/data.
+- Language checked: fi. Hash ac12902ca6fb50a6 at start and end.

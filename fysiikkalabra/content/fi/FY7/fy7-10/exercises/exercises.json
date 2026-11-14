@@ -254,7 +254,7 @@
       "level": 2,
       "text": "Kuvassa on laserkokeen mittaustulokset, kun valo tulee ilmasta akryyliin, sekä pisteisiin sovitettu suora. Lue suoralta kaksi pistettä, joissa $\\sin\\alpha_2$ on $0{,}20$ ja $0{,}60$, ja määritä suoran kulmakerroin. Päättele sen avulla akryylin taitekerroin, kun ilman taitekerroin on $1{,}00$. Kuinka suuri on taitekulma akryylissä, kun valo tulee ilmasta tulokulmassa $35{,}0^\\circ$?",
       "figure": "fy7-10/fit",
-      "answer": 22.6407,
+      "answer": 22.48145,
       "unit": "°",
       "tolerance": 0.03
     }

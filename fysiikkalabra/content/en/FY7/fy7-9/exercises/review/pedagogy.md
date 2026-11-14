@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 30247692532990e3
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: d7bf0f3a0e19dc68
+SCOPE: delta numbers from 6b06ec0d75512578 base 619f34a
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- New task fy7-9-L2-08 keeps the Finnish scaffolding: same demand, same distractors with misconception-specific feedback, one correct answer, feedback repairs the misconception.
-- Task text gives the data the student needs and does not disclose the answer.
-- Language: natural English, decimal point, no Finnish left.
+- L1 ratio 1.434 x 5772 = 8280 K consistent; L2-09 1000 K about 730 C, dull red with mostly infrared is sound.
+- Language checked: en. Hash d7bf0f3a0e19dc68 at start; unchanged at end.

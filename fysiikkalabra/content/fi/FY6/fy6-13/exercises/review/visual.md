@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 6f38db9cc5bb5b1e
-Round: 2
-
-Delta: the clipped Q and W formulas split, statement 2 reworded, the closing verdicts as five paragraphs.
+CONTENT-HASH: 33d51071fa114751
+SCOPE: delta added-exercise from 6f38db9cc5bb5b1e base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] 13-9 statements 3 and 5 both begin "Jos kondensaattori ladattaisiin 24 V:n jännitteeseen"; vary the second one so the pair is not read as a repeat.
-- [Minor] 13-9 statement 1 feedback gives `Q = CU` and then the substitution as one 247 px formula; fits, but the reveal of the true value is in the same line as the formula chain.
+- [Minor] fy6-13-L1-10 Järkevyys — the fraction inside the chain is set in script size ($\tfrac{8{,}854 \cdot 10^{-12} \cdot 0{,}025}{1{,}0 \cdot 10^{-4}}$), small to read; a `\dfrac` in a display-style row would be clearer.
+- [Minor] fy6-13-L2-08 task — "ladataan jännitteeseen $7{,}0\,\text{V}$" while the graph runs to $8\,\text{V}$ may tempt a student to read a point at $7\,\text{V}$; "Selvitä kapasitanssi kuvaajasta" covers it, so optional: "Selvitä kapasitanssi kuvaajan kulmakertoimesta".
+- [Minor] fy6-13/ex-qu2 — y ticks every 1 V with whole numbers and x ticks every 20 µC are fine; the line has no end marker, so the endpoint (120 µC; 8 V) is read from the grid corner only.
 
 ## Checked
-- Renders (own script, 390 px, every statement answered correctly, feedback, answer and solution open): page width = viewport, nothing beyond the card; the statement 1 feedback line `Q = 100 μF · 12 V = 1,2 mC` is whole (247 px), the W substitution is 258 px and sits on its own line; the five verdicts are now short paragraphs and read well.
-- Rendered: statement 2 now says the current runs through the dielectric "samalla tavalla kuin johtimissa"; the feedback names the misconception without giving away the answer to other statements.
-- Text only: no new compound-word errors.
+- review/shots/fy6-13-open-exercises-1280-11.png (stamp hash 33d51071fa114751): task 13-10 (L1-10) solution, Kysytty to Järkevyys; the task text and hint above it in -10.
+- review/shots/fy6-13-open-exercises-L2-1280-9.png, -10.png and -11.png: task 13-18 (L2-08) with figure fy6-13/ex-qu2 (axes with quantity and unit, gridlines at 20 µC and 1 V, no answer given), answer row and the whole open solution; the set reads as one.
+- Typography: chains aligned with `=` in one column, units upright, $\mu$ prefixes set correctly, case endings correct.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

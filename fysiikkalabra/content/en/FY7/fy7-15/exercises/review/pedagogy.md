@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d854aa8f386f0906
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 5f4c14bdd0bd3e40
+SCOPE: delta added-exercise from d854aa8f386f0906 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- Brewster tasks now number four at level 1 (L1-04, L1-05, L1-08, L1-11); L1-11 differs by the lookup only.
+- L2-08 reuses the phone display context of L2-05 and L3-03.
+- L1-10 answer text '270 or 268' may confuse; give one value.
 
 ## Checked
-- Delta: L1-09 solutions.md line 162 now 500 W/m² · (cos² 45°)²; equals cos²45° · cos²45° = 0.25 so I_E = 125 W/m² unchanged; only the layout (345 px) changed.
-- Level counts and ids equal to fi; the new task fy7-15-L1-09 has the same form, prompt and options as fi.
-- Situation first, question last kept; the task needs no figure, so nothing to check at 360 px beyond long formulas, which break normally.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Solution keeps Kysytty/Find, Periaate/Principle, Mallivastaus/Model answer and the discussion of the wrong options.
-- English at the level of the existing en set.
+- L1-10: 0.67 · 400 = 268 W/m² verified; L1-11: 56.66° verified.
+- L2-08: E = 360 cos²θ + 15, θ = 44.2° verified; the description gives the line's end points.
+- Language checked: en. Hash 5f4c14bdd0bd3e40 at start and end.

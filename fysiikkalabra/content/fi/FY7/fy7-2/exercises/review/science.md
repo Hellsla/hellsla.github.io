@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8f2bdb276d7840aa
+CONTENT-HASH: c282aa48e9d21cc9
+SCOPE: delta added-exercise from 8f2bdb276d7840aa base 8f23aa7ae3bd
 
 ## Blocking
-- (none)
 
 ## Polish
-- solutions.md:198 fy7-2-L2-08 — the right-hand rule is given in the flat-hand form (peukalo v, sormet B, kämmen työntää), but L3 at solutions.md:120 in the same set uses the three-finger form (peukalo, etusormi, keskisormi); use the one form the fy7-2 lesson teaches in both.
-- solutions.md:210 fy7-2-L2-08 — the inline $G = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2$ is close to 300 px at 390 px width (estimate from text, not rendered); visual reviewer to measure.
 
 ## Checked
-- Round 1, full mode; only L2-08 is new (type 3, four fbdspec option figures). Hash identical start and end.
-- Physics recomputed: v = +y, B = +z, v × B = +x (right) for a positive charge, so the electron's force points left: option C correct. |q|vB = 2,40 · 10⁻¹⁶ N, mg = 8,94 · 10⁻³⁰ N, ratio 3,7 · 10⁻¹⁴ ("noin 10⁻¹⁴-osa") right; leaving the weight out of every figure is justified, and the correct feedback says why.
-- Distractors match the chapter's warned mistakes: A force along B / toward the pole, B forgotten sign, D field "speeds up" the electron; each feedback states the right reason. The correct feedback does not give anything away that the options need.
-- figures.py:197–247: all four arrows have the same length (same scale as the stem says), velocity drawn blue and marked as not a force, each option description complete (body, v, F_m direction; A describes the ⊙ symbol).
-- Notation F_m, |q|, ⊙ and overline vectors match the brief.
-- All numeric answers of the chapter recomputed in one script: all within tolerance.
+- Delta round 2: L1-09 and L2-09 (added exercises); hash identical at start and end.
+- L1-09: r = mv/(|q|B) with MAFY m_e = 9,109·10⁻³¹ kg gives 2,843 cm = answers.py; 4 % tolerance fits the two-figure answer 2,8 cm; speed 1,3 % of c, so the non-relativistic formula holds.
+- L1-09 Järkevyys (fixed since round 1): ratio to the 7,6 mm task is (2,0)·(1,5/0,80) = 3,75, giving about 28 mm; the comparison is now correct.
+- L2-09: figure r-points drawn for a deuteron; r(1,5·10⁶ m/s) = 15,66 cm, read 15,7 cm; m = |q|Br/v = 3,35·10⁻²⁷ kg = answers.py (the drawn particle's mass 3,344, −0,3 %). Deuteron identification right.
+- Both solutions start from |q|vB = mv²/r and solve symbolically before substitution; conversions shown.

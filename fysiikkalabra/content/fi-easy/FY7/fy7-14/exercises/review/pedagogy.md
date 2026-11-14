@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 84431a520674b52a
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 3d1e122452fa32a3
+SCOPE: delta added-exercise from 84431a520674b52a base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: only L3-04 (oil film) and L3-05 (air wedge) get the "Syventävä tehtävä" tag; level 3 was never core, so the core path is unchanged; tag renders clearly before the task text.
-- Level counts and ids equal to fi; the new task fy7-14-L1-09 has the same form, prompt and options as fi.
-- Situation first, question last kept; the task needs no figure, so nothing to check at 360 px beyond long formulas, which break normally.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Solution keeps Kysytty/Find, Periaate/Principle, Mallivastaus/Model answer and the discussion of the wrong options.
-- fi-easy: short sentences, difficult terms explained once, no content lost.
+- L2-08: 1 - 1,3/4,3 = 69,8 %, answer 70 % within tolerance; L3-06: k = 2, d = 350 nm checked, new graph task at the right level.
+- Language checked: fi-easy. Hash 3d1e122452fa32a3 at start; unchanged at end.

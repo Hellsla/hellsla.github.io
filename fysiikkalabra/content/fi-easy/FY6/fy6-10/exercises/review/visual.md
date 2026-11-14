@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: df56262b52ce34b1
-Mode: delta (new YO-skill task fy6-10-L2-08, type 6 ennuste muutoksesta; L3-02 re-paragraphed)
+CONTENT-HASH: af25454f80bec980
+SCOPE: delta added-exercise from df56262b52ce34b1 base 8f23aa7ae3bd
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy6-10-L2-08 text — "Voima kohdistuu eli osuu palloon B." is an odd gloss: "osuu" (hits) is not what a force does and reads childish next to the physics term; write "Voima kohdistuu palloon B eli vaikuttaa siihen." or drop the sentence.
-- [Minor] fy6-10-L2-08 Periaate — Coulomb's law $F = k\,\tfrac{\lvert q_1 q_2 \rvert}{r^2}$ is set inline with \tfrac and the numerator renders very small; the same formula appears in display form in the neighbouring task's Kaava block, so it is only a readability remark.
-- [Minor] fy6-10-L2-08 options — the answers $\tfrac{2}{9}F$, $\tfrac{1}{9}F$, $\tfrac{2}{3}F$ use inline \tfrac, small but readable; the house rule, so only an observation.
+- [Minor] fy6-10-L2-09 Kuvaajan lukeminen — the reading is given as $5{,}06\,\text{mN}$ (three figures) beside "±0,1 mN" and an answer of two figures; say once that the point is read as about $5{,}1\,\text{mN}$ and the three-figure value is only the model's.
+- [Minor] fy6-10/ex-pari — curve A starts at 2,9 cm, just left of the 3 cm gridline the task reads from; start it at 3,0 cm.
 
 ## Checked
-- fy6-10-open-exercises-L2-1280-10.png (end of L2-07, task text "10-16", correct option's feedback) and -11.png (remaining options, "Oikein.", answer chip, Kysytty, Periaate, Mallivastaus with the F, F' and ratio displays): options whole rows, feedback inside the card, displays aligned, decimal comma and case endings render; nothing clipped.
-- The re-paragraphed L3-02 was not opened; the change is mechanical.
+- fy6-10-open-exercises-1280-9.png (L1-09, MAFY lookup: k with units, conversions, chain rows aligned, answer, Järkevyys).
+- fy6-10-open-exercises-L2-1280-11, -12 (L2-09, figure check-graph with model points, solution), -13, -14, -15 (L2-10, figure ex-pari with curves A blue and B red labelled, tick numbers, solution rows, fractions).
+- Set reads as one; nothing clipped; figures give the values needed without the answer.
 
 ## Scores
-illustrations n/a (4) · typography 4 · Finnish (selkeä) 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

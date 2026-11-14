@@ -235,7 +235,7 @@ Perusteltu johtopäätös on siis, että asetuksella 4 levyn absoluuttinen lämp
 **Muunnokset:** $\lambda_\text{max} = 350\,\text{nm} = 350 \cdot 10^{-9}\,\text{m}$
 **Sijoitus:** $T = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{350 \cdot 10^{-9}\,\text{m}} = 8280\,\text{K}$
 **Vastaus:** $8{,}3 \cdot 10^{3}\,\text{K}$, kaksi merkitsevää numeroa kuten aallonpituudessa $350\,\text{nm}$.
-**Järkevyys:** Tähti on kuumempi kuin Aurinko ($5772\,\text{K}$), ja sen huippu on lyhyemmällä aallonpituudella kuin Auringon $502\,\text{nm}$, kuten pitääkin. Aallonpituus on noin $0{,}7$-kertainen Auringon huippuun verrattuna, joten lämpötila on noin $1{,}4$-kertainen: $1{,}4 \cdot 5772\,\text{K} \approx 8200\,\text{K}$.
+**Järkevyys:** Tähti on kuumempi kuin Aurinko ($5772\,\text{K}$), ja sen huippu on lyhyemmällä aallonpituudella kuin Auringon $502\,\text{nm}$, kuten pitääkin. Aallonpituus on noin $0{,}7$-kertainen Auringon huippuun verrattuna, joten lämpötila on noin $1{,}43$-kertainen: $1{,}434 \cdot 5772\,\text{K} \approx 8280\,\text{K}$.
 
 ## fy7-9-L2-09
 **Annettu:** kuvaajan spektrikäyrä; uusi pintalämpötila $T_2 = 1000\,\text{K}$; Wienin siirtymälain vakio $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$; kappale säteilee kuin musta kappale
@@ -246,4 +246,4 @@ Perusteltu johtopäätös on siis, että asetuksella 4 levyn absoluuttinen lämp
 **Muunnokset:** $\lambda_1 = 1{,}2\,\mu\text{m} = 1{,}2 \cdot 10^{-6}\,\text{m}$ ja lopuksi $1\,\mu\text{m} = 10^{-6}\,\text{m}$.
 **Sijoitus:** $\lambda_2 = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{1000\,\text{K}} = 2{,}898 \cdot 10^{-6}\,\text{m} = 2{,}898\,\mu\text{m}$ ja $\Delta\lambda = 2{,}898\,\mu\text{m} - 1{,}2\,\mu\text{m} = 1{,}698\,\mu\text{m}$
 **Vastaus:** huippu siirtyy $1{,}7\,\mu\text{m}$ pidemmälle aallonpituudelle, kaksi merkitsevää numeroa kuten kuvaajasta luetussa aallonpituudessa $1{,}2\,\mu\text{m}$.
-**Järkevyys:** Kappale jäähtyy ($2415\,\text{K}$:sta $1000\,\text{K}$:iin), joten huipun on siirryttävä pidemmille aallonpituuksille. Lämpötila putoaa noin $2{,}4$-kertaisesti, ja huipun aallonpituus kasvaa saman verran: $1{,}2\,\mu\text{m} \cdot 2{,}4 \approx 2{,}9\,\mu\text{m}$. Uusi huippu on kaukana infrapuna-alueella eikä kappale enää hehku.
+**Järkevyys:** Kappale jäähtyy ($2415\,\text{K}$:sta $1000\,\text{K}$:iin), joten huipun on siirryttävä pidemmille aallonpituuksille. Lämpötila putoaa noin $2{,}4$-kertaisesti, ja huipun aallonpituus kasvaa saman verran: $1{,}2\,\mu\text{m} \cdot 2{,}4 \approx 2{,}9\,\mu\text{m}$. Uusi huippu on kaukana infrapuna-alueella ja kappale ($1000\,\text{K}$, noin $730\,{}^\circ\text{C}$) hehkuu enää vain himmeän punaisena, sillä lähes kaikki säteily on infrapunaa.

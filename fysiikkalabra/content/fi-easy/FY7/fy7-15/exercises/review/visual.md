@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 25428d8365ff21bf
-Mode: delta (new task fy7-15-L1-09 and its solution), round 1
+CONTENT-HASH: 9bbf8b44f12b72e0
+SCOPE: delta added-exercise from 25428d8365ff21bf base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- [Minor] fy7-15-L1-10 solution Kaava — $I = I_0 \cdot \tfrac{I}{I_0}$ is a tautology; for science: write $I = I_0\cos^2\theta$ with the read share.
 
 ## Checked
-- Rebuilt and captured fy7-15 (fi-easy); opened fy7-15-open-exercises captures at 1280 px (last parts of the level) showing fy7-15-L1-09 with its task text, options or input, feedback, answer and opened solution.
-- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
-- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; natural Finnish, decimal comma, glossary terms consistent.
-- No figures in the new task; the lesson page and other tasks are unchanged (delta).
-
-- Re-check after the I_E line change to I_E = 500 W/m² · (cos² 45°)²: packet regenerated, recaptured; open-exercises-1280-10 shows the formula rendering correctly and fitting its box; check_layout (open state, every solution open) OK at 345 px and 390 px, no overflow.
+- Added exercises L1-10, L1-11, L2-08 (fi-easy, FY7 fy7-15): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-15.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
+- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
+- Hash identical at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

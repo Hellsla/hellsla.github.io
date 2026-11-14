@@ -50,5 +50,5 @@ a["fy7-10-L3-05"] = 6.0 * T(a2) + 20.0 * T(a3)      # x = 3,839 mm + 15,636 mm =
 a["fy7-10-L1-09"] = D(1.00 * S(52.0) / 1.333)
 # figure fy7-10/fit: the fitted line has sin a1 = 0,294 at sin a2 = 0,20 and 0,890 at 0,60; slope k = 0,596 / 0,40 = 1,49 = n (acrylic)
 k = (0.890 - 0.294) / (0.60 - 0.20)
-a["fy7-10-L2-09"] = D(1.00 * S(35.0) / k)           # air -> acrylic at 35,0°: sin a2 = 0,5736 / 1,49 = 0,3850, a2 = 22,6°
+a["fy7-10-L2-09"] = D(1.00 * S(35.0) / 1.50)        # air -> acrylic at 35,0°, n read from the graph as 1,50: sin a2 = 0,5736 / 1,50 = 0,3824, a2 = 22,5°
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 24b9ddd2db5cbc0a
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 7c42a154c01acd85
+SCOPE: delta added-exercise from 24b9ddd2db5cbc0a base 8f23aa7ae3bd
 
 ## Blocking
 - none
@@ -9,6 +9,9 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correct
 - none
 
 ## Checked
-- Source diff since origin/main of exercises/exercises.json, exercises/solutions.md and lessons/FY7/fy7-1/answers.py.
-- L1-07 statement, options, feedbacks, solution and true/false item 4: bar-magnet model vs geomagnetic naming worded consistently; no bold in the task statement.
-- Hash identical at start and end.
+- fy7-1-open-exercises-L2-1280-9, -10, -11, -12 (en): tasks 1-17 and 1-18 with their figures (sum-grid, incl-grid), answer fields and fully opened solutions.
+- Figures: green arrows on a 5 µT grid, axis titles and ticks in KaTeX, labels $\overline{B}_\text{h}$, $\overline{B}_\text{m}$, $\overline{B}$ legible, nothing clipped; neither figure draws the resultant, needle or angle.
+- Typography: units upright with thin space, aligned rows, no red KaTeX; the set reads as one.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -286,7 +286,7 @@ def hero():
 
 def ex_graph_car():
     """Task figure (L2-09): five (I, U) points of a car battery and the line through them, drawn only over the data."""
-    f = new("fy68-excar", 360, "Kuvaaja mittakaavassa: auton käynnistysakun napajännite U voltteina virran I funktiona ampeereina, ruudukon väli 50 A ja 1 V. Mittauspisteet ovat (50 A; 11 V), (100 A; 10 V), (150 A; 9 V), (200 A; 8 V) ja (250 A; 7 V). Pisteiden kautta on piirretty suora pisteiden väliltä.")
+    f = new("fy68-excar", 360, "Kuvaaja mittakaavassa: auton käynnistysakun napajännite U voltteina virran I funktiona ampeereina, ruudukon väli 50 A ja 1 V. Mallista lasketut pisteet ovat (50 A; 11 V), (100 A; 10 V), (150 A; 9 V), (200 A; 8 V) ja (250 A; 7 V). Pisteiden kautta on piirretty suora pisteiden väliltä.")
     ax = Axes(f, (96, 290), (500, 66), x=(0, 300), y=(0, 14), xticks=[50 * k for k in range(1, 7)],
               yticks=list(range(1, 15)), xlabel=r"I\ (\text{A})", ylabel=r"U\ (\text{V})",
               xfmt=lambda v: fi(v, 0), yfmt=lambda v: fi(v, 0) if v % 2 == 0 else "")

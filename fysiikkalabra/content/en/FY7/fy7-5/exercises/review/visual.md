@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 06991c696df18874
+CONTENT-HASH: 3c9ea2b0809de4d8
 
 ## Blocking
 
 ## Polish
-- [Minor] fy7-5-L1-09 (5-9) — the task ends with two instructions in a row ("Calculate ... and put the situations in order." then the prompt "Put the situations in order of ...") — drop "and put the situations in order" from the text.
-- [Minor] fy7-5-L1-09 — the ordering selects read "Place", which says little — "Rank" or "Position 1–5".
-- [Minor] solution Principle — inline $|e| = N\dfrac{\Delta\Phi}{\Delta t}$ opens the line spacing; \tfrac inline, as the house rule says.
+- [Minor] fy7-5/flux-task-2 — y tick labels 5 4 3 2 1 and −1 −2 −3 are close together; label every second gridline if the figure is next drawn.
 
 ## Checked
-- fy7-5-open-exercises-1280-9, -10, -11 (en): task 5-9 with five situations as separate paragraphs, five rows with "Place" selects, answer line, opened solution (Find, Principle, Model answer A-E, Reasonableness).
-- Maths: ratios with units upright, $e_\text{A}$ subscripts upright, no red KaTeX, no overflow; the stacked fractions in the solution read well.
-- Splits of the other edited tasks are spacing only.
+- Delta: redrawn fy7-5/flux-task-2 in task 5-17 with its solution (fy7-5-open-exercises-L2-1280-10, -11, full size). Time-axis labels now sit below the plot, clear of the green line (the earlier strike-through of "0.2" is gone); both axes carry units, the line is not crossed by any label. Solution typography clean ($5.0\,\text{mWb}$, aligned chains, units upright).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

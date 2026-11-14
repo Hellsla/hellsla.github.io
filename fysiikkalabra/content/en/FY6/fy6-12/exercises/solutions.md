@@ -221,8 +221,8 @@ The kinetic energy is $90\,\text{eV}$, that is, $1.4 \cdot 10^{-17}\,\text{J}$ t
 **Find:** the speed $v$ at the positive plate
 **Principle:** Only the electric force does work, so the sum of kinetic and potential energy is constant. The electron moves toward higher potential, so its potential energy falls by $eU$ and its kinetic energy grows by the same amount. The potential difference is read from the graph.
 **Reading the graph:** At $x = 1.0\,\text{cm}$ the line is on the grid line of $50\,\text{V}$. The positive plate is at $x = 5.0\,\text{cm}$, where the line is on the $250\,\text{V}$ grid line. The potential difference is $U = 250\,\text{V} - 50\,\text{V} = 200\,\text{V}$.
-**Formula:** $\frac{1}{2}mv^2 = eU \;\Rightarrow\; v = \sqrt{\frac{2eU}{m}}$
+**Formula:** $\tfrac{1}{2}mv^2 = eU$, so $v = \sqrt{\dfrac{2eU}{m}}$
 **Conversions:** Not needed: all quantities are in SI units, and $\sqrt{1\,\text{C} \cdot 1\,\text{V} : 1\,\text{kg}} = 1\,\text{m/s}$.
-**Substitution:** $v = \sqrt{\frac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 200\,\text{V}}{9.109 \cdot 10^{-31}\,\text{kg}}} = 8.387 \cdot 10^{6}\,\text{m/s}$
+**Substitution:** $v = \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 200\,\text{V}}{9.109 \cdot 10^{-31}\,\text{kg}}} = 8.387 \cdot 10^{6}\,\text{m/s}$
 **Answer:** $v \approx 8.4 \cdot 10^{6}\,\text{m/s}$, two significant figures, because the potentials are read from the $50\,\text{V}$ grid lines and the position is given to two significant figures.
 **Reasonableness:** The kinetic energy is $200\,\text{eV}$, and the speed is about $2.8\,\%$ of the speed of light $3.00 \cdot 10^{8}\,\text{m/s}$, so $\tfrac{1}{2}mv^2$ holds. A voltage of $3.0\,\text{kV}$ would give $3.2 \cdot 10^{7}\,\text{m/s}$, and a smaller voltage gives a smaller speed.
