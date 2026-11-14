@@ -252,7 +252,7 @@ Mitä jyrkempi rinne on, sitä suurempi on rinteen suuntainen komponentti. Samal
 
 Oletetaan, että pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima. Oletetaan myös, että kappale ei kiihdy siinä suunnassa. Silloin tukivoima pienenee kohtisuoran komponentin mukana. Samalla pienenee lepokitkan yläraja.
 
-Siksi laatikko lähtee jyrkässä rinteessä liukumaan. Rinnettä alas vievä komponentti kasvaa suuremmaksi kuin suurin lepokitka, jonka pinta pystyy aiheuttamaan.
+Siksi laatikko lähtee jyrkässä rinteessä liukumaan. Rinnettä alas vievä komponentti kasvaa suuremmaksi kuin suurin lepokitka, jonka silta pystyy antamaan.
 
 ### Kitka ei aina vastusta liikettä
 Kitka vastustaa pintojen liukumista **toistensa suhteen**. Se ei välttämättä vastusta kappaleen liikettä.
