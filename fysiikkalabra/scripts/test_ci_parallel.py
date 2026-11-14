@@ -27,9 +27,11 @@ check("a full run's inquiry shards are 0/n … n-1/n", full["inquiry"] == [f"{i}
 check("job names of a matrix are unique", len({j["name"] for j in full["layout"]}) == len(full["layout"]))
 check("the widths are the eight of NOTES.md §8", cp.WIDTHS.split() == "360 390 640 768 1024 1280 1440 1920".split())
 check("a full run's simulation shards are 0/n … n-1/n", full["sims"] == [f"{i}/{cp.SIMS_SHARDS}" for i in range(cp.SIMS_SHARDS)])
-check("a few pages: one job per check, all eight widths in it", few == {"sims": ["0/1"], "layout": [{"name": "all widths", "widths": cp.WIDTHS, "shard": "0/1"}], "inquiry": ["0/1"]})
+check("a few pages: one job per check, all eight widths in it", few == {"sims": ["0/1"], "layout": [{"name": "all widths", "widths": cp.WIDTHS, "shard": "0/1"}], "inquiry": ["0/1"], "simtext": ["0/1"]})
 check("many pages: every width still planned", sorted(w for j in many["layout"] for w in j["widths"].split()) == sorted(cp.WIDTHS.split()) and len(many["sims"]) == 5 and len(many["inquiry"]) == 2)
-check("no page: no browser job", none == {"sims": [], "layout": [], "inquiry": []})
+check("no page: no browser job", none == {"sims": [], "layout": [], "inquiry": [], "simtext": []})
+check("a full run's picture-text shards are 0/n … n-1/n", full["simtext"] == [f"{i}/{cp.SIMTEXT_SHARDS}" for i in range(cp.SIMTEXT_SHARDS)] and many["simtext"] == ["0/1"])
+check("picture-text: the verdict lines are PASS|FAIL <page>", cp.verdict("simtext", ["preview/fy4-1"], None, 0, "PASS preview/fy4-1 23 labels\n")[0] and not cp.verdict("simtext", ["preview/fy4-1"], None, 1, "FAIL preview/fy4-1\n")[0])
 
 # the shards: every unit exactly once, for any number of shards
 units = {f"fy{c}-{i}": [] for c in range(1, 9) for i in range(1, 17)}
@@ -80,7 +82,7 @@ def unit(i, w=None, ok=True, alone=False): return {"id": i, "width": w, "rc": 0 
 def reports(pages="a-1 a-2 a-3"):
     uni = sorted(pages.split()); p = cp.plan(pages)
     out = {}
-    for kind in ("sims", "inquiry"):
+    for kind in ("sims", "simtext", "inquiry"):
         for k, sh in enumerate(p[kind]):
             out[f"{kind}-{k}"] = {"kind": kind, "shard": sh, "pages": pages, "widths": [], "universe": uni, "units": [unit(i) for i in uni[k::len(p[kind])]], "wall": 5}
     for k, j in enumerate(p["layout"]):

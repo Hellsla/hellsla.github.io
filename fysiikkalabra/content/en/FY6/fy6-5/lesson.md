@@ -170,20 +170,20 @@ The bird's feet are at two points of the same wire, only a few centimetres apart
 
 ## Formula: Kirchhoff's laws
 Kirchhoff's current law for a junction:
-```latex
-\sum I_\text{in} = \sum I_\text{out}
+```kaavat
+Kirchhoff's first law :: \sum I_\text{in} = \sum I_\text{out}
 ```
 where $I_\text{in}$ are the currents arriving at the junction (A) and $I_\text{out}$ the currents leaving it (A). For a current dividing into two branches $I_1 = I_2 + I_3$.
 
 The voltage between the points $A$ and $B$ is the difference of the potentials:
-```latex
-U_{AB} = V_A - V_B
+```kaavat
+voltage between two points :: U_{AB} = V_A - V_B
 ```
 where $U_{AB}$ is the voltage (V) and $V_A$ and $V_B$ are the potentials of the points (V) relative to the same zero point. The voltage is positive when $A$ is at the higher potential.
 
 Kirchhoff's voltage law for a loop:
-```latex
-\sum \Delta V = 0
+```kaavat
+Kirchhoff's second law :: \sum \Delta V = 0
 ```
 where $\Delta V$ (V) is the change of potential in each part of the loop when the loop is traversed once. In the source from the negative terminal to the positive terminal $\Delta V = +U$, in a resistor in the direction of the current $\Delta V = -RI$, and in a wire $\Delta V = 0$. In a circuit of one loop with two resistors the law gives $U - R_1 I - R_2 I = 0$, that is, $U = R_1 I + R_2 I$.
 

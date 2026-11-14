@@ -560,14 +560,14 @@ Maan magneettikenttä ohjaa avaruudesta tulevia elektroneja napa-alueiden yläpu
 
 ## Kaava: Sähköinen potentiaalienergia ja potentiaali
 Varauksen potentiaalienergia kohdassa, jonka potentiaali on $V$:
-```latex
-E_\text{p} = qV
+```kaavat
+sähkökentän potentiaali :: E_\text{p} = qV
 ```
 missä $E_\text{p}$ on potentiaalienergia ($\text{J}$), $q$ varaus etumerkkeineen ($\text{C}$) ja $V$ kohdan potentiaali ($\text{V}$) valittuun nollakohtaan nähden. Elektronille $q = -e$.
 
 Kun varaus siirtyy kohdasta $A$ kohtaan $B$, sähköinen voima tekee työn
-```latex
-W_{AB} = q(V_A - V_B) = qU_{AB}
+```kaavat
+sähkökentän tekemä työ :: W_{AB} = q(V_A - V_B) = qU_{AB}
 ```
 missä $W_{AB}$ on työ ($\text{J}$) ja $U_{AB} = V_A - V_B$ kohtien potentiaaliero eli jännite ($\text{V}$). Työ on yhtä suuri kuin potentiaalienergian väheneminen $E_{\text{p},A} - E_{\text{p},B}$, eikä se riipu reitistä. Homogeenisessa kentässä levyjen välinen jännite on $U = Ed$ (luku *Homogeeninen sähkökenttä*), joten kentän suuntaan levystä toiseen kulkevaan varaukseen kenttä tekee työn $qU = qEd$.
 

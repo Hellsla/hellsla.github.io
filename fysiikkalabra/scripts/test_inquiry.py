@@ -188,7 +188,11 @@ def page_form(pg, b, url, acts, page):
           and pg.evaluate("(() => { const x = document.getElementById('exit'), e = document.getElementById('exercises'); return !x || !!(e.compareDocumentPosition(x) & 4); })()"), str(order))
     if any(a["stage"] == "ennusta" for a in acts):
         fold = pg.locator("#ennusta details.fold")
-        check("Ennusta sits in a box that starts closed", fold.count() == 1 and not fold.evaluate("(d) => d.open") and pg.locator("#ennusta .fold-body").is_hidden())
+        req = pg.locator("#ennusta fieldset.choice:not(details.opt *)").count()
+        check("the first prediction is always in view; the others wait in a box that starts closed, none for one (teacher 2026-11-13, 8h)",
+              pg.locator("#ennusta fieldset.choice").first.is_visible() if req == 1 and not fold.count() else
+              (fold.count() == 1 and not fold.evaluate("(d) => d.open") and pg.locator("#ennusta .fold-body").is_hidden()
+               and pg.locator("#ennusta fieldset.choice:not(details *)").count() == 1 and pg.locator("#ennusta fieldset.choice:not(details *) button.commit").is_visible()))
     sim_act = next((a for a in acts if a["type"] == "sim"), None)
     if sim_act:
         hidden = pg.evaluate("[...document.querySelectorAll('#sim-root canvas, #sim-root input, #sim-root select, #sim-root button')].filter((e) => e.closest('details:not([open])')).length")
@@ -228,7 +232,7 @@ def restore_checks(pg, url, lid, ex, loc, want):
     q.wait_for_timeout(300)
     qloc = q.locator(f"#{eid}")
     got = qloc.locator(".exp-table tbody tr").all_text_contents()
-    n = q.evaluate("(id) => [...document.querySelectorAll('.experiment')].indexOf(document.querySelector('#' + id + ' .experiment')) + 1", eid)
+    n = q.evaluate("(id) => Number(document.querySelector('#' + id + ' .experiment').dataset.koe)", eid)
     writes = q.evaluate(f"window.__flWrites.filter((k) => k === 'ruukkilabra:{lid}:koe{n}').length")
     check(f"{eid}: the stored measurements come back on a new visit, the same rows", got == want, f"{got} != {want}")
     check(f"{eid}: a restored table is not written back to localStorage", writes == 0, f"{writes} writes")
@@ -265,7 +269,7 @@ def export_checks(pg, lid, ex, loc):
     either on the clipboard ("Kopioitu") or shown in a text field to select."""
     eid = ex["id"]
     check(f"{eid}: export button enabled with measurements", loc.locator(".exp-copy").is_enabled() and not loc.locator(".exp-csv").count())
-    n = pg.evaluate("(id) => [...document.querySelectorAll('.experiment')].indexOf(document.querySelector('#' + id + ' .experiment')) + 1", eid)
+    n = pg.evaluate("(id) => Number(document.querySelector('#' + id + ' .experiment').dataset.koe)", eid)
     stored = pg.evaluate(f"() => {{ try {{ return JSON.parse(localStorage.getItem('ruukkilabra:{lid}:koe{n}')) }} catch (e) {{ return null }} }}")
     check(f"{eid}: measurements stored as ruukkilabra:{lid}:koe{n}", bool(stored) and len(stored.get("rows", [])) == 2, str(stored)[:200])
     heads = loc.locator(".exp-table thead th").evaluate_all("(ts) => ts.map((t) => t.dataset.plain)")
@@ -410,7 +414,7 @@ def generic(lid):
             loc.locator(".exp-reset").click(); pg.wait_for_timeout(150)
             unlocked = pg.evaluate(f"(ks) => ks.every((k) => !({CONTROL})(k).disabled)", ex["locked"])
             check(f"{ex['id']}: reset unlocks and clears", unlocked and rows.count() == 0)
-            n = pg.evaluate("(id) => [...document.querySelectorAll('.experiment')].indexOf(document.querySelector('#' + id + ' .experiment')) + 1", ex["id"])
+            n = pg.evaluate("(id) => Number(document.querySelector('#' + id + ' .experiment').dataset.koe)", ex["id"])
             check(f"{ex['id']}: Nollaa clears the stored table and disables the export",
                   pg.evaluate(f"() => {{ try {{ return localStorage.getItem('ruukkilabra:{lid}:koe{n}') }} catch (e) {{ return null }} }}") is None
                   and loc.locator(".exp-copy").is_disabled())
@@ -531,7 +535,7 @@ nos = [int(x) for x in re.findall(r'<span class="toc-no" aria-hidden="true">(\d+
 heads = [int(x) for x in re.findall(r'<section class="stage[^"]*" id="[^"]+"[^>]*><h2><span class="stage-no" aria-hidden="true">(\d+)</span>', page_html)]
 check("every chip in the bar, Tehtävät too, has its number, and the numbers run 1, 2, 3 … in page order like the stage headings (teacher 2026-11-06)",
       nos == list(range(1, len(nos) + 1)) and nos == heads and nav_html.count('<a href="#') == len(nos) and '<a href="#exercises"><span class="toc-no"' in nav_html, (nos, heads))
-check("Ennusta is a closed box", re.search(r'<section class="stage" id="ennusta"[^>]*><h2>.*?</h2><details class="fold" data-fold="ennusta">', page_html) is not None)
+check("Ennusta shows the first prediction and keeps the others in a closed box (8h)", re.search(r'<section class="stage" id="ennusta"[^>]*><h2>.*?</h2>(?:(?!<details class="fold").)*?<fieldset class="choice[^>]*>.*?</fieldset>(?:(?!<details class="fold").)*?<details class="fold" data-fold="ennusta">', page_html, re.S) is not None)
 check("no old names on the page", not any(x in page_html for x in ("Herätä kiinnostus", "Lähtölippu", ">Selitä<")))
 _ex = json.loads((ROOT / "content/fi/FY3/fy3-2/exercises/exercises.json").read_text()); _lv = [len(_ex[f"level{k}"]) for k in (1, 2, 3)]
 check(f"exercises and exit ticket kept ({'/'.join(map(str, _lv))}, 1 item)", page_html.count('class="level"') == 3 and page_html.count("<li>$(s, F)$-kuvaajassa") == 1
@@ -558,8 +562,8 @@ with sync_playwright() as pw:
 
     # the Ennusta box: closed at first, opened by its summary
     fold = pg.locator("#ennusta details.fold")
-    check("predictions hidden in a closed box at first", not fold.evaluate("(d) => d.open") and not pg.locator("#pred-1 button.commit").is_visible())
-    fold.locator(":scope > summary").click(); check("the summary opens the box", fold.evaluate("(d) => d.open") and pg.locator("#pred-2 button.commit").is_visible())
+    check("the first prediction is in view, the others hidden in a closed box at first", not fold.evaluate("(d) => d.open") and pg.locator("#pred-2 button.commit").is_visible() and not pg.locator("#pred-3 button.commit").is_visible() and not pg.locator("#pred-1 button.commit").is_visible())
+    fold.locator(":scope > summary").click(); check("the summary opens the box", fold.evaluate("(d) => d.open") and pg.locator("#pred-3 button.commit").is_visible())
     opt1 = pg.locator("details.opt:has(#pred-1)")   # pred-1 is optional in the pilot: closed until the student opens it
     check("an optional prediction waits in its closed box", not opt1.evaluate("(d) => d.open") and not pg.locator("#pred-1 button.commit").is_visible())
     opt1.locator(":scope > summary").click(); check("the optional box opens", pg.locator("#pred-1 button.commit").is_visible())
@@ -606,8 +610,8 @@ with sync_playwright() as pw:
     refl = pg.locator("#reflect .my-predictions li")
     check("reflection lists three predictions", refl.count() == 3)
     check("reflection shows my prediction and the verdict", "Ennustit" in refl.nth(0).inner_text() and "ei tue" in refl.nth(0).inner_text() and "Et ole vielä" in refl.nth(1).inner_text(), refl.nth(0).inner_text())
-    refl.nth(1).locator("a").click(); pg.wait_for_timeout(150)
-    check("a link to a prediction opens the closed box", fold.evaluate("(d) => d.open") and pg.locator("#pred-2 button.commit").is_visible())
+    refl.nth(2).locator("a").click(); pg.wait_for_timeout(150)
+    check("a link to a prediction opens the closed box", fold.evaluate("(d) => d.open") and pg.locator("#pred-3 button.commit").is_visible())
 
     # plain choice: feedback after Vastaa, may change and re-check
     c = pg.locator("#pr-paino"); w = c.locator("label").filter(has=pg.get_by_text("10 N", exact=True))   # the mass-for-weight option

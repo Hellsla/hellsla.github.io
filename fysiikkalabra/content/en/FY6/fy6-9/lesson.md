@@ -155,8 +155,8 @@ Q = I t
 where $Q$ is the charge (Ah or C), $I$ is the current (A) and $t$ is the time (h or s).
 
 The energy stored in a battery:
-```latex
-W = U Q
+```kaavat
+work done by an electric field :: W = U Q
 ```
 where $W$ is the energy (Wh or J), $U$ is the nominal voltage of the battery (V) and $Q$ is the capacity of the battery (Ah or C).
 
@@ -275,8 +275,8 @@ In the graph the loop of the charging circuit is traced when $U_\text{ch} = 4.5\
 
 ### Energy in charging
 The power of the charger is $P = U_\text{ch} I$ (chapter *Electric power and the heating of a resistor*), so a charger with a constant voltage delivers the energy $W_\text{ch} = U_\text{ch} Q$ when the charge $Q$ passes through the battery. Only the part given by the source voltage is stored in the battery as chemical energy, and the rest becomes internal energy of the resistances $R$ and $R_\text{s}$, which is transferred to the surroundings as heat. The efficiency of charging is
-```latex
-\eta = \frac{W_\text{batt}}{W_\text{ch}}
+```kaavat
+efficiency :: \eta = \frac{W_\text{batt}}{W_\text{ch}}
 ```
 where $W_\text{batt}$ is the energy stored in the battery as chemical energy (Wh) and $W_\text{ch}$ is the energy delivered by the charger (Wh).
 

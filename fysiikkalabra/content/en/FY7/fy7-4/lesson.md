@@ -174,8 +174,8 @@ The magnet of a loudspeaker is built so that in the ring-shaped gap the field po
 
 ## Formula: Force on a current-carrying wire
 When a current $I$ flows in a straight wire and the wire is in a uniform magnetic field, the field exerts on the wire a force of magnitude
-```latex
-F = I l B \sin\alpha
+```kaavat
+magnetic force on a straight conductor :: F = I l B \sin\alpha
 ```
 where $F$ is the force (N), $I$ the current (A), $l$ the length of the part of the wire that is in the field (m), $B$ the magnetic flux density (T) and $\alpha$ the angle between the wire and the field. Only the component of the field perpendicular to the wire, $B \sin\alpha$, produces a force. The force is greatest when the wire is perpendicular to the field ($\sin 90^\circ = 1$) and zero when the wire is parallel to the field ($\sin 0^\circ = 0$). At an angle of $30^\circ$ the force is half of its greatest value, because $\sin 30^\circ = 0.5$. The formula gives the unit of the tesla: $1\,\text{T} = 1\,\tfrac{\text{N}}{\text{A}\cdot\text{m}}$.
 

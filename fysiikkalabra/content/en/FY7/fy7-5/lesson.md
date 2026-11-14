@@ -202,8 +202,8 @@ The phenomenon is called **electromagnetic induction**, and the voltage produced
 
 ### Magnetic flux
 The size of the change is measured with the **magnetic flux**. It tells how much magnetic field passes through a loop. When a uniform field is perpendicular to the plane of the loop, the magnetic flux is
-```latex
-\Phi = BA
+```kaavat
+magnetic flux :: \Phi = BA
 ```
 where $\Phi$ is the magnetic flux, $B$ the magnetic flux density (T) and $A$ the area of the loop (m²). The unit of flux is the weber: $1\,\text{Wb} = 1\,\text{T}\cdot\text{m}^2$. The flux is greater, the stronger the field and the larger the loop. If the loop is tilted, fewer field lines pass through it and the flux decreases. When the plane of the loop is parallel to the field, no field line passes through it and the flux is zero.
 
@@ -264,8 +264,8 @@ where $\Phi$ is the magnetic flux, $B$ the magnetic flux density (T) and $A$ the
 
 ## Formula: Faraday's law of induction
 Faraday's observations are summarised in **Faraday's law of induction**: the induced voltage in a coil is proportional to the rate of change of the magnetic flux through the coil and to the number of turns of the coil. The average induced voltage of a coil in the time interval $\Delta t$ is
-```latex
-e_\text{ka} = -N\frac{\Delta\Phi}{\Delta t}
+```kaavat
+voltage induced in a coil :: e_\text{ka} = -N\frac{\Delta\Phi}{\Delta t}
 ```
 where $e_\text{ka}$ is the average induced voltage (V), $N$ the number of turns of the coil, $\Delta\Phi$ the change in the magnetic flux through one turn (Wb) and $\Delta t$ the time (s) in which the change takes place.
 

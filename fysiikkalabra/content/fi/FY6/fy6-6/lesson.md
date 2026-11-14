@@ -234,8 +234,8 @@ Kun virta kytketään, vastus lämpenee aluksi nopeasti, koska lähes koko sähk
 
 ## Kaava: Sähköteho ja Joulen laki
 Sähköteho on
-```latex
-P = UI
+```kaavat
+tehonkulutus johtimessa :: P = UI
 ```
 missä $P$ on teho (W), $U$ komponentin jännite (V) ja $I$ komponentin läpi kulkeva virta (A). Kaava pätee mille tahansa komponentille: vastukselle, lampulle, moottorille tai ladattavalle akulle.
 

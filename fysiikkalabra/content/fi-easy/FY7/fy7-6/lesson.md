@@ -267,8 +267,8 @@ Sama ajatus näkyy kupariputkessa, johon on sahattu pitkittäinen rako. Rako kat
 
 ## Kaava: Lenzin laki ja energia
 Luvun *Sähkömagneettinen induktio* induktiolain miinusmerkki on Lenzin laki:
-```latex
-e_\text{ka} = -N \frac{\Delta \Phi}{\Delta t}
+```kaavat
+käämiin indusoituva jännite :: e_\text{ka} = -N \frac{\Delta \Phi}{\Delta t}
 ```
 Kaavassa $e_\text{ka}$ on keskimääräinen induktiojännite (V) aikavälillä $\Delta t$, $N$ on silmukan kierrosten lukumäärä, $\Delta\Phi$ on magneettivuon muutos (Wb) ja $\Delta t$ on muutokseen kulunut aika (s). Kun vuo muuttuu tasaisesti, jännite on vakio. Silloin merkitään lyhyesti $e$. Miinusmerkki kertoo, että induktiovirran kenttä vastustaa vuon muutosta. Suuruus lasketaan ilman merkkiä. Suunta päätellään Lenzin laista.
 
@@ -282,8 +282,8 @@ Energian säilyminen kertoo, mihin putoavan magneetin energia menee. Kun magneet
 Kaavassa $m$ on magneetin massa (kg), $g = 9{,}81\,\text{m/s}^2$, $h$ on pudotuskorkeus (m), $v$ on vauhti lopussa (m/s) ja $Q$ on sisäenergiaksi muuttunut energia (J).
 
 Kun magneetti putoaa tasaisella vauhdilla, jarruttava voima $F$ on yhtä suuri kuin paino $mg$. Ajassa $\Delta t$ magneetti liikkuu matkan $v \Delta t$. Jarruttava voima tekee tällä matkalla työn $F v \Delta t$. Siksi sisäenergia kasvaa teholla
-```latex
-P = F v
+```kaavat
+hetkellinen teho :: P = F v
 ```
 Kaavassa $P$ on teho (W), $F$ on jarruttava voima (N) ja $v$ on vauhti (m/s). Sama kaava pätee jokaiseen pyörrevirtajarruun. Jarruttava voima kertaa vauhti on teho, jolla liike-energia muuttuu sisäenergiaksi.
 

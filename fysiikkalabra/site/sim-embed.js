@@ -186,7 +186,7 @@
           const lx = (m.a * x + m.c * y + m.e) / pd * k, ly = (m.b * x + m.d * y + m.f) / pd * k;
           const shown = Number.isFinite(lx) && Number.isFinite(ly) ? '' : 'none';   // a label at NaN (an empty average) is not drawn, as on the canvas
           const sz = p.textSize() * Math.hypot(m.a, m.b) / pd;   // in canvas pixels
-          const fs = Math.max(sz * (k < 1 ? Math.sqrt(k) : k), Math.min(sz, 10)).toFixed(2) + 'px';   // a phone-sized canvas shrinks its labels less than its picture, never below 10 px
+          const fs = Math.max(sz * (k < 1 ? Math.sqrt(k) : k), Math.min(sz / s, 10)).toFixed(2) + 'px';   // a phone-sized canvas shrinks its labels less than its picture, never below 10 px (sz holds p.scale(s): the floor is 10 px or the label's own size at the picture's full width, so a narrowed picture, 384 px on a short laptop screen, keeps 10 px; 2026-11-14)
           const color = ctx.fillStyle;
           const put = () => {                    // the label's text, size and colour (written after draw(), above)
             if (!el.parentNode) layer.appendChild(el);
@@ -221,7 +221,7 @@
           let fsz = p.textSize(), per = 1;
           if (p.canvas && p.drawingContext && p.drawingContext.getTransform) {
             const m = p.drawingContext.getTransform(), u = Math.hypot(m.a, m.b) / p.pixelDensity(), k = (p.canvas.clientWidth || p.width) / p.width;
-            if (u > 0 && k > 0) { const sz = p.textSize() * u; fsz = +Math.max(sz * (k < 1 ? Math.sqrt(k) : k), Math.min(sz, 10)).toFixed(2); per = u * k; }
+            if (u > 0 && k > 0) { const sz = p.textSize() * u; fsz = +Math.max(sz * (k < 1 ? Math.sqrt(k) : k), Math.min(sz / s, 10)).toFixed(2); per = u * k; }
           }
           const key = fsz + '|' + shape(str);   // one width per shape (above), so a live value needs no new measurement
           let w = widths.get(key);
