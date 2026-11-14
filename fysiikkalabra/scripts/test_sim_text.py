@@ -15,6 +15,13 @@ only = set(sys.argv[1:])
 OUT = ROOT / "preview" if (ROOT / "preview" / "index.html").exists() else ROOT / "site"
 VIEW = {"width": 1366, "height": 650}
 MIN_PX = 10
+# Named exceptions (coordinator on the teacher's authority, 2026-11-14): these sketches shrink their own text to fit their
+# picture (fy3-1 sim.js: Math.max(10 * k, ...)), so templates/sim-embed.js cannot raise it; mending them means a sim.js
+# change, done with the course's next content change (työjono 10). Their size is reported, not failed.
+SIZE_EXCEPTIONS = {"fy3-1", "fy3-9"}
+# Overlaps at 1366×650 are reported and do not fail the run: 10 px text does not fit 384 px in fy3-6, fy3-8, fy4-5, fy6-11,
+# fy7-14, fy8-10 and fy8-16. PR 2-3 widen the picture to about 520 px; the check becomes blocking there (OVERLAP_BLOCKS).
+OVERLAP_BLOCKS = False
 
 JS = """() => {
   const c = document.querySelector('#sim-root canvas'); if (!c) return {err: 'no canvas'};
@@ -52,10 +59,14 @@ with sync_playwright() as pw:
         bad = list(errors) + ([r["err"]] if "err" in r else [])
         if "err" not in r:
             small = sorted({(l["t"], round(l["px"], 1)) for l in r["labels"] if l["px"] < MIN_PX}, key=lambda x: x[1])
-            bad += [f'"{t}" is {p} px (under {MIN_PX})' for t, p in small[:6]] + r["bad"][:6]
+            sizes = [f'"{t}" is {p} px (under {MIN_PX})' for t, p in small[:6]]
+            outside = [x for x in r["bad"] if "leaves" in x][:6]
+            overlaps = [x for x in r["bad"] if "overlaps" in x][:6]
+            bad += outside + ([] if f.stem in SIZE_EXCEPTIONS else sizes) + (overlaps if OVERLAP_BLOCKS else [])
+            notes = (["named exception, not failed: " + x for x in sizes] if f.stem in SIZE_EXCEPTIONS else []) + (["not failed: " + x for x in overlaps] if not OVERLAP_BLOCKS else [])
             note = f"{len(r['labels'])} labels, picture {r['width']} px, smallest {min([l['px'] for l in r['labels']] or [0]):.1f} px"
-        else: note = ""
+        else: note, notes = "", []
         print(("PASS " if not bad else "FAIL ") + key + (" " + note if note else ""))
-        for x in bad: print("     " + x)
+        for x in bad + notes: print("     " + x)
         fails += bool(bad)
 sys.exit(1 if fails else 0)
