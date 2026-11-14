@@ -119,5 +119,5 @@ Havainnot, joita ei muutettu (väitteiden ulkopuolella, opettajan päätettävik
 Lähteet luettu uudelleen 14.11.2026:
 - https://www.ylioppilastutkinto.fi/sites/default/files/sites/default/files/documents/fi_reaaliaineiden_kokeiden_maaraykset.pdf (luettu 14.11.2026): kohta 3, erillisiä laskimia ja taulukkokirjoja ei saa käyttää (hero-kuvan laskin poistettu); kohta 2.5, ylimääräisistä vastauksista lasketaan pienimmän pistesumman vastaukset (harjoituskoe).
 - https://www.ylioppilastutkinto.fi/en/implementation-examination/regulations-and-guidelines/test-specific-regulations-and-guidelines-1 (luettu 14.11.2026): sama englanniksi.
-- https://tiedostot.ylioppilastutkinto.fi/kokeet/2026-03-25_FF_fi/grading-instructions.html (luettu 14.11.2026, PR #570:n kirjaus: Osan II aineistot 5/7) ja syksyn 2025 hyvän vastauksen piirteet (4/7).
+- https://tiedostot.ylioppilastutkinto.fi/kokeet/2026-03-25_FY_fi/grading-instructions.html (luettu 14.11.2026, PR #570:n kirjaus: Osan II aineistot 5/7) ja https://tiedostot.ylioppilastutkinto.fi/kokeet/2025-09-17_FY_fi/grading-instructions.html (luettu 14.11.2026, 4/7).
 Muutos: ylimääräisten vastausten sääntö oikean kokeen mukaiseksi (fi, en, fi-easy). Sivu ei laske pisteitä, joten sääntö on vain ohjeessa. Koodia ei muutettu.
