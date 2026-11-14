@@ -450,7 +450,7 @@ Mitä suurempi vaimennuskerroin on, sitä ohuempi kerros riittää vaimentamaan 
 </svg>
 
 ### Puoliintumispaksuus riippuu aineesta ja energiasta
-Puoliintumispaksuus riippuu aineen tiheydestä, koostumuksesta ja säteilyn energiasta. Koostumus tarkoittaa sitä, mistä atomeista aine koostuu. Lyijy vaimentaa gammasäteilyä tehokkaasti monilla energioilla, koska se on hyvin tiheää ja sen atomien järjestysluku eli protonien määrä on suuri. Sama vaimennus vaatii betonia noin seitsemän kertaa paksumman kerroksen. Gammasäteilyn läpäisykyky riippuu fotonien energiasta ja aineesta. Kun energia kasvaa, säteily vuorovaikuttaa aineen kanssa eri tavalla. Siksi läpäisykyky ei kasva kaikilla energioilla. Taulukon arvot koskevat cesium-137:n $662\,\text{keV}$:n gammasäteilyä.
+Puoliintumispaksuus riippuu aineen tiheydestä, koostumuksesta (eli siitä, mistä atomeista aine koostuu) ja säteilyn energiasta. Lyijy vaimentaa gammasäteilyä tehokkaasti monilla energioilla, koska se on hyvin tiheää ja sen atomeissa on paljon protoneja (järjestysluku on suuri). Sama vaimennus vaatii betonia noin seitsemän kertaa paksumman kerroksen. Gammasäteilyn läpäisykyky ei kasva koko ajan energian mukana. Kun energia kasvaa, gammasäteily alkaa vuorovaikuttaa aineen kanssa eri tavalla. Siksi suurempi energia ei aina tarkoita parempaa läpäisykykyä. Taulukon arvot koskevat cesium-137:n $662\,\text{keV}$:n gammasäteilyä.
 
 | Aine | $d_{1/2}$ |
 | --- | --- |
