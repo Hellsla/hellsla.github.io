@@ -326,12 +326,7 @@ koetila ja minikokeet, kertauspolku, kielten tarkistus) muuttavat jaettuja tiedo
 kerrallaan, kohdan 10 PR 1–PR 5:n ja kohdan 11 U1:n jälkeen; PR 9 Abitti 2 -ohje (sisältö); PR 10 kielimallin
 selvitys (dokumentti). Arvio noin 2,5–3,5 M tokenia.
 
-## 12. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
-
-`kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
-käsitekortteja eikä alleviivauksia.
-
-## 13. Kohdennetut sisältökorjaukset FY3–FY8 (opettaja 2026-11-14)
+## 12. Kohdennetut sisältökorjaukset FY3–FY8 (opettaja 2026-11-14)
 
 Opettajan tehtävänanto sellaisenaan: `docs/audits/2026-11-14-kohdennetut-sisaltokorjaukset.md`. Kolmetoista pientä
 korjausta jo katselmoituun sisältöön: FY8-16 (laajeneminen, sidosenergian maksimi), FY8-12 (gammasäteilyn
@@ -341,6 +336,11 @@ kesällä), FY4-6 (kirjoitusvirhe), FY3-12 (U-arvon termi, valinnainen). **Vain 
 katkelmille (`reviews.py scope`); ei kokonaisten lukujen uutta katselmointia, ei muita sisältömuutoksia; ensin
 tarkistetaan, onko korjaus jo tehty. fi, en ja fi-easy. Yksi haara ja yksi PR; raportti tehtävänannon kohdan F
 mukaan.
+
+## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
+
+`kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
+käsitekortteja eikä alleviivauksia.
 
 ## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; järjestys 2026-11-14)
 

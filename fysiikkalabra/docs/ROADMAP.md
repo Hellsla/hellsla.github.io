@@ -43,9 +43,9 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
     files: alone, one at a time, merged before content. No new interface text without the teacher's permission.
 11b. FY9 adaptive exam coach (queue 11b, `docs/FY9_ADAPTIVE_PLAN.md`, teacher approved 2026-11-14): PR 1 (YTL facts)
     any time; the shared PR 2–8 one at a time after step 10's PR 1–PR 5 and step 11's U1.
-12. English concept cards for FY6 and FY8 (queue: later, the teacher's decision).
-13. Targeted content corrections in FY3–FY8 (queue 13, teacher 2026-11-14, `docs/audits/2026-11-14-kohdennetut-sisaltokorjaukset.md`):
+12. Targeted content corrections in FY3–FY8 (queue 12, teacher 2026-11-14, `docs/audits/2026-11-14-kohdennetut-sisaltokorjaukset.md`):
     thirteen small fixes to reviewed content, delta reviews of the changed passages only, one pull request.
+13. English concept cards for FY6 and FY8 (queue: later, the teacher's decision).
 14. Ahjo and LUMA-tutor onto the shared unit template (`jaksot.py` blocks, as Kilparobotiikka). Shared files,
     so alone.
 15. Editorial final review of FY1–FY8 (queue 15, teacher 2026-11-14): after every other step except the booklets (step 16); a report first, course by course, with verified
