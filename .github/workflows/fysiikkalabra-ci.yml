@@ -48,6 +48,7 @@ jobs:
       sims: ${{ steps.scope.outputs.sims }}
       layout: ${{ steps.scope.outputs.layout }}
       inquiry: ${{ steps.scope.outputs.inquiry }}
+      simtext: ${{ steps.scope.outputs.simtext }}
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }   # ci_scope.py compares with the base branch
@@ -218,6 +219,29 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with: { name: "report-sims-${{ strategy.job-index }}", path: "ci-report", if-no-files-found: error, retention-days: 14 }
+  simtext:
+    name: picture text at 1366×650 ${{ matrix.shard }} (every simulation's labels at least 10 px on a short laptop screen; scripts/test_sim_text.py)
+    needs: plan
+    if: needs.plan.outputs.pages != ''
+    strategy: { fail-fast: false, matrix: { shard: "${{ fromJSON(needs.plan.outputs.simtext) }}" } }
+    runs-on: ubuntu-latest
+    container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }   # the build reads the exercises' reviewed version from history
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"   # the container runs as root; the checkout belongs to the runner's user
+        working-directory: .
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: python --version && python -m pip --version && python -m pip install markdown numpy playwright==1.65.0   # the container's own Python 3.12 (actions/setup-python's build does not run in it); the browser and its system packages are in the image (same Playwright version)
+      - run: python scripts/build.py --all
+      - name: picture text (scripts/test_sim_text.py page by page, two at a time; scripts/ci_parallel.py)
+        env: { PAGES: "${{ needs.plan.outputs.pages }}" }
+        run: python scripts/ci_parallel.py simtext --pages "$PAGES" --shard "${{ matrix.shard }}" --report "$GITHUB_WORKSPACE/ci-report/simtext-${{ strategy.job-index }}.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: "report-simtext-${{ strategy.job-index }}", path: "ci-report", if-no-files-found: error, retention-days: 14 }
   inquiry:
     name: inquiry tests ${{ matrix.shard }} of every lesson with inquiry.json, or of the pull request's pages (gating, locks, reveal, options and feedback as rendered, navigation, 360 px)
     needs: plan
@@ -261,7 +285,7 @@ jobs:
         if: always()
         with: { name: "report-layout-${{ strategy.job-index }}", path: "ci-report", if-no-files-found: error, retention-days: 14 }
   qa:   # the required check of a pull request, and the run ruukkilabra-deploy.yml waits for on main
-    needs: [plan, checks-1, checks-2, checks-3, sims, inquiry, layout]
+    needs: [plan, checks-1, checks-2, checks-3, sims, simtext, inquiry, layout]
     if: always()
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -286,7 +310,7 @@ jobs:
           import json, os, sys
           needs, none = json.loads(os.environ["NEEDS"]), os.environ["PAGES"] == ""
           bad = [f"{k}: {v['result']}" for k, v in needs.items()
-                 if v["result"] != "success" and not (none and k in ("sims", "inquiry", "layout") and v["result"] == "skipped" and needs["plan"]["result"] == "success")]
+                 if v["result"] != "success" and not (none and k in ("sims", "simtext", "inquiry", "layout") and v["result"] == "skipped" and needs["plan"]["result"] == "success")]
           print("\n".join(bad) or "every job passed")
           sys.exit(1 if bad else 0)
           EOF
