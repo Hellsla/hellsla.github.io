@@ -15,6 +15,8 @@ FY6 15, FY7 14, kukin fi, en ja fi-easy. Katselmointi `/exercises`-putken vaihei
 --exercises`, kolme katselmoijaa) kuten FY4:ssä (#531). Yksi kurssi per PR; kurssin MAFY-kaavat (kohta 3) samassa
 ketjussa tai heti perään, ei rinnakkain.
 
+Varattu: FY7 (14 lukua) – claude/fy7-exercises-review
+
 ## 3. Kaavat MAFY-muotoon FY5–FY8, FY10 ja FY14
 
 FY1–FY4 ja FY9 on tehty (#501, #522, #527, #529). Keskinopeuden tunnus on kaikkialla $v_\text{k}$, ei $v_\text{ka}$
