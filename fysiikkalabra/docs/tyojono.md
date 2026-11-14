@@ -327,7 +327,6 @@ FY9 ja FY1, 1280 ja 390 px. Pieni jaettu muutos: tehdään kuten U4, kun mikää
 
 ## 11b. FY9: adaptiivinen YO-valmentaja (opettaja 2026-11-14)
 
-Varattu: claude/fy9-koekorjaukset (FY9 koekorjaukset)
 
 Suunnitelma: `docs/FY9_ADAPTIVE_PLAN.md` (#566). Opettaja hyväksyi 14.11 suunnitelman ja kaikki sen suositukset
 P1–P12: osaamisalueet ovat kuusi osaamista (`competencies.json`); tilojen sanat hyväksytään PR 4:ssä; oma
@@ -342,19 +341,6 @@ Järjestys (suunnitelman kohdat 8–9, hyväksymiskriteerit ja testit siellä): 
 koetila ja minikokeet, kertauspolku, kielten tarkistus) muuttavat jaettuja tiedostoja, joten ne tehdään yksin, yksi
 kerrallaan, kohdan 10 PR 1–PR 5:n ja kohdan 11 U1:n jälkeen; PR 9 Abitti 2 -ohje (sisältö); PR 10 kielimallin
 selvitys (dokumentti). Arvio noin 2,5–3,5 M tokenia.
-
-## 12. Kohdennetut sisältökorjaukset FY3–FY8 (opettaja 2026-11-14)
-
-Opettajan tehtävänanto sellaisenaan: `docs/audits/2026-11-14-kohdennetut-sisaltokorjaukset.md`. Kolmetoista pientä
-korjausta jo katselmoituun sisältöön: FY8-16 (laajeneminen, sidosenergian maksimi), FY8-12 (gammasäteilyn
-läpäisykyky, puoliintumispaksuus), FY4-8 (kitkan työ, vuoristoradan ensimmäinen mäki), FY7-11 (sateenkaaren
-värijärjestys), FY4-9 (lentopallotehtävä 13-3), FY5-12 (Fourier valinnaiseksi), FY3-15 (kaukolämpö, yhteistuotanto
-kesällä), FY4-6 (kirjoitusvirhe), FY3-12 (U-arvon termi, valinnainen). **Vain delta-review** muuttuneille
-katkelmille (`reviews.py scope`); ei kokonaisten lukujen uutta katselmointia, ei muita sisältömuutoksia; ensin
-tarkistetaan, onko korjaus jo tehty. fi, en ja fi-easy. Yksi haara ja yksi PR; raportti tehtävänannon kohdan F
-mukaan.
-
-Tehty: fy4-6 kirjoitusvirhe (PR #575); muut osat tekemättä.
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
