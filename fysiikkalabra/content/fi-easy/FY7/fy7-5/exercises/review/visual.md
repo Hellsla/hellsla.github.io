@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8a451579ec92be38
+CONTENT-HASH: ed672bb44b0bc64e
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-5-L1-09 (5-9) — the select placeholder "Paikka" says little — "Sija" or "Valitse sija".
-- [Minor] solution Periaate — inline $|e| = N\dfrac{\Delta\Phi}{\Delta t}$ opens the line spacing; use \tfrac inline.
-- [Minor] task end — "Laske ... Järjestä sitten tilanteet." followed by the prompt "Järjestä tilanteet ..." repeats the instruction.
+- none
 
 ## Checked
-- fy7-5-open-exercises-1280-9 and -10 (fi-easy): task 5-9, situations A-E as separate paragraphs with the number of turns stated in each ("Käämissä on $200$ kierrosta"), five selects, answer line, opened solution.
-- Decimal comma, upright units, $|e|$ and subscripts in maths, no red KaTeX, no overflow.
-- Plain language, defined terms (yhden kierroksen vuo explained).
+- Added exercises L2-08 (fi-easy, FY7 fy7-5): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-5.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
+- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
+- Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

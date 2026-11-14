@@ -1,19 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 84431a520674b52a
-Mode: delta (new task fy7-14-L1-09 and its solution), round 1
+VERDICT: FAIL
+CONTENT-HASH: 993fb6f56cf54ae9
 
 ## Blocking
-(none)
+- [Major] fy7-14-L3-06, figure fy7-14/soap-curve — the label "saippuakalvo" (white box) sits over the curve's maximum (about 7,7 % at 621 nm); the task asks the student to read exactly that peak, and the curve looks broken there — essential information hidden, the reading cannot be made — move the label to an empty area (e.g. inside the trough, right of the minimum at 500–550 nm, y about 1–2 %) or into the caption.
 
 ## Polish
-(none)
+- [Minor] fy7-14-L2-08 solution Järkevyys — "Se on järkevää, koska pinnoitteen taitekerroin on suurempi kuin ihanteellinen" reads as if the cause were reassuring; for science: check the reasoning.
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: the dashed "Syventävä tehtävä"/"Extension task" tag on the marked exercises at 360 and 1280 px (tag 24 px high, not clipped, beside the number; no duplicate lead-in left in the task text; count matches the diff), LaTeX and tables intact; scrollWidth = viewport.
-- Rebuilt and captured fy7-14 (fi-easy); opened fy7-14-open-exercises captures at 1280 px (last parts of the level) showing fy7-14-L1-09 with its task text, options or input, feedback, answer and opened solution.
-- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
-- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; natural Finnish, decimal comma, glossary terms consistent.
-- No figures in the new task; the lesson page and other tasks are unchanged (delta).
+- Added exercises L2-08, L3-06 (fi-easy, FY7 fy7-14): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-14.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
+- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
+- Hash identical at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 3 · typography 4 · Finnish 4 · accessibility 4

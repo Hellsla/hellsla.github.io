@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 2dbe4b29223aeaef
-Mode: delta (new task fy7-10-L2-08 and its solution), round 1
+CONTENT-HASH: f900af8bbfba672d
+SCOPE: delta added-exercise from 2dbe4b29223aeaef base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy7-10-L2-08 task, line 3 — the inline \dfrac enlarges the line spacing of the student's calculation lines — optional: use \frac so the lines stay even.
+- none
 
 ## Checked
-- Rebuilt and captured fy7-10 (en); opened fy7-10-open-exercises captures at 1280 px (last parts of the level) showing fy7-10-L2-08 with its task text, options or input, feedback, answer and opened solution.
-- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
-- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; no Finnish left in the new task.
-- No figures in the new task; the lesson page and other tasks are unchanged (delta).
+- fy7-10-open-exercises-1280-9, -10 (en): task 10-9 (refractive index from the MAFY table) with hint, answer field, opened solution and the sine-ratio check.
+- fy7-10-open-exercises-L2-1280-12, -13: task with the fit graph (axis titles $\sin\alpha_1$, $\sin\alpha_2$, readable ticks, pink data markers distinct from the blue fitted line), answer field and opened solution (fractions, aligned rows, $\sin$ of degrees set cleanly).
+- Typography: units upright, decimal point, no red KaTeX, no overflow; the set reads as one.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

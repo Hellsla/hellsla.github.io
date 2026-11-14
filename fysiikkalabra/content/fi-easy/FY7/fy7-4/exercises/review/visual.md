@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ebb42c79b13ea8b7
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 4b0cc38bf955e1fc
+SCOPE: delta added-exercise from ebb42c79b13ea8b7 base 8f23aa7ae3bd
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy7-4/force-angle — data points are momentum purple on a force-red curve; use a neutral ink point colour if the palette allows.
 
 ## Checked
-- Source diff since origin/main of exercises/exercises.json, exercises/solutions.md and lessons/FY7/fy7-4/answers.py.
-- μ0 = → \approx in every Annettu line and task statement; LaTeX intact; decimal separators per language.
+- Added exercises L2-09 (fi-easy, FY7 fy7-4): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-4.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
+- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
 - Hash identical at start and end.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
