@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 94e2c61db60be1bb
+CONTENT-HASH: 18715801cb2d4975
 
 ## Blocking
-- none
+None. The shots were stale for this exercise hash, so I re-ran screenshot.py; the new capture shows the changed sentence.
 
 ## Polish
-- none
+none.
 
 ## Checked
-Delta: L2-09 at 390 px (fi, solutions open): P_o in text matches the figure label P_o; layout intact.
+- open-exercises-L3-1280-1 and -2 (task 14-19, solution open): the Järkevyys block now reads "…kaukolämpöä käytetään pääasiassa lämmitykseen; kannattavuus riippuu tarpeesta ja hinnoista." It wraps cleanly, formulas and units intact, no clipping or overflow.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

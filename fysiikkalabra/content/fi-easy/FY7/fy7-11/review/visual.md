@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9a730fa7a4922787
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 7fe022e04b0a183f
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] lesson.md — "Siksi … Pisaran muiden värien voimakkaimmat suunnat kulkevat silmän ohi. Siksi …": two "Siksi" in three sentences and a direction that "travels"; e.g. "Muiden värien voimakkain valo kulkee silmän ohi."
+- [Minor] 'pääsateenkaari' is first used in the goals and Miksi question but explained only in the hook; add 'kirkkaampi pääsateenkaari' in the first Teoria use.
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Rainbow sentence: no "one colour per droplet" claim left.
-- No paragraph changed in this round in fi-easy exceeds about 120 words
-- Hash identical at start and end.
+batch delta review: opened fy7-11-fig-row-1280 (prism figure unchanged); read the changed heading, Miksi, hook and prompts: consistent.

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 68b4a843df57d5ad
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 8d435459e6011e55
+Mode: delta (matching feedback and solution sentences)
 
 ## Blocking
 - none
@@ -9,4 +9,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- open-exercises-1280-1 and -2 (level 1, incl. the Hubble-law task whose Periaate changed context), open-exercises-L2-1280-7, -8 and -9 (16-14, 16-15 with the reworded feedback and Periaate; opened solution cards read cleanly, maths renders, no clipping).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

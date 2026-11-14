@@ -91,7 +91,7 @@
       "choices": [
         {
           "text": "Linnunrata on keskipisteessä, josta alkuräjähdys lähti, ja muut galaksit lentävät siitä poispäin.",
-          "feedback": "Havainto ei vaadi meitä keskipisteeseen. Kun avaruus laajenee tasaisesti, mistä tahansa galaksista katsottuna kaikki muut loittonevat nopeudella, joka on verrannollinen etäisyyteen. Alkuräjähdys ei ollut räjähdys yhdessä pisteessä, vaan avaruus alkoi laajeta kaikkialla."
+          "feedback": "Havainto ei vaadi meitä keskipisteeseen. Kun avaruus laajenee tasaisesti, mistä tahansa galaksista katsottuna kaukaiset galaksit loittonevat keskimäärin nopeudella, joka on verrannollinen etäisyyteen. Alkuräjähdys ei ollut räjähdys yhdessä pisteessä, vaan avaruus alkoi laajeta kaikkialla."
         },
         {
           "text": "Avaruus laajenee kaikkialla, joten mistä tahansa galaksista katsottuna muut loittonevat samalla tavalla.",
@@ -353,7 +353,7 @@
       "title": "3. Selitä: mistä kulta tulee?",
       "optional": true,
       "prompt": "Kultasormuksen kulta-197-ytimissä on $197$ nukleonia. Miksi kultaa ei syntynyt alkuräjähdyksessä eikä Auringon kaltaisen tähden fuusiossa? Missä se syntyi? Käytä perustelussa sidosenergiakäyrää.",
-      "model": "Alkuräjähdyksen jälkeen fuusiota kesti vain noin $20$ minuuttia, ja siinä syntyi lähinnä heliumia. Tähdissä fuusio vapauttaa energiaa vain niin kauan kuin syntyvä ydin on tiiviimmin sidottu kuin lähtöytimet eli sidosenergia nukleonia kohti kasvaa. Sidosenergiakäyrän huippu on rauta-56:n kohdalla, noin $8{,}8\\,\\text{MeV}$, joten rautaa raskaampien ytimien muodostaminen fuusiolla vaatisi energiaa eikä vapauttaisi sitä. Auringon kaltainen tähti fuusioi lisäksi vain vetyä heliumiksi ja lopuksi heliumia hiileksi ja hapeksi. Kulta syntyi neutronisieppauksessa: kun ytimeen tarttuu nopeasti paljon neutroneja ja osa niistä muuttuu beeta miinus -hajoamisessa protoneiksi, syntyy raskaita ytimiä. Tällaista nopeaa neutronisieppausta tapahtuu supernovissa ja neutronitähtien törmäyksissä. Sormuksen kulta on siis syntynyt tähtien räjähdyksissä tai törmäyksissä ennen Aurinkokunnan syntyä.",
+      "model": "Alkuräjähdyksen jälkeen fuusiota kesti vain noin $20$ minuuttia, ja siinä syntyi lähinnä heliumia. Tähdissä fuusio vapauttaa energiaa vain niin kauan kuin syntyvä ydin on tiiviimmin sidottu kuin lähtöytimet eli sidosenergia nukleonia kohti kasvaa. Sidosenergia nukleonia kohti on suurimmillaan raudan ja nikkelin alueella, noin $8{,}8\\,\\text{MeV}$, ja yksittäisistä nuklideista suurin arvo on nikkeli-62:lla. Rautaryhmän ytimiä raskaampien ytimien muodostaminen fuusiolla vaatisi energiaa eikä vapauttaisi sitä. Auringon kaltainen tähti fuusioi lisäksi vain vetyä heliumiksi ja lopuksi heliumia hiileksi ja hapeksi. Kulta syntyi neutronisieppauksessa: kun ytimeen tarttuu nopeasti paljon neutroneja ja osa niistä muuttuu beeta miinus -hajoamisessa protoneiksi, syntyy raskaita ytimiä. Tällaista nopeaa neutronisieppausta tapahtuu supernovissa ja neutronitähtien törmäyksissä. Sormuksen kulta on siis syntynyt tähtien räjähdyksissä tai törmäyksissä ennen Aurinkokunnan syntyä.",
       "criteria": [
         "Selitän sidosenergiakäyrällä, että fuusio vapauttaa energiaa vain rautaan asti.",
         "Totean, että alkuräjähdyksen fuusio kesti vain minuutteja ja tuotti lähinnä heliumia.",

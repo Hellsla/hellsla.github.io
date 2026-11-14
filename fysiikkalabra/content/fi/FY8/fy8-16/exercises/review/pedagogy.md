@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 68b4a843df57d5ad
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 8d435459e6011e55
+Mode: delta (fi)
 
 ## Blocking
 - none
@@ -9,4 +9,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+- exercises.json: the correct option's feedback now says "kaukaisten galaksien ... keskimäärin", consistent with the lesson and still explaining why there is no centre.
+- solutions.md L1 Hubble task and L2-07: the principle is hedged the same way; the "oma liike jätetään huomiotta" sentence in the Hubble task fits the nearby-galaxy caveat well. The diagram/principle before the formula order is unchanged.
+- The change adds no new difficulty, and the levels are unchanged.

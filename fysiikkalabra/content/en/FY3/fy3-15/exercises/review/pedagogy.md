@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 20a151c8e8d239d4
+CONTENT-HASH: 6cb77f0ffba0ac40
 
 ## Blocking
 None.
 
 ## Polish
-- None new. L2-09 now writes fuel power P_o, matching the figure and L1-04.
+None.
 
 ## Checked
-Delta: only P_0 to P_o in L2-09 (exercises.json, solutions.md); consistent, nothing else touched.
+- Delta: L2 reasonableness now says district heat is mainly used for heating; more accurate, still clear.
+- Nothing else touched; numbers, answers and solution steps unchanged.

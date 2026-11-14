@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 0f4be83bc954f7c2
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 1ba7c51de2546285
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+None.
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+- Delta: 'on average' and 'distant galaxies' qualify the expansion claim in a choice's feedback and two solutions; repairs the misconception and avoids overstating (bound systems), still followable.
+- Nothing else touched; numbers, answers and solution steps unchanged.
