@@ -1320,8 +1320,8 @@ The cloud is densest at the nucleus, but the most common distance from the nucle
 
 ## Formula: Shells, orbitals and energy levels
 In the hydrogen atom the energy of a state depends only on the principal quantum number $n$, and the wave model gives the same energy levels as the Bohr model:
-```latex
-E_n = -\frac{13.6\,\text{eV}}{n^2}
+```kaavat
+electron energy in the hydrogen atom :: E_n = -\frac{13.6\,\text{eV}}{n^2}
 ```
 where $E_n$ is the energy of the electron (eV) in the shell $n = 1, 2, 3, \ldots$ States with the same principal quantum number form an electron shell. The shell with principal quantum number $n$ has $n$ subshells. The first subshells are labelled with the letters s, p, d and f, and they have $1$, $3$, $5$ and $7$ orbitals, respectively. When the principal quantum number grows beyond four, there are more possible subshells. The total number of orbitals in a shell is $n^2$.
 

@@ -1320,8 +1320,8 @@ Pilvi on tihein ytimen kohdalla, mutta yleisin etäisyys ytimestä ei ole nolla.
 
 ## Kaava: Kuoret, orbitaalit ja energiatasot
 Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta $n$, ja aaltomalli antaa samat energiatasot kuin Bohrin malli:
-```latex
-E_n = -\frac{13{,}6\,\text{eV}}{n^2}
+```kaavat
+elektronin energia vetyatomissa :: E_n = -\frac{13{,}6\,\text{eV}}{n^2}
 ```
 missä $E_n$ on elektronin energia (eV) kuorella $n = 1, 2, 3, \ldots$ Samaan pääkvanttilukuun kuuluvat tilat muodostavat elektronikuoren. Kuorella, jonka pääkvanttiluku on $n$, on $n$ alikuorta. Ensimmäiset alikuoret merkitään kirjaimilla s, p, d ja f, ja niissä on vastaavasti $1$, $3$, $5$ ja $7$ orbitaalia. Kun pääkvanttiluku kasvaa yli neljän, mahdollisia alikuoria on lisää. Kuoren kaikkien orbitaalien lukumäärä on $n^2$.
 

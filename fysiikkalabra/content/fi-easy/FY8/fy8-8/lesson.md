@@ -159,8 +159,8 @@ Vain tietyt protonien ja neutronien yhdistelmät ovat pysyviä. Piirrä ytimet n
 **Beetahajoamisessa** ytimessä on liikaa tai liian vähän neutroneja protoneihin verrattuna. Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi. Ytimestä lähtee elektroni ja antineutriino. Elektroni ei ole ollut ytimessä valmiina, vaan se syntyy hajoamisessa. Beeta plus -hajoamisessa protoni muuttuu neutroniksi. Silloin ytimestä lähtee positroni eli elektronin antihiukkanen ja neutriino. Beetahajoamisen aiheuttaa heikko vuorovaikutus.
 
 Beetahajoamisen kaltainen on **elektronisieppaus**. Ydin sieppaa elektronin atomin sisimmältä elektronikuorelta. Protoni muuttuu neutroniksi, ja ytimestä lähtee elektronineutriino ${}^{0}_{0}\nu_\text{e}$. Yleisesti
-```latex
-{}^{A}_{Z}\text{X} + {}^{0}_{-1}\text{e} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{0}\nu_\text{e}
+```kaavat
+elektroninsieppaus :: {}^{A}_{Z}\text{X} + {}^{0}_{-1}\text{e} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{0}\nu_\text{e}
 ```
 Tässä X on emoydin, Y on tytärydin ja $Z$ on järjestysluku. Esimerkki on ${}^{7}_{4}\text{Be} + {}^{0}_{-1}\text{e} \to {}^{7}_{3}\text{Li} + {}^{0}_{0}\nu_\text{e}$. Ydin muuttuu kuten beeta plus -hajoamisessa ($Z - 1$). Sieppaus on mahdollinen silloinkin, kun positronin syntymiseen ei riitä energiaa.
 
@@ -283,16 +283,16 @@ Esimerkiksi koboltti-60 hajoaa beeta miinus -hajoamisella nikkeli-60:n viritysti
 
 ## Kaava: Hajoamisyhtälöt
 Hajoamisyhtälössä säilyvät kaksi lukua. **Massaluku** on nukleonien kokonaismäärä. **Varausluku** on alaindeksien summa. Elektroni merkitään ${}^{0}_{-1}\text{e}$ ja positroni ${}^{0}_{+1}\text{e}$. Niiden massaluku on nolla, ja niiden varaus on $-e$ tai $+e$. Alfahajoaminen on
-```latex
-{}^{A}_{Z}\text{X} \to {}^{A-4}_{Z-2}\text{Y} + {}^{4}_{2}\text{He}
+```kaavat
+alfahajoaminen :: {}^{A}_{Z}\text{X} \to {}^{A-4}_{Z-2}\text{Y} + {}^{4}_{2}\text{He}
 ```
 beeta miinus -hajoaminen
-```latex
-{}^{A}_{Z}\text{X} \to {}^{A}_{Z+1}\text{Y} + {}^{0}_{-1}\text{e} + \bar{\nu}
+```kaavat
+$\beta^-$-hajoaminen :: {}^{A}_{Z}\text{X} \to {}^{A}_{Z+1}\text{Y} + {}^{0}_{-1}\text{e} + \bar{\nu}
 ```
 beeta plus -hajoaminen
-```latex
-{}^{A}_{Z}\text{X} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{+1}\text{e} + \nu
+```kaavat
+$\beta^+$-hajoaminen :: {}^{A}_{Z}\text{X} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{+1}\text{e} + \nu
 ```
 ja gammahajoaminen
 ```latex

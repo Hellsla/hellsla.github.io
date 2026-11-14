@@ -187,8 +187,8 @@ Malli oli suuri edistysaskel. Siitä saadut vedyn energiatasot ovat samat kuin s
 
 ## Kaava: Vetyatomin energiatasot ja siirtymän fotoni
 Vetyatomin energiatasot ovat
-```latex
-E_n = -\frac{13{,}6\,\text{eV}}{n^2}
+```kaavat
+elektronin energia vetyatomissa :: E_n = -\frac{13{,}6\,\text{eV}}{n^2}
 ```
 missä $E_n$ on tason $n$ energia ja $n = 1, 2, 3, \ldots$ on tason järjestysluku. Tämä lauseke on tässä annettu tieto. Se vastaa mitattua vedyn spektriä.
 

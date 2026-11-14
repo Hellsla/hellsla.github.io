@@ -1022,8 +1022,8 @@ Fotonilla ei ole lepomassaa, ja tyhjiössä se etenee aina valon nopeudella $c$.
 
 ## Kaava: Fotonin liikemäärä
 Vaikka fotonilla ei ole massaa, sillä on liikemäärä, joka riippuu sen energiasta:
-```latex
-p = \frac{E}{c} = \frac{h}{\lambda}
+```kaavat
+fotonin liikemäärä :: p = \frac{E}{c} = \frac{h}{\lambda}
 ```
 missä $p$ on fotonin liikemäärä ($\text{kg}\cdot\text{m/s}$), $E = hf = \tfrac{hc}{\lambda}$ fotonin energia ($\text{J}$), $c = 2{,}998 \cdot 10^8\,\text{m/s}$ valon nopeus, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ Planckin vakio ja $\lambda$ aallonpituus ($\text{m}$). Yksikkö täsmää: $\tfrac{\text{J}\,\text{s}}{\text{m}} = \tfrac{\text{kg}\cdot\text{m}^2/\text{s}^2 \cdot \text{s}}{\text{m}} = \text{kg}\cdot\text{m/s}$. Näkyvän valon fotonin liikemäärä on pieni: aallonpituudella $500\,\text{nm}$ se on ${1{,}3 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}}$. Röntgenfotonin, jonka aallonpituus on $0{,}0711\,\text{nm}$, liikemäärä on noin $7000$-kertainen, ${9{,}3 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}}$. Lyhyt aallonpituus tarkoittaa siis suurta energiaa ja suurta liikemäärää.
 
