@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: dffabae2d7e958c9
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at dffabae2d7e958c9.
+CONTENT-HASH: 889350cdbeb1cd52
+Delta review (aids paragraph of the mock exam, 2026-11-14) of the version passed at dffabae2d7e958c9.
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md fy9-harjoituskoe lämpölaajeneminen: `\Delta f/f_0` uses f_0 without defining it (the earlier part names f_1); write f_1 or say 'alkuperäinen taajuus'.
+The sentence could end with "fysiikan kokeessa" as in fi (optional); the meaning is the same without it.
 
 ## Checked
-Diff only: derivations (epsilon = v'/v - 1, Ohm's law step, b = a m_j, k = 4pi^2/a) are short, staged and read as the symbolic step before substitution; no duplicated derivation. Level suits a practice exam.
+- The changed sentences only: the computer's calculator program replaces "calculator", and a new sentence says a separate calculator or a printed book of tables is not allowed in the physics exam.
+- Clear and useful: it tells the student to practise with the on-screen calculator, which is what the real exam gives. The paragraph still sends the student to the YTL regulations.
+- fi, en and fi-easy say the same thing. Plain language: short sentences, familiar words.
