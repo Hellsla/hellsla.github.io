@@ -1,7 +1,7 @@
 """Figures of the unit fy9-koe (scripts/figlib.py, herolib.py); `python3 scripts/units.py figures fy9-koe` writes
 them into content/fi/units/fy9-koe/unit.md. The unit is written in Finnish (decimal comma).
 
-hero    the opening illustration: an exam desk with a laptop showing a fitted graph, a calculator, a squared
+hero    the opening illustration: an exam desk with a laptop showing a fitted graph, a squared
         notebook with a sketch, a pencil, a water bottle and a wall clock (no text, no people)
 steps   the seven steps of a complete solution as a ladder of numbered cards (overview figure of the theory)
 graph   what a graph in an answer contains: axis titles with units, the measured points, a fitted line through them
@@ -29,7 +29,7 @@ def fit(x, y):
 def hero():
     """Opening illustration of the Why question: the desk of a digital exam, everything a complete answer is made with."""
     f = H.hero("fy9koe-hero", "Kuvitus: koepöytä ylhäältä vinosti nähtynä. Pöydällä on kannettava tietokone, jonka näytöllä on "
-               "kuvaaja: mittauspisteet ja niihin sovitettu nouseva suora. Tietokoneen vieressä ovat laskin, ruutuvihko, jossa on "
+               "kuvaaja: mittauspisteet ja niihin sovitettu nouseva suora. Tietokoneen vieressä ovat ruutuvihko, jossa on "
                "lyijykynällä piirretty kappale ja nuolia, lyijykynä ja vesipullo. Seinällä on kello. Kuvassa ei ole tekstiä.")
     f.rect(0, 0, 1200, 600, PAPER)
     # the wall and the desk top
@@ -82,13 +82,6 @@ def hero():
     f.path("M318,452 L352,410 L362,418 L328,460 Z", HEAT_LIGHT, INK, 2)
     f.path("M318,452 L328,460 L312,470 Z", SAND_LIGHT, INK, 2)
     f.path("M352,410 L362,418 L368,410 L358,402 Z", HOT, INK, 2)
-    # the calculator
-    f.path("M930,440 L1060,424 L1082,566 L952,582 Z", INK, INK, 2.5)
-    f.path("M948,452 L1046,440 L1052,478 L954,490 Z", GOOD_LIGHT, None, 0)
-    for r in range(3):
-        for c in range(4):
-            x0 = 958 + c * 24 + r * 3.2; y0 = 502 + r * 22 - c * 3
-            f.rect(x0, y0, 17, 14, ALUMINIUM if c < 3 else HEAT, None, 0, 3)
     # the water bottle
     f.rect(1118, 330, 46, 200, H.grad(f, "fy9koe-h-bottle", WATER_LIGHT, WATER), INK, 2.5, 12)
     f.rect(1126, 300, 30, 32, COLD, INK, 2.5, 5)

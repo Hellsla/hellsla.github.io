@@ -87,3 +87,10 @@ Havainnot, joita ei muutettu (väitteiden ulkopuolella, opettajan päätettävik
 - `fy9-koe`:n hero-kuvassa on pöydällä erillinen laskin; M-reaali 3 kieltää erilliset laskimet. Kuva on katselmoitu; muutos vaatisi kuvan uudelleenpiirron ja hyväksynnän.
 - `fy9-koe` "Sähköinen koe" kuvaa aineistot Osan III piirteeksi; HVP-K26:ssa myös 5/7 ja HVP-S25:ssä 4/7 Osan II tehtävistä on aineistotehtäviä. Ei väärä väite, mutta voisi mainita.
 - Harjoituskokeen ylimääräisten vastausten ohje (lasketaan ennen mallivastauksia valitut) on harjoituksen oma sääntö; M-reaali 2.5:n mukaan oikeassa kokeessa lasketaan pienimmän pistesumman antavat vastaukset.
+
+## FY9-koekorjaukset (14.11.2026, opettajan päätös "Tee nuo fy9 pienet")
+Lähteet luettu uudelleen 14.11.2026:
+- https://www.ylioppilastutkinto.fi/sites/default/files/sites/default/files/documents/fi_reaaliaineiden_kokeiden_maaraykset.pdf (luettu 14.11.2026): kohta 3, erillisiä laskimia ja taulukkokirjoja ei saa käyttää (hero-kuvan laskin poistettu); kohta 2.5, ylimääräisistä vastauksista lasketaan pienimmän pistesumman vastaukset (harjoituskoe).
+- https://www.ylioppilastutkinto.fi/en/implementation-examination/regulations-and-guidelines/test-specific-regulations-and-guidelines-1 (luettu 14.11.2026): sama englanniksi.
+- https://tiedostot.ylioppilastutkinto.fi/kokeet/2026-03-25_FY_fi/grading-instructions.html (luettu 14.11.2026, PR #570:n kirjaus: Osan II aineistot 5/7) ja https://tiedostot.ylioppilastutkinto.fi/kokeet/2025-09-17_FY_fi/grading-instructions.html (luettu 14.11.2026, 4/7).
+Muutokset: hero-kuvasta poistettu laskin (figures.py, vain piirto; alt-teksti kolmella kielellä); yksi lause Osan II aineistoista (fy9-koe); ylimääräisten vastausten sääntö (fy9-harjoituskoe). Sivu ei laske pisteitä, joten sääntö on vain ohjeessa. Koodia ei muutettu.
