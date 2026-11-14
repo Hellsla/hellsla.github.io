@@ -319,7 +319,7 @@ FY9 ja FY1, 1280 ja 390 px. Pieni jaettu muutos: tehdään kuten U4, kun mikää
 
 ## 11b. FY9: adaptiivinen YO-valmentaja (opettaja 2026-11-14)
 
-Varattu: PR 1 – claude/fy9-valmentaja-pr1
+Varattu: claude/fy9-koekorjaukset (FY9 koekorjaukset)
 
 Suunnitelma: `docs/FY9_ADAPTIVE_PLAN.md` (#566). Opettaja hyväksyi 14.11 suunnitelman ja kaikki sen suositukset
 P1–P12: osaamisalueet ovat kuusi osaamista (`competencies.json`); tilojen sanat hyväksytään PR 4:ssä; oma
