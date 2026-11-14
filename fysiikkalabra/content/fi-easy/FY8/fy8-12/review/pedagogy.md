@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a40722ce6dea709a
+CONTENT-HASH: 8411fab9ce0d0aa9
 
 ## Blocking
 (none)
 
 ## Polish
-- lesson.md:378 — "Kun energia kasvaa, säteily vuorovaikuttaa aineen kanssa eri tavalla. Siksi läpäisykyky ei kasva kaikilla energioilla." The causal step is still abstract for S2 and "ei kasva" is easy to misread. Fix: "Kun energia kasvaa, säteily ja aine vaikuttavat toisiinsa eri tavalla. Siksi suurempi energia ei aina tarkoita parempaa läpäisykykyä."
-- lesson.md:378 — Add one take-away sentence: "Tiheä aine ja paksu kerros vaimentavat gammasäteilyä eniten." (kept from the earlier report; the teacher's content is not affected).
-- lesson.md:378 — "atomien järjestysluku eli protonien määrä on suuri": say "sen atomeissa on paljon protoneja" (one word less to learn; järjestysluku is not needed later in this paragraph).
+- lesson.md:378 — "(järjestysluku on suuri)" leaves a term the paragraph does not need. Drop the parentheses: "sen atomeissa on paljon protoneja."
+- lesson.md:378 — "Gammasäteilyn läpäisykyky ei kasva koko ajan energian mukana" and "Siksi suurempi energia ei aina tarkoita parempaa läpäisykykyä" say the same thing; the second is a conclusion of the first, so "Siksi" is now valid, but one of the two could go. Better: keep the first, drop the last, or merge: "Kun energia kasvaa, gammasäteily alkaa vuorovaikuttaa aineen kanssa eri tavalla. Siksi suurempi energia ei aina tarkoita parempaa läpäisykykyä."
+- "vuorovaikuttaa aineen kanssa eri tavalla" stays abstract; "osuu aineen atomeihin eri tavalla" would be easier for S2.
 
 ## Checked
-- The rewrite fixes the earlier blocking-level language issues: "vuorovaikutusmekanismi" is gone, "koostumus" is explained in a sentence, järjestysluku is glossed.
-- Sentences are short, one idea each; the ban on long compound sentences in NOTES.md §12 is met.
-- Teacher's content is intact: dependence on density, composition and energy; lead about seven times thicker concrete; non-monotonic energy dependence; table for Cs-137 at 662 keV.
-- The units in the paragraph ($662\,\text{keV}$) are unchanged and the table follows directly.
-- No numbers or symbols changed, so no other stage is touched; the previous PASS otherwise stands.
+- Earlier findings are fixed: "koostumus" is now explained inline in one parenthesis, "vuorovaikutusmekanismi" stays out, and "Siksi" now follows from the sentence before it (energy rises, interaction changes, so more energy is not always better).
+- Sentences are short, one idea each; no long compound sentences (NOTES.md §12).
+- Teacher's content intact: dependence on density, composition and energy; lead versus concrete about seven times thicker; non-monotonic energy dependence; the Cs-137 662 keV table follows.
+- No numbers or symbols changed; other stages are untouched, so the earlier PASS otherwise stands.

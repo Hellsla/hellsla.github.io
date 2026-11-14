@@ -1,15 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: a40722ce6dea709a
+VERDICT: PASS
+CONTENT-HASH: 8411fab9ce0d0aa9
 
 ## Blocking
-- [Major] lesson.md l. 453, "Puoliintumispaksuus riippuu aineesta ja energiasta" (capture fy8-12-theory-1280-5) — the rewrite is better than the previous one (järjestysluku and koostumus are glossed in place), but the energy half is still abstract for Selkeä suomi: "Kun energia kasvaa, säteily vuorovaikuttaa aineen kanssa eri tavalla. Siksi läpäisykyky ei kasva kaikilla energioilla" says nothing concrete, "Siksi" does not follow from the previous sentence, and the old concrete rule (higher energy usually passes more easily) was lost. "Gammasäteilyn läpäisykyky riippuu fotonien energiasta ja aineesta" repeats the first sentence. An S2 reader cannot tell what the energy dependence is. Fix: replace the last three sentences before the table with "Yleensä energeettisempi gammasäteily läpäisee ainetta paremmin, mutta kaikilla energioilla näin ei ole." (drop the repeated sentence). The page layout is not at issue.
 
 ## Polish
-- [Minor] Same paragraph: "tehokkaasti monilla energioilla" is vague; "hyvin" would do. Eleven short sentences read slightly choppy; merging "Koostumus tarkoittaa..." into the first sentence would flow better.
+- [Minor] lesson.md l. 453 — "Kun energia kasvaa, gammasäteily alkaa vuorovaikuttaa aineen kanssa eri tavalla" stays abstract for S2 readers; an optional concrete clause (for example "ja osa energioista läpäisee ohuenkin kerroksen helpommin kuin toiset") would help, but the teacher's rule against "higher energy always penetrates better" is respected as it stands.
+- [Minor] Same paragraph — "tehokkaasti monilla energioilla" is vague; "hyvin" would do. Nine short sentences read slightly choppy; the line "Sama vaimennus vaatii betonia..." could name lyijy again ("Lyijyn kanssa sama vaimennus...") so the comparison is unambiguous.
 
 ## Checked
-- fy8-12-theory-1280-5: the changed paragraph in context, with the formula blocks, graph and table around it; layout intact, graph and table legible, $662\,\text{keV}$ in LaTeX.
-- lesson.md lines 440–462 and the packet diff read; hash command run at start and end (a40722ce6dea709a). Figures unchanged, not reopened.
+- fy8-12-theory-1280-5: the reworded paragraph in context with the formula blocks, graph (lyijy, alumiini) and the d_1/2 table; layout intact, KaTeX renders $662\,\text{keV}$ and $d_{1/2}$ correctly, table values (lyijy 5,5 mm, betoni 39 mm) match "noin seitsemän kertaa".
+- Packet diff and lesson.md lines 376-384 read; hash run at start and end (8411fab9ce0d0aa9). Other captures unchanged by the diff, not reopened.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 3 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
