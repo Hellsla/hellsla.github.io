@@ -173,7 +173,7 @@ def beats():
             "funktiona. Ylhäällä oranssi aalto ja sen alla violetti aalto, jossa on kuvan aikana kaksi värähdystä enemmän. "
             "Alhaalla sininen summa-aalto: sen amplitudi kasvaa ja pienenee vuorotellen katkoviivalla piirretyn verhokäyrän "
             "mukaan. Kohdissa, joissa aallot ovat samassa vaiheessa, summa on voimakas, ja kohdissa, joissa ne ovat vastakkaisissa "
-            "vaiheissa, summa on lähes nolla. Kahden peräkkäisen voimakkaan kohdan väli on huojunnan jaksonaika T h.")
+            "vaiheissa, summa on lähes nolla. Kahden peräkkäisen voimakkaan kohdan väli on huojunnan jaksonaika T H.")
     x0, x1 = 124, 560
     W = x1 - x0
     c1, c2 = 12, 14
@@ -195,7 +195,7 @@ def beats():
     for u in (0, 0.5):
         f.line(x0 + W * u, yc - amp - 4, x0 + W * u, 286, MUTED, 1.5, "3 4")
     f.path(f"M{n(x0)},{n(282)} V{n(290)} H{n(x0 + W / 2)} V{n(282)}", stroke=INK, w=2)
-    f.tex(x0 + W / 4, 316, r"T_\text{h}", "middle", bg=True)
+    f.tex(x0 + W / 4, 316, r"T_\text{H}", "middle", bg=True)
     return f.svg()
 
 
@@ -219,7 +219,7 @@ def doppler():
     f.add(f'<g clip-path="url(#fy514-clip1)">{"".join(g)}</g>')
     speaker(f, xs, ys, 0.9)
     f.arrow(xs + 14, ys - 40, xs + 76, ys - 40, VEL, 3, 14)
-    f.tex(xs + 84, ys - 40, r"\overline{v}_\text{s}", "start", color=VEL)
+    f.tex(xs + 84, ys - 40, r"\overline{v}_\text{L}", "start", color=VEL)
     H.person(f, 566, ys + 34, IRON, INK, 0.2); f.tex(566, 160 + 8, r"\text{A}", "middle")   # drawn people as in the lessons
     H.person(f, 34, ys + 34, IRON, INK, 0.2); f.tex(34, 160 + 8, r"\text{B}", "middle")
     ra = [xs - m * vsT + m * vT for m in (2, 3)]
@@ -235,7 +235,7 @@ def doppler():
     xl = 483                                                      # between two wavefronts
     H.person(f, xl, ys2 + 34, IRON, INK, 0.2)
     f.arrow(xl - 14, ys2 - 50, xl - 76, ys2 - 50, VEL, 3, 14)
-    f.tex(xl - 84, ys2 - 50, r"\overline{v}_\text{h}", "end", color=VEL)
+    f.tex(xl - 84, ys2 - 50, r"\overline{v}_\text{H}", "end", color=VEL)
     bracket(f, xs2 + 3 * vT, xs2 + 4 * vT, 384, r"\lambda", up=False)
     f.tex(16, 18, r"\text{lähde liikkuu}", "start", bg=True)
     f.tex(16, 240, r"\text{kuulija liikkuu}", "start", bg=True)
@@ -328,7 +328,7 @@ REUSE = {
     "pitkittainen": "reveals: sound is a longitudinal pressure wave, compressions λ apart, pressure maxima at compressions",
     "alueet": "reveals: infrasound below 20 Hz, hearing 20 Hz–20 kHz, ultrasound above 20 kHz, with examples",
     "sointi": "reveals: same fundamental, different overtones; a harmonic spectrum at multiples of 220 Hz",
-    "huojunta": "reveals: the sum of two close frequencies swells and fades with the period T_h",
+    "huojunta": "reveals: the sum of two close frequencies swells and fades with the period T_H",
     "doppler": "reveals: wavefronts crowd ahead of a moving source; a moving listener sees the same λ",
     "spektri-tehtava": "safe: an FFT spectrum with peaks at 200…1000 Hz, the strongest at 400 Hz; no fundamental written",
     "huojunta-tehtava": "safe: an envelope of two forks over 0–1,0 s, loud moments every 0,25 s; no frequencies written",

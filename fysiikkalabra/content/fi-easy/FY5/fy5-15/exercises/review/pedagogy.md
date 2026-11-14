@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b12b04701a4a8096
-SCOPE: delta added-exercise from 3dd4cf5ba6c03743 base 81db4a6fd727
+CONTENT-HASH: c2befce494c5fcc7
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- fy5-15-L2-09 solution, last sentence ('Sähköteho on moninkertainen...') is extra; delete or leave.
+1. L2-05, L2-06, L2-07 and L3-04 — four data tasks in 23; good variety, but L2-07 (phone vs calibrated meter) needs its table's unit in the question.
+2. L1-02 solution: Kaava and Sijoitus differ in form (10 lg(...) dB versus 10 dB · lg); one clause would join them.
 
 ## Checked
-- L1-09: reads L = 74,0 dB at 4,0 m, inverts the logarithm, sanity check with the 80 dB point; answer 2,5e-5 W/m2 consistent.
-- L2-09: reads the level at 2,0 m, I then P = 4 pi r^2 I = 5,03 mW; second point confirms.
-- Figure shows no power or intensity; description gives the three points.
-- Progression L1 (one inverse) to L2 (two steps) sound.
+Read exercises.json (all 23 tasks; levels 9/9/5, concept, data, error, model, figure kinds) and solutions.md (L1-02, L1-05, L2-03 in full, others by structure); levels progress from one formula to modelling (hyttynen, concert); no task repeats the concert example; fi, fi-easy and en have identical ids, kinds and answers (checked by script).

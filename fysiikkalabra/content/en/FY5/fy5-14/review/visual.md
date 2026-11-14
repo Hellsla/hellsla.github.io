@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7ed4bfd7f2bf21d2
+CONTENT-HASH: 9baf18bba8c8089b
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] Worked example step 5 (example-390-2) — the unit fractions \tfrac{m}{s} inside the large fractions render small, but they are legible and fit within the card at 390 px — no change needed unless a larger unit is wanted (\text{m/s} would be bigger).
-- [Minor] Worked example step 4 — "converted to m/s" is the unit as a plain word in prose; it is untouched reviewed text — make it $\text{m/s}$ when the lesson is next edited.
+- [Minor] fig 21 (fy5-14-fig-21-390): the v_L and v_H arrow labels are small and light blue at 390 px; enlarge slightly or darken.
 
 ## Checked
-- Delta: only the substitution unit notation in the train's-horn example changed. Opened fy5-14-example-390-1.png and -2.png: the rows stay aligned at the equals signs, nothing is clipped or overflowing, and the nested units are readable.
-- The rest of the page was not affected by the change (no figures or layout touched).
+- fy5-14-fig-21-390, sim-390 (labels v_L upright L), theory-1280-4/5, stage-sovella-390-1 (fi).
+- Own captures of the four-formula Doppler tables (two two-line named tables, Lisätiedoksi) at 390 and 1280 px in fi and 390 px in en: names bold, formulas aligned, upright subscripts L and H, no clipping.
+- fi-easy shares the structure; not separately captured.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

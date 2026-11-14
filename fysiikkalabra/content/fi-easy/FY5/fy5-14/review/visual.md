@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fdb52cc8dedcff71
+CONTENT-HASH: f1c2e6bb3424337d
 
 ## Blocking
+None.
 
 ## Polish
+- [Minor] fig 21 (fy5-14-fig-21-390): the v_L and v_H arrow labels are small and light blue at 390 px; enlarge slightly or darken.
 
 ## Checked
-- delta review, hash fdb52cc8dedcff71: the only change is the unit notation inside the fractions of the Doppler worked example (m/s to stacked \tfrac{m}{s}).
-- Opened fy5-14-example-390-2.png (stage 5 Sijoitus: both f_1 and f_2 chains render as aligned rows, units upright, stacked m/s legible and not clipped or overflowing at 390 px) and fy5-14-example-390-1.png (surrounding stages, layout intact).
+- fy5-14-fig-21-390, sim-390 (labels v_L upright L), theory-1280-4/5, stage-sovella-390-1 (fi).
+- Own captures of the four-formula Doppler tables (two two-line named tables, Lisätiedoksi) at 390 and 1280 px in fi and 390 px in en: names bold, formulas aligned, upright subscripts L and H, no clipping.
+- fi-easy shares the structure; not separately captured.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

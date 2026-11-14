@@ -773,7 +773,7 @@
    "aihe": "fy5-aanen-intensiteetti-ja-kuuleminen",
    "kasite": "Intensiteettitaso",
    "maaritelma": "Desibeleinä ilmoitettava logaritminen suure, joka vertaa äänen intensiteettiä kuulokynnykseen.",
-   "kaava": "L = 10\\,\\text{dB} \\cdot \\lg\\dfrac{I}{I_0}",
+   "kaava": "L = 10\\lg\\left(\\dfrac{I}{I_0}\\right)\\,\\text{dB}",
    "kaava_puhe": "L on 10 desibeliä kertaa logaritmi I per I nolla"
   },
   {

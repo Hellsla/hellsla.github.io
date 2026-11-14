@@ -274,8 +274,8 @@ The microphone of a meter does not measure intensity but sound pressure, the var
 
 ### Intensity
 The intensity of a sound is
-```latex
-I = \frac{P}{A}
+```kaavat
+intensity :: I = \frac{P}{A}
 ```
 where $I$ is the intensity ($\text{W/m}^2$), $P$ the sound power passing through the surface ($\text{W}$) and $A$ the area of the surface ($\text{m}^2$). For a point source that radiates evenly in all directions without reflections, $A$ is the area of a sphere, $4\pi r^2$:
 ```latex
@@ -285,8 +285,8 @@ where $P$ is the sound power of the source ($\text{W}$) and $r$ the distance fro
 
 ### Sound intensity level
 The sound intensity level in decibels is
-```latex
-L = 10\,\text{dB} \cdot \lg \frac{I}{I_0}
+```kaavat
+sound intensity level :: L = 10\lg\left(\frac{I}{I_0}\right)\,\text{dB}
 ```
 where $L$ is the sound intensity level ($\text{dB}$), $I$ the intensity and $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$ the agreed reference intensity, which corresponds approximately to the threshold of hearing. The notation $\lg$ is the base-ten logarithm: $\lg x$ tells you to what power $10$ must be raised to get $x$. For example $\lg 1000 = 3$, because $10^3 = 1000$, and $\lg 1 = 0$, so $I = I_0$ gives the level $0\,\text{dB}$.
 
@@ -482,6 +482,6 @@ Another mistake is to think that a double decibel reading means a double sound. 
 - Intensity is power per unit area: $I = \tfrac{P}{A}$, unit $\text{W/m}^2$. For a point source without reflections $I = \tfrac{P}{4\pi r^2}$: twice the distance gives a quarter of the intensity.
 - The reference intensity $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$ corresponds approximately to the threshold of hearing, the weakest audible sound, and the threshold of pain is about $1\,\text{W/m}^2$. The thresholds are agreed approximate values that vary with the person and the frequency.
 - A sound level meter measures the sound pressure level (often A-weighted, $\text{dB(A)}$). In a freely travelling wave the unweighted sound pressure level is numerically about the same as the sound intensity level, in a reverberant room not necessarily.
-- The sound intensity level is $L = 10\,\text{dB} \cdot \lg \tfrac{I}{I_0}$. Doubling the intensity raises the level by about $3\,\text{dB}$, a tenfold intensity by $10\,\text{dB}$.
+- The sound intensity level is $L = 10\lg\left(\tfrac{I}{I_0}\right)\,\text{dB}$. Doubling the intensity raises the level by about $3\,\text{dB}$, a tenfold intensity by $10\,\text{dB}$.
 - Intensity from the level: $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$.
 - The intensities of independent sources are added, the decibels are not.

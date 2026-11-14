@@ -1,0 +1,197 @@
+# FY5:n kaavojen nimet (opettaja 2026-11-14: nimi vain kaavalle, joka on MAFY-taulukoissa samoin tunnuksin; FY5 kirjoitetaan MAFY-tunnuksin).
+# = on yllä nimetyn kaavan toinen muoto, + on lisätieto. Rivit tunnin tekstin järjestyksessä.
+tunti	rivi	kaava	kaava_en	nimi	name_en	lähde	MAFY-sivu	huomio
+fy5-1	256	M = F r	M = F r	voiman momentti	moment of a force	MAFY	Mekaniikan kaavoja	r on voiman varsi
+fy5-1	263	\Sigma M = M_1 + M_2 + M_3 + \ldots	\Sigma M = M_1 + M_2 + M_3 + \ldots					
+fy5-1	295	r = d\sin\alpha	r = d\sin\alpha					
+fy5-1	336	M = F r	M = F r					
+fy5-1	336	M = F d\sin\alpha	M = F d\sin\alpha					
+fy5-1	350	M = F d\sin\alpha	M = F d\sin\alpha					
+fy5-1	350	= 240\,\text{N}\cdot 0{,}35\,\text{m}\cdot\sin 65^\circ	= 240\,\text{N}\cdot 0.35\,\text{m}\cdot\sin 65^\circ					
+fy5-1	350	\approx 76{,}1\,\text{Nm}	\approx 76.1\,\text{Nm}					
+fy5-2	330	\Sigma\overline{F} = \overline{0}	\Sigma\overline{F} = \overline{0}					
+fy5-2	330	\Sigma M = 0	\Sigma M = 0					
+fy5-2	376	N_1 r_1 = N_2 r_2	N_1 r_1 = N_2 r_2					
+fy5-2	411	x_\text{pp} = \frac{m_1 x_1 + m_2 x_2}{m_1 + m_2}	x_\text{cm} = \frac{m_1 x_1 + m_2 x_2}{m_1 + m_2}					
+fy5-2	468	N_\text{B} r_\text{B} - G r_G = 0	N_\text{B} r_\text{B} - G r_G = 0					
+fy5-2	468	N_\text{B} = \frac{m g r_G}{r_\text{B}}	N_\text{B} = \frac{m g r_G}{r_\text{B}}					
+fy5-2	468	[6pt] N_\text{A} + N_\text{B} - G = 0	[6pt] N_\text{A} + N_\text{B} - G = 0					
+fy5-2	468	N_\text{A} = m g - N_\text{B}	N_\text{A} = m g - N_\text{B}					
+fy5-2	484	G = m g	G = m g					
+fy5-2	484	= 60{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2	= 60.0\,\text{kg} \cdot 9.81\,\text{m/s}^2					
+fy5-2	484	= 588{,}6\,\text{N}	= 588.6\,\text{N}					
+fy5-2	484	[6pt] N_\text{B} = \frac{G r_G}{r_\text{B}}	[6pt] N_\text{B} = \frac{G r_G}{r_\text{B}}					
+fy5-2	484	= \frac{588{,}6\,\text{N} \cdot 2{,}00\,\text{m}}{3{,}00\,\text{m}}	= \frac{588.6\,\text{N} \cdot 2.00\,\text{m}}{3.00\,\text{m}}					
+fy5-2	484	= 392{,}4\,\text{N}	= 392.4\,\text{N}					
+fy5-2	484	[6pt] N_\text{A} = G - N_\text{B}	[6pt] N_\text{A} = G - N_\text{B}					
+fy5-2	484	= 588{,}6\,\text{N} - 392{,}4\,\text{N}	= 588.6\,\text{N} - 392.4\,\text{N}					
+fy5-2	484	= 196{,}2\,\text{N}	= 196.2\,\text{N}					
+fy5-3	235	f = \frac{1}{T}	f = \frac{1}{T}	taajuus	frequency	MAFY	Aaltoliikkeen kaavoja	
+fy5-3	243	v = \frac{2\pi r}{T} = 2\pi r f	v = \frac{2\pi r}{T} = 2\pi r f					
+fy5-3	293	v = 2\pi r f	v = 2\pi r f					
+fy5-3	293	r = \frac{d}{2}	r = \frac{d}{2}					
+fy5-3	293	v = \pi d f	v = \pi d f					
+fy5-3	307	v = \pi d f	v = \pi d f					
+fy5-3	307	= \pi \cdot 0{,}46\,\text{m} \cdot 20\,\tfrac{1}{\text{s}}	= \pi \cdot 0.46\,\text{m} \cdot 20\,\tfrac{1}{\text{s}}					
+fy5-3	307	= 28{,}90\,\text{m/s}	= 28.90\,\text{m/s}					
+fy5-4	210	a_\text{n} = \frac{v^2}{r}	a_\text{n} = \frac{v^2}{r}	normaalikiihtyvyys	centripetal acceleration	MAFY	Mekaniikan kaavoja	MAFY: keskeiskiihtyvyys a = v²/r = ω²r; opettaja 2026-11-12: aina normaalikiihtyvyys; FY5:ssä ilman ω:aa
+fy5-4	277	\Sigma F = m\,\frac{v^2}{r}	\Sigma F = m\,\frac{v^2}{r}					
+fy5-4	417	x\text{:}\ \ F_\mu = m\frac{v^2}{r}	x\text{:}\ \ F_\mu = m\frac{v^2}{r}					
+fy5-4	417	y\text{:}\ \ N - mg = 0	y\text{:}\ \ N - mg = 0					
+fy5-4	417	F_\mu \le \mu_0 N = \mu_0 mg	F_\mu \le \mu_0 N = \mu_0 mg					
+fy5-4	417	\mu_0 \ge \frac{v^2}{gr}	\mu_0 \ge \frac{v^2}{gr}					
+fy5-4	433	F_\mu = m\frac{v^2}{r}	F_\mu = m\frac{v^2}{r}					
+fy5-4	433	\phantom{F_\mu} = 1200\,\text{kg}\cdot\frac{(15\,\text{m/s})^2}{45\,\text{m}}	\phantom{F_\mu} = 1200\,\text{kg}\cdot\frac{(15\,\text{m/s})^2}{45\,\text{m}}					
+fy5-4	433	\phantom{F_\mu} = 6000\,\text{N}	\phantom{F_\mu} = 6000\,\text{N}					
+fy5-4	433	[4pt] \mu_0 \ge \frac{v^2}{gr}	[4pt] \mu_0 \ge \frac{v^2}{gr}					
+fy5-4	433	\phantom{\mu_0} = \frac{(15\,\text{m/s})^2}{9{,}81\,\text{m/s}^2\cdot 45\,\text{m}}	\phantom{\mu_0} = \frac{(15\,\text{m/s})^2}{9.81\,\text{m/s}^2\cdot 45\,\text{m}}					
+fy5-4	433	\phantom{\mu_0} \approx 0{,}510	\phantom{\mu_0} \approx 0.510					
+fy5-5	200	F = \gamma \frac{m_1 m_2}{r^2}	F = \gamma \frac{m_1 m_2}{r^2}	Newtonin gravitaatiolaki	Newton's law of gravitation	MAFY	Mekaniikan kaavoja	opettaja 14.11: F pysyy FY5:ssä (MAFY: F_g)
+fy5-5	287	g = \gamma \frac{M}{r^2}	g = \gamma \frac{M}{r^2}					
+fy5-5	653	F = \gamma \frac{M m}{r^2}	F = \gamma \frac{M m}{r^2}					
+fy5-5	665	F = \gamma \frac{M m}{r^2}	F = \gamma \frac{M m}{r^2}					
+fy5-5	665	= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}	= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}					
+fy5-5	665	\cdot \frac{5{,}97 \cdot 10^{24}\,\text{kg} \cdot 7{,}35 \cdot 10^{22}\,\text{kg}}{(3{,}84 \cdot 10^{8}\,\text{m})^2}	\cdot \frac{5.97 \cdot 10^{24}\,\text{kg} \cdot 7.35 \cdot 10^{22}\,\text{kg}}{(3.84 \cdot 10^{8}\,\text{m})^2}					
+fy5-5	665	\approx 1{,}99 \cdot 10^{20}\,\text{N}	\approx 1.99 \cdot 10^{20}\,\text{N}					
+fy5-6	526	\gamma \frac{M m}{r^2} = \frac{m v^2}{r}	\gamma \frac{M m}{r^2} = \frac{m v^2}{r}					
+fy5-6	532	v = \sqrt{\frac{\gamma M}{r}}	v = \sqrt{\frac{\gamma M}{r}}					
+fy5-6	600	T = \frac{2\pi r}{v}	T = \frac{2\pi r}{v}					
+fy5-6	696	r = R + h	r = R + h					
+fy5-6	696	v = \sqrt{\frac{\gamma M}{r}}	v = \sqrt{\frac{\gamma M}{r}}					
+fy5-6	696	T = \frac{2\pi r}{v}	T = \frac{2\pi r}{v}					
+fy5-6	711	v = \sqrt{\frac{\gamma M}{r}}	v = \sqrt{\frac{\gamma M}{r}}					
+fy5-6	711	\gamma M = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}	\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}					
+fy5-6	711	\cdot 5{,}97 \cdot 10^{24}\,\text{kg}	\cdot 5.97 \cdot 10^{24}\,\text{kg}					
+fy5-6	711	= 3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2	= 3.98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2					
+fy5-6	711	v = \sqrt{\frac{3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6{,}791 \cdot 10^{6}\,\text{m}}}	v = \sqrt{\frac{3.98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6.791 \cdot 10^{6}\,\text{m}}}					
+fy5-6	711	= 7659{,}7\,\text{m/s}	= 7659.7\,\text{m/s}					
+fy5-6	711	[6pt] T = \frac{2\pi r}{v}	[6pt] T = \frac{2\pi r}{v}					
+fy5-6	711	= \frac{2\pi \cdot 6{,}791 \cdot 10^{6}\,\text{m}}{7659{,}7\,\text{m/s}}	= \frac{2\pi \cdot 6.791 \cdot 10^{6}\,\text{m}}{7659.7\,\text{m/s}}					
+fy5-6	711	= 5570{,}6\,\text{s}	= 5570.6\,\text{s}					
+fy5-7	299	f = \frac{1}{T}	f = \frac{1}{T}	taajuus	frequency	MAFY	Aaltoliikkeen kaavoja	
+fy5-7	305	x = A \sin\left(\frac{2\pi t}{T}\right) = A \sin(2\pi f t)	x = A \sin\left(\frac{2\pi t}{T}\right) = A \sin(2\pi f t)					
+fy5-7	484	T = \frac{t_n}{n}	T = \frac{t_n}{n}					
+fy5-7	484	x = A \sin\left(\frac{2\pi t}{T}\right)	x = A \sin\left(\frac{2\pi t}{T}\right)					
+fy5-7	498	T = \frac{t_n}{n}	T = \frac{t_n}{n}					
+fy5-7	498	= \frac{3{,}0\,\text{s}}{5} = 0{,}60\,\text{s}	= \frac{3.0\,\text{s}}{5} = 0.60\,\text{s}					
+fy5-7	498	x = A \sin\left(\frac{2\pi t}{T}\right)	x = A \sin\left(\frac{2\pi t}{T}\right)					
+fy5-7	498	= 4{,}0\,\text{cm} \cdot \sin\left(\frac{2\pi \cdot 0{,}25\,\text{s}}{0{,}60\,\text{s}}\right)	= 4.0\,\text{cm} \cdot \sin\left(\frac{2\pi \cdot 0.25\,\text{s}}{0.60\,\text{s}}\right)					
+fy5-7	498	= 4{,}0\,\text{cm} \cdot \sin 2{,}618	= 4.0\,\text{cm} \cdot \sin 2.618					
+fy5-7	498	= 4{,}0\,\text{cm} \cdot 0{,}500	= 4.0\,\text{cm} \cdot 0.500					
+fy5-7	498	= 2{,}0\,\text{cm}	= 2.0\,\text{cm}					
+fy5-8	216	F = -kx	F = -kx	harmoninen voima	harmonic force	MAFY	Aaltoliikkeen kaavoja	MAFY vektorina; vektorimerkintä jätetään pois
+fy5-8	223	F_\text{v} = kx	F_\text{v} = kx					
+fy5-8	282	E_\text{p} = \frac{1}{2}kx^2	E_\text{p} = \frac{1}{2}kx^2					
+fy5-8	363	k = \frac{mg}{x}	k = \frac{mg}{x}					
+fy5-8	363	E_\text{p} = \frac{1}{2}kx^2	E_\text{p} = \frac{1}{2}kx^2					
+fy5-8	377	k = \frac{mg}{x}	k = \frac{mg}{x}					
+fy5-8	377	\phantom{k} = \frac{1{,}20\,\text{kg}\cdot 9{,}81\,\text{m/s}^2}{0{,}030\,\text{m}}	\phantom{k} = \frac{1.20\,\text{kg}\cdot 9.81\,\text{m/s}^2}{0.030\,\text{m}}					
+fy5-8	377	\phantom{k} = 392{,}4\,\text{N/m}	\phantom{k} = 392.4\,\text{N/m}					
+fy5-8	377	[4pt] E_\text{p} = \tfrac{1}{2}kx^2	[4pt] E_\text{p} = \tfrac{1}{2}kx^2					
+fy5-8	377	\phantom{E_\text{p}} = \tfrac{1}{2}\cdot 392{,}4\,\tfrac{\text{N}}{\text{m}}	\phantom{E_\text{p}} = \tfrac{1}{2}\cdot 392.4\,\tfrac{\text{N}}{\text{m}}					
+fy5-8	377	\phantom{E_\text{p} =}\cdot (0{,}030\,\text{m})^2	\phantom{E_\text{p} =}\cdot (0.030\,\text{m})^2					
+fy5-8	377	\phantom{E_\text{p}} = 0{,}1766\,\text{J}	\phantom{E_\text{p}} = 0.1766\,\text{J}					
+fy5-9	207	T = 2\pi\sqrt{\frac{m}{k}}	T = 2\pi\sqrt{\frac{m}{k}}	harmonisen värähtelijän jaksonaika	period of a harmonic oscillator	MAFY	Aaltoliikkeen kaavoja	
+fy5-9	243	T = 2\pi\sqrt{\frac{l}{g}}	T = 2\pi\sqrt{\frac{l}{g}}	matemaattisen heilurin jaksonaika	period of a simple pendulum	MAFY	Aaltoliikkeen kaavoja	
+fy5-9	261	\frac{1}{2}mv^2 + \frac{1}{2}kx^2 = \frac{1}{2}kA^2	\frac{1}{2}mv^2 + \frac{1}{2}kx^2 = \frac{1}{2}kA^2					
+fy5-9	323	T^2 = \frac{4\pi^2 m}{k}	T^2 = \frac{4\pi^2 m}{k}					
+fy5-9	323	k = \frac{4\pi^2 m}{T^2}	k = \frac{4\pi^2 m}{T^2}					
+fy5-9	337	k = \frac{4\pi^2 m}{T^2}	k = \frac{4\pi^2 m}{T^2}					
+fy5-9	337	= \frac{4\pi^2 \cdot 0{,}400\,\text{kg}}{(0{,}800\,\text{s})^2}	= \frac{4\pi^2 \cdot 0.400\,\text{kg}}{(0.800\,\text{s})^2}					
+fy5-9	337	= 24{,}67\,\text{N/m}	= 24.67\,\text{N/m}					
+fy5-10	266	v = \frac{\lambda}{T} = f\lambda	v = \frac{\lambda}{T} = f\lambda	aaltoliikkeen perusyhtälö	wave equation	MAFY	Aaltoliikkeen kaavoja	
+fy5-10	377	v = \frac{s}{t}	v = \frac{s}{t}					
+fy5-10	377	v = f\lambda	v = f\lambda					
+fy5-10	377	\lambda = \frac{v}{f} = \frac{s}{f\,t}	\lambda = \frac{v}{f} = \frac{s}{f\,t}					
+fy5-10	391	v = \frac{s}{t}	v = \frac{s}{t}					
+fy5-10	391	= \frac{6{,}0\,\text{m}}{2{,}5\,\text{s}} = 2{,}4\,\text{m/s}	= \frac{6.0\,\text{m}}{2.5\,\text{s}} = 2.4\,\text{m/s}					
+fy5-10	391	[6pt] \lambda = \frac{v}{f}	[6pt] \lambda = \frac{v}{f}					
+fy5-10	391	= \frac{2{,}4\,\text{m/s}}{3{,}0\,\text{Hz}} = 0{,}80\,\text{m}	= \frac{2.4\,\text{m/s}}{3.0\,\text{Hz}} = 0.80\,\text{m}					
+fy5-11	1040	\beta = \alpha	\beta = \alpha					
+fy5-11	1175	\alpha = \varphi	\alpha = \varphi					
+fy5-11	1175	\beta = \alpha	\beta = \alpha					
+fy5-11	1175	\gamma = 90^\circ - \beta	\gamma = 90^\circ - \beta					
+fy5-11	1190	\alpha = 50^\circ	\alpha = 50^\circ					
+fy5-11	1190	\beta = 50^\circ	\beta = 50^\circ					
+fy5-11	1190	\gamma = 90^\circ - 50^\circ = 40^\circ	\gamma = 90^\circ - 50^\circ = 40^\circ					
+fy5-12	78	y = y_1 + y_2	y = y_1 + y_2					
+fy5-12	154	\Delta s = |s_1 - s_2|	\Delta s = |s_1 - s_2|					
+fy5-12	178	\Delta s = n\lambda	\Delta s = n\lambda					
+fy5-12	178	n = 0, 1, 2, \ldots	n = 0, 1, 2, \ldots					
+fy5-12	182	\Delta s = \left(n + \tfrac{1}{2}\right)\lambda	\Delta s = \left(n + \tfrac{1}{2}\right)\lambda					
+fy5-12	182	n = 0, 1, 2, \ldots	n = 0, 1, 2, \ldots					
+fy5-12	263	\lambda = \frac{v}{f}	\lambda = \frac{v}{f}					
+fy5-12	263	\Delta s = s_1 - s_2	\Delta s = s_1 - s_2					
+fy5-12	263	\frac{\Delta s}{\lambda} = \frac{s_1 - s_2}{\lambda}	\frac{\Delta s}{\lambda} = \frac{s_1 - s_2}{\lambda}					
+fy5-12	278	\lambda = \frac{v}{f}	\lambda = \frac{v}{f}					
+fy5-12	278	= \frac{340\,\text{m/s}}{680\,\text{Hz}} = 0{,}500\,\text{m}	= \frac{340\,\text{m/s}}{680\,\text{Hz}} = 0.500\,\text{m}					
+fy5-12	278	\Delta s = s_1 - s_2	\Delta s = s_1 - s_2					
+fy5-12	278	= 4{,}25\,\text{m} - 3{,}00\,\text{m} = 1{,}25\,\text{m}	= 4.25\,\text{m} - 3.00\,\text{m} = 1.25\,\text{m}					
+fy5-12	278	\frac{\Delta s}{\lambda} = \frac{1{,}25\,\text{m}}{0{,}500\,\text{m}} = 2{,}5	\frac{\Delta s}{\lambda} = \frac{1.25\,\text{m}}{0.500\,\text{m}} = 2.5					
+fy5-13	241	L = n \cdot \frac{\lambda_n}{2}	L = n \cdot \frac{\lambda_n}{2}					
+fy5-13	241	\lambda_n = \frac{2L}{n}	\lambda_n = \frac{2L}{n}					
+fy5-13	248	f_n = \frac{v}{\lambda_n} = n \cdot \frac{v}{2L} = n f_1	f_n = \frac{v}{\lambda_n} = n \cdot \frac{v}{2L} = n f_1					
+fy5-13	248	n = 1, 2, 3, \ldots	n = 1, 2, 3, \ldots					
+fy5-13	337	L = n \cdot \frac{\lambda_n}{4}	L = n \cdot \frac{\lambda_n}{4}					
+fy5-13	337	f_n = n \cdot \frac{v}{4L}	f_n = n \cdot \frac{v}{4L}					
+fy5-13	337	n = 1, 3, 5, \ldots	n = 1, 3, 5, \ldots					
+fy5-13	406	f_1 = \frac{v}{2L} \;\Rightarrow\; v = 2 L f_1	f_1 = \frac{v}{2L} \;\Rightarrow\; v = 2 L f_1					
+fy5-13	406	f_1' = \frac{v}{2L'} \;\Rightarrow\; L' = \frac{v}{2 f_1'}	f_1' = \frac{v}{2L'} \;\Rightarrow\; L' = \frac{v}{2 f_1'}					
+fy5-13	420	v = 2 L f_1	v = 2 L f_1					
+fy5-13	420	= 2 \cdot 0{,}650\,\text{m} \cdot 110\,\text{Hz}	= 2 \cdot 0.650\,\text{m} \cdot 110\,\text{Hz}					
+fy5-13	420	= 143\,\text{m/s}	= 143\,\text{m/s}					
+fy5-13	420	[6pt] L' = \frac{v}{2 f_1'}	[6pt] L' = \frac{v}{2 f_1'}					
+fy5-13	420	= \frac{143\,\text{m/s}}{2 \cdot 165\,\text{Hz}}	= \frac{143\,\text{m/s}}{2 \cdot 165\,\text{Hz}}					
+fy5-13	420	= 0{,}4333\,\text{m}	= 0.4333\,\text{m}					
+fy5-14	399	f_n = n f_1	f_n = n f_1					
+fy5-14	399	n = 1, 2, 3, \ldots	n = 1, 2, 3, \ldots					
+fy5-14	467	f_\text{H} = |f_1 - f_2|	f_\text{H} = |f_1 - f_2|	huojunta	beat frequency	MAFY	Aaltoliikkeen kaavoja	MAFY: f_H
+fy5-14	560	f = f_0 \cdot \frac{v}{v - v_\text{L}}	f = f_0 \cdot \frac{v}{v - v_\text{L}}	Dopplerin ilmiö, äänilähde liikkuu kohti havaitsijaa	Doppler effect, source moving towards the observer	MAFY	Aaltoliikkeen kaavoja	MAFYn tunnukset v_L (lähde) ja v_H (havaitsija); ∓/±-kaavat jaettu MAFYn neljäksi kaavaksi
+fy5-14	560	f = f_0 \cdot \frac{v}{v + v_\text{L}}	f = f_0 \cdot \frac{v}{v + v_\text{L}}	Dopplerin ilmiö, äänilähde liikkuu pois päin havaitsijasta	Doppler effect, source moving away from the observer	MAFY	Aaltoliikkeen kaavoja	
+fy5-14	567	f = f_0 \cdot \frac{v + v_\text{H}}{v}	f = f_0 \cdot \frac{v + v_\text{H}}{v}	Dopplerin ilmiö, havaitsija liikkuu kohti äänilähdettä	Doppler effect, observer moving towards the source	MAFY	Aaltoliikkeen kaavoja	
+fy5-14	567	f = f_0 \cdot \frac{v - v_\text{H}}{v}	f = f_0 \cdot \frac{v - v_\text{H}}{v}	Dopplerin ilmiö, havaitsija liikkuu pois päin äänilähteestä	Doppler effect, observer moving away from the source	MAFY	Aaltoliikkeen kaavoja	
+fy5-14	590	f_1 = f_0 \cdot \frac{v}{v - v_\text{L}}	f_1 = f_0 \cdot \frac{v}{v - v_\text{L}}					
+fy5-14	590	f_2 = f_0 \cdot \frac{v}{v + v_\text{L}}	f_2 = f_0 \cdot \frac{v}{v + v_\text{L}}					
+fy5-14	590	\Delta f = f_1 - f_2	\Delta f = f_1 - f_2					
+fy5-14	605	f_1 = f_0 \cdot \frac{v}{v - v_\text{L}}	f_1 = f_0 \cdot \frac{v}{v - v_\text{L}}					
+fy5-14	605	= 311\,\text{Hz} \cdot \frac{340\,\tfrac{\text{m}}{\text{s}}}{(340 - 30{,}0)\,\tfrac{\text{m}}{\text{s}}}	= 311\,\text{Hz} \cdot \frac{340\,\tfrac{\text{m}}{\text{s}}}{(340 - 30.0)\,\tfrac{\text{m}}{\text{s}}}					
+fy5-14	605	= 341{,}10\,\text{Hz}	= 341.10\,\text{Hz}					
+fy5-14	605	[6pt] f_2 = f_0 \cdot \frac{v}{v + v_\text{L}}	[6pt] f_2 = f_0 \cdot \frac{v}{v + v_\text{L}}					
+fy5-14	605	= 311\,\text{Hz} \cdot \frac{340\,\tfrac{\text{m}}{\text{s}}}{(340 + 30{,}0)\,\tfrac{\text{m}}{\text{s}}}	= 311\,\text{Hz} \cdot \frac{340\,\tfrac{\text{m}}{\text{s}}}{(340 + 30.0)\,\tfrac{\text{m}}{\text{s}}}					
+fy5-14	605	= 285{,}78\,\text{Hz}	= 285.78\,\text{Hz}					
+fy5-14	605	[6pt] \Delta f = f_1 - f_2	[6pt] \Delta f = f_1 - f_2					
+fy5-14	605	= 341{,}10\,\text{Hz} - 285{,}78\,\text{Hz}	= 341.10\,\text{Hz} - 285.78\,\text{Hz}					
+fy5-14	605	= 55{,}32\,\text{Hz}	= 55.32\,\text{Hz}					
+fy5-15	277	I = \frac{P}{A}	I = \frac{P}{A}	intensiteetti	intensity	MAFY	Aaltoliikkeen kaavoja	
+fy5-15	281	I = \frac{P}{4\pi r^2}	I = \frac{P}{4\pi r^2}	=	=			intensiteetin muu muoto, nimen alla
+fy5-15	288	L = 10\lg\left(\frac{I}{I_0}\right)\,\text{dB}	L = 10\lg\left(\frac{I}{I_0}\right)\,\text{dB}	äänen intensiteettitaso	sound intensity level	MAFY	Aaltoliikkeen kaavoja	MAFY-muoto L = 10 lg(I/I_0) dB (oli 10 dB · lg)
+fy5-15	295	\lg \frac{I}{I_0} = \frac{L}{10\,\text{dB}}	\lg \frac{I}{I_0} = \frac{L}{10\,\text{dB}}					
+fy5-15	295	\frac{I}{I_0} = 10^{\,L/(10\,\text{dB})}	\frac{I}{I_0} = 10^{\,L/(10\,\text{dB})}					
+fy5-15	295	I = I_0 \cdot 10^{\,L/(10\,\text{dB})}	I = I_0 \cdot 10^{\,L/(10\,\text{dB})}					
+fy5-15	306	L_2 - L_1 = 10\,\text{dB} \cdot \lg \frac{I_2}{I_1}	L_2 - L_1 = 10\,\text{dB} \cdot \lg \frac{I_2}{I_1}					
+fy5-15	436	I = I_0 \cdot 10^{\,L/(10\,\text{dB})}	I = I_0 \cdot 10^{\,L/(10\,\text{dB})}					
+fy5-15	436	[6pt] P = I \cdot 4\pi r^2	[6pt] P = I \cdot 4\pi r^2					
+fy5-15	446	\dfrac{L}{10\,\text{dB}}	\dfrac{L}{10\,\text{dB}}					
+fy5-15	446	= \dfrac{96\,\text{dB}}{10\,\text{dB}}	= \dfrac{96\,\text{dB}}{10\,\text{dB}}					
+fy5-15	446	= 9{,}6	= 9.6					
+fy5-15	457	I = I_0 \cdot 10^{\,L/(10\,\text{dB})}	I = I_0 \cdot 10^{\,L/(10\,\text{dB})}					
+fy5-15	457	= 1{,}0 \cdot 10^{-12}\,\tfrac{\text{W}}{\text{m}^2} \cdot 10^{9{,}6}	= 1.0 \cdot 10^{-12}\,\tfrac{\text{W}}{\text{m}^2} \cdot 10^{9.6}					
+fy5-15	457	= 3{,}98 \cdot 10^{-3}\,\tfrac{\text{W}}{\text{m}^2}	= 3.98 \cdot 10^{-3}\,\tfrac{\text{W}}{\text{m}^2}					
+fy5-15	457	[6pt] P = I \cdot 4\pi r^2	[6pt] P = I \cdot 4\pi r^2					
+fy5-15	457	= 3{,}98 \cdot 10^{-3}\,\tfrac{\text{W}}{\text{m}^2} \cdot 4\pi \cdot (10\,\text{m})^2	= 3.98 \cdot 10^{-3}\,\tfrac{\text{W}}{\text{m}^2} \cdot 4\pi \cdot (10\,\text{m})^2					
+fy5-15	457	= 5{,}00\,\text{W}	= 5.00\,\text{W}					
+fy5-16	140	t_\text{v} = \frac{t_0}{2^{\,n}}	t_\text{ref} = \frac{t_0}{2^{\,n}}					
+fy5-16	144	n = \frac{L - L_0}{3\,\text{dB}}	n = \frac{L - L_0}{3\,\text{dB}}					
+fy5-16	406	2^{\,n} = \frac{t_0}{t}	2^{\,n} = \frac{t_0}{t}					
+fy5-16	406	L_\text{v} = L_0 + n \cdot 3\,\text{dB}	L_\text{ref} = L_0 + n \cdot 3\,\text{dB}					
+fy5-16	406	\Delta L = L - L_\text{v}	\Delta L = L - L_\text{ref}					
+fy5-17	243	d = \frac{v t}{2}	d = \frac{v t}{2}					
+fy5-17	249	\Delta t = \frac{d}{v_\text{S}} - \frac{d}{v_\text{P}}	\Delta t = \frac{d}{v_\text{S}} - \frac{d}{v_\text{P}}					
+fy5-17	249	[6pt] d = \frac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t	[6pt] d = \frac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t					
+fy5-17	319	v = \sqrt{g h}	v = \sqrt{g h}					
+fy5-17	390	\Delta t = d\left(\frac{1}{v_\text{S}} - \frac{1}{v_\text{P}}\right)	\Delta t = d\left(\frac{1}{v_\text{S}} - \frac{1}{v_\text{P}}\right)					
+fy5-17	390	[6pt] d = \frac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t	[6pt] d = \frac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t					
+fy5-17	404	d = \frac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t	d = \frac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t					
+fy5-17	404	= \frac{6{,}0\,\tfrac{\text{km}}{\text{s}} \cdot 3{,}5\,\tfrac{\text{km}}{\text{s}}}{6{,}0\,\tfrac{\text{km}}{\text{s}} - 3{,}5\,\tfrac{\text{km}}{\text{s}}} \cdot 25\,\text{s}	= \frac{6.0\,\tfrac{\text{km}}{\text{s}} \cdot 3.5\,\tfrac{\text{km}}{\text{s}}}{6.0\,\tfrac{\text{km}}{\text{s}} - 3.5\,\tfrac{\text{km}}{\text{s}}} \cdot 25\,\text{s}					
+fy5-17	404	= 8{,}4\,\tfrac{\text{km}}{\text{s}} \cdot 25\,\text{s}	= 8.4\,\tfrac{\text{km}}{\text{s}} \cdot 25\,\text{s}					
+fy5-17	404	= 210\,\text{km}	= 210\,\text{km}					

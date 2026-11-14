@@ -12,7 +12,7 @@
 **Given:** intensity $I = 3.2 \cdot 10^{-5}\,\text{W/m}^2$, threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$
 **Find:** the sound intensity level $L$ in decibels
 **Principle:** The sound intensity level compares the intensity with the threshold of hearing logarithmically: it tells how many tenfold steps the intensity is above the threshold of hearing, multiplied by ten.
-**Formula:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$
+**Formula:** $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$
 **Conversions:** Not needed: both intensities are in $\text{W/m}^2$, and the units cancel in the quotient.
 **Substitution:** $L = 10\,\text{dB} \cdot \lg \dfrac{3.2 \cdot 10^{-5}\,\text{W/m}^2}{1.0 \cdot 10^{-12}\,\text{W/m}^2} = 10\,\text{dB} \cdot \lg (3.2 \cdot 10^{7}) = 10\,\text{dB} \cdot 7.505 = 75.05\,\text{dB}$
 **Answer:** $75\,\text{dB}$, in whole decibels, because the intensity is given to two significant figures.
@@ -22,7 +22,7 @@
 **Given:** the meter reading, taken as the sound intensity level in a free sound field, $L = 95\,\text{dB}$, threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$
 **Find:** the intensity $I$ in $\text{W/m}^2$
 **Principle:** The level is ten times the logarithm of the ratio of the intensities. The intensity is obtained by dividing the equation by $10\,\text{dB}$ and using the definition of the logarithm: if $\lg x = y$, then $x = 10^y$.
-**Formula:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$, so $\lg \dfrac{I}{I_0} = \dfrac{L}{10\,\text{dB}}$ and $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
+**Formula:** $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$, so $\lg \dfrac{I}{I_0} = \dfrac{L}{10\,\text{dB}}$ and $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
 **Conversions:** Not needed: $\dfrac{L}{10\,\text{dB}} = \dfrac{95\,\text{dB}}{10\,\text{dB}} = 9.5$, the decibels cancel.
 **Substitution:** $I = 1.0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{9.5} = 3.16 \cdot 10^{-3}\,\text{W/m}^2 = 0.00316\,\text{W/m}^2$
 **Answer:** $0.0032\,\text{W/m}^2$, two significant figures, because the level is given in whole decibels.
@@ -52,7 +52,7 @@
 **Given:** sound power of the loudspeaker $P = 0.050\,\text{W}$, distance $r = 3.0\,\text{m}$, threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$; the sound spreads evenly and is not reflected
 **Find:** the sound intensity level $L$ in decibels
 **Principle:** The loudspeaker is a point source whose power is spread evenly over a spherical surface of radius $3.0\,\text{m}$. First the intensity is calculated, then it is compared with the threshold of hearing.
-**Formula:** $I = \dfrac{P}{4\pi r^2}$ and $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$, so $L = 10\,\text{dB} \cdot \lg \dfrac{P}{4\pi r^2 I_0}$
+**Formula:** $I = \dfrac{P}{4\pi r^2}$ and $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$, so $L = 10\,\text{dB} \cdot \lg \dfrac{P}{4\pi r^2 I_0}$
 **Conversions:** Not needed: the power is in watts and the distance in metres.
 **Substitution:** $I = \dfrac{0.050\,\text{W}}{4\pi \cdot (3.0\,\text{m})^2} = 4.42 \cdot 10^{-4}\,\text{W/m}^2$, so $L = 10\,\text{dB} \cdot \lg \dfrac{4.42 \cdot 10^{-4}\,\text{W/m}^2}{1.0 \cdot 10^{-12}\,\text{W/m}^2} = 10\,\text{dB} \cdot \lg (4.42 \cdot 10^{8}) = 86.45\,\text{dB}$
 **Answer:** $86\,\text{dB}$, in whole decibels, because the power and the distance are given to two significant figures.
@@ -142,7 +142,7 @@ So the intensity on the street is about $10\,000$ times as great. The ratio $2$ 
 
 ## fy5-15-L3-03
 **Find:** whether a negative sound intensity level is impossible, what it means, and whether the fan can be heard
-**Principle:** The sound intensity level $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$ is not an intensity but a comparison with the threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. A logarithm is negative when its argument is positive but less than one.
+**Principle:** The sound intensity level $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$ is not an intensity but a comparison with the threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$. A logarithm is negative when its argument is positive but less than one.
 **Model answer:** The student is not right. A negative level does not mean a negative intensity but that the intensity is smaller than the threshold of hearing: $\lg \dfrac{I}{I_0} = -0.5$, so
 ```latex
 I = I_0 \cdot 10^{-0.5} \approx 3.2 \cdot 10^{-13}\,\text{W/m}^2
@@ -158,7 +158,7 @@ It is positive, about a third of the threshold of hearing. Every time the intens
 
 ## fy5-15-L1-06
 **Find:** what a sound intensity level of $0\,\text{dB}$ means
-**Principle:** The sound intensity level is $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$, so it compares the intensity with the threshold of hearing $I_0$. The level is zero when the argument of the logarithm is $1$.
+**Principle:** The sound intensity level is $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$, so it compares the intensity with the threshold of hearing $I_0$. The level is zero when the argument of the logarithm is $1$.
 **Model answer:** The correct option is the one according to which the intensity is $I_0$, because then $\lg(I/I_0) = \lg 1 = 0$. A level of $0\,\text{dB}$ is therefore the threshold of hearing, the weakest sound that a listener can just barely perceive, not silence. The option that says there is no sound is wrong, because the logarithm of zero does not exist and the intensity $I = 0$ gives no level. The option about the threshold of pain is wrong, because the threshold of pain is many times the threshold of hearing, that is, at the upper end of the scale. The option that says zero is the lower limit of the scale is wrong, because for weaker sounds the quotient $I/I_0$ is less than $1$ and the level is negative.
 
 ## fy5-15-L1-07
@@ -170,7 +170,7 @@ It is positive, about a third of the threshold of hearing. Every time the intens
 **Given:** intensity at the threshold of pain $I = 1.0\,\text{W/m}^2$, threshold of hearing $I_0 = 1.0 \cdot 10^{-12}\,\text{W/m}^2$
 **Find:** the sound intensity level $L$ in decibels
 **Principle:** The sound intensity level is obtained by comparing the intensity with the threshold of hearing $I_0$ on a logarithmic scale.
-**Formula:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$
+**Formula:** $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$
 **Conversions:** Not needed: both intensities are in $\text{W/m}^2$, so the units cancel in the quotient.
 **Substitution:** the quotient is $I/I_0 = 10^{12}$, so
 ```latex
@@ -274,7 +274,7 @@ r &= \sqrt{\dfrac{0.3945\,\text{W}}{4\pi \cdot 3.162 \cdot 10^{-7}\,\text{W/m}^2
 ```latex
 \begin{aligned}
 &I = I_1 + I_2 \\
-&L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}
+&L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}
 \end{aligned}
 ```
 **Conversions:** Not needed: the distances are in metres and the levels in decibels.
@@ -304,7 +304,7 @@ r_\text{limit} &= 8.0\,\text{m} \cdot \sqrt{\dfrac{3.112 \cdot 10^{-4}}{1.0 \cdo
 **Find:** the intensity $I$ in $\text{W/m}^2$
 **Principle:** The level is ten times the logarithm of the ratio of the intensities. The intensity is obtained by dividing the equation by $10\,\text{dB}$ and using the definition of the logarithm: if $\lg x = y$, then $x = 10^y$.
 **Reading the figure:** At the distance $4.0\,\text{m}$ the marked point is at the level $L = 74.0\,\text{dB}$.
-**Formula:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$, so $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
+**Formula:** $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$, so $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
 **Conversions:** None are needed: $\dfrac{L}{10\,\text{dB}} = \dfrac{74.0\,\text{dB}}{10\,\text{dB}} = 7.40$, the decibels cancel.
 **Substitution:** $I = 1.0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{7.40} = 2.51 \cdot 10^{-5}\,\text{W/m}^2$
 **Answer:** $2.5 \cdot 10^{-5}\,\text{W/m}^2$, that is $0.000025\,\text{W/m}^2$, two significant figures like the hearing threshold $1.0 \cdot 10^{-12}\,\text{W/m}^2$.

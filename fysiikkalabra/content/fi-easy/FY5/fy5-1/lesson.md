@@ -253,8 +253,8 @@ Vääntövaikutuksen ratkaisee voiman **vaikutussuora**. Vaikutussuora on suora,
 
 ## Kaava: Voiman momentti
 Voiman momentti kiertoakselin suhteen on voiman suuruuden ja voiman varren tulo:
-```latex
-M = F r
+```kaavat
+voiman momentti :: M = F r
 ```
 Kaavassa $M$ on voiman momentti ($\text{Nm}$), $F$ on voiman suuruus ($\text{N}$) ja $r$ on voiman varsi ($\text{m}$). Voiman varsi on kiertoakselin kohtisuora etäisyys voiman vaikutussuorasta. Momentin yksikkö on newtonmetri $\text{Nm}$. Se ei ole sama asia kuin energian yksikkö joule. Molemmat ovat newtonin ja metrin tuloja, mutta niiden etäisyydet ovat erilaisia. Momentissa etäisyys on kohtisuorassa voimaa vastaan. Työssä etäisyys on voiman suuntainen siirtymä.
 

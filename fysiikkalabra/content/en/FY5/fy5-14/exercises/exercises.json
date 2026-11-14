@@ -278,7 +278,7 @@
     {
       "id": "fy5-14-L2-07",
       "level": 2,
-      "text": "Extension task. A student solves a problem: a car drives at $30.0\\,\\text{m/s}$ straight towards a listener at rest and sounds a horn with a frequency of $500\\,\\text{Hz}$. The speed of sound is $340\\,\\text{m/s}$.\n\nThe student uses the formula $f = f_0 \\cdot \\tfrac{v + v_\\text{s}}{v}$ and gets the frequency heard $544\\,\\text{Hz}$.\n\nWhat is the error in the student's solution? Calculate the correct frequency heard.",
+      "text": "Extension task. A student solves a problem: a car drives at $30.0\\,\\text{m/s}$ straight towards a listener at rest and sounds a horn with a frequency of $500\\,\\text{Hz}$. The speed of sound is $340\\,\\text{m/s}$.\n\nThe student uses the formula $f = f_0 \\cdot \\tfrac{v + v_\\text{L}}{v}$ and gets the frequency heard $544\\,\\text{Hz}$.\n\nWhat is the error in the student's solution? Calculate the correct frequency heard.",
       "kind": [
         "error"
       ],
@@ -304,7 +304,7 @@
         },
         {
           "text": "$519\\,\\text{Hz}$: the beat frequency is $4\\,\\text{Hz}$ and the fork was lower than $523\\,\\text{Hz}$.",
-          "feedback": "Correct: from the figure the beat period is $0.25\\,\\text{s}$, so $f_\\text{b} = \\tfrac{1}{0.25\\,\\text{s}} = 4\\,\\text{Hz}$ and the frequencies differ by $4\\,\\text{Hz}$. Wax lowers the unknown frequency. The beats got faster, so the difference grew, and the unknown fork was already lower before the wax: $523\\,\\text{Hz} - 4\\,\\text{Hz} = 519\\,\\text{Hz}$.",
+          "feedback": "Correct: from the figure the beat period is $0.25\\,\\text{s}$, so $f_\\text{H} = \\tfrac{1}{0.25\\,\\text{s}} = 4\\,\\text{Hz}$ and the frequencies differ by $4\\,\\text{Hz}$. Wax lowers the unknown frequency. The beats got faster, so the difference grew, and the unknown fork was already lower before the wax: $523\\,\\text{Hz} - 4\\,\\text{Hz} = 519\\,\\text{Hz}$.",
           "correct": true
         },
         {
