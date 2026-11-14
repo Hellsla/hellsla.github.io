@@ -17,6 +17,8 @@ FY8-kaavat.
 
 ## 3b. Kaavataulukon välistys `\\[Npt]`: FY7:n neljä kaavaa (2026-11-14, #580:n löydös)
 
+Varattu: claude/fy7-kaavanimet-3b
+
 Korjaus on tehty (PR #587): `scripts/kaavat.py` lukee rivinvaihdon välin `\\[4pt]` osaksi rivinvaihtoa, ja
 `docs/*/kaavanimet.tsv`:stä on poistettu `[Npt]`-etuliitteet. Se ei muuta yhdenkään katselmoinnin tilaa (`reviews.py
 verify` samoin ennen ja jälkeen; tiiviste on aina tekstin oma, kaavat.canonical vain vertaa kahta versiota).
