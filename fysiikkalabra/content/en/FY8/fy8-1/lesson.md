@@ -168,12 +168,12 @@ The energies of photons and electrons are very small numbers in joules, so they 
 
 ### Frequency and wavelength
 The energy of a photon of radiation with frequency $f$ is
-```latex
-E = hf
+```kaavat
+photon energy :: E = hf
 ```
 where $E$ is the photon energy ($\text{J}$), $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ is the Planck constant and $f$ is the frequency of the radiation ($\text{Hz}$). Electromagnetic radiation travels in a vacuum at the speed of light $c = 2.998 \cdot 10^8\,\text{m/s}$, and the basic equation of wave motion gives $c = f\lambda$. Substituting $f = \tfrac{c}{\lambda}$ gives
-```latex
-E = \frac{hc}{\lambda}
+```kaavat
+photon energy :: E = \frac{hc}{\lambda}
 ```
 where $\lambda$ is the wavelength of the radiation in a vacuum ($\text{m}$). The shorter the wavelength, the greater the photon energy. For example, the photon energy of green light, $\lambda = 500\,\text{nm}$, is $E = \tfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^8\,\text{m/s}}{500 \cdot 10^{-9}\,\text{m}} = 3.97 \cdot 10^{-19}\,\text{J}$, or $2.48\,\text{eV}$. For estimates it is worth converting the product $hc$ once into electronvolts and nanometres. Since $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$ and $1\,\text{m} = 10^{9}\,\text{nm}$, the product is
 

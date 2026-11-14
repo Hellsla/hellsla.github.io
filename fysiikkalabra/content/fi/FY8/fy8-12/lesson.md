@@ -353,8 +353,8 @@ I = I_0 \left(\frac{1}{2}\right)^{d/d_{1/2}}
 missä $I_0$ on säteilyn intensiteetti ilman estettä, $I$ intensiteetti esteen takana, $d$ esteen paksuus ja $d_{1/2}$ puoliintumispaksuus. Intensiteetin sijasta yhtälöön voi sijoittaa mittarin nettopulssimäärän eli pulssimäärän, josta taustasäteily on vähennetty. Eksponentti $\tfrac{d}{d_{1/2}}$ kertoo, kuinka monta puoliintumispaksuutta esteessä on, eikä sen tarvitse olla kokonaisluku. Paksuuksilla $d$ ja $d_{1/2}$ on oltava sama yksikkö.
 
 Säteilyn vaimeneminen voidaan kirjoittaa myös eksponenttifunktiolla, jossa on **vaimennuskerroin** $\mu$:
-```latex
-I = I_0 e^{-\mu d}
+```kaavat
+heikennyslaki :: I = I_0 e^{-\mu d}
 ```
 missä $\mu$ on vaimennuskerroin, jonka yksikkö on $\text{m}^{-1}$ tai $\text{cm}^{-1}$, ja $d$ on esteen paksuus samassa pituusyksikössä. Kun $d = d_{1/2}$, intensiteetti on puolittunut:
 ```latex

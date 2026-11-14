@@ -168,12 +168,12 @@ Fotonin ja elektronin energiat ovat jouleina hyvin pieniä lukuja. Siksi niille 
 
 ### Taajuus ja aallonpituus
 Säteilyn taajuus on $f$. Tämän säteilyn fotonin energia on
-```latex
-E = hf
+```kaavat
+fotonin energia :: E = hf
 ```
 Tässä $E$ on fotonin energia ($\text{J}$), $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on Planckin vakio ja $f$ on säteilyn taajuus ($\text{Hz}$). Sähkömagneettinen säteily etenee tyhjiössä valon nopeudella $c = 2{,}998 \cdot 10^8\,\text{m/s}$. Aaltoliikkeen perusyhtälö on $c = f\lambda$. Sijoitetaan siihen $f = \tfrac{c}{\lambda}$, ja saadaan
-```latex
-E = \frac{hc}{\lambda}
+```kaavat
+fotonin energia :: E = \frac{hc}{\lambda}
 ```
 Tässä $\lambda$ on säteilyn aallonpituus tyhjiössä ($\text{m}$). Mitä lyhyempi aallonpituus on, sitä suurempi on fotonin energia. Esimerkki: vihreän valon aallonpituus on $\lambda = 500\,\text{nm}$. Sen fotonin energia on $E = \tfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s}}{500 \cdot 10^{-9}\,\text{m}} = 3{,}97 \cdot 10^{-19}\,\text{J}$ eli $2{,}48\,\text{eV}$. Arvioita varten kannattaa muuntaa tulo $hc$ kerran elektronivolteiksi ja nanometreiksi. Muunnoksessa käytetään yhtälöitä $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$ ja $1\,\text{m} = 10^{9}\,\text{nm}$. Tulo on
 
