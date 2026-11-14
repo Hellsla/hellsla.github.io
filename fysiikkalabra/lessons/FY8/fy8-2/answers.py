@@ -33,7 +33,4 @@ E3 = h * c / (318e-9 * e)                          # model atom, line A 318 nm: 
 EB = h * c / (443e-9 * e)                          # line B 443 nm: E3 - E1 = 2,7991 eV
 a["fy8-2-L3-04"] = h * c / ((E3 - EB) * e) * 1e9   # missing line = E1 = E3 - (E3 - E1) = 1,1003 eV, λ = hc/E1 = 1127 nm -> 1130 nm
 a["fy8-2-L3-05"] = (1 - 405 / 520) * 100           # dye B: heat share = 1 - λ_abs/λ_fl = 1 - 405/520 = 0,2212 -> 22,1 % (A 18,9 %, C 15,1 %)
-# Figure tasks (fy8-2/lamp-spectrum, lines read at 405, 436, 546 nm)
-a["fy8-2-L2-09"] = h * c / (436e-9 * e)            # blue line read 436 nm: E = hc/λ = 4,5561e-19 J = 2,8440 eV -> 2,84 eV
-a["fy8-2-L3-06"] = h * c / (405e-9 * e) - h * c / (546e-9 * e)   # same lower level: ΔE = E_violet - E_green = 3,0617 - 2,2711 = 0,7907 eV -> 0,79 eV
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
