@@ -221,6 +221,9 @@ lang-tekstejä tai fysiikkaa.
 Myöhemmin kurssi kerrallaan, kunkin luvun seuraavan sisältömuutoksen yhteydessä katselmointeineen: tyyppi D (fy6-5,
 fy6-6, fy6-9, fy6-12, fy6-13, fy6-14), fy1-2:n säätimien ryhmittely, näppäinvaihtoehto raahaukselle, nimien
 yhtenäistäminen (Toisto / Tauko / Alusta) ja toistuvien seliterivien poisto.
+PR 1:n mittauksesta (1366×650, koordinaattori 14.11): fy3-1 ja fy3-9 kutistavat tekstinsä itse sim.js:ssä (9 px,
+fy3-9 jättää nimiöitä pois), ja fy5-9, fy6-11 ja fy8-14 saavat päällekkäisiä nimiöitä kapeassa kuvassa; korjataan
+sim.js:ssä, jos PR 2–3:n leveämpi kuva ei riitä.
 
 ## 11. Tehtävänäkymä ja teorian taitto (opettaja 2026-11-14, UI/UX-auditoinnin tulos)
 
