@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8781f82cc4cc2034
-Delta review (aids paragraph of the mock exam, 2026-11-14) of the version passed at 2c676e2e18304cf1.
+CONTENT-HASH: 2cd498b57a53898c
+Delta review (extra-answers rule, 2026-11-14) of the version passed at 8781f82cc4cc2034.
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+- Instruction is correct and unambiguous: with extra answers, count only the allowed number, the lowest-scoring ones. A student may find it harsh; one clause saying why (so the extra answer cannot only help) would be nice, not needed.
 
 ## Checked
-- The changed sentences only: the computer's calculator program replaces "calculator", and a new sentence says a separate calculator or a printed book of tables is not allowed in the physics exam.
-- Clear and useful: it tells the student to practise with the on-screen calculator, which is what the real exam gives. The paragraph still sends the student to the YTL regulations.
-- fi, en and fi-easy say the same thing. English matches the Finnish.
+- Rule now matches the real exam and is repeated as the practice rule in the next sentence; 'the page does not add up the points for you' prevents hunting for a calculator.
+- Reads fine on phone: one short paragraph under the table.
+- Rest of the page unchanged and not re-judged.

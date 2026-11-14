@@ -311,7 +311,7 @@ Harjoituskoe noudattaa fysiikan ylioppilaskokeen yleistä rakennetta. Aikaa on k
 | Osa II | $4$ tehtävää seitsemästä | $4 \cdot 15$ p |
 | Osa III | $2$ aineistotehtävää kolmesta | $2 \cdot 20$ p |
 
-Kokeen enimmäispistemäärä on $120$ p. Jos vastaat Osassa II tai III useampaan tehtävään kuin ohje sanoo, harjoitusta arvioidessasi lasket mukaan vain ne, jotka valitsit ennen mallivastausten avaamista.
+Kokeen enimmäispistemäärä on $120$ p. Jos vastaat Osassa II tai III useampaan tehtävään kuin ohje sanoo, oikeassa kokeessa arvioitavaksi lasketaan ne vastaukset, joiden pistesumma on pienin. Harjoitusta arvioidessasi toimi samoin: laske mukaan vain niin monta vastausta kuin ohje sallii, ne joiden pistesumma on pienin. Sivu ei laske pisteitä puolestasi.
 
 ### Osan I pisteet
 Osan I kymmenen kohtaa ovat kukin $2$ p, yhteensä $20$ p:
