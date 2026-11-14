@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 5b627e2749906f73
-ROUND: 2
+CONTENT-HASH: 6252f2afbde508b5
+SCOPE: delta added-exercise from 5b627e2749906f73 base 5a45b28682e8
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] none beyond carried-over template matters.
+- [Minor] fy8-1-L1-10 Vastaus — "Irrotustyö 3,20 eV on MAFY-taulukon Irrotustöitä arvo" reads clumsily — "...taulukon *Irrotustöitä*-kohdan arvo kalsiumille".
+- [Minor] fy8-1-L2-08/09 solutions — answer line gives 2,7 eV while the Sijoitus line ends 2,66 eV; clear, only mildly inconsistent presentation.
 
 ## Checked
-Round 1 Blocking resolved. Own 390 and 1280 px renders of the new task with options, feedback and solution open (r3 captures, read as 2x tiles); every formula line now fits the card, no clipping, no page overflow (measured). fy8-1-L1-09: the E_k,max substitution and result are on separate lines, 0,60 eV fully visible; statement cards and feedback intact.
+- 1280 px open-state captures: L1 part 10-11 (1-10 task, hint, solution), L2 parts 11-13 (1-18 and 1-19 with the figure kuvaaja-ab, both solutions).
+- Figure kuvaaja-ab: axes with units, ticks, gridlines, A and B distinct and labelled, no values given away; same figure in both tasks, set reads as one.
+- Maths: chains aligned, units upright, decimal comma, answers set apart. Layout at 360 px relied on the packet's clean check.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

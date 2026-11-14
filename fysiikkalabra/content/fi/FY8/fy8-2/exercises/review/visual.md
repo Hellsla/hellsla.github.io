@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: cbbbb7286332c468
-ROUND: 2
+CONTENT-HASH: ca5e96a8a17d1b90
+SCOPE: delta added-exercise from cbbbb7286332c468 base f6ae5d507c79
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] figures pick-* — axis numbers about 7 px at 390 px; descriptions are full.
+- [Minor] fy8-2-L2-09 Kuvaajan lukeminen — "Sininen viiva on viiva, joka on lähimpänä arvoa 436 nm" is clumsy — "Sininen viiva on lähimpänä arvoa $436\,\text{nm}$".
+- [Minor] fy8-2-L3-06 — subscripts v and g mix Finnish (violetti) and English (green) initials; use $\text{v}$ and $\text{vi}$ or similar consistently.
+- [Minor] fy8-2-L2-09/L3-06 — section is named "Kuvaajan lukeminen" for a spectrum picture; "Kuvan lukeminen" fits better.
 
 ## Checked
-- Delta for fy8-2-L1-08 (2-8): 390 px render with options open; the student quotation is now split ("... (-3,40 eV), eli E_3 - E_2 = 1,89 eV"), every line fits the card, no clipping or overflow.
-Round 1 Blocking resolved. Own 390 and 1280 px renders of the new task with options, feedback and solution open (r3 captures, read as 2x tiles); every formula line now fits the card, no clipping, no page overflow (measured). fy8-2-L2-08: the E and lambda lines (12, 13, 14) are one short row each; option A feedback now says the lines are bright emission lines on black; all four option figures checked again, unchanged and consistent with the solution.
+- 1280 px open-state captures: L2 parts 11-12 (2-17 task, figure lamp-spectrum, full solution), L3 parts 9-10 (3-xx with a), b), c), figure, full solution and model answer).
+- Figure lamp-spectrum: scale labelled in nm with ticks, lines distinct, element unnamed, no answer given; matches the description.
+- Maths: chains aligned, units upright, decimal comma, Sijoitus rows readable. Layout at 360 px relied on the packet's clean check.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
