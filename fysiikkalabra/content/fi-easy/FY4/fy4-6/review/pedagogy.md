@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 0761f1fb3da0dbd4
+CONTENT-HASH: 69f07803e19cee87
 
 ## Blocking
 None.
 
 ## Polish
-1. lesson.md: F_μ0 means the actual static friction in the inequality and the limiting value in the new formula; the sentence between them explains it. Consider saying 'F_μ0 saavuttaa arvon μ₀N vasta juuri ennen liukumaan lähtöä'.
+None.
 
 ## Checked
-Whole chapter text for the new symbols, formula sections, inquiry, exit ticket, solutions; numbers unchanged; fi-easy and en match fi.
+- Diff (lesson.md:128): "silta" -> "pinta" and "antaa" -> "aiheuttaa"; removes a stray word that did not fit the slope context, term now matches the glossary (pinta). No numbers or symbols touched.
+- Paragraph still reads in order: normal force shrinks, static friction limit shrinks, so the box slides.
+- Rest of the lesson unchanged from the version passed earlier.
