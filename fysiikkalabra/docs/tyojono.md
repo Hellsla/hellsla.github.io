@@ -257,6 +257,7 @@ ja 8 (avattavat Virhekäsitys ja Tiivistelmä) pysyvät ennallaan ja mahtuvat v�
 toleransseihin, tallennusavaimiin ja palautustiedoston muotoon ei kosketa. Mergen jälkeen katsotaan mainin CI-ajo.
 
 ### U4. Kaksi tekstiä pois (pieni, ensin)
+**Varattu: claude/u4-kaksi-tekstia-pois**
 - Teorian alun rivi "Et ole vielä vastannut: siirry ennusteeseen" poistetaan. Sama muistutus jää Tutki-vaiheen kokeen
   kohdalle ja Palaa ennusteisiisi -laatikkoon.
 - Esimerkit-vaiheen johdanto ("Kun olet opiskellut luvun teorian…", lang `inquiry.lead_<vaihe>`) poistetaan kaikista
