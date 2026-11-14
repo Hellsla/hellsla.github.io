@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 91929cab691c65d8
+CONTENT-HASH: 3f1a684d0e3d8b8e
 SCOPE: delta added-exercise from 0103d8f31883bc59 base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
-- exercises.json (L2-09 answer 22.6407) and answers.py:329–331 — the stored answer uses k = 1,49 (line read to three decimals) while the solution now reads 0,30 / 0,90 and gets k = 1,50, α₂ = 22,5°; both are inside the 3 % tolerance, but the shown answer (22,6°) and the solution (22,5°) differ — compute answers.py from the solution's readings (0,30 and 0,90), so the answer is 22.48.
+- lessons/FY7/fy7-10/answers.py:51–52 — the comment still says "slope k = 0,596 / 0,40 = 1,49 = n" and computes an unused `k`, while line 53 (and the solution) use n = 1,50 — drop the dead line or reword the comment to the solution's readings 0,30 / 0,90 → 1,50.
 
 ## Checked
-- Delta round 2: L1-09 and L2-09 (added exercises); hash identical at start and end.
-- Round-1 blocking fixed: L2-09 Sijoitus now 0,60 : 0,40 = 1,50, n₂ = 1,50, α₂ = asin(sin 35,0° / 1,50) = 22,48° → 22,5°, arithmetic right.
-- fit figure: least-squares line of the drawn data has slope 1,4895, intercept −0,004, so it passes 0,294 (0,20) and 0,890 (0,60); readings 0,30 and 0,90 are right to the grid's precision.
-- Physics of L2-09: sin α₁ = (n₂/n₁) sin α₂, slope = n₂ with n₁ = 1,00; reading from the line, not raw points, follows the guardrail.
-- L1-09: MAFY water 1,333; α₂ = 36,24° = answers.py; toward-normal check right.
+- Delta round 3: L1-09 and L2-09 (added exercises); hash identical at start and end.
+- Round-2 polish fixed: L2-09 answers.py now uses n = 1,50: asin(sin 35,0° / 1,50) = asin(0,3824) = 22,481° = stored 22.48145, matching the solution's 22,5°.
+- fit figure: least-squares line of the plotted data has slope 1,4895, intercept −0,004, so it passes 0,294 at 0,20 and 0,890 at 0,60; readings 0,30 / 0,90 are right to the grid's precision, and the 3 % tolerance covers k = 1,49 too (22,64°).
+- L2-09 physics: sin α₁ = (n₂/n₁) sin α₂, slope = n₂ with n₁ = 1,00; read from the line, not raw points (guardrail).
+- L1-09: MAFY water 1,333; sin α₂ = 0,7880 / 1,333 = 0,5912, α₂ = 36,24° = answers.py; refraction toward the normal; three figures from 52,0°.

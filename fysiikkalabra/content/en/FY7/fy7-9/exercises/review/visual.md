@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 6b06ec0d75512578
-SCOPE: delta added-exercise from 30247692532990e3 base 8f23aa7ae3bd
+CONTENT-HASH: d7bf0f3a0e19dc68
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] 9-9 Reasonableness: "about $1.43$ times: $1.434 \cdot 5772$" two rounding levels side by side; optional.
 
 ## Checked
-- fy7-9-open-exercises-1280-9 (en): task L1-09 (Wien constant from MAFY) hint, answer field "8.3 · 10³ K", opened solution.
-- fy7-9-open-exercises-L2-1280-12, -13: task with the spectrum graph (M_lambda axis title with unit, wavelength axis in µm, visible-light band, single curve, nothing clipped), answer field and opened solution; $\Delta\lambda$ and $\lambda_{\max}T$ set cleanly.
-- Typography: units upright with thin space, aligned chains, no red KaTeX; the set reads as one.
+- Delta: changed Reasonableness lines of 9-9 (open-exercises-1280-9) and 9-18 (open-exercises-L2-1280-12, -13), full size. Numbers, units, $1000\,\text{K}$ and $730\,{}^\circ\text{C}$ render cleanly; English fluent; no layout damage. Rest not re-reviewed.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

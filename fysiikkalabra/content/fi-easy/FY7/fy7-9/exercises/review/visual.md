@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 27f2fd5d7997b94f
-SCOPE: delta added-exercise from 0a877e8585ccb3a6 base 8f23aa7ae3bd
+CONTENT-HASH: 416152cda6092b33
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] 9-9 Järkevyys: "1,43-kertainen: 1,434" two rounding levels side by side; optional.
 
 ## Checked
-- Added exercises L1-09, L2-09 (fi-easy, FY7 fy7-9): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-9.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
-- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
-- Hash identical at start and end.
+- Delta: changed Järkevyys lines of 9-9 (open-exercises-1280-9) and 9-18 (open-exercises-L2-1280-12, -13), full size. Numbers, units and the new glow sentence ($730\,{}^\circ\text{C}$) render cleanly; plain clear Finnish; no layout damage. Rest not re-reviewed.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 8fa4836f5a4d0631
-SCOPE: delta added-exercise from fab32967a3807688 base 8f23aa7ae3bd
+CONTENT-HASH: 404b2f409486b34d
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] 2-9 Järkevyys: "Tehtävän 2-2" is written with a hyphen while the page numbers show "2–2"; optional en dash.
 
 ## Checked
-- Added exercises L1-09, L2-09 (fi-easy, FY7 fy7-2): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-2.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
-- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
-- Hash identical at start and end.
+- Delta: changed Järkevyys of the added 2-9 (fy7-2-open-exercises-1280-10, full size). $7{,}6\,\text{mm}$, $3{,}75$ and $28\,\text{mm}$ render cleanly, clear Finnish, no layout damage. Rest not re-reviewed.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
