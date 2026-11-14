@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 21c0771bd024b3c4
+CONTENT-HASH: 94d0c6ca72417724
 
 ## Blocking
-None.
 
 ## Polish
-1. lesson.md: F_μ0 means the actual static friction in the inequality and the limiting value in the new formula; the sentence between them explains it. Consider saying 'F_μ0 saavuttaa arvon μ₀N vasta juuri ennen liukumaan lähtöä'.
+- None.
 
 ## Checked
-Whole chapter text for the new symbols, formula sections, inquiry, exit ticket, solutions; numbers unchanged; fi-easy and en match fi.
+batch delta review: 'ramp' to 'surface' generalises correctly; consistent with the rest of the section.

@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c7393e08a3ea5ab9
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 1a8d5341ee906641
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
 
 ## Checked
-- Droplet wording: each colour leaves the droplet at its strongest in a slightly different direction (minimum-deviation caustic), so from a given droplet one colour reaches the eye especially strongly; no longer claims literally one colour. 42 deg / 40.6 deg unchanged. Languages match. (language checked: en.)
+batch delta review: the goal, hook question, reflect and explain prompts, the Why question and the heading now restrict "red on the outer edge" to the primary rainbow. This is correct: the secondary bow has the order reversed, and the hook mentions it. The model answer (42° red, 40.6° violet from the antisolar point) is unchanged and consistent. The goal still completes "you will learn to".
