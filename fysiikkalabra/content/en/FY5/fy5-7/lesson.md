@@ -296,8 +296,8 @@ When the displacement is drawn as a function of time, the result is a $(t, x)$ g
 
 ## Formula: Sinusoidal oscillation
 The frequency is the reciprocal of the period, because one oscillation takes the time $T$, and in a unit of time $\tfrac{1}{T}$ oscillations are completed:
-```latex
-f = \frac{1}{T}
+```kaavat
+frequency :: f = \frac{1}{T}
 ```
 where $f$ is the frequency ($\text{Hz}$) and $T$ the period ($\text{s}$). The unit of frequency is the **hertz**, $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$. When the period is $T = 0.50\,\text{s}$, the object makes $2.0$ oscillations per second, that is, $f = 2.0\,\text{Hz}$.
 

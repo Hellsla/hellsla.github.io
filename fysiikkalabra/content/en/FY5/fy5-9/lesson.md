@@ -204,8 +204,8 @@ A simple harmonic oscillator has a remarkable property. If the amplitude is doub
 ## Formula: Period of a simple harmonic oscillator
 ### Mass on a spring
 When a body oscillates on a spring and the only force along the motion is the harmonic force of the spring, the period is
-```latex
-T = 2\pi\sqrt{\frac{m}{k}}
+```kaavat
+period of a harmonic oscillator :: T = 2\pi\sqrt{\frac{m}{k}}
 ```
 where $T$ is the period ($\text{s}$), $m$ the mass of the oscillating body ($\text{kg}$) and $k$ the spring constant of the spring ($\text{N/m}$). A greater mass accelerates more slowly under the same force, so the period grows as the mass grows. A stiffer spring gives a greater force, so the period becomes shorter. The square root means that the mass must be quadrupled to double the period. The formula holds for a spring hanging vertically too: the weight only shifts the equilibrium position, and the displacement from it obeys the same law.
 
@@ -240,8 +240,8 @@ In a simple pendulum a point mass hangs on a light string and swings without air
 </svg>
 
 For small angles $\sin\alpha$ is approximately the angle in radians, and the arc length from the equilibrium position is $s = l\alpha$. The restoring force is then $\tfrac{mg}{l}s$, which is proportional to the displacement, and the pendulum is a simple harmonic oscillator with "spring constant" $\tfrac{mg}{l}$. When this is substituted into the formula for the spring, the mass cancels. For small swings the period of a simple pendulum is
-```latex
-T = 2\pi\sqrt{\frac{l}{g}}
+```kaavat
+period of a simple pendulum :: T = 2\pi\sqrt{\frac{l}{g}}
 ```
 where $T$ is the period ($\text{s}$), $l$ the length of the pendulum, that is, the distance from the point of suspension of the string to the centre of mass of the body ($\text{m}$), and $g$ the acceleration of free fall ($9.81\,\text{m/s}^2$). The period does not depend on the mass of the body, nor, for small swings, on the amplitude.
 

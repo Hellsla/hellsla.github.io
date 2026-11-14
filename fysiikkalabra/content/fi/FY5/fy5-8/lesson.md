@@ -213,8 +213,8 @@ Kun kärryä pidetään paikallaan poikkeamassa $x$, käsi vetää tai työntä�
 
 ## Kaava: Harmoninen voima
 Kun $x$-akselin origo on kohdassa, jossa jousi on lepopituudessaan, ja $x$ on jousen venymä tai puristuma lepopituudesta, jousen kappaleeseen kohdistaman voiman $x$-komponentti on
-```latex
-F = -kx
+```kaavat
+harmoninen voima :: F = -kx
 ```
 missä $F$ on jousen voima kappaleeseen ($\text{N}$), $x$ jousen venymä tai puristuma lepopituudesta ($\text{m}$) ja $k$ jousen **jousivakio** ($\text{N/m}$). Miinusmerkki kertoo suunnan: voima on aina poikkeamaa vastakkaissuuntainen. Kun $x > 0$, $F < 0$, ja kun $x < 0$, $F > 0$. Voiman suuruus on $k|x|$. Jousivakio kertoo jousen jäykkyyden eli sen, kuinka monta newtonia voimaa tarvitaan venymän metriä kohti. Auton jousituksen jousi voi olla kymmeniä kilonewtoneita metriä kohti, lelun jousi vain muutamia newtoneita metriä kohti. Vaakasuorassa jousessa lepopituuden kohta on myös kappaleen tasapainoasema, joten poikkeama tasapainoasemasta on silloin $x$. Laki pätee vain, kun jousta ei venytetä liikaa eikä puristeta liikaa.
 

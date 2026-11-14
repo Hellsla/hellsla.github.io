@@ -464,10 +464,10 @@ A microphone measures the variation of air pressure as a function of time. From 
 
 ### Beats
 When two sounds whose frequencies $f_1$ and $f_2$ differ only slightly sound at the same time, their pressure variations add up. At times the waves are in phase and reinforce each other, at times in opposite phase and weaken each other. We hear one sound whose pitch corresponds to the average of the frequencies and whose loudness alternately grows and fades. This is called beats. In one second one wave completes $|f_1 - f_2|$ more vibrations than the other, and each time the waves return to the same phase. So the number of loud moments per second is
-```latex
-f_\text{h} = |f_1 - f_2|
+```kaavat
+beat frequency :: f_\text{H} = |f_1 - f_2|
 ```
-where $f_\text{h}$ is the beat frequency (Hz) and $f_1$ and $f_2$ are the frequencies of the sounds (Hz). The time between two loud moments, the period of the beats, is $T_\text{h} = \tfrac{1}{f_\text{h}}$. The subscript h, used in the figures as well, comes from the Finnish edition of this chapter: for the beat frequency and the period of the beats it stands for *huojunta* (beats), and for the speed of the listener below it stands for *havaitsija* (observer).
+where $f_\text{H}$ is the beat frequency (Hz) and $f_1$ and $f_2$ are the frequencies of the sounds (Hz). The time between two loud moments, the period of the beats, is $T_\text{H} = \tfrac{1}{f_\text{H}}$. The subscripts H and L, used in the figures as well, are those of the MAFY tables and come from Finnish: H stands for *huojunta* (beats) in the beat frequency and the period of the beats and for *havaitsija* (observer) in the speed of the listener below, and L stands for *lähde* (source) in the speed of the source.
 
 <svg data-fig="huojunta" viewBox="0 0 600 336" role="img" aria-label="Schematic figure, not to scale: two sounds whose frequencies f1 and f2 differ slightly, and their sum as a function of time. At the top an orange wave and below it a purple wave that has two more vibrations during the picture. At the bottom is the blue sum wave: its amplitude alternately grows and shrinks following the envelope drawn with a dashed line. Where the waves are in phase the sum is strong, and where they are in opposite phase the sum is almost zero. The time between two successive strong places is the period of the beats T h." style="max-width:100%;font-size:24px">
   <line x1="124" y1="44" x2="560" y2="44" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="4 5"/>
@@ -487,7 +487,7 @@ where $f_\text{h}$ is the beat frequency (Hz) and $f_1$ and $f_2$ are the freque
   <line x1="124" y1="184" x2="124" y2="286" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="3 4"/>
   <line x1="342" y1="184" x2="342" y2="286" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="3 4"/>
   <path d="M124,282 V290 H342 V282" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
-  <foreignObject x="216.5" y="301.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$T_\text{h}$</span></div></foreignObject>
+  <foreignObject x="216.5" y="301.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$T_\text{H}$</span></div></foreignObject>
 </svg>
 
 Beats are used for tuning instruments. When a string is tightened towards the frequency of the reference note, the beats slow down and stop when the frequencies are equal. Beats stand out clearly when the frequency difference is at most about $10\,\text{Hz}$. With a larger difference the ear hears a rough sound or two separate sounds.
@@ -495,7 +495,7 @@ Beats are used for tuning instruments. When a string is tightened towards the fr
 <figure class="unit-photo"><img src="pics/fy5/ambulance-panning.webp" alt="A white ambulance drives along a street. The ambulance is sharp, but the background and the high-rise buildings are blurred horizontally."><figcaption>An ambulance on the move in Toronto. The camera turned with the vehicle, so the background is blurred. As the ambulance approaches, the siren sounds higher, and as it moves away, lower.</figcaption></figure>
 
 ### The Doppler effect when the source moves
-When a sound source moves, each wavefront starts from the point where the source is at that moment and spreads through the air at speed $v$ in every direction. The period of the source is $T_0 = \tfrac{1}{f_0}$. During that time the previous wavefront travels a distance $v T_0$, but the source travels after it a distance $v_\text{s} T_0$. In front of the source the spacing of the wavefronts, that is, the wavelength, is therefore $(v - v_\text{s}) T_0$, and behind the source it is $(v + v_\text{s}) T_0$. A listener at rest hears the frequency $f = \tfrac{v}{\lambda}$, so an approaching source sounds higher and a receding source lower.
+When a sound source moves, each wavefront starts from the point where the source is at that moment and spreads through the air at speed $v$ in every direction. The period of the source is $T_0 = \tfrac{1}{f_0}$. During that time the previous wavefront travels a distance $v T_0$, but the source travels after it a distance $v_\text{L} T_0$. In front of the source the spacing of the wavefronts, that is, the wavelength, is therefore $(v - v_\text{L}) T_0$, and behind the source it is $(v + v_\text{L}) T_0$. A listener at rest hears the frequency $f = \tfrac{v}{\lambda}$, so an approaching source sounds higher and a receding source lower.
 
 <svg data-fig="doppler" viewBox="0 0 600 424" role="img" aria-label="Schematic figure seen from above, two situations one below the other. At the top the source moves to the right at 0.4 times the speed of sound, shown by a blue velocity arrow. The wavefronts are circles that have started from earlier positions of the source, so they are close together in front of the source and far apart behind it. In the direction of listener A on the right the wavelength lambda A is short, and in the direction of listener B on the left the wavelength lambda B is long. At the bottom the source is at rest and the wavefronts are concentric circles at equal intervals. The listener moves to the left towards the source, shown by a blue velocity arrow; the wavelength lambda is the same in all directions." style="max-width:100%;font-size:24px">
   <defs><clipPath id="fy514-clip1"><rect x="66" y="34" width="478" height="140"/></clipPath><clipPath id="fy514-clip2"><rect x="26" y="262" width="548" height="118"/></clipPath></defs>
@@ -504,7 +504,7 @@ When a sound source moves, each wavefront starts from the point where the source
   <path d="M291,109 L305.5,96.5 V143.5 L291,131 Z" fill="#8a96a3" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <line x1="314" y1="80" x2="363" y2="80" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
   <path d="M376,80 L362,86.5 L362,73.5 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <foreignObject x="384" y="65.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}_\text{s}$</div></foreignObject>
+  <foreignObject x="384" y="65.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\overline{v}_\text{L}$</div></foreignObject>
   <path d="M561,154 L562,124 H570 L571,154 H567 L566,134 L565,154 Z" fill="#1f2933" stroke-linejoin="round"/>
   <path d="M559,126 Q558.5,104 566,103 Q573.5,104 573,126 Z" fill="#6c757d" stroke-linejoin="round"/>
   <path d="M560,107 L558,126" fill="none" stroke="#6c757d" stroke-width="4.4" stroke-linejoin="round" stroke-linecap="round"/>
@@ -544,7 +544,7 @@ When a sound source moves, each wavefront starts from the point where the source
   <path d="M477,291 Q477,283.5 483,284 Q489.5,284 489,290 Q484,287.5 477,291 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="469" y1="266" x2="420" y2="266" stroke="#1971c2" stroke-width="3" stroke-linecap="butt"/>
   <path d="M407,266 L421,259.5 L421,272.5 Z" fill="#1971c2" stroke-linejoin="round"/>
-  <foreignObject x="354" y="251.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\overline{v}_\text{h}$</div></foreignObject>
+  <foreignObject x="354" y="251.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#1971c2">$\overline{v}_\text{H}$</div></foreignObject>
   <path d="M368,376 V384 H414 V376" fill="none" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
   <foreignObject x="381" y="389.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\lambda$</div></foreignObject>
   <foreignObject x="16" y="3.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$\text{source moves}$</span></div></foreignObject>
@@ -552,43 +552,45 @@ When a sound source moves, each wavefront starts from the point where the source
 </svg>
 
 ### The Doppler effect when the listener moves
-When the source is at rest and the listener moves, the wavelength does not change. The listener, however, meets wavefronts more often when moving towards them, because the wavefronts approach at speed $v + v_\text{h}$. When moving away, the wavefronts catch up with the listener at speed $v - v_\text{h}$. The frequency heard is the rate at which the wavefronts are met, so it is higher than $f_0$ when approaching and lower when moving away.
+When the source is at rest and the listener moves, the wavelength does not change. The listener, however, meets wavefronts more often when moving towards them, because the wavefronts approach at speed $v + v_\text{H}$. When moving away, the wavefronts catch up with the listener at speed $v - v_\text{H}$. The frequency heard is the rate at which the wavefronts are met, so it is higher than $f_0$ when approaching and lower when moving away.
 The Doppler effect is used to measure speeds: an ultrasound device measures the flow speed of blood.
 
 ## Further information: Doppler formulas {Lisätiedoksi: Dopplerin ilmiön laskukaavat}
-The frequency heard can be calculated from the spacing of the wavefronts. When the source moves, the wavelength is $(v - v_\text{s}) T_0$ in front of the source and $(v + v_\text{s}) T_0$ behind it. A listener at rest hears the frequency $f = \tfrac{v}{\lambda}$, so
-```latex
-f = f_0 \cdot \frac{v}{v \mp v_\text{s}}
+The frequency heard can be calculated from the spacing of the wavefronts. When the source moves, the wavelength is $(v - v_\text{L}) T_0$ in front of the source and $(v + v_\text{L}) T_0$ behind it. A listener at rest hears the frequency $f = \tfrac{v}{\lambda}$, so
+```kaavat
+Doppler effect, source moving towards the observer :: f = f_0 \cdot \frac{v}{v - v_\text{L}}
+Doppler effect, source moving away from the observer :: f = f_0 \cdot \frac{v}{v + v_\text{L}}
 ```
-where $f$ is the frequency heard (Hz), $f_0$ is the frequency of the source (Hz), $v$ is the speed of sound (m/s) and $v_\text{s}$ is the speed of the source (m/s). The minus sign is chosen when the source approaches the listener and the plus sign when the source moves away.
+where $f$ is the frequency heard (Hz), $f_0$ is the frequency of the source (Hz), $v$ is the speed of sound (m/s) and $v_\text{L}$ is the speed of the source (m/s). The first formula applies when the source approaches the listener and the second when the source moves away.
 
-When the source is at rest and the listener moves, the wavefronts meet the listener at speed $v + v_\text{h}$ or $v - v_\text{h}$, and the frequency heard is the rate at which the wavefronts are met:
-```latex
-f = f_0 \cdot \frac{v \pm v_\text{h}}{v}
+When the source is at rest and the listener moves, the wavefronts meet the listener at speed $v + v_\text{H}$ or $v - v_\text{H}$, and the frequency heard is the rate at which the wavefronts are met:
+```kaavat
+Doppler effect, observer moving towards the source :: f = f_0 \cdot \frac{v + v_\text{H}}{v}
+Doppler effect, observer moving away from the source :: f = f_0 \cdot \frac{v - v_\text{H}}{v}
 ```
-where $v_\text{h}$ is the speed of the listener, or observer (m/s), and the other quantities are as above. The plus sign is chosen when the listener approaches the source and the minus sign when the listener moves away.
+where $v_\text{H}$ is the speed of the listener, or observer (m/s), and the other quantities are as above. The first formula applies when the listener approaches the source and the second when the listener moves away.
 
 ### Signs and assumptions
-The sign can be checked with a rule: approaching raises the frequency heard and moving away lowers it. So choose the sign that gives $f > f_0$ when approaching and $f < f_0$ when moving away. The speeds are measured relative to the air, which is at rest, that is, there is no wind. The formulas apply to motion along the straight line between the source and the listener, and they hold when only one of them moves and the speed of the source is less than the speed of sound. When the speed is much smaller than the speed of sound, both formulas give almost the same change, about $f_0 \cdot \tfrac{v_\text{s}}{v}$ or $f_0 \cdot \tfrac{v_\text{h}}{v}$.
+The right formula can be checked with a rule: approaching raises the frequency heard and moving away lowers it. So choose the formula that gives $f > f_0$ when approaching and $f < f_0$ when moving away. The speeds are measured relative to the air, which is at rest, that is, there is no wind. The formulas apply to motion along the straight line between the source and the listener, and they hold when only one of them moves and the speed of the source is less than the speed of sound. When the speed is much smaller than the speed of sound, both formulas give almost the same change, about $f_0 \cdot \tfrac{v_\text{L}}{v}$ or $f_0 \cdot \tfrac{v_\text{H}}{v}$.
 
 ## Worked example
 A train runs along a straight track at a steady speed of $108\,\text{km/h}$ and sounds a horn whose frequency is $311\,\text{Hz}$. A passenger stands on the platform right next to the track, so the train comes straight towards them and then moves straight away from them. What frequency does the passenger hear as the train approaches and what frequency as it moves away, and by how much does the frequency drop at the moment the train passes? The air is calm, and the speed of sound is $340\,\text{m/s}$.
 
 <!-- vaihe -->
 
-**Given and asked.** The frequency of the horn is $f_0 = 311\,\text{Hz}$, the speed of the train is $v_\text{s} = 108\,\text{km/h}$ and the speed of sound is $v = 340\,\text{m/s}$. We are asked for the frequency heard as the train approaches ($f_1$) and as it moves away ($f_2$), and for the drop in frequency $\Delta f = f_1 - f_2$.
+**Given and asked.** The frequency of the horn is $f_0 = 311\,\text{Hz}$, the speed of the train is $v_\text{L} = 108\,\text{km/h}$ and the speed of sound is $v = 340\,\text{m/s}$. We are asked for the frequency heard as the train approaches ($f_1$) and as it moves away ($f_2$), and for the drop in frequency $\Delta f = f_1 - f_2$.
 
 <!-- vaihe -->
 
-**Principle.** The sound source moves and the listener is at rest, so we use the Doppler formula for a moving source. In front of the approaching train the wavefronts bunch together, so the sign is chosen so that $f_1 > f_0$. Behind the receding train the wavefronts spread out, and $f_2 < f_0$. The model is ideal: the passenger is assumed to be almost on the line of the track, so that the velocity of the train points almost straight towards or away from them.
+**Principle.** The sound source moves and the listener is at rest, so we use the Doppler formula for a moving source. In front of the approaching train the wavefronts bunch together, so the formula is chosen so that $f_1 > f_0$. Behind the receding train the wavefronts spread out, and $f_2 < f_0$. The model is ideal: the passenger is assumed to be almost on the line of the track, so that the velocity of the train points almost straight towards or away from them.
 
 <!-- vaihe -->
 
 **Formula solved.**
 ```latex
 \begin{aligned}
-f_1 &= f_0 \cdot \frac{v}{v - v_\text{s}} \\
-f_2 &= f_0 \cdot \frac{v}{v + v_\text{s}} \\
+f_1 &= f_0 \cdot \frac{v}{v - v_\text{L}} \\
+f_2 &= f_0 \cdot \frac{v}{v + v_\text{L}} \\
 \Delta f &= f_1 - f_2
 \end{aligned}
 ```
@@ -602,10 +604,10 @@ f_2 &= f_0 \cdot \frac{v}{v + v_\text{s}} \\
 **Substitution.**
 ```latex
 \begin{aligned}
-&f_1 = f_0 \cdot \frac{v}{v - v_\text{s}} \\
+&f_1 = f_0 \cdot \frac{v}{v - v_\text{L}} \\
 &\quad = 311\,\text{Hz} \cdot \frac{340\,\tfrac{\text{m}}{\text{s}}}{(340 - 30.0)\,\tfrac{\text{m}}{\text{s}}} \\
 &\quad = 341.10\,\text{Hz} \\[6pt]
-&f_2 = f_0 \cdot \frac{v}{v + v_\text{s}} \\
+&f_2 = f_0 \cdot \frac{v}{v + v_\text{L}} \\
 &\quad = 311\,\text{Hz} \cdot \frac{340\,\tfrac{\text{m}}{\text{s}}}{(340 + 30.0)\,\tfrac{\text{m}}{\text{s}}} \\
 &\quad = 285.78\,\text{Hz} \\[6pt]
 &\Delta f = f_1 - f_2 \\
@@ -620,7 +622,7 @@ f_2 &= f_0 \cdot \frac{v}{v + v_\text{s}} \\
 
 <!-- vaihe -->
 
-**Reasonableness.** At a low speed the change on each side is about $f_0 \cdot \tfrac{v_\text{s}}{v} = 311\,\text{Hz} \cdot \tfrac{30.0\,\text{m/s}}{340\,\text{m/s}} \approx 27\,\text{Hz}$, so the whole drop is about $55\,\text{Hz}$, as calculated. The rise on approach, $30\,\text{Hz}$, is slightly larger than the fall on moving away, $25\,\text{Hz}$, because in front we divide by the smaller number $v - v_\text{s}$. The speed of the train is less than a tenth of the speed of sound, so the change on each side is only about $9\,\%$ of the frequency $f_0$.
+**Reasonableness.** At a low speed the change on each side is about $f_0 \cdot \tfrac{v_\text{L}}{v} = 311\,\text{Hz} \cdot \tfrac{30.0\,\text{m/s}}{340\,\text{m/s}} \approx 27\,\text{Hz}$, so the whole drop is about $55\,\text{Hz}$, as calculated. The rise on approach, $30\,\text{Hz}$, is slightly larger than the fall on moving away, $25\,\text{Hz}$, because in front we divide by the smaller number $v - v_\text{L}$. The speed of the train is less than a tenth of the speed of sound, so the change on each side is only about $9\,\%$ of the frequency $f_0$.
 
 ## Common misconception
 Many people think that the sound of an approaching siren keeps rising as the car gets closer. The frequency heard, however, depends on the speed, not on the distance. When an ambulance drives at a steady speed straight towards the listener, the frequency heard is the same throughout the approach and higher than $f_0$, and at the moment of passing it drops. As the car approaches, the loudness grows, not the pitch. If the listener stands at the side of the road, the change happens gradually during the passing, because only the part of the velocity that points towards the listener or away from them affects the frequency heard.
@@ -631,5 +633,5 @@ Another mistake is to think that the motion of the source changes the speed of s
 - Sound is a longitudinal pressure wave in which compressions and rarefactions travel through a medium. The speed of sound depends on the medium and, in a gas, on the temperature; in air it is about $340\,\text{m/s}$. The speed is determined by measuring the travel time of sound over a known distance.
 - Pitch is determined by frequency. The human range of hearing is about $20\,\text{Hz}$–$20\,\text{kHz}$; lower sound is infrasound and higher is ultrasound.
 - Timbre depends on the strengths of the overtones. The partials of an instrument form the harmonic series $f_n = n f_1$, and the FFT spectrum shows them as peaks.
-- When two sounds of almost the same frequency sound together, beats are heard with the frequency $f_\text{h} = |f_1 - f_2|$.
-- The Doppler effect: approaching raises and moving away lowers the frequency heard. Further information: for a moving source $f = f_0 \cdot \tfrac{v}{v \mp v_\text{s}}$ and for a moving listener $f = f_0 \cdot \tfrac{v \pm v_\text{h}}{v}$, the upper sign for approaching.
+- When two sounds of almost the same frequency sound together, beats are heard with the frequency $f_\text{H} = |f_1 - f_2|$.
+- The Doppler effect: approaching raises and moving away lowers the frequency heard. Further information: for a moving source $f = f_0 \cdot \tfrac{v}{v \mp v_\text{L}}$ and for a moving listener $f = f_0 \cdot \tfrac{v \pm v_\text{H}}{v}$, the upper sign for approaching.

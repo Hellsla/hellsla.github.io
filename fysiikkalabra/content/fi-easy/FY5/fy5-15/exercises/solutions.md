@@ -12,7 +12,7 @@
 **Annettu:** intensiteetti $I = 3{,}2 \cdot 10^{-5}\,\text{W/m}^2$, kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$
 **Kysytty:** intensiteettitaso $L$ desibeleinä
 **Periaate:** Intensiteettitaso vertaa intensiteettiä kuulokynnykseen logaritmin avulla. Se kertoo, kuinka monta kymmenkertaistusta intensiteetti on kuulokynnyksen yläpuolella, kerrottuna kymmenellä.
-**Kaava:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$
+**Kaava:** $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$
 **Muunnokset:** Niitä ei tarvita. Kumpikin intensiteetti on yksikössä $\text{W/m}^2$, ja yksiköt supistuvat osamäärässä.
 **Sijoitus:** $L = 10\,\text{dB} \cdot \lg \dfrac{3{,}2 \cdot 10^{-5}\,\text{W/m}^2}{1{,}0 \cdot 10^{-12}\,\text{W/m}^2} = 10\,\text{dB} \cdot \lg (3{,}2 \cdot 10^{7}) = 10\,\text{dB} \cdot 7{,}505 = 75{,}05\,\text{dB}$
 **Vastaus:** $75\,\text{dB}$. Vastaus annetaan kokonaisina desibeleinä, koska intensiteetti on annettu kahdella merkitsevällä numerolla.
@@ -22,7 +22,7 @@
 **Annettu:** mittarin lukema, jota pidetään vapaassa äänikentässä intensiteettitasona, $L = 95\,\text{dB}$, kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$
 **Kysytty:** intensiteetti $I$ yksikössä $\text{W/m}^2$
 **Periaate:** Taso on kymmenen kertaa intensiteettien suhteen logaritmi. Intensiteetti saadaan jakamalla yhtälö $10\,\text{dB}$:llä ja käyttämällä logaritmin määritelmää: jos $\lg x = y$, niin $x = 10^y$.
-**Kaava:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$, joten $\lg \dfrac{I}{I_0} = \dfrac{L}{10\,\text{dB}}$ ja $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
+**Kaava:** $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$, joten $\lg \dfrac{I}{I_0} = \dfrac{L}{10\,\text{dB}}$ ja $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
 **Muunnokset:** Niitä ei tarvita. Desibelit supistuvat: $\dfrac{L}{10\,\text{dB}} = \dfrac{95\,\text{dB}}{10\,\text{dB}} = 9{,}5$.
 **Sijoitus:** $I = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{9{,}5} = 3{,}16 \cdot 10^{-3}\,\text{W/m}^2 = 0{,}00316\,\text{W/m}^2$
 **Vastaus:** $0{,}0032\,\text{W/m}^2$. Vastauksessa on kaksi merkitsevää numeroa, koska taso on annettu kokonaisina desibeleinä.
@@ -52,7 +52,7 @@
 **Annettu:** kaiuttimen ääniteho $P = 0{,}050\,\text{W}$, etäisyys $r = 3{,}0\,\text{m}$ ja kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Ääni leviää tasaisesti eikä heijastu.
 **Kysytty:** intensiteettitaso $L$ desibeleinä
 **Periaate:** Kaiutin on pistemäinen lähde. Sen teho jakautuu tasaisesti $3{,}0\,\text{m}$:n säteiselle pallopinnalle. Ensin lasketaan intensiteetti. Sitten sitä verrataan kuulokynnykseen.
-**Kaava:** $I = \dfrac{P}{4\pi r^2}$ ja $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$, joten $L = 10\,\text{dB} \cdot \lg \dfrac{P}{4\pi r^2 I_0}$
+**Kaava:** $I = \dfrac{P}{4\pi r^2}$ ja $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$, joten $L = 10\,\text{dB} \cdot \lg \dfrac{P}{4\pi r^2 I_0}$
 **Muunnokset:** Niitä ei tarvita. Teho on watteina ja etäisyys metreinä.
 **Sijoitus:** $I = \dfrac{0{,}050\,\text{W}}{4\pi \cdot (3{,}0\,\text{m})^2} = 4{,}42 \cdot 10^{-4}\,\text{W/m}^2$, joten $L = 10\,\text{dB} \cdot \lg \dfrac{4{,}42 \cdot 10^{-4}\,\text{W/m}^2}{1{,}0 \cdot 10^{-12}\,\text{W/m}^2} = 10\,\text{dB} \cdot \lg (4{,}42 \cdot 10^{8}) = 86{,}45\,\text{dB}$
 **Vastaus:** $86\,\text{dB}$. Vastaus annetaan kokonaisina desibeleinä, koska teho ja etäisyys on annettu kahdella merkitsevällä numerolla.
@@ -142,7 +142,7 @@ Kadun intensiteetti on siis noin $10\,000$-kertainen. Suhde $2$ syntyy, kun desi
 
 ## fy5-15-L3-03
 **Kysytty:** onko negatiivinen intensiteettitaso mahdoton, mitä se tarkoittaa ja voiko tuulettimen kuulla
-**Periaate:** Intensiteettitaso $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$ ei ole intensiteetti. Se on vertailu kuulokynnykseen $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Logaritmi on negatiivinen, kun sen sisällä oleva luku on positiivinen mutta pienempi kuin yksi.
+**Periaate:** Intensiteettitaso $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$ ei ole intensiteetti. Se on vertailu kuulokynnykseen $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Logaritmi on negatiivinen, kun sen sisällä oleva luku on positiivinen mutta pienempi kuin yksi.
 **Mallivastaus:** Opiskelija ei ole oikeassa. Negatiivinen taso ei tarkoita negatiivista intensiteettiä. Se tarkoittaa, että intensiteetti on pienempi kuin kuulokynnys. Tässä $\lg \dfrac{I}{I_0} = -0{,}5$, joten
 ```latex
 I = I_0 \cdot 10^{-0{,}5} \approx 3{,}2 \cdot 10^{-13}\,\text{W/m}^2
@@ -158,7 +158,7 @@ Intensiteetti on positiivinen, noin kolmasosa kuulokynnyksestä. Aina kun intens
 
 ## fy5-15-L1-06
 **Kysytty:** mitä intensiteettitaso $0\,\text{dB}$ tarkoittaa
-**Periaate:** Intensiteettitaso on $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$. Se vertaa intensiteettiä kuulokynnykseen $I_0$. Taso on nolla, kun logaritmin sisällä on luku $1$.
+**Periaate:** Intensiteettitaso on $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$. Se vertaa intensiteettiä kuulokynnykseen $I_0$. Taso on nolla, kun logaritmin sisällä on luku $1$.
 **Mallivastaus:** Oikea vaihtoehto on se, jonka mukaan intensiteetti on $I_0$, koska silloin $\lg(I/I_0) = \lg 1 = 0$. Taso $0\,\text{dB}$ on siis kuulokynnys. Se on heikoin ääni, jonka kuulija vielä juuri havaitsee. Se ei ole hiljaisuus. Vaihtoehto, jonka mukaan ääntä ei ole, on väärin. Nollan logaritmia ei ole olemassa, eikä intensiteetti $I = 0$ anna mitään tasoa. Vaihtoehto kipukynnyksestä on väärin. Kipukynnys on moninkertainen kuulokynnykseen verrattuna, eli se on asteikon yläpäässä. Vaihtoehto, jonka mukaan nolla on asteikon alaraja, on väärin. Heikommilla äänillä osamäärä $I/I_0$ on pienempi kuin $1$, ja taso on negatiivinen.
 
 ## fy5-15-L1-07
@@ -170,7 +170,7 @@ Intensiteetti on positiivinen, noin kolmasosa kuulokynnyksestä. Aina kun intens
 **Annettu:** kipukynnyksen intensiteetti $I = 1{,}0\,\text{W/m}^2$ ja kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$
 **Kysytty:** intensiteettitaso $L$ desibeleinä
 **Periaate:** Intensiteettitaso saadaan vertaamalla intensiteettiä kuulokynnykseen $I_0$ logaritmisella asteikolla.
-**Kaava:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$
+**Kaava:** $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$
 **Muunnokset:** Niitä ei tarvita. Kumpikin intensiteetti on yksikössä $\text{W/m}^2$, joten yksiköt supistuvat osamäärässä.
 **Sijoitus:** osamäärä on $I/I_0 = 10^{12}$, joten
 ```latex
@@ -274,7 +274,7 @@ r &= \sqrt{\dfrac{0{,}3945\,\text{W}}{4\pi \cdot 3{,}162 \cdot 10^{-7}\,\text{W/
 ```latex
 \begin{aligned}
 &I = I_1 + I_2 \\
-&L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}
+&L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}
 \end{aligned}
 ```
 **Muunnokset:** Niitä ei tarvita. Etäisyydet ovat metreinä ja tasot desibeleinä.
@@ -304,7 +304,7 @@ r_\text{raja} &= 8{,}0\,\text{m} \cdot \sqrt{\dfrac{3{,}112 \cdot 10^{-4}}{1{,}0
 **Kysytty:** intensiteetti $I$ yksikössä $\text{W/m}^2$
 **Periaate:** Taso on kymmenen kertaa intensiteettien suhteen logaritmi. Intensiteetti saadaan jakamalla yhtälö $10\,\text{dB}$:llä ja käyttämällä logaritmin määritelmää: jos $\lg x = y$, niin $x = 10^y$.
 **Kuvaajan lukeminen:** Etäisyyden $4{,}0\,\text{m}$ kohdalla merkitty piste on tasolla $L = 74{,}0\,\text{dB}$.
-**Kaava:** $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$, joten $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
+**Kaava:** $L = 10\lg\left(\dfrac{I}{I_0}\right)\,\text{dB}$, joten $I = I_0 \cdot 10^{\,L/(10\,\text{dB})}$
 **Muunnokset:** Niitä ei tarvita. $\dfrac{L}{10\,\text{dB}} = \dfrac{74{,}0\,\text{dB}}{10\,\text{dB}} = 7{,}40$, desibelit supistuvat.
 **Sijoitus:** $I = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2 \cdot 10^{7{,}40} = 2{,}51 \cdot 10^{-5}\,\text{W/m}^2$
 **Vastaus:** $2{,}5 \cdot 10^{-5}\,\text{W/m}^2$ eli $0{,}000025\,\text{W/m}^2$, kaksi merkitsevää numeroa kuten kuulokynnys $1{,}0 \cdot 10^{-12}\,\text{W/m}^2$.

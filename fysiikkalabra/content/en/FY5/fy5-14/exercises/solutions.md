@@ -29,10 +29,10 @@
 **Reasonableness:** The members of the series are $147\,\text{Hz}$, $294\,\text{Hz}$, $441\,\text{Hz}$ and $588\,\text{Hz}$, so the fourth member is two octaves above the fundamental: two doublings give four times the frequency.
 
 ## fy5-14-L1-04
-**Given:** frequency of the note $f_0 = 415\,\text{Hz}$, speed of the car $v_\text{s} = 15.0\,\text{m/s}$ away from the listener, speed of sound $v = 340\,\text{m/s}$
+**Given:** frequency of the note $f_0 = 415\,\text{Hz}$, speed of the car $v_\text{L} = 15.0\,\text{m/s}$ away from the listener, speed of sound $v = 340\,\text{m/s}$
 **Find:** the frequency heard $f$
 **Principle:** The sound source moves and the listener is at rest, so we use the Doppler formula for a moving source. The source moves away, so the wavefronts spread out behind it and the frequency heard is lower than $f_0$: the denominator gets a plus sign.
-**Formula:** $f = f_0 \cdot \dfrac{v}{v + v_\text{s}}$
+**Formula:** $f = f_0 \cdot \dfrac{v}{v + v_\text{L}}$
 **Conversions:** None needed: the speeds are in $\text{m/s}$ and the frequency in hertz.
 **Substitution:** $f = 415\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{340\,\text{m/s} + 15.0\,\text{m/s}} = 415\,\text{Hz} \cdot \dfrac{340}{355} = 397.46\,\text{Hz}$
 **Answer:** $397\,\text{Hz}$, three significant figures like the given data.
@@ -62,9 +62,9 @@ Statement 5 is true. At the moment of passing, the frequency drops. Behind a car
 **Given:** frequency of the tuning fork $f_1 = 262\,\text{Hz}$, $N = 15$ loud moments in a time $t = 5.0\,\text{s}$, the string is lower than the tuning fork
 **Find:** the frequency of the string $f_2$
 **Principle:** Two sounds of almost the same frequency produce beats, and the number of loud moments per second equals the difference of the frequencies. The beat frequency is obtained by counting the loud moments per unit time. Because the string is lower, its frequency is smaller than that of the tuning fork by the beat frequency.
-**Formula:** $f_\text{h} = \dfrac{N}{t}$ and $f_\text{h} = |f_1 - f_2| = f_1 - f_2$, so $f_2 = f_1 - \dfrac{N}{t}$
+**Formula:** $f_\text{H} = \dfrac{N}{t}$ and $f_\text{H} = |f_1 - f_2| = f_1 - f_2$, so $f_2 = f_1 - \dfrac{N}{t}$
 **Conversions:** None needed: the time is in seconds, so $\tfrac{N}{t}$ comes out in hertz.
-**Substitution:** $f_\text{h} = \dfrac{15}{5.0\,\text{s}} = 3.0\,\text{Hz}$ and $f_2 = 262\,\text{Hz} - 3.0\,\text{Hz} = 259\,\text{Hz}$
+**Substitution:** $f_\text{H} = \dfrac{15}{5.0\,\text{s}} = 3.0\,\text{Hz}$ and $f_2 = 262\,\text{Hz} - 3.0\,\text{Hz} = 259\,\text{Hz}$
 **Answer:** $259\,\text{Hz}$; the difference $3.0\,\text{Hz}$ is known to a tenth of a hertz, so the result is given in whole hertz like the frequency of the tuning fork.
 **Reasonableness:** Three loud moments per second are easy to count by ear, and the frequency difference is less than $10\,\text{Hz}$, so the beats stand out clearly. When the tuner tightens the string, the frequency rises towards $262\,\text{Hz}$ and the beats slow down.
 
@@ -79,40 +79,40 @@ Statement 5 is true. At the moment of passing, the frequency drops. Behind a car
 **Reasonableness:** Sound travels $\tfrac{1480}{340} \approx 4.4$ times as fast in water as in air, and at the same frequency the wavelength grows in the same ratio: $0.850\,\text{m} \cdot 4.35 \approx 3.7\,\text{m}$.
 
 ## fy5-14-L2-03
-**Given:** frequency of the siren $f_0 = 650\,\text{Hz}$, speed of the driver $v_\text{h} = 90.0\,\text{km/h}$ towards the siren, speed of sound $v = 340\,\text{m/s}$
+**Given:** frequency of the siren $f_0 = 650\,\text{Hz}$, speed of the driver $v_\text{H} = 90.0\,\text{km/h}$ towards the siren, speed of sound $v = 340\,\text{m/s}$
 **Find:** the frequency heard by the driver $f$
-**Principle:** The source is at rest and the listener moves, so the wavelength does not change, but the driver meets the wavefronts more often, because they approach at speed $v + v_\text{h}$. We use the Doppler formula for a moving listener with the plus sign for approaching.
-**Formula:** $f = f_0 \cdot \dfrac{v + v_\text{h}}{v}$
-**Conversions:** $v_\text{h} = 90.0\,\tfrac{\text{km}}{\text{h}} = 90.0 \cdot \tfrac{1000\,\text{m}}{3600\,\text{s}} = 25.0\,\tfrac{\text{m}}{\text{s}}$
+**Principle:** The source is at rest and the listener moves, so the wavelength does not change, but the driver meets the wavefronts more often, because they approach at speed $v + v_\text{H}$. We use the Doppler formula for a moving listener with the plus sign for approaching.
+**Formula:** $f = f_0 \cdot \dfrac{v + v_\text{H}}{v}$
+**Conversions:** $v_\text{H} = 90.0\,\tfrac{\text{km}}{\text{h}} = 90.0 \cdot \tfrac{1000\,\text{m}}{3600\,\text{s}} = 25.0\,\tfrac{\text{m}}{\text{s}}$
 **Substitution:** $f = 650\,\text{Hz} \cdot \dfrac{340\,\text{m/s} + 25.0\,\text{m/s}}{340\,\text{m/s}} = 650\,\text{Hz} \cdot \dfrac{365}{340} = 697.79\,\text{Hz}$
 **Answer:** $698\,\text{Hz}$, three significant figures like the given data.
-**Reasonableness:** The frequency rises because the driver approaches. The rise is $f_0 \cdot \tfrac{v_\text{h}}{v} = 650\,\text{Hz} \cdot \tfrac{25.0}{340} \approx 48\,\text{Hz}$, which is about $7\,\%$, like the ratio of the speeds $\tfrac{25}{340}$.
+**Reasonableness:** The frequency rises because the driver approaches. The rise is $f_0 \cdot \tfrac{v_\text{H}}{v} = 650\,\text{Hz} \cdot \tfrac{25.0}{340} \approx 48\,\text{Hz}$, which is about $7\,\%$, like the ratio of the speeds $\tfrac{25}{340}$.
 
 ## fy5-14-L2-04
 **Given:** frequency of the engine at rest $f_0 = 425\,\text{Hz}$, frequency heard as the car moves away $f = 398\,\text{Hz}$, speed of sound $v = 340\,\text{m/s}$
-**Find:** the speed of the car $v_\text{s}$
+**Find:** the speed of the car $v_\text{L}$
 **Principle:** The car, that is, the sound source, moves straight away from the spectator, and the spectator is at rest, so the Doppler formula for a moving source applies with the plus sign for moving away. The engine speed is the same, so the engine's own frequency is $f_0$. The speed of the source is solved from the formula.
-**Formula:** $f = f_0 \cdot \dfrac{v}{v + v_\text{s}}$, so $v + v_\text{s} = \dfrac{f_0 v}{f}$ and $v_\text{s} = v \left(\dfrac{f_0}{f} - 1\right)$
+**Formula:** $f = f_0 \cdot \dfrac{v}{v + v_\text{L}}$, so $v + v_\text{L} = \dfrac{f_0 v}{f}$ and $v_\text{L} = v \left(\dfrac{f_0}{f} - 1\right)$
 **Conversions:** None needed: the frequencies are in hertz, and the unit cancels in their ratio.
-**Substitution:** $v_\text{s} = 340\,\text{m/s} \cdot \left(\dfrac{425\,\text{Hz}}{398\,\text{Hz}} - 1\right) = 340\,\text{m/s} \cdot 0.067839 = 23.065\,\text{m/s}$
+**Substitution:** $v_\text{L} = 340\,\text{m/s} \cdot \left(\dfrac{425\,\text{Hz}}{398\,\text{Hz}} - 1\right) = 340\,\text{m/s} \cdot 0.067839 = 23.065\,\text{m/s}$
 **Answer:** $23\,\text{m/s}$, two significant figures, because the result depends on the frequency difference $27\,\text{Hz}$, which is known to two figures.
 **Reasonableness:** $23\,\text{m/s}$ is about $83\,\text{km/h}$, which is a believable speed on a racetrack. Check: $425\,\text{Hz} \cdot \tfrac{340}{340 + 23.07} \approx 398\,\text{Hz}$, as measured.
 
 ## fy5-14-L3-01
 **Given:** frequency heard when approaching $f_1 = 476\,\text{Hz}$ and when moving away $f_2 = 404\,\text{Hz}$, speed of sound $v = 340\,\text{m/s}$; the frequency of the siren $f_0$ is unknown
-**Find:** the speed of the ambulance $v_\text{s}$
+**Find:** the speed of the ambulance $v_\text{L}$
 **Principle:** The listener is at rest and the source moves straight towards them and straight away from them at the same speed, so the moving-source formula holds in both phases, with the minus sign when approaching and the plus sign when moving away. The unknown $f_0$ cancels when the frequencies are divided by each other.
-**Formula:** $f_1 = f_0 \cdot \dfrac{v}{v - v_\text{s}}$ and $f_2 = f_0 \cdot \dfrac{v}{v + v_\text{s}}$, so $\dfrac{f_1}{f_2} = \dfrac{v + v_\text{s}}{v - v_\text{s}}$. Cross-multiplying, $f_1 v - f_1 v_\text{s} = f_2 v + f_2 v_\text{s}$, so $v_\text{s} (f_1 + f_2) = v (f_1 - f_2)$ and $v_\text{s} = v \cdot \dfrac{f_1 - f_2}{f_1 + f_2}$
+**Formula:** $f_1 = f_0 \cdot \dfrac{v}{v - v_\text{L}}$ and $f_2 = f_0 \cdot \dfrac{v}{v + v_\text{L}}$, so $\dfrac{f_1}{f_2} = \dfrac{v + v_\text{L}}{v - v_\text{L}}$. Cross-multiplying, $f_1 v - f_1 v_\text{L} = f_2 v + f_2 v_\text{L}$, so $v_\text{L} (f_1 + f_2) = v (f_1 - f_2)$ and $v_\text{L} = v \cdot \dfrac{f_1 - f_2}{f_1 + f_2}$
 **Conversions:** None needed: the unit of the frequencies cancels, and the speed comes out in $\text{m/s}$.
-**Substitution:** $v_\text{s} = 340\,\text{m/s} \cdot \dfrac{476\,\text{Hz} - 404\,\text{Hz}}{476\,\text{Hz} + 404\,\text{Hz}} = 340\,\text{m/s} \cdot \dfrac{72}{880} = 27.818\,\text{m/s}$
+**Substitution:** $v_\text{L} = 340\,\text{m/s} \cdot \dfrac{476\,\text{Hz} - 404\,\text{Hz}}{476\,\text{Hz} + 404\,\text{Hz}} = 340\,\text{m/s} \cdot \dfrac{72}{880} = 27.818\,\text{m/s}$
 **Answer:** $28\,\text{m/s}$, two significant figures, because the frequency difference $72\,\text{Hz}$ is known to two figures.
-**Reasonableness:** $28\,\text{m/s}$ is about $100\,\text{km/h}$, which suits an emergency drive. The siren's own frequency is $f_0 = f_1 \cdot \tfrac{v - v_\text{s}}{v} \approx 437\,\text{Hz}$, and it lies between the frequencies heard, as it should. Also $f_2 = 437\,\text{Hz} \cdot \tfrac{340}{367.8} \approx 404\,\text{Hz}$ agrees.
+**Reasonableness:** $28\,\text{m/s}$ is about $100\,\text{km/h}$, which suits an emergency drive. The siren's own frequency is $f_0 = f_1 \cdot \tfrac{v - v_\text{L}}{v} \approx 437\,\text{Hz}$, and it lies between the frequencies heard, as it should. Also $f_2 = 437\,\text{Hz} \cdot \tfrac{340}{367.8} \approx 404\,\text{Hz}$ agrees.
 
 ## fy5-14-L3-02
-**Given:** reference note $f_0 = 440\,\text{Hz}$, beat frequency before tightening $f_\text{h} = 4\,\text{Hz}$ and after tightening $6\,\text{Hz}$
+**Given:** reference note $f_0 = 440\,\text{Hz}$, beat frequency before tightening $f_\text{H} = 4\,\text{Hz}$ and after tightening $6\,\text{Hz}$
 **Find:** the frequency of the string $f$ before tightening
 **Principle:** The beat frequency is the absolute value of the frequency difference, so from the beats alone the frequency of the string could be either $440\,\text{Hz} - 4\,\text{Hz}$ or $440\,\text{Hz} + 4\,\text{Hz}$. Tightening increases the speed of the wave in the string and therefore raises the frequency of the string. Because the beats sped up, that is, the difference grew, the rising frequency moved away from the reference note: the string was already higher than the reference note. If the string had been $436\,\text{Hz}$, tightening would have taken it towards $440\,\text{Hz}$ and the beats would have slowed down.
-**Formula:** $f_\text{h} = |f - f_0|$, and when $f > f_0$, $f = f_0 + f_\text{h}$
+**Formula:** $f_\text{H} = |f - f_0|$, and when $f > f_0$, $f = f_0 + f_\text{H}$
 **Conversions:** None needed: all the frequencies are in hertz.
 **Substitution:** $f = 440\,\text{Hz} + 4\,\text{Hz} = 444\,\text{Hz}$
 **Answer:** $444\,\text{Hz}$, in whole hertz like the reference note and the beat frequency.
@@ -135,22 +135,22 @@ Statement 5 is true. At the moment of passing, the frequency drops. Behind a car
 
 ## fy5-14-L1-08
 **Given:** frequencies of the tuning forks $f_1 = 392\,\text{Hz}$ and $f_2 = 398\,\text{Hz}$
-**Find:** the period of the beats $T_\text{h}$ in seconds
+**Find:** the period of the beats $T_\text{H}$ in seconds
 **Principle:** The number of loud moments per second equals the frequency difference. The time between two successive loud moments is the reciprocal of the beat frequency.
-**Formula:** $f_\text{h} = |f_1 - f_2|$ and $T_\text{h} = \dfrac{1}{f_\text{h}}$
+**Formula:** $f_\text{H} = |f_1 - f_2|$ and $T_\text{H} = \dfrac{1}{f_\text{H}}$
 **Conversions:** None needed: the frequencies are in hertz, so the period comes out in seconds.
-**Substitution:** $f_\text{h} = |392\,\text{Hz} - 398\,\text{Hz}| = 6\,\text{Hz}$, so $T_\text{h} = \dfrac{1}{6\,\text{Hz}} = 0.1667\,\text{s}$
+**Substitution:** $f_\text{H} = |392\,\text{Hz} - 398\,\text{Hz}| = 6\,\text{Hz}$, so $T_\text{H} = \dfrac{1}{6\,\text{Hz}} = 0.1667\,\text{s}$
 **Answer:** $0.167\,\text{s}$, three significant figures, because the nominal frequencies of the tuning forks are taken as exact.
 **Reasonableness:** Six beat periods last $6 \cdot 0.1667\,\text{s} = 1.00\,\text{s}$ altogether, which suits the frequency $6\,\text{Hz}$. The frequency difference is less than $10\,\text{Hz}$, so the beats stand out clearly.
 
 ## fy5-14-L2-05
 **Given:** frequency of the horn at rest $f_0 = 392\,\text{Hz}$, four measured frequencies $431\,\text{Hz}$, $429\,\text{Hz}$, $432\,\text{Hz}$ and $430\,\text{Hz}$, speed of sound $v = 340\,\text{m/s}$
-**Find:** the speed of the car $v_\text{s}$
+**Find:** the speed of the car $v_\text{L}$
 **Principle:** The car, that is, the sound source, approaches a listener at rest, so the Doppler formula for a moving source with a minus sign applies. The measurements vary slightly, so we use their mean $f_\text{mean}$. The speed of the source is solved from the formula.
 **Processing the data:** The sum of the four frequencies in the table is $431 + 429 + 432 + 430 = 1722$ hertz, so the mean is $f_\text{mean} = \dfrac{1722\,\text{Hz}}{4} = 430.5\,\text{Hz}$.
-**Formula:** $f_\text{mean} = f_0 \cdot \dfrac{v}{v - v_\text{s}}$, so $v - v_\text{s} = \dfrac{f_0 v}{f_\text{mean}}$ and $v_\text{s} = v \left(1 - \dfrac{f_0}{f_\text{mean}}\right)$
+**Formula:** $f_\text{mean} = f_0 \cdot \dfrac{v}{v - v_\text{L}}$, so $v - v_\text{L} = \dfrac{f_0 v}{f_\text{mean}}$ and $v_\text{L} = v \left(1 - \dfrac{f_0}{f_\text{mean}}\right)$
 **Conversions:** None needed: the frequencies are in hertz, and the unit cancels in their ratio.
-**Substitution:** $v_\text{s} = 340\,\text{m/s} \cdot \left(1 - \dfrac{392\,\text{Hz}}{430.5\,\text{Hz}}\right) = 340\,\text{m/s} \cdot 0.08943 = 30.41\,\text{m/s}$
+**Substitution:** $v_\text{L} = 340\,\text{m/s} \cdot \left(1 - \dfrac{392\,\text{Hz}}{430.5\,\text{Hz}}\right) = 340\,\text{m/s} \cdot 0.08943 = 30.41\,\text{m/s}$
 **Answer:** $30.4\,\text{m/s}$, three significant figures like the frequencies.
 **Reasonableness:** $30.4\,\text{m/s}$ is about $109\,\text{km/h}$, which is roughly a highway speed. Calculating back: $\dfrac{392\,\text{Hz}}{1 - 30.41/340} = 430.5\,\text{Hz}$ is the measured mean. The individual measurements give speeds of $29.3$–$31.5\,\text{m/s}$, so the spread is about $1\,\text{m/s}$.
 
@@ -166,15 +166,15 @@ Statement 5 is true. At the moment of passing, the frequency drops. Behind a car
 **Reasonableness:** The multiples $2 \cdot 262\,\text{Hz} = 524\,\text{Hz}$ and $5 \cdot 262\,\text{Hz} = 1310\,\text{Hz}$ match the peaks in the table. The small differences come from the FFT reading the frequencies to about one hertz. The frequency $262\,\text{Hz}$ is middle C, which suits both instruments.
 
 ## fy5-14-L2-07
-**Given:** speed of the car $v_\text{s} = 30.0\,\text{m/s}$, frequency of the horn $f_0 = 500\,\text{Hz}$, speed of sound $v = 340\,\text{m/s}$, the student's result $544\,\text{Hz}$
+**Given:** speed of the car $v_\text{L} = 30.0\,\text{m/s}$, frequency of the horn $f_0 = 500\,\text{Hz}$, speed of sound $v = 340\,\text{m/s}$, the student's result $544\,\text{Hz}$
 **Find:** the student's error and the correct frequency heard $f$
-**Principle:** The student used a formula that applies to a moving listener. Here the listener is at rest and the sound source, the car, is moving, so the formula for a moving source applies. The motion of the source shortens the wavelength in front of the source ($\lambda = (v - v_\text{s}) T_0$), whereas the motion of a listener does not change the wavelength. The car approaches, so the sign is chosen so that $f > f_0$.
-**Formula:** $f = f_0 \cdot \dfrac{v}{v - v_\text{s}}$
+**Principle:** The student used a formula that applies to a moving listener. Here the listener is at rest and the sound source, the car, is moving, so the formula for a moving source applies. The motion of the source shortens the wavelength in front of the source ($\lambda = (v - v_\text{L}) T_0$), whereas the motion of a listener does not change the wavelength. The car approaches, so the sign is chosen so that $f > f_0$.
+**Formula:** $f = f_0 \cdot \dfrac{v}{v - v_\text{L}}$
 **Conversions:** None needed: the speeds are already in m/s.
 **Substitution:**
 $\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30.0)\,\text{m/s}} \\ &= 500\,\text{Hz} \cdot \dfrac{340}{310.0} \\ &= 548.4\,\text{Hz} \end{aligned}$
 **Answer:** $548\,\text{Hz}$, three significant figures like the given data. The student's value $544\,\text{Hz}$ is about $4\,\text{Hz}$ too small.
-**Reasonableness:** The frequency rises because the car approaches: $548\,\text{Hz} > 500\,\text{Hz}$. The estimate for a small speed, $f_0 \cdot \tfrac{v_\text{s}}{v} = 500\,\text{Hz} \cdot \tfrac{30.0}{340} \approx 44\,\text{Hz}$, is close to the actual rise of $48\,\text{Hz}$, and the actual rise is slightly greater, because the denominator contains $v - v_\text{s}$.
+**Reasonableness:** The frequency rises because the car approaches: $548\,\text{Hz} > 500\,\text{Hz}$. The estimate for a small speed, $f_0 \cdot \tfrac{v_\text{L}}{v} = 500\,\text{Hz} \cdot \tfrac{30.0}{340} \approx 44\,\text{Hz}$, is close to the actual rise of $48\,\text{Hz}$, and the actual rise is slightly greater, because the denominator contains $v - v_\text{L}$.
 
 ## fy5-14-L3-04
 **Given:** frequency of the probe $f_0 = 4.00\,\text{MHz} = 4.00 \cdot 10^6\,\text{Hz}$, speed of sound in tissue $v = 1540\,\text{m/s}$, frequency changes $\Delta f$ in the table, blood flows straight towards the probe
@@ -214,6 +214,6 @@ $\begin{aligned} v &= 2 \cdot 0.650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254.8\,
 ## fy5-14-L2-08
 **Given:** the combined sound of two tuning forks sounding at the same time, in the figure; one fork $523\,\text{Hz}$; wax lowers the frequency of the unknown fork and the beats get faster
 **Find:** the frequency $f_x$ of the unknown fork before the wax was added
-**Principle:** The beat frequency is the difference of the frequencies, $f_\text{b} = |f_x - 523\,\text{Hz}|$, and it is the reciprocal of the beat period. The difference does not tell which frequency is higher, so the side is decided by the wax: it lowers $f_x$. If the difference grows, $f_x$ was already below $523\,\text{Hz}$. If the difference shrinks, $f_x$ was above it.
+**Principle:** The beat frequency is the difference of the frequencies, $f_\text{H} = |f_x - 523\,\text{Hz}|$, and it is the reciprocal of the beat period. The difference does not tell which frequency is higher, so the side is decided by the wax: it lowers $f_x$. If the difference grows, $f_x$ was already below $523\,\text{Hz}$. If the difference shrinks, $f_x$ was above it.
 **Reading the figure:** The sound is loudest at the moments $0$, $0.25\,\text{s}$, $0.50\,\text{s}$, $0.75\,\text{s}$ and $1.00\,\text{s}$. The beat period is $T_\text{b} = 0.25\,\text{s}$.
-**Model answer:** The beat frequency is $f_\text{b} = \dfrac{1}{0.25\,\text{s}} = 4\,\text{Hz}$, so $f_x = 523\,\text{Hz} \pm 4\,\text{Hz}$, that is $519\,\text{Hz}$ or $527\,\text{Hz}$. The wax lowered $f_x$ and the beats got faster, so the difference grew. That is possible only if $f_x$ was below $523\,\text{Hz}$. The answer is $519\,\text{Hz}$. Check: if $f_x$ had been $527\,\text{Hz}$, the wax would have brought it closer to $523\,\text{Hz}$ and the beats would have slowed down.
+**Model answer:** The beat frequency is $f_\text{H} = \dfrac{1}{0.25\,\text{s}} = 4\,\text{Hz}$, so $f_x = 523\,\text{Hz} \pm 4\,\text{Hz}$, that is $519\,\text{Hz}$ or $527\,\text{Hz}$. The wax lowered $f_x$ and the beats got faster, so the difference grew. That is possible only if $f_x$ was below $523\,\text{Hz}$. The answer is $519\,\text{Hz}$. Check: if $f_x$ had been $527\,\text{Hz}$, the wax would have brought it closer to $523\,\text{Hz}$ and the beats would have slowed down.

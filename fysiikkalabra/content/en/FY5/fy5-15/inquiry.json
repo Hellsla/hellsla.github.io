@@ -115,7 +115,7 @@
       "text": "Move the sound level meter and add loudspeakers. Observe how the intensity and the sound intensity level change.",
       "howto": "Adjust the sound power $P$ of one loudspeaker, the number of loudspeakers and the distance $r$ of the meter from the loudspeakers. Above the meter is its reading, the sound intensity level $L$, and the readouts also show the total power, the area of the sphere $4\\pi r^2$ and the intensity $I$. The graph shows the level as a function of distance with the present loudspeakers, and the ring marks the position of the meter. The brightness of the arcs shows the level. *Speed* changes only the pace of the arcs' motion, not the readings.",
       "model": "The loudspeakers are at the same place and radiate evenly in all directions like one point source. The sound is not reflected from the ground or from anywhere else, and the air does not absorb it, so the whole power passes through every spherical surface. The loudspeakers play independent sounds, so their powers add up. If the loudspeakers were at different places and played the same pure tone, the waves would interfere and the level would vary from place to place. The readings are values calculated by the model, not measurements. The motion of the arcs is only an illustration, not the real speed of sound.",
-      "calc": "The total power is $P_\\text{tot} = N P$, where $N$ is the number of loudspeakers. The intensity at distance $r$ is\n\n$$I = \\frac{P_\\text{tot}}{4\\pi r^2}$$\n\nand the sound intensity level is $L = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I}{I_0}$, where $I_0 = 1.0 \\cdot 10^{-12}\\,\\text{W/m}^2$. In the tables of the experiments the intensity is in $\\text{mW/m}^2$, where $1\\,\\text{mW/m}^2 = 10^{-3}\\,\\text{W/m}^2$. The vertical axis of the graph starts at the level $40\\,\\text{dB}$."
+      "calc": "The total power is $P_\\text{tot} = N P$, where $N$ is the number of loudspeakers. The intensity at distance $r$ is\n\n$$I = \\frac{P_\\text{tot}}{4\\pi r^2}$$\n\nand the sound intensity level is $L = 10\\lg\\left(\\tfrac{I}{I_0}\\right)\\,\\text{dB}$, where $I_0 = 1.0 \\cdot 10^{-12}\\,\\text{W/m}^2$. In the tables of the experiments the intensity is in $\\text{mW/m}^2$, where $1\\,\\text{mW/m}^2 = 10^{-3}\\,\\text{W/m}^2$. The vertical axis of the graph starts at the level $40\\,\\text{dB}$."
     },
     {
       "id": "koe-1",
@@ -240,7 +240,7 @@
       "type": "reflect",
       "title": "Return to your predictions",
       "optional": true,
-      "prompt": "Compare your predictions with the model's values in the experiments and with the equation $L = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I}{I_0}$. Then return to the opening question: why is the sound of the concert still heard as far as the hillside, even though the intensity there is only a small fraction of the intensity in front of the stage?",
+      "prompt": "Compare your predictions with the model's values in the experiments and with the equation $L = 10\\lg\\left(\\tfrac{I}{I_0}\\right)\\,\\text{dB}$. Then return to the opening question: why is the sound of the concert still heard as far as the hillside, even though the intensity there is only a small fraction of the intensity in front of the stage?",
       "predictions": [
         "ennuste-1",
         "ennuste-2"
@@ -269,7 +269,7 @@
         },
         {
           "text": "Dividing by $10\\,\\text{dB}$ is wrong: the correct result is $\\lg \\tfrac{I}{I_0} = 650$.",
-          "feedback": "The division is correct: $L = 10\\,\\text{dB} \\cdot \\lg \\tfrac{I}{I_0}$, so $\\lg \\tfrac{I}{I_0} = \\tfrac{L}{10\\,\\text{dB}} = 6.5$. The error is on the next line, where the logarithm should be undone as the power $10^{6.5}$."
+          "feedback": "The division is correct: $L = 10\\lg\\left(\\tfrac{I}{I_0}\\right)\\,\\text{dB}$, so $\\lg \\tfrac{I}{I_0} = \\tfrac{L}{10\\,\\text{dB}} = 6.5$. The error is on the next line, where the logarithm should be undone as the power $10^{6.5}$."
         },
         {
           "text": "The threshold of hearing is wrong: it should be $0\\,\\text{W/m}^2$, because the level of the threshold of hearing is $0\\,\\text{dB}$.",

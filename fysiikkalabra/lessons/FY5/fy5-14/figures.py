@@ -195,7 +195,7 @@ def beats():
     for u in (0, 0.5):
         f.line(x0 + W * u, yc - amp - 4, x0 + W * u, 286, MUTED, 1.5, "3 4")
     f.path(f"M{n(x0)},{n(282)} V{n(290)} H{n(x0 + W / 2)} V{n(282)}", stroke=INK, w=2)
-    f.tex(x0 + W / 4, 316, r"T_\text{h}", "middle", bg=True)
+    f.tex(x0 + W / 4, 316, r"T_\text{H}", "middle", bg=True)
     return f.svg()
 
 
@@ -219,7 +219,7 @@ def doppler():
     f.add(f'<g clip-path="url(#fy514-clip1)">{"".join(g)}</g>')
     speaker(f, xs, ys, 0.9)
     f.arrow(xs + 14, ys - 40, xs + 76, ys - 40, VEL, 3, 14)
-    f.tex(xs + 84, ys - 40, r"\overline{v}_\text{s}", "start", color=VEL)
+    f.tex(xs + 84, ys - 40, r"\overline{v}_\text{L}", "start", color=VEL)
     H.person(f, 566, ys + 34, IRON, INK, 0.2); f.tex(566, 160 + 8, r"\text{A}", "middle")   # drawn people as in the lessons
     H.person(f, 34, ys + 34, IRON, INK, 0.2); f.tex(34, 160 + 8, r"\text{B}", "middle")
     ra = [xs - m * vsT + m * vT for m in (2, 3)]
@@ -235,7 +235,7 @@ def doppler():
     xl = 483                                                      # between two wavefronts
     H.person(f, xl, ys2 + 34, IRON, INK, 0.2)
     f.arrow(xl - 14, ys2 - 50, xl - 76, ys2 - 50, VEL, 3, 14)
-    f.tex(xl - 84, ys2 - 50, r"\overline{v}_\text{h}", "end", color=VEL)
+    f.tex(xl - 84, ys2 - 50, r"\overline{v}_\text{H}", "end", color=VEL)
     bracket(f, xs2 + 3 * vT, xs2 + 4 * vT, 384, r"\lambda", up=False)
     f.tex(16, 18, r"\text{lähde liikkuu}", "start", bg=True)
     f.tex(16, 240, r"\text{kuulija liikkuu}", "start", bg=True)

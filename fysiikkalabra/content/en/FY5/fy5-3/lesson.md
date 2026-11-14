@@ -232,8 +232,8 @@ The change of velocity $\Delta\overline{v}$ is seen when two successive velocity
 
 ## Formula: Speed
 Uniform circular motion is described by the **period** $T$, which is the time in which the object goes round the path once. Its reciprocal is the **rotation frequency** $f$, which tells how many revolutions the object makes per unit of time:
-```latex
-f = \frac{1}{T}
+```kaavat
+frequency :: f = \frac{1}{T}
 ```
 where $f$ is the rotation frequency ($\tfrac{1}{\text{s}}$) and $T$ the period ($\text{s}$). When the period is $T = 0.50\,\text{s}$, the object makes $2.0$ revolutions per second, that is, $f = 2.0\,\tfrac{1}{\text{s}}$. The rotation frequency is also often given in revolutions per minute. For example, $45\,\tfrac{1}{\text{min}}$ is converted by substituting $1\,\text{min} = 60\,\text{s}$, which gives $45\,\tfrac{1}{\text{min}} = \tfrac{45}{60\,\text{s}} = 0.75\,\tfrac{1}{\text{s}}$.
 

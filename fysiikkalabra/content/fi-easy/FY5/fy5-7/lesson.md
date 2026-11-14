@@ -296,8 +296,8 @@ Kun poikkeama piirretään ajan funktiona, saadaan $(t, x)$-kuvaaja (luku *Paikk
 
 ## Kaava: Sinimuotoinen värähtely
 Taajuus on jaksonajan käänteisluku. Yksi värähdys kestää ajan $T$, joten aikayksikössä ehtii $\tfrac{1}{T}$ värähdystä:
-```latex
-f = \frac{1}{T}
+```kaavat
+taajuus :: f = \frac{1}{T}
 ```
 Tässä $f$ on taajuus ($\text{Hz}$) ja $T$ jaksonaika ($\text{s}$). Taajuuden yksikkö on **hertsi**, $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$. Jos jaksonaika on $T = 0{,}50\,\text{s}$, kappale tekee $2{,}0$ värähdystä sekunnissa. Silloin $f = 2{,}0\,\text{Hz}$.
 
