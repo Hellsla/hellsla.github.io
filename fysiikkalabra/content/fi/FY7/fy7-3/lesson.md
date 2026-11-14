@@ -255,8 +255,8 @@ Kun käämin sisään työnnetään rautasydän, kenttä voimistuu moninkertaise
 
 ## Kaava: Suoran johtimen ja käämin magneettikenttä
 Pitkän suoran johtimen magneettivuon tiheys etäisyydellä $r$ johtimesta on
-```latex
-B = \frac{\mu_0 I}{2\pi r}
+```kaavat
+suoran virtajohtimen magneettivuon tiheys :: B = \frac{\mu_0 I}{2\pi r}
 ```
 missä $B$ on magneettivuon tiheys (T), $I$ johtimen virta (A), $r$ etäisyys johtimesta (m) ja $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ tyhjiön permeabiliteetti, luonnonvakio. Ilmassa käytetään samaa arvoa. Kenttä on suoraan verrannollinen virtaan ja kääntäen verrannollinen etäisyyteen: kaksinkertainen etäisyys puolittaa kentän. Kaava pätee, kun johdin on paljon pidempi kuin etäisyys $r$ ja muut johtimet ovat kaukana. Esimerkiksi $10\,\text{A}$:n johtimen kenttä on $1\,\text{cm}$:n etäisyydellä $200\,\mu\text{T}$, mikä on noin nelinkertainen Maan magneettikenttään noin $50\,\mu\text{T}$ verrattuna.
 
@@ -312,8 +312,8 @@ missä $B$ on magneettivuon tiheys (T), $I$ johtimen virta (A), $r$ etäisyys jo
 </svg>
 
 Pitkän käämin sisällä, kaukana sen päistä, magneettivuon tiheys on
-```latex
-B = \mu_0 \frac{N I}{l}
+```kaavat
+pitkän käämin magneettivuon tiheys :: B = \mu_0 \frac{N I}{l}
 ```
 missä $N$ on käämin kierrosten lukumäärä, $I$ virta (A) ja $l$ käämin pituus (m). Kenttä riippuu kierrostiheydestä $N : l$ eli siitä, kuinka monta kierrosta on metrillä, eikä käämin paksuudesta. Kaava pätee, kun käämi on paljon pidempi kuin paksu ja sen sisällä on vain ilmaa. Käämin päissä kenttä on noin puolet keskikohdan arvosta, ja rautasydän voimistaa kenttää moninkertaiseksi.
 

@@ -202,8 +202,8 @@ Ilmiötä sanotaan **sähkömagneettiseksi induktioksi**. Käämin päiden väli
 
 ### Magneettivuo
 Muutoksen suuruutta mitataan **magneettivuolla**. Magneettivuo kertoo, kuinka paljon magneettikenttää kulkee silmukan läpi. Kenttä on homogeeninen, kun se on joka paikassa yhtä voimakas ja samansuuntainen. Oletetaan, että homogeeninen kenttä on kohtisuorassa silmukan tasoa vastaan. Silloin magneettivuo on
-```latex
-\Phi = BA
+```kaavat
+magneettivuo :: \Phi = BA
 ```
 Kaavassa $\Phi$ on magneettivuo, $B$ on magneettivuon tiheys (T) ja $A$ on silmukan pinta-ala (m²). Vuon yksikkö on weber: $1\,\text{Wb} = 1\,\text{T}\cdot\text{m}^2$. Vuo on sitä suurempi, mitä voimakkaampi kenttä on ja mitä suurempi silmukka on. Jos silmukka käännetään vinoon, sen läpi kulkee vähemmän kenttäviivoja ja vuo pienenee. Kun silmukan taso on kentän suuntainen, yksikään kenttäviiva ei kulje silmukan läpi. Silloin vuo on nolla.
 
@@ -264,8 +264,8 @@ Kaavassa $\Phi$ on magneettivuo, $B$ on magneettivuon tiheys (T) ja $A$ on silmu
 
 ## Kaava: Induktiolaki
 Faradayn havainnot tiivistyvät **induktiolakiin**. Käämiin syntyvä induktiojännite on verrannollinen kahteen asiaan. Ne ovat käämin läpi kulkevan magneettivuon muutosnopeus ja käämin kierrosten lukumäärä. Käämin keskimääräinen induktiojännite aikavälillä $\Delta t$ on
-```latex
-e_\text{ka} = -N\frac{\Delta\Phi}{\Delta t}
+```kaavat
+käämiin indusoituva jännite :: e_\text{ka} = -N\frac{\Delta\Phi}{\Delta t}
 ```
 Kaavassa $e_\text{ka}$ on keskimääräinen induktiojännite (V) ja $N$ on käämin kierrosten lukumäärä. Suure $\Delta\Phi$ on yhden kierroksen läpi kulkevan magneettivuon muutos (Wb). Suure $\Delta t$ on aika (s), jonka kuluessa muutos tapahtuu. Kierrokset ovat sarjassa, joten jokainen kierros lisää jännitteeseen yhtä paljon. Yksiköt sopivat yhteen: $1\,\tfrac{\text{Wb}}{\text{s}} = 1\,\text{V}$. Miinusmerkki kertoo induktiojännitteen suunnan. Jännite vastustaa muutosta, joka sen synnyttää. Suuntaa käsitellään luvussa *Lenzin laki ja pyörrevirrat*. Jännitteen suuruus lasketaan yhtälöstä $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$. Suuruus on aina positiivinen, myös silloin, kun vuo pienenee.
 
