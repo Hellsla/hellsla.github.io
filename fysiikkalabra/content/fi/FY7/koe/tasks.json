@@ -1,0 +1,1077 @@
+{
+ "intro": "Koe kattaa koko moduulin: magneettikentän ja sen lähteet, varatun hiukkasen liikkeen kentissä, voiman virtajohtimeen, sähkömagneettisen induktion, generaattorin, vaihtovirran ja muuntajan, sähkömagneettisen säteilyn ja mustan kappaleen spektrin sekä valon heijastumisen, taittumisen, interferenssin ja polarisaation. Käytä tarvittaessa arvoa: valon nopeus tyhjiössä $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$. Muut tarvittavat vakiot annetaan tehtävissä. Laskin ja taulukkolaskenta ovat sallittuja. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
+ "minutes": 120,
+ "max_points": 70,
+ "sections": [
+  {
+   "title": "Osa 1: Perusosaaminen",
+   "tasks": [
+    "fy7-k1"
+   ]
+  },
+  {
+   "title": "Osa 2: Perustehtävät",
+   "choose": 2,
+   "tasks": [
+    "fy7-k2",
+    "fy7-k3",
+    "fy7-k4",
+    "fy7-k5"
+   ]
+  },
+  {
+   "title": "Osa 3: Soveltavat tehtävät",
+   "choose": 1,
+   "tasks": [
+    "fy7-k6",
+    "fy7-k7"
+   ]
+  }
+ ],
+ "tasks": [
+  {
+   "id": "fy7-k1",
+   "title": "Monivalinnat",
+   "text": "Valitse jokaisessa kohdassa yksi vaihtoehto. Oikea vastaus on $2$ p, väärä tai puuttuva $0$ p.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "choice",
+     "points": 2,
+     "text": "Sauvamagneetti sahataan kahtia poikki keskeltä, napojen välistä. Mitä sahauksessa syntyvät kaksi kappaletta ovat?",
+     "options": [
+      "Toinen kappale on pelkkä magneettinen pohjoisnapa ja toinen pelkkä etelänapa.",
+      "Kumpikin kappale on pienempi magneetti, jolla on oma pohjoisnapansa ja etelänapansa.",
+      "Kappaleet menettävät magneettisuutensa, koska napojen välinen raja katoaa sahattaessa.",
+      "Kappaleet ovat magneettisia vain, jos ne magnetoidaan sahauksen jälkeen uudelleen."
+     ],
+     "correct": 1,
+     "tag": "concept"
+    },
+    {
+     "id": "b",
+     "kind": "choice",
+     "points": 2,
+     "text": "Protoni liikkuu homogeenisessa magneettikentässä kenttään nähden kohtisuoraan ja kiertää ympyrärataa. Protonin nopeus kaksinkertaistetaan, ja kenttä pysyy samana. Miten radan säde ja yhden kierroksen kestoaika muuttuvat?",
+     "options": [
+      "Säde nelinkertaistuu ja kierrosaika pysyy samana.",
+      "Säde kaksinkertaistuu ja kierrosaika kaksinkertaistuu.",
+      "Säde kaksinkertaistuu ja kierrosaika pysyy samana.",
+      "Säde pysyy samana ja kierrosaika puolittuu."
+     ],
+     "correct": 2,
+     "tag": "concept"
+    },
+    {
+     "id": "c",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kaksi pitkää suoraa johdinta on yhdensuuntaiset ja niissä kulkee samansuuntaiset virrat. Johtimet vetävät toisiaan puoleensa voimalla, jonka suuruus johdinpituutta kohti on $F$. Toisen johtimen virta kaksinkertaistetaan ja johtimien välinen etäisyys kaksinkertaistetaan. Mikä on voima johdinpituutta kohti nyt?",
+     "options": [
+      "$F/2$",
+      "$F$",
+      "$2F$",
+      "$4F$"
+     ],
+     "correct": 1,
+     "tag": "math"
+    },
+    {
+     "id": "d",
+     "kind": "choice",
+     "points": 2,
+     "text": "Käämissä on $200$ kierrosta. Sen läpi kulkevan magneettivuon $\\Phi$ riippuvuus ajasta on kuvassa. Mikä on käämiin indusoituvan jännitteen itseisarvo hetkellä $t = 4{,}5\\,\\text{s}$?",
+     "options": [
+      "$0{,}12\\,\\text{V}$",
+      "$0{,}08\\,\\text{V}$",
+      "$0{,}06\\,\\text{V}$",
+      "$0{,}40\\,\\text{mV}$"
+     ],
+     "correct": 1,
+     "tag": "graph",
+     "figure": "fy7-koe/fy7-k1-flux"
+    },
+    {
+     "id": "e",
+     "kind": "choice",
+     "points": 2,
+     "text": "Voimakas magneetti pudotetaan ensin pystysuoran kuparisen putken läpi ja sitten samanmittaisen muoviputken läpi. Magneetti putoaa kupariputkessa selvästi hitaammin kuin muoviputkessa. Mikä selitys on oikea?",
+     "options": [
+      "Kuparin tiheys on suuri, joten putken sisällä oleva ilma vastustaa putoamista enemmän kuin muoviputkessa.",
+      "Putken seinämä saa magneetin varautumaan, ja varausten sähköinen hylkiminen jarruttaa magneetin liikettä.",
+      "Kupari on ferromagneettista, joten putki vetää magneettia ylöspäin ja hidastaa sen putoamista.",
+      "Magneetin liike indusoi kupariin pyörrevirtoja, joiden kenttä vastustaa liikettä ja jotka muuttavat magneetin mekaanista energiaa sisäenergiaksi."
+     ],
+     "correct": 3,
+     "tag": "concept"
+    },
+    {
+     "id": "f",
+     "kind": "choice",
+     "points": 2,
+     "text": "Kaksi lineaarista polarisaatiosuodinta on ristikkäin, eli niiden läpäisysuunnat ovat kohtisuorassa toisiaan vastaan, eikä valoa pääse läpi. Kolmas samanlainen suodin asetetaan niiden väliin niin, että sen läpäisysuunta on $45^\\circ$ kulmassa kumpaankin suuntaan nähden. Mitä tapahtuu?",
+     "options": [
+      "Osa valosta pääsee läpi, koska keskimmäisen suotimen läpäissyt valo on polarisoitunut sen suuntaan ja sillä on komponentti viimeisen suotimen läpäisysuunnassa.",
+      "Valoa ei pääse läpi, koska kolmas suodin vain vaimentaa valoa lisää eikä voi päästää sitä, minkä kaksi ensimmäistä pysäyttivät.",
+      "Läpi pääsee puolet alkuperäisestä valosta, koska keskimmäinen suodin kääntää polarisaation takaisin ensimmäisen suotimen suuntaiseksi.",
+      "Valo pääsee läpi täysin vaimentumatta, koska $45^\\circ$ on molempien suotimien läpäisysuuntien puolivälissä."
+     ],
+     "correct": 0,
+     "tag": "concept"
+    },
+    {
+     "id": "g",
+     "kind": "choice",
+     "points": 2,
+     "text": "Sähkö siirretään voimajohtoa pitkin samalla teholla. Muuntaja nostaa johdon jännitteen kymmenkertaiseksi, ja johdon resistanssi pysyy samana. Miten johdon lämpenemiseen kuluva häviöteho muuttuu?",
+     "options": [
+      "Häviöteho kasvaa satakertaiseksi.",
+      "Häviöteho pienenee kymmenesosaan.",
+      "Häviöteho pienenee sadasosaan.",
+      "Häviöteho kasvaa kymmenkertaiseksi."
+     ],
+     "correct": 2,
+     "tag": "math"
+    },
+    {
+     "id": "h",
+     "kind": "choice",
+     "points": 2,
+     "text": "Neljä sähkömagneettista säteilyä ovat mikroaaltouunin säteily taajuudella $2{,}45\\,\\text{GHz}$, FM-radiolähetyksen säteily taajuudella $100\\,\\text{MHz}$, punainen valo aallonpituudella $700\\,\\text{nm}$ ja röntgensäteily aallonpituudella $0{,}1\\,\\text{nm}$. Missä järjestyksessä ne ovat lyhimmästä aallonpituudesta pisimpään?",
+     "options": [
+      "röntgensäteily, punainen valo, mikroaallot, FM-radio",
+      "röntgensäteily, punainen valo, FM-radio, mikroaallot",
+      "FM-radio, mikroaallot, punainen valo, röntgensäteily",
+      "punainen valo, röntgensäteily, mikroaallot, FM-radio"
+     ],
+     "correct": 0,
+     "tag": "math"
+    },
+    {
+     "id": "i",
+     "kind": "choice",
+     "points": 2,
+     "text": "Valokuidun ydin on lasia, jonka taitekerroin on $1{,}50$, ja ydintä ympäröivän vaipan taitekerroin on $1{,}44$. Ytimessä kulkevan valon säde osuu ytimen ja vaipan rajapintaan ensin kulmassa $70^\\circ$ ja toisessa tapauksessa kulmassa $76^\\circ$ rajapinnan normaaliin nähden. Mikä väite pitää paikkansa?",
+     "options": [
+      "Kulmassa $70^\\circ$ valo heijastuu kokonaan, koska kulma on pienempi, ja kulmassa $76^\\circ$ osa valosta kulkee vaippaan.",
+      "Kummassakaan tapauksessa ei synny kokonaisheijastusta, koska vaipan taitekerroin on suurempi kuin ilman.",
+      "Molemmissa tapauksissa valo heijastuu kokonaan, koska ydin on optisesti tiheämpi kuin vaippa.",
+      "Kulmassa $76^\\circ$ valo heijastuu kokonaan, mutta kulmassa $70^\\circ$ osa valosta kulkee vaippaan."
+     ],
+     "correct": 3,
+     "tag": "concept"
+    },
+    {
+     "id": "j",
+     "kind": "choice",
+     "points": 2,
+     "text": "Pystysuora saippuakalvo valaistaan valkoisella valolla, ja sitä katsotaan heijastuneessa valossa. Kalvon yläreuna on ohentunut niin, että sen paksuus on paljon valon aallonpituutta pienempi, ja reuna näyttää mustalta. Mikä selittää tämän?",
+     "options": [
+      "Ilmasta kalvoon tulevan valon heijastuessa aalto vaihtaa vaihetta, mutta kalvon takapinnalla ei, joten ohuessa kohdassa heijastuneet aallot kumoavat toisensa.",
+      "Ohut kalvo absorboi kaiken siihen osuvan valon, joten kalvosta ei heijastu valoa lainkaan.",
+      "Kalvon molemmilla pinnoilla heijastus tapahtuu samalla tavalla, ja aallot vahvistavat toisiaan vain, kun kalvo on paksu.",
+      "Kalvon paksuus on puolet aallonpituudesta, jolloin kaikki aallonpituudet kumoavat toisensa ja heijastus katoaa."
+     ],
+     "correct": 0,
+     "tag": "concept"
+    }
+   ],
+   "skills": [
+    "fy7-1",
+    "fy7-2",
+    "fy7-4",
+    "fy7-5",
+    "fy7-6",
+    "fy7-8",
+    "fy7-9",
+    "fy7-12",
+    "fy7-14",
+    "fy7-15"
+   ],
+   "links": {
+    "concept": "fy7-1",
+    "graph": "fy7-5",
+    "math": "fy7-8"
+   }
+  },
+  {
+   "id": "fy7-k2",
+   "title": "Elektronisuihku magneettikentässä",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia.",
+   "text": "Opiskelija tutki tyhjiöputkessa kulkevaa elektronisuihkua. Elektronit lähtevät levosta ja kiihtyvät jännitteellä $U$. Sen jälkeen ne tulevat homogeeniseen magneettikenttään, jonka vuontiheys on $B = 0{,}80\\,\\text{mT}$ ja suunta kohtisuoraan elektronien nopeuteen nähden. Suihku kiertää ympyrärataa, jonka säteen $r$ opiskelija mittasi suihkun jäljestä. Säteen mittauksen epävarmuus on $\\pm 1\\,\\text{mm}$, ja jännite tunnetaan tarkasti. Elektronin ominaisvaraus $e / m_\\text{e}$ on opiskelijalle tuntematon.\n\n| $U\\ (\\text{V})$ | $80$ | $120$ | $160$ | $200$ | $240$ |\n|---|---|---|---|---|---|\n| $r\\ (\\text{mm})$ | $38$ | $46$ | $54$ | $59$ | $66$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 5,
+     "text": "Laske $r^2$ ja piirrä $(U, r^2)$-kuvaaja virhepalkkeineen. Sovita pisteisiin suora.",
+     "criteria": [
+      {
+       "text": "Laskee neliöt oikein: $r^2 \\approx 1{,}44$, $2{,}12$, $2{,}92$, $3{,}48$ ja $4{,}36 \\cdot 10^{-3}\\,\\text{m}^2$.",
+       "tag": "math",
+       "points": 1
+      },
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 1,
+       "detail": "Jokaiseen pisteeseen on piirretty virhepalkki $\\pm 2r\\Delta r$, eli pituudet ovat välillä $(0{,}08\\text{–}0{,}13) \\cdot 10^{-3}\\,\\text{m}^2$ pisteen molemmin puolin."
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Pisteisiin on sovitettu suora, joka kulkee kaikkien virhepalkkien lähellä; suora ei ole murtoviiva."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Määritä kuvaajan avulla elektronin ominaisvaraus $e / m_\\text{e}$.",
+     "answer": {
+      "value": 174000000000.0,
+      "unit": "C/kg",
+      "tolerance": 0.05
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Energiasta $eU = \\tfrac{1}{2} m_\\text{e} v^2$ ja ympyräliikkeestä $evB = m_\\text{e}v^2 / r$ saadaan $r^2 = \\dfrac{2m_\\text{e}}{eB^2}\\,U$, joten kulmakerroin on $\\tfrac{2m_\\text{e}}{eB^2}$ ja $\\tfrac{e}{m_\\text{e}} = \\tfrac{2}{B^2 \\cdot \\text{kulmakerroin}}$."
+      },
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin määritetään kuvaajalta: joko luetaan suoralta kaksi kaukana toisistaan olevaa pistettä, esimerkiksi $(80\\,\\text{V};\\ 1{,}4 \\cdot 10^{-3}\\,\\text{m}^2)$ ja $(240\\,\\text{V};\\ 4{,}3 \\cdot 10^{-3}\\,\\text{m}^2)$, tai käytetään laskentaohjelman sovitusta."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$e / m_\\text{e} \\approx 1{,}7 \\cdot 10^{11}\\,\\text{C/kg}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 3,
+     "text": "Arvioi kohdassa b määritetyn ominaisvarauksen epävarmuus piirtämällä jyrkin ja loivin suora, jotka vielä kulkevat kaikkien viiden virhepalkin sisällä. Sopiiko tulos ominaisvarauksen tunnettuun arvoon $1{,}759 \\cdot 10^{11}\\,\\text{C/kg}$?",
+     "answer": {
+      "value": 8400000000.0,
+      "unit": "C/kg",
+      "tolerance": 0.25
+     },
+     "criteria": [
+      {
+       "key": "uncertainty",
+       "points": 2,
+       "detail": "Jyrkin ja loivin suora antavat $e / m_\\text{e}$:lle ääriarvot $\\approx 1{,}68 \\cdot 10^{11}\\,\\text{C/kg}$ ja $1{,}85 \\cdot 10^{11}\\,\\text{C/kg}$; epävarmuus on niiden eron puolikas, noin $0{,}08 \\cdot 10^{11}\\,\\text{C/kg}$."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Tulos $(1{,}74 \\pm 0{,}08) \\cdot 10^{11}\\,\\text{C/kg}$, ja tunnettu arvo kuuluu väliin: mittaus on sopusoinnussa."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Selitä, miksi elektronin rata magneettikentässä on ympyrä ja miksi magneettikenttä ei muuta elektronin nopeuden suuruutta.",
+     "criteria": [
+      {
+       "text": "Selittää, että magneettinen voima on aina kohtisuorassa nopeutta vastaan ja kentän suuntaa vastaan, joten se kääntää nopeuden suuntaa ja toimii keskeisvoimana: rata on ympyrä.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "text": "Selittää, että voima on kohtisuorassa liikesuuntaa vastaan, joten se ei tee työtä: liike-energia ja nopeuden suuruus pysyvät vakiona.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy7-2"
+   ],
+   "links": {
+    "communication": "fy7-2",
+    "concept": "fy7-2",
+    "experiment": "fy7-2",
+    "graph": "fy7-2",
+    "math": "fy7-2"
+   }
+  },
+  {
+   "id": "fy7-k3",
+   "title": "Liukuva sauva kiskoilla",
+   "source": "example",
+   "source_note": "Tilanne ja arvot on laadittu esimerkiksi.",
+   "text": "Kaksi vaakasuoraa johdekiskoa on $0{,}30\\,\\text{m}$:n päässä toisistaan, ja niiden vasempaan päähän on kytketty vastus, jonka resistanssi on $0{,}60\\,\\Omega$. Kiskojen päällä on johdesauva, joka liukuu kitkatta oikealle vakionopeudella $2{,}5\\,\\text{m/s}$ ja pysyy koko ajan kohtisuorassa kiskoja vastaan. Homogeeninen magneettikenttä, jonka vuontiheys on $0{,}40\\,\\text{T}$, osoittaa kohtisuoraan paperin tasoon sisään. Kiskojen ja sauvan resistanssit ovat vastukseen verrattuna merkityksettömän pieniä.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Laske sauvaan indusoituva jännite.",
+     "answer": {
+      "value": 0.3,
+      "unit": "V",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Sauvan pyyhkäisemä pinta-ala kasvaa nopeudella $lv$, joten $\\Delta\\Phi / \\Delta t = B l v$ ja jännite $e = vBl$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$e = 0{,}30\\,\\text{V}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "word",
+     "points": 3,
+     "text": "Mihin suuntaan virta kulkee sauvassa: paperin tasossa ylöspäin vai alaspäin? Perustele Lenzin lain avulla.",
+     "criteria": [
+      {
+       "text": "Toteaa, että silmukan läpi paperin sisään menevä vuo kasvaa, koska silmukan pinta-ala kasvaa.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Päättelee Lenzin lain mukaan, että indusoitunut kenttä vastustaa muutosta ja osoittaa paperin tasosta ulos, joten virta kiertää silmukassa vastapäivään.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Virta kulkee sauvassa ylöspäin (sama tulos saadaan voimasta $q\\overline{v} \\times \\overline{B}$ sauvan varauksiin)."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 5,
+     "text": "Laske virta, sauvaan kohdistuva magneettinen voima ja teho, jolla sauvaa on vedettävä, jotta nopeus pysyy vakiona.",
+     "answer": [
+      {
+       "name": "F",
+       "value": 0.06,
+       "unit": "N",
+       "tolerance": 0.03
+      },
+      {
+       "name": "P",
+       "value": 0.15,
+       "unit": "W",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 2,
+       "detail": "Virta $I = e / R$; voima $F = IlB\\sin 90^\\circ$; vakionopeudella vetävä voima on yhtä suuri kuin magneettinen voima, joten vetoteho $P = Fv$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$I = 0{,}50\\,\\text{A}$, $F = 0{,}060\\,\\text{N}$ ja $P = 0{,}15\\,\\text{W}$."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Vertaa vetotehoa vastuksen lämpötehoon $I^2R = 0{,}15\\,\\text{W}$: ne ovat yhtä suuret."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 4,
+     "text": "Selitä energiaperiaatteella, miksi induktiovirran suunta ei voi olla päinvastainen ja mihin sauvaa vetävä teho päätyy.",
+     "criteria": [
+      {
+       "text": "Selittää, että päinvastaisessa suunnassa magneettinen voima työntäisi sauvaa eteenpäin, sauva kiihtyisi ja virta kasvaisi: energiaa syntyisi tyhjästä, mikä on ristiriidassa energian säilymisen kanssa.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "text": "Selittää, että sauvan liikettä vastustava magneettinen voima tekee negatiivista työtä, ja vetävän voiman tekemä työ muuttuu sähköenergiaksi.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Toteaa, että sähköteho $eI = 0{,}15\\,\\text{W}$ muuttuu vastuksessa sisäenergiaksi eli lämmöksi, ja tämä on sama kuin vetoteho.",
+       "tag": "communication",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy7-4",
+    "fy7-5",
+    "fy7-6"
+   ],
+   "links": {
+    "communication": "fy7-6",
+    "concept": "fy7-6",
+    "math": "fy7-5"
+   }
+  },
+  {
+   "id": "fy7-k4",
+   "title": "Pyörivä käämi ja muuntaja",
+   "source": "example",
+   "source_note": "Mittaus ja arvot on laadittu esimerkiksi.",
+   "text": "Pienen generaattorin käämissä on $90$ kierrosta ja sen pinta-ala on $0{,}0150\\,\\text{m}^2$. Käämi pyörii tasaisesti homogeenisessa magneettikentässä, ja sen jännitettä $e$ mitattiin oskilloskoopilla. Generaattori syöttää ideaalisen muuntajan ensiökäämiä, jossa on $150$ kierrosta. Muuntajan toisiojännite on $230\\,\\text{V}$ (tehollisarvo), ja toisioon on kytketty kuorma, jonka teho on $46\\,\\text{W}$. Käämin resistanssi jätetään huomiotta, joten käämin jännite on sama kuin muuntajan ensiöjännite.",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 4,
+     "text": "Lue kuvaajalta jännitteen huippuarvo ja jakso. Laske jännitteen taajuus ja tehollinen jännite.",
+     "figure": "fy7-koe/fy7-k4-sin",
+     "answer": [
+      {
+       "name": "f",
+       "value": 40.0,
+       "unit": "Hz",
+       "tolerance": 0.03
+      },
+      {
+       "name": "U",
+       "value": 12.4,
+       "unit": "V",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Huippuarvo $e_0 \\approx 17{,}5\\,\\text{V}$ ja jakso $T = 25\\,\\text{ms}$ (esimerkiksi peräkkäisten nollakohtien väli on $12{,}5\\,\\text{ms}$)."
+      },
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$f = 1 / T$ ja $U = e_0 / \\sqrt{2}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$f = 40\\,\\text{Hz}$ ja $U \\approx 12{,}4\\,\\text{V}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 3,
+     "text": "Laske magneettikentän vuontiheys $B$.",
+     "answer": {
+      "value": 0.0516,
+      "unit": "T",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$e_0 = NBA \\cdot 2\\pi f$, josta $B = \\dfrac{e_0}{NA \\cdot 2\\pi f}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$B \\approx 0{,}052\\,\\text{T}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske muuntajan toisiokäämin kierrosluku ja ensiökäämin virta.",
+     "answer": [
+      {
+       "name": "N",
+       "value": 2788.0,
+       "unit": "kierrosta",
+       "tolerance": 0.03
+      },
+      {
+       "name": "I",
+       "value": 3.72,
+       "unit": "A",
+       "tolerance": 0.03
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Ideaalisen muuntajan yhtälö $\\tfrac{U_1}{U_2} = \\tfrac{N_1}{N_2} = \\tfrac{I_2}{I_1}$ ratkaistuna: $N_2 = N_1 U_2 / U_1$ ja $I_1 = I_2 U_2 / U_1$."
+      },
+      {
+       "text": "Laskee toisiovirran kuorman tehosta, $I_2 = P / U_2 = 0{,}20\\,\\text{A}$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$N_2 \\approx 2790$ ja $I_1 \\approx 3{,}7\\,\\text{A}$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 4,
+     "text": "Selitä, miksi muuntaja toimii vain vaihtovirralla ja miksi sähköä siirretään voimalinjoissa suurella jännitteellä.",
+     "criteria": [
+      {
+       "text": "Selittää, että toimiakseen muuntaja tarvitsee ensiökäämin muuttuvan magneettivuon, joka indusoi toisiojännitteen; tasavirta antaa vakiovuon, jolloin toisiossa ei indusoidu jännitettä.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "text": "Selittää, että samalla teholla suurempi jännite tarkoittaa pienempää virtaa, ja johdon häviöteho $RI^2$ pienenee virran neliön mukaan; muuntaja mahdollistaa jännitteen nostamisen ja laskemisen vaihtovirralla.",
+       "tag": "concept",
+       "points": 2
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy7-7",
+    "fy7-8"
+   ],
+   "links": {
+    "concept": "fy7-8",
+    "graph": "fy7-7",
+    "math": "fy7-7",
+    "transfer": "fy7-8"
+   }
+  },
+  {
+   "id": "fy7-k5",
+   "title": "Hila ja laserosoitin",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia.",
+   "text": "Opiskelija valaisi tuntematonta hilaa vihreällä laserilla, jonka aallonpituus on $532\\,\\text{nm}$. Valo osui hilaan kohtisuoraan, ja hilan ja varjostimen etäisyys oli $L = 1{,}500\\,\\text{m}$. Opiskelija mittasi, kuinka kaukana keskimaksimista kertalukujen $k = 1$, $2$ ja $3$ maksimit ovat varjostimella. Etäisyys $x$ on keskimaksimin ja maksimin välinen, ja sen lukemaepävarmuus on $\\pm 2\\,\\text{mm}$.\n\n| $k$ | $1$ | $2$ | $3$ |\n|---|---|---|---|\n| $x\\ (\\text{m})$ | $0{,}243$ | $0{,}503$ | $0{,}822$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 3,
+     "text": "Määritä hilaväli kertalukua $k = 1$ olevan maksimin avulla.",
+     "answer": {
+      "value": 3.33e-06,
+      "unit": "m",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Maksimin suuntakulmalle $\\tan\\theta = x / L$ ja $d\\sin\\theta = k\\lambda$, joten $d = \\dfrac{k\\lambda}{\\sin\\theta}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$d \\approx 3{,}33\\,\\mu\\text{m}$."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske hilaväli jokaisen kertaluvun maksimista ja arvioi lukemaepävarmuuden vaikutus kuhunkin tulokseen. Anna hilaväli parhaana arviona ja päättele, mikä kertaluku antaa luotettavimman tuloksen.",
+     "answer": {
+      "value": 3.33e-06,
+      "unit": "m",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "uncertainty",
+       "points": 2,
+       "detail": "Siirtämällä $x$:ää arvon $\\pm 2\\,\\text{mm}$ verran saadaan hilavälin epävarmuudeksi noin $\\pm 27$, $\\pm 12$ ja $\\pm 6\\,\\text{nm}$ (suhteellisesti $0{,}8\\,\\%$, $0{,}4\\,\\%$ ja $0{,}2\\,\\%$)."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Hilavälit $3{,}327$, $3{,}347$ ja $3{,}321\\,\\mu\\text{m}$, keskiarvo $3{,}33\\,\\mu\\text{m}$ eli noin $300$ viivaa millimetriä kohti."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Korkein kertaluku $k = 3$ on luotettavin, koska $x$ on suurin ja sama lukemavirhe on pienin osa siitä; tulokset sopivat yhteen noin $0{,}8\\,\\%$:n tarkkuudella."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 3,
+     "text": "Mikä on suurin kertaluku $k$, jonka maksimi hilalla voi syntyä, kun valo tulee kohtisuoraan?",
+     "answer": {
+      "value": 6,
+      "unit": "",
+      "tolerance": 0.0
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Maksimi syntyy vain, jos $\\sin\\theta = \\dfrac{k\\lambda}{d} \\le 1$, joten $k \\le \\dfrac{d}{\\lambda}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\tfrac{3{,}33\\,\\mu\\text{m}}{532\\,\\text{nm}} \\approx 6{,}3$."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Kertaluvun on oltava kokonaisluku, joten $k_\\text{max} = 6$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 5,
+     "text": "Hilaa valaistaan nyt valkoisella valolla. Kuvaile, millainen kuvio varjostimelle syntyy keskimaksimin ja ensimmäisen kertaluvun maksimien kohdalle, selitä kuvio aaltoliikkeen avulla ja kerro, mitä tapahtuu korkeammilla kertaluvuilla.",
+     "criteria": [
+      {
+       "text": "Toteaa, että keskimaksimi on valkoinen, koska kaikilla aallonpituuksilla aaltojen matkaero on nolla ja ne vahvistavat toisiaan samaan suuntaan.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Selittää, että ensimmäisen kertaluvun maksimi syntyy, kun matkaero vierekkäisistä raoista on yksi aallonpituus: suuntakulma kasvaa aallonpituuden mukana, joten valo hajoaa väreiksi.",
+       "tag": "concept",
+       "points": 2
+      },
+      {
+       "text": "Toteaa värien järjestyksen: violetti lähimpänä keskimaksimia ja punainen kauimpana, ja jokaisessa kertaluvussa on oma spektrinsä keskimaksimin kummallakin puolella.",
+       "tag": "communication",
+       "points": 1
+      },
+      {
+       "text": "Huomaa, että korkeammat kertaluvut hajoavat leveämmiksi ja menevät päällekkäin (esimerkiksi kertaluvun $3$ violetti on kertaluvun $2$ punaisen sisäpuolella).",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy7-13",
+    "fy7-11"
+   ],
+   "links": {
+    "communication": "fy7-13",
+    "concept": "fy7-13",
+    "experiment": "fy7-13",
+    "math": "fy7-13"
+   }
+  },
+  {
+   "id": "fy7-k6",
+   "title": "Tuulipuiston sähkön siirto",
+   "source": "example",
+   "source_note": "Tilanne, kaapelin resistanssi ja hinnat on laadittu esimerkiksi.",
+   "text": "Rannikolle suunnitellaan tuulipuistoa, jonka generaattorit tuottavat tehon $12\\,\\text{MW}$ jännitteellä $20\\,\\text{kV}$. Teho siirretään $40\\,\\text{km}$:n päähän kaapelilla, jonka kokonaisresistanssi on $4{,}8\\,\\Omega$. Laskuissa kaapelin resistanssi oletetaan vakioksi ja siirto lasketaan kuin tasavirralla. Puisto tuottaa tehon $12\\,\\text{MW}$ vastaavan energian vuodessa $4000\\,\\text{h}$ ajan, ja häviöenergian arvo on $50\\,\\text{€/MWh}$.\n\n| Vaihtoehto | Siirtojännite | Lisäkustannus |\n|---|---|---|\n| A: suora siirto | $20\\,\\text{kV}$ | $0$ |\n| B: muuntajat molemmissa päissä | $110\\,\\text{kV}$ | $3{,}0\\,\\text{M€}$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 8,
+     "text": "Vertaa vaihtoehtoja A ja B siirtohäviöiden kannalta: selvitä, kuinka suuri osa tuotetusta tehosta muuttuu lämmöksi kaapelissa kummassakin vaihtoehdossa. Valitse itse laskettavat suureet ja perustele, miksi tulokset eroavat.",
+     "answer": [
+      {
+       "name": "IA",
+       "value": 600.0,
+       "unit": "A",
+       "tolerance": 0.02
+      },
+      {
+       "name": "PhA",
+       "value": 1728000.0,
+       "unit": "W",
+       "tolerance": 0.02
+      },
+      {
+       "name": "IB",
+       "value": 109.1,
+       "unit": "A",
+       "tolerance": 0.02
+      },
+      {
+       "name": "PhB",
+       "value": 57100.0,
+       "unit": "W",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Valitsee mallin itse: siirrettävästä tehosta ja jännitteestä saadaan kaapelin virta, ja kaapelin resistanssissa virta tuottaa lämpötehon.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "equation",
+       "points": 2,
+       "detail": "Virta $I = P/U$ ja häviöteho $P_\\text{h} = RI^2$ kummallekin siirtojännitteelle."
+      },
+      {
+       "key": "calculation",
+       "points": 2,
+       "detail": "Vaihtoehto A: $600\\,\\text{A}$ ja $1{,}73\\,\\text{MW}$; vaihtoehto B: $109\\,\\text{A}$ ja $57{,}1\\,\\text{kW}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Muuntaa kilovoltit ja megawatit SI-yksiköiksi; häviöt $14\\,\\%$ ja $0{,}48\\,\\%$ tehosta."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Arvioi, että $14\\,\\%$:n häviö on liian suuri käytännön siirrolle."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Perustelee eron: samalla teholla jännite $5{,}5$-kertainen, virta $5{,}5$ kertaa pienempi ja häviö neliöllisesti $30$ kertaa pienempi."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 4,
+     "text": "Vaihtoehdossa B muuntaja nostaa jännitteen $20\\,\\text{kV}$:sta $110\\,\\text{kV}$:iin. Sen $110\\,\\text{kV}$:n puolella on $2750$ kierrosta. Määritä $20\\,\\text{kV}$:n puolen kierrosluku ja virta.",
+     "answer": [
+      {
+       "name": "N",
+       "value": 500.0,
+       "unit": "kierrosta",
+       "tolerance": 0.02
+      },
+      {
+       "name": "I",
+       "value": 600.0,
+       "unit": "A",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Ideaalisen muuntajan yhtälö $\\tfrac{U_1}{U_2} = \\tfrac{N_1}{N_2} = \\tfrac{I_2}{I_1}$ ratkaistuna: $N_1 = N_2 U_1 / U_2$."
+      },
+      {
+       "key": "calculation",
+       "points": 1
+      },
+      {
+       "text": "Päättelee, että ideaalisessa muuntajassa teho säilyy, joten $20\\,\\text{kV}$:n puolen virta on $P / U = 600\\,\\text{A}$.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$N_1 = 500$ ja $I_1 = 600\\,\\text{A}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Laske, kuinka paljon rahaa vaihtoehto B säästää vuodessa häviöenergian arvossa vaihtoehtoon A verrattuna, ja kuinka monessa vuodessa muuntajien lisäkustannus maksaa itsensä takaisin.",
+     "answer": [
+      {
+       "name": "sav",
+       "value": 334000.0,
+       "unit": "€",
+       "tolerance": 0.02
+      },
+      {
+       "name": "pay",
+       "value": 8.98,
+       "unit": "a",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "text": "Päättelee, että häviöenergia on teho kerrottuna ajalla, $E = P_\\text{h} t$, ja arvo saadaan hinnalla.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 2,
+       "detail": "Häviöenergiat $6912\\,\\text{MWh}$ ja $228\\,\\text{MWh}$, säästö $\\approx 334\\,000\\,\\text{€}$ vuodessa."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Takaisinmaksuaika $3{,}0\\,\\text{M€} / 0{,}334\\,\\text{M€/a} \\approx 9{,}0\\,\\text{a}$."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 4,
+     "text": "Arvioi laskujen oletuksia ja valitse vaihtoehdoista kannattavampi. Mitkä tekijät voisivat muuttaa johtopäätöstä?",
+     "criteria": [
+      {
+       "key": "assumptions",
+       "points": 2,
+       "detail": "Nimeää oletuksia ja perustelee vaikutuksen: tuotanto ei ole vakio (häviö riippuu virran neliöstä), kaapelin resistanssi riippuu lämpötilasta, tehokerroin ja kolmivaihe yksinkertaistettu, muuntajien omat häviöt (noin $0{,}5\\,\\%$) jätettiin pois, sähkön hinta voi muuttua."
+      },
+      {
+       "key": "conclusion",
+       "points": 2,
+       "detail": "Perustelee valinnan luvuilla: B säästää häviöitä noin $0{,}33\\,\\text{M€}$ vuodessa ja maksaa itsensä takaisin noin yhdeksässä vuodessa, joten B on kannattava, jos laitteiden käyttöikä on selvästi pidempi; huomioi myös jännitehäviö kaapelissa (A: $14\\,\\%$) ja eristyksen sekä turvallisuuden kustannukset."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy7-8",
+    "fy7-16"
+   ],
+   "links": {
+    "communication": "fy7-16",
+    "math": "fy7-8",
+    "transfer": "fy7-16"
+   }
+  },
+  {
+   "id": "fy7-k7",
+   "title": "Hehkulampun spektri",
+   "source": "example",
+   "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia. Volframin sulamispiste $3695\\,\\text{K}$ on taulukkoarvo.",
+   "text": "Opiskelija mittasi spektrometrillä hehkulampun langan säteilyn spektriä eri lämpötiloissa. Langan lämpötila $T$ arvioitiin sen resistanssin muutoksesta, ja arvion epävarmuus on noin $\\pm 50\\,\\text{K}$. Spektrin huipun aallonpituus $\\lambda_\\text{max}$ luettiin spektristä, ja sen epävarmuus on noin $\\pm 15\\,\\text{nm}$. Opiskelija oletti, että lanka säteilee likimain mustan kappaleen tavoin.\n\n| $T\\ (\\text{K})$ | $2200$ | $2400$ | $2600$ | $2800$ | $3000$ |\n|---|---|---|---|---|---|\n| $\\lambda_\\text{max}\\ (\\text{nm})$ | $1262$ | $1139$ | $1070$ | $975$ | $921$ |",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "graph",
+     "points": 5,
+     "text": "Tutki sopivan kuvaajan avulla, miten spektrin huipun aallonpituus riippuu lämpötilasta.",
+     "criteria": [
+      {
+       "text": "Valitsee muuttujat, joilla riippuvuus on suora: $\\lambda_\\text{max}$ ja $1/T$ (tai $T$ ja $1/\\lambda_\\text{max}$), ja laskee käänteisluvut oikein (esimerkiksi $1/T \\approx 4{,}55$, $4{,}17$, $3{,}85$, $3{,}57$ ja $3{,}33 \\cdot 10^{-4}\\,\\text{K}^{-1}$).",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "graph_axes",
+       "points": 1
+      },
+      {
+       "key": "graph_points",
+       "points": 1
+      },
+      {
+       "key": "graph_fit",
+       "points": 2,
+       "detail": "Pisteisiin on sovitettu suora, joka kulkee origon kautta, koska malli $\\lambda_\\text{max} = b \\cdot \\tfrac{1}{T}$ ei sisällä vakiotermiä; suora ei ole murtoviiva."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 3,
+     "text": "Määritä kuvaajan avulla Wienin siirtymälain vakio $b$.",
+     "answer": {
+      "value": 0.00276,
+      "unit": "m K",
+      "tolerance": 0.04
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Mallista $\\lambda_\\text{max} = b \\cdot \\tfrac{1}{T}$ suoran kulmakerroin on $b$."
+      },
+      {
+       "key": "graph_read",
+       "points": 1,
+       "detail": "Kulmakerroin määritetään kuvaajalta: joko luetaan suoralta kaksi kaukana toisistaan olevaa pistettä, esimerkiksi $(2{,}0 \\cdot 10^{-4}\\,\\text{K}^{-1};\\ 550\\,\\text{nm})$ ja $(4{,}0 \\cdot 10^{-4}\\,\\text{K}^{-1};\\ 1100\\,\\text{nm})$, tai käytetään laskentaohjelman sovitusta."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Muuntaa nanometrit metreiksi: $b \\approx 2{,}75 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Vertaa tulosta kirjallisuuden arvoon $2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$. Selitä, onko ero todennäköisesti satunnainen vai systemaattinen, ja nimeä yksi mahdollinen virhelähde.",
+     "answer": {
+      "value": 4.8,
+      "unit": "%",
+      "tolerance": 0.15
+     },
+     "criteria": [
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Poikkeama $\\tfrac{2{,}898 - 2{,}76}{2{,}898} \\approx 4{,}8\\,\\%$."
+      },
+      {
+       "key": "uncertainty",
+       "points": 1,
+       "detail": "Arvioi satunnaisen epävarmuuden: lämpötilan $\\pm 50\\,\\text{K}$ ($\\approx 2\\,\\%$) ja aallonpituuden $\\pm 15\\,\\text{nm}$ ($\\approx 1\\,\\%$) yhdistelmä on noin $2$–$3\\,\\%$."
+      },
+      {
+       "key": "error_sources",
+       "points": 1,
+       "detail": "Nimeää virhelähteen ja sen suunnan, esimerkiksi volframi ei ole musta kappale: sen emissiokyky pienenee aallonpituuden kasvaessa, ja huippu siirtyy hiukan lyhyemmälle aallonpituudelle, joten $b$ tulee liian pieneksi."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Poikkeama on suurempi kuin satunnainen epävarmuus ja kaikki pisteet ovat samalla puolella, joten ero on todennäköisesti systemaattinen."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "calc",
+     "points": 4,
+     "text": "Ihmisen ihon lämpötila on $33\\,{}^\\circ\\text{C}$. Laske ihon säteilyn spektrin huipun aallonpituus kirjallisuuden arvolla $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$ ja päättele, mihin sähkömagneettisen säteilyn lajiin säteily kuuluu. Miksi lämpökamera näkee ihon, vaikka pimeässä silmä ei näe?",
+     "answer": {
+      "value": 9.47,
+      "unit": "µm",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\lambda_\\text{max} = b / T$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Muuntaa lämpötilan kelvineiksi: $T = 306{,}15\\,\\text{K}$."
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$\\lambda_\\text{max} \\approx 9{,}5\\,\\mu\\text{m}$."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Huippu on infrapunassa, jota silmä ei näe mutta lämpökamera havaitsee; iho säteilee myös näkyvän valon aallonpituuksilla niin vähän, ettei se näy."
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "calc",
+     "points": 4,
+     "text": "Hehkulangan volframi sulaa lämpötilassa $3695\\,\\text{K}$. Käytä kirjallisuuden arvoa $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$. Laske mallin avulla, kuinka kuuma lanka olisi, jos sen spektrin huippu olisi näkyvän valon keskellä, $550\\,\\text{nm}$:ssä, ja arvioi mallin perusteella, mitä tästä seuraa lampun hyötysuhteelle. Mitä rajoituksia päättelyssä on?",
+     "answer": {
+      "value": 5270.0,
+      "unit": "K",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$T = b / \\lambda_\\text{max}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$T = \\tfrac{2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{550 \\cdot 10^{-9}\\,\\text{m}} \\approx 5270\\,\\text{K}$."
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Lampun käyttölämpötilassa $2200$–$3000\\,\\text{K}$ huippu on infrapunassa ($1{,}3$–$0{,}97\\,\\mu\\text{m}$), ja näkyvän valon huippu vaatisi lämpötilan $5270\\,\\text{K}$, joka ylittää volframin sulamispisteen: suurin osa säteilystä on näkymätöntä lämpösäteilyä ja hyötysuhde valon tuotossa on pieni."
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Malli on testattu vain alueella $2200$–$3000\\,\\text{K}$, joten päättely ulkopuolisesta alueesta on ekstrapolointia; todellinen lanka ei ole täysin musta kappale, eikä Wienin laki kerro, kuinka suuri osa säteilystä on näkyvää."
+      }
+     ]
+    }
+   ],
+   "skills": [
+    "fy7-9"
+   ],
+   "links": {
+    "communication": "fy7-9",
+    "experiment": "fy7-9",
+    "graph": "fy7-9",
+    "math": "fy7-9",
+    "transfer": "fy7-9"
+   }
+  }
+ ]
+}
