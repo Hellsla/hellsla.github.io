@@ -13,15 +13,14 @@ ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta
 FY1–FY9 on tehty (#501, #522, #527, #529, #572, #578, #580, #583). FY5:ssä F pysyy gravitaatiolaissa (opettaja 14.11: F pysyy FY5:ssä); nimeämättä jääneet kaavat on listattu #572:n kuvauksessa opettajaa varten. Keskinopeuden tunnus on kaikkialla $v_\text{k}$, ei $v_\text{ka}$
 (opettaja 2026-11-13).
 
-## 3b. Kaavataulukon välistys `\\[Npt]` (2026-11-14, #580:n löydös)
+## 3b. Kaavataulukon välistys `\\[Npt]`: FY7:n neljä kaavaa (2026-11-14, #580:n löydös)
 
-Varattu: claude/kaavat-pt-valitys
-
-`scripts/kaavat.py` (canonical/write) jättää rivinvaihdon välin `\\[4pt]` tekstinä "[4pt]" kaavarivin alkuun, joten
-lohkoa ei voi muuttaa kaavataulukoksi. Siksi FY7:ssä jäi nimeämättä neljä MAFY-kaavaa: fy7-7 sinimuotoinen
-vaihtojännite ja teholliset arvot, fy7-8 P = UI, fy7-15 Brewsterin laki. Jaettu muutos, pieni; korjaus muuttaa
-katselmointien tiivisteitä, joten `reviews.py`:n carry tai scope selvitetään samassa PR:ssä. Sen jälkeen nimetään
-nuo neljä (formula-names). Tehdään FY8:n kaavojen jälkeen, kun jaettu jono sallii.
+Korjaus on tehty (PR #587): `scripts/kaavat.py` lukee rivinvaihdon välin `\\[4pt]` osaksi rivinvaihtoa, ja
+`docs/*/kaavanimet.tsv`:stä on poistettu `[Npt]`-etuliitteet. Se ei muuta yhdenkään katselmoinnin tilaa (`reviews.py
+verify` samoin ennen ja jälkeen; tiiviste on aina tekstin oma, kaavat.canonical vain vertaa kahta versiota).
+Jäljellä: nimeä FY7:n neljä MAFY-kaavaa (fy7-7 sinimuotoinen vaihtojännite ja teholliset arvot, fy7-8 P = UI, fy7-15
+Brewsterin laki; lista #580:n kuvauksessa) vasta, kun FY7:n esimerkkikoe (kohta 9, #586) on yhdistetty
+(sama kurssi ei kulje kahdessa ketjussa). Nimeämisessä `kaavat.py write` ja `reviews.py carry` (formula-names).
 
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
 
