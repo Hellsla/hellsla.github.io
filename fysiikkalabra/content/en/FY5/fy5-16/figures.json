@@ -38,5 +38,6 @@
  "ääni": "sound",
  "mikrofoni": "microphone",
  "kalvo": "diaphragm",
- "jännite": "voltage"
+ "jännite": "voltage",
+ "Kaavakuva: pystysuora desibeliasteikko 20 desibelistä 130 desibeliin, korkeus mittakaavassa. Asteikon oikealla puolella on äänilähteet ja niiden melutasot kirjoitettuina: kuiskaus 30 dB, keskustelu 60 dB, ruohonleikkuri 90 dB, rock-konsertti 105 dB ja kipukynnys 120 dB. Asteikon yläosa 85 desibelistä ylöspäin on värjätty punaiseksi ja merkitty vasemmalla hakasulkeella: pitkä altistus niin suurelle tasolle vaurioittaa kuuloa.": "Schematic figure: a vertical decibel scale from 20 decibels to 130 decibels, drawn to scale. To the right of the scale are the sound sources with their noise levels written out: whisper 30 dB, conversation 60 dB, lawn mower 90 dB, rock concert 105 dB and threshold of pain 120 dB. The upper part of the scale from 85 decibels upwards is coloured red and marked on the left with a bracket: long exposure to such a high level damages hearing."
 }

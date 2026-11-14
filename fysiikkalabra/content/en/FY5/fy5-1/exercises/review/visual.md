@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: cd55d963ef6779d3
+CONTENT-HASH: c0d75eed1cea1175
+SCOPE: delta added-exercise from cd55d963ef6779d3 base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md fy5-1-L1-09 Model answer — the unit lines are written `expression: unit` in maths, so the colon between a fraction and its unit chain (`d sin α / M : m/Nm`) reads like a ratio; identical to the reviewed Finnish — put the label in words (e.g. `\text{ yksikkö }`) or use a dash in all languages.
+(none)
 
 ## Checked
-- Own 390 px render (scratch script, after the page's scripts, hints, feedback and solution open) of fy5-1-L1-09 in en: page scrollWidth 390, no element outside a scroll box (only KaTeX-internal svg paths, clipped by their own box).
-- Opened the whole task card in tiles: task text, every choice with feedback, answer, solution (Find/Principle/Model answer).
+- Delta: fy5-1-L1-10 task card at 1280 px (open-exercises-1280-10, -11): text, figure fy5-1/ruutu (grid, F\overline arrow, scale bar, O and P labels), full solution and reasonableness block.
+- Opened contact-7 (L3 captures) to confirm the set still reads as one.
 
 ## Scores
-illustrations 5 · typography 4 · English 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

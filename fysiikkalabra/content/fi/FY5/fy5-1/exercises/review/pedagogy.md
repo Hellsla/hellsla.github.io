@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 23f25874b515562a
+CONTENT-HASH: 682917e1074659db
+SCOPE: delta added-exercise from 23f25874b515562a base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json:116 — "Minkä lausekkeen yksikkö on newton ($\text{N}$) eli mikä lauseke voi antaa pienimmän voiman $F$…" — "eli" equates two different questions — ask only "Minkä lausekkeen yksikkö on newton?" and keep the context in the preceding sentence.
-- exercises.json:116 — the unit check cannot catch the lesson's own warned mistake (distance $d$ instead of arm $r$); only the "long key adds force" idea is carried (option $M d\sin\alpha$). Acceptable for a dimension task, no change needed.
+1. solutions.md (L1-10) — Järkevyys is good; the Pythagoras step (3-4-5) makes it a light two-step task, acceptable at level 1.
 
 ## Checked
-- Text only (no renders). New task fy5-1-L1-09 (type 7, unit/dimension): each wrong option's unit is stated correctly in its feedback (N·m², Nm, 1/N); correct option's feedback gives no reasoning beyond Nm/m = N.
-- Correct option not identifiable by form: the two fractions are mirror images, lengths similar; no hedging.
-- Within the lesson ($M=Fr$, $r=d\sin\alpha$); L1 level fits.
-- Solution (Kysytty/Periaate/Mallivastaus) follows step by step; no formula chain over about 300 px at 390 px.
-- Finnish and compound words fine.
+- L1-10 reworked: perpendicular force at P, arm = whole bar read from the grid (5 squares by Pythagoras), M = 30 N · 0,50 m = 15 Nm; recomputed, correct.
+- No longer repeats L1-04 (horizontal force, arm 3 squares, M from F): this one practises that a perpendicular force has the full bar as its arm, plus reading length from a grid; L1-05 is the inverse M/r, not this.
+- Figure shows O, P and a horizontal force; the task says it is replaced, so no confusion; the answer is not drawn.
+- Level 1 fits; mix of kinds unchanged. Text and solution read only (no renders).

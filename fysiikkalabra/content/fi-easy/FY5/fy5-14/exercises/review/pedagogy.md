@@ -1,21 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4f133c9649fea97d
-Mode: full (translation review against the reviewed Finnish set; new task fy5-14-L1-09)
-Round 1
+CONTENT-HASH: 6d65cf28859dd710
+SCOPE: delta added-exercise from 4f133c9649fea97d base 81db4a6fd727
 
 ## Blocking
 (none)
 
-## Fixed
-- None needed; new task fy5-14-L1-09 was already faithful to content/fi.
-
 ## Polish
-(none)
+- fy5-14-L1-10 solution, Vastaus — 'kolme merkitsevää numeroa' for 1400 Hz is unclear; write 'Vastaus on 1400 Hz, kerrottu luetusta perustaajuudesta'.
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: Doppler calculation tasks L1-04, L2-03, L2-04, L2-05, L2-07, L3-01, L3-04 carry the "Syventävä tehtävä" tag and are not core; core path is now L1-05, L1-07, L2-06, and the remaining unmarked Doppler items (L1-07, L1-09) are qualitative and need no formula. Consistent with the lesson's learn/deepen goals.
-- fy5-14-L1-09: situation first, question last as its own sentence; same structure, options and reasoning steps as fi; example-data notice kept where fi has it.
-- Solution has the same stages as fi (Find, Principle, Model answer) and can be followed step by step; nothing skipped or added.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Selkosuomi per NOTES.md section 12: short sentences, common words, glossary terms kept; same physics and numbers as fi; decimal comma in text, point in table cells as in fi.
-- No change to level, workload or figure use; check_i18n.py shows nothing for fy5-14; build.py fy5-14 succeeds.
+- L1-10: the strongest peak (400 Hz) tempts the student to take it as the fundamental; solution names this and the seventh harmonic is not in the figure, so the student must use f_n = n f_1.
+- L2-08: beat period 0,25 s read from the figure, f_h = 4 Hz; the wax step decides between 519 and 527 Hz, a real reasoning step.
+- Distractors match real errors (higher fork, equal frequencies, counting quiet moments: 8 Hz); each feedback names the error and the correct answer feedback explains the wax logic.
+- Descriptions of both figures give the data without the answers; fits level 1 and 2.

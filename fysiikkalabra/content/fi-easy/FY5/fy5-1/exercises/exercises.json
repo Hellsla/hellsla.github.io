@@ -144,9 +144,9 @@
     {
       "id": "fy5-1-L1-10",
       "level": 1,
-      "text": "Kuvassa sauva kääntyy kiertoakselin $O$ ympäri. Sauvaan vaikuttaa kohdassa $P$ vaakasuora voima $F$. Sen momentti akselin $O$ suhteen on $21\\,\\text{Nm}$. Ruudukon yksi ruutu on $0{,}10\\,\\text{m}$. Lue kuvasta voiman varsi. Kuinka suuri on voima $F$?",
-      "answer": 70,
-      "unit": "N",
+      "text": "Kuvassa sauva kääntyy kiertoakselin $O$ ympäri. Kuvan voima korvataan voimalla. Se vaikuttaa kohdassa $P$ kohtisuorassa sauvaa $OP$ vastaan, ja sen suuruus on $30\\,\\text{N}$. Ruudukon yksi ruutu on $0{,}10\\,\\text{m}$. Lue kuvasta sauvan pituus $OP$. Kuinka suuri on tämän voiman momentti akselin $O$ suhteen?",
+      "answer": 15,
+      "unit": "Nm",
       "tolerance": 0.02,
       "figure": "fy5-1/ruutu"
     }

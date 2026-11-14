@@ -225,12 +225,12 @@ So the period of the pendulum becomes about $2.5$ times as long, and the period 
 **Reasonableness:** The energy is small because the displacement is only a few centimetres. If the amplitude were doubled, the energy would be four times as great, because $E \propto A^2$.
 
 ## fy5-9-L2-09
-**Given:** from the graph the position $x$ of the body as a function of time $t$ over $0$–$1.0\,\text{s}$; mass $m = 0.150\,\text{kg}$
-**Find:** the spring constant $k$ in $\text{N/m}$
-**Principle:** The period of a body oscillating on a spring is $T = 2\pi\sqrt{\tfrac{m}{k}}$. The period is read from the graph and the spring constant is solved from the formula.
-**Reading the graph:** The peaks of the curve are at the times $0$, $0.40\,\text{s}$ and $0.80\,\text{s}$. The interval between two successive peaks is one full oscillation, so $T = 0.40\,\text{s}$. The troughs at $0.20\,\text{s}$ and $0.60\,\text{s}$ confirm this.
-**Formula:** $T = 2\pi\sqrt{\dfrac{m}{k}}$, so $T^2 = \dfrac{4\pi^2 m}{k}$ and $k = \dfrac{4\pi^2 m}{T^2}$
-**Conversions:** None needed, all quantities are in SI units.
-**Substitution:** $k = \dfrac{4\pi^2 \cdot 0.150\,\text{kg}}{(0.40\,\text{s})^2} = \dfrac{5.922\,\text{kg}}{0.16\,\text{s}^2} = 37.0\,\text{N/m}$
-**Answer:** $37\,\text{N/m}$, two significant figures like the period $0.40\,\text{s}$.
-**Reasonableness:** Check: $T = 2\pi\sqrt{0.150/37.0}\,\text{s} = 0.40\,\text{s}$, so the result fits the graph. The value is of the order of an ordinary small spring.
+**Given:** from the graph the position $x$ of the body as a function of time $t$ over $0$–$1.0\,\text{s}$
+**Find:** the greatest speed of the body $v_{\max}$
+**Principle:** The oscillation energy $\tfrac12 kA^2$ is all kinetic energy at the equilibrium position, $\tfrac12 m v_{\max}^2 = \tfrac12 kA^2$. The period $T = 2\pi\sqrt{m/k}$ gives $\sqrt{k/m} = 2\pi/T$, so neither the mass nor the spring constant is needed: the amplitude and the period are read from the graph.
+**Reading the graph:** The peaks are at the height $x = 3.0\,\text{cm}$, so $A = 3.0\,\text{cm} = 0.030\,\text{m}$. The peaks are at the times $0$, $0.40\,\text{s}$ and $0.80\,\text{s}$, so $T = 0.40\,\text{s}$. The troughs at $0.20\,\text{s}$ and $0.60\,\text{s}$ confirm this.
+**Formula:** $v_{\max} = A\sqrt{\dfrac{k}{m}} = \dfrac{2\pi A}{T}$
+**Conversions:** $A = 3.0\,\text{cm} = 3.0 \cdot 0.01\,\text{m} = 0.030\,\text{m}$
+**Substitution:** $v_{\max} = \dfrac{2\pi \cdot 0.030\,\text{m}}{0.40\,\text{s}} = \dfrac{0.1885\,\text{m}}{0.40\,\text{s}} = 0.471\,\text{m/s}$
+**Answer:** $0.47\,\text{m/s}$, two significant figures like the amplitude $3.0\,\text{cm}$ and the period $0.40\,\text{s}$.
+**Reasonableness:** In a quarter of a period, $0.10\,\text{s}$, the body travels $0.030\,\text{m}$. The mean speed is $0.30\,\text{m/s}$, and the greatest speed is larger than that, as it should be.

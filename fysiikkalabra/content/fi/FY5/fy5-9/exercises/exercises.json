@@ -42,10 +42,10 @@
     {
       "id": "fy5-9-L2-09",
       "level": 2,
-      "text": "Kuvaaja esittää jousen varassa värähtelevän kappaleen paikkaa ajan funktiona. Kappaleen massa on $0{,}150\\,\\text{kg}$. Laske jousen jousivakio. Anna vastaus newtoneina metriä kohti.",
+      "text": "Kuvaaja esittää jousen varassa värähtelevän kappaleen paikkaa ajan funktiona. Laske kappaleen suurin nopeus. Anna vastaus metreinä sekunnissa.",
       "figure": "fy5-9/kuvaaja-k",
-      "answer": 37.0,
-      "unit": "N/m",
+      "answer": 0.47,
+      "unit": "m/s",
       "tolerance": 0.02
     }
   ],

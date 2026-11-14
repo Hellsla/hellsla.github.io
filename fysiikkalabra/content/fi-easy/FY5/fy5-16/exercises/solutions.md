@@ -243,20 +243,20 @@ Kohta c: annos on $\dfrac{3{,}0\,\text{h}}{1{,}59\,\text{h}} = 1{,}89$ eli $190\
 **Annettu:** kuvasta ruohonleikkurin taso $L = 90\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
 **Kysytty:** vertailuaika $t_\text{v}$ tunteina
 **Periaate:** Melualtistus lasketaan energian keskiarvona. Jokainen $3\,\text{dB}$:n nousu kaksinkertaistaa intensiteetin. Sama annos täyttyy silloin puolessa ajassa.
-**Kuvaajan lukeminen:** Asteikolla ruohonleikkurin merkki on kohdassa $90\,\text{dB}$. Se on punaisella alueella, jossa kuulo vaurioituu. Alue alkaa kohdasta $85\,\text{dB}$.
+**Kuvaajan lukeminen:** Asteikolla ruohonleikkurin merkki on kohdassa $90\,\text{dB}$. Se on punaisella alueella, jossa on kuulovaurion vaara. Alue alkaa kohdasta $85\,\text{dB}$.
 **Kaava:** $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$
 **Muunnokset:** Ei tarvita. Tasot ovat desibeleinä ja aika saadaan tunteina.
 **Sijoitus:** $n = \dfrac{90\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{5}{3}$, $t_\text{v} = \dfrac{8\,\text{h}}{2^{5/3}} = \dfrac{8\,\text{h}}{3{,}175} = 2{,}52\,\text{h}$
 **Vastaus:** $2{,}5\,\text{h}$. Taso luetaan kuvasta kokonaisena desibelinä ja sääntö on arvio. Kaksi merkitsevää numeroa riittää siksi.
-**Järkevyys:** Taso $90\,\text{dB}$ on tasojen $88\,\text{dB}$ ($4\,\text{h}$) ja $91\,\text{dB}$ ($2\,\text{h}$) välissä, lähempänä jälkimmäistä. Tulos $2{,}5\,\text{h}$ on kahden ja neljän tunnin välissä.
+**Järkevyys:** Taso $90\,\text{dB}$ on tasojen $88\,\text{dB}$ ($4\,\text{h}$) ja $91\,\text{dB}$ ($2\,\text{h}$) välissä, lähempänä ylempää tasoa $91\,\text{dB}$. Tulos $2{,}5\,\text{h}$ on kahden ja neljän tunnin välissä, lähempänä kahta tuntia.
 
 ## fy5-16-L2-09
-**Annettu:** kuvasta rock-konsertin taso $L = 105\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
+**Annettu:** kuvasta rock-konsertin taso $L = 105\,\text{dB}$; korvatulppien vaimennus $\Delta L = 12\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
 **Kysytty:** vertailuaika $t_\text{v}$ minuutteina
-**Periaate:** Annos riippuu tasosta ja ajasta. Jokainen $3\,\text{dB}$:n nousu puolittaa vertailuajan, koska melualtistus lasketaan energian keskiarvona.
-**Kuvaajan lukeminen:** Rock-konsertin merkki on asteikolla kohdassa $105\,\text{dB}$. Se on alueella, jossa kuulo vaurioituu. Taso on $20\,\text{dB}$ korkeammalla kuin ylempi toiminta-arvo $85\,\text{dB}$.
-**Kaava:** $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Periaate:** Korvatulpat laskevat korvaan tulevaa tasoa, ja annos riippuu korvan tasosta. Jokainen $3\,\text{dB}$:n nousu puolittaa vertailuajan, koska melualtistus lasketaan energian keskiarvona.
+**Kuvaajan lukeminen:** Rock-konsertin merkki on asteikolla kohdassa $105\,\text{dB}$, alueella, jossa on kuulovaurion vaara.
+**Kaava:** $L_\text{korva} = L - \Delta L$ ja $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L_\text{korva} - L_0}{3\,\text{dB}}$
 **Muunnokset:** $t_0 = 8\,\text{h} = 8 \cdot 60\,\text{min} = 480\,\text{min}$.
-**Sijoitus:** $n = \dfrac{105\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{20}{3}$, $t_\text{v} = \dfrac{480\,\text{min}}{2^{20/3}} = \dfrac{480\,\text{min}}{101{,}6} = 4{,}72\,\text{min}$
-**Vastaus:** $4{,}7\,\text{min}$. Taso luetaan kuvasta kokonaisena desibelinä ja sääntö on arvio. Kaksi merkitsevää numeroa riittää siksi.
-**Järkevyys:** Taso on $20\,\text{dB}$ vertailutason yläpuolella. Intensiteetti on silloin noin $100$-kertainen ja aika noin sadasosa: $480\,\text{min} : 100 = 4{,}8\,\text{min}$. Konsertti kestää tunteja, joten kuulonsuojaimet tarvitaan.
+**Sijoitus:** $L_\text{korva} = 105\,\text{dB} - 12\,\text{dB} = 93\,\text{dB}$, $n = \dfrac{93\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{8}{3}$, $t_\text{v} = \dfrac{480\,\text{min}}{2^{8/3}} = \dfrac{480\,\text{min}}{6{,}350} = 75{,}6\,\text{min}$
+**Vastaus:** $76\,\text{min}$. Taso luetaan kuvasta kokonaisena desibelinä ja sääntö on arvio, joten kaksi merkitsevää numeroa riittää.
+**Järkevyys:** Taso korvassa on $8\,\text{dB}$ vertailutason yläpuolella, tasojen $6\,\text{dB}$ ($120\,\text{min}$) ja $9\,\text{dB}$ ($60\,\text{min}$) välissä, joten noin $76\,\text{min}$ on järkevä. Ilman tulppia aika olisi vain $4{,}7\,\text{min}$, joten tulpat pidentävät sitä noin kuusitoistakertaiseksi.

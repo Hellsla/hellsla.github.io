@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0b8adf1d8e82e8e4
+CONTENT-HASH: 16c8b891104d7a49
+SCOPE: delta added-exercise from 0b8adf1d8e82e8e4 base 81db4a6fd727
 
 ## Blocking
-(none)
 
 ## Polish
-- none.
 
 ## Checked
-- Recomputed v = 2137 m/s, T = 2.76e4 s = 7.66 h; distractors 0.0036 h (no root), 0.24 h (km under root, factor 31.6), 460 h (x60) all reproduced; feedback right.
-- fy5-6-L1-09 compared with the reviewed Finnish: id, level, kind, answer, unit, tolerance, choices, correct flag, feedback and solution steps identical in content.
-- No Finnish text left in en files; check_i18n clean for fy5-6; build.py fy5-6 succeeds.
+- The hash was the same at the start and the end. Round 6: I checked the round-5 fixes. The diff changes only L1-11's unit and hint and L1-10's reasonableness check.
+- exercises.json:136 (L1-11): the unit is now "m/s²", which matches the task. g = γM/r² = 1.448 m/s² → 1.45, as in answers.py and the Finnish version.
+- The L1-11 hint is now singular, because only the Moon's mass is looked up (VERIFIED value 7.346·10²² kg). The 4 % tolerance fits.
+- L1-10: "less than a thousandth" is right, because 5.93·10⁻³/9.81 = 6.0·10⁻⁴. The answer 5.93 mm/s² is unchanged.
+- The answer, unit and tolerance of every exercise equal the Finnish set's. The numbers in the solutions of L1-10, L1-11 and L2-08 are the same as in the Finnish version.

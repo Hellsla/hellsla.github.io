@@ -331,9 +331,9 @@
     {
       "id": "fy5-17-L2-09",
       "level": 2,
-      "text": "Kuvassa on ultraäänilaitteen A-kuvaus reidestä. A-kuvaus näyttää kaiut ajan funktiona. Kaiut A, B ja C tulevat kolmelta kudosrajalta. Ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$. Lue kuvasta kaikujen B ja C hetket. Kuinka paksu on kudoskerros, jota rajaavat kaikuja B ja C vastaavat rajapinnat? Anna vastaus senttimetreinä.",
+      "text": "Kuvassa on ultraäänilaitteen A-kuvaus reidestä. A-kuvaus näyttää kaiut ajan funktiona. Kaiut A, B ja C tulevat kolmelta kudosrajalta. Anturi on ihon pinnalla, ja pulssi lähtee hetkellä nolla. Ääni etenee kudoksessa nopeudella $1540\\,\\text{m/s}$. Kaiku C tulee reisiluun pinnalta. Lue kuvasta kaiun C hetki. Kuinka syvällä ihon pinnasta luun pinta on? Anna vastaus senttimetreinä.",
       "figure": "fy5-17/a-scan",
-      "answer": 3.08,
+      "answer": 6.93,
       "unit": "cm",
       "tolerance": 0.02
     }
