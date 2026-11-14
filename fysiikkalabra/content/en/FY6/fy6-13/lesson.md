@@ -258,8 +258,8 @@ A large capacitor can keep a dangerous voltage for a long time after the device 
 
 ## Formula: Capacitance and the energy of a capacitor
 The capacitance of a capacitor is the ratio of the charge to the voltage:
-```latex
-C = \frac{Q}{U}
+```kaavat
+capacitor law :: C = \frac{Q}{U}
 ```
 where $C$ is the capacitance ($\text{F}$), $Q$ the charge of the capacitor ($\text{C}$) and $U$ the voltage between the plates ($\text{V}$).
 

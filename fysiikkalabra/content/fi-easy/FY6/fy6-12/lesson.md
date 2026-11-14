@@ -560,8 +560,8 @@ Maan magneettikenttä ohjaa avaruudesta tulevia elektroneja napa-alueiden yläpu
 
 ## Kaava: Sähköinen potentiaalienergia ja potentiaali
 Varauksen potentiaalienergia kohdassa, jonka potentiaali on $V$:
-```latex
-E_\text{p} = qV
+```kaavat
+sähkökentän potentiaali :: E_\text{p} = qV
 ```
 Kaavassa $E_\text{p}$ on potentiaalienergia ($\text{J}$), $q$ on varaus etumerkkeineen ($\text{C}$) ja $V$ on kohdan potentiaali ($\text{V}$) valittuun nollakohtaan nähden. Elektronille $q = -e$.
 

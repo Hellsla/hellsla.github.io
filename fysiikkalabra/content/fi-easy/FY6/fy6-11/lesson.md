@@ -327,8 +327,8 @@ missä $\overline{E}$ on sähkökentän voimakkuus ($\text{N/C}$), $\overline{F}
 
 ### Kenttä levyjen jännitteestä
 Homogeenisen kentän voimakkuuden voi laskea levyjen välisestä jännitteestä. Positiivinen varaus $q$ siirtyy positiiviselta levyltä negatiiviselle. Siihen kohdistuu koko matkan sama voima $F = qE$. Kenttä tekee silloin työn $W = Fd = qEd$. Luvun *Virtapiiri, sähkövirta ja jännite* mukaan jännite kertoo energian yhtä varausyksikköä kohti. Siksi sama työ on myös $W = qU$. Merkitään nämä yhtä suuriksi. Varaus supistuu eli häviää yhtälöstä, ja homogeenisen kentän voimakkuus on
-```latex
-E = \frac{U}{d}
+```kaavat
+jännite homogeenisessa sähkökentässä :: E = \frac{U}{d}
 ```
 missä $E$ on sähkökentän voimakkuus ($\text{V/m}$), $U$ levyjen välinen jännite ($\text{V}$) ja $d$ levyjen välinen etäisyys ($\text{m}$). Yksiköt $\text{V/m}$ ja $\text{N/C}$ ovat sama yksikkö, sillä $1\,\text{V/m} = 1\,\tfrac{\text{J}}{\text{C} \cdot \text{m}} = 1\,\tfrac{\text{N} \cdot \text{m}}{\text{C} \cdot \text{m}} = 1\,\text{N/C}$. Esimerkiksi jännite $2{,}0\,\text{kV}$ levyjen välillä $4{,}0\,\text{cm}$ antaa kentän $2000\,\text{V} : 0{,}040\,\text{m} = 5{,}0 \cdot 10^{4}\,\text{V/m}$.
 

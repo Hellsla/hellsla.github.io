@@ -258,8 +258,8 @@ Suuri kondensaattori voi säilyttää vaarallisen jännitteen pitkään sen jäl
 
 ## Kaava: Kapasitanssi ja kondensaattorin energia
 Kondensaattorin kapasitanssi on varauksen ja jännitteen suhde:
-```latex
-C = \frac{Q}{U}
+```kaavat
+kondensaattorilaki :: C = \frac{Q}{U}
 ```
 missä $C$ on kapasitanssi ($\text{F}$), $Q$ kondensaattorin varaus ($\text{C}$) ja $U$ levyjen välinen jännite ($\text{V}$).
 

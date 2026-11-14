@@ -560,8 +560,8 @@ The magnetic field of the Earth guides electrons coming from space to the polar 
 
 ## Formula: Electric potential energy and potential
 The potential energy of a charge at a point whose potential is $V$:
-```latex
-E_\text{p} = qV
+```kaavat
+electric potential :: E_\text{p} = qV
 ```
 where $E_\text{p}$ is the potential energy ($\text{J}$), $q$ the charge with its sign ($\text{C}$) and $V$ the potential of the point ($\text{V}$) relative to the chosen zero point. For an electron $q = -e$.
 

@@ -113,7 +113,7 @@ fy6-10	515	= 8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}
 fy6-10	515	\cdot \frac{9{,}6 \cdot 10^{-17}\,\text{C}^2}{(0{,}060\,\text{m})^2}	\cdot \frac{9.6 \cdot 10^{-17}\,\text{C}^2}{(0.060\,\text{m})^2}					
 fy6-10	515	= 2{,}397 \cdot 10^{-4}\,\text{N}	= 2.397 \cdot 10^{-4}\,\text{N}					
 fy6-11	323	\overline{E} = \frac{\overline{F}}{q}	\overline{E} = \frac{\overline{F}}{q}	sähkökentän voimakkuus	electric field strength	MAFY	Sähköstatiikan kaavoja	MAFY: E = F_E/Q; tunnin merkintä F, q (vektorina)
-fy6-11	330	E = \frac{U}{d}	E = \frac{U}{d}					
+fy6-11	330	E = \frac{U}{d}	E = \frac{U}{d}	jännite homogeenisessa sähkökentässä	voltage in a uniform electric field	MAFY	Sähköstatiikan kaavoja	MAFY: U = Ed; ratkaistu muoto, sama laki
 fy6-11	546	E = \frac{U}{d}	E = \frac{U}{d}					
 fy6-11	546	qE = mg	qE = mg					
 fy6-11	546	q = \frac{mg}{E}	q = \frac{mg}{E}					
@@ -130,7 +130,7 @@ fy6-11	562	= 4{,}807 \cdot 10^{-19}\,\text{C}	= 4.807 \cdot 10^{-19}\,\text{C}
 fy6-11	562	n = \frac{q}{e}	n = \frac{q}{e}					
 fy6-11	562	= \frac{4{,}807 \cdot 10^{-19}\,\text{C}}{1{,}602 \cdot 10^{-19}\,\text{C}}	= \frac{4.807 \cdot 10^{-19}\,\text{C}}{1.602 \cdot 10^{-19}\,\text{C}}					
 fy6-11	562	= 3{,}0	= 3.0					
-fy6-12	563	E_\text{p} = qV	E_\text{p} = qV					
+fy6-12	563	E_\text{p} = qV	E_\text{p} = qV	sähkökentän potentiaali	electric potential	MAFY	Sähköstatiikan kaavoja	MAFY: V = E_p/Q; ratkaistu muoto, sama laki
 fy6-12	569	W_{AB} = q(V_A - V_B) = qU_{AB}	W_{AB} = q(V_A - V_B) = qU_{AB}	sähkökentän tekemä työ	work done by an electric field	MAFY	Sähköstatiikan kaavoja	MAFY: W = QU; tunnin kaavassa pisteet A ja B
 fy6-12	575	V = Ex	V = Ex					
 fy6-12	622	\frac{1}{2}mv^2 = |q|U	\frac{1}{2}mv^2 = |q|U					
@@ -144,7 +144,7 @@ fy6-12	660	= 4{,}806 \cdot 10^{-16}\,\text{J}	= 4.806 \cdot 10^{-16}\,\text{J}
 fy6-12	660	v = \sqrt{\frac{2E_\text{k}}{m}}	v = \sqrt{\frac{2E_\text{k}}{m}}					
 fy6-12	660	= \sqrt{\frac{2 \cdot 4{,}806 \cdot 10^{-16}\,\text{J}}{9{,}109 \cdot 10^{-31}\,\text{kg}}}	= \sqrt{\frac{2 \cdot 4.806 \cdot 10^{-16}\,\text{J}}{9.109 \cdot 10^{-31}\,\text{kg}}}					
 fy6-12	660	= 3{,}248 \cdot 10^{7}\,\text{m/s}	= 3.248 \cdot 10^{7}\,\text{m/s}					
-fy6-13	261	C = \frac{Q}{U}	C = \frac{Q}{U}					
+fy6-13	261	C = \frac{Q}{U}	C = \frac{Q}{U}	kondensaattorilaki	capacitor law	MAFY	Virtapiirien kaavoja	MAFY: Q = CU; ratkaistu muoto, sama laki
 fy6-13	270	C = \frac{\varepsilon_0 \varepsilon_\text{r} A}{d}	C = \frac{\varepsilon_0 \varepsilon_\text{r} A}{d}	levykondensaattorin kapasitanssi	capacitance of a parallel-plate capacitor	MAFY	Virtapiirien kaavoja	
 fy6-13	286	U_\text{max} = E_\text{max} d	U_\text{max} = E_\text{max} d					
 fy6-13	328	W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2	W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2	kondensaattorin energia	energy of a capacitor	MAFY	Virtapiirien kaavoja	MAFY: E = ½CU²; tunnin merkintä W (E on luvussa sähkökentän voimakkuus)
