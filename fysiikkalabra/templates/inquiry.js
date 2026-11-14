@@ -297,6 +297,7 @@
     const tbody = ex.querySelector('tbody'), status = ex.querySelector('.exp-status'), question = ex.querySelector('.exp-question');
     const copyBtn = ex.querySelector('.exp-copy'), expStatus = ex.querySelector('.exp-export-status');
     const n = [...document.querySelectorAll('.experiment')].indexOf(ex) + 1;   // Koe 1, Koe 2, … in page order
+    ex.dataset.koe = n;   // the number in the key, fixed here: the box moved in front of it later (promote) changes the DOM order, never the key
     const skey = 'ruukkilabra:' + pageId + ':koe' + n;
     let savedText = null; try { savedText = localStorage.getItem(skey); } catch (e) { savedText = null; }
     const saved = (() => { try { const v = JSON.parse(savedText); return v && v.vary === vary && JSON.stringify(v.measure) === JSON.stringify(measure) && Array.isArray(v.rows) ? v.rows : null; } catch (e) { return null; } })();

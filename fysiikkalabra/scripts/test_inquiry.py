@@ -228,7 +228,7 @@ def restore_checks(pg, url, lid, ex, loc, want):
     q.wait_for_timeout(300)
     qloc = q.locator(f"#{eid}")
     got = qloc.locator(".exp-table tbody tr").all_text_contents()
-    n = q.evaluate("(id) => [...document.querySelectorAll('.experiment')].indexOf(document.querySelector('#' + id + ' .experiment')) + 1", eid)
+    n = q.evaluate("(id) => Number(document.querySelector('#' + id + ' .experiment').dataset.koe)", eid)
     writes = q.evaluate(f"window.__flWrites.filter((k) => k === 'ruukkilabra:{lid}:koe{n}').length")
     check(f"{eid}: the stored measurements come back on a new visit, the same rows", got == want, f"{got} != {want}")
     check(f"{eid}: a restored table is not written back to localStorage", writes == 0, f"{writes} writes")
@@ -265,7 +265,7 @@ def export_checks(pg, lid, ex, loc):
     either on the clipboard ("Kopioitu") or shown in a text field to select."""
     eid = ex["id"]
     check(f"{eid}: export button enabled with measurements", loc.locator(".exp-copy").is_enabled() and not loc.locator(".exp-csv").count())
-    n = pg.evaluate("(id) => [...document.querySelectorAll('.experiment')].indexOf(document.querySelector('#' + id + ' .experiment')) + 1", eid)
+    n = pg.evaluate("(id) => Number(document.querySelector('#' + id + ' .experiment').dataset.koe)", eid)
     stored = pg.evaluate(f"() => {{ try {{ return JSON.parse(localStorage.getItem('ruukkilabra:{lid}:koe{n}')) }} catch (e) {{ return null }} }}")
     check(f"{eid}: measurements stored as ruukkilabra:{lid}:koe{n}", bool(stored) and len(stored.get("rows", [])) == 2, str(stored)[:200])
     heads = loc.locator(".exp-table thead th").evaluate_all("(ts) => ts.map((t) => t.dataset.plain)")
@@ -410,7 +410,7 @@ def generic(lid):
             loc.locator(".exp-reset").click(); pg.wait_for_timeout(150)
             unlocked = pg.evaluate(f"(ks) => ks.every((k) => !({CONTROL})(k).disabled)", ex["locked"])
             check(f"{ex['id']}: reset unlocks and clears", unlocked and rows.count() == 0)
-            n = pg.evaluate("(id) => [...document.querySelectorAll('.experiment')].indexOf(document.querySelector('#' + id + ' .experiment')) + 1", ex["id"])
+            n = pg.evaluate("(id) => Number(document.querySelector('#' + id + ' .experiment').dataset.koe)", ex["id"])
             check(f"{ex['id']}: Nollaa clears the stored table and disables the export",
                   pg.evaluate(f"() => {{ try {{ return localStorage.getItem('ruukkilabra:{lid}:koe{n}') }} catch (e) {{ return null }} }}") is None
                   and loc.locator(".exp-copy").is_disabled())
