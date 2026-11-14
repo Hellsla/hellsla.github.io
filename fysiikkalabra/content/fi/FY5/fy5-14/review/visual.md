@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3cdc03e66d7d0dbd
+CONTENT-HASH: 3ea77600a1c06d67
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] lesson.md, Sijoitus (vaihe 5/7) — the units in the two substitution fractions are now stacked `\tfrac{m}{s}`, which renders small and makes the denominator tall. The step 6 text, stage 1 and the check in stage 7 still use `m/s` — optional: use one notation throughout, e.g. `\text{m/s}` in the fraction.
+1. lessons/FY5/fy5-14/figures.py line 331 (REUSE string, not shown to students): still says "period T_h"; change to T_H.
+2. Not reached: the Lisätiedoksi Doppler tables were checked from source only (four named lines, upright subscripts L and H in the built HTML, no KaTeX errors); the capture of them could not be made here.
 
-## Checked
-- Delta (only the two substitution rows of the worked example changed). Opened fy5-14-example-390-1.png and fy5-14-example-390-2.png: both substitution rows render as aligned rows with no clipping or horizontal overflow at 390 px. The rest of the example (stages 1–7) kept its layout. Hash unchanged at the end.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+Checked: figures 18 (T_H) and 21 (v_L, v_H) at 390 px, the beat-frequency table and theory text at 1280 px: upright subscripts, colours and labels consistent. No old v_s, v_h, f_h, T_h left in the texts, solutions, inquiry, summary or sim labels (all three languages grepped).

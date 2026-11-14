@@ -46,7 +46,7 @@ fy5-4	433	\phantom{F_\mu} = 6000\,\text{N}	\phantom{F_\mu} = 6000\,\text{N}
 fy5-4	433	[4pt] \mu_0 \ge \frac{v^2}{gr}	[4pt] \mu_0 \ge \frac{v^2}{gr}					
 fy5-4	433	\phantom{\mu_0} = \frac{(15\,\text{m/s})^2}{9{,}81\,\text{m/s}^2\cdot 45\,\text{m}}	\phantom{\mu_0} = \frac{(15\,\text{m/s})^2}{9.81\,\text{m/s}^2\cdot 45\,\text{m}}					
 fy5-4	433	\phantom{\mu_0} \approx 0{,}510	\phantom{\mu_0} \approx 0.510					
-fy5-5	200	F = \gamma \frac{m_1 m_2}{r^2}	F = \gamma \frac{m_1 m_2}{r^2}					
+fy5-5	200	F = \gamma \frac{m_1 m_2}{r^2}	F = \gamma \frac{m_1 m_2}{r^2}	Newtonin gravitaatiolaki	Newton's law of gravitation	MAFY	Mekaniikan kaavoja	opettaja 14.11: F pysyy FY5:ssä (MAFY: F_g)
 fy5-5	287	g = \gamma \frac{M}{r^2}	g = \gamma \frac{M}{r^2}					
 fy5-5	653	F = \gamma \frac{M m}{r^2}	F = \gamma \frac{M m}{r^2}					
 fy5-5	665	F = \gamma \frac{M m}{r^2}	F = \gamma \frac{M m}{r^2}					

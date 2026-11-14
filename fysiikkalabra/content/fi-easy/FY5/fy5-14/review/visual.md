@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fdb52cc8dedcff71
+CONTENT-HASH: 8f05b673f2238a02
 
 ## Blocking
+None.
 
 ## Polish
+1. lessons/FY5/fy5-14/figures.py line 331 (REUSE string, not shown to students): still says "period T_h"; change to T_H.
+2. Not reached: the Lisätiedoksi Doppler tables were checked from source only (four named lines, upright subscripts L and H in the built HTML, no KaTeX errors); the capture of them could not be made here.
 
-## Checked
-- delta review, hash fdb52cc8dedcff71: the only change is the unit notation inside the fractions of the Doppler worked example (m/s to stacked \tfrac{m}{s}).
-- Opened fy5-14-example-390-2.png (stage 5 Sijoitus: both f_1 and f_2 chains render as aligned rows, units upright, stacked m/s legible and not clipped or overflowing at 390 px) and fy5-14-example-390-1.png (surrounding stages, layout intact).
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+Checked: figures 18 (T_H) and 21 (v_L, v_H) at 390 px, the beat-frequency table and theory text at 1280 px: upright subscripts, colours and labels consistent. No old v_s, v_h, f_h, T_h left in the texts, solutions, inquiry, summary or sim labels (all three languages grepped).

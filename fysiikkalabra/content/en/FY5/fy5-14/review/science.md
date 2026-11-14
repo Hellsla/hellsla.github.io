@@ -1,13 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: 7ed4bfd7f2bf21d2
+VERDICT: FAIL
+CONTENT-HASH: c4ca266f3d180fc7
 
 ## Blocking
+1. `assets/sims/fy5/fy5-14/sim.js` lines 116 and 118: the canvas velocity arrows are still labelled `\overline{v}_\text{s}` and `\overline{v}_\text{h}`, while the slider labels (`lang/*.json` sims.fy5-14), the lesson text and the figure now say v_L and v_H. A student sees both symbols in one view. Change to `\text{L}` and `\text{H}`.
+2. `lessons/FY5/fy5-14/figures.py` line 176 (and the beats alt text in `content/{lang}/FY5/fy5-14/figures.json` / the svg aria-label in lesson.md): the alt text ends "huojunnan jaksonaika T h" / "period of the beats T h", while the figure label is now T_H. Change to "T H" and regenerate.
 
 ## Polish
+1. lesson.md Summary, last bullet: it still uses the combined ∓/± form ("the upper sign for approaching"), while fi-easy lists the four formulas. Align it.
+2. The heading "Signs and assumptions" could become "Choosing the formula and assumptions".
 
 ## Checked
-- Delta review, round 1: the only change is lesson.md:590 and :594, where the worked example's substitution rows now write the speed unit as `\tfrac{\text{m}}{\text{s}}` instead of `\text{m/s}`. The numbers, symbols and the formulas f = f_0 v/(v ∓ v_s) are unchanged.
-- The units still cancel in v/(v ∓ v_s), so f_1 and f_2 stay in Hz. Dimensionally right.
-- Recomputed: 311·340/310 = 341.097 Hz, 311·340/370 = 285.784 Hz, Δf = 55.31 Hz. The shown values 341.10 Hz, 285.78 Hz and 55.32 Hz (the difference of the rounded values) are unchanged. The answers 341 Hz, 286 Hz and about 55 Hz are right.
-- The new unit notation now matches the unit conversion step just above it (30.0 m/s written with \tfrac), so the example is consistent with itself.
-- Hash 7ed4bfd7f2bf21d2 (--lang en) at the start and at the end.
+Checked: diff vs origin/main normalised for the symbol swap: every other change is a pure v_s→v_L, v_h→v_H, f_h/f_b→f_H, T_h→T_H substitution or the sign sentence rewrite. The four Doppler formulas equal MAFY's (kaavanimet.tsv) with correct signs, and each "first/second formula applies" sentence matches its formula. v_L and v_H are defined where they first appear, f_H and T_H at the beats formula. answers.py and lesson-answers.py output is byte-identical to origin/main. Example recomputed: 341.10 Hz, 285.78 Hz, Δf 55 Hz.

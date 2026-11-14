@@ -173,7 +173,7 @@ def beats():
             "funktiona. Ylhäällä oranssi aalto ja sen alla violetti aalto, jossa on kuvan aikana kaksi värähdystä enemmän. "
             "Alhaalla sininen summa-aalto: sen amplitudi kasvaa ja pienenee vuorotellen katkoviivalla piirretyn verhokäyrän "
             "mukaan. Kohdissa, joissa aallot ovat samassa vaiheessa, summa on voimakas, ja kohdissa, joissa ne ovat vastakkaisissa "
-            "vaiheissa, summa on lähes nolla. Kahden peräkkäisen voimakkaan kohdan väli on huojunnan jaksonaika T h.")
+            "vaiheissa, summa on lähes nolla. Kahden peräkkäisen voimakkaan kohdan väli on huojunnan jaksonaika T H.")
     x0, x1 = 124, 560
     W = x1 - x0
     c1, c2 = 12, 14

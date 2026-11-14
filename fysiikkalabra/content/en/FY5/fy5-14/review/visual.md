@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7ed4bfd7f2bf21d2
+CONTENT-HASH: c4ca266f3d180fc7
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] Worked example step 5 (example-390-2) — the unit fractions \tfrac{m}{s} inside the large fractions render small, but they are legible and fit within the card at 390 px — no change needed unless a larger unit is wanted (\text{m/s} would be bigger).
-- [Minor] Worked example step 4 — "converted to m/s" is the unit as a plain word in prose; it is untouched reviewed text — make it $\text{m/s}$ when the lesson is next edited.
+1. lessons/FY5/fy5-14/figures.py line 331 (REUSE string, not shown to students): still says "period T_h"; change to T_H.
+2. Not reached: the Lisätiedoksi Doppler tables were checked from source only (four named lines, upright subscripts L and H in the built HTML, no KaTeX errors); the capture of them could not be made here.
 
-## Checked
-- Delta: only the substitution unit notation in the train's-horn example changed. Opened fy5-14-example-390-1.png and -2.png: the rows stay aligned at the equals signs, nothing is clipped or overflowing, and the nested units are readable.
-- The rest of the page was not affected by the change (no figures or layout touched).
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+Checked: figures 18 (T_H) and 21 (v_L, v_H) at 390 px, the beat-frequency table and theory text at 1280 px: upright subscripts, colours and labels consistent. No old v_s, v_h, f_h, T_h left in the texts, solutions, inquiry, summary or sim labels (all three languages grepped).
