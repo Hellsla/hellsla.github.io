@@ -1,8 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a522b6e8980d5833
+CONTENT-HASH: dec48399de81c652
 
 ## Blocking
 None.
 
 ## Polish
-None. v_L, v_H, f_H, T_H are the same in tasks, hints, feedback and solutions; no old symbol found by grep; no KaTeX errors in the built page; numbers unchanged in the diff.
+None.
+
+## Checked
+- Delta: exercise set text only; symbols v_L, v_H, f_H consistent in prompts, solutions and answers; no figures of its own beyond the lesson's captures (fy5-14-open-exercises-1280 sheets, fi).

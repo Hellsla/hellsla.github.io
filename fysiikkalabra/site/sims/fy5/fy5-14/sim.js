@@ -113,9 +113,9 @@ new p5((p) => {
     lab(__('lbl_f0', { f: String(P.f0) }), xs, rows[1], 'c');
     const len = 0.45 * P.u * sk;
     if (P.u > 0 && P.tila === 'lahde') {
-      arrow(xs, rows[2] - 0.35 * fh, xs + len); lab('$\\overline{v}_\\text{s}$', xs + len + 6 * sk, rows[2], 'l', VEL);
+      arrow(xs, rows[2] - 0.35 * fh, xs + len); lab('$\\overline{v}_\\text{L}$', xs + len + 6 * sk, rows[2], 'l', VEL);
     } else if (P.u > 0) {
-      for (const x of [xA, xB]) { arrow(x, rows[2] - 0.35 * fh, x - len); lab('$\\overline{v}_\\text{h}$', x - len - 6 * sk, rows[2], 'r', VEL); }
+      for (const x of [xA, xB]) { arrow(x, rows[2] - 0.35 * fh, x - len); lab('$\\overline{v}_\\text{H}$', x - len - 6 * sk, rows[2], 'r', VEL); }
     }
     lab(__('lbl_A'), xA, rows[3], 'c');
     lab(__('lbl_B'), xB, rows[3], 'c');

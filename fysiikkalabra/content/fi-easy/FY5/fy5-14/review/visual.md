@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8f05b673f2238a02
+CONTENT-HASH: f1c2e6bb3424337d
 
 ## Blocking
 None.
 
 ## Polish
-1. lessons/FY5/fy5-14/figures.py line 331 (REUSE string, not shown to students): still says "period T_h"; change to T_H.
-2. Not reached: the Lisätiedoksi Doppler tables were checked from source only (four named lines, upright subscripts L and H in the built HTML, no KaTeX errors); the capture of them could not be made here.
+- [Minor] fig 21 (fy5-14-fig-21-390): the v_L and v_H arrow labels are small and light blue at 390 px; enlarge slightly or darken.
 
-Checked: figures 18 (T_H) and 21 (v_L, v_H) at 390 px, the beat-frequency table and theory text at 1280 px: upright subscripts, colours and labels consistent. No old v_s, v_h, f_h, T_h left in the texts, solutions, inquiry, summary or sim labels (all three languages grepped).
+## Checked
+- fy5-14-fig-21-390, sim-390 (labels v_L upright L), theory-1280-4/5, stage-sovella-390-1 (fi).
+- Own captures of the four-formula Doppler tables (two two-line named tables, Lisätiedoksi) at 390 and 1280 px in fi and 390 px in en: names bold, formulas aligned, upright subscripts L and H, no clipping.
+- fi-easy shares the structure; not separately captured.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
