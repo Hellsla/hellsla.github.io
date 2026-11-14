@@ -307,12 +307,10 @@ Voimalaitosten suurissa generaattoreissa pyörii sähkömagneetti, ja käämit o
 
 ## Kaava: Generaattorin jännite
 Kun käämi, jossa on $N$ kierrosta ja jonka pinta-ala on $A$, pyörii tasaisesti homogeenisessa magneettikentässä $B$ pyörimistaajuudella $f$ ja hetkellä $t = 0$ käämin taso on kohtisuorassa kenttää vastaan, käämin läpi kulkeva vuo ja käämiin syntyvä jännite ovat
-```latex
-\begin{aligned}
-&\Phi = BA\cos(2\pi f t) \\[4pt]
-&e = e_0 \sin(2\pi f t) \\[4pt]
-&e_0 = NBA \cdot 2\pi f
-\end{aligned}
+```kaavat
+\Phi = BA\cos(2\pi f t)
+sinimuotoinen vaihtojännite :: e = e_0 \sin(2\pi f t)
+e_0 = NBA \cdot 2\pi f
 ```
 missä $\Phi$ on magneettivuo yhden kierroksen läpi (Wb), $e$ jännitteen hetkellinen arvo (V), $e_0$ jännitteen huippuarvo (V), $N$ kierrosten lukumäärä, $B$ magneettivuon tiheys (T), $A$ käämin pinta-ala (m²) ja $f$ pyörimistaajuus (Hz). Jännitteen taajuus on sama kuin pyörimistaajuus, ja jaksonaika on $T = 1 : f$. Vuo muuttuu pyöriessä epätasaisesti, joten $e$ on hetkellinen jännite: se on suurin, kun vuo on nolla ja muuttuu nopeimmin, ja nolla, kun vuo on suurimmillaan.
 
@@ -356,11 +354,9 @@ Huippuarvo saadaan liikkuvan johtimen jännitteestä $e = vBl$ (luku *Sähkömag
 
 ### Tehollinen arvo
 Vaihtojännitteen keskiarvo yhden jakson aikana on nolla, mutta lamppu tai vastus lämpenee silti, koska teho $p = ui$ on positiivinen kummallakin virran suunnalla. Vastuksen teho vaihtelee nollan ja huippuarvon $P_0 = U_0 I_0$ välillä, ja sen keskiarvo on puolet huippuarvosta. **Tehollinen arvo** on se tasajännite tai tasavirta, joka tuottaisi vastukseen saman keskimääräisen tehon:
-```latex
-\begin{aligned}
-&U = \frac{U_0}{\sqrt{2}} \\[4pt]
-&I = \frac{I_0}{\sqrt{2}}
-\end{aligned}
+```kaavat
+sinimuotoisen vaihtojännitteen tehollinen arvo :: U = \frac{U_0}{\sqrt{2}}
+sinimuotoisen vaihtovirran tehollinen arvo :: I = \frac{I_0}{\sqrt{2}}
 ```
 missä $U_0$ ja $I_0$ ovat jännitteen ja virran **huippuarvot** ja $U$ ja $I$ tehollisarvot. Kun vaihtovirta kulkee puhtaan resistiivisen kuorman, kuten ideaalisen vastuksen, läpi, virta ja jännite ovat samanvaiheiset. Tällöin keskimääräinen teho voidaan laskea tehollisarvoista kaavalla $P = UI$, kuten tasavirralla. Yleisessä vaihtovirtapiirissä virran ja jännitteen välillä voi olla vaihe-ero, jolloin keskimääräinen teho riippuu myös tehokertoimesta. Pistorasian $230\,\text{V}$ on tehollinen arvo: jännitteen huippuarvo on $230\,\text{V} \cdot \sqrt{2} \approx 325\,\text{V}$, ja taajuus on $50\,\text{Hz}$, joten jännite vaihtaa suuntaansa sata kertaa sekunnissa. Fingrid pitää kantaverkon taajuuden normaalisti välillä $49{,}9$–$50{,}1\,\text{Hz}$. Mittarit näyttävät vaihtojännitteen ja -virran tehollisarvoina.
 

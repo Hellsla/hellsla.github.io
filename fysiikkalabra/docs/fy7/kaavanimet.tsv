@@ -78,10 +78,10 @@ fy7-6	325	- \tfrac{1}{2} \cdot 0{,}025\,\text{kg} \cdot (0{,}15\,\text{m/s})^2	-
 fy7-6	325	= 0{,}29430\,\text{J} - 0{,}00028\,\text{J}	= 0.29430\,\text{J} - 0.00028\,\text{J}					
 fy7-6	325	= 0{,}29402\,\text{J}	= 0.29402\,\text{J}					
 fy7-7	310	\Phi = BA\cos(2\pi f t)	\Phi = BA\cos(2\pi f t)					
-fy7-7	310	e = e_0 \sin(2\pi f t)	e = e_0 \sin(2\pi f t)					
+fy7-7	310	e = e_0 \sin(2\pi f t)	e = e_0 \sin(2\pi f t)	sinimuotoinen vaihtojännite	sinusoidal alternating voltage	MAFY	Sähkömagnetismin kaavoja	MAFY: u = u₀ sin(2πft); tunnin merkinnät e ja e_0
 fy7-7	310	e_0 = NBA \cdot 2\pi f	e_0 = NBA \cdot 2\pi f					
-fy7-7	359	U = \frac{U_0}{\sqrt{2}}	U = \frac{U_0}{\sqrt{2}}					
-fy7-7	359	I = \frac{I_0}{\sqrt{2}}	I = \frac{I_0}{\sqrt{2}}					
+fy7-7	359	U = \frac{U_0}{\sqrt{2}}	U = \frac{U_0}{\sqrt{2}}	sinimuotoisen vaihtojännitteen tehollinen arvo	rms value of a sinusoidal alternating voltage	MAFY	Sähkömagnetismin kaavoja	MAFY: U_eff = u₀/√2; tunnin merkinnät U ja U_0
+fy7-7	359	I = \frac{I_0}{\sqrt{2}}	I = \frac{I_0}{\sqrt{2}}	sinimuotoisen vaihtovirran tehollinen arvo	rms value of a sinusoidal alternating current	MAFY	Sähkömagnetismin kaavoja	MAFY: I_eff = i₀/√2; tunnin merkinnät I ja I_0
 fy7-7	413	e_0 = NBA \cdot 2\pi f	e_0 = NBA \cdot 2\pi f	generaattorissa käämiin indusoituvan sinimuotoisen vaihtojännitteen huippuarvo	peak value of the sinusoidal voltage induced in a generator coil	MAFY	Sähkömagnetismin kaavoja	MAFY: u₀ = NAB·2πf; tunnin merkintä e_0
 fy7-7	413	U = \frac{e_0}{\sqrt{2}} = \frac{NBA \cdot 2\pi f}{\sqrt{2}}	U = \frac{e_0}{\sqrt{2}} = \frac{NBA \cdot 2\pi f}{\sqrt{2}}					
 fy7-7	427	e_0 = NBA \cdot 2\pi f	e_0 = NBA \cdot 2\pi f					
@@ -91,7 +91,7 @@ fy7-7	427	= 6{,}786\,\text{V}	= 6.786\,\text{V}
 fy7-7	427	U = \frac{6{,}786\,\text{V}}{\sqrt{2}}	U = \frac{6.786\,\text{V}}{\sqrt{2}}					
 fy7-7	427	= 4{,}798\,\text{V}	= 4.798\,\text{V}					
 fy7-8	206	\frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}	\frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}	muuntaja	transformer	MAFY	Sähkömagnetismin kaavoja	MAFY: N₁/N₂ = U₁/U₂ ≈ I₂/I₁; tunnin muoto = (ideaalimuuntaja), järjestys eri
-fy7-8	213	P = U I	P = U I					
+fy7-8	213	P = U I	P = U I	tehonkulutus johtimessa	power consumed in a conductor	MAFY	Virtapiirien kaavoja	Joulen lain muodot P_h = RI² = RP²/U² eivät ole MAFY:ssa
 fy7-8	213	P_\text{h} = R I^2 = \frac{R P^2}{U^2}	P_\text{h} = R I^2 = \frac{R P^2}{U^2}					
 fy7-8	283	P = \sqrt{3}\,U I \cos\varphi	P = \sqrt{3}\,U I \cos\varphi					
 fy7-8	302	\frac{U_1}{U_2} = \frac{N_1}{N_2} \;\Rightarrow\; N_1 = \frac{N_2 U_1}{U_2}	\frac{U_1}{U_2} = \frac{N_1}{N_2} \;\Rightarrow\; N_1 = \frac{N_2 U_1}{U_2}					
@@ -174,7 +174,7 @@ fy7-14	477	= 404{,}3\,\text{nm}	= 404.3\,\text{nm}
 fy7-15	425	I = I_0 \cos^2\theta	I = I_0 \cos^2\theta					
 fy7-15	485	n_1 \sin\alpha_\text{B} = n_2 \sin\alpha_2	n_1 \sin\alpha_\text{B} = n_2 \sin\alpha_2					
 fy7-15	485	n_1 \sin\alpha_\text{B} = n_2 \cos\alpha_\text{B}	n_1 \sin\alpha_\text{B} = n_2 \cos\alpha_\text{B}					
-fy7-15	485	\tan\alpha_\text{B} = \frac{n_2}{n_1}	\tan\alpha_\text{B} = \frac{n_2}{n_1}					
+fy7-15	485	\tan\alpha_\text{B} = \frac{n_2}{n_1}	\tan\alpha_\text{B} = \frac{n_2}{n_1}	Brewsterin laki	Brewster's law	MAFY	Aaltoliikkeen kaavoja	MAFY: tan α_B = n₂/n₁; johdon viimeinen rivi, edelliset rivit johtoa
 fy7-15	551	I_1 = \tfrac{1}{2} I_0	I_1 = \tfrac{1}{2} I_0					
 fy7-15	551	I_2 = I_1 \cos^2\theta	I_2 = I_1 \cos^2\theta					
 fy7-15	551	I_2 = \tfrac{1}{2} I_0 \cos^2\theta	I_2 = \tfrac{1}{2} I_0 \cos^2\theta					

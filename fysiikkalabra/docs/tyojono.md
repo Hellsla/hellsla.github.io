@@ -8,27 +8,11 @@ Tämä on ainoa työjono (opettaja 2026-11-13): ei GitHub Issuesia eikä erillis
 ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta muut ketjut näkevät varauksen
 (repon juuren `CLAUDE.md`). Saman kurssin kohdat tehdään peräkkäin, eri kurssien enintään kolme rinnakkain.
 
-## 3. Kaavat taulukkokirjan muotoon: vain 3b jäljellä
+## 3. Kaavat taulukkokirjan muotoon: valmis
 
-FY1–FY9 on tehty (#501, #522, #527, #529, #572, #576, #578, #580, #583). FY10:ssä ja FY14:ssä ei ole nimettäviä
+FY1–FY9 on tehty (#501, #522, #527, #529, #572, #576, #578, #580, #583); FY7:n neljä `\\[Npt]`-kaavaa nimettiin kohdassa 3b (#589). FY10:ssä ja FY14:ssä ei ole nimettäviä
 kaavoja (opettaja 14.11: "ei tarvitse"). FY5:ssä F pysyy gravitaatiolaissa (opettaja 14.11). Keskinopeuden tunnus on
-kaikkialla $v_\text{k}$, ei $v_\text{ka}$ (opettaja 2026-11-13). Jäljellä vain kohta 3b: `\\[Npt]`-lohkojen FY7- ja
-FY8-kaavat.
-
-## 3b. Kaavataulukon välistys `\\[Npt]`: FY7:n neljä kaavaa (2026-11-14, #580:n löydös)
-
-Varattu: claude/fy7-kaavanimet-3b
-
-Korjaus on tehty (PR #587): `scripts/kaavat.py` lukee rivinvaihdon välin `\\[4pt]` osaksi rivinvaihtoa, ja
-`docs/*/kaavanimet.tsv`:stä on poistettu `[Npt]`-etuliitteet. Se ei muuta yhdenkään katselmoinnin tilaa (`reviews.py
-verify` samoin ennen ja jälkeen; tiiviste on aina tekstin oma, kaavat.canonical vain vertaa kahta versiota).
-FY8:n kuusi `\\[Npt]`-lohkoa (fy8-3, 4, 8, 10, 15, 16) ovat Sijoitus-laskuketjuja ja jäävät nimeämättä, kuten FY4–FY7:n
-ketjut (koordinaattorin päätös opettajan valtuutuksella 14.11); FY8 on valmis. Tarkistus: fy8-10:ssä sidosenergia ja Q-arvo
-ja fy8-15:ssä Q-arvo on nimettynä rivinä samalla tunnilla; fy8-4:ssä E = hf (= hc/λ) on vain kaavan p = E/c = h/λ
-selityksessä ja ketjussa, nimettynä rivinä se on fy8-1:ssä (fotonin energia). Nimeämistä ei tehdä tässä PR:ssä.
-Jäljellä: nimeä FY7:n neljä MAFY-kaavaa (fy7-7 sinimuotoinen vaihtojännite ja teholliset arvot, fy7-8 P = UI, fy7-15
-Brewsterin laki; lista #580:n kuvauksessa) vasta, kun FY7:n esimerkkikoe (kohta 9, #586) on yhdistetty
-(sama kurssi ei kulje kahdessa ketjussa). Nimeämisessä `kaavat.py write` ja `reviews.py carry` (formula-names).
+kaikkialla $v_\text{k}$, ei $v_\text{ka}$ (opettaja 2026-11-13). Kohta 3 on valmis; FY8:n kuusi `\\[Npt]`-lohkoa ovat Sijoitus-laskuketjuja ja jäävät nimeämättä (koordinaattorin päätös 14.11).
 
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
 

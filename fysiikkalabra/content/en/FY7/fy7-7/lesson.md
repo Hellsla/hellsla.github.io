@@ -307,12 +307,10 @@ In the large generators of power plants an electromagnet rotates and the coils s
 
 ## Formula: The voltage of a generator
 When a coil with $N$ turns and area $A$ rotates steadily in a uniform magnetic field $B$ at a rotation frequency $f$, and at the moment $t = 0$ the plane of the coil is perpendicular to the field, the flux through the coil and the voltage induced in it are
-```latex
-\begin{aligned}
-&\Phi = BA\cos(2\pi f t) \\[4pt]
-&e = e_0 \sin(2\pi f t) \\[4pt]
-&e_0 = NBA \cdot 2\pi f
-\end{aligned}
+```kaavat
+\Phi = BA\cos(2\pi f t)
+sinusoidal alternating voltage :: e = e_0 \sin(2\pi f t)
+e_0 = NBA \cdot 2\pi f
 ```
 where $\Phi$ is the magnetic flux through one turn (Wb), $e$ the instantaneous value of the voltage (V), $e_0$ the peak value of the voltage (V), $N$ the number of turns, $B$ the magnetic flux density (T), $A$ the area of the coil (m²) and $f$ the rotation frequency (Hz). The frequency of the voltage is the same as the rotation frequency, and the period is $T = 1 : f$. The flux changes unevenly during the rotation, so $e$ is the instantaneous voltage: it is greatest when the flux is zero and changes fastest, and zero when the flux is at its greatest.
 
@@ -356,11 +354,9 @@ The peak value is obtained from the voltage of a moving conductor, $e = vBl$ (ch
 
 ### The rms value
 The average of an alternating voltage over one period is zero, but a lamp or a resistor still heats up, because the power $p = ui$ is positive for both directions of the current. The power in a resistor varies between zero and the peak value $P_0 = U_0 I_0$, and its average is half of the peak value. The **rms value** (effective value) is the direct voltage or direct current that would deliver the same average power to a resistor:
-```latex
-\begin{aligned}
-&U = \frac{U_0}{\sqrt{2}} \\[4pt]
-&I = \frac{I_0}{\sqrt{2}}
-\end{aligned}
+```kaavat
+rms value of a sinusoidal alternating voltage :: U = \frac{U_0}{\sqrt{2}}
+rms value of a sinusoidal alternating current :: I = \frac{I_0}{\sqrt{2}}
 ```
 where $U_0$ and $I_0$ are the **peak values** of the voltage and the current and $U$ and $I$ the rms values. When an alternating current passes through a purely resistive load, such as an ideal resistor, the current and the voltage are in phase. The average power can then be calculated from the rms values with the formula $P = UI$, as with direct current. In a general alternating-current circuit there can be a phase difference between the current and the voltage, and then the average power also depends on the power factor.
 

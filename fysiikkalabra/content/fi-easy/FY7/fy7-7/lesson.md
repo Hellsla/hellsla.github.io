@@ -317,12 +317,10 @@ Suomessa oli vuoden 2024 lopussa $1835$ tuulivoimalaa. Niiden yhteenlaskettu nim
 
 ## Kaava: Generaattorin jännite
 Käämissä on $N$ kierrosta, ja sen pinta-ala on $A$. Käämi pyörii tasaisesti homogeenisessa eli joka kohdassa samanlaisessa magneettikentässä $B$. Pyörimistaajuus on $f$. Hetkellä $t = 0$ käämin taso on kohtisuorassa kenttää vastaan. Silloin käämin läpi kulkeva vuo ja käämiin syntyvä jännite ovat
-```latex
-\begin{aligned}
-&\Phi = BA\cos(2\pi f t) \\[4pt]
-&e = e_0 \sin(2\pi f t) \\[4pt]
-&e_0 = NBA \cdot 2\pi f
-\end{aligned}
+```kaavat
+\Phi = BA\cos(2\pi f t)
+sinimuotoinen vaihtojännite :: e = e_0 \sin(2\pi f t)
+e_0 = NBA \cdot 2\pi f
 ```
 missä $\Phi$ on magneettivuo yhden kierroksen läpi (Wb), $e$ jännitteen hetkellinen arvo eli arvo tietyllä hetkellä (V), $e_0$ jännitteen huippuarvo eli suurin arvo (V), $N$ kierrosten lukumäärä, $B$ magneettivuon tiheys (T), $A$ käämin pinta-ala (m²) ja $f$ pyörimistaajuus eli kierrosten määrä sekunnissa (Hz). Jännitteen taajuus on sama kuin pyörimistaajuus. Jaksonaika eli yhden kierroksen kesto on $T = 1 : f$. Vuo muuttuu pyöriessä epätasaisesti, joten $e$ on hetkellinen jännite. Se on suurin, kun vuo on nolla ja muuttuu nopeimmin. Se on nolla, kun vuo on suurimmillaan.
 
@@ -372,11 +370,9 @@ Yhdessä kierroksessa jännite on siis $2 B l \cdot \pi f b \sin\theta = BA \cdo
 Vaihtojännitteen keskiarvo yhden jakson aikana on nolla. Lamppu tai vastus lämpenee silti, koska teho $p = ui$ on positiivinen kummallakin virran suunnalla. Vastuksen teho vaihtelee nollan ja huippuarvon $P_0 = U_0 I_0$ välillä. Sen keskiarvo on puolet huippuarvosta.
 
 **Tehollinen arvo** on se tasajännite tai tasavirta, joka tuottaisi vastukseen saman keskimääräisen tehon:
-```latex
-\begin{aligned}
-&U = \frac{U_0}{\sqrt{2}} \\[4pt]
-&I = \frac{I_0}{\sqrt{2}}
-\end{aligned}
+```kaavat
+sinimuotoisen vaihtojännitteen tehollinen arvo :: U = \frac{U_0}{\sqrt{2}}
+sinimuotoisen vaihtovirran tehollinen arvo :: I = \frac{I_0}{\sqrt{2}}
 ```
 missä $U_0$ ja $I_0$ ovat jännitteen ja virran **huippuarvot** ja $U$ ja $I$ tehollisarvot. Kun vaihtovirta kulkee puhtaan resistiivisen kuorman, kuten ideaalisen vastuksen, läpi, virta ja jännite ovat samassa vaiheessa. Silloin keskimääräinen teho voidaan laskea tehollisarvoista kaavalla $P = UI$, kuten tasavirralla. Yleisessä vaihtovirtapiirissä virran ja jännitteen välillä voi olla vaihe-ero. Silloin keskimääräinen teho riippuu myös tehokertoimesta.
 

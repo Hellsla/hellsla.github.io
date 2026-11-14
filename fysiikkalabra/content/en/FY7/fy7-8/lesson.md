@@ -212,11 +212,9 @@ where $U_1$ is the primary voltage (V), $U_2$ the secondary voltage (V), $N_1$ a
 
 ### Power loss of a transmission line
 The principle of power transmission is illustrated with a simplified two-wire circuit: the current flows to the destination along one conductor and returns along the other. A power plant sends a power $P$ at a voltage $U$. The current of the line and the power that becomes internal energy in the line are
-```latex
-\begin{aligned}
-&P = U I \\[6pt]
-&P_\text{h} = R I^2 = \frac{R P^2}{U^2}
-\end{aligned}
+```kaavat
+power consumed in a conductor :: P = U I
+P_\text{h} = R I^2 = \frac{R P^2}{U^2}
 ```
 where $P$ is the transmitted power (W), $U$ the transmission voltage (V), $I$ the current of the line (A), $R$ the combined resistance of both conductors (Ω) and $P_\text{h}$ the power loss (W). When the same power is transmitted at double the voltage, the current halves and the power loss falls to a quarter. The transmission voltage $U$ is not the voltage across the resistance of the line: the voltage drop between the ends of the line is only $R I$, so the power loss must not be calculated with the expression $U^2 : R$.
 
