@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0761f1fb3da0dbd4
+CONTENT-HASH: 69f07803e19cee87
 ## Blocking
 
 ## Polish
-1. lesson.md, Kaava: $F_{\mu 0}$ now stands for the static friction ($\le \mu_0 N$) and for its limiting value ($= \mu_0 N$). The sentence before says it; optionally write "juuri ennen liukumista" into the line after the equality so no one reads $F_{\mu 0} = \mu_0 N$ as always true.
+
 ## Checked
-- $G = mg$, $F_\mu = \mu N$, $F_{\mu 0} \le \mu_0 N$ and the new $F_{\mu 0} = \mu_0 N$ (lähtökitka / limiting static friction: greatest static friction just before sliding) are right and MAFY's; symbols and units defined above.
-- Tilt experiment $\mu_0 = \tan\alpha_0$ consistent with the limit; nothing else changed in the physics; fi, fi-easy, en agree.
+- lesson.md:255 (delta): "suurin lepokitka, jonka pinta pystyy aiheuttamaan" replaces "jonka silta pystyy antamaan". The new wording names the right agent: the static friction comes from the surface the box rests on. "Silta" did not belong to the situation, so the change fixes it.
+- The reasoning in context (lines 251–255) is right: the component along the slope $mg\sin\alpha$ grows as the slope steepens. With the stated conditions (only weight and normal force perpendicular to the surface, no acceleration in that direction), $N = mg\cos\alpha$ shrinks and so does the limit $\mu_0 N$. Sliding starts when $mg\sin\alpha > \mu_0 mg\cos\alpha$, which agrees with $\mu_0 = \tan\alpha_0$.
+- The change has no numbers or symbols, so there is nothing to recompute. The rest of the lesson is as I passed it at hash 0761f1fb3da0dbd4.
+- The content hash (--lang fi-easy) was the same at the start and at the end.

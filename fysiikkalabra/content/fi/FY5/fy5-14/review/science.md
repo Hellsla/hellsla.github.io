@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3cdc03e66d7d0dbd
+CONTENT-HASH: 26a3b88ee71206d3
 
 ## Blocking
+None.
 
 ## Polish
-- lesson.md:596 — (not in the diff, unchanged since the earlier PASS) $\Delta f = 55{,}32\,\text{Hz}$ comes from the two rounded intermediate values; unrounded it is $55{,}31\,\text{Hz}$. The stated result ($\approx 55\,\text{Hz}$) is unaffected — optional: carry one more decimal or leave it as it is.
+1. glossary.json (outside the hash): "huojunta" and "Doppler-ilmiö" still use f_h, v_s, v_h; update to f_H, v_L, v_H when next edited.
 
 ## Checked
-- Delta (worked example, Sijoitus stage, lesson.md:588–595): only the unit typography changed, `\text{m/s}` → `\tfrac{\text{m}}{\text{s}}` in numerator and denominator of both Doppler substitutions; the numbers, symbols and formulas are unchanged.
-- Units still cancel within each fraction (m/s over m/s), so $f_1, f_2$ stay in Hz; the notation now matches the conversion stage ($30{,}0\,\tfrac{\text{m}}{\text{s}}$).
-- Recomputed: $311 \cdot 340/310 = 341{,}10\,\text{Hz}$, $311 \cdot 340/370 = 285{,}78\,\text{Hz}$, matching the text; the moving-source formula $f = f_0 v/(v \mp v_\text{s})$ agrees with the glossary.
-- Content hash was the same at the start and the end of the review.
+Delta review (fi): inquiry.json siirto solution, Järkevyys: "huojuvan" / "waver" replaced by "korkeuden vaihtelevan" / "the pitch vary". This fixes the earlier polish item: the effect is a periodic Doppler shift of pitch, not beats (which need two superposed frequencies). Numbers unchanged and recomputed: f_max = 2000 Hz · 340/(340 − 12,566) = 2076,8 Hz, f_min = 1928,7 Hz, twice a second (T = 0,500 s). Nothing else in the lesson changed since the passed version.

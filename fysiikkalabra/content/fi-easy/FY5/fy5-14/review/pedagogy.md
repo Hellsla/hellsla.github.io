@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fdb52cc8dedcff71
+CONTENT-HASH: 97fc50d03cb5078c
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-- light delta review, round 1: the worked example's Doppler lines (lesson.md 590 and 593) now write m/s as a stacked fraction (\tfrac) inside the big fraction; the numbers, symbols and steps are unchanged.
-- The change is notation only: it is more legible than a slash inside a fraction and matches the unit style on lines 582 and 607. No effect on staging, the answer or the Finnish.
+Delta only. fy5-14 transfer wording ("korkeuden vaihtelevan"/"the pitch vary") is physically correct and clearer than "huojuvan". fy5-15 hint 3 uses L = 10 lg(I/I0) dB consistent with the lesson; it follows hints 1-2 step by step.

@@ -29,10 +29,10 @@
 **Järkevyys:** Sarjan jäsenet ovat $147\,\text{Hz}$, $294\,\text{Hz}$, $441\,\text{Hz}$ ja $588\,\text{Hz}$. Neljäs jäsen on kahden oktaavin päässä perustaajuudesta. Kaksi kaksinkertaistusta antaa nelinkertaisen taajuuden.
 
 ## fy5-14-L1-04
-**Annettu:** sävelen taajuus $f_0 = 415\,\text{Hz}$, auton nopeus $v_\text{s} = 15{,}0\,\text{m/s}$ poispäin kuulijasta, äänen nopeus $v = 340\,\text{m/s}$
+**Annettu:** sävelen taajuus $f_0 = 415\,\text{Hz}$, auton nopeus $v_\text{L} = 15{,}0\,\text{m/s}$ poispäin kuulijasta, äänen nopeus $v = 340\,\text{m/s}$
 **Kysytty:** kuultu taajuus $f$
 **Periaate:** Äänilähde liikkuu ja kuulija on paikallaan, joten käytetään liikkuvan lähteen Dopplerin kaavaa. Lähde loittonee. Aaltorintamat harvenevat sen takana, ja kuultu taajuus on pienempi kuin $f_0$. Nimittäjään tulee siksi plusmerkki.
-**Kaava:** $f = f_0 \cdot \dfrac{v}{v + v_\text{s}}$
+**Kaava:** $f = f_0 \cdot \dfrac{v}{v + v_\text{L}}$
 **Muunnokset:** Ei tarvita. Nopeudet ovat yksikössä $\text{m/s}$ ja taajuus hertseinä.
 **Sijoitus:** $f = 415\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{340\,\text{m/s} + 15{,}0\,\text{m/s}} = 415\,\text{Hz} \cdot \dfrac{340}{355} = 397{,}46\,\text{Hz}$
 **Vastaus:** $397\,\text{Hz}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
@@ -62,9 +62,9 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 **Annettu:** ääniraudan taajuus $f_1 = 262\,\text{Hz}$, $N = 15$ voimakasta hetkeä ajassa $t = 5{,}0\,\text{s}$, kieli on ääniraudan ääntä matalampi
 **Kysytty:** kielen taajuus $f_2$
 **Periaate:** Kaksi lähes samantaajuista ääntä huojuu. Voimakkaita hetkiä on sekunnissa yhtä monta kuin taajuuksien erotus. Huojuntataajuus saadaan laskemalla voimakkaat hetket sekunnissa. Kieli on matalampi kuin äänirauta. Sen taajuus on siksi huojuntataajuuden verran pienempi kuin ääniraudan.
-**Kaava:** $f_\text{h} = \dfrac{N}{t}$ ja $f_\text{h} = |f_1 - f_2| = f_1 - f_2$, josta $f_2 = f_1 - \dfrac{N}{t}$
+**Kaava:** $f_\text{H} = \dfrac{N}{t}$ ja $f_\text{H} = |f_1 - f_2| = f_1 - f_2$, josta $f_2 = f_1 - \dfrac{N}{t}$
 **Muunnokset:** Ei tarvita. Aika on sekunteina, joten $\tfrac{N}{t}$ tulee hertseinä.
-**Sijoitus:** $f_\text{h} = \dfrac{15}{5{,}0\,\text{s}} = 3{,}0\,\text{Hz}$ ja $f_2 = 262\,\text{Hz} - 3{,}0\,\text{Hz} = 259\,\text{Hz}$
+**Sijoitus:** $f_\text{H} = \dfrac{15}{5{,}0\,\text{s}} = 3{,}0\,\text{Hz}$ ja $f_2 = 262\,\text{Hz} - 3{,}0\,\text{Hz} = 259\,\text{Hz}$
 **Vastaus:** $259\,\text{Hz}$. Erotus $3{,}0\,\text{Hz}$ tunnetaan kymmenesosahertsin tarkkuudella. Tulos ilmoitetaan kuitenkin kokonaisina hertseinä kuten ääniraudan taajuus.
 **Järkevyys:** Kolme voimakasta hetkeä sekunnissa on helppo laskea korvalla. Taajuusero on alle $10\,\text{Hz}$, joten huojunta erottuu selvästi. Kun virittäjä kiristää kieltä, taajuus nousee kohti $262\,\text{Hz}$:ä ja huojunta hidastuu.
 
@@ -79,40 +79,40 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 **Järkevyys:** Ääni kulkee vedessä $\tfrac{1480}{340} \approx 4{,}4$ kertaa nopeammin kuin ilmassa. Samalla taajuudella aallonpituus kasvaa samassa suhteessa: $0{,}850\,\text{m} \cdot 4{,}35 \approx 3{,}7\,\text{m}$.
 
 ## fy5-14-L2-03
-**Annettu:** sireenin taajuus $f_0 = 650\,\text{Hz}$, autoilijan nopeus $v_\text{h} = 90{,}0\,\text{km/h}$ kohti sireeniä, äänen nopeus $v = 340\,\text{m/s}$
+**Annettu:** sireenin taajuus $f_0 = 650\,\text{Hz}$, autoilijan nopeus $v_\text{H} = 90{,}0\,\text{km/h}$ kohti sireeniä, äänen nopeus $v = 340\,\text{m/s}$
 **Kysytty:** autoilijan kuulema taajuus $f$
-**Periaate:** Lähde on paikallaan ja kuulija liikkuu. Aallonpituus ei siis muutu. Autoilija kohtaa aaltorintamat kuitenkin useammin, koska ne lähestyvät häntä nopeudella $v + v_\text{h}$. Käytetään liikkuvan kuulijan Dopplerin kaavaa. Lähestymisessä merkki on plus.
-**Kaava:** $f = f_0 \cdot \dfrac{v + v_\text{h}}{v}$
-**Muunnokset:** $v_\text{h} = 90{,}0\,\tfrac{\text{km}}{\text{h}} = 90{,}0 \cdot \tfrac{1000\,\text{m}}{3600\,\text{s}} = 25{,}0\,\tfrac{\text{m}}{\text{s}}$
+**Periaate:** Lähde on paikallaan ja kuulija liikkuu. Aallonpituus ei siis muutu. Autoilija kohtaa aaltorintamat kuitenkin useammin, koska ne lähestyvät häntä nopeudella $v + v_\text{H}$. Käytetään liikkuvan kuulijan Dopplerin kaavaa. Lähestymisessä merkki on plus.
+**Kaava:** $f = f_0 \cdot \dfrac{v + v_\text{H}}{v}$
+**Muunnokset:** $v_\text{H} = 90{,}0\,\tfrac{\text{km}}{\text{h}} = 90{,}0 \cdot \tfrac{1000\,\text{m}}{3600\,\text{s}} = 25{,}0\,\tfrac{\text{m}}{\text{s}}$
 **Sijoitus:** $f = 650\,\text{Hz} \cdot \dfrac{340\,\text{m/s} + 25{,}0\,\text{m/s}}{340\,\text{m/s}} = 650\,\text{Hz} \cdot \dfrac{365}{340} = 697{,}79\,\text{Hz}$
 **Vastaus:** $698\,\text{Hz}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Taajuus nousee, koska autoilija lähestyy. Nousu on $f_0 \cdot \tfrac{v_\text{h}}{v} = 650\,\text{Hz} \cdot \tfrac{25{,}0}{340} \approx 48\,\text{Hz}$. Se on noin $7\,\%$ kuten nopeuksien suhde $\tfrac{25}{340}$.
+**Järkevyys:** Taajuus nousee, koska autoilija lähestyy. Nousu on $f_0 \cdot \tfrac{v_\text{H}}{v} = 650\,\text{Hz} \cdot \tfrac{25{,}0}{340} \approx 48\,\text{Hz}$. Se on noin $7\,\%$ kuten nopeuksien suhde $\tfrac{25}{340}$.
 
 ## fy5-14-L2-04
 **Annettu:** moottorin taajuus paikallaan $f_0 = 425\,\text{Hz}$, kuultu taajuus auton loitotessa $f = 398\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$
-**Kysytty:** auton nopeus $v_\text{s}$
+**Kysytty:** auton nopeus $v_\text{L}$
 **Periaate:** Auto eli äänilähde loittonee suoraan katsojasta, ja katsoja on paikallaan. Siksi pätee liikkuvan lähteen Dopplerin kaava. Loittonemisessa merkki on plus. Kierrosluku on sama, joten moottorin oma taajuus on $f_0$. Kaavasta ratkaistaan lähteen nopeus.
-**Kaava:** $f = f_0 \cdot \dfrac{v}{v + v_\text{s}}$, josta $v + v_\text{s} = \dfrac{f_0 v}{f}$ ja $v_\text{s} = v \left(\dfrac{f_0}{f} - 1\right)$
+**Kaava:** $f = f_0 \cdot \dfrac{v}{v + v_\text{L}}$, josta $v + v_\text{L} = \dfrac{f_0 v}{f}$ ja $v_\text{L} = v \left(\dfrac{f_0}{f} - 1\right)$
 **Muunnokset:** Ei tarvita. Taajuudet ovat hertseinä, ja niiden suhteesta yksikkö supistuu.
-**Sijoitus:** $v_\text{s} = 340\,\text{m/s} \cdot \left(\dfrac{425\,\text{Hz}}{398\,\text{Hz}} - 1\right) = 340\,\text{m/s} \cdot 0{,}067839 = 23{,}065\,\text{m/s}$
+**Sijoitus:** $v_\text{L} = 340\,\text{m/s} \cdot \left(\dfrac{425\,\text{Hz}}{398\,\text{Hz}} - 1\right) = 340\,\text{m/s} \cdot 0{,}067839 = 23{,}065\,\text{m/s}$
 **Vastaus:** $23\,\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, koska tulos riippuu taajuuksien erotuksesta $27\,\text{Hz}$. Se tunnetaan kahden numeron tarkkuudella.
 **Järkevyys:** $23\,\text{m/s}$ on noin $83\,\text{km/h}$. Se on uskottava nopeus radalla. Tarkistus: $425\,\text{Hz} \cdot \tfrac{340}{340 + 23{,}07} \approx 398\,\text{Hz}$, kuten mitattiin.
 
 ## fy5-14-L3-01
 **Annettu:** kuultu taajuus lähestyttäessä $f_1 = 476\,\text{Hz}$ ja loitottaessa $f_2 = 404\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$; sireenin taajuus $f_0$ on tuntematon
-**Kysytty:** ambulanssin nopeus $v_\text{s}$
+**Kysytty:** ambulanssin nopeus $v_\text{L}$
 **Periaate:** Kuulija on paikallaan. Lähde liikkuu suoraan häntä kohti ja sitten hänestä poispäin samalla nopeudella. Kummassakin vaiheessa pätee liikkuvan lähteen kaava. Lähestyttäessä merkki on miinus ja loitottaessa plus. Tuntematon $f_0$ supistuu pois, kun taajuudet jaetaan keskenään.
-**Kaava:** $f_1 = f_0 \cdot \dfrac{v}{v - v_\text{s}}$ ja $f_2 = f_0 \cdot \dfrac{v}{v + v_\text{s}}$, joten $\dfrac{f_1}{f_2} = \dfrac{v + v_\text{s}}{v - v_\text{s}}$. Kun kerrotaan ristiin, saadaan $f_1 v - f_1 v_\text{s} = f_2 v + f_2 v_\text{s}$, joten $v_\text{s} (f_1 + f_2) = v (f_1 - f_2)$ ja $v_\text{s} = v \cdot \dfrac{f_1 - f_2}{f_1 + f_2}$
+**Kaava:** $f_1 = f_0 \cdot \dfrac{v}{v - v_\text{L}}$ ja $f_2 = f_0 \cdot \dfrac{v}{v + v_\text{L}}$, joten $\dfrac{f_1}{f_2} = \dfrac{v + v_\text{L}}{v - v_\text{L}}$. Kun kerrotaan ristiin, saadaan $f_1 v - f_1 v_\text{L} = f_2 v + f_2 v_\text{L}$, joten $v_\text{L} (f_1 + f_2) = v (f_1 - f_2)$ ja $v_\text{L} = v \cdot \dfrac{f_1 - f_2}{f_1 + f_2}$
 **Muunnokset:** Ei tarvita. Taajuuksien yksikkö supistuu, ja nopeus tulee yksikössä $\text{m/s}$.
-**Sijoitus:** $v_\text{s} = 340\,\text{m/s} \cdot \dfrac{476\,\text{Hz} - 404\,\text{Hz}}{476\,\text{Hz} + 404\,\text{Hz}} = 340\,\text{m/s} \cdot \dfrac{72}{880} = 27{,}818\,\text{m/s}$
+**Sijoitus:** $v_\text{L} = 340\,\text{m/s} \cdot \dfrac{476\,\text{Hz} - 404\,\text{Hz}}{476\,\text{Hz} + 404\,\text{Hz}} = 340\,\text{m/s} \cdot \dfrac{72}{880} = 27{,}818\,\text{m/s}$
 **Vastaus:** $28\,\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa, koska taajuuksien erotus $72\,\text{Hz}$ tunnetaan kahden numeron tarkkuudella.
-**Järkevyys:** $28\,\text{m/s}$ on noin $100\,\text{km/h}$. Se sopii hälytysajoon. Sireenin oma taajuus on $f_0 = f_1 \cdot \tfrac{v - v_\text{s}}{v} \approx 437\,\text{Hz}$. Se on kuultujen taajuuksien välissä, kuten pitää. Myös $f_2 = 437\,\text{Hz} \cdot \tfrac{340}{367{,}8} \approx 404\,\text{Hz}$ täsmää.
+**Järkevyys:** $28\,\text{m/s}$ on noin $100\,\text{km/h}$. Se sopii hälytysajoon. Sireenin oma taajuus on $f_0 = f_1 \cdot \tfrac{v - v_\text{L}}{v} \approx 437\,\text{Hz}$. Se on kuultujen taajuuksien välissä, kuten pitää. Myös $f_2 = 437\,\text{Hz} \cdot \tfrac{340}{367{,}8} \approx 404\,\text{Hz}$ täsmää.
 
 ## fy5-14-L3-02
-**Annettu:** viritysääni $f_0 = 440\,\text{Hz}$, huojuntataajuus ennen kiristämistä $f_\text{h} = 4\,\text{Hz}$ ja kiristämisen jälkeen $6\,\text{Hz}$
+**Annettu:** viritysääni $f_0 = 440\,\text{Hz}$, huojuntataajuus ennen kiristämistä $f_\text{H} = 4\,\text{Hz}$ ja kiristämisen jälkeen $6\,\text{Hz}$
 **Kysytty:** kielen taajuus $f$ ennen kiristämistä
 **Periaate:** Huojuntataajuus on taajuuksien erotuksen itseisarvo. Pelkästä huojunnasta kielen taajuus voi siis olla joko $440\,\text{Hz} - 4\,\text{Hz}$ tai $440\,\text{Hz} + 4\,\text{Hz}$. Kiristäminen kasvattaa aallon nopeutta kielessä. Siksi se nostaa kielen taajuutta. Huojunta nopeutui eli erotus kasvoi. Nouseva taajuus siis loittoni viritysäänestä, ja kieli oli jo valmiiksi viritysääntä korkeammalla. Jos kieli olisi ollut $436\,\text{Hz}$, kiristäminen olisi vienyt sitä kohti $440\,\text{Hz}$:ä. Silloin huojunta olisi hidastunut.
-**Kaava:** $f_\text{h} = |f - f_0|$, ja kun $f > f_0$, $f = f_0 + f_\text{h}$
+**Kaava:** $f_\text{H} = |f - f_0|$, ja kun $f > f_0$, $f = f_0 + f_\text{H}$
 **Muunnokset:** Ei tarvita. Kaikki taajuudet ovat hertseinä.
 **Sijoitus:** $f = 440\,\text{Hz} + 4\,\text{Hz} = 444\,\text{Hz}$
 **Vastaus:** $444\,\text{Hz}$, kokonaisina hertseinä kuten viritysääni ja huojuntataajuus.
@@ -135,22 +135,22 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 
 ## fy5-14-L1-08
 **Annettu:** äänirautojen taajuudet $f_1 = 392\,\text{Hz}$ ja $f_2 = 398\,\text{Hz}$
-**Kysytty:** huojunnan jaksonaika $T_\text{h}$ sekunteina
+**Kysytty:** huojunnan jaksonaika $T_\text{H}$ sekunteina
 **Periaate:** Voimakkaita hetkiä on sekunnissa yhtä monta kuin taajuuksien erotus. Kahden peräkkäisen voimakkaan hetken väli on huojuntataajuuden käänteisluku.
-**Kaava:** $f_\text{h} = |f_1 - f_2|$ ja $T_\text{h} = \dfrac{1}{f_\text{h}}$
+**Kaava:** $f_\text{H} = |f_1 - f_2|$ ja $T_\text{H} = \dfrac{1}{f_\text{H}}$
 **Muunnokset:** Ei tarvita. Taajuudet ovat hertseinä, joten jaksonaika tulee sekunteina.
-**Sijoitus:** $f_\text{h} = |392\,\text{Hz} - 398\,\text{Hz}| = 6\,\text{Hz}$, joten $T_\text{h} = \dfrac{1}{6\,\text{Hz}} = 0{,}1667\,\text{s}$
+**Sijoitus:** $f_\text{H} = |392\,\text{Hz} - 398\,\text{Hz}| = 6\,\text{Hz}$, joten $T_\text{H} = \dfrac{1}{6\,\text{Hz}} = 0{,}1667\,\text{s}$
 **Vastaus:** $0{,}167\,\text{s}$, kolme merkitsevää numeroa. Äänirautojen taajuudet otetaan tarkkoina.
 **Järkevyys:** Kuusi huojuntajaksoa kestää yhteensä $6 \cdot 0{,}1667\,\text{s} = 1{,}00\,\text{s}$. Se sopii taajuuteen $6\,\text{Hz}$. Taajuusero on alle $10\,\text{Hz}$, joten huojunta kuuluu selvästi.
 
 ## fy5-14-L2-05
 **Annettu:** torven taajuus paikallaan $f_0 = 392\,\text{Hz}$, neljä mitattua taajuutta $431\,\text{Hz}$, $429\,\text{Hz}$, $432\,\text{Hz}$ ja $430\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$
-**Kysytty:** auton nopeus $v_\text{s}$
+**Kysytty:** auton nopeus $v_\text{L}$
 **Periaate:** Auto eli äänilähde lähestyy paikallaan olevaa kuulijaa. Siksi käytetään liikkuvan lähteen Dopplerin kaavaa miinusmerkillä. Mittaukset vaihtelevat hieman, joten käytetään niiden keskiarvoa $f_\text{ka}$. Kaavasta ratkaistaan lähteen nopeus.
 **Aineiston käsittely:** Taulukon neljän taajuuden summa on $431 + 429 + 432 + 430 = 1722$ hertsiä. Keskiarvo on siis $f_\text{ka} = \dfrac{1722\,\text{Hz}}{4} = 430{,}5\,\text{Hz}$.
-**Kaava:** $f_\text{ka} = f_0 \cdot \dfrac{v}{v - v_\text{s}}$, josta $v - v_\text{s} = \dfrac{f_0 v}{f_\text{ka}}$ ja $v_\text{s} = v \left(1 - \dfrac{f_0}{f_\text{ka}}\right)$
+**Kaava:** $f_\text{ka} = f_0 \cdot \dfrac{v}{v - v_\text{L}}$, josta $v - v_\text{L} = \dfrac{f_0 v}{f_\text{ka}}$ ja $v_\text{L} = v \left(1 - \dfrac{f_0}{f_\text{ka}}\right)$
 **Muunnokset:** Ei tarvita. Taajuudet ovat hertseinä, ja niiden suhteesta yksikkö supistuu.
-**Sijoitus:** $v_\text{s} = 340\,\text{m/s} \cdot \left(1 - \dfrac{392\,\text{Hz}}{430{,}5\,\text{Hz}}\right) = 340\,\text{m/s} \cdot 0{,}08943 = 30{,}41\,\text{m/s}$
+**Sijoitus:** $v_\text{L} = 340\,\text{m/s} \cdot \left(1 - \dfrac{392\,\text{Hz}}{430{,}5\,\text{Hz}}\right) = 340\,\text{m/s} \cdot 0{,}08943 = 30{,}41\,\text{m/s}$
 **Vastaus:** $30{,}4\,\text{m/s}$, kolme merkitsevää numeroa kuten taajuuksissa.
 **Järkevyys:** $30{,}4\,\text{m/s}$ on noin $109\,\text{km/h}$, mikä on suunnilleen maantienopeus. Takaisinlaskenta: $\dfrac{392\,\text{Hz}}{1 - 30{,}41/340} = 430{,}5\,\text{Hz}$ on mitattu keskiarvo. Yksittäiset mittaukset antavat nopeuksiksi $29{,}3$–$31{,}5\,\text{m/s}$. Vaihtelu on siis noin $1\,\text{m/s}$.
 
@@ -166,15 +166,15 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 **Järkevyys:** Monikerrat $2 \cdot 262\,\text{Hz} = 524\,\text{Hz}$ ja $5 \cdot 262\,\text{Hz} = 1310\,\text{Hz}$ vastaavat taulukon piikkejä. Pienet erot johtuvat siitä, että FFT lukee taajuudet noin hertsin tarkkuudella. Taajuus $262\,\text{Hz}$ on keski-C. Se sopii molemmille soittimille.
 
 ## fy5-14-L2-07
-**Annettu:** auton nopeus $v_\text{s} = 30{,}0\,\text{m/s}$, torven taajuus $f_0 = 500\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$, opiskelijan tulos $544\,\text{Hz}$
+**Annettu:** auton nopeus $v_\text{L} = 30{,}0\,\text{m/s}$, torven taajuus $f_0 = 500\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$, opiskelijan tulos $544\,\text{Hz}$
 **Kysytty:** opiskelijan virhe ja oikea kuultu taajuus $f$
-**Periaate:** Opiskelija käytti kaavaa, joka koskee liikkuvaa kuulijaa. Tässä kuulija on paikallaan ja äänilähde eli auto liikkuu. Siksi pätee liikkuvan lähteen kaava. Lähteen liike lyhentää aallonpituutta lähteen edessä ($\lambda = (v - v_\text{s}) T_0$). Kuulijan liike ei muuta aallonpituutta. Auto lähestyy, joten merkki valitaan niin, että $f > f_0$.
-**Kaava:** $f = f_0 \cdot \dfrac{v}{v - v_\text{s}}$
+**Periaate:** Opiskelija käytti kaavaa, joka koskee liikkuvaa kuulijaa. Tässä kuulija on paikallaan ja äänilähde eli auto liikkuu. Siksi pätee liikkuvan lähteen kaava. Lähteen liike lyhentää aallonpituutta lähteen edessä ($\lambda = (v - v_\text{L}) T_0$). Kuulijan liike ei muuta aallonpituutta. Auto lähestyy, joten merkki valitaan niin, että $f > f_0$.
+**Kaava:** $f = f_0 \cdot \dfrac{v}{v - v_\text{L}}$
 **Muunnokset:** Ei tarvita. Nopeudet ovat jo yksikössä m/s.
 **Sijoitus:**
 $\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30{,}0)\,\text{m/s}} \\ &= 500\,\text{Hz} \cdot \dfrac{340}{310{,}0} \\ &= 548{,}4\,\text{Hz} \end{aligned}$
 **Vastaus:** $548\,\text{Hz}$, kolme merkitsevää numeroa kuten lähtötiedoissa. Opiskelijan arvo $544\,\text{Hz}$ on noin $4\,\text{Hz}$ liian pieni.
-**Järkevyys:** Taajuus nousee, koska auto lähestyy: $548\,\text{Hz} > 500\,\text{Hz}$. Arvio pienelle nopeudelle on $f_0 \cdot \tfrac{v_\text{s}}{v} = 500\,\text{Hz} \cdot \tfrac{30{,}0}{340} \approx 44\,\text{Hz}$. Se on lähellä todellista nousua $48\,\text{Hz}$. Todellinen nousu on hieman suurempi, koska nimittäjässä on $v - v_\text{s}$.
+**Järkevyys:** Taajuus nousee, koska auto lähestyy: $548\,\text{Hz} > 500\,\text{Hz}$. Arvio pienelle nopeudelle on $f_0 \cdot \tfrac{v_\text{L}}{v} = 500\,\text{Hz} \cdot \tfrac{30{,}0}{340} \approx 44\,\text{Hz}$. Se on lähellä todellista nousua $48\,\text{Hz}$. Todellinen nousu on hieman suurempi, koska nimittäjässä on $v - v_\text{L}$.
 
 ## fy5-14-L3-04
 **Annettu:** anturin taajuus $f_0 = 4{,}00\,\text{MHz} = 4{,}00 \cdot 10^6\,\text{Hz}$, äänen nopeus kudoksessa $v = 1540\,\text{m/s}$, taajuuden muutokset $\Delta f$ taulukossa, veri virtaa suoraan kohti anturia
@@ -214,6 +214,6 @@ $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,
 ## fy5-14-L2-08
 **Annettu:** kahden yhtä aikaa soivan ääniraudan yhteinen ääni kuvassa. Toinen äänirauta on $523\,\text{Hz}$. Vaha laskee tuntemattoman ääniraudan taajuutta, ja huojunta nopeutuu.
 **Kysytty:** tuntemattoman ääniraudan taajuus $f_x$ ennen vahaa
-**Periaate:** Huojuntataajuus on taajuuksien erotus: $f_\text{h} = |f_x - 523\,\text{Hz}|$. Se on huojuntajakson käänteisluku. Erotus ei kerro, kumpi taajuus on suurempi. Puoli päätellään vahasta, koska vaha laskee taajuutta $f_x$. Jos erotus kasvaa, $f_x$ oli jo alle $523\,\text{Hz}$. Jos erotus pienenee, $f_x$ oli korkeampi.
-**Kuvaajan lukeminen:** Ääni on voimakkaimmillaan hetkillä $0$, $0{,}25\,\text{s}$, $0{,}50\,\text{s}$, $0{,}75\,\text{s}$ ja $1{,}00\,\text{s}$. Huojuntajakso on $T_\text{h} = 0{,}25\,\text{s}$.
-**Mallivastaus:** Huojuntataajuus on $f_\text{h} = \dfrac{1}{0{,}25\,\text{s}} = 4\,\text{Hz}$. Siis $f_x = 523\,\text{Hz} \pm 4\,\text{Hz}$ eli $519\,\text{Hz}$ tai $527\,\text{Hz}$. Vaha laski taajuutta $f_x$, ja huojunta nopeutui. Erotus siis kasvoi. Se on mahdollista vain, jos $f_x$ oli alle $523\,\text{Hz}$. Vastaus on $519\,\text{Hz}$. Tarkistus: jos $f_x$ olisi ollut $527\,\text{Hz}$, vaha toisi sen lähemmäs $523\,\text{Hz}$:ää ja huojunta hidastuisi.
+**Periaate:** Huojuntataajuus on taajuuksien erotus: $f_\text{H} = |f_x - 523\,\text{Hz}|$. Se on huojuntajakson käänteisluku. Erotus ei kerro, kumpi taajuus on suurempi. Puoli päätellään vahasta, koska vaha laskee taajuutta $f_x$. Jos erotus kasvaa, $f_x$ oli jo alle $523\,\text{Hz}$. Jos erotus pienenee, $f_x$ oli korkeampi.
+**Kuvaajan lukeminen:** Ääni on voimakkaimmillaan hetkillä $0$, $0{,}25\,\text{s}$, $0{,}50\,\text{s}$, $0{,}75\,\text{s}$ ja $1{,}00\,\text{s}$. Huojuntajakso on $T_\text{H} = 0{,}25\,\text{s}$.
+**Mallivastaus:** Huojuntataajuus on $f_\text{H} = \dfrac{1}{0{,}25\,\text{s}} = 4\,\text{Hz}$. Siis $f_x = 523\,\text{Hz} \pm 4\,\text{Hz}$ eli $519\,\text{Hz}$ tai $527\,\text{Hz}$. Vaha laski taajuutta $f_x$, ja huojunta nopeutui. Erotus siis kasvoi. Se on mahdollista vain, jos $f_x$ oli alle $523\,\text{Hz}$. Vastaus on $519\,\text{Hz}$. Tarkistus: jos $f_x$ olisi ollut $527\,\text{Hz}$, vaha toisi sen lähemmäs $523\,\text{Hz}$:ää ja huojunta hidastuisi.

@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 645300f76b18132d
+CONTENT-HASH: 2bae39cb7d291fd8
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: theory paragraph ("samassa vaiheessa … vahvistavat toisiaan …") and the reworded model sentence (loudspeakers at different places would interfere); no inline wrap at 390; captures fy5-15-en-390/1280-teoria.png, -model.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.
+- Built preview fy5-15 (en) at 390 px, Hint 3 opened (screenshot of the hint box); contact capture of the Examples stage.
+- Delta: transfer task hint 3 rewritten to L = 10 lg(...) dB form. Rendered at 390 px: aligned three-row chain, large parentheses, thin space before dB, decimal comma in fi/fi-easy and point in en, no clipping or overflow.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

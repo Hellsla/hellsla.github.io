@@ -213,8 +213,8 @@ When the trolley is held still at displacement $x$, a hand pulls or pushes the t
 
 ## Formula: Harmonic force
 When the origin of the $x$-axis is at the point where the spring is at its rest length, and $x$ is the extension or compression of the spring from its rest length, the $x$-component of the force that the spring exerts on an object is
-```latex
-F = -kx
+```kaavat
+harmonic force :: F = -kx
 ```
 where $F$ is the force of the spring on the object ($\text{N}$), $x$ the extension or compression of the spring from its rest length ($\text{m}$) and $k$ the **spring constant** of the spring ($\text{N/m}$). The minus sign gives the direction: the force is always opposite to the displacement. When $x > 0$, $F < 0$, and when $x < 0$, $F > 0$. The magnitude of the force is $k|x|$. The spring constant tells the stiffness of the spring, that is how many newtons of force are needed per metre of extension. The spring of a car's suspension can have tens of kilonewtons per metre, the spring of a toy only a few newtons per metre. For a horizontal spring the rest-length position is also the equilibrium position of the object, so the displacement from the equilibrium position is then $x$. The law holds only when the spring is neither stretched too much nor compressed too much.
 
@@ -279,8 +279,8 @@ The gradient is read from two points of the fitted line, not from two measuremen
 
 ### Elastic potential energy
 In the chapter *Kinetic energy, potential energy and mechanical energy* it was stated that a stretched spring has elastic potential energy. Now its magnitude can be calculated. When a spring is stretched slowly from its rest length to extension $x$, the stretching force does work, and the work is stored in the spring as potential energy. The work of a constant force, $W = Fs$, is the area of a rectangle in an $(s, F)$ graph (chapter *Conservation of mechanical energy and the work–energy principle*). The stretching force is not constant, however, but grows steadily from zero to $kx$. So the work is the triangle between the $(x, F_\text{v})$ graph and the $x$-axis, with base $x$ and height $kx$. The elastic potential energy is
-```latex
-E_\text{p} = \frac{1}{2}kx^2
+```kaavat
+potential energy of a harmonic oscillator :: E_\text{p} = \frac{1}{2}kx^2
 ```
 where $E_\text{p}$ is the elastic potential energy ($\text{J}$), $k$ the spring constant ($\text{N/m}$) and $x$ the extension or compression ($\text{m}$). At the rest length the elastic potential energy is zero.
 

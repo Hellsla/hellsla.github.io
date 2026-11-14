@@ -213,8 +213,8 @@ Kun kärryä pidetään paikallaan poikkeamassa $x$, käsi vetää tai työntä�
 
 ## Kaava: Harmoninen voima
 Kun $x$-akselin origo on kohdassa, jossa jousi on lepopituudessaan, ja $x$ on jousen venymä tai puristuma lepopituudesta, jousen kappaleeseen kohdistaman voiman $x$-komponentti on
-```latex
-F = -kx
+```kaavat
+harmoninen voima :: F = -kx
 ```
 missä $F$ on jousen voima kappaleeseen ($\text{N}$), $x$ jousen venymä tai puristuma lepopituudesta ($\text{m}$) ja $k$ jousen **jousivakio** ($\text{N/m}$). Miinusmerkki kertoo suunnan: voima on aina poikkeamaa vastakkaissuuntainen. Kun $x > 0$, $F < 0$, ja kun $x < 0$, $F > 0$. Voiman suuruus on $k|x|$. Jousivakio kertoo jousen jäykkyyden eli sen, kuinka monta newtonia voimaa tarvitaan venymän metriä kohti. Auton jousituksen jousi voi olla kymmeniä kilonewtoneita metriä kohti, lelun jousi vain muutamia newtoneita metriä kohti. Vaakasuorassa jousessa lepopituuden kohta on myös kappaleen tasapainoasema, joten poikkeama tasapainoasemasta on silloin $x$. Laki pätee vain, kun jousta ei venytetä liikaa eikä puristeta liikaa.
 
@@ -279,8 +279,8 @@ Kulmakerroin luetaan kahdesta sovitetun suoran pisteestä, ei kahdesta mittauspi
 
 ### Jousen potentiaalienergia
 Luvussa *Liike-energia, potentiaalienergia ja mekaaninen energia* todettiin, että jännitetyllä jousella on jousen potentiaalienergiaa. Nyt sen suuruus voidaan laskea. Kun jousta venytetään hitaasti lepopituudesta venymään $x$, venyttävä voima tekee työtä, ja työ varastoituu jouseen potentiaalienergiaksi. Vakiovoiman työ $W = Fs$ on $(s, F)$-kuvaajassa suorakulmion pinta-ala (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Venyttävä voima ei kuitenkaan ole vakio, vaan se kasvaa tasaisesti nollasta arvoon $kx$. Siksi työ on $(x, F_\text{v})$-kuvaajan ja $x$-akselin väliin jäävä kolmio, jonka kanta on $x$ ja korkeus $kx$. Jousen potentiaalienergia on
-```latex
-E_\text{p} = \frac{1}{2}kx^2
+```kaavat
+harmonisen värähtelijän potentiaalienergia :: E_\text{p} = \frac{1}{2}kx^2
 ```
 missä $E_\text{p}$ on jousen potentiaalienergia ($\text{J}$), $k$ jousivakio ($\text{N/m}$) ja $x$ venymä tai puristuma ($\text{m}$). Lepopituudessa jousen potentiaalienergia on nolla.
 

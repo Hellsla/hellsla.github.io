@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 3cdc03e66d7d0dbd
+CONTENT-HASH: 26a3b88ee71206d3
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] lesson.md, Sijoitus (vaihe 5/7) — the units in the two substitution fractions are now stacked `\tfrac{m}{s}`, which renders small and makes the denominator tall. The step 6 text, stage 1 and the check in stage 7 still use `m/s` — optional: use one notation throughout, e.g. `\text{m/s}` in the fraction.
+(none)
 
 ## Checked
-- Delta (only the two substitution rows of the worked example changed). Opened fy5-14-example-390-1.png and fy5-14-example-390-2.png: both substitution rows render as aligned rows with no clipping or horizontal overflow at 390 px. The rest of the example (stages 1–7) kept its layout. Hash unchanged at the end.
+- Diff read for fi fy5-14 (one sentence in the solution); layout unaffected by a same-length phrase swap. No capture needed beyond the diff.
+- Delta: one wording change in the transfer task's solution (Reasonableness): 'huojuvan' -> 'korkeuden vaihtelevan' / 'the pitch vary'. Text only; no layout, figure or formula touched. Wording is natural and unambiguous; plain-language ('pitch') matches the unit's glossary use.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

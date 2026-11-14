@@ -197,8 +197,8 @@ Ero on kiihtyvyyksissä. Newtonin toisen lain mukaan kappaleen kiihtyvyys on $a 
 ## Kaava: Newtonin gravitaatiolaki
 Gravitaatiovoima kahden kappaleen välillä on sitä suurempi, mitä suuremmat massat kappaleilla on. Se on sitä pienempi, mitä kauempana kappaleet ovat toisistaan. Newtonin gravitaatiolaki kertoo tämän tarkasti. Voima on suoraan verrannollinen kumpaankin massaan. Voima on kääntäen verrannollinen etäisyyden neliöön.
 
-```latex
-F = \gamma \frac{m_1 m_2}{r^2}
+```kaavat
+Newtonin gravitaatiolaki :: F = \gamma \frac{m_1 m_2}{r^2}
 ```
 
 Kaavassa $F$ on kumpaankin kappaleeseen vaikuttavan gravitaatiovoiman suuruus (N). Massat $m_1$ ja $m_2$ ovat kappaleiden massat (kg). Etäisyys $r$ on kappaleiden keskipisteiden välinen etäisyys (m). Merkki $\gamma$ on gravitaatiovakio, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$. Voima vaikuttaa kumpaankin kappaleeseen kohti toista kappaletta. Henry Cavendish määritti vuonna 1798 Maan keskitiheyden. Hän mittasi lyijypallojen välistä heikkoa gravitaatiovuorovaikutusta. Hänen tuloksestaan voidaan laskea gravitaatiovakion arvo.

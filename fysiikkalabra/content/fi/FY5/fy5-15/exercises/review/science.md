@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: bbbf95c2fad03835
-SCOPE: delta added-exercise from 32ef02d3f3cb74d2 base 81db4a6fd727
+CONTENT-HASH: 0951554d40dc2e9f
 
 ## Blocking
+None.
 
 ## Polish
-- fy5-15/exercises/solutions.md (L1-09, Vastaus) — The 2 significant figures are justified "kuten kuulokynnys 1,0·10⁻¹²". I₀ is a defined reference level. The precision comes from the read level 74,0 dB, which gives I to about 3 figures (2,51·10⁻⁵). Base the rounding on the reading, or simply say 2 significant figures suffice.
-- fy5-15/exercises/solutions.md (L1-09 and L2-09, Järkevyys) — The two checks trade answers. L1-09's check computes I(2 m) = 1,0·10⁻⁴ W/m², the first step of L2-09. L2-09's check computes I(4 m) = 2,51·10⁻⁵ W/m², L1-09's answer. Both sit behind the solution buttons, so this is harmless, but the checks could use the 8 m point instead.
+1. answers.py docstring writes L = 10 dB · lg(I/I0); equivalent to the MAFY form the solutions use (code comment only).
 
 ## Checked
-- Figure data: P = 4π·2²·1,0·10⁻⁴ W ≈ 5,03 mW. The recomputed levels are 80,00, 73,98 and 67,96 dB at 2, 4 and 8 m, and the figure writes them as 80,0, 74,0 and 68,0. The values are printed in the figure, so they are read exactly. The alt text gives the same three values.
-- L1-09: I = I₀·10^(L/10 dB) = 2,51·10⁻⁵ W/m², against the answer 2,5·10⁻⁵ with 3 % tolerance (recomputed).
-- L2-09: P = 4πr²I = 5,03 mW. The 4 m point gives 5,05 mW, within 1 %. Both the stated 5,0 mW and 5,03 mW pass the 3 % tolerance.
-- L2-09 states the point-source, even-spreading and no-reflection model in the task. L1-09 needs no model.
-- Neither task gives the other's answer in its text. The figure shows no power or intensity.
-- The notation L = 10 dB · lg(I/I₀) and I = P/(4πr²) matches the lesson. answers.py agrees with exercises.json.
-- The hash was the same at the start and at the end.
+Full review (fi: exercises.json, solutions.md, answers.py). The change: L2-09 answer 5.0 mW, tolerance 0.04 (4,8–5,2 mW), matches the solution's Vastaus 5,0 mW (2 s.f., r = 2,0 m read from the figure); answers.py gives 5,027 mW, inside; readings at the 4 m (74,0 dB) and 8 m (68,0 dB) points give 5,05 and 5,07 mW, also inside. Recomputed every answer with my own formulas: L1-01 2,0·10⁻³; L1-02 75,05 dB; L1-03 3,16·10⁻³; L1-04 2,55·10⁻⁴ W/m²; L1-05 20 dB; L1-08 120 dB; L1-09 2,51·10⁻⁵ W/m²; L2-01 86,46; L2-02 1,76; L2-03 72,96 dB; L2-04 3,98 → 4; L2-05 6,025 dB; L2-06 3,96 dB; L2-07 2,51; L2-08 10⁴; L3-01 84,63 dB; L3-02 15,8 m; L3-04 315 m (answer 320, tol 5 %); L3-05 44,6 m; every answer field within its tolerance of my values in fi, fi-easy and en. Solutions state the law first, solve symbolically, rounding reasons sound; choice keys (L1-06, L1-07, L2-08) and their feedback correct; L3-03 negative level and L2-06 reflection explanation correct.

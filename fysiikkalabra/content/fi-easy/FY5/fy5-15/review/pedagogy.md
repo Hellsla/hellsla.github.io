@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8fe46662a2c9c370
+CONTENT-HASH: bbd19d9b0ad3dd8b
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the rule paragraph in the lesson (same tone in phase reinforces at some places and weakens at others, chapter cited by name) and the corrected sim model note, which now puts the interfering loudspeakers at different places, so it no longer contradicts the co-located setup or suggests that interference always gives a pattern. Selkeä suomi: three short sentences.
+Delta only. fy5-14 transfer wording ("korkeuden vaihtelevan"/"the pitch vary") is physically correct and clearer than "huojuvan". fy5-15 hint 3 uses L = 10 lg(I/I0) dB consistent with the lesson; it follows hints 1-2 step by step.

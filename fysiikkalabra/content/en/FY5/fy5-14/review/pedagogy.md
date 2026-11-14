@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7ed4bfd7f2bf21d2
+CONTENT-HASH: d8a83364b77920c3
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-- Delta review: the worked example's Doppler unit fractions changed from m/s to \tfrac{m}{s} in the f_1 and f_2 lines; the numbers, symbols and steps are unchanged.
-- The change only affects the layout of the units in the formula, and the stage order and the step-by-step staging are intact.
-- Nothing in the diff discloses an answer or touches the inquiry, figures or exercises.
+Delta only. fy5-14 transfer wording ("korkeuden vaihtelevan"/"the pitch vary") is physically correct and clearer than "huojuvan". fy5-15 hint 3 uses L = 10 lg(I/I0) dB consistent with the lesson; it follows hints 1-2 step by step.

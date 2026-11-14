@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fdb52cc8dedcff71
+CONTENT-HASH: 97fc50d03cb5078c
 
 ## Blocking
+None.
 
 ## Polish
+1. glossary.json (outside the hash): "huojunta" and "Doppler-ilmiö" still use f_h, v_s, v_h; update to f_H, v_L, v_H when next edited.
 
 ## Checked
-- Delta review, round 1: lesson.md worked example (Sijoitus, about lines 588–596). The only change is how the unit is typeset: m/s is now written as `\tfrac{\text{m}}{\text{s}}` in the two substitution rows. No number, symbol or formula changed.
-- Units: m/s over m/s cancels in v/(v ∓ v_s), so both rows still give hertz. The new form matches the m/s fraction already used in the Yksikkömuunnokset step.
-- Recomputed: f1 = 311·340/310 = 341,10 Hz; f2 = 311·340/370 = 285,78 Hz; Δf = 55,31 Hz (the lesson shows 55,32 because it subtracts the rounded values; it rounds to 55 Hz either way). Results 341 Hz, 286 Hz and about 55 Hz are unchanged and still correct.
-- Hash (`--lang fi-easy`) was fdb52cc8dedcff71 at the start and at the end.
+Delta review (fi-easy): inquiry.json siirto solution, Järkevyys: "huojuvan" / "waver" replaced by "korkeuden vaihtelevan" / "the pitch vary". This fixes the earlier polish item: the effect is a periodic Doppler shift of pitch, not beats (which need two superposed frequencies). Numbers unchanged and recomputed: f_max = 2000 Hz · 340/(340 − 12,566) = 2076,8 Hz, f_min = 1928,7 Hz, twice a second (T = 0,500 s). Nothing else in the lesson changed since the passed version.

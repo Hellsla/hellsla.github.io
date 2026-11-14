@@ -296,14 +296,14 @@ When the displacement is drawn as a function of time, the result is a $(t, x)$ g
 
 ## Formula: Sinusoidal oscillation
 The frequency is the reciprocal of the period, because one oscillation takes the time $T$, and in a unit of time $\tfrac{1}{T}$ oscillations are completed:
-```latex
-f = \frac{1}{T}
+```kaavat
+frequency :: f = \frac{1}{T}
 ```
 where $f$ is the frequency ($\text{Hz}$) and $T$ the period ($\text{s}$). The unit of frequency is the **hertz**, $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$. When the period is $T = 0.50\,\text{s}$, the object makes $2.0$ oscillations per second, that is, $f = 2.0\,\text{Hz}$.
 
 The $(t, x)$ graph of many oscillating objects is a sine curve. This is so, for example, for a weight oscillating on a spring and for a pendulum swinging through small angles; the reason becomes clear later in the course from the forces acting on the oscillating object. When timing starts at the moment the object passes the equilibrium position in the positive direction, the displacement is
-```latex
-x = A \sin\left(\frac{2\pi t}{T}\right) = A \sin(2\pi f t)
+```kaavat
+position of a harmonic oscillator as a function of time :: x = A \sin\left(\frac{2\pi t}{T}\right) = A \sin(2\pi f t)
 ```
 where $x$ is the displacement from the equilibrium position, $A$ the amplitude (in the same unit as $x$), $t$ the time ($\text{s}$), $T$ the period ($\text{s}$) and $f$ the frequency ($\text{Hz}$). The argument of the sine is in radians, so the calculator must be set to radian mode.
 

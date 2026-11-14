@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 7ed4bfd7f2bf21d2
+CONTENT-HASH: d8a83364b77920c3
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] Worked example step 5 (example-390-2) — the unit fractions \tfrac{m}{s} inside the large fractions render small, but they are legible and fit within the card at 390 px — no change needed unless a larger unit is wanted (\text{m/s} would be bigger).
-- [Minor] Worked example step 4 — "converted to m/s" is the unit as a plain word in prose; it is untouched reviewed text — make it $\text{m/s}$ when the lesson is next edited.
+(none)
 
 ## Checked
-- Delta: only the substitution unit notation in the train's-horn example changed. Opened fy5-14-example-390-1.png and -2.png: the rows stay aligned at the equals signs, nothing is clipped or overflowing, and the nested units are readable.
-- The rest of the page was not affected by the change (no figures or layout touched).
+- Diff read for en fy5-14 (one sentence in the solution); layout unaffected by a same-length phrase swap. No capture needed beyond the diff.
+- Delta: one wording change in the transfer task's solution (Reasonableness): 'huojuvan' -> 'korkeuden vaihtelevan' / 'the pitch vary'. Text only; no layout, figure or formula touched. Wording is natural and unambiguous; plain-language ('pitch') matches the unit's glossary use.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: fdb52cc8dedcff71
+CONTENT-HASH: 97fc50d03cb5078c
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- delta review, hash fdb52cc8dedcff71: the only change is the unit notation inside the fractions of the Doppler worked example (m/s to stacked \tfrac{m}{s}).
-- Opened fy5-14-example-390-2.png (stage 5 Sijoitus: both f_1 and f_2 chains render as aligned rows, units upright, stacked m/s legible and not clipped or overflowing at 390 px) and fy5-14-example-390-1.png (surrounding stages, layout intact).
+- Diff read for fi-easy fy5-14 (one sentence in the solution); layout unaffected by a same-length phrase swap. No capture needed beyond the diff.
+- Delta: one wording change in the transfer task's solution (Reasonableness): 'huojuvan' -> 'korkeuden vaihtelevan' / 'the pitch vary'. Text only; no layout, figure or formula touched. Wording is natural and unambiguous; plain-language ('pitch') matches the unit's glossary use.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -253,8 +253,8 @@ The turning effect is decided by the **line of action** of the force, the straig
 
 ## Formula: Moment of a force
 The moment of a force about the axis of rotation is the product of the magnitude of the force and its lever arm:
-```latex
-M = F r
+```kaavat
+moment of a force :: M = F r
 ```
 where $M$ is the moment of the force ($\text{Nm}$), $F$ the magnitude of the force ($\text{N}$) and $r$ the lever arm of the force, that is the perpendicular distance from the axis of rotation to the line of action ($\text{m}$). The unit of moment is the newton metre $\text{Nm}$. It is not the same thing as the unit of energy, the joule, even though both are a product of a newton and a metre: in a moment the distance is perpendicular to the force, in work it is a displacement in the direction of the force.
 
