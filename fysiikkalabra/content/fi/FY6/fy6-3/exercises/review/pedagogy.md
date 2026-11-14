@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 593f504a543bc1e6
+CONTENT-HASH: b00b18d0b241bb39
+SCOPE: delta added-exercise from 593f504a543bc1e6 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- exercises.json:147 — option D (flat line at 2,0 V, "the number of R drawn as a voltage") is a contrived slip nobody makes; a more realistic distractor is a line through the origin with R = 2,0 Ω slope (steep), or a line not through the origin.
-- exercises.json:118 — the feedback of A and B quotes coordinates the student can only read from the figure; fine, but add the unit "kΩ" to the A feedback line "U : I = 2,0 kΩ" check for 2,0 mA (1,0 kΩ) so the contrast is shown.
-- solutions.md:193 — "Kuvaajan lukeminen" paragraph repeats the previous one; merge to stay short on a phone.
+- fy6-3-L1-10 uses the same formula and nearly the same wire as L1-04; the new element is the table lookup. Accepted, since reading MAFY is a separate skill. The solution's Vastaus line repeats the resistivity already given in Annettu; drop the last sentence.
 
 ## Checked
-- Distractors: curve A catches the chapter's warned mistake (R grows with U, a curved line), B the inverted ratio I : U, D the value-versus-slope confusion.
-- Correct option not identifiable by form: figures only, no text differences; A shares the point (4,0 mA; 8,0 V) with C so a one-point check fails.
-- Figure descriptions (figcat) give axes, scales, grid and the points, same information as the figure; they do not name the right answer outside the option.
-- Numbers: 2,0 kΩ * 4,0 mA = 8,0 V; B 0,50 kΩ; A 1,0 kΩ at 2,0 mA - correct.
-- Within the lesson (ominaiskäyrä, Ohm's law); longest formula 247 px.
-- Text only (no renders: packet screenshots were empty; I measured widths of the model-solution formulas with KaTeX in Chromium at 17 px, 390 px viewport).
+- L1-10: situation then question, a wire in a circuit is recognisable; the lookup is stated (MAFY, table name in the hint), so no trap.
+- Level 1 fits: one formula R = ρl : A and one unit conversion (mm² to m²), explained in the solution.
+- Solution step by step: given, principle (proportional to l, inversely to A), formula, conversion, substitution, 0,447 Ω, two figures; unit and per-metre sanity checks are correct (0,0112 Ω/m).
+- Answer 0,45 Ω with tolerance 0.03 accepts 0,447 and a student using 1,7 · 10^-8 (0,453).
+- Does not repeat the worked example; the L1 set (calculation, concept, graph, reasoning) stays mixed.
+- Finnish and the case after number and unit are correct.

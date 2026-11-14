@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: a1a0baded87547f2
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 70401639c33a7a24
+SCOPE: delta added-exercise from a1a0baded87547f2 base 8f23aa7ae3bd
 
 ## Blocking
 (none)
@@ -10,9 +9,11 @@ Round 1
 (none)
 
 ## Checked
-- New task L1-09 (true/false, five statements) compared with content/fi: id, level, kind, answer, unit, tolerance, correct flags, choice/statement/order structure and every number identical; 1 true, 2 false, 3 false, 4 false, 5 true; Q = 1.2 mC, W = 7.2 mJ (half of QU = 14.4 mJ), 24 V gives 28.8 mJ.
-- All 21 tasks of the set compared with fi by script (non-text fields): identical apart from translated table captions, column heads and text answers.
-- solutions.md: all numbers in the same order as fi (decimal separator normalised); formulas, LaTeX and the stated reasoning unchanged.
-- Physics of the new task recomputed independently; agrees with fi and with the key.
-- English: decimal point, natural English, course terms consistent.
-- No fixes were needed. check_i18n.py en: 0 errors; build.py fy6-13: ok.
+- Delta: only L1-10 and L2-08 judged; the rest unchanged per `reviews.py added_exercises`.
+- L1-10: parallel-plate capacitor C = ε0 εr A : d with polyethylene εr = 2.3 (MAFY); recomputed 5.091 nF = answers.py; conversions cm² → m² and mm → m right; 5.1 nF inside 5 %; table editions with εr 2.25–2.4 give 4.98–5.31 nF, all inside the tolerance. Air comparison (2.2 nF) recomputes.
+- L1-10 principle: capacitance depends only on construction; the dielectric multiplies C by εr — consistent with the glossary definition.
+- L2-08: figure ex-qu2 (figures.py) is a line from the origin to (120 µC; 8 V) on 20 µC / 1 V gridlines, the end point on gridlines; nothing gives C or W away.
+- L2-08 recomputed: C = Q : U = 15 µF; W = ½CU² = ½ · 15 µF · (7.0 V)² = 367.5 µJ = answers.py; 370 µJ is 0.7 % off, inside 2 %.
+- L2-08 reasoning: constant Q/U so any point of the line gives C (correct); check via ½QU with Q = 105 µC gives the same, and W < QU as it should.
+- Both solutions complete: given/asked, principle with reason, symbolic formulas before numbers, conversions, rounding reasons, reasonableness checks.
+- Scope: capacitor and its energy, no connections or exponentials (scope notes respected).
