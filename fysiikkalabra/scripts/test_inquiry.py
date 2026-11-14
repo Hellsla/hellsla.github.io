@@ -188,7 +188,11 @@ def page_form(pg, b, url, acts, page):
           and pg.evaluate("(() => { const x = document.getElementById('exit'), e = document.getElementById('exercises'); return !x || !!(e.compareDocumentPosition(x) & 4); })()"), str(order))
     if any(a["stage"] == "ennusta" for a in acts):
         fold = pg.locator("#ennusta details.fold")
-        check("Ennusta sits in a box that starts closed", fold.count() == 1 and not fold.evaluate("(d) => d.open") and pg.locator("#ennusta .fold-body").is_hidden())
+        req = pg.locator("#ennusta fieldset.choice:not(details.opt *)").count()
+        check("the first prediction is always in view; the others wait in a box that starts closed, none for one (teacher 2026-11-13, 8h)",
+              pg.locator("#ennusta fieldset.choice").first.is_visible() if req == 1 and not fold.count() else
+              (fold.count() == 1 and not fold.evaluate("(d) => d.open") and pg.locator("#ennusta .fold-body").is_hidden()
+               and pg.locator("#ennusta fieldset.choice:not(details *)").count() == 1 and pg.locator("#ennusta fieldset.choice:not(details *) button.commit").is_visible()))
     sim_act = next((a for a in acts if a["type"] == "sim"), None)
     if sim_act:
         hidden = pg.evaluate("[...document.querySelectorAll('#sim-root canvas, #sim-root input, #sim-root select, #sim-root button')].filter((e) => e.closest('details:not([open])')).length")
@@ -531,7 +535,7 @@ nos = [int(x) for x in re.findall(r'<span class="toc-no" aria-hidden="true">(\d+
 heads = [int(x) for x in re.findall(r'<section class="stage[^"]*" id="[^"]+"[^>]*><h2><span class="stage-no" aria-hidden="true">(\d+)</span>', page_html)]
 check("every chip in the bar, Tehtävät too, has its number, and the numbers run 1, 2, 3 … in page order like the stage headings (teacher 2026-11-06)",
       nos == list(range(1, len(nos) + 1)) and nos == heads and nav_html.count('<a href="#') == len(nos) and '<a href="#exercises"><span class="toc-no"' in nav_html, (nos, heads))
-check("Ennusta is a closed box", re.search(r'<section class="stage" id="ennusta"[^>]*><h2>.*?</h2><details class="fold" data-fold="ennusta">', page_html) is not None)
+check("Ennusta shows the first prediction and keeps the others in a closed box (8h)", re.search(r'<section class="stage" id="ennusta"[^>]*><h2>.*?</h2>(?:(?!<details class="fold").)*?<fieldset class="choice[^>]*>.*?</fieldset>(?:(?!<details class="fold").)*?<details class="fold" data-fold="ennusta">', page_html, re.S) is not None)
 check("no old names on the page", not any(x in page_html for x in ("Herätä kiinnostus", "Lähtölippu", ">Selitä<")))
 _ex = json.loads((ROOT / "content/fi/FY3/fy3-2/exercises/exercises.json").read_text()); _lv = [len(_ex[f"level{k}"]) for k in (1, 2, 3)]
 check(f"exercises and exit ticket kept ({'/'.join(map(str, _lv))}, 1 item)", page_html.count('class="level"') == 3 and page_html.count("<li>$(s, F)$-kuvaajassa") == 1
@@ -558,8 +562,8 @@ with sync_playwright() as pw:
 
     # the Ennusta box: closed at first, opened by its summary
     fold = pg.locator("#ennusta details.fold")
-    check("predictions hidden in a closed box at first", not fold.evaluate("(d) => d.open") and not pg.locator("#pred-1 button.commit").is_visible())
-    fold.locator(":scope > summary").click(); check("the summary opens the box", fold.evaluate("(d) => d.open") and pg.locator("#pred-2 button.commit").is_visible())
+    check("the first prediction is in view, the others hidden in a closed box at first", not fold.evaluate("(d) => d.open") and pg.locator("#pred-2 button.commit").is_visible() and not pg.locator("#pred-3 button.commit").is_visible() and not pg.locator("#pred-1 button.commit").is_visible())
+    fold.locator(":scope > summary").click(); check("the summary opens the box", fold.evaluate("(d) => d.open") and pg.locator("#pred-3 button.commit").is_visible())
     opt1 = pg.locator("details.opt:has(#pred-1)")   # pred-1 is optional in the pilot: closed until the student opens it
     check("an optional prediction waits in its closed box", not opt1.evaluate("(d) => d.open") and not pg.locator("#pred-1 button.commit").is_visible())
     opt1.locator(":scope > summary").click(); check("the optional box opens", pg.locator("#pred-1 button.commit").is_visible())
