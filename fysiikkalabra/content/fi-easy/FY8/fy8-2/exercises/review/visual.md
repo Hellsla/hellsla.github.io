@@ -1,26 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e7c7b458ee26ff45
-Mode: delta
-Round: 2
+CONTENT-HASH: f1d192fbab3eca82
+SCOPE: delta added-exercise from e7c7b458ee26ff45 base f6ae5d507c79
 
 ## Blocking
 (none)
 
-## Fixed
-- fy8-2-L1-08: the chain is now split ("that is" / "eli"); at 390 px every formula ends by 354 px, no clipping.
-
 ## Polish
-- [Minor] fy8-2-L2-08 option order — the build shows the options as B, A, D, C, so the letters in the labels and in the solution run out of order — keep the letters in display order or name the options without letters.
-- [Minor] fy8-2/pick-* in the option cards — scale numbers are about 8 px at 390 px because the figure sits in a padded card — widen the card figure or enlarge the tick type slightly.
-- [Minor] fy8-2/pick-* alt text — a 50-word description sits inside every radio label, so a screen reader reads it with the option name — acceptable; a shorter label name for the radio would help.
+- [Minor] fy8-2-L3-06 symbols — $E_\text{g}$ (vihreä) and $E_\text{a}$/$E_\text{y}$ mix colour and state subscripts; a note of what g and v stand for would help.
+- [Minor] fy8-2-L2-09 Kuvaajan lukeminen — "Sininen viiva on viiva, joka on lähimpänä arvoa" is clumsy: "Sininen viiva on lähimpänä arvoa $436\,\text{nm}$".
 
 ## Checked
-- Round 2: re-rendered fy8-2-L1-08 at 390 px: /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/r2-fi-easy-L1-08.png (opened); fits, reads cleanly.
-- Own scratch script, 390 px, feedback and solution open: /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/fi-easy-fy8-2-fy8-2-L2-08-0.png, -1.png, -2.png (all three tiles read).
-- The four option figures fy8-2/pick-* at 2.5x: /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/fi-easy-pick-0.png to fi-easy-pick-3.png (lines at 413 and 496 nm, the 653 nm line in B, black band to 496 nm in D, emission lines in A all match the descriptions and the solution).
-- Changed tasks L1-08 and L3-01 at 390 px: /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/oldsheet-fi-easy.png; L1-08 overflow measured in the browser (right edge 423 px).
-- Standard captures review/shots/ were absent for this hash (packet: STALE or MISSING), so the scratch captures above are what I judged; not opened: any figure of the lesson itself (exercises-only review).
-- Text of the new task: situation first, question last, LaTeX units with thin space, decimal comma correct; feedback and answer boxes open inside the card without horizontal overflow (except L1-08 above).
+- review/shots/fy8-2-open-exercises-L2-1280-12.png, -13 (L2-09 with figure lamp-spectrum, full solution), -L3-1280-9, -10 (L3-06 parts a to c, model answer). 1280 px captures; 390 px not opened.
+- Figure lamp-spectrum: black ground, scale in nm with ticks every 10 nm, five lines at the described places, axis label in LaTeX; the figure does not state the values asked for.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

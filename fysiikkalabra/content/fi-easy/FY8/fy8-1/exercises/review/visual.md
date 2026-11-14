@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5e7e04fa3110d92d
-Mode: delta
-Round: 1
+CONTENT-HASH: a57efd1302bef73d
+SCOPE: delta added-exercise from 5e7e04fa3110d92d base 5a45b28682e8
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] fy8-1-L2-09 Vastaus — "kolme merkitsevää numeroa; luettu taajuus on kahden merkitsevän numeron tarkkuudella" contradicts itself — say the answer is $430\,\text{nm}$ (two figures) or explain that 428 is an intermediate value.
+- [Minor] fy8-1-L2-08 Kaava — the check line is more than the task needs; fine as is.
 
 ## Checked
-- Own scratch script, 390 px, every feedback and solution open: captures /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/fi-easy-fy8-1-fy8-1-L1-09-0.png, -1.png, -2.png (all three tiles, new task fy8-1-L1-09 read in full).
-- Changed existing tasks L3-01 and L3-02 at 390 px: /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/oldsheet-fi-easy.png (task heads only: the new paragraph breaks read situation first, question last, units and decimal sign correct).
-- Standard captures review/shots/ were absent for this hash (packet: STALE or MISSING), so the scratch captures above are what I judged; not opened: any figure of the lesson itself (exercises-only review).
-- Text of the new task: situation first, question last, LaTeX units with thin space, decimal comma correct; feedback and answer boxes open inside the card without horizontal overflow.
+- review/shots/fy8-1-open-exercises-1280-11.png (L1-10 hint, full solution), -L2-1280-12, -13, -14 (L2-08 and L2-09 with figure kuvaaja-ab, full solutions). Captures are 1280 px with every solution open; 390 px not opened, chains wrap by the shared mathlayout.
+- Figure kuvaaja-ab: axes with units, A and B distinct, cut-off points marked, readable ticks; values 2,7 eV and 7,0 · 10^14 Hz readable from it.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
