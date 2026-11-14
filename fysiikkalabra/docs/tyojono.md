@@ -365,10 +365,9 @@ prioriteetti (kriittinen, merkittävä tai pieni) ja tarvittava tarkistus korjau
 varmennetut virheet, mahdolliset ongelmat ja vapaaehtoiset parannusehdotukset. Oppitunti, jolla ei ole korjattavaa,
 merkitään hyväksytyksi.
 
-Koordinaattorin huomio: työ on laaja (113 lukua), joten se tehdään kurssi kerrallaan omissa ketjuissaan
-(`/quality-audit <id> --audit-only`, budjetit `.claude/commands/lesson.md`). Opettaja päättää aloitusajankohdan ja
-järjestyksen suhteessa kohtiin 13 ja 14; raporttiketjut eivät muuta jaettuja tiedostoja, joten ne voivat kulkea
-niiden rinnalla.
+**Jonon viimeinen kohta** (opettaja 2026-11-14): aloitetaan vasta, kun kaikki muut jonon kohdat on tehty. Työ on laaja
+(113 lukua), joten se tehdään kurssi kerrallaan omissa ketjuissaan (`/quality-audit <id> --audit-only`, budjetit
+`.claude/commands/lesson.md`).
 
 ## Kirjattu päätös: teorian taitto, vaihtoehto B (opettaja 2026-11-14)
 
