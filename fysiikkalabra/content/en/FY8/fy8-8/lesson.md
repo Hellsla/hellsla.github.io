@@ -159,8 +159,8 @@ In **alpha decay**, an alpha particle, a helium nucleus ${}^{4}_{2}\text{He}$ wi
 In **beta decay**, the nucleus has too many or too few neutrons compared with its protons. In beta minus decay, a neutron of the nucleus changes into a proton, and an electron and an antineutrino leave the nucleus. The electron was not in the nucleus beforehand; it is created in the decay. In beta plus decay, a proton changes into a neutron, and a positron, the antiparticle of the electron, and a neutrino leave the nucleus. Beta decay is caused by the weak interaction.
 
 Related to beta decay is **electron capture**: the nucleus captures an electron from the innermost electron shell of the atom, a proton changes into a neutron, and an electron neutrino ${}^{0}_{0}\nu_\text{e}$ leaves the nucleus. In general
-```latex
-{}^{A}_{Z}\text{X} + {}^{0}_{-1}\text{e} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{0}\nu_\text{e}
+```kaavat
+electron capture :: {}^{A}_{Z}\text{X} + {}^{0}_{-1}\text{e} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{0}\nu_\text{e}
 ```
 where X is the parent nucleus, Y the daughter nucleus and $Z$ the atomic number. For example, ${}^{7}_{4}\text{Be} + {}^{0}_{-1}\text{e} \to {}^{7}_{3}\text{Li} + {}^{0}_{0}\nu_\text{e}$. The nucleus changes as in beta plus decay ($Z - 1$), and capture is possible even when there is not enough energy to create a positron.
 
@@ -283,16 +283,16 @@ For example, cobalt-60 decays by beta minus decay to an excited state of nickel-
 
 ## Formula: Decay equations
 In a decay equation, both the **mass number**, the total number of nucleons, and the **charge number**, the sum of the subscripts, are conserved. The electron is written ${}^{0}_{-1}\text{e}$ and the positron ${}^{0}_{+1}\text{e}$, because their mass number is zero and their charge is $-e$ or $+e$. Alpha decay is
-```latex
-{}^{A}_{Z}\text{X} \to {}^{A-4}_{Z-2}\text{Y} + {}^{4}_{2}\text{He}
+```kaavat
+alpha decay :: {}^{A}_{Z}\text{X} \to {}^{A-4}_{Z-2}\text{Y} + {}^{4}_{2}\text{He}
 ```
 beta minus decay
-```latex
-{}^{A}_{Z}\text{X} \to {}^{A}_{Z+1}\text{Y} + {}^{0}_{-1}\text{e} + \bar{\nu}
+```kaavat
+$\beta^-$ decay :: {}^{A}_{Z}\text{X} \to {}^{A}_{Z+1}\text{Y} + {}^{0}_{-1}\text{e} + \bar{\nu}
 ```
 beta plus decay
-```latex
-{}^{A}_{Z}\text{X} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{+1}\text{e} + \nu
+```kaavat
+$\beta^+$ decay :: {}^{A}_{Z}\text{X} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{+1}\text{e} + \nu
 ```
 and gamma decay
 ```latex

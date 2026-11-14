@@ -372,8 +372,8 @@ missä $D$ on absorboitunut annos ($\text{Gy}$), $E$ absorboitunut energia ($\te
 
 ### Ekvivalenttiannos ja säteilyn painotuskerroin
 Elimen tai kudoksen $\text{T}$ ekvivalenttiannos ottaa huomioon säteilylajin:
-```latex
-H_\text{T} = w_\text{R} D_\text{T}
+```kaavat
+ekvivalenttiannos :: H_\text{T} = w_\text{R} D_\text{T}
 ```
 missä $H_\text{T}$ on kudoksen ekvivalenttiannos ($\text{Sv}$), $w_\text{R}$ säteilyn painotuskerroin (paljas luku) ja $D_\text{T}$ kudoksen absorboitunut annos ($\text{Gy}$). Painotuskerroin on säteilysuojelussa sovittu pyöristetty arvo. Se kuvaa, kuinka paljon haitallisempi säteilylaji on samalla absorboituneella annoksella kuin gammasäteily, mutta se ei ole tarkka mitattu vaurioiden suhde jokaisessa solussa. Neutronien kerroin riippuu niiden energiasta.
 

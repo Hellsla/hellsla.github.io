@@ -1022,8 +1022,8 @@ A photon has no rest mass, and in a vacuum it always travels at the speed of lig
 
 ## Formula: Photon momentum
 Although a photon has no mass, it has a momentum that depends on its energy:
-```latex
-p = \frac{E}{c} = \frac{h}{\lambda}
+```kaavat
+photon momentum :: p = \frac{E}{c} = \frac{h}{\lambda}
 ```
 where $p$ is the momentum of the photon ($\text{kg}\cdot\text{m/s}$), $E = hf = \tfrac{hc}{\lambda}$ the energy of the photon ($\text{J}$), $c = 2.998 \cdot 10^8\,\text{m/s}$ the speed of light, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ the Planck constant and $\lambda$ the wavelength ($\text{m}$). The unit works out: $\tfrac{\text{J}\,\text{s}}{\text{m}} = \tfrac{\text{kg}\cdot\text{m}^2/\text{s}^2 \cdot \text{s}}{\text{m}} = \text{kg}\cdot\text{m/s}$. The momentum of a photon of visible light is small: at the wavelength $500\,\text{nm}$ it is ${1.3 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}}$. The momentum of an X-ray photon of wavelength $0.0711\,\text{nm}$ is about $7000$ times as large, ${9.3 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}}$. A short wavelength thus means a large energy and a large momentum.
 

@@ -168,8 +168,8 @@ Ytimessä ${}^{A}_{Z}\text{X}$ on $Z$ protonia ja $N = A - Z$ neutronia. Massava
 \Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi}
 ```
 Tässä $m_\text{H}$ on vetyatomin ${}^{1}\text{H}$ massa, $m_\text{n}$ on neutronin massa ja $m_\text{atomi}$ on atomin ${}^{A}_{Z}\text{X}$ massa. Ytimen sidosenergia on massavajetta vastaava energia:
-```latex
-E_\text{B} = \Delta m\,c^2
+```kaavat
+ytimen sidosenergia :: E_\text{B} = \Delta m\,c^2
 ```
 Tässä $E_\text{B}$ on sidosenergia ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ on valon nopeus. Elektronien omaa sidosenergiaa atomissa ei oteta huomioon. Se on enintään satoja kiloelektronivoltteja. Raskaimmillakin atomeilla se on alle tuhannesosa ytimen sidosenergiasta.
 
@@ -190,8 +190,8 @@ Siis $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Kun massavaje on atomimas
 
 ### Sidosenergia nukleonia kohti
 Ytimien sidoksen lujuutta vertaillaan **sidosenergialla nukleonia kohti**:
-```latex
-\frac{E_\text{B}}{A}
+```kaavat
+ytimen sidososuus :: \frac{E_\text{B}}{A}
 ```
 Tässä $A$ on massaluku eli nukleonien määrä. Kuvaajassa suure on laskettu atomimassoista $32$ ytimelle. Kevyillä ytimillä arvo kasvaa jyrkästi, koska jokaisella nukleonilla on yhä enemmän naapureita, joihin vahva vuorovaikutus sitoo sen. Helium-4 on poikkeuksellisen tiiviisti sidottu. Arvo on suurin, noin $8{,}8\,\text{MeV}$, rauta-56:n ja nikkeli-62:n kohdalla. Raskaammilla ytimillä arvo pienenee loivasti. Vahva vuorovaikutus vaikuttaa vain lähinaapureiden välillä. Protonien sähköinen hylkiminen sen sijaan ulottuu koko ytimen yli.
 
@@ -281,8 +281,8 @@ Kuvaajasta näkee, milloin ydinreaktio vapauttaa energiaa. Jos syntyvät ytimet 
 
 ### Reaktioenergia
 **Ydinreaktiossa** ytimet muuttuvat: ydin hajoaa, tai ytimeen osuu toinen ydin tai hiukkanen. Reaktiossa massaluku ja varausluku säilyvät eli pysyvät samoina (luku *Atomiydin ja radioaktiivinen hajoaminen*). Massa ei kuitenkaan säily. Reaktioenergia on
-```latex
-Q = (m_\text{alku} - m_\text{loppu})\,c^2
+```kaavat
+ydinreaktiossa vapautuva energia :: Q = (m_\text{alku} - m_\text{loppu})\,c^2
 ```
 Tässä $m_\text{alku}$ on lähtöaineiden massojen summa ja $m_\text{loppu}$ on syntyvien hiukkasten massojen summa. Kun $Q > 0$, energiaa vapautuu. Se muuttuu syntyvien hiukkasten liike-energiaksi ja gammasäteilyksi. Kun $Q < 0$, reaktio tarvitsee energiaa. Kaavaan lasketaan kummallakin puolella kaikkien hiukkasten massat. Taulukoiden atomimassoihin sisältyvät myös atomien elektronit. Alfahajoamisessa ja useimmissa ydinreaktioissa elektroneja on kummallakin puolella yhtä monta. Silloin atomimassat voi sijoittaa kaavaan suoraan. Esimerkiksi uraani-238:n alfahajoamisessa ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$ massa pienenee $0{,}004583\,\text{u}$. Siksi $Q = 0{,}004583 \cdot 931{,}5\,\text{MeV} \approx 4{,}27\,\text{MeV}$.
 

@@ -359,8 +359,8 @@ Taulukossa ovat tämän luvun hiukkasten luvut: protoni $p$, neutroni $n$, antip
 
 ### Energia ratkaisee, voiko hiukkanen hajota
 Hiukkanen voi hajota itsestään vain kevyemmiksi hiukkasiksi. Hajoamisessa vapautuva energia on
-```latex
-Q = (m_\text{alku} - m_\text{loppu})\,c^2
+```kaavat
+ydinreaktiossa vapautuva energia :: Q = (m_\text{alku} - m_\text{loppu})\,c^2
 ```
 missä $m_\text{alku}$ on hajoavan hiukkasen massa ja $m_\text{loppu}$ syntyvien hiukkasten massojen summa (luku *Massavaje ja ytimen sidosenergia*). Hajoaminen voi tapahtua vain, kun $Q > 0$ ja kaikki kolme lukua säilyvät. Nämä ovat välttämättömiä ehtoja mutta eivät aina riittäviä: reaktion pitää myös olla jonkin vuorovaikutuksen välitettävissä, ja muut säilymislait voivat silti estää sen. Hiukkasten massat ilmoitetaan yksikössä $\tfrac{\text{MeV}}{c^2}$, jolloin $c^2$ supistuu ja $Q$ saadaan suoraan megaelektronivoltteina.
 

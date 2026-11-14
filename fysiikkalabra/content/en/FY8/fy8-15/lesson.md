@@ -359,8 +359,8 @@ The table gives the numbers for the particles of this chapter: the proton $p$, n
 
 ### Energy decides whether a particle can decay
 A particle can decay on its own only into lighter particles. The energy released in the decay is
-```latex
-Q = (m_\text{initial} - m_\text{final})\,c^2
+```kaavat
+energy released in a nuclear reaction :: Q = (m_\text{initial} - m_\text{final})\,c^2
 ```
 where $m_\text{initial}$ is the mass of the decaying particle and $m_\text{final}$ is the sum of the masses of the particles produced (chapter *Mass defect and nuclear binding energy*). The decay can happen only when $Q > 0$ and all three numbers are conserved. These are necessary but not always sufficient conditions: the reaction must also be mediated by some interaction, and other conservation laws can still prevent it. The masses of particles are given in the unit $\tfrac{\text{MeV}}{c^2}$, so $c^2$ cancels and $Q$ comes out directly in megaelectronvolts.
 

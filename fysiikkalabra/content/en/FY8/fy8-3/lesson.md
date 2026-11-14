@@ -187,8 +187,8 @@ The model was a great step forward. The hydrogen energy levels obtained from it 
 
 ## Formula: Energy levels of the hydrogen atom and the photon of a transition
 The energy levels of the hydrogen atom are
-```latex
-E_n = -\frac{13.6\,\text{eV}}{n^2}
+```kaavat
+electron energy in the hydrogen atom :: E_n = -\frac{13.6\,\text{eV}}{n^2}
 ```
 where $E_n$ is the energy of level $n$ and $n = 1, 2, 3, \ldots$ is the number of the level. The expression is given information here, and it corresponds to the measured hydrogen spectrum.
 
