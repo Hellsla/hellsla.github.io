@@ -228,7 +228,6 @@
     "stage_sovella": "Esimerkit",
     "stage_tarkista": "Testaa ja arvioi",
     "nav_tarkista": "Testaa ja arvioi",
-    "lead_sovella": "Kun olet lukenut teorian, tee ohjatut esimerkit. Ensin katsot mallilaskun vaihe vaiheelta. Sitten teet valinnat itse. Vihjeet auttavat, jos jäät jumiin.",
     "example_n": "Esimerkki {{n}}",
     "task_choice": "Käsitetehtävä",
     "task_numeric": "Laskutehtävä",

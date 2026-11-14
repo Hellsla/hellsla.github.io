@@ -257,8 +257,10 @@ ja 8 (avattavat Virhekäsitys ja Tiivistelmä) pysyvät ennallaan ja mahtuvat v�
 toleransseihin, tallennusavaimiin ja palautustiedoston muotoon ei kosketa. Mergen jälkeen katsotaan mainin CI-ajo.
 
 ### U4. Kaksi tekstiä pois (pieni, ensin)
-- Teorian alun rivi "Et ole vielä vastannut: siirry ennusteeseen" poistetaan. Sama muistutus jää Tutki-vaiheen kokeen
-  kohdalle ja Palaa ennusteisiisi -laatikkoon.
+**Varattu: claude/u4-kaksi-tekstia-pois**
+- ~~Teorian alun rivi "Et ole vielä vastannut: siirry ennusteeseen" poistetaan.~~ Opettajan päätös 14.11. (koordinaattorin
+  kautta): riviä ei poisteta, koska Teorian alussa ei ole omaa riviä; muistutus (`reflect_not_answered`) jää Tutki-vaiheen
+  kokeen "Ennustit"-laatikkoon ja Palaa ennusteisiisi -laatikkoon (Teorian lopussa). Tästä ei muuteta koodia.
 - Esimerkit-vaiheen johdanto ("Kun olet opiskellut luvun teorian…", lang `inquiry.lead_<vaihe>`) poistetaan kaikista
   kielistä, kuten Testaa ja arvioi -vaiheen johdanto 13.11.
 - Samassa PR:ssä `CLAUDE.md`:n Lesson page 5 ("Esimerkit opens with one line…") korjataan.
