@@ -101,6 +101,7 @@ def as_html(text, extra="Lisätieto"):
     return FENCE.sub(one, text)
 
 
+BREAK = re.compile(r"\\\\(?:\[\s*-?[\d.]+\s*(?:pt|em|ex|mm|cm)\s*\])?")   # a line break `\\` with its optional spacing `\\[4pt]` (teacher's work queue 3b: the spacing is no text of the formula's row)
 JOINERS = {r"\text{ja}", r"\text{and}", r"\text{tai}", r"\text{or}"}
 
 
@@ -112,7 +113,7 @@ def canonical(text):
     def lines(tex):
         tex = re.sub(r"\\(?:begin|end)\{aligned\}", "", tex)
         parts = []
-        for line in re.split(r"\\\\", tex):
+        for line in re.split(BREAK, tex):
             for p in re.split(r",?\s*\\q?quad\s*", line.replace("&", "")):
                 p = " ".join(p.split()).rstrip(",").strip()
                 if p and p not in JOINERS: parts.append(p)   # a joining word between two formulas of a row (Q = sm ja Q = rm) is no formula
