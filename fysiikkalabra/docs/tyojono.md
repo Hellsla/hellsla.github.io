@@ -225,6 +225,30 @@ muuttunut sen jälkeen (MAFY-kaavat, käsitteet, korjaukset), joten ne tehdään
 vihko tehdään vasta, kun sen kohdan 3 MAFY-kaavat on yhdistetty, ettei sitä tarvitse tehdä kahdesti. Rakenna sivusto
 vihkojen jälkeen (Vihkot-sivu).
 
+## 13. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
+
+Varattu: claude/simulaatioiden-kayttoliittyma
+
+Mittaus, päätökset ja rajaukset: `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. Matalalla kannettavalla
+(1366×650) simulaation kuva kapenee 384 px:iin ja sen tekstit noin 7 px:iin; puhelimella kuva vierii pois säätimiä
+käytettäessä. Osat tässä järjestyksessä, kukin oma pull requestinsa. PR 1–PR 5 muuttavat jaettuja tiedostoja
+(`templates/`, `scripts/`): ne tehdään yksin, yksi kerrallaan, ja yhdistetään ennen sisältömuutoksia. Pilotit (PR 2,
+PR 4) pysähtyvät opettajan hyväksyntään ennen yleistystä. Yksikään osa ei muuta sim.js-tiedostoja, simulaatioiden
+lang-tekstejä tai fysiikkaa.
+
+- **PR 1:** kuvan todellinen leveys tekstikoon perustaksi (`sim-embed.js`) ja selaintesti 1366×650 (kuvan tekstit
+  vähintään 10 px) omina CI-jobeinaan.
+- **PR 2:** pilotti fy4-1: lukemat kuvan alle, toistorivi yhdelle riville, `.lab-side .sim-canvas`-säännön 25 rem:n
+  varaus pienemmäksi, kuvausteksti pois kokeiden vierestä.
+- **PR 3:** sama asettelu tyypeille A–C (aikaohjatut, jatkuvat, staattiset); tyyppi D, fy1-2, fy1-4 ja poikkeavat
+  jäävät nykyiselleen.
+- **PR 4:** tarttuva kuva puhelimella, pilotti fy4-1 ja yksi staattinen simulaatio.
+- **PR 5:** canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus.
+
+Myöhemmin kurssi kerrallaan, kunkin luvun seuraavan sisältömuutoksen yhteydessä katselmointeineen: tyyppi D (fy6-5,
+fy6-6, fy6-9, fy6-12, fy6-13, fy6-14), fy1-2:n säätimien ryhmittely, näppäinvaihtoehto raahaukselle, nimien
+yhtenäistäminen (Toisto / Tauko / Alusta) ja toistuvien seliterivien poisto.
+
 ## Kirjattu päätös: luvut ilman käsitekortteja (opettaja 2026-11-13)
 
 Luvut fy3-13, fy3-14, fy3-16 ja fy4-16 jäävät ilman omia kortteja ja alleviivauksia (#526:n siirtojen jälkeen).
