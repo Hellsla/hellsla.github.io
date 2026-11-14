@@ -23,8 +23,7 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
 
 ## Order
 1. ~~`main` green (en/fy1-1 editor at 360 px)~~: done (#534, 2026-11-13; the failure did not recur, the test now names an overflowing element if it does).
-2. Exercise reviews, in course order: FY1, fy4-8, FY5, FY6, FY7. The course's MAFY formulas (queue) go in the same
-   session or right after, never in parallel on the same course.
+2. ~~Exercise reviews FY1, fy4-8, FY5, FY6, FY7~~: done (#537, #555, #540, #556, #557; 2026-11-14).
 3. MAFY formulas for the courses step 2 does not cover: FY8, FY10, FY14.
 4. Fixes to the FY10 investigations and TVT guides after the audit (#536): the eight Major findings first, fy10-liukukitka
    with a science review; Minor findings in a later batch.
