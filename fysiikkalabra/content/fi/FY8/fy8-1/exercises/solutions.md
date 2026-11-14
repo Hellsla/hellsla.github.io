@@ -230,10 +230,10 @@ Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}5
 **Periaate:** Kuvaajan suora esittää valosähköistä yhtälöä $E_\text{k,max} = hf - W$. Kun taajuus tunnetaan, suurin liike-energia luetaan suoralta suoraan pystyakselilta.
 **Kuvaajan lukeminen:** Vaaka-akselilta etsitään taajuus $12 \cdot 10^{14}\,\text{Hz}$ ja noustaan pystysuoraan metallin A suoralle. Suora kohtaa tämän pystyviivan ruudukkoviivojen $2\,\text{eV}$ ja $3\,\text{eV}$ välissä, kolmen kymmenesosan verran alempana kuin $3\,\text{eV}$, eli lukema on noin $2{,}7\,\text{eV}$.
 **Kaava:** Tarkistus lasketaan: $E_\text{k,max} = hf - W = \dfrac{h}{e}\,(f - f_0)$, missä suoran kulmakerroin on $\dfrac{h}{e} = 0{,}4136\,\text{eV}$ jokaista $10^{14}\,\text{Hz}$ kohti ja metallin A suora alkaa vaaka-akselilta rajataajuudelta $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$.
-**Muunnokset:** Ei tarvita: energia luetaan suoraan elektronivoltteina.
-**Sijoitus:** $E_\text{k,max} = 0{,}4136\,\tfrac{\text{eV}}{10^{14}\,\text{Hz}} \cdot (12 - 5{,}56) \cdot 10^{14}\,\text{Hz} = 2{,}66\,\text{eV}$
+**Muunnokset:** Taajuudet lasketaan yksikössä $10^{14}\,\text{Hz}$, jolloin kulmakerroin on $0{,}4136\,\text{eV}$ ja tulos tulee suoraan elektronivoltteina.
+**Sijoitus:** $E_\text{k,max} = 0{,}4136\,\text{eV} \cdot (12 - 5{,}56) = 2{,}66\,\text{eV}$
 **Vastaus:** $E_\text{k,max} \approx 2{,}7\,\text{eV}$ (laskettuna $2{,}66\,\text{eV}$); kuvaajan lukutarkkuus on noin $0{,}1\,\text{eV}$, joten kaksi merkitsevää numeroa riittää.
-**Järkevyys:** Fotonin energia on $hf = 0{,}4136 \cdot 12\,\text{eV} = 4{,}96\,\text{eV}$ ja metallin A irrotustyö noin $2{,}3\,\text{eV}$. Erotus $2{,}7\,\text{eV}$ on positiivinen ja pienempi kuin fotonin energia, kuten pitää.
+**Järkevyys:** Fotonin energia on $hf = 0{,}4136 \cdot 12\,\text{eV} = 4{,}96\,\text{eV}$ ja kuvaajalta luettu $2{,}7\,\text{eV}$ on positiivinen ja pienempi kuin fotonin energia, kuten pitää. Laskettu $2{,}66\,\text{eV}$ vastaa lukemaa.
 
 ## fy8-1-L2-09
 **Annettu:** kuvaaja kahdesta metallista A ja B, $c = 2{,}998 \cdot 10^8\,\text{m/s}$

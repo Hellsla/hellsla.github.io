@@ -230,10 +230,10 @@ The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work functio
 **Principle:** The line of the graph shows the photoelectric equation $E_\text{k,max} = hf - W$. When the frequency is known, the greatest kinetic energy is read from the line directly on the vertical axis.
 **Reading the graph:** Find the frequency $12 \cdot 10^{14}\,\text{Hz}$ on the horizontal axis and go straight up to the line of metal A. The line meets this vertical line between the grid lines $2\,\text{eV}$ and $3\,\text{eV}$, three tenths below $3\,\text{eV}$, so the reading is about $2.7\,\text{eV}$.
 **Formula:** The check is calculated: $E_\text{k,max} = hf - W = \dfrac{h}{e}\,(f - f_0)$, where the slope of the line is $\dfrac{h}{e} = 0.4136\,\text{eV}$ for every $10^{14}\,\text{Hz}$ and the line of metal A starts on the horizontal axis at the threshold frequency $f_0 \approx 5.6 \cdot 10^{14}\,\text{Hz}$.
-**Conversions:** None needed: the energy is read directly in electronvolts.
-**Substitution:** $E_\text{k,max} = 0.4136\,\tfrac{\text{eV}}{10^{14}\,\text{Hz}} \cdot (12 - 5.56) \cdot 10^{14}\,\text{Hz} = 2.66\,\text{eV}$
+**Conversions:** The frequencies are used in units of $10^{14}\,\text{Hz}$, so the slope is $0.4136\,\text{eV}$ and the result comes out directly in electronvolts.
+**Substitution:** $E_\text{k,max} = 0.4136\,\text{eV} \cdot (12 - 5.56) = 2.66\,\text{eV}$
 **Answer:** $E_\text{k,max} \approx 2.7\,\text{eV}$ (calculated $2.66\,\text{eV}$); the graph can be read to about $0.1\,\text{eV}$, so two significant figures are enough.
-**Reasonableness:** The photon energy is $hf = 0.4136 \cdot 12\,\text{eV} = 4.96\,\text{eV}$ and the work function of metal A is about $2.3\,\text{eV}$. The difference $2.7\,\text{eV}$ is positive and smaller than the photon energy, as it must be.
+**Reasonableness:** The photon energy is $hf = 0.4136 \cdot 12\,\text{eV} = 4.96\,\text{eV}$ and the value $2.7\,\text{eV}$ read from the graph is positive and smaller than the photon energy, as it must be. The calculated $2.66\,\text{eV}$ agrees with the reading.
 
 ## fy8-1-L2-09
 **Given:** a graph of two metals A and B, $c = 2.998 \cdot 10^8\,\text{m/s}$
