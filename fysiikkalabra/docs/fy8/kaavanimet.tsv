@@ -36,10 +36,10 @@ fy8-3	280	= -\frac{13{,}6\,\text{eV}}{9} + \frac{13{,}6\,\text{eV}}{4}	= -\frac{
 fy8-3	280	= 1{,}8889\,\text{eV}	= 1.8889\,\text{eV}					
 fy8-3	280	= 1{,}8889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}	= 1.8889 \cdot 1.602 \cdot 10^{-19}\,\text{J}					
 fy8-3	280	= 3{,}0260 \cdot 10^{-19}\,\text{J}	= 3.0260 \cdot 10^{-19}\,\text{J}					
-fy8-3	280	[6pt] hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}	[6pt] hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}					
+fy8-3	280	hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}	hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}					
 fy8-3	280	\cdot 2{,}998 \cdot 10^{8}\,\text{m/s}	\cdot 2.998 \cdot 10^{8}\,\text{m/s}					
 fy8-3	280	= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}	= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}					
-fy8-3	280	[6pt] \lambda = \frac{hc}{E_3 - E_2}	[6pt] \lambda = \frac{hc}{E_3 - E_2}					
+fy8-3	280	\lambda = \frac{hc}{E_3 - E_2}	\lambda = \frac{hc}{E_3 - E_2}					
 fy8-3	280	= \frac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}0260 \cdot 10^{-19}\,\text{J}}	= \frac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.0260 \cdot 10^{-19}\,\text{J}}					
 fy8-3	280	= 6{,}5647 \cdot 10^{-7}\,\text{m}	= 6.5647 \cdot 10^{-7}\,\text{m}					
 fy8-4	1025	p = \frac{E}{c} = \frac{h}{\lambda}	p = \frac{E}{c} = \frac{h}{\lambda}	fotonin liikemäärä	photon momentum	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: p = E/c = h/λ
@@ -52,10 +52,10 @@ fy8-4	1105	hf = \frac{hc}{\lambda}	hf = \frac{hc}{\lambda}
 fy8-4	1105	= \frac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{633 \cdot 10^{-9}\,\text{m}}	= \frac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s}}{633 \cdot 10^{-9}\,\text{m}}					
 fy8-4	1105	\cdot 2{,}998 \cdot 10^{8}\,\tfrac{\text{m}}{\text{s}}	\cdot 2.998 \cdot 10^{8}\,\tfrac{\text{m}}{\text{s}}					
 fy8-4	1105	= 3{,}138 \cdot 10^{-19}\,\text{J}	= 3.138 \cdot 10^{-19}\,\text{J}					
-fy8-4	1105	[6pt] \frac{N}{t} = \frac{P}{hf}	[6pt] \frac{N}{t} = \frac{P}{hf}					
+fy8-4	1105	\frac{N}{t} = \frac{P}{hf}	\frac{N}{t} = \frac{P}{hf}					
 fy8-4	1105	= \frac{1{,}0 \cdot 10^{-13}\,\text{W}}{3{,}138 \cdot 10^{-19}\,\text{J}}	= \frac{1.0 \cdot 10^{-13}\,\text{W}}{3.138 \cdot 10^{-19}\,\text{J}}					
 fy8-4	1105	= 3{,}187 \cdot 10^{5}\,\tfrac{1}{\text{s}}	= 3.187 \cdot 10^{5}\,\tfrac{1}{\text{s}}					
-fy8-4	1105	[6pt] d = \frac{c}{N/t}	[6pt] d = \frac{c}{N/t}					
+fy8-4	1105	d = \frac{c}{N/t}	d = \frac{c}{N/t}					
 fy8-4	1105	= \frac{2{,}998 \cdot 10^{8}\,\text{m/s}}{3{,}187 \cdot 10^{5}\,\tfrac{1}{\text{s}}}	= \frac{2.998 \cdot 10^{8}\,\text{m/s}}{3.187 \cdot 10^{5}\,\tfrac{1}{\text{s}}}					
 fy8-4	1105	= 940{,}8\,\text{m}	= 940.8\,\text{m}					
 fy8-5	268	P \approx \frac{k}{N}	P \approx \frac{k}{N}					
@@ -96,10 +96,10 @@ fy8-8	364	Z' = Z + 1	Z' = Z + 1
 fy8-8	364	\lambda = \frac{hc}{E_\gamma}	\lambda = \frac{hc}{E_\gamma}					
 fy8-8	379	A' = 137	A' = 137					
 fy8-8	379	Z' = 55 + 1 = 56	Z' = 55 + 1 = 56					
-fy8-8	379	[6pt] hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}	[6pt] hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}					
+fy8-8	379	hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}	hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}					
 fy8-8	379	\cdot 2{,}998 \cdot 10^{8}\,\text{m/s}	\cdot 2.998 \cdot 10^{8}\,\text{m/s}					
 fy8-8	379	= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}	= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}					
-fy8-8	379	[6pt] \lambda = \frac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}0600 \cdot 10^{-13}\,\text{J}}	[6pt] \lambda = \frac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.0600 \cdot 10^{-13}\,\text{J}}					
+fy8-8	379	\lambda = \frac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}0600 \cdot 10^{-13}\,\text{J}}	\lambda = \frac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.0600 \cdot 10^{-13}\,\text{J}}					
 fy8-8	379	= 1{,}8740 \cdot 10^{-12}\,\text{m}	= 1.8740 \cdot 10^{-12}\,\text{m}					
 fy8-9	459	N = N_0 \left(\frac{1}{2}\right)^{t/T_{1/2}}	N = N_0 \left(\frac{1}{2}\right)^{t/T_{1/2}}					
 fy8-9	516	A = \lambda N	A = \lambda N	aktiivisuus	activity	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: A = λN
@@ -137,10 +137,10 @@ fy8-10	361	= 2 \cdot 1{,}007825\,\text{u}	= 2 \cdot 1.007825\,\text{u}
 fy8-10	361	+ 2 \cdot 1{,}008665\,\text{u}	+ 2 \cdot 1.008665\,\text{u}					
 fy8-10	361	- 4{,}002603\,\text{u}	- 4.002603\,\text{u}					
 fy8-10	361	= 0{,}030377\,\text{u}	= 0.030377\,\text{u}					
-fy8-10	361	[6pt] E_\text{B} = \Delta m\,c^2 = 0{,}030377\,\text{u} \cdot c^2	[6pt] E_\text{B} = \Delta m\,c^2 = 0.030377\,\text{u} \cdot c^2					
+fy8-10	361	E_\text{B} = \Delta m\,c^2 = 0{,}030377\,\text{u} \cdot c^2	E_\text{B} = \Delta m\,c^2 = 0.030377\,\text{u} \cdot c^2					
 fy8-10	361	= 0{,}030377 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2	= 0.030377 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2					
 fy8-10	361	= 28{,}296\,\text{MeV}	= 28.296\,\text{MeV}					
-fy8-10	361	[6pt] \frac{E_\text{B}}{A} = \frac{28{,}296\,\text{MeV}}{4}	[6pt] \frac{E_\text{B}}{A} = \frac{28.296\,\text{MeV}}{4}					
+fy8-10	361	\frac{E_\text{B}}{A} = \frac{28{,}296\,\text{MeV}}{4}	\frac{E_\text{B}}{A} = \frac{28.296\,\text{MeV}}{4}					
 fy8-10	361	= 7{,}074\,\text{MeV}	= 7.074\,\text{MeV}					
 fy8-11	633	Q = (m_\text{alku} - m_\text{loppu})\,c^2	Q = (m_\text{initial} - m_\text{final})\,c^2					
 fy8-11	633	m_\text{alku} = m_\text{n} + m_\text{U}	m_\text{initial} = m_\text{n} + m_\text{U}					
@@ -199,11 +199,11 @@ fy8-15	431	L_n = L_p + L_e + L_{\bar{\nu}}	L_n = L_p + L_e + L_{\bar{\nu}}
 fy8-15	431	Q = (m_n - m_p - m_e)\,c^2	Q = (m_n - m_p - m_e)\,c^2					
 fy8-15	447	q_n = q_p + q_e + q_{\bar{\nu}}	q_n = q_p + q_e + q_{\bar{\nu}}					
 fy8-15	447	0 = (+1) + (-1) + 0	0 = (+1) + (-1) + 0					
-fy8-15	447	[6pt] B_n = B_p + B_e + B_{\bar{\nu}}	[6pt] B_n = B_p + B_e + B_{\bar{\nu}}					
+fy8-15	447	B_n = B_p + B_e + B_{\bar{\nu}}	B_n = B_p + B_e + B_{\bar{\nu}}					
 fy8-15	447	1 = 1 + 0 + 0	1 = 1 + 0 + 0					
-fy8-15	447	[6pt] L_n = L_p + L_e + L_{\bar{\nu}}	[6pt] L_n = L_p + L_e + L_{\bar{\nu}}					
+fy8-15	447	L_n = L_p + L_e + L_{\bar{\nu}}	L_n = L_p + L_e + L_{\bar{\nu}}					
 fy8-15	447	0 = 0 + 1 + (-1)	0 = 0 + 1 + (-1)					
-fy8-15	447	[6pt] Q = (m_n - m_p - m_e)\,c^2	[6pt] Q = (m_n - m_p - m_e)\,c^2					
+fy8-15	447	Q = (m_n - m_p - m_e)\,c^2	Q = (m_n - m_p - m_e)\,c^2					
 fy8-15	447	= (939{,}565 - 938{,}272	= (939.565 - 938.272					
 fy8-15	447	- 0{,}511)\,\tfrac{\text{MeV}}{c^2} \cdot c^2	- 0.511)\,\tfrac{\text{MeV}}{c^2} \cdot c^2					
 fy8-15	447	= 0{,}782\,\text{MeV}	= 0.782\,\text{MeV}					
@@ -223,8 +223,8 @@ fy8-16	524	H_0 = \frac{v}{d}	H_0 = \frac{v}{d}
 fy8-16	539	z = \frac{\lambda - \lambda_0}{\lambda_0}	z = \frac{\lambda - \lambda_0}{\lambda_0}					
 fy8-16	539	= \frac{679{,}3\,\text{nm} - 656{,}3\,\text{nm}}{656{,}3\,\text{nm}}	= \frac{679.3\,\text{nm} - 656.3\,\text{nm}}{656.3\,\text{nm}}					
 fy8-16	539	= \frac{23{,}0\,\text{nm}}{656{,}3\,\text{nm}} = 0{,}035045	= \frac{23.0\,\text{nm}}{656.3\,\text{nm}} = 0.035045					
-fy8-16	539	[6pt] v = c\,z	[6pt] v = c\,z					
+fy8-16	539	v = c\,z	v = c\,z					
 fy8-16	539	= 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}035045	= 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.035045					
 fy8-16	539	= 10\,506\,\text{km/s}	= 10\,506\,\text{km/s}					
-fy8-16	539	[6pt] H_0 = \frac{10\,506\,\text{km/s}}{150\,\text{Mpc}}	[6pt] H_0 = \frac{10\,506\,\text{km/s}}{150\,\text{Mpc}}					
+fy8-16	539	H_0 = \frac{10\,506\,\text{km/s}}{150\,\text{Mpc}}	H_0 = \frac{10\,506\,\text{km/s}}{150\,\text{Mpc}}					
 fy8-16	539	= 70{,}04\,\tfrac{\text{km/s}}{\text{Mpc}}	= 70.04\,\tfrac{\text{km/s}}{\text{Mpc}}					

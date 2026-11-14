@@ -18,7 +18,7 @@ fy6-2	288	\Delta U_2 = p \cdot U_2 + n \cdot r_2	\Delta U_2 = p \cdot U_2 + n \c
 fy6-2	302	\Delta U_{20}	\Delta U_{20}					
 fy6-2	302	= 0{,}005 \cdot 1{,}50\,\text{V} + 2 \cdot 0{,}01\,\text{V}	= 0.005 \cdot 1.50\,\text{V} + 2 \cdot 0.01\,\text{V}					
 fy6-2	302	= 0{,}0275\,\text{V}	= 0.0275\,\text{V}					
-fy6-2	302	[6pt] \Delta U_2	[6pt] \Delta U_2					
+fy6-2	302	\Delta U_2	\Delta U_2					
 fy6-2	302	= 0{,}005 \cdot 1{,}500\,\text{V} + 2 \cdot 0{,}001\,\text{V}	= 0.005 \cdot 1.500\,\text{V} + 2 \cdot 0.001\,\text{V}					
 fy6-2	302	= 0{,}0095\,\text{V}	= 0.0095\,\text{V}					
 fy6-3	276	R = \frac{U}{I}	R = \frac{U}{I}					
@@ -33,11 +33,11 @@ fy6-4	180	R = R_1 + R_2 + R_3 + \dots	R = R_1 + R_2 + R_3 + \dots	sarjaan kytket
 fy6-4	186	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \dots	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \dots	rinnan kytkettyjen vastusten kokonaisresistanssi	total resistance of resistors in parallel	MAFY	Virtapiirien kaavoja	MAFY: 1/R_kok = Σ(1/R); tunnin merkintä 1/R = 1/R_1 + 1/R_2 + …; R = R_1R_2/(R_1+R_2) on kahden vastuksen erikoistapaus, ei MAFY:ssa
 fy6-4	190	R = \frac{R_1 R_2}{R_1 + R_2}	R = \frac{R_1 R_2}{R_1 + R_2}					
 fy6-4	303	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2}	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2}					
-fy6-4	303	[4pt] R = \frac{R_1 R_2}{R_1 + R_2}	[4pt] R = \frac{R_1 R_2}{R_1 + R_2}					
-fy6-4	303	[4pt] I = \frac{U}{R}	[4pt] I = \frac{U}{R}					
+fy6-4	303	R = \frac{R_1 R_2}{R_1 + R_2}	R = \frac{R_1 R_2}{R_1 + R_2}					
+fy6-4	303	I = \frac{U}{R}	I = \frac{U}{R}					
 fy6-4	318	R = \frac{120\,\Omega \cdot 60\,\Omega}{120\,\Omega + 60\,\Omega}	R = \frac{120\,\Omega \cdot 60\,\Omega}{120\,\Omega + 60\,\Omega}					
 fy6-4	318	= 40\,\Omega	= 40\,\Omega					
-fy6-4	318	[6pt] I = \frac{9{,}0\,\text{V}}{40\,\Omega}	[6pt] I = \frac{9.0\,\text{V}}{40\,\Omega}					
+fy6-4	318	I = \frac{9{,}0\,\text{V}}{40\,\Omega}	I = \frac{9.0\,\text{V}}{40\,\Omega}					
 fy6-4	318	= 0{,}225\,\text{A}	= 0.225\,\text{A}					
 fy6-5	173	\sum I_\text{tulevat} = \sum I_\text{lähtevät}	\sum I_\text{in} = \sum I_\text{out}	Kirchhoffin 1. laki	Kirchhoff's first law	MAFY	Virtapiirien kaavoja	MAFY: ΣI_t = ΣI_l; tunnin merkintä ΣI_tulevat = ΣI_lähtevät
 fy6-5	179	U_{AB} = V_A - V_B	U_{AB} = V_A - V_B	kahden pisteen välinen jännite	voltage between two points	MAFY	Virtapiirien kaavoja	

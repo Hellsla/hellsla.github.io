@@ -44,10 +44,10 @@ fy2-4	170	E_\text{h} = E_\text{o} - E_\text{a}	E_\text{h} = E_\text{o} - E_\text
 fy2-4	185	E_\text{o} = P_\text{o} \cdot t	E_\text{o} = P_\text{o} \cdot t					
 fy2-4	185	= 2000\,\text{W} \cdot 180\,\text{s}	= 2000\,\text{W} \cdot 180\,\text{s}					
 fy2-4	185	= 360\,000\,\text{J}	= 360\,000\,\text{J}					
-fy2-4	185	[6pt] E_\text{a} = \eta \cdot E_\text{o}	[6pt] E_\text{a} = \eta \cdot E_\text{o}					
+fy2-4	185	E_\text{a} = \eta \cdot E_\text{o}	E_\text{a} = \eta \cdot E_\text{o}					
 fy2-4	185	= 0{,}90 \cdot 360\,000\,\text{J}	= 0.90 \cdot 360\,000\,\text{J}					
 fy2-4	185	= 324\,000\,\text{J}	= 324\,000\,\text{J}					
-fy2-4	185	[6pt] E_\text{h} = E_\text{o} - E_\text{a}	[6pt] E_\text{h} = E_\text{o} - E_\text{a}					
+fy2-4	185	E_\text{h} = E_\text{o} - E_\text{a}	E_\text{h} = E_\text{o} - E_\text{a}					
 fy2-4	185	= 360\,000\,\text{J} - 324\,000\,\text{J}	= 360\,000\,\text{J} - 324\,000\,\text{J}					
 fy2-4	185	= 36\,000\,\text{J}	= 36\,000\,\text{J}					
 fy2-5	171	E = Hm	E = Hm	palamisessa vapautuva lämpö	heat released in combustion	MAFY	Termodynamiikan kaavoja	MAFY: Q = Hm; FY2:ssa energia E (opettaja 2026-11-12: Q vasta FY3:ssa)
