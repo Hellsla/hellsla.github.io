@@ -33,22 +33,22 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
 6. Picture tasks for FY8, FY9, FY10 and FY14; MAFY-table tasks for FY8 and FY9 only (teacher 2026-11-14) (queue). They add review work, so they start when step 2
    is done.
 7. ~~Desktop layout: a centred text column and a margin column~~: dropped (teacher 2026-11-14 chose option B: the
-   38 rem column stays and the figure rows are fixed, step 14 U3).
+   38 rem column stays and the figure rows are fixed, step 11 U3).
 8. Misconception as its own component in Teoria: the component once, then content chapter by chapter, each with
    all three reviews.
 9. Example exams for FY7 and FY8 (`/exam`). FY8 can start any time; FY7 after its exercise reviews (step 2).
-10. English concept cards for FY6 and FY8 (queue: later, the teacher's decision).
-11. Ahjo and LUMA-tutor onto the shared unit template (`jaksot.py` blocks, as Kilparobotiikka). Last; shared files,
-    so alone.
-12. Printed A5 booklets for FY1–FY8 in the current compact layout (`print_book.py --publish`): FY1–FY4 again, FY5–FY8
-    new; each course after its MAFY formulas (step 3) are merged.
-13. Simulation interface (queue 13, `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`): PR 1–PR 5 in order,
+10. Simulation interface (queue 10, `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`): PR 1–PR 5 in order,
     pilots stop for the teacher's approval. Shared files: alone, one at a time, merged before content.
-14. Task view and theory layout (queue 14, teacher 2026-11-14): U4 first, as soon as no other shared change is open;
-    then U1, U2, U3, which start only after step 13's PR 1–PR 5 are merged (same `site.css`, `lesson.js`). Shared
+11. Task view and theory layout (queue 11, teacher 2026-11-14): U4 first, as soon as no other shared change is open;
+    then U1, U2, U3, which start only after step 10's PR 1–PR 5 are merged (same `site.css`, `lesson.js`). Shared
     files: alone, one at a time, merged before content. No new interface text without the teacher's permission.
-15. Editorial final review of FY1–FY8 (queue 15, teacher 2026-11-14): the last step, after every other one; a report first, course by course, with verified
+12. English concept cards for FY6 and FY8 (queue: later, the teacher's decision).
+13. Ahjo and LUMA-tutor onto the shared unit template (`jaksot.py` blocks, as Kilparobotiikka). Shared files,
+    so alone.
+14. Editorial final review of FY1–FY8 (queue 14, teacher 2026-11-14): after every other step except the booklets (step 15); a report first, course by course, with verified
     errors, possible problems and optional improvements apart; no source changes until the teacher has read it.
+15. Last (teacher 2026-11-14): printed A5 booklets for FY1–FY8 in the current compact layout (`print_book.py --publish`): FY1–FY4 again, FY5–FY8
+    new; each course after its MAFY formulas (step 3) are merged.
 
 Area D waits for the teacher's decision on which plan (FY10, Dronelabra, others) is approved for building.
 
