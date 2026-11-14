@@ -32,9 +32,9 @@ def beam():
               xlabel=r"U\ (\text{V})", ylabel=r"r^2\ (10^{-3}\,\text{m}^2)")
     ax.line([(0, B2), (250, B2 + S2 * 250)], INK, 3)
     for u, q, d in zip(U2, Q2, DQ2):
-        ax.line([(u, q - d), (u, q + d)], COLD, 2.5)
-        for yy in (q - d, q + d): f.line(ax.X(u) - 7, ax.Y(yy), ax.X(u) + 7, ax.Y(yy), COLD, 2.5)
-        ax.point(u, q, COLD, 3.5)
+        ax.line([(u, q - d), (u, q + d)], COLD, 4.5)
+        for yy in (q - d, q + d): f.line(ax.X(u) - 11, ax.Y(yy), ax.X(u) + 11, ax.Y(yy), COLD, 4.5)
+        ax.point(u, q, INK, 6)
     ax.guide(80, B2 + S2 * 80); ax.guide(240, B2 + S2 * 240)
     f.tex(ax.X(80) + 10, ax.Y(B2 + S2 * 80) - 24, r"(80;\ 1{,}4)", "start", INK, bg=True)
     f.tex(ax.X(240) - 10, ax.Y(B2 + S2 * 240) + 28, r"(240;\ 4{,}3)", "end", INK, bg=True)
@@ -48,7 +48,7 @@ E0 = 17.5; T4 = 25.0
 def sine():
     f = Fig("fy7-k4-sin", 450, "Kuvaaja: generaattorin käämin jännite $e$ voltteina ajan $t$ funktiona millisekunteina. "
             "Jännite on sinimuotoinen, huippuarvo on 17,5 volttia ja jakso 25 millisekuntia. Kuvassa on kaksi jaksoa ajanhetkestä nolla hetkeen 50 millisekuntia.")
-    ax = Axes(f, (100, 400), (470, 40), x=(0, 55), y=(-20, 20), xticks=[5 * i for i in range(1, 12)], yticks=[-20, -15, -10, -5, 5, 10, 15, 20],
+    ax = Axes(f, (100, 400), (470, 40), x=(0, 55), y=(-20, 20), xticks=[5 * i for i in range(1, 12)], yticks=[-20, -15, -10, -5, 5, 10, 15, 20], xfmt=lambda v: fi(v) if v % 10 == 0 else "",
               xlabel=r"t\ (\text{ms})", ylabel=r"e\ (\text{V})", x_at=0, origin_label=False, ticks_below=True)
     ax.curve(lambda t: E0 * math.sin(2 * math.pi * t / T4), 0, 50, INK, 3)
     return f.svg()

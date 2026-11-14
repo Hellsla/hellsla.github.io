@@ -41,7 +41,7 @@
 
 ### a)
 **Kysytty:** neliöt $r^2$ ja $(U, r^2)$-kuvaaja virhepalkkeineen sekä sovitettu suora
-**Kuvaaja:** Vaaka-akselilla on kiihdytysjännite $U$ ($\text{V}$) ja pystyakselilla $r^2$ ($10^{-3}\,\text{m}^2$), molemmilla tasavälinen asteikko. Neliöt ovat $r^2 = 1{,}44$, $2{,}12$, $2{,}92$, $3{,}48$ ja $4{,}36 \cdot 10^{-3}\,\text{m}^2$. Jokaiseen pisteeseen piirretään pystysuora virhepalkki $\pm 2r\Delta r$, eli $\pm 0{,}076$, $0{,}092$, $0{,}108$, $0{,}118$ ja $0{,}132 \cdot 10^{-3}\,\text{m}^2$.
+**Kuvaaja:** Vaaka-akselilla on kiihdytysjännite $U$ ($\text{V}$) ja pystyakselilla $r^2$ ($10^{-3}\,\text{m}^2$), molemmilla tasavälinen asteikko. Neliöt ovat $r^2 = 1{,}44$, $2{,}12$, $2{,}92$, $3{,}48$ ja $4{,}36 \cdot 10^{-3}\,\text{m}^2$. Jokaiseen pisteeseen piirretään pystysuora virhepalkki $\pm 2r\Delta r$, eli $\pm 0{,}076$, $\pm 0{,}092$, $\pm 0{,}108$, $\pm 0{,}118$ ja $\pm 0{,}132$ (yksikkö $10^{-3}\,\text{m}^2$).
 
 <svg data-fig="fy7-k2-graph" viewBox="0 0 600 420" role="img" aria-label="Kuvaaja: elektronin ratasäteen neliö $r^2$ yksikössä $10^{-3}$ neliömetriä kiihdytysjännitteen $U$ funktiona. Viisi mittauspistettä jännitteillä 80, 120, 160, 200 ja 240 volttia, kullakin pystysuora virhepalkki. Pisteet ovat nousevalla suoralla, jonka kulmakerroin luetaan pisteistä 80 V ja 1,4 sekä 240 V ja 4,3 kymmenen potenssiin miinus 3 neliömetriä." style="max-width:100%;font-size:24px">
   <line x1="174" y1="370" x2="174" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -82,26 +82,26 @@
   <foreignObject x="502" y="355.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U\ (\text{V})$</div></foreignObject>
   <foreignObject x="90" y="13.5" width="149" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$r^2\ (10^{-3}\,\text{m}^2)$</div></foreignObject>
   <polyline points="100,371 470,101" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <polyline points="218.5,288 218.5,279" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="211.5" y1="288" x2="225.5" y2="288" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="211.5" y1="279" x2="225.5" y2="279" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="218.5" cy="283.5" r="3.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <polyline points="277.5,248.5 277.5,237.5" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="270.5" y1="248.5" x2="284.5" y2="248.5" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="270.5" y1="237.5" x2="284.5" y2="237.5" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="277.5" cy="243" r="3.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <polyline points="337,201.5 337,188.5" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="330" y1="201.5" x2="344" y2="201.5" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="330" y1="188.5" x2="344" y2="188.5" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="337" cy="195" r="3.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <polyline points="396,168 396,154" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="389" y1="168" x2="403" y2="168" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="389" y1="154" x2="403" y2="154" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="396" cy="161" r="3.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <polyline points="455,116.5 455,100.5" fill="none" stroke="#1971c2" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
-  <line x1="448" y1="116.5" x2="462" y2="116.5" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <line x1="448" y1="100.5" x2="462" y2="100.5" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="455" cy="108.5" r="3.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <polyline points="218.5,288 218.5,279" fill="none" stroke="#1971c2" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="207.5" y1="288" x2="229.5" y2="288" stroke="#1971c2" stroke-width="4.5" stroke-linecap="butt"/>
+  <line x1="207.5" y1="279" x2="229.5" y2="279" stroke="#1971c2" stroke-width="4.5" stroke-linecap="butt"/>
+  <circle cx="218.5" cy="283.5" r="6" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <polyline points="277.5,248.5 277.5,237.5" fill="none" stroke="#1971c2" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="266.5" y1="248.5" x2="288.5" y2="248.5" stroke="#1971c2" stroke-width="4.5" stroke-linecap="butt"/>
+  <line x1="266.5" y1="237.5" x2="288.5" y2="237.5" stroke="#1971c2" stroke-width="4.5" stroke-linecap="butt"/>
+  <circle cx="277.5" cy="243" r="6" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <polyline points="337,201.5 337,188.5" fill="none" stroke="#1971c2" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="326" y1="201.5" x2="348" y2="201.5" stroke="#1971c2" stroke-width="4.5" stroke-linecap="butt"/>
+  <line x1="326" y1="188.5" x2="348" y2="188.5" stroke="#1971c2" stroke-width="4.5" stroke-linecap="butt"/>
+  <circle cx="337" cy="195" r="6" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <polyline points="396,168 396,154" fill="none" stroke="#1971c2" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="385" y1="168" x2="407" y2="168" stroke="#1971c2" stroke-width="4.5" stroke-linecap="butt"/>
+  <line x1="385" y1="154" x2="407" y2="154" stroke="#1971c2" stroke-width="4.5" stroke-linecap="butt"/>
+  <circle cx="396" cy="161" r="6" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
+  <polyline points="455,116.5 455,100.5" fill="none" stroke="#1971c2" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="444" y1="116.5" x2="466" y2="116.5" stroke="#1971c2" stroke-width="4.5" stroke-linecap="butt"/>
+  <line x1="444" y1="100.5" x2="466" y2="100.5" stroke="#1971c2" stroke-width="4.5" stroke-linecap="butt"/>
+  <circle cx="455" cy="108.5" r="6" fill="#1f2933" stroke="#ffffff" stroke-width="2"/>
   <line x1="218.5" y1="284.5" x2="218.5" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="100" y1="284.5" x2="218.5" y2="284.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="455" y1="112" x2="455" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
@@ -119,7 +119,7 @@
 **Kuvaajan lukeminen:** Suoralta luetaan kaukana toisistaan olevat pisteet $(80\,\text{V};\ 1{,}4 \cdot 10^{-3}\,\text{m}^2)$ ja $(240\,\text{V};\ 4{,}3 \cdot 10^{-3}\,\text{m}^2)$.
 **Kaava:** energiasta $eU = \tfrac{1}{2} m_\text{e} v^2$ saadaan $v = \sqrt{\tfrac{2eU}{m_\text{e}}}$, ja magneettisesta voimasta $F_\text{m} = |q| v B \sin\alpha$ (kulma $90^\circ$) ympyräliikkeessä $evB = \tfrac{m_\text{e} v^2}{r}$, joten $r = \tfrac{m_\text{e} v}{eB}$. Neliöimällä $r^2 = \dfrac{2m_\text{e}}{eB^2}\,U$, jolloin kulmakerroin $k = \dfrac{2m_\text{e}}{eB^2}$ ja $\dfrac{e}{m_\text{e}} = \dfrac{2}{B^2 k}$.
 **Muunnokset:** $B = 0{,}80\,\text{mT} = 0{,}80 \cdot 10^{-3}\,\text{T}$ ja $10^{-3}\,\text{m}^2 = 10^{-3}\,\text{m}^2$ pidetään mukana.
-**Sijoitus:** $k = \dfrac{(4{,}3 - 1{,}4) \cdot 10^{-3}\,\text{m}^2}{(240 - 80)\,\text{V}} = 1{,}81 \cdot 10^{-5}\,\text{m}^2/\text{V}$, joten $\dfrac{e}{m_\text{e}} = \dfrac{2}{(0{,}80 \cdot 10^{-3}\,\text{T})^2 \cdot 1{,}81 \cdot 10^{-5}\,\text{m}^2/\text{V}}$ $\approx 1{,}7 \cdot 10^{11}\,\text{C/kg}$
+**Sijoitus:** $k = \dfrac{(4{,}3 - 1{,}4) \cdot 10^{-3}\,\text{m}^2}{(240 - 80)\,\text{V}} = 1{,}81 \cdot 10^{-5}\,\text{m}^2/\text{V}$, ja $B^2 = (0{,}80 \cdot 10^{-3}\,\text{T})^2 = 6{,}4 \cdot 10^{-7}\,\text{T}^2$, joten $B^2 k = 6{,}4 \cdot 10^{-7}\,\text{T}^2 \cdot 1{,}81 \cdot 10^{-5}\,\text{m}^2/\text{V}$ $= 1{,}16 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}$ ja $\dfrac{e}{m_\text{e}} = \dfrac{2}{1{,}16 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}}$ $\approx 1{,}7 \cdot 10^{11}\,\text{C/kg}$
 **Vastaus:** Elektronin ominaisvaraus on noin $1{,}7 \cdot 10^{11}\,\text{C/kg}$ (pienimmän neliösumman sovitus antaa $1{,}74 \cdot 10^{11}\,\text{C/kg}$).
 **Järkevyys:** Arvo on lähellä tunnettua $1{,}76 \cdot 10^{11}\,\text{C/kg}$. Yksikkö $\tfrac{1}{\text{T}^2 \cdot \text{m}^2/\text{V}} = \tfrac{\text{V}}{\text{T}^2\text{m}^2}$ on sama kuin $\text{C/kg}$. Ratasäde $\approx 6\,\text{cm}$ jännitteellä $240\,\text{V}$ on tavallinen laboratoriokokoluokka.
 
@@ -129,8 +129,8 @@
 **Periaate:** Piirretään jyrkin ja loivin suora, jotka vielä kulkevat kaikkien virhepalkkien sisällä. Ominaisvaraus on kääntäen verrannollinen kulmakertoimeen, joten jyrkin suora antaa pienimmän ja loivin suurimman arvon; epävarmuus on niiden eron puolikas.
 **Kaava:** $\Delta\dfrac{e}{m_\text{e}} = \dfrac{(e/m_\text{e})_\text{max} - (e/m_\text{e})_\text{min}}{2}$, missä $\dfrac{e}{m_\text{e}} = \dfrac{2}{B^2 k}$
 **Muunnokset:** Kulmakertoimet lasketaan yksikössä $\text{m}^2/\text{V}$.
-**Sijoitus:** Jyrkin suora kulkee pisteiden $(80\,\text{V};\ 1{,}368 \cdot 10^{-3}\,\text{m}^2)$ ja $(200\,\text{V};\ 3{,}599 \cdot 10^{-3}\,\text{m}^2)$ kautta (kulmakerroin $1{,}859 \cdot 10^{-5}\,\text{m}^2/\text{V}$), loivin pisteiden $(80\,\text{V};\ 1{,}520 \cdot 10^{-3}\,\text{m}^2)$ ja $(240\,\text{V};\ 4{,}224 \cdot 10^{-3}\,\text{m}^2)$ kautta ($1{,}690 \cdot 10^{-5}\,\text{m}^2/\text{V}$). Siten $(e/m_\text{e})_\text{min} = \dfrac{2}{(0{,}80 \cdot 10^{-3}\,\text{T})^2 \cdot 1{,}859 \cdot 10^{-5}\,\text{m}^2/\text{V}}$ $= 1{,}68 \cdot 10^{11}\,\text{C/kg}$ ja $(e/m_\text{e})_\text{max} = 1{,}85 \cdot 10^{11}\,\text{C/kg}$, joten $\Delta\dfrac{e}{m_\text{e}} = \dfrac{(1{,}85 - 1{,}68) \cdot 10^{11}\,\text{C/kg}}{2}$ $\approx 0{,}08 \cdot 10^{11}\,\text{C/kg}$
-**Vastaus:** $e / m_\text{e} = (1{,}74 \pm 0{,}08) \cdot 10^{11}\,\text{C/kg}$. Tunnettu arvo $1{,}759 \cdot 10^{11}\,\text{C/kg}$ kuuluu väliin, joten mittaus on sopusoinnussa.
+**Sijoitus:** Jyrkin suora kulkee pisteiden $(80\,\text{V};\ 1{,}368 \cdot 10^{-3}\,\text{m}^2)$ ja $(200\,\text{V};\ 3{,}599 \cdot 10^{-3}\,\text{m}^2)$ kautta (kulmakerroin $1{,}859 \cdot 10^{-5}\,\text{m}^2/\text{V}$), loivin pisteiden $(80\,\text{V};\ 1{,}520 \cdot 10^{-3}\,\text{m}^2)$ ja $(240\,\text{V};\ 4{,}224 \cdot 10^{-3}\,\text{m}^2)$ kautta ($1{,}690 \cdot 10^{-5}\,\text{m}^2/\text{V}$). Kun $B^2 = 6{,}4 \cdot 10^{-7}\,\text{T}^2$, jyrkimmälle suoralle $B^2 k = 1{,}190 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}$ ja $(e/m_\text{e})_\text{min} = \dfrac{2}{1{,}190 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}}$ $= 1{,}68 \cdot 10^{11}\,\text{C/kg}$. Loivimmalle suoralle $B^2 k = 1{,}082 \cdot 10^{-11}\,\text{T}^2\text{m}^2/\text{V}$ ja $(e/m_\text{e})_\text{max} = 1{,}85 \cdot 10^{11}\,\text{C/kg}$, joten $\Delta\dfrac{e}{m_\text{e}} = \dfrac{(1{,}85 - 1{,}68) \cdot 10^{11}\,\text{C/kg}}{2}$ $\approx 0{,}08 \cdot 10^{11}\,\text{C/kg}$
+**Vastaus:** $(1{,}74 \pm 0{,}08) \cdot 10^{11}\,\text{C/kg}$. Ominaisvarauksen $e / m_\text{e}$ tunnettu arvo $1{,}759 \cdot 10^{11}\,\text{C/kg}$ kuuluu väliin, joten mittaus on sopusoinnussa.
 **Järkevyys:** Suhteellinen epävarmuus on noin $5\,\%$, mikä sopii säteen lukemaan $\pm 1\,\text{mm}$ eli $2$–$3\,\%$ ja sen neliöintiin.
 
 ### d)
@@ -145,7 +145,7 @@
 - Sanotaan, että magneettikenttä kiihdyttää elektronia nopeammaksi.
 
 ### Hyväksytään myös
-- Kohdassa b kulmakerroin laskentaohjelman pienimmän neliösumman sovituksesta ($1{,}74 \cdot 10^{11}\,\text{C/kg}$) kuvaajalta luetun kulmakertoimen sijaan, kun tulos on välillä $1{,}65$–$1{,}83 \cdot 10^{11}\,\text{C/kg}$.
+- Kohdassa b kulmakerroin laskentaohjelman pienimmän neliösumman sovituksesta ($1{,}74 \cdot 10^{11}\,\text{C/kg}$) kuvaajalta luetun kulmakertoimen sijaan, kun tulos on välillä $(1{,}65\text{–}1{,}83) \cdot 10^{11}\,\text{C/kg}$.
 
 ## fy7-k3
 
@@ -183,7 +183,7 @@
 - Virran suunta päätellään vain muistisäännöstä ilman Lenzin lain perustelua (b).
 - Magneettinen voima ja vetävä voima sekoitetaan: vetävän voiman on oltava yhtä suuri kuin magneettisen, jotta nopeus pysyy vakiona (c).
 - Teho lasketaan $P = IlB$ ilman nopeutta tai jännite sijoitetaan väärään kaavaan (c).
-- Sanotaan, että induktiovirta "luo energiaa" (d).
+- Sanotaan, että induktiovirta ”luo energiaa” (d).
 
 ### Hyväksytään myös
 - Kohdassa b virran suunta voimasta varauksiin, $q\overline{v} \times \overline{B}$, kun tulos on sauvassa ylöspäin ja perustelu on selvä; Lenzin lain perustelu on silti arvioinnin kohteena.
@@ -198,7 +198,7 @@
 **Kaava:** $f = \dfrac{1}{T}$ ja $U = \dfrac{e_0}{\sqrt{2}}$
 **Muunnokset:** $T = 25\,\text{ms} = 0{,}025\,\text{s}$
 **Sijoitus:** $f = \dfrac{1}{0{,}025\,\text{s}} = 40\,\text{Hz}$ ja $U = \dfrac{17{,}5\,\text{V}}{\sqrt{2}} = 12{,}4\,\text{V}$
-**Vastaus:** Taajuus on $40\,\text{Hz}$ ja tehollinen jännite noin $12\,\text{V}$ ($12{,}4\,\text{V}$; huippuarvo luetaan ruudukosta noin $0{,}5\,\text{V}$:n tarkkuudella, joten kaksi merkitsevää numeroa riittää).
+**Vastaus:** Taajuus on $40\,\text{Hz}$ ja tehollinen jännite $12{,}4\,\text{V}$. Huippuarvo luetaan ruudukosta noin $0{,}5\,\text{V}$:n tarkkuudella, joten jännite tunnetaan vain noin kahden merkitsevän numeron tarkkuudella; kolmas numero pidetään mukana vain jatkolaskuja varten.
 **Järkevyys:** Tehollinen jännite on huippuarvoa pienempi, noin $71\,\%$ siitä, ja taajuus on kokoluokaltaan sama kuin verkkotaajuus $50\,\text{Hz}$.
 
 ### b)
@@ -212,7 +212,7 @@
 **Järkevyys:** Arvo on kymmenien millitesloiden luokkaa, kuten pienen kestomagneetin tai sähkömagneetin kenttä.
 
 ### c)
-**Annettu:** $N_1 = 150$, $U_1 = 12{,}4\,\text{V}$, $U_2 = 230\,\text{V}$, $P = 46\,\text{W}$
+**Annettu:** $N_1 = 150$, $U_1 = 12{,}37\,\text{V}$ (kohdan a tulos lisänumerolla), $U_2 = 230\,\text{V}$, $P = 46\,\text{W}$
 **Kysytty:** toisiokäämin kierrosluku $N_2$ ja ensiövirta $I_1$
 **Periaate:** Ideaalisessa muuntajassa jännitteet suhtautuvat kuten kierrosluvut ja virrat käänteisesti. Toisiovirta saadaan kuorman tehosta.
 **Kaava:** muuntaja $\dfrac{U_1}{U_2} = \dfrac{N_1}{N_2} = \dfrac{I_2}{I_1}$, josta $N_2 = \dfrac{N_1 U_2}{U_1}$ ja $I_1 = \dfrac{I_2 U_2}{U_1}$, ja kuormalle $I_2 = \dfrac{P}{U_2}$
@@ -252,7 +252,7 @@
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $k = 1$: $d = 3{,}327\,\mu\text{m}$, $k = 2$: $\theta = 18{,}54^\circ$, $d = \dfrac{2 \cdot 0{,}532\,\mu\text{m}}{\sin 18{,}54^\circ} = 3{,}347\,\mu\text{m}$ ja $k = 3$: $\theta = 28{,}72^\circ$, $d = \dfrac{3 \cdot 0{,}532\,\mu\text{m}}{\sin 28{,}72^\circ} = 3{,}321\,\mu\text{m}$. Keskiarvo $\tfrac{3{,}327 + 3{,}347 + 3{,}321}{3}\,\mu\text{m} = 3{,}33\,\mu\text{m}$. Epävarmuudet ovat $\pm 27\,\text{nm}$, $\pm 12\,\text{nm}$ ja $\pm 6\,\text{nm}$ eli $0{,}8\,\%$, $0{,}4\,\%$ ja $0{,}2\,\%$.
 **Vastaus:** Hilaväli on parhaana arviona $3{,}33\,\mu\text{m}$ (noin $300$ viivaa/mm). Kertaluku $k = 3$ antaa luotettavimman tuloksen.
-**Järkevyys:** Kaikki kolme tulosta ovat $0{,}8\,\%$:n sisällä toisistaan, joten ne sopivat yhteen. Suurimmalla kertaluvulla $x$ on suurin, joten sama lukemavirhe $2\,\text{mm}$ on pienin osa siitä. Tulosten hajonta $\pm 0{,}013\,\mu\text{m}$ on hieman suurempi kuin pelkästä lukemasta johtuva, joten mukana on myös muita virheitä (esimerkiksi etäisyys $L$ ja kohtisuoruus).
+**Järkevyys:** Kaikki kolme tulosta ovat $0{,}8\,\%$:n sisällä toisistaan, joten ne sopivat yhteen. Suurimmalla kertaluvulla $x$ on suurin, joten sama lukemavirhe $2\,\text{mm}$ on pienin osa siitä. Kertalukujen $2$ ja $3$ tulokset poikkeavat toisistaan $0{,}026\,\mu\text{m}$, mikä on enemmän kuin niiden lukemaepävarmuuksien summa $0{,}018\,\mu\text{m}$, joten mukana on myös muita virheitä (esimerkiksi etäisyys $L$ ja säteen kohtisuoruus).
 
 ### c)
 **Annettu:** $d = 3{,}33\,\mu\text{m}$, $\lambda = 532\,\text{nm}$
@@ -305,7 +305,7 @@
 **Muunnokset:** $1{,}728\,\text{MW} \cdot 4000\,\text{h} = 6912\,\text{MWh}$ ja $0{,}0571\,\text{MW} \cdot 4000\,\text{h} = 228{,}5\,\text{MWh}$
 **Sijoitus:** säästö $= (6912\,\text{MWh} - 228{,}5\,\text{MWh}) \cdot 50\,\text{€/MWh} = 334\,200\,\text{€}$ ja takaisinmaksuaika $= \dfrac{3{,}0 \cdot 10^{6}\,\text{€}}{334\,200\,\text{€/a}} = 8{,}98\,\text{a}$
 **Vastaus:** Vaihtoehto B säästää noin $3{,}3 \cdot 10^{5}\,\text{€}$ vuodessa ja muuntajat maksavat itsensä takaisin noin $9{,}0$ vuodessa.
-**Järkevyys:** Häviöenergian arvo vaihtoehdossa A on noin $346\,000\,\text{€}$ vuodessa, ja B:ssä $11\,400\,\text{€}$ vuodessa; säästö on lähes koko A:n häviön arvo, kuten pitääkin.
+**Järkevyys:** Häviöenergian arvo vaihtoehdossa A on noin $346\,000\,\text{€}$ vuodessa, ja B:ssä $11\,400\,\text{€}$ vuodessa; säästö on lähes koko A:n häviön arvo, kuten pitääkin. Huomautus: jos kahden muuntajan omat häviöt ($0{,}5\,\%$ kummallakin eli yhteensä $120\,\text{kW}$, vuodessa $24\,000\,\text{€}$) otetaan huomioon, säästö on $310\,000\,\text{€}$ vuodessa ja takaisinmaksuaika noin $9{,}7\,\text{a}$.
 
 ### d)
 **Kysytty:** oletusten arviointi ja vaihtoehdon valinta
@@ -422,7 +422,7 @@
 **Kaava:** Wienin siirtymälaki $\lambda_\text{max} T = b$, josta $T = \dfrac{b}{\lambda_\text{max}}$
 **Muunnokset:** $550\,\text{nm} = 5{,}50 \cdot 10^{-7}\,\text{m}$
 **Sijoitus:** $T = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{5{,}50 \cdot 10^{-7}\,\text{m}} = 5269\,\text{K}$
-**Vastaus:** Lämpötilan olisi oltava noin $5270\,\text{K}$, mikä on selvästi volframin sulamispistettä $3695\,\text{K}$ korkeampi. Sulamispisteen lähellä huippu on infrapunassa ($\lambda_\text{max} \approx 0{,}78\,\mu\text{m}$ lämpötilassa $3695\,\text{K}$), joten suurin osa säteilystä on näkymätöntä lämpösäteilyä ja lampun hyötysuhde valon tuotossa on pieni. Päättely perustuu malliin, joka on mitattu vain välillä $2200$–$3000\,\text{K}$, joten päättely on ekstrapolointia; todellinen lanka ei ole täydellinen musta kappale, eikä Wienin laki yksin kerro, kuinka suuri osa säteilystä on näkyvää (siihen tarvittaisiin koko spektri).
+**Vastaus:** Lämpötilan olisi oltava noin $5270\,\text{K}$, mikä on selvästi volframin sulamispistettä $3695\,\text{K}$ korkeampi. Mitatulla lämpötila-alueella $2200$–$3000\,\text{K}$ huippu on aallonpituuksilla $1{,}3\,\mu\text{m}$–$0{,}97\,\mu\text{m}$ eli infrapunassa, ja sulamispisteen lähelläkin ($3695\,\text{K}$) huippu on vasta $0{,}78\,\mu\text{m}$:n kohdalla, joten suurin osa säteilystä on näkymätöntä lämpösäteilyä ja lampun hyötysuhde valon tuotossa on pieni. Päättely perustuu malliin, joka on mitattu vain välillä $2200$–$3000\,\text{K}$, joten päättely on ekstrapolointia; todellinen lanka ei ole täydellinen musta kappale, eikä Wienin laki yksin kerro, kuinka suuri osa säteilystä on näkyvää (siihen tarvittaisiin koko spektri).
 **Järkevyys:** Lämpötila $5270\,\text{K}$ on lähellä Auringon pintalämpötilaa, jonka spektrin huippu on näkyvässä valossa; kiinteä lanka ei tällaista lämpötilaa kestä.
 
 ### Yleisiä virheitä

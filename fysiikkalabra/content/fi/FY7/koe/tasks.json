@@ -219,7 +219,7 @@
       {
        "key": "graph_points",
        "points": 1,
-       "detail": "Jokaiseen pisteeseen on piirretty virhepalkki $\\pm 2r\\Delta r$ eli noin $\\pm 0{,}08$–$0{,}13 \\cdot 10^{-3}\\,\\text{m}^2$."
+       "detail": "Jokaiseen pisteeseen on piirretty virhepalkki $\\pm 2r\\Delta r$, eli pituudet ovat välillä $(0{,}08\\text{–}0{,}13) \\cdot 10^{-3}\\,\\text{m}^2$ pisteen molemmin puolin."
       },
       {
        "key": "graph_fit",
@@ -1052,7 +1052,7 @@
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Lämpötila on selvästi volframin sulamispistettä korkeampi, joten lampun huippu on infrapunassa: suurin osa säteilystä on näkymätöntä lämpösäteilyä ja hyötysuhde valon tuotossa on pieni."
+       "detail": "Lampun käyttölämpötilassa $2200$–$3000\\,\\text{K}$ huippu on infrapunassa ($1{,}3$–$0{,}97\\,\\mu\\text{m}$), ja näkyvän valon huippu vaatisi lämpötilan $5270\\,\\text{K}$, joka ylittää volframin sulamispisteen: suurin osa säteilystä on näkymätöntä lämpösäteilyä ja hyötysuhde valon tuotossa on pieni."
       },
       {
        "key": "assumptions",

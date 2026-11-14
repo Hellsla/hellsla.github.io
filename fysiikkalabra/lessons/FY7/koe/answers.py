@@ -113,6 +113,9 @@ Ea, Eb = Pha * hrs / 1e6, Phb * hrs / 1e6               # MWh
 sav = (Ea - Eb) * price
 out["fy7-k6-c-sav"] = sav
 out["fy7-k6-c-pay"] = cost_tr / sav
+tr_loss_kW = 2 * 0.005 * P6 / 1e3                         # two transformers at 0,5 % each
+sav_tr = sav - tr_loss_kW * 1e3 * hrs / 1e6 * price       # EUR/a after the transformers' own losses
+out["k6-tr"] = {"loss_kW": tr_loss_kW, "extra_cost": tr_loss_kW * 1e3 * hrs / 1e6 * price, "sav": sav_tr, "pay": cost_tr / sav_tr}
 out["k6"] = {"share_a": Pha / P6, "share_b": Phb / P6, "Ea": Ea, "Eb": Eb, "cost_a": Ea * price, "cost_b": Eb * price, "ratio": U_b / U_a,
              "loss_ratio": Pha / Phb, "I_ratio": Ia / Ib, "Phb_kW": Phb / 1e3, "Pha_MW": Pha / 1e6, "Pa_ok": P6 - Pha,
              "Ulinedrop_a": Ia * R6, "dropshare_a": Ia * R6 / U_a, "Ulinedrop_b": Ib * R6, "dropshare_b": Ib * R6 / U_b}
@@ -129,6 +132,7 @@ out["fy7-k7-c"] = 100 * (b_th - b7) / b_th
 Tb = 273.15 + 33
 out["fy7-k7-d"] = b_th / Tb * 1e6                      # um
 out["fy7-k7-e"] = b_th / 550e-9
+out["k7-e"] = {"lam_2200_um": b_th / 2200 * 1e6, "lam_3000_um": b_th / 3000 * 1e6}
 out["k7"] = {"inv": [round(v, 3) for v in inv7], "b_each": b_each, "b_mean": sum(b_each) / 5, "b": b7,
              "spread": (max(b_each) - min(b_each)) / 2, "dev": (b_th - b7) / b_th, "lam_lamp_2800": b_th / 2800 * 1e9,
              "lam_body_um": b_th / Tb * 1e6, "T_550": b_th / 550e-9, "T_melt": 3695, "T_body": Tb,
