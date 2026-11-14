@@ -1,5 +1,5 @@
 {
- "intro": "Koe kattaa koko moduulin: magneettikentän ja sen lähteet, varatun hiukkasen liikkeen kentissä, voiman virtajohtimeen, sähkömagneettisen induktion, generaattorin, vaihtovirran ja muuntajan, sähkömagneettisen säteilyn ja mustan kappaleen spektrin sekä valon heijastumisen, taittumisen, interferenssin ja polarisaation. Käytä tarvittaessa arvoja: alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$, elektronin massa $m_\\text{e} = 9{,}109 \\cdot 10^{-31}\\,\\text{kg}$, valon nopeus tyhjiössä $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, tyhjiön permeabiliteetti $\\mu_0 = 4\\pi \\cdot 10^{-7}\\,\\text{Vs/(Am)}$ ja Wienin siirtymälain vakio $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$. Laskin ja taulukkolaskenta ovat sallittuja. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
+ "intro": "Koe kattaa koko moduulin: magneettikentän ja sen lähteet, varatun hiukkasen liikkeen kentissä, voiman virtajohtimeen, sähkömagneettisen induktion, generaattorin, vaihtovirran ja muuntajan, sähkömagneettisen säteilyn ja mustan kappaleen spektrin sekä valon heijastumisen, taittumisen, interferenssin ja polarisaation. Käytä tarvittaessa arvoa: valon nopeus tyhjiössä $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$. Muut tarvittavat vakiot annetaan tehtävissä. Laskin ja taulukkolaskenta ovat sallittuja. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
  "minutes": 120,
  "max_points": 70,
  "sections": [
@@ -100,7 +100,7 @@
       "Kuparin tiheys on suuri, joten putken sisällä oleva ilma vastustaa putoamista enemmän kuin muoviputkessa.",
       "Putken seinämä saa magneetin varautumaan, ja varausten sähköinen hylkiminen jarruttaa magneetin liikettä.",
       "Kupari on ferromagneettista, joten putki vetää magneettia ylöspäin ja hidastaa sen putoamista.",
-      "Magneetin liike indusoi kupariin pyörrevirtoja, joiden kenttä vastustaa liikettä ja jotka muuttavat liike-energiaa sisäenergiaksi."
+      "Magneetin liike indusoi kupariin pyörrevirtoja, joiden kenttä vastustaa liikettä ja jotka muuttavat magneetin mekaanista energiaa sisäenergiaksi."
      ],
      "correct": 3,
      "tag": "concept"
@@ -109,12 +109,12 @@
      "id": "f",
      "kind": "choice",
      "points": 2,
-     "text": "Generaattorin käämi pyörii tasaisesti homogeenisessa magneettikentässä. Käämin pyörimisnopeus kaksinkertaistetaan, ja muu pysyy ennallaan. Miten jännitteen huippuarvo $e_0$ ja jakso $T$ muuttuvat?",
+     "text": "Kaksi lineaarista polarisaatiosuodinta on ristikkäin, eli niiden läpäisysuunnat ovat kohtisuorassa toisiaan vastaan, eikä valoa pääse läpi. Kolmas samanlainen suodin asetetaan niiden väliin niin, että sen läpäisysuunta on $45^\\circ$ kulmassa kumpaankin suuntaan nähden. Mitä tapahtuu?",
      "options": [
-      "$e_0$ kaksinkertaistuu ja $T$ puolittuu.",
-      "$e_0$ kaksinkertaistuu ja $T$ kaksinkertaistuu.",
-      "$e_0$ pysyy samana ja $T$ puolittuu.",
-      "$e_0$ kaksinkertaistuu ja $T$ pysyy samana."
+      "Osa valosta pääsee läpi, koska keskimmäisen suotimen läpäissyt valo on polarisoitunut sen suuntaan ja sillä on komponentti viimeisen suotimen läpäisysuunnassa.",
+      "Valoa ei pääse läpi, koska kolmas suodin vain vaimentaa valoa lisää eikä voi päästää sitä, minkä kaksi ensimmäistä pysäyttivät.",
+      "Läpi pääsee puolet alkuperäisestä valosta, koska keskimmäinen suodin kääntää polarisaation takaisin ensimmäisen suotimen suuntaiseksi.",
+      "Valo pääsee läpi täysin vaimentumatta, koska $45^\\circ$ on molempien suotimien läpäisysuuntien puolivälissä."
      ],
      "correct": 0,
      "tag": "concept"
@@ -182,11 +182,11 @@
     "fy7-4",
     "fy7-5",
     "fy7-6",
-    "fy7-7",
     "fy7-8",
     "fy7-9",
     "fy7-12",
-    "fy7-14"
+    "fy7-14",
+    "fy7-15"
    ],
    "links": {
     "concept": "fy7-1",
@@ -199,7 +199,7 @@
    "title": "Elektronisuihku magneettikentässä",
    "source": "example",
    "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia.",
-   "text": "Opiskelija tutki tyhjiöputkessa kulkevaa elektronisuihkua. Elektronit lähtevät levosta ja kiihtyvät jännitteellä $U$. Sen jälkeen ne tulevat homogeeniseen magneettikenttään, jonka vuontiheys on $B = 0{,}80\\,\\text{mT}$ ja suunta kohtisuoraan elektronien nopeuteen nähden. Suihku kiertää ympyrärataa, jonka säteen $r$ opiskelija mittasi suihkun jäljestä. Säteen mittauksen epävarmuus on $\\pm 1\\,\\text{mm}$, ja jännite tunnetaan tarkasti. Elektronin ominaisvaraus $e / m_\\text{e}$ on opiskelijalle tuntematon.\\n\\n| $U\\ (\\text{V})$ | $80$ | $120$ | $160$ | $200$ | $240$ |\n|---|---|---|---|---|---|\n| $r\\ (\\text{mm})$ | $38$ | $46$ | $54$ | $59$ | $66$ |",
+   "text": "Opiskelija tutki tyhjiöputkessa kulkevaa elektronisuihkua. Elektronit lähtevät levosta ja kiihtyvät jännitteellä $U$. Sen jälkeen ne tulevat homogeeniseen magneettikenttään, jonka vuontiheys on $B = 0{,}80\\,\\text{mT}$ ja suunta kohtisuoraan elektronien nopeuteen nähden. Suihku kiertää ympyrärataa, jonka säteen $r$ opiskelija mittasi suihkun jäljestä. Säteen mittauksen epävarmuus on $\\pm 1\\,\\text{mm}$, ja jännite tunnetaan tarkasti. Elektronin ominaisvaraus $e / m_\\text{e}$ on opiskelijalle tuntematon.\n\n| $U\\ (\\text{V})$ | $80$ | $120$ | $160$ | $200$ | $240$ |\n|---|---|---|---|---|---|\n| $r\\ (\\text{mm})$ | $38$ | $46$ | $54$ | $59$ | $66$ |",
    "parts": [
     {
      "id": "a",
@@ -247,7 +247,7 @@
       {
        "key": "graph_read",
        "points": 1,
-       "detail": "Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(80\\,\\text{V};\\ 1{,}4 \\cdot 10^{-3}\\,\\text{m}^2)$ ja $(240\\,\\text{V};\\ 4{,}3 \\cdot 10^{-3}\\,\\text{m}^2)$."
+       "detail": "Kulmakerroin määritetään kuvaajalta: joko luetaan suoralta kaksi kaukana toisistaan olevaa pistettä, esimerkiksi $(80\\,\\text{V};\\ 1{,}4 \\cdot 10^{-3}\\,\\text{m}^2)$ ja $(240\\,\\text{V};\\ 4{,}3 \\cdot 10^{-3}\\,\\text{m}^2)$, tai käytetään laskentaohjelman sovitusta."
       },
       {
        "key": "calculation",
@@ -451,7 +451,7 @@
    "title": "Pyörivä käämi ja muuntaja",
    "source": "example",
    "source_note": "Mittaus ja arvot on laadittu esimerkiksi.",
-   "text": "Pienen generaattorin käämissä on $90$ kierrosta ja sen pinta-ala on $0{,}0150\\,\\text{m}^2$. Käämi pyörii tasaisesti homogeenisessa magneettikentässä, ja sen jännitettä $e$ mitattiin oskilloskoopilla. Generaattori syöttää ideaalisen muuntajan ensiökäämiä, jossa on $150$ kierrosta. Muuntajan toisiojännite on $230\\,\\text{V}$ (tehollisarvo), ja toisioon on kytketty kuorma, jonka teho on $46\\,\\text{W}$.",
+   "text": "Pienen generaattorin käämissä on $90$ kierrosta ja sen pinta-ala on $0{,}0150\\,\\text{m}^2$. Käämi pyörii tasaisesti homogeenisessa magneettikentässä, ja sen jännitettä $e$ mitattiin oskilloskoopilla. Generaattori syöttää ideaalisen muuntajan ensiökäämiä, jossa on $150$ kierrosta. Muuntajan toisiojännite on $230\\,\\text{V}$ (tehollisarvo), ja toisioon on kytketty kuorma, jonka teho on $46\\,\\text{W}$. Käämin resistanssi jätetään huomiotta, joten käämin jännite on sama kuin muuntajan ensiöjännite.",
    "parts": [
     {
      "id": "a",
@@ -598,7 +598,7 @@
    "title": "Hila ja laserosoitin",
    "source": "example",
    "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia.",
-   "text": "Opiskelija valaisi tuntematonta hilaa vihreällä laserilla, jonka aallonpituus on $532\\,\\text{nm}$. Valo osui hilaan kohtisuoraan, ja hilan ja varjostimen etäisyys oli $L = 1{,}500\\,\\text{m}$. Opiskelija mittasi, kuinka kaukana keskimaksimista kertalukujen $k = 1$, $2$ ja $3$ maksimit ovat varjostimella. Etäisyys $x$ on keskimaksimin ja maksimin välinen, ja sen lukemaepävarmuus on $\\pm 2\\,\\text{mm}$.\\n\\n| $k$ | $1$ | $2$ | $3$ |\n|---|---|---|---|\n| $x\\ (\\text{m})$ | $0{,}243$ | $0{,}503$ | $0{,}822$ |",
+   "text": "Opiskelija valaisi tuntematonta hilaa vihreällä laserilla, jonka aallonpituus on $532\\,\\text{nm}$. Valo osui hilaan kohtisuoraan, ja hilan ja varjostimen etäisyys oli $L = 1{,}500\\,\\text{m}$. Opiskelija mittasi, kuinka kaukana keskimaksimista kertalukujen $k = 1$, $2$ ja $3$ maksimit ovat varjostimella. Etäisyys $x$ on keskimaksimin ja maksimin välinen, ja sen lukemaepävarmuus on $\\pm 2\\,\\text{mm}$.\n\n| $k$ | $1$ | $2$ | $3$ |\n|---|---|---|---|\n| $x\\ (\\text{m})$ | $0{,}243$ | $0{,}503$ | $0{,}822$ |",
    "parts": [
     {
      "id": "a",
@@ -687,7 +687,7 @@
      "id": "d",
      "kind": "word",
      "points": 5,
-     "text": "Hilaa valaistaan nyt valkoisella valolla. Kuvaile, millainen kuvio varjostimelle syntyy keskimaksimin ja ensimmäisen kertaluvun maksimien kohdalle, ja selitä kuvio aaltoliikkeen avulla.",
+     "text": "Hilaa valaistaan nyt valkoisella valolla. Kuvaile, millainen kuvio varjostimelle syntyy keskimaksimin ja ensimmäisen kertaluvun maksimien kohdalle, selitä kuvio aaltoliikkeen avulla ja kerro, mitä tapahtuu korkeammilla kertaluvuilla.",
      "criteria": [
       {
        "text": "Toteaa, että keskimaksimi on valkoinen, koska kaikilla aallonpituuksilla aaltojen matkaero on nolla ja ne vahvistavat toisiaan samaan suuntaan.",
@@ -728,63 +728,34 @@
    "title": "Tuulipuiston sähkön siirto",
    "source": "example",
    "source_note": "Tilanne, kaapelin resistanssi ja hinnat on laadittu esimerkiksi.",
-   "text": "Rannikolle suunnitellaan tuulipuistoa, jonka generaattorit tuottavat tehon $12\\,\\text{MW}$ jännitteellä $20\\,\\text{kV}$. Teho siirretään $40\\,\\text{km}$:n päähän kaapelilla, jonka kokonaisresistanssi on $4{,}8\\,\\Omega$. Laskuissa käytetään yksinkertaista mallia: siirto lasketaan kuin tasavirralla, teho on $P = UI$, ja kaapelin virta on sama kuin siirtojännitteen virta. Puisto tuottaa tehon $12\\,\\text{MW}$ vastaavan energian vuodessa $4000\\,\\text{h}$ ajan, ja häviöenergian arvo on $50\\,\\text{€/MWh}$.\\n\\n| Vaihtoehto | Siirtojännite | Lisäkustannus |\n|---|---|---|\n| A: suora siirto | $20\\,\\text{kV}$ | $0$ |\n| B: muuntajat molemmissa päissä | $110\\,\\text{kV}$ | $3{,}0\\,\\text{M€}$ |",
+   "text": "Rannikolle suunnitellaan tuulipuistoa, jonka generaattorit tuottavat tehon $12\\,\\text{MW}$ jännitteellä $20\\,\\text{kV}$. Teho siirretään $40\\,\\text{km}$:n päähän kaapelilla, jonka kokonaisresistanssi on $4{,}8\\,\\Omega$. Laskuissa kaapelin resistanssi oletetaan vakioksi ja siirto lasketaan kuin tasavirralla. Puisto tuottaa tehon $12\\,\\text{MW}$ vastaavan energian vuodessa $4000\\,\\text{h}$ ajan, ja häviöenergian arvo on $50\\,\\text{€/MWh}$.\n\n| Vaihtoehto | Siirtojännite | Lisäkustannus |\n|---|---|---|\n| A: suora siirto | $20\\,\\text{kV}$ | $0$ |\n| B: muuntajat molemmissa päissä | $110\\,\\text{kV}$ | $3{,}0\\,\\text{M€}$ |",
    "parts": [
     {
      "id": "a",
      "kind": "calc",
-     "points": 4,
-     "text": "Laske vaihtoehdossa A kaapelin virta ja häviöteho sekä häviön osuus siirrettävästä tehosta.",
+     "points": 8,
+     "text": "Vertaa vaihtoehtoja A ja B siirtohäviöiden kannalta: selvitä, kuinka suuri osa tuotetusta tehosta muuttuu lämmöksi kaapelissa kummassakin vaihtoehdossa. Valitse itse laskettavat suureet ja perustele, miksi tulokset eroavat.",
      "answer": [
       {
-       "name": "I",
+       "name": "IA",
        "value": 600.0,
        "unit": "A",
        "tolerance": 0.02
       },
       {
-       "name": "Ph",
+       "name": "PhA",
        "value": 1728000.0,
        "unit": "W",
        "tolerance": 0.02
-      }
-     ],
-     "criteria": [
-      {
-       "key": "equation",
-       "points": 1,
-       "detail": "Virta $I = P / U$ ja kaapelin häviöteho $P_\\text{h} = RI^2$."
       },
       {
-       "key": "calculation",
-       "points": 1
-      },
-      {
-       "key": "units_precision",
-       "points": 1,
-       "detail": "$I = 600\\,\\text{A}$ ja $P_\\text{h} \\approx 1{,}7\\,\\text{MW}$."
-      },
-      {
-       "key": "reasonableness",
-       "points": 1,
-       "detail": "Häviöt ovat $14\\,\\%$ tehosta, mikä on liian paljon käytännön siirrolle."
-      }
-     ]
-    },
-    {
-     "id": "b",
-     "kind": "calc",
-     "points": 4,
-     "text": "Laske sama vaihtoehdossa B.",
-     "answer": [
-      {
-       "name": "I",
+       "name": "IB",
        "value": 109.1,
        "unit": "A",
        "tolerance": 0.02
       },
       {
-       "name": "Ph",
+       "name": "PhB",
        "value": 57100.0,
        "unit": "W",
        "tolerance": 0.02
@@ -792,31 +763,42 @@
      ],
      "criteria": [
       {
+       "text": "Valitsee mallin itse: siirrettävästä tehosta ja jännitteestä saadaan kaapelin virta, ja kaapelin resistanssissa virta tuottaa lämpötehon.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
        "key": "equation",
-       "points": 1,
-       "detail": "Virta kaapelissa $I = P / U$ siirtojännitteellä $110\\,\\text{kV}$ ja $P_\\text{h} = RI^2$."
+       "points": 2,
+       "detail": "Virta $I = P/U$ ja häviöteho $P_\\text{h} = RI^2$ kummallekin siirtojännitteelle."
       },
       {
        "key": "calculation",
-       "points": 1
+       "points": 2,
+       "detail": "Vaihtoehto A: $600\\,\\text{A}$ ja $1{,}73\\,\\text{MW}$; vaihtoehto B: $109\\,\\text{A}$ ja $57{,}1\\,\\text{kW}$."
       },
       {
        "key": "units_precision",
        "points": 1,
-       "detail": "$I \\approx 109\\,\\text{A}$ ja $P_\\text{h} \\approx 57\\,\\text{kW}$."
+       "detail": "Muuntaa kilovoltit ja megawatit SI-yksiköiksi; häviöt $14\\,\\%$ ja $0{,}48\\,\\%$ tehosta."
+      },
+      {
+       "key": "reasonableness",
+       "points": 1,
+       "detail": "Arvioi, että $14\\,\\%$:n häviö on liian suuri käytännön siirrolle."
       },
       {
        "key": "conclusion",
        "points": 1,
-       "detail": "Häviö on $0{,}48\\,\\%$ tehosta ja $30$-kertaisesti pienempi kuin vaihtoehdossa A, koska virta on $5{,}5$-kertaisesti pienempi."
+       "detail": "Perustelee eron: samalla teholla jännite $5{,}5$-kertainen, virta $5{,}5$ kertaa pienempi ja häviö neliöllisesti $30$ kertaa pienempi."
       }
      ]
     },
     {
-     "id": "c",
+     "id": "b",
      "kind": "calc",
      "points": 4,
-     "text": "Nostomuuntajan toisiokäämissä on $2750$ kierrosta. Montako kierrosta ensiökäämissä on, ja mikä on ensiökäämin virta?",
+     "text": "Vaihtoehdossa B muuntaja nostaa jännitteen $20\\,\\text{kV}$:sta $110\\,\\text{kV}$:iin. Sen $110\\,\\text{kV}$:n puolella on $2750$ kierrosta. Määritä $20\\,\\text{kV}$:n puolen kierrosluku ja virta.",
      "answer": [
       {
        "name": "N",
@@ -842,7 +824,7 @@
        "points": 1
       },
       {
-       "text": "Päättelee, että ideaalisessa muuntajassa teho säilyy, joten ensiövirta on $I_1 = P / U_1 = 600\\,\\text{A}$.",
+       "text": "Päättelee, että ideaalisessa muuntajassa teho säilyy, joten $20\\,\\text{kV}$:n puolen virta on $P / U = 600\\,\\text{A}$.",
        "tag": "transfer",
        "points": 1
       },
@@ -854,7 +836,7 @@
      ]
     },
     {
-     "id": "d",
+     "id": "c",
      "kind": "calc",
      "points": 4,
      "text": "Laske, kuinka paljon rahaa vaihtoehto B säästää vuodessa häviöenergian arvossa vaihtoehtoon A verrattuna, ja kuinka monessa vuodessa muuntajien lisäkustannus maksaa itsensä takaisin.",
@@ -891,7 +873,7 @@
      ]
     },
     {
-     "id": "e",
+     "id": "d",
      "kind": "word",
      "points": 4,
      "text": "Arvioi laskujen oletuksia ja valitse vaihtoehdoista kannattavampi. Mitkä tekijät voisivat muuttaa johtopäätöstä?",
@@ -924,7 +906,7 @@
    "title": "Hehkulampun spektri",
    "source": "example",
    "source_note": "Mittaustulokset on laadittu esimerkiksi, eivätkä ne ole oikean mittauksen tuloksia. Volframin sulamispiste $3695\\,\\text{K}$ on taulukkoarvo.",
-   "text": "Opiskelija mittasi spektrometrillä hehkulampun langan säteilyn spektriä eri lämpötiloissa. Langan lämpötila $T$ arvioitiin sen resistanssin muutoksesta, ja arvion epävarmuus on noin $\\pm 50\\,\\text{K}$. Spektrin huipun aallonpituus $\\lambda_\\text{max}$ luettiin spektristä, ja sen epävarmuus on noin $\\pm 15\\,\\text{nm}$. Opiskelija oletti, että lanka säteilee likimain mustan kappaleen tavoin.\\n\\n| $T\\ (\\text{K})$ | $2200$ | $2400$ | $2600$ | $2800$ | $3000$ |\n|---|---|---|---|---|---|\n| $\\lambda_\\text{max}\\ (\\text{nm})$ | $1262$ | $1139$ | $1070$ | $975$ | $921$ |",
+   "text": "Opiskelija mittasi spektrometrillä hehkulampun langan säteilyn spektriä eri lämpötiloissa. Langan lämpötila $T$ arvioitiin sen resistanssin muutoksesta, ja arvion epävarmuus on noin $\\pm 50\\,\\text{K}$. Spektrin huipun aallonpituus $\\lambda_\\text{max}$ luettiin spektristä, ja sen epävarmuus on noin $\\pm 15\\,\\text{nm}$. Opiskelija oletti, että lanka säteilee likimain mustan kappaleen tavoin.\n\n| $T\\ (\\text{K})$ | $2200$ | $2400$ | $2600$ | $2800$ | $3000$ |\n|---|---|---|---|---|---|\n| $\\lambda_\\text{max}\\ (\\text{nm})$ | $1262$ | $1139$ | $1070$ | $975$ | $921$ |",
    "parts": [
     {
      "id": "a",
@@ -933,7 +915,7 @@
      "text": "Tutki sopivan kuvaajan avulla, miten spektrin huipun aallonpituus riippuu lämpötilasta.",
      "criteria": [
       {
-       "text": "Valitsee muuttujat, joilla riippuvuus on suora: $\\lambda_\\text{max}$ lämpötilan käänteisluvun $1/T$ funktiona ($1/T \\approx 4{,}55$, $4{,}17$, $3{,}85$, $3{,}57$ ja $3{,}33 \\cdot 10^{-4}\\,\\text{K}^{-1}$).",
+       "text": "Valitsee muuttujat, joilla riippuvuus on suora: $\\lambda_\\text{max}$ ja $1/T$ (tai $T$ ja $1/\\lambda_\\text{max}$), ja laskee käänteisluvut oikein (esimerkiksi $1/T \\approx 4{,}55$, $4{,}17$, $3{,}85$, $3{,}57$ ja $3{,}33 \\cdot 10^{-4}\\,\\text{K}^{-1}$).",
        "tag": "transfer",
        "points": 1
       },
@@ -971,7 +953,7 @@
       {
        "key": "graph_read",
        "points": 1,
-       "detail": "Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(2{,}0 \\cdot 10^{-4}\\,\\text{K}^{-1};\\ 550\\,\\text{nm})$ ja $(4{,}0 \\cdot 10^{-4}\\,\\text{K}^{-1};\\ 1100\\,\\text{nm})$."
+       "detail": "Kulmakerroin määritetään kuvaajalta: joko luetaan suoralta kaksi kaukana toisistaan olevaa pistettä, esimerkiksi $(2{,}0 \\cdot 10^{-4}\\,\\text{K}^{-1};\\ 550\\,\\text{nm})$ ja $(4{,}0 \\cdot 10^{-4}\\,\\text{K}^{-1};\\ 1100\\,\\text{nm})$, tai käytetään laskentaohjelman sovitusta."
       },
       {
        "key": "units_precision",
@@ -1017,7 +999,7 @@
      "id": "d",
      "kind": "calc",
      "points": 4,
-     "text": "Ihmisen ihon lämpötila on $33\\,{}^\\circ\\text{C}$. Laske ihon säteilyn spektrin huipun aallonpituus kirjallisuuden arvolla $b$ ja päättele, mihin sähkömagneettisen säteilyn lajiin säteily kuuluu. Miksi lämpökamera näkee ihon, vaikka pimeässä silmä ei näe?",
+     "text": "Ihmisen ihon lämpötila on $33\\,{}^\\circ\\text{C}$. Laske ihon säteilyn spektrin huipun aallonpituus kirjallisuuden arvolla $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$ ja päättele, mihin sähkömagneettisen säteilyn lajiin säteily kuuluu. Miksi lämpökamera näkee ihon, vaikka pimeässä silmä ei näe?",
      "answer": {
       "value": 9.47,
       "unit": "µm",
@@ -1050,7 +1032,7 @@
      "id": "e",
      "kind": "calc",
      "points": 4,
-     "text": "Hehkulangan volframi sulaa lämpötilassa $3695\\,\\text{K}$. Laske mallin avulla, kuinka kuuma lanka olisi, jos sen spektrin huippu olisi näkyvän valon keskellä, $550\\,\\text{nm}$:ssä, ja arvioi mallin perusteella, mitä tästä seuraa lampun hyötysuhteelle. Mitä rajoituksia päättelyssä on?",
+     "text": "Hehkulangan volframi sulaa lämpötilassa $3695\\,\\text{K}$. Käytä kirjallisuuden arvoa $b = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$. Laske mallin avulla, kuinka kuuma lanka olisi, jos sen spektrin huippu olisi näkyvän valon keskellä, $550\\,\\text{nm}$:ssä, ja arvioi mallin perusteella, mitä tästä seuraa lampun hyötysuhteelle. Mitä rajoituksia päättelyssä on?",
      "answer": {
       "value": 5270.0,
       "unit": "K",

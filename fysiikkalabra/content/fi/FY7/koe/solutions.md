@@ -13,28 +13,28 @@
 **Perustelu:** Indusoituva jännite on $|e| = N\tfrac{\Delta\Phi}{\Delta t}$, ja hetki $4{,}5\,\text{s}$ on jaksolla $4{,}0\,\text{s}$–$5{,}5\,\text{s}$, jolla vuo pienenee $0{,}6\,\text{mWb}$ ajassa $1{,}5\,\text{s}$. Siis $|e| = 200 \cdot \tfrac{0{,}6 \cdot 10^{-3}\,\text{Wb}}{1{,}5\,\text{s}} = 0{,}08\,\text{V}$. Arvo $0{,}06\,\text{V}$ on ensimmäisen jakson ($0$–$2\,\text{s}$) jännite, ja $0{,}12\,\text{V}$ saadaan, kun aikaväli unohdetaan ($200 \cdot 0{,}6\,\text{mWb}$). Arvo $0{,}40\,\text{mV}$ on vuon muutosnopeus $\tfrac{0{,}6\,\text{mWb}}{1{,}5\,\text{s}}$ ilman kierroslukua $200$.
 
 ### e)
-**Perustelu:** Putoava magneetti muuttaa putken seinämän läpi kulkevaa magneettivuota, ja sähkömagneettisessa induktiossa kuparissa syntyy sähkökenttä, joka ajaa pyörrevirtoja. Lenzin lain mukaan virtojen magneettikenttä vastustaa vuon muutosta eli magneetin liikettä, ja liike-energiaa muuttuu putken sisäenergiaksi. Muovi on eriste, joten siinä pyörrevirtoja ei synny ja magneetti putoaa lähes vapaasti. Kupari ei ole ferromagneettista: magneetti ei vedä sitä puoleensa, ja ilmanvastus on kummassakin putkessa sama. Magneetti ei myöskään varaudu.
+**Perustelu:** Putoava magneetti muuttaa putken seinämän läpi kulkevaa magneettivuota, ja sähkömagneettisessa induktiossa kuparissa syntyy sähkökenttä, joka ajaa pyörrevirtoja. Lenzin lain mukaan virtojen magneettikenttä vastustaa vuon muutosta eli magneetin liikettä, ja magneetin mekaanista energiaa (putoamisen myötä pienenevää potentiaalienergiaa, kun nopeus on vakio) muuttuu putken sisäenergiaksi. Muovi on eriste, joten siinä pyörrevirtoja ei synny ja magneetti putoaa lähes vapaasti. Kupari ei ole ferromagneettista: magneetti ei vedä sitä puoleensa, ja ilmanvastus on kummassakin putkessa sama. Magneetti ei myöskään varaudu.
 
 ### f)
-**Perustelu:** Pyörivän käämin jännitteen huippuarvo on $e_0 = NBA \cdot 2\pi f$, joka on suoraan verrannollinen taajuuteen. Kun pyörimisnopeus ja siis taajuus kaksinkertaistuvat, $e_0$ kaksinkertaistuu ja jakso $T = 1/f$ puolittuu. Vaihtoehto, jossa jakso kaksinkertaistuu, sekoittaa jakson ja taajuuden. Vaihtoehto, jossa $e_0$ pysyy samana, perustuu siihen, että vuo $BA$ ei muutu, mutta jännite riippuu vuon muutosnopeudesta, joka kasvaa nopeammassa pyörimisessä.
+**Perustelu:** Ensimmäinen suodin päästää läpi vain yhden suunnan mukaisesti polarisoituneen valon, ja toinen, siihen nähden kohtisuorassa oleva suodin pysäyttää sen. Kun väliin asetetaan $45^\circ$ kulmassa oleva suodin, se päästää läpi ensimmäisen suotimen valon komponentin, joka on sen läpäisysuunnassa, ja läpäissyt valo on polarisoitunut tämän suotimen suuntaan. Tällä valolla on komponentti myös viimeisen suotimen läpäisysuunnassa, joten osa valosta pääsee läpi, vaikka intensiteetti on pienempi kuin alussa. Suodin ei siis vain vaimenna: se muuttaa polarisaation suuntaa. Vaihtoehto, jossa valo pääsee täysin läpi, unohtaa, että jokainen suodin pysäyttää suuntaansa vastaan kohtisuoran komponentin. Vaihtoehto, jossa suodin kääntää polarisaation takaisin, ei pidä paikkaansa, koska läpäissyt valo on polarisoitunut keskimmäisen suotimen suuntaan eikä ensimmäisen.
 
 ### g)
 **Perustelu:** Samalla teholla $P = UI$ virta on $I = P/U$, joten kymmenkertainen jännite tarkoittaa kymmenesosaa virrasta. Häviöteho on $P_\text{h} = RI^2$, joten se pienenee $10^2 = 100$-kertaisesti eli sadasosaan. Kymmenesosa tulee, kun virran neliöllistä vaikutusta ei huomioida. Häviöteho ei voi kasvaa, koska jännitteen nosto pienentää virtaa; kasvu syntyisi, jos virheellisesti käytettäisiin kaavaa $P_\text{h} = U^2/R$ johdon yli olevalle koko jännitteelle.
 
 ### h)
-**Perustelu:** Aallonpituus saadaan yhtälöstä $\lambda = c/f$: mikroaalloille $\tfrac{3{,}0 \cdot 10^{8}\,\text{m/s}}{2{,}45 \cdot 10^{9}\,\text{Hz}} \approx 0{,}12\,\text{m}$ ja FM-radiolle $\tfrac{3{,}0 \cdot 10^{8}\,\text{m/s}}{1{,}00 \cdot 10^{8}\,\text{Hz}} \approx 3{,}0\,\text{m}$. Järjestys lyhimmästä pisimpään on röntgensäteily ($0{,}1\,\text{nm}$), punainen valo ($700\,\text{nm}$), mikroaallot ($12\,\text{cm}$) ja FM-radio ($3\,\text{m}$). Järjestys, jossa mikroaallot ja FM-radio on vaihdettu, vertaa taajuuksia väärin päin: pienempi taajuus tarkoittaa pidempää aallonpituutta. Vaihtoehto, jossa FM-radio on ensimmäisenä, antaa järjestyksen taajuuden mukaan käänteisesti.
+**Perustelu:** Aallonpituus saadaan yhtälöstä $\lambda = c/f$: mikroaalloille $\tfrac{3{,}0 \cdot 10^{8}\,\text{m/s}}{2{,}45 \cdot 10^{9}\,\text{Hz}} \approx 0{,}12\,\text{m}$ ja FM-radiolle $\tfrac{3{,}0 \cdot 10^{8}\,\text{m/s}}{1{,}00 \cdot 10^{8}\,\text{Hz}} \approx 3{,}0\,\text{m}$. Järjestys lyhimmästä pisimpään on röntgensäteily ($0{,}1\,\text{nm}$), punainen valo ($700\,\text{nm}$), mikroaallot ($12\,\text{cm}$) ja FM-radio ($3\,\text{m}$). Järjestys, jossa mikroaallot ja FM-radio on vaihdettu, vertaa taajuuksia väärin päin: pienempi taajuus tarkoittaa pidempää aallonpituutta. Vaihtoehto, jossa FM-radio on ensimmäisenä, on säteilyt taajuuden kasvun mukaan eikä aallonpituuden: taajuuden kasvaessa aallonpituus pienenee.
 
 ### i)
 **Perustelu:** Kokonaisheijastus ytimestä vaippaan alkaa rajakulmasta $\alpha_\text{r}$, jolle $n_1\sin\alpha_\text{r} = n_2\sin 90^\circ$, joten $\sin\alpha_\text{r} = \tfrac{1{,}44}{1{,}50} = 0{,}96$ ja $\alpha_\text{r} \approx 73{,}7^\circ$. Kulmassa $76^\circ$ kulma on rajakulmaa suurempi, ja valo heijastuu kokonaan; kulmassa $70^\circ$ se on pienempi, ja osa valosta taittuu vaippaan. Tiheämmästä aineesta tuleminen on välttämätön mutta ei riittävä ehto, joten väite kummastakin kulmasta ei toimi. Pienempi kulma ei lisää kokonaisheijastusta: päinvastoin.
 
 ### j)
-**Perustelu:** Ilmasta tiheämpään aineeseen heijastuessa aalto vaihtaa vaihetta puoli aallonpituutta, mutta kalvon takapinnalla (kalvosta ilmaan) vaihe ei muutu. Kun kalvo on paljon aallonpituutta ohuempi, matkaero on lähes nolla, joten kahdesta pinnasta heijastuneet aallot ovat vastakkaisissa vaiheissa ja kumoavat toisensa kaikilla aallonpituuksilla: reuna on musta. Kalvo ei absorboi valoa; sen läpi valo kulkee ja kumoutuu vain heijastuksessa. Vaihtoehto, jossa kumoutuminen vaatii puolen aallonpituuden paksuutta, on väärä: kalvon paksuuden ollessa $\tfrac{\lambda}{2n}$ heijastus on päinvastoin voimakas.
+**Perustelu:** Ilmasta tiheämpään aineeseen heijastuessa aalto vaihtaa vaihetta puoli aallonpituutta, mutta kalvon takapinnalla (kalvosta ilmaan) vaihe ei muutu. Kun kalvo on paljon aallonpituutta ohuempi, matkaero on lähes nolla, joten kahdesta pinnasta heijastuneet aallot ovat vastakkaisissa vaiheissa ja kumoavat toisensa kaikilla aallonpituuksilla: reuna on musta. Kalvo ei absorboi valoa; sen läpi valo kulkee ja kumoutuu vain heijastuksessa. Vaihtoehto, jossa kumoutuminen vaatii paksuutta $\tfrac{\lambda}{2}$, on väärä: yhden vaihekäännön vuoksi heijastus on voimakkain paksuudella $\tfrac{\lambda}{4n}$, ja paksuudella $\tfrac{\lambda}{2n}$ matkaero $2nd = \lambda$ kumoaa vain sen aallonpituuden, ei kaikkia; reuna on kuitenkin paljon ohuempi kuin aallonpituus.
 
 ### Yleisiä virheitä
 - Luullaan, että magneetin navat voi erottaa sahaamalla (a).
 - Sekoitetaan kierrosaika ja nopeus tai etäisyys ja sen neliö (b, c).
 - Unohdetaan kierrosluku tai vuon muutoksen aikaväli indusoituvan jännitteen laskussa (d).
-- Sekoitetaan taajuus ja jakso tai unohdetaan, että häviöteho riippuu virran neliöstä (f, g).
+- Luullaan, että suodin vain vaimentaa valoa eikä muuta polarisaation suuntaa (f), tai unohdetaan, että häviöteho riippuu virran neliöstä (g).
 - Verrataan taajuuksia aallonpituuksina väärin päin (h) tai sekoitetaan rajakulman suunta (i).
 
 ## fy7-k2
@@ -106,8 +106,8 @@
   <line x1="100" y1="284.5" x2="218.5" y2="284.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="455" y1="112" x2="455" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="100" y1="112" x2="455" y2="112" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <foreignObject x="228.5" y="248.5" width="94" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(80;\ 1{,}4)$</span></div></foreignObject>
-  <foreignObject x="340" y="128" width="105" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(240;\ 4{,}3)$</span></div></foreignObject>
+  <foreignObject x="228.5" y="246" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(80;\ 1{,}4)$</span></div></foreignObject>
+  <foreignObject x="321" y="125.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(240;\ 4{,}3)$</span></div></foreignObject>
 </svg>
 
 **Mallivastaus:** Pisteet asettuvat nousevalle suoralle, joten $r^2$ on likimain suoraan verrannollinen jännitteeseen $U$. Suora kulkee kaikkien virhepalkkien lähellä, eikä pisteitä yhdistetä murtoviivaksi. Virhepalkki $\pm 2r\Delta r$ saadaan, koska neliöinti kaksinkertaistaa suhteellisen virheen: $\Delta(r^2) = 2r\Delta r$.
@@ -143,6 +143,9 @@
 - Kuvaajan kulmakerroin sekoitetaan ominaisvaraukseen: $e/m_\text{e}$ on $\tfrac{2}{B^2 k}$, ei $k$ eikä $\tfrac{k B^2}{2}$.
 - Virheen epävarmuus lasketaan yhdestä pisteestä eikä ääriviivoista.
 - Sanotaan, että magneettikenttä kiihdyttää elektronia nopeammaksi.
+
+### Hyväksytään myös
+- Kohdassa b kulmakerroin laskentaohjelman pienimmän neliösumman sovituksesta ($1{,}74 \cdot 10^{11}\,\text{C/kg}$) kuvaajalta luetun kulmakertoimen sijaan, kun tulos on välillä $1{,}65$–$1{,}83 \cdot 10^{11}\,\text{C/kg}$.
 
 ## fy7-k3
 
@@ -182,6 +185,9 @@
 - Teho lasketaan $P = IlB$ ilman nopeutta tai jännite sijoitetaan väärään kaavaan (c).
 - Sanotaan, että induktiovirta "luo energiaa" (d).
 
+### Hyväksytään myös
+- Kohdassa b virran suunta voimasta varauksiin, $q\overline{v} \times \overline{B}$, kun tulos on sauvassa ylöspäin ja perustelu on selvä; Lenzin lain perustelu on silti arvioinnin kohteena.
+
 ## fy7-k4
 
 ### a)
@@ -192,7 +198,7 @@
 **Kaava:** $f = \dfrac{1}{T}$ ja $U = \dfrac{e_0}{\sqrt{2}}$
 **Muunnokset:** $T = 25\,\text{ms} = 0{,}025\,\text{s}$
 **Sijoitus:** $f = \dfrac{1}{0{,}025\,\text{s}} = 40\,\text{Hz}$ ja $U = \dfrac{17{,}5\,\text{V}}{\sqrt{2}} = 12{,}4\,\text{V}$
-**Vastaus:** Taajuus on $40\,\text{Hz}$ ja tehollinen jännite $12{,}4\,\text{V}$ (kolme merkitsevää numeroa luettuun huippuarvoon nähden).
+**Vastaus:** Taajuus on $40\,\text{Hz}$ ja tehollinen jännite noin $12\,\text{V}$ ($12{,}4\,\text{V}$; huippuarvo luetaan ruudukosta noin $0{,}5\,\text{V}$:n tarkkuudella, joten kaksi merkitsevää numeroa riittää).
 **Järkevyys:** Tehollinen jännite on huippuarvoa pienempi, noin $71\,\%$ siitä, ja taajuus on kokoluokaltaan sama kuin verkkotaajuus $50\,\text{Hz}$.
 
 ### b)
@@ -272,36 +278,26 @@
 ## fy7-k6
 
 ### a)
-**Annettu:** $P = 12\,\text{MW}$, $U = 20\,\text{kV}$, $R = 4{,}8\,\Omega$
-**Kysytty:** virta $I$, häviöteho $P_\text{h}$ ja häviön osuus
-**Periaate:** Siirrettävä teho määrää virran siirtojännitteellä. Johdon resistanssissa virta tuottaa lämpöä.
-**Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$, ja $P_\text{h} = RI^2$
-**Muunnokset:** $12\,\text{MW} = 12 \cdot 10^{6}\,\text{W}$ ja $20\,\text{kV} = 20 \cdot 10^{3}\,\text{V}$
-**Sijoitus:** $I = \dfrac{12 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 600\,\text{A}$, $P_\text{h} = 4{,}8\,\Omega \cdot (600\,\text{A})^2 = 1{,}728 \cdot 10^{6}\,\text{W}$ ja osuus $\dfrac{1{,}728\,\text{MW}}{12\,\text{MW}} = 0{,}144$
-**Vastaus:** Virta on $600\,\text{A}$, häviöteho noin $1{,}7\,\text{MW}$ ja häviön osuus $14\,\%$.
-**Järkevyys:** Seitsemäsosa tehosta menisi lämmöksi, mikä on liian suuri häviö käytännön voimajohdolle; jännitehäviö $RI = 2{,}9\,\text{kV}$ on $14\,\%$ siirtojännitteestä.
+**Annettu:** $P = 12\,\text{MW}$, $R = 4{,}8\,\Omega$, siirtojännite $20\,\text{kV}$ (A) tai $110\,\text{kV}$ (B)
+**Kysytty:** kaapelin häviöiden osuus tuotetusta tehosta kummassakin vaihtoehdossa
+**Periaate:** Siirrettävä teho ja siirtojännite määräävät kaapelissa kulkevan virran. Kaapelin resistanssissa virta muuttaa osan energiasta lämmöksi, ja häviöteho riippuu virran neliöstä. Siksi lasketaan virta ja häviöteho kummallekin jännitteelle.
+**Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$, ja häviöteho $P_\text{h} = RI^2$
+**Muunnokset:** $12\,\text{MW} = 12 \cdot 10^{6}\,\text{W}$, $20\,\text{kV} = 20 \cdot 10^{3}\,\text{V}$ ja $110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$
+**Sijoitus:** A: $I = \dfrac{12 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 600\,\text{A}$ ja $P_\text{h} = 4{,}8\,\Omega \cdot (600\,\text{A})^2 = 1{,}728 \cdot 10^{6}\,\text{W}$, osuus $\dfrac{1{,}728\,\text{MW}}{12\,\text{MW}} = 0{,}144$. B: $I = \dfrac{12 \cdot 10^{6}\,\text{W}}{110 \cdot 10^{3}\,\text{V}} = 109{,}1\,\text{A}$ ja $P_\text{h} = 4{,}8\,\Omega \cdot (109{,}1\,\text{A})^2 = 5{,}71 \cdot 10^{4}\,\text{W}$, osuus $0{,}0048$
+**Vastaus:** Vaihtoehdossa A virta on $600\,\text{A}$ ja häviöteho noin $1{,}7\,\text{MW}$ eli $14\,\%$ tehosta. Vaihtoehdossa B virta on noin $109\,\text{A}$ ja häviöteho noin $57\,\text{kW}$ eli $0{,}48\,\%$. Ero johtuu siitä, että jännite on $5{,}5$-kertainen, virta $5{,}5$ kertaa pienempi ja häviöteho virran neliön mukaan $30$ kertaa pienempi.
+**Järkevyys:** Seitsemäsosa tehosta lämmöksi on liian suuri häviö käytännön voimajohdolle; jännitehäviö $RI = 2{,}9\,\text{kV}$ on $14\,\%$ siirtojännitteestä. B:n häviö alle prosentti on tavallinen suuruusluokka.
 
 ### b)
-**Annettu:** $P = 12\,\text{MW}$, $U = 110\,\text{kV}$, $R = 4{,}8\,\Omega$
-**Kysytty:** virta ja häviöteho vaihtoehdossa B
-**Periaate:** Johdossa kulkee sama teho, mutta suuremmalla jännitteellä, joten virta on pienempi.
-**Kaava:** $I = \dfrac{P}{U}$ ja $P_\text{h} = RI^2$
-**Muunnokset:** $110\,\text{kV} = 110 \cdot 10^{3}\,\text{V}$
-**Sijoitus:** $I = \dfrac{12 \cdot 10^{6}\,\text{W}}{110 \cdot 10^{3}\,\text{V}} = 109{,}1\,\text{A}$ ja $P_\text{h} = 4{,}8\,\Omega \cdot (109{,}1\,\text{A})^2 = 5{,}71 \cdot 10^{4}\,\text{W}$
-**Vastaus:** Virta on noin $109\,\text{A}$ ja häviöteho noin $57\,\text{kW}$, eli $0{,}48\,\%$ siirrettävästä tehosta.
-**Järkevyys:** Jännite on $5{,}5$-kertainen, virta $5{,}5$ kertaa pienempi ja häviö $5{,}5^2 \approx 30$ kertaa pienempi kuin kohdassa a: $\tfrac{1{,}728\,\text{MW}}{57{,}1\,\text{kW}} \approx 30$.
-
-### c)
 **Annettu:** $U_1 = 20\,\text{kV}$, $U_2 = 110\,\text{kV}$, $N_2 = 2750$, $P = 12\,\text{MW}$
-**Kysytty:** ensiön kierrosluku $N_1$ ja virta $I_1$
+**Kysytty:** $20\,\text{kV}$:n puolen kierrosluku $N_1$ ja virta $I_1$
 **Periaate:** Ideaalisessa muuntajassa jännitteet suhtautuvat kuten kierrosluvut ja teho säilyy.
 **Kaava:** muuntaja $\dfrac{U_1}{U_2} = \dfrac{N_1}{N_2} = \dfrac{I_2}{I_1}$, josta $N_1 = \dfrac{N_2 U_1}{U_2}$ ja ensiövirralle $I_1 = \dfrac{P}{U_1}$
 **Muunnokset:** Kilovolttien suhde riittää.
 **Sijoitus:** $N_1 = \dfrac{2750 \cdot 20\,\text{kV}}{110\,\text{kV}} = 500$ ja $I_1 = \dfrac{12 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 600\,\text{A}$
 **Vastaus:** Ensiökäämissä on $500$ kierrosta ja ensiövirta on $600\,\text{A}$.
-**Järkevyys:** Jännite nousee $5{,}5$-kertaiseksi, joten kierroksia tarvitaan toisiossa $5{,}5$-kertainen määrä ja virta pienenee samassa suhteessa: $\tfrac{600\,\text{A}}{5{,}5} = 109\,\text{A}$, sama kuin kohdassa b.
+**Järkevyys:** Jännite nousee $5{,}5$-kertaiseksi, joten kierroksia tarvitaan toisiossa $5{,}5$-kertainen määrä ja virta pienenee samassa suhteessa: $\tfrac{600\,\text{A}}{5{,}5} = 109\,\text{A}$, sama kuin kohdassa a.
 
-### d)
+### c)
 **Annettu:** $P_\text{h,A} = 1{,}728\,\text{MW}$, $P_\text{h,B} = 57{,}1\,\text{kW}$, $4000\,\text{h}$, $50\,\text{€/MWh}$, lisäkustannus $3{,}0\,\text{M€}$
 **Kysytty:** vuosisäästö ja takaisinmaksuaika
 **Periaate:** Häviöenergia on häviöteho kerrottuna ajalla, ja sen arvo saadaan hinnalla. Takaisinmaksuaika on lisäkustannus jaettuna vuosisäästöllä.
@@ -311,16 +307,16 @@
 **Vastaus:** Vaihtoehto B säästää noin $3{,}3 \cdot 10^{5}\,\text{€}$ vuodessa ja muuntajat maksavat itsensä takaisin noin $9{,}0$ vuodessa.
 **Järkevyys:** Häviöenergian arvo vaihtoehdossa A on noin $346\,000\,\text{€}$ vuodessa, ja B:ssä $11\,400\,\text{€}$ vuodessa; säästö on lähes koko A:n häviön arvo, kuten pitääkin.
 
-### e)
+### d)
 **Kysytty:** oletusten arviointi ja vaihtoehdon valinta
 **Periaate:** Mallin tulokset ovat yhtä luotettavia kuin sen oletukset. Valinta perustellaan luvuilla ja huomioidaan mallin rajat.
-**Mallivastaus:** Malli oletti, että siirto on tasavirtamainen, teho ja jännite ovat vakioita ja kaapelin resistanssi on vakio. Todellisuudessa tuotanto vaihtelee tuulen mukaan, ja häviö riippuu virran neliöstä, joten pienempi teho vähentää häviöitä enemmän kuin tasaisesti; kaapelin resistanssi kasvaa lämpötilan mukana; kolmivaiheisessa vaihtovirrassa tehokerroin ja kapasitiivisuus vaikuttavat; muuntajillakin on omat häviönsä (noin $0{,}5\,\%$), joita ei otettu huomioon; sähkön hinta voi muuttua. Nämä eivät kuitenkaan muuta suuruusluokkaa: vaihtoehdossa A häviö on $14\,\%$ ja B:ssä alle prosentin. B säästää noin $0{,}33\,\text{M€}$ vuodessa ja maksaa $3{,}0\,\text{M€}$:n lisäkustannuksen takaisin noin yhdeksässä vuodessa, joten B kannattaa, jos laitteiden käyttöikä on tätä selvästi pidempi (muuntajat kestävät usein vuosikymmeniä). B:n eristys ja turvallisuus voivat tuoda lisäkustannuksia, mutta A:ssa jännite laskee $14\,\%$ kaapelin päässä, mikä on jo itsessään ongelma. Johtopäätös: valitaan B.
+**Mallivastaus:** Malli oletti, että siirto on tasavirtamainen, teho ja jännite ovat vakioita ja kaapelin resistanssi on vakio. Todellisuudessa tuotanto vaihtelee tuulen mukaan, ja häviö riippuu virran neliöstä, joten pienempi teho vähentää häviöitä enemmän kuin tasaisesti; kaapelin resistanssi kasvaa lämpötilan mukana; kolmivaiheisessa vaihtovirrassa tehokerroin ja kapasitiivisuus vaikuttavat; muuntajillakin on omat häviönsä (noin $0{,}5\,\%$), joita ei otettu huomioon; sähkön hinta voi muuttua. Nämä eivät kuitenkaan muuta suuruusluokkaa: vaihtoehdossa A häviö on $14\,\%$ ja B:ssä alle prosentin. B säästää noin $0{,}33\,\text{M€}$ vuodessa ja maksaa $3{,}0\,\text{M€}$:n lisäkustannuksen takaisin noin yhdeksässä vuodessa, joten B kannattaa, jos laitteiden käyttöikä on tätä selvästi pidempi (muuntajat kestävät usein vuosikymmeniä). B:n eristys ja turvallisuus voivat tuoda lisäkustannuksia, mutta A:ssa jännite laskee $14\,\%$ kaapelin päässä, mikä on jo itsessään ongelma. Kaksi muuntajaa, joiden häviö on $0{,}5\,\%$ kummallakin, hukkaisi noin $120\,\text{kW}$, enemmän kuin B:n kaapeli ($57\,\text{kW}$); yhteensä noin $177\,\text{kW}$ on silti alle kymmenesosa A:n häviöstä $1{,}73\,\text{MW}$, joten B voittaa. Johtopäätös: valitaan B.
 
 ### Yleisiä virheitä
-- Häviöteho lasketaan kaavalla $P_\text{h} = UI$ koko jännitteellä (a, b).
-- Kilovoltit ja megawatit sijoitetaan ilman muunnosta (a, b).
-- Ensiövirraksi otetaan $109\,\text{A}$ (c).
-- Vaihtoehtoa ei perustella luvuilla tai mallin oletuksia ei arvioida (e).
+- Häviöteho lasketaan kaavalla $P_\text{h} = UI$ koko jännitteellä (a).
+- Kilovoltit ja megawatit sijoitetaan ilman muunnosta (a).
+- Ensiövirraksi otetaan $109\,\text{A}$ (b).
+- Vaihtoehtoa ei perustella luvuilla tai mallin oletuksia ei arvioida (d).
 
 ## fy7-k7
 
@@ -373,17 +369,17 @@
   <foreignObject x="432" y="355.5" width="174" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$1/T\ (10^{-4}\,\text{K}^{-1})$</div></foreignObject>
   <foreignObject x="90" y="13.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\lambda_\text{max}\ (\text{nm})$</div></foreignObject>
   <polyline points="100,370 400,74.5" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="372.5" cy="99.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="350" cy="126" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="331" cy="140.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="314.5" cy="161" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
-  <circle cx="300" cy="172.5" r="6.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
   <line x1="220" y1="252" x2="220" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="100" y1="252" x2="220" y2="252" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="340" y1="133.5" x2="340" y2="370" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
   <line x1="100" y1="133.5" x2="340" y2="133.5" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <foreignObject x="230" y="218" width="105" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(2{,}0;\ 550)$</span></div></foreignObject>
-  <foreignObject x="215" y="149.5" width="115" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(4{,}0;\ 1100)$</span></div></foreignObject>
+  <foreignObject x="230" y="215.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(2{,}0;\ 550)$</span></div></foreignObject>
+  <foreignObject x="352" y="149" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(4{,}0;\ 1100)$</span></div></foreignObject>
+  <circle cx="372.5" cy="99.5" r="7.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="350" cy="126" r="7.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="331" cy="140.5" r="7.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="314.5" cy="161" r="7.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="300" cy="172.5" r="7.5" fill="#1971c2" stroke="#ffffff" stroke-width="2"/>
 </svg>
 
 **Mallivastaus:** Pisteet asettuvat suoralle, joka kulkee origon kautta, joten $\lambda_\text{max}$ on kääntäen verrannollinen lämpötilaan: $\lambda_\text{max} = b \cdot \tfrac{1}{T}$. Suoran ei tarvitse kulkea jokaisen pisteen kautta, mutta pisteet ovat lähellä sitä; pisteitä ei yhdistetä murtoviivaksi. Origon kautta kulkeva suora valitaan, koska malli ei sisällä vakiotermiä.
@@ -434,3 +430,8 @@
 - Lämpötila sijoitetaan celsiusasteina (d).
 - Poikkeama selitetään pelkästään "inhimillisillä virheillä", ei verrata satunnaiseen epävarmuuteen (c).
 - Ekstrapolointia (e) pidetään yhtä luotettavana kuin mitattua aluetta.
+
+### Hyväksytään myös
+- Kohdassa a kuvaaja $(1/\lambda_\text{max}, T)$, jossa $T$ on pystyakselilla: suora kulkee origon kautta ja sen kulmakerroin on $\tfrac{1}{b}$.
+- Kohdassa b kulmakerroin laskentaohjelman sovituksesta origon kautta ($2{,}76 \cdot 10^{-3}\,\text{m} \cdot \text{K}$) kahden luetun pisteen sijaan.
+

@@ -36,8 +36,8 @@ def beam():
         for yy in (q - d, q + d): f.line(ax.X(u) - 7, ax.Y(yy), ax.X(u) + 7, ax.Y(yy), COLD, 2.5)
         ax.point(u, q, COLD, 3.5)
     ax.guide(80, B2 + S2 * 80); ax.guide(240, B2 + S2 * 240)
-    f.tex(ax.X(80) + 10, ax.Y(B2 + S2 * 80) - 24, r"(80;\ 1{,}4)", "start", INK, size=20, bg=True)
-    f.tex(ax.X(240) - 10, ax.Y(B2 + S2 * 240) + 28, r"(240;\ 4{,}3)", "end", INK, size=20, bg=True)
+    f.tex(ax.X(80) + 10, ax.Y(B2 + S2 * 80) - 24, r"(80;\ 1{,}4)", "start", INK, bg=True)
+    f.tex(ax.X(240) - 10, ax.Y(B2 + S2 * 240) + 28, r"(240;\ 4{,}3)", "end", INK, bg=True)
     return f.svg()
 
 
@@ -46,10 +46,10 @@ E0 = 17.5; T4 = 25.0
 
 
 def sine():
-    f = Fig("fy7-k4-sin", 420, "Kuvaaja: generaattorin käämin jännite $e$ voltteina ajan $t$ funktiona millisekunteina. "
+    f = Fig("fy7-k4-sin", 450, "Kuvaaja: generaattorin käämin jännite $e$ voltteina ajan $t$ funktiona millisekunteina. "
             "Jännite on sinimuotoinen, huippuarvo on 17,5 volttia ja jakso 25 millisekuntia. Kuvassa on kaksi jaksoa ajanhetkestä nolla hetkeen 50 millisekuntia.")
     ax = Axes(f, (100, 400), (470, 40), x=(0, 55), y=(-20, 20), xticks=[5 * i for i in range(1, 12)], yticks=[-20, -15, -10, -5, 5, 10, 15, 20],
-              xlabel=r"t\ (\text{ms})", ylabel=r"e\ (\text{V})", x_at=0, origin_label=False)
+              xlabel=r"t\ (\text{ms})", ylabel=r"e\ (\text{V})", x_at=0, origin_label=False, ticks_below=True)
     ax.curve(lambda t: E0 * math.sin(2 * math.pi * t / T4), 0, 50, INK, 3)
     return f.svg()
 
@@ -67,10 +67,10 @@ def lamp():
     ax = Axes(f, (100, 370), (400, 70), x=(0, 5), y=(0, 1400), xticks=[1, 2, 3, 4, 5], yticks=[200, 400, 600, 800, 1000, 1200, 1400],
               xlabel=r"1/T\ (10^{-4}\,\text{K}^{-1})", ylabel=r"\lambda_\text{max}\ (\text{nm})")
     ax.line([(0, 0), (5, S7 * 5)], INK, 3)
-    for a, b in zip(INV7, L7): ax.point(a, b, COLD)
     ax.guide(2.0, S7 * 2.0); ax.guide(4.0, S7 * 4.0)
-    f.tex(ax.X(2.0) + 10, ax.Y(S7 * 2.0) - 22, r"(2{,}0;\ 550)", "start", INK, size=20, bg=True)
-    f.tex(ax.X(4.0) - 10, ax.Y(S7 * 4.0) + 28, r"(4{,}0;\ 1100)", "end", INK, size=20, bg=True)
+    f.tex(ax.X(2.0) + 10, ax.Y(S7 * 2.0) - 22, r"(2{,}0;\ 550)", "start", INK, bg=True)
+    f.tex(ax.X(4.0) + 12, ax.Y(S7 * 4.0) + 30, r"(4{,}0;\ 1100)", "start", INK, bg=True)
+    for a, b in zip(INV7, L7): ax.point(a, b, COLD, 7.5)      # the markers on top of the line and the labels
     return f.svg()
 
 

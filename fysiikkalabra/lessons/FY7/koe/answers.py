@@ -100,19 +100,19 @@ out["k5"] = {"theta": [math.degrees(t) for t in th5], "sin": [math.sin(t) for t 
 P6, R6, U_a, U_b = 12e6, 4.8, 20e3, 110e3
 Ia, Ib = P6 / U_a, P6 / U_b
 Pha, Phb = R6 * Ia ** 2, R6 * Ib ** 2
-out["fy7-k6-a-I"] = Ia
-out["fy7-k6-a-Ph"] = Pha
+out["fy7-k6-a-IA"] = Ia
+out["fy7-k6-a-PhA"] = Pha
 N2_6 = 2750
 N1_6 = N2_6 * U_a / U_b
-out["fy7-k6-b-I"] = Ib
-out["fy7-k6-b-Ph"] = Phb
-out["fy7-k6-c-N"] = N1_6
-out["fy7-k6-c-I"] = Ia
+out["fy7-k6-a-IB"] = Ib
+out["fy7-k6-a-PhB"] = Phb
+out["fy7-k6-b-N"] = N1_6
+out["fy7-k6-b-I"] = Ia
 hrs, price, cost_tr = 4000.0, 50.0, 3.0e6               # h/a, EUR/MWh, EUR for both transformers
 Ea, Eb = Pha * hrs / 1e6, Phb * hrs / 1e6               # MWh
 sav = (Ea - Eb) * price
-out["fy7-k6-d-sav"] = sav
-out["fy7-k6-d-pay"] = cost_tr / sav
+out["fy7-k6-c-sav"] = sav
+out["fy7-k6-c-pay"] = cost_tr / sav
 out["k6"] = {"share_a": Pha / P6, "share_b": Phb / P6, "Ea": Ea, "Eb": Eb, "cost_a": Ea * price, "cost_b": Eb * price, "ratio": U_b / U_a,
              "loss_ratio": Pha / Phb, "I_ratio": Ia / Ib, "Phb_kW": Phb / 1e3, "Pha_MW": Pha / 1e6, "Pa_ok": P6 - Pha,
              "Ulinedrop_a": Ia * R6, "dropshare_a": Ia * R6 / U_a, "Ulinedrop_b": Ib * R6, "dropshare_b": Ib * R6 / U_b}
