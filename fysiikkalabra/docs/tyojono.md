@@ -187,6 +187,17 @@ samasta tilanteesta → pohdintakysymys (nyt kysymys on ennen kertaustehtävää
 kerran kaikkiin lukuihin; tehdään vasta, kun kertaustehtävät on korjattu liittymään ilmiöihinsä, ja kirjataan
 CLAUDE.md:hen ja docs/inquiry.md:hen samassa PR:ssä.
 
+## 8k. Opettajan hyväksymä tekstimuutos ohittaa katselmoinnin (opettaja 2026-11-13)
+
+Nyt vain opettajan hyväksymät kuvat (`teacher-figure`) ja puhtaasti visuaaliset simulaatiomuutokset
+(`presentation-only`) voivat siirtää katselmoinnit muutoksen yli. Kun opettaja on itse lukenut ja hyväksynyt
+tekstimuutoksen (esim. fy1-1:n suuruusluokka-kappaleen lyhennys 13.11.), julkaisusääntö vaatii silti täyden
+tiedekatselmoinnin, jos poistetuissa riveissä on kaavoja tai lukuja (#551). Uusi kategoria `teacher-text`, joka toimii
+kuten `teacher-figure`: `reviews.py approve-text <id> [--lang]` kirjaa hyväksytyn muutoksen tarkan diffin tiedostoon
+(esim. `docs/teacher-text.tsv`, ei käsin), `scope` antaa sille none/carry, `verify` johtaa sen uudelleen CI:ssä.
+Rivi kirjataan vain opettajan nimenomaisesta hyväksynnästä; mikä tahansa muu muutos samassa luvussa katselmoidaan
+normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yksin.
+
 ## 9. Esimerkkikokeet FY7 ja FY8 (opettaja 2026-11-13)
 
 FY1–FY6:lla on esimerkkikoe (`content/fi/<COURSE>/koe/`), FY7:llä ja FY8:lla ei. `/exam FY7` ja `/exam FY8`

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 170afbabe559da6d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 14d7fe4a096ab481
+Mode: delta, round 2
 
 ## Blocking
 - none
@@ -9,5 +9,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Word-diff of lesson, inquiry, exit ticket: wording, \tfrac{s}{c}, units on s values; no figures.py change in this part, no figure label moved, so no render.
-- Notation in changed passages is LaTeX with thin-space units; decimal comma/point correct for the language.
+- fy1-2-theory-1280-2.png: the heading "Koko tai etäisyys" fits its column without wrapping, the table is intact (four headers, LaTeX cells with units), and the text after it is unchanged. The heading is also correct for the "Planeettojen radat" and "Tähtien väliset matkat" rows.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -497,6 +497,12 @@ def question_html(q, md, lid, aid):
     return explain_html(q, md, f"{aid}-q")
 
 
+
+_SVG = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">'
+ICON_RESET = _SVG + '<path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>'   # ↺
+ICON_COPY = _SVG + '<rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>'
+
+
 def experiment_html(a, md, lid):
     units = a.get("units", {}); names = a.get("names", {})
     nm = lambda k: tex_name(names.get(k, k))   # the status line typesets its $…$ (inquiry.js)
@@ -528,10 +534,12 @@ def experiment_html(a, md, lid):
     return (f'<div class="experiment" data-initial=\'{esc(json.dumps(a["initial"]))}\' data-locked=\'{esc(json.dumps(a["locked"]))}\' '
             f'data-vary="{esc(a["vary"])}" data-vary-name="{nm(a["vary"])}" data-locked-names=\'{esc(json.dumps([_h.unescape(tex_name(names.get(k, k))) for k in a["locked"]], ensure_ascii=False))}\' data-measure=\'{esc(measure)}\' data-min="{a.get("min", 2)}"' + (f' data-words=\'{esc(json.dumps(words, ensure_ascii=False))}\'' if words else "") + '>'
             f'<div class="intro">{md(a["intro"])}</div>'
-            f'<p class="exp-setup"><strong>{T("inquiry.setup")}</strong> {init}. <strong>{T("inquiry.locked")}</strong> {locked}. <strong>{T("inquiry.varied")}</strong> {tn(a["vary"])}.</p>'
-            f'<div class="exp-controls"><button type="button" class="exp-start">{T("inquiry.exp_start")}</button><button type="button" class="exp-record">{T("inquiry.exp_record")}</button>'
-            f'<button type="button" class="exp-reset">{T("inquiry.exp_reset")}</button>'
-            f'<button type="button" class="exp-copy" disabled>{T("inquiry.exp_copy")}</button>'
+            f'<dl class="exp-setup"><div><dt>{T("inquiry.setup").rstrip(":")}</dt><dd>{init}</dd></div>'
+            f'<div><dt>{T("inquiry.locked").rstrip(":")}</dt><dd>{locked}</dd></div>'
+            f'<div><dt>{T("inquiry.varied").rstrip(":")}</dt><dd>{tn(a["vary"])}</dd></div></dl>'
+            f'<div class="exp-controls"><button type="button" class="exp-start" aria-label="{esc(T("inquiry.exp_start"))}" title="{esc(T("inquiry.exp_start"))}">{T("inquiry.exp_start_short")}</button><button type="button" class="exp-record" aria-label="{esc(T("inquiry.exp_record"))}" title="{esc(T("inquiry.exp_record"))}">{T("inquiry.exp_record_short")}</button>'
+            f'<span class="exp-icons"><button type="button" class="exp-reset exp-icon" aria-label="{esc(T("inquiry.exp_reset"))}" title="{esc(T("inquiry.exp_reset"))}">{ICON_RESET}</button>'
+            f'<button type="button" class="exp-copy exp-icon" aria-label="{esc(T("inquiry.exp_copy"))}" title="{esc(T("inquiry.exp_copy"))}" disabled>{ICON_COPY}</button></span>'
             f'<span class="exp-export-status" role="status" aria-live="polite"></span></div>'   # the table's export (teacher 2026-11-03, templates/inquiry.js part 3)
             f'<table class="exp-table"><caption>{T("inquiry.exp_table")}</caption><thead><tr><th data-plain="{esc(vary_plain)}">{tn(a["vary"])}</th>{cols}</tr></thead><tbody></tbody></table>'
             f'<p class="exp-status" role="status" aria-live="polite"></p>{q}</div>')
@@ -579,7 +587,7 @@ def chapter_href(title):
 def intro_html(intro, inquiry, n_opt, md):
     """The opening (teacher 2026-10-27): the title and the Miksi question first, across the reading column; under them
     the chapter's illustration and "Tällä tunnilla opit" (2–3 goals) side by side, both starting at the same height and
-    about as tall (.intro-row); then "Pohjatiedot" as a list and the core path in one quiet line (.intro-more). One
+    about as tall (.intro-row); then "Pohjatiedot" as a list (.intro-more; the core path note moved to Näin opiskelet, teacher 2026-11-13). One
     column on a phone: title, question, illustration, goals, prior knowledge."""
     m = re.search(r"<p>\s*<svg\b", intro)
     head, media = (intro[:m.start()], intro[m.start():]) if m else (intro, "")
@@ -590,7 +598,6 @@ def intro_html(intro, inquiry, n_opt, md):
     aside = f'<div class="learn"><h2 class="intro-h">{T("inquiry.learn")}</h2>{goals}</div>'
     prior = inquiry.get("prior") or []
     more = f'<div class="prior"><h2 class="intro-h">{T("inquiry.prior")}</h2><ul>' + "".join(prior_html(x, md) for x in prior) + "</ul></div>" if prior else ""
-    if n_opt: more += f'<p class="path-note">{T("inquiry.core_path", n=n_opt)}</p>'   # what is the path, what may be left (spec 2026-10-26)
     row = (f'<div class="intro-row' + ("" if media else " no-media") + '">' + (f'<div class="intro-media">{media}</div>' if media else "")
            + f'<aside class="intro-aside">{aside}</aside></div>')
     return f'<div class="intro"><div class="intro-head">{head}</div>{row}' + (f'<div class="intro-more">{more}</div>' if more else "") + '</div>'
@@ -710,6 +717,37 @@ TUTKI_FOLD_COURSES = {f"FY{i}" for i in range(1, 10)}   # the modules whose Tutk
 TUTKI_VISIBLE = 2                                  # at most this many tasks of Tutki in view (teacher 2026-11-06)
 
 
+_URL = re.compile(r"https?://[^\s,;)<>]+|(?<![\w@.-])(?:[a-z0-9-]+\.)+(?:fi|com|org|io|eu|gov|net)(?:/[^\s,;)<>]*)?", re.I)
+
+
+def source_short(note, limit=120):
+    """The short, visible part of a source note: the first sentence without parentheses, cut at a word at about
+    `limit` characters (never inside a $formula$); (short, url or None). The whole note stays in the title attribute."""
+    url = _URL.search(note); url = url.group(0).rstrip(".") if url else None
+    t = re.sub(r"\s*\([^()]*\)", "", note.strip())
+    t = re.split(r"(?<=[a-zäöå\)])\.\s+(?=[A-ZÄÖÅ])", t, maxsplit=1)[0].rstrip(" .;")
+    if len(t) > limit:
+        t = t[:limit].rsplit(" ", 1)[0]
+        if t.count("$") % 2: t = t[:t.rfind("$")].rstrip(" ,;:")
+        t = t.rstrip(" ,;:") + "…"
+    return t, url
+
+
+def source_line(src, note, inline):
+    """The small source line under a data table or graph (teacher 2026-11-13, "esimerkkiaineisto-merkki pois", then
+    "ei pillereitä"): no tag and no background. measured and statistics: "Lähde: <name year>", a link when the note
+    names an address, the long method note only in the title; example and simulated: "Esimerkkiaineisto."; model: nothing.
+    The `source` field stays in the source and the validation (invented numbers are never presented as measured)."""
+    if src in ("example", "simulated"): return f'<p class="source" data-source="{src}">{T("inquiry.source_line_example")}</p>'
+    if src not in ("measured", "statistics") or not note: return ""
+    short, url = source_short(note)
+    text = inline(short)
+    if url:
+        href = url if url.lower().startswith("http") else "https://" + url
+        text = f'<a href="{esc(href)}" rel="noopener">{text}</a>'
+    return f'<p class="source" data-source="{src}" title="{esc(plain(note))}">{T("inquiry.source_label")} {text}</p>'
+
+
 def tutki_split(items):
     """(shown, folded) for the Tutki stage. Teacher 2026-11-06: "Tutki-osuudessa saisi olla maksimissaan kaksi
     kysymystä" — too many questions in view hide the whole. The simulation stays as it is; of the tasks only the first
@@ -826,8 +864,8 @@ def render(folder, inquiry, parts, md):
         elif t == "experiment": content = experiment_html(a, md, lid)
         elif t == "interpret":
             src = a.get("source")
-            badge = (f'<p class="source" data-source="{src}"><strong>{T("inquiry.source_" + src)}</strong>' + (f' · {inline(md, a["source_note"])}' if a.get("source_note") else "") + '</p>') if src else ""
-            content = f'<div class="interpret">{badge}<div class="representation">{md(a["text"])}{fig_of(a)}</div>{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
+            badge = source_line(src, a.get("source_note"), lambda x: inline(md, x))
+            content = f'<div class="interpret"><div class="representation">{md(a["text"])}{fig_of(a)}</div>{badge}{question_html(a["question"], md, lid, aid) if a.get("question") else ""}</div>'
         elif t == "theory":
             content = "".join(parts["sections"][s] for s in a["sections"])
             if aid in shown and "Esimerkki" in a["sections"]:   # the box itself says "Esimerkki 1: <name>"; no heading above it (teacher 2026-11-06)
