@@ -307,6 +307,16 @@ Tiedostot: `build.py` `fig_rows`, `site.css`, `check_layout.py` (tarkistus tyhj�
 fy3-8 ja fy4-3 leveyksillä 1280, 1440 ja 1920 px sekä fy1-1. Luonnoksessa Teoria-vaihe lyheni noin 8 % (fy3-8:
 4082 → 3775 px, fy4-3: 3703 → 3380 px leveydellä 1280 px).
 
+### U5. FY9:n Oma edistyminen ja itsearviointi samaan kokoon kuin FY1–FY8 (opettaja 2026-11-14, kuvakaappaus en/FY9)
+FY9:n moduulisivulla (en, myös fi tarkistettava) kortit *My progress* ja *My self-assessment* ovat kapeat (noin
+440 px kumpikin) ja jäävät vasemmalle, kun FY1:llä ne täyttävät sivun leveyden kahtena puolikkaana. Kapeudesta
+seuraa: kaavion y-akselin nimiöt "98", "90" ja "goal 90" menevät päällekkäin; itsearvioinnin luvun otsikot
+(THE EXAM AND EXPERIMENTAL WORK, ELECTRICITY AND MAGNETISM …) ja niiden alleviivaukset osuvat toisiinsa ja
+sarakenumeroihin (10–15 ilman väliä). Korjaus jaetussa koodissa niin, että FY9 (ja FY14, FY10, jos samat kortit)
+käyttää samaa leveyttä ja ruudukkoa kuin FY1–FY8. Ei uutta tekstiä. Tiedostot todennäköisesti `build.py` (moduulisivun
+edistymisosio), `site.css`; testit `check_layout` FY9-sivulle kaikilla leveyksillä ja `test_home`. Ennen/jälkeen-kuvat
+FY9 ja FY1, 1280 ja 390 px. Pieni jaettu muutos: tehdään kuten U4, kun mikään muu jaettu muutos ei ole auki.
+
 ### Ei tehdä (opettaja 2026-11-14)
 - Ei Aloita-riviä moduulisivulle; Jatka-rivi pysyy ennallaan.
 - Ei "Näytä kaikki tehtävät" -toimintoa.
