@@ -1,0 +1,230 @@
+# FY8:n kaavojen nimet (opettaja 2026-11-14: kaavat pitää löytyä MAFY-taulukosta; nimi vain kaavalle, joka on MAFY-taulukoissa, MAFYn oma nimi).
+# Lähde: https://mafytaulukot.fi/ (Atomi-, säteily- ja ydinfysiikan kaavoja 05e6690d-abc0-4ca0-86dc-d9707f763f2b; tarkistettu myös Aaltoliikkeen kaavoja, Mekaniikan kaavoja, Luonnonvakiot, Irrotustöitä, Säteilylaatujen painotuskertoimia, Tähtitiede), luettu 2026-11-14.
+# Nimetty on kaava, jonka laki on MAFYssa; tunnuksia ei ole muutettu (docs/fy9/mafy-tunnukset.tsv ei listaa FY8:ta), erot tunnuksissa ja muodossa ovat huomio-sarakkeessa. Nimeämättömät ovat kaavoja, joita MAFYssa ei ole, laskuja, työesimerkin toistoja tai lohkoja, joissa on rivivälin merkintä \\[Npt] (nimetään työjonon kohdan 3b jälkeen).
+# = on yllä nimetyn kaavan toinen muoto, + on lisätieto. Rivit tunnin tekstin järjestyksessä.
+tunti	rivi	kaava	kaava_en	nimi	name_en	lähde	MAFY-sivu	huomio
+fy8-1	171	E = hf	E = hf	fotonin energia	photon energy	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: E = hf = hc/λ; tunnin muoto E = hf, sama laki
+fy8-1	175	E = \frac{hc}{\lambda}	E = \frac{hc}{\lambda}	fotonin energia	photon energy	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: E = hf = hc/λ; tunnin muoto E = hc/λ, sama laki (f = c/λ)
+fy8-1	180	hc = 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}	hc = 1.986 \cdot 10^{-25}\,\text{J}\,\text{m}					
+fy8-1	180	= \tfrac{1{,}986 \cdot 10^{-25}}{1{,}602 \cdot 10^{-19}}\,\text{eV}\,\text{m}	= \tfrac{1.986 \cdot 10^{-25}}{1.602 \cdot 10^{-19}}\,\text{eV}\,\text{m}					
+fy8-1	180	\approx 1{,}240 \cdot 10^{-6}\,\text{eV}\,\text{m}	\approx 1.240 \cdot 10^{-6}\,\text{eV}\,\text{m}					
+fy8-1	180	= 1240\,\text{eV}\,\text{nm}	= 1240\,\text{eV}\,\text{nm}					
+fy8-1	192	hf = W + E_\text{k,max}	hf = W + E_\text{k,max}					
+fy8-1	278	E_\text{k,max} = \frac{hc}{\lambda} - W	E_\text{k,max} = \frac{hc}{\lambda} - W					
+fy8-1	289	E_\text{k,max} = \frac{hc}{\lambda} - W	E_\text{k,max} = \frac{hc}{\lambda} - W					
+fy8-1	289	= \frac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\tfrac{\text{m}}{\text{s}}}{405 \cdot 10^{-9}\,\text{m}}	= \frac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^8\,\tfrac{\text{m}}{\text{s}}}{405 \cdot 10^{-9}\,\text{m}}					
+fy8-1	289	- 3{,}653 \cdot 10^{-19}\,\text{J}	- 3.653 \cdot 10^{-19}\,\text{J}					
+fy8-1	289	= 4{,}905 \cdot 10^{-19}\,\text{J} - 3{,}653 \cdot 10^{-19}\,\text{J}	= 4.905 \cdot 10^{-19}\,\text{J} - 3.653 \cdot 10^{-19}\,\text{J}					
+fy8-1	289	= 1{,}252 \cdot 10^{-19}\,\text{J}	= 1.252 \cdot 10^{-19}\,\text{J}					
+fy8-1	289	= \frac{1{,}252 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV}	= \frac{1.252 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV}					
+fy8-1	289	= 0{,}782\,\text{eV}	= 0.782\,\text{eV}					
+fy8-2	164	hf = E_\text{y} - E_\text{a}	hf = E_\text{u} - E_\text{l}					
+fy8-2	164	\lambda = \frac{hc}{E_\text{y} - E_\text{a}}	\lambda = \frac{hc}{E_\text{u} - E_\text{l}}					
+fy8-2	242	\Delta E = hf = \frac{hc}{\lambda}	\Delta E = hf = \frac{hc}{\lambda}					
+fy8-2	253	\Delta E = \frac{hc}{\lambda}	\Delta E = \frac{hc}{\lambda}					
+fy8-2	253	= \frac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{640 \cdot 10^{-9}\,\text{m}}	= \frac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{640 \cdot 10^{-9}\,\text{m}}					
+fy8-2	253	= 3{,}1039 \cdot 10^{-19}\,\text{J}	= 3.1039 \cdot 10^{-19}\,\text{J}					
+fy8-2	253	= \frac{3{,}1039 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV}	= \frac{3.1039 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV}					
+fy8-2	253	= 1{,}9375\,\text{eV}	= 1.9375\,\text{eV}					
+fy8-3	190	E_n = -\frac{13{,}6\,\text{eV}}{n^2}	E_n = -\frac{13.6\,\text{eV}}{n^2}	elektronin energia vetyatomissa	electron energy in the hydrogen atom	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: E_n = −R_H hc/n²; tunnin muoto E_n = −13,6 eV/n², sama laki (R_H hc = 13,6 eV)
+fy8-3	196	hf = E_\text{y} - E_\text{a}	hf = E_\text{u} - E_\text{l}					
+fy8-3	196	\lambda = \frac{hc}{E_\text{y} - E_\text{a}}	\lambda = \frac{hc}{E_\text{u} - E_\text{l}}					
+fy8-3	266	\frac{hc}{\lambda} = E_3 - E_2	\frac{hc}{\lambda} = E_3 - E_2					
+fy8-3	266	\lambda = \frac{hc}{E_3 - E_2}	\lambda = \frac{hc}{E_3 - E_2}					
+fy8-3	280	E_3 - E_2	E_3 - E_2					
+fy8-3	280	= -\frac{13{,}6\,\text{eV}}{9} + \frac{13{,}6\,\text{eV}}{4}	= -\frac{13.6\,\text{eV}}{9} + \frac{13.6\,\text{eV}}{4}					
+fy8-3	280	= 1{,}8889\,\text{eV}	= 1.8889\,\text{eV}					
+fy8-3	280	= 1{,}8889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}	= 1.8889 \cdot 1.602 \cdot 10^{-19}\,\text{J}					
+fy8-3	280	= 3{,}0260 \cdot 10^{-19}\,\text{J}	= 3.0260 \cdot 10^{-19}\,\text{J}					
+fy8-3	280	[6pt] hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}	[6pt] hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}					
+fy8-3	280	\cdot 2{,}998 \cdot 10^{8}\,\text{m/s}	\cdot 2.998 \cdot 10^{8}\,\text{m/s}					
+fy8-3	280	= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}	= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}					
+fy8-3	280	[6pt] \lambda = \frac{hc}{E_3 - E_2}	[6pt] \lambda = \frac{hc}{E_3 - E_2}					
+fy8-3	280	= \frac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}0260 \cdot 10^{-19}\,\text{J}}	= \frac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.0260 \cdot 10^{-19}\,\text{J}}					
+fy8-3	280	= 6{,}5647 \cdot 10^{-7}\,\text{m}	= 6.5647 \cdot 10^{-7}\,\text{m}					
+fy8-4	1025	p = \frac{E}{c} = \frac{h}{\lambda}	p = \frac{E}{c} = \frac{h}{\lambda}	fotonin liikemäärä	photon momentum	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: p = E/c = h/λ
+fy8-4	1032	hf = hf' + E_\text{k}	hf = hf' + E_\text{k}					
+fy8-4	1072	\frac{N}{t} = \frac{P}{hf}	\frac{N}{t} = \frac{P}{hf}					
+fy8-4	1091	\frac{N}{t} = \frac{P}{hf}	\frac{N}{t} = \frac{P}{hf}					
+fy8-4	1091	hf = \frac{hc}{\lambda}	hf = \frac{hc}{\lambda}					
+fy8-4	1091	d = \frac{c}{N/t}	d = \frac{c}{N/t}					
+fy8-4	1105	hf = \frac{hc}{\lambda}	hf = \frac{hc}{\lambda}					
+fy8-4	1105	= \frac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{633 \cdot 10^{-9}\,\text{m}}	= \frac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s}}{633 \cdot 10^{-9}\,\text{m}}					
+fy8-4	1105	\cdot 2{,}998 \cdot 10^{8}\,\tfrac{\text{m}}{\text{s}}	\cdot 2.998 \cdot 10^{8}\,\tfrac{\text{m}}{\text{s}}					
+fy8-4	1105	= 3{,}138 \cdot 10^{-19}\,\text{J}	= 3.138 \cdot 10^{-19}\,\text{J}					
+fy8-4	1105	[6pt] \frac{N}{t} = \frac{P}{hf}	[6pt] \frac{N}{t} = \frac{P}{hf}					
+fy8-4	1105	= \frac{1{,}0 \cdot 10^{-13}\,\text{W}}{3{,}138 \cdot 10^{-19}\,\text{J}}	= \frac{1.0 \cdot 10^{-13}\,\text{W}}{3.138 \cdot 10^{-19}\,\text{J}}					
+fy8-4	1105	= 3{,}187 \cdot 10^{5}\,\tfrac{1}{\text{s}}	= 3.187 \cdot 10^{5}\,\tfrac{1}{\text{s}}					
+fy8-4	1105	[6pt] d = \frac{c}{N/t}	[6pt] d = \frac{c}{N/t}					
+fy8-4	1105	= \frac{2{,}998 \cdot 10^{8}\,\text{m/s}}{3{,}187 \cdot 10^{5}\,\tfrac{1}{\text{s}}}	= \frac{2.998 \cdot 10^{8}\,\text{m/s}}{3.187 \cdot 10^{5}\,\tfrac{1}{\text{s}}}					
+fy8-4	1105	= 940{,}8\,\text{m}	= 940.8\,\text{m}					
+fy8-5	268	P \approx \frac{k}{N}	P \approx \frac{k}{N}					
+fy8-5	1323	E_n = -\frac{13{,}6\,\text{eV}}{n^2}	E_n = -\frac{13.6\,\text{eV}}{n^2}	elektronin energia vetyatomissa	electron energy in the hydrogen atom	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: E_n = −R_H hc/n²; tunnin muoto E_n = −13,6 eV/n², sama laki (R_H hc = 13,6 eV)
+fy8-5	1329	N_\text{max} = 2n^2	N_\text{max} = 2n^2					
+fy8-5	1405	\frac{hc}{\lambda} = E_3 - E_2	\frac{hc}{\lambda} = E_3 - E_2					
+fy8-5	1405	\lambda = \frac{hc}{E_3 - E_2}	\lambda = \frac{hc}{E_3 - E_2}					
+fy8-5	1419	\lambda = \frac{hc}{E_3 - E_2}	\lambda = \frac{hc}{E_3 - E_2}					
+fy8-5	1419	= \frac{1{,}98647 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}0260 \cdot 10^{-19}\,\text{J}}	= \frac{1.98647 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.0260 \cdot 10^{-19}\,\text{J}}					
+fy8-5	1419	= 6{,}5647 \cdot 10^{-7}\,\text{m}	= 6.5647 \cdot 10^{-7}\,\text{m}					
+fy8-5	1419	= 656{,}47\,\text{nm}	= 656.47\,\text{nm}					
+fy8-6	257	eU_\text{k} \approx hf = \frac{hc}{\lambda}	eU_\text{k} \approx hf = \frac{hc}{\lambda}					
+fy8-6	329	U_\text{k} \approx \frac{h}{e}\,f	U_\text{k} \approx \frac{h}{e}\,f					
+fy8-6	333	h \approx ek	h \approx ek					
+fy8-6	424	h = ek = \frac{e\,(U_2 - U_1)}{f_2 - f_1}	h = ek = \frac{e\,(U_2 - U_1)}{f_2 - f_1}					
+fy8-6	435	h = \frac{e\,(U_2 - U_1)}{f_2 - f_1}	h = \frac{e\,(U_2 - U_1)}{f_2 - f_1}					
+fy8-6	435	= \frac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}22\,\text{V}}{3{,}00 \cdot 10^{14}\,\tfrac{1}{\text{s}}}	= \frac{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.22\,\text{V}}{3.00 \cdot 10^{14}\,\tfrac{1}{\text{s}}}					
+fy8-6	435	= 6{,}515 \cdot 10^{-34}\,\text{J}\,\text{s}	= 6.515 \cdot 10^{-34}\,\text{J}\,\text{s}					
+fy8-7	204	hf = E_2 - E_1	hf = E_2 - E_1					
+fy8-7	204	\lambda = \frac{hc}{E_2 - E_1}	\lambda = \frac{hc}{E_2 - E_1}					
+fy8-7	213	P = \frac{N}{t} \cdot hf	P = \frac{N}{t} \cdot hf					
+fy8-7	294	P = \frac{N}{t} \cdot (E_2 - E_1)	P = \frac{N}{t} \cdot (E_2 - E_1)					
+fy8-7	294	\frac{N}{t} = \frac{P}{E_2 - E_1}	\frac{N}{t} = \frac{P}{E_2 - E_1}					
+fy8-7	308	\frac{N}{t} = \frac{P}{E_2 - E_1}	\frac{N}{t} = \frac{P}{E_2 - E_1}					
+fy8-7	308	= \frac{1{,}0 \cdot 10^{-3}\,\text{W}}{3{,}1399 \cdot 10^{-19}\,\text{J}}	= \frac{1.0 \cdot 10^{-3}\,\text{W}}{3.1399 \cdot 10^{-19}\,\text{J}}					
+fy8-7	308	= 3{,}1848 \cdot 10^{15}\,\tfrac{1}{\text{s}}	= 3.1848 \cdot 10^{15}\,\tfrac{1}{\text{s}}					
+fy8-8	162	{}^{A}_{Z}\text{X} + {}^{0}_{-1}\text{e} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{0}\nu_\text{e}	{}^{A}_{Z}\text{X} + {}^{0}_{-1}\text{e} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{0}\nu_\text{e}	elektroninsieppaus	electron capture	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: X + e⁻ → Y + ν_e; tunnin muoto sama (merkintä {}^0_{-1}e ja {}^0_0 ν_e)
+fy8-8	286	{}^{A}_{Z}\text{X} \to {}^{A-4}_{Z-2}\text{Y} + {}^{4}_{2}\text{He}	{}^{A}_{Z}\text{X} \to {}^{A-4}_{Z-2}\text{Y} + {}^{4}_{2}\text{He}	alfahajoaminen	alpha decay	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: X → He + Y; tunnin muoto X → Y + He, sama reaktio eri järjestyksessä
+fy8-8	290	{}^{A}_{Z}\text{X} \to {}^{A}_{Z+1}\text{Y} + {}^{0}_{-1}\text{e} + \bar{\nu}	{}^{A}_{Z}\text{X} \to {}^{A}_{Z+1}\text{Y} + {}^{0}_{-1}\text{e} + \bar{\nu}	$\beta^-$-hajoaminen	$\beta^-$ decay	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: nimi β⁻ (-hajoaminen); X → Y + e⁻ + antineutriino, tunnin merkintä ν̄ ja {}^0_{-1}e
+fy8-8	294	{}^{A}_{Z}\text{X} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{+1}\text{e} + \nu	{}^{A}_{Z}\text{X} \to {}^{A}_{Z-1}\text{Y} + {}^{0}_{+1}\text{e} + \nu	$\beta^+$-hajoaminen	$\beta^+$ decay	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: nimi β⁺ (-hajoaminen); X → Y + e⁺ + neutriino, tunnin merkintä ν ja {}^0_{+1}e
+fy8-8	298	{}^{A}_{Z}\text{X}^{\ast} \to {}^{A}_{Z}\text{X} + \gamma	{}^{A}_{Z}\text{X}^{\ast} \to {}^{A}_{Z}\text{X} + \gamma					
+fy8-8	342	E_\gamma = E_\text{y} - E_\text{a}	E_\gamma = E_\text{u} - E_\text{l}					
+fy8-8	342	\lambda = \frac{hc}{E_\gamma}	\lambda = \frac{hc}{E_\gamma}					
+fy8-8	364	A = A' + 0	A = A' + 0					
+fy8-8	364	Z = Z' - 1	Z = Z' - 1					
+fy8-8	364	A' = A	A' = A					
+fy8-8	364	Z' = Z + 1	Z' = Z + 1					
+fy8-8	364	\lambda = \frac{hc}{E_\gamma}	\lambda = \frac{hc}{E_\gamma}					
+fy8-8	379	A' = 137	A' = 137					
+fy8-8	379	Z' = 55 + 1 = 56	Z' = 55 + 1 = 56					
+fy8-8	379	[6pt] hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}	[6pt] hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}					
+fy8-8	379	\cdot 2{,}998 \cdot 10^{8}\,\text{m/s}	\cdot 2.998 \cdot 10^{8}\,\text{m/s}					
+fy8-8	379	= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}	= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}					
+fy8-8	379	[6pt] \lambda = \frac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}0600 \cdot 10^{-13}\,\text{J}}	[6pt] \lambda = \frac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.0600 \cdot 10^{-13}\,\text{J}}					
+fy8-8	379	= 1{,}8740 \cdot 10^{-12}\,\text{m}	= 1.8740 \cdot 10^{-12}\,\text{m}					
+fy8-9	459	N = N_0 \left(\frac{1}{2}\right)^{t/T_{1/2}}	N = N_0 \left(\frac{1}{2}\right)^{t/T_{1/2}}					
+fy8-9	516	A = \lambda N	A = \lambda N	aktiivisuus	activity	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: A = λN
+fy8-9	520	N = N_0 e^{-\lambda t}	N = N_0 e^{-\lambda t}	hajoamislaki	law of radioactive decay	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: N = N₀e^(−λt)
+fy8-9	524	\lambda = \frac{\ln 2}{T_{1/2}}	\lambda = \frac{\ln 2}{T_{1/2}}	hajoamisvakio	decay constant	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: λ = ln 2/T_½
+fy8-9	528	A = A_0 \left(\frac{1}{2}\right)^{t/T_{1/2}}	A = A_0 \left(\frac{1}{2}\right)^{t/T_{1/2}}					
+fy8-9	535	y = A\,e^{-Ct} + B	y = A\,e^{-Ct} + B					
+fy8-9	626	A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}	A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}					
+fy8-9	637	A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}	A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}					
+fy8-9	637	= 550\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{20{,}0\,\text{d} / 8{,}02\,\text{d}}	= 550\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{20.0\,\text{d} / 8.02\,\text{d}}					
+fy8-9	637	= 550\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{2{,}4938}	= 550\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{2.4938}					
+fy8-9	637	= 550\,\text{MBq} \cdot 0{,}17754	= 550\,\text{MBq} \cdot 0.17754					
+fy8-9	637	\approx 97{,}65\,\text{MBq}	\approx 97.65\,\text{MBq}					
+fy8-10	154	E = 1{,}00 \cdot 10^{-3}\,\text{kg}	E = 1.00 \cdot 10^{-3}\,\text{kg}					
+fy8-10	154	\cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2	\cdot (2.998 \cdot 10^{8}\,\text{m/s})^2					
+fy8-10	154	\approx 9{,}0 \cdot 10^{13}\,\text{J}.	\approx 9.0 \cdot 10^{13}\,\text{J}.					
+fy8-10	167	\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi}	\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atom}					
+fy8-10	171	E_\text{B} = \Delta m\,c^2	E_\text{B} = \Delta m\,c^2	ytimen sidosenergia	binding energy of a nucleus	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: E_b = Δm c²; tunnin tunnus E_B
+fy8-10	178	E = 1\,\text{u} \cdot c^2	E = 1\,\text{u} \cdot c^2					
+fy8-10	178	= 1{,}66054 \cdot 10^{-27}\,\text{kg}	= 1.66054 \cdot 10^{-27}\,\text{kg}					
+fy8-10	178	\cdot (2{,}99792 \cdot 10^{8}\,\text{m/s})^2	\cdot (2.99792 \cdot 10^{8}\,\text{m/s})^2					
+fy8-10	178	= 1{,}49241 \cdot 10^{-10}\,\text{J}	= 1.49241 \cdot 10^{-10}\,\text{J}					
+fy8-10	178	= \frac{1{,}49241 \cdot 10^{-10}}{1{,}602177 \cdot 10^{-19}}\,\text{eV}	= \frac{1.49241 \cdot 10^{-10}}{1.602177 \cdot 10^{-19}}\,\text{eV}					
+fy8-10	178	= 9{,}3149 \cdot 10^{8}\,\text{eV}	= 9.3149 \cdot 10^{8}\,\text{eV}					
+fy8-10	178	\approx 931{,}5\,\text{MeV}	\approx 931.5\,\text{MeV}					
+fy8-10	193	\frac{E_\text{B}}{A}	\frac{E_\text{B}}{A}	ytimen sidososuus	binding energy per nucleon	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: b = E_b/A = Δm c²/A; tunnin lauseke E_B/A ilman tunnusta b
+fy8-10	284	Q = (m_\text{alku} - m_\text{loppu})\,c^2	Q = (m_\text{initial} - m_\text{final})\,c^2	ydinreaktiossa vapautuva energia	energy released in a nuclear reaction	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: E = Δm c², Δm = m_lähtöaineet − m_tuotteet (ydinreaktion massaero); tunnin muoto Q = (m_alku − m_loppu)c² yhdistää nämä, sama laki
+fy8-10	323	Q(\beta^-) = [M(\text{X}) - M(\text{Y})]\,c^2	Q(\beta^-) = [M(\text{X}) - M(\text{Y})]\,c^2					
+fy8-10	327	Q(\beta^+) = [M(\text{X}) - M(\text{Y}) - 2m_e]\,c^2	Q(\beta^+) = [M(\text{X}) - M(\text{Y}) - 2m_e]\,c^2					
+fy8-10	346	\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi}	\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atom}					
+fy8-10	346	E_\text{B} = \Delta m\,c^2	E_\text{B} = \Delta m\,c^2					
+fy8-10	346	\frac{E_\text{B}}{A} = \frac{\Delta m\,c^2}{A}	\frac{E_\text{B}}{A} = \frac{\Delta m\,c^2}{A}					
+fy8-10	361	\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atomi}	\Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atom}					
+fy8-10	361	= 2 \cdot 1{,}007825\,\text{u}	= 2 \cdot 1.007825\,\text{u}					
+fy8-10	361	+ 2 \cdot 1{,}008665\,\text{u}	+ 2 \cdot 1.008665\,\text{u}					
+fy8-10	361	- 4{,}002603\,\text{u}	- 4.002603\,\text{u}					
+fy8-10	361	= 0{,}030377\,\text{u}	= 0.030377\,\text{u}					
+fy8-10	361	[6pt] E_\text{B} = \Delta m\,c^2 = 0{,}030377\,\text{u} \cdot c^2	[6pt] E_\text{B} = \Delta m\,c^2 = 0.030377\,\text{u} \cdot c^2					
+fy8-10	361	= 0{,}030377 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2	= 0.030377 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2					
+fy8-10	361	= 28{,}296\,\text{MeV}	= 28.296\,\text{MeV}					
+fy8-10	361	[6pt] \frac{E_\text{B}}{A} = \frac{28{,}296\,\text{MeV}}{4}	[6pt] \frac{E_\text{B}}{A} = \frac{28.296\,\text{MeV}}{4}					
+fy8-10	361	= 7{,}074\,\text{MeV}	= 7.074\,\text{MeV}					
+fy8-11	633	Q = (m_\text{alku} - m_\text{loppu})\,c^2	Q = (m_\text{initial} - m_\text{final})\,c^2					
+fy8-11	633	m_\text{alku} = m_\text{n} + m_\text{U}	m_\text{initial} = m_\text{n} + m_\text{U}					
+fy8-11	633	m_\text{loppu} = m_\text{Ba} + m_\text{Kr} + 3m_\text{n}	m_\text{final} = m_\text{Ba} + m_\text{Kr} + 3m_\text{n}					
+fy8-11	648	Q = (m_\text{alku} - m_\text{loppu})\,c^2	Q = (m_\text{initial} - m_\text{final})\,c^2					
+fy8-11	648	= (236{,}0525931\,\text{u}	= (236.0525931\,\text{u}					
+fy8-11	648	- 235{,}8665711\,\text{u})\,c^2	- 235.8665711\,\text{u})\,c^2					
+fy8-11	648	= 0{,}1860220\,\text{u} \cdot c^2	= 0.1860220\,\text{u} \cdot c^2					
+fy8-11	648	= 0{,}1860220 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2	= 0.1860220 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2					
+fy8-11	648	= 173{,}28\,\text{MeV}	= 173.28\,\text{MeV}					
+fy8-12	129	n_\text{i} = \frac{E}{W}	n_\text{i} = \frac{E}{W}					
+fy8-12	350	I = I_0 \left(\frac{1}{2}\right)^{d/d_{1/2}}	I = I_0 \left(\frac{1}{2}\right)^{d/d_{1/2}}					
+fy8-12	356	I = I_0 e^{-\mu d}	I = I_0 e^{-\mu d}	heikennyslaki	attenuation law	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: I = I₀e^(−μx); tunnin merkintä d paksuudelle
+fy8-12	360	\frac{I}{I_0} = \frac{1}{2} = e^{-\mu d_{1/2}}	\frac{I}{I_0} = \frac{1}{2} = e^{-\mu d_{1/2}}					
+fy8-12	364	\mu = \frac{\ln 2}{d_{1/2}}	\mu = \frac{\ln 2}{d_{1/2}}					
+fy8-12	462	d = d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}	d = d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}					
+fy8-12	473	d = d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}	d = d_{1/2} \cdot \frac{\ln (I_0 : I)}{\ln 2}					
+fy8-12	473	= 5{,}5\,\text{mm} \cdot \frac{\ln 20}{\ln 2}	= 5.5\,\text{mm} \cdot \frac{\ln 20}{\ln 2}					
+fy8-12	473	= 5{,}5\,\text{mm} \cdot \frac{2{,}9957}{0{,}69315}	= 5.5\,\text{mm} \cdot \frac{2.9957}{0.69315}					
+fy8-12	473	= 5{,}5\,\text{mm} \cdot 4{,}3219	= 5.5\,\text{mm} \cdot 4.3219					
+fy8-12	473	= 23{,}77\,\text{mm}	= 23.77\,\text{mm}					
+fy8-13	368	D = \frac{E}{m}	D = \frac{E}{m}					
+fy8-13	375	H_\text{T} = w_\text{R} D_\text{T}	H_\text{T} = w_\text{R} D_\text{T}	ekvivalenttiannos	equivalent dose	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: H = w_R D; tunnin merkintä H_T, D_T (kudos T)
+fy8-13	459	H_\text{E} = w_{\text{T}1} H_{\text{T}1} + w_{\text{T}2} H_{\text{T}2} + \ldots	H_\text{E} = w_{\text{T}1} H_{\text{T}1} + w_{\text{T}2} H_{\text{T}2} + \ldots					
+fy8-13	475	H = \dot{H} t	H = \dot{H} t					
+fy8-13	482	\dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2	\dot{H}_2 = \dot{H}_1 \left(\frac{r_1}{r_2}\right)^2					
+fy8-13	524	\dot{H} = \dot{H}_0 \left(\frac{1}{2}\right)^{d/d_{1/2}}	\dot{H} = \dot{H}_0 \left(\frac{1}{2}\right)^{d/d_{1/2}}					
+fy8-13	596	H_\text{E} = w_\text{T} w_\text{R} \frac{E}{m}	H_\text{E} = w_\text{T} w_\text{R} \frac{E}{m}					
+fy8-13	607	H_\text{E} = w_\text{T} w_\text{R} \frac{E}{m}	H_\text{E} = w_\text{T} w_\text{R} \frac{E}{m}					
+fy8-13	607	= 0{,}12 \cdot 20 \cdot \frac{0{,}0020\,\text{J}}{1{,}2\,\text{kg}}	= 0.12 \cdot 20 \cdot \frac{0.0020\,\text{J}}{1.2\,\text{kg}}					
+fy8-13	607	= 2{,}4 \cdot 0{,}0016667\,\text{Sv}	= 2.4 \cdot 0.0016667\,\text{Sv}					
+fy8-13	607	= 0{,}0040\,\text{Sv}	= 0.0040\,\text{Sv}					
+fy8-14	371	I = I_0 \cdot \left(\tfrac{1}{2}\right)^{n_\text{kudos}} \cdot \left(\tfrac{1}{2}\right)^{n_\text{luu}}	I = I_0 \cdot \left(\tfrac{1}{2}\right)^{n_\text{tissue}} \cdot \left(\tfrac{1}{2}\right)^{n_\text{bone}}					
+fy8-14	444	E_\gamma = m_e c^2	E_\gamma = m_e c^2					
+fy8-14	466	\frac{I_\text{A}}{I_\text{B}} = \frac{I_0 \cdot \left(\tfrac{1}{2}\right)^{n_\text{A}}}{I_0 \cdot \left(\tfrac{1}{2}\right)^{n_\text{B}}}	\frac{I_\text{A}}{I_\text{B}} = \frac{I_0 \cdot \left(\tfrac{1}{2}\right)^{n_\text{A}}}{I_0 \cdot \left(\tfrac{1}{2}\right)^{n_\text{B}}}					
+fy8-14	466	= 2^{\,n_\text{B} - n_\text{A}}	= 2^{\,n_\text{B} - n_\text{A}}					
+fy8-14	481	n_\text{A} = d_\text{A} : d_{1/2}^\text{kudos}	n_\text{A} = d_\text{A} : d_{1/2}^\text{tissue}					
+fy8-14	481	= 8{,}0\,\text{cm} : 3{,}4\,\text{cm} = 2{,}353	= 8.0\,\text{cm} : 3.4\,\text{cm} = 2.353					
+fy8-14	488	n_\text{B} = d_\text{kudos} : d_{1/2}^\text{kudos} + d_\text{luu} : d_{1/2}^\text{luu}	n_\text{B} = d_\text{tissue} : d_{1/2}^\text{tissue} + d_\text{bone} : d_{1/2}^\text{bone}					
+fy8-14	488	= 5{,}0\,\text{cm} : 3{,}4\,\text{cm}	= 5.0\,\text{cm} : 3.4\,\text{cm}					
+fy8-14	488	+ 3{,}0\,\text{cm} : 1{,}1\,\text{cm}	+ 3.0\,\text{cm} : 1.1\,\text{cm}					
+fy8-14	488	= 1{,}471 + 2{,}727 = 4{,}198	= 1.471 + 2.727 = 4.198					
+fy8-14	499	\frac{I_\text{A}}{I_\text{B}} = 2^{\,n_\text{B} - n_\text{A}}	\frac{I_\text{A}}{I_\text{B}} = 2^{\,n_\text{B} - n_\text{A}}					
+fy8-14	499	= 2^{\,4{,}198 - 2{,}353}	= 2^{\,4.198 - 2.353}					
+fy8-14	499	= 2^{\,1{,}845} = 3{,}59	= 2^{\,1.845} = 3.59					
+fy8-15	327	q_\text{alku} = q_\text{loppu}	q_\text{initial} = q_\text{final}					
+fy8-15	331	B = \frac{n_\text{q} - n_{\bar{\text{q}}}}{3}	B = \frac{n_\text{q} - n_{\bar{\text{q}}}}{3}					
+fy8-15	335	B_\text{alku} = B_\text{loppu}	B_\text{initial} = B_\text{final}					
+fy8-15	339	L_\text{alku} = L_\text{loppu}	L_\text{initial} = L_\text{final}					
+fy8-15	362	Q = (m_\text{alku} - m_\text{loppu})\,c^2	Q = (m_\text{initial} - m_\text{final})\,c^2	ydinreaktiossa vapautuva energia	energy released in a nuclear reaction	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: E = Δm c², Δm = m_lähtöaineet − m_tuotteet; tunnin muoto Q = (m_alku − m_loppu)c² (hiukkasen hajoaminen), sama laki
+fy8-15	371	d \to u + W^-	d \to u + W^-					
+fy8-15	371	W^- \to e^- + \bar{\nu}_e	W^- \to e^- + \bar{\nu}_e					
+fy8-15	431	q_n = q_p + q_e + q_{\bar{\nu}}	q_n = q_p + q_e + q_{\bar{\nu}}					
+fy8-15	431	B_n = B_p + B_e + B_{\bar{\nu}}	B_n = B_p + B_e + B_{\bar{\nu}}					
+fy8-15	431	L_n = L_p + L_e + L_{\bar{\nu}}	L_n = L_p + L_e + L_{\bar{\nu}}					
+fy8-15	431	Q = (m_n - m_p - m_e)\,c^2	Q = (m_n - m_p - m_e)\,c^2					
+fy8-15	447	q_n = q_p + q_e + q_{\bar{\nu}}	q_n = q_p + q_e + q_{\bar{\nu}}					
+fy8-15	447	0 = (+1) + (-1) + 0	0 = (+1) + (-1) + 0					
+fy8-15	447	[6pt] B_n = B_p + B_e + B_{\bar{\nu}}	[6pt] B_n = B_p + B_e + B_{\bar{\nu}}					
+fy8-15	447	1 = 1 + 0 + 0	1 = 1 + 0 + 0					
+fy8-15	447	[6pt] L_n = L_p + L_e + L_{\bar{\nu}}	[6pt] L_n = L_p + L_e + L_{\bar{\nu}}					
+fy8-15	447	0 = 0 + 1 + (-1)	0 = 0 + 1 + (-1)					
+fy8-15	447	[6pt] Q = (m_n - m_p - m_e)\,c^2	[6pt] Q = (m_n - m_p - m_e)\,c^2					
+fy8-15	447	= (939{,}565 - 938{,}272	= (939.565 - 938.272					
+fy8-15	447	- 0{,}511)\,\tfrac{\text{MeV}}{c^2} \cdot c^2	- 0.511)\,\tfrac{\text{MeV}}{c^2} \cdot c^2					
+fy8-15	447	= 0{,}782\,\text{MeV}	= 0.782\,\text{MeV}					
+fy8-16	418	z = \frac{\lambda - \lambda_0}{\lambda_0} = \frac{\Delta\lambda}{\lambda_0}	z = \frac{\lambda - \lambda_0}{\lambda_0} = \frac{\Delta\lambda}{\lambda_0}					
+fy8-16	422	v = c\,z	v = c\,z					
+fy8-16	429	v = H_0\,d	v = H_0\,d					
+fy8-16	494	t = \frac{d}{v} = \frac{d}{H_0\,d} = \frac{1}{H_0}	t = \frac{d}{v} = \frac{d}{H_0\,d} = \frac{1}{H_0}					
+fy8-16	498	t = \frac{1}{H_0}	t = \frac{1}{H_0}					
+fy8-16	498	= \frac{1\,\text{Mpc}}{70\,\text{km/s}}	= \frac{1\,\text{Mpc}}{70\,\text{km/s}}					
+fy8-16	498	= \frac{3{,}086 \cdot 10^{19}\,\text{km}}{70\,\text{km/s}}	= \frac{3.086 \cdot 10^{19}\,\text{km}}{70\,\text{km/s}}					
+fy8-16	498	= 4{,}41 \cdot 10^{17}\,\text{s}	= 4.41 \cdot 10^{17}\,\text{s}					
+fy8-16	498	= \frac{4{,}41 \cdot 10^{17}}{3{,}156 \cdot 10^{7}}\,\text{a}	= \frac{4.41 \cdot 10^{17}}{3.156 \cdot 10^{7}}\,\text{a}					
+fy8-16	498	\approx 1{,}4 \cdot 10^{10}\,\text{a}	\approx 1.4 \cdot 10^{10}\,\text{a}					
+fy8-16	524	z = \frac{\lambda - \lambda_0}{\lambda_0}	z = \frac{\lambda - \lambda_0}{\lambda_0}					
+fy8-16	524	v = c\,z	v = c\,z					
+fy8-16	524	H_0 = \frac{v}{d}	H_0 = \frac{v}{d}					
+fy8-16	539	z = \frac{\lambda - \lambda_0}{\lambda_0}	z = \frac{\lambda - \lambda_0}{\lambda_0}					
+fy8-16	539	= \frac{679{,}3\,\text{nm} - 656{,}3\,\text{nm}}{656{,}3\,\text{nm}}	= \frac{679.3\,\text{nm} - 656.3\,\text{nm}}{656.3\,\text{nm}}					
+fy8-16	539	= \frac{23{,}0\,\text{nm}}{656{,}3\,\text{nm}} = 0{,}035045	= \frac{23.0\,\text{nm}}{656.3\,\text{nm}} = 0.035045					
+fy8-16	539	[6pt] v = c\,z	[6pt] v = c\,z					
+fy8-16	539	= 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}035045	= 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.035045					
+fy8-16	539	= 10\,506\,\text{km/s}	= 10\,506\,\text{km/s}					
+fy8-16	539	[6pt] H_0 = \frac{10\,506\,\text{km/s}}{150\,\text{Mpc}}	[6pt] H_0 = \frac{10\,506\,\text{km/s}}{150\,\text{Mpc}}					
+fy8-16	539	= 70{,}04\,\tfrac{\text{km/s}}{\text{Mpc}}	= 70.04\,\tfrac{\text{km/s}}{\text{Mpc}}					

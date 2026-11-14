@@ -513,16 +513,16 @@ missä $N$ on hajoamattomien ytimien määrä hetkellä $t$, $N_0$ niiden määr
 
 ### Hajoamisvakio ja aktiivisuus
 Ytimen hajoamistodennäköisyyttä aikayksikköä kohti kuvaa **hajoamisvakio** $\lambda$, jonka yksikkö on $\tfrac{1}{\text{s}}$. Kun ytimiä on $N$, sekunnissa hajoaa keskimäärin $\lambda N$ ydintä, joten aktiivisuus on
-```latex
-A = \lambda N
+```kaavat
+aktiivisuus :: A = \lambda N
 ```
 missä $A$ on aktiivisuus ($\text{Bq}$), $\lambda$ hajoamisvakio ($\tfrac{1}{\text{s}}$) ja $N$ hajoamattomien ytimien määrä. Hajoamislaki voidaan kirjoittaa myös luonnollisen eksponenttifunktion avulla:
-```latex
-N = N_0 e^{-\lambda t}
+```kaavat
+hajoamislaki :: N = N_0 e^{-\lambda t}
 ```
 Puoliintumisajan kohdalla $N = \tfrac{1}{2}N_0$, joten $e^{-\lambda T_{1/2}} = \tfrac{1}{2}$ eli $\lambda T_{1/2} = \ln 2$. Hajoamisvakio ja puoliintumisaika liittyvät siis toisiinsa yhtälöllä
-```latex
-\lambda = \frac{\ln 2}{T_{1/2}}
+```kaavat
+hajoamisvakio :: \lambda = \frac{\ln 2}{T_{1/2}}
 ```
 missä $\ln 2 \approx 0{,}693$. Esimerkiksi teknetium-$99\text{m}$:lle $\lambda = \tfrac{0{,}693}{6{,}01 \cdot 3600\,\text{s}} \approx 3{,}20 \cdot 10^{-5}\,\tfrac{1}{\text{s}}$: miljoonasta ytimestä hajoaa sekunnissa keskimäärin noin $32$. Koska $A = \lambda N$ ja $\lambda$ on vakio, aktiivisuus pienenee samaa lakia kuin ytimien määrä:
 ```latex

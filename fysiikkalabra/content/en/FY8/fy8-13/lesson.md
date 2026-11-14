@@ -372,8 +372,8 @@ where $D$ is the absorbed dose ($\text{Gy}$), $E$ the absorbed energy ($\text{J}
 
 ### Equivalent dose and the radiation weighting factor
 The equivalent dose of an organ or tissue $\text{T}$ takes the type of radiation into account:
-```latex
-H_\text{T} = w_\text{R} D_\text{T}
+```kaavat
+equivalent dose :: H_\text{T} = w_\text{R} D_\text{T}
 ```
 where $H_\text{T}$ is the equivalent dose of the tissue ($\text{Sv}$), $w_\text{R}$ the radiation weighting factor (a pure number) and $D_\text{T}$ the absorbed dose of the tissue ($\text{Gy}$). The weighting factor is a rounded value agreed on in radiation protection. It describes how much more harmful a type of radiation is than gamma radiation at the same absorbed dose, but it is not an exact measured ratio of the damage in every cell. The factor for neutrons depends on their energy.
 

@@ -168,8 +168,8 @@ A nucleus ${}^{A}_{Z}\text{X}$ has $Z$ protons and $N = A - Z$ neutrons. The mas
 \Delta m = Z\,m_\text{H} + N\,m_\text{n} - m_\text{atom}
 ```
 where $m_\text{H}$ is the mass of a hydrogen atom ${}^{1}\text{H}$, $m_\text{n}$ the mass of a neutron and $m_\text{atom}$ the mass of the atom ${}^{A}_{Z}\text{X}$. The binding energy of a nucleus is the energy corresponding to the mass defect
-```latex
-E_\text{B} = \Delta m\,c^2
+```kaavat
+binding energy of a nucleus :: E_\text{B} = \Delta m\,c^2
 ```
 where $E_\text{B}$ is the binding energy and $c = 2.998 \cdot 10^{8}\,\text{m/s}$ the speed of light. The binding energy of the electrons themselves in the atom is not taken into account, because it is at most hundreds of kiloelectronvolts, and even for the heaviest atoms less than a thousandth of the binding energy of the nucleus.
 
@@ -190,8 +190,8 @@ So $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. When the mass defect is in at
 
 ### Binding energy per nucleon
 The strength of the binding of nuclei is compared with the **binding energy per nucleon**
-```latex
-\frac{E_\text{B}}{A}
+```kaavat
+binding energy per nucleon :: \frac{E_\text{B}}{A}
 ```
 where $A$ is the mass number, that is, the number of nucleons. The graph shows it calculated from atomic masses for $32$ nuclei. For light nuclei the value rises steeply, because each nucleon has more and more neighbours to which the strong interaction binds it. Helium-4 is exceptionally tightly bound. The value is highest, about $8.8\,\text{MeV}$, for iron-56 and nickel-62. For heavier nuclei it falls gently, because the strong interaction acts only between nearest neighbours, but the electric repulsion of the protons reaches across the whole nucleus.
 
@@ -281,8 +281,8 @@ The graph shows when a nuclear reaction releases energy: when the nuclei formed 
 
 ### Reaction energy
 In a **nuclear reaction** nuclei change: a nucleus decays, or another nucleus or particle hits a nucleus. In a reaction the mass number and the charge number are conserved (chapter *The atomic nucleus and radioactive decay*), but mass is not. The reaction energy is
-```latex
-Q = (m_\text{initial} - m_\text{final})\,c^2
+```kaavat
+energy released in a nuclear reaction :: Q = (m_\text{initial} - m_\text{final})\,c^2
 ```
 where $m_\text{initial}$ is the sum of the masses of the starting materials and $m_\text{final}$ the sum of the masses of the particles formed. When $Q > 0$, energy is released as the kinetic energy of the particles formed and as gamma radiation; when $Q < 0$, the reaction needs energy. The formula counts the masses of all the particles on both sides. The atomic masses in tables also include the electrons of the atoms. In alpha decay and most nuclear reactions there are equally many electrons on both sides, so atomic masses can be put into the formula directly. For example, in the alpha decay of uranium-238, ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$, the mass decreases by $0.004583\,\text{u}$, so $Q = 0.004583 \cdot 931.5\,\text{MeV} \approx 4.27\,\text{MeV}$.
 

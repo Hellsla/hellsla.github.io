@@ -381,8 +381,8 @@ missä $I_0$ on säteilyn intensiteetti ilman estettä, $I$ intensiteetti esteen
 Intensiteetin sijasta yhtälöön voi sijoittaa mittarin nettopulssimäärän. Nettopulssimäärä on pulssimäärä, josta taustasäteily on vähennetty. Eksponentti $\tfrac{d}{d_{1/2}}$ kertoo, kuinka monta puoliintumispaksuutta esteessä on. Sen ei tarvitse olla kokonaisluku. Paksuuksilla $d$ ja $d_{1/2}$ on oltava sama yksikkö.
 
 Säteilyn vaimeneminen voidaan kirjoittaa myös toisella tavalla. Siinä käytetään **vaimennuskerrointa** $\mu$:
-```latex
-I = I_0 e^{-\mu d}
+```kaavat
+heikennyslaki :: I = I_0 e^{-\mu d}
 ```
 Tässä $\mu$ on vaimennuskerroin. Sen yksikkö on $\text{m}^{-1}$ tai $\text{cm}^{-1}$. Esteen paksuus $d$ on samassa pituusyksikössä.
 
