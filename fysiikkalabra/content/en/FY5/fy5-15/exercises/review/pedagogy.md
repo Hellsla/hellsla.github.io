@@ -5,8 +5,7 @@ CONTENT-HASH: d1d0256fc1beb06a
 None.
 
 ## Polish
-1. fy5-15 solutions: the level law is in MAFY form and used the same way in each solution; answers unchanged.
-2. Delta review, language en. Code comments in lessons/FY5/fy5-14/answers.py and lesson-answers.py still use v_s, v_h, f_h. Students do not see them. Update when convenient.
+1. exercises/solutions.md:17 — Kaava states L = 10 lg(I/I0) dB, Sijoitus then writes 10 dB · lg(...) without a word on the rewrite; add one clause.
 
 ## Checked
-Diff of changed symbols and formulas, student-facing text in fi, fi-easy and en, grep for old symbols.
+Full review of the exercise set and solutions for en (fy5-15). L = 10 lg(I/I0) dB is the stated law in lesson, inquiry and solutions; derived forms unchanged; no old symbols. Answers unchanged; solutions keep the diagram/principle before the numbers.

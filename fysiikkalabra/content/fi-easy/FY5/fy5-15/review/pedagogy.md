@@ -5,8 +5,7 @@ CONTENT-HASH: 1aca946ad8dad687
 None.
 
 ## Polish
-1. fy5-15 lesson and inquiry: L = 10 lg(I/I0) dB is stated once as the law, with lg explained. Difference and inverse forms are consistent with it. Understandable.
-2. Delta review, language fi-easy. Code comments in lessons/FY5/fy5-14/answers.py and lesson-answers.py still use v_s, v_h, f_h. Students do not see them. Update when convenient.
+1. exercises/solutions.md:17 — Kaava states L = 10 lg(I/I0) dB, Sijoitus then writes 10 dB · lg(...) without a word on the rewrite; add one clause.
 
 ## Checked
-Diff of changed symbols and formulas, student-facing text in fi, fi-easy and en, grep for old symbols.
+Full review of lesson, inquiry, exit ticket, simulation labels and figures for fi-easy (fy5-15). L = 10 lg(I/I0) dB is the stated law in lesson, inquiry and solutions; derived forms unchanged; no old symbols. Packet was a delta with an empty diff; the lesson files were read directly. Activities, staging, level mix and exit ticket as approved earlier; unchanged by the symbol renaming.
