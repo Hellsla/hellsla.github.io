@@ -13,6 +13,14 @@ ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta
 FY1–FY7 ja FY9 on tehty (#501, #522, #527, #529, #572, #578, #580). FY5:ssä F pysyy gravitaatiolaissa (opettaja 14.11: F pysyy FY5:ssä); nimeämättä jääneet kaavat on listattu #572:n kuvauksessa opettajaa varten. Keskinopeuden tunnus on kaikkialla $v_\text{k}$, ei $v_\text{ka}$
 (opettaja 2026-11-13).
 
+## 3b. Kaavataulukon välistys `\\[Npt]` (2026-11-14, #580:n löydös)
+
+`scripts/kaavat.py` (canonical/write) jättää rivinvaihdon välin `\\[4pt]` tekstinä "[4pt]" kaavarivin alkuun, joten
+lohkoa ei voi muuttaa kaavataulukoksi. Siksi FY7:ssä jäi nimeämättä neljä MAFY-kaavaa: fy7-7 sinimuotoinen
+vaihtojännite ja teholliset arvot, fy7-8 P = UI, fy7-15 Brewsterin laki. Jaettu muutos, pieni; korjaus muuttaa
+katselmointien tiivisteitä, joten `reviews.py`:n carry tai scope selvitetään samassa PR:ssä. Sen jälkeen nimetään
+nuo neljä (formula-names). Tehdään FY8:n kaavojen jälkeen, kun jaettu jono sallii.
+
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
 
 Tehty (#549, erät 2–4): fy10-liukukitka, fy10-jousivakio, fy10-induktio (kuva osin, ks. PR), tvt-kuvaaja ja tvt-tyoselostus; fy10-hiuksen-paksuuden löydös ei pitänyt kuvasta (ei muutettu). Jäljellä: erä 1 (jaetut komponentit), Minor-erä ja yhteinen kuvasääntö.
@@ -31,7 +39,8 @@ Löytyi #568:n koko sivuston ajossa 360 ja 390 px:llä: `ahjo-drone-lentokokeet`
 91–130 px laatikkoaan leveämpi (`check_layout` `table`, suljettu tila). Ainoa löydös koko sivustolla näillä
 leveyksillä. Lähde `jaksot/ahjo/kohteet/ahjo-drone-lentokokeet.md`. Korjaus ensisijaisesti jaksopohjan taulukon
 yhteisessä tyylissä (jaettu: yksin) tai taulukon rakenteessa (sisältö, ei katselmointeja Ahjon sivuilla). Pieni,
-voidaan tehdä, kun mikään jaettu muutos ei ole auki.
+voidaan tehdä, kun mikään jaettu muutos ei ole auki. #579:n koko sivuston ajossa (390 ja 1280 px) samoin
+`ahjo-airbit-kokoaminen`, `ahjo-airbit-ohjaus` ja `ahjo-fpv-lento`: korjataan samassa PR:ssä.
 
 ## 5. CI:n toistettavuus (2026-11-13)
 
@@ -149,18 +158,6 @@ E_\text{hyöty}/E$, $E = Pt$, $Q = rm$, energiatase), sitten johdettu kaava, sie
 sitten sijoitus. Korjataan kurssi kerrallaan `/exercises`- ja `/practice`-putkella (sisältömuutos, katselmoinnit
 scope-säännön mukaan); järjestys kuten kohta 2. Ei rinnakkain saman kurssin tehtäväkatselmoinnin kanssa: yhdistetään
 samaan ketjuun, kun kurssin katselmointi on vielä kesken (FY5, FY6, FY7).
-
-## 8h. Ensimmäinen ennuste näkyy aina (opettaja 2026-11-13)
-
-`Varattu: claude/8h-ensimmainen-ennuste`
-
-Ennusta-vaihe on nyt yksi suljettu laatikko "Tee ennusteet ennen tutkimista · N kysymystä" (CLAUDE.md Lesson page 3,
-2026-10-26), joten vaihe näyttää tyhjältä. Opettaja: "ehkä ensimmäinen ennuste pitäisi aina näkyä. Nyt jää muuten
-turhan tyhjäksi tuo ennuste-kohta." Muutos: ensimmäinen ennustekysymys näkyy auki vaiheen alussa, muut (jos on)
-laatikossa "Lisää ennusteita · N kysymystä"; yhden ennusteen luvussa ei laatikkoa lainkaan. Sitoutuminen ennen
-vastausta (gating), tallennus ja Palaa ennusteisiisi -yhteenveto ennallaan. Sivupohjan muutos (inquiry.py/js,
-site.css), ei lukujen tekstejä; korjaa CLAUDE.md:n Lesson page 3 samassa PR:ssä; test_inquiry ja test_progress.
-Yhdistetään #546:n jälkeen (sama Ennusta-alue).
 
 ## 8i. FY2: energialajit taulukoksi (opettaja 2026-11-13)
 
