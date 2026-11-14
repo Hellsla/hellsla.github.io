@@ -112,12 +112,12 @@
 ## fy7-11-L3-03
 **Given:** red edge: angle of incidence $\alpha_\text{r} = 59.5^\circ$, refractive index $n_\text{r} = 1.3315$; violet edge: $\alpha_\text{v} = 58.8^\circ$, $n_\text{v} = 1.3431$; one reflection from the back surface of the droplet
 **Find:** width of the arc $\Delta\theta = \theta_\text{r} - \theta_\text{v}$ in degrees
-**Principle:** The angle of the edge of each colour from the direction of the antisolar point follows from the geometry of the droplet, $\theta = 4\beta - 2\alpha$, when the angle of refraction $\beta$ is calculated from the law of refraction with its own refractive index. The width of the arc is the difference between the angles of the red and violet edges, because red is on the outer edge.
+**Principle:** The angle of the edge of each colour from the direction of the antisolar point follows from the geometry of the droplet, $\theta = 4\beta - 2\alpha$, when the angle of refraction $\beta$ is calculated from the law of refraction with its own refractive index. The width of the arc is the difference between the angles of the red and violet edges, because red is on the outer edge of the primary rainbow.
 **Formula:** $\sin\beta = \dfrac{\sin\alpha}{n}$, $\theta = 4\beta - 2\alpha$ and $\Delta\theta = \theta_\text{r} - \theta_\text{v}$
 **Conversions:** Not needed: the angles are in degrees.
 **Substitution:** Red: $\sin\beta_\text{r} = \dfrac{\sin 59.5^\circ}{1.3315} = 0.64711$, $\beta_\text{r} = 40.324^\circ$, $\theta_\text{r} = 4 \cdot 40.324^\circ - 2 \cdot 59.5^\circ = 42.296^\circ$. Violet: $\sin\beta_\text{v} = \dfrac{\sin 58.8^\circ}{1.3431} = 0.63686$, $\beta_\text{v} = 39.558^\circ$, $\theta_\text{v} = 4 \cdot 39.558^\circ - 2 \cdot 58.8^\circ = 40.632^\circ$. $\Delta\theta = 42.296^\circ - 40.632^\circ = 1.664^\circ$
 **Answer:** about $1.66^\circ$, that is, rounded $1.7^\circ$: the result is the difference of two almost equal angles, so significant figures are lost.
-**Reasonableness:** The width is about three times the apparent diameter of the sun, $0.5^\circ$, which fits experience: a rainbow is a narrow band. The angle of red is greater, so red is on the outer edge.
+**Reasonableness:** The width is about three times the apparent diameter of the sun, $0.5^\circ$, which fits experience: a rainbow is a narrow band. The angle of red is greater, so red is on the outer edge of the primary rainbow.
 
 ## fy7-11-L1-06
 **Find:** why violet light is refracted more than red light in glass

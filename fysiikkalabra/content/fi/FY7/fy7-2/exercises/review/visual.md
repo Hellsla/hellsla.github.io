@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8f2bdb276d7840aa
-Round: 1
+CONTENT-HASH: c282aa48e9d21cc9
+SCOPE: delta added-exercise from 8f2bdb276d7840aa base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
-- [Minor] L2-08 — the options come out in the order B, D, A, C (answer-position shuffle); letters out of order read oddly on a phone. Relabel after shuffling if the build allows.
-- [Minor] L2-08 figures (four SVGs at 390 px: scale equal, v blue, F_m red, ⊙ drawn, descriptions complete) — nothing wrong; the F_m label beside ⊙ in A is small but legible.
+- [Minor] 2-18 (fy7-2/r-points) — the top point (2,0; about 21 cm) lies just above the last gridline (20) — extend the y axis to 25 for room.
 
 ## Checked
-- Rendered at 390 px with my own script (/tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy7-1-k7q2/vis_fy7_k7q2.py): the new task opened, wrong and right answers chosen so the feedback shows, Vastaus and Näytä ratkaisu open. Measured: no horizontal overflow (document 390 px, nothing past the viewport), no red KaTeX, no inline formula wider than 300 px, task card 330 px wide. Read from text only: option form tells, distractors against the chapter's warned mistake, scope against earlier chapters, spelling, Finnish.
-- Delta only: the new task and its solution (render), the re-split task texts (situation, then question) as text.
+- Delta: added 2-9 (fy7-2-L1-09) and 2-18 (fy7-2-L2-09) with solutions: open-exercises-1280 parts 9-10, open-exercises-L2-1280 parts 11-12 (graph and solution read at full size).
+- The earlier Major (exercise id shown to the student) is gone: Järkevyys now says "Tehtävän 2-2". The rest of the set not re-reviewed.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7cbc290e1ae44e71
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 9573a13d429ad8dd
+SCOPE: delta added-exercise from 7cbc290e1ae44e71 base 8f23aa7ae3bd
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- fy6-16-L2-09 and L2-05 — both use the same house evening-load setting (L2-05 as a table, "omakotitalon sähköteho tunneittain illalla ennen latausasemaa"); if the figures are the same, change L2-09's powers or its question (cost, not the fuse check) so the two do not feel like one task twice; they ask different questions, so not blocking.
 
 ## Checked
-- Diff since origin/main for fy6-16 exercises (fi-easy) read against the teacher's brief items that touch it; the changed text says what the brief intends, is consistent between lesson, inquiry, exercises, solutions and feedback, and introduces no new misconception.
-- Standing rules in the changed lines: LaTeX maths and units, decimal comma, no bold in task statements, no lesson ids shown.
-- NOTES.md §12: same physics as the Finnish; new terms (kytkentämuutos, irradianssi, tehokerroin, vaihe-ero, pätöteho, mitoitettu, vakiovirtalähde etc.) are explained in the sentence where first used; whole natural sentences, one action per sentence in instructions.
-- L1-02: 8,0 A x 230 V = 1840 W = 1,8 kW, 2 s.f. like the current; 'more than 21 h' for 40 kWh checks out (21,7 h). L3-02: (16/10)^2 = 2,56, i.e. +156 %, unchanged; framing as an appropriately dimensioned EV charging cable is clear.
+- L2-09: level 2 fits (read four constant steps, sum area as energy, convert snt to euros, cost); situation first, question last; the everyday context is recognisable.
+- Figure talo-ex gives 2, 5, 7 and 3 kW per hour on a 1 kW grid; description matches and gives no energy or cost.
+- Solution stepwise; 17 kWh and 2,72 € recomputed; the unit conversion is shown; Järkevyys average-power check is real.
+- Answer 2,72 with 2 % tolerance accepts the stated 2,7 €.
+- Adds a cost-from-graph task to the L2 mix (kinds: graph/data/error/model); progression within level 2 sound; not the worked example.

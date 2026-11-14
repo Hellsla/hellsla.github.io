@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 99b43d4ac55dcc70
+CONTENT-HASH: 60fd7dae122dc102
 
 ## Blocking
-
-## Fixed
-- L2-08 text: "resoluutio" and "virheraja" explained in the sentence (resoluutio eli pienin näyttöaskel; virheraja eli suurin mahdollinen virhe), NOTES §12.3.
+- none
 
 ## Polish
+- none new; the earlier note on L2-09 and L2-10 sharing one reading stands.
 
 ## Checked
-- New task fy6-2-L2-08 is a YO-skill form task at the same level and kind as in fi; situation first, question last, clear instruction.
-- Distractors and feedback are misconception-based and repair the error (same as fi); no answer disclosed in the task text.
-- Model answer is complete and follows step by step as in fi.
-- Selkeä suomi: terms explained inside the sentence, one idea per sentence, physics unchanged.
+- Diff: fy6-2-L2-10 tolerance 0,1 to 0,12 (answer 2,98). A student rounding the ratio 0,08 : 0,02685 to 3 or 3,0 stays inside, so the widening is fair; it does not let a wrong method through (2 or 4 is far outside).
+- Task, solution and figure unchanged; the earlier PASS conclusions hold.

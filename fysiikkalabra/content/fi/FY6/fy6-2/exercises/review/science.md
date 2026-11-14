@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8a721a86e7a34235
-Round: 2 (commit 57a66480d changed only the new task fy6-2-L2-08; round-1 Polish item on 0,033 A is resolved: marked "välitulos, noin 0,03 A").
+CONTENT-HASH: dcfc3915e8b2c9f3
+SCOPE: delta added-exercise from 8a721a86e7a34235 base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
+- content/fi/FY6/fy6-2/exercises/solutions.md (fy6-2-L2-10, Vastaus) — "noin 3,0 kertaa" gives two figures although U₀ − U = 0,08 V has one; "noin 3 kertaa" matches the data's precision.
 
 ## Checked
-- Hash 8a721a86e7a34235 at start and end.
-- answers.py run against exercises.json: all 16 numeric answers agree within tolerance (one python call).
-- Changed 200 mA chain recomputed: 0,010 · 140 mA + 0,2 mA = 1,6 mA; 10 A range 0,0328 A ≈ 0,03 A; ratio about 20. Row 3 is still the only wrong line, and `answer` matches.
-- The no-error option "Päättelyssä ei ole virhettä" and the task sentence now agree; its feedback no longer asserts an error, only points to the error-limit calculation, and stays correct physics.
-- Reworded wrong-row feedback ("Jos pidät riviä virheellisenä, ajattelet ehkä …") keeps the same, correct reasons: ammeter in parallel → short circuit, start range vs final range, a reading that does not fit the 2 V range gives OL.
-- The wrong row is still the lesson's warned mistake (largest range always best); everything used (Δx = p·x + n·r, OL, smallest fitting range) is taught in this lesson.
-- Inline formula widths measured (KaTeX render at 17 px, 1.21 em, own script): widest 262 px, the changed chain 252 px, under 300 px. Page not rendered; the rest from text.
+- Hash dcfc3915e8b2c9f3 at start and end; delta round 2: only fy6-2-L2-09 and fy6-2-L2-10 judged.
+- Round-1 blocking item resolved: L2-10 `tolerance` is now 0.12, so the lesson-rule route with ΔU rounded to 0,03 V (0,08 V : 0,03 V = 2,67, 10,5 % off) and the unrounded route (2,98) are both accepted.
+- L2-09 recomputed: ΔU = 0,005 · 1,37 V + 2 · 0,01 V = 0,02685 V; rounded 0,03 V is 11,7 % off, inside 0.12. answers.py agrees.
+- L2-10 recomputed: (1,45 V − 1,37 V) : 0,02685 V = 2,98; conclusion "not consistent" is right (1,45 V outside 1,37 ± 0,03 V); the suggested cause (lamp run at another voltage) is sound.
+- Figure generator: display 1,37 V, pointer at the 20 V range (resolution 0,01 V, as the lesson's table); alt text gives reading and range, no error limit.
+- Both solutions: symbolic Δx = p·x + n·r before numbers, rounding by the lesson's rule, real checks. Notation as in the lesson.

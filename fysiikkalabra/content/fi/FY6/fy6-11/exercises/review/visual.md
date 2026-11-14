@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5e217585a15dde17
-ROUND: 2 (delta)
+CONTENT-HASH: 6c0936636b690650
+SCOPE: delta added-exercise from 5e217585a15dde17 base 8f23aa7ae3bd
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy6-11-L2-08 option order — the page shuffles the options but the labels are fixed, so the list reads A, C, B, D (carried over).
-- [Minor] fy6-11-L2-08 figures — four option cards each about 330 px tall with the drawing in the middle third (carried over); reduce the figure height.
-- [Minor] fy6-11-L2-08 options — A, C and D each differ from B by one error (inherent to the task type).
+- [Minor] fy6-11-L1-09 Kaava — the symbol E is the field strength and also stands for the breakdown strength in Annettu; fine as is, but "läpilyöntikestävyys" could carry its own symbol $E_\text{max}$ so the Periaate line reads "kun $E = E_\text{max}$".
 
 ## Checked
-- Rendered at 390 px (all four options, B with solution open) and the four figures: arrow lengths unchanged and to one scale (F_s twice G), "pölyhiukkanen" wording and new values 2,0 · 10^-11 N / 9,8 · 10^-12 N consistent in task, feedback and solution; aria-labels say hiukkanen and keep the full description (D names the missing weight); no overflow. The round-1 304 px chain is gone: the G calculation is now split into three short rows, none over 290 px.
-- L3-01 and L3-02 re-checked at 390 px, clean.
+- review/shots/fy6-11-open-exercises-1280-9.png (and -8.png for the neighbouring task 11-8, stamp hash 6c0936636b690650): task 11-9 (L1-09) with hint, answer row and the open solution, Annettu to Järkevyys.
+- Typography: fraction, unit conversion by words, units upright, colon for division, case ending after the maths ($2{,}5\,\text{mm}$:n); the task is situation first, question last; the set still reads as one.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

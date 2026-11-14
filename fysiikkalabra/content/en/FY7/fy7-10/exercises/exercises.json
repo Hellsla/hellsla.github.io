@@ -254,7 +254,7 @@
       "level": 2,
       "text": "The figure shows the measurements of a laser experiment in which light arrives from the air into acrylic, and a straight line fitted to the points. Read from the line two points at which $\\sin\\alpha_2$ is $0.20$ and $0.60$, and determine the slope of the line. Use it to deduce the refractive index of acrylic when the refractive index of air is $1.00$. What is the angle of refraction in the acrylic when light arrives from the air at an angle of incidence of $35.0^\\circ$?",
       "figure": "fy7-10/fit",
-      "answer": 22.6407,
+      "answer": 22.48145,
       "unit": "°",
       "tolerance": 0.03
     }

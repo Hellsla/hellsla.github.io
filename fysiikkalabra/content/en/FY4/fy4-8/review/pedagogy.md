@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: ce492d94e4c486d4
+CONTENT-HASH: dcb4c31e8b7caf56
 
 ## Blocking
-None. The new notation is staged: W = Fs, then the work principle, then the energy principle with the W_G step. Inquiry, worked example and sim labels agree.
 
 ## Polish
-1. lesson.md, Energiaperiaate: W means the total work in the work principle and the other forces' work in the energy principle. The text says so and introduces W_G, so it is followable; one extra sentence, "tässä W ei sisällä painon työtä", would help first-time readers.
-2. Solutions use E_mek0 (e.g. exercise on friction and air drag) but the lesson never says E_mek0 = E_p0 + E_k0; add it beside the E_mek definition.
+- The lesson's Why question is now long; 'chain-lift' may need no gloss for students but a picture word would help.
 
 ## Checked
-Read the changed text and the surrounding formula section, worked example, solutions and inquiry for the MAFY symbols; grep found no leftover old symbol (F_parallel, W_kok, W_muut, E_k,1, E_mek,1) in this language.
+batch delta review: Why question, explain prompt and friction wording agree; the criteria still match the narrowed prompt; the friction sentence is clearer than before.

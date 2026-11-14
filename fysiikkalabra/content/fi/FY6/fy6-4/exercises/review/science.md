@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f628c9c4d2493275
-Round: 1 (new task fy6-4-L2-08, ordering; the rest of the set was PASS before and is unchanged).
+CONTENT-HASH: b76783ab2894e5cb
+SCOPE: delta added-exercise from f628c9c4d2493275 base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
-- content/fi/FY6/fy6-4/exercises/solutions.md:220 — "B ja C vaihtavat paikkaa" is incomplete: forgetting to invert also makes D look like 100 Ω + 0,012 ≈ 100 Ω, so D moves before E as well — write "B ja C vaihtavat paikkaa ja D siirtyy E:n edelle" or drop D from the sentence explicitly ("rinnakkaisten kytkentöjen B ja C").
-- content/fi/FY6/fy6-4/exercises/exercises.json:265 — connection C (three 330 Ω in parallel) is the same calculation as L1-05 in this set; consider e.g. three 300 Ω (100 Ω) so the order stays C < B < E.
+- content/fi/FY6/fy6-4/exercises/solutions.md (fy6-4-L2-09, Vastaus) — "$500\,\text{mA}$, kaksi merkitsevää numeroa" does not show two figures; write $0{,}50\,\text{A} = 5{,}0 \cdot 10^{2}\,\text{mA}$ or "noin $500\,\text{mA}$ ($0{,}50\,\text{A}$)".
 
 ## Checked
-- Hash f628c9c4d2493275 at start and end.
-- answers.py run against exercises.json: all 18 numeric answers agree within tolerance (one python call).
-- L2-08 recomputed: A 550 Ω, B 132 Ω, C 110 Ω, D 265 Ω, E 150 Ω; order C, B, E, D, A matches `order` and `answer`; 1/R_B = 0,0076 1/Ω and 1/R_C = 0,0091 1/Ω are right.
-- The prompt names the quantity and the direction (pienimmästä suurimpaan).
-- The lesson's second warned mistake (every added resistor increases R) is what the order tests: C has the most resistors and the smallest R, and B lies below the single 150 Ω.
-- Formulas (series sum, 1/R sum, R1R2/(R1+R2), mixed connection inside out) are the lesson's; wire resistance neglected is stated.
-- Inline formula widths measured (KaTeX render at 17 px, 1.21 em, own script): widest 239 px. Page not rendered; the rest from text.
+- Hash b76783ab2894e5cb at start and end; delta: only fy6-4-L2-09 judged.
+- Figure topology traced from figures.py: + plate up to node (xL, T); R1 on the top wire from that node to the right side, which runs down to the second node (xR, M); R2 on the middle wire between the same two nodes; the right side continues to the bottom wire and the − plate. R1 and R2 are truly in parallel across the battery; values 9,0 V, 30 Ω, 45 Ω readable; no current shown. Alt text gives the same topology and values.
+- Assumptions (ideal battery, wire resistance neglected) are in the task, as in the lesson's example.
+- Recomputed: R = 30 Ω · 45 Ω : 75 Ω = 18 Ω; I = 9,0 V : 18 Ω = 0,50 A = 500 mA; branch currents 0,30 A + 0,20 A = 0,50 A; answers.py agrees; unit mA and tolerance 2 % fit.
+- Not a repeat of the worked example (different values, answer asked in mA); formulas and notation are the lesson's.
+- Solution complete: reading the figure, principle with reason, symbolic R and I before numbers, conversion, substitution with units, check by branch currents and R below the smaller resistor.

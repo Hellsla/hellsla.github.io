@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 724262a8cdeb5d9e
+CONTENT-HASH: 7de4344ab38e2aaf
 
 ## Blocking
 None.
@@ -8,7 +8,5 @@ None.
 None.
 
 ## Checked
-- Round 2, delta: the round-1 fixes judged in their context.
-- L2-05 Answer line now fixes two significant figures (4,5 * 10^2 N) with a reason; 450 N correct (half of 900 N).
-- No new task, figure or level change; set mix and counts unchanged from the passed version.
-- Language and case endings in the changed text are correct.
+- Delta: L1-03 sentences split and clear; grammar correct, situation then question.
+- Nothing else touched; numbers, answers and solution steps unchanged.

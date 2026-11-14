@@ -199,7 +199,7 @@ Ihmisen toiminta on nostanut ilmakehän hiilidioksidipitoisuutta. Pääosin syy 
 Tehoero näyttää pieneltä. Koko maapallon alalla se on kuitenkin valtava. Suurin osa energiasta varastoituu meriin. Merien lämpökapasiteetti on suuri. Siksi lämpeneminen on hidasta, mutta se myös jatkuu pitkään. Energiaratkaisut ovat siksi myös eettisiä valintoja, jotka vaikuttavat tuleviin sukupolviin. Tällaisia ratkaisuja ovat eristäminen, lämpöpumput ja päästöttömät voimalaitokset.
 
 ## Kaava: Lämpöteho ja U-arvo
-Rakennusosan läpi johtuva lämpöteho on
+Rakennusosan läpi siirtyvä lämpöteho on
 ```latex
 P = U A \Delta T
 ```
@@ -284,7 +284,7 @@ Kolmas virhe on luulla, että villapaita tuottaa lämpöä. Se vain hidastaa lä
 
 ## Tiivistelmä
 - Lämpö siirtyy johtumalla, konvektiolla ja lämpösäteilynä. Lämpötilaeron vuoksi energiaa siirtyy lämpimämmästä kappaleesta kylmempään. Kaikki kappaleet lähettävät lämpösäteilyä, myös kylmempi.
-- Rakennusosan läpi johtuva lämpöteho on $P = UA\Delta T$. Pieni U-arvo tarkoittaa hyvää lämmöneristystä.
+- Rakennusosan läpi siirtyvä lämpöteho on $P = UA\Delta T$. Pieni U-arvo tarkoittaa hyvää lämmöneristystä.
 - Energiatasapainossa tuleva ja lähtevä teho ovat yhtä suuret. Silloin lämpötila pysyy vakiona.
 - Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin. Siksi maanpinnan tasapainolämpötila nousee noin $-18\,{}^\circ\text{C}$:sta noin $+15\,{}^\circ\text{C}$:een.
 - Kasvihuonekaasujen lisääntyminen rikkoo tasapainon hetkellisesti. Maapallo lämpenee, kunnes uusi tasapaino asettuu korkeampaan lämpötilaan.

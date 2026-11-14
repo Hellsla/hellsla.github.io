@@ -221,7 +221,7 @@ The weight is about $10^{-14}$ times the magnetic force, so only $\overline{F}_\
 **Conversions:** $B = 0.80\,\text{mT} = 0.80 \cdot 10^{-3}\,\text{T}$; finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $r = \dfrac{9.109 \cdot 10^{-31}\,\text{kg} \cdot 4.0 \cdot 10^{6}\,\text{m/s}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 0.80 \cdot 10^{-3}\,\text{T}} = 2.843 \cdot 10^{-2}\,\text{m} = 2.843\,\text{cm}$
 **Answer:** $2.8\,\text{cm}$, two significant figures like the speed and the field.
-**Reasonableness:** The result is of the same order as in the electron-beam tube of task $\text{fy7-2-L1-02}$ (millimetres). Here the speed is twice as large and the field about half as strong, so the radius is about four times as large as there; a size of centimetres fits.
+**Reasonableness:** In the electron-beam tube of task 2-2 the radius was $7.6\,\text{mm}$. Here the speed is twice as large and the field about half as strong, so the radius is about $3.75$ times as large, roughly $28\,\text{mm}$; a size of centimetres fits.
 
 ## fy7-2-L2-09
 **Given:** graph $r(v)$, $B = 0.20\,\text{T}$, $|q| = 1.602 \cdot 10^{-19}\,\text{C}$, $v = 1.5 \cdot 10^{6}\,\text{m/s}$, velocity perpendicular to the field

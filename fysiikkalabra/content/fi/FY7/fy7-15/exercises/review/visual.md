@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 49d3bc7f92e37a89
-Round: 1
+CONTENT-HASH: 00b8c689c34d85f6
+SCOPE: delta added-exercise from 49d3bc7f92e37a89 base 8f23aa7ae3bd
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-15-L1-09 — viiden tilanteen kuvaus on pitkä tekstimuuri puhelimella (noin 150 sanaa); harkitse tilanteiden lyhyempää muotoa tai taulukkoa. Ei estä käyttöä.
+- [Minor] 15-10 — Sijoitus gives 268 W/m² from 0,67 (two figures) while Vastaus says 270 W/m²; keep one rule. The Kaava I = I_0·I/I_0 is a tautology.
+- [Minor] 15-19 Järkevyys — 'lähellä väliä, jonka keskikohta 195 lx' is clumsy; say 'lukema 200 lx on hieman suurempi kuin 195 lx, joka vastaa kulmaa 45°'.
 
 ## Checked
-- Kuvat 390 px (oma skripti vis_k7q.py, uusi tehtävä palautteineen ja ratkaisuineen auki): doc scrollWidth 390, ei vaakaylivuotoa, ei yli 300 px leveitä KaTeX-ketjuja, ei KaTeX-virheitä. Sivun 1280 px -kaappauksia en avannut; ne ja muu sivu katsottu vain tekstistä ja determinististen tarkistusten perusteella.
-- 15-9 (L1-09): järjestystehtävä 390 px, vastaus ja ratkaisu auki: valintalistat "Sija" mahtuvat korttiin, ketjut mahtuvat, ei ylivuotoa. Järjestelyn käyttö (select-sijat) vain staattisesti, ei interaktiota.
-- Muoto: oikea järjestys ei ole tunnistettavissa muodosta; harhat (ilman neliötä, puolitus unohtunut) ovat ratkaisussa. Tekstistä ja renderistä.
-- L3-03: kappalejako ok.
-
-- Re-check after the I_E line change to I_E = 500 W/m² · (cos² 45°)²: packet regenerated, recaptured; open-exercises-1280-10 shows the formula rendering correctly and fitting its box; check_layout (open state, every solution open) OK at 345 px and 390 px, no overflow.
+- fy7-15 L1 captures 10-12 (15-10 graph, 15-11), L2 captures 9-11 (15-19 graph, solution).
+- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

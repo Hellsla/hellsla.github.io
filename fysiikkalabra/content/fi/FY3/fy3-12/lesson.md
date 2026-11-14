@@ -193,7 +193,7 @@ Ilmakehän vesihöyry, hiilidioksidi ja metaani päästävät auringonvalon pä�
 Ihmisen toiminta, pääosin fossiilisten polttoaineiden käyttö, on nostanut ilmakehän hiilidioksidipitoisuuden noin 280 miljoonasosasta yli 420 miljoonasosaan. Kun kasvihuonekaasuja lisätään, avaruuteen pääsee hetkellisesti vähemmän energiaa kuin Auringosta tulee. Ero on nykyään noin $1\,\text{W}$ jokaista maapallon neliömetriä kohti. Ylimääräinen energia lämmittää valtameriä, maata ja ilmaa, kunnes uusi tasapaino asettuu korkeampaan lämpötilaan. Tätä sanotaan ilmastonmuutokseksi. Pieneltä näyttävä tehoero on koko maapallon alalla valtava, ja suurin osa siitä varastoituu meriin, joiden suuri lämpökapasiteetti hidastaa lämpenemistä mutta myös pitää sen käynnissä pitkään. Energiaratkaisut, kuten eristäminen, lämpöpumput ja päästöttömät voimalaitokset, ovat siksi myös eettisiä valintoja, jotka vaikuttavat tuleviin sukupolviin.
 
 ## Kaava: Lämpöteho ja U-arvo
-Rakennusosan läpi johtuva lämpöteho on
+Rakennusosan läpi siirtyvä lämpöteho on
 ```latex
 P = U A \Delta T
 ```
@@ -274,7 +274,7 @@ Moni sekoittaa kasvihuoneilmiön ja otsonikadon, vaikka ne ovat eri asioita: ots
 
 ## Tiivistelmä
 - Lämpö siirtyy johtumalla, konvektiolla ja lämpösäteilynä, ja lämpötilaeron vuoksi energiaa siirtyy nettomääräisesti lämpimämmästä kylmempään. Lämpösäteilyä lähettävät kaikki kappaleet, myös kylmempi.
-- Rakennusosan läpi johtuva lämpöteho on $P = UA\Delta T$. Pieni U-arvo tarkoittaa hyvää lämmöneristystä.
+- Rakennusosan läpi siirtyvä lämpöteho on $P = UA\Delta T$. Pieni U-arvo tarkoittaa hyvää lämmöneristystä.
 - Energiatasapainossa tuleva ja lähtevä teho ovat yhtä suuret, ja lämpötila pysyy vakiona.
 - Kasvihuonekaasut imevät maanpinnan lämpösäteilyä ja säteilevät osan takaisin, mikä nostaa maanpinnan tasapainolämpötilan noin $-18\,{}^\circ\text{C}$:sta noin $+15\,{}^\circ\text{C}$:een.
 - Kasvihuonekaasujen lisääntyminen rikkoo tasapainon hetkellisesti, ja maapallo lämpenee, kunnes uusi tasapaino asettuu korkeampaan lämpötilaan.

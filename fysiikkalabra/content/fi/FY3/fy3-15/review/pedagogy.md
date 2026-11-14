@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e5b3692fe330bd26
+CONTENT-HASH: a3f92c1500c8a340
 
 ## Blocking
-None. Read the whole chapter (lesson, inquiry, exit ticket); the new notation can be followed by a first-time student, the inquiry, worked example and exit ticket use the same symbols, and no number or answer changed.
+None.
 
 ## Polish
-1. lesson.md, Kaava: η = W_a/W_o = P_a/P_o with the a = anto, o = otto note and 'o-kirjain, ei nolla' is clear; the chain from P_o and P_h = P_o − P_a read well. The paragraph is dense (four new terms in one block); consider splitting at 'Voimalaitoksessa vaiheet ovat peräkkäin'.
-2. The stage formula P_h = P_o − P_a is used in the solutions with P_o the stage's input (P_o = P_1 for the steam cycle) while the chain calls that input P_1; solutions explain it, but a half-sentence in the lesson ('vaiheelle otto on edellisen vaiheen anto') would remove the doubt.
-3. exercises (solutions L2-07 area): the heat-pump task still uses ε = Q/E_s while fy3-11 now teaches ε = Q₁/W; E_s means 'sähköenergia' here. Consider ε = Q₁/W or say so in Annettu.
+1. lesson.md (yhteistuotanto paragraph, last sentence) — "Laitoksen sähkö- ja lämpötehon suhde sekä käyttö riippuvat laitostyypistä ja energiantarpeesta." is vague, and "käyttö" is unclear. Suggest: "Sähkön ja lämmön tuotannon suhde riippuu laitostyypistä ja siitä, paljonko lämpöä tarvitaan." A student gets no concrete picture of what varies.
+2. The removed link "siksi ... kesällä lähes pelkkää sähköä" lost the one concrete example of why the ratio is chosen by heat demand. Consider one plain sentence: "Kesällä lämpöä tarvitaan vähemmän, joten kaukolämpöön johdettava osuus on pienempi." Not required.
+
+## Checked
+- The new statement (mainly heating, also cooling and industrial heat) is accurate and does not add a goal beyond the slot.
+- The summer claim is now conditional ("yleensä pienempi") and no longer invites the misconception that a CHP plant makes only electricity.
+- "Kaukolämpöä pääasiassa lämmitykseen" in the common-misconception paragraph and in the inquiry model answer matches the main text; the argument (not all energy is equally valuable) still holds.
+- Finnish: grammar and case forms in the changed sentences are correct.
+- No numbers or symbols changed; the exit ticket and the worked example are not touched.

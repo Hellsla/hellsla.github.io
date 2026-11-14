@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c7393e08a3ea5ab9
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 1a8d5341ee906641
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- 'primary rainbow' is used before it is explained; one clause in the hook ('the main bow, the brighter one') would help. The hook mentions the fainter second arc, which helps.
 
 ## Checked
-- Diff: a droplet does not send literally one colour; the strongest directions differ by colour, so one colour reaches the eye especially strongly from each droplet.
-- Still leads to 'jokainen katsoja näkee oman sateenkaarensa' without a gap.
-- Language checked: en. Hash c7393e08a3ea5ab9 at start and end.
+batch delta review: primary-rainbow qualification applied consistently across goal, hook, Why, reflect, explain prompt, model answer and heading; goal still completes 'In this lesson, you will learn to'.

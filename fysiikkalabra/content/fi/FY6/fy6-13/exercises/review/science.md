@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 6f38db9cc5bb5b1e
-Round: 2, science, mode full. Scope: the round-1 fixes to fy6-13-L1-09 (commit 57a66480d). The rest of the set is unchanged. Checked from text only, no renders.
+CONTENT-HASH: 33d51071fa114751
+SCOPE: delta added-exercise from 6f38db9cc5bb5b1e base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
+- exercises.json (fy6-13-L2-08) — "toisen kondensaattorin" refers to L1-05's capacitor, but the two tasks sit apart and are not linked. A reader of this task alone does not know what the "other" capacitor is. "Erään kondensaattorin" removes the dangling reference; the physics is unaffected.
+- solutions.md (fy6-13-L1-10, Vastaus) — the reason "kaksi merkitsevää numeroa kuten paksuudessa" is right, but the area 250 cm² has three significant figures. Name the limiting data (d = 0,10 mm and ε_r = 2,3) so the reason is exact.
 
 ## Checked
-- Statement 2 now reads "virta kulkee … eristeen läpi samalla tavalla kuin johtimissa". It is false by the lesson's model and is no longer contradicted by electrolytic leakage, so the round-1 polish item is resolved. Its feedback adds "Eriste ei johda sähköä", which matches the lesson.
-- Statements 1 and 4: only the feedback chains were split. I recomputed Q = 1,2 mC, QU = 14,4 mJ, ½QU = 7,2 mJ and 28,8 mJ at 24 V.
-- The truth values T, F, F, F, T are unchanged, and the answer string, statements and solution agree.
-- Solution: Q = CU and W = ½CU² each stand on their own row before substitution, and the verdicts are five paragraphs. The physics is unchanged, including the "half to the resistor" point within the lesson's resistive charging model.
-- All numeric answers of the set were recomputed from answers.py in one call: no mismatch.
-- Inline width (text estimate): the longest row, `W = ½ · 100 · 10⁻⁶ F · (12 V)²`, is about 220 px.
+- Hash 33d51071fa114751 at start and end; I judged only L1-10 and L2-08 (delta added-exercise).
+- L1-10: C = ε₀ε_r A/d. The film fills the gap, and d = 0,10 mm is far smaller than the side of a 250 cm² plate (about 16 cm), so the brief's conditions for the formula hold.
+- L1-10 recomputed: 8,854·10⁻¹² · 2,3 · 0,025 : 1,0·10⁻⁴ = 5,09 nF, which equals answers.py. Polyethylene ε_r ≈ 2,3 matches the MAFY value; with 2,25 the result is 4,98 nF, which the 5 % tolerance accepts.
+- L1-10 conversions: cm² → m² (·10⁻⁴) and mm → m are right.
+- L2-08: figures.py draws a line from (0; 0) to (120 µC; 8 V), both on grid lines, and the alt text gives the same point. Neither states C or W.
+- L2-08 recomputed: C = 120 µC : 8 V = 15 µF and W = ½CU² = ½ · 15 µF · (7,0 V)² = 367,5 µJ, which equals answers.py. The tolerance of 2 % fits the answer to two significant figures.
+- L2-08 physics: the (Q, U) line through the origin means C is constant, as the brief teaches. The energy follows from ½CU², and the check by ½QU gives the same result. 7,0 V lies inside the drawn range, so no extrapolation is needed.
+- Both solutions are complete: the formula comes before the numbers, the conversions are shown, the rounding is stated (with the precision caveat above), and each has a real check (air capacitor × ε_r; ½QU < QU).
+- Scope: both tasks use only the brief's formulas (capacitance, the plate capacitor, energy), all within FY6's central content *kondensaattori ja kondensaattorin energia*.

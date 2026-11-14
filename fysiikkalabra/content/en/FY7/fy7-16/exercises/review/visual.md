@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0311e476009c3306
-Mode: delta (new task fy7-16-L2-08 and its solution), round 1
+CONTENT-HASH: 9c560683833c7d8b
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] fy7-16/charger-points — the "receiver coil" leader in the right panel ends at the phone's upper edge, not at the coil in its base; extend it a little lower.
 
 ## Checked
-- Rebuilt and captured fy7-16 (en); opened fy7-16-open-exercises captures at 1280 px (last parts of the level) showing fy7-16-L2-08 with its task text, options or input, feedback, answer and opened solution.
-- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
-- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; no Finnish left in the new task.
-- No figures in the new task; the lesson page and other tasks are unchanged (delta).
+- Delta: redrawn fy7-16/charger-points in task 16-17 (fy7-16-open-exercises-L2-1280-11, -12, full size): labels sit outside the phone and the counted lines (6 and 4 are readable), no white box over the receiver coil; solution chain and the added current condition clean.
+- Changed task 16-18 with graph and solution (L2-1280-12, -13, -14): $70\,\text{km}$ beyond the graph's end is said so in the solution; 0.78 % consistent in chip, substitution and Reasonableness. Rest not re-reviewed.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

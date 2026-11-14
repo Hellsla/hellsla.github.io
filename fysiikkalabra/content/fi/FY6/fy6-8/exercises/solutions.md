@@ -229,7 +229,7 @@ Johtopäätös: lähdejännite on noin $1{,}55\,\text{V}$ ja sisäinen resistans
 Epävarmuus vaikuttaa myös tulokseen: jos ääripisteiden lukemat ovat $0{,}01\,\text{V}$ vinossa vastakkaisiin suuntiin, kulmakertoimesta tulee $0{,}30\,\text{V} : 0{,}80\,\text{A} \approx 0{,}38\,\Omega$ tai $0{,}34\,\text{V} : 0{,}80\,\text{A} \approx 0{,}43\,\Omega$, joten sisäinen resistanssi on noin $0{,}4\,\Omega$.
 
 ## fy6-8-L2-09
-**Annettu:** kuvaajan pisteet, joista ääripisteet ovat $(50\,\text{A};\ 11\,\text{V})$ ja $(250\,\text{A};\ 7\,\text{V})$. Pisteiden kautta on piirretty suora.
+**Annettu:** kuvaajan mallista lasketut pisteet, joista ääripisteet ovat $(50\,\text{A};\ 11\,\text{V})$ ja $(250\,\text{A};\ 7\,\text{V})$. Pisteiden kautta on piirretty suora.
 **Kysytty:** akun sisäinen resistanssi $R_\text{s}$ ohmeina
 **Periaate:** Napajännite on $U = E - R_\text{s} I$, joten $(I, U)$-kuvaaja on laskeva suora, jonka kulmakerroin on $-R_\text{s}$. Sisäinen resistanssi saadaan kulmakertoimesta, ei yhdestä pisteestä: yhden pisteen $U : I$ olisi ulkoisen kuorman resistanssi.
 **Kuvaajan lukeminen:** Luetaan suoralta kaksi kaukana toisistaan olevaa ruudukkopistettä. Virralla $I_1 = 50\,\text{A}$ napajännite on $U_1 = 11\,\text{V}$ ja virralla $I_2 = 250\,\text{A}$ se on $U_2 = 7\,\text{V}$.

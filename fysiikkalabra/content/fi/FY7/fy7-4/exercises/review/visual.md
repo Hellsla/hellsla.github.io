@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: eb78314c0c339d07
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: f44c17044fad7b3b
+SCOPE: delta added-exercise from eb78314c0c339d07 base 8f23aa7ae3bd
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] 4-17 (fy7-4/force-angle) — data points are drawn in the momentum purple; use ink/neutral markers so the FY4 colour code is not diluted (the red curve is right for force).
 
 ## Checked
-- Source diff since origin/main of exercises/exercises.json, exercises/solutions.md and lessons/FY7/fy7-4/answers.py.
-- μ0 = → \approx in every Annettu line and task statement; LaTeX intact; decimal separators per language.
-- Hash identical at start and end.
+- fy7-4 L2 captures 11-13 (4-17 graph and solution).
+- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

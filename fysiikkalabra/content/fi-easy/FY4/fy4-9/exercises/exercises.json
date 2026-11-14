@@ -20,7 +20,7 @@
   {
    "id": "fy4-9-L1-03",
    "level": 1,
-   "text": "Lentopallon massa on $0{,}27\\,\\text{kg}$. Pallo on hetken levossa lentoratansa ylimmässä kohdassa, kun pelaaja iskee sitä. Pallo lähtee kädestä nopeudella $18\\,\\text{m/s}$. Pallon painon vaikutus iskun aikana jätetään huomiotta. Kuinka suuren impulssin käsi antaa pallolle?",
+   "text": "Lentopallon massa on $0{,}27\\,\\text{kg}$. Pallo heitetään pystysuoraan ylöspäin. Pelaaja iskee palloa, kun se on hetkellisesti levossa lentoratansa ylimmässä kohdassa. Pallo lähtee kädestä nopeudella $18\\,\\text{m/s}$. Pallon painon vaikutus iskun aikana jätetään huomiotta. Kuinka suuren impulssin käsi antaa pallolle?",
    "answer": 4.86,
    "unit": "N·s",
    "tolerance": 0.02

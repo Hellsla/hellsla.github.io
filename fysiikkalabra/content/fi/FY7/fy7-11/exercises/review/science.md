@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 444d1349c80bb015
-ROUND: 1
+CONTENT-HASH: 66d63bbe91c2aaab
+ROUND: 2
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- New task L1-09 (true/false, 6 statements) only (additions only since b032dcb83~1). Checked from the text only; no renders.
-- Statement 1 is false (violet n 1,530 > red 1,514; red deviates least). This is the chapter's warned mistake.
-- Statement 2 is true: v = c : n gives 1,961·10⁸ and 1,982·10⁸ m/s (recomputed).
-- Statement 3 is false: the frequency is unchanged at a boundary (taught in fy7-10) and λ shortens.
-- Statement 4 is true: a separated colour does not split again. This is the warned "the prism colours the light" mistake, and the remaining slight spread within one band is a fair simplification (C).
-- Statement 5 is true: violet at 40,6° < red at 42°, so violet is on the inner edge.
-- Statement 6 is false: with the Sun at 45° the top is at 42° − 45° = −3°. This matches the lesson's "aurinko alle 42°".
-- The set has 3 true and 3 false statements, and each feedback gives the statement's reason. Every statement uses only fy7-10/fy7-11 content.
-- answers.py: all 19 numeric answers agree with exercises.json; the L1-09 comment matches the answer string.
-- Hash 444d1349c80bb015 at start and end.
+- Delta only: in the solution of fy7-11-L3-03, the Periaate and Järkevyys sentences now say "punainen on pääsateenkaaren ulkoreunalla". The fi, en and fi-easy wording is the same.
+- The task is about the primary rainbow in all three languages. Its text says "Kumpikin heijastuu kerran pisaran takapinnasta" (en "Each is reflected once", fi-easy "Kumpikin säde heijastuu kerran"). One internal reflection is the primary bow, and the solution's Annettu line repeats it.
+- The physics is right. θ = 4β − 2α holds for one reflection. Red is at 42,297° and violet at 40,632°, so red has the larger angle from the antisolar point and is on the outer edge of the primary bow. The new qualifier is correct and sharper, because the order is reversed in the secondary bow, as the lesson's Tiivistelmä says.
+- Recomputed from the task data: θ_p = 42,297°, θ_v = 40,632°, Δθ = 1,665°. This matches answers.py (1,6647) and the solution. The given angles of incidence are at the maximum of θ (my scan gives 42,297° and 40,632° as the maxima for n = 1,3315 and 1,3431), so they are the edges of the bow.
+- The model answer of the nearby error-analysis task (solutions.md:166) is unchanged and agrees with this. It says "ulkoreunalla" without the qualifier, but the context is the same one-reflection droplet, so this is not a finding.
+- Hash 66d63bbe91c2aaab at the start and at the end.

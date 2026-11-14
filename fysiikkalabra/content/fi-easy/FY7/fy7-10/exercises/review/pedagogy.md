@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 820217f747566fa9
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 5d62dc395f4148da
+SCOPE: delta added-exercise from 820217f747566fa9 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- New task fy7-10-L2-08 keeps the Finnish scaffolding: same demand, same distractors with misconception-specific feedback, one correct answer, feedback repairs the misconception.
-- Task text gives the data the student needs and does not disclose the answer.
-- Language: follows NOTES.md section 12: shorter sentences, same physics and numbers, decimal comma, no new content.
+- L1-09: 36,2 deg verified, MAFY lookup; L2-09: k = 1,50, 22,5 deg now consistent with answer 22,48.
+- Language checked: fi-easy. Hash 5d62dc395f4148da at start; unchanged at end.

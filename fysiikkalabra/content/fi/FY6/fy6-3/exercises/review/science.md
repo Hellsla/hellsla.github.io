@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 593f504a543bc1e6
-Round: 1 (new task fy6-3-L1-09, graph choice with four figures; the rest of the set was PASS before and is unchanged).
+CONTENT-HASH: b00b18d0b241bb39
+SCOPE: delta added-exercise from 593f504a543bc1e6 base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
+- content/fi/FY6/fy6-3/exercises/solutions.md (fy6-3-L1-10, Järkevyys) — "40 · 0,0112 Ω = 0,45 Ω" repeats the substitution in two steps rather than checking it; a comparison with the lesson's L1-04 cable (25 m, 2,5 mm², 0,17 Ω) or the remark that the lesson table's 1,7·10⁻⁸ Ω·m gives the same 0,45 Ω would be a real check.
 
 ## Checked
-- Hash 593f504a543bc1e6 at start and end.
-- answers.py run against exercises.json: all 18 numeric answers agree within tolerance (one python call).
-- L1-09 recomputed: U = 2,0 kΩ · 4,0 mA = 8,0 V. Figure generators match the descriptions: pick-curve U = 0,5 V·(I/mA)² gives (2,0; 2,0), (4,0; 8,0), end (4,5; 10,1); pick-k2 (2,0; 4,0), (4,0; 8,0), (4,5; 9,0); pick-k05 (4,0; 2,0), (4,5; 2,25); pick-flat 2,0 V. Only C is a line through the origin with U : I = 2,0 kΩ everywhere.
-- Axes (I horizontal, U vertical, slope = R) as in the lesson; the same axes, colour and weight for every option, so the answer is not given away by form; each option's description is full (axes, grid, points).
-- Option A passes through the right point (4,0 mA; 8,0 V) but is curved like a hot lamp's characteristic (concave up, R rising with U as the lesson says), so it catches the lesson's warned mistake about R and U; B catches I : U taken as the slope; D catches R drawn as a height.
-- Feedback and solution use U : I with the colon in prose, coordinate pairs with a semicolon, and say why each wrong option is wrong.
-- Inline formula widths measured (KaTeX render at 17 px, 1.21 em, own script): widest 241 px. Figures and page not rendered; checked from generator code and text.
+- Hash b00b18d0b241bb39 at start and end; delta: only fy6-3-L1-10 judged.
+- Law and conditions: R = ρl/A for a uniform copper wire, the lesson's formula and notation; 20 °C table value, nothing heats the wire in the task.
+- MAFY value: copper 1,678·10⁻⁸ Ω·m is the VERIFIED row of docs/mafy-arvot.tsv (Virtapiirit > Resistiivisyyksiä, Johteet), and the hint names that table.
+- Recomputed: A = 1,5 mm² = 1,5·10⁻⁶ m²; R = 1,678·10⁻⁸ Ω·m · 40 m : 1,5·10⁻⁶ m² = 0,4475 Ω ≈ 0,45 Ω; answers.py agrees. With the lesson table's 1,7·10⁻⁸ Ω·m: 0,453 Ω, still inside tolerance 3 %, so either source is accepted.
+- Magnitude realistic (a 40 m run of 1,5 mm² installation cable, about 0,45 Ω); two significant figures follow from l and A; unit Ω and tolerance fit.
+- Solution complete: given, principle and why, symbolic formula, mm² → m² conversion, substitution with units, rounding reason, unit check.

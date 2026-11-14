@@ -1,19 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 06991c696df18874
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 3c9ea2b0809de4d8
+SCOPE: delta added-exercise from 16a047b5f70a77e7 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
-
-## Fixed
-(none)
+- none
 
 ## Polish
-(none)
+- Solution Reasonableness uses ':' for division (3.0e-3 Wb : 0.40 s); write a fraction.
 
 ## Checked
-- decimal point in JSON, tables and LaTeX; plain English.
-- New task L1-09: prompt, options, feedback and solution (Kysytty/Periaate/Mallivastaus, Reasonableness) keep the fi level, order and staging; feedback repairs the misconception without giving the answer away before the choice.
-- Terminology consistent with the lesson and the rest of the set.
-- Figures (where the task has them): descriptions translated, no answer disclosed beyond fi.
+- L2-08: decimal points now correct; 4.0 V verified; the sign-change case adds a new misconception beside L2-02.
+- Language checked: en. Hash 3c9ea2b0809de4d8 at start; unchanged at end.

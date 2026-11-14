@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a5bcdc4c18223477
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: bcdc97b32687d881
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] 'nuklideista' and 'gravitaatio' are unexplained/different from the chapter's 'painovoima'; use 'ytimistä' and 'painovoima'.
+- [Minor] 'Sidosenergia ... raudan ja nikkelin alueella' sits oddly beside 'aina rautaan asti'; say 'rautaryhmän ytimiin' in both.
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+batch delta review: opened fy8-16-fig-row-1280 (spectrum figure unchanged, legible); read all changed lines in lesson and inquiry.

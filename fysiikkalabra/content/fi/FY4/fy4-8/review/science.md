@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0f5a8a49eb2fd144
+CONTENT-HASH: 8701713dc6e7b8e3
 
 ## Blocking
 None.
 
 ## Polish
-1. lesson.md, Tiivistelmä bullets 2 and 3: W is the total work in one and the other forces' work in the next; each says so in words, but adding "(kokonaistyö)" / "(muiden voimien kuin painon työ)" after the formulas would make it unmissable.
-2. lesson.md, Esimerkki: the data keep v_1 = 0, v_2 = 7,6 m/s beside E_k0/E_k (as the brief allows); one clause "loppunopeus v_2 on lopputilan nopeus" would tie the indices together.
-3. Not student-facing: assets/sims/fy4/fy4-8/sim.js comments (lines 8, 11, 154) and lessons/FY4/fy4-8/answers.py, lesson-answers.py comments still say W_muut, W_kok, E_mek,1; content/en/FY4/fy4-8/figures.json keeps an unused "muut": "other" entry.
-4. kortit/fy4.json fy4-energiaperiaate: the definition says "ei-konservatiivisten voimien työ", the lesson "muiden voimien kuin painon"; same thing in FY4 (weight is the only conservative force) but the card could use the lesson's words.
+1. lesson.md (fi, en, fi-easy), paragraph "Painon eli painovoiman ja kitkan eron…": "Kitkan ja ilmanvastuksen tekemä negatiivinen työ kasvaa jokaisella kuljetulla metrillä" has no condition of its own. In context it is about the coaster, and the paragraph on the energy principle already gives the conveyor-belt exception, so it is a C simplification. Adding "kun ne vastustavat liikettä" there too would match the corrected sentence word for word.
+2. Still from the earlier report: notes 1–4 (Tiivistelmä W labels, the v_2 index clause, comments in the code and figures.json, the wording of the concept card) are unchanged and are still polish.
 
 ## Checked
-- Formula tables: W = Fs (F the component along the motion, constant force, one direction, stated), E_k0 + W = E_k (W total work), E_p0 + E_k0 + W = E_p + E_k (W other forces' work, the switch is said explicitly), conservation law with W = 0: all equal MAFY with conditions; symbols and units defined where they first appear.
-- Worked example, inquiry feedback (mgh + W = E_k, ΔE_mek = W), sim labels (lang sims.fy4-8: W, E_mek0), figures (palkit, palkit-asteikko), exit ticket, kortit: same symbols; no leftover F_∥, W_kok, W_muut, E_k,1, E_mek,1 in student-facing text.
-- Numbers recomputed (own script): −645 J, 9,9 m/s, 41 %, 27 N, 314 N; lesson-answers.py unchanged; lint has no physics warnings; fi, fi-easy and en say the same.
+- Work–kinetic energy paragraph (fi, en, fi-easy): "Kun kitka ja ilmanvastus vastustavat kappaleen liikettä, niiden tekemä työ on negatiivinen…" now states its condition (B removed). It agrees with the energy principle paragraph (stationary surface or air; a moving belt or wind can do positive work) and with the worked example ("negatiivinen, koska … vastustavat liikettä").
+- No "aina negatiivinen / always negative" and no "aina korkein / always the highest" is left in lesson.md, inquiry.json, exit-ticket.json or meta.json in any of the three languages. "Kokonaisenergia säilyy aina" and "energia säilyy aina" (a distractor) are correct as they are.
+- Miksi question (fi, en, fi-easy): "perinteisen ketjuhissillä toimivan … yleensä korkein, jos junalle ei anneta myöhemmin lisää energiaa" fits the model. Launched coasters and booster wheels are now outside the claim, and the condition "no energy added later" is stated.
+- check-3 prompt (fi, en, fi-easy) agrees with its criteria and model answer: the chain lift supplies the mechanical energy, nothing adds to it afterwards, without losses the train reaches at most the starting height, and resistive work grows with distance so "mäet yleensä madaltuvat". The prompt's "yleensä" matches the model answer's "yleensä". The criteria ask only for what the prompt asks.
+- The Pohdinta phenomenon (inquiry.json, chain lift to 40 m, then nothing pulls the train) and the Ydinajatus coaster paragraph (rolling resistance and air resistance oppose the motion the whole way) match the new assumptions.
+- No numbers or symbols changed in the diff, so nothing needed recomputing. The content hash was the same at the start and the end.

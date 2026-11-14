@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7c99e4251271e391
+CONTENT-HASH: edc1028be1632df7
+SCOPE: delta added-exercise from 7c99e4251271e391 base 8f23aa7ae3bd
 
 ## Blocking
-
-## Fixed
-- None.
+- none
 
 ## Polish
+- solutions.md fy6-4-L2-09 Vastaus — "500 mA, kaksi merkitsevää numeroa" is ambiguous as written; "0,50 A = 500 mA" (already in Sijoitus) or $5{,}0 \cdot 10^{2}\,\text{mA}$ shows the two figures.
 
 ## Checked
-- New task fy6-4-L2-08 compared with the reviewed Finnish: ordering: same order C 110, B 132, E 150, D 265, A 550 ohm recomputed; 1/R values 0.0076 and 0.0091.
-- Ids, answer text, units, tolerance, correct flags, option/statement order, figure keys and every number and LaTeX expression identical (decimal comma, Selkeä suomi per NOTES §12).
-- Solution carries the same steps and results as fi; principle stated, unknown solved symbolically, reasonableness points kept.
-- Short sentences, difficult words explained, physics terms kept (resoluutio, virheraja, ominaiskäyrä).
-- check_i18n.py fi-easy shows nothing for fy6-4; build.py fy6-4 succeeds.
+- fy6-4-L2-09 recomputed: R = 30 Ω · 45 Ω : 75 Ω = 18 Ω, I = 9,0 V : 18 Ω = 0,50 A = 500 mA; matches answers.py and exercises.json (unit mA, tolerance 0,02).
+- Topology of fy6-4/task-parallel traced in figures.py: R1 (top wire) and R2 (middle wire) both join node (xL, T) to node (xR, M), so they are in parallel across the battery; values 9,0 V, 30 Ω, 45 Ω shown, no currents; alt text gives the same.
+- Ideal battery and wire resistance neglected stated in the task, as in the brief's example.
+- Solution complete: parallel reasoning, symbolic R and I, conversion to mA, branch-current check 0,30 A + 0,20 A and R < smaller resistor.
+- Does not repeat the worked example (different values, asks the same quantity at level 2 with a figure to read: acceptable).
+- Content hash checked at start and end.

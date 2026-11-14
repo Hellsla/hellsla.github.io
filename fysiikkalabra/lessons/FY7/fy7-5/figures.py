@@ -188,13 +188,13 @@ def flux_task():
 def flux_task_2():
     """Task figure: the flux through a coil against time, piecewise linear and changing sign: 5,0 mWb at 0, falling to
     -3,0 mWb at 0,40 s, constant to 0,60 s, rising to 0 at 0,80 s. No voltage drawn or written."""
-    f = Fig("fy75-flux-task-2", 340, "Kuvaaja mittakaavassa: käämin läpi kulkeva magneettivuo millivebereinä ajan funktiona "
+    f = Fig("fy75-flux-task-2", 362, "Kuvaaja mittakaavassa: käämin läpi kulkeva magneettivuo millivebereinä ajan funktiona "
             "sekunteina. Vuo on hetkellä 0 arvossa 5,0 ja pienenee tasaisesti arvoon miinus 3,0 hetkeen 0,40 s mennessä. "
             "Sen jälkeen vuo pysyy arvossa miinus 3,0 hetkeen 0,60 s asti ja kasvaa tasaisesti nollaan hetkeen 0,80 s "
             "mennessä. Ruudukon väli on 0,1 s ja 1 mWb.")
     ax = Axes(f, (96, 316), (480, 60), x=(0, 0.9), y=(-3.5, 5.5), xticks=[0.1 * k for k in range(1, 10)],
               yticks=[-3, -2, -1, 1, 2, 3, 4, 5], xlabel=r"t\ (\text{s})", ylabel=r"\Phi\ (\text{mWb})",
-              xfmt=lambda v: fi(round(v, 1), 1) if round(v * 10) % 2 == 0 else "", x_at=0)
+              xfmt=lambda v: fi(round(v, 1), 1) if round(v * 10) % 2 == 0 else "", x_at=0, ticks_below=True)
     ax.line([(0, 5.0), (0.4, -3.0), (0.6, -3.0), (0.8, 0), (0.9, 0)], FIELD, 3)
     return f.svg()
 

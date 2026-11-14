@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b366c16fb04b0dad
+CONTENT-HASH: 50e828664421391d
+SCOPE: delta added-exercise from b366c16fb04b0dad base 8f23aa7ae3bd
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-6-L2-08 — the heading "Mikä perustelu selittää vastauksesi?" sits tight under the "Ei aivan" line; a little space above it would separate the two stages.
-- [Minor] Mallivastaus — two paragraphs of about 110 words; fine for a complete explanation, optional break at "Jos induktiovirta vahvistaisi vuon kasvua".
+- none
 
 ## Checked
-- fy7-6-open-exercises-L2-1280-10 and -11 (fi-easy): task 6-16 direction choices, five reason choices with feedback inside the cards, answer line, opened solution (Kysytty, Periaate, Mallivastaus).
-- Language plain and in order; terms (Lenzin laki, induktiovirta, samanniminen napa) used consistently; no red KaTeX, no overflow.
-- Not opened: the first screen of the task (situation text) in -9, text matches the en version I opened.
+- Added exercises L2-09, L3-06 (fi-easy, FY7 fy7-6): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-6.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
+- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
+- Hash identical at start and end.
 
 ## Scores
-illustrations 3 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -1,19 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 8a451579ec92be38
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: df286322a33f1dbd
+SCOPE: delta added-exercise from 6726af0dada9471a base 8f23aa7ae3bd
 
 ## Blocking
-(none)
-
-## Fixed
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- NOTES.md §12: clearer Finnish, short sentences, 'ideaaliseksi eli häviöttömäksi' / 'suuruusluokka' explained, same physics.
-- New task L1-09: prompt, options, feedback and solution (Kysytty/Periaate/Mallivastaus, Reasonableness) keep the fi level, order and staging; feedback repairs the misconception without giving the answer away before the choice.
-- Terminology consistent with the lesson and the rest of the set.
-- Figures (where the task has them): descriptions translated, no answer disclosed beyond fi.
+- L2-08: flux 5,0 to -3,0 mWb, change 8,0 mWb, e = 200 x 0,020 V = 4,0 V; sign change misconception, requires reading the graph.
+- Language checked: fi-easy. Hash df286322a33f1dbd at start; unchanged at end.

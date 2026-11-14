@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9a730fa7a4922787
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 7fe022e04b0a183f
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] Two consecutive sentences begin 'Siksi'; vary one ('Niinpä' or merge).
+- lesson.md:3 — "pääsateenkaaren" appears in the opening Miksi question before the hook defines it (the hook is the first stage of inquiry.json). A student reading top-down meets the term a few lines before its explanation; acceptable, but could say "Miksi kirkkaan sateenkaaren (pääsateenkaaren) ulkoreunalla..." on first use.
+- inquiry.json hook — "sivusateenkaari" is defined but never used again; fine as vocabulary, optional to drop if the reading level matters.
 
 ## Checked
-- Diff: a droplet does not send literally one colour; the strongest directions differ by colour, so one colour reaches the eye especially strongly from each droplet.
-- Still leads to 'jokainen katsoja näkee oman sateenkaarensa' without a gap.
-- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash 9a730fa7a4922787 at start and end.
+- Previous blocking item fixed: the hook now says "Kirkkaampaa kaarta sanotaan pääsateenkaareksi ja himmeämpää sivusateenkaareksi." in plain words, right after the second faint arc is mentioned, so the term is opened at first use in the student's path.
+- Hook question "pääsateenkaaressa samassa järjestyksessä" is grammatical and consistent with the definition.
+- Reflect prompt, explain prompt and lesson heading "Miksi punainen on pääsateenkaaren ulkoreunalla" use the term consistently; the model answer and criteria still match the prompt (red outside, violet inside, why only with sun behind).
+- Rephrasing "punaista ... violettia" is correct Finnish (partitive).
+- No numbers or symbols changed; learning goals and the opening-question answer unchanged.
+- Hash identical at start and end.

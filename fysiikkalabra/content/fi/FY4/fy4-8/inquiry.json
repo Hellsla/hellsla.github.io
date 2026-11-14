@@ -468,7 +468,7 @@
    "stage": "tarkista",
    "type": "explain",
    "title": "3. Selitä",
-   "prompt": "Selitä energian avulla, miksi vuoristoradan ensimmäinen mäki on radan korkein ja myöhemmät mäet ovat sitä matalampia. Mihin junan mekaaninen energia matkan aikana menee?",
+   "prompt": "Selitä energian avulla, miksi perinteisen ketjuhissillä toimivan vuoristoradan ensimmäinen mäki on yleensä korkein ja myöhemmät mäet ovat sitä matalampia. Mihin junan mekaaninen energia matkan aikana menee?",
    "criteria": [
     "Vastaus kertoo, että ketjuhissin tekemä työ antaa junalle sen mekaanisen energian ja että sen jälkeen mikään ei lisää sitä.",
     "Vastaus kertoo, että ilman häviöitä juna pääsisi enintään lähtökorkeudelle, koska mekaaninen energia säilyy, ja että myöhemmän mäen on oltava tätä matalampi, jotta huipulla jää liike-energiaa.",

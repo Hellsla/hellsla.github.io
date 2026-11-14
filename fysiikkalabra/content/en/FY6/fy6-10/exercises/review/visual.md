@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 0c40b39a97046bfa
-Mode: delta (new YO-skill task fy6-10-L2-08, type 6 prediction of change; L3-02 re-paragraphed)
+CONTENT-HASH: 7c8b70ef0c8025aa
+SCOPE: delta added-exercise from 0c40b39a97046bfa base 8f23aa7ae3bd
+Round 1
+Mode: delta (added exercises fy6-10-L1-09, L2-09, L2-10; shown as 10-9, 10-18, 10-19)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy6-10-L2-08 Principle — Coulomb's law $F = k\,\tfrac{\lvert q_1 q_2 \rvert}{r^2}$ is set inline with \tfrac; the numerator $\lvert q_1 q_2 \rvert$ renders very small at 1280 px. The same formula is the point of the line, so a display line (or the Find/Principle split) would read better.
-- [Minor] fy6-10-L2-08 options — the answers $\tfrac{2}{9}F$, $\tfrac{2}{3}F$, $\tfrac{1}{9}F$ use inline \tfrac, so the digits are small inside the option rows; they are readable and follow the house rule, so only an observation.
-- [Minor] fy6-10-L2-08 text — "ball A", "ball B" are plain letters, while the solution's symbols ($q$, $r$) are maths; set A and B as $A$, $B$ if the chapter's other tasks do.
+- [Minor] fy6-10-L2-10 Principle — in the set-up equation $q_\text{A1} q_\text{A2}$ the two charges run together ($q_{A1}q_{A2}$); add a thin space or \cdot between them.
+- [Minor] fy6-10/ex-pari — the labelled y ticks are 2, 4, 6, 8 while the grid is 1 mN; the text reads the 4 mN line, which is labelled, so it works; labelling every second gridline is enough.
 
 ## Checked
-- fy6-10-open-exercises-L2-1280-10.png (end of L2-07, task text "10-16" with the three paragraphs, the options with the correct one's feedback) and -11.png (the "Correct." state, answer chip, Find, Principle, Model answer with the F, F' and ratio displays): options whole rows, feedback inside the card, displays aligned, nothing clipped.
-- The re-paragraphed L3-02 was not opened; the change is mechanical.
+- fy6-10-open-exercises-1280-10.png (L1-09 solution end, reasonableness chain as aligned rows).
+- fy6-10-open-exercises-L2-1280-12.png, -13, -14 (tasks 10-18 and 10-19 with their graphs, answer chips and full solutions); the graphs show quantity and unit on both axes, readable ticks, labelled curves A and B in different colours, no charge given away; the description matches.
+- Typography: units in LaTeX, decimal point in en, colon division, roots and fractions legible, nothing clipped.
 
 ## Scores
-illustrations n/a (4) · typography 4 · English 5 · accessibility 4
+illustrations 4 · typography 4 · English 5 · accessibility 4

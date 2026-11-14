@@ -165,7 +165,7 @@ The current of situation A only exceeds the threshold of perception. With these 
 **Formula:** $I = \dfrac{P_\text{max}}{U}$
 **Conversions:** Not needed: $1\,\text{W} = 1\,\text{V} \cdot 1\,\text{A}$.
 **Substitution:** $I = \dfrac{4000\,\text{W}}{230\,\text{V}} = 17.39\,\text{A}$
-**Answer:** about $17\,\text{A}$, two significant figures like the rated current $16\,\text{A}$ and the value read from the graph. The current exceeds the rated current $16\,\text{A}$ slightly, so the circuit is overloaded during this time.
+**Answer:** $I \approx 17\,\text{A}$, two significant figures like the rated current $16\,\text{A}$ and the value read from the graph. The current exceeds the rated current $16\,\text{A}$ slightly, so the circuit is overloaded during this time.
 **Reasonableness:** The largest allowed power of the circuit is $230\,\text{V} \cdot 16\,\text{A} = 3680\,\text{W}$. The steps $1000\,\text{W}$, $3000\,\text{W}$, $2000\,\text{W}$ and $3500\,\text{W}$ are below it, but $4000\,\text{W}$ is above, and $4000\,\text{W} : 230\,\text{V} \approx 17\,\text{A}$ is slightly over $16\,\text{A}$. The excess is short and small, so the fuse does not necessarily trip at once.
 
 ## fy6-15-L3-01

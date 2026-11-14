@@ -133,7 +133,7 @@ def dryer():
     ax.line([(0, 2.4), (0.5, 2.4), (0.5, 1.2), (1.5, 1.2), (1.5, 0.2), (2.0, 0.2), (2.0, 0)], HEAT, 3)
     f.tex(ax.X(0.5) + 12, ax.Y(2.4), r"\text{kuumennus}", "start", w=130)
     f.tex(ax.X(1.0), ax.Y(1.2) - 26, r"\text{kuivaus}", "middle", w=100)
-    f.tex(ax.X(1.75), ax.Y(0.2) - 26, r"\text{jäähdytys}", "middle", w=110)
+    f.tex(ax.X(1.5) + 12, ax.Y(0.2) - 26, r"\text{jäähdytys}", "start", w=110)
     return f.svg()
 
 

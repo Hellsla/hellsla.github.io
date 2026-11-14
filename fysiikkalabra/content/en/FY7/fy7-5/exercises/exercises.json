@@ -283,7 +283,7 @@
     {
       "id": "fy7-5-L2-08",
       "level": 2,
-      "text": "A coil has $200$ turns. The graph shows the magnetic flux $\\Phi$ through one turn as a function of time $t$. The direction of the flux through the turn reverses during the measurement, so the flux also takes negative values. What is the magnitude of the average induced voltage of the coil in the interval $0$–$0{,}40\\,\\text{s}$? Read the values you need from the graph.",
+      "text": "A coil has $200$ turns. The graph shows the magnetic flux $\\Phi$ through one turn as a function of time $t$. The direction of the flux through the turn reverses during the measurement, so the flux also takes negative values. What is the magnitude of the average induced voltage of the coil in the interval $0$–$0.40\\,\\text{s}$? Read the values you need from the graph.",
       "figure": "fy7-5/flux-task-2",
       "answer": 4.0,
       "unit": "V",

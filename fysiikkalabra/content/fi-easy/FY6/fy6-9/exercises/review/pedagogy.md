@@ -1,7 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 47c6ed01597a514a
-Mode: full (translation review against the reviewed Finnish set; new YO-skill task L1-09 (units: which expression is the stored energy))
-Round 4 (re-review after the L1-09 unit-line rewording, commit 72e243f47)
+CONTENT-HASH: b6066e2dc31595c5
+SCOPE: delta added-exercise from 47c6ed01597a514a base 8f23aa7ae3bd
 
 ## Blocking
 (none)
@@ -10,9 +9,8 @@ Round 4 (re-review after the L1-09 unit-line rewording, commit 72e243f47)
 (none)
 
 ## Checked
-- Fixed: nothing needed; the new task already matched the Finnish.
-- New task L1-09 (units: which expression is the stored energy): the multiple-choice form keeps one clearly correct option, each distractor targets one misconception and its feedback names the error and repairs it, as in fi.
-- Language: Selkeä suomi per NOTES.md §12 (difficult words explained in the sentence, short sentences, no step dropped, decimal comma); the task and solution read naturally and give the same steps as the Finnish.
-- Solutions complete and the reasonableness/check step is a real check.
-- check_i18n: 0 errors (fi-easy).
-- L1-09 solution unit lines ("The unit of $UQ$ is ..." / "Lausekkeen $UQ$ yksikkö on ...") and inline tfrac checked against fi: same four units, same physics; check_i18n 0 errors, build fy6-9 ok.
+- L2-08: level 2 fits (three-part graph read, charge as area, then W = UQ); situation first, question last; answer 61,05 Wh within tolerance of the 61 Wh the solution states.
+- Figure ex-current2 gives all values (2,0/1,5/0,5 A, gridlines 0,5) and its description matches; charge is not given away.
+- Solution stepwise: durations derived, areas summed, unit shortcut explained, reasonableness check real.
+- Overlap with L1-05 (charge from graph) is only the first step; L2-08 adds the energy step. Kinds mix still fine.
+- Finnish reads clearly; case after number+unit correct.

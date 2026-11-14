@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 24851d9dbd27e2fd
-Mode: full (translation review against the reviewed Finnish set; new YO-skill task L2-08 (error-finding, potential vs potential difference, eV))
-Round 3
+CONTENT-HASH: e1cbdbd39a48e885
+SCOPE: delta added-exercise from 24851d9dbd27e2fd base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Fixed: fy6-12-L2-08 row 2 wording ("is the smaller, the higher the potential is" -> "is smaller at a higher potential"); numbers untouched.
-- New task L2-08 (error-finding, potential vs potential difference, eV): the multiple-choice form keeps one clearly correct option, each distractor targets one misconception and its feedback names the error and repairs it, as in fi.
-- Language: natural English, decimal point; the task and solution read naturally and give the same steps as the Finnish.
-- Solutions complete and the reasonableness/check step is a real check.
-- check_i18n: 0 errors (en).
+- The diff changes only the markup of the Formula and Substitution lines of fy6-12-L2-xx solutions.md (\frac to \tfrac / \dfrac); wording, numbers and answer are untouched.
+- The result 8.387e6 m/s and the two significant figures are still the same.
+- \dfrac in a square-root fraction is more readable on a phone than \frac; no new content to judge.

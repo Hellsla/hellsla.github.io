@@ -166,9 +166,9 @@ The expression $\lambda : (4n)$ is obtained if the shift is forgotten, but it is
 **Reading the graph:** The reflection of uncoated glass is the horizontal black line, and $R_0 \approx 4.3\,\%$ is read from it. The green curve is cup-shaped. At its bottom, at about $500\,\text{nm}$, $R_\text{coat} \approx 1.3\,\%$ is read. The bottom is the lowest point of the curve, and the line is above it.
 **Formula:** share removed $= \dfrac{R_0 - R_\text{coat}}{R_0} = 1 - \dfrac{R_\text{coat}}{R_0}$
 **Conversions:** Not needed: both shares are read in percent, and the ratio has no unit.
-**Substitution:** $1 - \dfrac{1.3\,\%}{4.3\,\%} = 1 - 0.302 = 0.698 = 69.8\,\%$
+**Substitution:** $\text{removed share} = 1 - \dfrac{R_\text{coated}}{R_0} = 1 - \dfrac{1.3\,\%}{4.3\,\%} = 1 - 0.302 = 0.698 = 69.8\,\%$
 **Answer:** about $70\,\%$, two significant figures like the values read from the graph. The uncertainty of reading the graph affects the third figure.
-**Reasonableness:** The coating reduces the reflection by more than half, as in the chapter: the reflection falls from about $4.3\,\%$ to about $1.3\,\%$. The result is below $100\,\%$, so the coating does not cancel the reflection completely, which is reasonable because the refractive index $1.38$ of the coating is larger than the ideal $\sqrt{1.52} \approx 1.23$.
+**Reasonableness:** The coating reduces the reflection by more than half, as in the chapter: the reflection falls from about $4.3\,\%$ to about $1.3\,\%$. The result is below $100\,\%$, so the coating does not cancel the reflection completely, as expected, because a single coating layer cannot cancel the reflection at all wavelengths.
 
 ## fy7-14-L3-01
 **Given:** refractive index of the soap film $n = 1.33$, air on both sides, wavelength $\lambda = 589\,\text{nm}$, normal incidence; the film thickens from top to bottom, and the topmost part is black

@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 528237b936f3b704
+CONTENT-HASH: 92cd21a0acba0197
+
 ## Blocking
-(none)
+
 ## Polish
-(none)
+- The goal (inquiry learn 2), the contribution, the refrigerator task and the worked example still say the power "conducted through" a building part, while the Formula section and Summary now say "transferred". This is not wrong at this level (C), because the worked example is about conduction. Using "transferred" in the goal and contribution would match the Finnish.
+
 ## Checked
-- Translation reviewed against the reviewed Finnish source (fy3-12, en): every number, unit, symbol and formula agrees (script comparison of all numbers after decimal-mark normalisation: lesson.md, inquiry.json, exit-ticket.json; only SVG label coordinates differ, as expected).
-- inquiry.json and exit-ticket.json have the same structure as the Finnish: same correct options, numeric answers, hint and option counts.
-- Inline-LaTeX typesetting round applied: signs now inside the maths ($+15\,{}^\circ\text{C}$), values with units and symbols as in the Finnish.
-- Physics, model conditions and worked-example reasoning identical to the Finnish; no content added or dropped.
-- English is natural; no Finnish words in text, units or experiment names; decimal points and symbols as in the Finnish.
+batch delta review: "conducted" changed to "transferred" in the formula section and Summary. P = UAΔT with U counting the surface layers (convection, radiation) is better described as transferred. No numbers or symbols changed.

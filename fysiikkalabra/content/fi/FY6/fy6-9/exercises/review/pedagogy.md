@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: e5c2c0ca37639b87
-Round: 3
+CONTENT-HASH: daa0330ac3b9a714
+SCOPE: delta added-exercise from e5c2c0ca37639b87 base 8f23aa7ae3bd
 
 ## Blocking
 (none)
@@ -9,7 +9,11 @@ Round: 3
 (none)
 
 ## Checked
-- Delta only, text (no render): the four unit lines of the fy6-9-L1-09 solution now read "Lausekkeen X yksikkö on ..."; the sentences are grammatical Finnish and each unit is still right (Ah, V·Ah = Wh, Wh/h = W, Wh·h).
-- \tfrac{UQ}{t} inline in the lines and in the closing paragraph is correct and shorter; the lines are far under 300 px.
-- Exercise, options and feedback unchanged; round 2 verdict stands.
-- Hash unchanged at the start and end.
+- fy6-9-L2-08 is level 2: reading a three-step graph, summing three rectangles, then W = UQ; two steps plus a read, no new idea.
+- Arithmetic checked: 2,0 + 3,0 + 0,5 = 5,5 Ah; 11,1 V · 5,5 Ah = 61,05 Wh; matches answer and 2 % tolerance.
+- Figure ex-current2 gives every value (grid 0,5 h and 0,5 A); its description matches the solution's reading and does not state the charge.
+- Situation first, question last, wording "Oleta, että energia on nimellisjännite kertaa varaus" matches the lesson's W = UQ.
+- Solution has all seven parts, durations derived explicitly, sensible reasonableness check (mean current, 50-100 Wh).
+- Fits the set: differs from L1-05 (charge only, one reading) by adding energy and a stepped current; no repeat of the worked example (cell charging with R and Rs).
+- Finnish and case after number+unit correct.
+- Hash unchanged at start and end.

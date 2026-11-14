@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5516d2430f384ce9
+CONTENT-HASH: ec03da5bc800b705
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. Scope: MAFY-form symbols ( = Fs$, {\text{k}0} + W = E_\text{k}$, {\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$) in the fy4-8 lesson (fi-easy). Rendered at 390 and 1280 px (solutions open): formula tables show the MAFY name over/beside the formula, subscripts k, p, 0 upright, no overflow (scrollWidth = viewport), the energy-bar figure and scale figure carry {\text{p}0}$, {\text{k}0}$, $, \text{k}$ without clipping, the simulation labels ({\text{mech}0}$, $) read well. No leftover old symbols (W_muut, F_parallel, index 1/2 on energies) found in source.
-2. Minor: the text keeps $ (weight's work) beside $ (other forces); it is explained in place, so acceptable.
+- [Minor] 'perinteisen ketjuhissillä toimivan vuoristoradan' is awkward (hissi does not make the ride work): '... ketjuhissillä varustetun vuoristoradan ensimmäinen mäki on yleensä korkein' in the Miksi question and the Selitä prompt.
+
+## Checked
+batch delta review: opened fy4-8-fig-row-1280 (energy bars, unchanged); read all changed sentences; the work-of-friction sentence is now clear.

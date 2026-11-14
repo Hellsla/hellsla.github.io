@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: abbe309450785620
+CONTENT-HASH: a65b3da0c07dac65
+SCOPE: delta added-exercise from abbe309450785620 base 8f23aa7ae3bd
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy6-8-L2-08 (8-16), data table — the table (caption, $I\,(\text{A})$, $U\,(\text{V})$ headers, example data labelled) is clear, but its first column is left-aligned and the second centred, so the decimals do not line up between columns; align both centred or on the decimal point.
+- [Minor] fy6-8/ex-graph-car — the 11 V and 9 V points rest on unlabelled gridlines (labels every 2 V), so "on gridlines" in the solution is only true of the grid — label every 1 V or say "on the grid".
+- [Minor] fy6-8-L2-09 — the lead-in "points calculated from a model" gives no hint what the model is; fine as an honest label, optional "(illustrative data)".
 
 ## Checked
-- Delta: new L2-08 (data table plus conclusion choice, shown as 8-16), solution; answers.py comment only.
-- Opened en fy6-8-open-exercises-L2-1280-9 (8-16 task text and table, end of 8-15's solution for context), -10 (end of table, four options with feedback, Find/Principle/Model answer) and -11 (slope and E blocks, closing paragraphs).
-- Quantities with units and uncertainty render as maths ($\pm 0.01\,\text{V}$, $0.40\,\Omega$, $R_\text{s}$); the stacked fractions in the slope block are legible; colon divisions in prose; no red KaTeX, no clipping, no overflow.
-- Figures: none changed (the task gives a table, not a graph).
+- en captures fy6-8-open-exercises-L2-1280-11 (task 8-17: changed wording "points calculated from a model" reads naturally and matches the figure, dots distinct from line, axes with units, answer chip) and -12 (solution: "calculated from a model" in Given, aligned rows, fractions and units fine, layout intact). Figure alt text (Finnish source) says "Mallista lasketut pisteet", consistent. The rest of the set unchanged and not re-reviewed.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

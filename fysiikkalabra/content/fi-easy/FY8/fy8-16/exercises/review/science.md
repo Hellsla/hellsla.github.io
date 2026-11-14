@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 9db846839b710c9f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 64c3df380b23920f
+Mode: delta
 
 ## Blocking
 - none
@@ -9,4 +9,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).
+- Hash at start and end identical (64c3df380b23920f).
+- Diff, exercises.json L2-07 correct option's feedback and solutions.md L1-01 and L2-07 Periaate: "kaikki (galaksien väliset) etäisyydet" -> "kaukaisten galaksien väliset etäisyydet kasvavat keskimäärin samassa suhteessa". Correct: bound systems do not expand and peculiar motions scatter about the Hubble flow; same meaning as the Finnish and English sets.
+- Consistent with "galaksin omaa liikettä ei oteta huomioon" and v = H_0 d; no-centre conclusion still follows; L2-07 model answer's "etäisyydet todella kasvavat" stays correct.
+- No unqualified "kaikki etäisyydet" left; no number, answer or option correctness changed.

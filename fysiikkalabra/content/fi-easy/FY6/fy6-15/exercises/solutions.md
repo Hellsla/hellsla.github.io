@@ -165,7 +165,7 @@ Tilanteen A virta ylittää vain tuntokynnyksen eli rajan, jolla virran vasta tu
 **Kaava:** $I = \dfrac{P_\text{max}}{U}$
 **Muunnokset:** Ei tarvita: $1\,\text{W} = 1\,\text{V} \cdot 1\,\text{A}$.
 **Sijoitus:** $I = \dfrac{4000\,\text{W}}{230\,\text{V}} = 17{,}39\,\text{A}$
-**Vastaus:** noin $17\,\text{A}$, kaksi merkitsevää numeroa kuten sulakkeen nimellisvirrassa $16\,\text{A}$ ja kuvaajan luvussa. Virta on hieman suurempi kuin nimellisvirta $16\,\text{A}$. Ryhmä on siis tänä aikana ylikuormitettu.
+**Vastaus:** $I \approx 17\,\text{A}$, kaksi merkitsevää numeroa kuten sulakkeen nimellisvirrassa $16\,\text{A}$ ja kuvaajan luvussa. Virta on hieman suurempi kuin nimellisvirta $16\,\text{A}$. Ryhmä on siis tänä aikana ylikuormitettu.
 **Järkevyys:** Ryhmän suurin sallittu teho on $230\,\text{V} \cdot 16\,\text{A} = 3680\,\text{W}$. Portaat $1000\,\text{W}$, $3000\,\text{W}$, $2000\,\text{W}$ ja $3500\,\text{W}$ jäävät sen alle. Porras $4000\,\text{W}$ menee sen yli, ja $4000\,\text{W} : 230\,\text{V} \approx 17\,\text{A}$ on vähän yli $16\,\text{A}$. Ylitys on lyhyt ja pieni, joten sulake ei välttämättä laukea heti.
 
 ## fy6-15-L3-01

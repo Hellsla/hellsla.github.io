@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 99b43d4ac55dcc70
+CONTENT-HASH: d536560ed0a159b7
+SCOPE: delta added-exercise from 99b43d4ac55dcc70 base 8f23aa7ae3bd
 
 ## Blocking
+- none
 
 ## Polish
+- [Minor] fy6-2-L2-10 Järkevyys — range "1,34 V-1,40 V" written with a hyphen — use an en dash inside the maths, "1{,}34\,\text{V} - 1{,}40\,\text{V}" or "…–…".
+- [Minor] fy6-2-L2-09/10 solutions — the step label "Kuvaajan lukeminen" is used for a multimeter drawing, not a graph — "Kuvan lukeminen" would fit better.
 
 ## Checked
-- Delta: new L2-08 (shown as 2-16), solution, and L3-01..03 re-split into short paragraphs.
-- Opened fi-easy fy6-2-open-exercises-L2-1280-9 (2-16 task text), -10 (choices, feedback, Mallivastaus with both error-limit chains) and L3-1280-1 (2-17).
-- Decimal comma and units render as maths ($4{,}5\,\text{V}$:n, $0{,}14\,\text{A}$); case ending after the maths is correct; "resoluutio eli pienin näyttöaskel" and "virheraja eli suurin mahdollinen virhe" explain the terms where they first appear (good for S2).
-- Nothing clipped, no overflow, no red KaTeX; opened feedback stays inside the card.
-- Figures: none changed.
-- Re-checked after a wording edit by the translation reviewer (hash changed): re-captured and re-opened the changed task; layout unaffected.
+- fy6-2-L2-09 (2-17) and fy6-2-L2-10 (2-18) in open-exercises-L2-1280 parts 11, 12 and 13: task texts, figure multimeter-task (display 1,37 V, selector on 20 V highlighted, labels legible, error limit not shown), solutions with aligned Sijoitus rows, Vastaus, Järkevyys. No clipping; the set reads as one.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

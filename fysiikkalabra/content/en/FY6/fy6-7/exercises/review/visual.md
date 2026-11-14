@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f6987a85f62564f9
+CONTENT-HASH: 3ddcea2954d318b6
+SCOPE: delta added-exercise from f6987a85f62564f9 base 8f23aa7ae3bd
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] solutions.md fy6-7-L1-09 — "Reasonableness: a device of one kilowatt …" is run into the last Model answer paragraph, so the page shows no Reasonableness block (every neighbouring task has one, e.g. 7-8). Put it on its own line as `**Reasonableness:** …`.
+- [Minor] fy6-7/dryer (task 7-18) — y ticks still mix "2" with "2.4", x labels 1 and 2 — write 2.0, 1.0, 2.0.
+- [Minor] fy6-7/dryer — the cooling level 0.2 kW has no tick or gridline — add one or say "half a grid step" in the solution.
 
 ## Checked
-- Delta: new L1-09 (order-of-magnitude choice, shown as 7-9), solution; L1-08 text re-split into situation / student's solution / question; answers.py comment only.
-- Opened en fy6-7-open-exercises-1280-8 (end of 7-8 with the re-split task's solution, start of 7-9) and -9 (four options with feedback, Find/Principle/Model answer with t and E blocks).
-- kWh, W, min and h render as upright maths units; options are whole clickable rows; feedback opens inside the card; no red KaTeX, no clipping, no overflow.
-- Figures: none changed.
+- en capture fy6-7-open-exercises-L2-1280-10 (task 7-18, dryer graph: "cooling" label now starts at 1.5 h above the 0.2 kW segment, not clipped, no overlap with the line or the axis; axes with units, answer box) and -9 (surrounding layout intact). The rest unchanged and not re-reviewed.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

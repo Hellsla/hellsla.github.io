@@ -1,6 +1,6 @@
 # Dispersion: the prism and the rainbow
 
-> **Why** is the red of a rainbow always on the outer edge and the violet on the inner edge, and why can you see a rainbow only when the sun is behind you?
+> **Why** is there red on the outer edge and violet on the inner edge of the primary rainbow, and why can you see a rainbow only when the sun is behind you?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: after a summer shower a bright rainbow arches over a field and forest, red on its outer edge and violet on its inner edge. Outside it a fainter second rainbow is visible with the colours in the opposite order, and the sky between the arcs is darker. Grey rain clouds are in the background. In the foreground a person stands with their back to the viewer, looking at the arc." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy711h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a96a3"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy711h-field" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#e9c98a"/></linearGradient></defs>
@@ -150,7 +150,7 @@ A small raindrop is almost spherical. Sunlight is refracted into the droplet, re
   <foreignObject x="197.5" y="310.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$\text{violet}$</div></foreignObject>
 </svg>
 
-### Why red is on the outer edge
+### Why red is on the outer edge of the primary rainbow
 When the sun is behind you, the sun's rays pass your head towards the **antisolar point**, which is below the horizon at the shadow of your own head. Red light reaches the eye from the droplets seen at $42^\circ$ from the direction of the antisolar point, and violet from those seen at $40.6^\circ$. Droplets at the same angle form a circle whose centre is the antisolar point. The circle of red is larger, so red is on the outer edge of the arc. The different colours leave a droplet at their strongest in slightly different directions. That is why light of a particular colour reaches the eye especially strongly from each droplet, and the strongest directions of the droplet's other colours pass by the eye. That is why each viewer sees their own rainbow.
 
 <svg data-fig="observer" viewBox="0 0 600 380" role="img" aria-label="Schematic side view, angles not to scale: the viewer stands on the right with their back to the Sun, and the sunlight comes from the upper right obliquely down into the shower on the left. From the eye a dashed line runs along the sunlight down to the left towards the antisolar point, which is at the shadow of the viewer&#x27;s head below the horizon. The upper drop is at an angle of 42 degrees from this direction, and red light from it reaches the eye; its violet light passes above the eye. The lower drop is at an angle of about 40.6 degrees, and violet light from it reaches the eye; its red light hits the ground in front of the viewer." style="max-width:100%;font-size:24px">

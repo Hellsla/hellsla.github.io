@@ -1,6 +1,6 @@
 # Conservation of mechanical energy and the work–energy principle
 
-> **Why** is the first hill of a roller coaster always the highest of the track, even though the train is no longer pulled up after it?
+> **Why** is the first hill of a traditional chain-lift roller coaster usually the highest, if the train is not given any more energy later?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a roller coaster in an amusement park on a summer day. On the left rises the first and highest hill of the track, and a red train has just reached its top. After that the track descends into a deep valley and rises to a second hill, which is clearly lower, and then to a third hill that is lower still. There are white support columns under the track and a spruce forest in the background." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy48h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><radialGradient id="fy48h-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><linearGradient id="fy48h-grass" gradientUnits="userSpaceOnUse" x1="0" y1="500" x2="0" y2="900"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient></defs>
@@ -366,7 +366,7 @@ When an object moves along the $x$-axis and a constant net force $\Sigma F_x$ al
 ```
 When the equation is multiplied on both sides by the mass $m$ and $ma = \Sigma F_x$ is substituted, we get $\Sigma F_x\, \Delta x = \tfrac{1}{2} m v_2^2 - \tfrac{1}{2} m v_1^2$, that is, $\Sigma F_x\, \Delta x = \Delta E_\text{k}$.
 
-The displacement $\Delta x$ is not the same as the distance travelled $s$. If the object moves in one direction all the time, the magnitude of the displacement equals the distance travelled, and the work of the net force is $\Sigma F\, s$. If the object turns back, like a ball thrown upwards, the distance travelled is longer than the displacement. The work of a constant force is then calculated from the displacement, $W = F_x\, \Delta x$, or in parts so that on each part the motion is in one direction. Friction and air resistance, on the other hand, turn with the motion, so their work is always negative and its magnitude grows with the distance travelled. In both cases the work done by the net force equals the change in kinetic energy:
+The displacement $\Delta x$ is not the same as the distance travelled $s$. If the object moves in one direction all the time, the magnitude of the displacement equals the distance travelled, and the work of the net force is $\Sigma F\, s$. If the object turns back, like a ball thrown upwards, the distance travelled is longer than the displacement. The work of a constant force is then calculated from the displacement, $W = F_x\, \Delta x$, or in parts so that on each part the motion is in one direction. When friction and air resistance oppose the motion of the object, the work they do is negative, and its magnitude grows with the distance travelled. In both cases the work done by the net force equals the change in kinetic energy:
 ```kaavat
 work principle :: E_{\text{k}0} + W = E_\text{k}
 ```

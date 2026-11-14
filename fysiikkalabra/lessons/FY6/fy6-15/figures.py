@@ -442,7 +442,7 @@ def hero():
 
 
 def ex_kuorma():
-    f = Fig("fy615-ex-kuorma", 360, "Kuvaaja mittakaavassa, mitattu aineisto: keittiön pistorasiaryhmän laitteiden yhteisteho P watteina "
+    f = Fig("fy615-ex-kuorma", 360, "Kuvaaja mittakaavassa, esimerkkiaineisto: keittiön pistorasiaryhmän laitteiden yhteisteho P watteina "
             "ajan t funktiona minuutteina 30 minuutin ajan. Ruudukon välit ovat 5 min ja 1000 W. Teho on porrasfunktio: "
             "0–4 min 1000 W, 4–10 min 3000 W, 10–16 min 4000 W, 16–24 min 2000 W ja 24–30 min 3500 W.")
     ax = Axes(f, (96, 310), (480, 64), x=(0, 30), y=(0, 4500), xticks=list(range(5, 31, 5)), yticks=[1000 * k for k in range(1, 5)],

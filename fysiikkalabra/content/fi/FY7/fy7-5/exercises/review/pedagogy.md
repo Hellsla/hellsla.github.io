@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: fd4eb60f56237477
-
-Round 3 (fy7-5-L1-09, ordering)
+CONTENT-HASH: 2efb279b0ab2468b
+SCOPE: delta added-exercise from fd4eb60f56237477 base 8f23aa7ae3bd
 
 ## Blocking
-(none) The round-2 item is fixed: C is an electromagnet with an iron core, constant current, 500 turns, flux 8,0 mWb per turn. The wrong rule e = N·Φ gives 4,0 V, above B (3,0 V), so C wrongly lands last; the solution (solutions.md:229) says so.
+- none
 
 ## Polish
-- exercises.json:92 — five calculations is heavy for level 1; consider four situations (unchanged since round 1).
-- exercises.json:98 — "yhden kierroksen vuo tarkoittaa käämin yhden kierroksen läpi kulkevaa magneettivuota" is circular; say "Vuo on yhden kierroksen läpi kulkeva vuo."
+- fy7-5-L2-08: 'Lue tarvittavat arvot kuvaajasta.' still trails the question; put it before 'Kuinka suuri on ...?' so the question is last (repeat of the earlier polish).
 
 ## Checked
-- Values recomputed: A 1,2 V, B 3,0 V, C 0, D 0,60 V, E 2,0 V; order C, D, A, E, B; direction stated in the prompt.
-- Both warned mistakes are caught: forgotten N (A, B fall below D) and flux size (C jumps to last).
-- Constant current stated in the stem, so "vuo ei muutu" follows without a trick; 1 T over 80 cm² is realistic.
-- Solution step by step; within the chapter (induction law, e = vBl).
-- Checked from text only (no renders; pedagogy role); inline formulas fit (at most 227 px at 390 px).
+- L2-08: flux 5,0 to -3,0 mWb over 0-0,40 s, 200 x 8,0e-3 / 0,40 = 4,0 V; correct, solution step by step including the sign-crossing slip (1,5 V).
+- Figure and description give the break points (5,0; -3,0 at 0,40 s) without the voltage; the grid allows reading to 0,1 mWb.
+- Level 2 fits; differs from L2-02 by the sign change; set mix unchanged.
+- Language checked: fi. Hash 2efb279b0ab2468b at start and end.

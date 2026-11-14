@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 7c99e4251271e391
+CONTENT-HASH: edc1028be1632df7
+SCOPE: delta added-exercise from 7c99e4251271e391 base 8f23aa7ae3bd
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy6-4-L2-08 (4-16) — the ordering rows begin with Kytkentä C already in its correct place; harmless (for pedagogy).
+- none
 
 ## Checked
-- Delta: new L2-08 (ordering task, shown as 4-16) and its solution.
-- Opened fi-easy fy6-4-open-exercises-L2-1280-10 (task text and first row) and -11 (rows with Paikka selects, opened Kysytty/Periaate/Mallivastaus).
-- Units and case endings are correct ($330\,\Omega$:n vastusta); "jätetään huomiotta eli sitä ei oteta laskuun mukaan" explains the phrase for S2 readers; one circuit per line, question last.
-- Fractions and R_A..R_D chains render cleanly; no clipping, no overflow, no red KaTeX.
-- Figures: none changed.
+- fy6-4-L2-09 in open-exercises-L2-1280 parts 12 and 13: task text, figure task-parallel (battery 9,0 V, R1 and R2 in parallel with junction dots, labels legible, no currents shown), solution with fractions and aligned Sijoitus rows, Vastaus, Järkevyys. Nothing clipped; the set reads as one.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

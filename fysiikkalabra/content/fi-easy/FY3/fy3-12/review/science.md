@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 18dbbc6cb55a0725
+CONTENT-HASH: a131b7dcac8bf7a1
 
 ## Blocking
-(none)
 
 ## Polish
-- none
+- The formula paragraph and summary now say "siirtyvä" (correct: U is an overall coefficient including surface convection and radiation), while the theory (l. 159), worked example and inquiry task still say "johtuu". Not wrong for a wall at this level (C); unify if touched again.
 
 ## Checked
-- batch delta review: key_concepts, reworded sentences, photo captions, objective-form and level-policy edits, chapter-reference titles judged against the guardrails and the lesson text; restyled figure lines are styling only.
+batch delta review: "johtuva" -> "siirtyvä" in Kaava and Tiivistelmä; P = UAΔT unchanged; consistent with the guardrails' heat-transfer wording.

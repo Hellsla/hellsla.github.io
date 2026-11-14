@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c7393e08a3ea5ab9
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 1a8d5341ee906641
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md — the antisolar-point paragraph is now about 134 words; optionally break before "The different colours leave a droplet".
+- none
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Rainbow sentence: no "one colour per droplet" claim left.
-- Paragraph lengths of every changed paragraph counted against origin/main.
-- Hash identical at start and end.
+- batch delta review: opened fy7-11-fig-row-1280.png (prism figure unchanged, teacher-approved) and read the diff (Miksi question, heading, goal, prompts now say "primary rainbow"; consistent across lesson and inquiry).

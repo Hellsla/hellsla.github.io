@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 94e2c61db60be1bb
+CONTENT-HASH: 18715801cb2d4975
 
 ## Blocking
 - none
 
 ## Polish
-1. answers.py docstring and comments still write P₀ and P_hyöty; use P_o and P_a as the chapter does.
-2. L1-09: Answer gives c at 20 °C for hot district-heating water; one clause that c of 60-100 °C water is about 4,19-4,22 kJ/(kg·K) (still inside 4 %) would make the lookup honest.
+1. answers.py docstring and comments still write P₀ and P_hyöty; use P_o and P_a as the chapter does (carried from the previous report).
+2. L1-09: Answer gives c at 20 °C for hot district-heating water; one clause that c of 60-100 °C water is about 4,19-4,22 kJ/(kg·K) (still inside 4 %) would make the lookup honest (carried from the previous report).
 
 ## Checked
-Hash at start and end. Re-review: L2-09 now writes $P_\text{o}$ (letter o) in the text and solution, as the chapter, the chain-bars figure and L1-04 do; no $P_0$ left in the set, nothing else changed. Full review of the set (added L1-09, L2-09; L3-03 full stop). Own script recomputed every numeric answer from the task text: L1-01 90,2 %; L1-02 42,0; L1-03 4,20 kW; L1-04 200 MW (largest drop 350->150); L1-05 90 %; L1-07 34 %; L1-08 12,0 GWh; L1-09 4182·80·40 = 13,4 MW; L2-01 109 MW; L2-02 43,1 %; L2-03 167 t; L2-04 7,16 t/s; L2-05 90,0 %; L2-06 1560 MW; L2-07 36,6 %; L2-08 503 MW -> 500 MW option; L2-09 150/350 = 42,9 %; L3-01 206 MW; L3-02 13,6 kt; L3-03 87,7 kWh; L3-04 132 MW; L3-05 1716 MW. All agree with exercises.json and answers.py within tolerance, in all three languages. chain-bars generator holds 400/350/150/140 MW on 50 MW gridlines, matching both figure tasks; stage efficiencies 0,875·0,429·0,933 = 0,35 plausible. P_k = c q_m ΔT defined in the task and consistent with Q = cmΔT (no change of state). Multiple choice: exactly one correct option each.
+- Hash 18715801cb2d4975 at start and end, unchanged.
+- Delta: L3-01 Järkevyys, fi solutions.md:179. "kaukolämpö vain lämmitykseen" is now "kaukolämpöä käytetään pääasiassa lämmitykseen". This fixes a claim that was too absolute (category A: district heat also serves domestic hot water, some industrial process heat and absorption cooling). The new wording matches the lesson's Yleinen virhekäsitys ("kaukolämpöä pääasiassa lämmitykseen") and the guardrail on CHP (keep the value of electricity and heat apart).
+- en solutions.md:179 ("district heat is mainly used for heating") and fi-easy solutions.md:179 (the same claim split into short sentences) say the same thing as fi. No "vain lämmitykseen" or "only for heating" is left in any language's exercise files.
+- The numbers in the context are unchanged, and I recomputed them: k = 60/348 = 0,17241, P_s = 205,5 MW, which rounds to 206 MW, and η_kok = 67,6 %. They agree with the solution.
+- The conclusion still holds: an added total efficiency does not decide profitability, which depends on demand and prices.

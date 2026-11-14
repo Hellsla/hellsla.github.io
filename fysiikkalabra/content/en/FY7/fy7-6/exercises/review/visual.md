@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 816b492b4659d53e
+CONTENT-HASH: 65b3e13314cd7fa1
+SCOPE: delta added-exercise from 816b492b4659d53e base 8f23aa7ae3bd
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-6-L2-08 solution — the two Model answer paragraphs are about 130 and 110 words; a break after "...the side of the ring facing the coil is always of the same name" is there, the second could be split once more at "If the induced current strengthened ...".
-- [Minor] fy7-6-L2-08 — after "Not quite..." the heading "Which reason explains your answer?" sits tight under the feedback line; a little space above it would separate the two stages.
+- none
 
 ## Checked
-- fy7-6-open-exercises-L2-1280-10 and -11 (en): task 6-16 in three paragraphs, direction choices, reason choices (five) with feedback inside the cards, the opened solution (Find, Principle, Model answer).
-- No maths in the task; no overflow, nothing clipped; answer line shows the correct option.
-- The paragraph split of the rail task is spacing only.
+- fy7-6-open-exercises-L2-1280-11, -12 (en): task 6-17 with the brake-task graph (axis titles with units, six dark markers distinct from the red line through the origin, grid every 0.1 N), answer field, opened solution.
+- fy7-6-open-exercises-L3-1280-9, -10: task L3-06 solution (aligned chains, N·s/m units, reasonableness block); the graph is the same figure.
+- Typography: units upright with thin space, no red KaTeX, no overflow; the set reads as one.
 
 ## Scores
-illustrations 3 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

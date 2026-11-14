@@ -468,7 +468,7 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Explain",
-      "prompt": "Use energy to explain why the first hill of a roller coaster is the highest of the track and the later hills are lower. Where does the mechanical energy of the train go during the ride?",
+      "prompt": "Use energy to explain why the first hill of a traditional chain-lift roller coaster is usually the highest and the later hills are lower. Where does the mechanical energy of the train go during the ride?",
       "criteria": [
         "The answer says that the work done by the chain lift gives the train its mechanical energy and that nothing adds to it afterwards.",
         "The answer says that without losses the train could reach at most the starting height, because the mechanical energy is conserved, and that a later hill must be lower than this so that some kinetic energy is left at the top.",

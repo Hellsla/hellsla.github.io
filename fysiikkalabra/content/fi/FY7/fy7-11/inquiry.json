@@ -4,7 +4,7 @@
   "learn": [
     "selittämään, miksi prisma hajottaa valkoisen valon ja mikä väri taittuu eniten.",
     "laskemaan eri värien taitekulmia ja prisman poikkeamakulmia taitekertoimista.",
-    "selittämään, miten sateenkaari syntyy ja miksi punainen on sen ulkoreunalla."
+    "selittämään, miten sateenkaari syntyy ja miksi punainen on pääsateenkaaren ulkoreunalla."
   ],
   "prior": [
     "Valo taittuu rajapinnassa taittumislain $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ mukaan, ja $n = c : v$ (luku *Valon heijastuminen ja taittuminen*)",
@@ -16,7 +16,7 @@
       "stage": "herata",
       "type": "hook",
       "text": "Kesäsateen jälkeen taivaalla on sateenkaari. Sen ulkoreuna on punainen ja sisäreuna violetti, ja joskus sen ulkopuolella näkyy toinen, himmeämpi kaari. Samat värit näkyvät, kun aurinko paistaa lasiprisman tai kattokruunun kristallin läpi. Sadepisarat ja lasi ovat värittömiä, ja auringonvalo on valkoista.",
-      "question": "Mistä sateenkaaren värit tulevat, ja miksi ne ovat aina samassa järjestyksessä?"
+      "question": "Mistä sateenkaaren värit tulevat, ja miksi ne ovat pääsateenkaaressa samassa järjestyksessä?"
     },
     {
       "id": "kertaus-taittuminen",
@@ -243,7 +243,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Palaa ennusteisiisi",
-      "prompt": "Vertaa ennusteitasi kokeen mallin arvoihin ja teoriaan. Palaa sitten alun kysymykseen: miksi sateenkaaren punainen on ulkoreunalla ja violetti sisäreunalla, ja miksi kaari näkyy vain selkä aurinkoon päin?",
+      "prompt": "Vertaa ennusteitasi kokeen mallin arvoihin ja teoriaan. Palaa sitten alun kysymykseen: miksi pääsateenkaaren ulkoreunalla on punaista ja sisäreunalla violettia, ja miksi kaari näkyy vain selkä aurinkoon päin?",
       "predictions": [
         "ennuste-vari",
         "ennuste-kaari"
@@ -374,7 +374,7 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Selitä: sateenkaaren värien järjestys",
-      "prompt": "Selitä, miten sateenkaari syntyy vesipisaroissa ja miksi punainen on kaaren ulkoreunalla ja violetti sisäreunalla. Kerro myös, miksi kaaren näkee vain, kun aurinko on selän takana.",
+      "prompt": "Selitä, miten sateenkaari syntyy vesipisaroissa ja miksi pääsateenkaaren ulkoreunalla on punaista ja sisäreunalla violettia. Kerro myös, miksi kaaren näkee vain, kun aurinko on selän takana.",
       "model": "Auringonvalo taittuu pisaraan, heijastuu pisaran takapinnasta ja taittuu ulos, joten valo palaa takaisin aurinkoa kohti kääntyneenä. Veden taitekerroin on violetille suurempi kuin punaiselle, joten taittumisissa värit erkanevat: pisaroista lähtee punaista valoa voimakkaimmin noin $42^\\circ$:n ja violettia noin $40{,}6^\\circ$:n kulmassa siihen suuntaan nähden, josta auringonvalo tuli. Katsojan silmään tulee punaista valoa niistä pisaroista, jotka näkyvät $42^\\circ$:n kulmassa vastapisteestä eli oman pään varjon suunnasta, ja violettia pisaroista, jotka näkyvät $40{,}6^\\circ$:n kulmassa. Punaisen ympyrä on suurempi, joten punainen on ulkoreunalla. Koska valo palaa pisarasta aurinkoa kohti ja kaaren keskipiste on vastapiste, kaari näkyy vain selkä aurinkoon päin.",
       "criteria": [
         "Kerron, että valo taittuu pisaraan, heijastuu sen takapinnasta ja taittuu ulos.",

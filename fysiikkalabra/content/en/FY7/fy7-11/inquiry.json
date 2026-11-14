@@ -4,7 +4,7 @@
   "learn": [
     "explain why a prism splits white light and which colour is refracted the most.",
     "calculate the angles of refraction of different colours and the angles of deviation of a prism from refractive indices.",
-    "explain how a rainbow forms and why red is on its outer edge."
+    "explain how a rainbow forms and why red is on the outer edge of the primary rainbow."
   ],
   "prior": [
     "Light is refracted at a boundary according to the law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$, and $n = c : v$ (chapter *Reflection and refraction of light*)",
@@ -16,7 +16,7 @@
       "stage": "herata",
       "type": "hook",
       "text": "After a summer shower there is a rainbow in the sky. Its outer edge is red and its inner edge violet, and sometimes a second, fainter arc appears outside it. The same colours appear when the sun shines through a glass prism or the crystal of a chandelier. Raindrops and glass are colourless, and sunlight is white.",
-      "question": "Where do the colours of a rainbow come from, and why are they always in the same order?"
+      "question": "Where do the colours of a rainbow come from, and why are they in the same order in the primary rainbow?"
     },
     {
       "id": "kertaus-taittuminen",
@@ -243,7 +243,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Return to your predictions",
-      "prompt": "Compare your predictions with the model's values from the experiment and with the theory. Then return to the opening question: why is the red of a rainbow on the outer edge and the violet on the inner edge, and why is a rainbow seen only with your back to the sun?",
+      "prompt": "Compare your predictions with the model's values from the experiment and with the theory. Then return to the opening question: why is there red on the outer edge and violet on the inner edge of the primary rainbow, and why is a rainbow seen only with your back to the sun?",
       "predictions": [
         "ennuste-vari",
         "ennuste-kaari"
@@ -374,7 +374,7 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Explain: the order of the colours in a rainbow",
-      "prompt": "Explain how a rainbow forms in water droplets and why red is on the outer edge of the arc and violet on the inner edge. Also explain why a rainbow is seen only when the sun is behind you.",
+      "prompt": "Explain how a rainbow forms in water droplets and why red is on the outer edge and violet on the inner edge of the primary rainbow. Also explain why a rainbow is seen only when the sun is behind you.",
       "model": "Sunlight is refracted into the droplet, reflected from the back surface of the droplet and refracted out, so the light returns towards the sun, turned around. The refractive index of water is greater for violet than for red, so the colours separate in the refractions: the droplets send out red light most strongly at about $42^\\circ$ and violet at about $40.6^\\circ$ from the direction the sunlight came from. Red light reaches the viewer's eye from the droplets seen at $42^\\circ$ from the antisolar point, that is, from the direction of the shadow of your own head, and violet from the droplets seen at $40.6^\\circ$. The circle of red is larger, so red is on the outer edge. Because light returns from the droplet towards the sun and the centre of the arc is the antisolar point, the arc is seen only with your back to the sun.",
       "criteria": [
         "I say that light is refracted into the droplet, reflected from its back surface and refracted out.",

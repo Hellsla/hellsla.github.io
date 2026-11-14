@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e28822a605b9fc27
+CONTENT-HASH: b769d69d2c84482b
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: e28822a605b9fc27
 - none
 
 ## Checked
-Delta: L2-09 at 390 px (fi, solutions open): P_o in text matches the figure label P_o; layout intact.
+- Delta: L3-01 solution (Reasonableness) open at 1280 px, fi-easy: changed sentence reads cleanly, layout intact, units and maths unchanged.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

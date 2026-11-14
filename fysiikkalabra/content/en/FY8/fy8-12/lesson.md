@@ -420,7 +420,7 @@ The greater the attenuation coefficient, the thinner the layer that is enough to
 </svg>
 
 ### The half-value thickness depends on the material and the energy
-The denser the material and the more electrons its atoms have, the smaller the half-value thickness. This is why lead is an effective shield: the same attenuation requires a layer of concrete about seven times thicker. High-energy gamma radiation passes through matter better than low-energy radiation. The values in the table apply to the $662\,\text{keV}$ gamma radiation of caesium-137.
+The half-value thickness depends on the density and composition of the material and on the energy of the radiation. Over many energy ranges lead attenuates gamma radiation effectively because of its high density and atomic number: the same attenuation requires a layer of concrete about seven times thicker. The penetrating power of gamma radiation depends on the energy of the photons and on the material. As the energy grows, the importance of the different interaction mechanisms changes, so the penetrating power does not grow over all energy ranges. The values in the table apply to the $662\,\text{keV}$ gamma radiation of caesium-137.
 
 | Material | $d_{1/2}$ |
 | --- | --- |

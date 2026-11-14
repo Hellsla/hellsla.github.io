@@ -343,7 +343,7 @@
         "graph",
         "data"
       ],
-      "text": "Kuvaajassa on auton käynnistysakun napajännite virran funktiona viidellä käynnistysmoottorin kuormituksella (mittauspisteet) ja pisteiden kautta piirretty suora. Kuinka suuri on akun sisäinen resistanssi? Lue arvot kuvaajasta.",
+      "text": "Kuvaajassa on auton käynnistysakun napajännite virran funktiona viidellä käynnistysmoottorin kuormituksella (mallista lasketut pisteet) ja pisteiden kautta piirretty suora. Kuinka suuri on akun sisäinen resistanssi? Lue arvot kuvaajasta.",
       "figure": "fy6-8/ex-graph-car",
       "answer": 0.02,
       "unit": "Ω",

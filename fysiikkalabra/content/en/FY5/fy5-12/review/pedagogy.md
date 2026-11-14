@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 9b0219b824e478f0
+CONTENT-HASH: 822094cb88b38ee4
+
 ## Blocking
 
 ## Polish
-- Long title; acceptable, but a shorter form could be considered later.
+- None.
 
 ## Checked
-batch delta review: the diff is a renamed lesson title and updated chapter cross-references; every reference matches the new titles, no stale old title remains in the lesson, inquiry or exercises, and the sentences read correctly. No figures, numbers or symbols changed.
+batch delta review: added ripple-tank photo with alt text and caption (observable data, no answer disclosed beyond the theory it sits in); '(optional)' goal marker matches the optional activity.

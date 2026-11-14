@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5e217585a15dde17
-Round: 2. Round 1 had one Blocking item (the 0,10 g bead with −20 nC would exceed the breakdown strength of air). It is fixed in 57a66480d: the task is now a dust grain in a vacuum chamber.
+CONTENT-HASH: 6c0936636b690650
+SCOPE: delta added-exercise from 5e217585a15dde17 base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
-- lessons/FY6/fy6-11/figures.py:404 (PK_DESC, carried over) — the descriptions do not say that the arrows start from the body; add "lähtevät kappaleesta" for a reader who cannot see the figure.
-- exercises.json:253 (carried over) — still no distractor for the lesson's Yleinen virhekäsitys (force growing near a plate). The solution's Periaate now says "kaikkialla levyjen välissä", which is enough; an option for it stays optional.
+- solutions.md (fy6-11-L1-09, Järkevyys) — the check only repeats the table value (3 kV/mm × 2,5 mm), so it is circular. A real check is, for example, "a 7,5 kV spark across a few millimetres matches the familiar static-electricity spark of some kilovolts", or the inverse: E = U : d = 7,5 kV : 2,5 mm = 3,0 kV/mm.
+- solutions.md (fy6-11-L1-09, Vastaus) — the table's breakdown strength is a typical value for dry air at normal pressure. In a gap of a few millimetres the measured sparking voltage is somewhat higher (about 9 kV at 2,5 mm). One clause such as "taulukon arvo on likimääräinen" would keep the result from looking exact. This is a level-appropriate simplification (C), not an error.
 
 ## Checked
-- Hash 5e217585a15dde17 at start and end; the packet was regenerated and read again.
-- The new data are realistic: m = 1,0·10⁻¹² kg is a grain of radius about 5 µm, and q = −2,0·10⁻¹⁶ C is about 1250 e. Its surface field is about 7·10⁴ V/m, far below breakdown, and the vacuum removes air resistance as the brief's "tyhjiössä" does.
-- Recomputed: F_s = |q|E = 2,0·10⁻¹¹ N down, G = 9,8·10⁻¹² N down, ratio 2,04. This matches the figures (PK_FS : PK_G, same pixel lengths), the four descriptions, the feedback and the answers.py comment.
-- All "helmi" wording is replaced consistently in the stem, the feedback, the solution and the descriptions.
-- Option A (force along the field) and option D (weight left out as for an electron) still catch mistakes the lesson warns about.
-- The key is not identifiable by form ("Voimakuvio A–D").
-- Formulas measured with KaTeX in Chrome at 390 px (formula widths only; figures not rendered): widest inline 268 px, under 300 px. G = mg is now on its own row.
+- Hash 6c0936636b690650 at start and end; only fy6-11-L1-09 was judged (delta added-exercise).
+- Physics: in a uniform field E = U : d, and a spark forms when E reaches the breakdown strength, so U_max = E_l·d. The plates are in air and the task states that the field is uniform.
+- Recomputed: 3,0 kV/mm · 2,5 mm = 7,5 kV, which equals answers.py and the json (unit kV). The tolerance of 10 % (6,75–8,25 kV) covers table values from about 2,7 to 3,3 kV/mm, so a student using an older or newer MAFY edition is not marked wrong.
+- The conversion is right: kV/mm · mm = kV, so the step needs no SI detour. The rounding to two significant figures follows the data.
+- Scope: läpilyöntilujuus is one of FY6's central contents (sähköturvallisuus), and E = U : d is the brief's formula, so the task needs nothing the lesson does not teach.
+- The solution is complete: given and asked, principle, U = Ed solved symbolically, conversions, substitution, answer with its reason, and a check (weak, see Polish).

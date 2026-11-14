@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8b13af556f7aa21c
-
-Round 2 (fy7-6-L2-08, two-stage justified choice)
+CONTENT-HASH: a7bd01372641e3fc
+SCOPE: delta added-exercise from 8b13af556f7aa21c base 8f23aa7ae3bd
 
 ## Blocking
-(none) The round-1 item is fixed: the correct stage-1 feedback is now "Oikein. Valitse seuraavaksi perustelu, joka selittää vastauksesi."
+- none
 
 ## Polish
-- exercises.json (reason 1 feedback) — add that Lenz opposes the change, not the field, if reason 2 is kept; reason 2 ("vahvistaa vuon kasvua") overlaps the chapter's second warned idea only loosely (round 1, unchanged).
-- exercises.json (stage-1 "pysyy levossa" feedback) — "Mieti, mitä käämin virralle tapahtuu" is a hint toward reason 4 and 3; acceptable, but the stage-2 answer is still not named.
+- fy7-6-L3-06 is level-2 demand: it repeats L2-03 (terminal speed from F = kv) with k read from the figure, and L3-04 already covers terminal speed and power. Move it to level 2 or add a step (e.g. time to reach 95 % or tube length).
+- fy7-6-L3-06 'Samaan alumiiniputkeen' presumes L2-09; rewrite as a self-contained task.
+- fy7-6-L2-09: P = Fv at the terminal speed is also in L3-04 d); fine, but note the repeat.
 
 ## Checked
-- Wrong stage-1 feedback now states only the option's error (aluminium not ferromagnetic; DC idea) and no longer gives the Lenz/induction argument.
-- Added iron core is taught in fy7-3 (sähkömagneetti) and makes the jump plausible; stem and solution agree.
-- Physics (jumping ring, repulsion while current rises) correct; correct reason not the longest or only hedged; 5 reasons, one true-but-irrelevant.
-- Distractors catch the warned mistake (aluminium attracted like iron) and DC-no-induction.
-- Checked from text only (no renders; pedagogy role); no inline formula chains.
+- L2-09: P = Fv derived in the Periaate (work over v dt), 0,40 N x 0,25 m/s = 100 mW; the square-law check is good.
+- L3-06: v = mg/k = 0,28 m/s computed and checked against the graph.
+- Language checked: fi. Hash a7bd01372641e3fc at start and end.

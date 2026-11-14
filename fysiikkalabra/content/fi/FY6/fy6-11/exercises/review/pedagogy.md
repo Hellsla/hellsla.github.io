@@ -1,21 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 5e217585a15dde17
-Round: 2
+CONTENT-HASH: 6c0936636b690650
+SCOPE: delta added-exercise from 5e217585a15dde17 base 8f23aa7ae3bd
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json (fy6-11-L2-08) — the lesson's warned mistakes (force grows near the plate, field line = path) are still not touched; acceptable for a force-diagram task (carried over).
+- exercises.json (fy6-11-L1-09) — the task says "läpilyöntikestävyys" (the MAFY table's word) while the course's LOPS term is "läpilyöntilujuus"; if the glossary names one, use it once with the other in brackets, e.g. "ilman läpilyöntilujuus (MAFY: läpilyöntikestävyys)".
 
 ## Checked
-- Text and the packet's figure descriptions only; the four diagrams were not viewed or rendered (pedagogy role).
-- Round 1 items resolved: stem now three paragraphs of 21, 22 and 21 words plus the question; dust grain in a vacuum chamber replaces the bead.
-- Recomputed: F_s = 2,0·10^-16 C · 1,0·10^5 N/C = 2,0·10^-11 N, G = 1,0·10^-12 kg · 9,81 = 9,8·10^-12 N, ratio 2,04, matches "kaksi kertaa" in all four figure descriptions.
-- Figure descriptions say "varattu hiukkanen", give direction and relative length, and do not name the verdict; the right one is not marked in the stem.
-- Correct option not identifiable by form: options are "Voimakuvio A-D", B differs from C by an extra arrow and from A and D in one feature each.
-- Distractors: force along the field on a negative charge, velocity as a force, weight dropped "like for the electron"; the grain is the lesson's "heavier body" case, so D is a real trap.
-- Within the chapter and FY4 force diagrams; velocity blue, forces consistent.
-- Chains in the solution measured at 16 px: 240 px (G) and 266 px (F_s), under 300 px.
-- Feedback and solution consistent with the new numbers; Finnish correct (pölyhiukkanen, tyhjiökammio).
+- Text only (no render) of the added fy6-11-L1-09.
+- Level 1: one lookup (3,0 kV/mm, MAFY *Eristeiden läpilyöntikestävyyksiä*, hinted) and one formula U = Ed; 3,0 · 2,5 = 7,5 kV recomputed, matches answer and tolerance.
+- Situation first, question last as its own sentence; a spark between plates is an everyday, recognisable context; no unprepared trap (the lesson teaches E = U : d, homogeneous field between plates).
+- Solution has all seven parts, the unit cancellation kV/mm · mm = kV is explained, and the check (about 3 kV per millimetre) is sensible.
+- Fits the set: differs from L1-03 and L1-08 (given U, d or E, find the other) by the table lookup; no repeat of the worked example or of other tasks; adds the safety-related breakdown goal of the course.
+- Finnish and case after number+unit ($2{,}5\,\text{mm}$:n) correct.
 - Hash unchanged at the start and end.

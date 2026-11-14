@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 18dbbc6cb55a0725
+CONTENT-HASH: a131b7dcac8bf7a1
 
 ## Blocking
+(none)
 
 ## Polish
-
+- [Minor] none.
 
 ## Checked
-batch delta review: scratchpad kc/fy3-12-390.png and kc/fy3-12-1280.png (the new section cut from the built page, preview/fi-easy/fy3-12.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
+batch delta review: opened fy3-12-fig-row-1280 (figure unchanged, layout intact); diff is one word (johtuva -> siirtyvä), reads naturally in lesson and Tiivistelmä.

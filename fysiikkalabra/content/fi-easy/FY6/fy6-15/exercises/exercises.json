@@ -212,7 +212,7 @@
     {
       "id": "fy6-15-L2-06",
       "level": 2,
-      "text": "Kodin ryhmäjohto on suojattu $10\\,\\text{A}$:n sulakkeella, ja verkkojännite on $230\\,\\text{V}$. Taulukossa ovat ryhmään kytkettävät laitteet ja niiden ottotehot (esimerkkiaineisto).\n\na) Mitkä kahden laitteen yhdistelmät ylittävät sulakkeen nimellisvirran, kun molemmat ovat päällä yhtä aikaa?\n\nb) Valitse laitepari, jonka yhteisteho on mahdollisimman suuri mutta ei ylitä sulakkeen rajaa. Kuinka suuri virta ryhmäjohdossa silloin kulkee? Vastaa ampeereina.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "text": "Kodin ryhmäjohto on suojattu $10\\,\\text{A}$:n sulakkeella, ja verkkojännite on $230\\,\\text{V}$. Taulukossa ovat ryhmään kytkettävät laitteet ja niiden ottotehot (esimerkkiaineisto).\n\na) Mitkä kahden laitteen yhdistelmät ylittävät sulakkeen nimellisvirran, kun molemmat ovat päällä yhtä aikaa?\n\nb) Valitse laitepari, jonka yhteisteho on mahdollisimman suuri mutta ei ylitä sulakkeen rajaa. Kuinka suuri virta ryhmäjohdossa silloin kulkee? Ylittääkö se sulakkeen nimellisvirran? Vastaa virta ampeereina.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "data",
         "reasoning"
@@ -265,7 +265,7 @@
     {
       "id": "fy6-15-L2-08",
       "level": 2,
-      "text": "Kuvaajassa näkyy, kuinka suuri on keittiön pistorasiaryhmän laitteiden yhteisteho 30 minuutin aikana (mitattu aineisto). Ryhmän sulake on $16\\,\\text{A}$ ja verkkojännite on $230\\,\\text{V}$.\n\nLue kuvaajasta ryhmän suurin yhteisteho. Kuinka suuri virta ryhmäjohdossa silloin kulkee? Vastaa ampeereina.",
+      "text": "Kuvaajassa näkyy, kuinka suuri on keittiön pistorasiaryhmän laitteiden yhteisteho $30\\,\\text{min}$:n aikana (esimerkkiaineisto). Ryhmän sulake on $16\\,\\text{A}$ ja verkkojännite on $230\\,\\text{V}$.\n\nLue kuvaajasta ryhmän suurin yhteisteho. Kuinka suuri virta ryhmäjohdossa silloin kulkee? Ylittääkö se sulakkeen nimellisvirran? Vastaa virta ampeereina.",
       "figure": "fy6-15/ex-kuorma",
       "answer": 17.3913,
       "unit": "A",

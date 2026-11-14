@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 8a451579ec92be38
+CONTENT-HASH: df286322a33f1dbd
 
 ## Blocking
 
 ## Polish
-- [Minor] fy7-5-L1-09 (5-9) — the select placeholder "Paikka" says little — "Sija" or "Valitse sija".
-- [Minor] solution Periaate — inline $|e| = N\dfrac{\Delta\Phi}{\Delta t}$ opens the line spacing; use \tfrac inline.
-- [Minor] task end — "Laske ... Järjestä sitten tilanteet." followed by the prompt "Järjestä tilanteet ..." repeats the instruction.
+- [Minor] fy7-5/flux-task-2 — y tick labels 5 4 3 2 1 and −1 −2 −3 are close together; label every second gridline if the figure is next drawn.
 
 ## Checked
-- fy7-5-open-exercises-1280-9 and -10 (fi-easy): task 5-9, situations A-E as separate paragraphs with the number of turns stated in each ("Käämissä on $200$ kierrosta"), five selects, answer line, opened solution.
-- Decimal comma, upright units, $|e|$ and subscripts in maths, no red KaTeX, no overflow.
-- Plain language, defined terms (yhden kierroksen vuo explained).
+- Delta: redrawn fy7-5/flux-task-2 in task 5-17 (fy7-5-open-exercises-L2-1280-10, full size). Labels 0,2 … 0,8 below the plot, clear of the line; decimal comma, axis units LaTeX; legible. Rest not re-reviewed.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

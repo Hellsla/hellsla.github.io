@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5d9a1e2a7804d5aa
-Mode: full (translation review against the reviewed Finnish set; new YO-skill task L2-08 (error-finding, potential vs potential difference, eV))
-Round 3
+CONTENT-HASH: d29240691e2c2f1f
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Fixed: nothing needed; the new task already matched the Finnish.
-- New task L2-08 (error-finding, potential vs potential difference, eV): the multiple-choice form keeps one clearly correct option, each distractor targets one misconception and its feedback names the error and repairs it, as in fi.
-- Language: Selkeä suomi per NOTES.md §12 (difficult words explained in the sentence, short sentences, no step dropped, decimal comma); the task and solution read naturally and give the same steps as the Finnish.
-- Solutions complete and the reasonableness/check step is a real check.
-- check_i18n: 0 errors (fi-easy).
+- Diff: solutions.md fy6-12-L2-09, Kaava and Sijoitus lines only; \frac became \dfrac and \tfrac, and the Kaava line now reads "..., josta v = ...", which is clearer than the arrow.
+- No number, step, unit or answer changed (8,387 · 10^6 m/s, 8,4 · 10^6 m/s with two figures); the earlier PASS conclusions on level, figure and solution hold.

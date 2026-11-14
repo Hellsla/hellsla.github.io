@@ -298,7 +298,7 @@ def soap_curve():
     f.tex(ax.X(400), 310, "400", "middle")
     f.tex(80, 280, "0", "end")
     ax.curve(lambda l: refl(350, l, N_SOAP, 1.0) * 100, 400, 700, RAY, 3)
-    f.tex(ax.X(690), ax.Y(7.2), r"\text{saippuakalvo}", "end", color=RAY, bg=True)
+    f.tex(ax.X(640), ax.Y(2.0), r"\text{saippuakalvo}", "middle", color=RAY)
     return f.svg()
 
 

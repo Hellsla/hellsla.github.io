@@ -229,7 +229,7 @@ Conclusion: the source voltage is about $1.55\,\text{V}$ and the internal resist
 The uncertainty affects the result too: if the readings of the extreme points are $0.01\,\text{V}$ off in opposite directions, the slope becomes $0.30\,\text{V} : 0.80\,\text{A} \approx 0.38\,\Omega$ or $0.34\,\text{V} : 0.80\,\text{A} \approx 0.43\,\Omega$, so the internal resistance is about $0.4\,\Omega$.
 
 ## fy6-8-L2-09
-**Given:** the points of the graph; the extreme points are $(50\,\text{A};\ 11\,\text{V})$ and $(250\,\text{A};\ 7\,\text{V})$. A straight line is drawn through the points.
+**Given:** the points of the graph, calculated from a model; the extreme points are $(50\,\text{A};\ 11\,\text{V})$ and $(250\,\text{A};\ 7\,\text{V})$. A straight line is drawn through the points.
 **Find:** the internal resistance $R_\text{s}$ of the battery in ohms
 **Principle:** The terminal voltage is $U = E - R_\text{s} I$, so the $(I, U)$ graph is a descending straight line whose slope is $-R_\text{s}$. The internal resistance comes from the slope, not from a single point: $U : I$ at one point would be the resistance of the external load.
 **Reading the graph:** Read two points far apart on the line, on gridlines. At the current $I_1 = 50\,\text{A}$ the terminal voltage is $U_1 = 11\,\text{V}$ and at $I_2 = 250\,\text{A}$ it is $U_2 = 7\,\text{V}$.

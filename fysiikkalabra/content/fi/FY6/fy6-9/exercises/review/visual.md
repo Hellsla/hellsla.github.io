@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e5c2c0ca37639b87
-ROUND: 3 (delta)
+CONTENT-HASH: daa0330ac3b9a714
+SCOPE: delta added-exercise from e5c2c0ca37639b87 base 8f23aa7ae3bd
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy6-9-L1-09 Mallivastaus — the third unit line still sets $\dfrac{\text{Wh}}{\text{h}}$ as a display fraction in running text, which raises that line (use \tfrac).
-- [Minor] fy6-9-L1-09 options — $UQ$ is the common core of three of the four options (inherent to a units task, carried over).
-- [Minor] fy6-9-L1-09 wrong-Q feedback — "Akku ei varastoi varausta" is questionable wording; for science (carried over).
+- [Minor] fy6-9/ex-current2 (task 9-17) — y-axis ticks read "2", "1" but "2,5", "1,5", "0,5"; the x ticks likewise mix "1", "3" with "0,5", "1,5". Use one style (all with the decimal comma, or whole numbers bare is acceptable) .
 
 ## Checked
-- Rendered at 390 px (all four options committed, correct with solution open): the four unit lines now read "Lausekkeen $UQ$ yksikkö on ...", so the colon no longer reads as a division; $\tfrac{UQ}{t}$ inline is compact; no overflow (390/330), no inline formula over 290 px. L3-01 re-checked clean.
+- review/shots/fy6-9-open-exercises-L2-1280-9.png and -10.png (stamp hash daa0330ac3b9a714): task 9-17 with graph, answer row and the whole open solution (Annettu to Järkevyys); the set still reads as one.
+- Graph: axes with quantity and unit, gridlines at 0,5 steps, steps drawn as horizontal segments, description gives the same values and not the answer; the solution's chains render as aligned rows, units upright, colon for division.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -235,7 +235,7 @@ So the justified conclusion is that at setting 4 the absolute temperature of the
 **Conversions:** $\lambda_\text{max} = 350\,\text{nm} = 350 \cdot 10^{-9}\,\text{m}$
 **Substitution:** $T = \dfrac{2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{350 \cdot 10^{-9}\,\text{m}} = 8280\,\text{K}$
 **Answer:** $8.3 \cdot 10^{3}\,\text{K}$, two significant figures like the wavelength $350\,\text{nm}$.
-**Reasonableness:** The star is hotter than the Sun ($5772\,\text{K}$), and its peak is at a shorter wavelength than the Sun's $502\,\text{nm}$, as it should be. The wavelength is about $0.7$ times the Sun's peak, so the temperature is about $1.4$ times as high: $1.4 \cdot 5772\,\text{K} \approx 8200\,\text{K}$.
+**Reasonableness:** The star is hotter than the Sun ($5772\,\text{K}$), and its peak is at a shorter wavelength than the Sun's $502\,\text{nm}$, as it should be. The wavelength is about $0.7$ times the Sun's peak, so the temperature is about $1.43$ times as high: $1.434 \cdot 5772\,\text{K} \approx 8280\,\text{K}$.
 
 ## fy7-9-L2-09
 **Given:** the spectrum curve in the graph; new surface temperature $T_2 = 1000\,\text{K}$; constant of Wien's displacement law $b = 2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$; the body radiates like a black body
@@ -246,4 +246,4 @@ So the justified conclusion is that at setting 4 the absolute temperature of the
 **Conversions:** $\lambda_1 = 1.2\,\mu\text{m} = 1.2 \cdot 10^{-6}\,\text{m}$ and finally $1\,\mu\text{m} = 10^{-6}\,\text{m}$.
 **Substitution:** $\lambda_2 = \dfrac{2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{1000\,\text{K}} = 2.898 \cdot 10^{-6}\,\text{m} = 2.898\,\mu\text{m}$ and $\Delta\lambda = 2.898\,\mu\text{m} - 1.2\,\mu\text{m} = 1.698\,\mu\text{m}$
 **Answer:** the peak shifts $1.7\,\mu\text{m}$ towards longer wavelengths, two significant figures like the wavelength $1.2\,\mu\text{m}$ read from the graph.
-**Reasonableness:** The body cools (from $2415\,\text{K}$ to $1000\,\text{K}$), so the peak must move to longer wavelengths. The temperature falls by a factor of about $2.4$ and the peak wavelength grows by the same factor: $1.2\,\mu\text{m} \cdot 2.4 \approx 2.9\,\mu\text{m}$. The new peak is far in the infrared region and the body no longer glows.
+**Reasonableness:** The body cools (from $2415\,\text{K}$ to $1000\,\text{K}$), so the peak must move to longer wavelengths. The temperature falls by a factor of about $2.4$ and the peak wavelength grows by the same factor: $1.2\,\mu\text{m} \cdot 2.4 \approx 2.9\,\mu\text{m}$. The new peak is far in the infrared region and the body at $1000\,\text{K}$ (about $730\,{}^\circ\text{C}$) glows only a dull red, with almost all its radiation in the infrared.

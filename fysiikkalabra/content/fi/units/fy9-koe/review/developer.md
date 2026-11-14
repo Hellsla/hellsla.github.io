@@ -44,3 +44,46 @@ practice.py figures/check units/fy9-koe (OK, 4 tasks, 61 points), units.py figur
 ## Ratkaisutavan tarkistus (2026-11-12)
 - sovella s2 c): vastaus 9,8 m/s², kaksi merkitsevää numeroa (luettu 0,46 s² on kaksinumeroinen; aiemmin 3 numeroa ja ±0,3 m/s² keskenään ristiriidassa).
 - unit.md Vastauksen tarkkuus: rajaa tarkkuuden mitattu lähtöarvo, tarkat määrät ja muunnoskertoimet eivät rajoita.
+
+## YTL- ja Abitti-tietojen tarkistus (FY9-valmentaja PR 1, 2026-11-14)
+
+Alkuperäislähteet luettiin curlilla 14.11.2026 (lukupäivä kaikille alla). Väitteet koskevat sekä `fy9-koe`:ta että
+`fy9-harjoituskoe`:ta (fi, en, fi-easy); sama taulukko on kummankin `review/developer.md`:ssä.
+
+Lähteet:
+- [M-reaali] Reaaliaineiden kokeiden määräykset ja ohjeet, hyväksytty 4.6.2025, koskee ensimmäisen kerran syksyä 2025:
+  https://www.ylioppilastutkinto.fi/fi/tutkinnon-toimeenpano/maaraykset-ja-ohjeet/koekohtaiset-maaraykset-ja-ohjeet/reaaliaineiden
+- [M-yleiset] Yleiset määräykset ja ohjeet, hyväksytty 8.5.2026, koskee ensimmäisen kerran syksyä 2026 (Abitti 2), luku 2.3.6 Koeaika:
+  https://www.ylioppilastutkinto.fi/fi/tutkinnon-toimeenpano/maaraykset-ja-ohjeet/yleiset-maaraykset-ja-ohjeet
+- [Liite 2] Kokelaan tietokonetta koskevat ohjeet, hyväksytty 8.5.2026:
+  https://www.ylioppilastutkinto.fi/fi/tutkinnon-toimeenpano/maaraykset-ja-ohjeet/yleiset-maaraykset-ja-ohjeet/liite-2-kokelaan
+- [Oheis] Koejärjestelmän oheisohjelmat, päivitetty 17.4.2026:
+  https://www.ylioppilastutkinto.fi/fi/tutkinnon-toimeenpano/kokeen-tekniset-jarjestelyt/koejarjestelman-oheisohjelmat
+- [HVP-K26] Hyvän vastauksen piirteet, fysiikka 25.3.2026: https://tiedostot.ylioppilastutkinto.fi/kokeet/2026-03-25_FY_fi/grading-instructions.html
+- [HVP-S25] Hyvän vastauksen piirteet, fysiikka 17.9.2025: https://tiedostot.ylioppilastutkinto.fi/kokeet/2025-09-17_FY_fi/grading-instructions.html
+- [Abitti-26] Ylioppilaskokeet keväällä ja syksyllä -26?: https://www.abitti.fi/kokelaalle/ylioppilaskokeet-kevaalla-ja-syksylla-26/
+- [Pisterajat] https://www.ylioppilastutkinto.fi/fi/tutkinnon-suorittaminen/pisterajat ja
+  https://www.ylioppilastutkinto.fi/fi/tutkinnon-suorittaminen/kokeiden-arvostelu
+- cheat.abitti.fi (koeympäristön ohjeet) on JavaScript-sovellus; sen sisältöä ei saatu luettua tekstinä.
+
+| # | Väite | Lähde (luettu 14.11.2026) | Tulos |
+|---|---|---|---|
+| 1 | Koe tehdään tietokoneella; kuvaaja liitetään kuvakaappauksena; kaavat kaavaeditorilla | Liite 2 (oma tietokone ja kokelassovellus); Abitti-26 ("Oheisohjelmasta voi edelleen liittää kuvakaappauksia osaksi koevastausta avotehtävissä") | tietokone ja kuvakaappaus oikein; **kaavaeditori tarkistamatta** (cheat.abitti.fi ei lukeutunut); ei muutosta |
+| 2 | Koe kestää kuusi tuntia (360 min) | M-yleiset 2.3.6: "Koe on suoritettava kuuden tunnin kuluessa …", aikaisintaan klo 9.00 | oikein |
+| 3 | 11 tehtävää kolmessa osassa, vastataan seitsemään | M-reaali 2.2 (fysiikka 11 / 7); HVP-K26 ja HVP-S25 (Osa 1, 2, 3) | oikein |
+| 4 | Osa I pakollinen, yksi tehtävä, 20 p; monivalintoja, väittämiä, lyhyitä kysymyksiä | HVP-K26: "Vastaa tehtävään 1", 20 väittämää à 1 p; HVP-S25: monivalintoja à 2 p ym. | oikein (muoto vaihtelee, kuten sivu sanoo); harjoituskokeen 10 × 2 p on harjoituksen oma mitoitus |
+| 5 | Osa II: 4 tehtävää seitsemästä, kukin 15 p | HVP-K26, HVP-S25: 7 tehtävää, "Vastaa neljään", 15 p | oikein |
+| 6 | Osa III: 2 aineistotehtävää kolmesta, kukin 20 p | HVP-K26, HVP-S25: 3 aineistotehtävää, "Vastaa kahteen", 20 p | oikein |
+| 7 | Enimmäispisteet 120 p | M-reaali 2.3; HVP-K26 "Koe yhteensä 120 p" | oikein |
+| 8 | Graphical Analysis esimerkkinä kuvaajaohjelmasta | Oheis: Vernier Graphical Analysis Pro v6.2.0 ("lukiot voivat asentaa omalla asennuskoodillaan") | oikein esimerkkinä; ei muutosta |
+| 9 | Apuvälineet: laskin, taulukkolaskenta, kuvaajaohjelma, kaavaeditori, kokeen taulukot ja kaavat | M-reaali 3: "ei saa käyttää apuvälineinä erillisiä laskimia eikä erillisiä taulukkokirjoja"; Oheis: Abicus-funktiolaskin, Collabora Calc, GeoGebra, MAFY-taulukot ja MAOL digitaulukot (lukion asentamina) | **epätarkka → korjattu**: harjoituskoe "Apuvälineet" fi/en/fi-easy: "tietokoneen laskinohjelmaa" ja lause "Erillistä laskinta tai taulukkokirjaa fysiikan kokeessa ei saa käyttää." Kaavaeditori tarkistamatta (kohta 1) |
+| 10 | Arvosanarajat päätetään joka kokeessa erikseen pisteiden jakauman perusteella | Pisterajat: "Lautakunta päättää arvosanojen pisterajat kullakin tutkintokerralla erikseen …", SYK-menetelmä | oikein |
+
+Ohjelmamuutos syksystä 2026: syksyn 2026 tutkinnosta alkaen koe tehdään Abitti 2:lla (M-yleiset koskee ensimmäisen
+kerran syksyä 2026; Abitti-26: oheisohjelmat eroavat Abitti 1:stä, kuvakaappaukset toimivat edelleen). Sivujen
+väitteet eivät nimeä Abitti 1:n ohjelmia, joten muutos ei tee niistä vääriä; Graphical Analysis on Abitti 2:n listalla.
+
+Havainnot, joita ei muutettu (väitteiden ulkopuolella, opettajan päätettäviksi):
+- `fy9-koe`:n hero-kuvassa on pöydällä erillinen laskin; M-reaali 3 kieltää erilliset laskimet. Kuva on katselmoitu; muutos vaatisi kuvan uudelleenpiirron ja hyväksynnän.
+- `fy9-koe` "Sähköinen koe" kuvaa aineistot Osan III piirteeksi; HVP-K26:ssa myös 5/7 ja HVP-S25:ssä 4/7 Osan II tehtävistä on aineistotehtäviä. Ei väärä väite, mutta voisi mainita.
+- Harjoituskokeen ylimääräisten vastausten ohje (lasketaan ennen mallivastauksia valitut) on harjoituksen oma sääntö; M-reaali 2.5:n mukaan oikeassa kokeessa lasketaan pienimmän pistesumman antavat vastaukset.

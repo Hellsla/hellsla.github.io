@@ -1,6 +1,6 @@
 # Dispersio: prisma ja sateenkaari
 
-> **Miksi** sateenkaaressa punainen on aina ulkoreunalla ja violetti sisäreunalla? Ja miksi sateenkaaren näkee vain silloin, kun aurinko on selän takana?
+> **Miksi** pääsateenkaaren ulkoreunalla on punaista ja sisäreunalla violettia? Ja miksi sateenkaaren näkee vain silloin, kun aurinko on selän takana?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: kesäsateen jälkeen pellon ja metsän yllä on kirkas sateenkaari. Sen ulkoreunalla on punainen ja sisäreunalla violetti. Sen ulkopuolella näkyy himmeämpi toinen sateenkaari, jossa värit ovat päinvastaisessa järjestyksessä. Kaarten välissä taivas on tummempi. Taustalla on harmaita sadepilviä. Etualalla ihminen seisoo selin katsojaan ja katsoo kaarta." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy711h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a96a3"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy711h-field" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#e9c98a"/></linearGradient></defs>
@@ -158,7 +158,7 @@ Valon lähtösuunta riippuu myös siitä, mihin kohtaan pisaraa säde osuu. Silt
   <foreignObject x="172.5" y="310.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$\text{violetti}$</div></foreignObject>
 </svg>
 
-### Miksi punainen on ulkoreunalla
+### Miksi punainen on pääsateenkaaren ulkoreunalla
 Kun aurinko on selän takana, auringonsäteet kulkevat pään ohi kohti **vastapistettä**. Vastapiste on oman pään varjon kohdalla horisontin alapuolella. Silmään tulee punaista valoa niistä pisaroista, jotka näkyvät $42^\circ$:n kulmassa vastapisteen suunnasta. Violettia valoa tulee niistä pisaroista, jotka näkyvät $40{,}6^\circ$:n kulmassa.
 
 Samassa kulmassa olevat pisarat muodostavat ympyrän, jonka keskipiste on vastapiste. Punaisen ympyrä on suurempi, joten punainen on kaaren ulkoreunalla. Eri värit lähtevät pisarasta voimakkaimpina hieman eri suuntiin. Siksi silmään tulee kustakin pisarasta erityisen voimakkaasti tietyn väristä valoa. Pisaran muiden värien voimakkaimmat suunnat kulkevat silmän ohi. Siksi jokainen katsoja näkee oman sateenkaarensa.

@@ -430,7 +430,7 @@
         "Selitän, että kaukolämmön hyöty riippuu siitä, tarvitaanko lämpöä (vuodenaika, kaukolämpöverkko).",
         "Mainitsen, että vertailussa pitää ottaa huomioon, mitä lämpö korvaa ja kuinka paljon polttoainetta kokonaisuudessa kuluu."
       ],
-      "model": "Kokonaishyötysuhde $0{,}88$ lasketaan sähkön ja kaukolämmön summana, $(P_\\text{s} + P_\\text{k})/P_\\text{o}$. Sähkö ja lämpö eivät ole yhtä arvokkaita: sähköä voi käyttää mihin tahansa, kaukolämpö kelpaa vain lämmitykseen ja vain lähelle. Sähkön osuus on yhteistuotantolaitoksessa pienempi, $0{,}30$ verrattuna lauhdevoimalaitoksen $0{,}40$:ään, joten sähköä saadaan vähemmän samasta polttoaineesta. Yhteistuotanto kannattaa, kun lämpöä todella tarvitaan, koska silloin muuten tarvittaisiin erillinen lämpökeskus, joka polttaa lisää polttoainetta. Vertailuun tarvitaan siis kaupungin sähkön ja lämmön tarve eri vuodenaikoina sekä vaihtoehtoinen tapa tuottaa lämpö ja sen hyötysuhde.",
+      "model": "Kokonaishyötysuhde $0{,}88$ lasketaan sähkön ja kaukolämmön summana, $(P_\\text{s} + P_\\text{k})/P_\\text{o}$. Sähkö ja lämpö eivät ole yhtä arvokkaita: sähköä voi käyttää mihin tahansa, kaukolämpöä käytetään pääasiassa lämmitykseen ja vain lähelle. Sähkön osuus on yhteistuotantolaitoksessa pienempi, $0{,}30$ verrattuna lauhdevoimalaitoksen $0{,}40$:ään, joten sähköä saadaan vähemmän samasta polttoaineesta. Yhteistuotanto kannattaa, kun lämpöä todella tarvitaan, koska silloin muuten tarvittaisiin erillinen lämpökeskus, joka polttaa lisää polttoainetta. Vertailuun tarvitaan siis kaupungin sähkön ja lämmön tarve eri vuodenaikoina sekä vaihtoehtoinen tapa tuottaa lämpö ja sen hyötysuhde.",
       "optional": true
     },
     {

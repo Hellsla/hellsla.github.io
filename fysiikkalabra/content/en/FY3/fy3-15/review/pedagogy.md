@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 5f1ecd1bd48c4c15
+CONTENT-HASH: 4813d28d443de144
 
 ## Blocking
-None. Read the whole chapter (lesson, inquiry, exit ticket); the new notation can be followed by a first-time student, the inquiry, worked example and exit ticket use the same symbols, and no number or answer changed.
 
 ## Polish
-1. lesson.md, Kaava: η = W_a/W_o = P_a/P_o with the a = anto, o = otto note and 'o-kirjain, ei nolla' is clear; the chain from P_o and P_h = P_o − P_a read well. The paragraph is dense (four new terms in one block); consider splitting at 'Voimalaitoksessa vaiheet ovat peräkkäin'.
-2. The stage formula P_h = P_o − P_a is used in the solutions with P_o the stage's input (P_o = P_1 for the steam cycle) while the chain calls that input P_1; solutions explain it, but a half-sentence in the lesson ('vaiheelle otto on edellisen vaiheen anto') would remove the doubt.
-3. exercises (solutions L2-07 area): the heat-pump task still uses ε = Q/E_s while fy3-11 now teaches ε = Q₁/W; E_s means 'sähköenergia' here. Consider ε = Q₁/W or say so in Annettu.
+- The 'in summer the need is usually smaller' sentence no longer links explicitly to the plant's electric-to-heat ratio; fine, but a short link back to the opening question would help.
 
-en: says the same as fi.
+## Checked
+batch delta review: reworded district-heating passages clear and consistent with the inquiry model answer and the misconception paragraph; no task contradicts them.

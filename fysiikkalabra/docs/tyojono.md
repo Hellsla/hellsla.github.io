@@ -8,14 +8,7 @@ Tämä on ainoa työjono (opettaja 2026-11-13): ei GitHub Issuesia eikä erillis
 ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta muut ketjut näkevät varauksen
 (repon juuren `CLAUDE.md`). Saman kurssin kohdat tehdään peräkkäin, eri kurssien enintään kolme rinnakkain.
 
-## 2. Tehtäväsarjojen katselmoinnit: FY1, fy4-8, FY5, FY6, FY7 (opettaja 2026-11-13: tässä järjestyksessä)
-
-Sarjat ovat luonnoksina eivätkä näy opiskelijoille (`python scripts/reviews.py status`): FY1 8, fy4-8 1, FY5 13,
-FY6 15, FY7 14, kukin fi, en ja fi-easy. Katselmointi `/exercises`-putken vaiheilla (`reviews.py scope <id>
---exercises`, kolme katselmoijaa) kuten FY4:ssä (#531). Yksi kurssi per PR; kurssin MAFY-kaavat (kohta 3) samassa
-ketjussa tai heti perään, ei rinnakkain.
-
-## 3. Kaavat MAFY-muotoon FY5–FY8, FY10 ja FY14
+## 3. Kaavat taulukkokirjan muotoon FY5–FY8, FY10 ja FY14
 
 FY1–FY4 ja FY9 on tehty (#501, #522, #527, #529). Keskinopeuden tunnus on kaikkialla $v_\text{k}$, ei $v_\text{ka}$
 (opettaja 2026-11-13).
@@ -32,16 +25,24 @@ tarkistetaan ensin kuvista (fy10-hiuksen-paksuus antoi kahdella ajolla eri tulok
 kuvasääntö erillisenä eränä opettajan päätöksellä; jaettujen komponenttien muutokset (`templates/`, `screenshot.py`:n
 tyhjät 28×28 px kaappaukset) tehdään yksin. Voi kulkea rinnakkain kohdan 2 kanssa.
 
+## 4b. Dronelabra: lentokokeiden taulukko liian leveä puhelimella (2026-11-14)
+
+Löytyi #568:n koko sivuston ajossa 360 ja 390 px:llä: `ahjo-drone-lentokokeet` (fi, en, fi-easy) taulukko on
+91–130 px laatikkoaan leveämpi (`check_layout` `table`, suljettu tila). Ainoa löydös koko sivustolla näillä
+leveyksillä. Lähde `jaksot/ahjo/kohteet/ahjo-drone-lentokokeet.md`. Korjaus ensisijaisesti jaksopohjan taulukon
+yhteisessä tyylissä (jaettu: yksin) tai taulukon rakenteessa (sisältö, ei katselmointeja Ahjon sivuilla). Pieni,
+voidaan tehdä, kun mikään jaettu muutos ei ole auki.
+
 ## 5. CI:n toistettavuus (2026-11-13)
 
 Tapa ajaa selaintarkistukset CI:n kontissa (`mcr.microsoft.com/playwright/python:v1.65.0-noble`) paikallisesti, ja
 layout-testien virheilmoitukset nimeämään ylivuotava elementti (`docs/QUALITY.md` aukot 1–2). Jaettuja tiedostoja:
 tehdään yksin ja yhdistetään ennen muita.
 
-## 6. Kuvatehtävät FY8, FY9, FY10 ja FY14, MAFY-taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13 ja 2026-11-14)
+## 6. Kuvatehtävät FY8, FY9, FY10 ja FY14, taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13 ja 2026-11-14)
 
-Sama tahti kuin FY4:stä alkaen: jokaisessa luvussa vähintään kaksi kuvatehtävää ja MAFY-taulukkotehtävä noin joka
-kolmannessa luvussa (#521, #528). FY10:een ja FY14:ään ei lisätä MAFY-taulukkotehtäviä, vain kuvatehtävät (opettaja
+Sama tahti kuin FY4:stä alkaen: jokaisessa luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka
+kolmannessa luvussa (#521, #528). FY10:een ja FY14:ään ei lisätä taulukkotehtäviä, vain kuvatehtävät (opettaja
 2026-11-14). Arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit lähde-URL:n kanssa. Aloitetaan,
 kun kohdan 2 katselmoinnit on tehty, jotta katselmoimattomien sarjojen jono ei kasva.
 
@@ -124,7 +125,7 @@ kappaleen viereen oikeaan palstaan samalla säännöllä kuin SVG-kuvat. Kyseine
 Ennen/jälkeen-kuviin myös FY1 (opettaja 2026-11-13): fy1-1 "Aine koostuu sisäkkäisistä rakenteista" (väli väliotsikon
 ja kappaleen välissä, vieressä rakennekuva) ja "Atomi on ydintään kymmeniätuhansia kertoja suurempi" (väli kappaleen
 ylä- ja alapuolella).
-Toteutetaan kohdan 14 osana U3 (opettaja 2026-11-14).
+Toteutetaan kohdan 11 osana U3 (opettaja 2026-11-14).
 
 ## 8f. Animoitu kuva: hiukkasten värähtely ja lämpölaajeneminen (opettaja 2026-11-13, pilotti fy3-8)
 
@@ -200,27 +201,7 @@ FY1–FY6:lla on esimerkkikoe (`content/fi/<COURSE>/koe/`), FY7:llä ja FY8:lla 
 (`docs/exam-guidelines.md`), kumpikin omana PR:nään ja kolmella katselmoinnilla. FY8:n tehtävät on katselmoitu, joten
 sen koe voi alkaa heti; FY7:n koe kohdan 2 FY7-katselmointien jälkeen, ettei sama kurssi ole kahdessa ketjussa.
 
-## 10. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
-
-`kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
-käsitekortteja eikä alleviivauksia.
-
-## 11. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13: viimeisenä)
-
-Kilparobotiikka on kirjoitettu jaksopohjan lohkoina (#516–#517, `scripts/jaksot.py`); Ahjo ja LUMA-tutor piirtyvät
-vielä osin omilla moduuleillaan (`ahjo.py`, `lumatutor.py`). Siirretään ne samaan pohjaan niin, että sivut pysyvät
-tavulleen samoina kuten Kilparobotiikassa, ja puuttuvat lohkot lisätään yhteiseen lohkokirjastoon. Jaettuja
-tiedostoja: tehdään yksin.
-
-## 12. Vihkot FY1–FY8 nykyisellä tiiviillä asettelulla (opettaja 2026-11-13)
-
-Tulostettavat A5-vihkot (`python scripts/print_book.py <C> --lang fi|en --publish`, README "Printed A5 book") kaikille
-kursseille FY1–FY8 sivuja säästävällä tiiviillä asettelulla (#393). FY1–FY4:llä vihko on (7.11.), mutta sisältö on
-muuttunut sen jälkeen (MAFY-kaavat, käsitteet, korjaukset), joten ne tehdään uudelleen; FY5–FY8 ovat uusia. Kurssin
-vihko tehdään vasta, kun sen kohdan 3 MAFY-kaavat on yhdistetty, ettei sitä tarvitse tehdä kahdesti. Rakenna sivusto
-vihkojen jälkeen (Vihkot-sivu).
-
-## 13. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
+## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 
 Mittaus, päätökset ja rajaukset: `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. Matalalla kannettavalla
 (1366×650) simulaation kuva kapenee 384 px:iin ja sen tekstit noin 7 px:iin; puhelimella kuva vierii pois säätimiä
@@ -241,8 +222,12 @@ lang-tekstejä tai fysiikkaa.
 Myöhemmin kurssi kerrallaan, kunkin luvun seuraavan sisältömuutoksen yhteydessä katselmointeineen: tyyppi D (fy6-5,
 fy6-6, fy6-9, fy6-12, fy6-13, fy6-14), fy1-2:n säätimien ryhmittely, näppäinvaihtoehto raahaukselle, nimien
 yhtenäistäminen (Toisto / Tauko / Alusta) ja toistuvien seliterivien poisto.
+PR 1:n mittauksesta (1366×650, koordinaattori 14.11): fy3-1 ja fy3-9 kutistavat tekstinsä itse sim.js:ssä (9 px,
+fy3-9 jättää nimiöitä pois), ja fy3-6, fy3-8, fy4-5, fy6-11, fy7-14, fy8-10 ja fy8-16 saavat päällekkäisiä nimiöitä
+384 px:n kuvassa (PR 1 nostaa tekstit vähintään 10 px:iin muuttamatta asettelua); korjataan sim.js:ssä, jos PR 2–3:n
+leveämpi kuva ei riitä.
 
-## 14. Tehtävänäkymä ja teorian taitto (opettaja 2026-11-14, UI/UX-auditoinnin tulos)
+## 11. Tehtävänäkymä ja teorian taitto (opettaja 2026-11-14, UI/UX-auditoinnin tulos)
 
 **Yleislinja** (opettaja 2026-11-14; kirjataan `CLAUDE.md`:hen U1:n PR:ssä): käyttöliittymään ei lisätä tekstiä, ja
 käyttöliittymätekstejä poistetaan aina kun mahdollista. Uusi otsikko, ohjerivi, laskuri tai selite vaatii opettajan
@@ -250,21 +235,10 @@ luvan.
 
 Jokainen osa U1–U4 on oma työntekijäketjunsa, haaransa ja luonnos-PR:nsä; ensimmäinen commit merkitsee osan
 `Varattu: <haara>`. Kaikki muuttavat jaettuja tiedostoja (`templates/`, `scripts/`, `site.css`, `lang/`), joten ne
-tehdään yksin, yksi kerrallaan, ja yhdistetään ennen sisältö-PR:iä. Järjestys: **U4, sitten U1, U2, U3.** U4 on pieni
-ja tehdään heti, kun mikään muu jaettu muutos ei ole auki. U1–U3 aloitetaan vasta, kun kohdan 13 (simulaatioiden
+tehdään yksin, yksi kerrallaan, ja yhdistetään ennen sisältö-PR:iä. U4 on tehty (#561). Järjestys: U5, U1, U2, U3. U1–U3 aloitetaan vasta, kun kohdan 10 (simulaatioiden
 käyttöliittymä) PR 1–PR 5 on yhdistetty, koska ne muuttavat samoja tiedostoja (`site.css`, `lesson.js`). Kohdat 8b, 8h
 ja 8 (avattavat Virhekäsitys ja Tiivistelmä) pysyvät ennallaan ja mahtuvat väleihin. Fysiikan sisältöön, vastauksiin,
 toleransseihin, tallennusavaimiin ja palautustiedoston muotoon ei kosketa. Mergen jälkeen katsotaan mainin CI-ajo.
-
-### U4. Kaksi tekstiä pois (pieni, ensin)
-**Varattu: claude/u4-kaksi-tekstia-pois**
-- ~~Teorian alun rivi "Et ole vielä vastannut: siirry ennusteeseen" poistetaan.~~ Opettajan päätös 14.11. (koordinaattorin
-  kautta): riviä ei poisteta, koska Teorian alussa ei ole omaa riviä; muistutus (`reflect_not_answered`) jää Tutki-vaiheen
-  kokeen "Ennustit"-laatikkoon ja Palaa ennusteisiisi -laatikkoon (Teorian lopussa). Tästä ei muuteta koodia.
-- Esimerkit-vaiheen johdanto ("Kun olet opiskellut luvun teorian…", lang `inquiry.lead_<vaihe>`) poistetaan kaikista
-  kielistä, kuten Testaa ja arvioi -vaiheen johdanto 13.11.
-- Samassa PR:ssä `CLAUDE.md`:n Lesson page 5 ("Esimerkit opens with one line…") korjataan.
-- Tiedostot: `inquiry.py` tai `inquiry.js`, `lang/*.json`. Testit: `test_inquiry`, `test_progress`, `check_layout`.
 
 ### U1. Ydintehtävät auki Tehtävät-vaiheen alkuun
 Nyt vaihe on kolme suljettua tasolaatikkoa, eikä yhtään tehtävää näy. Tason ohje sanoo "Ydintehtävät ensin", mutta ne
@@ -273,6 +247,13 @@ eivät ole ensin (FY4 luku 4: 4-4, 4-6, 4-13, 4-16).
   vastaustoimintoineen. Tasoa ei tarvitse avata.
 - Ei uutta otsikkoa, laskuria ("Ydintehtävät 2/4 tehty" ei palaa; opettaja poisti sen 13.11. ja vahvisti 14.11.),
   ohjeriviä eikä väliotsikkoa. Ydintehtävän tunnistaa nykyisestä Ydintehtävä-merkistä.
+- Ydintehtävät ovat eri tasoisia: tasoilta 1 ja 2, kuten nyt (`build.py core_ids`: oletuksena kahden tason kaksi
+  ensimmäistä tai `"core": true`; 14.11. 112/113 luvussa molemmilta tasoilta, yhdessä vain tasolta 1, tasolta 3 ei
+  missään). Taso 3 ei tule ydintehtäviin (opettaja 14.11: "Riittää tasot 1 ja 2"). Järjestys: tason 1 ydintehtävät
+  ensin, sitten tason 2. Luku, jonka ydintehtävät ovat yhdeltä tasolta, raportoidaan PR:ssä (sisältöpäätös, ei
+  korjata tässä).
+- Ydintehtävän merkin vieressä näkyy sen taso, **Perus** tai **Soveltava** (opettaja 14.11: "Voisi näkyä perus /
+  soveltava"; tämä on hyväksytty käyttöliittymäteksti, lang-avaimet fi, en ja fi-easy, tasojen nykyisistä nimistä).
 - Niiden alla nykyiset kolme tasoa suljettuina; tasossa näkyvät vain sen muut tehtävät. Tasojen otsikot ja
   "N/M tehty" toimivat kuten nyt, omilla määrillään.
 - Lause "Ydintehtävät ensin, loput lisäharjoitusta." poistetaan (lang `level_lead_1` ja `level_lead_2`, kaikki kielet).
@@ -327,12 +308,63 @@ Tiedostot: `build.py` `fig_rows`, `site.css`, `check_layout.py` (tarkistus tyhj�
 fy3-8 ja fy4-3 leveyksillä 1280, 1440 ja 1920 px sekä fy1-1. Luonnoksessa Teoria-vaihe lyheni noin 8 % (fy3-8:
 4082 → 3775 px, fy4-3: 3703 → 3380 px leveydellä 1280 px).
 
+### U5. FY9:n Oma edistyminen ja itsearviointi samaan kokoon kuin FY1–FY8 (opettaja 2026-11-14, kuvakaappaus en/FY9)
+FY9:n moduulisivulla (en, myös fi tarkistettava) kortit *My progress* ja *My self-assessment* ovat kapeat (noin
+440 px kumpikin) ja jäävät vasemmalle, kun FY1:llä ne täyttävät sivun leveyden kahtena puolikkaana. Kapeudesta
+seuraa: kaavion y-akselin nimiöt "98", "90" ja "goal 90" menevät päällekkäin; itsearvioinnin luvun otsikot
+(THE EXAM AND EXPERIMENTAL WORK, ELECTRICITY AND MAGNETISM …) ja niiden alleviivaukset osuvat toisiinsa ja
+sarakenumeroihin (10–15 ilman väliä). Korjaus jaetussa koodissa niin, että FY9 (ja FY14, FY10, jos samat kortit)
+käyttää samaa leveyttä ja ruudukkoa kuin FY1–FY8. Ei uutta tekstiä. Tiedostot todennäköisesti `build.py` (moduulisivun
+edistymisosio), `site.css`; testit `check_layout` FY9-sivulle kaikilla leveyksillä ja `test_home`. Ennen/jälkeen-kuvat
+FY9 ja FY1, 1280 ja 390 px. Pieni jaettu muutos: tehdään kuten U4, kun mikään muu jaettu muutos ei ole auki.
+
 ### Ei tehdä (opettaja 2026-11-14)
 - Ei Aloita-riviä moduulisivulle; Jatka-rivi pysyy ennallaan.
 - Ei "Näytä kaikki tehtävät" -toimintoa.
 - Ei etusivun uusia ryhmäotsikoita.
 - Ei marginaalipalstaa eikä keskitettyä lukupalstaa.
 - Ei yhden luvun julkaistua pilottia: esikatselukuvat riittävät.
+
+## 11b. FY9: adaptiivinen YO-valmentaja (opettaja 2026-11-14)
+
+Varattu: PR 1 – claude/fy9-valmentaja-pr1
+
+Suunnitelma: `docs/FY9_ADAPTIVE_PLAN.md` (#566). Opettaja hyväksyi 14.11 suunnitelman ja kaikki sen suositukset
+P1–P12: osaamisalueet ovat kuusi osaamista (`competencies.json`); tilojen sanat hyväksytään PR 4:ssä; oma
+valmentajasivu; FY9-sivulle rivi "Tänään: 3 tehtävää" Jatka-rivin tilalle; jokainen uusi käyttöliittymäteksti
+hyväksytään PR kerrallaan; näyttöloki vain varmuuskopioon, ei palautukseen; minikoekoosteet agentti ehdottaa ja
+opettaja hyväksyy; mitoitus 3 min/piste; laajennus muiden moduulien Sovella-tehtäviin myöhemmin; Abitti 2 omana
+TVT-ohjeena; paikallinen kielimalli vain selvityksenä myöhemmin. Ei palvelinta, ei tekoälyrajapintaa, ei kustannuksia
+opiskelijalle.
+
+Järjestys (suunnitelman kohdat 8–9, hyväksymiskriteerit ja testit siellä): PR 1 YTL/Abitti-tietojen tarkistus
+(sisältö, delta) voi alkaa heti; PR 2–8 (tehtäväindeksi, näytön kirjaus, osaamisnäkymä ja suositukset, vaikea vaihe,
+koetila ja minikokeet, kertauspolku, kielten tarkistus) muuttavat jaettuja tiedostoja, joten ne tehdään yksin, yksi
+kerrallaan, kohdan 10 PR 1–PR 5:n ja kohdan 11 U1:n jälkeen; PR 9 Abitti 2 -ohje (sisältö); PR 10 kielimallin
+selvitys (dokumentti). Arvio noin 2,5–3,5 M tokenia.
+
+## 12. Kohdennetut sisältökorjaukset FY3–FY8 (opettaja 2026-11-14)
+
+Opettajan tehtävänanto sellaisenaan: `docs/audits/2026-11-14-kohdennetut-sisaltokorjaukset.md`. Kolmetoista pientä
+korjausta jo katselmoituun sisältöön: FY8-16 (laajeneminen, sidosenergian maksimi), FY8-12 (gammasäteilyn
+läpäisykyky, puoliintumispaksuus), FY4-8 (kitkan työ, vuoristoradan ensimmäinen mäki), FY7-11 (sateenkaaren
+värijärjestys), FY4-9 (lentopallotehtävä 13-3), FY5-12 (Fourier valinnaiseksi), FY3-15 (kaukolämpö, yhteistuotanto
+kesällä), FY4-6 (kirjoitusvirhe), FY3-12 (U-arvon termi, valinnainen). **Vain delta-review** muuttuneille
+katkelmille (`reviews.py scope`); ei kokonaisten lukujen uutta katselmointia, ei muita sisältömuutoksia; ensin
+tarkistetaan, onko korjaus jo tehty. fi, en ja fi-easy. Yksi haara ja yksi PR; raportti tehtävänannon kohdan F
+mukaan.
+
+## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
+
+`kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
+käsitekortteja eikä alleviivauksia.
+
+## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; järjestys 2026-11-14)
+
+Kilparobotiikka on kirjoitettu jaksopohjan lohkoina (#516–#517, `scripts/jaksot.py`); Ahjo ja LUMA-tutor piirtyvät
+vielä osin omilla moduuleillaan (`ahjo.py`, `lumatutor.py`). Siirretään ne samaan pohjaan niin, että sivut pysyvät
+tavulleen samoina kuten Kilparobotiikassa, ja puuttuvat lohkot lisätään yhteiseen lohkokirjastoon. Jaettuja
+tiedostoja: tehdään yksin.
 
 ## 15. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14)
 
@@ -367,14 +399,23 @@ prioriteetti (kriittinen, merkittävä tai pieni) ja tarvittava tarkistus korjau
 varmennetut virheet, mahdolliset ongelmat ja vapaaehtoiset parannusehdotukset. Oppitunti, jolla ei ole korjattavaa,
 merkitään hyväksytyksi.
 
-**Jonon viimeinen kohta** (opettaja 2026-11-14): aloitetaan vasta, kun kaikki muut jonon kohdat on tehty. Työ on laaja
+**Toiseksi viimeinen kohta** (opettaja 2026-11-14): aloitetaan vasta, kun kaikki muut jonon kohdat paitsi vihkot
+(kohta 16) on tehty. Työ on laaja
 (113 lukua), joten se tehdään kurssi kerrallaan omissa ketjuissaan (`/quality-audit <id> --audit-only`, budjetit
 `.claude/commands/lesson.md`).
+
+## 16. Vihkot FY1–FY8 nykyisellä tiiviillä asettelulla (opettaja 2026-11-13; jonon viimeinen 2026-11-14)
+
+Tulostettavat A5-vihkot (`python scripts/print_book.py <C> --lang fi|en --publish`, README "Printed A5 book") kaikille
+kursseille FY1–FY8 sivuja säästävällä tiiviillä asettelulla (#393). FY1–FY4:llä vihko on (7.11.), mutta sisältö on
+muuttunut sen jälkeen (kaavat taulukkokirjan muotoon, käsitteet, korjaukset), joten ne tehdään uudelleen; FY5–FY8 ovat uusia. Kurssin
+vihko tehdään vasta, kun sen kohdan 3 kaavat taulukkokirjan muodossa on yhdistetty, ettei sitä tarvitse tehdä kahdesti. Rakenna sivusto
+vihkojen jälkeen (Vihkot-sivu).
 
 ## Kirjattu päätös: teorian taitto, vaihtoehto B (opettaja 2026-11-14)
 
 Opettaja vertasi kolmea vaihtoehtoa 14.11. ja valitsi B:n: nykyinen 38 rem:n palsta säilyy, ja asettelu korjataan
-kohdan 8e mukaan (kohta 14, U3). Entinen kohta 7 (keskitetty tekstiraita ja marginaaliraita) poistettiin jonosta.
+kohdan 8e mukaan (kohta 11, U3). Entinen kohta 7 (keskitetty tekstiraita ja marginaaliraita) poistettiin jonosta.
 Perustelu: marginaaliin mahtuva kuva olisi noin neljänneksen pienempi, ja Teoria olisi ainoa keskitetty vaihe.
 
 ## Kirjattu päätös: luvut ilman käsitekortteja (opettaja 2026-11-13)

@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3eef2a9fd86daae1
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: d7608b5687ea2b2b
+SCOPE: delta added-exercise from 3eef2a9fd86daae1 base 8f23aa7ae3bd
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy6-1-L2-08 solution — Kaava uses $I_0$, $t_1$, $t_2$ that the Kuvaajan lukeminen row never names — name them there ("$I_0 = 0{,}50\,\text{A}$, $t_1 = 40\,\text{s}$, $t_2 = 60\,\text{s}$").
+- [Minor] lataus-kuvaaja — the curve is purple, the project's momentum colour; a current has no colour of its own, so harmless, but ink or a neutral would avoid the association.
 
 ## Checked
-- exercises.json feedback texts (2) and solutions.md c-answer, principle and statement 4; consistent with the lesson; numbers (0,019 mm/s, 14 h, 54 J) unchanged.
-- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.
+- open-exercises-L2-1280-8 and -9 (task 1-17 with its figure, whole solution open): graph has quantity and unit on both axes, readable ticks, 0,50 A plateau, line to zero at 100 s, no answer shown; alt text matches; maths, units, decimal comma, Finnish fluent; the set reads as one.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

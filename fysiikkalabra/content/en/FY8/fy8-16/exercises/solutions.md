@@ -21,7 +21,7 @@
 ## fy8-16-L1-03
 **Given:** distance of the galaxy $d = 120\,\text{Mpc}$, Hubble constant $H_0 = 70\,\tfrac{\text{km/s}}{\text{Mpc}}$
 **Asked:** the recession speed $v$ in kilometres per second
-**Principle:** According to the Hubble–Lemaître law, the recession speed of a galaxy is directly proportional to its distance, because the expansion of space increases all distances in the same proportion. The own motion of the galaxy is ignored.
+**Principle:** According to the Hubble–Lemaître law, the recession speed of a galaxy is directly proportional to its distance, because the expansion of space increases, on average, the distances between distant galaxies in the same proportion. The own motion of the galaxy is ignored.
 **Formula:** $v = H_0\,d$
 **Conversions:** None needed: the distance is in megaparsecs, so the megaparsec cancels and the speed comes out in kilometres per second.
 **Substitution:** $v = 70\,\tfrac{\text{km/s}}{\text{Mpc}} \cdot 120\,\text{Mpc} = 8400\,\text{km/s}$
@@ -162,7 +162,7 @@ b) At the distance $28\,\text{Mpc}$ the line gives the speed $68.45 \cdot 28\,\t
 
 ## fy8-16-L2-07
 **Asked:** what is wrong in the student's reasoning and which correction is correct.
-**Principle:** The Big Bang was not an explosion at a certain point in space; space itself began to expand everywhere. In the expansion, all distances between galaxies grow in the same proportion, so viewed from any galaxy the other galaxies recede in the same way: the speed is proportional to the distance, $v = H_0\,d$. Therefore the expansion has no centre and no edge.
+**Principle:** The Big Bang was not an explosion at a certain point in space; space itself began to expand everywhere. In the expansion, the distances between distant galaxies grow on average in the same proportion, so viewed from any galaxy the other galaxies recede in the same way: the speed is proportional to the distance, $v = H_0\,d$. Therefore the expansion has no centre and no edge.
 **Model answer:** The student's observation is correct, but the conclusion is wrong: the fact that galaxies recede from us in every direction does not make the Milky Way a centre. Space expands everywhere, so viewed from any galaxy the others recede in the same way and there is no centre. If the explosion had a location, the recession would look different from different galaxies, but observations do not support that. According to the Hubble–Lemaître law, distant galaxies recede faster, not slower, so the claim of slower recession far away is wrong. The claim of tired light is also wrong, because the distances between galaxies really do grow as space expands.
 
 ## fy8-16-L2-08

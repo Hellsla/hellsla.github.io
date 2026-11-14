@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: df56262b52ce34b1
-Mode: full (translation review against the reviewed Finnish set; new YO-skill task L2-08 (Coulomb scaling, two changes at once))
-Round 3
+CONTENT-HASH: af25454f80bec980
+SCOPE: delta added-exercise from df56262b52ce34b1 base 8f23aa7ae3bd
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- solutions.md fy6-10-L2-09 "Kuvaajan lukeminen" — says the curve is "noin 0,06 mN" above the 5 mN line, which cannot be read from a 1 mN grid, then "5,06 mN ≈ 5,1 mN" while the calculation uses 5,06 — say "noin 5,1 mN" and use it (30,1 nC, within tolerance).
+- fy6-10-L2-10 resembles L2-06 (pairs A and B, unknown charge from a ratio); it differs in reading a graph, so acceptable, but check the two do not feel like repeats on the page.
 
 ## Checked
-- Fixed: nothing needed; the new task already matched the Finnish.
-- New task L2-08 (Coulomb scaling, two changes at once): the multiple-choice form keeps one clearly correct option, each distractor targets one misconception and its feedback names the error and repairs it, as in fi.
-- Language: Selkeä suomi per NOTES.md §12 (difficult words explained in the sentence, short sentences, no step dropped, decimal comma); the task and solution read naturally and give the same steps as the Finnish.
-- Solutions complete and the reasonableness/check step is a real check.
-- check_i18n: 0 errors (fi-easy).
+- L1-09 (MAFY lookup of k, direct Coulomb, mN): level 1 fits, hint names the table, unit conversions and estimate check are real.
+- L2-09: situation first, question last; graph point (4,0 cm; 5,06 mN) matches figure description; solution derives q = r sqrt(F/k) stepwise, back-check real.
+- L2-10: figure needed; description gives the curves without the answer; read-off 4,0 mN and 6,0 cm consistent with 20 nC and 80 nC (checked: 4,0 mN both); ratio reasoning explained, a) and b) clearly separated.
+- Mix of kinds and progression within level 2 still sound.

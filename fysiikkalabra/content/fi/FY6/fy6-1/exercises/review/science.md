@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3eef2a9fd86daae1
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: d7608b5687ea2b2b
+SCOPE: delta added-exercise from 3eef2a9fd86daae1 base 8f23aa7ae3bd
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Changed feedbacks (choice option on electrons at light speed, true/false statement 4) and solutions (drift-speed task c, L1-09 principle and statement 4): free electrons already in the wire, the switching change propagates very fast but at a finite speed, electrons start moving throughout the circuit almost at once, the lamp lights almost at once though each electron drifts slowly. Same claim as the lesson; the wrong option and the false statement stay wrong with correct reasons.
-- Recomputed (numbers unchanged): N/t = 0,40 A / 1,602e-19 C = 2,50e18 1/s; v = 2,50e18 / 1,3e23 1/m = 1,92e-5 m/s = 0,019 mm/s; t = 1,0 m / v = 5,2e4 s ≈ 14 h; L1-09 Q = 0,30 A · 60 s = 18 C, E = 3,0 V · 18 C = 54 J.
+- Hash d7608b5687ea2b2b at start and end; delta: only fy6-1-L2-08 judged.
+- Physics: energy delivered to the battery E = UQ with U = 4,0 V constant (stated in the task), Q the area under the (t, I) graph; the lesson's U = E/Q and Q = It, graph area as in the earlier L2-04.
+- Figure generator: 0,50 A from 0 to 40 s, linear to 0 at 100 s, zero to 120 s; ticks at 20 s and 0,1 A make every value readable; the alt text gives the same values and not the charge or the energy.
+- Recomputed independently: Q = 0,50 A · 40 s + ½ · 0,50 A · 60 s = 20 C + 15 C = 35 C; E = 4,0 V · 35 C = 140 J; answers.py gives 140, tolerance 2 % fits two significant figures.
+- Solution complete: principle and why area, symbolic Q = I₀t₁ + ½I₀t₂ before numbers, no conversions needed (stated), rounding to 2 sf from U and the read currents, a real upper-bound check (200 J at constant 0,50 A).

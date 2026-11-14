@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 5161df0334c5195f
+CONTENT-HASH: 4b72cccf4ef872c5
+SCOPE: delta added-exercise from 5161df0334c5195f base 8f23aa7ae3bd
 
 ## Blocking
-(none)
 
 ## Polish
-- exercises.json:96 — task is nearly the same skill as L1-07 (kW and minutes to kWh); keep, but note the set now has three such items.
-- exercises.json:96 — the stem asks for the "suuruusluokka" while the options are exact 2-digit values; say "Mikä on uunin käyttämä sähköenergia?" or turn the options into powers of ten.
-- solutions.md:222 — the sentence listing the four wrong routes is long; one line per wrong option is easier on a phone.
+- L1-10 solution, Vastaus: "11 MJ" while Sijoitus and the key say 10,8 MJ, plus the checker sentence "kelpaa, kun ... ±4 % sisällä". Write "10,8 MJ ≈ 11 MJ, kaksi merkitsevää numeroa" and drop the tolerance sentence.
+- L1-10 overlaps L1-02 (kWh to MJ); the new element is the MAFY lookup, accepted at level 1. "ensin ... ja muunna sitten" gives away the plan; "Laske energia megajouleina" would leave it to the student.
+- L2-08 repeats the graph-to-kWh task of L2-01 and adds the price; in Järkevyys "keskimäärin 1,25 kW" is 2,5 kWh : 2,0 h and could be written so.
 
 ## Checked
-- Magnitude spacing: 0,0010 / 0,060 / 3,6 / 60 / 3600 kWh, ascending, each the product of a named unit slip; the lesson's third warned mistake (2000 W * 15 min) is covered by 60 and 3600.
-- Correct option has no form tell: not longest, not hedged; every option starts "noin".
-- Numbers: 3,0 min = 0,050 h, E = 0,060 kWh = 60 Wh - correct; wrong values recomputed (1,2*3 = 3,6; 1200*0,05 = 60; 1200*3 = 3600; 1,2*3 : 3600 = 0,0010).
-- Within the lesson (E = Pt, kWh); longest formula 182 px.
-- Finnish: "käyttämän sähköenergian" fine.
-- Text only (no renders: packet screenshots were empty; I measured widths of the model-solution formulas with KaTeX in Chromium at 17 px, 390 px viewport).
+- L1-10: one formula plus one table lookup; 1,5 kW · 2,0 h = 3,0 kWh, 3,0 · 3,6 = 10,8 MJ correct; the hint names the table.
+- L2-08: situation, price, question as own sentence; the figure gives every power and duration and no energy.
+- L2-08 solution correct: 1,2 + 1,2 + 0,10 = 2,5 kWh, 0,45 €; snt to € stated; sanity check independent.
+- Level 2 fits (reading, sum, price); no repeat of the worked example.
+- Mix across the 23 tasks stays varied; progression within levels holds.
+- Finnish and case after number and unit ("0,4 kW:n", "0,25 h:n") correct.

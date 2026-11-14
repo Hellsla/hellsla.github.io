@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 0a877e8585ccb3a6
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 416152cda6092b33
+SCOPE: delta numbers from 27f2fd5d7997b94f base 619f34a
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- New task fy7-9-L2-08 keeps the Finnish scaffolding: same demand, same distractors with misconception-specific feedback, one correct answer, feedback repairs the misconception.
-- Task text gives the data the student needs and does not disclose the answer.
-- Language: follows NOTES.md section 12: shorter sentences, same physics and numbers, decimal comma, no new content.
+- L1 ratio 1,434 x 5772 = 8280 K consistent; L2-09 1000 K = 727 C, 'noin 730 C', dull red glow with mostly infrared is sound.
+- Language checked: fi-easy. Hash 416152cda6092b33 at start; unchanged at end.

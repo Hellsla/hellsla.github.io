@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4703625fe3ccea47
-Round: 2, science, mode full. Scope: the round-1 fixes to fy6-12-L2-08 (commit 57a66480d). The rest of the set is unchanged since round 1. Checked from text only, no renders.
+CONTENT-HASH: fb8bc2ae3ac4c6db
+SCOPE: delta added-exercise from 4703625fe3ccea47 base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
+- content/fi/FY6/fy6-12/exercises/exercises.json (fy6-12-L2-09) — the task text does not say where the positive plate is; a sighted student infers it from where the line ends (5,0 cm, axis running to 5,5 cm), only the alt text states it. Add "positiivinen levy on kohdassa, johon suora päättyy" or give x = 5,0 cm.
 
 ## Checked
-- The fixes change only form: the stem is split into two paragraphs, the correct option's feedback reads "Laskettaessa tulee U = V_B − V_A = 90 V", and the solution's chains are split into one per row. No number, model or truth value changed.
-- Physics re-verified: rows 1, 2 and 4 are right, and row 3 is the only wrong row. I recomputed 90 eV = 1,442e-17 J ≈ 1,4e-17 J and 120 eV = 1,92e-17 J.
-- The rounding sentence now reads "kahden merkitsevän numeron tarkkuudella", and its reason still holds.
-- All numeric answers of the set were recomputed from answers.py in one python call: no mismatch.
-- The distractors still carry the lesson's warned mistakes: potential vs. potential difference and potential energy, and the direction for a negative charge.
-- No option can be picked out by its form.
-- Inline chains (text estimate): every row is now under about 200 px.
+- Hash fb8bc2ae3ac4c6db at start and end; delta round 2: only fy6-12-L2-09 judged.
+- Figure: straight line from (0; 0 V) to (5,0 cm; 250 V) on a 1 cm and 50 V grid; V(1,0 cm) = 50 V and V(5,0 cm) = 250 V lie on gridlines as the solution reads them.
+- Physics: the negative electron released from rest moves towards higher potential, to the + plate; only the electric force works, so ½mv² = eU with U = 200 V.
+- Recomputed: v = √(2 · 1,602·10⁻¹⁹ C · 200 V : 9,109·10⁻³¹ kg) = 8,387·10⁶ m/s; answers.py and json agree; tolerance 2 % fits two figures (8,4·10⁶ is 0,15 % off).
+- Non-relativistic formula valid (v/c ≈ 2,8 %, stated in the check).
+- Solution complete: graph reading, v = √(2eU/m) before numbers, unit check √(C·V/kg) = m/s, rounding reason.

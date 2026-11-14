@@ -166,9 +166,9 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Kuvaajan lukeminen:** Pinnoittamattoman lasin heijastus on vaakasuora musta viiva, ja sen kohdalta luetaan $R_0 \approx 4{,}3\,\%$. Vihreä käyrä on kuppimainen. Sen pohjassa, noin aallonpituudella $500\,\text{nm}$, luetaan $R_\text{pinn} \approx 1{,}3\,\%$. Pohja on käyrän alin kohta ja viiva on sen yläpuolella.
 **Kaava:** poistuva osuus $= \dfrac{R_0 - R_\text{pinn}}{R_0} = 1 - \dfrac{R_\text{pinn}}{R_0}$
 **Muunnokset:** Ei tarvita: molemmat osuudet luetaan prosentteina, ja suhde on yksikötön.
-**Sijoitus:** $1 - \dfrac{1{,}3\,\%}{4{,}3\,\%} = 1 - 0{,}302 = 0{,}698 = 69{,}8\,\%$
+**Sijoitus:** $\text{poistuva osuus} = 1 - \dfrac{R_\text{pinn}}{R_0} = 1 - \dfrac{1{,}3\,\%}{4{,}3\,\%} = 1 - 0{,}302 = 0{,}698 = 69{,}8\,\%$
 **Vastaus:** noin $70\,\%$, kaksi merkitsevää numeroa kuten kuvaajasta luetut arvot. Kuvaajasta lukemisen epätarkkuus vaikuttaa kolmanteen numeroon.
-**Järkevyys:** Pinnoite vähentää heijastusta yli puoleen, kuten luvussa: heijastus pienenee noin $4{,}3\,\%$:sta noin $1{,}3\,\%$:iin. Tulos on alle $100\,\%$, joten pinnoite ei kumoa heijastusta kokonaan, ja se on järkevä, koska pinnoitteen taitekerroin $1{,}38$ on suurempi kuin ihanteellinen $\sqrt{1{,}52} \approx 1{,}23$.
+**Järkevyys:** Pinnoite vähentää heijastusta yli puoleen, kuten luvussa: heijastus pienenee noin $4{,}3\,\%$:sta noin $1{,}3\,\%$:iin. Tulos on alle $100\,\%$, joten pinnoite ei kumoa heijastusta kokonaan, ja se on odotettua, koska yksi pinnoitekerros ei voi kumota heijastusta kaikilla aallonpituuksilla.
 
 ## fy7-14-L3-01
 **Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, ilmaa molemmin puolin, aallonpituus $\lambda = 589\,\text{nm}$, kohtisuora tulo; kalvo paksunee ylhäältä alaspäin, ylin osa on musta
