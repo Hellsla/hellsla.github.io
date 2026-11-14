@@ -311,6 +311,7 @@ fy3-8 ja fy4-3 leveyksillä 1280, 1440 ja 1920 px sekä fy1-1. Luonnoksessa Teor
 4082 → 3775 px, fy4-3: 3703 → 3380 px leveydellä 1280 px).
 
 ### U5. FY9:n Oma edistyminen ja itsearviointi samaan kokoon kuin FY1–FY8 (opettaja 2026-11-14, kuvakaappaus en/FY9)
+Varattu: claude/u5-fy9-edistyminen
 FY9:n moduulisivulla (en, myös fi tarkistettava) kortit *My progress* ja *My self-assessment* ovat kapeat (noin
 440 px kumpikin) ja jäävät vasemmalle, kun FY1:llä ne täyttävät sivun leveyden kahtena puolikkaana. Kapeudesta
 seuraa: kaavion y-akselin nimiöt "98", "90" ja "goal 90" menevät päällekkäin; itsearvioinnin luvun otsikot
