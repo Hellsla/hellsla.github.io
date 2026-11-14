@@ -810,12 +810,29 @@
       }
     });
   }
-  let t; const later = () => { clearTimeout(t); t = setTimeout(() => fit(), 150); };
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => fit()); else fit();
-  window.addEventListener('load', () => fit()); window.addEventListener('resize', later);
-  document.addEventListener('toggle', e => { fit(e.target); later(); }, true);   // later: maths auto-rendered on open
+  // Display maths wider than its box (an aligned block with its equals signs in one column on a 390 px phone, fy4-6 and
+  // fy4-12, 2026-11-14) is drawn just small enough to fit, never under the text size (1em of the box, 17 px); only when
+  // it still does not fit at that size does the block scroll sideways. Maths that fits keeps its size.
+  function fitDisplay(root) {
+    [...(root || document).querySelectorAll('.katex-display')].forEach(d => { const k = d.querySelector(':scope>.katex'); if (k) k.style.fontSize = ''; });
+    [...(root || document).querySelectorAll('.katex-display')].forEach(d => {
+      const k = d.querySelector(':scope>.katex');
+      if (!k || !d.offsetParent) return;
+      for (let i = 0; i < 4 && d.scrollWidth > d.clientWidth + 1; i++) {
+        const cur = parseFloat(getComputedStyle(k).fontSize) / parseFloat(getComputedStyle(d).fontSize);
+        const next = Math.max(1, cur * (d.clientWidth - 1) / d.scrollWidth);
+        if (next >= cur - 0.001) break;
+        k.style.fontSize = next.toFixed(3) + 'em';
+      }
+    });
+  }
+  const fitAll = root => { fit(root); fitDisplay(root); };
+  let t; const later = () => { clearTimeout(t); t = setTimeout(() => fitAll(), 150); };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => fitAll()); else fitAll();
+  window.addEventListener('load', () => fitAll()); window.addEventListener('resize', later);
+  document.addEventListener('toggle', e => { fitAll(e.target); later(); }, true);   // later: maths auto-rendered on open
   new MutationObserver(later).observe(document.body, {subtree: true, attributes: true, attributeFilter: ['hidden']});   // a solution unlocked (try-first) or revealed
-  window.flFitMath = fit;
+  window.flFitMath = fitAll;
 })();
 
 /* 9. Tasks beside the theory (teacher 2026-11-05: "Oikealla puolella näkyisi tehtävät ja vasemmalla puolella teoria";
