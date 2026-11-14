@@ -235,7 +235,7 @@ So the justified conclusion is that at setting 4 the absolute temperature of the
 **Conversions:** $\lambda_\text{max} = 350\,\text{nm} = 350 \cdot 10^{-9}\,\text{m}$
 **Substitution:** $T = \dfrac{2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{350 \cdot 10^{-9}\,\text{m}} = 8280\,\text{K}$
 **Answer:** $8.3 \cdot 10^{3}\,\text{K}$, two significant figures like the wavelength $350\,\text{nm}$.
-**Reasonableness:** The star is hotter than the Sun ($5772\,\text{K}$), and its peak is at a shorter wavelength than the Sun's $502\,\text{nm}$, as it should be. The wavelength is about $0.7$ times the Sun's peak, so the temperature is about $1.43$ times as high: $1.43 \cdot 5772\,\text{K} \approx 8280\,\text{K}$.
+**Reasonableness:** The star is hotter than the Sun ($5772\,\text{K}$), and its peak is at a shorter wavelength than the Sun's $502\,\text{nm}$, as it should be. The wavelength is about $0.7$ times the Sun's peak, so the temperature is about $1.43$ times as high: $1.434 \cdot 5772\,\text{K} \approx 8280\,\text{K}$.
 
 ## fy7-9-L2-09
 **Given:** the spectrum curve in the graph; new surface temperature $T_2 = 1000\,\text{K}$; constant of Wien's displacement law $b = 2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$; the body radiates like a black body

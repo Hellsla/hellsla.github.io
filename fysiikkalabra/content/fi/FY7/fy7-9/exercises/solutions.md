@@ -235,7 +235,7 @@ Perusteltu johtopäätös on siis, että asetuksella 4 levyn absoluuttinen lämp
 **Muunnokset:** $\lambda_\text{max} = 350\,\text{nm} = 350 \cdot 10^{-9}\,\text{m}$
 **Sijoitus:** $T = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{350 \cdot 10^{-9}\,\text{m}} = 8280\,\text{K}$
 **Vastaus:** $8{,}3 \cdot 10^{3}\,\text{K}$, kaksi merkitsevää numeroa kuten aallonpituudessa $350\,\text{nm}$.
-**Järkevyys:** Tähti on kuumempi kuin Aurinko ($5772\,\text{K}$), ja sen huippu on lyhyemmällä aallonpituudella kuin Auringon $502\,\text{nm}$, kuten pitääkin. Aallonpituus on noin $0{,}7$-kertainen Auringon huippuun verrattuna, joten lämpötila on noin $1{,}43$-kertainen: $1{,}43 \cdot 5772\,\text{K} \approx 8280\,\text{K}$.
+**Järkevyys:** Tähti on kuumempi kuin Aurinko ($5772\,\text{K}$), ja sen huippu on lyhyemmällä aallonpituudella kuin Auringon $502\,\text{nm}$, kuten pitääkin. Aallonpituus on noin $0{,}7$-kertainen Auringon huippuun verrattuna, joten lämpötila on noin $1{,}43$-kertainen: $1{,}434 \cdot 5772\,\text{K} \approx 8280\,\text{K}$.
 
 ## fy7-9-L2-09
 **Annettu:** kuvaajan spektrikäyrä; uusi pintalämpötila $T_2 = 1000\,\text{K}$; Wienin siirtymälain vakio $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$; kappale säteilee kuin musta kappale
