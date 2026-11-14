@@ -311,7 +311,7 @@ The practice exam is built like the physics matriculation exam. You have six hou
 | Part II | $4$ problems out of seven | $4 \cdot 15$ p |
 | Part III | $2$ data-based problems out of three | $2 \cdot 20$ p |
 
-The maximum score of the exam is $120$ p. If you answer more problems in Part II or III than the instructions say, count only the ones you chose before opening the model answers when you assess the practice exam.
+The maximum score of the exam is $120$ p. If you answer more problems in Part II or III than the instructions say, the real exam counts the answers with the lowest scores. Do the same when you assess the practice exam: count only as many answers as the instructions allow, the ones with the lowest scores. The page does not add up the points for you.
 
 ### Points in Part I
 Each of the ten items of Part I is worth $2$ p, $20$ p in total:
