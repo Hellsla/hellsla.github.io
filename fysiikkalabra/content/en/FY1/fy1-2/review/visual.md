@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6d1679b80c1fc06e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 44b8f51fc02451ff
 
 ## Blocking
 - none
@@ -9,5 +8,8 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Word-diff of lesson, inquiry, exit ticket: wording, \tfrac{s}{c}, units on s values; no figures.py change in this part, no figure label moved, so no render.
-- Notation in changed passages is LaTeX with thin-space units; decimal comma/point correct for the language.
+- Delta round 2: opened fy1-2-theory-1280-2.png: the heading Size or distance fits its column on one line, the table keeps four columns with the header row, units upright with thin spaces.
+- Surrounding layout intact, units and powers of ten are KaTeX, no clipping.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 (English text reviewed) · accessibility 4

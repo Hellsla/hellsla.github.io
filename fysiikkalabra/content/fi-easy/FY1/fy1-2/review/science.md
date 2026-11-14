@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 170afbabe559da6d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 14d7fe4a096ab481
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- 'Maa on enintään noin 1 AU' lähempänä/kauempana: correct (Earth-Sun distance 0,983-1,017 AU), so 'noin' makes the claim more accurate.
-- t = s/c -> \tfrac{s}{c} in two feedbacks: notation only, same physics.
-- Mercury reasonableness: 3,22 min vs estimate 0,4*8,3 = 3,3 min; 'lähellä tätä arviota' is true (the old 'samaa suuruusluokkaa' was weaker).
-- Sim speed note 'sekuntia valon matka-aikaa kuluu yhdessä katselusekunnissa' describes a time-scaling factor correctly; slider and 'laskettu neljälle päivälle' wording changes carry no physics.
-- fi-easy wording is clear plain Finnish and says the same as the Finnish fix.
+- Diff: the table column heading "Koko" became "Koko tai etäisyys". This settles my earlier Polish item, since the last two rows ("Planeettojen radat" $\sim10^{12}\,\text{m}$, "Tähtien väliset matkat" $\ge10^{16}\,\text{m}$) are distances. The rows were left as they were.
+- The rows on disk (lesson.md:481–488) still match their units: fm $=10^{-15}\,\text{m}$, nm $=10^{-9}\,\text{m}$, µm $=10^{-6}\,\text{m}$, km $=10^{3}\,\text{m}$, $1\,\text{AU}\approx1{,}5\cdot10^{11}\,\text{m}$, one light-year $\approx9{,}46\cdot10^{15}\,\text{m}$.
+- No number, symbol or unit changed, so nothing needed recomputing.
+- The hash was the same at the start and at the end.

@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: eee3497ff21144ab
-Mode: delta, round 2 (label o_proxima = "etäisyys Proxima Centauriin")
+CONTENT-HASH: c47f1ae7e8ee25d5
+Mode: delta, round 2
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] Suuruusluokka paragraph — "kerroin" and "$n$" are not tied to the form $a \cdot 10^{n}$ in the same sentence, so the new rule sentences are slightly abstract for S2 readers — start with "Kirjoita luku muotoon $a \cdot 10^{n}$. Jos kerroin $a$ on alle noin 3, ..."
 
 ## Checked
-- fy1-1-sim-390.png, fy1-1-sim-1280.png, fy1-1-lab-1280.png: layout intact (these default captures do not show the Proxima view).
-- Own render of the Proxima view (jump select, 390 and 1280 px): the longer label sits in the row with "Oort-pilven säde" and "Orionin sumu" without overlap or clipping; at 390 px the labels are shrunk but legible and the gaps are small but clear. The text reads correctly in Finnish.
+- fy1-1-theory-1280-1.png: the two new rule sentences render cleanly ($10^{n}$, $10^{n+1}$ upright, correct superscripts), the paragraph is still short and readable, the examples and the figure beside the previous section kept their layout.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

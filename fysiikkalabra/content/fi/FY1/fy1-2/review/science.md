@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 57593c472c0d402a
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 8d3fea90beacd643
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- 'Maa on enintään noin 1 AU' lähempänä/kauempana: correct (Earth-Sun distance 0,983-1,017 AU), so 'noin' makes the claim more accurate.
-- t = s/c -> \tfrac{s}{c} in two feedbacks: notation only, same physics.
-- Mercury reasonableness: 3,22 min vs estimate 0,4*8,3 = 3,3 min; 'lähellä tätä arviota' is true (the old 'samaa suuruusluokkaa' was weaker).
-- Sim speed note 'sekuntia valon matka-aikaa kuluu yhdessä katselusekunnissa' describes a time-scaling factor correctly; slider and 'laskettu neljälle päivälle' wording changes carry no physics.
+- Diff (lesson.md:481): the column heading "Koko" → "Koko tai etäisyys". This fixes my earlier Polish point: the rows "Planeettojen radat" (about 10¹² m) and "Tähtien välimatkat" (10¹⁶ m and more) are distances, and the other four rows are sizes. Every value and unit equation in the table is unchanged and still right.
+- The heading agrees with the paragraph after it, which gives the sizes of the H atom (0,11 nm) and the proton (1,7 fm) and says that AU and the light-year are defined in metres.
+- No other line differs from the version I passed (3b2542ea34316c42), apart from teacher-approved figures.
+- The hash was the same at the start and at the end.

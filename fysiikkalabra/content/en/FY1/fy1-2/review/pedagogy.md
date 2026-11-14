@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 6d1679b80c1fc06e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 44b8f51fc02451ff
 
 ## Blocking
 - none
 
 ## Polish
-- 'sekuntia valon matka-aikaa kuluu yhdessä katselusekunnissa' is a little clumsy Finnish but understandable.
+- none
 
 ## Checked
-- Wording of the sim's 'seconds of light travel time per viewing second' (clearer than 'animation seconds'); 'noin' before the 1 px limit; \tfrac{s}{c} in feedback; 'close to this estimate' replaces 'same order of magnitude' (more accurate for the checked result); 'calculated for four days'; Karman label; speed label. No change to prediction/commit flow or inquiry mechanics.
-- Language version en judged from the word-level diff against origin/main; the fi, en and fi-easy changes correspond.
+- "Size or distance" is a more accurate heading: the table mixes sizes (nucleus, atom) with distances (astronomical units, light years), so the heading fits every row.
+- Column names still parallel the other headings (Structure, Unit, Value of the unit); the lead-in sentence and following example read unchanged.
+- No number, unit or symbol changed; nothing else touched.
