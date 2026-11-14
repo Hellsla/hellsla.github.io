@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a57efd1302bef73d
+CONTENT-HASH: 660f444084d55575
 SCOPE: delta added-exercise from 5e7e04fa3110d92d base 5a45b28682e8
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy8-1-L2-09 Vastaus — "kolme merkitsevää numeroa; luettu taajuus on kahden merkitsevän numeron tarkkuudella" contradicts itself — say the answer is $430\,\text{nm}$ (two figures) or explain that 428 is an intermediate value.
-- [Minor] fy8-1-L2-08 Kaava — the check line is more than the task needs; fine as is.
+(none new; the round-1 Minor on the small figure in the task card stands)
 
 ## Checked
-- review/shots/fy8-1-open-exercises-1280-11.png (L1-10 hint, full solution), -L2-1280-12, -13, -14 (L2-08 and L2-09 with figure kuvaaja-ab, full solutions). Captures are 1280 px with every solution open; 390 px not opened, chains wrap by the shared mathlayout.
-- Figure kuvaaja-ab: axes with units, A and B distinct, cut-off points marked, readable ticks; values 2,7 eV and 7,0 · 10^14 Hz readable from it.
+- Own scratch captures of the L2-08 card with every solution open at 360 and 390 px (fi-easy), read in full from the preview build; review/shots not used.
+- Substitution row now /bin/bash.4136 · (12 − 5.56) = 2.66$ and splits into two aligned rows; no formula in the card is wider than the card at 360 or 390 px (measured in the browser); the Conversions and Reasonableness lines read cleanly, the unseen 2.3 eV is gone.
+- Figure kuvaaja-ab seen in the card: axes, units, grid, A and B distinct.
+- L1-10 and L2-09 were passed in round 1 and are unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

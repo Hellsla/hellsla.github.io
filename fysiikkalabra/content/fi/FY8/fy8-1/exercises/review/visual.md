@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6252f2afbde508b5
+CONTENT-HASH: 8dc2567292c69c38
 SCOPE: delta added-exercise from 5b627e2749906f73 base 5a45b28682e8
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy8-1-L1-10 Vastaus — "Irrotustyö 3,20 eV on MAFY-taulukon Irrotustöitä arvo" reads clumsily — "...taulukon *Irrotustöitä*-kohdan arvo kalsiumille".
-- [Minor] fy8-1-L2-08/09 solutions — answer line gives 2,7 eV while the Sijoitus line ends 2,66 eV; clear, only mildly inconsistent presentation.
+(none new; the round-1 Minor on the small figure in the task card stands)
 
 ## Checked
-- 1280 px open-state captures: L1 part 10-11 (1-10 task, hint, solution), L2 parts 11-13 (1-18 and 1-19 with the figure kuvaaja-ab, both solutions).
-- Figure kuvaaja-ab: axes with units, ticks, gridlines, A and B distinct and labelled, no values given away; same figure in both tasks, set reads as one.
-- Maths: chains aligned, units upright, decimal comma, answers set apart. Layout at 360 px relied on the packet's clean check.
+- Own scratch captures of the L2-08 card with every solution open at 360 and 390 px (fi), read in full from the preview build; review/shots not used.
+- Substitution row now /bin/bash.4136 · (12 − 5.56) = 2.66$ and splits into two aligned rows; no formula in the card is wider than the card at 360 or 390 px (measured in the browser); the Conversions and Reasonableness lines read cleanly, the unseen 2.3 eV is gone.
+- Figure kuvaaja-ab seen in the card: axes, units, grid, A and B distinct.
+- L1-10 and L2-09 were passed in round 1 and are unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
