@@ -57,7 +57,13 @@ tehdään yksin ja yhdistetään ennen muita.
 
 ## 6. Kuvatehtävät FY8, FY9, FY10 ja FY14, taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13 ja 2026-11-14)
 
-Varattu: claude/fy8-kuva-taulukkotehtavat (FY8)
+Varattu: claude/fy8-kuva-taulukkotehtavat (FY8, erä 1: fy8-1…3, PR #590)
+
+FY8 erissä (koordinaattori 2026-11-14; erä noin 3–4 lukua, jotta budjetti riittää kehittäjille ja täysille
+katselmoinneille): erä 1 fy8-1…3 (#590: fy8-1 +3, fy8-2 +2 tehtävää, fy8-3:ssa jo kaksi kuvatehtävää; MAFY: fy8-1),
+erä 2 fy8-4…6, erä 3 fy8-7…9, erä 4 fy8-10…12, erä 5 fy8-13…16. MAFY-taulukkotehtävä noin joka kolmanteen lukuun
+(ehdotus fy8-4, 7, 10, 13 ja 16, arvot luetaan mafytaulukot.fi:stä riveinä `docs/mafy-arvot.tsv`:hen).
+Tämä kohta jää, kunnes FY9, FY10 ja FY14 on tehty.
 
 Sama tahti kuin FY4:stä alkaen: jokaisessa luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka
 kolmannessa luvussa (#521, #528). FY10:een ja FY14:ään ei lisätä taulukkotehtäviä, vain kuvatehtävät (opettaja
