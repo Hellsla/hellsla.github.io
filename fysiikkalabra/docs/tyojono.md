@@ -18,6 +18,10 @@ FY1–FY9 on tehty (#501, #522, #527, #529, #572, #578, #580, #583). FY5:ssä F 
 Korjaus on tehty (PR #587): `scripts/kaavat.py` lukee rivinvaihdon välin `\\[4pt]` osaksi rivinvaihtoa, ja
 `docs/*/kaavanimet.tsv`:stä on poistettu `[Npt]`-etuliitteet. Se ei muuta yhdenkään katselmoinnin tilaa (`reviews.py
 verify` samoin ennen ja jälkeen; tiiviste on aina tekstin oma, kaavat.canonical vain vertaa kahta versiota).
+FY8:n kuusi `\\[Npt]`-lohkoa (fy8-3, 4, 8, 10, 15, 16) ovat Sijoitus-laskuketjuja ja jäävät nimeämättä, kuten FY4–FY7:n
+ketjut (koordinaattorin päätös opettajan valtuutuksella 14.11); FY8 on valmis. Tarkistus: fy8-10:ssä sidosenergia ja Q-arvo
+ja fy8-15:ssä Q-arvo on nimettynä rivinä samalla tunnilla; fy8-4:ssä E = hf (= hc/λ) on vain kaavan p = E/c = h/λ
+selityksessä ja ketjussa, nimettynä rivinä se on fy8-1:ssä (fotonin energia). Nimeämistä ei tehdä tässä PR:ssä.
 Jäljellä: nimeä FY7:n neljä MAFY-kaavaa (fy7-7 sinimuotoinen vaihtojännite ja teholliset arvot, fy7-8 P = UI, fy7-15
 Brewsterin laki; lista #580:n kuvauksessa) vasta, kun FY7:n esimerkkikoe (kohta 9, #586) on yhdistetty
 (sama kurssi ei kulje kahdessa ketjussa). Nimeämisessä `kaavat.py write` ja `reviews.py carry` (formula-names).
