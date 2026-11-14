@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9db846839b710c9f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 64c3df380b23920f
 
 ## Blocking
 - none
@@ -9,4 +8,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Delta: 16-3 solution (L1-03, Principle) at 1280 px, fi-easy: layout intact. L2-07 task, its solution Principle and the choice feedback (shown only after a click) were not opened in a capture; judged from the diff, one wording change each, no layout risk.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
