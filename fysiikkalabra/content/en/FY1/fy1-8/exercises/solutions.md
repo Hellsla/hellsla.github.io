@@ -188,8 +188,8 @@
 **Given:** timing uncertainty $\Delta t = 0.2\,\text{s}$, largest allowed relative uncertainty $\varepsilon_\text{max} = 5\,\% = 0.05$; from the table (MAFY table, Äänen nopeuksia eri väliaineissa, air $20\,{}^\circ\text{C}$) the speed of sound $v = 343.4\,\text{m/s}$
 **Find:** shortest measured distance $s$ in $\text{km}$
 **Principle:** The relative uncertainty is $\Delta t : t$, and it must be at most $\varepsilon_\text{max}$. So the measured time must be at least $\Delta t : \varepsilon_\text{max}$. Sound travels at a constant speed, so the distance for this time is $s = vt$.
-**Formula:** $t_\text{min} = \dfrac{\Delta t}{\varepsilon_\text{max}}$ and $s = vt_\text{min}$
+**Formula:** $\begin{aligned} t_\text{min} &= \dfrac{\Delta t}{\varepsilon_\text{max}} \\ s &= vt_\text{min} \end{aligned}$
 **Conversions:** $1\,\text{km} = 1000\,\text{m}$, so $s$ is converted from metres to kilometres by dividing by $1000$.
 **Substitution:** $t_\text{min} = \dfrac{0.2\,\text{s}}{0.05} = 4.0\,\text{s}$ and $s = 343.4\,\tfrac{\text{m}}{\text{s}} \cdot 4.0\,\text{s} = 1373.6\,\text{m} = 1.3736\,\text{km}$
-**Answer:** $1.4\,\text{km}$ (more precisely $1.37\,\text{km}$), two significant figures as in the uncertainty $0.2\,\text{s}$. The answer is accepted within about $\pm 4\,\%$.
+**Answer:** $1.4\,\text{km}$ (more precisely $1.37\,\text{km}$), a design estimate given to practical precision and rounded up so that the $5\,\%$ limit is surely met. The answer is accepted within about $\pm 4\,\%$.
 **Reasonableness:** Check backwards: $0.2\,\text{s} : 4.0\,\text{s} = 0.05 = 5\,\%$. Sound travels about $1.4\,\text{km}$ in four seconds, so with hand timing the distance has to be long.

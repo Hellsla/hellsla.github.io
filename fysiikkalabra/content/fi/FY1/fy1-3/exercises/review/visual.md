@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3e5427fe956328a7
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 6d3c28b642ef74e0
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- none (round 1 polish done: the Δx line is now its own paragraph, "Lisäksi:").
 
 ## Checked
-- fy1-3-L3-05: Periaate now names the check as a simplified comparison of the stated uncertainty estimates; Vastaus says the results are not consistent per these estimates, the estimates are not hard limits and separation alone does not decide statistical significance.
-- Gap 0.04 g/cm³ and intervals 2,69–2,79 / 2,55–2,65 unchanged and correct.
-- Language version fi judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-3-open-exercises-1280-9 and -10: task 3-9 and its solution; Kaava now aligned with \text{poikkeama}, Sijoitus rows aligned at =, Vastaus with sig-fig reason, separate Lisäksi paragraph, Järkevyys; solution layout is clean and inside the card.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

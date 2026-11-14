@@ -229,7 +229,6 @@
     "stage_tarkista": "Testaa ja arvioi",
     "nav_tarkista": "Testaa ja arvioi",
     "lead_sovella": "Kun olet opiskellut luvun teorian, siirry ohjattuihin esimerkkeihin. Ensimmäisessä seuraat mallilaskua vaihe vaiheelta, seuraavissa teet valinnat itse, ja vihjeet auttavat, jos jäät jumiin.",
-    "lead_tarkista": "Kokeile ensin, mitä osaat ilman apua: saat jokaisesta tehtävästä palautteen ja ehdotuksen, mitä kerrata. Arvioi sen jälkeen luvun tavoitteet. Tämä ei ole koe.",
     "example_n": "Esimerkki {{n}}",
     "task_choice": "Käsitetehtävä",
     "task_numeric": "Laskutehtävä",
@@ -292,7 +291,6 @@
     "learn": "Tällä tunnilla opit",
     "prior": "Pohjatiedot",
     "prior_chapter": "luku",
-    "core_path": "<strong>Ydinpolku:</strong> etene vaiheiden mukaan. Ydinpolkuun kuuluvat laskujen lisäksi tutkimukset, selitykset ja kuvaajat. <em>Valinnainen</em>-merkityt tehtävät tarjoavat lisäharjoittelua. <span class=\"path-count\">Valinnaisia tehtäviä {{n}}.</span>",
     "revise": "Muuttaisitko ennustettasi?",
     "revise_no": "En",
     "revise_yes": "Kyllä",
@@ -430,7 +428,6 @@
     "ra_fallback": "Puheääntä ei voitu ladata, joten selain lukee laitteen omalla äänellä.",
     "stage_done": "tehty",
     "toc_stage": "Vaihe",
-    "ex_core_done": "Ydintehtävät {{n}}/{{total}} tehty",
     "ex_level_done": "{{n}}/{{total}} tehty",
     "ra_settings": "Kuuntelun asetukset",
     "ra_no_lang_voice": "Laitteessa ei ole suomenkielistä puheääntä.",
@@ -3263,6 +3260,8 @@
     ],
     "retry_title": "Yritä uudelleen itse",
     "retry_text": "Jos katsoit malliratkaisun, kokeile ratkaista tehtävä uudelleen ilman sitä.",
+    "core_h": "Ydinpolku ja valinnaiset tehtävät",
+    "core_text": "Etene luvun vaiheiden mukaan. Ydinpolkuun kuuluvat laskujen lisäksi tutkimukset, selitykset ja kuvaajat. Valinnainen-merkityt tehtävät tarjoavat lisäharjoittelua.",
     "tips_h": "Viisi vinkkiä fysiikan opiskeluun",
     "tips": [
       {

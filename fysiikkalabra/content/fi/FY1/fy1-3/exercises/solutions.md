@@ -204,8 +204,10 @@
 **Annettu:** mittaukset $1{,}004$; $1{,}012$; $1{,}008$; $1{,}014$; $1{,}012$ (yksikössä $\text{g/cm}^3$); taulukosta (MAFY-taulukko, veden tiheys eri lämpötiloissa) $\rho_\text{taulukko} = 0{,}998206\,\text{g/cm}^3$ lämpötilassa $20\,{}^\circ\text{C}$
 **Kysytty:** keskiarvon $\bar{x}$ prosentuaalinen poikkeama taulukon arvosta
 **Periaate:** Mittaustulos on keskiarvo $\bar{x}$, ja sitä verrataan tunnettuun taulukon arvoon. Poikkeama suhteutetaan taulukon arvoon ja ilmoitetaan prosentteina.
-**Kaava:** $\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{5}$ ja poikkeama $= \dfrac{\bar{x} - \rho_\text{taulukko}}{\rho_\text{taulukko}}\cdot100\,\%$
+**Kaava:** $\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{5}$ ja $\text{poikkeama} = \dfrac{\bar{x} - \rho_\text{taulukko}}{\rho_\text{taulukko}}\cdot100\,\%$
 **Muunnokset:** Kaikki tiheydet ovat yksikössä $\text{g/cm}^3$, joten muunnoksia ei tarvita; poikkeama on yksikötön suhde, joka kerrotaan sadalla prosenteiksi.
-**Sijoitus:** $\bar{x} = \dfrac{1{,}004 + 1{,}012 + 1{,}008 + 1{,}014 + 1{,}012}{5}\,\dfrac{\text{g}}{\text{cm}^3} = 1{,}010\,\dfrac{\text{g}}{\text{cm}^3}$ ja poikkeama $= \dfrac{1{,}010 - 0{,}998206}{0{,}998206}\cdot100\,\% = 1{,}18\,\%$
-**Vastaus:** poikkeama on $1{,}2\,\%$ (laskettu arvo $1{,}18\,\%$). Taulukon arvo on MAFY-taulukosta (veden tiheys eri lämpötiloissa); vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella. Virhearvio on $\Delta x = \dfrac{1{,}014 - 1{,}004}{2}\,\dfrac{\text{g}}{\text{cm}^3} = 0{,}005\,\dfrac{\text{g}}{\text{cm}^3}$, joten väli $\bar{x} \pm \Delta x$ on $1{,}005\ldots1{,}015\,\text{g/cm}^3$ eikä sisällä taulukon arvoa: mittauksissa on todennäköisesti systemaattinen virhe.
+**Sijoitus:** $\bar{x} = \dfrac{1{,}004 + 1{,}012 + 1{,}008 + 1{,}014 + 1{,}012}{5}\,\dfrac{\text{g}}{\text{cm}^3} = 1{,}010\,\dfrac{\text{g}}{\text{cm}^3}$ ja $\text{poikkeama} = \dfrac{1{,}010 - 0{,}998206}{0{,}998206}\cdot100\,\% = 1{,}18\,\%$
+**Vastaus:** $1{,}2\,\%$ (tarkemmin $1{,}18\,\%$), kaksi merkitsevää numeroa, koska erotuksella $1{,}010\,\text{g/cm}^3 - 0{,}998\,\text{g/cm}^3 = 0{,}012\,\text{g/cm}^3$ on kaksi merkitsevää numeroa. Taulukon arvo on MAFY-taulukosta (veden tiheys eri lämpötiloissa); vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+
+Lisäksi: virhearvio on $\Delta x = \tfrac{1{,}014 - 1{,}004}{2}\,\text{g/cm}^3 = 0{,}005\,\text{g/cm}^3$, joten väli $\bar{x} \pm \Delta x$ on $1{,}005\ldots1{,}015\,\text{g/cm}^3$ eikä sisällä taulukon arvoa: mittauksissa on todennäköisesti systemaattinen virhe.
 **Järkevyys:** Kaikki mittaukset ovat taulukon arvoa suurempia, ja poikkeama on yli prosentin, mutta veden tiheys on likimain $1\,\text{g/cm}^3$, joten keskiarvo on oikean kokoinen ja poikkeama pieni.

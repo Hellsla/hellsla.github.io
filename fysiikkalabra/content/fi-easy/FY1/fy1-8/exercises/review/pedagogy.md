@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 6472db20fc2ac7c5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-11-09: diff since origin/main only)
+CONTENT-HASH: 077bbc73147433b4
+SCOPE: delta added-exercise from de998fe1e15345d2 base 81db4a6fd727
 
 ## Blocking
 - none
@@ -9,6 +9,6 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi"; FY1 targeted fixes 2026-1
 - none
 
 ## Checked
-- fy1-8-L3-04: the general rule 'a difference can be shown only if the intervals do not overlap' is removed; Periaate now states the data-specific conclusion (intervals overlap, no reliable conclusion, hand-timing uncertainty to be considered); Järkevyys softened to 'ei erotu luotettavasti'.
-- d = 0,04 s, k = 3,75 ≈ 3,8 and the overlap 3,08–3,12 s unchanged.
-- Language version fi-easy judged from the diff against origin/main; notation (LaTeX numbers with units, decimal comma/point, \cdot) checked in changed lines.
+- fy1-8-L1-10: unit km now LaTeX; formula aligned in two rows; readable.
+- Rounding explanation (design estimate, rounded up so the 5 % limit holds) is sound: 1,4 km > 1,3736 km, within tolerance.
+- Arithmetic 0,2/0,05 = 4,0 s, 343,4 m/s * 4,0 s = 1,3736 km verified.
