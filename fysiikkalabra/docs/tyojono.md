@@ -42,14 +42,6 @@ yhteisessä tyylissä (jaettu: yksin) tai taulukon rakenteessa (sisältö, ei ka
 voidaan tehdä, kun mikään jaettu muutos ei ole auki. #579:n koko sivuston ajossa (390 ja 1280 px) samoin
 `ahjo-airbit-kokoaminen`, `ahjo-airbit-ohjaus` ja `ahjo-fpv-lento`: korjataan samassa PR:ssä.
 
-## 4c. fy8-3: Tutki-kokeet koe-2 ja koe-3 kaatuvat test_inquiryssä (2026-11-14)
-
-Varattu: claude/inquiry-koe-avain
-
-#579:n koko sivuston `test_inquiry.py`-ajossa fy8-3:n koe-2 ja koe-3 epäonnistuvat myös puhtaalla mainilla (piilevä
-vika: PR:n CI testaa vain muuttuneet sivut). Selvitä syy ja korjaa; jos korjaus on luvun sisällössä, katselmointi
-`reviews.py scope`:n mukaan. Pieni, sisältö (FY8) tai jaettu sen mukaan, missä vika on.
-
 ## 5. CI:n toistettavuus (2026-11-13)
 
 Tapa ajaa selaintarkistukset CI:n kontissa (`mcr.microsoft.com/playwright/python:v1.65.0-noble`) paikallisesti, ja
