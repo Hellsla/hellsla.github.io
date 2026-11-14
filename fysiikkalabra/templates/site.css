@@ -883,7 +883,7 @@ table.exp-table{margin:.6rem 0 .3rem}table.exp-table caption{font:600 var(--fs-s
 table.exp-table tbody:empty::after{content:"";display:block;height:.3rem}
 table.exp-table{min-width:min(100%,17rem)}   /* teacher 2026-11-13: the reading table is at least as wide as its caption and its columns, so "Simulaation lukemat" is not hyphenated over three rows */
 table.exp-table caption{hyphens:none;overflow-wrap:normal;word-break:normal}   /* a phone may wrap at a word boundary only */
-@media (min-width:30rem){table.exp-table caption{white-space:nowrap}}   /* the caption sets the table's least width, so a narrow table (two short columns) still shows "Simulaation lukemat" on one row */
+@media (min-width:30rem){.experiment table.exp-table caption{white-space:nowrap}}   /* the caption sets the table's least width, so a narrow table (two short columns) still shows "Simulaation lukemat" on one row */
 @media (min-width:48rem){table.exp-table th:first-child,table.exp-table td:first-child{min-width:4.5rem}table.exp-table th:not(:first-child),table.exp-table td:not(:first-child){min-width:3rem}}   /* a phone's table with four columns must not outgrow its box */
 .exp-status,.explain-status{font-size:var(--fs-ui);color:var(--ink-2);margin:.3rem 0 0;min-height:1.3em}
 .exp-question{margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line-2)}
