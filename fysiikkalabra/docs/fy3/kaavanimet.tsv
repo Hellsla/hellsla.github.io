@@ -58,35 +58,41 @@ fy3-5	174	= 110\,\text{J}	= 110\,\text{J}
 fy3-6	165	Q = c m \Delta T	Q = c m \Delta T	siirtynyt lämpömäärä	heat transferred	MAFY	Termodynamiikan kaavoja	MAFY: Q = CΔT = cmΔT
 fy3-6	165	\Delta T = T_\text{loppu} - T_\text{alku}	\Delta T = T_\text{final} - T_\text{initial}					
 fy3-6	172	C = c m	C = c m	lämpökapasiteetti	heat capacity	MAFY	Termodynamiikan kaavoja	
-fy3-6	178	c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)	c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)					
-fy3-6	184	c_1 m_1 T_1 - c_1 m_1 T	c_1 m_1 T_1 - c_1 m_1 T					
-fy3-6	184	= c_2 m_2 T - c_2 m_2 T_2	= c_2 m_2 T - c_2 m_2 T_2					
-fy3-6	184	[6pt] c_1 m_1 T_1 + c_2 m_2 T_2	[6pt] c_1 m_1 T_1 + c_2 m_2 T_2					
-fy3-6	184	= c_1 m_1 T + c_2 m_2 T	= c_1 m_1 T + c_2 m_2 T					
-fy3-6	184	= (c_1 m_1 + c_2 m_2)\,T	= (c_1 m_1 + c_2 m_2)\,T					
-fy3-6	194	T = \frac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}	T = \frac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}					
-fy3-6	261	c_\text{m} m_\text{m} (T_\text{m} - T)	c_\text{m} m_\text{m} (T_\text{m} - T)					
-fy3-6	261	= c_\text{v} m_\text{v} (T - T_\text{v})	= c_\text{w} m_\text{w} (T - T_\text{w})					
-fy3-6	261	[6pt] c_\text{m} = \frac{c_\text{v} m_\text{v} (T - T_\text{v})}{m_\text{m} (T_\text{m} - T)}	[6pt] c_\text{m} = \frac{c_\text{w} m_\text{w} (T - T_\text{w})}{m_\text{m} (T_\text{m} - T)}					
-fy3-6	276	Q_\text{v} = c_\text{v} m_\text{v} (T - T_\text{v})	Q_\text{w} = c_\text{w} m_\text{w} (T - T_\text{w})					
-fy3-6	276	= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}300\,\text{kg} \cdot 4{,}5\,\text{K}	= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.300\,\text{kg} \cdot 4.5\,\text{K}					
-fy3-6	276	= 5656{,}5\,\text{J}	= 5656.5\,\text{J}					
-fy3-6	276	[6pt] c_\text{m} = \frac{Q_\text{v}}{m_\text{m} (T_\text{m} - T)}	[6pt] c_\text{m} = \frac{Q_\text{w}}{m_\text{m} (T_\text{m} - T)}					
-fy3-6	276	= \frac{5656{,}5\,\text{J}}{0{,}200\,\text{kg} \cdot 75{,}5\,\text{K}}	= \frac{5656.5\,\text{J}}{0.200\,\text{kg} \cdot 75.5\,\text{K}}					
-fy3-6	276	= 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}	= 374.6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}					
-fy3-6	297	1{,}0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T)	1.0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T)					
-fy3-6	297	= 3{,}0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C})	= 3.0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C})					
-fy3-6	297	[6pt] 80\,{}^\circ\text{C} - T = 3T - 60\,{}^\circ\text{C}	[6pt] 80\,{}^\circ\text{C} - T = 3T - 60\,{}^\circ\text{C}					
-fy3-6	297	140\,{}^\circ\text{C} = 4T	140\,{}^\circ\text{C} = 4T					
-fy3-6	297	T = 35\,{}^\circ\text{C}	T = 35\,{}^\circ\text{C}					
+fy3-6	178	Q_\text{luovutettu} = Q_\text{vastaanotettu}	Q_\text{given out} = Q_\text{received}					
+fy3-6	182	c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)	c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)					
+fy3-6	188	c_1 m_1 T_1 - c_1 m_1 T	c_1 m_1 T_1 - c_1 m_1 T					
+fy3-6	188	= c_2 m_2 T - c_2 m_2 T_2	= c_2 m_2 T - c_2 m_2 T_2					
+fy3-6	188	[6pt] c_1 m_1 T_1 + c_2 m_2 T_2	[6pt] c_1 m_1 T_1 + c_2 m_2 T_2					
+fy3-6	188	= c_1 m_1 T + c_2 m_2 T	= c_1 m_1 T + c_2 m_2 T					
+fy3-6	188	= (c_1 m_1 + c_2 m_2)\,T	= (c_1 m_1 + c_2 m_2)\,T					
+fy3-6	198	T = \frac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}	T = \frac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}					
+fy3-6	265	Q_\text{m} = Q_\text{v}	Q_\text{m} = Q_\text{w}					
+fy3-6	265	[6pt] c_\text{m} m_\text{m} (T_\text{m} - T)	[6pt] c_\text{m} m_\text{m} (T_\text{m} - T)					
+fy3-6	265	= c_\text{v} m_\text{v} (T - T_\text{v})	= c_\text{w} m_\text{w} (T - T_\text{w})					
+fy3-6	265	[6pt] c_\text{m} = \frac{c_\text{v} m_\text{v} (T - T_\text{v})}{m_\text{m} (T_\text{m} - T)}	[6pt] c_\text{m} = \frac{c_\text{w} m_\text{w} (T - T_\text{w})}{m_\text{m} (T_\text{m} - T)}					
+fy3-6	281	Q_\text{v} = c_\text{v} m_\text{v} (T - T_\text{v})	Q_\text{w} = c_\text{w} m_\text{w} (T - T_\text{w})					
+fy3-6	281	= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}300\,\text{kg} \cdot 4{,}5\,\text{K}	= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.300\,\text{kg} \cdot 4.5\,\text{K}					
+fy3-6	281	= 5656{,}5\,\text{J}	= 5656.5\,\text{J}					
+fy3-6	281	[6pt] c_\text{m} = \frac{Q_\text{v}}{m_\text{m} (T_\text{m} - T)}	[6pt] c_\text{m} = \frac{Q_\text{w}}{m_\text{m} (T_\text{m} - T)}					
+fy3-6	281	= \frac{5656{,}5\,\text{J}}{0{,}200\,\text{kg} \cdot 75{,}5\,\text{K}}	= \frac{5656.5\,\text{J}}{0.200\,\text{kg} \cdot 75.5\,\text{K}}					
+fy3-6	281	= 374{,}6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}	= 374.6\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}					
+fy3-6	302	Q_\text{luovutettu} = Q_\text{vastaanotettu}	Q_\text{given out} = Q_\text{received}					
+fy3-6	302	[6pt] c \cdot 1{,}0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T)	[6pt] c \cdot 1.0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T)					
+fy3-6	302	= c \cdot 3{,}0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C})	= c \cdot 3.0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C})					
+fy3-6	302	[6pt] 1{,}0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T)	[6pt] 1.0\,\text{kg} \cdot (80\,{}^\circ\text{C} - T)					
+fy3-6	302	= 3{,}0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C})	= 3.0\,\text{kg} \cdot (T - 20\,{}^\circ\text{C})					
+fy3-6	302	[6pt] 80\,{}^\circ\text{C} - T = 3T - 60\,{}^\circ\text{C}	[6pt] 80\,{}^\circ\text{C} - T = 3T - 60\,{}^\circ\text{C}					
+fy3-6	302	140\,{}^\circ\text{C} = 4T	140\,{}^\circ\text{C} = 4T					
+fy3-6	302	T = 35\,{}^\circ\text{C}	T = 35\,{}^\circ\text{C}					
 fy3-7	187	Q = s m	Q = s m	sulamislämpö	heat of fusion	MAFY	Termodynamiikan kaavoja	
 fy3-7	187	Q = r m	Q = r m	höyrystymislämpö	heat of vaporisation	MAFY	Termodynamiikan kaavoja	
-fy3-7	239	Pt = r\,\Delta m	Pt = r\,\Delta m					
-fy3-7	239	r = \frac{Pt}{\Delta m}	r = \frac{Pt}{\Delta m}					
-fy3-7	253	r = \frac{Pt}{\Delta m}	r = \frac{Pt}{\Delta m}					
-fy3-7	253	= \frac{1000\,\text{W} \cdot 300\,\text{s}}{0{,}128\,\text{kg}}	= \frac{1000\,\text{W} \cdot 300\,\text{s}}{0.128\,\text{kg}}					
-fy3-7	253	= \frac{300\,000\,\text{J}}{0{,}128\,\text{kg}}	= \frac{300\,000\,\text{J}}{0.128\,\text{kg}}					
-fy3-7	253	= 2\,343\,750\,\tfrac{\text{J}}{\text{kg}}	= 2\,343\,750\,\tfrac{\text{J}}{\text{kg}}					
+fy3-7	240	Q_\text{kuum} = Q_\text{h}	Q_\text{h} = Q_\text{v}					
+fy3-7	240	[6pt] Pt = r\,\Delta m	[6pt] Pt = r\,\Delta m					
+fy3-7	240	r = \frac{Pt}{\Delta m}	r = \frac{Pt}{\Delta m}					
+fy3-7	255	r = \frac{Pt}{\Delta m}	r = \frac{Pt}{\Delta m}					
+fy3-7	255	= \frac{1000\,\text{W} \cdot 300\,\text{s}}{0{,}128\,\text{kg}}	= \frac{1000\,\text{W} \cdot 300\,\text{s}}{0.128\,\text{kg}}					
+fy3-7	255	= \frac{300\,000\,\text{J}}{0{,}128\,\text{kg}}	= \frac{300\,000\,\text{J}}{0.128\,\text{kg}}					
+fy3-7	255	= 2\,343\,750\,\tfrac{\text{J}}{\text{kg}}	= 2\,343\,750\,\tfrac{\text{J}}{\text{kg}}					
 fy3-8	173	l = l_0(1 + \alpha \Delta T)	l = l_0(1 + \alpha \Delta T)	pituuden lämpölaajeneminen	linear thermal expansion	MAFY	Termodynamiikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12
 fy3-8	179	\Delta l = l - l_0 = \alpha l_0 \Delta T	\Delta l = l - l_0 = \alpha l_0 \Delta T					
 fy3-8	185	V = V_0(1 + \gamma \Delta T)	V = V_0(1 + \gamma \Delta T)	tilavuuden lämpölaajeneminen	volume thermal expansion	MAFY	Termodynamiikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12

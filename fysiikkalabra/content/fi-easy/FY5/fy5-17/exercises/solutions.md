@@ -215,12 +215,12 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Järkevyys:** Kaiun kulkema matka on $1402{,}4\,\text{m/s} \cdot 0{,}020\,\text{s} = 28\,\text{m}$, josta puolet on $14\,\text{m}$. Kudoksen arvolla $1540\,\text{m/s}$ tulos olisi $15{,}4\,\text{m}$. Se on noin $10\,\%$ liikaa, joten oikean väliaineen arvo on tärkeä.
 
 ## fy5-17-L2-09
-**Annettu:** kuvasta kaikujen hetket, äänen nopeus kudoksessa $v = 1540\,\text{m/s}$
-**Kysytty:** kaikuja B ja C vastaavien rajapintojen välisen kerroksen paksuus $\Delta d$ senttimetreinä
-**Periaate:** Jokainen kaiku tulee yhdeltä rajapinnalta, ja pulssi kulkee rajapintaan ja takaisin. Kerroksen paksuus on kahden syvyyden erotus. Se saadaan siksi kaikujen hetkien erotuksesta samalla kaavalla kuin syvyys.
-**Kuvaajan lukeminen:** Kaiku B on aika-akselilla kohdassa $t_\text{B} = 50\,\mu\text{s}$ ja korkea kaiku C kohdassa $t_\text{C} = 90\,\mu\text{s}$. Ne luetaan piikkien kohdalta apuviivoja vasten. Kerroksessa kulunut aika on $t_\text{C} - t_\text{B} = 40\,\mu\text{s}$.
-**Kaava:** $d = \dfrac{v t}{2}$, joten $\Delta d = d_\text{C} - d_\text{B} = \dfrac{v\,(t_\text{C} - t_\text{B})}{2}$
-**Muunnokset:** $40\,\mu\text{s} = 40 \cdot 10^{-6}\,\text{s}$. Lopuksi $1\,\text{m} = 100\,\text{cm}$.
-**Sijoitus:** $\Delta d = \dfrac{1540\,\text{m/s} \cdot 40 \cdot 10^{-6}\,\text{s}}{2} = 0{,}0308\,\text{m} = 3{,}08\,\text{cm}$
-**Vastaus:** $3{,}08\,\text{cm}$, kolme merkitsevää numeroa kuten nopeudessa $1540\,\text{m/s}$.
-**Järkevyys:** Syvyydet ovat $d_\text{B} = 3{,}85\,\text{cm}$ ja $d_\text{C} = 6{,}93\,\text{cm}$. Niiden erotus on $3{,}08\,\text{cm}$. Reisi on tässä noin $7\,\text{cm}$ syvä, joten kerros mahtuu siihen. Kaiku C on viimeinen, koska sen jälkeen ei ole enää rajapintoja.
+**Annettu:** kuvasta kaiun C hetki, äänen nopeus kudoksessa $v = 1540\,\text{m/s}$
+**Kysytty:** luun pinnan syvyys $d$ ihon pinnasta senttimetreinä
+**Periaate:** Pulssi kulkee ihon pinnalla olevasta anturista rajapintaan ja takaisin. Kaiun aikana kuljettu matka on siis kaksi kertaa syvyys.
+**Kuvaajan lukeminen:** Kaiku C on korkea piikki aika-akselilla kohdassa $t = 90\,\mu\text{s}$; se luetaan piikin kohdalta apuviivoja vasten.
+**Kaava:** $d = \dfrac{v t}{2}$
+**Muunnokset:** $90\,\mu\text{s} = 90 \cdot 10^{-6}\,\text{s}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
+**Sijoitus:** $d = \dfrac{1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s}}{2} = 0{,}0693\,\text{m} = 6{,}93\,\text{cm}$
+**Vastaus:** $6{,}93\,\text{cm}$, kolme merkitsevää numeroa kuten nopeudessa $1540\,\text{m/s}$.
+**Järkevyys:** Kaiun kulkema matka on $1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s} = 13{,}9\,\text{cm}$, josta puolet on $6{,}9\,\text{cm}$. Reisiluun pinta noin seitsemän senttimetrin syvyydessä on järkevä, ja se on syvemmällä kuin kaikuja A ja B vastaavat rajapinnat.

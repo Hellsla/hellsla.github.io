@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5cd3571020c4ddc7
+CONTENT-HASH: fbb3881a3468f340
+SCOPE: delta added-exercise from 5cd3571020c4ddc7 base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
+- lessons/FY5/fy5-14/figures.py (beats_task, docstring) — docstringissä lukee 440 Hz ja 444 Hz, mutta tehtävä puhuu 523 Hz:n ääniraudasta. Kuvassa ei ole taajuuksia, joten oppilas ei näe ristiriitaa.
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: diff vs origin/main: only the text prefix 'Syventävä tehtävä.' / 'Extension task.' on L1-04, L2-03, L2-04, L2-05, L2-07, L3-01, L3-04 and L2-03's core flag removed; data, answers, solutions and answers.py unchanged. The seven are exactly the tasks that calculate a Doppler frequency, so they match the lesson's move of the formulas to Lisätiedoksi; the remaining Doppler task L1-07 (core) is qualitative (constant, higher pitch; fronts denser in front) and needs no formula. No physics changed.
-- Round 2 (commit 4ff432a8f), checked against the text only, not renders. "Voimakkain piikki" replaces the ambiguous "Korkein piikki" in the task, in statement 1's feedback and in the solution, so "korkea" no longer means both pitch and peak height. The physics is unchanged: pitch comes from f1 = 330 Hz.
-- Statement 2 ("Saman sävelen soittava huilu kuulostaa erilaiselta kuin viulu, koska sen yläsävelet ovat eri voimakkaita.") is true and no longer hedged, which removes the round-1 form cue. The statements now have no hedges at all.
-- Statement 4's feedback now ends "kasvaa äänen voimakkuus, ei korkeus", the lesson's own wording.
-- The verdicts are unchanged and right: 2 and 5 true; 1, 3 and 4 false. The three warned mistakes are still covered, and each statement's feedback gives its reason.
-- The solution matches the task (voimakkain piikki). answers.py is unchanged, and running it with python3 -I gives the same 16 numeric answers. The rest of the set is unchanged.
+- Hash oli sama alussa ja lopussa. Kierros 4: arvioin tehtävät L1-10 ja L2-08.
+- L2-08:n 531 Hz -vaihtoehdon palaute on korjattu. Arvo 8 Hz tulee nyt oikein siitä, että hiljaiset kohdat lasketaan voimakkaiksi (väli 0,125 s). Palaute selittää myös, miksi korkeampi taajuus ei sovi vahakokeeseen: erotus olisi pienentynyt ja huojunta hidastunut.
+- L2-08: f_h = 1/0,25 s = 4 Hz. Vaha laskee taajuutta ja huojunta nopeutuu, joten f_x = 523 − 4 = 519 Hz. Tehtävässä on vain yksi oikea vaihtoehto, ja jokaisen väärän vaihtoehdon palaute on oikein.
+- L1-10: f₁ = 200 Hz, joten f₇ = 1400 Hz. Inquiry ei kysy tätä suuretta, joten toistoa ei ole.
+- Kuvien lukemat ja alt-tekstit vastaavat figures.py:n dataa (piikit 200·k Hz, verhokäyrä |cos(4πt)|).

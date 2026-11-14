@@ -212,24 +212,24 @@ Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \
 
 ## fy5-6-L1-10
 **Given:** from the figure the Earth's orbit: smallest distance from the Sun $147.1\,\text{million km}$ and largest $152.1\,\text{million km}$; mass of the Sun $M = 1.99 \cdot 10^{30}\,\text{kg}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
-**Find:** the Earth's orbital speed $v$ in kilometres per second
-**Principle:** Only the Sun's gravitational force acts on the Earth, and it is the net force of the circular motion: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. The Earth's orbit is almost a circle, so the mean of the distances will do as its radius.
+**Find:** the Earth's acceleration $a$ in the unit $\text{mm/s}^2$
+**Principle:** Only the Sun's gravitational force acts on the Earth, and it is the net force of the circular motion. By Newton's second law $ma = \gamma\tfrac{Mm}{r^2}$, so the acceleration is $a = \gamma\tfrac{M}{r^2}$ and it points towards the Sun. The Earth's orbit is almost a circle, so the mean of the distances will do as its radius.
 **Reading the graph:** Under the left side of the figure are the distances of the Earth's orbit: smallest $147.1\,\text{million km}$ and largest $152.1\,\text{million km}$. The orbit and the dashed circle drawn over it cannot be told apart, so the circular model fits.
-**Formula:** $r = \dfrac{r_\text{min} + r_\text{max}}{2}$ and $v = \sqrt{\dfrac{\gamma M}{r}}$
-**Conversions:** $r = \dfrac{147.1 + 152.1}{2}\,\text{million km} = 149.6\,\text{million km} = 1.496 \cdot 10^{11}\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 1.99 \cdot 10^{30}\,\text{kg} = 1.3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2$, so $v = \sqrt{\dfrac{1.3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2}{1.496 \cdot 10^{11}\,\text{m}}} = 29\,796\,\text{m/s} = 29.796\,\text{km/s}$
-**Answer:** $29.8\,\text{km/s}$, three significant figures like the mass of the Sun.
-**Reasonableness:** The Earth's orbit is about $2\pi \cdot 1.496 \cdot 10^{11}\,\text{m} = 9.4 \cdot 10^{11}\,\text{m}$ long and a year is about $3.16 \cdot 10^{7}\,\text{s}$, so the speed is about $30\,\text{km/s}$. The result is the same as the value calculated from the period.
+**Formula:** $r = \dfrac{r_\text{min} + r_\text{max}}{2}$ and $a = \dfrac{\gamma M}{r^2}$
+**Conversions:** $r = \dfrac{147.1 + 152.1}{2}\,\text{million km} = 149.6\,\text{million km} = 1.496 \cdot 10^{11}\,\text{m}$; finally $1\,\text{mm/s}^2 = 10^{-3}\,\text{m/s}^2$.
+**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 1.99 \cdot 10^{30}\,\text{kg} = 1.3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2$, so $a = \dfrac{1.3281 \cdot 10^{20}\,\text{m}^3/\text{s}^2}{(1.496 \cdot 10^{11}\,\text{m})^2} = 5.934 \cdot 10^{-3}\,\text{m/s}^2 = 5.934\,\text{mm/s}^2$
+**Answer:** $5.93\,\text{mm/s}^2$, three significant figures like the mass of the Sun.
+**Reasonableness:** The acceleration is $\dfrac{v^2}{r} = \dfrac{(29.8 \cdot 10^{3}\,\text{m/s})^2}{1.496 \cdot 10^{11}\,\text{m}} \approx 5.9 \cdot 10^{-3}\,\text{m/s}^2$, the same as above. It is less than a thousandth of the free-fall acceleration $9.81\,\text{m/s}^2$ of the Earth, and the Sun is very far away.
 
 ## fy5-6-L1-11
-**Given:** height $h = 300\,\text{km}$; from the MAFY table (Solar System, Moon) mass $M = 7.346 \cdot 10^{22}\,\text{kg}$ and mean radius $R = 1737\,\text{km}$; $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
-**Find:** the probe's orbital speed $v$ in kilometres per second
-**Principle:** Only the Moon's gravitational force acts on the probe, and it is the net force of the circular motion: $\gamma \tfrac{Mm}{r^2} = \tfrac{mv^2}{r}$. The radius of the orbit is measured from the centre of the Moon, so $r = R + h$.
-**Formula:** $v = \sqrt{\dfrac{\gamma M}{R + h}}$
-**Conversions:** $r = 1737\,\text{km} + 300\,\text{km} = 2037\,\text{km} = 2.037 \cdot 10^{6}\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 7.346 \cdot 10^{22}\,\text{kg} = 4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2$, so $v = \sqrt{\dfrac{4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{2.037 \cdot 10^{6}\,\text{m}}} = 1551\,\text{m/s} = 1.551\,\text{km/s}$
-**Answer:** $1.55\,\text{km/s}$, three significant figures like the mass in the table. The values are from the MAFY table (Solar System, Moon); different tables give slightly different values, and the answer is accepted within about $\pm 4\,\%$.
-**Reasonableness:** Right at the surface of the Moon the speed of a circular orbit would be $\sqrt{1.62\,\text{m/s}^2 \cdot 1.737 \cdot 10^{6}\,\text{m}} \approx 1.68\,\text{km/s}$. The probe is a little higher, so its speed is a little smaller, as it should be.
+**Given:** orbit radius $r = 1840\,\text{km}$ from the centre of the Moon; from the MAFY table (Solar System, Moon) mass $M = 7.346 \cdot 10^{22}\,\text{kg}$; $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
+**Find:** the gravitational acceleration $g$ of the Moon at the orbit, in $\text{m/s}^2$
+**Principle:** The gravitational force of the Moon on a probe of mass $m$ is $F = \gamma \tfrac{Mm}{r^2}$, and the acceleration it causes is $g = \tfrac{F}{m}$; the mass $m$ of the probe cancels.
+**Formula:** $g = \dfrac{\gamma M}{r^2}$
+**Conversions:** $r = 1840\,\text{km} = 1840 \cdot 1000\,\text{m} = 1.840 \cdot 10^{6}\,\text{m}$
+**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 7.346 \cdot 10^{22}\,\text{kg} = 4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2$, so $g = \dfrac{4.9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{(1.840 \cdot 10^{6}\,\text{m})^2} = 1.448\,\text{m/s}^2$
+**Answer:** $1.45\,\text{m/s}^2$, three significant figures as in the radius $1840\,\text{km}$. The value is from the MAFY table (Solar System, Moon); values in different tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
+**Reasonableness:** On the surface of the Moon (radius $1737\,\text{km}$) the acceleration is $1.62\,\text{m/s}^2$. The orbit is a little farther from the centre, and the ratio $\left(\tfrac{1737}{1840}\right)^2 = 0.891$ gives $1.62\,\text{m/s}^2 \cdot 0.891 = 1.44\,\text{m/s}^2$, the same within rounding.
 
 ## fy5-6-L2-08
 **Given:** from the figure the orbit of Halley's comet: smallest distance from the Sun $r_1 = 88\,\text{million km}$ and largest $r_2 = 5250\,\text{million km}$
@@ -239,5 +239,5 @@ Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \
 **Formula:** $\dfrac{v_1}{v_2} = \dfrac{\sqrt{\gamma M / r_1}}{\sqrt{\gamma M / r_2}} = \sqrt{\dfrac{r_2}{r_1}}$
 **Conversions:** None needed, because the distances are in the same unit and the ratio has no unit.
 **Substitution:** $\dfrac{v_1}{v_2} = \sqrt{\dfrac{5250\,\text{million km}}{88\,\text{million km}}} = \sqrt{59.66} = 7.724$
-**Answer:** about $7.72$ times, three significant figures. The largest distance is about $60$ times the smallest, and because of the square root the speed is only about $7.7$ times as great. According to the figure the comet's real orbit is a very elongated ellipse, so the circular model does not describe it; the task only compares the speeds of the model.
+**Answer:** about $7.7$ times, two significant figures because the distance $88\,\text{million km}$ has only two (the unrounded value is $7.724$). The largest distance is about $60$ times the smallest, and because of the square root the speed is only about $7.7$ times as great. According to the figure the comet's real orbit is a very elongated ellipse, so the circular model does not describe it; the task only compares the speeds of the model.
 **Reasonableness:** Since $7.7^2 \approx 59$, the result fits the ratio of the distances, $59.7$. The speed is greater nearer the Sun, as $v \propto \tfrac{1}{\sqrt{r}}$ says it should be.

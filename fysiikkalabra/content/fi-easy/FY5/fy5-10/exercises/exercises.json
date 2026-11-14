@@ -300,10 +300,10 @@
       "kind": [
         "graph"
       ],
-      "text": "Kuvassa on kireän narun valokuva yhdellä hetkellä. Narun päätä heilutetaan tasaisesti taajuudella $2{,}4\\,\\text{Hz}$. Lue tarvittava arvo kuvasta. Kuinka suuri on aallon nopeus narussa?",
+      "text": "Kuvassa on kireän narun valokuva yhdellä hetkellä. Aalto etenee narussa nopeudella $3{,}0\\,\\text{m/s}$. Lue tarvittava arvo kuvasta. Kuinka suuri on narun jokaisen kohdan värähtelyn jaksonaika?",
       "figure": "fy5-10/valokuva",
-      "answer": 3.6,
-      "unit": "m/s",
+      "answer": 0.5,
+      "unit": "s",
       "tolerance": 0.02
     }
   ],

@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 170afbabe559da6d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 14d7fe4a096ab481
 
 ## Blocking
-- none
+
+(none)
 
 ## Polish
-- 'sekuntia valon matka-aikaa kuluu yhdessä katselusekunnissa' is a little clumsy Finnish but understandable.
+
+- (none)
 
 ## Checked
-- Wording of the sim's 'seconds of light travel time per viewing second' (clearer than 'animation seconds'); 'noin' before the 1 px limit; \tfrac{s}{c} in feedback; 'close to this estimate' replaces 'same order of magnitude' (more accurate for the checked result); 'calculated for four days'; Karman label; speed label. No change to prediction/commit flow or inquiry mechanics.
-- Language version fi-easy judged from the word-level diff against origin/main; the fi, en and fi-easy changes correspond.
+
+- Diff only: column heading "Koko" → "Koko tai etäisyys".
+- It fits the rows: Atomiydin, Atomi, Punasolu, Maa are sizes; "Planeettojen radat" and "Tähtien väliset matkat" are distances, so the old heading was misleading.
+- Numbers, units and LaTeX in the table unchanged; no other text touched.
+- Hash unchanged at start and end.

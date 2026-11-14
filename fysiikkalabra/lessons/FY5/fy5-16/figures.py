@@ -10,14 +10,22 @@ def t_allowed(L):
     return 8.0 / 2 ** ((L - 85) / 3)
 
 
-def scale():
-    """Ydinajatus: a decibel ladder of everyday sounds, the range from 85 dB upwards marked as harmful."""
-    f = Fig("fy516-scale", 372, "Kaavakuva: pystysuora desibeliasteikko 20 desibelistä 130 desibeliin, korkeus mittakaavassa. "
+def scale(task=False):
+    """Ydinajatus: a decibel ladder of everyday sounds, the range from 85 dB upwards marked as harmful.
+    task=True: the same ladder with the level written at every marker (so a task can read it exactly)."""
+    if task:
+        f = Fig("fy516-scale-task", 372, "Kaavakuva: pystysuora desibeliasteikko 20 desibelistä 130 desibeliin, korkeus mittakaavassa. "
+                "Asteikon oikealla puolella on äänilähteet ja niiden melutasot kirjoitettuina: kuiskaus 30 dB, keskustelu 60 dB, "
+                "ruohonleikkuri 90 dB, rock-konsertti 105 dB ja kipukynnys 120 dB. Asteikon yläosa 85 desibelistä ylöspäin on "
+                "värjätty punaiseksi ja merkitty vasemmalla hakasulkeella: pitkä altistus niin suurelle tasolle vaurioittaa kuuloa.")
+    else:
+        f = Fig("fy516-scale", 372, "Kaavakuva: pystysuora desibeliasteikko 20 desibelistä 130 desibeliin, korkeus mittakaavassa. "
             "Asteikon oikealla puolella on tyypillisiä äänitasoja: kuiskaus noin 30 dB, keskustelu noin 60 dB, ruohonleikkuri "
             "noin 90 dB, rock-konsertti noin 105 dB ja kipukynnys noin 120 dB. Asteikon yläosa 85 desibelistä ylöspäin on "
             "värjätty punaiseksi ja merkitty vasemmalla hakasulkeella: pitkä altistus niin suurelle tasolle vaurioittaa kuuloa.")
     def Y(L): return 344 - (L - 20) * 2.8
-    x0, x1 = 300, 326
+    dx = -60 if task else 0     # the task variant has longer labels: shift the ladder left
+    x0, x1 = 300 + dx, 326 + dx
     f.defs_add(f'<linearGradient id="fy516-ladder" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="{GOOD_LIGHT}"/>'
                f'<stop offset="0.55" stop-color="{HEAT_LIGHT}"/><stop offset="1" stop-color="{HOT_LIGHT}"/></linearGradient>')
     f.rect(x0, Y(130), x1 - x0, Y(20) - Y(130), "url(#fy516-ladder)", INK, 2.5, 4)
@@ -29,15 +37,20 @@ def scale():
     f.tex(x0 - 12, Y(85), "85", "end", HOT)
     f.tex(x0 - 8, Y(133) - 14, r"L\ (\text{dB})", "end")
     # bracket for the harmful range
-    bx = 236
+    bx = 236 + dx
     f.path(f"M{bx + 10},{n(Y(85))} H{bx} V{n(Y(130))} H{bx + 10}", stroke=HOT, w=2.5)
     f.tex(bx - 8, Y(112), r"\text{kuulovaurion}", "end", HOT)
     f.tex(bx - 8, Y(101), r"\text{vaara}", "end", HOT)
     for L, name in ((30, "kuiskaus"), (60, "keskustelu"), (90, "ruohonleikkuri"), (105, "rock-konsertti"), (120, "kipukynnys")):
         f.line(x1, Y(L), x1 + 18, Y(L), INK, 2)
         f.circle(x1 + 18, Y(L), 4, INK)
-        f.tex(x1 + 28, Y(L), r"\text{" + name + "}", "start")
+        f.tex(x1 + 28, Y(L), r"\text{" + name + "}" + (rf"\ {L}\,\text{{dB}}" if task else ""), "start")
     return f.svg()
+
+
+def scale_task():
+    """Tehtäväkuva: scale() with the level written at every marker."""
+    return scale(task=True)
 
 
 def exposure():
@@ -256,11 +269,12 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "scale": scale, "exposure": exposure, "control": control, "room": room, "decay": decay,
+FIGURES = {"hero": hero, "scale": scale, "scale-tehtava": scale_task, "exposure": exposure, "control": control, "room": room, "decay": decay,
            "anc": anc, "transducers": transducers}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "scale": "safe: typical levels of everyday sounds on a decibel ladder, harmful range from 85 dB",
+    "scale-tehtava": "safe: the decibel ladder with the level written at each marker (whisper 30, conversation 60, lawn mower 90, rock concert 105, pain 120 dB); the markers are read exactly",
     "exposure": "reveals: every +3 dB halves the allowed daily time (8 h at 85 dB)",
     "control": "safe: the three places of noise control (source, path, ear) with one measure each",
     "room": "safe: direct and reflected sound in a room (rays only)",

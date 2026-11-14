@@ -202,22 +202,18 @@ $\begin{aligned} v &= 2 \cdot 0.650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254.8\,
 
 ## fy5-14-L1-10
 **Given:** the spectrum in the figure has five peaks; the frequencies of the peaks are read from the figure
-**Find:** the fundamental frequency of the sound $f_1$ in hertz
-**Principle:** The sound of an instrument consists of the fundamental frequency and its multiples, the overtones, so the peaks of the spectrum are at the frequencies of the harmonic series $f_1, 2f_1, 3f_1, \ldots$ The fundamental frequency is the lowest frequency of the series and equal to the spacing of adjacent peaks. It is not necessarily the strongest peak.
-**Reading the figure:** The peaks are at $200\,\text{Hz}$, $400\,\text{Hz}$, $600\,\text{Hz}$, $800\,\text{Hz}$ and $1000\,\text{Hz}$. The tallest peak is at $400\,\text{Hz}$, and the lowest peak is at $200\,\text{Hz}$. The spacing of adjacent peaks is $200\,\text{Hz}$.
-**Formula:** $f_n = n f_1$, so $f_1 = f_n - f_{n-1}$ and the lowest peak is $f_1$
+**Find:** the frequency of the seventh harmonic $f_7$ in hertz
+**Principle:** The sound of an instrument consists of the fundamental frequency and its multiples, so the peaks are at the frequencies of the harmonic series $f_n = n f_1$. The fundamental $f_1$ is the lowest frequency of the series, and the seventh harmonic is not in the figure, so it is calculated as a multiple of the fundamental.
+**Reading the figure:** The peaks are at $200\,\text{Hz}$, $400\,\text{Hz}$, $600\,\text{Hz}$, $800\,\text{Hz}$ and $1000\,\text{Hz}$. The lowest peak is at $200\,\text{Hz}$, so $f_1 = 200\,\text{Hz}$. The strongest peak $400\,\text{Hz}$ is the second harmonic, not the fundamental.
+**Formula:** $f_n = n f_1$
 **Conversions:** None are needed: the frequencies are read in hertz.
-**Substitution:** $f_1 = 200\,\text{Hz}$ and a check from the spacing: $f_1 = 400\,\text{Hz} - 200\,\text{Hz} = 200\,\text{Hz}$
-**Answer:** $200\,\text{Hz}$, three significant figures like the frequency read from the graph. The strongest peak $400\,\text{Hz}$ is the first overtone, the second harmonic, not the fundamental.
-**Reasonableness:** All the peaks are whole-number multiples of the fundamental frequency: $2 \cdot 200\,\text{Hz} = 400\,\text{Hz}$, $3 \cdot 200\,\text{Hz} = 600\,\text{Hz}$, $4 \cdot 200\,\text{Hz} = 800\,\text{Hz}$ and $5 \cdot 200\,\text{Hz} = 1000\,\text{Hz}$. If the fundamental were $400\,\text{Hz}$, the peak at $200\,\text{Hz}$ would be left unexplained. The pitch heard by the ear corresponds to the fundamental frequency $200\,\text{Hz}$.
+**Substitution:** $f_7 = 7 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$
+**Answer:** $1400\,\text{Hz}$, three significant figures like the fundamental read from the graph.
+**Reasonableness:** The seventh harmonic lies above the fifth peak $1000\,\text{Hz}$ by two spacings: $1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$, since the spacing of the peaks is $200\,\text{Hz}$.
 
 ## fy5-14-L2-08
-**Given:** the frequency of one fork $f_2 = 523\,\text{Hz}$, higher than that of the other; the beat period is read from the figure
-**Find:** the frequency of the other fork $f_1$ in hertz
-**Principle:** Two sounds of nearly the same frequency beat: the loudness varies, and the number of loud moments per second equals the difference of the frequencies, $f_\text{b} = |f_2 - f_1|$. The difference alone does not tell which sound is higher, but the task says that $523\,\text{Hz}$ is the higher one.
-**Reading the figure:** The sound is loudest at the moments $0$, $0.25\,\text{s}$, $0.50\,\text{s}$, $0.75\,\text{s}$ and $1.00\,\text{s}$. The time between consecutive loud moments, the beat period, is $T_\text{b} = 0.25\,\text{s}$.
-**Formula:** $f_\text{b} = \dfrac{1}{T_\text{b}}$ and $f_\text{b} = f_2 - f_1$, so $f_1 = f_2 - f_\text{b}$
-**Conversions:** None are needed: the period is in seconds, so the beat frequency comes out in hertz.
-**Substitution:** $f_\text{b} = \dfrac{1}{0.25\,\text{s}} = 4.0\,\text{Hz}$, so $f_1 = 523\,\text{Hz} - 4.0\,\text{Hz} = 519\,\text{Hz}$
-**Answer:** $519\,\text{Hz}$, in whole hertz like the given frequency $523\,\text{Hz}$.
-**Reasonableness:** In the figure there are four loud moments in one second after the first, so the beat frequency is $4\,\text{Hz}$, the same as the difference $523\,\text{Hz} - 519\,\text{Hz}$. The difference is small compared with the frequencies, so the beats are heard as a slow variation and not as two separate notes.
+**Given:** the combined sound of two tuning forks sounding at the same time, in the figure; one fork $523\,\text{Hz}$; wax lowers the frequency of the unknown fork and the beats get faster
+**Find:** the frequency $f_x$ of the unknown fork before the wax was added
+**Principle:** The beat frequency is the difference of the frequencies, $f_\text{b} = |f_x - 523\,\text{Hz}|$, and it is the reciprocal of the beat period. The difference does not tell which frequency is higher, so the side is decided by the wax: it lowers $f_x$. If the difference grows, $f_x$ was already below $523\,\text{Hz}$. If the difference shrinks, $f_x$ was above it.
+**Reading the figure:** The sound is loudest at the moments $0$, $0.25\,\text{s}$, $0.50\,\text{s}$, $0.75\,\text{s}$ and $1.00\,\text{s}$. The beat period is $T_\text{b} = 0.25\,\text{s}$.
+**Model answer:** The beat frequency is $f_\text{b} = \dfrac{1}{0.25\,\text{s}} = 4\,\text{Hz}$, so $f_x = 523\,\text{Hz} \pm 4\,\text{Hz}$, that is $519\,\text{Hz}$ or $527\,\text{Hz}$. The wax lowered $f_x$ and the beats got faster, so the difference grew. That is possible only if $f_x$ was below $523\,\text{Hz}$. The answer is $519\,\text{Hz}$. Check: if $f_x$ had been $527\,\text{Hz}$, the wax would have brought it closer to $523\,\text{Hz}$ and the beats would have slowed down.

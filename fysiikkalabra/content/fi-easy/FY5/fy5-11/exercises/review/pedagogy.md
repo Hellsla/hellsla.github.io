@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 2d1c8a6a30bbcd6d
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 83a8df2e955ed4ab
+SCOPE: delta added-exercise from 2d1c8a6a30bbcd6d base 81db4a6fd727
 
 ## Blocking
 (none)
 
-## Fixed
-(none needed)
-
 ## Polish
-(none)
+- fy5-11-L2-09 solution, Järkevyys: the claim 'taajuus ei voi ylittää noin 4,5 Hz' is unprepared physics (water-wave dispersion) and confuses; delete the last two sentences.
+- fy5-11-L2-10: the question ('Kuinka monta kertaa raon leveys b on uusi aallonpituus') is clumsy; write 'Kuinka suuri on suhde b/lambda uudella taajuudella?'. The solution notes honestly that v is not really constant.
 
 ## Checked
-- fy5-11-L2-08: the pedagogy of the Finnish task is kept (situation first, question last; misconception-based distractors or statements; each feedback names the same error as fi and does not give the answer away before the student acts).
-- Solution keeps the Find / Principle / Model answer structure with the calculation staged step by step.
-- fi-easy sentences are short, terms are explained, no change in content.
+- L2-09: lambda read from fronts at lines 1 and 5 (8 cm), v = f lambda = 32 cm/s; gap and wall named as unneeded.
+- L2-10: reads lambda and b (12 cm), halving of lambda, ratio 3,0 links to diffraction; a real step beyond L2-09.
+- Figure description gives the grid, positions and no lambda or b.

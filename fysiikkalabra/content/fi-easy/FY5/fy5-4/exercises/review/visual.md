@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 053cb480bab0df62
+CONTENT-HASH: fc973652ab241b0a
+SCOPE: delta added-exercise from 053cb480bab0df62 base 8f23aa7ae3bd
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- light delta review (teacher 2026-11-07): I checked only the edits that add "Todellista keskipakoisvoimaa ei ole" / "todellista voimaa". I captured them at 390 px from the rebuilt preview with every solution open and opened each capture: the L1 choice feedback and the L2-08 choice B feedback (feedback revealed), and the Periaate and Mallivastaus lines of the error-finding task and of fy5-4-L2-08. The m·v²/r fractions stay on one line, the wording is natural and the term is used consistently. Nothing is clipped, and a page scan at 390 px found no inline formula that wraps or scrolls.
+- Delta: fy5-4-L2-09 (L2-1280-12) and fy5-4-L3-06 (L3-1280-11, -12) in fi-easy: Finnish task text, graphs, solutions with decimal comma, Järkevyys blocks.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

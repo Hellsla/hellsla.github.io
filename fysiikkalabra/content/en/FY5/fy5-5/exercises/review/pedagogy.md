@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2dfa5cdb22af192d
+CONTENT-HASH: fc3b190ea3328bed
+SCOPE: delta added-exercise from 2dfa5cdb22af192d base 81db4a6fd727
+
 ## Blocking
+(none)
 
 ## Polish
+- fy5-5-L2-09: the Reasonableness uses 24.8 and the description lists Earth 9.80; fine, but state once that the field strength at the probe is read at the surface value and scaled (it is).
 
 ## Checked
-light delta review (teacher 2026-11-07): the reworded opening of fy5-5-L3-04, judged in context. It reads naturally, still sets the situation first and leaves the parts a–c and their questions unchanged. The "other way round" framing matches the solution (Given lists γ; M = gR²/γ). It gives no answer away.
+- L2-09 (reworked): reading g = 24.8 m/s^2 from the figure, then r = R + h = 2R (the distance is from the centre, the planned trap), g falls to a quarter, F = mg = 5.27 kN; correct.
+- Level 2 fits (two ideas: inverse-square scaling and F = mg); the unit kN conversion is shown.
+- Solution staged with a check by dividing the surface force by 4.

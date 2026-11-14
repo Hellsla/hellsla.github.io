@@ -91,7 +91,7 @@ Fysiikan kohteiden koot ovat valtavan erilaisia: protoni on noin $1{,}7\cdot10^{
 
 ### Suuruusluokka kertoo karkean koon
 
-**Suuruusluokka** on se kymmenpotenssi, joka on kymmenpotenssien akselilla lähinnä lukua. Luvun $a\cdot10^{n}$ suuruusluokka on $10^{n}$, kun $a<\sqrt{10}\approx3{,}16$, ja $10^{n+1}$, kun $a>\sqrt{10}$. Raja $\sqrt{10}$ on kymmenpotenssien akselilla kohtien $10^{n}$ ja $10^{n+1}$ puolivälissä. Ihmisen pituus $1{,}7\,\text{m}$ on suuruusluokkaa $10^{0}\,\text{m}$, mutta Mount Everestin korkeus $8{,}8\cdot10^{3}\,\text{m}$ on suuruusluokkaa $10^{4}\,\text{m}$.
+**Suuruusluokka** on se kymmenpotenssi, joka on kymmenpotenssien akselilla lähinnä lukua. Jos kerroin on alle noin 3, suuruusluokka on $10^{n}$, ja jos se on yli noin 3, suuruusluokka on $10^{n+1}$. Esimerkiksi ihmisen pituus $1{,}7\,\text{m}$ on suuruusluokkaa $10^{0}\,\text{m}$, mutta Mount Everestin korkeus $8{,}8\cdot10^{3}\,\text{m}$ on suuruusluokkaa $10^{4}\,\text{m}$.
 
 Kohteiden koot ovat pyöristettyjä arvoja: ihmiset, muurahaiset ja galaksit eivät ole kaikki samankokoisia. Siksi vertailuun riittää usein suuruusluokka, ja luvuista kannattaa kysyä, kuinka tarkkoja ne ovat.
 

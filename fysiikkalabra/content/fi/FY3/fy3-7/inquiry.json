@@ -86,7 +86,7 @@
           "feedback": "Mallin arvot tukevat tätä: $0{,}25\\,\\text{kg}$:lla kestot ovat noin $84\\,\\text{s}$ ja $565\\,\\text{s}$, $0{,}50\\,\\text{kg}$:lla $167\\,\\text{s}$ ja $1130\\,\\text{s}$. Kumpikin kesto kaksinkertaistuu massan mukana, joten suhde pysyy noin 6,8:ssa. Jokainen kilogramma tarvitsee sulaakseen ja höyrystyäkseen aina saman energian."
         },
         {
-          "text": "Kiehuminen kestää pidempään, ja ero kasvaa suhteessa, kun massa kasvaa.",
+          "text": "Kiehuminen kestää pidempään, ja kiehumisen ja sulamisen kestojen suhde kasvaa, kun massa kasvaa.",
           "feedback": "Kiehuminen kestää pidempään, mutta suhde ei muutu: $0{,}25\\,\\text{kg}$:lla $565/83{,}5 \\approx 6{,}8$ ja $0{,}50\\,\\text{kg}$:lla $1130/167 \\approx 6{,}8$. Kumpikin kesto on suoraan verrannollinen massaan, joten niiden suhde ei riipu massasta."
         },
         {
@@ -262,7 +262,7 @@
         {
           "text": "Kaava $Q = cm\\Delta T$ koskee lämpenemistä. Olomuodon muutoksessa lämpötila ei muutu, ja lämpömäärä on $Q = sm = 334\\,\\text{kJ/kg} \\cdot 0{,}20\\,\\text{kg} \\approx 66{,}8\\,\\text{kJ}$.",
           "correct": true,
-          "feedback": "Oikein. Lämpenemiskäyrän vaakasuoralla osalla $\\Delta T = 0$, mutta energiaa siirtyy koko ajan: se purkaa hiukkasten välisiä sidoksia. Siksi sulamiseen käytetään omaa kaavaa $Q = sm$."
+          "feedback": "Oikein. Lämpenemiskäyrän vaakasuoralla osalla $\\Delta T = 0$, mutta energiaa siirtyy koko ajan: se muuttaa hiukkasten keskinäisiä vuorovaikutuksia ja kasvattaa niiden välistä vuorovaikutusenergiaa. Siksi sulamiseen käytetään omaa kaavaa $Q = sm$."
         },
         {
           "text": "Lämpötilan muutokseksi pitäisi ottaa $273\\,\\text{K}$, koska $0\\,{}^\\circ\\text{C}$ on $273\\,\\text{K}$.",

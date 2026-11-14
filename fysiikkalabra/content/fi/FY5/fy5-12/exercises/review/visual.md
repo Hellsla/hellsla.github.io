@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 37891267a0068020
+CONTENT-HASH: 21165e7fa5250d9b
+SCOPE: delta added-exercise from 37891267a0068020 base 81db4a6fd727
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy5-12-L2-08 options — the rows are shown in the order Rivi 4, 3, 2, 1 (fixed shuffle) before "Laskussa ei ole virhettä"; the student's reasoning is sequential, natural order 1-4 reads better and the correct row would not be first.
-- [Minor] the correct row label is the longest ("Rivi 4: päätelmä interferenssin laadusta"), but Rivi 3 is nearly as long; no real cue.
-- [Minor] stem rows hold inline fractions ("Rivi 1", "Rivi 3") that raise the line height unevenly; acceptable, they fit and need no kx-wide.
+- [Minor] fy5-12 — heading Kuvaajan lukeminen / Reading the graph is used for a grid diagram, while fy5-15 says Reading the figure; use one wording (optional).
 
 ## Checked
-- Rendered the task at 390 px with the correct option's feedback, each option clicked and measured, and the solution open: the three inline fractions in the stem, the display blocks in the solution fit; scrollWidth 390, no element outside a scroll box, no inline formula over 250 px.
-- Feedback of the correct choice explains the error but the task has a single stage; the distractor feedback "Jos rivin luulee virheelliseksi..." names the plausible misconceptions and the "ei virhettä" option is last as the stem says.
-- Text-only: spelling, ":n" inflection after units, glossary terms.
+- Delta of the two or three added exercises (fi): 1280 px open-exercises L2 parts 11, 12 (L2-09 with the loudspeaker grid figure, solution) and L3 part 9 (L3-06).
+- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
+- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal comma consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
+- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

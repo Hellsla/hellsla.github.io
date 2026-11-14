@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d2b1980c7da012c4
+CONTENT-HASH: 45d97ca78bde885a
+SCOPE: delta added-exercise from d2b1980c7da012c4 base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- solutions.md:103 (L3-01) — Kaava still reads "annos $= (\ldots) \cdot 100\,\%$" without the symbol, while Sijoitus now gives $D$ as a pure ratio and L3-05 (line 204) defines $D = \sum t_i/t_{\text{v},i}$; write the Kaava as "annos $D = \dfrac{t_1}{t_{\text{v},1}} + \dfrac{t_2}{t_{\text{v},2}}$ ($D = 1$ vastaa $100\,\%$)" so formula and substitution match.
 
 ## Checked
-light delta review (teacher 2026-11-07), L3-01 chain: HEAD~1 diff of solutions.md only. Recomputed t_v,1 = 8 h/2¹ = 4,0 h, t_v,2 = 8 h/2⁻¹ = 16 h, D = 1 + 0,25 = 1,25; 1,25 = 125 % is exact (% = 1/100). D as a dimensionless ratio (h/h) agrees with L3-05's D = Σ t_i/t_v,i; answer 125 % and Järkevyys unchanged and right. Only the Kaava line keeps the old ·100 % form (Polish).
+- Delta round 2, fi-easy: reworked added tasks fy5-16-L1-09 (lawn mower) and L2-09 (rock concert with 12 dB earplugs).
+- Compared by script with the passed Finnish set: answer, unit, tolerance, figure, level identical; every number in task text and solution the same in fi and fi-easy.
+- Recomputed independently with t = 8 h / 2^((L − 85 dB)/3 dB): 90 dB -> 2,52 h -> 2,5 h; 105 − 12 = 93 dB -> 480 min / 2^(8/3) = 75,6 min (shown 76 min, inside 2 %). Without plugs 4,72 min; ratio 2^4 = 16, as the solution says. answers.py agrees.
+- "kuulovaurion vaara" (solutions.md:246, :257) matches the figure's bracket label and description; 85 dB as the upper action value for 8 h is correct.
+- Figure scale-tehtava: levels written at the markers (90, 105 dB) match the tasks; the description gives the same values, not the answers.
+- Equal-energy 3 dB rule stated as an estimate; earplug attenuation given in the task as the reduction at the ear; two-figure rounding justified.
+- Hash same at start and end.
