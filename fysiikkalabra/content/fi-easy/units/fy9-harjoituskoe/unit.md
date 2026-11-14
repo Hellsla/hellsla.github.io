@@ -324,7 +324,7 @@ Osassa I on kymmenen kohtaa. Jokaisesta kohdasta saa $2$ p, eli yhteensä $20$ p
 Osien II ja III tehtävät ovat sivun lopussa kohdassa Tehtävät. Tehtävän otsikossa lukee, kumpaan osaan tehtävä kuuluu. Osan II tehtävistä saa $15$ p ja Osan III aineistotehtävistä $20$ p. Jokaisen kohdan pisteet on merkitty kohtaan. Kirjoita jokaiseen laskuun täydellinen ratkaisu. Siinä ovat nämä vaiheet: annetut ja kysytyt suureet, periaate, kaava ratkaistuna, sijoitus yksiköineen, vastaus oikealla tarkkuudella ja järkevyystarkastelu.
 
 ### Apuvälineet
-Käytä samoja apuvälineitä kuin oikeassa kokeessa. Niitä ovat laskin, taulukkolaskenta, kuvaajaohjelma ja kaavaeditori sekä kokeen taulukot ja kaavat. Muistiinpanot, oppikirja, internet ja tämän sivun mallivastaukset ovat kiinni koko kokeen ajan. Ylioppilastutkintolautakunnan määräykset kertovat, mitkä ohjelmat ja aineistot oikeassa kokeessa saa käyttää. Tarkista ne ennen koetta.
+Käytä samoja apuvälineitä kuin oikeassa kokeessa. Niitä ovat tietokoneen laskinohjelma, taulukkolaskenta, kuvaajaohjelma ja kaavaeditori sekä kokeen taulukot ja kaavat. Erillistä laskinta tai taulukkokirjaa ei saa käyttää. Muistiinpanot, oppikirja, internet ja tämän sivun mallivastaukset ovat kiinni koko kokeen ajan. Ylioppilastutkintolautakunnan määräykset kertovat, mitkä ohjelmat ja aineistot oikeassa kokeessa saa käyttää. Tarkista ne ennen koetta.
 
 ## Aikasuunnitelma {Aikataulu}
 

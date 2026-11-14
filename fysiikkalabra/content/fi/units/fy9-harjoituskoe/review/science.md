@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c47364fb7325d02e
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at c47364fb7325d02e.
+CONTENT-HASH: 1c760d7d1d71cc80
+Delta review (aids paragraph, 2026-11-14) of the version passed at c47364fb7325d02e.
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- Spring part (line ~734): Kuvaajan lukeminen still writes $m = -\tfrac{b}{\text{kulmakerroin}}$, but the new Kaava names the slope $a$. $-b/a$ would match.
+None.
 
 ## Checked
-- Organ pipe b: $\varepsilon = v'/v - 1 = -0.0207$ with $v = 343.2$ m/s from part a; $f_1' = 128.3$ Hz. c: $\Delta L = -0.362$ mm and $\Delta f/f_0 \approx -\alpha\Delta T = +2.76\cdot10^{-4}$; the sign is right (a shorter pipe gives a higher frequency) and the small-change condition is stated.
-- Line loss $P_\text{j} = R_\text{j}I^2 = 114$ W. Geotherm $T = 109.3\,{}^\circ\text{C}$. Spring: $k = 4\pi^2/a = 25.0$ N/m and $m_\text{j} = b/a = 20.5$ g.
-- Note: the hash is unchanged although sovella/solutions.md changed, so the hash appears not to cover this file.
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- The one changed paragraph (Apuvälineet / Aids): "calculator" narrowed to the computer's calculator program, plus the new sentence that a separate calculator or a book of tables is not allowed. It agrees with YTL Reaaliaineiden kokeiden määräykset ja ohjeet §3 ("ei saa käyttää apuvälineinä erillisiä laskimia eikä erillisiä taulukkokirjoja"), source recorded in fi review/developer.md.
+- No contradiction with the rest of the paragraph: "the exam's tables and formulas" are the digital materials inside the exam, not a separate book; the closing pointer to the Board's regulations is kept.
+- No other place in the unit mentions a calculator or tables as an aid (grep).
+- fi, en and fi-easy say the same thing.
+- Hash checked at start and end with `python3 scripts/units.py hash fy9-harjoituskoe --lang fi`.
