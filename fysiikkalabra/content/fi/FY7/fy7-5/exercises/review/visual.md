@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0975c2635ee5d202
+CONTENT-HASH: 2efb279b0ab2468b
 SCOPE: delta added-exercise from fd4eb60f56237477 base 8f23aa7ae3bd
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] 5-17 (fy7-5/flux-task-2) — the green line runs through the tick label '0,2' because the time labels sit just above the axis at Φ = 0; move the t labels below the axis or to the plot's lower edge (NOTES §3: a line never runs over a label).
+- [Minor] 5-17 (fy7-5/flux-task-2) — the time ticks (0,2 ... 0,8) sit below the plot, clear of the line, but at some distance from the zero axis; fine as is, optional: faint tick marks at the lower edge.
 
 ## Checked
-- fy7-5 L2 captures 10-11 (5-17 graph zoomed, solution).
-- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
+- Delta: redrawn fy7-5/flux-task-2 in 5-17 (open-exercises-L2-1280 part 10, full size): t labels now below the plot, green line crosses no label; axis names, units, ticks and the -3 plateau read well; layout around the figure intact.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

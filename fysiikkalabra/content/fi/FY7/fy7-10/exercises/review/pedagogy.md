@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: bbb52739624f488e
-SCOPE: delta added-exercise from 0103d8f31883bc59 base 8f23aa7ae3bd
+CONTENT-HASH: 91929cab691c65d8
+SCOPE: delta solution-wording from bbb52739624f488e base 91929cab691c65d8
 
 ## Blocking
 - none
 
 ## Polish
-- fy7-10-L2-09: the task prescribes both reading points (0,20 and 0,60); at level 2 let the student pick two points from the line.
+- fy7-10-L2-09: the task still prescribes both reading points (sin a2 = 0,20 and 0,60); at level 2 let the student choose them (carried over).
+- solutions.md L2-09: worked reading gives 22,5 deg while exercises.json answer is 22,64 deg (n = 1,49); within the 3 % tolerance, but the solution could note that a reading of n between 1,49 and 1,50 gives 22,5-22,6 deg.
 
 ## Checked
-- L1-09: n from MAFY (1,333), 36,2 deg, sanity check by the sine ratio.
-- L2-09: slope 1,49, n = 1,49, 22,6 deg; axes (sin a1 vertical) explained in Periaate; the question is last.
-- Language checked: fi. Hash bbb52739624f488e at start and end.
+- Rounded readings 0,30 and 0,90 give k = 0,60/0,40 = 1,50, n = 1,50, sin a2 = 0,5736/1,50 = 0,3824, a2 = 22,5 deg (recomputed: 22,48).
+- Järkevyys now says the 1,50 vs table 1,49 is within reading accuracy; honest and useful.
+- Fraction k = n2/n1 typeset consistently.
+- Language checked: fi. Hash 91929cab691c65d8 at start and end.

@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a0e51cec13f9f7c7
-SCOPE: delta added-exercise from 59eedd9cce3ae8b0 base 8f23aa7ae3bd
+CONTENT-HASH: 8eaee81f9fae4b2f
+SCOPE: delta added-exercise from a0e51cec13f9f7c7 base 8eaee81f9fae4b2f
 
 ## Blocking
 - none
 
 ## Polish
-- fy7-14-L2-08 Järkevyys: 'järkevä, koska ... ihanteellinen sqrt(1,52)' brings in the ideal coating index which the lesson may not teach; drop it or say why the minimum is not zero.
-- fy7-14-L3-06: 'päättele ... kertaluku k ja paksuus' asks two things but answers only d; say 'Anna vastaus paksuutena nanometreinä'.
+- fy7-14-L3-06 text asks for 'kertaluku k ja kalvon paksuus' but the answer field is d only; end with 'Anna vastaus paksuutena nanometreinä' (carried over).
+- fy7-14/soap-curve and coating-curve alt texts give no reading values (extrema positions, levels); a reader without sight cannot do L2-08 or L3-06. Add the grid and the number of extrema without the answer values.
 
 ## Checked
-- L2-08: R_0 4,3 %, R_pinn 1,3 %, 70 % removed; reading steps explicit.
-- L3-06: min 466 nm, max 621 nm, k = 2, d = 350 nm; one min and one max in 400-700 nm, so the inference is unique; level 3 justified; no repeat of L3-03.
-- Language checked: fi. Hash a0e51cec13f9f7c7 at start and end.
+- L2-08: R0 4,3 %, Rpinn 1,3 %, 1 - 1,3/4,3 = 69,8 %; reading steps explicit; the earlier sqrt(1,52) remark is gone from Järkevyys.
+- L3-06: one minimum (466 nm) and one maximum (621 nm) in 400-700 nm; other orders fall at 931 nm and 372 nm, outside, so k = 2 is unique; d = 2 x 466 / (2 x 1,33) = 350 nm; recomputed.
+- Principle (one reversal: 2nd = k lambda minimum, (k - 1/2) lambda maximum) is explained, and the check with k = 1 helps.
+- Level 3 justified (inverse inference, thickness unknown); not a repeat of L3-03 or the worked set.
+- Language checked: fi. Hash 8eaee81f9fae4b2f at start and end.
