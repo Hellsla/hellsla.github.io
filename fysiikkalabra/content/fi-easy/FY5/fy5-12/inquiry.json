@@ -4,7 +4,7 @@
   "learn": [
     "selittämään superpositioperiaatteella, mitä tapahtuu, kun kaksi aaltoa kohtaa.",
     "laskemaan matkaeron ja päättelemään sen avulla, onko interferenssi vahvistava vai heikentävä.",
-    "(valinnainen) kertomaan, mihin Fourier-muunnosta käytetään äänen tutkimisessa."
+    "kertomaan, mihin Fourier-muunnosta käytetään äänen tutkimisessa (valinnainen)."
   ],
   "prior": [
     "Aallon nopeus, taajuus ja aallonpituus liittyvät toisiinsa yhtälöllä $v = f\\lambda$ (luku *Aaltojen synty ja eteneminen*)",

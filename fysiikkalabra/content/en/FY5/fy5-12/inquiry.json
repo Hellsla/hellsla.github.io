@@ -4,7 +4,7 @@
   "learn": [
     "explain with the principle of superposition what happens when two waves meet.",
     "calculate the path difference and decide from it whether the interference is constructive or destructive.",
-    "(optional) describe what the Fourier transform is used for in analysing sound."
+    "describe what the Fourier transform is used for in analysing sound (optional)."
   ],
   "prior": [
     "The speed, frequency and wavelength of a wave are related by the equation $v = f\\lambda$ (chapter *How waves form and travel*)",
