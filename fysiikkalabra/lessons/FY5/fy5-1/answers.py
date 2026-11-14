@@ -29,5 +29,5 @@ a["fy5-1-L2-06"] = 9.81 * (0.200 * 0.300 + 0.100 * 0.100 - 0.120 * 0.400 - 0.050
 a["fy5-1-L2-07"] = 90 * (0.270 - 0.030)             # arm measured from the nut's centre: 0,240 m → 21,6 Nm
 a["fy5-1-L3-04"] = (450 * 0.175 / 0.100) * 0.0900   # chain force F_k = F_p d / R = 787,5 N; rear-wheel moment F_k r = 70,9 Nm
 a["fy5-1-L3-05"] = 60.0 / (0.400 * s(65))           # wrench B: F = M / (d sin α) = 166 N (A needs 240 N, C 200 N; the limit is 170 N)
-a["fy5-1-L1-10"] = 21 / (3 * 0.10)                  # figure: arm = 3 squares = 0,30 m; F = M / r = 70 N
+a["fy5-1-L1-10"] = 30 * (5 * 0.10)                  # figure: rod OP = sqrt(4²+3²) = 5 squares = 0,50 m; force perpendicular to the rod: M = F r = 15 Nm
 print(json.dumps(a))

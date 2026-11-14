@@ -211,12 +211,12 @@ The expression $M d\sin\alpha$ would give a larger force with a longer spanner, 
 **Reasonableness:** With a perpendicular pull the longest spanner would need only $60.0\,\text{Nm} : 0.600\,\text{m} = 100\,\text{N}$, but the angle $30^\circ$ halves its lever arm. Check: $165.5\,\text{N}\cdot 0.3625\,\text{m} = 60.0\,\text{Nm}$, and $166\,\text{N} < 170\,\text{N}$.
 
 ## fy5-1-L1-10
-**Given:** horizontal force $F$ at the point $P$, moment $M = 21\,\text{Nm}$ about the axis $O$; one square of the grid is $0.10\,\text{m}$
-**Find:** the magnitude of the force $F$ in the unit $\text{N}$
-**Principle:** The rod rotates about the axis $O$, so the turning effect of the force is given by its moment $M = Fr$. The lever arm is the perpendicular distance of the axis from the line of action of the force, not the length $OP$ of the rod.
-**Reading the figure:** The force is horizontal, so its line of action is the horizontal dashed line through the point $P$. The axis $O$ is three squares below this line, so the lever arm is three squares. The length of the rod, five squares, is not the lever arm.
-**Formula:** $M = Fr$, so $F = \dfrac{M}{r}$
-**Conversions:** $r = 3\cdot 0.10\,\text{m} = 0.30\,\text{m}$
-**Substitution:** $F = \dfrac{21\,\text{Nm}}{0.30\,\text{m}} = 70\,\text{N}$
-**Answer:** $70\,\text{N}$, two significant figures like the moment $21\,\text{Nm}$.
-**Reasonableness:** If the length of the rod, $0.50\,\text{m}$, were taken as the lever arm, the force would come out as $42\,\text{N}$. That would be wrong, because a horizontal force pulls the rod partly along its own direction. The true force is larger because the lever arm is shorter. Check: $70\,\text{N}\cdot 0.30\,\text{m} = 21\,\text{Nm}$.
+**Given:** force $F = 30\,\text{N}$ at the point $P$, perpendicular to the rod $OP$; one square of the grid is $0.10\,\text{m}$
+**Find:** the moment $M$ of the force about the axis $O$ in the unit $\text{Nm}$
+**Principle:** The rod rotates about the axis $O$, so the turning effect of the force is given by its moment $M = Fr$. A force perpendicular to the rod has the whole rod as its lever arm: the line of action is perpendicular to $OP$ at $P$, so $r = OP$.
+**Reading the figure:** The point $P$ is four squares to the right of and three squares above $O$. The rod $OP$ is the hypotenuse of a right triangle with the legs $4$ and $3$ squares, so its length is $\sqrt{4^2 + 3^2} = 5$ squares.
+**Formula:** $M = Fr$ with $r = OP$
+**Conversions:** $r = 5\cdot 0.10\,\text{m} = 0.50\,\text{m}$
+**Substitution:** $M = 30\,\text{N}\cdot 0.50\,\text{m} = 15\,\text{Nm}$
+**Answer:** $15\,\text{Nm}$, two significant figures like the force $30\,\text{N}$; the length of the rod is read exactly from the grid.
+**Reasonableness:** The figure's horizontal force has the lever arm $0.30\,\text{m}$ only. A perpendicular force has the longest possible lever arm, the whole rod $0.50\,\text{m}$, so the same force $30\,\text{N}$ gives the larger moment: $30\,\text{N}\cdot 0.30\,\text{m} = 9.0\,\text{Nm} < 15\,\text{Nm}$.

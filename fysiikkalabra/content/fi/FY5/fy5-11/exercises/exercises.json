@@ -242,9 +242,9 @@
       "kind": [
         "graph"
       ],
-      "text": "Kuvassa on aaltoaltaan pohja ylhäältä katsottuna. Tasoaallot etenevät vasemmalta oikealle ja osuvat seinään, jossa on rako. Aaltokone värähtelee taajuudella $7{,}0\\,\\text{Hz}$. Lue tarvittava arvo kuvasta. Kuinka suuri on aallon nopeus altaassa? Anna vastaus yksikössä $\\text{cm/s}$.",
+      "text": "Kuvassa on aaltoaltaan pohja ylhäältä katsottuna. Tasoaallot etenevät vasemmalta oikealle ja osuvat seinään, jossa on rako. Aaltokone värähtelee taajuudella $4{,}0\\,\\text{Hz}$. Lue tarvittava arvo kuvasta. Kuinka suuri on aallon nopeus altaassa? Anna vastaus yksikössä $\\text{cm/s}$.",
       "figure": "fy5-11/rako-ruudukko",
-      "answer": 56,
+      "answer": 32,
       "unit": "cm/s",
       "tolerance": 0.02
     },
@@ -254,7 +254,7 @@
       "kind": [
         "graph"
       ],
-      "text": "Kuvassa on aaltoaltaan pohja ylhäältä katsottuna: tasoaallot etenevät vasemmalta oikealle ja osuvat seinään, jossa on rako. Kuva näyttää aallot ennen taajuuden muutosta. Sitten aaltokoneen taajuus kaksinkertaistetaan, mutta veden syvyys ja siis aallon nopeus pysyvät samoina. Lue tarvittavat arvot kuvasta. Kuinka monta kertaa raon leveys $b$ on uusi aallonpituus $\\lambda$ eli kuinka suuri on suhde $\\tfrac{b}{\\lambda}$ uudella taajuudella?",
+      "text": "Kuvassa on aaltoaltaan pohja ylhäältä katsottuna: tasoaallot etenevät vasemmalta oikealle ja osuvat seinään, jossa on rako. Kuva näyttää aallot ennen taajuuden muutosta. Sitten aaltokoneen taajuus kaksinkertaistetaan, mutta oletetaan, että aallon nopeus pysyy samana. Lue tarvittavat arvot kuvasta. Kuinka monta kertaa raon leveys $b$ on uusi aallonpituus $\\lambda$ eli kuinka suuri on suhde $\\tfrac{b}{\\lambda}$ uudella taajuudella?",
       "figure": "fy5-11/rako-ruudukko",
       "answer": 3.0,
       "unit": "",

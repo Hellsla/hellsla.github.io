@@ -37,8 +37,8 @@ a["fy5-11-L3-05"] = 600 / (3.00e8 / 100e6)               # b/λ_FM = 600 m / 3,0
 # L3-01 numbers for the model answer: b/λ at 100 Hz and at 5000 Hz
 _info = {"L3-01 b/lam 100 Hz": 0.80 / lam_100, "L3-01 b/lam 5000 Hz": 0.80 / lam_5000}
 # L2-08 is ordering: λ = v/f = 3,0 / 5,0 / 2,0 / 6,0 cm, λ:b = A 0,50, B 2,5, C 1,33, D 0,25 -> D, A, C, B; no number
-# L2-09 (figure fy5-11/rako-ruudukko): fronts on gridlines 1 and 5, λ = 4 · 2,0 cm = 8,0 cm; v = fλ = 7,0 Hz · 8,0 cm = 56 cm/s
-a["fy5-11-L2-09"] = 7.0 * (4 * 2.0)
+# L2-09 (figure fy5-11/rako-ruudukko): fronts on gridlines 1 and 5, λ = 4 · 2,0 cm = 8,0 cm; v = fλ = 4,0 Hz · 8,0 cm = 32 cm/s (water-wave limit for λ = 8 cm is ~4,5 Hz)
+a["fy5-11-L2-09"] = 4.0 * (4 * 2.0)
 # L2-10 (same figure): b = 6 · 2,0 cm = 12 cm (gap between rows 1 and 7); doubled f halves λ: λ' = 8,0/2 = 4,0 cm; b/λ' = 3,0
 a["fy5-11-L2-10"] = (6 * 2.0) / ((4 * 2.0) / 2)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

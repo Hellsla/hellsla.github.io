@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a45736261bc2d590
+CONTENT-HASH: 728fc7919a95810a
+SCOPE: delta added-exercise from a45736261bc2d590 base 81db4a6fd727
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] fy5-5 figure fy5-5/planeetat — the figure's Maa value 9,80 differs from the 9,81 of the Järkevyys blocks — add a short note or use one value.
 
 ## Checked
-- light delta review (teacher 2026-11-07): I checked only the rewritten opening of fy5-5-L3-04 (what Cavendish measured, then "Nykyään laskun voi tehdä toisin päin …"). I captured the task text at 390 px from the rebuilt preview and opened it. The sequence reads logically in short S2 sentences, the situation comes first and the a–c questions last, and the data ($g = 9{,}81\,\text{m/s}^2$, $6371\,\text{km}$) stays on one line. Nothing is clipped, and a page scan at 390 px found no inline formula that wraps or scrolls.
+- Delta: fy5-5-L1-09 (1280-9) and fy5-5-L2-09 (L2-1280-13, -14) in fi-easy: figure labels Kuu, Mars, Maa, Jupiter in Finnish, decimal comma, solutions.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

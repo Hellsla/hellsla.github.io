@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8582b9190f73f167
-Mode: full (translation review against the reviewed Finnish set, new task L2-08)
-Round 2
+CONTENT-HASH: 13eb4fb8ef479d8c
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- none.
 
 ## Checked
-- New task fy5-12-L2-08 compared with content/fi: id, kind tags, correct flag, choice count and order, answer, tolerance and unit identical; every number and formula identical (decimal comma to comma kept).
-- Recomputed: L2-08 error analysis, lambda = 0.36/12 = 3.0 cm, ds = 6.0 cm, ratio 2.0, row 4 wrong (whole number of wavelengths = constructive).
-- Solution keeps all lead-ins, the symbolic step before numbers and the explanation of each distractor.
-- fi-easy follows NOTES.md section 12: shorter sentences, terms explained, same physics.
-- check_i18n: nothing for fy5-12; build.py fy5-12 succeeds.
+- Delta round 2, fi-easy: the only change is solutions.md:222 (fy5-12-L3-06), "eikä" -> "eivätkä"; grammar only, no number, symbol or physics changed.
+- Compared by script with the passed Finnish set again: answer, unit, tolerance, figure, kind identical; same numbers in text and solution.
+- Recomputed: Δs = 6,5 m − 6,0 m = 0,50 m; lowest destructive f = v/(2Δs) = 340 Hz. answers.py agrees.
+- Hash same at start and end.

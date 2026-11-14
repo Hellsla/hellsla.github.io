@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0be719f8b69971cc
+CONTENT-HASH: 2615e4af46870a85
+SCOPE: delta added-exercise from 0be719f8b69971cc base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md — none beyond the Finnish; the aligned chain with the square root stays inside its card at 390 px.
+- [Minor] fy5-6/radat figure — the Earth's orbit is drawn with the Sun at the centre while the Halley panel has it at a focus; the two panels are said to have their own scales, so acceptable. No change needed.
+- [Minor] fy5-6-L2-08 solution — the Vastaus box holds a long paragraph (model caveat about the ellipse); consider moving the last two sentences to their own line.
 
 ## Checked
-- Own 390 px render (scratch script, after the page's scripts, hints, feedback and solution open) of fy5-6-L1-09 in fi-easy: page scrollWidth 390, no element outside a scroll box (only KaTeX-internal svg paths, clipped by their own box).
-- Opened the whole task card in tiles: task text, every choice with feedback, answer, solution (Find/Principle/Model answer).
+- Opened at 1280 px: open-exercises parts 12 and 13 (L1-10, L1-11 with the Vihje/Hint box and its solution), L2 parts 10 and 11 (L2-08 with the figure and solution); fig-15-390 (radat figure at 390 px) for fi.
+- Figure radat: labels (Earth/Maa, comet, Sun), ranges 147,1-152,1 and 88-5250 million km readable, nothing clipped, the dashed circle over the orbit visible; description gives the same values without the answers.
+- Maths: units upright with thin space, decimal comma/point per language, chains aligned at =, fractions legible; no plain quantities in new text.
+- Language: instructions end with the question as its own sentence; MAFY reference and hint box clear.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

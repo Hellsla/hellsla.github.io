@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 19c4b1112a3292c3
+CONTENT-HASH: b12c411f043ca675
+SCOPE: delta added-exercise from 19c4b1112a3292c3 base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- fy5-11/exercises/exercises.json:238 and solutions.md:250 (L2-08) — C (λ/b ≈ 1,3) and B (2,5) both have λ > b. In both, the wave already spreads over the whole half-plane behind the slit, so "C leviää heikommin kuin B" is the weakest step in the order. Suggest b_C = 25 mm, which gives λ/b = 0,80. The order D, A, C, B is unchanged and now goes through b < λ only at B. The mm unit trap stays.
+- solutions.md (L2-09, Järkevyys) — virke "vesiaallolla, jonka aallonpituus on 8,0 cm, taajuus ei voi ylittää noin 4,5 Hz" pitää paikkansa (syvän veden gravitaatio–kapillaariaalto antaa 4,52 Hz), mutta väite ei perustu mihinkään, mitä kurssissa on opetettu. Sen voi poistaa tai lyhentää muotoon "kuten aaltoaltaissa tavallisesti".
+- exercises.json (L2-10) — päättely on sama kuin L1-07:ssä (taajuus kaksinkertaistuu, aallonpituus puolittuu, b/λ kaksinkertaistuu). Uutta on vain kuvan lukeminen. Tämä on hyväksyttävää.
 
 ## Checked
-- New task L2-08 (type 9, order). λ = v/f gives 3,0 / 5,0 / 2,0 / 6,0 cm. λ : b gives A 0,50, B 2,5, C 1,33 and D 0,25. Ascending is D, A, C, B, which matches `order` and the answer.
-- The prompt names the quantity and the direction ("heikoimmasta voimakkaimpaan").
-- The constant speed at every frequency is stated as an assumption in the task, which is needed because a ripple tank is dispersive.
-- The solution explains why neither b alone (C is the narrowest) nor λ alone (D is the longest) decides the order. This fits the lesson's warned "only a narrow slit diffracts" idea.
-- The scope is v = fλ from fy5-10 and the diffraction criterion from this chapter.
-- The solution chains are one fraction per line. From the text they fit 300 px. I did not render them.
-- answers.py ran once. All numeric answers agree with exercises.json within tolerance.
-- The hash was the same at the start and at the end.
+- Hash oli sama alussa ja lopussa. Arvioin vain tehtävät L2-09 ja L2-10.
+- Kierroksen 1 korjaukset on tehty. L2-09:n taajuus on nyt 4,0 Hz, joten v = 4,0 Hz · 8,0 cm = 32 cm/s. Tämä on fysikaalisesti mahdollinen: dispersiorelaatiosta tulee syvyydeksi noin 1,3 cm. L2-10 esittää nyt vakionopeuden oletuksena ja mainitsee, että todellisessa altaassa nopeus riippuu aallonpituudesta.
+- Laskin figures.py:stä uudelleen. Aaltorintamat ovat pystyviivoilla 1 ja 5, joten λ = 8,0 cm. Rako on vaakaviivojen 1 ja 7 välissä, joten b = 12 cm, λ' = 4,0 cm ja b/λ' = 3,0. Tulokset vastaavat answers.py:tä ja exercises.json:ia.
+- Merkitsevät numerot: molemmissa vastauksissa on kaksi, ja toleranssi 2 % sopii.
+- Kuvaa rako-ruudukko käytetään vain tehtävissä, ei inquiry.json:ssa. Alt-tekstissä on samat ruudukon paikat, eikä siinä ole merkitty λ:aa eikä b:tä.

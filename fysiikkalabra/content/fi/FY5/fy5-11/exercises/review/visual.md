@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 19c4b1112a3292c3
+CONTENT-HASH: b12c411f043ca675
+SCOPE: delta added-exercise from 19c4b1112a3292c3 base 81db4a6fd727
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy5-11-L2-08 — the stem ends with the full question ("Missä järjestyksessä ... voimakkaimpaan?") and the prompt repeats it almost word for word right below; drop one of them.
-- [Minor] solution — the four λ lines and four ratio lines read well as display blocks; ratios "A: 3,0 cm : 6,0 cm = 0,50" are inline text lines, could be aligned, optional.
+- [Minor] fy5-11 — in the L2-10 task the wall is two small grey stubs labelled seinä; legible, but a stub is easy to read as a box (optional).
 
 ## Checked
-- Rendered the ordering task at 390 px (select list "Sija", answer, solution open): stem with four set-ups, selects, the answer line "Asetelma D (λ : b = 0,25), ..." and the solution fit; scrollWidth 390, no clipping, no inline formula over 250 px.
-- The initial list order (A, C, D, B) differs from the answer D, A, C, B; the mm value in set-up C catches the unit trap; the answer shows the ratios without giving the rule beforehand.
-- Text-only: spelling, colon ratios, units.
+- Delta of the two or three added exercises (fi): 1280 px open-exercises L2 parts 11, 12, 13 (L2-09 and L2-10 with the ripple-tank grid figure, solutions open).
+- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
+- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal comma consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
+- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -207,15 +207,15 @@ Taajuudet ovat samat, eli $f_1' = f_1$. Pituuden puolittuminen kaksinkertaistaa 
 **Muunnokset:** Niitä ei tarvita. Pituus on metreinä ja nopeudet metreinä sekunnissa.
 **Sijoitus:** $f_{1,\text{He}} = \dfrac{971\,\text{m/s}}{2 \cdot 0{,}50\,\text{m}} = 971\,\text{Hz}$ ja $f_{1,\text{ilma}} = \dfrac{331{,}5\,\text{m/s}}{1{,}00\,\text{m}} = 331{,}5\,\text{Hz}$, joten $\Delta f = 971\,\text{Hz} - 331{,}5\,\text{Hz} = 639{,}5\,\text{Hz}$
 **Vastaus:** $6{,}4 \cdot 10^{2}\,\text{Hz}$ eli noin $640\,\text{Hz}$, kaksi merkitsevää numeroa kuten pituudessa $0{,}50\,\text{m}$. Taulukon arvot ovat $971\,\text{m/s}$ ja $331{,}5\,\text{m/s}$; eri taulukoiden arvot eroavat vähän, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Heliumissa ääni etenee $971 : 331{,}5 = 2{,}93$-kertaisella nopeudella. Perustaajuus on yhtä moninkertainen: $971\,\text{Hz} : 331{,}5\,\text{Hz} = 2{,}93$. Sävel nousee lähes kolminkertaiseksi, noin puolitoista oktaavia. Siksi heliumia hengittänyt puhuu korkealla äänellä. Erotus on positiivinen, kuten pitääkin, koska helium on ilmaa kevyempi kaasu.
+**Järkevyys:** Heliumissa ääni etenee $971 : 331{,}5 = 2{,}93$-kertaisella nopeudella. Perustaajuus on yhtä moninkertainen: $971\,\text{Hz} : 331{,}5\,\text{Hz} = 2{,}93$. Sävel nousee lähes kolminkertaiseksi, noin puolitoista oktaavia. Ihmisen ääntä se ei muuta samalla tavalla: heliumia hengittäneen ääni kuulostaa oudolta, koska ääniväylän resonanssitaajuudet nousevat, kun taas äänihuulten perustaajuus ei juuri muutu. Erotus on positiivinen, kuten pitääkin, koska helium on ilmaa kevyempi kaasu.
 
 ## fy5-13-L2-09
-**Annettu:** aallon nopeus $v = 75\,\text{m/s}$; täryttäjän ja väkipyörän kohdat ovat solmuja; kuvasta narun värähtelevän osan pituus ja silmukoiden määrä
-**Kysytty:** täryttäjän taajuus $f$ hertseinä
-**Periaate:** Naru värähtelee seisovana aaltona. Täryttäjän taajuus on sama kuin narun taajuus. Kun tiedetään, montako puolikasta aallonpituutta värähtelevälle osalle mahtuu, saadaan aallonpituus. Taajuus saadaan sitten aallon perusyhtälöstä $v = f\lambda$.
-**Kuvaajan lukeminen:** Viivaimen mukaan täryttäjä on kohdassa $0$ ja väkipyörä kohdassa $1{,}20\,\text{m}$, joten värähtelevän osan pituus on $L = 1{,}20\,\text{m}$. Narussa on neljä silmukkaa eli neljä kupua ja viisi solmua päät mukaan lukien, joten $L$ on neljä puolikasta aallonpituutta: $n = 4$.
-**Kaava:** $L = n \cdot \dfrac{\lambda}{2}$, joten $\lambda = \dfrac{2L}{n}$, ja $v = f\lambda$, josta $f = \dfrac{v}{\lambda} = \dfrac{n v}{2L}$
-**Muunnokset:** Niitä ei tarvita. Pituus on metreinä ja nopeus metreinä sekunnissa.
-**Sijoitus:** $\lambda = \dfrac{2 \cdot 1{,}20\,\text{m}}{4} = 0{,}60\,\text{m}$ ja $f = \dfrac{75\,\text{m/s}}{0{,}60\,\text{m}} = 125\,\text{Hz}$
-**Vastaus:** $125\,\text{Hz}$, kolme merkitsevää numeroa kuten viivaimelta luetussa pituudessa $1{,}20\,\text{m}$.
-**Järkevyys:** Narun perustaajuus on $f_1 = \dfrac{75\,\text{m/s}}{2 \cdot 1{,}20\,\text{m}} = 31{,}25\,\text{Hz}$, ja neljäs ominaistaajuus on $4 \cdot 31{,}25\,\text{Hz} = 125\,\text{Hz}$, mikä on sama kuin laskettu taajuus. Yhden silmukan pituus on $0{,}30\,\text{m}$, mikä on puoli aallonpituutta $0{,}60\,\text{m}$.
+**Annettu:** aallon nopeus $v = 75{,}0\,\text{m/s}$; täryttäjän ja väkipyörän kohdat ovat solmuja; kuvasta narun värähtelevän osan pituus ja nykyinen silmukoiden määrä; uudessa kuviossa on viisi silmukkaa
+**Kysytty:** täryttäjän taajuuden nousu $\Delta f$ hertseinä
+**Periaate:** Naru värähtelee seisovana aaltona ominaistaajuuksillaan $f_n = n\dfrac{v}{2L}$. Täryttäjä herättää narun sen silmukkakuvion ominaistaajuudella. Siirtyminen neljästä silmukasta viiteen on kahden ominaistaajuuden erotus.
+**Kuvaajan lukeminen:** Viivaimen mukaan täryttäjä on kohdassa $0$ ja väkipyörä kohdassa $1{,}20\,\text{m}$, joten $L = 1{,}20\,\text{m}$. Narussa on neljä silmukkaa, joten nykyinen kuvio on $n = 4$ ja uusi $n = 5$.
+**Kaava:** $f_n = n\dfrac{v}{2L}$, joten $\Delta f = f_5 - f_4 = (5 - 4)\dfrac{v}{2L} = \dfrac{v}{2L}$
+**Muunnokset:** Ei tarvita: pituus on metreinä ja nopeus metreinä sekunnissa.
+**Sijoitus:** $f_4 = \dfrac{4 \cdot 75{,}0\,\text{m/s}}{2 \cdot 1{,}20\,\text{m}} = 125\,\text{Hz}$ ja $f_5 = \dfrac{5 \cdot 75{,}0\,\text{m/s}}{2 \cdot 1{,}20\,\text{m}} = 156{,}25\,\text{Hz}$, joten $\Delta f = 156{,}25\,\text{Hz} - 125\,\text{Hz} = 31{,}25\,\text{Hz}$
+**Vastaus:** $31{,}3\,\text{Hz}$, kolme merkitsevää numeroa kuten nopeudessa $75{,}0\,\text{m/s}$ ja viivaimelta luetussa pituudessa $1{,}20\,\text{m}$.
+**Järkevyys:** Kahden peräkkäisen ominaistaajuuden erotus on perustaajuus $f_1 = \dfrac{75{,}0\,\text{m/s}}{2 \cdot 1{,}20\,\text{m}} = 31{,}25\,\text{Hz}$, sama kuin laskettu nousu. Taajuuden täytyy nousta, koska useampi silmukka tarkoittaa lyhyempää aallonpituutta.

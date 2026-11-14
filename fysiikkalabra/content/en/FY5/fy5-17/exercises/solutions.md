@@ -215,12 +215,12 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 **Reasonableness:** The echo travels $1402.4\,\text{m/s} \cdot 0.020\,\text{s} = 28\,\text{m}$, half of which is $14\,\text{m}$. With the tissue value $1540\,\text{m/s}$ the result would be $15.4\,\text{m}$, about $10\,\%$ too much, so using the value for the right medium matters.
 
 ## fy5-17-L2-09
-**Given:** from the figure the times of the echoes, the speed of sound in tissue $v = 1540\,\text{m/s}$
-**Asked:** the thickness $\Delta d$ of the layer between the boundaries of echoes B and C, in centimetres
-**Principle:** Each echo comes from one boundary, and the pulse travels to the boundary and back. The thickness of the layer is the difference of two depths, so it follows from the difference of the echo times with the same formula as a depth.
-**Reading the graph:** Echo B is at $t_\text{B} = 50\,\mu\text{s}$ on the time axis and the tall echo C at $t_\text{C} = 90\,\mu\text{s}$; they are read at the peaks against the grid lines. The time spent in the layer is $t_\text{C} - t_\text{B} = 40\,\mu\text{s}$.
-**Formula:** $d = \dfrac{v t}{2}$, so $\Delta d = d_\text{C} - d_\text{B} = \dfrac{v\,(t_\text{C} - t_\text{B})}{2}$
-**Conversions:** $40\,\mu\text{s} = 40 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
-**Substitution:** $\Delta d = \dfrac{1540\,\text{m/s} \cdot 40 \cdot 10^{-6}\,\text{s}}{2} = 0.0308\,\text{m} = 3.08\,\text{cm}$
-**Answer:** $3.08\,\text{cm}$, three significant figures as in the speed $1540\,\text{m/s}$.
-**Reasonableness:** The depths are $d_\text{B} = 3.85\,\text{cm}$ and $d_\text{C} = 6.93\,\text{cm}$, and their difference is $3.08\,\text{cm}$. A thigh is about $7\,\text{cm}$ deep here, so the layer fits in it, and echo C is the last because there are no more boundaries after it.
+**Given:** from the figure the time of echo C, the speed of sound in tissue $v = 1540\,\text{m/s}$
+**Asked:** the depth $d$ of the bone surface below the skin, in centimetres
+**Principle:** The pulse travels from the probe on the skin to the boundary and back, so the distance travelled in the echo time is twice the depth.
+**Reading the graph:** Echo C is the tall peak at $t = 90\,\mu\text{s}$ on the time axis; it is read at the peak against the grid lines.
+**Formula:** $d = \dfrac{v t}{2}$
+**Conversions:** $90\,\mu\text{s} = 90 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
+**Substitution:** $d = \dfrac{1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s}}{2} = 0.0693\,\text{m} = 6.93\,\text{cm}$
+**Answer:** $6.93\,\text{cm}$, three significant figures as in the speed $1540\,\text{m/s}$.
+**Reasonableness:** The echo travels $1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s} = 13.9\,\text{cm}$, half of which is $6.9\,\text{cm}$. A femur lying about seven centimetres below the skin is sensible, deeper than the boundaries of echoes A and B.

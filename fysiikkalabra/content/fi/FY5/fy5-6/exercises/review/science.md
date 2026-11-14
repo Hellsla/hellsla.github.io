@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1ae57cce87a7a6fc
+CONTENT-HASH: 63025e53f5a57e21
+SCOPE: delta added-exercise from 1ae57cce87a7a6fc base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- solutions.md:211 (L1-09) — the reasonableness check attributes the lower speed to Mars's mass alone. Phobos's radius (9380 km) is also larger than a low Earth orbit's. Say "pienempi massa ja hieman suurempi säde", or compare with Phobos's measured period of about 7,65 h, which is a real check.
+- exercises.json (L1-11 ja L1-05) — molemmissa luotain kiertää Kuuta lähes samalla säteellä (1840 km ja 1847 km). Toistoa ei ole, koska L1-05 kysyy ratanopeutta ja L1-11 kentän voimakkuutta taulukkoarvolla.
 
 ## Checked
-- Diff against HEAD~1: only L1-09 (type 5, Suuruusluokka) is new.
-- answers.py run once; all numeric answers inside tolerance.
-- Recomputed: $v = 2137\,\text{m/s}$, $T = 2{,}758\cdot 10^{4}\,\text{s} = 7{,}66\,\text{h}$. This agrees with the real Phobos (about 7,65 h), so the model and the data are sound.
-- Every distractor reproduces its stated error exactly: no square root gives 0,0036 h; r in km under the root gives 0,24 h; dividing by 60 gives 460 h. Neighbouring options are a factor of 32–67 apart, which fits type 5.
-- All options have the same form ("noin X h"), so the correct one is not identifiable by form. Exactly one is correct.
-- The chapter's warned $h$ vs. $R + h$ mistake does not apply, because the task gives the orbital radius; the substituted errors are fair.
-- Notation ($\gamma$, $M$, $r$, $T = \tfrac{2\pi r}{v}$) is the lesson's, and the task stays inside fy5-6.
-- Formula chains checked from the text only: the solution uses aligned blocks with short lines, and the feedback has one inline chain under 300 px.
+- Hash oli sama alussa ja lopussa. Kierros 6: tarkistin kierroksen 5 korjaukset. Diffissä muuttuivat vain L1-11:n unit ja vihje sekä L1-10:n järkevyystarkistus.
+- exercises.json:136 (L1-11): unit on nyt "m/s²" ja vastaa tehtävää. g = γM/r² = 6,674·10⁻¹¹·7,346·10²²/(1,840·10⁶)² = 1,448 m/s² → 1,45, kuten answers.py:ssä.
+- L1-11: Kuun massa on mafy-arvot.tsv:n VERIFIED-riviltä. Toleranssi 4 % kattaa myös arvon 7,35·10²² kg (1,449 m/s²). Vihje on yksikössä, koska haettava arvo on vain massa.
+- L1-10: "alle tuhannesosa" on oikein, koska 5,93·10⁻³/9,81 = 6,0·10⁻⁴. Vastaus 5,934 mm/s² → 5,93 on ennallaan.
+- L2-08: √(5250/88) = 7,724 → 7,7, ennallaan.
+- Kaikkien kolmen kieliversion answer, unit ja tolerance ovat samat.

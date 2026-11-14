@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1ae57cce87a7a6fc
+CONTENT-HASH: 63025e53f5a57e21
+SCOPE: delta added-exercise from 1ae57cce87a7a6fc base 81db4a6fd727
 
 ## Blocking
-(none)
+none
 
 ## Polish
-- exercises.json:97 — "suuruusluokka" is used loosely, as options carry two significant figures — ask "Mikä on Phoboksen kiertoaika ympyräradan mallin mukaan?" or keep and accept.
-- exercises.json:92 — a three-step calculation (v, then T, then h) in L1, whose other tasks ask one quantity; fits L2 better but is within the lesson. Optional.
+1. L1-10 (figure: mean of two readings, formula, mm/s² conversion) is at the top of level 1; acceptable.
+2. L2-08 compares circular-orbit speeds for a comet that does not move on a circle; the solution says so, a student could still read 7,7 as a real ratio.
 
 ## Checked
-- Text only (no renders). New task fy5-6-L1-09 (type 5, magnitude): T=2,76·10^4 s=7,7 h verified (actual Phobos 7,65 h); wrong options reproduced by calculation (no root 0,0036 h; km under root 0,24 h; ÷60 gives 460 h).
-- Options 32–60 times apart; each wrong value comes from one named error and the feedback is correct.
-- Correct option not identifiable by form (similar length, no hedging); correct feedback is a short check only.
-- Warned mistake of the lesson (h instead of r) is not among the distractors, unit and root slips are: acceptable for L1.
-- Uses only v=sqrt(γM/r) and T=2πr/v taught in the chapter; no long formula chain (aligned blocks short).
+- L1-11 now one formula: r given from the Moon centre, mass from MAFY, g = γM/r² = 1,448 m/s² recomputed; level 1, no overlap with L2-02 (which needs R + h) or L1-05 (speed).
+- Solution follows all seven steps with a sanity check against the surface value 1,62 m/s².
+- L1-10 a = 5,93 mm/s² and L2-08 √(5250/88) = 7,72 recomputed; figure radat gives all values, no answer.
+- Set mix and progression still fit.

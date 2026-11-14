@@ -40,5 +40,5 @@ a["fy5-9-L3-05"] = math.sqrt(2 * g * l35 * (1 - math.cos(al35)))  # ½mv² = mgh
 # Added batch (teacher 2026-11-12): figure tasks (kuvaaja-k: A = 3,0 cm, T = 0,40 s) and a MAFY table task
 a["fy5-9-L1-09"] = 2 * pi * math.sqrt(1.00 / 3.72)        # MAFY: g_Mars = 3,72 m/s², l = 1,00 m: T = 2π√(1,00/3,72) s = 3,2577 s -> 3,26 s
 a["fy5-9-L1-10"] = 0.5 * 120 * 0.030 ** 2                 # figure: A = 3,0 cm; E = ½kA² = ½ · 120 N/m · (0,030 m)² = 0,054 J
-a["fy5-9-L2-09"] = 4 * pi ** 2 * 0.150 / 0.40 ** 2        # figure: T = 0,40 s; k = 4π²m/T² = 5,9218 / 0,16 = 37,01 N/m -> 37 N/m
+a["fy5-9-L2-09"] = 2 * pi * 0.030 / 0.40                  # figure: A = 3,0 cm, T = 0,40 s; v_max = 2πA/T = 0,1885 / 0,40 = 0,471 m/s -> 0,47 m/s
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

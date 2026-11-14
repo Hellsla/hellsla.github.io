@@ -276,6 +276,15 @@
           "feedback": "Nopeus ei ole voima, joten sen nuoli $\\overline{v}$ ei kuulu voimakuvioon. Liike ei tarvitse eteenpäin työntävää voimaa. Vaunu jatkaa vauhdillaan, ja voimat vain kääntävät nopeuden suuntaa kohti keskipistettä."
         }
       ]
+    },
+    {
+      "id": "fy5-4-L2-09",
+      "level": 2,
+      "text": "Kuvaaja näyttää auton normaalikiihtyvyyden $a_\\text{n}$ eli kaarteessa kohti keskipistettä osoittavan kiihtyvyyden. Se on ratanopeuden $v$ funktio. Kaarre on vaakasuora ja pyöreä, ja auto ajaa sen tasaisella nopeudella. Käyrällä on yksi merkitty piste. Lue pisteen arvot kuvaajasta ja laske kaarteen säde. Vastauslaatikkoon tulee säde metreinä.",
+      "figure": "fy5-4/kuvaaja-a",
+      "answer": 75.0,
+      "unit": "m",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -351,6 +360,15 @@
       "unit": "km/h",
       "tolerance": 0.02,
       "fbd": "equations"
+    },
+    {
+      "id": "fy5-4-L3-06",
+      "level": 3,
+      "text": "Auton massa on $1200\\,\\text{kg}$. Auto ajaa vaakasuoran, pyöreän kaarteen tasaisella nopeudella. Kuvaaja näyttää kitkavoiman $F$, jota auto tarvitsee kaarteessa. Voima on ratanopeuden $v$ funktio. Auto ajaa kaarteen nopeudella $20\\,\\text{m/s}$. Lue kuvaajasta tarvittava kitkavoima. Laske sitten, kuinka suuri lepokitkakertoimen $\\mu_0$ on vähintään oltava, jotta auto pysyy tiellä. Kitka on ainoa vaakasuuntainen voima. Suurin lepokitka on $\\mu_0 N$. Vastauslaatikkoon tulee kitkakertoimen arvo.",
+      "figure": "fy5-4/kuvaaja-b",
+      "answer": 0.68,
+      "unit": "",
+      "tolerance": 0.02
     }
   ]
 }

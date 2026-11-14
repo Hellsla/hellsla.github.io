@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: caaeaa93666bca57
+CONTENT-HASH: fb0d0423c711ce05
+SCOPE: delta added-exercise from caaeaa93666bca57 base 81db4a6fd727
 
 ## Blocking
-(none)
+none
 
 ## Polish
-1. Stage-1 option 1 ("yhtä kaukana") still contradicts the data (8 s vs 24 s) directly; weak but harmless distractor.
+1. L2-09 is close to the depth part of L2-05 (table instead of figure) but now asks a single depth with the figure to read and a µs and cm conversion; acceptable at level 2.
+2. L1-09 is near L1-03 (sonar depth); the MAFY lookup and ms conversion justify it.
 
 ## Checked
-- Round 2. Checked from text only (no renders).
-- Round 1 Major fixed: correct stage-1 feedback is now "Oikein. Valitse seuraavaksi perustelu, joka selittää vastauksesi." and leaks no reason.
-- "noin" dropped from the correct choice (ratio is exactly 3); correct reason shortened to 93 characters against 83-90, no longer clearly the longest.
-- d = 8,4 km/s · Δt: 67 km and 2,0·10² km, ratio 3 correct; reasons 1 and 4 remain the confusion and the true-but-irrelevant distractors.
+- L2-09 now asks the depth of echo C: d = vt/2 = 1540·90e-6/2 = 6,93 cm recomputed; the repeat of L2-05 b (layer thickness) is gone.
+- Figure a-scan gives C at 90 µs, no depths, description gives the same data without the answer.
+- L1-09: 14,0 m correct, MAFY table named, trap of 1540 m/s caught by tolerance.
+- Solutions complete; set mix fits.

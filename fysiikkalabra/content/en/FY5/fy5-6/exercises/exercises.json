@@ -121,22 +121,22 @@
     {
       "id": "fy5-6-L1-10",
       "level": 1,
-      "text": "The left side of the figure shows the Earth's orbit round the Sun. Read from the figure the Earth's smallest and largest distance from the Sun and use their mean as the radius of a circular orbit. The mass of the Sun is $1.99 \\cdot 10^{30}\\,\\text{kg}$. Calculate the Earth's orbital speed with the circular-orbit model. Give the answer in kilometres per second.",
+      "text": "The left side of the figure shows the Earth's orbit round the Sun. Read from the figure the Earth's smallest and largest distance from the Sun and use their mean as the radius of a circular orbit. The mass of the Sun is $1.99 \\cdot 10^{30}\\,\\text{kg}$. How large is the Earth's acceleration in the circular-orbit model? Give the answer in the unit $\\text{mm/s}^2$.",
       "figure": "fy5-6/radat",
-      "answer": 29.8,
-      "unit": "km/s",
+      "answer": 5.93,
+      "unit": "mm/s²",
       "tolerance": 0.02
     },
     {
       "id": "fy5-6-L1-11",
       "level": 1,
-      "text": "A probe orbits the Moon in an almost circular orbit at a height of $300\\,\\text{km}$ above the surface of the Moon. Look up the mass and the radius of the Moon in the MAFY table (mafytaulukot.fi). Calculate the probe's orbital speed. Give the answer in kilometres per second.",
+      "text": "A probe orbits the Moon in an almost circular orbit whose radius from the centre of the Moon is $1840\\,\\text{km}$. Look up the mass of the Moon in the MAFY table (mafytaulukot.fi). Calculate the gravitational acceleration of the Moon at the probe's orbit. Give the answer in $\\text{m/s}^2$.",
       "lookup": "MAFY",
-      "answer": 1.55,
-      "unit": "km/s",
+      "answer": 1.45,
+      "unit": "m/s²",
       "tolerance": 0.04,
       "hints": [
-        "The values are found in the MAFY table under *Aurinkokunta* (the Solar System)."
+        "The value is found in the MAFY table under *Aurinkokunta* (the Solar System)."
       ]
     }
   ],
@@ -276,7 +276,7 @@
       "level": 2,
       "text": "The right side of the figure shows the orbit of Halley's comet round the Sun. Read from the figure the comet's smallest and largest distance from the Sun. How many times greater would the orbital speed in a circular orbit be at the smallest distance than at the largest one, if a body went round the Sun in a circular orbit with that distance as its radius?",
       "figure": "fy5-6/radat",
-      "answer": 7.72,
+      "answer": 7.7,
       "unit": "",
       "tolerance": 0.02
     }
