@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3cdc03e66d7d0dbd
+CONTENT-HASH: 346b5d0621afee41
 
 ## Blocking
+None.
 
 ## Polish
+None. Delta: v_L, v_H, f_H, T_H, the four named Doppler formulas and the heading "Oikean kaavan valinta ja oletukset" are consistent in lesson, inquiry, exit ticket, sim labels; no old symbols remain; the train example still works with "which formula applies".
 
 ## Checked
-- delta review round 1: the Doppler worked example (lesson.md ~l.588-595) now writes the speeds as stacked fractions (\tfrac{m}{s}) inside the quotient; numbers, symbols, steps and results (341,10 Hz; 285,78 Hz) unchanged.
-- the unit fractions make the cancelling of m/s visible in the ratio v/(v-v_s); legibility is not harmed in a display equation, and the staging of the example is unchanged.
-- nothing else in the lesson was touched; the earlier PASS stands.
+Diff, grep for old symbols, sim labels in lang.

@@ -213,8 +213,8 @@ When the trolley is held still at displacement $x$, a hand pulls or pushes the t
 
 ## Formula: Harmonic force
 When the origin of the $x$-axis is at the point where the spring is at its rest length, and $x$ is the extension or compression of the spring from its rest length, the $x$-component of the force that the spring exerts on an object is
-```latex
-F = -kx
+```kaavat
+harmonic force :: F = -kx
 ```
 where $F$ is the force of the spring on the object ($\text{N}$), $x$ the extension or compression of the spring from its rest length ($\text{m}$) and $k$ the **spring constant** of the spring ($\text{N/m}$). The minus sign gives the direction: the force is always opposite to the displacement. When $x > 0$, $F < 0$, and when $x < 0$, $F > 0$. The magnitude of the force is $k|x|$. The spring constant tells the stiffness of the spring, that is how many newtons of force are needed per metre of extension. The spring of a car's suspension can have tens of kilonewtons per metre, the spring of a toy only a few newtons per metre. For a horizontal spring the rest-length position is also the equilibrium position of the object, so the displacement from the equilibrium position is then $x$. The law holds only when the spring is neither stretched too much nor compressed too much.
 

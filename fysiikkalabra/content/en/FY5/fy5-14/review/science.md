@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7ed4bfd7f2bf21d2
+CONTENT-HASH: 9baf18bba8c8089b
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-- Delta review, round 1: the only change is lesson.md:590 and :594, where the worked example's substitution rows now write the speed unit as `\tfrac{\text{m}}{\text{s}}` instead of `\text{m/s}`. The numbers, symbols and the formulas f = f_0 v/(v ∓ v_s) are unchanged.
-- The units still cancel in v/(v ∓ v_s), so f_1 and f_2 stay in Hz. Dimensionally right.
-- Recomputed: 311·340/310 = 341.097 Hz, 311·340/370 = 285.784 Hz, Δf = 55.31 Hz. The shown values 341.10 Hz, 285.78 Hz and 55.32 Hz (the difference of the rounded values) are unchanged. The answers 341 Hz, 286 Hz and about 55 Hz are right.
-- The new unit notation now matches the unit conversion step just above it (30.0 m/s written with \tfrac), so the example is consistent with itself.
-- Hash 7ed4bfd7f2bf21d2 (--lang en) at the start and at the end.
+Delta re-review after the fixes. sim.js canvas arrows now read v_L and v_H, matching the slider labels (lang sims.fy5-14) and the text. The beats figure alt text (figures.py, figures.json, svg aria-label) ends "T H". The summary Doppler bullet lists MAFY's four formulas with correct signs and conditions in fi, fi-easy and en. The heading is now about choosing the formula. A grep of assets/sims/fy5/fy5-14 and the lesson files finds no v_s, v_h, f_h, T_h or f_b a student can see. The ones left are only in code comments in answers.py, lesson-answers.py and sim.js. answers.py and lesson-answers.py output is identical to origin/main. Earlier checks stand: the four formulas equal MAFY's, the symbols are defined where they first appear, and the example gives 341.10 Hz, 285.78 Hz and Δf 55 Hz.

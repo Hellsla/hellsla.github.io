@@ -207,8 +207,8 @@ Voimakuviossa auto on piirretty takaa katsottuna, joten kaarteen keskipiste on v
 
 ## Kaava: Normaalikiihtyvyys
 Kun kappale liikkuu tasaisessa ympyräliikkeessä, sen normaalikiihtyvyyden suuruus on
-```latex
-a_\text{n} = \frac{v^2}{r}
+```kaavat
+normaalikiihtyvyys :: a_\text{n} = \frac{v^2}{r}
 ```
 missä $a_\text{n}$ on normaalikiihtyvyys ($\text{m/s}^2$), $v$ ratanopeus ($\text{m/s}$) ja $r$ radan säde ($\text{m}$). Kiihtyvyys kasvaa nopeuden neliön mukana. Kun nopeus kaksinkertaistuu, kiihtyvyys nelinkertaistuu. Samalla nopeudella tiukka kaarre eli pieni säde antaa suuren kiihtyvyyden. Jos tunnetaan kierrosaika $T$, ratanopeus lasketaan ensin kaavalla $v = \tfrac{2\pi r}{T}$.
 

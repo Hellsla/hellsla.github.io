@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3cdc03e66d7d0dbd
+CONTENT-HASH: 346b5d0621afee41
 
 ## Blocking
+None.
 
 ## Polish
-- lesson.md:596 — (not in the diff, unchanged since the earlier PASS) $\Delta f = 55{,}32\,\text{Hz}$ comes from the two rounded intermediate values; unrounded it is $55{,}31\,\text{Hz}$. The stated result ($\approx 55\,\text{Hz}$) is unaffected — optional: carry one more decimal or leave it as it is.
+None.
 
 ## Checked
-- Delta (worked example, Sijoitus stage, lesson.md:588–595): only the unit typography changed, `\text{m/s}` → `\tfrac{\text{m}}{\text{s}}` in numerator and denominator of both Doppler substitutions; the numbers, symbols and formulas are unchanged.
-- Units still cancel within each fraction (m/s over m/s), so $f_1, f_2$ stay in Hz; the notation now matches the conversion stage ($30{,}0\,\tfrac{\text{m}}{\text{s}}$).
-- Recomputed: $311 \cdot 340/310 = 341{,}10\,\text{Hz}$, $311 \cdot 340/370 = 285{,}78\,\text{Hz}$, matching the text; the moving-source formula $f = f_0 v/(v \mp v_\text{s})$ agrees with the glossary.
-- Content hash was the same at the start and the end of the review.
+Delta re-review after the fixes. sim.js canvas arrows now read v_L and v_H, matching the slider labels (lang sims.fy5-14) and the text. The beats figure alt text (figures.py, figures.json, svg aria-label) ends "T H". The summary Doppler bullet lists MAFY's four formulas with correct signs and conditions in fi, fi-easy and en. The heading is now about choosing the formula. A grep of assets/sims/fy5/fy5-14 and the lesson files finds no v_s, v_h, f_h, T_h or f_b a student can see. The ones left are only in code comments in answers.py, lesson-answers.py and sim.js. answers.py and lesson-answers.py output is identical to origin/main. Earlier checks stand: the four formulas equal MAFY's, the symbols are defined where they first appear, and the example gives 341.10 Hz, 285.78 Hz and Δf 55 Hz.

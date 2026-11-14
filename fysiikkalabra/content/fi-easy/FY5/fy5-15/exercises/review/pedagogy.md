@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b12b04701a4a8096
-SCOPE: delta added-exercise from 3dd4cf5ba6c03743 base 81db4a6fd727
+CONTENT-HASH: c2befce494c5fcc7
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- fy5-15-L2-09 solution, last sentence ('Sähköteho on moninkertainen...') is extra; delete or leave.
+1. fy5-15 solutions: the level law is in MAFY form and used the same way in each solution; answers unchanged.
+2. Delta review, language fi-easy. Code comments in lessons/FY5/fy5-14/answers.py and lesson-answers.py still use v_s, v_h, f_h. Students do not see them. Update when convenient.
 
 ## Checked
-- L1-09: reads L = 74,0 dB at 4,0 m, inverts the logarithm, sanity check with the 80 dB point; answer 2,5e-5 W/m2 consistent.
-- L2-09: reads the level at 2,0 m, I then P = 4 pi r^2 I = 5,03 mW; second point confirms.
-- Figure shows no power or intensity; description gives the three points.
-- Progression L1 (one inverse) to L2 (two steps) sound.
+Diff of changed symbols and formulas, student-facing text in fi, fi-easy and en, grep for old symbols.

@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8fe46662a2c9c370
+CONTENT-HASH: 1aca946ad8dad687
 
 ## Blocking
+None.
 
 ## Polish
+1. fy5-15 lesson and inquiry: L = 10 lg(I/I0) dB is stated once as the law, with lg explained. Difference and inverse forms are consistent with it. Understandable.
+2. Delta review, language fi-easy. Code comments in lessons/FY5/fy5-14/answers.py and lesson-answers.py still use v_s, v_h, f_h. Students do not see them. Update when convenient.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the rule paragraph in the lesson (same tone in phase reinforces at some places and weakens at others, chapter cited by name) and the corrected sim model note, which now puts the interfering loudspeakers at different places, so it no longer contradicts the co-located setup or suggests that interference always gives a pattern. Selkeä suomi: three short sentences.
+Diff of changed symbols and formulas, student-facing text in fi, fi-easy and en, grep for old symbols.

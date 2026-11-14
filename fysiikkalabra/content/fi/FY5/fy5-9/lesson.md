@@ -204,8 +204,8 @@ Harmonisella värähtelijällä on erikoinen ominaisuus. Jos amplitudi kaksinker
 ## Kaava: Harmonisen värähtelijän jaksonaika
 ### Jousi ja kappale
 Kun kappale värähtelee jousen varassa ja ainoa liikkeen suuntainen voima on jousen harmoninen voima, jaksonaika on
-```latex
-T = 2\pi\sqrt{\frac{m}{k}}
+```kaavat
+harmonisen värähtelijän jaksonaika :: T = 2\pi\sqrt{\frac{m}{k}}
 ```
 missä $T$ on jaksonaika ($\text{s}$), $m$ värähtelevän kappaleen massa ($\text{kg}$) ja $k$ jousen jousivakio ($\text{N/m}$). Suurempi massa kiihtyy samasta voimasta hitaammin, joten jaksonaika kasvaa massan kasvaessa. Jäykempi jousi antaa suuremman voiman, joten jaksonaika lyhenee. Neliöjuuri tarkoittaa, että massa on nelinkertaistettava, jotta jaksonaika kaksinkertaistuu. Kaava pätee myös pystysuoraan riippuvaan jouseen: paino siirtää vain tasapainoasemaa, mutta poikkeama siitä noudattaa samaa lakia.
 
@@ -240,8 +240,8 @@ Matemaattisessa heilurissa pistemäinen kappale riippuu kevyen langan varassa ja
 </svg>
 
 Pienillä kulmilla $\sin\alpha$ on likimain kulma radiaaneina, ja kaarenpituus tasapainoasemasta on $s = l\alpha$. Palauttava voima on silloin $\tfrac{mg}{l}s$ eli verrannollinen poikkeamaan, ja heiluri on harmoninen värähtelijä, jonka "jousivakiona" on $\tfrac{mg}{l}$. Kun se sijoitetaan jousen kaavaan, massa supistuu pois. Pienillä heilahduksilla matemaattisen heilurin jaksonaika on
-```latex
-T = 2\pi\sqrt{\frac{l}{g}}
+```kaavat
+matemaattisen heilurin jaksonaika :: T = 2\pi\sqrt{\frac{l}{g}}
 ```
 missä $T$ on jaksonaika ($\text{s}$), $l$ heilurin pituus eli langan kiinnityskohdan ja kappaleen painopisteen etäisyys ($\text{m}$) ja $g$ putoamiskiihtyvyys ($9{,}81\,\text{m/s}^2$). Jaksonaika ei riipu kappaleen massasta eikä pienillä heilahduksilla amplitudista.
 

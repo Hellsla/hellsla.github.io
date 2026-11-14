@@ -278,7 +278,7 @@
     {
       "id": "fy5-14-L2-07",
       "level": 2,
-      "text": "Syventävä tehtävä. Opiskelija ratkaisee tehtävän: auto ajaa nopeudella $30{,}0\\,\\text{m/s}$ suoraan kohti paikallaan olevaa kuulijaa ja soittaa torvea, jonka taajuus on $500\\,\\text{Hz}$. Äänen nopeus on $340\\,\\text{m/s}$.\n\nOpiskelija käyttää kaavaa $f = f_0 \\cdot \\tfrac{v + v_\\text{s}}{v}$ ja saa kuulluksi taajuudeksi $544\\,\\text{Hz}$.\n\nMikä virhe opiskelijan ratkaisussa on? Laske oikea kuultu taajuus.",
+      "text": "Syventävä tehtävä. Opiskelija ratkaisee tehtävän: auto ajaa nopeudella $30{,}0\\,\\text{m/s}$ suoraan kohti paikallaan olevaa kuulijaa ja soittaa torvea, jonka taajuus on $500\\,\\text{Hz}$. Äänen nopeus on $340\\,\\text{m/s}$.\n\nOpiskelija käyttää kaavaa $f = f_0 \\cdot \\tfrac{v + v_\\text{L}}{v}$ ja saa kuulluksi taajuudeksi $544\\,\\text{Hz}$.\n\nMikä virhe opiskelijan ratkaisussa on? Laske oikea kuultu taajuus.",
       "kind": [
         "error"
       ],
@@ -304,7 +304,7 @@
         },
         {
           "text": "$519\\,\\text{Hz}$: huojuntataajuus on $4\\,\\text{Hz}$ ja ääniraudan taajuus oli matalampi kuin $523\\,\\text{Hz}$.",
-          "feedback": "Oikein: kuvasta huojuntajakso on $0{,}25\\,\\text{s}$, joten $f_\\text{h} = \\tfrac{1}{0{,}25\\,\\text{s}} = 4\\,\\text{Hz}$ ja taajuudet eroavat $4\\,\\text{Hz}$. Vaha laskee tuntematonta taajuutta. Huojunta nopeutui, eli erotus kasvoi, joten tuntematon oli jo ennen vahaa matalampi: $523\\,\\text{Hz} - 4\\,\\text{Hz} = 519\\,\\text{Hz}$.",
+          "feedback": "Oikein: kuvasta huojuntajakso on $0{,}25\\,\\text{s}$, joten $f_\\text{H} = \\tfrac{1}{0{,}25\\,\\text{s}} = 4\\,\\text{Hz}$ ja taajuudet eroavat $4\\,\\text{Hz}$. Vaha laskee tuntematonta taajuutta. Huojunta nopeutui, eli erotus kasvoi, joten tuntematon oli jo ennen vahaa matalampi: $523\\,\\text{Hz} - 4\\,\\text{Hz} = 519\\,\\text{Hz}$.",
           "correct": true
         },
         {

@@ -232,8 +232,8 @@ Nopeuden muutoksen $\Delta\overline{v}$ näkee, kun piirtää kaksi peräkkäist
 
 ## Kaava: Ratanopeus
 Tasaista ympyräliikettä kuvaa **kierrosaika** $T$. Se on aika, jossa kappale kiertää radan kerran. Kierrosajan käänteisluku on **pyörimistaajuus** $f$. Se kertoo, kuinka monta kierrosta kappale tekee aikayksikössä:
-```latex
-f = \frac{1}{T}
+```kaavat
+taajuus :: f = \frac{1}{T}
 ```
 missä $f$ on pyörimistaajuus ($\tfrac{1}{\text{s}}$) ja $T$ kierrosaika ($\text{s}$). Kun kierrosaika on $T = 0{,}50\,\text{s}$, kappale tekee $2{,}0$ kierrosta sekunnissa. Silloin $f = 2{,}0\,\tfrac{1}{\text{s}}$. Pyörimistaajuus ilmoitetaan usein myös kierroksina minuutissa. Esimerkiksi $45\,\tfrac{1}{\text{min}}$ muunnetaan sijoittamalla $1\,\text{min} = 60\,\text{s}$. Silloin $45\,\tfrac{1}{\text{min}} = \tfrac{45}{60\,\text{s}} = 0{,}75\,\tfrac{1}{\text{s}}$.
 

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7ed4bfd7f2bf21d2
+CONTENT-HASH: 9baf18bba8c8089b
 
 ## Blocking
+None.
 
 ## Polish
+None. Delta: v_L, v_H, f_H, T_H, the four named Doppler formulas and the heading "Choosing the formula and assumptions" are consistent in lesson, inquiry, exit ticket, sim labels; no old symbols remain; the train example still works with "which formula applies".
 
 ## Checked
-- Delta review: the worked example's Doppler unit fractions changed from m/s to \tfrac{m}{s} in the f_1 and f_2 lines; the numbers, symbols and steps are unchanged.
-- The change only affects the layout of the units in the formula, and the stage order and the step-by-step staging are intact.
-- Nothing in the diff discloses an answer or touches the inquiry, figures or exercises.
+Diff, grep for old symbols, sim labels in lang.

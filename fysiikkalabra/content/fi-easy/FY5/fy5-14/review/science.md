@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fdb52cc8dedcff71
+CONTENT-HASH: f1c2e6bb3424337d
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-- Delta review, round 1: lesson.md worked example (Sijoitus, about lines 588–596). The only change is how the unit is typeset: m/s is now written as `\tfrac{\text{m}}{\text{s}}` in the two substitution rows. No number, symbol or formula changed.
-- Units: m/s over m/s cancels in v/(v ∓ v_s), so both rows still give hertz. The new form matches the m/s fraction already used in the Yksikkömuunnokset step.
-- Recomputed: f1 = 311·340/310 = 341,10 Hz; f2 = 311·340/370 = 285,78 Hz; Δf = 55,31 Hz (the lesson shows 55,32 because it subtracts the rounded values; it rounds to 55 Hz either way). Results 341 Hz, 286 Hz and about 55 Hz are unchanged and still correct.
-- Hash (`--lang fi-easy`) was fdb52cc8dedcff71 at the start and at the end.
+Delta re-review after the fixes. sim.js canvas arrows now read v_L and v_H, matching the slider labels (lang sims.fy5-14) and the text. The beats figure alt text (figures.py, figures.json, svg aria-label) ends "T H". The summary Doppler bullet lists MAFY's four formulas with correct signs and conditions in fi, fi-easy and en. The heading is now about choosing the formula. A grep of assets/sims/fy5/fy5-14 and the lesson files finds no v_s, v_h, f_h, T_h or f_b a student can see. The ones left are only in code comments in answers.py, lesson-answers.py and sim.js. answers.py and lesson-answers.py output is identical to origin/main. Earlier checks stand: the four formulas equal MAFY's, the symbols are defined where they first appear, and the example gives 341.10 Hz, 285.78 Hz and Δf 55 Hz.

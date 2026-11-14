@@ -207,8 +207,8 @@ In the free-body diagram the car is drawn from behind, so the centre of the bend
 
 ## Formula: Centripetal acceleration
 When an object moves in uniform circular motion, the magnitude of its centripetal acceleration is
-```latex
-a_\text{n} = \frac{v^2}{r}
+```kaavat
+centripetal acceleration :: a_\text{n} = \frac{v^2}{r}
 ```
 where $a_\text{n}$ is the centripetal acceleration ($\text{m/s}^2$), $v$ the tangential speed ($\text{m/s}$) and $r$ the radius of the path ($\text{m}$). The acceleration grows with the square of the speed: when the speed doubles, the acceleration becomes four times as large. At the same speed a tight bend, that is a small radius, gives a large acceleration. If the period $T$ is known, the tangential speed is first found from the formula $v = \tfrac{2\pi r}{T}$.
 

@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3cdc03e66d7d0dbd
+CONTENT-HASH: 346b5d0621afee41
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] lesson.md, Sijoitus (vaihe 5/7) — the units in the two substitution fractions are now stacked `\tfrac{m}{s}`, which renders small and makes the denominator tall. The step 6 text, stage 1 and the check in stage 7 still use `m/s` — optional: use one notation throughout, e.g. `\text{m/s}` in the fraction.
+- [Minor] fig 21 (fy5-14-fig-21-390): the v_L and v_H arrow labels are small and light blue at 390 px; enlarge slightly or darken.
 
 ## Checked
-- Delta (only the two substitution rows of the worked example changed). Opened fy5-14-example-390-1.png and fy5-14-example-390-2.png: both substitution rows render as aligned rows with no clipping or horizontal overflow at 390 px. The rest of the example (stages 1–7) kept its layout. Hash unchanged at the end.
+- fy5-14-fig-21-390, sim-390 (labels v_L upright L), theory-1280-4/5, stage-sovella-390-1 (fi).
+- Own captures of the four-formula Doppler tables (two two-line named tables, Lisätiedoksi) at 390 and 1280 px in fi and 390 px in en: names bold, formulas aligned, upright subscripts L and H, no clipping.
+- fi-easy shares the structure; not separately captured.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

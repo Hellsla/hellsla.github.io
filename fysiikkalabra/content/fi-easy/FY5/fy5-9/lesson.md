@@ -210,8 +210,8 @@ Kaksinkertainen voima antaa kaksinkertaisen kiihtyvyyden. Samassa ajassa kaksink
 ## Kaava: Harmonisen värähtelijän jaksonaika
 ### Jousi ja kappale
 Kappale värähtelee jousen varassa. Liikkeen suunnassa vaikuttaa vain jousen harmoninen voima. Silloin jaksonaika on
-```latex
-T = 2\pi\sqrt{\frac{m}{k}}
+```kaavat
+harmonisen värähtelijän jaksonaika :: T = 2\pi\sqrt{\frac{m}{k}}
 ```
 missä $T$ on jaksonaika ($\text{s}$), $m$ värähtelevän kappaleen massa ($\text{kg}$) ja $k$ jousen jousivakio ($\text{N/m}$). Jousivakio kertoo, kuinka jäykkä jousi on.
 
@@ -250,8 +250,8 @@ Liikettä ohjaa painon radan suuntainen komponentti $G_\text{t} = mg\sin\alpha$.
 </svg>
 
 Pienillä kulmilla $\sin\alpha$ on likimain kulma radiaaneina. Kaarenpituus tasapainoasemasta on $s = l\alpha$. Palauttava voima on silloin $\tfrac{mg}{l}s$. Se on verrannollinen poikkeamaan, joten heiluri on harmoninen värähtelijä. Sen "jousivakiona" on $\tfrac{mg}{l}$. Kun tämä sijoitetaan jousen kaavaan, massa supistuu pois. Pienillä heilahduksilla matemaattisen heilurin jaksonaika on
-```latex
-T = 2\pi\sqrt{\frac{l}{g}}
+```kaavat
+matemaattisen heilurin jaksonaika :: T = 2\pi\sqrt{\frac{l}{g}}
 ```
 missä $T$ on jaksonaika ($\text{s}$), $l$ heilurin pituus eli langan kiinnityskohdan ja kappaleen painopisteen etäisyys ($\text{m}$) ja $g$ putoamiskiihtyvyys ($9{,}81\,\text{m/s}^2$). Jaksonaika ei riipu kappaleen massasta. Pienillä heilahduksilla se ei riipu myöskään amplitudista.
 
