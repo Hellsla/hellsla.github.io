@@ -324,7 +324,7 @@ Each of the ten items of Part I is worth $2$ p, $20$ p in total:
 The problems of Parts II and III are at the end of the page under Problems, and their title says which part each problem belongs to. The problems of Part II are worth $15$ p and the data-based problems of Part III $20$ p. The points of each part of a problem are marked on it. Write a complete solution for every calculation: the given and requested quantities, the principle, the formula solved for the unknown, the substitution with units, the answer to the right precision and a reasonableness check.
 
 ### Aids
-Use the same aids as in the real exam: a calculator, a spreadsheet, a graphing program and a formula editor, together with the exam's tables and formulas. Your notes, the textbook, the internet and the model answers on this page stay closed throughout the exam. The programs and materials allowed in the real exam are given in the regulations of the Matriculation Examination Board, so check them before the exam.
+Use the same aids as in the real exam: the computer's calculator program, a spreadsheet, a graphing program and a formula editor, together with the exam's tables and formulas. A separate calculator or a printed book of tables is not allowed in the physics exam. Your notes, the textbook, the internet and the model answers on this page stay closed throughout the exam. The programs and materials allowed in the real exam are given in the regulations of the Matriculation Examination Board, so check them before the exam.
 
 ## Time plan {Aikataulu}
 
