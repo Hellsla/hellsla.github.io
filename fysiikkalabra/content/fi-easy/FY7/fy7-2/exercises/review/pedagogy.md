@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: fab32967a3807688
+CONTENT-HASH: 404b2f409486b34d
+SCOPE: delta numbers from 8fa4836f5a4d0631 base 619f34a
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- Same levels, order, sub-questions, field instructions and hints as the reviewed Finnish; the new task fy7-2-L2-08 has the same structure, options and feedback as fi.
-- The situation comes first and the question last in its own sentence in fy7-2-L2-08; context is recognisable to a 17-year-old.
-- Each distractor's feedback names the one misconception it carries and repairs it; the correct option's feedback does not disclose the answer before the choice.
-- Solutions keep Find/Principle/Model answer order and every step the Finnish has; a student could follow them.
-- Clearer Finnish (NOTES.md section 12): whole connected sentences, difficult words explained in the sentence (e.g. kääntäen verrannollinen, vektorisumma), physics terms and all steps unchanged.
-- No wording fix was needed.
+- L2-09 Järkevyys: task 2-2 radius 7,6 mm x 3,75 = 28 mm matches 2,8 cm; the id replaced by the task number the student sees.
+- Language checked: fi-easy. Hash 404b2f409486b34d at start; unchanged at end.

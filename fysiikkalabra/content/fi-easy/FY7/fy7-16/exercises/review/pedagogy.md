@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 186e0da2b094809b
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 66110211ff5fce52
+SCOPE: delta added-exercise from 186e0da2b094809b base 8f23aa7ae3bd
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- fy7-16-L2-09 text: 'yhtä suurin vuoaskelin' is hard for S2; write 'Jokainen kenttäviiva tarkoittaa yhtä suurta määrää magneettivuota.'
+- fy7-16-L2-10 text: give a) b) lines for the three questions.
 
 ## Checked
-- Level counts and ids equal to fi; the new task fy7-16-L2-08 has the same form, prompt and options as fi.
-- Situation first, question last kept; the task needs no figure, so nothing to check at 360 px beyond long formulas, which break normally.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Solution keeps Kysytty/Find, Periaate/Principle, Mallivastaus/Model answer and the discussion of the wrong options.
-- fi-easy: short sentences, difficult terms explained once, no content lost.
+- L2-10 now asks 70 km, beyond the 40 km graph: 7 halvings, 0,78 %, needs a and the dB step; the earlier Blocking is fixed. L2-09: 4,2 V x 4/6 = 2,8 V.
+- Language checked: fi-easy. Hash 66110211ff5fce52 at start; unchanged at end.

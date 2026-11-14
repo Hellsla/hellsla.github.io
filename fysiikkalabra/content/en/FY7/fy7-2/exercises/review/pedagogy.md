@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 61de3a14e74dc141
+CONTENT-HASH: f428ce1e18c69703
+SCOPE: delta numbers from cf9ed883d9acab26 base 619f34a
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- Same levels, order, sub-questions, field instructions and hints as the reviewed Finnish; the new task fy7-2-L2-08 has the same structure, options and feedback as fi.
-- The situation comes first and the question last in its own sentence in fy7-2-L2-08; context is recognisable to a 17-year-old.
-- Each distractor's feedback names the one misconception it carries and repairs it; the correct option's feedback does not disclose the answer before the choice.
-- Solutions keep Find/Principle/Model answer order and every step the Finnish has; a student could follow them.
-- English is natural and at the right reading level; decimal points used.
-- No wording fix was needed.
+- L2-09 Reasonableness: task 2-2 radius 7.6 mm x 3.75 = 28 mm matches 2.8 cm; no lesson id shown to the student.
+- Language checked: en. Hash f428ce1e18c69703 at start; unchanged at end.

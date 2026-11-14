@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b366c16fb04b0dad
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 50e828664421391d
+SCOPE: delta added-exercise from b366c16fb04b0dad base 8f23aa7ae3bd
 
 ## Blocking
-(none)
-
-## Fixed
-- content/fi-easy/FY7/fy7-6/exercises/solutions.md — L2-08 solution — awkward "Alumiini johtaa sähköä hyvin, ja se on tosi." -> "Se, että alumiini johtaa sähköä hyvin, on tosi."
+- none
 
 ## Polish
-(none)
+- fy7-6-L3-06 is only a little harder than L2-09 (same graph, one more step); it is acceptable as level 3 because it joins the force balance and the graph, but the third question of the set that reads F(v) from this figure is enough.
 
 ## Checked
-- NOTES.md §12: clearer Finnish, short sentences, 'ideaaliseksi eli häviöttömäksi' / 'suuruusluokka' explained, same physics.
-- New task L2-08: prompt, options, feedback and solution (Kysytty/Periaate/Mallivastaus, Reasonableness) keep the fi level, order and staging; feedback repairs the misconception without giving the answer away before the choice.
-- Terminology consistent with the lesson and the rest of the set.
-- Figures (where the task has them): descriptions translated, no answer disclosed beyond fi.
+- L2-09: P = Fv with F = 0,40 N at 0,25 m/s gives 100 mW; the solution derives P = Fv from work per time; check at half speed.
+- L3-06: terminal speed from mg = kv, k = 1,6 N·s/m from two points, v = 0,28 m/s correct; figure description gives no power or terminal speed.
+- Both questions last or near last; units, conversions and sig figs explained.
+- Language checked: fi-easy. Hash 50e828664421391d at start and end.

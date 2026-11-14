@@ -59,7 +59,7 @@ def _coil_mark(f, x, y, into, r=7, fill=COPPER):
         f.circle(x, y, 2.5, WHITE)
 
 
-def _panel(f, cx, z_rx, tag, R=20.0, R2=20.0, s=4.0, y0=262):
+def _panel(f, cx, z_rx, tag, R=20.0, R2=20.0, s=4.0, y0=262, label=True):
     """One panel of the charger figure: transmitter coil (radius R mm) at y0, receiver (R2) at height z_rx mm."""
     f.defs_add(f'<clipPath id="fy716-clip-{tag}"><rect x="{n(cx - 136)}" y="56" width="272" height="244"/></clipPath>')
     X = lambda r: cx + r * s
@@ -88,7 +88,8 @@ def _panel(f, cx, z_rx, tag, R=20.0, R2=20.0, s=4.0, y0=262):
     # coils: transmitter current into the page on the right, out on the left -> field up through the middle
     _coil_mark(f, X(R), Y(0), True); _coil_mark(f, X(-R), Y(0), False)
     f.circle(X(R2), py, 6, COPPER, INK, 1.5); f.circle(X(-R2), py, 6, COPPER, INK, 1.5)
-    f.tex(cx, py - 21, r"\text{puhelin}", "middle", bg=True)
+    if label:
+        f.tex(cx, py - 21, r"\text{puhelin}", "middle", bg=True)
     return phi_rx / ref
 
 
@@ -191,18 +192,20 @@ def charger_points():
             "magneettikentän, jonka vihreät kenttäviivat kiertävät käämin johtimien ympäri ja kulkevat käämin keskeltä "
             "ylöspäin. Kenttäviivat on piirretty yhtä suurin vuoaskelin, joten viivojen lukumäärä on verrannollinen "
             "vuohon. Vasemmalla puhelin on 3 millimetrin päässä ja oikealla 6 millimetrin päässä laturista. "
-            "Vastaanotinkäämin läpi kulkevat viivat on piirretty tummemmin.")
-    _panel(f, 150, 3.0, "a")
-    _panel(f, 450, 6.0, "b")
+            "Vastaanotinkäämin kaksi johdinta näkyy puhelimen pohjassa kahtena kuparinvärisenä pisteenä, ja käämin läpi, "
+            "pisteiden välistä, kulkevat viivat on piirretty tummempina ja paksumpina: ne lasketaan, ja niiden määrä on "
+            "verrannollinen käämin läpi kulkevaan vuohon. Lähetinkäämin virta on kummassakin paneelissa sama.")
+    _panel(f, 150, 3.0, "a", label=False)
+    _panel(f, 450, 6.0, "b", label=False)
     f.line(300, 24, 300, 366, RULE, 1.5, "6 5")
-    f.tex(150, 32, r"z = 3\,\text{mm}", "middle", w=150)
-    f.tex(450, 32, r"z = 6\,\text{mm}", "middle", w=160)
+    f.tex(150, 32, r"\text{puhelin}:\ z = 3\,\text{mm}", "middle", w=230)
+    f.tex(450, 32, r"\text{puhelin}:\ z = 6\,\text{mm}", "middle", w=230)
     f.tex(150, 318, r"\text{laturi}", "middle", w=100)
     f.tex(450, 318, r"\text{laturi}", "middle", w=100)
     f.tex(8, 352, r"\text{lähetinkäämi}", "start")
     f.line(42, 340, 66, 270, MUTED, 1.5)
-    f.tex(306, 100, r"\text{vastaanotinkäämi}", "start", bg=True)
-    f.line(344, 112, 367, 175, MUTED, 1.5)
+    f.tex(306, 62, r"\text{vastaanotinkäämi}", "start")
+    f.line(330, 74, 366, 231, MUTED, 1.5)
     return f.svg()
 
 

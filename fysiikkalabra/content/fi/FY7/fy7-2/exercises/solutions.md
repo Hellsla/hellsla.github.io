@@ -221,7 +221,7 @@ Paino on noin $10^{-14}$-osa magneettisesta voimasta, joten voimakuvioon piirret
 **Muunnokset:** $B = 0{,}80\,\text{mT} = 0{,}80 \cdot 10^{-3}\,\text{T}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $r = \dfrac{9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 4{,}0 \cdot 10^{6}\,\text{m/s}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}80 \cdot 10^{-3}\,\text{T}} = 2{,}843 \cdot 10^{-2}\,\text{m} = 2{,}843\,\text{cm}$
 **Vastaus:** $2{,}8\,\text{cm}$, kaksi merkitsevää numeroa kuten vauhdissa ja kentässä.
-**Järkevyys:** Tulos on samaa suuruusluokkaa kuin tehtävän $\text{fy7-2-L1-02}$ elektronisuihkuputkessa (millimetrejä). Nyt vauhti on kaksi kertaa suurempi ja kenttä noin kaksi kertaa heikompi, joten säde on noin neljä kertaa suurempi kuin siinä; senttimetrien kokoluokka sopii.
+**Järkevyys:** Tehtävän 2-2 elektronisuihkuputkessa säde oli $7{,}6\,\text{mm}$. Nyt vauhti on kaksi kertaa suurempi ja kenttä noin puolet siitä, joten säde on noin $3{,}75$ kertaa suurempi eli noin $28\,\text{mm}$; senttimetrien kokoluokka sopii.
 
 ## fy7-2-L2-09
 **Annettu:** kuvaaja $r(v)$, $B = 0{,}20\,\text{T}$, $|q| = 1{,}602 \cdot 10^{-19}\,\text{C}$, $v = 1{,}5 \cdot 10^{6}\,\text{m/s}$, nopeus kohtisuorassa kenttää vastaan

@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 84431a520674b52a
-Mode: delta (new task fy7-14-L1-09 and its solution), round 1
+CONTENT-HASH: 3d1e122452fa32a3
+SCOPE: delta added-exercise from 84431a520674b52a base 8f23aa7ae3bd
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] 14-17 Järkevyys: wording "Se on odotettua, koska yksi pinnoitekerros ei voi kumota…" is fine now; no further change.
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: the dashed "Syventävä tehtävä"/"Extension task" tag on the marked exercises at 360 and 1280 px (tag 24 px high, not clipped, beside the number; no duplicate lead-in left in the task text; count matches the diff), LaTeX and tables intact; scrollWidth = viewport.
-- Rebuilt and captured fy7-14 (fi-easy); opened fy7-14-open-exercises captures at 1280 px (last parts of the level) showing fy7-14-L1-09 with its task text, options or input, feedback, answer and opened solution.
-- Layout survived: no clipping or horizontal overflow, options are whole rows, solution blocks (Find, Principle, Model answer) read in order, display equations aligned and broken at meaningful steps.
-- Maths: KaTeX renders, numbers with upright units and thin space, \cdot, colon for division, SI units upright; natural Finnish, decimal comma, glossary terms consistent.
-- No figures in the new task; the lesson page and other tasks are unchanged (delta).
+- Added 14-17 (L2-08) and 14-23 (L3-06) with graphs and open solutions (fy7-14-open-exercises-L2-1280-10, -11, L3-1280-9, -10, full size). Redrawn soap-curve: label "saippuakalvo" now in the clear area below the peak, the earlier Major is resolved; coating graph labelled and legible; chains aligned, decimal comma, units upright; the set reads as one.
+- Rest not re-reviewed.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

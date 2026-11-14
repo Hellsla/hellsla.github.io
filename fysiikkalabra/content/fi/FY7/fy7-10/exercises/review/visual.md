@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0103d8f31883bc59
+CONTENT-HASH: 91929cab691c65d8
+SCOPE: delta added-exercise from 0103d8f31883bc59 base 8f23aa7ae3bd
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] exercises.json L2-08 correct feedback opens "Oikein, tämä rivi on väärin:" which reads as a contradiction; write "Oikein: tämä rivi sisältää virheen."
-- [Minor] fy7-10-L2-08 stem — five short paragraphs (rows 1–4 and the task) are fine, but the instruction sentence "Valitse väärä rivi tai viimeinen vaihtoehto…" could stand before the rows so the reader knows what to look for.
+- [Minor] 10-18 solution — the highlighted Vastaus box still shows n_2 ≈ 1,50 while the field asks the angle α_2 (angle follows in the text below); show the asked angle in the box.
 
 ## Checked
-- Render fy7-10-L2-08 at 390 px: the four rows with inline and display formulas (sin α2 = 1,00·sin 30,0° / 1,52 fits), five choices with feedback, solution with four fractions; no overflow or clipping.
-- Text only: choices in row order with 'ei virhettä' last (not rotated by length); the error (swapped n) is the chapter's warned mistake and each wrong row has a feedback naming the matching misconception.
+- Delta: changed 10-18 solution (open-exercises-L2-1280 parts 12-13 at full size): k as \dfrac, values 0,30/0,90, 1,50, 22,5°, new Järkevyys sentence; layout and notation intact, numbers consistent through the chain. Rest of the set not re-reviewed.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

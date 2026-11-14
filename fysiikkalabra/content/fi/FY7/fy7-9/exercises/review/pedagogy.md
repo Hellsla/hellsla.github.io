@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: bdef4444cc3b7d40
-
-Scope: new task fy7-9-L2-08 (ennuste/mittausdata, YO type 10); rest of set was PASS.
+CONTENT-HASH: 1425766382012de9
+SCOPE: delta numbers from a487e0cb2b0dcac1 base cf48f26
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- exercises.json:247 — "Tämä pitää mittausepävarmuuden sisään jäävää eroa todellisena." is clumsy Finnish — "Tässä mittausepävarmuuden sisään jäävää eroa pidetään todellisena."
+- fy7-9/spectrum-task description still omits the peak position (1,2 um); add it for a reader without sight (carried over).
 
 ## Checked
-- Correct option not identifiable by form: same length and template as the two near-twin distractors; the odd-template option (13 K) is a distractor.
-- Distractors carry the chapter's own mistakes: celsius instead of kelvin (ratio 1,7 verified), inverse reading (0,7), difference inside the uncertainty (852 K vs 865 K).
-- Numbers verified: 4,10/2,90 = 1,41; range 1,33-1,50; T2, T3 ranges 828-878 and 840-892 K.
-- Within lesson (Wien, absolute temperature) plus uncertainty from earlier chapters; no photon or power.
-- Solution follows step by step, with all three wrong options explained.
-- Widest inline formula 212 px, no display chains (render). Text/table read from text only.
+- Diff: 1,434 x 5772 K = 8277 K = 8280 K; 1,43 as the rounded ratio is consistent with the answer 8,3e3 K.
+- Language checked: fi. Hash 1425766382012de9 at start; unchanged at end.

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: aa0d1a01b2d22233
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 77d121218078612f
+SCOPE: delta added-exercise from aa0d1a01b2d22233 base 8f23aa7ae3bd
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md L1-05 Periaate — "koska vaiheiden jännitteet ovat eri vaiheissa" is close to a tautology; e.g. "Vaihejännite on $U : \sqrt{3}$. Se johtuu siitä, että vaihejännitteiden välillä on $120^\circ$:n vaihe-ero."
+- none
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Round-1 blocker fixed: L1-05 Sijoitus "$P = \sqrt{3} \cdot 400\,000\,\text{V} \cdot 800\,\text{A} \approx 554\,260\,000\,\text{W} = 554{,}26\,\text{MW}$" (en 554.26) is now correct: √3 · 3,2·10⁸ W = 554 256 258 W ≈ 554 260 000 W; Vastaus 554 MW (3 s.f.) and the stored answer 554.2563 agree.
-- L1-05 Periaate: phase voltage $U : \sqrt{3}$ and total power $3 \cdot (U : \sqrt{3}) \cdot I = \sqrt{3}\,U I$; LaTeX, division colon and \cdot per house rules.
-- Two-wire sentences in the other tasks and solutions unchanged since round 1.
-- Hash identical at start and end of this round.
+- Added exercises L2-09 (fi-easy, FY7 fy7-8): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-8.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
+- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
+- Hash identical at start and end.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

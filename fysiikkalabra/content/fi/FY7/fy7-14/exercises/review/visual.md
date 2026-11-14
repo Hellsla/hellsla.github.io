@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 59eedd9cce3ae8b0
-Round: 1
+CONTENT-HASH: 8eaee81f9fae4b2f
+SCOPE: delta added-exercise from 59eedd9cce3ae8b0 base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
-- [Minor] fy7-14-L1-09 — väärän vaihtoehdon $\lambda/(4n)$ palaute "unohdettu yläpinnan heijastuksen puolen aallonpituuden siirtymä" on kömpelö; esim. "unohdettu yläpinnan heijastuksessa tapahtuva puolen aallonpituuden siirtymä".
+- [Minor] 14-16 solution, Kuvaajan lukeminen — "Pohja on käyrän alin kohta ja viiva on sen yläpuolella" is still clumsy; write "viiva on pohjan yläpuolella".
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: the dashed "Syventävä tehtävä"/"Extension task" tag on the marked exercises at 360 and 1280 px (tag 24 px high, not clipped, beside the number; no duplicate lead-in left in the task text; count matches the diff), LaTeX and tables intact; scrollWidth = viewport.
-- Kuvat 390 px (oma skripti vis_k7q.py, uusi tehtävä palautteineen ja ratkaisuineen auki): doc scrollWidth 390, ei vaakaylivuotoa, ei yli 300 px leveitä KaTeX-ketjuja, ei KaTeX-virheitä. Sivun 1280 px -kaappauksia en avannut; ne ja muu sivu katsottu vain tekstistä ja determinististen tarkistusten perusteella.
-- 14-9 (L1-09): 390 px, palaute ja ratkaisu auki: kaavavaihtoehdot ($\dfrac{}{}$) ja aligned-lohko mahtuvat, ei ylivuotoa.
-- Muoto: kaikki vaihtoehdot samaa muotoa, oikea ei erotu; harhat osuvat varoitettuihin virheisiin (siirtymä unohtunut, matkaero $nd$, $n\lambda$). Tekstistä ja renderistä.
-- L3-01, L3-02: kappalejako ok.
+- Redrawn fy7/soap-curve in 14-23 (open-exercises-L3-1280 parts 9-10, full size): the label "saippuakalvo" now sits at the lower right under the curve, so the peak (about 7,7 %, 620 nm) and the minimum (466 nm) are fully visible and readable; axes, units and ticks good. Reads well; the earlier Major is resolved.
+- 14-16 (coating-curve, open-exercises-L2-1280 parts 10-11): graph, solution and typography fine.
+- Delta only: the added exercises; rest of the set not re-reviewed.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0103d8f31883bc59
-ROUND: 1
+CONTENT-HASH: 3f1a684d0e3d8b8e
+SCOPE: delta added-exercise from 0103d8f31883bc59 base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
+- lessons/FY7/fy7-10/answers.py:51–52 — the comment still says "slope k = 0,596 / 0,40 = 1,49 = n" and computes an unused `k`, while line 53 (and the solution) use n = 1,50 — drop the dead line or reword the comment to the solution's readings 0,30 / 0,90 → 1,50.
 
 ## Checked
-- New task L2-08 (find the error) only (additions only since b032dcb83~1). Checked from the text only; no renders.
-- Recomputed: α₁ = 30,0° (below the critical angle 41,1°, so the ray does leave the glass, as the task says); the right sin α₂ = 1,52 · 0,500 = 0,760, α₂ = 49,46° → 49,5°. The student's swapped sin α₂ = 0,500 : 1,52 = 0,329, 19,2°. Only row 3 is wrong; rows 1, 2 and 4 are right as written.
-- Each option's feedback gives that row's own check. The row 1 and row 2 distractors are the chapter's warned mistakes (always toward the normal; the angle measured from the surface).
-- "Laskussa ei ole virhettä" is last, as docs/exercise-types.md requires.
-- n₁ belongs to the medium the light comes from, as in the lesson's n₁ sin α₁ = n₂ sin α₂. Solution complete, with a real check (both sides 0,760; 49,5° > 30,0°).
-- Inline formulas (row 3's dfrac, "α₁ = 90° − 60,0° = 30,0°") are judged from the text, under 300 px.
-- answers.py: all 19 numeric answers agree with exercises.json.
-- Hash 0103d8f31883bc59 at start and end.
+- Delta round 3: L1-09 and L2-09 (added exercises); hash identical at start and end.
+- Round-2 polish fixed: L2-09 answers.py now uses n = 1,50: asin(sin 35,0° / 1,50) = asin(0,3824) = 22,481° = stored 22.48145, matching the solution's 22,5°.
+- fit figure: least-squares line of the plotted data has slope 1,4895, intercept −0,004, so it passes 0,294 at 0,20 and 0,890 at 0,60; readings 0,30 / 0,90 are right to the grid's precision, and the 3 % tolerance covers k = 1,49 too (22,64°).
+- L2-09 physics: sin α₁ = (n₂/n₁) sin α₂, slope = n₂ with n₁ = 1,00; read from the line, not raw points (guardrail).
+- L1-09: MAFY water 1,333; sin α₂ = 0,7880 / 1,333 = 0,5912, α₂ = 36,24° = answers.py; refraction toward the normal; three figures from 52,0°.

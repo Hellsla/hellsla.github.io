@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 613d454f2b784ce1
-
-Round 1 (exercises): full review; new YO-skill task fy7-12-L2-08 (two-stage perustelumonivalinta), the rest of the set PASS before. Checked from the text only; no renders.
+CONTENT-HASH: ab4dfc69641048ff
+SCOPE: delta added-exercise from 613d454f2b784ce1 base 8f23aa7ae3bd
 
 ## Blocking
 
 ## Polish
-- exercises.json:264 (L2-08, option "Kaikki valo taittuu ilmaan") — "Rajapinnassa osa valosta heijastuu aina" is not exact for a laser: polarised light at the Brewster angle (36,9° water → air) does not reflect at all — fix: "Rajapinnasta heijastuu tavallisesti osa valosta".
-- exercises.json:242 (L2-08) — the wrong options' feedback already states "50,0° > rajakulma", so a student who picks a wrong option first sees the reason. Allowed by the rule (only the correct option's feedback is checked), but a shorter wrong-choice feedback would keep the reason stage open.
-- Carried over: answers.py:17 `0.50e-3` → `0.500e-3`; solutions.md L3-04 significant-figure wording; L3-05 triangle figure.
+- solutions.md:235 (L2-09) — "kolme merkitsevää numeroa kuten rajakulma": n is read from the graph to ±0,02 (about 1 %), so the reading limits v to about two figures; say so, or state that the third figure comes from the check n = 1/sin 35,0° = 1,743.
 
 ## Checked
-- Hash 613d454f2b784ce1 at start and end.
-- L2-08 physics: α₁ = 90° − 40,0° = 50,0°; α_r = sin⁻¹(1,00 : 1,33) = 48,75°; 1,33 · sin 50,0° = 1,019 > 1, so total reflection. Margin robust: n = 1,325–1,335 gives α_r 48,5–49,0°.
-- L2-08 options: correct choice same length and form as the others; its feedback ("säde kokonaisheijastuu") does not give the reason away. Correct reason is not the longest and not the only one with numbers.
-- L2-08 distractors: angle from the surface (40° < 48,8°), swapped indices (sin = 1,33, "valo pääsee aina ilmaan", the direction confusion the lesson warns about), a true but non-deciding statement, grazing refraction only at exactly α_r. "Optisesti harvempi" is taught in fy7-10.
-- L2-08 solution: Kysytty · Periaate · Mallivastaus, α_r solved symbolically, angle from the normal, reflection angle 50,0°, every distractor explained. Inline and display lines are short (text estimate under 300 px).
-- All answers recomputed independently in one python call: 19 numeric answers equal exercises.json; answers.py output equals exercises.json.
-- Scope: within fy7-12 and fy7-10 (critical angle, normal).
+- Delta: L1-09 and L2-09 added; hash identical at start and end.
+- graph-curve is asin(1/n₁); L1-09: sapphire 1,77 → 34,40° (read 34°, within 3 %); n₁ > n₂ condition stated in the Periaate.
+- L2-09: n₁ = 1/sin 35,0° = 1,743, v = c sin α_r = 1,721·10⁵ km/s = answers.py; reading 1,74 gives 1,724·10⁵, inside the tolerance.
+- Reasonableness bounds (glass 41,8°, 2,00·10⁵ km/s; diamond 24,4°, 1,24·10⁵ km/s) right.
