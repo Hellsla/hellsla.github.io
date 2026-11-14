@@ -327,6 +327,22 @@ FY9 ja FY1, 1280 ja 390 px. Pieni jaettu muutos: tehdään kuten U4, kun mikää
 - Ei marginaalipalstaa eikä keskitettyä lukupalstaa.
 - Ei yhden luvun julkaistua pilottia: esikatselukuvat riittävät.
 
+## 11b. FY9: adaptiivinen YO-valmentaja (opettaja 2026-11-14)
+
+Suunnitelma: `docs/FY9_ADAPTIVE_PLAN.md` (#566). Opettaja hyväksyi 14.11 suunnitelman ja kaikki sen suositukset
+P1–P12: osaamisalueet ovat kuusi osaamista (`competencies.json`); tilojen sanat hyväksytään PR 4:ssä; oma
+valmentajasivu; FY9-sivulle rivi "Tänään: 3 tehtävää" Jatka-rivin tilalle; jokainen uusi käyttöliittymäteksti
+hyväksytään PR kerrallaan; näyttöloki vain varmuuskopioon, ei palautukseen; minikoekoosteet agentti ehdottaa ja
+opettaja hyväksyy; mitoitus 3 min/piste; laajennus muiden moduulien Sovella-tehtäviin myöhemmin; Abitti 2 omana
+TVT-ohjeena; paikallinen kielimalli vain selvityksenä myöhemmin. Ei palvelinta, ei tekoälyrajapintaa, ei kustannuksia
+opiskelijalle.
+
+Järjestys (suunnitelman kohdat 8–9, hyväksymiskriteerit ja testit siellä): PR 1 YTL/Abitti-tietojen tarkistus
+(sisältö, delta) voi alkaa heti; PR 2–8 (tehtäväindeksi, näytön kirjaus, osaamisnäkymä ja suositukset, vaikea vaihe,
+koetila ja minikokeet, kertauspolku, kielten tarkistus) muuttavat jaettuja tiedostoja, joten ne tehdään yksin, yksi
+kerrallaan, kohdan 10 PR 1–PR 5:n ja kohdan 11 U1:n jälkeen; PR 9 Abitti 2 -ohje (sisältö); PR 10 kielimallin
+selvitys (dokumentti). Arvio noin 2,5–3,5 M tokenia.
+
 ## 12. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
 `kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
