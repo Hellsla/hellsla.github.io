@@ -89,7 +89,7 @@
           "feedback": "The values from the model support this: for $0.25\\,\\text{kg}$ the durations are about $84\\,\\text{s}$ and $565\\,\\text{s}$, and for $0.50\\,\\text{kg}$ $167\\,\\text{s}$ and $1130\\,\\text{s}$. Both durations double with the mass, so the ratio stays at about 6.8. Every kilogram always needs the same energy to melt and to vaporise."
         },
         {
-          "text": "Boiling lasts longer, and the difference grows in proportion as the mass grows.",
+          "text": "Boiling lasts longer, and the ratio of the boiling time to the melting time grows as the mass grows.",
           "feedback": "Boiling does last longer, but the ratio does not change: for $0.25\\,\\text{kg}$ $565/83.5 \\approx 6.8$ and for $0.50\\,\\text{kg}$ $1130/167 \\approx 6.8$. Each duration is directly proportional to the mass, so their ratio does not depend on the mass."
         },
         {
@@ -265,7 +265,7 @@
         {
           "text": "The formula $Q = cm\\Delta T$ applies to warming. In a change of state the temperature does not change, and the quantity of heat is $Q = sm = 334\\,\\text{kJ/kg} \\cdot 0.20\\,\\text{kg} \\approx 66.8\\,\\text{kJ}$.",
           "correct": true,
-          "feedback": "Correct. On the horizontal part of a heating curve $\\Delta T = 0$, but energy is transferred all the time: it breaks the bonds between the particles. That is why melting has its own formula, $Q = sm$."
+          "feedback": "Correct. On the horizontal part of a heating curve $\\Delta T = 0$, but energy is transferred all the time: it changes the interactions between the particles and increases the interaction energy between them. That is why melting has its own formula, $Q = sm$."
         },
         {
           "text": "The temperature change should be taken as $273\\,\\text{K}$, because $0\\,{}^\\circ\\text{C}$ is $273\\,\\text{K}$.",

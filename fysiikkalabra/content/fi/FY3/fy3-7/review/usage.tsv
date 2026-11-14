@@ -36,3 +36,13 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-10-28T15:36Z	fy3-7	FY3	science-reviewer	review	claude-opus-5-5		full	1	1623832	34	9988	1495507	118303	119839	17	141	19		1.0905	transcript	7226717fd73c
 2026-10-28T15:36Z	fy3-7	FY3	general-purpose	other	claude-sonnet-5-5			2	2829930	82	15461	2712454	101933	102117	34	1999	35		0.9521	transcript	68ed7e317d38
 2026-10-28T15:36Z	fy3-7	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	586785	16	6757	493521	86491	87129	8	59	16		0.3825	transcript	3c5c55474fa7
+2026-11-14T07:21Z	fy3-7	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	2	302438	18	2815	256585	43020	50044	8	37	10		0.1871	transcript	c48ed4fec79d
+2026-11-14T07:21Z	fy3-7	FY3	science-reviewer	review	claude-opus-5-5	medium	full	2	384723	14	7349	290975	86385	93220	6	76	6		0.6372	transcript	fd9b2c144895
+2026-11-14T07:21Z	fy3-7	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	2	56368	6	1377	37435	17550	24017	3	13	3		0.0651	transcript	0ab4e0983245
+2026-11-14T07:21Z	fy3-7	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	2	78618	10	1428	58837	18343	24668	5	25	5		0.0719	transcript	3b6bbc13769c
+2026-11-14T07:21Z	fy3-7	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	2	158329	16	2337	118963	37013	44309	7	39	8		0.1397	transcript	37ba1e4ba3ef
+2026-11-14T07:21Z	fy3-7	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	delta	2	159134	14	1808	116053	41259	48886	6	16	8		0.1445	transcript	f9fd34c21b38
+2026-11-14T07:21Z	fy3-7	FY3	science-reviewer	review	claude-opus-5-5	medium	full	2	436825	16	3789	344103	88917	95669	7	40	8		0.5892	transcript	c2d2031c1ad8
+2026-11-14T07:21Z	fy3-7	FY3	pedagogy-reviewer	review	claude-sonnet-5-5	medium	delta	2	54108	6	1070	36594	16438	23110	3	10	4		0.0591	transcript	4d071d3dc198
+2026-11-14T07:21Z	fy3-7	FY3	science-reviewer	review	claude-opus-5-5	medium	full	2	533876	16	8788	431058	94014	100766	8	91	8		0.7321	transcript	5f7d01fc52cb
+2026-11-14T07:21Z	fy3-7	FY3	orchestrator	orchestrate	claude-sonnet-5-5		session	2	10857303	194	25303	10597135	234671	179538	80	37784	75		3.3115	transcript	56c585841feb

@@ -36,7 +36,7 @@
         },
         {
           "text": "Cold is transferred from the water to the copper until the copper is as cold as the water was at the start.",
-          "feedback": "Cold is not a quantity that is transferred. Energy is always transferred from the hotter to the colder one, and the water warms too, so the final temperature is between the initial temperatures."
+          "feedback": "Cold is not a quantity that is transferred. Because of the temperature difference, the net transfer of energy is from the hotter to the colder one, and the water warms too, so the final temperature is between the initial temperatures."
         },
         {
           "text": "Energy is transferred until the internal energies of the copper and the water are equal.",
