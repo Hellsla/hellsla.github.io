@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e28822a605b9fc27
+CONTENT-HASH: b769d69d2c84482b
 
 ## Blocking
 None.
 
 ## Polish
-- None new. L2-09 now writes fuel power P_o, matching the figure and L1-04.
+None.
 
 ## Checked
-Delta: only P_0 to P_o in L2-09 (exercises.json, solutions.md); consistent, nothing else touched.
+- Delta: Järkevyys: kaukolämpöä käytetään pääasiassa lämmitykseen; correct Finnish, same meaning as the English.
+- Nothing else touched; numbers, answers and solution steps unchanged.
