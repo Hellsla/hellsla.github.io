@@ -24,7 +24,7 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
 ## Order
 1. ~~`main` green (en/fy1-1 editor at 360 px)~~: done (#534, 2026-11-13; the failure did not recur, the test now names an overflowing element if it does).
 2. ~~Exercise reviews FY1, fy4-8, FY5, FY6, FY7~~: done (#537, #555, #540, #556, #557; 2026-11-14).
-3. MAFY formulas for the courses step 2 does not cover: FY8, FY10, FY14.
+3. Formulas in the data-book (taulukkokirja) form: FY5–FY8, FY10, FY14 (FY5 started 2026-11-14).
 4. Fixes to the FY10 investigations and TVT guides after the audit (#536): the eight Major findings first, fy10-liukukitka
    with a science review; Minor findings in a later batch.
 5. CI tooling: a way to run the browser checks in CI's container image locally, and failure messages that name the
@@ -51,7 +51,7 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
 15. Editorial final review of FY1–FY8 (queue 15, teacher 2026-11-14): after every other step except the booklets (step 16); a report first, course by course, with verified
     errors, possible problems and optional improvements apart; no source changes until the teacher has read it.
 16. Last (teacher 2026-11-14): printed A5 booklets for FY1–FY8 in the current compact layout (`print_book.py --publish`): FY1–FY4 again, FY5–FY8
-    new; each course after its MAFY formulas (step 3) are merged.
+    new; each course after its data-book formulas (step 3) are merged.
 
 Area D waits for the teacher's decision on which plan (FY10, Dronelabra, others) is approved for building.
 

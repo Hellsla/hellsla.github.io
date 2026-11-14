@@ -8,7 +8,7 @@ Tämä on ainoa työjono (opettaja 2026-11-13): ei GitHub Issuesia eikä erillis
 ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta muut ketjut näkevät varauksen
 (repon juuren `CLAUDE.md`). Saman kurssin kohdat tehdään peräkkäin, eri kurssien enintään kolme rinnakkain.
 
-## 3. Kaavat MAFY-muotoon FY5–FY8, FY10 ja FY14
+## 3. Kaavat taulukkokirjan muotoon FY5–FY8, FY10 ja FY14
 
 FY1–FY4 ja FY9 on tehty (#501, #522, #527, #529). Keskinopeuden tunnus on kaikkialla $v_\text{k}$, ei $v_\text{ka}$
 (opettaja 2026-11-13).
@@ -239,6 +239,13 @@ eivät ole ensin (FY4 luku 4: 4-4, 4-6, 4-13, 4-16).
   vastaustoimintoineen. Tasoa ei tarvitse avata.
 - Ei uutta otsikkoa, laskuria ("Ydintehtävät 2/4 tehty" ei palaa; opettaja poisti sen 13.11. ja vahvisti 14.11.),
   ohjeriviä eikä väliotsikkoa. Ydintehtävän tunnistaa nykyisestä Ydintehtävä-merkistä.
+- Ydintehtävät ovat eri tasoisia: tasoilta 1 ja 2, kuten nyt (`build.py core_ids`: oletuksena kahden tason kaksi
+  ensimmäistä tai `"core": true`; 14.11. 112/113 luvussa molemmilta tasoilta, yhdessä vain tasolta 1, tasolta 3 ei
+  missään). Taso 3 ei tule ydintehtäviin (opettaja 14.11: "Riittää tasot 1 ja 2"). Järjestys: tason 1 ydintehtävät
+  ensin, sitten tason 2. Luku, jonka ydintehtävät ovat yhdeltä tasolta, raportoidaan PR:ssä (sisältöpäätös, ei
+  korjata tässä).
+- Ydintehtävän merkin vieressä näkyy sen taso, **Perus** tai **Soveltava** (opettaja 14.11: "Voisi näkyä perus /
+  soveltava"; tämä on hyväksytty käyttöliittymäteksti, lang-avaimet fi, en ja fi-easy, tasojen nykyisistä nimistä).
 - Niiden alla nykyiset kolme tasoa suljettuina; tasossa näkyvät vain sen muut tehtävät. Tasojen otsikot ja
   "N/M tehty" toimivat kuten nyt, omilla määrillään.
 - Lause "Ydintehtävät ensin, loput lisäharjoitusta." poistetaan (lang `level_lead_1` ja `level_lead_2`, kaikki kielet).
@@ -393,8 +400,8 @@ merkitään hyväksytyksi.
 
 Tulostettavat A5-vihkot (`python scripts/print_book.py <C> --lang fi|en --publish`, README "Printed A5 book") kaikille
 kursseille FY1–FY8 sivuja säästävällä tiiviillä asettelulla (#393). FY1–FY4:llä vihko on (7.11.), mutta sisältö on
-muuttunut sen jälkeen (MAFY-kaavat, käsitteet, korjaukset), joten ne tehdään uudelleen; FY5–FY8 ovat uusia. Kurssin
-vihko tehdään vasta, kun sen kohdan 3 MAFY-kaavat on yhdistetty, ettei sitä tarvitse tehdä kahdesti. Rakenna sivusto
+muuttunut sen jälkeen (kaavat taulukkokirjan muotoon, käsitteet, korjaukset), joten ne tehdään uudelleen; FY5–FY8 ovat uusia. Kurssin
+vihko tehdään vasta, kun sen kohdan 3 kaavat taulukkokirjan muodossa on yhdistetty, ettei sitä tarvitse tehdä kahdesti. Rakenna sivusto
 vihkojen jälkeen (Vihkot-sivu).
 
 ## Kirjattu päätös: teorian taitto, vaihtoehto B (opettaja 2026-11-14)
