@@ -215,8 +215,8 @@ Puhelimen laturi laskee jännitteen vielä noin $5\,\text{V}$:iin. Nykyaikainen 
 
 ## Kaava: Muuntaja ja siirtohäviö
 Ideaalisen muuntajan jännitteet ja virrat riippuvat käämien kierrosten lukumääristä:
-```latex
-\frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}
+```kaavat
+muuntaja :: \frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}
 ```
 Tässä $U_1$ on ensiöjännite (V) ja $U_2$ on toisiojännite (V). Kirjaimet $N_1$ ja $N_2$ ovat ensiökäämin ja toisiokäämin kierrosten lukumäärät. Kirjaimet $I_1$ ja $I_2$ ovat ensiövirta ja toisiovirta (A). Suhde $N_1 : N_2$ on muuntosuhde. Viimeinen yhtäsuuruus seuraa tehon säilymisestä: $U_1 I_1 = U_2 I_2$. Jännitteet ja virrat ovat tehollisia arvoja (luku *Generaattori ja vaihtovirta*). Kun jännite kasvaa, virta pienenee samassa suhteessa.
 

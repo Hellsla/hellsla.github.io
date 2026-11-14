@@ -220,8 +220,8 @@ Sähkömagneettisessa aallossa sähkökenttä $\overline{E}$ ja magneettikenttä
 
 ### Aallonpituus ja taajuus
 Kuten mekaaninen aalto, sähkömagneettinen aalto etenee yhden jaksonajan aikana yhden aallonpituuden verran. Siksi valon nopeus, aallon taajuus ja aallonpituus liittyvät toisiinsa:
-```latex
-c = f \lambda
+```kaavat
+aaltoliikkeen perusyhtälö :: c = f \lambda
 ```
 missä $c$ on valon nopeus tyhjiössä (m/s), $f$ taajuus (Hz) ja $\lambda$ aallonpituus (m). Koska $c$ on kaikille sähkömagneettisille aalloille sama, suurempi taajuus tarkoittaa lyhyempää aallonpituutta. Esimerkiksi FM-radion noin $100\,\text{MHz}$:n aallon aallonpituus on $3{,}0\,\text{m}$, ja mikroaaltouunin $2{,}45\,\text{GHz}$:n aallon noin $12\,\text{cm}$.
 
@@ -343,8 +343,8 @@ Aineen hiukkaset ovat jatkuvassa lämpöliikkeessä, ja niiden varaukset ovat ki
 
 ## Kaava: Wienin siirtymälaki
 Mustan kappaleen spektrin huippu eli aallonpituus, jolla kappale säteilee voimakkaimmin, on sitä lyhyempi, mitä kuumempi kappale on. Huipun aallonpituus on kääntäen verrannollinen kappaleen absoluuttiseen lämpötilaan:
-```latex
-\lambda_\text{max} T = b
+```kaavat
+Wienin siirtymälaki :: \lambda_\text{max} T = b
 ```
 missä $\lambda_\text{max}$ on spektrin huipun aallonpituus (m), $T$ kappaleen pintalämpötila (K) ja $b = 2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$ Wienin siirtymälain vakio. Lämpötilan on oltava absoluuttinen lämpötila, joten celsiusasteina annettu lämpötila muutetaan ensin kelvineiksi lisäämällä siihen $273{,}15\,\text{K}$. Kun absoluuttinen lämpötila kaksinkertaistuu, huipun aallonpituus puolittuu. Laki koskee mustaa kappaletta, ja todellisille kappaleille, kuten Auringolle ja hiillokselle, se pätee likimain.
 

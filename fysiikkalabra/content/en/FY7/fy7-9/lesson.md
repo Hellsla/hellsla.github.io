@@ -220,8 +220,8 @@ In an electromagnetic wave the electric field $\overline{E}$ and the magnetic fi
 
 ### Wavelength and frequency
 Like a mechanical wave, an electromagnetic wave travels one wavelength during one period. So the speed of light, the frequency of the wave and its wavelength are related:
-```latex
-c = f \lambda
+```kaavat
+wave equation :: c = f \lambda
 ```
 where $c$ is the speed of light in a vacuum (m/s), $f$ is the frequency (Hz) and $\lambda$ is the wavelength (m). Since $c$ is the same for all electromagnetic waves, a higher frequency means a shorter wavelength. For example, an FM radio wave of about $100\,\text{MHz}$ has a wavelength of $3.0\,\text{m}$, and a microwave-oven wave of $2.45\,\text{GHz}$ has a wavelength of about $12\,\text{cm}$.
 
@@ -345,8 +345,8 @@ A **black body** is an ideal body that absorbs all radiation that falls on it an
 
 ## Formula: Wien's displacement law
 The peak of a black-body spectrum, that is, the wavelength at which the body radiates most strongly, is shorter the hotter the body is. The wavelength of the peak is inversely proportional to the absolute temperature of the body:
-```latex
-\lambda_\text{max} T = b
+```kaavat
+Wien's displacement law :: \lambda_\text{max} T = b
 ```
 where $\lambda_\text{max}$ is the wavelength of the peak of the spectrum (m), $T$ is the surface temperature of the body (K) and $b = 2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}$ is the constant of Wien's displacement law. The temperature must be the absolute temperature, so a temperature given in degrees Celsius is first converted to kelvins by adding $273.15\,\text{K}$. When the absolute temperature doubles, the wavelength of the peak is halved. The law applies to a black body, and to real bodies such as the Sun and an ember it applies approximately.
 

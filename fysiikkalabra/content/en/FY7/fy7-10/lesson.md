@@ -154,15 +154,15 @@ The law of reflection: the angle of reflection is equal to the angle of incidenc
 where $\beta$ is the angle of reflection and $\alpha_1$ the angle of incidence, both measured from the normal of the boundary.
 
 The refractive index of a material is the ratio of the speed of light in a vacuum to the speed of light in the material:
-```latex
-n = \frac{c}{v}
+```kaavat
+refractive index for electromagnetic waves (light) :: n = \frac{c}{v}
 ```
 where $c = 3.00 \cdot 10^{8}\,\text{m/s}$ is the speed of light in a vacuum and $v$ the speed of light in the material (m/s). The refractive index has no unit, and for materials transparent to visible light it is always greater than $1$.
 
 ### The law of refraction, or Snell's law
 When light passes from a material with refractive index $n_1$ into a material with refractive index $n_2$, the angle of incidence and the angle of refraction satisfy the equation
-```latex
-n_1 \sin \alpha_1 = n_2 \sin \alpha_2
+```kaavat
+law of refraction (Snell's law) :: n_1 \sin \alpha_1 = n_2 \sin \alpha_2
 ```
 where $\alpha_1$ is the angle of incidence and $\alpha_2$ the angle of refraction, both measured from the normal. The law follows from the turning of the wavefronts: the ratio of the sines of the angles is the same as the ratio of the speeds, $\sin\alpha_1 : \sin\alpha_2 = v_1 : v_2 = n_2 : n_1$. The law concerns the sines of the angles, not the angles: when the angle of incidence doubles, the angle of refraction does not double. In the graph the angle of refraction increases with the angle of incidence, but more and more slowly.
 

@@ -255,8 +255,8 @@ When an iron core is pushed inside a coil, the field becomes many times stronger
 
 ## Formula: Magnetic field of a straight wire and of a coil
 The magnetic flux density of a long straight wire at a distance $r$ from the wire is
-```latex
-B = \frac{\mu_0 I}{2\pi r}
+```kaavat
+magnetic flux density of a straight current-carrying wire :: B = \frac{\mu_0 I}{2\pi r}
 ```
 where $B$ is the magnetic flux density (T), $I$ the current in the wire (A), $r$ the distance from the wire (m) and $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ the permeability of free space, a constant of nature. In air the same value is used. The field is directly proportional to the current and inversely proportional to the distance: doubling the distance halves the field. The formula holds when the wire is much longer than the distance $r$ and other wires are far away. For example, the field of a $10\,\text{A}$ wire at a distance of $1\,\text{cm}$ is $200\,\mu\text{T}$, about four times the Earth's magnetic field of about $50\,\mu\text{T}$.
 
@@ -312,8 +312,8 @@ where $B$ is the magnetic flux density (T), $I$ the current in the wire (A), $r$
 </svg>
 
 Inside a long coil, far from its ends, the magnetic flux density is
-```latex
-B = \mu_0 \frac{N I}{l}
+```kaavat
+magnetic flux density of a long solenoid :: B = \mu_0 \frac{N I}{l}
 ```
 where $N$ is the number of turns of the coil, $I$ the current (A) and $l$ the length of the coil (m). The field depends on the turn density $N : l$, that is, on how many turns there are per metre, and not on the thickness of the coil. The formula holds when the coil is much longer than it is wide and has only air inside it. At the ends of the coil the field is about half of its value at the centre, and an iron core makes the field many times stronger.
 
