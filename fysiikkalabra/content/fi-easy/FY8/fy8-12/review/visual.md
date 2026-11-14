@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9536f03d31dd0fcd
+CONTENT-HASH: 8411fab9ce0d0aa9
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] fig 4 (näkyvä valo -nauha) — the band is only about 14 px wide at 390 px, so the six colour stripes are hard to tell apart — widen the band slightly if the teacher agrees; the figure is teacher-approved, so this may wait.
+- [Minor] lesson.md l. 453 — "Kun energia kasvaa, gammasäteily alkaa vuorovaikuttaa aineen kanssa eri tavalla" stays abstract for S2 readers; an optional concrete clause (for example "ja osa energioista läpäisee ohuenkin kerroksen helpommin kuin toiset") would help, but the teacher's rule against "higher energy always penetrates better" is respected as it stands.
+- [Minor] Same paragraph — "tehokkaasti monilla energioilla" is vague; "hyvin" would do. Nine short sentences read slightly choppy; the line "Sama vaimennus vaatii betonia..." could name lyijy again ("Lyijyn kanssa sama vaimennus...") so the comparison is unambiguous.
 
 ## Checked
-- fy8-12-fig-4-390: the diff only reverses the order of the colour stripes in the visible-light band. Red is now at the low-energy left end and violet at the high-energy right end, which matches the energy axis increasing to the right. The band outline, the labels "näkyvä valo" and "1,7–3,3 eV" and the ionisoiva/ionisoimaton areas are intact, with no clipping or overlap.
-- Hash: now 9536f03d31dd0fcd, the same as the packet's.
+- fy8-12-theory-1280-5: the reworded paragraph in context with the formula blocks, graph (lyijy, alumiini) and the d_1/2 table; layout intact, KaTeX renders $662\,\text{keV}$ and $d_{1/2}$ correctly, table values (lyijy 5,5 mm, betoni 39 mm) match "noin seitsemän kertaa".
+- Packet diff and lesson.md lines 376-384 read; hash run at start and end (8411fab9ce0d0aa9). Other captures unchanged by the diff, not reopened.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

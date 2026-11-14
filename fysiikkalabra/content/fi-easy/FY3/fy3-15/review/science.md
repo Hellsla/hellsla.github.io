@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 268a81633cb1b58d
+CONTENT-HASH: 534f119cf21d1296
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- None.
 
 ## Checked
-η = W_a/W_o = P_a/P_o named; P_h = P_o − P_a; anto/otto defined with units, and "P_o:n alaindeksi on o-kirjain, ei nolla" stated; chain P₁ = η₁P_o … η = η₁η₂η₃; η_kok = (P_s + P_k)/P_o; P_L = c q_m ΔT. Recomputed example: 0,38038; 228 MW; 38,0 %; 372 MW; condenser 546 − 240,24 ≈ 306 MW; losses 54 and 12 MW; misconception 0,40 vs 0,78. Figure P_o 400, P₁ 350, P₂ 150, P₃ 140 MW. P_o, P_a, P_h counts identical in fi, fi-easy, en (lesson, inquiry); no P_0, P_tulo, P_hyöty left; numbers unchanged.
+batch delta review: district heat "kelpaa vain lämmitykseen" -> "pääasiassa" in theory, misconception and explain model answer; no remaining "vain lämmitykseen"; the removed claim (summer = almost only electricity) was questionable, the new sentence (demand lower in summer, ratio depends on plant type and demand) is correct; electricity vs heat value argument and 0,88/0,30/0,40 unchanged.

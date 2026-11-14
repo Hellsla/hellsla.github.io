@@ -91,7 +91,7 @@
       "choices": [
         {
           "text": "The Milky Way is at the centre from which the Big Bang started, and the other galaxies are flying away from it.",
-          "feedback": "The observation does not require us to be at the centre. When space expands evenly, seen from any galaxy all the others recede at a speed proportional to the distance. The Big Bang was not an explosion at one point; space began to expand everywhere."
+          "feedback": "The observation does not require us to be at the centre. When space expands evenly, seen from any galaxy distant galaxies recede on average at a speed proportional to the distance. The Big Bang was not an explosion at one point; space began to expand everywhere."
         },
         {
           "text": "Space is expanding everywhere, so seen from any galaxy the others recede in the same way.",
@@ -353,7 +353,7 @@
       "title": "3. Explain: where does gold come from?",
       "optional": true,
       "prompt": "The gold-197 nuclei in a gold ring contain $197$ nucleons. Why was gold not formed in the Big Bang or in the fusion of a star like the Sun? Where was it formed? Use the binding energy curve in your reasoning.",
-      "model": "After the Big Bang, fusion lasted only about $20$ minutes, and mostly helium was formed in it. In stars, fusion releases energy only as long as the nucleus that forms is more tightly bound than the starting nuclei, that is, as long as the binding energy per nucleon grows. The peak of the binding energy curve is at iron-56, about $8.8\\,\\text{MeV}$, so forming nuclei heavier than iron by fusion would require energy and not release it. In addition, a star like the Sun fuses only hydrogen into helium and finally helium into carbon and oxygen. Gold formed in neutron capture: when a nucleus quickly captures many neutrons and some of them change into protons in beta minus decay, heavy nuclei are formed. Such rapid neutron capture takes place in supernovae and in neutron star collisions. The gold of the ring was therefore formed in stellar explosions or collisions before the formation of the Solar System.",
+      "model": "After the Big Bang, fusion lasted only about $20$ minutes, and mostly helium was formed in it. In stars, fusion releases energy only as long as the nucleus that forms is more tightly bound than the starting nuclei, that is, as long as the binding energy per nucleon grows. The binding energy per nucleon is greatest in the region of iron and nickel, about $8.8\\,\\text{MeV}$, and of the individual nuclides the greatest value is that of nickel-62. So forming nuclei heavier than the iron group by fusion would require energy and not release it. In addition, a star like the Sun fuses only hydrogen into helium and finally helium into carbon and oxygen. Gold formed in neutron capture: when a nucleus quickly captures many neutrons and some of them change into protons in beta minus decay, heavy nuclei are formed. Such rapid neutron capture takes place in supernovae and in neutron star collisions. The gold of the ring was therefore formed in stellar explosions or collisions before the formation of the Solar System.",
       "criteria": [
         "I explain with the binding energy curve that fusion releases energy only up to iron.",
         "I state that the fusion of the Big Bang lasted only minutes and produced mostly helium.",

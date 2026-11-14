@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 94e2c61db60be1bb
+CONTENT-HASH: 18715801cb2d4975
 
 ## Blocking
 None.
 
 ## Polish
-- None new. L2-09 now writes fuel power P_o, matching the figure and L1-04.
+None.
 
 ## Checked
-Delta: only P_0 to P_o in L2-09 (exercises.json, solutions.md); consistent, nothing else touched.
+- The one changed sentence (L2 solution "Järkevyys": "kaukolämpöä käytetään pääasiassa lämmitykseen") is accurate and matches the lesson's wording.
+- The reasoning in the sentence (total efficiency does not tell profitability, since electricity suits everything and heat mainly heating) is intact, and the final clause on need and prices still follows.
+- No numbers, task text or levels changed; the level counts and the solution steps are as approved earlier.
+- Finnish: the sentence is grammatical.

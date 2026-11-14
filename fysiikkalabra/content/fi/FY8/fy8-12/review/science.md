@@ -1,20 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: c075a7b9a825b4cf
+CONTENT-HASH: 29277166eb22fd45
 
 ## Blocking
 
 ## Polish
-- inquiry.json (ennuste-1, correct option's feedback): the feedback calls 9 alpha pulses behind aluminium "satunnaisvaihtelun rajoissa taustasäteilyn tasoa". With a background mean of 4, P(N ≥ 9) ≈ 2 %, and koe-1 gave 5 behind paper. Fix: call it an unusually high background reading, or use a seed that gives about 4.
-- lesson.md (Ydinajatus, "kirkaskaan valo ei ionisoi vettä"): a fair simplification (C). Multiphoton ionisation by intense lasers is the only exception, so no change is needed.
+- lesson.md:423 (fi; en:423, fi-easy:453), "Gammasäteilyn läpäisykyky riippuu fotonien energiasta ja väliaineesta": this repeats the paragraph's first sentence. It is correct and the teacher's wording is kept, so no change is needed. If a concrete case is ever wanted, one could be added: in lead the attenuation is smallest near $3$–$4\,\text{MeV}$ and grows again as pair production takes over.
 
 ## Checked
-- Round 1 fixes: the `energia` band now runs from red at 1,7 eV to violet at 3,3 eV (fig-4-390). The HFIR caption says "varatut hiukkaset". The misconception is limited to conventional sterilisation, and the low-dose risk sentence says "arvioidaan".
-- Own recompute: n_i = 1,61·10⁵, range 4,09 cm, visible light 1,77–3,26 eV, m_α/m_e ≈ 7290.
-- Worked example: 23,77 mm, rounded to 24 mm, with a valid check between 4 and 5 half-value thicknesses. Siirto: 5,57 %; the mistake values 84,7, 94,4 and 12,0 recompute, and d½ = 0,12 mm matches XCOM for lead at 60 keV.
-- Tarkistus-2 curve 800·(1/2)^(d/12): 400 at 12 mm, 200 at 24 mm, 50 at 48 mm.
-- Half-value thickness table from XCOM at 662 keV: 5,5 / 12 / 34 / 39 / 81 mm. Concrete ≈ 7 × lead. μ = ln 2 / d½ is derived correctly. The `vaimeneminen` figure's markers and the aluminium value 0,60 at 25 mm are correct.
-- Seeded model values: koe-1 5/5/550/577, koe-2 9/4/535, lead 590/332/175/89/57. Net ratios 0,56 and 0,29 give d½ ≈ 5,6 mm. Every value quoted in the predictions and the conclusion matches.
-- Beta model: 6,6 cm²/g, with a 1,1 g/cm² cut-off (Katz–Penfold 1,10 for 2,28 MeV), which is about 4,1 mm of aluminium.
-- Experiments: each varies only its own parameter and locks the rest, and simState gives `pulssit`. The model box states the sim's limits.
-- Every choice item has exactly one correct option, and each distractor's feedback is right. The photon interaction ranges and the 1,022 MeV threshold are right.
-- The GM tube description and the background subtraction agree across the theory, summary, tarkistus-3, the glossary and the exit ticket.
+- The new claim that half-value thickness depends on density, composition and photon energy is correct. It matches the glossary ("riippuu aineesta ja säteilyn energiasta"), and the old claim that more electrons per atom always means a thinner layer is gone.
+- "Läpäisykyky ei kasva kaikilla energia-alueilla" is correct (category A content, stated rightly). Lead's mass attenuation coefficient has a minimum at about $3{,}5\,\text{MeV}$ ($0{,}042\,\text{cm}^2/\text{g}$) and is $0{,}050\,\text{cm}^2/\text{g}$ at $10\,\text{MeV}$. Penetration also drops just above the K edge at $88\,\text{keV}$. The cause the text gives, that the relative weight of the interaction mechanisms changes, is the actual mechanism.
+- "Lyijy vaimentaa monilla energia-alueilla … suuren tiheytensä ja järjestyslukunsa vuoksi" is correct and suitably limited. Around $1\,\text{MeV}$, where Compton scattering dominates, density is lead's main advantage, and "monilla" covers that.
+- Own recompute from XCOM coefficients, interpolated in log–log at $662\,\text{keV}$ for a narrow beam: Pb $5{,}5$, Fe $12{,}0$, Al $34{,}4$, concrete ($2{,}3\,\text{g/cm}^3$) $39{,}1$, water $80{,}9\,\text{mm}$. These match the table. Concrete/lead = $7{,}1$, which supports "noin seitsemän kertaa".
+- The table still says it applies to Cs-137 at $662\,\text{keV}$. The paragraph's closing sentence and the worked example ($d_{1/2} = 5{,}5\,\text{mm}$, $d = 23{,}8\,\text{mm} \approx 24\,\text{mm}$) are unchanged and still agree with it.
+- The neighbouring text agrees with the change:
+  - the interaction table (photoelectric: low energy, high $Z$; Compton: medium; pair production: $\geq 1{,}022\,\text{MeV}$)
+  - the paragraph on dominance ranges and the summary line
+  - the inquiry feedback that low-energy X-rays are attenuated far more in lead than Cs-137 gamma (lead at $60\,\text{keV}$ has $d_{1/2} \approx 0{,}12\,\text{mm}$)
+- No remaining sentence in fi, en or fi-easy (lesson, inquiry, exit ticket) still says that high-energy gamma always penetrates better. The earlier "Läpäisykyky" section's ranking (alpha < beta < gamma) is a comparison between radiation types and does not conflict with the change.
+- en and fi-easy carry the same paragraph, faithfully translated, with the same conditions ("over many energy ranges", "not over all energy ranges").
+- The hash was the same at the start and at the end.

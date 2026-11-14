@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d83301a5d06970e5
+CONTENT-HASH: 8bb9e0e9ca841849
 
 ## Blocking
-None.
+- none
 
 ## Polish
-None.
+- none
 
 ## Checked
-- Answer now states two figures with $4.5\cdot 10^2\,\text{N}$ and the reason; consistent. Text-only change in solutions.md/exercises.json judged from the diff in the packet; the changed line was not opened in a capture, and the layout was not re-inspected.
+- Delta: 13-3 (volleyball) at 1280 px with solution open, en: new task text reads situation then question, layout intact. Captures were missing and were made with screenshot.py.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

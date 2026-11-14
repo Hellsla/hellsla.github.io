@@ -112,12 +112,12 @@
 ## fy7-11-L3-03
 **Annettu:** punainen reuna: tulokulma $\alpha_\text{p} = 59{,}5^\circ$, taitekerroin $n_\text{p} = 1{,}3315$; violetti reuna: $\alpha_\text{v} = 58{,}8^\circ$, $n_\text{v} = 1{,}3431$; yksi heijastus pisaran takapinnasta
 **Kysytty:** kaaren leveys $\Delta\theta = \theta_\text{p} - \theta_\text{v}$ asteina
-**Periaate:** Kummankin värin reunan kulma vastapisteen suunnasta saadaan pisaran geometriasta: $\theta = 4\beta - 2\alpha$. Taitekulma $\beta$ lasketaan taittumislaista värin omalla taitekertoimella. Kaaren leveys on punaisen ja violetin reunan kulmien erotus, koska punainen on ulkoreunalla.
+**Periaate:** Kummankin värin reunan kulma vastapisteen suunnasta saadaan pisaran geometriasta: $\theta = 4\beta - 2\alpha$. Taitekulma $\beta$ lasketaan taittumislaista värin omalla taitekertoimella. Kaaren leveys on punaisen ja violetin reunan kulmien erotus, koska punainen on pääsateenkaaren ulkoreunalla.
 **Kaava:** $\sin\beta = \dfrac{\sin\alpha}{n}$, $\theta = 4\beta - 2\alpha$ ja $\Delta\theta = \theta_\text{p} - \theta_\text{v}$
 **Muunnokset:** Niitä ei tarvita: kulmat ovat asteina.
 **Sijoitus:** Punainen: $\sin\beta_\text{p} = \dfrac{\sin 59{,}5^\circ}{1{,}3315} = 0{,}64711$, $\beta_\text{p} = 40{,}324^\circ$, $\theta_\text{p} = 4 \cdot 40{,}324^\circ - 2 \cdot 59{,}5^\circ = 42{,}296^\circ$. Violetti: $\sin\beta_\text{v} = \dfrac{\sin 58{,}8^\circ}{1{,}3431} = 0{,}63686$, $\beta_\text{v} = 39{,}558^\circ$, $\theta_\text{v} = 4 \cdot 39{,}558^\circ - 2 \cdot 58{,}8^\circ = 40{,}632^\circ$. $\Delta\theta = 42{,}296^\circ - 40{,}632^\circ = 1{,}664^\circ$
 **Vastaus:** noin $1{,}66^\circ$ eli pyöristettynä $1{,}7^\circ$. Tulos on kahden lähes yhtä suuren kulman erotus, joten merkitseviä numeroita häviää.
-**Järkevyys:** Leveys on noin kolme kertaa auringon näennäinen halkaisija $0{,}5^\circ$. Tämä sopii kokemukseen, sillä sateenkaari on kapea nauha. Punaisen kulma on suurempi, joten punainen on ulkoreunalla.
+**Järkevyys:** Leveys on noin kolme kertaa auringon näennäinen halkaisija $0{,}5^\circ$. Tämä sopii kokemukseen, sillä sateenkaari on kapea nauha. Punaisen kulma on suurempi, joten punainen on pääsateenkaaren ulkoreunalla.
 
 ## fy7-11-L1-06
 **Kysytty:** miksi violetti valo taittuu lasissa enemmän kuin punainen

@@ -1,6 +1,6 @@
 # Ruukkilabra FY1–FY8: kohdennetut sisältökorjaukset (opettaja 2026-11-14)
 
-Työjonon kohta 13. Opettajan tehtävänanto sellaisenaan.
+Työjonon kohta 12 (oli 13). Opettajan tehtävänanto sellaisenaan.
 
 ## Tehtävä
 

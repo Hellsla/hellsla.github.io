@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 08b567284aa7ac29
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 8656191cf65f542d
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md — "Eri värit lähtevät pisarasta voimakkaimpina …" and "pisaran muiden värien voimakkaimmat suunnat kulkevat silmän ohi" (a direction does not travel) read stiffly; e.g. "Kukin väri lähtee pisarasta voimakkaimpana hieman eri suuntaan. Kustakin pisarasta silmään tulee siksi erityisen voimakkaasti yhtä väriä, ja muiden värien voimakkain valo kulkee silmän ohi." Also two consecutive "Siksi".
+- [Minor] lesson.md, "Miksi punainen on pääsateenkaaren ulkoreunalla" — carried over from the previous round: "voimakkaimmat suunnat kulkevat silmän ohi" reads stiffly and two consecutive sentences start with "Siksi".
 
-## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Rainbow sentence: no "one colour per droplet" claim left.
-- No paragraph changed in this round in fi exceeds about 120 words
-- Hash identical at start and end.
+## Checked (delta)
+- fy7-11-intro-1280: Miksi question, goal list (third goal wraps cleanly) and hero; layout intact, no clipping.
+- fy7-11-open-ennusta-1280: prediction stage unaffected.
+- Text diff of inquiry.json (learn, hook, reflect, explain prompt): fluent Finnish, "pääsateenkaari" used consistently; hero aria-label already mentions the secondary bow.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

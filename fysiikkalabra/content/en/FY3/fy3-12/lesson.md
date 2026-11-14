@@ -193,7 +193,7 @@ Water vapour, carbon dioxide and methane in the atmosphere let sunlight mostly t
 Human activity, mainly the use of fossil fuels, has raised the carbon dioxide concentration of the atmosphere from about 280 parts per million to over 420 parts per million. When greenhouse gases are added, for a while less energy escapes into space than arrives from the Sun. Today the difference is about $1\,\text{W}$ for every square metre of the Earth. The extra energy warms the oceans, the land and the air until a new balance settles at a higher temperature. This is called climate change. A power difference that looks small is huge over the whole area of the Earth, and most of it is stored in the oceans, whose large heat capacity slows the warming down but also keeps it going for a long time. Energy choices such as insulation, heat pumps and zero-emission power plants are therefore also ethical choices that affect future generations.
 
 ## Formula: Thermal power and U-value
-The thermal power conducted through a building part is
+The thermal power transferred through a building part is
 ```latex
 P = U A \Delta T
 ```
@@ -274,7 +274,7 @@ Many people mix up the greenhouse effect and ozone depletion, although they are 
 
 ## Summary
 - Heat transfers by conduction, convection and thermal radiation, and because of a temperature difference the net transfer of energy is from the warmer object to the colder one. All objects emit thermal radiation, the colder one too.
-- The thermal power conducted through a building part is $P = UA\Delta T$. A small U-value means good heat insulation.
+- The thermal power transferred through a building part is $P = UA\Delta T$. A small U-value means good heat insulation.
 - In energy balance the power coming in and the power going out are equal, and the temperature stays constant.
 - Greenhouse gases absorb the thermal radiation of the ground and radiate part of it back, which raises the equilibrium temperature of the ground from about $-18\,{}^\circ\text{C}$ to about $+15\,{}^\circ\text{C}$.
 - An increase in greenhouse gases breaks the balance for a while, and the Earth warms until a new balance settles at a higher temperature.

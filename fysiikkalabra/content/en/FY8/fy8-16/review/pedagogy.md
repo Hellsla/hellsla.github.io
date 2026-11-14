@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: ca56c2669ef19f3d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 9fc38bb9ac8250fa
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- 'Nickel-62' is a detail beyond need; the iron-group wording is enough for the student, and the iron-56 mentions elsewhere in the lesson should match it.
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+batch delta review: 'on average' and the iron group nickel-62 wording are consistent in lesson, feedback and model answer; the expansion explanation stays understandable.
