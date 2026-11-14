@@ -366,7 +366,7 @@ Kun kappale liikkuu $x$-akselia pitkin ja siihen vaikuttaa akselin suuntainen va
 ```
 Kun yhtälö kerrotaan puolittain massalla $m$ ja sijoitetaan $ma = \Sigma F_x$, saadaan $\Sigma F_x\, \Delta x = \tfrac{1}{2} m v_2^2 - \tfrac{1}{2} m v_1^2$ eli $\Sigma F_x\, \Delta x = \Delta E_\text{k}$.
 
-Siirtymä $\Delta x$ ei ole sama asia kuin kuljettu matka $s$. Jos kappale liikkuu koko ajan samaan suuntaan, siirtymän itseisarvo on yhtä suuri kuin kuljettu matka, ja kokonaisvoiman työ on $\Sigma F\, s$. Jos kappale kääntyy, kuten ylös heitetty pallo, kuljettu matka on siirtymää pidempi. Vakiovoiman työ lasketaan silloin siirtymästä, $W = F_x\, \Delta x$, tai osissa niin, että jokaisella osuudella liike on yhteen suuntaan. Kitka ja ilmanvastus sen sijaan kääntyvät liikkeen mukana, joten niiden työ on aina negatiivinen, ja sen itseisarvo kasvaa kuljetun matkan mukana. Kummassakin tapauksessa kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos:
+Siirtymä $\Delta x$ ei ole sama asia kuin kuljettu matka $s$. Jos kappale liikkuu koko ajan samaan suuntaan, siirtymän itseisarvo on yhtä suuri kuin kuljettu matka, ja kokonaisvoiman työ on $\Sigma F\, s$. Jos kappale kääntyy, kuten ylös heitetty pallo, kuljettu matka on siirtymää pidempi. Vakiovoiman työ lasketaan silloin siirtymästä, $W = F_x\, \Delta x$, tai osissa niin, että jokaisella osuudella liike on yhteen suuntaan. Kun kitka ja ilmanvastus vastustavat kappaleen liikettä, niiden tekemä työ on negatiivinen, ja sen itseisarvo kasvaa kuljetun matkan mukana. Kummassakin tapauksessa kokonaisvoiman tekemä työ on yhtä suuri kuin liike-energian muutos:
 ```kaavat
 työperiaate :: E_{\text{k}0} + W = E_\text{k}
 ```
