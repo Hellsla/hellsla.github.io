@@ -571,11 +571,14 @@
 </svg></div></div>
 <h4>Hajoamisvakio ja aktiivisuus</h4>
 <p>Ytimen hajoamistodennäköisyyttä aikayksikköä kohti kuvaa <strong class="kc-mark" data-kortti="fy8-hajoamisvakio">hajoamisvakio</strong> $\lambda$, jonka yksikkö on $\tfrac{1}{\text{s}}$. Kun ytimiä on $N$, sekunnissa hajoaa keskimäärin $\lambda N$ ydintä, joten aktiivisuus on</p>
-<p>$$A = \lambda N$$</p>
+<dl class="kaavat"><div class="kaava-rivi"><dt>aktiivisuus</dt><dd>$$A = \lambda N$$</dd></div></dl>
+
 <p>missä $A$ on aktiivisuus ($\text{Bq}$), $\lambda$ hajoamisvakio ($\tfrac{1}{\text{s}}$) ja $N$ hajoamattomien ytimien määrä. <span class="kc-mark kc-plain" data-kortti="fy8-hajoamislaki">Hajoamislaki</span> voidaan kirjoittaa myös luonnollisen eksponenttifunktion avulla:</p>
-<p>$$N = N_0 e^{-\lambda t}$$</p>
+<dl class="kaavat"><div class="kaava-rivi"><dt>hajoamislaki</dt><dd>$$N = N_0 e^{-\lambda t}$$</dd></div></dl>
+
 <p>Puoliintumisajan kohdalla $N = \tfrac{1}{2}N_0$, joten $e^{-\lambda T_{1/2}} = \tfrac{1}{2}$ eli $\lambda T_{1/2} = \ln 2$. Hajoamisvakio ja puoliintumisaika liittyvät siis toisiinsa yhtälöllä</p>
-<p>$$\lambda = \frac{\ln 2}{T_{1/2}}$$</p>
+<dl class="kaavat"><div class="kaava-rivi"><dt>hajoamisvakio</dt><dd>$$\lambda = \frac{\ln 2}{T_{1/2}}$$</dd></div></dl>
+
 <p>missä $\ln 2 \approx 0{,}693$. Esimerkiksi teknetium-$99\text{m}$:lle $\lambda = \tfrac{0{,}693}{6{,}01 \cdot 3600\,\text{s}} \approx 3{,}20 \cdot 10^{-5}\,\tfrac{1}{\text{s}}$: miljoonasta ytimestä hajoaa sekunnissa keskimäärin noin $32$. Koska $A = \lambda N$ ja $\lambda$ on vakio, aktiivisuus pienenee samaa lakia kuin ytimien määrä:</p>
 <p>$$A = A_0 \left(\frac{1}{2}\right)^{t/T_{1/2}}$$</p>
 <p>missä $A_0$ on aktiivisuus hetkellä $t = 0$. Samoin pienenee hajoamattoman aineen massa, koska se on verrannollinen ytimien määrään.</p>
