@@ -4,6 +4,7 @@
   python scripts/ci_parallel.py sims    [--pages ...] [--shard i/n] [--workers N] [--report f.json]
   python scripts/ci_parallel.py layout  --widths "360 390 ..." [--pages ...] [--shard i/n] [--workers N] [--report f.json]
   python scripts/ci_parallel.py inquiry [--pages ...] [--shard i/n] [--workers N] [--report f.json]
+  python scripts/ci_parallel.py simtext [--pages ...] [--shard i/n] [--workers N] [--report f.json]   test_sim_text.py: the picture's text at 1366×650
   python scripts/ci_parallel.py gate <reports-dir> --pages "<the same>"         every planned page was tested and passed
 
 Why (2026-11-11): test_sims.py, check_layout.py at eight widths and the per-lesson test_inquiry.py runs need about
@@ -53,9 +54,9 @@ HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
 PY = sys.executable
 WIDTHS = "360 390 640 768 1024 1280 1440 1920"   # the eight widths of the layout check (NOTES.md §8)
-SIMS_SHARDS, INQUIRY_SHARDS, LAYOUT_SHARDS, SMALL = 8, 4, 2, 12   # the jobs of a full run (layout: per width); up to SMALL pages run in one job per check
+SIMS_SHARDS, INQUIRY_SHARDS, LAYOUT_SHARDS, SIMTEXT_SHARDS, SMALL = 8, 4, 2, 2, 12   # the jobs of a full run (layout: per width); up to SMALL pages run in one job per check
 SLOW = "slow: not judged"
-TIMEOUT = {"sims": 2400, "layout": 600, "inquiry": 1500}   # seconds a unit may take; the slowest measured: 750, 60 and 410 (fy3-10)
+TIMEOUT = {"simtext": 300, "sims": 2400, "layout": 600, "inquiry": 1500}   # seconds a unit may take; the slowest measured: 750, 60 and 410 (fy3-10)
 
 
 def languages():
@@ -71,7 +72,7 @@ def page_files(out):
 def universe(kind, root=ROOT):
     """{unit id: [verdict keys the script must print for it]} of a full run."""
     units = {}
-    if kind == "sims":
+    if kind in ("sims", "simtext"):
         out = root / "preview" if (root / "preview" / "index.html").exists() else root / "site"
         for f in page_files(out):
             if 'id="sim-root"' in f.read_text(): units.setdefault(f.stem, []).append(f"{out.name}/{f.relative_to(out).with_suffix('').as_posix()}")
@@ -96,6 +97,7 @@ def select(units, pages, shard):
 def command(kind, uid, width, root):
     s = root / "scripts"
     if kind == "sims": return [PY, s / "test_sims.py", uid]
+    if kind == "simtext": return [PY, s / "test_sim_text.py", uid]
     if kind == "layout": return [PY, s / "check_layout.py", uid, "--site", "--width", str(width)]
     return [PY, s / "test_inquiry.py", uid]
 
@@ -108,7 +110,7 @@ def verdict(kind, keys, width, rc, text):
         if not m: problems.append("no 'N passed, N failed' line")
         elif rc == 0 and (m.group(2) != "0" or m.group(1) == "0"): problems.append(f"exit 0 with '{m.group(0).strip()}'")
     else:
-        word, tail = ("PASS|FAIL", "") if kind == "sims" else ("OK|FAIL", f" at {width} px")
+        word, tail = ("PASS|FAIL", "") if kind in ("sims", "simtext") else ("OK|FAIL", f" at {width} px")
         seen = re.findall(rf"^(?:{word})\s+(\S+){re.escape(tail)}(?= |$)", text, re.M)
         for k in keys:
             if seen.count(k) != 1: problems.append(f"{k}: {seen.count(k)} verdict lines, expected 1")
@@ -203,20 +205,21 @@ def plan(pages):
     """The jobs of a run. A full run: SIMS_SHARDS simulation jobs, LAYOUT_SHARDS layout jobs for each width,
     INQUIRY_SHARDS inquiry jobs. A few pages: one job per check. No page: no browser job."""
     n = None if pages == "full" else len(pages.split())
-    if n == 0: return {"sims": [], "layout": [], "inquiry": []}
+    if n == 0: return {"sims": [], "layout": [], "inquiry": [], "simtext": []}
     if n is not None and n <= SMALL:
-        return {"sims": ["0/1"], "layout": [{"name": "all widths", "widths": WIDTHS, "shard": "0/1"}], "inquiry": ["0/1"]}
+        return {"sims": ["0/1"], "layout": [{"name": "all widths", "widths": WIDTHS, "shard": "0/1"}], "inquiry": ["0/1"], "simtext": ["0/1"]}
     sims = SIMS_SHARDS if n is None else min(SIMS_SHARDS, math.ceil(n / 12))
     inq = INQUIRY_SHARDS if n is None else min(INQUIRY_SHARDS, math.ceil(n / 30))
+    stx = SIMTEXT_SHARDS if n is None else 1
     lay = LAYOUT_SHARDS if n is None else min(LAYOUT_SHARDS, math.ceil(n / 140))
-    return {"sims": [f"{i}/{sims}" for i in range(sims)], "inquiry": [f"{i}/{inq}" for i in range(inq)],
+    return {"sims": [f"{i}/{sims}" for i in range(sims)], "inquiry": [f"{i}/{inq}" for i in range(inq)], "simtext": [f"{i}/{stx}" for i in range(stx)],
             "layout": [{"name": f"{w} px {i}/{lay}", "widths": w, "shard": f"{i}/{lay}"} for w in WIDTHS.split() for i in range(lay)]}
 
 
 def gate(args):
     want, bad, rows, notes = plan(args.pages), [], [], []
     reports = [json.loads(f.read_text()) for f in sorted(pathlib.Path(args.dir).rglob("*.json"))]
-    groups = [("sims", None, want["sims"]), ("inquiry", None, want["inquiry"])] + \
+    groups = [("sims", None, want["sims"]), ("simtext", None, want["simtext"]), ("inquiry", None, want["inquiry"])] + \
              [("layout", int(w), [j["shard"] for j in want["layout"] if w in j["widths"].split()]) for w in WIDTHS.split() if want["layout"]]
     for kind, width, shards in groups:
         name = kind + (f" {width} px" if width else "")
@@ -259,7 +262,7 @@ def gate(args):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("kind", choices=["plan", "sims", "layout", "inquiry", "gate"])
+    ap.add_argument("kind", choices=["plan", "sims", "simtext", "layout", "inquiry", "gate"])
     ap.add_argument("dir", nargs="?")
     ap.add_argument("--pages", default="full"); ap.add_argument("--shard", default="0/1"); ap.add_argument("--widths", default=WIDTHS)
     ap.add_argument("--workers", type=int, default=0); ap.add_argument("--report"); ap.add_argument("--timeout", type=int, default=0)
