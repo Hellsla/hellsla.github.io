@@ -47,6 +47,8 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
 14. Task view and theory layout (queue 14, teacher 2026-11-14): U4 first, as soon as no other shared change is open;
     then U1, U2, U3, which start only after step 13's PR 1–PR 5 are merged (same `site.css`, `lesson.js`). Shared
     files: alone, one at a time, merged before content. No new interface text without the teacher's permission.
+15. Editorial final review of FY1–FY8 (queue 15, teacher 2026-11-14): the last step, after every other one; a report first, course by course, with verified
+    errors, possible problems and optional improvements apart; no source changes until the teacher has read it.
 
 Area D waits for the teacher's decision on which plan (FY10, Dronelabra, others) is approved for building.
 
