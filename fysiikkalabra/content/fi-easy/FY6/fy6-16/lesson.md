@@ -324,8 +324,8 @@ Luvun lukuarvot ovat tyypillisiä esimerkkiarvoja. Ne eivät ole tietyn auton ta
 
 ## Kaava: Latausaika, latausteho ja johdon lämpeneminen
 Latauksen hyötysuhde kertoo, kuinka suuri osa verkosta otetusta energiasta varastoituu akkuun:
-```latex
-\eta = \frac{W_\text{akku}}{W_\text{verkko}}
+```kaavat
+hyötysuhde :: \eta = \frac{W_\text{akku}}{W_\text{verkko}}
 ```
 missä $\eta$ on hyötysuhde, $W_\text{akku}$ akkuun varastoitunut energia ($\text{kWh}$) ja $W_\text{verkko}$ verkosta otettu energia ($\text{kWh}$).
 

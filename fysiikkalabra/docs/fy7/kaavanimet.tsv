@@ -1,0 +1,197 @@
+# FY7:n kaavojen nimet (opettaja 2026-11-14: kaavat pitää löytyä MAFY-taulukosta; nimi vain kaavalle, joka on MAFY-taulukoissa, MAFYn oma nimi).
+# Lähde: https://mafytaulukot.fi/ (Mekaniikan kaavoja, Aaltoliikkeen kaavoja, Virtapiirien kaavoja, Sähkömagnetismin kaavoja, Atomi-, säteily- ja ydinfysiikan kaavoja), luettu 2026-11-14.
+# Nimetty on kaava, jonka laki on MAFYssa; tunnuksia ei ole muutettu (docs/fy9/mafy-tunnukset.tsv ei listaa FY7:ää), erot tunnuksissa ja muodossa ovat huomio-sarakkeessa. Nimeämättömät ovat kaavoja, joita MAFYssa ei ole, laskuja tai MAFY-kaavan erikoistapauksia.
+# = on yllä nimetyn kaavan toinen muoto, + on lisätieto. Rivit tunnin tekstin järjestyksessä.
+tunti	rivi	kaava	kaava_en	nimi	name_en	lähde	MAFY-sivu	huomio
+fy7-1	336	\overline{B} = \overline{B}_1 + \overline{B}_2	\overline{B} = \overline{B}_1 + \overline{B}_2					
+fy7-1	340	B = \sqrt{B_1^2 + B_2^2}	B = \sqrt{B_1^2 + B_2^2}					
+fy7-1	340	\tan\theta = \frac{B_2}{B_1}	\tan\theta = \frac{B_2}{B_1}					
+fy7-1	380	B_\text{h} = B\cos I	B_\text{h} = B\cos I					
+fy7-1	380	B_\text{v} = B\sin I	B_\text{v} = B\sin I					
+fy7-1	425	\tan\theta = \frac{B_\text{m}}{B_\text{h}}	\tan\theta = \frac{B_\text{m}}{B_\text{h}}					
+fy7-1	425	B_\text{m} = B_\text{h}\tan\theta	B_\text{m} = B_\text{h}\tan\theta					
+fy7-1	439	B_\text{m} = B_\text{h}\tan\theta	B_\text{m} = B_\text{h}\tan\theta					
+fy7-1	439	= 14\,\mu\text{T} \cdot \tan 52^\circ	= 14\,\mu\text{T} \cdot \tan 52^\circ					
+fy7-1	439	= 14\,\mu\text{T} \cdot 1{,}280	= 14\,\mu\text{T} \cdot 1.280					
+fy7-1	439	= 17{,}9\,\mu\text{T}	= 17.9\,\mu\text{T}					
+fy7-2	80	F_\text{s} = |q|E	F_\text{s} = |q|E					
+fy7-2	80	|q|U = \tfrac{1}{2} m v^2	|q|U = \tfrac{1}{2} m v^2					
+fy7-2	261	F_\text{m} = |q| v B \sin\alpha	F_\text{m} = |q| v B \sin\alpha	varattuun hiukkaseen kohdistuva magneettinen voima	magnetic force on a charged particle	MAFY	Sähkömagnetismin kaavoja	MAFY: F_M = QvB_⊥; tunnin muoto F = |q|vB sin α, sama laki (B_⊥ = B sin α)
+fy7-2	267	|q| v B = \frac{m v^2}{r}	|q| v B = \frac{m v^2}{r}					
+fy7-2	267	r = \frac{m v}{|q| B}	r = \frac{m v}{|q| B}					
+fy7-2	322	|q|E = |q|vB	|q|E = |q|vB					
+fy7-2	322	v = \frac{E}{B}	v = \frac{E}{B}					
+fy7-2	332	m = \frac{|q| B_2 r}{v}	m = \frac{|q| B_2 r}{v}					
+fy7-2	429	qE = qvB_1 \;\Rightarrow\; v = \frac{E}{B_1}	qE = qvB_1 \;\Rightarrow\; v = \frac{E}{B_1}					
+fy7-2	429	[6pt] qvB_2 = \frac{m v^2}{r}	[6pt] qvB_2 = \frac{m v^2}{r}					
+fy7-2	429	m = \frac{q B_2 r}{v}	m = \frac{q B_2 r}{v}					
+fy7-2	429	r = \frac{d}{2}	r = \frac{d}{2}					
+fy7-2	444	v = \frac{E}{B_1}	v = \frac{E}{B_1}					
+fy7-2	444	= \frac{6{,}00 \cdot 10^{4}\,\text{V/m}}{0{,}200\,\text{T}}	= \frac{6.00 \cdot 10^{4}\,\text{V/m}}{0.200\,\text{T}}					
+fy7-2	444	= 3{,}00 \cdot 10^{5}\,\text{m/s}	= 3.00 \cdot 10^{5}\,\text{m/s}					
+fy7-2	444	[6pt] m = \frac{q B_2 r}{v}	[6pt] m = \frac{q B_2 r}{v}					
+fy7-2	444	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}500\,\text{T}	= 1.602 \cdot 10^{-19}\,\text{C} \cdot 0.500\,\text{T}					
+fy7-2	444	\cdot \frac{0{,}1245\,\text{m}}{3{,}00 \cdot 10^{5}\,\text{m/s}}	\cdot \frac{0.1245\,\text{m}}{3.00 \cdot 10^{5}\,\text{m/s}}					
+fy7-2	444	= 3{,}324 \cdot 10^{-26}\,\text{kg}	= 3.324 \cdot 10^{-26}\,\text{kg}					
+fy7-3	258	B = \frac{\mu_0 I}{2\pi r}	B = \frac{\mu_0 I}{2\pi r}	suoran virtajohtimen magneettivuon tiheys	magnetic flux density of a straight current-carrying wire	MAFY	Sähkömagnetismin kaavoja	MAFY: B = μ₀I/(2πr)
+fy7-3	315	B = \mu_0 \frac{N I}{l}	B = \mu_0 \frac{N I}{l}	pitkän käämin magneettivuon tiheys	magnetic flux density of a long solenoid	MAFY	Sähkömagnetismin kaavoja	MAFY: B = Nμ₀I/ℓ; tunnin merkintä l, sama kaava
+fy7-3	382	B = \mu_0 \frac{N I}{l}	B = \mu_0 \frac{N I}{l}					
+fy7-3	382	k = \frac{B}{B_\text{Maa}}	k = \frac{B}{B_\text{Earth}}					
+fy7-3	396	B = \mu_0 \frac{N I}{l}	B = \mu_0 \frac{N I}{l}					
+fy7-3	396	= 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}	= 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}					
+fy7-3	396	\cdot \frac{600 \cdot 2{,}50\,\text{A}}{0{,}150\,\text{m}}	\cdot \frac{600 \cdot 2.50\,\text{A}}{0.150\,\text{m}}					
+fy7-3	396	= 0{,}012566\,\text{T}	= 0.012566\,\text{T}					
+fy7-3	396	[6pt] k = \frac{0{,}012566\,\text{T}}{50 \cdot 10^{-6}\,\text{T}}	[6pt] k = \frac{0.012566\,\text{T}}{50 \cdot 10^{-6}\,\text{T}}					
+fy7-3	396	= 251{,}3	= 251.3					
+fy7-4	177	F = I l B \sin\alpha	F = I l B \sin\alpha	suoraan johtimeen kohdistuva magneettinen voima	magnetic force on a straight conductor	MAFY	Sähkömagnetismin kaavoja	MAFY: F_M = IℓB_⊥; tunnin merkintä l ja B sin α (B_⊥ = B sin α)
+fy7-4	212	B_1 = \frac{\mu_0 I_1}{2\pi r}	B_1 = \frac{\mu_0 I_1}{2\pi r}					
+fy7-4	212	[6pt] F = I_2 l B_1	[6pt] F = I_2 l B_1					
+fy7-4	212	= \frac{\mu_0 I_1 I_2 l}{2\pi r}	= \frac{\mu_0 I_1 I_2 l}{2\pi r}					
+fy7-4	276	l = N \cdot 2\pi r	l = N \cdot 2\pi r					
+fy7-4	276	F = I l B \sin 90^\circ = I l B	F = I l B \sin 90^\circ = I l B					
+fy7-4	290	l = N \cdot 2\pi r	l = N \cdot 2\pi r					
+fy7-4	290	= 60 \cdot 2\pi \cdot 0{,}013\,\text{m}	= 60 \cdot 2\pi \cdot 0.013\,\text{m}					
+fy7-4	290	= 4{,}9009\,\text{m}	= 4.9009\,\text{m}					
+fy7-4	290	[6pt] F = I l B	[6pt] F = I l B					
+fy7-4	290	= 1{,}5\,\text{A} \cdot 4{,}9009\,\text{m} \cdot 0{,}95\,\text{T}	= 1.5\,\text{A} \cdot 4.9009\,\text{m} \cdot 0.95\,\text{T}					
+fy7-4	290	= 6{,}984\,\text{N}	= 6.984\,\text{N}					
+fy7-5	205	\Phi = BA	\Phi = BA	magneettivuo	magnetic flux	MAFY	Sähkömagnetismin kaavoja	MAFY: Φ = AB_⊥; tunnin muoto kohtisuora kenttä
+fy7-5	267	e_\text{ka} = -N\frac{\Delta\Phi}{\Delta t}	e_\text{ka} = -N\frac{\Delta\Phi}{\Delta t}	käämiin indusoituva jännite	voltage induced in a coil	MAFY	Sähkömagnetismin kaavoja	MAFY: e = −NΔΦ/Δt; tunnin merkintä e_ka (keskiarvo)
+fy7-5	364	e = vBl	e = vBl					
+fy7-5	448	|e| = N\frac{\Delta\Phi}{\Delta t}	|e| = N\frac{\Delta\Phi}{\Delta t}					
+fy7-5	448	|e| = \frac{N(B_2 - B_1)A}{\Delta t}	|e| = \frac{N(B_2 - B_1)A}{\Delta t}					
+fy7-5	462	|e| = \frac{N(B_2 - B_1)A}{\Delta t}	|e| = \frac{N(B_2 - B_1)A}{\Delta t}					
+fy7-5	462	= \frac{250 \cdot 0{,}40\,\text{T} \cdot 4{,}0 \cdot 10^{-4}\,\text{m}^2}{0{,}20\,\text{s}}	= \frac{250 \cdot 0.40\,\text{T} \cdot 4.0 \cdot 10^{-4}\,\text{m}^2}{0.20\,\text{s}}					
+fy7-5	462	= 0{,}20\,\text{V}	= 0.20\,\text{V}					
+fy7-6	244	e_\text{ka} = -N \frac{\Delta \Phi}{\Delta t}	e_\text{ka} = -N \frac{\Delta \Phi}{\Delta t}	käämiin indusoituva jännite	voltage induced in a coil	MAFY	Sähkömagnetismin kaavoja	MAFY: e = −NΔΦ/Δt; tunnin merkintä e_ka (keskiarvo)
+fy7-6	250	mgh = \tfrac{1}{2} m v^2 + Q	mgh = \tfrac{1}{2} m v^2 + Q					
+fy7-6	250	Q = mgh - \tfrac{1}{2} m v^2	Q = mgh - \tfrac{1}{2} m v^2					
+fy7-6	257	P = F v	P = F v	hetkellinen teho	instantaneous power	MAFY	Mekaniikan kaavoja	MAFY: P = Fv
+fy7-6	311	v = \frac{h}{t}	v = \frac{h}{t}					
+fy7-6	311	Q = mgh - \tfrac{1}{2} m v^2	Q = mgh - \tfrac{1}{2} m v^2					
+fy7-6	325	v = \frac{h}{t}	v = \frac{h}{t}					
+fy7-6	325	= \frac{1{,}20\,\text{m}}{8{,}0\,\text{s}}	= \frac{1.20\,\text{m}}{8.0\,\text{s}}					
+fy7-6	325	= 0{,}15\,\text{m/s}	= 0.15\,\text{m/s}					
+fy7-6	325	[6pt] Q = mgh - \tfrac{1}{2} m v^2	[6pt] Q = mgh - \tfrac{1}{2} m v^2					
+fy7-6	325	= 0{,}025\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}20\,\text{m}	= 0.025\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.20\,\text{m}					
+fy7-6	325	- \tfrac{1}{2} \cdot 0{,}025\,\text{kg} \cdot (0{,}15\,\text{m/s})^2	- \tfrac{1}{2} \cdot 0.025\,\text{kg} \cdot (0.15\,\text{m/s})^2					
+fy7-6	325	= 0{,}29430\,\text{J} - 0{,}00028\,\text{J}	= 0.29430\,\text{J} - 0.00028\,\text{J}					
+fy7-6	325	= 0{,}29402\,\text{J}	= 0.29402\,\text{J}					
+fy7-7	310	\Phi = BA\cos(2\pi f t)	\Phi = BA\cos(2\pi f t)					
+fy7-7	310	[4pt] e = e_0 \sin(2\pi f t)	[4pt] e = e_0 \sin(2\pi f t)					
+fy7-7	310	[4pt] e_0 = NBA \cdot 2\pi f	[4pt] e_0 = NBA \cdot 2\pi f					
+fy7-7	359	U = \frac{U_0}{\sqrt{2}}	U = \frac{U_0}{\sqrt{2}}					
+fy7-7	359	[4pt] I = \frac{I_0}{\sqrt{2}}	[4pt] I = \frac{I_0}{\sqrt{2}}					
+fy7-7	413	e_0 = NBA \cdot 2\pi f	e_0 = NBA \cdot 2\pi f	generaattorissa käämiin indusoituvan sinimuotoisen vaihtojännitteen huippuarvo	peak value of the sinusoidal voltage induced in a generator coil	MAFY	Sähkömagnetismin kaavoja	MAFY: u₀ = NAB·2πf; tunnin merkintä e_0
+fy7-7	413	U = \frac{e_0}{\sqrt{2}} = \frac{NBA \cdot 2\pi f}{\sqrt{2}}	U = \frac{e_0}{\sqrt{2}} = \frac{NBA \cdot 2\pi f}{\sqrt{2}}					
+fy7-7	427	e_0 = NBA \cdot 2\pi f	e_0 = NBA \cdot 2\pi f					
+fy7-7	427	= 250 \cdot 0{,}18\,\text{T} \cdot 0{,}0020\,\text{m}^2	= 250 \cdot 0.18\,\text{T} \cdot 0.0020\,\text{m}^2					
+fy7-7	427	\cdot 2\pi \cdot 12\,\tfrac{1}{\text{s}}	\cdot 2\pi \cdot 12\,\tfrac{1}{\text{s}}					
+fy7-7	427	= 6{,}786\,\text{V}	= 6.786\,\text{V}					
+fy7-7	427	[6pt] U = \frac{6{,}786\,\text{V}}{\sqrt{2}}	[6pt] U = \frac{6.786\,\text{V}}{\sqrt{2}}					
+fy7-7	427	= 4{,}798\,\text{V}	= 4.798\,\text{V}					
+fy7-8	206	\frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}	\frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}	muuntaja	transformer	MAFY	Sähkömagnetismin kaavoja	MAFY: N₁/N₂ = U₁/U₂ ≈ I₂/I₁; tunnin muoto = (ideaalimuuntaja), järjestys eri
+fy7-8	213	P = U I	P = U I					
+fy7-8	213	[6pt] P_\text{h} = R I^2 = \frac{R P^2}{U^2}	[6pt] P_\text{h} = R I^2 = \frac{R P^2}{U^2}					
+fy7-8	283	P = \sqrt{3}\,U I \cos\varphi	P = \sqrt{3}\,U I \cos\varphi					
+fy7-8	302	\frac{U_1}{U_2} = \frac{N_1}{N_2} \;\Rightarrow\; N_1 = \frac{N_2 U_1}{U_2}	\frac{U_1}{U_2} = \frac{N_1}{N_2} \;\Rightarrow\; N_1 = \frac{N_2 U_1}{U_2}					
+fy7-8	302	[6pt] \frac{U_1}{U_2} = \frac{I_2}{I_1} \;\Rightarrow\; I_1 = \frac{I_2 U_2}{U_1}	[6pt] \frac{U_1}{U_2} = \frac{I_2}{I_1} \;\Rightarrow\; I_1 = \frac{I_2 U_2}{U_1}					
+fy7-8	316	N_1 = \frac{N_2 U_1}{U_2}	N_1 = \frac{N_2 U_1}{U_2}					
+fy7-8	316	= \frac{360 \cdot 110\,\text{kV}}{20\,\text{kV}}	= \frac{360 \cdot 110\,\text{kV}}{20\,\text{kV}}					
+fy7-8	316	= 1980	= 1980					
+fy7-8	316	[6pt] I_1 = \frac{I_2 U_2}{U_1}	[6pt] I_1 = \frac{I_2 U_2}{U_1}					
+fy7-8	316	= \frac{450\,\text{A} \cdot 20\,\text{kV}}{110\,\text{kV}}	= \frac{450\,\text{A} \cdot 20\,\text{kV}}{110\,\text{kV}}					
+fy7-8	316	= 81{,}82\,\text{A}	= 81.82\,\text{A}					
+fy7-9	223	c = f \lambda	c = f \lambda	aaltoliikkeen perusyhtälö	wave equation	MAFY	Aaltoliikkeen kaavoja	MAFY: v = fλ; tunnin c on valon nopeus (valo, sama laki)
+fy7-9	346	\lambda_\text{max} T = b	\lambda_\text{max} T = b	Wienin siirtymälaki	Wien's displacement law	MAFY	Atomi-, säteily- ja ydinfysiikan kaavoja	MAFY: λ_max = b/T; tunnin muoto λ_max T = b on ratkaistu muoto, sama laki
+fy7-9	436	\lambda_\text{max} T = b	\lambda_\text{max} T = b					
+fy7-9	436	T = \frac{b}{\lambda_\text{max}}	T = \frac{b}{\lambda_\text{max}}					
+fy7-9	450	T = \frac{b}{\lambda_\text{max}}	T = \frac{b}{\lambda_\text{max}}					
+fy7-9	450	= \frac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{502 \cdot 10^{-9}\,\text{m}}	= \frac{2.898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{502 \cdot 10^{-9}\,\text{m}}					
+fy7-9	450	= 5773\,\text{K}	= 5773\,\text{K}					
+fy7-10	149	\beta = \alpha_1	\beta = \alpha_1					
+fy7-10	155	n = \frac{c}{v}	n = \frac{c}{v}	taitekerroin sähkömagneettiselle aaltoliikkeelle (valolle)	refractive index for electromagnetic waves (light)	MAFY	Aaltoliikkeen kaavoja	MAFY: n = c/v
+fy7-10	162	n_1 \sin \alpha_1 = n_2 \sin \alpha_2	n_1 \sin \alpha_1 = n_2 \sin \alpha_2	taittumislaki (Snellin laki)	law of refraction (Snell's law)	MAFY	Aaltoliikkeen kaavoja	MAFY: sin α₁/sin α₂ = v₁/v₂ = n₂/n₁; ratkaistu muoto, sama laki
+fy7-10	254	n_1 \sin\alpha_1 = n_2 \sin\alpha_2	n_1 \sin\alpha_1 = n_2 \sin\alpha_2					
+fy7-10	254	\sin\alpha_2 = \frac{n_1 \sin\alpha_1}{n_2}	\sin\alpha_2 = \frac{n_1 \sin\alpha_1}{n_2}					
+fy7-10	254	[6pt] n_2 = \frac{c}{v} \;\Rightarrow\; v = \frac{c}{n_2}	[6pt] n_2 = \frac{c}{v} \;\Rightarrow\; v = \frac{c}{n_2}					
+fy7-10	269	\sin\alpha_2 = \frac{n_1 \sin\alpha_1}{n_2}	\sin\alpha_2 = \frac{n_1 \sin\alpha_1}{n_2}					
+fy7-10	269	= \frac{1{,}00 \cdot \sin 55{,}0^\circ}{1{,}33}	= \frac{1.00 \cdot \sin 55.0^\circ}{1.33}					
+fy7-10	269	= 0{,}6159	= 0.6159					
+fy7-10	269	\alpha_2 = 38{,}02^\circ	\alpha_2 = 38.02^\circ					
+fy7-10	269	[6pt] v = \frac{c}{n_2}	[6pt] v = \frac{c}{n_2}					
+fy7-10	269	= \frac{3{,}00 \cdot 10^{8}\,\text{m/s}}{1{,}33}	= \frac{3.00 \cdot 10^{8}\,\text{m/s}}{1.33}					
+fy7-10	269	= 2{,}256 \cdot 10^{8}\,\text{m/s}	= 2.256 \cdot 10^{8}\,\text{m/s}					
+fy7-11	250	\sin \alpha_1 = n(\lambda) \sin \alpha_2	\sin \alpha_1 = n(\lambda) \sin \alpha_2					
+fy7-11	310	\alpha_2 + \alpha_3 = A	\alpha_2 + \alpha_3 = A					
+fy7-11	310	[6pt] \delta = \alpha_1 + \alpha_4 - A	[6pt] \delta = \alpha_1 + \alpha_4 - A					
+fy7-11	345	\theta = 4\beta - 2\alpha	\theta = 4\beta - 2\alpha					
+fy7-11	424	\sin \alpha_1 = n \sin \alpha_2	\sin \alpha_1 = n \sin \alpha_2					
+fy7-11	424	[6pt] \sin \alpha_2 = \frac{\sin \alpha_1}{n}	[6pt] \sin \alpha_2 = \frac{\sin \alpha_1}{n}					
+fy7-11	438	\sin \alpha_\text{p} = \frac{\sin \alpha_1}{n_\text{p}}	\sin \alpha_\text{r} = \frac{\sin \alpha_1}{n_\text{r}}					
+fy7-11	438	= \frac{\sin 60{,}0^\circ}{1{,}5143}	= \frac{\sin 60.0^\circ}{1.5143}					
+fy7-11	438	= 0{,}57190	= 0.57190					
+fy7-11	438	\alpha_\text{p} = 34{,}88^\circ	\alpha_\text{r} = 34.88^\circ					
+fy7-11	438	[6pt] \sin \alpha_\text{v} = \frac{\sin \alpha_1}{n_\text{v}}	[6pt] \sin \alpha_\text{v} = \frac{\sin \alpha_1}{n_\text{v}}					
+fy7-11	438	= \frac{\sin 60{,}0^\circ}{1{,}5302}	= \frac{\sin 60.0^\circ}{1.5302}					
+fy7-11	438	= 0{,}56596	= 0.56596					
+fy7-11	438	\alpha_\text{v} = 34{,}47^\circ	\alpha_\text{v} = 34.47^\circ					
+fy7-12	201	n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ	n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ					
+fy7-12	201	[6pt] \sin\alpha_\text{r} = \frac{n_2}{n_1}	[6pt] \sin\alpha_\text{r} = \frac{n_2}{n_1}					
+fy7-12	265	t = \frac{s}{v} = \frac{n s}{c}	t = \frac{s}{v} = \frac{n s}{c}					
+fy7-12	284	n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ	n_1 \sin\alpha_\text{r} = n_2 \sin 90^\circ					
+fy7-12	284	[6pt] \sin\alpha_\text{r} = \frac{n_2}{n_1}	[6pt] \sin\alpha_\text{r} = \frac{n_2}{n_1}					
+fy7-12	284	[6pt] \alpha_\text{r} = \sin^{-1}\frac{n_2}{n_1}	[6pt] \alpha_\text{r} = \sin^{-1}\frac{n_2}{n_1}					
+fy7-12	299	\sin\alpha_\text{r} = \frac{1{,}46}{1{,}48}	\sin\alpha_\text{r} = \frac{1.46}{1.48}					
+fy7-12	299	= 0{,}9865	= 0.9865					
+fy7-12	299	[6pt] \alpha_\text{r} = \sin^{-1} 0{,}9865	[6pt] \alpha_\text{r} = \sin^{-1} 0.9865					
+fy7-12	299	= 80{,}57^\circ	= 80.57^\circ					
+fy7-13	877	d \sin\theta = k\lambda	d \sin\theta = k\lambda	hilayhtälö	grating equation	MAFY	Aaltoliikkeen kaavoja	MAFY: d sin α = nλ; tunnin merkinnät θ ja k
+fy7-13	920	d = \frac{1\,\text{mm}}{N}	d = \frac{1\,\text{mm}}{N}					
+fy7-13	930	\tan\theta = \frac{x}{L}	\tan\theta = \frac{x}{L}					
+fy7-13	1002	\tan\theta = \frac{x}{L}	\tan\theta = \frac{x}{L}					
+fy7-13	1002	[6pt] d\sin\theta = k\lambda	[6pt] d\sin\theta = k\lambda					
+fy7-13	1002	[6pt] \lambda = \frac{d\sin\theta}{k}	[6pt] \lambda = \frac{d\sin\theta}{k}					
+fy7-13	1017	\tan\theta = \frac{x}{L}	\tan\theta = \frac{x}{L}					
+fy7-13	1017	= \frac{0{,}396\,\text{m}}{2{,}00\,\text{m}} = 0{,}198	= \frac{0.396\,\text{m}}{2.00\,\text{m}} = 0.198					
+fy7-13	1017	\theta = 11{,}20^\circ	\theta = 11.20^\circ					
+fy7-13	1017	[6pt] \lambda = \frac{d\sin\theta}{k}	[6pt] \lambda = \frac{d\sin\theta}{k}					
+fy7-13	1017	= \frac{3{,}333 \cdot 10^{-6}\,\text{m} \cdot \sin 11{,}20^\circ}{1}	= \frac{3.333 \cdot 10^{-6}\,\text{m} \cdot \sin 11.20^\circ}{1}					
+fy7-13	1017	= 6{,}474 \cdot 10^{-7}\,\text{m}	= 6.474 \cdot 10^{-7}\,\text{m}					
+fy7-14	378	\Delta s = 2nd	\Delta s = 2nd					
+fy7-14	382	\text{vahvistava:}	\text{constructive:}					
+fy7-14	382	2nd = (k + \tfrac{1}{2})\lambda	2nd = (k + \tfrac{1}{2})\lambda					
+fy7-14	382	[6pt] \text{heikentävä:}	[6pt] \text{destructive:}					
+fy7-14	382	2nd = k\lambda	2nd = k\lambda					
+fy7-14	394	d = \frac{\lambda}{4n}	d = \frac{\lambda}{4n}					
+fy7-14	463	2nd = (k + \tfrac{1}{2})\lambda	2nd = (k + \tfrac{1}{2})\lambda					
+fy7-14	463	[6pt] \lambda = \frac{2nd}{k + \frac{1}{2}}	[6pt] \lambda = \frac{2nd}{k + \frac{1}{2}}					
+fy7-14	477	\lambda = \frac{2nd}{k + \frac{1}{2}}	\lambda = \frac{2nd}{k + \frac{1}{2}}					
+fy7-14	477	[6pt] k = 1:\ \lambda = \frac{2 \cdot 1{,}33 \cdot 380\,\text{nm}}{1{,}5}	[6pt] k = 1:\ \lambda = \frac{2 \cdot 1.33 \cdot 380\,\text{nm}}{1.5}					
+fy7-14	477	= 673{,}9\,\text{nm}	= 673.9\,\text{nm}					
+fy7-14	477	[6pt] k = 2:\ \lambda = \frac{2 \cdot 1{,}33 \cdot 380\,\text{nm}}{2{,}5}	[6pt] k = 2:\ \lambda = \frac{2 \cdot 1.33 \cdot 380\,\text{nm}}{2.5}					
+fy7-14	477	= 404{,}3\,\text{nm}	= 404.3\,\text{nm}					
+fy7-15	425	I = I_0 \cos^2\theta	I = I_0 \cos^2\theta					
+fy7-15	485	n_1 \sin\alpha_\text{B} = n_2 \sin\alpha_2	n_1 \sin\alpha_\text{B} = n_2 \sin\alpha_2					
+fy7-15	485	[4pt] n_1 \sin\alpha_\text{B} = n_2 \cos\alpha_\text{B}	[4pt] n_1 \sin\alpha_\text{B} = n_2 \cos\alpha_\text{B}					
+fy7-15	485	[4pt] \tan\alpha_\text{B} = \frac{n_2}{n_1}	[4pt] \tan\alpha_\text{B} = \frac{n_2}{n_1}					
+fy7-15	551	I_1 = \tfrac{1}{2} I_0	I_1 = \tfrac{1}{2} I_0					
+fy7-15	551	[4pt] I_2 = I_1 \cos^2\theta	[4pt] I_2 = I_1 \cos^2\theta					
+fy7-15	551	[4pt] I_2 = \tfrac{1}{2} I_0 \cos^2\theta	[4pt] I_2 = \tfrac{1}{2} I_0 \cos^2\theta					
+fy7-15	566	I_2 = \tfrac{1}{2} I_0 \cos^2\theta	I_2 = \tfrac{1}{2} I_0 \cos^2\theta					
+fy7-15	566	= \tfrac{1}{2} \cdot 840\,\tfrac{\text{W}}{\text{m}^2} \cdot \cos^2 35^\circ	= \tfrac{1}{2} \cdot 840\,\tfrac{\text{W}}{\text{m}^2} \cdot \cos^2 35^\circ					
+fy7-15	566	= 420\,\tfrac{\text{W}}{\text{m}^2} \cdot 0{,}6710	= 420\,\tfrac{\text{W}}{\text{m}^2} \cdot 0.6710					
+fy7-15	566	= 281{,}8\,\tfrac{\text{W}}{\text{m}^2}	= 281.8\,\tfrac{\text{W}}{\text{m}^2}					
+fy7-16	220	A = 10\,\text{dB} \cdot \lg \frac{P_0}{P}	A = 10\,\text{dB} \cdot \lg \frac{P_0}{P}					
+fy7-16	220	[6pt] A = aL	[6pt] A = aL					
+fy7-16	278	e_0 = N \cdot 2\pi f \cdot \Phi_0	e_0 = N \cdot 2\pi f \cdot \Phi_0					
+fy7-16	297	A = aL	A = aL					
+fy7-16	297	[6pt] \lg \frac{P_0}{P} = \frac{A}{10\,\text{dB}}	[6pt] \lg \frac{P_0}{P} = \frac{A}{10\,\text{dB}}					
+fy7-16	297	[6pt] P = P_0 \cdot 10^{-\frac{A}{10\,\text{dB}}}	[6pt] P = P_0 \cdot 10^{-\frac{A}{10\,\text{dB}}}					
+fy7-16	312	A = aL	A = aL					
+fy7-16	312	= 0{,}20\,\tfrac{\text{dB}}{\text{km}} \cdot 80\,\text{km}	= 0.20\,\tfrac{\text{dB}}{\text{km}} \cdot 80\,\text{km}					
+fy7-16	312	= 16\,\text{dB}	= 16\,\text{dB}					
+fy7-16	312	[6pt] P = P_0 \cdot 10^{-\frac{A}{10\,\text{dB}}}	[6pt] P = P_0 \cdot 10^{-\frac{A}{10\,\text{dB}}}					
+fy7-16	312	= 2{,}0\,\text{mW} \cdot 10^{-\frac{16\,\text{dB}}{10\,\text{dB}}}	= 2.0\,\text{mW} \cdot 10^{-\frac{16\,\text{dB}}{10\,\text{dB}}}					
+fy7-16	312	= 2{,}0\,\text{mW} \cdot 10^{-1{,}6}	= 2.0\,\text{mW} \cdot 10^{-1.6}					
+fy7-16	312	= 0{,}0502\,\text{mW}	= 0.0502\,\text{mW}					

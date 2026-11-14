@@ -202,8 +202,8 @@ Ilmiötä kutsutaan **sähkömagneettiseksi induktioksi**, ja käämin päiden v
 
 ### Magneettivuo
 Muutoksen suuruutta mitataan **magneettivuolla**. Se kertoo, kuinka paljon magneettikenttää kulkee silmukan läpi. Kun homogeeninen kenttä on kohtisuorassa silmukan tasoa vastaan, magneettivuo on
-```latex
-\Phi = BA
+```kaavat
+magneettivuo :: \Phi = BA
 ```
 missä $\Phi$ on magneettivuo, $B$ magneettivuon tiheys (T) ja $A$ silmukan pinta-ala (m²). Vuon yksikkö on weber: $1\,\text{Wb} = 1\,\text{T}\cdot\text{m}^2$. Vuo on sitä suurempi, mitä voimakkaampi kenttä ja mitä suurempi silmukka on. Jos silmukka käännetään vinoon, sen läpi kulkee vähemmän kenttäviivoja ja vuo pienenee. Kun silmukan taso on kentän suuntainen, yksikään kenttäviiva ei kulje sen läpi, ja vuo on nolla.
 
@@ -264,8 +264,8 @@ missä $\Phi$ on magneettivuo, $B$ magneettivuon tiheys (T) ja $A$ silmukan pint
 
 ## Kaava: Induktiolaki
 Faradayn havainnot tiivistyvät **induktiolakiin**: käämiin syntyvä induktiojännite on verrannollinen käämin läpi kulkevan magneettivuon muutosnopeuteen ja käämin kierrosten lukumäärään. Käämin keskimääräinen induktiojännite aikavälillä $\Delta t$ on
-```latex
-e_\text{ka} = -N\frac{\Delta\Phi}{\Delta t}
+```kaavat
+käämiin indusoituva jännite :: e_\text{ka} = -N\frac{\Delta\Phi}{\Delta t}
 ```
 missä $e_\text{ka}$ on keskimääräinen induktiojännite (V), $N$ käämin kierrosten lukumäärä, $\Delta\Phi$ yhden kierroksen läpi kulkevan magneettivuon muutos (Wb) ja $\Delta t$ aika (s), jonka kuluessa muutos tapahtuu. Jos vuo muuttuu tasaisella nopeudella, induktiojännite on koko aikavälin vakio ja yhtä suuri kuin keskiarvonsa, ja silloin merkitään lyhyesti $e$. Jos vuo muuttuu epätasaisesti, jännitteen hetkellinen arvo riippuu vuon muutosnopeudesta juuri kyseisellä hetkellä: $e(t) = -N\,\tfrac{\mathrm{d}\Phi}{\mathrm{d}t}$. Kierrokset ovat sarjassa, joten jokainen kierros lisää jännitteeseen yhtä paljon. Yksiköt sopivat yhteen: $1\,\tfrac{\text{Wb}}{\text{s}} = 1\,\text{V}$. Miinusmerkki kertoo induktiojännitteen suunnan: se vastustaa muutosta, joka sen synnyttää. Suuntaa käsitellään luvussa *Lenzin laki ja pyörrevirrat*; jännitteen suuruus lasketaan yhtälöstä $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$. Suuruus on aina positiivinen, myös silloin, kun vuo pienenee.
 

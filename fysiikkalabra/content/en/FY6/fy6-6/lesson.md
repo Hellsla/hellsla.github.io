@@ -234,8 +234,8 @@ When the current is switched on, the resistor first warms up quickly, because al
 
 ## Formula: Electric power and Joule's law
 The electric power is
-```latex
-P = UI
+```kaavat
+power consumed in a conductor :: P = UI
 ```
 where $P$ is the power (W), $U$ the voltage of the component (V) and $I$ the current through the component (A). The formula holds for any component: a resistor, a lamp, a motor or a battery being charged.
 

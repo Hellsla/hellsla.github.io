@@ -280,8 +280,8 @@ Kaavio näyttää, mitkä osat on kytketty toisiinsa. Se ei näytä, miltä lait
 
 ## Kaava: Sähkövirta
 Sähkövirta kertoo, kuinka suuri varaus kulkee johtimen poikkileikkauksen läpi aikayksikössä. Poikkileikkaus on kohta, jossa johto ajatellaan katkaistuksi poikittain:
-```latex
-I = \frac{Q}{t}
+```kaavat
+sähkövirta :: I = \frac{Q}{t}
 ```
 missä $I$ on sähkövirta ($\text{A}$), $Q$ poikkileikkauksen läpi kulkenut varaus ($\text{C}$) ja $t$ aika ($\text{s}$). Varauksen yksikkö on coulombi $\text{C}$ ja virran yksikkö ampeeri $\text{A}$. Virta on $1\,\text{A}$, kun poikkileikkauksen läpi kulkee joka sekunti varaus $1\,\text{C}$. Siis $1\,\text{A} = 1\,\text{C/s}$. Kun virta tunnetaan, kulkenut varaus saadaan tulona $Q = It$.
 

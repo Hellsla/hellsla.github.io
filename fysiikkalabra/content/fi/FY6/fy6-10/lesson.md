@@ -384,8 +384,8 @@ Varattu kappale vaikuttaa toiseen varattuun kappaleeseen koskematta siihen. Täm
 
 ## Kaava: Coulombin laki
 Kahden pistevarauksen välisen sähköisen voiman suuruus on suoraan verrannollinen varausten tuloon ja kääntäen verrannollinen niiden välisen etäisyyden neliöön. Tämä on **Coulombin laki**:
-```latex
-F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}
+```kaavat
+Coulombin voiman suuruus :: F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}
 ```
 missä $F$ on voiman suuruus ($\text{N}$), $q_1$ ja $q_2$ varaukset ($\text{C}$), $r$ varausten välinen etäisyys ($\text{m}$) ja $k = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$ Coulombin lain vakio. Coulombin laki pätee täsmällisesti pistevarauksille. Pallosymmetrisesti varatun kappaleen ulkopuolinen kenttä vastaa keskipisteeseen sijoitetun pistevarauksen kenttää, joten tällaisten pallojen etäisyys mitataan keskipisteiden välillä. Kun varatut johtavat pallot ovat lähellä toisiaan, niiden pintavarausten jakaumat voivat muuttua, eikä keskipisteisiin sijoitettujen pistevarausten malli ole enää tarkka. Vakion arvo pätee tyhjiössä; ilmassa voima on lähes sama.
 

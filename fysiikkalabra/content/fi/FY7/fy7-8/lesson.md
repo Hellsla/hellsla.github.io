@@ -203,8 +203,8 @@ Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin j
 
 ## Kaava: Muuntaja ja siirtohäviö
 Ideaalisen muuntajan jännitteet ja virrat riippuvat käämien kierrosten lukumääristä:
-```latex
-\frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}
+```kaavat
+muuntaja :: \frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}
 ```
 missä $U_1$ on ensiöjännite (V), $U_2$ toisiojännite (V), $N_1$ ja $N_2$ ensiö- ja toisiokäämin kierrosten lukumäärät ja $I_1$ ja $I_2$ ensiö- ja toisiovirta (A). Suhde $N_1 : N_2$ on muuntosuhde. Jälkimmäinen yhtäsuuruus seuraa tehon säilymisestä: $U_1 I_1 = U_2 I_2$. Jännitteet ja virrat ovat tehollisia arvoja (luku *Generaattori ja vaihtovirta*). Kun jännite kasvaa, virta pienenee samassa suhteessa.
 

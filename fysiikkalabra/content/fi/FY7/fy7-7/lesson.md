@@ -410,11 +410,9 @@ Opetuskäytössä olevan generaattorin käämissä on $250$ kierrosta, ja suorak
 <!-- vaihe -->
 
 **Kaava ratkaistuna.**
-```latex
-\begin{aligned}
-&e_0 = NBA \cdot 2\pi f \\
-&U = \frac{e_0}{\sqrt{2}} = \frac{NBA \cdot 2\pi f}{\sqrt{2}}
-\end{aligned}
+```kaavat
+generaattorissa käämiin indusoituvan sinimuotoisen vaihtojännitteen huippuarvo :: e_0 = NBA \cdot 2\pi f
+U = \frac{e_0}{\sqrt{2}} = \frac{NBA \cdot 2\pi f}{\sqrt{2}}
 ```
 
 <!-- vaihe -->

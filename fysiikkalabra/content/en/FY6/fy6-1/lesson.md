@@ -280,8 +280,8 @@ A diagram shows which components are connected to each other, not what the devic
 
 ## Formula: Electric current
 Electric current tells how large a charge passes through the cross-section of a conductor per unit time:
-```latex
-I = \frac{Q}{t}
+```kaavat
+electric current :: I = \frac{Q}{t}
 ```
 where $I$ is the electric current ($\text{A}$), $Q$ the charge that has passed through the cross-section ($\text{C}$) and $t$ the time ($\text{s}$). The unit of charge is the coulomb $\text{C}$ and the unit of current the ampere $\text{A}$. The current is $1\,\text{A}$ when a charge of $1\,\text{C}$ passes through the cross-section every second, that is $1\,\text{A} = 1\,\text{C/s}$. When the current is known, the charge that has passed is obtained as the product $Q = It$.
 

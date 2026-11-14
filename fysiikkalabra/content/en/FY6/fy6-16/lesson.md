@@ -322,8 +322,8 @@ The numerical values of the chapter are typical example values, not measurements
 
 ## Formula: Charging time, charging power and heating of a cable
 The efficiency of charging tells what fraction of the energy taken from the grid is stored in the battery:
-```latex
-\eta = \frac{W_\text{battery}}{W_\text{grid}}
+```kaavat
+efficiency :: \eta = \frac{W_\text{battery}}{W_\text{grid}}
 ```
 where $\eta$ is the efficiency, $W_\text{battery}$ the energy stored in the battery ($\text{kWh}$) and $W_\text{grid}$ the energy taken from the grid ($\text{kWh}$).
 

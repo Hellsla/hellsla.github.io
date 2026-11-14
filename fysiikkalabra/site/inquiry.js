@@ -18,7 +18,7 @@
       the unticked criteria as the reasoning to add and where to practise it; a
       conclusion (data-after) also waits for the measurements of its experiments and copies tables and text for notes.
    6. Reflection: shows the student's own predictions next to the evidence and asks whether to revise.
-   7. The Ennusta box (details.fold, closed at first): its summary counts the answers; closing it keeps them.
+   7. The Ennusta box (details.fold, closed at first; the first prediction stands outside it, in view, 8h): its summary counts the answers of the questions inside; closing it keeps them.
    8. Guided self-assessment of Tarkista osaamisesi (fieldset.sa-rate, teacher 2026-11-06): every task and the chapter's
       goals get a level a-d or x; the chosen level's text shows under the row. Kept in localStorage
       ruukkilabra:itsearvio:<chapter> as { v: 1, items: { id: { level, history: [[level, ISO time], ...] } } } (the same

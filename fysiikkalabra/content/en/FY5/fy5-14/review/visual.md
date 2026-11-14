@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9baf18bba8c8089b
+CONTENT-HASH: d8a83364b77920c3
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- [Minor] fig 21 (fy5-14-fig-21-390): the v_L and v_H arrow labels are small and light blue at 390 px; enlarge slightly or darken.
+(none)
 
 ## Checked
-- fy5-14-fig-21-390, sim-390 (labels v_L upright L), theory-1280-4/5, stage-sovella-390-1 (fi).
-- Own captures of the four-formula Doppler tables (two two-line named tables, Lisätiedoksi) at 390 and 1280 px in fi and 390 px in en: names bold, formulas aligned, upright subscripts L and H, no clipping.
-- fi-easy shares the structure; not separately captured.
+- Diff read for en fy5-14 (one sentence in the solution); layout unaffected by a same-length phrase swap. No capture needed beyond the diff.
+- Delta: one wording change in the transfer task's solution (Reasonableness): 'huojuvan' -> 'korkeuden vaihtelevan' / 'the pitch vary'. Text only; no layout, figure or formula touched. Wording is natural and unambiguous; plain-language ('pitch') matches the unit's glossary use.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

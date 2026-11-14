@@ -874,8 +874,8 @@ CD-levyn tietoraita kiertää levyn pinnalla tiheänä spiraalina, ja raidan vie
 
 ## Kaava: Hilayhtälö
 Kun valo tulee kohtisuoraan hilaan, vierekkäisistä raoista kulmassa $\theta$ lähtevien säteiden matkaero saadaan kuvan suorakulmaisesta kolmiosta: $\Delta s = d\sin\theta$. Kulma $\theta$ mitataan tulevan valon suunnasta eli keskimaksimin suunnasta. Maksimi syntyy, kun matkaero on kokonainen määrä aallonpituuksia:
-```latex
-d \sin\theta = k\lambda
+```kaavat
+hilayhtälö :: d \sin\theta = k\lambda
 ```
 missä $d$ on hilavakio ($\text{m}$), $\theta$ maksimin suunta tulevan valon suuntaan nähden, $k = 0, 1, 2, \ldots$ maksimin kertaluku ja $\lambda$ valon aallonpituus ($\text{m}$). Kertaluku $k = 0$ on keskimaksimi. Sen kummallakin puolella on samanlaiset maksimit, joten toisen puolen kertaluvut merkitään usein negatiivisina.
 
