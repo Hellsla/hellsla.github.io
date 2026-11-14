@@ -1,4 +1,5 @@
 # FY5:n kaavojen nimet (opettaja 2026-11-14: nimi vain kaavalle, joka on MAFY-taulukoissa samoin tunnuksin; FY5 kirjoitetaan MAFY-tunnuksin).
+# Lähde: https://mafytaulukot.fi/ (Mekaniikan kaavoja 30a537b5-77cd-447d-8d3b-0f857fd20b23, Aaltoliikkeen kaavoja 953a6371-6e0c-447c-a2d8-b7003202254c), luettu 2026-11-14.
 # = on yllä nimetyn kaavan toinen muoto, + on lisätieto. Rivit tunnin tekstin järjestyksessä.
 tunti	rivi	kaava	kaava_en	nimi	name_en	lähde	MAFY-sivu	huomio
 fy5-1	256	M = F r	M = F r	voiman momentti	moment of a force	MAFY	Mekaniikan kaavoja	r on voiman varsi
@@ -12,7 +13,7 @@ fy5-1	350	\approx 76{,}1\,\text{Nm}	\approx 76.1\,\text{Nm}
 fy5-2	330	\Sigma\overline{F} = \overline{0}	\Sigma\overline{F} = \overline{0}					
 fy5-2	330	\Sigma M = 0	\Sigma M = 0					
 fy5-2	376	N_1 r_1 = N_2 r_2	N_1 r_1 = N_2 r_2					
-fy5-2	411	x_\text{pp} = \frac{m_1 x_1 + m_2 x_2}{m_1 + m_2}	x_\text{cm} = \frac{m_1 x_1 + m_2 x_2}{m_1 + m_2}					
+fy5-2	411	x_\text{pp} = \frac{m_1 x_1 + m_2 x_2}{m_1 + m_2}	x_\text{cm} = \frac{m_1 x_1 + m_2 x_2}{m_1 + m_2}	massakeskipiste	centre of mass	MAFY	Mekaniikan kaavoja	MAFY: x_0 = Σm_i x_i / Σm_i; FY5:ssä painopiste x_pp kahdelle kappaleelle (opettaja 14.11: tunnuksia ei muuteta)
 fy5-2	468	N_\text{B} r_\text{B} - G r_G = 0	N_\text{B} r_\text{B} - G r_G = 0					
 fy5-2	468	N_\text{B} = \frac{m g r_G}{r_\text{B}}	N_\text{B} = \frac{m g r_G}{r_\text{B}}					
 fy5-2	468	[6pt] N_\text{A} + N_\text{B} - G = 0	[6pt] N_\text{A} + N_\text{B} - G = 0					
@@ -26,7 +27,7 @@ fy5-2	484	= 392{,}4\,\text{N}	= 392.4\,\text{N}
 fy5-2	484	[6pt] N_\text{A} = G - N_\text{B}	[6pt] N_\text{A} = G - N_\text{B}					
 fy5-2	484	= 588{,}6\,\text{N} - 392{,}4\,\text{N}	= 588.6\,\text{N} - 392.4\,\text{N}					
 fy5-2	484	= 196{,}2\,\text{N}	= 196.2\,\text{N}					
-fy5-3	235	f = \frac{1}{T}	f = \frac{1}{T}	taajuus	frequency	MAFY	Aaltoliikkeen kaavoja	
+fy5-3	235	f = \frac{1}{T}	f = \frac{1}{T}	kierrostaajuus	rotational frequency	MAFY	Mekaniikan kaavoja	MAFY: kierrostaajuus f = 1/T
 fy5-3	243	v = \frac{2\pi r}{T} = 2\pi r f	v = \frac{2\pi r}{T} = 2\pi r f					
 fy5-3	293	v = 2\pi r f	v = 2\pi r f					
 fy5-3	293	r = \frac{d}{2}	r = \frac{d}{2}					
@@ -69,7 +70,7 @@ fy5-6	711	[6pt] T = \frac{2\pi r}{v}	[6pt] T = \frac{2\pi r}{v}
 fy5-6	711	= \frac{2\pi \cdot 6{,}791 \cdot 10^{6}\,\text{m}}{7659{,}7\,\text{m/s}}	= \frac{2\pi \cdot 6.791 \cdot 10^{6}\,\text{m}}{7659.7\,\text{m/s}}					
 fy5-6	711	= 5570{,}6\,\text{s}	= 5570.6\,\text{s}					
 fy5-7	299	f = \frac{1}{T}	f = \frac{1}{T}	taajuus	frequency	MAFY	Aaltoliikkeen kaavoja	
-fy5-7	305	x = A \sin\left(\frac{2\pi t}{T}\right) = A \sin(2\pi f t)	x = A \sin\left(\frac{2\pi t}{T}\right) = A \sin(2\pi f t)					
+fy5-7	305	x = A \sin\left(\frac{2\pi t}{T}\right) = A \sin(2\pi f t)	x = A \sin\left(\frac{2\pi t}{T}\right) = A \sin(2\pi f t)	harmonisen värähtelijän paikka ajan funktiona	position of a harmonic oscillator as a function of time	MAFY	Mekaniikan kaavoja	MAFY: x(t) = A sin(2πft + φ); FY5:ssä φ = 0
 fy5-7	484	T = \frac{t_n}{n}	T = \frac{t_n}{n}					
 fy5-7	484	x = A \sin\left(\frac{2\pi t}{T}\right)	x = A \sin\left(\frac{2\pi t}{T}\right)					
 fy5-7	498	T = \frac{t_n}{n}	T = \frac{t_n}{n}					
@@ -81,7 +82,7 @@ fy5-7	498	= 4{,}0\,\text{cm} \cdot 0{,}500	= 4.0\,\text{cm} \cdot 0.500
 fy5-7	498	= 2{,}0\,\text{cm}	= 2.0\,\text{cm}					
 fy5-8	216	F = -kx	F = -kx	harmoninen voima	harmonic force	MAFY	Aaltoliikkeen kaavoja	MAFY vektorina; vektorimerkintä jätetään pois
 fy5-8	223	F_\text{v} = kx	F_\text{v} = kx					
-fy5-8	282	E_\text{p} = \frac{1}{2}kx^2	E_\text{p} = \frac{1}{2}kx^2					
+fy5-8	282	E_\text{p} = \frac{1}{2}kx^2	E_\text{p} = \frac{1}{2}kx^2	harmonisen värähtelijän potentiaalienergia	potential energy of a harmonic oscillator	MAFY	Mekaniikan kaavoja	
 fy5-8	363	k = \frac{mg}{x}	k = \frac{mg}{x}					
 fy5-8	363	E_\text{p} = \frac{1}{2}kx^2	E_\text{p} = \frac{1}{2}kx^2					
 fy5-8	377	k = \frac{mg}{x}	k = \frac{mg}{x}					

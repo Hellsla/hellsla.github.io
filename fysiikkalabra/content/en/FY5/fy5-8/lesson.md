@@ -279,8 +279,8 @@ The gradient is read from two points of the fitted line, not from two measuremen
 
 ### Elastic potential energy
 In the chapter *Kinetic energy, potential energy and mechanical energy* it was stated that a stretched spring has elastic potential energy. Now its magnitude can be calculated. When a spring is stretched slowly from its rest length to extension $x$, the stretching force does work, and the work is stored in the spring as potential energy. The work of a constant force, $W = Fs$, is the area of a rectangle in an $(s, F)$ graph (chapter *Conservation of mechanical energy and the work–energy principle*). The stretching force is not constant, however, but grows steadily from zero to $kx$. So the work is the triangle between the $(x, F_\text{v})$ graph and the $x$-axis, with base $x$ and height $kx$. The elastic potential energy is
-```latex
-E_\text{p} = \frac{1}{2}kx^2
+```kaavat
+potential energy of a harmonic oscillator :: E_\text{p} = \frac{1}{2}kx^2
 ```
 where $E_\text{p}$ is the elastic potential energy ($\text{J}$), $k$ the spring constant ($\text{N/m}$) and $x$ the extension or compression ($\text{m}$). At the rest length the elastic potential energy is zero.
 

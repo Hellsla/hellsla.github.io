@@ -302,8 +302,8 @@ taajuus :: f = \frac{1}{T}
 missä $f$ on taajuus ($\text{Hz}$) ja $T$ jaksonaika ($\text{s}$). Taajuuden yksikkö on **hertsi**, $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$. Kun jaksonaika on $T = 0{,}50\,\text{s}$, kappale tekee $2{,}0$ värähdystä sekunnissa eli $f = 2{,}0\,\text{Hz}$.
 
 Monen värähtelijän $(t, x)$-kuvaaja on sinikäyrä. Näin on esimerkiksi jousen varassa värähtelevällä punnuksella ja pienin heilahduksin heiluvalla heilurilla; syy selviää myöhemmin kurssilla värähtelijään vaikuttavista voimista. Kun ajanotto aloitetaan hetkestä, jolloin kappale ohittaa tasapainoaseman positiiviseen suuntaan, poikkeama on
-```latex
-x = A \sin\left(\frac{2\pi t}{T}\right) = A \sin(2\pi f t)
+```kaavat
+harmonisen värähtelijän paikka ajan funktiona :: x = A \sin\left(\frac{2\pi t}{T}\right) = A \sin(2\pi f t)
 ```
 missä $x$ on poikkeama tasapainoasemasta, $A$ amplitudi (samassa yksikössä kuin $x$), $t$ aika ($\text{s}$), $T$ jaksonaika ($\text{s}$) ja $f$ taajuus ($\text{Hz}$). Sinin argumentti on radiaaneina, joten laskin on asetettava radiaanitilaan.
 
