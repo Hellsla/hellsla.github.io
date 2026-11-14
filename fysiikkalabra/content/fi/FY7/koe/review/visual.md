@@ -1,22 +1,25 @@
-VERDICT: FAIL
-CONTENT-HASH: e803f57504935926 (from the packet and shots/stamp.txt; `reviews.py hash FY7/koe` does not resolve an example exam, so it could not be re-run at the end)
+VERDICT: PASS
+CONTENT-HASH: 54aea9709824828a
 
 ## Blocking
-- [Major] k2 c) Mallivastaus, VASTAUS (page-390-16, fig-4..: boxed answer) — at 390 px the framed answer `e/m_e = (1,74 ± 0,08)·10^{11} C/kg` renders as an empty narrow box; the answer is readable only at 1280 px (page-1280-11) — the essential result is invisible on a phone — let the boxed answer wrap or scroll inside the frame, or set the frame to `max-width:100%` with the formula inline-breaking.
-- [Major] k2 b) and c) SIJOITUS (page-390-15, -16) — display substitution chains (`(e/m_e)_min = 2/((0,80·10^{-3} T)^2 · 1,859·10^{-5} m^2/V)` and the one in k2 b) are cut off at the right edge of the white panel at 390 px; the units and exponents cannot be read — long chains should break at `=`/operators, not clip — split the fraction (denominator on its own row) or enable wrapping in the formula panel.
+(none) The two round-2 blockers are fixed at 390 px:
+- k2 c: the boxed answer "(1,74 ± 0,08)·10^11 C/kg" is complete and inside the card (page-390-16).
+- k2 b and c Sijoitus chains: they wrap at "=" and "ja" and every row fits the card (page-390-15, -16).
+- k5, k6 and k7 chains (page-390-36, -37, -44, -46) have no clipped rows. Equations are aligned and the fractions are legible.
 
 ## Polish
-- [Minor] Opening "Kokeen rakenne" — the bold sentence breaks "120 / p:n" and "70 / p." across lines; use a non-breaking thin space between number and `p`.
-- [Minor] k2 rubric (page-1280-12) — "±0,08–0,13 · 10^{-3} m²" and "1,65–1,83 · 10^{11} C/kg" are ambiguous ranges (exponent applies to the end value only, and the first wraps after the dash); write `(0,08\ldots0{,}13)\cdot10^{-3}\,\text{m}^2` and `(1{,}65\text{–}1{,}83)\cdot10^{11}\,\text{C/kg}`.
-- [Minor] k4 graph e(V) (fig-6) — x ticks 5…55 are set far below the axis under the −20 gridline and are crowded at 390 px; put them at the axis (or on the bottom edge with the origin 0) so they read as the t-axis.
-- [Minor] k2 graph r²(U) (fig-3) — error bars are about 3 px and the middle points nearly disappear at 390 px; enlarge them or the markers.
-- [Minor] "Esimerkkiaineisto." label under tasks 5–7 and the quoted "luo energiaa" use straight quotes; use Finnish ” ” quotes.
+- [Minor] k7 c Sijoitus (page-390-46) — "säästö = (6912 MWh − 228,5 MWh) · 50" has no unit on the 50 and no result on that row. Write "· 50 €/MWh" and add "= 3,0·10^5 €" before "ja takaisinmaksuaika". For science: the unit is missing in the substitution.
+- [Minor] k5 b (page-390-37) — the inline "Keskiarvo \frac{3,327+3,347+3,321}{3} µm" is set small on its own row. Use \tfrac or a display line.
+- [Minor] k2 c (page-390-15) — the row "B²k = 6,4·10^-7 T²·1,81·10^-5 m²/V" runs almost to the card edge at 390 px. It fits, but is tight.
+- [Minor] Out of scope, noted for the teacher: the "120 p:n"/"70 p." line break comes from the shared lang key koe.max.
 
 ## Checked
-- All 16 contact sheets (184 captures) opened, including k4–k7 and the scoring section.
-- 1280 px: page-1, 11, 12, 13, 16, 17, 23, 24, 30, 36, 42, 43, 44 (opening, k2 solution, k3, k4 rubric, k5, k6, k7 rubric, Kokeen pisteet).
-- 390 px: page-390-15, -16; figs 1, 3, 6, 12 (the four graphs) at doubled size; the other figure captures are KaTeX snippets (sqrt, fractions) seen on the contact sheets only.
-- The scoring section (Kokeen pisteet, 0 / 70 p with the three part totals) is clear and consistent at both widths.
+- contact-1 to contact-4 (the page at 390 px, captures #1–#48), for triage.
+- page-390-15, -16 and -17: k2 b, c and d. Opened at readable size.
+- page-390-36, -37: k5 b and c. Opened at readable size.
+- page-390-44: k6 a Sijoitus. Opened at readable size.
+- page-390-46: k7 c Sijoitus. Opened at readable size.
+- Not opened at full size: the 1280 px captures and the fig-N-390 captures. The figure score is carried from the contact sheets only.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 4 · accessibility 3
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
