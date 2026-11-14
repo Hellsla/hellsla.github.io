@@ -152,15 +152,15 @@ Heijastuslaki: heijastuskulma on yhtä suuri kuin tulokulma,
 missä $\beta$ on heijastuskulma ja $\alpha_1$ tulokulma, molemmat mitattuina rajapinnan normaalista.
 
 Aineen taitekerroin on valon nopeuden suhde tyhjiössä ja aineessa:
-```latex
-n = \frac{c}{v}
+```kaavat
+taitekerroin sähkömagneettiselle aaltoliikkeelle (valolle) :: n = \frac{c}{v}
 ```
 missä $c = 3{,}00 \cdot 10^{8}\,\text{m/s}$ on valon nopeus tyhjiössä ja $v$ valon nopeus aineessa (m/s). Taitekerroin on yksikötön, ja näkyvälle valolle läpinäkyvissä aineissa se on aina suurempi kuin $1$.
 
 ### Taittumislaki eli Snellin laki
 Kun valo siirtyy aineesta, jonka taitekerroin on $n_1$, aineeseen, jonka taitekerroin on $n_2$, tulokulma ja taitekulma toteuttavat yhtälön
-```latex
-n_1 \sin \alpha_1 = n_2 \sin \alpha_2
+```kaavat
+taittumislaki (Snellin laki) :: n_1 \sin \alpha_1 = n_2 \sin \alpha_2
 ```
 missä $\alpha_1$ on tulokulma ja $\alpha_2$ taitekulma normaalista mitattuina. Laki seuraa aaltorintamien kääntymisestä: kulmien sinien suhde on sama kuin nopeuksien suhde, $\sin\alpha_1 : \sin\alpha_2 = v_1 : v_2 = n_2 : n_1$. Laki koskee kulmien sinejä, ei kulmia: kun tulokulma kaksinkertaistuu, taitekulma ei kaksinkertaistu. Kuvaajassa taitekulma kasvaa tulokulman mukana, mutta yhä hitaammin.
 

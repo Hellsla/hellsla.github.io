@@ -876,8 +876,8 @@ The data track of a CD winds over the surface of the disc as a dense spiral, and
 
 ## Formula: Grating equation
 When light arrives perpendicular to the grating, the path difference of rays leaving adjacent slits at angle $\theta$ comes from the right-angled triangle in the figure: $\Delta s = d\sin\theta$. The angle $\theta$ is measured from the direction of the incident light, that is from the direction of the central maximum. A maximum forms when the path difference is a whole number of wavelengths:
-```latex
-d \sin\theta = k\lambda
+```kaavat
+grating equation :: d \sin\theta = k\lambda
 ```
 where $d$ is the grating spacing ($\text{m}$), $\theta$ the direction of the maximum relative to the direction of the incident light, $k = 0, 1, 2, \ldots$ the order of the maximum and $\lambda$ the wavelength of the light ($\text{m}$). The order $k = 0$ is the central maximum. On both sides of it there are similar maxima, so the orders on the other side are often written as negative.
 

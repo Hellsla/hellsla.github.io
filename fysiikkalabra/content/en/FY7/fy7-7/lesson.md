@@ -412,11 +412,9 @@ The coil of a generator used for teaching has $250$ turns, and the sides of the 
 <!-- vaihe -->
 
 **Formula solved.**
-```latex
-\begin{aligned}
-&e_0 = NBA \cdot 2\pi f \\
-&U = \frac{e_0}{\sqrt{2}} = \frac{NBA \cdot 2\pi f}{\sqrt{2}}
-\end{aligned}
+```kaavat
+peak value of the sinusoidal voltage induced in a generator coil :: e_0 = NBA \cdot 2\pi f
+U = \frac{e_0}{\sqrt{2}} = \frac{NBA \cdot 2\pi f}{\sqrt{2}}
 ```
 
 <!-- vaihe -->
