@@ -27,10 +27,10 @@ fy1-3	491	\varepsilon = \frac{\Delta t}{\bar{t}} \cdot 100\,\%	\varepsilon = \fr
 fy1-3	506	\bar{t} = \frac{t_1 + t_2 + \dots + t_n}{n}	\bar{t} = \frac{t_1 + t_2 + \dots + t_n}{n}					
 fy1-3	506	= \frac{19{,}09\,\text{s}}{6}	= \frac{19.09\,\text{s}}{6}					
 fy1-3	506	= 3{,}1817\,\text{s}	= 3.1817\,\text{s}					
-fy1-3	506	[4pt] \Delta t = \frac{t_\text{max} - t_\text{min}}{2}	[4pt] \Delta t = \frac{t_\text{max} - t_\text{min}}{2}					
+fy1-3	506	\Delta t = \frac{t_\text{max} - t_\text{min}}{2}	\Delta t = \frac{t_\text{max} - t_\text{min}}{2}					
 fy1-3	506	= \frac{3{,}31\,\text{s} - 3{,}07\,\text{s}}{2}	= \frac{3.31\,\text{s} - 3.07\,\text{s}}{2}					
 fy1-3	506	= 0{,}12\,\text{s}	= 0.12\,\text{s}					
-fy1-3	506	[4pt] \varepsilon = \frac{\Delta t}{\bar{t}} \cdot 100\,\%	[4pt] \varepsilon = \frac{\Delta t}{\bar{t}} \cdot 100\,\%					
+fy1-3	506	\varepsilon = \frac{\Delta t}{\bar{t}} \cdot 100\,\%	\varepsilon = \frac{\Delta t}{\bar{t}} \cdot 100\,\%					
 fy1-3	506	= \frac{0{,}12\,\text{s}}{3{,}1817\,\text{s}} \cdot 100\,\%	= \frac{0.12\,\text{s}}{3.1817\,\text{s}} \cdot 100\,\%					
 fy1-3	506	= 3{,}8\,\%	= 3.8\,\%					
 fy1-4	230	y = kx + b	y = kx + b					
@@ -41,10 +41,10 @@ fy1-4	370	t = \frac{T - b}{k}	t = \frac{T - b}{k}
 fy1-4	385	k = \frac{T_2 - T_1}{t_2 - t_1}	k = \frac{T_2 - T_1}{t_2 - t_1}					
 fy1-4	385	= \frac{60\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{5{,}0\,\text{min} - 0\,\text{min}}	= \frac{60\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{5.0\,\text{min} - 0\,\text{min}}					
 fy1-4	385	= 8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}}	= 8.0\,\tfrac{{}^\circ\text{C}}{\text{min}}					
-fy1-4	385	[6pt] b = T_1 - k t_1	[6pt] b = T_1 - k t_1					
+fy1-4	385	b = T_1 - k t_1	b = T_1 - k t_1					
 fy1-4	385	= 20\,{}^\circ\text{C} - 8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}} \cdot 0\,\text{min}	= 20\,{}^\circ\text{C} - 8.0\,\tfrac{{}^\circ\text{C}}{\text{min}} \cdot 0\,\text{min}					
 fy1-4	385	= 20\,{}^\circ\text{C}	= 20\,{}^\circ\text{C}					
-fy1-4	385	[6pt] t = \frac{T - b}{k}	[6pt] t = \frac{T - b}{k}					
+fy1-4	385	t = \frac{T - b}{k}	t = \frac{T - b}{k}					
 fy1-4	385	= \frac{40\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{8{,}0\,\tfrac{{}^\circ\text{C}}{\text{min}}}	= \frac{40\,{}^\circ\text{C} - 20\,{}^\circ\text{C}}{8.0\,\tfrac{{}^\circ\text{C}}{\text{min}}}					
 fy1-4	385	= 2{,}5\,\text{min}	= 2.5\,\text{min}					
 fy1-5	303	s = s_0 + v t	s = s_0 + v t					
@@ -62,7 +62,7 @@ fy1-6	657	v = g\,t	v = g\,t
 fy1-6	668	v = g\,t	v = g\,t					
 fy1-6	668	= 9{,}81\,\text{m/s}^2 \cdot 1{,}5\,\text{s}	= 9.81\,\text{m/s}^2 \cdot 1.5\,\text{s}					
 fy1-6	668	= 14{,}715\,\text{m/s}	= 14.715\,\text{m/s}					
-fy1-6	668	[4pt] v = 14{,}715 \cdot 1\,\text{m/s}	[4pt] v = 14.715 \cdot 1\,\text{m/s}					
+fy1-6	668	v = 14{,}715 \cdot 1\,\text{m/s}	v = 14.715 \cdot 1\,\text{m/s}					
 fy1-6	668	= 14{,}715 \cdot 3{,}6\,\text{km/h}	= 14.715 \cdot 3.6\,\text{km/h}					
 fy1-6	668	= 52{,}97\,\text{km/h}	= 52.97\,\text{km/h}					
 fy1-7	167	\rho = \frac{m}{V}	\rho = \frac{m}{V}	tiheys	density	MAFY	Mekaniikan kaavoja	ratkaistut muodot $m = 
