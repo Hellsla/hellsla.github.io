@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 23f25874b515562a
+CONTENT-HASH: 682917e1074659db
+SCOPE: delta added-exercise from 23f25874b515562a base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- exercises.json:114 (L1-09) — a unit check cannot separate $\tfrac{M}{d}$ from $\tfrac{M}{d\sin\alpha}$, so the chapter's main warned mistake (using $d$ in place of the arm $r$) cannot be a distractor here. The "long wrench increases the force" mistake is caught (in the feedback of $Md\sin\alpha$). Acceptable for type 7; no change needed.
 
 ## Checked
-- Diff against HEAD~1: only L1-09 (type 7, Yksikkö ja dimensio) is new; every other task is byte-identical to the set that passed earlier.
-- answers.py run once (`python3 -I`); every numeric answer recomputed and inside its tolerance (L1-09 has no number).
-- L1-09 physics: $M = Fd\sin\alpha$ gives $F = \tfrac{M}{d\sin\alpha}$. The units of all four options are right in the options, the feedback and the solution: N·m², N, Nm, 1/N. Exactly one option is correct.
-- Form: the four expressions are equally short, and two of them are fractions, so the correct one cannot be spotted by its form. The correct option's feedback does not go beyond the task.
-- Notation $M$, $d$, $\alpha$ and $r = d\sin\alpha$ is the lesson's. The task stays inside fy5-1.
-- Formula chains checked from the text only (no render): every expression is a short inline expression, under 300 px at 390 px width.
+- Hash oli sama alussa ja lopussa. Arvioin vain tehtävän L1-10 (kierros 3).
+- Laskin uudelleen figures.py:n datasta: P on 4 ruutua oikealla ja 3 ylempänä, joten OP = √(4² + 3²) = 5 ruutua = 0,50 m. Sauvaa vastaan kohtisuoran voiman varsi on koko sauva, joten M = 30 N · 0,50 m = 15 Nm. Tulos on sama kuin answers.py:ssä ja exercises.json:ssa.
+- Toistoa ei ole: L1-04 lukee samasta kuvasta vaakavoiman varren (3 ruutua). L1-10 lukee sauvan pituuden (5 ruutua) ja käyttää uutta voiman suuntaa. Edellisen kierroksen huoli on siis poistunut.
+- Merkitsevät numerot: 30 N:ssa on kaksi merkitsevää numeroa ja vastauksessa 15 Nm samoin. Ruudukosta luettu pituus on tarkka, ja toleranssi 2 % sopii.
+- Ratkaisussa on kaikki seitsemän osaa, ja r = OP perustellaan symbolisesti ennen sijoitusta. Järkevyystarkistus vertaa kuvan vaakavoimaan (0,30 m, 9,0 Nm), ja tarkistus on oikein.
+- Kuva ja sen kuvaus antavat tiedot, jotka tehtävä tarvitsee, eivätkä ne paljasta vastausta.

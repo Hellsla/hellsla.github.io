@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9b2ee0bf44613b3e
+CONTENT-HASH: dacf6bcb0f4a71eb
+SCOPE: delta added-exercise from 9b2ee0bf44613b3e base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
-- solutions.md:103 (L3-01) — Kaava still reads "annos $= (\ldots) \cdot 100\,\%$" without the symbol, while Sijoitus now gives $D$ as a pure ratio and L3-05 (line 204) defines $D = \sum t_i/t_{\text{v},i}$; write the Kaava as "annos $D = \dfrac{t_1}{t_{\text{v},1}} + \dfrac{t_2}{t_{\text{v},2}}$ ($D = 1$ vastaa $100\,\%$)" so formula and substitution match.
 
 ## Checked
-light delta review (teacher 2026-11-07), L3-01 chain: HEAD~1 diff of solutions.md only. Recomputed t_v,1 = 8 h/2¹ = 4,0 h, t_v,2 = 8 h/2⁻¹ = 16 h, D = 1 + 0,25 = 1,25; 1,25 = 125 % is exact (% = 1/100). D as a dimensionless ratio (h/h) agrees with L3-05's D = Σ t_i/t_v,i; answer 125 % and Järkevyys unchanged and right. Only the Kaava line keeps the old ·100 % form (Polish).
+- Hash oli sama alussa ja lopussa. Arvioin vain tehtävät L1-09 ja L2-09 (kierros 3).
+- L2-09 käyttää nyt korvatulppia. Kuvasta luetaan 105 dB, ja korvassa taso on 105 − 12 = 93 dB. Siitä n = 8/3 ja t_v = 480 min / 2^(8/3) = 75,6 min. Tulos on sama kuin answers.py:ssä. Vastaus 76 min eroaa siitä 0,5 %, joten se on toleranssin 2 % sisällä.
+- Toistoa ei ole: L2-07 (109 dB ilman suojaimia) on eri tehtävä. L3-05 yhdistää etäisyyden ja tulpat, mutta siinä ei lueta kuvaa. Kuvaa scale-tehtava ei käytetä inquiry.json:ssa.
+- L1-09: 8 h / 2^(5/3) = 2,52 h → 2,5 h, ero 0,8 %.
+- Malli on luvun mukainen: t_v = t₀/2ⁿ, ja tulpat vähentävät korvan tasoa vaimennuksensa verran. Vertailuaikaa ei kutsuta sallituksi tai turvalliseksi ajaksi, kuten ohjeistus vaatii.
+- Järkevyystarkistus on oikein: 8 dB on 6 dB:n (120 min) ja 9 dB:n (60 min) välissä. Ilman tulppia aika olisi 4,7 min, ja 12 dB vastaa 2⁴ = 16-kertaista aikaa.
+- Kuvan merkit ovat tarkasti kohdissa 90 dB ja 105 dB, ja arvot on kirjoitettu kuvaan. Alt-teksti antaa samat arvot.

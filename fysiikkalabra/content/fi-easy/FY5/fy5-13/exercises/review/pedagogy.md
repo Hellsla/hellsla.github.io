@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 1df2c1aee33c64a1
-Mode: full (translation review against the reviewed Finnish set, new task L2-08)
-Round 2
+CONTENT-HASH: ae630b4d17ff9711
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- none.
 
 ## Checked
-- fy5-13-L2-08 keeps the Finnish pedagogy: a YO-skill task (error analysis or concept reasoning) with misconception-based distractors, each wrong choice with feedback naming its misconception and repairing it.
-- The stem gives no answer away; the correct option is not distinguishable by wording or length.
-- fi-easy has shorter sentences and explains terms in place; the demand is unchanged.
-- Solution is staged and readable on a phone; new task adds no extra workload.
+- L2-09 reworked: figure gives L = 1,20 m and four loops; the task asks the rise to five loops, 31,25 Hz; the answer (125 Hz and 156,25 Hz) is calculated step by step.
+- Task text keeps the situation first and the question last; the answer equals the fundamental frequency, which the check names.
+- Level 2: two natural frequencies and a difference, no repeat of L1-09.
+- Answer 31,3 Hz and 31,25 Hz both within 2 %.

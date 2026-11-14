@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4d7d493e28a99432
-Mode: full (translation review against the reviewed Finnish set; new task fy5-14-L1-09)
-Round 1
+CONTENT-HASH: 3d819c47cdf8c4a4
+SCOPE: delta added-exercise from 4d7d493e28a99432 base 81db4a6fd727
 
 ## Blocking
 (none)
 
-## Fixed
-- None needed; new task fy5-14-L1-09 was already faithful to content/fi.
-
 ## Polish
-(none)
+- solutions.md fy5-14-L1-10 — "1400 Hz, three significant figures" is ambiguous as written — "1.40·10³ Hz (1400 Hz)".
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: diff vs origin/main: only the text prefix 'Syventävä tehtävä.' / 'Extension task.' on L1-04, L2-03, L2-04, L2-05, L2-07, L3-01, L3-04 and L2-03's core flag removed; data, answers, solutions and answers.py unchanged. The seven are exactly the tasks that calculate a Doppler frequency, so they match the lesson's move of the formulas to Lisätiedoksi; the remaining Doppler task L1-07 (core) is qualitative (constant, higher pitch; fronts denser in front) and needs no formula. No physics changed.
-- fy5-14-L1-09 (true/false: violin spectrum and moving car horn): id, level, kind, answer, unit, tolerance, correct flags, choices order, data rows and every number in text, choices, feedback and solution identical to content/fi.
-- Recomputed independently: fundamental 330 Hz; statements 2 and 5 true, 1, 3, 4 false; all agree with the solution and with the correct choice.
-- Distractor feedback keeps the Finnish physics (each wrong option's error named correctly).
-- Wording is natural textbook English; decimal point in JSON and LaTeX; no Finnish left.
-- check_i18n.py shows nothing for fy5-14; build.py fy5-14 succeeds.
+- fy5-14-L1-10 (seventh harmonic): figure peaks at 200, 400, …, 1000 Hz; f1 = 200 Hz (lowest, also the spacing); f7 = 7 f1 = 1400 Hz; the note that the strongest peak (400 Hz) is the second harmonic is right. answers.py and JSON agree.
+- fy5-14-L2-08 (choice task): figure envelope |cos(π · 4 Hz · t)| gives loud moments every 0.25 s, f_b = 4 Hz; wax lowers f_x and the beats speed up, so f_x < 523 Hz: 519 Hz. Exactly one option correct (same as the Finnish), each distractor really wrong and its feedback names the right error (side, equal frequencies, 8 Hz from counting quiet moments).
+- The model answer gives both candidates 523 ± 4 Hz and decides by the wax test, with a check.
+- Figures: English description and labels (f (Hz), height; t (s) 0.2 … 1.0) give the values the solutions quote; no answer given away.
+- Compared with the Finnish set by script: every number in text, choices, feedback and solution, the correct flags, unit, tolerance and figure ids identical.
+- Hash unchanged at start and end.

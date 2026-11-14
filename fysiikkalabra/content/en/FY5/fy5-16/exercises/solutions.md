@@ -248,15 +248,15 @@ Part c: the dose is $\dfrac{3.0\,\text{h}}{1.59\,\text{h}} = 1.89$, that is, $19
 **Conversions:** None needed: the levels are in decibels and the time comes out in hours.
 **Substitution:** $n = \dfrac{90\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{5}{3}$, $t_\text{v} = \dfrac{8\,\text{h}}{2^{5/3}} = \dfrac{8\,\text{h}}{3.175} = 2.52\,\text{h}$
 **Answer:** $2.5\,\text{h}$. The level is read from the figure as a whole decibel and the rule is an estimate, so two significant figures are enough.
-**Reasonableness:** $90\,\text{dB}$ lies between $88\,\text{dB}$ ($4\,\text{h}$) and $91\,\text{dB}$ ($2\,\text{h}$), closer to the latter, and $2.5\,\text{h}$ lies between two and four hours.
+**Reasonableness:** $90\,\text{dB}$ lies between $88\,\text{dB}$ ($4\,\text{h}$) and $91\,\text{dB}$ ($2\,\text{h}$), closer to the higher level $91\,\text{dB}$, and $2.5\,\text{h}$ lies between two and four hours, closer to two hours.
 
 ## fy5-16-L2-09
-**Given:** from the figure, the rock concert's level $L = 105\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
+**Given:** from the figure, the rock concert's level $L = 105\,\text{dB}$; the earplugs' attenuation $\Delta L = 12\,\text{dB}$; reference $L_0 = 85\,\text{dB}$ and $t_0 = 8\,\text{h}$
 **Asked:** the reference time $t_\text{v}$ in minutes
-**Principle:** The dose depends on both level and time: every rise of $3\,\text{dB}$ halves the reference time, because noise exposure is calculated as an energy average.
-**Reading the graph:** The rock concert's mark is on the scale at $105\,\text{dB}$, in the hearing-damage range, $20\,\text{dB}$ above the upper action value $85\,\text{dB}$.
-**Formula:** $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Principle:** The earplugs lower the level at the ear, and the dose depends on the level at the ear. Every rise of $3\,\text{dB}$ halves the reference time, because noise exposure is calculated as an energy average.
+**Reading the graph:** The rock concert's mark is on the scale at $105\,\text{dB}$, in the hearing-damage range.
+**Formula:** $L_\text{ear} = L - \Delta L$ and $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, where $n = \dfrac{L_\text{ear} - L_0}{3\,\text{dB}}$
 **Conversions:** $t_0 = 8\,\text{h} = 8 \cdot 60\,\text{min} = 480\,\text{min}$.
-**Substitution:** $n = \dfrac{105\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{20}{3}$, $t_\text{v} = \dfrac{480\,\text{min}}{2^{20/3}} = \dfrac{480\,\text{min}}{101.6} = 4.72\,\text{min}$
-**Answer:** $4.7\,\text{min}$. The level is read from the figure as a whole decibel and the rule is an estimate, so two significant figures are enough.
-**Reasonableness:** The level is $20\,\text{dB}$ above the reference level, so the intensity is about $100$ times larger and the time about a hundredth: $480\,\text{min} : 100 = 4.8\,\text{min}$. A concert lasts hours, so hearing protectors are needed.
+**Substitution:** $L_\text{ear} = 105\,\text{dB} - 12\,\text{dB} = 93\,\text{dB}$, $n = \dfrac{93\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{8}{3}$, $t_\text{v} = \dfrac{480\,\text{min}}{2^{8/3}} = \dfrac{480\,\text{min}}{6.350} = 75.6\,\text{min}$
+**Answer:** $76\,\text{min}$. The level is read from the figure as a whole decibel and the rule is an estimate, so two significant figures are enough.
+**Reasonableness:** The level at the ear is $8\,\text{dB}$ above the reference, between $6\,\text{dB}$ ($120\,\text{min}$) and $9\,\text{dB}$ ($60\,\text{min}$), so about $76\,\text{min}$ is right. Without earplugs the time would be only $4.7\,\text{min}$, so the earplugs lengthen it about sixteenfold.

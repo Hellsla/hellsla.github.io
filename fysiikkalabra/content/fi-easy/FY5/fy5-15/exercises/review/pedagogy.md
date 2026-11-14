@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 3dd4cf5ba6c03743
+CONTENT-HASH: b12b04701a4a8096
+SCOPE: delta added-exercise from 3dd4cf5ba6c03743 base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md:22 (L1-03) — "vapaassa äänikentässä" is not a lesson term and the Annettu line is a long relative clause — "**Annettu:** mittarin lukema $L = 95\,\text{dB}$ (ääni etenee vapaasti, joten lukema käsitellään intensiteettitasona), ..."
+- fy5-15-L2-09 solution, last sentence ('Sähköteho on moninkertainen...') is extra; delete or leave.
 
 ## Checked
-light delta review (teacher 2026-11-07): only the changed passages were judged, in context of the surrounding text, tasks, feedback and solutions; no full review even where the tooling asks for one; physics left to the science review; L1-03 stem matches the lesson's new "Mitä mittari mittaa" section and the exit ticket.
+- L1-09: reads L = 74,0 dB at 4,0 m, inverts the logarithm, sanity check with the 80 dB point; answer 2,5e-5 W/m2 consistent.
+- L2-09: reads the level at 2,0 m, I then P = 4 pi r^2 I = 5,03 mW; second point confirms.
+- Figure shows no power or intensity; description gives the three points.
+- Progression L1 (one inverse) to L2 (two steps) sound.

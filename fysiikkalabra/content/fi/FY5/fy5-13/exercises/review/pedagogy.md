@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c716085d5bc703dc
+CONTENT-HASH: 1d5f9df3a4fed506
+SCOPE: delta added-exercise from c716085d5bc703dc base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-1. fy5-13/exercises/exercises.json:263 (L2-08) — 'putken pääkorjaus' — the usual term is 'päätekorjaus'; the lesson uses 'pääkorjaus', so change both together or leave as is.
-2. The cancelling answer ('pysyy samana') is a known guess for two opposite changes; the four options each correspond to one partial reading, which is the right defence, no change needed unless you want a fifth 'puolittuu' with a reason.
+1. solutions.md (L1-09) — the Järkevyys holds a long paragraph on the helium voice that distracts from the check; keep the ratio 2,93 and the sign remark, move the voice note out.
+2. L2-09 — the answer equals f1; the solution notes it in Järkevyys, good, but ask the student to say why in the task if it is to teach the spacing of resonances.
 
 ## Checked
-- f1 = v/(2L) open; closed pipe L/2: v/(4·L/2) = v/(2L); equal, so 'pysyy samana' is correct. Closed-pipe f1 = v/(4L) is in the brief and its warned mistake (treating the closed pipe like a string) is distractor 1.
-- Distractors: forgot the plug (x2), forgot the shortening (/2), plug read the wrong way (x4); each feedback names its own error.
-- Correct feedback does not leak a second stage (one-stage task); correct option not longest or uniquely hedged.
-- Question last, same temperature stated, no new theory. Checked from text only (no renders): scope against the brief, answer arithmetic recomputed, option forms, feedback per option, Finnish, phone width judged from formula length.
+- L1-09: (971 − 331,5)/1,00 = 639,5 Hz correct; MAFY table named, fair 4 % tolerance; new skill (lookup, same length in two gases) at level 1.
+- L2-09 reworked: Δf = f5 − f4 = v/2L = 31,3 Hz correct; no longer repeats L2-04 (f from v, or v from f): it asks for the step between neighbouring modes, read n and L from the figure.
+- Figure gives L and four loops, no λ or v; text only (no renders).

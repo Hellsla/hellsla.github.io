@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1df2c1aee33c64a1
-Mode: delta, round 1 (new task fy5-13-L2-08 in fi-easy; L2-08, pipe open vs plug (choice task))
+CONTENT-HASH: ae630b4d17ff9711
+SCOPE: delta added-exercise from 1df2c1aee33c64a1 base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] sticky tab bar (Examples/Check/Exercises) overlaps the card in element screenshots only; a capture artefact, not a page defect.
+- [Minor] fy5-13/kuvio-tehtava — the ruler's tick label 1.20 collides with the pulley's support plank at the right end, and the labels sit on the ruler ticks — nudge the 1.20 label left or below the ruler; the figure was passed before, low priority.
 
 ## Checked
-- Own 390 px render of fy5-13-L2-08 (fi-easy) after the page scripts ran, answer feedback and solution open: page scrollWidth 390, no element clipped outside a scroll box, no .kx-wide line needed, no KaTeX error nodes.
-- Situation, question, choice rows, feedback box, FIND/PRINCIPLE/MODEL ANSWER block read in full: units and quantities set as maths, calculation rows stacked and aligned, no plain-text quantity or stray symbol.
-- Language read in fi-easy: natural, consistent with the chapter terms, instructions clear.
+- Delta: fy5-13-L1-09 (1280-10) and fy5-13-L2-09 (L2-1280-11, -12) in fi-easy: Finnish text, decimal comma, solutions, Järkevyys blocks.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: caaeaa93666bca57
+CONTENT-HASH: fb0d0423c711ce05
+SCOPE: delta added-exercise from caaeaa93666bca57 base 81db4a6fd727
 
 ## Blocking
 
 ## Polish
+- exercises.json (L2-09 ja L1-01) — lasku on lähes sama: L1-01 antaa kaiun ajaksi 91,0 µs (vastaus 7,01 cm), ja L2-09 lukee kuvasta 90 µs (vastaus 6,93 cm). L2-09:ssä on lisänä kuvaajan lukeminen, joten tehtävä ei ole toisto. Kerroksen paksuus (esim. A–C) olisi kuitenkin erilaisempi kysymys, kunhan se ei ole inquiry-tarkistuksen B–C.
+- solutions.md (L2-09, Vastaus) — pyöristysperuste "kuten nopeudessa 1540 m/s" ei nimeä rajoittavaa tietoa. Rajoittava tieto on kuvasta luettu aika 90 µs: lukema on noin ±1 µs:n tarkka, mikä tekee noin 1 %. — Perustele kolme numeroa lukematarkkuudella.
+- solutions.md (L1-09, Vastaus) — ilmaus "Aika 20 ms on sovittu tarkaksi" ei ole kurssin käytäntö. — Perustele vastaus merkitsevillä numeroilla.
 
 ## Checked
-- Round 2 (commit 4ff432a8f), checked against the text only, not renders. The correct choice's feedback is now just "Oikein. Valitse seuraavaksi perustelu, joka selittää vastauksesi.", so it gives away neither the ratio nor the reason. The ratio 24,0 s : 8,0 s = 3 moved to the correct reason's feedback, where it belongs.
-- "noin" dropped from the correct choice, the answer and the solution. That is right, because the model (constant vP and vS on the whole path) gives exactly d_B/d_A = Δt_B/Δt_A = 3. There is no longer a hedge cue.
-- The correct reason, shortened to "Aallot kulkevat saman matkan tasaisilla nopeuksilla, joten aikaero on verrannollinen matkaan." (about 93 characters against 85–90), is right because Δt = d(1/vS − 1/vP). It is no longer clearly the longest.
-- Recomputed values unchanged: 8,4 km/s; dA ≈ 67 km, dB ≈ 2,0·10² km. Exactly one choice and one reason are correct. The solution's wording of the reason matches the option.
-- answers.py is unchanged, and running it with python3 -I gives the same 16 numeric answers. The rest of the set is unchanged.
+- Hash oli sama alussa ja lopussa. Kierros 5: arvioin muutetun tehtävän L2-09 ja tehtävän L1-09.
+- L2-09: d = vt/2 = 1540·90·10⁻⁶/2 m = 6,93 cm, kuten answers.py:ssä. Lukemilla 89 µs ja 91 µs saadaan 6,85 cm ja 7,01 cm, joten ±1 µs:n lukema mahtuu toleranssiin 2 %.
+- Kuvassa piikki C on 90 µs:n apuviivalla. Kuvan generaattori, alt-teksti ja ratkaisu ovat yhtäpitäviä. Kuva ei kerro syvyyttä, joten se ei paljasta vastausta.
+- Toisto: inquiry-tarkistus kysyy samasta kuvasta kerrosta B–C (3,08 cm, edellinen raporttini). L2-05 käyttää taulukkoa (58,9 µs ja 109,2 µs). L2-09 kysyy luun pinnan syvyyttä ihosta, eikä sitä kysy mikään muu tehtävä.
+- Periaate (kaiku kulkee edestakaisin, anturi on iholla) ja järkevyystarkistus (13,9 cm/2) ovat oikein. Syvyys on suurempi kuin A:n (1,54 cm) ja B:n (3,85 cm).
+- L1-09: 1402,4·0,020/2 = 14,02 m. Arvo on VERIFIED-riviltä, ja tehtävä on ennallaan.
+- Kaikkien kolmen kieliversion answer, unit ja tolerance ovat samat.

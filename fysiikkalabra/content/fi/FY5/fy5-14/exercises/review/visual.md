@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 5cd3571020c4ddc7
+CONTENT-HASH: fbb3881a3468f340
+SCOPE: delta added-exercise from 5cd3571020c4ddc7 base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-14-L1-09 — the stem still joins two unrelated situations (violin spectrum and car horn); every statement is self-contained, so only a note.
+- [Minor] fy5-14/huojunta-tehtava — the origin $0$ is not labelled and the pressure axis has no unit or scale; fine for an envelope, but the description already says "paine", so a note "suhteellinen" or a $0$ at the origin would be tidier.
+- [Minor] fy5-14-L2-08 Mallivastaus — "Äänen voimakkuus on suurimmillaan" while the axis says $p$ (pressure); "värähtelyn amplitudi on suurimmillaan" matches the graph better.
+- [Minor] fy5-14-L2-08 choices — each option states both a value and its reasoning, so the page's wrong-choice feedback repeats it once more; works, but the options could be the values only.
 
 ## Checked
-- light delta review (teacher 2026-11-07), LOPS extension marking: the dashed "Syventävä tehtävä"/"Extension task" tag on the marked exercises at 360 and 1280 px (tag 24 px high, not clipped, beside the number; no duplicate lead-in left in the task text; count matches the diff), LaTeX and tables intact; scrollWidth = viewport.
-- Round 2 after commit 4ff432a8f. Rebuilt with `python scripts/build.py fy5-14`; own script (vr5_newtask_probe.py, scratchpad) re-rendered the new task at 390 px after the page scripts ran, with answer, feedback and solution open: document scrollWidth 390, no clipped element outside a scroll box. Image of the card read (fy5-14, fy5-16 and fy5-17 renders re-made; fy5-17 re-read, the other two checked by measurement and by the diff text).
-- From text only: the round-2 diff, option and reason lengths.
-- "Voimakkain piikki" is now the term in the stem, statement 1 feedback and the solution, consistent with the sävelkorkeus/sointiväri wording; statements 2 and 4 read as full clauses; no overflow.
-- Delta only: the changed task and solution; no figure.
+- fy5-14-open-exercises-1280-10 (task L1-10 solution; the spectrum figure sits in the capture above it, `spektri-tehtava` was inspected through its description and the solution only), L2-1280-9 and -10 (task 14-18 with `huojunta-tehtava`, a wrong choice picked with feedback open, solution open), 664 px wide. Delta only: L1-10, L2-08.
+- Choice task: whole clickable rows, four options of similar length, correct one not identifiable by form; the wrong-choice feedback sits in the card and pushes the rest down, "Voit vaihtaa vastaustasi vielä kerran" appears; units upright in every option, case endings after maths correct ("$523\,\text{Hz}$:n", "$523\,\text{Hz}$:ää").
+- Beat graph: filled envelope, loud moments at $0$, $0{,}25$, $0{,}50$, $0{,}75$, $1{,}00\,\text{s}$ readable against the $0{,}1\,\text{s}$ gridlines, axis title $t\ (\text{s})$ LaTeX, nothing clipped; gives the period without any frequency.
+- Solutions: seven-part order for L1-10; the choice task has a justified model answer including the wax argument; chains and units clean.
 
 ## Scores
-illustrations n/a (no figure) · typography 4 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

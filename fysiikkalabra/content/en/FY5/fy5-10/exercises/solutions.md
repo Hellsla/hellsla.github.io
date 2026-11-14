@@ -274,12 +274,12 @@ $v = f\lambda = 1.5\,\text{Hz} \cdot 1.2\,\text{m}$, that is, $v = 1.8\,\text{m/
 **Reasonableness:** In air the wavelength of the same frequency would be $\tfrac{343\,\text{m/s}}{1000\,\text{Hz}} = 0.34\,\text{m}$. Sound travels about $15$ times faster in iron, so the wavelength is also about $15$ times longer: $\tfrac{5.12\,\text{m}}{0.34\,\text{m}} \approx 15$. The frequency stays the same when a wave moves from one medium to another.
 
 ## fy5-10-L2-08
-**Given:** a snapshot of the rope, that is, the $(x, y)$ graph (figure), shaking frequency $f = 2.4\,\text{Hz}$
-**Find:** the speed of the wave $v$
-**Principle:** On the horizontal axis of the snapshot there is position, so the distance between two successive crests is the wavelength $\lambda$. Every point of the rope vibrates at the frequency of the hand, and by the basic wave equation the speed is the frequency times the wavelength.
+**Given:** a snapshot of the rope, that is, the $(x, y)$ graph (figure), wave speed $v = 3.0\,\text{m/s}$
+**Find:** the period $T$
+**Principle:** On the horizontal axis of the snapshot there is position, so the distance between two successive crests is the wavelength $\lambda$. In one period the wave travels one wavelength, so $v = \dfrac{\lambda}{T}$.
 **Reading the graph:** The crests are on gridlines at $0.5\,\text{m}$, $2.0\,\text{m}$ and $3.5\,\text{m}$. The distance between two successive crests is $2.0\,\text{m} - 0.5\,\text{m} = 1.5\,\text{m}$, and the same distance lies between $2.0\,\text{m}$ and $3.5\,\text{m}$, so $\lambda = 1.5\,\text{m}$. The amplitude $4\,\text{cm}$ is not needed.
-**Formula:** $v = f\lambda$
-**Conversions:** Not needed: the wavelength is in metres and $1\,\text{Hz} = 1\,\text{s}^{-1}$, so the result comes out in $\text{m/s}$.
-**Substitution:** $v = 2.4\,\text{Hz} \cdot 1.5\,\text{m} = 2.4\,\text{s}^{-1} \cdot 1.5\,\text{m} = 3.6\,\text{m/s}$
-**Answer:** $3.6\,\text{m/s}$, two significant figures like the frequency $2.4\,\text{Hz}$ and the wavelength $1.5\,\text{m}$ read from the figure.
-**Reasonableness:** The period is $T = \tfrac{1}{2.4\,\text{Hz}} = 0.417\,\text{s}$, and in that time the wave travels $3.6\,\text{m/s} \cdot 0.417\,\text{s} = 1.5\,\text{m}$, one wavelength. A few metres per second is a normal speed for a wave on a rope.
+**Formula:** $v = \dfrac{\lambda}{T}$, so $T = \dfrac{\lambda}{v}$
+**Conversions:** Not needed: the wavelength is in metres and the speed in $\text{m/s}$.
+**Substitution:** $T = \dfrac{1.5\,\text{m}}{3.0\,\text{m/s}} = 0.50\,\text{s}$
+**Answer:** $0.50\,\text{s}$, two significant figures like the speed $3.0\,\text{m/s}$ and the wavelength $1.5\,\text{m}$ read from the figure.
+**Reasonableness:** The frequency is $f = \tfrac{1}{0.50\,\text{s}} = 2.0\,\text{Hz}$, and $f\lambda = 2.0\,\text{Hz} \cdot 1.5\,\text{m} = 3.0\,\text{m/s}$, the given speed. A period of half a second suits a wave made by shaking by hand.

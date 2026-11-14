@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 26062dd6590a92c6
+CONTENT-HASH: c767d5b1c30c2641
+SCOPE: delta added-exercise from 26062dd6590a92c6 base 81db4a6fd727
 
 ## Blocking
+(none)
 
 ## Polish
+- none.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: the replacement of 'väliaine eli naru/köysi ja sen jännitys' by the rope's properties (tension and mass per unit length) in two statement feedbacks and two solution principles, and the reworded statement-4 solution; each feedback still names the misconception (frequency sets the speed) and repairs it. Selkeä suomi: short sentences.
+- L1-10: MAFY look-up (iron 5120 m/s), v = f lambda, kHz to Hz shown, sanity check against air.
+- L2-08: snapshot graph, lambda read from crests (1,5 m); the figure does not mark lambda, so the student must act; the unused amplitude is named as extra.
+- Distinguishes snapshot (x) from time graph, which the set already trains elsewhere.
+- Solutions staged; Finnish clear.

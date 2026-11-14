@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 3dd4cf5ba6c03743
+CONTENT-HASH: b12b04701a4a8096
+SCOPE: delta added-exercise from 3dd4cf5ba6c03743 base 81db4a6fd727
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] solutions.md fy5-15-L1-03 "Annettu": "jota pidetään vapaassa äänikentässä intensiteettitasona" uses a term (vapaa äänikenttä) that the S2 lesson never introduces; the lesson says "kun ääni etenee vapaasti". It also still calls $I_0$ "kuulokynnys". Fix: "mittarin lukema $L = 95\,\text{dB}$, jota käsitellään intensiteettitasona, koska ääni etenee vapaasti; vertailuintensiteetti $I_0 = …$".
+- [Minor] fy5-15 — in L1-09 Periaate, 'Taso on kymmenen kertaa intensiteettien suhteen logaritmi' reads clumsily; 'Intensiteettitaso on $10\,\text{dB}$ kertaa intensiteettien suhteen logaritmi' (optional).
+- [Minor] fy5-15 — Selkeä suomi: 'taso' in L1-09 Periaate is not explained for an S2 reader; add 'intensiteettitaso eli taso desibeleinä'.
 
 ## Checked
-- light delta review (teacher 2026-11-07): I checked only fy5-15-L1-03. I captured its task text (the new free-field sentence) and its opened solution's Annettu line at 390 px from the rebuilt preview and opened both. The question stays last, the values stay on one line and nothing is clipped. A page scan at 390 px with every box open found no inline formula that wraps or scrolls.
+- Delta of the two or three added exercises (fi-easy): 1280 px open-exercises 1/9, 1/10 (L1-09) and L2 part 12 (L2-09 reasonableness); graph figure with the three marked points.
+- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
+- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal comma consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
+- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 12247bcf797a5c2e
-Mode: full (translation review against the reviewed Finnish set; new task fy5-17-L2-08)
-Round 1
+CONTENT-HASH: 7c46ff42f3980942
+SCOPE: delta added-exercise from 12247bcf797a5c2e base 81db4a6fd727
 
 ## Blocking
-(none)
-
-## Fixed
-- None needed; new task fy5-17-L2-08 was already faithful to content/fi.
+none
 
 ## Polish
-(none)
+1. L2-09 is close to the depth part of L2-05 (table instead of figure) but now asks a single depth with the figure to read and a µs and cm conversion; acceptable at level 2.
+2. L1-09 is near L1-03 (sonar depth); the MAFY lookup and ms conversion justify it.
 
 ## Checked
-- fy5-17-L2-08: situation first, question last as its own sentence; same structure, options and reasoning steps as fi; example-data notice kept where fi has it.
-- Solution has the same stages as fi (Find, Principle, Model answer) and can be followed step by step; nothing skipped or added.
-- Feedback repairs the misconception rather than restating the answer, as in fi.
-- Selkosuomi per NOTES.md section 12: short sentences, common words, glossary terms kept; same physics and numbers as fi; decimal comma in text, point in table cells as in fi.
-- No change to level, workload or figure use; check_i18n.py shows nothing for fy5-17; build.py fy5-17 succeeds.
+- L2-09 now asks the depth of echo C: d = vt/2 = 1540·90e-6/2 = 6,93 cm recomputed; the repeat of L2-05 b (layer thickness) is gone.
+- Figure a-scan gives C at 90 µs, no depths, description gives the same data without the answer.
+- L1-09: 14,0 m correct, MAFY table named, trap of 1540 m/s caught by tolerance.
+- Solutions complete; set mix fits.

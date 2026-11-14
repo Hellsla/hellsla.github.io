@@ -41,6 +41,6 @@ a["fy5-10-L3-05"] = 10.0 / (5.0 * 0.80) + 6.0 / (5.0 * 0.50)   # 4,9 s
 # L1-09 is true/false statements: f = 12 / 8,0 s = 1,5 Hz, v = 1,5 Hz · 1,2 m = 1,8 m/s (statements 1, 2 true; 3, 4, 5 false); no number
 # L1-10 (MAFY table: speed of sound in iron at 20 °C, v = 5120 m/s): λ = v/f = 5120 m/s / 1000 Hz = 5,12 m
 a["fy5-10-L1-10"] = 5120 / 1000.0
-# L2-08 (figure fy5-10/valokuva): crests at 0,5 m and 2,0 m, λ = 1,5 m; v = fλ = 2,4 Hz · 1,5 m = 3,6 m/s
-a["fy5-10-L2-08"] = 2.4 * (2.0 - 0.5)
+# L2-08 (figure fy5-10/valokuva): crests at 0,5 m and 2,0 m, λ = 1,5 m; v = 3,0 m/s; T = λ/v = 1,5 m / 3,0 m/s = 0,50 s
+a["fy5-10-L2-08"] = (2.0 - 0.5) / 3.0
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
