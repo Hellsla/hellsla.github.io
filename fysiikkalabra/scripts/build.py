@@ -312,7 +312,8 @@ def render_md(text, **kw):
     maths = []
     def stash(m):
         x = m.group(0)
-        if x.startswith("$$"): x = "$$" + mathlayout.align_equals(x[2:-2]) + "$$"   # equals signs of a calculation in one column
+        if x.startswith("$$"):                                                       # equals signs of a calculation in one column; a chain split by hand in the source is one row on a wide screen
+            x = mathlayout.wide_narrow_html(x[2:-2]) or "$$" + mathlayout.align_equals(x[2:-2]) + "$$"
         else: x = mathlayout.split_list(x[1:-1]) or x                                # a list of values may wrap between its items
         maths.append(x); return f"MATHTOKEN{len(maths) - 1}X"
     text = re.sub(r"\$\$.*?\$\$|\$[^$\n]+?\$", stash, text, flags=re.S)
@@ -590,6 +591,7 @@ def study_guide():
     return (f'<section class="study-intro" id="{STUDY_ID}" aria-labelledby="h-study"><h1 id="h-study">{esc(g("title"))}</h1><p class="lead">{esc(g("lead"))}</p></section>'
             f'<section class="study-sec" id="alkuun" aria-labelledby="h-start"><h2 id="h-start">{esc(g("start_h"))}</h2>'
             f'<ol class="study-steps">{steps}</ol></section>'
+            f'<section class="study-sec" id="ydinpolku" aria-labelledby="h-core"><h2 id="h-core">{esc(g("core_h"))}</h2><p class="section-lead">{esc(g("core_text"))}</p></section>'
             f'<section class="study-sec stuck" id="jumissa" aria-labelledby="h-stuck"><h2 id="h-stuck">{esc(g("stuck_h"))}</h2>'
             f'<p class="section-lead">{esc(g("stuck_lead"))} {esc(g("stuck_note"))}</p>'
             f'<div class="stuck-map"><p class="stuck-q">{esc(g("stuck_question"))}</p>{lines(fan, "fan")}'

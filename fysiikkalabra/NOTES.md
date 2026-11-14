@@ -67,8 +67,9 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   their own, README "Exercises"); the lint re-runs both. A task whose answer is a datum plus a small change (L = L₀ + ΔL) cannot be marked by relative tolerance:
   ask for the change.
 - Data provenance (2026-10-28, FY2): an `interpret` table of official statistics is `source: statistics` with the
-  source and year in `source_note`; invented realistic numbers are `source: example` (Keksitty esimerkkiaineisto), never
-  `simulated` or `measured`.
+  source and year in `source_note`; invented realistic numbers are `source: example`, never `simulated` or `measured`.
+  Teacher 2026-11-13: no pill or tag; under the table a small line, "Lähde: <name year>" (linked when the note has an
+  address; write the name first in `source_note`, the method after it, only the short start shows) or "Esimerkkiaineisto."
 - Understanding before formulas (teacher 2026-10-28, FY1): a unit conversion substitutes the unit
   (`4{,}2\,\text{km} = 4{,}2 \cdot 1000\,\text{m}`, `1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s}`), never a general
   conversion formula; no helper quantities or ratio formulas the student does not need (the essential idea must not
