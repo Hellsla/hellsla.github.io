@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: dae80bdf3e841595
+CONTENT-HASH: d550d49cbf72af44
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] ripple-model-two-sources.webp caption — unlike the fy5-11 caption it does not say that the contrast is kept constant with distance (no decay is shown) — add e.g. "Todellisuudessa aallot heikkenevät kauempana; kuvassa kontrasti on tasattu."
+- [Minor] Testaa ja arvioi, self-assessment row 3 ("Tiedän, mihin Fourier-muunnosta käytetään äänen analysoinnissa.") — it does not carry "(valinnainen)", though the goal does — consider adding it for consistency (not required).
 
 ## Checked
-- light delta review (teacher 2026-11-07): the new figure at 390 px (320 px image) and the 960 px asset, caption, credit and alt text. Two white source dots visible at the top, about 3λ apart, nodal lines fan downward as grey bands: matches the caption and alt text. scrollWidth 390.
+- Delta: top-390, intro-1280 (goal list: third goal ends "(valinnainen)." wraps cleanly, no overflow, card layout intact), stage-tarkista-390-1 and -3 (self-assessment rows, chips, no clipping).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
