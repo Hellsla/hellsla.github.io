@@ -204,7 +204,7 @@ lang-tekstejä tai fysiikkaa.
 
 - **PR 1 (tehty, #563)** kuvan todellinen leveys tekstikoon perustaksi (`sim-embed.js`) ja selaintesti 1366×650 (kuvan tekstit
   vähintään 10 px) omina CI-jobeinaan.
-- **PR 2:** pilotti fy4-1: lukemat kuvan alle, toistorivi yhdelle riville, `.lab-side .sim-canvas`-säännön 25 rem:n
+- **PR 2: Varattu: claude/sim-ui-pr2-pilotti-fy4-1** pilotti fy4-1: lukemat kuvan alle, toistorivi yhdelle riville, `.lab-side .sim-canvas`-säännön 25 rem:n
   varaus pienemmäksi, kuvausteksti pois kokeiden vierestä.
 - **PR 3:** sama asettelu tyypeille A–C (aikaohjatut, jatkuvat, staattiset); tyyppi D, fy1-2, fy1-4 ja poikkeavat
   jäävät nykyiselleen.
