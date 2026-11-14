@@ -610,8 +610,8 @@ with sync_playwright() as pw:
     refl = pg.locator("#reflect .my-predictions li")
     check("reflection lists three predictions", refl.count() == 3)
     check("reflection shows my prediction and the verdict", "Ennustit" in refl.nth(0).inner_text() and "ei tue" in refl.nth(0).inner_text() and "Et ole vielä" in refl.nth(1).inner_text(), refl.nth(0).inner_text())
-    refl.nth(1).locator("a").click(); pg.wait_for_timeout(150)
-    check("a link to a prediction opens the closed box", fold.evaluate("(d) => d.open") and pg.locator("#pred-2 button.commit").is_visible())
+    refl.nth(2).locator("a").click(); pg.wait_for_timeout(150)
+    check("a link to a prediction opens the closed box", fold.evaluate("(d) => d.open") and pg.locator("#pred-3 button.commit").is_visible())
 
     # plain choice: feedback after Vastaa, may change and re-check
     c = pg.locator("#pr-paino"); w = c.locator("label").filter(has=pg.get_by_text("10 N", exact=True))   # the mass-for-weight option
