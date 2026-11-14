@@ -325,6 +325,19 @@
           "feedback": "Here the atom is assumed to absorb all photons whose energy is enough for excitation. When the electron stays in the atom, the photon energy must be exactly the difference between two states, so narrow lines are formed."
         }
       ]
+    },
+    {
+      "id": "fy8-2-L2-09",
+      "level": 2,
+      "text": "The figure shows the emission spectrum of an unknown gas discharge lamp. Read the wavelength of the blue line from the figure and calculate the energy of the photon of that line. Give the answer in electronvolts.",
+      "figure": "fy8-2/lamp-spectrum",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 2.84,
+      "unit": "eV",
+      "tolerance": 0.03
     }
   ],
   "level3": [
@@ -431,6 +444,20 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-2-L3-06",
+      "level": 3,
+      "text": "The figure shows the emission spectrum of an unknown gas discharge lamp. Assume that the violet and the green line are produced by transitions from two different upper energy states of the lamp's atoms to the same lower state.\n\na) Read the wavelengths of the violet and the green line from the figure and calculate the energies of their photons in electronvolts.\n\nb) What is the energy difference of the two upper energy states? Give the answer in electronvolts.\n\nc) Explain why the energy difference is not the same as the sum of the energies of the green and the violet photon.\n\nThe answer box takes the result of part b).",
+      "figure": "fy8-2/lamp-spectrum",
+      "kind": [
+        "graph",
+        "data",
+        "reasoning"
+      ],
+      "answer": 0.79,
+      "unit": "eV",
+      "tolerance": 0.05
     }
   ]
 }

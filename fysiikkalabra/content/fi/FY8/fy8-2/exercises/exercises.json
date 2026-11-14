@@ -325,6 +325,19 @@
           "feedback": "Tässä atomin luullaan absorboivan kaikki fotonit, joiden energia riittää viritykseen. Kun elektroni jää atomiin, fotonin energian on oltava täsmälleen kahden tilan erotus, joten syntyy kapeita viivoja."
         }
       ]
+    },
+    {
+      "id": "fy8-2-L2-09",
+      "level": 2,
+      "text": "Kuvassa on tuntemattoman kaasupurkauslampun emissiospektri. Lue kuvasta sinisen viivan aallonpituus ja laske sen viivan fotonin energia. Anna vastaus elektronivoltteina.",
+      "figure": "fy8-2/lamp-spectrum",
+      "kind": [
+        "graph",
+        "data"
+      ],
+      "answer": 2.84,
+      "unit": "eV",
+      "tolerance": 0.03
     }
   ],
   "level3": [
@@ -431,6 +444,20 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-2-L3-06",
+      "level": 3,
+      "text": "Kuvassa on tuntemattoman kaasupurkauslampun emissiospektri. Lampun atomien energiatiloista oletetaan, että violetti ja vihreä viiva syntyvät siirtymistä kahdelta eri ylemmältä energiatilalta samalle alemmalle tilalle.\n\na) Lue kuvasta violetin ja vihreän viivan aallonpituudet ja laske niiden fotonien energiat elektronivoltteina.\n\nb) Kuinka suuri on näiden kahden ylemmän energiatilan energiaero? Anna vastaus elektronivoltteina.\n\nc) Selitä, miksi energiaero ei ole sama kuin vihreän ja violetin viivan fotonien energioiden summa.\n\nVastauslaatikkoon tulee kohdan b) tulos.",
+      "figure": "fy8-2/lamp-spectrum",
+      "kind": [
+        "graph",
+        "data",
+        "reasoning"
+      ],
+      "answer": 0.79,
+      "unit": "eV",
+      "tolerance": 0.05
     }
   ]
 }
