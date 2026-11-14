@@ -227,8 +227,6 @@ vihkojen jälkeen (Vihkot-sivu).
 
 ## 13. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 
-Varattu: claude/simulaatioiden-kayttoliittyma
-
 Mittaus, päätökset ja rajaukset: `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. Matalalla kannettavalla
 (1366×650) simulaation kuva kapenee 384 px:iin ja sen tekstit noin 7 px:iin; puhelimella kuva vierii pois säätimiä
 käytettäessä. Osat tässä järjestyksessä, kukin oma pull requestinsa. PR 1–PR 5 muuttavat jaettuja tiedostoja
