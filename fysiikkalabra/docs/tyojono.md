@@ -38,10 +38,11 @@ Tapa ajaa selaintarkistukset CI:n kontissa (`mcr.microsoft.com/playwright/python
 layout-testien virheilmoitukset nimeämään ylivuotava elementti (`docs/QUALITY.md` aukot 1–2). Jaettuja tiedostoja:
 tehdään yksin ja yhdistetään ennen muita.
 
-## 6. Kuva- ja MAFY-taulukkotehtävät FY8, FY9, FY10 ja FY14 (opettaja 2026-11-13)
+## 6. Kuvatehtävät FY8, FY9, FY10 ja FY14, MAFY-taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13 ja 2026-11-14)
 
 Sama tahti kuin FY4:stä alkaen: jokaisessa luvussa vähintään kaksi kuvatehtävää ja MAFY-taulukkotehtävä noin joka
-kolmannessa luvussa (#521, #528). Arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit lähde-URL:n kanssa. Aloitetaan,
+kolmannessa luvussa (#521, #528). FY10:een ja FY14:ään ei lisätä MAFY-taulukkotehtäviä, vain kuvatehtävät (opettaja
+2026-11-14). Arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit lähde-URL:n kanssa. Aloitetaan,
 kun kohdan 2 katselmoinnit on tehty, jotta katselmoimattomien sarjojen jono ei kasva.
 
 ## 7. Työpöytäasettelu: keskitetty tekstiraita ja marginaaliraita (opettaja 2026-11-13)
@@ -223,6 +224,28 @@ kursseille FY1–FY8 sivuja säästävällä tiiviillä asettelulla (#393). FY1�
 muuttunut sen jälkeen (MAFY-kaavat, käsitteet, korjaukset), joten ne tehdään uudelleen; FY5–FY8 ovat uusia. Kurssin
 vihko tehdään vasta, kun sen kohdan 3 MAFY-kaavat on yhdistetty, ettei sitä tarvitse tehdä kahdesti. Rakenna sivusto
 vihkojen jälkeen (Vihkot-sivu).
+
+## 13. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
+
+Mittaus, päätökset ja rajaukset: `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. Matalalla kannettavalla
+(1366×650) simulaation kuva kapenee 384 px:iin ja sen tekstit noin 7 px:iin; puhelimella kuva vierii pois säätimiä
+käytettäessä. Osat tässä järjestyksessä, kukin oma pull requestinsa. PR 1–PR 5 muuttavat jaettuja tiedostoja
+(`templates/`, `scripts/`): ne tehdään yksin, yksi kerrallaan, ja yhdistetään ennen sisältömuutoksia. Pilotit (PR 2,
+PR 4) pysähtyvät opettajan hyväksyntään ennen yleistystä. Yksikään osa ei muuta sim.js-tiedostoja, simulaatioiden
+lang-tekstejä tai fysiikkaa.
+
+- **PR 1:** kuvan todellinen leveys tekstikoon perustaksi (`sim-embed.js`) ja selaintesti 1366×650 (kuvan tekstit
+  vähintään 10 px) omina CI-jobeinaan.
+- **PR 2:** pilotti fy4-1: lukemat kuvan alle, toistorivi yhdelle riville, `.lab-side .sim-canvas`-säännön 25 rem:n
+  varaus pienemmäksi, kuvausteksti pois kokeiden vierestä.
+- **PR 3:** sama asettelu tyypeille A–C (aikaohjatut, jatkuvat, staattiset); tyyppi D, fy1-2, fy1-4 ja poikkeavat
+  jäävät nykyiselleen.
+- **PR 4:** tarttuva kuva puhelimella, pilotti fy4-1 ja yksi staattinen simulaatio.
+- **PR 5:** canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus.
+
+Myöhemmin kurssi kerrallaan, kunkin luvun seuraavan sisältömuutoksen yhteydessä katselmointeineen: tyyppi D (fy6-5,
+fy6-6, fy6-9, fy6-12, fy6-13, fy6-14), fy1-2:n säätimien ryhmittely, näppäinvaihtoehto raahaukselle, nimien
+yhtenäistäminen (Toisto / Tauko / Alusta) ja toistuvien seliterivien poisto.
 
 ## Kirjattu päätös: luvut ilman käsitekortteja (opettaja 2026-11-13)
 

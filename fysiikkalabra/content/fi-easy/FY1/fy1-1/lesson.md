@@ -91,7 +91,7 @@ Fysiikan kohteiden koot ovat valtavan erilaisia. Protoni on noin $1{,}7\cdot10^{
 
 ### Suuruusluokka kertoo karkean koon
 
-**Suuruusluokka** kertoo luvun koon suunnilleen. Se on kymmenpotenssi, joka on kymmenpotenssien akselilla lähimpänä lukua. Esimerkiksi luvun 170 suuruusluokka on 100 eli $10^{2}$. Tarkemmin sanottuna luvun $a\cdot10^{n}$ suuruusluokka on $10^{n}$, kun $a<\sqrt{10}\approx3{,}16$. Jos $a>\sqrt{10}$, suuruusluokka on $10^{n+1}$. Raja $\sqrt{10}$ on kymmenpotenssien akselilla kohtien $10^{n}$ ja $10^{n+1}$ puolivälissä. Ihmisen pituus $1{,}7\,\text{m}$ on suuruusluokkaa $10^{0}\,\text{m}$. Mount Everestin korkeus $8{,}8\cdot10^{3}\,\text{m}$ on suuruusluokkaa $10^{4}\,\text{m}$.
+**Suuruusluokka** kertoo luvun koon suunnilleen. Se on kymmenpotenssi, joka on kymmenpotenssien akselilla lähimpänä lukua. Jos kerroin on alle noin 3, suuruusluokka on $10^{n}$. Jos kerroin on yli noin 3, suuruusluokka on $10^{n+1}$. Esimerkiksi luvun 170 suuruusluokka on 100 eli $10^{2}$. Toinen esimerkki: ihmisen pituus $1{,}7\,\text{m}$ on suuruusluokkaa $10^{0}\,\text{m}$. Mount Everestin korkeus $8{,}8\cdot10^{3}\,\text{m}$ on suuruusluokkaa $10^{4}\,\text{m}$.
 
 Kohteiden koot ovat pyöristettyjä arvoja. Ihmiset, muurahaiset ja galaksit eivät ole kaikki samankokoisia. Siksi vertailuun riittää usein suuruusluokka. Luvuista kannattaa myös kysyä, kuinka tarkkoja ne ovat.
 
