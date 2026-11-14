@@ -12,7 +12,7 @@ ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta
 
 FY1–FY9 on tehty (#501, #522, #527, #529, #572, #576, #578, #580, #583). FY10:ssä ja FY14:ssä ei ole nimettäviä
 kaavoja (opettaja 14.11: "ei tarvitse"). FY5:ssä F pysyy gravitaatiolaissa (opettaja 14.11). Keskinopeuden tunnus on
-kaikkialla $v_	ext{k}$, ei $v_	ext{ka}$ (opettaja 2026-11-13). Jäljellä vain kohta 3b: \[Npt]-lohkojen FY7- ja
+kaikkialla $v_\text{k}$, ei $v_\text{ka}$ (opettaja 2026-11-13). Jäljellä vain kohta 3b: `\\[Npt]`-lohkojen FY7- ja
 FY8-kaavat.
 
 ## 3b. Kaavataulukon välistys `\\[Npt]` (2026-11-14, #580:n löydös)
