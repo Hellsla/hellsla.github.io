@@ -8,7 +8,7 @@ Tämä on ainoa työjono (opettaja 2026-11-13): ei GitHub Issuesia eikä erillis
 ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta muut ketjut näkevät varauksen
 (repon juuren `CLAUDE.md`). Saman kurssin kohdat tehdään peräkkäin, eri kurssien enintään kolme rinnakkain.
 
-## 3. Kaavat MAFY-muotoon FY5–FY8, FY10 ja FY14
+## 3. Kaavat taulukkokirjan muotoon FY5–FY8, FY10 ja FY14
 
 Varattu: FY5 – claude/fy5-mafy-kaavat
 
@@ -26,6 +26,14 @@ fy10-induktio, fy10-lammonjohtuminen, fy10-liukukitka ja fy10-hiuksen-paksuus. f
 tarkistetaan ensin kuvista (fy10-hiuksen-paksuus antoi kahdella ajolla eri tuloksen). Minor-löydökset ja yhteinen
 kuvasääntö erillisenä eränä opettajan päätöksellä; jaettujen komponenttien muutokset (`templates/`, `screenshot.py`:n
 tyhjät 28×28 px kaappaukset) tehdään yksin. Voi kulkea rinnakkain kohdan 2 kanssa.
+
+## 4b. Dronelabra: lentokokeiden taulukko liian leveä puhelimella (2026-11-14)
+
+Löytyi #568:n koko sivuston ajossa 360 ja 390 px:llä: `ahjo-drone-lentokokeet` (fi, en, fi-easy) taulukko on
+91–130 px laatikkoaan leveämpi (`check_layout` `table`, suljettu tila). Ainoa löydös koko sivustolla näillä
+leveyksillä. Lähde `jaksot/ahjo/kohteet/ahjo-drone-lentokokeet.md`. Korjaus ensisijaisesti jaksopohjan taulukon
+yhteisessä tyylissä (jaettu: yksin) tai taulukon rakenteessa (sisältö, ei katselmointeja Ahjon sivuilla). Pieni,
+voidaan tehdä, kun mikään jaettu muutos ei ole auki.
 
 ## 5. CI:n toistettavuus (2026-11-13)
 
@@ -241,6 +249,13 @@ eivät ole ensin (FY4 luku 4: 4-4, 4-6, 4-13, 4-16).
   vastaustoimintoineen. Tasoa ei tarvitse avata.
 - Ei uutta otsikkoa, laskuria ("Ydintehtävät 2/4 tehty" ei palaa; opettaja poisti sen 13.11. ja vahvisti 14.11.),
   ohjeriviä eikä väliotsikkoa. Ydintehtävän tunnistaa nykyisestä Ydintehtävä-merkistä.
+- Ydintehtävät ovat eri tasoisia: tasoilta 1 ja 2, kuten nyt (`build.py core_ids`: oletuksena kahden tason kaksi
+  ensimmäistä tai `"core": true`; 14.11. 112/113 luvussa molemmilta tasoilta, yhdessä vain tasolta 1, tasolta 3 ei
+  missään). Taso 3 ei tule ydintehtäviin (opettaja 14.11: "Riittää tasot 1 ja 2"). Järjestys: tason 1 ydintehtävät
+  ensin, sitten tason 2. Luku, jonka ydintehtävät ovat yhdeltä tasolta, raportoidaan PR:ssä (sisältöpäätös, ei
+  korjata tässä).
+- Ydintehtävän merkin vieressä näkyy sen taso, **Perus** tai **Soveltava** (opettaja 14.11: "Voisi näkyä perus /
+  soveltava"; tämä on hyväksytty käyttöliittymäteksti, lang-avaimet fi, en ja fi-easy, tasojen nykyisistä nimistä).
 - Niiden alla nykyiset kolme tasoa suljettuina; tasossa näkyvät vain sen muut tehtävät. Tasojen otsikot ja
   "N/M tehty" toimivat kuten nyt, omilla määrillään.
 - Lause "Ydintehtävät ensin, loput lisäharjoitusta." poistetaan (lang `level_lead_1` ja `level_lead_2`, kaikki kielet).
@@ -313,6 +328,8 @@ FY9 ja FY1, 1280 ja 390 px. Pieni jaettu muutos: tehdään kuten U4, kun mikää
 - Ei yhden luvun julkaistua pilottia: esikatselukuvat riittävät.
 
 ## 11b. FY9: adaptiivinen YO-valmentaja (opettaja 2026-11-14)
+
+Varattu: PR 1 – claude/fy9-valmentaja-pr1
 
 Suunnitelma: `docs/FY9_ADAPTIVE_PLAN.md` (#566). Opettaja hyväksyi 14.11 suunnitelman ja kaikki sen suositukset
 P1–P12: osaamisalueet ovat kuusi osaamista (`competencies.json`); tilojen sanat hyväksytään PR 4:ssä; oma
@@ -393,8 +410,8 @@ merkitään hyväksytyksi.
 
 Tulostettavat A5-vihkot (`python scripts/print_book.py <C> --lang fi|en --publish`, README "Printed A5 book") kaikille
 kursseille FY1–FY8 sivuja säästävällä tiiviillä asettelulla (#393). FY1–FY4:llä vihko on (7.11.), mutta sisältö on
-muuttunut sen jälkeen (MAFY-kaavat, käsitteet, korjaukset), joten ne tehdään uudelleen; FY5–FY8 ovat uusia. Kurssin
-vihko tehdään vasta, kun sen kohdan 3 MAFY-kaavat on yhdistetty, ettei sitä tarvitse tehdä kahdesti. Rakenna sivusto
+muuttunut sen jälkeen (kaavat taulukkokirjan muotoon, käsitteet, korjaukset), joten ne tehdään uudelleen; FY5–FY8 ovat uusia. Kurssin
+vihko tehdään vasta, kun sen kohdan 3 kaavat taulukkokirjan muodossa on yhdistetty, ettei sitä tarvitse tehdä kahdesti. Rakenna sivusto
 vihkojen jälkeen (Vihkot-sivu).
 
 ## Kirjattu päätös: teorian taitto, vaihtoehto B (opettaja 2026-11-14)

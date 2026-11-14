@@ -326,7 +326,7 @@ Jako kymmeneen kahden pisteen kohtaan on tämän harjoituskokeen ratkaisu. Varsi
 Osan II ja III tehtävät ovat sivun lopussa kohdassa Tehtävät, ja niiden otsikossa lukee, kumpaan osaan tehtävä kuuluu. Osan II tehtävät ovat $15$ p ja Osan III aineistotehtävät $20$ p. Kunkin tehtävän kohtien pisteet on merkitty kohtaan. Kirjoita jokaiseen laskuun täydellinen ratkaisu: annetut ja kysytyt suureet, periaate, kaava ratkaistuna, sijoitus yksiköineen, vastaus oikealla tarkkuudella ja järkevyystarkastelu.
 
 ### Apuvälineet
-Käytä samoja apuvälineitä kuin oikeassa kokeessa: laskinta, taulukkolaskentaa, kuvaajaohjelmaa ja kaavaeditoria sekä kokeen taulukoita ja kaavoja. Muistiinpanot, oppikirja, internet ja tämän sivun mallivastaukset ovat kiinni koko kokeen ajan. Oikean kokeen sallitut ohjelmat ja aineistot kerrotaan ylioppilastutkintolautakunnan määräyksissä, joten tarkista ne ennen koetta.
+Käytä samoja apuvälineitä kuin oikeassa kokeessa: tietokoneen laskinohjelmaa, taulukkolaskentaa, kuvaajaohjelmaa ja kaavaeditoria sekä kokeen taulukoita ja kaavoja. Erillistä laskinta tai taulukkokirjaa fysiikan kokeessa ei saa käyttää. Muistiinpanot, oppikirja, internet ja tämän sivun mallivastaukset ovat kiinni koko kokeen ajan. Oikean kokeen sallitut ohjelmat ja aineistot kerrotaan ylioppilastutkintolautakunnan määräyksissä, joten tarkista ne ennen koetta.
 
 ## Aikasuunnitelma {Aikataulu}
 

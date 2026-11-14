@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: dffabae2d7e958c9
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at dffabae2d7e958c9.
+CONTENT-HASH: 889350cdbeb1cd52
+Delta review (aids paragraph, 2026-11-14) of the version passed at dffabae2d7e958c9.
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-1. Organ pipe b): $\varepsilon = v'/v - 1$ uses $v = 343{,}2\,\text{m/s}$, which is not in the b-part's Annettu (it is in a). Add "$v = 343{,}2\,\text{m/s}$ (a-kohta)".
-2. Geotherm (unchanged line): $17{,}11 \cdot 6{,}0 + 6{,}67 = 109{,}3\,{}^\circ\text{C}$, the text says $109{,}4$. The answer $110\,{}^\circ\text{C}$ is unaffected.
+None. (The sentence leaves out "fysiikan kokeessa"; the paragraph's first sentence already ties it to the real exam, so the meaning is the same.)
 
 ## Checked
-Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: $\varepsilon = 336{,}1/343{,}2 - 1 = -0{,}0207$; $\Delta L = -0{,}362\,\text{mm}$, $\Delta f/f_0 \approx -\alpha\Delta T = +2{,}8 \cdot 10^{-4}$ (the expansion $L_0/(L_0+\Delta L) - 1 \approx -\Delta L/L_0$ is correct, condition $|\Delta L| \ll L_0$ stated); $P_\text{j} = R_\text{j}I^2 = 114\,\text{W}$; spring $k = 4\pi^2/a = 25{,}0\,\text{N/m}$, $m_\text{j} = b/a = 20{,}5\,\text{g}$ ($b = am_\text{j}$ follows from the model).
+- The one changed paragraph (Apuvälineet / Aids): "calculator" narrowed to the computer's calculator program, plus the new sentence that a separate calculator or a book of tables is not allowed. It agrees with YTL Reaaliaineiden kokeiden määräykset ja ohjeet §3 ("ei saa käyttää apuvälineinä erillisiä laskimia eikä erillisiä taulukkokirjoja"), source recorded in fi review/developer.md.
+- No contradiction with the rest of the paragraph: "the exam's tables and formulas" are the digital materials inside the exam, not a separate book; the closing pointer to the Board's regulations is kept.
+- No other place in the unit mentions a calculator or tables as an aid (grep).
+- fi, en and fi-easy say the same thing.
+- Hash checked at start and end with `python3 scripts/units.py hash fy9-harjoituskoe --lang fi-easy`.
