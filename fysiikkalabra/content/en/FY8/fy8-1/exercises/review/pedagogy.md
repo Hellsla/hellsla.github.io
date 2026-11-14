@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 988da3dead866ab2
+CONTENT-HASH: f22ac3e71db8780e
 SCOPE: delta added-exercise from b4640f1fa75ce4b0 base 5a45b28682e8
 
 ## Blocking
 (none)
 
 ## Polish
-- fy8-1-L2-08 and L2-09 are both pure graph readings of the same figure and sit next to L2-06 (also A/B lines); consider that L2-08 is closer to level 1 in demand. Acceptable as a bridge to L2-06.
+(none new; round-1 polish on L2-08 level and "Kaava" wording unchanged and optional)
 
 ## Checked
-- L1-10: MAFY lookup task (calcium 3.20 eV, verified in mafy-arvot.tsv); situation, then question last; no repeat of L1-07 (potassium) as the lookup is the new skill.
-- L1-10 solution: principle explained, conversion and substitution shown; 387.5 nm gives 387 within tolerance; 1240 eV nm check correct.
-- L2-08: figure supplies all needed (grid, axes); calculated 2.66 eV vs read 2.7 eV within tolerance 5 %; the step-by-step reading is clear.
-- L2-09: threshold read from the horizontal axis, 428 nm correct (c/7.0e14); the solution warns against the vertical-axis misreading.
-- Figure description and figure give the data without writing f0 or W; the answer is not given away.
-- Set fit: level 1 now 10, level 2 nine, kinds mixed (concept, data, graph, error), no repeat of the worked example.
-- Hash 988da3dead866ab2 at start and end.
+- L2-08 solution diff: Muunnokset now states frequencies are used in units of 10^14 Hz so the slope 0.4136 eV gives eV directly; the old line mixed units (eV per 10^14 Hz times a unitless-looking factor) and is repaired.
+- Sijoitus 0.4136 * (12 - 5.56) = 2.66 eV is correct and consistent with the stated unit convention.
+- Järkevyys no longer uses the work function (not readable in the task); compares the graph reading 2.7 eV to hf = 4.96 eV and notes 2.66 agrees: clearer, reading stays the primary route.
+- Reading step, answer (2.7 eV, tolerance) and L1-10, L2-09 untouched; earlier PASS stands.
+- Method: text diff only.

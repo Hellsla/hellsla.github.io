@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a57efd1302bef73d
+CONTENT-HASH: 660f444084d55575
 SCOPE: delta added-exercise from 5e7e04fa3110d92d base 5a45b28682e8
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json fy8-1-L1-10 text — "Kalsiumpintaa valaistaan eri aallonpituuksilla" promises wavelengths that the task never gives — fix: "Kalsiumpintaa valaistaan valolla, jonka aallonpituutta voi muuttaa."
-- exercises.json fy8-1-L2-08 — only one graph read and one check, close to level 1 — fix: acceptable as the entry to the A/B figure; keep it before L2-09, or ask for the answer in joules.
-- solutions.md fy8-1-L2-08 Kaava — the check uses f0 ≈ 5,6·10^14 Hz, which the student never read — fix: say "f0 luetaan A:n suoran alkukohdasta vaaka-akselilta".
+(none new; round-1 polish on L2-08 level and "Kaava" wording unchanged and optional)
 
 ## Checked
-- L1-10: one lookup (MAFY, Irrotustöitä) plus λ0 = hc/W; level 1 is right, a lookup practises the MAFY habit; differs from L1-05 (zinc, given W) and from the example.
-- L1-10 solution: all seven steps in order, the principle explained, the unit conversion shown, a 1240 eV nm check, the tolerance for differing editions stated.
-- L2-08: figure needed, description gives the same data without the answer; question last, own sentence; reading explained from the grid; 2,7 eV is inside the tolerance.
-- L2-09: reading f0 of B, then c = fλ and nm conversion: two steps, level 2; the solution warns against reading from the vertical axis (the bank's error).
-- The set of 24: levels 10/9/5 fit the minimums; kinds (graph, data, concept, error, model) are mixed and the new tasks repeat none; B's f0 > A's agrees with L2-06's pair.
-- Finnish and case after number and unit are fine in the added texts.
-- Hash a57efd1302bef73d at start and end.
+- L2-08 solution diff: Muunnokset now states frequencies are used in units of 10^14 Hz so the slope 0.4136 eV gives eV directly; the old line mixed units (eV per 10^14 Hz times a unitless-looking factor) and is repaired.
+- Sijoitus 0.4136 * (12 - 5.56) = 2.66 eV is correct and consistent with the stated unit convention.
+- Järkevyys no longer uses the work function (not readable in the task); compares the graph reading 2.7 eV to hf = 4.96 eV and notes 2.66 agrees: clearer, reading stays the primary route.
+- Reading step, answer (2.7 eV, tolerance) and L1-10, L2-09 untouched; earlier PASS stands.
+- Method: text diff only.
