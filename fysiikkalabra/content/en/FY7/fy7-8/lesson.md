@@ -205,8 +205,8 @@ High voltage is not brought into homes, because insulating it requires long insu
 
 ## Formula: Transformer and transmission loss
 The voltages and currents of an ideal transformer depend on the numbers of turns of the coils:
-```latex
-\frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}
+```kaavat
+transformer :: \frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}
 ```
 where $U_1$ is the primary voltage (V), $U_2$ the secondary voltage (V), $N_1$ and $N_2$ the numbers of turns of the primary and secondary coils and $I_1$ and $I_2$ the primary and secondary currents (A). The ratio $N_1 : N_2$ is the turns ratio. The latter equality follows from the conservation of power: $U_1 I_1 = U_2 I_2$. The voltages and currents are effective (rms) values (chapter *The generator and alternating current*). When the voltage increases, the current decreases in the same proportion.
 

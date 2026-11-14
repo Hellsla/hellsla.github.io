@@ -174,8 +174,8 @@ Kaiuttimen magneetti on rakennettu niin, että rengasmaisessa raossa kenttä oso
 
 ## Kaava: Voima virtajohtimeen
 Kun suorassa johtimessa kulkee virta $I$ ja johdin on homogeenisessa magneettikentässä, kenttä kohdistaa johtimeen voiman, jonka suuruus on
-```latex
-F = I l B \sin\alpha
+```kaavat
+suoraan johtimeen kohdistuva magneettinen voima :: F = I l B \sin\alpha
 ```
 missä $F$ on voima (N), $I$ virta (A), $l$ kentässä olevan johtimen osan pituus (m), $B$ magneettivuon tiheys (T) ja $\alpha$ johtimen ja kentän välinen kulma. Voimaa synnyttää vain kentän johtimeen kohtisuora komponentti $B \sin\alpha$. Voima on suurin, kun johdin on kohtisuorassa kenttää vastaan ($\sin 90^\circ = 1$), ja nolla, kun johdin on kentän suuntainen ($\sin 0^\circ = 0$). Kulmassa $30^\circ$ voima on puolet suurimmasta arvosta, koska $\sin 30^\circ = 0{,}5$. Kaavasta saadaan teslan yksikkö: $1\,\text{T} = 1\,\tfrac{\text{N}}{\text{A}\cdot\text{m}}$.
 

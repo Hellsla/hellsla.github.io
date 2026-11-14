@@ -279,8 +279,8 @@ R = \frac{U}{I}
 missä $R$ on resistanssi ($\Omega$), $U$ komponentin jännite ($\text{V}$) ja $I$ sen läpi kulkeva virta ($\text{A}$).
 
 **Ohmin laki:** metallijohtimen läpi kulkeva virta on suoraan verrannollinen sen jännitteeseen, kun johtimen lämpötila pysyy samana. Silloin resistanssi on vakio, ja
-```latex
-U = R I
+```kaavat
+jännitehäviö johtimessa :: U = R I
 ```
 Kun jännite kaksinkertaistuu, myös virta kaksinkertaistuu. Ohmin laki ei ole yleinen luonnonlaki vaan monen johdinaineen ominaisuus: se pätee metalleille ja vastuksille vakiolämpötilassa, mutta ei esimerkiksi hehkulampulle, jonka lanka kuumenee, eikä diodille.
 
@@ -340,8 +340,8 @@ Komponentin **ominaiskäyrä** on kuvaaja, joka näyttää, miten komponentin j�
 
 ### Resistiivisyys
 Saman aineen tasapaksun johtimen resistanssi on suoraan verrannollinen johtimen pituuteen $l$ ja kääntäen verrannollinen sen poikkipinta-alaan $A$:
-```latex
-R = \rho \frac{l}{A}
+```kaavat
+johtimen resistanssi :: R = \rho \frac{l}{A}
 ```
 missä $R$ on johtimen resistanssi ($\Omega$), $l$ pituus ($\text{m}$), $A$ poikkipinta-ala ($\text{m}^2$) ja $\rho$ aineen **resistiivisyys** ($\Omega\cdot\text{m}$). Kaksi kertaa pidempi lanka on kuin kaksi lankaa peräkkäin, joten resistanssi kaksinkertaistuu. Lanka, jonka poikkipinta-ala on kaksinkertainen, on kuin kaksi lankaa rinnakkain, joten virta pääsee kulkemaan kahta reittiä ja resistanssi puolittuu. Poikkipinta-ala ilmoitetaan usein neliömillimetreinä, ja $1\,\text{mm}^2 = (10^{-3}\,\text{m})^2 = 10^{-6}\,\text{m}^2$.
 

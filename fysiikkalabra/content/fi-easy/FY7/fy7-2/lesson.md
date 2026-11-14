@@ -262,8 +262,8 @@ Esimerkki: protoni lentää vauhdilla $1{,}0 \cdot 10^{6}\,\text{m/s}$ kohtisuor
 
 ## Kaava: Magneettinen voima ja ympyrärata
 Magneettikentässä liikkuvaan varattuun hiukkaseen vaikuttavan magneettisen voiman suuruus lasketaan kaavalla
-```latex
-F_\text{m} = |q| v B \sin\alpha
+```kaavat
+varattuun hiukkaseen kohdistuva magneettinen voima :: F_\text{m} = |q| v B \sin\alpha
 ```
 missä $|q|$ on hiukkasen varauksen suuruus (C), $v$ on hiukkasen vauhti (m/s), $B$ on magneettivuon tiheys eli magneettikentän voimakkuus (T) ja $\alpha$ on nopeuden ja kentän välinen kulma. Kun nopeus on kohtisuorassa kenttää vastaan, $\sin 90^\circ = 1$ ja voima on suurin: $F_\text{m} = |q|vB$. Kentän suuntaisesti liikkuvaan hiukkaseen ei vaikuta voimaa, koska $\sin 0^\circ = 0$. Teslan määritelmästä seuraa, että $1\,\text{C} \cdot 1\,\tfrac{\text{m}}{\text{s}} \cdot 1\,\text{T} = 1\,\text{N}$.
 

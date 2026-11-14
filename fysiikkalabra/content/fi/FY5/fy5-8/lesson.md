@@ -279,8 +279,8 @@ Kulmakerroin luetaan kahdesta sovitetun suoran pisteestä, ei kahdesta mittauspi
 
 ### Jousen potentiaalienergia
 Luvussa *Liike-energia, potentiaalienergia ja mekaaninen energia* todettiin, että jännitetyllä jousella on jousen potentiaalienergiaa. Nyt sen suuruus voidaan laskea. Kun jousta venytetään hitaasti lepopituudesta venymään $x$, venyttävä voima tekee työtä, ja työ varastoituu jouseen potentiaalienergiaksi. Vakiovoiman työ $W = Fs$ on $(s, F)$-kuvaajassa suorakulmion pinta-ala (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Venyttävä voima ei kuitenkaan ole vakio, vaan se kasvaa tasaisesti nollasta arvoon $kx$. Siksi työ on $(x, F_\text{v})$-kuvaajan ja $x$-akselin väliin jäävä kolmio, jonka kanta on $x$ ja korkeus $kx$. Jousen potentiaalienergia on
-```latex
-E_\text{p} = \frac{1}{2}kx^2
+```kaavat
+harmonisen värähtelijän potentiaalienergia :: E_\text{p} = \frac{1}{2}kx^2
 ```
 missä $E_\text{p}$ on jousen potentiaalienergia ($\text{J}$), $k$ jousivakio ($\text{N/m}$) ja $x$ venymä tai puristuma ($\text{m}$). Lepopituudessa jousen potentiaalienergia on nolla.
 

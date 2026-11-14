@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d4d929ce1b9836bc
+CONTENT-HASH: 2bae39cb7d291fd8
 
 ## Blocking
 None.
 
 ## Polish
-1. inquiry.json siirto, hint 3 writes the law as L = 10 dB · lg(...) while the lesson states the MAFY form; equivalent, but the hint could use 10 lg(...) dB for consistency.
-2. sim-spec.md and lesson-answers.py docstring still write L = 10 dB · lg(I/I₀) (not student-facing).
+1. sim-spec.md and lesson-answers.py docstring still write L = 10 dB · lg(I/I₀); glossary.json (outside the hash) too. Equivalent, not student-facing in the lesson; align with MAFY's form when next edited.
 
 ## Checked
-Full review (lesson.md, inquiry.json, exit-ticket.json, figures, sim-spec.md, sim.js). L = 10 lg(I/I0) dB is MAFY's form and equivalent to the old one; the derived forms (difference, I = I0·10^(L/10 dB)) follow correctly, including the "divide by 10 dB" step. Conditions stated where used: point source, no reflections or absorption, independent sources, free field for treating the meter reading as intensity level; dB(A) and sound-pressure level explained without error. Recomputed in my own script: worked example 3,98·10⁻³ W/m², P = 5,00 W (1 dB ≈ 26 %); 70+60 dB → 1,1·10⁻⁵ W/m², 70,4 dB; 80+80 → 83 dB; sim and experiments 2 m 90,0, 4 m 84,0, 8 m 77,9 dB, I 0,995 → 0,249 mW/m², N = 2/4/10 → 93,0/96,0/100,0 dB; error item 6,5 I0 ≈ 8 dB vs 3,16·10⁻⁶ W/m²; transfer 0,969 dB (mistakes 3,0, 1,76); check 2: 100 (mistakes 1,4, 20); exit 1,0·10⁻⁴ W/m², 84,8 dB; all match lesson-answers.py. Sim computes I = NP/(4πr²) and L directly, simState gives ImW and L; P, N locked in koe 1, P, r in koe 2. Each prediction has one correct option; perception claims (10 dB ≈ twice as loud, 6 dB ≈ a third quieter, 20 dB ≈ four times) are right. Compared with fi: every number, correct option, tolerance, unit and experiment setup is identical (scripted comparison); the note on the MAFY subscripts (H = huojunta/havaitsija, L = lähde) is right.
+Full review (en: lesson.md, inquiry.json, exit-ticket.json, figures, sim-spec.md, sim.js). The change: siirto hint 3 now in MAFY's form, L = 10 lg((I1+I2)/I0) dB = 80 dB + 10 lg(1,25) dB = 80,97 dB, consistent with the answer 0,97 dB (L − L1) and the solution. Law L = 10 lg(I/I0) dB and its solved forms correct; conditions stated where used (point source, no reflections or absorption, independent sources, free field for meter reading as intensity level; dB(A) and sound-pressure level described correctly). Recomputed in one script: worked example 3,98·10⁻³ W/m², P = 5,00 W; koe 1 (P = 50 mW, N = 1) 96,0/90,0/84,0/77,9 dB and 0,995 → 0,249 mW/m²; koe 2 (r = 2,0 m) 90,0/93,0/96,0/100,0 dB; 80+80 → 83,0 dB; 70+60 → 1,1·10⁻⁵ W/m², 70,4 dB; Kaava graph 90,0/84,0/78,0/71,9 dB; error item 3,16·10⁻⁶ W/m² vs 6,5 I0 ≈ 8 dB; transfer 0,969 dB, mistakes 3,01 and 1,76; check 2: 100 (mistakes 1,4, 20); exit 1,0·10⁻⁴ W/m², 84,8 dB; all match lesson-answers.py. Sim computes I = NP/(4πr²), L = 10 lg(I/I0) dB; simState gives ImW and L; koe 1 locks P, N, koe 2 locks P, r. Each prediction and check has exactly one correct option, distractor feedback right; answers, tolerances, keys and mistakes identical in fi, fi-easy and en.

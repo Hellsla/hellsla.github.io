@@ -293,7 +293,7 @@
       "hints": [
         "Which loudspeaker produces the greater intensity at the listener, and by what factor? The farther one is twice as far away.",
         "Calculate the intensity of the nearer loudspeaker $I_1 = I_0 \\cdot 10^{\\,L_1/(10\\,\\text{dB})}$. The intensity of the farther one is $I_2 = \\tfrac{I_1}{4}$, because the intensity is inversely proportional to the square of the distance.",
-        "$L = 10\\,\\text{dB} \\cdot \\lg \\dfrac{I_1 + I_2}{I_0} = 10\\,\\text{dB} \\cdot \\lg \\dfrac{1.25\\, I_1}{I_0} = 80\\,\\text{dB} + 10\\,\\text{dB} \\cdot \\lg 1.25$."
+        "$L = 10\\lg\\left(\\dfrac{I_1 + I_2}{I_0}\\right)\\,\\text{dB} = 10\\lg\\left(\\dfrac{1.25\\, I_1}{I_0}\\right)\\,\\text{dB} = 80\\,\\text{dB} + 10\\lg(1.25)\\,\\text{dB}$."
       ],
       "mistakes": [
         {

@@ -293,7 +293,7 @@
       "hints": [
         "Kumpi kaiutin tuottaa kuulijan kohdalle suuremman intensiteetin? Kuinka moninkertaisen? Kaukaisempi kaiutin on kaksi kertaa kauempana.",
         "Laske lähemmän kaiuttimen intensiteetti $I_1 = I_0 \\cdot 10^{\\,L_1/(10\\,\\text{dB})}$. Kaukaisemman kaiuttimen intensiteetti on $I_2 = \\tfrac{I_1}{4}$, koska intensiteetti on kääntäen verrannollinen etäisyyden neliöön.",
-        "$L = 10\\,\\text{dB} \\cdot \\lg \\dfrac{I_1 + I_2}{I_0} = 10\\,\\text{dB} \\cdot \\lg \\dfrac{1{,}25\\, I_1}{I_0} = 80\\,\\text{dB} + 10\\,\\text{dB} \\cdot \\lg 1{,}25$."
+        "$L = 10\\lg\\left(\\dfrac{I_1 + I_2}{I_0}\\right)\\,\\text{dB} = 10\\lg\\left(\\dfrac{1{,}25\\, I_1}{I_0}\\right)\\,\\text{dB} = 80\\,\\text{dB} + 10\\lg(1{,}25)\\,\\text{dB}$."
       ],
       "mistakes": [
         {

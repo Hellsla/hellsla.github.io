@@ -408,8 +408,8 @@ Tässä $N_1$ ja $N_2$ ovat tukivoimat ($\text{N}$) ja $r_1$ ja $r_2$ ovat tukie
 
 ### Yhteinen painopiste
 Kahden kappaleen massat ovat $m_1$ ja $m_2$. Niiden yhteinen painopiste on kohdassa
-```latex
-x_\text{pp} = \frac{m_1 x_1 + m_2 x_2}{m_1 + m_2}
+```kaavat
+massakeskipiste :: x_\text{pp} = \frac{m_1 x_1 + m_2 x_2}{m_1 + m_2}
 ```
 Tässä $x_1$ ja $x_2$ ovat kappaleiden painopisteiden paikat ($\text{m}$) samalla akselilla. Kaava seuraa momenttiehdosta. Jos kappaleet tuetaan kohdasta $x_\text{pp}$, painojen momentit tukikohdan suhteen kumoavat toisensa. Kahden tuen varassa oleva kuormitettu lankku kaatuu, kun lankun ja kuorman yhteinen painopiste siirtyy tukien välin ulkopuolelle.
 

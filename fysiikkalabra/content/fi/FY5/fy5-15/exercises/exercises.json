@@ -313,9 +313,9 @@
       "level": 2,
       "text": "Kuvassa on pistemäisen kaiuttimen äänen intensiteettitaso etäisyyden funktiona. Ääni leviää tasaisesti joka suuntaan eikä heijastu. Kuinka suuri on kaiuttimen ääniteho? Anna vastaus yksikössä $\\text{mW}$. Lue tarvittavat tiedot kuvasta.",
       "figure": "fy5-15/kuvaaja-tehtava",
-      "answer": 5.03,
+      "answer": 5.0,
       "unit": "mW",
-      "tolerance": 0.03
+      "tolerance": 0.04
     }
   ],
   "level3": [

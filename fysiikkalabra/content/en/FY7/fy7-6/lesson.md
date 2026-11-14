@@ -241,8 +241,8 @@ Eddy currents always convert electrical energy into internal energy. In the iron
 
 ## Formula: Lenz's law and energy
 The minus sign in the law of induction from the chapter *Electromagnetic induction* is Lenz's law:
-```latex
-e_\text{ka} = -N \frac{\Delta \Phi}{\Delta t}
+```kaavat
+voltage induced in a coil :: e_\text{ka} = -N \frac{\Delta \Phi}{\Delta t}
 ```
 where $e_\text{ka}$ is the average induced voltage (V) in the time interval $\Delta t$, $N$ the number of turns of the loop, $\Delta\Phi$ the change in magnetic flux (Wb) and $\Delta t$ the time taken by the change (s). When the flux changes steadily, the voltage is constant, and it is written simply $e$. The minus sign tells us that the field of the induced current opposes the change in flux. The magnitude is calculated without the sign, and the direction is deduced from Lenz's law.
 
@@ -254,8 +254,8 @@ Conservation of energy tells us where the energy of a falling magnet goes. When 
 \end{aligned}
 ```
 where $m$ is the mass of the magnet (kg), $g = 9.81\,\text{m/s}^2$, $h$ the height of the fall (m), $v$ the speed at the end (m/s) and $Q$ the energy converted into internal energy (J). When the magnet falls at a steady speed, the braking force $F$ equals the weight $mg$. During a time $\Delta t$ the force acts over a distance $v \Delta t$ and does work $F v \Delta t$, so the internal energy increases at the rate
-```latex
-P = F v
+```kaavat
+instantaneous power :: P = F v
 ```
 where $P$ is the power (W), $F$ the braking force (N) and $v$ the speed (m/s). The same formula holds for every eddy-current brake: the braking force times the speed is the power at which kinetic energy is converted into internal energy.
 

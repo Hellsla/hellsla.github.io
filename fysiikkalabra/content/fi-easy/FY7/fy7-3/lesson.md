@@ -263,8 +263,8 @@ Kun virta katkaistaan, käämin kenttä häviää. Pehmeän raudan alkeisalueet 
 
 ## Kaava: Suoran johtimen ja käämin magneettikenttä
 Pitkän suoran johtimen magneettivuon tiheys etäisyydellä $r$ johtimesta on
-```latex
-B = \frac{\mu_0 I}{2\pi r}
+```kaavat
+suoran virtajohtimen magneettivuon tiheys :: B = \frac{\mu_0 I}{2\pi r}
 ```
 Kaavassa $B$ on magneettivuon tiheys (T) ja $I$ on johtimen virta (A). Symboli $r$ on etäisyys johtimesta (m). Vakio $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$ on tyhjiön permeabiliteetti. Se on luonnonvakio. Ilmassa käytetään samaa arvoa.
 
@@ -322,8 +322,8 @@ Kenttä on suoraan verrannollinen virtaan ja kääntäen verrannollinen etäisyy
 </svg>
 
 Pitkän käämin sisällä, kaukana sen päistä, magneettivuon tiheys on
-```latex
-B = \mu_0 \frac{N I}{l}
+```kaavat
+pitkän käämin magneettivuon tiheys :: B = \mu_0 \frac{N I}{l}
 ```
 Kaavassa $N$ on käämin kierrosten lukumäärä ja $I$ on virta (A). Symboli $l$ on käämin pituus (m).
 

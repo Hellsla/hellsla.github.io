@@ -313,9 +313,9 @@
       "level": 2,
       "text": "The figure shows the sound intensity level of a point-like loudspeaker as a function of distance. The sound spreads evenly in all directions and is not reflected. How large is the sound power of the loudspeaker? Give the answer in $\\text{mW}$. Read the necessary data from the figure.",
       "figure": "fy5-15/kuvaaja-tehtava",
-      "answer": 5.03,
+      "answer": 5.0,
       "unit": "mW",
-      "tolerance": 0.03
+      "tolerance": 0.04
     }
   ],
   "level3": [

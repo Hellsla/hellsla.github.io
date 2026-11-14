@@ -258,8 +258,8 @@ For example, a proton flying at a speed of $1.0 \cdot 10^{6}\,\text{m/s}$ perpen
 
 ## Formula: Magnetic force and circular path
 The magnitude of the magnetic force on a charged particle moving in a magnetic field is
-```latex
-F_\text{m} = |q| v B \sin\alpha
+```kaavat
+magnetic force on a charged particle :: F_\text{m} = |q| v B \sin\alpha
 ```
 where $|q|$ is the magnitude of the charge of the particle (C), $v$ the speed of the particle (m/s), $B$ the magnetic flux density (T) and $\alpha$ the angle between the velocity and the field. When the velocity is perpendicular to the field, $\sin 90^\circ = 1$ and the force is greatest, $F_\text{m} = |q|vB$. A particle moving along the field is not acted on by any force, because $\sin 0^\circ = 0$. From the definition of the tesla it follows that $1\,\text{C} \cdot 1\,\tfrac{\text{m}}{\text{s}} \cdot 1\,\text{T} = 1\,\text{N}$.
 
