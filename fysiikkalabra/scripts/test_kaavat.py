@@ -61,6 +61,10 @@ ok(NEW.count("\n") == kaavat.as_display(NEW).count("\n"), "as_display keeps the 
 ok("$$Q = sm$$" in kaavat.as_display(NEW, names=False) and "sulamislämpö" not in kaavat.as_display(NEW, names=False), "as_display without names: only the formulas (the translation check)")
 ok(kaavat.canonical(OLD) == kaavat.canonical(NEW), "canonical: an aligned block and a \\qquad row equal the same formulas named")
 ok(kaavat.review_view(OLD, OK) == kaavat.review_view(NEW, OK), "review view: approved names carry")
+PT = "```latex\n\\begin{aligned}\nv &= v_0 + a\\,t \\\\[4pt]\nx &= x_0 + v_0\\,t \\\\[0.5em]\ny &= 1\n\\end{aligned}\n```\n"
+ok(kaavat.canonical(PT) == kaavat.canonical(PT.replace("[4pt]", "").replace("[0.5em]", "")) and "pt]" not in kaavat.canonical(PT) and "em]" not in kaavat.canonical(PT),
+   "canonical: the spacing of a line break (\\\\[4pt], \\\\[0.5em]) is no text on the next formula's row (work queue 3b)")
+ok(kaavat._blocks(PT)[0][1] == ["v = v_0 + a\\,t", "x = x_0 + v_0\\,t", "y = 1"], "the formulas of a block with \\\\[Npt] spacing are the same as without it")
 ok(kaavat.review_view(OLD, OK - {("paikka", "x = x_0 + v_0\\,t")}) != kaavat.review_view(NEW, OK - {("paikka", "x = x_0 + v_0\\,t")}), "review view: a name not approved does not carry")
 ok(kaavat.review_view(OLD, OK) != kaavat.review_view(NEW.replace("v_0\\,t\n", "v_0 t\n", 1), OK), "review view: a changed formula does not carry")
 ok(kaavat.review_view(OLD, OK) != kaavat.review_view(NEW.replace("Teksti välissä", "Toinen teksti"), OK), "review view: changed prose does not carry")
