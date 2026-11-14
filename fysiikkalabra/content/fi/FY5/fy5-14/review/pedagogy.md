@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3cdc03e66d7d0dbd
+CONTENT-HASH: 3ea77600a1c06d67
 
 ## Blocking
+None.
 
 ## Polish
+1. fy5-14 lesson: the four named MAFY Doppler formulas, each followed by the sentence saying when it applies (source approaching or receding, observer approaching or receding), are easy for a 16-19-year-old to follow. v_L and v_H are defined where they first appear ("missä ... v_L lähteen nopeus"). The train example works: the principle step says which formula (moving source) and the rule f1 > f0 picks approaching or receding. No old symbol (v_s, v_h, f_h, T_h, f_b) remains in the student-facing text.
+2. Delta review, language fi. Code comments in lessons/FY5/fy5-14/answers.py and lesson-answers.py still use v_s, v_h, f_h. Students do not see them. Update when convenient.
 
 ## Checked
-- delta review round 1: the Doppler worked example (lesson.md ~l.588-595) now writes the speeds as stacked fractions (\tfrac{m}{s}) inside the quotient; numbers, symbols, steps and results (341,10 Hz; 285,78 Hz) unchanged.
-- the unit fractions make the cancelling of m/s visible in the ratio v/(v-v_s); legibility is not harmed in a display equation, and the staging of the example is unchanged.
-- nothing else in the lesson was touched; the earlier PASS stands.
+Diff of changed symbols and formulas, student-facing text in fi, fi-easy and en, grep for old symbols.

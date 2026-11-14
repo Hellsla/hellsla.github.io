@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3d819c47cdf8c4a4
-SCOPE: delta added-exercise from 4d7d493e28a99432 base 81db4a6fd727
+CONTENT-HASH: a522b6e8980d5833
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- fy5-14-L1-10: the solution says 'three significant figures' for 1400 Hz; say 'the peaks are read to the nearest 100 Hz' instead.
-- fy5-14-L2-08: beats and the wax test must be taught in the chapter (not visible in this packet); verify the lesson covers beat frequency as the difference of the frequencies.
+1. fy5-14 exercises and solutions: v_L, v_H, f_H are used consistently. The error-spotting task uses the observer formula with v_L, and the student must still recognise a source speed in the wrong formula. The solutions use "the formula for the moving source/observer, approach sign" instead of "choose the sign", and this works. Answers unchanged.
+2. Delta review, language en. Code comments in lessons/FY5/fy5-14/answers.py and lesson-answers.py still use v_s, v_h, f_h. Students do not see them. Update when convenient.
 
 ## Checked
-- L1-10: figure shows five peaks; the strongest (400 Hz) is the planted trap against the fundamental 200 Hz; f7 = 1400 Hz; description consistent and no fundamental written.
-- L2-08: a multiple choice with misconception-based distractors (wrong side, equal frequencies, counting quiet points as 8 Hz); each feedback repairs the misconception; the wax clue is not a giveaway of the sign.
-- Beat period 0.25 s is readable from the figure and its description; model answer complete.
+Diff of changed symbols and formulas, student-facing text in fi, fi-easy and en, grep for old symbols.

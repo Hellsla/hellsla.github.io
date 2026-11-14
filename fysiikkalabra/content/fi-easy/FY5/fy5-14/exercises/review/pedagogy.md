@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 6d65cf28859dd710
-SCOPE: delta added-exercise from 4f133c9649fea97d base 81db4a6fd727
+CONTENT-HASH: 7e9bb3dfc5d30fac
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- fy5-14-L1-10 solution, Vastaus — 'kolme merkitsevää numeroa' for 1400 Hz is unclear; write 'Vastaus on 1400 Hz, kerrottu luetusta perustaajuudesta'.
+1. fy5-14 exercises and solutions: v_L, v_H, f_H are used consistently. The error-spotting task uses the observer formula with v_L, and the student must still recognise a source speed in the wrong formula. The solutions use "the formula for the moving source/observer, approach sign" instead of "choose the sign", and this works. Answers unchanged.
+2. Delta review, language fi-easy. Code comments in lessons/FY5/fy5-14/answers.py and lesson-answers.py still use v_s, v_h, f_h. Students do not see them. Update when convenient.
 
 ## Checked
-- L1-10: the strongest peak (400 Hz) tempts the student to take it as the fundamental; solution names this and the seventh harmonic is not in the figure, so the student must use f_n = n f_1.
-- L2-08: beat period 0,25 s read from the figure, f_h = 4 Hz; the wax step decides between 519 and 527 Hz, a real reasoning step.
-- Distractors match real errors (higher fork, equal frequencies, counting quiet moments: 8 Hz); each feedback names the error and the correct answer feedback explains the wax logic.
-- Descriptions of both figures give the data without the answers; fits level 1 and 2.
+Diff of changed symbols and formulas, student-facing text in fi, fi-easy and en, grep for old symbols.
