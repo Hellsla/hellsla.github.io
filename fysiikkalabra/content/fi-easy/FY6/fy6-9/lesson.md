@@ -155,8 +155,8 @@ Q = I t
 missä $Q$ on varaus (Ah tai C), $I$ virta (A) ja $t$ aika (h tai s).
 
 Akkuun varastoitunut energia:
-```latex
-W = U Q
+```kaavat
+sähkökentän tekemä työ :: W = U Q
 ```
 missä $W$ on energia (Wh tai J), $U$ akun nimellisjännite (V) ja $Q$ akun kapasiteetti (Ah tai C).
 
@@ -275,8 +275,8 @@ Kuvaajassa latauspiirin silmukka on kierretty, kun $U_\text{lat} = 4{,}5\,\text{
 
 ### Energia latauksessa
 Laturin teho on $P = U_\text{lat} I$ (luku *Sähköteho ja vastuksen lämpeneminen*). Vakiojännitteinen laturi antaa siis energian $W_\text{lat} = U_\text{lat} Q$, kun akun läpi kulkee varaus $Q$. Akkuun varastoituu kemiallisena energiana vain lähdejännitteen osuus. Loput muuttuvat resistanssien $R$ ja $R_\text{s}$ sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Latauksen hyötysuhde on
-```latex
-\eta = \frac{W_\text{akku}}{W_\text{lat}}
+```kaavat
+hyötysuhde :: \eta = \frac{W_\text{akku}}{W_\text{lat}}
 ```
 missä $W_\text{akku}$ on akkuun kemiallisena energiana varastoitunut energia (Wh) ja $W_\text{lat}$ laturin antama energia (Wh).
 

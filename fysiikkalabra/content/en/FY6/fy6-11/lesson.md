@@ -320,8 +320,8 @@ In an electric air purifier the air first passes through a charging section, whe
 
 ## Formula: Electric field strength
 The electric field strength at a point where an electric force $\overline{F}$ acts on a small test charge $q$ is
-```latex
-\overline{E} = \frac{\overline{F}}{q}
+```kaavat
+electric field strength :: \overline{E} = \frac{\overline{F}}{q}
 ```
 where $\overline{E}$ is the electric field strength ($\text{N/C}$), $\overline{F}$ the electric force ($\text{N}$) and $q$ the test charge ($\text{C}$). When the field is known, the force on any charge is obtained by multiplying: $\overline{F} = q\overline{E}$. If $q$ is negative, the force points against the field.
 

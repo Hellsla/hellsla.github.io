@@ -384,8 +384,8 @@ A **point charge** is a charged object whose size is small compared with the dis
 
 ## Formula: Coulomb's law
 The magnitude of the electric force between two point charges is directly proportional to the product of the charges and inversely proportional to the square of the distance between them. This is **Coulomb's law**:
-```latex
-F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}
+```kaavat
+magnitude of the Coulomb force :: F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}
 ```
 where $F$ is the magnitude of the force ($\text{N}$), $q_1$ and $q_2$ are the charges ($\text{C}$), $r$ is the distance between the charges ($\text{m}$) and $k = 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$ is the constant of Coulomb's law. Coulomb's law holds exactly for point charges. Outside a spherically symmetric charged body the field is the same as that of a point charge placed at its centre, so the distance of such spheres is measured between the centres. When charged conducting spheres are close to each other, the distributions of their surface charges can change, and the model of point charges placed at the centres is no longer accurate. The value of the constant holds in a vacuum; in air the force is almost the same.
 

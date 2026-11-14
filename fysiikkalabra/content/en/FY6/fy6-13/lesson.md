@@ -267,8 +267,8 @@ The unit of capacitance is the farad, $1\,\text{F} = 1\,\tfrac{\text{C}}{\text{V
 
 ### The parallel-plate capacitor
 The capacitance of a parallel-plate capacitor is
-```latex
-C = \frac{\varepsilon_0 \varepsilon_\text{r} A}{d}
+```kaavat
+capacitance of a parallel-plate capacitor :: C = \frac{\varepsilon_0 \varepsilon_\text{r} A}{d}
 ```
 where $A$ is the area of a plate ($\text{m}^2$), $d$ the distance of the plates ($\text{m}$), $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$ the electric constant, that is, the permittivity of vacuum, and $\varepsilon_\text{r}$ the relative permittivity of the dielectric. The formula holds when the distance of the plates is small compared with the size of the plates (the field is uniform and the edges are ignored) and the dielectric fills the space between the plates. The relative permittivity tells how many times the dielectric multiplies the capacitance compared with vacuum. For air $\varepsilon_\text{r} \approx 1.0$.
 
@@ -325,8 +325,8 @@ In charging, the charge grows from zero to $Q$, and the voltage grows in the sam
 </svg>
 
 The energy stored in a capacitor is
-```latex
-W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2
+```kaavat
+energy of a capacitor :: W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2
 ```
 where $W$ is the energy ($\text{J}$), $Q$ the charge ($\text{C}$), $U$ the voltage ($\text{V}$) and $C$ the capacitance ($\text{F}$). The latter form is obtained by substituting $Q = CU$. Energy is denoted by $W$, because in this chapter $E$ means the strength of the electric field. In the chapter *Batteries and the charging circuit* too the energy was $W$, because there $E$ was the source voltage.
 

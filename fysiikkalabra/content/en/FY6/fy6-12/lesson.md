@@ -566,8 +566,8 @@ E_\text{p} = qV
 where $E_\text{p}$ is the potential energy ($\text{J}$), $q$ the charge with its sign ($\text{C}$) and $V$ the potential of the point ($\text{V}$) relative to the chosen zero point. For an electron $q = -e$.
 
 When a charge moves from point $A$ to point $B$, the electric force does the work
-```latex
-W_{AB} = q(V_A - V_B) = qU_{AB}
+```kaavat
+work done by an electric field :: W_{AB} = q(V_A - V_B) = qU_{AB}
 ```
 where $W_{AB}$ is the work ($\text{J}$) and $U_{AB} = V_A - V_B$ is the potential difference, or voltage, of the points ($\text{V}$). The work equals the decrease of the potential energy $E_{\text{p},A} - E_{\text{p},B}$, and it does not depend on the path. In a uniform field the voltage between the plates is $U = Ed$ (chapter *Uniform electric field*), so the field does the work $qU = qEd$ on a charge travelling from one plate to the other in the direction of the field.
 

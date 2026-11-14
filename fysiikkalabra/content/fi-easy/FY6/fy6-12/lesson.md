@@ -566,8 +566,8 @@ E_\text{p} = qV
 Kaavassa $E_\text{p}$ on potentiaalienergia ($\text{J}$), $q$ on varaus etumerkkeineen ($\text{C}$) ja $V$ on kohdan potentiaali ($\text{V}$) valittuun nollakohtaan nähden. Elektronille $q = -e$.
 
 Kun varaus siirtyy kohdasta $A$ kohtaan $B$, sähköinen voima tekee työn
-```latex
-W_{AB} = q(V_A - V_B) = qU_{AB}
+```kaavat
+sähkökentän tekemä työ :: W_{AB} = q(V_A - V_B) = qU_{AB}
 ```
 Kaavassa $W_{AB}$ on työ ($\text{J}$) ja $U_{AB} = V_A - V_B$ on kohtien potentiaaliero eli jännite ($\text{V}$). Työ on yhtä suuri kuin potentiaalienergian väheneminen $E_{\text{p},A} - E_{\text{p},B}$, eikä se riipu reitistä. Homogeenisessa kentässä levyjen välinen jännite on $U = Ed$ (luku *Homogeeninen sähkökenttä*). Siksi kentän suuntaan levystä toiseen kulkevaan varaukseen kenttä tekee työn $qU = qEd$.
 

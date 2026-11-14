@@ -1,0 +1,190 @@
+# FY6:n kaavojen nimet (opettaja 2026-11-14: kaavat pitää löytyä MAFY-taulukosta; nimi vain kaavalle, joka on MAFY-taulukoissa, MAFYn oma nimi).
+# Lähde: https://mafytaulukot.fi/ (Sähköstatiikan kaavoja 0e2ef82e-d7b4-4c72-89bd-b5269dbfa868, Virtapiirien kaavoja 3e625201-688f-43e3-88a0-4097d326cbbd, Sähkömagnetismin kaavoja a575c4f6-a3ae-48ba-ac22-95d8fe80df1d, Mekaniikan kaavoja 30a537b5-77cd-447d-8d3b-0f857fd20b23), luettu 2026-11-14.
+# Nimetty on kaava, jonka laki on MAFYssa; tunnuksia ei ole muutettu (docs/fy9/mafy-tunnukset.tsv ei listaa FY6:ta), erot tunnuksissa ja muodossa ovat huomio-sarakkeessa. Nimeämättömät ovat kaavoja, joita MAFYssa ei ole tai jotka ovat MAFY-kaavan ratkaistu muoto.
+# = on yllä nimetyn kaavan toinen muoto, + on lisätieto. Rivit tunnin tekstin järjestyksessä.
+tunti	rivi	kaava	kaava_en	nimi	name_en	lähde	MAFY-sivu	huomio
+fy6-1	283	I = \frac{Q}{t}	I = \frac{Q}{t}	sähkövirta	electric current	MAFY	Sähkömagnetismin kaavoja	MAFY: I = ΔQ/Δt; tunnin merkintä I = Q/t (varaus Q ajassa t)
+fy6-1	341	Q = N e	Q = N e					
+fy6-1	348	U = \frac{E}{Q}	U = \frac{E}{Q}					
+fy6-1	411	I = \frac{Q}{t}	I = \frac{Q}{t}					
+fy6-1	411	Q = I t	Q = I t					
+fy6-1	425	Q = I t	Q = I t					
+fy6-1	425	= 0{,}25\,\text{A}\cdot 720\,\text{s}	= 0.25\,\text{A}\cdot 720\,\text{s}					
+fy6-1	425	= 180\,\text{C}	= 180\,\text{C}					
+fy6-2	223	\Delta x = p \cdot x + n \cdot r	\Delta x = p \cdot x + n \cdot r					
+fy6-2	227	\frac{\Delta x}{x}	\frac{\Delta x}{x}					
+fy6-2	288	\Delta U_{20} = p \cdot U_{20} + n \cdot r_{20}	\Delta U_{20} = p \cdot U_{20} + n \cdot r_{20}					
+fy6-2	288	\Delta U_2 = p \cdot U_2 + n \cdot r_2	\Delta U_2 = p \cdot U_2 + n \cdot r_2					
+fy6-2	302	\Delta U_{20}	\Delta U_{20}					
+fy6-2	302	= 0{,}005 \cdot 1{,}50\,\text{V} + 2 \cdot 0{,}01\,\text{V}	= 0.005 \cdot 1.50\,\text{V} + 2 \cdot 0.01\,\text{V}					
+fy6-2	302	= 0{,}0275\,\text{V}	= 0.0275\,\text{V}					
+fy6-2	302	[6pt] \Delta U_2	[6pt] \Delta U_2					
+fy6-2	302	= 0{,}005 \cdot 1{,}500\,\text{V} + 2 \cdot 0{,}001\,\text{V}	= 0.005 \cdot 1.500\,\text{V} + 2 \cdot 0.001\,\text{V}					
+fy6-2	302	= 0{,}0095\,\text{V}	= 0.0095\,\text{V}					
+fy6-3	276	R = \frac{U}{I}	R = \frac{U}{I}					
+fy6-3	282	U = R I	U = R I	jännitehäviö johtimessa	voltage drop in a conductor	MAFY	Virtapiirien kaavoja	Ohmin laki; R = U/I on sama laki ratkaistuna R:lle
+fy6-3	343	R = \rho \frac{l}{A}	R = \rho \frac{l}{A}	johtimen resistanssi	resistance of a conductor	MAFY	Virtapiirien kaavoja	MAFY: ℓ (tunnin merkintä l)
+fy6-3	421	R = \rho \frac{l}{A}	R = \rho \frac{l}{A}					
+fy6-3	421	l = \frac{R A}{\rho}	l = \frac{R A}{\rho}					
+fy6-3	435	l = \frac{R A}{\rho}	l = \frac{R A}{\rho}					
+fy6-3	435	= \frac{12\,\Omega \cdot 0{,}20 \cdot 10^{-6}\,\text{m}^2}{5{,}0 \cdot 10^{-7}\,\Omega\cdot\text{m}}	= \frac{12\,\Omega \cdot 0.20 \cdot 10^{-6}\,\text{m}^2}{5.0 \cdot 10^{-7}\,\Omega\cdot\text{m}}					
+fy6-3	435	= 4{,}8\,\text{m}	= 4.8\,\text{m}					
+fy6-4	180	R = R_1 + R_2 + R_3 + \dots	R = R_1 + R_2 + R_3 + \dots	sarjaan kytkettyjen vastusten kokonaisresistanssi	total resistance of resistors in series	MAFY	Virtapiirien kaavoja	MAFY: R_kok = ΣR; tunnin merkintä R = R_1 + R_2 + …
+fy6-4	186	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \dots	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \dots	rinnan kytkettyjen vastusten kokonaisresistanssi	total resistance of resistors in parallel	MAFY	Virtapiirien kaavoja	MAFY: 1/R_kok = Σ(1/R); tunnin merkintä 1/R = 1/R_1 + 1/R_2 + …; R = R_1R_2/(R_1+R_2) on kahden vastuksen erikoistapaus, ei MAFY:ssa
+fy6-4	190	R = \frac{R_1 R_2}{R_1 + R_2}	R = \frac{R_1 R_2}{R_1 + R_2}					
+fy6-4	303	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2}	\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2}					
+fy6-4	303	[4pt] R = \frac{R_1 R_2}{R_1 + R_2}	[4pt] R = \frac{R_1 R_2}{R_1 + R_2}					
+fy6-4	303	[4pt] I = \frac{U}{R}	[4pt] I = \frac{U}{R}					
+fy6-4	318	R = \frac{120\,\Omega \cdot 60\,\Omega}{120\,\Omega + 60\,\Omega}	R = \frac{120\,\Omega \cdot 60\,\Omega}{120\,\Omega + 60\,\Omega}					
+fy6-4	318	= 40\,\Omega	= 40\,\Omega					
+fy6-4	318	[6pt] I = \frac{9{,}0\,\text{V}}{40\,\Omega}	[6pt] I = \frac{9.0\,\text{V}}{40\,\Omega}					
+fy6-4	318	= 0{,}225\,\text{A}	= 0.225\,\text{A}					
+fy6-5	173	\sum I_\text{tulevat} = \sum I_\text{lähtevät}	\sum I_\text{in} = \sum I_\text{out}	Kirchhoffin 1. laki	Kirchhoff's first law	MAFY	Virtapiirien kaavoja	MAFY: ΣI_t = ΣI_l; tunnin merkintä ΣI_tulevat = ΣI_lähtevät
+fy6-5	179	U_{AB} = V_A - V_B	U_{AB} = V_A - V_B	kahden pisteen välinen jännite	voltage between two points	MAFY	Virtapiirien kaavoja	
+fy6-5	185	\sum \Delta V = 0	\sum \Delta V = 0	Kirchhoffin 2. laki	Kirchhoff's second law	MAFY	Virtapiirien kaavoja	
+fy6-5	253	\frac{1}{R_{23}} = \frac{1}{R_2} + \frac{1}{R_3}	\frac{1}{R_{23}} = \frac{1}{R_2} + \frac{1}{R_3}					
+fy6-5	253	I_1 = \frac{U}{R_1 + R_{23}}	I_1 = \frac{U}{R_1 + R_{23}}					
+fy6-5	253	V_B = U - R_1 I_1	V_B = U - R_1 I_1					
+fy6-5	253	I_3 = \frac{V_B}{R_3}	I_3 = \frac{V_B}{R_3}					
+fy6-5	269	\frac{1}{R_{23}} = \frac{1}{60\,\Omega} + \frac{1}{30\,\Omega}	\frac{1}{R_{23}} = \frac{1}{60\,\Omega} + \frac{1}{30\,\Omega}					
+fy6-5	269	R_{23} = 20\,\Omega	R_{23} = 20\,\Omega					
+fy6-5	269	I_1 = \frac{12\,\text{V}}{20\,\Omega + 20\,\Omega} = 0{,}30\,\text{A}	I_1 = \frac{12\,\text{V}}{20\,\Omega + 20\,\Omega} = 0.30\,\text{A}					
+fy6-5	269	V_B = 12\,\text{V} - 20\,\Omega \cdot 0{,}30\,\text{A}	V_B = 12\,\text{V} - 20\,\Omega \cdot 0.30\,\text{A}					
+fy6-5	269	\phantom{V_B} = 6{,}0\,\text{V}	\phantom{V_B} = 6.0\,\text{V}					
+fy6-5	269	I_3 = \frac{6{,}0\,\text{V}}{30\,\Omega} = 0{,}20\,\text{A}	I_3 = \frac{6.0\,\text{V}}{30\,\Omega} = 0.20\,\text{A}					
+fy6-6	237	P = UI	P = UI	tehonkulutus johtimessa	power consumed in a conductor	MAFY	Virtapiirien kaavoja	Joulen lain muodot P = RI² = U²/R eivät ole MAFY:ssa
+fy6-6	243	P = RI^2 = \frac{U^2}{R}	P = RI^2 = \frac{U^2}{R}					
+fy6-6	249	E = Pt	E = Pt					
+fy6-6	321	P_1 = \frac{U^2}{R_1}	P_1 = \frac{U^2}{R_1}					
+fy6-6	321	P_2 = \frac{U^2}{R_2}	P_2 = \frac{U^2}{R_2}					
+fy6-6	321	E = (P_1 + P_2)\,t	E = (P_1 + P_2)\,t					
+fy6-6	336	P_1 = \frac{U^2}{R_1}	P_1 = \frac{U^2}{R_1}					
+fy6-6	336	\phantom{P_1} = \frac{(12\,\text{V})^2}{15\,\Omega} = 9{,}6\,\text{W}	\phantom{P_1} = \frac{(12\,\text{V})^2}{15\,\Omega} = 9.6\,\text{W}					
+fy6-6	336	P_2 = \frac{(12\,\text{V})^2}{30\,\Omega} = 4{,}8\,\text{W}	P_2 = \frac{(12\,\text{V})^2}{30\,\Omega} = 4.8\,\text{W}					
+fy6-6	336	E = 14{,}4\,\text{W} \cdot 300\,\text{s}	E = 14.4\,\text{W} \cdot 300\,\text{s}					
+fy6-6	336	\phantom{E} = 4320\,\text{J}	\phantom{E} = 4320\,\text{J}					
+fy6-7	183	E = Pt	E = Pt					
+fy6-7	242	E = UIt	E = UIt					
+fy6-7	248	K = aE + K_\text{perus}	K = aE + K_\text{base}					
+fy6-7	267	E = Pt	E = Pt					
+fy6-7	267	K = aE	K = aE					
+fy6-7	281	E = Pt	E = Pt					
+fy6-7	281	\phantom{E} = 0{,}80\,\text{kW} \cdot 187{,}5\,\text{h}	\phantom{E} = 0.80\,\text{kW} \cdot 187.5\,\text{h}					
+fy6-7	281	\phantom{E} = 150\,\text{kWh}	\phantom{E} = 150\,\text{kWh}					
+fy6-7	281	K = aE	K = aE					
+fy6-7	281	\phantom{K} = 0{,}18\,\tfrac{\text{€}}{\text{kWh}} \cdot 150\,\text{kWh}	\phantom{K} = 0.18\,\tfrac{\text{€}}{\text{kWh}} \cdot 150\,\text{kWh}					
+fy6-7	281	\phantom{K} = 27\,\text{€}	\phantom{K} = 27\,\text{€}					
+fy6-8	221	U = E - R_\text{s} I	U = E - R_\text{s} I					
+fy6-8	227	I = \frac{E}{R + R_\text{s}}	I = \frac{E}{R + R_\text{s}}					
+fy6-8	231	I_\text{k} = \frac{E}{R_\text{s}}	I_\text{k} = \frac{E}{R_\text{s}}					
+fy6-8	298	E = E_1 + E_2 + \dots	E = E_1 + E_2 + \dots					
+fy6-8	298	R_\text{s} = R_{\text{s}1} + R_{\text{s}2} + \dots	R_\text{s} = R_{\text{s}1} + R_{\text{s}2} + \dots					
+fy6-8	307	R_\text{s} = \frac{R_{\text{s}1}}{n}	R_\text{s} = \frac{R_{\text{s}1}}{n}					
+fy6-8	386	I = \frac{U}{R}	I = \frac{U}{R}					
+fy6-8	386	U = E - R_\text{s} I	U = E - R_\text{s} I					
+fy6-8	386	R_\text{s} = \frac{E - U}{I}	R_\text{s} = \frac{E - U}{I}					
+fy6-8	386	I_\text{k} = \frac{E}{R_\text{s}}	I_\text{k} = \frac{E}{R_\text{s}}					
+fy6-8	402	I = \frac{U}{R}	I = \frac{U}{R}					
+fy6-8	402	= \frac{1{,}45\,\text{V}}{4{,}0\,\Omega} = 0{,}3625\,\text{A}	= \frac{1.45\,\text{V}}{4.0\,\Omega} = 0.3625\,\text{A}					
+fy6-8	402	R_\text{s} = \frac{E - U}{I}	R_\text{s} = \frac{E - U}{I}					
+fy6-8	402	= \frac{1{,}58\,\text{V} - 1{,}45\,\text{V}}{0{,}3625\,\text{A}}	= \frac{1.58\,\text{V} - 1.45\,\text{V}}{0.3625\,\text{A}}					
+fy6-8	402	= 0{,}3586\,\Omega	= 0.3586\,\Omega					
+fy6-8	402	I_\text{k} = \frac{E}{R_\text{s}}	I_\text{k} = \frac{E}{R_\text{s}}					
+fy6-8	402	= \frac{1{,}58\,\text{V}}{0{,}3586\,\Omega} = 4{,}406\,\text{A}	= \frac{1.58\,\text{V}}{0.3586\,\Omega} = 4.406\,\text{A}					
+fy6-9	152	Q = I t	Q = I t					
+fy6-9	158	W = U Q	W = U Q	sähkökentän tekemä työ	work done by an electric field	MAFY	Sähköstatiikan kaavoja	MAFY: W = QU; tunnin merkintä W = UQ (akkuun varastoituva energia)
+fy6-9	207	I = \frac{U_\text{lat} - E}{R + R_\text{s}}	I = \frac{U_\text{ch} - E}{R + R_\text{s}}					
+fy6-9	213	U = E + R_\text{s} I	U = E + R_\text{s} I					
+fy6-9	278	\eta = \frac{W_\text{akku}}{W_\text{lat}}	\eta = \frac{W_\text{batt}}{W_\text{ch}}	hyötysuhde	efficiency	MAFY	Mekaniikan kaavoja	MAFY: η = W_a/W_o = P_a/P_o; tunnin merkintä W_akku/W_lat
+fy6-9	316	U_\text{lat} - RI - R_\text{s} I - E = 0	U_\text{ch} - RI - R_\text{s} I - E = 0					
+fy6-9	316	I = \frac{U_\text{lat} - E}{R + R_\text{s}}	I = \frac{U_\text{ch} - E}{R + R_\text{s}}					
+fy6-9	316	U = E + R_\text{s} I	U = E + R_\text{s} I					
+fy6-9	331	I = \frac{U_\text{lat} - E}{R + R_\text{s}}	I = \frac{U_\text{ch} - E}{R + R_\text{s}}					
+fy6-9	331	\phantom{I} = \frac{4{,}20\,\text{V} - 3{,}70\,\text{V}}{0{,}15\,\Omega + 0{,}10\,\Omega}	\phantom{I} = \frac{4.20\,\text{V} - 3.70\,\text{V}}{0.15\,\Omega + 0.10\,\Omega}					
+fy6-9	331	\phantom{I} = \frac{0{,}50\,\text{V}}{0{,}25\,\Omega} = 2{,}0\,\text{A}	\phantom{I} = \frac{0.50\,\text{V}}{0.25\,\Omega} = 2.0\,\text{A}					
+fy6-9	331	U = 3{,}70\,\text{V} + 0{,}10\,\Omega \cdot 2{,}0\,\text{A}	U = 3.70\,\text{V} + 0.10\,\Omega \cdot 2.0\,\text{A}					
+fy6-9	331	\phantom{U} = 3{,}90\,\text{V}	\phantom{U} = 3.90\,\text{V}					
+fy6-10	54	Q = n e	Q = n e					
+fy6-10	387	F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}	F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}	Coulombin voiman suuruus	magnitude of the Coulomb force	MAFY	Sähköstatiikan kaavoja	MAFY: F_E = kQ_1Q_2/r²; tunnin merkintä F, q_1q_2 ja itseisarvo
+fy6-10	485	\overline{F} = \overline{F}_1 + \overline{F}_2	\overline{F} = \overline{F}_1 + \overline{F}_2					
+fy6-10	504	F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}	F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}					
+fy6-10	515	F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}	F = k\,\frac{\lvert q_1 q_2 \rvert}{r^2}					
+fy6-10	515	= 8{,}988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}	= 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}					
+fy6-10	515	\cdot \frac{9{,}6 \cdot 10^{-17}\,\text{C}^2}{(0{,}060\,\text{m})^2}	\cdot \frac{9.6 \cdot 10^{-17}\,\text{C}^2}{(0.060\,\text{m})^2}					
+fy6-10	515	= 2{,}397 \cdot 10^{-4}\,\text{N}	= 2.397 \cdot 10^{-4}\,\text{N}					
+fy6-11	323	\overline{E} = \frac{\overline{F}}{q}	\overline{E} = \frac{\overline{F}}{q}	sähkökentän voimakkuus	electric field strength	MAFY	Sähköstatiikan kaavoja	MAFY: E = F_E/Q; tunnin merkintä F, q (vektorina)
+fy6-11	330	E = \frac{U}{d}	E = \frac{U}{d}					
+fy6-11	546	E = \frac{U}{d}	E = \frac{U}{d}					
+fy6-11	546	qE = mg	qE = mg					
+fy6-11	546	q = \frac{mg}{E}	q = \frac{mg}{E}					
+fy6-11	546	n = \frac{q}{e}	n = \frac{q}{e}					
+fy6-11	562	E = \frac{U}{d}	E = \frac{U}{d}					
+fy6-11	562	= \frac{600\,\text{V}}{6{,}0 \cdot 10^{-3}\,\text{m}}	= \frac{600\,\text{V}}{6.0 \cdot 10^{-3}\,\text{m}}					
+fy6-11	562	= 1{,}0 \cdot 10^{5}\,\text{V/m}	= 1.0 \cdot 10^{5}\,\text{V/m}					
+fy6-11	562	mg = 4{,}9 \cdot 10^{-15}\,\text{kg}	mg = 4.9 \cdot 10^{-15}\,\text{kg}					
+fy6-11	562	\cdot 9{,}81\,\text{m/s}^2	\cdot 9.81\,\text{m/s}^2					
+fy6-11	562	= 4{,}807 \cdot 10^{-14}\,\text{N}	= 4.807 \cdot 10^{-14}\,\text{N}					
+fy6-11	562	q = \frac{mg}{E}	q = \frac{mg}{E}					
+fy6-11	562	= \frac{4{,}807 \cdot 10^{-14}\,\text{N}}{1{,}0 \cdot 10^{5}\,\text{V/m}}	= \frac{4.807 \cdot 10^{-14}\,\text{N}}{1.0 \cdot 10^{5}\,\text{V/m}}					
+fy6-11	562	= 4{,}807 \cdot 10^{-19}\,\text{C}	= 4.807 \cdot 10^{-19}\,\text{C}					
+fy6-11	562	n = \frac{q}{e}	n = \frac{q}{e}					
+fy6-11	562	= \frac{4{,}807 \cdot 10^{-19}\,\text{C}}{1{,}602 \cdot 10^{-19}\,\text{C}}	= \frac{4.807 \cdot 10^{-19}\,\text{C}}{1.602 \cdot 10^{-19}\,\text{C}}					
+fy6-11	562	= 3{,}0	= 3.0					
+fy6-12	563	E_\text{p} = qV	E_\text{p} = qV					
+fy6-12	569	W_{AB} = q(V_A - V_B) = qU_{AB}	W_{AB} = q(V_A - V_B) = qU_{AB}	sähkökentän tekemä työ	work done by an electric field	MAFY	Sähköstatiikan kaavoja	MAFY: W = QU; tunnin kaavassa pisteet A ja B
+fy6-12	575	V = Ex	V = Ex					
+fy6-12	622	\frac{1}{2}mv^2 = |q|U	\frac{1}{2}mv^2 = |q|U					
+fy6-12	626	1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}	1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}					
+fy6-12	645	\tfrac{1}{2}mv^2 = eU	\tfrac{1}{2}mv^2 = eU					
+fy6-12	645	E_\text{k} = eU	E_\text{k} = eU					
+fy6-12	645	v = \sqrt{\frac{2eU}{m}}	v = \sqrt{\frac{2eU}{m}}					
+fy6-12	660	E_\text{k} = eU	E_\text{k} = eU					
+fy6-12	660	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 3000\,\text{V}	= 1.602 \cdot 10^{-19}\,\text{C} \cdot 3000\,\text{V}					
+fy6-12	660	= 4{,}806 \cdot 10^{-16}\,\text{J}	= 4.806 \cdot 10^{-16}\,\text{J}					
+fy6-12	660	v = \sqrt{\frac{2E_\text{k}}{m}}	v = \sqrt{\frac{2E_\text{k}}{m}}					
+fy6-12	660	= \sqrt{\frac{2 \cdot 4{,}806 \cdot 10^{-16}\,\text{J}}{9{,}109 \cdot 10^{-31}\,\text{kg}}}	= \sqrt{\frac{2 \cdot 4.806 \cdot 10^{-16}\,\text{J}}{9.109 \cdot 10^{-31}\,\text{kg}}}					
+fy6-12	660	= 3{,}248 \cdot 10^{7}\,\text{m/s}	= 3.248 \cdot 10^{7}\,\text{m/s}					
+fy6-13	261	C = \frac{Q}{U}	C = \frac{Q}{U}					
+fy6-13	270	C = \frac{\varepsilon_0 \varepsilon_\text{r} A}{d}	C = \frac{\varepsilon_0 \varepsilon_\text{r} A}{d}	levykondensaattorin kapasitanssi	capacitance of a parallel-plate capacitor	MAFY	Virtapiirien kaavoja	
+fy6-13	286	U_\text{max} = E_\text{max} d	U_\text{max} = E_\text{max} d					
+fy6-13	328	W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2	W = \tfrac{1}{2} Q U = \tfrac{1}{2} C U^2	kondensaattorin energia	energy of a capacitor	MAFY	Virtapiirien kaavoja	MAFY: E = ½CU²; tunnin merkintä W (E on luvussa sähkökentän voimakkuus)
+fy6-13	360	W = \tfrac{1}{2} C U^2	W = \tfrac{1}{2} C U^2					
+fy6-13	360	P = \frac{W}{t}	P = \frac{W}{t}					
+fy6-13	374	W = \tfrac{1}{2} C U^2	W = \tfrac{1}{2} C U^2					
+fy6-13	374	\phantom{W} = \tfrac{1}{2} \cdot 150 \cdot 10^{-6}\,\text{F} \cdot (300\,\text{V})^2	\phantom{W} = \tfrac{1}{2} \cdot 150 \cdot 10^{-6}\,\text{F} \cdot (300\,\text{V})^2					
+fy6-13	374	\phantom{W} = 6{,}75\,\text{J}	\phantom{W} = 6.75\,\text{J}					
+fy6-13	374	P = \frac{W}{t} = \frac{6{,}75\,\text{J}}{1{,}0 \cdot 10^{-3}\,\text{s}}	P = \frac{W}{t} = \frac{6.75\,\text{J}}{1.0 \cdot 10^{-3}\,\text{s}}					
+fy6-13	374	\phantom{P} = 6750\,\text{W}	\phantom{P} = 6750\,\text{W}					
+fy6-14	437	R = \frac{U - U_\text{D}}{I}	R = \frac{U - U_\text{D}}{I}					
+fy6-14	476	P = U I	P = U I					
+fy6-14	556	\eta = \frac{P}{G A}	\eta = \frac{P}{G A}					
+fy6-14	575	R = \frac{U - U_\text{D}}{I}	R = \frac{U - U_\text{D}}{I}					
+fy6-14	575	P_R = (U - U_\text{D}) I	P_R = (U - U_\text{D}) I					
+fy6-14	589	R = \frac{U - U_\text{D}}{I}	R = \frac{U - U_\text{D}}{I}					
+fy6-14	589	\phantom{R} = \frac{6{,}0\,\text{V} - 2{,}0\,\text{V}}{0{,}020\,\text{A}}	\phantom{R} = \frac{6.0\,\text{V} - 2.0\,\text{V}}{0.020\,\text{A}}					
+fy6-14	589	\phantom{R} = 200\,\Omega	\phantom{R} = 200\,\Omega					
+fy6-14	589	P_R = 4{,}0\,\text{V} \cdot 0{,}020\,\text{A}	P_R = 4.0\,\text{V} \cdot 0.020\,\text{A}					
+fy6-14	589	\phantom{P_R} = 0{,}080\,\text{W}	\phantom{P_R} = 0.080\,\text{W}					
+fy6-15	467	I = \frac{P_1 + P_2 + P_3 + \dots}{U}	I = \frac{P_1 + P_2 + P_3 + \dots}{U}					
+fy6-15	474	I = \frac{U}{R}	I = \frac{U}{R}					
+fy6-15	540	I = \frac{P_1 + P_2 + P_3}{U}	I = \frac{P_1 + P_2 + P_3}{U}					
+fy6-15	551	I = \frac{P_1 + P_2 + P_3}{U}	I = \frac{P_1 + P_2 + P_3}{U}					
+fy6-15	551	= \frac{4500\,\text{W}}{230\,\text{V}}	= \frac{4500\,\text{W}}{230\,\text{V}}					
+fy6-15	551	= 19{,}6\,\text{A}	= 19.6\,\text{A}					
+fy6-16	325	\eta = \frac{W_\text{akku}}{W_\text{verkko}}	\eta = \frac{W_\text{battery}}{W_\text{grid}}	hyötysuhde	efficiency	MAFY	Mekaniikan kaavoja	MAFY: η = W_a/W_o; tunnin merkintä W_akku/W_verkko
+fy6-16	331	t = \frac{W_\text{akku}}{\eta P}	t = \frac{W_\text{battery}}{\eta P}					
+fy6-16	396	P = 3UI	P = 3UI					
+fy6-16	402	P_\text{johto} = \rho \frac{2l}{A} I^2	P_\text{cable} = \rho \frac{2l}{A} I^2					
+fy6-16	408	K = a W_\text{verkko}	K = a W_\text{grid}					
+fy6-16	427	P = 3UI	P = 3UI					
+fy6-16	427	t = \frac{W_\text{akku}}{\eta P}	t = \frac{W_\text{battery}}{\eta P}					
+fy6-16	427	K = \frac{a W_\text{akku}}{\eta}	K = \frac{a W_\text{battery}}{\eta}					
+fy6-16	442	P = 3UI	P = 3UI					
+fy6-16	442	\phantom{P} = 3 \cdot 230\,\text{V} \cdot 16\,\text{A}	\phantom{P} = 3 \cdot 230\,\text{V} \cdot 16\,\text{A}					
+fy6-16	442	\phantom{P} = 11\,040\,\text{W} = 11{,}04\,\text{kW}	\phantom{P} = 11\,040\,\text{W} = 11.04\,\text{kW}					
+fy6-16	442	t = \frac{W_\text{akku}}{\eta P}	t = \frac{W_\text{battery}}{\eta P}					
+fy6-16	442	\phantom{t} = \frac{38{,}4\,\text{kWh}}{0{,}90 \cdot 11{,}04\,\text{kW}}	\phantom{t} = \frac{38.4\,\text{kWh}}{0.90 \cdot 11.04\,\text{kW}}					
+fy6-16	442	\phantom{t} \approx 3{,}86\,\text{h}	\phantom{t} \approx 3.86\,\text{h}					
+fy6-16	442	K = \frac{a W_\text{akku}}{\eta}	K = \frac{a W_\text{battery}}{\eta}					
+fy6-16	442	\phantom{K} = \frac{0{,}15\,\text{€/kWh} \cdot 38{,}4\,\text{kWh}}{0{,}90}	\phantom{K} = \frac{0.15\,\text{€/kWh} \cdot 38.4\,\text{kWh}}{0.90}					
+fy6-16	442	\phantom{K} = 6{,}40\,\text{€}	\phantom{K} = 6.40\,\text{€}					

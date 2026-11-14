@@ -177,14 +177,14 @@ Vastusten kytkentä voidaan korvata yhdellä vastuksella, josta paristo antaa sa
 
 ## Kaava: Vastusten kokonaisresistanssi
 Sarjaankytkennässä jännitteet summautuvat, $U = U_1 + U_2$, ja jokaisessa vastuksessa kulkee sama virta $I$. Kun jännitteet kirjoitetaan Ohmin lain avulla, saadaan $RI = R_1 I + R_2 I$, ja virta $I$ supistuu pois. Sarjaan kytkettyjen vastusten kokonaisresistanssi on siis
-```latex
-R = R_1 + R_2 + R_3 + \dots
+```kaavat
+sarjaan kytkettyjen vastusten kokonaisresistanssi :: R = R_1 + R_2 + R_3 + \dots
 ```
 missä $R$ on kokonaisresistanssi ($\Omega$) ja $R_1$, $R_2$, $R_3$, … ovat vastusten resistanssit ($\Omega$).
 
 Rinnankytkennässä virrat summautuvat, $I = I_1 + I_2$, ja jokaisen vastuksen yli on sama jännite $U$. Kun virrat kirjoitetaan Ohmin lain avulla, saadaan $\tfrac{U}{R} = \tfrac{U}{R_1} + \tfrac{U}{R_2}$, ja jännite $U$ supistuu pois. Rinnan kytkettyjen vastusten kokonaisresistanssille pätee
-```latex
-\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \dots
+```kaavat
+rinnan kytkettyjen vastusten kokonaisresistanssi :: \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \dots
 ```
 missä $R$ on kokonaisresistanssi ja $R_1$, $R_2$, $R_3$, … ovat haarojen resistanssit. Yhtälöstä saadaan ensin luku $\tfrac{1}{R}$, jonka yksikkö on $\tfrac{1}{\Omega}$. Kokonaisresistanssi on sen käänteisluku, joten laskun lopuksi on muistettava kääntää. Kahdelle rinnakkaiselle vastukselle yhtälön voi ratkaista valmiiksi:
 ```latex

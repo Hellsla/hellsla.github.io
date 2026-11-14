@@ -320,8 +320,8 @@ Sähköisessä ilmanpuhdistimessa ilma kulkee ensin varausosan läpi. Siellä p�
 
 ## Kaava: Sähkökentän voimakkuus
 Sähkökentän voimakkuus kohdassa, jossa pieneen testivaraukseen $q$ kohdistuu sähköinen voima $\overline{F}$, on
-```latex
-\overline{E} = \frac{\overline{F}}{q}
+```kaavat
+sähkökentän voimakkuus :: \overline{E} = \frac{\overline{F}}{q}
 ```
 missä $\overline{E}$ on sähkökentän voimakkuus ($\text{N/C}$), $\overline{F}$ sähköinen voima ($\text{N}$) ja $q$ testivaraus ($\text{C}$). Kun kenttä tunnetaan, mihin tahansa varaukseen kohdistuva voima saadaan kertomalla: $\overline{F} = q\overline{E}$. Jos $q$ on negatiivinen, voima osoittaa kenttää vastaan.
 
