@@ -30,7 +30,7 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
    with a science review; Minor findings in a later batch.
 5. CI tooling: a way to run the browser checks in CI's container image locally, and failure messages that name the
    overflowing element. Shared files: alone, merged first.
-6. Picture and MAFY-table tasks for FY8, FY9, FY10 and FY14 (queue). They add review work, so they start when step 2
+6. Picture tasks for FY8, FY9, FY10 and FY14; MAFY-table tasks for FY8 and FY9 only (teacher 2026-11-14) (queue). They add review work, so they start when step 2
    is done.
 7. Desktop layout: a centred text column and a margin column. The largest structural UI change left; shared files,
    so alone, after an assessment with comparison captures for the teacher.
