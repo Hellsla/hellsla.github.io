@@ -5,7 +5,9 @@ CONTENT-HASH: e89f2ece4618584e
 None.
 
 ## Polish
-1. lesson.md:561-569 — 'pois päin' (fi, fi-easy) — standard spelling is 'poispäin'; check the MAFY name before changing.
+1. exercises.json L1-04 solution — 'nimittäjään tulee plusmerkki' is reasoned from 'loittonee'; good, keep.
+2. L3-04 — blood-flow chain (moving observer then moving source) is demanding for a first Doppler lesson; the solution explains it, but a hint sentence in the task text would help.
+3. 'Syventävä tehtävä' prefix on many level-2 tasks blurs the levels; use it only on level 3.
 
 ## Checked
-Full review of the exercise set and solutions for fi (fy5-14). v_L, v_H, f_H, T_H, the four named Doppler formulas, their approach/recede sentences and 'Oikean kaavan valinta ja oletukset' are consistent in lesson, figures (v_L, v_H, T_H), inquiry, exit ticket, exercises and solutions; no old symbol remains. The train example works with 'which formula applies'. Answers unchanged; solutions keep the diagram/principle before the numbers.
+Read exercises.json (all 23 tasks, levels 10/8/5, kinds: concept, data, error, model, figure) and solutions.md (L1-01..04, L3-04, L3-05 in full, others by structure); no task repeats the train example; each solution runs given, principle, symbols, units, substitution, answer, check; fi, fi-easy and en have identical ids, kinds and answers (checked by script).
