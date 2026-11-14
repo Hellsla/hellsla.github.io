@@ -56,6 +56,18 @@
   };
 
   const MATH = { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false };
+  // the playback-speed choice (a select whose options are the three paces 0.5 · 1 · 2) gets class sim-speed on its label, so the
+  // card's playback row (site.css .sim-card2) can put it at the row's end without a name row of its own; its name stays as
+  // the select's aria-label (work queue 10, PR 2). Recognised here, in the shared code, never in a sim.js.
+  function tagSpeed(root) {
+    for (const sel of root.querySelectorAll('label > select')) {
+      const v = [...sel.options].map((o) => o.value).join(',');
+      if (v !== '0.5,1,2') continue;
+      const lab = sel.parentElement, name = lab.querySelector(':scope > span');
+      lab.classList.add('sim-speed');
+      if (name && !sel.hasAttribute('aria-label')) sel.setAttribute('aria-label', name.textContent.trim());
+    }
+  }
   let fontGen = 0;                             // bumped when a web font (KaTeX's) finishes loading: label sizes measured before it are stale
   const onFont = new Set(), simWakers = new Set();   // the on-demand sims to draw again with new metrics, or after an adapter call
   window.flSimWake = () => simWakers.forEach((f) => f());
@@ -279,6 +291,7 @@
           if (!p.canvas) return;
           const simRoot = document.getElementById('sim-root');
           if (simRoot) foldNotes(simRoot);
+          if (simRoot && simRoot.closest('.sim-card2')) tagSpeed(simRoot);
           if (simRoot && window.renderMathInElement) window.renderMathInElement(simRoot, MATH);   // labels and legends set once
           wrapCanvas();
           keep(p.canvas.parentElement, 'clientWidth');
