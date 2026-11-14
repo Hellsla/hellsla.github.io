@@ -353,8 +353,7 @@ Tarkistetaan jokaisesta oppitunnista:
 Työskentelytapa:
 - Kaikki FY1–FY8-oppitunnit järjestelmällisesti, kurssi kerrallaan.
 - LOPS 2019 (`docs/lops2019/`) on opetussuunnitelmallinen vertailuperusta.
-- Resonanssia ja Studeota käytetään vertailuaineistoina vain silloin, kun niiden sisältö on saatavilla; niistä ei
-  kopioida tekstiä eikä tehtäviä (`CLAUDE.md` Never).
+- Julkaistuja oppikirjoja ei käytetä eikä mainita vertailuaineistona (opettaja 2026-11-14).
 - Virheitä ei oleteta. Muutosta ei ehdoteta vain siksi, että asian voisi ilmaista toisin.
 - Tehtävien tunnisteita, oikeita vastausarvoja tai opiskelijan tallennusmuotoja ei muuteta ilman todettua virhettä.
 - Uusia tehtäviä tai simulaatioita ei lisätä ilman perusteltua pedagogista puutetta.
