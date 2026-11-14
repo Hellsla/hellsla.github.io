@@ -232,10 +232,10 @@ Oikea taitekulma on $\alpha_2 \approx 49{,}5^\circ$, kolme merkitsevää numeroa
 ## fy7-10-L2-09
 **Annettu:** kuvan suora kuvaa akryylin mittauksia, ilman taitekerroin $n_1 = 1{,}00$, uusi tulokulma $\alpha_1 = 35{,}0^\circ$
 **Kysytty:** suoran kulmakerroin $k$, akryylin taitekerroin $n_2$ ja taitekulma akryylissä $\alpha_2$
-**Periaate:** Taittumislain mukaan $\sin\alpha_1 = \dfrac{n_2}{n_1}\sin\alpha_2$. Kun $\sin\alpha_1$ on pystyakselilla ja $\sin\alpha_2$ vaaka-akselilla, mittapisteet ovat suoralla, jonka kulmakerroin on $k = n_2 / n_1$. Kulmakertoimen avulla saadaan taitekerroin, ja sen avulla taitekulma mille tahansa tulokulmalle.
-**Kuvaajan lukeminen:** Suoralta luetaan kohdassa $\sin\alpha_2 = 0{,}20$ arvo $\sin\alpha_1 \approx 0{,}29$ ja kohdassa $\sin\alpha_2 = 0{,}60$ arvo $\sin\alpha_1 \approx 0{,}89$. Käytetään suoran pisteitä, ei mittapisteitä.
+**Periaate:** Taittumislain mukaan $\sin\alpha_1 = \dfrac{n_2}{n_1}\sin\alpha_2$. Kun $\sin\alpha_1$ on pystyakselilla ja $\sin\alpha_2$ vaaka-akselilla, mittapisteet ovat suoralla, jonka kulmakerroin on $k = \dfrac{n_2}{n_1}$. Kulmakertoimen avulla saadaan taitekerroin, ja sen avulla taitekulma mille tahansa tulokulmalle.
+**Kuvaajan lukeminen:** Suoralta luetaan kohdassa $\sin\alpha_2 = 0{,}20$ arvo $\sin\alpha_1 \approx 0{,}30$ ja kohdassa $\sin\alpha_2 = 0{,}60$ arvo $\sin\alpha_1 \approx 0{,}90$. Käytetään suoran pisteitä, ei mittapisteitä.
 **Kaava:** $k = \dfrac{\Delta(\sin\alpha_1)}{\Delta(\sin\alpha_2)} = \dfrac{n_2}{n_1}$, josta $n_2 = k\,n_1$, ja $\sin\alpha_2 = \dfrac{n_1 \sin\alpha_1}{n_2}$
 **Muunnokset:** Ei tarvita: sinit ja taitekertoimet ovat yksikköttömiä.
-**Sijoitus:** $k = \dfrac{0{,}89 - 0{,}29}{0{,}60 - 0{,}20} = \dfrac{0{,}60}{0{,}40} = 1{,}49$, joten $n_2 = 1{,}49 \cdot 1{,}00 = 1{,}49$. Sitten $\sin\alpha_2 = \dfrac{1{,}00 \cdot \sin 35{,}0^\circ}{1{,}49} = \dfrac{0{,}5736}{1{,}49} = 0{,}3850$, joten $\alpha_2 = 22{,}6^\circ$
-**Vastaus:** $n_2 \approx 1{,}49$ ja $\alpha_2 \approx 22{,}6^\circ$, kolme merkitsevää numeroa. Kuvaajan lukutarkkuus on noin $0{,}01$, joten taitekulma on tarkka noin $0{,}2^\circ$:n tarkkuudella.
-**Järkevyys:** Taitekerroin on lähellä taulukon akryylin arvoa $1{,}49$. Taitekulma on pienempi kuin tulokulma $35{,}0^\circ$, kuten tiheämpään aineeseen siirryttäessä pitää.
+**Sijoitus:** $k = \dfrac{0{,}90 - 0{,}30}{0{,}60 - 0{,}20} = \dfrac{0{,}60}{0{,}40} = 1{,}50$, joten $n_2 = 1{,}50 \cdot 1{,}00 = 1{,}50$. Sitten $\sin\alpha_2 = \dfrac{1{,}00 \cdot \sin 35{,}0^\circ}{1{,}50} = \dfrac{0{,}5736}{1{,}50} = 0{,}3824$, joten $\alpha_2 = 22{,}5^\circ$
+**Vastaus:** $n_2 \approx 1{,}50$ ja $\alpha_2 \approx 22{,}5^\circ$, kolme merkitsevää numeroa. Kuvaajan lukutarkkuus on noin $0{,}01$, joten taitekulma on tarkka noin $0{,}2^\circ$:n tarkkuudella.
+**Järkevyys:** Taitekerroin on lähellä taulukon akryylin arvoa $1{,}49$, ja kuvaajasta luettu $1{,}50$ on lukutarkkuuden sisällä. Taitekulma on pienempi kuin tulokulma $35{,}0^\circ$, kuten tiheämpään aineeseen siirryttäessä pitää.
