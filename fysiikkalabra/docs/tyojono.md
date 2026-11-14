@@ -8,15 +8,6 @@ Tämä on ainoa työjono (opettaja 2026-11-13): ei GitHub Issuesia eikä erillis
 ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta muut ketjut näkevät varauksen
 (repon juuren `CLAUDE.md`). Saman kurssin kohdat tehdään peräkkäin, eri kurssien enintään kolme rinnakkain.
 
-## 2. Tehtäväsarjojen katselmoinnit: FY1, fy4-8, FY5, FY6, FY7 (opettaja 2026-11-13: tässä järjestyksessä)
-
-Sarjat ovat luonnoksina eivätkä näy opiskelijoille (`python scripts/reviews.py status`): FY1 8, fy4-8 1, FY5 13,
-FY6 15, FY7 14, kukin fi, en ja fi-easy. Katselmointi `/exercises`-putken vaiheilla (`reviews.py scope <id>
---exercises`, kolme katselmoijaa) kuten FY4:ssä (#531). Yksi kurssi per PR; kurssin MAFY-kaavat (kohta 3) samassa
-ketjussa tai heti perään, ei rinnakkain.
-
-Varattu: FY7 (14 lukua) – claude/fy7-exercises-review
-
 ## 3. Kaavat MAFY-muotoon FY5–FY8, FY10 ja FY14
 
 FY1–FY4 ja FY9 on tehty (#501, #522, #527, #529). Keskinopeuden tunnus on kaikkialla $v_\text{k}$, ei $v_\text{ka}$
@@ -236,21 +227,10 @@ luvan.
 
 Jokainen osa U1–U4 on oma työntekijäketjunsa, haaransa ja luonnos-PR:nsä; ensimmäinen commit merkitsee osan
 `Varattu: <haara>`. Kaikki muuttavat jaettuja tiedostoja (`templates/`, `scripts/`, `site.css`, `lang/`), joten ne
-tehdään yksin, yksi kerrallaan, ja yhdistetään ennen sisältö-PR:iä. Järjestys: **U4, sitten U1, U2, U3.** U4 on pieni
-ja tehdään heti, kun mikään muu jaettu muutos ei ole auki. U1–U3 aloitetaan vasta, kun kohdan 10 (simulaatioiden
+tehdään yksin, yksi kerrallaan, ja yhdistetään ennen sisältö-PR:iä. U4 on tehty (#561). Järjestys: U5, U1, U2, U3. U1–U3 aloitetaan vasta, kun kohdan 10 (simulaatioiden
 käyttöliittymä) PR 1–PR 5 on yhdistetty, koska ne muuttavat samoja tiedostoja (`site.css`, `lesson.js`). Kohdat 8b, 8h
 ja 8 (avattavat Virhekäsitys ja Tiivistelmä) pysyvät ennallaan ja mahtuvat väleihin. Fysiikan sisältöön, vastauksiin,
 toleransseihin, tallennusavaimiin ja palautustiedoston muotoon ei kosketa. Mergen jälkeen katsotaan mainin CI-ajo.
-
-### U4. Kaksi tekstiä pois (pieni, ensin)
-**Varattu: claude/u4-kaksi-tekstia-pois**
-- ~~Teorian alun rivi "Et ole vielä vastannut: siirry ennusteeseen" poistetaan.~~ Opettajan päätös 14.11. (koordinaattorin
-  kautta): riviä ei poisteta, koska Teorian alussa ei ole omaa riviä; muistutus (`reflect_not_answered`) jää Tutki-vaiheen
-  kokeen "Ennustit"-laatikkoon ja Palaa ennusteisiisi -laatikkoon (Teorian lopussa). Tästä ei muuteta koodia.
-- Esimerkit-vaiheen johdanto ("Kun olet opiskellut luvun teorian…", lang `inquiry.lead_<vaihe>`) poistetaan kaikista
-  kielistä, kuten Testaa ja arvioi -vaiheen johdanto 13.11.
-- Samassa PR:ssä `CLAUDE.md`:n Lesson page 5 ("Esimerkit opens with one line…") korjataan.
-- Tiedostot: `inquiry.py` tai `inquiry.js`, `lang/*.json`. Testit: `test_inquiry`, `test_progress`, `check_layout`.
 
 ### U1. Ydintehtävät auki Tehtävät-vaiheen alkuun
 Nyt vaihe on kolme suljettua tasolaatikkoa, eikä yhtään tehtävää näy. Tason ohje sanoo "Ydintehtävät ensin", mutta ne
