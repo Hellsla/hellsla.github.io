@@ -1,14 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 9a730fa7a4922787
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+VERDICT: FAIL
+CONTENT-HASH: 9c433917541eecdb
 
 ## Blocking
-- none
+- 'pääsateenkaari' is new in the Miksi question, goals, hook question, headings and prompts but is never explained in S2 (only the hook says 'toinen, himmeämpi kaari'). S2 rule: open a concept the first time. Add one sentence in the hook or the first theory paragraph: 'Kirkkaampaa kaarta sanotaan pääsateenkaareksi, himmeämpää sivusateenkaareksi.'
 
 ## Polish
-- [Minor] Two consecutive sentences begin 'Siksi'; vary one ('Niinpä' or merge).
+- Student-facing tasks otherwise consistent (prompt, model answer, criteria).
 
 ## Checked
-- Diff: a droplet does not send literally one colour; the strongest directions differ by colour, so one colour reaches the eye especially strongly from each droplet.
-- Still leads to 'jokainen katsoja näkee oman sateenkaarensa' without a gap.
-- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash 9a730fa7a4922787 at start and end.
+batch delta review: batch delta review: all changed lines read; the term is the only issue.

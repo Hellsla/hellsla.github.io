@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 18dbbc6cb55a0725
+CONTENT-HASH: a131b7dcac8bf7a1
 
 ## Blocking
 (none)
@@ -8,4 +8,4 @@ CONTENT-HASH: 18dbbc6cb55a0725
 (none)
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+batch delta review: johtuva -> siirtyvä is correct (U-arvo covers conduction, convection and radiation) and consistent in Kaava and Tiivistelmä.

@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9536f03d31dd0fcd
+CONTENT-HASH: 292c4265de8fd1eb
 
 ## Blocking
 (none)
 
 ## Polish
-- Round-1 polish items (photon-interaction table length, koe-1/koe-2 overlap, ennuste-2 wording, detection paragraph split) are unchanged by this diff and still stand as optional.
+- 'järjestysluku' and 'vuorovaikutusmekanismien' are unexplained for S2; say 'atomin protonien määrä' and 'eri tavat, joilla säteily ja aine vaikuttavat toisiinsa'.
+- Paragraph now lacks a concrete take-away for the student (what to remember: tiheä aine ja paksu kerros vaimentavat).
+- The earlier 'seitsemän kertaa' lead vs betoni is kept; check the table follows.
 
 ## Checked
-- Diff only reorders the six colour strips of the visible-light band in the photon-energy figure (lesson.md ~l.35-40): now red at the low-energy end, violet at the high-energy end, which is correct because photon energy rises from red to violet along the E axis.
-- The figure's text, labels and description are untouched; the strips are still an illustration beside a labelled "näkyvä valo", so colour is not the only carrier of meaning.
-- Previously approved path, activities, example, checks and exit ticket are not touched by the diff.
+batch delta review: batch delta review: physics hedging is sound; language is heavier than the S2 standard.

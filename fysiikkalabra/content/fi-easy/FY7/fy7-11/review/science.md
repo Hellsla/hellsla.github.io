@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 9a730fa7a4922787
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 9c433917541eecdb
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- The lesson names the arcs "pääkaari"/"sivukaari" (l. 258); the diff writes "pääsateenkaari". Same meaning; one term would be tidier.
 
 ## Checked
-- Droplet wording: each colour leaves the droplet at its strongest in a slightly different direction (minimum-deviation caustic), so from a given droplet one colour reaches the eye especially strongly; no longer claims literally one colour. 42 deg / 40.6 deg unchanged. Languages match. (language checked: fi-easy.)
+batch delta review: goal, hook question, reflect and explain prompts and the Miksi heading now restrict red-outside to the primary bow, consistent with the secondary bow's reversed order (l. 258); model answer (42° vs 40,6°) unchanged and correct.

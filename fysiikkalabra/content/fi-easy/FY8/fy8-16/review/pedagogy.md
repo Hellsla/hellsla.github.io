@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a5bcdc4c18223477
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: bcdc97b32687d881
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- 'nuklidi' is used in two places without explanation; say 'ydinlaji eli nuklidi'.
+- Line after the changed paragraph still says 'Huippu on rauta-56:n kohdalla' while the revised text says rauta ja nikkeli; align or explain (rauta-56 is the best-known near-peak).
+- 'keskimäärin' repeated; fine, but the feedback option text is now sound.
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+batch delta review: batch delta review: lesson, feedback option and optional model answer.
