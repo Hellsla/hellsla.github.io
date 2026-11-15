@@ -454,9 +454,8 @@ merkitsevät numerot, termit, "lämmöksi", likiarvorivit, kieli) samalla kierro
 inquiry.json, kuvien tekstit ja käännökset. Kurssi aloitetaan, kun kohta 8m on yhdistetty ja kurssin kohdan 5d
 leikkautuvat kaavat ovat mainissa (FY8 odottaa #601:tä). Avoin kohta 12 ratkesi päätöksellä P9: pieniä arvoeroja ei
 muuteta. Yksi kurssi = yksi haara ja yksi PR; rinnakkaisuus kuten jonon alussa (kiireellä ei ylärajaa).
-Ehdotus jaetuksi jatkoksi (FY6-työntekijä #615, 15.11; odottaa opettajan päätöstä): P7c-raja-arvotehtävissä (esim. fy6-16
-L2-05, enintään 10,4 kW) sivuston tarkistus hyväksyy ±2 % molempiin suuntiin, joten turvaton 10,5 kW hyväksytään.
-Korjaus olisi yksipuolinen raja-arvotarkistus `templates/lesson.js`:ään (esim. `exercises.json` `"limit": "max"|"min"`).
+Päätös (opettaja 2026-11-15): raja-arvotehtävien tarkistus hyväksyy jatkossakin poikkeaman molempiin suuntiin
+(esim. fy6-16 L2-05: 10,4 ja 10,5 kW), eikä yksipuolista tarkistusta tehdä. P7c koskee vain mallivastauksen pyöristystä.
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
