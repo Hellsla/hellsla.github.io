@@ -1746,7 +1746,7 @@ fi-easy/fy2-7	0{,}04 \cdot 500\,\text{MWh} = 20\,\text{MWh}
 fi-easy/fy2-7	16\,\text{MW} : 0{,}0625\,\text{MW} = 256
 fi-easy/fy2-7	4{,}0\,\% \cdot 125\,\text{MW} = 5{,}0\,\text{MW}
 fi-easy/fy2-8	= 2\,952\,000 \cdot 10^{-6}\,\text{t}
-fi-easy/fy2-8	= 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l}
+fi-easy/fy2-8	= 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l} 
 fi-easy/fy2-8	m = 820\,\text{g/kWh} \cdot 2{,}0\,\text{kWh} = 1640
 fi-easy/fy3-1	0{,}10 + 0{,}20 + 0{,}30 + 0{,}40 + 0{,}50 + 0{,}60 = 2{,}10\,\text{kg
 fi-easy/fy3-1	0{,}38 \cdot 9{,}81\,\text{m/s}^2 \approx 3{,}7\,\text{m/s}^2
