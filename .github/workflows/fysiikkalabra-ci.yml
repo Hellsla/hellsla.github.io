@@ -154,6 +154,8 @@ jobs:
         run: python scripts/test_check_layout.py
       - name: named formulas (```kaavat, FY9's names from mafytaulukot.fi) and the carry over approved formula names (teacher 2026-11-12)
         run: python scripts/test_kaavat.py
+      - name: a sentence mark after display maths is set inside the formula's last row (work queue 5e)
+        run: python scripts/test_mathlayout.py
       - run: python scripts/test_inquiry.py
       - name: the answer check reads typed numbers and accepts half a unit in the shown last digit (templates/lesson.js part 1, teacher 2026-11-10)
         run: python scripts/test_answer_check.py
