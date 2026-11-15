@@ -302,6 +302,14 @@ Lisäksi 8m:ään (FY7-työntekijä #617, 15.11): P6:n nimi pois `docs/fy7/kaava
 fy7-8:n tekstin (test_kaavat.py vaatii täsmäävän tekstin); P1 jaetuissa käännöksissä: `lang/fi.json` ja `lang/fi-easy.json`
 fy7-8:n simulaation selite "johdossa lämmöksi muuttuva teho" → "johdossa sisäenergiaksi muuttuva teho" (en vastaavasti).
 
+## 8l-b. "Esimerkkiaineisto" myös ilman sulkeita pois otsikoista (opettaja 2026-11-16)
+
+Opettaja 16.11: "joo poistetaan". Kohta 8l (#607) poisti vain sulkeissa olevan merkinnän; noin 110 otsikkoa on muotoa
+"…, esimerkkiaineisto" tai "Esimerkkiaineisto: …" (fi, en "example data", fi-easy). Jaettu: `reviews.py`:n
+`caption-label`-luokka laajennetaan tunnistamaan nämäkin muodot (testit `test_reviews.py`:hin), ja merkintä poistetaan
+kaikista `exercises.json`-otsikoista. Tehdään kohdan 8m jälkeen, kun kohdan 18/19 kurssi-PR:t eivät ole kesken samoissa
+tiedostoissa, tai kurssi kerrallaan niiden mukana, jos luokka on jo mainissa.
+
 ## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
 
 FY7:n esimerkkikoe on valmis (#586); sen katselmointien Minor-huomioita ei korjattu siinä, ettei katselmoinnit vanhene.
