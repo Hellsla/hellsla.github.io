@@ -289,25 +289,31 @@ def hero():
     H.house(f, 60, 420, 220, 170, SAND_LIGHT, IRON, GLASS)
     H.house(f, 760, 420, 260, 190, ALUMINIUM, METAL_EDGE, GLASS)
     H.birch(f, 380, 420, 230)
-    H.birch(f, 1110, 420, 200)
+    H.birch(f, 1140, 420, 170)
     # pavement, kerb, road with a zebra crossing
     f.rect(0, 420, 1200, 40, SAND_LIGHT); f.line(0, 460, 1200, 460, GRAIN, 4)
     f.rect(0, 462, 1200, 138, IRON)
     for k in range(6): f.rect(860 + 0 * k, 476 + 20 * k, 140, 10, WHITE, extra='fill-opacity="0.9"')
     for k in range(8): f.rect(40 + 150 * k, 586, 80, 6, WHITE, extra='fill-opacity="0.8"')
-    # the siren's wavefronts: each crest left the siren from an earlier place (the van moves right at 0,4 times the
-    # speed of sound, as in the doppler figure), so they crowd in front of the van and spread out behind it
-    sx, sy, lam, vs = 360 + 155, 568 - 196, 100.0, 40.0   # the siren on the van's roof (x, yb below)
-    f.defs_add('<clipPath id="fy514h-clip"><rect x="0" y="0" width="1200" height="458"/></clipPath>')
+    # the siren's wavefronts: crest m left the siren m periods ago, from where the siren was then (the van moves right
+    # at half the speed of sound, exaggerated so that the effect shows), so each ring is centred on its own starting
+    # point: they crowd in front of the van (spacing λ/2) and spread out behind it (3λ/2). The rings fade out towards
+    # the bottom instead of stopping at the kerb.
+    sx, sy, lam, vs = 360 + 155, 568 - 196, 80.0, 40.0   # the siren on the van's roof (x, yb below)
+    f.defs_add('<linearGradient id="fy514h-fade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="600">'
+               '<stop offset="0.7" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0.15"/></linearGradient>'
+               '<mask id="fy514h-mask"><rect x="0" y="0" width="1200" height="600" fill="url(#fy514h-fade)"/></mask>')
     rings = [f'<circle cx="{n(sx - m * vs)}" cy="{sy}" r="{n(m * lam)}" fill="none" stroke="{COLD}" stroke-width="5" '
-             f'stroke-opacity="{n(0.6 - 0.05 * m)}"/>' for m in range(1, 9)]
-    f.add('<g clip-path="url(#fy514h-clip)">' + "".join(rings) + "</g>")
+             f'stroke-opacity="{n(0.7 - 0.03 * m)}"/>' for m in range(1, 15)]
+    f.add('<g mask="url(#fy514h-mask)">' + "".join(rings) + "</g>")
     # ambulance
     x, yb = 360, 568
     f.path(f"M{x},{yb} V{yb - 150} Q{x},{yb - 168} {x + 18},{yb - 168} H{x + 300} L{x + 360},{yb - 110} Q{x + 380},{yb - 100} {x + 380},{yb - 80} V{yb} Z",
            WHITE, INK, 4)
     f.rect(x + 4, yb - 70, 372, 22, HEAT_LIGHT)
-    f.path(f"M{x + 306},{yb - 156} L{x + 352},{yb - 108} H{x + 306} Z", GLASS, INK, 3)
+    # the cab: its door seam and a side window whose front edge follows the sloping bonnet line
+    f.line(x + 266, yb - 160, x + 266, yb - 14, INK, 3)
+    f.path(f"M{x + 278},{yb - 150} H{x + 302} L{x + 350},{yb - 100} H{x + 278} Z", GLASS, INK, 3, extra='stroke-linejoin="round"')
     f.rect(x + 40, yb - 140, 90, 52, GLASS, INK, 3, 4)
     f.rect(x + 160, yb - 140, 90, 52, GLASS, INK, 3, 4)
     f.rect(x + 196, yb - 60, 18, 46, COLD, extra='fill-opacity="0.9"'); f.rect(x + 182, yb - 44, 46, 16, COLD, extra='fill-opacity="0.9"')
@@ -316,8 +322,20 @@ def hero():
     for wx in (x + 80, x + 300):
         f.circle(wx, yb, 34, INK); f.circle(wx, yb, 15, ALUMINIUM, INK, 2)
     f.rect(x + 368, yb - 40, 18, 14, HEAT_LIGHT, INK, 2, 3)
-    # pedestrian on the pavement, facing the street
-    H.walker(f, 1010, 452, COLD, INK, 0.72, stride=0.4)
+    # pedestrian on the pavement beside the crossing, seen from the front: an adult about as tall as the van's roof
+    # (170 units), standing clear of the house
+    px, pf = 1064, 452
+    for dx in (-9, 9):                                                       # legs and shoes
+        f.path(f"M{px + dx},{pf - 80} V{pf - 8}", stroke=INK, w=13, extra='stroke-linecap="round"')
+        f.path(f"M{px + dx - (6 if dx < 0 else -6)},{pf - 3} h{-10 if dx < 0 else 10}", stroke=IRON, w=8, extra='stroke-linecap="round"')
+    for dx in (-1, 1):                                                       # arms
+        f.path(f"M{px + dx * 18},{pf - 128} L{px + dx * 26},{pf - 82}", stroke=GOOD, w=11, extra='stroke-linecap="round"')
+        f.circle(px + dx * 27, pf - 76, 6, SAND_LIGHT, INK, 1.5)
+    f.rect(px - 4, pf - 146, 8, 14, SAND_LIGHT)                              # neck
+    f.path(f"M{px - 22},{pf - 132} Q{px},{pf - 140} {px + 22},{pf - 132} L{px + 17},{pf - 78} H{px - 17} Z", GOOD, INK, 2.5)
+    f.circle(px, pf - 157, 14, SAND_LIGHT, INK, 2)                           # head and hair
+    f.path(f"M{px - 14},{pf - 157} Q{px - 15},{pf - 174} {px},{pf - 173} Q{px + 15},{pf - 174} {px + 14},{pf - 157} "
+           f"Q{px + 4},{pf - 165} {px - 14},{pf - 157} Z", INK)
     return f.svg()
 
 

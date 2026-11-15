@@ -252,6 +252,18 @@ Poistetaan vain otsikoista. Jos sulkeissa on muutakin, se jää (esim. "(esimerk
 kohdan 8k `teacher-text`-kategorialla (opettajan nimenomainen hyväksyntä tälle mekaaniselle muutokselle), jotta
 katselmoinnit kulkevat muutoksen yli. Jaettu muutos (`scripts/reviews.py` ja kaikki kurssit), ajetaan yksin, sim PR 3:n (#591) jälkeen.
 
+## 8m. Liukukitka, ei liikekitka (opettaja 2026-11-15)
+
+Opettaja 2026-11-15: "pitää olla liukukitka". Termi vaihdetaan koko sivustolla: liikekitka → liukukitka,
+liikekitkakerroin → liukukitkakerroin (ja taivutusmuodot), `glossary.json`, käsitekortit, lukujen tekstit, tehtävät,
+ratkaisut ja kuvien tekstit kolmella kielellä (en: sliding friction / coefficient of sliding friction).
+Lepokitkan termit samalla (opettaja 2026-11-15): kun kappale on levossa, kitka on **lepokitka**; sen suurin arvo
+(kappale on juuri lähtemässä liikkeelle) on **täysin kehittynyt lepokitka eli lähtökitka**, ja sen kerroin on
+lepokitkakerroin. Yhtenäistetään nykyiset muodot (esim. "suurin lepokitka", "maksimilepokitka") tähän; en: static
+friction / maximum (fully developed) static friction. Esiintymiä fi:ssä
+noin 190 (FY4 17 tiedostoa, FY5 2, FY9 6). Merkitys ei muutu, mutta teksti muuttuu, joten katselmointi `reviews.py scope`n
+mukaan. Jaettu (glossary.json), ajetaan yksin. FY9:n osuus tehdään tunnistuskaavioiden kanssa (9c, #602).
+
 ## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
 
 FY7:n esimerkkikoe on valmis (#586); sen katselmointien Minor-huomioita ei korjattu siinä, ettei katselmoinnit vanhene.
