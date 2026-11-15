@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9573a13d429ad8dd
-SCOPE: delta added-exercise from 7cbc290e1ae44e71 base 8f23aa7ae3bd
+CONTENT-HASH: 18ab4765994d3ada
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- fy6-16-L2-09 and L2-05 — both use the same house evening-load setting (L2-05 as a table, "omakotitalon sähköteho tunneittain illalla ennen latausasemaa"); if the figures are the same, change L2-09's powers or its question (cost, not the fuse check) so the two do not feel like one task twice; they ask different questions, so not blocking.
+- solutions.md L2-04 (power growth) — 156 % becomes 1,6 · 10^2 %, two figures; a percentage written in scientific notation is awkward and loses information, and Järkevyys still says 156 %. Fix: "noin $160\,\%$ (laskimen arvo $156\,\%$)".
 
 ## Checked
-- L2-09: level 2 fits (read four constant steps, sum area as energy, convert snt to euros, cost); situation first, question last; the everyday context is recognisable.
-- Figure talo-ex gives 2, 5, 7 and 3 kW per hour on a 1 kW grid; description matches and gives no energy or cost.
-- Solution stepwise; 17 kWh and 2,72 € recomputed; the unit conversion is shown; Järkevyys average-power check is real.
-- Answer 2,72 with 2 % tolerance accepts the stated 2,7 €.
-- Adds a cost-from-graph task to the L2 mix (kinds: graph/data/error/model); progression within level 2 sound; not the worked example.
+- L2-03, L2-05 and the extra current task: limits that must not be exceeded are rounded down (11 A, 10,4 kW, 7,6 A), the charging-time current rounded up; the reason is stated, and it teaches a real engineering habit.
+- Answers and tolerances: 11,478 A with 0,043 accepts 11 A and 11,96 A but rejects 12 A; 10,4 kW with 2 % accepts 10,4 and 10,45. Järkevyys sums (24 A, 24,9 A) recomputed and correct.
+- 1370 EUR to 1,37 · 10^3 EUR: three figures, consistent with the rounding to ten euros.
+- Caption marker removal is a content-free change.
