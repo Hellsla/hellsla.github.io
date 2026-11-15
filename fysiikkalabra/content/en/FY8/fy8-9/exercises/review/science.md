@@ -12,11 +12,9 @@ CONTENT-HASH: 1931c445d9c3b481
 
 ## Checked
 - All 19 numeric answers recomputed from the English task texts and tables with own formulas (one script): every one agrees with exercises.json and answers.py, well inside its tolerance; units and tolerances fit the data.
-- Numbers, tables, units and decimal points of the English tasks and solutions carry the same physics as the computation; no step or justification dropped.
 - L2-05: net counts, two-point 149 s vs log-linear fit of all points 150 s (inside 6 %); L2-06 net data follow 60 s, the student's 70 s reproduced; L2-07 sum 80, 5.4 %.
 - L3-04: table consistent with 800 MBq (6.0 h) + 200 MBq (64.4 h); short-lived part 0.012 MBq at 96 h; other point pairs inside 5 %.
 - L3-05: $T_\text{eff} = 3.06\,\text{d}$, $T_\text{bio} = 4.96\,\text{d}$, decay constants add to 0.2262 1/d; the additive model is stated in the task.
 - L1-06 and L1-09: exactly one correct option; each distractor wrong for the reason its feedback gives; graph functions give 400/200/100/50 kBq (C), 294/108/15 kBq (D), zero at 4 h (A) and 2.8 h (B).
-- Half-lives realistic; Co-60 $\lambda$ matches 5.27 a; Am-241 mass 0.29 µg.
 - Conditions stated in the tasks: no new radon, daughter decays excluded, constant background, activity per gram of carbon.
 - Symbolic solution before substitution in every numeric solution; scope inside the FY8 decay law.

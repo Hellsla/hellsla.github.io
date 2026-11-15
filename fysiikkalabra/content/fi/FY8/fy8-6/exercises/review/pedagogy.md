@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 29e493b0c24a1745
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 8c105b85746eef7d
+Mode: delta (round 1)
 
 ## Blocking
 - none
@@ -9,4 +9,8 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+- exercises.json:121 fy8-6-L2-04 question "jää sisäenergiaksi yhtä fotonia kohti": the question is still its own last sentence, unambiguous, same level-2 demand (two photon energies, a difference, a unit conversion).
+- solutions.md:83–89 Kysytty, Periaate and Järkevyys use the same term as the task; the principle (energy conservation, difference of the photon energies stays in the phosphor) is still explained, no step dropped.
+- No leftover "lämmöksi" in exercises.json or solutions.md; numbers, answer and tolerance untouched.
+- Finnish of the changed sentences is correct.
+- Hash identical at start and end.
