@@ -6,7 +6,17 @@
 **Principle:** Each device transforms energy at its own power, so its energy is power multiplied by the time of use (chapter *Power*). The power of the fridge is an average power, so it too is multiplied by the whole day. The energies are added up in the same unit.
 **Formula:** $E = P\,t$ for each device, so $E_\text{need} = P_1 t_1 + 6\,P_2 t_2 + P_3 t_3$
 **Conversions:** For kilowatt-hours the powers to kilowatts and the times to hours: $45\,\text{W} = 45 \cdot 0.001\,\text{kW} = 0.045\,\text{kW}$, $7.0\,\text{W} = 0.0070\,\text{kW}$ and $15\,\text{min} = 15 \cdot \tfrac{1}{60}\,\text{h} = 0.25\,\text{h}$.
-**Substitution:** $E_\text{need} = 0.045\,\text{kW} \cdot 24\,\text{h} + 6 \cdot 0.0070\,\text{kW} \cdot 5.0\,\text{h} + 1.0\,\text{kW} \cdot 0.25\,\text{h} = 1.08\,\text{kWh} + 0.21\,\text{kWh} + 0.25\,\text{kWh} = 1.54\,\text{kWh}$
+**Substitution:** $$
+\begin{aligned}
+E_\text{need} &= 0.045\,\text{kW} \cdot 24\,\text{h} \\
+&+ 6 \cdot 0.0070\,\text{kW} \cdot 5.0\,\text{h} \\
+&+ 1.0\,\text{kW} \cdot 0.25\,\text{h} \\
+&= 1.08\,\text{kWh} \\
+&+ 0.21\,\text{kWh} \\
+&+ 0.25\,\text{kWh} \\
+&= 1.54\,\text{kWh}
+\end{aligned}
+$$
 **Answer:** $E_\text{need} \approx 1.5\,\text{kWh}$, that is, $1.54 \cdot 3.6\,\text{MJ} \approx 5.5\,\text{MJ}$, two significant figures like the power of the fridge $45\,\text{W}$ and the power of the coffee maker $1.0\,\text{kW}$.
 **Reasonableness:** The fridge uses almost two thirds of the energy, even though its power is the second smallest of the devices: it is on all the time. The large power of the coffee maker matters little, because it is on for only a quarter of an hour. One and a half kilowatt-hours a day is a usual consumption for a small summer cottage.
 
@@ -18,7 +28,9 @@
 **Conversions:** $90\,\% = 0.90$ and $93\,\% = 0.93$. The energies stay in kilowatt-hours.
 **Substitution:** $E_\text{panels} = \dfrac{1.54\,\text{kWh}}{0.90 \cdot 0.93} = \dfrac{1.54\,\text{kWh}}{0.837} = 1.84\,\text{kWh}$. On a cloudy day $0.837 \cdot 1.5\,\text{kWh} = 1.26\,\text{kWh}$ reaches the devices.
 **Answer:** The panels must produce about $1.8\,\text{kWh}$ a day (two significant figures like the need in part a). The $1.5\,\text{kWh}$ of a cloudy day is not enough: only about $1.3\,\text{kWh}$ of it reaches the devices, so the missing part is taken from the battery if it holds a surplus from a sunny day.
-**Reasonableness:** The efficiency of the chain, $0.84$, is smaller than that of either stage, as it must be in a multiplication, and the need grows by about a fifth. On a sunny day $0.837 \cdot 5.4\,\text{kWh} \approx 4.5\,\text{kWh}$ reaches the devices, which is enough for almost three days.
+**Reasonableness:** The efficiency of the chain, $0.84$, is smaller than that of either stage, as it must be in a multiplication, and the need grows by about a fifth. On a sunny day $$
+0.837 \cdot 5.4\,\text{kWh} \approx 4.5\,\text{kWh}
+$$ reaches the devices, which is enough for almost three days.
 
 ### c)
 **Find:** whether the neighbour's conclusion about the panels' daily energy is correct
@@ -32,7 +44,12 @@
 - The losses of the efficiencies are added up ($10\,\% + 7\,\% = 17\,\%$); here the result is close to the correct one, but the principle is wrong.
 
 ### Hyväksytään myös
-- The energy of part a in joules: $E_\text{need} = 1.54 \cdot 3.6\,\text{MJ} \approx 5.5\,\text{MJ}$.
+- The energy of part a in joules: $$
+\begin{aligned}
+E_\text{need} &= 1.54 \cdot 3.6\,\text{MJ} \\
+&\approx 5.5\,\text{MJ}
+\end{aligned}
+$$.
 
 ## fy9-energia-s2
 
@@ -169,7 +186,17 @@ The circled places in the graph are the two points of the line from which the sl
 **Conversions:** $1\,\text{kWh} : 1\,\text{h} = 1\,\text{kW} = 1000\,\text{W}$, so $\text{kWh}$ divided by hours gives kilowatts. A change of $1\,{}^\circ\text{C}$ is $1\,\text{K}$.
 **Substitution:** $k = \dfrac{93\,\text{kWh} - 191\,\text{kWh}}{0\,{}^\circ\text{C} - (-20\,{}^\circ\text{C})} = \dfrac{-98\,\text{kWh}}{20\,{}^\circ\text{C}} = -4.9\,\text{kWh}/{}^\circ\text{C}$ and $\dfrac{\Delta P}{\Delta T} = \dfrac{4.9\,\text{kWh}}{24\,\text{h} \cdot 1\,\text{K}} = 0.204\,\text{kW}/\text{K} = 204\,\text{W}/\text{K}$
 **Answer:** The slope is about $-4.9\,\text{kWh}$ per degree per day, that is, the heating power increases by about $200\,\text{W}$ for each kelvin the outdoor temperature falls. Two significant figures, because the slope read from the graph is accurate to about $\pm 0.2\,\text{kWh}$ per degree.
-**Reasonableness:** According to the model, heating is needed at outdoor temperatures below about $17\,{}^\circ\text{C}$ (part d). When it is $-20\,{}^\circ\text{C}$ outside, the heating power is about $36.5\,\text{K} \cdot 0.204\,\text{kW}/\text{K} \approx 7.5\,\text{kW}$, the same as $(191 - 12)\,\text{kWh} : 24\,\text{h} \approx 7.5\,\text{kW}$, which suits the electric heating of a detached house. The least-squares line gives the same: $-4.89\,\text{kWh}$ per degree, that is, $204\,\text{W/K}$.
+**Reasonableness:** According to the model, heating is needed at outdoor temperatures below about $17\,{}^\circ\text{C}$ (part d). When it is $-20\,{}^\circ\text{C}$ outside, the heating power is about $$
+\begin{aligned}
+&36.5\,\text{K} \cdot 0.204\,\text{kW}/\text{K} \\
+&\approx 7.5\,\text{kW}
+\end{aligned}
+$$, the same as $$
+\begin{aligned}
+&(191 - 12)\,\text{kWh} : 24\,\text{h} \\
+&\approx 7.5\,\text{kW}
+\end{aligned}
+$$, which suits the electric heating of a detached house. The least-squares line gives the same: $-4.89\,\text{kWh}$ per degree, that is, $204\,\text{W/K}$.
 
 ### c)
 **Given:** the line of part a, the slope of part b $k = -4.9\,\text{kWh}$ per degree and the point of the line $(T_0;\ E_0) = (0\,{}^\circ\text{C};\ 93\,\text{kWh})$; the temperature to estimate $T = -28\,{}^\circ\text{C}$
@@ -178,14 +205,28 @@ The circled places in the graph are the two points of the line from which the sl
 **Reading the graph:** From the line extended as a dashed line, about $230\,\text{kWh}$ is read at the temperature $-28\,{}^\circ\text{C}$.
 **Formula:** $E = E_0 + k\,(T - T_0)$, where $(T_0;\ E_0)$ is a known point of the line and $k$ its slope
 **Conversions:** Not needed: the temperature and the slope are in the same units as in the graph.
-**Substitution:** $E = 93\,\text{kWh} + (-4.9\,\text{kWh}/{}^\circ\text{C}) \cdot (-28\,{}^\circ\text{C} - 0\,{}^\circ\text{C}) = 93\,\text{kWh} + 137.2\,\text{kWh} = 230.2\,\text{kWh}$
+**Substitution:** $$
+\begin{aligned}
+E &= 93\,\text{kWh} \\
+&+ (-4.9\,\text{kWh}/{}^\circ\text{C}) \\
+&\cdot (-28\,{}^\circ\text{C} - 0\,{}^\circ\text{C}) \\
+&= 93\,\text{kWh} + 137.2\,\text{kWh} \\
+&= 230.2\,\text{kWh}
+\end{aligned}
+$$
 **Answer:** about $230\,\text{kWh}$ a day, two significant figures like the slope. The estimate is an extrapolation $9\,\text{K}$ beyond the coldest measurement, $-19\,{}^\circ\text{C}$. It holds if the heat losses keep growing in direct proportion to the temperature difference; a strong wind increases the consumption, and if the combined power of the heaters is below about $9\,\text{kW}$, they are not enough and the indoor temperature falls.
 **Reasonableness:** The consumption is roughly two and a half times the consumption at zero degrees, and the average power $230\,\text{kWh} : 24\,\text{h} \approx 9.6\,\text{kW}$ is at the upper end of the electric heating of a detached house. At an example price of $0.20\,\text{€/kWh}$ the day would cost about $46\,\text{€}$.
 
 ### d)
 **Find:** the outdoor temperature at which, according to the model, no heating is needed, and why it is not $21\,{}^\circ\text{C}$
 **Principle:** When no heating is needed, the consumption is just the other electricity consumption, $E_\text{other} = 12\,\text{kWh}$, so from the line $E = E_0 + kT$ we solve $T = \dfrac{E_\text{other} - E_0}{k}$. Energy is conserved: all the electrical energy used indoors finally becomes heat, and the people and solar radiation also bring energy into the house (chapter *Forms of energy and conservation of energy*).
-**Model answer:** From the extended line we read that the consumption falls to the level of the other consumption, $12\,\text{kWh}$, at about $16$–$17\,{}^\circ\text{C}$ ($T = \dfrac{E_\text{other} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4.9\,\text{kWh}/{}^\circ\text{C}} = 16.5\,{}^\circ\text{C}$ from the equation of the line). So the house needs heating only when it is colder outside. The temperature is about $4\,\text{K}$ below the indoor temperature $21\,{}^\circ\text{C}$, because the electrical energy of lighting, cooking and appliances becomes heat indoors. In addition, the residents warm the house, and solar radiation through the windows adds energy. These make up for the heat losses of a small temperature difference, so the heaters are needed only to cover the rest. The result is indicative: it is based on a line of winter days extended far beyond the measured range, and the data do not separate the sun and the wind.
+**Model answer:** From the extended line we read that the consumption falls to the level of the other consumption, $12\,\text{kWh}$, at about $16$–$17\,{}^\circ\text{C}$ ($$
+\begin{aligned}
+T &= \dfrac{E_\text{other} - E_0}{k} \\
+&= \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4.9\,\text{kWh}/{}^\circ\text{C}} \\
+&= 16.5\,{}^\circ\text{C}
+\end{aligned}
+$$ from the equation of the line). So the house needs heating only when it is colder outside. The temperature is about $4\,\text{K}$ below the indoor temperature $21\,{}^\circ\text{C}$, because the electrical energy of lighting, cooking and appliances becomes heat indoors. In addition, the residents warm the house, and solar radiation through the windows adds energy. These make up for the heat losses of a small temperature difference, so the heaters are needed only to cover the rest. The result is indicative: it is based on a line of winter days extended far beyond the measured range, and the data do not separate the sun and the wind.
 
 ### Yleisiä virheitä
 - The points are joined into a broken line in the order of the dates, so the graph does not show the dependence on temperature.
@@ -218,10 +259,19 @@ Recommendation: the submarine cable and the wind turbines together. The cable se
 ### c)
 **Find:** the annual carbon dioxide emissions of the diesel power plant and an evaluation of the claim “wind power is completely emission-free”
 **Principle:** The emissions are the energy multiplied by the emission factor, $m = e \cdot E$. Production methods are compared by their life-cycle emissions, which also include construction, transport and dismantling (chapter *Energy production, the environment and climate change*).
-**Model answer:** The consumption in kilowatt-hours is $3.0\,\text{GWh} = 3.0 \cdot 10^{6}\,\text{kWh}$, so the emissions of the diesel power plant are $m = e \cdot E = 700\,\text{g}/\text{kWh} \cdot 3.0 \cdot 10^{6}\,\text{kWh} = 2.1 \cdot 10^{9}\,\text{g}$. Substituting $1\,\text{g} = 10^{-6}\,\text{t}$: the emissions are about $2100\,\text{t}$ of carbon dioxide a year. A wind turbine burns nothing in operation, but manufacturing its steel and concrete, transporting it, building it and dismantling it cause emissions. So its life-cycle emission factor is a few tens of grams per kilowatt-hour or less, not zero. The claim is therefore inaccurate: wind power is low-emission, and its emissions are only a fraction of the emissions of diesel, but it is not completely emission-free.
+**Model answer:** The consumption in kilowatt-hours is $3.0\,\text{GWh} = 3.0 \cdot 10^{6}\,\text{kWh}$, so the emissions of the diesel power plant are $$
+\begin{aligned}
+m &= e \cdot E \\
+&= 700\,\text{g}/\text{kWh} \cdot 3.0 \\
+&\cdot 10^{6}\,\text{kWh} \\
+&= 2.1 \cdot 10^{9}\,\text{g}
+\end{aligned}
+$$. Substituting $1\,\text{g} = 10^{-6}\,\text{t}$: the emissions are about $2100\,\text{t}$ of carbon dioxide a year. A wind turbine burns nothing in operation, but manufacturing its steel and concrete, transporting it, building it and dismantling it cause emissions. So its life-cycle emission factor is a few tens of grams per kilowatt-hour or less, not zero. The claim is therefore inaccurate: wind power is low-emission, and its emissions are only a fraction of the emissions of diesel, but it is not completely emission-free.
 
 ### Yleisiä virheitä
-- In part a the wind turbines' annual energy is calculated with the rated power ($2.0\,\text{MW} \cdot 8760\,\text{h} = 17.5\,\text{GWh}$), so the average power is not taken into account.
+- In part a the wind turbines' annual energy is calculated with the rated power ($$
+2.0\,\text{MW} \cdot 8760\,\text{h} = 17.5\,\text{GWh}
+$$), so the average power is not taken into account.
 - The battery capacity ($\text{MWh}$) is compared directly with the consumption peak ($\text{MW}$), even though one is energy and the other power.
 - In part b the properties of the options are listed without comparing them with each other or making a recommendation.
 - In part c the gigawatt-hours are multiplied directly by the emission factor without converting them to kilowatt-hours.
@@ -276,7 +326,16 @@ If the efficiency increases as the amount of water increases, the reason is prob
 **Principle:** When the lower reservoir is chosen as the zero level, the potential energy of water at the height $h$ is equal to the work needed to lift it steadily up, $mgh$ (chapters *Work and energy* and *Kinetic energy, potential energy and mechanical energy*). The depth of the reservoir is small compared with the height difference, so all the water is at about the height $h$.
 **Formula:** $m = \rho V$ and $E_\text{p} = mgh$, so $E_\text{p} = \rho V g h$
 **Conversions:** $1.20\,\text{km} = 1.20 \cdot 1000\,\text{m} = 1200\,\text{m}$. The megawatt-hour by substitution: $1\,\text{MWh} = 10^{6}\,\text{W} \cdot 3600\,\text{s} = 3.6 \cdot 10^{9}\,\text{J}$.
-**Substitution:** $E_\text{p} = 1000\,\text{kg}/\text{m}^3 \cdot 7.50 \cdot 10^{4}\,\text{m}^3 \cdot 9.81\,\text{m}/\text{s}^2 \cdot 1200\,\text{m} = 8.829 \cdot 10^{11}\,\text{J} = \dfrac{8.829 \cdot 10^{11}}{3.6 \cdot 10^{9}}\,\text{MWh} = 245.3\,\text{MWh}$
+**Substitution:** $$
+\begin{aligned}
+E_\text{p} &= 1000\,\text{kg}/\text{m}^3 \cdot 7.50 \\
+&\cdot 10^{4}\,\text{m}^3 \cdot 9.81\,\text{m}/\text{s}^2 \\
+&\cdot 1200\,\text{m} \\
+&= 8.829 \cdot 10^{11}\,\text{J} \\
+&= \dfrac{8.829 \cdot 10^{11}}{3.6 \cdot 10^{9}}\,\text{MWh} \\
+&= 245.3\,\text{MWh}
+\end{aligned}
+$$
 **Answer:** $E_\text{p} \approx 245\,\text{MWh}$, three significant figures like the volume $7.50 \cdot 10^{4}\,\text{m}^3$ and the height difference $1.20\,\text{km}$.
 **Reasonableness:** A kilogram of water gains about $12\,\text{kJ}$ from a drop of $1200\,\text{m}$, so one cubic metre about $12\,\text{MJ} \approx 3.3\,\text{kWh}$. $75\,000$ cubic metres therefore give about $250\,\text{MWh}$, the same order of magnitude.
 
@@ -298,7 +357,13 @@ If the efficiency increases as the amount of water increases, the reason is prob
 **Conversions:** $85\,\% = 0.85$ and $88\,\% = 0.88$; the energies stay in megawatt-hours.
 **Substitution:** $E_\text{grid} = \dfrac{245.3\,\text{MWh}}{0.85} = 288.5\,\text{MWh}$ and $\eta = 0.85 \cdot 0.88 = 0.748 = 74.8\,\%$
 **Answer:** About $290\,\text{MWh}$ is taken from the grid (two significant figures like the efficiency $85\,\%$; more precisely $289\,\text{MWh}$), and the overall efficiency is about $75\,\%$.
-**Reasonableness:** A check with the energies: $E_\text{el} : E_\text{grid} = 215.8\,\text{MWh} : 288.5\,\text{MWh} = 0.748$, the same as the product of the efficiencies. About a quarter of the energy becomes heat in the pipes, the pump, the turbine and the generators, which is typical of pumped-storage plants.
+**Reasonableness:** A check with the energies: $$
+\begin{aligned}
+&E_\text{el} : E_\text{grid} \\
+&= 215.8\,\text{MWh} : 288.5\,\text{MWh} \\
+&= 0.748
+\end{aligned}
+$$, the same as the product of the efficiencies. About a quarter of the energy becomes heat in the pipes, the pump, the turbine and the generators, which is typical of pumped-storage plants.
 
 ### d)
 **Find:** whether the claim “the plant produces $216\,\text{MWh}$ of electricity every day” holds, and why the plant can still be useful

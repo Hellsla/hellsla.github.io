@@ -33,7 +33,7 @@
     {
      "text": "$\\rho \\approx 2{,}7\\,\\text{g/cm}^3$",
      "correct": true,
-     "feedback": "Oikein. Tilavuus on lukemien erotus $12\\,\\text{ml} = 12\\,\\text{cm}^3$, jossa on kaksi merkitsevää numeroa. Jakolaskun tulos saa yhtä monta merkitsevää numeroa kuin epätarkin lähtöarvo, joten $32{,}46\\,\\text{g} : 12\\,\\text{cm}^3 = 2{,}705\\,\\text{g/cm}^3 \\approx 2{,}7\\,\\text{g/cm}^3$. Erotuksen tarkkuudesta kerrotaan luvussa *Tiheys*."
+     "feedback": "Oikein. Tilavuus on lukemien erotus $12\\,\\text{ml} = 12\\,\\text{cm}^3$, jossa on kaksi merkitsevää numeroa. Jakolaskun tulos saa yhtä monta merkitsevää numeroa kuin epätarkin lähtöarvo, joten $$\n\\begin{aligned}\n&32{,}46\\,\\text{g} : 12\\,\\text{cm}^3 \\\\\n&= 2{,}705\\,\\text{g/cm}^3 \\\\\n&\\approx 2{,}7\\,\\text{g/cm}^3\n\\end{aligned}\n$$. Erotuksen tarkkuudesta kerrotaan luvussa *Tiheys*."
     },
     {
      "text": "$\\rho \\approx 2{,}71\\,\\text{g/cm}^3$",

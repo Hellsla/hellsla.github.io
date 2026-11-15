@@ -82,7 +82,7 @@
         },
         {
           "text": "$3.6 \\cdot 10^{6}\\,\\text{J}$",
-          "feedback": "Correct. $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3\\,600\\,000\\,\\text{J} = 3.6\\,\\text{MJ}$. Review if needed in the chapter *Power*.",
+          "feedback": "Correct. $$\n\\begin{aligned}\n&1\\,\\text{kWh} \\\\\n&= 1000\\,\\text{W} \\cdot 3600\\,\\text{s} \\\\\n&= 3\\,600\\,000\\,\\text{J} \\\\\n&= 3.6\\,\\text{MJ}\n\\end{aligned}\n$$. Review if needed in the chapter *Power*.",
           "correct": true
         },
         {
@@ -108,7 +108,7 @@
         },
         {
           "text": "about $73\\,\\%$, because the efficiencies are multiplied.",
-          "feedback": "Correct. $0.90 \\cdot 0.90 \\cdot 0.90 = 0.729 \\approx 73\\,\\%$. Review if needed in the chapter *Energy production and the efficiency of power plants*.",
+          "feedback": "Correct. $$\n\\begin{aligned}\n&0.90 \\cdot 0.90 \\cdot 0.90 \\\\\n&= 0.729 \\\\\n&\\approx 73\\,\\%\n\\end{aligned}\n$$. Review if needed in the chapter *Energy production and the efficiency of power plants*.",
           "correct": true
         }
       ]
@@ -143,7 +143,7 @@
       "prompt": "A wind turbine has a rated power of $5.0\\,\\text{MW}$, and a year has $8760\\,\\text{h}$. Which claim about the turbine's annual production is correct?",
       "choices": [
         {
-          "text": "It is $5.0\\,\\text{MW} \\cdot 8760\\,\\text{h} \\approx 44\\,\\text{GWh}$.",
+          "text": "It is $$\n5.0\\,\\text{MW} \\cdot 8760\\,\\text{h} \\approx 44\\,\\text{GWh}\n$$.",
           "feedback": "This would be the production if the turbine ran at its rated power all year. The wind varies, so the average power is smaller than the rated power. Review the chapter *Ways of producing energy and how they compare*."
         },
         {
@@ -189,7 +189,7 @@
             "feedback": "This is the fraction lost in the steam cycle, $(P_1 - P_2) : P_1$. The efficiency is the fraction that comes out."
           }
         ],
-        "solution": "**Given:** from the chart $P_0 = 400\\,\\text{MW}$, $P_1 = 350\\,\\text{MW}$, $P_2 = 150\\,\\text{MW}$ and $P_3 = 140\\,\\text{MW}$; the grid spacing is $50\\,\\text{MW}$\n\n**Find:** the efficiency $\\eta_2$ of the steam cycle as a percentage\n\n**Principle:** The efficiency of a stage is the fraction of the power entering it that comes out. The power $P_1$ given by the boiler enters the steam cycle, and $P_2$ leaves it. Energy is conserved, so the difference $P_1 - P_2$ is transferred as heat to the surroundings in the condenser.\n\n**Reading the graph:** The tops of the bars are on grid lines: $P_1$ on the seventh line ($7 \\cdot 50\\,\\text{MW} = 350\\,\\text{MW}$) and $P_2$ on the third ($150\\,\\text{MW}$).\n\n**Formula:** $\\eta_2 = \\dfrac{P_2}{P_1}$\n\n**Conversions:** Both powers are in megawatts, so the unit cancels and no conversions are needed. The ratio is converted to a percentage by multiplying it by $100\\,\\%$.\n\n**Substitution:** $\\eta_2 = \\dfrac{150\\,\\text{MW}}{350\\,\\text{MW}} = 0.4286 = 42.86\\,\\%$\n\n**Answer:** $43\\,\\%$, two significant figures, because the powers are read from the chart to about $5\\,\\text{MW}$.\n\n**Reasonableness:** The other stages are $\\eta_1 = 350 : 400 = 0.875$ and $\\eta_3 = 140 : 150 \\approx 0.933$. The product $0.875 \\cdot 0.4286 \\cdot 0.933 = 0.350$ is the same as $P_3 : P_0 = 140 : 400 = 0.35$. The steam cycle is the weakest stage, as it should be in a heat engine: part of the heat must be given off to the colder surroundings."
+        "solution": "**Given:** from the chart $P_0 = 400\\,\\text{MW}$, $P_1 = 350\\,\\text{MW}$, $P_2 = 150\\,\\text{MW}$ and $P_3 = 140\\,\\text{MW}$; the grid spacing is $50\\,\\text{MW}$\n\n**Find:** the efficiency $\\eta_2$ of the steam cycle as a percentage\n\n**Principle:** The efficiency of a stage is the fraction of the power entering it that comes out. The power $P_1$ given by the boiler enters the steam cycle, and $P_2$ leaves it. Energy is conserved, so the difference $P_1 - P_2$ is transferred as heat to the surroundings in the condenser.\n\n**Reading the graph:** The tops of the bars are on grid lines: $P_1$ on the seventh line ($7 \\cdot 50\\,\\text{MW} = 350\\,\\text{MW}$) and $P_2$ on the third ($150\\,\\text{MW}$).\n\n**Formula:** $\\eta_2 = \\dfrac{P_2}{P_1}$\n\n**Conversions:** Both powers are in megawatts, so the unit cancels and no conversions are needed. The ratio is converted to a percentage by multiplying it by $100\\,\\%$.\n\n**Substitution:** $\\eta_2 = \\dfrac{150\\,\\text{MW}}{350\\,\\text{MW}} = 0.4286 = 42.86\\,\\%$\n\n**Answer:** $43\\,\\%$, two significant figures, because the powers are read from the chart to about $5\\,\\text{MW}$.\n\n**Reasonableness:** The other stages are $\\eta_1 = 350 : 400 = 0.875$ and $\\eta_3 = 140 : 150 \\approx 0.933$. The product $$\n0.875 \\cdot 0.4286 \\cdot 0.933 = 0.350\n$$ is the same as $P_3 : P_0 = 140 : 400 = 0.35$. The steam cycle is the weakest stage, as it should be in a heat engine: part of the heat must be given off to the colder surroundings."
       }
     },
     {
@@ -208,7 +208,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the mistake: the radiator",
-      "prompt": "A student calculated how much energy a $2.0\\,\\text{kW}$ electric radiator uses in $30\\,\\text{min}$: “$E = P\\,t = 2.0\\,\\text{kW} \\cdot 30\\,\\text{min} = 60\\,\\text{kWh}$.” What is wrong with the solution?",
+      "prompt": "A student calculated how much energy a $2.0\\,\\text{kW}$ electric radiator uses in $30\\,\\text{min}$: “$$\n\\begin{aligned}\nE &= P\\,t \\\\\n&= 2.0\\,\\text{kW} \\cdot 30\\,\\text{min} \\\\\n&= 60\\,\\text{kWh}\n\\end{aligned}\n$$.” What is wrong with the solution?",
       "choices": [
         {
           "text": "The formula is wrong: energy is power divided by time.",
@@ -220,7 +220,7 @@
         },
         {
           "text": "The time has not been converted to hours: correctly $E = 1.0\\,\\text{kWh}$.",
-          "feedback": "Correct. The product of power and time is in kilowatt-hours only when the time is in hours: $30\\,\\text{min} = 0.50\\,\\text{h}$, so $E = 2.0\\,\\text{kW} \\cdot 0.50\\,\\text{h} = 1.0\\,\\text{kWh}$.",
+          "feedback": "Correct. The product of power and time is in kilowatt-hours only when the time is in hours: $30\\,\\text{min} = 0.50\\,\\text{h}$, so $$\n\\begin{aligned}\nE &= 2.0\\,\\text{kW} \\cdot 0.50\\,\\text{h} \\\\\n&= 1.0\\,\\text{kWh}\n\\end{aligned}\n$$.",
           "correct": true
         }
       ]
@@ -354,7 +354,7 @@
           "feedback": "You took only the power plant's efficiency into account. Transmission, charging and the motor also waste part of the power."
         }
       ],
-      "solution": "**Given:** power given by the motor $P_\\text{a} = 15\\,\\text{kW}$; efficiencies $\\eta_1 = 38\\,\\%$ (power plant), $\\eta_2 = 96\\,\\%$ (transmission), $\\eta_3 = 90\\,\\%$ (charging and battery) and $\\eta_4 = 90\\,\\%$ (motor)\n\n**Find:** the fuel power $P_0$ of the power plant in kilowatts\n\n**Principle:** The stages are in series: the useful power of each stage is the power taken in by the next one. The definition of efficiency, $\\eta = \\tfrac{P_\\text{a}}{P_\\text{o}}$, gives the power output of each stage from its power input, and the powers are substituted one after another (chapter *Energy production and the efficiency of power plants*).\n\n**Formula:** The power outputs of the stages are $P_1 = \\eta_1 P_0$, $P_2 = \\eta_2 P_1$, $P_3 = \\eta_3 P_2$ and $P_\\text{a} = \\eta_4 P_3$. Substituting them one after another gives $P_\\text{a} = \\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4\\,P_0$, so $P_0 = \\dfrac{P_\\text{a}}{\\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4}$\n\n**Conversions:** Percentages to decimals: $38\\,\\% = 0.38$, $96\\,\\% = 0.96$ and $90\\,\\% = 0.90$. The power can stay in kilowatts, because the answer is asked in kilowatts.\n\n**Substitution:** $P_0 = \\dfrac{15\\,\\text{kW}}{0.38 \\cdot 0.96 \\cdot 0.90 \\cdot 0.90} = \\dfrac{15\\,\\text{kW}}{0.2955} = 50.76\\,\\text{kW}$\n\n**Answer:** $51\\,\\text{kW}$, two significant figures like the power $15\\,\\text{kW}$ and the efficiencies.\n\n**Reasonableness:** The efficiency of the chain, $0.30$, is smaller than that of the weakest stage, $0.38$, as it must be in a multiplication. About three times the motor's power is needed as fuel power, and the check $0.2955 \\cdot 50.76\\,\\text{kW} = 15.0\\,\\text{kW}$ agrees."
+      "solution": "**Given:** power given by the motor $P_\\text{a} = 15\\,\\text{kW}$; efficiencies $\\eta_1 = 38\\,\\%$ (power plant), $\\eta_2 = 96\\,\\%$ (transmission), $\\eta_3 = 90\\,\\%$ (charging and battery) and $\\eta_4 = 90\\,\\%$ (motor)\n\n**Find:** the fuel power $P_0$ of the power plant in kilowatts\n\n**Principle:** The stages are in series: the useful power of each stage is the power taken in by the next one. The definition of efficiency, $\\eta = \\tfrac{P_\\text{a}}{P_\\text{o}}$, gives the power output of each stage from its power input, and the powers are substituted one after another (chapter *Energy production and the efficiency of power plants*).\n\n**Formula:** The power outputs of the stages are $P_1 = \\eta_1 P_0$, $P_2 = \\eta_2 P_1$, $P_3 = \\eta_3 P_2$ and $P_\\text{a} = \\eta_4 P_3$. Substituting them one after another gives $P_\\text{a} = \\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4\\,P_0$, so $P_0 = \\dfrac{P_\\text{a}}{\\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4}$\n\n**Conversions:** Percentages to decimals: $38\\,\\% = 0.38$, $96\\,\\% = 0.96$ and $90\\,\\% = 0.90$. The power can stay in kilowatts, because the answer is asked in kilowatts.\n\n**Substitution:** $P_0 = \\dfrac{15\\,\\text{kW}}{0.38 \\cdot 0.96 \\cdot 0.90 \\cdot 0.90} = \\dfrac{15\\,\\text{kW}}{0.2955} = 50.76\\,\\text{kW}$\n\n**Answer:** $51\\,\\text{kW}$, two significant figures like the power $15\\,\\text{kW}$ and the efficiencies.\n\n**Reasonableness:** The efficiency of the chain, $0.30$, is smaller than that of the weakest stage, $0.38$, as it must be in a multiplication. About three times the motor's power is needed as fuel power, and the check $$\n0.2955 \\cdot 50.76\\,\\text{kW} = 15.0\\,\\text{kW}\n$$ agrees."
     },
     {
       "id": "pelletti",
@@ -431,7 +431,7 @@
       "choices": [
         {
           "text": "The fuel power is $1500\\,\\text{MW}$, and $900\\,\\text{MW}$ is transferred as heat to the surroundings.",
-          "feedback": "Correct. $P_0 = 600\\,\\text{MW} : 0.40 = 1500\\,\\text{MW}$, and energy is conserved: $1500\\,\\text{MW} - 600\\,\\text{MW} = 900\\,\\text{MW}$ is waste heat.",
+          "feedback": "Correct. $$\n\\begin{aligned}\nP_0 &= 600\\,\\text{MW} : 0.40 \\\\\n&= 1500\\,\\text{MW}\n\\end{aligned}\n$$, and energy is conserved: $$\n\\begin{aligned}\n&1500\\,\\text{MW} - 600\\,\\text{MW} \\\\\n&= 900\\,\\text{MW}\n\\end{aligned}\n$$ is waste heat.",
           "correct": true
         },
         {
@@ -440,7 +440,7 @@
         },
         {
           "text": "The fuel power is $1000\\,\\text{MW}$, because the losses are $40\\,\\%$ of the electrical power.",
-          "feedback": "Efficiency and losses are calculated from the power taken in, not from the power given. $P_0 = P_\\text{a} : \\eta = 600\\,\\text{MW} : 0.40 = 1500\\,\\text{MW}$. Review the chapter *Energy production and the efficiency of power plants*."
+          "feedback": "Efficiency and losses are calculated from the power taken in, not from the power given. $$\n\\begin{aligned}\nP_0 &= P_\\text{a} : \\eta \\\\\n&= 600\\,\\text{MW} : 0.40 \\\\\n&= 1500\\,\\text{MW}\n\\end{aligned}\n$$. Review the chapter *Energy production and the efficiency of power plants*."
         }
       ],
       "practice": "Review the denominator of efficiency in the chapter [*Efficiency*](fy2-4.html) and the chain of a power plant in the chapter [*Energy production and the efficiency of power plants*](fy3-15.html)."

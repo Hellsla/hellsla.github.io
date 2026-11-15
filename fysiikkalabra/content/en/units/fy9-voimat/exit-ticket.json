@@ -5,6 +5,6 @@
   },
   {
     "q": "A box ($10.0\\,\\text{kg}$) is at rest on a slope whose angle of inclination is $30^\\circ$. How large is the normal force of the slope?",
-    "a": "Only the weight and the normal force act perpendicular to the surface, so $N = mg\\cos\\alpha = 10.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot \\cos 30^\\circ \\approx 85.0\\,\\text{N}$, smaller than the weight $98.1\\,\\text{N}$."
+    "a": "Only the weight and the normal force act perpendicular to the surface, so $$\n\\begin{aligned}\nN &= mg\\cos\\alpha \\\\\n&= 10.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\\n&\\cdot \\cos 30^\\circ \\\\\n&\\approx 85.0\\,\\text{N}\n\\end{aligned}\n$$, smaller than the weight $98.1\\,\\text{N}$."
   }
 ]

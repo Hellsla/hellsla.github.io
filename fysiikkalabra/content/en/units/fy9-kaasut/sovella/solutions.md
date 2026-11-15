@@ -16,18 +16,46 @@
 **Principle:** The platform rises at a constant speed, so the piston does lifting work on it, which is the force times the distance (chapter *Work and energy*). The force is $\Delta p\,A$, and $Ah$ is the change in volume of the air in the cylinder, so the same work is $\Delta p\,\Delta V$. The air in the cylinder itself pushes the piston with the total pressure, and its work is $p\,\Delta V$ (chapter *Work done by a gas and the heat engine*).
 **Formula:** $W = mgh$ and $W = \Delta p\,A h = \Delta p\,\Delta V$; the work of the air $W_\text{g} = (p_0 + \Delta p)\,\Delta V$
 **Conversions:** $\Delta V = Ah = 0.031\,42\,\text{m}^2 \cdot 1.20\,\text{m} = 0.037\,70\,\text{m}^3 = 37.7\,\textsf{l}$, and $1\,\text{kPa} \cdot 1\,\textsf{l} = 1\,\text{J}$.
-**Substitution:** $W = 1800\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.20\,\text{m} = 21\,190\,\text{J}$ and $\Delta p\,\Delta V = 562.1\,\text{kPa} \cdot 37.70\,\textsf{l} = 21\,190\,\text{J}$. The work of the air $W_\text{g} = 663.1\,\text{kPa} \cdot 37.70\,\textsf{l} = 25\,000\,\text{J}$, of which $p_0\,\Delta V = 101\,\text{kPa} \cdot 37.70\,\textsf{l} = 3810\,\text{J}$.
+**Substitution:** $$
+\begin{aligned}
+W &= 1800\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\cdot 1.20\,\text{m} \\
+&= 21\,190\,\text{J}
+\end{aligned}
+$$ and $\Delta p\,\Delta V = 562.1\,\text{kPa} \cdot 37.70\,\textsf{l} = 21\,190\,\text{J}$. The work of the air $W_\text{g} = 663.1\,\text{kPa} \cdot 37.70\,\textsf{l} = 25\,000\,\text{J}$, of which $p_0\,\Delta V = 101\,\text{kPa} \cdot 37.70\,\textsf{l} = 3810\,\text{J}$.
 **Answer:** $W \approx 21.2\,\text{kJ}$, three significant figures like the lifting height $1.20\,\text{m}$. The air in the cylinder does the work $25.0\,\text{kJ}$, because it pushes the piston with the total pressure. Above the piston there is outside air, and during the lift the piston pushes it out of the way: this takes $3.8\,\text{kJ}$, and only the rest lifts the car.
 **Reasonableness:** The two different ways give the same result, because $\Delta p\,A$ is exactly as large as the weight. The result is equal to the increase in the car's potential energy.
 
 ### c)
-**Given:** volume of the tank $V_\text{s} = 100\,\textsf{l}$, gauge pressure of the tank at first $900\,\text{kPa}$, total pressure in the cylinder during the lift $p_\text{c} = 101\,\text{kPa} + 562\,\text{kPa} = 663\,\text{kPa}$, volume entering the cylinder $\Delta V = 37.7\,\textsf{l}$; constant temperature
+**Given:** volume of the tank $V_\text{s} = 100\,\textsf{l}$, gauge pressure of the tank at first $900\,\text{kPa}$, total pressure in the cylinder during the lift $$
+\begin{aligned}
+p_\text{c} &= 101\,\text{kPa} + 562\,\text{kPa} \\
+&= 663\,\text{kPa}
+\end{aligned}
+$$, volume entering the cylinder $\Delta V = 37.7\,\textsf{l}$; constant temperature
 **Find:** the reading $\Delta p_2$ of the tank's gauge after one lift, and whether the air is enough for a second lift
 **Principle:** No air is lost: the air of the tank is divided between the tank and the cylinder. At constant temperature the product $pV$ of the same amount of air stays the same (chapter *Changes of state of a gas and Boyle's law*), so the $pV$ of the original air in the tank is the sum of the $pV$ of the air left in the tank and of the air moved into the cylinder. The calculations use total pressures. Air flows only from a higher pressure to a lower one, so the lift continues only as long as the pressure in the tank is at least $p_\text{c}$.
 **Formula:** $p_1V_\text{s} = p_2V_\text{s} + p_\text{c}\,\Delta V$, so $p_2 = p_1 - \dfrac{p_\text{c}\,\Delta V}{V_\text{s}}$ and $\Delta p_2 = p_2 - p_0$
 **Conversions:** The total pressure at first $p_1 = 900\,\text{kPa} + 101\,\text{kPa} = 1001\,\text{kPa}$. The litres cancel.
-**Substitution:** $p_2 = 1001\,\text{kPa} - \dfrac{663.1\,\text{kPa} \cdot 37.70\,\textsf{l}}{100\,\textsf{l}} = 1001\,\text{kPa} - 250.0\,\text{kPa} = 751.0\,\text{kPa}$ and $\Delta p_2 = 751.0\,\text{kPa} - 101\,\text{kPa} = 650\,\text{kPa}$. After a second full lift the pressure would be $751.0\,\text{kPa} - 250.0\,\text{kPa} = 501\,\text{kPa}$.
-**Answer:** The gauge shows about $650\,\text{kPa}$, three significant figures like the numbers of the tank and the cylinder. The air is not enough for a second lift: the pressure in the tank would fall below the $663\,\text{kPa}$ the cylinder needs once $\dfrac{(751.0 - 663.1)\,\text{kPa} \cdot 100\,\textsf{l}}{663.1\,\text{kPa}} \approx 13.3\,\textsf{l}$ has gone from the tank into the cylinder, that is, when the platform has risen about $13.3\,\textsf{l} : 31.4\,\textsf{l/m} \approx 0.42\,\text{m}$. The platform stops there until the compressor starts. The model assumes a constant temperature. In reality the air leaving the tank cools as it expands, so the pressure is momentarily even lower than calculated and the lift stops earlier.
+**Substitution:** $$
+\begin{aligned}
+p_2 &= 1001\,\text{kPa} \\
+&- \dfrac{663.1\,\text{kPa} \cdot 37.70\,\textsf{l}}{100\,\textsf{l}} \\
+&= 1001\,\text{kPa} - 250.0\,\text{kPa} \\
+&= 751.0\,\text{kPa}
+\end{aligned}
+$$ and $\Delta p_2 = 751.0\,\text{kPa} - 101\,\text{kPa} = 650\,\text{kPa}$. After a second full lift the pressure would be $$
+\begin{aligned}
+&751.0\,\text{kPa} - 250.0\,\text{kPa} \\
+&= 501\,\text{kPa}
+\end{aligned}
+$$.
+**Answer:** The gauge shows about $650\,\text{kPa}$, three significant figures like the numbers of the tank and the cylinder. The air is not enough for a second lift: the pressure in the tank would fall below the $663\,\text{kPa}$ the cylinder needs once $$
+\begin{aligned}
+&\dfrac{(751.0 - 663.1)\,\text{kPa} \cdot 100\,\textsf{l}}{663.1\,\text{kPa}} \\
+&\approx 13.3\,\textsf{l}
+\end{aligned}
+$$ has gone from the tank into the cylinder, that is, when the platform has risen about $13.3\,\textsf{l} : 31.4\,\textsf{l/m} \approx 0.42\,\text{m}$. The platform stops there until the compressor starts. The model assumes a constant temperature. In reality the air leaving the tank cools as it expands, so the pressure is momentarily even lower than calculated and the lift stops earlier.
 **Reasonableness:** One lift takes $250\,\text{kPa}$, that is, a quarter, of the tank's pressure, because the $pV$ of the air moved into the cylinder is $663 \cdot 37.7 \approx 25\,000\,\text{kPa}\cdot\textsf{l}$ and the original $pV$ of the tank is about $100\,000\,\text{kPa}\cdot\textsf{l}$.
 
 ### Yleisiä virheitä
@@ -49,7 +77,12 @@
 **Conversions:** $p = 104 \cdot 1000\,\text{Pa} = 104\,000\,\text{Pa}$, $T = (25 + 273.15)\,\text{K} = 298.15\,\text{K}$ and $M = 16.0 \cdot 0.001\,\text{kg/mol} = 0.0160\,\text{kg/mol}$
 **Substitution:** $n = \dfrac{104\,000\,\text{Pa} \cdot 52.0\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 298.15\,\text{K}} = 2183\,\text{mol}$ and $m = 2183\,\text{mol} \cdot 0.0160\,\tfrac{\text{kg}}{\text{mol}} = 34.9\,\text{kg}$
 **Answer:** $m \approx 34.9\,\text{kg}$ per hour, three significant figures like the volume $52.0\,\text{m}^3$ and the molar mass $16.0\,\text{g/mol}$.
-**Reasonableness:** The density of methane is $34.9\,\text{kg} : 52.0\,\text{m}^3 \approx 0.67\,\text{kg/m}^3$, smaller than the about $1.2\,\text{kg/m}^3$ of air, as the ratio of the molar masses $16 : 29$ predicts.
+**Reasonableness:** The density of methane is $$
+\begin{aligned}
+&34.9\,\text{kg} : 52.0\,\text{m}^3 \\
+&\approx 0.67\,\text{kg/m}^3
+\end{aligned}
+$$, smaller than the about $1.2\,\text{kg/m}^3$ of air, as the ratio of the molar masses $16 : 29$ predicts.
 
 ### b)
 **Given:** from part a $m = 34.92\,\text{kg}$ in the time $t = 1\,\text{h}$, heat of combustion $H = 50.0\,\text{MJ/kg}$, electrical efficiency $\eta_\text{s} = 36\,\%$
@@ -69,7 +102,12 @@
 **Conversions:** Not needed: the powers are in kilowatts, and $\eta_\text{h} = 75\,\% = 0.75$.
 **Substitution:** $P_2 = 485.1\,\text{kW} - 174.6\,\text{kW} = 310.5\,\text{kW}$, $P_\text{h} = 0.75 \cdot 310.5\,\text{kW} = 232.9\,\text{kW}$ and $\eta_\text{tot} = \dfrac{174.6\,\text{kW} + 232.9\,\text{kW}}{485.1\,\text{kW}} = 0.840$
 **Answer:** $\eta_\text{tot} \approx 84\,\%$, two significant figures like the efficiencies $36\,\%$ and $75\,\%$. Even a frictionless engine must give heat to a colder place, so the share of electricity stays well below $100\,\%$. The total efficiency is high because the heat given away is used for heating; it does not increase the electricity obtained.
-**Reasonableness:** What goes to waste is $485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \approx 78\,\text{kW}$, that is, $16\,\%$, the same as $25\,\%$ of the heat power. The result is of the same order of magnitude as the $85$–$90\,\%$ of combined heat and power plants.
+**Reasonableness:** What goes to waste is $$
+\begin{aligned}
+&485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \\
+&\approx 78\,\text{kW}
+\end{aligned}
+$$, that is, $16\,\%$, the same as $25\,\%$ of the heat power. The result is of the same order of magnitude as the $85$–$90\,\%$ of combined heat and power plants.
 
 ### Yleisiä virheitä
 - In part a the temperature is substituted in degrees Celsius, so the amount of substance comes out over ten times too large, $26\,000\,\text{mol}$.
@@ -254,10 +292,21 @@ The circled places in the graph are the two points of the line from which the sl
 **Principle:** The amount of air and the pressure stay the same, so by the ideal gas law the volume is directly proportional to the kelvin temperature, and the slope of the line is $nR/p$ (chapter *Ideal gas law $pV = nRT$*). A change of one degree Celsius is the same as a change of one kelvin, so the slope is the same on both scales.
 **Reading the graph:** The slope is read from the line of part a as in part b: $k = 10.8\,\text{ml} : 80\,{}^\circ\text{C} = 0.135\,\text{ml}/{}^\circ\text{C}$.
 **Formula:** $pV = nRT$, so $V = \dfrac{nR}{p}\,T$ and $k = \dfrac{\Delta V}{\Delta T} = \dfrac{nR}{p}$, from which $n = \dfrac{pk}{R}$
-**Conversions:** $k = 0.135\,\text{ml/K} = 0.135 \cdot 10^{-6}\,\text{m}^3/\text{K}$, because $1\,\text{ml} = 10^{-6}\,\text{m}^3$, and $p = 101.3 \cdot 1000\,\text{Pa} = 101\,300\,\text{Pa}$
+**Conversions:** $$
+\begin{aligned}
+k &= 0.135\,\text{ml/K} \\
+&= 0.135 \cdot 10^{-6}\,\text{m}^3/\text{K}
+\end{aligned}
+$$, because $1\,\text{ml} = 10^{-6}\,\text{m}^3$, and $p = 101.3 \cdot 1000\,\text{Pa} = 101\,300\,\text{Pa}$
 **Substitution:** $n = \dfrac{101\,300\,\text{Pa} \cdot 0.135 \cdot 10^{-6}\,\text{m}^3/\text{K}}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}} = 1.65 \cdot 10^{-3}\,\text{mol}$
 **Answer:** $n \approx 1.65\,\text{mmol}$, three significant figures like the slope $0.135\,\text{ml}/{}^\circ\text{C}$.
-**Reasonableness:** A single measured point gives almost the same: $n = \dfrac{pV}{RT} = \dfrac{101\,300\,\text{Pa} \cdot 41.1 \cdot 10^{-6}\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 298.15\,\text{K}} = 1.68\,\text{mmol}$. The difference arises because the result calculated through the slope does not use the assumption that the line passes through absolute zero. The order of magnitude fits: $40\,\text{ml}$ of air is about $1.7\,\text{mmol}$, since a mole of gas takes up about $24\,\textsf{l}$ at room temperature.
+**Reasonableness:** A single measured point gives almost the same: $$
+\begin{aligned}
+n &= \dfrac{pV}{RT} \\
+&= \dfrac{101\,300\,\text{Pa} \cdot 41.1 \cdot 10^{-6}\,\text{m}^3}{8.31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 298.15\,\text{K}} \\
+&= 1.68\,\text{mmol}
+\end{aligned}
+$$. The difference arises because the result calculated through the slope does not use the assumption that the line passes through absolute zero. The order of magnitude fits: $40\,\text{ml}$ of air is about $1.7\,\text{mmol}$, since a mole of gas takes up about $24\,\textsf{l}$ at room temperature.
 
 ### d)
 **Find:** how the $1.5\,\text{ml}$ of air outside the bath changes the line and the estimate of absolute zero, and whether repetitions remove the error
@@ -290,7 +339,9 @@ The circled places in the graph are the two points of the line from which the sl
 **Conversions:** Not needed for the calculation. For the comparison, in kelvins the sea is $3 + 273 = 276\,\text{K}$ and the air $253\,\text{K}$.
 **Substitution:** $\eta = \dfrac{30\,\text{kW}}{500\,\text{kW}} = 0.060 = 6.0\,\%$ and $P_2 = 500\,\text{kW} - 30\,\text{kW} = 470\,\text{kW}$
 **Answer:** $\eta \approx 6.0\,\%$ and $P_2 \approx 470\,\text{kW}$, two significant figures like the work power $30\,\text{kW}$. The efficiency is small because the temperature difference of $23\,\text{K}$ is small compared with the temperature of the hot source, $276\,\text{K}$: the smaller this ratio is, the smaller the share of the heat that can turn into work.
-**Reasonableness:** Energy is conserved: $30\,\text{kW} + 470\,\text{kW} = 500\,\text{kW}$. The machine breaks no laws, because it gives almost all the heat to the colder place. The efficiency is much smaller than the about $40\,\%$ of a power plant, where the steam is hundreds of degrees hotter than the condenser.
+**Reasonableness:** Energy is conserved: $$
+30\,\text{kW} + 470\,\text{kW} = 500\,\text{kW}
+$$. The machine breaks no laws, because it gives almost all the heat to the colder place. The efficiency is much smaller than the about $40\,\%$ of a power plant, where the steam is hundreds of degrees hotter than the condenser.
 
 ### c)
 **Find:** why a heat pump can heat the cabins with seawater, even though the brochure's engine cannot work
@@ -369,9 +420,17 @@ If the points lie on a straight line but the line does not pass through the orig
 
 **Formula:** $F_\text{p} - mg = ma$ and $F_\text{p} = \Delta p\,A$, where $m = \rho\,l\,b\,h$ and $A = \pi \left(\dfrac{d}{2}\right)^2$, so $\Delta p = \dfrac{m(g + a)}{\pi (d/2)^2}$
 **Conversions:** $10\,\text{mm} = 10 \cdot 0.001\,\text{m} = 0.010\,\text{m}$ and $d/2 = 300\,\text{mm} : 2 = 150\,\text{mm} = 0.150\,\text{m}$
-**Substitution:** $m = 2500\,\tfrac{\text{kg}}{\text{m}^3} \cdot 2.40\,\text{m} \cdot 1.20\,\text{m} \cdot 0.010\,\text{m} = 72.0\,\text{kg}$, $A = \pi \cdot (0.150\,\text{m})^2 = 0.070\,69\,\text{m}^2$ and $\Delta p = \dfrac{72.0\,\text{kg} \cdot (9.81 + 1.2)\,\text{m/s}^2}{0.070\,69\,\text{m}^2} = \dfrac{792.7\,\text{N}}{0.070\,69\,\text{m}^2} = 11\,210\,\text{Pa}$
+**Substitution:** $$
+\begin{aligned}
+m &= 2500\,\tfrac{\text{kg}}{\text{m}^3} \cdot 2.40\,\text{m} \\
+&\cdot 1.20\,\text{m} \cdot 0.010\,\text{m} \\
+&= 72.0\,\text{kg}
+\end{aligned}
+$$, $A = \pi \cdot (0.150\,\text{m})^2 = 0.070\,69\,\text{m}^2$ and $\Delta p = \dfrac{72.0\,\text{kg} \cdot (9.81 + 1.2)\,\text{m/s}^2}{0.070\,69\,\text{m}^2} = \dfrac{792.7\,\text{N}}{0.070\,69\,\text{m}^2} = 11\,210\,\text{Pa}$
 **Answer:** $\Delta p \approx 11.2\,\text{kPa}$, three significant figures like the dimensions of the pane; the acceleration $1.2\,\text{m/s}^2$ is given to two figures, but it is only a small part of the sum $g + a$.
-**Reasonableness:** Without the acceleration $706\,\text{N} : 0.0707\,\text{m}^2 \approx 10\,\text{kPa}$ would be needed, so the acceleration increases the need by about $12\,\%$, as the ratio $1.2 : 9.81$ tells. The lifter's $60\,\text{kPa}$ is more than five times as much.
+**Reasonableness:** Without the acceleration $$
+706\,\text{N} : 0.0707\,\text{m}^2 \approx 10\,\text{kPa}
+$$ would be needed, so the acceleration increases the need by about $12\,\%$, as the ratio $1.2 : 9.81$ tells. The lifter's $60\,\text{kPa}$ is more than five times as much.
 
 ### b)
 **Given:** $m = 72.0\,\text{kg}$, $A = 0.070\,69\,\text{m}^2$, $a = 1.2\,\text{m/s}^2$ upwards, coefficient of static friction of dry glass $\mu_0 = 0.60$
@@ -403,7 +462,9 @@ If the points lie on a straight line but the line does not pass through the orig
 **Conversions:** Not needed: the quantities of part a are in base units.
 **Substitution:** $\Delta p = \dfrac{72.0\,\text{kg} \cdot (9.81 + 1.2)\,\text{m/s}^2}{0.60 \cdot 0.070\,69\,\text{m}^2} = \dfrac{792.7\,\text{N}}{0.042\,41\,\text{m}^2} = 18\,690\,\text{Pa}$
 **Answer:** $\Delta p \approx 18.7\,\text{kPa}$, three significant figures as in part a; the coefficient of friction is an indicative two-figure value, so about $19\,\text{kPa}$ is an equally good answer.
-**Reasonableness:** The result is the result of part a divided by the coefficient of friction: $11.2\,\text{kPa} : 0.60 \approx 18.7\,\text{kPa}$. The upright position needs more, because the friction is smaller than the normal force that causes it.
+**Reasonableness:** The result is the result of part a divided by the coefficient of friction: $$
+11.2\,\text{kPa} : 0.60 \approx 18.7\,\text{kPa}
+$$. The upright position needs more, because the friction is smaller than the normal force that causes it.
 
 ### c)
 **Given:** from part a $m = 72.0\,\text{kg}$ and $A = 0.070\,69\,\text{m}^2$, upward acceleration $a = 1.2\,\text{m/s}^2$, coefficient of static friction of wet glass $\mu_\text{w} = 0.30$, lifter's partial vacuum $\Delta p_\text{l} = 60\,\text{kPa}$, required safety factor $s \ge 2$; $g = 9.81\,\text{m/s}^2$
@@ -411,7 +472,13 @@ If the points lie on a straight line but the line does not pass through the orig
 **Principle:** In the upright position the weight of the pane is carried by the static friction at the rim of the pad, which is at most $\mu N$, and the normal force is $N = \Delta p\,A$ as in part b (chapter *Weight, friction and the inclined plane*). With wet glass the coefficient is $\mu_\text{w}$, so the expression of part b holds with $\mu_0$ replaced by $\mu_\text{w}$. The safety factor is the ratio of the lifter's partial vacuum to the partial vacuum the lift requires.
 **Formula:** $\Delta p_\text{w} = \dfrac{m(g + a)}{\mu_\text{w} A}$ and $s = \dfrac{\Delta p_\text{l}}{\Delta p_\text{w}} = \dfrac{\mu_\text{w} A\,\Delta p_\text{l}}{m(g + a)}$
 **Conversions:** $\Delta p_\text{l} = 60 \cdot 1000\,\text{Pa} = 60\,000\,\text{Pa}$.
-**Substitution:** $m(g + a) = 72.0\,\text{kg} \cdot (9.81 + 1.2)\,\text{m/s}^2 = 792.7\,\text{N}$, $\Delta p_\text{w} = \dfrac{792.7\,\text{N}}{0.30 \cdot 0.070\,69\,\text{m}^2} = 37\,380\,\text{Pa}$ and $s = \dfrac{60\,000\,\text{Pa}}{37\,380\,\text{Pa}} = 1.6$
+**Substitution:** $$
+\begin{aligned}
+m(g + a) &= 72.0\,\text{kg} \\
+&\cdot (9.81 + 1.2)\,\text{m/s}^2 \\
+&= 792.7\,\text{N}
+\end{aligned}
+$$, $\Delta p_\text{w} = \dfrac{792.7\,\text{N}}{0.30 \cdot 0.070\,69\,\text{m}^2} = 37\,380\,\text{Pa}$ and $s = \dfrac{60\,000\,\text{Pa}}{37\,380\,\text{Pa}} = 1.6$
 **Model answer:** With wet glass $\Delta p_\text{w} \approx 37\,\text{kPa}$ is needed, two significant figures like the coefficient $0.30$. The lifter's $60\,\text{kPa}$ is just enough to hold the pane, but the safety factor is only $s \approx 1.6$, below the two that the instructions require. The upright lift with wet glass does not meet the instructions: the glazier must not lift a wet pane upright with this lifter; the glass must be dried, or two pads are used, which doubles the area.
 **Reasonableness:** The wet friction is half of the dry one, so the partial vacuum is double the dry $18.7\,\text{kPa}$ ($2 \cdot 18.7 \approx 37$). When dry the safety factor is $60 : 18.7 \approx 3.2$, and in the horizontal lift $60 : 11.2 \approx 5.4$. The upright position is more demanding, because the force of the pressure is perpendicular to the surface of the glass, that is, horizontal. It does not support the weight at all; friction carries it.
 

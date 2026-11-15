@@ -276,7 +276,13 @@ Säilymislaista lähtee kolme kysymystä. Kokeen energiatehtävät perustuvat ni
 
 Kun ratkaiset koetehtävää, aloita näin. Tunnista ensin, minkä tunnusmerkin tehtävä antaa. Kirjoita sitten sen laki ennen kuin sijoitat luvut. Muista, että energia ja teho ovat eri suureita. Kilowatti (kW) kertoo, kuinka nopeasti energiaa muuttuu. Kilowattitunti (kWh) kertoo energian määrän.
 
-Nyt voimme vastata alun kysymykseen. Kymmenessä litrassa bensiiniä on energiaa noin $7{,}5\,\text{kg} \cdot 43\,\text{MJ/kg} \approx 320\,\text{MJ} \approx 90\,\text{kWh}$. Se on enemmän kuin $40\,\text{kWh}$:n akussa. Lataus kestää silti kauan, koska pistorasian teho on pieni: $40\,\text{kWh} : 2{,}3\,\text{kW} \approx 17\,\text{h}$.
+Nyt voimme vastata alun kysymykseen. Kymmenessä litrassa bensiiniä on energiaa noin $$
+\begin{aligned}
+&7{,}5\,\text{kg} \cdot 43\,\text{MJ/kg} \\
+&\approx 320\,\text{MJ} \\
+&\approx 90\,\text{kWh}
+\end{aligned}
+$$. Se on enemmän kuin $40\,\text{kWh}$:n akussa. Lataus kestää silti kauan, koska pistorasian teho on pieni: $40\,\text{kWh} : 2{,}3\,\text{kW} \approx 17\,\text{h}$.
 
 ## Kaava: Energia, teho ja hyötysuhde
 

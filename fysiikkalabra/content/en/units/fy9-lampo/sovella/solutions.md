@@ -4,9 +4,22 @@
 **Given:** area $A = 1800\,\text{m}^2$, thickness of the water layer $d = 3.00\,\text{cm}$, density of water $\rho = 1000\,\text{kg/m}^3$; water $15.0\,{}^\circ\text{C}$, finished ice $-4.0\,{}^\circ\text{C}$; $c_\text{w} = 4190\,\text{J/(kg}\cdot\text{K)}$, $c_\text{i} = 2100\,\text{J/(kg}\cdot\text{K)}$, $s = 334\,\text{kJ/kg}$
 **Find:** the quantity of heat $Q$ to be removed, in gigajoules
 **Principle:** Energy is conserved: the refrigeration machine must remove all the energy the water releases on its way from water at $15.0\,{}^\circ\text{C}$ to ice at $-4.0\,{}^\circ\text{C}$. The way has three stages. The water cools to $0\,{}^\circ\text{C}$ ($Q = cm\Delta T$), freezes at constant temperature, releasing the latent heat of fusion ($Q = sm$), and the ice cools to $-4.0\,{}^\circ\text{C}$ ($Q = cm\Delta T$). The words "at least" mean that the heat conducted into the hall is not included.
-**Formula:** $m = \rho A d$ and $Q = c_\text{w} m\,\Delta T_\text{w} + s m + c_\text{i} m\,\Delta T_\text{i}$, so $Q = \rho A d\,(c_\text{w}\,\Delta T_\text{w} + s + c_\text{i}\,\Delta T_\text{i})$
+**Formula:** $m = \rho A d$ and $$
+\begin{aligned}
+Q &= c_\text{w} m\,\Delta T_\text{w} + s m \\
+&+ c_\text{i} m\,\Delta T_\text{i}
+\end{aligned}
+$$, so $Q = \rho A d\,(c_\text{w}\,\Delta T_\text{w} + s + c_\text{i}\,\Delta T_\text{i})$
 **Conversions:** $3.00\,\text{cm} = 3.00 \cdot 0.01\,\text{m} = 0.0300\,\text{m}$ and $334\,\text{kJ/kg} = 334\,000\,\text{J/kg}$. The changes in temperature are the same in kelvins: $\Delta T_\text{w} = 15.0\,\text{K}$ and $\Delta T_\text{i} = 4.0\,\text{K}$. Finally $1\,\text{GJ} = 10^{9}\,\text{J}$.
-**Substitution:** $m = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1800\,\text{m}^2 \cdot 0.0300\,\text{m} = 54\,000\,\text{kg}$ and $Q = 54\,000\,\text{kg} \cdot (4190 \cdot 15.0 + 334\,000 + 2100 \cdot 4.0)\,\tfrac{\text{J}}{\text{kg}} = 54\,000\,\text{kg} \cdot 405\,250\,\tfrac{\text{J}}{\text{kg}} = 2.188 \cdot 10^{10}\,\text{J} = 21.9\,\text{GJ}$
+**Substitution:** $m = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1800\,\text{m}^2 \cdot 0.0300\,\text{m} = 54\,000\,\text{kg}$ and $$
+\begin{aligned}
+Q &= 54\,000\,\text{kg} \cdot (4190 \cdot 15.0 \\
+&+ 334\,000 + 2100 \cdot 4.0)\,\tfrac{\text{J}}{\text{kg}} \\
+&= 54\,000\,\text{kg} \cdot 405\,250\,\tfrac{\text{J}}{\text{kg}} \\
+&= 2.188 \cdot 10^{10}\,\text{J} \\
+&= 21.9\,\text{GJ}
+\end{aligned}
+$$
 **Answer:** $21.9\,\text{GJ}$, three significant figures like the thickness of the layer $3.00\,\text{cm}$ and the temperature of the water $15.0\,{}^\circ\text{C}$. The two figures of the cooling of the ice $4.0\,\text{K}$ concern only a small term.
 **Reasonableness:** Stage by stage $Q_\text{w} = 3.39\,\text{GJ}$, $Q_\text{s} = 18.0\,\text{GJ}$ and $Q_\text{i} = 0.454\,\text{GJ}$, and the sum is the same $21.9\,\text{GJ}$. With rounded numbers $54\,\text{t} \cdot 400\,\text{kJ/kg} \approx 22\,\text{GJ}$. In kilowatt-hours it is about $6100\,\text{kWh}$, about as much as the electricity of a detached house in a year, which suits a large area of ice.
 
@@ -65,7 +78,13 @@
 **Conversions:** The temperature difference is the same in kelvins: $21\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 31\,\text{K}$. The ratio is turned into a percentage by multiplying by $100\,\%$.
 **Substitution:** $P_\text{loss} = 150\,\tfrac{\text{W}}{\text{K}} \cdot 31\,\text{K} = 4650\,\text{W}$ and share $= \dfrac{1667\,\text{W}}{4650\,\text{W}} = 0.358 = 35.8\,\%$
 **Answer:** about $36\,\%$, two significant figures like the power of the fireplace.
-**Reasonableness:** To cover the whole demand, $4650\,\text{W} \cdot 86\,400\,\text{s} : (0.80 \cdot 15\,\text{MJ/kg}) \approx 33\,\text{kg}$ of wood would have to be burnt in a day, almost three times the evening load. The fireplace is therefore supplementary heating, as heat-storing fireplaces usually are.
+**Reasonableness:** To cover the whole demand, $$
+\begin{aligned}
+&4650\,\text{W} \cdot 86\,400\,\text{s} \\
+&: (0.80 \cdot 15\,\text{MJ/kg}) \\
+&\approx 33\,\text{kg}
+\end{aligned}
+$$ of wood would have to be burnt in a day, almost three times the evening load. The fireplace is therefore supplementary heating, as heat-storing fireplaces usually are.
 
 ### d)
 **Find:** why the heating of a sheet-metal stove stops quickly and that of a heat-storing fireplace does not
@@ -240,7 +259,12 @@ The circled points in the graph are the two points of the line from which the sl
 **Given:** water $m_\text{w} = 0.200\,\text{kg}$, $T_\text{w} = 40.0\,{}^\circ\text{C}$; ice $m_\text{i} = 0.0500\,\text{kg}$; final temperature $T = 14.3\,{}^\circ\text{C}$; $c_\text{w} = 4190\,\text{J/(kg}\cdot\text{K)}$
 **Find:** the group's result $s$ in $\text{kJ/kg}$ and its assumption about the initial temperature of the ice
 **Principle:** Energy is conserved when the cup and the air take no heat: the heat released by the water equals the heat received by the ice. In the group's calculation the ice only melts ($Q = sm$) and the meltwater warms from $0\,{}^\circ\text{C}$ to the final temperature ($Q = cm\Delta T$). There is no warming of the ice, so the group has assumed that the ice was at $0\,{}^\circ\text{C}$ (chapter *Thermal balance during a change of state*).
-**Formula:** $c_\text{w} m_\text{w} (T_\text{w} - T) = s\,m_\text{i} + c_\text{w} m_\text{i}\,(T - 0\,{}^\circ\text{C})$, so $s = \dfrac{c_\text{w} m_\text{w} (T_\text{w} - T) - c_\text{w} m_\text{i} T}{m_\text{i}}$
+**Formula:** $$
+\begin{aligned}
+&c_\text{w} m_\text{w} (T_\text{w} - T) \\
+&= s\,m_\text{i} + c_\text{w} m_\text{i}\,(T - 0\,{}^\circ\text{C})
+\end{aligned}
+$$, so $s = \dfrac{c_\text{w} m_\text{w} (T_\text{w} - T) - c_\text{w} m_\text{i} T}{m_\text{i}}$
 **Conversions:** The temperature differences are the same in kelvins: the water cools by $25.7\,\text{K}$ and the meltwater warms by $14.3\,\text{K}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** The heat released by the water is $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.200\,\text{kg} \cdot 25.7\,\text{K} = 21\,537\,\text{J}$ and the warming of the meltwater $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.0500\,\text{kg} \cdot 14.3\,\text{K} = 2996\,\text{J}$. So $s = \dfrac{21\,537\,\text{J} - 2996\,\text{J}}{0.0500\,\text{kg}} = 370\,800\,\tfrac{\text{J}}{\text{kg}} = 371\,\text{kJ/kg}$.
 **Answer:** $371\,\text{kJ/kg}$, three significant figures like the masses and temperatures. The group has assumed that the ice was at $0\,{}^\circ\text{C}$, although it was taken from the freezer.
@@ -250,9 +274,27 @@ The circled points in the graph are the two points of the line from which the sl
 **Given:** the data of part a; initial temperature of the ice $T_\text{i} = -18.0\,{}^\circ\text{C}$, $c_\text{i} = 2100\,\text{J/(kg}\cdot\text{K)}$
 **Find:** the corrected specific latent heat of fusion $s$ and an assessment of the conclusion
 **Principle:** The ice from the freezer first warms from $-18.0\,{}^\circ\text{C}$ to $0\,{}^\circ\text{C}$, and that takes part of the energy released by the water. In the group's calculation this part has been counted as latent heat of fusion, so its result is too large. The warming of the ice is added to the energy balance.
-**Formula:** $c_\text{w} m_\text{w} (T_\text{w} - T) = c_\text{i} m_\text{i} \Delta T_\text{i} + s\,m_\text{i} + c_\text{w} m_\text{i} T$, so $s = \dfrac{c_\text{w} m_\text{w} (T_\text{w} - T) - c_\text{i} m_\text{i} \Delta T_\text{i} - c_\text{w} m_\text{i} T}{m_\text{i}}$
+**Formula:** $$
+\begin{aligned}
+c_\text{w} m_\text{w} (T_\text{w} - T) &= c_\text{i} m_\text{i} \Delta T_\text{i} \\
+&+ s\,m_\text{i} \\
+&+ c_\text{w} m_\text{i} T
+\end{aligned}
+$$, so $s = \dfrac{c_\text{w} m_\text{w} (T_\text{w} - T) - c_\text{i} m_\text{i} \Delta T_\text{i} - c_\text{w} m_\text{i} T}{m_\text{i}}$
 **Conversions:** The warming of the ice $\Delta T_\text{i} = 0\,{}^\circ\text{C} - (-18.0\,{}^\circ\text{C}) = 18.0\,\text{K}$, the same in kelvins.
-**Substitution:** $c_\text{i} m_\text{i} \Delta T_\text{i} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.0500\,\text{kg} \cdot 18.0\,\text{K} = 1890\,\text{J}$ and $s = \dfrac{21\,537\,\text{J} - 1890\,\text{J} - 2996\,\text{J}}{0.0500\,\text{kg}} = 333\,000\,\tfrac{\text{J}}{\text{kg}} = 333\,\text{kJ/kg}$
+**Substitution:** $$
+\begin{aligned}
+c_\text{i} m_\text{i} \Delta T_\text{i} &= 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \\
+&\cdot 0.0500\,\text{kg} \cdot 18.0\,\text{K} \\
+&= 1890\,\text{J}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+s &= \dfrac{21\,537\,\text{J} - 1890\,\text{J} - 2996\,\text{J}}{0.0500\,\text{kg}} \\
+&= 333\,000\,\tfrac{\text{J}}{\text{kg}} \\
+&= 333\,\text{kJ/kg}
+\end{aligned}
+$$
 **Answer:** $333\,\text{kJ/kg}$, three significant figures like the measurements. The group's conclusion does not hold: the corrected result agrees with the table value $334\,\text{kJ/kg}$, and the difference came from a wrong assumption, not from the table. Nor does the cup explain the difference. If the cup took heat, the group's formula would also credit that to the ice, and the result would indeed be too large, but the difference $1890\,\text{J}$ would require a heat capacity of about $1890\,\text{J} : 25.7\,\text{K} \approx 70\,\text{J/K}$ for the cup. The heat capacity of a polystyrene cup of a few grams is only a few $\text{J/K}$, and the corrected value already agrees with the table.
 **Reasonableness:** The warming of the ice takes $1890\,\text{J}$, only about $9\,\%$ of the heat released by the water, but divided by the small mass of ice it is $38\,\text{kJ/kg}$, exactly the difference of the results $371 - 333$. The corrected value differs from the table by less than one per cent, which is within the precision of the measurements.
 
@@ -277,7 +319,13 @@ The circled points in the graph are the two points of the line from which the sl
 **Find:** the rise in temperature $\Delta T$ of the discs
 **Principle:** On a level road braking turns the kinetic energy of the car, through friction, into internal energy of the brakes; energy is conserved (chapter *Conservation of mechanical energy and the work–energy principle*). The share of air resistance in a short braking is small, so it is ignored. The discs stay solid, so the heat they receive raises their temperature according to $Q = cm\Delta T$.
 **Formula:** $E_\text{k} = \tfrac{1}{2} m v^2$ and $k\,E_\text{k} = c\,m_\text{discs}\,\Delta T$, so $\Delta T = \dfrac{k \cdot \tfrac{1}{2} m v^2}{c\,m_\text{discs}}$
-**Conversions:** $90\,\text{km/h} = 90 \cdot \dfrac{1000\,\text{m}}{3600\,\text{s}} = 25\,\text{m/s}$ and $85\,\% = 0.85$.
+**Conversions:** $$
+\begin{aligned}
+&90\,\text{km/h} \\
+&= 90 \cdot \dfrac{1000\,\text{m}}{3600\,\text{s}} \\
+&= 25\,\text{m/s}
+\end{aligned}
+$$ and $85\,\% = 0.85$.
 **Substitution:** $E_\text{k} = \tfrac{1}{2} \cdot 1600\,\text{kg} \cdot (25\,\tfrac{\text{m}}{\text{s}})^2 = 500\,000\,\text{J}$ and $\Delta T = \dfrac{0.85 \cdot 500\,000\,\text{J}}{450\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 30\,\text{kg}} = \dfrac{425\,000\,\text{J}}{13\,500\,\tfrac{\text{J}}{\text{K}}} = 31.5\,\text{K}$
 **Answer:** about $31\,\text{K}$, two significant figures like the mass of the discs $30\,\text{kg}$ and the speed $90\,\text{km/h}$.
 **Reasonableness:** One stop heats the discs by a few tens of degrees, which fits experience: brake discs are hot after hard braking but do not glow. Air resistance would slightly reduce the energy reaching the discs, so the result is an upper limit.
@@ -298,7 +346,21 @@ The circled points in the graph are the two points of the line from which the sl
 **Principle:** Energy is conserved: the energy reaching the discs either stayed in the discs and raised their temperature ($Q = cm\Delta T$) or was transferred away during the descent. A hot disc gives out heat by convection to the air flowing past, radiates and conducts heat to the hub and the rim (chapter *Heat transfer, energy balance and climate change*).
 **Formula:** $Q_\text{air} = Q - c\,m_\text{discs}\,\Delta T$ and share $= \dfrac{Q_\text{air}}{Q}$
 **Conversions:** None needed: the energies are in joules, and the ratio is turned into a percentage by multiplying by $100\,\%$.
-**Substitution:** $Q_\text{air} = 1\,805\,400\,\text{J} - 13\,500\,\tfrac{\text{J}}{\text{K}} \cdot 80\,\text{K} = 1\,805\,400\,\text{J} - 1\,080\,000\,\text{J} = 725\,400\,\text{J}$ and share $= \dfrac{725\,400\,\text{J}}{1\,805\,400\,\text{J}} = 0.402 = 40.2\,\%$
+**Substitution:** $$
+\begin{aligned}
+Q_\text{air} &= 1\,805\,400\,\text{J} \\
+&- 13\,500\,\tfrac{\text{J}}{\text{K}} \cdot 80\,\text{K} \\
+&= 1\,805\,400\,\text{J} \\
+&- 1\,080\,000\,\text{J} \\
+&= 725\,400\,\text{J}
+\end{aligned}
+$$ and share $$
+\begin{aligned}
+&= \dfrac{725\,400\,\text{J}}{1\,805\,400\,\text{J}} \\
+&= 0.402 \\
+&= 40.2\,\%
+\end{aligned}
+$$
 **Answer:** about $40\,\%$, two significant figures like the result of part b. The energy was transferred mainly by convection to the air flowing past the disc, in addition by thermal radiation and by conduction through the hub and the rim.
 **Reasonableness:** The descent takes $4000\,\text{m} : 16.7\,\tfrac{\text{m}}{\text{s}} = 240\,\text{s}$, and on average about $7.5\,\text{kW}$ reaches the discs. On average $725\,\text{kJ} : 240\,\text{s} \approx 3\,\text{kW}$ was transferred to the air, which is believable for four hot discs in the airflow.
 

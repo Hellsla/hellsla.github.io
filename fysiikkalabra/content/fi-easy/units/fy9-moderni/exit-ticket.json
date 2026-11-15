@@ -5,6 +5,6 @@
   },
   {
     "q": "Violetin valon aallonpituus on $400\\,\\text{nm}$. Kuinka suuri on tämän valon fotonin energia elektronivoltteina?",
-    "a": "$E = \\tfrac{hc}{\\lambda} \\approx \\tfrac{1240\\,\\text{eV}\\,\\text{nm}}{400\\,\\text{nm}} = 3{,}1\\,\\text{eV}$. Kertaa tarvittaessa luku *Valosähköinen ilmiö ja fotoni*."
+    "a": "$$\nE = \\tfrac{hc}{\\lambda} \\approx \\tfrac{1240\\,\\text{eV}\\,\\text{nm}}{400\\,\\text{nm}} = 3{,}1\\,\\text{eV}\n$$. Kertaa tarvittaessa luku *Valosähköinen ilmiö ja fotoni*."
   }
 ]

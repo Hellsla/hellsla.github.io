@@ -6,7 +6,13 @@
 **Principle:** When a coil rotates steadily in a uniform field, the flux through it varies periodically, and by the law of induction a sinusoidal voltage is induced in the coil. The voltage is at its peak when the plane of the coil is parallel to the field, because the flux then changes fastest (chapters *Electromagnetic induction* and *The generator and alternating current*). The rms value is the direct voltage that would give the same average power in a resistor; for a sinusoidal voltage it is the peak value divided by $\sqrt{2}$.
 **Formula:** $e_0 = NBA \cdot 2\pi f$ and $U = \dfrac{e_0}{\sqrt{2}}$
 **Conversions:** The quantities are in base units, so no conversions are needed.
-**Substitution:** $e_0 = 60 \cdot 0.50\,\text{T} \cdot 0.060\,\text{m}^2 \cdot 2\pi \cdot 50\,\tfrac{1}{\text{s}} = 565.5\,\text{V}$ and $U = \dfrac{565.5\,\text{V}}{\sqrt{2}} = 399.9\,\text{V}$
+**Substitution:** $$
+\begin{aligned}
+e_0 &= 60 \cdot 0.50\,\text{T} \cdot 0.060\,\text{m}^2 \\
+&\cdot 2\pi \cdot 50\,\tfrac{1}{\text{s}} \\
+&= 565.5\,\text{V}
+\end{aligned}
+$$ and $U = \dfrac{565.5\,\text{V}}{\sqrt{2}} = 399.9\,\text{V}$
 **Answer:** The peak value is $e_0 \approx 570\,\text{V}$ and the rms value $U \approx 400\,\text{V}$, two significant figures like the magnetic flux density $0.50\,\text{T}$ and the area $0.060\,\text{m}^2$.
 **Reasonableness:** The units match: $\text{T} \cdot \text{m}^2 \cdot \tfrac{1}{\text{s}} = \tfrac{\text{Wb}}{\text{s}} = \text{V}$. The rms value is smaller than the peak value, as it should be, and $400\,\text{V}$ is a common industrial voltage.
 
@@ -340,7 +346,19 @@
 ### b)
 **Find:** whether the group's conclusions are justified
 **Principle:** The small-angle assumption $\sin\theta \approx \tfrac{x}{L}$ holds only at small angles. The result is compared with the manufacturer's value using the uncertainty, and the number of maxima is limited by the condition $k\lambda < d$ (chapters *Interference and diffraction of light* and *Measuring and the reliability of a measurement*).
-**Model answer:** Neither conclusion is justified. The mistake is in the method of calculation, not in the laser. The small-angle assumption gives from the first order $\tfrac{1.667\,\mu\text{m} \cdot 0.270\,\text{m}}{0.800\,\text{m}} \approx 562\,\text{nm}$, about $6\,\%$ too much, and from the second $692\,\text{nm}$, about $30\,\%$ too much, because the difference between the tangent and the sine grows as the angle grows. Calculated correctly, the result is $532$–$533\,\text{nm}$. If the distances are known to about $0.3\,\text{cm}$, the extreme values for the second order give about $530$–$535\,\text{nm}$, so the result agrees with the manufacturer's value $532\,\text{nm}$. In addition, the laser looked green, which already rules out red light. The third order exists, because $3\lambda = 1.60\,\mu\text{m} < d = 1.667\,\mu\text{m}$, but $\sin\theta_3 = 0.958$, $\theta_3 \approx 73^\circ$ and the maximum is $x_3 = 0.800\,\text{m} \cdot \tan 73.3^\circ \approx 2.7\,\text{m}$ from the central maximum. It is probably beyond the edge of the wall or so faint that it was not noticed. So the grating is not faulty.
+**Model answer:** Neither conclusion is justified. The mistake is in the method of calculation, not in the laser. The small-angle assumption gives from the first order $\tfrac{1.667\,\mu\text{m} \cdot 0.270\,\text{m}}{0.800\,\text{m}} \approx 562\,\text{nm}$, about $6\,\%$ too much, and from the second $692\,\text{nm}$, about $30\,\%$ too much, because the difference between the tangent and the sine grows as the angle grows. Calculated correctly, the result is $532$–$533\,\text{nm}$. If the distances are known to about $0.3\,\text{cm}$, the extreme values for the second order give about $530$–$535\,\text{nm}$, so the result agrees with the manufacturer's value $532\,\text{nm}$. In addition, the laser looked green, which already rules out red light. The third order exists, because $$
+\begin{aligned}
+&3\lambda \\
+&= 1.60\,\mu\text{m} \\
+&< d \\
+&= 1.667\,\mu\text{m}
+\end{aligned}
+$$, but $\sin\theta_3 = 0.958$, $\theta_3 \approx 73^\circ$ and the maximum is $$
+\begin{aligned}
+x_3 &= 0.800\,\text{m} \cdot \tan 73.3^\circ \\
+&\approx 2.7\,\text{m}
+\end{aligned}
+$$ from the central maximum. It is probably beyond the edge of the wall or so faint that it was not noticed. So the grating is not faulty.
 
 ### c)
 **Find:** how the measurement can be improved
@@ -361,7 +379,12 @@
 **Principle:** The magnetic force $qvB$ is perpendicular to the velocity, so inside an electrode the proton is in uniform circular motion, and the force is its centripetal force (chapters *Charged particle in electric and magnetic fields* and *Centripetal acceleration and the equation of motion in a circle*). In one revolution the proton travels the circumference of the circle, $2\pi r$ (chapter *Moving in a circle: period and speed*). The direction of the voltage must change every half revolution, when the proton crosses the gap, so the frequency of the voltage is the same as the frequency of revolution.
 **Formula:** $qvB = \dfrac{mv^2}{r}$, so $r = \dfrac{mv}{qB}$, and $T = \dfrac{2\pi r}{v} = \dfrac{2\pi m}{qB}$; the speed cancels, and $f = \dfrac{1}{T} = \dfrac{qB}{2\pi m}$
 **Conversions:** The quantities are in base units; finally $1\,\text{MHz} = 10^6\,\text{Hz}$.
-**Substitution:** $T = \dfrac{2\pi \cdot 1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.20\,\text{T}} = 5.468 \cdot 10^{-8}\,\text{s}$, so $f = \dfrac{1}{5.468 \cdot 10^{-8}\,\text{s}} = 1.829 \cdot 10^{7}\,\text{Hz} = 18.29\,\text{MHz}$
+**Substitution:** $$
+\begin{aligned}
+T &= \dfrac{2\pi \cdot 1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-19}\,\text{C} \cdot 1.20\,\text{T}} \\
+&= 5.468 \cdot 10^{-8}\,\text{s}
+\end{aligned}
+$$, so $f = \dfrac{1}{5.468 \cdot 10^{-8}\,\text{s}} = 1.829 \cdot 10^{7}\,\text{Hz} = 18.29\,\text{MHz}$
 **Answer:** The period of revolution $T = \tfrac{2\pi m}{qB}$ depends neither on the speed nor on the radius: a faster proton goes round a larger circle in the same time. The voltage must alternate at the frequency $f \approx 18.3\,\text{MHz}$, three significant figures like the magnetic flux density $1.20\,\text{T}$.
 **Reasonableness:** Units: $\tfrac{\text{kg}}{\text{C} \cdot \text{T}} = \tfrac{\text{kg}}{\text{C} \cdot \tfrac{\text{N}}{\text{A} \cdot \text{m}}} = \tfrac{\text{kg} \cdot \text{m}}{\text{N} \cdot \text{s}} = \text{s}$. The frequency is in the radio-frequency range, as for the accelerating voltages of cyclotrons.
 
@@ -393,7 +416,12 @@
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $a_\text{n} = \dfrac{(3.914 \cdot 10^{7}\,\text{m/s})^2}{0.3406\,\text{m}} = 4.498 \cdot 10^{15}\,\text{m/s}^2$
 **Answer:** The acceleration is $a \approx 4.5 \cdot 10^{15}\,\text{m/s}^2$ and points to the centre of the path, two significant figures like the results of part b.
-**Reasonableness:** $\tfrac{qvB}{m} = \tfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 3.914 \cdot 10^{7}\,\text{m/s} \cdot 1.20\,\text{T}}{1.673 \cdot 10^{-27}\,\text{kg}} \approx 4.5 \cdot 10^{15}\,\text{m/s}^2$, the same result. The acceleration is enormous because the mass of the proton is very small and the force about $7.5 \cdot 10^{-12}\,\text{N}$.
+**Reasonableness:** $$
+\begin{aligned}
+\tfrac{qvB}{m} &= \tfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 3.914 \cdot 10^{7}\,\text{m/s} \cdot 1.20\,\text{T}}{1.673 \cdot 10^{-27}\,\text{kg}} \\
+&\approx 4.5 \cdot 10^{15}\,\text{m/s}^2
+\end{aligned}
+$$, the same result. The acceleration is enormous because the mass of the proton is very small and the force about $7.5 \cdot 10^{-12}\,\text{N}$.
 
 ### Yleisiä virheitä
 - In part a the period of revolution is calculated separately for some speed, and it is not stated that the speed cancels.

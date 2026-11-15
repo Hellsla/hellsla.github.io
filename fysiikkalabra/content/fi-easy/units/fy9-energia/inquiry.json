@@ -82,7 +82,7 @@
         },
         {
           "text": "$3{,}6 \\cdot 10^{6}\\,\\text{J}$",
-          "feedback": "Oikein. $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3\\,600\\,000\\,\\text{J} = 3{,}6\\,\\text{MJ}$. Kertaa tarvittaessa luvussa *Teho*.",
+          "feedback": "Oikein. $$\n\\begin{aligned}\n&1\\,\\text{kWh} \\\\\n&= 1000\\,\\text{W} \\cdot 3600\\,\\text{s} \\\\\n&= 3\\,600\\,000\\,\\text{J} \\\\\n&= 3{,}6\\,\\text{MJ}\n\\end{aligned}\n$$. Kertaa tarvittaessa luvussa *Teho*.",
           "correct": true
         },
         {
@@ -108,7 +108,7 @@
         },
         {
           "text": "noin $73\\,\\%$, koska hyötysuhteet kerrotaan.",
-          "feedback": "Oikein. $0{,}90 \\cdot 0{,}90 \\cdot 0{,}90 = 0{,}729 \\approx 73\\,\\%$. Kertaa tarvittaessa luvussa *Energiantuotanto ja voimalaitosten hyötysuhde*.",
+          "feedback": "Oikein. $$\n\\begin{aligned}\n&0{,}90 \\cdot 0{,}90 \\cdot 0{,}90 \\\\\n&= 0{,}729 \\\\\n&\\approx 73\\,\\%\n\\end{aligned}\n$$. Kertaa tarvittaessa luvussa *Energiantuotanto ja voimalaitosten hyötysuhde*.",
           "correct": true
         }
       ]
@@ -143,7 +143,7 @@
       "prompt": "Tuulivoimalan nimellisteho on $5{,}0\\,\\text{MW}$. Nimellisteho on suurin teho, jolla voimala toimii. Vuodessa on $8760\\,\\text{h}$. Mikä väite voimalan vuoden tuotannosta on oikein?",
       "choices": [
         {
-          "text": "Se on $5{,}0\\,\\text{MW} \\cdot 8760\\,\\text{h} \\approx 44\\,\\text{GWh}$.",
+          "text": "Se on $$\n5{,}0\\,\\text{MW} \\cdot 8760\\,\\text{h} \\approx 44\\,\\text{GWh}\n$$.",
           "feedback": "Näin paljon voimala tuottaisi, jos se toimisi nimellisteholla koko vuoden. Tuuli kuitenkin vaihtelee. Siksi keskiteho on pienempi kuin nimellisteho. Kertaa luvussa *Energiantuotantotavat ja niiden vertailu*."
         },
         {
@@ -189,7 +189,7 @@
             "feedback": "Tämä on höyrykierron häviöiden osuus $(P_1 - P_2) : P_1$. Hyötysuhde on ulos tulevan tehon osuus."
           }
         ],
-        "solution": "**Annettu:** kuvaajasta $P_0 = 400\\,\\text{MW}$, $P_1 = 350\\,\\text{MW}$, $P_2 = 150\\,\\text{MW}$ ja $P_3 = 140\\,\\text{MW}$; ruudukon viivojen väli on $50\\,\\text{MW}$\n\n**Kysytty:** höyrykierron hyötysuhde $\\eta_2$ prosentteina\n\n**Periaate:** Vaiheen hyötysuhde kertoo, kuinka suuri osa vaiheeseen tulevasta tehosta tulee siitä ulos. Höyrykiertoon tulee kattilan antama teho $P_1$, ja siitä lähtee teho $P_2$. Energia säilyy. Siksi erotus $P_1 - P_2$ siirtyy lauhduttimessa lämpönä ympäristöön. Lauhdutin on laite, jossa höyry jäähtyy takaisin vedeksi.\n\n**Kuvaajan lukeminen:** Pylväiden yläreunat ovat ruudukon viivoilla. $P_1$ on seitsemännellä viivalla ($7 \\cdot 50\\,\\text{MW} = 350\\,\\text{MW}$) ja $P_2$ kolmannella viivalla ($150\\,\\text{MW}$).\n\n**Kaava:** $\\eta_2 = \\dfrac{P_2}{P_1}$\n\n**Muunnokset:** Molemmat tehot ovat megawatteina. Siksi yksikkö supistuu, eikä muunnoksia tarvita. Suhdeluku muutetaan prosenteiksi kertomalla se luvulla $100\\,\\%$.\n\n**Sijoitus:** $\\eta_2 = \\dfrac{150\\,\\text{MW}}{350\\,\\text{MW}} = 0{,}4286 = 42{,}86\\,\\%$\n\n**Vastaus:** $43\\,\\%$. Vastauksessa on kaksi merkitsevää numeroa, koska tehot luetaan kuvaajasta noin $5\\,\\text{MW}$:n tarkkuudella.\n\n**Järkevyys:** Muiden vaiheiden hyötysuhteet ovat $\\eta_1 = 350 : 400 = 0{,}875$ ja $\\eta_3 = 140 : 150 \\approx 0{,}933$. Tulo $0{,}875 \\cdot 0{,}4286 \\cdot 0{,}933 = 0{,}350$ on sama kuin $P_3 : P_0 = 140 : 400 = 0{,}35$. Höyrykierto on heikoin vaihe. Näin kuuluukin olla lämpövoimakoneessa: osa lämmöstä täytyy luovuttaa eli antaa kylmempään ympäristöön."
+        "solution": "**Annettu:** kuvaajasta $P_0 = 400\\,\\text{MW}$, $P_1 = 350\\,\\text{MW}$, $P_2 = 150\\,\\text{MW}$ ja $P_3 = 140\\,\\text{MW}$; ruudukon viivojen väli on $50\\,\\text{MW}$\n\n**Kysytty:** höyrykierron hyötysuhde $\\eta_2$ prosentteina\n\n**Periaate:** Vaiheen hyötysuhde kertoo, kuinka suuri osa vaiheeseen tulevasta tehosta tulee siitä ulos. Höyrykiertoon tulee kattilan antama teho $P_1$, ja siitä lähtee teho $P_2$. Energia säilyy. Siksi erotus $P_1 - P_2$ siirtyy lauhduttimessa lämpönä ympäristöön. Lauhdutin on laite, jossa höyry jäähtyy takaisin vedeksi.\n\n**Kuvaajan lukeminen:** Pylväiden yläreunat ovat ruudukon viivoilla. $P_1$ on seitsemännellä viivalla ($7 \\cdot 50\\,\\text{MW} = 350\\,\\text{MW}$) ja $P_2$ kolmannella viivalla ($150\\,\\text{MW}$).\n\n**Kaava:** $\\eta_2 = \\dfrac{P_2}{P_1}$\n\n**Muunnokset:** Molemmat tehot ovat megawatteina. Siksi yksikkö supistuu, eikä muunnoksia tarvita. Suhdeluku muutetaan prosenteiksi kertomalla se luvulla $100\\,\\%$.\n\n**Sijoitus:** $\\eta_2 = \\dfrac{150\\,\\text{MW}}{350\\,\\text{MW}} = 0{,}4286 = 42{,}86\\,\\%$\n\n**Vastaus:** $43\\,\\%$. Vastauksessa on kaksi merkitsevää numeroa, koska tehot luetaan kuvaajasta noin $5\\,\\text{MW}$:n tarkkuudella.\n\n**Järkevyys:** Muiden vaiheiden hyötysuhteet ovat $\\eta_1 = 350 : 400 = 0{,}875$ ja $\\eta_3 = 140 : 150 \\approx 0{,}933$. Tulo $$\n0{,}875 \\cdot 0{,}4286 \\cdot 0{,}933 = 0{,}350\n$$ on sama kuin $P_3 : P_0 = 140 : 400 = 0{,}35$. Höyrykierto on heikoin vaihe. Näin kuuluukin olla lämpövoimakoneessa: osa lämmöstä täytyy luovuttaa eli antaa kylmempään ympäristöön."
       }
     },
     {
@@ -208,7 +208,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe: lämpöpatteri",
-      "prompt": "Opiskelija laski, kuinka paljon energiaa $2{,}0\\,\\text{kW}$:n lämpöpatteri käyttää $30\\,\\text{min}$:ssa. Hän kirjoitti: ”$E = P\\,t = 2{,}0\\,\\text{kW} \\cdot 30\\,\\text{min} = 60\\,\\text{kWh}$.” Mikä ratkaisussa on väärin?",
+      "prompt": "Opiskelija laski, kuinka paljon energiaa $2{,}0\\,\\text{kW}$:n lämpöpatteri käyttää $30\\,\\text{min}$:ssa. Hän kirjoitti: ”$$\n\\begin{aligned}\nE &= P\\,t \\\\\n&= 2{,}0\\,\\text{kW} \\cdot 30\\,\\text{min} \\\\\n&= 60\\,\\text{kWh}\n\\end{aligned}\n$$.” Mikä ratkaisussa on väärin?",
       "choices": [
         {
           "text": "Kaava on väärä: energia on teho jaettuna ajalla.",
@@ -220,7 +220,7 @@
         },
         {
           "text": "Aikaa ei ole muutettu tunneiksi. Oikea vastaus on $E = 1{,}0\\,\\text{kWh}$.",
-          "feedback": "Oikein. Tehon ja ajan tulo on kilowattitunteja vain silloin, kun aika on tunteina. $30\\,\\text{min} = 0{,}50\\,\\text{h}$, joten $E = 2{,}0\\,\\text{kW} \\cdot 0{,}50\\,\\text{h} = 1{,}0\\,\\text{kWh}$.",
+          "feedback": "Oikein. Tehon ja ajan tulo on kilowattitunteja vain silloin, kun aika on tunteina. $30\\,\\text{min} = 0{,}50\\,\\text{h}$, joten $$\n\\begin{aligned}\nE &= 2{,}0\\,\\text{kW} \\cdot 0{,}50\\,\\text{h} \\\\\n&= 1{,}0\\,\\text{kWh}\n\\end{aligned}\n$$.",
           "correct": true
         }
       ]
@@ -354,7 +354,7 @@
           "feedback": "Otit huomioon vain voimalan hyötysuhteen. Myös siirto, lataus ja moottori hukkaavat osan tehosta."
         }
       ],
-      "solution": "**Annettu:** moottorin antama teho $P_\\text{a} = 15\\,\\text{kW}$; hyötysuhteet $\\eta_1 = 38\\,\\%$ (voimala), $\\eta_2 = 96\\,\\%$ (siirto), $\\eta_3 = 90\\,\\%$ (lataus ja akku) ja $\\eta_4 = 90\\,\\%$ (moottori)\n\n**Kysytty:** voimalan polttoaineteho $P_0$ kilowatteina\n\n**Periaate:** Vaiheet ovat peräkkäin. Jokaisen vaiheen hyötyteho on seuraavan vaiheen ottama teho. Hyötysuhteen määritelmä on $\\eta = \\tfrac{P_\\text{a}}{P_\\text{o}}$. Siitä saadaan jokaisen vaiheen antama teho sen ottamasta tehosta. Sitten tehot sijoitetaan peräkkäin (luku *Energiantuotanto ja voimalaitosten hyötysuhde*).\n\n**Kaava:** Vaiheiden antamat tehot ovat $P_1 = \\eta_1 P_0$, $P_2 = \\eta_2 P_1$, $P_3 = \\eta_3 P_2$ ja $P_\\text{a} = \\eta_4 P_3$. Kun tehot sijoitetaan peräkkäin, saadaan $P_\\text{a} = \\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4\\,P_0$. Siksi $P_0 = \\dfrac{P_\\text{a}}{\\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4}$\n\n**Muunnokset:** Prosentit muutetaan desimaaliluvuiksi: $38\\,\\% = 0{,}38$, $96\\,\\% = 0{,}96$ ja $90\\,\\% = 0{,}90$. Teho voi olla kilowatteina, koska vastaus kysytään kilowatteina.\n\n**Sijoitus:** $P_0 = \\dfrac{15\\,\\text{kW}}{0{,}38 \\cdot 0{,}96 \\cdot 0{,}90 \\cdot 0{,}90} = \\dfrac{15\\,\\text{kW}}{0{,}2955} = 50{,}76\\,\\text{kW}$\n\n**Vastaus:** $51\\,\\text{kW}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tehossa $15\\,\\text{kW}$ ja hyötysuhteissa.\n\n**Järkevyys:** Ketjun hyötysuhde $0{,}30$ on pienempi kuin heikoimman vaiheen hyötysuhde $0{,}38$. Näin kertolaskussa pitää olla. Polttoainetehoa tarvitaan noin kolme kertaa niin paljon kuin moottorin teho. Tarkistus $0{,}2955 \\cdot 50{,}76\\,\\text{kW} = 15{,}0\\,\\text{kW}$ täsmää eli antaa saman tuloksen."
+      "solution": "**Annettu:** moottorin antama teho $P_\\text{a} = 15\\,\\text{kW}$; hyötysuhteet $\\eta_1 = 38\\,\\%$ (voimala), $\\eta_2 = 96\\,\\%$ (siirto), $\\eta_3 = 90\\,\\%$ (lataus ja akku) ja $\\eta_4 = 90\\,\\%$ (moottori)\n\n**Kysytty:** voimalan polttoaineteho $P_0$ kilowatteina\n\n**Periaate:** Vaiheet ovat peräkkäin. Jokaisen vaiheen hyötyteho on seuraavan vaiheen ottama teho. Hyötysuhteen määritelmä on $\\eta = \\tfrac{P_\\text{a}}{P_\\text{o}}$. Siitä saadaan jokaisen vaiheen antama teho sen ottamasta tehosta. Sitten tehot sijoitetaan peräkkäin (luku *Energiantuotanto ja voimalaitosten hyötysuhde*).\n\n**Kaava:** Vaiheiden antamat tehot ovat $P_1 = \\eta_1 P_0$, $P_2 = \\eta_2 P_1$, $P_3 = \\eta_3 P_2$ ja $P_\\text{a} = \\eta_4 P_3$. Kun tehot sijoitetaan peräkkäin, saadaan $P_\\text{a} = \\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4\\,P_0$. Siksi $P_0 = \\dfrac{P_\\text{a}}{\\eta_1\\,\\eta_2\\,\\eta_3\\,\\eta_4}$\n\n**Muunnokset:** Prosentit muutetaan desimaaliluvuiksi: $38\\,\\% = 0{,}38$, $96\\,\\% = 0{,}96$ ja $90\\,\\% = 0{,}90$. Teho voi olla kilowatteina, koska vastaus kysytään kilowatteina.\n\n**Sijoitus:** $P_0 = \\dfrac{15\\,\\text{kW}}{0{,}38 \\cdot 0{,}96 \\cdot 0{,}90 \\cdot 0{,}90} = \\dfrac{15\\,\\text{kW}}{0{,}2955} = 50{,}76\\,\\text{kW}$\n\n**Vastaus:** $51\\,\\text{kW}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tehossa $15\\,\\text{kW}$ ja hyötysuhteissa.\n\n**Järkevyys:** Ketjun hyötysuhde $0{,}30$ on pienempi kuin heikoimman vaiheen hyötysuhde $0{,}38$. Näin kertolaskussa pitää olla. Polttoainetehoa tarvitaan noin kolme kertaa niin paljon kuin moottorin teho. Tarkistus $$\n0{,}2955 \\cdot 50{,}76\\,\\text{kW} = 15{,}0\\,\\text{kW}\n$$ täsmää eli antaa saman tuloksen."
     },
     {
       "id": "pelletti",
@@ -431,7 +431,7 @@
       "choices": [
         {
           "text": "Polttoaineteho on $1500\\,\\text{MW}$, ja $900\\,\\text{MW}$ siirtyy lämpönä ympäristöön.",
-          "feedback": "Oikein. $P_0 = 600\\,\\text{MW} : 0{,}40 = 1500\\,\\text{MW}$. Energia säilyy, joten $1500\\,\\text{MW} - 600\\,\\text{MW} = 900\\,\\text{MW}$ on hukkalämpöä.",
+          "feedback": "Oikein. $$\n\\begin{aligned}\nP_0 &= 600\\,\\text{MW} : 0{,}40 \\\\\n&= 1500\\,\\text{MW}\n\\end{aligned}\n$$. Energia säilyy, joten $$\n\\begin{aligned}\n&1500\\,\\text{MW} - 600\\,\\text{MW} \\\\\n&= 900\\,\\text{MW}\n\\end{aligned}\n$$ on hukkalämpöä.",
           "correct": true
         },
         {
@@ -440,7 +440,7 @@
         },
         {
           "text": "Polttoaineteho on $1000\\,\\text{MW}$, koska häviöt ovat $40\\,\\%$ sähkötehosta.",
-          "feedback": "Hyötysuhde ja häviöt lasketaan otetusta tehosta, ei annetusta tehosta. $P_0 = P_\\text{a} : \\eta = 600\\,\\text{MW} : 0{,}40 = 1500\\,\\text{MW}$. Kertaa luvussa *Energiantuotanto ja voimalaitosten hyötysuhde*."
+          "feedback": "Hyötysuhde ja häviöt lasketaan otetusta tehosta, ei annetusta tehosta. $$\n\\begin{aligned}\nP_0 &= P_\\text{a} : \\eta \\\\\n&= 600\\,\\text{MW} : 0{,}40 \\\\\n&= 1500\\,\\text{MW}\n\\end{aligned}\n$$. Kertaa luvussa *Energiantuotanto ja voimalaitosten hyötysuhde*."
         }
       ],
       "practice": "Kertaa hyötysuhteen nimittäjä luvussa [*Hyötysuhde*](fy2-4.html) ja voimalan energiaketju luvussa [*Energiantuotanto ja voimalaitosten hyötysuhde*](fy3-15.html)."

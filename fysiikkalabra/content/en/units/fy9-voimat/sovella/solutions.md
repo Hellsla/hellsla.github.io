@@ -37,7 +37,15 @@ komponentit G
 ```
 **Formula:** $y$: $N - mg\cos\alpha = 0$ and $x$: $T - mg\sin\alpha - \mu N = 0$, so $T = mg(\sin\alpha + \mu\cos\alpha)$
 **Conversions:** None needed, the quantities are in base units.
-**Substitution:** $T = 280\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot (\sin 14^\circ + 0.25 \cdot \cos 14^\circ) = 2746.8\,\text{N} \cdot (0.2419 + 0.2426) = 1330.8\,\text{N}$
+**Substitution:** $$
+\begin{aligned}
+T &= 280\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\cdot (\sin 14^\circ + 0.25 \cdot \cos 14^\circ) \\
+&= 2746.8\,\text{N} \\
+&\cdot (0.2419 + 0.2426) \\
+&= 1330.8\,\text{N}
+\end{aligned}
+$$
 **Answer:** $T \approx 1.3\,\text{kN}$, two significant figures like the angle $14^\circ$ and the coefficient of friction $0.25$.
 **Reasonableness:** The component of the weight along the ramp is $665\,\text{N}$ and the friction $666\,\text{N}$, so the winch works against friction almost as much as it lifts the boat. The pull is about half of the weight $2.7\,\text{kN}$: the ramp makes the work lighter, but friction takes a large part of it.
 
@@ -55,7 +63,13 @@ a 0
 ```
 **Formula:** The boat stays when $mg\sin\alpha \le \mu_0 mg\cos\alpha$, that is $\tan\alpha \le \mu_0$. At the limiting angle $\tan\alpha_0 = \mu_0$, so $\alpha_0 = \arctan\mu_0$
 **Conversions:** None needed. The mass cancels.
-**Substitution:** The static friction needed is $mg\sin\alpha = 2746.8\,\text{N} \cdot \sin 14^\circ = 664.5\,\text{N}$ and the upper limit $\mu_0 mg\cos\alpha = 0.35 \cdot 2746.8\,\text{N} \cdot \cos 14^\circ = 932.8\,\text{N}$; the limiting angle $\alpha_0 = \arctan 0.35 = 19.29^\circ$
+**Substitution:** The static friction needed is $mg\sin\alpha = 2746.8\,\text{N} \cdot \sin 14^\circ = 664.5\,\text{N}$ and the upper limit $$
+\begin{aligned}
+\mu_0 mg\cos\alpha &= 0.35 \cdot 2746.8\,\text{N} \\
+&\cdot \cos 14^\circ \\
+&= 932.8\,\text{N}
+\end{aligned}
+$$; the limiting angle $\alpha_0 = \arctan 0.35 = 19.29^\circ$
 **Answer:** The boat stays in place, because $664.5\,\text{N} < 932.8\,\text{N}$ (equally, $\tan 14^\circ \approx 0.25 < 0.35$). It would start to slide by itself if the ramp were at an angle of at least about $19^\circ$; two significant figures like the coefficient of friction $0.35$.
 **Reasonableness:** The limiting angle does not depend on the mass, because both the component pulling down the ramp and the upper limit of friction are proportional to the mass. A wet, slippery or icy strip can lower the coefficient of static friction, and then the boat can start moving on a gentler ramp too: the boat should not be left held by friction alone.
 
@@ -101,9 +115,21 @@ a oikea
 **Principle:** The horizontal forces on sledge B are the pull of rope 2 forwards and friction backwards. By Newton's second law their sum is $m_\text{B} a$. There is no vertical acceleration, so $N_\text{B} = m_\text{B} g$ and the friction is $\mu m_\text{B} g$ (chapter *Equation of motion for connected bodies*).
 **Formula:** $T_2 - \mu m_\text{B} g = m_\text{B} a$, so $T_2 = m_\text{B}(a + \mu g)$
 **Conversions:** None needed, the quantities are in base units.
-**Substitution:** $T_2 = 80\,\text{kg} \cdot (0.50\,\text{m/s}^2 + 0.10 \cdot 9.81\,\text{m/s}^2) = 80\,\text{kg} \cdot 1.481\,\text{m/s}^2 = 118.48\,\text{N}$
+**Substitution:** $$
+\begin{aligned}
+T_2 &= 80\,\text{kg} \cdot (0.50\,\text{m/s}^2 \\
+&+ 0.10 \cdot 9.81\,\text{m/s}^2) \\
+&= 80\,\text{kg} \cdot 1.481\,\text{m/s}^2 \\
+&= 118.48\,\text{N}
+\end{aligned}
+$$
 **Answer:** $T_2 \approx 120\,\text{N}$, two significant figures like the acceleration $0.50\,\text{m/s}^2$ and the coefficient of friction $0.10$.
-**Reasonableness:** The friction on B is $0.10 \cdot 80\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 78\,\text{N}$ and accelerating it takes $80\,\text{kg} \cdot 0.50\,\text{m/s}^2 = 40\,\text{N}$; together about $118\,\text{N}$, as it should be.
+**Reasonableness:** The friction on B is $$
+\begin{aligned}
+&0.10 \cdot 80\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\approx 78\,\text{N}
+\end{aligned}
+$$ and accelerating it takes $80\,\text{kg} \cdot 0.50\,\text{m/s}^2 = 40\,\text{N}$; together about $118\,\text{N}$, as it should be.
 
 ### c)
 **Given:** $m_\text{A} = 120\,\text{kg}$, $m_\text{B} = 80\,\text{kg}$, $\mu = 0.10$, $a = 0.50\,\text{m/s}^2$, from part b $T_2 = 118.48\,\text{N}$, $g = 9.81\,\text{m/s}^2$
@@ -111,14 +137,32 @@ a oikea
 **Principle:** The horizontal forces on sledge A are the pull of rope 1 forwards and the pull of rope 2 and friction backwards, and their sum is $m_\text{A} a$. The same result comes from the system of both sledges, in which the forces of rope 2 are internal and cancel each other.
 **Formula:** $T_1 - T_2 - \mu m_\text{A} g = m_\text{A} a$, so $T_1 = T_2 + m_\text{A}(a + \mu g) = (m_\text{A} + m_\text{B})(a + \mu g)$
 **Conversions:** None needed, the quantities are in base units.
-**Substitution:** $T_1 = 118.48\,\text{N} + 120\,\text{kg} \cdot 1.481\,\text{m/s}^2 = 118.48\,\text{N} + 177.72\,\text{N} = 296.2\,\text{N}$
+**Substitution:** $$
+\begin{aligned}
+T_1 &= 118.48\,\text{N} \\
+&+ 120\,\text{kg} \cdot 1.481\,\text{m/s}^2 \\
+&= 118.48\,\text{N} + 177.72\,\text{N} \\
+&= 296.2\,\text{N}
+\end{aligned}
+$$
 **Answer:** $T_1 \approx 300\,\text{N}$ ($296\,\text{N}$), two significant figures like the data.
-**Reasonableness:** Check with the system: $(120 + 80)\,\text{kg} \cdot 1.481\,\text{m/s}^2 = 296.2\,\text{N}$, the same result. The front rope is tighter, because it accelerates and pulls both sledges.
+**Reasonableness:** Check with the system: $$
+\begin{aligned}
+&(120 + 80)\,\text{kg} \cdot 1.481\,\text{m/s}^2 \\
+&= 296.2\,\text{N}
+\end{aligned}
+$$, the same result. The front rope is tighter, because it accelerates and pulls both sledges.
 
 ### d)
 **Find:** whether the claim "the force of the rear rope is half the force of the front rope" holds
 **Principle:** Each rope pulls all the sledges behind it. When the coefficient of friction is the same, every sledge needs a pull $m(a + \mu g)$, that is, the pull needed is proportional to the mass.
-**Model answer:** The claim does not hold. Rope 2 pulls only sledge B, rope 1 both sledges. From the results of parts b and c, $T_2 : T_1 = 118\,\text{N} : 296\,\text{N} = 0.40$, which is the same as the ratio of the masses $80\,\text{kg} : 200\,\text{kg}$. So the ratio depends on the masses of the sledges, not on their number. It would be a half only if the sledges were equally heavy and had the same coefficient of friction.
+**Model answer:** The claim does not hold. Rope 2 pulls only sledge B, rope 1 both sledges. From the results of parts b and c, $$
+\begin{aligned}
+&T_2 : T_1 \\
+&= 118\,\text{N} : 296\,\text{N} \\
+&= 0.40
+\end{aligned}
+$$, which is the same as the ratio of the masses $80\,\text{kg} : 200\,\text{kg}$. So the ratio depends on the masses of the sledges, not on their number. It would be a half only if the sledges were equally heavy and had the same coefficient of friction.
 
 ### Yleisiä virheitä
 - Both sledges are drawn in one diagram, or the force of the snowmobile is drawn directly on sledge B.
@@ -239,7 +283,12 @@ The horizontal equation of motion from the diagram is $T - F_\mu = ma$, the same
 **Formula:** $\mu = \dfrac{F_\mu}{N} = \dfrac{F_\mu}{mg}$; with the extra mass $m' = m + m_\text{x}$, the slope is $k' = \dfrac{1}{m'}$ and the intercept on the horizontal axis is $F_0' = \mu m' g$
 **Conversions:** None needed, the quantities are in base units.
 **Substitution:** $\mu = \dfrac{0.238\,\text{N}}{0.851\,\text{kg} \cdot 9.81\,\text{m/s}^2} = \dfrac{0.238\,\text{N}}{8.35\,\text{N}} = 0.0285$
-**Answer:** $\mu \approx 0.029$, two significant figures like $F_\mu$; the coefficient has no unit. With the extra mass the mass is $1.351\,\text{kg}$: the line becomes less steep, with the slope $\tfrac{1}{1.351\,\text{kg}} \approx 0.74\,\tfrac{1}{\text{kg}}$, and the intercept moves to the right, to $0.029 \cdot 1.351\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 0.38\,\text{N}$.
+**Answer:** $\mu \approx 0.029$, two significant figures like $F_\mu$; the coefficient has no unit. With the extra mass the mass is $1.351\,\text{kg}$: the line becomes less steep, with the slope $\tfrac{1}{1.351\,\text{kg}} \approx 0.74\,\tfrac{1}{\text{kg}}$, and the intercept moves to the right, to $$
+\begin{aligned}
+&0.029 \cdot 1.351\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
+&\approx 0.38\,\text{N}
+\end{aligned}
+$$.
 **Reasonableness:** The rolling resistance of a cart on wheels is much smaller than the friction on a sliding object, whose coefficient is typically $0.2\text{–}0.6$, so $0.03$ is plausible. The prediction is based on a model in which friction does not depend on the speed; it is worth checking by repeating the measurement with the extra mass.
 
 ### Yleisiä virheitä
@@ -250,7 +299,9 @@ The horizontal equation of motion from the diagram is $T - F_\mu = ma$, the same
 
 ### Hyväksytään myös
 - In part b the slope of a line fitted by eye $1.14\text{–}1.22\,\tfrac{1}{\text{kg}}$, that is, the mass $0.82\text{–}0.88\,\text{kg}$, and the intercept $0.21\text{–}0.27\,\text{N}$; in part d the $\mu \approx 0.025\text{–}0.032$ calculated from them.
-- A straight-line fit with a calculator or a spreadsheet ($a = 1.175\,\tfrac{1}{\text{kg}} \cdot F - 0.281\,\text{m/s}^2$).
+- A straight-line fit with a calculator or a spreadsheet ($$
+a = 1.175\,\tfrac{1}{\text{kg}} \cdot F - 0.281\,\text{m/s}^2
+$$).
 
 ## fy9-voimat-s4
 
@@ -282,7 +333,12 @@ v oikea
 ### d)
 **Find:** the largest acceleration the road can give on asphalt and on ice, and why it is smaller for a front-wheel-drive car
 **Principle:** The accelerating force is the static friction of the road, which is at most $\mu_0 N$. If all the wheels drive, the normal force is the weight of the whole car, $N = mg$.
-**Model answer:** The largest accelerating force is $\mu_0 mg$, so $ma_\text{max} = \mu_0 mg$ and $a_\text{max} = \mu_0 g$; the mass cancels. On asphalt $a_\text{max} \approx 0.8 \cdot 9.81\,\text{m/s}^2 \approx 8\,\text{m/s}^2$ and on ice $0.1 \cdot 9.81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, when the resistive forces are ignored. In a front-wheel-drive car the static friction pushing forwards acts only on the driving front wheels, and their normal force is only part of the weight of the car, for example about half. Then the largest accelerating force is $\mu_0 N_\text{etu} < \mu_0 mg$ (etu = front), and the largest acceleration is smaller. On ice a front-wheel-drive car can therefore accelerate at less than $1\,\text{m/s}^2$ at most.
+**Model answer:** The largest accelerating force is $\mu_0 mg$, so $ma_\text{max} = \mu_0 mg$ and $a_\text{max} = \mu_0 g$; the mass cancels. On asphalt $$
+\begin{aligned}
+a_\text{max} &\approx 0.8 \cdot 9.81\,\text{m/s}^2 \\
+&\approx 8\,\text{m/s}^2
+\end{aligned}
+$$ and on ice $0.1 \cdot 9.81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, when the resistive forces are ignored. In a front-wheel-drive car the static friction pushing forwards acts only on the driving front wheels, and their normal force is only part of the weight of the car, for example about half. Then the largest accelerating force is $\mu_0 N_\text{etu} < \mu_0 mg$ (etu = front), and the largest acceleration is smaller. On ice a front-wheel-drive car can therefore accelerate at less than $1\,\text{m/s}^2$ at most.
 
 ### Yleisiä virheitä
 - The muscles or the engine "push" the walker or the car, that is, an internal force is presented as an external one.
@@ -350,7 +406,15 @@ komponentit G
 ```
 **Formula:** $y$: $N = mg\cos\alpha$; $x$: $mg\sin\alpha - \mu mg\cos\alpha = ma_1$, so $a_1 = g(\sin\alpha - \mu\cos\alpha)$. Starting from rest, $v^2 = 2a_1 L$, so $v = \sqrt{2gL(\sin\alpha - \mu\cos\alpha)}$
 **Conversions:** None needed, the quantities are in base units.
-**Substitution:** $a_1 = 9.81\,\text{m/s}^2 \cdot (\sin 12^\circ - 0.080 \cdot \cos 12^\circ) = 9.81\,\text{m/s}^2 \cdot (0.2079 - 0.0783) = 1.272\,\text{m/s}^2$ and $v = \sqrt{2 \cdot 1.272\,\text{m/s}^2 \cdot 40\,\text{m}} = \sqrt{101.76\,\text{m}^2/\text{s}^2} = 10.09\,\text{m/s}$
+**Substitution:** $$
+\begin{aligned}
+a_1 &= 9.81\,\text{m/s}^2 \\
+&\cdot (\sin 12^\circ - 0.080 \cdot \cos 12^\circ) \\
+&= 9.81\,\text{m/s}^2 \\
+&\cdot (0.2079 - 0.0783) \\
+&= 1.272\,\text{m/s}^2
+\end{aligned}
+$$ and $v = \sqrt{2 \cdot 1.272\,\text{m/s}^2 \cdot 40\,\text{m}} = \sqrt{101.76\,\text{m}^2/\text{s}^2} = 10.09\,\text{m/s}$
 **Answer:** $v \approx 10\,\text{m/s}$, two significant figures like the length of the slope $40\,\text{m}$.
 **Reasonableness:** $10.09\,\text{m/s} = 10.09 \cdot 3.6\,\text{km/h} \approx 36\,\text{km/h}$, fast for a sliding mat but possible. The ride takes $t = v : a_1 \approx 7.9\,\text{s}$. Without friction the speed would be $\sqrt{2gL\sin\alpha} \approx 12.8\,\text{m/s}$, so friction reduces it clearly.
 
@@ -371,7 +435,9 @@ v oikea
 **Conversions:** None needed, the quantities are in base units.
 **Substitution:** $s_2 = \dfrac{101.76\,\text{m}^2/\text{s}^2}{2 \cdot 0.080 \cdot 9.81\,\text{m/s}^2} = \dfrac{101.76\,\text{m}^2/\text{s}^2}{1.5696\,\text{m/s}^2} = 64.83\,\text{m}$
 **Answer:** $s_2 \approx 65\,\text{m}$, two significant figures like the length of the slope and the coefficient of friction.
-**Reasonableness:** On the field the deceleration $0.785\,\text{m/s}^2$ is smaller than the acceleration on the slope $1.272\,\text{m/s}^2$, so the stopping distance is longer than the slope in the same ratio: $40\,\text{m} \cdot 1.272 : 0.785 \approx 65\,\text{m}$. The distance is long but possible on packed snow.
+**Reasonableness:** On the field the deceleration $0.785\,\text{m/s}^2$ is smaller than the acceleration on the slope $1.272\,\text{m/s}^2$, so the stopping distance is longer than the slope in the same ratio: $$
+40\,\text{m} \cdot 1.272 : 0.785 \approx 65\,\text{m}
+$$. The distance is long but possible on packed snow.
 
 ### c)
 **Find:** whether the heavy father slides further than the light children, in the model and when air resistance is taken into account

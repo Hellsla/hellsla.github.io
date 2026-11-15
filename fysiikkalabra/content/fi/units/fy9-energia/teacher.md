@@ -1,6 +1,12 @@
 ## Tuntisuunnitelma (75 min)
 
-- **0–5 min, Pohdinta.** Sähköauton akku ja kymmenen litraa bensiiniä. Opiskelijat arvioivat parin kanssa ensin sanallisesti, kumpaan mahtuu enemmän energiaa ja miksi lataus kestää. Vastausta ei anneta vielä: se on teoriatiivistelmän Ydinajatus-osan lopussa ($40\,\text{kWh} : 2{,}3\,\text{kW} \approx 17\,\text{h}$, bensiinissä $7{,}5\,\text{kg} \cdot 43\,\text{MJ/kg} \approx 320\,\text{MJ} \approx 90\,\text{kWh}$).
+- **0–5 min, Pohdinta.** Sähköauton akku ja kymmenen litraa bensiiniä. Opiskelijat arvioivat parin kanssa ensin sanallisesti, kumpaan mahtuu enemmän energiaa ja miksi lataus kestää. Vastausta ei anneta vielä: se on teoriatiivistelmän Ydinajatus-osan lopussa ($40\,\text{kWh} : 2{,}3\,\text{kW} \approx 17\,\text{h}$, bensiinissä $$
+\begin{aligned}
+&7{,}5\,\text{kg} \cdot 43\,\text{MJ/kg} \\
+&\approx 320\,\text{MJ} \\
+&\approx 90\,\text{kWh}
+\end{aligned}
+$$).
 - **5–15 min, Ennusta (lähtötasotesti).** Kuusi kysymystä yksin, ilman muistiinpanoja. Kerää käsiä ylös tai pyydä opiskelijoita kirjoittamaan vihkoon väärin menneiden kysymysten numerot.
 - **15–25 min, Tutki.** Lauhdevoimalan pylväskuvaaja pareittain: kukin pari laskee kaikkien kolmen vaiheen hyötysuhteet ja tarkistaa tulon. Pura yhdessä: miksi höyrykierto on heikoin vaihe.
 - **25–35 min, Teoriatiivistelmä.** Käy tunnistuskaavio läpi ja kysy jokaisen rivin kohdalla yksi esimerkki opiskelijoilta. Palaa Pohdintaan.
