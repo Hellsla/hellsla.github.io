@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fc0d1673ea0dc8c5
-SCOPE: delta reflow (calculation chains re-broken into rows), round 1
+CONTENT-HASH: fa419009145ea186
+SCOPE: delta round 2 (calculation chains re-broken into rows, reflow)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions: the student's quoted solution (E = Pt rows) is followed by a detached line starting with `.” Tulos on epäuskottava`; the closing quote and full stop sit outside the display formula — put the punctuation in the last row or end the quote inside the sentence.
+- [Minor] reflow-exercises-1, fy2-3: short displays leave a little extra space under the block; optional tightening.
 
 ## Checked
-- Delta: opened reflow-exercises-1.png and -2.png (390 px, solutions open): every re-broken block and the text around it.
-- Rows legible, no clipping, equals signs in one column, units and signs unchanged, sentences around the display formulas read naturally. Not re-judged: figures, simulation, other captures (unchanged).
+- Delta: opened reflow-exercises-1.png and reflow-exercises-2.png (390 px, solutions open), every re-broken block and its surrounding sentence.
+- Rows legible, nothing clipped, equals signs in one column, units upright with thin spaces, no red KaTeX source; the round-1 stray punctuation is gone (the student's quoted calculation is inline again, as on main). Figures, simulation and other captures not re-judged (unchanged); 360 px from the packet's check only.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

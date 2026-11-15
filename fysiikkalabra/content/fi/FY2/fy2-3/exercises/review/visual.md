@@ -1,14 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: bcae44df0b475e70
+VERDICT: PASS
+CONTENT-HASH: 75aa6a48bc6fe02f
+SCOPE: delta round 2 (calculation chains re-broken into rows, reflow)
 
 ## Blocking
-- [Major] fy2-3 reflow-exercises-1 (student's wrong solution, `E = Pt` display) — the closing `."` stands alone on a line below the display, outside its last row — breaks the approved form (punctuation inside the last row) and leaves a stray quote mark and full stop at the line start — put `."` into the last row of the aligned block (`&= 180\,\text{kWh}."`).
+(none)
 
 ## Polish
-- none
+- [Minor] reflow-exercises-1, fy2-3: short displays leave a little extra space under the block; fine, optional tightening.
 
 ## Checked
-- Delta (calculation chains re-broken into aligned rows): opened reflow-exercises-1.png, reflow-exercises-2.png at readable size, every re-broken block at 390 px: rows legible, nothing clipped, relation signs aligned, sentence around each block still reads. Contact sheets and other captures not opened; 360 px from the packet's layout check only.
+- Delta: opened reflow-exercises-1.png and reflow-exercises-2.png (390 px, solutions open), every re-broken block and its surrounding sentence.
+- Rows legible, nothing clipped, equals signs in one column, units upright with thin spaces, no red KaTeX source; the round-1 stray punctuation is gone (the student's quoted calculation is inline again, as on main). Figures, simulation and other captures not re-judged (unchanged); 360 px from the packet's check only.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a · typography 4 · Finnish 5 · accessibility 4
