@@ -482,12 +482,10 @@ Malus's law can be investigated, for example, with a phone display, whose light 
 
 ### Brewster's law
 When light goes from a substance with refractive index $n_1$ into a substance with refractive index $n_2$, the reflected light is completely polarised at one angle of incidence, **Brewster's angle** $\alpha_\text{B}$. The reflected and the refracted ray are then perpendicular to each other, so the angle of refraction is $\alpha_2 = 90^\circ - \alpha_\text{B}$ and $\sin\alpha_2 = \cos\alpha_\text{B}$. Substituting this into the law of refraction (chapter *Reflection and refraction of light*) gives
-```latex
-\begin{aligned}
-&n_1 \sin\alpha_\text{B} = n_2 \sin\alpha_2 \\[4pt]
-&n_1 \sin\alpha_\text{B} = n_2 \cos\alpha_\text{B} \\[4pt]
-&\tan\alpha_\text{B} = \frac{n_2}{n_1}
-\end{aligned}
+```kaavat
+n_1 \sin\alpha_\text{B} = n_2 \sin\alpha_2
+n_1 \sin\alpha_\text{B} = n_2 \cos\alpha_\text{B}
+Brewster's law :: \tan\alpha_\text{B} = \frac{n_2}{n_1}
 ```
 where $\alpha_\text{B}$ is Brewster's angle measured from the normal of the surface, $n_1$ is the refractive index of the substance from which the light comes and into which it is reflected, and $n_2$ is the refractive index of the substance into which the light is refracted. At Brewster's angle the electric field of the reflected light oscillates parallel to the surface and perpendicular to the plane of incidence. From air into water ($n_2 = 1.33$) Brewster's angle is $53.1^\circ$, and into glass ($n_2 = 1.50$) it is $56.3^\circ$. The refracted light is only partially polarised, because the reflected share is small.
 

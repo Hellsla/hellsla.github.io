@@ -482,12 +482,10 @@ Malusin lakia voi tutkia esimerkiksi puhelimen näytöllä, jonka valo on polari
 
 ### Brewsterin laki
 Kun valo tulee aineesta, jonka taitekerroin on $n_1$, aineeseen, jonka taitekerroin on $n_2$, heijastunut valo on täysin polarisoitunutta yhdellä tulokulmalla, **Brewsterin kulmalla** $\alpha_\text{B}$. Silloin heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan, joten taitekulma on $\alpha_2 = 90^\circ - \alpha_\text{B}$ ja $\sin\alpha_2 = \cos\alpha_\text{B}$. Sijoitetaan tämä taittumislakiin (luku *Valon heijastuminen ja taittuminen*):
-```latex
-\begin{aligned}
-&n_1 \sin\alpha_\text{B} = n_2 \sin\alpha_2 \\[4pt]
-&n_1 \sin\alpha_\text{B} = n_2 \cos\alpha_\text{B} \\[4pt]
-&\tan\alpha_\text{B} = \frac{n_2}{n_1}
-\end{aligned}
+```kaavat
+n_1 \sin\alpha_\text{B} = n_2 \sin\alpha_2
+n_1 \sin\alpha_\text{B} = n_2 \cos\alpha_\text{B}
+Brewsterin laki :: \tan\alpha_\text{B} = \frac{n_2}{n_1}
 ```
 missä $\alpha_\text{B}$ on Brewsterin kulma pinnan normaalista mitattuna, $n_1$ sen aineen taitekerroin, josta valo tulee ja johon se heijastuu, ja $n_2$ sen aineen taitekerroin, johon valo taittuu. Brewsterin kulmassa heijastuneen valon sähkökenttä värähtelee pinnan suuntaisesti ja kohtisuorassa tulotasoa vastaan. Ilmasta veteen ($n_2 = 1{,}33$) Brewsterin kulma on $53{,}1^\circ$ ja lasiin ($n_2 = 1{,}50$) $56{,}3^\circ$. Taittunut valo on vain osittain polarisoitunutta, koska heijastuva osuus on pieni.
 
