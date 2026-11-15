@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5b3a27971a4efdaf
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 1c8be0fc88c80344
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
 - (none)
 
 ## Polish
-- A `sovella/tasks.json` s7 c: the prompt names the model ("Johda lämpömäärän yhtälöstä $Q = cm\Delta T$"). An application task should let the student choose it: "Johda lauseke meriveden lämpötilan muutokselle. Tunnet veteen siirtyvän lämpötehon ja sekunnissa virtaavan veden tilavuuden."
-- A s7 a–c covers the same plant and nearly the same computations as fy9-moderni-s6 (efficiency of OL3, sea water through the condenser). Different unit and the teacher's order, so no change needed here; the mixer may show both.
-- C `sovella/solutions.md` s5 Yleisiä virheitä: "Silloin tulos on noin kaksi kolmasosaa oikeasta" follows "ainemäärä lasketaan", so "tulos" can be read as the amount (which is 1,5-fold). Clearer: "Silloin moolimassa on noin kaksi kolmasosaa oikeasta."
+- C `sovella/solutions.md` s2 c Järkevyys: the two new sentences about the rounded difference come three sentences after the $77\,\text{kW}$ they explain. Move them directly after "eli $16\,\%$".
 
 ## Checked
-- Item 18 hunks: 485 − 175 − 233 = 77 kW; s5 error with 311 kPa instead of 210 kPa gives M · 210/311 = 0,68, "noin kaksi kolmasosaa" is right.
-- s7 recomputed: 1600/4300 = 0,372; 2700 MW, 64,8 GWh, 2,333 · 10^14 J; 2,388 · 10^8 W/K, 11,3 K, 47 kJ/kg; 563 K, 283 K, 280 K.
-- s7 in full: source read in a, c, d; parts progress read → energy balance → derived flow model with a judged assumption → why Q2 cannot vanish → environment and limits of use; criteria observable, sums 2+3+4+3+3 = 15; FY3 content only; no repeat of s1–s6 (s2 c asks the same idea for an engine, with other data).
-- fi-easy against fi: same parts, points, criteria, headings, numbers; no step dropped. Sentences short, terms glossed (nimellisteho, nettosähköteho, yläraja-arvio).
-- Rendered s7 at 360 px from the preview, all boxes open: nothing clipped.
+- s2 c: ran `lessons/units/fy9-kaasut/sovella/answers.py`: unrounded waste power 77,6 kW; the row 485 − 175 − 233 = 77 kW is the rounded one, as the new sentence says.
+- s5 Yleisiä virheitä: "Silloin moolimassaksi tulee noin kaksi kolmasosaa oikeasta" removes the ambiguity (210/311 = 0,68).
+- s7 e: 10 °C + 11,3 K = 21,3 °C, so "noin 21 °C" is right and now agrees with c's Järkevyys (line 577); no "20 °C" left for this quantity.
+- s7 c prompt: no longer names $Q = cm\Delta T$; the student must choose the model. "Lämmön, joka siirtyy veteen aikayksikössä, eli lämpötehon" glosses the term; the heat power comes from b; criteria and solution still match the prompt (derivation, value, units, direction of the error). Sentences short, question last.
+- Preview at 360 px, all boxes open: s7 has no clipped element and no raw TeX.
