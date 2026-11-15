@@ -304,6 +304,19 @@
    "answer": 450.0,
    "unit": "N",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy4-9-L2-09",
+   "level": 2,
+   "text": "Avaruusasemalla astronautit leijuvat, eikä henkilövaa'asta ole apua. Silti astronauttien massaa seurataan säännöllisesti. Katso NASAn video (noin $5\\,\\text{min}$, englanniksi): <a href=\"https://www.nasa.gov/stem-content/stemonstrations-momentum-and-impulse/\" rel=\"noopener\">NASA: STEMonstrations – Momentum and Impulse</a> (luettu 16. marraskuuta 2026). Videolla ESA:n astronautti Andreas Mogensen esittelee massanmittauslaitteen SLAMMD (Space Linear Acceleration Mass Measurement Device).\n\na) Selitä, miksi tavallinen henkilövaaka ei sovellu astronautin massan määrittämiseen avaruusasemalla.\n\nb) Kuvaile videolla esitetty massanmittausmenetelmä ja selitä sen toimintaperiaate sekä Newtonin toisen lain että impulssiperiaatteen avulla.\n\nc) Suunnittele oma menetelmä, jolla tuntemattoman kappaleen massa voidaan määrittää painottomuudessa Newtonin lakien tai impulssiperiaatteen avulla. Kerro, mitä suureita mittaat, ja kirjoita yhtälö, josta massa ratkeaa.\n\nd) Arvioi suunnittelemasi menetelmän virhelähteitä ja sitä, miten niiden vaikutusta voi pienentää.",
+   "kind": [
+    "experiment",
+    "reasoning",
+    "concept"
+   ],
+   "answer": "Henkilövaaka mittaa tukivoimaa, joka on vapaassa pudotuksessa nolla, vaikka massa ei muutu. Massa saadaan tunnetusta voimasta ja mitatusta liikkeen muutoksesta: $m = \\dfrac{F\\,\\Delta t}{\\Delta v}$.",
+   "unit": "",
+   "tolerance": 0.02
   }
  ],
  "level3": [

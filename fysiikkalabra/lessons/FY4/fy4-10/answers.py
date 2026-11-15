@@ -49,4 +49,25 @@ a["fy4-10-L2-09"] = mA * (vA - vA2) / (vB2 - vB)      # m_B = 0,30 kg (momentum 
 mA, v, v2 = 0.30, 0.60 / 1.0, 0.40 / 2.0              # position graph: slopes 0,60 and 0,20 m/s
 mB = mA * (v / v2 - 1)                                # 0,60 kg
 a["fy4-10-L3-06"] = 0.5 * mA * v**2 - 0.5 * (mA + mB) * v2**2   # 0,054 - 0,018 = 0,036 J
+# L2-10 (teacher's brief FY4-A4, a data task on the PhET simulation Collision Lab, screen Explore 1D, read 16.11.2026,
+# version 1.1.25): a written task, the answer is a string, so no number in `a`. Every number of its model solution,
+# from the simulation's default values (right is positive; the simulation shows two decimals):
+m1, v1, m2, v2 = 0.50, 1.00, 1.50, -0.50                # ball 1 and ball 2 before the collision
+s10 = {"M": m1 + m2}                                    # 2,00 kg
+s10["p"] = m1 * v1 + m2 * v2                            # total momentum before: 0,50 − 0,75 = −0,25 kg·m/s
+s10["Ek1"], s10["Ek2"] = 0.5 * m1 * v1 ** 2, 0.5 * m2 * v2 ** 2   # 0,25 J and 0,1875 J
+s10["Ek"] = s10["Ek1"] + s10["Ek2"]                     # 0,4375 J, shown as 0,44 J
+u1, u2 = -1.25, 0.25                                    # elasticity 100 %: velocities read after the collision
+s10["p100"] = m1 * u1 + m2 * u2                         # −0,625 + 0,375 = −0,25 kg·m/s
+s10["dp1"], s10["dp2"] = m1 * (u1 - v1), m2 * (u2 - v2)    # momentum changes at 100 %: −1,125 and +1,125 kg·m/s (they cancel)
+s10["Ek100"] = 0.5 * m1 * u1 ** 2 + 0.5 * m2 * u2 ** 2  # 0,3906 J + 0,0469 J = 0,4375 J, shown as 0,44 J
+u1, u2 = -0.69, 0.06                                    # elasticity 50 %: shown values (exact −0,6875 and 0,0625)
+s10["p50"] = m1 * u1 + m2 * u2                          # −0,345 + 0,090 = −0,255 kg·m/s (exact values: −0,25)
+s10["Ek50"] = 0.5 * m1 * u1 ** 2 + 0.5 * m2 * u2 ** 2   # 0,1190 J + 0,0027 J = 0,1217 J, about 0,12 J (exact 0,1211 J)
+s10["loss50"] = 100 * (s10["Ek"] - s10["Ek50"]) / s10["Ek"]    # 72 % of the kinetic energy leaves the motion
+u = -0.13                                               # elasticity 0 %: common shown velocity (exact −0,125)
+s10["p0"] = s10["M"] * u                                # 2,00 · (−0,13) = −0,26 kg·m/s (exact value: −0,25)
+s10["Ek0"] = 0.5 * s10["M"] * u ** 2                    # 0,0169 J, about 0,02 J (exact 0,0156 J)
+s10["loss0"] = 100 * (s10["Ek"] - s10["Ek0"]) / s10["Ek"]      # 96 %
+s10["p0_exact"] = s10["M"] * -0.125                     # −0,25 kg·m/s: the difference above is the rounding of the display
 print(json.dumps(a))

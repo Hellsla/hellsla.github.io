@@ -147,7 +147,7 @@
 **Kaava:** $mgh = \tfrac{1}{2} mv^2$, joten $v^2 = 2g \cdot h$. Suoran kulmakerroin on $k = 2g$, joten $g = \dfrac{k}{2}$.
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $g = \dfrac{19{,}5\,\text{m/s}^2}{2} = 9{,}77\,\text{m/s}^2$
-**Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten korkeuksissa $h$ (esimerkiksi $0{,}05\,\text{m}$). Kuvaajasta luettu tarkempi arvo on $9{,}77\,\text{m/s}^2$.
+**Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten korkeuksissa $h$ (esimerkiksi $0{,}10\,\text{m}$). Kuvaajasta luettu tarkempi arvo on $9{,}77\,\text{m/s}^2$.
 **Järkevyys:** Tulos poikkeaa tunnetusta arvosta $9{,}81\,\text{m/s}^2$ alle prosentin, mikä on mittausvirheen rajoissa. Yksittäinen mittaus antaa samaa suuruusluokkaa: $h = 0{,}30\,\text{m}$ ja $v = 2{,}41\,\text{m/s}$ antavat $g = v^2 : (2h) = 9{,}68\,\text{m/s}^2$. c) Suoran pitää kulkea origon kautta, koska kun $h = 0$, kuula on alimmassa kohdassa levossa eikä sillä ole liike-energiaa, joten $v = 0$ ja $v^2 = 0$. Yhtälö $v^2 = 2gh$ on verrannollisuus, jossa ei ole vakiotermiä.
 
 ## fy4-8-L2-06
@@ -239,3 +239,45 @@ Vaunu pysähtyisi vasta lähtökorkeudella $20\,\text{m}$.
 **Sijoitus:** $W = 25\,\text{J} - 40\,\text{J} = -15\,\text{J}$, ja $F_\mu = \dfrac{15\,\text{J}}{6{,}0\,\text{m}} = 2{,}5\,\text{N}$
 **Vastaus:** $2{,}5\,\text{N}$, kaksi merkitsevää numeroa kuten matkassa $6{,}0\,\text{m}$.
 **Järkevyys:** Mekaaninen energia väheni $15\,\text{J}$, mikä on erotus palkkien $40\,\text{J}$ ja $25\,\text{J}$ välillä, ja $2{,}5\,\text{N} \cdot 6{,}0\,\text{m} = 15\,\text{J}$. Kitkan työ on negatiivinen, koska kitka vastustaa liikettä.
+
+## fy4-8-L2-10
+**Annettu:** auton massa $m = 1500\,\text{kg}$ ja nopeudet $30\,\text{km/h}$, $50\,\text{km/h}$ ja $90\,\text{km/h}$. Aineistosta (Liikenneturva: Turvallinen ajonopeus, luettu 16. marraskuuta 2026) on otettu kaksi tietoa. Ensimmäinen: törmäysenergia nelinkertaistuu, kun törmäysnopeus kaksinkertaistuu. Toinen: kun auto törmää kiinteään esteeseen nopeudella $v = 50\,\text{km/h}$, ihmiseen, jonka massa on $m_\text{i} = 80\,\text{kg}$, vaikuttava törmäysvoima ”on $3\,000\,\text{kg}$”. Luku tulkitaan massaksi $m_F = 3000\,\text{kg}$, jonka paino on voima $F$. Putoamiskiihtyvyys on $g = 9{,}81\,\text{m/s}^2$.
+**Kysytty:** a) auton liike-energia $E_\text{k}$ kolmella nopeudella; b) perustelu aineiston väitteelle ja liike-energioiden suhde; c) mihin auton liike-energia siirtyy tai miksi se muuttuu; d) ihmisen pysähtymismatka $s$ yksikössä $\text{m}$; e) miksi liike-energia ei yksin ennusta henkilövahinkoja
+**Periaate:** Liikkuvalla kappaleella on liike-energiaa $E_\text{k} = \tfrac{1}{2} mv^2$. Törmäyksessä pysäyttävä voima osoittaa liikettä vastaan ja tekee negatiivista työtä. Liike on vaakasuoraa, joten paino ja tukivoima eivät tee työtä ja pysäyttävä voima on kokonaisvoima. Siksi käytetään työperiaatetta $E_{\text{k}0} + W = E_\text{k}$: kokonaisvoiman työ on liike-energian muutos. Kohdassa d voima oletetaan vakioksi, joten sen työ on $W = -F s$.
+**Kaava:** a) $E_\text{k} = \tfrac{1}{2} mv^2$. b) Kun nopeus on $2v$, liike-energia on $\tfrac{1}{2} m(2v)^2 = 4 \cdot \tfrac{1}{2} mv^2$ eli $4E_\text{k}$. Samoin nopeudella $3v$ se on $\tfrac{1}{2} m(3v)^2 = 9 \cdot \tfrac{1}{2} mv^2$ eli $9E_\text{k}$. d) Voima on painon suuruinen, $F = m_F g$. Alussa $E_{\text{k}0} = \tfrac{1}{2} m_\text{i} v^2$ ja lopussa ihminen on levossa, $E_\text{k} = 0$, joten työperiaate on $\tfrac{1}{2} m_\text{i} v^2 - F s = 0$. Tästä $s = \dfrac{m_\text{i} v^2}{2F}$.
+**Muunnokset:** $30\,\text{km/h} = 30 : 3{,}6\,\text{m/s} = 8{,}333\,\text{m/s}$, $50\,\text{km/h} = 50 : 3{,}6\,\text{m/s} = 13{,}889\,\text{m/s}$ ja $90\,\text{km/h} = 90 : 3{,}6\,\text{m/s} = 25{,}0\,\text{m/s}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
+**Sijoitus:** a) Nopeudella $30\,\text{km/h}$:
+
+$$\begin{aligned} E_\text{k} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (8{,}333\,\text{m/s})^2 \\ &= 52\,083\,\text{J} \end{aligned}$$
+
+Nopeudella $50\,\text{km/h}$:
+
+$$\begin{aligned} E_\text{k} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (13{,}889\,\text{m/s})^2 \\ &= 144\,676\,\text{J} \end{aligned}$$
+
+Nopeudella $90\,\text{km/h}$:
+
+$$\begin{aligned} E_\text{k} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (25{,}0\,\text{m/s})^2 \\ &= 468\,750\,\text{J} \end{aligned}$$
+
+b) Nopeus $90\,\text{km/h}$ on kolminkertainen nopeuteen $30\,\text{km/h}$ verrattuna, joten suhde on $3^2 = 9$. Lasketuista arvoista saadaan sama: $468\,750\,\text{J} : 52\,083\,\text{J} = 9{,}00$.
+
+d) Voima:
+
+$$\begin{aligned} F &= 3000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &= 29\,430\,\text{N} \end{aligned}$$
+
+Ihmisen liike-energia alussa:
+
+$$\begin{aligned} E_{\text{k}0} &= \tfrac{1}{2} \cdot 80\,\text{kg} \cdot (13{,}889\,\text{m/s})^2 \\ &= 7716\,\text{J} \end{aligned}$$
+
+Pysähtymismatka:
+
+$$\begin{aligned} s &= \dfrac{80\,\text{kg} \cdot (13{,}889\,\text{m/s})^2}{2 \cdot 29\,430\,\text{N}} \\ &= \dfrac{7716\,\text{J}}{29\,430\,\text{N}} \\ &= 0{,}2622\,\text{m} \end{aligned}$$
+**Vastaus:** a) Auton liike-energia $E_\text{k}$ on noin $52{,}1\,\text{kJ}$, $145\,\text{kJ}$ ja $469\,\text{kJ}$. Tulokset annetaan kolmella merkitsevällä numerolla: nopeudet ovat tarkkoja vertailuarvoja ja massassa $1500\,\text{kg}$ on neljä merkitsevää numeroa, joten kolme numeroa ei lupaa liikaa.
+
+b) Väite pitää paikkansa, koska liike-energia on verrannollinen nopeuden neliöön: kaksinkertainen nopeus antaa $2^2 = 4$-kertaisen energian, ja tämä pätee kaikilla massoilla. Nopeudella $90\,\text{km/h}$ liike-energia on $9$-kertainen verrattuna nopeuteen $30\,\text{km/h}$.
+
+c) Esteen voima tekee autoon negatiivista työtä, ja työperiaatteen mukaan auton liike-energia pienenee nollaan. Energia ei häviä. Suurin osa kuluu auton rakenteiden (ja esteen) pysyvään muodonmuutokseen ja muuttuu niiden sisäenergiaksi: osat lämpenevät, ja tämä energia siirtyy vähitellen lämpönä ympäristöön. Pieni osa siirtyy ääneen ja irtoavien osien liike-energiaksi.
+
+d) $s \approx 0{,}26\,\text{m}$, kaksi merkitsevää numeroa kuten massassa $80\,\text{kg}$. Voima on noin $29\,\text{kN}$.
+
+e) Liike-energia määrää vain pysäyttämiseen tarvittavan työn eli tulon $F s$. Sama energia voidaan poistaa pitkällä matkalla pienellä voimalla tai lyhyellä matkalla suurella voimalla. Jos ihminen, jonka liike-energia on $7716\,\text{J}$, pysähtyy matkalla $1{,}0\,\text{m}$ (auton keula painuu kasaan, turvavyö ja turvatyyny joustavat), keskimääräinen voima on noin $7{,}7\,\text{kN}$. Jos matka on $0{,}05\,\text{m}$ (kova pinta, ei turvavyötä), voima on noin $150\,\text{kN}$ eli kaksikymmenkertainen. Vammat riippuvat voimasta ja siitä, miten se jakautuu kehoon ja ajallisesti, mihin keho osuu, törmäyksen suunnasta ja ihmisestä itsestään, esimerkiksi iästä. Jalankulkijaa eivät suojaa auton rakenteet: aineiston mukaan jalankulkijan kuoleman todennäköisyys kasvaa jyrkästi, kun törmäysnopeus on yli $60\,\text{km/h}$. Liike-energia kertoo siis, kuinka paljon energiaa on poistettava, mutta ei sitä, miten se poistuu.
+**Järkevyys:** Neljännesmetri on samaa suuruusluokkaa kuin turvavyön jousto ja auton keulan kasaan painuminen yhteensä, joten tulos on uskottava. Voima on $3000\,\text{kg} : 80\,\text{kg} = 37{,}5$ kertaa ihmisen oman painon suuruinen, joten hidastuvuus on $a = F : m_\text{i} = 368\,\text{m/s}^2$ eli noin $37{,}5\,g$. Liikeyhtälöistä saadaan sama matka: $v^2 : (2a) = 0{,}262\,\text{m}$. Aineiston arvo nopeudelle $100\,\text{km/h}$ on $12\,000\,\text{kg}$ eli tasan nelinkertainen. Se vastaa mallia, jossa pysähtymismatka on sama $0{,}262\,\text{m}$: energia nelinkertaistuu, joten voimakin nelinkertaistuu. Mallin raja: todellinen voima ei ole vakio, joten $29\,\text{kN}$ on keskimääräinen arvo ja suurin hetkellinen voima on sitä suurempi.

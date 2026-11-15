@@ -245,7 +245,7 @@ Tulos on järkevä. Tuulen teho on $P : \eta \approx 4{,}9\,\text{MW}$, ja siit�
 **Muunnokset:** $P = 511\,\text{kW} = 0{,}511\,\text{MW}$, ja aika pidetään tunteina, jolloin energia saadaan megawattitunteina.
 **Sijoitus:** $E = 0{,}511\,\text{MW} \cdot 120\,\text{h} = 61{,}32\,\text{MWh} \approx 61{,}3\,\text{MWh}$
 **Vastaus:** $61{,}3\,\text{MWh}$, kolme merkitsevää numeroa kuten kuvaajasta luetussa tehossa $511\,\text{kW}$.
-**Järkevyys:** Teho on noin $0{,}5\,\text{MW}$ ja aikaa on noin $100\,\text{h}$, joten energia on noin $50\,\text{MWh}$. Tuuli on tässä keskinopeutta, joten pelkkä teho aikaa kohti on sopiva arvio vain, koska tuuli on oletettu tasaiseksi.
+**Järkevyys:** Teho on noin $0{,}5\,\text{MW}$ ja aikaa on noin $100\,\text{h}$, joten energia on noin $50\,\text{MWh}$. Energia on tehon ja ajan tulo $E = Pt$ vain, koska tuuli on oletettu tasaiseksi: vaihtelevassa tuulessa teho muuttuu koko ajan, eikä keskinopeudesta luettu teho anna oikeaa energiaa.
 
 ## fy4-15-L2-10
 **Annettu:** tehokäyrä pisteinä, tuulen nopeus kasvaa arvosta $9\,\text{m/s}$ arvoon $12\,\text{m/s}$

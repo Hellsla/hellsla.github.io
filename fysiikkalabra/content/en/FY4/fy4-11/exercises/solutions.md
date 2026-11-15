@@ -122,7 +122,7 @@ a &= \frac{1}{2 \cdot 0.0637\,\text{s}^2/\text{m}} \\
 &= 7.85\,\text{m/s}^2
 \end{aligned}
 ```
-**Answer:** $7.9\,\text{m/s}^2$, two significant figures, because the braking distances are measured to three or four figures and reading the line is approximate.
+**Answer:** $7.9\,\text{m/s}^2$, two significant figures, because the braking distances are measured to two or three figures and reading the line is approximate.
 **Reasonableness:** The result is close to the value for dry asphalt, $9.0\,\text{m/s}^2$, but a little smaller. A check with one point: at $20.0\,\text{m/s}$ we get $\dfrac{(20.0\,\text{m/s})^2}{2 \cdot 7.85\,\text{m/s}^2} = 25.5\,\text{m}$, and the measured value is $25.9\,\text{m}$. When the speed doubles from $10$ to $20\,\text{m/s}$, the distance grows from $6.5\,\text{m}$ to $25.9\,\text{m}$, that is, about four times, as the quadratic dependence predicts.
 
 ## fy4-11-L2-06
@@ -262,11 +262,11 @@ c) The greatest force is in the interval $40$–$60\,\text{ms}$:
 \begin{aligned}
 F_\text{max} &= \frac{80.0\,\text{kg} \cdot 4.5\,\text{m/s}}{0.020\,\text{s}} \\
 &= 18\,000\,\text{N} \\
-&= 18.0\,\text{kN}
+&= 18\,\text{kN}
 \end{aligned}
 ```
 d) The change in momentum is $m\,\Delta v = 80.0\,\text{kg} \cdot 15.0\,\text{m/s} = 1200\,\text{kg}\cdot\text{m/s}$ regardless of whether the dummy is protected by a belt and an airbag. If the dummy stopped in $0.010\,\text{s}$, the average force would be $F_\text{avg} = \dfrac{1200\,\text{kg}\cdot\text{m/s}}{0.010\,\text{s}} = 120\,000\,\text{N}$, that is, $120\,\text{kN}$.
-**Answer:** c) The greatest force is $18.0\,\text{kN}$, three significant figures like the change in speed $4.5\,\text{m/s}$ and the mass $80.0\,\text{kg}$. In addition, a) the stopping distance is $0.79\,\text{m}$ and b) the average force is $10\,\text{kN}$. d) The belt and the airbag lengthen the stopping time to about $0.12\,\text{s}$, whereas on hitting a rigid surface the time would be about $0.010\,\text{s}$ and the average force would be $120\,\text{kN}$, that is, $12$ times as large. The change in momentum and the impulse are the same, so a longer time means a smaller force, $F_\text{avg} = \tfrac{m\,\Delta v}{\Delta t}$. The belt keeps the dummy with the car and lets it slow down together with the car, and the airbag spreads the force over a large area; they work together, not instead of each other. The force varies during the collision, so the greatest force $18.0\,\text{kN}$ is greater than the average.
+**Answer:** c) The greatest force is $18\,\text{kN}$, two significant figures like the change in speed $4.5\,\text{m/s}$; the mass $80.0\,\text{kg}$ and the time interval have more figures, so they do not limit the precision. In addition, a) the stopping distance is $0.79\,\text{m}$ and b) the average force is $10\,\text{kN}$. d) The belt and the airbag lengthen the stopping time to about $0.12\,\text{s}$, whereas on hitting a rigid surface the time would be about $0.010\,\text{s}$ and the average force would be $120\,\text{kN}$, that is, $12$ times as large. The change in momentum and the impulse are the same, so a longer time means a smaller force, $F_\text{avg} = \tfrac{m\,\Delta v}{\Delta t}$. The belt keeps the dummy with the car and lets it slow down together with the car, and the airbag spreads the force over a large area; they work together, not instead of each other. The force varies during the collision, so the greatest force $18\,\text{kN}$ is greater than the average.
 **Reasonableness:** The weight of the dummy is $80.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 785\,\text{N}$, so the greatest force is about $23$ times and the average force about $13$ times the weight. The greatest force is $1.8$ times the average. The distance can be checked with the average speed: over the whole time the average speed is about $0.79\,\text{m} : 0.120\,\text{s} = 6.6\,\text{m/s}$, which is less than half of the initial speed $15.0\,\text{m/s}$, because the speed has decreased faster in the middle than in uniform slowing down.
 
 ## fy4-11-L1-09
@@ -298,5 +298,5 @@ d) The change in momentum is $m\,\Delta v = 80.0\,\text{kg} \cdot 15.0\,\text{m/
 **Formula:** $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$, so $F_\text{A} - F_\text{B} = m\,\Delta v \left(\dfrac{1}{\Delta t_\text{A}} - \dfrac{1}{\Delta t_\text{B}}\right)$
 **Conversions:** None needed: the quantities are in SI units; finally $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $F_\text{A} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0.060\,\text{s}} = 17\,500\,\text{N}$ and $F_\text{B} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0.150\,\text{s}} = 7000\,\text{N}$, so $F_\text{A} - F_\text{B} = 10\,500\,\text{N} = 10.5\,\text{kN}$
-**Answer:** $10.5\,\text{kN}$, the data ($70\,\text{kg}$, $15\,\text{m/s}$) have two significant figures, so $11\,\text{kN}$ is also accepted; the third figure is kept to avoid rounding the intermediate forces.
+**Answer:** $11\,\text{kN}$. The mass $70\,\text{kg}$ and the speed $15\,\text{m/s}$ have two significant figures, so the answer is given to two significant figures. The calculated value is $10.5\,\text{kN}$, and the rounding is done only at the end.
 **Reasonableness:** Test A: $17.5\,\text{kN}$ is about $25$ times the weight of the dummy, $70\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 690\,\text{N}$, test B: $7.0\,\text{kN}$ about $10$ times. The ratio of the forces $17.5/7.0 = 2.5$ equals the inverse ratio of the times $0.150/0.060 = 2.5$, as it should: the same change of momentum, a longer time, a smaller force.

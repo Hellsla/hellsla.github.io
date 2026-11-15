@@ -122,7 +122,7 @@ a &= \frac{1}{2 \cdot 0{,}0637\,\text{s}^2/\text{m}} \\
 &= 7{,}85\,\text{m/s}^2
 \end{aligned}
 ```
-**Vastaus:** $7{,}9\,\text{m/s}^2$. Vastauksessa on kaksi merkitsevää numeroa. Jarrutusmatkat on mitattu kolmen tai neljän numeron tarkkuudella, ja suoran lukeminen on likimääräistä.
+**Vastaus:** $7{,}9\,\text{m/s}^2$. Vastauksessa on kaksi merkitsevää numeroa. Jarrutusmatkat on mitattu kahden tai kolmen numeron tarkkuudella, ja suoran lukeminen on likimääräistä.
 **Järkevyys:** Tulos on lähellä kuivan asfaltin arvoa $9{,}0\,\text{m/s}^2$, mutta hieman pienempi. Tarkistus yhdellä pisteellä: nopeudella $20{,}0\,\text{m/s}$ saadaan $\dfrac{(20{,}0\,\text{m/s})^2}{2 \cdot 7{,}85\,\text{m/s}^2} = 25{,}5\,\text{m}$. Mitattu arvo on $25{,}9\,\text{m}$. Kun nopeus kaksinkertaistuu $10$:stä $20\,\text{m/s}$:iin, matka kasvaa $6{,}5\,\text{m}$:stä $25{,}9\,\text{m}$:iin. Se on noin nelinkertainen, kuten neliöllinen riippuvuus ennustaa.
 
 ## fy4-11-L2-06
@@ -262,11 +262,11 @@ c) Suurin voima on välillä $40$–$60\,\text{ms}$:
 \begin{aligned}
 F_\text{max} &= \frac{80{,}0\,\text{kg} \cdot 4{,}5\,\text{m/s}}{0{,}020\,\text{s}} \\
 &= 18\,000\,\text{N} \\
-&= 18{,}0\,\text{kN}
+&= 18\,\text{kN}
 \end{aligned}
 ```
 d) Liikemäärän muutos on $m\,\Delta v = 80{,}0\,\text{kg} \cdot 15{,}0\,\text{m/s} = 1200\,\text{kg}\cdot\text{m/s}$. Se on sama riippumatta siitä, suojaako nukkea vyö ja turvatyyny. Jos nukke pysähtyisi ajassa $0{,}010\,\text{s}$, keskimääräinen voima olisi $F_\text{ka} = \dfrac{1200\,\text{kg}\cdot\text{m/s}}{0{,}010\,\text{s}} = 120\,000\,\text{N}$ eli $120\,\text{kN}$.
-**Vastaus:** c) Suurin voima on $18{,}0\,\text{kN}$. Vastauksessa on kolme merkitsevää numeroa, kuten nopeuden muutoksessa $4{,}5\,\text{m/s}$ ja massassa $80{,}0\,\text{kg}$. Lisäksi a) pysähtymismatka on $0{,}79\,\text{m}$ ja b) keskimääräinen voima on $10\,\text{kN}$. d) Vyö ja turvatyyny pidentävät pysähtymisajan noin arvoon $0{,}12\,\text{s}$. Jäykkään pintaan osuessa aika olisi noin $0{,}010\,\text{s}$ ja keskimääräinen voima $120\,\text{kN}$, eli $12$-kertainen. Liikemäärän muutos ja impulssi ovat samat, joten pidempi aika tarkoittaa pienempää voimaa, $F_\text{ka} = \tfrac{m\,\Delta v}{\Delta t}$. Vyö pitää nuken auton mukana ja antaa sen hidastua yhdessä auton kanssa. Turvatyyny jakaa voiman suurelle alalle. Ne toimivat yhdessä, eivät toistensa sijasta. Voima vaihtelee törmäyksen aikana, joten suurin voima $18{,}0\,\text{kN}$ on suurempi kuin keskimääräinen.
+**Vastaus:** c) Suurin voima on $18\,\text{kN}$. Vastauksessa on kaksi merkitsevää numeroa, kuten nopeuden muutoksessa $4{,}5\,\text{m/s}$. Massassa $80{,}0\,\text{kg}$ ja aikavälissä numeroita on enemmän, joten ne eivät rajoita tarkkuutta. Lisäksi a) pysähtymismatka on $0{,}79\,\text{m}$ ja b) keskimääräinen voima on $10\,\text{kN}$. d) Vyö ja turvatyyny pidentävät pysähtymisajan noin arvoon $0{,}12\,\text{s}$. Jäykkään pintaan osuessa aika olisi noin $0{,}010\,\text{s}$ ja keskimääräinen voima $120\,\text{kN}$, eli $12$-kertainen. Liikemäärän muutos ja impulssi ovat samat, joten pidempi aika tarkoittaa pienempää voimaa, $F_\text{ka} = \tfrac{m\,\Delta v}{\Delta t}$. Vyö pitää nuken auton mukana ja antaa sen hidastua yhdessä auton kanssa. Turvatyyny jakaa voiman suurelle alalle. Ne toimivat yhdessä, eivät toistensa sijasta. Voima vaihtelee törmäyksen aikana, joten suurin voima $18\,\text{kN}$ on suurempi kuin keskimääräinen.
 **Järkevyys:** Nuken paino on $80{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 785\,\text{N}$. Suurin voima on noin $23$-kertainen ja keskimääräinen voima noin $13$-kertainen painoon verrattuna. Suurin voima on $1{,}8$-kertainen keskimääräiseen nähden. Matkan voi tarkistaa keskinopeudella: koko ajan keskinopeus on noin $0{,}79\,\text{m} : 0{,}120\,\text{s} = 6{,}6\,\text{m/s}$. Se on alle puolet alkunopeudesta $15{,}0\,\text{m/s}$, koska nopeus on pienentynyt keskivaiheilla nopeammin kuin tasaisessa hidastumisessa.
 
 ## fy4-11-L1-09
@@ -298,5 +298,5 @@ d) Liikemäärän muutos on $m\,\Delta v = 80{,}0\,\text{kg} \cdot 15{,}0\,\text
 **Kaava:** $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$, joten $F_\text{A} - F_\text{B} = m\,\Delta v \left(\dfrac{1}{\Delta t_\text{A}} - \dfrac{1}{\Delta t_\text{B}}\right)$
 **Muunnokset:** Muunnoksia ei tarvita, koska suureet ovat SI-yksiköissä. Lopuksi muunnetaan $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $F_\text{A} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0{,}060\,\text{s}} = 17\,500\,\text{N}$ ja $F_\text{B} = \dfrac{70\,\text{kg} \cdot 15\,\text{m/s}}{0{,}150\,\text{s}} = 7000\,\text{N}$, joten $F_\text{A} - F_\text{B} = 10\,500\,\text{N} = 10{,}5\,\text{kN}$
-**Vastaus:** $10{,}5\,\text{kN}$. Massa $70\,\text{kg}$ ja nopeus $15\,\text{m/s}$ ovat kahden merkitsevän numeron arvoja, joten myös $11\,\text{kN}$ hyväksytään; kolmas numero säilytetään, ettei välitulosten pyöristys vääristä tulosta.
+**Vastaus:** $11\,\text{kN}$. Massa $70\,\text{kg}$ ja nopeus $15\,\text{m/s}$ ovat kahden merkitsevän numeron arvoja. Siksi vastaus annetaan kahdella merkitsevällä numerolla. Laskettu arvo on $10{,}5\,\text{kN}$, ja pyöristys tehdään vasta lopussa.
 **Järkevyys:** Kokeessa A voima $17{,}5\,\text{kN}$ on noin $25$-kertainen nuken painoon $70\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 690\,\text{N}$ verrattuna. Kokeessa B voima $7{,}0\,\text{kN}$ on noin $10$-kertainen. Voimien suhde $17{,}5/7{,}0 = 2{,}5$ on sama kuin aikojen käänteinen suhde $0{,}150/0{,}060 = 2{,}5$. Näin pitää olla: liikemäärän muutos on sama, aika on pidempi ja voima on pienempi.

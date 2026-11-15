@@ -274,6 +274,19 @@
    "answer": 0.3,
    "unit": "kg",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy4-10-L2-10",
+   "level": 2,
+   "text": "In the PhET simulation Collision Lab two balls collide on a straight track. Open the simulation <a href=\"https://phet.colorado.edu/en/simulations/collision-lab\" rel=\"noopener\">PhET: Collision Lab</a> (read 16 November 2026) and choose the screen Explore 1D. Tick Values, Kinetic Energy and More Data. Untick Reflecting Border, so that the balls do not bounce off the edges. The positive direction is to the right.\n\na) Choose the masses and the initial velocities of the balls (you may use the default values of the simulation). Record the velocities of the balls with their signs before the collision and after it, when the elasticity is $100\\,\\%$.\n\nb) Calculate the total momentum and the total kinetic energy of the system before the collision and after it. Compare the results with the values the simulation shows.\n\nc) Repeat the measurement and the calculations with the same initial values, when the elasticity is $50\\,\\%$ and $0\\,\\%$. How does the elasticity affect the conservation of momentum and of kinetic energy?\n\nd) Use your results to explain why the momentum of the system is conserved although its kinetic energy decreases.",
+   "kind": [
+    "data",
+    "model",
+    "reasoning"
+   ],
+   "answer": "The total momentum is the same before and after the collision at every value of the elasticity. Kinetic energy is conserved only when the elasticity is $100\\,\\%$ (an elastic collision), and it decreases more the smaller the elasticity is: with the default values the kinetic energy after the collision is $0.44\\,\\text{J}$, $0.12\\,\\text{J}$ and $0.02\\,\\text{J}$, when the elasticity is $100\\,\\%$, $50\\,\\%$ and $0\\,\\%$.",
+   "unit": "",
+   "tolerance": 0.02
   }
  ],
  "level3": [

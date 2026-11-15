@@ -147,7 +147,7 @@
 **Formula:** $mgh = \tfrac{1}{2} mv^2$, so $v^2 = 2g \cdot h$. The slope of the line is $k = 2g$, so $g = \dfrac{k}{2}$.
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $g = \dfrac{19.5\,\text{m/s}^2}{2} = 9.77\,\text{m/s}^2$
-**Answer:** $g \approx 9.8\,\text{m/s}^2$, two significant figures like the heights $h$ (for example $0.05\,\text{m}$). The more precise value read from the graph is $9.77\,\text{m/s}^2$.
+**Answer:** $g \approx 9.8\,\text{m/s}^2$, two significant figures like the heights $h$ (for example $0.10\,\text{m}$). The more precise value read from the graph is $9.77\,\text{m/s}^2$.
 **Reasonableness:** The result differs from the known value $9.81\,\text{m/s}^2$ by less than one percent, which is within the measurement error. A single measurement gives the same order of magnitude: $h = 0.30\,\text{m}$ and $v = 2.41\,\text{m/s}$ give $g = v^2 : (2h) = 9.68\,\text{m/s}^2$. c) The line must pass through the origin, because when $h = 0$ the bob is at rest at the lowest point and has no kinetic energy, so $v = 0$ and $v^2 = 0$. The equation $v^2 = 2gh$ is a proportionality with no constant term.
 
 ## fy4-8-L2-06
@@ -239,3 +239,45 @@ The car would stop only at the starting height of $20\,\text{m}$.
 **Substitution:** $W = 25\,\text{J} - 40\,\text{J} = -15\,\text{J}$, and $F_\mu = \dfrac{15\,\text{J}}{6.0\,\text{m}} = 2.5\,\text{N}$
 **Answer:** $2.5\,\text{N}$, two significant figures, like the distance $6.0\,\text{m}$.
 **Reasonableness:** The mechanical energy decreased by $15\,\text{J}$, the difference between the bars $40\,\text{J}$ and $25\,\text{J}$, and $2.5\,\text{N} \cdot 6.0\,\text{m} = 15\,\text{J}$. The work of friction is negative, because friction opposes the motion.
+
+## fy4-8-L2-10
+**Given:** the mass of the car $m = 1500\,\text{kg}$ and the speeds $30\,\text{km/h}$, $50\,\text{km/h}$ and $90\,\text{km/h}$. Two facts are taken from the source (Liikenneturva: Turvallinen ajonopeus, read 16 November 2026). The first: the collision energy quadruples when the collision speed doubles. The second: when a car hits a fixed obstacle at $v = 50\,\text{km/h}$, the collision force acting on a person of mass $m_\text{p} = 80\,\text{kg}$ ”is $3\,000\,\text{kg}$”. The number is interpreted as a mass $m_F = 3000\,\text{kg}$ whose weight is the force $F$. The acceleration of free fall is $g = 9.81\,\text{m/s}^2$.
+**Find:** a) the kinetic energy $E_\text{k}$ of the car at the three speeds; b) a justification of the source's claim and the ratio of the kinetic energies; c) where the kinetic energy of the car goes or what it turns into; d) the stopping distance $s$ of the person in $\text{m}$; e) why the kinetic energy alone does not predict the injuries
+**Principle:** A moving body has the kinetic energy $E_\text{k} = \tfrac{1}{2} mv^2$. In a collision the stopping force points against the motion and does negative work. The motion is horizontal, so the weight and the normal force do no work and the stopping force is the net force. That is why the work–energy principle $E_{\text{k}0} + W = E_\text{k}$ is used: the work of the net force equals the change in kinetic energy. In part d the force is assumed to be constant, so its work is $W = -F s$.
+**Formula:** a) $E_\text{k} = \tfrac{1}{2} mv^2$. b) When the speed is $2v$, the kinetic energy is $\tfrac{1}{2} m(2v)^2 = 4 \cdot \tfrac{1}{2} mv^2$, that is $4E_\text{k}$. In the same way at the speed $3v$ it is $\tfrac{1}{2} m(3v)^2 = 9 \cdot \tfrac{1}{2} mv^2$, that is $9E_\text{k}$. d) The force is equal to the weight, $F = m_F g$. At the start $E_{\text{k}0} = \tfrac{1}{2} m_\text{p} v^2$ and at the end the person is at rest, $E_\text{k} = 0$, so the work–energy principle is $\tfrac{1}{2} m_\text{p} v^2 - F s = 0$. From this $s = \dfrac{m_\text{p} v^2}{2F}$.
+**Conversions:** $30\,\text{km/h} = 30 : 3.6\,\text{m/s} = 8.333\,\text{m/s}$, $50\,\text{km/h} = 50 : 3.6\,\text{m/s} = 13.889\,\text{m/s}$ and $90\,\text{km/h} = 90 : 3.6\,\text{m/s} = 25.0\,\text{m/s}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
+**Substitution:** a) At $30\,\text{km/h}$:
+
+$$\begin{aligned} E_\text{k} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (8.333\,\text{m/s})^2 \\ &= 52\,083\,\text{J} \end{aligned}$$
+
+At $50\,\text{km/h}$:
+
+$$\begin{aligned} E_\text{k} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (13.889\,\text{m/s})^2 \\ &= 144\,676\,\text{J} \end{aligned}$$
+
+At $90\,\text{km/h}$:
+
+$$\begin{aligned} E_\text{k} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (25.0\,\text{m/s})^2 \\ &= 468\,750\,\text{J} \end{aligned}$$
+
+b) The speed $90\,\text{km/h}$ is three times the speed $30\,\text{km/h}$, so the ratio is $3^2 = 9$. The calculated values give the same: $468\,750\,\text{J} : 52\,083\,\text{J} = 9.00$.
+
+d) The force:
+
+$$\begin{aligned} F &= 3000\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &= 29\,430\,\text{N} \end{aligned}$$
+
+The kinetic energy of the person at the start:
+
+$$\begin{aligned} E_{\text{k}0} &= \tfrac{1}{2} \cdot 80\,\text{kg} \cdot (13.889\,\text{m/s})^2 \\ &= 7716\,\text{J} \end{aligned}$$
+
+The stopping distance:
+
+$$\begin{aligned} s &= \dfrac{80\,\text{kg} \cdot (13.889\,\text{m/s})^2}{2 \cdot 29\,430\,\text{N}} \\ &= \dfrac{7716\,\text{J}}{29\,430\,\text{N}} \\ &= 0.2622\,\text{m} \end{aligned}$$
+**Answer:** a) The kinetic energy $E_\text{k}$ of the car is about $52.1\,\text{kJ}$, $145\,\text{kJ}$ and $469\,\text{kJ}$. The results are given to three significant figures: the speeds are exact comparison values and the mass $1500\,\text{kg}$ has four significant figures, so three figures do not promise too much.
+
+b) The claim is correct, because kinetic energy is proportional to the square of the speed: twice the speed gives $2^2 = 4$ times the energy, and this holds for every mass. At $90\,\text{km/h}$ the kinetic energy is $9$ times that at $30\,\text{km/h}$.
+
+c) The force of the obstacle does negative work on the car, and by the work–energy principle the kinetic energy of the car decreases to zero. The energy does not vanish. Most of it goes into the permanent deformation of the structures of the car (and of the obstacle) and turns into their internal energy: the parts warm up, and this energy is then gradually transferred to the surroundings as heat. A small part goes into sound and into the kinetic energy of parts that come loose.
+
+d) $s \approx 0.26\,\text{m}$, two significant figures like the mass $80\,\text{kg}$. The force is about $29\,\text{kN}$.
+
+e) The kinetic energy fixes only the work needed to stop the person, that is the product $F s$. The same energy can be taken away over a long distance with a small force or over a short distance with a large force. If a person with a kinetic energy of $7716\,\text{J}$ stops over $1.0\,\text{m}$ (the front of the car crumples, the seat belt and the airbag give), the mean force is about $7.7\,\text{kN}$. If the distance is $0.05\,\text{m}$ (a hard surface, no seat belt), the force is about $150\,\text{kN}$, twenty times as large. The injuries depend on the force and on how it is spread over the body and in time, on what the body hits, on the direction of the collision and on the person, for example on age. A pedestrian is not protected by the structures of a car: according to the source, the probability of a pedestrian dying grows steeply when the collision speed is over $60\,\text{km/h}$. So the kinetic energy tells how much energy must be taken away, but not how it is taken away.
+**Reasonableness:** A quarter of a metre is of the same order as the give of a seat belt and the crumpling of the front of a car together, so the result is believable. The force is $3000\,\text{kg} : 80\,\text{kg} = 37.5$ times the person's own weight, so the deceleration is $a = F : m_\text{p} = 368\,\text{m/s}^2$, about $37.5\,g$. The equations of motion give the same distance: $v^2 : (2a) = 0.262\,\text{m}$. The source's value for $100\,\text{km/h}$ is $12\,000\,\text{kg}$, exactly four times as large. It matches a model in which the stopping distance is the same $0.262\,\text{m}$: the energy quadruples, so the force quadruples too. Limit of the model: the real force is not constant, so $29\,\text{kN}$ is a mean value and the largest momentary force is greater.

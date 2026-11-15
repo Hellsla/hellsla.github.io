@@ -215,7 +215,7 @@ m_2 g - T &= m_2 a
 ```
 where $m_1$ is the mass of the cart (kg), $m_2$ the mass of the hanging mass (kg), $T$ the tension in the string (N), $a$ the acceleration (m/s²) and $g = 9.81\,\text{m/s}^2$. There are two unknowns, $a$ and $T$, and two equations.
 
-When the equations are added side by side, $T$ cancels, because the string is an internal force between the bodies. This gives the acceleration and then the tension:
+When the equations are added side by side, $T$ cancels, because the tension in the string is an internal force between the bodies. This gives the acceleration and then the tension:
 ```latex
 \begin{aligned}
 a &= \frac{m_2}{m_1 + m_2}\,g \\
