@@ -83,6 +83,22 @@ näkyy 360 px:llä muodossa "4500 kW". Opettaja 2026-11-15:
 Tehdään kurssi kerrallaan, yksi PR per kurssi, alkaen kursseista, joilla rivejä on eniten (FY8, FY9, FY2); jokainen
 korjattu kaava poistaa rivinsä listalta. Ei muita sisältömuutoksia samassa PR:ssä.
 
+## 5e. Välimerkki display-kaavan perään (koordinaattori 2026-11-15)
+
+Varattu: claude/display-kaavan-valimerkki
+
+Kohdan 5d PR #601: kun tekstin sisällä oleva kaava nostetaan display-kaavaksi (`$$…$$` tai `aligned`) ja lause jatkuu
+välimerkillä ("… $$kaava$$." tai "$$kaava$$, joten …"), välimerkki jää yksin seuraavan rivin alkuun. Sisältöä ei muuteta
+(reflow-carry ei muuten kulje). Jaettu muutos (`scripts/`, testit): ajetaan yksin, merkitään ensin.
+1. Rakennus (`scripts/build.py`/`scripts/mathlayout.py`, palvelinpuolella): display-kaavan välittömästi seuraava
+   välimerkki (. , ; : ! ?) siirretään renderöityyn kaavaan viimeisen rivin loppuun (`\text{.}`; `aligned`: viimeinen rivi).
+   Muu teksti jatkuu seuraavassa kappaleessa ilman välimerkkiä.
+2. Toimii kaikkialla, missä kaavoja renderöidään (lesson.md, inquiry.json, exercises, solutions, koe, sovella, units),
+   kolmella kielellä; ääneenluku ei muutu oudoksi.
+3. Testi: `$$a = b$$.` → piste kaavassa; `$$a=b$$, joten c` → pilkku kaavassa, "joten c" jatkuu; inline-kaava ei muutu.
+4. `site/` muuttuu vain display-kaava + välimerkki -kohdista; `check_layout.py` SMOKE-sivuille; `reviews.py verify`
+   (rakennusmuutos, mikään katselmointi ei vanhene).
+
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13, 2026-11-14 ja 2026-11-15)
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
