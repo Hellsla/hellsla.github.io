@@ -1,13 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: bbb5a2d9dbcc6a86
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (0d6428d22f2ec290).
+VERDICT: FAIL
+CONTENT-HASH: 7d6497eec8fbfd53
 
 ## Blocking
-(none)
+- [Major] reflow-3 (and reflow-2 'nimellisteholla (') — the lifted formula sits inside parentheses: the sentence breaks at '(' at a line end and a lone ')' + '.' starts a line after the formula ('teoriatiivistelmän Ydinajatus-osan lopussa (' / formula / ')'). Fix: keep a parenthetical formula inline (a short one) or lift it with the parentheses moved into the formula's first and last rows, or recast without brackets.
 
 ## Polish
-(none)
+- [Minor] Short inline formulas followed by 'ja' or a comma stay on their own lines in the stacked sheet; acceptable, no action.
 
 ## Checked
-- Opened fy9-energia-fi-easy-360.png (every row, pill and header read; no overlap except as noted), and read the changed aria-label/figures.json entry and the diff against the chart; the diff's other lines (teacher.md rows wording, unit.md sign wording, line break fix) read in full.
-- Round-1 finding(s) of my role re-checked: unchanged rest holds.
+batch delta review 5d: all reflow-*.png sheets at 360 px opened; no formula clipped, relations aligned, operators lead continuation rows.

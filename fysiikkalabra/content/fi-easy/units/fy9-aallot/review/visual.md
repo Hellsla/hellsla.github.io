@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4a0d8e1f5459c529
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (67d7b7f5a224ebfb).
+CONTENT-HASH: 0d9d5fbddd6d463b
 
 ## Blocking
-(none)
+
 
 ## Polish
-(none)
+- [Minor] Short inline formulas followed by 'ja' or a comma stay on their own lines in the stacked sheet; acceptable, no action.
 
 ## Checked
-- Opened fy9-aallot-fi-easy-360.png (chart unchanged); the diff is only teacher.md branch-to-row wording, which reads correctly.
+batch delta review 5d: all reflow-*.png sheets at 360 px opened; no formula clipped, relations aligned, operators lead continuation rows.

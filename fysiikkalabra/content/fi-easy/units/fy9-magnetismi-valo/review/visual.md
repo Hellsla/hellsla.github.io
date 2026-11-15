@@ -1,14 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: cd1b14955e148aa1
-Review of the recognition chart (queue 9c) and the term change against the version passed at da59d2b57a4936df; full on the chart, delta on the rest.
+VERDICT: FAIL
+CONTENT-HASH: 713cd4f0a84cd959
 
 ## Blocking
-(none)
+- [Major] reflow-1 — after the lifted $x_3 = \ldots \approx 2{,}7\,\text{m}$ the case ending ':n päässä keskimaksimista' starts a line alone, cut from its number and unit. Fix: move the ':n' into the formula's last row (as the build does for punctuation) or keep this short quantity inline.
 
 ## Polish
-(none)
+- [Minor] Short inline formulas followed by 'ja' or a comma stay on their own lines in the stacked sheet; acceptable, no action.
 
 ## Checked
-- Chart at 360 px (fy9-tunnistus/fy9-magnetismi-valo-fi-easy-360.png): every row's sign, arrow label and pill read in full, no clipped or overlapping label, white on #1a4d2e legible, pill style matches the other units, KaTeX subscripts and \overline vectors render.
-- ARIA_KARTTA/figures.json aria-label is Finnish and lists every row of the chart.
-- Friction terms: no liikekitka left in the unit's fi-easy texts.
+batch delta review 5d: all reflow-*.png sheets at 360 px opened; no formula clipped, relations aligned, operators lead continuation rows.
