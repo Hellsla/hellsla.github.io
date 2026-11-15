@@ -99,6 +99,20 @@ välimerkillä ("… $$kaava$$." tai "$$kaava$$, joten …"), välimerkki jää 
 4. `site/` muuttuu vain display-kaava + välimerkki -kohdista; `check_layout.py` SMOKE-sivuille; `reviews.py verify`
    (rakennusmuutos, mikään katselmointi ei vanhene).
 
+
+## 5f. Reflow-carry yksiköille, Sovella-sarjoille ja esimerkkikokeille (koordinaattori 2026-11-15)
+
+Varattu: claude/item-reflow-carry
+
+Kohdan 5d FY9-PR #611: FY9:n sisältö on yksiköitä (`content/*/units/fy9-*`), ja `carry-item` siirsi vain opettajan
+hyväksymät kuvat, kaavanimet ja MAFY-tunnukset. Pelkkä rivijako vanhensi siis yksikön kaikki kolme katselmointia; sama
+koskee FY8:n (#601) Sovella-sarjoja ja esimerkkikoetta. Jaettu muutos (`scripts/reviews.py`, `test_reviews.py`): ajetaan
+yksin, 8l:n (#607) jälkeen ja ennen 8m:ää.
+1. `carry-item` vertaa tekstejä myös `chain_view`-muodossa (sama kuin luvun `reflow`-luokka): kun ero on pelkkä
+   rivijako, tiede ja pedagogiikka siirtyvät luokalla `reflow`, ja ulkoasu tarvitsee delta-katselmoinnin (RULES).
+2. `verify` johtaa reflow-rivit uudelleen eikä hyväksy reflow-riviä ulkoasukatselmoinnille.
+3. Testi (`test_reviews.py` 8n): yksikön kaava nostettuna `aligned`-muotoon siirtää tieteen ja pedagogiikan, ei ulkoasua;
+   muuttunut luku, merkki tai sana ei siirrä mitään.
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13, 2026-11-14 ja 2026-11-15)
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
