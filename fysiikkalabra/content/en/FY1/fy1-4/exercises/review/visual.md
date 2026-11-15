@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4d4f1e7d3a800203
+CONTENT-HASH: 8f1c32ed0ce06e34
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-4 exercises 13 — inline fractions (`k = 12.0 l/8.0 min = 1.5 l/min`, check line) nearly touch the line below; add line-height room for lines that hold \dfrac/\tfrac.
+- [Minor] fy1-4 exercises 05-08 — the litre symbol set in sans-serif `l` reads as `|` (`12.0 |`); consider `\ell` or `\text{L}` project-wide (existing convention, not part of this change).
 
 ## Checked
-- delta of solutions.md only: Järkevyys line. Opened fi fy1-4 open-exercises-L2-1280-8 (task 4-15 solution, new ≈3,0 m and the rest of the solution laid out cleanly); the en captures were regenerated but not opened separately: the change is one number (3.1 to 3.0) in an unchanged layout, checked on the fi capture.
+delta review 5d reflow, round 1: opened the 360 px captures 03-13 (tiled into contact sheets, every capture of this part viewed); equals signs aligned, no row broken inside a number or unit, nothing clipped or scrolling, display formulas read naturally in their sentences.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · English 4 · accessibility 4

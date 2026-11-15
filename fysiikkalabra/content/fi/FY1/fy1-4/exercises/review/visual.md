@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e4df69026a6db390
+CONTENT-HASH: c12aa3e70fb53fba
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: e4df69026a6db390
 - none
 
 ## Checked
-- delta of solutions.md only: Järkevyys line. Opened fi fy1-4 open-exercises-L2-1280-8 (task 4-15 solution, new ≈3,0 m and the rest of the solution laid out cleanly) and -7 (neighbour, 4-15 task); no clipping, KaTeX clean, 3,0 m consistent with 3,07 m.
+delta 5d reflow, round 1: opened contact sheet of all fi/fy1-4 captures at 360 px (captures 03-13); no clipping, equals signs aligned, rows break outside numbers and units.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

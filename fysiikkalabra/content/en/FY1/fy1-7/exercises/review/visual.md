@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 77a3559ba8d13a7a
-SCOPE: delta answers,levels,numbers,structure,teacher-figure,typography,wording from 7f32c937f097b93c base e4013ef
+CONTENT-HASH: 086b1a5cfbe7679a
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-7-L1-09 — `Give the answer in kg` plain unit; `\tfrac{kg}{m^3}` small in the substitution.
+- none
 
 ## Checked
-- fy1-7-open-exercises-1280-8 (new MAFY task L1-09 (7-9): text, hint, answer check, solution)
-- Teacher-approved figure tasks: layout judged only; diff read for all changed lines (exercises.json, solutions.md, answers.py).
+delta review 5d reflow, round 1: opened the 360 px captures 07-11 (tiled into contact sheets, every capture of this part viewed); equals signs aligned, no row broken inside a number or unit, nothing clipped or scrolling, display formulas read naturally in their sentences.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · English 4 · accessibility 4

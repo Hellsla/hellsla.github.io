@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ad080d2165d3e71d
+CONTENT-HASH: 9b88fdb1bc5b0fd4
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-7 Järkevyys '$50\,\text{cm}^3$:n veden massa' — case ending after a unit is correct but the sentence order of the fi-easy version reads more clearly; optional.
+- none
 
 ## Checked
-- delta of solutions.md: three Järkevyys sentences reworded ('kertaa niin tiheää kuin vesi'); read in the diff, they are natural and the maths is unchanged. No fy1-7 capture opened (text-only, same blocks); reviewed fy1-4 sibling captures show the solution layout survives such edits.
+delta 5d reflow, round 1: opened contact sheet of all fi/fy1-7 captures at 360 px (captures 07-11); no clipping, equals signs aligned, rows break outside numbers and units.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5
