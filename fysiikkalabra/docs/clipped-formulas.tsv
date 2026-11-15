@@ -2,15 +2,6 @@
 # page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed
 # (fix the formula and delete its row); written by `check_layout.py --write-known`, never by hand.
 FY1-koe	v = gt = 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}5\,\text{s} \a
-FY2-koe	13\,700\,\text{MW} - 10\,200\,\text{MW} = 3500\,\text{MW}
-FY2-koe	= P_\text{ydin} + P_\text{tuuli} + P_\text{vesi} + P_\text{muu}
-FY2-sovella	0{,}11 \cdot 10\,\text{MW} \cdot 8760\,\text{h} \approx 9{,}6\,\text{G
-FY2-sovella	0{,}50 \cdot 20\,\text{MW} \cdot 8760\,\text{h} \approx 88\,\text{GWh}
-FY2-sovella	12\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 4{,}6 \cdo
-FY2-sovella	230\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 8{,}7 \cd
-FY2-sovella	380\,\text{GWh} - 252\,\text{GWh} - 88\,\text{GWh} \approx 40\,\text{G
-FY2-sovella	E_1 = 0{,}32 \cdot 5{,}0\,\text{MW} \cdot 8760\,\text{h} \approx 14{,}
-FY2-sovella	m = 11\,\text{g/kWh} \cdot 252 \cdot 10^{6}\,\text{kWh} + 24\,\text{g/
 FY3-koe	P = (U_1A_1 + U_2A_2 + U_3A_3)\,\Delta T
 FY3-koe	\tfrac{0{,}333\,\text{MWh}}{0{,}40} \approx 0{,}83\,\text{MWh} = 3000\
 FY3-koe	h = \dfrac{p}{\rho g} = \dfrac{101\,000\,\text{Pa}}{1000\,\tfrac{\text
@@ -85,13 +76,6 @@ FY8-sovella	= 238{,}049560\,\text{u} - 234{,}040952\,\text{u} - 4{,}002603\,\tex
 FY8-sovella	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdo
 FY8-sovella	\dfrac{1}{\sqrt{R}} = \dfrac{r + d}{\sqrt{K}} = \dfrac{1}{\sqrt{K}} \c
 FY8-sovella	k = \dfrac{12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}} - 0}{20{,}0\,\text{
-en/FY2-sovella	0.11 \cdot 10\,\text{MW} \cdot 8760\,\text{h} \approx 9.6\,\text{GWh}
-en/FY2-sovella	0.50 \cdot 20\,\text{MW} \cdot 8760\,\text{h} \approx 88\,\text{GWh}
-en/FY2-sovella	12\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 4.6 \cdot 
-en/FY2-sovella	230\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 8.7 \cdot
-en/FY2-sovella	380\,\text{GWh} - 252\,\text{GWh} - 88\,\text{GWh} \approx 40\,\text{G
-en/FY2-sovella	E_1 = 0.32 \cdot 5.0\,\text{MW} \cdot 8760\,\text{h} \approx 14.0\,\te
-en/FY2-sovella	m = 11\,\text{g/kWh} \cdot 252 \cdot 10^{6}\,\text{kWh} + 24\,\text{g/
 en/FY3-sovella	= 101\,000\,\text{Pa} + 1000\,\text{kg/m}^3 \cdot 9.81\,\text{m/s}^2 \
 en/FY3-sovella	= 4.0\,\text{cm}^3 \cdot \dfrac{248\,150\,\text{Pa}}{101\,000\,\text{P
 en/FY3-sovella	= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4.00\,\text{kg}
@@ -1605,13 +1589,6 @@ en/fy9-ympyraliike	m_\text{s} \cdot 42.0\,\text{cm} = 200\,\text{g} \cdot 30.0\,
 en/fy9-ympyraliike	v = \dfrac{2\pi r}{T} = \dfrac{2\pi \cdot 2.4\,\text{m}}{6.0\,\text{s}
 en/fy9-ympyraliike	v_\text{b} = \sqrt{2 \cdot 0.88 \cdot 9.81\,\text{m/s}^2 \cdot 30.0\,\
 en/fy9-ympyraliike	v_\text{t} = \sqrt{518\,\text{m}^2/\text{s}^2 - 392\,\text{m}^2/\text{
-fi-easy/FY2-sovella	0{,}11 \cdot 10\,\text{MW} \cdot 8760\,\text{h} \approx 9{,}6\,\text{G
-fi-easy/FY2-sovella	0{,}50 \cdot 20\,\text{MW} \cdot 8760\,\text{h} \approx 88\,\text{GWh}
-fi-easy/FY2-sovella	12\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 4{,}6 \cdo
-fi-easy/FY2-sovella	230\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 8{,}7 \cd
-fi-easy/FY2-sovella	380\,\text{GWh} - 252\,\text{GWh} - 88\,\text{GWh} \approx 40\,\text{G
-fi-easy/FY2-sovella	E_1 = 0{,}32 \cdot 5{,}0\,\text{MW} \cdot 8760\,\text{h} \approx 14{,}
-fi-easy/FY2-sovella	m = 11\,\text{g/kWh} \cdot 252 \cdot 10^{6}\,\text{kWh} + 24\,\text{g/
 fi-easy/FY3-sovella	4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4{,}00\,\text{kg}
 fi-easy/FY3-sovella	800\,\text{W/m}^2 \cdot 0{,}50\,\text{m}^2 = 400\,\text{W}
 fi-easy/FY3-sovella	= 101\,000\,\text{Pa} + 1000\,\text{kg/m}^3 \cdot 9{,}81\,\text{m/s}^2
