@@ -182,7 +182,7 @@ $$, $g = 9.81\,\text{m/s}^2$
   <foreignObject x="294.5" y="129" width="133" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#6b7480">$\text{not a line}$</div></foreignObject>
 </svg>
 
-**Model answer:** The points lie on a downward-curving curve that levels off as the period grows. When the period halves from $1.20\,\text{s}$ to $0.60\,\text{s}$, the force does not double but becomes about four times as large, so the dependence is not linear. Physics explains this: the cart moves in a circle, and the force of the string is the net force $m\tfrac{v^2}{r}$ pointing to its centre. A shorter period means a larger orbital speed, and the force needed grows with the square of the speed.
+**Model answer:** The points lie on a falling curve that becomes less steep as the period grows. When the period halves from $1.20\,\text{s}$ to $0.60\,\text{s}$, the force does not double but becomes about four times as large, so the dependence is not linear. Physics explains this: the cart moves in a circle, and the force of the string is the net force $m\tfrac{v^2}{r}$ pointing to its centre. A shorter period means a larger orbital speed, and the force needed grows with the square of the speed.
 
 ### b)
 **Find:** a quantity against which the graph of the force is a straight line, the justification, the graph and the fitted line

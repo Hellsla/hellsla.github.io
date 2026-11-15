@@ -182,7 +182,7 @@ $$, $g = 9{,}81\,\text{m/s}^2$
   <foreignObject x="294.5" y="129" width="117" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#6b7480">$\text{ei suora}$</div></foreignObject>
 </svg>
 
-**Mallivastaus:** Pisteet asettuvat alaspäin kaartuvalle käyrälle, joka loivenee kierrosajan kasvaessa. Kun kierrosaika puolittuu $1{,}20\,\text{s}$:sta $0{,}60\,\text{s}$:iin, voima ei kaksinkertaistu vaan kasvaa noin nelinkertaiseksi, joten riippuvuus ei ole lineaarinen. Fysiikka selittää tämän: kärry kulkee ympyrää, ja langan voima on sen keskipisteeseen osoittava kokonaisvoima $m\tfrac{v^2}{r}$. Lyhyempi kierrosaika tarkoittaa suurempaa ratanopeutta, ja tarvittava voima kasvaa nopeuden neliön mukaan.
+**Mallivastaus:** Pisteet asettuvat laskevalle käyrälle, joka loivenee kierrosajan kasvaessa. Kun kierrosaika puolittuu $1{,}20\,\text{s}$:sta $0{,}60\,\text{s}$:iin, voima ei kaksinkertaistu vaan kasvaa noin nelinkertaiseksi, joten riippuvuus ei ole lineaarinen. Fysiikka selittää tämän: kärry kulkee ympyrää, ja langan voima on sen keskipisteeseen osoittava kokonaisvoima $m\tfrac{v^2}{r}$. Lyhyempi kierrosaika tarkoittaa suurempaa ratanopeutta, ja tarvittava voima kasvaa nopeuden neliön mukaan.
 
 ### b)
 **Kysytty:** suure, jonka funktiona voiman kuvaaja on suora, perustelu, kuvaaja ja sovitettu suora
