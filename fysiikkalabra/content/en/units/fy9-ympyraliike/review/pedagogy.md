@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: edffd35f7b1b0daa
+CONTENT-HASH: 15f19034f31ca8a5
+Round 2: delta against the version round 1 reviewed (fix round 1).
 Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
 - (none)
 
 ## Polish
-- A: sovella/solutions.md s7 e: "the edge of the shadow is at the angle $\theta$ for which $\sin\theta = \tfrac{R}{r}$" is hard to follow without a figure. Say where the angle is: "measured at the centre of the Earth from the direction pointing straight away from the Sun; the station enters the shadow when its distance from that line is $R$". The estimate is not required by the criteria.
-- A: s7 c explains the weightlessness of astronauts at $400\,\text{km}$, as s4 a already does (there as an assessed claim). The teacher's order asks for the part and s7 c argues from the equation of motion with the number of part b, so it is not a repeat of the task; the model answer could refer to s4.
-- A: s7 a and d use the source only to read one value each. A sentence in d asking the student to say why the yearly figure is a maximum ("can generate") would add interpretation.
+- C: sovella/solutions.md s7 b Reasonableness: "by the period being rounded to two figures and by the height chosen for the model together" ends awkwardly; "together by … and by …" reads better.
+- A (round 1, still open, optional): s7 c could refer to s4 a; s7 d could ask why the yearly figure is a maximum.
 
 ## Checked
-- Item 18 hunk (solutions.md s3 a): "a falling curve that becomes less steep as the period grows" is correct and clearer than "downward-curving".
-- s7 in full: parts progress from checking the model against the source and speed, to centripetal acceleration compared with $g$, to weightlessness from the equation of motion, to mean power, to why a mean does not show the shadow periods. Points 4+3+3+3+2 = 15, and criteria sum to each part.
-- Recomputed: $7707\,\text{m/s}$; $8.773\,\text{m/s}^2$, $0.894\,g$; $\sqrt{\gamma M / r} = 7.67\,\text{km/s}$, $8.69\,\text{m/s}^2$; $83.9\,\text{kW}$ ($83.7$ for $366\,\text{d}$); $\theta = 70.2^\circ$, $39\,\%$, $36\,\text{min}$, $140\,\text{kW}$; $15.7$ orbits a day.
-- No repeat of s2 as a whole (s2 uses the law of gravitation for speed and period; s7 uses the period and adds electricity). Nothing beyond FY1–FY8.
-- 390 px render of s7 from preview/en: no overflow.
+- solutions.md s7 a Principle: the two new sentences say that $370$–$460\,\text{km}$ is the range in which the altitude is kept over time and not a variation within one orbit, and that its width is about $1.3\,\%$ of the radius ($90 : 6771$). Correct, and it prevents the reading that the orbit is that elliptical; the conclusion "a circular orbit is a good model" still follows.
+- solutions.md s7 b Reasonableness: naming the model's height beside the rounded period is right: with $T = 92\,\text{min}$ the law of gravitation gives $h \approx 380\,\text{km}$, not $400\,\text{km}$, so both explain the $1\,\%$.
+- solutions.md s7 e (my round-1 Polish A): the angle is now located ("its direction, seen from the centre of the Earth, differs from the direction pointing straight away from the Sun by the angle $\theta$"). The sentence is long but can be followed without a figure; $\theta = 70.2^\circ$, $39\,\%$, $36\,\text{min}$ unchanged. The estimate is still outside the criteria.
 - Hash identical at start and end.

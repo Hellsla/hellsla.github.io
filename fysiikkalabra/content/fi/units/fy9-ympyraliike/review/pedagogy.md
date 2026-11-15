@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f6445c788e2b7dfa
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 53b02751f63afd8a
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
 - (none)
 
 ## Polish
-- A, `sovella/tasks.json` s7 b and c cover much the same ground as s4 a of this unit (gravity at 400 km is about 90 % of g; weightlessness is free fall with zero support force). The teacher ordered part c, and s7 reaches the result by another route (the period and the equation of motion instead of the law of gravitation), so it stands. A line in the s7 c solution pointing to task 4 would make the link explicit.
-- A, `sovella/solutions.md` s7 e: "varjon reuna on kulmassa θ, jolle sin θ = R/r" is hard to follow without a figure. Either say where the angle is measured (at the Earth's centre, from the direction away from the Sun) or mark the estimate as extra.
-- C, s7 d criterion: "kaksi merkitsevää numeroa riittää, koska aineiston arvo on pyöristetty" sits oddly beside the three-figure value 735 000 kWh; the solution's leap-year argument is the better reason.
+- C, `sovella/solutions.md` s7 e: "poikkeaa Auringosta poispäin osoittavasta suunnasta kulman θ" reads more easily as "... kulman θ verran"; the sentence is long and could be split after "varjon reunalla".
+- A (carried from round 1), s7 b and c overlap s4 a; a pointer to task 4 in the solution would help.
+- C (carried), s7 d criterion: the two-figure justification beside 735 000 kWh.
 
 ## Checked
-- Item 18 hunk: s3 a "Pisteet asettuvat laskevalle käyrälle, joka loivenee kierrosajan kasvaessa" is correct and clearer than the old wording.
-- s7 in full: a r = 6771 km, T = 5520 s, v = 7707 m/s, check 7,67 km/s, altitude range 1,3 % of r; b 8,773 m/s², 89,4 % of g, field 8,69 m/s²; d 83,9 kW (83,7 kW in a leap year); e 15,7 orbits a day, θ = 70,2°, 39 %, 36 min, 140 kW. All recomputed and correct.
-- Points 4+3+3+3+2 = 15; criteria sum to each part. The source is needed in a and d. Parts progress from checking the model against the source to calculation, a force explanation and the limit of a mean value. Part c's wording puts the situation first and the question last. Nothing beyond FY5–FY6.
-- Preview at 360 px: the s7 card renders without overflow.
+- `solutions.md` s7 a, Periaate: the added sentence says that 370–460 km is the band in which the altitude is kept over time, not a variation within one orbit; the next sentence correctly speaks of "välin leveys" (90/6771 = 1,3 %). The conclusion that a circle is a good model still follows, since the band is an upper limit for the variation.
+- s7 b, Järkevyys: 8,773 against 8,69 m/s², difference 1 %; naming both the rounded period and the chosen altitude as causes is correct and does not disturb the argument that the two results must agree.
+- s7 e, model answer: the angle is now defined (at the Earth's centre, measured from the direction pointing away from the Sun). Geometry checked: a station at distance r is at the edge of the cylindrical shadow when r sin θ = R; θ = arcsin(6371/6771) = 70,2°, 2θ/360° = 39 %, 36 min, 84 kW/0,61 = 140 kW. A reader can now follow it without a figure. This answers my round-1 Polish A.
+- No part text or criterion changed in this unit.

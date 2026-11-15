@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e27ea8539b46773c
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 2551e46149b68b40
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
 - (none)
 
 ## Polish
-- A: s7 a: the lasers both compress and heat the fuel; "kuumensi ja puristi polttoaineen" would match the principle line ("kuumassa ja tiheässä aineessa").
-- C: s7 d: "noin sata kertaa enemmän" is 95-fold; fine at the precision of "noin 300 MJ".
+- C: s7 c rounding reason: 80 K is the difference of the given 20 °C and 100 °C; "koska lämpötilat on annettu kahdella merkitsevällä numerolla" would name the given data. The present sentence is acceptable.
 
 ## Checked
-- Item 18 hunk (s6 common mistakes): "Δm lasketaan sähkötehosta lämpötehon sijaan" agrees with s6 b, which uses the thermal power 4300 MW.
-- s7 recomputed in one script: ratio 1,537; difference 1,10 MJ (54 %); inverse 0,651; m = 3,15e6 J / 335 200 J/kg = 9,397 kg; 3,15/300 = 1,05 %; 2,05/300 = 0,68 %; 1,05 MJ = 0,35 %; Δm = 3,50e-11 kg = 35 ng. All agree with tasks.json answers, solutions.md and answers.py; `practice.py check` OK (7 tasks, 110 points; s7 2+3+4+3+3).
-- Physics: the system-boundary argument (fuel against the whole facility) is the right one; the 300 MJ is given in the task and marked as not from the article; energy conservation is explained through binding energy and E = Δm c^2 (products more tightly bound, smaller mass), within FY8 scope; "kiehauttaa" read as heating to the boiling point is stated. Rubric criteria ask only what the parts ask and the solution shows.
+- s7 d part text now also asks "kuinka paljon sähköenergiaa vapautuneesta energiasta saataisiin lämpövoimalan hyötysuhteella", so criterion 3 (about 1 MJ, under half a percent of the grid energy) asks only what the task asks; the one-third efficiency is given in the task's Lisätietoja. Recomputed: 3,15 MJ / 3 = 1,05 MJ; 1,05 / 300 = 0,35 %; 3,15 / 300 = 1,05 %; 2,05 / 300 = 0,68 %. The solution's Kysytty line states both questions and the model answer gives both.
+- s7 c: new rounding reason (temperature difference 80 K known to two figures) is a valid reason for two figures; m = 3,15e6 J / (4190 · 80 J/kg) = 9,397 kg.
+- Task text: the three facts are now full sentences under "Lisätietoja:"; values unchanged (4,19 kJ/(kg·K), about 300 MJ, one third).
+- s7 e criterion 1: accepts either reason (no electricity produced, or a grid-connected plant is decades away); both are true and in the material.
+- `practice.py check` OK (7 tasks, 110 points).

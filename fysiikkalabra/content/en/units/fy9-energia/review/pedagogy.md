@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: e22d2e4b5a939769
+CONTENT-HASH: 6b06c33381daf737
+Round 2: delta against the version round 1 reviewed (fix round 1).
 Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
 - (none)
 
 ## Polish
-- A: sovella/tasks.json s7 c, criterion "Electricity": one point requires both the heater ($P = UI$ for the whole drive) and the internal resistance of the cold battery. Accepting either one, with the other as a bonus in the model answer, would be fairer for 1 p.
-- A: s7 b: the car's "range in mild weather" is shortened by a percentage that the source measures against the WLTP value. One clause ("use the same percentage as a model") would make the simplification visible.
-- C: s7 a and e: "tell what the comparison shows", "Tell also how": "say" reads more naturally.
+- C: sovella/tasks.json s7 c, criterion "Electricity": "gives at least one of these: … or …" would read more easily as two lettered alternatives; "and lowers the terminal voltage" belongs to the second one only.
+- C: s7 a and e: "Tell also how" (round 1): "say" reads more naturally.
 
 ## Checked
-- Item 18 hunks (figures.json, inquiry.json, unit.md, solutions.md, tasks.json): each "becomes heat" sentence now says internal energy, or internal energy transferred to the surroundings as heat. Wrong options and the quoted misconception stay wrong. Feedback and criteria are still readable and reveal nothing new. The fridge share is $1.08 : 1.54 \approx 70\,\%$.
-- s7 in full: the source is useful (chart or table in a, route temperatures in d, the 2025 test in e). Parts progress from reading and comparing, to a model with an assessed assumption, to an explanation in three fields, to a confounded variable, to the limits of one test. No overlapping parts. Points 3+4+4+2+2 = 15, and criteria sum to each part.
-- Recomputed: $-28.9\,\%$, $-42.9\,\%$, $-45.8\,\%$, mean $39.2\,\%$; $16.67$ and $26.88\,\text{kWh}$, $279\,\text{km}$, $600\,\text{N}$; air density ratio $+16\,\%$; $15\,\text{kWh}$ is a fifth of $75\,\text{kWh}$.
-- No repeat of s1–s6: s3 "Frost and the electricity bill" is house heating data. Nothing beyond FY1–FY8.
-- 390 px render of s7 from preview/en (statement, table, part a): the table fits and nothing overflows.
+- solutions.md s7 c closing sentence (the round-1 Blocking of the other reviewers): "Every kilometre therefore takes more energy from the battery than in mild weather, and less energy is available from a cold battery, so the range shrinks" now agrees with the three bullets above it (heating and battery losses raise the consumption, internal resistance lowers the available energy, larger resistive forces raise the work) and with part b's assessment of its assumption. Criterion 4 of c ("energy that goes to heating and to losses is not available for driving") is still consistent with it.
+- solutions.md s7 b Reasonableness: "those of other cars than the model car, so they show only the order of magnitude" is clear and no longer overclaims.
+- tasks.json s7 c: criterion 1 without the combustion-engine clause still matches the model answer, which keeps that clause as extra. Criterion 2 accepts either idea for 1 p (my round-1 Polish A). Criteria still sum to 4.
+- s7 d part text: "fell short of its stated range by the largest percentage" is unambiguous; Lucid Air $(960 - 520) : 960 = 45.8\,\%$ is the largest of the table. Situation first, question last.
+- s7 e part text now asks for "at least three factors", which is what criterion 1 already required; nothing is disclosed.
 - Hash identical at start and end.

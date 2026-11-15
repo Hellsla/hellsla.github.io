@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: edffd35f7b1b0daa
+CONTENT-HASH: 15f19034f31ca8a5
+Round 2: delta against the version round 1 reviewed (fix round 1).
 Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
 - (none)
 
 ## Polish
-- A: s7 e: say from which direction the angle is measured ("measured at the centre of the Earth from the direction pointing away from the Sun"); without it sin(theta) = R/r is hard to follow.
-- C: s7 a: the 370-460 km of the source is the range in which the altitude is kept over time, not the difference between the highest and lowest point of one orbit; "so a circular orbit is a good model" still holds.
+- C: s7 b reasonableness: the 0.9 % difference comes almost wholly from the period (a 400 km orbit has T = 92.4 min, and (92.4 : 92)^2 = 1.009); "and by the height chosen for the model together" is harmless, since the two given values are simply not an exactly matching pair.
 
 ## Checked
-- Item 18: s3 a "a falling curve that becomes less steep as the period grows" describes F proportional to 1/T^2 correctly (the old "downward-curving" was wrong); the factor of four on halving the period agrees.
-- s7 recomputed with my own formulas: a r = 6771 km, T = 5520 s, 7707 m/s = 27 700 km/h, gravitational check 7.67 km/s, 90 km : 6771 km = 1.3 %; b 8.773 m/s^2, ratio 0.894, field strength 8.69 m/s^2 (0.9 % difference, consistent with the rounded period); d 83.9 kW, leap year 83.7 kW, 42 kettles, 2.646e12 J; e 15.7 orbits a day, theta = 70.2 degrees, 39 %, 36 min, 84 kW : 0.61 = 138 kW. All agree with tasks.json, the solution and answers.py (practice.py check OK).
-- Physics of c: gravitation is the only force, G = m a_n, N = 0 from the equation of motion, weightlessness as missing normal force; the centrifugal-force error is named correctly. Symbols follow MAFY (a_n, G with overline, gamma).
-- Rubric points add up (4, 3, 3, 3, 2). Hash the same at the start and the end.
+- s7 a: the new sentence says correctly that 370-460 km is the range in which the altitude is kept over time and not a variation within one orbit; 90 km : 6771 km = 1.3 %, and the conclusion (circular orbit is a good model) still follows.
+- s7 b: recomputed a_n = 4 pi^2 r : T^2 = 8.773 m/s^2, field strength 8.69 m/s^2, difference 0.9 %; the corrected explanation is consistent with these.
+- s7 e: the angle is now defined (at the centre of the Earth, from the direction pointing straight away from the Sun). For a cylindrical shadow the station is at its edge when r sin(theta) = R, so the statement is right; theta = 70.2 degrees, 2 theta : 360 = 39 %, 35.9 min, 84 kW : 0.61 = 138 kW, all as in the text.
+- practice.py check OK (7 tasks, 110 points). Hash the same at the start and the end.
