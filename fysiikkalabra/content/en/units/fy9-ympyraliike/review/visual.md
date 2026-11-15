@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: acdec75ed9fb3544
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 712d63b6ed8c62be.
+CONTENT-HASH: ad4c9cd221577e6e
+Review of the recognition chart (queue 9c) and the term change against the version passed at acdec75ed9fb3544; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [C] The chart title and subtitle begin with a lowercase letter ("how do I tell the law?", "free-body diagram first, ..."); capitalise the title in figures.json (sentence case) if the Finnish title is capitalised.
 
 ## Checked
-Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: inquiry.json (shovel and barrow, symbols $r_\text{f}$, $r_\text{g}$, $r_\text{h}$) and sovella/solutions.md (trailer $r_\text{k}$, $m_\text{n}$, satellite $q$, lever-arm $d_\text{p}$, $d_\text{s}$, $d_\text{m}$ in Conversions). Notation of the unit text and the solutions agree. No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.
+- Chart PNGs at 360 and 1280 px: 8 rows (moments ... satellite). No clipped, overlapping or cramped label; white on #1a4d2e is clearly legible; pill, card, spine and start-box style match the other units.
+- Typography: KaTeX, italic variables, upright names and units, subscripts and \overline vectors as in MAFY; decimal point in English.
+- aria-label in figures.json is in English, complete, and matches the rows in order and meaning (see Polish for any wording difference).
+- Diff: figures.json term and label translations (all present), teacher.md "concept map" -> "recognition chart", other changed lines; terms consistent (sliding friction).

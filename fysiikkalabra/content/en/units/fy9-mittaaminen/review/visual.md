@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 27d2f4575e83302f
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at c1bdc8faf7226de3.
+CONTENT-HASH: 0d1a744ac444e23f
+Review of the recognition chart (queue 9c) and the term change against the version passed at 27d2f4575e83302f; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [C] The chart title and subtitle begin with a lowercase letter ("how do I tell the law?", "free-body diagram first, ..."); capitalise the title in figures.json (sentence case) if the Finnish title is capitalised.
 
 ## Checked
-Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: sovella/solutions.md paper density with area $A$, oil mass answer $(1.38 \pm 0.02)\,\text{kg}$, scale calibration $k$, uniform-motion model answer; unit.md precision sentence. No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.
+- Chart PNGs at 360 and 1280 px: 8 rows (repeated measurement ... s vs t^2); title "how do I tell the method?" matches its aria-label. No clipped, overlapping or cramped label; white on #1a4d2e is clearly legible; pill, card, spine and start-box style match the other units.
+- Typography: KaTeX, italic variables, upright names and units, subscripts and \overline vectors as in MAFY; decimal point in English.
+- aria-label in figures.json is in English, complete, and matches the rows in order and meaning (see Polish for any wording difference).
+- Diff: figures.json term and label translations (all present), teacher.md "concept map" -> "recognition chart", other changed lines; terms consistent (sliding friction).

@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e8a6f31d617c0812
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at a189d66a000efca2.
+CONTENT-HASH: 6fc6fb8caaf31946
+Review of the recognition chart (queue 9c) and the term change against the version passed at e8a6f31d617c0812; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-- fy9-mittaaminen/sovella/solutions.md balance c): "joita ovat pisteet 100,0 g ja 1000,0 g kohdalla (kaikki pisteet ovat suoralla)" is clumsy; "luetaan pisteistä 100,0 g ja 1000,0 g, jotka ovat suoralla".
+- A: figure header says "mistä tunnistan lain?" but this unit's chart gives methods, and its aria-label says "menetelmää"; use "mitä menetelmää käytän?" (or keep "lain" in the figure and aria alike).
+- B: aria-labels contain double spaces at line joins (harmless to screen readers).
 
 ## Checked
-Diff only, read in full. `check_latex.py` on the unit: all fragments parse in KaTeX. Paper density, oil mass answer, balance a/b/c, figure-task Mallivastaus and the unit.md rounding sentence. No contradiction between #522 formula names or notation and the #523 solutions found; no duplicated derivation; Finnish and typography (thin spaces, decimal comma, \cdot, colon division, LaTeX units) in the changed lines are correct. No captures made: the changes are text-only solution lines, no figure or layout changed.
+- Chart PNGs at 360 px (all units) and 1280 px (mittaaminen): no clipped, overlapping or cramped label; white on #1a4d2e legible; pill style and spacing identical across units; KaTeX subscripts, upright names, \overline vectors render correctly.
+- Rows checked: toistettu mittaus, virhe, karkea, systemaattinen, suora, kulmakerroin, Δk (ääriviivat), s vs t². 
+- ARIA_KARTTA (Finnish, in figures.py and unit.md) read against every row: same rows, same results, complete, right language.
+- Diff of the remaining lines (term change, teacher.md/unit text, figure code): no regressions found.

@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f131fb403db2206f
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at f6eb30bdd7975031.
+CONTENT-HASH: ed63c3e5b1928717
+Review of the recognition chart (queue 9c) and the term change against the version passed at f131fb403db2206f; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- B: 1/R_kok = Σ1/R pill is the widest in the chart and nearly fills the row; not clipped.
+- B: aria-labels contain double spaces at line joins (harmless to screen readers).
 
 ## Checked
-Diff only, read in full. `check_latex.py` on the unit: all fragments parse in KaTeX. Kettle (n, N, t_1), charger d) 436,8 Wh, battery series Kaava, lamp share R/(R + R_s), heater. No contradiction between #522 formula names or notation and the #523 solutions found; no duplicated derivation; Finnish and typography (thin spaces, decimal comma, \cdot, colon division, LaTeX units) in the changed lines are correct. No captures made: the changes are text-only solution lines, no figure or layout changed.
+- Chart PNGs at 360 px (all units) and 1280 px (mittaaminen): no clipped, overlapping or cramped label; white on #1a4d2e legible; pill style and spacing identical across units; KaTeX subscripts, upright names, \overline vectors render correctly.
+- Rows checked: I=ΔQ/Δt, U=RI, R=ρℓ/A, R_kok=ΣR, 1/R_kok=Σ1/R, ΣI_t=ΣI_l, ΣΔV=0, P=UI, U=E−R_sI. 
+- ARIA_KARTTA (Finnish, in figures.py and unit.md) read against every row: same rows, same results, complete, right language.
+- Diff of the remaining lines (term change, teacher.md/unit text, figure code): no regressions found.

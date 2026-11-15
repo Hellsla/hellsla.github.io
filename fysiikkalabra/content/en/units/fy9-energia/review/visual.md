@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0f8592564d0f83bc
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 3ee87f93108036ab.
+CONTENT-HASH: ea3f9b67dd2e79b6
+Review of the recognition chart (queue 9c) and the term change against the version passed at 0f8592564d0f83bc; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] sovella/solutions.md part d Principle: $E = E_0 + kT$ is the part c line with $T_0 = 0\,{}^\circ\text{C}$; one clause saying so would link the two parts.
+- [C] The chart title and subtitle begin with a lowercase letter ("how do I tell the law?", "free-body diagram first, ..."); capitalise the title in figures.json (sentence case) if the Finnish title is capitalised.
+- [C] teacher.md says "one example for each branch"; use "each row".
 
 ## Checked
-Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: sovella/solutions.md parts c, d and the wind-turbine model answer: $E = E_0 + k(T - T_0)$, $E_\text{other}$, $P_\text{avg} = kNP_\text{nom}$; fractions, subscripts and units render-safe in the source. No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.
+- Chart PNGs at 360 and 1280 px: 8 rows (closed system ... work). No clipped, overlapping or cramped label; white on #1a4d2e is clearly legible; pill, card, spine and start-box style match the other units.
+- Typography: KaTeX, italic variables, upright names and units, subscripts and \overline vectors as in MAFY; decimal point in English.
+- aria-label in figures.json is in English, complete, and matches the rows in order and meaning (see Polish for any wording difference).
+- Diff: figures.json term and label translations (all present), teacher.md "concept map" -> "recognition chart", other changed lines; terms consistent (sliding friction).

@@ -1,12 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 456c89720f6a41c5
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 126db917d5bd6620.
+VERDICT: FAIL
+CONTENT-HASH: 3d8ac69f058acd26
+Review of the recognition chart (queue 9c) and the term change against the version passed at 456c89720f6a41c5; full on the chart, delta on the rest.
 
 ## Blocking
-(none)
+- teacher.md: "jokaisen haaran kohdalla" is untrue now (rows). Change to "jokaisen rivin kohdalla".
 
 ## Polish
-(none)
+- C: Rows "kappale liikkuu" and "korkeus muuttuu" are too general to be signs; they work as reminders of terms, not recognition. Reword (e.g. "nopeus tai korkeus pyydetään").
+- C: aria-label opener differs from the other units.
 
 ## Checked
-Diff only: exit ticket answers now state E_k = 1/2 mv^2 and m1v1 = (m1+m2)v' before numbers (CLAUDE.md symbolic-first); level and length unchanged. Inquiry and sovella solutions add ratio formulas, y = s_p/v0 reading, symbols N, k for tasks; consistent.
+- Every chart row of the fi-easy version (sign in task wording -> choice -> law pill), from the 360 px capture or figures.py: each result follows from its sign, no formula list, order useful, start box fits the unit.
+- fi-easy aria-label (figures.json): states the same rows in clear Finnish, usable as a text alternative, formulas spoken in words.
+- Placement after Ydinajatus, unit.md aria-label equals figures.json.
+- Term change: no liikekitka left in the unit texts (grep); teacher.md sentence checked against rows.

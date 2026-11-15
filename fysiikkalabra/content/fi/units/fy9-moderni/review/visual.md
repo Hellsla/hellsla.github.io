@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: dc13071f6130e116
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at b657e7155ea191a7.
+CONTENT-HASH: 84c1d79c5900ea6f
+Review of the recognition chart (queue 9c) and the term change against the version passed at dc13071f6130e116; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-- fy9-moderni/sovella/solutions.md s5 a) Kuvaajan lukeminen: ln 393 = 5,974 is listed, then the fitted line passes (0; 5,993); say explicitly that the two points are on the fitted line, not data points.
+- B: in 'Ḣ ∝ 1/r²' the dot over H and the subscripts (E_y, E_a, w_R) render upright and clear at 360 px; no change needed. Optional: the pill 'N = N_0 e^{−λt}' is the only one with an exponent-only subscript clash with N_0 - fine.
+- B: aria-labels contain double spaces at line joins (harmless to screen readers).
 
 ## Checked
-Diff only, read in full. `check_latex.py` on the unit: all fragments parse in KaTeX. s1 c,d; s2 a,d; s5 a,b and Hyvaksytaan myos; s6 b; tasks.json; answers.py not judged. The new s5 a) is a sensible log-fit presentation. No contradiction between #522 formula names or notation and the #523 solutions found; no duplicated derivation; Finnish and typography (thin spaces, decimal comma, \cdot, colon division, LaTeX units) in the changed lines are correct. No captures made: the changes are text-only solution lines, no figure or layout changed.
+- Chart PNGs at 360 px (all units) and 1280 px (mittaaminen): no clipped, overlapping or cramped label; white on #1a4d2e legible; pill style and spacing identical across units; KaTeX subscripts, upright names, \overline vectors render correctly.
+- Rows checked: E=hf, hf=W+E_k, hf=E_y−E_a, hajoamislaki, A=λN, E=Δmc², H=w_R D, Ḣ∝1/r², I=I0 e^{−μx}. 
+- ARIA_KARTTA (Finnish, in figures.py and unit.md) read against every row: same rows, same results, complete, right language.
+- Diff of the remaining lines (term change, teacher.md/unit text, figure code): no regressions found.

@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 2b347105827eead3
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 4a4554bfe169b358.
+CONTENT-HASH: 87d5c9e95d017f53
+Review of the recognition chart (queue 9c) and the term change against the version passed at 2b347105827eead3; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] sovella/solutions.md s5 Hyväksytään myös: the first bullet starts with a lower-case "in part a"; the neighbouring bullets start with a capital.
-- [Minor] sovella/solutions.md s5 a: the solution describes a $(t,\ \ln N)$ graph with a fitted line and read points but has no figure; a small graph with the circled points would match the other fit solutions of the course.
+- [C] The chart title and subtitle begin with a lowercase letter ("how do I tell the law?", "free-body diagram first, ..."); capitalise the title in figures.json (sentence case) if the Finnish title is capitalised.
 
 ## Checked
-Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: sovella/solutions.md s2 a, s3 d ($b = -W/e$, $f_0 = -b/k$, double negatives in the Substitution read correctly), s5 a (rewritten as a $\ln N$ line fit; numbers $5.993$, $4.635$, $153.1\,\text{s}$ agree with the new accepted range), s5 b, s6 b; tasks.json criteria; LaTeX balanced. No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.
+- Chart PNGs at 360 and 1280 px: 9 rows (photon energy ... attenuation). No clipped, overlapping or cramped label; white on #1a4d2e is clearly legible; pill, card, spine and start-box style match the other units.
+- Typography: KaTeX, italic variables, upright names and units, subscripts and \overline vectors as in MAFY; decimal point in English.
+- aria-label in figures.json is in English, complete, and matches the rows in order and meaning (see Polish for any wording difference).
+- Diff: figures.json term and label translations (all present), teacher.md "concept map" -> "recognition chart", other changed lines; terms consistent (sliding friction).

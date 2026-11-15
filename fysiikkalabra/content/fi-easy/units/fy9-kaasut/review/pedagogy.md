@@ -1,12 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: a9cbf30e479be6e0
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at dd8b8c17905c3489.
+VERDICT: FAIL
+CONTENT-HASH: 8d054d0161d6c11a
+Review of the recognition chart (queue 9c) and the term change against the version passed at a9cbf30e479be6e0; full on the chart, delta on the rest.
 
 ## Blocking
-(none)
+- teacher.md: "Pyydä jokaiseen haaraan yksi esimerkki" is untrue now (rows). Change to "jokaiselle riville".
 
 ## Polish
 (none)
 
 ## Checked
-Diff only: c) eta_l named; the märkä lasi task is now staged (Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Mallivastaus, Järkevyys), solves s symbolically first. Reasoning (friction carries the weight, pressure force horizontal) retained in Järkevyys; not lost.
+- Every chart row of the fi-easy version (sign in task wording -> choice -> law pill), from the 360 px capture or figures.py: each result follows from its sign, no formula list, order useful, start box fits the unit.
+- fi-easy aria-label (figures.json): states the same rows in clear Finnish, usable as a text alternative, formulas spoken in words.
+- Placement after Ydinajatus, unit.md aria-label equals figures.json.
+- Term change: no liikekitka left in the unit texts (grep); teacher.md sentence checked against rows.

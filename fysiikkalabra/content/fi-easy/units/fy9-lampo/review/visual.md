@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: a0241cfccb8c4cb0
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at f9672064592d2ec7.
+CONTENT-HASH: 68929c569097193a
+Review of the recognition chart (queue 9c) and the term change against the version passed at f9672064592d2ec7; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
@@ -9,4 +9,6 @@ Delta review (merge of #523 solution practice into #522, 2026-11-13) of the vers
 (none)
 
 ## Checked
-Read every added line of the merge diff for this unit (fi-easy). check_latex.py on the unit: all fragments ok. Symbols introduced by the symbolic solutions (Annettu/Kaava/Sijoitus) compared with the unit text and neighbouring solutions: no clash with #522 formula names or notation found; no derivation duplicated; order principle, symbolic formula, substitution, result kept; units upright with thin space, decimal comma, no plain numbers with units in the added text. No capture built (source judged sufficient for these text-only changes).
+- Chart at 360 px (fy9-tunnistus/fy9-lampo-fi-easy-360.png): every row's sign, arrow label and pill read in full, no clipped or overlapping label, white on #1a4d2e legible, pill style matches the other units, KaTeX subscripts and \overline vectors render.
+- ARIA_KARTTA/figures.json aria-label is Finnish and lists every row of the chart.
+- Friction terms: no liikekitka left in the unit's fi-easy texts.

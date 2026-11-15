@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e297d1ba1b8c1dd6
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 90beeadb37d7835e.
+CONTENT-HASH: 6ad4a6f43f1059e3
+Review of the recognition chart (queue 9c) and the term change against the version passed at e297d1ba1b8c1dd6; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-- fy9-energia/sovella/solutions.md c) Sijoitus: the point notation (T_0; E_0) is used in c), while d) uses E = E_0 + kT, which silently means T_0 = 0; one clause ("kun T_0 = 0") would make the link explicit.
+- A: none
 
 ## Checked
-Diff only, read in full. `check_latex.py` on the unit: all fragments parse in KaTeX. c) point-slope form, d) solving T symbolically, wind-farm a) symbol definitions. Presentation order principle, symbolic, substitution, result holds. No contradiction between #522 formula names or notation and the #523 solutions found; no duplicated derivation; Finnish and typography (thin spaces, decimal comma, \cdot, colon division, LaTeX units) in the changed lines are correct. No captures made: the changes are text-only solution lines, no figure or layout changed.
+- Opened docs/figures/fy9-tunnistus/fy9-energia-fi-360.png: 8 rows (suljettu järjestelmä … voima siirtää matkan); no label clipped, overlapping or cramped, white on #1a4d2e pills legible, pill style, spine, start box and spacing identical to the other units' charts, all labels LaTeX (upright names, italic symbols).
+- ARIA_KARTTA in lessons/units/fy9-energia/figures.py read against every row: Finnish, complete, same rows in same order, matches the chart.
+- Diff: teacher.md 'käsitekartta' -> 'tunnistuskaavio' and the figure code; remaining diff lines (unit.md text) read for wording and term consistency.

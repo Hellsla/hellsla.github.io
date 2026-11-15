@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: b314995820c7d472
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 6142a25bf9efaa0c.
+CONTENT-HASH: 8d9ddf4a4ea0b4a3
+Review of the recognition chart (queue 9c) and the term change against the version passed at b314995820c7d472; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
@@ -9,4 +9,7 @@ Delta review (merge of #523 solution practice into #522, 2026-11-13) of the vers
 (none)
 
 ## Checked
-Diff only: density answer 2,7e3 (2677) with two sig figs, and tasks.json criterion accepts 2680 too, so the rubric matches the solution; b) link to (2680 +- 80) explained. Braking task: unrounded 4,1667 carried; Newton's second law step in c) staged with sign convention stated.
+- Every chart row of the fi-easy version (sign in task wording -> choice -> law pill), from the 360 px capture or figures.py: each result follows from its sign, no formula list, order useful, start box fits the unit.
+- fi-easy aria-label (figures.json): states the same rows in clear Finnish, usable as a text alternative, formulas spoken in words.
+- Placement after Ydinajatus, unit.md aria-label equals figures.json.
+- Term change: no liikekitka left in the unit texts (grep); teacher.md sentence checked against rows.

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 5844d35ce86ad915
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at c16231eb9f0d03db.
+CONTENT-HASH: a5651d1a4e826af6
+Review of the recognition chart (queue 9c) and the term change against the version passed at 5844d35ce86ad915; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
@@ -9,4 +9,7 @@ Delta review (merge of #523 solution practice into #522, 2026-11-13) of the vers
 (none)
 
 ## Checked
-Diff only: unit text adds that exact quantities (integers, conversion factors) do not limit significant figures; solutions follow it (b: (1,38 +- 0,02) kg explained, c: area A cancels). Scale correction explained with m_lukema = k m; graph answer states x = vt + x0 before slope reading.
+- Every chart row of the fi-easy version (sign in task wording -> choice -> law pill), from the 360 px capture or figures.py: each result follows from its sign, no formula list, order useful, start box fits the unit.
+- fi-easy aria-label (figures.json): states the same rows in clear Finnish, usable as a text alternative, formulas spoken in words.
+- Placement after Ydinajatus, unit.md aria-label equals figures.json.
+- Term change: no liikekitka left in the unit texts (grep); teacher.md sentence checked against rows.

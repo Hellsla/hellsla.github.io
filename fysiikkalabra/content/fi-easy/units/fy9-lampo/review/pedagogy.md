@@ -1,12 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: a0241cfccb8c4cb0
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at f9672064592d2ec7.
+VERDICT: FAIL
+CONTENT-HASH: 68929c569097193a
+Review of the recognition chart (queue 9c) and the term change against the version passed at a0241cfccb8c4cb0; full on the chart, delta on the rest.
 
 ## Blocking
-(none)
+- teacher.md: "jokaisesta haarasta yksi arkinen esimerkki" is untrue now (rows). Change to "jokaiselta riviltä".
 
 ## Polish
-- fy9-lampo-s6: the share of heat reaching the discs is called `k`, while other lampo tasks use k for slopes. A different letter (e.g. `\eta_\text{l}`) would avoid confusion; not wrong inside the task.
+(none)
 
 ## Checked
-Diff only: inquiry solutions (k_h, ell and p) and sovella solutions carry symbols before numbers; P/(P-P_h) in d) explains the 13 % in symbols. Annettu defines every new symbol.
+- Every chart row of the fi-easy version (sign in task wording -> choice -> law pill), from the 360 px capture or figures.py: each result follows from its sign, no formula list, order useful, start box fits the unit.
+- fi-easy aria-label (figures.json): states the same rows in clear Finnish, usable as a text alternative, formulas spoken in words.
+- Placement after Ydinajatus, unit.md aria-label equals figures.json.
+- Term change: no liikekitka left in the unit texts (grep); teacher.md sentence checked against rows.
