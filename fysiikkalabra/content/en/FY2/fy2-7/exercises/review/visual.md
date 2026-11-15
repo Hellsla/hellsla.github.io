@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f1594abe34d25f92
+CONTENT-HASH: 0860705a0ff03a76
+SCOPE: delta (calculation chains re-broken into rows, reflow)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-09 task: "A day, 500 kWh …" is not idiomatic; "In one day, …" (same in L2-09).
-- [Minor] mafytaulukot.fi is plain text (optional).
+(none)
 
 ## Checked
-- Opened fy2-7-open-exercises-1280-8.png (content/en/FY2/fy2-7/review/shots/): the L1-09 card with task, hint and the area of the solution; the changed Answer sentence (exact 1 kWh = 3.6 MJ) is in the lower part of the solution and its wording is clear; layout intact.
-- Delta round 2 at 1280 px only; 390 px captures not opened. Hash unchanged at the end.
+- Opened reflow-exercises-1 to -3.png (390 px, solutions open) of fy2-7: every re-broken block.
+- Rows legible, equals signs in one column, nothing clipped, units upright with thin spaces, decimal point, no red KaTeX source; the text before and after each display reads naturally. Other captures not opened (the diff touches only chains).
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations n/a · typography 4 · English 4 · accessibility 4

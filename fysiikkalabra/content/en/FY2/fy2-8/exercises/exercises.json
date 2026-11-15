@@ -244,7 +244,7 @@
     {
       "id": "fy2-8-L2-07",
       "level": 2,
-      "text": "A student calculated the emission of electricity produced with coal: $$\n\\begin{aligned}\nm &= 820\\,\\text{g/kWh} \\cdot 2.0\\,\\text{kWh} \\\\\n&= 1640\n\\end{aligned}\n$$, and answered that the emission is $1640\\,\\text{kg}$. What is the error in the calculation?",
+      "text": "A student calculated the emission of electricity produced with coal: $m = 820\\,\\text{g/kWh} \\cdot 2.0\\,\\text{kWh} = 1640$, and answered that the emission is $1640\\,\\text{kg}$. What is the error in the calculation?",
       "kind": [
         "error"
       ],

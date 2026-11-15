@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3fc56c61e25476d8
+CONTENT-HASH: b83788b327405fee
+SCOPE: delta reflow (calculation chains re-broken into rows), round 1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] 2-11 figure — the guide line of "salama" still crosses the label "teeveden kiehautus" (carried from round 1) — shift the label left.
+(none)
 
 ## Checked
-- Opened fy2-2-open-exercises-1280-10.png (changed 2-11 task text, figure, Järkevyys with 'Joulet'). Other captures not opened; no 390 px captures of the set.
-- Delta only; unchanged exercises not re-opened.
+- Delta: opened reflow-exercises-1.png and -2.png (390 px, solutions open): every re-broken block and the text around it.
+- Rows legible, no clipping, equals signs in one column, units and signs unchanged, sentences around the display formulas read naturally. Not re-judged: figures, simulation, other captures (unchanged).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 4f14228b78fa5222
+CONTENT-HASH: 8b4a577f5841d27a
+SCOPE: delta reflow (calculation chains re-broken into rows), round 1
 
 ## Blocking
 (none)
@@ -8,8 +9,8 @@ CONTENT-HASH: 4f14228b78fa5222
 (none)
 
 ## Checked
-- Diff is one solution sentence (conversion is exact); text-only, read in the diff. No capture opened.
-- Delta only; unchanged exercises not re-opened.
+- Delta: opened reflow-exercises-1.png to -3.png (390 px, solutions open): every re-broken block and the text around it.
+- Rows legible, no clipping, equals signs in one column, units and signs unchanged, sentences around the display formulas read naturally. Not re-judged: figures, simulation, other captures (unchanged).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 70d00e3dd2da41b6
-SCOPE: delta added-exercise from a52283bbb84cf337 base 611fb7d5c174
+CONTENT-HASH: 5818bc7cc7f106da
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy2-6-L2-08 Järkevyys — "noin $1400$:aa voimalaa … eli tuhansien voimaloiden suuruusluokkaa" is clumsy: 1400 is about a thousand; write "noin $1400$ voimalaa, eli tuhannen voimalan suuruusluokkaa".
+- [Minor] reflow-exercises-2, chain `N = … : 5000 kWh = 14 016 000 000 kWh : 5000 kWh` — rows beginning with `:` are unusual; keep the divisor on the line of its dividend if it fits.
 
 ## Checked
-- fy2-6-open-exercises-1280-10: L1-10 solution end with the changed Periaate context, Muunnokset, Sijoitus, Vastaus, Järkevyys; units upright, nothing clipped.
-- fy2-6-open-exercises-L2-1280-10: L2-08 new Järkevyys (chain with 3 
+- Delta (calculation chains re-broken into aligned rows): opened reflow-exercises-1.png, reflow-exercises-2.png, reflow-exercises-3.png, reflow-exercises-4.png at readable size, every re-broken block at 390 px: rows legible, nothing clipped, relation signs aligned, sentence around each block still reads. Contact sheets and other captures not opened; 360 px from the packet's layout check only.
+
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

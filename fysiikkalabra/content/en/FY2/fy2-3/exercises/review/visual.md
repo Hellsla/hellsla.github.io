@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 87d1286e80d3816b
-SCOPE: delta added-exercise from 563ece0a62c60f6f base 611fb7d5c174
+CONTENT-HASH: 703469235edd6105
+SCOPE: delta (calculation chains re-broken into rows, reflow)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-09 task: inline $P = \Delta E/\Delta t$ uses a slash; \tfrac would match the house style.
-- [Minor] L1-10 solution: the Conversions block is split into three boxes joined by "with" and "and"; one chain would read more smoothly.
+- [Minor] solutions.md, the student's quoted oven solution — the full stop and closing quote mark sit alone on a line after the display (`."`); put the punctuation inside the display's last row or end the quote in prose.
 
 ## Checked
-- Opened fy2-3-open-exercises-1280-8, -9 and -10.png (content/en/FY2/fy2-3/review/shots/): L1-09 reworded task and solution (metric horsepower, mechanical energy); L1-10 reworded ratio task with the A/B graph, answer field without unit, and the new solution (A and B powers, ratio 3.0 as stacked fractions).
-- Graph axes, ticks, A and B labels legible; solution rows aligned, no red KaTeX, nothing clipped.
-- Delta round 2 at 1280 px only; 390 px captures not opened. Hash unchanged at the end.
+- Opened reflow-exercises-1.png and -2.png (390 px, solutions open) of fy2-3: every re-broken block.
+- Rows legible, equals signs in one column, nothing clipped, units upright with thin spaces, decimal point, no red KaTeX source; surrounding sentences read naturally except the orphaned quote above. Other captures not opened (the diff touches only chains).
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations n/a · typography 4 · English 4 · accessibility 4

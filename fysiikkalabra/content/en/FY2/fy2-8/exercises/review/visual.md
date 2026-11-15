@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: eb49af87d3a81c59
-SCOPE: delta added-exercise from ab3a7a9c0b52be41 base 611fb7d5c174
+CONTENT-HASH: a678f6a8466351eb
+SCOPE: delta (calculation chains re-broken into rows, reflow)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-09 solution: "5170 g = 5.17 kg" appears in Substitution before Conversions; order could be tidied.
-- [Minor] mafytaulukot.fi is plain text (optional).
+- [Minor] solutions.md, the student's calculation m = 820 g/kWh · 2.0 kWh = 1640 — the sentence resumes on its own line with an orphaned ", and answered that the emission is"; put the comma inside the display's last row or reword.
 
 ## Checked
-- Opened fy2-8-open-exercises-1280-9.png (content/en/FY2/fy2-8/review/shots/): L1-09 natural-gas task, hint, answer row and the solution; the changed Reasonableness sentence ("2.6 times as large as its mass") reads correctly; layout intact.
-- Delta round 2 at 1280 px only; 390 px captures not opened. Hash unchanged at the end.
+- Opened reflow-exercises-1.png and -2.png (390 px, solutions open) of fy2-8: every re-broken block.
+- Rows legible, equals signs in one column, nothing clipped, units upright with thin spaces, decimal point, no red KaTeX source; surrounding sentences read naturally apart from the orphaned comma. Other captures not opened (the diff touches only chains).
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations n/a · typography 4 · English 4 · accessibility 4

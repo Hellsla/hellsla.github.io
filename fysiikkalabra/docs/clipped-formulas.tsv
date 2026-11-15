@@ -234,6 +234,8 @@ en/fy14-sun-puzzle	6.2 \cdot 10^{26} : 2.0 \cdot 10^{30} = 0.0003 = 0.03\ \%
 en/fy14-sun-puzzle	= 32.5 \cdot 10^{6}\ \text{J/kg} \cdot 1.99 \cdot 10^{30}\ \text{kg}
 en/fy14-sun-puzzle	G = 6.674 \cdot 10^{-11}\ \text{N} \cdot \text{m}^2/\text{kg}^2
 en/fy14-sun-puzzle	M \cdot 32.5\ \text{MJ/kg} : L \approx 1.7 \cdot 10^{11}\ \text{s}
+en/fy2-3	E = P\,t = 2.0\,\text{kW} \cdot 90 = 180\,\text{kWh}
+en/fy2-8	m = 820\,\text{g/kWh} \cdot 2.0\,\text{kWh} = 1640
 en/fy3-1	0.10 + 0.20 + 0.30 + 0.40 + 0.50 + 0.60 = 2.10\,\text{kg}
 en/fy3-1	0.500\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 4.91\,\text{N}
 en/fy3-1	1.1 + 2.1 + 3.2 + 4.1 + 5.2 + 6.1 = 21.8\,\text{cm}
@@ -1631,6 +1633,8 @@ fi-easy/fy1-7	\rho = \Delta m : \Delta V = 179{,}2\,\text{g} : 20{,}0\,\text{cm}
 fi-easy/fy1-7	\rho_\text{C} = 4500\,\text{g} : 500\,\text{cm}^3 = 9{,}0\,\tfrac{\tex
 fi-easy/fy1-7	m = \rho V = 2700\,\text{kg/m}^3 \cdot 250\,\text{cm}^3 = 675\,000\,\t
 fi-easy/fy1-8	0{,}60\,\tfrac{\text{m}}{\text{s}} \cdot 0{,}2\,\text{s} : 0{,}050 = 2
+fi-easy/fy2-3	E = P\,t = 2{,}0\,\text{kW} \cdot 90 = 180\,\text{kWh}
+fi-easy/fy2-8	m = 820\,\text{g/kWh} \cdot 2{,}0\,\text{kWh} = 1640
 fi-easy/fy3-1	0{,}10 + 0{,}20 + 0{,}30 + 0{,}40 + 0{,}50 + 0{,}60 = 2{,}10\,\text{kg
 fi-easy/fy3-1	0{,}500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 4{,}91\,\text{N}
 fi-easy/fy3-1	0{,}50\,\text{kg} \cdot 10{,}38\,\text{cm/kg} = 5{,}2\,\text{cm}
@@ -3197,6 +3201,8 @@ fy1-7	\rho_\text{C} = 4500\,\text{g} : 500\,\text{cm}^3 = 9{,}0\,\tfrac{\tex
 fy1-7	m = \rho V = 2700\,\text{kg/m}^3 \cdot 250\,\text{cm}^3 = 675\,000\,\t
 fy1-8	0{,}60\,\tfrac{\text{m}}{\text{s}} \cdot 0{,}2\,\text{s} : 0{,}050 = 2
 fy10-hissi	\tfrac{1}{2} \cdot \delta a \cdot t_\text{loppu}^2 = \tfrac{1}{2} \cdo
+fy2-3	E = P\,t = 2{,}0\,\text{kW} \cdot 90 = 180\,\text{kWh}
+fy2-8	m = 820\,\text{g/kWh} \cdot 2{,}0\,\text{kWh} = 1640
 fy3-1	0{,}10 + 0{,}20 + 0{,}30 + 0{,}40 + 0{,}50 + 0{,}60 = 2{,}10\,\text{kg
 fy3-1	0{,}500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 4{,}91\,\text{N}
 fy3-1	0{,}50\,\text{kg} \cdot 10{,}38\,\text{cm/kg} = 5{,}2\,\text{cm}
