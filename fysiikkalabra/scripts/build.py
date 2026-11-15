@@ -1598,6 +1598,8 @@ _ref = re.compile(r'((?:href|src)="(?:\.\./)*)(' + "|".join(re.escape(f) for f i
 for _page in SITE.rglob("*.html"):
     if "vendor" in _page.relative_to(SITE).parts: continue
     _old = _page.read_text(); _new = _ref.sub(lambda m: f'{m[1]}{m[2]}?v={_ver[m[2]]}"', _old)
+    if _page.parent == SITE and (SITE / "audio" / "fi" / f"{_page.stem}.json").is_file():   # recorded read-aloud (readaloud.js "audio"): only a page that has recordings asks for them
+        _new = _new.replace('<script id="fl-strings" type="application/json">{"js"', f'<script id="fl-strings" type="application/json">{{"audio": "{_page.stem}", "js"', 1)
     if "<table" in _new: _new = tablefit.fit(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # no table scrolls sideways (2026-11-08)
     if 'class="ch-box"' in _new: _new = tablefit.cards(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # a card's very long word breaks at a syllable (2026-11-11)
     if _new != _old: _page.write_text(_new)

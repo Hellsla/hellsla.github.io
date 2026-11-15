@@ -342,9 +342,9 @@
     return h.toString(16).padStart(8, '0') + t.length.toString(16).padStart(4, '0');
   }
   const REC = { man: null, base: null, audio: null, bad: new Set() };
-  (() => {
-    const parts = location.pathname.split('/').filter(Boolean), file = (parts.pop() || '').replace(/\.html$/, '');
-    if (pageLang.slice(0, 2) !== 'fi' || !file || parts.some((x) => x === 'en' || x === 'fi-easy')) return;
+  (() => {                                        // build.py names the page in the page's strings ("audio") only when it has recordings: no request, no 404 elsewhere
+    const file = L10N.audio;
+    if (!file || pageLang.slice(0, 2) !== 'fi' || location.protocol === 'file:') return;
     const base = new URL('audio/fi/', (SCRIPT && SCRIPT.src) || location.href).href;
     fetch(base + file + '.json').then((r) => (r.ok ? r.json() : null)).then((m) => {
       if (!m || !m.blocks) return;
