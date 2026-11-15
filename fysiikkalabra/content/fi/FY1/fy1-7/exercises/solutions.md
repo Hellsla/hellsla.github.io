@@ -203,7 +203,7 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 
 **Mallivastaus:** Muunnokset:
 
-$0{,}36\,\text{kg} = 0{,}36 \cdot 1000\,\text{g} = 360\,\text{g}$
+$$\begin{aligned} 0{,}36\,\text{kg} &= 0{,}36 \cdot 1000\,\text{g} \\ &= 360\,\text{g} \end{aligned}$$
 
 $$\begin{aligned} &0{,}40\,\text{dm}^3 \\ &= 0{,}40 \cdot 1000\,\text{cm}^3 \\ &= 400\,\text{cm}^3 \end{aligned}$$
 

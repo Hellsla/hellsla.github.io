@@ -204,7 +204,7 @@
 **Asked:** the mass $m$ of the object in $\text{g}$
 **Principle:** The line of a mass–volume graph passes through the origin, so $m = kV$, and the slope $k$ is the density $\rho$ of the material. The density of aluminium is read from the table and used as the slope.
 **Formula:** $m = kV = \rho V$
-**Conversions:** $2.70\cdot10^{3}\,\text{kg/m}^3 = 2.70\,\text{g/cm}^3$, because $1\,\text{kg} = 10^{3}\,\text{g}$ and $1\,\text{m}^3 = 10^{6}\,\text{cm}^3$. This way the volume can be used in cubic centimetres and the mass comes out in grams.
+**Conversions:** $$\begin{aligned} &2.70\cdot10^{3}\,\text{kg/m}^3 \\ &= 2.70\,\text{g/cm}^3 \end{aligned}$$, because $1\,\text{kg} = 10^{3}\,\text{g}$ and $1\,\text{m}^3 = 10^{6}\,\text{cm}^3$. This way the volume can be used in cubic centimetres and the mass comes out in grams.
 **Substitution:** $m = 2.70\,\dfrac{\text{g}}{\text{cm}^3} \cdot 45\,\text{cm}^3 = 121.5\,\text{g}$
 **Answer:** $m \approx 1.2\cdot10^{2}\,\text{g}$ (calculated value $121.5\,\text{g}$), two significant figures as in the volume $45\,\text{cm}^3$. The density is from the MAFY table (densities of solids); an answer within about $\pm 4\,\%$ is accepted.
 **Reasonableness:** Aluminium is about three times as dense as water, and $45\,\text{cm}^3$ of water would have a mass of about $45\,\text{g}$. The result $121.5\,\text{g}$ is about $2.7$ times that.
