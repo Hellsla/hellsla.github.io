@@ -11,7 +11,7 @@
     "fy4-6",
     "fy4-4"
    ],
-   "text": "Mökin rannassa on puinen veneluiska, jonka kaltevuuskulma on $14^\\circ$. Luiskan pinnassa on muoviset liukulistat. Alumiinivene, jonka massa on $280\\,\\text{kg}$, vedetään syksyllä vedestä luiskaa ylös sähkövinssillä. Vinssin vaijeri on luiskan suuntainen.\n\nVeneen pohjan ja märkien liukulistojen välillä:\n\n- lepokitkakerroin $\\mu_0 = 0{,}35$\n- liikekitkakerroin $\\mu = 0{,}25$",
+   "text": "Mökin rannassa on puinen veneluiska, jonka kaltevuuskulma on $14^\\circ$. Luiskan pinnassa on muoviset liukulistat. Alumiinivene, jonka massa on $280\\,\\text{kg}$, vedetään syksyllä vedestä luiskaa ylös sähkövinssillä. Vinssin vaijeri on luiskan suuntainen.\n\nVeneen pohjan ja märkien liukulistojen välillä:\n\n- lepokitkakerroin $\\mu_0 = 0{,}35$\n- liukukitkakerroin $\\mu = 0{,}25$",
    "parts": [
     {
      "id": "a",
@@ -22,7 +22,7 @@
       {
        "key": "fbd_forces",
        "points": 1,
-       "detail": "Neljä voimaa: paino, luiskan tukivoima, liikekitka ja vaijerin jännitysvoima; ei liikkeen suuntaista lisävoimaa."
+       "detail": "Neljä voimaa: paino, luiskan tukivoima, liukukitka ja vaijerin jännitysvoima; ei liikkeen suuntaista lisävoimaa."
       },
       {
        "key": "fbd_directions",
@@ -140,7 +140,7 @@
     "fy4-6",
     "fy4-3"
    ],
-   "text": "Moottorikelkka vetää jäätyneellä järvellä kahta rekeä peräkkäin. Kelkan ja etummaisen reen A välillä on köysi 1, ja reen A ja takimmaisen reen B välillä köysi 2. Köydet ovat vaakasuorat ja kevyet.\n\n| Reki | Massa kuormineen |\n|---|---|\n| A | $120\\,\\text{kg}$ |\n| B | $80\\,\\text{kg}$ |\n\nKummankin reen ja lumen välinen liikekitkakerroin on $0{,}10$. Kelkka lähtee liikkeelle niin, että reet kiihtyvät tasaisesti $0{,}50\\,\\text{m/s}^2$. Ilmanvastusta ei oteta huomioon.",
+   "text": "Moottorikelkka vetää jäätyneellä järvellä kahta rekeä peräkkäin. Kelkan ja etummaisen reen A välillä on köysi 1, ja reen A ja takimmaisen reen B välillä köysi 2. Köydet ovat vaakasuorat ja kevyet.\n\n| Reki | Massa kuormineen |\n|---|---|\n| A | $120\\,\\text{kg}$ |\n| B | $80\\,\\text{kg}$ |\n\nKummankin reen ja lumen välinen liukukitkakerroin on $0{,}10$. Kelkka lähtee liikkeelle niin, että reet kiihtyvät tasaisesti $0{,}50\\,\\text{m/s}^2$. Ilmanvastusta ei oteta huomioon.",
    "parts": [
     {
      "id": "a",
@@ -626,7 +626,7 @@
      "id": "c",
      "kind": "word",
      "points": 5,
-     "text": "Suunnittele koe, jolla samoille pinnoille voidaan määrittää liikekitkakerroin. Kerro, mitä mitataan, millä välineillä, miten tulos lasketaan ja miten luotettavuutta parannetaan.",
+     "text": "Suunnittele koe, jolla samoille pinnoille voidaan määrittää liukukitkakerroin. Kerro, mitä mitataan, millä välineillä, miten tulos lasketaan ja miten luotettavuutta parannetaan.",
      "criteria": [
       {
        "text": "Toimiva menetelmä: esimerkiksi puhelinta vedetään vaakasuoralla kannella voima-anturilla tasaisella nopeudella, jolloin $F = \\mu mg$, tai puhelin liukuu jyrkemmällä kannella ja kiihtyvyys mitataan videolta tai puhelimen kiihtyvyysanturilla.",
@@ -667,7 +667,7 @@
     "fy4-2",
     "fy4-14"
    ],
-   "text": "Koulun takana on liukurimäki: $40\\,\\text{m}$ pitkä tasainen rinne, jonka kaltevuuskulma on $12^\\circ$, ja sen alla vaakasuora pelto. Rinteen ja pellon välinen kohta on loiva, eikä nopeus muutu siinä. Muovisen liukurin ja tamppautuneen lumen välinen liikekitkakerroin on $0{,}080$ sekä rinteessä että pellolla. Laskija lähtee rinteen yläpäästä levosta. Ensimmäisessä mallissa ilmanvastusta ei oteta huomioon.",
+   "text": "Koulun takana on liukurimäki: $40\\,\\text{m}$ pitkä tasainen rinne, jonka kaltevuuskulma on $12^\\circ$, ja sen alla vaakasuora pelto. Rinteen ja pellon välinen kohta on loiva, eikä nopeus muutu siinä. Muovisen liukurin ja tamppautuneen lumen välinen liukukitkakerroin on $0{,}080$ sekä rinteessä että pellolla. Laskija lähtee rinteen yläpäästä levosta. Ensimmäisessä mallissa ilmanvastusta ei oteta huomioon.",
    "parts": [
     {
      "id": "a",

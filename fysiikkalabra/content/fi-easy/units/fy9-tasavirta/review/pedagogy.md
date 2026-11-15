@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: c909aa8d4fcf4b9e
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at ccddd23e0bb39d09.
+CONTENT-HASH: 10acfbb4c587770a
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (9441c766eb5c2f62); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: the aria-label still has double spaces ("tehtävän  tunnusmerkki") although the fix round said they were removed; harmless for a screen reader.
 
 ## Checked
-Diff only: t = N n t1 stated before substitution; series-battery formulas E1 = E/3, R_s1 = R_s/3; P/(EI) = R/(R+R_s); Pt = Q. Unit-conversion value 436,8 Wh made consistent with Sijoitus.
+- Row "paristolla on sisäinen vastus -> johda silmukalla, ΣΔV = 0" and aria-label "napajännite johdetaan kiertämällä piiri, jännitteiden summa on nolla"; consistent with Johda itse.
+- fi-easy 360 px PNG opened: nine rows; the subtitle "piirrä kytkentä ensin, sitten tunnusmerkki" fits on one line.

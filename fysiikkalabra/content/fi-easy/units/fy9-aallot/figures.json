@@ -31,5 +31,22 @@
  "värähtelijät": "värähtelijät",
  "aallot": "aallot",
  "ääni": "ääni",
- "Käsitekartta. Ylhäällä solmu jaksollinen liike: jaksonaika T, taajuus f = 1 per T ja amplitudi A. Siitä lähtee alas kolme haaraa. Värähtelijät, toistuva liike: jousen voima F = miinus k x vektoreina, jousivärähtelijän jaksonaika T = 2 pii kertaa neliöjuuri m per k ja heilurin jaksonaika T = 2 pii kertaa neliöjuuri l per g. Aallot, värähtely etenee: aaltoliikkeen perusyhtälö v = f lambda, vahvistava interferenssi, kun matkaero on n lambda, ja kielen ominaistaajuudet f n = n v per 2 L. Ääni, aalto ilmassa: huojunta f H = f 1 miinus f 2 itseisarvona, Dopplerin ilmiö lähteen liikkuessa kohti havaitsijaa ja intensiteettitaso L = 10 desibeliä kertaa logaritmi I per I 0.": "Käsitekartta. Ylhäällä on solmu jaksollinen liike: jaksonaika T, taajuus f = 1 per T ja amplitudi A. Solmusta lähtee alas kolme haaraa. Ensimmäinen haara on värähtelijät, toistuva liike: jousen voima F = miinus k x vektoreina, jousivärähtelijän jaksonaika T = 2 pii kertaa neliöjuuri m per k ja heilurin jaksonaika T = 2 pii kertaa neliöjuuri l per g. Toinen haara on aallot, värähtely etenee: aaltoliikkeen perusyhtälö v = f lambda, vahvistava interferenssi, kun matkaero on n lambda, ja kielen ominaistaajuudet f n = n v per 2 L. Kolmas haara on ääni, aalto ilmassa: huojunta f H = f 1 miinus f 2 itseisarvona, Dopplerin ilmiö lähteen liikkuessa kohti havaitsijaa ja intensiteettitaso L = 10 desibeliä kertaa logaritmi I per I 0."
+ "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita kysymällä, onko tehtävässä liike vai aalto, ja katso, mikä tunnusmerkki sopii. Massa jousen päässä: värähtelijän jaksonaika on kaksi pii kertaa neliöjuuri massasta jaettuna jousivakiolla. Heiluri, pieni kulma: jaksonaika on kaksi pii kertaa neliöjuuri pituudesta jaettuna putoamiskiihtyvyydellä. Aallon nopeus, taajuus, pituus: aaltoyhtälö, nopeus on taajuus kertaa aallonpituus. Kaksi lähdettä, voimistuu: matkaero on kokonaisluku kertaa aallonpituus. Kaksi lähdettä, vaimenee: matkaero on kokonaisluku ja puoli kertaa aallonpituus. Kieli tai avoin putki: seisova aalto, ominaistaajuus on n kertaa nopeus jaettuna kahdella pituudella. Kaksi lähes samaa taajuutta: huojunta, huojuntataajuus on taajuuksien erotuksen itseisarvo. Lähde tai havaitsija liikkuu: taajuus muuttuu, kyseessä on Dopplerin ilmiö. Äänen voimakkuus desibeleinä: intensiteettitaso on kymmenen kertaa intensiteetin ja kynnysintensiteetin suhteen kymmenkantainen logaritmi desibeleinä.": "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Kysy ensin, onko tehtävässä liike vai aalto. Katso sitten, mikä tunnusmerkki sopii. Massa jousen päässä: jaksonaika on 2 pii kertaa neliöjuuri luvusta massa jaettuna jousivakiolla. Heiluri, pieni kulma: jaksonaika on 2 pii kertaa neliöjuuri luvusta pituus jaettuna putoamiskiihtyvyydellä. Aallon nopeus, taajuus, pituus: käytä aallon perusyhtälöä, nopeus on taajuus kertaa aallonpituus. Kaksi lähdettä, voimistuu: matkaero on kokonaisluku kertaa aallonpituus. Kaksi lähdettä, vaimenee: matkaero on kokonaisluku ja puoli kertaa aallonpituus. Kieli tai avoin putki: syntyy seisova aalto. Ominaistaajuus on n kertaa aallon nopeus jaettuna kahdella pituudella. Kaksi lähes samaa taajuutta: kuuluu huojunta. Huojuntataajuus on taajuuksien erotus. Lähde tai havaitsija liikkuu: taajuus muuttuu. Tämä on Dopplerin ilmiö. Äänen voimakkuus desibeleinä: äänen taso on 10 kertaa intensiteettien suhteen 10-kantainen logaritmi.",
+ "intensiteettitaso": "äänen taso",
+ "matkaero": "matkaero",
+ "taajuus muuttuu": "taajuus muuttuu",
+ "heiluri, pieni kulma": "heiluri, pieni kulma",
+ "kaksi lähdettä, voimistuu": "kaksi lähdettä, voimistuu",
+ "kaksi lähdettä, vaimenee": "kaksi lähdettä, vaimenee",
+ "aaltoyhtälö": "aallon perusyhtälö",
+ "kieli tai avoin putki": "kieli tai avoin putki",
+ "mistä tunnistan lain?": "mistä tunnistan lain?",
+ "jaksonaika": "jaksonaika",
+ "äänen voimakkuus desibeleinä": "äänen voimakkuus desibeleinä",
+ "liike vai aalto? katso tunnusmerkki": "liike vai aalto? katso tunnusmerkki",
+ "kaksi lähes samaa taajuutta": "kaksi lähes samaa taajuutta",
+ "massa jousen päässä": "massa jousen päässä",
+ "aallon nopeus, taajuus, pituus": "aallon nopeus, taajuus, pituus",
+ "H": "H",
+ "lähde tai havaitsija liikkuu": "lähde tai havaitsija liikkuu"
 }

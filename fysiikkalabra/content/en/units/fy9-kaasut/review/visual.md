@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 6263b46de4aa9695
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at cb173dd417c974be.
+CONTENT-HASH: 806a1f1affaa7986
+Round 3 delta against cc5cfb996b96c940
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (merge of #523 solution practice into #522, 2026-11-13) of the vers
 (none)
 
 ## Checked
-Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: sovella/solutions.md part c of the heat-and-power task ($\eta_\text{h}$) and the rewritten suction-lifter part c (Given, Find, Principle, Formula, Conversions, Substitution, Model answer, Reasonableness; one voice, matches the part a/b style; $\Delta p_\text{l}$, $\Delta p_\text{w}$, $\mu_\text{w}$ notation is consistent). No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.
+docs/figures/fy9-tunnistus/fy9-kaasut-en-360.png and -1280.png: all 9 rows opened. 'work done' now sits clear of the pill (W = p\Delta V) in its row; no row clipped or overlapped; other pills and labels fine. (The sticky stage bar covering the header in the 1280 capture is a capture artefact.)

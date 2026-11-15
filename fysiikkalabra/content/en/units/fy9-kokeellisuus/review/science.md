@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fdfc56cdc13d1300
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at cc45b31ff1a97ba3.
+CONTENT-HASH: d2859f8e1938c8d4
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (95262ce9df1aca45).
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: "tulos kulmakertoimesta → kaukaiset pisteet" (points of the fitted line) as in round 1.
 
 ## Checked
-Every hunk of the en merge diff (word diff). $\rho = 2677$ kg/m³ → $2.7\cdot10^3$ with $(2680 \pm 80)$ kg/m³ written to the uncertainty; rubric accepts 2680. Braking task: $a = 1/(2k) = 4.1667$ m/s², $\mu_0 \ge a/g = 0.4247$, $a/1.1025 = 3.779$ m/s², recomputed; the force equations ($N = mg$, $F_{\mu0} = ma \le \mu_0 N$) are correct. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.
+- Round-1 Blocking fixed: row 7 is now "malli origon kautta, suora ei → systemaattinen virhe, b ≠ 0" (en "model through origin, line not"); the aria-label says "Malli kulkee origon kautta, mutta suora ei". This is the unit's own condition ("Jos mallin mukaan suoran pitäisi kulkea origon kautta …").
+- Start box now "mistä tunnistan menetelmän?", consistent with the aria-label's "mikä menetelmä".
+- teacher.md: "kuuden kysymyksen kartan" -> "tunnistuskaavion seitsemän rivin"; the chart has seven rows (counted).
+- Rows 1-6 unchanged and correct as in round 1.
+- Hash taken at the start and the end (d2859f8e1938c8d4).

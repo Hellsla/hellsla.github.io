@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f2ccc4940864b96a
-Delta review (round 3, Kaava sign convention, 2026-11-13) of the version reviewed at c63477ece610534e.
+CONTENT-HASH: 9d34a7e0143e622e
+Review of the recognition chart (queue 9c) and the term change against the version passed at f2ccc4940864b96a; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json, the electron solution: the unit text (unit.md line 356) writes $U = U_{AB} = V_A - V_B$, but here $U = V - V_0 = -U_{AB}$. The solution defines both symbols explicitly, and *Derive it yourself* also uses $U$ as the size of the voltage, so this does not contradict the unit. A student could still stumble over it.
+- Row 4 "a charge accelerated by a voltage → $QU = \tfrac12mv^2$": correct with the unit's signed $W = QU_{AB}$ and a start from rest, but the unit's derivation (round 3 sign convention) writes $\tfrac12mv^2 = |Q|U$ "starts from rest". Writing $|Q|U$ and "from rest" would keep the electron case from giving a negative energy.
 
 ## Checked
-- The only change is the **Formula** line of the electron task's solution. It uses $W = QU_{AB}$ with $U_{AB} = V_0 - V$ (start minus end, the unit's convention), $Q = -e$, so $W = e(V - V_0) = eU$, where $U = V - V_0 = 150\,\text{V} > 0$.
-- This $U$ is now the same positive potential difference as in the **Principle** ("decreases by $eU$"). Round 2's sign clash is gone. The Sijoitus factor $(150\,\text{V} - 0\,\text{V})$ is $V - V_0$.
-- The quantity is solved symbolically before any substitution.
-- Recomputed in my own script: $U_{AB} = -150\,\text{V}$, $W = 2.403 \cdot 10^{-17}\,\text{J}$, $v = 7.264 \cdot 10^{6}\,\text{m/s}$, which is $2.4\,\%$ of $c$. These agree with the solution.
-- The LaTeX in the changed line is balanced.
-- `units.py hash` gives f2ccc4940864b96a at the start and at the end.
+- Every row: $F_E = kQ_1Q_2/r^2$; $E = F_E/Q$; $U = Ed$; $Q = CU$; $C = \varepsilon_0\varepsilon_\text{r}A/d$; $E = \tfrac12CU^2$; LED loop by Kirchhoff's second law $\Sigma\Delta V = 0$ (unit line 461). Agree with the Formula section.
+- The aria-label matches the chart.
+- Term change: the diff's other lines are "concept map" -> "recognition chart" in teacher.md and new figures.json keys; no formula, number or task changed.
+- The en chart (docs/figures/fy9-tunnistus/fy9-sahkokentta-en-360.png) and the hash, taken at the start and the end (9d34a7e0143e622e).

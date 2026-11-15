@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5742dd1f4adca003
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 71f0ef9cfadd67d6.
+CONTENT-HASH: a96564c9f399ef68
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (01488dd1f9e29516).
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- Round-1 Polish items stand as written there (C, not blocking).
 
 ## Checked
-Every hunk of the en merge diff (word diff). inquiry dB task: $\beta = 10$ dB introduced as the decibel factor, no clash with the unit's ```kaavat``` name *sound intensity level* $L = 10\lg(I/I_0)$ dB ($L$ for level, $\beta$ not used elsewhere in the unit); $r_2 = 20\,\text{m}\cdot\sqrt{10^{1.9}} = 178.3$ m recomputed. Sovella: $d = L - v/(2f') = 70.8$ mm, $l_0 = -b/k = -1.4$ cm, $l = 0.977$ m, $d = L_0 + x = 39.6$ m, all symbolic before substitution. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- The chart, its aria-label and every other file are unchanged since round 1; the round-1 Checked list holds.
+- Hash taken at the start and the end (a96564c9f399ef68).

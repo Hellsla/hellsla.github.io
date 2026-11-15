@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 31c49fc33ef52617
-Delta review (round 3, Kaava sign convention, 2026-11-13) of the version reviewed at c7b59c1d134016eb.
+CONTENT-HASH: b06b70d01d7351bf
+Review of the recognition chart (queue 9c) and the term change against the version passed at 31c49fc33ef52617; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json, the electron solution: the unit text (unit.md line 356) writes $U = U_{AB} = V_A - V_B$, but here $U = V - V_0 = -U_{AB}$. The solution defines both symbols explicitly, and *Johda itse* also uses $U$ as the size of the voltage, so this does not contradict the unit. A student could still stumble over it.
+- C/B-minor (row 4, "varaus kiihtyy jännitteessä" → $QU = \tfrac12 mv^2$): The equation assumes the charge starts from rest and only the electric force does work. The unit's text states both conditions, but the chart and the aria-label do not. Suggestion: "kiihtyy levosta jännitteen läpi".
+- C: $QU$ here means magnitudes (for an electron $Q < 0$). The level is fine.
 
 ## Checked
-- The only change is the **Kaava** line of the electron task's solution. It uses $W = QU_{AB}$ with $U_{AB} = V_0 - V$ (start minus end, the unit's convention), $Q = -e$, so $W = e(V - V_0) = eU$, where $U = V - V_0 = 150\,\text{V} > 0$.
-- This $U$ is now the same positive potential difference as in the **Periaate** ("decreases by $eU$"). Round 2's sign clash is gone. The Sijoitus factor $(150\,\text{V} - 0\,\text{V})$ is $V - V_0$.
-- The quantity is solved symbolically before any substitution.
-- Recomputed in my own script: $U_{AB} = -150\,\text{V}$, $W = 2.403 \cdot 10^{-17}\,\text{J}$, $v = 7.264 \cdot 10^{6}\,\text{m/s}$, which is $2.4\,\%$ of $c$. These agree with the solution.
-- The LaTeX in the changed line is balanced.
-- `units.py hash` gives 31c49fc33ef52617 at the start and at the end.
+- Row 1 → $F_E = kQ_1Q_2/r^2$, row 2 → $E = F_E/Q$, row 3 (uniform field between plates) → $U = Ed$: all match Kaava and MAFY names.
+- Row 4: work–energy from rest is consistent with Kaava's $W = QU$.
+- Rows 5–7 → $Q = CU$, $C = \varepsilon_0\varepsilon_\text{r}A/d$, $E = \tfrac12 CU^2$: match Kaava, with the same symbol $E$ for energy as Kaava.
+- Row 8, LED front resistor → Kirchhoff 2, $\Sigma\Delta V = 0$: matches the unit's own loop derivation and the MAFY symbol.
+- The aria-label states each row's physics the same way as the chart.
+- The teacher.md change (käsitekartta → tunnistuskaavio) is correct; "varaus synnyttää kentän ja kenttä kohdistaa varaukseen voiman" is unchanged physics.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 62a144b4944a81b5
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 7ec58540d76c5256.
+CONTENT-HASH: b8e3ee3f1f15aa3e
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (a160a51a52b7e3ef).
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: "matka nopeuskuvaajasta → pinta-ala" is the displacement when v changes sign; "kiihtyvyys on vakio, matka?" gives position (round 1, stand).
 
 ## Checked
-- $y_\text{l} = y_{0\text{A}} + v_0^2/(2g) = 8.84$ m, the same as the stepwise substitution.
-- $a_\text{min} = 2x/(t+\Delta t)^2 = 0.741$ and $a_\text{max} = 1.224$ m/s²: the bounds are the right way round.
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- Round-1 Blocking fixed: row 4 is now "vakiokiihtyvyys, a ei tiedossa → keskinopeus, Δx = (v_0 + v)/2 · t" in the chart and the aria-label; the condition of the Kaava's derivation is stated.
+- aria-label: the broken "pinta- ala" is now "pinta-ala"; no physics change.
+- teacher.md: slope leads x → v → a, area v → x: correct.
+- Other rows unchanged and correct as in round 1.
+- Hash taken at the start and the end (b8e3ee3f1f15aa3e).

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0944d5d3eb93fbe8
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at e02ff82901bd9b74.
+CONTENT-HASH: 753f6c76a98443bb
+Review of the recognition chart (queue 9c) and the term change against the version passed at 0944d5d3eb93fbe8; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-- s2: part a uses $\beta_\text{max}$ for the angle to the fibre axis, and part c now uses $\beta = 10\,\text{dB}$ for the decibel factor in the same task. Writing $10\,\text{dB}$ directly (as in the unit's kaavat) would avoid the clash.
+- C: "hiukkanen kiertää ympyrää → r = mv/(QB)" assumes v perpendicular to a uniform B; the circular path implies it and the Kaava's johda states it. It and "sin α_r = n_2/n_1" are Johda itse results of the Kaava section shown as pills (pedagogy's call).
+- C: ARIA_KARTTA has double spaces at the line joins (harmless for a screen reader).
 
 ## Checked
-- s1 c: $P_\text{h}/P = RP/U^2 = 0.225$ %, and 843.75 kW at 400 V. $U_1$ and $U_2$ match part a/b's names (generator 400 V, line 20.0 kV).
-- s2 c: $A = aL + N_\text{j}A_\text{j} = 3.48$ dB and $P = 0.897$ mW. s7 grating: $\lambda = \sin(\tan^{-1}(x/L))/(kN)$ gives 533.0 and 532.2 nm.
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- Rows against the Kaava section and kaavanimet.tsv: charged particle in a field → F_M = QvB_⊥; conductor in a field → F_M = IℓB_⊥ (ℓ as MAFY); circle → magnetic force is the centripetal force, r = mv/(QB) (from QvB = mv²/r, recomputed); changing flux → e = −NΔΦ/Δt; transformer → N_1/N_2 = U_1/U_2 (ideal, as the Kaava); rotating generator → u_0 = NAB·2πf; light between media → Snell's law; light cannot leave → total reflection, sin α_r = n_2/n_1 (n_1 > n_2 implied by "ei pääse ulos"); grating → d sin α = nλ.
+- Rendered PNG (1280): the pills show these formulas, B_⊥ and subscripts correct.
+- ARIA_KARTTA: same nine rows, same order and physics; the start box's "kuva ja suunnat ensin" included.
+- teacher.md: "käsitekartta … haara kerrallaan" → "tunnistuskaavio … rivi kerrallaan"; the conditions it lists are unchanged and true. unit.md: only the figure.

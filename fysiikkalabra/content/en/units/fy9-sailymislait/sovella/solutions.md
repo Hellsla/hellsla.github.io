@@ -49,7 +49,7 @@
 ### a)
 **Given:** $v_0 = 2.40\,\text{m/s}$, speed before the impact $v_1 = 0.62\,\text{m/s}$, distance $s = 27.0\,\text{m}$, $m = 19.0\,\text{kg}$, $g = 9.81\,\text{m/s}^2$
 **Find:** the coefficient of friction $\mu$
-**Principle:** The ice is horizontal, so the stone does not accelerate vertically, and the normal force equals the weight: $N = mg$. Kinetic friction $F_\mu = \mu N = \mu mg$ is constant and points against the motion, so its work is $-\mu mgs$. The potential energy does not change, so by the work–energy principle the change in kinetic energy is the work done by friction (chapters *Conservation of mechanical energy and the work–energy principle* and *Weight, friction and the inclined plane*).
+**Principle:** The ice is horizontal, so the stone does not accelerate vertically, and the normal force equals the weight: $N = mg$. Sliding friction $F_\mu = \mu N = \mu mg$ is constant and points against the motion, so its work is $-\mu mgs$. The potential energy does not change, so by the work–energy principle the change in kinetic energy is the work done by friction (chapters *Conservation of mechanical energy and the work–energy principle* and *Weight, friction and the inclined plane*).
 **Formula:** $\tfrac12 mv_0^2 - \mu mgs = \tfrac12 mv_1^2$, so the mass cancels and $\mu = \dfrac{v_0^2 - v_1^2}{2gs}$
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $\mu = \dfrac{\left(2.40\,\tfrac{\text{m}}{\text{s}}\right)^2 - \left(0.62\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 27.0\,\text{m}} = \dfrac{5.376\,\tfrac{\text{m}^2}{\text{s}^2}}{529.7\,\tfrac{\text{m}^2}{\text{s}^2}} = 0.01015$

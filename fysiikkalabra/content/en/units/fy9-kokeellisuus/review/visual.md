@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: fdfc56cdc13d1300
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at cc45b31ff1a97ba3.
+CONTENT-HASH: d2859f8e1938c8d4
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (95262ce9df1aca45).
 
 ## Blocking
 (none)
@@ -9,4 +9,5 @@ Delta review (merge of #523 solution practice into #522, 2026-11-13) of the vers
 (none)
 
 ## Checked
-Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: sovella/solutions.md density answer $2.7 \cdot 10^{3}\,\text{kg/m}^3$ and the braking parts (extra digits $4.1667$, force-balance Formula); tasks.json detail line. No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.
+- Opened fy9-kokeellisuus-en-360.png (every row, pill and header read; no overlap except as noted), and read the changed aria-label/figures.json entry and the diff against the chart; the diff's other lines (teacher.md rows wording, unit.md sign wording, line break fix) read in full.
+- Round-1 finding(s) of my role re-checked: unchanged rest holds.

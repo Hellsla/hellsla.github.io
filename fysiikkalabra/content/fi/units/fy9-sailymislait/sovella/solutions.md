@@ -49,7 +49,7 @@
 ### a)
 **Annettu:** $v_0 = 2{,}40\,\text{m/s}$, nopeus ennen osumaa $v_1 = 0{,}62\,\text{m/s}$, matka $s = 27{,}0\,\text{m}$, $m = 19{,}0\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** kitkakerroin $\mu$
-**Periaate:** Jää on vaakasuora, joten kivi ei kiihdy pystysuunnassa, ja tukivoima on yhtä suuri kuin paino: $N = mg$. Liikekitka $F_\mu = \mu N = \mu mg$ on vakio ja osoittaa liikettä vastaan, joten sen työ on $-\mu mgs$. Potentiaalienergia ei muutu, joten energiaperiaatteen mukaan liike-energian muutos on kitkan työ (luvut *Mekaanisen energian säilyminen ja energiaperiaate* ja *Paino, kitka ja kalteva taso*).
+**Periaate:** Jää on vaakasuora, joten kivi ei kiihdy pystysuunnassa, ja tukivoima on yhtä suuri kuin paino: $N = mg$. Liukukitka $F_\mu = \mu N = \mu mg$ on vakio ja osoittaa liikettä vastaan, joten sen työ on $-\mu mgs$. Potentiaalienergia ei muutu, joten energiaperiaatteen mukaan liike-energian muutos on kitkan työ (luvut *Mekaanisen energian säilyminen ja energiaperiaate* ja *Paino, kitka ja kalteva taso*).
 **Kaava:** $\tfrac12 mv_0^2 - \mu mgs = \tfrac12 mv_1^2$, joten massa supistuu ja $\mu = \dfrac{v_0^2 - v_1^2}{2gs}$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\mu = \dfrac{\left(2{,}40\,\tfrac{\text{m}}{\text{s}}\right)^2 - \left(0{,}62\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 27{,}0\,\text{m}} = \dfrac{5{,}376\,\tfrac{\text{m}^2}{\text{s}^2}}{529{,}7\,\tfrac{\text{m}^2}{\text{s}^2}} = 0{,}01015$

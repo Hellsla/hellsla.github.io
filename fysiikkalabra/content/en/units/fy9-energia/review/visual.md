@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 0f8592564d0f83bc
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 3ee87f93108036ab.
+CONTENT-HASH: cb7fc0381f835d4d
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (ea3f9b67dd2e79b6).
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] sovella/solutions.md part d Principle: $E = E_0 + kT$ is the part c line with $T_0 = 0\,{}^\circ\text{C}$; one clause saying so would link the two parts.
+(none)
 
 ## Checked
-Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: sovella/solutions.md parts c, d and the wind-turbine model answer: $E = E_0 + k(T - T_0)$, $E_\text{other}$, $P_\text{avg} = kNP_\text{nom}$; fractions, subscripts and units render-safe in the source. No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.
+- Opened fy9-energia-en-360.png (every row, pill and header read; no overlap except as noted), and read the changed aria-label/figures.json entry and the diff against the chart; the diff's other lines (teacher.md rows wording, unit.md sign wording, line break fix) read in full.
+- Round-1 finding(s) of my role re-checked: unchanged rest holds.

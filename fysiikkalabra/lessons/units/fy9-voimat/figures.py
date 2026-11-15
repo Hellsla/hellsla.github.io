@@ -2,9 +2,9 @@
 writes them into content/fi/units/fy9-voimat/unit.md. The unit is Finnish, so the decimal sign is a comma.
 
 hero        the Why scene: a car tows a trailer of firewood along a lakeside road in autumn (no text, no people)
-kartta      the concept map of the review: the force diagram first, then Newton's laws, the forces and three special cases
+kartta      the recognition chart of the review (Mistä tunnistan, mitä lakia käytän?): task signs -> the law or method
 kalteva     a sled sliding down a snowy slope: the situation picture and the sled's force diagram with the weight's
-            components dashed (kinetic friction up the slope, acceleration down it)
+            components dashed (sliding friction up the slope, acceleration down it)
 hihna       the Sovella error task, not in unit.md: a box on an accelerating conveyor belt and a student's force diagram
             with one error; `PYTHONPATH=scripts python3 lessons/units/fy9-voimat/figures.py` pastes it into the text of
             the activity "hihna" in inquiry.json (figcat ids cannot name a unit's figure)
@@ -18,6 +18,7 @@ import herolib as H
 
 figlib.set_language({}, ",")
 
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
 WOOD, WOOD_DARK = "#d9b26a", "#a97a35"
 BOX, BOX_EDGE = SAND_LIGHT, WOOD_DARK
 
@@ -70,38 +71,52 @@ def hero():
 
 
 def kartta():
-    """The concept map, stacked for a phone: the method (one line of steps) at the top, a spine down the left and three
-    boxes: Newton's laws, the forces, and three special cases, each law with a grey word beside it."""
-    f = Fig("fy9vo-kartta", 640, "Käsitekartta. Ylhäällä solmu voimakuvio ensin: valitse kappale, etsi vuorovaikutukset, piirrä voimakuvio, "
-            "valitse akselit ja kirjoita liikeyhtälöt. Siitä lähtee alas kolme haaraa. Newtonin lait: ensimmäinen laki, "
-            "summa F on nolla, kun nopeus on vakio; toinen laki summa F = m a; kolmas laki F A B = − F B A. Voimat: paino G "
-            "= m g vektoreina, liikekitka F myy = myy N ja lepokitka enintään myy nolla N, ilmanvastus vastustaa liikettä. "
-            "Erikoistilanteet: rinteessä G x = m g sin alfa, kytketyillä kappaleilla oma yhtälö kullekin ja rajanopeudella "
-            "F v = G.", width=380, size=21)
-    groups = [
-        ("Newtonin lait", [(r"\Sigma\overline{F} = \overline{0}", "I: lepo tai vakionopeus"), (r"\Sigma\overline{F} = m\overline{a}", "II"),
-                           (r"\overline{F}_{AB} = -\overline{F}_{BA}", "III")]),
-        ("voimat", [(r"\overline{G} = m\overline{g}", "paino"), (r"F_\mu = \mu N", "liikekitka"), (r"F_{\mu_0} = \mu_0 N", "lepokitka")]),
-        ("erikoistilanteet", [(r"G_x = mg\sin\alpha", "rinne"), (r"\Sigma F_x = m_i a_x", "kytketyt"), (r"F_\text{v} = G", "rajanopeus")]),
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words (YO language): the sign on top, the choice it leads to and, as the result in a
+    pill in the site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
+    rows = [
+        (r"\text{vakionopeus tai levossa}", r"\to\ a = 0", r"\Sigma\overline{F} = \overline{0}"),
+        (r"\text{lähtee levosta tai kiihtyy}", r"\to\ a \neq 0", r"\Sigma\overline{F} = m\overline{a}"),
+        (r"\text{tanko tai vipu pysyy paikallaan}", r"\to\ \text{myös momentit}", r"\Sigma M = 0"),
+        (r"\text{kaksi kappaletta köydellä}", r"\to\ \text{yhtälö kummallekin}", r"\Sigma F_i = m_i a_i"),
+        (r"\text{kitkaton pinta}", r"\to\ \text{ei kitkavoimaa}", r"F_\mu = 0"),
+        (r"\text{liukuu karhealla pinnalla}", r"\to\ \text{liukukitka}", r"F_\mu = \mu N"),
+        (r"\text{pysyy paikallaan vaikka vedetään}", r"\to\ \text{lepokitka}", r"F \le F_{\mu_0}"),
+        (r"\text{alkaa juuri liukua}", r"\to\ \text{lähtökitka}", r"F_{\mu_0} = \mu_0 N", r"\text{täysin kehittynyt lepokitka}"),
+        (r"\text{putoaa, ilmanvastus, nopeus tasaantuu}", r"\to\ \text{voimat tasapainossa}", r"F_\text{v} = G"),
     ]
-    hub_y, hub_h, x_box, gh, top = 8, 112, 44, 150, 140
-    spine = 24
-    f.line(spine, hub_y + hub_h, spine, top + 2 * (gh + 16) + 22, RULE, 3)
-    f.rect(8, hub_y, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
-    f.tex(190, hub_y + 22, r"\textbf{voimakuvio ensin}", "middle", INK)
-    f.tex(190, hub_y + 54, r"\text{kappale} \to \text{vuorovaikutukset}", "middle", INK, size=19)
-    f.tex(190, hub_y + 86, r"\to \text{akselit} \to \Sigma F_x = ma_x", "middle", INK, size=19)
-    for k, (head, rows) in enumerate(groups):
-        y = top + k * (gh + 16)
-        f.line(spine, y + 22, x_box, y + 22, RULE, 3)
-        f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
-        f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
-        f.line(x_box + 10, y + 42, 362, y + 42, RULE_LIGHT, 1.5)
-        for j, (law, word) in enumerate(rows):
-            yy = y + 66 + j * 34
-            f.tex(x_box + 14, yy, law, "start", INK)
-            f.tex(362, yy, r"\text{" + word + "}", "end", MUTED, size=17)
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    heights = [ch + (22 if len(r) > 3 else 0) for r in rows]
+    ys = [top + sum(heights[:k]) + gap * k for k in range(len(rows))]
+    height = ys[-1] + heights[-1] + 8
+    f = Fig("fy9vo-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + heights[-1] / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{voimakuvio ensin, sitten tunnusmerkki}", "middle", INK, size=17, w=340)
+    for (sign, choice, law, *more), y, ch_ in zip(rows, ys, heights):
+        f.line(14, y + ch_ / 2, x0, y + ch_ / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch_, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        if more:                                               # a longer name of the choice on a line of its own
+            f.tex(x0 + 14, yy, r"\to\ " + more[0], "start", MUTED, size=17, w=300)
+            yy += 22; choice = r"\text{eli lähtökitka}"
+        f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=170)
+        f.rect(x1 - 134, yy - 11, 124, 24, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 72, yy + 1, law, "middle", WHITE, size=17, w=116)
     return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita voimakuviosta ja katso, mikä tehtävän tunnusmerkki sopii. "
+               "Vakionopeus tai levossa: kiihtyvyys on nolla, joten voimien summa on nolla. Lähtee levosta tai kiihtyy: kiihtyvyys ei "
+               "ole nolla, joten voimien summa on massa kertaa kiihtyvyys. Tanko tai vipu pysyy paikallaan: myös momenttien summa on nolla. "
+               "Kaksi kappaletta köydellä: oma liikeyhtälö kummallekin kappaleelle. Kitkaton pinta: ei kitkavoimaa. Liukuu karhealla "
+               "pinnalla: liukukitka on kitkakerroin kertaa tukivoima. Pysyy paikallaan vaikka vedetään: lepokitka, enintään lähtökitkan "
+               "suuruinen. Alkaa juuri liukua: täysin kehittynyt lepokitka eli lähtökitka on lepokitkakerroin kertaa tukivoima. "
+               "Putoaa, ilmanvastus ja nopeus tasaantuu: voimat ovat tasapainossa ja "
+               "ilmanvastus on yhtä suuri kuin paino.")
 
 
 def _sled(f, x0, y0, s, deg, L=92, hh=30):
@@ -118,7 +133,7 @@ def _sled(f, x0, y0, s, deg, L=92, hh=30):
 
 
 def kalteva():
-    """Kaava: a sled slides down a snowy slope of 25° (kinetic friction coefficient 0,15), speeding up. Left the situation
+    """Kaava: a sled slides down a snowy slope of 25° (sliding friction coefficient 0,15), speeding up. Left the situation
     picture with v and a beside the sled; right its force diagram, the sled a rectangle tilted with the slope: G from
     the centre straight down, N from the bottom face perpendicular to the slope, friction from the uphill bottom corner
     up the slope, and G's components dashed. Lengths to scale (G = 100 units)."""
@@ -127,7 +142,7 @@ def kalteva():
     f = Fig("fy9vo-kalteva", 380, "Kaksi kuvaa. Vasemmalla tilannekuva: muovipulkka liukuu lumista rinnettä alas vasemmalle. Rinne "
             "nousee oikealle kulmassa alfa vaakatasoon nähden. Pulkan yllä sininen nopeusnuoli ja oranssi kiihtyvyysnuoli "
             "osoittavat rinnettä alas. Oikealla pulkan voimakuvio, pulkka rinteen suuntaisesti kallistettuna suorakulmiona: "
-            "paino G keskipisteestä suoraan alas, tukivoima N alapinnasta kohtisuoraan rinteestä ulospäin ja liikekitka F myy "
+            "paino G keskipisteestä suoraan alas, tukivoima N alapinnasta kohtisuoraan rinteestä ulospäin ja liukukitka F myy "
             "alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit on piirretty katkoviivoin keskipisteestä: G x "
             "rinnettä alas ja G y kohtisuoraan rinnettä kohti. Komponentti G y on yhtä pitkä kuin tukivoima, ja G x on "
             "selvästi pidempi kuin kitka, joten voimien summa osoittaa rinnettä alas. Nuolten pituudet ovat mittakaavassa.", size=28)
@@ -224,4 +239,4 @@ if __name__ == "__main__":
 
 FIGURES = {"hero": hero, "kartta": kartta, "kalteva": kalteva}
 REUSE = {"kartta": "reveals: the key laws of the FY4 force chapters (Newton's laws, weight, friction, slope, coupled bodies, terminal velocity)",
-         "kalteva": "reveals: the force diagram of a sled sliding down a slope with kinetic friction and the weight's components"}
+         "kalteva": "reveals: the force diagram of a sled sliding down a slope with sliding friction and the weight's components"}

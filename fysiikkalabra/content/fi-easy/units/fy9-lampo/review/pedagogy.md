@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a0241cfccb8c4cb0
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at f9672064592d2ec7.
+CONTENT-HASH: faa65be0b0d9a1c7
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (68929c569097193a); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-- fy9-lampo-s6: the share of heat reaching the discs is called `k`, while other lampo tasks use k for slopes. A different letter (e.g. `\eta_\text{l}`) would avoid confusion; not wrong inside the task.
+(none new; round-1 findings stand)
 
 ## Checked
-Diff only: inquiry solutions (k_h, ell and p) and sovella solutions carry symbols before numbers; P/(P-P_h) in d) explains the 13 % in symbols. Annettu defines every new symbol.
+- Round-1 Blocking fixed: teacher.md "jokaisesta rivistä yksi arkinen esimerkki". Diff read in full: nothing else changed; chart and aria-label untouched.

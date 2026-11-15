@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 2b347105827eead3
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 4a4554bfe169b358.
+CONTENT-HASH: 04204e9baec73db3
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (87d5c9e95d017f53).
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] sovella/solutions.md s5 Hyväksytään myös: the first bullet starts with a lower-case "in part a"; the neighbouring bullets start with a capital.
-- [Minor] sovella/solutions.md s5 a: the solution describes a $(t,\ \ln N)$ graph with a fitted line and read points but has no figure; a small graph with the circled points would match the other fit solutions of the course.
+(none)
 
 ## Checked
-Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: sovella/solutions.md s2 a, s3 d ($b = -W/e$, $f_0 = -b/k$, double negatives in the Substitution read correctly), s5 a (rewritten as a $\ln N$ line fit; numbers $5.993$, $4.635$, $153.1\,\text{s}$ agree with the new accepted range), s5 b, s6 b; tasks.json criteria; LaTeX balanced. No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.
+- Opened fy9-moderni-en-360.png (every row, pill and header read; no overlap except as noted), and read the changed aria-label/figures.json entry and the diff against the chart; the diff's other lines (teacher.md rows wording, unit.md sign wording, line break fix) read in full.
+- Round-1 finding(s) of my role re-checked: unchanged rest holds.

@@ -15,6 +15,8 @@ import herolib as H
 
 figlib.set_language({}, ",")
 
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
+
 # kayra: 1,00 kg of snow at -10 °C (the FY3 tables: c of ice 2100, s 334 kJ/kg, c of water 4190); kJ
 C_ICE, S_ICE, C_WATER = 2.100, 334.0, 4.190          # kJ/(kg K), kJ/kg, kJ/(kg K)
 Q_ICE = C_ICE * 1.00 * 10                            # 21 kJ: the snow from -10 °C to 0 °C
@@ -86,36 +88,54 @@ def hero():
 
 
 def kartta():
-    """The concept map, stacked for a phone: energy is conserved at the top (the balance of heats), a spine down the
-    left and four branches, each a box of two laws or ideas with a grey word beside each."""
-    f = Fig("fy9la-kartta", 636, "Käsitekartta. Ylhäällä solmu energia säilyy: eristetyssä systeemissä luovutettu lämpömäärä on yhtä suuri kuin "
-            "vastaanotettu. Siitä lähtee alas neljä haaraa. Lämpeneminen: Q = c m ΔT, kun olomuoto ei muutu, ja "
-            "kelvinlämpötila T = θ + 273,15. Olomuodon muutos: sulaminen Q = s m ja höyrystyminen Q = r m "
-            "vakiolämpötilassa. Lämpölaajeneminen: pituus l = l0 kertaa 1 + α ΔT ja tilavuus V = V0 kertaa 1 + γ ΔT. Lämmön "
-            "siirtyminen: johtuminen, konvektio ja säteily, sekä seinän läpi johtuva teho P = U A ΔT.", width=380, size=21)
-    groups = [
-        ("lämpeneminen", [(r"Q = cm\Delta T", "olomuoto sama"), (r"T = \theta + 273{,}15", "kelvinit")]),
-        ("olomuodon muutos", [(r"Q = sm", "sulaminen"), (r"Q = rm", "höyrystyminen")]),
-        ("lämpölaajeneminen", [(r"l = l_0(1 + \alpha\Delta T)", "pituus"), (r"V = V_0(1 + \gamma\Delta T)", "tilavuus")]),
-        ("lämmön siirtyminen", [(r"P = UA\,\Delta T", "seinän läpi"), (r"\text{johtuminen, konvektio, säteily}", "")]),
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words (YO language): the sign on top, the choice it leads to and, as the result in a
+    pill in the site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from
+    the start box. A row is (sign, choice, law, pill width, law on a line of its own)."""
+    rows = [
+        (r"\text{lämpötila muuttuu, olomuoto ei}", r"\to\ \text{lämpeneminen}", r"Q = cm\Delta T", 130, False),
+        (r"\text{jää sulaa tai vesi jäätyy}", r"\to\ \text{sulamislämpö}", r"Q = sm", 100, False),
+        (r"\text{vesi kiehuu tai höyry tiivistyy}", r"\to\ \text{höyrystymislämpö}", r"Q = rm", 100, False),
+        (r"\text{eristetty astia, sekoitus}", r"\to\ \text{lämpötasapaino}", r"Q_\text{luovutettu} = Q_\text{vastaanotettu}", 250, True),
+        (r"\text{kappaleen pituus muuttuu}", r"\to\ \text{lämpölaajeneminen}", r"l = l_0(1 + \alpha\Delta T)", 190, True),
+        (r"\text{nesteen tilavuus muuttuu}", r"\to\ \text{lämpölaajeneminen}", r"V = V_0(1 + \gamma\Delta T)", 190, True),
+        (r"\text{lämpö johtuu seinän läpi}", r"\to\ \text{U-arvo}", r"P = UA\Delta T", 140, False),
     ]
-    hub_y, hub_h, x_box, gh, top, gap = 8, 76, 44, 120, 104, 12
-    spine = 24
-    f.line(spine, hub_y + hub_h, spine, top + 3 * (gh + gap) + 22, RULE, 3)
-    f.rect(8, hub_y, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
-    f.tex(190, hub_y + 22, r"\text{energia säilyy}", "middle", INK)
-    f.tex(190, hub_y + 54, r"Q_\text{luovutettu} = Q_\text{vastaanotettu}", "middle", INK)
-    for k, (head, rows) in enumerate(groups):
-        y = top + k * (gh + gap)
-        f.line(spine, y + 22, x_box, y + 22, RULE, 3)
-        f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
-        f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
-        f.line(x_box + 10, y + 42, 362, y + 42, RULE_LIGHT, 1.5)
-        for j, (law, word) in enumerate(rows):
-            yy = y + 64 + j * 34
-            f.tex(x_box + 14, yy, law, "start", INK, size=19 if law.startswith(r"\text") else None)
-            if word: f.tex(362, yy, r"\text{" + word + "}", "end", MUTED, size=18)
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    heights = [ch + (30 if r[4] else 0) for r in rows]
+    ys = [top + sum(heights[:k]) + gap * k for k in range(len(rows))]
+    height = ys[-1] + heights[-1] + 8
+    f = Fig("fy9la-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + heights[-1] / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{mitä aineelle tapahtuu?}", "middle", INK, size=17, w=340)
+    for (sign, choice, law, pw, wide), y, ch_ in zip(rows, ys, heights):
+        f.line(14, y + ch_ / 2, x0, y + ch_ / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch_, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        if wide:                                               # the choice on a line of its own, the law below it
+            f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 28)
+            yy += 30
+        else:
+            f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 28 - pw - 8)
+        ph = 28 if "sqrt" in law else 24
+        f.rect(x1 - pw - 10, yy - ph / 2 + 1, pw, ph, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 10 - pw / 2, yy + 1, law, "middle", WHITE, size=17, w=pw - 8)
     return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Kysy, mitä aineelle tapahtuu, ja katso, mikä tehtävän "
+               "tunnusmerkki sopii. Lämpötila muuttuu, olomuoto ei: lämpeneminen, lämpömäärä on ominaislämpökapasiteetti "
+               "kertaa massa kertaa lämpötilan muutos. Jää sulaa tai vesi jäätyy: sulamislämpö, lämpömäärä on "
+               "ominaissulamislämpö kertaa massa. Vesi kiehuu tai höyry tiivistyy: höyrystymislämpö, lämpömäärä on "
+               "ominaishöyrystymislämpö kertaa massa. Eristetty astia, sekoitus: lämpötasapaino, luovutettu lämpömäärä on "
+               "yhtä suuri kuin vastaanotettu. Kappaleen pituus muuttuu: lämpölaajeneminen, pituus on alkuperäinen pituus "
+               "kertaa yksi plus pituuden lämpötilakerroin kertaa lämpötilan muutos. Nesteen tilavuus muuttuu: "
+               "lämpölaajeneminen, tilavuus on alkuperäinen tilavuus kertaa yksi plus tilavuuden lämpötilakerroin kertaa "
+               "lämpötilan muutos. Lämpö johtuu seinän läpi: U-arvo, teho on U-arvo kertaa pinta-ala kertaa lämpötilaero.")
 
 
 def kayra():

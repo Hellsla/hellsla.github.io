@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: acdec75ed9fb3544
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 712d63b6ed8c62be.
+CONTENT-HASH: 7350c01843e2bbee
+Round 3 delta against a5cfa11854335811
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+(none new; earlier findings stand)
 
 ## Checked
-Lever-arm symbols $r_\text{k}, r_\text{t}, r_\text{b}, r_\text{h}, r_\text{g}, d_\text{p}, d_\text{s}, d_\text{m}$ defined in Given or Conversions before use; the stone-and-stick solution now computes lever arms from the edge explicitly, which removes a jump the student could not follow. Satellite force share $\gamma M/(g r^2)$.
-Read the diff hunks of this unit for how #522 notation and #523 symbolic-first solutions interact: no symbol used with two meanings inside one solution, no duplicated derivation, no contradiction with the unit text, LaTeX balanced, the answer lines still match the substitutions, and the formula still precedes the numbers (CLAUDE.md Lesson form 7). Staging of the worked solutions (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) is intact.
+- Label "static friction" (was "static friction turns the car"): en 360 px PNG opened, the row no longer crowds, nothing clipped; the sign "a bend on a level road" still leads to friction as the centripetal force and F = mv²/r. Earlier checks stand.

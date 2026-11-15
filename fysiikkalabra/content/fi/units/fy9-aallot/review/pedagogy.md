@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1cc9fe9daf7c7ebf
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 2ed8859154e6b841.
+CONTENT-HASH: a3e2059181de8338
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (7bbe7f3465dd6d42); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- B (kept): the start box says "liike vai aalto?" but nothing in the rows separates the groups; the aria intro could name the order (jaksonaika, aallot, ääni).
+- C (kept): the Doppler pill has no formula.
 
 ## Checked
-Desibelitehtävän solution: new given beta = 10 dB and formula with beta; the substitution still shows 10 dB in the denominator (consistent, the numbers are the definition). Sovella a/c/e: d, l_0 and depth symbols are named before the number; symbols not reused with another meaning. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.
+- Round-1 Blocking fixed: teacher.md now reads "rivi kerrallaan: värähtelijät, aallot, ääni"; the nine rows run oscillators, waves, sound, so the sentence is true of the chart (rows, not branches).
+- Diff read in full: only that teacher.md sentence changed (no chart row, no aria-label change); the chart PNG not reopened.
+- Rest passes through the round-1 report.

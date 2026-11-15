@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: dc13071f6130e116
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at b657e7155ea191a7.
+CONTENT-HASH: bfb463586d0ab8e5
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (84c1d79c5900ea6f); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-- tasks.json (s5 viimeinen kohta) sanoo 'koko aineisto antaa noin 151–153 s'; nykyinen ratkaisu on 153 s sovituksella ja 151 s kahdella pisteellä, joten sana 'koko aineisto' on epätarkka.
+- B (kept): the LED threshold row is missing.
+- C (kept): "ydinreaktion massaero" and "säteilyn laji otetaan huomioon" are not task wording.
 
 ## Checked
-s5 a: ratkaisu vaihtui kahden pisteen laskusta $\ln N$-suoran sovitukseen ($T_{1/2}$ = 153 s); answer 153, tolerance 0,04 = 147–159 vastaa Hyväksytään-riviä; 151 s säilyy kahden pisteen hyväksyttynä. Menetelmä on vaativampi mutta Kuvaajan lukeminen -vaihe opettaa sen eikä tehtävän teksti nimeä mallia. $E_0$, $m_\text{a}$, $b$, $m_\text{U}$ määritelty. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.
+- teacher.md now says "rivi kerrallaan ylhäältä alas" with three groups; rows 1-3 are photon and atom, 4-6 nucleus, 7-9 radiation and dose, so the sentence is true (round-1 Polish B fixed).
+- Photoelectric row now hf = W + E_k,max, on a wide pill of its own line; nothing clipped in the 360 px PNG (nine rows).
+- The rest passes through the round-1 report.
