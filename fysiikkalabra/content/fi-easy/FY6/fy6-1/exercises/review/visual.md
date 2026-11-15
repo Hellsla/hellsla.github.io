@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9c35811b1982a8c7
-SCOPE: delta added-exercise from 25bea0e8e337cf85 base 8f23aa7ae3bd
+CONTENT-HASH: f2d06e99ef2be864
 
 ## Blocking
 - none
@@ -9,7 +8,8 @@ SCOPE: delta added-exercise from 25bea0e8e337cf85 base 8f23aa7ae3bd
 - none
 
 ## Checked
-- fy6-1-L2-08 (task 1-17) in open-exercises-L2-1280 parts 8 and 9: task text, figure lataus-kuvaaja (axes with units, ticks, 0,5 A plateau, line to zero at 100 s), solution with aligned Sijoitus rows, Vastaus, Järkevyys. Nothing clipped; figure gives the values needed and not the answer.
+- Delta, round 1 (proofreading fixes 2026-11-15; changed file solutions.md).
+- open-exercises-L3-1280-4, -5, -6 (task 1-21): rewritten Vastaus explains the significant figures in short sentences; rows aligned, units upright, nothing clipped, Järkevyys intact.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

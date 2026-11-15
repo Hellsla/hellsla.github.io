@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 9f0133e283d84987
+CONTENT-HASH: cc28d887684ce5bf
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.
+- batch delta review: opened theory-1280-2/-3/-4 (new two-line named formula block V=Ep/q, Ep=qV renders aligned; caption change; graph and bar chart fine) and fig-row-1280.

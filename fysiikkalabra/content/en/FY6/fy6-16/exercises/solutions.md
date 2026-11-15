@@ -76,8 +76,8 @@
 **Formula:** $I_\text{heater} + I_\text{charger} = I_\text{main}$ and $I_\text{heater} = \dfrac{P_\text{heater}}{3U}$, so $I_\text{charger} = I_\text{main} - \dfrac{P_\text{heater}}{3U}$, where $I_\text{main} = 25\,\text{A}$
 **Conversions:** $P_\text{heater} = 9.0\,\text{kW} = 9000\,\text{W}$
 **Substitution:** $I_\text{charger} = 25\,\text{A} - \dfrac{9000\,\text{W}}{3 \cdot 230\,\text{V}} = 25\,\text{A} - 13.04\,\text{A} = 11.96\,\text{A}$
-**Answer:** $12\,\text{A}$, two significant figures like the current of the main fuse $25\,\text{A}$.
-**Reasonableness:** The heater and the car together then draw $13\,\text{A} + 12\,\text{A} = 25\,\text{A}$ from each phase. The power of the car is about $3 \cdot 230\,\text{V} \cdot 12\,\text{A} \approx 8.3\,\text{kW}$, less than the $11\,\text{kW}$ of the station, so load management has to reduce the charging for the time of the sauna.
+**Answer:** $11\,\text{A}$, two significant figures like the current of the main fuse $25\,\text{A}$. The current may be at most $11.96\,\text{A}$, so the limit is rounded down: $12\,\text{A}$ would exceed the current of the main fuse.
+**Reasonableness:** The heater and the car together then draw $13.0\,\text{A} + 11\,\text{A} = 24\,\text{A}$ from each phase, just under $25\,\text{A}$. The power of the car is about $3 \cdot 230\,\text{V} \cdot 11\,\text{A} \approx 7.6\,\text{kW}$, less than the $11\,\text{kW}$ of the station, so load management has to reduce the charging for the time of the sauna.
 
 ## fy6-16-L2-04
 **Given:** length of cable $l = 30\,\text{m}$, cross-sectional area $A = 2.5\,\text{mm}^2$, current $I = 16\,\text{A}$, $\rho = 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m}$
@@ -106,7 +106,7 @@
 **Formula:** $P = RI^2$, so $\dfrac{P_2}{P_1} = \dfrac{R I_2^2}{R I_1^2} = \left(\dfrac{I_2}{I_1}\right)^2$ and the increase is $\dfrac{P_2}{P_1} - 1$
 **Conversions:** Not needed: the amperes cancel. The increase is converted to a percentage by multiplying by a hundred.
 **Substitution:** $\dfrac{P_2}{P_1} = \left(\dfrac{16\,\text{A}}{10\,\text{A}}\right)^2 = 1.6^2 = 2.56$, so the increase is $2.56 - 1 = 1.56 = 156\,\%$
-**Answer:** $156\,\%$; $10\,\text{A}$ and $16\,\text{A}$ are exact settings of the charging device, so $156\,\%$ is given as it was calculated.
+**Answer:** $1.6 \cdot 10^{2}\,\%$ (calculated $156\,\%$), two significant figures like the currents $10\,\text{A}$ and $16\,\text{A}$.
 **Reasonableness:** The current grows by $60\,\%$, but the power more than doubles, because the current is squared. If the current doubled, the power would become four times as great, that is, grow by $300\,\%$; $156\,\%$ is suitably between $60\,\%$ and $300\,\%$.
 
 ## fy6-16-L3-03
@@ -116,7 +116,7 @@
 **Formula:** $\eta \cdot 3UI \cdot t = W_\text{battery}$, so $I = \dfrac{W_\text{battery}}{3 \eta U t}$
 **Conversions:** $t = 7.00 - 22.00 = 9.0\,\text{h}$; $W_\text{battery} = 40\,\text{kWh} = 40\,000\,\text{Wh}$ so that the result comes out in amperes; $\eta = 0.90$
 **Substitution:** $I = \dfrac{40\,000\,\text{Wh}}{3 \cdot 0.90 \cdot 230\,\text{V} \cdot 9.0\,\text{h}} = \dfrac{40\,000\,\text{Wh}}{5589\,\text{Vh}} = 7.157\,\text{A}$
-**Answer:** $7.2\,\text{A}$, two significant figures like the energy $40\,\text{kWh}$ and the efficiency $90\,\%$.
+**Answer:** $7.2\,\text{A}$, two significant figures like the energy $40\,\text{kWh}$ and the efficiency $90\,\%$. The current must be at least the calculated value, so the limit is rounded up.
 **Reasonableness:** $40\,\text{kWh} : 0.90 \approx 44\,\text{kWh}$ is taken from the grid, which in nine hours requires about $4.9\,\text{kW}$; $4900\,\text{W} : 690\,\text{V} \approx 7\,\text{A}$. The current is less than half of the $16\,\text{A}$ of the station, so slow overnight charging leaves room for the sauna and other loads.
 
 ## fy6-16-L1-06
@@ -152,12 +152,12 @@
 **Formula:** $P_\text{max} = 3UI_\text{f}$ and $P_\text{house} + P_\text{s} \le P_\text{max}$, so $P_\text{s} = 3UI_\text{f} - P_\text{house}$, where $I_\text{f} = 25\,\text{A}$
 **Conversions:** $3UI_\text{f}$ is calculated in watts and converted to kilowatts: $17\,250\,\text{W} = 17.25\,\text{kW}$.
 **Substitution:** $P_\text{max} = 3 \cdot 230\,\text{V} \cdot 25\,\text{A} = 17\,250\,\text{W} = 17.25\,\text{kW}$, so $P_\text{s} = 17.25\,\text{kW} - 6.8\,\text{kW} = 10.45\,\text{kW}$
-**Answer:** In the answer box $10.5\,\text{kW}$, one decimal like the powers in the table. a) The peak power is at $19\text{–}20$.
+**Answer:** In the answer box $10.4\,\text{kW}$, one decimal like the powers in the table. The power may be at most $10.45\,\text{kW}$, so the limit is rounded down. a) The peak power is at $19\text{–}20$.
 
-b) The power of the station may be at most $10.5\,\text{kW}$ during the peak.
+b) The power of the station may be at most $10.4\,\text{kW}$ during the peak.
 
 c) The station may use the full power $11\,\text{kW}$ when the power of the house is at most $17.25\,\text{kW} - 11\,\text{kW} = 6.25\,\text{kW}$. In the table only $19\text{–}20$ exceeds this ($6.8\,\text{kW}$), so in the other hours no load management is needed under this assumption (the power of the house stays at the table value for an hour), but at $19\text{–}20$ the station has to be limited. In reality, peaks within the hour may require load management.
-**Reasonableness:** Current during the peak: house $6800\,\text{W} : 690\,\text{V} \approx 9.9\,\text{A}$ and station $10\,450\,\text{W} : 690\,\text{V} \approx 15.1\,\text{A}$ in each phase, together $25.0\,\text{A}$, exactly the limit of the main fuse. The result is smaller than the $11\,\text{kW}$ of the station, as it should be during the peak.
+**Reasonableness:** Current during the peak: house $6800\,\text{W} : 690\,\text{V} \approx 9.9\,\text{A}$ and station $10\,400\,\text{W} : 690\,\text{V} \approx 15.1\,\text{A}$ in each phase, together about $24.9\,\text{A}$, just under the limit of the main fuse. The result is smaller than the $11\,\text{kW}$ of the station, as it should be during the peak.
 
 ## fy6-16-L2-06
 **Given:** energy of the battery $60\,\text{kWh}$, charge level $20\,\% \to 80\,\%$, power taken from the grid $P = 7.4\,\text{kW}$, $\eta = 92\,\%$
@@ -224,9 +224,9 @@ that is, $t \approx 11\,\text{h}$. Losses make charging longer, so both are too 
 **Formula:** $W_\text{grid} = \dfrac{s}{100\,\text{km}} \cdot \dfrac{w}{\eta}$, $K_\text{e} = a W_\text{grid}$, $K_\text{p} = \dfrac{s}{100\,\text{km}} \cdot v b$ and $\Delta K = K_\text{p} - K_\text{e}$, where $w = 16.0\,\text{kWh}$ and $v = 6.50\,\textsf{l}$
 **Conversions:** $a_\text{home} = 15\,\text{c/kWh} = 0.15\,\text{€/kWh}$ and $\eta = 0.900$
 **Substitution:** The sum of the monthly distances is $s = 14\,640\,\text{km}$, so $s : 100\,\text{km} = 146.4$. Electric car: $W_\text{grid} = 146.4 \cdot 16.0\,\text{kWh} : 0.900 = 2602.7\,\text{kWh}$ and $K_\text{e} = 0.15\,\text{€/kWh} \cdot 2602.7\,\text{kWh} = 390.4\,\text{€}$. Petrol car: $K_\text{p} = 146.4 \cdot 6.50\,\textsf{l} \cdot 1.85\,\text{€/}\textsf{l} = 1760.5\,\text{€}$. The difference is $\Delta K = 1760.5\,\text{€} - 390.4\,\text{€} = 1370.1\,\text{€}$.
-**Answer:** In the answer box $1370\,\text{€}$, that is, rounded to ten euros, because the cost of electricity $390\,\text{€}$ is accurate to two significant figures. a) The yearly driving distance is $14\,640\,\text{km}$.
+**Answer:** In the answer box $1.37 \cdot 10^{3}\,\text{€}$, that is, rounded to ten euros, because the cost of electricity $390\,\text{€}$ is accurate to two significant figures. a) The yearly driving distance is $14\,640\,\text{km}$.
 
-b) The petrol car costs about $1370\,\text{€}$ more in a year.
+b) The petrol car costs about $1.37 \cdot 10^{3}\,\text{€}$ more in a year.
 
 c) With public charging $K_\text{e} = 0.45\,\text{€/kWh} \cdot 2602.7\,\text{kWh} = 1171.2\,\text{€}$, which is still less than the $1760.5\,\text{€}$ of the petrol car. The saving decreases to $1760.5\,\text{€} - 1171.2\,\text{€} = 589.3\,\text{€}$, that is, by about $780\,\text{€}$, but the electric car is still cheaper, because its energy consumption is small and its cost is about two thirds of the cost of the petrol car.
 **Reasonableness:** Estimate: $15\,000\,\text{km}$ is $150$ times $100\,\text{km}$. The electric car costs about $150 \cdot 2.7\,\text{€} \approx 400\,\text{€}$ ($100\,\text{km}$ costs $17.8\,\text{kWh} \cdot 0.15\,\text{€/kWh} \approx 2.7\,\text{€}$) and the petrol car $150 \cdot 12\,\text{€} = 1800\,\text{€}$ ($100\,\text{km}$ costs $6.5\,\textsf{l} \cdot 1.85\,\text{€/}\textsf{l} \approx 12\,\text{€}$), so the difference is about $1400\,\text{€}$. The energy taken from the grid, $17.8\,\text{kWh}$ per hundred kilometres, is larger than the $16.0\,\text{kWh}$ consumed from the battery, as it should be because of the losses.
@@ -238,7 +238,7 @@ c) With public charging $K_\text{e} = 0.45\,\text{€/kWh} \cdot 2602.7\,\text{k
 **Formula:** $P_\text{house} = 3UI_\text{house}$, so $I_\text{house} = \dfrac{P_\text{house}}{3U}$; $I_\text{house} + I_\text{s} \le I_\text{f}$, so $I_\text{s} = I_\text{f} - I_\text{house}$; $P_\text{cable} = \rho \dfrac{2l}{A} I^2$
 **Conversions:** $P_\text{house} = 6.0\,\text{kW} + 3.3\,\text{kW} + 1.8\,\text{kW} + 0.90\,\text{kW} = 12.0\,\text{kW} = 12\,000\,\text{W}$ and $A = 2.5\,\text{mm}^2 = 2.5 \cdot 10^{-6}\,\text{m}^2$
 **Substitution:** $I_\text{house} = \dfrac{12\,000\,\text{W}}{3 \cdot 230\,\text{V}} = 17.39\,\text{A}$ and $I_\text{s} = 25\,\text{A} - 17.39\,\text{A} = 7.609\,\text{A}$. The resistance of the cable is $R = 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \dfrac{2 \cdot 30\,\text{m}}{2.5 \cdot 10^{-6}\,\text{m}^2} = 0.408\,\Omega$, so $P_\text{cable} = 0.408\,\Omega \cdot (7.609\,\text{A})^2 = 23.6\,\text{W}$ and at a current of $16\,\text{A}$ $P_\text{cable} = 0.408\,\Omega \cdot (16\,\text{A})^2 = 104.4\,\text{W}$.
-**Answer:** In the answer box $7.6\,\text{A}$, two significant figures like the powers of the loads. a) The current of the house is $17\,\text{A}$ in each phase conductor.
+**Answer:** In the answer box $7.6\,\text{A}$, two significant figures like the powers of the loads. The current may be at most the calculated value, so the limit is rounded down. a) The current of the house is $17\,\text{A}$ in each phase conductor.
 
 b) The station may draw at most $7.6\,\text{A}$.
 

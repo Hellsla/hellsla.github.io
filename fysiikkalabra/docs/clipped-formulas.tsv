@@ -2122,7 +2122,6 @@ fi-easy/fy6-11	3000\,\text{V} : 0{,}0075\,\text{m} = 4{,}0 \cdot 10^{5}\,\text{V
 fi-easy/fy6-11	60{,}2\,\mu\text{N} + 59{,}8\,\mu\text{N} + 59{,}5\,\mu\text{N} + 59{,
 fi-easy/fy6-11	66{,}7 \cdot 10^{-6}\,\text{N} \cdot 0{,}060\,\text{m} : (2{,}0 \cdot 
 fi-easy/fy6-11	8{,}0 \cdot 10^{-9}\,\text{C} \cdot 15\,000\,\text{V} : 0{,}050\,\text
-fi-easy/fy6-11	91\,\mu\text{N} : 3{,}0\,\text{nC} \approx 3{,}0 \cdot 10^{4}\,\text{N
 fi-easy/fy6-11	= 1{,}33 \cdot 10^{4}\,\text{m/s}^2 \cdot 5{,}0 \cdot 10^{-4}\,\text{s
 fi-easy/fy6-11	= 2{,}0 \cdot 10^{-3}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot \tan
 fi-easy/fy6-11	= \dfrac{1}{2} \cdot 1{,}33 \cdot 10^{4}\,\text{m/s}^2 \cdot (5{,}0 \c
@@ -2286,7 +2285,6 @@ fi-easy/fy6-9	3{,}70\,\text{V} + 0{,}10\,\Omega \cdot 0{,}50\,\text{A} = 3{,}75\
 fi-easy/fy6-9	9{,}3225\,\text{Wh} : 2{,}5\,\text{Ah} \approx 3{,}73\,\text{V}
 fi-easy/fy6-9	9{,}62\,\text{Wh} : 11{,}0\,\text{Wh} \approx 87{,}5\,\%
 fi-easy/fy6-9	= (14{,}4\,\text{V} - 12{,}6\,\text{V}) : (0{,}25\,\Omega + 0{,}050\,\
-fi-easy/fy6-9	= (4{,}2\,\text{V} - 3{,}7\,\text{V}) \cdot 2{,}0\,\text{A} \cdot 1{,}
 fi-easy/fy6-9	= 2{,}0\,\text{A} \cdot 1{,}0\,\text{h} + 1{,}5\,\text{A} \cdot 2{,}0\
 fi-easy/fy6-9	= I\,\Delta t\,(U_{1,\text{ka}} + U_{2,\text{ka}} + \dots + U_{5,\text
 fi-easy/fy6-9	I = (14{,}0\,\text{V} - 12{,}4\,\text{V}) : 0{,}40\,\Omega = 4{,}0\,\t
@@ -3358,7 +3356,6 @@ fy6-11	3000\,\text{V} : 0{,}0075\,\text{m} = 4{,}0 \cdot 10^{5}\,\text{V/m}
 fy6-11	60{,}2\,\mu\text{N} + 59{,}8\,\mu\text{N} + 59{,}5\,\mu\text{N} + 59{,
 fy6-11	66{,}7 \cdot 10^{-6}\,\text{N} \cdot 0{,}060\,\text{m} : (2{,}0 \cdot 
 fy6-11	8{,}0 \cdot 10^{-9}\,\text{C} \cdot 15\,000\,\text{V} : 0{,}050\,\text
-fy6-11	91\,\mu\text{N} : 3{,}0\,\text{nC} \approx 3{,}0 \cdot 10^{4}\,\text{N
 fy6-11	= 1{,}33 \cdot 10^{4}\,\text{m/s}^2 \cdot 5{,}0 \cdot 10^{-4}\,\text{s
 fy6-11	= 2{,}0 \cdot 10^{-3}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot \tan
 fy6-11	= \dfrac{1}{2} \cdot 1{,}33 \cdot 10^{4}\,\text{m/s}^2 \cdot (5{,}0 \c
@@ -3522,7 +3519,6 @@ fy6-9	3{,}70\,\text{V} + 0{,}10\,\Omega \cdot 0{,}50\,\text{A} = 3{,}75\,\te
 fy6-9	9{,}3225\,\text{Wh} : 2{,}5\,\text{Ah} \approx 3{,}73\,\text{V}
 fy6-9	9{,}62\,\text{Wh} : 11{,}0\,\text{Wh} \approx 87{,}5\,\%
 fy6-9	= (14{,}4\,\text{V} - 12{,}6\,\text{V}) : (0{,}25\,\Omega + 0{,}050\,\
-fy6-9	= (4{,}2\,\text{V} - 3{,}7\,\text{V}) \cdot 2{,}0\,\text{A} \cdot 1{,}
 fy6-9	= 2{,}0\,\text{A} \cdot 1{,}0\,\text{h} + 1{,}5\,\text{A} \cdot 2{,}0\
 fy6-9	= I\,\Delta t\,(U_{1,\text{ka}} + U_{2,\text{ka}} + \dots + U_{5,\text
 fy6-9	I = (14{,}0\,\text{V} - 12{,}4\,\text{V}) : 0{,}40\,\Omega = 4{,}0\,\t

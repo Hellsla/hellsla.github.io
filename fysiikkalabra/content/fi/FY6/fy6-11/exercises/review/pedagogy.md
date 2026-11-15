@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6c0936636b690650
-SCOPE: delta added-exercise from 5e217585a15dde17 base 8f23aa7ae3bd
+CONTENT-HASH: b380572990b00c2b
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- exercises.json (fy6-11-L1-09) — the task says "läpilyöntikestävyys" (the MAFY table's word) while the course's LOPS term is "läpilyöntilujuus"; if the glossary names one, use it once with the other in brackets, e.g. "ilman läpilyöntilujuus (MAFY: läpilyöntikestävyys)".
+- Pisarakoe L-task, Vastaus — $338\,\text{V}$ rests on reading $450\,\text{V}$ as three figures; add "jännite $450\,\text{V}$ on annettu kolmen numeron tarkkuudella" if that is the intent.
+- Charged-ball task, Järkevyys — $mg\tan 10^\circ \approx 0{,}18 \cdot 0{,}020\,\text{N} = 3{,}6\,\text{mN}$ now differs from the $3{,}459 \cdot 10^{-3}\,\text{N}$ above (rounded factors); write "$\approx 3{,}5\,\text{mN}$" or keep $0{,}176$.
 
 ## Checked
-- Text only (no render) of the added fy6-11-L1-09.
-- Level 1: one lookup (3,0 kV/mm, MAFY *Eristeiden läpilyöntikestävyyksiä*, hinted) and one formula U = Ed; 3,0 · 2,5 = 7,5 kV recomputed, matches answer and tolerance.
-- Situation first, question last as its own sentence; a spark between plates is an everyday, recognisable context; no unprepared trap (the lesson teaches E = U : d, homogeneous field between plates).
-- Solution has all seven parts, the unit cancellation kV/mm · mm = kV is explained, and the check (about 3 kV per millimetre) is sensible.
-- Fits the set: differs from L1-03 and L1-08 (given U, d or E, find the other) by the table lookup; no repeat of the worked example or of other tasks; adds the safety-related breakdown goal of the course.
-- Finnish and case after number+unit ($2{,}5\,\text{mm}$:n) correct.
-- Hash unchanged at the start and end.
+- $1{,}0 \cdot 10^{2}\,\mu\text{N}$ and $4{,}2 \cdot 10^{3}\,\text{km/s}$ are unambiguous two-figure forms.
+- "Vaakanopeudella ... pisara kulkee levyjen ohi" is clearer Finnish than before.
+- Principle, steps and checks intact.

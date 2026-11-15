@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6c0936636b690650
-SCOPE: delta added-exercise from 5e217585a15dde17 base 8f23aa7ae3bd
+CONTENT-HASH: da2d3460a1185a8f
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] fy6-11-L1-09 Kaava — the symbol E is the field strength and also stands for the breakdown strength in Annettu; fine as is, but "läpilyöntikestävyys" could carry its own symbol $E_\text{max}$ so the Periaate line reads "kun $E = E_\text{max}$".
+- none
 
 ## Checked
-- review/shots/fy6-11-open-exercises-1280-9.png (and -8.png for the neighbouring task 11-8, stamp hash 6c0936636b690650): task 11-9 (L1-09) with hint, answer row and the open solution, Annettu to Järkevyys.
-- Typography: fraction, unit conversion by words, units upright, colon for division, case ending after the maths ($2{,}5\,\text{mm}$:n); the task is situation first, question last; the set still reads as one.
+- Delta (calculation chains re-broken into inline aligned blocks, same numbers, signs and units). Opened content/fi/FY6/fy6-11/review/shots/fy6-11-open-exercises-1280-5.png (L1-05 Järkevyys "91 µN : 3,0 nC ≈ 3,0·10⁴ N/C", plus its fraction Sijoitus) and fy6-11-open-exercises-L3-1280-3.png (L3-02 v = √(2 · 8,794·10¹⁴ m/s² · 0,010 m) = 4,19·10⁶ m/s, with the a and E blocks above).
+- The root sign spans the whole radicand, `=` rows are aligned, nothing clipped, units upright with thin space, Vastaus and Järkevyys blocks intact.
+- No 360/390 px capture shows an opened solution, so phone wrapping rests on the passing check_layout 360 px result in the packet.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
