@@ -58,6 +58,10 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
     and search (17f). Order: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, then 17f PR 3, 17a PR 3,
     17b PR 2; 17c PR 2 course by course with content changes, 17d PR 2 after queue 11b PR 4. Nearly every part changes
     shared files, so one at a time. The order is a proposal that the teacher approves by merging this pull request.
+18. Proofreading corrections in FY1–FY9 (queue 18, teacher 2026-11-15, `docs/audits/2026-11-15-oikoluku.md`,
+    decisions P1–P9): every chapter, course by course, no pilot stop; delta reviews of the changed passages only. The
+    shared part (curriculum, glossary, rules, `physics_phrases.py`) goes with step 8m and merges first; each course
+    starts once 8m and that course's clipped-formula fixes (5d) are on main.
 
 Area D waits for the teacher's decision on which plan (FY10, Dronelabra, others) is approved for building.
 

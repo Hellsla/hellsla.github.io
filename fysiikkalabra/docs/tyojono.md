@@ -279,6 +279,12 @@ lepokitkakerroin. Yhtenäistetään nykyiset muodot (esim. "suurin lepokitka", "
 friction / maximum (fully developed) static friction. Esiintymiä fi:ssä
 noin 190 (FY4 17 tiedostoa, FY5 2, FY9 6). Merkitys ei muutu, mutta teksti muuttuu, joten katselmointi `reviews.py scope`n
 mukaan. Jaettu (glossary.json), ajetaan yksin. FY9:n osuus tehdään tunnistuskaavioiden kanssa (9c, #602).
+Samaan jaettuun PR:ään oikoluvun kohdan 3 yhteiset muutokset (`docs/audits/2026-11-15-oikoluku.md`, opettaja
+2026-11-15): `curriculum.json` (fy5-5 ja fy5-6 gravitaatiokentän voimakkuus syventävänä, fy7-15 Malusin ja Brewsterin
+lait syventävänä, FY7-kokeen "määrittäminen", FY8 "LOPS 2019"), `kortit/fy4.json` (id:t eivät muutu),
+`docs/fy7/kaavanimet.tsv` (P6, `kaavat.py write`), säännöt P1, P7, P8 ja P9 `CLAUDE.md`:hen, NOTES.md:hen ja
+`docs/physics-guardrails.md`:hen sekä `scripts/physics_phrases.py`:n varoitukset ("muuttuu/jää lämmöksi" FY3–FY9,
+"liikekitka") testeineen. Lukujen tekstit korjataan kohdassa 18.
 
 ## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
 
@@ -495,6 +501,17 @@ hyväksyy ne yhdistämällä. Tallennusavaimia, tiedostomuotoja ja korttien id:i
 - **17f Hakemistot ja haku:** PR 1 kaavahakemisto, PR 2 simulaatiogalleria, PR 3 koko sivuston haku.
 
 Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2.
+
+## 18. Oikoluvun korjaukset FY1–FY9 (opettaja 2026-11-15)
+
+Ohjeet ja päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md` kohdat 4–11 ja 13. Kaikki luvut, kurssi kerrallaan,
+ilman pilottipysähdystä (opettaja: "kaikki luvut vaan, ei ongelma jos tokeneita menee"); kulutus raportoidaan, mutta
+budjetti ei pysäytä työtä. Katselmointi on delta-katselmointi vain muuttuneista kohdista; jos `reviews.py scope` vaatii
+täyden katselmoinnin, työntekijä kertoo koordinaattorille ennen ajoa. Kurssin kaikki korjaukset (väitteet,
+merkitsevät numerot, termit, "lämmöksi", likiarvorivit, kieli) samalla kierroksella (P2), myös tehtävänannot,
+inquiry.json, kuvien tekstit ja käännökset. Kurssi aloitetaan, kun kohta 8m on yhdistetty ja kurssin kohdan 5d
+leikkautuvat kaavat ovat mainissa (FY8 odottaa #601:tä). Avoin kohta 12 ratkesi päätöksellä P9: pieniä arvoeroja ei
+muuteta. Yksi kurssi = yksi haara ja yksi PR; enintään kolme kurssia yhtä aikaa.
 
 ## Kirjattu päätös: teorian taitto, vaihtoehto B (opettaja 2026-11-14)
 
