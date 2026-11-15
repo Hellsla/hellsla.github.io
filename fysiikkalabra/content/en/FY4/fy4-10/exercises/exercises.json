@@ -142,7 +142,7 @@
    "unit": "%",
    "tolerance": 0.03,
    "data": {
-    "caption": "Velocities of the carts on both sides of the collision (example data)",
+    "caption": "Velocities of the carts on both sides of the collision",
     "columns": [
      "Experiment",
      "$v_\\text{A}\\,(\\text{m/s})$",
@@ -187,7 +187,7 @@
    "unit": "%",
    "tolerance": 0.05,
    "data": {
-    "caption": "Positions of the carts (example data)",
+    "caption": "Positions of the carts",
     "columns": [
      "$t\\,(\\text{s})$",
      "$x_\\text{A}\\,(\\text{m})$",
@@ -325,7 +325,7 @@
    "unit": "N",
    "tolerance": 0.05,
    "data": {
-    "caption": "Velocity of the carts sliding together (example data)",
+    "caption": "Velocity of the carts sliding together",
     "columns": [
      "$t\\,(\\text{s})$",
      "$v\\,(\\text{m/s})$"

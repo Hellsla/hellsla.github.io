@@ -212,7 +212,7 @@
       "unit": "m/s",
       "tolerance": 0.04,
       "data": {
-        "caption": "Position of the leading edge of the pulse (example data)",
+        "caption": "Position of the leading edge of the pulse",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x\\,(\\text{m})$"
@@ -269,7 +269,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Distance between the microphones and travel time (example data)",
+        "caption": "Distance between the microphones and travel time",
         "columns": [
           "$d\\,(\\text{m})$",
           "$\\Delta t\\,(\\text{ms})$"
@@ -344,7 +344,7 @@
       "unit": "m",
       "tolerance": 0.04,
       "data": {
-        "caption": "Travel time of the pulse as a function of tension (example data)",
+        "caption": "Travel time of the pulse as a function of tension",
         "columns": [
           "$F\\,(\\text{N})$",
           "$t\\,(\\text{s})$"
@@ -381,7 +381,7 @@
       "unit": "s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Parts of the rope (example data)",
+        "caption": "Parts of the rope",
         "columns": [
           "Part",
           "$L\\,(\\text{m})$",

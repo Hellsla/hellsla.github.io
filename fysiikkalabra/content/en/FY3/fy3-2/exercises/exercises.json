@@ -169,7 +169,7 @@
       "unit": "J",
       "tolerance": 0.02,
       "data": {
-        "caption": "Force pulling a cart as a function of distance (example data set)",
+        "caption": "Force pulling a cart as a function of distance",
         "columns": [
           "$s\\,(\\text{m})$",
           "$F\\,(\\text{N})$"
@@ -211,7 +211,7 @@
       "unit": "W",
       "tolerance": 0.02,
       "data": {
-        "caption": "Stair climbing times (example data set)",
+        "caption": "Stair climbing times",
         "columns": [
           "Climb",
           "$t\\,(\\text{s})$"
@@ -337,7 +337,7 @@
       "unit": "cm",
       "tolerance": 0.03,
       "data": {
-        "caption": "Stretching force of a spring as a function of extension (example data set)",
+        "caption": "Stretching force of a spring as a function of extension",
         "columns": [
           "$s\\,(\\text{cm})$",
           "$F\\,(\\text{N})$"
@@ -379,7 +379,7 @@
       "unit": "kW",
       "tolerance": 0.03,
       "data": {
-        "caption": "Height of the lifted load (example data set)",
+        "caption": "Height of the lifted load",
         "columns": [
           "$t\\,(\\text{s})$",
           "$h\\,(\\text{m})$"

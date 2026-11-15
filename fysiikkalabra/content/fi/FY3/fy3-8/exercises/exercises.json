@@ -173,7 +173,7 @@
       "unit": "10⁻⁶ 1/K",
       "tolerance": 0.04,
       "data": {
-        "caption": "$1{,}000\\,\\text{kg}$ veden tilavuus (esimerkkiaineisto)",
+        "caption": "$1{,}000\\,\\text{kg}$ veden tilavuus",
         "columns": [
           "$T\\,({}^\\circ\\text{C})$",
           "$V\\,(\\text{dm}^3)$"
@@ -219,7 +219,7 @@
       "unit": "10⁻⁶ 1/K",
       "tolerance": 0.03,
       "data": {
-        "caption": "Metallisauvan pituuden muutos (esimerkkiaineisto)",
+        "caption": "Metallisauvan pituuden muutos",
         "columns": [
           "$T\\,({}^\\circ\\text{C})$",
           "$\\Delta l\\,(\\text{mm})$"
@@ -347,7 +347,7 @@
       "unit": "mm",
       "tolerance": 0.03,
       "data": {
-        "caption": "Kiskon lämpötilat (esimerkkiaineisto)",
+        "caption": "Kiskon lämpötilat",
         "columns": [
           "Tilanne",
           "$T\\,({}^\\circ\\text{C})$"

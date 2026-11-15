@@ -136,7 +136,7 @@
       "unit": "mm",
       "tolerance": 0.07,
       "data": {
-        "caption": "Langattoman laturin hyötysuhde etäisyyden funktiona (esimerkkiaineisto)",
+        "caption": "Langattoman laturin hyötysuhde etäisyyden funktiona",
         "columns": [
           "$d\\,(\\text{mm})$",
           "$\\eta\\,(\\%)$"
@@ -182,7 +182,7 @@
       "unit": "dB/km",
       "tolerance": 0.04,
       "data": {
-        "caption": "Kuidun läpi tullut teho (esimerkkiaineisto)",
+        "caption": "Kuidun läpi tullut teho",
         "columns": [
           "$L\\,(\\text{km})$",
           "$P\\,(\\mu\\text{W})$"
@@ -319,7 +319,7 @@
       "unit": "mm",
       "tolerance": 0.05,
       "data": {
-        "caption": "Käämin jännite etäisyyden funktiona (esimerkkiaineisto)",
+        "caption": "Käämin jännite etäisyyden funktiona",
         "columns": [
           "$d\\,(\\text{mm})$",
           "$e_0\\,(\\text{V})$"
@@ -361,7 +361,7 @@
       "unit": "kHz",
       "tolerance": 0.03,
       "data": {
-        "caption": "Kattilan pohjan silmukan resistanssi (esimerkkiaineisto)",
+        "caption": "Kattilan pohjan silmukan resistanssi",
         "columns": [
           "Kattila",
           "$R\\,(\\Omega)$"

@@ -170,7 +170,7 @@
       "unit": "kPa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Air pressure in vessel A and volume in vessel B (example data)",
+        "caption": "Air pressure in vessel A and volume in vessel B",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p_\\text{A}\\,(\\text{kPa})$",
@@ -212,7 +212,7 @@
       "unit": "ml",
       "tolerance": 0.1,
       "data": {
-        "caption": "Air pressure as a function of the volume of the syringe (example data)",
+        "caption": "Air pressure as a function of the volume of the syringe",
         "columns": [
           "$V\\,(\\text{ml})$",
           "$p\\,(\\text{kPa})$"
@@ -250,7 +250,7 @@
       "unit": "°C",
       "tolerance": 0.03,
       "data": {
-        "caption": "Air pressure in a rigid bottle (example data)",
+        "caption": "Air pressure in a rigid bottle",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p\\,(\\text{kPa})$"
@@ -365,7 +365,7 @@
       "unit": "°C",
       "tolerance": 0.03,
       "data": {
-        "caption": "Air pressure in slow and fast compression (example data)",
+        "caption": "Air pressure in slow and fast compression",
         "columns": [
           "$V\\,(\\text{ml})$",
           "$p_\\text{slow}\\,(\\text{kPa})$",
@@ -408,7 +408,7 @@
       "unit": "m",
       "tolerance": 0.05,
       "data": {
-        "caption": "Volume of air in a freediver's lungs (example data)",
+        "caption": "Volume of air in a freediver's lungs",
         "columns": [
           "$h\\,(\\text{m})$",
           "$V\\,(\\textsf{l})$"

@@ -162,7 +162,7 @@
         "experiment"
       ],
       "data": {
-        "caption": "Jousen venymä punnuksen massan funktiona (esimerkkiaineisto)",
+        "caption": "Jousen venymä punnuksen massan funktiona",
         "columns": [
           "$m\\,(\\text{g})$",
           "$x\\,(\\text{cm})$"
@@ -227,7 +227,7 @@
         "experiment"
       ],
       "data": {
-        "caption": "Jousen mittaus (esimerkkiaineisto)",
+        "caption": "Jousen mittaus",
         "columns": [
           "$x\\,(\\text{cm})$",
           "$F_\\text{v}\\,(\\text{N})$"
@@ -316,7 +316,7 @@
         "reasoning"
       ],
       "data": {
-        "caption": "Kuminauhan venyttäminen (esimerkkiaineisto)",
+        "caption": "Kuminauhan venyttäminen",
         "columns": [
           "$x\\,(\\text{cm})$",
           "$F_\\text{v}\\,(\\text{N})$"
@@ -354,7 +354,7 @@
         "reasoning"
       ],
       "data": {
-        "caption": "Jänteen vetovoima vetomatkan funktiona (esimerkkiaineisto)",
+        "caption": "Jänteen vetovoima vetomatkan funktiona",
         "columns": [
           "$x\\,(\\text{cm})$",
           "$F_\\text{v}\\,(\\text{N})$"

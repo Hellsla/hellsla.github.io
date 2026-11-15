@@ -165,7 +165,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Taputuksen jälkeinen äänitaso (esimerkkiaineisto)",
+        "caption": "Taputuksen jälkeinen äänitaso",
         "columns": [
           "$t\\,(\\text{s})$",
           "$L_\\text{ennen}\\,(\\text{dB})$",
@@ -213,7 +213,7 @@
       "unit": "dB",
       "tolerance": 0.03,
       "data": {
-        "caption": "Taso ilman estettä ja esteen takana (esimerkkiaineisto)",
+        "caption": "Taso ilman estettä ja esteen takana",
         "columns": [
           "$f\\,(\\text{Hz})$",
           "$L_\\text{ilman}\\,(\\text{dB})$",
@@ -267,7 +267,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Melutaso (esimerkkiaineisto)",
+        "caption": "Melutaso",
         "columns": [
           "$r\\,(\\text{m})$",
           "$L\\,(\\text{dB})$"
@@ -359,7 +359,7 @@
       "unit": "dB",
       "tolerance": 0.03,
       "data": {
-        "caption": "Melutaso ja kesto työvaiheittain (esimerkkiaineisto)",
+        "caption": "Melutaso ja kesto työvaiheittain",
         "columns": [
           "Työvaihe",
           "$L\\,(\\text{dB})$",

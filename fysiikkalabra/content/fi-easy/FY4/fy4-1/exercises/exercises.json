@@ -216,7 +216,7 @@
       "unit": "m/s",
       "tolerance": 0.04,
       "data": {
-        "caption": "Kärryn paikka videoanalyysissä (esimerkkiaineisto)",
+        "caption": "Kärryn paikka videoanalyysissä",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x\\,(\\text{m})$"
@@ -262,7 +262,7 @@
       "unit": "s",
       "tolerance": 0.04,
       "data": {
-        "caption": "Kärryjen A ja B paikat (esimerkkiaineisto)",
+        "caption": "Kärryjen A ja B paikat",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x_\\text{A}\\,(\\text{m})$",
@@ -309,7 +309,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Robotin paikka (esimerkkiaineisto)",
+        "caption": "Robotin paikka",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x\\,(\\text{m})$"
@@ -395,7 +395,7 @@
       "unit": "m/s",
       "tolerance": 0.04,
       "data": {
-        "caption": "Kärryn paikka ohjelman asteikolla (esimerkkiaineisto)",
+        "caption": "Kärryn paikka ohjelman asteikolla",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x_\\text{ohj}\\,(\\text{m})$"
@@ -441,7 +441,7 @@
       "unit": "m",
       "tolerance": 0.03,
       "data": {
-        "caption": "Rekan paikka (esimerkkiaineisto)",
+        "caption": "Rekan paikka",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x\\,(\\text{m})$"
