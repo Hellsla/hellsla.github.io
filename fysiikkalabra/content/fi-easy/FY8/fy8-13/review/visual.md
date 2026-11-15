@@ -1,11 +1,11 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: 77dfaf74f9ed879e
 
 ## Blocking
-- [Major] lesson.md, inquiry.json, solutions.md (the lifted formulas) — the formula was set as `$$...$$` in the middle of a sentence, so the sentence's closing punctuation (". ", ", ") lands alone at the start of the line after the display block (seen in fy8-1 theory-1280-2 and -3: a lone "." line under the block; ". Tavallinen 365 nm:n UV-A-lamppu..." begins with a full stop). The sentence is broken, and a student reads a stray dot — Fix: close the lead-in sentence before the display (end it with a colon or let the formula stand as its own unit: "Siksi:" / block / next sentence starting with a capital), and put any trailing words after the block in a new sentence; no punctuation may start a line.
+- none
 
 ## Polish
-- [Minor] The aligned blocks themselves (rows, = and ≈ in one column, units upright, thin spaces) read well at 1280 px; the 360 px check is for check_layout.
+- [Minor] stage rows with a lone unit continuation row (e.g. "· 2,998 · 10^8 m/s" in fy8-4) could join the "=" column; existing layout, not a regression.
 
 ## Checked
-- batch delta review: fy8-1 theory-1280-2, theory-1280-3 opened (the defect is seen there); the same `$$` + punctuation pattern found by grep in this lesson's changed lines (lesson.md, inquiry.json or solutions.md); other captures not individually opened.
+- batch delta review, round 2: opened stage-sovella-390-1 and stage-selita-390-5 (lifted formulas); the lifted formulas carry their closing mark inside the last row, no lone mark, rows aligned and unclipped. Not every capture of this lesson was opened; the rest is judged from the same shared build (mathlayout.with_punct).
