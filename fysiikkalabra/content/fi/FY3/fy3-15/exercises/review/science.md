@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 48e582d57b684a1c
+CONTENT-HASH: 3982956434865159
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Hash at start and end: 48e582d57b684a1c.
-- The round-1 polish item is fixed. In the L1-04 Vastaus (solutions.md:39) and the L2-09 Kuvaajan lukeminen and Vastaus, "tarkasti ruudukon viivoilla" now names only the bars P₁ and P₂. The L1-04 reading line says P_o, P₁ and P₂ are on gridlines, which is true (400, 350 and 150 MW, with a 50 MW step). It says P₃ ≈ 140 MW lies below 150, which matches `chain-bars`.
-- The three-figure justification now rests only on the two bars that are exactly on gridlines. This holds for both 200 MW and η₂ = 150/350 = 42,86 % → 42,9 %. The independent chain check (0,875 · 0,4286 · 0,933 = 0,350 = 140/400) is right.
-- I recomputed all 21 numeric answers in one script with my own formulas: chain η = η₁η₂η₃, P_h = P_o − P_a, η_kok = (P_s + P_k)/P_o, P_L = c q_m ΔT, and the fuel mass flow from P_o/H. Every one agrees with answers.py and lies inside its tolerance.
-- L2-08: P_L = 4190 · 12 000 · 10 W = 503 MW, so the 500 MW option is correct. The distractors' values match the mistakes their feedback names.
-- L3-01: P_s = 205,5 MW and η_kok = 67,6 %. L3-04: option A needs 472,2 MW and option B 340,3 MW, so the difference is 131,9 MW. L3-05: the mean ΔT is 10,775 K, so P_L = 1716 MW, which is below P_h = 1800 MW.
-- L3-02 gives 13,64 kt and L3-03 gives 87,7 kWh. L1-09 with the MAFY value c = 4,182 kJ/(kg·K) gives 13,4 MW, inside the 4 % tolerance.
-- The significant-figure reasons in the Vastaus lines match the limiting data.
-- L1-06: exactly one option is correct, and the CHP mechanism and energy wording follow the guardrails.
+- The hash was 3982956434865159 at the start and the end.
+- Delta (fy3-15-L3-05): in d) of the exercises.json text, "ei voi enää tuottaa sähköä" became "ei voi enää käytännössä tuottaa sähköä". The Järkevyys line of solutions.md now adds that at so small a temperature difference the largest possible efficiency is only a few percent.
+- "käytännössä" is the correct qualifier. Low-grade heat is not unusable in principle; it is only uneconomic, and the round-1 wording claimed too much. The added limit names the real reason, which agrees with the guardrail that a heat engine cannot turn all of its heat into work.
+- I recomputed the bound from the task's own data in one script. The monthly outlet temperatures 12,1 / 14,2 / 28,4 / 23,2 °C and rises of 10,9 / 10,7 / 10,6 / 10,9 K give 1 − T_c/T_h = 3,5–3,8 %. For a stream that cools as it gives off heat the bound is about half that. "muutama prosentti" is therefore right as an upper limit.
+- The same script gives the unchanged numbers again: ΔT_ka = 10,775 K, P_L = 4190 · 38 000 · 10,775 W = 1716 MW (answer 1720 MW, answers.py 1716, tolerance 2 %), P_h = 1800 MW, share 95 %, remainder 84 MW.
+- The sentence keeps energy conservation explicit: the energy "ei ole kadonnut vaan lämmittää merta". No number, symbol or answer changed.
+- Scope: the limit is stated as a fact in the reasonableness check. The student is not asked to compute it, so the task stays within FY3 and its prerequisite chapter on the heat engine.
