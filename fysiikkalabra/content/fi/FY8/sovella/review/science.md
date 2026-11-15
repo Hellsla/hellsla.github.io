@@ -10,13 +10,10 @@ CONTENT-HASH: 728e3c7733d30aee
 - fy8-s3 a, conclusion criterion: "todennäköisin syy" is not asked ("Mitä kuvaajasta voi päätellä?"); the model answer rightly says "esimerkiksi". Word the criterion the same way.
 - fy8-s3 d: $r \approx 36\,\text{cm}$ is an extrapolation past the measured range ($2$–$20\,\text{cm}$); say so in one clause (guardrail "Fits").
 - Rounding reason missing in the answers of fy8-s1 b ($\approx 1200$ from "noin $5\,\text{keV}$"), s1 d, s2 d ($1790\,\text{W}$ from $14\,\text{a}$: three figures are generous) and s3 d.
-- fy8-s1 b Järkevyys: "synnyttää satoja fotoneja, mikä selittää, miksi revontulet ovat kirkkaita" is not supported by the calculation (an upper bound for one level); soften.
 
 ## Checked
-- Recomputed every number from the task text with an own script; all agree with tasks.json, solutions.md and answers.py: s1 $2{,}22$ / $1{,}97\,\text{eV}$, $296\,\text{nm}$, $1193$, $1107\,\text{nm}$, $0{,}83\,\text{eV}$; s2 $Q = 5{,}594\,\text{MeV}$, $A = 2{,}23 \cdot 10^{15}\,\text{Bq}$, $3{,}52\,\text{kg}$, $83\,\%$, $1791\,\text{W}$, $98{,}5\,\text{W}$, $0{,}566\,\text{mSv}$, Po $0{,}16$, U ratio $5{,}1 \cdot 10^{7}$ (hundreds of millions of kg holds); s3 net rates, $Rr^2$, least-squares $d = 1{,}31\,\text{cm}$, read line $k = 5{,}63 \cdot 10^{-3}$, $K = 3{,}15 \cdot 10^{4}$, $36{,}2\,\text{cm}$, $0{,}23$ and $0{,}27\,\mu\text{Sv/h}$, $\pm 9{,}9$ ($14\,\%$), $6\,\%$; s4 $0{,}782\,\text{MeV}$, $7{,}16$, $0{,}8575$, $135$ / $136\,\text{s}$, $1:5 \to 271\,\text{s}$; s5 $3{,}67\,\%$, $3{,}49\,\text{a}$, $4{,}7 \cdot 10^{17}\,\text{J}$, $5{,}8\,\text{t}$, $83\,000$.
-- Points: every part's criteria sum to its points (15, 20, 17, 16, 16).
-- Physics and models: transitions and lifetimes of O I, collisional quenching, photon-energy threshold; atomic masses with electrons cancelling; $A = \lambda N$, decay law, dose chain $D \to H_\text{T} \to H_\text{E}$ with stated assumptions; inverse-square with detector offset and its linearisation, counting statistics; neutron decay, quark change, helium mass fraction model with assumptions named; Oklo enrichment back-calculation, moderator feedback, Pu-239 → U-235.
-- Source data plausible (NIST, AME2020, MMRTG, PDG, STUK $5{,}9\,\text{mSv}$, OL3 $4300\,\text{MW}$, Oklo 15 GW·a); s3 data declared as generated, not measured.
-- Scope: inside FY8 central contents; no de Broglie, no later-course physics.
-- Figures: levels to scale; both s3 graphs drawn from the task data, origin line and read points agree with the solution.
-- Hyväksytään myös covers alternative methods; their numbers ($559$ / $629\,\text{nm}$, $0{,}56\,\text{mSv}$, $0{,}038$) recomputed.
+- Own script recomputed every number from the task text; all agree with tasks.json, solutions.md and answers.py (s1 296 nm, 1193, 1107 nm; s2 5,594 MeV, 3,52 kg, 83 %, 1791 W, 98,5 W, 0,566 mSv; s3 d = 1,31 cm by least squares, 36,2 cm, 0,23 µSv/h; s4 7,16, 136 s, 271 s; s5 3,67 %, 3,49 a, 83 000), alternative-method numbers included.
+- Criteria sum to each part's points (15, 20, 17, 16, 16).
+- Models and stated assumptions in all five tasks: correct; no A findings.
+- Source values plausible; s3 data declared generated. Scope inside FY8, no de Broglie.
+- Figures: levels to scale; s3 graphs match the data and the solution's read points.

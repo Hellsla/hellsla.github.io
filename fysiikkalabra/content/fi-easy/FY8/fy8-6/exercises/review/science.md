@@ -3,7 +3,7 @@ CONTENT-HASH: 6ef02eec981df84d
 Mode: full (round 1)
 
 ## Blocking
-- solutions.md:101 (L2-01) and solutions.md:286 (L2-06) — **B**: "Mitattu kynnysjännite on yleensä noin 0,1 V tätä arviota pienempi" / "kynnysjännite on yleensä noin 0,1 V pienempi kuin hf/e" state the 0,1 V gap as a general property of LEDs. The lesson says the opposite in so many words: the gap is about 0,1 V in this chapter's data sets, "ei yleispätevä arvo", and it varies from LED to LED. — Say what the lesson says: "yleensä hieman pienempi; tämän luvun aineistoissa ero on noin 0,1 V". (L2-06 line 287, L3-04 and L3-05 already tie the 0,1 V to the chapter or to the given calibration line and are fine.)
+- solutions.md:101 (L2-01) and solutions.md:286 (L2-06) — **B**: "Mitattu kynnysjännite on yleensä noin 0,1 V tätä arviota pienempi" / "kynnysjännite on yleensä noin 0,1 V pienempi kuin hf/e" state the 0,1 V gap as a general property of LEDs. The lesson says the opposite in so many words: the gap is about 0,1 V in this chapter's data sets, "ei yleispätevä arvo", and it varies from LED to LED. — Say what the lesson says: "yleensä hieman pienempi; tämän luvun aineistoissa ero on noin 0,1 V". (Line 287, L3-04 and L3-05 are fine.)
 
 ## Polish
 - exercises.json:71 and solutions.md:216 (L1-06) — "fotoneja ei synny lainkaan" below the threshold, while L2-05's table has 0,1–0,6 mA below U_k = 1,86 V and L2-06 says a current flows before the threshold — "ei juuri lainkaan", as the lesson's "ei juuri johda virtaa eikä säteile".
