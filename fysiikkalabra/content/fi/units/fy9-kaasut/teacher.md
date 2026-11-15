@@ -1,6 +1,11 @@
 ## Tuntisuunnitelma (75 min)
 
-- **0–5 min, Pohdinta.** Rengas lämpimässä tallissa ja pakkasyön jälkeen. Parit arvioivat ensin sanallisesti, nouseeko vai laskeeko mittarin lukema ja kuinka paljon. Vastausta ei anneta vielä: se on teoriatiivistelmän Ydinajatus-osan lopussa (kokonaispaine $331\,\text{kPa} \cdot 253\,\text{K} : 293\,\text{K} \approx 286\,\text{kPa}$, mittari noin $185\,\text{kPa}$). Kysy, kuka laski celsiusasteilla tai pelkällä mittarin lukemalla: ne ovat tunnin kaksi tärkeintä virhettä.
+- **0–5 min, Pohdinta.** Rengas lämpimässä tallissa ja pakkasyön jälkeen. Parit arvioivat ensin sanallisesti, nouseeko vai laskeeko mittarin lukema ja kuinka paljon. Vastausta ei anneta vielä: se on teoriatiivistelmän Ydinajatus-osan lopussa (kokonaispaine $$
+\begin{aligned}
+&331\,\text{kPa} \cdot 253\,\text{K} : 293\,\text{K} \\
+&\approx 286\,\text{kPa}
+\end{aligned}
+$$, mittari noin $185\,\text{kPa}$). Kysy, kuka laski celsiusasteilla tai pelkällä mittarin lukemalla: ne ovat tunnin kaksi tärkeintä virhettä.
 - **5–15 min, Ennusta (lähtötasotesti).** Kuusi kysymystä yksin, ilman muistiinpanoja. Opiskelijat kirjoittavat vihkoon väärin menneiden kysymysten numerot.
 - **15–25 min, Tutki.** Kahden astian $(T, p)$-kuvaaja pareittain: toinen lukee pisteen ja sanoo sen ääneen, toinen tekee yksikkömuunnokset. Pura yhdessä: miksi kaasun A suora on jyrkempi ja miksi jatkeet kulkevat origon kautta.
 - **25–35 min, Teoriatiivistelmä.** Käy tunnistuskaavio läpi ja pyydä jokaiselle riville yksi esimerkki. Palaa Pohdintaan rengaskuvion avulla: kokonaispaine pienenee $14\,\%$, mittarin lukema $20\,\%$.

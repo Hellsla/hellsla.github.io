@@ -5,6 +5,6 @@
   },
   {
     "q": "How many kilowatt-hours does a $1500\\,\\text{W}$ heater use in $4.0$ hours?",
-    "a": "$E = Pt = 1.5\\,\\text{kW} \\cdot 4.0\\,\\text{h} = 6.0\\,\\text{kWh}$."
+    "a": "$$\n\\begin{aligned}\nE &= Pt \\\\\n&= 1.5\\,\\text{kW} \\cdot 4.0\\,\\text{h} \\\\\n&= 6.0\\,\\text{kWh}\n\\end{aligned}\n$$."
   }
 ]

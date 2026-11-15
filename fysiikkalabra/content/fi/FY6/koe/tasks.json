@@ -1023,7 +1023,7 @@
       {
        "key": "units_precision",
        "points": 1,
-       "detail": "$U = 51{,}2\\,\\text{V}$ ja $W \\approx 10\\,\\text{kWh}$."
+       "detail": "$U = 51{,}2\\,\\text{V}$ ja $W \\approx 10{,}2\\,\\text{kWh}$."
       }
      ]
     },
@@ -1064,7 +1064,7 @@
      "id": "c",
      "kind": "calc",
      "points": 4,
-     "text": "Hetkellisesti vaihtosuuntaaja ottaa akustosta tehon $5{,}0\\,\\text{kW}$. Arvioi akuston virta nimellisjännitteen avulla. Kuinka suuri teho muuttuu tällöin lämmöksi akuston sisäisessä resistanssissa ja kaapelissa yhteensä?",
+     "text": "Hetkellisesti vaihtosuuntaaja ottaa akustosta tehon $5{,}0\\,\\text{kW}$. Arvioi akuston virta nimellisjännitteen avulla. Kuinka suuri teho muuttuu tällöin sisäenergiaksi akuston sisäisessä resistanssissa ja kaapelissa yhteensä?",
      "answer": [
       {
        "name": "I",
@@ -1139,7 +1139,7 @@
      "id": "e",
      "kind": "calc",
      "points": 5,
-     "text": "Samat $16$ kennoa voidaan kytkeä myös $12{,}8\\,\\text{V}$:n akustoksi, jossa on neljä rinnakkaista ryhmää ja kussakin ryhmässä neljä kennoa sarjassa. Arvioi nimellisjännitteen avulla, kuten c-kohdassa, tämän akuston virta sekä kaapelissa ja akuston sisäisessä resistanssissa lämmöksi muuttuvat tehot, kun vaihtosuuntaaja ottaa samaa kaapelia pitkin tehon $5{,}0\\,\\text{kW}$. Arvioi tulosten perusteella, kumpi kytkentä on parempi ja mikä rajoittaa akuston jännitteen nostamista vielä suuremmaksi.",
+     "text": "Samat $16$ kennoa voidaan kytkeä myös $12{,}8\\,\\text{V}$:n akustoksi, jossa on neljä rinnakkaista ryhmää ja kussakin ryhmässä neljä kennoa sarjassa. Arvioi nimellisjännitteen avulla, kuten c-kohdassa, tämän akuston virta sekä kaapelissa ja akuston sisäisessä resistanssissa sisäenergiaksi muuttuvat tehot, kun vaihtosuuntaaja ottaa samaa kaapelia pitkin tehon $5{,}0\\,\\text{kW}$. Arvioi tulosten perusteella, kumpi kytkentä on parempi ja mikä rajoittaa akuston jännitteen nostamista vielä suuremmaksi.",
      "answer": [
       {
        "name": "I",

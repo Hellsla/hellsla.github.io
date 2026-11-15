@@ -6,7 +6,15 @@
 **Periaate:** Valitaan kappaleeksi traileri ja vene yhdessä. Voimakuviossa niihin vaikuttavat trailerin paino $\overline{G}_\text{t}$ ja veneen paino $\overline{G}_\text{v}$ painopisteistä alas, maan tukivoima $\overline{N}$ pyörien kohdalta ylös ja kytkimen voima $\overline{F}$ vetoaisan päästä ylös. Kytkimen vaakasuora voima on levossa nolla. Traileri on levossa, joten se on tasapainossa: voimien summa ja momenttien summa ovat nolla. Momenttipisteeksi valitaan akseli, jolloin tuntemattoman tukivoiman varsi on nolla. Voimat ovat pystysuoria ja etäisyydet vaakasuoria, joten etäisyydet ovat voimien varsia (luku *Kappaleen tasapaino: voimat ja momentit*).
 **Kaava:** $F r_\text{k} - m_\text{t} g\, r_\text{t} - m_\text{v} g\, r_\text{v} = 0$, joten $F = \dfrac{(m_\text{t} r_\text{t} + m_\text{v} r_\text{v})\,g}{r_\text{k}}$ ja aisapaino $m_\text{a} = \dfrac{F}{g} = \dfrac{m_\text{t} r_\text{t} + m_\text{v} r_\text{v}}{r_\text{k}}$
 **Muunnokset:** Ei tarvita: massat ovat kilogrammoina ja etäisyydet metreinä.
-**Sijoitus:** Painojen momenttien summa akselin suhteen on $(165\,\text{kg} \cdot 0{,}58\,\text{m} + 430\,\text{kg} \cdot 0{,}12\,\text{m}) \cdot 9{,}81\,\text{m/s}^2 = 147{,}3\,\text{kg} \cdot \text{m} \cdot 9{,}81\,\text{m/s}^2 = 1445\,\text{N} \cdot \text{m}$, joten $F = \dfrac{1445\,\text{N} \cdot \text{m}}{3{,}25\,\text{m}} = 444{,}6\,\text{N}$, ja aisapaino on $\dfrac{444{,}6\,\text{N}}{9{,}81\,\text{m/s}^2} = 45{,}3\,\text{kg}$.
+**Sijoitus:** Painojen momenttien summa akselin suhteen on $$
+\begin{aligned}
+&(165\,\text{kg} \cdot 0{,}58\,\text{m} \\
+&+ 430\,\text{kg} \cdot 0{,}12\,\text{m}) \\
+&\cdot 9{,}81\,\text{m/s}^2 \\
+&= 147{,}3\,\text{kg} \cdot \text{m} \cdot 9{,}81\,\text{m/s}^2 \\
+&= 1445\,\text{N} \cdot \text{m}
+\end{aligned}
+$$, joten $F = \dfrac{1445\,\text{N} \cdot \text{m}}{3{,}25\,\text{m}} = 444{,}6\,\text{N}$, ja aisapaino on $\dfrac{444{,}6\,\text{N}}{9{,}81\,\text{m/s}^2} = 45{,}3\,\text{kg}$.
 **Vastaus:** $F \approx 440\,\text{N}$ ja aisapaino noin $45\,\text{kg}$, kaksi merkitsevää numeroa kuten painopisteiden etäisyyksissä $0{,}58\,\text{m}$ ja $0{,}12\,\text{m}$. Aisapaino on ohjeen alarajaa $50\,\text{kg}$ pienempi.
 **Järkevyys:** Yhteinen painopiste on $\tfrac{147{,}3\,\text{kg} \cdot \text{m}}{595\,\text{kg}} \approx 0{,}25\,\text{m}$ akselin edessä eli noin $\tfrac{0{,}25}{3{,}25} \approx 8\,\%$ kytkimen etäisyydestä. Kytkin kantaa siis noin $8\,\%$ koko massasta $595\,\text{kg}$, noin $45\,\text{kg}$, kuten saatiin.
 
@@ -26,7 +34,14 @@
 **Periaate:** Momenttiehto akselin suhteen pätee edelleen. Siirto muuttaa vain veneen painon vartta $0{,}12\,\text{m}$:stä arvoon $0{,}12\,\text{m} + \Delta x$. Aisapainoa $60\,\text{kg}$ vastaa voima $F = 60\,\text{kg} \cdot g$ (luku *Momentti: voiman kiertävä vaikutus*).
 **Kaava:** $m_\text{a} g\, r_\text{k} = m_\text{t} g\, r_\text{t} + m_\text{v} g\,(r_\text{v} + \Delta x)$, joten $g$ supistuu ja $\Delta x = \dfrac{m_\text{a} r_\text{k} - m_\text{t} r_\text{t} - m_\text{v} r_\text{v}}{m_\text{v}}$
 **Muunnokset:** Tulos muunnetaan senttimetreiksi: $1\,\text{m} = 100\,\text{cm}$.
-**Sijoitus:** $m_\text{v} \Delta x = 195\,\text{kg} \cdot \text{m} - 95{,}7\,\text{kg} \cdot \text{m} - 51{,}6\,\text{kg} \cdot \text{m} = 47{,}7\,\text{kg} \cdot \text{m}$, joten $\Delta x = \dfrac{47{,}7\,\text{kg} \cdot \text{m}}{430\,\text{kg}} = 0{,}1109\,\text{m} = 0{,}1109 \cdot 100\,\text{cm} = 11{,}1\,\text{cm}$
+**Sijoitus:** $$
+\begin{aligned}
+m_\text{v} \Delta x &= 195\,\text{kg} \cdot \text{m} \\
+&- 95{,}7\,\text{kg} \cdot \text{m} \\
+&- 51{,}6\,\text{kg} \cdot \text{m} \\
+&= 47{,}7\,\text{kg} \cdot \text{m}
+\end{aligned}
+$$, joten $\Delta x = \dfrac{47{,}7\,\text{kg} \cdot \text{m}}{430\,\text{kg}} = 0{,}1109\,\text{m} = 0{,}1109 \cdot 100\,\text{cm} = 11{,}1\,\text{cm}$
 **Vastaus:** Venettä siirretään noin $11\,\text{cm}$ eteenpäin, kaksi merkitsevää numeroa kuten painopisteiden etäisyyksissä.
 **Järkevyys:** Kun $430\,\text{kg}$ siirtyy $0{,}111\,\text{m}$, momentti kasvaa $47{,}7\,\text{kg} \cdot \text{m}$, ja jaettuna kytkimen varrella $3{,}25\,\text{m}$ se lisää aisapainoa $\tfrac{47{,}7}{3{,}25}\,\text{kg} \approx 15\,\text{kg}$: $45\,\text{kg} + 15\,\text{kg} = 60\,\text{kg}$. Pieni siirto riittää, koska vene on raskas.
 
@@ -47,17 +62,34 @@
 ## fy9-ympyraliike-s2
 
 ### a)
-**Annettu:** korkeus $h = 830\,\text{km}$, Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$ ja säde $R = 6371\,\text{km}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
+**Annettu:** korkeus $h = 830\,\text{km}$, Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$ ja säde $R = 6371\,\text{km}$, $$
+\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
+$$
 **Kysytty:** ratanopeus $v$ ja kiertoaika $T$ minuutteina
 **Periaate:** Satelliittiin vaikuttaa vain Maan gravitaatiovoima, joten se on kokonaisvoima. Rata on ympyrä, joten Newtonin toisen lain mukaan gravitaatiovoima antaa satelliitille normaalikiihtyvyyden $\tfrac{v^2}{r}$ kohti Maan keskipistettä. Radan säde mitataan Maan keskipisteestä, $r = R + h$, ja kierroksella satelliitti kulkee kehän $2\pi r$ (luku *Satelliitit ja planeetat ympyräradalla*).
 **Kaava:** $\gamma\dfrac{Mm}{r^2} = m\dfrac{v^2}{r}$, joten satelliitin massa supistuu ja $v = \sqrt{\dfrac{\gamma M}{r}}$; $T = \dfrac{2\pi r}{v}$
 **Muunnokset:** $r = 6371\,\text{km} + 830\,\text{km} = 7201\,\text{km} = 7201 \cdot 1000\,\text{m} = 7{,}201 \cdot 10^{6}\,\text{m}$. Lopuksi $1\,\text{km} = 1000\,\text{m}$ ja $1\,\text{min} = 60\,\text{s}$.
-**Sijoitus:** $\gamma M = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 5{,}97 \cdot 10^{24}\,\text{kg} = 3{,}984 \cdot 10^{14}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}}$, joten $v = \sqrt{\dfrac{3{,}984 \cdot 10^{14}\,\text{N}\cdot\text{m}^2/\text{kg}}{7{,}201 \cdot 10^{6}\,\text{m}}} = 7438\,\text{m/s} = 7{,}438\,\text{km/s}$ ja $T = \dfrac{2\pi \cdot 7{,}201 \cdot 10^{6}\,\text{m}}{7438\,\text{m/s}} = 6083\,\text{s} = \dfrac{6083}{60}\,\text{min} = 101{,}4\,\text{min}$
+**Sijoitus:** $$
+\begin{aligned}
+\gamma M &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
+&\cdot 5{,}97 \cdot 10^{24}\,\text{kg} \\
+&= 3{,}984 \cdot 10^{14}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}}
+\end{aligned}
+$$, joten $v = \sqrt{\dfrac{3{,}984 \cdot 10^{14}\,\text{N}\cdot\text{m}^2/\text{kg}}{7{,}201 \cdot 10^{6}\,\text{m}}} = 7438\,\text{m/s} = 7{,}438\,\text{km/s}$ ja $$
+\begin{aligned}
+T &= \dfrac{2\pi \cdot 7{,}201 \cdot 10^{6}\,\text{m}}{7438\,\text{m/s}} \\
+&= 6083\,\text{s} \\
+&= \dfrac{6083}{60}\,\text{min} \\
+&= 101{,}4\,\text{min}
+\end{aligned}
+$$
 **Vastaus:** $v \approx 7{,}44\,\text{km/s}$ ja $T \approx 101\,\text{min}$, kolme merkitsevää numeroa kuten korkeudessa $830\,\text{km}$ ja Maan massassa.
 **Järkevyys:** Ratanopeus on vähän pienempi kuin ISS:n noin $7{,}7\,\text{km/s}$ ja kiertoaika vähän pidempi kuin ISS:n noin $93\,\text{min}$, koska rata on korkeammalla. Vuorokaudessa satelliitti kiertää $\tfrac{86\,400\,\text{s}}{6083\,\text{s}} \approx 14$ kierrosta.
 
 ### b)
-**Annettu:** $m = 4100\,\text{kg}$, $r = 7{,}201 \cdot 10^{6}\,\text{m}$, $M = 5{,}97 \cdot 10^{24}\,\text{kg}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$, $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** $m = 4100\,\text{kg}$, $r = 7{,}201 \cdot 10^{6}\,\text{m}$, $M = 5{,}97 \cdot 10^{24}\,\text{kg}$, $$
+\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
+$$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** gravitaatiovoima $F$ radalla ja sen osuus painosta $mg$ maanpinnalla
 **Periaate:** Gravitaatiolain mukaan voima on kääntäen verrannollinen etäisyyden neliöön keskipisteistä mitattuna. Satelliitti on noin $13\,\%$ kauempana Maan keskipisteestä kuin maanpinnalla (luku *Kappaleiden välinen gravitaatiovoima*).
 **Kaava:** $F = \gamma\dfrac{Mm}{r^2}$ ja osuus $q = \dfrac{F}{mg} = \dfrac{\gamma M}{g\,r^2}$
@@ -270,12 +302,23 @@
 ### a)
 **Kysytty:** pitääkö väite paikkansa, että $400\,\text{km}$:n korkeudella ei ole painovoimaa
 **Periaate:** Gravitaatiokentän voimakkuus $g = \gamma\tfrac{M}{r^2}$ pienenee etäisyyden neliön mukaan mutta ei muutu nollaksi. Painottomuus on vapaata putoamista: kappaleeseen vaikuttaa vain gravitaatio, ja tukivoima on nolla (luku *Satelliitit ja planeetat ympyräradalla*).
-**Mallivastaus:** Väite on väärä. $400\,\text{km}$:n korkeudella etäisyys Maan keskipisteestä on $6771\,\text{km}$, vain noin $6\,\%$ enemmän kuin maanpinnalla. Kentän voimakkuus on siellä $\gamma\tfrac{M}{r^2} = \tfrac{6{,}674 \cdot 10^{-11} \cdot 5{,}97 \cdot 10^{24}}{(6{,}771 \cdot 10^{6})^2}\,\text{m/s}^2 \approx 8{,}7\,\text{m/s}^2$ eli lähes $90\,\%$ maanpinnan arvosta. Juuri gravitaatio pitää aseman radallaan: se on aseman ainoa voima ja kääntää sen nopeuden suuntaa koko ajan. Ilman gravitaatiota asema jatkaisi suoraan pois radaltaan. Astronautit leijuvat, koska asema ja astronautti putoavat vapaasti yhdessä: kumpikin saa saman kiihtyvyyden kohti Maata. Lattia ei siksi paina astronauttia, tukivoima on nolla, ja vaaka näyttäisi nollaa, vaikka paino vaikuttaa koko ajan.
+**Mallivastaus:** Väite on väärä. $400\,\text{km}$:n korkeudella etäisyys Maan keskipisteestä on $6771\,\text{km}$, vain noin $6\,\%$ enemmän kuin maanpinnalla. Kentän voimakkuus on siellä $$
+\begin{aligned}
+\gamma\tfrac{M}{r^2} &= \tfrac{6{,}674 \cdot 10^{-11} \cdot 5{,}97 \cdot 10^{24}}{(6{,}771 \cdot 10^{6})^2}\,\text{m/s}^2 \\
+&\approx 8{,}7\,\text{m/s}^2
+\end{aligned}
+$$ eli lähes $90\,\%$ maanpinnan arvosta. Juuri gravitaatio pitää aseman radallaan: se on aseman ainoa voima ja kääntää sen nopeuden suuntaa koko ajan. Ilman gravitaatiota asema jatkaisi suoraan pois radaltaan. Astronautit leijuvat, koska asema ja astronautti putoavat vapaasti yhdessä: kumpikin saa saman kiihtyvyyden kohti Maata. Lattia ei siksi paina astronauttia, tukivoima on nolla, ja vaaka näyttäisi nollaa, vaikka paino vaikuttaa koko ajan.
 
 ### b)
 **Kysytty:** miksi astronautti tuntee itsensä painavaksi pyörivän renkaan lattialla, mihin suuntaan on ”alas”, ja millä kierrosajalla lattian voima vastaa Maan pintaa
 **Periaate:** Renkaan mukana kulkeva astronautti on tasaisessa ympyräliikkeessä, joten häneen vaikuttavien voimien summa osoittaa renkaan keskipisteeseen: $\Sigma F = m\tfrac{v^2}{r}$. Ratanopeus on $v = \tfrac{2\pi r}{T}$ (luvut *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö* ja *Ympyrärata: jaksonaika ja ratanopeus*).
-**Mallivastaus:** Aseman sisällä astronauttiin vaikuttaa vain lattian tukivoima, kun Maan gravitaatio jätetään huomiotta, koska se vaikuttaa asemaan samalla tavalla. Astronautti kulkee renkaan mukana ympyrää, joten hänen kokonaisvoimansa on osoitettava renkaan keskipisteeseen. Ulkoseinä eli lattia painaa siksi hänen jalkapohjiaan kohti keskipistettä voimalla $N = m\tfrac{v^2}{r}$. Sama painallus jalkapohjissa tuntuu Maan pinnalla painon tukemiselta, joten astronautti tuntee itsensä painavaksi, ja ”alas” on poispäin renkaan keskipisteestä, kohti ulkoseinää. Ulospäin vaikuttavaa keskipakoisvoimaa ei ole: ilman lattiaa astronautti jatkaisi suoraan. Lattia painaa yhtä suurella voimalla kuin Maan pinta, kun $\tfrac{v^2}{r} = g$. Kun $v = \tfrac{2\pi r}{T}$, saadaan $T = 2\pi\sqrt{\tfrac{r}{g}} = 2\pi\sqrt{\tfrac{110\,\text{m}}{9{,}81\,\text{m/s}^2}} \approx 21\,\text{s}$, eli rengas pyörii noin kolme kierrosta minuutissa, ja lattian ratanopeus on noin $33\,\text{m/s}$.
+**Mallivastaus:** Aseman sisällä astronauttiin vaikuttaa vain lattian tukivoima, kun Maan gravitaatio jätetään huomiotta, koska se vaikuttaa asemaan samalla tavalla. Astronautti kulkee renkaan mukana ympyrää, joten hänen kokonaisvoimansa on osoitettava renkaan keskipisteeseen. Ulkoseinä eli lattia painaa siksi hänen jalkapohjiaan kohti keskipistettä voimalla $N = m\tfrac{v^2}{r}$. Sama painallus jalkapohjissa tuntuu Maan pinnalla painon tukemiselta, joten astronautti tuntee itsensä painavaksi, ja ”alas” on poispäin renkaan keskipisteestä, kohti ulkoseinää. Ulospäin vaikuttavaa keskipakoisvoimaa ei ole: ilman lattiaa astronautti jatkaisi suoraan. Lattia painaa yhtä suurella voimalla kuin Maan pinta, kun $\tfrac{v^2}{r} = g$. Kun $v = \tfrac{2\pi r}{T}$, saadaan $$
+\begin{aligned}
+T &= 2\pi\sqrt{\tfrac{r}{g}} \\
+&= 2\pi\sqrt{\tfrac{110\,\text{m}}{9{,}81\,\text{m/s}^2}} \\
+&\approx 21\,\text{s}
+\end{aligned}
+$$, eli rengas pyörii noin kolme kierrosta minuutissa, ja lattian ratanopeus on noin $33\,\text{m/s}$.
 
 ### c)
 **Kysytty:** avaimen liike irrottamisen jälkeen aseman ulkopuolelta katsottuna ja astronautin näkökulmasta
@@ -296,7 +339,15 @@
 **Periaate:** Mitta on levossa, joten momenttien summa terän suhteen on nolla. Terä ei ole mitan painopisteessä, joten myös mitan paino kiertää mittaa: sen varsi on $10{,}0\,\text{cm}$, ja se kiertää samaan suuntaan kuin kivi. Voimat ovat pystysuoria ja mitta vaakasuora, joten varret ovat etäisyydet terästä (luku *Kappaleen tasapaino: voimat ja momentit*).
 **Kaava:** $m_\text{p} g\, d_\text{p} - m_\text{k} g\, d_\text{k} - m_\text{m} g\, d_\text{m} = 0$, joten $g$ supistuu ja $m_\text{k} = \dfrac{m_\text{p} d_\text{p} - m_\text{m} d_\text{m}}{d_\text{k}}$, missä $d_\text{p}$, $d_\text{k}$ ja $d_\text{m}$ ovat punnuksen, kiven ja mitan painopisteen etäisyydet terästä
 **Muunnokset:** Varret terästä: $d_\text{p} = 40{,}0\,\text{cm} - 10{,}0\,\text{cm} = 30{,}0\,\text{cm}$, $d_\text{k} = 82{,}0\,\text{cm} - 40{,}0\,\text{cm} = 42{,}0\,\text{cm}$ ja $d_\text{m} = 50{,}0\,\text{cm} - 40{,}0\,\text{cm} = 10{,}0\,\text{cm}$. Muita muunnoksia ei tarvita: senttimetrit supistuvat, ja massa saadaan grammoina.
-**Sijoitus:** $m_\text{k} \cdot 42{,}0\,\text{cm} = 200\,\text{g} \cdot 30{,}0\,\text{cm} - 120\,\text{g} \cdot 10{,}0\,\text{cm} = 6000\,\text{g} \cdot \text{cm} - 1200\,\text{g} \cdot \text{cm} = 4800\,\text{g} \cdot \text{cm}$, joten $m_\text{k} = \dfrac{4800\,\text{g} \cdot \text{cm}}{42{,}0\,\text{cm}} = 114{,}3\,\text{g}$
+**Sijoitus:** $$
+\begin{aligned}
+&m_\text{k} \cdot 42{,}0\,\text{cm} \\
+&= 200\,\text{g} \cdot 30{,}0\,\text{cm} \\
+&- 120\,\text{g} \cdot 10{,}0\,\text{cm} \\
+&= 6000\,\text{g} \cdot \text{cm} - 1200\,\text{g} \cdot \text{cm} \\
+&= 4800\,\text{g} \cdot \text{cm}
+\end{aligned}
+$$, joten $m_\text{k} = \dfrac{4800\,\text{g} \cdot \text{cm}}{42{,}0\,\text{cm}} = 114{,}3\,\text{g}$
 **Vastaus:** $m_\text{k} \approx 114\,\text{g}$, kolme merkitsevää numeroa kuten mitatuissa paikoissa. Tulos poikkeaa vaa'an lukemasta $113\,\text{g}$ noin $1\,\%$.
 **Järkevyys:** Tasapainokohdan lukeminen $\pm 0{,}5\,\text{cm}$ muuttaa tulosta noin $\pm 1{,}5\,\text{g}$, joten ero vaa'an lukemaan mahtuu mittauksen tarkkuuteen. Raportin $142{,}9\,\text{g}$ on $26\,\%$ liian suuri, koska mitan oman painon momentti $1200\,\text{g} \cdot \text{cm}$ jäi pois.
 
@@ -337,7 +388,13 @@
 **Periaate:** Valitaan kappaleeksi matkustaja. Voimakuviossa häneen vaikuttavat paino $\overline{G}$ alas ja istuimen tukivoima $\overline{N}$ ylös; keskipakoisvoimaa ei piirretä. Pohjalla matkustaja on hetken ympyräradalla, jonka keskipiste on yläpuolella. Pohjalla tangentin suuntaista kokonaisvoimaa ei ole, joten kokonaisvoima osoittaa ylös ja on $m\tfrac{v^2}{r}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*).
 **Kaava:** Kun keskipisteen suunta ylös on positiivinen, $N - mg = m\dfrac{v_\text{p}^2}{r}$, joten $N = m\left(g + \dfrac{v_\text{p}^2}{r}\right)$
 **Muunnokset:** Ei tarvita: suureet ovat perusyksiköissä.
-**Sijoitus:** $\dfrac{v_\text{p}^2}{r} = \dfrac{518{,}0\,\text{m}^2/\text{s}^2}{10{,}0\,\text{m}} = 51{,}80\,\text{m/s}^2$, joten $N = 60{,}0\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 + 51{,}80\,\text{m/s}^2) = 3696\,\text{N}$. Painoon verrattuna $\dfrac{N}{mg} = \dfrac{3696\,\text{N}}{588{,}6\,\text{N}} = 6{,}28$.
+**Sijoitus:** $\dfrac{v_\text{p}^2}{r} = \dfrac{518{,}0\,\text{m}^2/\text{s}^2}{10{,}0\,\text{m}} = 51{,}80\,\text{m/s}^2$, joten $$
+\begin{aligned}
+N &= 60{,}0\,\text{kg} \\
+&\cdot (9{,}81\,\text{m/s}^2 + 51{,}80\,\text{m/s}^2) \\
+&= 3696\,\text{N}
+\end{aligned}
+$$. Painoon verrattuna $\dfrac{N}{mg} = \dfrac{3696\,\text{N}}{588{,}6\,\text{N}} = 6{,}28$.
 **Vastaus:** $N \approx 3{,}70\,\text{kN}$, kolme merkitsevää numeroa kuten massassa ja säteessä. Voima on noin $6{,}3$-kertainen matkustajan painoon verrattuna.
 **Järkevyys:** Normaalikiihtyvyys on yli viisinkertainen putoamiskiihtyvyyteen verrattuna, joten istuimen on painettava matkustajaa yli kuusinkertaisella voimalla: yksi $mg$ kannattelee painon ja loput kääntävät liikkeen. Näin suuri voima tuntuisi rajulta, mikä on syy d-kohdan muotoon.
 
@@ -347,7 +404,14 @@
 **Periaate:** Silmukassa mekaaninen energia säilyy, joten liike-energiaa muuttuu potentiaalienergiaksi nousussa $2r$ (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Huipulla matkustaja on ylösalaisin, ja keskipiste on hänen alapuolellaan. Paino ja istuimen tukivoima osoittavat kumpikin alas kohti keskipistettä, ja niiden summa on $m\tfrac{v^2}{r}$ (luku *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*).
 **Kaava:** $\tfrac12 mv_\text{p}^2 = \tfrac12 mv_\text{h}^2 + mg \cdot 2r$, joten $v_\text{h} = \sqrt{v_\text{p}^2 - 4gr}$; huipulla $N + mg = m\dfrac{v_\text{h}^2}{r}$, joten $N = m\left(\dfrac{v_\text{h}^2}{r} - g\right)$
 **Muunnokset:** Ei tarvita: suureet ovat perusyksiköissä.
-**Sijoitus:** $v_\text{h} = \sqrt{518{,}0\,\tfrac{\text{m}^2}{\text{s}^2} - 4 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 10{,}0\,\text{m}} = \sqrt{125{,}6\,\tfrac{\text{m}^2}{\text{s}^2}} = 11{,}21\,\text{m/s}$ ja $N = 60{,}0\,\text{kg} \cdot \left(\dfrac{125{,}6\,\text{m}^2/\text{s}^2}{10{,}0\,\text{m}} - 9{,}81\,\text{m/s}^2\right) = 60{,}0\,\text{kg} \cdot 2{,}75\,\text{m/s}^2 = 165\,\text{N}$
+**Sijoitus:** $v_\text{h} = \sqrt{518{,}0\,\tfrac{\text{m}^2}{\text{s}^2} - 4 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 10{,}0\,\text{m}} = \sqrt{125{,}6\,\tfrac{\text{m}^2}{\text{s}^2}} = 11{,}21\,\text{m/s}$ ja $$
+\begin{aligned}
+N &= 60{,}0\,\text{kg} \\
+&\cdot \left(\dfrac{125{,}6\,\text{m}^2/\text{s}^2}{10{,}0\,\text{m}} - 9{,}81\,\text{m/s}^2\right) \\
+&= 60{,}0\,\text{kg} \cdot 2{,}75\,\text{m/s}^2 \\
+&= 165\,\text{N}
+\end{aligned}
+$$
 **Vastaus:** $v_\text{h} \approx 11{,}2\,\text{m/s}$ ja $N \approx 165\,\text{N}$, kolme merkitsevää numeroa. Istuin painaa matkustajaa huipullakin, mutta vain noin $0{,}28$-kertaisella voimalla painoon verrattuna.
 **Järkevyys:** Matkustaja pysyy istuimessa ilman turvakaarta, jos $N \ge 0$ eli $v_\text{h}^2 \ge gr$: raja on $v_\text{h} \ge \sqrt{9{,}81\,\text{m/s}^2 \cdot 10{,}0\,\text{m}} \approx 9{,}9\,\text{m/s}$. Nopeus $11{,}2\,\text{m/s}$ ylittää rajan vain vähän, joten turvakaari on silti tarpeen. Huipun ja pohjan voimien ero on noin $6\,mg$.
 
@@ -363,4 +427,9 @@
 - c-kohdassa huipun korkeudeksi otetaan $r$ eikä $2r$, tai huipulla paino ja tukivoima kirjoitetaan vastakkaisiin suuntiin.
 
 ### Hyväksytään myös
-- c-kohdassa nopeus huipulla suoraan energiaperiaatteesta lähtömäestä huipulle: $\tfrac12 mv_\text{h}^2 = 0{,}88 \cdot mgh - mg \cdot 2r$, sama tulos.
+- c-kohdassa nopeus huipulla suoraan energiaperiaatteesta lähtömäestä huipulle: $$
+\begin{aligned}
+&\tfrac12 mv_\text{h}^2 \\
+&= 0{,}88 \cdot mgh - mg \cdot 2r
+\end{aligned}
+$$, sama tulos.

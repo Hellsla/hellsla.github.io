@@ -450,7 +450,7 @@ Homogeenisessa sähkökentässä varattuun hiukkaseen vaikuttaa kaikkialla levyj
   <foreignObject x="380" y="291.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = qEd$</div></foreignObject>
 </svg>
 
-<figure class="unit-photo"><img src="pics/fy6/lightning-dallas.webp" alt="Sininen yötaivas ja ukkospilvi, josta haarautuva salama kulkee vaakasuoraan pilvessä ja alas maassa olevaan mastoon."><figcaption>Salama iskee mastoon Dallasissa. Ukkospilven ja maan välillä voi olla kymmenien tai satojen miljoonien volttien potentiaaliero. Kun varaus purkautuu sen läpi, sähköinen potentiaalienergia muuttuu valoksi, lämmöksi ja ääneksi.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy6/lightning-dallas.webp" alt="Sininen yötaivas ja ukkospilvi, josta haarautuva salama kulkee vaakasuoraan pilvessä ja alas maassa olevaan mastoon."><figcaption>Salama iskee mastoon Dallasissa. Ukkospilven ja maan välillä voi olla kymmenien tai satojen miljoonien volttien potentiaaliero. Kun varaus purkautuu sen läpi, sähköinen potentiaalienergia muuttuu valoksi, ääneksi ja ilman sisäenergiaksi, joka siirtyy lämpönä ympäristöön.</figcaption></figure>
 
 ### Sähköinen potentiaalienergia
 Sähköinen voima on konservatiivinen kuten painovoima: sen tekemä työ riippuu vain alku- ja loppukohdasta, ei reitistä. Siksi varauksella on kentässä **potentiaalienergiaa** $E_\text{p}$, joka riippuu sen paikasta. Kun kenttä tekee positiivista työtä, potentiaalienergia pienenee saman verran. Kun varausta siirretään kentän voimaa vastaan, potentiaalienergia kasvaa. Potentiaalienergian nollataso valitaan vapaasti, kuten korkeuden nollataso: usein se on negatiivinen levy tai maadoitettu kohta. Merkitystä on vain potentiaalienergian muutoksilla, eivätkä ne riipu nollatason valinnasta.
@@ -559,9 +559,10 @@ Kun hiukkanen, jonka varauksen suuruus on alkeisvaraus $e$, kulkee potentiaalier
 Maan magneettikenttä ohjaa avaruudesta tulevia elektroneja napa-alueiden yläpuolelle. Tuhansien kilometrien korkeudella elektronit kulkevat usein muutaman kilovoltin potentiaalieron läpi, ja jokainen voltti antaa elektronille yhden elektronivoltin liike-energiaa. Potentiaaliero $5\,\text{kV}$ antaa liike-energian $5\,\text{keV}$ ja nopeuden noin $40\,000\,\text{km/s}$. Elektronin massa on niin pieni, että jo tällainen energia antaa sille valtavan nopeuden. Noin $100$–$300\,\text{km}$:n korkeudella elektronit törmäävät ilman happi- ja typpiatomeihin ja -molekyyleihin ja luovuttavat niille energiaansa, ja ne säteilevät energian valona. Vihreä valo tulee hapesta.
 
 ## Kaava: Sähköinen potentiaalienergia ja potentiaali
-Varauksen potentiaalienergia kohdassa, jonka potentiaali on $V$:
+Kohdan potentiaali on varauksen potentiaalienergia varausyksikköä kohti. Siitä saadaan varauksen potentiaalienergia kohdassa, jonka potentiaali on $V$:
 ```kaavat
-sähkökentän potentiaali :: E_\text{p} = qV
+sähkökentän potentiaali :: V = \frac{E_\text{p}}{q}
+:: E_\text{p} = qV
 ```
 missä $E_\text{p}$ on potentiaalienergia ($\text{J}$), $q$ varaus etumerkkeineen ($\text{C}$) ja $V$ kohdan potentiaali ($\text{V}$) valittuun nollakohtaan nähden. Elektronille $q = -e$.
 

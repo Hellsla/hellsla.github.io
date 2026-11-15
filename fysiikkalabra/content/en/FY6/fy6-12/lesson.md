@@ -450,7 +450,7 @@ In a uniform electric field the same force $\overline{F} = q\overline{E}$ acts o
   <foreignObject x="380" y="291.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$W = qEd$</div></foreignObject>
 </svg>
 
-<figure class="unit-photo"><img src="pics/fy6/lightning-dallas.webp" alt="A blue night sky and a thundercloud from which a branching lightning bolt runs sideways through the cloud and down to a mast on the ground."><figcaption>Lightning strikes a mast in Dallas. The potential difference between a thundercloud and the ground can be tens or hundreds of millions of volts. When charge is discharged across it, electric potential energy turns into light, heat and sound.</figcaption></figure>
+<figure class="unit-photo"><img src="pics/fy6/lightning-dallas.webp" alt="A blue night sky and a thundercloud from which a branching lightning bolt runs sideways through the cloud and down to a mast on the ground."><figcaption>Lightning strikes a mast in Dallas. The potential difference between a thundercloud and the ground can be tens or hundreds of millions of volts. When charge is discharged across it, electric potential energy turns into light, sound and internal energy of the air, which is transferred to the surroundings as heat.</figcaption></figure>
 
 ### Electric potential energy
 The electric force is conservative like gravity: the work it does depends only on the initial and final points, not on the path. So a charge in a field has **potential energy** $E_\text{p}$, which depends on its position. When the field does positive work, the potential energy decreases by the same amount. When a charge is moved against the force of the field, the potential energy increases. The zero level of the potential energy is chosen freely, like the zero level of height: often it is the negative plate or an earthed point. Only the changes of the potential energy matter, and they do not depend on the choice of the zero level.
@@ -559,9 +559,10 @@ When a particle whose charge has the magnitude of the elementary charge $e$ trav
 The magnetic field of the Earth guides electrons coming from space to the polar regions. At a height of thousands of kilometres the electrons often travel through a potential difference of a few kilovolts, and every volt gives the electron one electronvolt of kinetic energy. A potential difference of $5\,\text{kV}$ gives a kinetic energy of $5\,\text{keV}$ and a speed of about $40\,000\,\text{km/s}$. The mass of an electron is so small that even such an energy gives it an enormous speed. At a height of about $100$–$300\,\text{km}$ the electrons collide with the oxygen and nitrogen atoms and molecules of the air and give them their energy, and these radiate the energy as light. The green light comes from oxygen.
 
 ## Formula: Electric potential energy and potential
-The potential energy of a charge at a point whose potential is $V$:
+The potential of a point is the potential energy of a charge per unit charge. From it we get the potential energy of a charge at a point whose potential is $V$:
 ```kaavat
-electric potential :: E_\text{p} = qV
+electric potential :: V = \frac{E_\text{p}}{q}
+:: E_\text{p} = qV
 ```
 where $E_\text{p}$ is the potential energy ($\text{J}$), $q$ the charge with its sign ($\text{C}$) and $V$ the potential of the point ($\text{V}$) relative to the chosen zero point. For an electron $q = -e$.
 

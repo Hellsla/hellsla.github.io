@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b6066e2dc31595c5
-SCOPE: delta added-exercise from 47c6ed01597a514a base 8f23aa7ae3bd
+CONTENT-HASH: c464157cc013fdd3
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- solutions.md L1 (3000 mAh to C) — "neljä merkitsevää numeroa kuten 3000 mAh" treats trailing zeros as significant, while 40 kWh and 90 W elsewhere count as two figures; a phone battery rating is not four-figure data. Fix: keep $1{,}1 \cdot 10^{4}\,\text{C}$ (two figures) or state in the task that the capacity is given to four figures.
+- solutions.md charging-resistance task — Vastaus is $0{,}2\,\Omega$ but Järkevyys still checks with $0{,}20\,\Omega$; fix: write "$0{,}2\,\Omega$ (tarkemmin $0{,}20\,\Omega$)" in the check.
 
 ## Checked
-- L2-08: level 2 fits (three-part graph read, charge as area, then W = UQ); situation first, question last; answer 61,05 Wh within tolerance of the 61 Wh the solution states.
-- Figure ex-current2 gives all values (2,0/1,5/0,5 A, gridlines 0,5) and its description matches; charge is not given away.
-- Solution stepwise: durations derived, areas summed, unit shortcut explained, reasonableness check real.
-- Overlap with L1-05 (charge from graph) is only the first step; L2-08 adds the energy step. Kinds mix still fine.
-- Finnish reads clearly; case after number+unit correct.
+- 4,7 · 10^2 Wh eli 0,47 kWh: correct for 36 V · 13 Ah = 468 Wh.
+- Rounding of 1,0 Ω − 0,80 Ω to one decimal follows the subtraction rule and is explained.
+- 1,5 Wh justified by two-figure current and time; the explanation is correct and followable.

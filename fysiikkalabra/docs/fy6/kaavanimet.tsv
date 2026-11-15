@@ -130,7 +130,8 @@ fy6-11	562	= 4{,}807 \cdot 10^{-19}\,\text{C}	= 4.807 \cdot 10^{-19}\,\text{C}
 fy6-11	562	n = \frac{q}{e}	n = \frac{q}{e}					
 fy6-11	562	= \frac{4{,}807 \cdot 10^{-19}\,\text{C}}{1{,}602 \cdot 10^{-19}\,\text{C}}	= \frac{4.807 \cdot 10^{-19}\,\text{C}}{1.602 \cdot 10^{-19}\,\text{C}}					
 fy6-11	562	= 3{,}0	= 3.0					
-fy6-12	563	E_\text{p} = qV	E_\text{p} = qV	sähkökentän potentiaali	electric potential	MAFY	Sähköstatiikan kaavoja	MAFY: V = E_p/Q; ratkaistu muoto, sama laki
+fy6-12	563	V = \frac{E_\text{p}}{q}	V = \frac{E_\text{p}}{q}	sähkökentän potentiaali	electric potential	MAFY	Sähköstatiikan kaavoja	MAFY: V = E_p/Q (oikoluku 2026-11-15)
+fy6-12	563	E_\text{p} = qV	E_\text{p} = qV	=	=			potentiaalin muu muoto, nimen alla
 fy6-12	569	W_{AB} = q(V_A - V_B) = qU_{AB}	W_{AB} = q(V_A - V_B) = qU_{AB}	sähkökentän tekemä työ	work done by an electric field	MAFY	Sähköstatiikan kaavoja	MAFY: W = QU; tunnin kaavassa pisteet A ja B
 fy6-12	575	V = Ex	V = Ex					
 fy6-12	622	\frac{1}{2}mv^2 = |q|U	\frac{1}{2}mv^2 = |q|U					

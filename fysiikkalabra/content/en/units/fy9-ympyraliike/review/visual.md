@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7350c01843e2bbee
-Round 3 delta against a5cfa11854335811
+CONTENT-HASH: fa37beba31466679
 
 ## Blocking
-(none)
+- None.
 
 ## Polish
-(none)
+- None. Every lifted formula is fully visible at 360 px, relations aligned in one column, operators lead continuation rows, no lone symbol or unit, and the surrounding sentences read naturally.
 
 ## Checked
-en-360 and en-1280 PNGs: all 8 rows opened. 'static friction' fits beside its pill with clear space; no clipping or overlap in any row, incl. long pills in the last rows.
+- batch delta review 5d: opened all 3 sheet(s) (reflow-1.png, reflow-2.png, reflow-3.png) at 360 px.

@@ -25,7 +25,7 @@
 **Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$
 **Muunnokset:** Ei tarvita: $1\,\text{W} : 1\,\text{V} = 1\,\text{A}$.
 **Sijoitus:** $I = \dfrac{1200\,\text{W}}{230\,\text{V}} = 5{,}217\,\text{A}$
-**Vastaus:** $5{,}2\,\text{A}$, kaksi merkitsevää numeroa kuten jännitteessä $230\,\text{V}$.
+**Vastaus:** $5{,}22\,\text{A}$, kolme merkitsevää numeroa kuten jännitteessä $230\,\text{V}$, joka on kolmen merkitsevän numeron arvo.
 **Järkevyys:** Arvio $1200\,\text{W} : 200\,\text{V} = 6\,\text{A}$ on hieman suurempi, koska jakaja on pienempi. Virta on alle $10\,\text{A}$, joten silitysrauta sopii $10\,\text{A}$:n tai $16\,\text{A}$:n sulakkeella suojattuun virtapiiriin, kun muita suuritehoisia laitteita ei ole samaan aikaan päällä.
 
 ## fy6-7-L1-04
@@ -66,8 +66,8 @@
 **Kaava:** $P = UI$ ja $E = Pt$, joten $E = UIt$
 **Muunnokset:** $t = 4{,}0\,\text{min} = 4{,}0 \cdot 60\,\text{s} = 240\,\text{s}$; lopuksi $1\,\text{kJ} = 1000\,\text{J}$
 **Sijoitus:** $E = 230\,\text{V} \cdot 8{,}7\,\text{A} \cdot 240\,\text{s} = 480\,240\,\text{J} = 480{,}24\,\text{kJ}$
-**Vastaus:** $480\,\text{kJ}$, kaksi merkitsevää numeroa kuten virrassa $8{,}7\,\text{A}$ ja ajassa $4{,}0\,\text{min}$.
-**Järkevyys:** Keittimen teho on $230\,\text{V} \cdot 8{,}7\,\text{A} \approx 2000\,\text{W}$ eli $2\,\text{kJ}$ sekunnissa, ja $240$ sekunnissa se on noin $480\,\text{kJ}$. Kilowattitunteina tämä on $0{,}13\,\text{kWh}$, mikä sopii yhteen vedenkeittimen tavallisen keittokerran kanssa.
+**Vastaus:** $4{,}8 \cdot 10^{2}\,\text{kJ}$, kaksi merkitsevää numeroa kuten virrassa $8{,}7\,\text{A}$ ja ajassa $4{,}0\,\text{min}$.
+**Järkevyys:** Keittimen teho on $230\,\text{V} \cdot 8{,}7\,\text{A} \approx 2000\,\text{W}$ eli $2\,\text{kJ}$ sekunnissa, ja $240$ sekunnissa se on noin $4{,}8 \cdot 10^{2}\,\text{kJ}$. Kilowattitunteina tämä on $0{,}13\,\text{kWh}$, mikä sopii yhteen vedenkeittimen tavallisen keittokerran kanssa.
 
 ## fy6-7-L2-03
 **Annettu:** valmiustilan teho $P = 4{,}5\,\text{W}$ koko vuoden, $365$ vuorokautta, hinta $a = 17\,\text{snt/kWh}$
@@ -151,12 +151,12 @@
 **Kaava:** $E_\text{vrk} = Pt$ jokaiselle laitteelle ja $E_\text{vuosi} = 365 \cdot E_\text{vrk,yht}$
 **Muunnokset:** $90\,\text{W} = 0{,}090\,\text{kW}$, $110\,\text{W} = 0{,}110\,\text{kW}$, $60\,\text{W} = 0{,}060\,\text{kW}$, $1200\,\text{W} = 1{,}200\,\text{kW}$ ja $800\,\text{W} = 0{,}800\,\text{kW}$
 **Sijoitus:** Valaistus $0{,}090\,\text{kW} \cdot 5{,}0\,\text{h} = 0{,}45\,\text{kWh}$; televisio $0{,}110\,\text{kW} \cdot 4{,}0\,\text{h} = 0{,}44\,\text{kWh}$; tietokone $0{,}060\,\text{kW} \cdot 6{,}0\,\text{h} = 0{,}36\,\text{kWh}$; pölynimuri $1{,}200\,\text{kW} \cdot 0{,}50\,\text{h} = 0{,}60\,\text{kWh}$; leivänpaahdin $0{,}800\,\text{kW} \cdot 0{,}20\,\text{h} = 0{,}16\,\text{kWh}$. Summa on $2{,}01\,\text{kWh}$ vuorokaudessa, joten $E_\text{vuosi} = 365 \cdot 2{,}01\,\text{kWh} = 733{,}65\,\text{kWh}$.
-**Vastaus:** Vastauslaatikkoon $730\,\text{kWh}$. a) Eniten energiaa käyttää pölynimuri, vaikka se on päällä vain puoli tuntia.
+**Vastaus:** Vastauslaatikkoon $7{,}3 \cdot 10^{2}\,\text{kWh}$. a) Eniten energiaa käyttää pölynimuri, vaikka se on päällä vain puoli tuntia.
 
-b) $730\,\text{kWh}$, kaksi merkitsevää numeroa kuten tehoissa ja ajoissa.
+b) $7{,}3 \cdot 10^{2}\,\text{kWh}$, kaksi merkitsevää numeroa. Rajoittavat lähtötiedot ovat tehot $90\,\text{W}$ ja $60\,\text{W}$ sekä käyttöajat; tehoissa $110\,\text{W}$, $800\,\text{W}$ ja $1200\,\text{W}$ on enemmän numeroita.
 
 c) Säästökohteeksi sopii valaistus, koska se on toiseksi suurin erä ja sen tehoa voi pienentää vaihtamalla lamput LED-lamppuihin, kun taas pölynimurin käyttöaikaa ei voi lyhentää ilman, että siivous kärsii.
-**Järkevyys:** Vuorokauden energialla $2{,}01\,\text{kWh}$ keskiteho on $2{,}01\,\text{kWh} : 24\,\text{h} = 0{,}084\,\text{kW} = 84\,\text{W}$, mikä on kohtuullinen koti-iltojen laitteille. Vuodessa $365 \cdot 2\,\text{kWh} = 730\,\text{kWh}$ täsmää tulokseen. Pölynimuri käyttää enemmän kuin valaistus, koska sen teho on $13$-kertainen ($1200\,\text{W} : 90\,\text{W}$) mutta aika vain kymmenesosa.
+**Järkevyys:** Vuorokauden energialla $2{,}01\,\text{kWh}$ keskiteho on $2{,}01\,\text{kWh} : 24\,\text{h} = 0{,}084\,\text{kW} = 84\,\text{W}$, mikä on kohtuullinen koti-iltojen laitteille. Vuodessa $$\begin{aligned} &365 \cdot 2\,\text{kWh} \\ &= 7{,}3 \cdot 10^{2}\,\text{kWh} \end{aligned}$$ täsmää tulokseen. Pölynimuri käyttää enemmän kuin valaistus, koska sen teho on $13$-kertainen ($1200\,\text{W} : 90\,\text{W}$) mutta aika vain kymmenesosa.
 
 ## fy6-7-L2-06
 **Annettu:** mittarin lukemat $12\,437{,}2\,\text{kWh}$ alussa ja $12\,493{,}5\,\text{kWh}$ seitsemän vuorokauden kuluttua, hinta $a = 16\,\text{snt/kWh}$
@@ -181,9 +181,9 @@ c) $9{,}0\,\text{€}$.
 **Kaava:** $P_\text{ka} = \dfrac{E}{t}$ ja $E_\text{vuosi} = P_\text{ka} t_\text{vuosi}$
 **Muunnokset:** $t_\text{vuosi} = 365 \cdot 24\,\text{h} = 8760\,\text{h}$
 **Sijoitus:** $P_\text{ka} = \dfrac{1{,}64\,\text{kWh}}{48\,\text{h}} = 0{,}03417\,\text{kW}$ ja $E_\text{vuosi} = 0{,}03417\,\text{kW} \cdot 8760\,\text{h} = 299{,}3\,\text{kWh}$
-**Vastaus:** Vastauslaatikkoon $300\,\text{kWh}$. a) Suoralta luettu energia $48\,\text{h}$:n kohdalla on $1{,}64\,\text{kWh}$.
+**Vastaus:** Vastauslaatikkoon $3{,}0 \cdot 10^{2}\,\text{kWh}$. a) Suoralta luettu energia $48\,\text{h}$:n kohdalla on $1{,}64\,\text{kWh}$.
 
-b) $300\,\text{kWh}$, kaksi merkitsevää numeroa, koska suoran sovitus silmämääräisesti rajoittaa tarkkuutta.
+b) $3{,}0 \cdot 10^{2}\,\text{kWh}$, kaksi merkitsevää numeroa, koska suoran sovitus silmämääräisesti rajoittaa tarkkuutta.
 
 c) Huoneen lämpötila on mittauksen aikana toinen kuin vuoden keskiarvo, ja oven avaukset sekä jääkaapin sisältö vaihtelevat, joten kulutus ei ole koko vuoden sama. Lisäksi $48\,\text{h}$ on lyhyt aika, jolloin kompressorin käyntijaksot vaikuttavat tulokseen.
 **Järkevyys:** Keskiteho $0{,}034\,\text{kW} = 34\,\text{W}$ on pieni, koska kompressori on päällä vain osan ajasta; esimerkiksi $100\,\text{W}$:n kompressori käy noin kolmasosan ajasta. Tarkistus: $299\,\text{kWh} : 8760\,\text{h} = 0{,}0341\,\text{kW}$, mikä täsmää mittaukseen.

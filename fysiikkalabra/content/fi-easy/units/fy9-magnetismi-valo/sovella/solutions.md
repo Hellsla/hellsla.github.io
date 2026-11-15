@@ -6,7 +6,13 @@
 **Periaate:** Käämi pyörii tasaisesti homogeenisessa kentässä. Silloin käämin läpi kulkeva vuo vaihtelee jaksollisesti eli samalla tavalla yhä uudelleen. Induktiolain mukaan käämiin syntyy sinimuotoinen jännite. Jännite on huippuarvossaan, kun käämin taso on kentän suuntainen. Silloin vuo muuttuu nopeimmin (luvut *Sähkömagneettinen induktio* ja *Generaattori ja vaihtovirta*). Tehollinen arvo on se tasajännite, joka antaisi vastukseen saman keskimääräisen tehon. Sinimuotoisella jännitteellä tehollinen arvo on huippuarvo jaettuna luvulla $\sqrt{2}$.
 **Kaava:** $e_0 = NBA \cdot 2\pi f$ ja $U = \dfrac{e_0}{\sqrt{2}}$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $e_0 = 60 \cdot 0{,}50\,\text{T} \cdot 0{,}060\,\text{m}^2 \cdot 2\pi \cdot 50\,\tfrac{1}{\text{s}} = 565{,}5\,\text{V}$ ja $U = \dfrac{565{,}5\,\text{V}}{\sqrt{2}} = 399{,}9\,\text{V}$
+**Sijoitus:** $$
+\begin{aligned}
+e_0 &= 60 \cdot 0{,}50\,\text{T} \cdot 0{,}060\,\text{m}^2 \\
+&\cdot 2\pi \cdot 50\,\tfrac{1}{\text{s}} \\
+&= 565{,}5\,\text{V}
+\end{aligned}
+$$ ja $U = \dfrac{565{,}5\,\text{V}}{\sqrt{2}} = 399{,}9\,\text{V}$
 **Vastaus:** Huippuarvo on $e_0 \approx 570\,\text{V}$ ja tehollinen arvo $U \approx 400\,\text{V}$. Vastauksissa on kaksi merkitsevää numeroa, kuten magneettivuon tiheydessä $0{,}50\,\text{T}$ ja pinta-alassa $0{,}060\,\text{m}^2$.
 **Järkevyys:** Yksiköt sopivat: $\text{T} \cdot \text{m}^2 \cdot \tfrac{1}{\text{s}} = \tfrac{\text{Wb}}{\text{s}} = \text{V}$. Tehollinen arvo on pienempi kuin huippuarvo, kuten pitää. Lisäksi $400\,\text{V}$ on tavallinen teollisuuden jännite.
 
@@ -340,7 +346,14 @@
 ### b)
 **Kysytty:** ovatko ryhmän johtopäätökset perusteltuja
 **Periaate:** Pienen kulman oletus $\sin\theta \approx \tfrac{x}{L}$ pätee vain pienillä kulmilla. Tulosta verrataan valmistajan arvoon epävarmuuden avulla. Ehto $k\lambda < d$ rajoittaa maksimien määrää (luvut *Valon interferenssi ja diffraktio* ja *Mittaaminen ja mittauksen luotettavuus*).
-**Mallivastaus:** Kumpikaan johtopäätös ei ole perusteltu. Virhe on laskutavassa, ei laserissa. Pienen kulman oletus antaa ensimmäisestä kertaluvusta $\tfrac{1{,}667\,\mu\text{m} \cdot 0{,}270\,\text{m}}{0{,}800\,\text{m}} \approx 562\,\text{nm}$, eli noin $6\,\%$ liikaa. Toisesta kertaluvusta se antaa $692\,\text{nm}$, eli noin $30\,\%$ liikaa. Ero tangentin ja sinin välillä kasvaa, kun kulma kasvaa. Oikein laskettuna tulos on $532$–$533\,\text{nm}$. Oletetaan, että etäisyydet tunnetaan noin $0{,}3\,\text{cm}$:n tarkkuudella. Silloin toisen kertaluvun ääriarvot antavat noin $530$–$535\,\text{nm}$. Tulos on siis sopusoinnussa eli sopii yhteen valmistajan arvon $532\,\text{nm}$ kanssa. Lisäksi laser näytti vihreältä. Jo se sulkee pois punaisen valon. Kolmas kertaluku on olemassa, koska $3\lambda = 1{,}60\,\mu\text{m} < d = 1{,}667\,\mu\text{m}$. Kuitenkin $\sin\theta_3 = 0{,}958$, $\theta_3 \approx 73^\circ$, ja maksimi on $x_3 = 0{,}800\,\text{m} \cdot \tan 73{,}3^\circ \approx 2{,}7\,\text{m}$:n päässä keskimaksimista. Se on todennäköisesti seinän reunan ulkopuolella. Tai se on niin himmeä, ettei sitä huomattu. Hila ei siis ole viallinen.
+**Mallivastaus:** Kumpikaan johtopäätös ei ole perusteltu. Virhe on laskutavassa, ei laserissa. Pienen kulman oletus antaa ensimmäisestä kertaluvusta $\tfrac{1{,}667\,\mu\text{m} \cdot 0{,}270\,\text{m}}{0{,}800\,\text{m}} \approx 562\,\text{nm}$, eli noin $6\,\%$ liikaa. Toisesta kertaluvusta se antaa $692\,\text{nm}$, eli noin $30\,\%$ liikaa. Ero tangentin ja sinin välillä kasvaa, kun kulma kasvaa. Oikein laskettuna tulos on $532$–$533\,\text{nm}$. Oletetaan, että etäisyydet tunnetaan noin $0{,}3\,\text{cm}$:n tarkkuudella. Silloin toisen kertaluvun ääriarvot antavat noin $530$–$535\,\text{nm}$. Tulos on siis sopusoinnussa eli sopii yhteen valmistajan arvon $532\,\text{nm}$ kanssa. Lisäksi laser näytti vihreältä. Jo se sulkee pois punaisen valon. Kolmas kertaluku on olemassa, koska $$
+\begin{aligned}
+&3\lambda \\
+&= 1{,}60\,\mu\text{m} \\
+&< d \\
+&= 1{,}667\,\mu\text{m}
+\end{aligned}
+$$. Kuitenkin $\sin\theta_3 = 0{,}958$, $\theta_3 \approx 73^\circ$, ja maksimi on $x_3 = 0{,}800\,\text{m} \cdot \tan 73{,}3^\circ \approx 2{,}7\,\text{m}$:n päässä keskimaksimista. Se on todennäköisesti seinän reunan ulkopuolella. Tai se on niin himmeä, ettei sitä huomattu. Hila ei siis ole viallinen.
 
 ### c)
 **Kysytty:** miten mittausta parannetaan
@@ -361,7 +374,12 @@
 **Periaate:** Magneettinen voima $qvB$ on kohtisuorassa nopeutta vastaan. Siksi protoni on elektrodin sisällä tasaisessa ympyräliikkeessä. Voima on sen keskeisvoima eli voima, joka osoittaa ympyrän keskipisteeseen (luvut *Varatun hiukkasen liike sähkö- ja magneettikentässä* ja *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*). Yhdellä kierroksella protoni kulkee ympyrän kehän $2\pi r$ (luku *Ympyrärata: jaksonaika ja ratanopeus*). Protoni ylittää raon joka puolikierroksella. Silloin jännitteen suunnan on vaihduttava. Siksi jännitteen taajuus on sama kuin kierrostaajuus.
 **Kaava:** $qvB = \dfrac{mv^2}{r}$, joten $r = \dfrac{mv}{qB}$, ja $T = \dfrac{2\pi r}{v} = \dfrac{2\pi m}{qB}$; vauhti supistuu pois, ja $f = \dfrac{1}{T} = \dfrac{qB}{2\pi m}$
 **Muunnokset:** Suureet ovat perusyksiköissä. Lopuksi $1\,\text{MHz} = 10^6\,\text{Hz}$.
-**Sijoitus:** $T = \dfrac{2\pi \cdot 1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}20\,\text{T}} = 5{,}468 \cdot 10^{-8}\,\text{s}$, joten $f = \dfrac{1}{5{,}468 \cdot 10^{-8}\,\text{s}} = 1{,}829 \cdot 10^{7}\,\text{Hz} = 18{,}29\,\text{MHz}$
+**Sijoitus:** $$
+\begin{aligned}
+T &= \dfrac{2\pi \cdot 1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}20\,\text{T}} \\
+&= 5{,}468 \cdot 10^{-8}\,\text{s}
+\end{aligned}
+$$, joten $f = \dfrac{1}{5{,}468 \cdot 10^{-8}\,\text{s}} = 1{,}829 \cdot 10^{7}\,\text{Hz} = 18{,}29\,\text{MHz}$
 **Vastaus:** Kierrosaika $T = \tfrac{2\pi m}{qB}$ ei riipu vauhdista eikä säteestä. Nopeampi protoni kulkee suuremman ympyrän samassa ajassa. Jännitteen on vaihdeltava taajuudella $f \approx 18{,}3\,\text{MHz}$. Vastauksessa on kolme merkitsevää numeroa, kuten magneettivuon tiheydessä $1{,}20\,\text{T}$.
 **Järkevyys:** Yksiköt: $\tfrac{\text{kg}}{\text{C} \cdot \text{T}} = \tfrac{\text{kg}}{\text{C} \cdot \tfrac{\text{N}}{\text{A} \cdot \text{m}}} = \tfrac{\text{kg} \cdot \text{m}}{\text{N} \cdot \text{s}} = \text{s}$. Taajuus on radiotaajuusaluetta. Syklotronien kiihdytysjännitteillä on tällaisia taajuuksia.
 
@@ -393,7 +411,12 @@
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a_\text{n} = \dfrac{(3{,}914 \cdot 10^{7}\,\text{m/s})^2}{0{,}3406\,\text{m}} = 4{,}498 \cdot 10^{15}\,\text{m/s}^2$
 **Vastaus:** Kiihtyvyys on $a \approx 4{,}5 \cdot 10^{15}\,\text{m/s}^2$, ja se osoittaa radan keskipisteeseen. Vastauksessa on kaksi merkitsevää numeroa, kuten b-kohdan tuloksissa.
-**Järkevyys:** $\tfrac{qvB}{m} = \tfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 3{,}914 \cdot 10^{7}\,\text{m/s} \cdot 1{,}20\,\text{T}}{1{,}673 \cdot 10^{-27}\,\text{kg}} \approx 4{,}5 \cdot 10^{15}\,\text{m/s}^2$. Tulos on sama. Kiihtyvyys on valtava, koska protonin massa on hyvin pieni. Voima on noin $7{,}5 \cdot 10^{-12}\,\text{N}$.
+**Järkevyys:** $$
+\begin{aligned}
+\tfrac{qvB}{m} &= \tfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 3{,}914 \cdot 10^{7}\,\text{m/s} \cdot 1{,}20\,\text{T}}{1{,}673 \cdot 10^{-27}\,\text{kg}} \\
+&\approx 4{,}5 \cdot 10^{15}\,\text{m/s}^2
+\end{aligned}
+$$. Tulos on sama. Kiihtyvyys on valtava, koska protonin massa on hyvin pieni. Voima on noin $7{,}5 \cdot 10^{-12}\,\text{N}$.
 
 ### Yleisiä virheitä
 - a-kohdassa kierrosaika lasketaan erikseen jollekin vauhdille, eikä todeta, että vauhti supistuu pois.

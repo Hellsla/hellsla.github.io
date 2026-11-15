@@ -5,7 +5,7 @@
 **Kaava:** $\Delta U = p \cdot U + n \cdot r$
 **Muunnokset:** $p = 0{,}5\,\% = 0{,}005$; muita muunnoksia ei tarvita, koska lukema ja resoluutio ovat voltteina.
 **Sijoitus:** $\Delta U = 0{,}005 \cdot 12{,}46\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}0623\,\text{V} + 0{,}02\,\text{V} = 0{,}0823\,\text{V}$
-**Vastaus:** $0{,}08\,\text{V}$, yksi merkitsevä numero, koska virheraja pyöristetään kuten virhe-arvio (laskimen arvo $0{,}0823\,\text{V}$).
+**Vastaus:** $0{,}08\,\text{V}$, yksi merkitsevä numero, koska virheraja pyöristetään kuten virhearvio (laskimen arvo $0{,}0823\,\text{V}$).
 **Järkevyys:** Prosenttiosa on noin puolet sadasosasta $12\,\text{V}$:sta eli noin $0{,}06\,\text{V}$, ja kaksi askelta lisää $0{,}02\,\text{V}$: yhteensä noin $0{,}08\,\text{V}$. Virheraja on alle prosentti lukemasta, mikä sopii hyvään mittariin.
 
 ## fy6-2-L1-02
