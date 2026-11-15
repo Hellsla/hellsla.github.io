@@ -219,7 +219,7 @@ $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,
 **Mallivastaus:** Huojuntataajuus on $f_\text{H} = \dfrac{1}{0{,}25\,\text{s}} = 4\,\text{Hz}$. Siis $f_x = 523\,\text{Hz} \pm 4\,\text{Hz}$ eli $519\,\text{Hz}$ tai $527\,\text{Hz}$. Vaha laski taajuutta $f_x$, ja huojunta nopeutui. Erotus siis kasvoi. Se on mahdollista vain, jos $f_x$ oli alle $523\,\text{Hz}$. Vastaus on $519\,\text{Hz}$. Tarkistus: jos $f_x$ olisi ollut $527\,\text{Hz}$, vaha toisi sen lähemmäs $523\,\text{Hz}$:ää ja huojunta hidastuisi.
 
 ## fy5-14-L2-09
-**Annettu:** taajuudet $f_1 = 432\,\text{Hz}$ ja $f_2 = 440\,\text{Hz}$, äänen nopeus ilmassa $v = 343\,\text{m/s}$. Kohtien b)–d) tiedot ja väitteet ovat aineistosta (Yle, julkaistu 25.1.2020, luettu 15.11.2026).
+**Annettu:** taajuudet $f_1 = 432\,\text{Hz}$ ja $f_2 = 440\,\text{Hz}$, äänen nopeus ilmassa $v = 343\,\text{m/s}$. Kohtien b)–d) tiedot ja väitteet ovat aineistosta (Yle, julkaistu 25. tammikuuta 2020, luettu 15. marraskuuta 2026).
 **Kysytty:** a) aallonpituudet $\lambda_1$ ja $\lambda_2$ metreinä, b) taajuuksien ja aallonpituuksien vertailu ja eron fysikaalinen merkitys, c) artikkelin kertomat väitteet, d) väitteiden perusteiden arviointi ja luotettava tutkimus
 **Periaate:** Ääni on aalto, joka etenee ilmassa. Sille pätee aaltoliikkeen perusyhtälö $v = f\lambda$. Äänen nopeus riippuu väliaineesta eli aineesta, jossa ääni etenee. Se ei riipu taajuudesta. Molemmat äänet etenevät siksi samalla nopeudella. Kun taajuus on suurempi, aallonpituus on lyhyempi.
 **Kaava:** $v = f\lambda$, josta $\lambda = \dfrac{v}{f}$

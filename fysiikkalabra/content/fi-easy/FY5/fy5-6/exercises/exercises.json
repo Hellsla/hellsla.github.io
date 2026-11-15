@@ -130,7 +130,7 @@
     {
       "id": "fy5-6-L1-11",
       "level": 1,
-      "text": "Luotain kiertää Kuuta lähes ympyrärataa. Radan säde Kuun keskipisteestä on $1840\\,\\text{km}$. Etsi Kuun massa MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Laske putoamiskiihtyvyys luotaimen radalla. Se kertoo, kuinka suurella kiihtyvyydellä Kuun gravitaatio vetää luotainta. Anna vastaus yksikössä $\\text{m/s}^2$.",
+      "text": "Syventävä tehtävä.\n\nLuotain kiertää Kuuta lähes ympyrärataa. Radan säde Kuun keskipisteestä on $1840\\,\\text{km}$. Etsi Kuun massa MAFY-taulukosta (mafytaulukot.fi). MAFY-taulukko on koulun fysiikan taulukkokirja. Laske putoamiskiihtyvyys luotaimen radalla. Se kertoo, kuinka suurella kiihtyvyydellä Kuun gravitaatio vetää luotainta. Anna vastaus yksikössä $\\text{m/s}^2$.",
       "lookup": "MAFY",
       "answer": 1.45,
       "unit": "m/s²",
@@ -278,6 +278,19 @@
       "figure": "fy5-6/radat",
       "answer": 7.7,
       "unit": "",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy5-6-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "text": "Aineisto: [NASA – Planetary Fact Sheet](https://nssdc.gsfc.nasa.gov/planetary/factsheet/)\n\nNoudattavatko planeetat Keplerin kolmatta lakia? Keplerin kolmas laki sanoo näin: planeetan kiertoajan $T$ neliö on verrannollinen radan isoakselin puolikkaan $a$ kuutioon, eli $T^2 \\propto a^3$. Isoakselin puolikas on puolet soikean radan pisimmästä läpimitasta. Ympyräradalla isoakselin puolikas on radan säde $r$.\n\nTutustu planeettojen ratatietoihin. Taulukon rivillä *Distance from Sun* on planeetan keskietäisyys Auringosta. Se on radan isoakselin puolikas, ja sen yksikkö on $10^{6}\\,\\text{km}$. Rivillä *Orbital Period* on kiertoaika vuorokausina. Älä käytä Kuun saraketta (*Moon*), koska Kuu kiertää Maata.\n\na) Valitse viisi planeettaa. Kerää taulukkoon niiden kiertoajat ja ratojen isoakselien puolikkaat.\n\nb) Piirrä kuvaaja: vaaka-akselille isoakselin puolikkaan kuutio ja pystyakselille kiertoajan neliö. Luvut pysyvät sopivan kokoisina esimerkiksi yksiköissä $10^{8}\\,\\text{km}$ ja $10^{3}\\,\\text{d}$. Voit piirtää kuvaajan paperille tai taulukkolaskentaohjelmalla.\n\nc) Tutki kuvaajan avulla, miten havaintoaineisto tukee Keplerin kolmatta lakia.\n\nd) Laske Marsin kiertoaika. Käytä Maan ratatietoja ja Marsin isoakselin puolikasta. Vertaa tulosta NASAn ilmoittamaan arvoon. Arvioi, mistä mahdolliset erot johtuvat.\n\nVastauskenttään tulee kohdan d) laskettu Marsin kiertoaika vuorokausina.",
+      "answer": 687.1,
+      "unit": "d",
       "tolerance": 0.02
     }
   ],
