@@ -265,7 +265,11 @@ katselmoinnit kulkevat muutoksen yli. Jaettu muutos (`scripts/reviews.py` ja kai
 
 Opettaja 2026-11-15: "pitää olla liukukitka". Termi vaihdetaan koko sivustolla: liikekitka → liukukitka,
 liikekitkakerroin → liukukitkakerroin (ja taivutusmuodot), `glossary.json`, käsitekortit, lukujen tekstit, tehtävät,
-ratkaisut ja kuvien tekstit kolmella kielellä (en: sliding friction / coefficient of sliding friction). Esiintymiä fi:ssä
+ratkaisut ja kuvien tekstit kolmella kielellä (en: sliding friction / coefficient of sliding friction).
+Lepokitkan termit samalla (opettaja 2026-11-15): kun kappale on levossa, kitka on **lepokitka**; sen suurin arvo
+(kappale on juuri lähtemässä liikkeelle) on **täysin kehittynyt lepokitka eli lähtökitka**, ja sen kerroin on
+lepokitkakerroin. Yhtenäistetään nykyiset muodot (esim. "suurin lepokitka", "maksimilepokitka") tähän; en: static
+friction / maximum (fully developed) static friction. Esiintymiä fi:ssä
 noin 190 (FY4 17 tiedostoa, FY5 2, FY9 6). Merkitys ei muutu, mutta teksti muuttuu, joten katselmointi `reviews.py scope`n
 mukaan. Jaettu (glossary.json), ajetaan yksin. FY9:n osuus tehdään tunnistuskaavioiden kanssa (9c, #602).
 
