@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 024a3851f574b445
-Review of the recognition chart (queue 9c) and the term change against the version passed at 4217f2037e77873f; full on the chart, delta on the rest.
+CONTENT-HASH: 6bd8953fb5e744db
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (024a3851f574b445); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-- A: teacher.md says "kunkin haaran kohdalla"; the chart has seven rows. Use "rivin".
-- B: the two thermal-expansion rows differ only by "pituus/tilavuus"; fine, but "kappale" vs "neste" is the only hint; solid volume expansion is not covered by the rows.
+- B (kept): solid volume expansion has no row; "kappale" vs "neste" is the only hint between the two expansion rows.
 
 ## Checked
-- Rows: lämpeneminen, sulaminen, höyrystyminen, lämpötasapaino (eristetty astia as condition), pituuden ja tilavuuden laajeneminen, U-arvo. The heating curve beside the chart covers the phase sequence.
-- Rows read against the unit's tasks and Ydinajatus; chart placed in Ydinajatus (after the paragraph, before Kaava); no formula list, each pill is the short result of its choice; aria-label read through, it gives sign -> choice -> law for every row in the same order and wording as the chart, usable as a screen-reader list; white on #1a4d2e pill identical in all charts; the only other changed lines are the teacher.md sentence (käsitekartta -> tunnistuskaavio). fi-easy/en not in my scope here.
+- Diff read: only teacher.md "kunkin rivin kohdalla" changed (round-1 Polish A fixed); chart and aria-label unchanged, so the chart PNG was not reopened.
+- The rest passes through the round-1 report.

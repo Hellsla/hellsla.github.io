@@ -1,16 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 9d91dfe6c6c1bab9
-Review of the recognition chart (queue 9c) and the term change against the version passed at 380511676da95b96; full on the chart, delta on the rest.
+VERDICT: PASS
+CONTENT-HASH: 9723f5bee22920e2
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (9d91dfe6c6c1bab9).
 
 ## Blocking
-- B (row 7 and ARIA_KARTTA): "kaasu laajenee tai puristuu → kaasun työ, W = pΔV". W = pΔV holds only at constant pressure; in general the work is the area under the (V, p) curve. The unit's Kaava section states the condition ("Vakiopaineessa laajeneva kaasu tekee työn …; työ on (V, p)-kuvaajan alle jäävä pinta-ala"), the chart drops it, so a student would apply pΔV to an isothermal or adiabatic change. Fix: "kaasu laajenee vakiopaineessa" (or add "vakiopaine" to the choice) in the chart and the aria-label.
+(none)
 
 ## Polish
-- C: "sisäenergia muuttuu → ΔU = Q + W": the sign convention (W work done on the gas) is in the Kaava section; fine for a chart.
-- C: "syvyys nesteessä → p = ρgh" is the overpressure in a fluid at rest; the Kaava says so, and the next row gives p = p_0 + ρgh, so the pair is right.
+- C: the 1st-law row still writes W without naming it the work done on the gas; the work row now says "työn suuruus" (magnitude) as the Kaava does, so the pair no longer contradicts the Kaava. "→ 1. pääsääntö, W kaasuun" would make the sign explicit.
+- C: "syvyys nesteessä → p = ρgh" is the hydrostatic part (round 1, stands).
 
 ## Checked
-- Rows against the Kaava section: force over an area → p = F/A; depth → p = ρgh; depth and air pressure → p = p_0 + ρgh (p_0 the pressure at the surface, usually air pressure: aria says so); amount of substance known → pV = nRT; state changes, amount does not → p_1V_1/T_1 = p_2V_2/T_2; Celsius → T = θ + 273,15 K (θ the numerical value, as the Kaava defines); gas expands or is compressed → W = pΔV (above); internal energy → first law; engine takes heat and does work → η = W/Q_1.
-- Names agree with kaavanimet.tsv; the Johda itse result W = Q_1 − Q_2 is kept out, as decided 2026-11-12; nothing outside FY9.
-- ARIA_KARTTA: same nine rows, same order and physics.
-- teacher.md: only the term "tunnistuskaavio". unit.md: only the figure.
+- Round-1 Blocking fixed (fi: missing constant-pressure condition): row 7 is now "paine vakio, tilavuus muuttuu → työn suuruus, W = pΔV" (en "constant pressure, volume changes → magnitude of the work"), which is exactly the Kaava row (constant pressure, ΔV a magnitude, ΔU = Q + W with W done on the gas; on expansion W = −pΔV).
+- aria-label: "työn suuruus on paine kertaa tilavuuden muutoksen suuruus" states the same physics as the pill.
+- Rendered chart (360 px) shows the new row; other rows unchanged and correct as in round 1.
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- Hash taken at the start and the end (9723f5bee22920e2).

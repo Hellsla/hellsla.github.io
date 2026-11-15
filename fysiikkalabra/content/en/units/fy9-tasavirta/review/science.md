@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8b9ec94f3a8cf71b
-Review of the recognition chart (queue 9c) and the term change against the version passed at 5990f23ea9ddfef8; full on the chart, delta on the rest.
+CONTENT-HASH: 3717a9af9d7a1097
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (8b9ec94f3a8cf71b).
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: "kiertämällä piiri" means one closed loop; fine at this level.
 
 ## Checked
-- Every row: $I = \Delta Q/\Delta t$; $U = RI$; $R = \rho\ell/A$; series $R_\text{tot} = \Sigma R$ (same current); parallel $1/R_\text{tot} = \Sigma 1/R$ (same voltage); $\Sigma I_\text{in} = \Sigma I_\text{out}$; $\Sigma\Delta V = 0$; $P = UI$; $U = E - R_\text{s}I$. Agree with the Formula section (MAFY symbols).
-- The aria-label matches the chart. The new keys "t"->"in", "l"->"out" give the same subscripts as the Formula section.
-- Term change: the diff's other lines are "concept map" -> "recognition chart" in teacher.md and new figures.json keys; no formula, number or task changed.
-- The en chart (docs/figures/fy9-tunnistus/fy9-tasavirta-en-360.png) and the hash, taken at the start and the end (8b9ec94f3a8cf71b).
+- Changed row 9: "paristolla on sisäinen vastus → johda silmukalla, ΣΔV = 0" replaces the pill U = E − R_sI. Correct: going round the loop, E − R_sI − RI = 0 gives the terminal voltage U = E − R_sI, the unit's Johda itse result; the chart no longer shows a derived formula as a law.
+- aria-label: "napajännite johdetaan kiertämällä piiri, jännitteiden summa on nolla" states the same.
+- Other rows unchanged and correct as in round 1.
+- Hash taken at the start and the end (3717a9af9d7a1097).

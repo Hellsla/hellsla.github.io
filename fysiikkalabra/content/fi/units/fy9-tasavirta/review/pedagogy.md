@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ed63c3e5b1928717
-Review of the recognition chart (queue 9c) and the term change against the version passed at f131fb403db2206f; full on the chart, delta on the rest.
+CONTENT-HASH: e1f8b9fbff0b8640
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (ed63c3e5b1928717); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-- B: Rows "sarjaan kytketyt -> sama virta" and "rinnan kytketyt -> sama jännite" show a pill (R_kok = ΣR, 1/R_kok = Σ1/R) that does not follow from the choice written beside it. Make the choice "kokonaisresistanssi" and mention the same current or voltage in the sign or aria-label.
-- C: "laitteen teho tai energia -> teho P = UI" has no E = Pt; the aria-label has the same gap.
-- C: "virta haarautuu -> haarapiste" is fine, but the pill ΣI_t = ΣI_l has no hint that it is the Kirchhoff's first law (aria-label gives it only in words).
+- B (kept): the series and parallel rows show a pill that is not the stated choice ("sama virta" beside R_kok = ΣR).
+- C (kept): no E = Pt in the "teho tai energia" row.
+- C: the aria-label still has double spaces ("tehtävän  tunnusmerkki", "tunnetaan:  ") although the fix round said they were removed; harmless for a screen reader.
 
 ## Checked
-- 9 rows read; the aria-label matches each row; teacher.md updated to "rivi kerrallaan" and the conditions (Ohm at constant temperature, Joule only for a resistor) are listed there.
-- Chart as a recognition chart: start box, then one card per sign with the choice and a dark-green pill; no formula list; 360 px capture readable, no clipped label.
-- Placement after Ydinajatus (after Ydinajatus); aria-label read against every row: same rows, same order, same physics, spoken symbols in words, so usable for a screen reader.
-- Changed term lines (liikekitka -> liukukitka) in the diff: consistent, physics unchanged.
-- teacher.md sentence read against the chart.
-- Not looked at: fi-easy and en versions (this report is fi only).
+- Changed row: "paristolla on sisäinen vastus -> johda silmukalla, ΣΔV = 0" (aria-label "napajännite johdetaan kiertämällä piiri, jännitteiden summa on nolla"). It matches the unit's Johda itse approach and no longer hands the student a formula the exam wants derived; the pill repeats the loop row's, acceptable because the sign names the situation.
+- fi-easy 360 px PNG opened: nine rows, subtitle "piirrä kytkentä ensin, sitten tunnusmerkki" fits on one line.
+- The rest passes through the round-1 report.

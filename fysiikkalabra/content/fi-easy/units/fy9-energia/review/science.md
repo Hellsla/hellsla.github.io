@@ -1,12 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 0d6428d22f2ec290
-Review of the recognition chart (queue 9c) and the term change against the version passed at db991bf31ee21542; full on the chart, delta on the rest.
+VERDICT: PASS
+CONTENT-HASH: bbb5a2d9dbcc6a86
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (0d6428d22f2ec290).
 
 ## Blocking
-- A (term, contradicts the unit's Kaava and glossary): the first row "suljettu järjestelmä → energia säilyy, $E_\text{alussa} = E_\text{lopussa}$" (aria: "Suljettu järjestelmä: energia säilyy"). A closed (suljettu) system can still exchange energy as heat and work; the Kaava section (fi-easy unit.md 285) and glossary.json ("eristetty systeemi": "Suljettuun systeemiin energiaa voi vielä siirtyä…") use **eristetty systeemi**. Fix in figures.py rows and ARIA_KARTTA (fi) and in figures.json (fi-easy key and value): "eristetty systeemi" (or "ei energiaa sisään eikä ulos").
+(none)
 
 ## Polish
-- C: "voima siirtää matkan → W = Fs" holds for a constant force along the displacement; the sign implies it.
+- C: "voima siirtää matkan -> W = Fs" assumes a constant force along the displacement (round 1, stands).
 
 ## Checked
-Rows: P = ΔE/Δt, E = Pt (steady power), 1 kWh = 1000 W · 3600 s = 3,6 MJ (recomputed), η = W_a/W_o (MAFY symbols, matches Kaava 306), η = η1η2η3 for devices in series, Q = Hm, W = Fs. fi-easy aria-label matches the chart row for row; "hyötyenergia jaettuna otetulla energialla" is right. teacher.md: teacher.md: käsitekartta -> tunnistuskaavio only, no physics changed.
+- Round-1 Blocking fixed: row 1 is now "eristetty systeemi" (en "isolated system") in figures.py, the rendered chart and the aria-label (fi-easy figures.json value); this matches the Kaava ("Eristetyssä systeemissä …"/"In an isolated system …") and glossary eristetty systeemi.
+- unit.md sentence after the chart: "which branch" -> "which sign the problem gives"; no physics changed.
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- Rows 2-8 unchanged and correct as in round 1 (1 kWh = 3,6 MJ recomputed).
+- Hash taken at the start and the end (bbb5a2d9dbcc6a86).

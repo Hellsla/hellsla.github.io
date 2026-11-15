@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e5fcc5de3ced9e87
-Review of the recognition chart (queue 9c) and the term change against the version passed at 6263b46de4aa9695; full on the chart, delta on the rest.
+CONTENT-HASH: cc5cfb996b96c940
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (e5fcc5de3ced9e87); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-- A: teacher.md "one example for each branch" is now rows, not branches; reword.
-- B: row "state changes, amount does not -> p1V1/T1 = p2V2/T2" has the condition in its sign, good; "depth in a liquid -> p = rho g h" and "depth and air pressure -> p0 + rho g h" are two rows for one law; the second sign could read "pressure at depth, open surface" to make the difference clear.
-- B: the unit's tyre hook uses p proportional to T at constant volume; no sign leads to that special case.
+(none new; round-1 findings stand)
 
 ## Checked
-Rows: force over area, depth, depth+air pressure, mol known (pV = nRT), state change, Celsius -> kelvin (+273,15), expansion work, first law, heat engine efficiency. All results follow from signs; order moves from pressure to gas to engines. aria matches.
+- Changed row "constant pressure, volume changes -> magnitude of the work, W = pΔV" (translations present); the English aria-label says "Constant pressure, volume changes: the magnitude of the work is pressure times the magnitude of the change of volume". The sign carries the condition. fi chart PNG opened: nine rows, nothing clipped.
+- teacher.md "for each row" is true.
+- The rest passes through the round-1 report.

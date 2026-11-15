@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 024a3851f574b445
-Review of the recognition chart (queue 9c) and the term change against the version passed at 4217f2037e77873f; full on the chart, delta on the rest.
+CONTENT-HASH: 6bd8953fb5e744db
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (024a3851f574b445).
 
 ## Blocking
 (none)
 
 ## Polish
-- C: "jää sulaa tai vesi jäätyy" and "vesi kiehuu tai höyry tiivistyy" name water; Q = sm and Q = rm hold for any substance at its melting or boiling point. The examples are typical YO wording and leave no wrong picture.
+- Round-1 Polish items stand as written there (C, not blocking).
 
 ## Checked
-- Rows against the Kaava section and kaavanimet.tsv: temperature changes, phase does not → Q = cmΔT; melting/freezing → Q = sm; boiling/condensing → Q = rm (MAFY symbols s and r); insulated vessel, mixing → Q_luovutettu = Q_vastaanotettu (the basic equation first, as the house rule asks; the condition "eristetty" is in the sign); length changes → l = l_0(1 + αΔT); liquid volume changes → V = V_0(1 + γΔT); heat conducts through a wall → P = UAΔT.
-- No vectors; units implicit and consistent; nothing outside FY9.
-- ARIA_KARTTA: same seven rows, same order and physics.
-- teacher.md: only "käsitekartta" → "tunnistuskaavio". unit.md: only the figure.
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- The chart, its aria-label and every other file are unchanged since round 1; the round-1 Checked list holds.
+- Hash taken at the start and the end (6bd8953fb5e744db).

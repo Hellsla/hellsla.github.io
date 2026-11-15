@@ -1,15 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: d8caf555a4e34ae3
-Review of the recognition chart (queue 9c) and the term change against the version passed at 4fca163bc3ac2f29; full on the chart, delta on the rest.
+VERDICT: PASS
+CONTENT-HASH: 2e223f8749c7ebf6
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (d8caf555a4e34ae3); earlier findings kept unless named fixed.
 
 ## Blocking
-- teacher.md, 33-43 min: "Opettaja käy läpi kuuden kysymyksen kartan" no longer matches; the figure is a chart of seven rows, not a map of six questions. Reword, and check the Pohdinta line "Teoriatiivistelmän kuuden kysymyksen kohdalla" in the same file.
+(none)
 
 ## Polish
-- A: row "suora ei kulje origon kautta -> systemaattinen virhe, b≠0" is a misleading rule of thumb: a nonzero intercept can be physical (initial length of a spring, offset in the law). Make the sign "suora ei kulje origon kautta -> tulkitse b" with the unit's oil/beaker case as the example.
-- B: "tulos kulmakertoimesta -> kaukaiset pisteet" does not say why; choice could read "lue suoralta kaukaa toisistaan".
-- B: "onko epävarmuus pieni?" is not a task phrase; "kuinka tarkka tulos on?" is nearer exam language.
+- A: teacher.md 33-43 min "käy läpi tunnistuskaavion seitsemän rivin ja kuvaajan vakiotermin" is ungrammatical; use "seitsemän riviä".
+- B (kept): a non-zero b can be physical; the row reads "malli origon kautta, suora ei -> systemaattinen virhe, b ≠ 0", better than before (the sign states the condition and the aria-label says "viittaa") but the pill could carry "tulkitse b".
+- B (kept): "kaukaiset pisteet" and "onko epävarmuus pieni?" wording.
 
 ## Checked
-- Rows: keskiarvo, vaihteluvälin puolikas, x̄±Δx, suhteellinen epävarmuus, lineaarinen riippuvuus y=kx+b, kulmakerroin, nonzero intercept. Order follows a measurement analysis.
-- Rows read against the unit's tasks and Ydinajatus; chart placed in Ydinajatus (after the paragraph, before Kaava); no formula list, each pill is the short result of its choice; aria-label read through, it gives sign -> choice -> law for every row in the same order and wording as the chart, usable as a screen-reader list; white on #1a4d2e pill identical in all charts; the only other changed lines are the teacher.md sentence (käsitekartta -> tunnistuskaavio). fi-easy/en not in my scope here.
+- Round-1 Blocking fixed: teacher.md now counts the chart's seven rows (the 360 px PNG shows exactly seven); the "kuuden kysymyksen" wording is gone from the teacher.md.
+- Header "mistä tunnistan menetelmän?" fits (a method, not a law); the aria-label starts "mikä menetelmä sopii kokeellisen tehtävän kysymykseen?".
+- 360 px PNG opened: seven rows, no clipped label.
+- The rest passes through the round-1 report.

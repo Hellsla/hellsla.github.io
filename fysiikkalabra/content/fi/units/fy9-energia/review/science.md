@@ -1,16 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 6ad4a6f43f1059e3
-Review of the recognition chart (queue 9c) and the term change against the version passed at e297d1ba1b8c1dd6; full on the chart, delta on the rest.
+VERDICT: PASS
+CONTENT-HASH: 30d9fe8f97cb2a78
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (6ad4a6f43f1059e3).
 
 ## Blocking
-- B (row 1 and ARIA_KARTTA): "suljettu järjestelmä → energia säilyy, E_alussa = E_lopussa". A closed system exchanges no matter but can exchange energy as heat and work; total energy is constant only in an isolated system. glossary.json says exactly this ("eristetty systeemi … Suljettuun systeemiin energiaa voi vielä siirtyä"), and the unit's own Kaava section says "Eristetyssä systeemissä, johon energiaa ei tule eikä josta sitä lähde". The chart contradicts both and teaches the wrong condition. Fix: "eristetty systeemi" (or "energiaa ei tule eikä lähde") in the sign and the aria-label.
+(none)
 
 ## Polish
-- C: "voima siirtää matkan → W = Fs": the Kaava's condition is a constant force along the motion; "liikkeen suuntainen voima" in the sign would make it explicit.
-- Note for the teacher/pedagogy: "monta laitetta peräkkäin → η = η_1η_2η_3" is the Johda itse result of the Kaava section; the old map left it out on purpose (teacher 2026-11-12). Physics is right (each stage's output is the next stage's input).
+- C: "voima siirtää matkan -> W = Fs" assumes a constant force along the displacement (round 1, stands).
 
 ## Checked
-- Rows: energy over time → P = ΔE/Δt; steady power, known duration → E = Pt (Kaava: "tasaisella teholla"); kWh → 1 kWh = 1000 W·3600 s = 3,6 MJ (recomputed); useful and taken energy → η = W_a/W_o (MAFY symbols of mafy-tunnukset.tsv; aria's "annettu energia jaettuna otetulla" matches); chain → product of efficiencies (derivation in the johda block checked); fuel → Q = Hm; force over a distance → W = Fs.
-- Names and symbols agree with kaavanimet.tsv; nothing outside FY9.
-- ARIA_KARTTA lists the same eight rows in order with the same physics (so it carries the same "suljettu" error).
-- teacher.md: only "käsitekartta" → "tunnistuskaavio". unit.md: only the figure.
+- Round-1 Blocking fixed: row 1 is now "eristetty systeemi" (en "isolated system") in figures.py, the rendered chart and the aria-label (fi ARIA_KARTTA); this matches the Kaava ("Eristetyssä systeemissä …"/"In an isolated system …") and glossary eristetty systeemi.
+- unit.md sentence after the chart: "which branch" -> "which sign the problem gives"; no physics changed.
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- Rows 2-8 unchanged and correct as in round 1 (1 kWh = 3,6 MJ recomputed).
+- Hash taken at the start and the end (30d9fe8f97cb2a78).

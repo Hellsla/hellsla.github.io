@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 84c1d79c5900ea6f
-Review of the recognition chart (queue 9c) and the term change against the version passed at dc13071f6130e116; full on the chart, delta on the rest.
+CONTENT-HASH: bfb463586d0ab8e5
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (84c1d79c5900ea6f); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-- B: teacher.md still says "rivi kerrallaan: fotoni ja atomi, ydin, säteily ja ihminen", but the chart no longer groups the rows by those topics. Say "rivi kerrallaan" without the groups, or name which rows belong to which topic.
-- B: The LED threshold row (eU_k ≈ hf, in the old map and in the unit's text, 5 mentions of LED) is gone. A YO task on an LED has no sign here. Add "LED syttyy" -> kynnysjännite.
-- C: "ydinreaktion massaero" and "säteilyn laji otetaan huomioon" are not task wording; try "reaktiossa massa pienenee" and "alfa, beeta vai gamma".
+- B (kept): the LED threshold row is missing.
+- C (kept): "ydinreaktion massaero" and "säteilyn laji otetaan huomioon" are not task wording.
 
 ## Checked
-- 9 rows read; each result follows from its sign; the hub line "mikä suure annetaan? sitten tunnusmerkki" matches the ordering; teacher.md checked (see Polish).
-- Chart as a recognition chart: start box, then one card per sign with the choice and a dark-green pill; no formula list; 360 px capture readable, no clipped label.
-- Placement after Ydinajatus (after Ydinajatus); aria-label read against every row: same rows, same order, same physics, spoken symbols in words, so usable for a screen reader.
-- Changed term lines (liikekitka -> liukukitka) in the diff: consistent, physics unchanged.
-- teacher.md sentence read against the chart.
-- Not looked at: fi-easy and en versions (this report is fi only).
+- teacher.md now says "rivi kerrallaan ylhäältä alas" with three groups; rows 1-3 are photon and atom, 4-6 nucleus, 7-9 radiation and dose, so the sentence is true (round-1 Polish B fixed).
+- Photoelectric row now hf = W + E_k,max, on a wide pill of its own line; nothing clipped in the 360 px PNG (nine rows).
+- The rest passes through the round-1 report.

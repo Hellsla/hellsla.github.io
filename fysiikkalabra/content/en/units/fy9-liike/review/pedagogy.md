@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b242489c281d686d
-Review of the recognition chart (queue 9c) and the term change against the version passed at 8e16b09b0e569f61; full on the chart, delta on the rest.
+CONTENT-HASH: 4cde8bd5463d7c4f
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (b242489c281d686d); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-- A: teacher.md 25-35 min still says draw the (t,x) and (t,v) graphs "and show the slope downwards and the area upwards" while going through the chart; the chart no longer shows the three graphs or the down/up arrows. The Key idea text keeps the slope/area idea, so the instruction is still doable, but it no longer describes the figure.
-- A: row "no acceleration known -> mean velocity, Dx = (v0+v)/2 t" does not say that it needs constant acceleration; as a rule of thumb "acceleration not known" invites using it for any motion. Say "constant acceleration, a not given".
-- B: aria (and fi) read "pinta- ala" with a stray hyphen and space; screen readers say it as two words.
-- B: area under the (t,a) graph -> Delta v is missing; the old chart showed it.
+(none new; round-1 findings stand)
 
 ## Checked
-Rows: constant v, constant a (v = v0 + at), distance with a, mean velocity, slope of x(t), slope of v(t), area under v(t). Order sensible (graph rows last). aria matches the rows, except the stray hyphen.
+- Sign "constant acceleration, a not known" is translated and the English aria-label reads "Constant acceleration, a not known: average velocity ..."; same as the fi chart (fi 360 px PNG opened: seven rows, nothing clipped).
+- teacher.md "the slope leads downwards (x to v to a) and the area upwards (v to x)" matches the three graph rows.
+- The rest passes through the round-1 report.

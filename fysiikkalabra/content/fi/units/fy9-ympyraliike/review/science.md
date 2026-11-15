@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: bc9cdc28a007fde8
-Review of the recognition chart (queue 9c) and the term change against the version passed at add641812b74c0f3; full on the chart, delta on the rest.
+CONTENT-HASH: 9fd5651620511350
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (bc9cdc28a007fde8).
 
 ## Blocking
 (none)
 
 ## Polish
-- C (row 4, "mikä voima kaartaa rataa?" → $\Sigma F = ma_\text{n}$): Strictly, this is the component of the net force toward the centre. It equals the whole net force only in uniform circular motion. Acceptable at this level.
-- C (row 7): $mg = \gamma Mm/r^2$ neglects the Earth's rotation, which is standard.
+- C: the chart now writes F = mv²/r for the bend, the Kaava text F_μ = mv²/r; same force, both correct (static friction is the only horizontal force).
 
 ## Checked
-- Row 1, a rod stays in place → $\Sigma M = 0$ in addition to $\Sigma\overline{F} = \overline{0}$: correct condition, matches Kaava.
-- Rows 2–3 → $a_\text{n} = v^2/r$ and $v = \omega r$: match Kaava and use the term normaalikiihtyvyys.
-- Row 5, curve on a level road → friction provides the turn, $F_\mu = mv^2/r$: correct. It is static friction, and the symbol $F_\mu$ is the unit's generic friction.
-- Row 6 → $F_\text{g} = \gamma Mm/r^2$: equivalent to Kaava's $m_1 m_2$ form.
-- Row 8, satellite → $\gamma Mm/r^2 = mv^2/r$ (circular orbit): this is the starting equation of the *Johda itse* derivation, not its result, so it is consistent with the unit.
-- The aria-label states the same physics as each row.
-- teacher.md: käsitekartta → tunnistuskaavio. The physics is unchanged.
+- Changed row 5: "kaarre tasaisella tiellä → lepokitka kaartaa, F = mv²/r" (en "static friction turns the car"); the aria-label says "lepokitka … kitkavoima on m v toiseen per r". Correct: the tyres do not slip, so static friction provides the net (normal) force; F not F_μ removes the clash with F_μ = μN of Voimat (round-1 fi-easy Polish resolved).
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- Other rows unchanged and correct as in round 1.
+- Hash taken at the start and the end (9fd5651620511350).

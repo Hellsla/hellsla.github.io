@@ -1,18 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: bc9cdc28a007fde8
-Review of the recognition chart (queue 9c) and the term change against the version passed at add641812b74c0f3; full on the chart, delta on the rest.
+VERDICT: PASS
+CONTENT-HASH: 9fd5651620511350
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (bc9cdc28a007fde8); earlier findings kept unless named fixed.
 
 ## Blocking
-- The row "kaarre tasaisella tiellä -> kitka kaartaa -> F_μ = mv²/r" uses F_μ, which in this course is the sliding friction (F_μ = μN, liukukitka). In a curve the friction is static (the unit says so: "kitka on lepokitkaa", at most μ0 N), so the chart contradicts the unit's own terms and teaches a student to use μN. Fix: "kitka kaartaa" -> "F = mv²/r" with the text "lepokitka", and the same in the aria-label.
+(none)
 
 ## Polish
-- B: teacher.md still says "jokainen haara"; the chart has rows.
-- B: "mikä voima kaartaa rataa?" is a question, not a sign in the task; use "kappale kulkee ympyrärataa, voimat tunnetaan".
+- B (kept): "mikä voima kaartaa rataa?" is a question, not a sign; the chart's first row "tanko pysyy paikallaan" is odd at the head of a circular-motion chart.
 
 ## Checked
-- 8 rows read; the wide pills on their own line are legible; the gravitation rows each follow from the sign (satellite: γMm/r² = mv²/r).
-- Chart as a recognition chart: start box, then one card per sign with the choice and a dark-green pill; no formula list; 360 px capture readable, no clipped label.
-- Placement after Ydinajatus (after Ydinajatus); aria-label read against every row: same rows, same order, same physics, spoken symbols in words, so usable for a screen reader.
-- Changed term lines (liikekitka -> liukukitka) in the diff: consistent, physics unchanged.
-- teacher.md sentence read against the chart.
-- Not looked at: fi-easy and en versions (this report is fi only).
+- Round-1 Blocking fixed: "kaarre tasaisella tiellä -> lepokitka kaartaa -> F = mv²/r"; the non-μ symbol no longer implies sliding friction; the aria-label says "lepokitka kaartaa, ja kitkavoima on mv²/r".
+- teacher.md "jokainen rivi alkaa voimakuviosta" (round-1 Polish B fixed).
+- 360 px PNG opened: eight rows, no clipped label.

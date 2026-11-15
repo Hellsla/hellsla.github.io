@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 01488dd1f9e29516
-Review of the recognition chart (queue 9c) and the term change against the version passed at 5742dd1f4adca003; full on the chart, delta on the rest.
+CONTENT-HASH: a96564c9f399ef68
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (01488dd1f9e29516); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-- A: teacher.md (25-35 min) still says "one branch at a time: oscillators, waves, sound". The chart has nine rows and no branches; say "one row at a time" (as magnetismi-valo and tasavirta now do).
-- B: "Doppler" pill shows no formula, so the sign leads to a name only; a short result such as f = f0 v/(v - vL) would match the other rows.
-- B: no row for the closed pipe or the standing-wave harmonics of a closed tube although the Investigate stage uses one; "string or open pipe" is right but narrow.
+(none new; round-1 findings stand)
 
 ## Checked
-Rows: spring, pendulum, v = f lambda, two sources reinforce/cancel (Delta s = n lambda, (n+1/2) lambda), string or open pipe, beats, Doppler, dB level. Signs concrete, results follow. Start box 'motion or wave?' is a sensible first question. Open-pipe wording agrees with unit Kaava. Teacher.md sentence checked (stale, see A).
+- Diff read in full: only teacher.md changed, "one branch at a time" became "one row at a time: oscillators, waves, sound", which is true of the nine rows. Chart and aria-label unchanged.
+- The rest passes through the round-1 report.

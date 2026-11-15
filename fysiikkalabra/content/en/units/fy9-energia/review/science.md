@@ -1,15 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: ea3f9b67dd2e79b6
-Review of the recognition chart (queue 9c) and the term change against the version passed at 0f8592564d0f83bc; full on the chart, delta on the rest.
+VERDICT: PASS
+CONTENT-HASH: cb7fc0381f835d4d
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (ea3f9b67dd2e79b6).
 
 ## Blocking
-- **A, energia chart row 1 and aria-label: "closed system → energy is conserved, $E_\text{initial} = E_\text{final}$".** Energy can enter or leave a closed system as heat or work (glossary *eristetty systeemi*: "Suljettuun systeemiin energiaa voi vielä siirtyä"); the total energy is constant only in an isolated system. The unit's own Formula section says "In an isolated system, which no energy enters or leaves", so the chart contradicts it. Fix: "isolated system" (fi: eristetty systeemi/järjestelmä) in the chart and the aria-label.
+(none)
 
 ## Polish
-- (C) "a force moves a distance → $W = Fs$": the force along the displacement is assumed; fine at this level.
+- C: "voima siirtää matkan -> W = Fs" assumes a constant force along the displacement (round 1, stands).
 
 ## Checked
-- Rows 2–8: $P = \Delta E/\Delta t$; at steady power $E = Pt$; $1\,\text{kWh} = 1000\,\text{W}\cdot 3600\,\text{s} = 3.6\,\text{MJ}$ (recomputed); $\eta = W_\text{a}/W_\text{o}$ (MAFY symbols); stages in a row $\eta = \eta_1\eta_2\eta_3$; $Q = Hm$; $W = Fs$. All agree with the Formula section.
-- The aria-label matches the chart row by row.
-- Term change: the diff's other lines are "concept map" -> "recognition chart" in teacher.md and new figures.json keys; no formula, number or task changed.
-- The en chart (docs/figures/fy9-tunnistus/fy9-energia-en-360.png) and the hash, taken at the start and the end (ea3f9b67dd2e79b6).
+- Round-1 Blocking fixed: row 1 is now "eristetty systeemi" (en "isolated system") in figures.py, the rendered chart and the aria-label (en figures.json value); this matches the Kaava ("Eristetyssä systeemissä …"/"In an isolated system …") and glossary eristetty systeemi.
+- unit.md sentence after the chart: "which branch" -> "which sign the problem gives"; no physics changed.
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- Rows 2-8 unchanged and correct as in round 1 (1 kWh = 3,6 MJ recomputed).
+- Hash taken at the start and the end (cb7fc0381f835d4d).

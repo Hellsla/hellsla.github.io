@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 68929c569097193a
-Review of the recognition chart (queue 9c) and the term change against the version passed at a0241cfccb8c4cb0; full on the chart, delta on the rest.
+CONTENT-HASH: faa65be0b0d9a1c7
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (68929c569097193a).
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- Round-1 Polish items stand as written there (C, not blocking).
 
 ## Checked
-Rows against the Kaava: Q = cmΔT (no change of state), Q = sm, Q = rm (MAFY s, r), Q_luovutettu = Q_vastaanotettu in an insulated vessel, l = l_0(1 + αΔT), V = V_0(1 + γΔT) for a liquid, P = UAΔT (Kaava 297, steady temperatures stated there). fi-easy aria-label matches every row ("aine lämpenee tai jäähtyy" is right for Q = cmΔT). teacher.md: teacher.md: käsitekartta -> tunnistuskaavio only, no physics changed.
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- The chart, its aria-label and every other file are unchanged since round 1; the round-1 Checked list holds.
+- Hash taken at the start and the end (faa65be0b0d9a1c7).

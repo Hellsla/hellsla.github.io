@@ -1,14 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: a160a51a52b7e3ef
-Review of the recognition chart (queue 9c) and the term change against the version passed at 62a144b4944a81b5; full on the chart, delta on the rest.
+VERDICT: PASS
+CONTENT-HASH: b8e3ee3f1f15aa3e
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (a160a51a52b7e3ef); earlier findings kept unless named fixed.
 
 ## Blocking
-- Row "ei kiihtyvyyttä tiedossa -> keskinopeus, Δx=(v0+v)t/2" (and the aria-label "Kiihtyvyyttä ei tiedetä") is a misleading rule of thumb: the formula holds only for constant acceleration, which this sign does not state, and a student with a non-uniform motion will apply it. Change the sign to "vakiokiihtyvyys, a ei tiedossa, v0 ja v tiedossa" in chart and aria-label.
+(none)
 
 ## Polish
-- B: the signs "kiihtyvyys on vakio" and "kiihtyvyys on vakio, matka?" are almost identical and differ only in the question; use "nopeus ajan hetkellä t?" and "missä kohdassa / kuinka pitkä matka?".
-- B: row "vakionopeus -> x=x0+vt" fine; free fall is not a row although the unit's tasks use it (a=g).
+- B (kept): "kiihtyvyys on vakio" and "kiihtyvyys on vakio, matka?" differ only in the question; free fall is not a row.
+- B: teacher.md "kaavion rivit kulkevat kulmakertoimella alaspäin" is a little awkward; it is true (x to v, v to a by slope, v to x by area).
 
 ## Checked
-- Rows: vakionopeus, vakiokiihtyvyys (v, x), keskinopeus, slope of x(t), slope of v(t), area under v(t). The graph rows are well chosen and the figure beside shows them.
-- Rows read against the unit's tasks and Ydinajatus; chart placed in Ydinajatus (after the paragraph, before Kaava); no formula list, each pill is the short result of its choice; aria-label read through, it gives sign -> choice -> law for every row in the same order and wording as the chart, usable as a screen-reader list; white on #1a4d2e pill identical in all charts; the only other changed lines are the teacher.md sentence (käsitekartta -> tunnistuskaavio). fi-easy/en not in my scope here.
+- Round-1 Blocking fixed: the row now reads "vakiokiihtyvyys, a ei tiedossa -> keskinopeus, Δx = (v0+v)t/2" in the chart and as "Vakiokiihtyvyys, a ei tiedossa" in the aria-label; the condition is in the sign.
+- teacher.md new sentence read against the three graph rows (nopeus paikkakuvaajasta, kiihtyvyys nopeuskuvaajasta, matka nopeuskuvaajasta): matches.
+- 360 px PNG opened: seven rows, the new sign fits.

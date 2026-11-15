@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 95262ce9df1aca45
-Review of the recognition chart (queue 9c) and the term change against the version passed at fdfc56cdc13d1300; full on the chart, delta on the rest.
+CONTENT-HASH: d2859f8e1938c8d4
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (95262ce9df1aca45); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-- A: the old figure was the plan -> analysis loop of an experimental task, the unit's whole 'a plan answers six questions' section. The new chart covers only analysis (mean, spread, result, linear fit, slope, intercept); the planning half (variables, constants, repeats, error sources) has no row, though YO "plan an experiment" tasks are named in the unit. Add rows or a note in the start box.
-- A: "line misses the origin -> b != 0 -> systematic error" is only true when the model predicts a line through the origin (the unit says so; the pendulum T^2(l) intercept is another case). Put the condition in the sign: "model says through the origin, line misses it". The aria says "suggests", the pill does not.
-- B: teacher.md not touched; check it does not refer to the old loop.
+(none new; round-1 findings stand)
 
 ## Checked
-Rows: many results -> mean, variation -> half range, final result x +- Dx, small uncertainty -> relative, linear -> fit y = kx + b, slope from two far points, intercept. Order follows a solution. Friction term in Sovella changed to sliding friction, consistent. aria matches.
+- teacher.md now reads "goes through the seven rows of the recognition chart"; the chart has seven rows (fi 360 px PNG opened), so the round-1 "six questions" mismatch is gone.
+- Header "how do I tell the method?" and the sign "model through origin, line not" are in the translation table; the English aria-label has the same b-not-zero sentence as the fi one. The unit's own heading "A plan answers six questions" is another section and stays true.
+- The rest passes through the round-1 report.

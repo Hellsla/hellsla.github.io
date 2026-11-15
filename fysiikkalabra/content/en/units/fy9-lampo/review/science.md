@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 71985e313cf3f576
-Review of the recognition chart (queue 9c) and the term change against the version passed at c0e5f30c40e0a14a; full on the chart, delta on the rest.
+CONTENT-HASH: a0bc5bed77ef1a44
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (71985e313cf3f576).
 
 ## Blocking
 (none)
 
 ## Polish
-- The chart writes $Q_\text{released} = Q_\text{absorbed}$; the Formula section and inquiry.json say $Q_\text{received}$. Same quantity; one subscript would be cleaner.
+- Round-1 Polish items stand as written there (C, not blocking).
 
 ## Checked
-- Every row: $Q = cm\Delta T$ without a change of state; $Q = sm$ melting/freezing; $Q = rm$ boiling/condensing; insulated mixing $Q_\text{released} = Q_\text{absorbed}$; $l = l_0(1+\alpha\Delta T)$; $V = V_0(1+\gamma\Delta T)$; $P = UA\Delta T$. All agree with the Formula section.
-- The aria-label matches the chart.
-- Term change: the diff's other lines are "concept map" -> "recognition chart" in teacher.md and new figures.json keys; no formula, number or task changed. The key "vastaanotettu" (now "absorbed") is used only by the chart.
-- The en chart (docs/figures/fy9-tunnistus/fy9-lampo-en-360.png) and the hash, taken at the start and the end (71985e313cf3f576).
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- The chart, its aria-label and every other file are unchanged since round 1; the round-1 Checked list holds.
+- Hash taken at the start and the end (a0bc5bed77ef1a44).

@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e98058080562c84a
-Review of the recognition chart (queue 9c) and the term change against the version passed at 91df63573f747d28; full on the chart, delta on the rest.
+CONTENT-HASH: 1a63edba19d2c30c
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (e98058080562c84a).
 
 ## Blocking
 (none)
 
 ## Polish
-- C: "kaarre tasaisella tiellä → kitka kaartaa, $F_\mu = mv^2/r$" uses F_μ, which voimat reserves for liukukitka μN; the unit's own text (388–392) says it is lepokitka. Naming "lepokitka" in the choice would prevent F_μ = μN being used here.
+- C: the chart now writes F = mv²/r for the bend, the Kaava text F_μ = mv²/r; same force, both correct (static friction is the only horizontal force).
 
 ## Checked
-Rows against the Kaava (285–402): ΣM = 0, a_n = v²/r (normaalikiihtyvyys), v = ωr, ΣF = ma_n, F_μ = mv²/r on a level curve, F_g = γMm/r², mg = γMm/r², γMm/r² = mv²/r. fi-easy aria-label matches ("gravitaatio kääntää rataa" is fine). teacher.md: teacher.md: käsitekartta -> tunnistuskaavio only, no physics changed.
+- Changed row 5: "kaarre tasaisella tiellä → lepokitka kaartaa, F = mv²/r" (en "static friction turns the car"); the aria-label says "lepokitka … kitkavoima on m v toiseen per r". Correct: the tyres do not slip, so static friction provides the net (normal) force; F not F_μ removes the clash with F_μ = μN of Voimat (round-1 fi-easy Polish resolved).
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- Other rows unchanged and correct as in round 1.
+- Hash taken at the start and the end (1a63edba19d2c30c).
