@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d1769284e1bc70b1
+CONTENT-HASH: 706c8414fd736fe0
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- The "Extension task." label is applied inconsistently: it is on L2-04, L2-05, L2-06, L2-07, L2-08, L3-05, but not on other Malus's-law and Brewster's-law tasks (L1-02, L1-03, L1-04, L1-05, L1-08, L1-11, L2-01, L3-01, L3-03). A student sees the same law marked in one task and not in another. Label all of them or none (the course scope makes both laws extension).
-- L2-08 carries the label although it only reads a line; if the label is meant to mark the law, it fits only if the task needs it.
-- Label sits as the first line of the text, before the situation; acceptable as a tag, but a separate field would keep "situation first".
+- Only L1-01 and L1-06 are core now. A student on the core path has two tasks and none at levels 2 and 3, although the course asks for at least 5, 4 and 3. The 24-task set meets the counts, but the teacher may want a core level 2 task (for example the qualitative polarisation reasoning) so the core path has practice at every level.
 
 ## Checked
-- Diff is only the "Extension task." line added to six tasks; no numbers, answers or solutions touched.
-- The wording is plain English and clear to a student.
-- Language checked: en. Hash d1769284e1bc70b1 at start and end.
+- Delta: all 9 other level 1 tasks and all level 2 and 3 tasks carry "Extension task.". Every Malus/Brewster calculation task starts with a separate line marking it as an extension task, before the situation, and the question stays last. This matches the lesson's extension note and closes the earlier polish about unmarked level 1 tasks.
+- Core tasks L1-01 and L1-06 are unmarked. Values, figures and solutions are unchanged.
