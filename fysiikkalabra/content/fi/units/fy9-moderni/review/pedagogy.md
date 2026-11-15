@@ -1,15 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: bfb463586d0ab8e5
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (84c1d79c5900ea6f); earlier findings kept unless named fixed.
+VERDICT: FAIL
+CONTENT-HASH: e27ea8539b46773c
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- `sovella/tasks.json`, fy9-moderni-s7 part d. The part says: "Käytä perusteluna aineistoa ja laboratorion ilmoittamaa sähköenergiaa." Its third criterion (1 of 3 points) rewards something the part does not ask: "Toteaa, että vapautunutta energiaa ei muutettu sähköksi. Lämpövoimalan hyötysuhteella sähköä saataisiin noin 1 MJ". The stem gives the thermal-plant datum, but no part names it, so a student who answers exactly what is asked gets at most 2/3. Corrected part text: "Selitä, miksi tulos ei osoita, että koko koelaitteisto olisi tuottanut enemmän energiaa kuin se kulutti. Käytä perusteluna aineistoa ja laboratorion ilmoittamaa sähköenergiaa. Arvioi myös, kuinka paljon sähköenergiaa vapautuneesta energiasta saataisiin lämpövoimalan hyötysuhteella."
 
 ## Polish
-- B (kept): the LED threshold row is missing.
-- C (kept): "ydinreaktion massaero" and "säteilyn laji otetaan huomioon" are not task wording.
+- B, s7 stem: the three bullets follow the sentence about the article's comparison without a lead-in and mix fragments with a full sentence. Add "Lisäksi tiedetään:" and make the bullets uniform.
+- A, s7 e, criterion 2 partly repeats d (the balance holds only for the fuel). Acceptable, because e adds the correction note; the criterion could lean on the note alone.
 
 ## Checked
-- teacher.md now says "rivi kerrallaan ylhäältä alas" with three groups; rows 1-3 are photon and atom, 4-6 nucleus, 7-9 radiation and dose, so the sentence is true (round-1 Polish B fixed).
-- Photoelectric row now hf = W + E_k,max, on a wide pill of its own line; nothing clipped in the 360 px PNG (nine rows).
-- The rest passes through the round-1 report.
+- Item 18 hunk: s6 common mistake "sähkötehosta lämpötehon sijaan" is correct and clear.
+- s7 in full: b 1,537 and 1,10 MJ (54 %); c 335 200 J/kg, 9,397 kg; d 1,05 %, 0,7 %, 1,05 MJ, 0,35 %; e 3,5 · 10^-11 kg = 35 ng. All recomputed and correct.
+- Points 2+3+4+3+3 = 15; criteria sum to each part. The article is needed in a, c, d and e; the invented headline is declared as invented. Parts progress from interpretation to calculation, system boundary and evaluation of a claim. Nothing beyond FY8. No overlap with s6 (fission plant).
+- Preview at 360 px: the s7 card renders without overflow.
