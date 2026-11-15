@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 18715801cb2d4975
-
+CONTENT-HASH: e0b178c42e148725
 ## Blocking
-None.
-
+(none)
 ## Polish
-None.
-
+(none)
 ## Checked
-- The one changed sentence (L2 solution "Järkevyys": "kaukolämpöä käytetään pääasiassa lämmitykseen") is accurate and matches the lesson's wording.
-- The reasoning in the sentence (total efficiency does not tell profitability, since electricity suits everything and heat mainly heating) is intact, and the final clause on need and prices still follows.
-- No numbers, task text or levels changed; the level counts and the solution steps are as approved earlier.
-- Finnish: the sentence is grammatical.
+- Delta: heat/internal-energy wording repaired across solutions and one feedback ('siirtyy lämpönä kaukolämpöveteen'); L2-09 answer 42,9 % with tolerance 0,03 and the figure reading (350, 150 MW on grid lines) justified.
+- Judged from the diff text; captures not opened.
