@@ -176,7 +176,7 @@
    "unit": "m/s²",
    "tolerance": 0.05,
    "data": {
-    "caption": "Auton jarrutusmatka eri alkunopeuksilla (esimerkkiaineisto)",
+    "caption": "Auton jarrutusmatka eri alkunopeuksilla",
     "columns": [
      "$v_0\\,(\\text{m/s})$",
      "$s_\\text{j}\\,(\\text{m})$"
@@ -213,7 +213,7 @@
    "unit": "km/h",
    "tolerance": 0.03,
    "data": {
-    "caption": "Nuken pysähtymisaika ja keskimääräinen voima (esimerkkiaineisto)",
+    "caption": "Nuken pysähtymisaika ja keskimääräinen voima",
     "columns": [
      "$\\Delta t\\,(\\text{s})$",
      "$F_\\text{ka}\\,(\\text{kN})$"
@@ -340,7 +340,7 @@
    "unit": "km/h",
    "tolerance": 0.03,
    "data": {
-    "caption": "Pysähtymismatka märällä asfaltilla (esimerkkiaineisto)",
+    "caption": "Pysähtymismatka märällä asfaltilla",
     "columns": [
      "$v\\,(\\text{km/h})$",
      "$s_\\text{p}\\,(\\text{m})$"
@@ -378,7 +378,7 @@
    "unit": "kN",
    "tolerance": 0.02,
    "data": {
-    "caption": "Nuken nopeus törmäyksen aikana (esimerkkiaineisto)",
+    "caption": "Nuken nopeus törmäyksen aikana",
     "columns": [
      "$t\\,(\\text{ms})$",
      "$v\\,(\\text{m/s})$"

@@ -144,7 +144,7 @@
       "unit": "K/W",
       "tolerance": 0.05,
       "data": {
-        "caption": "Heating of a resistor (example data)",
+        "caption": "Heating of a resistor",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{A})$",
@@ -191,7 +191,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Current of an incandescent bulb as a function of voltage (example data)",
+        "caption": "Current of an incandescent bulb as a function of voltage",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{A})$"
@@ -241,7 +241,7 @@
       "unit": "W",
       "tolerance": 0.02,
       "data": {
-        "caption": "Bulbs connected in series (example data)",
+        "caption": "Bulbs connected in series",
         "columns": [
           "Bulb",
           "$U\\,(\\text{V})$",
@@ -340,7 +340,7 @@
       "unit": "W",
       "tolerance": 0.03,
       "data": {
-        "caption": "Power of the toaster resistors at $230\\,\\text{V}$ (example data)",
+        "caption": "Power of the toaster resistors at $230\\,\\text{V}$",
         "columns": [
           "Connection",
           "$P\\,(\\text{W})$"
@@ -374,7 +374,7 @@
       "unit": "W",
       "tolerance": 0.03,
       "data": {
-        "caption": "Resistance of the conductors of an extension cord (example data)",
+        "caption": "Resistance of the conductors of an extension cord",
         "columns": [
           "Cord",
           "$A\\,(\\text{mm}^2)$",

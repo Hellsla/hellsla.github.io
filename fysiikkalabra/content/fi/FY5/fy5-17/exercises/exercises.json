@@ -192,7 +192,7 @@
       "unit": "cm",
       "tolerance": 0.02,
       "data": {
-        "caption": "A-kuvauksen kaikupiikit (esimerkkiaineisto)",
+        "caption": "A-kuvauksen kaikupiikit",
         "columns": [
           "Piikki",
           "$t\\,(\\mu\\text{s})$"
@@ -225,7 +225,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Levyn etäisyys ja kaiun paluuaika vedessä (esimerkkiaineisto)",
+        "caption": "Levyn etäisyys ja kaiun paluuaika vedessä",
         "columns": [
           "$L\\,(\\text{cm})$",
           "$t\\,(\\mu\\text{s})$"
@@ -376,7 +376,7 @@
       "unit": "km",
       "tolerance": 0.03,
       "data": {
-        "caption": "Asemat ja aikaerot (esimerkkiaineisto)",
+        "caption": "Asemat ja aikaerot",
         "columns": [
           "Asema",
           "$(x,\\,y)\\,(\\text{km})$",
@@ -414,7 +414,7 @@
       "unit": "min",
       "tolerance": 0.03,
       "data": {
-        "caption": "Tsunamin reitti (esimerkkiaineisto)",
+        "caption": "Tsunamin reitti",
         "columns": [
           "Osuus",
           "$s\\,(\\text{km})$",

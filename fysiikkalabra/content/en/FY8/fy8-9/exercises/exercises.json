@@ -170,7 +170,7 @@
       "unit": "s",
       "tolerance": 0.06,
       "data": {
-        "caption": "Pulse count of the barium-$137\\text{m}$ sample in a $10\\,\\text{s}$ interval (example data)",
+        "caption": "Pulse count of the barium-$137\\text{m}$ sample in a $10\\,\\text{s}$ interval",
         "columns": [
           "$t\\,(\\text{s})$",
           "pulses in $10\\,\\text{s}$"
@@ -235,7 +235,7 @@
       "unit": "s",
       "tolerance": 0.05,
       "data": {
-        "caption": "Pulse count of the sample in a $10\\,\\text{s}$ interval (example data)",
+        "caption": "Pulse count of the sample in a $10\\,\\text{s}$ interval",
         "columns": [
           "$t\\,(\\text{s})$",
           "pulses in $10\\,\\text{s}$"
@@ -284,7 +284,7 @@
       "unit": "1/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Pulse count of the background radiation in a $10\\,\\text{s}$ interval (example data)",
+        "caption": "Pulse count of the background radiation in a $10\\,\\text{s}$ interval",
         "columns": [
           "interval",
           "pulses"
@@ -372,7 +372,7 @@
       "unit": "d",
       "tolerance": 0.05,
       "data": {
-        "caption": "Total activity of the sample (example data)",
+        "caption": "Total activity of the sample",
         "columns": [
           "$t\\,(\\text{h})$",
           "$A\\,(\\text{MBq})$"
@@ -426,7 +426,7 @@
       "unit": "d",
       "tolerance": 0.05,
       "data": {
-        "caption": "Iodine-131 activity in the patient’s body (example data)",
+        "caption": "Iodine-131 activity in the patient’s body",
         "columns": [
           "$t\\,(\\text{d})$",
           "$A\\,(\\text{MBq})$"

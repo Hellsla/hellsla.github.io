@@ -144,7 +144,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Muovin ja ilman rajakulma viidessä mittauksessa (esimerkkiaineisto)",
+        "caption": "Muovin ja ilman rajakulma viidessä mittauksessa",
         "columns": [
           "Mittaus",
           "$\\alpha_\\text{r}\\,({}^\\circ)$"
@@ -185,7 +185,7 @@
       "unit": "ns",
       "tolerance": 0.04,
       "data": {
-        "caption": "Perille tulevan valon intensiteetti (esimerkkiaineisto)",
+        "caption": "Perille tulevan valon intensiteetti",
         "columns": [
           "$t\\,(\\mu\\text{s})$",
           "$I\\,(\\%)$"
@@ -346,7 +346,7 @@
       "unit": "°",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kolme kuitutyyppiä (esimerkkiaineisto)",
+        "caption": "Kolme kuitutyyppiä",
         "columns": [
           "Kuitu",
           "$n_1$ (ydin)",
@@ -384,7 +384,7 @@
       "unit": "mm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kuidun läpäisemä teho taivutussäteen funktiona (esimerkkiaineisto)",
+        "caption": "Kuidun läpäisemä teho taivutussäteen funktiona",
         "columns": [
           "$R\\,(\\text{mm})$",
           "Teho (%)"

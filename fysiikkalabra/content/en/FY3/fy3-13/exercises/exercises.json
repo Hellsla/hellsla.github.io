@@ -170,7 +170,7 @@
       "unit": "°C",
       "tolerance": 0.02,
       "data": {
-        "caption": "Pressure of the air in a sealed flask (example data)",
+        "caption": "Pressure of the air in a sealed flask",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p\\,(\\text{kPa})$"
@@ -211,7 +211,7 @@
       "unit": "°C",
       "tolerance": 0.02,
       "data": {
-        "caption": "Pressure of the air in a sealed flask (example data)",
+        "caption": "Pressure of the air in a sealed flask",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p\\,(\\text{kPa})$"
@@ -256,7 +256,7 @@
       "unit": "°C",
       "tolerance": 0.02,
       "data": {
-        "caption": "Pressure of the air in a leaking flask (example data)",
+        "caption": "Pressure of the air in a leaking flask",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p\\,(\\text{kPa})$"
@@ -293,7 +293,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Air pressure, sealed bottle (example data)",
+        "caption": "Air pressure, sealed bottle",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p\\,(\\text{kPa})$"
@@ -397,7 +397,7 @@
       "unit": "°C",
       "tolerance": 0.03,
       "data": {
-        "caption": "Two measurement series of the same gas (example data)",
+        "caption": "Two measurement series of the same gas",
         "columns": [
           "Series",
           "$\\theta\\,({}^\\circ\\text{C})$",
@@ -440,7 +440,7 @@
       "unit": "°C",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pressure of the air in a calibration flask (example data)",
+        "caption": "Pressure of the air in a calibration flask",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p\\,(\\text{kPa})$"

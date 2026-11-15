@@ -149,7 +149,7 @@
       "unit": "J/(kg·K)",
       "tolerance": 0.03,
       "data": {
-        "caption": "Temperature of the liquid during heating (example data)",
+        "caption": "Temperature of the liquid during heating",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T\\,({}^\\circ\\text{C})$"
@@ -194,7 +194,7 @@
       "unit": "J/(kg·K)",
       "tolerance": 0.03,
       "data": {
-        "caption": "Temperatures of the liquids during heating (example data)",
+        "caption": "Temperatures of the liquids during heating",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T_\\text{A}\\,({}^\\circ\\text{C})$",
@@ -323,7 +323,7 @@
       "unit": "W",
       "tolerance": 0.04,
       "data": {
-        "caption": "Temperature of the water during heating (example data)",
+        "caption": "Temperature of the water during heating",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T\\,({}^\\circ\\text{C})$"
@@ -389,7 +389,7 @@
       "unit": "W/K",
       "tolerance": 0.03,
       "data": {
-        "caption": "Temperature of the water during cooling (example data)",
+        "caption": "Temperature of the water during cooling",
         "columns": [
           "$t\\,(\\text{min})$",
           "$T\\,({}^\\circ\\text{C})$"

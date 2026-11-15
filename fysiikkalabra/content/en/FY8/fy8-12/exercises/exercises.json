@@ -187,7 +187,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Pulse count of a GM counter in $10\\,\\text{s}$ periods (example data)",
+        "caption": "Pulse count of a GM counter in $10\\,\\text{s}$ periods",
         "columns": [
           "Period",
           "Pulses"
@@ -249,7 +249,7 @@
       "unit": "mm",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ behind lead (example data)",
+        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ behind lead",
         "columns": [
           "$d\\,(\\text{mm})$",
           "Pulses"
@@ -352,7 +352,7 @@
       "unit": "mm",
       "tolerance": 0.04,
       "data": {
-        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ behind the plates (example data)",
+        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ behind the plates",
         "columns": [
           "$d\\,(\\text{mm})$",
           "Pulses"
@@ -398,7 +398,7 @@
       "unit": "kBq",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ periods (example data)",
+        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ periods",
         "columns": [
           "Period",
           "Source",

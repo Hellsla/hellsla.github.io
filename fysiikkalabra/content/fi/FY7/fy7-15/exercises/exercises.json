@@ -192,7 +192,7 @@
       "unit": "lx",
       "tolerance": 0.015,
       "data": {
-        "caption": "Anturin lukema kalvon kulman funktiona (esimerkkiaineisto)",
+        "caption": "Anturin lukema kalvon kulman funktiona",
         "columns": [
           "$\\theta\\,(^\\circ)$",
           "$E\\,(\\text{lx})$"
@@ -253,7 +253,7 @@
       "unit": "°",
       "tolerance": 0.03,
       "data": {
-        "caption": "Läpi tullut osuus kulman funktiona (esimerkkiaineisto)",
+        "caption": "Läpi tullut osuus kulman funktiona",
         "columns": [
           "$\\theta\\,(^\\circ)$",
           "$I : I_0$"
@@ -353,7 +353,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Intensiteetti viimeisen polarisaattorin jälkeen (esimerkkiaineisto)",
+        "caption": "Intensiteetti viimeisen polarisaattorin jälkeen",
         "columns": [
           "$\\theta\\,(^\\circ)$",
           "$I_3\\,(\\text{W/m}^2)$"
