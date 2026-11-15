@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 116a083acd412480
-
+CONTENT-HASH: 9f35c8b8291f8ed1
 ## Blocking
 (none)
-
 ## Polish
 (none)
-
 ## Checked
-- Delta: the L1/L2 Jupiter reasonableness line now gives 2.5 · 24.5 N ≈ 61 N and says 62 N agrees within the rounding of the ratio 2.5; arithmetic checked (61.25), honest and still teaches the check.
-- Answer, steps, task and figures unchanged.
+- Delta: L1-02 Järkevyys / Reasonableness now says 'venymä newtonia kohti' / 'extension per newton' instead of spring constant; the term is not taught in FY3 (force-meter extension is proportional to force), and the ratio 2,0 cm / 4,0 N = 0,50 cm/N and 0,50 · 12 = 6,0 are unchanged and correct. Clearer for the student.
+- Judged from the diff text; captures not opened.

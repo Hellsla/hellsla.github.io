@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7dde9624df498934
-
+CONTENT-HASH: 885be814ebf99534
 ## Blocking
 (none)
-
 ## Polish
-- fy3-16-L3-03 — the task now needs rounding up (answer 1.6, tolerance 6 % so 1.51 passes but 1.5 does not), yet the question says only "smallest mass"; add "rounded up to two figures" or a hint, otherwise a student who correctly gets 1.5 sees a wrong mark with no reason.
-
+(none)
 ## Checked
-- Delta: the cool-bag answer 1.511 kg is now given as 1.6 kg because the smallest sufficient mass is rounded up, and the solution says why 1.5 kg would not be enough; reasonableness consistent with it; answers.py computes the same (ceil to 0.1).
-- The sauna-stone efficiency task's principle now says electricity becomes internal energy transferred as heat; no number changed.
+- Delta: L2-01 and L3-03 ask for a minimum, so the task text now says to round up (answer 1,7 kg, tolerance 0,06, so 1,6 is rejected); solution explains why 1,617 kg rounds up and that 1,6 kg would not last six hours. Fair, the rounding rule is stated in the task, not a trap.
+- L3-03 (1,511 kg -> 1,6 kg) has the same up-rounding explanation and the reasonableness check agrees.
+- No other task changed.
+- Judged from the diff text; captures not opened.

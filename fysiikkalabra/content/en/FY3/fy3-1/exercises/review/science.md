@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b0821156ba49dd4c
-SCOPE: delta added-exercise from 4f903b6a27cc71f7 base 81db4a6fd727
+CONTENT-HASH: 9f35c8b8291f8ed1
 
 ## Blocking
-(none)
 
 ## Polish
-- none
+- solutions.md:19 (fy3-1-L1-02): the check's last product, $0.50 \cdot 12 = 6.0$, has no units. Consider writing $0.50\,\tfrac{\text{cm}}{\text{N}} \cdot 12\,\text{N} = 6.0\,\text{cm}$. This is style only.
 
 ## Checked
-- fy3-1-L1-10: G = m g_Mars = 85.0 kg * 3.72 m/s^2 = 316.2 N, answer 316 N in three figures; answers.py line agrees; the MAFY Mars value (3.72) differs from the 3.71 used elsewhere in the set by 0.3 %, well inside the 4 % tolerance, and the solution says tables differ.
-- fy3-1-L1-10 solution: weight as the Mars-astronaut interaction, mass unchanged, reasonableness 0.38 * 834 N = 317 N is a real check.
-- fy3-1-L2-08: figure weight-points has (2;10) ... (10;50) on a 2 kg / 10 N grid, so g = 5.0 m/s^2 and G = 12 kg * 5.0 m/s^2 = 60 N; extrapolation to 12 kg justified by G = m g (line through the origin has a physical reason); tolerance 3 % fits reading by eye.
-- Figure description gives every point and does not state g or the answer.
-- Scripted comparison with the Finnish exercises.json: same ids, answers, units, tolerances, figures and every number in the task texts for all 23 exercises.
-- Recomputed all answers.py values in one run against exercises.json: every answer within its tolerance.
-- FY3 scope kept (G = m g only, no Newton's laws).
-- Hash identical at start and end.
+- The delta is solutions.md:19 alone. "spring constant" is now "extension per newton", which is the right name for $x/F$ (cm/N). The old wording named the inverse of $k$, a quantity outside FY3, so the fix is correct.
+- Recomputed: $2.0\,\text{cm}/4.0\,\text{N} = 0.50\,\text{cm/N}$ and $0.50 \cdot 12 = 6.0\,\text{cm}$. This matches the answer.
+- "spring constant" no longer appears in exercises.json or solutions.md. The FY3 scope holds.
+- The wording matches the Finnish fix (venymä newtonia kohti). No number or symbol changed, so the previous report's checks still stand.
+- The hash was the same at the start and the end.

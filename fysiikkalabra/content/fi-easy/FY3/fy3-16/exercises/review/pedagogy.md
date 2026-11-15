@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9a4297a7e0b2f25c
-
+CONTENT-HASH: 6afbe5a6243e4487
 ## Blocking
-- none
-
+(none)
 ## Polish
-- fy3-16 L3-03 (cool bag) — the answer is now 1,6 kg with tolerance 6 %, which accepts the exact 1,511 and 1,6 but not 1,5. A student who rounds 1,511 to the data's two figures gets 1,5 and is marked wrong, and the task text does not say "pyöristä ylöspäin". Add that sentence to the task (the solution already explains why 1,5 kg would not suffice).
-
+(none)
 ## Checked
-- Delta 2026-11-15: answers.py rounds up (math.ceil) because the task asks the minimum mass; physically right, since 1,5 kg < 1,511 kg needed. The solution says so and the Järkevyys line agrees.
-- Resistor-sauna solution: "muuttavat sähköenergiaa sisäenergiaksi ... siirtyy lämpönä kiviin" is correct wording.
-- No other answer or level changed.
+- Delta: L2-01 and L3-03 ask for a minimum, so the task text now says to round up (answer 1,7 kg, tolerance 0,06, so 1,6 is rejected); solution explains why 1,617 kg rounds up and that 1,6 kg would not last six hours. Fair, the rounding rule is stated in the task, not a trap.
+- L3-03 (1,511 kg -> 1,6 kg) has the same up-rounding explanation and the reasonableness check agrees.
+- No other task changed.
+- Judged from the diff text; captures not opened.

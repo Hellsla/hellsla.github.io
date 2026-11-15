@@ -1,12 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 4d884b467d055fce
-
+CONTENT-HASH: 2a0490285f2ef3cd
 ## Blocking
-- none
-
+(none)
 ## Polish
-- none
-
+(none)
 ## Checked
-- Delta 2026-11-15: L2 Jupiter-weight reasonableness now reads 2,5 · 24,5 N ≈ 61 N and says 62 N agrees "suhteen 2,5 pyöristyksen tarkkuudella"; 2,5 · 24,5 = 61,25, so the check is honest about rounding and the answer 62 N stands.
-- No task, answer or level changed.
+- Delta: L1-02 Järkevyys / Reasonableness now says 'venymä newtonia kohti' / 'extension per newton' instead of spring constant; the term is not taught in FY3 (force-meter extension is proportional to force), and the ratio 2,0 cm / 4,0 N = 0,50 cm/N and 0,50 · 12 = 6,0 are unchanged and correct. Clearer for the student.
+- Judged from the diff text; captures not opened.
