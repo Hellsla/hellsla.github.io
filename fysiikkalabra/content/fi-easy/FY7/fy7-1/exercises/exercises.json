@@ -315,7 +315,7 @@
       "id": "fy7-1-L3-02",
       "level": 3,
       "text": "Teräksinen paperiliitin vedetään useita kertoja samaan suuntaan magneetin napaa pitkin. Sen jälkeen se nostaa pieniä nastoja. Kuumenna liitin liekissä riittävän kuumaksi ja anna sen jäähtyä. Silloin se ei enää nosta nastoja. Selitä molemmat havainnot alkeisalueiden avulla.",
-      "answer": "Magneetin kenttä järjestää teräksen alkeisalueet samansuuntaisiksi. Kovassa teräksessä ne jäävät järjestykseen, joten liitin on magneetti. Riittävän kuuma lämpötila sekoittaa alkeisalueiden järjestyksen. Silloin liitin ei enää ole magneetti.",
+      "answer": "Magneetin kenttä järjestää teräksen alkeisalueet samansuuntaisiksi. Teräksessä moni niistä jää järjestykseen, joten liitin on magneetti. Riittävän kuuma lämpötila sekoittaa alkeisalueiden järjestyksen. Silloin liitin ei enää ole magneetti.",
       "unit": "",
       "tolerance": 0.02
     },

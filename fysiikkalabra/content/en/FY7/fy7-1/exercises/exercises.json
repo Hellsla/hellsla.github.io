@@ -315,7 +315,7 @@
       "id": "fy7-1-L3-02",
       "level": 3,
       "text": "A steel paper clip is drawn several times in the same direction along a pole of a magnet, after which it picks up small pins. When the clip is heated in a flame hot enough and allowed to cool, it no longer picks up pins. Explain both observations using magnetic domains.",
-      "answer": "The field of a magnet aligns the magnetic domains of the steel, and in hard steel they stay aligned, so the clip is a magnet. Heating to a high enough temperature mixes up the alignment of the domains, so the clip is no longer a magnet.",
+      "answer": "The field of a magnet aligns the magnetic domains of the steel, and in steel many of them stay aligned, so the clip is a magnet. Heating to a high enough temperature mixes up the alignment of the domains, so the clip is no longer a magnet.",
       "unit": "",
       "tolerance": 0.02
     },

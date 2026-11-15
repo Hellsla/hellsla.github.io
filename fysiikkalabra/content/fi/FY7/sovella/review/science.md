@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a9cc9cb67973a181
+CONTENT-HASH: 35d50fed670b3d0d
 
 ## Blocking
 None.
 
 ## Polish
 - fy7-s4 c: "kolme merkitsevää numeroa kuten taitekertoimissa" does not hold for θ. It depends on n₁² − n₂² (n₂ = 1,42 ± 0,005 gives 12,0–15,5°). Give θ ≈ 14° to two figures, or justify the three.
-- fy7-s2 d: "vetää lähestyvää magneettinapaa poispäin" misdescribes the mechanism. The induced pole repels (työntää) the approaching pole and attracts the receding one.
-- fy7-s3 d: "alumiini maksaisi moninkertaisesti muuntajan hinnan" is an unsourced cost claim. Soften it or drop it; the mass argument is enough.
 - fy7-s3 c: the rubric says "0,5 %" and the solution "alle 0,5 %" (the value is 0,47 %). Write "noin 0,5 %" in both.
 
 ## Checked
+- Round 2 (diff since a9cc9cb67973a181): in fi, fi-easy and en, fy7-s2 d now gives the correct Lenz mechanism (työntää / vetää), and fy7-s3 d no longer has the cost clause. Nothing else changed.
 - Every number recomputed in my own script from the task data, side by side with tasks.json, solutions.md and answers.py. All agree:
   - s1: 7,251·10⁵ m/s; 2900 V; 0,2069 T; 7,24 cm; 7,60·10⁵ m/s; mass ratio 0,910.
   - s2: 33,3 Hz; 9,90 V; 18,85 km/h; 11,42 km/h; 0,955 N.
