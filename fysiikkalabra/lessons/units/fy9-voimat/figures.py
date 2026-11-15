@@ -18,6 +18,7 @@ import herolib as H
 
 figlib.set_language({}, ",")
 
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
 WOOD, WOOD_DARK = "#d9b26a", "#a97a35"
 BOX, BOX_EDGE = SAND_LIGHT, WOOD_DARK
 
@@ -72,7 +73,7 @@ def hero():
 def kartta():
     """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
     card per sign in the task's own words (YO language): the sign on top, the choice it leads to and, as the result in a
-    green pill, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
+    pill in the site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
     rows = [
         (r"\text{vakionopeus tai levossa}", r"\to\ a = 0", r"\Sigma\overline{F} = \overline{0}"),
         (r"\text{lähtee levosta tai kiihtyy}", r"\to\ a \neq 0", r"\Sigma\overline{F} = m\overline{a}"),
@@ -96,8 +97,8 @@ def kartta():
         f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
         f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
         f.tex(x0 + 14, y + 55, choice, "start", MUTED, size=17, w=170)
-        f.rect(x1 - 134, y + 44, 124, 24, GOOD_LIGHT, GOOD, 2, 8)
-        f.tex(x1 - 72, y + 56, law, "middle", INK, size=17, w=116)
+        f.rect(x1 - 134, y + 44, 124, 24, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 72, y + 56, law, "middle", WHITE, size=17, w=116)
     return f.svg()
 
 
