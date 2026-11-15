@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 077bbc73147433b4
-SCOPE: delta added-exercise from de998fe1e15345d2 base 81db4a6fd727
+CONTENT-HASH: 35ea97317da552d9
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- exercises.json fy1-8-L3-04 / solutions.md: "mitä väitteitä aineisto tukee ja mitä ei" is correct but "mitkä väitteet ... ja mitkä ei" named the claims more directly; optional.
 
 ## Checked
-- fy1-8-L1-10: unit km now LaTeX; formula aligned in two rows; readable.
-- Rounding explanation (design estimate, rounded up so the 5 % limit holds) is sound: 1,4 km > 1,3736 km, within tolerance.
-- Arithmetic 0,2/0,05 = 4,0 s, 343,4 m/s * 4,0 s = 1,3736 km verified.
+batch delta review (exercises): L3-04 question and Kysytty reworded to partitive, consistent between task and solution; data and answer unchanged.
