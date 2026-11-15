@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 404b2f409486b34d
+CONTENT-HASH: 3c90a5200b5f471b
+SCOPE: delta
 
 ## Blocking
+- (none)
 
 ## Polish
-- [Minor] 2-9 Järkevyys: "Tehtävän 2-2" is written with a hyphen while the page numbers show "2–2"; optional en dash.
+- (none)
 
 ## Checked
-- Delta: changed Järkevyys of the added 2-9 (fy7-2-open-exercises-1280-10, full size). $7{,}6\,\text{mm}$, $3{,}75$ and $28\,\text{mm}$ render cleanly, clear Finnish, no layout damage. Rest not re-reviewed.
+delta: capture #97 (open solution of the cyclotron task): $0{,}200\,\text{m}$ and $60{,}0\,\text{kV}$ read consistently, rows not clipped.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
