@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: eec751c0f8637a81
+CONTENT-HASH: 0e9cff5db562ee01
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] inquiry.json optional Sovella task "Lasipurkki" — the changed solution (0,205 added before "noin 20 %") sits in a closed box and no capture shows it open; judged from the source diff, LaTeX is valid and the chain reads in order — check once in a 360 px open-solution run.
+- [Minor] inquiry.json task "Sovella uuteen tilanteeseen", Järkevyys (selkeä suomi) — the re-broken chain is a two-row display block in mid-sentence ("Siksi paine nousee noin [block]. Tarkistus: …"); it reads, but a one-row chain would fit. The source keeps chains inline for the build to break (NOTES §1).
 
 ## Checked
-- Delta: fig-14-390 (Kelvin and Celsius scales, "ala-asteikko" fix is in the text beside it; figure intact, labels LaTeX, unclipped), example-390-3 / stage-sovella-390-3 (Järkevyys stage readable), open-tarkista-1280-4 (layout survived).
-- Diff: "ala-asteikko" (correct spelling), solution line with 0,205 read in source.
+- delta: no capture shows the changed solution open, so I rendered the page myself at 360 and 1280 px with the solutions open (the Järkevyys block of "Sovella uuteen tilanteeseen"): rows aligned, nothing clipped, no horizontal overflow, numbers, signs and units as before.
+- stage-sovella-390-2/-3 and open-tarkista-1280-3/-4 (layout around the changed text survived).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

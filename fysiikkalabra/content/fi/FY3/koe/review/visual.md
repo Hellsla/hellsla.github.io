@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 815f454d8557aa79
+CONTENT-HASH: aa340d4a51436c93
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md Kaava rows (page-390-12, k = ΔL/Δθ "ja 0 = …, joten θ₀ = …") — the second formula wraps under the first with tight line spacing, fractions nearly touch — put the two formulas on separate rows.
-- [Minor] units in stacked fractions (`\frac{kJ}{kg}`, `\frac{W}{m^2\cdot K}`, 390 px) are small next to the surrounding text — consider `\text{kJ/kg}` inline for legibility.
-- [Minor] fy3-k2 and fy3-k6 solution graphs (fig-5, fig-7) at 390 px: the tick numbers and the k-fraction labels are small (about 9 px); legible but near the limit.
+- [Minor] solutions.md k4 d Mallivastaus — Q_1 and Q_3 are two-row display blocks but Q_2 stays an inline one-row line between them, so the three steps look uneven; set Q_2 as an aligned row too, or leave all three inline.
+- [Minor] solutions.md k2 d Periaate — the two-row block "58,0 mm + 2,0 mm = 60,0 mm" sits mid-sentence; reads fine, but a one-row chain would fit.
 
 ## Checked
-- top-390, top-1280 (opening, structure box), contact-1 and contact-5 (overview).
-- fig-1 (work graph F(s)), fig-3 (T(t) graph), fig-5 (L(θ) with extrapolation), fig-7 (T(t) with k construction); fig-2, 4, 6, 8 are 28×28 captures of closed or hidden figures, which I judged through fig-5 and fig-7 and contact-sheet views.
-- page-390-8, page-390-12, page-390-53 (open model solutions: calculation rows, KYSYTTY/KAAVA/SIJOITUS blocks, fractions, units, decimal comma).
-- Plain-quantity scan of tasks.json: none found. Hash unchanged at the end.
+- Full page captured earlier PASS; this round I rendered the page myself at 360 and 1280 px with every box open and looked at k2 (Periaate with the chain, Sijoitus, Mallivastaus), k4 d (Q_1, Q_2, Q_3 rows) and checked no overflow (scrollWidth equals viewport).
+- Table captions: "(esimerkkiaineisto)" is gone from the built page and tasks.json.
+- Opened the figure and page captures indirectly via the unchanged earlier PASS; figures not touched by the diff.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

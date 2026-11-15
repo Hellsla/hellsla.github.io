@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0bb2960dd8b3e142
+CONTENT-HASH: 646fb90069f3ea68
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] inquiry.json task "Sovella uuteen tilanteeseen", Järkevyys — the re-broken chain is a two-row display block in mid-sentence ("…paine nousee noin [block], ja 101 + 21…") with a trailing comma; it reads, but a one-row chain would fit. The source keeps chains inline for the build to break (NOTES §1).
 
 ## Checked
-- delta: ala-asteikko typo in the kelvin figure caption; opened fy3-3-fig-14-390 (scale figure intact, label fits); inquiry solution now shows $\dfrac{60}{293} \approx 0{,}205$ before 20 %, and 0,205 · 101 kPa, read from the diff (inline, one extra term, consistent with the rest of the chain).
+- delta: no capture shows the changed solution open, so I rendered the page myself at 360 and 1280 px with the solutions open (the Järkevyys block of "Sovella uuteen tilanteeseen"): rows aligned, nothing clipped, no horizontal overflow, numbers, signs and units as before.
+- stage-sovella-390-2/-3 and open-tarkista-1280-3/-4 (layout around the changed text survived).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5
