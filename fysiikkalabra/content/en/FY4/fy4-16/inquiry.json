@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "A physics group takes a bathroom scale into the lift of a shopping centre. When the lift starts up, the reading rises for a moment, and when the lift stops, it falls. Through the window you can see a skydiver who descends under a parachute at a steady speed, although the weight pulls the skydiver down all the time. On a sledding hill two children go down different sides of the same hill: one a steep, short slope, the other a gentle, long slope. The one who came down the steep side slides much farther on the flat, but when the stopping points are measured, both are equally far from the top of the hill.",
+      "text": "A physics group takes a bathroom scale into the lift of a shopping centre and watches its reading as the lift starts up, moves and stops. Through the window you can see a skydiver who descends under a parachute at a steady speed, although the weight pulls the skydiver down all the time. On a sledding hill two children go down different sides of the same hill: one a steep, short slope, the other a gentle, long slope. The one who came down the steep side slides much farther on the flat, but when the stopping points are measured, both are equally far from the top of the hill.",
       "question": "Familiar forces act in all three situations. When should you solve a situation with forces and when with energy, and why do the sleds stop equally far from the top?"
     },
     {
@@ -175,7 +175,7 @@
       "stage": "tutki",
       "type": "explain",
       "title": "Conclusion",
-      "prompt": "Use the graph and the table to explain two things. What does the reading of a scale in a lift depend on? Why is the sled from the steep slope faster at the foot but still stops almost as far from the top as the sled from the gentle slope?",
+      "prompt": "Use the graph and the table to explain two things. What does the reading of a scale in a lift depend on? Why is the sled from the steep slope faster at the foot but still stops as far from the top as the sled from the gentle slope?",
       "criteria": [
         "The answer says that a scale measures the normal force and that the reading is larger than the weight when the acceleration points up and smaller when it points down, but at a steady speed the same as at rest.",
         "The answer uses numbers from the graph, for example $650\\,\\text{N}$ at the start and about $589\\,\\text{N}$ at a steady speed.",

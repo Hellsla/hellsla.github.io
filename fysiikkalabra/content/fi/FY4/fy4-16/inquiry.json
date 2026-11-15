@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Fysiikan ryhmä vie kylpyhuonevaa'an kauppakeskuksen hissiin. Kun hissi lähtee ylös, lukema kasvaa hetkeksi, ja kun hissi pysähtyy, se pienenee. Ikkunasta näkyy laskuvarjohyppääjä, joka laskeutuu varjon varassa tasaisella nopeudella, vaikka paino vetää häntä alas koko ajan. Pulkkamäellä kaksi lasta laskee saman mäen eri puolia: toinen jyrkkää ja lyhyttä, toinen loivaa ja pitkää rinnettä. Jyrkältä puolelta laskenut liukuu tasaisella paljon pidemmälle, mutta kun pysähtymiskohdat mitataan, kumpikin on yhtä kaukana mäen huipusta.",
+      "text": "Fysiikan ryhmä vie kylpyhuonevaa'an kauppakeskuksen hissiin ja seuraa sen lukemaa, kun hissi lähtee ylös, kulkee ja pysähtyy. Ikkunasta näkyy laskuvarjohyppääjä, joka laskeutuu varjon varassa tasaisella nopeudella, vaikka paino vetää häntä alas koko ajan. Pulkkamäellä kaksi lasta laskee saman mäen eri puolia: toinen jyrkkää ja lyhyttä, toinen loivaa ja pitkää rinnettä. Jyrkältä puolelta laskenut liukuu tasaisella paljon pidemmälle, mutta kun pysähtymiskohdat mitataan, kumpikin on yhtä kaukana mäen huipusta.",
       "question": "Kaikissa kolmessa tilanteessa vaikuttavat tutut voimat. Milloin tilanne kannattaa ratkaista voimilla ja milloin energialla, ja miksi pulkat pysähtyvät yhtä kauas huipusta?"
     },
     {
@@ -175,7 +175,7 @@
       "stage": "tutki",
       "type": "explain",
       "title": "Johtopäätös",
-      "prompt": "Selitä kuvaajan ja taulukon avulla kaksi asiaa. Mistä vaa'an lukema hississä riippuu? Miksi jyrkältä rinteeltä tuleva pulkka on juurella nopeampi mutta pysähtyy silti lähes yhtä kauas huipusta kuin loivalta rinteeltä tuleva?",
+      "prompt": "Selitä kuvaajan ja taulukon avulla kaksi asiaa. Mistä vaa'an lukema hississä riippuu? Miksi jyrkältä rinteeltä tuleva pulkka on juurella nopeampi mutta pysähtyy silti yhtä kauas huipusta kuin loivalta rinteeltä tuleva?",
       "criteria": [
         "Vastaus kertoo, että vaaka mittaa tukivoimaa ja että lukema on painoa suurempi, kun kiihtyvyys osoittaa ylös, ja pienempi, kun se osoittaa alas, mutta tasaisella nopeudella sama kuin levossa.",
         "Vastaus käyttää kuvaajan lukuja, esimerkiksi $650\\,\\text{N}$ lähdössä ja noin $589\\,\\text{N}$ tasaisella nopeudella.",

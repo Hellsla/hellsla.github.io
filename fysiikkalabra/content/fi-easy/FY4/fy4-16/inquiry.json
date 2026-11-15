@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Fysiikan ryhmä vie kylpyhuonevaa'an kauppakeskuksen hissiin. Kun hissi lähtee ylös, vaa'an lukema kasvaa hetkeksi. Kun hissi pysähtyy, lukema pienenee. Ikkunasta näkyy laskuvarjohyppääjä. Hän laskeutuu varjon varassa tasaisella nopeudella, vaikka paino vetää häntä alas koko ajan. Pulkkamäellä kaksi lasta laskee saman mäen eri puolia. Toinen laskee jyrkkää ja lyhyttä rinnettä, toinen loivaa ja pitkää. Jyrkältä puolelta laskenut liukuu tasaisella paljon pidemmälle. Kun pysähtymiskohdat mitataan, kumpikin on kuitenkin yhtä kaukana mäen huipusta.",
+      "text": "Fysiikan ryhmä vie kylpyhuonevaa'an kauppakeskuksen hissiin. Ryhmä seuraa vaa'an lukemaa, kun hissi lähtee ylös, kulkee ja pysähtyy. Ikkunasta näkyy laskuvarjohyppääjä. Hän laskeutuu varjon varassa tasaisella nopeudella, vaikka paino vetää häntä alas koko ajan. Pulkkamäellä kaksi lasta laskee saman mäen eri puolia. Toinen laskee jyrkkää ja lyhyttä rinnettä, toinen loivaa ja pitkää. Jyrkältä puolelta laskenut liukuu tasaisella paljon pidemmälle. Kun pysähtymiskohdat mitataan, kumpikin on kuitenkin yhtä kaukana mäen huipusta.",
       "question": "Kaikissa kolmessa tilanteessa vaikuttavat tutut voimat. Milloin tilanne kannattaa ratkaista voimilla ja milloin energialla? Miksi pulkat pysähtyvät yhtä kauas huipusta?"
     },
     {
@@ -175,7 +175,7 @@
       "stage": "tutki",
       "type": "explain",
       "title": "Johtopäätös",
-      "prompt": "Selitä kuvaajan ja taulukon avulla kaksi asiaa. Mistä vaa'an lukema hississä riippuu? Miksi jyrkältä rinteeltä tuleva pulkka on juurella nopeampi, mutta pysähtyy silti lähes yhtä kauas huipusta kuin loivalta rinteeltä tuleva?",
+      "prompt": "Selitä kuvaajan ja taulukon avulla kaksi asiaa. Mistä vaa'an lukema hississä riippuu? Miksi jyrkältä rinteeltä tuleva pulkka on juurella nopeampi, mutta pysähtyy silti yhtä kauas huipusta kuin loivalta rinteeltä tuleva?",
       "criteria": [
         "Vastaus kertoo, että vaaka mittaa tukivoimaa. Lukema on painoa suurempi, kun kiihtyvyys osoittaa ylös, ja pienempi, kun se osoittaa alas. Tasaisella nopeudella lukema on sama kuin levossa.",
         "Vastaus käyttää kuvaajan lukuja, esimerkiksi $650\\,\\text{N}$ lähdössä ja noin $589\\,\\text{N}$ tasaisella nopeudella.",

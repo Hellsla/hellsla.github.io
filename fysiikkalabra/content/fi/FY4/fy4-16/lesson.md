@@ -404,4 +404,4 @@ Toinen virhe on ajatella, että rajanopeudella mekaaninen energia säilyy, koska
 - Hississä vaaka mittaa tukivoimaa $N = m(g + a)$, kun positiivinen suunta on ylös. Lukema riippuu kiihtyvyydestä, ei nopeudesta.
 - Rajanopeudella $F_\text{v} = mg$, ja ilmanvastuksen työ on $-mgh$: mekaaninen energia pienenee, vaikka nopeus ei muutu.
 - Suoralla rinteellä $N = mg\cos\alpha$, ja liukukitkan työ on $W_\mu = -\mu mgx$, missä $x$ on vaakasuora matka. Levosta korkeudelta $h$ lähtenyt pulkka pysähtyy vaakamatkan $h/\mu$ päähän huipusta, kun kitkakerroin on sama koko matkalla.
-- Kun kappale liukuu paikallaan olevaa pintaa pitkin, tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan. Hississä lattian tukivoima on liikkeen suuntainen ja tekee työtä.
+- Kun kappale liukuu paikallaan olevaa pintaa pitkin, tukivoima ei tee työtä, koska se on kohtisuorassa liikettä vastaan. Liikkuvassa hississä lattian tukivoima on liikkeen suuntainen, joten se tekee työtä: positiivista hissin noustessa ja negatiivista sen laskeutuessa.
