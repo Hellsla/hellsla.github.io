@@ -207,12 +207,18 @@ $$ Tämä on vihreää valoa. Punainen ja keltainen valo eivät siis irrota natr
 <figure class="unit-photo"><img src="../pics/fy8/photomultiplier-tube.webp" alt="Suuri pyöreä lasikupu museon vitriinissä. Kuvun sisäpinta on kuin peili." width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Valomonistinputki museossa Tokiossa. Fotoni osuu kuvun sisäpintaan ja irrottaa elektronin. Tämä on valosähköinen ilmiö. Putki vahvistaa elektronin mitattavaksi sähköpulssiksi. <span class="photo-credit">Kuva: Motokoka, CC BY-SA 4.0</span></figcaption></figure>
 
 <h4>Elektronivoltti</h4>
-<p>Fotonin ja elektronin energiat ovat jouleina hyvin pieniä lukuja. Siksi niille käytetään usein yksikköä <strong class="kc-mark" data-kortti="fy8-elektronivoltti">elektronivoltti</strong> ($\text{eV}$). Yksi elektronivoltti on se energia, jonka elektroni saa, kun se kiihtyy sähkökentässä $1\,\text{V}$:n jännitteen läpi. Elektronin varauksen suuruus on $e = 1{,}602 \cdot 10^{-19}\,\text{C}$. Siksi $$
+<p>Fotonin ja elektronin energiat ovat jouleina hyvin pieniä lukuja. Siksi niille käytetään usein yksikköä <strong class="kc-mark" data-kortti="fy8-elektronivoltti">elektronivoltti</strong> ($\text{eV}$). Yksi elektronivoltti on se energia, jonka elektroni saa, kun se kiihtyy sähkökentässä $1\,\text{V}$:n jännitteen läpi. Elektronin varauksen suuruus on $e = 1{,}602 \cdot 10^{-19}\,\text{C}$. Siksi <span class="mj-wide">$$
 \begin{aligned}
 1\,\text{eV} &= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} \\
 &= 1{,}602 \cdot 10^{-19}\,\text{J}\text{.}
 \end{aligned}
-$$ Muunnos tehdään sijoittamalla. Esimerkiksi <span class="mj-wide">$$
+$$</span><span class="mj-narrow">$$
+\begin{aligned}
+&1\,\text{eV} \\
+&= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} \\
+&= 1{,}602 \cdot 10^{-19}\,\text{J}\text{.}
+\end{aligned}
+$$</span> Muunnos tehdään sijoittamalla. Esimerkiksi <span class="mj-wide">$$
 \begin{aligned}
 3{,}20 \cdot 10^{-19}\,\text{J} &= \tfrac{3{,}20 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\
 &\approx 2{,}00\,\text{eV}\text{.}
@@ -593,18 +599,12 @@ $$ Kaikki mitatut aallonpituudet $365$–$505\,\text{nm}$ ovat sitä lyhyempiä.
 <div class="eq-chain mj-wide"><div class="eq-row"><span class="eq-l">$\tfrac{2{,}26\,\text{eV} - 1{,}01\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}}$</span><span class="eq-r">$= 4{,}2 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$</span></div><div class="eq-row gap"><span class="eq-l">$\tfrac{1{,}35\,\text{eV} - 0{,}12\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}}$</span><span class="eq-r">$= 4{,}1 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$</span></div></div>
 <div class="eq-chain mj-narrow lead"><div class="eq-lead">$\tfrac{2{,}26\,\text{eV} - 1{,}01\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}}$</div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 4{,}2 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$</span></div><div class="eq-lead gap">$\tfrac{1{,}35\,\text{eV} - 0{,}12\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}}$</div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 4{,}1 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$</span></div></div>
 
-<p>Kumpikin on siis likimain $\tfrac{h}{e} = 4{,}14 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$.</p></div><div class="sol-step" data-step="kaava"><p class="sol-label">Kaava</p><p><span class="mj-wide">$$
-\begin{aligned}
-E_\text{k,A} - E_\text{k,B} &= (hf - W_\text{A}) \\
+<p>Kumpikin on siis likimain $\tfrac{h}{e} = 4{,}14 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$.</p></div><div class="sol-step" data-step="kaava"><p class="sol-label">Kaava</p><p><span class="mj-wide">$$\begin{aligned} E_\text{k,A} - E_\text{k,B} &= (hf - W_\text{A}) \\
 &- (hf - W_\text{B}) = W_\text{B} - W_\text{A} 
-\end{aligned}
-$$</span><span class="mj-narrow">$$
-\begin{aligned}
-E_\text{k,A} - E_\text{k,B} &= (hf - W_\text{A}) \\
+\end{aligned}$$</span><span class="mj-narrow">$$\begin{aligned} E_\text{k,A} - E_\text{k,B} &= (hf - W_\text{A}) \\
 &- (hf - W_\text{B}) \\
 &= W_\text{B} - W_\text{A}
-\end{aligned}
-$$</span></p></div><div class="sol-step" data-step="muunnokset"><p class="sol-label">Muunnokset</p><p>Ei tarvita. Kaikki energiat ovat elektronivoltteina.</p></div><div class="sol-step" data-step="sijoitus"><p class="sol-label">Sijoitus</p><p>Erotukset ovat $0{,}89\,\text{eV}$, $0{,}91\,\text{eV}$, $0{,}90\,\text{eV}$ ja $0{,}91\,\text{eV}$. Niiden summa on $3{,}61\,\text{eV}$, joten </p>
+\end{aligned}$$</span></p></div><div class="sol-step" data-step="muunnokset"><p class="sol-label">Muunnokset</p><p>Ei tarvita. Kaikki energiat ovat elektronivoltteina.</p></div><div class="sol-step" data-step="sijoitus"><p class="sol-label">Sijoitus</p><p>Erotukset ovat $0{,}89\,\text{eV}$, $0{,}91\,\text{eV}$, $0{,}90\,\text{eV}$ ja $0{,}91\,\text{eV}$. Niiden summa on $3{,}61\,\text{eV}$, joten </p>
 <div class="eq-chain"><div class="eq-row"><span class="eq-l">$D$</span><span class="eq-r">$= \dfrac{3{,}61\,\text{eV}}{4}$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 0{,}9025\,\text{eV}$</span></div></div></div><div class="sol-step" data-step="vastaus"><p class="sol-label">Vastaus</p><p>Metallin B irrotustyö on suurempi. Se on $0{,}90\,\text{eV}$ suurempi kuin A:n. Vastauksessa on kaksi merkitsevää numeroa. Suorat ovat yhdensuuntaiset, koska molempien kulmakerroin on $h$. Metalli vaikuttaa vain siihen, kuinka paljon suora on siirtynyt. Siirtymä on irrotustöiden ero.</p></div><div class="sol-step" data-step="järkevyys"><p class="sol-label">Järkevyys</p><p>Rajataajuudet ovat $f_0 = \tfrac{W}{h}$. A:n suora saavuttaa nollan noin </p>
 <div class="eq-chain lead"><div class="eq-lead">$1{,}01\,\text{eV} : 4{,}14 \cdot 10^{-15}\,\text{eV/Hz}$</div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= 2{,}4 \cdot 10^{14}\,\text{Hz}$</span></div></div>
 
