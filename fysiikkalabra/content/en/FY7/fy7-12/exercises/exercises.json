@@ -144,7 +144,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Critical angle between plastic and air in five measurements (example data)",
+        "caption": "Critical angle between plastic and air in five measurements",
         "columns": [
           "Measurement",
           "$\\alpha_\\text{r}\\,({}^\\circ)$"
@@ -185,7 +185,7 @@
       "unit": "ns",
       "tolerance": 0.04,
       "data": {
-        "caption": "Intensity of the light arriving (example data)",
+        "caption": "Intensity of the light arriving",
         "columns": [
           "$t\\,(\\mu\\text{s})$",
           "$I\\,(\\%)$"
@@ -346,7 +346,7 @@
       "unit": "°",
       "tolerance": 0.02,
       "data": {
-        "caption": "Three types of fibre (example data)",
+        "caption": "Three types of fibre",
         "columns": [
           "Fibre",
           "$n_1$ (core)",
@@ -384,7 +384,7 @@
       "unit": "mm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Power transmitted by the fibre as a function of the bending radius (example data)",
+        "caption": "Power transmitted by the fibre as a function of the bending radius",
         "columns": [
           "$R\\,(\\text{mm})$",
           "Power (%)"

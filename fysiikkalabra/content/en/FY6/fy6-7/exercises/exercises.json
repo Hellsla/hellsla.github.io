@@ -186,7 +186,7 @@
       "unit": "kWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Use of appliances at home (example data)",
+        "caption": "Use of appliances at home",
         "columns": [
           "Appliance",
           "$P\\,(\\text{W})$",
@@ -233,7 +233,7 @@
       "unit": "W",
       "tolerance": 0.02,
       "data": {
-        "caption": "Electricity meter readings (example data)",
+        "caption": "Electricity meter readings",
         "columns": [
           "$t\\,(\\text{d})$",
           "Reading $(\\text{kWh})$"
@@ -287,7 +287,7 @@
       "unit": "kWh",
       "tolerance": 0.05,
       "data": {
-        "caption": "Reading of the energy meter of the refrigerator (example data)",
+        "caption": "Reading of the energy meter of the refrigerator",
         "columns": [
           "$t\\,(\\text{h})$",
           "$E\\,(\\text{kWh})$"
@@ -364,7 +364,7 @@
       "unit": "€",
       "tolerance": 0.02,
       "data": {
-        "caption": "Consumption and price during a day (example data)",
+        "caption": "Consumption and price during a day",
         "columns": [
           "Period (time of day)",
           "$E\\,(\\text{kWh})$",

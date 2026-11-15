@@ -273,7 +273,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Angle $\\theta$ as a function of the angle of incidence (example data)",
+        "caption": "Angle $\\theta$ as a function of the angle of incidence",
         "columns": [
           "$\\alpha\\,({}^\\circ)$",
           "$\\theta_\\text{water}\\,({}^\\circ)$",

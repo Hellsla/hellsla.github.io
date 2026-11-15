@@ -137,7 +137,7 @@
       "unit": "kW",
       "tolerance": 0.02,
       "data": {
-        "caption": "Talon sähköteho illalla (esimerkkiaineisto)",
+        "caption": "Talon sähköteho illalla",
         "columns": [
           "Kellonaika",
           "$P_{\\text{talo}}\\,(\\text{kW})$"
@@ -189,7 +189,7 @@
       "unit": "kWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Latausaseman teho latauksen aikana (esimerkkiaineisto)",
+        "caption": "Latausaseman teho latauksen aikana",
         "columns": [
           "$t\\,(\\text{h})$",
           "$P\\,(\\text{kW})$"
@@ -304,7 +304,7 @@
       "unit": "€",
       "tolerance": 0.02,
       "data": {
-        "caption": "Perheen ajamat kuukausimatkat (esimerkkiaineisto)",
+        "caption": "Perheen ajamat kuukausimatkat",
         "columns": [
           "Kuukausi",
           "$s\\,(\\text{km})$",

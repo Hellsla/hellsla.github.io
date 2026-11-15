@@ -148,7 +148,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Thermal energy fed into the district heating network and thermal energy arrived (example data set)",
+        "caption": "Thermal energy fed into the district heating network and thermal energy arrived",
         "columns": [
           "Month",
           "$E_\\text{sent}\\,(\\text{MWh})$",
@@ -190,7 +190,7 @@
       "unit": "MW",
       "tolerance": 0.02,
       "data": {
-        "caption": "Loss power of a power line at different voltages, transmitted power $100\\,\\text{MW}$ (example data set)",
+        "caption": "Loss power of a power line at different voltages, transmitted power $100\\,\\text{MW}$",
         "columns": [
           "$U\\,(\\text{kV})$",
           "$P_\\text{loss}\\,(\\text{MW})$"
@@ -341,7 +341,7 @@
       "unit": "MWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Average power of the heat losses of the house during the heating season (example data set)",
+        "caption": "Average power of the heat losses of the house during the heating season",
         "columns": [
           "Building part",
           "$P_\\text{loss}\\,(\\text{kW})$"
@@ -382,7 +382,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Power fed into the electricity grid and the share lost in periods of the day (example data set)",
+        "caption": "Power fed into the electricity grid and the share lost in periods of the day",
         "columns": [
           "Period (time of day)",
           "$t\\,(\\text{h})$",

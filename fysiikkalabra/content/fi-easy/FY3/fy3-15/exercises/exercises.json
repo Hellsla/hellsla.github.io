@@ -154,7 +154,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Yhteistuotantolaitoksen vuosienergiat (esimerkkiaineisto)",
+        "caption": "Yhteistuotantolaitoksen vuosienergiat",
         "columns": [
           "Vuosi",
           "$E_\\text{polttoaine}\\,(\\text{GWh})$",
@@ -196,7 +196,7 @@
       "unit": "MW",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kolmen lauhdevoimalaitoksen tehot (esimerkkiaineisto)",
+        "caption": "Kolmen lauhdevoimalaitoksen tehot",
         "columns": [
           "Laitos",
           "$P_\\text{o}\\,(\\text{MW})$",
@@ -322,7 +322,7 @@
       "unit": "MW",
       "tolerance": 0.02,
       "data": {
-        "caption": "Lauhdeveden lämpötilat (esimerkkiaineisto)",
+        "caption": "Lauhdeveden lämpötilat",
         "columns": [
           "Kuukausi",
           "$T_\\text{sisään}\\,({}^\\circ\\text{C})$",

@@ -162,7 +162,7 @@
       "unit": "V",
       "tolerance": 0.04,
       "data": {
-        "caption": "Potential (example data)",
+        "caption": "Potential",
         "columns": [
           "$x\\,(\\text{cm})$",
           "$V\\,(\\text{V})$"
@@ -234,7 +234,7 @@
       "unit": "kg",
       "tolerance": 0.04,
       "data": {
-        "caption": "Speed of the ion (example data)",
+        "caption": "Speed of the ion",
         "columns": [
           "$U\\,(\\text{V})$",
           "$v\\,(10^{4}\\,\\text{m/s})$"
@@ -358,7 +358,7 @@
       "unit": "m/s",
       "tolerance": 0.03,
       "data": {
-        "caption": "Share that gets through (example data)",
+        "caption": "Share that gets through",
         "columns": [
           "$U_\\text{r}\\,(\\text{V})$",
           "Share $(\\%)$"

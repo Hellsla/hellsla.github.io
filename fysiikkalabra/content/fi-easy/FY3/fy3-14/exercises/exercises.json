@@ -175,7 +175,7 @@
       "unit": "kJ/kg",
       "tolerance": 0.04,
       "data": {
-        "caption": "Sulaneen veden massa lämmityksen aikana (esimerkkiaineisto)",
+        "caption": "Sulaneen veden massa lämmityksen aikana",
         "columns": [
           "$t\\,(\\text{s})$",
           "$m\\,(\\text{g})$"
@@ -340,7 +340,7 @@
       "unit": "kJ/kg",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kalorimetrimittaukset (esimerkkiaineisto)",
+        "caption": "Kalorimetrimittaukset",
         "columns": [
           "Mittaus",
           "$T_\\text{j}\\,({}^\\circ\\text{C})$",
@@ -373,7 +373,7 @@
       "unit": "°C",
       "tolerance": 0.02,
       "data": {
-        "caption": "Lopputilan lämpötila eri veden alkulämpötiloilla (esimerkkiaineisto)",
+        "caption": "Lopputilan lämpötila eri veden alkulämpötiloilla",
         "columns": [
           "$T_\\text{v}\\,({}^\\circ\\text{C})$",
           "$T\\,({}^\\circ\\text{C})$"

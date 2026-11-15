@@ -135,7 +135,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Suomalaisen keskimääräinen efektiivinen vuosiannos lähteittäin (esimerkkiaineisto)",
+        "caption": "Suomalaisen keskimääräinen efektiivinen vuosiannos lähteittäin",
         "columns": [
           "Lähde",
           "$H_\\text{E}\\,(\\text{mSv})$"
@@ -168,7 +168,7 @@
       "unit": "µSv/h",
       "tolerance": 0.03,
       "data": {
-        "caption": "Annosnopeus eri etäisyyksillä lähteestä (esimerkkiaineisto)",
+        "caption": "Annosnopeus eri etäisyyksillä lähteestä",
         "columns": [
           "$r\\,(\\text{m})$",
           "$\\dot{H}\\,(\\mu\\text{Sv/h})$"
@@ -277,7 +277,7 @@
       "unit": "Bq/m³",
       "tolerance": 0.02,
       "data": {
-        "caption": "Radonpitoisuus asunnon sisäilmassa (esimerkkiaineisto)",
+        "caption": "Radonpitoisuus asunnon sisäilmassa",
         "columns": [
           "Jakso",
           "$c\\,(\\tfrac{\\text{Bq}}{\\text{m}^3})$"
@@ -314,7 +314,7 @@
       "unit": "h",
       "tolerance": 0.04,
       "data": {
-        "caption": "Annosnopeus $1{,}0\\,\\text{m}$:n etäisyydellä betoniseinän takana (esimerkkiaineisto)",
+        "caption": "Annosnopeus $1{,}0\\,\\text{m}$:n etäisyydellä betoniseinän takana",
         "columns": [
           "$d\\,(\\text{cm})$",
           "$\\dot{H}\\,(\\mu\\text{Sv/h})$"

@@ -170,7 +170,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "The patient's examinations during a year (example data)",
+        "caption": "The patient's examinations during a year",
         "columns": [
           "Examination",
           "$H_\\text{E}\\,(\\text{mSv})$",
@@ -207,7 +207,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Activity of the tracer in the patient (example data)",
+        "caption": "Activity of the tracer in the patient",
         "columns": [
           "$t\\,(\\text{h})$",
           "$A\\,(\\text{MBq})$"
@@ -288,7 +288,7 @@
       "unit": "mSv",
       "tolerance": 0.03,
       "data": {
-        "caption": "Data of the PET-CT examination (example data)",
+        "caption": "Data of the PET-CT examination",
         "columns": [
           "Quantity",
           "Value",
@@ -341,7 +341,7 @@
       "unit": "mm",
       "tolerance": 0.04,
       "data": {
-        "caption": "Calibration of the thickness of an aluminium plate (example data)",
+        "caption": "Calibration of the thickness of an aluminium plate",
         "columns": [
           "$d\\,(\\text{mm})$",
           "$R\\,(\\tfrac{1}{\\text{s}})$"

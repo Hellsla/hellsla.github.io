@@ -155,7 +155,7 @@
       "unit": "nm",
       "tolerance": 0.03,
       "data": {
-        "caption": "Maksimien paikat varjostimella (esimerkkiaineisto)",
+        "caption": "Maksimien paikat varjostimella",
         "columns": [
           "$k$",
           "$x_k\\,(\\text{cm})$"
@@ -338,7 +338,7 @@
       "unit": "nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kaksoisraon kuvion intensiteetti (esimerkkiaineisto)",
+        "caption": "Kaksoisraon kuvion intensiteetti",
         "columns": [
           "$x\\,(\\text{mm})$",
           "$I$ (suhteellinen)"
@@ -428,7 +428,7 @@
       "unit": "µm",
       "tolerance": 0.03,
       "data": {
-        "caption": "Maksimien $\\pm 1$ välimatka (esimerkkiaineisto)",
+        "caption": "Maksimien $\\pm 1$ välimatka",
         "columns": [
           "$L\\,(\\text{cm})$",
           "$2x\\,(\\text{cm})$"
