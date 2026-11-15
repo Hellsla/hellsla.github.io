@@ -254,7 +254,7 @@ $$\begin{aligned}
 
 $$\begin{aligned}
 E_\text{viol} &= \\
-&\dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{405 \cdot 10^{-9}\,\text{m} \cdot 1.602 \cdot 10^{-19}\,\text{J/eV}} \\
+&\dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{405 \cdot 10^{-9}\,\text{m} \cdot 1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} \\
 &= 3.0617\,\text{eV}
 \end{aligned}$$
 
@@ -262,11 +262,9 @@ E_\text{viol} &= \\
 
 $$\begin{aligned}
 E_\text{green} &= \\
-&\dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{546 \cdot 10^{-9}\,\text{m} \cdot 1.602 \cdot 10^{-19}\,\text{J/eV}} \\
+&\dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{546 \cdot 10^{-9}\,\text{m} \cdot 1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} \\
 &= 2.2711\,\text{eV}
-\end{aligned}$$
-
-. b) $\Delta E = 3.0617\,\text{eV} - 2.2711\,\text{eV} = 0.7907\,\text{eV}$
+\end{aligned}$$. b) $\Delta E = 3.0617\,\text{eV} - 2.2711\,\text{eV} = 0.7907\,\text{eV}$
 **Answer:** a) $3.06\,\text{eV}$ and $2.27\,\text{eV}$; b) $0.79\,\text{eV}$, two significant figures, because subtracting two nearly equal energies loses leading digits and a reading error of a few nanometres already affects the third figure; c) see the model answer.
 **Reasonableness:** The difference is smaller than either photon energy. With the tabulated lower levels of mercury, $5.461\,\text{eV} - 4.667\,\text{eV}$ gives $0.794\,\text{eV}$, which agrees with the result to two significant figures. If an atom could move between these two states, the photon's wavelength would be about $\lambda = \dfrac{1240\,\text{eV}\,\text{nm}}{0.79\,\text{eV}}$, that is $1570\,\text{nm}$, infrared, so there is no such line in the visible range.
 **Model answer:** The violet and the green photon are alternative transitions from the same upper state: a single atom emits one of them, not both one after the other. The energy of a photon is the difference between the initial and final state of its own transition, so in the difference of the two photons the energy of the upper state cancels and the difference of the lower states remains. The sum must not be used, because the energies are not consecutive steps: a sum would be the total energy of two transitions in a row, and here the upper state $E_\text{u}$ would be included in it twice.

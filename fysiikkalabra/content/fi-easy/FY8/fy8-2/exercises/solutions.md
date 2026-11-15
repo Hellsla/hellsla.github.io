@@ -264,9 +264,7 @@ $$\begin{aligned}
 E_\text{vihr} &= \\
 &\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{546 \cdot 10^{-9}\,\text{m} \cdot 1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} \\
 &= 2{,}2711\,\text{eV}
-\end{aligned}$$
-
-. b) $\Delta E = 3{,}0617\,\text{eV} - 2{,}2711\,\text{eV} = 0{,}7907\,\text{eV}$
+\end{aligned}$$. b) $\Delta E = 3{,}0617\,\text{eV} - 2{,}2711\,\text{eV} = 0{,}7907\,\text{eV}$
 **Vastaus:** a) $3{,}06\,\text{eV}$ ja $2{,}27\,\text{eV}$; b) $0{,}79\,\text{eV}$, kaksi merkitsevää numeroa, koska lähes yhtä suurten energioiden erotuksessa johtavat numerot kumoutuvat ja lukuvirhe näkyy jo kolmannessa numerossa; c) katso mallivastaus.
 **Järkevyys:** Erotus on pienempi kuin kumpikaan fotonin energia. Elohopean alempien tilojen taulukkoarvoilla $5{,}461\,\text{eV} - 4{,}667\,\text{eV}$ on $0{,}794\,\text{eV}$, joka on sama kuin tulos kahden numeron tarkkuudella. Jos atomi voisi siirtyä näiden tilojen välillä, fotonin aallonpituus olisi noin $\lambda = \dfrac{1240\,\text{eV}\,\text{nm}}{0{,}79\,\text{eV}}$ eli $1570\,\text{nm}$, infrapunaa, joten sellaista viivaa ei näkyvällä alueella ole.
 **Mallivastaus:** Violetti ja vihreä fotoni ovat vaihtoehtoisia siirtymiä samalta ylemmältä tilalta: yksittäinen atomi lähettää toisen niistä, ei kumpaakin peräkkäin. Fotonin energia on oman siirtymänsä lähtö- ja päätetilan erotus, joten kahden fotonin erotuksesta ylemmän tilan energia supistuu pois ja jäljelle jää alempien tilojen erotus. Summaa ei saa käyttää, koska energiat eivät ole peräkkäisiä askelia. Summa olisi kahden peräkkäisen siirtymän yhteinen energia. Tässä ylempi tila $E_\text{y}$ olisi summassa kahdesti.
