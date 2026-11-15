@@ -1,21 +1,24 @@
-VERDICT: PASS
-CONTENT-HASH: 8595169e14d96ba2
+VERDICT: FAIL
+CONTENT-HASH: 5416b79b37190477
 
 ## Blocking
-None.
+1. **fy8-k4 d discloses the answer of fy8-k4 a.** Part a asks for helium-4's binding energy per nucleon (answer $7{,}07\,\text{MeV}$, 3 p); part d's statement, visible on the same card, prints "helium-4:llä $7{,}07\,\text{MeV}$". The student can copy the value and get $28{,}3\,\text{MeV}$ as $4 \cdot 7{,}07$ without a mass defect. Fix: give only deuterium and tritium in d and refer to "a-kohdassa laskemasi helium-4:n arvo" (the propagated-error rule in the intro already covers a wrong a), or ask a for another nucleus.
 
 ## Polish
-- Osa 2 core: a student who chooses k4 + k5 meets no graph from data and no measurement uncertainty (those sit only in k2 and k3). The guideline asks for the core across the four tasks, so this is acceptable, but k5 could carry one short reliability or data part if the teacher wants every choice to cover it.
-- k1 i: the distractor "absorboitunut annos on alfalle 20 kertaa suurempi" contradicts the stem, where both doses are 1,0 mGy, so few students will pick it. A distractor that mixes the weighting factor into the absorbed dose in a less obvious way would test more.
-- k4: the reaction line writes `{}^{2}_{1}\text{D}` but the mass list writes `m({}^{2}\text{D})`. Use one notation.
-- Workload: k2 and k3 both need a hand-drawn graph and a fitted line, and k2 c needs a steepest and a shallowest line. Together with Osa 1 and an Osa 3 task the 120 min is tight. It is fair, not excessive, and the intro says a spreadsheet is allowed.
+- Coverage: the intro says "koko moduulin", but nothing tests chapter 16 (maailmankaikkeuden kehitys, a central content and a goal) or chapter 4 (aalto–hiukkas). Osa 1 spends two items on chapter 1 (a, b) and item e repeats k2's LED model; swap one for a cosmology or double-slit item.
+- k1-d uses the same transitions ($2 \to 1$, $3 \to 2$) as k5 a and b, so the compulsory item hands over k5's energies $10{,}2$ and $1{,}89\,\text{eV}$. Use other levels in one of them.
+- Rubric points for things the question does not ask: k7-e awards 1 p for a named assumption (add "Nimeä yksi oletus" to the part); k3-d awards 1 p for comparing the deviations with $\sqrt{N}$ (ask it, or fold into the explanation).
+- k5-d: criteria 2 and 3 (standing wave allows only certain states; each state has its energy) are hard to tell apart when self-scoring; merge or sharpen.
+- k7 statement says twice that injection is $4{,}5\,\text{h}$ after production; say it once.
+- k1-c and k1-i: the correct option is the only one of its form (longest; the only one with computed values, no "koska"). Even out.
+- Exponential decay/attenuation carries k1-g, k3, k6 and k7; acceptable, but a student choosing k3 and k7 meets little else.
 
 ## Checked
-- Levels. Osa 1 has ten items that test understanding (predict a change, read a graph, order of magnitude, ratio, rank). Every distractor is a named student error and solutions.md says which error. Osa 2 has four tasks of 15 p, each with a graph or computation, an interpretation part and a word part, rising in demand. Osa 3 has two tasks of 20 p of different kinds: an experimental one with data, and a societal one with numbers. Both start accessibly (k6 a, k7 a).
-- Independent application. k6 and k7 name no model: the student chooses ln R against d, the inverse-square law and the decay law, and finishes with an evaluation (extrapolation, a safety margin, F-18 against C-11, a dose judgement). Task prompts do not name the method. k5 is the most routine task and works as the accessible Osa 2 choice.
-- Rubrics. Each criterion is observable, the points sum to the part, nothing is awarded for irrelevant material, and propagated errors cost once. The "Hyväksytään myös" lists and the tolerances (k2 b 6,5–7,1, k3 c, k6 d 29–33 mm) fit realistic hand-reading and fitting.
-- Solutions. They follow the full worked form. Each Yleisiä virheitä list matches mistakes students actually make (λ = T/ln 2, unconverted eV, forgetting the background, dividing by the deuterium mass only). Every number is recomputed in answers.py and practice.py check is OK.
-- Data and sources. The tasks are marked `source: example`, and the STUK and law sources carry years.
-- Finnish is natural, with LaTeX, decimal commas and no bold in the statements. Part texts are short enough for a phone.
-- Topic coverage is accepted (teacher decision); translations are not needed.
-- Hash at the start and the end of the review: 8595169e14d96ba2, unchanged.
+- Structure: 10 × 2 p, four 15 p tasks (choose 2), two 20 p tasks (choose 1), max 70 p, 120 min; rubric sums; workload feasible.
+- Osa 1: item types (predict a change, graph reading, ratio, order of magnitude, conclusion), distractors are real errors, each Perustelu explains the tempting wrong option; at most two definition items (f, j).
+- Osa 2: graph from data (k2, k3), uncertainty (k2 c, k3 d), explanation (k4 d, k5 d), main models; no demanding part names its formula.
+- Osa 3: accessible first part, unnamed model in k6 b and d (linearising, inverse square with occupancy time), evaluation at the end; the two differ in kind (measurement data vs. technological judgment).
+- Solutions: complete steps, symbolic before substitution, graph readings shown, Yleisiä virheitä real, Hyväksytään myös fair.
+- k1-b figure at 390 px: legible, needed, line stops before the axis so the intercept must be extrapolated; description gives the data without the answer.
+- Finnish natural, situation first; phone captures of Osa 1 and Osa 3 readable.
+- Hash unchanged at the end.
