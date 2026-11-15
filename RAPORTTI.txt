@@ -1,0 +1,10 @@
+FY3-kuvien uudelleenpiirto
+
+68/68 PNG-kuvaa tallennettu. Näistä 1 oli aiemmin hyväksytty tyylinäyte, 67 tuotettiin tässä jatkossa.
+Kansio 3-kuvaajat-ei-piirreta-uudelleen ohitettiin pyynnön mukaisesti.
+Jokainen kuva tuotettiin erikseen sisäänrakennetulla kuvageneroinnilla käyttäen alkuperäistä kuvaa ja hyväksyttyä tyylinäytettä.
+Ei API-avainta eikä fallback-skriptiä.
+Puuttuvat tai teknisesti epäonnistuneet kuvat: ei yhtään.
+Laboratoriokuvan tausta ja sauvakaavion ylimääräinen värialue korjattiin uusilla generoinneilla.
+
+Rajoitukset: generoidut PNG:t eivät ole muokattavia vektoritiedostoja. Kuvagenerointi tuotti alkuperäistä kuvasuhdetta lähellä olevat koot, mutta kuvasuhteissa on pieniä pikselipyöristyspoikkeamia; tarkat mitat ja poikkeamat on listattu tiedostossa TIEDOSTOT.tsv. Kaavioiden mittasuhteet tarkastettiin silmämääräisesti; niiden matemaattisesti täsmällistä säilymistä tai värien heksadesimaalitäsmällisyyttä ei ole varmennettu.
