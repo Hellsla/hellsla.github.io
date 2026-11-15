@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: cb4f3bc9df560a42
-Review of the recognition chart (queue 9c) and the term change against the version passed at 9ceb9eb8dad8fabb; full on the chart, delta on the rest.
+CONTENT-HASH: d4eeea8d804db9f2
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (cb4f3bc9df560a42); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+(none new; round-1 findings stand)
 
 ## Checked
-- Every chart row of the fi-easy version (sign in task wording -> choice -> law pill), from the 360 px capture or figures.py: each result follows from its sign, no formula list, order useful, start box fits the unit.
-- fi-easy aria-label (figures.json): states the same rows in clear Finnish, usable as a text alternative, formulas spoken in words.
-- Placement after Ydinajatus, unit.md aria-label equals figures.json.
-- Term change: no liikekitka left in the unit texts (grep); teacher.md sentence checked against rows.
+- teacher.md orders the rows top to bottom: photon and atom, nucleus, radiation and people; rows 1-3, 4-6, 7-9 of the chart (fi PNG opened, nine rows) match. Photoelectric pill E_k,max fits.

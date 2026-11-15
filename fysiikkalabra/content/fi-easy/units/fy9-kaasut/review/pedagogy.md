@@ -1,15 +1,13 @@
-VERDICT: FAIL
-CONTENT-HASH: 8d054d0161d6c11a
-Review of the recognition chart (queue 9c) and the term change against the version passed at a9cbf30e479be6e0; full on the chart, delta on the rest.
+VERDICT: PASS
+CONTENT-HASH: 5db2f536d8963325
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (8d054d0161d6c11a); earlier findings kept unless named fixed.
 
 ## Blocking
-- teacher.md: "Pyydä jokaiseen haaraan yksi esimerkki" is untrue now (rows). Change to "jokaiselle riville".
-
-## Polish
 (none)
 
+## Polish
+(none new; round-1 findings stand)
+
 ## Checked
-- Every chart row of the fi-easy version (sign in task wording -> choice -> law pill), from the 360 px capture or figures.py: each result follows from its sign, no formula list, order useful, start box fits the unit.
-- fi-easy aria-label (figures.json): states the same rows in clear Finnish, usable as a text alternative, formulas spoken in words.
-- Placement after Ydinajatus, unit.md aria-label equals figures.json.
-- Term change: no liikekitka left in the unit texts (grep); teacher.md sentence checked against rows.
+- Round-1 Blocking fixed: teacher.md "Pyydä jokaiselle riville yksi esimerkki".
+- Changed row "paine pysyy, tilavuus muuttuu -> työn suuruus, W = pΔV": plain S2 wording, the condition is in the sign; the aria-label says "työn suuruus on paine kertaa tilavuuden muutoksen suuruus". Fi chart PNG opened: nine rows, nothing clipped.

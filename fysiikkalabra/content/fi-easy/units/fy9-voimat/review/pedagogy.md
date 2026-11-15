@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 32cd94238f6e3a04
-Review of the recognition chart (queue 9c) and the term change against the version passed at c07064310b8f07c3; full on the chart, delta on the rest.
+CONTENT-HASH: 79c4d3698d63167e
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (32cd94238f6e3a04); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+(none new; round-1 findings stand)
 
 ## Checked
-- Every chart row of the fi-easy version (sign in task wording -> choice -> law pill), from the 360 px capture or figures.py: each result follows from its sign, no formula list, order useful, start box fits the unit.
-- fi-easy aria-label (figures.json): states the same rows in clear Finnish, usable as a text alternative, formulas spoken in words.
-- Placement after Ydinajatus, unit.md aria-label equals figures.json.
-- Term change: no liikekitka left in the unit texts (grep); teacher.md sentence checked against rows.
+- "tanko tai vipu pysyy paikallaan" (ΣM = 0) and "putoaa, ilmanvastus, nopeus tasaantuu" (F_v = G) state their conditions, chart and aria-label (fi PNG opened: nine rows, long sign fits).

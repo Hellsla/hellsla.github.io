@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 8d9ddf4a4ea0b4a3
-Review of the recognition chart (queue 9c) and the term change against the version passed at b314995820c7d472; full on the chart, delta on the rest.
+CONTENT-HASH: 5b158c0872d57a07
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (8d9ddf4a4ea0b4a3); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- A: teacher.md "käy läpi tunnistuskaavion seitsemän rivin ja kuvaajan vakiotermin" is ungrammatical; use "seitsemän riviä".
 
 ## Checked
-- Every chart row of the fi-easy version (sign in task wording -> choice -> law pill), from the 360 px capture or figures.py: each result follows from its sign, no formula list, order useful, start box fits the unit.
-- fi-easy aria-label (figures.json): states the same rows in clear Finnish, usable as a text alternative, formulas spoken in words.
-- Placement after Ydinajatus, unit.md aria-label equals figures.json.
-- Term change: no liikekitka left in the unit texts (grep); teacher.md sentence checked against rows.
+- teacher.md now counts seven rows, which matches the chart (fi PNG opened: seven rows); the earlier "kuuden kysymyksen kartan" is gone.
+- Header "mistä tunnistan menetelmän?" and the sign "malli origon kautta, suora ei" (b ≠ 0, aria-label "mikä viittaa systemaattiseen ...") are the fi wording; the condition is stated, not a rule of thumb.

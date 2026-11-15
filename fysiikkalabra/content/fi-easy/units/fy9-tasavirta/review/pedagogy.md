@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9441c766eb5c2f62
-Review of the recognition chart (queue 9c) and the term change against the version passed at c909aa8d4fcf4b9e; full on the chart, delta on the rest.
+CONTENT-HASH: 10acfbb4c587770a
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (9441c766eb5c2f62); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: the aria-label still has double spaces ("tehtävän  tunnusmerkki") although the fix round said they were removed; harmless for a screen reader.
 
 ## Checked
-- Every chart row of the fi-easy version (sign in task wording -> choice -> law pill), from the 360 px capture or figures.py: each result follows from its sign, no formula list, order useful, start box fits the unit.
-- fi-easy aria-label (figures.json): states the same rows in clear Finnish, usable as a text alternative, formulas spoken in words.
-- Placement after Ydinajatus, unit.md aria-label equals figures.json.
-- Term change: no liikekitka left in the unit texts (grep); teacher.md sentence checked against rows.
+- Row "paristolla on sisäinen vastus -> johda silmukalla, ΣΔV = 0" and aria-label "napajännite johdetaan kiertämällä piiri, jännitteiden summa on nolla"; consistent with Johda itse.
+- fi-easy 360 px PNG opened: nine rows; the subtitle "piirrä kytkentä ensin, sitten tunnusmerkki" fits on one line.

@@ -236,7 +236,7 @@ sliding friction :: F_\mu = \mu N
 limiting static friction :: F_{\mu_0} = \mu_0 N
 ```
 
-where $\overline{g}$ is the acceleration due to gravity, $g = 9.81\,\text{m/s}^2$, so the magnitude of the weight is $G = mg$, $N$ is the normal force ($\text{N}$), $\mu$ the coefficient of sliding friction and $\mu_0$ the coefficient of static friction. Static friction is only as large as the situation requires, at most the limiting friction $F_{\mu_0}$, and it opposes the sliding of the surfaces relative to each other, not always the motion. The formulas are experimental models for dry surfaces. In free-body diagrams $\overline{F}_\mu$ stands for either kind of friction, static or kinetic.
+where $\overline{g}$ is the acceleration due to gravity, $g = 9.81\,\text{m/s}^2$, so the magnitude of the weight is $G = mg$, $N$ is the normal force ($\text{N}$), $\mu$ the coefficient of sliding friction and $\mu_0$ the coefficient of static friction. Static friction is only as large as the situation requires, at most the limiting friction $F_{\mu_0}$, and it opposes the sliding of the surfaces relative to each other, not always the motion. The formulas are experimental models for dry surfaces. In free-body diagrams $\overline{F}_\mu$ stands for either kind of friction, static or sliding.
 
 On a slope with the angle of inclination $\alpha$, the components of the weight are $G_x = mg\sin\alpha$ down the slope and $G_y = mg\cos\alpha$ towards the slope. When only the weight and the normal force act perpendicular to the surface, $N = mg\cos\alpha$. The components are not new forces: they are drawn with dashed lines and replace the weight in the calculation.
 

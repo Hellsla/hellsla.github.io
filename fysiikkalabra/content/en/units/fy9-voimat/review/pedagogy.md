@@ -1,15 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 65a72267ecdbb241
-Review of the recognition chart (queue 9c) and the term change against the version passed at 28a3c34741ddd22d; full on the chart, delta on the rest.
+VERDICT: PASS
+CONTENT-HASH: 27420fa4cd4b32b8
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (65a72267ecdbb241); earlier findings kept unless named fixed.
 
 ## Blocking
-- unit.md Kaava section (line 239): "In free-body diagrams F_mu stands for either kind of friction, static or kinetic." The term was changed everywhere else to sliding friction; this leaves "kinetic" as a second name in the same paragraph. Change to "static or sliding".
+(none)
 
 ## Polish
-- A: the old chart held Newton III (the opening question of the unit is about force and counterforce) and the slope (G_x = mg sin a, N = mg cos a; several tasks and the Kaava figure). Neither is on the chart. Add rows "two bodies act on each other -> F_AB = -F_BA" and "slope -> components of the weight".
-- A: teacher.md says go through the chart, then draws a slope diagram; OK, but the sentence cannot be tied to any chart row.
-- B: 'air resistance, speed levels off -> F_v = G' is true for a body falling vertically; add "falling".
-- B: row 'a != 0' and 'a = 0' choices are shown as symbols; the words 'acceleration zero' would read better aloud.
+(none new; round-1 findings stand)
 
 ## Checked
-Rows read: a = 0, a != 0, rod rotates (Sigma M = 0), rope (each body), frictionless, sliding friction F_mu = mu N, static friction F <= F_mu0, just about to slide (fully developed static friction = limiting friction, F_mu0 = mu0 N), terminal velocity. Friction terms match the brief and the glossary; aria says the same as the chart. Sovella/inquiry/solutions renames checked: only the word changed.
+- Round-1 Blocking fixed: the Kaava sentence in unit.md line 239 no longer says "kinetic"; grep finds no "kinetic friction" in any en FY9 unit text, and the figures use "sliding friction".
+- Changed rows "a rod or lever stays at rest" and "falling, air resistance, speed levels off" are translated; the English aria-label has the same two conditions (fi 360 px PNG opened: nine rows, the long sign fits).
+- The rest passes through the round-1 report.

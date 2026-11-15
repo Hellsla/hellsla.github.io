@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 8b9ec94f3a8cf71b
-Review of the recognition chart (queue 9c) and the term change against the version passed at 5990f23ea9ddfef8; full on the chart, delta on the rest.
+CONTENT-HASH: 3717a9af9d7a1097
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (8b9ec94f3a8cf71b); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-- A: row 'power or energy of a device -> P = UI' gives no result for energy (E = P t / P = W/Dt); the sign says energy but the pill only power. Add "energy over time" or change the sign.
-- A: row 'battery has internal resistance -> U = E - R_s I' shows as a formula a result the course (CLAUDE.md, Johda itse) wants derived from the loop law, and the old chart deliberately avoided it. Show 'Sigma DeltaV = 0 around the loop' there, or confirm with the teacher.
-- B: the battery capacity Q = It row is gone.
+- C: the aria-label still has double spaces ("task  sign", after "tehtävän  tunnusmerkki" in the source) despite the fix round; harmless for a screen reader.
 
 ## Checked
-Rows: current, Ohm, wire, series, parallel, junction (Sigma I_t = Sigma I_l), loop, power, internal resistance. Draw-the-circuit-first start fits. teacher.md updated to rows and true. aria matches.
+- Row "battery has internal resistance -> derive by a loop, ΣΔV = 0" is translated; the English aria-label says "the terminal voltage is derived by going once round the circuit, the sum of the voltages is zero". Fits the unit's Johda itse approach (fi-easy 360 px PNG opened: nine rows, nothing clipped).
+- The rest passes through the round-1 report.

@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a5651d1a4e826af6
-Review of the recognition chart (queue 9c) and the term change against the version passed at 5844d35ce86ad915; full on the chart, delta on the rest.
+CONTENT-HASH: 54a1d6c9bb937e88
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (a5651d1a4e826af6); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+(none new; round-1 findings stand)
 
 ## Checked
-- Every chart row of the fi-easy version (sign in task wording -> choice -> law pill), from the 360 px capture or figures.py: each result follows from its sign, no formula list, order useful, start box fits the unit.
-- fi-easy aria-label (figures.json): states the same rows in clear Finnish, usable as a text alternative, formulas spoken in words.
-- Placement after Ydinajatus, unit.md aria-label equals figures.json.
-- Term change: no liikekitka left in the unit texts (grep); teacher.md sentence checked against rows.
+- Only change: header "mistä tunnistan menetelmän?", which fits rows that are methods (fi PNG opened: eight rows, nothing clipped). No teacher.md sentence to check.
