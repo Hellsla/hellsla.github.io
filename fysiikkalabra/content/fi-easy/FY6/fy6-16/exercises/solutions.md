@@ -106,7 +106,7 @@
 **Kaava:** $P = RI^2$, joten $\dfrac{P_2}{P_1} = \dfrac{R I_2^2}{R I_1^2} = \left(\dfrac{I_2}{I_1}\right)^2$ ja kasvu on $\dfrac{P_2}{P_1} - 1$
 **Muunnokset:** Ei tarvita. Ampeerit supistuvat. Kasvu muunnetaan prosenteiksi kertomalla se sadalla.
 **Sijoitus:** $\dfrac{P_2}{P_1} = \left(\dfrac{16\,\text{A}}{10\,\text{A}}\right)^2 = 1{,}6^2 = 2{,}56$, joten kasvu on $2{,}56 - 1 = 1{,}56 = 156\,\%$
-**Vastaus:** $156\,\%$. Virrat $10\,\text{A}$ ja $16\,\text{A}$ ovat latauslaitteen tarkat asetukset, joten $156\,\%$ annetaan sellaisena kuin se laskettiin.
+**Vastaus:** $1{,}6 \cdot 10^{2}\,\%$. Laskimen arvo on $156\,\%$. Vastauksessa on kaksi merkitsevää numeroa, kuten virroissa $10\,\text{A}$ ja $16\,\text{A}$.
 **Järkevyys:** Virta kasvaa $60\,\%$, mutta teho yli kaksinkertaistuu, koska virta on neliössä. Jos virta kaksinkertaistuisi, teho nelinkertaistuisi eli kasvaisi $300\,\%$. Tulos $156\,\%$ on sopivasti $60\,\%$:n ja $300\,\%$:n välissä.
 
 ## fy6-16-L3-03
@@ -116,7 +116,7 @@
 **Kaava:** $\eta \cdot 3UI \cdot t = W_\text{akku}$, joten $I = \dfrac{W_\text{akku}}{3 \eta U t}$
 **Muunnokset:** $t = 7.00 - 22.00 = 9{,}0\,\text{h}$; $W_\text{akku} = 40\,\text{kWh} = 40\,000\,\text{Wh}$, jotta tulos saadaan ampeereina; $\eta = 0{,}90$
 **Sijoitus:** $I = \dfrac{40\,000\,\text{Wh}}{3 \cdot 0{,}90 \cdot 230\,\text{V} \cdot 9{,}0\,\text{h}} = \dfrac{40\,000\,\text{Wh}}{5589\,\text{Vh}} = 7{,}157\,\text{A}$
-**Vastaus:** $7{,}2\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, kuten energiassa $40\,\text{kWh}$ ja hyötysuhteessa $90\,\%$.
+**Vastaus:** $7{,}2\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, kuten energiassa $40\,\text{kWh}$ ja hyötysuhteessa $90\,\%$. Virran on oltava vähintään laskettu arvo. Siksi raja-arvo pyöristetään ylöspäin.
 **Järkevyys:** Verkosta otetaan $40\,\text{kWh} : 0{,}90 \approx 44\,\text{kWh}$. Yhdeksässä tunnissa se vaatii noin $4{,}9\,\text{kW}$, ja $4900\,\text{W} : 690\,\text{V} \approx 7\,\text{A}$. Virta on alle puolet aseman $16\,\text{A}$:stä. Hidas yölataus jättää siis tilaa saunalle ja muille kuormille.
 
 ## fy6-16-L1-06
@@ -238,7 +238,7 @@ c) Julkisella latauksella $K_\text{s} = 0{,}45\,\text{€/kWh} \cdot 2602{,}7\,\
 **Kaava:** $P_\text{talo} = 3UI_\text{talo}$, joten $I_\text{talo} = \dfrac{P_\text{talo}}{3U}$; $I_\text{talo} + I_\text{a} \le I_\text{p}$, joten $I_\text{a} = I_\text{p} - I_\text{talo}$; $P_\text{johto} = \rho \dfrac{2l}{A} I^2$
 **Muunnokset:** $P_\text{talo} = 6{,}0\,\text{kW} + 3{,}3\,\text{kW} + 1{,}8\,\text{kW} + 0{,}90\,\text{kW} = 12{,}0\,\text{kW} = 12\,000\,\text{W}$ ja $A = 2{,}5\,\text{mm}^2 = 2{,}5 \cdot 10^{-6}\,\text{m}^2$
 **Sijoitus:** $I_\text{talo} = \dfrac{12\,000\,\text{W}}{3 \cdot 230\,\text{V}} = 17{,}39\,\text{A}$ ja $I_\text{a} = 25\,\text{A} - 17{,}39\,\text{A} = 7{,}609\,\text{A}$. Kaapelin resistanssi on $R = 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \dfrac{2 \cdot 30\,\text{m}}{2{,}5 \cdot 10^{-6}\,\text{m}^2} = 0{,}408\,\Omega$. Siis $P_\text{johto} = 0{,}408\,\Omega \cdot (7{,}609\,\text{A})^2 = 23{,}6\,\text{W}$ ja virralla $16\,\text{A}$ $P_\text{johto} = 0{,}408\,\Omega \cdot (16\,\text{A})^2 = 104{,}4\,\text{W}$.
-**Vastaus:** Vastauslaatikkoon $7{,}6\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kuormien tehoissa. a) Talon virta on $17\,\text{A}$ jokaisessa vaihejohtimessa.
+**Vastaus:** Vastauslaatikkoon $7{,}6\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kuormien tehoissa. Virta saa olla enintään laskettu arvo. Siksi raja-arvo pyöristetään alaspäin. a) Talon virta on $17\,\text{A}$ jokaisessa vaihejohtimessa.
 
 b) Asema saa ottaa enintään $7{,}6\,\text{A}$.
 
