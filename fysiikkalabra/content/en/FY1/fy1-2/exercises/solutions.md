@@ -97,7 +97,7 @@
 ## fy1-2-L2-03
 **Given:** area $A = 2.4\,\text{km}^2$; $1\,\text{ha} = 10\,000\,\text{m}^2$
 **Find:** the area $A$ in hectares
-**Principle:** In place of a unit we write its value in another unit. The unit of area is a product of two lengths, so $1\,\text{km}^2 = 1000\,\text{m}\cdot1000\,\text{m} = 10^{6}\,\text{m}^2$, not $1000\,\text{m}^2$. After that we calculate how many hectares fit in that number of square metres.
+**Principle:** In place of a unit we write its value in another unit. The unit of area is a product of two lengths, so $$\begin{aligned} 1\,\text{km}^2 &= 1000\,\text{m}\cdot1000\,\text{m} \\ &= 10^{6}\,\text{m}^2 \end{aligned}$$, not $1000\,\text{m}^2$. After that we calculate how many hectares fit in that number of square metres.
 **Formula:** $1\,\text{km}^2 = 10^{6}\,\text{m}^2$ and $1\,\text{ha} = 10^{4}\,\text{m}^2$, so $1\,\text{km}^2 = (10^{6} : 10^{4})\,\text{ha} = 100\,\text{ha}$
 **Conversions:** In place of the square kilometre we write $100\,\text{ha}$.
 **Substitution:** $A = 2.4\,\text{km}^2 = 2.4\cdot100\,\text{ha} = 240\,\text{ha}$
@@ -112,14 +112,14 @@
 **Conversions:** $1\,\text{day} = 24\cdot 3600\,\text{s} = 86\,400\,\text{s}$. Finally $1\,\text{million km} = 10^{6}\,\text{km}$.
 **Substitution:** $s = 15.341\,\dfrac{\text{km}}{\text{s}}\cdot 86\,400\,\text{s} = 1\,325\,462\,\text{km} = 1.3255\cdot10^{6}\,\text{km}$
 **Answer:** $1.3255$ million km, five significant figures like the speed $15.341\,\text{km/s}$; the length of a day is exact.
-**Reasonableness:** With rounded numbers $15\,\text{km/s}\cdot 9\cdot10^{4}\,\text{s} = 1.35\cdot10^{6}\,\text{km}$. In a day the probe travels a little over a million kilometres, about three and a half times the distance from the Earth to the Moon.
+**Reasonableness:** With rounded numbers $$\begin{aligned} &15\,\text{km/s}\cdot 9\cdot10^{4}\,\text{s} \\ &= 1.35\cdot10^{6}\,\text{km} \end{aligned}$$. In a day the probe travels a little over a million kilometres, about three and a half times the distance from the Earth to the Moon.
 
 ## fy1-2-L2-05
 **Given:** from the table the speeds: fast ferry $38.0$ knots, train $66.0\,\text{km/h}$, cyclist $9.0\,\text{m/s}$ and fishing boat $12.0$ knots; $1\,\text{knot} = 1.852\,\text{km/h}$
 **Find:** the fastest vehicle and its speed $v$ in the unit $\text{m/s}$
 **Principle:** Numerical values can be compared only when they are given in the same unit. So all speeds are converted to $\text{m/s}$, and the largest is chosen. The largest numerical value in the table, $66.0$, tells nothing, because it is in a different unit from the others.
 **Formula:** $1\,\text{knot} = 1.852\,\text{km/h}$ and $1\,\text{km/h} = \dfrac{1000\,\text{m}}{3600\,\text{s}}$, so $v = n\cdot 1.852\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}}$ when there are $n$ knots
-**Conversions:** Fast ferry $38.0\cdot1.852\,\text{km/h} = 70.38\,\text{km/h}$, fishing boat $12.0\cdot1.852\,\text{km/h} = 22.22\,\text{km/h}$. The cyclist is already in $\text{m/s}$.
+**Conversions:** Fast ferry $$\begin{aligned} &38.0\cdot1.852\,\text{km/h} \\ &= 70.38\,\text{km/h} \end{aligned}$$, fishing boat $$\begin{aligned} &12.0\cdot1.852\,\text{km/h} \\ &= 22.22\,\text{km/h} \end{aligned}$$. The cyclist is already in $\text{m/s}$.
 **Substitution:** fast ferry $70.38\,\text{km/h} = 70.38\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 19.55\,\text{m/s}$; train $66.0\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 18.33\,\text{m/s}$; fishing boat $22.22\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 6.17\,\text{m/s}$; cyclist $9.0\,\text{m/s}$. The order of speed is fast ferry, train, cyclist, fishing boat.
 **Answer:** the fastest is the fast ferry, $19.5\,\text{m/s}$, three significant figures like the initial value $38.0$ knots; the conversion factor $1.852$ is exact.
 **Reasonableness:** The fast ferry travels $70\,\text{km}$ in an hour and the train $66\,\text{km}$, so the ferry is slightly faster. The cyclist's $9.0\,\text{m/s}$ is about $32\,\text{km/h}$, which is less than either.
@@ -128,9 +128,9 @@
 **Given:** from the table the masses of five apples $152.4$, $147.9$, $160.8$, $155.3$ and $158.1$; the unit $\text{kg}$ in the column heading
 **Find:** the error in the table and the mean mass of an apple $m_{\text{mean}}$ in kilograms
 **Principle:** A measurement result is always judged for reasonableness. An apple cannot have a mass of $150\,\text{kg}$, so the unit in the heading is wrong: the numerical values were measured in grams. The mean is the sum of the masses divided by the number of masses, and the unit is corrected by substitution.
-**Formula:** $m_{\text{mean}} = \dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$
+**Formula:** $$m_{\text{mean}} = \dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$$
 **Conversions:** The correct heading is $m\,(\text{g})$. In place of the gram we write its value in kilograms, $1\,\text{g} = 10^{-3}\,\text{kg}$.
-**Substitution:** The sum of the masses is $152.4\,\text{g} + 147.9\,\text{g} + 160.8\,\text{g} + 155.3\,\text{g} + 158.1\,\text{g} = 774.5\,\text{g}$, so $m_{\text{mean}} = \dfrac{774.5\,\text{g}}{5} = 154.9\,\text{g} = 154.9\cdot10^{-3}\,\text{kg} = 0.1549\,\text{kg}$
+**Substitution:** The sum of the masses is $$\begin{aligned} &152.4\,\text{g} + 147.9\,\text{g} + 160.8\,\text{g} + 155.3\,\text{g} \\ &+ 158.1\,\text{g} \\ &= 774.5\,\text{g} \end{aligned}$$, so $m_{\text{mean}} = \dfrac{774.5\,\text{g}}{5} = 154.9\,\text{g} = 154.9\cdot10^{-3}\,\text{kg} = 0.1549\,\text{kg}$
 **Answer:** $0.1549\,\text{kg}$, four significant figures like the weighings, which are given to a tenth of a gram. The number of apples is an exact number.
 **Reasonableness:** The mass of an apple is usually about $150\,\text{g}$, that is about $0.15\,\text{kg}$, and the values are close to each other. The mean $154.9\,\text{g}$ lies between $147.9$ and $160.8$, as a mean should.
 
@@ -150,7 +150,7 @@
 **Principle:** The light-year is a unit of length, not of time: it is the distance light travels in a vacuum in a year. Light travels at a constant speed, so the given formula $s = ct$ gives the distance in kilometres, and then the distance is divided by the length of an AU.
 **Formula:** $L = c\,t$
 **Conversions:** $t = 1\,\text{a} = 3.156\cdot10^{7}\,\text{s}$ is already in seconds. In astronomical units the distance is obtained by calculating how many AU ($1.496\cdot10^{8}\,\text{km}$) fit in it.
-**Substitution:** $L = 2.998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3.156\cdot10^{7}\,\text{s} = 9.462\cdot10^{12}\,\text{km}$ and $9.462\cdot10^{12}\,\text{km} : 1.496\cdot10^{8}\,\text{km} = 6.325\cdot10^{4}$, so $L = 6.325\cdot10^{4}\,\text{AU}$
+**Substitution:** $$\begin{aligned} L &= 2.998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3.156\cdot10^{7}\,\text{s} \\ &= 9.462\cdot10^{12}\,\text{km} \end{aligned}$$ and $9.462\cdot10^{12}\,\text{km} : 1.496\cdot10^{8}\,\text{km} = 6.325\cdot10^{4}$, so $L = 6.325\cdot10^{4}\,\text{AU}$
 **Answer:** $63\,250\,\text{AU}$, written as $6.325\cdot10^{4}\,\text{AU}$, four significant figures like the initial values.
 **Reasonableness:** Light travels one AU in 8.3 minutes, and a year has about $525\,600$ minutes. The ratio $525\,600 : 8.3 \approx 63\,000$ confirms the result.
 
@@ -159,7 +159,7 @@
 **Find:** how many times the width of one screen the distance is in the picture, the ratio $N$
 **Principle:** The picture is drawn to scale, so kilometres become pixels when divided by the diameter of the Moon. The ratio $N$ is the number of pixels divided by the width of one screen.
 **Formula:** $N = \dfrac{a}{D}\cdot\dfrac{1\,\text{px}}{W}$
-**Conversions:** The distance in kilometres: $a = 30.07\,\text{AU} = 30.07\cdot 1.496\cdot10^{8}\,\text{km} = 4.498\cdot10^{9}\,\text{km}$. Every $3474\,\text{km}$ is one pixel, so the number of pixels is $4.498\cdot10^{9}\,\text{km} : 3474\,\text{km} = 1.295\cdot10^{6}$.
+**Conversions:** The distance in kilometres: $a = 30.07\,\text{AU} = 30.07\cdot 1.496\cdot10^{8}\,\text{km} = 4.498\cdot10^{9}\,\text{km}$. Every $3474\,\text{km}$ is one pixel, so the number of pixels is $$\begin{aligned} &4.498\cdot10^{9}\,\text{km} : 3474\,\text{km} \\ &= 1.295\cdot10^{6} \end{aligned}$$.
 **Substitution:** $N = \dfrac{1.295\cdot10^{6}\,\text{px}}{1920\,\text{px}} = 674.4$
 **Answer:** about $674.4$ times, that is $674.4$ screen widths, four significant figures like the data $30.07\,\text{AU}$, $1.496\cdot10^{8}\,\text{km}$ and $3474\,\text{km}$; the screen width $1920\,\text{px}$ is an exact number and does not limit the precision.
 **Reasonableness:** Neptune is about 1.3 million pixels away, and 1.3 million divided by two thousand is about 650. The result is of the same order of magnitude. So the distance cannot be seen in the picture at a glance: it has to be scrolled through hundreds of screen widths.

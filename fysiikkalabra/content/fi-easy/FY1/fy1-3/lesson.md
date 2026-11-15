@@ -502,7 +502,7 @@ Oppilas mittaa kuulan vierimisajan rampilla käsikellolla kuusi kertaa. Hän saa
 
 <!-- vaihe -->
 
-**Sijoitus.** Tulosten summa on $3{,}12\,\text{s} + 3{,}25\,\text{s} + 3{,}07\,\text{s} + 3{,}31\,\text{s} + 3{,}19\,\text{s} + 3{,}15\,\text{s} = 19{,}09\,\text{s}$. Sijoitetaan summa ja muut lukuarvot yksiköineen:
+**Sijoitus.** Tulosten summa on $$\begin{aligned} &3{,}12\,\text{s} + 3{,}25\,\text{s} + 3{,}07\,\text{s} + 3{,}31\,\text{s} + 3{,}19\,\text{s} \\ &+ 3{,}15\,\text{s} \\ &= 19{,}09\,\text{s} \end{aligned}$$. Sijoitetaan summa ja muut lukuarvot yksiköineen:
 ```latex
 \begin{aligned}
 \bar{t} &= \frac{t_1 + t_2 + \dots + t_n}{n} \\

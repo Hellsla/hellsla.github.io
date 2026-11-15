@@ -12,7 +12,7 @@
 **Given:** true value (reference length) $x_\text{true} = 20.0\,\text{cm}$, measurement result $x = 20.3\,\text{cm}$
 **Find:** the measurement error $x - x_\text{true}$ with its sign in the unit $\text{cm}$
 **Principle:** The measurement error is the difference between the measurement result and the true value. The sign tells the direction: plus means that the result is too large, and minus that it is too small.
-**Formula:** The measurement error is the difference between the result and the true value: $\text{measurement error} = x - x_\text{true}$
+**Formula:** The measurement error is the difference between the result and the true value: $$\begin{aligned} &\text{measurement error} \\ &= x - x_\text{true} \end{aligned}$$
 **Conversions:** Both lengths are in centimetres, so no conversions are needed.
 **Substitution:** $x - x_\text{true} = 20.3\,\text{cm} - 20.0\,\text{cm} = +0.3\,\text{cm}$
 **Answer:** $+0.3\,\text{cm}$, that is, the result is too large. The difference is known only to one decimal place, because both lengths are given with one decimal place.
@@ -65,7 +65,7 @@
 **Principle:** The rod is the same length all the time, and the worn start of the tape adds the same amount to every reading: this is a systematic error. The readings vary slightly because of random error, so the error is estimated as the difference between the mean of the readings and the true value.
 **Formula:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$ and $\Delta L_\text{sys} = \bar{L} - L_0$
 **Conversions:** The result comes out in metres. Since $1\,\text{m} = 1000\,\text{mm}$, $1000\,\text{mm}$ is written in place of the metre.
-**Substitution:** The sum is $1.012\,\text{m} + 1.009\,\text{m} + 1.011\,\text{m} = 3.032\,\text{m}$, so $\bar{L} = \dfrac{3.032\,\text{m}}{3} = 1.01067\,\text{m}$ and $\Delta L_\text{sys} = 1.01067\,\text{m} - 1.000\,\text{m} = 0.01067\,\text{m}$, that is, $\Delta L_\text{sys} = 0.01067 \cdot 1000\,\text{mm} = 10.67\,\text{mm}$
+**Substitution:** The sum is $$\begin{aligned} &1.012\,\text{m} + 1.009\,\text{m} \\ &+ 1.011\,\text{m} \\ &= 3.032\,\text{m} \end{aligned}$$, so $\bar{L} = \dfrac{3.032\,\text{m}}{3} = 1.01067\,\text{m}$ and $\Delta L_\text{sys} = 1.01067\,\text{m} - 1.000\,\text{m} = 0.01067\,\text{m}$, that is, $\Delta L_\text{sys} = 0.01067 \cdot 1000\,\text{mm} = 10.67\,\text{mm}$
 **Answer:** $10.7\,\text{mm}$ (calculator value $10.67\,\text{mm}$). The half-range of the readings is $1.5\,\text{mm}$; its first figure is 1, so it is given with two figures and the result to tenths of a millimetre: $10.7\,\text{mm} \pm 1.5\,\text{mm}$.
 **Reasonableness:** Each reading is $9\,\text{mm}$–$12\,\text{mm}$ too large, so the result $10.7\,\text{mm}$ is between these. The tape shows about $1\,\%$ too much, and the sign of the error is positive, because the readings exceed the true value.
 
@@ -75,7 +75,7 @@
 **Principle:** A mean can be calculated only from numbers in the same unit, because numbers in different units cannot be added. So convert all results to centimetres first.
 **Formula:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$
 **Conversions:** $100\,\text{cm}$ is written in place of the metre and $0.1\,\text{cm}$ in place of the millimetre: $0.125 \cdot 100\,\text{cm} = 12.5\,\text{cm}$ and $123 \cdot 0.1\,\text{cm} = 12.3\,\text{cm}$.
-**Substitution:** The sum is $12.4\,\text{cm} + 12.5\,\text{cm} + 12.3\,\text{cm} = 37.2\,\text{cm}$, so $\bar{L} = \dfrac{37.2\,\text{cm}}{3} = 12.4\,\text{cm}$
+**Substitution:** The sum is $$\begin{aligned} &12.4\,\text{cm} + 12.5\,\text{cm} \\ &+ 12.3\,\text{cm} \\ &= 37.2\,\text{cm} \end{aligned}$$, so $\bar{L} = \dfrac{37.2\,\text{cm}}{3} = 12.4\,\text{cm}$
 **Answer:** $12.4\,\text{cm}$, three significant figures like the measurement results.
 **Reasonableness:** The mean is between the smallest result $12.3\,\text{cm}$ and the largest result $12.5\,\text{cm}$. If the numbers had not been converted, the sum $12.4 + 0.125 + 123$ would give the absurd mean $45.2$, so the conversion is necessary.
 
@@ -115,7 +115,7 @@
 **Principle:** The readings are close together but all clearly above the true value. The mean reduces random error, so its difference from the true value describes the systematic error that remains.
 **Formula:** $\bar{x} = \dfrac{x_1 + \dots + x_5}{n}$ and $\Delta x_\text{sys} = \bar{x} - x_\text{true}$
 **Conversions:** All lengths are in centimetres, so no conversions are needed.
-**Substitution:** The sum is $8.04\,\text{cm} + 8.07\,\text{cm} + 8.05\,\text{cm} + 8.09\,\text{cm} + 8.05\,\text{cm} = 40.30\,\text{cm}$, so $\bar{x} = \dfrac{40.30\,\text{cm}}{5} = 8.06\,\text{cm}$ and $\Delta x_\text{sys} = 8.06\,\text{cm} - 8.00\,\text{cm} = 0.06\,\text{cm}$
+**Substitution:** The sum is $$\begin{aligned} &8.04\,\text{cm} + 8.07\,\text{cm} + 8.05\,\text{cm} \\ &+ 8.09\,\text{cm} + 8.05\,\text{cm} \\ &= 40.30\,\text{cm} \end{aligned}$$, so $\bar{x} = \dfrac{40.30\,\text{cm}}{5} = 8.06\,\text{cm}$ and $\Delta x_\text{sys} = 8.06\,\text{cm} - 8.00\,\text{cm} = 0.06\,\text{cm}$
 **Answer:** $0.06\,\text{cm}$, one significant figure; the difference is to two decimal places.
 **Reasonableness:** The estimate of random error $\dfrac{8.09\,\text{cm} - 8.04\,\text{cm}}{2} = 0.025\,\text{cm} \approx 0.03\,\text{cm}$ is about half of the systematic error. Still, all the readings are above the true value, so they contain a systematic error, for example a wrong zero of the callipers or dirt between their jaws. Its size $0.6\,\text{mm}$ is plausible for vernier callipers. If $0.06\,\text{cm}$ is subtracted from all the readings, they are $7.98\,\text{cm}$–$8.03\,\text{cm}$, that is, close to the true value.
 
@@ -130,7 +130,7 @@
 **Principle:** The result is given in the form $\bar{x} \pm \Delta x$. The error estimate is rounded to one significant figure (two if the first figure is 1), and the mean is rounded to the same decimal place, because the figures after the decimal place of the error estimate are already uncertain.
 **Formula:** $\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{n}$ and $\Delta x = \dfrac{x_\text{max} - x_\text{min}}{2}$
 **Conversions:** All lengths are in centimetres, so no conversions are needed.
-**Substitution:** The sum of the results is $5.41\,\text{cm} + 5.47\,\text{cm} + 5.39\,\text{cm} + 5.44\,\text{cm} + 5.43\,\text{cm} = 27.14\,\text{cm}$, so $\bar{x} = \dfrac{27.14\,\text{cm}}{5} = 5.428\,\text{cm}$ and $\Delta x = \dfrac{5.47\,\text{cm} - 5.39\,\text{cm}}{2} = 0.04\,\text{cm}$
+**Substitution:** The sum of the results is $$\begin{aligned} &5.41\,\text{cm} + 5.47\,\text{cm} + 5.39\,\text{cm} \\ &+ 5.44\,\text{cm} + 5.43\,\text{cm} \\ &= 27.14\,\text{cm} \end{aligned}$$, so $\bar{x} = \dfrac{27.14\,\text{cm}}{5} = 5.428\,\text{cm}$ and $\Delta x = \dfrac{5.47\,\text{cm} - 5.39\,\text{cm}}{2} = 0.04\,\text{cm}$
 **Answer:** $5.43\,\text{cm}$, because the error estimate $0.04\,\text{cm}$ is a one-figure number at the hundredths place (the first figure is not 1). The result is $5.43\,\text{cm} \pm 0.04\,\text{cm}$.
 **Reasonableness:** The interval $5.43\,\text{cm} \pm 0.04\,\text{cm}$, that is $5.39\,\text{cm}$–$5.47\,\text{cm}$, covers all five results. The result $5.428\,\text{cm}$ would be too precise, because it would imply knowing the width to the thousandths, although the error estimate is in hundredths.
 
@@ -181,7 +181,7 @@
 **Principle:** A clearly deviating result is checked, but it is not removed merely because it deviates. It may be left out only if the reason for the gross error is found and the omission is justified and recorded. Here the notebook note gives the reason: the clock was stopped late. If no reason is found, the result stays in the data and the deviation is described in the uncertainty.
 **Formula:** $\bar{t} = \dfrac{t_1 + \dots + t_n}{n}$, where $n = 7$ remaining results
 **Conversions:** Not needed: all times are in seconds.
-**Substitution:** The sum of the results is $2.41\,\text{s} + 2.38\,\text{s} + 2.44\,\text{s} + 2.40\,\text{s} + 2.43\,\text{s} + 2.39\,\text{s} + 2.42\,\text{s} = 16.87\,\text{s}$, so $\bar{t} = \dfrac{16.87\,\text{s}}{7} = 2.41\,\text{s}$
+**Substitution:** The sum of the results is $$\begin{aligned} &2.41\,\text{s} + 2.38\,\text{s} + 2.44\,\text{s} + 2.40\,\text{s} \\ &+ 2.43\,\text{s} + 2.39\,\text{s} + 2.42\,\text{s} \\ &= 16.87\,\text{s} \end{aligned}$$, so $\bar{t} = \dfrac{16.87\,\text{s}}{7} = 2.41\,\text{s}$
 **Answer:** The result may be left out, because the notebook note gives the reason and the omission is recorded; the mean is $2.41\,\text{s}$, three significant figures like the measurements. The half-range is $(2.44\,\text{s} - 2.38\,\text{s}) : 2 = 0.03\,\text{s}$. If no reason had been found, the result would stay in the data: the mean would be $19.84\,\text{s} : 8 = 2.48\,\text{s}$ and the half-range $(2.97\,\text{s} - 2.38\,\text{s}) : 2 \approx 0.3\,\text{s}$, ten times as large. The result would be given with this uncertainty, $t = 2.5\,\text{s} \pm 0.3\,\text{s}$, the deviation would be mentioned, and it would be worth repeating the measurement.
 **Reasonableness:** With the deviating result the mean shifts by $0.07\,\text{s}$, which is over twice the half-range $0.03\,\text{s}$. The omission is based on the recorded reason and not on the size of the deviation $2.97\,\text{s} - 2.41\,\text{s} = 0.56\,\text{s}$: on the basis of the notebook note the result is a gross error.
 
@@ -191,7 +191,7 @@
 **Principle:** Here the consistency of two results is judged in a simplified way with the intervals of the stated uncertainty estimates, not with the percentage by which the results differ. If the intervals $\rho \pm \Delta\rho$ overlap, a difference cannot be shown; if they do not, the difference is greater than the stated uncertainties explain. The uncertainties are estimates, not certain limits.
 **Formula:** the gap is the difference between the difference of the results and the sum of the uncertainties: $E = |\rho_\text{A} - \rho_\text{B}| - (\Delta\rho_\text{A} + \Delta\rho_\text{B})$
 **Conversions:** Not needed: all values are in $\text{g/cm}^3$.
-**Substitution:** $E = |2.74\,\text{g/cm}^3 - 2.60\,\text{g/cm}^3| - (0.05\,\text{g/cm}^3 + 0.05\,\text{g/cm}^3) = 0.14\,\text{g/cm}^3 - 0.10\,\text{g/cm}^3 = 0.04\,\text{g/cm}^3$
+**Substitution:** $$\begin{aligned} E &= |2.74\,\text{g/cm}^3 - 2.60\,\text{g/cm}^3| \\ &- (0.05\,\text{g/cm}^3 + 0.05\,\text{g/cm}^3) \\ &= 0.14\,\text{g/cm}^3 - 0.10\,\text{g/cm}^3 \\ &= 0.04\,\text{g/cm}^3 \end{aligned}$$
 **Answer:** $0.04\,\text{g/cm}^3$, two decimal places like the results. The student's error is to judge consistency by the percentage difference: the intervals $2.69$–$2.79\,\text{g/cm}^3$ and $2.55$–$2.65\,\text{g/cm}^3$ do not overlap, and a gap of $0.04\,\text{g/cm}^3$ is left between them. Because the given uncertainty intervals do not overlap, the results are not consistent according to these stated uncertainty estimates. The uncertainty estimates are not certain limits, however, and the separation of the intervals alone does not decide whether the difference is statistically significant. The cause of the difference is worth looking for, for example in a systematic error. The difference still does not prove either result wrong.
 **Reasonableness:** The uncertainties are about $2\,\%$ of the results, so the $5\,\%$ difference is over twice as large as they are. If B were $2.66\,\text{g/cm}^3$, the intervals would overlap although the results would still differ by $0.08\,\text{g/cm}^3$.
 
@@ -205,10 +205,10 @@
 **Given:** measurements $1.004$; $1.012$; $1.008$; $1.014$; $1.012$ (in $\text{g/cm}^3$); from the table (MAFY table, density of water at different temperatures) $\rho_\text{table} = 0.998206\,\text{g/cm}^3$ at $20\,{}^\circ\text{C}$
 **Asked:** the deviation of the mean $\bar{x}$ from the table value in percent
 **Principle:** The measurement result is the mean $\bar{x}$, and it is compared with the known table value. The deviation is divided by the table value and given as a percentage.
-**Formula:** $\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{5}$ and $\text{deviation} = \dfrac{\bar{x} - \rho_\text{table}}{\rho_\text{table}}\cdot100\,\%$
+**Formula:** $$\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{5}$$ and $\text{deviation} = \dfrac{\bar{x} - \rho_\text{table}}{\rho_\text{table}}\cdot100\,\%$
 **Conversions:** All densities are in $\text{g/cm}^3$, so no conversions are needed; the deviation is a dimensionless ratio multiplied by one hundred to give percent.
-**Substitution:** $\bar{x} = \dfrac{1.004 + 1.012 + 1.008 + 1.014 + 1.012}{5}\,\dfrac{\text{g}}{\text{cm}^3} = 1.010\,\dfrac{\text{g}}{\text{cm}^3}$ and $\text{deviation} = \dfrac{1.010 - 0.998206}{0.998206}\cdot100\,\% = 1.18\,\%$
-**Answer:** $1.2\,\%$ (more precisely $1.18\,\%$), two significant figures, because the difference $1.010\,\text{g/cm}^3 - 0.998\,\text{g/cm}^3 = 0.012\,\text{g/cm}^3$ has two significant figures. The table value is from the MAFY table (density of water at different temperatures); an answer within about $\pm 4\,\%$ is accepted.
+**Substitution:** $\bar{x} = \dfrac{1.004 + 1.012 + 1.008 + 1.014 + 1.012}{5}\,\dfrac{\text{g}}{\text{cm}^3} = 1.010\,\dfrac{\text{g}}{\text{cm}^3}$ and $$\begin{aligned} &\text{deviation} \\ &= \dfrac{1.010 - 0.998206}{0.998206} \\ &\cdot100\,\% \\ &= 1.18\,\% \end{aligned}$$
+**Answer:** $1.2\,\%$ (more precisely $1.18\,\%$), two significant figures, because the difference $$\begin{aligned} &1.010\,\text{g/cm}^3 \\ &- 0.998\,\text{g/cm}^3 \\ &= 0.012\,\text{g/cm}^3 \end{aligned}$$ has two significant figures. The table value is from the MAFY table (density of water at different temperatures); an answer within about $\pm 4\,\%$ is accepted.
 
-Additionally: the error estimate is $\Delta x = \tfrac{1.014 - 1.004}{2}\,\text{g/cm}^3 = 0.005\,\text{g/cm}^3$, so the interval $\bar{x} \pm \Delta x$ is $1.005\ldots1.015\,\text{g/cm}^3$ and does not contain the table value: the measurements probably have a systematic error.
+Additionally: the error estimate is $$\begin{aligned} \Delta x &= \tfrac{1.014 - 1.004}{2}\,\text{g/cm}^3 \\ &= 0.005\,\text{g/cm}^3 \end{aligned}$$, so the interval $\bar{x} \pm \Delta x$ is $1.005\ldots1.015\,\text{g/cm}^3$ and does not contain the table value: the measurements probably have a systematic error.
 **Reasonableness:** All measurements are above the table value and the deviation is over one percent, but the density of water is about $1\,\text{g/cm}^3$, so the mean is of the right size and the deviation is small.

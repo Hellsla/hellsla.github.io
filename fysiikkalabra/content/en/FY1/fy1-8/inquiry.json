@@ -192,7 +192,7 @@
       "prompt": "A student plans an experiment in which the speed of the car is $0.60\\,\\text{m/s}$ and the uncertainty of the time is $0.2\\,\\text{s}$. The limit of the relative uncertainty is $5\\,\\%$. They calculate the shortest distance:\n\n$$\\begin{aligned} s_\\text{min} &= \\frac{v\\,\\Delta t}{\\varepsilon_\\text{max}} \\\\ &= \\frac{0.60\\,\\text{m/s} \\cdot 0.2\\,\\text{s}}{5} \\\\ &= 0.024\\,\\text{m} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
-          "text": "The percentage was not converted to a decimal number: $5\\,\\% = 0.050$, so the correct distance is $0.60\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 0.2\\,\\text{s} : 0.050 = 2.4\\,\\text{m}$.",
+          "text": "The percentage was not converted to a decimal number: $5\\,\\% = 0.050$, so the correct distance is $$\\begin{aligned} &0.60\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 0.2\\,\\text{s} : 0.050 \\\\ &= 2.4\\,\\text{m} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Correct. The relative uncertainty $\\varepsilon$ is a quotient, so $5\\,\\%$ must be substituted as the number $0.050$. The error could have been noticed with a reasonableness check: you cannot measure a distance of a couple of centimetres with a hand stopwatch when the time is under a second."
         },

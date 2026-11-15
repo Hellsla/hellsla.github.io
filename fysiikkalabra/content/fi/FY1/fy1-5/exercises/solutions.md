@@ -87,7 +87,7 @@
 **Muunnokset:** Matka lasketaan metreinä, ja lopuksi $1\,\text{km} = 1000\,\text{m}$.
 **Sijoitus:** $\Delta s = 343\,\tfrac{\text{m}}{\text{s}} \cdot 5{,}0\,\text{s} = 1715\,\text{m} = 1{,}7\,\text{km}$
 **Vastaus:** $1{,}7\,\text{km}$, kaksi merkitsevää numeroa kuten ajassa $5{,}0\,\text{s}$.
-**Järkevyys:** Peukalosääntö: kolme sekuntia vastaa noin kilometriä, joten viisi sekuntia vastaa noin $1{,}7\,\text{km}$. Valo kulkisi tämän matkan ajassa $1715\,\text{m} : (3{,}0 \cdot 10^{8}\,\text{m/s}) \approx 6\,\mu\text{s}$, mikä on mitätön viiveeseen $5{,}0\,\text{s}$ verrattuna.
+**Järkevyys:** Peukalosääntö: kolme sekuntia vastaa noin kilometriä, joten viisi sekuntia vastaa noin $1{,}7\,\text{km}$. Valo kulkisi tämän matkan ajassa $$\begin{aligned} &1715\,\text{m} \\ &: (3{,}0 \cdot 10^{8}\,\text{m/s}) \\ &\approx 6\,\mu\text{s} \end{aligned}$$, mikä on mitätön viiveeseen $5{,}0\,\text{s}$ verrattuna.
 
 ## fy1-5-L3-01
 **Annettu:** $s_0 = 119{,}0\,\text{AU}$ hetkellä $t = 0$ (5. marraskuuta 2018), $v = 15{,}341\,\text{km/s}$, $s = 150\,\text{AU}$, $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$, $1\,\text{vrk} = 86\,400\,\text{s}$
@@ -102,7 +102,7 @@
 ## fy1-5-L3-02
 **Annettu:** etäisyys $d = 150\,\text{AU}$, signaalin nopeus $c = 299\,792\,458\,\text{m/s}$, $1\,\text{AU} = 149\,597\,870{,}7\,\text{km}$
 **Kysytty:** edestakaisen matkan kulkuaika $t$ tunteina
-**Periaate:** Radiosignaali etenee tyhjiössä vakionopeudella, joten sen kulkema matka on $s = ct$. Komento ja vastaus kulkevat kumpikin matkan $d$, joten kokonaismatka on $2d$. Luotain liikkuu tänä aikana noin $15\,\text{km/s} \cdot 1{,}5 \cdot 10^{5}\,\text{s} \approx 2{,}3 \cdot 10^{6}\,\text{km} \approx 0{,}015\,\text{AU}$, mikä on vain $0{,}01\,\%$ etäisyydestä $150\,\text{AU}$. Maa liikkuu samassa ajassa noin $30\,\text{km/s} \cdot 1{,}5 \cdot 10^{5}\,\text{s} \approx 0{,}03\,\text{AU}$, vain noin $0{,}02\,\%$, joten kummankaan liikkeen voi jättää huomiotta.
+**Periaate:** Radiosignaali etenee tyhjiössä vakionopeudella, joten sen kulkema matka on $s = ct$. Komento ja vastaus kulkevat kumpikin matkan $d$, joten kokonaismatka on $2d$. Luotain liikkuu tänä aikana noin $$\begin{aligned} &15\,\text{km/s} \cdot 1{,}5 \cdot 10^{5}\,\text{s} \\ &\approx 2{,}3 \cdot 10^{6}\,\text{km} \\ &\approx 0{,}015\,\text{AU} \end{aligned}$$, mikä on vain $0{,}01\,\%$ etäisyydestä $150\,\text{AU}$. Maa liikkuu samassa ajassa noin $$\begin{aligned} &30\,\text{km/s} \cdot 1{,}5 \cdot 10^{5}\,\text{s} \\ &\approx 0{,}03\,\text{AU} \end{aligned}$$, vain noin $0{,}02\,\%$, joten kummankaan liikkeen voi jättää huomiotta.
 **Kaava:** $2d = ct$, josta $t = \dfrac{2d}{c}$
 **Muunnokset:** $d = 150 \cdot 149\,597\,870{,}7\,\text{km} = 2{,}2440 \cdot 10^{10}\,\text{km} = 2{,}2440 \cdot 10^{13}\,\text{m}$. Lopuksi $1\,\text{h} = 3600\,\text{s}$.
 **Sijoitus:** $t = \dfrac{2 \cdot 2{,}2440 \cdot 10^{13}\,\text{m}}{299\,792\,458\,\text{m/s}} = 1{,}497 \cdot 10^{5}\,\text{s} = \dfrac{1{,}497 \cdot 10^{5}\,\text{s}}{3600\,\text{s/h}} = 41{,}58\,\text{h}$

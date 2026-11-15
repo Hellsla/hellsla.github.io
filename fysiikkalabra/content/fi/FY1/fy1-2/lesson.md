@@ -501,16 +501,16 @@ Yksikköä vaihdettaessa suure ei muutu, vain sen kirjoitustapa. Muunnos tehdä�
 4{,}2\,\text{km} = 4{,}2\cdot1000\,\text{m} = 4200\,\text{m}
 ```
 
-Toiseen suuntaan $1\,\text{m} = 0{,}001\,\text{km}$, joten $350\,\text{m} = 350\cdot0{,}001\,\text{km} = 0{,}35\,\text{km}$. Tulosta kannattaa aina järkeillä: pienemmässä yksikössä lukuarvo on suurempi, koska pieniä yksiköitä tarvitaan enemmän. Pinta-alassa yksikkö on kahden pituuden tulo, joten $1\,\text{km}^2 = 1000\,\text{m}\cdot1000\,\text{m} = 10^{6}\,\text{m}^2$.
+Toiseen suuntaan $1\,\text{m} = 0{,}001\,\text{km}$, joten $350\,\text{m} = 350\cdot0{,}001\,\text{km} = 0{,}35\,\text{km}$. Tulosta kannattaa aina järkeillä: pienemmässä yksikössä lukuarvo on suurempi, koska pieniä yksiköitä tarvitaan enemmän. Pinta-alassa yksikkö on kahden pituuden tulo, joten $$\begin{aligned} 1\,\text{km}^2 &= 1000\,\text{m}\cdot1000\,\text{m} \\ &= 10^{6}\,\text{m}^2 \end{aligned}$$.
 
-Tähtitieteessä kilometri on liian pieni yksikkö. **Astronominen yksikkö** $\text{AU}$ on sovittu pituusyksikkö, joka vastaa likimain Maan ja Auringon keskimääräistä etäisyyttä: $1\,\text{AU} = 149\,597\,870{,}7\,\text{km} \approx 1{,}496\cdot10^{8}\,\text{km}$. Valovuosi on sekin pituusyksikkö eikä aikayksikkö: se on matka, jonka valo kulkee tyhjiössä vuodessa, noin $9{,}46\cdot10^{12}\,\text{km}$.
+Tähtitieteessä kilometri on liian pieni yksikkö. **Astronominen yksikkö** $\text{AU}$ on sovittu pituusyksikkö, joka vastaa likimain Maan ja Auringon keskimääräistä etäisyyttä: $$\begin{aligned} 1\,\text{AU} &= 149\,597\,870{,}7\,\text{km} \\ &\approx 1{,}496\cdot10^{8}\,\text{km} \end{aligned}$$. Valovuosi on sekin pituusyksikkö eikä aikayksikkö: se on matka, jonka valo kulkee tyhjiössä vuodessa, noin $9{,}46\cdot10^{12}\,\text{km}$.
 
 Etäisyyden voi ilmoittaa myös sillä ajalla, jonka valo tarvitsee sen kulkemiseen. Valo etenee tyhjiössä tasaisella nopeudella $c$, joten sen kulkema matka on nopeus kertaa aika, $s = ct$. Kulkuaika saadaan, kun tämä kaava ratkaistaan ajan suhteen:
 
 ```latex
 t = \frac{s}{c}
 ```
-missä $t$ on valon kulkuaika, $s$ valon kulkema matka ja $c = 299\,792\,458\,\text{m/s} \approx 2{,}998\cdot10^{5}\,\text{km/s}$ valon nopeus tyhjiössä. Valo kulkee yhden AU:n matkan ajassa $\tfrac{1{,}496\cdot10^{8}\,\text{km}}{2{,}998\cdot10^{5}\,\text{km/s}} = 499\,\text{s}$ eli $8{,}32\,\text{min}$.
+missä $t$ on valon kulkuaika, $s$ valon kulkema matka ja $$\begin{aligned} c &= 299\,792\,458\,\text{m/s} \\ &\approx 2{,}998\cdot10^{5}\,\text{km/s} \end{aligned}$$ valon nopeus tyhjiössä. Valo kulkee yhden AU:n matkan ajassa $\tfrac{1{,}496\cdot10^{8}\,\text{km}}{2{,}998\cdot10^{5}\,\text{km/s}} = 499\,\text{s}$ eli $8{,}32\,\text{min}$.
 
 <svg data-fig="conversion" data-style="house" viewBox="0 0 600 372" role="img" aria-label="Kaavakuva, ei mittakaavassa: sama etäisyys Auringosta Maahan voidaan ilmoittaa kolmella tavalla. Ylhäällä valonsäde kulkee Auringosta Maahan. Alla etäisyys $s$ on $1{,}496\cdot10^{8}\,\text{km}$, joka on yksi astronominen yksikkö $1\,\text{AU}$ ja jonka valo kulkee 499 sekunnissa eli 8,32 minuutissa. Auringon ja Maan koot ja etäisyys eivät ole mittakaavassa." style="max-width:100%;font-size:24px">
   <defs><radialGradient id="fy12-sun" cx="0.4" cy="0.4" r="0.7"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></radialGradient><radialGradient id="fy12-earth" cx="0.4" cy="0.35" r="0.75"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></radialGradient><linearGradient id="fy12-ray" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
@@ -551,7 +551,7 @@ t = \frac{s}{c}
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Etäisyys muunnetaan kilometreiksi kirjoittamalla $\text{AU}$:n paikalle $1{,}496\cdot10^{8}\,\text{km}$: $s = 30{,}1\,\text{AU} = 30{,}1\cdot1{,}496\cdot10^{8}\,\text{km} = 4{,}503\cdot10^{9}\,\text{km}$.
+**Yksikkömuunnokset.** Etäisyys muunnetaan kilometreiksi kirjoittamalla $\text{AU}$:n paikalle $1{,}496\cdot10^{8}\,\text{km}$: $$\begin{aligned} &s \\ &= 30{,}1\,\text{AU} \\ &= 30{,}1\cdot1{,}496\cdot10^{8}\,\text{km} \\ &= 4{,}503\cdot10^{9}\,\text{km} \end{aligned}$$.
 Kulkuaika tulee sekunteina, koska $\text{km}$ supistuu pois. Aika kysytään tunteina, joten sekunnit muunnetaan tunneiksi: $1\,\text{h} = 3600\,\text{s}$.
 
 <!-- vaihe -->
