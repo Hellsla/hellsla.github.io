@@ -1,12 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: e8a6f31d617c0812
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at a189d66a000efca2.
+CONTENT-HASH: 6fc6fb8caaf31946
+Review of the recognition chart (queue 9c) and the term change against the version passed at e8a6f31d617c0812; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- B: The chart sits under Kokonaiskuva (this unit has no Ydinajatus), which fits the unit's own structure.
+- C: The aria-label says "hajonta on vaihteluvälin puolikas", which the chart does not show (it shows only x̄ ± Δx). Harmless extra, but say "Δx on vaihteluvälin puolikas".
+- C: "yksi poikkeava tulos -> tarkista -> karkea virhe" and "poikkeama aina samaan suuntaan -> etsi syy -> systemaattinen" give a term, not a law; fine as recognition, but it breaks the pill pattern a little.
+- C: There is no row for "suora ei kulje origon kautta, mitä b kertoo", which the unit's examples use.
 
 ## Checked
-Paperin tiheys: $A$ supistuu, vaihe on nyt näkyvissä; vaa'an korjaus $m = m_\text{lukema}/k$; kuvaajan Mallivastaus lineaarisesta mallista; unit.md-lause tarkoista määristä ristiriidaton solutionien kanssa (öljyn massa, $\pm 0{,}02$). Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.
+- all 8 rows read: sign, choice and result follow each other (ε = Δx/x̄, k = Δy/Δx from far-apart points, ääriviivat for Δk, s vs. t² for a curve); no teacher.md sentence to check.
+- Chart as a recognition chart: start box, then one card per sign with the choice and a dark-green pill; no formula list; 360 px capture readable, no clipped label.
+- Placement after Ydinajatus (under Kokonaiskuva); aria-label read against every row: same rows, same order, same physics, spoken symbols in words, so usable for a screen reader.
+- Changed term lines (liikekitka -> liukukitka) in the diff: consistent, physics unchanged.
+- teacher.md sentence read against the chart.
+- Not looked at: fi-easy and en versions (this report is fi only).
