@@ -213,6 +213,15 @@ kuten `teacher-figure`: `reviews.py approve-text <id> [--lang]` kirjaa hyväksyt
 Rivi kirjataan vain opettajan nimenomaisesta hyväksynnästä; mikä tahansa muu muutos samassa luvussa katselmoidaan
 normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yksin.
 
+## 8l. Taulukoiden otsikoista pois "(esimerkkiaineisto)" (opettaja 2026-11-15)
+
+Opettaja 2026-11-15: "Voisiko taulukoista ottaa pois tuon (esimerkkiaineisto)". Tehtävien taulukko-otsikoissa (`"caption"`
+`exercises.json`:issa) on merkintä noin 930 kertaa: fi 312, en 292 ("(example data)"), fi-easy 325, kursseilla FY2–FY8.
+Poistetaan vain otsikoista. Jos sulkeissa on muutakin, se jää (esim. "(esimerkkiaineisto, energiat NNDC NuDat 3)" →
+"(energiat NNDC NuDat 3)"). Tehtävätekstin maininnat (noin 18) ja taulukon alla oleva lähderivi eivät muutu. Tehdään
+kohdan 8k `teacher-text`-kategorialla (opettajan nimenomainen hyväksyntä tälle mekaaniselle muutokselle), jotta
+katselmoinnit kulkevat muutoksen yli. Jaettu muutos (`scripts/reviews.py` ja kaikki kurssit), ajetaan yksin, sim PR 3:n (#591) jälkeen.
+
 ## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
 
 FY7:n esimerkkikoe on valmis (#586); sen katselmointien Minor-huomioita ei korjattu siinä, ettei katselmoinnit vanhene.
