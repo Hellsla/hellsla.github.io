@@ -131,12 +131,37 @@ def join_wide(tex):
     return m.group(1) + "".join(c + s for c, s in zip(out, out_seps)) + m.group(3)
 
 
-def wide_narrow_html(tex):
+PUNCT = ".,;:!?"
+
+
+def with_punct(tex, punct):
+    """Display maths `tex` with the sentence's punctuation (`$$a = b$$.`) set inside it, at the end of its last row
+    (`\\text{.}`, before `\\end{aligned}` in an aligned block), so the mark never stands alone at the start of the line
+    after the formula. The text after the formula is untouched."""
+    if not punct: return tex
+    mark = "\\text{" + punct + "}"
+    m = re.fullmatch(r"(.*?)(\s*\\end\{aligned\}\s*)", tex, re.S)
+    if m: return m.group(1).rstrip() + mark + m.group(2)
+    return tex.rstrip() + mark
+
+
+# display maths in a text, with the sentence mark that follows it straight after the closing $$ (never inside a word or a number: ".5")
+DISPLAY_OR_INLINE = r"\$\$(.*?)\$\$([.,;:!?](?=\s|$|<))?|\$[^$\n]+?\$"
+
+
+def display_html(tex, punct=""):
+    """Display maths as build.render_md stashes it: the equals signs in one column (or both a wide and a narrow form),
+    the punctuation after it inside the last row."""
+    return wide_narrow_html(tex, punct) or "$$" + with_punct(align_equals(tex), punct) + "$$"
+
+
+def wide_narrow_html(tex, punct=""):
     """Display maths `tex` as both forms when join_wide changes it: `<span class="mj-wide">$$…$$</span><span
     class="mj-narrow">$$…$$</span>`; site.css shows one of them by the width of the screen. Otherwise just `$$tex$$`."""
     wide = join_wide(tex)
     if not wide: return None
-    return f'<span class="mj-wide">$${align_equals(wide)}$$</span><span class="mj-narrow">$${align_equals(tex)}$$</span>'
+    return (f'<span class="mj-wide">$${with_punct(align_equals(wide), punct)}$$</span>'
+            f'<span class="mj-narrow">$${with_punct(align_equals(tex), punct)}$$</span>')
 
 
 def split_list(tex):

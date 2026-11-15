@@ -85,6 +85,22 @@ näkyy 360 px:llä muodossa "4500 kW". Opettaja 2026-11-15:
 Tehdään kurssi kerrallaan, yksi PR per kurssi, alkaen kursseista, joilla rivejä on eniten (FY8, FY9, FY2); jokainen
 korjattu kaava poistaa rivinsä listalta. Ei muita sisältömuutoksia samassa PR:ssä.
 
+## 5e. Välimerkki display-kaavan perään (koordinaattori 2026-11-15)
+
+Varattu: claude/display-kaavan-valimerkki
+
+Kohdan 5d PR #601: kun tekstin sisällä oleva kaava nostetaan display-kaavaksi (`$$…$$` tai `aligned`) ja lause jatkuu
+välimerkillä ("… $$kaava$$." tai "$$kaava$$, joten …"), välimerkki jää yksin seuraavan rivin alkuun. Sisältöä ei muuteta
+(reflow-carry ei muuten kulje). Jaettu muutos (`scripts/`, testit): ajetaan yksin, merkitään ensin.
+1. Rakennus (`scripts/build.py`/`scripts/mathlayout.py`, palvelinpuolella): display-kaavan välittömästi seuraava
+   välimerkki (. , ; : ! ?) siirretään renderöityyn kaavaan viimeisen rivin loppuun (`\text{.}`; `aligned`: viimeinen rivi).
+   Muu teksti jatkuu seuraavassa kappaleessa ilman välimerkkiä.
+2. Toimii kaikkialla, missä kaavoja renderöidään (lesson.md, inquiry.json, exercises, solutions, koe, sovella, units),
+   kolmella kielellä; ääneenluku ei muutu oudoksi.
+3. Testi: `$$a = b$$.` → piste kaavassa; `$$a=b$$, joten c` → pilkku kaavassa, "joten c" jatkuu; inline-kaava ei muutu.
+4. `site/` muuttuu vain display-kaava + välimerkki -kohdista; `check_layout.py` SMOKE-sivuille; `reviews.py verify`
+   (rakennusmuutos, mikään katselmointi ei vanhene).
+
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13, 2026-11-14 ja 2026-11-15)
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
@@ -131,21 +147,6 @@ Opettaja 2026-11-13: "Yleinen virhekäsitys" omassa laatikossaan avattavana (sul
 avattava, kuten Mallin oletukset ja Laskennan selitys). Samoin Tiivistelmä omaan avattavaan laatikkoonsa. Tämä osa
 on sivupohjan muutos (build, ei lukujen tekstejä), joten sen voi tehdä ennen virhekäsitysten sisältötyötä; tarkista,
 että käsitekorttien alleviivaus ja sirut Tiivistelmän perässä toimivat laatikon sisällä (test_home.py).
-
-## 8b. Itsearvion tasot väreissä jo ennen valintaa ja tiiviimpi kortti (opettaja 2026-11-13)
-
-"Arvioi, mitä opit" -kortin tasosirut (Harjoittelen vielä, Osaan osittain, Osaan, Osaan opettaa, Ei vielä) näkyvät nyt
-harmaina, kunnes yksi valitaan (P0-2, 2026-11-10: "quiet until chosen"). Opettaja: tekstien lisäksi samat värit kuin
-moduulisivun itsearvioinnin yhteenvedossa (sormenjälki) jo ennen valintaa; valittu erottuu edelleen selvästi (esim.
-täysi väri ja rasti, muut vaaleampina). Sama kortti FY1–FY8:ssa ja FY9:ssä. Lisäksi "Ei vielä" -siru rivittyy nyt
-omalle rivilleen: mahdutetaan samalle riville leveällä näytöllä. Sivupohjan muutos (templates, site.css), ei
-lukujen tekstejä; korjaa CLAUDE.md:n P0-2-kuvaus samassa PR:ssä. Kontrasti WCAG AA molemmissa teemoissa.
-
-Samaan (opettaja 2026-11-13, "eikö tässä saisi tiivistettyä s.e. ei olisi noin paljon tyhjää"): kortti on nyt hyvin
-väljä, kun jokaisen tavoitteen alle jää "Ei vielä" omalle rivilleen ja tavoitteiden väliin iso tyhjä tila
-katkoviivoineen. Tiivistetään: kaikki viisi tasoa yhdelle riville leveällä näytöllä (sirut kapeammiksi tai "Ei vielä"
-pieneksi linkiksi rivin perään), pienempi pystyväli tavoitteiden välillä ja kortin alalaidassa; puhelimella saa
-rivittyä. Nappien vähimmäiskorkeus 40 px säilyy.
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 

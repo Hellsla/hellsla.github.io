@@ -3,7 +3,7 @@
 > **Why** does the sound sometimes get louder and sometimes almost vanish when you walk in front of two loudspeakers playing the same tone?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: two loudspeakers on stands side by side in a school yard. Sound spreads from both as concentric arcs, and the arcs overlap. In front of the loudspeakers a student walks along a path across the yard and listens." class="fig-hero" style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy512h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><clipPath id="fy512h-clip"><rect x="0" y="0" width="1200" height="520"/></clipPath></defs>
+  <defs><linearGradient id="fy512h-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy512h-fade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="600"><stop offset="0.6" stop-color="#fff"/><stop offset="0.9" stop-color="#fff" stop-opacity="0.1"/></linearGradient><mask id="fy512h-mask"><rect x="0" y="0" width="1200" height="600" fill="url(#fy512h-fade)"/></mask></defs>
   <rect x="0" y="0" width="1200" height="600" fill="url(#fy512h-sky)"/>
   <path d="M779,114 Q777,83.5 813,87 Q827.5,54.5 863.5,65.5 Q896,47.5 914,81.5 Q946.5,85 943,114 Z" fill="#ffffff" stroke-linejoin="round"/>
   <path d="M1026,172 Q1025,151.5 1049,154 Q1058.5,132.5 1082.5,139.5 Q1104,127.5 1116,150.5 Q1137.5,153 1135,172 Z" fill="#ffffff" stroke-linejoin="round"/>
@@ -44,7 +44,7 @@
   <rect x="0" y="330" width="1200" height="270" fill="#b2f2bb"/>
   <path d="M0,520 C300,500 900,500 1200,520 V570 C900,552 300,552 0,570 Z" fill="#f1dfb5" stroke-linejoin="round"/>
   <path d="M0,520 C300,500 900,500 1200,520" fill="none" stroke="#d9b26a" stroke-width="3" stroke-linejoin="round"/>
-  <g clip-path="url(#fy512h-clip)"><circle cx="480" cy="330" r="46" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="480" cy="330" r="92" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="480" cy="330" r="138" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="480" cy="330" r="184" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="480" cy="330" r="230" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="480" cy="330" r="276" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/><circle cx="480" cy="330" r="322" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/><circle cx="480" cy="330" r="368" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/><circle cx="720" cy="330" r="46" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="720" cy="330" r="92" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="720" cy="330" r="138" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="720" cy="330" r="184" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="720" cy="330" r="230" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="720" cy="330" r="276" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/><circle cx="720" cy="330" r="322" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/><circle cx="720" cy="330" r="368" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/></g>
+  <g mask="url(#fy512h-mask)"><circle cx="480" cy="330" r="46" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="480" cy="330" r="92" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="480" cy="330" r="138" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="480" cy="330" r="184" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="480" cy="330" r="230" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="480" cy="330" r="276" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/><circle cx="480" cy="330" r="322" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/><circle cx="480" cy="330" r="368" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/><circle cx="720" cy="330" r="46" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="720" cy="330" r="92" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="720" cy="330" r="138" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="720" cy="330" r="184" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="720" cy="330" r="230" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0.5"/><circle cx="720" cy="330" r="276" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/><circle cx="720" cy="330" r="322" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/><circle cx="720" cy="330" r="368" fill="none" stroke="#1971c2" stroke-width="5" stroke-opacity="0"/></g>
   <line x1="480" y1="380" x2="450" y2="470" stroke="#1f2933" stroke-width="6" stroke-linecap="round"/>
   <line x1="480" y1="380" x2="510" y2="470" stroke="#1f2933" stroke-width="6" stroke-linecap="round"/>
   <line x1="480" y1="360" x2="480" y2="470" stroke="#1f2933" stroke-width="6" stroke-linecap="butt"/>
@@ -59,16 +59,18 @@
   <circle cx="720" cy="300" r="16" fill="#8a96a3" stroke="#1f2933" stroke-width="3"/>
   <circle cx="720" cy="345" r="26" fill="#8a96a3" stroke="#1f2933" stroke-width="3"/>
   <circle cx="720" cy="345" r="9" fill="#1f2933"/>
-  <path d="M900,441 L875,536.5" fill="none" stroke="#1f2933" stroke-width="18.6" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M863,540 h27.5" fill="none" stroke="#6c757d" stroke-width="9.92" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M879,341.5 Q925,323 918.5,379 L915,447 H877.5 Z" fill="#1971c2" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M900,441 L925,536.5" fill="none" stroke="#1f2933" stroke-width="18.6" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M934.5,540 h27.5" fill="none" stroke="#6c757d" stroke-width="9.92" stroke-linejoin="round" stroke-linecap="round"/>
-  <path d="M905,354 L927.5,410" fill="none" stroke="#1971c2" stroke-width="14.88" stroke-linejoin="round" stroke-linecap="round"/>
-  <circle cx="928.5" cy="415" r="7.44" fill="#f1dfb5"/>
-  <rect x="897.5" y="317" width="12.5" height="18.5" fill="#f1dfb5"/>
-  <circle cx="903.5" cy="300.5" r="21.08" fill="#f1dfb5"/>
-  <path d="M882.5,304.5 Q881.5,277 905,278.5 Q925,279.5 925,294.5 Q903.5,289.5 882.5,304.5 Z" fill="#1f2933" stroke-linejoin="round"/>
+  <path d="M907,430.5 L903,536" fill="none" stroke="#1f2933" stroke-width="19.1176" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M894,543.5 h-14.5" fill="none" stroke="#6c757d" stroke-width="11.7647" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M933,430.5 L937,527.5" fill="none" stroke="#1f2933" stroke-width="19.1176" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M946,535 h14.5" fill="none" stroke="#6c757d" stroke-width="11.7647" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M893.5,360 L890.5,427.5" fill="none" stroke="#1971c2" stroke-width="16.1765" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="889" cy="436" r="8.82353" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
+  <path d="M946.5,360 L949.5,427.5" fill="none" stroke="#1971c2" stroke-width="16.1765" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="951" cy="436" r="8.82353" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
+  <rect x="914" y="333.5" width="12" height="20.5" fill="#f1dfb5"/>
+  <path d="M887.5,354 Q920,342 952.5,354 L945,433.5 H895 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="920" cy="317" r="20.5882" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M899.5,317 Q898,292 920,293.5 Q942,292 940.5,317 Q926,305.5 899.5,317 Z" fill="#1f2933" stroke-linejoin="round"/>
 </svg>
 
 ## Key idea
