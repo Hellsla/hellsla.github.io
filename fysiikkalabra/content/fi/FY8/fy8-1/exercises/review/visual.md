@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 8a04121185cb5a08
-SCOPE: delta reflow (long solution formulas lifted onto their own line, aligned blocks)
+SCOPE: delta reflow from 8dc2567292c69c38 base cf5f907
 
 ## Blocking
 (none)
