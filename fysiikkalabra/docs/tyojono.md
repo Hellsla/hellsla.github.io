@@ -45,9 +45,10 @@ sijoitusketjun ylivuotoa en-versiossa (oikea reuna 372 px vs. laatikko 330 px, y
 löysi sen); lisää `check_layout.py`:hin tarkistus, joka mittaa ratkaisun kaavaketjun ylivuodon avoimessa tilassa
 kaikilla kielillä 360 ja 390 px:llä.
 
-## 6. Kuvatehtävät FY8, FY9, FY10 ja FY14, taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13 ja 2026-11-14)
+## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13, 2026-11-14 ja 2026-11-15)
 
-Varattu: claude/fy8-kuva-taulukkotehtavat (FY8, erä 1: fy8-1…3, PR #590)
+Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
+FY10:een ja FY14:ään ei tehdä kuvatehtäviä eikä taulukkotehtäviä.
 
 FY8 yksi luku per PR erästä 2 alkaen (koordinaattori 2026-11-15). Erä 1 (#590) valmistui osittain: fy8-1 on tehty ja
 katselmoitu (+3 tehtävää: L1-10 MAFY kalsiumin irrotustyö 3,20 eV, L2-08 ja L2-09 kuvatehtävät; tiede, pedagogiikka ja
@@ -67,11 +68,10 @@ Polish-kohdat (ei estä, ei korjattu, jotta fy8-1:n hash ei muutu): `lessons/FY8
 "387,6 nm -> 388 nm" pitäisi olla "387,5 nm -> 387 nm"; L2-08:n ratkaisussa 5,56 on tarkempi kuin kuvasta luettava 5,6;
 L2-09:n ratkaisun "±1 %" löysä (7,0 ± 0,1 antaa ±1,5 %) ja merkitsevien numeroiden perustelu epäselvä; L2-08 on kevyt
 tasolle 2; kuva on pieni tehtäväkortissa (jakoarvot noin 8 px, sama kaikilla kuvatehtävillä).
-Tämä kohta jää, kunnes FY9, FY10 ja FY14 on tehty.
+Tämä kohta jää, kunnes FY8 ja FY9 on tehty.
 
 Sama tahti kuin FY4:stä alkaen: jokaisessa luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka
-kolmannessa luvussa (#521, #528). FY10:een ja FY14:ään ei lisätä taulukkotehtäviä, vain kuvatehtävät (opettaja
-2026-11-14). Arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit lähde-URL:n kanssa. Aloitetaan,
+kolmannessa luvussa (#521, #528). Arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit lähde-URL:n kanssa. Aloitetaan,
 kun kohdan 2 katselmoinnit on tehty, jotta katselmoimattomien sarjojen jono ei kasva.
 
 ## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
