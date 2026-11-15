@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fc973652ab241b0a
-SCOPE: delta added-exercise from 053cb480bab0df62 base 8f23aa7ae3bd
+CONTENT-HASH: 77ea855d8210779a
+SCOPE: delta from fc973652ab241b0a (wording only)
 
 ## Blocking
 (none)
 
 ## Polish
-- none.
+- exercises.json L3-06 text — "Täysin kehittynyt lepokitka eli lähtökitka (lepokitkan suurin arvo) on $\mu_0 N$" is heavy for a fi-easy reader, and "lähtökitka" is not in the lesson brief or glossary. Shorter: "Lepokitka on enintään $\mu_0 N$." Or, if the term stays, explain it once and use it consistently.
+- solutions.md (3 force-diagram lines) — "Lähtökitka" appears without a definition, and the lesson says "suurin lepokitka" and "lepokitka ... enintään". Keep one term across the lesson, tasks and solutions.
 
 ## Checked
-- L2-09: figure needed (point 15 m/s, 3,0 m/s2), radius not given; r = v2/a_n = 75 m; solution checks a second point on the curve.
-- L3-06: figure (20 m/s, 8,0 kN) plus mass gives mu_0 = F/(mg) = 0,68; kN-to-N step shown, N = mg explained, realistic value.
-- Level fit: L2-09 is one reading and one formula, L3-06 adds support force and the friction limit; neither repeats L1-04 or the worked example.
-- Descriptions give the point values without the answers; orange and red colours consistent with the course.
-- Mix of kinds improved (two more graph readings).
+- The diff only swaps "suurin lepokitka" for "täysin kehittynyt lepokitka eli lähtökitka (lepokitkan suurin arvo)". No numbers, symbols or figures changed, so the earlier PASS on level, figure and answer (0,68) still holds.
+- The new wording defines the term in parentheses, so a student can still tell it means the maximum static friction. The task stays solvable without it.
+- The solutions' Periaate and Voimakuvio lines are consistent with the task: the limit is μ0 N, F = μ0 N and N = mg.
+- The hash was taken with --lang fi-easy at the start and the end; it did not change.
