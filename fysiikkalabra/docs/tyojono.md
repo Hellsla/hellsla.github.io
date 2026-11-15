@@ -49,6 +49,8 @@ Kohdat 6 ja 8l voivat jatkua; #593 (fy8-2) yhdistää mainin ja ajaa `check_layo
 
 ## 5c. ElevenLabs-ääneenluku FY1 ja FY2 (opettaja 2026-11-15)
 
+Varattu: claude/elevenlabs-readaloud
+
 Suomenkielisten FY1- ja FY2-lukujen Kuuntele-nappi soittaa etukäteen tehdyn ElevenLabs-äänitteen; muut kielet ja kurssit
 jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md, testit): ajetaan yksin, 5b:n (#594) jälkeen.
 - Äänitteet tehdään skriptillä (`scripts/`), ei koskaan oppilaan selaimesta. API-avain on ympäristön network secret
