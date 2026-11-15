@@ -282,6 +282,9 @@ lait syventävänä, FY7-kokeen "määrittäminen", FY8 "LOPS 2019"), `kortit/fy
 `docs/fy7/kaavanimet.tsv` (P6, `kaavat.py write`), säännöt P1, P7, P8 ja P9 `CLAUDE.md`:hen, NOTES.md:hen ja
 `docs/physics-guardrails.md`:hen sekä `scripts/physics_phrases.py`:n varoitukset ("muuttuu/jää lämmöksi" FY3–FY9,
 "liikekitka") testeineen. Lukujen tekstit korjataan kohdassa 18.
+Lisäksi 8m:ään (FY7-työntekijä #617, 15.11): P6:n nimi pois `docs/fy7/kaavanimet.tsv`:stä ja `kaavat.py write`, joka päivittää
+fy7-8:n tekstin (test_kaavat.py vaatii täsmäävän tekstin); P1 jaetuissa käännöksissä: `lang/fi.json` ja `lang/fi-easy.json`
+fy7-8:n simulaation selite "johdossa lämmöksi muuttuva teho" → "johdossa sisäenergiaksi muuttuva teho" (en vastaavasti).
 
 ## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
 
