@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 77ea855d8210779a
-SCOPE: delta wording (lähtökitka, marker removed from captions) from fc973652ab241b0a
 
 ## Blocking
 (none)

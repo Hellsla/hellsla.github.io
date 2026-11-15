@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 77ea855d8210779a
-SCOPE: delta wording (friction terms, teacher P8) since fc973652ab241b0a
 
 ## Blocking
 

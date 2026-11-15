@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: fc9a630e9f0fd181
-SCOPE: delta (terminology: "suurin lepokitka" -> "täysin kehittynyt lepokitka eli lähtökitka" / "lähtökitka")
 
 ## Blocking
 

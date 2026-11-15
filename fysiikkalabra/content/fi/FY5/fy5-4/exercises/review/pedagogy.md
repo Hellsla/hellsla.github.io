@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: fc9a630e9f0fd181
-SCOPE: delta wording (lähtökitka, "ja se ajaa") from 70d174f2f9293390
 
 ## Blocking
 (none)
