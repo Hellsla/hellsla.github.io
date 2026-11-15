@@ -475,6 +475,27 @@ muuttunut sen jälkeen (kaavat taulukkokirjan muotoon, käsitteet, korjaukset), 
 vihko tehdään vasta, kun sen kohdan 3 kaavat taulukkokirjan muodossa on yhdistetty, ettei sitä tarvitse tehdä kahdesti. Rakenna sivusto
 vihkojen jälkeen (Vihkot-sivu).
 
+## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
+
+Ohjeet, nykytila, testit ja päätökset K1–K9: `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`.
+Jokainen osa on oma ketjunsa, haaransa ja luonnos-PR:nsä; lähes kaikki muuttavat jaettuja tiedostoja, joten ne
+tehdään yksin, yksi kerrallaan. Uusien käyttöliittymätekstien sanamuodot luetellaan PR:n kuvauksessa, ja opettaja
+hyväksyy ne yhdistämällä. Tallennusavaimia, tiedostomuotoja ja korttien id:itä ei muuteta.
+
+- **17a Verkoton käyttö ja asennus:** PR 1 service worker (käydyt sivut toimivat verkotta), PR 2 manifesti ja
+  pysyvä tallennus, PR 3 moduuli laitteelle (pilotti FY3, pysähtyy hyväksyntään).
+- **17b Koko työ yhteen tiedostoon:** PR 1 varmuuskopio `ruukkilabra-kaikki` v1 (myös korttipakka), PR 2 jakovalikko
+  puhelimessa.
+- **17c Yleisvirheiden tunnistus:** PR 1 yleinen tunnistus (etumerkki, kertaluokka, aika, kelvin) `lesson.js`:ään,
+  kohdan 10 PR 2–PR 5:n ja kohdan 11 U1–U3:n jälkeen; PR 2 tehtäväkohtaiset virheet kurssi kerrallaan
+  sisältömuutosten yhteydessä.
+- **17d Ajoitettu kertaus:** PR 1 kortit palaavat pakkaan 5, 10 ja 20 vrk:n päästä; PR 2 sekoitettu kertaus
+  FY1–FY8:lle FY9-valmentajan laajennuksena, kohdan 11b PR 4:n jälkeen.
+- **17e Luokan yhteenveto arviointisivulle:** tehtävittäin ja tavoitteittain, ilman nimiä; 17c PR 1:n jälkeen.
+- **17f Hakemistot ja haku:** PR 1 kaavahakemisto, PR 2 simulaatiogalleria, PR 3 koko sivuston haku.
+
+Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2.
+
 ## Kirjattu päätös: teorian taitto, vaihtoehto B (opettaja 2026-11-14)
 
 Opettaja vertasi kolmea vaihtoehtoa 14.11. ja valitsi B:n: nykyinen 38 rem:n palsta säilyy, ja asettelu korjataan

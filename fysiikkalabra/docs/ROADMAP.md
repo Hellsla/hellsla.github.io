@@ -52,6 +52,12 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
     errors, possible problems and optional improvements apart; no source changes until the teacher has read it.
 16. Last (teacher 2026-11-14): printed A5 booklets for FY1–FY8 in the current compact layout (`print_book.py --publish`): FY1–FY4 again, FY5–FY8
     new; each course after its data-book formulas (step 3) are merged.
+17. Development without logins (queue 17, teacher 2026-11-15, `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`,
+    decisions K1–K9): offline use and installing (17a), the whole work in one file (17b), recognising common mistakes in
+    numeric tasks (17c), spaced review of the concept cards (17d), a class summary on the grading page (17e), indexes
+    and search (17f). Order: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, then 17f PR 3, 17a PR 3,
+    17b PR 2; 17c PR 2 course by course with content changes, 17d PR 2 after queue 11b PR 4. Nearly every part changes
+    shared files, so one at a time. The order is a proposal that the teacher approves by merging this pull request.
 
 Area D waits for the teacher's decision on which plan (FY10, Dronelabra, others) is approved for building.
 
