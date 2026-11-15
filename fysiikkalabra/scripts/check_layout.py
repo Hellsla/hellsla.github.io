@@ -27,7 +27,7 @@ In each state it reports:
   small      reading text under 17 px (a phone never gets smaller text) or a control under 40 px tall
   heading    a stage heading hidden under the sticky navigation after following its link (closed state only)
 Exit status 1 on any finding."""
-import sys, pathlib
+import os, sys, pathlib
 from playwright.sync_api import sync_playwright
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from _browser import launch
 from courses import ROOT
@@ -222,6 +222,7 @@ with sync_playwright() as pw:
         for f in uniq:
             if f["text"].startswith(CLIPPED) and write_known: found_known.add((key, f["text"][len(CLIPPED):]))
         if write_known: was = [f for f in uniq if f["text"].startswith(CLIPPED)]
+        if os.environ.get("CHECK_LAYOUT_NO_CLIPPED"): was = [f for f in uniq if f["text"].startswith(CLIPPED)]   # a test of something else (test_courses.py) with a copied lesson
         uniq = [f for f in uniq if f not in was]
         hard = uniq   # a table too wide for its box fails too: no table scrolls sideways (teacher 2026-11-08)
         tag = f"{OUT.name}/{page_file.relative_to(OUT).with_suffix('').as_posix()} at {width} px"

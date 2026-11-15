@@ -1123,6 +1123,7 @@ en/fy8-11	Q = (m_\text{Li} + m_\text{n} - m_\text{He} - m_\text{T})\,c^2
 en/fy8-11	Q = -0.8226429 \cdot 931.5\,\text{MeV} \approx -766\,\text{MeV}
 en/fy8-11	m_\text{initial} = 235.0439282\,\text{u} + 1.0086649\,\text{u} = 236.0
 en/fy8-11	{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{140}_{54}\t
+en/fy8-11	{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\t
 en/fy8-12	11\,\text{mm} : 5.5\,\text{mm} = 1.1\,\text{cm} : 0.55\,\text{cm} = 2
 en/fy8-12	3000\,\text{Bq} \cdot 0.365 \cdot 0.015 = 16.4\,\tfrac{1}{\text{s}}
 en/fy8-12	= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10
@@ -2749,6 +2750,7 @@ fi-easy/fy8-11	Q = (m_\text{Li} + m_\text{n} - m_\text{He} - m_\text{T})\,c^2
 fi-easy/fy8-11	Q = -0{,}8226429 \cdot 931{,}5\,\text{MeV} \approx -766\,\text{MeV}
 fi-easy/fy8-11	m_\text{alku} = 235{,}0439282\,\text{u} + 1{,}0086649\,\text{u} = 236{
 fi-easy/fy8-11	{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{140}_{54}\t
+fi-easy/fy8-11	{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\t
 fi-easy/fy8-12	11\,\text{mm} : 5{,}5\,\text{mm} = 1{,}1\,\text{cm} : 0{,}55\,\text{cm
 fi-easy/fy8-12	1240\,\text{eV}\,\text{nm} : 12{,}6\,\text{eV} \approx 98\,\text{nm}
 fi-easy/fy8-12	3000\,\text{Bq} \cdot 0{,}365 \cdot 0{,}015 = 16{,}4\,\tfrac{1}{\text{
@@ -3135,6 +3137,7 @@ fi-easy/fy9-sailymislait	\Delta p = 0{,}20\,\text{kg} \cdot (-4{,}0\,\tfrac{\tex
 fi-easy/fy9-sailymislait	\Delta p = 0{,}20\,\text{kg} \cdot 4{,}0\,\tfrac{\text{m}}{\text{s}} -
 fi-easy/fy9-sailymislait	\tfrac12 (M + m)\,v'^2 + (M + m)\,g s - F s = 0
 fi-easy/fy9-sailymislait	\tfrac12 (M + m)\,v'^2 + (M + m)\,gs - Fs = 0
+fi-easy/fy9-sailymislait	\tfrac12 mv_1^2 + mgh + W_\text{muut} = \tfrac12 mv_2^2
 fi-easy/fy9-sailymislait	s = \dfrac{(0{,}57\,\text{m/s})^2}{2 \cdot 0{,}01015 \cdot 9{,}81\,\te
 fi-easy/fy9-sailymislait	v' = \dfrac{6{,}0\,\text{kg} \cdot \text{m/s}}{3{,}0\,\text{kg}} = 2{,
 fi-easy/fy9-sailymislait	v_2' = 0{,}62\,\text{m/s} - 0{,}05\,\text{m/s} = 0{,}57\,\text{m/s}
@@ -4355,6 +4358,7 @@ fy8-11	Q = (m_\text{Li} + m_\text{n} - m_\text{He} - m_\text{T})\,c^2
 fy8-11	Q = -0{,}8226429 \cdot 931{,}5\,\text{MeV} \approx -766\,\text{MeV}
 fy8-11	m_\text{alku} = 235{,}0439282\,\text{u} + 1{,}0086649\,\text{u} = 236{
 fy8-11	{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{140}_{54}\t
+fy8-11	{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\t
 fy8-12	11\,\text{mm} : 5{,}5\,\text{mm} = 1{,}1\,\text{cm} : 0{,}55\,\text{cm
 fy8-12	1240\,\text{eV}\,\text{nm} : 12{,}6\,\text{eV} \approx 98\,\text{nm}
 fy8-12	3000\,\text{Bq} \cdot 0{,}365 \cdot 0{,}015 = 16{,}4\,\tfrac{1}{\text{
@@ -4740,6 +4744,7 @@ fy9-sailymislait	\Delta p = 0{,}20\,\text{kg} \cdot (-4{,}0\,\tfrac{\text{m}}{\t
 fy9-sailymislait	\Delta p = 0{,}20\,\text{kg} \cdot 4{,}0\,\tfrac{\text{m}}{\text{s}} -
 fy9-sailymislait	\tfrac12 (M + m)\,v'^2 + (M + m)\,g s - F s = 0
 fy9-sailymislait	\tfrac12 (M + m)\,v'^2 + (M + m)\,gs - Fs = 0
+fy9-sailymislait	\tfrac12 mv_1^2 + mgh + W_\text{muut} = \tfrac12 mv_2^2
 fy9-sailymislait	s = \dfrac{(0{,}57\,\text{m/s})^2}{2 \cdot 0{,}01015 \cdot 9{,}81\,\te
 fy9-sailymislait	v' = \dfrac{6{,}0\,\text{kg} \cdot \text{m/s}}{3{,}0\,\text{kg}} = 2{,
 fy9-sailymislait	v_2' = 0{,}62\,\text{m/s} - 0{,}05\,\text{m/s} = 0{,}57\,\text{m/s}
