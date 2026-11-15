@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9a352618a829d1da
+CONTENT-HASH: 4333a9f1a3bfa2cc
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
+- (none)
 
 ## Polish
-- [Minor] Lifted formulas that sit between words keep a short "ja" or "joten" on a line of their own after them; reads naturally, no change needed.
+- (none)
 
 ## Checked
-batch delta review 5d (round 2): reflow-1..4 at 360 px opened; every lifted formula fully visible, relations aligned, continuation rows start with an operator, no bracket, quote or case ending left around a lifted formula.
+- Hunk solutions.md Vastaus (the rounding row): the added sentence is clear Finnish and its numbers agree with the substitution shown above it: $(1{,}224 - 0{,}741) : 2 = 0{,}24$ and $1{,}224 - 0{,}9375 = 0{,}29$, both with unit in LaTeX.
+- Captures opened: `fy9-liike-stage-exercises-390-37.png`, `fy9-liike-stage-exercises-1280-28.png`: the answer box, the longer note under it and Järkevyys keep their order and spacing; exponents of $\text{m/s}^2$ not clipped at 390 px. Captures were stale and were rewritten for this hash (144 captures).
+- The changed places were found in the built `fi` page by their position in each stage; the contact sheets were not used for triage. No figure and no added task in this unit's diff; the rest stands under the previous PASS.

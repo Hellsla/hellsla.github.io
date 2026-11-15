@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 6580713d647b1f4c
-Review of the recognition chart (queue 9c) and the term change against the version passed at 086631afee2d127b; full on the chart, delta on the rest.
+CONTENT-HASH: 2376531e07717cf1
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- "total reflection" in the chart; every other en text says "total internal reflection" (the existing key kokonaisheijastuminen too).
-- (C) $r = mv/(QB)$ assumes $\overline{v} \perp \overline{B}$, implied by the $B_\perp$ rows above.
+- A: unit.md Key idea: "on a moving charge ... it exerts a force" holds when the velocity is not parallel to the field; a clause "(unless it moves along the field)" would make it exact. A level-suitable simplification, not an error.
 
 ## Checked
-- Every row: $F_\text{M} = QvB_\perp$; $F_\text{M} = I\ell B_\perp$; $r = mv/(QB)$ (unit line 331); $e = -N\Delta\Phi/\Delta t$; $N_1/N_2 = U_1/U_2$; $u_0 = NAB\,2\pi f$; Snell's law; $\sin\alpha_\text{r} = n_2/n_1$ (unit's derivation); $d\sin\alpha = n\lambda$. All agree with the Formula section.
-- The aria-label matches the chart (differs from figures.json only by HTML escaping of the apostrophes).
-- Term change: the diff's other lines are "concept map" -> "recognition chart" in teacher.md and new figures.json keys; no formula, number or task changed.
-- The en chart (docs/figures/fy9-tunnistus/fy9-magnetismi-valo-en-360.png) and the hash, taken at the start and the end (6580713d647b1f4c).
+- Item 18 hunks (unit.md, inquiry.json, figures.json, figure labels, s1 c in solutions.md and tasks.json): "converted into internal energy" carried out consistently; numbers around them still agree (174 A, 15 kW, 38 %, 2.0 A, 2.0 W; s1 c 337.5 W, 0.225 %, 844 kW, 2250 V). The label "loss" matches the quantity called power loss in the text.
+- s7 recomputed with my own formulas: a 299 780 455 m/s, v/c = 0.99996, difference 12.0 km/s = 0.004 %, rounding interval 2.9976e8 to 2.9980e8 m/s (contains c, so the conclusion drawn is the right one); b 1.0894e-6 J, classical speed 3.6e10 m/s = 120 c; c N = 4.0e14, 435.7 MJ, mass 6.7e-13 kg, both beams 871 MJ; d 27.778 m/s, 0.5787 MJ, 753 cars, rounded route 760, unconverted speed 7.5 MJ and 58. All agree with tasks.json, the solution and answers.py (practice.py check OK).
+- Physics of e: magnetic force perpendicular to velocity does no work, energy from the electric field of the cavities, B proportional to I, RI^2 = 0 in the superconducting state; the remark that r = mv/(qB) with the rest mass does not apply is right and keeps the task inside FY1-FY8.
+- Rubric points add up (3, 2, 3, 3, 4). Hash the same at the start and the end.
