@@ -28,12 +28,12 @@ $$ ja $U = \dfrac{565{,}5\,\text{V}}{\sqrt{2}} = 399{,}9\,\text{V}$
 
 ### c)
 **Annettu:** linjan virta $I_2 = 7{,}50\,\text{A}$ (b-kohta), resistanssi $R = 6{,}0\,\Omega$, linjan jännite $U_2 = 20{,}0\,\text{kV}$, teho $P = 150\,\text{kW}$; vertailuksi jännite $U_1 = 400\,\text{V}$
-**Kysytty:** lämmöksi muuttuvan tehon osuus $\tfrac{P_\text{h}}{P}$ ja mitä tapahtuisi jännitteellä $400\,\text{V}$
+**Kysytty:** linjan sisäenergiaksi muuttuvan tehon osuus $\tfrac{P_\text{h}}{P}$ ja mitä tapahtuisi jännitteellä $400\,\text{V}$
 **Periaate:** Linjan resistanssissa sähköenergiaa muuttuu sisäenergiaksi teholla $RI^2$. Siirtojännite $20\,\text{kV}$ ei ole linjan resistanssin yli, joten häviö lasketaan virrasta, joka saadaan siirrettävästä tehosta (luku *Muuntaja ja sähköenergian siirto*).
 **Kaava:** $I = \dfrac{P}{U}$ ja $P_\text{h} = RI^2$, joten $P_\text{h} = \dfrac{RP^2}{U^2}$ ja häviön osuus siirretystä tehosta $\dfrac{P_\text{h}}{P} = \dfrac{RP}{U^2}$
 **Muunnokset:** Lopuksi osuus prosentteina: kerrotaan luvulla $100\,\%$.
 **Sijoitus:** $P_\text{h} = 6{,}0\,\Omega \cdot (7{,}50\,\text{A})^2 = 337{,}5\,\text{W}$, joten $\dfrac{P_\text{h}}{P} = \dfrac{337{,}5\,\text{W}}{150\,000\,\text{W}} = 0{,}00225 = 0{,}225\,\%$. Jännitteellä $400\,\text{V}$: $I = 375\,\text{A}$ ja $RI^2 = 6{,}0\,\Omega \cdot (375\,\text{A})^2 = 843\,750\,\text{W} \approx 844\,\text{kW}$
-**Vastaus:** Linjassa muuttuu lämmöksi noin $0{,}23\,\%$ tehosta, kaksi merkitsevää numeroa kuten resistanssi $6{,}0\,\Omega$. Jännitteellä $400\,\text{V}$ lauseke $RI^2$ antaisi $844\,\text{kW}$, yli viisinkertaisen siirrettävään tehoon verrattuna. Se tarkoittaa, että siirto ei onnistuisi lainkaan: jo linjan jännitehäviö $RI = 6{,}0\,\Omega \cdot 375\,\text{A} = 2250\,\text{V}$ olisi suurempi kuin koko jännite.
+**Vastaus:** Linjassa muuttuu sisäenergiaksi noin $0{,}23\,\%$ tehosta, kaksi merkitsevää numeroa kuten resistanssi $6{,}0\,\Omega$. Jännitteellä $400\,\text{V}$ lauseke $RI^2$ antaisi $844\,\text{kW}$, yli viisinkertaisen siirrettävään tehoon verrattuna. Se tarkoittaa, että siirto ei onnistuisi lainkaan: jo linjan jännitehäviö $RI = 6{,}0\,\Omega \cdot 375\,\text{A} = 2250\,\text{V}$ olisi suurempi kuin koko jännite.
 **Järkevyys:** Häviö on verrannollinen virran neliöön, ja virta kääntäen verrannollinen jännitteeseen, joten $50$-kertainen jännite pienentää häviötä kertoimella $50^2 = 2500$: $844\,\text{kW} : 2500 \approx 340\,\text{W}$, sama tulos.
 
 ### d)

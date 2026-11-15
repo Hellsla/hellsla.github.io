@@ -107,7 +107,7 @@
           "id": "c",
           "kind": "calc",
           "points": 4,
-          "text": "Kuinka suuri osa siirrettävästä tehosta muuttuu linjassa lämmöksi? Mitä tapahtuisi, jos sama teho yritettäisiin siirtää samaa linjaa pitkin suoraan generaattorin jännitteellä $400\\,\\text{V}$?",
+          "text": "Kuinka suuri osa siirrettävästä tehosta muuttuu linjassa sisäenergiaksi? Mitä tapahtuisi, jos sama teho yritettäisiin siirtää samaa linjaa pitkin suoraan generaattorin jännitteellä $400\\,\\text{V}$?",
           "answer": {
             "value": 0.225,
             "unit": "%",

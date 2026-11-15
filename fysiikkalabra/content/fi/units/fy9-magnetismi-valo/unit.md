@@ -114,7 +114,7 @@
 
 ## Ydinajatus
 
-Moduulin ilmiöt liittyvät kahteen kenttään. **Magneettikenttä** $\overline{B}$ kohdistaa voiman vain liikkuvaan varaukseen ja virtajohtimeen, ja voima on kohtisuorassa sekä liikettä että kenttää vastaan. **Muuttuva magneettivuo** synnyttää jännitteen: tähän perustuvat generaattori, muuntaja, induktioliesi ja pyörrevirtajarru. Kun sähkö- ja magneettikenttä muuttuvat ja synnyttävät toisensa, syntyy **sähkömagneettinen aalto**, jonka näkyvä osa on valo.
+Moduulin ilmiöt liittyvät kahteen kenttään. **Magneettikenttä** $\overline{B}$ ei vaikuta levossa olevaan varaukseen; liikkuvaan varaukseen ja virtajohtimeen se kohdistaa voiman, ja voima on kohtisuorassa sekä liikettä että kenttää vastaan. **Muuttuva magneettivuo** synnyttää jännitteen: tähän perustuvat generaattori, muuntaja, induktioliesi ja pyörrevirtajarru. Kun sähkö- ja magneettikenttä muuttuvat ja synnyttävät toisensa, syntyy **sähkömagneettinen aalto**, jonka näkyvä osa on valo.
 
 <svg data-fig="kartta" viewBox="0 0 380 866" role="img" aria-label="Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Tee ensin kuva ja merkitse suunnat, ja katso sitten, mikä  tehtävän tunnusmerkki sopii. Hiukkanen liikkuu kentässä: magneettinen voima on varaus kertaa nopeus kertaa  kohtisuora magneettivuon tiheys. Virtajohdin kentässä: voima on virta kertaa johtimen pituus kertaa kohtisuora  magneettivuon tiheys. Hiukkanen kiertää ympyrää: magneettinen voima on keskeisvoima, ja säde on massa kertaa  nopeus jaettuna varauksen ja magneettivuon tiheyden tulolla. Magneettivuo muuttuu: käämiin indusoituva jännite  on miinus kierrosluku kertaa vuon muutos jaettuna ajalla. Muuntaja: kierroslukujen suhde on jännitteiden suhde.  Generaattori pyörii: indusoituvan jännitteen huippuarvo on kierrosluku kertaa pinta-ala kertaa magneettivuon  tiheys kertaa kaksi pii kertaa taajuus. Valo kulkee aineesta toiseen: taittumisessa käytetään Snellin lakia.  Valo ei pääse ulos aineesta: kokonaisheijastuksen rajakulman sini on taitekertoimien suhde. Valo osuu hilaan:  hilayhtälö on rakovälin ja kulman sinin tulo yhtä suuri kuin kertaluku kertaa aallonpituus." style="max-width:100%;font-size:21px">
   <line x1="14" y1="80" x2="14" y2="822" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
@@ -188,9 +188,9 @@ Moduulin ilmiöt liittyvät kahteen kenttään. **Magneettikenttä** $\overline{
 
 Kokeen tehtävissä kannattaa ensin kysyä, mikä muuttuu. Jos vuo ei muutu, jännitettä ei synny. Kun valo siirtyy aineesta toiseen, taajuus säilyy, mutta nopeus ja aallonpituus muuttuvat. Valon värit ja kirkkaat ja tummat kohdat selittyvät joko taittumisella tai interferenssillä, ja tehtävässä on tunnistettava, kummasta on kyse.
 
-Tästä saadaan vastaus alun kysymykseen. Kaapelia pitkin siirretään mantereelta $40\,\text{kW}$:n teho, ja kaapelin resistanssi on $0{,}50\,\Omega$. Jännitteellä $230\,\text{V}$ kaapelissa kulkisi virta $I = \tfrac{P}{U} \approx 174\,\text{A}$, ja kaapelin resistanssissa lämmöksi muuttuisi noin $15\,\text{kW}$ eli $38\,\%$ tehosta (häviöteho johdetaan kohdassa *Induktio ja vaihtovirta*). Jännitteellä $20\,\text{kV}$ virta on vain $2{,}0\,\text{A}$, ja häviö on $2{,}0\,\text{W}$. Muuntajat nostavat jännitteen mantereella ja laskevat sen saaressa.
+Tästä saadaan vastaus alun kysymykseen. Kaapelia pitkin siirretään mantereelta $40\,\text{kW}$:n teho, ja kaapelin resistanssi on $0{,}50\,\Omega$. Jännitteellä $230\,\text{V}$ kaapelissa kulkisi virta $I = \tfrac{P}{U} \approx 174\,\text{A}$, ja kaapelin resistanssissa sisäenergiaksi muuttuisi noin $15\,\text{kW}$ eli $38\,\%$ tehosta (häviöteho johdetaan kohdassa *Induktio ja vaihtovirta*). Jännitteellä $20\,\text{kV}$ virta on vain $2{,}0\,\text{A}$, ja häviö on $2{,}0\,\text{W}$. Muuntajat nostavat jännitteen mantereella ja laskevat sen saaressa.
 
-<svg data-fig="siirto" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva mittakaavassa: sama 40 kilowatin teho siirretään kaapelilla, jonka resistanssi on 0,50 ohmia. Ylempi palkki: jännitteellä 230 volttia virta on 174 ampeeria, ja palkin ruskeanpunainen osa, kaapelissa lämmöksi muuttuva teho 15 kilowattia, on 38 prosenttia koko palkista. Alempi palkki: jännitteellä 20 kilovolttia virta on 2,0 ampeeria, ja lämmöksi muuttuu vain 2,0 wattia, 0,005 prosenttia, mikä on palkissa ohuempi kuin viiva." style="max-width:100%;font-size:24px">
+<svg data-fig="siirto" viewBox="0 0 600 360" role="img" aria-label="Kaavakuva mittakaavassa: sama 40 kilowatin teho siirretään kaapelilla, jonka resistanssi on 0,50 ohmia. Ylempi palkki: jännitteellä 230 volttia virta on 174 ampeeria, ja palkin ruskeanpunainen osa, kaapelin sisäenergiaksi muuttuva teho 15 kilowattia, on 38 prosenttia koko palkista. Alempi palkki: jännitteellä 20 kilovolttia virta on 2,0 ampeeria, ja sisäenergiaksi muuttuu vain 2,0 wattia, 0,005 prosenttia, mikä on palkissa ohuempi kuin viiva." style="max-width:100%;font-size:24px">
   <foreignObject x="194.5" y="7.5" width="211" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$P = 40\,\text{kW},\ R = 0{,}50\,\Omega$</div></foreignObject>
   <foreignObject x="24" y="59.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U = 230\,\text{V}$</div></foreignObject>
   <foreignObject x="481" y="59.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$I \approx 174\,\text{A}$</div></foreignObject>
@@ -199,14 +199,14 @@ Tästä saadaan vastaus alun kysymykseen. Kaapelia pitkin siirretään mantereel
   <rect x="24" y="100" width="552" height="46" rx="4" fill="none" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="36" y="108.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{perille } 25\,\text{kW}$</div></foreignObject>
   <foreignObject x="494" y="108.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#ffffff">$15\,\text{kW}$</div></foreignObject>
-  <foreignObject x="418" y="155.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#8f3b1b">$\text{lämmöksi } 38\,\%$</div></foreignObject>
+  <foreignObject x="456" y="155.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#8f3b1b">$\text{häviö } 38\,\%$</div></foreignObject>
   <foreignObject x="24" y="199.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$U = 20\,\text{kV}$</div></foreignObject>
   <foreignObject x="481" y="199.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#7048e8">$I = 2{,}0\,\text{A}$</div></foreignObject>
   <rect x="24" y="240" width="552" height="46" rx="4" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
   <rect x="574" y="240" width="2" height="46" fill="#8f3b1b"/>
   <rect x="24" y="240" width="552" height="46" rx="4" fill="none" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="36" y="248.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{perille lähes } 40\,\text{kW}$</div></foreignObject>
-  <foreignObject x="306" y="295.5" width="270" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#8f3b1b">$\text{lämmöksi } 2{,}0\,\text{W} = 0{,}005\,\%$</div></foreignObject>
+  <foreignObject x="343" y="295.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#8f3b1b">$\text{häviö } 2{,}0\,\text{W} = 0{,}005\,\%$</div></foreignObject>
 </svg>
 
 ## Kaava: Magnetismi, induktio ja valo
@@ -344,7 +344,7 @@ muuntaja :: \frac{N_1}{N_2} = \frac{U_1}{U_2} \approx \frac{I_2}{I_1}
 
 missä $e$ on induktiojännite ($\text{V}$), $\Phi = BA$ magneettivuo ($\text{Wb}$), kun kenttä on kohtisuorassa pintaa $A$ vastaan, $u_0$ generaattorin jännitteen huippuarvo, $f$ pyörimistaajuus ($\text{Hz}$), $U_\text{eff}$ ja $u_0$ tehollinen arvo ja huippuarvo, indeksit $1$ ja $2$ muuntajan ensiö- ja toisiopuoli. Miinusmerkki on Lenzin laki: induktiovirta vastustaa vuon muutosta. Kentässä liikkuvan tangon jännite on $e = vBl$. Muuntajan yhtälö koskee vaihtojännitettä; virtojen suhde on yhtäsuuruus vain ideaalisessa, häviöttömässä muuntajassa.
 
-Siirtojohtoa pitkin siirretään teho $P$ ($\text{W}$) siirtojännitteellä $U$ ($\text{V}$), ja johdon resistanssi on $R$ ($\Omega$). Osa tehosta muuttuu johdossa lämmöksi, ja tämä häviöteho $P_\text{h}$ ($\text{W}$) riippuu johdossa kulkevasta virrasta.
+Siirtojohtoa pitkin siirretään teho $P$ ($\text{W}$) siirtojännitteellä $U$ ($\text{V}$), ja johdon resistanssi on $R$ ($\Omega$). Osa tehosta muuttuu johdon sisäenergiaksi, joka siirtyy lämpönä ympäristöön, ja tämä häviöteho $P_\text{h}$ ($\text{W}$) riippuu johdossa kulkevasta virrasta.
 
 ```johda
 Siirtojohtoa pitkin siirretään teho $P$ jännitteellä $U$, ja johdon resistanssi on $R$. Johda johdon häviöteho $P_\text{h}$ ensin virran $I$ avulla ja sitten tehon $P$ ja jännitteen $U$ avulla.
@@ -353,7 +353,7 @@ Johdossa kulkeva virta saadaan siirrettävästä tehosta. Tehonkulutus johtimess
 
 $$I = \frac{P}{U}$$
 
-Siirtojännite $U$ ei ole johdon yli. Johdon päiden välinen jännite on jännitehäviö johtimessa $RI$, ja johdossa lämmöksi muuttuva teho on tämän jännitteen ja virran tulo:
+Siirtojännite $U$ ei ole johdon yli. Johdon päiden välinen jännite on jännitehäviö johtimessa $RI$, ja johdossa sisäenergiaksi muuttuva teho on tämän jännitteen ja virran tulo:
 
 $$P_\text{h} = RI \cdot I = RI^2$$
 

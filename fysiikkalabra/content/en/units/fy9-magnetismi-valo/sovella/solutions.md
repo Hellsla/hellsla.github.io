@@ -28,12 +28,12 @@ $$ and $U = \dfrac{565.5\,\text{V}}{\sqrt{2}} = 399.9\,\text{V}$
 
 ### c)
 **Given:** line current $I_2 = 7.50\,\text{A}$ (part b), resistance $R = 6.0\,\Omega$, line voltage $U_2 = 20.0\,\text{kV}$, power $P = 150\,\text{kW}$; for comparison the voltage $U_1 = 400\,\text{V}$
-**Find:** the fraction $\tfrac{P_\text{h}}{P}$ of the power that turns into heat, and what would happen at the voltage $400\,\text{V}$
+**Find:** the fraction $\tfrac{P_\text{h}}{P}$ of the power that is converted into internal energy of the line, and what would happen at the voltage $400\,\text{V}$
 **Principle:** In the resistance of the line electrical energy turns into internal energy at the rate $RI^2$. The transmission voltage $20\,\text{kV}$ is not across the resistance of the line, so the loss is calculated from the current, which is obtained from the transmitted power (chapter *The transformer and the transmission of electrical energy*).
 **Formula:** $I = \dfrac{P}{U}$ and $P_\text{h} = RI^2$, so $P_\text{h} = \dfrac{RP^2}{U^2}$ and the fraction of the transmitted power lost is $\dfrac{P_\text{h}}{P} = \dfrac{RP}{U^2}$
 **Conversions:** Finally the fraction as a percentage: multiply by $100\,\%$.
 **Substitution:** $P_\text{h} = 6.0\,\Omega \cdot (7.50\,\text{A})^2 = 337.5\,\text{W}$, so $\dfrac{P_\text{h}}{P} = \dfrac{337.5\,\text{W}}{150\,000\,\text{W}} = 0.00225 = 0.225\,\%$. At the voltage $400\,\text{V}$: $I = 375\,\text{A}$ and $RI^2 = 6.0\,\Omega \cdot (375\,\text{A})^2 = 843\,750\,\text{W} \approx 844\,\text{kW}$
-**Answer:** About $0.23\,\%$ of the power turns into heat in the line, two significant figures like the resistance $6.0\,\Omega$. At the voltage $400\,\text{V}$ the expression $RI^2$ would give $844\,\text{kW}$, more than five times the transmitted power. This means that the transmission would not work at all: already the voltage drop of the line $RI = 6.0\,\Omega \cdot 375\,\text{A} = 2250\,\text{V}$ would be larger than the whole voltage.
+**Answer:** About $0.23\,\%$ of the power is converted into internal energy in the line, two significant figures like the resistance $6.0\,\Omega$. At the voltage $400\,\text{V}$ the expression $RI^2$ would give $844\,\text{kW}$, more than five times the transmitted power. This means that the transmission would not work at all: already the voltage drop of the line $RI = 6.0\,\Omega \cdot 375\,\text{A} = 2250\,\text{V}$ would be larger than the whole voltage.
 **Reasonableness:** The loss is proportional to the square of the current, and the current is inversely proportional to the voltage, so a $50$ times higher voltage reduces the loss by a factor of $50^2 = 2500$: $844\,\text{kW} : 2500 \approx 340\,\text{W}$, the same result.
 
 ### d)

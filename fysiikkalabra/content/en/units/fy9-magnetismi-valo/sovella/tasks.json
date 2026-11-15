@@ -107,7 +107,7 @@
           "id": "c",
           "kind": "calc",
           "points": 4,
-          "text": "What fraction of the transmitted power turns into heat in the line? What would happen if the same power were transmitted along the same line directly at the generator voltage $400\\,\\text{V}$?",
+          "text": "What fraction of the transmitted power is converted into internal energy in the line? What would happen if the same power were transmitted along the same line directly at the generator voltage $400\\,\\text{V}$?",
           "answer": {
             "value": 0.225,
             "unit": "%",

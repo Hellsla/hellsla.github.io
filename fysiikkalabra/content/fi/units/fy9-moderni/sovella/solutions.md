@@ -389,6 +389,6 @@ $$ ja $4300\,\text{MW} = 4300 \cdot 10^{6}\,\text{W}$
 
 ### Yleisiä virheitä
 - a-kohdassa hyötysuhde lasketaan väärin päin, $\tfrac{4300}{1600}$, tai megaelektronivoltteja ei muunneta jouleiksi.
-- b-kohdassa massaksi otetaan $\Delta m$, eli väitetään, että koko polttoaine muuttuu energiaksi, tai $\Delta m$ lasketaan sähköenergiasta lämpöenergian sijaan.
+- b-kohdassa massaksi otetaan $\Delta m$, eli väitetään, että koko polttoaine muuttuu energiaksi, tai $\Delta m$ lasketaan sähkötehosta lämpötehon sijaan.
 - c-kohdassa merivedelle siirtyväksi tehoksi otetaan koko lämpöteho $4300\,\text{MW}$ tai sähköteho $1600\,\text{MW}$.
 - d-kohdassa hyötysuhteella kerrotaan eikä jaeta, jolloin hiiltä tulee $6{,}25$-kertaisesti liian vähän, tai kilogrammat jätetään muuntamatta tonneiksi.

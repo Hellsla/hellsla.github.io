@@ -389,6 +389,6 @@ $$ and $4300\,\text{MW} = 4300 \cdot 10^{6}\,\text{W}$
 
 ### Yleisiä virheitä
 - In part a, the efficiency is calculated the wrong way round, $\tfrac{4300}{1600}$, or the megaelectronvolts are not converted into joules.
-- In part b, $\Delta m$ is taken as the mass, that is it is claimed that all the fuel turns into energy, or $\Delta m$ is calculated from the electrical energy instead of the thermal energy.
+- In part b, $\Delta m$ is taken as the mass, that is it is claimed that all the fuel turns into energy, or $\Delta m$ is calculated from the electrical power instead of the thermal power.
 - In part c, the whole thermal power $4300\,\text{MW}$ or the electric power $1600\,\text{MW}$ is taken as the power going to the seawater.
 - In part d, the efficiency is multiplied by instead of divided by, which gives $6.25$ times too little coal, or the kilograms are not converted into tonnes.
