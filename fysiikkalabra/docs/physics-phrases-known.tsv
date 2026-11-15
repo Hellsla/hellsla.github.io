@@ -12,13 +12,6 @@ FY5/fy5-12	exercises/solutions.md	heat-into	Energia ei muutu lämmöksi solmuvii
 FY5/fy5-8	exercises/solutions.md	heat-into	Loput noin $27\,\%$ eli noin $10\,\text{J}$ meni todennäköisesti jousen ja jänteen liike-energiaan, värähtelyyn, ääneen ja lämpöön: jousi ja jänne liikkuvat its
 FY6/fy6-10	exercises/exercises.json	heat-into	Varaus ei muutu lämmöksi eikä häviä.
 FY6/fy6-10	exercises/solutions.md	heat-into	Väite lämpönä häviävästä varauksesta on väärä, koska varaus ei muutu lämmöksi vaan säilyy.
-FY6/fy6-12	lesson.md	heat-into	Kun varaus purkautuu sen läpi, sähköinen potentiaalienergia muuttuu valoksi, lämmöksi ja ääneksi.</figcaption></figure>
-FY6/koe	solutions.md	heat-into	### c) **Annettu:** $P = 5{,}0\,\text{kW}$, $U = 51{,}2\,\text{V}$, $16$ kennoa, joiden kunkin sisäinen resistanssi on $0{,}50\,\text{m}\Omega$, kaapelin resist
-FY6/koe	solutions.md	heat-into	**Kaava:** $I = \dfrac{P}{U}$ ja $P_\text{h} = (R_\text{s} + R_\text{k})\,I^2$, missä $R_\text{s} = 16\,R_1$ **Muunnokset:** $5{,}0\,\text{kW} = 5000\,\text{W}$
-FY6/koe	solutions.md	heat-into	Joulen lain mukaan resistanssissa lämmöksi muuttuva teho on $RI^2$.
-FY6/koe	solutions.md	heat-into	Lämmöksi muuttuu satoja kilowatteja, joten jakoavain ja navat kuumenevat hetkessä hehkuviksi: syntyy valokaari, sulaa metallia roiskuu, ja palovammojen ja tulip
-FY6/koe	tasks.json	heat-into	Arvioi nimellisjännitteen avulla, kuten c-kohdassa, tämän akuston virta sekä kaapelissa ja akuston sisäisessä resistanssissa lämmöksi muuttuvat tehot, kun vaiht
-FY6/koe	tasks.json	heat-into	Kuinka suuri teho muuttuu tällöin lämmöksi akuston sisäisessä resistanssissa ja kaapelissa yhteensä?
 FY6/sovella	solutions.md	heat-into	- Pisaran energian ilmoitetaan "muuttuvan lämmöksi" tai "hukkuvan"; energia siirtyy ilmaan ja sieltä lämpönä.
 FY7/fy7-8	exercises/exercises.json	heat-into	Ilman kuormaa muuntaja ottaa silti tehon, joka muuttuu rautasydämessä lämmöksi.
 FY7/fy7-8	exercises/exercises.json	heat-into	Kuinka monta prosenttia siirrettävästä tehosta muuttuu johdossa lämmöksi?
