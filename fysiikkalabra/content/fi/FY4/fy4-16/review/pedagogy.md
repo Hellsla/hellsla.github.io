@@ -1,21 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 3255f7774d0e9cda
+VERDICT: PASS
+CONTENT-HASH: 51160e871e00687e
 
 ## Blocking
-- inquiry.json:252 (hook) — Pohdinta says "Kun hissi lähtee ylös, lukema kasvaa hetkeksi, ja kun hissi pysähtyy, se pienenee." That is the correct answer to pred-1, disclosed before the student commits (premature disclosure; the prediction becomes a copy of the phenomenon text). Fix: describe the scene without the readings ("kuvaa vaa'an lukemaa matkan aikana") or "lukema muuttuu", and leave the direction of the change to the prediction.
+None. The round 1 finding is fixed: the Pohdinta text in the packet now says only that the group watches the reading as the lift starts, moves and stops, and Ennuste 1 is no longer answered before the student commits. The sled sentence stays as the chapter's Miksi question; the hook gives no mechanism or result for it.
 
 ## Polish
-- inquiry.json:252 — the hook also states that both sleds stop equally far, so the surprise in the table is known in advance; pred-2 only asks about speed. Consider asking in pred-2 or the hook only "kuinka kauas kumpikin pysähtyy?" and keep the equal result for the table.
-- inquiry.json:259 (kertaus) — the retrieval concerns a box on a floor, not the phenomenon's own situations (sled on flat snow, house rule 2026-11-13). Use a sled stopping on the level field.
-- lesson.md:122 vs inquiry.json:354,369 — the text says the lift accelerates $1{,}0\,\text{m/s}^2$ (so $649\,\text{N}$), the task answer is $1{,}02\,\text{m/s}^2$, and the stop reading $550\,\text{N}$ gives $-0{,}643\,\text{m/s}^2$. Make the data consistent ($\pm 1{,}0$: 649 and 529 N) or say the numbers are rounded readings.
-- check-1 repeats pred-1 and the data task (constant-velocity lift); a check on the sled or the parachute would test something not yet tested. The parachute has no prediction or data, only text, check-3 and the transfer task; acceptable for a Soveltava tunti, but the lesson is full (three situations, nine tasks plus exercises), so keep the optional items optional.
-- lesson.md:186 — the example's formula stage opens with the combined equation; first state $E_{\text{p}0}+E_{\text{k}0}+W=E_\text{p}+E_\text{k}$ with $W=-F_\mu L$, then simplify.
+- The capture `review/shots/fy4-16-stage-herata-390.png` still shows the old Pohdinta ("lukema kasvaa hetkeksi... pienenee"). It is stale. Retake it with `screenshot.py` so the visual reviewer does not judge the old text.
+- Hissi graph at 390 px (fy4-16-stage-tutki-390-1.png): the axis numbers are small and the 650 N level has to be read between gridlines at 100 N spacing. It is usable, since the answer tolerance is 3 % and hint 3 gives the value, but a 50 N grid or larger ticks would help on a phone.
+- The first hint of hissi-data sits close to the answer: "kumpi on lähtövaiheessa suurempi". Acceptable, because it is a guiding question.
 
 ## Checked
-- Table values recomputed (x1, v, x2; sums 60 m): correct; the investigation can refute the "steeper goes farther" and "same speed" views.
-- Option feedbacks repair named misconceptions (N = mg on a slope, speed vs acceleration, MPE conserved at terminal speed).
-- Force-diagram plan: draw task (piirra) with model figure and criteria, equations tasks; solutions show the diagram before equations.
-- Hissi graph at 390 px legible, minor gridlines at 50 N, labelled as invented data; description does not give the answer.
-- Worked example staged, symbolic first, check with a second method; sums and a = 1,51 m/s² verified.
-- Finnish (vaa'an, case after units) fine; exit ticket tests the core ideas.
-- Exercises not judged (separate set).
+- Learning path against the slot's goals: the hook, an optional retrieval, two predictions that the Tutki graph and table can refute, an interpret task that gives the lift's acceleration, a table showing x1 + x2 = 60 m, a conclusion, theory, a staged example, a draw-it-yourself FBD task, a transfer task and three checks. The slot's FBD requirement is met: `"draw": true` in "Piirrä itse", with criteria and a model figure.
+- Predictions: both have four options, with misconception-based distractors and feedback that repairs the idea. Feedback names the evidence only after commitment, and "reveal after theory" is consistent with the Tutki data.
+- Activities fit the topic: no simulation is needed. A graph and a model table that the student acts on are enough. The table is labelled as model values and the graph as invented example data.
+- Variable control in the table: h, μ and the sled are held constant while α varies. Prediction 2 states that friction cannot be ignored.
+- Tarkista: check-1 and check-3 are concept checks whose distractors are real misconceptions (velocity-dependence, rope carrying weight, energy conserved at terminal speed). check-2 is a calculation with sign-error and N-versus-kg mistake feedback. The explain criteria are observable and match the questions asked.
+- Exercise levels and the exit ticket: not shown in this packet's judged parts beyond the three exit questions. Those are conceptual, each answered with a model answer, and they test the tool choice and the mass cancelling.
+- Lesson text: paragraphs are short, there are figures after Ydinajatus, Kaava and the example, and the example is staged in seven steps with the FBD before the equations. Finnish is clear, with energy going into internal energy.
+- Phone: the Tutki capture is in one column with hints and a locked solution.
+- Workload: about an hour. The extras are optional.
