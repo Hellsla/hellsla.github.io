@@ -14,6 +14,8 @@ import herolib as H
 
 figlib.set_language({}, ",")
 
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
+
 # rengas: the hook (numbers quoted in unit.md and inquiry.json; p0 = 101 kPa, the tyre's volume taken as constant)
 P0 = 101.0                                   # kPa, air pressure
 GAUGE_WARM = 230.0                           # kPa, the gauge reading in the warm garage
@@ -92,39 +94,56 @@ def hero():
 
 
 def kartta():
-    """The concept map, stacked for a phone: pressure at the top, a spine down the left and three branches (liquid,
-    gas, heat engine), each a box of three laws with a grey word beside each (teacher 2026-11-12: the work of a heat
-    engine W = Q_1 - Q_2 is a "Johda itse" task in the text; the map shows the first law it comes from)."""
-    f = Fig("fy9ka-kartta", 596, "Käsitekartta. Ylhäällä solmu paine: p = F / A. Siitä lähtee alas kolme haaraa. Neste: paine syvyydellä p = p0 "
-            "+ ρ g h, ylipaine ρ g h ja kokonaispaine, joka on ilmanpaine ja ylipaine yhteensä. Kaasu: tilanyhtälö p V = n "
-            "R T, yhdistetty kaasulaki p V / T = vakio ja kelvinlämpötila T = θ + 273,15 K. Lämpövoimakone: kaasun työ W = "
-            "p ΔV, lämpöopin 1. pääsääntö ΔU = Q + W ja hyötysuhde eeta = W / Q1.", width=380, size=21)
-    groups = [
-        ("neste", [(r"p = p_0 + \rho g h", "syvyydellä"), (r"\Delta p = \rho g h", "ylipaine"),
-                   (r"p = p_0 + \Delta p", "kokonaispaine")]),
-        ("kaasu", [(r"pV = nRT", "tilanyhtälö"), (r"pV/T = \text{vakio}", "sama kaasu"),
-                   (r"T = \theta + 273{,}15\,\text{K}", "kelvinit")]),
-        ("lämpövoimakone", [(r"W = p\,\Delta V", "kaasun työ"), (r"\Delta U = Q + W", "1. pääsääntö"),
-                            (r"\eta = W/Q_1", "hyötysuhde")]),
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words (YO language): the sign on top, the choice it leads to and, as the result in a
+    pill in the site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from
+    the start box. A row is (sign, choice, law, pill width, law on a line of its own)."""
+    rows = [
+        (r"\text{voima jakautuu pinta-alalle}", r"\to\ \text{paine}", r"p = F/A", 124, False),
+        (r"\text{syvyys nesteessä}", r"\to\ \text{nesteen paine}", r"p = \rho g h", 124, False),
+        (r"\text{syvyys ja ilmanpaine}", r"\to\ \text{kokonaispaine}", r"p = p_0 + \rho g h", 170, True),
+        (r"\text{ainemäärä (mol) tiedossa}", r"\to\ \text{tilanyhtälö}", r"pV = nRT", 124, False),
+        (r"\text{tila muuttuu, ainemäärä ei}", r"\to\ \text{kaksi tilaa}", r"p_1V_1/T_1 = p_2V_2/T_2", 180, True),
+        (r"\text{lämpötila celsiusasteina}", r"\to\ \text{muunna kelvineiksi}", r"T = \theta + 273{,}15\,\text{K}", 190, True),
+        (r"\text{kaasu laajenee tai puristuu}", r"\to\ \text{kaasun työ}", r"W = p\Delta V", 124, False),
+        (r"\text{sisäenergia muuttuu}", r"\to\ \text{1. pääsääntö}", r"\Delta U = Q + W", 130, False),
+        (r"\text{kone ottaa lämmön, tekee työn}", r"\to\ \text{hyötysuhde}", r"\eta = W/Q_1", 124, False),
     ]
-    hub_y, hub_h, x_box, gh, top = 8, 72, 44, 150, 100
-    spine = 24
-    f.line(spine, hub_y + hub_h, spine, top + 2 * (gh + 16) + 22, RULE, 3)
-    f.rect(8, hub_y, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
-    f.tex(190, hub_y + 21, r"\text{paine}", "middle", INK)
-    f.tex(190, hub_y + 51, r"p = F/A", "middle", INK)
-    for k, (head, rows) in enumerate(groups):
-        y = top + k * (gh + 16)
-        f.line(spine, y + 22, x_box, y + 22, RULE, 3)
-        f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
-        f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
-        f.line(x_box + 10, y + 42, 362, y + 42, RULE_LIGHT, 1.5)
-        for j, (law, word) in enumerate(rows):
-            yy = y + 66 + j * 34
-            f.tex(x_box + 14, yy, law, "start", INK)
-            f.tex(362, yy, r"\text{" + word + "}", "end", MUTED, size=17)
-    # a tall, narrow map: cap its width so that it does not fill a wide screen (labels stay about 24 px)
-    return f.svg().replace("max-width:100%", "max-width:min(100%,440px)", 1)
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    heights = [ch + (30 if r[4] else 0) for r in rows]
+    ys = [top + sum(heights[:k]) + gap * k for k in range(len(rows))]
+    height = ys[-1] + heights[-1] + 8
+    f = Fig("fy9ka-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + heights[-1] / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{tilanne ensin, sitten tunnusmerkki}", "middle", INK, size=17, w=340)
+    for (sign, choice, law, pw, wide), y, ch_ in zip(rows, ys, heights):
+        f.line(14, y + ch_ / 2, x0, y + ch_ / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch_, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        if wide:                                               # the choice on a line of its own, the law below it
+            f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 28)
+            yy += 30
+        else:
+            f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 28 - pw - 8)
+        ph = 28 if "sqrt" in law else 24
+        f.rect(x1 - pw - 10, yy - ph / 2 + 1, pw, ph, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 10 - pw / 2, yy + 1, law, "middle", WHITE, size=17, w=pw - 8)
+    return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita tilanteesta ja katso, mikä tehtävän tunnusmerkki "
+               "sopii. Voima jakautuu pinta-alalle: paine on voima jaettuna pinta-alalla. Syvyys nesteessä: nesteen paine on "
+               "tiheys kertaa putoamiskiihtyvyys kertaa syvyys. Syvyys ja ilmanpaine: kokonaispaine on pinnan paine, yleensä "
+               "ilmanpaine, plus nesteen paine. Ainemäärä tiedossa: käytä tilanyhtälöä, paine kertaa tilavuus on ainemäärä "
+               "kertaa kaasuvakio kertaa lämpötila. Tila muuttuu, ainemäärä ei: kirjoita kaksi tilaa, paineen ja tilavuuden "
+               "tulo jaettuna lämpötilalla on sama alussa ja lopussa. Lämpötila celsiusasteina: muunna kelvineiksi lisäämällä "
+               "273,15. Kaasu laajenee tai puristuu: kaasun työ on paine kertaa tilavuuden muutos. Sisäenergia muuttuu: "
+               "lämpöopin ensimmäinen pääsääntö, sisäenergian muutos on lämpö plus työ. Kone ottaa lämmön ja tekee työn: "
+               "lämpövoimakoneen hyötysuhde on työ jaettuna otetulla lämmöllä.")
 
 
 def rengas():

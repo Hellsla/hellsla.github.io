@@ -16,6 +16,8 @@ import herolib as H
 
 figlib.set_language({}, ",")
 
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
+
 # ketju: the example plant of the theory summary (the numbers are computed here and quoted in unit.md)
 P0 = 500.0                          # MW, fuel power
 ETA = (0.90, 0.45, 0.98)            # boiler, steam cycle (turbine and condenser), generator and transformer
@@ -90,37 +92,53 @@ def hero():
 
 
 def kartta():
-    """The concept map, stacked for a phone: the conservation of energy at the top, a spine down the left and three
-    branches (power, efficiency, the source of the energy), each a box of three laws with a grey word beside each
-    (teacher 2026-11-12: the chain's product of efficiencies is a "Johda itse" task in the text, not a row of the map)."""
-    f = Fig("fy9en-kartta", 596, "Käsitekartta. Ylhäällä solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. Siitä lähtee alas kolme "
-            "haaraa. Teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. Hyötysuhde: eeta = W a / "
-            "W o, häviöt W o = W a + W h ja tehoista eeta = P a / P o. "
-            "Energian lähde: polttoaine Q = H m, työ W = F s ja nostotyö W = m g h.", width=380, size=21)
-    groups = [
-        ("teho", [(r"P = \Delta E/\Delta t", "määritelmä"), (r"E = P\,t", "energia tehosta"),
-                  (r"1\,\text{kWh} = 3{,}6\,\text{MJ}", "kilowattitunti")]),
-        ("hyötysuhde", [(r"\eta = W_\text{a}/W_\text{o}", "määritelmä"), (r"W_\text{o} = W_\text{a} + W_\text{h}", "häviöt"),
-                        (r"\eta = P_\text{a}/P_\text{o}", "tehoista")]),
-        ("energian lähde", [(r"Q = Hm", "polttoaine"), (r"W = Fs", "työ"), (r"W = mgh", "nostotyö")]),
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words (YO language): the sign on top, the choice it leads to and, as the result in a
+    pill in the site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from
+    the start box. A row is (sign, choice, law, pill width, law on a line of its own)."""
+    rows = [
+        (r"\text{suljettu järjestelmä}", r"\to\ \text{energia säilyy}", r"E_\text{alussa} = E_\text{lopussa}", 220, True),
+        (r"\text{energia ajan kuluessa}", r"\to\ \text{teho}", r"P = \Delta E/\Delta t", 130, False),
+        (r"\text{tasainen teho, kesto tiedossa}", r"\to\ \text{energia}", r"E = Pt", 124, False),
+        (r"\text{kilowattitunteja}", r"\to\ \text{muunna jouleiksi}", r"1\,\text{kWh} = 3{,}6\,\text{MJ}", 190, True),
+        (r"\text{hyötyenergia ja otettu energia}", r"\to\ \text{hyötysuhde}", r"\eta = W_\text{a}/W_\text{o}", 130, False),
+        (r"\text{monta laitetta peräkkäin}", r"\to\ \text{kerro hyötysuhteet}", r"\eta = \eta_1\eta_2\eta_3", 150, True),
+        (r"\text{polttoaine, lämpöarvo}", r"\to\ \text{palamislämpö}", r"Q = Hm", 100, False),
+        (r"\text{voima siirtää matkan}", r"\to\ \text{työ}", r"W = Fs", 124, False),
     ]
-    hub_y, hub_h, x_box, gh, top = 8, 72, 44, 150, 100
-    spine = 24
-    f.line(spine, hub_y + hub_h, spine, top + 2 * (gh + 16) + 22, RULE, 3)
-    f.rect(8, hub_y, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
-    f.tex(190, hub_y + 21, r"\text{energia säilyy}", "middle", INK)
-    f.tex(190, hub_y + 51, r"E_\text{alussa} = E_\text{lopussa}", "middle", INK)
-    for k, (head, rows) in enumerate(groups):
-        y = top + k * (gh + 16)
-        f.line(spine, y + 22, x_box, y + 22, RULE, 3)
-        f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
-        f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
-        f.line(x_box + 10, y + 42, 362, y + 42, RULE_LIGHT, 1.5)
-        for j, (law, word) in enumerate(rows):
-            yy = y + 66 + j * 34
-            f.tex(x_box + 14, yy, law, "start", INK)
-            f.tex(362, yy, r"\text{" + word + "}", "end", MUTED, size=18)
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    heights = [ch + (30 if r[4] else 0) for r in rows]
+    ys = [top + sum(heights[:k]) + gap * k for k in range(len(rows))]
+    height = ys[-1] + heights[-1] + 8
+    f = Fig("fy9en-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + heights[-1] / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{energialajit ensin, sitten tunnusmerkki}", "middle", INK, size=17, w=340)
+    for (sign, choice, law, pw, wide), y, ch_ in zip(rows, ys, heights):
+        f.line(14, y + ch_ / 2, x0, y + ch_ / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch_, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        if wide:                                               # the choice on a line of its own, the law below it
+            f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 28)
+            yy += 30
+        else:
+            f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 28 - pw - 8)
+        ph = 28 if "sqrt" in law else 24
+        f.rect(x1 - pw - 10, yy - ph / 2 + 1, pw, ph, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 10 - pw / 2, yy + 1, law, "middle", WHITE, size=17, w=pw - 8)
     return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita luettelemalla energialajit ja katso, mikä "
+               "tehtävän tunnusmerkki sopii. Suljettu järjestelmä: energia säilyy, joten energia alussa on yhtä suuri kuin "
+               "energia lopussa. Energia ajan kuluessa: teho on energian muutos jaettuna ajalla. Tasainen teho, kesto "
+               "tiedossa: energia on teho kertaa aika. Kilowattitunteja: muunna jouleiksi, yksi kilowattitunti on 3,6 "
+               "megajoulea. Hyötyenergia ja otettu energia: hyötysuhde on annettu energia jaettuna otetulla energialla. Monta "
+               "laitetta peräkkäin: kerro vaiheiden hyötysuhteet keskenään. Polttoaine, lämpöarvo: palamislämpö on lämpöarvo "
+               "kertaa massa. Voima siirtää matkan: työ on voima kertaa matka.")
 
 
 def _loss(f, b, ybot, w, R, yend, fill, stroke):

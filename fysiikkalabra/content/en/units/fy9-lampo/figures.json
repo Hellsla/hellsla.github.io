@@ -2,7 +2,7 @@
  "Kuvitus: aurinkoinen talvipäivä Lapissa. Vasemmalla hirsinen laavu, jonka katolla on lunta. Laavun edessä palaa nuotio kivien keskellä, ja sen päällä riippuu kolmijalasta noessa musta pannu, joka on täynnä lunta. Pannusta nousee höyryä. Nuotion vieressä on sanko lunta. Taustalla on lumisia tuntureita ja kuusia.": "Illustration: a sunny winter day in Lapland. On the left is a log lean-to shelter with snow on its roof. In front of the shelter a campfire burns in a ring of stones, and above it a black, sooty pot full of snow hangs from a tripod. Steam rises from the pot. Beside the campfire is a bucket of snow. In the background are snowy fells and spruces.",
  "energia säilyy": "energy is conserved",
  "luovutettu": "released",
- "vastaanotettu": "received",
+ "vastaanotettu": "absorbed",
  "olomuoto sama": "same state",
  "kelvinit": "kelvins",
  "sulaminen": "melting",
@@ -18,5 +18,18 @@
  "olomuodon muutos": "change of state",
  "lämpölaajeneminen": "thermal expansion",
  "lämmön siirtyminen": "heat transfer",
- "Käsitekartta. Ylhäällä solmu energia säilyy: eristetyssä systeemissä luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Siitä lähtee alas neljä haaraa. Lämpeneminen: Q = c m ΔT, kun olomuoto ei muutu, ja kelvinlämpötila T = θ + 273,15. Olomuodon muutos: sulaminen Q = s m ja höyrystyminen Q = r m vakiolämpötilassa. Lämpölaajeneminen: pituus l = l0 kertaa 1 + α ΔT ja tilavuus V = V0 kertaa 1 + γ ΔT. Lämmön siirtyminen: johtuminen, konvektio ja säteily, sekä seinän läpi johtuva teho P = U A ΔT.": "Concept map. At the top is the node energy is conserved: in an isolated system the quantity of heat released equals the quantity received. Four branches lead down from it. Heating: Q = c m ΔT when the state does not change, and the kelvin temperature T = θ + 273.15. Change of state: melting Q = s m and vaporisation Q = r m at constant temperature. Thermal expansion: length l = l0 times 1 + α ΔT and volume V = V0 times 1 + γ ΔT. Heat transfer: conduction, convection and radiation, and the power conducted through a wall P = U A ΔT."
+ "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Kysy, mitä aineelle tapahtuu, ja katso, mikä tehtävän tunnusmerkki sopii. Lämpötila muuttuu, olomuoto ei: lämpeneminen, lämpömäärä on ominaislämpökapasiteetti kertaa massa kertaa lämpötilan muutos. Jää sulaa tai vesi jäätyy: sulamislämpö, lämpömäärä on ominaissulamislämpö kertaa massa. Vesi kiehuu tai höyry tiivistyy: höyrystymislämpö, lämpömäärä on ominaishöyrystymislämpö kertaa massa. Eristetty astia, sekoitus: lämpötasapaino, luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Kappaleen pituus muuttuu: lämpölaajeneminen, pituus on alkuperäinen pituus kertaa yksi plus pituuden lämpötilakerroin kertaa lämpötilan muutos. Nesteen tilavuus muuttuu: lämpölaajeneminen, tilavuus on alkuperäinen tilavuus kertaa yksi plus tilavuuden lämpötilakerroin kertaa lämpötilan muutos. Lämpö johtuu seinän läpi: U-arvo, teho on U-arvo kertaa pinta-ala kertaa lämpötilaero.": "Recognition chart: how do I tell which law to use? Ask what happens to the substance and see which sign in the task fits. Temperature changes, state does not: heating, the quantity of heat is specific heat capacity times mass times the change of temperature. Ice melts or water freezes: latent heat of fusion, the quantity of heat is the specific latent heat of fusion times mass. Water boils or steam condenses: latent heat of vaporisation, the quantity of heat is the specific latent heat of vaporisation times mass. Insulated vessel, mixing: thermal equilibrium, the heat released equals the heat absorbed. The length of an object changes: thermal expansion, the length is the original length times one plus the coefficient of linear expansion times the change of temperature. The volume of a liquid changes: thermal expansion, the volume is the original volume times one plus the coefficient of volume expansion times the change of temperature. Heat conducts through a wall: the U-value, the power is the U-value times the area times the temperature difference.",
+ "jää sulaa tai vesi jäätyy": "ice melts or water freezes",
+ "vesi kiehuu tai höyry tiivistyy": "water boils or steam condenses",
+ "nesteen tilavuus muuttuu": "volume of a liquid changes",
+ "mitä aineelle tapahtuu?": "what happens to the substance?",
+ "lämpö johtuu seinän läpi": "heat conducts through a wall",
+ "höyrystymislämpö": "latent heat of vaporisation",
+ "sulamislämpö": "latent heat of fusion",
+ "eristetty astia, sekoitus": "insulated vessel, mixing",
+ "lämpötila muuttuu, olomuoto ei": "temperature changes, state does not",
+ "kappaleen pituus muuttuu": "length of an object changes",
+ "mistä tunnistan lain?": "how do I tell the law?",
+ "lämpötasapaino": "thermal equilibrium",
+ "U-arvo": "U-value"
 }

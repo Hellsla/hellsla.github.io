@@ -6,8 +6,7 @@ plates (long +, short -), a lamp a circle with a cross; conventional current fro
 hero        the Why scene: a red summer cottage by a lake at dusk, one window lit, a solar panel on a stand in the yard
             with its cable to a battery box at the wall, a cool box on the porch steps, spruces, a birch, a jetty
             with a rowing boat and the lit window reflected in the water (no text, no people)
-kartta      the concept map of the review: the circuit at the top, then current and resistance, connections,
-            power and energy, and the source, each with three laws
+kartta      the recognition chart of the review (Mistä tunnistan, mitä lakia käytän?): task signs -> the law or method
 mokki       the hook answered: the 12 V battery with the LED lights (6,0 W) and the cool box (48 W) in parallel;
             the currents 0,50 A and 4,0 A join into 4,5 A
 piiri       the source model for "Johda itse": a battery (dashed box) as an emf E and an internal resistance R_s in
@@ -38,6 +37,8 @@ T_ALL, T_LED = Q_BAT / I_ALL, Q_BAT / I_LED     # 22,2 h and 200 h
 def wire(f, *pts):
     f.add('<polyline points="' + " ".join(f"{n(x)},{n(y)}" for x, y in pts) + f'" fill="none" stroke="{INK}" '
           'stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>')
+
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
 
 
 def resistor(f, x, y, vertical=False, length=64, width=24):
@@ -135,41 +136,50 @@ def hero():
     return f.svg()
 
 
-# --- the concept map ------------------------------------------------------------------------------------------
+# --- the recognition chart ------------------------------------------------------------------------------------------
 def kartta():
-    """The concept map, stacked for a phone: the circuit at the top, a spine down the left and four boxes, each with
-    the MAFY laws of its topic and a grey word beside each (teacher 2026-11-12: only MAFY's formulas; a result the
-    exam asks to derive is a "Johda itse" task in the text, not a row of the map)."""
-    groups = [
-        ("virta ja resistanssi", "suureet", [(r"I = \Delta Q/\Delta t", "virta"), (r"U = RI", "Ohm"), (r"R = \rho \ell/A", "johdin")]),
-        ("kytkennät", "Kirchhoff", [(r"R_\text{kok} = \Sigma R", "sarja"), (r"1/R_\text{kok} = \Sigma 1/R", "rinnan"), (r"\Sigma \Delta V = 0", "silmukka")]),
-        ("teho ja energia", "Joule", [(r"P = UI", "teho"), (r"P = W/\Delta t", "energia")]),
-        ("lähde", "paristo, akku", [(r"\Sigma \Delta V = 0", "napajännite"), (r"I = \Delta Q/\Delta t", "kapasiteetti")]),
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words (YO language): the sign on top, the choice it leads to and, as the result in a
+    pill in the site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
+    rows = [
+        (r"\text{varausta kulkee ajassa}", r"\to\ \text{virta}", r"I = \Delta Q/\Delta t"),
+        (r"\text{jännite ja virta tunnetaan}", r"\to\ \text{resistanssi}", r"U = RI"),
+        (r"\text{johtimen mitat ja aine}", r"\to\ \text{resistanssi}", r"R = \rho\ell/A"),
+        (r"\text{sarjaan kytketyt}", r"\to\ \text{sama virta}", r"R_\text{kok} = \Sigma R"),
+        (r"\text{rinnan kytketyt}", r"\to\ \text{sama jännite}", r"1/R_\text{kok} = \Sigma 1/R"),
+        (r"\text{virta haarautuu}", r"\to\ \text{haarapiste}", r"\Sigma I_\text{t} = \Sigma I_\text{l}"),
+        (r"\text{suljettu silmukka}", r"\to\ \text{jännitteet}", r"\Sigma\Delta V = 0"),
+        (r"\text{laitteen teho tai energia}", r"\to\ \text{teho}", r"P = UI"),
+        (r"\text{paristolla on sisäinen vastus}", r"\to\ \text{napajännite}", r"U = E - R_\text{s}I"),
     ]
-    hub_y, hub_h, x_box, top, spine, gap = 8, 72, 44, 100, 24, 16
-    heights = [56 + 50 * len(rows) for _, _, rows in groups]
-    f = Fig("fy9tv-kartta", top + sum(heights) + gap * (len(groups) - 1) + 8, "Käsitekartta. Ylhäällä solmu tasavirtapiiri: jännite U, virta I ja resistanssi R. Siitä lähtee alas neljä "
-            "haaraa. Virta ja resistanssi, piirin suureet: virta I = delta Q per delta t, Ohmin laki U = R I ja johtimen "
-            "resistanssi R = rho l per A. Kytkennät, Kirchhoffin lait: sarjaankytkentä R kok = summa R, rinnankytkentä 1 per "
-            "R kok = summa 1 per R ja silmukan potentiaalin muutosten summa nolla. Teho ja energia, Joulen laki: P = U I ja "
-            "P = W per delta t. Lähde, paristo ja akku: napajännite silmukan potentiaalin muutosten summasta ja akun "
-            "kapasiteetti virran I = delta Q per delta t avulla.", width=380, size=20)
-    ys = [top + sum(heights[:k]) + gap * k for k in range(len(groups))]
-    f.line(spine, hub_y + hub_h, spine, ys[-1] + 22, RULE, 3)
-    f.rect(8, hub_y, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
-    f.tex(190, hub_y + 22, r"\text{tasavirtapiiri}", "middle", INK)
-    f.tex(190, hub_y + 51, r"U,\ I,\ R", "middle", INK)
-    for (head, sub, rows), y, gh in zip(groups, ys, heights):
-        f.line(spine, y + 22, x_box, y + 22, RULE, 3)
-        f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
-        f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
-        f.tex(362, y + 22, r"\text{" + sub + "}", "end", MUTED, size=17)
-        f.line(x_box + 10, y + 42, 362, y + 42, RULE_LIGHT, 1.5)
-        for j, (law, word) in enumerate(rows):
-            yy = y + 68 + j * 50
-            f.tex(x_box + 14, yy, law, "start", INK, size=18 if len(law) > 16 else None)
-            f.tex(362, yy, r"\text{" + word + "}", "end", MUTED, size=17)
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    ys = [top + (ch + gap) * k for k in range(len(rows))]
+    height = ys[-1] + ch + 8
+    f = Fig("fy9tv-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + ch / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{piirrä kytkentä ensin, sitten tunnusmerkki}", "middle", INK, size=17, w=340)
+    for (sign, choice, law), y in zip(rows, ys):
+        f.line(14, y + ch / 2, x0, y + ch / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=170)
+        f.rect(x1 - 134, yy - 11, 124, 24, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 72, yy + 1, law, "middle", WHITE, size=17, w=116)
     return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Piirrä kytkentäkaavio ensin ja katso, mikä tehtävän  "
+               "tunnusmerkki sopii. Varausta kulkee ajassa: virta on varaus jaettuna ajalla. Jännite ja virta tunnetaan:  "
+               "resistanssi saadaan Ohmin laista, jännite on resistanssi kertaa virta. Johtimen mitat ja aine: resistanssi on  "
+               "resistiivisyys kertaa pituus jaettuna poikkipinta-alalla. Sarjaan kytketyt: virta on sama ja kokonaisresistanssi  "
+               "on resistanssien summa. Rinnan kytketyt: jännite on sama ja kokonaisresistanssin käänteisluku on käänteislukujen  "
+               "summa. Virta haarautuu: haarapisteeseen tulevien virtojen summa on yhtä suuri kuin lähtevien. Suljettu silmukka:  "
+               "jännitteiden summa on nolla. Laitteen teho tai energia: teho on jännite kertaa virta. Paristolla on sisäinen  "
+               "vastus: napajännite on lähdejännite miinus sisäisen resistanssin ja virran tulo.")
 
 
 # --- the hook answered ----------------------------------------------------------------------------------------

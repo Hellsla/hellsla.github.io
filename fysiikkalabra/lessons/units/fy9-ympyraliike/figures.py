@@ -100,41 +100,55 @@ def hero():
     return f.svg()
 
 
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
+
+
 def kartta():
-    """The concept map, stacked for a phone: the method at the top, a spine down the left and three boxes (equilibrium,
-    circular motion, gravitation), each with three rows and a grey word beside each (teacher 2026-11-12: only MAFY's
-    formulas; the net force in circular motion, the field strength g and the orbital speed are "Johda itse" tasks)."""
-    f = Fig("fy9yl-kartta", 620, "Käsitekartta. Ylhäällä solmu: voimakuvio ensin, sitten Newtonin toinen laki summa F = m a. Siitä lähtee alas "
-            "kolme haaraa. Tasapaino: momentti M = F r, voimien summa on nolla, joten kappale ei etene, ja momenttien summa "
-            "on nolla, joten se ei kierry. Ympyräliike: ratanopeus v = omega r, normaalikiihtyvyys a n = v toiseen jaettuna "
-            "r:llä osoittaa keskipisteeseen, ja liikeyhtälössä kokonaisvoima antaa normaalikiihtyvyyden. Gravitaatio: "
-            "vetovoima F g = gamma m 1 m 2 jaettuna r toiseen, paino G = m g vektoreina, ja satelliitille gravitaatiovoima "
-            "antaa normaalikiihtyvyyden.", width=380, size=20)
-    groups = [
-        ("tasapaino", [(r"M = Fr", "momentti"), (r"\Sigma\overline{F} = \overline{0}", "ei etene"),
-                       (r"\Sigma M = 0", "ei kierry")]),
-        ("ympyräliike", [(r"v = \omega r", "ratanopeus"), (r"a_\text{n} = v^2/r", "keskipisteeseen"),
-                         (r"\Sigma F \text{ antaa } a_\text{n}", "liikeyhtälö")]),
-        ("gravitaatio", [(r"F_\text{g} = \gamma m_1 m_2/r^2", "vetovoima"), (r"\overline{G} = m\overline{g}", "paino"),
-                         (r"\text{satelliitti: } F_\text{g} \text{ antaa } a_\text{n}", "")]),
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words: the sign on top, the choice it leads to and, as the result in a pill in the
+    site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
+    rows = [
+        (r"\text{tanko pysyy paikallaan}", r"\to\ \text{myös momentit}", r"\Sigma M = 0", 100, False),
+        (r"\text{ympyrärata}", r"\to\ \text{normaalikiihtyvyys}", r"a_\text{n} = v^2/r", 116, False),
+        (r"\text{kulmanopeus annettu}", r"\to\ \text{ratanopeus}", r"v = \omega r", 100, False),
+        (r"\text{mikä voima kaartaa rataa?}", r"\to\ \text{voimien summa}", r"\Sigma F = ma_\text{n}", 124, False),
+        (r"\text{kaarre tasaisella tiellä}", r"\to\ \text{kitka kaartaa}", r"F_\mu = mv^2/r", 124, False),
+        (r"\text{kaksi kappaletta vetää toisiaan}", r"\to\ \text{gravitaatiolaki}", r"F_\text{g} = \gamma Mm/r^2", 170, True),
+        (r"\text{putoamiskiihtyvyys kysytään}", r"\to\ \text{paino on gravitaatiota}", r"mg = \gamma Mm/r^2", 170, True),
+        (r"\text{satelliitti kiertää}", r"\to\ \text{gravitaatio kaartaa}", r"\gamma Mm/r^2 = mv^2/r", 200, True),
     ]
-    hub_y, hub_h, x_box, gh, top = 8, 72, 44, 156, 100
-    spine = 24
-    f.line(spine, hub_y + hub_h, spine, top + 2 * (gh + 16) + 22, RULE, 3)
-    f.rect(8, hub_y, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
-    f.tex(190, hub_y + 22, r"\text{voimakuvio ensin}", "middle", INK)
-    f.tex(190, hub_y + 51, r"\Sigma\overline{F} = m\overline{a}", "middle", INK)
-    for k, (head, rows) in enumerate(groups):
-        y = top + k * (gh + 16)
-        f.line(spine, y + 22, x_box, y + 22, RULE, 3)
-        f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
-        f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
-        f.line(x_box + 10, y + 42, 362, y + 42, RULE_LIGHT, 1.5)
-        for j, (law, word) in enumerate(rows):
-            yy = y + 66 + j * 37
-            f.tex(x_box + 14, yy, law, "start", INK)
-            if word: f.tex(362, yy, r"\text{" + word + "}", "end", MUTED, size=17)
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    heights = [ch + (30 if r[4] else 0) for r in rows]
+    ys = [top + sum(heights[:k]) + gap * k for k in range(len(rows))]
+    height = ys[-1] + heights[-1] + 8
+    f = Fig("fy9yl-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + heights[-1] / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{voimakuvio ensin, sitten tunnusmerkki}", "middle", INK, size=17, w=340)
+    for (sign, choice, law, pw, tall), y, ch_ in zip(rows, ys, heights):
+        f.line(14, y + ch_ / 2, x0, y + ch_ / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch_, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 38 - (0 if tall else pw))
+        if tall:                                               # a long result on a line of its own
+            yy += 30
+            f.rect(x1 - 10 - pw, yy - 12, pw, 26, ACCENT, ACCENT, 2, 8)
+        else:
+            f.rect(x1 - 10 - pw, yy - 11, pw, 24, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 10 - pw / 2, yy + 1, law, "middle", WHITE, size=17, w=pw - 8)
     return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Piirrä ensin voimakuvio ja katso, mikä tehtävän "
+               "tunnusmerkki sopii. Tanko pysyy paikallaan: myös momenttien summa on nolla. Ympyrärata: normaalikiihtyvyys on "
+               "v toiseen jaettuna r:llä. Kulmanopeus annettu: ratanopeus on omega kertaa r. Mikä voima kaartaa rataa: voimien "
+               "summa on massa kertaa normaalikiihtyvyys. Kaarre tasaisella tiellä: kitka kaartaa, ja kitka on m v toiseen per "
+               "r. Kaksi kappaletta vetää toisiaan: gravitaatiolaki, F g on gamma M m per r toiseen. Putoamiskiihtyvyys "
+               "kysytään: paino on gravitaatiota, m g on gamma M m per r toiseen. Satelliitti kiertää: gravitaatio kaartaa "
+               "rataa, gamma M m per r toiseen on m v toiseen per r.")
 
 
 def geo():

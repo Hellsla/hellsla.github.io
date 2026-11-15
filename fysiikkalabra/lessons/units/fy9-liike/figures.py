@@ -107,47 +107,54 @@ def hero():
     return f.svg()
 
 
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
+
+
 def kartta():
-    """The concept map, stacked for a phone: three graph boxes (t,x), (t,v), (t,a), each with a sketch of uniform and
-    uniformly accelerated motion; on the right the slope leads down a level, on the left the area leads up."""
-    f = Fig("fy9li-kartta", 600, "Käsitekartta kolmesta kuvaajasta päällekkäin. Ylimpänä paikan kuvaaja, jossa tasaisen liikkeen "
-            "suora ja tasaisesti kiihtyvän liikkeen ylöspäin kaartuva käyrä. Keskellä nopeuden kuvaaja, jossa vaakasuora suora ja "
-            "nouseva suora. Alimpana kiihtyvyyden kuvaaja, jossa nolla ja vakio. Oikealla nuolet alaspäin: kuvaajan kulmakerroin on "
-            "seuraavan suureen arvo, v = Δx/Δt ja a = Δv/Δt. Paikan kuvaajat ovat mustia, nopeuden sinisiä ja kiihtyvyyden oransseja; "
-            "tasainen liike on yhtenäinen ja tasaisesti kiihtyvä katkoviiva. Vasemmalla nuolet ylöspäin: kuvaajan ja aika-akselin välinen pinta-ala on "
-            "edellisen suureen muutos, Δx ja Δv.", width=400, size=21)
-    rows = [(r"(t,x)", "paikka", lambda u: 0.75 * u, lambda u: 0.15 * u + 0.85 * u * u, INK),
-            (r"(t,v)", "nopeus", lambda u: 0.55, lambda u: 0.12 + 0.8 * u, COLD),
-            (r"(t,a)", "kiihtyvyys", lambda u: 0.0, lambda u: 0.55, HEAT)]
-    bx, bw, bh, gap, top = 80, 208, 136, 52, 14
-    for k, (name, word, flat, accel, col) in enumerate(rows):
-        y = top + k * (bh + gap)
-        f.rect(bx, y, bw, bh, WHITE, MUTED, 2, 10)
-        f.tex(bx + 12, y + 20, name, "start", INK)
-        f.tex(bx + bw - 12, y + 20, r"\text{" + word + "}", "end", MUTED, size=18)
-        # a small graph: axes, then the two sketches in the quantity's colour (solid: uniform, dashed: uniformly
-        # accelerated); position ink, velocity blue, acceleration orange
-        ox, oy, w, h = bx + 24, y + bh - 16, bw - 52, bh - 56
-        f.line(ox, oy, ox + w + 8, oy, INK, 2); f.line(ox, oy, ox, oy - h - 8, INK, 2)
-        pts = lambda fn: " ".join(f"{n(ox + w * i / 20)},{n(oy - h * fn(i / 20))}" for i in range(21))
-        f.add(f'<polyline points="{pts(flat)}" fill="none" stroke="{col}" stroke-width="3" stroke-linecap="round"/>')
-        f.add(f'<polyline points="{pts(accel)}" fill="none" stroke="{col}" stroke-width="3" stroke-dasharray="9 6" stroke-linecap="round"/>')
-        if k < 2:                                                               # the arrows to the next box
-            ya, yb = y + bh + 6, y + bh + gap - 6
-            f.arrow(bx + bw + 24, ya, bx + bw + 24, yb, INK, 3, 13)
-            f.arrow(bx - 24, yb, bx - 24, ya, GOOD, 3, 13)
-            # the slope on one line, as in the text (v = Δx/Δt), not as a small vertical fraction
-            f.tex(bx + bw + 36, (ya + yb) / 2, r"\Delta x/\Delta t" if k == 0 else r"\Delta v/\Delta t", "start", INK)
-            f.tex(bx - 36, (ya + yb) / 2, r"\Delta x" if k == 0 else r"\Delta v", "end", GOOD)
-    yk = top + 3 * (bh + gap) - gap + 26                                        # the key
-    f.line(14, yk - 18, 386, yk - 18, RULE_LIGHT, 1.5)
-    f.tex(14, yk + 6, r"\downarrow\ \text{kulmakerroin}", "start", INK)
-    f.tex(386, yk + 6, r"\uparrow\ \text{pinta-ala}", "end", GOOD)
-    f.line(14, yk + 38, 50, yk + 38, INK, 3)
-    f.tex(58, yk + 38, r"\text{tasainen}", "start", MUTED, size=18)
-    f.line(150, yk + 38, 186, yk + 38, INK, 3, "9 6")
-    f.tex(194, yk + 38, r"\text{tasaisesti kiihtyvä}", "start", MUTED, size=18)
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words: the sign on top, the choice it leads to and, as the result in a pill in the
+    site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
+    rows = [
+        (r"\text{vakionopeus}", r"\to\ \text{paikka ajan mukaan}", r"x = x_0 + vt", 116, False),
+        (r"\text{kiihtyvyys on vakio}", r"\to\ \text{nopeus ajan mukaan}", r"v = v_0 + at", 116, False),
+        (r"\text{kiihtyvyys on vakio, matka?}", r"\to\ \text{paikka ajan mukaan}", r"x = x_0 + v_0 t + \tfrac12 at^2", 220, True),
+        (r"\text{ei kiihtyvyyttä tiedossa}", r"\to\ \text{keskinopeus}", r"\Delta x = \tfrac{v_0 + v}{2}\,t", 150, False),
+        (r"\text{nopeus paikkakuvaajasta}", r"\to\ \text{kulmakerroin}", r"v = \Delta x/\Delta t", 124, False),
+        (r"\text{kiihtyvyys nopeuskuvaajasta}", r"\to\ \text{kulmakerroin}", r"a = \Delta v/\Delta t", 124, False),
+        (r"\text{matka nopeuskuvaajasta}", r"\to\ \text{kuvaajan alla}", r"\text{pinta-ala}", 116, False),
+    ]
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    heights = [ch + (30 if r[4] else 0) for r in rows]
+    ys = [top + sum(heights[:k]) + gap * k for k in range(len(rows))]
+    height = ys[-1] + heights[-1] + 8
+    f = Fig("fy9li-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + heights[-1] / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{kuvaaja vai kaava? katso, mitä tiedät}", "middle", INK, size=17, w=340)
+    for (sign, choice, law, pw, tall), y, ch_ in zip(rows, ys, heights):
+        f.line(14, y + ch_ / 2, x0, y + ch_ / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch_, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 38 - (0 if tall else pw))
+        if tall:                                               # a long result on a line of its own
+            yy += 30
+            f.rect(x1 - 10 - pw, yy - 12, pw, 26, ACCENT, ACCENT, 2, 8)
+        else:
+            f.rect(x1 - 10 - pw, yy - 11, pw, 24, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 10 - pw / 2, yy + 1, law, "middle", WHITE, size=17, w=pw - 8)
     return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Katso, mitä tehtävässä tiedetään tai mikä kuvaaja on "
+               "annettu. Vakionopeus: paikka ajan mukaan on x on x nolla plus v t. Kiihtyvyys on vakio: nopeus ajan mukaan on "
+               "v on v nolla plus a t. Kiihtyvyys on vakio ja matkaa kysytään: paikka on x nolla plus v nolla t plus puolet a "
+               "t toiseen. Kiihtyvyyttä ei tiedetä: keskinopeus, jolloin siirtymä on alku- ja loppunopeuden keskiarvo kertaa "
+               "aika. Nopeus paikkakuvaajasta: kulmakerroin, v on delta x per delta t. Kiihtyvyys nopeuskuvaajasta: "
+               "kulmakerroin, a on delta v per delta t. Matka nopeuskuvaajasta: kuvaajan ja aika-akselin väliin jäävä pinta- "
+               "ala.")
 
 
 def kuvaajat():
