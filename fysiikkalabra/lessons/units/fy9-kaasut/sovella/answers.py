@@ -46,7 +46,8 @@ eta_kok = (Pe + Ph) / P0
 out.update({"fy9-kaasut-s2-n": round(n2, 1), "fy9-kaasut-s2-a": round(mh2, 2), "fy9-kaasut-s2-b": round(Pe / 1e3, 1),
             "fy9-kaasut-s2-P0": round(P0 / 1e3, 1), "fy9-kaasut-s2-Ehour": round(mh2 * H2 / 1e6, 0),
             "fy9-kaasut-s2-Pw": round(Pw / 1e3, 1), "fy9-kaasut-s2-Ph": round(Ph / 1e3, 1), "fy9-kaasut-s2-c": round(100 * eta_kok, 1),
-            "fy9-kaasut-s2-Celsius-n": round(pg2 * q2 / (R * 25), 0)})
+            "fy9-kaasut-s2-Celsius-n": round(pg2 * q2 / (R * 25), 0),
+            "fy9-kaasut-s2-waste": round((P0 - Pe - Ph) / 1e3, 1)})   # unrounded waste power, kW (the row shows 485 - 175 - 233)
 
 # s3: air in a glass syringe in a water bath at the constant air pressure 101,3 kPa (invented data: V = 37,5 ml at
 # 0 °C, proportional to the kelvin temperature, plus reading noise of about 0,15 ml; figures.py draws the same points)

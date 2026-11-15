@@ -824,7 +824,7 @@
         "fy3-6",
         "fy2-4"
       ],
-      "text": "In December 2022 the news reported a breakthrough in fusion research. Open [the Yle News article on the fusion experiment](https://yle.fi/a/3-12684377) (12 Dec 2022, updated 13 Dec 2022; in Finnish, so use your browser's translation if you need it) and read all of it, including the correction note at the end.\n\nAccording to the source (checked 16 Nov 2026) the two energies of the experiment were $3.15\\,\\text{MJ}$ and $2.05\\,\\text{MJ}$. The article compares the larger energy with bringing a few pots of water to the boil.\n\n- specific heat capacity of water $4.19\\,\\tfrac{\\text{kJ}}{\\text{kg}\\cdot\\text{K}}$\n- According to the laboratory, the laser system took about $300\\,\\text{MJ}$ from the electricity grid for the shot. This figure is not in the article.\n- a thermal power plant turns about a third of the energy it receives as heat into electricity",
+      "text": "In December 2022 the news reported a breakthrough in fusion research. Open [the Yle News article on the fusion experiment](https://yle.fi/a/3-12684377) (12 Dec 2022, updated 13 Dec 2022; in Finnish, so use your browser's translation if you need it) and read all of it, including the correction note at the end.\n\nAccording to the source (checked 16 Nov 2026) the two energies of the experiment were $3.15\\,\\text{MJ}$ and $2.05\\,\\text{MJ}$. The article compares the larger energy with bringing a few pots of water to the boil.\n\nFurther information:\n\n- The specific heat capacity of water is $4.19\\,\\tfrac{\\text{kJ}}{\\text{kg}\\cdot\\text{K}}$.\n- According to the laboratory, the laser system took about $300\\,\\text{MJ}$ from the electricity grid for the shot. This figure is not in the article.\n- A thermal power plant turns about a third of the energy it receives as heat into electricity.",
       "parts": [
         {
           "id": "a",
@@ -918,7 +918,7 @@
           "id": "d",
           "kind": "word",
           "points": 3,
-          "text": "Explain why the result does not show that the whole experimental facility produced more energy than it used. Use the source and the electrical energy reported by the laboratory to justify your answer.",
+          "text": "Explain why the result does not show that the whole experimental facility produced more energy than it used. Use the source and the electrical energy reported by the laboratory to justify your answer. Estimate also how much electrical energy the released energy would give with the efficiency of a thermal power plant.",
           "criteria": [
             {
               "text": "Sets the system boundary: the comparison $3.15\\,\\text{MJ} > 2.05\\,\\text{MJ}$ concerns only the fuel. According to the source, the energy used to run the lasers is not included in the figure.",
@@ -944,7 +944,7 @@
           "text": "Another online outlet could give the same experiment this headline: “A fusion power plant already produces more energy than it uses.” The headline is invented for this problem. What should be made more precise in it? Use the article's own correction note as an example. Explain also why the result of the experiment does not violate conservation of energy.",
           "criteria": [
             {
-              "text": "Makes precise that this is a single laboratory experiment and not a power plant: no electricity was produced, and according to the source a fusion power plant connected to the grid is still decades away.",
+              "text": "Makes precise that this is a single laboratory experiment and not a power plant. A fitting reason is, for example, that no electricity was produced or that according to the source a fusion power plant connected to the grid is still decades away.",
               "tag": "communication",
               "points": 1
             },

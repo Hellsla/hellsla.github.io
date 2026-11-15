@@ -439,7 +439,7 @@ $$, sama tulos.
 ### a)
 **Annettu:** aineistosta (NASA, tarkistettu 16.11.2026) aseman lentokorkeus $370$–$460\,\text{km}$; mallissa radan korkeus $h = 400\,\text{km}$, kiertoaika $T = 92\,\text{min}$ ja Maan säde $R = 6371\,\text{km}$
 **Kysytty:** sopiiko mallin korkeus aineistoon; ratanopeus $v$
-**Periaate:** Aineiston mukaan asema kiertää Maata $370$–$460\,\text{km}$:n korkeudella. Mallin $400\,\text{km}$ on tällä välillä, joten malli sopii aineistoon. Korkeus vaihtelee vain $90\,\text{km}$, mikä on noin $1{,}3\,\%$ radan säteestä, joten ympyrärata on hyvä malli. Tasaisessa ympyräliikkeessä asema kulkee kiertoajassa $T$ radan kehän pituuden $2\pi r$ (luku *Ympyrärata: jaksonaika ja ratanopeus*). Radan säde mitataan Maan keskipisteestä, joten $r = R + h$.
+**Periaate:** Aineiston mukaan asema kiertää Maata $370$–$460\,\text{km}$:n korkeudella. Mallin $400\,\text{km}$ on tällä välillä, joten malli sopii aineistoon. Väli on se, jolla aseman korkeus pidetään ajan mittaan, ei yhden kierroksen aikainen vaihtelu. Välin leveys $90\,\text{km}$ on vain noin $1{,}3\,\%$ radan säteestä, joten ympyrärata on hyvä malli. Tasaisessa ympyräliikkeessä asema kulkee kiertoajassa $T$ radan kehän pituuden $2\pi r$ (luku *Ympyrärata: jaksonaika ja ratanopeus*). Radan säde mitataan Maan keskipisteestä, joten $r = R + h$.
 **Kaava:** $v = \dfrac{2\pi r}{T} = \dfrac{2\pi(R + h)}{T}$
 **Muunnokset:** $r = 6371\,\text{km} + 400\,\text{km} = 6771\,\text{km} = 6{,}771 \cdot 10^{6}\,\text{m}$ ja $T = 92\,\text{min} = 92 \cdot 60\,\text{s} = 5520\,\text{s}$
 **Sijoitus:** $$
@@ -464,7 +464,7 @@ a_\text{n} &= \dfrac{4\pi^2 \cdot 6{,}771 \cdot 10^{6}\,\text{m}}{(5520\,\text{s
 \end{aligned}
 $$ ja $\dfrac{a_\text{n}}{g} = \dfrac{8{,}773\,\text{m/s}^2}{9{,}81\,\text{m/s}^2} = 0{,}894$
 **Vastaus:** $a_\text{n} \approx 8{,}8\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten kiertoajassa. Se on noin $89\,\%$ eli lähes yhdeksän kymmenesosaa putoamiskiihtyvyydestä maanpinnalla.
-**Järkevyys:** Gravitaatiolain mukaan kentän voimakkuus radalla on $\gamma\tfrac{M}{r^2} \approx 8{,}69\,\text{m/s}^2$. Ero on noin $1\,\%$, ja se selittyy kahteen numeroon pyöristetyllä kiertoajalla. Tulosten on oltava samat, koska gravitaatio on aseman ainoa voima ja antaa sen normaalikiihtyvyyden.
+**Järkevyys:** Gravitaatiolain mukaan kentän voimakkuus radalla on $\gamma\tfrac{M}{r^2} \approx 8{,}69\,\text{m/s}^2$. Ero on noin $1\,\%$, ja se selittyy kahteen numeroon pyöristetyllä kiertoajalla ja malliin valitulla korkeudella yhdessä. Tulosten on oltava samat, koska gravitaatio on aseman ainoa voima ja antaa sen normaalikiihtyvyyden.
 
 ### c)
 **Kysytty:** mikä voima antaa astronautille normaalikiihtyvyyden ja miksi hän on painoton, vaikka gravitaatio vaikuttaa
@@ -489,7 +489,7 @@ $$
 ### e)
 **Kysytty:** miksi asema tarvitsee akkuja ja miksi keskimääräinen teho ei yksin kerro, riittääkö sähkö joka hetki
 **Periaate:** Aurinkopaneeli tuottaa sähköä vain, kun siihen osuu auringonvaloa. Keskimääräinen teho $P = \tfrac{E}{t}$ ei kerro, miten teho vaihtelee ajan $t$ kuluessa (luku *Sähköenergia kotona*).
-**Mallivastaus:** Asema kiertää Maan $92\,\text{min}$:ssa eli lähes $16$ kertaa vuorokaudessa. Lähes joka kierroksella se kulkee Maan varjon läpi, koska Maa jää Auringon ja aseman väliin. Matalalla radalla varjo peittää suuren osan kierroksesta. Kun Aurinko on ratatasossa, varjon reuna on kulmassa $\theta$, jolle $\sin\theta = \tfrac{R}{r}$, joten $\theta \approx 70{,}2^\circ$. Varjossa on silloin osuus $\tfrac{2\theta}{360^\circ} \approx 39\,\%$ kierroksesta eli noin $36\,\text{min}$. Varjossa paneelit eivät tuota sähköä, mutta aseman laitteet tarvitsevat sitä koko ajan. Siksi akut ladataan auringonvalossa, ja varjossa ne syöttävät laitteita. d-kohdan $84\,\text{kW}$ on keskiarvo, joka peittää tämän vaihtelun: tuotanto on varjossa nolla ja valossa keskiarvoa suurempi. Jos asema on varjossa $39\,\%$ ajasta, paneelien on tuotettava valossa keskimäärin $\tfrac{84\,\text{kW}}{0{,}61} \approx 140\,\text{kW}$. Ilman energian varastointia sähkö katkeaisi noin $92\,\text{min}$:n välein.
+**Mallivastaus:** Asema kiertää Maan $92\,\text{min}$:ssa eli lähes $16$ kertaa vuorokaudessa. Lähes joka kierroksella se kulkee Maan varjon läpi, koska Maa jää Auringon ja aseman väliin. Matalalla radalla varjo peittää suuren osan kierroksesta. Kun Aurinko on ratatasossa, asema on varjon reunalla, kun sen suunta Maan keskipisteestä katsottuna poikkeaa Auringosta poispäin osoittavasta suunnasta kulman $\theta$, jolle $\sin\theta = \tfrac{R}{r}$, joten $\theta \approx 70{,}2^\circ$. Varjossa on silloin osuus $\tfrac{2\theta}{360^\circ} \approx 39\,\%$ kierroksesta eli noin $36\,\text{min}$. Varjossa paneelit eivät tuota sähköä, mutta aseman laitteet tarvitsevat sitä koko ajan. Siksi akut ladataan auringonvalossa, ja varjossa ne syöttävät laitteita. d-kohdan $84\,\text{kW}$ on keskiarvo, joka peittää tämän vaihtelun: tuotanto on varjossa nolla ja valossa keskiarvoa suurempi. Jos asema on varjossa $39\,\%$ ajasta, paneelien on tuotettava valossa keskimäärin $\tfrac{84\,\text{kW}}{0{,}61} \approx 140\,\text{kW}$. Ilman energian varastointia sähkö katkeaisi noin $92\,\text{min}$:n välein.
 
 ### Yleisiä virheitä
 - a-kohdassa radan säteeksi otetaan korkeus $400\,\text{km}$ eikä $R + h$, tai kiertoaikaa ei muunneta sekunneiksi.

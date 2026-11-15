@@ -419,7 +419,7 @@ E_{100,\text{k}} &= \dfrac{75\,\text{kWh} \cdot 100\,\text{km}}{279\,\text{km}} 
 \end{aligned}
 $$
 **Vastaus:** Kulutus on leudolla säällä noin $17\,\text{kWh}$ ja pakkasella noin $27\,\text{kWh}$ sataa kilometriä kohti, kaksi merkitsevää numeroa kuten akkuenergia $75\,\text{kWh}$ ja lyheneminen $38\,\%$. Oletus ei pidä tarkasti paikkaansa: kylmästä akusta saadaan vähemmän energiaa kuin lämpimästä. Osa toimintamatkan lyhenemisestä johtuu siis pienemmästä energiasta eikä kulutuksen kasvusta, joten todellinen kulutus kasvaa vähemmän kuin malli antaa.
-**Järkevyys:** Kulutus kasvaa mallissa kertoimella $\tfrac{1}{0{,}62} \approx 1{,}6$ eli enemmän kuin $38\,\%$, koska sama energia jaetaan lyhyemmälle matkalle. Aineiston mitatut kulutukset $21{,}2\,\text{kWh}$ ja $21{,}6\,\text{kWh}$ sataa kilometriä kohti ovat samaa suuruusluokkaa mutta pienempiä kuin mallin $27\,\text{kWh}$. Autot ovat eri, joten vertailu on suuntaa antava, mutta se sopii oletuksen rajoitukseen. Energia matkaa kohti on myös voima, koska $W = Fs$: $$
+**Järkevyys:** Kulutus kasvaa mallissa kertoimella $\tfrac{1}{0{,}62} \approx 1{,}6$ eli enemmän kuin $38\,\%$, koska sama energia jaetaan lyhyemmälle matkalle. Aineiston mitatut kulutukset $21{,}2\,\text{kWh}$ ja $21{,}6\,\text{kWh}$ sataa kilometriä kohti ovat samaa suuruusluokkaa mutta pienempiä kuin mallin $27\,\text{kWh}$. Mitatut kulutukset ovat kuitenkin muiden autojen kuin mallin auton, joten ne kertovat vain suuruusluokan. Energia matkaa kohti on myös voima, koska $W = Fs$: $$
 \begin{aligned}
 \dfrac{E}{s} &= \dfrac{75 \cdot 1000\,\text{W} \cdot 3600\,\text{s}}{450 \cdot 1000\,\text{m}} \\
 &= 600\,\text{N}
@@ -435,7 +435,7 @@ Se on henkilöautoa maantienopeudessa vastustavien voimien suuruusluokkaa.
 - *Sähköoppi.* Lämmitin ottaa akusta tehon $P = UI$ koko ajon ajan, joten siihen kuluu energia $E = Pt$. Jos lämmitysteho on esimerkiksi $3{,}0\,\text{kW}$ ja ajo kestää $5{,}0\,\text{h}$, lämmitys vie $15\,\text{kWh}$ eli viidesosan $75\,\text{kWh}$:n akusta. Lisäksi kylmän akun sisäinen resistanssi $R_\text{s}$ on suurempi. Akun sisällä muuttuu sisäenergiaksi teho $P = R_\text{s}I^2$, ja sisäisen resistanssin jännitehäviö $R_\text{s}I$ pienentää napajännitettä. Akusta saadaan siksi käyttöön vähemmän energiaa.
 - *Mekaniikka.* Tasaisella nopeudella moottorin on tehtävä työ $W = Fs$ vastusvoimia vastaan, joten energiaa kuluu kilometrillä sitä enemmän, mitä suuremmat vastusvoimat ovat. Kylmä ilma on tiheämpää: ideaalikaasun tilanyhtälön $pV = nRT$ mukaan samassa paineessa ainemäärä tilavuutta kohti on $\tfrac{n}{V} = \tfrac{p}{RT}$, eli $-20\,{}^\circ\text{C}$:ssa noin $16\,\%$ suurempi kuin $+20\,{}^\circ\text{C}$:ssa. Auto syrjäyttää silloin joka metrillä suuremman massan ilmaa, joten ilmanvastus on suurempi. Lumi, sohjo ja pehmeät talvirenkaat kasvattavat vierimisvastusta.
 
-Lämmitykseen ja akun sisäenergiaksi kulunut energia sekä suurempi työ vastusvoimia vastaan otetaan kaikki samasta akusta. Ajamiseen jää siksi vähemmän energiaa kilometriä kohti kuin leudolla säällä, ja toimintamatka lyhenee.
+Lämmitykseen ja akun sisäenergiaksi kulunut energia sekä suurempi työ vastusvoimia vastaan otetaan kaikki samasta akusta. Jokainen kilometri vaatii siksi akusta enemmän energiaa kuin leudolla säällä, ja kylmästä akusta energiaa saadaan vähemmän, joten toimintamatka lyhenee.
 
 ### d)
 **Kysytty:** miksi pisimmälle ajaneen auton suurimmasta poikkeamasta ei voi päätellä, että auto kestäisi pakkasta muita huonommin

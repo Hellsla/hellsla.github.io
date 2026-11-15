@@ -423,11 +423,11 @@ m &= \dfrac{3.15 \cdot 10^{6}\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\t
 &= 9.397\,\text{kg}
 \end{aligned}
 $$
-**Answer:** The energy heats about $9.4\,\text{kg}$, that is about $9.4$ litres, of water to the boiling point. The answer is given to two significant figures, because the initial temperature of the water is an estimate. The article's comparison holds: the amount is a few pots, for example three pots of three litres.
+**Answer:** The energy heats about $9.4\,\text{kg}$, that is about $9.4$ litres, of water to the boiling point. The answer is given to two significant figures, because the temperature difference $80\,\text{K}$ has two significant figures. The article's comparison holds: the amount is a few pots, for example three pots of three litres.
 **Reasonableness:** Heating one litre takes $335\,200\,\text{J} \approx 0.34\,\text{MJ}$, so $3.15\,\text{MJ}$ is enough for about nine litres. The energy of the experiment is small on an everyday scale, although the result was scientifically significant.
 
 ### d)
-**Find:** why the result does not show that the whole experimental facility produced more energy than it used
+**Find:** why the result does not show that the whole experimental facility produced more energy than it used, and how much electrical energy the released energy would give with the efficiency of a thermal power plant
 **Principle:** An energy balance depends on how the system is bounded (chapter *Thermodynamic system, state variables and temperature*). The efficiency of a device is the ratio of the useful energy to the energy the device takes in (chapter *Efficiency*). A thermal power plant turns only a part of the energy it receives as heat into electricity (chapter *Energy production and the efficiency of power plants*).
 **Model answer:** The comparison $3.15\,\text{MJ} > 2.05\,\text{MJ}$ concerns only the fuel: more energy was released from it than the lasers delivered to it. According to the source, the figure $2.05\,\text{MJ}$ does not include the energy used to run the lasers. When the system is taken to be the whole experimental facility, the energy it takes in is the electrical energy from the grid, $E_\text{g} \approx 300\,\text{MJ}$. Then $$
 \begin{aligned}

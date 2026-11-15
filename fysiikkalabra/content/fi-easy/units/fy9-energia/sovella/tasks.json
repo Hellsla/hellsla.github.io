@@ -790,12 +790,12 @@
           "text": "Selitä, miksi sähköauton energiankulutus kilometriä kohti kasvaa pakkasella. Käytä selityksessä lämpöoppia, sähköoppia ja mekaniikkaa.",
           "criteria": [
             {
-              "text": "Lämpöoppi: lämpö siirtyy matkustamosta ja akusta ympäristöön sitä nopeammin, mitä suurempi lämpötilaero on. Siksi lämpötilan ylläpito vaatii lämmitystehon. Sähköautossa se otetaan ajoakusta. Polttomoottoriautossa käytetään moottorin sisäenergiaa, joka siirtyisi muuten lämpönä ympäristöön.",
+              "text": "Lämpöoppi: lämpö siirtyy matkustamosta ja akusta ympäristöön sitä nopeammin, mitä suurempi lämpötilaero on. Siksi lämpötilan ylläpito vaatii lämmitystehon. Sähköautossa se otetaan ajoakusta.",
               "tag": "concept",
               "points": 1
             },
             {
-              "text": "Sähköoppi: lämmitin ottaa akusta tehon $P = UI$ koko ajon ajan. Kylmän akun sisäinen resistanssi on suurempi. Se kasvattaa tehoa $P = R_\\text{s}I^2$, joka muuttuu akun sisäenergiaksi, ja pienentää napajännitettä.",
+              "text": "Sähköoppi: esittää ainakin toisen näistä kahdesta. Yksi: lämmitin ottaa akusta tehon $P = UI$ koko ajon ajan. Kaksi: kylmän akun sisäinen resistanssi on suurempi. Se kasvattaa tehoa $P = R_\\text{s}I^2$, joka muuttuu akun sisäenergiaksi, ja pienentää napajännitettä.",
               "tag": "concept",
               "points": 1
             },
@@ -815,7 +815,7 @@
           "id": "d",
           "kind": "word",
           "points": 2,
-          "text": "Testissä pisimmälle ajanut auto menetti suurimman osuuden ilmoitetusta toimintamatkastaan. Tästä ei voi päätellä, että se kestää pakkasta huonommin kuin muut autot. Selitä aineiston avulla, miksi ei.",
+          "text": "Testissä pisimmälle ajaneen auton toimintamatka jäi suhteellisesti eniten ilmoitetusta. Tästä ei voi päätellä, että se kestää pakkasta huonommin kuin muut autot. Selitä aineiston avulla, miksi ei.",
           "criteria": [
             {
               "text": "Käyttää aineistoa: lämpötila laski reitin varrella $-7\\,{}^\\circ\\text{C}$:sta $-32\\,{}^\\circ\\text{C}$:seen. Pisimmälle ajanut auto ajoi siksi suuren osan matkastaan kylmimmällä osuudella ja oli pakkasessa pisimpään. Lyhyen toimintamatkan auto pysähtyi jo $-16\\,{}^\\circ\\text{C}$:n kohdalla.",
@@ -833,7 +833,7 @@
           "id": "e",
           "kind": "word",
           "points": 2,
-          "text": "Arvioi, miksi tämän yhden talvitestin perusteella ei voi ennustaa tietyn sähköauton toimintamatkaa kaikissa talviolosuhteissa. Kerro myös, miten testiä pitäisi muuttaa, jotta tulos olisi luotettavampi.",
+          "text": "Arvioi, miksi tämän yhden talvitestin perusteella ei voi ennustaa tietyn sähköauton toimintamatkaa kaikissa talviolosuhteissa. Nimeä ainakin kolme tekijää, jotka muuttavat kulutusta. Kerro myös, miten testiä pitäisi muuttaa, jotta tulos olisi luotettavampi.",
           "criteria": [
             {
               "key": "error_sources",

@@ -107,7 +107,7 @@ $$, smaller than the about $1.2\,\text{kg/m}^3$ of air, as the ratio of the mola
 &485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \\
 &\approx 77\,\text{kW}
 \end{aligned}
-$$, that is, $16\,\%$, the same as $25\,\%$ of the heat power. The result is of the same order of magnitude as the $85$–$90\,\%$ of combined heat and power plants.
+$$, that is, $16\,\%$, the same as $25\,\%$ of the heat power. The result is of the same order of magnitude as the $85$–$90\,\%$ of combined heat and power plants. The difference above is calculated from the rounded powers; with the unrounded values it is $77.6\,\text{kW}$.
 
 ### Yleisiä virheitä
 - In part a the temperature is substituted in degrees Celsius, so the amount of substance comes out over ten times too large, $26\,000\,\text{mol}$.
@@ -388,7 +388,7 @@ The resolution of the scale, $0.01\,\text{g}$, is less than $1\,\%$ of the incre
 If the points lie on a straight line but the line does not pass through the origin, this reveals a systematic error, for example air escaping every time on detaching.
 
 ### Yleisiä virheitä
-- In part a the amount of substance is calculated with the total pressure $311\,\text{kPa}$ and not with the increase in pressure, so the result is about two thirds of the correct one.
+- In part a the amount of substance is calculated with the total pressure $311\,\text{kPa}$ and not with the increase in pressure, so the molar mass comes out at about two thirds of the correct one.
 - In part b it is only stated that “there were measurement errors” without naming the source of error or the direction of its effect.
 - In part b the bulging of the bottle is named as the cause of the result being too small, although it acts the opposite way.
 - In part c only “more precise instruments” are proposed without telling what is measured and how.
@@ -584,7 +584,7 @@ The temperatures tell why $Q_2$ is large. In kelvins the steam is at $T_1 = (290
 **Principle:** Energy transferred as heat increases the internal energy of the substance that receives it, and its temperature rises (chapter *Internal energy, heat and conservation of energy*). Heat flows by itself only from hotter to colder, and the work of a heat engine decreases when the temperature of its cold side rises (chapter *Work done by a gas and the heat engine*).
 **Model answer:** Heat is transferred to the sea at a rate of $2700\,\text{MW}$, about $65\,\text{GWh}$ a day. The energy does not disappear: it increases the internal energy of the seawater. The cooling water returns to the sea about $11\,\text{K}$ warmer and mixes with the surrounding water, so the sea warms clearly only near the outlet. There the sea can stay free of ice in winter, the ice is weak and the growing season becomes longer. Warmer water changes the living conditions of organisms: some species benefit and some suffer, and the growth of algae can increase. The effect on the temperature of the whole sea area is small, because the heat spreads into a large amount of water and is transferred from it on to the air.
 
-There is a lot of heat, but it is at a low temperature. The cooling water is only about $11\,\text{K}$ warmer than the sea, that is about $20\,{}^\circ\text{C}$. Heat flows by itself only to something colder, so this water cannot heat the water of a district heating network, which must be clearly hotter in order to heat buildings and domestic water. If the heat were taken out hotter, the steam would have to be taken from the turbine earlier. Then the temperature of the cold side of the heat engine would rise, the temperature difference would decrease and the plant would produce less electricity. In addition, the large users of heat are far from the plant: a long transfer pipe is expensive, and on the way part of the heat goes to the environment. That is why most of the heat is led to the sea, although the amount of energy is large.
+There is a lot of heat, but it is at a low temperature. The cooling water is only about $11\,\text{K}$ warmer than the sea, that is about $21\,{}^\circ\text{C}$. Heat flows by itself only to something colder, so this water cannot heat the water of a district heating network, which must be clearly hotter in order to heat buildings and domestic water. If the heat were taken out hotter, the steam would have to be taken from the turbine earlier. Then the temperature of the cold side of the heat engine would rise, the temperature difference would decrease and the plant would produce less electricity. In addition, the large users of heat are far from the plant: a long transfer pipe is expensive, and on the way part of the heat goes to the environment. That is why most of the heat is led to the sea, although the amount of energy is large.
 
 ### Yleisiä virheitä
 - In part a the efficiency is calculated the wrong way round, $4300 : 1600$, or the electrical power is divided by the heat power transferred to the sea, $2700\,\text{MW}$.

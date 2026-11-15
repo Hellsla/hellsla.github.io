@@ -847,7 +847,7 @@
           "id": "a",
           "kind": "calc",
           "points": 3,
-          "text": "Read from the source the circumference of the LHC and how many turns the protons make per second. From these, calculate the speed of the protons and compare it with the speed of light. What can be concluded from the comparison and what cannot?",
+          "text": "Read from the source the circumference of the LHC and how many turns the protons make per second. From these, calculate the speed of the protons and compare it with the speed of light. What can be concluded from the comparison and what cannot? Take into account the precision with which the figures of the source are given.",
           "answer": {
             "value": 2.9978,
             "unit": "· 10⁸ m/s",
@@ -955,7 +955,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "$\\dfrac{E}{E_\\text{k}} = \\dfrac{4.357 \\cdot 10^8\\,\\text{J}}{5.787 \\cdot 10^5\\,\\text{J}} \\approx 753$: the energy of one beam corresponds to the kinetic energy of about $750$ cars, although the total mass of the protons in the beam is less than a nanogram."
+              "detail": "$\\dfrac{E}{E_\\text{k}} = \\dfrac{4.357 \\cdot 10^8\\,\\text{J}}{5.787 \\cdot 10^5\\,\\text{J}} \\approx 753$: the energy of one beam corresponds to the kinetic energy of about $750$ cars."
             }
           ]
         },

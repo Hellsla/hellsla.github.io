@@ -753,7 +753,7 @@
           "id": "c",
           "kind": "calc",
           "points": 4,
-          "text": "Seawater flows through the condenser at the rate given in the row *Merivesivirtaus* of the source. From the equation of heat $Q = cm\\Delta T$, derive an expression for the change in the temperature of the seawater when the heat power transferred to the water and the volume of water flowing per second are known. By how much does the seawater warm in the condenser? Assess whether the real warming is larger or smaller than the calculated one.",
+          "text": "Seawater flows through the condenser at the rate given in the row *Merivesivirtaus* of the source. Derive in symbols an expression for the change in the temperature of the seawater when the heat transferred to the water per unit time (the heat power) and the volume of water flowing per second are known. By how much does the seawater warm in the condenser? Assess whether the real warming is larger or smaller than the calculated one.",
           "answer": {
             "value": 11.31,
             "unit": "K",

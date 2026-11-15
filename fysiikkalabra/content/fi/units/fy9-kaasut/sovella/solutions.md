@@ -107,7 +107,7 @@ $$, pienempi kuin ilman noin $1{,}2\,\text{kg/m}^3$, kuten moolimassojen suhde $
 &485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \\
 &\approx 77\,\text{kW}
 \end{aligned}
-$$ eli $16\,\%$, sama kuin $25\,\%$ lämpötehosta. Tulos on samaa suuruusluokkaa kuin yhteistuotantolaitosten $85$–$90\,\%$.
+$$ eli $16\,\%$, sama kuin $25\,\%$ lämpötehosta. Tulos on samaa suuruusluokkaa kuin yhteistuotantolaitosten $85$–$90\,\%$. Erotus on laskettu yllä pyöristetyistä tehoista; pyöristämättömillä arvoilla se on $77{,}6\,\text{kW}$.
 
 ### Yleisiä virheitä
 - a-kohdassa lämpötila sijoitetaan celsiusasteina, jolloin ainemääräksi tulee yli kymmenkertainen $26\,000\,\text{mol}$.
@@ -388,7 +388,7 @@ Vaa'an tarkkuus $0{,}01\,\text{g}$ on alle $1\,\%$ massan kasvusta $3{,}28\,\tex
 Jos pisteet ovat suoralla mutta suora ei kulje origon kautta, se paljastaa systemaattisen virheen, esimerkiksi irrotuksessa joka kerta karkaavan ilman.
 
 ### Yleisiä virheitä
-- a-kohdassa ainemäärä lasketaan kokonaispaineella $311\,\text{kPa}$ eikä paineen kasvulla, jolloin tulos on noin kaksi kolmasosaa oikeasta.
+- a-kohdassa ainemäärä lasketaan kokonaispaineella $311\,\text{kPa}$ eikä paineen kasvulla, jolloin moolimassaksi tulee noin kaksi kolmasosaa oikeasta.
 - b-kohdassa todetaan vain ”mittausvirheitä oli” nimeämättä virhelähdettä tai sen vaikutuksen suuntaa.
 - b-kohdassa pullon pullistuminen nimetään syyksi liian pieneen tulokseen, vaikka se vaikuttaa päinvastoin.
 - c-kohdassa ehdotetaan vain ”tarkempia mittareita” kertomatta, mitä mitataan ja miten.
@@ -584,7 +584,7 @@ Lämpötilat kertovat, miksi $Q_2$ on suuri. Kelvineinä höyry on $T_1 = (290 +
 **Periaate:** Lämpönä siirtyvä energia kasvattaa vastaanottavan aineen sisäenergiaa, jolloin sen lämpötila nousee (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Lämpö siirtyy itsestään vain kuumemmasta kylmempään, ja lämpövoimakoneen työ pienenee, kun sen kylmän puolen lämpötila nousee (luku *Kaasun tekemä työ ja lämpövoimakone*).
 **Mallivastaus:** Mereen siirtyy lämpöä teholla $2700\,\text{MW}$, vuorokaudessa noin $65\,\text{GWh}$. Energia ei katoa: se kasvattaa meriveden sisäenergiaa. Jäähdytysvesi palaa mereen noin $11\,\text{K}$ lämpimämpänä ja sekoittuu ympäröivään veteen, joten meri lämpenee selvästi vain purkupaikan lähellä. Siellä meri voi pysyä talvella sulana, jää on heikkoa ja kasvukausi pitenee. Lämpimämpi vesi muuttaa eliöiden elinoloja: osa lajeista hyötyy ja osa kärsii, ja levien kasvu voi lisääntyä. Koko merialueen lämpötilaan vaikutus on pieni, koska lämpö leviää suureen vesimäärään ja siirtyy siitä edelleen ilmaan.
 
-Lämpöä on paljon, mutta se on matalassa lämpötilassa. Jäähdytysvesi on vain noin $11\,\text{K}$ merta lämpimämpää, eli noin $20\,{}^\circ\text{C}$. Lämpö siirtyy itsestään vain kylmempään, joten tällä vedellä ei voi lämmittää kaukolämpöverkon vettä, jonka on oltava selvästi kuumempaa, jotta se lämmittää rakennuksia ja käyttövettä. Jos lämpö otettaisiin talteen kuumempana, höyry pitäisi ottaa turbiinista aikaisemmin. Silloin lämpövoimakoneen kylmän puolen lämpötila nousisi, lämpötilaero pienenisi ja laitos tuottaisi vähemmän sähköä. Lisäksi suuret lämmön käyttäjät ovat kaukana laitoksesta: pitkä siirtoputki on kallis, ja matkalla osa lämmöstä siirtyy ympäristöön. Siksi suurin osa lämmöstä johdetaan mereen, vaikka energiamäärä on suuri.
+Lämpöä on paljon, mutta se on matalassa lämpötilassa. Jäähdytysvesi on vain noin $11\,\text{K}$ merta lämpimämpää, eli noin $21\,{}^\circ\text{C}$. Lämpö siirtyy itsestään vain kylmempään, joten tällä vedellä ei voi lämmittää kaukolämpöverkon vettä, jonka on oltava selvästi kuumempaa, jotta se lämmittää rakennuksia ja käyttövettä. Jos lämpö otettaisiin talteen kuumempana, höyry pitäisi ottaa turbiinista aikaisemmin. Silloin lämpövoimakoneen kylmän puolen lämpötila nousisi, lämpötilaero pienenisi ja laitos tuottaisi vähemmän sähköä. Lisäksi suuret lämmön käyttäjät ovat kaukana laitoksesta: pitkä siirtoputki on kallis, ja matkalla osa lämmöstä siirtyy ympäristöön. Siksi suurin osa lämmöstä johdetaan mereen, vaikka energiamäärä on suuri.
 
 ### Yleisiä virheitä
 - a-kohdassa hyötysuhde lasketaan väärin päin, $4300 : 1600$, tai jaetaan sähköteho mereen siirtyvällä lämpöteholla $2700\,\text{MW}$.

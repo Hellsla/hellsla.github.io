@@ -753,7 +753,7 @@
           "id": "c",
           "kind": "calc",
           "points": 4,
-          "text": "Lauhduttimen läpi virtaa merivettä. Veden määrä on aineiston rivillä *Merivesivirtaus*. Johda lämpömäärän yhtälöstä $Q = cm\\Delta T$ lauseke meriveden lämpötilan muutokselle. Tunnet veteen siirtyvän lämpötehon ja sekunnissa virtaavan veden tilavuuden. Kuinka paljon merivesi lämpenee lauhduttimessa? Arvioi lopuksi, onko todellinen lämpeneminen laskettua suurempi vai pienempi.",
+          "text": "Lauhduttimen läpi virtaa merivettä. Veden määrä on aineiston rivillä *Merivesivirtaus*. Johda symbolein lauseke meriveden lämpötilan muutokselle. Tunnet lämmön, joka siirtyy veteen aikayksikössä, eli lämpötehon. Tunnet myös sekunnissa virtaavan veden tilavuuden. Kuinka paljon merivesi lämpenee lauhduttimessa? Arvioi lopuksi, onko todellinen lämpeneminen laskettua suurempi vai pienempi.",
           "answer": {
             "value": 11.31,
             "unit": "K",

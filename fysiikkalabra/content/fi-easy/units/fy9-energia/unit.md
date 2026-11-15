@@ -288,7 +288,7 @@ Eristetty systeemi on systeemi, johon energiaa ei tule ja josta energiaa ei läh
 E_\text{alussa} = E_\text{lopussa}
 ```
 
-Yhtälön kummallakin puolella on kaikkien energialajien summa. Myös sisäenergia on mukana. Teho kertoo, kuinka paljon energiaa muuttuu tai siirtyy aikayksikössä:
+Yhtälön kummallakin puolella on kaikkien energialajien summa. Myös sisäenergia on mukana. Sisäenergia on aineen hiukkasten liike-energian ja niiden välisten vuorovaikutusten energian summa. Teho kertoo, kuinka paljon energiaa muuttuu tai siirtyy aikayksikössä:
 
 ```kaavat
 teho :: P = \frac{\Delta E}{\Delta t}

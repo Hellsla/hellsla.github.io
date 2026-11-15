@@ -847,7 +847,7 @@
           "id": "a",
           "kind": "calc",
           "points": 3,
-          "text": "Lue aineistosta LHC:n kehän pituus. Lue myös, kuinka monta kierrosta protonit kiertävät sekunnissa. Laske näistä protonien vauhti ja vertaa sitä valon nopeuteen. Mitä vertailusta voi päätellä ja mitä ei?",
+          "text": "Lue aineistosta LHC:n kehän pituus. Lue myös, kuinka monta kierrosta protonit kiertävät sekunnissa. Laske näistä protonien vauhti ja vertaa sitä valon nopeuteen. Mitä vertailusta voi päätellä ja mitä ei? Ota huomioon, millä tarkkuudella aineiston luvut on annettu.",
           "answer": {
             "value": 2.9978,
             "unit": "· 10⁸ m/s",
@@ -955,7 +955,7 @@
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "$\\dfrac{E}{E_\\text{k}} = \\dfrac{4{,}357 \\cdot 10^8\\,\\text{J}}{5{,}787 \\cdot 10^5\\,\\text{J}} \\approx 753$: yhden suihkun energia vastaa noin $750$ auton liike-energiaa. Suihkun protonien yhteinen massa on silti alle nanogramman."
+              "detail": "$\\dfrac{E}{E_\\text{k}} = \\dfrac{4{,}357 \\cdot 10^8\\,\\text{J}}{5{,}787 \\cdot 10^5\\,\\text{J}} \\approx 753$: yhden suihkun energia vastaa noin $750$ auton liike-energiaa."
             }
           ]
         },

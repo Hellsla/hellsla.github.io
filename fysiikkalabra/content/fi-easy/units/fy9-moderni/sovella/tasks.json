@@ -824,7 +824,7 @@
         "fy3-6",
         "fy2-4"
       ],
-      "text": "Joulukuussa 2022 uutisissa kerrottiin fuusiotutkimuksen läpimurrosta. Avaa [Yle Uutisten artikkeli fuusiokokeesta](https://yle.fi/a/3-12684377) (12.12.2022, päivitetty 13.12.2022). Lue artikkeli kokonaan. Lue myös korjausmerkintä, joka on artikkelin lopussa.\n\nAineiston mukaan (tarkistettu 16.11.2026) kokeessa oli kaksi energiaa: $3{,}15\\,\\text{MJ}$ ja $2{,}05\\,\\text{MJ}$. Artikkeli vertaa suurempaa energiaa siihen, että kiehautetaan muutama kattilallinen vettä.\n\n- veden ominaislämpökapasiteetti $4{,}19\\,\\tfrac{\\text{kJ}}{\\text{kg}\\cdot\\text{K}}$\n- Laboratorion mukaan laserlaitteisto otti laukausta varten sähköverkosta noin $300\\,\\text{MJ}$. Tätä tietoa ei ole artikkelissa.\n- lämpövoimala muuttaa sähköksi noin kolmasosan energiasta, jonka se saa lämpönä",
+      "text": "Joulukuussa 2022 uutisissa kerrottiin fuusiotutkimuksen läpimurrosta. Avaa [Yle Uutisten artikkeli fuusiokokeesta](https://yle.fi/a/3-12684377) (12.12.2022, päivitetty 13.12.2022). Lue artikkeli kokonaan. Lue myös korjausmerkintä, joka on artikkelin lopussa.\n\nAineiston mukaan (tarkistettu 16.11.2026) kokeessa oli kaksi energiaa: $3{,}15\\,\\text{MJ}$ ja $2{,}05\\,\\text{MJ}$. Artikkeli vertaa suurempaa energiaa siihen, että kiehautetaan muutama kattilallinen vettä.\n\nLisätietoja:\n\n- Veden ominaislämpökapasiteetti on $4{,}19\\,\\tfrac{\\text{kJ}}{\\text{kg}\\cdot\\text{K}}$.\n- Laboratorion mukaan laserlaitteisto otti laukausta varten sähköverkosta noin $300\\,\\text{MJ}$. Tätä tietoa ei ole artikkelissa.\n- Lämpövoimala muuttaa sähköksi noin kolmasosan energiasta, jonka se saa lämpönä.",
       "parts": [
         {
           "id": "a",
@@ -918,7 +918,7 @@
           "id": "d",
           "kind": "word",
           "points": 3,
-          "text": "Selitä, miksi tulos ei osoita, että koko koelaitteisto olisi tuottanut enemmän energiaa kuin se kulutti. Käytä perusteluna aineistoa ja sähköenergiaa, jonka laboratorio ilmoitti.",
+          "text": "Selitä, miksi tulos ei osoita, että koko koelaitteisto olisi tuottanut enemmän energiaa kuin se kulutti. Käytä perusteluna aineistoa ja sähköenergiaa, jonka laboratorio ilmoitti. Arvioi myös, kuinka paljon sähköenergiaa vapautuneesta energiasta saataisiin lämpövoimalan hyötysuhteella.",
           "criteria": [
             {
               "text": "Rajaa systeemin: vertailu $3{,}15\\,\\text{MJ} > 2{,}05\\,\\text{MJ}$ koskee vain polttoainetta. Aineiston mukaan luvussa ei ole mukana energiaa, joka kului laserien toimintaan.",
@@ -944,7 +944,7 @@
           "text": "Toinen verkkojulkaisu voisi otsikoida saman kokeen näin: ”Fuusiovoimala tuottaa jo enemmän energiaa kuin kuluttaa.” Otsikko on keksitty tätä tehtävää varten. Mitä otsikossa pitäisi täsmentää? Käytä esimerkkinä artikkelin omaa korjausmerkintää. Selitä myös, miksi kokeen tulos ei riko energian säilymistä.",
           "criteria": [
             {
-              "text": "Täsmentää, että kyseessä on yksittäinen laboratoriokoe eikä voimala. Sähköä ei tuotettu. Aineiston mukaan sähköverkkoon kytketty fuusiovoimala on vielä vuosikymmenten päässä.",
+              "text": "Täsmentää, että kyseessä on yksittäinen laboratoriokoe eikä voimala. Perusteluksi käy esimerkiksi tämä: sähköä ei tuotettu. Perusteluksi käy myös tämä: aineiston mukaan sähköverkkoon kytketty fuusiovoimala on vielä vuosikymmenten päässä.",
               "tag": "communication",
               "points": 1
             },

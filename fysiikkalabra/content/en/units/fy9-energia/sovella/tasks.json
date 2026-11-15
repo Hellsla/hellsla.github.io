@@ -790,12 +790,12 @@
           "text": "Explain with thermal physics, electricity and mechanics why the energy consumption of an electric car per kilometre grows in frost.",
           "criteria": [
             {
-              "text": "Thermal physics: heat is transferred from the cabin and the battery to the surroundings the faster the larger the temperature difference is, so keeping the temperature takes heating power. In an electric car it is taken from the traction battery, whereas a combustion-engine car uses the internal energy of the engine, which would otherwise be transferred as heat to the surroundings.",
+              "text": "Thermal physics: heat is transferred from the cabin and the battery to the surroundings the faster the larger the temperature difference is, so keeping the temperature takes heating power. In an electric car it is taken from the traction battery.",
               "tag": "concept",
               "points": 1
             },
             {
-              "text": "Electricity: the heater takes the power $P = UI$ from the battery for the whole drive, and the larger internal resistance of a cold battery increases the power $P = R_\\text{s}I^2$, which becomes internal energy of the battery, and lowers the terminal voltage.",
+              "text": "Electricity: gives at least one of these: the heater takes the power $P = UI$ from the battery for the whole drive, or the larger internal resistance of a cold battery increases the power $P = R_\\text{s}I^2$, which becomes internal energy of the battery, and lowers the terminal voltage.",
               "tag": "concept",
               "points": 1
             },
@@ -815,7 +815,7 @@
           "id": "d",
           "kind": "word",
           "points": 2,
-          "text": "The car that drove the furthest in the test lost the largest share of its stated range. Explain with the help of the source why this does not show that it withstands frost worse than the other cars.",
+          "text": "The range of the car that drove the furthest in the test fell short of its stated range by the largest percentage. Explain with the help of the source why this does not show that it withstands frost worse than the other cars.",
           "criteria": [
             {
               "text": "Uses the source: the temperature fell along the route from $-7\\,{}^\\circ\\text{C}$ to $-32\\,{}^\\circ\\text{C}$, so the car that drove the furthest drove a large part of its distance on the coldest section and was in the frost the longest, whereas a car with a short range stopped already at the $-16\\,{}^\\circ\\text{C}$ point.",
@@ -833,7 +833,7 @@
           "id": "e",
           "kind": "word",
           "points": 2,
-          "text": "Assess why the range of a particular electric car in all winter conditions cannot be predicted from this one winter test. Tell also how the test should be changed to make the result more reliable.",
+          "text": "Assess why the range of a particular electric car in all winter conditions cannot be predicted from this one winter test. Name at least three factors that change the consumption. Tell also how the test should be changed to make the result more reliable.",
           "criteria": [
             {
               "key": "error_sources",

@@ -108,7 +108,7 @@ $$. Se on pienempi kuin ilman tiheys, noin $1{,}2\,\text{kg/m}^3$. Näin moolima
 &485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \\
 &\approx 77\,\text{kW}
 \end{aligned}
-$$ eli $16\,\%$. Se on sama kuin $25\,\%$ lämpötehosta. Tulos on samaa suuruusluokkaa kuin yhteistuotantolaitosten $85$–$90\,\%$. Yhteistuotantolaitos tuottaa sekä sähköä että lämpöä.
+$$ eli $16\,\%$. Se on sama kuin $25\,\%$ lämpötehosta. Tulos on samaa suuruusluokkaa kuin yhteistuotantolaitosten $85$–$90\,\%$. Yhteistuotantolaitos tuottaa sekä sähköä että lämpöä. Erotus on laskettu yllä pyöristetyistä tehoista. Pyöristämättömillä arvoilla se on $77{,}6\,\text{kW}$.
 
 ### Yleisiä virheitä
 - a-kohdassa lämpötila sijoitetaan celsiusasteina. Silloin ainemääräksi tulee yli kymmenen kertaa liian suuri luku, $26\,000\,\text{mol}$.
@@ -391,7 +391,7 @@ Vaa'an tarkkuus $0{,}01\,\text{g}$ on alle $1\,\%$ massan kasvusta $3{,}28\,\tex
 Jos pisteet ovat suoralla, mutta suora ei kulje origon kautta, mittauksessa on systemaattinen virhe. Esimerkiksi ilmaa voi karata joka kerta, kun pumppu irrotetaan.
 
 ### Yleisiä virheitä
-- a-kohdassa ainemäärä lasketaan kokonaispaineella $311\,\text{kPa}$ eikä paineen kasvulla. Silloin tulos on noin kaksi kolmasosaa oikeasta.
+- a-kohdassa ainemäärä lasketaan kokonaispaineella $311\,\text{kPa}$ eikä paineen kasvulla. Silloin moolimassaksi tulee noin kaksi kolmasosaa oikeasta.
 - b-kohdassa todetaan vain, että ”mittausvirheitä oli”. Virhelähdettä tai sen vaikutuksen suuntaa ei nimetä.
 - b-kohdassa sanotaan, että pullon pullistuminen on syy liian pieneen tulokseen. Pullistuminen vaikuttaa kuitenkin päinvastaiseen suuntaan.
 - c-kohdassa ehdotetaan vain ”tarkempia mittareita”. Vastaus ei kerro, mitä mitataan ja miten.
@@ -588,7 +588,7 @@ Lämpötilat kertovat, miksi $Q_2$ on suuri. Kelvineinä höyryn lämpötila on 
 **Periaate:** Lämpönä siirtyvä energia kasvattaa vastaanottavan aineen sisäenergiaa, ja silloin aineen lämpötila nousee (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Lämpö siirtyy itsestään vain kuumemmasta kylmempään. Lämpövoimakoneen työ pienenee, kun koneen kylmän puolen lämpötila nousee (luku *Kaasun tekemä työ ja lämpövoimakone*).
 **Mallivastaus:** Mereen siirtyy lämpöä teholla $2700\,\text{MW}$. Vuorokaudessa se on noin $65\,\text{GWh}$. Energia ei katoa, vaan se kasvattaa meriveden sisäenergiaa. Jäähdytysvesi palaa mereen noin $11\,\text{K}$ lämpimämpänä ja sekoittuu ympäröivään veteen. Siksi meri lämpenee selvästi vain purkupaikan lähellä. Siellä meri voi pysyä talvella sulana, jää on heikkoa ja kasvukausi pitenee. Lämpimämpi vesi muuttaa eliöiden elinoloja. Osa lajeista hyötyy ja osa kärsii, ja levien kasvu voi lisääntyä. Koko merialueen lämpötilaan vaikutus on pieni. Lämpö leviää suureen vesimäärään ja siirtyy siitä edelleen ilmaan.
 
-Lämpöä on paljon, mutta se on matalassa lämpötilassa. Jäähdytysvesi on vain noin $11\,\text{K}$ merta lämpimämpää, eli sen lämpötila on noin $20\,{}^\circ\text{C}$. Lämpö siirtyy itsestään vain kylmempään. Siksi tällä vedellä ei voi lämmittää kaukolämpöverkon vettä. Kaukolämpöverkon veden on oltava selvästi kuumempaa, jotta se lämmittää rakennuksia ja käyttövettä. Jos lämpö otettaisiin talteen kuumempana, höyry pitäisi ottaa turbiinista aikaisemmin. Silloin lämpövoimakoneen kylmän puolen lämpötila nousisi ja lämpötilaero pienenisi. Laitos tuottaisi vähemmän sähköä. Lisäksi suuret lämmön käyttäjät ovat kaukana laitoksesta. Pitkä siirtoputki on kallis, ja matkalla osa lämmöstä siirtyy ympäristöön. Siksi suurin osa lämmöstä johdetaan mereen, vaikka energiaa on paljon.
+Lämpöä on paljon, mutta se on matalassa lämpötilassa. Jäähdytysvesi on vain noin $11\,\text{K}$ merta lämpimämpää, eli sen lämpötila on noin $21\,{}^\circ\text{C}$. Lämpö siirtyy itsestään vain kylmempään. Siksi tällä vedellä ei voi lämmittää kaukolämpöverkon vettä. Kaukolämpöverkon veden on oltava selvästi kuumempaa, jotta se lämmittää rakennuksia ja käyttövettä. Jos lämpö otettaisiin talteen kuumempana, höyry pitäisi ottaa turbiinista aikaisemmin. Silloin lämpövoimakoneen kylmän puolen lämpötila nousisi ja lämpötilaero pienenisi. Laitos tuottaisi vähemmän sähköä. Lisäksi suuret lämmön käyttäjät ovat kaukana laitoksesta. Pitkä siirtoputki on kallis, ja matkalla osa lämmöstä siirtyy ympäristöön. Siksi suurin osa lämmöstä johdetaan mereen, vaikka energiaa on paljon.
 
 ### Yleisiä virheitä
 - a-kohdassa hyötysuhde lasketaan väärin päin, $4300 : 1600$. Toinen virhe on jakaa sähköteho mereen siirtyvällä lämpöteholla $2700\,\text{MW}$.

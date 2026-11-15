@@ -423,11 +423,11 @@ m &= \dfrac{3{,}15 \cdot 10^{6}\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot
 &= 9{,}397\,\text{kg}
 \end{aligned}
 $$
-**Vastaus:** Energia lämmittää kiehumispisteeseen noin $9{,}4\,\text{kg}$ eli noin $9{,}4$ litraa vettä. Vastaus annetaan kahdella merkitsevällä numerolla, koska veden alkulämpötila on arvio. Artikkelin vertailu pitää paikkansa: määrä on muutama kattilallinen, esimerkiksi kolme kolmen litran kattilallista.
+**Vastaus:** Energia lämmittää kiehumispisteeseen noin $9{,}4\,\text{kg}$ eli noin $9{,}4$ litraa vettä. Vastaus annetaan kahdella merkitsevällä numerolla, koska lämpötilaero $80\,\text{K}$ tunnetaan kahden merkitsevän numeron tarkkuudella. Artikkelin vertailu pitää paikkansa: määrä on muutama kattilallinen, esimerkiksi kolme kolmen litran kattilallista.
 **Järkevyys:** Yhden litran lämmittämiseen tarvitaan $335\,200\,\text{J} \approx 0{,}34\,\text{MJ}$, joten $3{,}15\,\text{MJ}$ riittää noin yhdeksään litraan. Kokeen energia on arjen mittakaavassa pieni, vaikka tulos oli tieteellisesti merkittävä.
 
 ### d)
-**Kysytty:** miksi tulos ei osoita, että koko koelaitteisto tuotti enemmän energiaa kuin kulutti
+**Kysytty:** miksi tulos ei osoita, että koko koelaitteisto tuotti enemmän energiaa kuin kulutti, ja kuinka paljon sähköenergiaa vapautuneesta energiasta saataisiin lämpövoimalan hyötysuhteella
 **Periaate:** Energiatase riippuu siitä, miten systeemi rajataan (luku *Termodynaaminen systeemi, tilanmuuttujat ja lämpötila*). Laitteen hyötysuhde on hyödyksi saadun energian ja laitteen ottaman energian suhde (luku *Hyötysuhde*). Lämpövoimala muuttaa sähköksi vain osan lämpönä saamastaan energiasta (luku *Energiantuotanto ja voimalaitosten hyötysuhde*).
 **Mallivastaus:** Vertailu $3{,}15\,\text{MJ} > 2{,}05\,\text{MJ}$ koskee vain polttoainetta: siitä vapautui enemmän energiaa kuin laserit siihen toivat. Aineiston mukaan luvussa $2{,}05\,\text{MJ}$ ei ole mukana laserien toimintaan kulunutta energiaa. Kun systeemiksi rajataan koko koelaitteisto, sen ottama energia on verkosta otettu sähköenergia $E_\text{v} \approx 300\,\text{MJ}$. Silloin $$
 \begin{aligned}
