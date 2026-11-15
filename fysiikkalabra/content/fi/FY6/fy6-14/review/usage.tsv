@@ -1,7 +1,7 @@
 date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache_read	cache_write	context	turns	seconds	calls	verdict	cost_usd	source	ref
 2026-11-13T23:44Z	fy6-14	FY6	orchestrator	orchestrate	claude-sonnet-5-5		session/15	2	1483358	22	3158	1468218	11960	16522	126	7436	105		0.3731	transcript	0ff7b25727c0
-2026-11-15T20:03Z	fy6-14	FY6	science-reviewer	review	claude-opus-5-5	medium	full	1	3120899	50	25317	2897715	197817	205160	24	306	26		2.0752	transcript	35a109b862a7
-2026-11-15T20:03Z	fy6-14	FY6	science-reviewer	review	claude-opus-5-5	medium	full	1	1425421	30	20274	1253540	151577	158664	14	224	14		1.4142	transcript	60d7f49ee109
-2026-11-15T20:03Z	fy6-14	FY6	science-reviewer	review	claude-opus-5-5	medium	full	2	758493	18	17759	603405	137311	144266	8	182	9		1.1625	transcript	ffe7093d757b
-2026-11-15T20:03Z	fy6-14	FY6	science-reviewer	review	claude-opus-5-5	medium	full	1	2034015	36	22959	1821785	189235	196309	18	264	21		1.7699	transcript	f41c1482afd2
-2026-11-15T20:03Z	fy6-14	FY6	orchestrator	orchestrate	claude-opus-5-5		since/10	1	6474776	44	12466	6421924	40342	47200	207	2689	216		1.8566	transcript	3176ebf988ef
+2026-11-15T20:07Z	fy6-14	FY6	science-reviewer	review	claude-opus-5-5	medium	full	1	3120899	50	25317	2897715	197817	205160	24	306	26		2.0752	transcript	35a109b862a7
+2026-11-15T20:07Z	fy6-14	FY6	science-reviewer	review	claude-opus-5-5	medium	full	1	1425421	30	20274	1253540	151577	158664	14	224	14		1.4142	transcript	60d7f49ee109
+2026-11-15T20:07Z	fy6-14	FY6	science-reviewer	review	claude-opus-5-5	medium	full	2	758493	18	17759	603405	137311	144266	8	182	9		1.1625	transcript	ffe7093d757b
+2026-11-15T20:07Z	fy6-14	FY6	science-reviewer	review	claude-opus-5-5	medium	full	1	2034015	36	22959	1821785	189235	196309	18	264	21		1.7699	transcript	f41c1482afd2
+2026-11-15T20:07Z	fy6-14	FY6	orchestrator	orchestrate	claude-opus-5-5		since/10	1	6905588	46	12874	6851284	41384	48317	216	2919	223		1.9590	transcript	3176ebf988ef
