@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9f19bcb0fe992f4e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 97bcda50fbbdcbbb
 
 ## Blocking
 - none
@@ -9,4 +8,8 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Delta round 4, long formulas re-set as aligned blocks. Opened fy8-1 example-390-1 and theory-1280-2 at readable size: the changed 1 eV block sets as aligned rows, = under =, nothing clipped.
+- Words, numbers and units unchanged by the diff.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 7cf00fb14ee5fdf8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 783f9224f8aa238e
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Opened fy8-3 open-tarkista-1280-1 (layout around feedback blocks); the changed E_4 - E_2 feedback rows judged from source, the + term starting its own row.
+- Delta judged: formula lifted into an aligned block, first row the left-hand side alone; words, numbers and units unchanged.

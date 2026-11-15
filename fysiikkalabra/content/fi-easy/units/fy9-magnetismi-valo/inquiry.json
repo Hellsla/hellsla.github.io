@@ -213,7 +213,7 @@
         },
         {
           "text": "Siirtojännite ei ole johdon yli. Ensin lasketaan virta $I = \\tfrac{P}{U}$.",
-          "feedback": "Oikein. $I = \\tfrac{50 \\cdot 10^6\\,\\text{W}}{110 \\cdot 10^3\\,\\text{V}} \\approx 455\\,\\text{A}$ ja $P_\\text{h} = RI^2 = 4{,}0\\,\\Omega \\cdot (455\\,\\text{A})^2 \\approx 830\\,\\text{kW}$. Se on noin $1{,}7\\,\\%$ siirretystä tehosta.",
+          "feedback": "Oikein. $I = \\tfrac{50 \\cdot 10^6\\,\\text{W}}{110 \\cdot 10^3\\,\\text{V}} \\approx 455\\,\\text{A}$ ja $$\n\\begin{aligned}\nP_\\text{h} &= RI^2 \\\\\n&= 4{,}0\\,\\Omega \\cdot (455\\,\\text{A})^2 \\\\\n&\\approx 830\\,\\text{kW}\n\\end{aligned}\n$$. Se on noin $1{,}7\\,\\%$ siirretystä tehosta.",
           "correct": true
         },
         {

@@ -146,7 +146,7 @@
 **Kaava:** $R = \dfrac{U - U_\text{D}}{I}$
 **Muunnokset:** $I = 15\,\text{mA} = 0{,}015\,\text{A}$
 **Sijoitus:** Punaiselle LEDille $R = \dfrac{5{,}0\,\text{V} - 1{,}90\,\text{V}}{0{,}015\,\text{A}} = \dfrac{3{,}1\,\text{V}}{0{,}015\,\text{A}} = 207\,\Omega$
-**Vastaus:** $210\,\Omega$ (punaisen LEDin etuvastus), kaksi merkitsevää numeroa kuten virrassa.
+**Vastaus:** $2{,}1 \cdot 10^{2}\,\Omega$ (punaisen LEDin etuvastus), kaksi merkitsevää numeroa kuten virrassa.
 **Järkevyys:** Tarkistus: $207\,\Omega \cdot 0{,}015\,\text{A} = 3{,}1\,\text{V}$, ja $3{,}1\,\text{V} + 1{,}90\,\text{V} = 5{,}0\,\text{V}$. Muille LEDeille tulee pienemmät vastukset: keltaiselle $2{,}9\,\text{V} : 0{,}015\,\text{A} = 193\,\Omega$ ja siniselle $1{,}9\,\text{V} : 0{,}015\,\text{A} = 127\,\Omega$, joten punainen on suurin.
 
 ## fy6-14-L2-06
@@ -155,8 +155,8 @@
 **Periaate:** Aurinkokennon teho on napojen välinen jännite kertaa virta. Teho lasketaan jokaisella kuormalla, ja suurin arvo valitaan. Kuormitusvastus ei vaikuta laskuun, koska sen vaikutus on jo mukana mitatussa jännitteessä ja virrassa.
 **Kaava:** $P = UI$
 **Muunnokset:** Ei tarvita: $\text{V} \cdot \text{mA} = \text{mW}$.
-**Sijoitus:** Tehot ovat $10\,\Omega$: $0{,}99\,\text{V} \cdot 99\,\text{mA} = 98\,\text{mW}$, $15\,\Omega$: $146\,\text{mW}$, $20\,\Omega$: $178\,\text{mW}$, $22\,\Omega$: $1{,}99\,\text{V} \cdot 91\,\text{mA} = 181\,\text{mW}$, $27\,\Omega$: $165\,\text{mW}$, $33\,\Omega$: $145\,\text{mW}$, $47\,\Omega$: $109\,\text{mW}$ ja $100\,\Omega$: $54\,\text{mW}$. Suurin on $22\,\Omega$:n kohdalla.
-**Vastaus:** $181\,\text{mW}$, kolme merkitsevää numeroa kuten jännitteessä ja virrassa.
+**Sijoitus:** Tehot ovat $10\,\Omega$: $0{,}99\,\text{V} \cdot 99\,\text{mA} = 98\,\text{mW}$, $15\,\Omega$: $1{,}48\,\text{V} \cdot 99\,\text{mA} = 147\,\text{mW}$, $20\,\Omega$: $178\,\text{mW}$, $22\,\Omega$: $1{,}99\,\text{V} \cdot 91\,\text{mA} = 181\,\text{mW}$, $27\,\Omega$: $165\,\text{mW}$, $33\,\Omega$: $145\,\text{mW}$, $47\,\Omega$: $109\,\text{mW}$ ja $100\,\Omega$: $54\,\text{mW}$. Suurin on $22\,\Omega$:n kohdalla.
+**Vastaus:** $1{,}8 \cdot 10^{2}\,\text{mW}$ eli $0{,}18\,\text{W}$ (laskettu $181\,\text{mW}$), kaksi merkitsevää numeroa kuten virrassa $91\,\text{mA}$.
 **Järkevyys:** Teho on pieni kuormilla $10\,\Omega$ (jännite pieni) ja $100\,\Omega$ (virta pieni), ja suurin teho on niiden välissä käyrän polvessa. Tarkistus: $U : I = 1{,}99\,\text{V} : 0{,}091\,\text{A} = 21{,}9\,\Omega \approx 22\,\Omega$, joten mittaus täsmää kuormitusvastuksen kanssa.
 
 ## fy6-14-L2-07
@@ -166,7 +166,7 @@
 **Kaava:** $R = \dfrac{U - U_\text{D}}{I}$
 **Muunnokset:** $I = 15\,\text{mA} = 0{,}015\,\text{A}$
 **Sijoitus:** $R = \dfrac{9{,}0\,\text{V} - 3{,}2\,\text{V}}{0{,}015\,\text{A}} = \dfrac{5{,}8\,\text{V}}{0{,}015\,\text{A}} = 387\,\Omega$
-**Vastaus:** $390\,\Omega$, kaksi merkitsevää numeroa kuten jännitteissä ja virrassa.
+**Vastaus:** $3{,}9 \cdot 10^{2}\,\Omega$, kaksi merkitsevää numeroa kuten jännitteissä ja virrassa.
 **Järkevyys:** Tarkistus: $387\,\Omega \cdot 0{,}015\,\text{A} = 5{,}8\,\text{V}$, ja $5{,}8\,\text{V} + 3{,}2\,\text{V} = 9{,}0\,\text{V}$. Opiskelijan $600\,\Omega$ antaisi virraksi vain $5{,}8\,\text{V} : 600\,\Omega = 9{,}7\,\text{mA}$, joten LED olisi himmeämpi kuin haluttiin.
 
 ## fy6-14-L2-08
@@ -189,7 +189,7 @@ Perustelu on siis, että diodi johtaa vain anodi plusnavan puolella ja jokainen 
 **Kaava:** $E = \eta A \sum H$ ja omavaraisuusaste $= \dfrac{E}{\sum E_\text{kul}}$
 **Muunnokset:** $\eta = 19\,\% = 0{,}19$. Ei muita: energiat ovat kilowattitunteina.
 **Sijoitus:** a) Säteilyenergioiden summa on $\sum H = 1027\,\text{kWh/m}^2$, joten $E = 0{,}19 \cdot 24\,\text{m}^2 \cdot 1027\,\tfrac{\text{kWh}}{\text{m}^2} = 4683\,\text{kWh}$. b) Kulutusten summa on $\sum E_\text{kul} = 5340\,\text{kWh}$, joten omavaraisuusaste on $\dfrac{4683\,\text{kWh}}{5340\,\text{kWh}} = 0{,}877 = 87{,}7\,\%$. c) Kuukausituotanto on $E_\text{kk} = 0{,}19 \cdot 24\,\text{m}^2 \cdot H = 4{,}56\,\text{m}^2 \cdot H$. Se on pienempi kuin kulutus tammi-, helmi- ja maaliskuussa sekä loka-, marras- ja joulukuussa: esimerkiksi tammikuussa $4{,}56\,\text{m}^2 \cdot 12\,\tfrac{\text{kWh}}{\text{m}^2} = 55\,\text{kWh}$, kun kulutus on $620\,\text{kWh}$, ja joulukuussa $36\,\text{kWh}$, kun kulutus on $650\,\text{kWh}$. Näiden kuuden kuukauden kulutus on yhteensä $3370\,\text{kWh}$ ja tuotanto yhteensä $853\,\text{kWh}$, joten vajaus on $2517\,\text{kWh}$.
-**Vastaus:** $88\,\%$, kaksi merkitsevää numeroa kuten hyötysuhteessa $19\,\%$. Vuosituotanto on noin $4700\,\text{kWh}$.
+**Vastaus:** $88\,\%$, kaksi merkitsevää numeroa kuten hyötysuhteessa $19\,\%$. Vuosituotanto on noin $4{,}7 \cdot 10^{3}\,\text{kWh}$.
 **Järkevyys:** Tuotanto on noin $4{,}7\,\text{MWh}$, mikä sopii $24\,\text{m}^2$:n paneelistolle Suomessa, ja se on vähän alle talon kulutuksen $5340\,\text{kWh}$, joten omavaraisuusaste on alle $100\,\%$. Omavaraisuusaste on vuosisumma. Kesän ylijäämää ei voi käyttää talvella ilman varastointia, ja talven vajaus $2517\,\text{kWh}$ on $2517 : 5340 = 47\,\%$ vuosikulutuksesta. Verkosta ostetaan siis vähintään tämä osuus, vaikka omavaraisuusaste on $88\,\%$.
 
 ## fy6-14-L3-05

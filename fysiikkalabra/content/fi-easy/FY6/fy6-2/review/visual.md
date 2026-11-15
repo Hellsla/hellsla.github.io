@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 2d27b5a5e0730863
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 8a1254cb5510ecf5
 
 ## Blocking
-- none
 
 ## Polish
 - none
 
 ## Checked
-- Word-level diff since origin/main of the fi-easy fy6-2 lesson files and neighbouring text; decimal convention (comma, Finnish), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.
+- batch delta review: wording-only diff (virhe-arvio -> virhearvio in the theory text and solution); no figure or formula changed; layout of the figure row not affected.

@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: b5bb5b56528e46c5
+CONTENT-HASH: e5734c9f1a8e175a
 
 ## Blocking
+None.
 
 ## Polish
-- tasks.json fy6-k4 d: "Näytä, että ionien sekunnissa saama liike-energia on yhtä suuri" leaves open what it equals. Better: "...on yhtä suuri kuin tämä teho." Then the 1,9 kJ in the rubric (energy in one second) and 1,9 kW (power) are visibly the same statement.
-- solutions.md k4-d Annettu: "1,76 · 10^-16 J" vs b) "1,8 · 10^-16 J"; keep one rounding.
+- k7 d: the third criterion still ends "Siksi sulake on aivan akuston navan vieressä ...", which the question does not ask. Cut it from the criterion and the Vastaus, or say in the task that the fuse protects the cable.
+- k7 d asks two things in one 4 p part (calculate, explain safety); the last criterion is long. Split it so a partial answer earns a clear point.
+- k5 d: add "kumpi tahansa hyväksytään, kun valinta perustellaan" to the conclusion criterion, as in k3 d.
+- k4 d: "Näytä, että ... on yhtä suuri" still lacks "kuin tämä teho".
+- k1 h: option C ("kenttä pysyy samana, loppunopeus kasvaa") is a weak distractor; "kenttä kaksinkertaistuu" would tempt more.
 
 ## Checked
-- Changed part (k4 d answer): power P = UI = 1,9 kW and the kinetic energy gained in one second N·eU = 1,9 kJ are now stated separately, then identified as one rate (1,9 kJ/s = 1,9 kW); the justification N = I/e gives N·eU = UI. A student can follow it and the rubric (equation, units/precision, communication) matches the three steps.
-- The task still demands independent application: unfamiliar ion thruster, four connected parts of rising demand (field and force, speed via work-energy, ion count and propellant use, power balance); no formula named in the prompts.
-- Common mistakes are real (unit conversion, missing 1/2, speed from acceleration without distance, wrong day length); the accepted alternative route for b is fair.
-- Other tasks in the exam unchanged since the last PASS; variety across k1-k7 stands.
+- Round-1 fixes: k7 a rubric now says 10,2 kWh, consistent with answer and solution. k7 d Vastaus now says that the short-circuit power (about 330 kW, 6400 A through 8 mΩ) goes mostly to the cells' internal resistance, while the wrench and contacts still heat. This is physically right and gives a student a learnable explanation. The rubric is consistent.
+- Structure: Osa 1 tests concepts with misconception distractors; Osa 2 and 3 give the student's own choices (graph, uncertainty, explanation, model) the core.
+- Osa 3: k6 (data, graph, uncertainty, model validity) and k7 (technical and safety judgement with numbers) differ in kind. Neither names the model. Each takes about 20 min.
+- Rubrics sum to the points, are specific, give nothing for irrelevant equations and accept alternatives. Yleisiä virheitä are real.
+- Finnish is natural, no bold in statements.

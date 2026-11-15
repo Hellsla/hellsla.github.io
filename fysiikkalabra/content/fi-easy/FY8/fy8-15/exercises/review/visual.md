@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 323023f502e30fb8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 20a822f7aa26530b
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] re-broken aligned rows (delta round 3) — in fy8-15 L2-01 the row "· c^2 = 37,841 MeV" begins with a break before · inside the product (the bracket term is too long for one row, so the rule allows it); readable, no change needed.
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+Delta, reflow only. Opened at 1280 px: fy8-13 open-exercises-1280-7 (task 13-7 Sijoitus), fy8-10 open-exercises-1280-1 (Δm chain: terms "6·1,007825 u" / "+ 6·1,008665 u" / "− 12,000000 u = …" whole, = and + aligned), fy8-15 open-exercises-L2-1280-2 and L3-1280-8; at 390 px: fy8-11 example-390-2 (m_loppu rows: each + term whole). No term is cut, no clipping, no overflow, operators aligned, spacing even. Other sets' changed blocks use the same re-break pattern (term per row) and were judged by this sample.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

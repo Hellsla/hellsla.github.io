@@ -16,9 +16,16 @@
 **Principle:** The string and its tension stay the same, so the speed of the wave in the string does not change. The fret is a new node, so the part vibrating at the fundamental frequency is half the new wavelength (chapter *Standing waves: nodes, antinodes and natural frequencies*). The distance of the fret from the nut is the difference between the full length and the vibrating part.
 **Formula:** $f' = \dfrac{v}{2L'}$, so $L' = \dfrac{v}{2f'}$, and the distance from the nut is $d = L - L' = L - \dfrac{v}{2f'}$
 **Conversions:** Finally $1\,\text{m} = 1000\,\text{mm}$.
-**Substitution:** $L' = \dfrac{142.56\,\text{m/s}}{2 \cdot 123.5\,\tfrac{1}{\text{s}}} = 0.5772\,\text{m} = 577.2\,\text{mm}$, and $648\,\text{mm} - 577.2\,\text{mm} = 70.8\,\text{mm}$
+**Substitution:** $L' = \dfrac{142.56\,\text{m/s}}{2 \cdot 123.5\,\tfrac{1}{\text{s}}} = 0.5772\,\text{m} = 577.2\,\text{mm}$, and $$
+\begin{aligned}
+&648\,\text{mm} - 577.2\,\text{mm} \\
+&= 70.8\,\text{mm}
+\end{aligned}
+$$
 **Answer:** The vibrating part must be $L' \approx 577\,\text{mm}$, three significant figures like the given data, and the fret is about $71\,\text{mm}$ from the nut. The distance is a difference, so it is known to the nearest millimetre.
-**Reasonableness:** The frequency grows by the factor $123.5 : 110.0 \approx 1.12$, so the length must become shorter by the same factor: $648\,\text{mm} : 1.123 \approx 577\,\text{mm}$. On a guitar the second fret is about $7\,\text{cm}$ from the nut, so the result fits.
+**Reasonableness:** The frequency grows by the factor $123.5 : 110.0 \approx 1.12$, so the length must become shorter by the same factor: $$
+648\,\text{mm} : 1.123 \approx 577\,\text{mm}
+$$. On a guitar the second fret is about $7\,\text{cm}$ from the nut, so the result fits.
 
 ### c)
 **Given:** $6$ beats in $4.0$ seconds, reference note $110.0\,\text{Hz}$; tightening makes the beats slower
@@ -42,7 +49,13 @@
 - In part c the beat frequency is taken as $6\,\text{Hz}$, or both alternatives are given without justification.
 
 ### Hyväksytään myös
-- In part b with a ratio: $L' = L \cdot \dfrac{f_1}{f'} = 648\,\text{mm} \cdot \dfrac{110.0}{123.5} \approx 577\,\text{mm}$, because the speed is the same.
+- In part b with a ratio: $$
+\begin{aligned}
+L' &= L \cdot \dfrac{f_1}{f'} \\
+&= 648\,\text{mm} \cdot \dfrac{110.0}{123.5} \\
+&\approx 577\,\text{mm}
+\end{aligned}
+$$, because the speed is the same.
 
 ## fy9-aallot-s2
 
@@ -74,7 +87,9 @@
 **Conversions:** The frequency stays in the unit $\text{kHz}$, because the ratio of the speeds has no unit.
 **Substitution:** $f_\text{s} = 30.0\,\text{kHz} \cdot \dfrac{340\,\text{m/s}}{334\,\text{m/s}} = 30.54\,\text{kHz}$ and $f = 30.54\,\text{kHz} \cdot \dfrac{346\,\text{m/s}}{340\,\text{m/s}} = 31.08\,\text{kHz}$
 **Answer:** $f \approx 31.1\,\text{kHz}$, that is about $1.1\,\text{kHz}$ higher than the pulse sent, three significant figures like the frequency $30.0\,\text{kHz}$.
-**Reasonableness:** At small speeds each stage raises the frequency by about the fraction $\tfrac{v_\text{b}}{v} = \tfrac{6.0}{340} \approx 1.8\,\%$, about $3.5\,\%$ in all, and $30.0\,\text{kHz} \cdot 1.035 \approx 31.1\,\text{kHz}$. The heard frequency is greater than $f_0$, as it should be when approaching.
+**Reasonableness:** At small speeds each stage raises the frequency by about the fraction $\tfrac{v_\text{b}}{v} = \tfrac{6.0}{340} \approx 1.8\,\%$, about $3.5\,\%$ in all, and $$
+30.0\,\text{kHz} \cdot 1.035 \approx 31.1\,\text{kHz}
+$$. The heard frequency is greater than $f_0$, as it should be when approaching.
 
 ### d)
 **Find:** why a mosquito could not be detected with a $3\,\text{kHz}$ sound
@@ -277,7 +292,13 @@
 ### a)
 **Find:** whether claim 1 is true and what the level is at the houses
 **Principle:** The power of a point source spreads over the surface of a sphere, so $I = \tfrac{P}{4\pi r^2}$, and the difference of the levels is $L_2 - L_1 = 10\,\text{dB} \cdot \lg \tfrac{I_2}{I_1}$ (chapter *Intensity and the decibel scale*).
-**Model answer:** The claim is false. When the distance doubles, the intensity drops to a quarter, and the level falls by $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$, not by half: $40\,\text{m}$ away the level is about $100\,\text{dB}$. The decibel scale is logarithmic, so a decibel reading cannot be divided like an intensity. At the houses the distance is $20$ times as large, so the intensity is $\tfrac{1}{400}$ and the level is $106\,\text{dB} - 10\,\text{dB} \cdot \lg 400 \approx 106\,\text{dB} - 26\,\text{dB} = 80\,\text{dB}$, the level of a busy street. The model is a rough estimate: the air and the terrain absorb sound, but a following wind and reflections from the surface of the lake can raise the level. The music will in any case be heard clearly at the houses.
+**Model answer:** The claim is false. When the distance doubles, the intensity drops to a quarter, and the level falls by $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$, not by half: $40\,\text{m}$ away the level is about $100\,\text{dB}$. The decibel scale is logarithmic, so a decibel reading cannot be divided like an intensity. At the houses the distance is $20$ times as large, so the intensity is $\tfrac{1}{400}$ and the level is $$
+\begin{aligned}
+&106\,\text{dB} - 10\,\text{dB} \cdot \lg 400 \\
+&\approx 106\,\text{dB} - 26\,\text{dB} \\
+&= 80\,\text{dB}
+\end{aligned}
+$$, the level of a busy street. The model is a rough estimate: the air and the terrain absorb sound, but a following wind and reflections from the surface of the lake can raise the level. The music will in any case be heard clearly at the houses.
 
 ### b)
 **Find:** whether claim 2 is true and why mostly low sounds are heard behind the fence
@@ -287,7 +308,14 @@
 ### c)
 **Find:** whether claim 3 is true, the permitted exposure time and the effect of hearing protectors
 **Principle:** In the rule of thumb for noise, the upper action value $85\,\text{dB}$ corresponds to $8\,\text{h}$, and each rise of $3\,\text{dB}$ halves the permitted time: $t_\text{allowed} = \tfrac{t_0}{2^{\,n}}$, $n = \tfrac{L - 85\,\text{dB}}{3\,\text{dB}}$ (chapter *Noise, acoustics and sound reproduction*). A hearing protector lowers the level that reaches the ear by its attenuation.
-**Model answer:** The claim is false. The level $100\,\text{dB}$ is $15\,\text{dB}$, that is five steps of $3\,\text{dB}$, above the action value, so the permitted time is $8\,\text{h} : 2^5 = 8\,\text{h} : 32 = 0.25\,\text{h} = 15\,\text{min}$. "Only $15\,\text{dB}$" means $10^{1.5} \approx 32$ times the intensity, so a dose harmful to hearing builds up in about $\tfrac{1}{32}$ of the time. A four-hour concert without protectors is therefore many times the dose. With well-fitted $20\,\text{dB}$ protectors the level at the ear is about $80\,\text{dB}$, below $85\,\text{dB}$, so four hours is within the rule of thumb when the protectors are worn the whole time. The rule of thumb is an estimate, not a guarantee: different people's hearing tolerates noise differently.
+**Model answer:** The claim is false. The level $100\,\text{dB}$ is $15\,\text{dB}$, that is five steps of $3\,\text{dB}$, above the action value, so the permitted time is $$
+\begin{aligned}
+&8\,\text{h} : 2^5 \\
+&= 8\,\text{h} : 32 \\
+&= 0.25\,\text{h} \\
+&= 15\,\text{min}
+\end{aligned}
+$$. "Only $15\,\text{dB}$" means $10^{1.5} \approx 32$ times the intensity, so a dose harmful to hearing builds up in about $\tfrac{1}{32}$ of the time. A four-hour concert without protectors is therefore many times the dose. With well-fitted $20\,\text{dB}$ protectors the level at the ear is about $80\,\text{dB}$, below $85\,\text{dB}$, so four hours is within the rule of thumb when the protectors are worn the whole time. The rule of thumb is an estimate, not a guarantee: different people's hearing tolerates noise differently.
 
 ### Yleisiä virheitä
 - In part a the level is calculated as inversely proportional to the distance, so that the drop is $3\,\text{dB}$ per doubling, or the decibels are divided like intensities.
@@ -309,7 +337,12 @@
 ### b)
 **Find:** whether the group's conclusion is justified
 **Principle:** In a gas the speed of sound grows as the temperature rises, in air by about $0.6\,\text{m/s}$ per degree Celsius (chapter *Sound as a wave: pitch, timbre and the Doppler effect*). A difference between two values cannot be shown if the difference is smaller than the uncertainty (chapter *Measuring and the reliability of a measurement*).
-**Model answer:** The conclusion is not justified. The book value $343\,\text{m/s}$ applies to air at $20\,{}^\circ\text{C}$, and at $5\,{}^\circ\text{C}$ sound should travel more slowly, about $343\,\text{m/s} - 0.6\,\tfrac{\text{m/s}}{{}^\circ\text{C}} \cdot 15\,{}^\circ\text{C} \approx 334\,\text{m/s}$. The group's result $(350 \pm 50)\,\text{m/s}$ covers both $334\,\text{m/s}$ and $343\,\text{m/s}$, so the measurement cannot tell them apart and shows no difference at all, least of all the one the group claims. The most important source of error is hand timing: the reaction time on starting and stopping is of the order of tenths of a second, as large as the variation of the results $0.14\,\text{s}$, and the delay is not necessarily the same at both ends. When the travel time of the echo is only about $0.5\,\text{s}$, even a systematic delay of $0.02\,\text{s}$ changes the result by $4\,\%$. The uncertainty of the distance $85.0\,\text{m}$ is insignificant. The correct conclusion is that the speed was about $350\,\text{m/s}$ with a large uncertainty, and that sound travels more slowly in cold air, not faster.
+**Model answer:** The conclusion is not justified. The book value $343\,\text{m/s}$ applies to air at $20\,{}^\circ\text{C}$, and at $5\,{}^\circ\text{C}$ sound should travel more slowly, about $$
+\begin{aligned}
+&343\,\text{m/s} - 0.6\,\tfrac{\text{m/s}}{{}^\circ\text{C}} \cdot 15\,{}^\circ\text{C} \\
+&\approx 334\,\text{m/s}
+\end{aligned}
+$$. The group's result $(350 \pm 50)\,\text{m/s}$ covers both $334\,\text{m/s}$ and $343\,\text{m/s}$, so the measurement cannot tell them apart and shows no difference at all, least of all the one the group claims. The most important source of error is hand timing: the reaction time on starting and stopping is of the order of tenths of a second, as large as the variation of the results $0.14\,\text{s}$, and the delay is not necessarily the same at both ends. When the travel time of the echo is only about $0.5\,\text{s}$, even a systematic delay of $0.02\,\text{s}$ changes the result by $4\,\%$. The uncertainty of the distance $85.0\,\text{m}$ is insignificant. The correct conclusion is that the speed was about $350\,\text{m/s}$ with a large uncertainty, and that sound travels more slowly in cold air, not faster.
 
 ### c)
 **Find:** a plan for a measurement in which the effect of temperature on the speed of sound can be detected
@@ -340,9 +373,33 @@
 **Principle:** The weight and the force of the cord, which is harmonic like a spring force, act on the jumper. Both are conservative, so mechanical energy is conserved during the whole fall (chapters *Conservation of mechanical energy and the work–energy principle* and *Spring force and spring energy*). At the lowest point the speed is zero, so the change in the gravitational potential energy over the whole distance $L_0 + x$ has turned into the elastic potential energy of the cord. The zero level is chosen at the lowest point.
 **Formula:** $mg(L_0 + x) = \tfrac12 kx^2$, that is $\tfrac12 kx^2 - mgx - mgL_0 = 0$, whose positive solution is $x = \dfrac{mg + \sqrt{(mg)^2 + 2kmgL_0}}{k}$, and the depth below the bridge is $d = L_0 + x$
 **Conversions:** The quantities are in base units, so no conversions are needed.
-**Substitution:** $mg = 72.0\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} = 706.32\,\text{N}$, $(mg)^2 = (706.32\,\text{N})^2 \approx 498\,888\,\text{N}^2$ and $2kmgL_0 = 2 \cdot 120\,\tfrac{\text{N}}{\text{m}} \cdot 706.32\,\text{N} \cdot 18.0\,\text{m} \approx 3\,051\,302\,\text{N}^2$, so the square root is $\sqrt{3\,550\,190\,\text{N}^2} \approx 1884.2\,\text{N}$ and $x = \dfrac{706.32\,\text{N} + 1884.2\,\text{N}}{120\,\text{N/m}} = 21.59\,\text{m}$ and the depth $18.0\,\text{m} + 21.59\,\text{m} = 39.59\,\text{m}$
+**Substitution:** $mg = 72.0\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} = 706.32\,\text{N}$, $(mg)^2 = (706.32\,\text{N})^2 \approx 498\,888\,\text{N}^2$ and $$
+\begin{aligned}
+&2kmgL_0 \\
+&= 2 \cdot 120\,\tfrac{\text{N}}{\text{m}} \cdot 706.32\,\text{N} \\
+&\cdot 18.0\,\text{m} \\
+&\approx 3\,051\,302\,\text{N}^2
+\end{aligned}
+$$, so the square root is $\sqrt{3\,550\,190\,\text{N}^2} \approx 1884.2\,\text{N}$ and $$
+\begin{aligned}
+x &= \dfrac{706.32\,\text{N} + 1884.2\,\text{N}}{120\,\text{N/m}} \\
+&= 21.59\,\text{m}
+\end{aligned}
+$$ and the depth $18.0\,\text{m} + 21.59\,\text{m} = 39.59\,\text{m}$
 **Answer:** The jumper falls about $39.6\,\text{m}$ below the bridge, three significant figures like the given data.
-**Reasonableness:** The energy balance checks: $mg(L_0 + x) = 706.32\,\text{N} \cdot 39.59\,\text{m} \approx 27.96\,\text{kJ}$ and $\tfrac12 kx^2 = \tfrac12 \cdot 120\,\tfrac{\text{N}}{\text{m}} \cdot (21.59\,\text{m})^2 \approx 27.96\,\text{kJ}$. The cord stretches more than its unstretched length, which is usual for a bungee cord; the bridge must be clearly more than $40\,\text{m}$ high.
+**Reasonableness:** The energy balance checks: $$
+\begin{aligned}
+mg(L_0 + x) &= 706.32\,\text{N} \\
+&\cdot 39.59\,\text{m} \\
+&\approx 27.96\,\text{kJ}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+&\tfrac12 kx^2 \\
+&= \tfrac12 \cdot 120\,\tfrac{\text{N}}{\text{m}} \cdot (21.59\,\text{m})^2 \\
+&\approx 27.96\,\text{kJ}
+\end{aligned}
+$$. The cord stretches more than its unstretched length, which is usual for a bungee cord; the bridge must be clearly more than $40\,\text{m}$ high.
 
 ### c)
 **Given:** extension $x = 21.59\,\text{m}$, $k = 120\,\text{N/m}$, $m = 72.0\,\text{kg}$, $g = 9.81\,\text{m/s}^2$

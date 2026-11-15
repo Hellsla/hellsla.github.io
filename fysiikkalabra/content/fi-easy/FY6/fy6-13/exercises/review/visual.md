@@ -1,18 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 6a392abb385170f5
-SCOPE: delta added-exercise from f05516e505a8af1a base 8f23aa7ae3bd
+CONTENT-HASH: 9ff2b23aaedfa400
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy6-13-L1-10 Järkevyys — the inline $\tfrac{8{,}854 \cdot 10^{-12} \cdot 0{,}025}{1{,}0 \cdot 10^{-4}}$ is set very small; write it as a colon chain ($8{,}854 \cdot 10^{-12} \cdot 0{,}025 : 1{,}0 \cdot 10^{-4}\,\text{F}$) as the sibling tasks do.
-- [Minor] fy6-13-L2-08 text — "toisen kondensaattorin" does not say which is the first one; "erään kondensaattorin" or "kondensaattorin, jonka kapasitanssi ei ole tiedossa" reads clearly for an S2 student.
-- [Minor] fy6-13-L2-08 Järkevyys — "$QU \approx 735\,\mu\text{J}$" renders the number in a bolder weight than the symbol; check that no stray bold mark is in the source.
+- [Minor] L2-08 (13-18) text — the earlier "toisen kondensaattorin" is still unclear which is the first; "erään kondensaattorin" reads clearer for an S2 student.
+- [Minor] L1-10 Järkevyys — inline fraction set small; a colon chain like the sibling tasks would read better.
 
 ## Checked
-- fy6-13-open-exercises-1280-10.png and -11.png (L1-10, shown as 13-10: task text, hint, answer box, fraction in Kaava and Sijoitus with units, Vastaus, Järkevyys).
-- fy6-13-open-exercises-L2-1280-9.png (task 13-18 with figure ex-qu2: axes with units, $20\,\mu\text{C}$ and $1\,\text{V}$ gridlines, line ends at $(120\,\mu\text{C};\,8\,\text{V})$, nothing written on it), -10 and -11 (solution rows, Vastaus, Järkevyys). Description and figure agree; nothing clipped.
+- content/fi-easy/FY6/fy6-13/review/shots/fy6-13-open-exercises-1280-5.png: 13-5 (L1-05), Sijoitus and Vastaus 3,6 \cdot 10^2 \mu J, graph with units.
+- fy6-13-open-exercises-1280-8.png: L1-08, Vastaus "1,4 \cdot 10^2 mJ. Eli 0,14 J. Laskimen arvo on 144 mJ." in short sentences, suits S2.
+- fy6-13-open-exercises-L2-1280-1.png: 13-11 (L2-01), 3,2 \cdot 10^2 V consistent in chip, Sijoitus, Vastaus.
+- fy6-13-open-exercises-L2-1280-9.png: 13-17 (L2-07) Vastaus 63 mJ, limiting-datum sentences; also 13-18 task and figure (axes with units, gridlines).
+- fy6-13-open-exercises-L2-1280-10.png: 13-18 (L2-08) solution, Vastaus 3,7 \cdot 10^2 \mu J, Järkevyys.
+- fy6-13-open-exercises-L3-1280-1.png: 13-19 (L3-01) 15,0 \mu J.
+- Decimal commas, upright units, no clipping or red KaTeX.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

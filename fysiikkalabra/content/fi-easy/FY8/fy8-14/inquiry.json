@@ -346,7 +346,7 @@
       "tolerance": 0.02,
       "hints": [
         "Mikä yhtälö yhdistää fotonin energian ja taajuuden (luku *Valosähköinen ilmiö ja fotoni*)?",
-        "Muuta energia jouleiksi: $511\\,\\text{keV} = 511 \\cdot 10^{3} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "Muuta energia jouleiksi: $$\n\\begin{aligned}\n511\\,\\text{keV} &= 511 \\cdot 10^{3} \\\\\n&\\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}\n\\end{aligned}\n$$.",
         "Energia on $E = 8{,}186 \\cdot 10^{-14}\\,\\text{J}$, ja $f = \\tfrac{E}{h}$, missä $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$."
       ],
       "mistakes": [

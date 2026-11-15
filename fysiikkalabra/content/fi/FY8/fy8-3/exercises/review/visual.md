@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7b7785dbfa112764
-ROUND: 2
+CONTENT-HASH: 01b6f24892569a77
+SCOPE: delta reflow from 7b7785dbfa112764 base cf5f907
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] inline \tfrac in choice 1 feedback is small; '0,58-/kertaiseksi' breaks across lines.
+- none
 
 ## Checked
-Round 1 Blocking resolved. Own 390 and 1280 px renders of the new task with options, feedback and solution open (r3 captures, read as 2x tiles); every formula line now fits the card, no clipping, no page overflow (measured). fy8-3-L2-08: lambda_1 and lambda_2 check lines split into value and result rows, 1876 nm and 1094 nm visible; the new distractor (0,44-fold, ratio of start-level energies 0,38 : 0,85) is explained in the solution; 'Molemmat ovat ...' sentence now reads correctly.
+- Delta round 4, calculation chains re-broken into aligned rows. Changed blocks judged from the source diff and the identical shared aligned renderer seen in fy8-1 and fy8-6 captures; this set's own solution captures not opened.
+- Kaava lines keep the equals sign in the first row; sentence marks sit inside the last row.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -240,7 +240,7 @@
       "id": "fy8-14-L2-07",
       "level": 2,
       "core": true,
-      "text": "PET-ruiskun lyijysuoja mitoitetaan niin, että suojan läpi pääsee enintään $1{,}0\\,\\%$ ruiskun $511\\,\\text{keV}$:n fotoneista. Lyijyn puoliintumispaksuus on $140\\,\\text{keV}$:n fotoneille $0{,}26\\,\\text{mm}$ ja $511\\,\\text{keV}$:n fotoneille $3{,}9\\,\\text{mm}$.\n\nOppilaan ratkaisu: ”Läpi päästettävä osuus on $0{,}010$, joten $\\left(\\tfrac{1}{2}\\right)^{n} = 0{,}010$ ja $n = \\dfrac{\\ln 0{,}010}{\\ln 0{,}5} = 6{,}64$. Paksuus on $d = n \\cdot d_{1/2} = 6{,}64 \\cdot 0{,}26\\,\\text{mm} = 1{,}7\\,\\text{mm}$.”\n\nEtsi oppilaan virhe. Laske lyijysuojan oikea paksuus millimetreinä.",
+      "text": "PET-ruiskun lyijysuoja mitoitetaan niin, että suojan läpi pääsee enintään $1{,}0\\,\\%$ ruiskun $511\\,\\text{keV}$:n fotoneista. Lyijyn puoliintumispaksuus on $140\\,\\text{keV}$:n fotoneille $0{,}26\\,\\text{mm}$ ja $511\\,\\text{keV}$:n fotoneille $3{,}9\\,\\text{mm}$.\n\nOppilaan ratkaisu: ”Läpi päästettävä osuus on $0{,}010$, joten $\\left(\\tfrac{1}{2}\\right)^{n} = 0{,}010$ ja $n = \\dfrac{\\ln 0{,}010}{\\ln 0{,}5} = 6{,}64$. Paksuus on $$\n\\begin{aligned}\nd &= n \\cdot d_{1/2} \\\\\n&= 6{,}64 \\cdot 0{,}26\\,\\text{mm} \\\\\n&= 1{,}7\\,\\text{mm}\n\\end{aligned}\n$$.”\n\nEtsi oppilaan virhe. Laske lyijysuojan oikea paksuus millimetreinä.",
       "kind": [
         "error",
         "reasoning"

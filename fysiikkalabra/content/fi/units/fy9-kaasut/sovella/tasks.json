@@ -32,7 +32,7 @@
       {
        "key": "calculation",
        "points": 2,
-       "detail": "$A = \\pi r^2 = \\pi \\cdot (0{,}100\\,\\text{m})^2 \\approx 0{,}0314\\,\\text{m}^2$ ja $mg \\approx 17{,}7\\,\\text{kN}$, joten $\\Delta p \\approx 562\\,\\text{kPa}$."
+       "detail": "$$\n\\begin{aligned}\nA &= \\pi r^2 \\\\\n&= \\pi \\cdot (0{,}100\\,\\text{m})^2 \\\\\n&\\approx 0{,}0314\\,\\text{m}^2\n\\end{aligned}\n$$ ja $mg \\approx 17{,}7\\,\\text{kN}$, joten $\\Delta p \\approx 562\\,\\text{kPa}$."
       },
       {
        "key": "units_precision",
@@ -65,7 +65,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$W = 1800\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 1{,}20\\,\\text{m} \\approx 21{,}2\\,\\text{kJ}$ ja $562\\,\\text{kPa} \\cdot 37{,}7\\,\\textsf{l} \\approx 21{,}2\\,\\text{kJ}$."
+       "detail": "$$\n\\begin{aligned}\nW &= 1800\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\\n&\\cdot 1{,}20\\,\\text{m} \\\\\n&\\approx 21{,}2\\,\\text{kJ}\n\\end{aligned}\n$$ ja $562\\,\\text{kPa} \\cdot 37{,}7\\,\\textsf{l} \\approx 21{,}2\\,\\text{kJ}$."
       },
       {
        "text": "Selittää, että sylinterin ilma työntää mäntää kokonaispaineella $663\\,\\text{kPa}$ ja tekee työn $p\\,\\Delta V \\approx 25{,}0\\,\\text{kJ}$; erotus $3{,}8\\,\\text{kJ}$ kuluu männän yläpuolisen ulkoilman työntämiseen pois tieltä.",
@@ -98,7 +98,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$p_1 = 1001\\,\\text{kPa}$, joten $p_2 = 1001\\,\\text{kPa} - 663\\,\\text{kPa} \\cdot 0{,}377 \\approx 751\\,\\text{kPa}$ eli mittarissa noin $650\\,\\text{kPa}$."
+       "detail": "$p_1 = 1001\\,\\text{kPa}$, joten $$\n\\begin{aligned}\np_2 &= 1001\\,\\text{kPa} \\\\\n&- 663\\,\\text{kPa} \\cdot 0{,}377 \\\\\n&\\approx 751\\,\\text{kPa}\n\\end{aligned}\n$$ eli mittarissa noin $650\\,\\text{kPa}$."
       },
       {
        "text": "Perustelee, että ilma virtaa vain suuremmasta paineesta pienempään, joten säiliössä on oltava koko noston ajan vähintään $663\\,\\text{kPa}$; toisen noston jälkeen paine olisi noin $501\\,\\text{kPa}$, joten toinen nosto jää kesken (noin $0{,}4\\,\\text{m}$:n korkeudelle).",
@@ -160,7 +160,7 @@
       {
        "key": "reasonableness",
        "points": 1,
-       "detail": "Metaanin tiheys $34{,}9\\,\\text{kg} : 52{,}0\\,\\text{m}^3 \\approx 0{,}67\\,\\text{kg/m}^3$ on pienempi kuin ilman, koska metaanin moolimassa on pienempi."
+       "detail": "Metaanin tiheys $$\n\\begin{aligned}\n&34{,}9\\,\\text{kg} : 52{,}0\\,\\text{m}^3 \\\\\n&\\approx 0{,}67\\,\\text{kg/m}^3\n\\end{aligned}\n$$ on pienempi kuin ilman, koska metaanin moolimassa on pienempi."
       }
      ]
     },
@@ -216,7 +216,7 @@
       {
        "key": "calculation",
        "points": 2,
-       "detail": "Luovutettu lämpöteho $485\\,\\text{kW} - 175\\,\\text{kW} \\approx 310\\,\\text{kW}$, talteen $0{,}75 \\cdot 310\\,\\text{kW} \\approx 233\\,\\text{kW}$, joten $\\eta_\\text{kok} = (175 + 233) : 485 \\approx 84\\,\\%$."
+       "detail": "Luovutettu lämpöteho $485\\,\\text{kW} - 175\\,\\text{kW} \\approx 310\\,\\text{kW}$, talteen $0{,}75 \\cdot 310\\,\\text{kW} \\approx 233\\,\\text{kW}$, joten $$\n\\begin{aligned}\n\\eta_\\text{kok} &= (175 + 233) : 485 \\\\\n&\\approx 84\\,\\%\n\\end{aligned}\n$$."
       },
       {
        "key": "conclusion",
@@ -291,7 +291,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$\\theta_0 = -\\dfrac{V_0}{k} = -\\dfrac{37{,}7\\,\\text{ml}}{0{,}135\\,\\text{ml}/{}^\\circ\\text{C}} \\approx -279\\,{}^\\circ\\text{C}$"
+       "detail": "$$\n\\begin{aligned}\n\\theta_0 &= -\\dfrac{V_0}{k} \\\\\n&= -\\dfrac{37{,}7\\,\\text{ml}}{0{,}135\\,\\text{ml}/{}^\\circ\\text{C}} \\\\\n&\\approx -279\\,{}^\\circ\\text{C}\n\\end{aligned}\n$$"
       },
       {
        "key": "uncertainty",
@@ -324,17 +324,17 @@
       {
        "key": "units_precision",
        "points": 2,
-       "detail": "$k = 0{,}135\\,\\text{ml/K} = 0{,}135 \\cdot 10^{-6}\\,\\text{m}^3/\\text{K}$ ja $p = 101\\,300\\,\\text{Pa}$; kolme merkitsevää numeroa."
+       "detail": "$$\n\\begin{aligned}\nk &= 0{,}135\\,\\text{ml/K} \\\\\n&= 0{,}135 \\cdot 10^{-6}\\,\\text{m}^3/\\text{K}\n\\end{aligned}\n$$ ja $p = 101\\,300\\,\\text{Pa}$; kolme merkitsevää numeroa."
       },
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$n \\approx 1{,}65 \\cdot 10^{-3}\\,\\text{mol} = 1{,}65\\,\\text{mmol}$"
+       "detail": "$$\n\\begin{aligned}\nn &\\approx 1{,}65 \\cdot 10^{-3}\\,\\text{mol} \\\\\n&= 1{,}65\\,\\text{mmol}\n\\end{aligned}\n$$"
       },
       {
        "key": "reasonableness",
        "points": 1,
-       "detail": "Yksi mittauspiste antaa lähes saman: $n = \\dfrac{pV}{RT} = \\dfrac{101\\,300\\,\\text{Pa} \\cdot 41{,}1 \\cdot 10^{-6}\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 298{,}15\\,\\text{K}} \\approx 1{,}68\\,\\text{mmol}$."
+       "detail": "Yksi mittauspiste antaa lähes saman: $$\n\\begin{aligned}\nn &= \\dfrac{pV}{RT} \\\\\n&= \\dfrac{101\\,300\\,\\text{Pa} \\cdot 41{,}1 \\cdot 10^{-6}\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 298{,}15\\,\\text{K}} \\\\\n&\\approx 1{,}68\\,\\text{mmol}\n\\end{aligned}\n$$."
       }
      ]
     },
@@ -423,7 +423,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$\\eta = 30\\,\\text{kW} : 500\\,\\text{kW} = 0{,}060 = 6{,}0\\,\\%$ ja $P_2 = 470\\,\\text{kW}$"
+       "detail": "$$\n\\begin{aligned}\n\\eta &= 30\\,\\text{kW} : 500\\,\\text{kW} \\\\\n&= 0{,}060 \\\\\n&= 6{,}0\\,\\%\n\\end{aligned}\n$$ ja $P_2 = 470\\,\\text{kW}$"
       },
       {
        "text": "Selittää, että kuuman lähteen ja kylmän ympäristön lämpötilaero $23\\,\\text{K}$ on pieni verrattuna kuuman lähteen lämpötilaan $276\\,\\text{K}$, joten vain pieni osa lämmöstä voi muuttua työksi.",
@@ -433,7 +433,7 @@
       {
        "key": "reasonableness",
        "points": 1,
-       "detail": "Energia säilyy: $30\\,\\text{kW} + 470\\,\\text{kW} = 500\\,\\text{kW}$; kone luovuttaa kylmään lähes kaiken ottamansa lämmön."
+       "detail": "Energia säilyy: $$\n30\\,\\text{kW} + 470\\,\\text{kW} = 500\\,\\text{kW}\n$$; kone luovuttaa kylmään lähes kaiken ottamansa lämmön."
       }
      ]
     },

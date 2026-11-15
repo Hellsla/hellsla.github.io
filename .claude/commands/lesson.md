@@ -1,20 +1,20 @@
 ---
 description: Take one lesson from its curriculum slot to a reviewed draft pull request (packets by reference, three independent reviews by what changed, measured usage)
 argument-hint: <lesson-id> [--warn 300000] [--limit 450000]
-model: sonnet
+model: fable
 effort: medium
 ---
 Run lesson $ARGUMENTS through the pipeline. Work in `fysiikkalabra/` (`cd fysiikkalabra` first): every path below is relative to it. You coordinate; the agents do the work from packets. Read only the scripts' output and the agents' reports; never open a packet or a lesson file yourself.
 
-**Routing** (the agent types `developer`, `science-reviewer`, `pedagogy-reviewer` and `visual-editorial-reviewer` are defined in `.claude/agents/` at the repository root; pass `model` and `effort` on every Agent call; if a type is not registered in this session, run a general-purpose agent with the same model whose prompt starts `Read .claude/agents/<name>.md and follow it as your instructions.`; say in the PR which model ran each step and why):
+**Routing** (the agent types `developer`, `science-reviewer`, `pedagogy-reviewer` and `visual-editorial-reviewer` are defined in `.claude/agents/` at the repository root; pass `model` and `effort` on every Agent call; if a type is not registered in this session, run a general-purpose agent with the same model whose prompt starts `Read .claude/agents/<name>.md and follow it as your instructions.`; say in the PR which model ran each step and why). Every role runs on Fable (teacher 2026-11-15: "Fable usage is 0% and all models 67%. Can I use fable more? Change models so"); the earlier Sonnet/Opus routing and the rule against Fable without the teacher's word are withdrawn:
 
 | step | agent | model, effort |
 |---|---|---|
-| this orchestration | — | Sonnet (this command's `model`) |
-| draft, fix | developer | Sonnet medium. Opus medium only for a new numerical model (time integration, particle dynamics, a quantity that must emerge from the simulation), physics the course has not used before, or after a Sonnet attempt failed `check_lesson.py` twice or a science review found physics errors in its work. A simulation alone is not a reason: interface, layout, labels, colours, the adapter and test assertions stay Sonnet. Opus high only after Opus medium failed; Fable never without the teacher's word. |
-| science review | science-reviewer | Opus medium |
-| pedagogy review | pedagogy-reviewer | Sonnet medium |
-| visual & editorial review | visual-editorial-reviewer | Sonnet medium (never Opus: it judges presentation and language; a doubt about physics goes to the science reviewer as a Polish note) |
+| this orchestration | — | Fable (this command's `model`) |
+| draft, fix | developer | Fable medium. Fable high only after Fable medium failed `check_lesson.py` twice or a science review found physics errors in its work. |
+| science review | science-reviewer | Fable medium |
+| pedagogy review | pedagogy-reviewer | Fable medium |
+| visual & editorial review | visual-editorial-reviewer | Fable medium (it judges presentation and language; a doubt about physics goes to the science reviewer as a Polish note) |
 
 **Prompts.** An agent's prompt is one line naming its packet, never the packet itself: `Read <path printed by review_packet.py> and follow it. Lesson: <id>. Mode: <mode>. Round: <n>.` For a fix, add one line: `Polish to fix: <ids, or none>.` and, after a failed check, the failing lines of `check_lesson.py`.
 
@@ -30,7 +30,7 @@ Run lesson $ARGUMENTS through the pipeline. Work in `fysiikkalabra/` (`cd fysiik
 
 **Batch.** When one small change of the same kind goes to many lessons (a law named, a sim text moved into its boxes, figures recoloured line for line, formulas re-set; all classified by `reviews.py scope` as delta or none), run it as one batch instead of a /lesson per lesson: the developer per lesson with a narrow prompt, `check_lesson.py` per lesson, `screenshot.py <id> --if-stale` per lesson, then `reviews.py carry` for every lesson whose reviewer is `none`, `python scripts/review_packet.py --batch <id>,<id>,... --role science` / `--role pedagogy` / `--role visual` and ONE reviewer of each kind (prompt `Read review-batch/packet-<role>.md and follow it. Lessons: <id>, <id>, .... Mode: delta. Round: 1.`), which writes each lesson's own report. `usage.py collect <id>,<id>,...` shares the batch runs among the lessons. A lesson the scope puts in full review leaves the batch for a /lesson of its own.
 
-**Physics consistency** (teacher 2026-10-28, `docs/physics-guardrails.md`). Packets carry the guardrails; the lint prints `physics [...]` warnings the science reviewer judges. Before opening the PR run `python scripts/concepts.py changed`: for each concept the change touches in more than one chapter (a concept-wide correction), run `python scripts/concepts.py packet <concept>` and ONE science-reviewer (Opus medium) with `Read review-concepts/packet-<concept>.md and follow it.`; fix its contradictions in the lessons they name (a batch delta review covers those edits). A single lesson's change needs no concept review.
+**Physics consistency** (teacher 2026-10-28, `docs/physics-guardrails.md`). Packets carry the guardrails; the lint prints `physics [...]` warnings the science reviewer judges. Before opening the PR run `python scripts/concepts.py changed`: for each concept the change touches in more than one chapter (a concept-wide correction), run `python scripts/concepts.py packet <concept>` and ONE science-reviewer (Fable medium) with `Read review-concepts/packet-<concept>.md and follow it.`; fix its contradictions in the lessons they name (a batch delta review covers those edits). A single lesson's change needs no concept review.
 
 **Simulations.** The developer creates the lesson's own folder (`assets/sims/<course>/<id>/`), reuses one the course already has (`"sim": "<name>"` in meta.json) or modifies one. Modifying a folder another lesson uses re-opens that lesson's reviews too (`reviews.py impact` lists them): do it only when the packet's task or the teacher says so, and name every affected lesson in the PR.
 

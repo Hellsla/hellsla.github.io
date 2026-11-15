@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 336593f28b1d9da8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: f22d191b59d568a6
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- batch delta review, en: opened theory-1280-3 (the 1 eV block, the threshold-wavelength block); the other changed blocks judged from the diff/source only (rows broken before each + or -, first row left-hand side alone, no clipping seen in the capture sampled). Hash re-run at the end: unchanged.

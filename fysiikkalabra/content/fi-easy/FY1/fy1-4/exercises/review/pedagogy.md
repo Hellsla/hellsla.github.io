@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 16426b567c7be578
-SCOPE: delta added-exercise from dc5fd657a37866a0 base 81db4a6fd727
+CONTENT-HASH: 91a38165a32382cd
 
 ## Blocking
 - none
 
 ## Polish
-- exercises.json fy1-4-L1-09 — 'Kuinka suuri on massa kappaleella, jonka tilavuus on' is stiff; 'Mikä on sellaisen kappaleen massa, jonka tilavuus on 45 cm³?'
+- none
 
 ## Checked
-- fy1-4-L1-09: links m = kV to density as the slope; unit conversion shown.
-- Solution has all steps (given, asked, principle, formula, conversions, substitution, answer, sanity check); arithmetic verified.
-- Whole-set fit: the MAFY lookup task adds a new kind (table lookup) at level 1; no repeat of the worked example.
-- Finnish and reading level fine; phone readability not affected (short calculation).
+round 2 delta review (exercises): solutions.md Järkevyys sentence reordered to "Jos vettä olisi/on V, sen massa olisi/on noin ... g"; grammatical, keeps the estimate step, no number, unit or exercise text changed.
