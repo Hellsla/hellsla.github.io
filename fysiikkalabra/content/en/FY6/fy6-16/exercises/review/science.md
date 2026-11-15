@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 64560c496d3a4f35
+CONTENT-HASH: 6c786ed6b0783012
 
 ## Blocking
 
 ## Polish
-- solutions.md L2-05 — the step heading "Reading the graph" introduces a table. Part a) of the Answer gives only the time, while the task also asks for the peak power. — Use "Reading the table", and write "The peak power is $6.8\,\text{kW}$ at 19–20".
-- solutions.md L2-04 Reasonableness — "about $3.5\,\text{W}$ per metre" means per metre of cable, counting both conductors. — Say so.
-- solutions.md L2-07 Answer — "two significant figures like the powers" is not the real reason, because most of the powers have three figures. The real limit is the trapezoid approximation. — Name that as the reason.
-- exercises.json L2-05, L3-03, L3-05 — the shared ±2 % check also accepts a value just past the limit. This is known and outside this set; the one-sided check is pending with the coordinator.
 
 ## Checked
-- The hash was 64560c496d3a4f35 at the start and at the end.
-- I recomputed all 20 answers in one script with my own formulas. Every one agrees with answers.py and exercises.json. The answers, tolerances, units and numbers match the Finnish set, apart from the decimal separator.
-- L3-02 now answers $1.6 \cdot 10^{2}\,\%$ (calculated 156 %), with two figures from $10\,\text{A}$ and $16\,\text{A}$ (P7b). The "exact settings" reason is gone. With data-step 10 the page accepts 151–161.
-- L3-03: the minimum 7.157 A is rounded up to 7.2 A, and the direction is stated. L3-05: the maximum 7.609 A is rounded down to 7.6 A, and the direction is stated. The cable dissipates 23.6 W and 104 W.
-- L2-03: the limit 11.96 A is rounded down to 11 A. The page accepts 10.98–11.97 A, so 12 A fails. L2-05: 10.45 kW is rounded down to 10.4 kW, and in c) only 19–20 h exceeds 6.25 kW.
-- L2-08: the options recompute to 15.3, 11.1, 13.0 and 5.1 h, with exactly one correct and every feedback right. L1-06 has exactly one correct option.
-- Physics and scope: power factor ≈ 1, 3UI only with equal phase currents, R = ρ·2l/A, and 230 V with three figures (P7a). Everything stays within FY6.
-- The figures give every value their tasks need, without the answer.
+- All 20 numeric answers recomputed with my own formulas in one script and compared with answers.py: every value agrees (L2-05 key 10,4 = 10,45 rounded down; L2-08 options 15,3 / 11,1 / 13,0 / 5,1 h).
+- L2-03 judged against the teacher's rule of 2026-11-15 (an answer check accepts a limit rounded either way; P7c applies only to the model solution): exact limit 25 A − 9000 W : (3 · 230 V) = 11,96 A; key 11,5 A with tolerance 0.05 accepts 10,93–12,08 A, so 11, 11,96 and 12 A pass, and 13 A (13 A + 13,04 A = 26,04 A > 25 A) fails. Correct.
+- L2-03 model solution: symbolic form I_a = I_p − P_k : (3U) first, 13,04 A and 11,96 A right, answer "11 A" rounded down with the right safety reason, check 13,0 A + 11 A = 24 A < 25 A and 7,6 kW. Unchanged and consistent with answers.py's comment.
+- Physics of P = UI and P = 3UI under the stated power factor ≈ 1 and equal phase currents; t = W_akku : (ηP); K = aW_verkko; P_johto = ρ·2l : A · I² with out-and-back copper (L2-04 0,408 Ω, 6,53 V; L3-05 23,6 W and 104 W).
+- L2-07 trapezoid sum 22,85 kWh and mean 7,62 kW; L3-04 distance 14 640 km, 390,4 € vs 1760,5 €, difference 1370,1 €, public charging 1171,2 € (saving 589 €, about 780 € less).
+- Limit roundings: L3-03 up (at least 7,16 A), L3-05 and L2-05 down (at most), each with its reason (P7c).
+- Exactly one correct option in L1-06 and L2-08, and the answer field equals that option; every distractor's feedback names the actual mistake.
+- Figures lataus-ex and talo-ex give the values L2-01 (27,5 kWh) and L2-09 (17 kWh, 2,72 €) need without giving the answer.
+- Scope inside FY6 (power, Joule's law, batteries and charging, fuses); notation matches the brief.
+- Numbers in solutions.md identical to the Finnish version; answers, units and tolerances the same in exercises.json.
+- Hash the same at the start and the end.

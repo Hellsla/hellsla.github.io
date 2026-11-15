@@ -1,22 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 74e9de790a996e86
+CONTENT-HASH: 9dcbe1d153d30989
 
 ## Blocking
 
 ## Polish
-- solutions.md L2-05 Vastaus a) — the question asks for the peak power and its time, but a) gives only the time. The value 6,8 kW appears only in the reading step. — Write "Huipputeho on $6{,}8\,\text{kW}$ kello 19–20". The step heading "Kuvaajan lukeminen" introduces a table, so "Taulukon lukeminen" would fit better.
-- solutions.md L2-07 Vastaus — "kaksi merkitsevää numeroa kuten tehoissa" is not the real reason, because most of the powers have three figures. The real limit is the trapezoid approximation. — Name that as the reason.
-- solutions.md L3-04 Kaava — the symbol $v$ for 6,50 l per 100 km clashes with velocity. — Use $V$.
-- exercises.json L2-05, L3-03, L3-05 — the shared ±2 % check also accepts a value just past the limit: 10,5 kW, 7,1 A and 7,7 A. This is known and outside this set; the one-sided limit check is pending with the coordinator.
 
 ## Checked
-- The hash was 74e9de790a996e86 at the start and at the end.
-- I recomputed all 20 answers in one script from the task data with my own formulas. Every one agrees with answers.py and exercises.json. The fi, en and fi-easy answers, tolerances and units are identical.
-- L3-02, last round's blocking item: (16 : 10)² − 1 = 1,56. Under P7b both currents have two figures, so the answer $1{,}6 \cdot 10^{2}\,\%$ is right, and the reason given names both currents. With data-step 10 the page accepts 151–161, so both 156 and 160 pass. Resolved.
-- L3-03: the minimum is 40 000 Wh : (3 · 0,90 · 230 V · 9,0 h) = 7,157 A. It is rounded up to 7,2 A, and the solution now says so (P7c).
-- L3-05: 12,0 kW : 690 V = 17,39 A, which leaves 7,609 A. It is rounded down to 7,6 A, and the solution now says so. The cable dissipates 23,6 W at that current and 104 W at 16 A, a factor of about 4,4, and the 33,4 A overload is right.
-- L2-03: the limit 11,96 A is rounded down to 11 A. Answer 11,478 with tolerance 0,043 accepts 10,98–11,97 A, so 11 A and 11,96 A pass and 12 A fails.
-- L2-05: 17,25 − 6,8 = 10,45 kW, rounded down to 10,4 kW. In c) only 19–20 h exceeds 6,25 kW.
-- L2-08: the four options recompute to 15,3, 11,1, 13,0 and 5,1 h. Exactly one is correct, and each distractor's feedback names its own error. L1-06 has exactly one correct option, and every feedback is right.
-- Physics and scope: power factor ≈ 1 is stated, 3UI is used only with equal phase currents, R = ρ·2l/A, and the fuse protects the cable. Everything stays within FY6.
-- Figures lataus-ex and talo-ex give every value their tasks need, on grid lines, without the answer.
+- All 20 numeric answers recomputed with my own formulas in one script and compared with answers.py: every value agrees (L2-05 key 10,4 = 10,45 rounded down; L2-08 options 15,3 / 11,1 / 13,0 / 5,1 h).
+- L2-03 judged against the teacher's rule of 2026-11-15 (an answer check accepts a limit rounded either way; P7c applies only to the model solution): exact limit 25 A − 9000 W : (3 · 230 V) = 11,96 A; key 11,5 A with tolerance 0.05 accepts 10,93–12,08 A, so 11, 11,96 and 12 A pass, and 13 A (13 A + 13,04 A = 26,04 A > 25 A) fails. Correct.
+- L2-03 model solution: symbolic form I_a = I_p − P_k : (3U) first, 13,04 A and 11,96 A right, answer "11 A" rounded down with the right safety reason, check 13,0 A + 11 A = 24 A < 25 A and 7,6 kW. Unchanged and consistent with answers.py's comment.
+- Physics of P = UI and P = 3UI under the stated power factor ≈ 1 and equal phase currents; t = W_akku : (ηP); K = aW_verkko; P_johto = ρ·2l : A · I² with out-and-back copper (L2-04 0,408 Ω, 6,53 V; L3-05 23,6 W and 104 W).
+- L2-07 trapezoid sum 22,85 kWh and mean 7,62 kW; L3-04 distance 14 640 km, 390,4 € vs 1760,5 €, difference 1370,1 €, public charging 1171,2 € (saving 589 €, about 780 € less).
+- Limit roundings: L3-03 up (at least 7,16 A), L3-05 and L2-05 down (at most), each with its reason (P7c).
+- Exactly one correct option in L1-06 and L2-08, and the answer field equals that option; every distractor's feedback names the actual mistake.
+- Figures lataus-ex and talo-ex give the values L2-01 (27,5 kWh) and L2-09 (17 kWh, 2,72 €) need without giving the answer.
+- Scope inside FY6 (power, Joule's law, batteries and charging, fuses); notation matches the brief.
+- Hash the same at the start and the end.
