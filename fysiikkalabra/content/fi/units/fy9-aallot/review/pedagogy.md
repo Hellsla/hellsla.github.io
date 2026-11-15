@@ -1,12 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 1cc9fe9daf7c7ebf
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 2ed8859154e6b841.
+VERDICT: FAIL
+CONTENT-HASH: 7bbe7f3465dd6d42
+Review of the recognition chart (queue 9c) and the term change against the version passed at 1cc9fe9daf7c7ebf; full on the chart, delta on the rest.
 
 ## Blocking
-(none)
+- teacher.md, 25-35 min: "Käy tunnistuskaavio läpi haara kerrallaan: värähtelijät, aallot, ääni" is no longer true; the chart has nine rows and no branches or groups. Reword (e.g. "rivi kerrallaan: mikä tunnusmerkki, mikä laki").
 
 ## Polish
-(none)
+- B: the start box says "liike vai aalto?" but nothing in the rows separates the groups; consider grouping order (jaksonaika, aallot, ääni) in the aria intro.
+- C: Doppler pill has no formula; fine as a recognition cue, but the row reads as incomplete beside the others.
 
 ## Checked
-Desibelitehtävän solution: new given beta = 10 dB and formula with beta; the substitution still shows 10 dB in the denominator (consistent, the numbers are the definition). Sovella a/c/e: d, l_0 and depth symbols are named before the number; symbols not reused with another meaning. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.
+- Rows: massa jousen päässä, heiluri pieni kulma (the small-angle condition is in the sign, good), v=fλ, two rows for constructive and destructive path difference (useful pair), standing wave string/open pipe (closed pipe is not named, acceptable), beat, Doppler, level in dB (law on its own line, readable). Order goes from oscillator to wave to sound.
+- Rows read against the unit's tasks and Ydinajatus; chart placed in Ydinajatus (after the paragraph, before Kaava); no formula list, each pill is the short result of its choice; aria-label read through, it gives sign -> choice -> law for every row in the same order and wording as the chart, usable as a screen-reader list; white on #1a4d2e pill identical in all charts; the only other changed lines are the teacher.md sentence (käsitekartta -> tunnistuskaavio). fi-easy/en not in my scope here.

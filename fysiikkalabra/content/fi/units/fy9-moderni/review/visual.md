@@ -6,7 +6,6 @@ Review of the recognition chart (queue 9c) and the term change against the versi
 (none)
 
 ## Polish
-- B: in 'Ḣ ∝ 1/r²' the dot over H and the subscripts (E_y, E_a, w_R) render upright and clear at 360 px; no change needed. Optional: the pill 'N = N_0 e^{−λt}' is the only one with an exponent-only subscript clash with N_0 - fine.
 - B: aria-labels contain double spaces at line joins (harmless to screen readers).
 
 ## Checked

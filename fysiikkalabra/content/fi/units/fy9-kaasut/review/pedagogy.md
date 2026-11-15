@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 380511676da95b96
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 28ee1741c90a7ebf.
+CONTENT-HASH: 9d91dfe6c6c1bab9
+Review of the recognition chart (queue 9c) and the term change against the version passed at 380511676da95b96; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- A: teacher.md says "jokaiseen haaraan yksi esimerkki" but the chart has nine rows; use "riviin".
+- B: p=ρgh and p=p0+ρgh are separate rows with similar signs ("syvyys nesteessä" / "syvyys ja ilmanpaine"); the second sign could say "avoin pinta, ilmanpaine mukaan".
 
 ## Checked
-c-kohta ($\eta_\text{l}$) ja lasinosto: kaava symboleissa, luvut vasta Sijoituksessa; 37 kPa ja s = 1,6 tarkistettu; Järkevyys ei enää piilota johtopäätöstä vaan tukee sitä. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.
+- Rows: p=F/A, nesteen paine, kokonaispaine, pV=nRT, kaksi tilaa (condition "ainemäärä ei muutu" in the sign), kelvin conversion, W=pΔV, 1. pääsääntö, η=W/Q1. Order from pressure to heat engine, matches the unit.
+- Rows read against the unit's tasks and Ydinajatus; chart placed in Ydinajatus (after the paragraph, before Kaava); no formula list, each pill is the short result of its choice; aria-label read through, it gives sign -> choice -> law for every row in the same order and wording as the chart, usable as a screen-reader list; white on #1a4d2e pill identical in all charts; the only other changed lines are the teacher.md sentence (käsitekartta -> tunnistuskaavio). fi-easy/en not in my scope here.
