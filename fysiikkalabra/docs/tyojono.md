@@ -47,6 +47,8 @@ kaikilla kielillä 360 ja 390 px:llä.
 
 ## 5b. Leikkautuva kaava: tarkistus ja rivijako-carry (opettaja 2026-11-15)
 
+Varattu: claude/layout-formula-carry
+
 Kohta 6 pysähtyi (fy8-1 #590, fy8-2 #593): ulkoasukatselmointi hylkäsi kahdessa erässä peräkkäin ratkaisujen
 kaavaketjut, jotka leikkautuvat 360 px:llä (esim. "m/s" → "m/"). `check_layout.py` ei havaitse leikkautumista, ja jokainen
 rivijakokorjaus vanhentaa kaikki katselmoinnit (fy8-2: noin 650 k ennen kolmatta kierrosta). Opettaja 2026-11-15 hyväksyi
