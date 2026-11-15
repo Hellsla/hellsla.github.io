@@ -210,11 +210,9 @@ missä $U_1$ on ensiöjännite (V), $U_2$ toisiojännite (V), $N_1$ ja $N_2$ ens
 
 ### Siirtojohdon tehohäviö
 Sähkönsiirron periaatetta havainnollistetaan yksinkertaistetulla kaksijohtimisella virtapiirillä: virta kulkee perille yhtä johdinta pitkin ja palaa toista pitkin. Voimalaitos lähettää tehon $P$ jännitteellä $U$. Johdon virta ja johdossa lämmöksi muuttuva teho ovat
-```latex
-\begin{aligned}
-&P = U I \\[6pt]
-&P_\text{h} = R I^2 = \frac{R P^2}{U^2}
-\end{aligned}
+```kaavat
+tehonkulutus johtimessa :: P = U I
+P_\text{h} = R I^2 = \frac{R P^2}{U^2}
 ```
 missä $P$ on siirrettävä teho (W), $U$ siirtojännite (V), $I$ johdon virta (A), $R$ kummankin johtimen yhteenlaskettu resistanssi (Ω) ja $P_\text{h}$ häviöteho (W). Kun sama teho siirretään kaksinkertaisella jännitteellä, virta puolittuu ja häviöteho pienenee neljäsosaan. Siirtojännite $U$ ei ole johdon resistanssin yli oleva jännite: johdon päiden välinen jännitehäviö on vain $R I$, joten häviötehoa ei saa laskea lausekkeella $U^2 : R$.
 
