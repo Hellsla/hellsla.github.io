@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cbbbb7286332c468
+CONTENT-HASH: 1042d3c37f4db574
+SCOPE: delta added-exercise from cbbbb7286332c468 base 6792c2c543a7
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md fy8-2-L2-08 — the new final paragraph is long; split it by option (A, B, D) so a student on a phone can find the one they chose.
+- solutions.md L3-06 reading the graph / answer — "lähes yhtä suuren energian" ylikorostaa: 3,06 ja 2,27 eV eroavat neljänneksellä; tarkempi: "kun luetut energiat vähennetään toisistaan, johtava numero kumoutuu ja suhteellinen virhe kasvaa".
+- L2-09 vastaus 2,84 (3 merkitsevää) vs. epävarmuus ±0,02 eV: kolmas numero on epävarma; lisää "viimeinen numero on epävarma" tai pidä perusteluna vain mittaustarkkuus. Ei estä.
 
 ## Checked
-- Round 2: option A feedback now says that bright lines on black are emission lines, light the gas itself sends, and not light that passed through it; the physics is right and it names the error without giving the answer away.
-- The solution is split into one step per line (E, lambda for each transition); the arithmetic is unchanged (496, 413 and 282 nm; 282 nm is UV and outside 380-720 nm).
-- The solution now explains A in the same terms as the feedback. The other options and figures are unchanged from Round 1.
-- Method: text only (diff and packet); no renders opened.
-- Delta (older task fy8-2-L1-08): the student's quoted chain is split into "... - (-3,40 eV), eli E_3 - E_2 = 1,89 eV"; wording, values and the error to be found are unchanged, and the split reads naturally. Text only.
+- L2-09 chain split into hc, E in J, E in eV: each step one operation, units carried; 1.9865e-25/436e-9 = 4.556e-19 J and /1.602e-19 = 2.844 eV verified.
+- L2-09 "energy secure to about ±0.02 eV": ±3 nm at 436 nm gives 0.02 eV; consistent, and answer tolerance 0.03 still covers it.
+- L3-06 subscripts (viol/vihr or viol/green; E_a,viol etc.) are consistent across Given, Asked, Formula, Substitution; the g/green clash from round 1 is gone.
+- L3-06 numbers verified: 3.0617, 2.2711, 0.7907 eV; 0.794 eV table value; 1240/0.79 = 1570 nm; the split Reasonableness formulas read cleanly.
+- Model answer in c) still repairs the sum misconception directly.
+- Figure lamp-spectrum and its description unchanged by the diff: no answer disclosed.

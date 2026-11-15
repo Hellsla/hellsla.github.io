@@ -87,6 +87,13 @@ korjattu kaava poistaa rivinsä listalta. Ei muita sisältömuutoksia samassa PR
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
 FY10:een ja FY14:ään ei tehdä kuvatehtäviä eikä taulukkotehtäviä.
+Varattu: claude/exercises-fy8-2 (FY8 erä 2, fy8-2)
+Havainto (koordinaattori 2026-11-15, fy8-2): kahdessa erässä peräkkäin ulkoasu on hylännyt ratkaisujen kaavaketjut,
+jotka eivät katkea 360 px:llä (`check_layout.py` ei havainnut niitä). Seuraavien erien kehittäjän pitää jakaa pitkät
+sijoitusketjut (hc omaksi vaiheekseen, energia jouleina ennen eV-muunnosta, yksikkö- ja vertailuketjut omille riveilleen)
+jo ensimmäisessä versiossa. Parannusehdotus (koordinaattori, opettajan päätettäväksi): pelkkä kaavaketjun rivijako ilman
+lukujen tai merkityksen muutosta voisi kulkea carryna samoin kuin presentation-only, mutta vain jaetulla muutoksella ja
+opettajan päätöksellä; nyt se vaatii kolmen roolin uudet katselmoinnit (fy8-2: noin 280 k).
 
 FY8 yksi luku per PR erästä 2 alkaen (koordinaattori 2026-11-15). Erä 1 (#590) valmistui osittain: fy8-1 on tehty ja
 katselmoitu (+3 tehtävää: L1-10 MAFY kalsiumin irrotustyö 3,20 eV, L2-08 ja L2-09 kuvatehtävät; tiede, pedagogiikka ja
