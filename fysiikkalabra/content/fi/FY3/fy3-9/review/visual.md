@@ -1,11 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 354429effaadf21b
+VERDICT: FAIL
+CONTENT-HASH: 7d5645fe39460f43
 
 ## Blocking
-(none)
+- [Major] exit-ticket.json q, inquiry.json Ennuste 1/2 and their feedback texts (fy3-9-open-exit-1280, fy3-9-open-ennusta-1280-1) — the edited lines now typeset the pressure ($100\,\text{kPa}$) but leave the volumes as plain text ("40 ml", "25 ml", "50 ml", "110 ml", "30,0 ml"): the sentence mixes a serif maths unit and a sans plain one, and the house rule (teacher 2026-11-01) makes a plain number with a unit in new or edited text Major — typeset every ml value in the edited lines as $50\,\text{ml}$ (ideally all ~50 occurrences in inquiry.json, lesson.md and the exit ticket, with the answer options).
 
 ## Polish
-(none)
+- none
 
 ## Checked
-batch delta review: preview/fy3-9.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved BARREL balloon photo captured with its surroundings. New spot after the last Ydinajatus figure row (which ends above it); at 1280 it floats beside the Boyle formula section (p1V1 = p2V2, p = vakio·1/V) without touching the formula boxes. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (gas expanding as outside pressure falls, next to Boyle's law).
+- delta: fy3-9-open-exit-1280, fy3-9-open-ennusta-1280-1 (typeset kPa render cleanly, no clipping; plain ml visible beside them); diff of lesson.md (78 kPa, 101 kPa) read.
+
+## Scores
+illustrations 5 · typography 3 · Finnish 5 · accessibility 5

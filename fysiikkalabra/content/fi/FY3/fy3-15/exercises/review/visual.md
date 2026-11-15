@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 18715801cb2d4975
+CONTENT-HASH: 48e582d57b684a1c
 
 ## Blocking
-None. The shots were stale for this exercise hash, so I re-ran screenshot.py; the new capture shows the changed sentence.
+(none)
 
 ## Polish
-none.
+(none)
 
 ## Checked
-- open-exercises-L3-1280-1 and -2 (task 14-19, solution open): the Järkevyys block now reads "…kaukolämpöä käytetään pääasiassa lämmitykseen; kannattavuus riippuu tarpeesta ja hinnoista." It wraps cleanly, formulas and units intact, no clipping or overflow.
+- Round 1, delta. Opened fy3-15-open-exercises-L2-1280-11: the bar-graph task (axes P (MW), bars on the grid lines), answer box "42,9 %", Annettu to Sijoitus; graph legible, formulas aligned. The changed Vastaus (three significant figures, bars on the grid lines) lies below the capture, read from the diff: LaTeX quantities, fluent.
+- The other changed Periaate/Järkevyys sentences ("sisäenergiaksi, joka siirtyy lämpönä ympäristöön", "hukkalämpönä") and the feedback in exercises.json read from the diff: grammar correct.
+- Hash same at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
