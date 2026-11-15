@@ -217,7 +217,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the mistake: a warm bottle",
-      "prompt": "A student calculated how high the pressure of the air in a closed glass bottle rises when the bottle warms in the sun from $20\\,{}^\\circ\\text{C}$ to $60\\,{}^\\circ\\text{C}$. At the start the pressure was $100\\,\\text{kPa}$: “$$\n\\begin{aligned}\np_2 &= p_1 \\cdot \\tfrac{T_2}{T_1} \\\\\n&= 100\\,\\text{kPa} \\cdot \\tfrac{60}{20} \\\\\n&= 300\\,\\text{kPa}\n\\end{aligned}\n$$.” What is wrong in the solution?",
+      "prompt": "A student calculated how high the pressure of the air in a closed glass bottle rises when the bottle warms in the sun from $20\\,{}^\\circ\\text{C}$ to $60\\,{}^\\circ\\text{C}$. At the start the pressure was $100\\,\\text{kPa}$: “$p_2 = p_1 \\cdot \\tfrac{T_2}{T_1} = 100\\,\\text{kPa} \\cdot \\tfrac{60}{20} = 300\\,\\text{kPa}$.” What is wrong in the solution?",
       "choices": [
         {
           "text": "The pressure decreases as the bottle warms, so the correct result is $33\\,\\text{kPa}$.",

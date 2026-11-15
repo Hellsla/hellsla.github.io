@@ -201,7 +201,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the mistake: the echo sounder",
-      "prompt": "An angler reads from the boat's echo sounder that the ultrasound pulse reflected from the bottom arrives back $24\\,\\text{ms}$ after it was sent. The speed of sound in lake water is $1480\\,\\text{m/s}$. A student calculated the depth: \"$$\n\\begin{aligned}\nd &= vt \\\\\n&= 1480\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 0.024\\,\\text{s} \\\\\n&= 35.5\\,\\text{m}\n\\end{aligned}\n$$.\" What is wrong in the solution?",
+      "prompt": "An angler reads from the boat's echo sounder that the ultrasound pulse reflected from the bottom arrives back $24\\,\\text{ms}$ after it was sent. The speed of sound in lake water is $1480\\,\\text{m/s}$. A student calculated the depth: \"$d = vt = 1480\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 0.024\\,\\text{s} = 35.5\\,\\text{m}$.\" What is wrong in the solution?",
       "choices": [
         {
           "text": "The calculation should have used the speed of sound in air, $340\\,\\text{m/s}$.",

@@ -299,9 +299,7 @@ $$.
 
 ### Hyväksytään myös
 - In part b the slope of a line fitted by eye $1.14\text{–}1.22\,\tfrac{1}{\text{kg}}$, that is, the mass $0.82\text{–}0.88\,\text{kg}$, and the intercept $0.21\text{–}0.27\,\text{N}$; in part d the $\mu \approx 0.025\text{–}0.032$ calculated from them.
-- A straight-line fit with a calculator or a spreadsheet ($$
-a = 1.175\,\tfrac{1}{\text{kg}} \cdot F - 0.281\,\text{m/s}^2
-$$).
+- A straight-line fit with a calculator or a spreadsheet ($a = 1.175\,\tfrac{1}{\text{kg}} \cdot F - 0.281\,\text{m/s}^2$).
 
 ## fy9-voimat-s4
 

@@ -217,7 +217,7 @@
    "stage": "sovella",
    "type": "choice",
    "title": "Etsi virhe: lämmin pullo",
-   "prompt": "Opiskelija laski, kuinka suureksi suljetun lasipullon ilman paine kasvaa, kun pullo lämpenee auringossa $20\\,{}^\\circ\\text{C}$:sta $60\\,{}^\\circ\\text{C}$:seen. Alussa paine oli $100\\,\\text{kPa}$: ”$$\n\\begin{aligned}\np_2 &= p_1 \\cdot \\tfrac{T_2}{T_1} \\\\\n&= 100\\,\\text{kPa} \\cdot \\tfrac{60}{20} \\\\\n&= 300\\,\\text{kPa}\n\\end{aligned}\n$$.” Mikä ratkaisussa on väärin?",
+   "prompt": "Opiskelija laski, kuinka suureksi suljetun lasipullon ilman paine kasvaa, kun pullo lämpenee auringossa $20\\,{}^\\circ\\text{C}$:sta $60\\,{}^\\circ\\text{C}$:seen. Alussa paine oli $100\\,\\text{kPa}$: ”$p_2 = p_1 \\cdot \\tfrac{T_2}{T_1} = 100\\,\\text{kPa} \\cdot \\tfrac{60}{20} = 300\\,\\text{kPa}$.” Mikä ratkaisussa on väärin?",
    "choices": [
     {
      "text": "Paine pienenee pullon lämmetessä, joten oikea tulos on $33\\,\\text{kPa}$.",

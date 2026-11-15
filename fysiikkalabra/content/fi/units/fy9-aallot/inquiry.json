@@ -201,7 +201,7 @@
    "stage": "sovella",
    "type": "choice",
    "title": "Etsi virhe: kaikuluotain",
-   "prompt": "Kalastaja lukee veneen kaikuluotaimesta, että pohjasta palaava ultraäänipulssi saapuu takaisin $24\\,\\text{ms}$ lähettämisen jälkeen. Äänen nopeus järvivedessä on $1480\\,\\text{m/s}$. Opiskelija laski syvyyden: ”$$\n\\begin{aligned}\nd &= vt \\\\\n&= 1480\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 0{,}024\\,\\text{s} \\\\\n&= 35{,}5\\,\\text{m}\n\\end{aligned}\n$$.” Mikä ratkaisussa on väärin?",
+   "prompt": "Kalastaja lukee veneen kaikuluotaimesta, että pohjasta palaava ultraäänipulssi saapuu takaisin $24\\,\\text{ms}$ lähettämisen jälkeen. Äänen nopeus järvivedessä on $1480\\,\\text{m/s}$. Opiskelija laski syvyyden: ”$d = vt = 1480\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot 0{,}024\\,\\text{s} = 35{,}5\\,\\text{m}$.” Mikä ratkaisussa on väärin?",
    "choices": [
     {
      "text": "Laskussa piti käyttää äänen nopeutta ilmassa, $340\\,\\text{m/s}$.",

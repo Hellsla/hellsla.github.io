@@ -208,7 +208,7 @@
    "stage": "sovella",
    "type": "choice",
    "title": "Etsi virhe: lämpöpatteri",
-   "prompt": "Opiskelija laski, kuinka paljon energiaa $2{,}0\\,\\text{kW}$:n lämpöpatteri käyttää $30\\,\\text{min}$:ssa: ”$$\n\\begin{aligned}\nE &= P\\,t \\\\\n&= 2{,}0\\,\\text{kW} \\cdot 30\\,\\text{min} \\\\\n&= 60\\,\\text{kWh}\n\\end{aligned}\n$$.” Mikä ratkaisussa on väärin?",
+   "prompt": "Opiskelija laski, kuinka paljon energiaa $2{,}0\\,\\text{kW}$:n lämpöpatteri käyttää $30\\,\\text{min}$:ssa: ”$E = P\\,t = 2{,}0\\,\\text{kW} \\cdot 30\\,\\text{min} = 60\\,\\text{kWh}$.” Mikä ratkaisussa on väärin?",
    "choices": [
     {
      "text": "Kaava on väärä: energia on teho jaettuna ajalla.",

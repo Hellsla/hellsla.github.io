@@ -209,7 +209,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe: jää sulaa",
-      "prompt": "Jäälohkareen massa on $0{,}50\\,\\text{kg}$, ja se on jo $0\\,{}^\\circ\\text{C}$:ssa. Opiskelija laski, kuinka paljon energiaa sen sulattamiseen tarvitaan: ”$$\n\\begin{aligned}\nQ &= cm\\Delta T \\\\\n&= 2100\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\\\\n&\\cdot 0\\,\\text{K} \\\\\n&= 0\\,\\text{J}\n\\end{aligned}\n$$.” Mikä ratkaisussa on väärin?",
+      "prompt": "Jäälohkareen massa on $0{,}50\\,\\text{kg}$, ja se on jo $0\\,{}^\\circ\\text{C}$:ssa. Opiskelija laski, kuinka paljon energiaa sen sulattamiseen tarvitaan: ”$Q = cm\\Delta T = 2100\\,\\text{J/(kg}\\cdot\\text{K)} \\cdot 0{,}50\\,\\text{kg} \\cdot 0\\,\\text{K} = 0\\,\\text{J}$.” Mikä ratkaisussa on väärin?",
       "choices": [
         {
           "text": "Lämpötila pitää muuttaa kelvineiksi, jolloin $\\Delta T = 273\\,\\text{K}$.",

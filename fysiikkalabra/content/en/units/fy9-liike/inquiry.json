@@ -209,7 +209,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the mistake: average speed",
-      "prompt": "A cyclist rides $10\\,\\text{km}$ uphill at $20\\,\\text{km/h}$ and comes back down the same distance at $60\\,\\text{km/h}$. A student calculated the average speed: “$$\n\\begin{aligned}\n&(20\\,\\text{km/h} + 60\\,\\text{km/h}) : 2 \\\\\n&= 40\\,\\text{km/h}\n\\end{aligned}\n$$.” What is wrong in the solution?",
+      "prompt": "A cyclist rides $10\\,\\text{km}$ uphill at $20\\,\\text{km/h}$ and comes back down the same distance at $60\\,\\text{km/h}$. A student calculated the average speed: “$(20\\,\\text{km/h} + 60\\,\\text{km/h}) : 2 = 40\\,\\text{km/h}$.” What is wrong in the solution?",
       "choices": [
         {
           "text": "The average speed is the distance divided by the time: $20\\,\\text{km} : \\tfrac{2}{3}\\,\\text{h} = 30\\,\\text{km/h}$.",

@@ -276,13 +276,7 @@ Three questions branch off from the conservation law, and the energy problems of
 
 In the exam a solution starts with recognising which sign the problem gives and writing its law before the numbers. Energy and power are different quantities: the kilowatt tells the rate, the kilowatt-hour the amount.
 
-This also answers the opening question. Ten litres of petrol contain about $$
-\begin{aligned}
-&7.5\,\text{kg} \cdot 43\,\text{MJ/kg} \\
-&\approx 320\,\text{MJ} \\
-&\approx 90\,\text{kWh}
-\end{aligned}
-$$ of energy, more than a $40\,\text{kWh}$ battery. Charging still takes a long time, because the power of the socket is small: $40\,\text{kWh} : 2.3\,\text{kW} \approx 17\,\text{h}$.
+This also answers the opening question. Ten litres of petrol contain about $7.5\,\text{kg} \cdot 43\,\text{MJ/kg} \approx 320\,\text{MJ} \approx 90\,\text{kWh}$ of energy, more than a $40\,\text{kWh}$ battery. Charging still takes a long time, because the power of the socket is small: $40\,\text{kWh} : 2.3\,\text{kW} \approx 17\,\text{h}$.
 
 ## Formula: Energy, power and efficiency
 

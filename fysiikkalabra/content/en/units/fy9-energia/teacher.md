@@ -1,12 +1,6 @@
 ## Lesson plan (75 min)
 
-- **0–5 min, Think about it.** The electric car's battery and ten litres of petrol. Students first estimate in words with a partner which holds more energy and why charging takes so long. The answer is not given yet: it is at the end of the Key idea part of the theory summary ($40\,\text{kWh} : 2.3\,\text{kW} \approx 17\,\text{h}$, in the petrol $$
-\begin{aligned}
-&7.5\,\text{kg} \cdot 43\,\text{MJ/kg} \\
-&\approx 320\,\text{MJ} \\
-&\approx 90\,\text{kWh}
-\end{aligned}
-$$).
+- **0–5 min, Think about it.** The electric car's battery and ten litres of petrol. Students first estimate in words with a partner which holds more energy and why charging takes so long. The answer is not given yet: it is at the end of the Key idea part of the theory summary ($40\,\text{kWh} : 2.3\,\text{kW} \approx 17\,\text{h}$, in the petrol $7.5\,\text{kg} \cdot 43\,\text{MJ/kg} \approx 320\,\text{MJ} \approx 90\,\text{kWh}$).
 - **5–15 min, Predict (starting-level test).** Six questions individually, without notes. Take a show of hands or ask students to write the numbers of the questions they got wrong in their notebooks.
 - **15–25 min, Investigate.** The bar chart of the condensing power plant in pairs: each pair calculates the efficiencies of all three stages and checks the product. Discuss together: why the steam cycle is the weakest stage.
 - **25–35 min, Theory summary.** Go through the recognition chart and ask the students for one example for each row. Return to Think about it.

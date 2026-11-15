@@ -220,13 +220,7 @@ $$
 ### d)
 **Find:** the outdoor temperature at which, according to the model, no heating is needed, and why it is not $21\,{}^\circ\text{C}$
 **Principle:** When no heating is needed, the consumption is just the other electricity consumption, $E_\text{other} = 12\,\text{kWh}$, so from the line $E = E_0 + kT$ we solve $T = \dfrac{E_\text{other} - E_0}{k}$. Energy is conserved: all the electrical energy used indoors finally becomes heat, and the people and solar radiation also bring energy into the house (chapter *Forms of energy and conservation of energy*).
-**Model answer:** From the extended line we read that the consumption falls to the level of the other consumption, $12\,\text{kWh}$, at about $16$–$17\,{}^\circ\text{C}$ ($$
-\begin{aligned}
-T &= \dfrac{E_\text{other} - E_0}{k} \\
-&= \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4.9\,\text{kWh}/{}^\circ\text{C}} \\
-&= 16.5\,{}^\circ\text{C}
-\end{aligned}
-$$ from the equation of the line). So the house needs heating only when it is colder outside. The temperature is about $4\,\text{K}$ below the indoor temperature $21\,{}^\circ\text{C}$, because the electrical energy of lighting, cooking and appliances becomes heat indoors. In addition, the residents warm the house, and solar radiation through the windows adds energy. These make up for the heat losses of a small temperature difference, so the heaters are needed only to cover the rest. The result is indicative: it is based on a line of winter days extended far beyond the measured range, and the data do not separate the sun and the wind.
+**Model answer:** From the extended line we read that the consumption falls to the level of the other consumption, $12\,\text{kWh}$, at about $16$–$17\,{}^\circ\text{C}$ ($T = \dfrac{E_\text{other} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4.9\,\text{kWh}/{}^\circ\text{C}} = 16.5\,{}^\circ\text{C}$ from the equation of the line). So the house needs heating only when it is colder outside. The temperature is about $4\,\text{K}$ below the indoor temperature $21\,{}^\circ\text{C}$, because the electrical energy of lighting, cooking and appliances becomes heat indoors. In addition, the residents warm the house, and solar radiation through the windows adds energy. These make up for the heat losses of a small temperature difference, so the heaters are needed only to cover the rest. The result is indicative: it is based on a line of winter days extended far beyond the measured range, and the data do not separate the sun and the wind.
 
 ### Yleisiä virheitä
 - The points are joined into a broken line in the order of the dates, so the graph does not show the dependence on temperature.
@@ -269,9 +263,7 @@ m &= e \cdot E \\
 $$. Substituting $1\,\text{g} = 10^{-6}\,\text{t}$: the emissions are about $2100\,\text{t}$ of carbon dioxide a year. A wind turbine burns nothing in operation, but manufacturing its steel and concrete, transporting it, building it and dismantling it cause emissions. So its life-cycle emission factor is a few tens of grams per kilowatt-hour or less, not zero. The claim is therefore inaccurate: wind power is low-emission, and its emissions are only a fraction of the emissions of diesel, but it is not completely emission-free.
 
 ### Yleisiä virheitä
-- In part a the wind turbines' annual energy is calculated with the rated power ($$
-2.0\,\text{MW} \cdot 8760\,\text{h} = 17.5\,\text{GWh}
-$$), so the average power is not taken into account.
+- In part a the wind turbines' annual energy is calculated with the rated power ($2.0\,\text{MW} \cdot 8760\,\text{h} = 17.5\,\text{GWh}$), so the average power is not taken into account.
 - The battery capacity ($\text{MWh}$) is compared directly with the consumption peak ($\text{MW}$), even though one is energy and the other power.
 - In part b the properties of the options are listed without comparing them with each other or making a recommendation.
 - In part c the gigawatt-hours are multiplied directly by the emission factor without converting them to kilowatt-hours.

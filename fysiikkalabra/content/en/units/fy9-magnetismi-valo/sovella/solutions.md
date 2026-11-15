@@ -353,12 +353,7 @@ $$ and $U = \dfrac{565.5\,\text{V}}{\sqrt{2}} = 399.9\,\text{V}$
 &< d \\
 &= 1.667\,\mu\text{m}
 \end{aligned}
-$$, but $\sin\theta_3 = 0.958$, $\theta_3 \approx 73^\circ$ and the maximum is $$
-\begin{aligned}
-x_3 &= 0.800\,\text{m} \cdot \tan 73.3^\circ \\
-&\approx 2.7\,\text{m}
-\end{aligned}
-$$ from the central maximum. It is probably beyond the edge of the wall or so faint that it was not noticed. So the grating is not faulty.
+$$, but $\sin\theta_3 = 0.958$, $\theta_3 \approx 73^\circ$ and the maximum is $x_3 = 0.800\,\text{m} \cdot \tan 73.3^\circ \approx 2.7\,\text{m}$ from the central maximum. It is probably beyond the edge of the wall or so faint that it was not noticed. So the grating is not faulty.
 
 ### c)
 **Find:** how the measurement can be improved

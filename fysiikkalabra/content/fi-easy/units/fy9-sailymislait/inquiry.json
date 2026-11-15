@@ -205,7 +205,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe: pallo kimpoaa seinästä",
-      "prompt": "Pallon massa on $0{,}20\\,\\text{kg}$. Pallo osuu seinään nopeudella $5{,}0\\,\\text{m/s}$ ja kimpoaa eli ponnahtaa suoraan takaisin nopeudella $4{,}0\\,\\text{m/s}$. Opiskelija laski pallon liikemäärän muutoksen näin: ”$$\n\\begin{aligned}\n\\Delta p &= 0{,}20\\,\\text{kg} \\cdot 4{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\\\\n&- 0{,}20\\,\\text{kg} \\cdot 5{,}0\\,\\tfrac{\\text{m}}{\\text{s}} \\\\\n&= -0{,}20\\,\\text{kg} \\cdot \\text{m/s}\n\\end{aligned}\n$$.” Mikä ratkaisussa on väärin?",
+      "prompt": "Pallon massa on $0{,}20\\,\\text{kg}$. Pallo osuu seinään nopeudella $5{,}0\\,\\text{m/s}$ ja kimpoaa eli ponnahtaa suoraan takaisin nopeudella $4{,}0\\,\\text{m/s}$. Opiskelija laski pallon liikemäärän muutoksen näin: ”$\\Delta p = 0{,}20\\,\\text{kg} \\cdot 4{,}0\\,\\tfrac{\\text{m}}{\\text{s}} - 0{,}20\\,\\text{kg} \\cdot 5{,}0\\,\\tfrac{\\text{m}}{\\text{s}} = -0{,}20\\,\\text{kg} \\cdot \\text{m/s}$.” Mikä ratkaisussa on väärin?",
       "choices": [
         {
           "text": "Liikemäärä ei muutu lainkaan, koska pallon massa pysyy koko ajan samana.",

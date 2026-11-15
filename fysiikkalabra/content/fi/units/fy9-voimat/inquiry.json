@@ -212,7 +212,7 @@
    "stage": "sovella",
    "type": "choice",
    "title": "Etsi virhe: pulkka rinteessä",
-   "prompt": "Pulkka ($25\\,\\text{kg}$ lapsineen) liukuu rinnettä alas, rinteen kaltevuuskulma on $20^\\circ$ ja liukukitkakerroin $0{,}10$. Opiskelija laski kitkan: ”$$\n\\begin{aligned}\nF_\\mu &= \\mu m g \\\\\n&= 0{,}10 \\cdot 25\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\\n&\\approx 25\\,\\text{N}\n\\end{aligned}\n$$.” Mikä ratkaisussa on väärin?",
+   "prompt": "Pulkka ($25\\,\\text{kg}$ lapsineen) liukuu rinnettä alas, rinteen kaltevuuskulma on $20^\\circ$ ja liukukitkakerroin $0{,}10$. Opiskelija laski kitkan: ”$F_\\mu = \\mu m g = 0{,}10 \\cdot 25\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 25\\,\\text{N}$.” Mikä ratkaisussa on väärin?",
    "choices": [
     {
      "text": "Kitkan pitäisi olla $\\mu mg\\sin\\alpha \\approx 8{,}4\\,\\text{N}$, koska liike on rinteen suuntaista.",

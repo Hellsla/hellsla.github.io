@@ -353,12 +353,7 @@ $$ ja $U = \dfrac{565{,}5\,\text{V}}{\sqrt{2}} = 399{,}9\,\text{V}$
 &< d \\
 &= 1{,}667\,\mu\text{m}
 \end{aligned}
-$$, mutta $\sin\theta_3 = 0{,}958$, $\theta_3 \approx 73^\circ$ ja maksimi on $$
-\begin{aligned}
-x_3 &= 0{,}800\,\text{m} \cdot \tan 73{,}3^\circ \\
-&\approx 2{,}7\,\text{m}
-\end{aligned}
-$$:n päässä keskimaksimista. Se on todennäköisesti seinän reunan ulkopuolella tai niin himmeä, ettei sitä huomattu. Hila ei siis ole viallinen.
+$$, mutta $\sin\theta_3 = 0{,}958$, $\theta_3 \approx 73^\circ$ ja maksimi on $x_3 = 0{,}800\,\text{m} \cdot \tan 73{,}3^\circ \approx 2{,}7\,\text{m}$:n päässä keskimaksimista. Se on todennäköisesti seinän reunan ulkopuolella tai niin himmeä, ettei sitä huomattu. Hila ei siis ole viallinen.
 
 ### c)
 **Kysytty:** miten mittausta parannetaan

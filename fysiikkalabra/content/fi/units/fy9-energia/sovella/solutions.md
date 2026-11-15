@@ -220,13 +220,7 @@ $$
 ### d)
 **Kysytty:** ulkolämpötila, jossa lämmitystä ei mallin mukaan tarvita, ja miksi se ei ole $21\,{}^\circ\text{C}$
 **Periaate:** Kun lämmitystä ei tarvita, kulutus on pelkkä muu sähkönkulutus $E_\text{muu} = 12\,\text{kWh}$, joten suoralta $E = E_0 + kT$ ratkaistaan $T = \dfrac{E_\text{muu} - E_0}{k}$. Energia säilyy: kaikki sisällä käytetty sähköenergia muuttuu lopulta lämmöksi, ja myös ihmiset ja auringonsäteily tuovat taloon energiaa (luku *Energialajit ja energian säilyminen*).
-**Mallivastaus:** Jatketulta suoralta luetaan, että kulutus laskee muun kulutuksen tasolle $12\,\text{kWh}$ noin lämpötilassa $16$–$17\,{}^\circ\text{C}$ (suoran yhtälöstä $$
-\begin{aligned}
-T &= \dfrac{E_\text{muu} - E_0}{k} \\
-&= \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4{,}9\,\text{kWh}/{}^\circ\text{C}} \\
-&= 16{,}5\,{}^\circ\text{C}
-\end{aligned}
-$$). Talo tarvitsee lämmitystä siis vasta, kun ulkona on kylmempää. Lämpötila on noin $4\,\text{K}$ sisälämpötilaa $21\,{}^\circ\text{C}$ alempi, koska valaistuksen, ruoanlaiton ja laitteiden sähköenergia muuttuu sisällä lämmöksi. Lisäksi asukkaat lämmittävät taloa, ja ikkunoista tuleva auringonsäteily lisää energiaa. Nämä korvaavat pienen lämpötilaeron lämpöhäviöt, joten lämmittimiä tarvitaan vain lopun kattamiseen. Tulos on suuntaa antava: se perustuu talvipäivien suoraan, jota jatketaan pitkälle mitatun alueen ulkopuolelle, eikä aineisto erottele aurinkoa ja tuulta.
+**Mallivastaus:** Jatketulta suoralta luetaan, että kulutus laskee muun kulutuksen tasolle $12\,\text{kWh}$ noin lämpötilassa $16$–$17\,{}^\circ\text{C}$ (suoran yhtälöstä $T = \dfrac{E_\text{muu} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4{,}9\,\text{kWh}/{}^\circ\text{C}} = 16{,}5\,{}^\circ\text{C}$). Talo tarvitsee lämmitystä siis vasta, kun ulkona on kylmempää. Lämpötila on noin $4\,\text{K}$ sisälämpötilaa $21\,{}^\circ\text{C}$ alempi, koska valaistuksen, ruoanlaiton ja laitteiden sähköenergia muuttuu sisällä lämmöksi. Lisäksi asukkaat lämmittävät taloa, ja ikkunoista tuleva auringonsäteily lisää energiaa. Nämä korvaavat pienen lämpötilaeron lämpöhäviöt, joten lämmittimiä tarvitaan vain lopun kattamiseen. Tulos on suuntaa antava: se perustuu talvipäivien suoraan, jota jatketaan pitkälle mitatun alueen ulkopuolelle, eikä aineisto erottele aurinkoa ja tuulta.
 
 ### Yleisiä virheitä
 - Pisteet yhdistetään murtoviivaksi päivämäärän järjestyksessä, jolloin kuvaaja ei näytä riippuvuutta lämpötilasta.
@@ -269,9 +263,7 @@ m &= e \cdot E \\
 $$. Sijoitetaan $1\,\text{g} = 10^{-6}\,\text{t}$: päästö on noin $2100\,\text{t}$ hiilidioksidia vuodessa. Tuulivoimala ei käytössä polta mitään, mutta sen teräksen ja betonin valmistus, kuljetus, rakentaminen ja purku aiheuttavat päästöjä. Elinkaaren päästökerroin on siksi muutamia kymmeniä grammoja kilowattituntia kohti tai vähemmän, ei nolla. Väite on siis epätarkka: tuulivoima on vähäpäästöistä, ja sen päästöt ovat vain murto-osa dieselin päästöistä, mutta täysin päästötöntä se ei ole.
 
 ### Yleisiä virheitä
-- a-kohdassa tuulivoimaloiden vuoden energia lasketaan nimellisteholla ($$
-2{,}0\,\text{MW} \cdot 8760\,\text{h} = 17{,}5\,\text{GWh}
-$$), jolloin keskitehoa ei oteta huomioon.
+- a-kohdassa tuulivoimaloiden vuoden energia lasketaan nimellisteholla ($2{,}0\,\text{MW} \cdot 8760\,\text{h} = 17{,}5\,\text{GWh}$), jolloin keskitehoa ei oteta huomioon.
 - Akun kapasiteettia ($\text{MWh}$) verrataan suoraan kulutushuippuun ($\text{MW}$), vaikka toinen on energia ja toinen teho.
 - b-kohdassa luetellaan vaihtoehtojen ominaisuuksia vertaamatta niitä toisiinsa tai tekemättä suositusta.
 - c-kohdassa gigawattitunnit kerrotaan suoraan päästökertoimella ilman muunnosta kilowattitunneiksi.

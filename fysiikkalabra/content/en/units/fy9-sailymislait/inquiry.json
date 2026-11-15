@@ -205,7 +205,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the mistake: a ball bounces off a wall",
-      "prompt": "A student calculated the change in momentum of a $0.20\\,\\text{kg}$ ball that hits a wall at $5.0\\,\\text{m/s}$ and bounces straight back at $4.0\\,\\text{m/s}$: “$$\n\\begin{aligned}\n\\Delta p &= 0.20\\,\\text{kg} \\cdot 4.0\\,\\tfrac{\\text{m}}{\\text{s}} \\\\\n&- 0.20\\,\\text{kg} \\cdot 5.0\\,\\tfrac{\\text{m}}{\\text{s}} \\\\\n&= -0.20\\,\\text{kg} \\cdot \\text{m/s}\n\\end{aligned}\n$$.” What is wrong in the solution?",
+      "prompt": "A student calculated the change in momentum of a $0.20\\,\\text{kg}$ ball that hits a wall at $5.0\\,\\text{m/s}$ and bounces straight back at $4.0\\,\\text{m/s}$: “$\\Delta p = 0.20\\,\\text{kg} \\cdot 4.0\\,\\tfrac{\\text{m}}{\\text{s}} - 0.20\\,\\text{kg} \\cdot 5.0\\,\\tfrac{\\text{m}}{\\text{s}} = -0.20\\,\\text{kg} \\cdot \\text{m/s}$.” What is wrong in the solution?",
       "choices": [
         {
           "text": "The momentum does not change at all, because the mass of the ball stays the same the whole time.",

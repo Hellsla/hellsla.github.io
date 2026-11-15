@@ -208,7 +208,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the mistake: the radiator",
-      "prompt": "A student calculated how much energy a $2.0\\,\\text{kW}$ electric radiator uses in $30\\,\\text{min}$: “$$\n\\begin{aligned}\nE &= P\\,t \\\\\n&= 2.0\\,\\text{kW} \\cdot 30\\,\\text{min} \\\\\n&= 60\\,\\text{kWh}\n\\end{aligned}\n$$.” What is wrong with the solution?",
+      "prompt": "A student calculated how much energy a $2.0\\,\\text{kW}$ electric radiator uses in $30\\,\\text{min}$: “$E = P\\,t = 2.0\\,\\text{kW} \\cdot 30\\,\\text{min} = 60\\,\\text{kWh}$.” What is wrong with the solution?",
       "choices": [
         {
           "text": "The formula is wrong: energy is power divided by time.",

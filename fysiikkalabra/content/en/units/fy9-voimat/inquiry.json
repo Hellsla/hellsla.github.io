@@ -212,7 +212,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the mistake: a sledge on a slope",
-      "prompt": "A sledge ($25\\,\\text{kg}$ with the child) slides down a slope, the angle of inclination of the slope is $20^\\circ$ and the coefficient of sliding friction $0.10$. A student calculated the friction: \"$$\n\\begin{aligned}\nF_\\mu &= \\mu m g \\\\\n&= 0.10 \\cdot 25\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\\n&\\approx 25\\,\\text{N}\n\\end{aligned}\n$$.\" What is wrong in the solution?",
+      "prompt": "A sledge ($25\\,\\text{kg}$ with the child) slides down a slope, the angle of inclination of the slope is $20^\\circ$ and the coefficient of sliding friction $0.10$. A student calculated the friction: \"$F_\\mu = \\mu m g = 0.10 \\cdot 25\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 25\\,\\text{N}$.\" What is wrong in the solution?",
       "choices": [
         {
           "text": "The friction should be $\\mu mg\\sin\\alpha \\approx 8.4\\,\\text{N}$, because the motion is along the slope.",

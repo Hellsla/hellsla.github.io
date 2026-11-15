@@ -209,7 +209,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe: keskinopeus",
-      "prompt": "Pyöräilijä ajaa $10\\,\\text{km}$ ylämäkeä nopeudella $20\\,\\text{km/h}$. Sitten hän ajaa saman matkan takaisin alas nopeudella $60\\,\\text{km/h}$. Opiskelija laski keskivauhdin näin: ”$$\n\\begin{aligned}\n&(20\\,\\text{km/h} + 60\\,\\text{km/h}) : 2 \\\\\n&= 40\\,\\text{km/h}\n\\end{aligned}\n$$.” Mikä ratkaisussa on väärin?",
+      "prompt": "Pyöräilijä ajaa $10\\,\\text{km}$ ylämäkeä nopeudella $20\\,\\text{km/h}$. Sitten hän ajaa saman matkan takaisin alas nopeudella $60\\,\\text{km/h}$. Opiskelija laski keskivauhdin näin: ”$(20\\,\\text{km/h} + 60\\,\\text{km/h}) : 2 = 40\\,\\text{km/h}$.” Mikä ratkaisussa on väärin?",
       "choices": [
         {
           "text": "Keskivauhti on matka jaettuna ajalla: $20\\,\\text{km} : \\tfrac{2}{3}\\,\\text{h} = 30\\,\\text{km/h}$.",
