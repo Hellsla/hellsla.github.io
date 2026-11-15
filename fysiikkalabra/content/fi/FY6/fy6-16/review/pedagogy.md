@@ -1,8 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: fe6754a0fcd417c3
+CONTENT-HASH: 65aaf46702ef907a
+
 ## Blocking
 
 ## Polish
+- Kun-lause keskellä lausetta ('...kun latauksen häviöt otetaan huomioon, kolmivaiheisella asemalla...') on hieman raskas; vaihtoehto: 'Sama 40 kWh:n lataus kestää pistorasiasta häviöt huomioiden yli vuorokauden ja kolmivaiheisella asemalla noin neljä tuntia.'
 
 ## Checked
-batch delta review: 'yli vuorokauden' to 'lähes vuorokauden' (40 kWh / 1,8 kW is about 22 h, so the new wording is correct; the old one was wrong); formula-name and figure approvals are teacher's, no other text changed.
+batch delta review: the changed socket-charging sentence is clear, matches the 25,6 h with losses the inquiry and solutions use, and no figure or task is touched.

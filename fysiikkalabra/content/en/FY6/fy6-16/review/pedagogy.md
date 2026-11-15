@@ -1,8 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b2a29f5bb1349f0e
+CONTENT-HASH: b64fcfc3e328592d
+
 ## Blocking
 
 ## Polish
+- The 'when the losses ... are taken into account' clause sits mid-sentence; 'takes more than a day from a socket once charging losses are counted, and about four hours...' reads lighter.
 
 ## Checked
-batch delta review: 'more than a day' to 'almost a day' (40 kWh / 1.8 kW is about 22 h, so the new wording is correct; the old one was wrong); formula-name and figure approvals are teacher's, no other text changed.
+batch delta review: the changed socket-charging sentence is clear, matches the 25,6 h with losses the inquiry and solutions use, and no figure or task is touched.

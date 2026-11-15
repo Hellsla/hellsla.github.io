@@ -1,8 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 5cef466e8945a470
+CONTENT-HASH: 1938cbb208369bd3
+
 ## Blocking
 
 ## Polish
+- None needed: the clause is its own short sentence and reads well for the easy version.
 
 ## Checked
-batch delta review: 'yli vuorokauden' to 'lähes vuorokauden' (40 kWh / 1,8 kW is about 22 h, so the new wording is correct; the old one was wrong); formula-name and figure approvals are teacher's, no other text changed.
+batch delta review: the changed socket-charging sentence is clear, matches the 25,6 h with losses the inquiry and solutions use, and no figure or task is touched.
