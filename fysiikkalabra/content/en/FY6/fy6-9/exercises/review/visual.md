@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 30bb671b683987a1
-SCOPE: delta added-exercise from 51f6a10c66298771 base 8f23aa7ae3bd
-Round 1
-Mode: delta (added exercise fy6-9-L2-08, shown as 9-17)
+CONTENT-HASH: ed49b4d836471970
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-9/ex-current2 — the y tick "2.5" sits at the axis arrowhead and the x tick "4.5" is close to the arrow; fine to read, give the arrow a little more room if the figure is next re-drawn.
+- [Minor] L2-06 Substitution — the row breaks before `· 1.5 h` although the first row has room at 1280 px, and the second row carries a second `=` step (`= 0.5 V · 3.0 Ah`) after the continued product. Optional: put `= 0.5 V · 3.0 Ah` on its own row. It reads correctly as it is.
 
 ## Checked
-- fy6-9-open-exercises-L2-1280-9.png and -10.png (task 9-17 statement, graph, answer chip, full solution), -7 and -8 for the neighbouring tasks 9-15 and 9-16 and the set's flow.
-- Graph: axes with quantity and unit, ticks and grid, three steps readable, does not give the charge away; the description gives the same values.
-- Solution: units in LaTeX, chains set as aligned rows, colon division, decimal point in en, answer set apart, nothing clipped.
+- Delta (calculation re-broken into an inline aligned block, same numbers, signs and units). Opened content/en/FY6/fy6-9/review/shots/fy6-9-open-exercises-L2-1280-7.png: L2-06 Substitution W_loss = (4.2 V − 3.7 V) · 2.0 A / · 1.5 h = 0.5 V · 3.0 Ah / = 1.5 Wh, with Answer and Reasonableness below.
+- Aligned at `=`, unclipped, units upright with thin space, decimal point correct.
+- No 360/390 px capture shows an opened solution, so phone wrapping rests on the passing check_layout 360 px result in the packet.
 
 ## Scores
-illustrations 4 · typography 5 · English 5 · accessibility 4
+illustrations 5 · typography 4 · English 5 · accessibility 5

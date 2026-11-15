@@ -25,7 +25,7 @@
 **Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$
 **Muunnokset:** Ei tarvita: $1\,\text{W} : 1\,\text{V} = 1\,\text{A}$.
 **Sijoitus:** $I = \dfrac{1200\,\text{W}}{230\,\text{V}} = 5{,}217\,\text{A}$
-**Vastaus:** $5{,}2\,\text{A}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten jännite $230\,\text{V}$.
+**Vastaus:** $5{,}22\,\text{A}$. Vastaus on annettu kolmella merkitsevällä numerolla kuten jännite $230\,\text{V}$. Jännitteessä $230\,\text{V}$ on kolme merkitsevää numeroa.
 **Järkevyys:** Arvio $1200\,\text{W} : 200\,\text{V} = 6\,\text{A}$ on hieman suurempi, koska jakaja on pienempi. Virta on alle $10\,\text{A}$. Silitysrauta sopii siis $10\,\text{A}$:n tai $16\,\text{A}$:n sulakkeella suojattuun virtapiiriin, kun muita suuritehoisia laitteita ei ole samaan aikaan päällä.
 
 ## fy6-7-L1-04
@@ -66,8 +66,8 @@
 **Kaava:** $P = UI$ ja $E = Pt$, joten $E = UIt$
 **Muunnokset:** $t = 4{,}0\,\text{min} = 4{,}0 \cdot 60\,\text{s} = 240\,\text{s}$; lopuksi $1\,\text{kJ} = 1000\,\text{J}$
 **Sijoitus:** $E = 230\,\text{V} \cdot 8{,}7\,\text{A} \cdot 240\,\text{s} = 480\,240\,\text{J} = 480{,}24\,\text{kJ}$
-**Vastaus:** $480\,\text{kJ}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten virta $8{,}7\,\text{A}$ ja aika $4{,}0\,\text{min}$.
-**Järkevyys:** Keittimen teho on $230\,\text{V} \cdot 8{,}7\,\text{A} \approx 2000\,\text{W}$ eli $2\,\text{kJ}$ sekunnissa. Siksi $240$ sekunnissa energia on noin $480\,\text{kJ}$. Kilowattitunteina tämä on $0{,}13\,\text{kWh}$. Se sopii vedenkeittimen tavalliseen keittokertaan.
+**Vastaus:** $4{,}8 \cdot 10^{2}\,\text{kJ}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten virta $8{,}7\,\text{A}$ ja aika $4{,}0\,\text{min}$.
+**Järkevyys:** Keittimen teho on $230\,\text{V} \cdot 8{,}7\,\text{A} \approx 2000\,\text{W}$ eli $2\,\text{kJ}$ sekunnissa. Siksi $240$ sekunnissa energia on noin $4{,}8 \cdot 10^{2}\,\text{kJ}$. Kilowattitunteina tämä on $0{,}13\,\text{kWh}$. Se sopii vedenkeittimen tavalliseen keittokertaan.
 
 ## fy6-7-L2-03
 **Annettu:** valmiustilan teho $P = 4{,}5\,\text{W}$ koko vuoden, $365$ vuorokautta, hinta $a = 17\,\text{snt/kWh}$
@@ -151,12 +151,12 @@
 **Kaava:** $E_\text{vrk} = Pt$ jokaiselle laitteelle ja $E_\text{vuosi} = 365 \cdot E_\text{vrk,yht}$
 **Muunnokset:** $90\,\text{W} = 0{,}090\,\text{kW}$, $110\,\text{W} = 0{,}110\,\text{kW}$, $60\,\text{W} = 0{,}060\,\text{kW}$, $1200\,\text{W} = 1{,}200\,\text{kW}$ ja $800\,\text{W} = 0{,}800\,\text{kW}$
 **Sijoitus:** Valaistus $0{,}090\,\text{kW} \cdot 5{,}0\,\text{h} = 0{,}45\,\text{kWh}$; televisio $0{,}110\,\text{kW} \cdot 4{,}0\,\text{h} = 0{,}44\,\text{kWh}$; tietokone $0{,}060\,\text{kW} \cdot 6{,}0\,\text{h} = 0{,}36\,\text{kWh}$; pölynimuri $1{,}200\,\text{kW} \cdot 0{,}50\,\text{h} = 0{,}60\,\text{kWh}$; leivänpaahdin $0{,}800\,\text{kW} \cdot 0{,}20\,\text{h} = 0{,}16\,\text{kWh}$. Summa on $2{,}01\,\text{kWh}$ vuorokaudessa. Siis $E_\text{vuosi} = 365 \cdot 2{,}01\,\text{kWh} = 733{,}65\,\text{kWh}$.
-**Vastaus:** Vastauslaatikkoon $730\,\text{kWh}$. a) Eniten energiaa käyttää pölynimuri, vaikka se on päällä vain puoli tuntia.
+**Vastaus:** Vastauslaatikkoon $7{,}3 \cdot 10^{2}\,\text{kWh}$. a) Eniten energiaa käyttää pölynimuri, vaikka se on päällä vain puoli tuntia.
 
-b) $730\,\text{kWh}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten tehot ja ajat.
+b) $7{,}3 \cdot 10^{2}\,\text{kWh}$. Vastaus on annettu kahdella merkitsevällä numerolla. Rajoittavat tiedot ovat tehot $90\,\text{W}$ ja $60\,\text{W}$ sekä käyttöajat. Tehoissa $110\,\text{W}$, $800\,\text{W}$ ja $1200\,\text{W}$ on enemmän numeroita.
 
 c) Säästökohteeksi sopii valaistus. Se on toiseksi suurin erä. Sen tehoa voi pienentää vaihtamalla lamput LED-lamppuihin. Pölynimurin käyttöaikaa ei voi lyhentää ilman, että siivous kärsii.
-**Järkevyys:** Vuorokauden energia on $2{,}01\,\text{kWh}$, joten keskiteho on $2{,}01\,\text{kWh} : 24\,\text{h} = 0{,}084\,\text{kW} = 84\,\text{W}$. Se on kohtuullinen koti-iltojen laitteille. Vuodessa $365 \cdot 2\,\text{kWh} = 730\,\text{kWh}$ täsmää tulokseen. Pölynimuri käyttää enemmän kuin valaistus. Sen teho on $13$-kertainen ($1200\,\text{W} : 90\,\text{W}$), mutta aika on vain kymmenesosa.
+**Järkevyys:** Vuorokauden energia on $2{,}01\,\text{kWh}$, joten keskiteho on $2{,}01\,\text{kWh} : 24\,\text{h} = 0{,}084\,\text{kW} = 84\,\text{W}$. Se on kohtuullinen koti-iltojen laitteille. Vuodessa $$\begin{aligned} &365 \cdot 2\,\text{kWh} \\ &= 7{,}3 \cdot 10^{2}\,\text{kWh} \end{aligned}$$ täsmää tulokseen. Pölynimuri käyttää enemmän kuin valaistus. Sen teho on $13$-kertainen ($1200\,\text{W} : 90\,\text{W}$), mutta aika on vain kymmenesosa.
 
 ## fy6-7-L2-06
 **Annettu:** mittarin lukemat $12\,437{,}2\,\text{kWh}$ alussa ja $12\,493{,}5\,\text{kWh}$ seitsemän vuorokauden kuluttua, hinta $a = 16\,\text{snt/kWh}$
@@ -181,9 +181,9 @@ c) $9{,}0\,\text{€}$.
 **Kaava:** $P_\text{ka} = \dfrac{E}{t}$ ja $E_\text{vuosi} = P_\text{ka} t_\text{vuosi}$
 **Muunnokset:** $t_\text{vuosi} = 365 \cdot 24\,\text{h} = 8760\,\text{h}$
 **Sijoitus:** $P_\text{ka} = \dfrac{1{,}64\,\text{kWh}}{48\,\text{h}} = 0{,}03417\,\text{kW}$ ja $E_\text{vuosi} = 0{,}03417\,\text{kW} \cdot 8760\,\text{h} = 299{,}3\,\text{kWh}$
-**Vastaus:** Vastauslaatikkoon $300\,\text{kWh}$. a) Suoralta luettu energia $48\,\text{h}$:n kohdalla on $1{,}64\,\text{kWh}$.
+**Vastaus:** Vastauslaatikkoon $3{,}0 \cdot 10^{2}\,\text{kWh}$. a) Suoralta luettu energia $48\,\text{h}$:n kohdalla on $1{,}64\,\text{kWh}$.
 
-b) $300\,\text{kWh}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska suoran sovitus silmällä rajoittaa tarkkuutta.
+b) $3{,}0 \cdot 10^{2}\,\text{kWh}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska suoran sovitus silmällä rajoittaa tarkkuutta.
 
 c) Huoneen lämpötila on mittauksen aikana eri kuin vuoden keskiarvo. Oven avaukset ja jääkaapin sisältö vaihtelevat. Kulutus ei siis ole koko vuoden sama. Lisäksi $48\,\text{h}$ on lyhyt aika, joten kompressorin käyntijaksot vaikuttavat tulokseen.
 **Järkevyys:** Keskiteho $0{,}034\,\text{kW} = 34\,\text{W}$ on pieni, koska kompressori on päällä vain osan ajasta. Esimerkiksi $100\,\text{W}$:n kompressori käy noin kolmasosan ajasta. Tarkistus: $299\,\text{kWh} : 8760\,\text{h} = 0{,}0341\,\text{kW}$, mikä täsmää mittaukseen.

@@ -1,12 +1,9 @@
 VERDICT: PASS
 CONTENT-HASH: ca8401bb91b5326f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Word-level diff since origin/main of the en fy6-2 lesson files and neighbouring text; decimal convention (point), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.
+- batch delta review: no diff; opened fy6-2-fig-row-1280, layout intact, figures legible.
