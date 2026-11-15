@@ -82,6 +82,12 @@ näkyy 360 px:llä muodossa "4500 kW". Opettaja 2026-11-15:
   `reflow`-carry (5b) siirtää tiede- ja pedagogiikkakatselmoinnit.
 Tehdään kurssi kerrallaan, yksi PR per kurssi, alkaen kursseista, joilla rivejä on eniten (FY8, FY9, FY2); jokainen
 korjattu kaava poistaa rivinsä listalta. Ei muita sisältömuutoksia samassa PR:ssä.
+Opit FY8:sta (#601, 15.11): (1) inline-`$$` samalla rivillä ilman tyhjiä rivejä pitää tekstin välit ennallaan, jolloin
+reviews.py:n rivipohjainen luokitus ei anna `numbers`-luokkaa sekatiedostoissa (esim. inquiry.json). (2) lint_lesson:
+lessonin Esimerkki-`$$`-lohkon ensimmäisellä rivillä ei lukuja ja yksiköitä (vasen puoli omalle riville); solutions.md:n
+Kaava-rivin ensimmäisellä rivillä `=` (`$$\begin{aligned}` ja ensimmäinen rivi samalla rivillä). (3) check_i18n vaatii
+saman kaavarakenteen kaikilla kielillä: rivijako päätetään kielineutraalisti. (4) CI:n Chromium on noin 4 px tiukempi
+kuin paikallinen: aja check_layout myös 352 px:llä. (5) Rakenna site/ vasta, kun kaikki katselmoinnit ovat voimassa.
 
 ## 5e. Välimerkki display-kaavan perään (koordinaattori 2026-11-15)
 
