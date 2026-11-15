@@ -26,15 +26,6 @@ tarkistetaan ensin kuvista (fy10-hiuksen-paksuus antoi kahdella ajolla eri tulok
 kuvasääntö erillisenä eränä opettajan päätöksellä; jaettujen komponenttien muutokset (`templates/`, `screenshot.py`:n
 tyhjät 28×28 px kaappaukset) tehdään yksin. Voi kulkea rinnakkain kohdan 2 kanssa.
 
-## 4b. Dronelabra: lentokokeiden taulukko liian leveä puhelimella (2026-11-14)
-
-Löytyi #568:n koko sivuston ajossa 360 ja 390 px:llä: `ahjo-drone-lentokokeet` (fi, en, fi-easy) taulukko on
-91–130 px laatikkoaan leveämpi (`check_layout` `table`, suljettu tila). Ainoa löydös koko sivustolla näillä
-leveyksillä. Lähde `jaksot/ahjo/kohteet/ahjo-drone-lentokokeet.md`. Korjaus ensisijaisesti jaksopohjan taulukon
-yhteisessä tyylissä (jaettu: yksin) tai taulukon rakenteessa (sisältö, ei katselmointeja Ahjon sivuilla). Pieni,
-voidaan tehdä, kun mikään jaettu muutos ei ole auki. #579:n koko sivuston ajossa (390 ja 1280 px) samoin
-`ahjo-airbit-kokoaminen`, `ahjo-airbit-ohjaus` ja `ahjo-fpv-lento`: korjataan samassa PR:ssä.
-
 ## 5. CI:n toistettavuus (2026-11-13)
 
 Tapa ajaa selaintarkistukset CI:n kontissa (`mcr.microsoft.com/playwright/python:v1.65.0-noble`) paikallisesti, ja
@@ -45,9 +36,39 @@ sijoitusketjun ylivuotoa en-versiossa (oikea reuna 372 px vs. laatikko 330 px, y
 löysi sen); lisää `check_layout.py`:hin tarkistus, joka mittaa ratkaisun kaavaketjun ylivuodon avoimessa tilassa
 kaikilla kielillä 360 ja 390 px:llä.
 
-## 6. Kuvatehtävät FY8, FY9, FY10 ja FY14, taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13 ja 2026-11-14)
+## 5b. Leikkautuva kaava: tarkistus ja rivijako-carry: tehty (PR #594, opettaja 2026-11-15)
 
-Varattu: claude/fy8-kuva-taulukkotehtavat (FY8, erä 1: fy8-1…3, PR #590)
+Tehty: `check_layout.py` havaitsee leikkautuvan kaavan (360 ja 390 px, avattu ratkaisu, kolme kieltä), `reviews.py` tuntee
+kategorian `reflow` (science ja pedagogy none, visual delta), kehittäjäohjeessa on rivi. Mainissa jo olevat leikkautuvat
+kaavat ovat `docs/clipped-formulas.tsv`:ssä (rivejä vain poistetaan). Auki, opettajan päätettävä:
+1. lasketaanko vierityslinjalle jäävä inline-kaava leikkautuneeksi (nyt kyllä), ja korjataanko vanha lista jaetulla
+   komponentilla vai sivu kerrallaan;
+2. tehdäänkö täysi CI-pohjainen lista (koko sivuston ajo, noin 20 ydintuntia): lista on tehty paikallisella Chromiumilla, ja
+   CI voi löytää sivuilta uusia rivejä, jotka lisätään CI:n lokista.
+Kohdat 6 ja 8l voivat jatkua; #593 (fy8-2) yhdistää mainin ja ajaa `check_layout.py fy8-2 --width 360`.
+
+## 5c. ElevenLabs-ääneenluku FY1 ja FY2 (opettaja 2026-11-15)
+
+Suomenkielisten FY1- ja FY2-lukujen Kuuntele-nappi soittaa etukäteen tehdyn ElevenLabs-äänitteen; muut kielet ja kurssit
+jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md, testit): ajetaan yksin, 5b:n (#594) jälkeen.
+- Äänitteet tehdään skriptillä (`scripts/`), ei koskaan oppilaan selaimesta. API-avain on ympäristön network secret
+  osoitteelle api.elevenlabs.io (otsake `xi-api-key`; tallennettu ympäristöön hellsla.github.io 2026-11-15); avainta ei
+  kirjoiteta repoon.
+- Skripti avaa rakennetun sivun Playwrightilla ja ottaa `readaloud.js`:ltä samat lohkot ja saman puhetekstin kuin
+  Kuuntele-nappi lukee (Pohdinta ja Teoria; ei tehtäviä, vihjeitä eikä ratkaisuja). Kaavat sanoiksi `lang/fi.json`
+  "speech"-säännöillä, luvut ja yksittäiset tunnukset kirjoitettuna auki.
+- Yksi mp3 ja aikaleimat per lohko, sidottuna lohkon puhetekstin tiivisteeseen. Muuttunut lohko luetaan Supertonicilla,
+  kunnes se generoidaan uudelleen. Lauseen ja sanan korostus säilyy.
+- Ensin ääninäytteet: sama fy1-1:n kappale kolmella suomenkielisellä kirjastoäänellä opettajan valittavaksi. Pysähdys valintaan.
+- Sitten pilotti: vain fy1-1. PR:ään lista fy1-1:n kaavoista muodossa "TeX → puheteksti", äänitiedostojen yhteiskoko ja
+  käytetty merkkimäärä. Pysähdys opettajan kuunteluun.
+- `CLAUDE.md`:n Ääneenluku-kappale ja `test_readaloud.py` päivitetään samassa PR:ssä. Lukujen tekstejä ei muuteta, joten
+  katselmoinnit eivät vanhene.
+
+## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13, 2026-11-14 ja 2026-11-15)
+
+Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
+FY10:een ja FY14:ään ei tehdä kuvatehtäviä eikä taulukkotehtäviä.
 Varattu: claude/exercises-fy8-2 (FY8 erä 2, fy8-2)
 Havainto (koordinaattori 2026-11-15, fy8-2): kahdessa erässä peräkkäin ulkoasu on hylännyt ratkaisujen kaavaketjut,
 jotka eivät katkea 360 px:llä (`check_layout.py` ei havainnut niitä). Seuraavien erien kehittäjän pitää jakaa pitkät
@@ -74,11 +95,10 @@ Polish-kohdat (ei estä, ei korjattu, jotta fy8-1:n hash ei muutu): `lessons/FY8
 "387,6 nm -> 388 nm" pitäisi olla "387,5 nm -> 387 nm"; L2-08:n ratkaisussa 5,56 on tarkempi kuin kuvasta luettava 5,6;
 L2-09:n ratkaisun "±1 %" löysä (7,0 ± 0,1 antaa ±1,5 %) ja merkitsevien numeroiden perustelu epäselvä; L2-08 on kevyt
 tasolle 2; kuva on pieni tehtäväkortissa (jakoarvot noin 8 px, sama kaikilla kuvatehtävillä).
-Tämä kohta jää, kunnes FY9, FY10 ja FY14 on tehty.
+Tämä kohta jää, kunnes FY8 ja FY9 on tehty.
 
 Sama tahti kuin FY4:stä alkaen: jokaisessa luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka
-kolmannessa luvussa (#521, #528). FY10:een ja FY14:ään ei lisätä taulukkotehtäviä, vain kuvatehtävät (opettaja
-2026-11-14). Arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit lähde-URL:n kanssa. Aloitetaan,
+kolmannessa luvussa (#521, #528). Arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit lähde-URL:n kanssa. Aloitetaan,
 kun kohdan 2 katselmoinnit on tehty, jotta katselmoimattomien sarjojen jono ei kasva.
 
 ## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
@@ -220,6 +240,15 @@ kuten `teacher-figure`: `reviews.py approve-text <id> [--lang]` kirjaa hyväksyt
 Rivi kirjataan vain opettajan nimenomaisesta hyväksynnästä; mikä tahansa muu muutos samassa luvussa katselmoidaan
 normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yksin.
 
+## 8l. Taulukoiden otsikoista pois "(esimerkkiaineisto)" (opettaja 2026-11-15)
+
+Opettaja 2026-11-15: "Voisiko taulukoista ottaa pois tuon (esimerkkiaineisto)". Tehtävien taulukko-otsikoissa (`"caption"`
+`exercises.json`:issa) on merkintä noin 930 kertaa: fi 312, en 292 ("(example data)"), fi-easy 325, kursseilla FY2–FY8.
+Poistetaan vain otsikoista. Jos sulkeissa on muutakin, se jää (esim. "(esimerkkiaineisto, energiat NNDC NuDat 3)" →
+"(energiat NNDC NuDat 3)"). Tehtävätekstin maininnat (noin 18) ja taulukon alla oleva lähderivi eivät muutu. Tehdään
+kohdan 8k `teacher-text`-kategorialla (opettajan nimenomainen hyväksyntä tälle mekaaniselle muutokselle), jotta
+katselmoinnit kulkevat muutoksen yli. Jaettu muutos (`scripts/reviews.py` ja kaikki kurssit), ajetaan yksin, sim PR 3:n (#591) jälkeen.
+
 ## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
 
 FY7:n esimerkkikoe on valmis (#586); sen katselmointien Minor-huomioita ei korjattu siinä, ettei katselmoinnit vanhene.
@@ -239,7 +268,7 @@ lang-tekstejä tai fysiikkaa.
   vähintään 10 px) omina CI-jobeinaan.
 - **PR 2: Varattu: claude/sim-ui-pr2-pilotti-fy4-1** pilotti fy4-1: lukemat kuvan alle, toistorivi yhdelle riville, `.lab-side .sim-canvas`-säännön 25 rem:n
   varaus pienemmäksi, kuvausteksti pois kokeiden vierestä.
-- **PR 3:** sama asettelu tyypeille A–C (aikaohjatut, jatkuvat, staattiset); tyyppi D, fy1-2, fy1-4 ja poikkeavat
+- **PR 3: Varattu: claude/sim-ui-pr3-asettelu** sama asettelu tyypeille A–C (aikaohjatut, jatkuvat, staattiset); tyyppi D, fy1-2, fy1-4 ja poikkeavat
   jäävät nykyiselleen.
 - **PR 4:** tarttuva kuva puhelimella, pilotti fy4-1 ja yksi staattinen simulaatio.
 - **PR 5:** canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus.

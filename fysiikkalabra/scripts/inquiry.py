@@ -713,7 +713,16 @@ def task_titles(lid, by_stage, md):
     return out
 
 
-SIM_CARD2 = {"fy4-1"}   # the chapters whose simulation card has the new layout (readouts under the picture, one playback row; work queue 10, PR 2, pilot; PR 3 widens it)
+# The chapters whose simulation card keeps the old layout (work queue 10, PR 3; teacher 2026-11-14): every other chapter's
+# simulation has the new card (class sim-card2: the readouts under the picture, the playback on one row with the pace at its
+# end, a wider picture). No sim.js and no lang text is touched; a chapter is out when the new layout needs one of them.
+SIM_CARD_OLD = {
+    "fy6-5": "type D: tall multi-panel picture", "fy6-6": "type D", "fy6-9": "type D", "fy6-12": "type D",
+    "fy6-13": "type D", "fy6-14": "type D",
+    "fy1-2": "type E: 17 controls, 14 of them buttons", "fy1-4": "type E: its own layout",
+    "fy3-2": "the readout is already before the controls", "fy3-3": "the readout is already before the controls",
+    "fy3-4": "the readout is already before the controls", "fy3-9": "a table in the card",
+}
 TUTKI_FOLD_COURSES = {f"FY{i}" for i in range(1, 10)}   # the modules whose Tutki shows one investigation at first
 TUTKI_VISIBLE = 2                                  # at most this many tasks of Tutki in view (teacher 2026-11-06)
 
@@ -932,7 +941,7 @@ def render(folder, inquiry, parts, md):
                         f'<span class="more-count" data-one="{esc(T("inquiry.more_count_one"))}" data-many="{esc(T("inquiry.more_count_many"))}">{T("inquiry.more_count_one" if k == 1 else "inquiry.more_count_many", n=k)}</span></summary>'
                         f'<div class="fold-body">{flow(rest)}</div></details>')
         if si is not None and (si < len(items) - 1 or more):   # the sim beside the activities that use it
-            inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side{" sim-card2" if lid in SIM_CARD2 else ""}">{act(items[si])}</div>'
+            inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side{"" if lid in SIM_CARD_OLD else " sim-card2"}">{act(items[si])}</div>'
                      f'<div class="lab-main">{flow(items[si + 1:])}{more}</div></div>')
         else: inner = flow(items) + more
         if sid == "tarkista" and parts.get("selfassess"):   # Testaa ja arvioi (teacher 2026-11-10): the tasks first, then the goals' self-assessment, so the student assesses with the tasks' feedback in hand (the goals first until then, 2026-11-06)
