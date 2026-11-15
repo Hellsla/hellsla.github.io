@@ -454,6 +454,7 @@ merkitsevät numerot, termit, "lämmöksi", likiarvorivit, kieli) samalla kierro
 inquiry.json, kuvien tekstit ja käännökset. Kurssi aloitetaan, kun kohta 8m on yhdistetty ja kurssin kohdan 5d
 leikkautuvat kaavat ovat mainissa (FY8 odottaa #601:tä). Avoin kohta 12 ratkesi päätöksellä P9: pieniä arvoeroja ei
 muuteta. Yksi kurssi = yksi haara ja yksi PR; enintään kuusi työntekijää yhtä aikaa.
+Varattu: claude/fy1-oikoluku (FY1)
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
