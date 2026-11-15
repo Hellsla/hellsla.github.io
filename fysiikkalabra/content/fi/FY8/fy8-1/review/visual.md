@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e595dc5041fdd7cc
+CONTENT-HASH: dc9c1e133b91dc6b
 
 ## Blocking
-(none)
 
 ## Polish
-- none
+- The lifted block in the optional box 'Etsi virhe' (': 500' on its own row) sits in a closed box with no capture; judged from source and the same renderer seen elsewhere.
 
 ## Checked
-- Round 2, delta (sentence mark after lifted formula). Opened fi 390 px captures across lessons (fy8-1 example-1, fy8-3 sovella-2, fy8-5 example-1, fy8-8 sovella-2, fy8-11 selita-3, fy8-12 example-2, fy8-14 sovella-1, fy8-16 example-2). No lone "," or "." starts a line after a lifted formula; marks sit inside the formula's last row (e.g. "≈ 10 500 km/s."), text unchanged. Rest of this lesson judged by inference from the shared build, not every capture opened.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: fi sovella-390-2 opened; the 'Etsi virhe' block is in a closed optional box and has no capture (browser unavailable to re-capture), judged from source: terms whole, ':' break only inside the long hc/lambda term.
