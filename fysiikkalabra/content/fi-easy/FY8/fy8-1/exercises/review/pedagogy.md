@@ -5,7 +5,7 @@ CONTENT-HASH: 1b20aa3647f6e765
 (none)
 
 ## Polish
-- content/fi-easy/FY8/fy8-1/exercises/solutions.md:242 (fy8-1-L2-09) — the solution's answer is $4{,}3 \cdot 10^{2}\,\text{nm}$ while the checked answer stays 428 (tolerance 4 %); 430 passes, so nothing breaks — optional, the solution names the calculated value 428 nm.
+- content/fi-easy/FY8/fy8-1/exercises/solutions.md:400 (fy8-1-L2-09) — the solution's answer is $4{,}3 \cdot 10^{2}\,\text{nm}$ while the checked answer stays 428 (tolerance 4 %); 430 passes, so nothing breaks — optional, the solution names the calculated value 428 nm.
 
 ## Checked
 - solutions.md L1-10 Järkevyys: "Pikaarvio" → "Pika-arvio", the correct compound; nothing else changed on the line.

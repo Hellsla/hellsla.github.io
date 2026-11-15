@@ -4,9 +4,9 @@ CONTENT-HASH: 759101bad721fe20
 ## Blocking
 
 ## Polish
-- inquiry.json:753, 766, 773 (siirto) — the prompt asks for the energy left "sisäenergiaksi", but hint 3 ("Lämmöksi jää"), the 2,34 mistake feedback ("Kysytty lämpö") and the solution ("lämmön summa") call the same quantity heat; lesson.md:427 and the exit ticket say sisäenergia — use sisäenergia throughout (guardrail: a body has internal energy, heat is energy in transfer).
-- lesson.md:287–296 with inquiry.json:493 — the table's rounded level $-0{,}38\,\text{eV}$ gives $3{,}02\,\text{eV}$ and 411 nm for 6 → 2, while the text and the sim (unrounded $-13{,}6/n^2$) say 410 nm — say in the sim's `calc` that the model uses unrounded level energies, so the last digit can differ from a hand calculation with the table.
-- lesson-answers.py:1750 — the comment says 3,1037e-19 J; the value is 3,1039e-19 J (as lesson.md:375 has it) — correct the comment.
+- inquiry.json `siirto` (hint 3, the 2,34 mistake, the solution) — the prompt asks for the energy left "sisäenergiaksi", but hint 3 ("Lämmöksi jää"), the 2,34 mistake feedback ("Kysytty lämpö") and the solution ("lämmön summa") call the same quantity heat; the Tiivistelmä and the exit ticket say sisäenergia — use sisäenergia throughout (guardrail: a body has internal energy, heat is energy in transfer).
+- lesson.md Kaava (level table) with inquiry.json `ennuste-1` — the table's rounded level $-0{,}38\,\text{eV}$ gives $3{,}02\,\text{eV}$ and 411 nm for 6 → 2, while the text and the sim (unrounded $-13{,}6/n^2$) say 410 nm — say in the sim's `calc` that the model uses unrounded level energies, so the last digit can differ from a hand calculation with the table.
+- lesson-answers.py `ex-J` — the comment says 3,1037e-19 J; the value is 3,1039e-19 J (as the worked example has it) — correct the comment.
 
 ## Checked
 - One script recomputed every number of lesson.md, inquiry.json, the exit ticket and lesson-answers.py from h, c and 1 eV as given: Balmer 656/486/434/410 nm, gaps 170/52/24 nm, Lyman 122/103/97/95/94 nm and 10,2 eV, 7 → 2 at 397 nm, visible 1,65–3,26 eV, example 1,9375 eV, Etsi virhe 1,05e-25 and 656 nm, siirto 0,722 eV (mistakes 9,92; 3,06; 2,34), check 2 2,27 eV (3,64; 0,44), CO2 0,083 eV. All agree.
