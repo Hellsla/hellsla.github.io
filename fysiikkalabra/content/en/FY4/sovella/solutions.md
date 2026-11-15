@@ -184,7 +184,7 @@ komponentit G
 ### d)
 **Find:** how reliable the conclusion "wax A glides better" is
 **Principle:** The conclusion is reliable if the difference between the waxes is clearly larger than the uncertainty of the results and if the sources of error cannot turn the difference the other way round.
-**Model answer:** *Uncertainty.* The points are close to the lines, so the slope can be read to an accuracy of about $\pm 0.02\,\text{m/s}^2$. In the coefficient of friction this means $0.02\,\text{m/s}^2 : 9.786\,\text{m/s}^2 \approx 0.002$. An uncertainty in the angle of the slope, for example $\pm 0.1^\circ$, changes both coefficients by about $0.002$ in the same direction, so it does not change the difference. The difference between the waxes, $0.045 - 0.030 = 0.015$, is many times larger.
+**Model answer:** *Uncertainty.* The points are close to the lines, so the slope can be read to an accuracy of about $\pm 0.02\,\text{m/s}^2$. In the coefficient of friction this means $$\begin{aligned} &0.02\,\text{m/s}^2 : 9.786\,\text{m/s}^2 \\ &\approx 0.002 \end{aligned}$$. An uncertainty in the angle of the slope, for example $\pm 0.1^\circ$, changes both coefficients by about $0.002$ in the same direction, so it does not change the difference. The difference between the waxes, $0.045 - 0.030 = 0.015$, is many times larger.
 
 *Air resistance.* Air resistance points up the slope like friction, so it reduces the acceleration. When it is left out, all of the slowing effect is counted as friction, and both coefficients of friction come out larger than the true ones. Air resistance grows with the speed, and in run A the skier moves faster, so the coefficient of wax A is overestimated more. The true advantage of wax A is therefore at least as large as the calculated one.
 
@@ -487,7 +487,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 **Conversions:** Not needed.
 **Substitution:** $F_\text{avg} = \dfrac{68\,\text{kg} \cdot 7.86\,\text{m/s}}{0.12\,\text{s}} = 4455\,\text{N}$ and $\dfrac{F_\text{avg}}{mg} = \dfrac{4455\,\text{N}}{68\,\text{kg} \cdot 9.81\,\text{m/s}^2} = \dfrac{4455\,\text{N}}{667\,\text{N}} = 6.7$
 **Answer:** $F_\text{avg} \approx 4.5\,\text{kN}$, that is, about $6.7$ times the driver's weight. Two significant figures like the duration of the collision $0.12\,\text{s}$.
-**Reasonableness:** The driver's average acceleration is $7.86\,\text{m/s} : 0.12\,\text{s} \approx 66\,\text{m/s}^2$, almost $7g$. It is large but typical for a rear-end collision, and the force is spread over the whole area of the seat back, so the body can withstand it. The peak force is larger than the average.
+**Reasonableness:** The driver's average acceleration is $$\begin{aligned} &7.86\,\text{m/s} : 0.12\,\text{s} \\ &\approx 66\,\text{m/s}^2 \end{aligned}$$, almost $7g$. It is large but typical for a rear-end collision, and the force is spread over the whole area of the seat back, so the body can withstand it. The peak force is larger than the average.
 
 ### d)
 **Find:** why a head restraint and a flexible seat back reduce injuries

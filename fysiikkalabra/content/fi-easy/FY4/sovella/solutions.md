@@ -184,7 +184,7 @@ komponentit G
 ### d)
 **Kysytty:** kuinka luotettava on johtopäätös "voide A liukuu paremmin"
 **Periaate:** Johtopäätös on luotettava, jos voiteiden ero on selvästi suurempi kuin tulosten epävarmuus. Sen lisäksi virhelähteet eivät saa voida kääntää eroa toisin päin.
-**Mallivastaus:** *Epävarmuus.* Pisteet ovat lähellä suoria, joten kulmakertoimen voi lukea noin $\pm 0{,}02\,\text{m/s}^2$:n tarkkuudella. Kitkakertoimessa tämä tarkoittaa $0{,}02\,\text{m/s}^2 : 9{,}786\,\text{m/s}^2 \approx 0{,}002$. Rinteen kulman epävarmuus, esimerkiksi $\pm 0{,}1^\circ$, muuttaa kumpaakin kerrointa noin $0{,}002$ samaan suuntaan, joten se ei muuta eroa. Voiteiden ero $0{,}045 - 0{,}030 = 0{,}015$ on monta kertaa suurempi.
+**Mallivastaus:** *Epävarmuus.* Pisteet ovat lähellä suoria, joten kulmakertoimen voi lukea noin $\pm 0{,}02\,\text{m/s}^2$:n tarkkuudella. Kitkakertoimessa tämä tarkoittaa $$\begin{aligned} &0{,}02\,\text{m/s}^2 : 9{,}786\,\text{m/s}^2 \\ &\approx 0{,}002 \end{aligned}$$. Rinteen kulman epävarmuus, esimerkiksi $\pm 0{,}1^\circ$, muuttaa kumpaakin kerrointa noin $0{,}002$ samaan suuntaan, joten se ei muuta eroa. Voiteiden ero $0{,}045 - 0{,}030 = 0{,}015$ on monta kertaa suurempi.
 
 *Ilmanvastus.* Ilmanvastus osoittaa rinnettä ylös kuten kitka, joten se pienentää kiihtyvyyttä. Kun ilmanvastus jätetään pois, kaikki hidastava vaikutus lasketaan kitkan syyksi. Silloin kumpikin kitkakerroin tulee todellista suuremmaksi. Ilmanvastus kasvaa nopeuden mukana. Laskussa A hiihtäjä liikkuu nopeammin, joten voiteen A kerroin on yliarvioitu enemmän. Voiteen A todellinen etu on siis vähintään yhtä suuri kuin laskettu.
 
@@ -487,7 +487,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri. Virhe on noin viides
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** Voima on $F_\text{ka} = \dfrac{68\,\text{kg} \cdot 7{,}86\,\text{m/s}}{0{,}12\,\text{s}} = 4455\,\text{N}$. Vertailu painoon: $\dfrac{F_\text{ka}}{mg} = \dfrac{4455\,\text{N}}{68\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{4455\,\text{N}}{667\,\text{N}} = 6{,}7$
 **Vastaus:** $F_\text{ka} \approx 4{,}5\,\text{kN}$ eli noin $6{,}7$-kertainen kuljettajan painoon verrattuna. Vastauksessa on kaksi merkitsevää numeroa kuten törmäyksen kestossa $0{,}12\,\text{s}$.
-**Järkevyys:** Kuljettajan keskimääräinen kiihtyvyys on $7{,}86\,\text{m/s} : 0{,}12\,\text{s} \approx 66\,\text{m/s}^2$ eli lähes $7g$. Se on suuri mutta tyypillinen peräänajolle. Voima jakautuu koko selkänojan alalle, joten vartalo kestää sen. Huippuvoima on keskimääräistä suurempi.
+**Järkevyys:** Kuljettajan keskimääräinen kiihtyvyys on $$\begin{aligned} &7{,}86\,\text{m/s} : 0{,}12\,\text{s} \\ &\approx 66\,\text{m/s}^2 \end{aligned}$$ eli lähes $7g$. Se on suuri mutta tyypillinen peräänajolle. Voima jakautuu koko selkänojan alalle, joten vartalo kestää sen. Huippuvoima on keskimääräistä suurempi.
 
 ### d)
 **Kysytty:** miksi niskatuki ja joustava selkänoja suojaavat vammoilta
