@@ -1,17 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 300bb0101bde0453
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: a9022830b2fd8ed1
+Round 2: delta against the version round 1 reviewed (whitespace-only fixes in s7).
 
 ## Blocking
 - (none)
 
 ## Polish
-- B `sovella/solutions.md` s7 c) and e): the list items of the model answer render as lines that begin with a literal hyphen ("- Lämpöoppi. …"), not as a bullet list, at 390 and 1280 px. Readable, and the same as the already passed s4 b) and s5 b), c), so it is the shared solution component's behaviour: fix it there (render a list inside Mallivastaus as a list), not per task.
 - C s7 c), last paragraph: "Lämmitykseen ja akun sisäenergiaksi kulunut energia" joins two verbs' complements under one participle. Clearer: "Lämmitykseen kulunut ja akun sisäenergiaksi muuttunut energia sekä suurempi työ vastusvoimia vastaan otetaan kaikki samasta akusta."
 - C s7 source line: the link text also holds "Tarkistettu 16.11.2026" (the other units' source lines link the source name only).
+- Round 1's Polish item on the literal hyphens in s7 c) and e) is resolved.
 
 ## Checked
-- Captures re-made for this hash (stamp 300bb0101bde0453). Opened: stage-exercises-390-47…59 (s7 card, source link, bullet list, table, parts a–e, every solution, common mistakes, accepted answers, rubric a–d), stage-exercises-1280-34, -35, -38, contact-6, contact-13.
-- Table (Auto / Ilmoitettu (WLTP) / Mitattu) fits at 390 px, units in LaTeX; aligned rows keep `=` in one column; nothing clipped; case endings ($-32\,{}^\circ\text{C}$:seen, $30\,\%$:sta, Model Y:llä) correct.
-- "Johda itse": stage-selita-390-3 and stage-selita-1280-3: the three rows P1, P2, P3 are aligned at `=`, centred, unclipped; selita-390-4 for "Yleisiä virheitä" (sisäenergiaksi, kokonaishyötysuhdetta).
-- Item 18 hunks read in the diff: inquiry.json feedback, s1 ("noin $70\,\%$"), s3 d), s6 c)–d), unit.md, ketju aria-label: each carries the decision out and reads naturally.
+- Hash a9022830b2fd8ed1 at the start and the end; captures re-made for it (`screenshot.py --if-stale`: 160 captures).
+- Diff against c502cb9e26 read: `sovella/solutions.md` gains one blank line before each of the two lists; `sovella/tasks.json` s7 d) question ("Testin raportin mukaan … jäi suhteellisesti eniten jälkeen ilmoitetusta") reads naturally.
+- Opened: stage-exercises-1280-39, -40, -41, -42; stage-exercises-390-53, -54, -56.
+- s7 c) Mallivastaus: lead paragraph, then a real three-item bullet list (Lämpöoppi, Sähköoppi, Mekaniikka; italic lead-ins, indented, even spacing between items), then the closing paragraph as its own block. Same at 390 px: nothing clipped, inline formulas ($P = UI$, $P = R_\text{s}I^2$, $\frac{n}{V} = \frac{p}{RT}$, $-20\,{}^\circ\text{C}$:ssa) inside the column and legible.
+- s7 e) Mallivastaus: lead paragraph, three bullets (Olosuhteet vaihtelevat, Hajontaa ei tunneta, Parempi testi), closing paragraph; the same at 390 px.
+- Around it: s7 d) solution, Yleisiä virheitä, Hyväksytään myös and the rubric a)–c) kept their layout; no overflow.

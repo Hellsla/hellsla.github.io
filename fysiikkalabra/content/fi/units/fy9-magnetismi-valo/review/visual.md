@@ -1,15 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 1cb41420fdb3d846
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+VERDICT: PASS
+CONTENT-HASH: 1b2d8c8c52bd975c
+Round 2: delta against the version round 1 reviewed (whitespace-only fixes in s7).
 
 ## Blocking
-- [Major] `sovella/solutions.md` fy9-magnetismi-valo-s7 e) **Mallivastaus** is one paragraph of about 200 words: 25 unbroken lines at 1280 px (stage-exercises-1280-43) and more than a full capture at 390 px (stage-exercises-390-58 onward). The house rule is one idea per paragraph, about 120 words at most; here four ideas run together, so a student cannot find which sentence answers which part of the question. Fix without changing a word: start a new paragraph (blank line) before "Magneettinen voima on kohtisuorassa protonin nopeutta vastaan, …", before "Mitä suurempi protonin energia on, …" and before "Radan sädettä ei voi laskea …".
+- (none)
 
 ## Polish
 - C s7 e): "teholla $P = RI^2$, joka kasvaa virran neliössä" → "…, joka on verrannollinen virran neliöön".
 
 ## Checked
-- Captures current for this hash. Figure `siirto`: stage-selita-390-2 and stage-selita-1280-2: "häviö $38\,\%$" and "häviö $2{,}0\,\text{W} = 0{,}005\,\%$" sit right-aligned under their bars inside the frame, no overlap with the bar or with $I$ labels, legible at 390 px, and match the prose ("häviö on $2{,}0\,\text{W}$"). PASS for the figure.
-- stage-selita-390-1 (Ydinajatus: new sentence on the magnetic field reads well), contact-1 (hook question "kaapelin sisäenergiaksi").
-- s7: stage-exercises-390-51, -53…58, -60, -61; stage-exercises-1280-38, -42, -43; contact-7, -14. Card, source link, both lists, long numbers ($299\,780\,455\,\text{m/s}$, $2{,}99792458 \cdot 10^{8}\,\text{m/s}$) and the square-root row fit at 390 px; `=` aligned; "LHC:ssä", "$12\,\text{km/s}$:n" correct.
-- Item 18 hunks in s1 c) and unit.md read in the diff.
+- Hash 1b2d8c8c52bd975c at the start and the end; captures re-made for it (`screenshot.py --if-stale`: 173 captures).
+- Diff against c502cb9e26 read: only `sovella/solutions.md` s7 e), blank lines at the three places round 1 named; no word changed.
+- Opened: stage-exercises-1280-43, -45; stage-exercises-390-58, -59.
+- s7 e) Mallivastaus is now four separate paragraphs (the source's figures; the magnetic force perpendicular to the velocity; the larger energy needing a stronger field and superconductivity; the radius not calculable classically), the longest about 85 words: 4, 9, 9 and 3 lines at 1280 px, each fitting well inside one capture at 390 px. Round 1's Major is resolved.
+- Paragraph spacing is the same as elsewhere in the solution card; inline formulas ($P = RI^2$, $RI^2 = 0$, $r = \frac{mv}{qB}$, $1{,}9\,\text{K}$) inside the column at 390 px, nothing clipped.
+- Around it: Kysytty and Periaate of e), the end of d), Yleisiä virheitä, Hyväksytään myös and the rubric b)–c) kept their layout; no overflow.
