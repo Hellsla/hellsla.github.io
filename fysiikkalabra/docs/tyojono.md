@@ -455,6 +455,12 @@ inquiry.json, kuvien tekstit ja käännökset. Kurssi aloitetaan, kun kohta 8m o
 leikkautuvat kaavat ovat mainissa (FY8 odottaa #601:tä). Avoin kohta 12 ratkesi päätöksellä P9: pieniä arvoeroja ei
 muuteta. Yksi kurssi = yksi haara ja yksi PR; enintään kuusi työntekijää yhtä aikaa.
 
+## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
+
+`kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
+käsitekortteja eikä alleviivauksia.
+Järjestys (opettaja 2026-11-15): kohdan 18 jälkeen ja ennen lopputarkistusta (15), jotta tarkistus kattaa myös kortit.
+
 ## 15. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14)
 
 Tavoite: FY1–FY8-oppimateriaali kaupallisen kustantajan julkaisuvalmiutta vastaavalle laatutasolle. Tarkistaja toimii
@@ -492,13 +498,7 @@ merkitään hyväksytyksi.
 (kohta 16) on tehty. Työ on laaja
 (113 lukua), joten se tehdään kurssi kerrallaan omissa ketjuissaan (`/quality-audit <id> --audit-only`, budjetit
 `.claude/commands/lesson.md`).
-Järjestys (opettaja 2026-11-15): kohtien 17 ja 18 jälkeen; sen jälkeen 13, 14 ja viimeisenä 16.
-
-## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
-
-`kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
-käsitekortteja eikä alleviivauksia.
-Järjestys (opettaja 2026-11-15): lopputarkistuksen (15) jälkeen, juuri ennen kohtaa 14.
+Järjestys (opettaja 2026-11-15): kohtien 17, 18 ja 13 jälkeen; sen jälkeen 14 ja viimeisenä 16.
 
 ## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; järjestys 2026-11-14)
 
