@@ -51,4 +51,8 @@ ds_g = math.sqrt(s1_g ** 2 + d_g ** 2) - s1_g
 a["fy5-12-L2-09"] = ds_g
 # L3-06 (same figure): the lowest f with destructive interference at P is n = 0, Δs = λ/2: f = v / (2Δs) = 340 / (2 · 0,50) = 340 Hz
 a["fy5-12-L3-06"] = 340 / (2 * ds_g)
+# L2-10 (source task, PhET Wave Interference): λ = 0,80 m; smallest positive Δs: constructive n = 1: Δs = λ = 0,80 m; destructive n = 0: Δs = λ/2
+lam_p = 0.80
+assert abs(1 * lam_p - 0.80) < 1e-12
+a["fy5-12-L2-10"] = (0 + 0.5) * lam_p           # 0,40 m
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
