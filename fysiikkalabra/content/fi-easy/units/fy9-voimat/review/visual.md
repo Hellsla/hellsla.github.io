@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 32cd94238f6e3a04
-Review of the recognition chart (queue 9c) and the term change against the version passed at 782699fd4ffa0aba; full on the chart, delta on the rest.
+CONTENT-HASH: 79c4d3698d63167e
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (32cd94238f6e3a04).
 
 ## Blocking
 (none)
@@ -9,6 +9,5 @@ Review of the recognition chart (queue 9c) and the term change against the versi
 (none)
 
 ## Checked
-- Chart at 360 px (fy9-tunnistus/fy9-voimat-fi-easy-360.png): every row's sign, arrow label and pill read in full, no clipped or overlapping label, white on #1a4d2e legible, pill style matches the other units, KaTeX subscripts and \overline vectors render.
-- ARIA_KARTTA/figures.json aria-label is Finnish and lists every row of the chart.
-- Friction terms: no liikekitka left in the unit's fi-easy texts.
+- Opened fy9-voimat-fi-easy-360.png (every row, pill and header read; no overlap except as noted), and read the changed aria-label/figures.json entry and the diff against the chart; the diff's other lines (teacher.md rows wording, unit.md sign wording, line break fix) read in full.
+- Round-1 finding(s) of my role re-checked: unchanged rest holds.

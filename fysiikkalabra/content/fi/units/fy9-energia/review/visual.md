@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 6ad4a6f43f1059e3
-Review of the recognition chart (queue 9c) and the term change against the version passed at e297d1ba1b8c1dd6; full on the chart, delta on the rest.
+CONTENT-HASH: 30d9fe8f97cb2a78
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (6ad4a6f43f1059e3).
 
 ## Blocking
 (none)
 
 ## Polish
-- A: none
+(none)
 
 ## Checked
-- Opened docs/figures/fy9-tunnistus/fy9-energia-fi-360.png: 8 rows (suljettu järjestelmä … voima siirtää matkan); no label clipped, overlapping or cramped, white on #1a4d2e pills legible, pill style, spine, start box and spacing identical to the other units' charts, all labels LaTeX (upright names, italic symbols).
-- ARIA_KARTTA in lessons/units/fy9-energia/figures.py read against every row: Finnish, complete, same rows in same order, matches the chart.
-- Diff: teacher.md 'käsitekartta' -> 'tunnistuskaavio' and the figure code; remaining diff lines (unit.md text) read for wording and term consistency.
+- Opened fy9-energia-fi-360.png (every row, pill and header read; no overlap except as noted), and read the changed aria-label/figures.json entry and the diff against the chart; the diff's other lines (teacher.md rows wording, unit.md sign wording, line break fix) read in full.
+- Round-1 finding(s) of my role re-checked: unchanged rest holds.
