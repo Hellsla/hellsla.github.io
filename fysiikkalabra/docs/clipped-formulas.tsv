@@ -1065,12 +1065,16 @@ en/fy8-1	1240\,\text{eV}\,\text{nm} : 2.14\,\text{eV} \approx 580\,\text{nm}
 en/fy8-1	1240\,\text{eV}\,\text{nm} : 2.28\,\text{eV} \approx 544\,\text{nm}
 en/fy8-1	1240\,\text{eV}\,\text{nm} : 2.30\,\text{eV} \approx 539\,\text{nm}
 en/fy8-1	1240\,\text{eV}\,\text{nm} : 2.34\,\text{eV} \approx 530\,\text{nm}
+en/fy8-1	1240\,\text{eV}\,\text{nm} : 222\,\text{nm} \approx 5.6\,\text{eV}
 en/fy8-1	1240\,\text{eV}\,\text{nm} : 3.20\,\text{eV} \approx 388\,\text{nm}
+en/fy8-1	1240\,\text{eV}\,\text{nm} : 428\,\text{nm} \approx 2.9\,\text{eV}
+en/fy8-1	1240\,\text{eV}\,\text{nm} : 450\,\text{nm} \approx 2.8\,\text{eV}
 en/fy8-1	1240\,\text{eV}\,\text{nm} : 650\,\text{nm} \approx 1.91\,\text{eV}
 en/fy8-1	1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} = 1.60
 en/fy8-1	3.20 \cdot 10^{-19}\,\text{J} = \tfrac{3.20 \cdot 10^{-19}}{1.602 \cdo
 en/fy8-1	9.46 \cdot 10^{15} + 1.84 \cdot 10^{15} = 1.13 \cdot 10^{16}
 en/fy8-1	= (hf - W_\text{A}) - (hf - W_\text{B})
+en/fy8-1	= 1.602 \cdot 10^{-19}\,\text{C} \cdot 4.195 \cdot 10^{-15}\,\tfrac{\t
 en/fy8-1	= 4.133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}} \cdot 5.169 \cdot
 en/fy8-1	= 5.676 \cdot 10^{-19}\,\text{J} - 3.653 \cdot 10^{-19}\,\text{J}
 en/fy8-1	= 6.5 \cdot 10^{14}\,\text{Hz} - \dfrac{0.55\,\text{eV}}{4.133 \cdot 1
@@ -1083,6 +1087,8 @@ en/fy8-1	= \dfrac{4.0 \cdot 10^{-3}\,\text{W}}{4.227 \cdot 10^{-19}\,\text{J}}
 en/fy8-1	= \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10
 en/fy8-1	E = \dfrac{hc}{\lambda} = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cd
 en/fy8-1	E = \tfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 
+en/fy8-1	E_\text{k,max} = 3.10\,\text{eV} - 2.50\,\text{eV}
+en/fy8-1	\lambda_0 \approx 1240\,\text{eV}\,\text{nm} : 4.31\,\text{eV} \approx
 en/fy8-10	0.001000\,\text{u} \cdot c^2 = 0.001000 \cdot 931.5\,\tfrac{\text{MeV}
 en/fy8-10	0.002388 \cdot 931.5\,\text{MeV} = 2.224\,\text{MeV}
 en/fy8-10	0.034347\,\text{u} - 0.032700\,\text{u} = 0.001647\,\text{u}
@@ -1093,7 +1099,9 @@ en/fy8-10	1640\,\text{MeV} : 209 \approx 7.85\,\text{MeV}
 en/fy8-10	2 \cdot 1.007825\,\text{u} + 2 \cdot 1.008665\,\text{u} = 4.032980\,\t
 en/fy8-10	3 \cdot (1.007825\,\text{u} - 1.007276\,\text{u}) = 0.001647\,\text{u}
 en/fy8-10	30.46\,\text{MeV} + 1.53\,\text{MeV} = 31.99\,\text{MeV}
+en/fy8-10	342\,\text{MeV} : 40 \approx 8.55\,\text{MeV}
 en/fy8-10	4.031300\,\text{u} - 4.002603\,\text{u} = 0.028697\,\text{u}
+en/fy8-10	4.032980\,\text{u} - 4.002603\,\text{u} = 0.030377\,\text{u}
 en/fy8-10	5.5 \cdot 10^{-4} \cdot 930\,\text{MeV} \approx 0.51\,\text{MeV}
 en/fy8-10	= (m_\text{U} + m_\text{n} - m_\text{Ba} - m_\text{Kr} - 3\,m_\text{n}
 en/fy8-10	= 1.00 \cdot 10^{-3}\,\text{kg} \cdot (2.998 \cdot 10^{8}\,\text{m/s})
@@ -1125,21 +1133,26 @@ en/fy8-10	\pm 0.0005\,\text{MeV} \cdot (141 + 92 + 235)
 en/fy8-11	(1.04106 - 1) \cdot 100\,\% = 4.106\,\%
 en/fy8-11	1\,\text{MeV} = 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J}
 en/fy8-11	4.4\,\text{GW} \cdot 0.9 \cdot 8800\,\text{h} \approx 35\,\text{TWh}
+en/fy8-11	4394\,\text{MW} \cdot 8760\,\text{h} \approx 38.5\,\text{TWh}
 en/fy8-11	890 + 890 + 1600 + 507 + 507 = 4394
 en/fy8-11	= (236.0525931\,\text{u} - 235.8543312\,\text{u})\,c^2
 en/fy8-11	= (m_\text{n} + m_\text{U} - m_\text{Xe} - m_\text{Sr} - 2m_\text{n})\
 en/fy8-11	= 0.92 \cdot 1536.4 \cdot 10^{6}\,\text{W} \cdot 31\,536\,000\,\text{s
+en/fy8-11	= 1.1596 \cdot 10^{25} \cdot 3.9030 \cdot 10^{-25}\,\text{kg}
 en/fy8-11	= 140.9144033\,\text{u} + 91.9261731\,\text{u} + 3 \cdot 1.0086649\,\t
 en/fy8-11	= 235.0439282 \cdot 1.66054 \cdot 10^{-27}\,\text{kg}
 en/fy8-11	= 5.0301511 \cdot 1.66054 \cdot 10^{-27}\,\text{kg}
 en/fy8-11	Q = (m_\text{Li} + m_\text{n} - m_\text{He} - m_\text{T})\,c^2
 en/fy8-11	Q = -0.8226429 \cdot 931.5\,\text{MeV} \approx -766\,\text{MeV}
+en/fy8-11	Q = 0.1 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 93.15\,\text{
 en/fy8-11	m_\text{initial} = 235.0439282\,\text{u} + 1.0086649\,\text{u} = 236.0
 en/fy8-11	{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{140}_{54}\t
 en/fy8-11	{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\t
 en/fy8-12	11\,\text{mm} : 5.5\,\text{mm} = 1.1\,\text{cm} : 0.55\,\text{cm} = 2
+en/fy8-12	1240\,\text{eV}\,\text{nm} : 12.6\,\text{eV} \approx 98\,\text{nm}
 en/fy8-12	3000\,\text{Bq} \cdot 0.365 \cdot 0.015 = 16.4\,\tfrac{1}{\text{s}}
 en/fy8-12	= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10
+en/fy8-13	(300 + 380 + 260) : 3 \approx 313\,\tfrac{\text{Bq}}{\text{m}^3}
 en/fy8-13	102.5 + 98.0 + 99.0 + 104.0 = 403.5
 en/fy8-13	240 \to 121 \to 60.5 \to 29.8\,\mu\text{Sv/h}
 en/fy8-13	26.0\,\mu\text{Sv/h} \cdot 0.444 = 11.6\,\mu\text{Sv/h}
@@ -1192,6 +1205,8 @@ en/fy8-3	= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 3.289 \cdot 10^{15}\,
 en/fy8-3	= \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{300 \cdot 10^{-9}\
 en/fy8-3	= \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10
 en/fy8-3	E_4 - E_2 = -0.850\,\text{eV} + 3.40\,\text{eV} = 2.55\,\text{eV}
+en/fy8-4	0.07110\,\text{nm} = 0.07110 \cdot 10^{-9}\,\text{m}
+en/fy8-4	0.07476\,\text{nm} = 0.07476 \cdot 10^{-9}\,\text{m}
 en/fy8-4	3 + 6 + 3 + 22 + 5 + 7 + 4 = 50
 en/fy8-4	= (9.319^2 + 8.863^2 + 9.319 \cdot 8.863) \cdot 10^{-48}\,\text{kg}^2\
 en/fy8-4	= 1.00 \cdot 10^3 \cdot 1.602 \cdot 10^{-19}\,\text{J}
@@ -1216,9 +1231,13 @@ en/fy8-6	(2.95\,\text{V} - 1.88\,\text{V}) : (2.64 \cdot 10^{14}\,\text{Hz})
 en/fy8-6	(6.304 - 6.626) : 6.626 \approx -4.9\,\%
 en/fy8-6	(6.568 - 6.626) : 6.626 \approx -0.9\,\%
 en/fy8-6	1240\,\text{eV}\,\text{nm} : 1.42\,\text{eV} \approx 870\,\text{nm}
+en/fy8-6	1240\,\text{eV}\,\text{nm} : 365\,\text{nm} \approx 3.4\,\text{eV}
 en/fy8-6	1240\,\text{eV}\,\text{nm} : 470\,\text{nm} \approx 2.64\,\text{eV}
+en/fy8-6	1240\,\text{eV}\,\text{nm} : 525\,\text{nm} \approx 2.4\,\text{eV}
+en/fy8-6	1240\,\text{eV}\,\text{nm} : 605\,\text{nm} \approx 2.0\,\text{eV}
 en/fy8-6	1240\,\text{eV}\,\text{nm} : 630\,\text{nm} \approx 1.97\,\text{eV}
 en/fy8-6	2.30\,\text{V} - 27.3 : 61.5\,\text{V} = 1.856\,\text{V}
+en/fy8-6	= 1.2484 \cdot 10^{17}\,\tfrac{1}{\text{s}} \cdot 3.1532 \cdot 10^{-19
 en/fy8-6	= 1.602 \cdot 10^{-19}\,\text{C} \cdot 0.30 \cdot 10^{-15}\,\text{V}\,
 en/fy8-6	= 1.602 \cdot 10^{-19}\,\text{C} \cdot 1.74\,\text{V} \cdot 630 \cdot 
 en/fy8-6	= 1.602 \cdot 10^{-19}\,\text{C} \cdot 1.93\,\text{V} \cdot 630 \cdot 
@@ -1240,8 +1259,10 @@ en/fy8-7	= 2.3500 \cdot 1.602 \cdot 10^{-19}\,\text{J}
 en/fy8-7	= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\
 en/fy8-7	= 8.080 \cdot 10^{19}\,\tfrac{1}{\text{s}} \cdot 1.788 \cdot 10^{-20}\
 en/fy8-7	E_3 - E_2 = -1.51\,\text{eV} + 3.40\,\text{eV} = 1.89\,\text{eV}
+en/fy8-8	140.5 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J}
 en/fy8-8	661\,700\,\text{eV} : 2.2545\,\text{eV} = 293\,500
 en/fy8-8	= 1173.3 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J}
+en/fy8-8	= 2505.8\,\text{keV} - 1332.5\,\text{keV}
 en/fy8-8	= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\
 en/fy8-8	E_2 - E_1 = 820.5 - 351.2 = 469.3
 en/fy8-8	E_3 - E_2 = 1501.4 - 820.5 = 680.9
@@ -1251,6 +1272,7 @@ en/fy8-8	{}^{232}_{90}\text{Th} \to {}^{228}_{88}\text{Ra} \to {}^{228}_{89}\te
 en/fy8-9	1000\,\text{MBq} - 200\,\text{MBq} = 800\,\text{MBq}
 en/fy8-9	100\,\% \!\to\! 50\,\% \!\to\! 25\,\% \!\to\! 12.5\,\% \!\to\! 6.25\,\
 en/fy8-9	376\,\text{MBq} - 175.8\,\text{MBq} = 200.2\,\text{MBq}
+en/fy8-9	800\,\text{kBq} \to 400\,\text{kBq} \to 200\,\text{kBq}
 en/fy9-aallot	106\,\text{dB} - 10\,\text{dB} \cdot \lg 400 \approx 106\,\text{dB} - 
 en/fy9-aallot	343\,\text{m/s} - 0.6\,\tfrac{\text{m/s}}{{}^\circ\text{C}} \cdot 15\,
 en/fy9-aallot	60\,\tfrac{\text{N}}{\text{m}} \cdot x^2 - 706.3\,\text{N} \cdot x - 1
@@ -2715,6 +2737,7 @@ fi-easy/fy8-1	3{,}20 \cdot 10^{-19}\,\text{J} = \tfrac{3{,}20 \cdot 10^{-19}}{1{
 fi-easy/fy8-1	3{,}734 \cdot 10^{-19}\,\text{J} : 1{,}602 \cdot 10^{-19}\,\tfrac{\tex
 fi-easy/fy8-1	9{,}46 \cdot 10^{15} + 1{,}84 \cdot 10^{15} = 1{,}13 \cdot 10^{16}
 fi-easy/fy8-1	= (hf - W_\text{A}) - (hf - W_\text{B})
+fi-easy/fy8-1	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}195 \cdot 10^{-15}\,\tfra
 fi-easy/fy8-1	= 4{,}133 \cdot 10^{-15} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}\,\text
 fi-easy/fy8-1	= 4{,}133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}} \cdot 5{,}169 \
 fi-easy/fy8-1	= 5{,}676 \cdot 10^{-19}\,\text{J} - 3{,}653 \cdot 10^{-19}\,\text{J}
@@ -2728,16 +2751,21 @@ fi-easy/fy8-1	= \dfrac{4{,}0 \cdot 10^{-3}\,\text{W}}{4{,}227 \cdot 10^{-19}\,\t
 fi-easy/fy8-1	= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdo
 fi-easy/fy8-1	E = \dfrac{hc}{\lambda} = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \
 fi-easy/fy8-1	E = \tfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \c
+fi-easy/fy8-1	E_\text{k,max} = 3{,}10\,\text{eV} - 2{,}50\,\text{eV}
+fi-easy/fy8-1	\lambda_0 \approx 1240\,\text{eV}\,\text{nm} : 4{,}31\,\text{eV} \appr
 fi-easy/fy8-10	(2 \cdot 2{,}014102\,\text{u} - 4{,}002603\,\text{u})\,c^2
 fi-easy/fy8-10	0{,}001000\,\text{u} \cdot c^2 = 0{,}001000 \cdot 931{,}5\,\tfrac{\tex
 fi-easy/fy8-10	0{,}002388 \cdot 931{,}5\,\text{MeV} = 2{,}224\,\text{MeV}
 fi-easy/fy8-10	0{,}034347\,\text{u} - 0{,}032700\,\text{u} = 0{,}001647\,\text{u}
 fi-easy/fy8-10	0{,}098940 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 92{,}16\
+fi-easy/fy8-10	0{,}14 \cdot 900\,\text{MeV} \approx 126\,\text{MeV}
 fi-easy/fy8-10	1640\,\text{MeV} : 209 \approx 7{,}85\,\text{MeV}
 fi-easy/fy8-10	2 \cdot 1{,}007825\,\text{u} + 2 \cdot 1{,}008665\,\text{u} = 4{,}0329
 fi-easy/fy8-10	30{,}46\,\text{MeV} + 1{,}53\,\text{MeV} = 31{,}99\,\text{MeV}
 fi-easy/fy8-10	31{,}99\,\text{MeV} : 6 = 5{,}332\,\text{MeV}
+fi-easy/fy8-10	342\,\text{MeV} : 40 \approx 8{,}55\,\text{MeV}
 fi-easy/fy8-10	4{,}031300\,\text{u} - 4{,}002603\,\text{u} = 0{,}028697\,\text{u}
+fi-easy/fy8-10	4{,}032980\,\text{u} - 4{,}002603\,\text{u} = 0{,}030377\,\text{u}
 fi-easy/fy8-10	5{,}5 \cdot 10^{-4} \cdot 930\,\text{MeV} \approx 0{,}51\,\text{MeV}
 fi-easy/fy8-10	= (m_\text{U} + m_\text{n} - m_\text{Ba} - m_\text{Kr} - 3\,m_\text{n}
 fi-easy/fy8-10	= 1173{,}97\,\text{MeV} + 783{,}20\,\text{MeV} - 1783{,}89\,\text{MeV}
@@ -2759,6 +2787,7 @@ fi-easy/fy8-10	= 3{,}023475\,\text{u} + 3{,}025995\,\text{u} - 6{,}015123\,\text
 fi-easy/fy8-10	= 4 \cdot 7{,}074\,\text{MeV} - 2 \cdot 2 \cdot 1{,}112\,\text{MeV}
 fi-easy/fy8-10	= 6 \cdot 1{,}007825\,\text{u} + 6 \cdot 1{,}008665\,\text{u} - 12{,}0
 fi-easy/fy8-10	= 6{,}046950\,\text{u} + 6{,}051990\,\text{u} - 12{,}000000\,\text{u}
+fi-easy/fy8-10	= \dfrac{1{,}0 \cdot 10^{28}\,\text{W} \cdot 3{,}15576 \cdot 10^{7}\,\
 fi-easy/fy8-10	E_\text{B} = 0{,}032700 \cdot 931{,}5\,\text{MeV} = 30{,}46\,\text{MeV
 fi-easy/fy8-10	Q = 0{,}004583 \cdot 931{,}5\,\text{MeV} \approx 4{,}27\,\text{MeV}
 fi-easy/fy8-10	Q = E_\text{B}(\text{Ba}) + E_\text{B}(\text{Kr}) - E_\text{B}(\text{U
@@ -2767,6 +2796,7 @@ fi-easy/fy8-10	\Delta m = \tfrac{E}{c^2} = \tfrac{393{,}5 \cdot 10^{3}\,\text{J}
 fi-easy/fy8-10	\pm 0{,}0005\,\text{MeV} \cdot (141 + 92 + 235)
 fi-easy/fy8-11	(1{,}04106 - 1) \cdot 100\,\% = 4{,}106\,\%
 fi-easy/fy8-11	0{,}0035 \cdot 1000\,\text{MeV} = 3{,}5\,\text{MeV}
+fi-easy/fy8-11	0{,}005 \cdot 900\,\text{MeV} = 4{,}5\,\text{MeV}
 fi-easy/fy8-11	1\,\text{MeV} = 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
 fi-easy/fy8-11	4394\,\text{MW} \cdot 8760\,\text{h} \approx 38{,}5\,\text{TWh}
 fi-easy/fy8-11	4{,}4\,\text{GW} \cdot 0{,}9 \cdot 8800\,\text{h} \approx 35\,\text{TW
@@ -2775,10 +2805,12 @@ fi-easy/fy8-11	= (236{,}0525931\,\text{u} - 235{,}8543312\,\text{u})\,c^2
 fi-easy/fy8-11	= (m_\text{n} + m_\text{U} - m_\text{Xe} - m_\text{Sr} - 2m_\text{n})\
 fi-easy/fy8-11	= 0{,}92 \cdot 1536{,}4 \cdot 10^{6}\,\text{W} \cdot 31\,536\,000\,\te
 fi-easy/fy8-11	= 140{,}9144033\,\text{u} + 91{,}9261731\,\text{u} + 3 \cdot 1{,}00866
+fi-easy/fy8-11	= 1{,}1596 \cdot 10^{25} \cdot 3{,}9030 \cdot 10^{-25}\,\text{kg}
 fi-easy/fy8-11	= 235{,}0439282 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg}
 fi-easy/fy8-11	= 5{,}0301511 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg}
 fi-easy/fy8-11	Q = (m_\text{Li} + m_\text{n} - m_\text{He} - m_\text{T})\,c^2
 fi-easy/fy8-11	Q = -0{,}8226429 \cdot 931{,}5\,\text{MeV} \approx -766\,\text{MeV}
+fi-easy/fy8-11	Q = 0{,}1 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 93{,}15\,
 fi-easy/fy8-11	m_\text{alku} = 235{,}0439282\,\text{u} + 1{,}0086649\,\text{u} = 236{
 fi-easy/fy8-11	{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{140}_{54}\t
 fi-easy/fy8-11	{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\t
@@ -2787,10 +2819,14 @@ fi-easy/fy8-12	1240\,\text{eV}\,\text{nm} : 12{,}6\,\text{eV} \approx 98\,\text{
 fi-easy/fy8-12	3000\,\text{Bq} \cdot 0{,}365 \cdot 0{,}015 = 16{,}4\,\tfrac{1}{\text{
 fi-easy/fy8-12	5{,}49 \cdot 10^{6} : 34 : 4{,}1 \approx 3{,}9 \cdot 10^{4}
 fi-easy/fy8-12	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdo
+fi-easy/fy8-13	(300 + 380 + 260) : 3 \approx 313\,\tfrac{\text{Bq}}{\text{m}^3}
 fi-easy/fy8-13	102{,}5 + 98{,}0 + 99{,}0 + 104{,}0 = 403{,}5
 fi-easy/fy8-13	240 \to 121 \to 60{,}5 \to 29{,}8\,\mu\text{Sv/h}
 fi-easy/fy8-13	26{,}0\,\mu\text{Sv/h} \cdot 0{,}444 = 11{,}6\,\mu\text{Sv/h}
+fi-easy/fy8-13	2{,}4\,\text{h} \cdot 10{,}6\,\mu\text{Sv/h} \approx 25\,\mu\text{Sv}
 fi-easy/fy8-13	380 + 260 + 140 + 300 = 1080\,\tfrac{\text{Bq}}{\text{m}^3}
+fi-easy/fy8-13	4{,}2\,\text{h} \cdot 24\,\mu\text{Sv/h} \approx 100\,\mu\text{Sv}
+fi-easy/fy8-13	80\,\mu\text{Sv/h} : 32 = 2{,}5\,\mu\text{Sv/h}
 fi-easy/fy8-13	96 \to 48 \to 24 \to 12 \to 6 \to 3
 fi-easy/fy8-13	= 0{,}04 \cdot 2{,}0\,\text{mSv} + 0{,}12 \cdot 1{,}0\,\text{mSv}
 fi-easy/fy8-13	= 0{,}12 \cdot 20 \cdot 0{,}10\,\text{mGy} + 1 \cdot 0{,}50\,\text{mGy
@@ -2837,12 +2873,15 @@ fi-easy/fy8-2	\Delta E = 1{,}89 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}028
 fi-easy/fy8-2	hc = 6{,}626 \cdot 10^{-34} \cdot 2{,}998 \cdot 10^{8} = 1{,}9865 \cdo
 fi-easy/fy8-3	-0{,}850\,\text{eV} + 3{,}40\,\text{eV} = 2{,}55\,\text{eV}
 fi-easy/fy8-3	0{,}661\,\text{eV} + 1{,}889\,\text{eV} + 10{,}20\,\text{eV}
+fi-easy/fy8-3	= -0{,}378\,\text{eV} + 3{,}40\,\text{eV}
 fi-easy/fy8-3	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8
 fi-easy/fy8-3	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 3{,}289 \cdot 10^{1
 fi-easy/fy8-3	= \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{300 \cdot 10^{-9
 fi-easy/fy8-3	= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdo
 fi-easy/fy8-3	E_4 - E_2 = -0{,}850\,\text{eV} + 3{,}40\,\text{eV} = 2{,}55\,\text{eV
 fi-easy/fy8-4	0{,}0500\,\text{nm} \cdot 1{,}04 = 0{,}0520\,\text{nm}
+fi-easy/fy8-4	0{,}07110\,\text{nm} = 0{,}07110 \cdot 10^{-9}\,\text{m}
+fi-easy/fy8-4	0{,}07476\,\text{nm} = 0{,}07476 \cdot 10^{-9}\,\text{m}
 fi-easy/fy8-4	3 + 6 + 3 + 22 + 5 + 7 + 4 = 50
 fi-easy/fy8-4	= (9{,}319^2 + 8{,}863^2 + 9{,}319 \cdot 8{,}863) \cdot 10^{-48}\,\tex
 fi-easy/fy8-4	= 1{,}00 \cdot 10^3 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
@@ -2876,6 +2915,7 @@ fi-easy/fy8-6	1240\,\text{eV}\,\text{nm} : 525\,\text{nm} \approx 2{,}4\,\text{e
 fi-easy/fy8-6	1240\,\text{eV}\,\text{nm} : 605\,\text{nm} \approx 2{,}0\,\text{eV}
 fi-easy/fy8-6	1240\,\text{eV}\,\text{nm} : 630\,\text{nm} \approx 1{,}97\,\text{eV}
 fi-easy/fy8-6	2{,}30\,\text{V} - 27{,}3 : 61{,}5\,\text{V} = 1{,}856\,\text{V}
+fi-easy/fy8-6	= 1{,}2484 \cdot 10^{17}\,\tfrac{1}{\text{s}} \cdot 3{,}1532 \cdot 10^
 fi-easy/fy8-6	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}30 \cdot 10^{-15}\,\text{
 fi-easy/fy8-6	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}74\,\text{V} \cdot 630 \c
 fi-easy/fy8-6	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}93\,\text{V} \cdot 630 \c
@@ -2893,12 +2933,16 @@ fi-easy/fy8-7	= (3{,}0 \cdot 10^{-3}\,\text{J} \cdot 1064 \cdot 10^{-9}\,\text{m
 fi-easy/fy8-7	= (6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{
 fi-easy/fy8-7	= -3{,}12\,\text{eV} - (-5{,}45\,\text{eV})
 fi-easy/fy8-7	= 2{,}0354 \cdot 10^{-19}\,\text{J} - 1{,}8566 \cdot 10^{-19}\,\text{J
+fi-easy/fy8-7	= 2{,}3500 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
 fi-easy/fy8-7	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8
+fi-easy/fy8-7	= 8{,}080 \cdot 10^{19}\,\tfrac{1}{\text{s}} \cdot 1{,}788 \cdot 10^{-
 fi-easy/fy8-7	E_3 - E_2 = -1{,}51\,\text{eV} + 3{,}40\,\text{eV} = 1{,}89\,\text{eV}
+fi-easy/fy8-8	140{,}5 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
 fi-easy/fy8-8	660\,000\,\text{eV} : 2\,\text{eV} \approx 330\,000
 fi-easy/fy8-8	661\,700\,\text{eV} : 2{,}2545\,\text{eV} = 293\,500
 fi-easy/fy8-8	82 + 128 = 83 + 127 = 210
 fi-easy/fy8-8	= 1173{,}3 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
+fi-easy/fy8-8	= 2505{,}8\,\text{keV} - 1332{,}5\,\text{keV}
 fi-easy/fy8-8	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8
 fi-easy/fy8-8	hf = E_3 - E_2 = -1{,}51\,\text{eV} + 3{,}40\,\text{eV} = 1{,}89\,\tex
 fi-easy/fy8-8	{}^{210}_{82}\text{Pb} \to {}^{210}_{83}\text{Bi} \to {}^{210}_{84}\te
@@ -2906,6 +2950,7 @@ fi-easy/fy8-8	{}^{232}_{90}\text{Th} \to {}^{228}_{88}\text{Ra} \to {}^{228}_{89
 fi-easy/fy8-9	1000\,\text{MBq} - 200\,\text{MBq} = 800\,\text{MBq}
 fi-easy/fy8-9	100\,\% \!\to\! 50\,\% \!\to\! 25\,\% \!\to\! 12{,}5\,\% \!\to\! 6{,}2
 fi-easy/fy8-9	376\,\text{MBq} - 175{,}8\,\text{MBq} = 200{,}2\,\text{MBq}
+fi-easy/fy8-9	800\,\text{kBq} \to 400\,\text{kBq} \to 200\,\text{kBq}
 fi-easy/fy8-9	= 0{,}0864\,\tfrac{1}{\text{d}} + 0{,}1398\,\tfrac{1}{\text{d}}
 fi-easy/fy9-aallot	106\,\text{dB} - 10\,\text{dB} \cdot \lg 400 \approx 106\,\text{dB} - 
 fi-easy/fy9-aallot	119{,}3\,\text{km} : 3{,}5\,\text{km/s} \approx 34{,}1\,\text{s}
@@ -4342,6 +4387,7 @@ fy8-1	3{,}20 \cdot 10^{-19}\,\text{J} = \tfrac{3{,}20 \cdot 10^{-19}}{1{,}60
 fy8-1	3{,}734 \cdot 10^{-19}\,\text{J} : 1{,}602 \cdot 10^{-19}\,\tfrac{\tex
 fy8-1	9{,}46 \cdot 10^{15} + 1{,}84 \cdot 10^{15} = 1{,}13 \cdot 10^{16}
 fy8-1	= (hf - W_\text{A}) - (hf - W_\text{B})
+fy8-1	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}195 \cdot 10^{-15}\,\tfra
 fy8-1	= 4{,}133 \cdot 10^{-15} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}\,\text
 fy8-1	= 4{,}133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}} \cdot 5{,}169 \
 fy8-1	= 5{,}676 \cdot 10^{-19}\,\text{J} - 3{,}653 \cdot 10^{-19}\,\text{J}
@@ -4355,16 +4401,21 @@ fy8-1	= \dfrac{4{,}0 \cdot 10^{-3}\,\text{W}}{4{,}227 \cdot 10^{-19}\,\text{
 fy8-1	= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdo
 fy8-1	E = \dfrac{hc}{\lambda} = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \
 fy8-1	E = \tfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \c
+fy8-1	E_\text{k,max} = 3{,}10\,\text{eV} - 2{,}50\,\text{eV}
+fy8-1	\lambda_0 \approx 1240\,\text{eV}\,\text{nm} : 4{,}31\,\text{eV} \appr
 fy8-10	(2 \cdot 2{,}014102\,\text{u} - 4{,}002603\,\text{u})\,c^2
 fy8-10	0{,}001000\,\text{u} \cdot c^2 = 0{,}001000 \cdot 931{,}5\,\tfrac{\tex
 fy8-10	0{,}002388 \cdot 931{,}5\,\text{MeV} = 2{,}224\,\text{MeV}
 fy8-10	0{,}034347\,\text{u} - 0{,}032700\,\text{u} = 0{,}001647\,\text{u}
 fy8-10	0{,}098940 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 92{,}16\
+fy8-10	0{,}14 \cdot 900\,\text{MeV} \approx 126\,\text{MeV}
 fy8-10	1640\,\text{MeV} : 209 \approx 7{,}85\,\text{MeV}
 fy8-10	2 \cdot 1{,}007825\,\text{u} + 2 \cdot 1{,}008665\,\text{u} = 4{,}0329
 fy8-10	30{,}46\,\text{MeV} + 1{,}53\,\text{MeV} = 31{,}99\,\text{MeV}
 fy8-10	31{,}99\,\text{MeV} : 6 = 5{,}332\,\text{MeV}
+fy8-10	342\,\text{MeV} : 40 \approx 8{,}55\,\text{MeV}
 fy8-10	4{,}031300\,\text{u} - 4{,}002603\,\text{u} = 0{,}028697\,\text{u}
+fy8-10	4{,}032980\,\text{u} - 4{,}002603\,\text{u} = 0{,}030377\,\text{u}
 fy8-10	5{,}5 \cdot 10^{-4} \cdot 930\,\text{MeV} \approx 0{,}51\,\text{MeV}
 fy8-10	= (m_\text{U} + m_\text{n} - m_\text{Ba} - m_\text{Kr} - 3\,m_\text{n}
 fy8-10	= 1173{,}97\,\text{MeV} + 783{,}20\,\text{MeV} - 1783{,}89\,\text{MeV}
@@ -4386,6 +4437,7 @@ fy8-10	= 3{,}023475\,\text{u} + 3{,}025995\,\text{u} - 6{,}015123\,\text{u}
 fy8-10	= 4 \cdot 7{,}074\,\text{MeV} - 2 \cdot 2 \cdot 1{,}112\,\text{MeV}
 fy8-10	= 6 \cdot 1{,}007825\,\text{u} + 6 \cdot 1{,}008665\,\text{u} - 12{,}0
 fy8-10	= 6{,}046950\,\text{u} + 6{,}051990\,\text{u} - 12{,}000000\,\text{u}
+fy8-10	= \dfrac{1{,}0 \cdot 10^{28}\,\text{W} \cdot 3{,}15576 \cdot 10^{7}\,\
 fy8-10	E_\text{B} = 0{,}032700 \cdot 931{,}5\,\text{MeV} = 30{,}46\,\text{MeV
 fy8-10	Q = 0{,}004583 \cdot 931{,}5\,\text{MeV} \approx 4{,}27\,\text{MeV}
 fy8-10	Q = E_\text{B}(\text{Ba}) + E_\text{B}(\text{Kr}) - E_\text{B}(\text{U
@@ -4394,6 +4446,7 @@ fy8-10	\Delta m = \tfrac{E}{c^2} = \tfrac{393{,}5 \cdot 10^{3}\,\text{J}}{(2{
 fy8-10	\pm 0{,}0005\,\text{MeV} \cdot (141 + 92 + 235)
 fy8-11	(1{,}04106 - 1) \cdot 100\,\% = 4{,}106\,\%
 fy8-11	0{,}0035 \cdot 1000\,\text{MeV} = 3{,}5\,\text{MeV}
+fy8-11	0{,}005 \cdot 900\,\text{MeV} = 4{,}5\,\text{MeV}
 fy8-11	1\,\text{MeV} = 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
 fy8-11	4394\,\text{MW} \cdot 8760\,\text{h} \approx 38{,}5\,\text{TWh}
 fy8-11	4{,}4\,\text{GW} \cdot 0{,}9 \cdot 8800\,\text{h} \approx 35\,\text{TW
@@ -4402,10 +4455,12 @@ fy8-11	= (236{,}0525931\,\text{u} - 235{,}8543312\,\text{u})\,c^2
 fy8-11	= (m_\text{n} + m_\text{U} - m_\text{Xe} - m_\text{Sr} - 2m_\text{n})\
 fy8-11	= 0{,}92 \cdot 1536{,}4 \cdot 10^{6}\,\text{W} \cdot 31\,536\,000\,\te
 fy8-11	= 140{,}9144033\,\text{u} + 91{,}9261731\,\text{u} + 3 \cdot 1{,}00866
+fy8-11	= 1{,}1596 \cdot 10^{25} \cdot 3{,}9030 \cdot 10^{-25}\,\text{kg}
 fy8-11	= 235{,}0439282 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg}
 fy8-11	= 5{,}0301511 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg}
 fy8-11	Q = (m_\text{Li} + m_\text{n} - m_\text{He} - m_\text{T})\,c^2
 fy8-11	Q = -0{,}8226429 \cdot 931{,}5\,\text{MeV} \approx -766\,\text{MeV}
+fy8-11	Q = 0{,}1 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 93{,}15\,
 fy8-11	m_\text{alku} = 235{,}0439282\,\text{u} + 1{,}0086649\,\text{u} = 236{
 fy8-11	{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{140}_{54}\t
 fy8-11	{}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\t
@@ -4414,10 +4469,14 @@ fy8-12	1240\,\text{eV}\,\text{nm} : 12{,}6\,\text{eV} \approx 98\,\text{nm}
 fy8-12	3000\,\text{Bq} \cdot 0{,}365 \cdot 0{,}015 = 16{,}4\,\tfrac{1}{\text{
 fy8-12	5{,}49 \cdot 10^{6} : 34 : 4{,}1 \approx 3{,}9 \cdot 10^{4}
 fy8-12	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdo
+fy8-13	(300 + 380 + 260) : 3 \approx 313\,\tfrac{\text{Bq}}{\text{m}^3}
 fy8-13	102{,}5 + 98{,}0 + 99{,}0 + 104{,}0 = 403{,}5
 fy8-13	240 \to 121 \to 60{,}5 \to 29{,}8\,\mu\text{Sv/h}
 fy8-13	26{,}0\,\mu\text{Sv/h} \cdot 0{,}444 = 11{,}6\,\mu\text{Sv/h}
+fy8-13	2{,}4\,\text{h} \cdot 10{,}6\,\mu\text{Sv/h} \approx 25\,\mu\text{Sv}
 fy8-13	380 + 260 + 140 + 300 = 1080\,\tfrac{\text{Bq}}{\text{m}^3}
+fy8-13	4{,}2\,\text{h} \cdot 24\,\mu\text{Sv/h} \approx 100\,\mu\text{Sv}
+fy8-13	80\,\mu\text{Sv/h} : 32 = 2{,}5\,\mu\text{Sv/h}
 fy8-13	96 \to 48 \to 24 \to 12 \to 6 \to 3
 fy8-13	= 0{,}04 \cdot 2{,}0\,\text{mSv} + 0{,}12 \cdot 1{,}0\,\text{mSv}
 fy8-13	= 0{,}12 \cdot 20 \cdot 0{,}10\,\text{mGy} + 1 \cdot 0{,}50\,\text{mGy
@@ -4464,12 +4523,15 @@ fy8-2	\Delta E = 1{,}89 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}028 \cd
 fy8-2	hc = 6{,}626 \cdot 10^{-34} \cdot 2{,}998 \cdot 10^{8} = 1{,}9865 \cdo
 fy8-3	-0{,}850\,\text{eV} + 3{,}40\,\text{eV} = 2{,}55\,\text{eV}
 fy8-3	0{,}661\,\text{eV} + 1{,}889\,\text{eV} + 10{,}20\,\text{eV}
+fy8-3	= -0{,}378\,\text{eV} + 3{,}40\,\text{eV}
 fy8-3	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8
 fy8-3	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 3{,}289 \cdot 10^{1
 fy8-3	= \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{300 \cdot 10^{-9
 fy8-3	= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdo
 fy8-3	E_4 - E_2 = -0{,}850\,\text{eV} + 3{,}40\,\text{eV} = 2{,}55\,\text{eV
 fy8-4	0{,}0500\,\text{nm} \cdot 1{,}04 = 0{,}0520\,\text{nm}
+fy8-4	0{,}07110\,\text{nm} = 0{,}07110 \cdot 10^{-9}\,\text{m}
+fy8-4	0{,}07476\,\text{nm} = 0{,}07476 \cdot 10^{-9}\,\text{m}
 fy8-4	3 + 6 + 3 + 22 + 5 + 7 + 4 = 50
 fy8-4	= (9{,}319^2 + 8{,}863^2 + 9{,}319 \cdot 8{,}863) \cdot 10^{-48}\,\tex
 fy8-4	= 1{,}00 \cdot 10^3 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
@@ -4503,6 +4565,7 @@ fy8-6	1240\,\text{eV}\,\text{nm} : 525\,\text{nm} \approx 2{,}4\,\text{eV}
 fy8-6	1240\,\text{eV}\,\text{nm} : 605\,\text{nm} \approx 2{,}0\,\text{eV}
 fy8-6	1240\,\text{eV}\,\text{nm} : 630\,\text{nm} \approx 1{,}97\,\text{eV}
 fy8-6	2{,}30\,\text{V} - 27{,}3 : 61{,}5\,\text{V} = 1{,}856\,\text{V}
+fy8-6	= 1{,}2484 \cdot 10^{17}\,\tfrac{1}{\text{s}} \cdot 3{,}1532 \cdot 10^
 fy8-6	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}30 \cdot 10^{-15}\,\text{
 fy8-6	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}74\,\text{V} \cdot 630 \c
 fy8-6	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}93\,\text{V} \cdot 630 \c
@@ -4520,12 +4583,16 @@ fy8-7	= (3{,}0 \cdot 10^{-3}\,\text{J} \cdot 1064 \cdot 10^{-9}\,\text{m}) :
 fy8-7	= (6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{
 fy8-7	= -3{,}12\,\text{eV} - (-5{,}45\,\text{eV})
 fy8-7	= 2{,}0354 \cdot 10^{-19}\,\text{J} - 1{,}8566 \cdot 10^{-19}\,\text{J
+fy8-7	= 2{,}3500 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
 fy8-7	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8
+fy8-7	= 8{,}080 \cdot 10^{19}\,\tfrac{1}{\text{s}} \cdot 1{,}788 \cdot 10^{-
 fy8-7	E_3 - E_2 = -1{,}51\,\text{eV} + 3{,}40\,\text{eV} = 1{,}89\,\text{eV}
+fy8-8	140{,}5 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
 fy8-8	660\,000\,\text{eV} : 2\,\text{eV} \approx 330\,000
 fy8-8	661\,700\,\text{eV} : 2{,}2545\,\text{eV} = 293\,500
 fy8-8	82 + 128 = 83 + 127 = 210
 fy8-8	= 1173{,}3 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
+fy8-8	= 2505{,}8\,\text{keV} - 1332{,}5\,\text{keV}
 fy8-8	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8
 fy8-8	hf = E_3 - E_2 = -1{,}51\,\text{eV} + 3{,}40\,\text{eV} = 1{,}89\,\tex
 fy8-8	{}^{210}_{82}\text{Pb} \to {}^{210}_{83}\text{Bi} \to {}^{210}_{84}\te
@@ -4533,6 +4600,7 @@ fy8-8	{}^{232}_{90}\text{Th} \to {}^{228}_{88}\text{Ra} \to {}^{228}_{89}\te
 fy8-9	1000\,\text{MBq} - 200\,\text{MBq} = 800\,\text{MBq}
 fy8-9	100\,\% \!\to\! 50\,\% \!\to\! 25\,\% \!\to\! 12{,}5\,\% \!\to\! 6{,}2
 fy8-9	376\,\text{MBq} - 175{,}8\,\text{MBq} = 200{,}2\,\text{MBq}
+fy8-9	800\,\text{kBq} \to 400\,\text{kBq} \to 200\,\text{kBq}
 fy8-9	= 0{,}0864\,\tfrac{1}{\text{d}} + 0{,}1398\,\tfrac{1}{\text{d}}
 fy9-aallot	106\,\text{dB} - 10\,\text{dB} \cdot \lg 400 \approx 106\,\text{dB} - 
 fy9-aallot	119{,}3\,\text{km} : 3{,}5\,\text{km/s} \approx 34{,}1\,\text{s}
