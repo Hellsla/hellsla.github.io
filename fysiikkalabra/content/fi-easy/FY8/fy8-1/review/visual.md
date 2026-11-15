@@ -1,11 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: f773fe943ab70280
+VERDICT: PASS
+CONTENT-HASH: dc9c1e133b91dc6b
 
 ## Blocking
-- [Major] lesson.md, inquiry.json, solutions.md (the lifted formulas) — the formula was set as `$$...$$` in the middle of a sentence, so the sentence's closing punctuation (". ", ", ") lands alone at the start of the line after the display block (seen in fy8-1 theory-1280-2 and -3: a lone "." line under the block; ". Tavallinen 365 nm:n UV-A-lamppu..." begins with a full stop). The sentence is broken, and a student reads a stray dot — Fix: close the lead-in sentence before the display (end it with a colon or let the formula stand as its own unit: "Siksi:" / block / next sentence starting with a capital), and put any trailing words after the block in a new sentence; no punctuation may start a line.
+(none)
 
 ## Polish
-- [Minor] The aligned blocks themselves (rows, = and ≈ in one column, units upright, thin spaces) read well at 1280 px; the 360 px check is for check_layout.
+- [Minor] re-broken aligned rows (delta round 3) — in fy8-15 L2-01 the row "· c^2 = 37,841 MeV" begins with a break before · inside the product (the bracket term is too long for one row, so the rule allows it); readable, no change needed.
 
 ## Checked
-- batch delta review: fy8-1 theory-1280-2, theory-1280-3 opened (the defect is seen there); the same `$$` + punctuation pattern found by grep in this lesson's changed lines (lesson.md, inquiry.json or solutions.md); other captures not individually opened.
+Delta, reflow only. Opened at 1280 px: fy8-13 open-exercises-1280-7 (task 13-7 Sijoitus), fy8-10 open-exercises-1280-1 (Δm chain: terms "6·1,007825 u" / "+ 6·1,008665 u" / "− 12,000000 u = …" whole, = and + aligned), fy8-15 open-exercises-L2-1280-2 and L3-1280-8; at 390 px: fy8-11 example-390-2 (m_loppu rows: each + term whole). No term is cut, no clipping, no overflow, operators aligned, spacing even. Other sets' changed blocks use the same re-break pattern (term per row) and were judged by this sample.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
