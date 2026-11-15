@@ -141,9 +141,9 @@
           "feedback": "True: outside the lines go from $\\text{N}$ to $\\text{S}$ and inside from $\\text{S}$ to $\\text{N}$. A line has no beginning and no end, because there is no single magnetic pole."
         },
         {
-          "text": "When the magnet is hung from a thread so that it can turn freely, its $\\text{N}$ end turns towards the Earth's magnetic south pole.",
+          "text": "When the magnet is hung from a thread so that it can turn freely, its $\\text{N}$ end turns towards the south pole of the Earth's bar-magnet model.",
           "true": true,
-          "feedback": "True: unlike poles attract each other, so the $\\text{N}$ end turns towards the Earth's magnetic south pole. It is near the geographic north pole, so the $\\text{N}$ end points north."
+          "feedback": "True: unlike poles attract each other, so the $\\text{N}$ end turns towards the south pole of the Earth's bar-magnet model. It is near the geographic north pole, so the $\\text{N}$ end points north."
         },
         {
           "text": "When a second magnet is brought onto the table, the field lines of the two magnets can cross each other between them.",

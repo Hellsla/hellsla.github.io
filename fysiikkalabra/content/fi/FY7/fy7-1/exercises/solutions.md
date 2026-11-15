@@ -90,7 +90,7 @@
 
 ## fy7-1-L3-02
 **Kysytty:** miksi magneetilla vedetty teräsliitin muuttuu magneetiksi ja miksi kuumennus poistaa magnetoitumisen
-**Periaate:** Teräs on ferromagneettinen. Sen atomidipolit muodostavat alkeisalueita, joiden suunnat vaihtelevat magnetoimattomassa kappaleessa. Ulkoinen kenttä järjestää alkeisalueet, ja kovassa teräksessä järjestys säilyy. Riittävän korkeassa lämpötilassa atomien lämpöliike rikkoo atomidipolien järjestyksen.
+**Periaate:** Teräs on ferromagneettinen. Sen atomidipolit muodostavat alkeisalueita, joiden suunnat vaihtelevat magnetoimattomassa kappaleessa. Ulkoinen kenttä järjestää alkeisalueet, ja teräksessä järjestys säilyy osittain myös kentän poistuttua. Riittävän korkeassa lämpötilassa atomien lämpöliike rikkoo atomidipolien järjestyksen.
 **Mallivastaus:** Aluksi liittimen alkeisalueet osoittavat eri suuntiin, ja niiden vaikutukset kumoavat toisensa. Kun magneetin napaa vedetään liitintä pitkin aina samaan suuntaan, magneetin kenttä kääntää alkeisalueita ja kasvattaa niitä, joiden suunta on kentän suuntainen. Kovassa teräksessä alkeisalueet jäävät järjestykseen, kun magneetti viedään pois, joten liittimestä tulee kestomagneetti, jolla on oma pohjoisnapa ja etelänapa. Se magnetoi nastat ja vetää niitä. Kun liitin kuumennetaan riittävän kuumaksi (raudan Curie-lämpötila on noin $770\,{}^\circ\text{C}$), atomien lämpöliike sekoittaa atomidipolien järjestyksen ja alkeisalueet katoavat. Jäähtyessä alkeisalueet syntyvät uudelleen mutta satunnaisiin suuntiin, joten liitin ei enää ole magneetti.
 
 ## fy7-1-L3-03

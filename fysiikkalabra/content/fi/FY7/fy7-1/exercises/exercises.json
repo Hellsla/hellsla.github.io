@@ -141,9 +141,9 @@
      "feedback": "Tosi: ulkona viivat kulkevat $\\text{N}$:stä $\\text{S}$:ään ja sisällä $\\text{S}$:stä $\\text{N}$:ään. Viivalla ei ole alkua eikä loppua, koska yksittäistä magneettinapaa ei ole."
     },
     {
-     "text": "Kun magneetti ripustetaan langasta vapaasti kääntyväksi, sen $\\text{N}$-pää kääntyy kohti Maan magneettista etelänapaa.",
+     "text": "Kun magneetti ripustetaan langasta vapaasti kääntyväksi, sen $\\text{N}$-pää kääntyy kohti Maan sauvamagneettimallin etelänapaa.",
      "true": true,
-     "feedback": "Tosi: erinimiset navat vetävät toisiaan, joten $\\text{N}$-pää kääntyy kohti Maan magneettista etelänapaa. Se on maantieteellisen pohjoisnavan lähellä, joten $\\text{N}$-pää osoittaa pohjoiseen."
+     "feedback": "Tosi: erinimiset navat vetävät toisiaan, joten $\\text{N}$-pää kääntyy kohti Maan sauvamagneettimallin etelänapaa. Se on maantieteellisen pohjoisnavan lähellä, joten $\\text{N}$-pää osoittaa pohjoiseen."
     },
     {
      "text": "Kun pöydälle tuodaan toinen magneetti, kahden magneetin kenttäviivat voivat leikata toisiaan niiden välissä.",
