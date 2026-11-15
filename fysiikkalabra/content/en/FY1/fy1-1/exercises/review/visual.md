@@ -1,14 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: c3ecfaae8afcabca
+VERDICT: PASS
+CONTENT-HASH: 87ebac102677fa19
 
 ## Blocking
-- [Major] content/en/FY1/fy1-1/exercises/exercises.json, task with the student's Voyager solution (captures 14, 15) — the chain of inline formulas inside the quotation is merged into two display blocks, and the sentence marks are left orphaned: a line starts with a lone `. The distance is` and `. So Voyager would be…` — lone punctuation and a broken quotation flow, reads unnaturally at 360 px — keep the quotation in one flow: write the two chains as inline formulas that wrap without being merged, or lift them as `$$…$$` directly followed by the full stop so the build moves the mark into the last row (`\text{.}`).
+- none (round 1 Major resolved: the Voyager 2 quotation again wraps as running text; the full stops follow `km` and `AU` on the same line, no lone punctuation, no display blocks inside the quotation)
 
 ## Polish
-- none
+- [Minor] exercises.json, Voyager 2 student solution (capture 14) — where two split inline formulas meet on one line, the gap before the relation sign is only a word space ("vt= 15.341 km/s") — acceptable; if the build can, give the continuation formula a leading `{}` so the `=` gets its relation spacing on both sides.
+
 
 ## Checked
-delta review 5d reflow, round 1: opened the 360 px captures 02-15 (tiled into contact sheets, every capture of this part viewed); equals signs aligned, no row broken inside a number or unit, nothing clipped or scrolling, display formulas read naturally in their sentences.
+- delta 5d reflow, round 2 (only change: the two Voyager formulas back to split inline formulas); 360 px captures, every box open.
+- opened at full resolution: 14 (= 15–18, byte-identical), 19 (hint).
+- opened as contact sheets: 01, 02, 03 (= 04), 05, 06, 07 (= 08), 09, 10, 11 (= 12), 13: unchanged from round 1, equals signs aligned, no row broken inside a number or unit, nothing clipped.
+- no figures in the delta.
 
 ## Scores
-illustrations 5 · typography 3 · English 4 · accessibility 4
+illustrations 5 · typography 4 · English 4 · accessibility 5
