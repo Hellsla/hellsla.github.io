@@ -341,6 +341,56 @@ if NPAGE and MBASE:
         expect(f"neural {NPAGE}: under 8 GB of memory one worker only", pg.evaluate("flSpeech.state().workers") == 1, pg.evaluate("flSpeech.state()"))
         expect(f"neural {NPAGE}: no script errors on the second visit", not errs, errs[:3])
         b.close()
+
+# Concept-card terms and the recorded voice (teacher 2026-11-15: "Fix it" for the term, ElevenLabs "Oskari - Finnish").
+# kortit.js puts a Teoria term inside a button; a button is not read, so "Fysiikka on luonnontiede…" was read as "on
+# luonnontiede…". The term is read now, by the device's voice as by every other. A block with a recording (a stand-in
+# manifest and a silent file here) is played from it, with the hash of its speech text the same in Python and in
+# the browser, and a block without one is read by the voice of the device.
+RPAGE = "fy1-1.html"
+if (SITE / RPAGE).is_file() and (SITE / "kortit").is_dir():
+    import struct, wave, io
+    from readaloud_audio import text_hash
+    buf = io.BytesIO()
+    with wave.open(buf, "wb") as w: w.setnchannels(1); w.setsampwidth(2); w.setframerate(8000); w.writeframes(struct.pack("<h", 0) * 8000 * 2)
+    silence = buf.getvalue()
+    with sync_playwright() as pw:
+        b = launch(pw)
+        pg = b.new_page(viewport={"width": 1280, "height": 800})
+        errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
+        pg.add_init_script(MOCK)
+        pg.goto(BASE + RPAGE); pg.wait_for_timeout(600)
+        blocks = pg.evaluate("flSpeech.blocks()")
+        terms = pg.evaluate("[...document.querySelectorAll('#selita .kc-term-btn')].map(b => b.textContent.trim())")
+        lost = [t for t in terms[:6] if not any(t in x for x in blocks)]
+        expect(f"{RPAGE}: a concept-card term in the text is read with the text around it", len(terms) >= 3 and not lost, lost or terms)
+        expect(f"{RPAGE}: \"Fysiikka\" begins the sentence it is the term of", any(x.startswith("Fysiikka on luonnontiede") for x in blocks), blocks[5:8])
+        hashes = pg.evaluate("flSpeech.blocks().map(t => flSpeech.hash(t))")
+        expect(f"{RPAGE}: the hash of a block's speech text is the same in the browser and in scripts/readaloud_audio.py", hashes == [text_hash(x) for x in blocks], hashes[:2])
+        ntok = [len(x.split()) for x in blocks]
+        man = {"voice": "test", "blocks": {hashes[i]: {"file": f"t/{i}.wav", "words": [[k * 0.01, (k + 1) * 0.01] for k in range(ntok[i])]} for i in (1, 2)}}
+        pg.close()
+        pg = b.new_page(viewport={"width": 1280, "height": 800})
+        errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
+        pg.add_init_script(MOCK)
+        pg.route("**/audio/fi/fy1-1.json", lambda r: r.fulfill(status=200, content_type="application/json", body=json.dumps(man)))
+        pg.route("**/audio/fi/t/*.wav", lambda r: r.fulfill(status=200, content_type="audio/wav", body=silence))
+        pg.goto(BASE + RPAGE); pg.wait_for_timeout(800)
+        expect(f"{RPAGE}: the manifest is found and two blocks are recorded", pg.evaluate("flSpeech.rec()") == 2 and pg.evaluate("flSpeech.recorded().filter(Boolean).length") == 2)
+        pg.evaluate("window.scrollTo(0, 0)")
+        pg.click(".ra-start"); pg.wait_for_timeout(200)
+        expect(f"{RPAGE}: the first block has no recording, so the device's voice reads it", pg.evaluate("window.__spoken.length") >= 1)
+        pg.evaluate("window.__spoken.length = 0")
+        pg.wait_for_function("window.__spoken.length > 0 || (document.querySelector('.ra-on') && flSpeech.recorded()[[...flSpeech.elements()].indexOf(document.querySelector('.ra-on'))])", timeout=8000)
+        pg.wait_for_timeout(300)
+        on = pg.evaluate("(() => { const k = [...flSpeech.elements()].indexOf(document.querySelector('.ra-on')); return { k, rec: flSpeech.recorded()[k], word: CSS.highlights.has('ra-word') || CSS.highlights.has('ra-sentence'), spoken: window.__spoken.length }; })()")
+        expect(f"{RPAGE}: a recorded block is played from its file, marked and highlighted, and the device's voice is silent", on["rec"] and on["word"] and on["spoken"] == 0, on)
+        pg.wait_for_timeout(5000)
+        past = pg.evaluate("(() => { const k = [...flSpeech.elements()].indexOf(document.querySelector('.ra-on')); return { k, spoken: window.__spoken.length }; })()")
+        expect(f"{RPAGE}: after the recorded blocks the unrecorded one is read by the device's voice", past["k"] >= 3 and past["spoken"] > 0, past)
+        pg.click(".ra-start")
+        expect(f"{RPAGE}: no script errors", not errs, errs[:3])
+        b.close()
 srv.shutdown()
 print("FAIL" if fails else "PASS", f"({fails} failures)" if fails else "")
 sys.exit(1 if fails else 0)

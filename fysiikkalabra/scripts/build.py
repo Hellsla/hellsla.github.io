@@ -66,6 +66,8 @@ if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra 
     shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
 if (ROOT / "assets/units").is_dir():                          # the local courses' unit components (scripts/units.py)
     shutil.copytree(ROOT / "assets/units", SITE / "units", dirs_exist_ok=True)
+if (ROOT / "assets/audio").is_dir():                          # recorded read-aloud (scripts/readaloud_audio.py): audio/fi/<page>.json and <page>/<hash>.mp3, read by readaloud.js
+    shutil.copytree(ROOT / "assets/audio", SITE / "audio", dirs_exist_ok=True)
 if module_icons.DIR.is_dir():                                 # one icon per module (scripts/module_icons.py), front page and module pages
     shutil.copytree(module_icons.DIR, SITE / module_icons.PUBLISHED, dirs_exist_ok=True)
 tpl = (TPL / "lesson.html").read_text()
