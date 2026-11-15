@@ -1,23 +1,22 @@
-VERDICT: FAIL
-CONTENT-HASH: 7fd5eddc31d0e0b4
+VERDICT: PASS
+CONTENT-HASH: 74e9de790a996e86
 
 ## Blocking
-- exercises.json fy6-16-L3-02 (answer 156, tolerance 0.02) and solutions.md L3-02 Vastaus — B, assessment. Under P7b, $10\,\text{A}$ and $16\,\text{A}$ have two significant figures, so the data-precision answer is $1{,}6 \cdot 10^{2}\,\%$ = 160. The page accepts only 152,9–159,1, so a student who rounds correctly to the data gets "Lähellä". The solution keeps three figures because the currents are "latauslaitteen tarkat asetukset", but the task text never says this. — Fix: either add to the task that 10 A and 16 A are the charger's exact set currents (then 156 % stands), or set tolerance 0.03 so that 160 passes.
 
 ## Polish
-- solutions.md L3-05 Vastaus — 7,609 → 7,6 A is a maximum but, unlike L2-03, L2-05 and P7c, the rounding direction is not stated. Add "raja-arvo pyöristetään alaspäin". The same applies to L3-03, a minimum: 7,157 → 7,2 A, rounded up. Part a) gives "17 A" but c) uses 17,4 A, and 12,0 kW supports 17,4 A.
-- solutions.md L2-07 Vastaus — "kaksi merkitsevää numeroa kuten tehoissa": most powers (11,0, 10,8) have three figures. The real limit is the trapezoid approximation, so name that as the reason, or give 22,9 kWh.
-- solutions.md L2-05 — the heading "Kuvaajan lukeminen" introduces a table: "Taulukon lukeminen".
-- solutions.md L3-04 Kaava — the symbol $v$ for $6{,}50\,\textsf{l}$ per 100 km clashes with velocity. Use $V$.
+- solutions.md L2-05 Vastaus a) — the question asks for the peak power and its time, but a) gives only the time. The value 6,8 kW appears only in the reading step. — Write "Huipputeho on $6{,}8\,\text{kW}$ kello 19–20". The step heading "Kuvaajan lukeminen" introduces a table, so "Taulukon lukeminen" would fit better.
+- solutions.md L2-07 Vastaus — "kaksi merkitsevää numeroa kuten tehoissa" is not the real reason, because most of the powers have three figures. The real limit is the trapezoid approximation. — Name that as the reason.
+- solutions.md L3-04 Kaava — the symbol $v$ for 6,50 l per 100 km clashes with velocity. — Use $V$.
+- exercises.json L2-05, L3-03, L3-05 — the shared ±2 % check also accepts a value just past the limit: 10,5 kW, 7,1 A and 7,7 A. This is known and outside this set; the one-sided limit check is pending with the coordinator.
 
 ## Checked
-- Hash 7fd5eddc31d0e0b4 at start and end.
-- All 20 answers recomputed independently in one script, and every one agrees with answers.py. Spot values: L3-04 gives 14 640 km, 390,4 €, 1760,5 € and 1370,1 €; public charging costs 1171,2 €, so the saving is 589,3 €. L2-07 trapezoids give 22,85 kWh. L3-05 gives 7,609 A and cable losses of 23,6 W and 104,4 W.
-- L2-03 now has answer 11,478 with tolerance 0.043. By the half-unit rule it accepts 10,98–11,98 A: 11 and 11,96 pass, and 12 is rejected. This is right under P7c. The band's top, 11,96–11,98, is only 0,02 A above the exact limit, which is negligible.
-- L2-05 10,4 kW, L3-05 7,6 A and L3-03 7,2 A: the shared 2 % floor also accepts 10,5 kW, 7,7 A and 7,1 A. No per-task setting can fix this, and the solutions no longer claim the check enforces the direction. This is not blocking for the set; the shared one-sided check is pending.
-- L2-05 c): only 19–20 h (6,8 kW) exceeds 6,25 kW. The within-hour caveat is stated.
-- L2-08: 15,3 h. The distractors are 11,1 h (times η), 13,0 h (no η) and 5,1 h (3UI), each with feedback that is correct. Exactly one option is correct.
-- L1-06: one option is correct, and every distractor's feedback is right.
-- Physics: the power factor ≈ 1 is stated. P = UI and 3UI use the 230 V phase voltage (three figures, P7a). The fuse protects the cable. Cable resistance uses 2l. The Tukes 8 A socket limit is stated correctly. All within FY6 scope.
-- Figures lataus-ex (11 kW, then 5,5 kW, on gridlines) and talo-ex (2/5/7/3 kW) give every value the tasks need and give no answer away.
-- Every remaining answer rounded to its data stays within tolerance (L1-02 is at 2,2 % with tolerance 0.03). Every solution is symbolic first.
+- The hash was 74e9de790a996e86 at the start and at the end.
+- I recomputed all 20 answers in one script from the task data with my own formulas. Every one agrees with answers.py and exercises.json. The fi, en and fi-easy answers, tolerances and units are identical.
+- L3-02, last round's blocking item: (16 : 10)² − 1 = 1,56. Under P7b both currents have two figures, so the answer $1{,}6 \cdot 10^{2}\,\%$ is right, and the reason given names both currents. With data-step 10 the page accepts 151–161, so both 156 and 160 pass. Resolved.
+- L3-03: the minimum is 40 000 Wh : (3 · 0,90 · 230 V · 9,0 h) = 7,157 A. It is rounded up to 7,2 A, and the solution now says so (P7c).
+- L3-05: 12,0 kW : 690 V = 17,39 A, which leaves 7,609 A. It is rounded down to 7,6 A, and the solution now says so. The cable dissipates 23,6 W at that current and 104 W at 16 A, a factor of about 4,4, and the 33,4 A overload is right.
+- L2-03: the limit 11,96 A is rounded down to 11 A. Answer 11,478 with tolerance 0,043 accepts 10,98–11,97 A, so 11 A and 11,96 A pass and 12 A fails.
+- L2-05: 17,25 − 6,8 = 10,45 kW, rounded down to 10,4 kW. In c) only 19–20 h exceeds 6,25 kW.
+- L2-08: the four options recompute to 15,3, 11,1, 13,0 and 5,1 h. Exactly one is correct, and each distractor's feedback names its own error. L1-06 has exactly one correct option, and every feedback is right.
+- Physics and scope: power factor ≈ 1 is stated, 3UI is used only with equal phase currents, R = ρ·2l/A, and the fuse protects the cable. Everything stays within FY6.
+- Figures lataus-ex and talo-ex give every value their tasks need, on grid lines, without the answer.
