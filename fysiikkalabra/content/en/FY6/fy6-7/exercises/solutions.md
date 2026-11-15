@@ -66,8 +66,8 @@
 **Formula:** $P = UI$ and $E = Pt$, so $E = UIt$
 **Conversions:** $t = 4.0\,\text{min} = 4.0 \cdot 60\,\text{s} = 240\,\text{s}$; finally $1\,\text{kJ} = 1000\,\text{J}$
 **Substitution:** $E = 230\,\text{V} \cdot 8.7\,\text{A} \cdot 240\,\text{s} = 480\,240\,\text{J} = 480.24\,\text{kJ}$
-**Answer:** $480\,\text{kJ}$, two significant figures like the current $8.7\,\text{A}$ and the time $4.0\,\text{min}$.
-**Reasonableness:** The power of the kettle is $230\,\text{V} \cdot 8.7\,\text{A} \approx 2000\,\text{W}$, that is $2\,\text{kJ}$ per second, and in $240$ seconds it is about $480\,\text{kJ}$. In kilowatt-hours this is $0.13\,\text{kWh}$, which fits an ordinary kettle boil.
+**Answer:** $4.8 \cdot 10^{2}\,\text{kJ}$, two significant figures like the current $8.7\,\text{A}$ and the time $4.0\,\text{min}$.
+**Reasonableness:** The power of the kettle is $230\,\text{V} \cdot 8.7\,\text{A} \approx 2000\,\text{W}$, that is $2\,\text{kJ}$ per second, and in $240$ seconds it is about $4.8 \cdot 10^{2}\,\text{kJ}$. In kilowatt-hours this is $0.13\,\text{kWh}$, which fits an ordinary kettle boil.
 
 ## fy6-7-L2-03
 **Given:** standby power $P = 4.5\,\text{W}$ all year, $365$ days, price $a = 17\,\text{c/kWh}$
@@ -151,12 +151,12 @@
 **Formula:** $E_\text{day} = Pt$ for each appliance and $E_\text{year} = 365 \cdot E_\text{day,tot}$
 **Conversions:** $90\,\text{W} = 0.090\,\text{kW}$, $110\,\text{W} = 0.110\,\text{kW}$, $60\,\text{W} = 0.060\,\text{kW}$, $1200\,\text{W} = 1.200\,\text{kW}$ and $800\,\text{W} = 0.800\,\text{kW}$
 **Substitution:** Lighting $0.090\,\text{kW} \cdot 5.0\,\text{h} = 0.45\,\text{kWh}$; television $0.110\,\text{kW} \cdot 4.0\,\text{h} = 0.44\,\text{kWh}$; computer $0.060\,\text{kW} \cdot 6.0\,\text{h} = 0.36\,\text{kWh}$; vacuum cleaner $1.200\,\text{kW} \cdot 0.50\,\text{h} = 0.60\,\text{kWh}$; toaster $0.800\,\text{kW} \cdot 0.20\,\text{h} = 0.16\,\text{kWh}$. The sum is $2.01\,\text{kWh}$ per day, so $E_\text{year} = 365 \cdot 2.01\,\text{kWh} = 733.65\,\text{kWh}$.
-**Answer:** In the answer box: $730\,\text{kWh}$. a) The vacuum cleaner uses the most energy, even though it is on for only half an hour.
+**Answer:** In the answer box: $7.3 \cdot 10^{2}\,\text{kWh}$. a) The vacuum cleaner uses the most energy, even though it is on for only half an hour.
 
-b) $730\,\text{kWh}$, two significant figures like the powers and the times.
+b) $7.3 \cdot 10^{2}\,\text{kWh}$, two significant figures. The limiting data are the powers $90\,\text{W}$ and $60\,\text{W}$ and the usage times; the powers $110\,\text{W}$, $800\,\text{W}$ and $1200\,\text{W}$ have more figures.
 
 c) Lighting is a suitable target for saving, because it is the second largest item and its power can be reduced by changing the lamps to LED lamps, whereas the time of use of the vacuum cleaner cannot be shortened without the cleaning suffering.
-**Reasonableness:** With the energy of a day, $2.01\,\text{kWh}$, the average power is $2.01\,\text{kWh} : 24\,\text{h} = 0.084\,\text{kW} = 84\,\text{W}$, which is reasonable for the appliances of evenings at home. In a year $365 \cdot 2\,\text{kWh} = 730\,\text{kWh}$ agrees with the result. The vacuum cleaner uses more than the lighting, because its power is $13$ times as large ($1200\,\text{W} : 90\,\text{W}$) but its time is only a tenth.
+**Reasonableness:** With the energy of a day, $2.01\,\text{kWh}$, the average power is $2.01\,\text{kWh} : 24\,\text{h} = 0.084\,\text{kW} = 84\,\text{W}$, which is reasonable for the appliances of evenings at home. In a year $365 \cdot 2\,\text{kWh} = 7.3 \cdot 10^{2}\,\text{kWh}$ agrees with the result. The vacuum cleaner uses more than the lighting, because its power is $13$ times as large ($1200\,\text{W} : 90\,\text{W}$) but its time is only a tenth.
 
 ## fy6-7-L2-06
 **Given:** meter readings $12\,437.2\,\text{kWh}$ at the start and $12\,493.5\,\text{kWh}$ after seven days, price $a = 16\,\text{c/kWh}$
@@ -181,9 +181,9 @@ c) $9.0\,\text{€}$.
 **Formula:** $P_\text{avg} = \dfrac{E}{t}$ and $E_\text{year} = P_\text{avg} t_\text{year}$
 **Conversions:** $t_\text{year} = 365 \cdot 24\,\text{h} = 8760\,\text{h}$
 **Substitution:** $P_\text{avg} = \dfrac{1.64\,\text{kWh}}{48\,\text{h}} = 0.03417\,\text{kW}$ and $E_\text{year} = 0.03417\,\text{kW} \cdot 8760\,\text{h} = 299.3\,\text{kWh}$
-**Answer:** In the answer box: $300\,\text{kWh}$. a) The energy read from the line at $48\,\text{h}$ is $1.64\,\text{kWh}$.
+**Answer:** In the answer box: $3.0 \cdot 10^{2}\,\text{kWh}$. a) The energy read from the line at $48\,\text{h}$ is $1.64\,\text{kWh}$.
 
-b) $300\,\text{kWh}$, two significant figures, because fitting the line by eye limits the accuracy.
+b) $3.0 \cdot 10^{2}\,\text{kWh}$, two significant figures, because fitting the line by eye limits the accuracy.
 
 c) The room temperature during the measurement is different from the yearly average, and the opening of the door and the contents of the refrigerator vary, so the consumption is not the same all year. In addition, $48\,\text{h}$ is a short time, so the running periods of the compressor affect the result.
 **Reasonableness:** The average power $0.034\,\text{kW} = 34\,\text{W}$ is small, because the compressor is on only part of the time; for example a $100\,\text{W}$ compressor runs about a third of the time. Check: $299\,\text{kWh} : 8760\,\text{h} = 0.0341\,\text{kW}$, which agrees with the measurement.

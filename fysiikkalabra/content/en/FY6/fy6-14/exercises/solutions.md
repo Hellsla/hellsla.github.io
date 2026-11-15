@@ -146,7 +146,7 @@
 **Formula:** $R = \dfrac{U - U_\text{D}}{I}$
 **Conversions:** $I = 15\,\text{mA} = 0.015\,\text{A}$
 **Substitution:** For the red LED $R = \dfrac{5.0\,\text{V} - 1.90\,\text{V}}{0.015\,\text{A}} = \dfrac{3.1\,\text{V}}{0.015\,\text{A}} = 207\,\Omega$
-**Answer:** $210\,\Omega$ (the series resistor of the red LED), two significant figures like the current.
+**Answer:** $2.1 \cdot 10^{2}\,\Omega$ (the series resistor of the red LED), two significant figures like the current.
 **Reasonableness:** Check: $207\,\Omega \cdot 0.015\,\text{A} = 3.1\,\text{V}$, and $3.1\,\text{V} + 1.90\,\text{V} = 5.0\,\text{V}$. The other LEDs get smaller resistors: for the yellow one $2.9\,\text{V} : 0.015\,\text{A} = 193\,\Omega$ and for the blue one $1.9\,\text{V} : 0.015\,\text{A} = 127\,\Omega$, so the red one is the largest.
 
 ## fy6-14-L2-06
@@ -155,7 +155,7 @@
 **Principle:** The power of a solar cell is the voltage between its terminals times the current. The power is calculated with each load, and the greatest value is chosen. The load resistor does not affect the calculation, because its effect is already included in the measured voltage and current.
 **Formula:** $P = UI$
 **Conversions:** Not needed: $\text{V} \cdot \text{mA} = \text{mW}$.
-**Substitution:** The powers are $10\,\Omega$: $0.99\,\text{V} \cdot 99\,\text{mA} = 98\,\text{mW}$, $15\,\Omega$: $146\,\text{mW}$, $20\,\Omega$: $178\,\text{mW}$, $22\,\Omega$: $1.99\,\text{V} \cdot 91\,\text{mA} = 181\,\text{mW}$, $27\,\Omega$: $165\,\text{mW}$, $33\,\Omega$: $145\,\text{mW}$, $47\,\Omega$: $109\,\text{mW}$ and $100\,\Omega$: $54\,\text{mW}$. The greatest is at $22\,\Omega$.
+**Substitution:** The powers are $10\,\Omega$: $0.99\,\text{V} \cdot 99\,\text{mA} = 98\,\text{mW}$, $15\,\Omega$: $1.48\,\text{V} \cdot 99\,\text{mA} = 147\,\text{mW}$, $20\,\Omega$: $178\,\text{mW}$, $22\,\Omega$: $1.99\,\text{V} \cdot 91\,\text{mA} = 181\,\text{mW}$, $27\,\Omega$: $165\,\text{mW}$, $33\,\Omega$: $145\,\text{mW}$, $47\,\Omega$: $109\,\text{mW}$ and $100\,\Omega$: $54\,\text{mW}$. The greatest is at $22\,\Omega$.
 **Answer:** $1.8 \cdot 10^{2}\,\text{mW}$, or $0.18\,\text{W}$ (calculated $181\,\text{mW}$), two significant figures like the current $91\,\text{mA}$.
 **Reasonableness:** The power is small with the loads $10\,\Omega$ (the voltage is small) and $100\,\Omega$ (the current is small), and the greatest power lies between them at the knee of the curve. Check: $U : I = 1.99\,\text{V} : 0.091\,\text{A} = 21.9\,\Omega \approx 22\,\Omega$, so the measurement agrees with the load resistor.
 
@@ -166,7 +166,7 @@
 **Formula:** $R = \dfrac{U - U_\text{D}}{I}$
 **Conversions:** $I = 15\,\text{mA} = 0.015\,\text{A}$
 **Substitution:** $R = \dfrac{9.0\,\text{V} - 3.2\,\text{V}}{0.015\,\text{A}} = \dfrac{5.8\,\text{V}}{0.015\,\text{A}} = 387\,\Omega$
-**Answer:** $390\,\Omega$, two significant figures like the voltages and the current.
+**Answer:** $3.9 \cdot 10^{2}\,\Omega$, two significant figures like the voltages and the current.
 **Reasonableness:** Check: $387\,\Omega \cdot 0.015\,\text{A} = 5.8\,\text{V}$, and $5.8\,\text{V} + 3.2\,\text{V} = 9.0\,\text{V}$. The student's $600\,\Omega$ would give a current of only $5.8\,\text{V} : 600\,\Omega = 9.7\,\text{mA}$, so the LED would be dimmer than desired.
 
 ## fy6-14-L2-08
@@ -189,7 +189,7 @@ So the reason is that a diode conducts only when the anode is on the positive te
 **Formula:** $E = \eta A \sum H$ and degree of self-sufficiency $= \dfrac{E}{\sum E_\text{kul}}$
 **Conversions:** $\eta = 19\,\% = 0.19$. No others: the energies are in kilowatt-hours.
 **Substitution:** a) The sum of the radiation energies is $\sum H = 1027\,\text{kWh/m}^2$, so $E = 0.19 \cdot 24\,\text{m}^2 \cdot 1027\,\tfrac{\text{kWh}}{\text{m}^2} = 4683\,\text{kWh}$. b) The sum of the consumptions is $\sum E_\text{kul} = 5340\,\text{kWh}$, so the degree of self-sufficiency is $\dfrac{4683\,\text{kWh}}{5340\,\text{kWh}} = 0.877 = 87.7\,\%$. c) The monthly production is $E_\text{kk} = 0.19 \cdot 24\,\text{m}^2 \cdot H = 4.56\,\text{m}^2 \cdot H$. It is smaller than the consumption in January, February and March and in October, November and December: for example in January $4.56\,\text{m}^2 \cdot 12\,\tfrac{\text{kWh}}{\text{m}^2} = 55\,\text{kWh}$ when the consumption is $620\,\text{kWh}$, and in December $36\,\text{kWh}$ when the consumption is $650\,\text{kWh}$. The consumption of these six months is $3370\,\text{kWh}$ in total and the production $853\,\text{kWh}$ in total, so the shortfall is $2517\,\text{kWh}$.
-**Answer:** $88\,\%$, two significant figures like the efficiency $19\,\%$. The annual production is about $4700\,\text{kWh}$.
+**Answer:** $88\,\%$, two significant figures like the efficiency $19\,\%$. The annual production is about $4.7 \cdot 10^{3}\,\text{kWh}$.
 **Reasonableness:** The production is about $4.7\,\text{MWh}$, which fits a panel array of $24\,\text{m}^2$ in Finland, and it is a little below the consumption of the house, $5340\,\text{kWh}$, so the degree of self-sufficiency is below $100\,\%$. The degree of self-sufficiency is an annual sum. The surplus of summer cannot be used in winter without storage, and the shortfall of winter, $2517\,\text{kWh}$, is $2517 : 5340 = 47\,\%$ of the annual consumption. So at least this share is bought from the grid, although the degree of self-sufficiency is $88\,\%$.
 
 ## fy6-14-L3-05

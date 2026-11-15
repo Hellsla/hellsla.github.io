@@ -14,8 +14,8 @@
 **Principle:** The electric field strength tells the force per coulomb, so the force on a charge is the charge times the electric field strength. The field is uniform, so the force is the same everywhere in the field.
 **Formula:** $F = qE$
 **Conversions:** $q = 5.0\,\text{nC} = 5.0 \cdot 10^{-9}\,\text{C}$; finally $1\,\text{N} = 10^{6}\,\mu\text{N}$.
-**Substitution:** $F = 5.0 \cdot 10^{-9}\,\text{C} \cdot 2.0 \cdot 10^{4}\,\text{N/C} = 1.0 \cdot 10^{-4}\,\text{N} = 100\,\mu\text{N}$
-**Answer:** $1.0 \cdot 10^{2}\,\mu\text{N}$ or $100\,\mu\text{N}$, two significant figures like the given values.
+**Substitution:** $F = 5.0 \cdot 10^{-9}\,\text{C} \cdot 2.0 \cdot 10^{4}\,\text{N/C} = 1.0 \cdot 10^{-4}\,\text{N} = 1.0 \cdot 10^{2}\,\mu\text{N}$
+**Answer:** $1.0 \cdot 10^{2}\,\mu\text{N}$, two significant figures like the given values.
 **Reasonableness:** The force is about $0.1\,\text{mN}$, which corresponds to the weight of a body of about $10\,\text{mg}$. It is small, but a light ball moves clearly under its effect, as is seen in electrostatic experiments.
 
 ## fy6-11-L1-03
@@ -106,7 +106,7 @@
 **Formula:** $\dfrac{q_1 U_1}{d} = mg = \dfrac{q_2 U_2}{d}$, so $U_2 = U_1 \cdot \dfrac{q_1}{q_2}$
 **Conversions:** Not needed: the elementary charge $e$ cancels.
 **Substitution:** $U_2 = 450\,\text{V} \cdot \dfrac{3e}{4e} = 450\,\text{V} \cdot 0.75 = 337.5\,\text{V}$
-**Answer:** $3.4 \cdot 10^{2}\,\text{V}$ ($337.5\,\text{V}$), rounded to two significant figures according to the precision of the voltage $450\,\text{V}$; the numbers of elementary charges are exact.
+**Answer:** $338\,\text{V}$ ($337.5\,\text{V}$), rounded to three significant figures according to the precision of the voltage $450\,\text{V}$; the numbers of elementary charges are exact.
 **Reasonableness:** The charge grows by one third, so the same electric force is obtained with a weaker field, and the voltage decreases by one quarter. If the voltage were kept at $450\,\text{V}$, the electric force would be $\tfrac{4}{3}$ of the weight, and the droplet would start to rise towards the positive plate.
 
 ## fy6-11-L3-02
@@ -116,7 +116,7 @@
 **Formula:** $a = \dfrac{eE}{m} = \dfrac{eU}{md}$ and $v^2 = 2ad$, so $v = \sqrt{2ad} = \sqrt{\dfrac{2eU}{m}}$
 **Conversions:** $d = 1.0\,\text{cm} = 0.010\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Substitution:** $E = \dfrac{50\,\text{V}}{0.010\,\text{m}} = 5000\,\text{V/m}$, $a = \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 5000\,\text{V/m}}{9.109 \cdot 10^{-31}\,\text{kg}} = 8.794 \cdot 10^{14}\,\text{m/s}^2$ and $v = \sqrt{2 \cdot 8.794 \cdot 10^{14}\,\text{m/s}^2 \cdot 0.010\,\text{m}} = 4.19 \cdot 10^{6}\,\text{m/s}$
-**Answer:** about $4200\,\text{km/s}$ or $4.2 \cdot 10^{6}\,\text{m/s}$, two significant figures like the voltage and the distance.
+**Answer:** about $4.2 \cdot 10^{3}\,\text{km/s}$ or $4.2 \cdot 10^{6}\,\text{m/s}$, two significant figures like the voltage and the distance.
 **Reasonableness:** The speed is about $1.4\,\%$ of the speed of light, so classical mechanics is enough. The final result $\sqrt{2eU : m}$ does not depend on the plate distance: the shorter distance is compensated by the stronger field.
 
 ## fy6-11-L3-03

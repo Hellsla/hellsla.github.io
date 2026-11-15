@@ -46,9 +46,9 @@
 **Reading the graph:** The grid line of the voltage $12\,\text{V}$ meets the line at the grid line of the charge $60\,\mu\text{C}$. The base of the triangle is thus $60\,\mu\text{C}$ and its height $12\,\text{V}$.
 **Formula:** $W = \tfrac{1}{2} Q U$
 **Conversions:** Not needed: $\mu\text{C} \cdot \text{V} = \mu\text{J}$, because $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
-**Substitution:** $W = \tfrac{1}{2} \cdot 60\,\mu\text{C} \cdot 12\,\text{V} = 360\,\mu\text{J}$
-**Answer:** $360\,\mu\text{J}$, two significant figures, because the values are read from grid lines spaced $10\,\mu\text{C}$ and $2\,\text{V}$ apart.
-**Reasonableness:** The capacitance is $60\,\mu\text{C} : 12\,\text{V} = 5.0\,\mu\text{F}$, and $\tfrac{1}{2} \cdot 5.0\,\mu\text{F} \cdot (12\,\text{V})^2 = 360\,\mu\text{J}$, the same result. Half of the rectangle $60\,\mu\text{C} \cdot 12\,\text{V} = 720\,\mu\text{J}$ is the triangle, as it should be.
+**Substitution:** $W = \tfrac{1}{2} \cdot 60\,\mu\text{C} \cdot 12\,\text{V} = 3.6 \cdot 10^{2}\,\mu\text{J}$
+**Answer:** $3.6 \cdot 10^{2}\,\mu\text{J}$, two significant figures, because the values are read from grid lines spaced $10\,\mu\text{C}$ and $2\,\text{V}$ apart.
+**Reasonableness:** The capacitance is $60\,\mu\text{C} : 12\,\text{V} = 5.0\,\mu\text{F}$, and $\tfrac{1}{2} \cdot 5.0\,\mu\text{F} \cdot (12\,\text{V})^2 = 3.6 \cdot 10^{2}\,\mu\text{J}$, the same result. Half of the rectangle $60\,\mu\text{C} \cdot 12\,\text{V} = 720\,\mu\text{J}$ is the triangle, as it should be.
 
 ## fy6-13-L2-01
 **Given:** thickness of the paper layer $d = 0.020\,\text{mm}$, dielectric strength $E_\text{max} = 16\,\text{MV/m}$
@@ -56,9 +56,9 @@
 **Principle:** Between the plates there is a uniform field $E = \tfrac{U}{d}$. A breakdown happens when the field exceeds the dielectric strength of the dielectric, so the greatest allowed voltage is obtained when the field is exactly the dielectric strength.
 **Formula:** $E_\text{max} = \dfrac{U_\text{max}}{d}$, from which $U_\text{max} = E_\text{max} d$
 **Conversions:** $E_\text{max} = 16\,\text{MV/m} = 16 \cdot 10^{6}\,\text{V/m}$ and $d = 0.020\,\text{mm} = 0.020 \cdot 10^{-3}\,\text{m}$
-**Substitution:** $U_\text{max} = 16 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 0.020 \cdot 10^{-3}\,\text{m} = 320\,\text{V}$
-**Answer:** $320\,\text{V}$, that is, $3.2 \cdot 10^{2}\,\text{V}$, two significant figures like the thickness and the dielectric strength.
-**Reasonableness:** One millimetre of paper would withstand $16\,\text{kV}$, and $0.020\,\text{mm}$ is a fiftieth of that: $16\,000\,\text{V} : 50 = 320\,\text{V}$. A thin dielectric gives a large capacitance but withstands only a small voltage.
+**Substitution:** $U_\text{max} = 16 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 0.020 \cdot 10^{-3}\,\text{m} = 3.2 \cdot 10^{2}\,\text{V}$
+**Answer:** $3.2 \cdot 10^{2}\,\text{V}$, two significant figures like the thickness and the dielectric strength.
+**Reasonableness:** One millimetre of paper would withstand $16\,\text{kV}$, and $0.020\,\text{mm}$ is a fiftieth of that: $16\,000\,\text{V} : 50 = 3.2 \cdot 10^{2}\,\text{V}$. A thin dielectric gives a large capacitance but withstands only a small voltage.
 
 ## fy6-13-L2-02
 **Given:** area of the plate $A = 100\,\text{cm}^2$, thickness of the dielectric layer $d = 0.10\,\text{mm}$, capacitance $C = 3.3\,\text{nF}$, electric constant $\varepsilon_0 = 8.854 \cdot 10^{-12}\,\text{F/m}$
@@ -96,9 +96,9 @@
 **Principle:** The charge of a disconnected capacitor cannot change, because the charge has no path from one plate to the other. The capacitance of a parallel-plate capacitor is inversely proportional to the distance of the plates, so it halves, and the voltage $U = \tfrac{Q}{C}$ doubles. The increase in energy is the work done in pulling the plates apart.
 **Formula:** $Q = C_1 U_1$, $C_2 = \tfrac{1}{2} C_1$, $U_2 = \dfrac{Q}{C_2}$ and $\Delta W = \tfrac{1}{2} Q U_2 - \tfrac{1}{2} Q U_1$, from which $\Delta W = \tfrac{1}{2} Q (U_2 - U_1)$
 **Conversions:** $C_1 = 120\,\text{pF} = 120 \cdot 10^{-12}\,\text{F}$
-**Substitution:** $Q = 120 \cdot 10^{-12}\,\text{F} \cdot 500\,\text{V} = 60 \cdot 10^{-9}\,\text{C}$, $U_2 = \dfrac{60 \cdot 10^{-9}\,\text{C}}{60 \cdot 10^{-12}\,\text{F}} = 1000\,\text{V}$ and $\Delta W = \tfrac{1}{2} \cdot 60 \cdot 10^{-9}\,\text{C} \cdot 500\,\text{V} = 15 \cdot 10^{-6}\,\text{J}$
-**Answer:** $15\,\mu\text{J}$, two significant figures like the capacitance $120\,\text{pF}$.
-**Reasonableness:** The energy grows from $15\,\mu\text{J}$ to $30\,\mu\text{J}$, that is, it doubles, because the charge stays the same and the voltage doubles. The energy does not appear from nothing: the plates attract each other, and separating them requires the work $15\,\mu\text{J}$.
+**Substitution:** $Q = 120 \cdot 10^{-12}\,\text{F} \cdot 500\,\text{V} = 60 \cdot 10^{-9}\,\text{C}$, $U_2 = \dfrac{60 \cdot 10^{-9}\,\text{C}}{60 \cdot 10^{-12}\,\text{F}} = 1000\,\text{V}$ and $\Delta W = \tfrac{1}{2} \cdot 60 \cdot 10^{-9}\,\text{C} \cdot 500\,\text{V} = 15.0 \cdot 10^{-6}\,\text{J}$
+**Answer:** $15.0\,\mu\text{J}$, three significant figures like the capacitance $120\,\text{pF}$ and the voltage $500\,\text{V}$.
+**Reasonableness:** The energy grows from $15.0\,\mu\text{J}$ to $30.0\,\mu\text{J}$, that is, it doubles, because the charge stays the same and the voltage doubles. The energy does not appear from nothing: the plates attract each other, and separating them requires the work $15.0\,\mu\text{J}$.
 
 ## fy6-13-L3-02
 **Given:** capacitance with air $C_1 = 220\,\text{pF}$, voltage $U = 1.5\,\text{kV}$, $\varepsilon_\text{r} = 5.6$ for glass, the source stays connected
@@ -193,7 +193,7 @@ $W = 7.2 \cdot 10^{-3}\,\text{J} = 7.2\,\text{mJ}$
 **Formula:** $W = \tfrac{1}{2} C U^2$
 **Conversions:** $C = 220\,\mu\text{F} = 220 \cdot 10^{-6}\,\text{F}$
 **Substitution:** $W = \tfrac{1}{2} \cdot 220 \cdot 10^{-6}\,\text{F} \cdot (24\,\text{V})^2 = 0.0634\,\text{J} = 63.4\,\text{mJ}$
-**Answer:** $63\,\text{mJ}$, two significant figures like the capacitance and the voltage.
+**Answer:** $63\,\text{mJ}$, two significant figures, because the limiting datum is the voltage $24\,\text{V}$; the capacitance $220\,\mu\text{F}$ has three.
 **Model answer on the error:** The student’s $QU = 127\,\text{mJ}$ is the energy given by the source, but only half of it is stored in the capacitor. During charging the voltage of the capacitor is at first zero and grows only gradually to $24\,\text{V}$, so the charge does not move across the full voltage all the time. The other half, about $63\,\text{mJ}$, becomes internal energy of the wires and resistors and passes to the surroundings as heat.
 **Reasonableness:** The stored energy is $\tfrac{1}{2} \cdot 5.28\,\text{mC} \cdot 24\,\text{V} = 63.4\,\text{mJ}$, the same result, and it is exactly half of the student’s figure $127\,\text{mJ}$.
 
@@ -238,5 +238,5 @@ $W = 7.2 \cdot 10^{-3}\,\text{J} = 7.2\,\text{mJ}$
 **Formula:** $C = \dfrac{Q}{U}$ and $W = \tfrac{1}{2} C U^2$
 **Conversions:** $Q = 120\,\mu\text{C} = 120 \cdot 10^{-6}\,\text{C}$ and finally $1\,\mu\text{J} = 10^{-6}\,\text{J}$
 **Substitution:** $C = \dfrac{120 \cdot 10^{-6}\,\text{C}}{8\,\text{V}} = 15 \cdot 10^{-6}\,\text{F}$ and $W = \tfrac{1}{2} \cdot 15 \cdot 10^{-6}\,\text{F} \cdot (7.0\,\text{V})^2 = 3.675 \cdot 10^{-4}\,\text{J} = 367.5\,\mu\text{J}$
-**Answer:** $W \approx 370\,\mu\text{J}$, two significant figures like the voltage $7.0\,\text{V}$.
+**Answer:** $W \approx 3.7 \cdot 10^{2}\,\mu\text{J}$, two significant figures like the voltage $7.0\,\text{V}$.
 **Reasonableness:** The charge is $Q = CU = 15\,\mu\text{F} \cdot 7.0\,\text{V} = 105\,\mu\text{C}$, and the energy is $\tfrac{1}{2} QU = \tfrac{1}{2} \cdot 105\,\mu\text{C} \cdot 7.0\,\text{V} = 367.5\,\mu\text{J}$, the same result. It is less than $QU \approx 735\,\mu\text{J}$, as it should be.
