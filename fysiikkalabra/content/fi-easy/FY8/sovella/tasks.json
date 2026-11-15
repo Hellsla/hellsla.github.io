@@ -503,7 +503,7 @@
               "points": 1
             },
             {
-              "text": "Muutoksen aiheuttaa heikko vuorovaikutus. Sen välittäjähiukkanen on $W^-$-bosoni.",
+              "text": "Muutoksen aiheuttaa heikko vuorovaikutus.",
               "tag": "concept",
               "points": 1
             }
@@ -734,7 +734,7 @@
               "detail": "Oklo on tukeva esimerkki siitä, että kallio voi pidättää monia aineita pitkään. Sana ”varmaa” on kuitenkin liian vahva: yksi luonnon esimerkki ei todista toisen paikan turvallisuutta."
             },
             {
-              "text": "Kertoo, mihin Onkalon turvallisuus perustuu: kuparikapseliin, bentoniittisaveen ja syvään kallioon. Niiden toimintaa tutkitaan kokeilla ja malleilla satojentuhansien vuosien ajalle.",
+              "text": "Perustelee arvionsa selkeästi: kertoo, mitä Oklon havainto tukee ja mitä se ei osoita. Toteaa, että Onkalon turvallisuus on osoitettava sen omista oloista ja esteistä tehdyillä tutkimuksilla (esimerkiksi kapseli, savi ja kallio).",
               "tag": "communication",
               "points": 1
             }

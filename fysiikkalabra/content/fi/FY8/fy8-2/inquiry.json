@@ -332,7 +332,7 @@
         },
         {
           "value": 2.34,
-          "feedback": "Tämä on lähetetyn vihreän fotonin energia. Kysytty lämpö on absorboidun ja lähetetyn fotonin energioiden erotus."
+          "feedback": "Tämä on lähetetyn vihreän fotonin energia. Kysytty energia on absorboidun ja lähetetyn fotonin energioiden erotus."
         },
         {
           "value": -0.722,

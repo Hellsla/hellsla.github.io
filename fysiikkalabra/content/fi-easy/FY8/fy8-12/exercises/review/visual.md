@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 11f14cc0ba53b85c
+CONTENT-HASH: 14b54a6e061b7b91
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] open-exercise captures: no 390 px capture of an opened solution exists in the shots; the 360 px open-solution check is the developer's (CLAUDE.md), so narrow-width clipping of the aligned blocks is not judged here.
+- [Minor] exercises.json fy8-12-L3-05, first paragraph — the caption's marker is gone but the sentence still ends "(taulukko, esimerkkiaineisto)"; "esimerkkiaineisto" is also an unexplained long word for an S2 reader. If the teacher's rule covers the running text, write "(taulukko)". Does not block.
 
 ## Checked
-- Delta (reflow of long solution formulas into aligned blocks), judged from 1280 px open-exercise captures of fy8-1 (L1 part 1), fy8-6 (L2 part 3), fy8-10 (L1 part 2), fy8-13 (L2 part 2), fy8-16 (L1 part 3) and the 390 px fy8-1 exercises stage. Not every capture of this lesson opened; the review of this lesson rests on that sample of the shared presentation.
-- Blocks sit on their own line in a white panel, = signs aligned, continuation rows start with the operator (\cdot, =), units upright with thin space, sentence marks (. , :) inside the last row, and a following sentence ("Sitten saadaan", "joten") reads naturally; no clipping at 1280 px; numbers and words unchanged.
+- Delta round 1 (wording, caption-label), fi-easy: "kilobecquereleina" → "kilobecquereleinä" twice in the task text and once in the solution's Kysytty. Hash 14b54a6e061b7b91 at the start and at the end.
+- Opened fy8-12-open-exercises-L3-1280-7 (task 12-21 with its table): part c) and the last instruction both read "kilobecquereleinä", the correct front-vowel ending; the answer box's unit kBq agrees. The short Selkeä suomi sentences of the situation are unchanged; question parts on their own rows, the instruction last.
+- Same capture: the table's caption is "GM-mittarin pulssit 60 s:n jaksoissa", no marker or stray bracket left; the table sits inside the card.
+- Opened fy8-12-open-exercises-L3-1280-8 (the solution): Kysytty reads "lähteen aktiivisuus A kilobecquereleinä"; Periaate, Kaava, Muunnokset and the aligned Sijoitus blocks are intact, nothing clipped.
+- No figure, formula, number or unit changed.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

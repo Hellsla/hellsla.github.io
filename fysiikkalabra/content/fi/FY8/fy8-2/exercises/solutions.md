@@ -208,7 +208,7 @@ hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$ ja $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{546{,}3 \cdot 10^{-9}\,\text{m}} = 3{,}6362 \cdot 10^{-19}\,\text{J} = \dfrac{3{,}6362 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 2{,}2698\,\text{eV}$
-**Vastaus:** a) lampussa on elohopeaa, koska kaikki kolme viivaa täsmäävät sen taulukkoarvoihin; b) $2{,}27\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituudessa $546{,}3\,\text{nm}$.
+**Vastaus:** a) lampussa on elohopeaa, koska kaikki kolme viivaa täsmäävät sen taulukkoarvoihin; b) $2{,}270\,\text{eV}$, neljä merkitsevää numeroa kuten aallonpituudessa $546{,}3\,\text{nm}$ ja vakioissa.
 **Järkevyys:** Arviolla $\tfrac{1240\,\text{eV}\,\text{nm}}{546{,}3\,\text{nm}} \approx 2{,}27\,\text{eV}$. Vihreän valon fotonin energia on punaisen ($1{,}9\,\text{eV}$) ja violetin ($3{,}0\,\text{eV}$) välissä, kuten pitää.
 
 ## fy8-2-L2-06
@@ -236,7 +236,7 @@ $$ ja $E_\text{y} = -3{,}40\,\text{eV} + 2{,}5514\,\text{eV} = -0{,}8486\,\text{
 **Kaava:** $\lambda = kx + b$
 **Muunnokset:** Ei tarvita: lukema on millimetreinä ja kulmakerroin on yksikössä $\tfrac{\text{nm}}{\text{mm}}$, joten tulos tulee suoraan nanometreinä.
 **Sijoitus:** $\lambda = 12{,}01\,\tfrac{\text{nm}}{\text{mm}} \cdot 16{,}4\,\text{mm} + 299{,}6\,\text{nm} = 496{,}6\,\text{nm}$
-**Vastaus:** a) hehkulamppu antaa jatkuvan spektrin ja elohopeaputki viivaspektrin; b) $497\,\text{nm}$, kolme merkitsevää numeroa kuten lukemassa $16{,}4\,\text{mm}$ ja aallonpituuksissa.
+**Vastaus:** a) hehkulamppu antaa jatkuvan spektrin ja elohopeaputki viivaspektrin; b) $497\,\text{nm}$, kolme merkitsevää numeroa kuten lukemassa $16{,}4\,\text{mm}$, joka on lähtöarvoista epätarkin.
 **Järkevyys:** Arvo on elohopean viivojen $435{,}8\,\text{nm}$ ja $546{,}1\,\text{nm}$ välissä, ja lukema $16{,}4\,\text{mm}$ on niiden lukemien $11{,}4\,\text{mm}$ ja $20{,}5\,\text{mm}$ välissä. Pelkästään näitä kahta pistettä käyttävä interpolointi antaa $435{,}8\,\text{nm} + 12{,}1\,\tfrac{\text{nm}}{\text{mm}} \cdot 5{,}0\,\text{mm} = 496{,}3\,\text{nm}$, eli sama tulos. Aallonpituus on sinivihreää valoa kuten tehtävässä.
 
 ## fy8-2-L2-08

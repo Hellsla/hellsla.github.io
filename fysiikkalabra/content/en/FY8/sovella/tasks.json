@@ -503,7 +503,7 @@
               "points": 1
             },
             {
-              "text": "The change is caused by the weak interaction, whose mediator particle is the $W^-$ boson.",
+              "text": "The change is caused by the weak interaction.",
               "tag": "concept",
               "points": 1
             }
@@ -734,7 +734,7 @@
               "detail": "Oklo is a strong example of how bedrock can retain many substances for a long time, but \"certain\" is too strong a word: one natural example does not prove the safety of another place."
             },
             {
-              "text": "Tells what the safety of Onkalo is based on: a copper canister, bentonite clay and deep bedrock, whose operation is studied with experiments and models for hundreds of thousands of years.",
+              "text": "Justifies the evaluation clearly: says what the observation at Oklo supports and what it does not show, and states that the safety of Onkalo has to be shown by studies of its own conditions and barriers (for example the canister, the clay and the bedrock).",
               "tag": "communication",
               "points": 1
             }

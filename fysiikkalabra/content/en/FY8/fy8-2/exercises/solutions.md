@@ -208,7 +208,7 @@ hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$ and $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{546.3 \cdot 10^{-9}\,\text{m}} = 3.6362 \cdot 10^{-19}\,\text{J} = \dfrac{3.6362 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 2.2698\,\text{eV}$
-**Answer:** a) the lamp contains mercury, because all three lines match its table values; b) $2.27\,\text{eV}$, three significant figures like the wavelength $546.3\,\text{nm}$.
+**Answer:** a) the lamp contains mercury, because all three lines match its table values; b) $2.270\,\text{eV}$, four significant figures like the wavelength $546.3\,\text{nm}$ and the constants.
 **Reasonableness:** With the estimate, $\tfrac{1240\,\text{eV}\,\text{nm}}{546.3\,\text{nm}} \approx 2.27\,\text{eV}$. The energy of a photon of green light is between those of red ($1.9\,\text{eV}$) and violet ($3.0\,\text{eV}$), as it should be.
 
 ## fy8-2-L2-06
@@ -236,7 +236,7 @@ $$ and $E_\text{u} = -3.40\,\text{eV} + 2.5514\,\text{eV} = -0.8486\,\text{eV}$
 **Formula:** $\lambda = kx + b$
 **Conversions:** None are needed: the reading is in millimetres and the slope is in the unit $\tfrac{\text{nm}}{\text{mm}}$, so the result comes directly in nanometres.
 **Substitution:** $\lambda = 12.01\,\tfrac{\text{nm}}{\text{mm}} \cdot 16.4\,\text{mm} + 299.6\,\text{nm} = 496.6\,\text{nm}$
-**Answer:** a) the incandescent lamp gives a continuous spectrum and the mercury tube a line spectrum; b) $497\,\text{nm}$, three significant figures like the reading $16.4\,\text{mm}$ and the wavelengths.
+**Answer:** a) the incandescent lamp gives a continuous spectrum and the mercury tube a line spectrum; b) $497\,\text{nm}$, three significant figures like the reading $16.4\,\text{mm}$, which is the least precise of the data.
 **Reasonableness:** The value is between the lines of mercury $435.8\,\text{nm}$ and $546.1\,\text{nm}$, and the reading $16.4\,\text{mm}$ is between their readings $11.4\,\text{mm}$ and $20.5\,\text{mm}$. Interpolation using only these two points gives $435.8\,\text{nm} + 12.1\,\tfrac{\text{nm}}{\text{mm}} \cdot 5.0\,\text{mm} = 496.3\,\text{nm}$, the same result. The wavelength is blue-green light, as in the problem.
 
 ## fy8-2-L2-08

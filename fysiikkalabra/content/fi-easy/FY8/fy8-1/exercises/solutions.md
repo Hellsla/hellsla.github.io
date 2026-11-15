@@ -256,7 +256,7 @@ $$
 &\cdot 6{,}5 \cdot 10^{14}\,\text{Hz} \\
 &= -2{,}137\,\text{eV}
 \end{aligned}
-$$. Sen itseisarvo on sama kuin $W$, joten opiskelijan lukema $-2{,}1\,\text{eV}$ sopii tähän. Kulmakerroin $4{,}133 \cdot 10^{-15}\,\text{eV/Hz}$ on Planckin vakio $\tfrac{h}{e}$, kuten pitääkin. Rajataajuus $5{,}17 \cdot 10^{14}\,\text{Hz}$ on pienempi kuin pienin mitattu taajuus $6{,}5 \cdot 10^{14}\,\text{Hz}$, koska sillä taajuudella elektroneja jo irtosi.
+$$. Sen itseisarvo on sama kuin $W$, joten opiskelijan lukema $-2{,}1\,\text{eV}$ sopii tähän. Kulmakerroin $4{,}133 \cdot 10^{-15}\,\text{eV/Hz}$ on Planckin vakio $h$ yksikössä $\text{eV}\,\text{s}$, kuten pitääkin. Rajataajuus $5{,}17 \cdot 10^{14}\,\text{Hz}$ on pienempi kuin pienin mitattu taajuus $6{,}5 \cdot 10^{14}\,\text{Hz}$, koska sillä taajuudella elektroneja jo irtosi.
 
 ## fy8-1-L3-01
 **Annettu:** natriumin irrotustyö $W = 2{,}28\,\text{eV}$, aallonpituus $\lambda = 350\,\text{nm}$, elektronin massa $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
@@ -383,7 +383,7 @@ $$. Raja-aallonpituus on juuri violetin näkyvän valon rajan, noin $400\,\text{
 **Kysytty:** metallin A irtoavien elektronien suurin liike-energia $E_\text{k,max}$ elektronivoltteina
 **Periaate:** Kuvaajan suora esittää valosähköistä yhtälöä $E_\text{k,max} = hf - W$. Kun taajuus tunnetaan, suurin liike-energia luetaan suoralta suoraan pystyakselilta.
 **Kuvaajan lukeminen:** Vaaka-akselilta etsitään taajuus $12 \cdot 10^{14}\,\text{Hz}$ ja noustaan pystysuoraan metallin A suoralle. Suora kohtaa tämän pystyviivan ruudukkoviivojen $2\,\text{eV}$ ja $3\,\text{eV}$ välissä, kolmen kymmenesosan verran alempana kuin $3\,\text{eV}$, eli lukema on noin $2{,}7\,\text{eV}$.
-**Kaava:** Tarkistus lasketaan: $E_\text{k,max} = hf - W = \dfrac{h}{e}\,(f - f_0)$, missä suoran kulmakerroin on $\dfrac{h}{e} = 0{,}4136\,\text{eV}$ jokaista $10^{14}\,\text{Hz}$ kohti ja metallin A suora alkaa vaaka-akselilta rajataajuudelta $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$.
+**Kaava:** Tarkistus lasketaan: $E_\text{k,max} = hf - W = h\,(f - f_0)$, missä suoran kulmakerroin on $h = 4{,}136 \cdot 10^{-15}\,\text{eV}\,\text{s}$ eli $0{,}4136\,\text{eV}$ jokaista $10^{14}\,\text{Hz}$ kohti ja metallin A suora alkaa vaaka-akselilta rajataajuudelta $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$.
 **Muunnokset:** Taajuudet lasketaan yksikössä $10^{14}\,\text{Hz}$, jolloin kulmakerroin on $0{,}4136\,\text{eV}$ ja tulos tulee suoraan elektronivoltteina.
 **Sijoitus:** $E_\text{k,max} = 0{,}4136\,\text{eV} \cdot (12 - 5{,}56) = 2{,}66\,\text{eV}$
 **Vastaus:** $E_\text{k,max} \approx 2{,}7\,\text{eV}$ (laskettuna $2{,}66\,\text{eV}$); kuvaajan lukutarkkuus on noin $0{,}1\,\text{eV}$, joten kaksi merkitsevää numeroa riittää.

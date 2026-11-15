@@ -6,8 +6,8 @@ Mode: delta (round 1)
 - none
 
 ## Polish
-- content/fi/FY8/fy8-7/exercises/solutions.md:165-170 (fy8-7-L2-05) — the solution now mixes "energia-aukko" with the old short form "rako" ("saadaan rako aallonpituudesta", "Lasketaan rako", "sitä suurempi rako", "rako pienenee", "suurimman pisteen raosta") — write "aukko"/"aukosta" (e.g. "Lasketaan aukko jokaiselle pisteelle", "mitä pienempi piste, sitä suurempi aukko").
-- content/fi/FY8/fy8-7/exercises/solutions.md:190 (fy8-7-L3 fibre laser, Annettu) — still "loput energiasta on lämpöä" while the task now says "muuttuu sisäenergiaksi" — "loput energiasta muuttuu aineen sisäenergiaksi".
+- content/fi/FY8/fy8-7/exercises/solutions.md:227-239 (fy8-7-L2-05) — the solution now mixes "energia-aukko" with the old short form "rako" ("saadaan rako aallonpituudesta", "Lasketaan rako", "sitä suurempi rako", "rako pienenee", "suurimman pisteen raosta") — write "aukko"/"aukosta" (e.g. "Lasketaan aukko jokaiselle pisteelle", "mitä pienempi piste, sitä suurempi aukko").
+- content/fi/FY8/fy8-7/exercises/solutions.md:258 (fibre-laser task, Annettu) — still "loput energiasta on lämpöä" while the task now says "muuttuu sisäenergiaksi" — "loput energiasta muuttuu aineen sisäenergiaksi".
 
 ## Checked
 - energiarako → energia-aukko in L1-09 feedback and solution, L2-05 task text and solution, and the 620 nm solution: consistent with the brief's Tiivistelmä; task meaning and answers unchanged.
