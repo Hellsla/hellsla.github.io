@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b6066e2dc31595c5
-SCOPE: delta added-exercise from 47c6ed01597a514a base 8f23aa7ae3bd
+CONTENT-HASH: c464157cc013fdd3
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-9-L2-08 text — "varaus-tiedon avulla" reads awkwardly — "varauksen avulla".
+- none
 
 ## Checked
-- fy6-9-open-exercises-L2-1280-9.png and -10.png (fy6-9-L2-08, shown as 9-17): task text, figure ex-current2 (axes with units, steps at 2, 1,5 and 0,5 A, gridlines, no charge given away), solution rows aligned, units upright, answer set apart, Järkevyys.
-- Set still reads as one; nothing clipped.
+- Delta, round 1 (solutions.md only).
+- open-exercises-1280-2 (9-1, 1,080·10⁴ C) and -3 (9-3, 4,7·10² Wh).
+- open-exercises-L2-1280-2 (9-11, 0,2 Ω), -3 (9-12) and -7 (9-15, 1,5 Wh).
+- Rewritten Vastaus lines read clearly; formulas and units upright; rows aligned; nothing clipped.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

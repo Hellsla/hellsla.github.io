@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: daa0330ac3b9a714
-SCOPE: delta added-exercise from e5c2c0ca37639b87 base 8f23aa7ae3bd
+CONTENT-HASH: cf9236e40e5a36de
+SCOPE: delta, proofreading fixes 2026-11-15 (a·10^n answers, wording), round 1
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] fy6-9/ex-current2 (task 9-17) — y-axis ticks read "2", "1" but "2,5", "1,5", "0,5"; the x ticks likewise mix "1", "3" with "0,5", "1,5". Use one style (all with the decimal comma, or whole numbers bare is acceptable) .
+- [Minor] fy6-9-L1-02 Vastaus — "1,080·10^4 C" claims four significant figures from 3000 mAh, which a student may read as anything from one to four — for science: confirm that 3000 mAh is meant as four figures (the page now shows 3,000 Ah).
 
 ## Checked
-- review/shots/fy6-9-open-exercises-L2-1280-9.png and -10.png (stamp hash daa0330ac3b9a714): task 9-17 with graph, answer row and the whole open solution (Annettu to Järkevyys); the set still reads as one.
-- Graph: axes with quantity and unit, gridlines at 0,5 steps, steps drawn as horizontal segments, description gives the same values and not the answer; the solution's chains render as aligned rows, units upright, colon for division.
+- open-exercises-1280-2 (9-2, 3,000 Ah / 1,080·10^4 C) and -3 (9-3, 4,7·10^2 Wh eli 0,47 kWh).
+- open-exercises-L2-1280-2 (9-11, 0,2 Ω reasoning), -3, -7 (9-15 energy-loss Vastaus) and -8.
+- New Vastaus paragraphs render cleanly, answer rows and chains align, units upright, Finnish fluent.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
