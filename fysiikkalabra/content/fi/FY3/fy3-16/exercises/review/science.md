@@ -4,7 +4,7 @@ CONTENT-HASH: c3c6dce924fa959f
 ## Blocking
 
 ## Polish
-- exercises.json:353 (L2-01) and :538 (L3-03) — with tolerance 0,04 the accepted ranges are 1,632–1,768 kg and 1,536–1,664 kg. The rounded-down values 1,6 kg and 1,5 kg are now rejected, as intended. So are the unrounded minima 1,617 kg and 1,511 kg (4,9 % and 5,6 % off). This fits the explicit "Pyöristä vastaus ylöspäin", and 1,617 still shows as "Lähellä". — Optional: one sentence in each Vastaus saying that an unrounded minimum is not accepted, because the task asks for the value rounded up.
+- exercises.json:134 (L2-01) and :319 (L3-03) — with tolerance 0,04 the accepted ranges are 1,632–1,768 kg and 1,536–1,664 kg. The rounded-down values 1,6 kg and 1,5 kg are now rejected, as intended. So are the unrounded minima 1,617 kg and 1,511 kg (4,9 % and 5,6 % off). This fits the explicit "Pyöristä vastaus ylöspäin", and 1,617 still shows as "Lähellä". — Optional: one sentence in each Vastaus saying that an unrounded minimum is not accepted, because the task asks for the value rounded up.
 - L1-02 and L1-09 — both are a single Q = rm step for water at 100 °C. L1-09's MAFY lookup gives it its own purpose, so nothing needs to change.
 
 ## Checked
