@@ -1,19 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 9218a0cc5bf3ce91
+VERDICT: PASS
+CONTENT-HASH: 21b71e7968aeda61
 
 ## Blocking
-- content/fi/FY4/fy4-7/exercises/solutions.md:367 (fy4-7-L2-10, Lisähuomio) — **B** (claim true only under an unstated condition). "kun hitaampi auto on jo pysähtynyt, nopeammalla on vielä $13{,}3\,\text{m}$ jarrutusmatkaa jäljellä … noin $52\,\text{km/h}$" is true only for the *place* where the slower car stops (both drivers reacting at the same point), not for the *moment* the sentence names. Recomputed with the task's model: the slower car stops at $t = 3{,}78\,\text{s}$; at that moment the faster car moves at $12\,\text{km/h}$ and has $0{,}69\,\text{m}$ left. — Fix: state the condition as a place, e.g. "Siinä kohdassa, johon hitaampi auto pysähtyy, nopeammalla autolla on vielä $13{,}3\,\text{m}$ jarrutusmatkaa jäljellä, kun kuljettajat alkavat reagoida samassa kohdassa. Sen nopeus tässä kohdassa on …".
 
 ## Polish
-- solutions.md:348 (a) — "Suurin osa ajaa siis lähellä rajoitusta, vähän sen yli": the group 0–10 km/h over is $48{,}2\,\%$, the largest group but under half, and the table does not say how far under the limit the $38{,}0\,\%$ drive — "suurin ryhmä ($48{,}2\,\%$) ajaa enintään $10\,\text{km/h}$ yli rajoituksen".
-- solutions.md:370 (d) — "mittausasemat eivät ole niissä" (junctions, built-up areas) is stated as a fact of the source; the coordinator's record of the report says only that the stations are on main roads — soften ("mittausasemat ovat pääteillä") or check it in the report.
+- solutions.md (fy4-7-L1-01, Vastaus) — the answer is justified as "two significant figures like the mass $1200\,\text{kg}$"; by the teacher's rule (trailing zeros are significant unless the task says otherwise) the mass has four and the limiting datum is the speed $20{,}0\,\text{m/s}$ — say "three significant figures like the speed" (the shown $240\,\text{kJ}$ does not change).
+- solutions.md (fy4-7-L2-10, part a) — "Yli puolet ajoneuvoista ylittää rajoituksen, ja siksi keskinopeus … on rajoitusta suurempi": more than half over the limit shows that the median is above the limit, not by itself the mean — join the two observations with "and" instead of a cause.
 
 ## Checked
-- All 21 numeric answers recomputed with my own formulas: agree with exercises.json and answers.py inside each tolerance.
-- L2-10 table, 268 stations, summer 2025, definitions of the shares: the same as the coordinator's record of the Fintraffic report; source dated (16.11.2026); every number the task needs is in the task, so no moving value.
-- L2-10 b: $370\,370\,\text{J}$, $489\,815\,\text{J}$, ratio $1{,}3225$ (+32 %, speed +15 %).
-- L2-10 c: $53{,}09\,\text{m}$, $66{,}37\,\text{m}$, $\Delta s = 13{,}29\,\text{m}$; answer 13.3, tolerance 0.05 accepts the shown $13\,\text{m}$; two significant figures justified.
-- L2-10 c is derived from $v_0 + a t_\text{j} = 0$ and $s = v_0 t + \tfrac12 a t^2$ (symbolic first); kinematics is a prerequisite; scope FY4.
-- L2-10 d: no causal claim about accidents from the table; model limits stated; braking energy "sisäenergiaksi".
-- L1-07 proofreading fix: $80 \cdot 10 \cdot 12 = 9600\,\text{J} = 9{,}6\,\text{kJ}$, compared correctly with $9{,}4\,\text{kJ}$.
+- All 21 numeric answers recomputed from the task texts with my own formulas: agree with exercises.json and answers.py inside each tolerance; the three choice tasks have exactly one correct option, every distractor wrong and its feedback right.
+- Round 2: the round-1 Blocking finding (Lisähuomio named a moment) and both Polish items are fixed.
+- L2-10 table, 268 stations, summer season 2025, definitions of the shares, "main roads = valta- ja kantatiet", variable-limit stretches left out: the same as the coordinator's record of the Fintraffic report; source dated; no moving value.
+- L2-10 a: $38{,}0 / 48{,}2 / 13{,}8\,\%$ and $60{,}2 / 31{,}7 / 8{,}1\,\%$; $13{,}8\,\%$ is one in $7{,}2$; largest group worded as under half.
+- L2-10 b: $370\,370\,\text{J}$, $489\,815\,\text{J}$, ratio $1{,}3225$.
+- L2-10 c: $53{,}09\,\text{m}$, $66{,}37\,\text{m}$, $\Delta s = 13{,}29\,\text{m}$; answer 13.3 with tolerance 0.05 accepts the shown $13\,\text{m}$; two significant figures (80 and 92 km/h, 1{,}0 s, 8{,}0 m/s²) fit the teacher's rule; symbolic derivation from $v_0 + a t = 0$; kinematics is earlier FY4 content.
+- L2-10 remark: now names the place and the condition (same reaction point); $\sqrt{2 \cdot 8{,}0 \cdot 13{,}29} = 14{,}58\,\text{m/s} = 52{,}5\,\text{km/h}$, shown about 52.
+- L2-10 d: no causal claim about accidents; the claim about where the stations stand is gone; model limits stated.
+- L1-07: $80 \cdot 10 \cdot 12 = 9600\,\text{J} = 9{,}6\,\text{kJ}$ against $9{,}4\,\text{kJ}$, difference rightly put to $g$ rounded up.
 - Hash the same at the start and the end.
