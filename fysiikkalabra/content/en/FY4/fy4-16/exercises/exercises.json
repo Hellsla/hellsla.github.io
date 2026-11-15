@@ -170,7 +170,7 @@
       "tolerance": 0.02,
       "fbd": "equations",
       "data": {
-        "caption": "Upward speed of the lift after the start (example data)",
+        "caption": "Upward speed of the lift after the start",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -220,7 +220,7 @@
       "tolerance": 0.05,
       "fbd": "equations",
       "data": {
-        "caption": "Position of the sled on horizontal snow (example data)",
+        "caption": "Position of the sled on horizontal snow",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x\\,(\\text{m})$"
@@ -266,7 +266,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Angle of inclination at which the box slides steadily (example data)",
+        "caption": "Angle of inclination at which the box slides steadily",
         "columns": [
           "Measurement",
           "$\\alpha\\,({}^\\circ)$"
@@ -307,7 +307,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Horizontal distance of the sled (example data)",
+        "caption": "Horizontal distance of the sled",
         "columns": [
           "$m\\,(\\text{kg})$",
           "$h\\,(\\text{m})$",
@@ -412,7 +412,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Parts of the sledding hill (example data)",
+        "caption": "Parts of the sledding hill",
         "columns": [
           "Part",
           "$\\alpha\\,({}^\\circ)$",
@@ -445,7 +445,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Speed of the skydiver after the parachute opens (example data)",
+        "caption": "Speed of the skydiver after the parachute opens",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"

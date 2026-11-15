@@ -170,7 +170,7 @@
       "unit": "°C",
       "tolerance": 0.02,
       "data": {
-        "caption": "Suljetun pullon ilman paine (esimerkkiaineisto)",
+        "caption": "Suljetun pullon ilman paine",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p\\,(\\text{kPa})$"
@@ -211,7 +211,7 @@
       "unit": "°C",
       "tolerance": 0.02,
       "data": {
-        "caption": "Suljetun pullon ilman paine (esimerkkiaineisto)",
+        "caption": "Suljetun pullon ilman paine",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p\\,(\\text{kPa})$"
@@ -256,7 +256,7 @@
       "unit": "°C",
       "tolerance": 0.02,
       "data": {
-        "caption": "Vuotavan pullon ilman paine (esimerkkiaineisto)",
+        "caption": "Vuotavan pullon ilman paine",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p\\,(\\text{kPa})$"
@@ -293,7 +293,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Suljetun pullon ilman paine (esimerkkiaineisto)",
+        "caption": "Suljetun pullon ilman paine",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p\\,(\\text{kPa})$"
@@ -397,7 +397,7 @@
       "unit": "°C",
       "tolerance": 0.03,
       "data": {
-        "caption": "Kaksi mittaussarjaa samasta kaasusta (esimerkkiaineisto)",
+        "caption": "Kaksi mittaussarjaa samasta kaasusta",
         "columns": [
           "Sarja",
           "$\\theta\\,({}^\\circ\\text{C})$",
@@ -440,7 +440,7 @@
       "unit": "°C",
       "tolerance": 0.03,
       "data": {
-        "caption": "Kalibrointipullon ilman paine (esimerkkiaineisto)",
+        "caption": "Kalibrointipullon ilman paine",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p\\,(\\text{kPa})$"

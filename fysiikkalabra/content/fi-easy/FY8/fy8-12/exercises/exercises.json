@@ -187,7 +187,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "GM-mittarin pulssimäärä $10\\,\\text{s}$:n jaksoissa (esimerkkiaineisto)",
+        "caption": "GM-mittarin pulssimäärä $10\\,\\text{s}$:n jaksoissa",
         "columns": [
           "Jakso",
           "Pulssit"
@@ -249,7 +249,7 @@
       "unit": "mm",
       "tolerance": 0.03,
       "data": {
-        "caption": "GM-mittarin pulssit $60\\,\\text{s}$:ssa lyijyn takana (esimerkkiaineisto)",
+        "caption": "GM-mittarin pulssit $60\\,\\text{s}$:ssa lyijyn takana",
         "columns": [
           "$d\\,(\\text{mm})$",
           "Pulssit"
@@ -352,7 +352,7 @@
       "unit": "mm",
       "tolerance": 0.04,
       "data": {
-        "caption": "GM-mittarin pulssit $60\\,\\text{s}$:ssa levyjen takana (esimerkkiaineisto)",
+        "caption": "GM-mittarin pulssit $60\\,\\text{s}$:ssa levyjen takana",
         "columns": [
           "$d\\,(\\text{mm})$",
           "Pulssit"
@@ -398,7 +398,7 @@
       "unit": "kBq",
       "tolerance": 0.03,
       "data": {
-        "caption": "GM-mittarin pulssit $60\\,\\text{s}$:n jaksoissa (esimerkkiaineisto)",
+        "caption": "GM-mittarin pulssit $60\\,\\text{s}$:n jaksoissa",
         "columns": [
           "Jakso",
           "Lähde",

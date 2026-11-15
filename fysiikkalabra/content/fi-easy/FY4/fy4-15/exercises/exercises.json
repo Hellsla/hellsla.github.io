@@ -146,7 +146,7 @@
       "unit": "GWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Tuulivoimalan teho ja tuulen nopeuden esiintymisaika vuodessa (esimerkkiaineisto)",
+        "caption": "Tuulivoimalan teho ja tuulen nopeuden esiintymisaika vuodessa",
         "columns": [
           "$v\\,(\\text{m/s})$",
           "$P\\,(\\text{kW})$",
@@ -193,7 +193,7 @@
       "unit": "GWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Joen keskivirtaama kuukausittain (esimerkkiaineisto)",
+        "caption": "Joen keskivirtaama kuukausittain",
         "columns": [
           "Kuukausi",
           "$Q\\,(\\text{m}^3\\text{/s})$"
@@ -326,7 +326,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Tuulivoimalan sähköteho tuulen nopeuden funktiona (esimerkkiaineisto)",
+        "caption": "Tuulivoimalan sähköteho tuulen nopeuden funktiona",
         "columns": [
           "$v\\,(\\text{m/s})$",
           "$P\\,(\\text{kW})$"
@@ -372,7 +372,7 @@
       "unit": "m³",
       "tolerance": 0.02,
       "data": {
-        "caption": "Tuulivoimapuiston ylijäämäteho yöllä (esimerkkiaineisto)",
+        "caption": "Tuulivoimapuiston ylijäämäteho yöllä",
         "columns": [
           "$t\\,(\\text{h})$",
           "$P\\,(\\text{MW})$"

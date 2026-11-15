@@ -176,7 +176,7 @@
    "unit": "m/s²",
    "tolerance": 0.05,
    "data": {
-    "caption": "Braking distance of a car at different initial speeds (example data)",
+    "caption": "Braking distance of a car at different initial speeds",
     "columns": [
      "$v_0\\,(\\text{m/s})$",
      "$s_\\text{b}\\,(\\text{m})$"
@@ -213,7 +213,7 @@
    "unit": "km/h",
    "tolerance": 0.03,
    "data": {
-    "caption": "Stopping time and average force of the dummy (example data)",
+    "caption": "Stopping time and average force of the dummy",
     "columns": [
      "$\\Delta t\\,(\\text{s})$",
      "$F_\\text{avg}\\,(\\text{kN})$"
@@ -340,7 +340,7 @@
    "unit": "km/h",
    "tolerance": 0.03,
    "data": {
-    "caption": "Stopping distance on wet asphalt (example data)",
+    "caption": "Stopping distance on wet asphalt",
     "columns": [
      "$v\\,(\\text{km/h})$",
      "$s_\\text{stop}\\,(\\text{m})$"
@@ -378,7 +378,7 @@
    "unit": "kN",
    "tolerance": 0.02,
    "data": {
-    "caption": "Speed of the dummy during the collision (example data)",
+    "caption": "Speed of the dummy during the collision",
     "columns": [
      "$t\\,(\\text{ms})$",
      "$v\\,(\\text{m/s})$"

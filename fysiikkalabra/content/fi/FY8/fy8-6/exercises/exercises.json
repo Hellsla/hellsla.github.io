@@ -136,7 +136,7 @@
       "unit": "V",
       "tolerance": 0.03,
       "data": {
-        "caption": "Punaisen LEDin virta jännitteen funktiona (esimerkkiaineisto)",
+        "caption": "Punaisen LEDin virta jännitteen funktiona",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{mA})$"
@@ -197,7 +197,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Kynnysjännite eri lukutavoilla (esimerkkiaineisto)",
+        "caption": "Kynnysjännite eri lukutavoilla",
         "columns": [
           "Opiskelija",
           "$U_\\text{k}\\,(\\text{V})$"
@@ -231,7 +231,7 @@
       "unit": "eV",
       "tolerance": 0.03,
       "data": {
-        "caption": "Punaisen LEDin spektri (esimerkkiaineisto)",
+        "caption": "Punaisen LEDin spektri",
         "columns": [
           "$\\lambda\\,(\\text{nm})$",
           "$I_\\text{rel}$"
@@ -297,7 +297,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kynnysjännitteet (esimerkkiaineisto)",
+        "caption": "Kynnysjännitteet",
         "columns": [
           "LED",
           "$f\\,(10^{14}\\,\\text{Hz})$",
@@ -391,7 +391,7 @@
       "unit": "J s",
       "tolerance": 0.03,
       "data": {
-        "caption": "LEDien kynnysjännitteet mittarin nollapistevirheellä (esimerkkiaineisto)",
+        "caption": "LEDien kynnysjännitteet mittarin nollapistevirheellä",
         "columns": [
           "Väri",
           "$\\lambda\\,(\\text{nm})$",
