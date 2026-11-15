@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 5d3b9562edb09231
+CONTENT-HASH: b471149a28fbc207
 SCOPE: delta added-exercise from e7c7b458ee26ff45 base f6ae5d507c79
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] figure, 360 px — scale numbers are small (about 9 px) but readable; unchanged from round 2.
-
+- [Minor] L3-06 solution, SUBSTITUTION, 360 px — after the second display block a lone ". b)" starts a line (source: `$$. b) ...`), so a full stop leads the line; move the period inside the display (`\,.`) or drop it and start "b)" on its own line.
+- [Minor] figure, 360 px — scale numbers small (about 9 px) but readable; unchanged.
 
 ## Checked
-- Round 3, 360 px: own captures with solutions open of tasks L2-09 and L3-06 in this language (scratchpad s/, cropped parts), read in full: the SIJOITUS hc row, the E rows with stacked fractions, the Järkevyys rows (L2-09 "1240 eV nm : 436 nm ≈ 2,84 eV"; L3-06 5,461 eV − 4,667 eV in prose, λ row), the Vastaus.
-- DOM measurement: no chain is clipped by the card or the viewport; every unit ("m/s", "J/eV", "1570 nm") is fully visible.
-- Delta covers only the two added figure tasks and the figure lamp-spectrum (seen in the fi 390 px capture fig-8); other exercises not re-read.
+- Round 4, 360 px, solutions open: own captures of L2-09 and L3-06 (fi-easy), read in full in chunks; scrollWidth 360, no horizontal overflow.
+- L3-06 SUBSTITUTION a): both denominators now stack J over eV and sit inside the card with margin; nothing clipped. L2-09 conversion, E rows, answer, figure lamp-spectrum seen.
+- Delta covers only these two figure tasks.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4
