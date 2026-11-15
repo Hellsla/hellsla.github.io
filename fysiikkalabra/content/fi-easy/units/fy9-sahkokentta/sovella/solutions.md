@@ -50,7 +50,15 @@
 **Periaate:** Pallot ovat pieniä verrattuna etäisyyteen. Siksi niitä voi käsitellä pistevarauksina, ja Coulombin laki antaa voiman. Varaukset ovat yhtä suuret, joten varausten tulo on $q^2$. Varaus koostuu alkeisvarauksista. Siksi positiivisilta palloilta puuttuu $n = \tfrac{q}{e}$ elektronia (luku *Sähkövaraus ja Coulombin laki*).
 **Kaava:** $F_\text{s} = k\dfrac{q^2}{r^2}$, joten $q = r\sqrt{\dfrac{F_\text{s}}{k}}$ ja $n = \dfrac{q}{e}$
 **Muunnokset:** $r = 8{,}0\,\text{cm} = 8{,}0 \cdot 0{,}01\,\text{m} = 0{,}080\,\text{m}$ ja $F_\text{s} = 0{,}493\,\text{mN} = 0{,}493 \cdot 0{,}001\,\text{N} = 4{,}93 \cdot 10^{-4}\,\text{N}$. Lopuksi $1\,\text{nC} = 10^{-9}\,\text{C}$.
-**Sijoitus:** $q = 0{,}080\,\text{m} \cdot \sqrt{\dfrac{4{,}93 \cdot 10^{-4}\,\text{N}}{8{,}988 \cdot 10^{9}\,\text{N}\cdot\text{m}^2/\text{C}^2}} = 0{,}080\,\text{m} \cdot 2{,}342 \cdot 10^{-7}\,\tfrac{\text{C}}{\text{m}} = 1{,}874 \cdot 10^{-8}\,\text{C} = 18{,}7\,\text{nC}$ ja $n = \dfrac{1{,}874 \cdot 10^{-8}\,\text{C}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 1{,}17 \cdot 10^{11}$
+**Sijoitus:** $$
+\begin{aligned}
+q &= 0{,}080\,\text{m} \\
+&\cdot \sqrt{\dfrac{4{,}93 \cdot 10^{-4}\,\text{N}}{8{,}988 \cdot 10^{9}\,\text{N}\cdot\text{m}^2/\text{C}^2}} \\
+&= 0{,}080\,\text{m} \cdot 2{,}342 \cdot 10^{-7}\,\tfrac{\text{C}}{\text{m}} \\
+&= 1{,}874 \cdot 10^{-8}\,\text{C} \\
+&= 18{,}7\,\text{nC}
+\end{aligned}
+$$ ja $n = \dfrac{1{,}874 \cdot 10^{-8}\,\text{C}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 1{,}17 \cdot 10^{11}$
 **Vastaus:** $q \approx 19\,\text{nC}$. Kummastakin pallosta on siirtynyt pois noin $1{,}2 \cdot 10^{11}$ elektronia. Vastauksessa on kaksi merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Tarkistus: $k\tfrac{q^2}{r^2} = 8{,}988 \cdot 10^{9} \cdot \tfrac{(1{,}874 \cdot 10^{-8})^2}{0{,}080^2}\,\text{N} = 4{,}93 \cdot 10^{-4}\,\text{N}$. Kymmeniä nanocoulombeja on tavallinen suuruusluokka varaukselle, joka saadaan hankaamalla. $10^{11}$ elektronia on mitättömän pieni osa pallon kaikista elektroneista.
 
@@ -92,7 +100,12 @@
 **Kysytty:** kapasitanssi $C$ ja varaus $Q$
 **Periaate:** Levyjen etäisyys on pieni levyjen kokoon verrattuna. Siksi levyjen välissä on homogeeninen kenttä, ja levykondensaattorin kapasitanssin lauseke pätee. Varaus on suoraan verrannollinen jännitteeseen. Kapasitanssi on niiden suhde (luku *Kondensaattori ja sen energia*).
 **Kaava:** $C = \dfrac{\varepsilon_0\varepsilon_\text{r}A}{d}$, missä $A = a^2$, ja $Q = CU$
-**Muunnokset:** $A = 0{,}250\,\text{m} \cdot 0{,}250\,\text{m} = 0{,}0625\,\text{m}^2$, $d = 3{,}00\,\text{mm} = 3{,}00 \cdot 0{,}001\,\text{m} = 0{,}00300\,\text{m}$ ja $U = 4{,}50\,\text{kV} = 4{,}50 \cdot 1000\,\text{V} = 4500\,\text{V}$. Lopuksi $1\,\text{pF} = 10^{-12}\,\text{F}$ ja $1\,\mu\text{C} = 10^{-6}\,\text{C}$.
+**Muunnokset:** $$
+\begin{aligned}
+A &= 0{,}250\,\text{m} \cdot 0{,}250\,\text{m} \\
+&= 0{,}0625\,\text{m}^2
+\end{aligned}
+$$, $d = 3{,}00\,\text{mm} = 3{,}00 \cdot 0{,}001\,\text{m} = 0{,}00300\,\text{m}$ ja $U = 4{,}50\,\text{kV} = 4{,}50 \cdot 1000\,\text{V} = 4500\,\text{V}$. Lopuksi $1\,\text{pF} = 10^{-12}\,\text{F}$ ja $1\,\mu\text{C} = 10^{-6}\,\text{C}$.
 **Sijoitus:** $C = \dfrac{8{,}854 \cdot 10^{-12}\,\text{F/m} \cdot 1{,}0 \cdot 0{,}0625\,\text{m}^2}{0{,}00300\,\text{m}} = 1{,}845 \cdot 10^{-10}\,\text{F} = 184{,}5\,\text{pF}$ ja $Q = 1{,}845 \cdot 10^{-10}\,\text{F} \cdot 4500\,\text{V} = 8{,}30 \cdot 10^{-7}\,\text{C} = 0{,}830\,\mu\text{C}$
 **Vastaus:** $C \approx 184\,\text{pF}$ ja $Q \approx 0{,}830\,\mu\text{C}$. Vastauksessa on kolme merkitsevää numeroa kuten levyn sivussa, etäisyydessä ja jännitteessä. Ilman suhteellinen permittiivisyys on hyvin tarkasti $1$. Siksi taulukon $1{,}0$ ei rajoita tarkkuutta.
 **Järkevyys:** Kun eristeenä on ilma, kondensaattorin kapasitanssi on pieni, vain satoja pikofaradeja. Näin on, vaikka levyt ovat kämmentä suuremmat. Yksikkö on oikea: $\tfrac{\text{F}}{\text{m}} \cdot \tfrac{\text{m}^2}{\text{m}} = \text{F}$. Varaus on alle mikrocoulombin. Se on samaa suuruusluokkaa kuin varaus, joka purkautuu kipinässä.
@@ -103,9 +116,22 @@
 **Periaate:** Latauksessa jännite kasvaa nollasta arvoon $U$ samassa suhteessa kuin varaus. Siksi kondensaattoriin varastoituu energia $\tfrac12 QU = \tfrac12 CU^2$. Levyjen välissä kenttä on homogeeninen. Siksi kentän voimakkuus on jännite jaettuna etäisyydellä. Läpilyöntiä ei tapahdu, jos kenttä on pienempi kuin ilman läpilyöntilujuus (luvut *Kondensaattori ja sen energia* ja *Homogeeninen sähkökenttä*).
 **Kaava:** $W = \tfrac12 CU^2$, $E = \dfrac{U}{d}$ ja $U_\text{max} = E_\text{max} d$
 **Muunnokset:** Lopuksi $1\,\text{J} = 1000\,\text{mJ}$ ja $1\,\text{MV/m} = 10^{6}\,\text{V/m}$.
-**Sijoitus:** $W = \tfrac12 \cdot 1{,}845 \cdot 10^{-10}\,\text{F} \cdot (4500\,\text{V})^2 = 1{,}868 \cdot 10^{-3}\,\text{J} = 1{,}87\,\text{mJ}$, $E = \dfrac{4500\,\text{V}}{0{,}00300\,\text{m}} = 1{,}50 \cdot 10^{6}\,\text{V/m}$ ja $U_\text{max} = 3 \cdot 10^{6}\,\text{V/m} \cdot 0{,}00300\,\text{m} = 9 \cdot 10^{3}\,\text{V}$
+**Sijoitus:** $$
+\begin{aligned}
+W &= \tfrac12 \cdot 1{,}845 \cdot 10^{-10}\,\text{F} \\
+&\cdot (4500\,\text{V})^2 \\
+&= 1{,}868 \cdot 10^{-3}\,\text{J} \\
+&= 1{,}87\,\text{mJ}
+\end{aligned}
+$$, $E = \dfrac{4500\,\text{V}}{0{,}00300\,\text{m}} = 1{,}50 \cdot 10^{6}\,\text{V/m}$ ja $U_\text{max} = 3 \cdot 10^{6}\,\text{V/m} \cdot 0{,}00300\,\text{m} = 9 \cdot 10^{3}\,\text{V}$
 **Vastaus:** $W \approx 1{,}87\,\text{mJ}$ ja $E \approx 1{,}50\,\text{MV/m}$, kolme merkitsevää numeroa. Kenttä on puolet ilman läpilyöntilujuudesta, joten ilmaväli kestää. Läpilyönti tapahtuisi vasta noin $9\,\text{kV}$:n jännitteellä.
-**Järkevyys:** Energian toinen lauseke antaa saman tuloksen: $\tfrac12 QU = \tfrac12 \cdot 8{,}30 \cdot 10^{-7}\,\text{C} \cdot 4500\,\text{V} = 1{,}87\,\text{mJ}$. Energia on pieni. Marginaali eli turvavara läpilyöntiin on kuitenkin vain kaksinkertainen. Kostea ilma, pöly tai terävä reuna voi aiheuttaa kipinän pienemmälläkin jännitteellä.
+**Järkevyys:** Energian toinen lauseke antaa saman tuloksen: $$
+\begin{aligned}
+&\tfrac12 QU \\
+&= \tfrac12 \cdot 8{,}30 \cdot 10^{-7}\,\text{C} \cdot 4500\,\text{V} \\
+&= 1{,}87\,\text{mJ}
+\end{aligned}
+$$. Energia on pieni. Marginaali eli turvavara läpilyöntiin on kuitenkin vain kaksinkertainen. Kostea ilma, pöly tai terävä reuna voi aiheuttaa kipinän pienemmälläkin jännitteellä.
 
 ### c)
 **Annettu:** a-kohdasta $Q = 8{,}30 \cdot 10^{-7}\,\text{C}$ ja $C = 1{,}845 \cdot 10^{-10}\,\text{F}$; lasin $\varepsilon_\text{r} = 5{,}6$; lasi täyttää välin; lähde on irrotettu
@@ -289,7 +315,14 @@
 **Kuvaajan lukeminen:** Suoran katkoviivajatke leikkaa pystyakselin noin $22\,\text{pF}$:n kohdalla. Kohta on merkitty kuvaajaan oranssilla pisteellä.
 **Kaava:** $C = k \cdot \tfrac{1}{d} + b$, joten $b = C_1 - k \cdot \tfrac{1}{d_1}$, missä $C_1$ on suoran arvo kohdassa $\tfrac{1}{d} = \tfrac{1}{d_1}$
 **Muunnokset:** Ei tarvita. Kulmakertoimen yksikkö on $\text{pF}\cdot\text{mm}$ ja suureen $\tfrac{1}{d}$ yksikkö $\tfrac{1}{\text{mm}}$. Siksi tulo on pikofaradeina.
-**Sijoitus:** $b = 93\,\text{pF} - 353{,}8\,\text{pF}\cdot\text{mm} \cdot 0{,}20\,\tfrac{1}{\text{mm}} = 93\,\text{pF} - 70{,}8\,\text{pF} = 22{,}2\,\text{pF}$
+**Sijoitus:** $$
+\begin{aligned}
+b &= 93\,\text{pF} \\
+&- 353{,}8\,\text{pF}\cdot\text{mm} \cdot 0{,}20\,\tfrac{1}{\text{mm}} \\
+&= 93\,\text{pF} - 70{,}8\,\text{pF} \\
+&= 22{,}2\,\text{pF}
+\end{aligned}
+$$
 **Vastaus:** $b \approx 22\,\text{pF}$. Vastauksessa on kaksi merkitsevää numeroa, koska se on kahden lähes yhtä suuren luvun erotus.
 **Järkevyys:** Vakiotermi on johtojen ja mittarin oma kapasitanssi. Johdot ovat lähellä toisiaan ja mittarin liittimiä. Mittari mittaa niiden kapasitanssin levyjen kapasitanssin lisäksi. Mittajohtojen kapasitanssi on yleensä kymmeniä pikofaradeja. Malli toimii mitatulla alueella. Suurinkin etäisyys $6{,}0\,\text{mm}$ on nimittäin vain $3\,\%$ levyn sivusta $200\,\text{mm}$. Jos etäisyys olisi senttimetrejä, reunojen kaartuva kenttä kasvattaisi kapasitanssia suuremmaksi kuin mallin arvo. Pienimmillä etäisyyksillä taas välikappaleiden paksuus ja levyjen taipuminen ovat epävarmoja, esimerkiksi $\pm 0{,}1\,\text{mm}$. Se on $10\,\%$ etäisyydestä $1{,}0\,\text{mm}$. Siksi kulmakerroin kannattaa määrittää koko suoralta eikä yhdestä pisteestä.
 
@@ -309,7 +342,18 @@
 ### a)
 **Kysytty:** arvio väitteestä, että lintu on johtimella turvassa siksi, että sen jalat eristävät
 **Periaate:** Kehon läpi kulkee virta vain, jos kehon kahden kohdan välillä on jännite eli potentiaaliero. Johtimen kahden kohdan välinen jännite saadaan Ohmin laista. Siihen tarvitaan kohtien välisen johtimen resistanssi ja virta (luvut *Sähköturvallisuus kotona ja työssä* ja *Potentiaalienergia ja potentiaali sähkökentässä*).
-**Mallivastaus:** Linnun jalat ovat noin $5\,\text{cm}$:n päässä toisistaan. Jalkojen välisen johtimen resistanssi on $0{,}30\,\tfrac{\Omega}{\text{km}} \cdot 0{,}05 \cdot 10^{-3}\,\text{km} = 1{,}5 \cdot 10^{-5}\,\Omega$. Siksi jalkojen välinen jännite on $U = RI = 1{,}5 \cdot 10^{-5}\,\Omega \cdot 100\,\text{A} = 1{,}5\,\text{mV}$. Näin pieni jännite ei aja linnun kehon läpi virtaa, joka tuntuisi. Lintu on kyllä lähes samassa potentiaalissa kuin johdin, noin $12\,\text{kV}$ maahan nähden. (Linjan $20\,\text{kV}$ on vaihejohtimien välinen jännite.) Potentiaali yksin ei kuitenkaan ole vaarallinen. Virta tarvitsee kaksi kohtaa, joiden potentiaalit ovat erisuuret. Lintu ei koske maahan, pylvääseen eikä toiseen johtimeen. Siksi sen kehon läpi ei kulje virtaa. Väitteen johtopäätös on oikea, mutta perustelu on väärä. Lintu olisi turvassa, vaikka sen jalat johtaisivat sähköä hyvin. Lintu joutuu vaaraan, jos se koskettaa siivellään samaan aikaan toista johdinta tai pylvään maadoitettua osaa.
+**Mallivastaus:** Linnun jalat ovat noin $5\,\text{cm}$:n päässä toisistaan. Jalkojen välisen johtimen resistanssi on $$
+\begin{aligned}
+&0{,}30\,\tfrac{\Omega}{\text{km}} \cdot 0{,}05 \cdot 10^{-3}\,\text{km} \\
+&= 1{,}5 \cdot 10^{-5}\,\Omega
+\end{aligned}
+$$. Siksi jalkojen välinen jännite on $$
+\begin{aligned}
+U &= RI \\
+&= 1{,}5 \cdot 10^{-5}\,\Omega \cdot 100\,\text{A} \\
+&= 1{,}5\,\text{mV}
+\end{aligned}
+$$. Näin pieni jännite ei aja linnun kehon läpi virtaa, joka tuntuisi. Lintu on kyllä lähes samassa potentiaalissa kuin johdin, noin $12\,\text{kV}$ maahan nähden. (Linjan $20\,\text{kV}$ on vaihejohtimien välinen jännite.) Potentiaali yksin ei kuitenkaan ole vaarallinen. Virta tarvitsee kaksi kohtaa, joiden potentiaalit ovat erisuuret. Lintu ei koske maahan, pylvääseen eikä toiseen johtimeen. Siksi sen kehon läpi ei kulje virtaa. Väitteen johtopäätös on oikea, mutta perustelu on väärä. Lintu olisi turvassa, vaikka sen jalat johtaisivat sähköä hyvin. Lintu joutuu vaaraan, jos se koskettaa siivellään samaan aikaan toista johdinta tai pylvään maadoitettua osaa.
 
 ### b)
 **Kysytty:** miksi kalastaja voi saada iskun koskematta johtimeen, ja pienin ilmaväli, jonka läpi sähkö voi lyödä
@@ -336,7 +380,14 @@
 **Periaate:** Paneelin antama teho on jännitteen ja virran tulo, kun ne on mitattu samaan aikaan samalla kuormalla. Teho on nolla sekä oikosulussa että tyhjäkäynnissä. Niiden välissä teho on suurin maksimitehopisteessä. Hyötysuhde on suurin sähköteho jaettuna sen valon teholla, joka tulee paneelille (luku *Puolijohteet, diodi, LED ja aurinkokenno*).
 **Kaava:** $P = UI$ jokaisella kuormalla ja $\eta = \dfrac{P_\text{max}}{GA}$
 **Muunnokset:** Virrat muunnetaan milliampeereista ampeereiksi, esimerkiksi $199\,\text{mA} = 199 \cdot 0{,}001\,\text{A} = 0{,}199\,\text{A}$. Lisäksi $A = 60\,\text{cm}^2 = 60 \cdot 10^{-4}\,\text{m}^2 = 0{,}0060\,\text{m}^2$.
-**Sijoitus:** Tehot ovat järjestyksessä $2{,}10\,\text{V} \cdot 0{,}210\,\text{A} = 0{,}441\,\text{W}$, $0{,}872\,\text{W}$, $4{,}97\,\text{V} \cdot 0{,}199\,\text{A} = 0{,}989\,\text{W}$, $0{,}959\,\text{W}$, $0{,}805\,\text{W}$, $0{,}574\,\text{W}$ ja $0{,}358\,\text{W}$, joten $P_\text{max} = 0{,}989\,\text{W}$ ja $\eta = \dfrac{0{,}989\,\text{W}}{1000\,\tfrac{\text{W}}{\text{m}^2} \cdot 0{,}0060\,\text{m}^2} = \dfrac{0{,}989\,\text{W}}{6{,}0\,\text{W}} = 0{,}165 = 16{,}5\,\%$
+**Sijoitus:** Tehot ovat järjestyksessä $2{,}10\,\text{V} \cdot 0{,}210\,\text{A} = 0{,}441\,\text{W}$, $0{,}872\,\text{W}$, $4{,}97\,\text{V} \cdot 0{,}199\,\text{A} = 0{,}989\,\text{W}$, $0{,}959\,\text{W}$, $0{,}805\,\text{W}$, $0{,}574\,\text{W}$ ja $0{,}358\,\text{W}$, joten $P_\text{max} = 0{,}989\,\text{W}$ ja $$
+\begin{aligned}
+\eta &= \dfrac{0{,}989\,\text{W}}{1000\,\tfrac{\text{W}}{\text{m}^2} \cdot 0{,}0060\,\text{m}^2} \\
+&= \dfrac{0{,}989\,\text{W}}{6{,}0\,\text{W}} \\
+&= 0{,}165 \\
+&= 16{,}5\,\%
+\end{aligned}
+$$
 **Vastaus:** $P_\text{max} \approx 0{,}99\,\text{W}$ kuormalla $25\,\Omega$ ja $\eta \approx 16\,\%$. Vastauksessa on kaksi merkitsevää numeroa kuten pinta-alassa $60\,\text{cm}^2$.
 **Järkevyys:** Suurin teho on pienempi kuin raportin $U_\text{t}I_\text{k} = 1{,}28\,\text{W}$. Näin pitää olla, koska paneeli ei anna tyhjäkäyntijännitettä ja oikosulkuvirtaa samaan aikaan. Taulukon jokainen rivi noudattaa Ohmin lakia kuormalle, esimerkiksi $\tfrac{4{,}97\,\text{V}}{0{,}199\,\text{A}} \approx 25\,\Omega$. Mittaukset ovat siis johdonmukaisia eli sopivat yhteen. Tavallisten piikennojen hyötysuhde on noin $15\text{–}22\,\%$.
 
@@ -364,7 +415,14 @@
 **Periaate:** Verkkojen välissä ioniin vaikuttaa vain sähköinen voima. Ionien paino on mitätön, eikä avaruudessa ole ilmanvastusta. Sähköinen voima on konservatiivinen. Siksi ionin potentiaalienergian väheneminen $eU$ muuttuu liike-energiaksi. Verkot ovat lähellä toisiaan, joten niiden välinen kenttä on homogeeninen (luvut *Potentiaalienergia ja potentiaali sähkökentässä* ja *Homogeeninen sähkökenttä*).
 **Kaava:** $\tfrac12 mv^2 = eU$, joten $v = \sqrt{\dfrac{2eU}{m}}$, ja $E = \dfrac{U}{d}$
 **Muunnokset:** $U = 1{,}10\,\text{kV} = 1{,}10 \cdot 1000\,\text{V} = 1100\,\text{V}$ ja $d = 1{,}0\,\text{mm} = 1{,}0 \cdot 0{,}001\,\text{m} = 0{,}0010\,\text{m}$. Lisäksi $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$, ja lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Sijoitus:** $v = \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1100\,\text{V}}{2{,}180 \cdot 10^{-25}\,\text{kg}}} = \sqrt{1{,}617 \cdot 10^{9}\,\text{m}^2/\text{s}^2} = 4{,}021 \cdot 10^{4}\,\text{m/s} = 40{,}2\,\text{km/s}$ ja $E = \dfrac{1100\,\text{V}}{0{,}0010\,\text{m}} = 1{,}1 \cdot 10^{6}\,\text{V/m}$
+**Sijoitus:** $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1100\,\text{V}}{2{,}180 \cdot 10^{-25}\,\text{kg}}} \\
+&= \sqrt{1{,}617 \cdot 10^{9}\,\text{m}^2/\text{s}^2} \\
+&= 4{,}021 \cdot 10^{4}\,\text{m/s} \\
+&= 40{,}2\,\text{km/s}
+\end{aligned}
+$$ ja $E = \dfrac{1100\,\text{V}}{0{,}0010\,\text{m}} = 1{,}1 \cdot 10^{6}\,\text{V/m}$
 **Vastaus:** $v \approx 40{,}2\,\text{km/s}$, kolme merkitsevää numeroa kuten jännitteessä $1{,}10\,\text{kV}$. $E \approx 1{,}1\,\text{MV/m}$, kaksi merkitsevää numeroa kuten etäisyydessä $1{,}0\,\text{mm}$.
 **Järkevyys:** Ionin liike-energia on $1100\,\text{eV}$. Elektroni saisi saman energian. Ksenonioni on kuitenkin noin $2{,}4 \cdot 10^{5}$ kertaa raskaampi. Siksi sen nopeus on $\sqrt{2{,}4 \cdot 10^{5}} \approx 490$ kertaa pienempi. Silti nopeus on noin kymmenen kertaa suurempi kuin kemiallisen rakettimoottorin pakokaasujen nopeus, joka on noin $3\text{–}4\,\text{km/s}$. Ilmassa kenttä $1{,}1\,\text{MV/m}$ olisi lähellä läpilyöntiä. Tyhjiössä ei kuitenkaan ole kaasua, joka voisi johtaa.
 
@@ -374,7 +432,20 @@
 **Periaate:** Virta on varaus, joka kulkee aikayksikössä. Siksi virta kertoo, montako ionia moottori lähettää sekunnissa. Ajassa $\Delta t$ lähtee ioneja, joiden massa on $\Delta m$. Ne saavat nopeuden $v$ lähes levosta. Impulssiperiaatteen mukaan niiden liikemäärän muutos $\Delta m \cdot v$ on yhtä suuri kuin impulssi $F\,\Delta t$. Sen antaa voima, jolla moottori vaikuttaa ioneihin. Newtonin kolmannen lain mukaan ionit vaikuttavat moottoriin yhtä suurella vastakkaissuuntaisella voimalla. Tämä voima työntää satelliittia (luvut *Liikemäärä ja impulssi* ja *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*).
 **Kaava:** $N = \dfrac{I}{e}$, $\dfrac{\Delta m}{\Delta t} = Nm$ ja $F\,\Delta t = \Delta m \cdot v$, joten $F = \dfrac{\Delta m}{\Delta t}\,v = \dfrac{Imv}{e}$
 **Muunnokset:** $1\,\text{A} = 1\,\text{C/s}$. Lopuksi $1\,\text{N} = 1000\,\text{mN}$.
-**Sijoitus:** $N = \dfrac{1{,}60\,\text{C/s}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 9{,}988 \cdot 10^{18}\,\tfrac{1}{\text{s}}$, $\dfrac{\Delta m}{\Delta t} = 9{,}988 \cdot 10^{18}\,\tfrac{1}{\text{s}} \cdot 2{,}180 \cdot 10^{-25}\,\text{kg} = 2{,}177 \cdot 10^{-6}\,\text{kg/s}$ ja $F = 2{,}177 \cdot 10^{-6}\,\text{kg/s} \cdot 4{,}021 \cdot 10^{4}\,\text{m/s} = 0{,}08754\,\text{N} = 87{,}5\,\text{mN}$
+**Sijoitus:** $N = \dfrac{1{,}60\,\text{C/s}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 9{,}988 \cdot 10^{18}\,\tfrac{1}{\text{s}}$, $$
+\begin{aligned}
+\dfrac{\Delta m}{\Delta t} &= 9{,}988 \cdot 10^{18}\,\tfrac{1}{\text{s}} \cdot 2{,}180 \\
+&\cdot 10^{-25}\,\text{kg} \\
+&= 2{,}177 \cdot 10^{-6}\,\text{kg/s}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+F &= 2{,}177 \cdot 10^{-6}\,\text{kg/s} \cdot 4{,}021 \\
+&\cdot 10^{4}\,\text{m/s} \\
+&= 0{,}08754\,\text{N} \\
+&= 87{,}5\,\text{mN}
+\end{aligned}
+$$
 **Vastaus:** $F \approx 87{,}5\,\text{mN}$. Vastauksessa on kolme merkitsevää numeroa kuten virrassa ja jännitteessä.
 **Järkevyys:** Voima on yhtä suuri kuin noin $9\,\text{g}$:n kappaleen paino maan pinnalla. Se on siis hyvin pieni. Yksikkö on oikea: $\tfrac{\text{kg}}{\text{s}} \cdot \tfrac{\text{m}}{\text{s}} = \text{kg} \cdot \tfrac{\text{m}}{\text{s}^2} = \text{N}$.
 
@@ -383,15 +454,44 @@
 **Kysytty:** satelliitin nopeuden muutos $\Delta v$ ja kulunut ksenon $m_\text{Xe}$
 **Periaate:** Työntövoima on vakio. Siksi Newtonin toisen lain mukaan satelliitin kiihtyvyys on vakio. Nopeuden muutos on kiihtyvyys kertaa aika. Oletetaan, että työntövoima on radan suuntainen. Tarkastellaan vain sitä nopeuden muutosta, jonka työntövoima aiheuttaa. Satelliitin massa pysyy lähes vakiona, jos ksenonia kuluu vähän. Tämä tarkistetaan lopuksi (luvut *Newtonin toinen laki* ja *Liikemäärä ja impulssi*).
 **Kaava:** $a = \dfrac{F}{M}$, $\Delta v = a\,\Delta t$ ja $m_\text{Xe} = \dfrac{\Delta m}{\Delta t} \cdot \Delta t$
-**Muunnokset:** $\Delta t = 30 \cdot 24 \cdot 3600\,\text{s} = 2{,}592 \cdot 10^{6}\,\text{s}$
-**Sijoitus:** $a = \dfrac{0{,}08754\,\text{N}}{650\,\text{kg}} = 1{,}347 \cdot 10^{-4}\,\text{m/s}^2$, $\Delta v = 1{,}347 \cdot 10^{-4}\,\text{m/s}^2 \cdot 2{,}592 \cdot 10^{6}\,\text{s} = 349\,\text{m/s}$ ja $m_\text{Xe} = 2{,}177 \cdot 10^{-6}\,\text{kg/s} \cdot 2{,}592 \cdot 10^{6}\,\text{s} = 5{,}64\,\text{kg}$
+**Muunnokset:** $$
+\begin{aligned}
+\Delta t &= 30 \cdot 24 \cdot 3600\,\text{s} \\
+&= 2{,}592 \cdot 10^{6}\,\text{s}
+\end{aligned}
+$$
+**Sijoitus:** $a = \dfrac{0{,}08754\,\text{N}}{650\,\text{kg}} = 1{,}347 \cdot 10^{-4}\,\text{m/s}^2$, $$
+\begin{aligned}
+\Delta v &= 1{,}347 \cdot 10^{-4}\,\text{m/s}^2 \\
+&\cdot 2{,}592 \cdot 10^{6}\,\text{s} \\
+&= 349\,\text{m/s}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+m_\text{Xe} &= 2{,}177 \cdot 10^{-6}\,\text{kg/s} \\
+&\cdot 2{,}592 \cdot 10^{6}\,\text{s} \\
+&= 5{,}64\,\text{kg}
+\end{aligned}
+$$
 **Vastaus:** $\Delta v \approx 349\,\text{m/s}$ ja $m_\text{Xe} \approx 5{,}64\,\text{kg}$. Vastauksessa on kolme merkitsevää numeroa kuten työntövoimassa.
 **Järkevyys:** Ksenonia kuluu alle $1\,\%$ satelliitin massasta. Siksi oletus vakiomassasta on hyvä. Kemiallisen moottorin pakokaasujen nopeus on noin $3\,\text{km/s}$. Impulssiperiaatteen mukaan se tarvitsisi saman nopeuden muutokseen noin $\tfrac{650\,\text{kg} \cdot 349\,\text{m/s}}{3000\,\text{m/s}} \approx 76\,\text{kg}$ polttoainetta. Se on yli kymmenen kertaa enemmän.
 
 ### d)
 **Kysytty:** riittävätkö aurinkopaneelit, miksi työntövoima on pieni, vaikka teho on suuri, ja miksi ionimoottoria silti käytetään
 **Periaate:** Kun virta kulkee kiihdytysjännitteen yli, teho on $P = UI$. Kun vain sähköinen voima tekee työtä, sama teho siirtyy ionien liike-energiaksi. Työntövoima on ionien liikemäärän muutos sekunnissa (luvut *Potentiaalienergia ja potentiaali sähkökentässä* ja *Liikemäärä ja impulssi*).
-**Mallivastaus:** Ionisuihku tarvitsee tehon $P = UI = 1100\,\text{V} \cdot 1{,}60\,\text{A} = 1{,}76\,\text{kW}$. Se on yhtä suuri kuin ionien liike-energia sekunnissa, $\tfrac12 \cdot 2{,}177 \cdot 10^{-6}\,\tfrac{\text{kg}}{\text{s}} \cdot (4{,}021 \cdot 10^{4}\,\tfrac{\text{m}}{\text{s}})^2 = 1{,}76\,\text{kW}$. Näin energian säilyminen vaatii. Paneelien $2{,}5\,\text{kW}$ riittää siis suihkulle. Loput $0{,}7\,\text{kW}$ käytetään ionisointiin, neutralointiin ja satelliitin muihin laitteisiin. Työntövoima on $F = \tfrac{\Delta m}{\Delta t}\,v$ ja teho $P = \tfrac12 \tfrac{\Delta m}{\Delta t}\,v^2$, joten $F = \tfrac{2P}{v}$. Kun teho on annettu, suuri ionien nopeus antaa pienen työntövoiman, vain $87{,}5\,\text{mN}$. Toisaalta suuri nopeus tarkoittaa, että jokainen ajomassan kilogramma antaa paljon liikemäärää. Ajomassa on aine, jota moottori heittää ulos. Siksi ksenonia kuluu vähän. Ionimoottori ei sovi laukaisuun eikä nopeisiin liikkeisiin. Se on kuitenkin hyvä pitkiin ratamuutoksiin, jotka kestävät viikkoja tai kuukausia, koska se säästää kymmeniä kilogrammoja massaa.
+**Mallivastaus:** Ionisuihku tarvitsee tehon $$
+\begin{aligned}
+P &= UI \\
+&= 1100\,\text{V} \cdot 1{,}60\,\text{A} \\
+&= 1{,}76\,\text{kW}
+\end{aligned}
+$$. Se on yhtä suuri kuin ionien liike-energia sekunnissa, $$
+\begin{aligned}
+&\tfrac12 \cdot 2{,}177 \cdot 10^{-6}\,\tfrac{\text{kg}}{\text{s}} \\
+&\cdot (4{,}021 \cdot 10^{4}\,\tfrac{\text{m}}{\text{s}})^2 \\
+&= 1{,}76\,\text{kW}
+\end{aligned}
+$$. Näin energian säilyminen vaatii. Paneelien $2{,}5\,\text{kW}$ riittää siis suihkulle. Loput $0{,}7\,\text{kW}$ käytetään ionisointiin, neutralointiin ja satelliitin muihin laitteisiin. Työntövoima on $F = \tfrac{\Delta m}{\Delta t}\,v$ ja teho $P = \tfrac12 \tfrac{\Delta m}{\Delta t}\,v^2$, joten $F = \tfrac{2P}{v}$. Kun teho on annettu, suuri ionien nopeus antaa pienen työntövoiman, vain $87{,}5\,\text{mN}$. Toisaalta suuri nopeus tarkoittaa, että jokainen ajomassan kilogramma antaa paljon liikemäärää. Ajomassa on aine, jota moottori heittää ulos. Siksi ksenonia kuluu vähän. Ionimoottori ei sovi laukaisuun eikä nopeisiin liikkeisiin. Se on kuitenkin hyvä pitkiin ratamuutoksiin, jotka kestävät viikkoja tai kuukausia, koska se säästää kymmeniä kilogrammoja massaa.
 
 ### Yleisiä virheitä
 - a-kohdassa ionin massana käytetään elektronin massaa, tai kilovoltteja ei muunneta volteiksi.
@@ -401,4 +501,10 @@
 - d-kohdassa oletetaan, että suuri teho tarkoittaa suurta työntövoimaa.
 
 ### Hyväksytään myös
-- b-kohdassa sama tulos verkkojen välisistä voimista. Kenttä kohdistaa jokaiseen verkkojen välissä olevaan ioniin voiman $eE$. Ioni on välissä ajan $\tfrac{2d}{v}$. Siksi välissä on kerrallaan $N \cdot \tfrac{2d}{v}$ ionia, ja $F = N \cdot \tfrac{2d}{v} \cdot e\tfrac{U}{d} = \tfrac{2UI}{v} \approx 87{,}5\,\text{mN}$.
+- b-kohdassa sama tulos verkkojen välisistä voimista. Kenttä kohdistaa jokaiseen verkkojen välissä olevaan ioniin voiman $eE$. Ioni on välissä ajan $\tfrac{2d}{v}$. Siksi välissä on kerrallaan $N \cdot \tfrac{2d}{v}$ ionia, ja $$
+\begin{aligned}
+F &= N \cdot \tfrac{2d}{v} \cdot e\tfrac{U}{d} \\
+&= \tfrac{2UI}{v} \\
+&\approx 87{,}5\,\text{mN}
+\end{aligned}
+$$.

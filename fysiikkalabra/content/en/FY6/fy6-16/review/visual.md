@@ -1,9 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: db324a986b213d71
+CONTENT-HASH: b64fcfc3e328592d
 
 ## Blocking
 
 ## Polish
+- [Minor] none.
 
 ## Checked
-- batch delta review: fy6-16 tarkistus-1 option and feedback opened at 390 px: long option wraps cleanly, correct-state feedback inside the card.
+- Delta review, round 2: only the Ydinajatus socket-charging sentence changed. Opened review/shots/fy6-16-theory-1280-1.png (shows the sentence in the "Yksi vaihe vai kolme" paragraph, KaTeX numbers/units intact, no clipping, layout beside the photo unchanged). Layout around it survived.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

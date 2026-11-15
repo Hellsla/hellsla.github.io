@@ -31,7 +31,14 @@
 **Principle:** The water first warms to its boiling point, with no change of phase, and then evaporates at constant temperature. The energy needed for both stages comes from the stones, so they are added together.
 **Formula:** $Q = c_\text{v} m \Delta T + r m$
 **Conversions:** $1.2\,\text{l}$ of water is $1.2\,\text{kg}$. $c_\text{v} = 4.19 \cdot 1000\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}} = 4190\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}}$, $r = 2260 \cdot 1000\,\tfrac{\text{J}}{\text{kg}} = 2.26 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$ and $\Delta T = 100\,{}^\circ\text{C} - 18\,{}^\circ\text{C} = 82\,\text{K}$.
-**Substitution:** $Q = 4190\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}} \cdot 1.2\,\text{kg} \cdot 82\,\text{K} + 2.26 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \cdot 1.2\,\text{kg} = 412\,296\,\text{J} + 2\,712\,000\,\text{J} = 3\,124\,296\,\text{J}$
+**Substitution:** $$
+\begin{aligned}
+Q &= 4190\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}} \cdot 1.2\,\text{kg} \cdot 82\,\text{K} \\
+&+ 2.26 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \cdot 1.2\,\text{kg} \\
+&= 412\,296\,\text{J} + 2\,712\,000\,\text{J} \\
+&= 3\,124\,296\,\text{J}
+\end{aligned}
+$$
 **Answer:** $Q \approx 3.1\,\text{MJ}$, two significant figures like the amount of water $1.2\,\text{l}$.
 **Reasonableness:** The evaporation takes almost $90\,\%$ of the energy, which fits the fact that the latent heat of vaporisation is over five times the energy needed to heat the water to its boiling point. Without heating from the stove the stones would cool by $\tfrac{3.12\,\text{MJ}}{25\,\text{kg} \cdot 800\,\text{J/(kg K)}} \approx 160\,\text{K}$; the stove produces the same energy in $\tfrac{3.12\,\text{MJ}}{6000\,\text{W}} \approx 9\,\text{min}$, so the stove keeps the stones hot when water is thrown on them now and then.
 
@@ -165,7 +172,14 @@
 **Principle:** A solid metal contracts as it cools, and the change in length is proportional to the original length and to the change in temperature. The fundamental frequency is inversely proportional to the length, so a shortening pipe raises the frequency by the same relative amount.
 **Formula:** $\Delta L = \alpha L_0 \Delta T$. The frequency is $f = \dfrac{v}{2(L_0 + \Delta L)}$, so $\dfrac{\Delta f}{f_0} = \dfrac{L_0}{L_0 + \Delta L} - 1 \approx -\dfrac{\Delta L}{L_0} = -\alpha \Delta T$ when $|\Delta L| \ll L_0$
 **Conversions:** $\Delta T = 8\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = -12\,\text{K}$ and finally $1\,\text{m} = 1000\,\text{mm}$.
-**Substitution:** $\Delta L = 2.3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot 1.31\,\text{m} \cdot (-12\,\text{K}) = -3.62 \cdot 10^{-4}\,\text{m} = -0.362\,\text{mm}$ and $\dfrac{\Delta L}{L_0} = \dfrac{-3.62 \cdot 10^{-4}\,\text{m}}{1.31\,\text{m}} = -2.8 \cdot 10^{-4} = -0.028\,\%$ and $\dfrac{\Delta f}{f_0} \approx -\alpha \Delta T = -2.3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot (-12\,\text{K}) = +2.8 \cdot 10^{-4}$
+**Substitution:** $$
+\begin{aligned}
+\Delta L &= 2.3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot 1.31\,\text{m} \\
+&\cdot (-12\,\text{K}) \\
+&= -3.62 \cdot 10^{-4}\,\text{m} \\
+&= -0.362\,\text{mm}
+\end{aligned}
+$$ and $\dfrac{\Delta L}{L_0} = \dfrac{-3.62 \cdot 10^{-4}\,\text{m}}{1.31\,\text{m}} = -2.8 \cdot 10^{-4} = -0.028\,\%$ and $\dfrac{\Delta f}{f_0} \approx -\alpha \Delta T = -2.3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot (-12\,\text{K}) = +2.8 \cdot 10^{-4}$
 **Answer:** The pipe shortens by about $0.36\,\text{mm}$ (two significant figures like the coefficient of thermal expansion). It would raise the frequency by only about $0.03\,\%$, while the cooling of the air lowers it by about $2.1\,\%$, that is about $75$ times more. The organ sounds lower because of the air, not because the metal contracts.
 **Reasonableness:** Everyday experience shows that the thermal expansion of metals is small: a rod a metre long changes by only tenths of a millimetre when the temperature changes by ten degrees.
 
@@ -193,7 +207,13 @@
 **Principle:** The resistance of a conductor is proportional to its length and inversely proportional to its cross-sectional area. The current flows to the appliance along one conductor and returns along the other, so the conductor the current passes through is twice the length of the cord.
 **Formula:** $R_\text{j} = \rho \dfrac{2l}{A}$
 **Conversions:** $A = 1.5\,\text{mm}^2 = 1.5 \cdot (10^{-3}\,\text{m})^2 = 1.5 \cdot 10^{-6}\,\text{m}^2$ and $2l = 2 \cdot 25.0\,\text{m} = 50.0\,\text{m}$
-**Substitution:** $R_\text{j} = 1.68 \cdot 10^{-8}\,\Omega \cdot \text{m} \cdot \dfrac{50.0\,\text{m}}{1.5 \cdot 10^{-6}\,\text{m}^2} = 0.560\,\Omega$
+**Substitution:** $$
+\begin{aligned}
+R_\text{j} &= 1.68 \cdot 10^{-8}\,\Omega \cdot \text{m} \\
+&\cdot \dfrac{50.0\,\text{m}}{1.5 \cdot 10^{-6}\,\text{m}^2} \\
+&= 0.560\,\Omega
+\end{aligned}
+$$
 **Answer:** $R_\text{j} \approx 0.56\,\Omega$, two significant figures like the cross-sectional area.
 **Reasonableness:** The resistance is small compared with the resistances of the appliances (tens of ohms), as expected of a cord, but it is not zero.
 
@@ -356,7 +376,13 @@ The drop is filmed with the phone on the stand so that the tape measure is verti
 **Principle:** At the highest points the ball is momentarily at rest, so its mechanical energy is potential energy only. Air resistance is small over such a short distance, so energy is converted into other forms mainly in the bounce, when the ball and the floor deform and warm up.
 **Formula:** $E_1 = mgh_1$ and $E_2 = mgh_2$, so fraction $= \dfrac{E_1 - E_2}{E_1} = 1 - \dfrac{h_2}{h_1}$; the mass cancels
 **Conversions:** None needed.
-**Substitution:** fraction $= 1 - \dfrac{0.36\,\text{m}}{1.50\,\text{m}} = 1 - 0.24 = 0.76$
+**Substitution:** fraction $$
+\begin{aligned}
+&= 1 - \dfrac{0.36\,\text{m}}{1.50\,\text{m}} \\
+&= 1 - 0.24 \\
+&= 0.76
+\end{aligned}
+$$
 **Answer:** About $76\,\%$ of the mechanical energy is converted into other forms of energy in the bounce, two significant figures like the bounce height.
 **Reasonableness:** A squash ball is known to bounce poorly, so a large fraction fits. A tennis ball dropped from the same height bounces to over half the height, so the fraction would be below $50\,\%$.
 
@@ -368,7 +394,12 @@ The drop is filmed with the phone on the stand so that the tape measure is verti
 **Conversions:** None needed.
 **Substitution:** $v = \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 0.36\,\text{m}} = \sqrt{7.063\,\text{m}^2/\text{s}^2} = 2.658\,\text{m/s}$
 **Answer:** $v \approx 2.7\,\text{m/s}$, two significant figures like the bounce height.
-**Reasonableness:** Just before the impact the speed was $\sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 1.50\,\text{m}} = 5.4\,\text{m/s}$. The bounce halves the speed, and $\left(\tfrac{2.66}{5.42}\right)^2 = 0.24$, that is $24\,\%$, of the kinetic energy remains, which agrees with part b.
+**Reasonableness:** Just before the impact the speed was $$
+\begin{aligned}
+&\sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 1.50\,\text{m}} \\
+&= 5.4\,\text{m/s}
+\end{aligned}
+$$. The bounce halves the speed, and $\left(\tfrac{2.66}{5.42}\right)^2 = 0.24$, that is $24\,\%$, of the kinetic energy remains, which agrees with part b.
 
 ### d)
 **Find:** the precision with which the bounce height can be read from the video, and two ways to improve the measurement

@@ -5,6 +5,6 @@
   },
   {
     "q": "How large is the energy of a photon of $400\\,\\text{nm}$ violet light in electronvolts?",
-    "a": "$E = \\tfrac{hc}{\\lambda} \\approx \\tfrac{1240\\,\\text{eV}\\,\\text{nm}}{400\\,\\text{nm}} = 3.1\\,\\text{eV}$. Review if needed the chapter *The photoelectric effect and the photon*."
+    "a": "$$\nE = \\tfrac{hc}{\\lambda} \\approx \\tfrac{1240\\,\\text{eV}\\,\\text{nm}}{400\\,\\text{nm}} = 3.1\\,\\text{eV}\n$$. Review if needed the chapter *The photoelectric effect and the photon*."
   }
 ]

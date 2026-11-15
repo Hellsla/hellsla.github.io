@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 44d102baf5907a2c
-SCOPE: delta added-exercise from 38935656dc0691fb base 8f23aa7ae3bd
-Round 1
-Mode: delta (added exercise fy6-16-L2-09, shown as 16-17)
+CONTENT-HASH: 6c786ed6b0783012
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy6-16/talo-ex — the horizontal axis has ticks at 19, 20, 21, 22 but the start (18) carries no label, so the first step begins at an unnamed point; label the origin $18$ (the figure's description and the task do say 18–22).
-- [Minor] fy6-16-L2-09 text — "from 18 to 22" reads as bare numbers; write "from 18:00 to 22:00" (or "hours 18 to 22"), also in the solution's Given and Find lines.
-- [Minor] fy6-16/talo-ex — the y ticks every 1 kW (1–8) sit close together at the top (7, 8); labelling every second tick would be calmer.
+- [Minor] fy6-16-L2-03 (16-11) Answer — the chip shows 11 A while Substitution ends at 11.96 A; the line under the chip explains the rounding down, so only a note.
+- [Minor] fy6-16-L3-02 (16-19) Answer — the explanation starts with a bare parenthesis after the chip, "(calculated 156 %), ..."; optionally "Calculated 156 %; two significant figures ...".
 
 ## Checked
-- fy6-16-open-exercises-L2-1280-11.png (end of 16-16 for flow, statement of 16-17), -12.png (graph, answer field and chip, solution to Answer) and -13.png (Reasonableness).
-- Graph: P (kW) and t (h) with units, orange step line (no clash with force/velocity colours), gridlines at hours and kW, no energy or cost written; matches its description.
-- Units in LaTeX, decimal point in en, colon division, nothing clipped.
+- review/shots/fy6-16-open-exercises-L2-1280-4.png (L2-03 solution: answer, rounding sentence, 13.0 A + 11 A = 24 A check) and -6.png (L2-05: answer chip 10.4 kW, solution start).
+- review/shots/fy6-16-open-exercises-L3-1280-3.png (L3-02: 1.6 · 10^2 %, "(calculated 156 %)", 16-20 start) and -5.png (L3-04: chip 1.37 · 10^3 €, solution start).
+- Changed text read in the captures: decimal point, units upright with a thin space, \cdot, colon for division; the rounding sentences are clear; chains unclipped. The set still reads as one. The 24.9 A check in L2-05 and the 7.2 A / 7.6 A sentences were read in the source diff only.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

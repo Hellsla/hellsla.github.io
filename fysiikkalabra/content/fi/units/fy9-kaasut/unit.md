@@ -246,7 +246,12 @@ Kokeen kaasutehtävissä tarvitaan kaksi tarkistusta ennen lukuja. **Lämpötila
   <foreignObject x="242" y="922" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\eta = W/Q_1$</div></foreignObject>
 </svg>
 
-Alun kysymys ratkeaa näillä kahdella tarkistuksella. Lämpimässä autotallissa ($+20\,{}^\circ\text{C}$) mittari näytti ylipainetta $230\,\text{kPa}$, joten kokonaispaine oli $101\,\text{kPa} + 230\,\text{kPa} = 331\,\text{kPa}$. Kun renkaan tilavuus pysyy lähes samana, kokonaispaine on verrannollinen kelvinlämpötilaan: pakkasyön ($-20\,{}^\circ\text{C}$) jälkeen se on $331\,\text{kPa} \cdot 253\,\text{K} : 293\,\text{K} \approx 286\,\text{kPa}$. Mittari näyttää enää noin $185\,\text{kPa}$, vaikka ilmaa ei ole vuotanut.
+Alun kysymys ratkeaa näillä kahdella tarkistuksella. Lämpimässä autotallissa ($+20\,{}^\circ\text{C}$) mittari näytti ylipainetta $230\,\text{kPa}$, joten kokonaispaine oli $101\,\text{kPa} + 230\,\text{kPa} = 331\,\text{kPa}$. Kun renkaan tilavuus pysyy lähes samana, kokonaispaine on verrannollinen kelvinlämpötilaan: pakkasyön ($-20\,{}^\circ\text{C}$) jälkeen se on $$
+\begin{aligned}
+&331\,\text{kPa} \cdot 253\,\text{K} : 293\,\text{K} \\
+&\approx 286\,\text{kPa}
+\end{aligned}
+$$. Mittari näyttää enää noin $185\,\text{kPa}$, vaikka ilmaa ei ole vuotanut.
 
 <svg data-fig="rengas" viewBox="0 0 480 330" role="img" aria-label="Pylväskuvio mittakaavassa: renkaan ilman kokonaispaine kahdessa lämpötilassa. Kumpikin vaakapylväs on jaettu kahteen osaan: ilmanpaine 101 kPa ja mittarin näyttämä ylipaine. Lämpimässä autotallissa, +20 °C, ylipaine on 230 kPa ja kokonaispaine 331 kPa. Pakkasyön jälkeen, −20 °C, kokonaispaine on 286 kPa ja ylipaine 185 kPa. Kokonaispaine on pienentynyt kelvinlämpötilan suhteessa, mutta mittarin lukema on pienentynyt 45 kPa eli noin viidenneksen." style="max-width:100%;font-size:20px">
   <line x1="140" y1="40" x2="140" y2="268" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

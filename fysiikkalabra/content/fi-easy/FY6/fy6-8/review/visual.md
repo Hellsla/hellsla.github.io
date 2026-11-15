@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6133a6d212501647
+CONTENT-HASH: cc0c6be54948b8a2
 
 ## Blocking
 
 ## Polish
-- [Minor] caption: the long sentence with two size pairs is dense for S2 readers; consider two short sentences (21700: $21\,\text{mm}$ ja $70\,\text{mm}$; 18650: ...). Optional.
+- [Minor] lesson.md sarjaan kytkettyjen paristojen kappale — "lähdejännitteen kaksinkertaisen verran pienempi" is clumsy Finnish; for example "on kaksi kertaa niin paljon pienempi kuin ..." is not better either: write "Ryhmän lähdejännite on silloin E$ pienempi kuin silloin, kun kaikki paristot ovat oikein päin" (E = the reversed battery's emf), or "pienempi kuin ... kahden E:n verran".
 
 ## Checked
-batch delta review: caption with diameter/length numbers ($21\,\text{mm}$, $70\,\text{mm}$ etc.) reads clearly. Rendered preview/fi-easy/fy6-8.html at 390 and 1280 px, photo figure opened at 390; KaTeX renders without error, no clipping, no horizontal overflow.
+- batch delta review: opened fig-15 and fig-23 (graphs fine: axes, units, points distinct from line, legible at 390 px), theory-1280-4 (rewritten series paragraph reads, no overflow); figure descriptions split into shorter sentences, read fine.

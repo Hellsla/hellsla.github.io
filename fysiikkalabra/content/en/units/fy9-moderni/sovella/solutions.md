@@ -5,7 +5,13 @@
 **Find:** the equations of the decay and the de-excitation, and the wavelength $\lambda$ of the gamma photon
 **Principle:** In beta minus decay a neutron of the nucleus turns into a proton, so the atomic number increases by one and the mass number is conserved. The nucleus emits an electron and an antineutrino. The excited nucleus de-excites by emitting a gamma photon, and neither the atomic number nor the mass number changes (chapter *The atomic nucleus and radioactive decay*). Like light, a gamma photon is a photon whose energy and wavelength are linked (chapter *The photoelectric effect and the photon*).
 **Formula:** ${}^{137}_{55}\text{Cs} \to {}^{137}_{56}\text{Ba}^{\ast} + {}^{0}_{-1}\text{e} + \bar{\nu}$ and ${}^{137}_{56}\text{Ba}^{\ast} \to {}^{137}_{56}\text{Ba} + \gamma$; $E = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{E}$
-**Conversions:** $662\,\text{keV} = 662 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.0605 \cdot 10^{-13}\,\text{J}$ and finally $1\,\text{pm} = 10^{-12}\,\text{m}$
+**Conversions:** $$
+\begin{aligned}
+&662\,\text{keV} \\
+&= 662 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} \\
+&= 1.0605 \cdot 10^{-13}\,\text{J}
+\end{aligned}
+$$ and finally $1\,\text{pm} = 10^{-12}\,\text{m}$
 **Substitution:** $\lambda = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{1.0605 \cdot 10^{-13}\,\text{J}} = 1.873 \cdot 10^{-12}\,\text{m} = 1.873\,\text{pm}$
 **Answer:** The equations are above. The wavelength of the gamma photon is $\lambda \approx 1.87\,\text{pm}$, three significant figures like the energy $662\,\text{keV}$.
 **Reasonableness:** In both equations the mass numbers ($137 = 137 + 0$) and the charge numbers ($55 = 56 - 1$) are conserved. The wavelength is about a hundred times smaller than the diameter of an atom, as it should be for gamma radiation: a photon of visible light is about $2\,\text{eV}$ with a wavelength of about $600\,\text{nm}$, and $662\,000\,\text{eV}$ is about $330\,000$ times as much.
@@ -17,7 +23,9 @@
 **Formula:** $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$
 **Conversions:** The times are in the same unit, so no conversions are needed.
 **Substitution:** $\dfrac{t}{T_{1/2}} = \dfrac{36\,\text{a}}{30.1\,\text{a}} = 1.196$, so $A = 2400\,\tfrac{\text{Bq}}{\text{kg}} \cdot 0.5^{1.196} = 1047.6\,\tfrac{\text{Bq}}{\text{kg}}$
-**Answer:** $A \approx 1050\,\tfrac{\text{Bq}}{\text{kg}} = 1.05 \cdot 10^{3}\,\tfrac{\text{Bq}}{\text{kg}}$, three significant figures like the half-life.
+**Answer:** $$
+A \approx 1050\,\tfrac{\text{Bq}}{\text{kg}} = 1.05 \cdot 10^{3}\,\tfrac{\text{Bq}}{\text{kg}}
+$$, three significant figures like the half-life.
 **Reasonableness:** A little over one half-life has passed, so the concentration must be a little under half of the original, $1200\,\tfrac{\text{Bq}}{\text{kg}}$. The result is just that.
 
 ### c)
@@ -65,7 +73,13 @@
 **Principle:** Space expands, and distant galaxies recede from us. That is why the wavelength of their light has been stretched, and the redshift $z$ tells by how much. When $z$ is small, the recession speed is $v = cz$. By Hubble's law the speed is directly proportional to the distance (chapter *The evolution of the universe*).
 **Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$, $v = cz$ and $v = H_0 d$, so $d = \dfrac{v}{H_0}$
 **Conversions:** The wavelengths are in the same unit, and the speeds are in $\tfrac{\text{km}}{\text{s}}$, so no conversions are needed.
-**Substitution:** $z = \dfrac{671.8\,\text{nm} - 656.3\,\text{nm}}{656.3\,\text{nm}} = \dfrac{15.5\,\text{nm}}{656.3\,\text{nm}} = 0.02362$, $v = 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.02362 = 7080\,\text{km/s}$ and $d = \dfrac{7080\,\text{km/s}}{70\,\tfrac{\text{km/s}}{\text{Mpc}}} = 101.1\,\text{Mpc}$
+**Substitution:** $$
+\begin{aligned}
+z &= \dfrac{671.8\,\text{nm} - 656.3\,\text{nm}}{656.3\,\text{nm}} \\
+&= \dfrac{15.5\,\text{nm}}{656.3\,\text{nm}} \\
+&= 0.02362
+\end{aligned}
+$$, $v = 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.02362 = 7080\,\text{km/s}$ and $d = \dfrac{7080\,\text{km/s}}{70\,\tfrac{\text{km/s}}{\text{Mpc}}} = 101.1\,\text{Mpc}$
 **Answer:** The galaxy recedes at the speed $v \approx 7080\,\text{km/s}$, three significant figures like the difference of the wavelengths $15.5\,\text{nm}$. It is at a distance of about $1.0 \cdot 10^{2}\,\text{Mpc}$, two significant figures like the Hubble constant.
 **Reasonableness:** The speed is about $2\,\%$ of the speed of light, so $v = cz$ holds. $100\,\text{Mpc}$ is about $330$ million light years, which is beyond the nearby groups of galaxies but still a distance easily observed with a telescope.
 
@@ -93,7 +107,12 @@
 - In part d, the lines are said to be dark because the galaxy is far away or because the redshift darkens them.
 
 ### Hyväksytään myös
-- In part c, the ratio $\lambda = 486.1\,\text{nm} \cdot \dfrac{671.8}{656.3} = 497.6\,\text{nm}$, because $1 + z$ is the ratio of the observed value to the laboratory value.
+- In part c, the ratio $$
+\begin{aligned}
+\lambda &= 486.1\,\text{nm} \cdot \dfrac{671.8}{656.3} \\
+&= 497.6\,\text{nm}
+\end{aligned}
+$$, because $1 + z$ is the ratio of the observed value to the laboratory value.
 
 ## fy9-moderni-s3
 
@@ -231,7 +250,13 @@
 **Reading the graph:** The points $(0;\ -2.24\,\text{V})$ and $(8.0 \cdot 10^{14}\,\text{Hz};\ 1.06\,\text{V})$ are read from the line.
 **Formula:** $k = \dfrac{\Delta U}{\Delta f}$ and $k = \dfrac{h}{e}$, so $h = ek$
 **Conversions:** $1\,\text{C} \cdot 1\,\text{V} \cdot 1\,\text{s} = 1\,\text{J}\,\text{s}$, because $1\,\text{V} = 1\,\tfrac{\text{J}}{\text{C}}$ and $\tfrac{1}{\text{Hz}} = 1\,\text{s}$.
-**Substitution:** $k = \dfrac{1.06\,\text{V} - (-2.24\,\text{V})}{8.0 \cdot 10^{14}\,\text{Hz} - 0} = \dfrac{3.30\,\text{V}}{8.0 \cdot 10^{14}\,\tfrac{1}{\text{s}}} = 4.125 \cdot 10^{-15}\,\text{V}\,\text{s}$, so $h = 1.602 \cdot 10^{-19}\,\text{C} \cdot 4.125 \cdot 10^{-15}\,\text{V}\,\text{s} = 6.608 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Substitution:** $k = \dfrac{1.06\,\text{V} - (-2.24\,\text{V})}{8.0 \cdot 10^{14}\,\text{Hz} - 0} = \dfrac{3.30\,\text{V}}{8.0 \cdot 10^{14}\,\tfrac{1}{\text{s}}} = 4.125 \cdot 10^{-15}\,\text{V}\,\text{s}$, so $$
+\begin{aligned}
+h &= 1.602 \cdot 10^{-19}\,\text{C} \cdot 4.125 \\
+&\cdot 10^{-15}\,\text{V}\,\text{s} \\
+&= 6.608 \cdot 10^{-34}\,\text{J}\,\text{s}
+\end{aligned}
+$$
 **Answer:** $h \approx 6.61 \cdot 10^{-34}\,\text{J}\,\text{s}$, three significant figures, because the voltages are read from the graph to about a hundredth of a volt. The result is $0.3\,\%$ smaller than the table value $6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$.
 **Reasonableness:** The difference is much smaller than the reading uncertainty, about $1\,\%$, so the measurement supports the model. The slope does not depend on the material of the cathode, so any metal would give the same $h$.
 
@@ -321,7 +346,13 @@
 **Find:** the efficiency $\eta$ and the number of fissions per second $n$
 **Principle:** The efficiency is the ratio of the useful power to the power used (chapter *Energy production and the efficiency of power plants*). The thermal power of the reactor is the energy of one fission times the number of fissions per second (chapter *Fission, fusion and nuclear power*).
 **Formula:** $\eta = \dfrac{P_\text{e}}{P_\text{th}}$ and $P_\text{th} = nE_\text{f}$, so $n = \dfrac{P_\text{th}}{E_\text{f}}$
-**Conversions:** $200\,\text{MeV} = 200 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.204 \cdot 10^{-11}\,\text{J}$ and $4300\,\text{MW} = 4300 \cdot 10^{6}\,\text{W}$
+**Conversions:** $$
+\begin{aligned}
+&200\,\text{MeV} \\
+&= 200 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} \\
+&= 3.204 \cdot 10^{-11}\,\text{J}
+\end{aligned}
+$$ and $4300\,\text{MW} = 4300 \cdot 10^{6}\,\text{W}$
 **Substitution:** $\eta = \dfrac{1600\,\text{MW}}{4300\,\text{MW}} = 0.3721 = 37.21\,\%$ and $n = \dfrac{4300 \cdot 10^{6}\,\tfrac{\text{J}}{\text{s}}}{3.204 \cdot 10^{-11}\,\text{J}} = 1.342 \cdot 10^{20}\,\tfrac{1}{\text{s}}$
 **Answer:** The efficiency is $\eta \approx 37.2\,\%$, and about $1.34 \cdot 10^{20}$ fissions happen in the reactor per second, three significant figures like the powers.
 **Reasonableness:** The efficiency of a thermal power plant with a steam turbine is typically $30$–$40\,\%$. There are enormous numbers of fissions, because one fission releases only about $3 \cdot 10^{-11}\,\text{J}$.

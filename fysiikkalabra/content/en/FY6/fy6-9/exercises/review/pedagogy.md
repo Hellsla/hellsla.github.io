@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 30bb671b683987a1
-SCOPE: delta added-exercise from 51f6a10c66298771 base 8f23aa7ae3bd
+CONTENT-HASH: 69d3219159d1724e
 
 ## Blocking
 - none
 
 ## Polish
-- The task says "Assume that the energy is the nominal voltage times the charge", which gives the model; fine for level 2, and it keeps the nominal-voltage simplification explicit.
+- fy6-9-L2-02: the answer 0.2 ohm (one decimal) is correct by the subtraction rule and explained; the stored answer 0.20 is still accepted by the relative tolerance.
 
 ## Checked
-- Level 2: charge from a stepped current graph (three rectangles), then W = UQ in Wh; builds on L1-05 (charge from a graph) and L1-03 (energy from capacity) without repeating them.
-- Figure gives 2.0 A for 0-1.0 h, 1.5 A for 1.0-3.0 h and 0.5 A for 3.0-4.0 h on 0.5 gridlines; description matches and does not give the charge or energy.
-- Situation first, question last; laptop battery is a recognisable context; the unit Wh is requested.
-- Solution complete: given, principle, reading, symbolic formula, durations, substitution (5.5 Ah, 61.05 Wh), significant figures and a two-part reasonableness check.
-- Arithmetic verified: 2.0 + 3.0 + 0.5 = 5.5 Ah; 11.1 * 5.5 = 61.05 Wh; the 2 % tolerance fits a read value.
-- Fit: the set gains a combined charge-to-energy graph task at level 2, in the lesson's scope (Ah, Wh, charging).
+- 3000 mAh treated as four significant figures (3.000 Ah, 1.080e4 C): consistent, 10 800 C is exact.
+- 470 Wh -> 4.7e2 Wh, or 0.47 kWh: correct for two figures.
+- L2-02: 1.2 V : 1.2 A = 1.0 ohm, minus 0.80 ohm = 0.2 ohm: the rule is explained.
+- L2-06: 1.5 Wh two figures, reason stated; the energy difference 12.6 - 11.1 Wh gives the same tenth.

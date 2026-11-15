@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 92f0939fc12d8abd
+CONTENT-HASH: df631311125c85b1
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.
+- batch delta review: opened stage-selita-390-3..7 and theory-1280-4: new kaavat block (named V = E_p/q, then unnamed E_p = qV) renders cleanly, lightning/plasma photo captions fit, new caption sentence reads naturally, no clipping or overflow at 390 px.

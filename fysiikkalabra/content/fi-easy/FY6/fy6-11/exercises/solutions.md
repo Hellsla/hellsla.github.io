@@ -14,8 +14,8 @@
 **Periaate:** Sähkökentän voimakkuus kertoo voiman yhtä coulombia kohti. Siksi varaukseen kohdistuva voima on varaus kertaa sähkökentän voimakkuus. Kenttä on homogeeninen eli sama joka kohdassa, joten voima on sama kaikkialla kentässä.
 **Kaava:** $F = qE$
 **Muunnokset:** $q = 5{,}0\,\text{nC} = 5{,}0 \cdot 10^{-9}\,\text{C}$; lopuksi $1\,\text{N} = 10^{6}\,\mu\text{N}$.
-**Sijoitus:** $F = 5{,}0 \cdot 10^{-9}\,\text{C} \cdot 2{,}0 \cdot 10^{4}\,\text{N/C} = 1{,}0 \cdot 10^{-4}\,\text{N} = 100\,\mu\text{N}$
-**Vastaus:** $1{,}0 \cdot 10^{2}\,\mu\text{N}$ eli $100\,\mu\text{N}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
+**Sijoitus:** $F = 5{,}0 \cdot 10^{-9}\,\text{C} \cdot 2{,}0 \cdot 10^{4}\,\text{N/C} = 1{,}0 \cdot 10^{-4}\,\text{N} = 1{,}0 \cdot 10^{2}\,\mu\text{N}$
+**Vastaus:** $1{,}0 \cdot 10^{2}\,\mu\text{N}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Voima on noin $0{,}1\,\text{mN}$, joka vastaa noin $10\,\text{mg}$:n kappaleen painoa. Se on pieni, mutta kevyt pallo liikkuu sen vaikutuksesta selvästi, kuten sähköstaattisissa kokeissa nähdään.
 
 ## fy6-11-L1-03
@@ -47,7 +47,7 @@
 **Muunnokset:** $120\,\mu\text{N} = 120 \cdot 10^{-6}\,\text{N}$ ja $4{,}0\,\text{nC} = 4{,}0 \cdot 10^{-9}\,\text{C}$.
 **Sijoitus:** $E = \dfrac{120 \cdot 10^{-6}\,\text{N}}{4{,}0 \cdot 10^{-9}\,\text{C}} = 3{,}0 \cdot 10^{4}\,\text{N/C}$
 **Vastaus:** $3{,}0 \cdot 10^{4}\,\text{N/C}$, kaksi merkitsevää numeroa, koska kuvaajasta luetaan ruudukon risteys, jossa voima on $120\,\mu\text{N}$ kahden merkitsevän numeron tarkkuudella.
-**Järkevyys:** Mittauspiste $(3{,}0\,\text{nC};\ 91\,\mu\text{N})$ antaa lähes saman arvon: $91\,\mu\text{N} : 3{,}0\,\text{nC} \approx 3{,}0 \cdot 10^{4}\,\text{N/C}$. Suora sovitettiin origon kautta. Mallin $F = qE$ mukaan varaukseton pallo ei tunne homogeenisessa kentässä sähköistä voimaa, vaikka kenttä on olemassa.
+**Järkevyys:** Mittauspiste $(3{,}0\,\text{nC};\ 91\,\mu\text{N})$ antaa lähes saman arvon: $$\begin{aligned} &91\,\mu\text{N} : 3{,}0\,\text{nC} \\ &\approx 3{,}0 \cdot 10^{4}\,\text{N/C} \end{aligned}$$. Suora sovitettiin origon kautta. Mallin $F = qE$ mukaan varaukseton pallo ei tunne homogeenisessa kentässä sähköistä voimaa, vaikka kenttä on olemassa.
 
 ## fy6-11-L1-09
 **Annettu:** levyjen etäisyys $d = 2{,}5\,\text{mm}$. Ilman läpilyöntikestävyys MAFY-taulukosta (Eristeiden läpilyöntikestävyyksiä, ilma) on $E = 3{,}0\,\text{kV/mm}$.
@@ -106,7 +106,7 @@
 **Kaava:** $\dfrac{q_1 U_1}{d} = mg = \dfrac{q_2 U_2}{d}$, josta $U_2 = U_1 \cdot \dfrac{q_1}{q_2}$
 **Muunnokset:** Ei tarvita: alkeisvaraus $e$ supistuu.
 **Sijoitus:** $U_2 = 450\,\text{V} \cdot \dfrac{3e}{4e} = 450\,\text{V} \cdot 0{,}75 = 337{,}5\,\text{V}$
-**Vastaus:** $3{,}4 \cdot 10^{2}\,\text{V}$ ($337{,}5\,\text{V}$), pyöristettynä kahteen merkitsevään numeroon jännitteen $450\,\text{V}$ tarkkuuden mukaan; alkeisvarausten lukumäärät ovat tarkkoja.
+**Vastaus:** $338\,\text{V}$ ($337{,}5\,\text{V}$), pyöristettynä kolmeen merkitsevään numeroon jännitteen $450\,\text{V}$ tarkkuuden mukaan; alkeisvarausten lukumäärät ovat tarkkoja.
 **Järkevyys:** Varaus kasvaa kolmanneksella, joten sama sähköinen voima saadaan heikommalla kentällä, ja jännite pienenee neljäsosalla. Jos jännite pidettäisiin $450\,\text{V}$:ssa, sähköinen voima olisi $\tfrac{4}{3}$ painosta, ja pisara lähtisi nousemaan kohti positiivista levyä.
 
 ## fy6-11-L3-02
@@ -115,8 +115,8 @@
 **Periaate:** Homogeenisessa kentässä elektroniin kohdistuu vakiovoima $eE$ kohti positiivista levyä. Levyt ovat tyhjiössä, joten muita voimia ei ole (paino on häviävän pieni). Newtonin toisen lain mukaan kiihtyvyys $a = eE : m$ on vakio. Liike on siis tasaisesti kiihtyvää. Levosta lähteneelle kappaleelle, joka on kulkenut matkan $d$, pätee $v^2 = 2ad$.
 **Kaava:** $a = \dfrac{eE}{m} = \dfrac{eU}{md}$ ja $v^2 = 2ad$, joten $v = \sqrt{2ad} = \sqrt{\dfrac{2eU}{m}}$
 **Muunnokset:** $d = 1{,}0\,\text{cm} = 0{,}010\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Sijoitus:** $E = \dfrac{50\,\text{V}}{0{,}010\,\text{m}} = 5000\,\text{V/m}$, $a = \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 5000\,\text{V/m}}{9{,}109 \cdot 10^{-31}\,\text{kg}} = 8{,}794 \cdot 10^{14}\,\text{m/s}^2$ ja $v = \sqrt{2 \cdot 8{,}794 \cdot 10^{14}\,\text{m/s}^2 \cdot 0{,}010\,\text{m}} = 4{,}19 \cdot 10^{6}\,\text{m/s}$
-**Vastaus:** noin $4200\,\text{km/s}$ eli $4{,}2 \cdot 10^{6}\,\text{m/s}$, kaksi merkitsevää numeroa kuten jännite ja etäisyys.
+**Sijoitus:** $E = \dfrac{50\,\text{V}}{0{,}010\,\text{m}} = 5000\,\text{V/m}$, $a = \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 5000\,\text{V/m}}{9{,}109 \cdot 10^{-31}\,\text{kg}} = 8{,}794 \cdot 10^{14}\,\text{m/s}^2$ ja $$\begin{aligned} v &= \sqrt{2 \cdot 8{,}794 \cdot 10^{14}\,\text{m/s}^2 \cdot 0{,}010\,\text{m}} \\ &= 4{,}19 \cdot 10^{6}\,\text{m/s} \end{aligned}$$
+**Vastaus:** noin $4{,}2 \cdot 10^{3}\,\text{km/s}$ eli $4{,}2 \cdot 10^{6}\,\text{m/s}$, kaksi merkitsevää numeroa kuten jännite ja etäisyys.
 **Järkevyys:** Nopeus on noin $1{,}4\,\%$ valon nopeudesta, joten klassinen mekaniikka riittää. Lopputulos $\sqrt{2eU : m}$ ei riipu levyjen etäisyydestä: lyhyempi matka kompensoituu voimakkaammalla kentällä.
 
 ## fy6-11-L3-03
@@ -127,7 +127,7 @@
 **Muunnokset:** $m = 2{,}0\,\text{g} = 2{,}0 \cdot 10^{-3}\,\text{kg}$; lopuksi $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Sijoitus:** $mg\tan\alpha = 2{,}0 \cdot 10^{-3}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot \tan 10^\circ = 3{,}459 \cdot 10^{-3}\,\text{N}$ ja $q = \dfrac{3{,}459 \cdot 10^{-3}\,\text{N}}{1{,}5 \cdot 10^{5}\,\text{N/C}} = 2{,}306 \cdot 10^{-8}\,\text{C} = 23\,\text{nC}$
 **Vastaus:** $23\,\text{nC}$, kaksi merkitsevää numeroa kuten massassa ja sähkökentän voimakkuudessa.
-**Järkevyys:** Sähköinen voima on $mg\tan 10^\circ \approx 0{,}18 \cdot 0{,}020\,\text{N} = 3{,}5\,\text{mN}$, noin viidesosa painosta, mikä sopii pieneen poikkeamaan. Kymmenien nanocoulombien varaus on tavallinen hangatulle muovipallolle.
+**Järkevyys:** Sähköinen voima on $mg\tan 10^\circ \approx 0{,}18 \cdot 0{,}020\,\text{N} = 3{,}6\,\text{mN}$, noin viidesosa painosta, mikä sopii pieneen poikkeamaan. Kymmenien nanocoulombien varaus on tavallinen hangatulle muovipallolle.
 
 ## fy6-11-L1-06
 **Kysytty:** mitä kenttäviivojen tiheys kertoo alueiden A ja B kentistä.

@@ -42,7 +42,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\sin\\alpha = \\tfrac{4{,}0\\,\\text{cm}}{40{,}0\\,\\text{cm}} = 0{,}100$, $\\alpha \\approx 5{,}74^\\circ$, $F_\\text{s} = 4{,}905\\,\\text{mN} \\cdot 0{,}1005 \\approx 0{,}493\\,\\text{mN}$"
+              "detail": "$\\sin\\alpha = \\tfrac{4{,}0\\,\\text{cm}}{40{,}0\\,\\text{cm}} = 0{,}100$, $\\alpha \\approx 5{,}74^\\circ$, $$\n\\begin{aligned}\nF_\\text{s} &= 4{,}905\\,\\text{mN} \\cdot 0{,}1005 \\\\\n&\\approx 0{,}493\\,\\text{mN}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -103,7 +103,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$F = k\\dfrac{q \\cdot \\tfrac{q}{2}}{r^2} = \\tfrac12 \\cdot 0{,}493\\,\\text{mN} \\approx 0{,}25\\,\\text{mN}$"
+              "detail": "$$\n\\begin{aligned}\nF &= k\\dfrac{q \\cdot \\tfrac{q}{2}}{r^2} \\\\\n&= \\tfrac12 \\cdot 0{,}493\\,\\text{mN} \\\\\n&\\approx 0{,}25\\,\\text{mN}\n\\end{aligned}\n$$"
             },
             {
               "text": "Perustelee, että voimat ovat voima ja vastavoima. Siksi kumpaankin palloon vaikuttaa yhtä suuri voima, vaikka varaukset ovat erisuuret.",
@@ -187,12 +187,12 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$A = 0{,}250\\,\\text{m} \\cdot 0{,}250\\,\\text{m} = 0{,}0625\\,\\text{m}^2$, $C = \\dfrac{8{,}854 \\cdot 10^{-12}\\,\\text{F/m} \\cdot 0{,}0625\\,\\text{m}^2}{0{,}00300\\,\\text{m}} \\approx 1{,}84 \\cdot 10^{-10}\\,\\text{F}$"
+              "detail": "$$\n\\begin{aligned}\nA &= 0{,}250\\,\\text{m} \\cdot 0{,}250\\,\\text{m} \\\\\n&= 0{,}0625\\,\\text{m}^2\n\\end{aligned}\n$$, $$\n\\begin{aligned}\nC &= \\dfrac{8{,}854 \\cdot 10^{-12}\\,\\text{F/m} \\cdot 0{,}0625\\,\\text{m}^2}{0{,}00300\\,\\text{m}} \\\\\n&\\approx 1{,}84 \\cdot 10^{-10}\\,\\text{F}\n\\end{aligned}\n$$"
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$Q = 1{,}845 \\cdot 10^{-10}\\,\\text{F} \\cdot 4500\\,\\text{V} \\approx 8{,}30 \\cdot 10^{-7}\\,\\text{C}$"
+              "detail": "$$\n\\begin{aligned}\nQ &= 1{,}845 \\cdot 10^{-10}\\,\\text{F} \\cdot 4500\\,\\text{V} \\\\\n&\\approx 8{,}30 \\cdot 10^{-7}\\,\\text{C}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -229,7 +229,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$W = \\tfrac12 \\cdot 1{,}845 \\cdot 10^{-10}\\,\\text{F} \\cdot (4500\\,\\text{V})^2 \\approx 1{,}87\\,\\text{mJ}$ ja $E = \\tfrac{4500\\,\\text{V}}{0{,}00300\\,\\text{m}} = 1{,}50\\,\\text{MV/m}$"
+              "detail": "$$\n\\begin{aligned}\nW &= \\tfrac12 \\cdot 1{,}845 \\cdot 10^{-10}\\,\\text{F} \\\\\n&\\cdot (4500\\,\\text{V})^2 \\\\\n&\\approx 1{,}87\\,\\text{mJ}\n\\end{aligned}\n$$ ja $E = \\tfrac{4500\\,\\text{V}}{0{,}00300\\,\\text{m}} = 1{,}50\\,\\text{MV/m}$"
             },
             {
               "text": "Vertaa ilman läpilyöntilujuuteen: $1{,}50\\,\\text{MV/m}$ on puolet arvosta $3\\,\\text{MV/m}$. Läpilyönti tapahtuisi siis vasta noin $9\\,\\text{kV}$:n jännitteellä.",
@@ -276,7 +276,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$U' = \\tfrac{4500\\,\\text{V}}{5{,}6} \\approx 804\\,\\text{V}$ ja $W' = \\tfrac12 \\cdot 8{,}30 \\cdot 10^{-7}\\,\\text{C} \\cdot 804\\,\\text{V} \\approx 0{,}334\\,\\text{mJ}$"
+              "detail": "$U' = \\tfrac{4500\\,\\text{V}}{5{,}6} \\approx 804\\,\\text{V}$ ja $$\n\\begin{aligned}\nW' &= \\tfrac12 \\cdot 8{,}30 \\cdot 10^{-7}\\,\\text{C} \\cdot 804\\,\\text{V} \\\\\n&\\approx 0{,}334\\,\\text{mJ}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -407,7 +407,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\varepsilon_0 = \\dfrac{354 \\cdot 10^{-12}\\,\\text{F} \\cdot 10^{-3}\\,\\text{m}}{0{,}0400\\,\\text{m}^2} \\approx 8{,}84 \\cdot 10^{-12}\\,\\text{F/m}$"
+              "detail": "$$\n\\begin{aligned}\n\\varepsilon_0 &= \\dfrac{354 \\cdot 10^{-12}\\,\\text{F} \\cdot 10^{-3}\\,\\text{m}}{0{,}0400\\,\\text{m}^2} \\\\\n&\\approx 8{,}84 \\cdot 10^{-12}\\,\\text{F/m}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -440,7 +440,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "Kahden suoran pisteen avulla $b = 93\\,\\text{pF} - 354\\,\\text{pF}\\cdot\\text{mm} \\cdot 0{,}20\\,\\tfrac{1}{\\text{mm}} \\approx 22\\,\\text{pF}$"
+              "detail": "Kahden suoran pisteen avulla $$\n\\begin{aligned}\nb &= 93\\,\\text{pF} \\\\\n&- 354\\,\\text{pF}\\cdot\\text{mm} \\cdot 0{,}20\\,\\tfrac{1}{\\text{mm}} \\\\\n&\\approx 22\\,\\text{pF}\n\\end{aligned}\n$$"
             },
             {
               "key": "assumptions",
@@ -487,7 +487,7 @@
               "points": 1
             },
             {
-              "text": "Laskee tai arvioi linnun jalkojen välisen jännitteen: noin $5\\,\\text{cm}$:n matkalla $U = RI = 0{,}30\\,\\tfrac{\\Omega}{\\text{km}} \\cdot 0{,}05 \\cdot 10^{-3}\\,\\text{km} \\cdot 100\\,\\text{A} \\approx 1{,}5\\,\\text{mV}$.",
+              "text": "Laskee tai arvioi linnun jalkojen välisen jännitteen: noin $5\\,\\text{cm}$:n matkalla $$\n\\begin{aligned}\nU &= RI \\\\\n&= 0{,}30\\,\\tfrac{\\Omega}{\\text{km}} \\cdot 0{,}05 \\cdot 10^{-3}\\,\\text{km} \\\\\n&\\cdot 100\\,\\text{A} \\\\\n&\\approx 1{,}5\\,\\text{mV}\n\\end{aligned}\n$$.",
               "tag": "math",
               "points": 2
             },
@@ -577,7 +577,7 @@
         "fy1-8",
         "fy1-3"
       ],
-      "text": "Opiskelija mittasi pienen aurinkopaneelin hyötysuhteen. Tässä on ote hänen raportistaan:\n\n> Vein paneelin aurinkoiselle pihalle toukokuun puolenpäivän aikaan. Mittasin yleismittarilla tyhjäkäyntijännitteen $6{,}10\\,\\text{V}$ ja oikosulkuvirran $210\\,\\text{mA}$. Kytkin vielä paneeliin vuorotellen eri vastuksia ja mittasin jännitteen ja virran:\n>\n> | $R\\ (\\Omega)$ | $U\\ (\\text{V})$ | $I\\ (\\text{mA})$ |\n> |---|---|---|\n> | $10$ | $2{,}10$ | $210$ |\n> | $20$ | $4{,}17$ | $209$ |\n> | $25$ | $4{,}97$ | $199$ |\n> | $30$ | $5{,}36$ | $179$ |\n> | $40$ | $5{,}67$ | $142$ |\n> | $60$ | $5{,}86$ | $98$ |\n> | $100$ | $5{,}97$ | $60$ |\n>\n> Paneelin teho on $P = UI = 6{,}10\\,\\text{V} \\cdot 0{,}210\\,\\text{A} = 1{,}281\\,\\text{W}$. Paneelin pinta-ala on $60\\,\\text{cm}^2$, ja aurinkoisena päivänä valon voimakkuus on $1000\\,\\text{W/m}^2$, joten hyötysuhde on $21{,}35\\,\\%$. Paneeli on parempi kuin valmistajan ilmoittama $15\\,\\%$.",
+      "text": "Opiskelija mittasi pienen aurinkopaneelin hyötysuhteen. Tässä on ote hänen raportistaan:\n\n> Vein paneelin aurinkoiselle pihalle toukokuun puolenpäivän aikaan. Mittasin yleismittarilla tyhjäkäyntijännitteen $6{,}10\\,\\text{V}$ ja oikosulkuvirran $210\\,\\text{mA}$. Kytkin vielä paneeliin vuorotellen eri vastuksia ja mittasin jännitteen ja virran:\n>\n> | $R\\ (\\Omega)$ | $U\\ (\\text{V})$ | $I\\ (\\text{mA})$ |\n> |---|---|---|\n> | $10$ | $2{,}10$ | $210$ |\n> | $20$ | $4{,}17$ | $209$ |\n> | $25$ | $4{,}97$ | $199$ |\n> | $30$ | $5{,}36$ | $179$ |\n> | $40$ | $5{,}67$ | $142$ |\n> | $60$ | $5{,}86$ | $98$ |\n> | $100$ | $5{,}97$ | $60$ |\n>\n> Paneelin teho on $$\n\\begin{aligned}\nP &= UI \\\\\n&= 6{,}10\\,\\text{V} \\cdot 0{,}210\\,\\text{A} \\\\\n&= 1{,}281\\,\\text{W}\n\\end{aligned}\n$$. Paneelin pinta-ala on $60\\,\\text{cm}^2$, ja aurinkoisena päivänä valon voimakkuus on $1000\\,\\text{W/m}^2$, joten hyötysuhde on $21{,}35\\,\\%$. Paneeli on parempi kuin valmistajan ilmoittama $15\\,\\%$.",
       "parts": [
         {
           "id": "a",
@@ -617,7 +617,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\eta = \\dfrac{0{,}989\\,\\text{W}}{1000\\,\\tfrac{\\text{W}}{\\text{m}^2} \\cdot 0{,}0060\\,\\text{m}^2} \\approx 0{,}165$"
+              "detail": "$$\n\\begin{aligned}\n\\eta &= \\dfrac{0{,}989\\,\\text{W}}{1000\\,\\tfrac{\\text{W}}{\\text{m}^2} \\cdot 0{,}0060\\,\\text{m}^2} \\\\\n&\\approx 0{,}165\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -728,7 +728,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$v = \\sqrt{\\dfrac{2 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1100\\,\\text{V}}{2{,}180 \\cdot 10^{-25}\\,\\text{kg}}} \\approx 4{,}02 \\cdot 10^{4}\\,\\text{m/s}$ ja $E = 1{,}1\\,\\text{MV/m}$"
+              "detail": "$$\n\\begin{aligned}\nv &= \\sqrt{\\dfrac{2 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1100\\,\\text{V}}{2{,}180 \\cdot 10^{-25}\\,\\text{kg}}} \\\\\n&\\approx 4{,}02 \\cdot 10^{4}\\,\\text{m/s}\n\\end{aligned}\n$$ ja $E = 1{,}1\\,\\text{MV/m}$"
             },
             {
               "key": "units_precision",
@@ -798,7 +798,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\Delta t = 30 \\cdot 24 \\cdot 3600\\,\\text{s} = 2{,}592 \\cdot 10^{6}\\,\\text{s}$, $a \\approx 1{,}35 \\cdot 10^{-4}\\,\\text{m/s}^2$, $\\Delta v \\approx 349\\,\\text{m/s}$, $m_\\text{Xe} \\approx 5{,}64\\,\\text{kg}$"
+              "detail": "$$\n\\begin{aligned}\n\\Delta t &= 30 \\cdot 24 \\cdot 3600\\,\\text{s} \\\\\n&= 2{,}592 \\cdot 10^{6}\\,\\text{s}\n\\end{aligned}\n$$, $a \\approx 1{,}35 \\cdot 10^{-4}\\,\\text{m/s}^2$, $\\Delta v \\approx 349\\,\\text{m/s}$, $m_\\text{Xe} \\approx 5{,}64\\,\\text{kg}$"
             },
             {
               "key": "assumptions",
@@ -819,7 +819,7 @@
           "text": "Riittävätkö aurinkopaneelit moottorin käyttöön? Selitä, miksi ionimoottorin työntövoima on pieni, vaikka sen teho on suuri. Selitä myös, miksi sitä silti käytetään.",
           "criteria": [
             {
-              "text": "Laskee suihkun tehon $P = UI = 1100\\,\\text{V} \\cdot 1{,}60\\,\\text{A} \\approx 1{,}76\\,\\text{kW}$. Se on pienempi kuin paneelien $2{,}5\\,\\text{kW}$. Teho on sama kuin ionien liike-energia sekunnissa $\\tfrac12 \\tfrac{\\Delta m}{\\Delta t} v^2$.",
+              "text": "Laskee suihkun tehon $$\n\\begin{aligned}\nP &= UI \\\\\n&= 1100\\,\\text{V} \\cdot 1{,}60\\,\\text{A} \\\\\n&\\approx 1{,}76\\,\\text{kW}\n\\end{aligned}\n$$. Se on pienempi kuin paneelien $2{,}5\\,\\text{kW}$. Teho on sama kuin ionien liike-energia sekunnissa $\\tfrac12 \\tfrac{\\Delta m}{\\Delta t} v^2$.",
               "tag": "math",
               "points": 1
             },

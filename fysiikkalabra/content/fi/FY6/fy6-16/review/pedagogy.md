@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c1b357c0202a531a
+CONTENT-HASH: 65aaf46702ef907a
 
 ## Blocking
 
 ## Polish
-- tarkistus-1: the correct option is about twice as long as the distractors, a length cue. Shorten it (drop "riippumatta siitä, sijaitseeko se sisällä vai ulkona"; the feedback already says it) or lengthen the others.
-- tarkistus-1 option 2 feedback is accurate; no change needed.
+- Kun-lause keskellä lausetta ('...kun latauksen häviöt otetaan huomioon, kolmivaiheisella asemalla...') on hieman raskas; vaihtoehto: 'Sama 40 kWh:n lataus kestää pistorasiasta häviöt huomioiden yli vuorokauden ja kolmivaiheisella asemalla noin neljä tuntia.'
 
 ## Checked
-- Changed part: tarkistus-1 correct option and feedback. The question tests a concept (why a dedicated group and RCD), and the three options map to real misconceptions (own group speeds charging; RCD protects the main fuse from overload).
-- Feedback for the correct option names the mechanism (leakage current through damaged cable and a person) and the indoor/outdoor requirement; the RCD distractor's feedback repairs the misconception (RCD reacts to leakage, 30 mA, not to load size; load management handles overload).
-- Rest of the lesson unchanged since the last PASS (full review forced by the inquiry change); inquiry checks pass.
+batch delta review: the changed socket-charging sentence is clear, matches the 25,6 h with losses the inquiry and solutions use, and no figure or task is touched.
