@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0292c5e7f79399a2
+CONTENT-HASH: e4df69026a6db390
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-4-L1-09 — "Anna vastaus yksikössä g/kg/km": yksikkö pelkkänä tekstinä; kirjoita $\text{km}$ jne. LaTeXina kuten muu teksti.
+- none
 
 ## Checked
-- open-exercises-1280 (uuden tehtävän fy1-4-L1-09 kysymys, vihje, vastauskenttä ja avattu ratkaisu) ja viereiset tehtävät
-- ratkaisun vaiheet: Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Vastaus, Järkevyys; yksiköt LaTeXina, desimaalipilkku, \cdot, ei vaakasuuntaista ylivuotoa
-- tehtäväkuvat tarkistettu kontaktilehdiltä / otoksina (fy1-1 eclipse luettavissa, ei sumeaa tai leikkautunutta)
+- delta of solutions.md only: Järkevyys line. Opened fi fy1-4 open-exercises-L2-1280-8 (task 4-15 solution, new ≈3,0 m and the rest of the solution laid out cleanly) and -7 (neighbour, 4-15 task); no clipping, KaTeX clean, 3,0 m consistent with 3,07 m.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

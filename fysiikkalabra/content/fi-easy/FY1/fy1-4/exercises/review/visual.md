@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 16426b567c7be578
+CONTENT-HASH: d3d1439fdcda5a28
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] hint "Arvo on MAFY-taulukon taulukossa …" — "taulukon taulukossa" reads clumsily — write "Arvo löytyy MAFY-taulukosta, taulukosta …".
-- [Minor] fy1-4-L1-09 — "MAFY-taulukko" is not explained for S2 readers as fy1-5…8 do ("koulun fysiikan taulukkokirja") — add that sentence.
+- none
 
 ## Checked
-- Delta (new MAFY task fy1-4-L1-09 and its solution; figure tasks with candle, spring-masses), captures rebuilt for this hash.
-- Opened at 1280 px: open-exercises-1280 part holding fy1-4-L1-09 (task, hint, lock, answer field, solution rows, Vastaus, Järkevyys): KaTeX renders, chains aligned, thin spaces, decimal commas, no clipping.
-- Figure tasks are teacher-approved drawings (layout only); the neighbouring tasks' captures showed no layout damage. Packet carries no SCOPE line, so none is written.
+- delta of solutions.md only: Järkevyys line. Opened fi fy1-4 open-exercises-L2-1280-8 (task 4-15 solution, new ≈3,0 m and the rest of the solution laid out cleanly); fi-easy captures regenerated, not opened separately: number change 3,1 to 3,0 and a reworded Järkevyys sentence (reads fine: 'Veden massa olisi noin 45 g, jos vettä olisi 45 cm³'), layout unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 5
