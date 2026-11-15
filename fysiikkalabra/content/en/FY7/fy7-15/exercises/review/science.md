@@ -1,14 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 706c8414fd736fe0
+CONTENT-HASH: 4d73a243c59b4c6d
 
 ## Blocking
 
 ## Polish
+- solutions.md:763 (fy7-15-L2-09 Principle) — "Light reflected from … glass is partly polarised" holds for an oblique view; at perpendicular viewing the reflection is not polarised. The task's observation implies the oblique view, so this is a fair simplification (C) — optionally add "when the window is viewed at an angle".
+- solutions.md:764 (fy7-15-L2-09) — light from the goods also crosses the glass obliquely and becomes slightly polarised (Fresnel, n = 1.5: at about 56° the two components pass 73 % and 100 %), which is why the task rightly says "hardly changes"; the model answer could say "almost unpolarised". Not required at this level.
+- exercises.json:439 (fy7-15-L3-04) — still says "The data is example data." although the sentence was removed from L2-05 and L2-06 — remove here too for consistency, if the teacher's decision covers it.
+- solutions.md:737 (fy7-15-L1-10) — "good answer 260–280 W/m²" is slightly wider than the tolerance 0.04 (257.7–279.1) — write 260–279 or leave.
+- lessons/FY7/fy7-15/answers.py:818 — comment dates the teacher's decision 2026-11-16 — check the date.
 
 ## Checked
-- The hash is the same at the start and the end, and it matches the regenerated packet.
-- Delta since round 2 (HEAD~1, compared field by field in a script): L1-09 and L3-03 now begin with "Extension task.\n\n". That is the only change. No answer, unit, tolerance, order, choice, data, figure or core flag changed.
-- My round 2 Blocking items are fixed. All 20 Malus or Brewster calculation tasks are now marked as extension.
-- The only unmarked tasks are L1-01 (unpolarised light halved) and L1-06 (qualitative glare). Both are core and on the qualitative core path, as the scope note says.
-- No task is both extension and core: level 1's core tasks are L1-01 and L1-06, and level 2 has no core task.
-- L1-09 (D 100 < E 125 < A 150 < B 200 < C 240 W/m²) and L3-03 (404 · 0,250 + 16 = 117 lx) were recomputed in round 2 and are unchanged. The round 1 recomputation of all 22 answers still stands.
+- All 22 numeric answers recomputed independently from the task texts (Malus, halving, Brewster, Snell for L2-04, least-squares fits for L2-05 and L2-08, maximum search for L3-04): all agree with exercises.json and answers.py.
+- L2-09: reflection from an insulator partly polarised parallel to the surface, filter crossed to it absorbs most of it, unpolarised light halved in every position, quarter turn passes the reflection, partial polarisation explains why it does not vanish: correct, qualitative, on the core path (LOPS "polarisaatio kvalitatiivisesti"), consistent with the glossary and with L1-06.
+- L2-09 answer field, model answer and answers.py comment say the same thing; no Malus or Brewster needed, so "core": true is right.
+- L2-05 without the example-data sentence: fit slope 313.9 lx, intercept 6.9 lx; background subtracted correctly; 322 lx (no subtraction) falls outside the tolerance.
+- L2-06 without the sentence: table values scatter around cos² θ within ±0.02; curve reading about 51–52°, inside the 3 % tolerance of 50.8°.
+- L1-09 ordering: 100, 125, 150, 200, 240 W/m² gives D, E, A, B, C.
+- L3-02 and L2-07: index order for light inside the denser medium right; 36.9° is below the critical angle 48.8°.
+- L3-05: Sun's height 36.9°, glare 40 · cos² 65° = 7.14 W/m², threshold tilt 33.2° right.
+- L3-04 table agrees with (1/8) I₀ sin² 2θ within a few W/m².
+- Figures graph-task and fit: generators give the values the solutions read (0.67 at 35°; 15 lx and 375 lx); neither gives the answer away.
