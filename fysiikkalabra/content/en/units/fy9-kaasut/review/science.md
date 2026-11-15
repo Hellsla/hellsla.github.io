@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: cc5cfb996b96c940
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (e5fcc5de3ced9e87).
+CONTENT-HASH: 806a1f1affaa7986
+Round 3 delta against cc5cfb996b96c940.
 
 ## Blocking
 (none)
 
 ## Polish
-- C: the 1st-law row still writes W without naming it the work done on the gas; the work row now says "työn suuruus" (magnitude) as the Kaava does, so the pair no longer contradicts the Kaava. "→ 1. pääsääntö, W kaasuun" would make the sign explicit.
-- The figures.json key "kaasuun tehty työ" is added but not used by the chart (harmless).
+- B-leaning, not blocking: the work row now reads "constant pressure, volume changes → work done, W = pΔV" (was "magnitude of the work"). The Kaava (line 321) names the same formula "work done by an expanding gas / on a compressed gas", with ΔV a magnitude (line 324), so the chart agrees with the Kaava; but the 1st-law row uses W for the work done on the gas, where an expansion gives W = −pΔV (line 330). "magnitude of the work" or "work (magnitude)" kept that sign explicit; the fi chart still says "työn suuruus".
+- The aria-label still says "the magnitude of the work is pressure times the magnitude of the change of volume": same physics as the pill, only more precise than the visible label; aligning the wording is advised.
+- Round-2 items stand: the 1st-law row does not name W as work done on the gas; the key "kaasuun tehty työ" is unused.
 
 ## Checked
-- Round-1 Blocking fixed (fi chart condition): row 7 is now "paine vakio, tilavuus muuttuu → työn suuruus, W = pΔV" (en "constant pressure, volume changes → magnitude of the work"), which is exactly the Kaava row (constant pressure, ΔV a magnitude, ΔU = Q + W with W done on the gas; on expansion W = −pΔV).
-- aria-label: "työn suuruus on paine kertaa tilavuuden muutoksen suuruus" states the same physics as the pill.
-- Rendered chart (360 px) shows the new row; other rows unchanged and correct as in round 1.
-- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
-- Hash taken at the start and the end (cc5cfb996b96c940).
+- Diff: only the figures.json string "työn suuruus" and the matching chart label in unit.md changed; formula W = pΔV, other rows, Kaava and aria-label unchanged.
+- Chart label vs Kaava lines 321–330: consistent as a magnitude statement.
+- Hash at start and end: 806a1f1affaa7986.

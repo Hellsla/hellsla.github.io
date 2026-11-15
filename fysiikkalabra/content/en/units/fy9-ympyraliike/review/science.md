@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a5cfa11854335811
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (ad4c9cd221577e6e).
+CONTENT-HASH: 7350c01843e2bbee
+Round 3 delta against a5cfa11854335811.
 
 ## Blocking
 (none)
 
 ## Polish
-- C: the chart now writes F = mv²/r for the bend, the Kaava text F_μ = mv²/r; same force, both correct (static friction is the only horizontal force).
+- C (round 2, stands): the chart writes F = mv²/r for the bend, the Kaava F_μ = mv²/r; same force, both correct.
 
 ## Checked
-- Changed row 5: "kaarre tasaisella tiellä → lepokitka kaartaa, F = mv²/r" (en "static friction turns the car"); the aria-label says "lepokitka … kitkavoima on m v toiseen per r". Correct: the tyres do not slip, so static friction provides the net (normal) force; F not F_μ removes the clash with F_μ = μN of Voimat (round-1 fi-easy Polish resolved).
-- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
-- Other rows unchanged and correct as in round 1.
-- Hash taken at the start and the end (a5cfa11854335811).
+- Diff: the label "static friction turns the car" shortened to "→ static friction" before the pill F = mv²/r; physics unchanged (tyres do not slip, static friction is the only horizontal force and supplies the centripetal force; worked example line 380 agrees).
+- aria-label ("A bend on a level road: static friction turns the car, and the friction force equals m v squared per r") states the same physics.
+- Hash at start and end: 7350c01843e2bbee.
