@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d8e92c41c8ecf29d
+CONTENT-HASH: 601522414dcda47b
 SCOPE: delta added-exercise from 44027671945483e8 base 8f23aa7ae3bd
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 13-19 (fy7-13/spectrum-q) — card has about 100 px of empty space under the ruler; trim the viewBox.
-- [Minor] 13-19 solution Kaava — the fraction N = sin θ / kλ touches the row above; add row spacing.
+- [Minor] 13-16 options and model answer — "mittausvirhettä", "virhe jakautuu" and "virhe jakaudu mihinkään" remain beside the new "epävarmuus" wording; harmonise (e.g. "mittausepävarmuutta", "epävarmuus jakautuu").
 
 ## Checked
-- fy7-13 L1 capture 9 (13-9), L2 captures 11-14 (13-18 setup figure, 13-19 spectrum figure, solutions).
-- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
+- fy7-13-open-exercises-L2-1280-9 (13-16: changed question, options, feedback, Kysytty, Periaate, Mallivastaus render in place), L2-1280-8, -10, -11, -3, -4, -5, L3-1280-7 (13-22 Vastaus "λ ≈ 6,3 · 10² nm"), L3-1280-9 (13-24 comma before vertailuarvo): layout survived, no overflow, formulas and units upright.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5
