@@ -282,6 +282,8 @@ The distance is squared in the formula. When the distance doubles, the force fal
 The weight $G = mg$ of a body is the gravitational force the Earth exerts on it. When the mass of the Earth is $M$ and its radius $R$, the law of gravitation gives the same force, so $mg = \gamma \tfrac{Mm}{R^2}$. The mass $m$ of the body cancels, and the acceleration due to gravity is left as $g = \gamma \tfrac{M}{R^2}$. This is why all bodies fall with the same acceleration on the Earth's surface when air resistance is ignored: a greater force acts on a heavier body, but it is also harder to accelerate.
 
 ### Gravitational field strength
+**Extension section.** Gravitational field strength is not part of the central content of this module, so this subsection and the next one, *The field on different celestial bodies*, are extension material. The core path needs only Newton's law of gravitation and the fact that the weight of a body is the gravitational force acting on it at the Earth's surface.
+
 The Earth changes its surroundings so that at every point a certain pull is ready: a force $\overline{F} = m\overline{g}$ acts on a body brought there. This is called the **gravitational field** of the Earth. The field strength at a distance $r$ from the centre of a body is
 
 ```latex
@@ -686,5 +688,5 @@ F = \gamma \frac{M m}{r^2}
 - All bodies attract each other with the gravitational force $F = \gamma \tfrac{m_1 m_2}{r^2}$, where $r$ is the distance between the centres and $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$.
 - The gravitational forces between two bodies are equal and opposite; the lighter body accelerates more.
 - When the distance doubles, the force falls to a quarter.
-- The gravitational field strength $g = \gamma \tfrac{M}{r^2}$ is the acceleration of a freely falling body, with the unit $\text{m/s}^2$; the weight of a body is $G = mg$.
+- Extension: the gravitational field strength $g = \gamma \tfrac{M}{r^2}$ is the acceleration of a freely falling body, with the unit $\text{m/s}^2$; the weight of a body is $G = mg$.
 - Gravitation is always attractive and reaches far, so it gathers matter into stars, planets and galaxies.
