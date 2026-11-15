@@ -26,15 +26,6 @@ tarkistetaan ensin kuvista (fy10-hiuksen-paksuus antoi kahdella ajolla eri tulok
 kuvasääntö erillisenä eränä opettajan päätöksellä; jaettujen komponenttien muutokset (`templates/`, `screenshot.py`:n
 tyhjät 28×28 px kaappaukset) tehdään yksin. Voi kulkea rinnakkain kohdan 2 kanssa.
 
-## 4b. Dronelabra: lentokokeiden taulukko liian leveä puhelimella (2026-11-14)
-
-Löytyi #568:n koko sivuston ajossa 360 ja 390 px:llä: `ahjo-drone-lentokokeet` (fi, en, fi-easy) taulukko on
-91–130 px laatikkoaan leveämpi (`check_layout` `table`, suljettu tila). Ainoa löydös koko sivustolla näillä
-leveyksillä. Lähde `jaksot/ahjo/kohteet/ahjo-drone-lentokokeet.md`. Korjaus ensisijaisesti jaksopohjan taulukon
-yhteisessä tyylissä (jaettu: yksin) tai taulukon rakenteessa (sisältö, ei katselmointeja Ahjon sivuilla). Pieni,
-voidaan tehdä, kun mikään jaettu muutos ei ole auki. #579:n koko sivuston ajossa (390 ja 1280 px) samoin
-`ahjo-airbit-kokoaminen`, `ahjo-airbit-ohjaus` ja `ahjo-fpv-lento`: korjataan samassa PR:ssä.
-
 ## 5. CI:n toistettavuus (2026-11-13)
 
 Tapa ajaa selaintarkistukset CI:n kontissa (`mcr.microsoft.com/playwright/python:v1.65.0-noble`) paikallisesti, ja
