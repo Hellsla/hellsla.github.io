@@ -11,7 +11,7 @@ None.
 - fy7-s2 e Järkevyys: "hitaammin ajettaessa sama teho vaatii suuremman voiman" holds only if the lamp's power stays 3 W at lower speed. Add "jos valon teho pysyy samana".
 
 ## Checked
-One script recomputed every number from the task data with my own formulas. All of them agree with answers.py and the solutions, the stated mistakes included:
+One script recomputed every number from the task data with my own formulas. All of them agree with answers.py and the solutions, mistakes included:
 - s1: v, E, U_s, B, r₁₀, Δx = 7,24 cm, v₁₀ and the ratio 0,910.
 - s2: f, U, v = 5,236 m/s, v_min, F = 0,955 N.
 - s3: R = 9,40 Ω, both losses, U_k, the area and diameter, the masses, F/l and G/l.
