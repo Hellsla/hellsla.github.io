@@ -657,8 +657,8 @@ $$. The atomic masses are: uranium-235 $235.0439282\,\text{u}$, barium-141 $140.
 **Substitution.** The mass of the starting materials is $m_\text{initial} = 1.0086649\,\text{u} + 235.0439282\,\text{u} = 236.0525931\,\text{u}$ and that of the products $$
 \begin{aligned}
 m_\text{final} &= 140.9144033\,\text{u} \\
-&+ 91.9261731\,\text{u} + 3 \\
-&\cdot 1.0086649\,\text{u} \\
+&+ 91.9261731\,\text{u} \\
+&+ 3 \cdot 1.0086649\,\text{u} \\
 &= 235.8665711\,\text{u}
 \end{aligned}
 $$.

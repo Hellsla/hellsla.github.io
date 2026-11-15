@@ -6,8 +6,8 @@
 **Unit conversions:** None needed: all masses are in atomic mass units.
 **Substitution:** $$
 \begin{aligned}
-\Delta m &= 6 \cdot 1.007825\,\text{u} + 6 \\
-&\cdot 1.008665\,\text{u} \\
+\Delta m &= 6 \cdot 1.007825\,\text{u} \\
+&+ 6 \cdot 1.008665\,\text{u} \\
 &- 12.000000\,\text{u} \\
 &= 6.046950\,\text{u} + 6.051990\,\text{u} \\
 &- 12.000000\,\text{u} \\
@@ -103,8 +103,8 @@ $$. The mass of the electron is thousandths of an atomic mass unit, so the energ
 **Unit conversions:** $931.5\,\tfrac{\text{MeV}}{c^2}$ is put in place of the unit $\text{u}$, so $c^2$ cancels.
 **Substitution:** $$
 \begin{aligned}
-\Delta m &= 26 \cdot 1.007825\,\text{u} + 30 \\
-&\cdot 1.008665\,\text{u} \\
+\Delta m &= 26 \cdot 1.007825\,\text{u} \\
+&+ 30 \cdot 1.008665\,\text{u} \\
 &- 55.934936\,\text{u} \\
 &= 26.203450\,\text{u} \\
 &+ 30.259950\,\text{u} \\
@@ -168,8 +168,8 @@ $$
 **Unit conversions:** $931.5\,\tfrac{\text{MeV}}{c^2}$ is put in place of the unit $\text{u}$, so $c^2$ cancels.
 **Substitution:** Nickel-62 ($Z = 28$, $N = 34$): $$
 \begin{aligned}
-\Delta m &= 28 \cdot 1.007825\,\text{u} + 34 \\
-&\cdot 1.008665\,\text{u} \\
+\Delta m &= 28 \cdot 1.007825\,\text{u} \\
+&+ 34 \cdot 1.008665\,\text{u} \\
 &- 61.928345\,\text{u} \\
 &= 0.585365\,\text{u}
 \end{aligned}
@@ -185,8 +185,8 @@ $$, so $E_\text{B} = 0.585365 \cdot 931.5\,\text{MeV} = 545.27\,\text{MeV}$ and 
 **Unit conversions:** $931.5\,\tfrac{\text{MeV}}{c^2}$ is put in place of the unit $\text{u}$, so $c^2$ cancels.
 **Substitution:** $$
 \begin{aligned}
-\Delta m &= 3 \cdot 1.007825\,\text{u} + 3 \\
-&\cdot 1.008665\,\text{u} \\
+\Delta m &= 3 \cdot 1.007825\,\text{u} \\
+&+ 3 \cdot 1.008665\,\text{u} \\
 &- 6.015123\,\text{u} \\
 &= 3.023475\,\text{u} + 3.025995\,\text{u} \\
 &- 6.015123\,\text{u} \\
@@ -274,8 +274,8 @@ $$, so $E = 0.022091 \cdot 931.5\,\text{MeV} = 20.578\,\text{MeV}$
 **Unit conversions:** None needed: all energies are in megaelectronvolts.
 **Substitution:** $$
 \begin{aligned}
-Q &= 4 \cdot 7.074\,\text{MeV} - 2 \cdot 2 \\
-&\cdot 1.112\,\text{MeV} \\
+Q &= 4 \cdot 7.074\,\text{MeV} \\
+&- 2 \cdot 2 \cdot 1.112\,\text{MeV} \\
 &= 28.296\,\text{MeV} - 4.448\,\text{MeV} \\
 &= 23.848\,\text{MeV}
 \end{aligned}
@@ -320,15 +320,15 @@ $$ and $1.00\,\text{g} = 1.00 \cdot 10^{-3}\,\text{kg}$.
 &m_\text{initial} - m_\text{final} \\
 &= 235.043930\,\text{u} \\
 &- 140.914411\,\text{u} \\
-&- 91.926156\,\text{u} - 2 \\
-&\cdot 1.008665\,\text{u} \\
+&- 91.926156\,\text{u} \\
+&- 2 \cdot 1.008665\,\text{u} \\
 &= 0.186033\,\text{u}
 \end{aligned}
 $$, so $Q = 0.186033 \cdot 931.5\,\text{MeV} = 173.29\,\text{MeV}$. b) $$
 \begin{aligned}
-Q &= 141 \cdot 8.326\,\text{MeV} + 92 \\
-&\cdot 8.513\,\text{MeV} - 235 \\
-&\cdot 7.591\,\text{MeV} \\
+Q &= 141 \cdot 8.326\,\text{MeV} \\
+&+ 92 \cdot 8.513\,\text{MeV} \\
+&- 235 \cdot 7.591\,\text{MeV} \\
 &= 1173.97\,\text{MeV} \\
 &+ 783.20\,\text{MeV} \\
 &- 1783.89\,\text{MeV} \\

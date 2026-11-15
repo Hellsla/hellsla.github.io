@@ -283,7 +283,8 @@ $$. Kulmalla $\theta = 120\,{}^\circ$ on $\cos 120\,{}^\circ = -0{,}5$.
 **Sijoitus:** a) $p = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{0{,}07110 \cdot 10^{-9}\,\text{m}} = 9{,}319 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}$ ja $p' = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{0{,}07476 \cdot 10^{-9}\,\text{m}} = 8{,}863 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}$. b) Piirros: vektorikolmion kaksi sivua ovat $p$ ja $p'$ niiden välisen kulman ollessa $\theta = 120\,{}^\circ$ (vektorit piirretään samasta pisteestä), ja kolmas sivu on $p_\text{e}$; taulukon rivejä $60\,{}^\circ$ ja $90\,{}^\circ$ ei tarvita. Kosinilause: $$
 \begin{aligned}
 &p_\text{e}^2 \\
-&= (9{,}319^2 + 8{,}863^2 + 9{,}319 \\
+&= (9{,}319^2 + 8{,}863^2 \\
+&+ 9{,}319 \\
 &\cdot 8{,}863) \cdot 10^{-48}\,\text{kg}^2\text{m}^2/\text{s}^2 \\
 &= 2{,}480 \cdot 10^{-46}\,\text{kg}^2\text{m}^2/\text{s}^2
 \end{aligned}

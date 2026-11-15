@@ -108,7 +108,8 @@ $q = -\tfrac{1}{3}e - \tfrac{2}{3}e = -e$
 **Sijoitus:** $$
 \begin{aligned}
 Q &= (1115{,}683 - 938{,}272 \\
-&- 139{,}570)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&- 139{,}570)\,\tfrac{\text{MeV}}{c^2} \\
+&\cdot c^2 \\
 &= 37{,}841\,\text{MeV}
 \end{aligned}
 $$
@@ -197,7 +198,8 @@ Q &= (1672{,}45 - 1192{,}642 \\
 $$, joten energia ei riitä. (3) Varaus $-1 = 0 - 1$ ja baryoniluku $1 = 1 + 0$ säilyvät, ja $$
 \begin{aligned}
 Q &= (1672{,}45 - 1115{,}683 \\
-&- 493{,}677)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&- 493{,}677)\,\tfrac{\text{MeV}}{c^2} \\
+&\cdot c^2 \\
 &= 63{,}090\,\text{MeV}
 \end{aligned}
 $$
@@ -260,8 +262,9 @@ Kvarkkien nettomäärät alussa: $u$: $-1 + 2 = 1$, $d$: $1 + 1 = 2$, $s$: $0$
 Kvarkkien nettomäärät lopussa: $u$: $1 + 0 = 1$, $d$: $1 + 1 = 2$, $s$: $1 - 1 = 0$, joten kaikki täsmäävät
 b) $$
 \begin{aligned}
-Q &= (497{,}611 - 2 \\
-&\cdot 139{,}570)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+Q &= (497{,}611 \\
+&- 2 \cdot 139{,}570)\,\tfrac{\text{MeV}}{c^2} \\
+&\cdot c^2 \\
 &= (497{,}611 - 279{,}140)\,\text{MeV} \\
 &= 218{,}471\,\text{MeV}
 \end{aligned}

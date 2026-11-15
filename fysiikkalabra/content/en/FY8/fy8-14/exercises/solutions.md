@@ -154,8 +154,9 @@ $$
 **Conversions:** Not needed: all doses are in millisieverts. The share is converted to a percentage by multiplying by $100\,\%$.
 **Substitution:** $$
 \begin{aligned}
-H &= 3 \cdot 0.010\,\text{mSv} + 2 \\
-&\cdot 0.10\,\text{mSv} + 1 \cdot 2.0\,\text{mSv} \\
+H &= 3 \cdot 0.010\,\text{mSv} \\
+&+ 2 \cdot 0.10\,\text{mSv} \\
+&+ 1 \cdot 2.0\,\text{mSv} \\
 &= 0.030\,\text{mSv} + 0.20\,\text{mSv} \\
 &+ 2.0\,\text{mSv} \\
 &= 2.23\,\text{mSv}

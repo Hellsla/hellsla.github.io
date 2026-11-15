@@ -279,7 +279,8 @@ $$. At the angle $\theta = 120\,{}^\circ$, $\cos 120\,{}^\circ = -0.5$.
 **Substitution:** a) $p = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s}}{0.07110 \cdot 10^{-9}\,\text{m}} = 9.319 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}$ and $p' = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s}}{0.07476 \cdot 10^{-9}\,\text{m}} = 8.863 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}$. b) Drawing: two sides of the vector triangle are $p$ and $p'$ with the angle between them $\theta = 120\,{}^\circ$ (the vectors are drawn from the same point), and the third side is $p_\text{e}$; the table rows $60\,{}^\circ$ and $90\,{}^\circ$ are not needed. Law of cosines: $$
 \begin{aligned}
 &p_\text{e}^2 \\
-&= (9.319^2 + 8.863^2 + 9.319 \\
+&= (9.319^2 + 8.863^2 \\
+&+ 9.319 \\
 &\cdot 8.863) \cdot 10^{-48}\,\text{kg}^2\text{m}^2/\text{s}^2 \\
 &= 2.480 \cdot 10^{-46}\,\text{kg}^2\text{m}^2/\text{s}^2
 \end{aligned}

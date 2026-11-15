@@ -196,8 +196,8 @@ b) $72{,}3\,\%$, kolme merkitsevää numeroa kuten lukumäärissä.
 
 c) Alle $0{,}10\,\text{nm}$:n etäisyydelle osuu $72{,}3\,\%$ ja alle $0{,}15\,\text{nm}$:n etäisyydelle $92{,}0\,\%$ mittauksista, joten $90\,\%$ saavutetaan näiden välissä. Lineaarisesti interpoloiden raja on noin $$
 \begin{aligned}
-&0{,}10\,\text{nm} + \tfrac{90{,}0 - 72{,}3}{92{,}0 - 72{,}3} \\
-&\cdot 0{,}05\,\text{nm} \\
+&0{,}10\,\text{nm} \\
+&+ \tfrac{90{,}0 - 72{,}3}{92{,}0 - 72{,}3} \cdot 0{,}05\,\text{nm} \\
 &= 0{,}145\,\text{nm}
 \end{aligned}
 $$, mikä on lähellä arvoa $0{,}14\,\text{nm}$. Aineisto on siis sopusoinnussa rajan kanssa. Rajan ulkopuolellakin on osumia: etäisyydellä yli $0{,}15\,\text{nm}$ on $23 + 7 + 2 = 32$ mittausta, eli $8{,}0\,\%$.

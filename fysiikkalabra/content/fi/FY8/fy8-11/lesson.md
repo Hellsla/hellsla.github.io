@@ -657,8 +657,8 @@ $$. Atomimassat ovat: uraani-235 $235{,}0439282\,\text{u}$, barium-141 $140{,}91
 **Sijoitus.** Lähtöaineiden massa on $m_\text{alku} = 1{,}0086649\,\text{u} + 235{,}0439282\,\text{u} = 236{,}0525931\,\text{u}$ ja tuotteiden $$
 \begin{aligned}
 m_\text{loppu} &= 140{,}9144033\,\text{u} \\
-&+ 91{,}9261731\,\text{u} + 3 \\
-&\cdot 1{,}0086649\,\text{u} \\
+&+ 91{,}9261731\,\text{u} \\
+&+ 3 \cdot 1{,}0086649\,\text{u} \\
 &= 235{,}8665711\,\text{u}
 \end{aligned}
 $$.

@@ -196,8 +196,8 @@ b) $72.3\,\%$, three significant figures like the counts.
 
 c) $72.3\,\%$ of the measurements land at a distance of less than $0.10\,\text{nm}$ and $92.0\,\%$ at a distance of less than $0.15\,\text{nm}$, so $90\,\%$ is reached between these. Interpolating linearly, the boundary is about $$
 \begin{aligned}
-&0.10\,\text{nm} + \tfrac{90.0 - 72.3}{92.0 - 72.3} \\
-&\cdot 0.05\,\text{nm} \\
+&0.10\,\text{nm} \\
+&+ \tfrac{90.0 - 72.3}{92.0 - 72.3} \cdot 0.05\,\text{nm} \\
 &= 0.145\,\text{nm}
 \end{aligned}
 $$, which is close to $0.14\,\text{nm}$. So the data is consistent with the boundary. There are hits outside the boundary too: at a distance of more than $0.15\,\text{nm}$ there are $23 + 7 + 2 = 32$ measurements, that is, $8.0\,\%$.

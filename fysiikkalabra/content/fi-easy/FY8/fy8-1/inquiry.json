@@ -326,7 +326,7 @@
       "type": "choice",
       "title": "Etsi virhe",
       "optional": true,
-      "prompt": "Opiskelija laskee vihreän valon fotonin energian, kun aallonpituus on $500\\,\\text{nm}$. Hän kirjoittaa\n\n$$\n\\begin{aligned}\nE &= \\dfrac{hc}{\\lambda} \\\\\n&= 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\\\\n&\\cdot 2{,}998 \\cdot 10^{8}\\,\\text{m/s} : 500 \\\\\n&= 3{,}97 \\cdot 10^{-28}\\,\\text{J}\n\\end{aligned}\n$$\n\nMissä on virhe?",
+      "prompt": "Opiskelija laskee vihreän valon fotonin energian, kun aallonpituus on $500\\,\\text{nm}$. Hän kirjoittaa\n\n$$\n\\begin{aligned}\nE &= \\dfrac{hc}{\\lambda} \\\\\n&= 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\\\\n&\\cdot 2{,}998 \\cdot 10^{8}\\,\\text{m/s} \\\\\n&: 500 \\\\\n&= 3{,}97 \\cdot 10^{-28}\\,\\text{J}\n\\end{aligned}\n$$\n\nMissä on virhe?",
       "choices": [
         {
           "text": "Aallonpituutta ei ole muunnettu metreiksi: $500\\,\\text{nm} = 500 \\cdot 10^{-9}\\,\\text{m}$. Oikea tulos on siis $3{,}97 \\cdot 10^{-19}\\,\\text{J}$.",

@@ -122,8 +122,8 @@ $$ (yksikkönä $\mu\text{Sv/h}$). Kolmen sentin lyijy on tavallinen paksuus gam
 **Muunnokset:** Ei tarvita. Kun absorboituneet annokset ovat milligrayna, painotetut annokset saadaan millisieverteinä.
 **Sijoitus:** $$
 \begin{aligned}
-H_\text{E} &= 0{,}12 \cdot 20 \cdot 0{,}10\,\text{mGy} + 1 \\
-&\cdot 0{,}50\,\text{mGy} \\
+H_\text{E} &= 0{,}12 \cdot 20 \cdot 0{,}10\,\text{mGy} \\
+&+ 1 \cdot 0{,}50\,\text{mGy} \\
 &= 0{,}24\,\text{mSv} + 0{,}50\,\text{mSv} \\
 &= 0{,}74\,\text{mSv}
 \end{aligned}
@@ -150,8 +150,8 @@ $$
 **Muunnokset:** Ei tarvita. Ekvivalenttiannokset ovat millisieverteinä, ja painotuskertoimet ovat paljaita lukuja. Siksi efektiivinen annos tulee millisieverteinä.
 **Sijoitus:** $$
 \begin{aligned}
-H_\text{E} &= 0{,}04 \cdot 2{,}0\,\text{mSv} + 0{,}12 \\
-&\cdot 1{,}0\,\text{mSv} \\
+H_\text{E} &= 0{,}04 \cdot 2{,}0\,\text{mSv} \\
+&+ 0{,}12 \cdot 1{,}0\,\text{mSv} \\
 &= 0{,}080\,\text{mSv} + 0{,}12\,\text{mSv} \\
 &= 0{,}20\,\text{mSv}
 \end{aligned}

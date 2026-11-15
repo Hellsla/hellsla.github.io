@@ -180,7 +180,8 @@ $$, close to the value of the fit. The result differs from the accepted value $6
 $$, so $$
 \begin{aligned}
 \Delta h &= 1.602 \cdot 10^{-19}\,\text{C} \\
-&\cdot 0.30 \cdot 10^{-15}\,\text{V}\,\text{s} : 2 \\
+&\cdot 0.30 \cdot 10^{-15}\,\text{V}\,\text{s} \\
+&: 2 \\
 &= 2.403 \cdot 10^{-35}\,\text{J}\,\text{s}
 \end{aligned}
 $$

@@ -108,7 +108,8 @@ $q = -\tfrac{1}{3}e - \tfrac{2}{3}e = -e$
 **Substitution:** $$
 \begin{aligned}
 Q &= (1115.683 - 938.272 \\
-&- 139.570)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&- 139.570)\,\tfrac{\text{MeV}}{c^2} \\
+&\cdot c^2 \\
 &= 37.841\,\text{MeV}
 \end{aligned}
 $$
@@ -197,7 +198,8 @@ Q &= (1672.45 - 1192.642 \\
 $$, so the energy is not enough. (3) the charge $-1 = 0 - 1$ and the baryon number $1 = 1 + 0$ are conserved, and $$
 \begin{aligned}
 Q &= (1672.45 - 1115.683 \\
-&- 493.677)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&- 493.677)\,\tfrac{\text{MeV}}{c^2} \\
+&\cdot c^2 \\
 &= 63.090\,\text{MeV}
 \end{aligned}
 $$
@@ -255,8 +257,9 @@ Net numbers of quarks at the start: $u$: $-1 + 2 = 1$, $d$: $1 + 1 = 2$, $s$: $0
 Net numbers of quarks at the end: $u$: $1 + 0 = 1$, $d$: $1 + 1 = 2$, $s$: $1 - 1 = 0$, so all agree
 b) $$
 \begin{aligned}
-Q &= (497.611 - 2 \\
-&\cdot 139.570)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+Q &= (497.611 \\
+&- 2 \cdot 139.570)\,\tfrac{\text{MeV}}{c^2} \\
+&\cdot c^2 \\
 &= (497.611 - 279.140)\,\text{MeV} \\
 &= 218.471\,\text{MeV}
 \end{aligned}

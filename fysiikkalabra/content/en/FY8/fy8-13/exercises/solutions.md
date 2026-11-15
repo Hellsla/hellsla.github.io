@@ -116,8 +116,8 @@
 **Conversions:** Not needed: when the absorbed doses are in milligrays, the weighted doses come out in millisieverts.
 **Substitution:** $$
 \begin{aligned}
-H_\text{E} &= 0.12 \cdot 20 \cdot 0.10\,\text{mGy} + 1 \\
-&\cdot 0.50\,\text{mGy} \\
+H_\text{E} &= 0.12 \cdot 20 \cdot 0.10\,\text{mGy} \\
+&+ 1 \cdot 0.50\,\text{mGy} \\
 &= 0.24\,\text{mSv} + 0.50\,\text{mSv} \\
 &= 0.74\,\text{mSv}
 \end{aligned}
@@ -138,8 +138,8 @@ $$
 **Conversions:** Not needed: when the equivalent doses are in millisieverts, the effective dose comes out in millisieverts, because the weighting factors are pure numbers.
 **Substitution:** $$
 \begin{aligned}
-H_\text{E} &= 0.04 \cdot 2.0\,\text{mSv} + 0.12 \\
-&\cdot 1.0\,\text{mSv} \\
+H_\text{E} &= 0.04 \cdot 2.0\,\text{mSv} \\
+&+ 0.12 \cdot 1.0\,\text{mSv} \\
 &= 0.080\,\text{mSv} + 0.12\,\text{mSv} \\
 &= 0.20\,\text{mSv}
 \end{aligned}
