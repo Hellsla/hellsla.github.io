@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 604ed8c23072c5a2
+CONTENT-HASH: 4c640a52375fbbf4
+SCOPE: delta reflow (long solution formulas lifted onto their own line, aligned blocks)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] 13-16 correct feedback — "Oikein: ..." already prints the whole 648 h route; acceptable here as the task has no reason stage, but a shorter confirmation would leave the solution something to teach.
+- [Minor] Sijoitus blocks with a \cdot continuation: the block shows a mid-row "=" (e.g. fy8-6 "hc = 6,626·10^-34 J s / · 2,998·10^8 m/s = 1,9865·10^-25 J m,", fy8-10-11 "E_B = a / · (c)² = a / · 8,98800·10^16 m²/s² = 2,04479·10^-11 J"). The "=" is not in the aligned column and a continuation row such as "· (2,998·10^8 m/s)² = 2,27502·10^-28 kg" reads like an equation of its own. Fix: put each "=" on its own row (the source already does); if the build merges rows, adjust mathlayout so a "=" row stays a row of its own. Readable, so it does not block.
+- [Minor] The comma after a block ("... J m,") is inside the last row as agreed, and the answer lines read cleanly.
 
 ## Checked
-- Rendered at 390 px with my own script (feedback of every option/statement, answer and solution open) and viewed the render of task 13-16 (L2-08, magnitude MC): options ascend in value (0,002 to 2000 mSv) and are all one form; correct is not longest nor the only hedged; distractors match the chapter's warned unit slips; display chains (t = 648 h; H in three rows) fit 286 px.
-- Overflow measured: page scrollWidth 390 = viewport, no element past the right edge, no red KaTeX; widest formula block 286 px (inline chains in feedback shorter than 300 px).
-- From text only: the diff of exercises.json, solutions.md and answers.py; wording, spelling of compounds, decimal commas, units in LaTeX, situation-then-question paragraph splits of the reflowed old tasks (checked in the diff, not re-viewed in renders).
-- screenshot.py captures are current (stamp matches the hash); I used them for the stamp check, not for the new task, which my render covers. Hash same at start and end.
+- No capture of this lesson opened; judged by the same shared component as fy8-1, 2, 6, 10 and 16, whose captures I opened (see the other lessons' reports). Source of the aligned blocks read only. If its blocks differ in kind, ask again.
+- Across the opened captures: blocks sit inside the card, no clipping, equals signs aligned in ordinary chains, fractions and units upright with a thin space, decimal comma, sentence marks inside the last row, words and numbers unchanged.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

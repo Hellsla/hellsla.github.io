@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 71d2daa94d495d74
-Round 1
+CONTENT-HASH: ea992b78cd1866da
+SCOPE: delta reflow (long solution formulas set in aligned blocks)
 
 ## Blocking
 (none)
@@ -9,9 +9,9 @@ Round 1
 (none)
 
 ## Checked
-- Own scratch script (preview built with build.py, 390 px, task card opened with its answer and solution): opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/en-fy8-8-L2-08.png (find-the-error, 5 options; Line 3 marked wrong with feedback shown; Answer and solution open, all of it read) .
-- Changed older tasks (text split into paragraphs or re-set): en-fy8-8-L3-02.png (top, text paragraphs, solution); opened the top 760 px of each in the contact montages /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/m-en-0.png and m-en-3.png (solution parts below not opened for these).
-- Same checks by script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's own screenshot list was empty and was not used; answers.py and solutions.md read as source only.
+- Contact-sheet level triage skipped; opened open-exercise captures at 1280 px (fy8-1 L2-3, fy8-5 L2-5, fy8-7 1, fy8-13 L3-4, fy8-16 L2-6): aligned blocks, equals signs aligned, sentence marks inside the last row, no clipping, layout intact.
+- No 390 px open-exercise capture exists in the packet (only stage-exercises-390); the other formulas of this lesson were checked from the source breaks, not from a capture.
+- Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5d522b9e7134f99f
-Round: 1 (delta)
+CONTENT-HASH: 411a832688cf12ea
+SCOPE: delta reflow (long solution formulas lifted onto their own line, aligned blocks)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises.json L2-08 text and options — at 390 px "beeta miinus -" / "hajoaminen" breaks after the dash and leaves a lone hyphen at the end of the line (rows 2 and 3, also the option labels); bind with a non-breaking space ("miinus -hajoaminen").
-- [Minor] solutions.md L2-08 Mallivastaus — correct and clearly structured; the last line "Oikea vastaus on rivi 3." repeats the heading of the row analysis and could go.
+- [Minor] Sijoitus blocks with a \cdot continuation: the block shows a mid-row "=" (e.g. fy8-6 "hc = 6,626·10^-34 J s / · 2,998·10^8 m/s = 1,9865·10^-25 J m,", fy8-10-11 "E_B = a / · (c)² = a / · 8,98800·10^16 m²/s² = 2,04479·10^-11 J"). The "=" is not in the aligned column and a continuation row such as "· (2,998·10^8 m/s)² = 2,27502·10^-28 kg" reads like an equation of its own. Fix: put each "=" on its own row (the source already does); if the build merges rows, adjust mathlayout so a "=" row stays a row of its own. Readable, so it does not block.
+- [Minor] The comma after a block ("... J m,") is inside the last row as agreed, and the answer lines read cleanly.
 
 ## Checked
-- Own 390 px render of 8-16 (L2-08) with feedback and solution open: nuclide notation renders cleanly (sub- and superscripts aligned, ν and ν̄ visible), no overflow, no clipped chain (measured; none).
-- Form: the correct row 3 is not distinguishable by length or wording; the last option catches "no error" and the distractor feedbacks name the chapter's mistake (alpha, beta plus versus minus, gamma). The solution gives the corrected equation.
-- Text only: L3-02 paragraph split.
+- No capture of this lesson opened; judged by the same shared component as fy8-1, 2, 6, 10 and 16, whose captures I opened (see the other lessons' reports). Source of the aligned blocks read only. If its blocks differ in kind, ask again.
+- Across the opened captures: blocks sit inside the card, no clipping, equals signs aligned in ordinary chains, fractions and units upright with a thin space, decimal comma, sentence marks inside the last row, words and numbers unchanged.
 
 ## Scores
-illustrations n/a (5) · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

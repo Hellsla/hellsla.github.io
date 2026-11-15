@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b1f9cda044de58c0
-Round: 2 (delta)
+CONTENT-HASH: 07b67b799299f606
+SCOPE: delta reflow (long solution formulas lifted onto their own line, aligned blocks)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md L2-08 — the rows "Z m_H = 79 · …" and "Z m_H = 79,618175 u" repeat the left side; fine, aligned and readable at 390 px.
+- [Minor] Sijoitus blocks with a \cdot continuation: the block shows a mid-row "=" (e.g. fy8-6 "hc = 6,626·10^-34 J s / · 2,998·10^8 m/s = 1,9865·10^-25 J m,", fy8-10-11 "E_B = a / · (c)² = a / · 8,98800·10^16 m²/s² = 2,04479·10^-11 J"). The "=" is not in the aligned column and a continuation row such as "· (2,998·10^8 m/s)² = 2,27502·10^-28 kg" reads like an equation of its own. Fix: put each "=" on its own row (the source already does); if the build merges rows, adjust mathlayout so a "=" row stays a row of its own. Readable, so it does not block.
+- [Minor] The comma after a block ("... J m,") is inside the last row as agreed, and the answer lines read cleanly.
 
 ## Checked
-- Own 390 px re-render of 10-16 with feedback and solution open: new options (0,002 / 8 / 1600 / 180 000 MeV), split mass lines, aligned blocks and the "lähin vaihtoehto" sentence render cleanly; measured: no overflowing KaTeX, no page scroll. The round 1 "suuruusluokka" wording is resolved.
+- Opened at 1280 px: fy8-10 L2-1280-3 (E_B = Δm c² block). The 390 px layout is covered by check_layout 360/390 (passed), no 390 px exercise capture exists.
+- Across the opened captures: blocks sit inside the card, no clipping, equals signs aligned in ordinary chains, fractions and units upright with a thin space, decimal comma, sentence marks inside the last row, words and numbers unchanged.
 
 ## Scores
-illustrations n/a (5) · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cac0fd5db47fb84c
-Round: 1 (delta)
+CONTENT-HASH: 040c97f3f731fe50
+SCOPE: delta reflow (long solution formulas lifted onto their own line, aligned blocks)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] exercises.json L1-09 option letters — the page shuffles the options and the letters follow ("Kuvaaja D, B, A, C" from the top); the solution and feedbacks refer by letter and stay correct. Project-wide convention, leave.
-- [Minor] solutions.md L1-09 — the three rejected graphs (A, B, D) sit in one long paragraph; start each on its own line. The feedback for D gives "noin 290 kBq", the solution "294 kBq"; use one.
-- [Minor] pick-* figures at 390 px — tick numbers are about 11 px and the gridlines (50 kBq) are dense; still readable and the curve at 2 h separates C (400) from D (290) clearly. Leave.
+- [Minor] Sijoitus blocks with a \cdot continuation: the block shows a mid-row "=" (e.g. fy8-6 "hc = 6,626·10^-34 J s / · 2,998·10^8 m/s = 1,9865·10^-25 J m,", fy8-10-11 "E_B = a / · (c)² = a / · 8,98800·10^16 m²/s² = 2,04479·10^-11 J"). The "=" is not in the aligned column and a continuation row such as "· (2,998·10^8 m/s)² = 2,27502·10^-28 kg" reads like an equation of its own. Fix: put each "=" on its own row (the source already does); if the build merges rows, adjust mathlayout so a "=" row stays a row of its own. Readable, so it does not block.
+- [Minor] The comma after a block ("... J m,") is inside the last row as agreed, and the answer lines read cleanly.
 
 ## Checked
-- Own 390 px render of 9-9 with feedback and solution open: all four option figures (pick-e, pick-kiihtyy, pick-suora, pick-puolittuu) opened and looked at. Same axes, ticks, unit labels ("t (h)", "A (kBq)"), curve colour and weight in all four; scale does not hint at the right answer; A, B and C meet at (2 h; 400 kBq) so the shape decides. Curves match the figure descriptions and the solution (A zero at 4 h, B zero at about 2,8 h, D about 290 kBq at 2 h). No overflow, equation chain short.
-- Full aria-labels read in the DOM (axes, scale, curve points); complete.
-- Correct option is not identifiable by form; the distractors are the chapter's warned mistakes (linear decay, accelerating decay, e^(-t/T) without ln 2).
-- Text only: L3-01 paragraph split.
+- No capture of this lesson opened; judged by the same shared component as fy8-1, 2, 6, 10 and 16, whose captures I opened (see the other lessons' reports). Source of the aligned blocks read only. If its blocks differ in kind, ask again.
+- Across the opened captures: blocks sit inside the card, no clipping, equals signs aligned in ordinary chains, fractions and units upright with a thin space, decimal comma, sentence marks inside the last row, words and numbers unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

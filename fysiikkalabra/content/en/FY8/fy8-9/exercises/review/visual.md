@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8f26b755fc382aac
-Round 1
+CONTENT-HASH: dfc10b3bfa8ebcba
+SCOPE: delta reflow (long solution formulas set in aligned blocks)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy8-9-L1-09 — the four graph options are small at 390 px (about 200 px wide, tick numbers tiny); the aria-labels carry the values, so nothing is lost — if easy, give the option graphs more width on phones.
+(none)
 
 ## Checked
-- Own scratch script (preview built with build.py, 390 px, task card opened with its answer and solution): opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/en-fy8-9-L1-09.png (graph choice, four (t, A) graphs as options; Graph D feedback open; Answer and solution open, all of it read) .
-- Changed older tasks (text split into paragraphs or re-set): en-fy8-9-L3-01.png (top, text paragraphs, solution); opened the top 760 px of each in the contact montages /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/m-en-0.png and m-en-3.png (solution parts below not opened for these).
-- Same checks by script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's own screenshot list was empty and was not used; answers.py and solutions.md read as source only.
+- Contact-sheet level triage skipped; opened open-exercise captures at 1280 px (fy8-1 L2-3, fy8-5 L2-5, fy8-7 1, fy8-13 L3-4, fy8-16 L2-6): aligned blocks, equals signs aligned, sentence marks inside the last row, no clipping, layout intact.
+- No 390 px open-exercise capture exists in the packet (only stage-exercises-390); the other formulas of this lesson were checked from the source breaks, not from a capture.
+- Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

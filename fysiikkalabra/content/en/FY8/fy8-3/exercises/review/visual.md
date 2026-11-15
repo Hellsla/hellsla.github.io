@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 811adecc5e47049e
-Mode: delta
-Round: 1
+CONTENT-HASH: 79b6515753764d4d
+SCOPE: delta reflow (long solution formulas set in aligned blocks)
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy8-3-L2-08 — inline \tfrac fractions (13.6 eV over n^2, hc over E_u-E_l) are small at 390 px in the task and feedback — set them as \frac in display or keep as is.
+(none)
 
 ## Checked
-- Own scratch script, 390 px, every feedback and solution open: captures /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/en-fy8-3-fy8-3-L2-08-0.png, -1.png, -2.png (all three tiles, new task fy8-3-L2-08 read in full).
-- Changed existing tasks L3-01 and L3-02 at 390 px: /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/oldsheet-en.png (task heads only: the new paragraph breaks read situation first, question last, units and decimal sign correct).
-- Standard captures review/shots/ were absent for this hash (packet: STALE or MISSING), so the scratch captures above are what I judged; not opened: any figure of the lesson itself (exercises-only review).
-- Text of the new task: situation first, question last, LaTeX units with thin space, decimal point correct; feedback and answer boxes open inside the card without horizontal overflow.
+- Contact-sheet level triage skipped; opened open-exercise captures at 1280 px (fy8-1 L2-3, fy8-5 L2-5, fy8-7 1, fy8-13 L3-4, fy8-16 L2-6): aligned blocks, equals signs aligned, sentence marks inside the last row, no clipping, layout intact.
+- No 390 px open-exercise capture exists in the packet (only stage-exercises-390); the other formulas of this lesson were checked from the source breaks, not from a capture.
+- Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

@@ -1,19 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: a6b297ea26647068
-Mode: delta
-Round: 1
+VERDICT: FAIL
+CONTENT-HASH: 073e9ceab48f9389
+SCOPE: delta reflow (long solution formulas set in aligned blocks)
 
 ## Blocking
-(none)
+- [Major] solutions.md line 282 (the fy8-4 solution with the sum of squares) — the row break falls inside the product `9.319 \cdot 8.863` in a parenthesis: `... + 9.319` ends one row and `\cdot 8.863)` starts the next — a break inside a term is not at a meaningful boundary and the next row reads as a stray product — break before a `+` or a `-`, never between the factors of a term: put `+ 9.319 \cdot 8.863)` on the second row
 
 ## Polish
-- [Minor] fy8-4-L2-08 feedback — inline \tfrac{hc}{\lambda} and \tfrac{h}{\lambda} are small at 390 px — acceptable.
+(none)
 
 ## Checked
-- Own scratch script, 390 px, every feedback and solution open: captures /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/en-fy8-4-fy8-4-L2-08-0.png, -1.png, -2.png (all three tiles, new task fy8-4-L2-08 read in full).
-- Changed existing tasks L3-01 and L3-03 at 390 px: /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/oldsheet-en.png (task heads only: the new paragraph breaks read situation first, question last, units and decimal sign correct).
-- Standard captures review/shots/ were absent for this hash (packet: STALE or MISSING), so the scratch captures above are what I judged; not opened: any figure of the lesson itself (exercises-only review).
-- Text of the new task: situation first, question last, LaTeX units with thin space, decimal point correct; feedback and answer boxes open inside the card without horizontal overflow.
+- Contact-sheet level triage skipped; opened open-exercise captures at 1280 px (fy8-1 L2-3, fy8-5 L2-5, fy8-7 1, fy8-13 L3-4, fy8-16 L2-6): aligned blocks, equals signs aligned, sentence marks inside the last row, no clipping, layout intact.
+- No 390 px open-exercise capture exists in the packet (only stage-exercises-390); the other formulas of this lesson were checked from the source breaks, not from a capture.
+- Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 3 · Finnish 5 · accessibility 4
