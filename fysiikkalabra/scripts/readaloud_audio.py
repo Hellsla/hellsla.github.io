@@ -64,10 +64,12 @@ def integer(n):
     """The nominative of a whole number, written out (up to 10^12)."""
     if n == 0: return "nolla"
     parts = []
-    for size, one, many in ((10**9, "miljardi", "miljardia"), (10**6, "miljoona", "miljoonaa"), (1000, "tuhat", "tuhatta")):
+    for size, one, many in ((10**9, "miljardi", "miljardia"), (10**6, "miljoona", "miljoonaa")):
         k, n = divmod(n, size)
         if k: parts.append(one if k == 1 else below_thousand(k) + " " + many)
-    if n: parts.append(below_thousand(n))
+    k, n = divmod(n, 1000)                         # thousands and the rest are one word: kaksituhattakaksikymmentäkaksi
+    tail = ("tuhat" if k == 1 else below_thousand(k) + "tuhatta" if k else "") + (below_thousand(n) if n else "")
+    if tail: parts.append(tail)
     return " ".join(parts)
 
 
@@ -96,8 +98,10 @@ def spoken_text(text):
     """(the text sent to the voice, for each word of the page the (first, last) character of its spoken words)."""
     out, spans = "", []
     for tok in text.split():
+        tok = tok.replace("\u2060", "")
+        if not tok: continue
         w = spoken(tok)
-        glue = not out or re.fullmatch(r"[.,:;!?)]+|:\w+", tok) is not None   # "metriä ." → "metriä.", "AU :n" → "AU:n"
+        glue = not out or w == "," or re.fullmatch(r"[.,:;!?)]+|:\w+", tok) is not None   # "metriä ." → "metriä.", "AU :n" → "AU:n"
         if out and not glue: out += " "
         a = len(out)
         out += w
