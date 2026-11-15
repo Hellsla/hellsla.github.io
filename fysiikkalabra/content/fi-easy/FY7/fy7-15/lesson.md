@@ -416,7 +416,7 @@ Myös monien puhelinten näyttöjen pinnassa on polarisaattorikalvo, joten näyt
 
 ## Kaava: Malusin laki ja Brewsterin laki
 
-**Syventävä osio.** Malusin ja Brewsterin lait syventävät luvun aihetta. Ydinpolulla riittää ymmärtää edellä kuvattu malli ilman laskuja: miten polarisaattori ja heijastus polarisoivat valoa. Tämän osion laskut ovat syventäviä. Myös luvun esimerkki ja näihin lakeihin liittyvät tehtävät ovat syventäviä.
+**Syventävä osio.** Malusin ja Brewsterin lait syventävät luvun aihetta. Ydinpolulla riittää ymmärtää edellä kuvattu malli ilman laskuja: miten polarisaattori ja heijastus polarisoivat valoa. Tämän osion laskut ovat syventäviä. Myös luvun esimerkki on syventävä, samoin tehtävät, jotka on merkitty syventäviksi.
 
 ### Malusin laki
 Polarisoituneen valon sähkökentän amplitudi on $E_0$. Valo tulee analysaattoriin, jonka läpäisysuunta on kulmassa $\theta$ valon polarisaatiosuuntaan nähden. Sähkökentän läpäisysuuntainen komponentti $E_0 \cos\theta$ pääsee läpi. Kohtisuora komponentti $E_0 \sin\theta$ absorboituu.
