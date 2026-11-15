@@ -49,6 +49,12 @@ Kohdat 6 ja 8l voivat jatkua; #593 (fy8-2) yhdistää mainin ja ajaa `check_layo
 
 ## 5c. ElevenLabs-ääneenluku FY1 ja FY2 (opettaja 2026-11-15)
 
+Varattu: claude/elevenlabs-readaloud
+
+Tilanne 2026-11-15 (PR #598 suljettu, jatkuu uudessa PR:ssä haarasta claude/readaloud-recorded): ääneksi valittu Oskari - Finnish;
+`flSpeech.blocks()` lukee käsitekortin termin; FY1:n luvut fy1-1…fy1-8 on äänitetty. Opettajan päätös: mp3-tiedostot eivät kuulu
+päärepoon vaan repoon Hellsla/ruukkilabra-audio (kuten mallit); päärepossa on vain manifestit. FY2 odottaa opettajan päätöstä.
+
 Suomenkielisten FY1- ja FY2-lukujen Kuuntele-nappi soittaa etukäteen tehdyn ElevenLabs-äänitteen; muut kielet ja kurssit
 jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md, testit): ajetaan yksin, 5b:n (#594) jälkeen.
 - Äänitteet tehdään skriptillä (`scripts/`), ei koskaan oppilaan selaimesta. API-avain on ympäristön network secret
@@ -272,6 +278,18 @@ Poistetaan vain otsikoista. Jos sulkeissa on muutakin, se jää (esim. "(esimerk
 "(energiat NNDC NuDat 3)"). Tehtävätekstin maininnat (noin 18) ja taulukon alla oleva lähderivi eivät muutu. Tehdään
 kohdan 8k `teacher-text`-kategorialla (opettajan nimenomainen hyväksyntä tälle mekaaniselle muutokselle), jotta
 katselmoinnit kulkevat muutoksen yli. Jaettu muutos (`scripts/reviews.py` ja kaikki kurssit), ajetaan yksin, sim PR 3:n (#591) jälkeen.
+
+## 8m. Liukukitka, ei liikekitka (opettaja 2026-11-15)
+
+Opettaja 2026-11-15: "pitää olla liukukitka". Termi vaihdetaan koko sivustolla: liikekitka → liukukitka,
+liikekitkakerroin → liukukitkakerroin (ja taivutusmuodot), `glossary.json`, käsitekortit, lukujen tekstit, tehtävät,
+ratkaisut ja kuvien tekstit kolmella kielellä (en: sliding friction / coefficient of sliding friction).
+Lepokitkan termit samalla (opettaja 2026-11-15): kun kappale on levossa, kitka on **lepokitka**; sen suurin arvo
+(kappale on juuri lähtemässä liikkeelle) on **täysin kehittynyt lepokitka eli lähtökitka**, ja sen kerroin on
+lepokitkakerroin. Yhtenäistetään nykyiset muodot (esim. "suurin lepokitka", "maksimilepokitka") tähän; en: static
+friction / maximum (fully developed) static friction. Esiintymiä fi:ssä
+noin 190 (FY4 17 tiedostoa, FY5 2, FY9 6). Merkitys ei muutu, mutta teksti muuttuu, joten katselmointi `reviews.py scope`n
+mukaan. Jaettu (glossary.json), ajetaan yksin. FY9:n osuus tehdään tunnistuskaavioiden kanssa (9c, #602).
 
 ## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
 
