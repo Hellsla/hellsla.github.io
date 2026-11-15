@@ -370,3 +370,95 @@ $$, sama kuin hyötysuhteiden tulo. Noin neljännes energiasta muuttuu putkissa,
 
 ### Hyväksytään myös
 - c-kohdan energia kolmella merkitsevällä numerolla $289\,\text{MWh}$ ja kokonaishyötysuhde $74{,}8\,\%$.
+
+## fy9-energia-s7
+
+### a)
+**Annettu:** aineiston kaaviosta (tarkistettu 16.11.2026) kolmen auton ilmoitettu toimintamatka $s_\text{ilm}$ ja mitattu toimintamatka $s_\text{mit}$: Hyundai Inster $360\,\text{km}$ ja $256\,\text{km}$, Tesla Model Y $629\,\text{km}$ ja $359\,\text{km}$, Lucid Air $960\,\text{km}$ ja $520\,\text{km}$. Jos valitsit kaaviosta muut autot, lukusi ovat toiset, mutta ratkaisutapa on sama.
+**Kysytty:** kuinka monta prosenttia mitattu toimintamatka poikkeaa ilmoitetusta, ja mitä vertailu osoittaa
+**Periaate:** Suhteellinen ero kertoo, kuinka suuri osa vertailuarvosta ero on. Vertailuarvo on ilmoitettu toimintamatka, koska kysytään poikkeamaa siitä. Ero on negatiivinen, kun mitattu matka on ilmoitettua lyhyempi.
+**Kaava:** Ero on $\Delta s = s_\text{mit} - s_\text{ilm}$, ja suhteellinen ero on $\dfrac{\Delta s}{s_\text{ilm}} = \dfrac{s_\text{mit} - s_\text{ilm}}{s_\text{ilm}}$
+**Muunnokset:** Matkat ovat kilometreinä, joten yksiköt supistuvat. Desimaaliluku muutetaan prosenteiksi kertomalla sadalla: $-0{,}289 = -28{,}9\,\%$.
+**Sijoitus:** Hyundai Inster: $$
+\begin{aligned}
+\dfrac{\Delta s}{s_\text{ilm}} &= \dfrac{256\,\text{km} - 360\,\text{km}}{360\,\text{km}} \\
+&= \dfrac{-104\,\text{km}}{360\,\text{km}} \\
+&= -0{,}289
+\end{aligned}
+$$
+Tesla Model Y: $$
+\begin{aligned}
+\dfrac{\Delta s}{s_\text{ilm}} &= \dfrac{359\,\text{km} - 629\,\text{km}}{629\,\text{km}} \\
+&= \dfrac{-270\,\text{km}}{629\,\text{km}} \\
+&= -0{,}429
+\end{aligned}
+$$
+Lucid Air: $$
+\begin{aligned}
+\dfrac{\Delta s}{s_\text{ilm}} &= \dfrac{520\,\text{km} - 960\,\text{km}}{960\,\text{km}} \\
+&= \dfrac{-440\,\text{km}}{960\,\text{km}} \\
+&= -0{,}458
+\end{aligned}
+$$
+**Vastaus:** Mitattu toimintamatka oli Hyundai Insterillä $28{,}9\,\%$, Tesla Model Y:llä $42{,}9\,\%$ ja Lucid Airilla $45{,}8\,\%$ ilmoitettua lyhyempi, eli noin $29\,\%$, $43\,\%$ ja $46\,\%$. Kolme merkitsevää numeroa vastaa kaaviosta luettuja matkoja, ja kokonaiset prosentit riittävät vertailuun. Vertailu osoittaa, että jokainen auto ajoi pakkasessa selvästi ilmoitettua lyhyemmän matkan ja että poikkeama vaihteli autosta toiseen noin $30\,\%$:sta lähes puoleen.
+**Järkevyys:** Kolmen auton poikkeamien keskiarvo on $39{,}2\,\%$, lähellä aineiston ilmoittamaa kaikkien autojen keskiarvoa $38\,\%$. Yksi valituista autoista on keskiarvon alapuolella ja kaksi sen yläpuolella, kuten pitääkin, kun mukana on sekä lyhyen että pitkän toimintamatkan autoja.
+
+### b)
+**Annettu:** käytettävissä oleva akkuenergia $E = 75\,\text{kWh}$, toimintamatka leudolla säällä $s = 450\,\text{km}$, vertailumatka $s_{100} = 100\,\text{km}$; aineistosta (tarkistettu 16.11.2026) toimintamatkan keskimääräinen lyheneminen $38\,\%$
+**Kysytty:** energia, jonka auto kuluttaa sadalla kilometrillä leudolla säällä, $E_{100}$, ja pakkasella, $E_{100,\text{k}}$; arvio oletuksesta, että akusta saadaan sama energia
+**Periaate:** Keskimääräinen kulutus tarkoittaa, että energiaa kuluu jokaisella kilometrillä yhtä paljon, joten kulunut energia on suoraan verrannollinen matkaan. Energia säilyy: akusta saatava energia $E$ riittää matkaan $s$ (luku *Energialajit ja energian säilyminen*). Pakkasella energian oletetaan olevan sama, mutta se riittää lyhyempään matkaan $s_\text{k}$.
+**Kaava:** $\dfrac{E_{100}}{s_{100}} = \dfrac{E}{s}$, joten $E_{100} = \dfrac{E\,s_{100}}{s}$. Pakkasella matka on $s_\text{k} = (1 - 0{,}38)\,s$ ja $E_{100,\text{k}} = \dfrac{E\,s_{100}}{s_\text{k}}$.
+**Muunnokset:** $38\,\% = 0{,}38$. Energia pysyy kilowattitunteina ja matkat kilometreinä, joten kilometrit supistuvat.
+**Sijoitus:** $$
+\begin{aligned}
+E_{100} &= \dfrac{75\,\text{kWh} \cdot 100\,\text{km}}{450\,\text{km}} \\
+&= 16{,}67\,\text{kWh} \\
+s_\text{k} &= 0{,}62 \cdot 450\,\text{km} = 279\,\text{km} \\
+E_{100,\text{k}} &= \dfrac{75\,\text{kWh} \cdot 100\,\text{km}}{279\,\text{km}} \\
+&= 26{,}88\,\text{kWh}
+\end{aligned}
+$$
+**Vastaus:** Kulutus on leudolla säällä noin $17\,\text{kWh}$ ja pakkasella noin $27\,\text{kWh}$ sataa kilometriä kohti, kaksi merkitsevää numeroa kuten akkuenergia $75\,\text{kWh}$ ja lyheneminen $38\,\%$. Oletus ei pidä tarkasti paikkaansa: kylmästä akusta saadaan vähemmän energiaa kuin lämpimästä. Osa toimintamatkan lyhenemisestä johtuu siis pienemmästä energiasta eikä kulutuksen kasvusta, joten todellinen kulutus kasvaa vähemmän kuin malli antaa.
+**Järkevyys:** Kulutus kasvaa mallissa kertoimella $\tfrac{1}{0{,}62} \approx 1{,}6$ eli enemmän kuin $38\,\%$, koska sama energia jaetaan lyhyemmälle matkalle. Aineiston mitatut kulutukset $21{,}2\,\text{kWh}$ ja $21{,}6\,\text{kWh}$ sataa kilometriä kohti ovat samaa suuruusluokkaa mutta pienempiä kuin mallin $27\,\text{kWh}$. Autot ovat eri, joten vertailu on suuntaa antava, mutta se sopii oletuksen rajoitukseen. Energia matkaa kohti on myös voima, koska $W = Fs$: $$
+\begin{aligned}
+\dfrac{E}{s} &= \dfrac{75 \cdot 1000\,\text{W} \cdot 3600\,\text{s}}{450 \cdot 1000\,\text{m}} \\
+&= 600\,\text{N}
+\end{aligned}
+$$
+Se on henkilöautoa maantienopeudessa vastustavien voimien suuruusluokkaa.
+
+### c)
+**Kysytty:** miksi sähköauton energiankulutus kilometriä kohti kasvaa pakkasella, selitettynä lämpöopin, sähköopin ja mekaniikan avulla
+**Periaate:** Energia säilyy, ja kaikki auton käyttämä energia otetaan samasta akusta. Lämpö siirtyy sitä nopeammin, mitä suurempi lämpötilaero on (luku *Lämmön siirtyminen, energiatasapaino ja ilmastonmuutos*). Sähkölaitteen teho on $P = UI$, ja resistanssissa muuttuu sisäenergiaksi teho $P = RI^2$ (luvut *Sähköteho ja vastuksen lämpeneminen* ja *Lähdejännite ja sisäinen resistanssi*). Tasaisella nopeudella moottori tekee työn $W = Fs$ vastusvoimia vastaan (luku *Ilmanvastus ja putoaminen ilmassa*).
+**Mallivastaus:** Pakkasella sama akku antaa energiaa useampaan kohteeseen, ja auto liikkuu suurempia vastusvoimia vastaan.
+- *Lämpöoppi.* Lämpö siirtyy lämpimästä matkustamosta ja akusta kylmään ympäristöön sitä nopeammin, mitä suurempi lämpötilaero on. Jos matkustamossa on $20\,{}^\circ\text{C}$, ero ulkoilmaan on Oslon $-7\,{}^\circ\text{C}$:ssa $27\,\text{K}$ ja Folldalin $-32\,{}^\circ\text{C}$:ssa $52\,\text{K}$ eli lähes kaksinkertainen. Lämpötilan ylläpito vaatii lämmitystehon, ja sähköautossa se otetaan ajoakusta. Polttomoottoriautossa matkustamo lämmitetään moottorin sisäenergialla, joka siirtyisi muuten lämpönä ympäristöön. Sähkömoottorin hyötysuhde on suuri, joten tällaista energiaa on vähän.
+- *Sähköoppi.* Lämmitin ottaa akusta tehon $P = UI$ koko ajon ajan, joten siihen kuluu energia $E = Pt$. Jos lämmitysteho on esimerkiksi $3{,}0\,\text{kW}$ ja ajo kestää $5{,}0\,\text{h}$, lämmitys vie $15\,\text{kWh}$ eli viidesosan $75\,\text{kWh}$:n akusta. Lisäksi kylmän akun sisäinen resistanssi $R_\text{s}$ on suurempi. Akun sisällä muuttuu sisäenergiaksi teho $P = R_\text{s}I^2$, ja sisäisen resistanssin jännitehäviö $R_\text{s}I$ pienentää napajännitettä. Akusta saadaan siksi käyttöön vähemmän energiaa.
+- *Mekaniikka.* Tasaisella nopeudella moottorin on tehtävä työ $W = Fs$ vastusvoimia vastaan, joten energiaa kuluu kilometrillä sitä enemmän, mitä suuremmat vastusvoimat ovat. Kylmä ilma on tiheämpää: ideaalikaasun tilanyhtälön $pV = nRT$ mukaan samassa paineessa ainemäärä tilavuutta kohti on $\tfrac{n}{V} = \tfrac{p}{RT}$, eli $-20\,{}^\circ\text{C}$:ssa noin $16\,\%$ suurempi kuin $+20\,{}^\circ\text{C}$:ssa. Auto syrjäyttää silloin joka metrillä suuremman massan ilmaa, joten ilmanvastus on suurempi. Lumi, sohjo ja pehmeät talvirenkaat kasvattavat vierimisvastusta.
+
+Lämmitykseen ja akun sisäenergiaksi kulunut energia sekä suurempi työ vastusvoimia vastaan otetaan kaikki samasta akusta. Ajamiseen jää siksi vähemmän energiaa kilometriä kohti kuin leudolla säällä, ja toimintamatka lyhenee.
+
+### d)
+**Kysytty:** miksi pisimmälle ajaneen auton suurimmasta poikkeamasta ei voi päätellä, että auto kestäisi pakkasta muita huonommin
+**Periaate:** Kahta mittaustulosta voi verrata vain, jos ne on mitattu samoissa olosuhteissa. Jos olosuhteet muuttuvat samalla kuin tutkittava kohde, erosta ei voi päätellä, kumpi sen aiheutti (luku *Mittaaminen ja mittauksen luotettavuus*).
+**Mallivastaus:** Autot eivät ajaneet samoissa olosuhteissa. Aineiston mukaan (tarkistettu 16.11.2026) lämpötila laski reitin varrella Oslon noin $-7\,{}^\circ\text{C}$:sta Folldalin $-32\,{}^\circ\text{C}$:seen. Lyhyen toimintamatkan Hyundai Inster pysähtyi jo kohdassa, jossa oli $-16\,{}^\circ\text{C}$, joten se ajoi koko matkansa reitin leudommassa alkupäässä. Lucid Air ajoi $520\,\text{km}$ eli pisimmälle, joten se ajoi suuren osan matkastaan reitin kylmimmällä osuudella ja oli pakkasessa pisimpään. Sen lämmitys otti akusta energiaa pisimmän ajan ja suurimmalla lämpötilaerolla. Suuri prosentti kertoo siis ainakin osittain olosuhteista eikä vain autosta. Autoja ei voi asettaa pakkasenkestävyyden mukaiseen järjestykseen vertaamalla prosentteja suoraan.
+
+### e)
+**Kysytty:** miksi yksi talvitesti ei riitä ennustamaan tietyn auton toimintamatkaa kaikissa talviolosuhteissa, ja miten testiä voisi parantaa
+**Periaate:** Yksi mittaus kertoo tuloksen vain niissä olosuhteissa, joissa se tehtiin. Luotettava koe muuttaa yhtä muuttujaa kerrallaan, pitää muut vakioina ja toistaa mittaukset, jotta satunnaisen vaihtelun suuruus nähdään (luku *Mittaaminen ja mittauksen luotettavuus*).
+**Mallivastaus:** Testi on yksi ajo yhdellä reitillä yhtenä päivänä, ja kutakin mallia oli mukana yksi auto.
+- *Olosuhteet vaihtelevat.* Kulutukseen vaikuttavat lämpötila, tuuli, tien pinta (lumi, sohjo tai kuiva asfaltti), nopeus, reitin nousut, akun ja matkustamon esilämmitys, lämmityksen asetukset, kuorma ja ajotapa. Toisena talvipäivänä ne ovat toiset. Aineisto näyttää vaikutuksen suuruuden: vuoden 2025 testissä, jossa lämpötila oli $-6\,{}^\circ\text{C}$:n ja $+8\,{}^\circ\text{C}$:n välillä, keskimääräinen poikkeama oli $18\,\%$, ja nyt se oli $38\,\%$.
+- *Hajontaa ei tunneta.* Jokainen auto ajettiin vain kerran, joten ei tiedetä, kuinka paljon tulos vaihtelisi, jos sama auto ajaisi saman reitin uudelleen. Myös saman mallin eri yksilöt voivat poiketa toisistaan.
+- *Parempi testi.* Kaikki autot ajettaisiin samassa lämpötilassa ja samalla nopeudella, esimerkiksi samaa lenkkiä toistaen tai kylmähuoneessa, ja esilämmitys ja sisälämpötila olisivat kaikilla samat. Mittaus tehtäisiin useassa lämpötilassa ja toistettaisiin. Silloin saataisiin toimintamatka lämpötilan funktiona ja tuloksen hajonta.
+
+Testi antaa silti käyttökelpoisen suuruusluokan: kovalla pakkasella toimintamatka voi olla noin kolmanneksen tai lähes puolet ilmoitettua lyhyempi.
+
+### Yleisiä virheitä
+- a-kohdassa ero jaetaan mitatulla toimintamatkalla. Esimerkiksi Insterille saadaan silloin $\tfrac{104\,\text{km}}{256\,\text{km}} \approx 41\,\%$, mikä kertoo, kuinka paljon ilmoitettu matka on mitattua pidempi.
+- b-kohdassa pakkaskulutus lasketaan kertomalla $16{,}7\,\text{kWh}$ luvulla $1{,}38$, jolloin saadaan $23\,\text{kWh}$. Matka lyhenee $38\,\%$, joten energia jaetaan matkalla $0{,}62 \cdot 450\,\text{km}$.
+- c-kohdassa sanotaan, että energiaa ”häviää” tai että se ”muuttuu lämmöksi”. Energia säilyy: se muuttuu akun, ilman ja renkaiden sisäenergiaksi ja siirtyy lämpönä ympäristöön.
+- d- ja e-kohdassa prosentteja pidetään auton pysyvinä ominaisuuksina, vaikka autot ajoivat eri lämpötiloissa ja vain kerran.
+
+### Hyväksytään myös
+- a-kohdassa muut kuin taulukon autot, kun arvot on luettu lähteen kaaviosta ja lasku on oikein; tulokset voi antaa kokonaisina prosentteina ja positiivisina, kun sanotaan, että mitattu matka on lyhyempi.
+- b-kohdan tulokset kolmella merkitsevällä numerolla, $16{,}7\,\text{kWh}$ ja $26{,}9\,\text{kWh}$ sataa kilometriä kohti.
+- c-kohdassa myös muut perustellut syyt, esimerkiksi kylmän voiteluaineen suurempi kitka voimansiirrossa.

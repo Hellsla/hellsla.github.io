@@ -1,5 +1,5 @@
 {
-  "intro": "Näissä kuudessa ylioppilaskokeen tyylisessä tehtävässä tarvitset tunnin asioita: energiaa, tehoa ja hyötysuhdetta. Ratkaise tehtävät samalla tavalla kuin kokeessa. Perustele, miksi valitset tietyn mallin. Ratkaise kysytty suure kaavasta ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "intro": "Näissä seitsemässä ylioppilaskokeen tyylisessä tehtävässä tarvitset tunnin asioita: energiaa, tehoa ja hyötysuhdetta. Ratkaise tehtävät samalla tavalla kuin kokeessa. Perustele, miksi valitset tietyn mallin. Ratkaise kysytty suure kaavasta ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Viimeinen tehtävä on soveltava aineistotehtävä. Sen lähde avautuu tehtävässä olevasta linkistä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
   "tasks": [
     {
       "id": "fy9-energia-s1",
@@ -701,6 +701,159 @@
         "transfer": "fy2-7",
         "concept": "fy2-1",
         "communication": "fy2-7"
+      }
+    },
+    {
+      "id": "fy9-energia-s7",
+      "title": "Miksi sähköauton toimintamatka lyhenee pakkasessa?",
+      "source": "statistics",
+      "source_note": "NAF ja Motor, El Prix vinter 2026 (https://www.naf.no/elbil/elprix-nytt/elprix-vinter-2026). Tarkistettu 16.11.2026.",
+      "skills": [
+        "fy2-3",
+        "fy3-12",
+        "fy4-14",
+        "fy6-6",
+        "fy6-8",
+        "fy1-3"
+      ],
+      "text": "Norjan autoliitto NAF ja Motor-lehti tekivät talvitestin 28.1.2026. Testissä oli $24$ sähköautoa. Autot lähtivät täydellä akulla Oslosta pohjoiseen tunturialueelle. Jokaista autoa ajettiin niin kauan, että se ei enää jaksanut kulkea. Toimintamatka tarkoittaa matkaa, jonka auto pääsee yhdellä latauksella. Avaa [testin tulossivu](https://www.naf.no/elbil/elprix-nytt/elprix-vinter-2026) ja etsi kaavio *Så langt kjørte bilene*. Sivu on norjankielinen. Tarvitset näitä sanoja: *rekkevidde* = toimintamatka, *oppgitt* = ilmoitettu, *målt* = mitattu, *avvik* = poikkeama eli ero. Ilmoitettu toimintamatka on valmistajan WLTP-arvo. Se mitataan laboratoriossa huoneenlämmössä.\n\nAineiston mukaan (tarkistettu 16.11.2026):\n\n- Lämpötila laski reitin varrella. Oslossa oli noin $-7\\,{}^\\circ\\text{C}$. Kylmin kohta oli Folldal, jossa oli $-32\\,{}^\\circ\\text{C}$.\n- Autojen mitattu toimintamatka oli keskimäärin $38\\,\\%$ lyhyempi kuin ilmoitettu. Vuoden 2025 talvitestissä lämpötila oli $-6\\,{}^\\circ\\text{C}$:n ja $+8\\,{}^\\circ\\text{C}$:n välillä. Silloin keskimääräinen poikkeama oli $18\\,\\%$.\n- Hyundai Inster pysähtyi kohdassa, jossa lämpötila oli $-16\\,{}^\\circ\\text{C}$. Lucid Air ajoi pisimmälle kaikista autoista.\n- Tesla Model Y:n mitattu kulutus oli $21{,}2\\,\\text{kWh}$ sataa kilometriä kohti. Lucid Airin mitattu kulutus oli $21{,}6\\,\\text{kWh}$ sataa kilometriä kohti.\n\n| Auto | Ilmoitettu (WLTP) | Mitattu |\n|---|---|---|\n| Hyundai Inster | $360\\,\\text{km}$ | $256\\,\\text{km}$ |\n| Tesla Model Y | $629\\,\\text{km}$ | $359\\,\\text{km}$ |\n| Lucid Air | $960\\,\\text{km}$ | $520\\,\\text{km}$ |\n\nAkun sisäinen resistanssi on kylmänä suurempi kuin lämpimänä.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Valitse kolme sähköautoa lähteen kaaviosta, tai käytä taulukon autoja. Laske jokaiselle autolle, kuinka monta prosenttia mitattu toimintamatka poikkeaa ilmoitetusta. Kerro sitten, mitä vertailu osoittaa.",
+          "criteria": [
+            {
+              "text": "Poimii aineistosta kolmen auton ilmoitetun ja mitatun toimintamatkan. Esittää ne selkeästi, esimerkiksi taulukkona.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Ero jaetaan ilmoitetulla toimintamatkalla: $\\dfrac{s_\\text{mit} - s_\\text{ilm}}{s_\\text{ilm}}$. Taulukon autoilla tulokset ovat noin $-29\\,\\%$, $-43\\,\\%$ ja $-46\\,\\%$. Muilla autoilla luvut ovat toiset."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Jokainen auto ajoi pakkasessa selvästi lyhyemmän matkan kuin ilmoitettu. Poikkeama oli eri autoilla erilainen: noin $30\\,\\%$:sta lähes puoleen."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "Sähköauton käytettävissä oleva akkuenergia on $75\\,\\text{kWh}$. Auton toimintamatka leudolla säällä on $450\\,\\text{km}$. Laske auton keskimääräinen energiankulutus sataa kilometriä kohti. Laske myös kulutus pakkasella. Oleta, että toimintamatka on $38\\,\\%$ lyhyempi, kuten testissä keskimäärin, ja että akusta saadaan sama energia. Arvioi lopuksi, kuinka hyvin tämä oletus pitää paikkansa.",
+          "answer": [
+            {
+              "name": "E100",
+              "value": 16.7,
+              "unit": "kWh/100 km",
+              "tolerance": 0.03
+            },
+            {
+              "name": "E100k",
+              "value": 26.9,
+              "unit": "kWh/100 km",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Energia on verrannollinen matkaan: $E_{100} = \\dfrac{E\\,s_{100}}{s}$. Pakkasella matka on $s_\\text{k} = (1 - 0{,}38)\\,s$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_{100} \\approx 16{,}7\\,\\text{kWh}$, $s_\\text{k} = 279\\,\\text{km}$ ja $E_{100,\\text{k}} \\approx 26{,}9\\,\\text{kWh}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Noin $17\\,\\text{kWh}$ ja $27\\,\\text{kWh}$ sataa kilometriä kohti. Tuloksessa on kaksi merkitsevää numeroa kuten akkuenergiassa $75\\,\\text{kWh}$."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Kylmästä akusta saadaan vähemmän energiaa kuin lämpimästä. Siksi osa toimintamatkan lyhenemisestä johtuu pienemmästä energiasta eikä kulutuksen kasvusta. Todellinen kulutus kasvaa vähemmän kuin malli antaa."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Selitä, miksi sähköauton energiankulutus kilometriä kohti kasvaa pakkasella. Käytä selityksessä lämpöoppia, sähköoppia ja mekaniikkaa.",
+          "criteria": [
+            {
+              "text": "Lämpöoppi: lämpö siirtyy matkustamosta ja akusta ympäristöön sitä nopeammin, mitä suurempi lämpötilaero on. Siksi lämpötilan ylläpito vaatii lämmitystehon. Sähköautossa se otetaan ajoakusta. Polttomoottoriautossa käytetään moottorin sisäenergiaa, joka siirtyisi muuten lämpönä ympäristöön.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Sähköoppi: lämmitin ottaa akusta tehon $P = UI$ koko ajon ajan. Kylmän akun sisäinen resistanssi on suurempi. Se kasvattaa tehoa $P = R_\\text{s}I^2$, joka muuttuu akun sisäenergiaksi, ja pienentää napajännitettä.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Mekaniikka: kylmä ilma on tiheämpää, joten ilmanvastus on suurempi. Lumi, sohjo ja talvirenkaat kasvattavat vierimisvastusta. Tasaisella nopeudella työ $W = Fs$ vastusvoimia vastaan kasvaa jokaisella kilometrillä.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Kokoaa selityksen energian säilymisellä: kaikki energia otetaan samasta akusta. Lämmitykseen ja häviöihin kuluva energia on siksi poissa ajamisesta, ja toimintamatka lyhenee.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 2,
+          "text": "Testissä pisimmälle ajanut auto menetti suurimman osuuden ilmoitetusta toimintamatkastaan. Tästä ei voi päätellä, että se kestää pakkasta huonommin kuin muut autot. Selitä aineiston avulla, miksi ei.",
+          "criteria": [
+            {
+              "text": "Käyttää aineistoa: lämpötila laski reitin varrella $-7\\,{}^\\circ\\text{C}$:sta $-32\\,{}^\\circ\\text{C}$:seen. Pisimmälle ajanut auto ajoi siksi suuren osan matkastaan kylmimmällä osuudella ja oli pakkasessa pisimpään. Lyhyen toimintamatkan auto pysähtyi jo $-16\\,{}^\\circ\\text{C}$:n kohdalla.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Autot eivät ajaneet samoissa olosuhteissa. Siksi poikkeama ei ole pelkästään auton ominaisuus, eikä autoja voi asettaa paremmuusjärjestykseen prosenttien perusteella."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 2,
+          "text": "Arvioi, miksi tämän yhden talvitestin perusteella ei voi ennustaa tietyn sähköauton toimintamatkaa kaikissa talviolosuhteissa. Kerro myös, miten testiä pitäisi muuttaa, jotta tulos olisi luotettavampi.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Nimeää ainakin kolme tekijää, jotka muuttavat kulutusta ja jotka ovat erilaisia eri talvina, eri reiteillä ja eri kuljettajilla. Esimerkiksi lämpötila (vuoden 2025 testissä poikkeama oli $18\\,\\%$, nyt $38\\,\\%$), tuuli, tien pinta, nopeus, reitin nousut, esilämmitys ja lämmityksen asetukset."
+            },
+            {
+              "text": "Toteaa, että jokainen auto ajettiin vain kerran. Siksi tulosten hajontaa eli vaihtelua ei tunneta. Ehdottaa parannuksen: kaikille autoille samat, vakioidut olosuhteet, useita lämpötiloja ja toistot.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy6-16",
+        "math": "fy2-3",
+        "concept": "fy6-8",
+        "communication": "fy2-1",
+        "experiment": "fy1-3"
       }
     }
   ]
