@@ -1469,14 +1469,15 @@ def _flat(inner, json_view):
     return " ".join(inner.split())
 
 
-def chain_view(text, rel=""):
+def chain_view(text, rel="", outside=True):
     """`text` with every calculation chain put in one form: a run of formulas that only whitespace separates (a chain broken
     into rows by hand: `$a = b$` + a line break + `$= c$`) is one formula, an aligned block (`$$\\begin{aligned} a &= b \\\\
     &= c \\end{aligned}$$`, an inline formula lifted into a display formula) is its rows in one line, and whitespace is
     collapsed everywhere. Two texts with the same chain_view differ only in line breaks, in how a chain is divided into
     rows or in its delimiters, \\begin{aligned}, & and \\\\: every number, sign, unit and symbol is the same and in the same
     order, and every word outside the formulas is as it was (category "reflow", teacher 2026-11-15). In a .json view a
-    line break is the two characters \\n, so that counts as whitespace too."""
+    line break is the two characters \\n, so that counts as whitespace too. `outside` False leaves the text between the formulas
+    exactly as it is (its lines stay lines, so that what else changed can be classified by line)."""
     js = rel.endswith(".json")
     ws = re.compile(r"(?:\s|(?<!\\)\\n)+") if js else re.compile(r"\s+")
     gap = re.compile(r"(?:\s|(?<!\\)\\n)*\Z") if js else re.compile(r"\s*\Z")
@@ -1486,10 +1487,10 @@ def chain_view(text, rel=""):
     for m in MATH_SPAN.finditer(text):
         between = text[pos:m.start()]
         if run and not gap.match(between): flush()
-        if not run: out.append(ws.sub(" ", between))
+        if not run: out.append(ws.sub(" ", between) if outside else between)
         run.append(_flat(m.group(0).strip("$"), js))
         pos = m.end()
-    flush(); out.append(ws.sub(" ", text[pos:]))
+    flush(); out.append(ws.sub(" ", text[pos:]) if outside else text[pos:])
     return "".join(out)
 
 
@@ -1558,7 +1559,8 @@ def changes(folder, base, part="lesson", split=False, new=None):
             na, nb = chain_view(a, rel), chain_view(b, rel)
             if (na, nb) != (a, b) and layout_marks(a) != layout_marks(b):   # a chain is re-broken when its formulas, display delimiters or aligned blocks change; a blank line or a break inside one formula is no re-break (and a stripped approved figure leaves such whitespace)
                 if na == nb: cats.add("reflow"); diff.append(f"--- {rel}: calculation chains only re-broken into rows"); continue
-                if len(_changed(a, b)) > len(_changed(na, nb)): cats.add("reflow"); a, b = na, nb   # some of the change is a re-break; classify what else changed as usual
+                ga, gb = chain_view(a, rel, False), chain_view(b, rel, False)   # the text between the formulas as it is: lines stay lines
+                if len(_changed(a, b)) > len(_changed(ga, gb)): cats.add("reflow"); a, b = ga, gb   # some of the change is a re-break; classify what else changed as usual
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base, new)); diff.append(f"--- {rel}: simulation assertions changed"); continue
         if not binary and presentation_change(old, new, rel):   # where or how the sim draws, the exact change of the file approved (one row for every language): the visual reviewer sees the diff
             cats.add("presentation-only"); n += 1
