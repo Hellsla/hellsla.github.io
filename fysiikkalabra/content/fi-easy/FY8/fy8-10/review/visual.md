@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d8706dd50482d0e5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 7b92fb753e2a6ae5
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Opened fy8-10 stage-selita-390-6 (390 px layout survived); the changed Q row in the Kaava line judged from source, the same block type seen at 1280 px in fy8-1.
+- Delta judged: formula lifted into an aligned block, first row the left-hand side alone; words, numbers and units unchanged.

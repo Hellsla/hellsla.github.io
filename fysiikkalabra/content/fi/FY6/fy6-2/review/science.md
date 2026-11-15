@@ -1,14 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 1f98286bb0445e33
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-
+CONTENT-HASH: c66f27034b63f0f5
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Yleismittari: terminals stated as those of the pictured meter; other meters differ, check markings and manual. Correct.
-- Mittari vaikuttaa piiriin: ammeter never across source terminals; school labs use teacher-instructed safe low-voltage sources. Consistent with the parallel-ammeter short-circuit explanation next to it.
-- Lint: no physics warnings.
+batch delta review: "virhe-arvio" to "virhearvio" in lesson.md (Kaava paragraph and the worked example's Tulos stage) and the inquiry numeric solution is a spelling fix only; the term still means the rounding of an uncertainty estimate and matches how the chapter uses virheraja and the measurement guardrails; recomputed 0,005 · 0,846 V + 2 · 0,001 V = 6,23 mV, giving 6 mV; no number, symbol or choice changed.

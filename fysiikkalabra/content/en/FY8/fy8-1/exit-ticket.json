@@ -1,7 +1,7 @@
 [
   {
     "q": "The frequency of radiation is $1.0 \\cdot 10^{15}\\,\\text{Hz}$. What is the energy of one photon?",
-    "a": "$E = hf = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 1.0 \\cdot 10^{15}\\,\\tfrac{1}{\\text{s}} = 6.6 \\cdot 10^{-19}\\,\\text{J}$, or about $4.1\\,\\text{eV}$."
+    "a": "$$\n\\begin{aligned}\nE &= hf \\\\\n&= 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\\\\n&\\cdot 1.0 \\cdot 10^{15}\\,\\tfrac{1}{\\text{s}} \\\\\n&= 6.6 \\cdot 10^{-19}\\,\\text{J}\n\\end{aligned}\n$$, or about $4.1\\,\\text{eV}$."
   },
   {
     "q": "A sodium plate ($W = 2.28\\,\\text{eV}$) is illuminated with yellow light, $\\lambda = 590\\,\\text{nm}$, and no electrons are released. Which helps: making the yellow light brighter or changing to blue light, $\\lambda = 470\\,\\text{nm}$? Why?",

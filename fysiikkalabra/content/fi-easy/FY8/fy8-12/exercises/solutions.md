@@ -44,9 +44,20 @@
 **Periaate:** Yksi fotoni voi ionisoida molekyylin vain, jos sen energia on vähintään ionisaatioenergia. Fotonin energia on $E = hf = \tfrac{hc}{\lambda}$, joten mitä pidempi aallonpituus, sitä pienempi energia. Pisin ionisoiva aallonpituus kuuluu fotonille, jonka energia on tasan ionisaatioenergia.
 **Kaava:** $E = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{E}$
 **Muunnokset:** $12{,}6\,\text{eV} = 12{,}6 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}0185 \cdot 10^{-18}\,\text{J}$, ja lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Sijoitus:** $\lambda = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{2{,}0185 \cdot 10^{-18}\,\text{J}} = 9{,}8412 \cdot 10^{-8}\,\text{m} = 98{,}412\,\text{nm}$
+**Sijoitus:** $$
+\begin{aligned}
+\lambda &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{2{,}0185 \cdot 10^{-18}\,\text{J}} \\
+&= 9{,}8412 \cdot 10^{-8}\,\text{m} \\
+&= 98{,}412\,\text{nm}
+\end{aligned}
+$$
 **Vastaus:** $98{,}4\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, koska ionisaatioenergiassa $12{,}6\,\text{eV}$ on kolme merkitsevää numeroa.
-**Järkevyys:** Aallonpituus on paljon lyhyempi kuin näkyvän valon aallonpituus $380$–$720\,\text{nm}$. Näkyvä valo ei siis ionisoi vettä, kuten pitää. Tarkistus: $1240\,\text{eV}\,\text{nm} : 12{,}6\,\text{eV} \approx 98\,\text{nm}$.
+**Järkevyys:** Aallonpituus on paljon lyhyempi kuin näkyvän valon aallonpituus $380$–$720\,\text{nm}$. Näkyvä valo ei siis ionisoi vettä, kuten pitää. Tarkistus: $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 12{,}6\,\text{eV} &\approx 98\,\text{nm}
+\end{aligned}
+$$.
 
 ## fy8-12-L2-01
 **Annettu:** pulssimäärä lähteen lähellä $N = 1260$, taustasäteilyn pulssimäärä $N_\text{t} = 72$, kumpikin ajassa $t = 3{,}00\,\text{min}$
@@ -96,7 +107,12 @@
 **Muunnokset:** $s_\beta = 3{,}6\,\text{m} = 360\,\text{cm}$, jotta radat ovat samassa yksikössä. Energiat ovat molemmat megaelektronivoltteina.
 **Sijoitus:** $\dfrac{E_\alpha s_\beta}{E_\beta s_\alpha} = \dfrac{5{,}49\,\text{MeV} \cdot 360\,\text{cm}}{1{,}0\,\text{MeV} \cdot 4{,}1\,\text{cm}} = \dfrac{1976{,}4}{4{,}1} = 482{,}05$
 **Vastaus:** noin $4{,}8 \cdot 10^{2}$ kertaa. Vastauksessa on kaksi merkitsevää numeroa, koska matkassa $4{,}1\,\text{cm}$ ja energiassa $1{,}0\,\text{MeV}$ on kaksi merkitsevää numeroa.
-**Järkevyys:** Alfahiukkanen muodostaa senttimetrillä noin $5{,}49 \cdot 10^{6} : 34 : 4{,}1 \approx 3{,}9 \cdot 10^{4}$ ioniparia. Beetahiukkanen muodostaa senttimetrillä noin $1{,}0 \cdot 10^{6} : 34 : 360 \approx 82$ ioniparia. Suhde on noin $480$. Siksi alfahiukkanen pysähtyy niin lyhyelle matkalle ja vaurioittaa soluja keskittyneesti.
+**Järkevyys:** Alfahiukkanen muodostaa senttimetrillä noin $$
+\begin{aligned}
+&5{,}49 \cdot 10^{6} : 34 : 4{,}1 \\
+&\approx 3{,}9 \cdot 10^{4}
+\end{aligned}
+$$ ioniparia. Beetahiukkanen muodostaa senttimetrillä noin $1{,}0 \cdot 10^{6} : 34 : 360 \approx 82$ ioniparia. Suhde on noin $480$. Siksi alfahiukkanen pysähtyy niin lyhyelle matkalle ja vaurioittaa soluja keskittyneesti.
 
 ## fy8-12-L3-02
 **Annettu:** pulssitaajuus ilman suojaa $R_0 = 2400\,\tfrac{1}{\text{min}}$, lyijyn $d_1 = 11{,}0\,\text{mm}$ takana $R_1 = 630\,\tfrac{1}{\text{min}}$, taustasäteily $R_\text{t} = 30\,\tfrac{1}{\text{min}}$
@@ -202,7 +218,12 @@ Lyijy ei ole tässä paras suoja, vaikka sen puoliintumispaksuus on pienin. Vesi
 **Muunnokset:** $t = 60\,\text{s}$ ja $1{,}5\,\% = 0{,}015$. Lopuksi $1\,\text{kBq} = 1000\,\text{Bq}$ ja $1\,\text{Bq} = 1\,\tfrac{1}{\text{s}}$.
 **Sijoitus:** a) Lähteen kanssa pulsseja on yhteensä $5050$ ja ilman lähdettä $130$. Keskiarvot ovat $\dfrac{5050}{5} = 1010$ ja $\dfrac{130}{5} = 26$, ja $R = \dfrac{1010 - 26}{60\,\text{s}} = \dfrac{984}{60\,\text{s}} = 16{,}4\,\tfrac{1}{\text{s}}$. b) $T = \left(\tfrac{1}{2}\right)^{8{,}0\,\text{mm} / 5{,}5\,\text{mm}} = \left(\tfrac{1}{2}\right)^{1{,}4545} = 0{,}3649$. c) $A = \dfrac{16{,}4\,\tfrac{1}{\text{s}}}{0{,}3649 \cdot 0{,}015} = \dfrac{16{,}4\,\tfrac{1}{\text{s}}}{0{,}005473} = 2997\,\text{Bq} = 3{,}0\,\text{kBq}$
 **Vastaus:** $3{,}0\,\text{kBq}$. Vastauksessa on kaksi merkitsevää numeroa kuten paksuudessa $8{,}0\,\text{mm}$ ja hyötysuhteessa $1{,}5\,\%$. Nettopulssitaajuus on $16{,}4\,\tfrac{1}{\text{s}}$ (a), ja seinän läpäisee noin $36\,\%$ fotoneista (b). Kohdassa d) todellinen aktiivisuus on suurempi, koska putki ei laske jokaista fotonia ja jokaiseen hajoamiseen ei liity yhtä fotonia.
-**Järkevyys:** Seinässä on $1{,}45$ puoliintumispaksuutta. Läpäisevä osuus on siksi lukujen $\tfrac{1}{2}$ ja $\tfrac{1}{4}$ välissä, kuten $0{,}36$. Takaisinlasku: $3000\,\text{Bq} \cdot 0{,}365 \cdot 0{,}015 = 16{,}4\,\tfrac{1}{\text{s}}$, kuten mitattiin. Kohdan d) perustelu: GM-putki havaitsee gammafotoneista vain pienen osan. Kaikkien putkeen osuvien fotonien laskeminen pulsseiksi aliarvioi siksi hajoamiset. Lisäksi cesium-137:n hajoamisista vain noin $85\,\%$ lähettää gammafotonin. Kumpikin oletus tekee arviosta liian pienen.
+**Järkevyys:** Seinässä on $1{,}45$ puoliintumispaksuutta. Läpäisevä osuus on siksi lukujen $\tfrac{1}{2}$ ja $\tfrac{1}{4}$ välissä, kuten $0{,}36$. Takaisinlasku: $$
+\begin{aligned}
+&3000\,\text{Bq} \cdot 0{,}365 \cdot 0{,}015 \\
+&= 16{,}4\,\tfrac{1}{\text{s}}
+\end{aligned}
+$$, kuten mitattiin. Kohdan d) perustelu: GM-putki havaitsee gammafotoneista vain pienen osan. Kaikkien putkeen osuvien fotonien laskeminen pulsseiksi aliarvioi siksi hajoamiset. Lisäksi cesium-137:n hajoamisista vain noin $85\,\%$ lähettää gammafotonin. Kumpikin oletus tekee arviosta liian pienen.
 
 ## fy8-12-L3-06
 **Annettu:** taulukon osuudet vedessä ja lyijyssä energioilla $0{,}05$–$20\,\text{MeV}$; tilanteet (1) $50\,\text{keV}$ pehmytkudoksessa, (2) $50\,\text{keV}$ lyijyssä, (3) $662\,\text{keV}$ vedessä, (4) $20\,\text{MeV}$ lyijyssä; parinmuodostuksen fotonin energia $E_\gamma = 5{,}0\,\text{MeV}$ ja $m_ec^2 = 0{,}511\,\text{MeV}$

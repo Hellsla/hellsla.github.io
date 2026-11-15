@@ -301,7 +301,7 @@ E &= E_1 + E_2 + \dots \\
 R_\text{s} &= R_{\text{s}1} + R_{\text{s}2} + \dots
 \end{aligned}
 ```
-missä $E_1$, $E_2$, … ovat yksittäisten paristojen lähdejännitteet ($\text{V}$) ja $R_{\text{s}1}$, $R_{\text{s}2}$, … niiden sisäiset resistanssit ($\Omega$). Taskulampun kolme sarjaan kytkettyä paristoa antavat noin $4{,}5\,\text{V}$. Väärin päin asetettu paristo vähentää ryhmän lähdejännitettä oman lähdejännitteensä verran. Sen sisäinen resistanssi lisätään silti muihin.
+missä $E_1$, $E_2$, … ovat yksittäisten paristojen lähdejännitteet ($\text{V}$) ja $R_{\text{s}1}$, $R_{\text{s}2}$, … niiden sisäiset resistanssit ($\Omega$). Taskulampun kolme sarjaan kytkettyä paristoa antavat noin $4{,}5\,\text{V}$. Väärin päin asetetun pariston lähdejännite vähennetään muiden paristojen lähdejännitteiden summasta. Ryhmän lähdejännite on siis väärin päin olevan pariston lähdejännitteen kaksinkertaisen verran pienempi kuin silloin, kun kaikki paristot ovat oikein päin. Väärin päin olevan pariston sisäinen resistanssi lisätään silti muihin.
 
 Kun $n$ samanlaista paristoa kytketään **rinnan**, plusnavat tulevat yhteen ja miinusnavat yhteen. Ryhmän lähdejännite on silloin sama kuin yhden pariston. Sisäiset resistanssit ovat rinnakkaisia haaroja, joihin virta jakautuu tasan. Ryhmän sisäinen resistanssi on siksi
 ```latex

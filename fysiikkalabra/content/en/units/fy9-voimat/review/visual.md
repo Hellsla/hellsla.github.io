@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e3147337929f2a14
-Round 3 delta against 27420fa4cd4b32b8
+CONTENT-HASH: fc1a5c8e2dfdc52c
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-Diff: Kaava line 'static or sliding' - wording consistent with 'sliding friction' terms; nothing visual changes.
+batch delta review 5d round 2: reflow-1.png reflow-2.png  (360 px, everything open); lifted formulas fully visible, relations aligned, no bracket, quote or case ending left around a lifted formula, no lone punctuation, operators stay with their terms.

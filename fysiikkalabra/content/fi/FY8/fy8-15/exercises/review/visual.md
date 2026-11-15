@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 9174b3ccf25469b8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 3f3b2f5930d0aeef
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] none.
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- delta: not opened (changed Q rows, '· c^2' on own row, judged from source: break before · only inside a long term); no capture of the block located.

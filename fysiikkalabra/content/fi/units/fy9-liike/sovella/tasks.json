@@ -30,7 +30,7 @@
        "detail": "Siirtymä on $(t,v)$-kuvaajan pinta-ala: $\\Delta x = \\dfrac{v_0 + v}{2}\\,t$, josta $t = \\dfrac{2\\,\\Delta x}{v_0 + v}$ (tai paikan yhtälö ja $v = v_0 + a\\,t$ yhdessä)."
       },
       {
-       "text": "Muuntaa nopeudet sijoittamalla: $54\\,\\text{km/h} = \\dfrac{54 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 15\\,\\text{m/s}$ ja $108\\,\\text{km/h} = 30\\,\\text{m/s}$.",
+       "text": "Muuntaa nopeudet sijoittamalla: $$\n\\begin{aligned}\n&54\\,\\text{km/h} \\\\\n&= \\dfrac{54 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\\\\n&= 15\\,\\text{m/s}\n\\end{aligned}\n$$ ja $108\\,\\text{km/h} = 30\\,\\text{m/s}$.",
        "tag": "math",
        "points": 1
       },
@@ -65,7 +65,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$a = \\dfrac{30\\,\\text{m/s} - 15\\,\\text{m/s}}{12{,}0\\,\\text{s}} = 1{,}25\\,\\text{m/s}^2$"
+       "detail": "$$\n\\begin{aligned}\na &= \\dfrac{30\\,\\text{m/s} - 15\\,\\text{m/s}}{12{,}0\\,\\text{s}} \\\\\n&= 1{,}25\\,\\text{m/s}^2\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
@@ -205,7 +205,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$t = 7{,}5\\,\\text{m} : 12{,}0\\,\\text{m/s} = 0{,}625\\,\\text{s}$ ja $y = 9{,}0\\,\\text{m} - \\tfrac{1}{2} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot (0{,}625\\,\\text{s})^2$"
+       "detail": "$t = 7{,}5\\,\\text{m} : 12{,}0\\,\\text{m/s} = 0{,}625\\,\\text{s}$ ja $$\n\\begin{aligned}\ny &= 9{,}0\\,\\text{m} \\\\\n&- \\tfrac{1}{2} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot (0{,}625\\,\\text{s})^2\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
@@ -265,7 +265,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$v_\\text{A} = 12{,}0\\,\\text{m/s} - 9{,}81\\,\\text{m/s}^2 \\cdot 0{,}625\\,\\text{s} \\approx 5{,}87\\,\\text{m/s}$ ja $v_\\text{B} \\approx -6{,}13\\,\\text{m/s}$"
+       "detail": "$$\n\\begin{aligned}\nv_\\text{A} &= 12{,}0\\,\\text{m/s} \\\\\n&- 9{,}81\\,\\text{m/s}^2 \\cdot 0{,}625\\,\\text{s} \\\\\n&\\approx 5{,}87\\,\\text{m/s}\n\\end{aligned}\n$$ ja $v_\\text{B} \\approx -6{,}13\\,\\text{m/s}$"
       },
       {
        "key": "units_precision",
@@ -342,7 +342,7 @@
        "detail": "$a = \\dfrac{\\Delta v}{\\Delta t}$"
       },
       {
-       "text": "Muuntaa nopeuden muutoksen sijoittamalla: $-65\\,\\text{km/h} = \\dfrac{-65 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\approx -18{,}1\\,\\text{m/s}$.",
+       "text": "Muuntaa nopeuden muutoksen sijoittamalla: $$\n\\begin{aligned}\n&-65\\,\\text{km/h} \\\\\n&= \\dfrac{-65 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\\\\n&\\approx -18{,}1\\,\\text{m/s}\n\\end{aligned}\n$$.",
        "tag": "math",
        "points": 1
       },
@@ -478,7 +478,7 @@
       {
        "key": "calculation",
        "points": 2,
-       "detail": "$t_1 = 2{,}0\\,\\text{km} : 100\\,\\text{km/h} = 0{,}020\\,\\text{h} = 72\\,\\text{s}$ ja $t_2 = 1{,}0\\,\\text{km} : 60\\,\\text{km/h} = 60\\,\\text{s}$; $v_\\text{ka} = 3{,}0\\,\\text{km} : 132\\,\\text{s} \\approx 81{,}8\\,\\text{km/h}$"
+       "detail": "$$\n\\begin{aligned}\nt_1 &= 2{,}0\\,\\text{km} : 100\\,\\text{km/h} \\\\\n&= 0{,}020\\,\\text{h} \\\\\n&= 72\\,\\text{s}\n\\end{aligned}\n$$ ja $t_2 = 1{,}0\\,\\text{km} : 60\\,\\text{km/h} = 60\\,\\text{s}$; $$\n\\begin{aligned}\nv_\\text{ka} &= 3{,}0\\,\\text{km} : 132\\,\\text{s} \\\\\n&\\approx 81{,}8\\,\\text{km/h}\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
@@ -501,7 +501,7 @@
       {
        "key": "uncertainty",
        "points": 2,
-       "detail": "Kulkuajan epävarmuus on kahden kirjauksen takia noin $1\\,\\text{s}$. $3{,}0\\,\\text{km}$:n osuudella aika on $135\\,\\text{s}$, joten keskinopeuden epävarmuus on noin $80\\,\\text{km/h} \\cdot 1\\,\\text{s} : 135\\,\\text{s} \\approx 0{,}6\\,\\text{km/h}$."
+       "detail": "Kulkuajan epävarmuus on kahden kirjauksen takia noin $1\\,\\text{s}$. $3{,}0\\,\\text{km}$:n osuudella aika on $135\\,\\text{s}$, joten keskinopeuden epävarmuus on noin $$\n\\begin{aligned}\n&80\\,\\text{km/h} \\cdot 1\\,\\text{s} : 135\\,\\text{s} \\\\\n&\\approx 0{,}6\\,\\text{km/h}\n\\end{aligned}\n$$."
       },
       {
        "text": "Laskee lyhyen osuuden: aika $4{,}5\\,\\text{s}$, joten sekunnin virhe muuttaa keskinopeutta noin $18\\,\\text{km/h}$ eli yli $20\\,\\%$.",
@@ -652,7 +652,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$a = 2A = 2 \\cdot (-4{,}44\\,\\text{m/s}^2) = -8{,}88\\,\\text{m/s}^2$"
+       "detail": "$$\n\\begin{aligned}\na &= 2A \\\\\n&= 2 \\cdot (-4{,}44\\,\\text{m/s}^2) \\\\\n&= -8{,}88\\,\\text{m/s}^2\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
@@ -680,7 +680,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$\\Delta a = 2 \\cdot 0{,}05\\,\\text{m/s}^2 = 0{,}10\\,\\text{m/s}^2$, eli $a = (8{,}88 \\pm 0{,}10)\\,\\text{m/s}^2$"
+       "detail": "$$\n\\begin{aligned}\n\\Delta a &= 2 \\cdot 0{,}05\\,\\text{m/s}^2 \\\\\n&= 0{,}10\\,\\text{m/s}^2\n\\end{aligned}\n$$, eli $a = (8{,}88 \\pm 0{,}10)\\,\\text{m/s}^2$"
       },
       {
        "key": "conclusion",
@@ -708,7 +708,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "Todelliset matkat ovat $3{,}30 : 3{,}00 = 1{,}10$-kertaiset, joten $a = 1{,}10 \\cdot 8{,}88\\,\\text{m/s}^2 \\approx 9{,}77\\,\\text{m/s}^2$"
+       "detail": "Todelliset matkat ovat $3{,}30 : 3{,}00 = 1{,}10$-kertaiset, joten $$\n\\begin{aligned}\na &= 1{,}10 \\cdot 8{,}88\\,\\text{m/s}^2 \\\\\n&\\approx 9{,}77\\,\\text{m/s}^2\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",

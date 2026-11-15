@@ -223,7 +223,7 @@ Lukeman $x$ virheraja on
 ```latex
 \Delta x = p \cdot x + n \cdot r
 ```
-Tässä $\Delta x$ on virheraja ja $x$ on lukema. Kirjain $p$ on valmistajan ilmoittama prosenttiosuus desimaalilukuna ($0{,}5\,\% = 0{,}005$). Kirjain $n$ on numeroiden määrä ja $r$ on alueen resoluutio. Tulos kirjoitetaan muodossa $x \pm \Delta x$, esimerkiksi $U = 4{,}50\,\text{V} \pm 0{,}04\,\text{V}$. Merkintä on sama kuin virhe-arviossa. Tässä $\Delta x$ on kuitenkin mittarin oma virheraja. Se ei ole koko mittauksen epävarmuus. Eri mittausten tarkkuutta verrataan **suhteellisella virherajalla**
+Tässä $\Delta x$ on virheraja ja $x$ on lukema. Kirjain $p$ on valmistajan ilmoittama prosenttiosuus desimaalilukuna ($0{,}5\,\% = 0{,}005$). Kirjain $n$ on numeroiden määrä ja $r$ on alueen resoluutio. Tulos kirjoitetaan muodossa $x \pm \Delta x$, esimerkiksi $U = 4{,}50\,\text{V} \pm 0{,}04\,\text{V}$. Merkintä on sama kuin virhearviossa. Tässä $\Delta x$ on kuitenkin mittarin oma virheraja. Se ei ole koko mittauksen epävarmuus. Eri mittausten tarkkuutta verrataan **suhteellisella virherajalla**
 ```latex
 \frac{\Delta x}{x}
 ```
@@ -312,7 +312,7 @@ Lampun jännite mitataan yleismittarilla kahdesti. Alueella $20\,\text{V}$ näyt
 
 <!-- vaihe -->
 
-**Tulos.** Alueella $20\,\text{V}$ jännite on $1{,}50\,\text{V} \pm 0{,}03\,\text{V}$. Alueella $2\,\text{V}$ se on $1{,}500\,\text{V} \pm 0{,}010\,\text{V}$. Suhteelliset virherajat ovat $2\,\%$ ja $0{,}67\,\%$. Virheraja pyöristetään samalla tavalla kuin virhe-arvio: yhteen merkitsevään numeroon. Jos ensimmäinen numero on 1, se pyöristetään kahteen merkitsevään numeroon. Alue $2\,\text{V}$ kannattaa valita. Sen virheraja on noin kolmasosa.
+**Tulos.** Alueella $20\,\text{V}$ jännite on $1{,}50\,\text{V} \pm 0{,}03\,\text{V}$. Alueella $2\,\text{V}$ se on $1{,}500\,\text{V} \pm 0{,}010\,\text{V}$. Suhteelliset virherajat ovat $2\,\%$ ja $0{,}67\,\%$. Virheraja pyöristetään samalla tavalla kuin virhearvio: yhteen merkitsevään numeroon. Jos ensimmäinen numero on 1, se pyöristetään kahteen merkitsevään numeroon. Alue $2\,\text{V}$ kannattaa valita. Sen virheraja on noin kolmasosa.
 
 <!-- vaihe -->
 

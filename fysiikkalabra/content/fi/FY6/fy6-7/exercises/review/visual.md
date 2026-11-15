@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4b72cccf4ef872c5
-SCOPE: delta added-exercise from 5161df0334c5195f base 8f23aa7ae3bd
+CONTENT-HASH: 7af1b6d05699a20c
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy6-7/dryer — y tick "2" should read "2,0" to match 2,4 / 1,6; "jäähdytys" now clears the 1,5 h drop but sits close to it and its baseline touches the 0,4 kW gridline.
-- [Minor] fy6-7-L2-08 Vastaus — the last step /bin/bash{,}2\,\text{kW}$ lies between gridlines, so "ruudukkoviivoilta" is slightly off; say "puolen ruudun tarkkuudella".
-- [Minor] fy6-7-L1-10 Vastaus — "Vastaus kelpaa, kun se on noin ±4 % sisällä" speaks of the checker, not the physics; Sijoitus leaves a lone E on its first row.
+- none
 
 ## Checked
-- open-exercises-L2-1280-10 and -11 (task 7-18, dryer graph and solution): round-1 overlap fixed, the label is right of the 1,5 h line; maths, units, case endings clean.
-- open-exercises-1280-10 (task 7-10, solution): typography and Finnish clean.
+- Delta (calculation re-broken into an inline aligned block, same numbers, signs and units). Opened content/fi/FY6/fy6-7/review/shots/fy6-7-open-exercises-L2-1280-6.png: L2-05 Järkevyys "365 · 2 kWh = 7,3·10² kWh" and the 2,01 kWh : 24 h block above it.
+- At 1280 px (captured column 664 px) the block is aligned at `=`, unclipped, operators spaced, units upright with thin space; reads as a natural continuation of the sentence.
+- No 360/390 px capture shows an opened solution (only the closed stage-exercises-390), so phone wrapping rests on the passing check_layout 360 px result in the packet, not on my eyes.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

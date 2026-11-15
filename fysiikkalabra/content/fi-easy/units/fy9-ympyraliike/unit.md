@@ -402,7 +402,9 @@ Massa supistuu. Siksi suurin vauhti ei riipu auton massasta.
 Newtonin gravitaatiolaki :: F_\text{g} = \gamma\frac{m_1 m_2}{r^2}
 ```
 
-Kaavassa $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ on gravitaatiovakio, $F_\text{g}$ on gravitaatiovoiman suuruus ($\text{N}$), $m_1$ ja $m_2$ ovat kappaleiden massat ($\text{kg}$) ja $r$ on keskipisteiden välinen etäisyys ($\text{m}$).
+Kaavassa $$
+\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
+$$ on gravitaatiovakio, $F_\text{g}$ on gravitaatiovoiman suuruus ($\text{N}$), $m_1$ ja $m_2$ ovat kappaleiden massat ($\text{kg}$) ja $r$ on keskipisteiden välinen etäisyys ($\text{m}$).
 
 Gravitaatiolaki pätee pistemäisille kappaleille ja pallosymmetrisille kappaleille. Pallosymmetrisessä kappaleessa massa on jakautunut samalla tavalla joka suuntaan keskipisteestä, kuten Maassa.
 

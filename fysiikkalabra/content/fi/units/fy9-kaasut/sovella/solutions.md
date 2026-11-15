@@ -16,18 +16,46 @@
 **Periaate:** Lava nousee tasaisella nopeudella, joten mäntä tekee siihen nostotyön, joka on voima kertaa matka (luku *Työ ja energia*). Voima on $\Delta p\,A$, ja $Ah$ on sylinterin ilman tilavuuden muutos, joten sama työ on $\Delta p\,\Delta V$. Sylinterin ilma itse työntää mäntää kokonaispaineella, ja sen työ on $p\,\Delta V$ (luku *Kaasun tekemä työ ja lämpövoimakone*).
 **Kaava:** $W = mgh$ ja $W = \Delta p\,A h = \Delta p\,\Delta V$; ilman työ $W_\text{k} = (p_0 + \Delta p)\,\Delta V$
 **Muunnokset:** $\Delta V = Ah = 0{,}031\,42\,\text{m}^2 \cdot 1{,}20\,\text{m} = 0{,}037\,70\,\text{m}^3 = 37{,}7\,\textsf{l}$, ja $1\,\text{kPa} \cdot 1\,\textsf{l} = 1\,\text{J}$.
-**Sijoitus:** $W = 1800\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}20\,\text{m} = 21\,190\,\text{J}$ ja $\Delta p\,\Delta V = 562{,}1\,\text{kPa} \cdot 37{,}70\,\textsf{l} = 21\,190\,\text{J}$. Ilman työ $W_\text{k} = 663{,}1\,\text{kPa} \cdot 37{,}70\,\textsf{l} = 25\,000\,\text{J}$, josta $p_0\,\Delta V = 101\,\text{kPa} \cdot 37{,}70\,\textsf{l} = 3810\,\text{J}$.
+**Sijoitus:** $$
+\begin{aligned}
+W &= 1800\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&\cdot 1{,}20\,\text{m} \\
+&= 21\,190\,\text{J}
+\end{aligned}
+$$ ja $\Delta p\,\Delta V = 562{,}1\,\text{kPa} \cdot 37{,}70\,\textsf{l} = 21\,190\,\text{J}$. Ilman työ $W_\text{k} = 663{,}1\,\text{kPa} \cdot 37{,}70\,\textsf{l} = 25\,000\,\text{J}$, josta $p_0\,\Delta V = 101\,\text{kPa} \cdot 37{,}70\,\textsf{l} = 3810\,\text{J}$.
 **Vastaus:** $W \approx 21{,}2\,\text{kJ}$, kolme merkitsevää numeroa kuten nostokorkeus $1{,}20\,\text{m}$. Sylinterin ilma tekee työn $25{,}0\,\text{kJ}$, koska se työntää mäntää kokonaispaineella. Männän yläpuolella on ulkoilmaa, ja noston aikana mäntä työntää sitä pois tieltä: siihen kuluu $3{,}8\,\text{kJ}$, ja vain loput nostavat autoa.
 **Järkevyys:** Kaksi eri tapaa antaa saman tuloksen, koska $\Delta p\,A$ on juuri painon suuruinen. Tulos on yhtä suuri kuin auton potentiaalienergian kasvu.
 
 ### c)
-**Annettu:** säiliön tilavuus $V_\text{s} = 100\,\textsf{l}$, säiliön ylipaine aluksi $900\,\text{kPa}$, sylinterin kokonaispaine noston aikana $p_\text{c} = 101\,\text{kPa} + 562\,\text{kPa} = 663\,\text{kPa}$, sylinteriin tuleva tilavuus $\Delta V = 37{,}7\,\textsf{l}$; lämpötila vakio
+**Annettu:** säiliön tilavuus $V_\text{s} = 100\,\textsf{l}$, säiliön ylipaine aluksi $900\,\text{kPa}$, sylinterin kokonaispaine noston aikana $$
+\begin{aligned}
+p_\text{c} &= 101\,\text{kPa} + 562\,\text{kPa} \\
+&= 663\,\text{kPa}
+\end{aligned}
+$$, sylinteriin tuleva tilavuus $\Delta V = 37{,}7\,\textsf{l}$; lämpötila vakio
 **Kysytty:** säiliön mittarin lukema $\Delta p_2$ yhden noston jälkeen ja riittääkö ilma toiseen nostoon
 **Periaate:** Ilmaa ei katoa: säiliön ilma jakautuu säiliöön ja sylinteriin. Vakiolämpötilassa saman ilmamäärän tulo $pV$ pysyy samana (luku *Kaasujen tilanmuutokset ja Boylen laki*), joten säiliön alkuperäisen ilman $pV$ on säiliöön jäävän ja sylinteriin siirtyneen ilman $pV$:n summa. Laskuissa käytetään kokonaispaineita. Ilma virtaa vain suuremmasta paineesta pienempään, joten nosto jatkuu vain niin kauan kuin säiliön paine on vähintään $p_\text{c}$.
 **Kaava:** $p_1V_\text{s} = p_2V_\text{s} + p_\text{c}\,\Delta V$, joten $p_2 = p_1 - \dfrac{p_\text{c}\,\Delta V}{V_\text{s}}$ ja $\Delta p_2 = p_2 - p_0$
 **Muunnokset:** Kokonaispaine aluksi $p_1 = 900\,\text{kPa} + 101\,\text{kPa} = 1001\,\text{kPa}$. Litrat supistuvat.
-**Sijoitus:** $p_2 = 1001\,\text{kPa} - \dfrac{663{,}1\,\text{kPa} \cdot 37{,}70\,\textsf{l}}{100\,\textsf{l}} = 1001\,\text{kPa} - 250{,}0\,\text{kPa} = 751{,}0\,\text{kPa}$ ja $\Delta p_2 = 751{,}0\,\text{kPa} - 101\,\text{kPa} = 650\,\text{kPa}$. Toisen täyden noston jälkeen paine olisi $751{,}0\,\text{kPa} - 250{,}0\,\text{kPa} = 501\,\text{kPa}$.
-**Vastaus:** Mittari näyttää noin $650\,\text{kPa}$, kolme merkitsevää numeroa kuten säiliön ja sylinterin luvut. Ilma ei riitä toiseen nostoon: säiliön paine putoaisi alle sylinterin tarvitseman $663\,\text{kPa}$:n, kun säiliöstä on mennyt sylinteriin $\dfrac{(751{,}0 - 663{,}1)\,\text{kPa} \cdot 100\,\textsf{l}}{663{,}1\,\text{kPa}} \approx 13{,}3\,\textsf{l}$ eli lava on noussut noin $13{,}3\,\textsf{l} : 31{,}4\,\textsf{l/m} \approx 0{,}42\,\text{m}$. Lava pysähtyy siihen, kunnes kompressori käynnistyy. Malli olettaa lämpötilan vakioksi. Todellisuudessa säiliöstä purkautuva ilma jäähtyy laajetessaan, joten paine on hetkellisesti vielä laskettua pienempi ja nosto jää aikaisemmin kesken.
+**Sijoitus:** $$
+\begin{aligned}
+p_2 &= 1001\,\text{kPa} \\
+&- \dfrac{663{,}1\,\text{kPa} \cdot 37{,}70\,\textsf{l}}{100\,\textsf{l}} \\
+&= 1001\,\text{kPa} - 250{,}0\,\text{kPa} \\
+&= 751{,}0\,\text{kPa}
+\end{aligned}
+$$ ja $\Delta p_2 = 751{,}0\,\text{kPa} - 101\,\text{kPa} = 650\,\text{kPa}$. Toisen täyden noston jälkeen paine olisi $$
+\begin{aligned}
+&751{,}0\,\text{kPa} - 250{,}0\,\text{kPa} \\
+&= 501\,\text{kPa}
+\end{aligned}
+$$.
+**Vastaus:** Mittari näyttää noin $650\,\text{kPa}$, kolme merkitsevää numeroa kuten säiliön ja sylinterin luvut. Ilma ei riitä toiseen nostoon: säiliön paine putoaisi alle sylinterin tarvitseman $663\,\text{kPa}$:n, kun säiliöstä on mennyt sylinteriin $$
+\begin{aligned}
+&\dfrac{(751{,}0 - 663{,}1)\,\text{kPa} \cdot 100\,\textsf{l}}{663{,}1\,\text{kPa}} \\
+&\approx 13{,}3\,\textsf{l}
+\end{aligned}
+$$ eli lava on noussut noin $13{,}3\,\textsf{l} : 31{,}4\,\textsf{l/m} \approx 0{,}42\,\text{m}$. Lava pysähtyy siihen, kunnes kompressori käynnistyy. Malli olettaa lämpötilan vakioksi. Todellisuudessa säiliöstä purkautuva ilma jäähtyy laajetessaan, joten paine on hetkellisesti vielä laskettua pienempi ja nosto jää aikaisemmin kesken.
 **Järkevyys:** Yksi nosto vie säiliön paineesta $250\,\text{kPa}$, eli neljänneksen, koska sylinteriin siirtyvän ilman $pV$ on $663 \cdot 37{,}7 \approx 25\,000\,\text{kPa}\cdot\textsf{l}$ ja säiliön alkuperäinen $pV$ on noin $100\,000\,\text{kPa}\cdot\textsf{l}$.
 
 ### Yleisiä virheitä
@@ -49,7 +77,12 @@
 **Muunnokset:** $p = 104 \cdot 1000\,\text{Pa} = 104\,000\,\text{Pa}$, $T = (25 + 273{,}15)\,\text{K} = 298{,}15\,\text{K}$ ja $M = 16{,}0 \cdot 0{,}001\,\text{kg/mol} = 0{,}0160\,\text{kg/mol}$
 **Sijoitus:** $n = \dfrac{104\,000\,\text{Pa} \cdot 52{,}0\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 298{,}15\,\text{K}} = 2183\,\text{mol}$ ja $m = 2183\,\text{mol} \cdot 0{,}0160\,\tfrac{\text{kg}}{\text{mol}} = 34{,}9\,\text{kg}$
 **Vastaus:** $m \approx 34{,}9\,\text{kg}$ tunnissa, kolme merkitsevää numeroa kuten tilavuus $52{,}0\,\text{m}^3$ ja moolimassa $16{,}0\,\text{g/mol}$.
-**Järkevyys:** Metaanin tiheys on $34{,}9\,\text{kg} : 52{,}0\,\text{m}^3 \approx 0{,}67\,\text{kg/m}^3$, pienempi kuin ilman noin $1{,}2\,\text{kg/m}^3$, kuten moolimassojen suhde $16 : 29$ ennustaa.
+**Järkevyys:** Metaanin tiheys on $$
+\begin{aligned}
+&34{,}9\,\text{kg} : 52{,}0\,\text{m}^3 \\
+&\approx 0{,}67\,\text{kg/m}^3
+\end{aligned}
+$$, pienempi kuin ilman noin $1{,}2\,\text{kg/m}^3$, kuten moolimassojen suhde $16 : 29$ ennustaa.
 
 ### b)
 **Annettu:** a-kohdan $m = 34{,}92\,\text{kg}$ ajassa $t = 1\,\text{h}$, lämpöarvo $H = 50{,}0\,\text{MJ/kg}$, sähköhyötysuhde $\eta_\text{s} = 36\,\%$
@@ -69,7 +102,12 @@
 **Muunnokset:** Ei tarvita: tehot ovat kilowatteina, ja $\eta_\text{l} = 75\,\% = 0{,}75$.
 **Sijoitus:** $P_2 = 485{,}1\,\text{kW} - 174{,}6\,\text{kW} = 310{,}5\,\text{kW}$, $P_\text{l} = 0{,}75 \cdot 310{,}5\,\text{kW} = 232{,}9\,\text{kW}$ ja $\eta_\text{kok} = \dfrac{174{,}6\,\text{kW} + 232{,}9\,\text{kW}}{485{,}1\,\text{kW}} = 0{,}840$
 **Vastaus:** $\eta_\text{kok} \approx 84\,\%$, kaksi merkitsevää numeroa kuten hyötysuhteet $36\,\%$ ja $75\,\%$. Kitkattomankin moottorin on luovutettava lämpöä kylmempään, joten sähkön osuus jää selvästi alle $100\,\%$:n. Kokonaishyötysuhde on suuri, koska luovutettu lämpö käytetään lämmitykseen; sähköä ei saada siitä yhtään enempää.
-**Järkevyys:** Hukaksi jää $485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \approx 78\,\text{kW}$ eli $16\,\%$, sama kuin $25\,\%$ lämpötehosta. Tulos on samaa suuruusluokkaa kuin yhteistuotantolaitosten $85$–$90\,\%$.
+**Järkevyys:** Hukaksi jää $$
+\begin{aligned}
+&485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \\
+&\approx 78\,\text{kW}
+\end{aligned}
+$$ eli $16\,\%$, sama kuin $25\,\%$ lämpötehosta. Tulos on samaa suuruusluokkaa kuin yhteistuotantolaitosten $85$–$90\,\%$.
 
 ### Yleisiä virheitä
 - a-kohdassa lämpötila sijoitetaan celsiusasteina, jolloin ainemääräksi tulee yli kymmenkertainen $26\,000\,\text{mol}$.
@@ -254,10 +292,21 @@ Kuvaajassa ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista b-kohdan ku
 **Periaate:** Ilman määrä ja paine pysyvät samoina, joten tilanyhtälön mukaan tilavuus on suoraan verrannollinen kelvinlämpötilaan, ja suoran kulmakerroin on $nR/p$ (luku *Ideaalikaasun tilanyhtälö $pV = nRT$*). Yhden celsiusasteen muutos on sama kuin yhden kelvinin muutos, joten kulmakerroin on sama kummallakin asteikolla.
 **Kuvaajan lukeminen:** Kulmakerroin luetaan a-kohdan suoralta kuten b-kohdassa: $k = 10{,}8\,\text{ml} : 80\,{}^\circ\text{C} = 0{,}135\,\text{ml}/{}^\circ\text{C}$.
 **Kaava:** $pV = nRT$, joten $V = \dfrac{nR}{p}\,T$ ja $k = \dfrac{\Delta V}{\Delta T} = \dfrac{nR}{p}$, josta $n = \dfrac{pk}{R}$
-**Muunnokset:** $k = 0{,}135\,\text{ml/K} = 0{,}135 \cdot 10^{-6}\,\text{m}^3/\text{K}$, koska $1\,\text{ml} = 10^{-6}\,\text{m}^3$, ja $p = 101{,}3 \cdot 1000\,\text{Pa} = 101\,300\,\text{Pa}$
+**Muunnokset:** $$
+\begin{aligned}
+k &= 0{,}135\,\text{ml/K} \\
+&= 0{,}135 \cdot 10^{-6}\,\text{m}^3/\text{K}
+\end{aligned}
+$$, koska $1\,\text{ml} = 10^{-6}\,\text{m}^3$, ja $p = 101{,}3 \cdot 1000\,\text{Pa} = 101\,300\,\text{Pa}$
 **Sijoitus:** $n = \dfrac{101\,300\,\text{Pa} \cdot 0{,}135 \cdot 10^{-6}\,\text{m}^3/\text{K}}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}}} = 1{,}65 \cdot 10^{-3}\,\text{mol}$
 **Vastaus:** $n \approx 1{,}65\,\text{mmol}$, kolme merkitsevää numeroa kuten kulmakerroin $0{,}135\,\text{ml}/{}^\circ\text{C}$.
-**Järkevyys:** Yksi mittauspiste antaa lähes saman: $n = \dfrac{pV}{RT} = \dfrac{101\,300\,\text{Pa} \cdot 41{,}1 \cdot 10^{-6}\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 298{,}15\,\text{K}} = 1{,}68\,\text{mmol}$. Ero johtuu siitä, että kulmakertoimen kautta laskettu tulos ei käytä oletusta, että suora kulkee absoluuttisen nollapisteen kautta. Suuruusluokka sopii: $40\,\text{ml}$ ilmaa on noin $1{,}7\,\text{mmol}$, kun mooli kaasua vie huoneenlämmössä noin $24\,\textsf{l}$.
+**Järkevyys:** Yksi mittauspiste antaa lähes saman: $$
+\begin{aligned}
+n &= \dfrac{pV}{RT} \\
+&= \dfrac{101\,300\,\text{Pa} \cdot 41{,}1 \cdot 10^{-6}\,\text{m}^3}{8{,}31\,\tfrac{\text{J}}{\text{mol}\cdot\text{K}} \cdot 298{,}15\,\text{K}} \\
+&= 1{,}68\,\text{mmol}
+\end{aligned}
+$$. Ero johtuu siitä, että kulmakertoimen kautta laskettu tulos ei käytä oletusta, että suora kulkee absoluuttisen nollapisteen kautta. Suuruusluokka sopii: $40\,\text{ml}$ ilmaa on noin $1{,}7\,\text{mmol}$, kun mooli kaasua vie huoneenlämmössä noin $24\,\textsf{l}$.
 
 ### d)
 **Kysytty:** miten hauteen ulkopuolelle jäävä $1{,}5\,\text{ml}$:n ilmamäärä muuttaa suoraa ja nollapisteen arviota, ja poistavatko toistot virheen
@@ -290,7 +339,9 @@ Kuvaajassa ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista b-kohdan ku
 **Muunnokset:** Ei tarvita laskussa. Vertailua varten kelvineinä meri on $3 + 273 = 276\,\text{K}$ ja ilma $253\,\text{K}$.
 **Sijoitus:** $\eta = \dfrac{30\,\text{kW}}{500\,\text{kW}} = 0{,}060 = 6{,}0\,\%$ ja $P_2 = 500\,\text{kW} - 30\,\text{kW} = 470\,\text{kW}$
 **Vastaus:** $\eta \approx 6{,}0\,\%$ ja $P_2 \approx 470\,\text{kW}$, kaksi merkitsevää numeroa kuten työteho $30\,\text{kW}$. Hyötysuhde on pieni, koska lämpötilaero $23\,\text{K}$ on pieni verrattuna kuuman lähteen lämpötilaan $276\,\text{K}$: mitä pienempi tämä suhde on, sitä pienempi osa lämmöstä voi muuttua työksi.
-**Järkevyys:** Energia säilyy: $30\,\text{kW} + 470\,\text{kW} = 500\,\text{kW}$. Kone ei riko lakeja, koska se luovuttaa lähes kaiken lämmön kylmempään. Hyötysuhde on paljon pienempi kuin voimalaitoksen noin $40\,\%$, jossa höyry on satoja asteita kuumempaa kuin lauhdutin.
+**Järkevyys:** Energia säilyy: $$
+30\,\text{kW} + 470\,\text{kW} = 500\,\text{kW}
+$$. Kone ei riko lakeja, koska se luovuttaa lähes kaiken lämmön kylmempään. Hyötysuhde on paljon pienempi kuin voimalaitoksen noin $40\,\%$, jossa höyry on satoja asteita kuumempaa kuin lauhdutin.
 
 ### c)
 **Kysytty:** miksi lämpöpumppu voi lämmittää hyttejä merivedellä, vaikka esitteen moottori ei voi toimia
@@ -369,9 +420,17 @@ Jos pisteet ovat suoralla mutta suora ei kulje origon kautta, se paljastaa syste
 
 **Kaava:** $F_\text{p} - mg = ma$ ja $F_\text{p} = \Delta p\,A$, missä $m = \rho\,l\,b\,h$ ja $A = \pi \left(\dfrac{d}{2}\right)^2$, joten $\Delta p = \dfrac{m(g + a)}{\pi (d/2)^2}$
 **Muunnokset:** $10\,\text{mm} = 10 \cdot 0{,}001\,\text{m} = 0{,}010\,\text{m}$ ja $d/2 = 300\,\text{mm} : 2 = 150\,\text{mm} = 0{,}150\,\text{m}$
-**Sijoitus:** $m = 2500\,\tfrac{\text{kg}}{\text{m}^3} \cdot 2{,}40\,\text{m} \cdot 1{,}20\,\text{m} \cdot 0{,}010\,\text{m} = 72{,}0\,\text{kg}$, $A = \pi \cdot (0{,}150\,\text{m})^2 = 0{,}070\,69\,\text{m}^2$ ja $\Delta p = \dfrac{72{,}0\,\text{kg} \cdot (9{,}81 + 1{,}2)\,\text{m/s}^2}{0{,}070\,69\,\text{m}^2} = \dfrac{792{,}7\,\text{N}}{0{,}070\,69\,\text{m}^2} = 11\,210\,\text{Pa}$
+**Sijoitus:** $$
+\begin{aligned}
+m &= 2500\,\tfrac{\text{kg}}{\text{m}^3} \cdot 2{,}40\,\text{m} \\
+&\cdot 1{,}20\,\text{m} \cdot 0{,}010\,\text{m} \\
+&= 72{,}0\,\text{kg}
+\end{aligned}
+$$, $A = \pi \cdot (0{,}150\,\text{m})^2 = 0{,}070\,69\,\text{m}^2$ ja $\Delta p = \dfrac{72{,}0\,\text{kg} \cdot (9{,}81 + 1{,}2)\,\text{m/s}^2}{0{,}070\,69\,\text{m}^2} = \dfrac{792{,}7\,\text{N}}{0{,}070\,69\,\text{m}^2} = 11\,210\,\text{Pa}$
 **Vastaus:** $\Delta p \approx 11{,}2\,\text{kPa}$, kolme merkitsevää numeroa kuten levyn mitat; kiihtyvyys $1{,}2\,\text{m/s}^2$ on annettu kahdella numerolla, mutta se on vain pieni osa summasta $g + a$.
-**Järkevyys:** Ilman kiihtyvyyttä tarvittaisiin $706\,\text{N} : 0{,}0707\,\text{m}^2 \approx 10\,\text{kPa}$, joten kiihtyvyys lisää tarvetta noin $12\,\%$, kuten suhde $1{,}2 : 9{,}81$ kertoo. Nostimen $60\,\text{kPa}$ on yli viisinkertainen.
+**Järkevyys:** Ilman kiihtyvyyttä tarvittaisiin $$
+706\,\text{N} : 0{,}0707\,\text{m}^2 \approx 10\,\text{kPa}
+$$, joten kiihtyvyys lisää tarvetta noin $12\,\%$, kuten suhde $1{,}2 : 9{,}81$ kertoo. Nostimen $60\,\text{kPa}$ on yli viisinkertainen.
 
 ### b)
 **Annettu:** $m = 72{,}0\,\text{kg}$, $A = 0{,}070\,69\,\text{m}^2$, $a = 1{,}2\,\text{m/s}^2$ ylös, kuivan lasin lepokitkakerroin $\mu_0 = 0{,}60$
@@ -403,7 +462,9 @@ Jos pisteet ovat suoralla mutta suora ei kulje origon kautta, se paljastaa syste
 **Muunnokset:** Ei tarvita: a-kohdan suureet ovat perusyksiköissä.
 **Sijoitus:** $\Delta p = \dfrac{72{,}0\,\text{kg} \cdot (9{,}81 + 1{,}2)\,\text{m/s}^2}{0{,}60 \cdot 0{,}070\,69\,\text{m}^2} = \dfrac{792{,}7\,\text{N}}{0{,}042\,41\,\text{m}^2} = 18\,690\,\text{Pa}$
 **Vastaus:** $\Delta p \approx 18{,}7\,\text{kPa}$, kolme merkitsevää numeroa kuten a-kohdassa; kitkakerroin on suuntaa antava kahden numeron arvo, joten noin $19\,\text{kPa}$ on yhtä hyvä vastaus.
-**Järkevyys:** Tulos on a-kohdan tulos jaettuna kitkakertoimella: $11{,}2\,\text{kPa} : 0{,}60 \approx 18{,}7\,\text{kPa}$. Pystyasento vaatii enemmän, koska kitka on pienempi kuin sen aiheuttava tukivoima.
+**Järkevyys:** Tulos on a-kohdan tulos jaettuna kitkakertoimella: $$
+11{,}2\,\text{kPa} : 0{,}60 \approx 18{,}7\,\text{kPa}
+$$. Pystyasento vaatii enemmän, koska kitka on pienempi kuin sen aiheuttava tukivoima.
 
 ### c)
 **Annettu:** a-kohdan $m = 72{,}0\,\text{kg}$ ja $A = 0{,}070\,69\,\text{m}^2$, kiihtyvyys $a = 1{,}2\,\text{m/s}^2$ ylös, märän lasin lepokitkakerroin $\mu_\text{m} = 0{,}30$, nostimen alipaine $\Delta p_\text{n} = 60\,\text{kPa}$, vaadittu varmuuskerroin $s \ge 2$; $g = 9{,}81\,\text{m/s}^2$
@@ -411,7 +472,13 @@ Jos pisteet ovat suoralla mutta suora ei kulje origon kautta, se paljastaa syste
 **Periaate:** Pystyasennossa levyn painon kantaa laikan reunan lepokitka, joka on enintään $\mu N$, ja tukivoima on $N = \Delta p\,A$ kuten b-kohdassa (luku *Paino, kitka ja kalteva taso*). Märällä lasilla kitkakerroin on $\mu_\text{m}$, joten b-kohdan lauseke pätee, kun $\mu_0$ korvataan luvulla $\mu_\text{m}$. Varmuuskerroin on nostimen alipaineen ja noston vaatiman alipaineen suhde.
 **Kaava:** $\Delta p_\text{m} = \dfrac{m(g + a)}{\mu_\text{m} A}$ ja $s = \dfrac{\Delta p_\text{n}}{\Delta p_\text{m}} = \dfrac{\mu_\text{m} A\,\Delta p_\text{n}}{m(g + a)}$
 **Muunnokset:** $\Delta p_\text{n} = 60 \cdot 1000\,\text{Pa} = 60\,000\,\text{Pa}$.
-**Sijoitus:** $m(g + a) = 72{,}0\,\text{kg} \cdot (9{,}81 + 1{,}2)\,\text{m/s}^2 = 792{,}7\,\text{N}$, $\Delta p_\text{m} = \dfrac{792{,}7\,\text{N}}{0{,}30 \cdot 0{,}070\,69\,\text{m}^2} = 37\,380\,\text{Pa}$ ja $s = \dfrac{60\,000\,\text{Pa}}{37\,380\,\text{Pa}} = 1{,}6$
+**Sijoitus:** $$
+\begin{aligned}
+m(g + a) &= 72{,}0\,\text{kg} \\
+&\cdot (9{,}81 + 1{,}2)\,\text{m/s}^2 \\
+&= 792{,}7\,\text{N}
+\end{aligned}
+$$, $\Delta p_\text{m} = \dfrac{792{,}7\,\text{N}}{0{,}30 \cdot 0{,}070\,69\,\text{m}^2} = 37\,380\,\text{Pa}$ ja $s = \dfrac{60\,000\,\text{Pa}}{37\,380\,\text{Pa}} = 1{,}6$
 **Mallivastaus:** Märällä lasilla tarvitaan $\Delta p_\text{m} \approx 37\,\text{kPa}$, kaksi merkitsevää numeroa kuten kitkakerroin $0{,}30$. Nostimen $60\,\text{kPa}$ riittää juuri ja juuri pitämään levyn, mutta varmuuskerroin on vain $s \approx 1{,}6$, alle ohjeen vaatiman kahden. Pystynosto märällä lasilla ei täytä ohjetta: asentaja ei saa nostaa märkää levyä pystyssä tällä nostimella, vaan lasi on kuivattava tai on käytettävä kahta laikkaa, jolloin ala kaksinkertaistuu.
 **Järkevyys:** Märkä kitka on puolet kuivasta, joten alipaine on kaksinkertainen kuivaan $18{,}7\,\text{kPa}$:iin verrattuna ($2 \cdot 18{,}7 \approx 37$). Kuivana varmuuskerroin on $60 : 18{,}7 \approx 3{,}2$, ja vaakanostossa $60 : 11{,}2 \approx 5{,}4$. Pystyasento on vaativampi, koska paineen voima on kohtisuorassa lasin pintaa vastaan eli vaakasuora. Se ei kannata painoa lainkaan, vaan painon kantaa kitka.
 

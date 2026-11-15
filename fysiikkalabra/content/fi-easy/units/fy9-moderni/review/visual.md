@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d4eeea8d804db9f2
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (cb4f3bc9df560a42).
+CONTENT-HASH: 887a835ce82a85e8
 
 ## Blocking
-(none)
+
 
 ## Polish
-(none)
+- [Minor] Short inline formulas followed by 'ja' or a comma stay on their own lines in the stacked sheet; acceptable, no action.
 
 ## Checked
-- Opened fy9-moderni-fi-easy-360.png (every row, pill and header read; no overlap except as noted), and read the changed aria-label/figures.json entry and the diff against the chart; the diff's other lines (teacher.md rows wording, unit.md sign wording, line break fix) read in full.
-- Round-1 finding(s) of my role re-checked: unchanged rest holds.
+batch delta review 5d: all reflow-*.png sheets at 360 px opened; no formula clipped, relations aligned, operators lead continuation rows.

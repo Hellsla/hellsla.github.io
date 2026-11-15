@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bce70f1717c48c57
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: b9ea2a08e78ed366
 
 ## Blocking
-- none
+(none)
 
 ## Polish
 - none
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Round 2, delta (sentence mark after lifted formula). Opened fi 390 px captures across lessons (fy8-1 example-1, fy8-3 sovella-2, fy8-5 example-1, fy8-8 sovella-2, fy8-11 selita-3, fy8-12 example-2, fy8-14 sovella-1, fy8-16 example-2). No lone "," or "." starts a line after a lifted formula; marks sit inside the formula's last row (e.g. "≈ 10 500 km/s."), text unchanged. Rest of this lesson judged by inference from the shared build, not every capture opened.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

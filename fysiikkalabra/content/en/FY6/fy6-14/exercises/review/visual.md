@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3129e7b116601f43
-SCOPE: delta added-exercise from ad1ab6804b19c83a base 8f23aa7ae3bd
-Round 1
-Mode: delta (added exercise fy6-14-L2-09)
+CONTENT-HASH: 38b2c5ddb83972d4
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-14/ex-kenno — at $4.0\,\text{V}$ the curve has begun to bend slightly (it is a hair under the 200 mA line), while the solution says it runs along the line; for science: confirm the reading 200 mA is meant to be exact, or say "about 200 mA".
+- [Minor] solutions.md fy6-14-L2-06 Answer — "$1.8 \cdot 10^{2}\,\text{mW}$, or $0.18\,\text{W}$ (calculated $181\,\text{mW}$)" reads well; the substitution row still lists some products without their factors ($178\,\text{mW}$, $165\,\text{mW}$); optional consistency.
 
 ## Checked
-- fy6-14-open-exercises-L2-1280-10.png (task statement, graph, answer chip, solution from Given to Substitution) and -11.png (Answer and Reasonableness).
-- Graph: axes with I (mA) and U (V), ticks every 1 V and 50 mA, curve plainly drawn, no power or operating point marked, matches its description.
-- Typography: units in LaTeX, decimal point in en, short chains set as rows, nothing clipped.
+- Opened content/en/FY6/fy6-14/review/shots/fy6-14-open-exercises-L2-1280-5 (LED series resistor 2.1·10^2 Ω), -6, -7 (14-14 solar cell 1.8·10^2 mW with 1.48 V · 99 mA = 147 mW; 14-15 387 Ω), -8, -10 (14-16 and the solar panel graph for layout), and fy6-14-open-exercises-L3-1280-5, -6 (self-sufficiency, 4.7·10^3 kWh). Rendering correct, units upright, no clipping, answer boxes match.
 
 ## Scores
-illustrations 4 · typography 5 · English 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

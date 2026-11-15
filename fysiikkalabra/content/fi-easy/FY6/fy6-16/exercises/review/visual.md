@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9573a13d429ad8dd
-SCOPE: delta added-exercise from 7cbc290e1ae44e71 base 8f23aa7ae3bd
+CONTENT-HASH: 2af55d67694057c3
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy6-16/talo-ex — the time axis starts at 18 h but carries no "18" under the origin (ticks 19–22 only), so the start of the first step is not labelled; add $18$ at the origin.
-- [Minor] fy6-16-L2-09 Vastaus — an amount of money rounded to "$2{,}7\,\text{€}$" reads oddly; give "$2{,}72\,\text{€}$" and say that the cent value follows from the readings (the tolerance already allows it).
-- [Minor] fy6-16-L2-09 Järkevyys — "noin $4\,\text{kW}$:n teholla … noin $17\,\text{kWh}$" is fine, but the last sentence stacks three "noin"; one is enough.
+- [Minor] fy6-16-L2-03 (16-11) Vastaus — the chip shows 11 A while Sijoitus ends at 11,96 A; the next sentences explain the rounding down in plain, short sentences, so only a note.
+- [Minor] fy6-16-L2-05 Vastaus — "Siksi raja-arvo pyöristetään alaspäin" is clear, but a S2 reader may not know "raja-arvo"; optionally "suurin sallittu arvo" on first use.
 
 ## Checked
-- fy6-16-open-exercises-L2-1280-11.png (end of the previous task and task 16-17 with figure talo-ex: orange steps $2$, $5$, $7$, $3\,\text{kW}$, axes $P\ (\text{kW})$ and $t\ (\text{h})$ with units, gridlines; nothing written on the figure about energy or cost) and -12 (solution rows, aligned chains, Vastaus, Järkevyys).
-- Figure and description agree; nothing clipped.
+- review/shots/fy6-16-open-exercises-L2-1280-4.png (L2-03: answer chip 11 A, rounding sentences, 13,0 A + 11 A = 24 A check) and -6.png (L2-05: chip 10,4 kW, solution and Vastaus).
+- review/shots/fy6-16-open-exercises-L3-1280-3.png (L3-02: 1,6 · 10^2 %, "Laskimen arvo on 156 %", 16-20 start) and -5.png (L3-04: chip 1,37 · 10^3 €, solution start).
+- Changed text read in the captures: short plain sentences, units upright with a thin space, decimal comma, \cdot, colon for division, case endings (60 %:n). Chains unclipped. The 24,9 A check in L2-05 and the 7,2 A / 7,6 A sentences were read in the source diff only.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

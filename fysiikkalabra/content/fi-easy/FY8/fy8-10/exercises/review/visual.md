@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 75705ee3121c8447
-Round 1
+CONTENT-HASH: 57d2f0609069ab26
+SCOPE: delta reflow from abf3c1d61c7e5231 base 56362aafa0
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Own scratch script, 390 px, task card opened with Answer and solution: opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-b3-r5w1/s-fi-easy-fy8-10.png (the whole new card fy8-10-L2-08 cut into columns for legibility: binding energy of gold-197, four options; wrong option's feedback open); read in full, including the stacked fractions and the model-answer boxes.
-- By script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's screenshot list was empty and not used; solutions.md and answers.py read as source only.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+- Opened fy8-10 stage-selita-390-6 (390 px layout survived); exercise blocks judged from source, the same block type seen aligned at 1280 px in fy8-1 and fy8-6.
+- Delta judged: long solution formulas lifted into aligned rows, each + or - term whole, first row the left-hand side alone; words, numbers and units unchanged.

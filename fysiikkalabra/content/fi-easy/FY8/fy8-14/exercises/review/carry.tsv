@@ -8,6 +8,13 @@ date	reviewer	from	to	base	categories
 2026-11-05	science	979a1f51c50d7c78	ed0950261ceb4f5d	5bf1f621f281	core-mark,paragraphs
 2026-11-05	pedagogy	979a1f51c50d7c78	ed0950261ceb4f5d	5bf1f621f281	core-mark,paragraphs
 2026-11-05	visual	979a1f51c50d7c78	ed0950261ceb4f5d	5bf1f621f281	core-mark,paragraphs
+2026-11-15	science	612296f7d7d63cce	1b69e6d92fef7087	f6ae5d507c79	reflow
+2026-11-15	pedagogy	612296f7d7d63cce	1b69e6d92fef7087	f6ae5d507c79	reflow
+2026-11-15	science	612296f7d7d63cce	0213bb0ba8d2bd47	cf5f9072c557	reflow
+2026-11-15	pedagogy	612296f7d7d63cce	0213bb0ba8d2bd47	cf5f9072c557	reflow
 2026-11-15	science	612296f7d7d63cce	70d06bc58a4593ae	cf5f9072c557	caption-label
 2026-11-15	pedagogy	612296f7d7d63cce	70d06bc58a4593ae	cf5f9072c557	caption-label
 2026-11-15	visual	612296f7d7d63cce	70d06bc58a4593ae	cf5f9072c557	caption-label
+2026-11-15	science	612296f7d7d63cce	7d34528aa16365cf	b5600a63ddae	caption-label,reflow
+2026-11-15	pedagogy	612296f7d7d63cce	7d34528aa16365cf	b5600a63ddae	caption-label,reflow
+2026-11-15	visual	0213bb0ba8d2bd47	7d34528aa16365cf	59f9a9941228	caption-label

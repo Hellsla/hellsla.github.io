@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 4af3dd4a3bd89dae
-SCOPE: delta added-exercise from 3b30a01720987360 base 8f23aa7ae3bd
+CONTENT-HASH: 3f48bc8fead4207e
 
 ## Blocking
-- none
 
 ## Polish
-- solutions.md fy6-14-L2-09 Järkevyys — "luvun paneelin suurin teho (0,92 W)" assumes the reader knows this is the same panel; it is (same model in figures.py), so say "saman paneelin suurin teho" to make the comparison explicit.
+- solutions.md:125 (L1-06 model answer) — "Diodin yli on vain pieni jännite …, koska vastus ottaa suurimman osan" reverses the cause: the diode's voltage is small because of its characteristic (about 0,7 V once it conducts), and the resistor gets the rest — write "Diodin jännite on päästösuunnassa pieni, joten suurin osa jännitteestä jää vastukselle."
+- solutions.md:215 (L2-09 Järkevyys) — "pienempi kuin luvun paneelin suurin teho (0,92 W), kuten pitääkin" holds only if this is the lesson's panel at the same irradiance, which the task does not say — compare with the figure's own short-circuit current times open-circuit voltage only, or say that it is the same panel.
+- lessons/FY6/fy6-14/figures.py:218 (ex-led description, L1-05) — the description does not give the point the task reads (2,2 V at 10 mA), so a reader who cannot see the figure cannot answer the task — add "virta on 10 mA jännitteellä 2,2 V".
 
 ## Checked
-- fy6-14-L2-09 recomputed from the figure's model in figures.py (M_PV 0,40 V, I_sc 0,200 A, U_oc 6,0 V): I(4,0 V) = 198,7 mA ≈ 200 mA gridline; P = 4,0 V · 0,200 A = 0,80 W (model 0,795 W); matches answers.py and exercises.json (unit W, tolerance 0,04).
-- Same model gives the maximum power 0,918 W at 4,96 V, consistent with the brief's 0,92 W at about 5,0 V and 184 mA, so 0,80 W < P_max holds.
-- Physics: panel as a DC source, P = UI at the operating point fixed by the load's voltage; the check that I_sc · U_oc (1,2 W) is not reached at once matches the brief's misconception section.
-- Figure fy6-14/ex-kenno: curve on a 1 V / 50 mA grid, nothing marked; alt text says the curve stays near 200 mA up to about 4 V, which gives the needed reading; no power shown.
-- Irradiance stated constant in the task; solution complete (reading, P = UI, mA → A, substitution, rounding reason, check).
-- Content hash checked at start and end.
+- All 20 numeric answers recomputed in one script (R = (U − U_D)/I, P = UI, η = P/(GA), E = Pt, the table maxima in L2-06 and L3-02, the yearly sums 1027 kWh/m² and 5340 kWh in L3-04, the load-line intersection 13,78 mA at 2,02 V in L3-05); all agree with answers.py and exercises.json.
+- L3-04 c: six deficit months (Jan–Mar, Oct–Dec), production 853 kWh, deficit 2517 kWh; "vähintään" is correct because hourly mismatches within a month only add to the purchase.
+- L3-05 a: threshold from the steep part extrapolated, 2,00 V, as the glossary defines; c: 0,10 V over a four-fold current, right.
+- L2-06 table: U/I matches each load resistor within rounding; the powers in the solution are right.
+- L2-08: exactly one correct option and one correct reason; each distractor's feedback names its error correctly (parallel branches are independent; a diode in series blocks the lamp).
+- L1-06, L1-07: each has exactly one correct option; the forward/reverse rule matches the glossary.
+- Rounding: shown answers (e.g. 2,1·10² Ω, 3,9·10² Ω, 17 %, 20 %) fall inside the page check; the limiting data are named correctly under P7(b).
+- L2-01 reverse voltage 9,0 V and the 5 V reverse rating remark: correct and safety-relevant.
+- Figures ex-led (2,2 V at 10 mA from the model m = 0,050 V) and ex-kenno (198,7 mA at 4,0 V) give the read values, and neither writes the answer.
+- Scope: components only, with no p–n microphysics; Level 3 combines Kirchhoff, Ohm and power.

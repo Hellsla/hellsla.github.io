@@ -16,7 +16,12 @@
 **Principle:** A strip is a conductor of uniform thickness, whose resistance is proportional to its length and inversely proportional to its cross-sectional area (chapter *Resistance and Ohm's law*). The cross-section of a strip is a rectangle whose area is the width times the thickness.
 **Formula:** $R_1 = \rho\,\dfrac{l}{A}$, so $A = \dfrac{\rho l}{R_1}$, and $A = bh$, so $h = \dfrac{A}{b} = \dfrac{\rho l}{R_1 b}$
 **Conversions:** $3.0\,\text{mm} = 3.0 \cdot 10^{-3}\,\text{m}$ and finally $1\,\text{m} = 10^{6}\,\mu\text{m}$
-**Substitution:** $A = \dfrac{3.0 \cdot 10^{-7}\,\Omega\cdot\text{m} \cdot 1.10\,\text{m}}{11.25\,\Omega} = 2.933 \cdot 10^{-8}\,\text{m}^2$ and $h = \dfrac{2.933 \cdot 10^{-8}\,\text{m}^2}{3.0 \cdot 10^{-3}\,\text{m}} = 9.78 \cdot 10^{-6}\,\text{m} = 9.78\,\mu\text{m}$
+**Substitution:** $$
+\begin{aligned}
+A &= \dfrac{3.0 \cdot 10^{-7}\,\Omega\cdot\text{m} \cdot 1.10\,\text{m}}{11.25\,\Omega} \\
+&= 2.933 \cdot 10^{-8}\,\text{m}^2
+\end{aligned}
+$$ and $h = \dfrac{2.933 \cdot 10^{-8}\,\text{m}^2}{3.0 \cdot 10^{-3}\,\text{m}} = 9.78 \cdot 10^{-6}\,\text{m} = 9.78\,\mu\text{m}$
 **Answer:** The thickness of a strip is $h \approx 9.8\,\mu\text{m}$, that is, about a hundredth of a millimetre, two significant figures like the resistivity and the width.
 **Reasonableness:** A conducting strip printed on the surface of the glass is a very thin film, so a thickness of micrometres is credible. If the strip were a millimetre thick, its resistance would be a hundred times smaller, and the current would be too large.
 
@@ -33,7 +38,12 @@
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $R = \dfrac{11.25\,\Omega}{10} = 1.125\,\Omega$, $I = \dfrac{12.6\,\text{V}}{1.125\,\Omega + 0.020\,\Omega} = 11.00\,\text{A}$ and $P = 1.125\,\Omega \cdot (11.00\,\text{A})^2 = 136.2\,\text{W}$
 **Answer:** The power of the heater is $P \approx 136\,\text{W}$, three significant figures like the emf $12.6\,\text{V}$.
-**Reasonableness:** The terminal voltage is $12.6\,\text{V} - 0.020\,\Omega \cdot 11.0\,\text{A} = 12.38\,\text{V}$, and $\tfrac{(12.38\,\text{V})^2}{1.125\,\Omega} \approx 136\,\text{W}$, the same result. The power is about $84\,\%$ of that with the engine running, because the power is proportional to the square of the voltage and $\left(\tfrac{12.38}{13.5}\right)^2 \approx 0.84$. With the engine running the alternator keeps the voltage higher.
+**Reasonableness:** The terminal voltage is $$
+\begin{aligned}
+&12.6\,\text{V} - 0.020\,\Omega \cdot 11.0\,\text{A} \\
+&= 12.38\,\text{V}
+\end{aligned}
+$$, and $\tfrac{(12.38\,\text{V})^2}{1.125\,\Omega} \approx 136\,\text{W}$, the same result. The power is about $84\,\%$ of that with the engine running, because the power is proportional to the square of the voltage and $\left(\tfrac{12.38}{13.5}\right)^2 \approx 0.84$. With the engine running the alternator keeps the voltage higher.
 
 ### Yleisiä virheitä
 - In part a the resistance of the whole heater $\tfrac{13.5\,\text{V}}{12.0\,\text{A}} = 1.125\,\Omega$ is taken as the resistance of a strip, or the strips are assumed to be in series, so that the resistance is divided by ten in the wrong direction.
@@ -84,7 +94,12 @@
 **Conversions:** $436.8\,\text{Wh} = 0.4368\,\text{kWh}$ and $15\,\text{c/kWh} = 0.15\,\text{€/kWh}$
 **Substitution:** $W_\text{ch} = 42.0\,\text{V} \cdot 10.4\,\text{Ah} = 436.8\,\text{Wh}$, $\eta = \dfrac{374.4\,\text{Wh}}{436.8\,\text{Wh}} = 0.857$ and $K = 0.15\,\tfrac{\text{€}}{\text{kWh}} \cdot 0.4368\,\text{kWh} = 0.066\,\text{€}$
 **Answer:** The efficiency is $\eta \approx 86\,\%$, and one full charge costs about $7\,\text{c}$. The precision is two significant figures, because the rated voltage of the battery $36\,\text{V}$ is given to only two figures.
-**Reasonableness:** The efficiency is below $100\,\%$, because $436.8\,\text{Wh} - 374.4\,\text{Wh} \approx 62\,\text{Wh}$ is transformed into internal energy of the resistances of the charger, the leads and the battery; that is why the charger and the battery warm up during charging. About seven cents for a ride of about $28\,\text{km}$ is very cheap.
+**Reasonableness:** The efficiency is below $100\,\%$, because $$
+\begin{aligned}
+&436.8\,\text{Wh} - 374.4\,\text{Wh} \\
+&\approx 62\,\text{Wh}
+\end{aligned}
+$$ is transformed into internal energy of the resistances of the charger, the leads and the battery; that is why the charger and the battery warm up during charging. About seven cents for a ride of about $28\,\text{km}$ is very cheap.
 
 ### Yleisiä virheitä
 - In part a milliampere-hours or ampere-hours are taken as energy, or watt-hours are not converted into joules by substitution.
@@ -276,7 +291,14 @@
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $I = \dfrac{4.63\,\text{V}}{3.6\,\Omega + 0.733\,\Omega} = 1.069\,\text{A}$, $P = 3.6\,\Omega \cdot (1.069\,\text{A})^2 = 4.11\,\text{W}$, $EI = 4.63\,\text{V} \cdot 1.069\,\text{A} = 4.95\,\text{W}$ and $\dfrac{4.11\,\text{W}}{4.95\,\text{W}} = 0.831$
 **Answer:** The power transferred to the bulb is $P \approx 4.1\,\text{W}$, which is about $83\,\%$ of the source power. The precision is two significant figures like the resistance of the bulb $3.6\,\Omega$.
-**Reasonableness:** The internal resistance takes $0.733\,\Omega \cdot (1.069\,\text{A})^2 \approx 0.84\,\text{W}$, and $4.11\,\text{W} + 0.84\,\text{W} = 4.95\,\text{W}$, as conservation of energy requires. The fraction is also $\tfrac{R}{R + R_\text{s}} = \tfrac{3.6}{4.33} \approx 0.83$. The current $1.07\,\text{A}$ is slightly above the measuring range, so the model probably holds well for it.
+**Reasonableness:** The internal resistance takes $$
+\begin{aligned}
+&0.733\,\Omega \cdot (1.069\,\text{A})^2 \\
+&\approx 0.84\,\text{W}
+\end{aligned}
+$$, and $$
+4.11\,\text{W} + 0.84\,\text{W} = 4.95\,\text{W}
+$$, as conservation of energy requires. The fraction is also $\tfrac{R}{R + R_\text{s}} = \tfrac{3.6}{4.33} \approx 0.83$. The current $1.07\,\text{A}$ is slightly above the measuring range, so the model probably holds well for it.
 
 ### Yleisiä virheitä
 - In part a the points are joined into a broken line, or the vertical axis is broken without marking the break.
@@ -294,7 +316,13 @@
 ### a)
 **Find:** whether claim 1 is true and how much power is transformed into internal energy in the $15\,\text{m}$ extension cord
 **Principle:** Current is not used up: the same charge passes along the cord to the device and returns along the other conductor (chapter *Electric circuit, current and voltage*). The conductors have the resistance $R = \rho\,\tfrac{l}{A}$ (chapter *Resistance and Ohm's law*), and in a resistance electrical energy is transformed into internal energy at the power $P = RI^2$ (chapter *Electric power and the heating of a resistor*).
-**Model answer:** The claim is wrong. No current is used up in the cord: the current going to the device and the current returning from it are equal. The cord heats up because in its resistance electrical energy is transformed into internal energy at the power $P = RI^2$. The current passes through two conductors, so the distance is $2 \cdot 15\,\text{m} = 30\,\text{m}$, and $R = 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \tfrac{30\,\text{m}}{0.75 \cdot 10^{-6}\,\text{m}^2} = 0.68\,\Omega$. With a current of $10\,\text{A}$ the power is $0.68\,\Omega \cdot (10\,\text{A})^2 = 68\,\text{W}$, like a small heater inside the cord. The resistance is proportional to the length and inversely proportional to the cross-sectional area, so a thin cord heats up equally much per unit length whether it is short or long. The power grows as the square of the current, so the decisive factor is a large current: a thin cord is dangerous with a large current even when it is short, and especially when it is wound on a reel, so that the heat cannot escape. A thicker cord of $1.5\,\text{mm}^2$ would halve the power to $34\,\text{W}$.
+**Model answer:** The claim is wrong. No current is used up in the cord: the current going to the device and the current returning from it are equal. The cord heats up because in its resistance electrical energy is transformed into internal energy at the power $P = RI^2$. The current passes through two conductors, so the distance is $2 \cdot 15\,\text{m} = 30\,\text{m}$, and $$
+\begin{aligned}
+R &= 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \\
+&\cdot \tfrac{30\,\text{m}}{0.75 \cdot 10^{-6}\,\text{m}^2} \\
+&= 0.68\,\Omega
+\end{aligned}
+$$. With a current of $10\,\text{A}$ the power is $0.68\,\Omega \cdot (10\,\text{A})^2 = 68\,\text{W}$, like a small heater inside the cord. The resistance is proportional to the length and inversely proportional to the cross-sectional area, so a thin cord heats up equally much per unit length whether it is short or long. The power grows as the square of the current, so the decisive factor is a large current: a thin cord is dangerous with a large current even when it is short, and especially when it is wound on a reel, so that the heat cannot escape. A thicker cord of $1.5\,\text{mm}^2$ would halve the power to $34\,\text{W}$.
 
 ### b)
 **Find:** whether claim 2 is true when a $2000\,\text{W}$ kettle and an $850\,\text{W}$ toaster are on the same $10\,\text{A}$ circuit
@@ -304,7 +332,12 @@
 ### c)
 **Find:** whether claim 3 is true, and how large the voltage between the bird's feet is
 **Principle:** The current through the body is driven by the potential difference, that is, the voltage, between the two points where the body is in contact (chapter *Kirchhoff's laws and potential in a circuit*). In a conductor the potential falls by $RI$ in the direction of the current, and the resistance of a short piece of conductor is $R = \rho\,\tfrac{l}{A}$ (chapter *Resistance and Ohm's law*).
-**Model answer:** The claim is true. The piece of line between the bird's feet is $4.0\,\text{cm}$ long, so its resistance is $2.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \tfrac{0.040\,\text{m}}{400 \cdot 10^{-6}\,\text{m}^2} = 2.7 \cdot 10^{-6}\,\Omega$, and the voltage between the feet is $2.7 \cdot 10^{-6}\,\Omega \cdot 600\,\text{A} \approx 1.6\,\text{mV}$. Such a small voltage drives hardly any current through the bird's body, although the whole bird is, together with the line, at a high potential relative to the earth. The pylon is at the potential of the earth. If the bird touches it at the same time, almost the whole voltage between the line and the earth, tens or hundreds of kilovolts, is across its body, and a dangerous current passes through the body. So what is dangerous is not a high potential but a large potential difference between two points of the body.
+**Model answer:** The claim is true. The piece of line between the bird's feet is $4.0\,\text{cm}$ long, so its resistance is $$
+\begin{aligned}
+&2.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \tfrac{0.040\,\text{m}}{400 \cdot 10^{-6}\,\text{m}^2} \\
+&= 2.7 \cdot 10^{-6}\,\Omega
+\end{aligned}
+$$, and the voltage between the feet is $2.7 \cdot 10^{-6}\,\Omega \cdot 600\,\text{A} \approx 1.6\,\text{mV}$. Such a small voltage drives hardly any current through the bird's body, although the whole bird is, together with the line, at a high potential relative to the earth. The pylon is at the potential of the earth. If the bird touches it at the same time, almost the whole voltage between the line and the earth, tens or hundreds of kilovolts, is across its body, and a dangerous current passes through the body. So what is dangerous is not a high potential but a large potential difference between two points of the body.
 
 ### Yleisiä virheitä
 - In part a the length of the cord is taken as $15\,\text{m}$, although the current passes through two conductors, or square millimetres are not converted into square metres.
@@ -332,7 +365,12 @@
 ### c)
 **Find:** how the measurement is improved so that the validity of Ohm's law can be established reliably
 **Principle:** A dependence is established most reliably from a graph in which a straight line has been fitted to many points (chapter *Graphing and fitting a straight line*). The error limit of a meter is smallest when the smallest range on which the reading fits is used (chapter *Measurements in an electric circuit*). Ohm's law concerns a constant temperature, so the temperature must be kept constant (chapter *Resistance and Ohm's law*).
-**Model answer:** At least eight points are measured over a wide voltage range, for example $0.5$–$10\,\text{V}$, and an $(I, U)$ graph is drawn. If the resistor obeys Ohm's law, the points lie on a straight line through the origin whose slope is $R$; a deviation from the line shows better in a graph than in three ratios. Each reading is taken on the smallest range on which it fits: for example $0.510\,\text{V}$ on the $2\,\text{V}$ range gives the error limit $0.005 \cdot 0.510\,\text{V} + 2 \cdot 0.001\,\text{V} \approx 0.005\,\text{V}$, that is, about $0.9\,\%$. The temperature is kept constant: the power of the resistor is kept small, the readings are taken quickly, and the voltage is both increased and decreased, so that any effect of heating would show as differences. The ammeter is kept in series and the voltmeter in parallel with the resistor, and the effect of the meters is assessed: the resistance of the voltmeter is of the order of megohms, that is, much larger than $100\,\Omega$, so a negligibly small current passes through it. The result is given with its error limits.
+**Model answer:** At least eight points are measured over a wide voltage range, for example $0.5$–$10\,\text{V}$, and an $(I, U)$ graph is drawn. If the resistor obeys Ohm's law, the points lie on a straight line through the origin whose slope is $R$; a deviation from the line shows better in a graph than in three ratios. Each reading is taken on the smallest range on which it fits: for example $0.510\,\text{V}$ on the $2\,\text{V}$ range gives the error limit $$
+\begin{aligned}
+&0.005 \cdot 0.510\,\text{V} + 2 \cdot 0.001\,\text{V} \\
+&\approx 0.005\,\text{V}
+\end{aligned}
+$$, that is, about $0.9\,\%$. The temperature is kept constant: the power of the resistor is kept small, the readings are taken quickly, and the voltage is both increased and decreased, so that any effect of heating would show as differences. The ammeter is kept in series and the voltmeter in parallel with the resistor, and the effect of the meters is assessed: the resistance of the voltmeter is of the order of megohms, that is, much larger than $100\,\Omega$, so a negligibly small current passes through it. The result is given with its error limits.
 
 ### Yleisiä virheitä
 - In part a the error limit is calculated from the percentage alone, so that the digits part $n \cdot r$ is forgotten and the error limit is too small.
@@ -351,7 +389,12 @@
 **Principle:** In the resistor electrical energy is transformed into internal energy (chapter *Electric power and the heating of a resistor*), and from the resistor it is transferred as heat to the water. The efficiency of a resistive heater is practically $100\,\%$, and when the heat losses are ignored, all the electrical energy heats the water (chapter *Heating and cooling of matter*). The power is constant, so the energy is the power times the time.
 **Formula:** $Pt = Q = cm\Delta T$, so $t = \dfrac{cm\Delta T}{P}$
 **Conversions:** $3.0\,\text{kW} = 3.0 \cdot 1000\,\text{W} = 3000\,\text{W}$; the change in temperature $70\,{}^\circ\text{C} - 15\,{}^\circ\text{C} = 55\,{}^\circ\text{C} = 55\,\text{K}$; finally $1\,\text{h} = 3600\,\text{s}$
-**Substitution:** $Q = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 300\,\text{kg} \cdot 55\,\text{K} = 6.914 \cdot 10^{7}\,\text{J}$ and $t = \dfrac{6.914 \cdot 10^{7}\,\text{J}}{3000\,\text{W}} = 23\,045\,\text{s} = 6.40\,\text{h}$
+**Substitution:** $$
+\begin{aligned}
+Q &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 300\,\text{kg} \cdot 55\,\text{K} \\
+&= 6.914 \cdot 10^{7}\,\text{J}
+\end{aligned}
+$$ and $t = \dfrac{6.914 \cdot 10^{7}\,\text{J}}{3000\,\text{W}} = 23\,045\,\text{s} = 6.40\,\text{h}$
 **Answer:** The heating takes about $t \approx 6.4\,\text{h}$, two significant figures like the power $3.0\,\text{kW}$.
 **Reasonableness:** The energy received by the water is $\tfrac{6.914 \cdot 10^{7}\,\text{J}}{3.6 \cdot 10^{6}\,\text{J/kWh}} = 19.2\,\text{kWh}$, and $3.0\,\text{kW} \cdot 6.4\,\text{h} = 19.2\,\text{kWh}$. The heating fits into the night hours, and it costs about $19.2\,\text{kWh} \cdot 0.14\,\tfrac{\text{€}}{\text{kWh}} \approx 2.7\,\text{€}$. Heat losses lengthen the time slightly.
 
@@ -381,7 +424,14 @@
 **Principle:** The shower water has been heated from $15\,{}^\circ\text{C}$ to $40\,{}^\circ\text{C}$, so the energy it has received is $cm\Delta T$ (chapter *Heating and cooling of matter*). The same energy has come from the resistor of the heater as electrical energy, because the efficiency of the resistor is practically $100\,\%$; it does not matter whether water at $70\,{}^\circ\text{C}$ is mixed with cold water, because the end result is the same amount of water at $40\,{}^\circ\text{C}$.
 **Formula:** $E = cm\Delta T$
 **Conversions:** $m = 10 \cdot 8.0\,\text{kg} = 80\,\text{kg}$, $\Delta T = 40\,{}^\circ\text{C} - 15\,{}^\circ\text{C} = 25\,\text{K}$ and finally $1\,\text{kWh} = 3.6 \cdot 10^{6}\,\text{J}$
-**Substitution:** $E = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 80\,\text{kg} \cdot 25\,\text{K} = 8.38 \cdot 10^{6}\,\text{J} = \dfrac{8.38 \cdot 10^{6}\,\text{J}}{3.6 \cdot 10^{6}\,\text{J/kWh}} = 2.33\,\text{kWh}$
+**Substitution:** $$
+\begin{aligned}
+E &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 80\,\text{kg} \cdot 25\,\text{K} \\
+&= 8.38 \cdot 10^{6}\,\text{J} \\
+&= \dfrac{8.38 \cdot 10^{6}\,\text{J}}{3.6 \cdot 10^{6}\,\text{J/kWh}} \\
+&= 2.33\,\text{kWh}
+\end{aligned}
+$$
 **Answer:** The shower corresponds to about $E \approx 2.3\,\text{kWh}$ of electrical energy, two significant figures like the water flow $8.0\,\text{l/min}$.
 **Reasonableness:** The shower costs about $2.33\,\text{kWh} \cdot 0.14\,\tfrac{\text{€}}{\text{kWh}} \approx 33\,\text{c}$. A full heater ($19.2\,\text{kWh}$) is enough for about $\tfrac{19.2}{2.33} \approx 8$ such showers; the same result is reached by noticing that about $36\,\text{l}$ of water at $70\,{}^\circ\text{C}$ is needed for the shower water.
 

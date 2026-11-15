@@ -2,7 +2,7 @@
 name: pedagogy-reviewer
 description: Independent review, from its review packet and the page captures, of whether a 16–19-year-old can learn from the lesson on a phone and a laptop.
 tools: Read, Bash, Write
-model: sonnet
+model: fable
 ---
 Work in `fysiikkalabra/`: run `cd fysiikkalabra` before your first command; every path in this file, in your prompt and in your packet is relative to it.
 
