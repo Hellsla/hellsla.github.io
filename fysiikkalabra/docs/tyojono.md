@@ -444,6 +444,7 @@ muuteta. Yksi kurssi = yksi haara ja yksi PR; enintään kuusi työntekijää yh
 Kohta 8m (#618) lisäsi `physics_phrases.py`:hen säännöt heat-into (P1) ja liikekitka: kurssin "lämmöksi"-virkkeet ovat
 `docs/physics-phrases-known.tsv`:ssä (vain fi; samat virkkeet fi-easy- ja en-versioissa korjataan samalla), ja korjaus poistaa
 kurssin rivit. FY9:n lepokitkan nimitykset ("suurin lepokitka") yhtenäistetään 9c:ssä (#602).
+Kitkan ja energian konseptikatselmoinnin löydökset (8m:ää vanhempia): `docs/audits/2026-11-15-kitka-konseptikatselmointi.md`.
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
