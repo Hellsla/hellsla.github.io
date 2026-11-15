@@ -1,4 +1,4 @@
-r"""Layout check of built lesson pages. Usage: python scripts/check_layout.py [page-id ...] [--width 360] [--site]
+r"""Layout check of built lesson pages. Usage: python scripts/check_layout.py [page-id ...] [--width 360] [--site] [--dir <folder of built pages>]
 
 Opens each page in preview/ (or site/) at a viewport (360 by default; CI runs 360, 390, 768, 1024, 1280, 1440 and
 1920, and 640 for a 1280 px window at 200 % zoom) and checks it in three states, because a page that is fine closed
@@ -10,7 +10,9 @@ can break when the student opens things (teacher 2026-10-27, "avautuvat kortit")
            every hidden feedback, model answer and worked-example stage shown, as after a student has answered all
 
 In each state it reports:
-  overflow   a formula KaTeX cannot parse, or an element wider than its box: display formulas (.katex-display), inline formulas that cannot wrap (a
+  overflow   a formula that is clipped: its last glyph beyond the box that shows it (a calculation row or a long inline formula
+             that must be scrolled to, "m/s" cut to "m/"; teacher 2026-11-15), in every open state, solutions included;
+             a formula KaTeX cannot parse, or an element wider than its box: display formulas (.katex-display), inline formulas that cannot wrap (a
              long \dfrac), inline SVG figures, the page itself, a table wider than its box (no table scrolls sideways, teacher
              2026-11-08: long words break at soft hyphens, scripts/tablefit.py), a calculation row whose left
              side runs into its right side or wraps although the chain has room (2026-10-31)
@@ -32,9 +34,15 @@ from courses import ROOT
 import i18n
 args = [a for a in sys.argv[1:] if not a.startswith("--")]
 width = int(sys.argv[sys.argv.index("--width") + 1]) if "--width" in sys.argv else 360
-args = [a for a in args if a != str(width)]
+args = [a for a in args if a != str(width) and (a != sys.argv[sys.argv.index("--dir") + 1] if "--dir" in sys.argv else True)]
 only = set(args)   # none: every page; CI on a pull request passes the pages scripts/ci_scope.py names
-OUT = ROOT / "site" if "--site" in sys.argv else ROOT / "preview" if (ROOT / "preview" / "index.html").exists() else ROOT / "site"   # --site: the published pages (CI)
+OUT = pathlib.Path(sys.argv[sys.argv.index("--dir") + 1]) if "--dir" in sys.argv else ROOT / "site" if "--site" in sys.argv else ROOT / "preview" if (ROOT / "preview" / "index.html").exists() else ROOT / "site"   # --site: the published pages (CI)
+
+CLIPPED = "clipped or scrolling, not fully shown: "
+KNOWN = ROOT / "docs" / "clipped-formulas.tsv"   # page <TAB> formula: what the pages already had when the check was added (2026-11-15); never added to by hand
+known = {tuple(l.rstrip("\n").split("\t", 1)) for l in KNOWN.read_text().splitlines() if l and not l.startswith("#")} if KNOWN.is_file() else set()
+write_known = "--write-known" in sys.argv   # add what this run finds to docs/clipped-formulas.tsv (once, from a full run at 360 and 390 px)
+found_known = set()
 
 JS = """() => {
   if (window.flFitMath) window.flFitMath();   // lesson.js: a too-wide inline formula gets its own scrolling line (kx-wide)
@@ -62,6 +70,22 @@ JS = """() => {
     const box = k.closest('p, li, .steps, .stage') || k.parentElement;
     const over = Math.round(k.getBoundingClientRect().right - (k.closest('.kc-card') ? box.getBoundingClientRect().right : Math.min(box.getBoundingClientRect().right, vw)));   // a concept card's own box is the limit
     if (over > 1) { const ann = k.querySelector('annotation'); out.push({what: 'formula', over, text: 'inline, cannot wrap: ' + (ann ? ann.textContent.slice(0, 70) : '')}); }
+  }
+  // clipped: a formula whose ink runs past the edge of what shows it (teacher 2026-11-15; fy8-1, fy8-2: "m/s" cut to "m/" in a
+  // solution's calculation row, which scrolls sideways on its own, and a long inline formula, which scrolls on its own line).
+  // A reviewer sees a screenshot, so what has to be scrolled to is cut off. The limit is the nearest box that clips (overflow
+  // other than visible: a calculation chain, a scrolling formula line, a concept card) or the window, measured to the last
+  // glyph; a formula cannot rely on scrolling. (display formulas have their own check above)
+  const ink = (k) => [...k.querySelectorAll('.katex-html *')].filter((e) => !e.children.length && e.textContent.trim()).reduce((m, e) => Math.max(m, e.getBoundingClientRect().right), 0);
+  for (const k of document.querySelectorAll('main .katex')) {
+    if (vw > 480 || !V(k) || k.parentElement.closest('.katex') || k.closest('.katex-display, svg, #sim-root, thead, .sim-tex-layer, .fig-tex')) continue;   // a phone's width: what a student scrolls to on a laptop is not the finding
+    let lim = vw;
+    for (let a = k.parentElement; a && a !== document.body; a = a.parentElement) {
+      if (getComputedStyle(a).overflowX === 'visible' || !a.clientWidth) continue;
+      lim = Math.min(lim, a.getBoundingClientRect().left + a.clientLeft + a.clientWidth);
+    }
+    const hidden = Math.max(Math.round(ink(k) - lim), getComputedStyle(k).overflowX === 'visible' ? 0 : k.scrollWidth - k.clientWidth);
+    if (hidden > 2) { const ann = k.querySelector('annotation'); out.push({what: 'formula', over: hidden, text: 'clipped or scrolling, not fully shown: ' + (ann ? ann.textContent.slice(0, 70) : '')}); }
   }
   for (const c of document.querySelectorAll('main .eq-chain')) {   // a calculation set as rows (mathlayout.py): its left side must neither spill into the right one
     if (!V(c)) continue;                                          // nor wrap while the chain has room (teacher 2026-10-31, the visual reviewer's fy1-4 and fy3-7 findings)
@@ -191,8 +215,14 @@ with sync_playwright() as pw:
             found += [dict(f, state=state) for f in page.evaluate(JS)]
         page.close()
         uniq = []
+        key = page_file.relative_to(OUT).with_suffix("").as_posix()
         for f in found:                               # the same problem in several states is reported once, with its first state
             if not any(u["what"] == f["what"] and u["text"] == f["text"] for u in uniq): uniq.append(f)
+        was = [f for f in uniq if f["text"].startswith(CLIPPED) and (key, f["text"][len(CLIPPED):]) in known]   # a clipped formula the page already had
+        for f in uniq:
+            if f["text"].startswith(CLIPPED) and write_known: found_known.add((key, f["text"][len(CLIPPED):]))
+        if write_known: was = [f for f in uniq if f["text"].startswith(CLIPPED)]
+        uniq = [f for f in uniq if f not in was]
         hard = uniq   # a table too wide for its box fails too: no table scrolls sideways (teacher 2026-11-08)
         tag = f"{OUT.name}/{page_file.relative_to(OUT).with_suffix('').as_posix()} at {width} px"
         if hard:
@@ -201,6 +231,11 @@ with sync_playwright() as pw:
             for f in uniq:
                 print(f"  {f['what']:8} {f['over']:4} px  [{f['state']}]  {f['text']}" )
         else:
-            print(f"OK   {tag}")
+            print(f"OK   {tag}" + (f" ({len(was)} known clipped formulas, docs/clipped-formulas.tsv)" if was else ""))
     b.close()
-sys.exit(1 if bad else 0)
+if write_known:
+    rows = sorted(known | found_known)
+    KNOWN.write_text("# Formulas that were clipped on a phone (360 or 390 px, solutions open) when check_layout.py learned to see them (teacher 2026-11-15, work queue 5b).\n"
+                     "# page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed\n"
+                     "# (fix the formula and delete its row); written by `check_layout.py --write-known`, never by hand.\n" + "".join(f"{p}\t{t}\n" for p, t in rows))
+sys.exit(1 if bad and not write_known else 0)
