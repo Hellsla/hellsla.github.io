@@ -78,7 +78,7 @@ fy7-6	325	- \tfrac{1}{2} \cdot 0{,}025\,\text{kg} \cdot (0{,}15\,\text{m/s})^2	-
 fy7-6	325	= 0{,}29430\,\text{J} - 0{,}00028\,\text{J}	= 0.29430\,\text{J} - 0.00028\,\text{J}					
 fy7-6	325	= 0{,}29402\,\text{J}	= 0.29402\,\text{J}					
 fy7-7	310	\Phi = BA\cos(2\pi f t)	\Phi = BA\cos(2\pi f t)					
-fy7-7	310	e = e_0 \sin(2\pi f t)	e = e_0 \sin(2\pi f t)	sinimuotoinen vaihtojännite	sinusoidal alternating voltage	MAFY	Sähkömagnetismin kaavoja	MAFY: u = u₀ sin(2πft); tunnin merkinnät e ja e_0
+fy7-7	310	e = e_0 \sin(2\pi f t)	e = e_0 \sin(2\pi f t)	sinimuotoinen vaihtojännite ajan funktiona	sinusoidal alternating voltage as a function of time	MAFY	Sähkömagnetismin kaavoja	MAFY: u = u₀ sin(2πft); tunnin merkinnät e ja e_0
 fy7-7	310	e_0 = NBA \cdot 2\pi f	e_0 = NBA \cdot 2\pi f					
 fy7-7	359	U = \frac{U_0}{\sqrt{2}}	U = \frac{U_0}{\sqrt{2}}	sinimuotoisen vaihtojännitteen tehollinen arvo	rms value of a sinusoidal alternating voltage	MAFY	Sähkömagnetismin kaavoja	MAFY: U_eff = u₀/√2; tunnin merkinnät U ja U_0
 fy7-7	359	I = \frac{I_0}{\sqrt{2}}	I = \frac{I_0}{\sqrt{2}}	sinimuotoisen vaihtovirran tehollinen arvo	rms value of a sinusoidal alternating current	MAFY	Sähkömagnetismin kaavoja	MAFY: I_eff = i₀/√2; tunnin merkinnät I ja I_0

@@ -10,7 +10,7 @@ ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta
 
 ## 3. Kaavat taulukkokirjan muotoon: valmis
 
-FY1–FY9 on tehty (#501, #522, #527, #529, #572, #576, #578, #580, #583); FY7:n neljä `\\[Npt]`-kaavaa nimettiin kohdassa 3b (#589). FY10:ssä ja FY14:ssä ei ole nimettäviä
+FY1–FY9 on tehty (#501, #522, #527, #529, #572, #576, #578, #580, #583); FY7:n neljä `\\[Npt]`-kaavaa nimettiin kohdassa 3b (#589; nimet tarkistettu MAFY:n raakadatasta, koordinaattori 15.11: `curl https://mafytaulukot.fi/data/latestversion` antaa sivujen id:t ja versiot, sisältö `https://mafytaulukot.fi/<id>/fi/<versio>/theory.html`). FY10:ssä ja FY14:ssä ei ole nimettäviä
 kaavoja (opettaja 14.11: "ei tarvitse"). FY5:ssä F pysyy gravitaatiolaissa (opettaja 14.11). Keskinopeuden tunnus on
 kaikkialla $v_\text{k}$, ei $v_\text{ka}$ (opettaja 2026-11-13). Kohta 3 on valmis; FY8:n kuusi `\\[Npt]`-lohkoa ovat Sijoitus-laskuketjuja ja jäävät nimeämättä (koordinaattorin päätös 14.11).
 

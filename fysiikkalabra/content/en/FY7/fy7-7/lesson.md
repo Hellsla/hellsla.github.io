@@ -309,7 +309,7 @@ In the large generators of power plants an electromagnet rotates and the coils s
 When a coil with $N$ turns and area $A$ rotates steadily in a uniform magnetic field $B$ at a rotation frequency $f$, and at the moment $t = 0$ the plane of the coil is perpendicular to the field, the flux through the coil and the voltage induced in it are
 ```kaavat
 \Phi = BA\cos(2\pi f t)
-sinusoidal alternating voltage :: e = e_0 \sin(2\pi f t)
+sinusoidal alternating voltage as a function of time :: e = e_0 \sin(2\pi f t)
 e_0 = NBA \cdot 2\pi f
 ```
 where $\Phi$ is the magnetic flux through one turn (Wb), $e$ the instantaneous value of the voltage (V), $e_0$ the peak value of the voltage (V), $N$ the number of turns, $B$ the magnetic flux density (T), $A$ the area of the coil (m²) and $f$ the rotation frequency (Hz). The frequency of the voltage is the same as the rotation frequency, and the period is $T = 1 : f$. The flux changes unevenly during the rotation, so $e$ is the instantaneous voltage: it is greatest when the flux is zero and changes fastest, and zero when the flux is at its greatest.

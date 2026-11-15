@@ -319,7 +319,7 @@ Suomessa oli vuoden 2024 lopussa $1835$ tuulivoimalaa. Niiden yhteenlaskettu nim
 Käämissä on $N$ kierrosta, ja sen pinta-ala on $A$. Käämi pyörii tasaisesti homogeenisessa eli joka kohdassa samanlaisessa magneettikentässä $B$. Pyörimistaajuus on $f$. Hetkellä $t = 0$ käämin taso on kohtisuorassa kenttää vastaan. Silloin käämin läpi kulkeva vuo ja käämiin syntyvä jännite ovat
 ```kaavat
 \Phi = BA\cos(2\pi f t)
-sinimuotoinen vaihtojännite :: e = e_0 \sin(2\pi f t)
+sinimuotoinen vaihtojännite ajan funktiona :: e = e_0 \sin(2\pi f t)
 e_0 = NBA \cdot 2\pi f
 ```
 missä $\Phi$ on magneettivuo yhden kierroksen läpi (Wb), $e$ jännitteen hetkellinen arvo eli arvo tietyllä hetkellä (V), $e_0$ jännitteen huippuarvo eli suurin arvo (V), $N$ kierrosten lukumäärä, $B$ magneettivuon tiheys (T), $A$ käämin pinta-ala (m²) ja $f$ pyörimistaajuus eli kierrosten määrä sekunnissa (Hz). Jännitteen taajuus on sama kuin pyörimistaajuus. Jaksonaika eli yhden kierroksen kesto on $T = 1 : f$. Vuo muuttuu pyöriessä epätasaisesti, joten $e$ on hetkellinen jännite. Se on suurin, kun vuo on nolla ja muuttuu nopeimmin. Se on nolla, kun vuo on suurimmillaan.

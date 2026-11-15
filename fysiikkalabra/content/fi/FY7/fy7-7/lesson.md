@@ -309,7 +309,7 @@ Voimalaitosten suurissa generaattoreissa pyörii sähkömagneetti, ja käämit o
 Kun käämi, jossa on $N$ kierrosta ja jonka pinta-ala on $A$, pyörii tasaisesti homogeenisessa magneettikentässä $B$ pyörimistaajuudella $f$ ja hetkellä $t = 0$ käämin taso on kohtisuorassa kenttää vastaan, käämin läpi kulkeva vuo ja käämiin syntyvä jännite ovat
 ```kaavat
 \Phi = BA\cos(2\pi f t)
-sinimuotoinen vaihtojännite :: e = e_0 \sin(2\pi f t)
+sinimuotoinen vaihtojännite ajan funktiona :: e = e_0 \sin(2\pi f t)
 e_0 = NBA \cdot 2\pi f
 ```
 missä $\Phi$ on magneettivuo yhden kierroksen läpi (Wb), $e$ jännitteen hetkellinen arvo (V), $e_0$ jännitteen huippuarvo (V), $N$ kierrosten lukumäärä, $B$ magneettivuon tiheys (T), $A$ käämin pinta-ala (m²) ja $f$ pyörimistaajuus (Hz). Jännitteen taajuus on sama kuin pyörimistaajuus, ja jaksonaika on $T = 1 : f$. Vuo muuttuu pyöriessä epätasaisesti, joten $e$ on hetkellinen jännite: se on suurin, kun vuo on nolla ja muuttuu nopeimmin, ja nolla, kun vuo on suurimmillaan.
