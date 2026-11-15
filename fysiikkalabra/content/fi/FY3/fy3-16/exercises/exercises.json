@@ -131,7 +131,7 @@
       "text": "Kylmälaukun seinien yhteispinta-ala on $0{,}50\\,\\text{m}^2$ ja U-arvo $2{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. Ulkona on $25\\,{}^\\circ\\text{C}$, ja jääpussin lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa niin kauan kuin jäätä on. Kuinka suuri jääpussin massan pitää olla, jotta jäätä riittää 6,0 tunniksi? Oleta, että laukussa on vain jäätä. Pyöristä vastaus ylöspäin, jotta jää varmasti riittää.",
       "answer": 1.7,
       "unit": "kg",
-      "tolerance": 0.06
+      "tolerance": 0.04
     },
     {
       "id": "fy3-16-L2-02",
@@ -316,7 +316,7 @@
       "text": "Kylmälaukun seinien yhteispinta-ala on $0{,}50\\,\\text{m}^2$ ja U-arvo $1{,}5\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$.\n\nLaukkuun pakataan $0{,}50\\,\\text{kg}$ juomia, joiden lämpötila on $24\\,{}^\\circ\\text{C}$ ja ominaislämpökapasiteetti veden arvo $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, sekä pakastimesta otettu jääpussi, jonka lämpötila on $-10\\,{}^\\circ\\text{C}$ ($c_\\text{jää} = 2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). Ulkona on $30\\,{}^\\circ\\text{C}$.\n\nJäätä pitää riittää 6,0 tunniksi.\n\nOleta, että juomat jäähtyvät heti $0\\,{}^\\circ\\text{C}$:seen, että jää lämpenee ensin $0\\,{}^\\circ\\text{C}$:seen ja sulaa sitten, ja että seinän läpi tulee sama teho koko ajan kuin sisällä olisi $0\\,{}^\\circ\\text{C}$.\n\nKuinka suuri jääpussin massan vähintään pitää olla? Pyöristä vastaus ylöspäin, jotta jää varmasti riittää, ja anna se kilogrammoina.",
       "answer": 1.6,
       "unit": "kg",
-      "tolerance": 0.06
+      "tolerance": 0.04
     },
     {
       "id": "fy3-16-L3-04",
