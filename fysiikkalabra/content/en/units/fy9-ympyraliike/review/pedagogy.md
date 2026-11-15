@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: acdec75ed9fb3544
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 712d63b6ed8c62be.
+CONTENT-HASH: ad4c9cd221577e6e
+Review of the recognition chart (queue 9c) and the term change against the version passed at acdec75ed9fb3544; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- A: row 'bend on a level road -> friction turns the car, F_mu = mv^2/r': here the friction is static friction (no slipping), F <= F_mu0, not F_mu = mu N, and the symbol F_mu now means sliding friction in FY9. Name it ('static friction') in the sign or choice.
+- A: teacher.md says "every branch starts from the free-body diagram. For each branch ask..." but the chart has rows; reword.
+- B: equilibrium has only Sigma M = 0; the sign 'a rod stays in place' should also lead to Sigma F = 0 (the 'too' implies it).
+- B: no row for the vertical circle, which the problems use ('loop of a roller coaster').
 
 ## Checked
-Lever-arm symbols $r_\text{k}, r_\text{t}, r_\text{b}, r_\text{h}, r_\text{g}, d_\text{p}, d_\text{s}, d_\text{m}$ defined in Given or Conversions before use; the stone-and-stick solution now computes lever arms from the edge explicitly, which removes a jump the student could not follow. Satellite force share $\gamma M/(g r^2)$.
-Read the diff hunks of this unit for how #522 notation and #523 symbolic-first solutions interact: no symbol used with two meanings inside one solution, no duplicated derivation, no contradiction with the unit text, LaTeX balanced, the answer lines still match the substitutions, and the formula still precedes the numbers (CLAUDE.md Lesson form 7). Staging of the worked solutions (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) is intact.
+Rows: rod at rest, circular path a_n = v^2/r, omega given v = omega r, net force = m a_n, bend, gravitation, g from weight = gravitation, satellite (gamma M m/r^2 = m v^2/r). Satellite and g rows follow from the unit. aria matches.

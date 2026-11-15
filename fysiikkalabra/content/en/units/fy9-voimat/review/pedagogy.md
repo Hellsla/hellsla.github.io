@@ -1,13 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 28a3c34741ddd22d
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 4a1e0daa19b91386.
+VERDICT: FAIL
+CONTENT-HASH: 65a72267ecdbb241
+Review of the recognition chart (queue 9c) and the term change against the version passed at 28a3c34741ddd22d; full on the chart, delta on the rest.
 
 ## Blocking
-(none)
+- unit.md Kaava section (line 239): "In free-body diagrams F_mu stands for either kind of friction, static or kinetic." The term was changed everywhere else to sliding friction; this leaves "kinetic" as a second name in the same paragraph. Change to "static or sliding".
 
 ## Polish
-(none)
+- A: the old chart held Newton III (the opening question of the unit is about force and counterforce) and the slope (G_x = mg sin a, N = mg cos a; several tasks and the Kaava figure). Neither is on the chart. Add rows "two bodies act on each other -> F_AB = -F_BA" and "slope -> components of the weight".
+- A: teacher.md says go through the chart, then draws a slope diagram; OK, but the sentence cannot be tied to any chart row.
+- B: 'air resistance, speed levels off -> F_v = G' is true for a body falling vertically; add "falling".
+- B: row 'a != 0' and 'a = 0' choices are shown as symbols; the words 'acceleration zero' would read better aloud.
 
 ## Checked
-The force diagram (voimakuvio fence) in the inquiry solution still precedes the equations, and the acceleration is now solved symbolically before the numbers; extra-mass line change $k' = 1/m'$, $F_0' = \mu m' g$ matches the answer; static-friction mean and half-range formula.
-Read the diff hunks of this unit for how #522 notation and #523 symbolic-first solutions interact: no symbol used with two meanings inside one solution, no duplicated derivation, no contradiction with the unit text, LaTeX balanced, the answer lines still match the substitutions, and the formula still precedes the numbers (CLAUDE.md Lesson form 7). Staging of the worked solutions (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) is intact.
+Rows read: a = 0, a != 0, rod rotates (Sigma M = 0), rope (each body), frictionless, sliding friction F_mu = mu N, static friction F <= F_mu0, just about to slide (fully developed static friction = limiting friction, F_mu0 = mu0 N), terminal velocity. Friction terms match the brief and the glossary; aria says the same as the chart. Sovella/inquiry/solutions renames checked: only the word changed.

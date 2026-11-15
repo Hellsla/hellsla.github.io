@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8e16b09b0e569f61
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 0462ca982df89864.
+CONTENT-HASH: b242489c281d686d
+Review of the recognition chart (queue 9c) and the term change against the version passed at 8e16b09b0e569f61; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- A: teacher.md 25-35 min still says draw the (t,x) and (t,v) graphs "and show the slope downwards and the area upwards" while going through the chart; the chart no longer shows the three graphs or the down/up arrows. The Key idea text keeps the slope/area idea, so the instruction is still doable, but it no longer describes the figure.
+- A: row "no acceleration known -> mean velocity, Dx = (v0+v)/2 t" does not say that it needs constant acceleration; as a rule of thumb "acceleration not known" invites using it for any motion. Say "constant acceleration, a not given".
+- B: aria (and fi) read "pinta- ala" with a stray hyphen and space; screen readers say it as two words.
+- B: area under the (t,a) graph -> Delta v is missing; the old chart showed it.
 
 ## Checked
-Highest point simplified to $y_0 + v_0^2/2g$, timing-uncertainty extremes $a_\text{min}$ and $a_\text{max}$ given symbolically; consistent with the numbers.
-Read the diff hunks of this unit for how #522 notation and #523 symbolic-first solutions interact: no symbol used with two meanings inside one solution, no duplicated derivation, no contradiction with the unit text, LaTeX balanced, the answer lines still match the substitutions, and the formula still precedes the numbers (CLAUDE.md Lesson form 7). Staging of the worked solutions (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) is intact.
+Rows: constant v, constant a (v = v0 + at), distance with a, mean velocity, slope of x(t), slope of v(t), area under v(t). Order sensible (graph rows last). aria matches the rows, except the stray hyphen.

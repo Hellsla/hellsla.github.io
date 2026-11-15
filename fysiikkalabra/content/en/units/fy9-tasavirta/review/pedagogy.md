@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5990f23ea9ddfef8
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 5fb97cd3bc0ffb0e.
+CONTENT-HASH: 8b9ec94f3a8cf71b
+Review of the recognition chart (queue 9c) and the term change against the version passed at 5990f23ea9ddfef8; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- A: row 'power or energy of a device -> P = UI' gives no result for energy (E = P t / P = W/Dt); the sign says energy but the pill only power. Add "energy over time" or change the sign.
+- A: row 'battery has internal resistance -> U = E - R_s I' shows as a formula a result the course (CLAUDE.md, Johda itse) wants derived from the loop law, and the old chart deliberately avoided it. Show 'Sigma DeltaV = 0 around the loop' there, or confirm with the teacher.
+- B: the battery capacity Q = It row is gone.
 
 ## Checked
-Kettle cost with $t = Nnt_1$ before numbers, charger $0.4368\,\text{kWh}$ (conversion now matches the $436.8\,\text{Wh}$ in the substitution), series battery per-cell formulas, bulb power fraction $R/(R+R_\text{s})$, water heating.
-Read the diff hunks of this unit for how #522 notation and #523 symbolic-first solutions interact: no symbol used with two meanings inside one solution, no duplicated derivation, no contradiction with the unit text, LaTeX balanced, the answer lines still match the substitutions, and the formula still precedes the numbers (CLAUDE.md Lesson form 7). Staging of the worked solutions (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) is intact.
+Rows: current, Ohm, wire, series, parallel, junction (Sigma I_t = Sigma I_l), loop, power, internal resistance. Draw-the-circuit-first start fits. teacher.md updated to rows and true. aria matches.

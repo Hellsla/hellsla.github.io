@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1cc9fe9daf7c7ebf
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 2ed8859154e6b841.
+CONTENT-HASH: 7bbe7f3465dd6d42
+Review of the recognition chart (queue 9c) and the term change against the version passed at 1cc9fe9daf7c7ebf; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry `desibelit`: $\beta = 10\,\text{dB}$ "desibeliasteikon kerroin (määritelmä)" is a symbol the unit text never introduces; its kaavat line writes $10\lg(\dots)\,\text{dB}$. It does no harm, but writing $10\,\text{dB}$ directly, as in the version passed, matches the unit.
+- C: "kaksi lähdettä, voimistuu → Δs = nλ" and "vaimenee → Δs = (n + 1/2)λ" hold for sources in the same phase; the Kaava section states it ("samassa vaiheessa värähtelevästä lähteestä"), the chart implies it. Fine at this level.
+- C: the closed pipe (f_n = n·v/(4L), n odd) has no row although the Kaava and the teacher's plan (Tutki) use it; "kieli tai avoin putki" correctly excludes it, so nothing is wrong, only absent (pedagogy's call).
 
 ## Checked
-- inquiry `desibelit` solution: $r_2 = r_1\sqrt{10^{(L_1-L_2)/\beta}}$, 19 dB gives 79.43 and $r_2 = 178$ m, so 180 m. The symbolic form agrees with the unit's $L = 10\lg(I/I_0)\,\text{dB}$ (#522 name).
-- s1 b: $d = L - v/(2f') = 70.8$ mm. s4 pendulum: $l_0 = -b/k = -0.014$ m, $l = (T^2-b)/k = 0.977$ m. s6 bungee: $x = 21.59$ m, $d = L_0 + x = 39.6$ m.
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- Each of the nine rows against the Kaava section: mass on a spring → T = 2π√(m/k); pendulum, small angle → T = 2π√(l/g) (condition stated in the sign); speed/frequency/wavelength → v = fλ; constructive Δs = nλ, destructive Δs = (n + 1/2)λ; string or open pipe → f_n = n·v/(2L) (both ends nodes or both antinodes, right); two nearly equal frequencies → f_H = |f_1 − f_2|; source or observer moves → Doppler (the four forms in the Kaava, no formula claimed in the chart); decibels → L = 10 lg(I/I_0) dB, the MAFY form of mafy-tunnukset.tsv.
+- Symbols and names agree with kaavanimet.tsv; no vector in the chart, so no \overline needed; nothing outside FY9.
+- Rendered PNG (1280): the pills show the same formulas as figures.py.
+- ARIA_KARTTA: same nine rows in the same order and the same physics, the start box's "liike vai aalto" included.
+- teacher.md: only "käsitekartta" → "tunnistuskaavio"; no physics changed. unit.md: only the figure.

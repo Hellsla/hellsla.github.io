@@ -1,15 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: c744b5e13b28d510
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 513af1e7527c82c5.
+CONTENT-HASH: 22507547242a4988
+Review of the recognition chart (queue 9c) and the term change against the version passed at c744b5e13b28d510; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-- Pile-driver d: $N$ for the number of blows is defined where it is used, but in a force-diagram unit $N$ usually means the normal force; $n$ would avoid the double meaning.
+- C (row 1, "ei kitkaa, vain painovoima"): The precise condition is that only gravity does work. A pendulum's tension or a slope's normal force acts but does no work, so it does not break conservation. Suggestion: "vain painovoima tekee työtä".
+- C (row 5, collision or explosion → momentum conserved): The condition (external impulse negligible during the short event) is not on the chart. It is in the unit (Yleinen virhe), so this is acceptable at chart level.
+- Language: the aria-label says "jaettuna ottotehoon", which should be "ottoteholla". Not a physics issue.
 
 ## Checked
-- Exit ticket: $E_\text{k} = 0.30$ MJ; $v' = m_1v_1/(m_1+m_2) = 2.0$ m/s.
-- inquiry: KE share lost $1 - (m_A+m_B)v'^2/(m_Av_A^2) = 41.7$ %. Slide: $1 - v^2/(2gh) = 53.6$ %.
-- Sovella: $F_\text{ka}/G = 0.96$; $E_\text{k}'/E_\text{k} = 0.852$; $t_\text{r} = y_1 - kv_1 = 0.86$ s and $a = 6.25$ m/s²; $(v_2/v_1)^3 = 3.375$; $h'/h = 4/3$; $\Delta p/p = -6.3$ %; $\Delta T = NkE_\text{h}/(cm_\text{t}) = 7.14$ K.
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- Row 1 → $E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}$ and row 2 (friction or motor does work) → energy principle with $W$: both consistent with Kaava's mekaniikan energiaperiaate.
+- Rows 3–4 → $E_\text{k} = \tfrac12 mv^2$ and $E_\text{p} = mgh$: match Kaava.
+- Row 5 → $\overline{p}_\text{ennen} = \overline{p}_\text{jälkeen}$, with vectors overlined.
+- Row 6, elastic collision → $\Delta E_\text{k} = 0$ (total): correct.
+- Row 7 → $\overline{I} = \Delta\overline{p}$: matches Kaava.
+- Row 8 → $\eta = P_\text{a}/P_\text{o}$: MAFY form, consistent with the unit's power-plant derivations.
+- The aria-label states the same physics as each row.
+- sovella/solutions.md: liikekitka → liukukitka. The physics is unchanged ($F_\mu = \mu mg$, work $-\mu mgs$).
+- teacher.md: the term change only.

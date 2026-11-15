@@ -1,14 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: e297d1ba1b8c1dd6
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 90beeadb37d7835e.
+VERDICT: FAIL
+CONTENT-HASH: 6ad4a6f43f1059e3
+Review of the recognition chart (queue 9c) and the term change against the version passed at e297d1ba1b8c1dd6; full on the chart, delta on the rest.
 
 ## Blocking
-(none)
+- B (row 1 and ARIA_KARTTA): "suljettu järjestelmä → energia säilyy, E_alussa = E_lopussa". A closed system exchanges no matter but can exchange energy as heat and work; total energy is constant only in an isolated system. glossary.json says exactly this ("eristetty systeemi … Suljettuun systeemiin energiaa voi vielä siirtyä"), and the unit's own Kaava section says "Eristetyssä systeemissä, johon energiaa ei tule eikä josta sitä lähde". The chart contradicts both and teaches the wrong condition. Fix: "eristetty systeemi" (or "energiaa ei tule eikä lähde") in the sign and the aria-label.
 
 ## Polish
-- s1 d Periaate writes the line as $E = E_0 + kT$, while c writes $E = E_0 + k(T-T_0)$. This is correct because $T_0 = 0\,{}^\circ\text{C}$, but it could say so ("koska $T_0 = 0\,{}^\circ\text{C}$").
+- C: "voima siirtää matkan → W = Fs": the Kaava's condition is a constant force along the motion; "liikkeen suuntainen voima" in the sign would make it explicit.
+- Note for the teacher/pedagogy: "monta laitetta peräkkäin → η = η_1η_2η_3" is the Johda itse result of the Kaava section; the old map left it out on purpose (teacher 2026-11-12). Physics is right (each stage's output is the next stage's input).
 
 ## Checked
-- s1 c: $E = E_0 + k(T - T_0)$ with $(0\,{}^\circ\text{C}; 93\,\text{kWh})$ gives 230.2 kWh, so 230 kWh. d: $T = (E_\text{muu}-E_0)/k = 16.5\,{}^\circ\text{C}$.
-- s2 a: $P_\text{ka} = kNP_\text{nim} = 0.60$ MW, 5.26 GWh a year, battery 1.7 h.
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- Rows: energy over time → P = ΔE/Δt; steady power, known duration → E = Pt (Kaava: "tasaisella teholla"); kWh → 1 kWh = 1000 W·3600 s = 3,6 MJ (recomputed); useful and taken energy → η = W_a/W_o (MAFY symbols of mafy-tunnukset.tsv; aria's "annettu energia jaettuna otetulla" matches); chain → product of efficiencies (derivation in the johda block checked); fuel → Q = Hm; force over a distance → W = Fs.
+- Names and symbols agree with kaavanimet.tsv; nothing outside FY9.
+- ARIA_KARTTA lists the same eight rows in order with the same physics (so it carries the same "suljettu" error).
+- teacher.md: only "käsitekartta" → "tunnistuskaavio". unit.md: only the figure.

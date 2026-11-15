@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fdfc56cdc13d1300
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at cc45b31ff1a97ba3.
+CONTENT-HASH: 95262ce9df1aca45
+Review of the recognition chart (queue 9c) and the term change against the version passed at fdfc56cdc13d1300; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-- Part a density answer is now $2.7 \cdot 10^3$ (two figures) while part b writes $(2680 \pm 80)$; the answer explains the difference and tasks.json accepts both, so it is coherent. A student may still find the switch of rule between a and b subtle.
+- A: the old figure was the plan -> analysis loop of an experimental task, the unit's whole 'a plan answers six questions' section. The new chart covers only analysis (mean, spread, result, linear fit, slope, intercept); the planning half (variables, constants, repeats, error sources) has no row, though YO "plan an experiment" tasks are named in the unit. Add rows or a note in the start box.
+- A: "line misses the origin -> b != 0 -> systematic error" is only true when the model predicts a line through the origin (the unit says so; the pendulum T^2(l) intercept is another case). Put the condition in the sign: "model says through the origin, line misses it". The aria says "suggests", the pill does not.
+- B: teacher.md not touched; check it does not refer to the old loop.
 
 ## Checked
-Density precision, unrounded deceleration 4.1667 carried through b to d, the friction derivation with positive direction and both axes, rubric detail in tasks.json.
-Read the diff hunks of this unit for how #522 notation and #523 symbolic-first solutions interact: no symbol used with two meanings inside one solution, no duplicated derivation, no contradiction with the unit text, LaTeX balanced, the answer lines still match the substitutions, and the formula still precedes the numbers (CLAUDE.md Lesson form 7). Staging of the worked solutions (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) is intact.
+Rows: many results -> mean, variation -> half range, final result x +- Dx, small uncertainty -> relative, linear -> fit y = kx + b, slope from two far points, intercept. Order follows a solution. Friction term in Sovella changed to sliding friction, consistent. aria matches.
