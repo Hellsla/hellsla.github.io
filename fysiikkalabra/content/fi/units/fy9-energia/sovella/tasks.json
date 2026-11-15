@@ -342,7 +342,7 @@
        "detail": "Suoralta luetaan lämpötila, jossa $E = 12\\,\\text{kWh}$: noin $16$–$17\\,{}^\\circ\\text{C}$."
       },
       {
-       "text": "Selittää energian säilymisellä: laitteiden sähköenergia, ihmisten lämpö ja auringonsäteily muuttuvat sisällä lämmöksi, joten ne korvaavat osan lämpöhäviöistä.",
+       "text": "Selittää energian säilymisellä: laitteiden sähköenergia, ihmisten lämpö ja auringonsäteily lisäävät talon sisäenergiaa, joten ne korvaavat osan lämpöhäviöistä.",
        "tag": "concept",
        "points": 2
       },

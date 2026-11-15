@@ -105,7 +105,7 @@ $$, smaller than the about $1.2\,\text{kg/m}^3$ of air, as the ratio of the mola
 **Reasonableness:** What goes to waste is $$
 \begin{aligned}
 &485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \\
-&\approx 78\,\text{kW}
+&\approx 77\,\text{kW}
 \end{aligned}
 $$, that is, $16\,\%$, the same as $25\,\%$ of the heat power. The result is of the same order of magnitude as the $85$–$90\,\%$ of combined heat and power plants.
 
@@ -388,7 +388,7 @@ The resolution of the scale, $0.01\,\text{g}$, is less than $1\,\%$ of the incre
 If the points lie on a straight line but the line does not pass through the origin, this reveals a systematic error, for example air escaping every time on detaching.
 
 ### Yleisiä virheitä
-- In part a the amount of substance is calculated with the total pressure $311\,\text{kPa}$ and not with the increase in pressure, so the result is a third.
+- In part a the amount of substance is calculated with the total pressure $311\,\text{kPa}$ and not with the increase in pressure, so the result is about two thirds of the correct one.
 - In part b it is only stated that “there were measurement errors” without naming the source of error or the direction of its effect.
 - In part b the bulging of the bottle is named as the cause of the result being too small, although it acts the opposite way.
 - In part c only “more precise instruments” are proposed without telling what is measured and how.

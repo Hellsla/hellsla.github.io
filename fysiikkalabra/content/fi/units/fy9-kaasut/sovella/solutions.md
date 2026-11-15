@@ -105,7 +105,7 @@ $$, pienempi kuin ilman noin $1{,}2\,\text{kg/m}^3$, kuten moolimassojen suhde $
 **Järkevyys:** Hukaksi jää $$
 \begin{aligned}
 &485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \\
-&\approx 78\,\text{kW}
+&\approx 77\,\text{kW}
 \end{aligned}
 $$ eli $16\,\%$, sama kuin $25\,\%$ lämpötehosta. Tulos on samaa suuruusluokkaa kuin yhteistuotantolaitosten $85$–$90\,\%$.
 
@@ -388,7 +388,7 @@ Vaa'an tarkkuus $0{,}01\,\text{g}$ on alle $1\,\%$ massan kasvusta $3{,}28\,\tex
 Jos pisteet ovat suoralla mutta suora ei kulje origon kautta, se paljastaa systemaattisen virheen, esimerkiksi irrotuksessa joka kerta karkaavan ilman.
 
 ### Yleisiä virheitä
-- a-kohdassa ainemäärä lasketaan kokonaispaineella $311\,\text{kPa}$ eikä paineen kasvulla, jolloin tulos on kolmasosa.
+- a-kohdassa ainemäärä lasketaan kokonaispaineella $311\,\text{kPa}$ eikä paineen kasvulla, jolloin tulos on noin kaksi kolmasosaa oikeasta.
 - b-kohdassa todetaan vain ”mittausvirheitä oli” nimeämättä virhelähdettä tai sen vaikutuksen suuntaa.
 - b-kohdassa pullon pullistuminen nimetään syyksi liian pieneen tulokseen, vaikka se vaikuttaa päinvastoin.
 - c-kohdassa ehdotetaan vain ”tarkempia mittareita” kertomatta, mitä mitataan ja miten.

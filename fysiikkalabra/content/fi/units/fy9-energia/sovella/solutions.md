@@ -18,7 +18,7 @@ E_\text{tarve} &= 0{,}045\,\text{kW} \cdot 24\,\text{h} \\
 \end{aligned}
 $$
 **Vastaus:** $E_\text{tarve} \approx 1{,}5\,\text{kWh}$ eli $1{,}54 \cdot 3{,}6\,\text{MJ} \approx 5{,}5\,\text{MJ}$, kaksi merkitsevää numeroa kuten jääkaapin teho $45\,\text{W}$ ja kahvinkeittimen teho $1{,}0\,\text{kW}$.
-**Järkevyys:** Jääkaappi käyttää lähes kaksi kolmasosaa energiasta, vaikka sen teho on laitteista toiseksi pienin: se on päällä koko ajan. Kahvinkeittimen suuri teho vaikuttaa vähän, koska se on päällä vain neljännestunnin. Puolitoista kilowattituntia vuorokaudessa on pienen kesämökin tavallinen kulutus.
+**Järkevyys:** Jääkaappi käyttää noin $70\,\%$ energiasta, vaikka sen teho on laitteista toiseksi pienin: se on päällä koko ajan. Kahvinkeittimen suuri teho vaikuttaa vähän, koska se on päällä vain neljännestunnin. Puolitoista kilowattituntia vuorokaudessa on pienen kesämökin tavallinen kulutus.
 
 ### b)
 **Annettu:** a-kohdasta $E_\text{tarve} = 1{,}54\,\text{kWh}$; akun hyötysuhde $\eta_\text{akku} = 90\,\%$, vaihtosuuntaajan $\eta_\text{v} = 93\,\%$; pilvisen päivän tuotanto $1{,}5\,\text{kWh}$
@@ -219,8 +219,8 @@ $$
 
 ### d)
 **Kysytty:** ulkolämpötila, jossa lämmitystä ei mallin mukaan tarvita, ja miksi se ei ole $21\,{}^\circ\text{C}$
-**Periaate:** Kun lämmitystä ei tarvita, kulutus on pelkkä muu sähkönkulutus $E_\text{muu} = 12\,\text{kWh}$, joten suoralta $E = E_0 + kT$ ratkaistaan $T = \dfrac{E_\text{muu} - E_0}{k}$. Energia säilyy: kaikki sisällä käytetty sähköenergia muuttuu lopulta lämmöksi, ja myös ihmiset ja auringonsäteily tuovat taloon energiaa (luku *Energialajit ja energian säilyminen*).
-**Mallivastaus:** Jatketulta suoralta luetaan, että kulutus laskee muun kulutuksen tasolle $12\,\text{kWh}$ noin lämpötilassa $16$–$17\,{}^\circ\text{C}$ (suoran yhtälöstä $T = \dfrac{E_\text{muu} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4{,}9\,\text{kWh}/{}^\circ\text{C}} = 16{,}5\,{}^\circ\text{C}$). Talo tarvitsee lämmitystä siis vasta, kun ulkona on kylmempää. Lämpötila on noin $4\,\text{K}$ sisälämpötilaa $21\,{}^\circ\text{C}$ alempi, koska valaistuksen, ruoanlaiton ja laitteiden sähköenergia muuttuu sisällä lämmöksi. Lisäksi asukkaat lämmittävät taloa, ja ikkunoista tuleva auringonsäteily lisää energiaa. Nämä korvaavat pienen lämpötilaeron lämpöhäviöt, joten lämmittimiä tarvitaan vain lopun kattamiseen. Tulos on suuntaa antava: se perustuu talvipäivien suoraan, jota jatketaan pitkälle mitatun alueen ulkopuolelle, eikä aineisto erottele aurinkoa ja tuulta.
+**Periaate:** Kun lämmitystä ei tarvita, kulutus on pelkkä muu sähkönkulutus $E_\text{muu} = 12\,\text{kWh}$, joten suoralta $E = E_0 + kT$ ratkaistaan $T = \dfrac{E_\text{muu} - E_0}{k}$. Energia säilyy: kaikki sisällä käytetty sähköenergia muuttuu lopulta talon sisäenergiaksi, ja myös ihmiset ja auringonsäteily tuovat taloon energiaa (luku *Energialajit ja energian säilyminen*).
+**Mallivastaus:** Jatketulta suoralta luetaan, että kulutus laskee muun kulutuksen tasolle $12\,\text{kWh}$ noin lämpötilassa $16$–$17\,{}^\circ\text{C}$ (suoran yhtälöstä $T = \dfrac{E_\text{muu} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4{,}9\,\text{kWh}/{}^\circ\text{C}} = 16{,}5\,{}^\circ\text{C}$). Talo tarvitsee lämmitystä siis vasta, kun ulkona on kylmempää. Lämpötila on noin $4\,\text{K}$ sisälämpötilaa $21\,{}^\circ\text{C}$ alempi, koska valaistuksen, ruoanlaiton ja laitteiden sähköenergia muuttuu talossa sisäenergiaksi. Lisäksi asukkaat lämmittävät taloa, ja ikkunoista tuleva auringonsäteily lisää energiaa. Nämä korvaavat pienen lämpötilaeron lämpöhäviöt, joten lämmittimiä tarvitaan vain lopun kattamiseen. Tulos on suuntaa antava: se perustuu talvipäivien suoraan, jota jatketaan pitkälle mitatun alueen ulkopuolelle, eikä aineisto erottele aurinkoa ja tuulta.
 
 ### Yleisiä virheitä
 - Pisteet yhdistetään murtoviivaksi päivämäärän järjestyksessä, jolloin kuvaaja ei näytä riippuvuutta lämpötilasta.
@@ -355,12 +355,12 @@ $$
 &= 215{,}8\,\text{MWh} : 288{,}5\,\text{MWh} \\
 &= 0{,}748
 \end{aligned}
-$$, sama kuin hyötysuhteiden tulo. Noin neljännes energiasta muuttuu putkissa, pumpussa, turbiinissa ja generaattoreissa lämmöksi, mikä on pumppuvoimaloille tyypillistä.
+$$, sama kuin hyötysuhteiden tulo. Noin neljännes energiasta muuttuu putkissa, pumpussa, turbiinissa ja generaattoreissa sisäenergiaksi, mikä on pumppuvoimaloille tyypillistä.
 
 ### d)
 **Kysytty:** pitääkö väite ”voimala tuottaa joka päivä $216\,\text{MWh}$ sähköä”, ja miksi voimala silti voi olla hyödyllinen
 **Periaate:** Energia säilyy: voimala voi antaa sähkönä enintään sen energian, joka siihen on pumppaamalla varastoitu, ja häviöiden takia vähemmän (luku *Energialajit ja energian säilyminen*). Varasto siirtää energiaa ajassa (luku *Energian siirtäminen: sähkö ja lämpö*).
-**Mallivastaus:** Väite on harhaanjohtava. Pumppuvoimala ei tuota energiaa vaan varastoi sitä: jokaisella täytöllä ja tyhjennyksellä se ottaa verkosta noin $289\,\text{MWh}$ ja antaa takaisin noin $216\,\text{MWh}$, joten noin $73\,\text{MWh}$ muuttuu lämmöksi. Voimala on silti hyödyllinen, koska se siirtää energiaa ajassa. Se täytetään, kun sähköä on tarjolla paljon ja halvalla, esimerkiksi tuulisena yönä, ja se tyhjennetään kulutushuipun aikaan tai tyynellä, kun sähköä on niukasti. Vesivoimana se on myös nopeasti säädettävää tehoa, jota sääriippuvainen tuulivoima tarvitsee rinnalleen. Oikea muotoilu olisi: ”Voimala antaa verkkoon $216\,\text{MWh}$ ottamaansa $289\,\text{MWh}$:a myöhemmin, silloin kun sähköä tarvitaan.”
+**Mallivastaus:** Väite on harhaanjohtava. Pumppuvoimala ei tuota energiaa vaan varastoi sitä: jokaisella täytöllä ja tyhjennyksellä se ottaa verkosta noin $289\,\text{MWh}$ ja antaa takaisin noin $216\,\text{MWh}$, joten noin $73\,\text{MWh}$ muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Voimala on silti hyödyllinen, koska se siirtää energiaa ajassa. Se täytetään, kun sähköä on tarjolla paljon ja halvalla, esimerkiksi tuulisena yönä, ja se tyhjennetään kulutushuipun aikaan tai tyynellä, kun sähköä on niukasti. Vesivoimana se on myös nopeasti säädettävää tehoa, jota sääriippuvainen tuulivoima tarvitsee rinnalleen. Oikea muotoilu olisi: ”Voimala antaa verkkoon $216\,\text{MWh}$ ottamaansa $289\,\text{MWh}$:a myöhemmin, silloin kun sähköä tarvitaan.”
 
 ### Yleisiä virheitä
 - a-kohdassa massa lasketaan suoraan tilavuudesta ilman tiheyttä tai kilometrit unohdetaan muuntaa metreiksi.

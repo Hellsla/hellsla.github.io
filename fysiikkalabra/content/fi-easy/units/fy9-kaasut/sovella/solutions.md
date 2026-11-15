@@ -106,7 +106,7 @@ $$. Se on pienempi kuin ilman tiheys, noin $1{,}2\,\text{kg/m}^3$. Näin moolima
 **Järkevyys:** Hukkaan menee $$
 \begin{aligned}
 &485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \\
-&\approx 78\,\text{kW}
+&\approx 77\,\text{kW}
 \end{aligned}
 $$ eli $16\,\%$. Se on sama kuin $25\,\%$ lämpötehosta. Tulos on samaa suuruusluokkaa kuin yhteistuotantolaitosten $85$–$90\,\%$. Yhteistuotantolaitos tuottaa sekä sähköä että lämpöä.
 
@@ -391,7 +391,7 @@ Vaa'an tarkkuus $0{,}01\,\text{g}$ on alle $1\,\%$ massan kasvusta $3{,}28\,\tex
 Jos pisteet ovat suoralla, mutta suora ei kulje origon kautta, mittauksessa on systemaattinen virhe. Esimerkiksi ilmaa voi karata joka kerta, kun pumppu irrotetaan.
 
 ### Yleisiä virheitä
-- a-kohdassa ainemäärä lasketaan kokonaispaineella $311\,\text{kPa}$ eikä paineen kasvulla. Silloin tulos on kolmasosa oikeasta.
+- a-kohdassa ainemäärä lasketaan kokonaispaineella $311\,\text{kPa}$ eikä paineen kasvulla. Silloin tulos on noin kaksi kolmasosaa oikeasta.
 - b-kohdassa todetaan vain, että ”mittausvirheitä oli”. Virhelähdettä tai sen vaikutuksen suuntaa ei nimetä.
 - b-kohdassa sanotaan, että pullon pullistuminen on syy liian pieneen tulokseen. Pullistuminen vaikuttaa kuitenkin päinvastaiseen suuntaan.
 - c-kohdassa ehdotetaan vain ”tarkempia mittareita”. Vastaus ei kerro, mitä mitataan ja miten.

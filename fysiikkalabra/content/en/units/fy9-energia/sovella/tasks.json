@@ -342,7 +342,7 @@
               "detail": "The temperature at which $E = 12\\,\\text{kWh}$ is read from the line: about $16$–$17\\,{}^\\circ\\text{C}$."
             },
             {
-              "text": "Explains with conservation of energy: the electrical energy of the appliances, the heat of the people and solar radiation become heat indoors, so they make up for part of the heat losses.",
+              "text": "Explains with conservation of energy: the electrical energy of the appliances, the heat of the people and solar radiation increase the internal energy of the house, so they make up for part of the heat losses.",
               "tag": "concept",
               "points": 2
             },

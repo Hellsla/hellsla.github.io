@@ -18,7 +18,7 @@ E_\text{need} &= 0.045\,\text{kW} \cdot 24\,\text{h} \\
 \end{aligned}
 $$
 **Answer:** $E_\text{need} \approx 1.5\,\text{kWh}$, that is, $1.54 \cdot 3.6\,\text{MJ} \approx 5.5\,\text{MJ}$, two significant figures like the power of the fridge $45\,\text{W}$ and the power of the coffee maker $1.0\,\text{kW}$.
-**Reasonableness:** The fridge uses almost two thirds of the energy, even though its power is the second smallest of the devices: it is on all the time. The large power of the coffee maker matters little, because it is on for only a quarter of an hour. One and a half kilowatt-hours a day is a usual consumption for a small summer cottage.
+**Reasonableness:** The fridge uses about $70\,\%$ of the energy, even though its power is the second smallest of the devices: it is on all the time. The large power of the coffee maker matters little, because it is on for only a quarter of an hour. One and a half kilowatt-hours a day is a usual consumption for a small summer cottage.
 
 ### b)
 **Given:** from part a $E_\text{need} = 1.54\,\text{kWh}$; efficiency of the battery $\eta_\text{batt} = 90\,\%$, of the inverter $\eta_\text{inv} = 93\,\%$; production on a cloudy day $1.5\,\text{kWh}$
@@ -219,8 +219,8 @@ $$
 
 ### d)
 **Find:** the outdoor temperature at which, according to the model, no heating is needed, and why it is not $21\,{}^\circ\text{C}$
-**Principle:** When no heating is needed, the consumption is just the other electricity consumption, $E_\text{other} = 12\,\text{kWh}$, so from the line $E = E_0 + kT$ we solve $T = \dfrac{E_\text{other} - E_0}{k}$. Energy is conserved: all the electrical energy used indoors finally becomes heat, and the people and solar radiation also bring energy into the house (chapter *Forms of energy and conservation of energy*).
-**Model answer:** From the extended line we read that the consumption falls to the level of the other consumption, $12\,\text{kWh}$, at about $16$–$17\,{}^\circ\text{C}$ ($T = \dfrac{E_\text{other} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4.9\,\text{kWh}/{}^\circ\text{C}} = 16.5\,{}^\circ\text{C}$ from the equation of the line). So the house needs heating only when it is colder outside. The temperature is about $4\,\text{K}$ below the indoor temperature $21\,{}^\circ\text{C}$, because the electrical energy of lighting, cooking and appliances becomes heat indoors. In addition, the residents warm the house, and solar radiation through the windows adds energy. These make up for the heat losses of a small temperature difference, so the heaters are needed only to cover the rest. The result is indicative: it is based on a line of winter days extended far beyond the measured range, and the data do not separate the sun and the wind.
+**Principle:** When no heating is needed, the consumption is just the other electricity consumption, $E_\text{other} = 12\,\text{kWh}$, so from the line $E = E_0 + kT$ we solve $T = \dfrac{E_\text{other} - E_0}{k}$. Energy is conserved: all the electrical energy used indoors finally becomes internal energy of the house, and the people and solar radiation also bring energy into the house (chapter *Forms of energy and conservation of energy*).
+**Model answer:** From the extended line we read that the consumption falls to the level of the other consumption, $12\,\text{kWh}$, at about $16$–$17\,{}^\circ\text{C}$ ($T = \dfrac{E_\text{other} - E_0}{k} = \dfrac{12\,\text{kWh} - 93\,\text{kWh}}{-4.9\,\text{kWh}/{}^\circ\text{C}} = 16.5\,{}^\circ\text{C}$ from the equation of the line). So the house needs heating only when it is colder outside. The temperature is about $4\,\text{K}$ below the indoor temperature $21\,{}^\circ\text{C}$, because the electrical energy of lighting, cooking and appliances becomes internal energy in the house. In addition, the residents warm the house, and solar radiation through the windows adds energy. These make up for the heat losses of a small temperature difference, so the heaters are needed only to cover the rest. The result is indicative: it is based on a line of winter days extended far beyond the measured range, and the data do not separate the sun and the wind.
 
 ### Yleisiä virheitä
 - The points are joined into a broken line in the order of the dates, so the graph does not show the dependence on temperature.
@@ -355,12 +355,12 @@ $$
 &= 215.8\,\text{MWh} : 288.5\,\text{MWh} \\
 &= 0.748
 \end{aligned}
-$$, the same as the product of the efficiencies. About a quarter of the energy becomes heat in the pipes, the pump, the turbine and the generators, which is typical of pumped-storage plants.
+$$, the same as the product of the efficiencies. About a quarter of the energy becomes internal energy in the pipes, the pump, the turbine and the generators, which is typical of pumped-storage plants.
 
 ### d)
 **Find:** whether the claim “the plant produces $216\,\text{MWh}$ of electricity every day” holds, and why the plant can still be useful
 **Principle:** Energy is conserved: as electricity the plant can give at most the energy stored in it by pumping, and because of the losses less (chapter *Forms of energy and conservation of energy*). A store shifts energy in time (chapter *Transferring energy: electricity and heat*).
-**Model answer:** The claim is misleading. A pumped-storage plant does not produce energy but stores it: in each filling and emptying it takes about $289\,\text{MWh}$ from the grid and gives back about $216\,\text{MWh}$, so about $73\,\text{MWh}$ becomes heat. The plant is still useful, because it shifts energy in time. It is filled when electricity is plentiful and cheap, for example on a windy night, and emptied at the time of peak consumption or in calm weather, when electricity is scarce. As hydropower it is also quickly controllable power, which weather-dependent wind power needs alongside it. A correct wording would be: “The plant gives $216\,\text{MWh}$ to the grid from the $289\,\text{MWh}$ it took, later, when electricity is needed.”
+**Model answer:** The claim is misleading. A pumped-storage plant does not produce energy but stores it: in each filling and emptying it takes about $289\,\text{MWh}$ from the grid and gives back about $216\,\text{MWh}$, so about $73\,\text{MWh}$ becomes internal energy, which is transferred to the surroundings as heat. The plant is still useful, because it shifts energy in time. It is filled when electricity is plentiful and cheap, for example on a windy night, and emptied at the time of peak consumption or in calm weather, when electricity is scarce. As hydropower it is also quickly controllable power, which weather-dependent wind power needs alongside it. A correct wording would be: “The plant gives $216\,\text{MWh}$ to the grid from the $289\,\text{MWh}$ it took, later, when electricity is needed.”
 
 ### Yleisiä virheitä
 - In part a the mass is calculated directly from the volume without the density, or the kilometres are not converted to metres.

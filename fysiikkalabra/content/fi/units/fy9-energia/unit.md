@@ -288,7 +288,7 @@ Eristetyssä systeemissä, johon energiaa ei tule eikä josta sitä lähde, koko
 E_\text{alussa} = E_\text{lopussa}
 ```
 
-missä kumpikin puoli on kaikkien energialajien summa, myös lämpöenergian. Teho on muuntunut tai siirtynyt energia aikaa kohti:
+missä kumpikin puoli on kaikkien energialajien summa, myös sisäenergian. Teho on muuntunut tai siirtynyt energia aikaa kohti:
 
 ```kaavat
 teho :: P = \frac{\Delta E}{\Delta t}
@@ -310,7 +310,7 @@ missä $\eta$ on hyötysuhde, $W_\text{a}$ ja $P_\text{a}$ annettu hyötyenergia
 
 Energiaketjussa on peräkkäisiä vaiheita, ja kunkin vaiheen antama hyötyteho on seuraavan vaiheen ottama teho. Kuvan esimerkkilaitoksessa vaiheita on kolme, ja niiden hyötysuhteet ovat $\eta_1$, $\eta_2$ ja $\eta_3$. Polttoainetehosta $500\,\text{MW}$ tulee sähköksi $198\,\text{MW}$, joten koko laitoksen hyötysuhde on $\eta = \tfrac{198\,\text{MW}}{500\,\text{MW}} \approx 0{,}40$. Kaistojen leveydet ovat mittakaavassa, ja lähtevät kaistat ovat yhteensä yhtä leveät kuin tuleva.
 
-<svg data-fig="ketju" viewBox="0 0 420 476" role="img" aria-label="Energiavirtakuvio mittakaavassa lauhdevoimalaitoksesta. Vasemmalta tulee polttoaineteho 500 MW leveänä harmaana kaistana. Ensimmäisessä vaiheessa, kattilassa, hyötysuhde on 0,90: kaistasta kääntyy alas oranssi häviökaista 50 MW, ja jäljelle jää 450 MW. Toisessa vaiheessa, höyrykierrossa, hyötysuhde on 0,45: alas kääntyy leveä häviökaista 248 MW, ja jäljelle jää 203 MW. Kolmannessa vaiheessa, generaattorissa ja muuntajassa, hyötysuhde on 0,98 ja häviö vain 4 MW. Oikealle lähtee vihreä sähkön kaista, 198 MW eli noin 40 prosenttia polttoainetehosta. Häviöt muuttuvat hukkalämmöksi." style="max-width:100%;font-size:20px">
+<svg data-fig="ketju" viewBox="0 0 420 476" role="img" aria-label="Energiavirtakuvio mittakaavassa lauhdevoimalaitoksesta. Vasemmalta tulee polttoaineteho 500 MW leveänä harmaana kaistana. Ensimmäisessä vaiheessa, kattilassa, hyötysuhde on 0,90: kaistasta kääntyy alas oranssi häviökaista 50 MW, ja jäljelle jää 450 MW. Toisessa vaiheessa, höyrykierrossa, hyötysuhde on 0,45: alas kääntyy leveä häviökaista 248 MW, ja jäljelle jää 203 MW. Kolmannessa vaiheessa, generaattorissa ja muuntajassa, hyötysuhde on 0,98 ja häviö vain 4 MW. Oikealle lähtee vihreä sähkön kaista, 198 MW eli noin 40 prosenttia polttoainetehosta. Häviöt siirtyvät hukkalämpönä ympäristöön." style="max-width:100%;font-size:20px">
   <defs><linearGradient id="fy9en-in" gradientUnits="userSpaceOnUse" x1="8" y1="0" x2="298" y2="0"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy9en-ok" gradientUnits="userSpaceOnUse" x1="298" y1="0" x2="408" y2="0"><stop offset="0" stop-color="#b2f2bb"/><stop offset="1" stop-color="#2b8a3e"/></linearGradient><linearGradient id="fy9en-heat" gradientUnits="userSpaceOnUse" x1="0" y1="56" x2="0" y2="316"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
   <path d="M8,56 L298,56 L298,129 L198,129 L198,218 L98,218 L98,236 L8,236 Z" fill="url(#fy9en-in)" stroke-linejoin="round"/>
   <path d="M298,56 L368,56 L368,46 L408,91.5 L368,137.5 L368,127.5 L298,127.5 Z" fill="url(#fy9en-ok)" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
@@ -378,8 +378,8 @@ missä $Q$ on vapautuva lämpö (J), $H$ lämpöarvo ($\text{MJ/kg}$) ja $m$ pal
 - **Hyötysuhteet lasketaan yhteen tai vähennetään.** Ketjussa ne kerrotaan, joten koko ketjun hyötysuhde on pienempi kuin heikoimman vaiheen.
 - **Väärä nimittäjä.** Häviöprosentti ja hyötysuhde lasketaan aina otetusta energiasta, ei annetusta.
 - **Minuutit tunteina.** $30\,\text{min} = 30 \cdot \tfrac{1}{60}\,\text{h} = 0{,}50\,\text{h}$; tehon ja ajan tulo on kilowattitunteja vain, kun aika on tunteina.
-- **Häviöt ”katoavat”.** Häviöt ovat energiaa, joka on muuttunut hyödyttömään muotoon, yleensä lämmöksi.
-- **Yhteistuotannon kokonaishyötysuhde verrataan sähköhyötysuhteeseen.** Sähkö ja kaukolämpö eivät ole yhtä arvokkaita, joten luvut kertovat eri asioita.
+- **Häviöt ”katoavat”.** Häviöt ovat energiaa, joka on muuttunut hyödyttömään muotoon, yleensä sisäenergiaksi, joka siirtyy lämpönä ympäristöön.
+- **Yhteistuotannon kokonaishyötysuhdetta verrataan sähköhyötysuhteeseen.** Sähkö ja kaukolämpö eivät ole yhtä arvokkaita, joten luvut kertovat eri asioita.
 
 ## Kertaa tarvittaessa {Kertaa}
 
