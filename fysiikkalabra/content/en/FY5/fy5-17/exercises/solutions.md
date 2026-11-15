@@ -179,7 +179,14 @@ The ratio is $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24.0\,\text{s}}{8.0\,\text
 ## fy5-17-L2-07
 **Find:** what the error is in the student’s solution
 **Principle:** Each wave covers the same distance $d$ at a constant speed, and the difference in arrival times is the difference of the travel times of the S wave and the P wave: $\Delta t = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$. The product $v_\text{P}\,\Delta t$ alone would be the distance the P wave would cover in the time $\Delta t$, and that is not the distance of the earthquake.
-**Model answer:** The time difference $\Delta t$ is not the travel time of the P wave but the difference of the travel times, so $d \neq v_\text{P}\,\Delta t$. The P wave has already covered the whole distance before $\Delta t$ begins. The correct result is $d = \dfrac{6.0\,\text{km/s} \cdot 3.5\,\text{km/s}}{6.0\,\text{km/s} - 3.5\,\text{km/s}} \cdot 16.0\,\text{s} = 134.4\,\text{km} \approx 134\,\text{km}$. Check: the travel time of the P wave is $134.4\,\text{km} : 6.0\,\text{km/s} = 22.4\,\text{s}$, that of the S wave $134.4\,\text{km} : 3.5\,\text{km/s} = 38.4\,\text{s}$, and the difference is $16.0\,\text{s}$. Dividing by two would belong to an echo and not to a one-way wave, using the speed of the S wave would give the equally wrong result $56\,\text{km}$, and the units are fine in the solution.
+**Model answer:** The time difference $\Delta t$ is not the travel time of the P wave but the difference of the travel times, so $d \neq v_\text{P}\,\Delta t$. The P wave has already covered the whole distance before $\Delta t$ begins. The correct result is $$
+\begin{aligned}
+d &= \dfrac{6.0\,\text{km/s} \cdot 3.5\,\text{km/s}}{6.0\,\text{km/s} - 3.5\,\text{km/s}} \\
+&\cdot 16.0\,\text{s} \\
+&= 134.4\,\text{km} \\
+&\approx 134\,\text{km}
+\end{aligned}
+$$. Check: the travel time of the P wave is $134.4\,\text{km} : 6.0\,\text{km/s} = 22.4\,\text{s}$, that of the S wave $134.4\,\text{km} : 3.5\,\text{km/s} = 38.4\,\text{s}$, and the difference is $16.0\,\text{s}$. Dividing by two would belong to an echo and not to a one-way wave, using the speed of the S wave would give the equally wrong result $56\,\text{km}$, and the units are fine in the solution.
 
 ## fy5-17-L3-04
 **Given:** stations A$(0, 0)$, B$(120, 0)$ and C$(60, 90)$ in kilometres; $\Delta t_\text{A} = 10.0\,\text{s}$, $\Delta t_\text{B} = 7.5\,\text{s}$, $\Delta t_\text{C} = 5.9\,\text{s}$; $v_\text{P} = 6.0\,\text{km/s}$, $v_\text{S} = 3.5\,\text{km/s}$

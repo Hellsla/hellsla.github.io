@@ -183,7 +183,13 @@ $\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30.0)\
 **Processing the data:** The greatest change in the table is $\Delta f = 2.47\,\text{kHz}$ at the moment $t = 0.20\,\text{s}$.
 **Formula:** $f = f_0 \cdot \dfrac{v + v_\text{b}}{v - v_\text{b}}$, so $\Delta f = f - f_0 = f_0 \cdot \dfrac{2 v_\text{b}}{v - v_\text{b}}$ and $v_\text{b} = \dfrac{v \, \Delta f}{2 f_0 + \Delta f}$
 **Conversions:** $\Delta f = 2.47\,\text{kHz} = 2470\,\text{Hz}$ and $f_0 = 4.00\,\text{MHz} = 4\,000\,000\,\text{Hz}$.
-**Substitution:** The denominator is $2 f_0 + \Delta f = 8\,000\,000\,\text{Hz} + 2470\,\text{Hz} = 8\,002\,470\,\text{Hz}$.
+**Substitution:** The denominator is $$
+\begin{aligned}
+2 f_0 + \Delta f &= 8\,000\,000\,\text{Hz} \\
+&+ 2470\,\text{Hz} \\
+&= 8\,002\,470\,\text{Hz}
+\end{aligned}
+$$.
 $\begin{aligned} v_\text{b} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\,002\,470\,\text{Hz}} \\ &= 0.4753\,\text{m/s} \end{aligned}$
 **Answer:** $0.475\,\text{m/s}$, three significant figures like the change in frequency.
 **Reasonableness:** The speed is much smaller than the speed of sound, so $v_\text{b} \approx \tfrac{v \, \Delta f}{2 f_0} = 0.4755\,\text{m/s}$, which differs from the result by less than $0.1\,\%$. The result for one shift would be $\tfrac{v \, \Delta f}{f_0} \approx 0.95\,\text{m/s}$, double. A peak speed of less than a metre per second is plausible in a blood vessel.
@@ -226,8 +232,23 @@ $\begin{aligned} v &= 2 \cdot 0.650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254.8\,
 **Conversions:** None needed: $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$, so the unit of the speed divided by the frequency is the metre.
 **Substitution:** $\lambda_1 = \dfrac{343\,\text{m/s}}{432\,\text{Hz}} = 0.79398\,\text{m}$ and $\lambda_2 = \dfrac{343\,\text{m/s}}{440\,\text{Hz}} = 0.77955\,\text{m}$
 **Answer:** $0.794\,\text{m}$ at the frequency $432\,\text{Hz}$ and $0.780\,\text{m}$ at the frequency $440\,\text{Hz}$, three significant figures like the data.
-**Reasonableness:** Computed backwards, $0.794\,\text{m} \cdot 432\,\text{Hz} \approx 343\,\text{m/s}$. The lower sound has the longer wave, as the wave equation requires, and a wavelength of a little under a metre suits a sound in the middle of the range of hearing.
-**Part b):** The frequencies differ by $\Delta f = 440\,\text{Hz} - 432\,\text{Hz} = 8\,\text{Hz}$, so $432\,\text{Hz}$ is about $1.8\,\%$ lower than $440\,\text{Hz}$. The wavelengths differ by $\Delta\lambda = 0.79398\,\text{m} - 0.77955\,\text{m} \approx 0.014\,\text{m}$, that is $1.4\,\text{cm}$: the wave of the lower sound is about $1.9\,\%$ longer. The changes go in opposite directions, because the product $f\lambda = v$ stays the same. The difference can be heard: according to the article a trained ear notices a difference of even $2\,\text{Hz}$, and sounding together the two tones would beat at the frequency $f_\text{H} = |f_1 - f_2| = 8\,\text{Hz}$. In music the difference is still small. According to the article $415\,\text{Hz}$ is almost exactly a semitone below $440\,\text{Hz}$, so $8\,\text{Hz}$ is about a third of a semitone. Physically both are ordinary sound waves of the same kind: the same medium, the same speed and the same model. Nothing changes qualitatively at $432\,\text{Hz}$. Moreover, the hertz is based on the second, a unit that people have agreed on. The number $432$ is therefore not a property of nature: with another unit of time the same sound would have another numerical value.
+**Reasonableness:** Computed backwards, $$
+\begin{aligned}
+&0.794\,\text{m} \cdot 432\,\text{Hz} \\
+&\approx 343\,\text{m/s}
+\end{aligned}
+$$. The lower sound has the longer wave, as the wave equation requires, and a wavelength of a little under a metre suits a sound in the middle of the range of hearing.
+**Part b):** The frequencies differ by $$
+\begin{aligned}
+\Delta f &= 440\,\text{Hz} - 432\,\text{Hz} \\
+&= 8\,\text{Hz}
+\end{aligned}
+$$, so $432\,\text{Hz}$ is about $1.8\,\%$ lower than $440\,\text{Hz}$. The wavelengths differ by $$
+\begin{aligned}
+\Delta\lambda &= 0.79398\,\text{m} - 0.77955\,\text{m} \\
+&\approx 0.014\,\text{m}
+\end{aligned}
+$$, that is $1.4\,\text{cm}$: the wave of the lower sound is about $1.9\,\%$ longer. The changes go in opposite directions, because the product $f\lambda = v$ stays the same. The difference can be heard: according to the article a trained ear notices a difference of even $2\,\text{Hz}$, and sounding together the two tones would beat at the frequency $f_\text{H} = |f_1 - f_2| = 8\,\text{Hz}$. In music the difference is still small. According to the article $415\,\text{Hz}$ is almost exactly a semitone below $440\,\text{Hz}$, so $8\,\text{Hz}$ is about a third of a semitone. Physically both are ordinary sound waves of the same kind: the same medium, the same speed and the same model. Nothing changes qualitatively at $432\,\text{Hz}$. Moreover, the hertz is based on the second, a unit that people have agreed on. The number $432$ is therefore not a property of nature: with another unit of time the same sound would have another numerical value.
 **Part c):** Summarised in our own words, the article reports the following claims. Many websites describe the $432\,\text{Hz}$ tuning level as calming and even healing, and call it nature's own frequency. According to one site it is connected with the colour spectrum and with the chakras, the energy fields of Hindu tradition, and music tuned to it would be a continuation of light, time, matter and consciousness. The claims are backed with number play: $103 + 107 + 109 + 113 = 432$ is the sum of four consecutive primes, and $432 \cdot 2 = 864$, while a day has $86\,400\,\text{s}$. The frequency $440\,\text{Hz}$ is in turn called the frequency of brains, thoughts and manipulation, and the best-known conspiracy theory says it is Nazi propaganda that spreads fear and aggression. The article's own verdict is that the claims have no scientific grounds.
 **Part d):** The claims are of three different kinds. The first is physically wrong: sound is a mechanical pressure wave in a medium and light is an electromagnetic wave with a frequency about $10^{12}$ times higher, so a $432\,\text{Hz}$ sound is not a continuation of light or colours, and physics knows no measurable energy fields that it would couple to. The second is possible but not shown: music can calm a listener, but it does not follow that the tuning level in particular has an effect. That would have to be shown by measurements. The third is a conclusion that goes too far: nothing about health follows from pleasing properties of numbers, and by part b) the numerical value depends on the choice of unit. In addition, the article says the tuning level is a convention that has varied in history roughly between $390\,\text{Hz}$ and $460\,\text{Hz}$. In a reliable study the same piece is played at the same loudness in both tunings, and the listeners are assigned to groups at random. Neither the listener nor the person measuring knows which tuning is being heard. The measured quantity, for example pulse, blood pressure or the score of a stress questionnaire, is decided in advance. There are enough participants for a difference to stand out statistically from random variation, and the result is peer reviewed and repeated by independent groups.
 **Limits of the model and the data:** The speed of sound depends on the temperature of the air, so the wavelengths change slightly with temperature, the frequencies do not. The source is a news article that describes the claims and interviews a musician. It is not a study, so on its own it proves the claims neither right nor wrong.

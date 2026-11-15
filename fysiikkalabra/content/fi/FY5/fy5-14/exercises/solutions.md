@@ -183,7 +183,13 @@ $\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30{,}0
 **Aineiston käsittely:** Taulukon suurin muutos on $\Delta f = 2{,}47\,\text{kHz}$ hetkellä $t = 0{,}20\,\text{s}$.
 **Kaava:** $f = f_0 \cdot \dfrac{v + v_\text{v}}{v - v_\text{v}}$, josta $\Delta f = f - f_0 = f_0 \cdot \dfrac{2 v_\text{v}}{v - v_\text{v}}$ ja $v_\text{v} = \dfrac{v \, \Delta f}{2 f_0 + \Delta f}$
 **Muunnokset:** $\Delta f = 2{,}47\,\text{kHz} = 2470\,\text{Hz}$ ja $f_0 = 4{,}00\,\text{MHz} = 4\,000\,000\,\text{Hz}$.
-**Sijoitus:** Nimittäjä on $2 f_0 + \Delta f = 8\,000\,000\,\text{Hz} + 2470\,\text{Hz} = 8\,002\,470\,\text{Hz}$.
+**Sijoitus:** Nimittäjä on $$
+\begin{aligned}
+2 f_0 + \Delta f &= 8\,000\,000\,\text{Hz} \\
+&+ 2470\,\text{Hz} \\
+&= 8\,002\,470\,\text{Hz}
+\end{aligned}
+$$.
 $\begin{aligned} v_\text{v} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\,002\,470\,\text{Hz}} \\ &= 0{,}4753\,\text{m/s} \end{aligned}$
 **Vastaus:** $0{,}475\,\text{m/s}$, kolme merkitsevää numeroa kuten taajuuden muutoksessa.
 **Järkevyys:** Nopeus on paljon pienempi kuin äänen nopeus, joten $v_\text{v} \approx \tfrac{v \, \Delta f}{2 f_0} = 0{,}4755\,\text{m/s}$, mikä poikkeaa tuloksesta alle $0{,}1\,\%$. Yhden siirtymän tulos olisi $\tfrac{v \, \Delta f}{f_0} \approx 0{,}95\,\text{m/s}$, kaksinkertainen. Alle metrin sekunnissa oleva huippunopeus on uskottava verisuonessa.
@@ -226,8 +232,23 @@ $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,
 **Muunnokset:** Ei tarvita: $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$, joten nopeuden ja taajuuden osamäärän yksikkö on metri.
 **Sijoitus:** $\lambda_1 = \dfrac{343\,\text{m/s}}{432\,\text{Hz}} = 0{,}79398\,\text{m}$ ja $\lambda_2 = \dfrac{343\,\text{m/s}}{440\,\text{Hz}} = 0{,}77955\,\text{m}$
 **Vastaus:** $0{,}794\,\text{m}$ taajuudella $432\,\text{Hz}$ ja $0{,}780\,\text{m}$ taajuudella $440\,\text{Hz}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Takaisin laskettuna $0{,}794\,\text{m} \cdot 432\,\text{Hz} \approx 343\,\text{m/s}$. Matalamman äänen aalto on pidempi, kuten perusyhtälö vaatii, ja vajaan metrin aallonpituus sopii kuuloalueen keskivaiheen äänelle.
-**Kohta b):** Taajuuksien ero on $\Delta f = 440\,\text{Hz} - 432\,\text{Hz} = 8\,\text{Hz}$, eli $432\,\text{Hz}$ on noin $1{,}8\,\%$ matalampi kuin $440\,\text{Hz}$. Aallonpituuksien ero on $\Delta\lambda = 0{,}79398\,\text{m} - 0{,}77955\,\text{m} \approx 0{,}014\,\text{m}$ eli $1{,}4\,\text{cm}$: matalamman äänen aalto on noin $1{,}9\,\%$ pidempi. Muutokset ovat vastakkaissuuntaiset, koska tulo $f\lambda = v$ pysyy samana. Eron kuulee: artikkelin mukaan harjaantunut korva erottaa jo $2\,\text{Hz}$:n eron, ja yhtä aikaa soidessaan äänet huojuisivat taajuudella $f_\text{H} = |f_1 - f_2| = 8\,\text{Hz}$. Musiikissa ero on silti pieni. Artikkelin mukaan $415\,\text{Hz}$ on lähes tasan puolisävelaskeleen verran alle $440\,\text{Hz}$:n, joten $8\,\text{Hz}$ on noin kolmannes puolisävelaskeleesta. Fysikaalisesti kumpikin on samanlainen tavallinen ääniaalto: sama väliaine, sama nopeus ja sama malli. Taajuudella $432\,\text{Hz}$ ei tapahdu mitään laadullista muutosta. Lisäksi hertsi perustuu sekuntiin, joka on ihmisten sopima yksikkö. Luku $432$ ei siksi ole luonnon ominaisuus: toisella ajan yksiköllä sama ääni saisi toisen lukuarvon.
+**Järkevyys:** Takaisin laskettuna $$
+\begin{aligned}
+&0{,}794\,\text{m} \cdot 432\,\text{Hz} \\
+&\approx 343\,\text{m/s}
+\end{aligned}
+$$. Matalamman äänen aalto on pidempi, kuten perusyhtälö vaatii, ja vajaan metrin aallonpituus sopii kuuloalueen keskivaiheen äänelle.
+**Kohta b):** Taajuuksien ero on $$
+\begin{aligned}
+\Delta f &= 440\,\text{Hz} - 432\,\text{Hz} \\
+&= 8\,\text{Hz}
+\end{aligned}
+$$, eli $432\,\text{Hz}$ on noin $1{,}8\,\%$ matalampi kuin $440\,\text{Hz}$. Aallonpituuksien ero on $$
+\begin{aligned}
+\Delta\lambda &= 0{,}79398\,\text{m} - 0{,}77955\,\text{m} \\
+&\approx 0{,}014\,\text{m}
+\end{aligned}
+$$ eli $1{,}4\,\text{cm}$: matalamman äänen aalto on noin $1{,}9\,\%$ pidempi. Muutokset ovat vastakkaissuuntaiset, koska tulo $f\lambda = v$ pysyy samana. Eron kuulee: artikkelin mukaan harjaantunut korva erottaa jo $2\,\text{Hz}$:n eron, ja yhtä aikaa soidessaan äänet huojuisivat taajuudella $f_\text{H} = |f_1 - f_2| = 8\,\text{Hz}$. Musiikissa ero on silti pieni. Artikkelin mukaan $415\,\text{Hz}$ on lähes tasan puolisävelaskeleen verran alle $440\,\text{Hz}$:n, joten $8\,\text{Hz}$ on noin kolmannes puolisävelaskeleesta. Fysikaalisesti kumpikin on samanlainen tavallinen ääniaalto: sama väliaine, sama nopeus ja sama malli. Taajuudella $432\,\text{Hz}$ ei tapahdu mitään laadullista muutosta. Lisäksi hertsi perustuu sekuntiin, joka on ihmisten sopima yksikkö. Luku $432$ ei siksi ole luonnon ominaisuus: toisella ajan yksiköllä sama ääni saisi toisen lukuarvon.
 **Kohta c):** Artikkeli kertoo omin sanoin tiivistettynä seuraavat väitteet. Monilla verkkosivuilla $432\,\text{Hz}$:n viritystasoa kuvataan rauhoittavaksi ja jopa parantavaksi, ja sitä kutsutaan luonnon omaksi taajuudeksi. Erään sivuston mukaan se liittyy värien spektriin ja chakroihin eli hindulaisen perinteen energiakenttiin, ja siihen viritetty musiikki olisi valon, ajan, aineen ja tietoisuuden jatke. Väitteitä tuetaan lukuleikeillä: $103 + 107 + 109 + 113 = 432$ on neljän peräkkäisen alkuluvun summa, ja $432 \cdot 2 = 864$, kun vuorokaudessa on $86\,400\,\text{s}$. Taajuutta $440\,\text{Hz}$ sanotaan vastaavasti aivojen, ajatusten ja manipuloinnin taajuudeksi, ja tunnetuimman salaliittoteorian mukaan se on natsien propagandaa, joka levittää pelkoa ja aggressiota. Artikkelin oma arvio on, ettei väitteille ole tieteellisiä perusteita.
 **Kohta d):** Väitteet ovat kolmea eri lajia. Ensimmäinen on fysikaalisesti virheellinen: ääni on väliaineen mekaaninen paineaalto ja valo sähkömagneettinen aalto, jonka taajuus on noin $10^{12}$-kertainen, joten $432\,\text{Hz}$:n ääni ei ole valon tai värien jatke, eikä fysiikka tunne mitattavia energiakenttiä, joihin se kytkeytyisi. Toinen on mahdollinen mutta osoittamaton: musiikki voi rauhoittaa kuulijaa, mutta siitä ei seuraa, että juuri viritystaso vaikuttaisi. Se pitäisi näyttää mittauksilla. Kolmas on liian pitkälle viety päätelmä: lukujen kauniista ominaisuuksista ei seuraa mitään terveydestä, ja kohdan b) mukaan lukuarvo riippuu yksikön valinnasta. Lisäksi viritystaso on artikkelin mukaan sopimus, joka on vaihdellut historiassa noin välillä $390\,\text{Hz}$–$460\,\text{Hz}$. Luotettavassa tutkimuksessa sama kappale soitetaan samalla voimakkuudella kummallakin viritystasolla, ja kuulijat arvotaan ryhmiin. Kuulija ja mittaaja eivät tiedä, kumpaa viritystä kuunnellaan. Mitattava suure, esimerkiksi syke, verenpaine tai stressikyselyn pistemäärä, päätetään etukäteen. Koehenkilöitä on niin paljon, että ero erottuu satunnaisvaihtelusta tilastollisesti, ja tulos vertaisarvioidaan ja toistetaan riippumattomissa ryhmissä.
 **Mallin ja aineiston rajat:** Äänen nopeus riippuu ilman lämpötilasta, joten aallonpituudet muuttuvat hieman lämpötilan mukana, taajuudet eivät. Aineisto on lehtiartikkeli, joka kuvaa väitteitä ja haastattelee muusikkoa. Se ei ole tutkimus, joten se ei yksin todista väitteitä oikeiksi eikä vääriksi.

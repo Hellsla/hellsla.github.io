@@ -267,7 +267,20 @@ Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}
 
 Kohta c): pisteet ovat samalla suoralla, joka kulkee origon kautta. Jupiterin piste on kaukana, ja neljä muuta pistettä ovat lähellä origoa. Siksi sisäplaneetat kannattaa piirtää myös omaan kuvaajaansa. Kulmakerroin luetaan sovitetun suoran kahdesta pisteestä, jotka ovat kaukana toisistaan. Esimerkiksi pisteistä $(100;\ 4{,}0)$ ja $(400;\ 15{,}9)$ saadaan $k = \dfrac{15{,}9 - 4{,}0}{400 - 100} \approx 0{,}040$ taulukon yksiköissä. Sama näkyy suhteista $\tfrac{T^2}{a^3}$: ne eroavat toisistaan alle $0{,}4\,\%$.
 **Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$ ja $v = \dfrac{2\pi r}{T}$, joten $\dfrac{\gamma M}{r} = \dfrac{4\pi^2 r^2}{T^2}$ ja $T^2 = \dfrac{4\pi^2}{\gamma M} r^3$. Kohta d): Maalle ja Marsille kerroin on sama, joten $\dfrac{T_\text{Mars}^2}{T_\text{Maa}^2} = \dfrac{a_\text{Mars}^3}{a_\text{Maa}^3}$, josta $T_\text{Mars} = T_\text{Maa}\left(\dfrac{a_\text{Mars}}{a_\text{Maa}}\right)^{3/2}$
-**Muunnokset:** Kuvaajaa varten $a$ muutetaan yksikköön $10^{8}\,\text{km}$ ja $T$ yksikköön $10^{3}\,\text{d}$. Esimerkiksi Maalle $149{,}6 \cdot 10^{6}\,\text{km} = 1{,}496 \cdot 10^{8}\,\text{km}$ ja $365{,}2\,\text{d} = 0{,}3652 \cdot 10^{3}\,\text{d}$. Kohdassa d) muunnoksia ei tarvita. Etäisyyksien suhteesta yksikkö supistuu pois, ja kiertoaika saadaan vuorokausina.
-**Sijoitus:** $T_\text{Mars} = 365{,}2\,\text{d} \cdot \left(\dfrac{228{,}0 \cdot 10^{6}\,\text{km}}{149{,}6 \cdot 10^{6}\,\text{km}}\right)^{3/2} = 365{,}2\,\text{d} \cdot 1{,}52406^{3/2} = 365{,}2\,\text{d} \cdot 1{,}8815 = 687{,}12\,\text{d}$
+**Muunnokset:** Kuvaajaa varten $a$ muutetaan yksikköön $10^{8}\,\text{km}$ ja $T$ yksikköön $10^{3}\,\text{d}$. Esimerkiksi Maalle $$
+\begin{aligned}
+&149{,}6 \cdot 10^{6}\,\text{km} \\
+&= 1{,}496 \cdot 10^{8}\,\text{km}
+\end{aligned}
+$$ ja $365{,}2\,\text{d} = 0{,}3652 \cdot 10^{3}\,\text{d}$. Kohdassa d) muunnoksia ei tarvita. Etäisyyksien suhteesta yksikkö supistuu pois, ja kiertoaika saadaan vuorokausina.
+**Sijoitus:** $$
+\begin{aligned}
+T_\text{Mars} &= 365{,}2\,\text{d} \\
+&\cdot \left(\dfrac{228{,}0 \cdot 10^{6}\,\text{km}}{149{,}6 \cdot 10^{6}\,\text{km}}\right)^{3/2} \\
+&= 365{,}2\,\text{d} \cdot 1{,}52406^{3/2} \\
+&= 365{,}2\,\text{d} \cdot 1{,}8815 \\
+&= 687{,}12\,\text{d}
+\end{aligned}
+$$
 **Vastaus:** $687{,}1\,\text{d}$, neljä merkitsevää numeroa kuten lähtöarvoissa $365{,}2\,\text{d}$, $228{,}0 \cdot 10^{6}\,\text{km}$ ja $149{,}6 \cdot 10^{6}\,\text{km}$. Kohta c): aineisto tukee lakia. Viiden planeetan pisteet ovat samalla origon kautta kulkevalla suoralla, vaikka $a^3$ kasvaa Merkuriuksesta Jupiteriin yli $2000$-kertaiseksi. Viisi planeettaa ei silti todista lakia yleisesti. Saman taulukon uloimmilla planeetoilla suhde poikkeaa noin $1$–$3\,\%$. Kohta d): NASAn arvo on $687{,}0\,\text{d}$, joten ero on $0{,}1\,\text{d}$ eli noin $0{,}02\,\%$. Ero selittyy pyöristyksellä. Taulukon arvoissa on neljä merkitsevää numeroa. Jo Marsin etäisyyden viimeisen numeron muutos arvoon $227{,}9 \cdot 10^{6}\,\text{km}$ muuttaisi tuloksen arvoon $686{,}7\,\text{d}$. Lisäksi laki tässä muodossa olettaa kaksi asiaa: planeetan massa on mitätön Auringon massan rinnalla, ja muut planeetat eivät vaikuta. Radan soikeus ei ole syy. Keplerin kolmas laki pätee myös ellipsiradalle eli soikealle radalle, kun säteen paikalla on isoakselin puolikas.
 **Järkevyys:** Mars on noin $1{,}5$ kertaa niin kaukana Auringosta kuin Maa. Sen kiertoaika $687{,}1\,\text{d} : 365{,}2\,\text{d} \approx 1{,}9$ vuotta on Marsin tunnettu vuoden pituus. Myös kulmakerroin sopii malliin. SI-yksiköissä $k = 0{,}0398 \cdot \dfrac{(8{,}64 \cdot 10^{7}\,\text{s})^2}{(10^{11}\,\text{m})^3} = 2{,}97 \cdot 10^{-19}\,\text{s}^2/\text{m}^3$. Auringon massaksi saadaan $M = \dfrac{4\pi^2}{\gamma k} = 1{,}99 \cdot 10^{30}\,\text{kg}$. Se on Auringon massan taulukkoarvo.

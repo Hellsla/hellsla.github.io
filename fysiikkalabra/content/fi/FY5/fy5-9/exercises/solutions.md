@@ -94,7 +94,13 @@
 **Periaate:** Kitkattomassa värähtelyssä mekaaninen energia säilyy. Jokaisessa kohdassa liike-energian ja jousen potentiaalienergian summa on yhtä suuri kuin energia ääriasennossa, jossa nopeus on nolla. Kohdassa $x$ osa energiasta on vielä jousessa, joten nopeus on pienempi kuin tasapainoasemassa.
 **Kaava:** $\dfrac{1}{2}mv^2 + \dfrac{1}{2}kx^2 = \dfrac{1}{2}kA^2$, josta $v^2 = \dfrac{k}{m}(A^2 - x^2)$ ja $v = \sqrt{\dfrac{k}{m}(A^2 - x^2)}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** Ensin $\dfrac{k}{m} = \dfrac{200\,\text{N/m}}{0{,}50\,\text{kg}} = 400\,\tfrac{1}{\text{s}^2}$ ja $A^2 - x^2 = (0{,}100\,\text{m})^2 - (0{,}0500\,\text{m})^2 = 0{,}00750\,\text{m}^2$, joten $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0{,}00750\,\text{m}^2} = \sqrt{3{,}00\,\tfrac{\text{m}^2}{\text{s}^2}} = 1{,}732\,\text{m/s}$
+**Sijoitus:** Ensin $\dfrac{k}{m} = \dfrac{200\,\text{N/m}}{0{,}50\,\text{kg}} = 400\,\tfrac{1}{\text{s}^2}$ ja $$
+\begin{aligned}
+A^2 - x^2 &= (0{,}100\,\text{m})^2 \\
+&- (0{,}0500\,\text{m})^2 \\
+&= 0{,}00750\,\text{m}^2
+\end{aligned}
+$$, joten $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0{,}00750\,\text{m}^2} = \sqrt{3{,}00\,\tfrac{\text{m}^2}{\text{s}^2}} = 1{,}732\,\text{m/s}$
 **Vastaus:** $1{,}7\,\text{m/s}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$.
 **Järkevyys:** Tasapainoasemassa nopeus olisi $A\sqrt{\tfrac{k}{m}} = 0{,}100\,\text{m} \cdot 20\,\tfrac{1}{\text{s}} = 2{,}0\,\text{m/s}$. Puolessa amplitudissa jousessa on vasta neljäsosa energiasta, koska $\left(\tfrac{1}{2}\right)^2 = \tfrac{1}{4}$, joten liike-energiaa on kolme neljäsosaa ja nopeus on $\sqrt{0{,}75} \approx 0{,}87$-kertainen eli $1{,}7\,\text{m/s}$. Nopeus ei siis ole puolet suurimmasta.
 
@@ -174,7 +180,12 @@
 **Muunnokset:** Ei tarvita: massat ovat kilogrammoina ja ajat sekunteina.
 **Sijoitus:** $a = \dfrac{0{,}504\,\text{s}^2 - 0{,}033\,\text{s}^2}{0{,}300\,\text{kg} - 0\,\text{kg}} = 1{,}570\,\tfrac{\text{s}^2}{\text{kg}}$ ja $k = \dfrac{4\pi^2}{1{,}570\,\text{s}^2/\text{kg}} = 25{,}14\,\text{N/m}$. Lisämassa on $m_0 = \dfrac{0{,}033\,\text{s}^2}{1{,}570\,\text{s}^2/\text{kg}} = 0{,}0210\,\text{kg}$. Kevyimmästä mittauksesta saadaan $k_1 = \dfrac{4\pi^2 \cdot 0{,}050\,\text{kg}}{(0{,}334\,\text{s})^2} = 17{,}69\,\text{N/m}$, ja virhe on $\dfrac{17{,}69 - 25{,}14}{25{,}14} \cdot 100\,\% = -29{,}6\,\%$.
 **Vastaus:** $25{,}1\,\text{N/m}$, kolme merkitsevää numeroa kuten jaksonajoissa. Lisämassa on noin $21\,\text{g}$, ja kevyimmästä mittauksesta laskettu jousivakio olisi noin $30\,\%$ liian pieni.
-**Järkevyys:** Malli ennustaa, että yksittäisestä mittauksesta laskettu jousivakio on $k \cdot \tfrac{m}{m + m_0}$. Kevyimmällä punnuksella $50\,\text{g}$ se on $25{,}1\,\text{N/m} \cdot \tfrac{50}{71} = 17{,}7\,\text{N/m}$, kuten laskettiin. Raskaimmasta mittauksesta laskettu jousivakio olisi $\tfrac{4\pi^2 \cdot 0{,}300}{0{,}501} = 23{,}6\,\text{N/m}$, vain noin $6\,\%$ liian pieni ja malli ennustaa saman ($25{,}1\,\text{N/m} \cdot \tfrac{300}{321} = 23{,}5\,\text{N/m}$), koska jousen massan osuus pienenee punnuksen kasvaessa. Siksi kulmakerroin antaa luotettavamman tuloksen kuin yksittäinen mittaus.
+**Järkevyys:** Malli ennustaa, että yksittäisestä mittauksesta laskettu jousivakio on $k \cdot \tfrac{m}{m + m_0}$. Kevyimmällä punnuksella $50\,\text{g}$ se on $25{,}1\,\text{N/m} \cdot \tfrac{50}{71} = 17{,}7\,\text{N/m}$, kuten laskettiin. Raskaimmasta mittauksesta laskettu jousivakio olisi $\tfrac{4\pi^2 \cdot 0{,}300}{0{,}501} = 23{,}6\,\text{N/m}$, vain noin $6\,\%$ liian pieni ja malli ennustaa saman ($$
+\begin{aligned}
+&25{,}1\,\text{N/m} \cdot \tfrac{300}{321} \\
+&= 23{,}5\,\text{N/m}
+\end{aligned}
+$$), koska jousen massan osuus pienenee punnuksen kasvaessa. Siksi kulmakerroin antaa luotettavamman tuloksen kuin yksittäinen mittaus.
 
 ## fy5-9-L3-05
 **Annettu:** heilurin pituus $l = 1{,}20\,\text{m}$, lähtökulma $\alpha_0 = 10{,}0\,{}^\circ$, lähtö levosta, $g = 9{,}81\,\text{m/s}^2$; pistemäinen kuula, langan massa ja ilmanvastus jätetään huomiotta

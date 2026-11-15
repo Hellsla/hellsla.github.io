@@ -180,7 +180,14 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 ## fy5-17-L2-07
 **Kysytty:** mikä virhe opiskelijan ratkaisussa on
 **Periaate:** Kumpikin aalto kulkee saman matkan $d$ tasaisella nopeudella, ja saapumisaikojen ero on S- ja P-aallon kulkuaikojen erotus: $\Delta t = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$. Pelkkä tulo $v_\text{P}\,\Delta t$ olisi matka, jonka P-aalto kulkisi ajassa $\Delta t$, eikä se ole järistyksen etäisyys.
-**Mallivastaus:** Aikaero $\Delta t$ ei ole P-aallon kulkuaika vaan kulkuaikojen erotus, joten $d \neq v_\text{P}\,\Delta t$. P-aalto on ehtinyt kulkea koko matkan ennen kuin $\Delta t$ alkaa. Oikea tulos on $d = \dfrac{6{,}0\,\text{km/s} \cdot 3{,}5\,\text{km/s}}{6{,}0\,\text{km/s} - 3{,}5\,\text{km/s}} \cdot 16{,}0\,\text{s} = 134{,}4\,\text{km} \approx 134\,\text{km}$. Tarkistus: P-aallon kulkuaika on $134{,}4\,\text{km} : 6{,}0\,\text{km/s} = 22{,}4\,\text{s}$, S-aallon $134{,}4\,\text{km} : 3{,}5\,\text{km/s} = 38{,}4\,\text{s}$ ja erotus $16{,}0\,\text{s}$. Kahdella jakaminen kuuluisi kaikuun eikä yksisuuntaiseen aaltoon, S-aallon nopeuden käyttö antaisi yhtä väärän tuloksen $56\,\text{km}$, ja yksiköt ovat ratkaisussa kunnossa.
+**Mallivastaus:** Aikaero $\Delta t$ ei ole P-aallon kulkuaika vaan kulkuaikojen erotus, joten $d \neq v_\text{P}\,\Delta t$. P-aalto on ehtinyt kulkea koko matkan ennen kuin $\Delta t$ alkaa. Oikea tulos on $$
+\begin{aligned}
+d &= \dfrac{6{,}0\,\text{km/s} \cdot 3{,}5\,\text{km/s}}{6{,}0\,\text{km/s} - 3{,}5\,\text{km/s}} \\
+&\cdot 16{,}0\,\text{s} \\
+&= 134{,}4\,\text{km} \\
+&\approx 134\,\text{km}
+\end{aligned}
+$$. Tarkistus: P-aallon kulkuaika on $134{,}4\,\text{km} : 6{,}0\,\text{km/s} = 22{,}4\,\text{s}$, S-aallon $134{,}4\,\text{km} : 3{,}5\,\text{km/s} = 38{,}4\,\text{s}$ ja erotus $16{,}0\,\text{s}$. Kahdella jakaminen kuuluisi kaikuun eikä yksisuuntaiseen aaltoon, S-aallon nopeuden käyttö antaisi yhtä väärän tuloksen $56\,\text{km}$, ja yksiköt ovat ratkaisussa kunnossa.
 
 ## fy5-17-L3-04
 **Annettu:** asemat A$(0, 0)$, B$(120, 0)$ ja C$(60, 90)$ kilometreinä; $\Delta t_\text{A} = 10{,}0\,\text{s}$, $\Delta t_\text{B} = 7{,}5\,\text{s}$, $\Delta t_\text{C} = 5{,}9\,\text{s}$; $v_\text{P} = 6{,}0\,\text{km/s}$, $v_\text{S} = 3{,}5\,\text{km/s}$

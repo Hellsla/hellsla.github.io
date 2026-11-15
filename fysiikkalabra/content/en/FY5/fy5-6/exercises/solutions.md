@@ -267,7 +267,20 @@ Converted to hours, $T = \tfrac{2.76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \
 
 Part c): the points lie on one straight line through the origin. Jupiter's point is far away and the other four are near the origin, so it is worth plotting the inner planets in a graph of their own as well. The slope is read from two points far apart on the fitted line, for example $(100;\ 4.0)$ and $(400;\ 15.9)$: $k = \dfrac{15.9 - 4.0}{400 - 100} \approx 0.040$ in the units of the table. The same shows in the ratios $\tfrac{T^2}{a^3}$, which differ from each other by less than $0.4\,\%$.
 **Formula:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$ and $v = \dfrac{2\pi r}{T}$, so $\dfrac{\gamma M}{r} = \dfrac{4\pi^2 r^2}{T^2}$ and $T^2 = \dfrac{4\pi^2}{\gamma M} r^3$. Part d): the constant is the same for the Earth and Mars, so $\dfrac{T_\text{Mars}^2}{T_\text{Earth}^2} = \dfrac{a_\text{Mars}^3}{a_\text{Earth}^3}$, from which $T_\text{Mars} = T_\text{Earth}\left(\dfrac{a_\text{Mars}}{a_\text{Earth}}\right)^{3/2}$
-**Conversions:** For the graph $a$ is converted to the unit $10^{8}\,\text{km}$ and $T$ to the unit $10^{3}\,\text{d}$, for example for the Earth $149.6 \cdot 10^{6}\,\text{km} = 1.496 \cdot 10^{8}\,\text{km}$ and $365.2\,\text{d} = 0.3652 \cdot 10^{3}\,\text{d}$. In part d) no conversions are needed, because the unit cancels from the ratio of the distances and the orbital period comes out in days.
-**Substitution:** $T_\text{Mars} = 365.2\,\text{d} \cdot \left(\dfrac{228.0 \cdot 10^{6}\,\text{km}}{149.6 \cdot 10^{6}\,\text{km}}\right)^{3/2} = 365.2\,\text{d} \cdot 1.52406^{3/2} = 365.2\,\text{d} \cdot 1.8815 = 687.12\,\text{d}$
+**Conversions:** For the graph $a$ is converted to the unit $10^{8}\,\text{km}$ and $T$ to the unit $10^{3}\,\text{d}$, for example for the Earth $$
+\begin{aligned}
+&149.6 \cdot 10^{6}\,\text{km} \\
+&= 1.496 \cdot 10^{8}\,\text{km}
+\end{aligned}
+$$ and $365.2\,\text{d} = 0.3652 \cdot 10^{3}\,\text{d}$. In part d) no conversions are needed, because the unit cancels from the ratio of the distances and the orbital period comes out in days.
+**Substitution:** $$
+\begin{aligned}
+T_\text{Mars} &= 365.2\,\text{d} \\
+&\cdot \left(\dfrac{228.0 \cdot 10^{6}\,\text{km}}{149.6 \cdot 10^{6}\,\text{km}}\right)^{3/2} \\
+&= 365.2\,\text{d} \cdot 1.52406^{3/2} \\
+&= 365.2\,\text{d} \cdot 1.8815 \\
+&= 687.12\,\text{d}
+\end{aligned}
+$$
 **Answer:** $687.1\,\text{d}$, four significant figures as in the data $365.2\,\text{d}$, $228.0 \cdot 10^{6}\,\text{km}$ and $149.6 \cdot 10^{6}\,\text{km}$. Part c): the data support the law, because the points of the five planets lie on one straight line through the origin although $a^3$ grows more than $2000$-fold from Mercury to Jupiter. Five planets still do not prove the law in general, and for the outermost planets of the same table the ratio deviates by about $1$–$3\,\%$. Part d): NASA's value is $687.0\,\text{d}$, so the difference is $0.1\,\text{d}$, about $0.02\,\%$. The difference is explained by rounding: the values of the table have four significant figures, and a change in just the last digit of Mars's distance to $227.9 \cdot 10^{6}\,\text{km}$ would change the result to $686.7\,\text{d}$. In addition, the law in this form assumes that the mass of the planet is negligible beside the mass of the Sun and that the other planets have no effect. The elongation of the orbit is not a reason: Kepler's third law also holds for an elliptical orbit when the semi-major axis takes the place of the radius.
 **Reasonableness:** Mars is about $1.5$ times as far from the Sun as the Earth, and its orbital period $687.1\,\text{d} : 365.2\,\text{d} \approx 1.9$ years is the known length of the Martian year. The slope fits the model too. In SI units $k = 0.0398 \cdot \dfrac{(8.64 \cdot 10^{7}\,\text{s})^2}{(10^{11}\,\text{m})^3} = 2.97 \cdot 10^{-19}\,\text{s}^2/\text{m}^3$. The mass of the Sun comes out as $M = \dfrac{4\pi^2}{\gamma k} = 1.99 \cdot 10^{30}\,\text{kg}$. It is the table value of the mass of the Sun.
