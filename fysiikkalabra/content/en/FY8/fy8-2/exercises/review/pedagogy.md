@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: aee274b8dfc29f65
-SCOPE: delta round 2 (formula chains split, subscripts renamed, precision wordings)
+SCOPE: delta added-exercise from d4cac7da6f13b625 base f6ae5d507c79
 
 ## Blocking
 (none)
