@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 5844d35ce86ad915
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at c16231eb9f0d03db.
+CONTENT-HASH: a5651d1a4e826af6
+Review of the recognition chart (queue 9c) and the term change against the version passed at 5844d35ce86ad915; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (merge of #523 solution practice into #522, 2026-11-13) of the vers
 (none)
 
 ## Checked
-Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: $\rho = \sigma/d = 783\,\text{kg/m}^3$ (general area $A$ cancels, correct); $1{,}3\,\% \cdot 1{,}378\,\text{kg} = 0{,}018\,\text{kg}$, so $(1{,}38 \pm 0{,}02)\,\text{kg}$; $765/1{,}02 = 750\,\text{g}$; slope $918{,}6/900 = 1{,}021$; $x = vt + x_0$ for the cart. unit.md: the added sentence on exact numbers is correct and matches fy9-koe.
+Rows: x̄ ± Δx, ε = Δx/x̄, karkea virhe (check, do not delete without reason), systemaattinen (repetition does not remove it), y = kx + b, k = Δy/Δx from distant points, Δk from the extreme lines, linearising (s vs t²). fi-easy aria-label: same physics ("vaihtelu" for hajonta is fine). Regenerated Sovella figure aria-label: the numbers (5,3–12,2 1/MPa, intercept −1,8 ml, slope 2,60 MPa·ml) are the same in key and value.

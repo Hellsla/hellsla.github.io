@@ -1,12 +1,12 @@
-VERDICT: PASS
-CONTENT-HASH: db991bf31ee21542
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at ec7935cf8a9a834b.
+VERDICT: FAIL
+CONTENT-HASH: 0d6428d22f2ec290
+Review of the recognition chart (queue 9c) and the term change against the version passed at db991bf31ee21542; full on the chart, delta on the rest.
 
 ## Blocking
-(none)
+- A (term, contradicts the unit's Kaava and glossary): the first row "suljettu järjestelmä → energia säilyy, $E_\text{alussa} = E_\text{lopussa}$" (aria: "Suljettu järjestelmä: energia säilyy"). A closed (suljettu) system can still exchange energy as heat and work; the Kaava section (fi-easy unit.md 285) and glossary.json ("eristetty systeemi": "Suljettuun systeemiin energiaa voi vielä siirtyä…") use **eristetty systeemi**. Fix in figures.py rows and ARIA_KARTTA (fi) and in figures.json (fi-easy key and value): "eristetty systeemi" (or "ei energiaa sisään eikä ulos").
 
 ## Polish
-1. fy9-energia-s4 a) (wind): $k$ now names the capacity factor $0{,}30$, while the heating task fy9-energia-s3 uses $k$ for the slope. Separate tasks, so not a clash; $\varepsilon$ or $C_\text{f}$ would read more clearly.
+- C: "voima siirtää matkan → W = Fs" holds for a constant force along the displacement; the sign implies it.
 
 ## Checked
-Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: point-slope $E = 93 + (-4{,}9)(-28 - 0) = 230{,}2\,\text{kWh}$; $T = (E_\text{muu} - E_0)/k = 16{,}5\,{}^\circ\text{C}$ (with $T_0 = 0$ the d-part's $E = E_0 + kT$ is the same line); wind $0{,}30 \cdot 2 \cdot 1{,}0\,\text{MW} \cdot 8760\,\text{h} = 5{,}3\,\text{GWh}$.
+Rows: P = ΔE/Δt, E = Pt (steady power), 1 kWh = 1000 W · 3600 s = 3,6 MJ (recomputed), η = W_a/W_o (MAFY symbols, matches Kaava 306), η = η1η2η3 for devices in series, Q = Hm, W = Fs. fi-easy aria-label matches the chart row for row; "hyötyenergia jaettuna otetulla energialla" is right. teacher.md: teacher.md: käsitekartta -> tunnistuskaavio only, no physics changed.

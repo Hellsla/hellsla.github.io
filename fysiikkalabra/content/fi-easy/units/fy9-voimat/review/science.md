@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c07064310b8f07c3
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 782699fd4ffa0aba.
+CONTENT-HASH: 32cd94238f6e3a04
+Review of the recognition chart (queue 9c) and the term change against the version passed at c07064310b8f07c3; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: "ilmanvastus, nopeus tasaantuu → F_v = G" is for a vertical fall; the sign implies it.
 
 ## Checked
-Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: $a = 0{,}9285\,\text{m/s}^2$, $P = 48{,}0\,\text{N}$ (force diagram unchanged); $\mu = 0{,}0285$, $k' = 1/m' = 0{,}74\,\text{kg}^{-1}$, $F_0' = \mu m'g = 0{,}38\,\text{N}$; $\mu_0 = \tan 22{,}5^\circ = 0{,}414$, $\Delta\mu_0 = (\tan 24^\circ - \tan 21^\circ)/2 = 0{,}03$. The fix $\mu_0 = \tan\alpha_0$ (limit angle) then $\tan\alpha_\text{ka}$ is correct.
+Rows against the Kaava (233–244): ΣF̄ = 0̄ (a = 0), ΣF̄ = mā, ΣM = 0 also, ΣF_i = m_ia_i for each body (same rope, own equation), F_μ = 0, liukukitka F_μ = μN, lepokitka F ≤ F_μ0, lähtökitka = täysin kehittynyt lepokitka F_μ0 = μ_0N, F_v = G. fi-easy aria-label matches. Term change liikekitka → liukukitka in figures.json (pulkka aria-label), inquiry.json (contribution, hint, choice and feedback, three prompts and solutions), sovella tasks.json and solutions.md, unit.md and answers.py comments: every replacement is the sliding friction of a sliding body; numbers and reasoning unchanged; no "liikekitka" left in fi-easy fy9 content. teacher.md: teacher.md: käsitekartta -> tunnistuskaavio only, no physics changed.

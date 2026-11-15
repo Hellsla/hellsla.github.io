@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 72daa2767c4da87f
-Delta review (round 3, Kaava sign convention, 2026-11-13) of the version reviewed at 7f560b98c5ecb9d0.
+CONTENT-HASH: 45d2c7dbc75e17b1
+Review of the recognition chart (queue 9c) and the term change against the version passed at 72daa2767c4da87f; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-- inquiry.json, the electron solution: the unit text (unit.md line 356) writes $U = U_{AB} = V_A - V_B$, but here $U = V - V_0 = -U_{AB}$. The solution defines both symbols explicitly, and *Johda itse* also uses $U$ as the size of the voltage, so this does not contradict the unit. A student could still stumble over it.
+- C: "varaus kiihtyy jännitteessä → $QU = \tfrac12 mv^2$" holds from rest with only the electric force working, as the unit's johto states (374–385, with |Q|); "lähtee levosta" in the sign would carry that.
+- C: E is the field strength in row 2 and the capacitor's energy in row 7 (both as in the Kaava); a reader may stumble.
 
 ## Checked
-- The only change is the **Kaava** line of the electron task's solution. It uses $W = QU_{AB}$ with $U_{AB} = V_0 - V$ (start minus end, the unit's convention), $Q = -e$, so $W = e(V - V_0) = eU$, where $U = V - V_0 = 150\,\text{V} > 0$.
-- This $U$ is now the same positive potential difference as in the **Periaate** ("decreases by $eU$"). Round 2's sign clash is gone. The Sijoitus factor $(150\,\text{V} - 0\,\text{V})$ is $V - V_0$.
-- The quantity is solved symbolically before any substitution.
-- Recomputed in my own script: $U_{AB} = -150\,\text{V}$, $W = 2.403 \cdot 10^{-17}\,\text{J}$, $v = 7.264 \cdot 10^{6}\,\text{m/s}$, which is $2.4\,\%$ of $c$. These agree with the solution.
-- The LaTeX in the changed line is balanced.
-- `units.py hash` gives 72daa2767c4da87f at the start and at the end.
+Rows against the Kaava (285–399): F_E = kQ_1Q_2/r², E = F_E/Q, U = Ed (uniform field stated), QU = ½mv², Q = CU, C = ε_0ε_rA/d, E = ½CU², ΣΔV = 0 for the LED loop. fi-easy aria-label matches every row ("sama kenttä" for tasainen is fine). teacher.md: teacher.md: käsitekartta -> tunnistuskaavio only, no physics changed.

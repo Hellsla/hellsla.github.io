@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9ceb9eb8dad8fabb
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at a2a70e8ed2bea0c2.
+CONTENT-HASH: cb4f3bc9df560a42
+Review of the recognition chart (queue 9c) and the term change against the version passed at 9ceb9eb8dad8fabb; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: the pill $hf = W + E_\text{k}$ drops the "max" the Kaava (543: $E_\text{k,max}$) and the aria-label ("suurin liike-energia") keep.
 
 ## Checked
-Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed from the answers.py data (11 counts, background 5): least-squares fit of $\ln N$ gives intercept $5{,}993$, value $4{,}635$ at $300\,\text{s}$, $k = -4{,}528 \cdot 10^{-3}\,\text{s}^{-1}$, $T_{1/2} = 153{,}1\,\text{s}$; without subtraction $157\,\text{s}$; two end points $150{,}8\,\text{s}$ (difference $1{,}5\,\%$); $\ln 393 = 5{,}974$, $\ln 99 = 4{,}595$. Task answer 153 with tolerance 0,04 gives 147...159, as in the rubric and Hyväksytään myös; the b-part now quotes 153 consistently; answers.py key swap is consistent. Also $H = 0{,}0681\,\text{mSv}$ ($1{,}15\,\%$), $N = 1{,}436 \cdot 10^{12}$, $\lambda_{32} = 656{,}5\,\text{nm}$, $W = -eb = 2{,}24\,\text{eV}$, $f_0 = -b/k = 5{,}43 \cdot 10^{14}\,\text{Hz}$ ($k = h/e$), $m = 1653\,\text{kg}$, $\Delta m = 1{,}51\,\text{kg}$.
+Rows: E = hf, hf = W + E_k,max, hf = E_y − E_a, N = N_0e^{−λt}, A = λN, E = Δmc², H = w_R D, Ḣ ∝ 1/r² for a point source (the unit derives I = P/(4πr²)), I = I_0e^{−μx}; all match the Kaava (537–621). fi-easy aria-label and the point-source figure's aria-label state the same physics. teacher.md: teacher.md: käsitekartta -> tunnistuskaavio only, no physics changed.

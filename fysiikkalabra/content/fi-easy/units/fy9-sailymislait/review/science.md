@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 456c89720f6a41c5
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 126db917d5bd6620.
+CONTENT-HASH: 3d8ac69f058acd26
+Review of the recognition chart (queue 9c) and the term change against the version passed at 456c89720f6a41c5; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: "ei kitkaa, vain painovoima" also allows forces that do no work (normal force); implied at this level.
 
 ## Checked
-Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: exit ticket $E_\text{k} = 0{,}30\,\text{MJ}$, $v' = m_1v_1/(m_1+m_2) = 2{,}0\,\text{m/s}$; loss share $1 - (m_A+m_B)v'^2/(m_Av_A^2) = 41{,}7\,\%$; slide $1 - v^2/(2gh) = 53{,}6\,\%$; $F_\text{ka}/G = 0{,}96$; curling $E_\text{k}'/E_\text{k} = 0{,}852$; $t_\text{r} = y_1 - kv_1 = 0{,}86\,\text{s}$, $a = 6{,}25\,\text{m/s}^2$; $(v_2/v_1)^3 = 3{,}375$; $P'/P = h'/h$; $\Delta p/p = -6{,}3\,\%$; $NkE_\text{h}/(cm_\text{t}) = 7{,}1\,\text{K}$. All symbolic forms are algebraically equal to the earlier ones.
+Rows against the Kaava (341–358): E_p0 + E_k0 = E_p + E_k (only gravity works), E_p0 + E_k0 + W = E_p + E_k, E_k = ½mv², E_p = mgh, p̄ before = p̄ after (\overline vectors), ΔE_k = 0 for an elastic collision, Ī = Δp̄, η = P_a/P_o. fi-easy aria-label matches. Changed Sovella line: liukukitka F_μ = μN = μmg on level ice, work −μmgs: physics unchanged by the rename.

@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 56c058a7e6212ab4
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 20cd0c5ea68aaf63.
+CONTENT-HASH: 67d7b7f5a224ebfb
+Review of the recognition chart (queue 9c) and the term change against the version passed at 56c058a7e6212ab4; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-1. inquiry.json (dB task) and sovella/solutions.md: the symbol $\beta = 10\,\text{dB}$ ("desibeliasteikon kerroin") is the merge's own; the unit text and its kaavat fence write $L = 10\lg(I/I_0)\,\text{dB}$ without a symbol. No contradiction, but some books use $\beta$ for the level itself; writing $10\,\text{dB}$ directly in the symbolic step would match the formula box.
+- C (fi-easy aria-label): "Huojuntataajuus on taajuuksien erotus" drops the absolute value that the pill $f_\text{H} = |f_1 - f_2|$ and the fi text keep; say "erotuksen itseisarvo" (or "suuremman ja pienemmän taajuuden erotus").
+- C (fi-easy aria-label): "äänen taso on 10 kertaa intensiteettien suhteen 10-kantainen logaritmi" no longer says which intensities (I and the threshold I_0) or that the unit is dB; the pill shows both.
+- C: the pill name "äänen taso" (fi "intensiteettitaso") differs from the Kaava name "äänen intensiteettitaso" of the same unit; not wrong, but the full name keeps the chart and the Kaava in step.
 
 ## Checked
-Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: $r_2 = 20\sqrt{10^{1,9}}\,\text{m} = 178\,\text{m}$; fret $d = L - v/(2f') = 70{,}8\,\text{mm}$; pendulum $l_0 = -b/k = -1{,}39\,\text{cm}$, $l = 0{,}977\,\text{m}$; bungee $x = 21{,}59\,\text{m}$, $d = 39{,}6\,\text{m}$. Symbolic forms agree with the substitutions; no unit-text formula name contradicted.
+Every row against the Kaava section (fi-easy unit.md 267–331): T = 2π√(m/k), T = 2π√(l/g) (small angle stated), v = fλ, Δs = nλ and Δs = (n + ½)λ, f_n = n·v/(2L) for string and open pipe (closed pipe v/(4L) not claimed), f_H = |f_1 − f_2|, Doppler named only (moving source or observer), L = 10 lg(I/I_0) dB. Hub "liike vai aalto". fi-easy aria-label states the same physics (two simplifications above). teacher.md: teacher.md: käsitekartta -> tunnistuskaavio only, no physics changed.

@@ -1,12 +1,12 @@
-VERDICT: PASS
-CONTENT-HASH: b314995820c7d472
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 6142a25bf9efaa0c.
+VERDICT: FAIL
+CONTENT-HASH: 8d9ddf4a4ea0b4a3
+Review of the recognition chart (queue 9c) and the term change against the version passed at b314995820c7d472; full on the chart, delta on the rest.
 
 ## Blocking
-(none)
+- B (condition lost, contradicts the unit's own text): the row "suora ei kulje origon kautta → systemaattinen virhe, $b \neq 0$" (aria: "vakio b ei ole nolla, mikä viittaa systemaattiseen virheeseen"). A nonzero intercept points to a systematic error only when the model says the line should pass through the origin; the unit says exactly that (fi-easy unit.md 252: "Joskus suoran pitäisi mallin mukaan kulkea origon kautta, mutta b on selvästi eri kuin nolla"), and many linear laws have a physical intercept (FY9 mittaaminen even lists forcing a line through the origin "vaikka siihen ei ole fysikaalista syytä" as a mistake). Fix the sign: "mallin mukaan origon kautta, mutta ei kulje" (chart and aria-label, fi and fi-easy).
 
 ## Polish
 (none)
 
 ## Checked
-Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: $\rho = 187{,}4/70 = 2{,}68\,\text{g/cm}^3$; two significant figures from $V = 70\,\text{cm}^3$, consistent with the b-part $(2680 \pm 80)\,\text{kg/m}^3$; the rubric now accepts both forms. $a = 1/(2k) = 4{,}167\,\text{m/s}^2$, $\mu_0 \ge a/g = 0{,}425$, $a/1{,}1025 = 3{,}78\,\text{m/s}^2$. The written component equations ($\Sigma F_x = F_{\mu0} = ma$, $N = mg$, sign convention stated) are correct.
+Rows: x̄ = Σx_i/n, Δx = (x_max − x_min)/2, x̄ ± Δx, ε = Δx/x̄, y = kx + b, k = Δy/Δx from distant points, b ≠ 0. fi-easy aria-label is the fi text, same physics. Changed lines: the braking graph aria-label (numbers 7,7–69,4 m²/s², point (60; 7,2), slope 7,2/60 = 0,12 s²/m recomputed) and the two Sovella solution lines liikekitka → liukukitka (lepokitka just before slipping = lähtökitka; no physics change).
