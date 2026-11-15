@@ -182,7 +182,7 @@
     {
       "id": "fy7-15-L2-05",
       "level": 2,
-      "text": "Syventävä tehtävä.\n\nOpiskelija tutki Malusin lakia valoanturilla. Anturin edessä oli polarisaattorikalvo, ja anturi mittasi puhelimen näytön polarisoitunutta valoa sekä huoneen taustavaloa. Kulma $\\theta$ on kalvon läpäisysuunnan ja näytön polarisaatiosuunnan välinen kulma, ja $E$ on anturin lukema luksiyksikössä. Aineisto on esimerkkiaineisto.\n\nPiirrä lukema $E$ kulman kosinin neliön $\\cos^2\\theta$ funktiona ja sovita pisteisiin suora. Taustavalo lisää jokaiseen lukemaan saman verran. Vähennä taustavalon osuus. Kuinka suuri on lukema, jonka pelkkä näytön polarisoitunut valo antaa, kun kalvon läpäisysuunta on näytön polarisaation suuntainen?",
+      "text": "Syventävä tehtävä.\n\nOpiskelija tutki Malusin lakia valoanturilla. Anturin edessä oli polarisaattorikalvo, ja anturi mittasi puhelimen näytön polarisoitunutta valoa sekä huoneen taustavaloa. Kulma $\\theta$ on kalvon läpäisysuunnan ja näytön polarisaatiosuunnan välinen kulma, ja $E$ on anturin lukema luksiyksikössä.\n\nPiirrä lukema $E$ kulman kosinin neliön $\\cos^2\\theta$ funktiona ja sovita pisteisiin suora. Taustavalo lisää jokaiseen lukemaan saman verran. Vähennä taustavalon osuus. Kuinka suuri on lukema, jonka pelkkä näytön polarisoitunut valo antaa, kun kalvon läpäisysuunta on näytön polarisaation suuntainen?",
       "kind": [
         "data",
         "graph",
@@ -244,7 +244,7 @@
     {
       "id": "fy7-15-L2-06",
       "level": 2,
-      "text": "Syventävä tehtävä.\n\nOpiskelija mittasi polarisoituneen valon läpäisemän osuuden polarisaattorin kulman funktiona. Kulma $\\theta$ on valon polarisaatiosuunnan ja polarisaattorin läpäisysuunnan välinen kulma, ja $I : I_0$ on läpi tulleen valon intensiteetin suhde tulevan valon intensiteettiin. Aineisto on esimerkkiaineisto.\n\nPiirrä mittauspisteistä kuvaaja ja piirrä niiden kautta tasainen käyrä. Lue käyrältä kulma, jolla intensiteetti on $40\\,\\%$ tulevan valon intensiteetistä, ja tarkista tulos Malusin laista. Anna kulma asteina.",
+      "text": "Syventävä tehtävä.\n\nOpiskelija mittasi polarisoituneen valon läpäisemän osuuden polarisaattorin kulman funktiona. Kulma $\\theta$ on valon polarisaatiosuunnan ja polarisaattorin läpäisysuunnan välinen kulma, ja $I : I_0$ on läpi tulleen valon intensiteetin suhde tulevan valon intensiteettiin.\n\nPiirrä mittauspisteistä kuvaaja ja piirrä niiden kautta tasainen käyrä. Lue käyrältä kulma, jolla intensiteetti on $40\\,\\%$ tulevan valon intensiteetistä, ja tarkista tulos Malusin laista. Anna kulma asteina.",
       "kind": [
         "data",
         "graph"
@@ -313,6 +313,19 @@
       "unit": "°",
       "tolerance": 0.03,
       "figure": "fy7-15/fit"
+    },
+    {
+      "id": "fy7-15-L2-09",
+      "level": 2,
+      "core": true,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "Opiskelija valokuvaa näyteikkunaa kadulta. Ikkunalasista heijastuu katu ja taivas, ja heijastus peittää ikkunan takana olevat tavarat. Kameran objektiivin edessä on polarisaatiosuodin, jota voi kiertää. Kun suodin on tietyssä asennossa, heijastus himmenee selvästi ja tavarat näkyvät, mutta tavaroiden kirkkaus ei juuri muutu suodinta kierrettäessä. Kun suodinta kierretään vielä neljänneskierros ($90^\\circ$), heijastus on taas kirkas.\n\nSelitä valon polarisaation avulla, miksi suotimen asento vaikuttaa heijastukseen mutta ei juuri ikkunan takana oleviin tavaroihin, ja miksi heijastus kirkastuu neljänneskierroksen jälkeen.",
+      "answer": "Lasista heijastunut valo on osittain polarisoitunutta lasin pinnan suuntaisesti. Kun suotimen läpäisysuunta on kohtisuorassa tätä värähtelysuuntaa vastaan, suodin absorboi suurimman osan heijastuksesta. Tavaroista tuleva valo on polarisoimatonta, joten suodin päästää siitä noin puolet läpi asennosta riippumatta. Neljänneskierroksen jälkeen läpäisysuunta on heijastuksen värähtelysuunnan suuntainen, ja heijastus pääsee taas läpi.",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [

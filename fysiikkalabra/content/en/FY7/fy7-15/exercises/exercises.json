@@ -182,7 +182,7 @@
     {
       "id": "fy7-15-L2-05",
       "level": 2,
-      "text": "Extension task.\n\nA student investigated Malus's law with a light sensor. A polariser film was in front of the sensor, and the sensor measured the polarised light of a phone display and the background light of the room. The angle $\\theta$ is the angle between the transmission axis of the film and the polarisation direction of the display, and $E$ is the reading of the sensor in lux. The data is example data.\n\nPlot the reading $E$ as a function of the square of the cosine of the angle, $\\cos^2\\theta$, and fit a straight line to the points. The background light adds the same amount to every reading. Subtract the share of the background light. What is the reading that the polarised light of the display alone gives when the transmission axis of the film is aligned with the polarisation of the display?",
+      "text": "Extension task.\n\nA student investigated Malus's law with a light sensor. A polariser film was in front of the sensor, and the sensor measured the polarised light of a phone display and the background light of the room. The angle $\\theta$ is the angle between the transmission axis of the film and the polarisation direction of the display, and $E$ is the reading of the sensor in lux.\n\nPlot the reading $E$ as a function of the square of the cosine of the angle, $\\cos^2\\theta$, and fit a straight line to the points. The background light adds the same amount to every reading. Subtract the share of the background light. What is the reading that the polarised light of the display alone gives when the transmission axis of the film is aligned with the polarisation of the display?",
       "kind": [
         "data",
         "graph",
@@ -244,7 +244,7 @@
     {
       "id": "fy7-15-L2-06",
       "level": 2,
-      "text": "Extension task.\n\nA student measured the share of polarised light that passes through a polariser as a function of the angle of the polariser. The angle $\\theta$ is the angle between the polarisation direction of the light and the transmission axis of the polariser, and $I : I_0$ is the ratio of the intensity of the transmitted light to the intensity of the incident light. The data is example data.\n\nPlot a graph of the measured points and draw a smooth curve through them. Read from the curve the angle at which the intensity is $40\\,\\%$ of the intensity of the incident light, and check the result with Malus's law. Give the angle in degrees.",
+      "text": "Extension task.\n\nA student measured the share of polarised light that passes through a polariser as a function of the angle of the polariser. The angle $\\theta$ is the angle between the polarisation direction of the light and the transmission axis of the polariser, and $I : I_0$ is the ratio of the intensity of the transmitted light to the intensity of the incident light.\n\nPlot a graph of the measured points and draw a smooth curve through them. Read from the curve the angle at which the intensity is $40\\,\\%$ of the intensity of the incident light, and check the result with Malus's law. Give the angle in degrees.",
       "kind": [
         "data",
         "graph"
@@ -313,6 +313,19 @@
       "unit": "°",
       "tolerance": 0.03,
       "figure": "fy7-15/fit"
+    },
+    {
+      "id": "fy7-15-L2-09",
+      "level": 2,
+      "core": true,
+      "kind": [
+        "concept",
+        "reasoning"
+      ],
+      "text": "A student photographs a shop window from the street. The street and the sky are reflected in the window glass, and the reflection hides the goods behind the window. In front of the camera lens there is a polarising filter that can be turned. When the filter is in a certain position, the reflection dims clearly and the goods can be seen, but the brightness of the goods hardly changes as the filter is turned. When the filter is turned by a further quarter turn ($90^\\circ$), the reflection is bright again.\n\nUse the polarisation of light to explain why the position of the filter affects the reflection but hardly affects the goods behind the window, and why the reflection becomes bright again after a quarter turn.",
+      "answer": "Light reflected from glass is partly polarised parallel to the surface of the glass. When the transmission direction of the filter is perpendicular to this direction of oscillation, the filter absorbs most of the reflection. The light from the goods is unpolarised, so the filter lets about half of it through whatever its position. After a quarter turn the transmission direction is parallel to the oscillation of the reflection, and the reflection passes again.",
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [
