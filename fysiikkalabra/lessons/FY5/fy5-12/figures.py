@@ -183,6 +183,23 @@ def fourier():
     return f.svg()
 
 
+def student(f, px, pf, h=250, coat=COLD):
+    """The hero's student (this figure's own drawing, so the shared herolib.walker stays as it is): a person seen from
+    the front, mid-stride, h units tall with the feet on pf: head, neck, shoulders, torso, two arms and two separate legs."""
+    k = h / 170
+    for dx, lift in ((-9, 0), (9, 6)):                                       # legs and shoes (the right foot steps)
+        f.path(f"M{n(px + dx * k)},{n(pf - 80 * k)} L{n(px + (dx * 1.3) * k)},{n(pf - (8 + lift) * k)}", stroke=INK, w=13 * k, extra='stroke-linecap="round"')
+        f.path(f"M{n(px + (dx * 1.3 + (-6 if dx < 0 else 6)) * k)},{n(pf - (3 + lift) * k)} h{n((-10 if dx < 0 else 10) * k)}", stroke=IRON, w=8 * k, extra='stroke-linecap="round"')
+    for dx, sw in ((-1, 6), (1, -6)):                                        # arms swing
+        f.path(f"M{n(px + dx * 18 * k)},{n(pf - 128 * k)} L{n(px + (dx * 26 + sw) * k)},{n(pf - 82 * k)}", stroke=coat, w=11 * k, extra='stroke-linecap="round"')
+        f.circle(px + (dx * 27 + sw) * k, pf - 76 * k, 6 * k, SAND_LIGHT, INK, 1.5)
+    f.rect(px - 4 * k, pf - 146 * k, 8 * k, 14 * k, SAND_LIGHT)
+    f.path(f"M{n(px - 22 * k)},{n(pf - 132 * k)} Q{n(px)},{n(pf - 140 * k)} {n(px + 22 * k)},{n(pf - 132 * k)} L{n(px + 17 * k)},{n(pf - 78 * k)} H{n(px - 17 * k)} Z", coat, INK, 2.5)
+    f.circle(px, pf - 157 * k, 14 * k, SAND_LIGHT, INK, 2)
+    f.path(f"M{n(px - 14 * k)},{n(pf - 157 * k)} Q{n(px - 15 * k)},{n(pf - 174 * k)} {n(px)},{n(pf - 173 * k)} Q{n(px + 15 * k)},{n(pf - 174 * k)} {n(px + 14 * k)},{n(pf - 157 * k)} "
+           f"Q{n(px + 4 * k)},{n(pf - 165 * k)} {n(px - 14 * k)},{n(pf - 157 * k)} Z", INK)
+
+
 def hero():
     """The chapter's opening illustration: two loudspeakers on stands in a schoolyard play the same tone, sound spreads
     from both as rings, and a student walks along a path in front of them."""
@@ -197,21 +214,23 @@ def hero():
     f.rect(0, 330, 1200, 270, GOOD_LIGHT)
     f.path("M0,520 C300,500 900,500 1200,520 V570 C900,552 300,552 0,570 Z", SAND_LIGHT)
     f.path("M0,520 C300,500 900,500 1200,520", stroke=SAND, w=3)
-    # sound rings from both speakers (crests), clipped to the yard above the path
-    f.defs_add('<clipPath id="fy512h-clip"><rect x="0" y="0" width="1200" height="520"/></clipPath>')
+    # sound rings from both speakers (crests), fading out towards the path instead of stopping at its edge
+    f.defs_add('<linearGradient id="fy512h-fade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="600">'
+               '<stop offset="0.6" stop-color="#fff"/><stop offset="0.9" stop-color="#fff" stop-opacity="0.1"/></linearGradient>'
+               '<mask id="fy512h-mask"><rect x="0" y="0" width="1200" height="600" fill="url(#fy512h-fade)"/></mask>')
     rings = []
     for sx in (480, 720):
         for k in range(1, 9):
             r = 46 * k
             rings.append(f'<circle cx="{sx}" cy="330" r="{r}" fill="none" stroke="{COLD}" stroke-width="5" stroke-opacity="{n(0.55 - 0.05 * k)}"/>')
-    f.add('<g clip-path="url(#fy512h-clip)">' + "".join(rings) + "</g>")
+    f.add('<g mask="url(#fy512h-mask)">' + "".join(rings) + "</g>")
     for sx in (480, 720):
         f.line(sx, 380, sx - 30, 470, INK, 6, cap="round"); f.line(sx, 380, sx + 30, 470, INK, 6, cap="round"); f.line(sx, 360, sx, 470, INK, 6)
         f.rect(sx - 40, 270, 80, 110, IRON, INK, 4, 8)
         f.circle(sx, 300, 16, METAL_EDGE, INK, 3)
         f.circle(sx, 345, 26, METAL_EDGE, INK, 3)
         f.circle(sx, 345, 9, INK)
-    H.walker(f, 900, 540, coat=COLD, sc=0.62, stride=0.8)
+    student(f, 920, 548, 250)
     return f.svg()
 
 

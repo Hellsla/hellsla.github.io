@@ -66,6 +66,8 @@ if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra 
     shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
 if (ROOT / "assets/units").is_dir():                          # the local courses' unit components (scripts/units.py)
     shutil.copytree(ROOT / "assets/units", SITE / "units", dirs_exist_ok=True)
+if (ROOT / "assets/audio").is_dir():                          # recorded read-aloud (scripts/readaloud_audio.py): the manifests audio/fi/<page>.json, read by readaloud.js; the mp3 files are in Hellsla/ruukkilabra-audio and join the published site in the deploy
+    shutil.copytree(ROOT / "assets/audio", SITE / "audio", dirs_exist_ok=True)
 if module_icons.DIR.is_dir():                                 # one icon per module (scripts/module_icons.py), front page and module pages
     shutil.copytree(module_icons.DIR, SITE / module_icons.PUBLISHED, dirs_exist_ok=True)
 tpl = (TPL / "lesson.html").read_text()
@@ -1609,6 +1611,8 @@ _ref = re.compile(r'((?:href|src)="(?:\.\./)*)(' + "|".join(re.escape(f) for f i
 for _page in SITE.rglob("*.html"):
     if "vendor" in _page.relative_to(SITE).parts: continue
     _old = _page.read_text(); _new = _ref.sub(lambda m: f'{m[1]}{m[2]}?v={_ver[m[2]]}"', _old)
+    if _page.parent == SITE and (SITE / "audio" / "fi" / f"{_page.stem}.json").is_file():   # recorded read-aloud (readaloud.js "audio"): only a page that has recordings asks for them
+        _new = _new.replace('<script id="fl-strings" type="application/json">{"js"', f'<script id="fl-strings" type="application/json">{{"audio": "{_page.stem}", "js"', 1)
     if "<table" in _new: _new = tablefit.fit(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # no table scrolls sideways (2026-11-08)
     if 'class="ch-box"' in _new: _new = tablefit.cards(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # a card's very long word breaks at a syllable (2026-11-11)
     if _new != _old: _page.write_text(_new)
