@@ -1,9 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: db324a986b213d71
+CONTENT-HASH: b2a29f5bb1349f0e
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- batch delta review: fy6-16 tarkistus-1 option and feedback opened at 390 px: long option wraps cleanly, correct-state feedback inside the card.
+- batch delta review: opened fig-row-1280 (distribution board diagram legible); one-word text change, quantities in LaTeX.

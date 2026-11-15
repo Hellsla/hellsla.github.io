@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 9e1f7c5564a24ca1
+CONTENT-HASH: 5cef466e8945a470
 
 ## Blocking
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: fy6-16 tarkistus-1 option and feedback opened at 390 px: long option wraps cleanly, correct-state feedback inside the card.
+- batch delta review: one-word change (yli vuorokauden -> lähes vuorokauden) in prose; no figure or formula changed; fig-row-1280 layout unaffected.
