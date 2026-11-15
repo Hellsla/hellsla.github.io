@@ -6,11 +6,14 @@ fysiikkalabra-ci run of an approved main commit has passed, and pushes the resul
 that GitHub Pages serves at the domain. The published root is the committed site/ folder, so the front page is
 https://ruukkilab.fi/ and every relative link works as it does under site/.
 
-    python scripts/deploy_site.py OUT [--models DIR]
+    python scripts/deploy_site.py OUT [--models DIR] [--audio DIR]
 
 OUT is a checkout of the publishing repository: everything in it except .git is replaced. --models is a checkout of
 the read-aloud model repository; its folders supertonic3-v1/ and ort/ are published under models/ (same origin as
 the pages, so no CORS). Without --models the models/ folder already in OUT is kept as it is.
+--audio is a checkout of the recorded-voice repository (Hellsla/ruukkilabra-audio, teacher 2026-11-15): its fi/<page>/<hash>.mp3
+files are published under audio/fi/, beside the manifests that site/ carries (audio/fi/<page>.json). Without --audio no recording
+is published and the pages read with the other voices (the manifests name files that are not there, which readaloud.js survives).
 
 Added beside the pages: CNAME (the custom domain), .nojekyll (serve the files as they are), robots.txt and
 sitemap.xml (robots.txt refuses AI crawlers), LICENSE (all rights reserved). Then two gates, and the script exits 1 (nothing is pushed) if either fails:
@@ -48,6 +51,15 @@ def copy_models(src, out):
         if not (src / d).is_dir():
             sys.exit(f"deploy_site: {src / d} is missing")
         shutil.copytree(src / d, dest / d)
+
+
+def copy_audio(src, out):
+    n = 0
+    for f in sorted((src / "fi").glob("*/*.mp3")):
+        dest = out / "audio" / "fi" / f.parent.name / f.name
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(f, dest); n += 1
+    return n
 
 
 def pages(out):
@@ -136,6 +148,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("out", type=pathlib.Path)
     ap.add_argument("--models", type=pathlib.Path)
+    ap.add_argument("--audio", type=pathlib.Path)
     ap.add_argument("--site", type=pathlib.Path, default=SITE)
     a = ap.parse_args()
     out = a.out
@@ -145,10 +158,12 @@ def main():
         (shutil.copytree if p.is_dir() else shutil.copy2)(p, out / p.name)
     if a.models:
         copy_models(a.models, out)
+    recordings = copy_audio(a.audio, out) if a.audio else 0
     n = write_extras(out)
     privacy, canon = check_privacy(out), check_canonical(out)
     missing, fallback = check_links(out)
     print(f"deploy_site: {n} pages, models/ {'from ' + str(a.models) if a.models else 'kept as it was'}"
+          f"; {recordings} recordings{' from ' + str(a.audio) if a.audio else ' (none: no --audio)'}"
           f"; {fallback} KaTeX font fallbacks (.woff/.ttf beside .woff2) not published, as before")
     for title, items in (("names another site of the teacher (privacy rule 2026-11-04)", privacy),
                          ("canonical address is not on " + DOMAIN, canon), ("broken relative link", missing)):
