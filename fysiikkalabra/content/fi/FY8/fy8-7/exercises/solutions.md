@@ -4,7 +4,16 @@
 **Periaate:** Laserin kaikki fotonit syntyvät samassa siirtymässä, joten niillä on sama energia, ja yhden fotonin energia riippuu vain valon aallonpituudesta.
 **Kaava:** $E = hf$ ja $f = \tfrac{c}{\lambda}$, joten $E = \dfrac{hc}{\lambda}$
 **Muunnokset:** $\lambda = 633\,\text{nm} = 633 \cdot 10^{-9}\,\text{m}$. Lopuksi joulet muunnetaan elektronivolteiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
-**Sijoitus:** $E = (6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}) : (633 \cdot 10^{-9}\,\text{m}) = 3{,}1382 \cdot 10^{-19}\,\text{J} = \dfrac{3{,}1382 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 1{,}9589\,\text{eV}$
+**Sijoitus:** $$
+\begin{aligned}
+E &= (6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s}) \\
+&: (633 \cdot 10^{-9}\,\text{m}) \\
+&= 3{,}1382 \cdot 10^{-19}\,\text{J} \\
+&= \dfrac{3{,}1382 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\
+&= 1{,}9589\,\text{eV}
+\end{aligned}
+$$
 **Vastaus:** $1{,}96\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituudessa $633\,\text{nm}$.
 **Järkevyys:** Näkyvän valon fotonien energiat ovat noin $1{,}7$–$3{,}3\,\text{eV}$, ja punainen valo on alueen pienienergisessä päässä, kuten tulos. Vedyn punaisen viivan $656\,\text{nm}$ fotonin energia on $1{,}89\,\text{eV}$; hieman lyhyemmällä aallonpituudella energia on hieman suurempi.
 
@@ -14,7 +23,13 @@
 **Periaate:** Valo koostuu fotoneista, ja yhden fotonin energia on kääntäen verrannollinen valon aallonpituuteen.
 **Kaava:** $E = \dfrac{hc}{\lambda}$
 **Muunnokset:** $\lambda = 1550\,\text{nm} = 1550 \cdot 10^{-9}\,\text{m}$. Lopuksi joulet elektronivolteiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
-**Sijoitus:** $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1550 \cdot 10^{-9}\,\text{m}} = 1{,}2816 \cdot 10^{-19}\,\text{J} = \dfrac{1{,}2816 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 0{,}80000\,\text{eV}$, kun $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$
+**Sijoitus:** $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1550 \cdot 10^{-9}\,\text{m}} = 1{,}2816 \cdot 10^{-19}\,\text{J} = \dfrac{1{,}2816 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 0{,}80000\,\text{eV}$, kun $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$
 **Vastaus:** $0{,}800\,\text{eV}$, kolme merkitsevää numeroa kuten vakioissa; aallonpituus $1550\,\text{nm}$ on annettu vähintään kolmella.
 **Järkevyys:** Aallonpituus on yli kaksi kertaa näkyvän punaisen valon aallonpituus, joten energia on alle puolet punaisen fotonin noin $1{,}9\,\text{eV}$:sta. Fotoni on infrapunaa, ja sen energia on pienempi kuin näkyvän valon alaraja $1{,}7\,\text{eV}$, kuten pitää.
 
@@ -24,7 +39,16 @@
 **Periaate:** Energia säilyy: kun ioni putoaa ylemmältä lasertasolta alemmalle, sen energia pienenee tasojen erotuksen verran, ja juuri tämän energian vie yksi fotoni.
 **Kaava:** $\dfrac{hc}{\lambda} = E_2 - E_1$, josta $\lambda = \dfrac{hc}{E_2 - E_1}$
 **Muunnokset:** $E_2 - E_1 = 1{,}79\,\text{eV} = 1{,}79 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}8676 \cdot 10^{-19}\,\text{J}$; lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Sijoitus:** $\lambda = (6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}) : (2{,}8676 \cdot 10^{-19}\,\text{J}) = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}8676 \cdot 10^{-19}\,\text{J}} = 6{,}9274 \cdot 10^{-7}\,\text{m} = 692{,}74\,\text{nm}$
+**Sijoitus:** $$
+\begin{aligned}
+\lambda &= (6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s}) \\
+&: (2{,}8676 \cdot 10^{-19}\,\text{J}) \\
+&= \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}8676 \cdot 10^{-19}\,\text{J}} \\
+&= 6{,}9274 \cdot 10^{-7}\,\text{m} \\
+&= 692{,}74\,\text{nm}
+\end{aligned}
+$$
 **Vastaus:** $693\,\text{nm}$, kolme merkitsevää numeroa kuten energiaerossa $1{,}79\,\text{eV}$.
 **Järkevyys:** Tulos on näkyvän valon punaisessa päässä, ja rubiinilaserin valo on tummanpunaista, aallonpituudeltaan noin $694\,\text{nm}$. Energia $1{,}79\,\text{eV}$ on näkyvän valon alueen $1{,}7$–$3{,}3\,\text{eV}$ alapäässä, mikä sopii punaiseen valoon.
 
@@ -34,7 +58,16 @@
 **Periaate:** Laserin kaikki fotonit ovat samanlaisia, joten pulssin energia on fotonien määrä kerrottuna yhden fotonin energialla $\tfrac{hc}{\lambda}$.
 **Kaava:** $E = N \cdot \dfrac{hc}{\lambda}$, josta $N = \dfrac{E\lambda}{hc}$
 **Muunnokset:** $E = 3{,}0\,\text{mJ} = 3{,}0 \cdot 10^{-3}\,\text{J}$ ja $\lambda = 1064\,\text{nm} = 1064 \cdot 10^{-9}\,\text{m}$.
-**Sijoitus:** $N = (3{,}0 \cdot 10^{-3}\,\text{J} \cdot 1064 \cdot 10^{-9}\,\text{m}) : (6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}) = \dfrac{3{,}192 \cdot 10^{-9}\,\text{J}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1{,}6069 \cdot 10^{16}$
+**Sijoitus:** $$
+\begin{aligned}
+N &= (3{,}0 \cdot 10^{-3}\,\text{J} \\
+&\cdot 1064 \cdot 10^{-9}\,\text{m}) \\
+&: (6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s}) \\
+&= \dfrac{3{,}192 \cdot 10^{-9}\,\text{J}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} \\
+&= 1{,}6069 \cdot 10^{16}
+\end{aligned}
+$$
 **Vastaus:** $1{,}6 \cdot 10^{16}$ fotonia, kaksi merkitsevää numeroa kuten pulssin energiassa $3{,}0\,\text{mJ}$.
 **Järkevyys:** Yhden fotonin energia on $\tfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1064 \cdot 10^{-9}\,\text{m}} \approx 1{,}9 \cdot 10^{-19}\,\text{J}$, ja $1{,}6 \cdot 10^{16} \cdot 1{,}9 \cdot 10^{-19}\,\text{J} \approx 3 \cdot 10^{-3}\,\text{J}$, kuten pitää. Yksikkö kumoutuu, joten tulos on pelkkä luku.
 
@@ -74,7 +107,16 @@
 **Periaate:** Fotonin energia on $\tfrac{hc}{\lambda}$. Lasketaan isomman pisteen fotonin energia, lisätään siihen $0{,}35\,\text{eV}$ ja lasketaan uudesta energiasta aallonpituus. Pienemmän pisteen energiarako on suurempi, joten sen fotonin energia on suurempi.
 **Kaava:** $E_\text{iso} = \dfrac{hc}{\lambda_\text{iso}}$ ja $\dfrac{hc}{\lambda} = E_\text{iso} + \Delta E$, josta $\lambda = \dfrac{hc}{E_\text{iso} + \Delta E}$
 **Muunnokset:** $\lambda_\text{iso} = 620\,\text{nm} = 620 \cdot 10^{-9}\,\text{m}$; energiat elektronivoltteina ja jouleina sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$; lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Sijoitus:** $E_\text{iso} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3{,}2040 \cdot 10^{-19}\,\text{J} = 2{,}0000\,\text{eV}$. $E_\text{iso} + \Delta E = 2{,}0000\,\text{eV} + 0{,}35\,\text{eV} = 2{,}3500\,\text{eV} = 2{,}3500 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}7647 \cdot 10^{-19}\,\text{J}$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}7647 \cdot 10^{-19}\,\text{J}} = 5{,}2766 \cdot 10^{-7}\,\text{m} = 527{,}66\,\text{nm}$
+**Sijoitus:** $E_\text{iso} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3{,}2040 \cdot 10^{-19}\,\text{J} = 2{,}0000\,\text{eV}$. $$
+\begin{aligned}
+E_\text{iso} + \Delta E &= 2{,}0000\,\text{eV} \\
+&+ 0{,}35\,\text{eV} \\
+&= 2{,}3500\,\text{eV} \\
+&= 2{,}3500 \\
+&\cdot 1{,}602 \cdot 10^{-19}\,\text{J} \\
+&= 3{,}7647 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}7647 \cdot 10^{-19}\,\text{J}} = 5{,}2766 \cdot 10^{-7}\,\text{m} = 527{,}66\,\text{nm}$
 **Vastaus:** $528\,\text{nm}$, kolme merkitsevää numeroa kuten aallonpituudessa $620\,\text{nm}$.
 **Järkevyys:** Pienempi piste lähettää lyhyempää aallonpituutta, vihreää valoa, kuten kvanttipisteillä kuuluu. Kvanttipisteiden taulukossa $3{,}0\,\text{nm}$:n piste lähettää valoa aallonpituudella $530\,\text{nm}$, joten pienempi piste on tätä kokoluokkaa.
 
@@ -129,7 +171,13 @@
 **Periaate:** Laserin fotonit ovat samanlaisia, joten teho on fotonien määrä sekunnissa kerrottuna yhden fotonin energialla $\tfrac{hc}{\lambda}$.
 **Kaava:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$, josta $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
 **Muunnokset:** $P = 5{,}0\,\text{mW} = 5{,}0 \cdot 10^{-3}\,\text{W}$ ja $\lambda = 532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$.
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $P\lambda = 5{,}0 \cdot 10^{-3}\,\text{W} \cdot 532 \cdot 10^{-9}\,\text{m} = 2{,}660 \cdot 10^{-9}\,\text{W}\,\text{m}$, joten $\tfrac{N}{t} = \dfrac{2{,}660 \cdot 10^{-9}\,\text{W}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1{,}3391 \cdot 10^{16}\,\tfrac{1}{\text{s}}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ ja $P\lambda = 5{,}0 \cdot 10^{-3}\,\text{W} \cdot 532 \cdot 10^{-9}\,\text{m} = 2{,}660 \cdot 10^{-9}\,\text{W}\,\text{m}$, joten $\tfrac{N}{t} = \dfrac{2{,}660 \cdot 10^{-9}\,\text{W}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1{,}3391 \cdot 10^{16}\,\tfrac{1}{\text{s}}$
 **Vastaus:** $1{,}3 \cdot 10^{16}$ fotonia sekunnissa (laskimen tulos $1{,}34 \cdot 10^{16}$), kaksi merkitsevää numeroa kuten tehossa $5{,}0\,\text{mW}$.
 **Järkevyys:** Yhden fotonin energia on $\tfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{532 \cdot 10^{-9}\,\text{m}} \approx 3{,}7 \cdot 10^{-19}\,\text{J}$, ja $1{,}3 \cdot 10^{16}\,\tfrac{1}{\text{s}} \cdot 3{,}7 \cdot 10^{-19}\,\text{J} \approx 5 \cdot 10^{-3}\,\text{W}$, kuten pitää. Yksi mW antaisi $2{,}7 \cdot 10^{15}$ fotonia sekunnissa, joten viisinkertaisella teholla $5{,}0\,\text{mW}$ fotoneja on noin $1{,}3 \cdot 10^{16}$ sekunnissa.
 
@@ -180,7 +228,13 @@ $$\begin{aligned}
 **Kuvaajan lukeminen:** Taulukosta: halkaisija $2{,}0\,\text{nm}$ vastaa aallonpituutta $486\,\text{nm}$ ja halkaisija $6{,}0\,\text{nm}$ aallonpituutta $617\,\text{nm}$. Kun halkaisija kasvaa, aallonpituus kasvaa joka välillä.
 **Kaava:** $E = \dfrac{hc}{\lambda}$ ja $\Delta E = E_{2{,}0\,\text{nm}} - E_{6{,}0\,\text{nm}}$
 **Muunnokset:** $\lambda = 486 \cdot 10^{-9}\,\text{m}$ ja niin edelleen; joulet elektronivolteiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
-**Sijoitus:** a) $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Pisteen $2{,}0\,\text{nm}$ fotonin energia on $\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{486 \cdot 10^{-9}\,\text{m}} = 4{,}0875 \cdot 10^{-19}\,\text{J} = 2{,}551\,\text{eV}$. Samalla tavalla pisteille $3{,}0$; $4{,}0$; $5{,}0$ ja $6{,}0\,\text{nm}$ saadaan $2{,}344\,\text{eV}$, $2{,}164\,\text{eV}$, $2{,}063\,\text{eV}$ ja $2{,}010\,\text{eV}$. b) Energiarako pienenee, kun piste kasvaa: mitä pienempi piste, sitä suurempi rako. Muutos hidastuu koon kasvaessa: välillä $2{,}0 \to 3{,}0\,\text{nm}$ rako pienenee $0{,}207\,\text{eV}$ ja välillä $5{,}0 \to 6{,}0\,\text{nm}$ vain $0{,}053\,\text{eV}$, joten energiarako ei ole suoraan verrannollinen pisteen kokoon eikä riippuvuus ole lineaarinen. c) $\Delta E = 2{,}5514\,\text{eV} - 2{,}0097\,\text{eV} = 0{,}5417\,\text{eV}$
+**Sijoitus:** a) $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. Pisteen $2{,}0\,\text{nm}$ fotonin energia on $\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{486 \cdot 10^{-9}\,\text{m}} = 4{,}0875 \cdot 10^{-19}\,\text{J} = 2{,}551\,\text{eV}$. Samalla tavalla pisteille $3{,}0$; $4{,}0$; $5{,}0$ ja $6{,}0\,\text{nm}$ saadaan $2{,}344\,\text{eV}$, $2{,}164\,\text{eV}$, $2{,}063\,\text{eV}$ ja $2{,}010\,\text{eV}$. b) Energiarako pienenee, kun piste kasvaa: mitä pienempi piste, sitä suurempi rako. Muutos hidastuu koon kasvaessa: välillä $2{,}0 \to 3{,}0\,\text{nm}$ rako pienenee $0{,}207\,\text{eV}$ ja välillä $5{,}0 \to 6{,}0\,\text{nm}$ vain $0{,}053\,\text{eV}$, joten energiarako ei ole suoraan verrannollinen pisteen kokoon eikä riippuvuus ole lineaarinen. c) $\Delta E = 2{,}5514\,\text{eV} - 2{,}0097\,\text{eV} = 0{,}5417\,\text{eV}$
 **Vastaus:** $0{,}54\,\text{eV}$. Aallonpituudet on annettu kolmella merkitsevällä numerolla, ja erotus ilmoitetaan sadasosien tarkkuudella.
 **Järkevyys:** Pienin piste lähettää lyhyintä aallonpituutta, $486\,\text{nm}$, ja suurin pisin, $617\,\text{nm}$, kuten kvanttipisteillä kuuluu. Erotus $0{,}54\,\text{eV}$ on noin $27\,\%$ suurimman pisteen raosta $2{,}01\,\text{eV}$, ja aallonpituus on pienimmällä pisteellä $\tfrac{486}{617} = 79\,\%$ suurimman aallonpituudesta, mikä sopii yhteen.
 
@@ -212,7 +266,19 @@ a) $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Pumppausfotonit: $\tfrac{
 
 b) $\eta_\text{q} = \dfrac{8{,}080 \cdot 10^{19}\,\tfrac{1}{\text{s}}}{9{,}826 \cdot 10^{19}\,\tfrac{1}{\text{s}}} = 0{,}8222 = 82{,}2\,\%$.
 
-c) Lämpöteho on $20{,}0\,\text{W} - 15{,}0\,\text{W} = 5{,}0\,\text{W}$. Fotonin energiaero on $\dfrac{hc}{\lambda_\text{p}} - \dfrac{hc}{\lambda_\text{L}} = 2{,}0354 \cdot 10^{-19}\,\text{J} - 1{,}8566 \cdot 10^{-19}\,\text{J} = 1{,}788 \cdot 10^{-20}\,\text{J}$, joten pakollinen osa on $P_\text{pak} = 8{,}080 \cdot 10^{19}\,\tfrac{1}{\text{s}} \cdot 1{,}788 \cdot 10^{-20}\,\text{J} = 1{,}44\,\text{W}$, eli noin $29\,\%$ lämpötehosta.
+c) Lämpöteho on $20{,}0\,\text{W} - 15{,}0\,\text{W} = 5{,}0\,\text{W}$. Fotonin energiaero on $$
+\begin{aligned}
+\dfrac{hc}{\lambda_\text{p}} - \dfrac{hc}{\lambda_\text{L}} &= 2{,}0354 \cdot 10^{-19}\,\text{J} \\
+&- 1{,}8566 \cdot 10^{-19}\,\text{J} \\
+&= 1{,}788 \cdot 10^{-20}\,\text{J}
+\end{aligned}
+$$, joten pakollinen osa on $$
+\begin{aligned}
+P_\text{pak} &= 8{,}080 \cdot 10^{19}\,\tfrac{1}{\text{s}} \\
+&\cdot 1{,}788 \cdot 10^{-20}\,\text{J} \\
+&= 1{,}44\,\text{W}
+\end{aligned}
+$$, eli noin $29\,\%$ lämpötehosta.
 
 d) Energiahyötysuhde on $\tfrac{15{,}0\,\text{W}}{20{,}0\,\text{W}} = 0{,}750 = 75{,}0\,\%$, joten se on pienempi kuin $\eta_\text{q} = 82{,}2\,\%$. Syy on, että jokaisen laserfotonin energia on pienempi kuin pumppausfotonin: energioiden suhde on $\eta_\text{q}$ kerrottuna fotonin energioiden suhteella $\tfrac{976}{1070} = 0{,}912$, ja $0{,}8222 \cdot 0{,}912 = 0{,}750$. Pumppausfotonin ja laserfotonin energioiden erotus jää aineeseen lämmöksi, vaikka jokainen pumppausfotoni tuottaisi laserfotonin.
 

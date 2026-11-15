@@ -252,7 +252,7 @@
         },
         {
           "text": "The seconds have been changed into years wrongly, because a year has $3.156 \\cdot 10^{4}\\,\\text{s}$.",
-          "feedback": "A year has $365 \\cdot 24 \\cdot 3600\\,\\text{s} \\approx 3.156 \\cdot 10^{7}\\,\\text{s}$, so the conversion into years is correct. The error comes before it: the megaparsec has been changed into metres, although the speed is in kilometres per second."
+          "feedback": "A year has $$\n\\begin{aligned}\n&365 \\cdot 24 \\cdot 3600\\,\\text{s} \\\\\n&\\approx 3.156 \\cdot 10^{7}\\,\\text{s}\n\\end{aligned}\n$$, so the conversion into years is correct. The error comes before it: the megaparsec has been changed into metres, although the speed is in kilometres per second."
         },
         {
           "text": "The Hubble constant should first have been multiplied by the speed of light $c$.",

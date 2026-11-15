@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f22ac3e71db8780e
-SCOPE: delta added-exercise from b4640f1fa75ce4b0 base 5a45b28682e8
+CONTENT-HASH: 477fba2ef0ddaf08
+SCOPE: delta reflow from a4ebb11d9e9fefdd base d4ee68c800
 
 ## Blocking
 (none)
 
 ## Polish
-(none new; the round-1 Minor on the small figure in the task card stands)
+(none)
 
 ## Checked
-- Own scratch captures of the L2-08 card with every solution open at 360 and 390 px (en), read in full from the preview build; review/shots not used.
-- Substitution row now /bin/bash.4136 · (12 − 5.56) = 2.66$ and splits into two aligned rows; no formula in the card is wider than the card at 360 or 390 px (measured in the browser); the Conversions and Reasonableness lines read cleanly, the unseen 2.3 eV is gone.
-- Figure kuvaaja-ab seen in the card: axes, units, grid, A and B distinct.
-- L1-10 and L2-09 were passed in round 1 and are unchanged.
+- delta reflow, en: no solution capture of this set opened; the reflowed blocks judged from the source diff only (rows broken at whole terms). Layout of the card around the blocks intact; no 390 px open-solution capture exists, so phone wrapping is judged by the build's rule only. Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

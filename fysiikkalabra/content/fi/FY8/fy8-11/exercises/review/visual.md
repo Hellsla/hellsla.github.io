@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ee8c9677d92c1621
-Round: 2 (delta)
+CONTENT-HASH: c5922b9830d7d554
+SCOPE: delta reflow from ee8c9677d92c1621 base cf5f907
 
 ## Blocking
-(none) Round 1 Major resolved: E_B,alku and E_B,loppu are split at the equals sign and fit the 390 px column (measured: no overflowing KaTeX, no page scroll).
+- none
 
 ## Polish
-- [Minor] exercises.json L2-08 — round 1 Polish items on feedback wording (reason 4, choice 1) may be applied when next edited; none blocks.
+- none
 
 ## Checked
-- Own 390 px re-render of 11-16 with both stages' feedback and the solution open: calculation lines short and aligned, Q chain intact, closing paragraphs readable.
+- Delta round 4, calculation chains re-broken into aligned rows. Changed blocks judged from the source diff and the identical shared aligned renderer seen in fy8-1 and fy8-6 captures; this set's own solution captures not opened.
+- Kaava lines keep the equals sign in the first row; sentence marks sit inside the last row.
 
 ## Scores
-illustrations n/a (5) · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
