@@ -1,15 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 240d5ff14a5bd144
+CONTENT-HASH: 2606efea8263d215
 
 ## Blocking
 - none
 
 ## Polish
-- Finnish source (not a translation issue): Joule figure description says "työ muuttuu lämmöksi" (work turns into heat), while the inquiry feedback correctly says heat is not stored in the water; the en text follows the Finnish faithfully.
+- lessons/FY3/fy3-2/sim-spec.md — "työ muuttuu lämmöksi" (work turns into heat) breaks the heat guardrail; the student-facing sim `model` text correctly says internal energy. Spec only, no student sees it — reword when the spec is next touched.
+- lesson.md crane photo caption — "the load's potential energy increases": E_p is FY4 per the scope note; the theory says "the energy of the lifted object" — consider the same words (C, not an error).
+- sim.js readout — decimal comma (120,0 W, 10,0 m) on the English page; language/visual, not physics.
 
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): comma added before 'mutta'/'but' in the Ydinajatus sentence; punctuation only, physics (supporting force perpendicular to displacement, zero work, muscles still use energy) unchanged. Hashes equal at start and end.
-- delta review 2026-11-07 (teacher's proofread replacement texts): new definition (work when the body is displaced and the force has a component along the displacement) and the backpack paragraph (supporting force ⟂ displacement, mechanical work zero, muscles still use energy) are correct and agree with the carry-lift figure; the remaining changes are pure typesetting of N, cm and kPa values, numbers unchanged (checked token by token). English text carries the same meaning as fi.
-- Translation review against the reviewed Finnish (teacher's decision 2026-10-28): lesson.md prose, formulas sections, worked example (all 7 steps), misconception and summary; meta.json; inquiry.json all fields incl. experiment intros, source_note, predictions (doubles / quarter / perpendicular force does no work), feedback, Joule table and both task solutions; exit-ticket.json; figures.json (every value translates its own key); sim labels Pull / Speed (sims.fy3-2). Physics terms (work, power, weight, internal energy, acceleration of free fall), decimal points, \cdot, units and numbers in prose match the Finnish; chapter reference uses the en courses.json title.
-- Update 2026-10-28: figure or sim labels shortened so they fit at 360 px (layout check): air pressure, bottom pressure, column's weight, line through origin, path, heat radiation, Object's/Water's initial temperature; re-hashed.
-- Update 2026-10-28 (physics audit + figures/assessment on main): translated and checked lesson text, check-c2 multiple-choice item, renumbered check items, trimmed exit ticket, new figure description and unit math.
+- Full review (figure change, proofreading round 1): hash equal at start and end.
+- Definitions: work (force with a component along the displacement, W = Fs for a constant force in the direction of motion), joule, power P = W/t = Fv with its condition (steady speed, force along motion), heat vs work in Joule's paragraph — all correct and inside FY3 scope (no cos α, no E_k/E_p theory).
+- Causality: carrying sideways → supporting force ⟂ displacement → zero work, muscles still use energy; Cem's feedback correctly ties the vertical force to steady speed with air resistance ignored.
+- Recomputed in one script: pr-paino 98 N; pred-1 600/1200 J; pred-2 120/30 W; pred-3 1.96 kJ; Joule table ΔU/W ≈ 0.99; worked example 4.0 J; siirto 240 W and mistakes 9.6, 0.24; check-1 ratio 3; check-c2 98 J and distractors 590/490 J; check-2 180 J and mistakes 240/120; exit 20 J. All agree.
+- Joule 1850 value 4.16 J per g·°C and present 4.19 J — correct.
+- Worked example: symbolic W = ½F_max s before substitution, conversion, 2 s.f., average-force check real.
+- Figures: spring-work "to scale" verified (75.6 px per 0.05 m, 42.75 px per 10 N, apex at (0.20 m, 40 N)); lift-work F and G arrows equal (58 px), "not to scale" stated; work-graphs areas labelled correctly.
+- Simulation: W = Fs, P = W/t, Wdone = W·u; speed control changes pace only; model box states constant speed, friction = pull, values are model outputs not measurements; simState carries F, s, t, W, P.
+- Experiments: exp-1 locks F, t and varies s (W measured); exp-2 locks F, s and varies t (W, P) — each isolates its parameter; slider ranges reach the suggested values.
+- Assessment: exactly one correct option in every choice item; every distractor's feedback names the actual misconception.

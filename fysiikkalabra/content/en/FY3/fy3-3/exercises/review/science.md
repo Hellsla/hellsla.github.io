@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: e5a8473323aac32e
-SCOPE: delta added-exercise from ba420448372c48ee base 81db4a6fd727
+CONTENT-HASH: caaf5649b68d4b50
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- fy3-3-L2-08 Reasonableness: "nearer the upper end" says the same as before (90.9 °C lies between 75 and 100 °C, closer to 100) and matches the Finnish "lähempänä sataa"; no number changed.
-- L2-08 recomputed: $k = (102.5 - 75)/100 = 0.275\,\text{kPa/°C}$, $\theta = (100 - 75)/0.275 = 90.9\,{}^\circ\text{C}$; least-squares fit of the five points gives 90.2 °C, inside the 8 % tolerance; answers.py agrees.
-- fy3-3-L1-10 unchanged: $T = -196 + 273.15 = 77.15\,\text{K}$, answer 77 K.
-- Rest of the set as passed; numbers in the task texts match the Finnish exercises.json.
-- Hash same at start and end.
+- I judged the only change in the diff: the last sentence of the L1-06 model answer now reads "The temperature of a closed system is not necessarily constant either" (before, "is not constant").
+- The new sentence is the correct claim. A closed system can still exchange energy, so its temperature may change but need not. The old wording overstated this slightly (B). The new one agrees with the Principle line and with the Finnish and fi-easy texts ("ei välttämättä ole vakio").
+- The change contains no number, symbol or unit. No answer, unit or tolerance changed, so answers.py needs no recompute.
+- The rest of the L1-06 solution is unchanged and consistent. The sealed cylinder is closed, the piston is part of the boundary, and heating and compression change the state variables without opening the system.
+- Hash at start and end: caaf5649b68d4b50.

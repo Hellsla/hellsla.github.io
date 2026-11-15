@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e0b178c42e148725
+CONTENT-HASH: 48e582d57b684a1c
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Delta: heat/internal-energy wording repaired across solutions and one feedback ('siirtyy lämpönä kaukolämpöveteen'); L2-09 answer 42,9 % with tolerance 0,03 and the figure reading (350, 150 MW on grid lines) justified.
+- Delta: solutions of the chain-bars tasks now say that the ends of bars P_1 and P_2 lie on grid lines; this is accurate to the figure description (350 and 150 MW, 50 MW grid) and justifies three significant figures.
+- Wording only, no number or answer changed.
 - Judged from the diff text; captures not opened.
