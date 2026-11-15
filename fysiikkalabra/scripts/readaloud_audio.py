@@ -174,6 +174,10 @@ def main():
         man["blocks"][h] = {"file": f"{page_id}/{h}.mp3", "words": words}
         used += len(text_out); done += 1
         mf.write_text(json.dumps(man, ensure_ascii=False, separators=(",", ":")) + "\n")   # after every block: a stopped run loses nothing paid for
+    stale = [h for h in man["blocks"] if h not in set(hashes)]       # recordings of text that has since changed: dropped, never published
+    for h in stale:
+        (AUDIO / man["blocks"].pop(h)["file"]).unlink(missing_ok=True)
+    if stale: mf.write_text(json.dumps(man, ensure_ascii=False, separators=(",", ":")) + "\n"); print(f"dropped {len(stale)} stale recordings")
     size = sum(p.stat().st_size for p in (AUDIO / page_id).glob("*.mp3"))
     print(f"recorded {done} blocks, {used} characters sent, {size / 1e6:.2f} MB of mp3 in {page_id}/")
 

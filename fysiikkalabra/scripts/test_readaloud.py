@@ -58,6 +58,21 @@ for f in sorted(SITE.rglob("*.html")):
 expect(f"{count} pages built from lesson.html load readaloud.js", not missing and count > 0, missing[:10])
 expect("every such page carries lang \"speech\"", not nospeech, nospeech[:10])
 
+# recordings (assets/audio, copied to site/audio by build.py): every manifest names files that exist, with one time pair per word
+import glob
+bad = []
+for mf in sorted((SITE / "audio" / "fi").glob("*.json")):
+    m = json.loads(mf.read_text())
+    for h, e in m["blocks"].items():
+        f = SITE / "audio" / "fi" / e["file"]
+        w = e["words"]
+        if not f.is_file() or f.stat().st_size < 1000 or not w or any(len(x) != 2 or x[1] < x[0] for x in w) or any(w[k + 1][0] < w[k][0] for k in range(len(w) - 1)):
+            bad.append(f"{mf.name}:{h}")
+expect("every recording in site/audio has its file and increasing word times", not bad, bad[:5])
+extra = [p.relative_to(SITE / "audio" / "fi").as_posix() for p in (SITE / "audio" / "fi").rglob("*.mp3")
+         if p.relative_to(SITE / "audio" / "fi").as_posix() not in {e["file"] for mf in (SITE / "audio" / "fi").glob("*.json") for e in json.loads(mf.read_text())["blocks"].values()}]
+expect("no recording is published without a manifest entry (a stale one is dropped by readaloud_audio.py)", not extra, extra[:5])
+
 # a stand-in voice: reports each word as a boundary, then ends the sentence; records what was spoken
 MOCK = r"""(() => {
   const spoken = []; window.__spoken = spoken;
