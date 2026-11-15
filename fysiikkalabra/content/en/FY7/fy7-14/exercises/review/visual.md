@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 272340bdf157de82
+CONTENT-HASH: 9868eb67be62fa26
 
 ## Blocking
 
-## Polish
-- none
+## Outside this change (queue item 5d, not blocking here)
+- [Major] docs/clipped-formulas.tsv lists 1 of this set's solution formulas as clipped at 360 px with the solutions open — old, untouched by this change; fix under queue item 5d.
 
-## Outside this change (queue 5d, not blocking here)
-- [Major] fy7-14 solutions at 360 px — clipped formulas listed in docs/clipped-formulas.tsv (queue 5d) — outside this change; fix under 5d.
+## Polish
+- [Minor] 14-20 Answer (L3-1280-6) — the c) reasoning sits in one long paragraph after the precision remark (untouched text) — start c) as its own paragraph.
 
 ## Checked
-- Delta: the coating reasonableness text (L2-08, part 11 at 1280 px): reads clearly, MgF$_2$ and the square root typeset correctly; the thin-film L3 text change read in the source.
+- Delta: task 14-22 (fy7-14-L3-05), the marker for example data removed from the task text.
+- fy7-14-open-exercises-L3-1280-6 (14-22 heading row, situation paragraphs and the changed sentence: it reads as a complete sentence, inline maths on one line, no orphaned parenthesis or double space; the end of the 14-20 solution above it intact).
+- fy7-14-open-exercises-L3-1280-7 (parts b and c, the data table with its caption, answer row, opened answer and the start of the solution: inside the card, no overflow or clipping, the layout unchanged).
+- Not opened: other captures (outside the delta).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4
