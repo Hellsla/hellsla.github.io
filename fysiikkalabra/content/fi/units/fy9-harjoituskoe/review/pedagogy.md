@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b042fabb2e261987
-Delta review (extra-answers rule, 2026-11-14) of the version passed at 1c760d7d1d71cc80.
+CONTENT-HASH: 22126cca58c08cf9
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-None.
+- (none)
 
 ## Polish
-- Instruction is correct and unambiguous: with extra answers, count only the allowed number, the lowest-scoring ones. A student may find it harsh; one clause saying why (so the extra answer cannot only help) would be nice, not needed.
+- A: sovella/tasks.json, the two calc questions "Kuinka suuri teho muuttuu jatkojohdossa sisäenergiaksi?" / "Kuinka suuri sisäenergiaksi muuttuva teho olisi …": a power does not itself turn into energy; clearer: "Kuinka suurella teholla sähköenergiaa muuttuu jatkojohdossa sisäenergiaksi?" (the old wording had the same looseness; a student still understands what to compute).
+- C: solutions.md still calls the same quantity "johdon lämpöteho" in the next part (Kysytty, Vastaus, Järkevyys) and tasks.json's criterion "Lämpöteho on sama"; a consistent term across parts c–e would be neater.
+- C: solutions.md d) Mallivastaus keeps "suurin mahdollinen lepokitka" right after the Periaate's "Lähtökitka eli täysin kehittynyt lepokitka"; understandable, as the Periaate gives the definition.
 
 ## Checked
-- Rule now matches the real exam and is repeated as the practice rule in the next sentence; 'the page does not add up the points for you' prevents hunting for a calculator.
-- Reads fine on phone: one short paragraph under the table.
-- Rest of the page unchanged and not re-judged.
+- solutions.md d) Periaate and tasks.json criterion (2 p): lähtökitka wording carried out, formula μ0·N = μ0·m·g unchanged, criterion still observable.
+- solutions.md c) Kysytty and the two question texts: P1 carried out; answers 114 W and 70,4 W untouched; nothing discloses an answer.
+- Grepped the unit for remaining "lämmöksi": none. No s7 change in this unit's diff (the existing s7 is unchanged).
+- Item 19: this unit's diff holds no added task.
