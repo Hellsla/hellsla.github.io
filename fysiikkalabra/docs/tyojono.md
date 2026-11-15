@@ -473,6 +473,7 @@ muuteta. Yksi kurssi = yksi haara ja yksi PR; rinnakkaisuus kuten jonon alussa (
 Päätös (opettaja 2026-11-15): raja-arvotehtävien tarkistus hyväksyy jatkossakin poikkeaman molempiin suuntiin
 (esim. fy6-16 L2-05: 10,4 ja 10,5 kW), eikä yksipuolista tarkistusta tehdä. P7c koskee vain mallivastauksen pyöristystä.
 FY1 tehty: claude/fy1-oikoluku (PR #614).
+Varattu: claude/fy4-oikoluku-aineisto (FY4; samassa PR:ssä kohdan 19 tehtävät FY4-A1…A5, opettaja 16.11: PR:t yhdistetään).
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
