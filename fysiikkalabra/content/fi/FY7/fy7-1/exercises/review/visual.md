@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 0d7da54a5fc6a1b1
-SCOPE: delta added-exercise from aea283ed5e43115e base 8f23aa7ae3bd
+CONTENT-HASH: 9a398310c855a2de
+SCOPE: delta wording-and-notation from 0d7da54a5fc6a1b1 (exercises.json, solutions.md)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 1-18 (fy7-1/incl-grid) — axes have no arrowheads and the vertical tick numbers sit on the left only; 'maanpinta' crosses a gridline — add filled arrowheads as in the other graphs.
+- [Minor] 1-7 true/false item 4 — "kohti Maan sauvamagneettimallin etelänapaa" reads heavy but is correct; optional lighter wording.
 
 ## Checked
-- fy7-1 L2 captures 9-12 (1-17, 1-18: figures, text, solutions); both figures read at 1280 px.
-- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
+- Diff read in full: `{}^\circ` -> `^\circ` in 1-8, 2-7 and their solutions; item 4 wording of the N-pää statement; 3-2 steel-clip answer and solution wording.
+- Captures opened: open-exercises-1280-2 (1-2, degree rendering), open-exercises-1280-8 (true/false set, item 4 and its model answer), open-exercises-L2-1280-4 (1-13, degrees), open-exercises-L2-1280-8 (the student-solution task with 25° and 65°, 2-7), open-exercises-L3-1280-2 (task with the steel clip, answer and solution).
+- Not opened as such: task 1-8 (Oulu 76°); same notation seen rendering correctly in 1-2 and 1-13.
+- Degrees upright and tight, no red KaTeX source, blocks inside their cards, layout intact.
+- Hash identical at start and end.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

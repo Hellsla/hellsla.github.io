@@ -9,14 +9,14 @@
 **Reasonableness:** The secondary coil has $20$ times fewer turns, so the voltage must be $20$ times smaller: $230\,\text{V} : 20 = 11.5\,\text{V}$. A small voltage like this suits a doorbell and is safe to touch.
 
 ## fy7-8-L1-02
-**Given:** primary voltage $U_1 = 230\,\text{V}$, secondary voltage $U_2 = 8.0\,\text{V}$, number of turns of the secondary coil $N_2 = 40$, ideal transformer
+**Given:** primary voltage $U_1 = 230\,\text{V}$, secondary voltage $U_2 = 8.00\,\text{V}$, number of turns of the secondary coil $N_2 = 40$, ideal transformer
 **Find:** the number of turns $N_1$ of the primary coil
 **Principle:** In an ideal transformer the same changing magnetic flux passes through both coils, so the same voltage is induced in every turn and the voltages of the coils are in the same ratio as the numbers of turns.
 **Formula:** $\dfrac{U_1}{U_2} = \dfrac{N_1}{N_2}$, so $N_1 = \dfrac{N_2 U_1}{U_2}$
 **Conversions:** Not needed: in the ratio of the voltages the volts cancel.
-**Substitution:** $N_1 = \dfrac{40 \cdot 230\,\text{V}}{8.0\,\text{V}} = 1150$
-**Answer:** $1150$ turns. This is the whole number that the given values give exactly. The voltage $8.0\,\text{V}$ is given to only two significant figures, however, so the number of turns is reliable to about two figures, $1.2 \cdot 10^3$ turns.
-**Reasonableness:** The voltage falls by a factor of about $29$ ($230\,\text{V} : 8.0\,\text{V} \approx 29$), so the primary coil must have about $29$ times as many turns as the secondary coil: $29 \cdot 40 \approx 1150$.
+**Substitution:** $N_1 = \dfrac{40 \cdot 230\,\text{V}}{8.00\,\text{V}} = 1150$
+**Answer:** $1150$ turns, three significant figures like the voltages $230\,\text{V}$ and $8.00\,\text{V}$.
+**Reasonableness:** The voltage falls by a factor of about $29$ ($230\,\text{V} : 8.00\,\text{V} \approx 29$), so the primary coil must have about $29$ times as many turns as the secondary coil: $29 \cdot 40 \approx 1150$.
 
 ## fy7-8-L1-03
 **Given:** primary voltage $U_1 = 20\,\text{kV}$, secondary voltage $U_2 = 400\,\text{V}$, secondary current $I_2 = 250\,\text{A}$, ideal transformer

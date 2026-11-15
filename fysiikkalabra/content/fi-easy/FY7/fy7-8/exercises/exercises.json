@@ -12,7 +12,7 @@
     {
       "id": "fy7-8-L1-02",
       "level": 1,
-      "text": "Puutarhavalaisimen ideaalinen muuntaja laskee verkkojännitteen $230\\,\\text{V}$ jännitteeksi $8{,}0\\,\\text{V}$. Toisiokäämissä on $40$ kierrosta. Kuinka monta kierrosta ensiökäämissä on?",
+      "text": "Puutarhavalaisimen ideaalinen muuntaja laskee verkkojännitteen $230\\,\\text{V}$ jännitteeksi $8{,}00\\,\\text{V}$. Toisiokäämissä on $40$ kierrosta. Kuinka monta kierrosta ensiökäämissä on?",
       "answer": 1150.0,
       "unit": "kierrosta",
       "tolerance": 0.02

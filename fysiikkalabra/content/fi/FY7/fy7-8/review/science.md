@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 401502d5a1468825
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 6a91c39269e0ec4c
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- lesson.md:214 — The MAFY name "tehonkulutus johtimessa" stands beside $P = UI$, but here $P$ is the power the plant sends and $U$ is the transmission voltage, not the voltage across the line. This is the misconception the section warns against. Line 217 defines the symbols correctly, so no wrong picture should remain (C). Teacher's call: leave this line unnamed in docs/fy7/kaavanimet.tsv, or add "(lähetetty teho, ei johdossa kuluva teho)" to line 217.
+- inquiry.json `siirto` solution, Järkevyys — The check compares one line's $2{,}2\,\%$ loss with Fingrid's national figure of about $2\,\%$ of the electricity used. Say "suuruusluokaltaan samaa kuin koko kantaverkossa" so the comparison is clearly only a check of magnitude.
 
 ## Checked
-- Two-wire model (P = UI, $P_\text{h} = RI^2$, R = both conductors, current out and back) is now explicitly a simplification; real grid three-phase, 400 kV = line voltage, $P = \sqrt{3}\,UI\cos\varphi$ for a balanced load, power factor 1 when in phase — correct. Low-voltage network ≈400 V phase–phase / ≈230 V phase–neutral ($400/\sqrt3 \approx 231$) correct. "Teho on jännitteen ja virran tulo" limited to a resistive load: correct. Loss-graph aria (200 MW, 6,0 Ω): 100 kV → 12 %, 200 kV → 3,0 %, 400 kV → 0,75 % recomputed. Inquiry virhe: $I = 500\,\text{A}$, $P_\text{h} = 1{,}5\,\text{MW}$; siirto: $I = 300\,\text{A}$, $P_\text{h} = 720\,\text{kW}$ — both now state the two-wire model, answers unchanged and right. Grid single-line aria, figures.py and figures.json match the lesson. Summary consistent with theory. fi, en, fi-easy agree. Hash identical at start and end.
-- Round 2: "Samalla jännitteellä, virralla ja tehokertoimella … noin $1{,}73$-kertaisen tehon" (en "At the same voltage, current and power factor") is now exact (Minor resolved). en paragraph split otherwise only.
+- Recomputed every number in one script, with my own formulas: worked example (1980 turns, $81{,}8\,\text{A}$, $9{,}0\,\text{MW}$ on both sides), sim values at 50/100/200/400 kV (4000/2000/1000/500 A, 96/24/6,0/1,5 MW, 48/12/3,0/0,75 %), the graph's labelled values and its $24{,}5\,\%$ top at 70 kV, `virhe` ($2{,}7\cdot10^{10}\,\text{W}$; $1{,}5\,\text{MW}$; $RI = 3{,}0\,\text{kV}$), `siirto` 720 kW and its three mistake values, tarkistus-2 ($0{,}261\,\text{A}$; 5,0 A; 95,8 A), exit ticket (11,5 V; 1/9). All agree.
+- Transformer: mechanism (changing flux in a closed core, the same EMF per turn), the ideal ratio with its conditions (ideal, effective values, power conserved), no output with DC except at switching, real losses and laminated core. Correct and consistent with the glossary.
+- Loss model: $P_\text{h} = RI^2$ with $I = P/U$. The $U^2/R$ misconception is explained by its true cause (only the drop $RI$ is across the line). The two-wire simplification is stated, and three-phase $P = \sqrt3\,UI\cos\varphi$ is given with the line-to-line voltage.
+- ennuste-dc and ennuste-jannite: exactly one correct option each. Every distractor's feedback is physically right, and the cited model values match the sim.
+- Koe 1: P and l are locked and only U varies. The initial state is valid (not `mahdoton`), and `simState` provides I (A), Ph (MW) and osuus (%) as the table labels say.
+- sim.js uses the same model as sim-spec and the `model`/`calc` boxes. The `mahdoton` test $RI \ge U$ is the same as $P_\text{h} \ge P$. The bars and readout are consistent.
+- Explain model answers (johtopaatos, tarkistus-3) match the theory. The sim's numbers are called model values.
+- Grid voltages (400/220/110 kV, 20 kV, 400/230 V), the 2 % loss source and the charger are accurate and within FY7 scope.
+- Hash checked at the start and the end, unchanged.

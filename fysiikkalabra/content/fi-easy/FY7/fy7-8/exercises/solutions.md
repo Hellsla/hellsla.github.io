@@ -9,14 +9,14 @@
 **Järkevyys:** Toisiokäämissä on $20$ kertaa vähemmän kierroksia, joten jännitteen on oltava $20$ kertaa pienempi: $230\,\text{V} : 20 = 11{,}5\,\text{V}$. Ovikellolle sopiva pieni jännite on turvallinen koskea.
 
 ## fy7-8-L1-02
-**Annettu:** ensiöjännite $U_1 = 230\,\text{V}$, toisiojännite $U_2 = 8{,}0\,\text{V}$, toisiokäämin kierrosten lukumäärä $N_2 = 40$, ideaalinen muuntaja
+**Annettu:** ensiöjännite $U_1 = 230\,\text{V}$, toisiojännite $U_2 = 8{,}00\,\text{V}$, toisiokäämin kierrosten lukumäärä $N_2 = 40$, ideaalinen muuntaja
 **Kysytty:** ensiökäämin kierrosten lukumäärä $N_1$
 **Periaate:** Ideaalisessa muuntajassa sama muuttuva magneettivuo kulkee molempien käämien läpi. Siksi jokaiseen kierrokseen indusoituu sama jännite. Käämien jännitteet suhtautuvat kuten kierrosten lukumäärät.
 **Kaava:** $\dfrac{U_1}{U_2} = \dfrac{N_1}{N_2}$, josta $N_1 = \dfrac{N_2 U_1}{U_2}$
 **Muunnokset:** Niitä ei tarvita. Jännitteiden suhteessa voltit supistuvat.
-**Sijoitus:** $N_1 = \dfrac{40 \cdot 230\,\text{V}}{8{,}0\,\text{V}} = 1150$
-**Vastaus:** $1150$ kierrosta. Se on kokonaisluku, jonka annetut arvot tarkalleen antavat. Jännite $8{,}0\,\text{V}$ on kuitenkin annettu vain kahdella merkitsevällä numerolla. Siksi kierrosmäärä on luotettava noin kahden numeron tarkkuudella, $1{,}2 \cdot 10^3$ kierrosta.
-**Järkevyys:** Jännite laskee noin $29$-kertaisesti ($230\,\text{V} : 8{,}0\,\text{V} \approx 29$), joten ensiökäämissä on oltava noin $29$ kertaa enemmän kierroksia kuin toisiokäämissä: $29 \cdot 40 \approx 1150$.
+**Sijoitus:** $N_1 = \dfrac{40 \cdot 230\,\text{V}}{8{,}00\,\text{V}} = 1150$
+**Vastaus:** $1150$ kierrosta. Vastauksessa on kolme merkitsevää numeroa, kuten jännitteissä $230\,\text{V}$ ja $8{,}00\,\text{V}$.
+**Järkevyys:** Jännite laskee noin $29$-kertaisesti ($230\,\text{V} : 8{,}00\,\text{V} \approx 29$), joten ensiökäämissä on oltava noin $29$ kertaa enemmän kierroksia kuin toisiokäämissä: $29 \cdot 40 \approx 1150$.
 
 ## fy7-8-L1-03
 **Annettu:** ensiöjännite $U_1 = 20\,\text{kV}$, toisiojännite $U_2 = 400\,\text{V}$, toisiovirta $I_2 = 250\,\text{A}$, ideaalinen muuntaja
