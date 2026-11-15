@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 885be814ebf99534
+CONTENT-HASH: 097ebcd0ca9722b8
 ## Blocking
 (none)
 ## Polish
-(none)
+- exercises.json L2-01 — an unrounded 1,617 or 1,62 is also rejected though correct physics; the task text asks to round up, so acceptable, but the wrong-answer feedback should say "round up to two figures" if it does not.
 ## Checked
-- Delta: L2-01 and L3-03 ask for a minimum, so the task text now says to round up (answer 1,7 kg, tolerance 0,06, so 1,6 is rejected); solution explains why 1,617 kg rounds up and that 1,6 kg would not last six hours. Fair, the rounding rule is stated in the task, not a trap.
-- L3-03 (1,511 kg -> 1,6 kg) has the same up-rounding explanation and the reasonableness check agrees.
-- No other task changed.
-- Judged from the diff text; captures not opened.
+- Delta: tolerance 0,04 on L2-01 (answer 1,7; exact 1,617) and L3-03 (answer 1,6; exact 1,511). Rounded-down 1,6 / 1,5 are now rejected, as the tasks say "round up"; 1,7 / 1,6 pass. Judged from the diff.
+- Judged from the diff and the previous PASS; captures not opened.

@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c9fc6cae7eec5478
+CONTENT-HASH: a86d3985160cc30e
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Delta: two Vastaus/Answer lines now say 'bars P_1 and P_2 lie on gridlines' (the figure labels P_1 ... P_3 and only P_1 = 350, P_2 = 150 are used); the claim is now precise and the readings 350 and 150 MW match the figure description. Sig-fig reasoning unchanged.
-- Judged from the diff text; captures not opened.
+- Delta: L3-05 d now says the condenser heat cannot "in practice" (käytännössä) be used for electricity; the solution adds that with an ~11 K difference the largest possible efficiency is only a few per cent. Correct (about 11/300) and a fair hedge, replacing an absolute claim.
+- Reasoning in the solution is brief but understandable at this level; the colon plus "but" sentence is slightly run-on (Polish only).
+- Judged from the diff and the previous PASS; captures not opened.

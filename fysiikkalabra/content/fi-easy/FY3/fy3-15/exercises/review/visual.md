@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c9fc6cae7eec5478
+CONTENT-HASH: a86d3985160cc30e
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] solutions.md L1-02..04 and L3-02 — reworded heat sentences were read in the diff only; they read correctly.
+- none
 
 ## Checked
-- Delta (heat wording, bar-chart reading text, η2 42,9 %): open-exercises-L2-1280-11 (bar chart with gridlines every 50 MW, P1 and P2 on lines, P3 in blue; answer 42,9 % and "Pylväiden… ruudukon viivoilla" match the graph), -9 (neighbouring solution layout).
+- delta: open-exercises-L3 captures showing task L3-05 ("käytännössä" / "in practice" in part d; the solutions' Järkevyys block); the task renders with situation, parts a-d, table and answer box intact, no clipping.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

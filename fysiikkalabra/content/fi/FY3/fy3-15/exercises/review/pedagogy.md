@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 48e582d57b684a1c
+CONTENT-HASH: 3982956434865159
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Delta: solutions of the chain-bars tasks now say that the ends of bars P_1 and P_2 lie on grid lines; this is accurate to the figure description (350 and 150 MW, 50 MW grid) and justifies three significant figures.
-- Wording only, no number or answer changed.
-- Judged from the diff text; captures not opened.
+- Delta: L3-05 d now says the condenser heat cannot "in practice" (käytännössä) be used for electricity; the solution adds that with an ~11 K difference the largest possible efficiency is only a few per cent. Correct (about 11/300) and a fair hedge, replacing an absolute claim.
+- Reasoning in the solution is brief but understandable at this level; the colon plus "but" sentence is slightly run-on (Polish only).
+- Judged from the diff and the previous PASS; captures not opened.

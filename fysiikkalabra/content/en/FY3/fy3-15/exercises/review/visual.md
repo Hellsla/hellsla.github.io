@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: beeed81ac87012b6
+CONTENT-HASH: c56abff2c3e9e364
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: beeed81ac87012b6
 - none
 
 ## Checked
-- Diff: waste-heat wording and the 42.9 % precision text in five solutions. Opened fy3-15-open-exercises-1280-2 (14-2 solution with the new internal-energy sentence).
+- delta: open-exercises-L3 captures showing task L3-05 ("käytännössä" / "in practice" in part d; the solutions' Järkevyys block); the task renders with situation, parts a-d, table and answer box intact, no clipping.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
