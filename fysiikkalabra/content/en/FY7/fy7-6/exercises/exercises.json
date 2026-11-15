@@ -157,7 +157,7 @@
       "unit": "mW",
       "tolerance": 0.03,
       "data": {
-        "caption": "Falling time of the magnet in two copper tubes (example data)",
+        "caption": "Falling time of the magnet in two copper tubes",
         "columns": [
           "Measurement",
           "$t_{\\text{thick}}\\,(\\text{s})$",
@@ -216,7 +216,7 @@
       "unit": "mWb",
       "tolerance": 0.03,
       "data": {
-        "caption": "Induced voltage at different pushing speeds (example data)",
+        "caption": "Induced voltage at different pushing speeds",
         "columns": [
           "$\\Delta t\\,(\\text{s})$",
           "$e\\,(\\text{V})$"
@@ -341,7 +341,7 @@
       "unit": "m/s²",
       "tolerance": 0.04,
       "data": {
-        "caption": "Speed $v$ of the magnet as a function of time $t$ (example data)",
+        "caption": "Speed $v$ of the magnet as a function of time $t$",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -395,7 +395,7 @@
       "unit": "W",
       "tolerance": 0.03,
       "data": {
-        "caption": "Eddy-current losses as a function of the thickness of the sheets (example data)",
+        "caption": "Eddy-current losses as a function of the thickness of the sheets",
         "columns": [
           "$d\\,(\\text{mm})$",
           "$P\\,(\\text{W})$"

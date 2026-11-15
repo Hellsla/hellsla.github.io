@@ -140,7 +140,7 @@
         "graph"
       ],
       "data": {
-        "caption": "Secondary voltage $U_2$ against turns $N_2$, $U_1 = 6.00\\,\\text{V}$ (example data)",
+        "caption": "Secondary voltage $U_2$ against turns $N_2$, $U_1 = 6.00\\,\\text{V}$",
         "columns": [
           "$N_2$",
           "$U_2\\,(\\text{V})$"
@@ -184,7 +184,7 @@
         "data"
       ],
       "data": {
-        "caption": "Measurements of a small transformer at different loads, $U_1 = 230\\,\\text{V}$ (example data)",
+        "caption": "Measurements of a small transformer at different loads, $U_1 = 230\\,\\text{V}$",
         "columns": [
           "$I_2\\,(\\text{A})$",
           "$U_2\\,(\\text{V})$",
@@ -319,7 +319,7 @@
         "model"
       ],
       "data": {
-        "caption": "Power of a distribution transformer at different loads (example data)",
+        "caption": "Power of a distribution transformer at different loads",
         "columns": [
           "$P_\\text{out}\\,(\\text{kW})$",
           "$P_\\text{in}\\,(\\text{kW})$"

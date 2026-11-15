@@ -162,7 +162,7 @@
         "experiment"
       ],
       "data": {
-        "caption": "Extension of a spring as a function of the mass (example data)",
+        "caption": "Extension of a spring as a function of the mass",
         "columns": [
           "$m\\,(\\text{g})$",
           "$x\\,(\\text{cm})$"
@@ -227,7 +227,7 @@
         "experiment"
       ],
       "data": {
-        "caption": "Spring measurement (example data)",
+        "caption": "Spring measurement",
         "columns": [
           "$x\\,(\\text{cm})$",
           "$F_\\text{v}\\,(\\text{N})$"
@@ -316,7 +316,7 @@
         "reasoning"
       ],
       "data": {
-        "caption": "Stretching of a rubber band (example data)",
+        "caption": "Stretching of a rubber band",
         "columns": [
           "$x\\,(\\text{cm})$",
           "$F_\\text{v}\\,(\\text{N})$"
@@ -354,7 +354,7 @@
         "reasoning"
       ],
       "data": {
-        "caption": "Pull force of the string as a function of the draw distance (example data)",
+        "caption": "Pull force of the string as a function of the draw distance",
         "columns": [
           "$x\\,(\\text{cm})$",
           "$F_\\text{v}\\,(\\text{N})$"

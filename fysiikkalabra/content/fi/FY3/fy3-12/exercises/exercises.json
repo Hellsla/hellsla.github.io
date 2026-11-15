@@ -192,7 +192,7 @@
       "unit": "W",
       "tolerance": 0.03,
       "data": {
-        "caption": "Veden lämpötila jäähtyessä (esimerkkiaineisto)",
+        "caption": "Veden lämpötila jäähtyessä",
         "columns": [
           "$t\\,(\\text{min})$",
           "$T_\\text{A}\\,({}^\\circ\\text{C})$",
@@ -252,7 +252,7 @@
       "unit": "W/(m²·K)",
       "tolerance": 0.04,
       "data": {
-        "caption": "Paneelin läpi johtuva teho eri lämpötilaeroilla (esimerkkiaineisto)",
+        "caption": "Paneelin läpi johtuva teho eri lämpötilaeroilla",
         "columns": [
           "$\\Delta T\\,(\\text{K})$",
           "$P\\,(\\text{W})$"
@@ -356,7 +356,7 @@
       "unit": "W/m²",
       "tolerance": 0.03,
       "data": {
-        "caption": "Jäämeren jään pinta-ala syyskuun minimissä (esimerkkiaineisto)",
+        "caption": "Jäämeren jään pinta-ala syyskuun minimissä",
         "columns": [
           "Vuosi",
           "$A\\,(10^{6}\\,\\text{km}^2)$"
@@ -398,7 +398,7 @@
       "unit": "°C",
       "tolerance": 0.05,
       "data": {
-        "caption": "Maanpinnan lämpösäteilyn teho lämpötilan mukaan (esimerkkiaineisto)",
+        "caption": "Maanpinnan lämpösäteilyn teho lämpötilan mukaan",
         "columns": [
           "$T\\,(\\text{K})$",
           "$P\\,(\\text{W/m}^2)$"

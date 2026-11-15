@@ -214,7 +214,7 @@
       "unit": "mJ",
       "tolerance": 0.04,
       "data": {
-        "caption": "Charge of a capacitor as a function of voltage (example data)",
+        "caption": "Charge of a capacitor as a function of voltage",
         "columns": [
           "$U\\,(\\text{V})$",
           "$Q\\,(\\mu\\text{C})$"
@@ -280,7 +280,7 @@
         }
       ],
       "data": {
-        "caption": "Voltage of a capacitor during charging (example data)",
+        "caption": "Voltage of a capacitor during charging",
         "columns": [
           "$t\\,(\\text{s})$",
           "$U\\,(\\text{V})$"
@@ -377,7 +377,7 @@
       "unit": "kW",
       "tolerance": 0.05,
       "data": {
-        "caption": "Voltage of a capacitor in constant-current charging (example data)",
+        "caption": "Voltage of a capacitor in constant-current charging",
         "columns": [
           "$t\\,(\\text{s})$",
           "$U\\,(\\text{V})$"

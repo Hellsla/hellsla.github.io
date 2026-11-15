@@ -201,7 +201,7 @@
       "unit": "K",
       "tolerance": 0.03,
       "data": {
-        "caption": "Lämpömittarin A kalibrointi (esimerkkiaineisto)",
+        "caption": "Lämpömittarin A kalibrointi",
         "columns": [
           "$\\theta_\\text{vert}\\,({}^\\circ\\text{C})$",
           "$\\theta_\\text{A}\\,({}^\\circ\\text{C})$"
@@ -242,7 +242,7 @@
       "unit": "kertaa",
       "tolerance": 0.03,
       "data": {
-        "caption": "Veden lämpötila termospullossa (esimerkkiaineisto)",
+        "caption": "Veden lämpötila termospullossa",
         "columns": [
           "$t\\,(\\text{h})$",
           "$\\theta\\,({}^\\circ\\text{C})$"
@@ -283,7 +283,7 @@
       "unit": "s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Mittarin lukema vedessä (esimerkkiaineisto)",
+        "caption": "Mittarin lukema vedessä",
         "columns": [
           "$t\\,(\\text{s})$",
           "$\\theta\\,({}^\\circ\\text{C})$"
@@ -368,7 +368,7 @@
       "unit": "K",
       "tolerance": 0.1,
       "data": {
-        "caption": "Kehon lämpötila kolmella menetelmällä (esimerkkiaineisto)",
+        "caption": "Kehon lämpötila kolmella menetelmällä",
         "columns": [
           "Mittaus",
           "$\\theta_\\text{korva}\\,({}^\\circ\\text{C})$",

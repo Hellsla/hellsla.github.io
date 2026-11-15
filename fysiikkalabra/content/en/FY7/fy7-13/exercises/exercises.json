@@ -155,7 +155,7 @@
       "unit": "nm",
       "tolerance": 0.03,
       "data": {
-        "caption": "Positions of the maxima on the screen (example data)",
+        "caption": "Positions of the maxima on the screen",
         "columns": [
           "$k$",
           "$x_k\\,(\\text{cm})$"
@@ -338,7 +338,7 @@
       "unit": "nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Intensity of the double-slit pattern (example data)",
+        "caption": "Intensity of the double-slit pattern",
         "columns": [
           "$x\\,(\\text{mm})$",
           "$I$ (relative)"
@@ -428,7 +428,7 @@
       "unit": "µm",
       "tolerance": 0.03,
       "data": {
-        "caption": "Distance between the maxima $\\pm 1$ (example data)",
+        "caption": "Distance between the maxima $\\pm 1$",
         "columns": [
           "$L\\,(\\text{cm})$",
           "$2x\\,(\\text{cm})$"

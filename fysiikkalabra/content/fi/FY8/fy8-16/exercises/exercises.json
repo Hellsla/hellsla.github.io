@@ -162,7 +162,7 @@
       "unit": "km/s/Mpc",
       "tolerance": 0.05,
       "data": {
-        "caption": "Yhdeksän galaksin etäisyys ja etääntymisnopeus (esimerkkiaineisto)",
+        "caption": "Yhdeksän galaksin etäisyys ja etääntymisnopeus",
         "columns": [
           "$d\\,(\\text{Mpc})$",
           "$v\\,(\\text{km/s})$"
@@ -318,7 +318,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Galaksin ratanopeus etäisyyden funktiona (esimerkkiaineisto)",
+        "caption": "Galaksin ratanopeus etäisyyden funktiona",
         "columns": [
           "$r\\,(\\text{kpc})$",
           "$v_{\\text{hav}}\\,(\\text{km/s})$",

@@ -209,7 +209,7 @@
       "unit": "Ω",
       "tolerance": 0.03,
       "data": {
-        "caption": "Voltage across a resistor and current through it (example data)",
+        "caption": "Voltage across a resistor and current through it",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{mA})$"
@@ -262,7 +262,7 @@
       "unit": "times",
       "tolerance": 0.05,
       "data": {
-        "caption": "Voltage across a filament lamp and current through it (example data)",
+        "caption": "Voltage across a filament lamp and current through it",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{A})$"
@@ -303,7 +303,7 @@
       "unit": "Ω",
       "tolerance": 0.03,
       "data": {
-        "caption": "Voltage across a resistor and current through it (example data)",
+        "caption": "Voltage across a resistor and current through it",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{A})$"
@@ -371,7 +371,7 @@
       "unit": "Ω",
       "tolerance": 0.03,
       "data": {
-        "caption": "Currents of the components as a function of the voltage (example data)",
+        "caption": "Currents of the components as a function of the voltage",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I_\\text{A}\\,(\\text{mA})$",
@@ -425,7 +425,7 @@
       "unit": "%",
       "tolerance": 0.05,
       "data": {
-        "caption": "Current through an iron wire at different temperatures, $U = 1.00\\,\\text{V}$ (example data)",
+        "caption": "Current through an iron wire at different temperatures, $U = 1.00\\,\\text{V}$",
         "columns": [
           "$T\\,({}^\\circ\\text{C})$",
           "$I\\,(\\text{A})$"

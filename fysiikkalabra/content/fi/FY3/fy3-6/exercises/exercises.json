@@ -149,7 +149,7 @@
       "unit": "J/(kg·K)",
       "tolerance": 0.03,
       "data": {
-        "caption": "Nesteen lämpötila lämmityksen aikana (esimerkkiaineisto)",
+        "caption": "Nesteen lämpötila lämmityksen aikana",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T\\,({}^\\circ\\text{C})$"
@@ -194,7 +194,7 @@
       "unit": "J/(kg·K)",
       "tolerance": 0.03,
       "data": {
-        "caption": "Nesteiden lämpötilat lämmityksen aikana (esimerkkiaineisto)",
+        "caption": "Nesteiden lämpötilat lämmityksen aikana",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T_\\text{A}\\,({}^\\circ\\text{C})$",
@@ -323,7 +323,7 @@
       "unit": "W",
       "tolerance": 0.04,
       "data": {
-        "caption": "Veden lämpötila lämmityksen aikana (esimerkkiaineisto)",
+        "caption": "Veden lämpötila lämmityksen aikana",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T\\,({}^\\circ\\text{C})$"
@@ -389,7 +389,7 @@
       "unit": "W/K",
       "tolerance": 0.03,
       "data": {
-        "caption": "Veden lämpötila jäähtymisen aikana (esimerkkiaineisto)",
+        "caption": "Veden lämpötila jäähtymisen aikana",
         "columns": [
           "$t\\,(\\text{min})$",
           "$T\\,({}^\\circ\\text{C})$"

@@ -165,7 +165,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Sound level after a clap (example data)",
+        "caption": "Sound level after a clap",
         "columns": [
           "$t\\,(\\text{s})$",
           "$L_\\text{before}\\,(\\text{dB})$",
@@ -213,7 +213,7 @@
       "unit": "dB",
       "tolerance": 0.03,
       "data": {
-        "caption": "Level without the barrier and behind the barrier (example data)",
+        "caption": "Level without the barrier and behind the barrier",
         "columns": [
           "$f\\,(\\text{Hz})$",
           "$L_\\text{without}\\,(\\text{dB})$",
@@ -267,7 +267,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Sound level (example data)",
+        "caption": "Sound level",
         "columns": [
           "$r\\,(\\text{m})$",
           "$L\\,(\\text{dB})$"
@@ -359,7 +359,7 @@
       "unit": "dB",
       "tolerance": 0.03,
       "data": {
-        "caption": "Noise level and duration by stage of work (example data)",
+        "caption": "Noise level and duration by stage of work",
         "columns": [
           "Stage of work",
           "$L\\,(\\text{dB})$",

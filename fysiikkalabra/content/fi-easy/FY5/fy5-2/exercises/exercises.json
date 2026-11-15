@@ -137,7 +137,7 @@
       "unit": "kg",
       "tolerance": 0.05,
       "data": {
-        "caption": "Vasemman anturin lukema henkilön paikan mukaan (esimerkkiaineisto)",
+        "caption": "Vasemman anturin lukema henkilön paikan mukaan",
         "columns": [
           "$x\\,(\\text{m})$",
           "$N_1\\,(\\text{N})$"
@@ -189,7 +189,7 @@
       "unit": "g",
       "tolerance": 0.03,
       "data": {
-        "caption": "Tukikohta, jossa metrimitta pysyy vaakasuorassa (esimerkkiaineisto)",
+        "caption": "Tukikohta, jossa metrimitta pysyy vaakasuorassa",
         "columns": [
           "$m\\,(\\text{g})$",
           "$x\\,(\\text{cm})$"
@@ -301,7 +301,7 @@
       "unit": "°",
       "tolerance": 0.04,
       "data": {
-        "caption": "Henkilön painopisteen paikka kallistuksen mukaan (esimerkkiaineisto)",
+        "caption": "Henkilön painopisteen paikka kallistuksen mukaan",
         "columns": [
           "$\\theta\\,({}^\\circ)$",
           "$x_\\text{h}\\,(\\text{cm})$"

@@ -186,7 +186,7 @@
       "unit": "",
       "tolerance": 0.05,
       "data": {
-        "caption": "Palikan ja painojen yhteismassa $m$ ja vaa'an veto $F$ (esimerkkiaineisto)",
+        "caption": "Palikan ja painojen yhteismassa $m$ ja vaa'an veto $F$",
         "columns": [
           "$m\\,(\\text{kg})$",
           "$F\\,(\\text{N})$"
@@ -227,7 +227,7 @@
       "unit": "",
       "tolerance": 0.04,
       "data": {
-        "caption": "Anturin mittaama vetovoima $F$ ajan $t$ funktiona (esimerkkiaineisto)",
+        "caption": "Anturin mittaama vetovoima $F$ ajan $t$ funktiona",
         "columns": [
           "$t\\,(\\text{s})$",
           "$F\\,(\\text{N})$"
@@ -288,7 +288,7 @@
       "unit": "",
       "tolerance": 0.03,
       "data": {
-        "caption": "Kulma $\\alpha_0$, jolla palikka lähtee liukumaan (esimerkkiaineisto)",
+        "caption": "Kulma $\\alpha_0$, jolla palikka lähtee liukumaan",
         "columns": [
           "Mittaus",
           "$\\alpha_0\\,({}^\\circ)$"
@@ -400,7 +400,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Liikekitkakerroin $\\mu$ renkaiden ja tien välillä (esimerkkiaineisto)",
+        "caption": "Liikekitkakerroin $\\mu$ renkaiden ja tien välillä",
         "columns": [
           "Tienpinta",
           "$\\mu$"

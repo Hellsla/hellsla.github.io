@@ -171,7 +171,7 @@
    "unit": "N",
    "tolerance": 0.02,
    "data": {
-    "caption": "Football kicks (example data)",
+    "caption": "Football kicks",
     "columns": [
      "Kick",
      "$v\\,(\\text{m/s})$",
@@ -218,7 +218,7 @@
    "unit": "N",
    "tolerance": 0.02,
    "data": {
-    "caption": "Stopping time of the cart with different bumpers (example data)",
+    "caption": "Stopping time of the cart with different bumpers",
     "columns": [
      "Bumper",
      "$\\Delta t\\,(\\text{ms})$"
@@ -252,7 +252,7 @@
    "unit": "m/s",
    "tolerance": 0.04,
    "data": {
-    "caption": "Force of the end on the cart during the collision (example data)",
+    "caption": "Force of the end on the cart during the collision",
     "columns": [
      "$t\\,(\\text{ms})$",
      "$F\\,(\\text{N})$"
@@ -345,7 +345,7 @@
    "unit": "km/h",
    "tolerance": 0.03,
    "data": {
-    "caption": "Force of the airbag on the dummy (example data)",
+    "caption": "Force of the airbag on the dummy",
     "columns": [
      "$t\\,(\\text{ms})$",
      "$F\\,(\\text{kN})$"
@@ -411,7 +411,7 @@
    "unit": "N",
    "tolerance": 0.02,
    "data": {
-    "caption": "Video analysis of a bouncing ball (example data)",
+    "caption": "Video analysis of a bouncing ball",
     "columns": [
      "Event",
      "$t\\,(\\text{s})$"

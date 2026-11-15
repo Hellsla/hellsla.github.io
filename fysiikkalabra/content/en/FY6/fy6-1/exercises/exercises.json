@@ -197,7 +197,7 @@
       "unit": "C",
       "tolerance": 0.02,
       "data": {
-        "caption": "Current through the lamp as a function of time (example data)",
+        "caption": "Current through the lamp as a function of time",
         "columns": [
           "$t\\,(\\text{s})$",
           "$I\\,(\\text{A})$"
@@ -259,7 +259,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Current before the lamp and after the lamp (example data)",
+        "caption": "Current before the lamp and after the lamp",
         "columns": [
           "Measurement",
           "$I_{\\text{before}}\\,(\\text{A})$",
@@ -343,7 +343,7 @@
       "unit": "Wh",
       "tolerance": 0.04,
       "data": {
-        "caption": "Discharging of a phone battery (example data)",
+        "caption": "Discharging of a phone battery",
         "columns": [
           "Hour",
           "$U\\,(\\text{V})$",

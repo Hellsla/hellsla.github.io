@@ -139,7 +139,7 @@
       "unit": "eV",
       "tolerance": 0.03,
       "data": {
-        "caption": "Balmer lines of hydrogen (example data)",
+        "caption": "Balmer lines of hydrogen",
         "columns": [
           "$n$",
           "$\\lambda\\,(\\text{nm})$"
@@ -179,7 +179,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Photons sent to the atom (example data)",
+        "caption": "Photons sent to the atom",
         "columns": [
           "Photon",
           "$\\lambda\\,(\\text{nm})$"
@@ -289,7 +289,7 @@
       "unit": "THz",
       "tolerance": 0.02,
       "data": {
-        "caption": "Emission lines of the cloud (example data)",
+        "caption": "Emission lines of the cloud",
         "columns": [
           "Line",
           "$\\lambda\\,(\\text{nm})$"
@@ -323,7 +323,7 @@
       "unit": "nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Emission lines of the gas (example data)",
+        "caption": "Emission lines of the gas",
         "columns": [
           "Line",
           "$\\lambda\\,(\\text{nm})$"

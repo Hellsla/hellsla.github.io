@@ -169,7 +169,7 @@
       "unit": "kg",
       "tolerance": 0.04,
       "data": {
-        "caption": "Acceleration of the cart with different pulling forces (example data)",
+        "caption": "Acceleration of the cart with different pulling forces",
         "columns": [
           "$F\\,(\\text{N})$",
           "$a\\,(\\text{m/s}^2)$"
@@ -211,7 +211,7 @@
       "unit": "N",
       "tolerance": 0.04,
       "data": {
-        "caption": "Acceleration of the cart with different masses (example data)",
+        "caption": "Acceleration of the cart with different masses",
         "columns": [
           "$m\\,(\\text{kg})$",
           "$a\\,(\\text{m/s}^2)$"
@@ -338,7 +338,7 @@
       "unit": "N",
       "tolerance": 0.05,
       "data": {
-        "caption": "Acceleration of the cart with different pulling forces (example data)",
+        "caption": "Acceleration of the cart with different pulling forces",
         "columns": [
           "$F\\,(\\text{N})$",
           "$a\\,(\\text{m/s}^2)$"
@@ -381,7 +381,7 @@
       "tolerance": 0.02,
       "fbd": "equations",
       "data": {
-        "caption": "Acceleration of the elevator in phases 1 and 2 (example data)",
+        "caption": "Acceleration of the elevator in phases 1 and 2",
         "columns": [
           "Phase",
           "$t_{\\text{start}}\\,(\\text{s})$",

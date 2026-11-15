@@ -171,7 +171,7 @@
    "unit": "N",
    "tolerance": 0.02,
    "data": {
-    "caption": "Jalkapallon potkut (esimerkkiaineisto)",
+    "caption": "Jalkapallon potkut",
     "columns": [
      "Potku",
      "$v\\,(\\text{m/s})$",
@@ -218,7 +218,7 @@
    "unit": "N",
    "tolerance": 0.02,
    "data": {
-    "caption": "Kärryn pysähtymisaika eri puskureilla (esimerkkiaineisto)",
+    "caption": "Kärryn pysähtymisaika eri puskureilla",
     "columns": [
      "Puskuri",
      "$\\Delta t\\,(\\text{ms})$"
@@ -252,7 +252,7 @@
    "unit": "m/s",
    "tolerance": 0.04,
    "data": {
-    "caption": "Päädyn voima kärryyn törmäyksen aikana (esimerkkiaineisto)",
+    "caption": "Päädyn voima kärryyn törmäyksen aikana",
     "columns": [
      "$t\\,(\\text{ms})$",
      "$F\\,(\\text{N})$"
@@ -345,7 +345,7 @@
    "unit": "km/h",
    "tolerance": 0.03,
    "data": {
-    "caption": "Turvatyynyn voima nukkeen (esimerkkiaineisto)",
+    "caption": "Turvatyynyn voima nukkeen",
     "columns": [
      "$t\\,(\\text{ms})$",
      "$F\\,(\\text{kN})$"
@@ -411,7 +411,7 @@
    "unit": "N",
    "tolerance": 0.02,
    "data": {
-    "caption": "Pomppivan pallon videoanalyysi (esimerkkiaineisto)",
+    "caption": "Pomppivan pallon videoanalyysi",
     "columns": [
      "Tapahtuma",
      "$t\\,(\\text{s})$"

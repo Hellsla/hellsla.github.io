@@ -206,7 +206,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Emissions by sector (example data)",
+        "caption": "Emissions by sector",
         "columns": [
           "Sector",
           "$m_{2010}\\,(\\text{Mt})$",
@@ -283,7 +283,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Production and emission of an example power plant (example data)",
+        "caption": "Production and emission of an example power plant",
         "columns": [
           "$t\\,(\\text{a})$",
           "$E\\,(\\text{GWh})$",
@@ -427,7 +427,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Electricity production of an example city (example data)",
+        "caption": "Electricity production of an example city",
         "columns": [
           "Production method",
           "$E\\,(\\text{GWh})$"

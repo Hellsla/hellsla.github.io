@@ -202,7 +202,7 @@
       "unit": "kPa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Järven paine syvyyden funktiona (esimerkkiaineisto)",
+        "caption": "Järven paine syvyyden funktiona",
         "columns": [
           "$h\\,(\\text{m})$",
           "$p\\,(\\text{kPa})$"
@@ -247,7 +247,7 @@
       "unit": "kPa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Pohjan ylipaine eri astioissa (esimerkkiaineisto)",
+        "caption": "Pohjan ylipaine eri astioissa",
         "columns": [
           "Astia",
           "$V\\,(\\text{l})$",
@@ -289,7 +289,7 @@
       "unit": "kPa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Nestepintojen korkeusero (esimerkkiaineisto)",
+        "caption": "Nestepintojen korkeusero",
         "columns": [
           "Mittaus",
           "$\\Delta h\\,(\\text{cm})$"
@@ -358,7 +358,7 @@
       "unit": "kPa",
       "tolerance": 0.04,
       "data": {
-        "caption": "Järven vesikerrokset (esimerkkiaineisto)",
+        "caption": "Järven vesikerrokset",
         "columns": [
           "Kerros",
           "$d\\,(\\text{m})$",
@@ -400,7 +400,7 @@
       "unit": "kN",
       "tolerance": 0.02,
       "data": {
-        "caption": "Muurin kaistan osat (esimerkkiaineisto)",
+        "caption": "Muurin kaistan osat",
         "columns": [
           "Osa",
           "$h_1\\,(\\text{m})$",

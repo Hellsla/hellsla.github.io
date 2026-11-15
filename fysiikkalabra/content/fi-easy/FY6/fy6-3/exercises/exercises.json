@@ -209,7 +209,7 @@
       "unit": "Ω",
       "tolerance": 0.03,
       "data": {
-        "caption": "Vastuksen jännite ja virta (esimerkkiaineisto)",
+        "caption": "Vastuksen jännite ja virta",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{mA})$"
@@ -262,7 +262,7 @@
       "unit": "kertaa",
       "tolerance": 0.05,
       "data": {
-        "caption": "Hehkulampun jännite ja virta (esimerkkiaineisto)",
+        "caption": "Hehkulampun jännite ja virta",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{A})$"
@@ -303,7 +303,7 @@
       "unit": "Ω",
       "tolerance": 0.03,
       "data": {
-        "caption": "Vastuksen jännite ja virta (esimerkkiaineisto)",
+        "caption": "Vastuksen jännite ja virta",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{A})$"
@@ -371,7 +371,7 @@
       "unit": "Ω",
       "tolerance": 0.03,
       "data": {
-        "caption": "Komponenttien virrat jännitteen funktiona (esimerkkiaineisto)",
+        "caption": "Komponenttien virrat jännitteen funktiona",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I_\\text{A}\\,(\\text{mA})$",
@@ -425,7 +425,7 @@
       "unit": "%",
       "tolerance": 0.05,
       "data": {
-        "caption": "Rautalangan virta eri lämpötiloissa, $U = 1{,}00\\,\\text{V}$ (esimerkkiaineisto)",
+        "caption": "Rautalangan virta eri lämpötiloissa, $U = 1{,}00\\,\\text{V}$",
         "columns": [
           "$T\\,({}^\\circ\\text{C})$",
           "$I\\,(\\text{A})$"

@@ -155,7 +155,7 @@
       "unit": "",
       "tolerance": 0.03,
       "data": {
-        "caption": "Refraction of light from air into glass (example data)",
+        "caption": "Refraction of light from air into glass",
         "columns": [
           "$\\alpha_1\\,({}^\\circ)$",
           "$\\alpha_2\\,({}^\\circ)$"
@@ -297,7 +297,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Apparent depth of the object at different viewing angles (example data)",
+        "caption": "Apparent depth of the object at different viewing angles",
         "columns": [
           "$\\alpha_2\\,({}^\\circ)$",
           "$h'\\,(\\text{cm})$"

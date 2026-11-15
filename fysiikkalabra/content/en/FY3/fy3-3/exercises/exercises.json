@@ -201,7 +201,7 @@
       "unit": "K",
       "tolerance": 0.03,
       "data": {
-        "caption": "Calibration of thermometer A (example data)",
+        "caption": "Calibration of thermometer A",
         "columns": [
           "$\\theta_\\text{ref}\\,({}^\\circ\\text{C})$",
           "$\\theta_\\text{A}\\,({}^\\circ\\text{C})$"
@@ -242,7 +242,7 @@
       "unit": "times",
       "tolerance": 0.03,
       "data": {
-        "caption": "Temperature of the water in a thermos flask (example data)",
+        "caption": "Temperature of the water in a thermos flask",
         "columns": [
           "$t\\,(\\text{h})$",
           "$\\theta\\,({}^\\circ\\text{C})$"
@@ -283,7 +283,7 @@
       "unit": "s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Thermometer reading in the water (example data)",
+        "caption": "Thermometer reading in the water",
         "columns": [
           "$t\\,(\\text{s})$",
           "$\\theta\\,({}^\\circ\\text{C})$"
@@ -368,7 +368,7 @@
       "unit": "K",
       "tolerance": 0.1,
       "data": {
-        "caption": "Body temperature with three methods (example data)",
+        "caption": "Body temperature with three methods",
         "columns": [
           "Measurement",
           "$\\theta_\\text{ear}\\,({}^\\circ\\text{C})$",

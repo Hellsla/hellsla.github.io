@@ -148,7 +148,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kaukolämpöverkkoon syötetty ja perille tullut lämpöenergia (esimerkkiaineisto)",
+        "caption": "Kaukolämpöverkkoon syötetty ja perille tullut lämpöenergia",
         "columns": [
           "Kuukausi",
           "$E_\\text{lähtö}\\,(\\text{MWh})$",
@@ -190,7 +190,7 @@
       "unit": "MW",
       "tolerance": 0.02,
       "data": {
-        "caption": "Voimalinjan häviöteho eri jännitteillä, siirretty teho $100\\,\\text{MW}$ (esimerkkiaineisto)",
+        "caption": "Voimalinjan häviöteho eri jännitteillä, siirretty teho $100\\,\\text{MW}$",
         "columns": [
           "$U\\,(\\text{kV})$",
           "$P_\\text{häviö}\\,(\\text{MW})$"
@@ -341,7 +341,7 @@
       "unit": "MWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Talon lämpöhäviöiden keskiteho lämmityskaudella (esimerkkiaineisto)",
+        "caption": "Talon lämpöhäviöiden keskiteho lämmityskaudella",
         "columns": [
           "Rakenneosa",
           "$P_\\text{häviö}\\,(\\text{kW})$"
@@ -382,7 +382,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Sähköverkon syöttöteho ja häviön osuus vuorokauden jaksoilla (esimerkkiaineisto)",
+        "caption": "Sähköverkon syöttöteho ja häviön osuus vuorokauden jaksoilla",
         "columns": [
           "Jakso (klo)",
           "$t\\,(\\text{h})$",

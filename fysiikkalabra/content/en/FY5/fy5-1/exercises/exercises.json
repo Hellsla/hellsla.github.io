@@ -197,7 +197,7 @@
       "unit": "Nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Loosening a nut with different lever arms (example data)",
+        "caption": "Loosening a nut with different lever arms",
         "columns": [
           "$r\\,(\\text{m})$",
           "$F\\,(\\text{N})$"
@@ -238,7 +238,7 @@
       "unit": "Nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Weights on a metre stick (example data)",
+        "caption": "Weights on a metre stick",
         "columns": [
           "Weight",
           "$m\\,(\\text{g})$",
@@ -323,7 +323,7 @@
       "unit": "Nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Radius of the rear sprocket in different gears (example data)",
+        "caption": "Radius of the rear sprocket in different gears",
         "columns": [
           "Gear",
           "$r_{\\text{rear}}\\,(\\text{cm})$"
@@ -356,7 +356,7 @@
       "unit": "N",
       "tolerance": 0.02,
       "data": {
-        "caption": "Three spanners in a cramped space (example data)",
+        "caption": "Three spanners in a cramped space",
         "columns": [
           "Spanner",
           "$d\\,(\\text{m})$",

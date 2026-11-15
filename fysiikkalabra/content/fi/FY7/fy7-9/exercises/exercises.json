@@ -148,7 +148,7 @@
       "unit": "K",
       "tolerance": 0.02,
       "data": {
-        "caption": "Lähteiden spektrin huiput (esimerkkiaineisto)",
+        "caption": "Lähteiden spektrin huiput",
         "columns": [
           "Lähde",
           "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"
@@ -192,7 +192,7 @@
       "unit": "10⁻³ m·K",
       "tolerance": 0.01,
       "data": {
-        "caption": "Langan lämpötila ja spektrin huippu (esimerkkiaineisto)",
+        "caption": "Langan lämpötila ja spektrin huippu",
         "columns": [
           "$T\\,(\\text{K})$",
           "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"
@@ -229,7 +229,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Spektrin huippu (esimerkkiaineisto)",
+        "caption": "Spektrin huippu",
         "columns": [
           "Tehoasetus",
           "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"
@@ -320,7 +320,7 @@
       "unit": "kertaa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Tähtien spektrin huiput ja värit (esimerkkiaineisto)",
+        "caption": "Tähtien spektrin huiput ja värit",
         "columns": [
           "Tähti",
           "$\\lambda_\\text{max}\\,(\\text{nm})$",
@@ -357,7 +357,7 @@
       "unit": "min",
       "tolerance": 0.05,
       "data": {
-        "caption": "Jäähtyvän tangon spektrin huippu (esimerkkiaineisto)",
+        "caption": "Jäähtyvän tangon spektrin huippu",
         "columns": [
           "$t\\,(\\text{min})$",
           "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"

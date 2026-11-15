@@ -169,7 +169,7 @@
       "unit": "J",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kärryä vetävä voima matkan funktiona (esimerkkiaineisto)",
+        "caption": "Kärryä vetävä voima matkan funktiona",
         "columns": [
           "$s\\,(\\text{m})$",
           "$F\\,(\\text{N})$"
@@ -211,7 +211,7 @@
       "unit": "W",
       "tolerance": 0.02,
       "data": {
-        "caption": "Portaiden nousuajat (esimerkkiaineisto)",
+        "caption": "Portaiden nousuajat",
         "columns": [
           "Nousu",
           "$t\\,(\\text{s})$"
@@ -337,7 +337,7 @@
       "unit": "cm",
       "tolerance": 0.03,
       "data": {
-        "caption": "Jousen venyttävä voima venymän funktiona (esimerkkiaineisto)",
+        "caption": "Jousen venyttävä voima venymän funktiona",
         "columns": [
           "$s\\,(\\text{cm})$",
           "$F\\,(\\text{N})$"
@@ -379,7 +379,7 @@
       "unit": "kW",
       "tolerance": 0.03,
       "data": {
-        "caption": "Nostettavan kuorman korkeus (esimerkkiaineisto)",
+        "caption": "Nostettavan kuorman korkeus",
         "columns": [
           "$t\\,(\\text{s})$",
           "$h\\,(\\text{m})$"

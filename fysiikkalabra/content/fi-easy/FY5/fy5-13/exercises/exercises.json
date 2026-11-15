@@ -172,7 +172,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kielen resonanssitaajuudet (esimerkkiaineisto)",
+        "caption": "Kielen resonanssitaajuudet",
         "columns": [
           "$n$",
           "$f\\,(\\text{Hz})$"
@@ -214,7 +214,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Resonanssit äänirauta $512\\,\\text{Hz}$ (esimerkkiaineisto)",
+        "caption": "Resonanssit äänirauta $512\\,\\text{Hz}$",
         "columns": [
           "Resonanssi",
           "$L\\,(\\text{cm})$"
@@ -343,7 +343,7 @@
       "unit": "Hz",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kielen perustaajuus eri jännitysvoimilla (esimerkkiaineisto)",
+        "caption": "Kielen perustaajuus eri jännitysvoimilla",
         "columns": [
           "$F\\,(\\text{N})$",
           "$f_1\\,(\\text{Hz})$"
@@ -380,7 +380,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Putkien resonanssitaajuudet (esimerkkiaineisto)",
+        "caption": "Putkien resonanssitaajuudet",
         "columns": [
           "Resonanssi",
           "$f_\\text{A}\\,(\\text{Hz})$",

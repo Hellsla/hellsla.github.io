@@ -170,7 +170,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Potilaan tutkimukset vuoden aikana (esimerkkiaineisto)",
+        "caption": "Potilaan tutkimukset vuoden aikana",
         "columns": [
           "Tutkimus",
           "$H_\\text{E}\\,(\\text{mSv})$",
@@ -207,7 +207,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Merkkiaineen aktiivisuus potilaassa (esimerkkiaineisto)",
+        "caption": "Merkkiaineen aktiivisuus potilaassa",
         "columns": [
           "$t\\,(\\text{h})$",
           "$A\\,(\\text{MBq})$"
@@ -288,7 +288,7 @@
       "unit": "mSv",
       "tolerance": 0.03,
       "data": {
-        "caption": "PET-TT-tutkimuksen tiedot (esimerkkiaineisto)",
+        "caption": "PET-TT-tutkimuksen tiedot",
         "columns": [
           "Suure",
           "Arvo",
@@ -341,7 +341,7 @@
       "unit": "mm",
       "tolerance": 0.04,
       "data": {
-        "caption": "Alumiinilevyn paksuuden kalibrointi (esimerkkiaineisto)",
+        "caption": "Alumiinilevyn paksuuden kalibrointi",
         "columns": [
           "$d\\,(\\text{mm})$",
           "$R\\,(\\tfrac{1}{\\text{s}})$"

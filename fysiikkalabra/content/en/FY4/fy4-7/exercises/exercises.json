@@ -190,7 +190,7 @@
       "unit": "J",
       "tolerance": 0.03,
       "data": {
-        "caption": "Height $h$ and speed $v$ of the dropped ball as functions of the time $t$ (example data)",
+        "caption": "Height $h$ and speed $v$ of the dropped ball as functions of the time $t$",
         "columns": [
           "$t\\,(\\text{s})$",
           "$h\\,(\\text{m})$",
@@ -260,7 +260,7 @@
       "unit": "kg",
       "tolerance": 0.04,
       "data": {
-        "caption": "Speed $v$ and kinetic energy $E_\\text{k}$ of the cart (example data)",
+        "caption": "Speed $v$ and kinetic energy $E_\\text{k}$ of the cart",
         "columns": [
           "$v\\,(\\text{m/s})$",
           "$E_\\text{k}\\,(\\text{J})$"
@@ -353,7 +353,7 @@
       "unit": "J",
       "tolerance": 0.03,
       "data": {
-        "caption": "Highest point $h$ of the ball above the floor (example data)",
+        "caption": "Highest point $h$ of the ball above the floor",
         "columns": [
           "Bounces",
           "$h\\,(\\text{m})$"
@@ -394,7 +394,7 @@
       "unit": "kJ",
       "tolerance": 0.03,
       "data": {
-        "caption": "Height $h$ and speed $v$ of the sledder at the measuring points (example data)",
+        "caption": "Height $h$ and speed $v$ of the sledder at the measuring points",
         "columns": [
           "Point",
           "$h\\,(\\text{m})$",

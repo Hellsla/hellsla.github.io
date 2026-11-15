@@ -161,7 +161,7 @@
       "unit": "Ω",
       "tolerance": 0.02,
       "data": {
-        "caption": "Voltages of the LEDs at the current $15\\,\\text{mA}$ (example data)",
+        "caption": "Voltages of the LEDs at the current $15\\,\\text{mA}$",
         "columns": [
           "Colour",
           "$U_\\text{D}\\,(\\text{V})$"
@@ -194,7 +194,7 @@
       "unit": "mW",
       "tolerance": 0.02,
       "data": {
-        "caption": "Measurements of a solar cell with different loads (example data)",
+        "caption": "Measurements of a solar cell with different loads",
         "columns": [
           "$R\\,(\\Omega)$",
           "$U\\,(\\text{V})$",
@@ -354,7 +354,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Radiation energy and electricity consumption by month (example data)",
+        "caption": "Radiation energy and electricity consumption by month",
         "columns": [
           "Month",
           "$H\\,(\\text{kWh/m}^2)$",
@@ -437,7 +437,7 @@
       "unit": "mA",
       "tolerance": 0.05,
       "data": {
-        "caption": "Characteristic curve of a green LED (example data)",
+        "caption": "Characteristic curve of a green LED",
         "columns": [
           "$U_\\text{D}\\,(\\text{V})$",
           "$I\\,(\\text{mA})$"

@@ -142,7 +142,7 @@
    "unit": "%",
    "tolerance": 0.03,
    "data": {
-    "caption": "Vaunujen nopeudet törmäyksen molemmin puolin (esimerkkiaineisto)",
+    "caption": "Vaunujen nopeudet törmäyksen molemmin puolin",
     "columns": [
      "Koe",
      "$v_\\text{A}\\,(\\text{m/s})$",
@@ -187,7 +187,7 @@
    "unit": "%",
    "tolerance": 0.05,
    "data": {
-    "caption": "Vaunujen paikat (esimerkkiaineisto)",
+    "caption": "Vaunujen paikat",
     "columns": [
      "$t\\,(\\text{s})$",
      "$x_\\text{A}\\,(\\text{m})$",
@@ -325,7 +325,7 @@
    "unit": "N",
    "tolerance": 0.05,
    "data": {
-    "caption": "Yhdessä liukuvien vaunujen nopeus (esimerkkiaineisto)",
+    "caption": "Yhdessä liukuvien vaunujen nopeus",
     "columns": [
      "$t\\,(\\text{s})$",
      "$v\\,(\\text{m/s})$"

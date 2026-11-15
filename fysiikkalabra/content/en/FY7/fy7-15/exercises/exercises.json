@@ -192,7 +192,7 @@
       "unit": "lx",
       "tolerance": 0.015,
       "data": {
-        "caption": "Reading of the sensor as a function of the angle of the film (example data)",
+        "caption": "Reading of the sensor as a function of the angle of the film",
         "columns": [
           "$\\theta\\,(^\\circ)$",
           "$E\\,(\\text{lx})$"
@@ -253,7 +253,7 @@
       "unit": "°",
       "tolerance": 0.03,
       "data": {
-        "caption": "Transmitted share as a function of the angle (example data)",
+        "caption": "Transmitted share as a function of the angle",
         "columns": [
           "$\\theta\\,(^\\circ)$",
           "$I : I_0$"
@@ -353,7 +353,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Intensity after the last polariser (example data)",
+        "caption": "Intensity after the last polariser",
         "columns": [
           "$\\theta\\,(^\\circ)$",
           "$I_3\\,(\\text{W/m}^2)$"

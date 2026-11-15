@@ -197,7 +197,7 @@
       "unit": "J s",
       "tolerance": 0.05,
       "data": {
-        "caption": "Estojännite eri aallonpituuksilla (esimerkkiaineisto)",
+        "caption": "Estojännite eri aallonpituuksilla",
         "columns": [
           "$\\lambda\\,(\\text{nm})$",
           "$U_\\text{s}\\,(\\text{V})$"
@@ -239,7 +239,7 @@
       "unit": "eV",
       "tolerance": 0.03,
       "data": {
-        "caption": "Suurin liike-energia kahdella metallilla (esimerkkiaineisto)",
+        "caption": "Suurin liike-energia kahdella metallilla",
         "columns": [
           "$f\\,(10^{14}\\,\\text{Hz})$",
           "$E_\\text{k,A}\\,(\\text{eV})$",
@@ -281,7 +281,7 @@
       "unit": "eV",
       "tolerance": 0.03,
       "data": {
-        "caption": "Suurin liike-energia eri taajuuksilla (esimerkkiaineisto)",
+        "caption": "Suurin liike-energia eri taajuuksilla",
         "columns": [
           "$f\\,(10^{14}\\,\\text{Hz})$",
           "$E_\\text{k,max}\\,(\\text{eV})$"
@@ -367,7 +367,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Valokennon virta kahdella valotehoilla (esimerkkiaineisto)",
+        "caption": "Valokennon virta kahdella valotehoilla",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I_1\\,(\\mu\\text{A})$",
@@ -445,7 +445,7 @@
       "unit": "µA",
       "tolerance": 0.03,
       "data": {
-        "caption": "Katodia valaisevat LED-lähteet (esimerkkiaineisto)",
+        "caption": "Katodia valaisevat LED-lähteet",
         "columns": [
           "Lähde",
           "$\\lambda\\,(\\text{nm})$",

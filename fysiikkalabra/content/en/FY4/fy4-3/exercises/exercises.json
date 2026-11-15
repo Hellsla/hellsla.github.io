@@ -169,7 +169,7 @@
       "unit": "N",
       "tolerance": 0.03,
       "data": {
-        "caption": "Readings of the force sensors at the ends of the rope (example data)",
+        "caption": "Readings of the force sensors at the ends of the rope",
         "columns": [
           "$t\\,(\\text{s})$",
           "$F_\\text{A}\\,(\\text{N})$",
@@ -216,7 +216,7 @@
       "unit": "m",
       "tolerance": 0.03,
       "data": {
-        "caption": "Velocity of a cart on an air track (example data)",
+        "caption": "Velocity of a cart on an air track",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -387,7 +387,7 @@
       "unit": "N",
       "tolerance": 0.03,
       "data": {
-        "caption": "Velocity of the cart and force of the rope (example data)",
+        "caption": "Velocity of the cart and force of the rope",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$",

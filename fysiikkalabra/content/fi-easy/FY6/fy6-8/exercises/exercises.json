@@ -159,7 +159,7 @@
       "unit": "Ω",
       "tolerance": 0.06,
       "data": {
-        "caption": "Pariston napajännite $U$ kuormitusvirran $I$ funktiona (esimerkkiaineisto)",
+        "caption": "Pariston napajännite $U$ kuormitusvirran $I$ funktiona",
         "columns": [
           "$I\\,(\\text{A})$",
           "$U\\,(\\text{V})$"
@@ -205,7 +205,7 @@
       "unit": "A",
       "tolerance": 0.13,
       "data": {
-        "caption": "Paristojen A ja B napajännite kuormitusvirran funktiona (esimerkkiaineisto)",
+        "caption": "Paristojen A ja B napajännite kuormitusvirran funktiona",
         "columns": [
           "$I\\,(\\text{A})$",
           "$U_\\text{A}\\,(\\text{V})$",
@@ -288,7 +288,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Napajännite ja virta (esimerkkiaineisto)",
+        "caption": "Napajännite ja virta",
         "columns": [
           "$I\\,(\\text{A})$",
           "$U\\,(\\text{V})$"
@@ -388,7 +388,7 @@
       "unit": "%",
       "tolerance": 0.05,
       "data": {
-        "caption": "Uuden ja ikääntyneen pariston napajännite kuormitusvirran funktiona (esimerkkiaineisto)",
+        "caption": "Uuden ja ikääntyneen pariston napajännite kuormitusvirran funktiona",
         "columns": [
           "$I\\,(\\text{A})$",
           "$U_\\text{uusi}\\,(\\text{V})$",
@@ -437,7 +437,7 @@
       "unit": "A",
       "tolerance": 0.06,
       "data": {
-        "caption": "Jännite $U$ kuormitusvastuksen napojen välillä virran $I$ funktiona (esimerkkiaineisto)",
+        "caption": "Jännite $U$ kuormitusvastuksen napojen välillä virran $I$ funktiona",
         "columns": [
           "$I\\,(\\text{A})$",
           "$U\\,(\\text{V})$"

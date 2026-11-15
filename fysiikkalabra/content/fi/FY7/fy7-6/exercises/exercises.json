@@ -157,7 +157,7 @@
       "unit": "mW",
       "tolerance": 0.03,
       "data": {
-        "caption": "Magneetin putoamisaika kahdessa kupariputkessa (esimerkkiaineisto)",
+        "caption": "Magneetin putoamisaika kahdessa kupariputkessa",
         "columns": [
           "Mittaus",
           "$t_{\\text{paksu}}\\,(\\text{s})$",
@@ -216,7 +216,7 @@
       "unit": "mWb",
       "tolerance": 0.03,
       "data": {
-        "caption": "Induktiojännite eri työntönopeuksilla (esimerkkiaineisto)",
+        "caption": "Induktiojännite eri työntönopeuksilla",
         "columns": [
           "$\\Delta t\\,(\\text{s})$",
           "$e\\,(\\text{V})$"
@@ -341,7 +341,7 @@
       "unit": "m/s²",
       "tolerance": 0.04,
       "data": {
-        "caption": "Magneetin vauhti $v$ ajan $t$ funktiona (esimerkkiaineisto)",
+        "caption": "Magneetin vauhti $v$ ajan $t$ funktiona",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -395,7 +395,7 @@
       "unit": "W",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pyörrevirtahäviöt levyjen paksuuden funktiona (esimerkkiaineisto)",
+        "caption": "Pyörrevirtahäviöt levyjen paksuuden funktiona",
         "columns": [
           "$d\\,(\\text{mm})$",
           "$P\\,(\\text{W})$"

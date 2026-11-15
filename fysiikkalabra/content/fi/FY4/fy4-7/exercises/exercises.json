@@ -190,7 +190,7 @@
       "unit": "J",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pudotetun pallon korkeus $h$ ja nopeus $v$ ajan $t$ funktiona (esimerkkiaineisto)",
+        "caption": "Pudotetun pallon korkeus $h$ ja nopeus $v$ ajan $t$ funktiona",
         "columns": [
           "$t\\,(\\text{s})$",
           "$h\\,(\\text{m})$",
@@ -260,7 +260,7 @@
       "unit": "kg",
       "tolerance": 0.04,
       "data": {
-        "caption": "Kärryn nopeus $v$ ja liike-energia $E_\\text{k}$ (esimerkkiaineisto)",
+        "caption": "Kärryn nopeus $v$ ja liike-energia $E_\\text{k}$",
         "columns": [
           "$v\\,(\\text{m/s})$",
           "$E_\\text{k}\\,(\\text{J})$"
@@ -353,7 +353,7 @@
       "unit": "J",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pallon korkein kohta $h$ lattian yläpuolella (esimerkkiaineisto)",
+        "caption": "Pallon korkein kohta $h$ lattian yläpuolella",
         "columns": [
           "Pomppauksia",
           "$h\\,(\\text{m})$"
@@ -394,7 +394,7 @@
       "unit": "kJ",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pulkkailijan korkeus $h$ ja nopeus $v$ mittauspisteissä (esimerkkiaineisto)",
+        "caption": "Pulkkailijan korkeus $h$ ja nopeus $v$ mittauspisteissä",
         "columns": [
           "Piste",
           "$h\\,(\\text{m})$",

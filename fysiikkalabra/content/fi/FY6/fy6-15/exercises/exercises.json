@@ -184,7 +184,7 @@
       "unit": "kertaa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Virtatien resistanssi $R$ eri tilanteissa (esimerkkiaineisto)",
+        "caption": "Virtatien resistanssi $R$ eri tilanteissa",
         "columns": [
           "Tilanne",
           "$R\\,(\\text{k}\\Omega)$"
@@ -221,7 +221,7 @@
       "unit": "A",
       "tolerance": 0.02,
       "data": {
-        "caption": "Laitteiden ottotehot $P$ (esimerkkiaineisto)",
+        "caption": "Laitteiden ottotehot $P$",
         "columns": [
           "Laite",
           "$P\\,(\\text{W})$"
@@ -311,7 +311,7 @@
       "unit": "A",
       "tolerance": 0.05,
       "data": {
-        "caption": "Jatkojohdon kuoren lämpötilan nousu $\\Delta T$ virran $I$ funktiona (esimerkkiaineisto)",
+        "caption": "Jatkojohdon kuoren lämpötilan nousu $\\Delta T$ virran $I$ funktiona",
         "columns": [
           "$I\\,(\\text{A})$",
           "$\\Delta T\\,(\\text{K})$"
@@ -349,7 +349,7 @@
       "unit": "kΩ",
       "tolerance": 0.02,
       "data": {
-        "caption": "Lämmitysvastuksen eristysresistanssi $R_\\text{e}$ (esimerkkiaineisto)",
+        "caption": "Lämmitysvastuksen eristysresistanssi $R_\\text{e}$",
         "columns": [
           "Viikko",
           "$R_\\text{e}\\,(\\text{k}\\Omega)$"

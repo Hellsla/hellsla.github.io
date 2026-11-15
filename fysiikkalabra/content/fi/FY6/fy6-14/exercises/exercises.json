@@ -161,7 +161,7 @@
       "unit": "Ω",
       "tolerance": 0.02,
       "data": {
-        "caption": "LEDien jännitteet virralla $15\\,\\text{mA}$ (esimerkkiaineisto)",
+        "caption": "LEDien jännitteet virralla $15\\,\\text{mA}$",
         "columns": [
           "Väri",
           "$U_\\text{D}\\,(\\text{V})$"
@@ -194,7 +194,7 @@
       "unit": "mW",
       "tolerance": 0.02,
       "data": {
-        "caption": "Aurinkokennon mittaukset eri kuormilla (esimerkkiaineisto)",
+        "caption": "Aurinkokennon mittaukset eri kuormilla",
         "columns": [
           "$R\\,(\\Omega)$",
           "$U\\,(\\text{V})$",
@@ -354,7 +354,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Säteilyenergia ja sähkönkulutus kuukausittain (esimerkkiaineisto)",
+        "caption": "Säteilyenergia ja sähkönkulutus kuukausittain",
         "columns": [
           "Kuukausi",
           "$H\\,(\\text{kWh/m}^2)$",
@@ -437,7 +437,7 @@
       "unit": "mA",
       "tolerance": 0.05,
       "data": {
-        "caption": "Vihreän LEDin ominaiskäyrä (esimerkkiaineisto)",
+        "caption": "Vihreän LEDin ominaiskäyrä",
         "columns": [
           "$U_\\text{D}\\,(\\text{V})$",
           "$I\\,(\\text{mA})$"

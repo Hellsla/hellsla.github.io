@@ -173,7 +173,7 @@
       "unit": "10⁻⁶ 1/K",
       "tolerance": 0.04,
       "data": {
-        "caption": "Volume of $1.000\\,\\text{kg}$ of water (example data)",
+        "caption": "Volume of $1.000\\,\\text{kg}$ of water",
         "columns": [
           "$T\\,({}^\\circ\\text{C})$",
           "$V\\,(\\text{dm}^3)$"
@@ -219,7 +219,7 @@
       "unit": "10⁻⁶ 1/K",
       "tolerance": 0.03,
       "data": {
-        "caption": "Change in the length of a metal rod (example data)",
+        "caption": "Change in the length of a metal rod",
         "columns": [
           "$T\\,({}^\\circ\\text{C})$",
           "$\\Delta l\\,(\\text{mm})$"
@@ -347,7 +347,7 @@
       "unit": "mm",
       "tolerance": 0.03,
       "data": {
-        "caption": "Temperatures of the rail (example data)",
+        "caption": "Temperatures of the rail",
         "columns": [
           "Situation",
           "$T\\,({}^\\circ\\text{C})$"

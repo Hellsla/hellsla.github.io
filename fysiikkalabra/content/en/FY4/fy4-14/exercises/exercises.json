@@ -210,7 +210,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Speed of a dropped foam ball (example data)",
+        "caption": "Speed of a dropped foam ball",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -264,7 +264,7 @@
       "tolerance": 0.02,
       "fbd": "equations",
       "data": {
-        "caption": "Terminal velocities of paper cones (example data)",
+        "caption": "Terminal velocities of paper cones",
         "columns": [
           "Cone",
           "$m\\,(\\text{g})$",
@@ -325,7 +325,7 @@
         }
       ],
       "data": {
-        "caption": "Speed of the skydiver after the parachute opened (example data)",
+        "caption": "Speed of the skydiver after the parachute opened",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -421,7 +421,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Speed of the skydiver after the parachute opened (example data)",
+        "caption": "Speed of the skydiver after the parachute opened",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"

@@ -171,7 +171,7 @@
       "unit": "nC",
       "tolerance": 0.05,
       "data": {
-        "caption": "Pallojen välinen voima $F$ etäisyyden $r$ funktiona (esimerkkiaineisto)",
+        "caption": "Pallojen välinen voima $F$ etäisyyden $r$ funktiona",
         "columns": [
           "$r\\,(\\text{cm})$",
           "$F\\,(\\text{mN})$"
@@ -216,7 +216,7 @@
       "unit": "nC",
       "tolerance": 0.05,
       "data": {
-        "caption": "Voima $F$ varauspareilla A ja B (esimerkkiaineisto)",
+        "caption": "Voima $F$ varauspareilla A ja B",
         "columns": [
           "$r\\,(\\text{cm})$",
           "$F_\\text{A}\\,(\\text{mN})$",

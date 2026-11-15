@@ -200,7 +200,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Quark combinations (example data)",
+        "caption": "Quark combinations",
         "columns": [
           "No.",
           "Combination"
@@ -250,7 +250,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Reactions (example data)",
+        "caption": "Reactions",
         "columns": [
           "No.",
           "Reaction"

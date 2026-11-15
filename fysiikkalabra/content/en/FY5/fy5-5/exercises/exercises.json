@@ -225,7 +225,7 @@
       "unit": "10⁻¹¹ N·m²/kg²",
       "tolerance": 0.02,
       "data": {
-        "caption": "Force (example data)",
+        "caption": "Force",
         "columns": [
           "$r\\,(\\text{cm})$",
           "$F\\,(\\text{nN})$"
@@ -262,7 +262,7 @@
       "unit": "10¹⁴ m³/s²",
       "tolerance": 0.02,
       "data": {
-        "caption": "Field (example data)",
+        "caption": "Field",
         "columns": [
           "$h\\,(\\text{km})$",
           "$g\\,(\\text{m/s}^2)$"
@@ -386,7 +386,7 @@
       "unit": "kg/m³",
       "tolerance": 0.02,
       "data": {
-        "caption": "Densities (example data)",
+        "caption": "Densities",
         "columns": [
           "Rock",
           "$\\rho\\,(\\text{kg/m}^3)$"

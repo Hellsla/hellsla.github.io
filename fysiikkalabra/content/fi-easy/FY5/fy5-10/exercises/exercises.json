@@ -212,7 +212,7 @@
       "unit": "m/s",
       "tolerance": 0.04,
       "data": {
-        "caption": "Pulssin etureunan paikka (esimerkkiaineisto)",
+        "caption": "Pulssin etureunan paikka",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x\\,(\\text{m})$"
@@ -269,7 +269,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Mikrofonien väli ja kulkuaika (esimerkkiaineisto)",
+        "caption": "Mikrofonien väli ja kulkuaika",
         "columns": [
           "$d\\,(\\text{m})$",
           "$\\Delta t\\,(\\text{ms})$"
@@ -344,7 +344,7 @@
       "unit": "m",
       "tolerance": 0.04,
       "data": {
-        "caption": "Pulssin kulkuaika jännityksen funktiona (esimerkkiaineisto)",
+        "caption": "Pulssin kulkuaika jännityksen funktiona",
         "columns": [
           "$F\\,(\\text{N})$",
           "$t\\,(\\text{s})$"
@@ -381,7 +381,7 @@
       "unit": "s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Köyden osat (esimerkkiaineisto)",
+        "caption": "Köyden osat",
         "columns": [
           "Osa",
           "$L\\,(\\text{m})$",

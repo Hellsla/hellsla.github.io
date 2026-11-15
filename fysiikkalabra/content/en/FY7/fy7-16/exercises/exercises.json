@@ -136,7 +136,7 @@
       "unit": "mm",
       "tolerance": 0.07,
       "data": {
-        "caption": "Efficiency of a wireless charger as a function of distance (example data)",
+        "caption": "Efficiency of a wireless charger as a function of distance",
         "columns": [
           "$d\\,(\\text{mm})$",
           "$\\eta\\,(\\%)$"
@@ -182,7 +182,7 @@
       "unit": "dB/km",
       "tolerance": 0.04,
       "data": {
-        "caption": "Power that came through the fibre (example data)",
+        "caption": "Power that came through the fibre",
         "columns": [
           "$L\\,(\\text{km})$",
           "$P\\,(\\mu\\text{W})$"
@@ -319,7 +319,7 @@
       "unit": "mm",
       "tolerance": 0.05,
       "data": {
-        "caption": "Voltage of the coil as a function of distance (example data)",
+        "caption": "Voltage of the coil as a function of distance",
         "columns": [
           "$d\\,(\\text{mm})$",
           "$e_0\\,(\\text{V})$"
@@ -361,7 +361,7 @@
       "unit": "kHz",
       "tolerance": 0.03,
       "data": {
-        "caption": "Resistance of the loop in the base of the pan (example data)",
+        "caption": "Resistance of the loop in the base of the pan",
         "columns": [
           "Pan",
           "$R\\,(\\Omega)$"

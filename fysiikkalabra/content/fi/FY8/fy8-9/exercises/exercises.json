@@ -170,7 +170,7 @@
       "unit": "s",
       "tolerance": 0.06,
       "data": {
-        "caption": "Barium-$137\\text{m}$-näytteen pulssimäärä $10\\,\\text{s}$:n jaksossa (esimerkkiaineisto)",
+        "caption": "Barium-$137\\text{m}$-näytteen pulssimäärä $10\\,\\text{s}$:n jaksossa",
         "columns": [
           "$t\\,(\\text{s})$",
           "pulssia $10\\,\\text{s}$:ssa"
@@ -235,7 +235,7 @@
       "unit": "s",
       "tolerance": 0.05,
       "data": {
-        "caption": "Näytteen pulssimäärä $10\\,\\text{s}$:n jaksossa (esimerkkiaineisto)",
+        "caption": "Näytteen pulssimäärä $10\\,\\text{s}$:n jaksossa",
         "columns": [
           "$t\\,(\\text{s})$",
           "pulssia $10\\,\\text{s}$:ssa"
@@ -284,7 +284,7 @@
       "unit": "1/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Taustasäteilyn pulssimäärä $10\\,\\text{s}$:n jaksossa (esimerkkiaineisto)",
+        "caption": "Taustasäteilyn pulssimäärä $10\\,\\text{s}$:n jaksossa",
         "columns": [
           "jakso",
           "pulssia"
@@ -372,7 +372,7 @@
       "unit": "d",
       "tolerance": 0.05,
       "data": {
-        "caption": "Näytteen kokonaisaktiivisuus (esimerkkiaineisto)",
+        "caption": "Näytteen kokonaisaktiivisuus",
         "columns": [
           "$t\\,(\\text{h})$",
           "$A\\,(\\text{MBq})$"
@@ -426,7 +426,7 @@
       "unit": "d",
       "tolerance": 0.05,
       "data": {
-        "caption": "Potilaan kehon jodi-131-aktiivisuus (esimerkkiaineisto)",
+        "caption": "Potilaan kehon jodi-131-aktiivisuus",
         "columns": [
           "$t\\,(\\text{d})$",
           "$A\\,(\\text{MBq})$"

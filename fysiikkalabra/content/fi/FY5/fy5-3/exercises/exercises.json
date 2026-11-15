@@ -188,7 +188,7 @@
    "unit": "m/s",
    "tolerance": 0.02,
    "data": {
-    "caption": "Kymmenen kierroksen ajat (esimerkkiaineisto)",
+    "caption": "Kymmenen kierroksen ajat",
     "columns": [
      "$n$",
      "$t_{10}\\,(\\text{s})$"
@@ -229,7 +229,7 @@
    "unit": "km/s",
    "tolerance": 0.02,
    "data": {
-    "caption": "Satelliittien radat (esimerkkiaineisto)",
+    "caption": "Satelliittien radat",
     "columns": [
      "Rata",
      "$r\\,(10^{6}\\,\\text{m})$",

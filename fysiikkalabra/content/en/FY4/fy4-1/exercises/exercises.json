@@ -216,7 +216,7 @@
       "unit": "m/s",
       "tolerance": 0.04,
       "data": {
-        "caption": "Position of the cart in video analysis (example data)",
+        "caption": "Position of the cart in video analysis",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x\\,(\\text{m})$"
@@ -262,7 +262,7 @@
       "unit": "s",
       "tolerance": 0.04,
       "data": {
-        "caption": "Positions of carts A and B (example data)",
+        "caption": "Positions of carts A and B",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x_\\text{A}\\,(\\text{m})$",
@@ -309,7 +309,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Position of the robot (example data)",
+        "caption": "Position of the robot",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x\\,(\\text{m})$"
@@ -395,7 +395,7 @@
       "unit": "m/s",
       "tolerance": 0.04,
       "data": {
-        "caption": "Position of the cart on the scale of the program (example data)",
+        "caption": "Position of the cart on the scale of the program",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x_\\text{prog}\\,(\\text{m})$"
@@ -441,7 +441,7 @@
       "unit": "m",
       "tolerance": 0.03,
       "data": {
-        "caption": "Position of the truck (example data)",
+        "caption": "Position of the truck",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x\\,(\\text{m})$"

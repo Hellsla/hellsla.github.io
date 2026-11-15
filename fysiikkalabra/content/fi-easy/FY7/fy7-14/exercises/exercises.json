@@ -177,7 +177,7 @@
       "unit": "",
       "tolerance": 0.04,
       "data": {
-        "caption": "Voimakkaimmin heijastuva aallonpituus saippuakalvon paksuuden mukaan (esimerkkiaineisto)",
+        "caption": "Voimakkaimmin heijastuva aallonpituus saippuakalvon paksuuden mukaan",
         "columns": [
           "$d\\,(\\text{nm})$",
           "$\\lambda\\,(\\text{nm})$"
@@ -232,7 +232,7 @@
       "unit": "nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Pinnoitetun linssin heijastus aallonpituuden mukaan (esimerkkiaineisto)",
+        "caption": "Pinnoitetun linssin heijastus aallonpituuden mukaan",
         "columns": [
           "$\\lambda\\,(\\text{nm})$",
           "$R\\,(\\%)$"
@@ -338,7 +338,7 @@
       "unit": "µm",
       "tolerance": 0.04,
       "data": {
-        "caption": "Tummien raitojen paikat ilmakiilassa (esimerkkiaineisto)",
+        "caption": "Tummien raitojen paikat ilmakiilassa",
         "columns": [
           "$k$",
           "$x\\,(\\text{mm})$"

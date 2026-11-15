@@ -169,7 +169,7 @@
       "unit": "N",
       "tolerance": 0.03,
       "data": {
-        "caption": "Köyden päiden voima-anturien lukemat (esimerkkiaineisto)",
+        "caption": "Köyden päiden voima-anturien lukemat",
         "columns": [
           "$t\\,(\\text{s})$",
           "$F_\\text{A}\\,(\\text{N})$",
@@ -216,7 +216,7 @@
       "unit": "m",
       "tolerance": 0.03,
       "data": {
-        "caption": "Kärryn nopeus ilmatyynyradalla (esimerkkiaineisto)",
+        "caption": "Kärryn nopeus ilmatyynyradalla",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -387,7 +387,7 @@
       "unit": "N",
       "tolerance": 0.03,
       "data": {
-        "caption": "Kärryn nopeus ja köyden voima (esimerkkiaineisto)",
+        "caption": "Kärryn nopeus ja köyden voima",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$",

@@ -155,7 +155,7 @@
       "unit": "",
       "tolerance": 0.03,
       "data": {
-        "caption": "Valon taittuminen ilmasta lasiin (esimerkkiaineisto)",
+        "caption": "Valon taittuminen ilmasta lasiin",
         "columns": [
           "$\\alpha_1\\,({}^\\circ)$",
           "$\\alpha_2\\,({}^\\circ)$"
@@ -297,7 +297,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Esineen näennäinen syvyys eri katselukulmilla (esimerkkiaineisto)",
+        "caption": "Esineen näennäinen syvyys eri katselukulmilla",
         "columns": [
           "$\\alpha_2\\,({}^\\circ)$",
           "$h'\\,(\\text{cm})$"

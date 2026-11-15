@@ -172,7 +172,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Resonance frequencies of a string (example data)",
+        "caption": "Resonance frequencies of a string",
         "columns": [
           "$n$",
           "$f\\,(\\text{Hz})$"
@@ -214,7 +214,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Resonances of the tuning fork $512\\,\\text{Hz}$ (example data)",
+        "caption": "Resonances of the tuning fork $512\\,\\text{Hz}$",
         "columns": [
           "Resonance",
           "$L\\,(\\text{cm})$"
@@ -343,7 +343,7 @@
       "unit": "Hz",
       "tolerance": 0.02,
       "data": {
-        "caption": "Fundamental frequency of a string at different tensions (example data)",
+        "caption": "Fundamental frequency of a string at different tensions",
         "columns": [
           "$F\\,(\\text{N})$",
           "$f_1\\,(\\text{Hz})$"
@@ -380,7 +380,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Resonance frequencies of the tubes (example data)",
+        "caption": "Resonance frequencies of the tubes",
         "columns": [
           "Resonance",
           "$f_\\text{A}\\,(\\text{Hz})$",

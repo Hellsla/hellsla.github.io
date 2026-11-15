@@ -142,7 +142,7 @@
       "unit": "µVs/(Am)",
       "tolerance": 0.04,
       "data": {
-        "caption": "Field inside a coil as a function of current (example data)",
+        "caption": "Field inside a coil as a function of current",
         "columns": [
           "$I\\,(\\text{A})$",
           "$B\\,(\\text{mT})$"
@@ -191,7 +191,7 @@
       "unit": "µT",
       "tolerance": 0.03,
       "data": {
-        "caption": "Field of a straight wire as a function of distance (example data)",
+        "caption": "Field of a straight wire as a function of distance",
         "columns": [
           "$r\\,(\\text{cm})$",
           "$B\\,(\\mu\\text{T})$"
@@ -337,7 +337,7 @@
       "unit": "µT",
       "tolerance": 0.03,
       "data": {
-        "caption": "Turning of a compass needle as a function of current (example data)",
+        "caption": "Turning of a compass needle as a function of current",
         "columns": [
           "$I\\,(\\text{A})$",
           "$\\alpha\\,({}^\\circ)$"

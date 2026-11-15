@@ -140,7 +140,7 @@
         "graph"
       ],
       "data": {
-        "caption": "Toisiojännite $U_2$ eri toisiokäämin kierrosluvuilla $N_2$, kun $U_1 = 6{,}00\\,\\text{V}$ (esimerkkiaineisto)",
+        "caption": "Toisiojännite $U_2$ eri toisiokäämin kierrosluvuilla $N_2$, kun $U_1 = 6{,}00\\,\\text{V}$",
         "columns": [
           "$N_2$",
           "$U_2\\,(\\text{V})$"
@@ -184,7 +184,7 @@
         "data"
       ],
       "data": {
-        "caption": "Pienoismuuntajan mittaukset eri kuormilla, $U_1 = 230\\,\\text{V}$ (esimerkkiaineisto)",
+        "caption": "Pienoismuuntajan mittaukset eri kuormilla, $U_1 = 230\\,\\text{V}$",
         "columns": [
           "$I_2\\,(\\text{A})$",
           "$U_2\\,(\\text{V})$",
@@ -319,7 +319,7 @@
         "model"
       ],
       "data": {
-        "caption": "Jakelumuuntajan teho eri kuormilla (esimerkkiaineisto)",
+        "caption": "Jakelumuuntajan teho eri kuormilla",
         "columns": [
           "$P_\\text{ulos}\\,(\\text{kW})$",
           "$P_\\text{sisään}\\,(\\text{kW})$"

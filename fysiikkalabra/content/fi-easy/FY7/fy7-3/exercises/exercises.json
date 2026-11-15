@@ -142,7 +142,7 @@
       "unit": "µVs/(Am)",
       "tolerance": 0.04,
       "data": {
-        "caption": "Käämin sisäkenttä virran funktiona (esimerkkiaineisto)",
+        "caption": "Käämin sisäkenttä virran funktiona",
         "columns": [
           "$I\\,(\\text{A})$",
           "$B\\,(\\text{mT})$"
@@ -191,7 +191,7 @@
       "unit": "µT",
       "tolerance": 0.03,
       "data": {
-        "caption": "Suoran johtimen kenttä etäisyyden funktiona (esimerkkiaineisto)",
+        "caption": "Suoran johtimen kenttä etäisyyden funktiona",
         "columns": [
           "$r\\,(\\text{cm})$",
           "$B\\,(\\mu\\text{T})$"
@@ -337,7 +337,7 @@
       "unit": "µT",
       "tolerance": 0.03,
       "data": {
-        "caption": "Kompassin neulan kääntyminen virran funktiona (esimerkkiaineisto)",
+        "caption": "Kompassin neulan kääntyminen virran funktiona",
         "columns": [
           "$I\\,(\\text{A})$",
           "$\\alpha\\,({}^\\circ)$"

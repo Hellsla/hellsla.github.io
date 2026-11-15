@@ -177,7 +177,7 @@
       "unit": "",
       "tolerance": 0.04,
       "data": {
-        "caption": "Wavelength reflected most strongly as a function of the thickness of a soap film (example data)",
+        "caption": "Wavelength reflected most strongly as a function of the thickness of a soap film",
         "columns": [
           "$d\\,(\\text{nm})$",
           "$\\lambda\\,(\\text{nm})$"
@@ -232,7 +232,7 @@
       "unit": "nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Reflection of a coated lens as a function of wavelength (example data)",
+        "caption": "Reflection of a coated lens as a function of wavelength",
         "columns": [
           "$\\lambda\\,(\\text{nm})$",
           "$R\\,(\\%)$"
@@ -338,7 +338,7 @@
       "unit": "µm",
       "tolerance": 0.04,
       "data": {
-        "caption": "Positions of the dark fringes in the air wedge (example data)",
+        "caption": "Positions of the dark fringes in the air wedge",
         "columns": [
           "$k$",
           "$x\\,(\\text{mm})$"

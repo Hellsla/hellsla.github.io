@@ -139,7 +139,7 @@
       "unit": "eV",
       "tolerance": 0.03,
       "data": {
-        "caption": "Vedyn Balmerin viivat (esimerkkiaineisto)",
+        "caption": "Vedyn Balmerin viivat",
         "columns": [
           "$n$",
           "$\\lambda\\,(\\text{nm})$"
@@ -179,7 +179,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Atomiin lähetetyt fotonit (esimerkkiaineisto)",
+        "caption": "Atomiin lähetetyt fotonit",
         "columns": [
           "Fotoni",
           "$\\lambda\\,(\\text{nm})$"
@@ -289,7 +289,7 @@
       "unit": "THz",
       "tolerance": 0.02,
       "data": {
-        "caption": "Pilven emissioviivat (esimerkkiaineisto)",
+        "caption": "Pilven emissioviivat",
         "columns": [
           "Viiva",
           "$\\lambda\\,(\\text{nm})$"
@@ -323,7 +323,7 @@
       "unit": "nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kaasun emissioviivat (esimerkkiaineisto)",
+        "caption": "Kaasun emissioviivat",
         "columns": [
           "Viiva",
           "$\\lambda\\,(\\text{nm})$"

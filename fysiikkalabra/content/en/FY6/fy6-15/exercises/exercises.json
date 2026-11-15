@@ -184,7 +184,7 @@
       "unit": "times",
       "tolerance": 0.02,
       "data": {
-        "caption": "Resistance $R$ of the current path in different situations (example data)",
+        "caption": "Resistance $R$ of the current path in different situations",
         "columns": [
           "Situation",
           "$R\\,(\\text{k}\\Omega)$"
@@ -221,7 +221,7 @@
       "unit": "A",
       "tolerance": 0.02,
       "data": {
-        "caption": "Input powers $P$ of the devices (example data)",
+        "caption": "Input powers $P$ of the devices",
         "columns": [
           "Device",
           "$P\\,(\\text{W})$"
@@ -311,7 +311,7 @@
       "unit": "A",
       "tolerance": 0.05,
       "data": {
-        "caption": "Rise in temperature $\\Delta T$ of the extension cord's sheath as a function of the current $I$ (example data)",
+        "caption": "Rise in temperature $\\Delta T$ of the extension cord's sheath as a function of the current $I$",
         "columns": [
           "$I\\,(\\text{A})$",
           "$\\Delta T\\,(\\text{K})$"
@@ -349,7 +349,7 @@
       "unit": "kΩ",
       "tolerance": 0.02,
       "data": {
-        "caption": "Insulation resistance $R_\\text{e}$ of the heating element (example data)",
+        "caption": "Insulation resistance $R_\\text{e}$ of the heating element",
         "columns": [
           "Week",
           "$R_\\text{e}\\,(\\text{k}\\Omega)$"

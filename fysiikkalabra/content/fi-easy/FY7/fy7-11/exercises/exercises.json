@@ -273,7 +273,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kulma $\\theta$ tulokulman funktiona (esimerkkiaineisto)",
+        "caption": "Kulma $\\theta$ tulokulman funktiona",
         "columns": [
           "$\\alpha\\,({}^\\circ)$",
           "$\\theta_\\text{vesi}\\,({}^\\circ)$",

@@ -209,7 +209,7 @@
       "unit": "J",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kaasun lämpö ja työ kierron vaiheissa (esimerkkiaineisto)",
+        "caption": "Kaasun lämpö ja työ kierron vaiheissa",
         "columns": [
           "Vaihe",
           "$Q\\,(\\text{J})$",
@@ -263,7 +263,7 @@
       "unit": "J",
       "tolerance": 0.02,
       "data": {
-        "caption": "Palikan vetovoima viidellä vedolla (esimerkkiaineisto)",
+        "caption": "Palikan vetovoima viidellä vedolla",
         "columns": [
           "Veto",
           "$F\\,(\\text{N})$"
@@ -340,7 +340,7 @@
       "unit": "J",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pumpun männän voima matkan funktiona (esimerkkiaineisto)",
+        "caption": "Pumpun männän voima matkan funktiona",
         "columns": [
           "$s\\,(\\text{m})$",
           "$F\\,(\\text{N})$"
@@ -386,7 +386,7 @@
       "unit": "kJ",
       "tolerance": 0.02,
       "data": {
-        "caption": "Keittimen vastuksen energia ja veden sisäenergian kasvu (esimerkkiaineisto)",
+        "caption": "Keittimen vastuksen energia ja veden sisäenergian kasvu",
         "columns": [
           "$t\\,(\\text{s})$",
           "$E_\\text{v}\\,(\\text{kJ})$",

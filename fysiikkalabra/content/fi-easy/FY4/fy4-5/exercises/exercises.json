@@ -209,7 +209,7 @@
       "tolerance": 0.02,
       "fbd": "equations",
       "data": {
-        "caption": "Kolmen köyden voimat renkaaseen (esimerkkiaineisto)",
+        "caption": "Kolmen köyden voimat renkaaseen",
         "columns": [
           "$F_\\text{A}\\,(\\text{N})$",
           "$F_\\text{C}\\,(\\text{N})$",
@@ -260,7 +260,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Anturin 3 lukema eri kulmilla (esimerkkiaineisto)",
+        "caption": "Anturin 3 lukema eri kulmilla",
         "columns": [
           "$\\varphi\\,({}^\\circ)$",
           "$F_3\\,(\\text{N})$"
@@ -335,7 +335,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Laatikon nopeus köyden vetäessä (esimerkkiaineisto)",
+        "caption": "Laatikon nopeus köyden vetäessä",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -382,7 +382,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Köyden voima kuormaan (esimerkkiaineisto)",
+        "caption": "Köyden voima kuormaan",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T\\,(\\text{N})$"

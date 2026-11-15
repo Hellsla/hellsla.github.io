@@ -170,7 +170,7 @@
       "unit": "V",
       "tolerance": 0.03,
       "data": {
-        "caption": "Generaattorin jännite (esimerkkiaineisto)",
+        "caption": "Generaattorin jännite",
         "columns": [
           "$t\\,(\\text{ms})$",
           "$e\\,(\\text{V})$"
@@ -247,7 +247,7 @@
       "unit": "%",
       "tolerance": 0.05,
       "data": {
-        "caption": "Huippuarvo eri pyörimistaajuuksilla (esimerkkiaineisto)",
+        "caption": "Huippuarvo eri pyörimistaajuuksilla",
         "columns": [
           "$f\\,(\\text{Hz})$",
           "$e_0\\,(\\text{V})$"
@@ -314,7 +314,7 @@
       "unit": "T",
       "tolerance": 0.04,
       "data": {
-        "caption": "Pullodynamon huippujännite (esimerkkiaineisto)",
+        "caption": "Pullodynamon huippujännite",
         "columns": [
           "$f\\,(\\text{Hz})$",
           "$e_0\\,(\\text{V})$"

@@ -162,7 +162,7 @@
    "unit": "g",
    "tolerance": 0.05,
    "data": {
-    "caption": "Narun voima (esimerkkiaineisto)",
+    "caption": "Narun voima",
     "columns": [
      "$v\\,(\\text{m/s})$",
      "$F\\,(\\text{N})$"
@@ -203,7 +203,7 @@
    "tolerance": 0.03,
    "fbd": "equations",
    "data": {
-    "caption": "Liukumaton ajo (esimerkkiaineisto)",
+    "caption": "Liukumaton ajo",
     "columns": [
      "$r\\,(\\text{m})$",
      "$v\\,(\\text{m/s})$"
@@ -328,7 +328,7 @@
    "tolerance": 0.02,
    "fbd": "equations",
    "data": {
-    "caption": "Silmukan mittaukset (esimerkkiaineisto)",
+    "caption": "Silmukan mittaukset",
     "columns": [
      "Kohta",
      "$v\\,(\\text{m/s})$",

@@ -635,6 +635,53 @@ put()
 for n in ("science", "pedagogy", "visual"): scoped(n, frm="0" * 16)
 code, out = run(t, "reviews.py", "verify")
 expect("verify rejects a scope line whose base does not hold the hash it names", code == 1 and "does not hold hash" in out, out[-600:])
+# 8c. the marker "(esimerkkiaineisto)" taken out of table captions (teacher 2026-11-15): all three reviewers carry over; any
+# other change in the same file, a changed caption word included, is reviewed as usual
+t = project(); init_git(t); X = t / "content/fi/FY3" / LESSON / "exercises"; E = X / "exercises.json"
+for n in ("science", "pedagogy", "visual"): report(t, n, part="exercises")
+git(t, "add", "."); git(t, "commit", "-qm", "exercise reviews")
+E0 = E.read_text(); LAB = " (esimerkkiaineisto)"
+expect("fy3-3's exercises have captions with the marker", E0.count(LAB + '"') >= 2, E0.count(LAB))
+def cap(text): E.write_text(text); return run(t, "reviews.py", "scope", LESSON, "--exercises")[1]
+out = cap(E0.replace(LAB + '"', '"'))
+expect("the marker taken out of every caption: none for all three, category caption-label", out.count(": none") == 3 and "caption-label" in out, out)
+out = cap(E0.replace(LAB + '"', '"', 1))
+expect("... also out of one caption only", out.count(": none") == 3 and "caption-label" in out, out)
+out = cap(E0.replace("Lämpömittarin A kalibrointi (esimerkkiaineisto)", "Lämpömittarin A kalibrointi"))
+expect("... and the marker of a caption whose other words are kept", out.count(": none") == 3, out)
+out = cap(E0.replace(LAB + '"', '"').replace("Lämpömittarin A kalibrointi", "Lämpömittarin B kalibrointi"))
+expect("... but a changed caption word as well is reviewed as usual (not none)", "science: none" not in out and "caption-label" in out, out)
+first = json.loads(E0)["level1"][0]["text"]
+out = cap(E0.replace(LAB + '"', '"').replace(first[:12], first[:11] + "x", 1))
+expect("... or another character of the file (a task text): reviewed as usual", "science: none" not in out, out)
+out = cap(E0.replace('"unit": "K"', '"unit": "C"', 1) if '"unit": "K"' in E0 else E0.replace('"answer": ', '"answer": 1', 1))
+expect("... an answer changed alone has no caption-label", "caption-label" not in out and "science: none" not in out, out)
+_cj = lambda c: json.dumps({"data": {"caption": c}}, indent=1)
+expect("... a label added to a caption, or a word changed beside it, is not the category", rv.caption_removed(_cj("A"), _cj("A (esimerkkiaineisto)")) == _cj("A") and rv.caption_removed(_cj("A (esimerkkiaineisto)"), _cj("B")) == _cj("A (esimerkkiaineisto)") and rv.caption_removed(_cj("A (esimerkkiaineisto)"), _cj("A")) == _cj("A"))
+out = cap(E0.replace("(esimerkkiaineisto)", "(luonnos)"))
+expect("... another parenthesis in its place is a changed caption, not none", "science: none" not in out, out)
+cap(E0.replace(LAB + '"', '"')); code, out = run(t, "reviews.py", "carry", LESSON, "--exercises")
+expect("carry records caption-label for all three reviewers", sum(l.endswith("(the marker \"(esimerkkiaineisto)\" taken out of table captions, nothing else (teacher 2026-11-15))") for l in out.splitlines()) == 3, out)
+code, out = run(t, "reviews.py", "verify")
+expect("verify re-derives the caption-label carry in CI", code == 0 and "ERROR" not in out, out[-400:])
+cap(E0.replace(LAB + '"', '"').replace("Lämpömittarin A kalibrointi", "Lämpömittarin B kalibrointi"))
+code, out = run(t, "reviews.py", "verify")
+expect("... and the carry no longer holds once the same file also changed a caption word", "exercises: draft" in out, out[-400:])
+expect("the marker is a caption's alone: a text mention is no caption", rv.caption_free(json.dumps({"text": "Taulukko (esimerkkiaineisto)."})) == json.dumps({"text": "Taulukko (esimerkkiaineisto)."}, indent=1))
+for old, new in (("Taulukko (esimerkkiaineisto)", "Taulukko"), ("Table (example data)", "Table"), ("Table (example data set)", "Table"),
+                 ("Energiat (esimerkkiaineisto, NNDC NuDat 3)", "Energiat (NNDC NuDat 3)"), ("A (esimerkkiaineisto) B", "A B")):
+    expect(f"caption_free: {old!r} → {new!r}", json.loads(rv.caption_free(json.dumps({"data": [{"caption": old}]})))["data"][0]["caption"] == new)
+expect("caption-label: nobody needs to look", rv.RULES["caption-label"] == ("none", "none", "none"))
+# an item (koe, sovella, unit): its view leaves the marker out, so a carry-item over a pure marker removal is accepted
+class _Src:
+    def __init__(self, txt): self.txt = txt
+    def read(self, rel, binary=False): return self.txt if rel.endswith("tasks.json") else None
+_T = json.dumps({"tasks": [{"data": {"caption": "Mittaukset (esimerkkiaineisto)"}}]}); _T2 = json.dumps({"tasks": [{"data": {"caption": "Mittaukset"}}]})
+_T3 = json.dumps({"tasks": [{"data": {"caption": "Muut mittaukset"}}]})
+import practice as _pr
+_fk, _fl = None, None
+expect("item_view: a sovella set's tasks.json with and without the marker has one view; another caption has another",
+       rv.item_view("sovella", "FY3", "fi", _Src(_T)) == rv.item_view("sovella", "FY3", "fi", _Src(_T2)) != rv.item_view("sovella", "FY3", "fi", _Src(_T3)))
 # 9. a translated exercise set (teacher 2026-11-12): numerically equivalent to the Finnish set, whose science PASS is
 # current → the science review carries over; pedagogy and visual review the language; anything numeric differs → as before
 _p = []

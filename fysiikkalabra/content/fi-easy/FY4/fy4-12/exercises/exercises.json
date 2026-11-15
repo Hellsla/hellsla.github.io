@@ -162,7 +162,7 @@
       "unit": "s",
       "tolerance": 0.05,
       "data": {
-        "caption": "Juoksijoiden paikat (esimerkkiaineisto)",
+        "caption": "Juoksijoiden paikat",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x_\\text{A}\\,(\\text{m})$",
@@ -226,7 +226,7 @@
       "unit": "m",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kärryjen nopeudet (esimerkkiaineisto)",
+        "caption": "Kärryjen nopeudet",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v_\\text{A}\\,(\\text{m/s})$",
@@ -351,7 +351,7 @@
       "unit": "m",
       "tolerance": 0.05,
       "data": {
-        "caption": "Pyöräilijän paikka (esimerkkiaineisto)",
+        "caption": "Pyöräilijän paikka",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x\\,(\\text{m})$"

@@ -199,7 +199,7 @@
       "unit": "Hz",
       "tolerance": 0.02,
       "data": {
-        "caption": "Times of the peaks of the graph (example data)",
+        "caption": "Times of the peaks of the graph",
         "columns": [
           "Peak",
           "$t\\,(\\text{s})$"
@@ -244,7 +244,7 @@
       "unit": "s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Duration of ten swings (example data)",
+        "caption": "Duration of ten swings",
         "columns": [
           "Measurement",
           "$t_{10}\\,(\\text{s})$"
@@ -285,7 +285,7 @@
       "unit": "Hz",
       "tolerance": 0.02,
       "data": {
-        "caption": "Passes of the equilibrium position (example data)",
+        "caption": "Passes of the equilibrium position",
         "columns": [
           "$t\\,(\\text{s})$",
           "Direction"
@@ -352,7 +352,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Times of the R peaks (example data)",
+        "caption": "Times of the R peaks",
         "columns": [
           "Beat",
           "$t_{\\text{rest}}\\,(\\text{s})$",
@@ -409,7 +409,7 @@
       "unit": "cm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Distance to the motion sensor (example data)",
+        "caption": "Distance to the motion sensor",
         "columns": [
           "$t\\,(\\text{s})$",
           "$d\\,(\\text{cm})$"

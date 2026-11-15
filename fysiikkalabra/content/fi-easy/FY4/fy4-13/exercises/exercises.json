@@ -170,7 +170,7 @@
       "unit": "m/s²",
       "tolerance": 0.03,
       "data": {
-        "caption": "Atwoodin koneen kiihtyvyys eri massaeroilla (esimerkkiaineisto)",
+        "caption": "Atwoodin koneen kiihtyvyys eri massaeroilla",
         "columns": [
           "$\\Delta m\\,(\\text{g})$",
           "$a\\,(\\text{m/s}^2)$"
@@ -212,7 +212,7 @@
       "tolerance": 0.04,
       "fbd": "equations",
       "data": {
-        "caption": "Kärryn kiihtyvyys eri punnuksilla (esimerkkiaineisto)",
+        "caption": "Kärryn kiihtyvyys eri punnuksilla",
         "columns": [
           "$m_2\\,(\\text{kg})$",
           "$a\\,(\\text{m/s}^2)$"
@@ -356,7 +356,7 @@
       "unit": "kN",
       "tolerance": 0.04,
       "data": {
-        "caption": "Junan nopeus lähdön jälkeen (esimerkkiaineisto)",
+        "caption": "Junan nopeus lähdön jälkeen",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -398,7 +398,7 @@
       "unit": "kg",
       "tolerance": 0.04,
       "data": {
-        "caption": "Punnuksen laskeutumisaika $0{,}80\\,\\text{m}$:n matkalla (esimerkkiaineisto)",
+        "caption": "Punnuksen laskeutumisaika $0{,}80\\,\\text{m}$:n matkalla",
         "columns": [
           "$m_2\\,(\\text{kg})$",
           "$t\\,(\\text{s})$"

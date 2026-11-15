@@ -154,7 +154,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Annual energies of a combined heat and power plant (example data)",
+        "caption": "Annual energies of a combined heat and power plant",
         "columns": [
           "Year",
           "$E_\\text{fuel}\\,(\\text{GWh})$",
@@ -196,7 +196,7 @@
       "unit": "MW",
       "tolerance": 0.02,
       "data": {
-        "caption": "Powers of three condensing power plants (example data)",
+        "caption": "Powers of three condensing power plants",
         "columns": [
           "Plant",
           "$P_\\text{o}\\,(\\text{MW})$",
@@ -322,7 +322,7 @@
       "unit": "MW",
       "tolerance": 0.02,
       "data": {
-        "caption": "Temperatures of the condenser water (example data)",
+        "caption": "Temperatures of the condenser water",
         "columns": [
           "Month",
           "$T_\\text{in}\\,({}^\\circ\\text{C})$",

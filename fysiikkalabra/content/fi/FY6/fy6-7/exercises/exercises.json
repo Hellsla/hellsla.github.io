@@ -186,7 +186,7 @@
       "unit": "kWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Laitteiden käyttö kotona (esimerkkiaineisto)",
+        "caption": "Laitteiden käyttö kotona",
         "columns": [
           "Laite",
           "$P\\,(\\text{W})$",
@@ -233,7 +233,7 @@
       "unit": "W",
       "tolerance": 0.02,
       "data": {
-        "caption": "Sähkömittarin lukemat (esimerkkiaineisto)",
+        "caption": "Sähkömittarin lukemat",
         "columns": [
           "$t\\,(\\text{vrk})$",
           "Lukema $(\\text{kWh})$"
@@ -287,7 +287,7 @@
       "unit": "kWh",
       "tolerance": 0.05,
       "data": {
-        "caption": "Jääkaapin energiamittarin lukema (esimerkkiaineisto)",
+        "caption": "Jääkaapin energiamittarin lukema",
         "columns": [
           "$t\\,(\\text{h})$",
           "$E\\,(\\text{kWh})$"
@@ -364,7 +364,7 @@
       "unit": "€",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kulutus ja hinta vuorokauden aikana (esimerkkiaineisto)",
+        "caption": "Kulutus ja hinta vuorokauden aikana",
         "columns": [
           "Jakso (klo)",
           "$E\\,(\\text{kWh})$",

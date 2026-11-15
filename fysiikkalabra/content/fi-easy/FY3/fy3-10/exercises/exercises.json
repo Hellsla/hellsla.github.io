@@ -172,7 +172,7 @@
         "reasoning"
       ],
       "data": {
-        "caption": "Renkaan ilman lämpötila ja kokonaispaine (esimerkkiaineisto)",
+        "caption": "Renkaan ilman lämpötila ja kokonaispaine",
         "columns": [
           "Hetki",
           "$\\theta\\,({}^\\circ\\text{C})$",
@@ -205,7 +205,7 @@
         "experiment"
       ],
       "data": {
-        "caption": "Ilman tilavuus vakiopaineessa (esimerkkiaineisto)",
+        "caption": "Ilman tilavuus vakiopaineessa",
         "columns": [
           "$T\\,(\\text{K})$",
           "$V\\,(\\text{cm}^3)$"
@@ -268,7 +268,7 @@
         }
       ],
       "data": {
-        "caption": "Saman kaasumäärän paine ja tilavuus kahdessa lämpötilassa (esimerkkiaineisto)",
+        "caption": "Saman kaasumäärän paine ja tilavuus kahdessa lämpötilassa",
         "columns": [
           "$V_\\text{A}\\,(\\textsf{l})$",
           "$p_\\text{A}\\,(\\text{kPa})$",
@@ -383,7 +383,7 @@
         "reasoning"
       ],
       "data": {
-        "caption": "Heliumpullon lämpötila ja kokonaispaine (esimerkkiaineisto)",
+        "caption": "Heliumpullon lämpötila ja kokonaispaine",
         "columns": [
           "Hetki",
           "$\\theta\\,({}^\\circ\\text{C})$",

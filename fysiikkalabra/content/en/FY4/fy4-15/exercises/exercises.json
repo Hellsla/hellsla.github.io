@@ -146,7 +146,7 @@
       "unit": "GWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Power of a wind turbine and the time per year the wind speed occurs (example data)",
+        "caption": "Power of a wind turbine and the time per year the wind speed occurs",
         "columns": [
           "$v\\,(\\text{m/s})$",
           "$P\\,(\\text{kW})$",
@@ -193,7 +193,7 @@
       "unit": "GWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Mean flow rate of the river by month (example data)",
+        "caption": "Mean flow rate of the river by month",
         "columns": [
           "Month",
           "$Q\\,(\\text{m}^3\\text{/s})$"
@@ -326,7 +326,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Electric power of a wind turbine as a function of wind speed (example data)",
+        "caption": "Electric power of a wind turbine as a function of wind speed",
         "columns": [
           "$v\\,(\\text{m/s})$",
           "$P\\,(\\text{kW})$"
@@ -372,7 +372,7 @@
       "unit": "m³",
       "tolerance": 0.02,
       "data": {
-        "caption": "Surplus power of a wind farm at night (example data)",
+        "caption": "Surplus power of a wind farm at night",
         "columns": [
           "$t\\,(\\text{h})$",
           "$P\\,(\\text{MW})$"

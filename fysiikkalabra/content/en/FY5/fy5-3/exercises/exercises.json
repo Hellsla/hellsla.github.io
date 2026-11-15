@@ -188,7 +188,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Times for ten revolutions (example data)",
+        "caption": "Times for ten revolutions",
         "columns": [
           "$n$",
           "$t_{10}\\,(\\text{s})$"
@@ -229,7 +229,7 @@
       "unit": "km/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Orbits of satellites (example data)",
+        "caption": "Orbits of satellites",
         "columns": [
           "Orbit",
           "$r\\,(10^{6}\\,\\text{m})$",

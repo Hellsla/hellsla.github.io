@@ -186,7 +186,7 @@
       "unit": "",
       "tolerance": 0.05,
       "data": {
-        "caption": "Combined mass $m$ of the block and the weights and the pull $F$ of the balance (example data)",
+        "caption": "Combined mass $m$ of the block and the weights and the pull $F$ of the balance",
         "columns": [
           "$m\\,(\\text{kg})$",
           "$F\\,(\\text{N})$"
@@ -227,7 +227,7 @@
       "unit": "",
       "tolerance": 0.04,
       "data": {
-        "caption": "Pulling force $F$ measured by the sensor as a function of time $t$ (example data)",
+        "caption": "Pulling force $F$ measured by the sensor as a function of time $t$",
         "columns": [
           "$t\\,(\\text{s})$",
           "$F\\,(\\text{N})$"
@@ -288,7 +288,7 @@
       "unit": "",
       "tolerance": 0.03,
       "data": {
-        "caption": "The angle $\\alpha_0$ at which the block starts to slide (example data)",
+        "caption": "The angle $\\alpha_0$ at which the block starts to slide",
         "columns": [
           "Measurement",
           "$\\alpha_0\\,({}^\\circ)$"
@@ -400,7 +400,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Coefficient of kinetic friction $\\mu$ between the tires and the road (example data)",
+        "caption": "Coefficient of kinetic friction $\\mu$ between the tires and the road",
         "columns": [
           "Road surface",
           "$\\mu$"

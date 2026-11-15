@@ -172,7 +172,7 @@
         "reasoning"
       ],
       "data": {
-        "caption": "Temperature and total pressure of the air in the tyre (example data set)",
+        "caption": "Temperature and total pressure of the air in the tyre",
         "columns": [
           "Moment",
           "$\\theta\\,({}^\\circ\\text{C})$",
@@ -205,7 +205,7 @@
         "experiment"
       ],
       "data": {
-        "caption": "Volume of air at constant pressure (example data set)",
+        "caption": "Volume of air at constant pressure",
         "columns": [
           "$T\\,(\\text{K})$",
           "$V\\,(\\text{cm}^3)$"
@@ -268,7 +268,7 @@
         }
       ],
       "data": {
-        "caption": "Pressure and volume of the same amount of gas at two temperatures (example data set)",
+        "caption": "Pressure and volume of the same amount of gas at two temperatures",
         "columns": [
           "$V_\\text{A}\\,(\\textsf{l})$",
           "$p_\\text{A}\\,(\\text{kPa})$",
@@ -383,7 +383,7 @@
         "reasoning"
       ],
       "data": {
-        "caption": "Temperature and total pressure of the helium cylinder (example data set)",
+        "caption": "Temperature and total pressure of the helium cylinder",
         "columns": [
           "Moment",
           "$\\theta\\,({}^\\circ\\text{C})$",

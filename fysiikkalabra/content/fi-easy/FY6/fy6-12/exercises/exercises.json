@@ -162,7 +162,7 @@
       "unit": "V",
       "tolerance": 0.04,
       "data": {
-        "caption": "Potentiaali (esimerkkiaineisto)",
+        "caption": "Potentiaali",
         "columns": [
           "$x\\,(\\text{cm})$",
           "$V\\,(\\text{V})$"
@@ -234,7 +234,7 @@
       "unit": "kg",
       "tolerance": 0.04,
       "data": {
-        "caption": "Ionin nopeus (esimerkkiaineisto)",
+        "caption": "Ionin nopeus",
         "columns": [
           "$U\\,(\\text{V})$",
           "$v\\,(10^{4}\\,\\text{m/s})$"
@@ -358,7 +358,7 @@
       "unit": "m/s",
       "tolerance": 0.03,
       "data": {
-        "caption": "Läpäisyosuus (esimerkkiaineisto)",
+        "caption": "Läpäisyosuus",
         "columns": [
           "$U_\\text{v}\\,(\\text{V})$",
           "Osuus $(\\%)$"

@@ -172,7 +172,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Dieselmoottorin teho ja polttoaineen kulutus (esimerkkiaineisto)",
+        "caption": "Dieselmoottorin teho ja polttoaineen kulutus",
         "columns": [
           "$P\\,(\\text{kW})$",
           "$q_m\\,(\\text{kg/h})$"
@@ -240,7 +240,7 @@
       "unit": "kWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Lämpöpumpun mittaukset (esimerkkiaineisto)",
+        "caption": "Lämpöpumpun mittaukset",
         "columns": [
           "Vuorokausi",
           "$T_\\text{ulko}\\,({}^\\circ\\text{C})$",
@@ -369,7 +369,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Talon lämmöntarve ja lämpöpumpun lämpökerroin (esimerkkiaineisto)",
+        "caption": "Talon lämmöntarve ja lämpöpumpun lämpökerroin",
         "columns": [
           "Kuukausi",
           "$T_\\text{ulko}\\,({}^\\circ\\text{C})$",
@@ -422,7 +422,7 @@
       "unit": "kJ",
       "tolerance": 0.02,
       "data": {
-        "caption": "Männän korkeus lämmityksen aikana (esimerkkiaineisto)",
+        "caption": "Männän korkeus lämmityksen aikana",
         "columns": [
           "$t\\,(\\text{s})$",
           "$h\\,(\\text{cm})$"
