@@ -67,11 +67,9 @@ $$ tuottaa biomassavoimala, jonka käyttöaste on silloin vain noin $\dfrac{40\,
 
 *Päästö.* $$
 \begin{aligned}
-m &= 11\,\text{g/kWh} \cdot 252 \\
-&\cdot 10^{6}\,\text{kWh} \\
+m &= 11\,\text{g/kWh} \cdot 252 \cdot 10^{6}\,\text{kWh} \\
 &+ 24\,\text{g/kWh} \cdot 88 \cdot 10^{6}\,\text{kWh} \\
-&+ 230\,\text{g/kWh} \cdot 40 \\
-&\cdot 10^{6}\,\text{kWh} \\
+&+ 230\,\text{g/kWh} \cdot 40 \cdot 10^{6}\,\text{kWh} \\
 &\approx 2{,}8 \cdot 10^{3}\,\text{t} + 2{,}1 \cdot 10^{3}\,\text{t} \\
 &+ 9{,}2 \cdot 10^{3}\,\text{t} \\
 &\approx 1{,}4 \cdot 10^{4}\,\text{t}
