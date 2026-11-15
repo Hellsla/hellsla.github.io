@@ -42,4 +42,7 @@ a["fy5-16-L3-05"] = t_allowed(L_fest - 8)                   # earplugs 8 dB -> 9
 # Figure tasks (read from fy5-16/scale): lawn mower 90 dB, rock concert 105 dB
 a["fy5-16-L1-09"] = t_allowed(90)                          # n = 5/3, t = 8 h / 2^(5/3) = 2,52 h
 a["fy5-16-L2-09"] = t_allowed(105 - 12) * 60               # concert 105 dB, earplugs -12 dB: 93 dB, n = 8/3, t = 480 min / 2^(8/3) = 75,6 min
+# Source-based task (Työterveyslaitos, Melu): from the energy dose I1 t1 = I2 t2 and I2/I1 = 10^((L2 - L1)/(10 dB))
+ratio_94 = 10 ** ((94 - 85) / 10)                           # 94 dB against 85 dB: 10^0,9 = 7,943 (+3 dB: 10^0,3 = 1,995; +10 dB: 10)
+a["fy5-16-L2-10"] = round(8.0 / ratio_94, 1)                # t2 = 8 h / 7,943 = 1,007 h = 1,0 h (rule of thumb: 8 h / 2^3 = 1 h exactly)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

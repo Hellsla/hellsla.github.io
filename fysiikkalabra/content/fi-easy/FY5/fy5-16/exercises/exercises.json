@@ -319,6 +319,18 @@
       "answer": 75.6,
       "unit": "min",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-16-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Aineisto: [Työterveyslaitos – Melu](https://www.ttl.fi/teemat/tyoturvallisuus/altistuminen-tyoympariston-haittatekijoille/fysikaaliset-altisteet-tyopaikalla/melu)\n\nKuinka vaarallista voimakas ääni on kuulolle? Lue aineisto, joka kertoo melualtistuksesta eli siitä, kuinka paljon melua ihminen saa. Etsi aineistosta melun viitearvot (toiminta-arvot ja raja-arvo).\n\na) Selitä, miksi desibeliasteikkoa kutsutaan logaritmiseksi.\n\nb) Äänitaso kasvaa $3\\,\\text{dB}$ tai $10\\,\\text{dB}$. Laske, kuinka moninkertaiseksi äänen intensiteetti muuttuu.\n\nc) Vertaa $85\\,\\text{dB}$:n ja $94\\,\\text{dB}$:n melualtistuksia. Aineiston taulukossa $85\\,\\text{dB}$ on ylempi toiminta-arvo. Mitä siitä aineiston mukaan seuraa työpaikalla? Miten $94\\,\\text{dB}$ sijoittuu taulukon raja-arvoon nähden? Kuinka pitkään voimakkaammalle äänelle voisi altistua, jotta äänen energiaan perustuva kokonaisaltistus olisi sama kuin kahdeksan tunnin altistuminen $85\\,\\text{dB}$:n melulle? Laske intensiteettien suhde b-kohdan tavalla.\n\nd) Arvioi väitettä: ”Muutaman desibelin muutos äänenvoimakkuudessa ei ole kuulon kannalta merkittävä.” Perustele laskuillasi ja aineiston viitearvoilla.\n\nKirjoita c-kohdan aika tunteina vastauslaatikkoon.",
+      "answer": 1.0,
+      "unit": "h",
+      "tolerance": 0.03
     }
   ],
   "level3": [

@@ -336,6 +336,18 @@
       "answer": 6.93,
       "unit": "cm",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy5-17-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Source material: [University of Helsinki – Institute of Seismology: Earthquakes in Finland and adjacent areas](https://www.helsinki.fi/en/institute-seismology/earthquakes/earthquakes-finland-and-adjacent-areas)\n\nThe Institute of Seismology follows the earthquakes of Finland with a network of seismograph stations. Use the source material to get to know the earthquakes observed in Finland and its adjacent areas. The institute’s page tells about some earthquakes. The yearly list of every earthquake is on the Finnish subpage [Maanjäristykset Suomessa 2000-luvulla](https://www.helsinki.fi/fi/seismologian-instituutti/maanjaristykset/maanjaristykset-suomessa-ja-lahialueilla/maanjaristykset-suomessa-2000-luvulla) (Earthquakes in Finland in the 2000s). The columns of its tables are: no., month, day, time (UTC), latitude, longitude, depth (km), magnitude and place.\n\na) Choose one recorded earthquake and describe its location and its strength with the help of the source material. Write down the date of the earthquake and the day on which you read the material. Compare the magnitude of the earthquake with the range of magnitudes that the institute gives for earthquakes in Finland (if the English page does not state it, the Finnish page does).\n\nb) Explain how P waves and S waves differ from each other.\n\nc) Assume that the speed of the P wave is $6.0\\,\\text{km/s}$ and the speed of the S wave $3.5\\,\\text{km/s}$. Calculate the difference in the arrival times of the waves when each travels a distance of $100$ kilometres.\n\nd) Explain how the arrival times of seismic waves can be used to estimate the location of an earthquake and why several measuring stations are needed for locating it.\n\nThe answer box takes the difference in arrival times of part c), in seconds.",
+      "answer": 11.905,
+      "unit": "s",
+      "tolerance": 0.03
     }
   ],
   "level3": [
