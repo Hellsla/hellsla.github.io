@@ -1,23 +1,23 @@
-VERDICT: FAIL
-CONTENT-HASH: 29869917bd624813
+VERDICT: PASS
+CONTENT-HASH: 093745b877297051
 
 ## Blocking
-- inquiry.json exp-1 (`min` 4, pred-2 `reveal.min` 4) — Prediction 2 asks how the car moves after grip fails (trajectory). The measurement table (an, F needed, F max, grip) at 5, 10, 15 and 20 m/s shows grip failing at 20 m/s but never shows the path. The intro asks the student to run 25 and 30 m/s only as an extra, not recorded, so pred-2 is revealed after min 4 without any observation of the motion. The experiment cannot refute "auto liukuu suoraan ulos" or "pysyy radalla". Fix: make the 25 and 30 m/s runs recorded rows (`min` 6, pred-2 `reveal.min` 6), or add a recorded observation measure for the path (e.g. "rata: kaartaa loivemmin / ulkoreunan yli").
+(none)
 
 ## Polish
-- lesson.md "Yleinen virhekäsitys" — one paragraph of about 150 words, over the 120-word limit. Split it at "Auto mukana kääntyvässä…", and the two-error ending ("Toinen virhe…") into its own paragraph.
-- inquiry.json exp-1 intro — five instructions in one paragraph (set, record four values, then run two more and compare). Put the 25 and 30 m/s step as its own sentence/line, with what to look at in the picture.
-- inquiry.json pred-1 correct feedback — it gives model values (3,0 kN, 12 kN) already inside the prediction box; fine after commitment, but the "11,8 kN" comparison previews exp-1's conclusion. Trim to the principle and leave the numbers to the experiment.
-- Nyppylä/notko (own section, figure, Etsi virhe, Valitse, siirto, exit ticket) is a second topic beside the slot's core (kaarre, keskeisvoima). Workload is still about one lesson because the sim covers only the car on a flat curve; keep but do not add more.
-- inquiry.json check-2 solution — computed 148,0 N, then answer "150 N" at two figures; say that the checker accepts 148 N so a student who rounds to three figures is not told they are wrong.
+- inquiry.json exp-1 intro — pred-2 is revealed after 6 measurements, but the Käynnistä runs at 25 and 30 m/s that refute it are only requested in the intro, not counted. A student who skips them sees "supports/refutes" with no path evidence. Fix: say in the pred-2 reveal text or the intro that the verdict needs the path observation, or add a measure key "rata" the student notes.
+- inquiry.json check-2 solution — the table value 148,0 N is followed by 150 N (two figures); fine, but say in the Vastaus that 148 N is also accepted, so a student rounding to three figures is not told they erred.
+- lesson.md "Kuvassa kappaleen nopeus on ensin ..." — the paragraph on Δv pointing to the interval midpoint is dense for a first meeting; split it after "keskipisteeseen" into two paragraphs.
+- inquiry.json pred-3 and exp-2 are optional and sit in the core stage: acceptable for workload, but reflect lists only pred-1 and pred-2, so pred-3's revision is never prompted.
 
 ## Checked
-- Path from fy5-3 (v = 2πr/T, direction of v) to a_n and ΣF = mv²/r is followable; the hook question (real or not ulospäin painava voima) is answered only after commitment.
-- Goals covered: direction and size of a_n, Newton's 2nd law with force diagram; keskipakoisvoima handled as misconception, with the reference-frame caveat.
-- Worked example has seven stages, one step each, symbolic before numeric, with a reasonableness check; not repeated by the exercises in the packet.
-- Force-diagram skills: Etsi virhe, Valitse oikea voimakuvio (one error per distractor, feedback names it), draw-it-yourself check-3 with a model figure and criteria.
-- Distractor feedback in pred-1/2/3, check-1 and the transfer task repairs the misconception, with mistakes values that are real slips.
-- Exit ticket tests the core idea (real force direction, v² scaling, feeling light on a hill).
-- Finnish and number+unit LaTeX read correctly; glossary terms (normaalikiihtyvyys, keskeisvoima, lähtökitka) used.
-- The model section names its simplifications (no air drag, sliding grip simplified).
-- Not examined: captures (none supplied in the packet), so figure legibility and the phone layout are left to the visual review and the 360 px tests.
+- Round-1 blocker fixed: exp-1 now records 5–30 m/s (min 6) and pred-2 reveals after 6; the 25 and 30 m/s runs show a path that curves less than the track, which contradicts the radial-outward option and the "stays on track, slows" option.
+- pred-1 is refutable from the table (3,0 kN to 12 kN), options' feedback repair each misconception; no answer is disclosed before commitment.
+- Locked r, m, surface; only v varies; the question (19,8 m/s) follows from the table and uses sqrt(mu0 g r).
+- Opening question (what holds the car, is the outward force real) is answered in Ydinajatus, the misconception section and exit ticket 1.
+- Worked example has seven stages, symbolic first, units converted, plausibility check.
+- Error-spotting, force-diagram selection (one error each, named in feedback) and a draw-it-yourself task are present; diagram before equation in solutions.
+- Transfer task has three progressive hints and real mistake values (18,79; 10,85).
+- Finnish and glossary terms (normaalikiihtyvyys, keskeisvoima, lähtökitka) are correct; no outward centrifugal force taught as real.
+- Workload is one lesson (3 predictions, 1 required experiment, 2 optional items).
+- Figures judged from aria-labels only; their captures were not opened.
