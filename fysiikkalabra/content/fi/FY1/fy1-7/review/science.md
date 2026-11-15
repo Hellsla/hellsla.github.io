@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 734ea9a4523590e2
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: f447cdfb0ba35ecd
 
 ## Blocking
 - none
@@ -9,8 +8,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Etsi virhe distractor 'satoja tonneja': the student's wrong result 675 000 kg = 675 t, so the new wording matches the error (old 'tuhansia kiloja' was too small); feedback unchanged and right.
-- Model answer: nickel 8,91 g/cm³ vs copper 8,96 g/cm³ (true), nickel ferromagnetic and copper not, so magnetism discriminates: correct; 'muut havainnot' is the right word.
-- Displacement figure: label V = V2 - V1 on the bracket between the 40 ml and 70 ml readings, aria/text 'lukemien erotus': consistent with the text (V = V2 - V1); figures.py change only label text and width.
-- Reading uncertainty (meniscus), beam estimate 1,9 kg · 7,9 ≈ 15 kg, container mistake (subtract for one weighing, slope for a graph): physics right.
-- Iceberg alt text change: not physics.
+- batch delta review: inquiry.json distractor feedback ("satoja tonneja"). "noin 2,7 kertaa niin tiheää kuin vesi" now names the reference, which is right (2700/1000 = 2,7). 0,25 L · 2,7 kg/L = 0,675 kg ≈ 0,7 kg, recomputed. The option stays wrong and its feedback says why. Approved formula names and figures are not judged. The hash was the same at the start and the end.
