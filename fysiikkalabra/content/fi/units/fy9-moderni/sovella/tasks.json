@@ -1,5 +1,5 @@
 {
- "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin fotonit, atomit, ytimet ja säteilyn. Ratkaise ne kuten kokeessa: nimeä ilmiö ja malli ja perustele, miksi malli sopii tilanteeseen, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+ "intro": "Seitsemän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin fotonit, atomit, ytimet ja säteilyn. Ratkaise ne kuten kokeessa: nimeä ilmiö ja malli ja perustele, miksi malli sopii tilanteeseen, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis. Viimeinen tehtävä on soveltava aineistotehtävä, jonka lähde avautuu tehtävän linkistä.",
  "tasks": [
   {
    "id": "fy9-moderni-s1",
@@ -811,6 +811,161 @@
     "math": "fy8-11",
     "concept": "fy8-10",
     "transfer": "fy3-15"
+   }
+  },
+  {
+   "id": "fy9-moderni-s7",
+   "title": "Tuottiko fuusioreaktori enemmän energiaa kuin kulutti?",
+   "source": "statistics",
+   "source_note": "Yle Uutiset 12.12.2022, fuusiokoetta käsittelevä artikkeli (https://yle.fi/a/3-12684377). Tarkistettu 16.11.2026. Laserlaitteiston sähköverkosta ottama energia, noin $300\\,\\text{MJ}$, on laboratorion joulukuussa 2022 ilmoittama tieto, jota artikkelissa ei ole.",
+   "skills": [
+    "fy8-11",
+    "fy8-10",
+    "fy3-6",
+    "fy2-4"
+   ],
+   "text": "Joulukuussa 2022 uutisoitiin fuusiotutkimuksen läpimurrosta. Avaa [Yle Uutisten artikkeli fuusiokokeesta](https://yle.fi/a/3-12684377) (12.12.2022, päivitetty 13.12.2022) ja lue se kokonaan, myös lopun korjausmerkintä.\n\nAineiston mukaan (tarkistettu 16.11.2026) kokeen kaksi energiaa olivat $3{,}15\\,\\text{MJ}$ ja $2{,}05\\,\\text{MJ}$. Artikkeli vertaa suurempaa energiaa siihen, että kiehautetaan muutama kattilallinen vettä.\n\n- veden ominaislämpökapasiteetti $4{,}19\\,\\tfrac{\\text{kJ}}{\\text{kg}\\cdot\\text{K}}$\n- Laboratorion mukaan laserlaitteisto otti laukausta varten sähköverkosta noin $300\\,\\text{MJ}$. Tätä tietoa ei ole artikkelissa.\n- lämpövoimala muuttaa sähköksi noin kolmasosan energiasta, jonka se saa lämpönä",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "word",
+     "points": 2,
+     "text": "Selvitä aineistosta, miten fuusioreaktio saatiin aikaan. Kumpi aineiston energioista vapautui fuusioreaktiossa, ja mitä toinen energia tarkoittaa?",
+     "criteria": [
+      {
+       "text": "Kertoo aineiston perusteella, että suurten laserien säteet kohdistettiin pisteeseen, jossa polttoaine oli, ja että fuusiossa ytimet yhdistyvät raskaammiksi ytimiksi: syntyy heliumia ja energiaa vapautuu.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Tulkitsee energiat: $3{,}15\\,\\text{MJ}$ vapautui fuusioreaktiossa, ja $2{,}05\\,\\text{MJ}$ on laserien polttoaineeseen tuoma energia, jossa ei ole mukana laserien toimintaan kulunutta energiaa.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 3,
+     "text": "Laske energioiden suhde ja erotus. Mitä ne kertovat kokeen tuloksesta?",
+     "answer": [
+      {
+       "name": "ratio",
+       "value": 1.537,
+       "unit": "",
+       "tolerance": 0.02
+      },
+      {
+       "name": "diff",
+       "value": 1.1,
+       "unit": "MJ",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$\\dfrac{E_\\text{f}}{E_\\text{l}}$ ja $\\Delta E = E_\\text{f} - E_\\text{l}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\dfrac{3{,}15\\,\\text{MJ}}{2{,}05\\,\\text{MJ}} \\approx 1{,}54$ ja $3{,}15\\,\\text{MJ} - 2{,}05\\,\\text{MJ} = 1{,}10\\,\\text{MJ}$"
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Fuusiossa vapautui noin $1{,}5$-kertainen energia eli $1{,}10\\,\\text{MJ}$ enemmän kuin laserit toivat polttoaineeseen. Suhde on suurempi kuin $1$, mikä oli kokeen uusi tulos."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Tarkista artikkelin vertailu laskemalla. Kuinka suuren vesimäärän energia $3{,}15\\,\\text{MJ}$ lämmittää lämpötilasta $20\\,{}^\\circ\\text{C}$ kiehumispisteeseen $100\\,{}^\\circ\\text{C}$? Pitääkö vertailu paikkansa?",
+     "answer": {
+      "value": 9.4,
+      "unit": "kg",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "$Q = c_\\text{v}m\\Delta T$, joten $m = \\dfrac{Q}{c_\\text{v}\\Delta T}$"
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\nm &= \\dfrac{3{,}15 \\cdot 10^{6}\\,\\text{J}}{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 80\\,\\text{K}} \\\\\n&\\approx 9{,}40\\,\\text{kg}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "noin $9{,}4\\,\\text{kg}$ eli noin $9{,}4$ litraa"
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Vertailu pitää paikkansa: noin $9$ litraa on muutama, esimerkiksi kolme kolmen litran, kattilallinen."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Selitä, miksi tulos ei osoita, että koko koelaitteisto olisi tuottanut enemmän energiaa kuin se kulutti. Käytä perusteluna aineistoa ja laboratorion ilmoittamaa sähköenergiaa.",
+     "criteria": [
+      {
+       "text": "Rajaa systeemin: vertailu $3{,}15\\,\\text{MJ} > 2{,}05\\,\\text{MJ}$ koskee vain polttoainetta. Aineiston mukaan laserien toimintaan kulunut energia ei ole luvussa mukana.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$\\dfrac{3{,}15\\,\\text{MJ}}{300\\,\\text{MJ}} \\approx 0{,}01$: fuusiossa vapautui noin $1\\,\\%$ energiasta, jonka laitteisto otti sähköverkosta."
+      },
+      {
+       "text": "Toteaa, että vapautunutta energiaa ei muutettu sähköksi. Lämpövoimalan hyötysuhteella sähköä saataisiin noin $1\\,\\text{MJ}$, alle puoli prosenttia verkosta otetusta energiasta.",
+       "tag": "transfer",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "word",
+     "points": 3,
+     "text": "Toinen verkkojulkaisu voisi otsikoida saman kokeen näin: ”Fuusiovoimala tuottaa jo enemmän energiaa kuin kuluttaa.” Otsikko on keksitty tätä tehtävää varten. Mitä otsikossa pitäisi täsmentää? Käytä esimerkkinä artikkelin omaa korjausmerkintää. Selitä myös, miksi kokeen tulos ei riko energian säilymistä.",
+     "criteria": [
+      {
+       "text": "Täsmentää, että kyseessä on yksittäinen laboratoriokoe eikä voimala: sähköä ei tuotettu, ja aineiston mukaan sähköverkkoon kytketty fuusiovoimala on vielä vuosikymmenten päässä.",
+       "tag": "communication",
+       "points": 1
+      },
+      {
+       "text": "Täsmentää, että ”enemmän kuin kuluttaa” pätee vain polttoaineen energiataseeseen, ja liittää tämän artikkelin korjausmerkintään: otsikkoa ja tekstiä muutettiin, jotta lukija ei luule laserien energian olevan luvussa mukana.",
+       "tag": "communication",
+       "points": 1
+      },
+      {
+       "text": "Selittää, että energia säilyy: ylimääräinen energia vastaa ytimien massan pienenemistä fuusiossa, $E = \\Delta m c^2$, eikä synny tyhjästä.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    }
+   ],
+   "links": {
+    "concept": "fy8-11",
+    "math": "fy3-6",
+    "transfer": "fy3-15",
+    "communication": "fy8-11"
    }
   }
  ]

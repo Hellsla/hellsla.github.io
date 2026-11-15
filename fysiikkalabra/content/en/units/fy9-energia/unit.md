@@ -348,7 +348,7 @@ An energy chain has three successive stages with the efficiencies $\eta_1$, $\et
 ---
 By the definition of efficiency the efficiency of the whole chain is $\eta = \tfrac{P_\text{a}}{P_\text{o}}$, where $P_\text{o}$ is the power taken in by the first stage and $P_\text{a}$ the useful power given by the last stage. Denote the powers given by the stages $P_1$, $P_2$ and $P_3 = P_\text{a}$. The efficiency gives the power given by each stage from the power it takes in, and the power a stage takes in is the power given by the stage before it:
 
-$$P_1 = \eta_1 P_\text{o}, \quad P_2 = \eta_2 P_1, \quad P_3 = \eta_3 P_2$$
+$$\begin{aligned} P_1 &= \eta_1 P_\text{o} \\ P_2 &= \eta_2 P_1 \\ P_3 &= \eta_3 P_2 \end{aligned}$$
 
 Substitute the powers one after another:
 

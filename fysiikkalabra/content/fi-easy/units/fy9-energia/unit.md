@@ -350,7 +350,7 @@ Käytetään hyötysuhteen määritelmää. Koko ketjun hyötysuhde on $\eta = \
 
 Hyötysuhteesta saadaan teho, jonka vaihe antaa. Se on vaiheen hyötysuhde kertaa teho, jonka vaihe ottaa. Vaihe ottaa sen tehon, jonka edellinen vaihe antaa:
 
-$$P_1 = \eta_1 P_\text{o}, \quad P_2 = \eta_2 P_1, \quad P_3 = \eta_3 P_2$$
+$$\begin{aligned} P_1 &= \eta_1 P_\text{o} \\ P_2 &= \eta_2 P_1 \\ P_3 &= \eta_3 P_2 \end{aligned}$$
 
 Sijoitetaan tehot peräkkäin:
 

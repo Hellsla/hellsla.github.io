@@ -427,3 +427,96 @@ $$. Tulos on sama. Kiihtyvyys on valtava, koska protonin massa on hyvin pieni. V
 ### Hyväksytään myös
 - a-kohdassa taajuuden laskeminen suoraan lausekkeesta $f = \tfrac{qB}{2\pi m}$.
 - c-kohdassa vastaus $n = 80$ ilman desimaaleja, koska kierrosten määrä on kokonaisluku.
+
+## fy9-magnetismi-valo-s7
+
+### a)
+**Annettu:** aineistosta (CERN, tarkistettu 16.11.2026) LHC:n kehän pituus $l = 26\,659\,\text{m}$ ja kierrosten määrä $N = 11\,245$ ajassa $t = 1\,\text{s}$; valon nopeus $c = 2{,}99792458 \cdot 10^8\,\text{m/s}$
+**Kysytty:** protonien vauhti $v$ ja sen vertailu valon nopeuteen
+**Periaate:** Kiihdytyksen jälkeen protonit kiertävät rengasta vakiovauhdilla. Siksi vauhti on kuljettu matka jaettuna ajalla, joka matkaan kului (luku *Ympyrärata: jaksonaika ja ratanopeus*). Yhdellä kierroksella protoni kulkee kehän pituuden. Sekunnissa se kulkee siis matkan $s = Nl$.
+**Kaava:** $v = \dfrac{s}{t} = \dfrac{Nl}{t}$
+**Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+v &= \dfrac{11\,245 \cdot 26\,659\,\text{m}}{1\,\text{s}} \\
+&= 299\,780\,455\,\text{m/s} \\
+&\approx 2{,}9978 \cdot 10^{8}\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** Protonien vauhti on $v \approx 2{,}9978 \cdot 10^8\,\text{m/s}$. Vastauksessa on viisi merkitsevää numeroa, kuten aineiston luvuissa. Vertailu: $$
+\begin{aligned}
+\dfrac{v}{c} &= \dfrac{2{,}9978 \cdot 10^{8}\,\text{m/s}}{2{,}99792458 \cdot 10^{8}\,\text{m/s}} \\
+&\approx 0{,}99996
+\end{aligned}
+$$ Vauhti on siis käytännössä valon nopeus. Laskettu ero on noin $12\,\text{km/s}$ eli $0{,}004\,\%$. Ero ei kuitenkaan kerro, kuinka paljon protonit jäävät valon nopeudesta. Aineiston luvut on pyöristetty kokonaisiksi metreiksi ja kierroksiksi. Jo tämä pyöristys sallii vauhdille välin $2{,}9976 \cdot 10^8\,\text{m/s}$ … $2{,}9980 \cdot 10^8\,\text{m/s}$. Valon nopeus on tällä välillä. Aineistosta voi siis päätellä, että protonit kulkevat näiden lukujen tarkkuudella valon nopeudella. Todellista eroa valon nopeuteen aineistosta ei voi päätellä. Protonilla on massa, joten sen vauhti jää kuitenkin aina alle valon nopeuden.
+**Järkevyys:** Valo kulkee sekunnissa noin $300\,000\,\text{km}$. Kehä on noin $27\,\text{km}$, ja se mahtuu tähän matkaan noin $\tfrac{300\,000\,\text{km}}{27\,\text{km}} \approx 11\,000$ kertaa. Aineiston $11\,245$ kierrosta sekunnissa sopii tähän.
+
+### b)
+**Annettu:** yhden protonin energia $E_1 = 6{,}8\,\text{TeV}$ (aineisto, tarkistettu 16.11.2026), $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** energia $E_1$ jouleina
+**Periaate:** Elektronivoltti on energian yksikkö. Se on energia, jonka alkeisvarauksen suuruinen varaus saa yhden voltin jännitteessä (luku *Potentiaalienergia ja potentiaali sähkökentässä*). Etuliite tera (T) tarkoittaa kerrointa $10^{12}$.
+**Kaava:** $E_1 = 6{,}8\,\text{TeV} = 6{,}8 \cdot 10^{12}\,\text{eV}$, ja yksikön $\text{eV}$ paikalle sijoitetaan $1{,}602 \cdot 10^{-19}\,\text{J}$
+**Muunnokset:** $1\,\text{TeV} = 10^{12}\,\text{eV}$ ja $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Sijoitus:** $$
+\begin{aligned}
+E_1 &= 6{,}8 \cdot 10^{12} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} \\
+&= 1{,}0894 \cdot 10^{-6}\,\text{J}
+\end{aligned}
+$$
+**Vastaus:** Yhden protonin energia on $E_1 \approx 1{,}1 \cdot 10^{-6}\,\text{J}$ eli noin $1{,}1\,\mu\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, kuten energiassa $6{,}8\,\text{TeV}$.
+**Järkevyys:** Arjen mittakaavassa energia on pieni. Esimerkiksi $2\,\text{mg}$:n hyttysellä on vauhdilla $1\,\text{m/s}$ liike-energia $\tfrac12 \cdot 2 \cdot 10^{-6}\,\text{kg} \cdot (1\,\text{m/s})^2 = 1 \cdot 10^{-6}\,\text{J}$. Yhdelle protonille energia on valtava. Kokeillaan laskea vauhti klassisesta liike-energiasta $\tfrac12 mv^2$ protonin massalla $1{,}673 \cdot 10^{-27}\,\text{kg}$. Silloin saadaan $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 1{,}0894 \cdot 10^{-6}\,\text{J}}{1{,}673 \cdot 10^{-27}\,\text{kg}}} \\
+&\approx 3{,}6 \cdot 10^{10}\,\text{m/s}
+\end{aligned}
+$$ Tämä on noin $120$ kertaa valon nopeus. Tulos on mahdoton ja ristiriidassa a-kohdan kanssa. Klassinen liike-energian lauseke ei siis päde näin suurilla energioilla. Energia kasvaa, vaikka vauhti pysyy alle valon nopeuden.
+
+### c)
+**Annettu:** yhdessä suihkussa noin $2500$ kimppua ja kimpussa $1{,}6 \cdot 10^{11}$ protonia (aineisto, tarkistettu 16.11.2026); yhden protonin energia $E_1 = 1{,}0894 \cdot 10^{-6}\,\text{J}$ (b-kohta)
+**Kysytty:** yhteen protonisuihkuun varastoitunut energia $E$
+**Periaate:** Suihkun energia on sen protonien energioiden summa. Kaikilla protoneilla on sama energia. Siksi summa on protonien lukumäärä $N$ kertaa yhden protonin energia. Renkaassa on kaksi suihkua. Tässä lasketaan yhden suihkun energia.
+**Kaava:** $E = NE_1$, missä $N$ on kimppujen määrä kertaa protonien määrä kimpussa
+**Muunnokset:** $1\,\text{MJ} = 10^6\,\text{J}$
+**Sijoitus:** $N = 2500 \cdot 1{,}6 \cdot 10^{11}$ eli $N = 4{,}0 \cdot 10^{14}$, joten $$
+\begin{aligned}
+E &= 4{,}0 \cdot 10^{14} \cdot 1{,}0894 \cdot 10^{-6}\,\text{J} \\
+&= 4{,}357 \cdot 10^{8}\,\text{J} \\
+&= 435{,}7\,\text{MJ}
+\end{aligned}
+$$
+**Vastaus:** Yhteen protonisuihkuun on varastoitunut energia $E \approx 4{,}4 \cdot 10^8\,\text{J} = 4{,}4 \cdot 10^2\,\text{MJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten energiassa $6{,}8\,\text{TeV}$ ja protonien määrässä $1{,}6 \cdot 10^{11}$.
+**Järkevyys:** Suuruusluokka: protoneja on $4 \cdot 10^{14}$, ja jokaisella on noin $10^{-6}\,\text{J}$. Yhteensä tulee $4 \cdot 10^{8}\,\text{J}$. Protonien yhteinen massa on vain $4{,}0 \cdot 10^{14} \cdot 1{,}673 \cdot 10^{-27}\,\text{kg} \approx 6{,}7 \cdot 10^{-13}\,\text{kg}$ eli alle nanogramman. Suuri energia johtuu siis protonien energiasta eikä aineen määrästä.
+
+### d)
+**Annettu:** auton massa $m = 1500\,\text{kg}$ ja nopeus $v = 100\,\text{km/h}$; yhden suihkun energia $E = 4{,}357 \cdot 10^8\,\text{J}$ (c-kohta)
+**Kysytty:** auton liike-energia $E_\text{k}$ ja suhde $\tfrac{E}{E_\text{k}}$ eli kuinka monen auton liike-energiaa suihkun energia vastaa
+**Periaate:** Etenevän kappaleen liike-energia on $\tfrac12 mv^2$ (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*). Auton vauhti on häviävän pieni valon nopeuteen verrattuna. Siksi klassinen lauseke sopii autolle, toisin kuin protonille b-kohdassa.
+**Kaava:** $E_\text{k} = \tfrac12 mv^2$, ja autojen lukumäärä on suhde $\dfrac{E}{E_\text{k}}$
+**Muunnokset:** $v = 100\,\text{km/h} = \dfrac{100 \cdot 1000\,\text{m}}{3600\,\text{s}} = 27{,}778\,\text{m/s}$
+**Sijoitus:** $$
+\begin{aligned}
+E_\text{k} &= \tfrac12 \cdot 1500\,\text{kg} \cdot (27{,}778\,\text{m/s})^2 \\
+&= 5{,}787 \cdot 10^{5}\,\text{J} \\
+&= 0{,}5787\,\text{MJ}
+\end{aligned}
+$$ ja $\dfrac{E}{E_\text{k}} = \dfrac{4{,}357 \cdot 10^{8}\,\text{J}}{5{,}787 \cdot 10^{5}\,\text{J}} = 753$
+**Vastaus:** Auton liike-energia on $E_\text{k} \approx 0{,}579\,\text{MJ}$. Siinä on kolme merkitsevää numeroa, kuten nopeudessa $100\,\text{km/h}$. Yhden protonisuihkun energia vastaa noin $750$ tällaisen auton liike-energiaa. Siinä on kaksi merkitsevää numeroa, kuten suihkun energiassa.
+**Järkevyys:** Yksiköt: $\text{kg} \cdot \left(\tfrac{\text{m}}{\text{s}}\right)^2 = \text{N} \cdot \text{m} = \text{J}$. Maantienopeudella kulkevan auton liike-energia on puolen megajoulen luokkaa. Satojen megajoulien suihku vastaa siis satoja autoja. Näin suuri energia on alle nanogrammassa ainetta. Se selittää, miksi suihkua on ohjattava tarkasti. Jos suihku osuisi laitteen rakenteisiin, energia muuttuisi hetkessä niiden sisäenergiaksi.
+
+### e)
+**Kysytty:** magneettikenttien ja suprajohtavuuden merkitys LHC:n toiminnassa
+**Periaate:** Magneettikentässä liikkuvaan varattuun hiukkaseen kohdistuu magneettinen voima. Voima on kohtisuorassa hiukkasen nopeutta vastaan (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*). Voima, joka on kohtisuorassa liikesuuntaa vastaan, ei tee työtä. Käämin magneettivuon tiheys on verrannollinen käämin virtaan (luku *Virtajohtimen ja käämin magneettikenttä*). Johtimessa, jonka resistanssi on $R$, sähköenergiaa muuttuu sisäenergiaksi teholla $P = RI^2$ (luku *Sähköteho ja vastuksen lämpeneminen*).
+**Mallivastaus:** Aineiston mukaan (tarkistettu 16.11.2026) LHC:n $1232$ dipolimagneettia taivuttavat suihkujen rataa ja $392$ kvadrupolimagneettia kohdistavat suihkuja. Magneetit jäähdytetään supranesteisellä heliumilla lämpötilaan $1{,}9\,\text{K}$. Protonit kiihdytetään kiihdytysonteloissa. Magneettinen voima on kohtisuorassa protonin nopeutta vastaan. Siksi se muuttaa vain nopeuden suuntaa. Protoni pyrkii kulkemaan suoraan, mutta dipolimagneettien kentässä sen rata kaartuu ympyrän kaareksi. Näin protoni pysyy renkaassa. Kvadrupolimagneettien kenttä ohjaa reunoille ajautuvia protoneja takaisin kohti suihkun keskustaa. Siksi suihku pysyy kapeana. Magneettinen voima on kohtisuorassa liikesuuntaa vastaan, joten se ei tee työtä. Siksi magneettikenttä ei lisää protonin energiaa. Energia tulee kiihdytysonteloiden sähkökentästä. Sähkökenttä kohdistaa protoniin liikkeen suuntaisen voiman ja tekee työtä jokaisella kierroksella. Mitä suurempi protonin energia on, sitä vahvempi kenttä tarvitaan pitämään se samalla radalla. Vahva kenttä vaatii käämiin hyvin suuren virran. Tavallisessa johtimessa sähköenergiaa muuttuisi sisäenergiaksi teholla $P = RI^2$. Teho kasvaa virran neliössä. Käämit kuumenisivat, ja sisäenergia olisi siirrettävä jatkuvasti pois jäähdyttämällä. Lämpötilassa $1{,}9\,\text{K}$ käämien johdin on suprajohtavassa tilassa. Silloin sen resistanssi on nolla. Siksi $RI^2 = 0$, ja suuri virta kulkee käämissä ilman häviötehoa. Suprajohtavuus tekee siis vahvat kentät mahdollisiksi. Sen hinta on jäähdytys lähelle absoluuttista nollapistettä. Radan sädettä ei voi laskea tällä kurssilla käytetystä lausekkeesta $r = \tfrac{mv}{qB}$ protonin massalla. Protonit kulkevat lähes valon nopeudella, eikä klassinen mekaniikka päde niille (b-kohta).
+
+### Yleisiä virheitä
+- a-kohdassa päätellään, että protonit kulkevat täsmälleen valon nopeudella tai sitä nopeammin. Toinen virhe: lasketusta $12\,\text{km/s}$:n erosta tehdään tarkka tulos, vaikka aineiston luvut on pyöristetty.
+- b-kohdassa etuliite tera unohdetaan tai korvataan megalla, tai jaetaan luvulla $1{,}602 \cdot 10^{-19}$.
+- c-kohdassa lasketaan vain yhden kimpun energia tai molempien suihkujen energia, noin $870\,\text{MJ}$. Kysytään kuitenkin yhden suihkun energiaa.
+- d-kohdassa nopeutta ei muunneta yksikköön $\text{m/s}$. Silloin liike-energiaksi tulee $7{,}5\,\text{MJ}$ ja autoja vain $58$.
+- e-kohdassa sanotaan, että magneettikenttä kiihdyttää protoneja tai antaa niille energiaa. Toinen virhe: sanotaan, että suprajohde itsessään synnyttää kentän ilman virtaa.
+
+### Hyväksytään myös
+- a-kohdassa vertailu arvoon $c = 3{,}00 \cdot 10^8\,\text{m/s}$, kun todetaan, että luvut eivät riitä erottamaan vauhtia valon nopeudesta ja että protoni, jolla on massa, jää sen alle.
+- b-kohdassa vastaus $1{,}1\,\mu\text{J}$.
+- c-kohdassa lasku b-kohdan pyöristetyllä arvolla $1{,}1 \cdot 10^{-6}\,\text{J}$. Se antaa saman tuloksen $4{,}4 \cdot 10^8\,\text{J}$.
+- d-kohdassa lasku pyöristetyillä välituloksilla, $\tfrac{4{,}4 \cdot 10^8\,\text{J}}{5{,}79 \cdot 10^5\,\text{J}} \approx 760$ autoa.

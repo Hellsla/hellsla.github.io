@@ -348,7 +348,7 @@ Energiaketjussa on kolme peräkkäistä vaihetta, joiden hyötysuhteet ovat $\et
 ---
 Koko ketjun hyötysuhde on hyötysuhteen määritelmän mukaan $\eta = \tfrac{P_\text{a}}{P_\text{o}}$, missä $P_\text{o}$ on ensimmäisen vaiheen ottama teho ja $P_\text{a}$ viimeisen vaiheen antama hyötyteho. Merkitään vaiheiden antamia tehoja $P_1$, $P_2$ ja $P_3 = P_\text{a}$. Hyötysuhteesta saadaan kunkin vaiheen antama teho sen ottamasta tehosta, ja vaiheen ottama teho on edellisen vaiheen antama teho:
 
-$$P_1 = \eta_1 P_\text{o}, \quad P_2 = \eta_2 P_1, \quad P_3 = \eta_3 P_2$$
+$$\begin{aligned} P_1 &= \eta_1 P_\text{o} \\ P_2 &= \eta_2 P_1 \\ P_3 &= \eta_3 P_2 \end{aligned}$$
 
 Sijoitetaan tehot peräkkäin:
 

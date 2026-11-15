@@ -495,3 +495,109 @@ $$, $\Delta p_\text{m} = \dfrac{792{,}7\,\text{N}}{0{,}30 \cdot 0{,}070\,69\,\te
 
 ### Hyväksytään myös
 - a- ja b-kohdan voimakuvioon voi piirtää myös laikan reunan tukivoiman. Vastauksen on silloin kerrottava, että tukivoima on pienimmällä alipaineella nolla (a) tai yhtä suuri kuin paine-eron voima (b).
+
+## fy9-kaasut-s7
+
+### a)
+**Annettu:** aineiston taulukosta ”OL3 tekniset tiedot” (arvot 16.11.2026): reaktorin lämpöteho $P_1 = 4300\,\text{MW}$ ja nettosähköteho $P_\text{s} \approx 1600\,\text{MW}$
+**Kysytty:** laitoksen hyötysuhde $\eta$
+**Periaate:** Ydinvoimalaitos on lämpövoimakone. Se ottaa reaktorista lämmön $Q_1$ ja tekee työn $W$. Työ saadaan generaattorista sähköenergiana. Hyötysuhde on työn osuus otetusta lämmöstä (luku *Kaasun tekemä työ ja lämpövoimakone*). Samassa ajassa $t$ on $W = P_\text{s} t$ ja $Q_1 = P_1 t$. Siksi hyötysuhteen voi laskea tehoista (luku *Energiantuotanto ja voimalaitosten hyötysuhde*).
+**Kaava:** $\eta = \dfrac{W}{Q_1} = \dfrac{P_\text{s} t}{P_1 t} = \dfrac{P_\text{s}}{P_1}$
+**Muunnokset:** Muunnoksia ei tarvita, koska molemmat tehot ovat megawatteina.
+**Sijoitus:** $\eta = \dfrac{1600\,\text{MW}}{4300\,\text{MW}} = 0{,}372$
+**Vastaus:** $\eta \approx 37\,\%$. Vastauksessa on kaksi merkitsevää numeroa. Syy on se, että aineisto antaa sähkötehon likiarvona ”n. $1600\,\text{MW}$” eli sadan megawatin tarkkuudella.
+**Järkevyys:** Tulos on sama kuin taulukon rivillä *Kokonaishyötysuhde*, ”n. $37\,\%$”. Tulos on samaa suuruusluokkaa eli suunnilleen yhtä suuri kuin muidenkin höyryvoimalaitosten hyötysuhde, noin $40\,\%$.
+
+### b)
+**Annettu:** $P_1 = 4300\,\text{MW}$, $P_\text{s} \approx 1600\,\text{MW}$, aika $t = 1\,\text{d}$
+**Kysytty:** ympäristöön siirtyvä lämpöteho $P_2$ ja energia $Q_2$, joka siirtyy lämpönä vuorokaudessa
+**Periaate:** Energia säilyy. Laitos toimii tasaisesti nimellistehollaan, joten sen sisäenergia ei muutu. Siksi laitoksesta lähtee energiaa samalla teholla kuin reaktori sitä vapauttaa. Lähtevä teho on sähköteho ja ympäristöön siirtyvä lämpöteho yhteensä (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Teho on energia aikaa kohti.
+**Kaava:** $P_1 = P_\text{s} + P_2$, joten $P_2 = P_1 - P_\text{s}$. Tehon määritelmästä $P_2 = \dfrac{Q_2}{t}$ saadaan $Q_2 = P_2 t$.
+**Muunnokset:** $t = 1\,\text{d} = 24\,\text{h}$ ja jouleja varten $t = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$; $2700\,\text{MW} = 2{,}7 \cdot 10^{9}\,\text{W}$ ja $1\,\text{GWh} = 1000\,\text{MWh}$
+**Sijoitus:** $P_2 = 4300\,\text{MW} - 1600\,\text{MW} = 2700\,\text{MW}$ ja $$
+\begin{aligned}
+Q_2 &= 2700\,\text{MW} \cdot 24\,\text{h} \\
+&= 64\,800\,\text{MWh} \\
+&= 64{,}8\,\text{GWh}
+\end{aligned}
+$$ Jouleina $$
+\begin{aligned}
+Q_2 &= 2{,}7 \cdot 10^{9}\,\text{W} \cdot 86\,400\,\text{s} \\
+&= 2{,}333 \cdot 10^{14}\,\text{J}
+\end{aligned}
+$$
+**Vastaus:** $P_2 \approx 2700\,\text{MW} = 2{,}7\,\text{GW}$ ja $Q_2 \approx 65\,\text{GWh} \approx 2{,}3 \cdot 10^{14}\,\text{J}$. Vastauksissa on kaksi merkitsevää numeroa. Sähköteho on annettu sadan megawatin tarkkuudella, joten myös erotus on samalla tarkkuudella.
+**Järkevyys:** Lämpötehon osuus on $2700 : 4300 \approx 63\,\%$, ja $63\,\% + 37\,\% = 100\,\%$. Sähköenergiaa saadaan vuorokaudessa $$
+\begin{aligned}
+&1600\,\text{MW} \cdot 24\,\text{h} \\
+&= 38{,}4\,\text{GWh}
+\end{aligned}
+$$ ja summa $$
+\begin{aligned}
+&64{,}8\,\text{GWh} + 38{,}4\,\text{GWh} \\
+&= 103{,}2\,\text{GWh}
+\end{aligned}
+$$ on sama kuin energia, jonka reaktori vapauttaa vuorokaudessa, $4300\,\text{MW} \cdot 24\,\text{h}$. Suuruusluokan voi tarkistaa aineistosta. Jos laitos toimisi koko vuoden ($8760\,\text{h}$) nimellisteholla, sähköä tulisi $$
+\begin{aligned}
+&1600\,\text{MW} \cdot 8760\,\text{h} \\
+&\approx 14\,\text{TWh}
+\end{aligned}
+$$ Taulukon vuosituotanto on ”n. $13\,\text{TWh}$”, koska laitos ei toimi koko vuotta täydellä teholla.
+
+### c)
+**Annettu:** meriveteen siirtyvä lämpöteho $P_2 = 2700\,\text{MW}$ (b-kohta); aineistosta (16.11.2026) merivesivirtaus eli sekunnissa virtaavan veden tilavuus $\dfrac{V}{t} = 57\,\tfrac{\text{m}^3}{\text{s}}$; $\rho = 1{,}00 \cdot 10^{3}\,\tfrac{\text{kg}}{\text{m}^3}$ ja $c = 4{,}19\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}}$
+**Kysytty:** meriveden lämpötilan muutos $\Delta T$ lauhduttimessa
+**Periaate:** Meriveden olomuoto ei muutu. Siksi veteen siirtyvä lämpö nostaa veden lämpötilaa yhtälön $Q = cm\Delta T$ mukaan (luku *Aineen lämpeneminen ja jäähtyminen*). Tarkastellaan aikaa $t$. Sinä aikana lauhduttimen läpi virtaa vettä, jonka tilavuus on $V$ ja massa $m = \rho V$. Tähän veteen siirtyy lämpö $Q = P_2 t$. Oletuksen mukaan kaikki luovutettu lämpö siirtyy meriveteen.
+**Kaava:** $$
+\begin{aligned}
+Q &= cm\Delta T \\
+P_2 t &= c\rho V \Delta T \\
+\Delta T &= \dfrac{P_2 t}{c\rho V} = \dfrac{P_2}{c\rho \cdot \dfrac{V}{t}}
+\end{aligned}
+$$
+**Muunnokset:** $P_2 = 2700 \cdot 10^{6}\,\text{W} = 2{,}7 \cdot 10^{9}\,\text{W}$ ja $c = 4{,}19 \cdot 1000\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Sijoitus:** Nimittäjä on $$
+\begin{aligned}
+c\rho \cdot \dfrac{V}{t} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1{,}00 \cdot 10^{3}\,\tfrac{\text{kg}}{\text{m}^3} \\
+&\quad \cdot 57\,\tfrac{\text{m}^3}{\text{s}} \\
+&= 2{,}388 \cdot 10^{8}\,\tfrac{\text{W}}{\text{K}}
+\end{aligned}
+$$ joten $$
+\begin{aligned}
+\Delta T &= \dfrac{2{,}7 \cdot 10^{9}\,\text{W}}{2{,}388 \cdot 10^{8}\,\tfrac{\text{W}}{\text{K}}} \\
+&= 11{,}3\,\text{K}
+\end{aligned}
+$$
+**Vastaus:** $\Delta T \approx 11\,\text{K}$ eli merivesi lämpenee noin $11\,{}^\circ\text{C}$. Vastauksessa on kaksi merkitsevää numeroa, kuten lämpötehossa ja merivesivirtauksessa $57\,\tfrac{\text{m}^3}{\text{s}}$. Todellinen lämpeneminen on hieman pienempi. Pieni osa lämmöstä siirtyy nimittäin ympäristöön muuta kautta kuin lauhduttimessa. Tulos on siis yläraja-arvio eli suurin mahdollinen arvo. Meriveden suola muuttaa tulosta vain vähän. Suolaisen veden tiheys on hieman suurempi ja ominaislämpökapasiteetti hieman pienempi kuin puhtaan veden.
+**Järkevyys:** Yksikkö on oikea, sillä $\text{W} : \tfrac{\text{W}}{\text{K}} = \text{K}$. Sekunnissa virtaa $57\,000\,\text{kg}$ vettä. Siksi yhtä kilogrammaa kohti siirtyy $$
+\begin{aligned}
+&2{,}7 \cdot 10^{9}\,\text{J} : 57\,000\,\text{kg} \\
+&\approx 47\,\text{kJ}
+\end{aligned}
+$$ ja $47\,\text{kJ} : 4{,}19\,\text{kJ/K} \approx 11\,\text{K}$. Noin kymmenen asteen lämpeneminen on uskottava. Merivesi, jonka lämpötila on $10\,{}^\circ\text{C}$, palaa mereen noin $21\,{}^\circ\text{C}$:n lämpöisenä. Vesi on selvästi lämpimämpää, mutta ei kuumaa.
+
+### d)
+**Kysytty:** miksi kaikkea reaktorin lämpöä ei voi muuttaa sähköenergiaksi
+**Periaate:** Lämpövoimakone ottaa kuumasta lähteestä lämmön $Q_1$, tekee työn $W$ ja luovuttaa lämmön $Q_2$ kylmempään ympäristöön. Energia säilyy, joten $W = Q_1 - Q_2$. Mitä pienempi lämpötilaero $T_1 - T_2$ on verrattuna kuuman lähteen lämpötilaan $T_1$, sitä pienemmän osan lämmöstä kone voi muuttaa työksi (luku *Kaasun tekemä työ ja lämpövoimakone*).
+**Mallivastaus:** Ydinvoimalaitos on lämpövoimakone. Reaktorin lämmöllä tehdään höyryä. Höyryn lämpötila on aineiston mukaan (16.11.2026) $290\,{}^\circ\text{C}$. Höyry tekee työtä turbiinissa, ja generaattori muuttaa työn sähköenergiaksi. Höyry tekee työtä vain, kun se laajenee turbiinin läpi kohti pienempää painetta ja lämpötilaa. Siksi höyryn on turbiinin jälkeen luovutettava lämpöä kylmempään. Lauhduttimessa lämpö $Q_2$ siirtyy meriveteen, jonka lämpötila on noin $10\,{}^\circ\text{C}$. Lämpö siirtyy itsestään vain kuumemmasta kylmempään. Lämpöä $Q_2$ ei voi palauttaa kuumaan höyryyn, jos ei tehdä työtä. Työksi saadaan siis enintään $W = Q_1 - Q_2$, ja $Q_2$ on aina suurempi kuin nolla. Kitkan ja muiden häviöiden poistaminen ei muuta tätä. $Q_2$ ei ole häviö, vaan se on ehto sille, että kone toimii.
+
+Lämpötilat kertovat, miksi $Q_2$ on suuri. Kelvineinä höyryn lämpötila on $T_1 = (290 + 273)\,\text{K} = 563\,\text{K}$ ja meriveden lämpötila $T_2 \approx 283\,\text{K}$. Lämpötilaero $280\,\text{K}$ on vain noin puolet kuuman lähteen lämpötilasta. Siksi suuri osa lämmöstä on luovutettava mereen. Todellisessa laitoksessa on myös kitkaa ja virtaushäviöitä, ja laitos kuluttaa itse sähköä. Ne pienentävät sähkön osuutta vielä lisää, $37\,\%$:iin. Hyötysuhde paranisi, jos höyry olisi kuumempaa. Painevesireaktorissa höyryn lämpötilaa rajoittavat kuitenkin veden paine ja materiaalien kestävyys.
+
+### e)
+**Kysytty:** miten mereen siirtyvä lämpö vaikuttaa ympäristöön, ja mitkä syyt rajoittavat lämmön hyödyntämistä
+**Periaate:** Lämpönä siirtyvä energia kasvattaa vastaanottavan aineen sisäenergiaa, ja silloin aineen lämpötila nousee (luku *Sisäenergia, lämpömäärä ja energian säilyminen*). Lämpö siirtyy itsestään vain kuumemmasta kylmempään. Lämpövoimakoneen työ pienenee, kun koneen kylmän puolen lämpötila nousee (luku *Kaasun tekemä työ ja lämpövoimakone*).
+**Mallivastaus:** Mereen siirtyy lämpöä teholla $2700\,\text{MW}$. Vuorokaudessa se on noin $65\,\text{GWh}$. Energia ei katoa, vaan se kasvattaa meriveden sisäenergiaa. Jäähdytysvesi palaa mereen noin $11\,\text{K}$ lämpimämpänä ja sekoittuu ympäröivään veteen. Siksi meri lämpenee selvästi vain purkupaikan lähellä. Siellä meri voi pysyä talvella sulana, jää on heikkoa ja kasvukausi pitenee. Lämpimämpi vesi muuttaa eliöiden elinoloja. Osa lajeista hyötyy ja osa kärsii, ja levien kasvu voi lisääntyä. Koko merialueen lämpötilaan vaikutus on pieni. Lämpö leviää suureen vesimäärään ja siirtyy siitä edelleen ilmaan.
+
+Lämpöä on paljon, mutta se on matalassa lämpötilassa. Jäähdytysvesi on vain noin $11\,\text{K}$ merta lämpimämpää, eli sen lämpötila on noin $20\,{}^\circ\text{C}$. Lämpö siirtyy itsestään vain kylmempään. Siksi tällä vedellä ei voi lämmittää kaukolämpöverkon vettä. Kaukolämpöverkon veden on oltava selvästi kuumempaa, jotta se lämmittää rakennuksia ja käyttövettä. Jos lämpö otettaisiin talteen kuumempana, höyry pitäisi ottaa turbiinista aikaisemmin. Silloin lämpövoimakoneen kylmän puolen lämpötila nousisi ja lämpötilaero pienenisi. Laitos tuottaisi vähemmän sähköä. Lisäksi suuret lämmön käyttäjät ovat kaukana laitoksesta. Pitkä siirtoputki on kallis, ja matkalla osa lämmöstä siirtyy ympäristöön. Siksi suurin osa lämmöstä johdetaan mereen, vaikka energiaa on paljon.
+
+### Yleisiä virheitä
+- a-kohdassa hyötysuhde lasketaan väärin päin, $4300 : 1600$. Toinen virhe on jakaa sähköteho mereen siirtyvällä lämpöteholla $2700\,\text{MW}$.
+- b-kohdassa megawattitunnit muutetaan jouleiksi kertomalla vain luvulla $3600$, ja kerroin $10^{6}$ unohtuu. Toinen virhe on sijoittaa vuorokaudeksi $24\,\text{s}$.
+- c-kohdassa lämpötilan muutos lasketaan koko lämpötehosta $4300\,\text{MW}$, jolloin tulokseksi tulee $18\,\text{K}$. Toinen virhe on jättää kilojoulet muuntamatta jouleiksi.
+- d-kohdassa vastataan, että sähköä ei saada enempää ”kitkan ja häviöiden takia”. Myös häviötön lämpövoimakone luovuttaa lämpöä kylmempään.
+- e-kohdassa kirjoitetaan, että energia ”katoaa mereen” tai ”muuttuu lämmöksi”. Oikea ilmaus on, että energia siirtyy mereen lämpönä ja kasvattaa meriveden sisäenergiaa.
+
+### Hyväksytään myös
+- b-kohdassa energian voi antaa megawattitunteina, gigawattitunteina tai jouleina.
+- c-kohdassa voi tarkastella yhtä sekuntia: $57\,\text{m}^3$ vettä eli $57\,000\,\text{kg}$ saa lämmön $2{,}7 \cdot 10^{9}\,\text{J}$, ja $\Delta T = \dfrac{Q}{cm} \approx 11\,\text{K}$.
+- c-kohdassa lämpenemisen voi ilmoittaa kelvineinä tai celsiusasteina, koska lämpötilan muutos on molemmissa sama luku.

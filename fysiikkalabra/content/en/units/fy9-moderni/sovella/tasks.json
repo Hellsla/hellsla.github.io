@@ -1,5 +1,5 @@
 {
-  "intro": "Six matriculation-exam-style problems bring together the photons, atoms, nuclei and radiation of the lesson. Solve them as in the exam: name the phenomenon and the model and justify why the model fits the situation, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready.",
+  "intro": "Seven matriculation-exam-style problems bring together the photons, atoms, nuclei and radiation of the lesson. Solve them as in the exam: name the phenomenon and the model and justify why the model fits the situation, solve for the quantity asked before substituting numbers, and assess whether the result is reasonable. Open the model answer and the marking scheme only when your solution is ready. The last problem is an applied source-based problem; its source opens from the link in the problem.",
   "tasks": [
     {
       "id": "fy9-moderni-s1",
@@ -811,6 +811,161 @@
         "math": "fy8-11",
         "concept": "fy8-10",
         "transfer": "fy3-15"
+      }
+    },
+    {
+      "id": "fy9-moderni-s7",
+      "title": "Did the fusion reactor produce more energy than it used?",
+      "source": "statistics",
+      "source_note": "Yle News 12 Dec 2022, article on the fusion experiment, in Finnish (https://yle.fi/a/3-12684377). Checked 16 Nov 2026. The energy the laser system took from the electricity grid, about $300\\,\\text{MJ}$, is a figure the laboratory gave in December 2022; it is not in the article.",
+      "skills": [
+        "fy8-11",
+        "fy8-10",
+        "fy3-6",
+        "fy2-4"
+      ],
+      "text": "In December 2022 the news reported a breakthrough in fusion research. Open [the Yle News article on the fusion experiment](https://yle.fi/a/3-12684377) (12 Dec 2022, updated 13 Dec 2022; in Finnish, so use your browser's translation if you need it) and read all of it, including the correction note at the end.\n\nAccording to the source (checked 16 Nov 2026) the two energies of the experiment were $3.15\\,\\text{MJ}$ and $2.05\\,\\text{MJ}$. The article compares the larger energy with bringing a few pots of water to the boil.\n\n- specific heat capacity of water $4.19\\,\\tfrac{\\text{kJ}}{\\text{kg}\\cdot\\text{K}}$\n- According to the laboratory, the laser system took about $300\\,\\text{MJ}$ from the electricity grid for the shot. This figure is not in the article.\n- a thermal power plant turns about a third of the energy it receives as heat into electricity",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 2,
+          "text": "Find out from the source how the fusion reaction was produced. Which of the two energies in the source was released in the fusion reaction, and what does the other energy mean?",
+          "criteria": [
+            {
+              "text": "Tells from the source that the beams of huge lasers were focused on the point where the fuel was, and that in fusion nuclei join into heavier nuclei: helium forms and energy is released.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Interprets the energies: $3.15\\,\\text{MJ}$ was released in the fusion reaction, and $2.05\\,\\text{MJ}$ is the energy the lasers delivered to the fuel, which does not include the energy used to run the lasers.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Calculate the ratio and the difference of the energies. What do they tell about the result of the experiment?",
+          "answer": [
+            {
+              "name": "ratio",
+              "value": 1.537,
+              "unit": "",
+              "tolerance": 0.02
+            },
+            {
+              "name": "diff",
+              "value": 1.1,
+              "unit": "MJ",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\dfrac{E_\\text{f}}{E_\\text{l}}$ and $\\Delta E = E_\\text{f} - E_\\text{l}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\dfrac{3.15\\,\\text{MJ}}{2.05\\,\\text{MJ}} \\approx 1.54$ and $3.15\\,\\text{MJ} - 2.05\\,\\text{MJ} = 1.10\\,\\text{MJ}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Fusion released about $1.5$ times the energy, that is $1.10\\,\\text{MJ}$ more than the lasers delivered to the fuel. The ratio is greater than $1$, which was the new result of the experiment."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Check the article's comparison by calculation. How much water does the energy $3.15\\,\\text{MJ}$ heat from $20\\,{}^\\circ\\text{C}$ to the boiling point $100\\,{}^\\circ\\text{C}$? Does the comparison hold?",
+          "answer": {
+            "value": 9.4,
+            "unit": "kg",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Q = c_\\text{v}m\\Delta T$, so $m = \\dfrac{Q}{c_\\text{v}\\Delta T}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nm &= \\dfrac{3.15 \\cdot 10^{6}\\,\\text{J}}{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 80\\,\\text{K}} \\\\\n&\\approx 9.40\\,\\text{kg}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "about $9.4\\,\\text{kg}$, that is about $9.4$ litres"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The comparison holds: about $9$ litres is a few pots, for example three pots of three litres."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Explain why the result does not show that the whole experimental facility produced more energy than it used. Use the source and the electrical energy reported by the laboratory to justify your answer.",
+          "criteria": [
+            {
+              "text": "Sets the system boundary: the comparison $3.15\\,\\text{MJ} > 2.05\\,\\text{MJ}$ concerns only the fuel. According to the source, the energy used to run the lasers is not included in the figure.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\dfrac{3.15\\,\\text{MJ}}{300\\,\\text{MJ}} \\approx 0.01$: fusion released about $1\\,\\%$ of the energy the facility took from the electricity grid."
+            },
+            {
+              "text": "States that the released energy was not turned into electricity. With the efficiency of a thermal power plant it would give about $1\\,\\text{MJ}$ of electricity, less than half a per cent of the energy taken from the grid.",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "Another online outlet could give the same experiment this headline: “A fusion power plant already produces more energy than it uses.” The headline is invented for this problem. What should be made more precise in it? Use the article's own correction note as an example. Explain also why the result of the experiment does not violate conservation of energy.",
+          "criteria": [
+            {
+              "text": "Makes precise that this is a single laboratory experiment and not a power plant: no electricity was produced, and according to the source a fusion power plant connected to the grid is still decades away.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Makes precise that “more than it uses” holds only for the energy balance of the fuel, and connects this to the article's correction note: the headline and the text were changed so that the reader does not think the lasers' energy is included in the figure.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Explains that energy is conserved: the extra energy corresponds to the decrease in the mass of the nuclei in fusion, $E = \\Delta m c^2$, and does not come from nothing.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy8-11",
+        "math": "fy3-6",
+        "transfer": "fy3-15",
+        "communication": "fy8-11"
       }
     }
   ]

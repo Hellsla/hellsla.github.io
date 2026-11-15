@@ -392,3 +392,69 @@ $$ and $4300\,\text{MW} = 4300 \cdot 10^{6}\,\text{W}$
 - In part b, $\Delta m$ is taken as the mass, that is it is claimed that all the fuel turns into energy, or $\Delta m$ is calculated from the electrical power instead of the thermal power.
 - In part c, the whole thermal power $4300\,\text{MW}$ or the electric power $1600\,\text{MW}$ is taken as the power going to the seawater.
 - In part d, the efficiency is multiplied by instead of divided by, which gives $6.25$ times too little coal, or the kilograms are not converted into tonnes.
+
+## fy9-moderni-s7
+
+### a)
+**Find:** how the fusion reaction was produced and what the two energies in the source mean
+**Principle:** In fusion light nuclei join into a heavier nucleus, and energy is released. Nuclei are positively charged and repel each other, so they can join only in very hot and dense matter (chapter *Fission, fusion and nuclear power*).
+**Model answer:** According to the source (Yle News 12 Dec 2022, checked 16 Nov 2026) the experiment was done at Lawrence Livermore National Laboratory in California. The beams of huge lasers were focused on one point, where the fuel was. The energy delivered by the lasers heated the fuel so that its nuclei joined into heavier nuclei: helium formed, and energy was released. Of the energies, $3.15\,\text{MJ}$ is the energy released in the fusion reaction. $2.05\,\text{MJ}$ is the energy used in the experiment to start the reaction, that is the energy the lasers delivered to the fuel. According to the article's correction note it does not include the energy used to run the lasers.
+
+### b)
+**Given:** energy released in fusion $E_\text{f} = 3.15\,\text{MJ}$, energy the lasers delivered to the fuel $E_\text{l} = 2.05\,\text{MJ}$ (source, checked 16 Nov 2026)
+**Find:** the ratio $\tfrac{E_\text{f}}{E_\text{l}}$ and the difference $\Delta E$ of the energies, and what they mean
+**Principle:** The ratio tells how many times the delivered energy the released energy is. The difference tells how much more energy was released from the fuel than was delivered to it. Both concern the same system, the fuel.
+**Formula:** $\dfrac{E_\text{f}}{E_\text{l}}$ and $\Delta E = E_\text{f} - E_\text{l}$
+**Conversions:** None are needed, because both energies are in megajoules.
+**Substitution:** $\dfrac{E_\text{f}}{E_\text{l}} = \dfrac{3.15\,\text{MJ}}{2.05\,\text{MJ}} = 1.537$ and $\Delta E = 3.15\,\text{MJ} - 2.05\,\text{MJ} = 1.10\,\text{MJ}$
+**Answer:** The ratio of the energies is about $1.54$ and the difference $1.10\,\text{MJ}$, three significant figures like the energies in the source. So fusion released about one and a half times the energy, $1.10\,\text{MJ}$ more than the lasers delivered to the fuel. The ratio is greater than $1$, and exactly that was the new result of the experiment.
+**Reasonableness:** The difference $1.10\,\text{MJ}$ is about $54\,\%$ of the energy $2.05\,\text{MJ}$, which matches the ratio $1.54$. The ratio has no unit, because the megajoules cancel.
+
+### c)
+**Given:** heat $Q = 3.15\,\text{MJ}$, initial temperature $20\,{}^\circ\text{C}$, final temperature $100\,{}^\circ\text{C}$, specific heat capacity of water $c_\text{v} = 4.19\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}}$
+**Find:** the mass of the water $m$ and whether the article's comparison holds
+**Principle:** When water warms up and its state does not change, the heat it receives is $Q = c_\text{v}m\Delta T$ (chapter *Heating and cooling of matter*). Assume that all the energy goes to the water. Bringing water to the boil means heating it to the boiling point, so vaporisation is not included.
+**Formula:** $Q = c_\text{v}m\Delta T$, so $m = \dfrac{Q}{c_\text{v}\Delta T}$
+**Conversions:** $3.15\,\text{MJ} = 3.15 \cdot 10^{6}\,\text{J}$, $4.19\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,{}^\circ\text{C} = 80\,\text{K}$
+**Substitution:** $$
+\begin{aligned}
+m &= \dfrac{3.15 \cdot 10^{6}\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 80\,\text{K}} \\
+&= \dfrac{3.15 \cdot 10^{6}\,\text{J}}{335\,200\,\tfrac{\text{J}}{\text{kg}}} \\
+&= 9.397\,\text{kg}
+\end{aligned}
+$$
+**Answer:** The energy heats about $9.4\,\text{kg}$, that is about $9.4$ litres, of water to the boiling point. The answer is given to two significant figures, because the initial temperature of the water is an estimate. The article's comparison holds: the amount is a few pots, for example three pots of three litres.
+**Reasonableness:** Heating one litre takes $335\,200\,\text{J} \approx 0.34\,\text{MJ}$, so $3.15\,\text{MJ}$ is enough for about nine litres. The energy of the experiment is small on an everyday scale, although the result was scientifically significant.
+
+### d)
+**Find:** why the result does not show that the whole experimental facility produced more energy than it used
+**Principle:** An energy balance depends on how the system is bounded (chapter *Thermodynamic system, state variables and temperature*). The efficiency of a device is the ratio of the useful energy to the energy the device takes in (chapter *Efficiency*). A thermal power plant turns only a part of the energy it receives as heat into electricity (chapter *Energy production and the efficiency of power plants*).
+**Model answer:** The comparison $3.15\,\text{MJ} > 2.05\,\text{MJ}$ concerns only the fuel: more energy was released from it than the lasers delivered to it. According to the source, the figure $2.05\,\text{MJ}$ does not include the energy used to run the lasers. When the system is taken to be the whole experimental facility, the energy it takes in is the electrical energy from the grid, $E_\text{g} \approx 300\,\text{MJ}$. Then $$
+\begin{aligned}
+\dfrac{E_\text{f}}{E_\text{g}} &= \dfrac{3.15\,\text{MJ}}{300\,\text{MJ}} \\
+&= 0.0105 \approx 1\,\%
+\end{aligned}
+$$ So fusion released only about a hundredth of the energy the facility took from the grid. Of the energy the lasers took in, only $\dfrac{2.05\,\text{MJ}}{300\,\text{MJ}} \approx 0.7\,\%$ ended up in the fuel. The rest increased the internal energy of the facility and its surroundings. In addition, the released energy was not turned into electricity. If it were captured as heat and a thermal power plant turned a third of it into electricity, the electricity would be about $\tfrac{1}{3} \cdot 3.15\,\text{MJ} = 1.05\,\text{MJ}$. That is about $0.35\,\%$, less than half a per cent, of the energy taken from the grid. So the whole facility used about a hundred times more energy than fusion released. In a power plant the electrical energy obtained from fusion would have to be clearly greater than the electrical energy the facility takes in, and the shots would have to be repeated continuously.
+
+### e)
+**Find:** what should be made more precise in the invented headline and why the result does not violate conservation of energy
+**Principle:** Energy is conserved: it is not created from nothing and it does not disappear (chapter *Forms of energy and conservation of energy*). The energy released in a nuclear reaction corresponds to a decrease in mass, $E = \Delta m c^2$ (chapters *Mass defect and nuclear binding energy* and *Fission, fusion and nuclear power*). When a claim is assessed, one checks which system and which energies it concerns.
+**Model answer:** Three things in the headline need to be made more precise. First, this is not a power plant but a single laboratory experiment. No electricity was produced at all, and according to the source a fusion power plant connected to the grid is still decades away. Second, “more than it uses” holds only for the energy balance of the fuel: $3.15\,\text{MJ}$ was released from the fuel when the lasers delivered $2.05\,\text{MJ}$ to it. The whole facility used many times more energy than fusion released (part d). Third, the word “already” suggests that the production is continuous, although it was a single shot. The article's own correction note is an example of the same kind of precision: the headline and the text were changed on 13 Dec 2022 so that the reader would not think the lasers' energy is included in the figure $2.05\,\text{MJ}$. A more precise headline would be, for example, “In a fusion experiment the fuel released for the first time more energy than the lasers delivered to it”. The result does not violate conservation of energy. The extra $1.10\,\text{MJ}$ does not come from nothing: the nuclei formed in fusion are more tightly bound than the initial nuclei, so the mass of the reaction products is smaller than that of the reactants. The released energy corresponds to the decrease in mass $$
+\begin{aligned}
+\Delta m &= \dfrac{E_\text{f}}{c^2} \\
+&= \dfrac{3.15 \cdot 10^{6}\,\text{J}}{(2.998 \cdot 10^{8}\,\text{m/s})^2} \\
+&\approx 3.5 \cdot 10^{-11}\,\text{kg}
+\end{aligned}
+$$ That is about $35$ nanograms.
+
+### Yleisiä virheitä
+- In part a, the energies are listed, but it is not said which was released in fusion and which was delivered to the fuel.
+- In part b, the ratio is calculated the wrong way round, $\tfrac{2.05}{3.15} \approx 0.651$, and it is still read as $0.65$ times the energy being released.
+- In part c, the megajoules or kilojoules are not converted into joules, or $100\,\text{K}$ or $373\,\text{K}$ is taken as the change in temperature.
+- In part d, it is only stated that the lasers use energy, but the released energy is not compared with the energy taken from the grid.
+- In part e, it is claimed that fusion “creates” energy, or the headline is rejected as completely false without saying what is true in the result of the experiment.
+
+### Hyväksytään myös
+- In part b, the ratio the other way round, $\tfrac{E_\text{l}}{E_\text{f}} \approx 0.651$, when it is interpreted correctly: the energy delivered to the fuel was about $65\,\%$ of the released energy.
+- In part c, the change in temperature directly in degrees Celsius, $\Delta T = 80\,{}^\circ\text{C}$, because a temperature difference is the same in kelvins and in degrees Celsius.
+- In part c, the answer to three significant figures, $9.40\,\text{kg}$, when the temperatures are read as exact values.
