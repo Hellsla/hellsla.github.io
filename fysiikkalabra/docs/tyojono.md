@@ -261,6 +261,8 @@ normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yks
 
 ## 8l. Taulukoiden otsikoista pois "(esimerkkiaineisto)" (opettaja 2026-11-15)
 
+Varattu: claude/caption-esimerkkiaineisto
+
 Opettaja 2026-11-15: "Voisiko taulukoista ottaa pois tuon (esimerkkiaineisto)". Tehtävien taulukko-otsikoissa (`"caption"`
 `exercises.json`:issa) on merkintä noin 930 kertaa: fi 312, en 292 ("(example data)"), fi-easy 325, kursseilla FY2–FY8.
 Poistetaan vain otsikoista. Jos sulkeissa on muutakin, se jää (esim. "(esimerkkiaineisto, energiat NNDC NuDat 3)" →
