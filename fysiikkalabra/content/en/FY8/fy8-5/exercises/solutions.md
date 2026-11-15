@@ -120,12 +120,9 @@ $$, the energy of the photon is $\tfrac{hc}{\lambda} = \tfrac{1.9865 \cdot 10^{-
 **Given:** filling order $1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$; at most two electrons per orbital; the $3\text{p}$ subshell is half full
 **Asked:** the number of electrons $N$ in the atom
 **Principle:** In the ground state the electrons fill the orbitals starting from the lowest energy, so electrons go to the $3\text{p}$ subshell only when $1\text{s}$, $2\text{s}$, $2\text{p}$ and $3\text{s}$ are full. An s subshell has one orbital and a p subshell three, so they hold $2$ and $6$ electrons. A half-full $3\text{p}$ subshell contains half of its maximum number.
-**Formula:** $$
-\begin{aligned}
-N &= N_\text{1s} + N_\text{2s} + N_\text{2p} + N_\text{3s} \\
+**Formula:** $$\begin{aligned} N &= N_\text{1s} + N_\text{2s} + N_\text{2p} + N_\text{3s} \\
 &+ \dfrac{N_\text{3p,max}}{2}
-\end{aligned}
-$$
+\end{aligned}$$
 **Conversions:** None are needed, because a count is asked.
 **Substitution:** $N = 2 + 2 + 6 + 2 + \dfrac{6}{2} = 2 + 2 + 6 + 2 + 3 = 15$
 **Answer:** $15$ electrons (the element is phosphorus, configuration $1\text{s}^2\,2\text{s}^2\,2\text{p}^6\,3\text{s}^2\,3\text{p}^3$); the result is an exact integer.

@@ -25,7 +25,11 @@ $$
 **Unit conversions:** The mass is not converted to kilograms: $931.5\,\tfrac{\text{MeV}}{c^2}$ is put in place of the unit $\text{u}$, so $c^2$ cancels.
 **Substitution:** $E_\text{B} = 0.137005\,\text{u} \cdot c^2 = 0.137005 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 127.620\,\text{MeV}$
 **Answer:** $127.6\,\text{MeV}$, four significant figures like the conversion factor $931.5\,\tfrac{\text{MeV}}{c^2}$.
-**Reasonableness:** By estimation $0.14 \cdot 900\,\text{MeV} \approx 126\,\text{MeV}$. Per nucleon this is $127.6\,\text{MeV} : 16 \approx 8.0\,\text{MeV}$, which fits the binding energy graph at oxygen-16.
+**Reasonableness:** By estimation $$
+\begin{aligned}
+0.14 \cdot 900\,\text{MeV} &\approx 126\,\text{MeV}
+\end{aligned}
+$$. Per nucleon this is $127.6\,\text{MeV} : 16 \approx 8.0\,\text{MeV}$, which fits the binding energy graph at oxygen-16.
 
 ## fy8-10-L1-03
 **Given:** the binding energy of the uranium-238 nucleus $E_\text{B} = 1801.7\,\text{MeV}$, mass number $A = 238$
@@ -209,7 +213,11 @@ $$, that is, the mass of three electrons. As energy this is $3 \cdot 0.511\,\tex
 &30.46\,\text{MeV} + 1.53\,\text{MeV} \\
 &= 31.99\,\text{MeV}
 \end{aligned}
-$$. Per nucleon the result is $31.99\,\text{MeV} : 6 = 5.332\,\text{MeV}$, which fits the binding energy graph of the lesson at lithium-6.
+$$. Per nucleon the result is $$
+\begin{aligned}
+31.99\,\text{MeV} : 6 &= 5.332\,\text{MeV}
+\end{aligned}
+$$, which fits the binding energy graph of the lesson at lithium-6.
 
 ## fy8-10-L2-07
 **Asked:** why no energy is obtained by combining iron nuclei with each other or by splitting them.
@@ -281,7 +289,14 @@ Q &= 4 \cdot 7.074\,\text{MeV} \\
 \end{aligned}
 $$
 **Answer:** $23.85\,\text{MeV}$, four significant figures like the given binding energies $1.112\,\text{MeV}$ and $7.074\,\text{MeV}$.
-**Reasonableness:** From atomic masses the same result: $(2 \cdot 2.014102\,\text{u} - 4.002603\,\text{u})\,c^2 = 0.025601 \cdot 931.5\,\text{MeV} \approx 23.85\,\text{MeV}$. Energy is released because helium-4 is much higher in the graph than deuterium: this is the source of the energy of fusion.
+**Reasonableness:** From atomic masses the same result: $$
+\begin{aligned}
+&(2 \cdot 2.014102\,\text{u} \\
+&- 4.002603\,\text{u})\,c^2 \\
+&= 0.025601 \cdot 931.5\,\text{MeV} \\
+&\approx 23.85\,\text{MeV}
+\end{aligned}
+$$. Energy is released because helium-4 is much higher in the graph than deuterium: this is the source of the energy of fusion.
 
 ## fy8-10-L3-03
 **Given:** mass of the water $m = 1.00\,\text{kg}$, initial temperature $80.0\,{}^\circ\text{C}$, final temperature $20.0\,{}^\circ\text{C}$, specific heat capacity $c_\text{v} = 4.19\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$, speed of light $c = 2.998 \cdot 10^{8}\,\text{m/s}$
@@ -297,12 +312,9 @@ $$
 **Given:** the atomic masses and the $\tfrac{E_\text{B}}{A}$ values of the table, $m_\text{n} = 1.008665\,\text{u}$, $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$, $1\,\text{u} = 1.66054 \cdot 10^{-27}\,\text{kg}$, $1\,\text{MeV} = 1.602177 \cdot 10^{-13}\,\text{J}$, mass of the sample $m = 1.00\,\text{g}$
 **Asked:** a) and b) the reaction energy $Q$ in two ways, c) the total energy released $E$ in the unit $10^{10}\,\text{J}$
 **Principle:** In the reaction the mass number and the charge number are conserved, but the mass decreases, and the decrease in mass is released as energy $Q = (m_\text{initial} - m_\text{final})\,c^2$. The same energy is obtained from the binding energies: the binding energy of a free neutron is zero, so $Q$ is the sum of the binding energies of the nuclei formed minus the binding energy of uranium. When the energy of one nucleus is known, the energy of the sample is obtained by multiplying it by the number of nuclei.
-**Formula:** a) $$
-\begin{aligned}
-Q &= (m_\text{U} + m_\text{n} - m_\text{Ba} - m_\text{Kr} \\
+**Formula:** a) $$\begin{aligned} Q &= (m_\text{U} + m_\text{n} - m_\text{Ba} - m_\text{Kr} \\
 &- 3\,m_\text{n})\,c^2
-\end{aligned}
-$$; b) $$
+\end{aligned}$$; b) $$
 \begin{aligned}
 Q &= E_\text{B}(\text{Ba}) + E_\text{B}(\text{Kr}) \\
 &- E_\text{B}(\text{U})

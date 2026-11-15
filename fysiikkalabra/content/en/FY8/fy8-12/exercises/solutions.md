@@ -107,7 +107,12 @@ $$.
 **Conversions:** $s_\beta = 3.6\,\text{m} = 360\,\text{cm}$, so that the tracks are in the same unit. Both energies are in megaelectronvolts.
 **Substitution:** $\dfrac{E_\alpha s_\beta}{E_\beta s_\alpha} = \dfrac{5.49\,\text{MeV} \cdot 360\,\text{cm}}{1.0\,\text{MeV} \cdot 4.1\,\text{cm}} = \dfrac{1976.4}{4.1} = 482.05$
 **Answer:** about $4.8 \cdot 10^{2}$ times, two significant figures like the distance $4.1\,\text{cm}$ and the energy $1.0\,\text{MeV}$.
-**Reasonableness:** Per centimetre the alpha particle produces about $5.49 \cdot 10^{6} : 34 : 4.1 \approx 3.9 \cdot 10^{4}$ and the beta particle about $1.0 \cdot 10^{6} : 34 : 360 \approx 82$ ion pairs; the ratio is about $480$. This is why an alpha particle stops within such a short distance and damages cells in a concentrated way.
+**Reasonableness:** Per centimetre the alpha particle produces about $$
+\begin{aligned}
+&5.49 \cdot 10^{6} : 34 : 4.1 \\
+&\approx 3.9 \cdot 10^{4}
+\end{aligned}
+$$ and the beta particle about $1.0 \cdot 10^{6} : 34 : 360 \approx 82$ ion pairs; the ratio is about $480$. This is why an alpha particle stops within such a short distance and damages cells in a concentrated way.
 
 ## fy8-12-L3-02
 **Given:** pulse rate without a shield $R_0 = 2400\,\tfrac{1}{\text{min}}$, behind $d_1 = 11.0\,\text{mm}$ of lead $R_1 = 630\,\tfrac{1}{\text{min}}$, background radiation $R_\text{t} = 30\,\tfrac{1}{\text{min}}$

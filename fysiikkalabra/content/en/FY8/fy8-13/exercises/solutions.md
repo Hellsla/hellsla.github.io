@@ -66,7 +66,11 @@
 **Conversions:** Not needed: the dose is in microsieverts and the dose rate in the unit $\mu\text{Sv/h}$, so the time comes out in hours.
 **Substitution:** $t = \dfrac{100\,\mu\text{Sv}}{150\,\mu\text{Sv/h}} \cdot \left(\dfrac{2.5\,\text{m}}{1.0\,\text{m}}\right)^2 = 0.66667\,\text{h} \cdot 6.25 = 4.1667\,\text{h}$
 **Answer:** $4.2\,\text{h}$, two significant figures like the distances $1.0\,\text{m}$ and $2.5\,\text{m}$.
-**Reasonableness:** The dose rate at the workplace is $150 : 6.25 = 24\,\mu\text{Sv/h}$, and $4.2\,\text{h} \cdot 24\,\mu\text{Sv/h} \approx 100\,\mu\text{Sv}$. At a distance of one metre the same dose would accumulate in under an hour, so distance lengthens the working time many times over.
+**Reasonableness:** The dose rate at the workplace is $150 : 6.25 = 24\,\mu\text{Sv/h}$, and $$
+\begin{aligned}
+4.2\,\text{h} \cdot 24\,\mu\text{Sv/h} &\approx 100\,\mu\text{Sv}
+\end{aligned}
+$$. At a distance of one metre the same dose would accumulate in under an hour, so distance lengthens the working time many times over.
 
 ## fy8-13-L2-03
 **Given:** average concentration $94\,\tfrac{\text{Bq}}{\text{m}^3}$ and the resulting dose $4.0\,\text{mSv}$ per year, concentration at home $300\,\tfrac{\text{Bq}}{\text{m}^3}$; the dose is proportional to the concentration
@@ -86,7 +90,9 @@
 **Conversions:** Not needed: the dose rates are in the same unit, and the thickness comes out in the same unit as the half-value thickness, that is, in millimetres.
 **Substitution:** $\dfrac{\dot{H}_0}{\dot{H}} = \dfrac{96\,\mu\text{Sv/h}}{3.0\,\mu\text{Sv/h}} = 32 = 2^5$, so $d = 6.0\,\text{mm} \cdot 5 = 30\,\text{mm}$
 **Answer:** $30\,\text{mm}$, two significant figures like the half-value thickness $6.0\,\text{mm}$ and the target $3.0\,\mu\text{Sv/h}$.
-**Reasonableness:** Five halvings in a row: $96 \to 48 \to 24 \to 12 \to 6 \to 3$ (in $\mu\text{Sv/h}$). Three centimetres of lead is a typical thickness for the shield of a gamma source.
+**Reasonableness:** Five halvings in a row: $$
+96 \to 48 \to 24 \to 12 \to 6 \to 3
+$$ (in $\mu\text{Sv/h}$). Three centimetres of lead is a typical thickness for the shield of a gamma source.
 
 ## fy8-13-L3-01
 **Given:** dose rate $\dot{H}_1 = 80\,\mu\text{Sv/h}$ at distance $r_1 = 1.0\,\text{m}$ without a shield, working time $t = 30\,\text{min}$; A: $r = 2.0\,\text{m}$ without a shield; B: $r = 1.0\,\text{m}$ and lead $d = 18\,\text{mm}$, $d_{1/2} = 6.0\,\text{mm}$
@@ -134,7 +140,9 @@ $$
 **Given:** equivalent dose of the liver $H_\text{liver} = 2.0\,\text{mSv}$ and weighting factor $w_\text{liver} = 0.04$, equivalent dose of the stomach $H_\text{stomach} = 1.0\,\text{mSv}$ and weighting factor $w_\text{stomach} = 0.12$
 **Asked:** the effective dose $H_\text{E}$ in millisieverts
 **Principle:** The effective dose is obtained by multiplying the equivalent dose of each irradiated tissue by its weighting factor and adding the products together. The other tissues receive no dose, so they add nothing to the sum.
-**Formula:** $H_\text{E} = w_\text{liver} H_\text{liver} + w_\text{stomach} H_\text{stomach}$
+**Formula:** $$\begin{aligned} H_\text{E} &= w_\text{liver} H_\text{liver} \\
+&+ w_\text{stomach} H_\text{stomach}
+\end{aligned}$$
 **Conversions:** Not needed: when the equivalent doses are in millisieverts, the effective dose comes out in millisieverts, because the weighting factors are pure numbers.
 **Substitution:** $$
 \begin{aligned}
@@ -243,7 +251,11 @@ $$: the dose rate halves every time the thickness increases by $4.0\,\text{cm}$ 
 $$; c) $t = \dfrac{25\,\mu\text{Sv}}{10.61\,\mu\text{Sv/h}} = 2.357\,\text{h}$
 **Answer:** $2.4\,\text{h}$, two significant figures like the dose limit $25\,\mu\text{Sv}$ and the thickness of the wall $10\,\text{cm}$. The dose rate in part b) is about $11\,\mu\text{Sv/h}$.
 **Model answer on part d):** The formula assumes that the photons hitting the concrete are either absorbed or pass through with the same proportion. In reality some of the gamma radiation scatters in the wall and the surroundings, and the scattered radiation can raise the dose rate at the workstation above the calculated value. The point-source assumption and the reading of the half-value thickness from the table are also approximate. Therefore the working time should be chosen shorter than the calculated one, for example half of it, and the dose should be monitored with a dosimeter.
-**Reasonableness:** Behind the wall at a distance of $1.0\,\text{m}$ the dose rate would be $240 \cdot \left(\tfrac{1}{2}\right)^{2.5} = 42.4\,\mu\text{Sv/h}$, which lies between the table values $60.5$ and $29.8\,\mu\text{Sv/h}$, just as $10\,\text{cm}$ lies between the thicknesses $8.0\,\text{cm}$ and $12.0\,\text{cm}$. The distance $2.0\,\text{m}$ reduces it to a quarter, that is, to $10.6\,\mu\text{Sv/h}$, and $2.4\,\text{h} \cdot 10.6\,\mu\text{Sv/h} \approx 25\,\mu\text{Sv}$.
+**Reasonableness:** Behind the wall at a distance of $1.0\,\text{m}$ the dose rate would be $240 \cdot \left(\tfrac{1}{2}\right)^{2.5} = 42.4\,\mu\text{Sv/h}$, which lies between the table values $60.5$ and $29.8\,\mu\text{Sv/h}$, just as $10\,\text{cm}$ lies between the thicknesses $8.0\,\text{cm}$ and $12.0\,\text{cm}$. The distance $2.0\,\text{m}$ reduces it to a quarter, that is, to $10.6\,\mu\text{Sv/h}$, and $$
+\begin{aligned}
+2.4\,\text{h} \cdot 10.6\,\mu\text{Sv/h} &\approx 25\,\mu\text{Sv}
+\end{aligned}
+$$.
 
 ## fy8-13-L2-08
 **Asked:** the order of magnitude of the dose $H$ accumulated from flights in a year, in millisieverts.

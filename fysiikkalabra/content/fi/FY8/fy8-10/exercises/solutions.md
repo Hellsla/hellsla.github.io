@@ -203,7 +203,12 @@ $$, joten $E_\text{B} = 0{,}034347 \cdot 931{,}5\,\text{MeV} = 31{,}994\,\text{M
 &0{,}034347\,\text{u} - 0{,}032700\,\text{u} \\
 &= 0{,}001647\,\text{u}
 \end{aligned}
-$$, ja se on kolmen protonin ja vetyatomin massaeron $3 \cdot (1{,}007825\,\text{u} - 1{,}007276\,\text{u}) = 0{,}001647\,\text{u}$ eli kolmen elektronin massa. Energiana $3 \cdot 0{,}511\,\text{MeV} = 1{,}53\,\text{MeV}$, ja $$
+$$, ja se on kolmen protonin ja vetyatomin massaeron $$
+\begin{aligned}
+&3 \cdot (1{,}007825\,\text{u} - 1{,}007276\,\text{u}) \\
+&= 0{,}001647\,\text{u}
+\end{aligned}
+$$ eli kolmen elektronin massa. Energiana $3 \cdot 0{,}511\,\text{MeV} = 1{,}53\,\text{MeV}$, ja $$
 \begin{aligned}
 &30{,}46\,\text{MeV} + 1{,}53\,\text{MeV} \\
 &= 31{,}99\,\text{MeV}
@@ -371,6 +376,16 @@ $$. b) $4\,m_\text{H} = 4{,}031300\,\text{u}$ ja massan väheneminen on $$
 &4{,}031300\,\text{u} - 4{,}002603\,\text{u} \\
 &= 0{,}028697\,\text{u}
 \end{aligned}
-$$, joten $f = \dfrac{0{,}028697\,\text{u}}{4{,}031300\,\text{u}} = 0{,}007119 = 0{,}712\,\%$. c) $m_\text{vety} = \dfrac{3{,}511 \cdot 10^{18}\,\text{kg}}{0{,}007119} = 4{,}932 \cdot 10^{20}\,\text{kg}$. d) Vetyä on $0{,}70 \cdot 2{,}0 \cdot 10^{31}\,\text{kg} = 1{,}4 \cdot 10^{31}\,\text{kg}$ ja miljardissa vuodessa kuluu $10^{9} \cdot 4{,}932 \cdot 10^{20}\,\text{kg} = 4{,}9 \cdot 10^{29}\,\text{kg}$, joten osuus on $\dfrac{4{,}9 \cdot 10^{29}\,\text{kg}}{1{,}4 \cdot 10^{31}\,\text{kg}} = 0{,}035 = 3{,}5\,\%$.
+$$, joten $f = \dfrac{0{,}028697\,\text{u}}{4{,}031300\,\text{u}} = 0{,}007119 = 0{,}712\,\%$. c) $m_\text{vety} = \dfrac{3{,}511 \cdot 10^{18}\,\text{kg}}{0{,}007119} = 4{,}932 \cdot 10^{20}\,\text{kg}$. d) Vetyä on $$
+\begin{aligned}
+&0{,}70 \cdot 2{,}0 \cdot 10^{31}\,\text{kg} \\
+&= 1{,}4 \cdot 10^{31}\,\text{kg}
+\end{aligned}
+$$ ja miljardissa vuodessa kuluu $$
+\begin{aligned}
+&10^{9} \cdot 4{,}932 \cdot 10^{20}\,\text{kg} \\
+&= 4{,}9 \cdot 10^{29}\,\text{kg}
+\end{aligned}
+$$, joten osuus on $\dfrac{4{,}9 \cdot 10^{29}\,\text{kg}}{1{,}4 \cdot 10^{31}\,\text{kg}} = 0{,}035 = 3{,}5\,\%$.
 **Vastaus:** $4{,}9 \cdot 10^{20}\,\text{kg}$, kaksi merkitsevää numeroa kuten tehossa $1{,}0 \cdot 10^{28}\,\text{W}$. Massa pienenee vuodessa $3{,}5 \cdot 10^{18}\,\text{kg}$, ja vain $0{,}71\,\%$ vetyatomien massasta muuttuu energiaksi.
 **Järkevyys:** Tähden teho on noin $26$ Aurinkoa ($3{,}83 \cdot 10^{26}\,\text{W}$), ja Aurinko muuttaa heliumiksi noin $6 \cdot 10^{11}\,\text{kg}$ vetyä sekunnissa eli noin $1{,}9 \cdot 10^{19}\,\text{kg}$ vuodessa; kertomalla tämä $26$:lla saadaan noin $5 \cdot 10^{20}\,\text{kg}$, mikä täsmää tulokseen. Oletetaan, että koko vety on käytettävissä (todellisuudessa vain ydin fuusioituu, joten osuus ytimen vedystä on suurempi). Vetyä kuluu miljardissa vuodessa vain $3{,}5\,\%$ varastosta, joten teho ei muutu vedyn vähenemisen vuoksi paljon ja vakiotehon oletus on tällä aikavälillä kohtuullinen. Massan väheneminen säteilyn vuoksi, $3{,}5 \cdot 10^{18}\,\text{kg}$, on vain $1{,}8 \cdot 10^{-13}$ tähden massasta.

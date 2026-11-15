@@ -144,7 +144,11 @@ $$, so $N = \dfrac{1.146 \cdot 10^{-23}\,\text{kg}\cdot\text{m/s}}{1.1250 \cdot 
 $$
 **Substitution:** $\dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{0.0500 \cdot 10^{-9}\,\text{m}} = 3.9729 \cdot 10^{-15}\,\text{J}$, so the energy of the scattered photon is $3.9729 \cdot 10^{-15}\,\text{J} - 0.1602 \cdot 10^{-15}\,\text{J} = 3.8127 \cdot 10^{-15}\,\text{J}$ and $\lambda' = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.8127 \cdot 10^{-15}\,\text{J}} = 5.210 \cdot 10^{-11}\,\text{m} = 0.05210\,\text{nm}$
 **Answer:** $0.0521\,\text{nm}$, three significant figures as in the wavelength $0.0500\,\text{nm}$ and the energy $1.00\,\text{keV}$.
-**Reasonableness:** The energy of the incident photon is about $24.8\,\text{keV}$, and the electron receives $1.00\,\text{keV}$ of it, about $4\,\%$. The wavelength of the photon therefore grows by about $4\,\%$: $0.0500\,\text{nm} \cdot 1.04 = 0.0520\,\text{nm}$. The wavelength grows, as it must in the Compton effect.
+**Reasonableness:** The energy of the incident photon is about $24.8\,\text{keV}$, and the electron receives $1.00\,\text{keV}$ of it, about $4\,\%$. The wavelength of the photon therefore grows by about $4\,\%$: $$
+\begin{aligned}
+0.0500\,\text{nm} \cdot 1.04 &= 0.0520\,\text{nm}
+\end{aligned}
+$$. The wavelength grows, as it must in the Compton effect.
 
 ## fy8-4-L3-03
 **Given:** transition $n = 3 \to n = 2$, $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, mass of the hydrogen atom $m = 1.67 \cdot 10^{-27}\,\text{kg}$, the atom initially at rest; $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$

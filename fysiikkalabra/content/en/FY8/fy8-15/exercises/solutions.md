@@ -222,7 +222,12 @@ E &= 2.0 \cdot 10^{-3}\,\text{kg} \\
 \end{aligned}
 $$
 **Answer:** $1.8 \cdot 10^{14}\,\text{J}$, two significant figures like the masses $1.0\,\text{g}$.
-**Reasonableness:** By estimate $2 \cdot 10^{-3} \cdot (3 \cdot 10^{8})^2 = 1.8 \cdot 10^{14}$. A common mistake would be to use only the mass of the antimatter, which would give half of the result. The energy corresponds to about $50\,\text{GWh}$, since $1\,\text{GWh} = 3.6 \cdot 10^{12}\,\text{J}$.
+**Reasonableness:** By estimate $$
+\begin{aligned}
+&2 \cdot 10^{-3} \cdot (3 \cdot 10^{8})^2 \\
+&= 1.8 \cdot 10^{14}
+\end{aligned}
+$$. A common mistake would be to use only the mass of the antimatter, which would give half of the result. The energy corresponds to about $50\,\text{GWh}$, since $1\,\text{GWh} = 3.6 \cdot 10^{12}\,\text{J}$.
 
 ## fy8-15-L3-03
 **Given:** the reaction $\bar{\nu}_e + p \to n + X$; from the table $\bar{\nu}_e$: $q = 0$, $B = 0$, $L = -1$; $p$: $q = +1$, $B = 1$, $L = 0$; $n$: $q = 0$, $B = 1$, $L = 0$

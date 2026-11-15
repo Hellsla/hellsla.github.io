@@ -109,10 +109,11 @@ $$
 **Conversions:** $\lambda_\text{large} = 620\,\text{nm} = 620 \cdot 10^{-9}\,\text{m}$; energies in electronvolts and joules by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$; finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** $E_\text{large} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3.2040 \cdot 10^{-19}\,\text{J} = 2.0000\,\text{eV}$. $$
 \begin{aligned}
-&E_\text{large} + \Delta E \\
-&= 2.0000\,\text{eV} + 0.35\,\text{eV} \\
+E_\text{large} + \Delta E &= 2.0000\,\text{eV} \\
+&+ 0.35\,\text{eV} \\
 &= 2.3500\,\text{eV} \\
-&= 2.3500 \cdot 1.602 \cdot 10^{-19}\,\text{J} \\
+&= 2.3500 \\
+&\cdot 1.602 \cdot 10^{-19}\,\text{J} \\
 &= 3.7647 \cdot 10^{-19}\,\text{J}
 \end{aligned}
 $$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.7647 \cdot 10^{-19}\,\text{J}} = 5.2766 \cdot 10^{-7}\,\text{m} = 527.66\,\text{nm}$

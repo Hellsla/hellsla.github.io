@@ -271,7 +271,17 @@ $$ on kaksi beetahajoamista ja yksi alfahajoaminen.
 **Periaate:** Gammafotonin energia on kahden tason erotus. Kolmella viritystasolla ja perustilalla on kuusi mahdollista siirtymää. Niistä viisi näkyy taulukossa. Suurin energia on siirtymä ylimmältä tasolta perustilaan. Jokaisen viivan täytyy olla kahden tason erotus. Alimman tason $351{,}2\,\text{keV}$ avulla jäljelle jäävät tasot ratkeavat yksikäsitteisesti. Puuttuva siirtymä on se, jota taulukossa ei ole.
 **Kaava:** $E_\gamma = E_\text{y} - E_\text{a}$ ja $\lambda = \dfrac{hc}{E_\gamma}$
 **Muunnokset:** $E_\text{p} = 1150{,}2\,\text{keV} = 1150{,}2 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}8427 \cdot 10^{-13}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
-**Sijoitus:** a) Suurimman viivan mukaan ylin taso on $E_3 = 1501{,}4\,\text{keV}$. Alin viritystaso on $E_1 = 351{,}2\,\text{keV}$, ja se on myös taulukon pienin viiva (siirtymä perustilaan). Kolmas taso saadaan viivasta $820{,}5\,\text{keV}$, jos se on siirtymä perustilaan: $E_2 = 820{,}5\,\text{keV}$. Tarkistus tasojen erotuksilla: $E_2 - E_1 = 820{,}5 - 351{,}2 = 469{,}3$, ja se on viiva $468{,}9\,\text{keV}$. Lisäksi $E_3 - E_2 = 1501{,}4 - 820{,}5 = 680{,}9$, ja se on viiva $681{,}3\,\text{keV}$. Kaikki viisi viivaa selittyvät, kun mittausepävarmuus on alle $0{,}5\,\text{keV}$. Muu järjestys ei toimi. Jos toinen taso olisi $681{,}3\,\text{keV}$, siirtymä $E_2 - E_1 = 330{,}1\,\text{keV}$ puuttuisi taulukosta ja viiva $468{,}9\,\text{keV}$ jäisi selittämättä.
+**Sijoitus:** a) Suurimman viivan mukaan ylin taso on $E_3 = 1501{,}4\,\text{keV}$. Alin viritystaso on $E_1 = 351{,}2\,\text{keV}$, ja se on myös taulukon pienin viiva (siirtymä perustilaan). Kolmas taso saadaan viivasta $820{,}5\,\text{keV}$, jos se on siirtymä perustilaan: $E_2 = 820{,}5\,\text{keV}$. Tarkistus tasojen erotuksilla: $$
+\begin{aligned}
+E_2 - E_1 &= 820{,}5 - 351{,}2 \\
+&= 469{,}3
+\end{aligned}
+$$, ja se on viiva $468{,}9\,\text{keV}$. Lisäksi $$
+\begin{aligned}
+E_3 - E_2 &= 1501{,}4 - 820{,}5 \\
+&= 680{,}9
+\end{aligned}
+$$, ja se on viiva $681{,}3\,\text{keV}$. Kaikki viisi viivaa selittyvät, kun mittausepävarmuus on alle $0{,}5\,\text{keV}$. Muu järjestys ei toimi. Jos toinen taso olisi $681{,}3\,\text{keV}$, siirtymä $E_2 - E_1 = 330{,}1\,\text{keV}$ puuttuisi taulukosta ja viiva $468{,}9\,\text{keV}$ jäisi selittämättä.
 b) Puuttuva siirtymä on ylimmältä tasolta alimmalle viritystasolle: $E_\text{p} = E_3 - E_1 = 1501{,}4 - 351{,}2 = 1150{,}2\,\text{keV}$.
 c) $$
 \begin{aligned}

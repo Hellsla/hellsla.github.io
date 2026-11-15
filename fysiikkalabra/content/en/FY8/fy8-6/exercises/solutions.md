@@ -94,7 +94,11 @@ hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 \end{aligned}
 $$, so $e\lambda = 1.602 \cdot 10^{-19}\,\text{C} \cdot 470 \cdot 10^{-9}\,\text{m} = 7.5294 \cdot 10^{-26}\,\text{C}\,\text{m}$ and $U_\text{k} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{7.5294 \cdot 10^{-26}\,\text{C}\,\text{m}} = 2.638\,\text{V}$
 **Answer:** about $2.64\,\text{V}$, three significant figures like the wavelength $470\,\text{nm}$.
-**Reasonableness:** With round numbers $1240\,\text{V}\,\text{nm} : 470\,\text{nm} \approx 2.6\,\text{V}$. The voltage is greater than that of a red LED, about $1.9\,\text{V}$, because a photon of blue light needs more energy. The measured threshold voltage is usually about $0.1\,\text{V}$ smaller than this estimate.
+**Reasonableness:** With round numbers $$
+\begin{aligned}
+1240\,\text{V}\,\text{nm} : 470\,\text{nm} &\approx 2.6\,\text{V}
+\end{aligned}
+$$. The voltage is greater than that of a red LED, about $1.9\,\text{V}$, because a photon of blue light needs more energy. The measured threshold voltage is usually about $0.1\,\text{V}$ smaller than this estimate.
 
 ## fy8-6-L2-02
 **Given:** peak wavelength $\lambda = 605\,\text{nm}$, threshold voltage $U_\text{k} = 1.95\,\text{V}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$
@@ -225,7 +229,11 @@ hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 \end{aligned}
 $$ and $eU_\text{k} = 1.602 \cdot 10^{-19}\,\text{C} \cdot 2.30\,\text{V} = 3.6846 \cdot 10^{-19}\,\text{J}$, so $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.6846 \cdot 10^{-19}\,\text{J}} = 5.391 \cdot 10^{-7}\,\text{m} = 539.1\,\text{nm}$
 **Answer:** $539\,\text{nm}$, three significant figures like the threshold voltage $2.30\,\text{V}$.
-**Reasonableness:** With round numbers $1240\,\text{V}\,\text{nm} : 2.30\,\text{V} \approx 539\,\text{nm}$. The wavelength is in the green region of visible light ($500$–$570\,\text{nm}$), as it should be according to the colour of the LED.
+**Reasonableness:** With round numbers $$
+\begin{aligned}
+1240\,\text{V}\,\text{nm} : 2.30\,\text{V} &\approx 539\,\text{nm}
+\end{aligned}
+$$. The wavelength is in the green region of visible light ($500$–$570\,\text{nm}$), as it should be according to the colour of the LED.
 
 ## fy8-6-L1-08
 **Given:** current $I = 10.0\,\text{mA}$, elementary charge $e = 1.602 \cdot 10^{-19}\,\text{C}$

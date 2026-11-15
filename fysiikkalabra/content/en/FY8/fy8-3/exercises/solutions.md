@@ -89,7 +89,13 @@ hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 \end{aligned}
 $$. $\dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{410 \cdot 10^{-9}\,\text{m}} = 4.8451 \cdot 10^{-19}\,\text{J} = 3.0244\,\text{eV}$, $E_n = -3.40\,\text{eV} + 3.0244\,\text{eV} = -0.3756\,\text{eV}$ and $n = \sqrt{\dfrac{13.6\,\text{eV}}{0.3756\,\text{eV}}} = \sqrt{36.21} = 6.017$
 **Answer:** $n = 6$. The number of a level is an integer, and the calculated $6.02$ differs from it only by rounding.
-**Reasonableness:** Check in the other direction: $E_6 - E_2 = -0.378\,\text{eV} + 3.40\,\text{eV} = 3.02\,\text{eV}$, which corresponds to the wavelength $410\,\text{nm}$. The violet line is the shortest of the visible Balmer lines, so its upper level must be the highest of these four.
+**Reasonableness:** Check in the other direction: $$
+\begin{aligned}
+E_6 - E_2 &= -0.378\,\text{eV} \\
+&+ 3.40\,\text{eV} \\
+&= 3.02\,\text{eV}
+\end{aligned}
+$$, which corresponds to the wavelength $410\,\text{nm}$. The violet line is the shortest of the visible Balmer lines, so its upper level must be the highest of these four.
 
 ## fy8-3-L2-03
 **Given:** energy-level diagram of an imaginary atom, transition from level $E_3$ to level $E_2$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$

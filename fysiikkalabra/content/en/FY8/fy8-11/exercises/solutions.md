@@ -10,7 +10,11 @@ $$
 **Conversions:** $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$, so the mass difference in atomic mass units is multiplied by $931.5\,\tfrac{\text{MeV}}{c^2}$ and $c^2$ cancels.
 **Substitution:** $Q = (7.0237878\,\text{u} - 7.0186526\,\text{u})\,c^2 = 0.0051352\,\text{u} \cdot c^2 = 0.0051352 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 4.7834\,\text{MeV}$
 **Answer:** $4.78\,\text{MeV}$, three significant figures; the precision of the mass difference $0.0051352\,\text{u}$ would allow even more.
-**Reasonableness:** The mass difference is about $0.005\,\text{u}$, and $0.005 \cdot 900\,\text{MeV} = 4.5\,\text{MeV}$. The result is smaller than in the fusion of deuterium and tritium ($17.6\,\text{MeV}$) but clearly positive, so the reaction releases energy.
+**Reasonableness:** The mass difference is about $0.005\,\text{u}$, and $$
+\begin{aligned}
+0.005 \cdot 900\,\text{MeV} &= 4.5\,\text{MeV}
+\end{aligned}
+$$. The result is smaller than in the fusion of deuterium and tritium ($17.6\,\text{MeV}$) but clearly positive, so the reaction releases energy.
 
 ## fy8-11-L1-02
 **Given:** decrease in mass $\Delta m = 0.1915\,\text{u}$
@@ -40,7 +44,11 @@ $$
 **Conversions:** $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$, so $c^2$ cancels and the energy comes out in megaelectronvolts.
 **Substitution:** $Q = (4.0282036\,\text{u} - 4.0246942\,\text{u})\,c^2 = 0.0035094\,\text{u} \cdot c^2 = 0.0035094 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 3.2690\,\text{MeV}$
 **Answer:** $3.27\,\text{MeV}$, three significant figures; the mass difference $0.0035094\,\text{u}$ has been calculated precisely enough.
-**Reasonableness:** The mass difference is about $0.0035\,\text{u}$, and $0.0035 \cdot 1000\,\text{MeV} = 3.5\,\text{MeV}$. The result is about a fifth of the energy of the fusion of deuterium and tritium, which is one reason why power plants are designed to use tritium.
+**Reasonableness:** The mass difference is about $0.0035\,\text{u}$, and $$
+\begin{aligned}
+0.0035 \cdot 1000\,\text{MeV} &= 3.5\,\text{MeV}
+\end{aligned}
+$$. The result is about a fifth of the energy of the fusion of deuterium and tritium, which is one reason why power plants are designed to use tritium.
 
 ## fy8-11-L1-05
 **Given:** mass of the neutron $m_\text{n} = 1.0086649\,\text{u}$
@@ -66,7 +74,8 @@ $$
 **Given:** atomic masses $m_\text{D} = 2.0141018\,\text{u}$, $m_\text{T} = 3.0160493\,\text{u}$, $m_\text{He} = 4.0026033\,\text{u}$ and $m_\text{n} = 1.0086649\,\text{u}$; $1\,\text{u} = 1.66054 \cdot 10^{-27}\,\text{kg}$
 **Asked:** the energy released per kilogram of fuel, $\tfrac{E}{m}$, in the unit $10^{14}\,\tfrac{\text{J}}{\text{kg}}$
 **Principle:** One reaction releases the energy $Q$ that corresponds to the mass difference and uses up one deuterium atom and one tritium atom. The energy per unit mass is the energy of one reaction divided by the mass of the fuel of one reaction.
-**Formula:** $Q = (m_\text{D} + m_\text{T} - m_\text{He} - m_\text{n})\,c^2$ and $\dfrac{E}{m} = \dfrac{Q}{m_\text{D} + m_\text{T}}$
+**Formula:** $$\begin{aligned} Q &= (m_\text{D} + m_\text{T} - m_\text{He} - m_\text{n})\,c^2
+\end{aligned}$$ and $\dfrac{E}{m} = \dfrac{Q}{m_\text{D} + m_\text{T}}$
 **Conversions:** $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$; $$
 \begin{aligned}
 1\,\text{MeV} &= 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J}

@@ -12,7 +12,13 @@ hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 \end{aligned}
 $$, so $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{532 \cdot 10^{-9}\,\text{m}} = 3.734 \cdot 10^{-19}\,\text{J}$
 **Answer:** $3.73 \cdot 10^{-19}\,\text{J}$, three significant figures like the wavelength $532\,\text{nm}$.
-**Reasonableness:** In electronvolts the energy is $3.734 \cdot 10^{-19}\,\text{J} : 1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}} \approx 2.33\,\text{eV}$. The energies of photons of visible light are about $1.8$–$3.1\,\text{eV}$, and green is in the middle of this range.
+**Reasonableness:** In electronvolts the energy is $$
+\begin{aligned}
+&3.734 \cdot 10^{-19}\,\text{J} \\
+&: 1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}} \\
+&\approx 2.33\,\text{eV}
+\end{aligned}
+$$. The energies of photons of visible light are about $1.8$–$3.1\,\text{eV}$, and green is in the middle of this range.
 
 ## fy8-1-L1-02
 **Given:** frequency $f = 2.45\,\text{GHz}$, Planck constant $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$
@@ -213,13 +219,10 @@ $$, and all the measured wavelengths, $365$–$505\,\text{nm}$, are shorter than
 **Find:** the difference of the work functions $W_\text{B} - W_\text{A}$ in electronvolts and which metal has the greater work function
 **Principle:** According to the photoelectric equation $E_\text{k,max} = hf - W$ for both metals. At the same frequency the photon energy $hf$ is the same, so the difference of the kinetic energies is the difference of the work functions. The slope of both lines is $h$.
 **Reading the graph:** In the graph drawn on paper the line of A runs above the line of B. The vertical gap between the lines is about $0.9\,\text{eV}$ at every frequency, so they are parallel. The slopes are $\tfrac{2.26\,\text{eV} - 1.01\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.2 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$ and $\tfrac{1.35\,\text{eV} - 0.12\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.1 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, that is both are approximately $\tfrac{h}{e} = 4.14 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$.
-**Formula:** $$
-\begin{aligned}
-E_\text{k,A} - E_\text{k,B} &= (hf - W_\text{A}) \\
+**Formula:** $$\begin{aligned} E_\text{k,A} - E_\text{k,B} &= (hf - W_\text{A}) \\
 &- (hf - W_\text{B}) \\
 &= W_\text{B} - W_\text{A}
-\end{aligned}
-$$
+\end{aligned}$$
 **Conversions:** Not needed: all the energies are in electronvolts.
 **Substitution:** The differences are $0.89\,\text{eV}$, $0.91\,\text{eV}$, $0.90\,\text{eV}$ and $0.91\,\text{eV}$. Their sum is $3.61\,\text{eV}$, so $D = \dfrac{3.61\,\text{eV}}{4} = 0.9025\,\text{eV}$
 **Answer:** the work function of metal B is greater, and it is $0.90\,\text{eV}$ greater than that of A, two significant figures. The lines are parallel because both have the slope $h$; the metal affects only how far the line is shifted, and the shift is the difference of the work functions.
@@ -306,7 +309,14 @@ f_0 &= 7.0 \cdot 10^{14}\,\text{Hz} \\
 \end{aligned}
 $$
 **Answer:** $5.5 \cdot 10^{14}\,\text{Hz}$, two significant figures like the frequency $7.0 \cdot 10^{14}\,\text{Hz}$ and the energy $0.60\,\text{eV}$.
-**Reasonableness:** The slope must be the Planck constant: $k = 4.133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}} = 4.133 \cdot 10^{-15} \cdot 1.602 \cdot 10^{-19}\,\text{J}\,\text{s} = 6.62 \cdot 10^{-34}\,\text{J}\,\text{s}$, and it is. The threshold frequency is smaller than both measurement frequencies, as it should be, because electrons were released at both frequencies. The work function is $W = h f_0 \approx 2.3\,\text{eV}$, so the metal may be sodium.
+**Reasonableness:** The slope must be the Planck constant: $$
+\begin{aligned}
+k &= 4.133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}} \\
+&= 4.133 \cdot 10^{-15} \\
+&\cdot 1.602 \cdot 10^{-19}\,\text{J}\,\text{s} \\
+&= 6.62 \cdot 10^{-34}\,\text{J}\,\text{s}
+\end{aligned}
+$$, and it is. The threshold frequency is smaller than both measurement frequencies, as it should be, because electrons were released at both frequencies. The work function is $W = h f_0 \approx 2.3\,\text{eV}$, so the metal may be sodium.
 
 ## fy8-1-L3-04
 **Given:** $\lambda = 400\,\text{nm}$, $P_1 = 1.0\,\text{mW}$, $P_2 = 2.0\,\text{mW}$, saturation currents from the table $I_1 = 0.30\,\mu\text{A}$ and $I_2 = 0.60\,\mu\text{A}$, the current is zero at the voltage $U = -0.80\,\text{V}$ and below it; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$

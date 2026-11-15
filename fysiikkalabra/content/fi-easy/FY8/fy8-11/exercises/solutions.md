@@ -74,7 +74,8 @@ $$. Tulos on noin viidesosa deuteriumin ja tritiumin fuusion energiasta. Tämä 
 **Annettu:** atomimassat $m_\text{D} = 2{,}0141018\,\text{u}$, $m_\text{T} = 3{,}0160493\,\text{u}$, $m_\text{He} = 4{,}0026033\,\text{u}$ ja $m_\text{n} = 1{,}0086649\,\text{u}$; $1\,\text{u} = 1{,}66054 \cdot 10^{-27}\,\text{kg}$
 **Kysytty:** vapautuva energia polttoainekilogrammaa kohti $\tfrac{E}{m}$ yksikössä $10^{14}\,\tfrac{\text{J}}{\text{kg}}$
 **Periaate:** Yksi reaktio vapauttaa massaeroa vastaavan energian $Q$ ja kuluttaa yhden deuteriumatomin ja yhden tritiumatomin. Energia massayksikköä kohti on yhden reaktion energia jaettuna yhden reaktion polttoaineen massalla.
-**Kaava:** $Q = (m_\text{D} + m_\text{T} - m_\text{He} - m_\text{n})\,c^2$ ja $\dfrac{E}{m} = \dfrac{Q}{m_\text{D} + m_\text{T}}$
+**Kaava:** $$\begin{aligned} Q &= (m_\text{D} + m_\text{T} - m_\text{He} - m_\text{n})\,c^2
+\end{aligned}$$ ja $\dfrac{E}{m} = \dfrac{Q}{m_\text{D} + m_\text{T}}$
 **Muunnokset:** $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$; $$
 \begin{aligned}
 1\,\text{MeV} &= 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}

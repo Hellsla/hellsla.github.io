@@ -133,7 +133,11 @@ $$. $E_\text{g} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{550 \cdot 10
 \end{aligned}
 $$
 **Answer:** about $293\,000$, that is, $2.93 \cdot 10^{5}$ times greater, three significant figures like the wavelength $550\,\text{nm}$.
-**Reasonableness:** An estimate with round numbers: $660\,000\,\text{eV} : 2\,\text{eV} \approx 330\,000$, the same order of magnitude. For this gamma line the difference between the levels of the nucleus is hundreds of thousands of times greater than the differences between the levels of the electrons of an atom, as the theory of the chapter says.
+**Reasonableness:** An estimate with round numbers: $$
+\begin{aligned}
+660\,000\,\text{eV} : 2\,\text{eV} &\approx 330\,000
+\end{aligned}
+$$, the same order of magnitude. For this gamma line the difference between the levels of the nucleus is hundreds of thousands of times greater than the differences between the levels of the electrons of an atom, as the theory of the chapter says.
 
 ## fy8-8-L2-04
 **Given:** the parent nucleus ${}^{232}_{90}\text{Th}$; alpha decay and after it two beta minus decays
@@ -158,7 +162,12 @@ $$. At the end we are in thorium again, but there are four fewer neutrons than a
 **Conversions:** None are needed, because the numbers are counts.
 **Substitution:** Ra-226: $88 \to 86$ and $138 \to 136$, alpha decay. Pb-210: $82 \to 83$ and $128 \to 127$, beta minus. Na-22: $11 \to 10$ and $11 \to 12$, beta plus. I-131: $53 \to 54$ and $78 \to 77$, beta minus. Ba-137 (excited): $56 \to 56$ and $81 \to 81$, gamma decay. Sr-90: $38 \to 39$ and $52 \to 51$, beta minus.
 **Answer:** $3$. The beta minus decays are lead-210, iodine-131 and strontium-90. The result is the exact number of rows.
-**Reasonableness:** In every row the number of nucleons stays the same or decreases by four: $Z + N = 226 \to 222$ in the alpha decay, and in the other rows the sum does not change ($82 + 128 = 83 + 127 = 210$). In beta decays the mass number is conserved, as it should be.
+**Reasonableness:** In every row the number of nucleons stays the same or decreases by four: $Z + N = 226 \to 222$ in the alpha decay, and in the other rows the sum does not change ($$
+\begin{aligned}
+82 + 128 &= 83 + 127 \\
+&= 210
+\end{aligned}
+$$). In beta decays the mass number is conserved, as it should be.
 
 ## fy8-8-L2-06
 **Given:** the student's equation ${}^{241}_{95}\text{Am} \to {}^{237}_{94}\text{Np} + {}^{4}_{2}\text{He}$ and the justification “the atomic number decreases by one”
