@@ -121,7 +121,9 @@ values are equal.
   as a quantity, then "lähtökitka". Checker rule liikekitka.
 
 ## Values and significant figures (teacher 2026-11-15, P7, P8, P9)
-- **Significant figures.** 230 V has three. Trailing zeros are significant unless the task says otherwise. A limit
+- **Significant figures.** 230 V has three. A rated or measured value's trailing zeros are significant unless the task
+  says otherwise (480 kW: three). The context decides: a time span the task sets, such as 10 min, is exact and does
+  not limit the answer (teacher 2026-11-16). A limit
   value is rounded to the safe side: an "enintään" value down, a "vähintään" value up.
 - **Values.** Use the MAFY table's value whenever MAFY has one; otherwise give the value and its source behind a link.
   Small differences are not contradictions and stay (P9): ice 334 kJ/kg, water 4190 J/(kg·K), sound 340 or 343 m/s,

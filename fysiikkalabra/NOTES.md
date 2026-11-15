@@ -59,12 +59,15 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   significant figures, and a student rounding to them stays inside the relative `tolerance` (0,02 as a rule; `77 K`
   has two figures, so −196 °C needs 0,03 or a whole-number task). A coefficient with a power of ten counts its
   mantissa: `9,0 · 10⁻⁶ 1/K`, not `9 · 10⁻⁶`.
-- An integer datum ending in zeros is exact unless the task says otherwise (teacher 2026-11-07, "Sovitaan että 10 min tarkka"):
-  `10 min`, `400 cm³`, `4200 m` do not limit the answer's significant figures; the measured data do, and a
-  justification never says "kaksi numeroa kuten 10 min". FY1 *Suureet, yksiköt ja SI-järjestelmä* states it to the student.
-- Significant figures (teacher 2026-11-15, P7): (a) 230 V is a value with three significant figures; (b) trailing
-  zeros are significant unless the task says otherwise (480 kW has three, so a justification never says "kaksi
-  ensimmäistä numeroa varmoja"); an exact datum of the rule above (10 min) still does not limit the answer; (c) a
+- A round number's trailing zeros may or may not be significant, and the context decides (teacher 2026-11-07
+  "Sovitaan että 10 min tarkka" and 2026-11-16 "asiayhteydestä ajattelisin että 10 min on tarkka"). A time span,
+  count or volume the task sets (`10 min`, `400 cm³`, `4200 m`) is an exact value and does not limit the answer's
+  significant figures; the measured data do, and a justification never says "kaksi numeroa kuten 10 min". FY1
+  *Suureet, yksiköt ja SI-järjestelmä* states it to the student.
+- Significant figures (teacher 2026-11-15, P7): (a) 230 V is a value with three significant figures; (b) a measured
+  or rated value's trailing zeros are significant unless the task says otherwise (480 kW has three, so a
+  justification never says "kaksi ensimmäistä numeroa varmoja"); an exact value of the rule above (10 min) does not
+  limit the answer; (c) a
   limit value is rounded to the safe side: an "enintään" value down (10,5 kW → 10 kW, 12,4 A → 12 A), a "vähintään"
   value up (1,511 kg → 1,6 kg with two figures).
 - Values (teacher 2026-11-15, P8, P9): a constant or material value is the MAFY table's whenever MAFY has one;

@@ -1684,7 +1684,6 @@
         "id": "fy6-8",
         "title": "Lähdejännite ja sisäinen resistanssi",
         "goals": [
-          "LOPS FY6: akut ja akun latauspiiri",
           "Kokeellisesti: pariston sisäisen resistanssin määrittäminen",
           "Täsmennys: napajännite, oikosulkuvirta, paristojen sarja- ja rinnankytkentä"
         ],
