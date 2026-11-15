@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 138a67d70afe38e3
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 36b14526dfed3d4f
+SCOPE: delta reflow from b9c3e0d18fbc45bb base 56362aafa0
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Opened fy8-6 open-exercises-1280-1 (1240 eV nm : 605 nm row) and L2-1280-8/9 (three-row e U_k lambda products, = and dot rows aligned, readable, nothing clipped).
+- Delta judged: long solution formulas lifted into aligned rows, each + or - term whole, first row the left-hand side alone; words, numbers and units unchanged.

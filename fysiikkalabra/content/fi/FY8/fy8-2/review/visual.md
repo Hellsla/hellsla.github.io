@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7346d9cf9e68d361
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: 1e0b5672766b54c1
 
 ## Blocking
 - none
@@ -9,4 +8,8 @@ Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix d
 - none
 
 ## Checked
-- Source-level read of the diff: Finnish/English wording, LaTeX number+unit typography (thin space, \text units, decimal comma in fi/fi-easy, \cdot), the aligned block with \approx in fy8-9 where applicable; no inline formula wrapping, no new figures. No render made.
+- Delta round 4, long formulas re-set as aligned blocks. Judged from source: the diff only re-sets one display block (first row the left-hand side alone, each + or - term whole); the same shared aligned renderer was seen in fy8-1 captures, so the layout is as there; not opened separately.
+- Words, numbers and units unchanged by the diff.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

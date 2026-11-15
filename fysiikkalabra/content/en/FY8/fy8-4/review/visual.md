@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: bdd07c8f79ff8367
+CONTENT-HASH: 2e32d84482cfc238
+
+Round 2 (delta): judged whether a lone ", " or ". " still starts a line after a lifted display formula.
 
 ## Blocking
-- none
+- None.
 
 ## Polish
-- none
+- None.
 
 ## Checked
-batch delta review: opened the 390 px theory captures (stage-selita, whole sequence) and the 1280 theory captures around each new unit-photo; photo is sharp, caption and its $...$ maths render, credit line present, alt text informative, no clipping or horizontal overflow, surrounding figures and formulas intact.
+- No capture of this lesson was opened in round 2. Judged from the shared build (mathlayout.with_punct), which I verified on fy8-3, fy8-8, fy8-12 and fy8-16 (marks sit inside the last row, no lone mark); the text of this lesson is unchanged by it.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8411fab9ce0d0aa9
+CONTENT-HASH: aaa75c66831fbfcc
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] lesson.md l. 453 — "Kun energia kasvaa, gammasäteily alkaa vuorovaikuttaa aineen kanssa eri tavalla" stays abstract for S2 readers; an optional concrete clause (for example "ja osa energioista läpäisee ohuenkin kerroksen helpommin kuin toiset") would help, but the teacher's rule against "higher energy always penetrates better" is respected as it stands.
-- [Minor] Same paragraph — "tehokkaasti monilla energioilla" is vague; "hyvin" would do. Nine short sentences read slightly choppy; the line "Sama vaimennus vaatii betonia..." could name lyijy again ("Lyijyn kanssa sama vaimennus...") so the comparison is unambiguous.
+- [Minor] stage rows with a lone unit continuation row (e.g. "· 2,998 · 10^8 m/s" in fy8-4) could join the "=" column; existing layout, not a regression.
 
 ## Checked
-- fy8-12-theory-1280-5: the reworded paragraph in context with the formula blocks, graph (lyijy, alumiini) and the d_1/2 table; layout intact, KaTeX renders $662\,\text{keV}$ and $d_{1/2}$ correctly, table values (lyijy 5,5 mm, betoni 39 mm) match "noin seitsemän kertaa".
-- Packet diff and lesson.md lines 376-384 read; hash run at start and end (8411fab9ce0d0aa9). Other captures unchanged by the diff, not reopened.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review, round 2: no capture of this lesson was opened. Judged by inference from the shared mathlayout.with_punct build, which I saw working in fy8-4, fy8-8, fy8-13 (and fy8-1 theory); this lesson's own lifted formulas were not individually seen. The lesson's own diff (formula names, reflow) was not inspected in a capture.
