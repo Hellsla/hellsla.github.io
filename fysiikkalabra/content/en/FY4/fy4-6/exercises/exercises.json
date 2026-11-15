@@ -82,9 +82,9 @@
         "reasoning"
       ],
       "text": "A $50\\,\\text{kg}$ box is at rest on a horizontal floor. The coefficient of static friction between the box and the floor is $0.45$. How large a horizontal force must at least be applied to the box for it to start moving?",
-      "answer": 220.0,
+      "answer": 230.0,
       "unit": "N",
-      "tolerance": 0.02,
+      "tolerance": 0.05,
       "fbd": "equations"
     },
     {

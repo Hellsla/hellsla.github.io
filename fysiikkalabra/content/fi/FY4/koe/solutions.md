@@ -16,7 +16,7 @@
 **Perustelu:** Palikkaan vaikuttavat Maa (paino suoraan alas), lauta (tukivoima kohtisuoraan pinnasta ulos) ja laudan liukukitka. Palikka liukuu ylös, joten liukukitka osoittaa liukumista vastaan eli rinnettä alas, kuten kuviossa A. Kuviossa B on keksitty voima $\overline{F}$ liikkeen suuntaan, vaikka mikään ei enää työnnä palikkaa: liike jatkuu ilman voimaa, ja voimat hidastavat sitä. Kuviossa C kitka osoittaa väärään suuntaan, ja kuviossa D tukivoima ei ole kohtisuorassa pintaa vastaan.
 
 ### f)
-**Perustelu:** Laatikko pysyy paikallaan, joten siihen vaikuttavien vaakasuorien voimien summa on nolla: lepokitka on yhtä suuri kuin työntövoima eli $120\,\text{N}$ ja vastakkaissuuntainen. Lauseke $\mu_0 N = 0{,}50 \cdot 40\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 196\,\text{N}$ on täysin kehittynyt lepokitka eli lähtökitka, ei lepokitkan arvo tässä tilanteessa. $392\,\text{N}$ on laatikon paino, ja $0\,\text{N}$ olisi oikein vain, jos laatikkoa ei työnnettäisi.
+**Perustelu:** Laatikko pysyy paikallaan, joten siihen vaikuttavien vaakasuorien voimien summa on nolla: lepokitka on yhtä suuri kuin työntövoima eli $120\,\text{N}$ ja vastakkaissuuntainen. Lauseke $$\begin{aligned} \mu_0 N &= 0{,}50 \cdot 40\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\ &\approx 196\,\text{N} \end{aligned}$$ on täysin kehittynyt lepokitka eli lähtökitka, ei lepokitkan arvo tässä tilanteessa. $392\,\text{N}$ on laatikon paino, ja $0\,\text{N}$ olisi oikein vain, jos laatikkoa ei työnnettäisi.
 
 ### g)
 **Perustelu:** Mekaanisen energian säilymisestä $mgh = \tfrac{1}{2}mv^2$, joten $v = \sqrt{2gh}$. Nopeus on verrannollinen korkeuden neliöjuureen: nelinkertainen korkeus antaa $\sqrt{4} = 2$ kertaa suuremman nopeuden eli $2v$. Vastaus $4v$ syntyy, jos nopeuden luullaan olevan verrannollinen korkeuteen; nelinkertainen on liike-energia, ei nopeus. Nopeus $\sqrt{2}\,v$ vastaisi kaksinkertaista korkeutta.
@@ -301,7 +301,7 @@
 - Tonneja ei muunneta kilogrammoiksi energian laskussa.
 
 ### Hyväksytään myös
-- Kohdassa c vaunuun A kohdistuvan voiman laskeminen: $24\,000\,\text{kg} \cdot 0{,}90\,\tfrac{\text{m}}{\text{s}} : 0{,}80\,\text{s} = 27\,\text{kN}$, kun todetaan voimien olevan yhtä suuret.
+- Kohdassa c vaunuun A kohdistuvan voiman laskeminen: $$\begin{aligned} &24\,000\,\text{kg} \cdot 0{,}90\,\tfrac{\text{m}}{\text{s}} : 0{,}80\,\text{s} \\ &= 27\,\text{kN} \end{aligned}$$, kun todetaan voimien olevan yhtä suuret.
 
 ## fy4-k6
 

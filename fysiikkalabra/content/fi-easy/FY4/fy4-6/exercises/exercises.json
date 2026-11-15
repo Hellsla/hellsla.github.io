@@ -82,9 +82,9 @@
         "reasoning"
       ],
       "text": "Vaakasuoralla lattialla on levossa $50\\,\\text{kg}$:n laatikko. Laatikon ja lattian välinen lepokitkakerroin on $0{,}45$. Kuinka suuri vaakasuora voima laatikkoon on vähintään kohdistettava, jotta se lähtee liikkeelle?",
-      "answer": 220.0,
+      "answer": 230.0,
       "unit": "N",
-      "tolerance": 0.02,
+      "tolerance": 0.05,
       "fbd": "equations"
     },
     {

@@ -184,7 +184,7 @@ akselit 0
 **Kaava:** $y$: $N - mg = 0$ ja $x$: $F_\mu = ma$. Ehto $F_\mu \le \mu_0 N$ antaa $ma \le \mu_0 mg$, joten $\mu_0 \ge \dfrac{a}{g}$
 **Muunnokset:** Kiihtyvyydet ovat yksikössä $\text{m/s}^2$, joten muunnoksia ei tarvita. Massa supistuu.
 **Sijoitus:** $\mu_0 = \dfrac{3{,}5\,\text{m/s}^2}{9{,}81\,\text{m/s}^2} = 0{,}357$
-**Vastaus:** $0{,}36$. Vastauksessa on kaksi merkitsevää numeroa kuten kiihtyvyydessä $3{,}5\,\text{m/s}^2$.
+**Vastaus:** vähintään $0{,}36$. Vastauksessa on kaksi merkitsevää numeroa kuten kiihtyvyydessä $3{,}5\,\text{m/s}^2$. Laskettu raja $0{,}357$ pyöristetään ylöspäin, koska vähintään-arvo pyöristetään turvalliseen suuntaan.
 **Järkevyys:** Kitka osoittaa liikkeen suuntaan, koska lava pyrkii liukumaan eteenpäin laatikon alta. Massa supistuu, joten tulos pätee sekä kevyelle että raskaalle laatikolle. Märällä vanerilla kerroin voi jäädä alle $0{,}36$. Silloin laatikko liukuu taaksepäin lavan suhteen. Siksi kuorma kiinnitetään.
 
 ## fy4-6-L3-02
@@ -250,7 +250,7 @@ akselit 0
 **Kaava:** $y$: $N - mg = 0$ ja $x$: $F - \mu_0 N = 0$, joten $F = \mu_0 mg$
 **Muunnokset:** Massa on kilogrammoina, joten muunnoksia ei tarvita.
 **Sijoitus:** $F = 0{,}45\cdot 50\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 220{,}7\,\text{N}$
-**Vastaus:** $2{,}2\cdot 10^2\,\text{N}$ eli noin $220\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}45$ ja massassa $50\,\text{kg}$. Tätä pienemmällä voimalla laatikko pysyy paikallaan.
+**Vastaus:** vähintään $2{,}3\cdot 10^2\,\text{N}$ eli $230\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}45$ ja massassa $50\,\text{kg}$. Laskettu raja on $220{,}7\,\text{N}$. Se pyöristetään ylöspäin, koska vähintään-arvo pyöristetään turvalliseen suuntaan: $220\,\text{N}$ ei vielä riittäisi. Rajaa pienemmällä voimalla laatikko pysyy paikallaan.
 **Järkevyys:** Laatikon paino on $490\,\text{N}$. Tarvittava voima on $0{,}45$-kertainen siihen nähden, kuten kitkakerroin edellyttää. Kun laatikko on lähtenyt liikkeelle, liukukitka on yleensä pienempi kuin $\mu_0 N$. Siksi liikkeessä pitämiseen riittää pienempi voima.
 
 ## fy4-6-L1-08

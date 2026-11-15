@@ -184,7 +184,7 @@ akselit 0
 **Formula:** $y$: $N - mg = 0$ and $x$: $F_\mu = ma$. The condition $F_\mu \le \mu_0 N$ gives $ma \le \mu_0 mg$, so $\mu_0 \ge \dfrac{a}{g}$
 **Conversions:** The accelerations are in $\text{m/s}^2$, so no conversions are needed, and the mass cancels.
 **Substitution:** $\mu_0 = \dfrac{3.5\,\text{m/s}^2}{9.81\,\text{m/s}^2} = 0.357$
-**Answer:** $0.36$, two significant figures like the acceleration $3.5\,\text{m/s}^2$.
+**Answer:** at least $0.36$, two significant figures like the acceleration $3.5\,\text{m/s}^2$. The calculated limit $0.357$ is rounded up, because an "at least" value is rounded to the safe side.
 **Reasonableness:** The friction points in the direction of motion, because the bed tends to slide forward from under the box. The mass cancels, so the result holds for a light and a heavy box. On wet plywood the coefficient can be below $0.36$, and then the box slides backward relative to the bed: this is why cargo is fastened.
 
 ## fy4-6-L3-02
@@ -250,7 +250,7 @@ akselit 0
 **Formula:** $y$: $N - mg = 0$ and $x$: $F - \mu_0 N = 0$, so $F = \mu_0 mg$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
 **Substitution:** $F = 0.45\cdot 50\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 220.7\,\text{N}$
-**Answer:** $2.2\cdot 10^2\,\text{N}$ or about $220\,\text{N}$, two significant figures like the coefficient of friction $0.45$ and the mass $50\,\text{kg}$. With a smaller force the box stays in place.
+**Answer:** at least $2.3\cdot 10^2\,\text{N}$ or $230\,\text{N}$, two significant figures like the coefficient of friction $0.45$ and the mass $50\,\text{kg}$. The calculated limit $220.7\,\text{N}$ is rounded up, because an "at least" value is rounded to the safe side: $220\,\text{N}$ would not yet be enough. With a force below the limit the box stays in place.
 **Reasonableness:** The weight of the box is $490\,\text{N}$, and the required force is $0.45$ times that, as the coefficient of friction requires. After the box has started to move, the sliding friction is usually smaller than $\mu_0 N$, so a smaller force is enough to keep it moving.
 
 ## fy4-6-L1-08
