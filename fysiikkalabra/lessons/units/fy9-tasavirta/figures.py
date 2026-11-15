@@ -150,7 +150,7 @@ def kartta():
         (r"\text{virta haarautuu}", r"\to\ \text{haarapiste}", r"\Sigma I_\text{t} = \Sigma I_\text{l}"),
         (r"\text{suljettu silmukka}", r"\to\ \text{jännitteet}", r"\Sigma\Delta V = 0"),
         (r"\text{laitteen teho tai energia}", r"\to\ \text{teho}", r"P = UI"),
-        (r"\text{paristolla on sisäinen vastus}", r"\to\ \text{napajännite}", r"U = E - R_\text{s}I"),
+        (r"\text{paristolla on sisäinen vastus}", r"\to\ \text{johda silmukalla}", r"\Sigma\Delta V = 0"),
     ]
     hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
     ys = [top + (ch + gap) * k for k in range(len(rows))]
@@ -179,7 +179,7 @@ ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Piirrä
                "on resistanssien summa. Rinnan kytketyt: jännite on sama ja kokonaisresistanssin käänteisluku on käänteislukujen  "
                "summa. Virta haarautuu: haarapisteeseen tulevien virtojen summa on yhtä suuri kuin lähtevien. Suljettu silmukka:  "
                "jännitteiden summa on nolla. Laitteen teho tai energia: teho on jännite kertaa virta. Paristolla on sisäinen  "
-               "vastus: napajännite on lähdejännite miinus sisäisen resistanssin ja virran tulo.")
+               "vastus: napajännite johdetaan kiertämällä piiri, jännitteiden summa on nolla.")
 
 
 # --- the hook answered ----------------------------------------------------------------------------------------

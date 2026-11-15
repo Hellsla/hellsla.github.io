@@ -97,7 +97,7 @@ def kartta():
     pill in the site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from
     the start box. A row is (sign, choice, law, pill width, law on a line of its own)."""
     rows = [
-        (r"\text{suljettu järjestelmä}", r"\to\ \text{energia säilyy}", r"E_\text{alussa} = E_\text{lopussa}", 220, True),
+        (r"\text{eristetty systeemi}", r"\to\ \text{energia säilyy}", r"E_\text{alussa} = E_\text{lopussa}", 220, True),
         (r"\text{energia ajan kuluessa}", r"\to\ \text{teho}", r"P = \Delta E/\Delta t", 130, False),
         (r"\text{tasainen teho, kesto tiedossa}", r"\to\ \text{energia}", r"E = Pt", 124, False),
         (r"\text{kilowattitunteja}", r"\to\ \text{muunna jouleiksi}", r"1\,\text{kWh} = 3{,}6\,\text{MJ}", 190, True),
@@ -133,7 +133,7 @@ def kartta():
 
 
 ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita luettelemalla energialajit ja katso, mikä "
-               "tehtävän tunnusmerkki sopii. Suljettu järjestelmä: energia säilyy, joten energia alussa on yhtä suuri kuin "
+               "tehtävän tunnusmerkki sopii. Eristetty systeemi: energia säilyy, joten energia alussa on yhtä suuri kuin "
                "energia lopussa. Energia ajan kuluessa: teho on energian muutos jaettuna ajalla. Tasainen teho, kesto "
                "tiedossa: energia on teho kertaa aika. Kilowattitunteja: muunna jouleiksi, yksi kilowattitunti on 3,6 "
                "megajoulea. Hyötyenergia ja otettu energia: hyötysuhde on annettu energia jaettuna otetulla energialla. Monta "

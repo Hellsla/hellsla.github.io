@@ -77,13 +77,13 @@ def kartta():
     rows = [
         (r"\text{vakionopeus tai levossa}", r"\to\ a = 0", r"\Sigma\overline{F} = \overline{0}"),
         (r"\text{lähtee levosta tai kiihtyy}", r"\to\ a \neq 0", r"\Sigma\overline{F} = m\overline{a}"),
-        (r"\text{tanko tai vipu voi kiertyä}", r"\to\ \text{myös momentit}", r"\Sigma M = 0"),
+        (r"\text{tanko tai vipu pysyy paikallaan}", r"\to\ \text{myös momentit}", r"\Sigma M = 0"),
         (r"\text{kaksi kappaletta köydellä}", r"\to\ \text{yhtälö kummallekin}", r"\Sigma F_i = m_i a_i"),
         (r"\text{kitkaton pinta}", r"\to\ \text{ei kitkavoimaa}", r"F_\mu = 0"),
         (r"\text{liukuu karhealla pinnalla}", r"\to\ \text{liukukitka}", r"F_\mu = \mu N"),
         (r"\text{pysyy paikallaan vaikka vedetään}", r"\to\ \text{lepokitka}", r"F \le F_{\mu_0}"),
         (r"\text{alkaa juuri liukua}", r"\to\ \text{lähtökitka}", r"F_{\mu_0} = \mu_0 N", r"\text{täysin kehittynyt lepokitka}"),
-        (r"\text{ilmanvastus, nopeus tasaantuu}", r"\to\ \text{voimat tasapainossa}", r"F_\text{v} = G"),
+        (r"\text{putoaa, ilmanvastus, nopeus tasaantuu}", r"\to\ \text{voimat tasapainossa}", r"F_\text{v} = G"),
     ]
     hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
     heights = [ch + (22 if len(r) > 3 else 0) for r in rows]
@@ -111,11 +111,11 @@ def kartta():
 
 ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita voimakuviosta ja katso, mikä tehtävän tunnusmerkki sopii. "
                "Vakionopeus tai levossa: kiihtyvyys on nolla, joten voimien summa on nolla. Lähtee levosta tai kiihtyy: kiihtyvyys ei "
-               "ole nolla, joten voimien summa on massa kertaa kiihtyvyys. Tanko tai vipu voi kiertyä: myös momenttien summa on nolla. "
+               "ole nolla, joten voimien summa on massa kertaa kiihtyvyys. Tanko tai vipu pysyy paikallaan: myös momenttien summa on nolla. "
                "Kaksi kappaletta köydellä: oma liikeyhtälö kummallekin kappaleelle. Kitkaton pinta: ei kitkavoimaa. Liukuu karhealla "
                "pinnalla: liukukitka on kitkakerroin kertaa tukivoima. Pysyy paikallaan vaikka vedetään: lepokitka, enintään lähtökitkan "
                "suuruinen. Alkaa juuri liukua: täysin kehittynyt lepokitka eli lähtökitka on lepokitkakerroin kertaa tukivoima. "
-               "Ilmanvastus ja nopeus tasaantuu: voimat ovat tasapainossa ja "
+               "Putoaa, ilmanvastus ja nopeus tasaantuu: voimat ovat tasapainossa ja "
                "ilmanvastus on yhtä suuri kuin paino.")
 
 

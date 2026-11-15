@@ -3,7 +3,7 @@
 - **0–5 min, Pohdinta.** Sähköauton akku ja kymmenen litraa bensiiniä. Opiskelijat arvioivat ensin parin kanssa sanallisesti, kumpaan mahtuu enemmän energiaa ja miksi lataus kestää. Vastausta ei anneta vielä. Se on teoriatiivistelmän Ydinajatus-osan lopussa ($40\,\text{kWh} : 2{,}3\,\text{kW} \approx 17\,\text{h}$, bensiinissä $7{,}5\,\text{kg} \cdot 43\,\text{MJ/kg} \approx 320\,\text{MJ} \approx 90\,\text{kWh}$).
 - **5–15 min, Ennusta (lähtötasotesti).** Kuusi kysymystä yksin, ilman muistiinpanoja. Kerää käsiä ylös, tai pyydä opiskelijoita kirjoittamaan vihkoon niiden kysymysten numerot, joihin he vastasivat väärin.
 - **15–25 min, Tutki.** Lauhdevoimalan pylväskuvaaja pareittain. Jokainen pari laskee kaikkien kolmen vaiheen hyötysuhteet ja tarkistaa niiden tulon. Puratkaa yhdessä: miksi höyrykierto on heikoin vaihe?
-- **25–35 min, Teoriatiivistelmä.** Käy tunnistuskaavio läpi. Kysy opiskelijoilta yksi esimerkki jokaisesta haarasta. Palaa Pohdintaan.
+- **25–35 min, Teoriatiivistelmä.** Käy tunnistuskaavio läpi. Kysy opiskelijoilta yksi esimerkki jokaisesta rivistä. Palaa Pohdintaan.
 - **35–55 min, Sovella.** Neljä monivalintaa pareittain (noin $6\,\text{min}$), sitten neljä laskua yksin. Nopeat jatkavat ilman vihjeitä. Hitaammat käyttävät vihjeitä yksi kerrallaan.
 - **55–65 min, Tarkista osaamisesi ja exit ticket.** Yksin. Opiskelija arvioi selitystehtävän itse kriteerien avulla.
 - **65–75 min, Tehtävät.** Kymmenessä minuutissa ehtii aloittaa yhden pitkän tehtävän koeolosuhteissa, ilman mallivastausta. Suositus: *Hakevoimala* a–b (laskutehtävä) tai *Kaivoksen pumppuvoimala* a–b (yhdistää moduuleja). Tehtävän loppu ja muut viisi tehtävää ovat kotitehtäviä, kaksi tai kolme kerrallaan ennen seuraavaa tuntia.

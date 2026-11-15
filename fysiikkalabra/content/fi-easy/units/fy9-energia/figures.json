@@ -22,7 +22,7 @@
  "teho": "teho",
  "hyötysuhde": "hyötysuhde",
  "energian lähde": "energian lähde",
- "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita luettelemalla energialajit ja katso, mikä tehtävän tunnusmerkki sopii. Suljettu järjestelmä: energia säilyy, joten energia alussa on yhtä suuri kuin energia lopussa. Energia ajan kuluessa: teho on energian muutos jaettuna ajalla. Tasainen teho, kesto tiedossa: energia on teho kertaa aika. Kilowattitunteja: muunna jouleiksi, yksi kilowattitunti on 3,6 megajoulea. Hyötyenergia ja otettu energia: hyötysuhde on annettu energia jaettuna otetulla energialla. Monta laitetta peräkkäin: kerro vaiheiden hyötysuhteet keskenään. Polttoaine, lämpöarvo: palamislämpö on lämpöarvo kertaa massa. Voima siirtää matkan: työ on voima kertaa matka.": "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Kirjoita ensin ylös energian lajit. Katso sitten, mikä tunnusmerkki sopii. Suljettu järjestelmä: energia säilyy. Energia alussa on yhtä suuri kuin energia lopussa. Energia ajan kuluessa: teho on energian muutos jaettuna ajalla. Tasainen teho, kesto tiedossa: energia on teho kertaa aika. Kilowattitunteja: muunna jouleiksi. Yksi kilowattitunti on 3,6 megajoulea. Hyötyenergia ja otettu energia: hyötysuhde on hyötyenergia jaettuna otetulla energialla. Monta laitetta peräkkäin: kerro laitteiden hyötysuhteet keskenään. Polttoaine, lämpöarvo: palamislämpö on lämpöarvo kertaa massa. Voima siirtää matkan: työ on voima kertaa matka.",
+ "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita luettelemalla energialajit ja katso, mikä tehtävän tunnusmerkki sopii. Eristetty systeemi: energia säilyy, joten energia alussa on yhtä suuri kuin energia lopussa. Energia ajan kuluessa: teho on energian muutos jaettuna ajalla. Tasainen teho, kesto tiedossa: energia on teho kertaa aika. Kilowattitunteja: muunna jouleiksi, yksi kilowattitunti on 3,6 megajoulea. Hyötyenergia ja otettu energia: hyötysuhde on annettu energia jaettuna otetulla energialla. Monta laitetta peräkkäin: kerro vaiheiden hyötysuhteet keskenään. Polttoaine, lämpöarvo: palamislämpö on lämpöarvo kertaa massa. Voima siirtää matkan: työ on voima kertaa matka.": "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Kirjoita ensin ylös energian lajit. Katso sitten, mikä tunnusmerkki sopii. Eristetty systeemi: energia säilyy. Energia alussa on yhtä suuri kuin energia lopussa. Energia ajan kuluessa: teho on energian muutos jaettuna ajalla. Tasainen teho, kesto tiedossa: energia on teho kertaa aika. Kilowattitunteja: muunna jouleiksi. Yksi kilowattitunti on 3,6 megajoulea. Hyötyenergia ja otettu energia: hyötysuhde on hyötyenergia jaettuna otetulla energialla. Monta laitetta peräkkäin: kerro laitteiden hyötysuhteet keskenään. Polttoaine, lämpöarvo: palamislämpö on lämpöarvo kertaa massa. Voima siirtää matkan: työ on voima kertaa matka.",
  "tehoista": "tehoista",
  "a": "a",
  "kerro hyötysuhteet": "kerro hyötysuhteet",
@@ -41,5 +41,6 @@
  "hyötyenergia ja otettu energia": "hyötyenergia ja otettu energia",
  "energia": "energia",
  "polttoaine, lämpöarvo": "polttoaine, lämpöarvo",
- "monta laitetta peräkkäin": "monta laitetta peräkkäin"
+ "monta laitetta peräkkäin": "monta laitetta peräkkäin",
+ "eristetty systeemi": "eristetty systeemi"
 }

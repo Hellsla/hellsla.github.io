@@ -118,7 +118,7 @@ def kartta():
         (r"\text{vakionopeus}", r"\to\ \text{paikka ajan mukaan}", r"x = x_0 + vt", 116, False),
         (r"\text{kiihtyvyys on vakio}", r"\to\ \text{nopeus ajan mukaan}", r"v = v_0 + at", 116, False),
         (r"\text{kiihtyvyys on vakio, matka?}", r"\to\ \text{paikka ajan mukaan}", r"x = x_0 + v_0 t + \tfrac12 at^2", 220, True),
-        (r"\text{ei kiihtyvyyttä tiedossa}", r"\to\ \text{keskinopeus}", r"\Delta x = \tfrac{v_0 + v}{2}\,t", 150, False),
+        (r"\text{vakiokiihtyvyys, a ei tiedossa}", r"\to\ \text{keskinopeus}", r"\Delta x = \tfrac{v_0 + v}{2}\,t", 150, False),
         (r"\text{nopeus paikkakuvaajasta}", r"\to\ \text{kulmakerroin}", r"v = \Delta x/\Delta t", 124, False),
         (r"\text{kiihtyvyys nopeuskuvaajasta}", r"\to\ \text{kulmakerroin}", r"a = \Delta v/\Delta t", 124, False),
         (r"\text{matka nopeuskuvaajasta}", r"\to\ \text{kuvaajan alla}", r"\text{pinta-ala}", 116, False),
@@ -151,10 +151,9 @@ def kartta():
 ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Katso, mitä tehtävässä tiedetään tai mikä kuvaaja on "
                "annettu. Vakionopeus: paikka ajan mukaan on x on x nolla plus v t. Kiihtyvyys on vakio: nopeus ajan mukaan on "
                "v on v nolla plus a t. Kiihtyvyys on vakio ja matkaa kysytään: paikka on x nolla plus v nolla t plus puolet a "
-               "t toiseen. Kiihtyvyyttä ei tiedetä: keskinopeus, jolloin siirtymä on alku- ja loppunopeuden keskiarvo kertaa "
+               "t toiseen. Vakiokiihtyvyys, a ei tiedossa: keskinopeus, jolloin siirtymä on alku- ja loppunopeuden keskiarvo kertaa "
                "aika. Nopeus paikkakuvaajasta: kulmakerroin, v on delta x per delta t. Kiihtyvyys nopeuskuvaajasta: "
-               "kulmakerroin, a on delta v per delta t. Matka nopeuskuvaajasta: kuvaajan ja aika-akselin väliin jäävä pinta- "
-               "ala.")
+               "kulmakerroin, a on delta v per delta t. Matka nopeuskuvaajasta: kuvaajan ja aika-akselin väliin jäävä pinta-ala.")
 
 
 def kuvaajat():

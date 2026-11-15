@@ -112,7 +112,7 @@ def kartta():
         (r"\text{ympyrärata}", r"\to\ \text{normaalikiihtyvyys}", r"a_\text{n} = v^2/r", 116, False),
         (r"\text{kulmanopeus annettu}", r"\to\ \text{ratanopeus}", r"v = \omega r", 100, False),
         (r"\text{mikä voima kaartaa rataa?}", r"\to\ \text{voimien summa}", r"\Sigma F = ma_\text{n}", 124, False),
-        (r"\text{kaarre tasaisella tiellä}", r"\to\ \text{kitka kaartaa}", r"F_\mu = mv^2/r", 124, False),
+        (r"\text{kaarre tasaisella tiellä}", r"\to\ \text{lepokitka kaartaa}", r"F = mv^2/r", 124, False),
         (r"\text{kaksi kappaletta vetää toisiaan}", r"\to\ \text{gravitaatiolaki}", r"F_\text{g} = \gamma Mm/r^2", 170, True),
         (r"\text{putoamiskiihtyvyys kysytään}", r"\to\ \text{paino on gravitaatiota}", r"mg = \gamma Mm/r^2", 170, True),
         (r"\text{satelliitti kiertää}", r"\to\ \text{gravitaatio kaartaa}", r"\gamma Mm/r^2 = mv^2/r", 200, True),
@@ -145,7 +145,7 @@ def kartta():
 ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Piirrä ensin voimakuvio ja katso, mikä tehtävän "
                "tunnusmerkki sopii. Tanko pysyy paikallaan: myös momenttien summa on nolla. Ympyrärata: normaalikiihtyvyys on "
                "v toiseen jaettuna r:llä. Kulmanopeus annettu: ratanopeus on omega kertaa r. Mikä voima kaartaa rataa: voimien "
-               "summa on massa kertaa normaalikiihtyvyys. Kaarre tasaisella tiellä: kitka kaartaa, ja kitka on m v toiseen per "
+               "summa on massa kertaa normaalikiihtyvyys. Kaarre tasaisella tiellä: lepokitka kaartaa, ja kitkavoima on m v toiseen per "
                "r. Kaksi kappaletta vetää toisiaan: gravitaatiolaki, F g on gamma M m per r toiseen. Putoamiskiihtyvyys "
                "kysytään: paino on gravitaatiota, m g on gamma M m per r toiseen. Satelliitti kiertää: gravitaatio kaartaa "
                "rataa, gamma M m per r toiseen on m v toiseen per r.")

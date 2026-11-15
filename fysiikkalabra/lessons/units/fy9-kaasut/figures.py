@@ -105,7 +105,7 @@ def kartta():
         (r"\text{ainemäärä (mol) tiedossa}", r"\to\ \text{tilanyhtälö}", r"pV = nRT", 124, False),
         (r"\text{tila muuttuu, ainemäärä ei}", r"\to\ \text{kaksi tilaa}", r"p_1V_1/T_1 = p_2V_2/T_2", 180, True),
         (r"\text{lämpötila celsiusasteina}", r"\to\ \text{muunna kelvineiksi}", r"T = \theta + 273{,}15\,\text{K}", 190, True),
-        (r"\text{kaasu laajenee tai puristuu}", r"\to\ \text{kaasun työ}", r"W = p\Delta V", 124, False),
+        (r"\text{paine vakio, tilavuus muuttuu}", r"\to\ \text{työn suuruus}", r"W = p\Delta V", 130, False),
         (r"\text{sisäenergia muuttuu}", r"\to\ \text{1. pääsääntö}", r"\Delta U = Q + W", 130, False),
         (r"\text{kone ottaa lämmön, tekee työn}", r"\to\ \text{hyötysuhde}", r"\eta = W/Q_1", 124, False),
     ]
@@ -141,7 +141,7 @@ ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita 
                "ilmanpaine, plus nesteen paine. Ainemäärä tiedossa: käytä tilanyhtälöä, paine kertaa tilavuus on ainemäärä "
                "kertaa kaasuvakio kertaa lämpötila. Tila muuttuu, ainemäärä ei: kirjoita kaksi tilaa, paineen ja tilavuuden "
                "tulo jaettuna lämpötilalla on sama alussa ja lopussa. Lämpötila celsiusasteina: muunna kelvineiksi lisäämällä "
-               "273,15. Kaasu laajenee tai puristuu: kaasun työ on paine kertaa tilavuuden muutos. Sisäenergia muuttuu: "
+               "273,15. Paine vakio, tilavuus muuttuu: työn suuruus on paine kertaa tilavuuden muutoksen suuruus. Sisäenergia muuttuu: "
                "lämpöopin ensimmäinen pääsääntö, sisäenergian muutos on lämpö plus työ. Kone ottaa lämmön ja tekee työn: "
                "lämpövoimakoneen hyötysuhde on työ jaettuna otetulla lämmöllä.")
 

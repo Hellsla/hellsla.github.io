@@ -98,7 +98,7 @@ def kartta():
         (r"\text{onko epävarmuus pieni?}", r"\to\ \text{suhteellinen epävarmuus}", r"\varepsilon = \Delta x / \bar{x}", 150, True),
         (r"\text{suureet riippuvat lineaarisesti}", r"\to\ \text{sovita suora}", r"y = kx + b", 100, False),
         (r"\text{tulos kulmakertoimesta}", r"\to\ \text{kaukaiset pisteet}", r"k = \Delta y / \Delta x", 130, False),
-        (r"\text{suora ei kulje origon kautta}", r"\to\ \text{systemaattinen virhe}", r"b \neq 0", 80, False),
+        (r"\text{malli origon kautta, suora ei}", r"\to\ \text{systemaattinen virhe}", r"b \neq 0", 80, False),
     ]
     hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
     heights = [ch + (30 if r[4] else 0) for r in rows]
@@ -107,7 +107,7 @@ def kartta():
     f = Fig("fy9ko-kartta", height, ARIA_KARTTA, width=380, size=21)
     f.line(14, hub_h + 8, 14, ys[-1] + heights[-1] / 2, RULE, 3)
     f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
-    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan menetelmän?}", "middle", INK, w=330)
     f.tex(190, 8 + 54, r"\text{tehtävä kysyy, menetelmä vastaa}", "middle", INK, size=17, w=340)
     for (sign, choice, law, pw, tall), y, ch_ in zip(rows, ys, heights):
         f.line(14, y + ch_ / 2, x0, y + ch_ / 2, RULE, 3)
@@ -130,7 +130,7 @@ ARIA_KARTTA = ("Tunnistuskaavio: mikä menetelmä sopii kokeellisen tehtävän k
                "suurin miinus pienin tulos jaettuna kahdella. Ilmoita lopullinen tulos: keskiarvo plus miinus virhearvio. Onko "
                "epävarmuus pieni: suhteellinen epävarmuus on virhearvio jaettuna keskiarvolla. Suureet riippuvat "
                "lineaarisesti: sovita suora y on k x plus b. Tulos kulmakertoimesta: kulmakerroin luetaan suoran kahdesta "
-               "kaukana toisistaan olevasta pisteestä, k on delta y per delta x. Suora ei kulje origon kautta: vakio b ei ole "
+               "kaukana toisistaan olevasta pisteestä, k on delta y per delta x. Malli kulkee origon kautta, mutta suora ei: vakio b ei ole "
                "nolla, mikä viittaa systemaattiseen virheeseen.")
 
 

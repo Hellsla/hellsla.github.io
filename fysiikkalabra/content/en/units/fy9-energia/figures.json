@@ -22,7 +22,7 @@
  "teho": "power",
  "hyötysuhde": "efficiency",
  "energian lähde": "source of energy",
- "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita luettelemalla energialajit ja katso, mikä tehtävän tunnusmerkki sopii. Suljettu järjestelmä: energia säilyy, joten energia alussa on yhtä suuri kuin energia lopussa. Energia ajan kuluessa: teho on energian muutos jaettuna ajalla. Tasainen teho, kesto tiedossa: energia on teho kertaa aika. Kilowattitunteja: muunna jouleiksi, yksi kilowattitunti on 3,6 megajoulea. Hyötyenergia ja otettu energia: hyötysuhde on annettu energia jaettuna otetulla energialla. Monta laitetta peräkkäin: kerro vaiheiden hyötysuhteet keskenään. Polttoaine, lämpöarvo: palamislämpö on lämpöarvo kertaa massa. Voima siirtää matkan: työ on voima kertaa matka.": "Recognition chart: how do I tell which law to use? Start by listing the forms of energy and see which sign in the task fits. Closed system: energy is conserved, so the initial energy equals the final energy. Energy over time: power is the change of energy divided by the time. Steady power, duration known: energy is power times time. Kilowatt-hours: convert to joules, one kilowatt-hour is 3.6 megajoules. Useful energy and input energy: efficiency is the useful energy divided by the input energy. Several devices in a row: multiply the efficiencies of the stages. Fuel, heating value: the heat released in burning is the heating value times the mass. A force moves a distance: the work is force times distance.",
+ "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita luettelemalla energialajit ja katso, mikä tehtävän tunnusmerkki sopii. Eristetty systeemi: energia säilyy, joten energia alussa on yhtä suuri kuin energia lopussa. Energia ajan kuluessa: teho on energian muutos jaettuna ajalla. Tasainen teho, kesto tiedossa: energia on teho kertaa aika. Kilowattitunteja: muunna jouleiksi, yksi kilowattitunti on 3,6 megajoulea. Hyötyenergia ja otettu energia: hyötysuhde on annettu energia jaettuna otetulla energialla. Monta laitetta peräkkäin: kerro vaiheiden hyötysuhteet keskenään. Polttoaine, lämpöarvo: palamislämpö on lämpöarvo kertaa massa. Voima siirtää matkan: työ on voima kertaa matka.": "Recognition chart: how do I tell which law to use? Start by listing the forms of energy and see which sign in the task fits. Isolated system: energy is conserved, so the initial energy equals the final energy. Energy over time: power is the change of energy divided by the time. Steady power, duration known: energy is power times time. Kilowatt-hours: convert to joules, one kilowatt-hour is 3.6 megajoules. Useful energy and input energy: efficiency is the useful energy divided by the input energy. Several devices in a row: multiply the efficiencies of the stages. Fuel, heating value: the heat released in burning is the heating value times the mass. A force moves a distance: the work is force times distance.",
  "tehoista": "from powers",
  "a": "a",
  "kerro hyötysuhteet": "multiply efficiencies",
@@ -41,5 +41,6 @@
  "hyötyenergia ja otettu energia": "useful and input energy",
  "energia": "energy",
  "polttoaine, lämpöarvo": "fuel, heating value",
- "monta laitetta peräkkäin": "several devices in a row"
+ "monta laitetta peräkkäin": "several devices in a row",
+ "eristetty systeemi": "isolated system"
 }

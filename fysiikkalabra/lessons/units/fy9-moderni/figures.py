@@ -101,33 +101,40 @@ def kartta():
     card per sign in the task's own words (YO language): the sign on top, the choice it leads to and, as the result in a
     pill in the site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
     rows = [
-        (r"\text{fotonin taajuus tai aallonpituus}", r"\to\ \text{fotonin energia}", r"E = hf"),
-        (r"\text{valo irrottaa elektroneja}", r"\to\ \text{valosähköinen ilmiö}", r"hf = W + E_\text{k}"),
-        (r"\text{atomi lähettää tai absorboi}", r"\to\ \text{kvanttihyppy}", r"hf = E_\text{y} - E_\text{a}"),
-        (r"\text{ydin hajoaa ajan kuluessa}", r"\to\ \text{hajoamislaki}", r"N = N_0 e^{-\lambda t}"),
-        (r"\text{montako hajoamista sekunnissa}", r"\to\ \text{aktiivisuus}", r"A = \lambda N"),
-        (r"\text{ydinreaktion massaero}", r"\to\ \text{vapautuva energia}", r"E = \Delta m c^2"),
-        (r"\text{säteilyn laji otetaan huomioon}", r"\to\ \text{ekvivalenttiannos}", r"H = w_\text{R} D"),
-        (r"\text{etäisyys lähteestä muuttuu}", r"\to\ \text{pistemäinen lähde}", r"\dot{H} \propto 1/r^2"),
-        (r"\text{säteily läpäisee aineen}", r"\to\ \text{heikeneminen}", r"I = I_0 e^{-\mu x}"),
+        (r"\text{fotonin taajuus tai aallonpituus}", r"\to\ \text{fotonin energia}", r"E = hf", 100, False),
+        (r"\text{valo irrottaa elektroneja}", r"\to\ \text{valosähköinen ilmiö}", r"hf = W + E_\text{k,max}", 100, True),
+        (r"\text{atomi lähettää tai absorboi}", r"\to\ \text{kvanttihyppy}", r"hf = E_\text{y} - E_\text{a}", 100, False),
+        (r"\text{ydin hajoaa ajan kuluessa}", r"\to\ \text{hajoamislaki}", r"N = N_0 e^{-\lambda t}", 100, False),
+        (r"\text{montako hajoamista sekunnissa}", r"\to\ \text{aktiivisuus}", r"A = \lambda N", 100, False),
+        (r"\text{ydinreaktion massaero}", r"\to\ \text{vapautuva energia}", r"E = \Delta m c^2", 100, False),
+        (r"\text{säteilyn laji otetaan huomioon}", r"\to\ \text{ekvivalenttiannos}", r"H = w_\text{R} D", 100, False),
+        (r"\text{etäisyys lähteestä muuttuu}", r"\to\ \text{pistemäinen lähde}", r"\dot{H} \propto 1/r^2", 100, False),
+        (r"\text{säteily läpäisee aineen}", r"\to\ \text{heikeneminen}", r"I = I_0 e^{-\mu x}", 100, False),
     ]
     hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
-    ys = [top + (ch + gap) * k for k in range(len(rows))]
-    height = ys[-1] + ch + 8
+    heights = [ch + (30 if r[4] else 0) for r in rows]
+    ys = [top + sum(heights[:k]) + gap * k for k in range(len(rows))]
+    height = ys[-1] + heights[-1] + 8
     f = Fig("fy9mo-kartta", height, ARIA_KARTTA, width=380, size=21)
-    f.line(14, hub_h + 8, 14, ys[-1] + ch / 2, RULE, 3)
+    f.line(14, hub_h + 8, 14, ys[-1] + heights[-1] / 2, RULE, 3)
     f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
     f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
     f.tex(190, 8 + 54, r"\text{mikä suure annetaan? sitten tunnusmerkki}", "middle", INK, size=17, w=340)
-    for (sign, choice, law), y in zip(rows, ys):
-        f.line(14, y + ch / 2, x0, y + ch / 2, RULE, 3)
-        f.rect(x0, y, x1 - x0, ch, WHITE, MUTED, 2, 10)
+    for (sign, choice, law, pw, tall), y, ch_ in zip(rows, ys, heights):
+        f.line(14, y + ch_ / 2, x0, y + ch_ / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch_, WHITE, MUTED, 2, 10)
         f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
         f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
         yy = y + 55
-        f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=170)
-        f.rect(x1 - 134, yy - 11, 124, 24, ACCENT, ACCENT, 2, 8)
-        f.tex(x1 - 72, yy + 1, law, "middle", WHITE, size=17, w=116)
+        f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 38 if tall else 170)
+        if tall:                                               # a long result on a line of its own
+            yy += 30
+            pw = 180
+            f.rect(x1 - 10 - pw, yy - 12, pw, 26, ACCENT, ACCENT, 2, 8)
+        else:
+            pw = 124
+            f.rect(x1 - 10 - pw, yy - 11, pw, 24, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 10 - pw / 2, yy + 1, law, "middle", WHITE, size=17, w=pw - 8)
     return f.svg()
 
 

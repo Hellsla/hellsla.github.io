@@ -144,7 +144,7 @@ def kartta():
     f = Fig("fy9m-kartta", height, ARIA_KARTTA, width=380, size=21)
     f.line(14, hub_h + 8, 14, ys[-1] + ch / 2, RULE, 3)
     f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
-    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan menetelmän?}", "middle", INK, w=330)
     f.tex(190, 8 + 54, r"\text{mitä aineisto antaa, mitä kysytään?}", "middle", INK, size=17, w=340)
     for (sign, choice, law), y in zip(rows, ys):
         f.line(14, y + ch / 2, x0, y + ch / 2, RULE, 3)
