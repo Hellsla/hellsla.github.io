@@ -17,7 +17,7 @@ fy5-11/koysi|5|5|5|5|PIDA|Kiinteä pää kääntää pulssin, vapaa ei.||
 fy5-11/diffraktio|5|5|5|5|PIDA|||
 fy5-11/heijastuslaki|5|5|4|5|PIDA|||
 fy5-11/huygens|5|4|4|5|PIDA|Raskas konstruktio, mutta kaikki osat nimetty.||
-fy5-12/hero|5|5|5|5|PIDA|||
+fy5-12/hero|5|5|5|5|PIDA|||; korjattu uudelleen ja hyväksytty 2026-11-15 (opettaja näki ennen–jälkeen-kuvat, PR #596)
 fy5-12/pulssit|5|5|5|5|PIDA|||
 fy5-12/kuvio|5|5|4|5|PIDA|||
 fy5-12/matkaero|5|5|4|5|PIDA|||
@@ -29,7 +29,7 @@ fy5-13/solmut|5|5|4|5|PIDA|||
 fy5-13/kieli|5|5|4|5|PIDA|||
 fy5-13/putket|5|5|5|5|PIDA|Avoimen ja suljetun pään ehdot oikein.||
 fy5-13/kuvio-tehtava|5|5|4|5|PIDA|||
-fy5-14/hero|5|4|4|4|KEVYT|Ambulanssi ja kuulija ovat kuvassa, mutta Dopplerin ilmiö ei: aaltorintamat puuttuvat (tiheämmät auton edessä, harvemmat takana).||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12
+fy5-14/hero|5|4|4|4|KEVYT|Ambulanssi ja kuulija ovat kuvassa, mutta Dopplerin ilmiö ei: aaltorintamat puuttuvat (tiheämmät auton edessä, harvemmat takana).||KEVYT KORJAUS hyväksytty (opettaja 2026-11-11); TEHTY ja hyväksytty 2026-11-12; korjattu uudelleen ja hyväksytty 2026-11-15 (opettaja näki ennen–jälkeen-kuvat, PR #596)
 fy5-14/pitkittainen|5|5|5|5|PIDA|Hiukkastiheys ja painekuvaaja kohdakkain.||
 fy5-14/alueet|5|5|4|5|PIDA|||
 fy5-14/sointi|5|5|4|5|PIDA|||
