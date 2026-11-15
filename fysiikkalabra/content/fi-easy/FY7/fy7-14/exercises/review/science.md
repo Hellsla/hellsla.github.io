@@ -4,7 +4,7 @@ CONTENT-HASH: 7f19929160d7f4d9
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (fy7-14-L3-05, Kuvaajan lukeminen) — the intercept is called "eikä mittaus", which implies the table rows are measurements, while the task text no longer says what kind of data the table holds. Not an error: the task nowhere claims a measurement was made. If a label is wanted, the caption can carry it.
+- exercises/solutions.md (fy7-14-L3-05, Kuvaajan lukeminen) — the intercept is called "eikä se ole mittaus", which implies the table rows are measurements, while the task text no longer says what kind of data the table holds. Not an error: the task nowhere claims a measurement was made. If a label is wanted, the caption can carry it.
 
 ## Checked
 - Delta: the diff is one phrase in fy7-14-L3-05, "(esimerkkiaineisto)" removed from the sentence that introduces the table. No number, symbol, answer, unit or tolerance changed; solutions.md and answers.py are untouched.
