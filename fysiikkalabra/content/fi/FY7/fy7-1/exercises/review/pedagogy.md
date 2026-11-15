@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0d7da54a5fc6a1b1
-SCOPE: delta added-exercise from aea283ed5e43115e base 8f23aa7ae3bd
+CONTENT-HASH: 9a398310c855a2de
 
 ## Blocking
 - none
 
 ## Polish
-- fy7-1-L2-09 duplicates the worked-example numbers (14/50 uT, 74 deg) and L2-03/L3-04 (inclination from components); consider other numbers or drop the repeat. Answer field asks only B while b) also asks I; say so or accept both.
+- exercises.json (L1 true/false "Maan sauvamagneettimallin etelänapa"): the phrase is long and slightly heavy for a 17-year-old; consider "Maan magneettikentän etelänapa (sauvamagneettimallissa)". The wording is at least consistent with the neighbouring task that uses "sauvamagneettimallin etelänapa".
 
 ## Checked
-- L2-08: 3-4-5 grid reading, B_h 15 / B_m 20 uT, answer 53,13 deg; question is last, grid reading explained step by step; not a repeat of L2-05 (table, no figure).
-- L2-09: reading components from the grid then B and I; solution complete; description equals the figure data without B or I.
-- Mix at level 2 is now 9 tasks incl. two figure-reading ones; progression fine.
-- Language checked: fi. Hash 0d7da54a5fc6a1b1 at start and end.
+- Degree notation `{}^\circ` to `^\circ` in L1-08, L2-07 and the solutions of L1-08, L2-05, L2-07, L3-04 and L3-05: only the symbol's spacing changed, with no number, unit or meaning changed; the solutions stay complete.
+- Pole wording (true/false item and its feedback): "magneettinen etelänapa" is now "sauvamagneettimallin etelänapa". This is more exact, still repairs the misconception, and agrees with the "Sauvamagneettimallissa ..." choices in the same task.
+- L3-02 (paper clip): "kovassa teräksessä ne jäävät" is now "teräksessä moni niistä jää", and the solution's Periaate and Mallivastaus say the same ("järjestys säilyy osittain"). The model answer, solution and rubric agree, and the wording is more accurate than "kovassa".
+- The diff changes no answer, unit, tolerance or figure.
+- Language checked: fi. Hash 9a398310c855a2de at start and end.
