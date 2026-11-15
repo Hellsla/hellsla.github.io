@@ -315,10 +315,10 @@ def render_md(text, **kw):
     def stash(m):
         x = m.group(0)
         if x.startswith("$$"):                                                       # equals signs of a calculation in one column; a chain split by hand in the source is one row on a wide screen
-            x = mathlayout.wide_narrow_html(x[2:-2]) or "$$" + mathlayout.align_equals(x[2:-2]) + "$$"
+            x = mathlayout.display_html(m.group(1), m.group(2) or "")                # "$$a = b$$." the mark belongs to the formula's last row, never alone on the next line
         else: x = mathlayout.split_list(x[1:-1]) or x                                # a list of values may wrap between its items
         maths.append(x); return f"MATHTOKEN{len(maths) - 1}X"
-    text = re.sub(r"\$\$.*?\$\$|\$[^$\n]+?\$", stash, text, flags=re.S)
+    text = re.sub(mathlayout.DISPLAY_OR_INLINE, stash, text, flags=re.S)
     html = markdown.markdown(text, extensions=["fenced_code", "tables"] + kw.get("extensions", []))
     html = fbdspec.restore(re.sub(r"MATHTOKEN(\d+)X", lambda m: maths[int(m.group(1))], html), fbds)
     return figcat.restore(html, figrefs, T.lang) if figrefs else html
