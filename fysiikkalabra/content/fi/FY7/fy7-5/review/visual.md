@@ -1,9 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8e426d6c8acacf91
+CONTENT-HASH: 9156a50e302c58c1
+SCOPE: delta
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: opened fig-13-390 (graph) and fig-row-1280 (Faraday figure beside text); restyled figure legible, labels LaTeX, nothing clipped; webereiksi/webereina wording is correct Finnish.
+- Capture fy7-5-stage-herata-390 (Pohdinta at 390 px): the shortened hook sentence ("Vuonna 1831 Michael Faraday tutki laboratoriossaan, synnyttääkö magneetti käämiin virran: magneetti käämin vieressä ei tuottanut virtaa.") reads as fluent Finnish, no clipping, layout and question block intact.
+- Delta only (inquiry.json hook text); rest not re-reviewed. Hash identical at start and end.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
