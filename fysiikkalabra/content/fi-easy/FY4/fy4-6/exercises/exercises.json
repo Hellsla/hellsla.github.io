@@ -59,10 +59,10 @@
         {
           "text": "$F_{\\mu 0} = 20\\,\\text{N}$, koska levossa lepokitka on yhtä suuri kuin työntö.",
           "correct": true,
-          "feedback": "Oikein. Levossa voimien summa on nolla. Siksi lepokitka on yhtä suuri kuin työntö ja vastakkaissuuntainen. Se on pienempi kuin enimmäisarvo."
+          "feedback": "Oikein. Levossa voimien summa on nolla. Siksi lepokitka on yhtä suuri kuin työntö ja vastakkaissuuntainen. Se on pienempi kuin lähtökitka."
         },
         {
-          "text": "$F_{\\mu 0} = 60\\,\\text{N}$, koska lepokitka on aina yhtä suuri kuin sen enimmäisarvo.",
+          "text": "$F_{\\mu 0} = 60\\,\\text{N}$, koska lepokitka on aina yhtä suuri kuin lähtökitka.",
           "feedback": "Lepokitka on vain niin suuri kuin tilanne vaatii. Enimmäisarvo $\\mu_0 N$ on yläraja. Se ei ole kitkan oikea arvo."
         },
         {
@@ -70,8 +70,8 @@
           "feedback": "Juuri kitka estää laatikkoa liikkumasta. Jos kitka olisi nolla, työntö panisi laatikon liikkeelle."
         },
         {
-          "text": "$F_{\\mu 0} = 40\\,\\text{N}$, koska lepokitka on enimmäisarvon ja työnnön erotus.",
-          "feedback": "Kitkaa ei saa vähentämällä työntö enimmäisarvosta. Levossa kitka ja työntö ovat yhtä suuret ja vastakkaiset."
+          "text": "$F_{\\mu 0} = 40\\,\\text{N}$, koska lepokitka on lähtökitkan ja työnnön erotus.",
+          "feedback": "Kitkaa ei saa vähentämällä työntö lähtökitkasta. Levossa kitka ja työntö ovat yhtä suuret ja vastakkaiset."
         }
       ]
     },

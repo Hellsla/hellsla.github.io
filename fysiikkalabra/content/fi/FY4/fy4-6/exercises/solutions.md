@@ -230,13 +230,13 @@ komponentit G
 
 ## fy4-6-L1-06
 **Kysytty:** lattian laatikkoon kohdistaman kitkavoiman suuruus, kun laatikko pysyy paikallaan
-**Periaate:** Laatikko on levossa, joten Newtonin toisen lain mukaan vaakasuuntaisten voimien summa on nolla. Lepokitka mukautuu tilanteeseen: se on yhtä suuri kuin työntö ja vastakkaissuuntainen, kunhan työntö ei ylitä lepokitkan enimmäisarvoa.
-**Mallivastaus:** Kitkavoiman suuruus on $20\,\text{N}$, koska laatikko on levossa ja kitka kumoaa työnnön. Enimmäisarvo $60\,\text{N}$ on vain yläraja, ja työntö $20\,\text{N}$ jää sen alle. Väite, jonka mukaan kitka olisi aina enimmäisarvon suuruinen, on väärä, koska lepokitka on vain niin suuri kuin tilanne vaatii. Väite, jonka mukaan kitkaa ei olisi lainkaan, on väärä, koska juuri kitka estää laatikkoa liikkumasta. Väite, jonka mukaan kitka olisi enimmäisarvon ja työnnön erotus, on väärä, koska levossa kitka ja työntö ovat yhtä suuret.
+**Periaate:** Laatikko on levossa, joten Newtonin toisen lain mukaan vaakasuuntaisten voimien summa on nolla. Lepokitka mukautuu tilanteeseen: se on yhtä suuri kuin työntö ja vastakkaissuuntainen, kunhan työntö ei ylitä lähtökitkaa.
+**Mallivastaus:** Kitkavoiman suuruus on $20\,\text{N}$, koska laatikko on levossa ja kitka kumoaa työnnön. Lähtökitka $60\,\text{N}$ on vain yläraja, ja työntö $20\,\text{N}$ jää sen alle. Väite, jonka mukaan kitka olisi aina lähtökitkan suuruinen, on väärä, koska lepokitka on vain niin suuri kuin tilanne vaatii. Väite, jonka mukaan kitkaa ei olisi lainkaan, on väärä, koska juuri kitka estää laatikkoa liikkumasta. Väite, jonka mukaan kitka olisi lähtökitkan ja työnnön erotus, on väärä, koska levossa kitka ja työntö ovat yhtä suuret.
 
 ## fy4-6-L1-07
 **Annettu:** $m = 50\,\text{kg}$, $\mu_0 = 0{,}45$, laatikko on levossa vaakasuoralla lattialla; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** pienin vaakasuora voima $F$ yksikössä $\text{N}$, jolla laatikko lähtee liikkeelle
-**Periaate:** Laatikko lähtee liikkeelle, kun työntö ylittää lepokitkan enimmäisarvon $\mu_0 N$. Rajatapauksessa työntö on yhtä suuri kuin tämä enimmäisarvo. Pystysuunnassa laatikko ei kiihdy, joten $N = mg$.
+**Periaate:** Laatikko lähtee liikkeelle, kun työntö ylittää lähtökitkan $\mu_0 N$. Rajatapauksessa työntö on yhtä suuri kuin lähtökitka. Pystysuunnassa laatikko ei kiihdy, joten $N = mg$.
 **Voimakuvio:** Laatikko suorakulmiona, $x$ työnnön suuntaan ja $y$ ylös. Työntövoima $\overline{F}$ eteenpäin, lepokitka $\overline{F}_\mu$ taaksepäin ja rajatapauksessa yhtä pitkä, paino $\overline{G}$ alas ja tukivoima $\overline{N}$ ylös yhtä pitkänä.
 ```voimakuvio
 pinta 0
@@ -272,7 +272,7 @@ akselit 0
 ## fy4-6-L2-06
 **Annettu:** $m = 0{,}75\,\text{kg}$, esimerkkiaineiston vetovoima $F$ ajan $t$ funktiona; suurin lukema $3{,}3\,\text{N}$ hetkellä $t = 2{,}5\,\text{s}$, tasaisen liikkeen lukemat $2{,}2\,\text{N}$, $2{,}1\,\text{N}$ ja $2{,}2\,\text{N}$ hetkillä $3{,}5\,\text{s}$–$4{,}5\,\text{s}$; $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** liukukitkakerroin $\mu$ (ei yksikköä) sekä lepokitkakerroin $\mu_0$
-**Periaate:** Ennen liikkeellelähtöä veto kasvaa ja lepokitka kasvaa sen mukana. Kun veto ylittää lepokitkan enimmäisarvon $\mu_0 N$, palikka lähtee liikkeelle, ja kuvaajan huippu on tämä enimmäisarvo. Tasaisella nopeudella voimien summa on nolla, joten veto on yhtä suuri kuin liukukitka $\mu N$. Vaakasuoralla pöydällä $N = mg$.
+**Periaate:** Ennen liikkeellelähtöä veto kasvaa ja lepokitka kasvaa sen mukana. Kun veto ylittää lähtökitkan $\mu_0 N$, palikka lähtee liikkeelle, ja kuvaajan huippu on lähtökitka. Tasaisella nopeudella voimien summa on nolla, joten veto on yhtä suuri kuin liukukitka $\mu N$. Vaakasuoralla pöydällä $N = mg$.
 **Kuvaajan lukeminen:** Veto kasvaa suoraviivaisesti hetkeen $t = 2{,}5\,\text{s}$ asti, jossa on kuvaajan huippu $3{,}3\,\text{N}$. Huipun jälkeen veto putoaa ja pysyy lähes vakiona, noin $2{,}2\,\text{N}$, kun palikka liikkuu tasaisella nopeudella. Vakiovedon lukemien summa on $2{,}2\,\text{N} + 2{,}1\,\text{N} + 2{,}2\,\text{N} = 6{,}5\,\text{N}$, joten niiden keskiarvo on $6{,}5\,\text{N} : 3 = 2{,}17\,\text{N}$.
 **Kaava:** $N = mg$, $\mu_0 = \dfrac{F_{\text{huippu}}}{N}$ ja $\mu = \dfrac{F_{\text{tasainen}}}{N}$
 **Muunnokset:** Massa on kilogrammoina ja voimat newtoneina, joten muunnoksia ei tarvita.
@@ -283,7 +283,7 @@ akselit 0
 ## fy4-6-L2-07
 **Annettu:** esimerkkiaineiston viisi kulmaa: $24^\circ$, $26^\circ$, $25^\circ$, $27^\circ$ ja $25^\circ$
 **Kysytty:** lepokitkakerroin $\mu_0$ (ei yksikköä)
-**Periaate:** Laudan kallistuessa painon rinteen suuntainen komponentti $G_x = mg\sin\alpha$ kasvaa, ja lepokitka kasvaa sen mukana. Palikka lähtee liukumaan, kun komponentti ylittää lepokitkan enimmäisarvon $\mu_0 N$. Kohtisuorassa suunnassa palikka ei kiihdy, joten $N = mg\cos\alpha$. Rajakulmalla $\alpha_0$ pätee $mg\sin\alpha_0 = \mu_0\,mg\cos\alpha_0$. Massa supistuu, ja jakamalla puolittain saadaan $\mu_0 = \tan\alpha_0$.
+**Periaate:** Laudan kallistuessa painon rinteen suuntainen komponentti $G_x = mg\sin\alpha$ kasvaa, ja lepokitka kasvaa sen mukana. Palikka lähtee liukumaan, kun komponentti ylittää lähtökitkan $\mu_0 N$. Kohtisuorassa suunnassa palikka ei kiihdy, joten $N = mg\cos\alpha$. Rajakulmalla $\alpha_0$ pätee $mg\sin\alpha_0 = \mu_0\,mg\cos\alpha_0$. Massa supistuu, ja jakamalla puolittain saadaan $\mu_0 = \tan\alpha_0$.
 **Kaava:** $\mu_0 = \tan\alpha_0$, missä $\alpha_0$ on mittausten keskiarvo
 **Muunnokset:** Kulmat ovat asteina, joten muunnoksia ei tarvita. Laskimen on oltava asteiden tilassa.
 **Sijoitus:** Kulmien summa on $24^\circ + 26^\circ + 25^\circ + 27^\circ + 25^\circ = 127^\circ$, joten keskiarvo on $\alpha_{0,\text{ka}} = 127^\circ : 5 = 25{,}4^\circ$ ja $\mu_0 = \tan 25{,}4^\circ = 0{,}4748$

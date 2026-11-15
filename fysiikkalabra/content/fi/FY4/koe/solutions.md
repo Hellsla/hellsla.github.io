@@ -192,7 +192,7 @@
 **Kaava:** $a = \dfrac{\Delta v}{\Delta t}$
 **Muunnokset:** $54\,\text{km/h} = \dfrac{54}{3{,}6}\,\text{m/s} = 15\,\text{m/s}$
 **Sijoitus:** $a = \dfrac{15\,\tfrac{\text{m}}{\text{s}}}{3{,}0\,\text{s}} = 5{,}0\,\tfrac{\text{m}}{\text{s}^2}$
-**Vastaus:** Auton hidastuvuus on $5{,}0\,\text{m/s}^2$, enemmän kuin lepokitkan enimmäisarvo $3{,}9\,\text{m/s}^2$. Laatikko liukuu siis lavalla eteenpäin eli kohti ohjaamoa.
+**Vastaus:** Auton hidastuvuus on $5{,}0\,\text{m/s}^2$, enemmän kuin suurin hidastuvuus $3{,}9\,\text{m/s}^2$, jonka lähtökitka voi laatikolle antaa. Laatikko liukuu siis lavalla eteenpäin eli kohti ohjaamoa.
 **Järkevyys:** $5\,\text{m/s}^2$ on jyrkkä mutta tavallinen jarrutus; kuivalla asfaltilla auto pystyy noin $8$–$9\,\text{m/s}^2$:n hidastuvuuteen. Sitomaton kuorma liukuu siis jo tavallisessa äkkijarrutuksessa.
 
 ### d)
@@ -203,7 +203,7 @@
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $a = 0{,}30 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 2{,}9\,\tfrac{\text{m}}{\text{s}^2}$
 **Vastaus:** Laatikkoon vaikuttavat paino alas, tukivoima ylös ja liukukitka taaksepäin; eteenpäin osoittavaa voimaa ei ole. Laatikko hidastuu tien suhteen noin $2{,}9\,\text{m/s}^2$, vähemmän kuin auto. Newtonin I lain mukaan laatikko jatkaisi liikettään ennallaan ilman voimia, ja kitka hidastaa sitä vain osittain. Auto hidastuu laatikon alta nopeammin, joten lavan suhteen laatikko liikkuu eteenpäin, vaikka mikään ei työnnä sitä.
-**Järkevyys:** Liukukitka on pienempi kuin lepokitkan enimmäisarvo, joten liukuvan laatikon hidastuvuus on pienempi kuin b-kohdan $3{,}9\,\text{m/s}^2$, kuten pitääkin.
+**Järkevyys:** Liukukitka on pienempi kuin lähtökitka, joten liukuvan laatikon hidastuvuus on pienempi kuin b-kohdan $3{,}9\,\text{m/s}^2$, kuten pitääkin.
 
 ### Yleisiä virheitä
 - Voimakuvioon piirretään eteenpäin osoittava ”liikevoima” tai kitka taaksepäin kiihdytyksen aikana.

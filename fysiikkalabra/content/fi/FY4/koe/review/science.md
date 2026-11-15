@@ -3,7 +3,7 @@ CONTENT-HASH: c30111e28700e7df
 Mode: full (round 1, work queue 8m: liikekitka → liukukitka, lähtökitka)
 
 ## Blocking
-1. **A, fy4-k3 c Vastaus** (solutions.md): "Auton hidastuvuus on $5{,}0\,\text{m/s}^2$, enemmän kuin lepokitkan enimmäisarvo $3{,}9\,\text{m/s}^2$." This gives a friction force in m/s². The $3{,}9\,\text{m/s}^2$ is the greatest deceleration that the friction can give the crate, $\mu_0 g$, not the friction itself. The new term rule asks for "lähtökitka" after the term is introduced, so one rewording fixes both problems. Example: "…enemmän kuin suurin hidastuvuus $3{,}9\,\text{m/s}^2$, jonka lähtökitka voi laatikolle antaa." The Periaate line above already says it correctly ("lepokitka riittää enintään hidastuvuuteen $\mu_0 g$"). The Järkevyys line in d compares forces and is right as it is.
+1. **A, fy4-k3 c Vastaus** (solutions.md): "Auton hidastuvuus on $5{,}0\,\text{m/s}^2$, enemmän kuin lepokitkan enimmäisarvo $3{,}9\,\text{m/s}^2$." This gives a friction force in m/s². The $3{,}9\,\text{m/s}^2$ is the greatest deceleration that the friction can give the crate, $\mu_0 g$, not the friction itself. The new term rule asks for "lähtökitka" after the term is introduced, so one rewording fixes both problems. Example: "…enemmän kuin suurin hidastuvuus $3{,}9\,\text{m/s}^2$, jonka lähtökitka voi laatikolle antaa." The Periaate line already says it right.
 
 ## Polish
 - fy4-k6 b Mallivastaus says the curve is under the weight line "noin hetkestä $0{,}33\,\text{s}$". Linear interpolation of the table gives $0{,}34\,\text{s}$. Both fit "noin". Optional.
@@ -20,6 +20,5 @@ Mode: full (round 1, work queue 8m: liikekitka → liukukitka, lähtökitka)
   - k6: $70{,}0\,\text{kg}$; area $447{,}2\,\text{N·s}$; net $172\,\text{N·s}$; $2{,}46\,\text{m/s}$; $0{,}309\,\text{m}$. From the flight time $0{,}294\,\text{m}$, range $0{,}26$–$0{,}33\,\text{m}$. A $1\,\%$ error in the area gives $2{,}6\,\%$ in $v$ and $5\,\%$ in $h$.
   - k7: $5{,}42\,\text{m/s}$; $603\,\text{m/s}^2$ ($61\,g$); $3{,}06\,\text{kN}$; half-sine area $5{,}44\,\text{m/s}$. The half-sine stopping distance is $2{,}43\,\text{cm}$, consistent with $2{,}4\,\text{cm}$. Then $613\,\text{m/s}^2$, factor $1{,}55$, $1472$ and $2280\,\text{m/s}^2$, margin $6{,}9\,\%$, energy ratio $1{,}64$.
 - Every Osa 1 item has exactly one correct option, and its distractor feedback is right. The k1 e figures match their text: A is correct, and B, C and D each have one error. The k3 force diagram: static friction forward, $N = G$, no "liikevoima".
-- Rubric sums: 15, 15, 15, 15, 20, 20. Every criterion asks only for what its task gives and asks.
-- Scope: FY4 only. Units, significant figures and Hyväksytään myös are sound.
+- Rubric sums 15/15/15/15/20/20; criteria ask only what the task gives. Scope, units, figures and Hyväksytään myös sound.
 - Hash identical at the start and the end.
