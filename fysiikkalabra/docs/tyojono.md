@@ -273,26 +273,6 @@ kuten `teacher-figure`: `reviews.py approve-text <id> [--lang]` kirjaa hyväksyt
 Rivi kirjataan vain opettajan nimenomaisesta hyväksynnästä; mikä tahansa muu muutos samassa luvussa katselmoidaan
 normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yksin.
 
-## 8m. Liukukitka, ei liikekitka (opettaja 2026-11-15)
-
-Varattu: claude/8m-liukukitka
-
-Opettaja 2026-11-15: "pitää olla liukukitka". Termi vaihdetaan koko sivustolla: liikekitka → liukukitka,
-liikekitkakerroin → liukukitkakerroin (ja taivutusmuodot), `glossary.json`, käsitekortit, lukujen tekstit, tehtävät,
-ratkaisut ja kuvien tekstit kolmella kielellä (en: sliding friction / coefficient of sliding friction).
-Lepokitkan termit samalla (opettaja 2026-11-15): kun kappale on levossa, kitka on **lepokitka**; sen suurin arvo
-(kappale on juuri lähtemässä liikkeelle) on **täysin kehittynyt lepokitka eli lähtökitka**, ja sen kerroin on
-lepokitkakerroin. Yhtenäistetään nykyiset muodot (esim. "suurin lepokitka", "maksimilepokitka") tähän; en: static
-friction / maximum (fully developed) static friction. Esiintymiä fi:ssä
-noin 190 (FY4 17 tiedostoa, FY5 2, FY9 6). Merkitys ei muutu, mutta teksti muuttuu, joten katselmointi `reviews.py scope`n
-mukaan. Jaettu (glossary.json), ajetaan yksin. FY9:n osuus tehdään tunnistuskaavioiden kanssa (9c, #602).
-Samaan jaettuun PR:ään oikoluvun kohdan 3 yhteiset muutokset (`docs/audits/2026-11-15-oikoluku.md`, opettaja
-2026-11-15): `curriculum.json` (fy5-5 ja fy5-6 gravitaatiokentän voimakkuus syventävänä, fy7-15 Malusin ja Brewsterin
-lait syventävänä, FY7-kokeen "määrittäminen", FY8 "LOPS 2019"), `kortit/fy4.json` (id:t eivät muutu),
-`docs/fy7/kaavanimet.tsv` (P6, `kaavat.py write`), säännöt P1, P7, P8 ja P9 `CLAUDE.md`:hen, NOTES.md:hen ja
-`docs/physics-guardrails.md`:hen sekä `scripts/physics_phrases.py`:n varoitukset ("muuttuu/jää lämmöksi" FY3–FY9,
-"liikekitka") testeineen. Lukujen tekstit korjataan kohdassa 18.
-
 ## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
 
 FY7:n esimerkkikoe on valmis (#586); sen katselmointien Minor-huomioita ei korjattu siinä, ettei katselmoinnit vanhene.
@@ -461,6 +441,9 @@ merkitsevät numerot, termit, "lämmöksi", likiarvorivit, kieli) samalla kierro
 inquiry.json, kuvien tekstit ja käännökset. Kurssi aloitetaan, kun kohta 8m on yhdistetty ja kurssin kohdan 5d
 leikkautuvat kaavat ovat mainissa (FY8 odottaa #601:tä). Avoin kohta 12 ratkesi päätöksellä P9: pieniä arvoeroja ei
 muuteta. Yksi kurssi = yksi haara ja yksi PR; enintään kuusi työntekijää yhtä aikaa.
+Kohta 8m (#618) lisäsi `physics_phrases.py`:hen säännöt heat-into (P1) ja liikekitka: kurssin "lämmöksi"-virkkeet ovat
+`docs/physics-phrases-known.tsv`:ssä (vain fi; samat virkkeet fi-easy- ja en-versioissa korjataan samalla), ja korjaus poistaa
+kurssin rivit. FY9:n lepokitkan nimitykset ("suurin lepokitka") yhtenäistetään 9c:ssä (#602).
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
