@@ -127,7 +127,7 @@
 **Muunnokset:** $m = 2{,}0\,\text{g} = 2{,}0 \cdot 10^{-3}\,\text{kg}$; lopuksi $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Sijoitus:** $mg\tan\alpha = 2{,}0 \cdot 10^{-3}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot \tan 10^\circ = 3{,}459 \cdot 10^{-3}\,\text{N}$ ja $q = \dfrac{3{,}459 \cdot 10^{-3}\,\text{N}}{1{,}5 \cdot 10^{5}\,\text{N/C}} = 2{,}306 \cdot 10^{-8}\,\text{C} = 23\,\text{nC}$
 **Vastaus:** $23\,\text{nC}$, kaksi merkitsevää numeroa kuten massassa ja sähkökentän voimakkuudessa.
-**Järkevyys:** Sähköinen voima on $mg\tan 10^\circ \approx 0{,}18 \cdot 0{,}020\,\text{N} = 3{,}5\,\text{mN}$, noin viidesosa painosta, mikä sopii pieneen poikkeamaan. Kymmenien nanocoulombien varaus on tavallinen hangatulle muovipallolle.
+**Järkevyys:** Sähköinen voima on $mg\tan 10^\circ \approx 0{,}18 \cdot 0{,}020\,\text{N} = 3{,}6\,\text{mN}$, noin viidesosa painosta, mikä sopii pieneen poikkeamaan. Kymmenien nanocoulombien varaus on tavallinen hangatulle muovipallolle.
 
 ## fy6-11-L1-06
 **Kysytty:** mitä kenttäviivojen tiheys kertoo alueiden A ja B kentistä.

@@ -127,7 +127,7 @@
 **Conversions:** $m = 2.0\,\text{g} = 2.0 \cdot 10^{-3}\,\text{kg}$; finally $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Substitution:** $mg\tan\alpha = 2.0 \cdot 10^{-3}\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot \tan 10^\circ = 3.459 \cdot 10^{-3}\,\text{N}$ and $q = \dfrac{3.459 \cdot 10^{-3}\,\text{N}}{1.5 \cdot 10^{5}\,\text{N/C}} = 2.306 \cdot 10^{-8}\,\text{C} = 23\,\text{nC}$
 **Answer:** $23\,\text{nC}$, two significant figures like the mass and the electric field strength.
-**Reasonableness:** The electric force is $mg\tan 10^\circ \approx 0.18 \cdot 0.020\,\text{N} = 3.5\,\text{mN}$, about one fifth of the weight, which fits a small deflection. A charge of tens of nanocoulombs is typical for a plastic ball charged by rubbing.
+**Reasonableness:** The electric force is $mg\tan 10^\circ \approx 0.18 \cdot 0.020\,\text{N} = 3.6\,\text{mN}$, about one fifth of the weight, which fits a small deflection. A charge of tens of nanocoulombs is typical for a plastic ball charged by rubbing.
 
 ## fy6-11-L1-06
 **Find:** what the density of the field lines tells about the fields in regions A and B.

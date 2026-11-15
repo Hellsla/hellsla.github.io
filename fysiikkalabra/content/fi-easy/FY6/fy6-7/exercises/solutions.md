@@ -25,7 +25,7 @@
 **Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$
 **Muunnokset:** Ei tarvita: $1\,\text{W} : 1\,\text{V} = 1\,\text{A}$.
 **Sijoitus:** $I = \dfrac{1200\,\text{W}}{230\,\text{V}} = 5{,}217\,\text{A}$
-**Vastaus:** $5{,}2\,\text{A}$. Vastaus on annettu kahdella merkitsevällä numerolla kuten jännite $230\,\text{V}$.
+**Vastaus:** $5{,}22\,\text{A}$. Vastaus on annettu kolmella merkitsevällä numerolla kuten jännite $230\,\text{V}$. Jännitteessä $230\,\text{V}$ on kolme merkitsevää numeroa.
 **Järkevyys:** Arvio $1200\,\text{W} : 200\,\text{V} = 6\,\text{A}$ on hieman suurempi, koska jakaja on pienempi. Virta on alle $10\,\text{A}$. Silitysrauta sopii siis $10\,\text{A}$:n tai $16\,\text{A}$:n sulakkeella suojattuun virtapiiriin, kun muita suuritehoisia laitteita ei ole samaan aikaan päällä.
 
 ## fy6-7-L1-04

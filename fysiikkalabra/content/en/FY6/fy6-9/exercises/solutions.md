@@ -171,7 +171,7 @@ Only the unit of $UQ$ is a unit of energy, and it is also the formula for the en
 **Formula:** $W_\text{loss} = U_\text{ch} I t - E I t$, from which $W_\text{loss} = (U_\text{ch} - E)\, I t$
 **Conversions:** Not needed: hours and amperes multiplied by volts give watt-hours directly.
 **Substitution:** $W_\text{loss} = (4.2\,\text{V} - 3.7\,\text{V}) \cdot 2.0\,\text{A} \cdot 1.5\,\text{h} = 0.5\,\text{V} \cdot 3.0\,\text{Ah} = 1.5\,\text{Wh}$
-**Answer:** $1.5\,\text{Wh}$, two significant figures like the voltage difference $4.2\,\text{V} - 3.7\,\text{V} = 0.5\,\text{V}$. Answer to a): what is wrong in the student's reasoning is that all the energy given by the charger is stored in the battery, since part of it becomes internal energy of the resistances.
+**Answer:** $1.5\,\text{Wh}$, two significant figures like the current $2.0\,\text{A}$ and the time $1.5\,\text{h}$. Answer to a): what is wrong in the student's reasoning is that all the energy given by the charger is stored in the battery, since part of it becomes internal energy of the resistances.
 **Reasonableness:** The energy stored in the battery is $3.7\,\text{V} \cdot 2.0\,\text{A} \cdot 1.5\,\text{h} = 11.1\,\text{Wh}$, and the sum $11.1\,\text{Wh} + 1.5\,\text{Wh}$ is the $12.6\,\text{Wh}$ given by the charger. The resistances are together $0.5\,\text{V} : 2.0\,\text{A} = 0.25\,\Omega$, and the energy that becomes internal energy in them is $0.25\,\Omega \cdot (2.0\,\text{A})^2 \cdot 1.5\,\text{h} = 1.5\,\text{Wh}$, the same result.
 
 ## fy6-9-L2-07

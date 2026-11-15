@@ -4,7 +4,7 @@ eta = W_akku : W_verkko; time t = W_verkko : P = W_akku : (eta P); single-phase 
 phase voltage U = 230 V and the same current I in every phase conductor; cost K = a W_verkko; cable heating
 P = R I^2 with R = rho · 2 l : A (the current goes out along the phase conductor and back along the neutral).
 Copper rho = 1,7 · 10^-8 ohm m (the table in the chapter on resistance). Prints {exercise id: number} as JSON."""
-import json
+import json, math
 
 U = 230.0          # phase voltage of the Finnish mains (V)
 RHO = 1.7e-8       # copper (ohm m)
@@ -24,11 +24,11 @@ a["fy6-16-L1-08"] = 0.25 * 16 ** 2                        # cable R = 0,25 ohm, 
 a["fy6-16-L2-01"] = 11 * 2.0 + 5.5 * 1.0                  # area under (t, P): 22 kWh + 5,5 kWh = 27,5 kWh from the grid
 P1 = U * 16 / 1000                                        # single-phase charger 16 A: 3,68 kW
 a["fy6-16-L2-02"] = (0.80 - 0.20) * 60 / (0.90 * P1)      # 36 kWh : (0,90 · 3,68 kW) = 10,9 h
-a["fy6-16-L2-03"] = 25 - 9000 / (3 * U)                   # sauna stove 9,0 kW evenly on three phases: 13,04 A each; 25 A - 13,04 A = 11,96 A
+a["fy6-16-L2-03"] = math.floor(25 - 9000 / (3 * U))       # sauna stove 9,0 kW evenly on three phases: 13,04 A each; 25 A - 13,04 A = 11,96 A, a maximum rounded down to two figures: 11 A (teacher 2026-11-15, P7c)
 R_cable = RHO * 2 * 30 / 2.5e-6                           # 30 m, 2,5 mm^2, out and back: 60 m of copper, 0,408 ohm
 a["fy6-16-L2-04"] = R_cable * 16                          # voltage drop U = R I = 0,408 ohm · 16 A = 6,53 V
 # L2-05: house power 17-22 h (kW): 2,1; 3,4; 6,8; 5,2; 3,9; main fuses 3 x 25 A
-a["fy6-16-L2-05"] = 3 * U * 25 / 1000 - max([2.1, 3.4, 6.8, 5.2, 3.9])   # 17,25 kW - 6,8 kW (19-20 h) = 10,45 kW for the charger
+a["fy6-16-L2-05"] = math.floor(10 * (3 * U * 25 / 1000 - max([2.1, 3.4, 6.8, 5.2, 3.9]))) / 10   # 17,25 kW - 6,8 kW (19-20 h) = 10,45 kW at most, rounded down to one decimal: 10,4 kW (P7c)
 a["fy6-16-L2-06"] = (0.80 - 0.20) * 60 / (0.92 * 7.4)     # error analysis: 36 kWh : (0,92 · 7,4 kW) = 5,29 h (student: 60 : 7,4 = 8,1 h)
 P_tab = [11.0, 11.0, 10.8, 8.7, 5.9, 3.1, 1.4]            # figure data, every 0,5 h for 3,0 h
 a["fy6-16-L2-07"] = 0.5 * ((P_tab[0] + P_tab[-1]) / 2 + sum(P_tab[1:-1]))   # trapezoids: 0,5 h · (6,2 + 39,5) kW = 22,85 kWh (mean power 22,85 : 3,0 = 7,62 kW)

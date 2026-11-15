@@ -301,7 +301,7 @@ E &= E_1 + E_2 + \dots \\
 R_\text{s} &= R_{\text{s}1} + R_{\text{s}2} + \dots
 \end{aligned}
 ```
-where $E_1$, $E_2$, … are the source voltages of the individual batteries ($\text{V}$) and $R_{\text{s}1}$, $R_{\text{s}2}$, … their internal resistances ($\Omega$). Three batteries in series in a torch give about $4.5\,\text{V}$. A battery put in the wrong way round reduces the source voltage of the group by its own amount, but its internal resistance is still added to the others.
+where $E_1$, $E_2$, … are the source voltages of the individual batteries ($\text{V}$) and $R_{\text{s}1}$, $R_{\text{s}2}$, … their internal resistances ($\Omega$). Three batteries in series in a torch give about $4.5\,\text{V}$. The source voltage of a battery put in the wrong way round is subtracted from the sum of the source voltages of the other batteries. So the source voltage of the group is smaller by the source voltages of two batteries than when all the batteries are the right way round. The internal resistance of the battery the wrong way round is still added to the others.
 
 When $n$ identical batteries are connected in **parallel**, the positive terminals together and the negative terminals together, the source voltage of the group is the same as for one battery. The internal resistances are parallel branches among which the current is shared equally, so the internal resistance of the group is
 ```latex

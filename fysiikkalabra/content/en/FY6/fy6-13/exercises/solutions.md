@@ -137,7 +137,7 @@
 **Formula:** $W = \tfrac{1}{2} C U^2$ and $\Delta W = W_2 - W_1 = \tfrac{1}{2} C (U_2^2 - U_1^2)$
 **Conversions:** $C = 1000\,\mu\text{F} = 1000 \cdot 10^{-6}\,\text{F} = 1.0 \cdot 10^{-3}\,\text{F}$
 **Substitution:** $W_1 = \tfrac{1}{2} \cdot 1.0 \cdot 10^{-3}\,\text{F} \cdot (6.0\,\text{V})^2 = 0.018\,\text{J}$, $W_2 = \tfrac{1}{2} \cdot 1.0 \cdot 10^{-3}\,\text{F} \cdot (18\,\text{V})^2 = 0.162\,\text{J}$ and $\Delta W = 0.162\,\text{J} - 0.018\,\text{J} = 0.144\,\text{J} = 144\,\text{mJ}$
-**Answer:** $144\,\text{mJ}$, three significant figures, because the capacitance $1000\,\mu\text{F}$ and the voltage $18\,\text{V}$ determine the result accurately enough.
+**Answer:** $1.4 \cdot 10^{2}\,\text{mJ}$, or $0.14\,\text{J}$ (calculated $144\,\text{mJ}$), two significant figures like the voltages $6.0\,\text{V}$ and $18\,\text{V}$.
 **Reasonableness:** The voltage triples, so the energy grows to $3^2 = 9$ times as large: $W_2 : W_1 = 162\,\text{mJ} : 18\,\text{mJ} = 9$. The increase is $9W_1 - W_1 = 8W_1 = 8 \cdot 18\,\text{mJ} = 144\,\text{mJ}$.
 
 ## fy6-13-L1-09

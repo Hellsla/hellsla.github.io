@@ -156,7 +156,7 @@
 **Formula:** $P = UI$
 **Conversions:** Not needed: $\text{V} \cdot \text{mA} = \text{mW}$.
 **Substitution:** The powers are $10\,\Omega$: $0.99\,\text{V} \cdot 99\,\text{mA} = 98\,\text{mW}$, $15\,\Omega$: $146\,\text{mW}$, $20\,\Omega$: $178\,\text{mW}$, $22\,\Omega$: $1.99\,\text{V} \cdot 91\,\text{mA} = 181\,\text{mW}$, $27\,\Omega$: $165\,\text{mW}$, $33\,\Omega$: $145\,\text{mW}$, $47\,\Omega$: $109\,\text{mW}$ and $100\,\Omega$: $54\,\text{mW}$. The greatest is at $22\,\Omega$.
-**Answer:** $181\,\text{mW}$, three significant figures like the voltage and the current.
+**Answer:** $1.8 \cdot 10^{2}\,\text{mW}$, or $0.18\,\text{W}$ (calculated $181\,\text{mW}$), two significant figures like the current $91\,\text{mA}$.
 **Reasonableness:** The power is small with the loads $10\,\Omega$ (the voltage is small) and $100\,\Omega$ (the current is small), and the greatest power lies between them at the knee of the curve. Check: $U : I = 1.99\,\text{V} : 0.091\,\text{A} = 21.9\,\Omega \approx 22\,\Omega$, so the measurement agrees with the load resistor.
 
 ## fy6-14-L2-07

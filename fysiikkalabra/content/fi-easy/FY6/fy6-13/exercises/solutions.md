@@ -137,7 +137,7 @@
 **Kaava:** $W = \tfrac{1}{2} C U^2$ ja $\Delta W = W_2 - W_1 = \tfrac{1}{2} C (U_2^2 - U_1^2)$
 **Muunnokset:** $C = 1000\,\mu\text{F} = 1000 \cdot 10^{-6}\,\text{F} = 1{,}0 \cdot 10^{-3}\,\text{F}$
 **Sijoitus:** $W_1 = \tfrac{1}{2} \cdot 1{,}0 \cdot 10^{-3}\,\text{F} \cdot (6{,}0\,\text{V})^2 = 0{,}018\,\text{J}$, $W_2 = \tfrac{1}{2} \cdot 1{,}0 \cdot 10^{-3}\,\text{F} \cdot (18\,\text{V})^2 = 0{,}162\,\text{J}$ ja $\Delta W = 0{,}162\,\text{J} - 0{,}018\,\text{J} = 0{,}144\,\text{J} = 144\,\text{mJ}$
-**Vastaus:** $144\,\text{mJ}$. Vastauksessa on kolme merkitsevää numeroa. Kapasitanssi $1000\,\mu\text{F}$ ja jännite $18\,\text{V}$ antavat tuloksen riittävän tarkasti.
+**Vastaus:** $1{,}4 \cdot 10^{2}\,\text{mJ}$ eli $0{,}14\,\text{J}$. Laskimen arvo on $144\,\text{mJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten jännitteissä $6{,}0\,\text{V}$ ja $18\,\text{V}$.
 **Järkevyys:** Jännite kolminkertaistuu, joten energia kasvaa $3^2 = 9$-kertaiseksi: $W_2 : W_1 = 162\,\text{mJ} : 18\,\text{mJ} = 9$. Kasvu on $9W_1 - W_1 = 8W_1 = 8 \cdot 18\,\text{mJ} = 144\,\text{mJ}$.
 
 ## fy6-13-L1-09

@@ -156,7 +156,7 @@
 **Kaava:** $P = UI$
 **Muunnokset:** Ei tarvita: $\text{V} \cdot \text{mA} = \text{mW}$.
 **Sijoitus:** Tehot ovat $10\,\Omega$: $0{,}99\,\text{V} \cdot 99\,\text{mA} = 98\,\text{mW}$, $15\,\Omega$: $146\,\text{mW}$, $20\,\Omega$: $178\,\text{mW}$, $22\,\Omega$: $1{,}99\,\text{V} \cdot 91\,\text{mA} = 181\,\text{mW}$, $27\,\Omega$: $165\,\text{mW}$, $33\,\Omega$: $145\,\text{mW}$, $47\,\Omega$: $109\,\text{mW}$ ja $100\,\Omega$: $54\,\text{mW}$. Suurin on $22\,\Omega$:n kohdalla.
-**Vastaus:** $181\,\text{mW}$, kolme merkitsevää numeroa kuten jännitteessä ja virrassa.
+**Vastaus:** $1{,}8 \cdot 10^{2}\,\text{mW}$ eli $0{,}18\,\text{W}$. Laskimen arvo on $181\,\text{mW}$. Vastauksessa on kaksi merkitsevää numeroa, kuten virrassa $91\,\text{mA}$.
 **Järkevyys:** Teho on pieni kuormilla $10\,\Omega$ (jännite on pieni) ja $100\,\Omega$ (virta on pieni). Suurin teho on niiden välissä käyrän polvessa. Tarkistus: $U : I = 1{,}99\,\text{V} : 0{,}091\,\text{A} = 21{,}9\,\Omega \approx 22\,\Omega$, joten mittaus täsmää kuormitusvastuksen kanssa.
 
 ## fy6-14-L2-07

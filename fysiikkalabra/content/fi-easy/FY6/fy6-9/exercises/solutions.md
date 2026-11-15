@@ -172,7 +172,7 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö. Se on myös akun energian ka
 **Kaava:** $W_\text{häviö} = U_\text{lat} I t - E I t$, josta $W_\text{häviö} = (U_\text{lat} - E)\, I t$
 **Muunnokset:** Ei tarvita: tunnit ja ampeerit voltteihin kerrottuna antavat suoraan wattitunteja.
 **Sijoitus:** $W_\text{häviö} = (4{,}2\,\text{V} - 3{,}7\,\text{V}) \cdot 2{,}0\,\text{A} \cdot 1{,}5\,\text{h} = 0{,}5\,\text{V} \cdot 3{,}0\,\text{Ah} = 1{,}5\,\text{Wh}$
-**Vastaus:** $1{,}5\,\text{Wh}$, kaksi merkitsevää numeroa kuten jännite-erotuksessa $4{,}2\,\text{V} - 3{,}7\,\text{V} = 0{,}5\,\text{V}$. Vastaus a): oppilaan päättelyssä on väärin se, että kaikki laturin antama energia varastoituu akkuun. Osa energiasta muuttuu resistanssien sisäenergiaksi.
+**Vastaus:** $1{,}5\,\text{Wh}$, kaksi merkitsevää numeroa kuten virrassa $2{,}0\,\text{A}$ ja ajassa $1{,}5\,\text{h}$. Vastaus a): oppilaan päättelyssä on väärin se, että kaikki laturin antama energia varastoituu akkuun. Osa energiasta muuttuu resistanssien sisäenergiaksi.
 **Järkevyys:** Akkuun varastoituu $3{,}7\,\text{V} \cdot 2{,}0\,\text{A} \cdot 1{,}5\,\text{h} = 11{,}1\,\text{Wh}$. Summa $11{,}1\,\text{Wh} + 1{,}5\,\text{Wh}$ on laturin antama $12{,}6\,\text{Wh}$. Resistanssit ovat yhteensä $0{,}5\,\text{V} : 2{,}0\,\text{A} = 0{,}25\,\Omega$. Niissä muuttuu energiaa $0{,}25\,\Omega \cdot (2{,}0\,\text{A})^2 \cdot 1{,}5\,\text{h} = 1{,}5\,\text{Wh}$. Tulos on sama.
 
 ## fy6-9-L2-07

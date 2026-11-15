@@ -76,8 +76,8 @@
 **Kaava:** $I_\text{k} + I_\text{a} = I_\text{p}$ ja $I_\text{k} = \dfrac{P_\text{k}}{3U}$, joten $I_\text{a} = I_\text{p} - \dfrac{P_\text{k}}{3U}$, missä $I_\text{p} = 25\,\text{A}$
 **Muunnokset:** $P_\text{k} = 9{,}0\,\text{kW} = 9000\,\text{W}$
 **Sijoitus:** $I_\text{a} = 25\,\text{A} - \dfrac{9000\,\text{W}}{3 \cdot 230\,\text{V}} = 25\,\text{A} - 13{,}04\,\text{A} = 11{,}96\,\text{A}$
-**Vastaus:** $12\,\text{A}$, kaksi merkitsevää numeroa kuten pääsulakkeen virrassa $25\,\text{A}$.
-**Järkevyys:** Kiuas ja auto yhdessä ottavat silloin $13\,\text{A} + 12\,\text{A} = 25\,\text{A}$ jokaisesta vaiheesta. Auton teho on noin $3 \cdot 230\,\text{V} \cdot 12\,\text{A} \approx 8{,}3\,\text{kW}$, vähemmän kuin aseman $11\,\text{kW}$, joten kuormanhallinnan pitää pienentää latausta saunan ajaksi.
+**Vastaus:** $11\,\text{A}$, kaksi merkitsevää numeroa kuten pääsulakkeen virrassa $25\,\text{A}$. Virta saa olla enintään $11{,}96\,\text{A}$, joten raja-arvo pyöristetään alaspäin: $12\,\text{A}$ ylittäisi pääsulakkeen virran.
+**Järkevyys:** Kiuas ja auto yhdessä ottavat silloin $13{,}0\,\text{A} + 11\,\text{A} = 24\,\text{A}$ jokaisesta vaiheesta, juuri alle $25\,\text{A}$. Auton teho on noin $3 \cdot 230\,\text{V} \cdot 11\,\text{A} \approx 7{,}6\,\text{kW}$, vähemmän kuin aseman $11\,\text{kW}$, joten kuormanhallinnan pitää pienentää latausta saunan ajaksi.
 
 ## fy6-16-L2-04
 **Annettu:** kaapelin pituus $l = 30\,\text{m}$, poikkipinta-ala $A = 2{,}5\,\text{mm}^2$, virta $I = 16\,\text{A}$, $\rho = 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m}$
@@ -152,12 +152,12 @@
 **Kaava:** $P_\text{max} = 3UI_\text{p}$ ja $P_\text{talo} + P_\text{a} \le P_\text{max}$, joten $P_\text{a} = 3UI_\text{p} - P_\text{talo}$, missä $I_\text{p} = 25\,\text{A}$
 **Muunnokset:** $3UI_\text{p}$ lasketaan watteina ja muunnetaan kilowateiksi: $17\,250\,\text{W} = 17{,}25\,\text{kW}$.
 **Sijoitus:** $P_\text{max} = 3 \cdot 230\,\text{V} \cdot 25\,\text{A} = 17\,250\,\text{W} = 17{,}25\,\text{kW}$, joten $P_\text{a} = 17{,}25\,\text{kW} - 6{,}8\,\text{kW} = 10{,}45\,\text{kW}$
-**Vastaus:** Vastauslaatikkoon $10{,}5\,\text{kW}$, yksi desimaali kuten taulukon tehoissa. a) Huipputeho on kello $19\text{–}20$.
+**Vastaus:** Vastauslaatikkoon $10{,}4\,\text{kW}$, yksi desimaali kuten taulukon tehoissa. Teho saa olla enintään $10{,}45\,\text{kW}$, joten raja-arvo pyöristetään alaspäin. a) Huipputeho on kello $19\text{–}20$.
 
-b) Aseman teho saa olla huipun aikana enintään $10{,}5\,\text{kW}$.
+b) Aseman teho saa olla huipun aikana enintään $10{,}4\,\text{kW}$.
 
 c) Asema saa käyttää täyttä tehoa $11\,\text{kW}$, kun talon teho on enintään $17{,}25\,\text{kW} - 11\,\text{kW} = 6{,}25\,\text{kW}$. Taulukossa vain kello $19\text{–}20$ ylittää tämän ($6{,}8\,\text{kW}$), joten muina tunteina kuormanhallintaa ei tarvita tämän oletuksen mukaan (talon teho pysyy tunnin ajan taulukon arvossa), mutta kello $19\text{–}20$ asemaa pitää rajoittaa. Todellisuudessa tunnin sisäiset huiput voivat vaatia kuormanhallintaa.
-**Järkevyys:** Virta huipun aikana: talo $6800\,\text{W} : 690\,\text{V} \approx 9{,}9\,\text{A}$ ja asema $10\,450\,\text{W} : 690\,\text{V} \approx 15{,}1\,\text{A}$ jokaisessa vaiheessa, yhteensä $25{,}0\,\text{A}$ eli täsmälleen pääsulakkeen raja. Tulos on pienempi kuin aseman $11\,\text{kW}$, kuten huipun aikana pitääkin.
+**Järkevyys:** Virta huipun aikana: talo $6800\,\text{W} : 690\,\text{V} \approx 9{,}9\,\text{A}$ ja asema $10\,400\,\text{W} : 690\,\text{V} \approx 15{,}1\,\text{A}$ jokaisessa vaiheessa, yhteensä noin $24{,}9\,\text{A}$ eli juuri pääsulakkeen rajan alla. Tulos on pienempi kuin aseman $11\,\text{kW}$, kuten huipun aikana pitääkin.
 
 ## fy6-16-L2-06
 **Annettu:** akun energia $60\,\text{kWh}$, varaustaso $20\,\% \to 80\,\%$, verkosta otettu teho $P = 7{,}4\,\text{kW}$, $\eta = 92\,\%$

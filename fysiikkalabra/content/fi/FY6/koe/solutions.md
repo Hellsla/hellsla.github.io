@@ -454,7 +454,7 @@ Vaaka-akselille merkitään $r^{-2}\ (\text{m}^{-2})$ ja pystyakselille $F\ (\te
 **Kaava:** $U = 16\,U_1$ ja $W = UQ$
 **Muunnokset:** $1\,\text{kWh} = 1000\,\text{Wh}$
 **Sijoitus:** $U = 16 \cdot 3{,}20\,\text{V} = 51{,}2\,\text{V}$ ja $W = 51{,}2\,\text{V} \cdot 200\,\text{Ah} = 10\,240\,\text{Wh} \approx 10{,}2\,\text{kWh}$
-**Vastaus:** Akuston nimellisjännite on $51{,}2\,\text{V}$, ja täyteen ladattuun akustoon on varastoitunut noin $10\,\text{kWh}$:n energia.
+**Vastaus:** Akuston nimellisjännite on $51{,}2\,\text{V}$, ja täyteen ladattuun akustoon on varastoitunut noin $10{,}2\,\text{kWh}$:n energia.
 **Järkevyys:** Kotiakustojen energia on tavallisesti $5\text{–}15\,\text{kWh}$, joten tulos on uskottava.
 
 ### b)
@@ -469,12 +469,12 @@ Vaaka-akselille merkitään $r^{-2}\ (\text{m}^{-2})$ ja pystyakselille $F\ (\te
 
 ### c)
 **Annettu:** $P = 5{,}0\,\text{kW}$, $U = 51{,}2\,\text{V}$, $16$ kennoa, joiden kunkin sisäinen resistanssi on $0{,}50\,\text{m}\Omega$, kaapelin resistanssi $4{,}0\,\text{m}\Omega$
-**Kysytty:** akuston virta $I$ ja lämmöksi muuttuva teho $P_\text{h}$
-**Periaate:** Teho on jännite kertaa virta. Kennojen sisäiset resistanssit ovat sarjassa keskenään ja kaapelin kanssa, joten resistanssit lasketaan yhteen. Joulen lain mukaan resistanssissa lämmöksi muuttuva teho on $RI^2$.
+**Kysytty:** akuston virta $I$ ja sisäenergiaksi muuttuva teho $P_\text{h}$
+**Periaate:** Teho on jännite kertaa virta. Kennojen sisäiset resistanssit ovat sarjassa keskenään ja kaapelin kanssa, joten resistanssit lasketaan yhteen. Joulen lain mukaan resistanssissa sisäenergiaksi muuttuva teho on $RI^2$, ja tämä energia siirtyy lämpönä ympäristöön.
 **Kaava:** $I = \dfrac{P}{U}$ ja $P_\text{h} = (R_\text{s} + R_\text{k})\,I^2$, missä $R_\text{s} = 16\,R_1$
 **Muunnokset:** $5{,}0\,\text{kW} = 5000\,\text{W}$; $R_\text{s} = 16 \cdot 0{,}50\,\text{m}\Omega = 8{,}0\,\text{m}\Omega$, joten $R_\text{s} + R_\text{k} = 12\,\text{m}\Omega = 0{,}012\,\Omega$
 **Sijoitus:** $I = \dfrac{5000\,\text{W}}{51{,}2\,\text{V}} \approx 97{,}7\,\text{A}$ ja $P_\text{h} = 0{,}012\,\Omega \cdot (97{,}7\,\text{A})^2 \approx 114\,\text{W}$
-**Vastaus:** Akuston virta on noin $98\,\text{A}$, ja lämmöksi muuttuu noin $110\,\text{W}$: noin $76\,\text{W}$ akustossa ja $38\,\text{W}$ kaapelissa. Se on noin $2\,\%$ siirrettävästä tehosta.
+**Vastaus:** Akuston virta on noin $98\,\text{A}$, ja sisäenergiaksi muuttuu noin $110\,\text{W}$: noin $76\,\text{W}$ akustossa ja $38\,\text{W}$ kaapelissa. Se on noin $2\,\%$ siirrettävästä tehosta.
 **Järkevyys:** Resistansseissa jännite pienenee $0{,}012\,\Omega \cdot 98\,\text{A} \approx 1{,}2\,\text{V}$, joten vaihtosuuntaajalle tulee hieman nimellisjännitettä pienempi jännite ja todellinen virta on muutaman prosentin suurempi, noin $100\,\text{A}$. Virta on alle sulakkeen nimellisvirran $125\,\text{A}$.
 
 ### d)
@@ -484,7 +484,7 @@ Vaaka-akselille merkitään $r^{-2}\ (\text{m}^{-2})$ ja pystyakselille $F\ (\te
 **Kaava:** $I_\text{k} = \dfrac{E}{R_\text{s}}$
 **Muunnokset:** $8{,}0\,\text{m}\Omega = 0{,}0080\,\Omega$
 **Sijoitus:** $I_\text{k} = \dfrac{51{,}2\,\text{V}}{0{,}0080\,\Omega} = 6400\,\text{A}$
-**Vastaus:** Oikosulkuvirta voi olla noin $6\,\text{kA}$, noin $50$ kertaa sulakkeen nimellisvirta. Lämmöksi muuttuu satoja kilowatteja, joten jakoavain ja navat kuumenevat hetkessä hehkuviksi: syntyy valokaari, sulaa metallia roiskuu, ja palovammojen ja tulipalon vaara on suuri. Siksi sulake asennetaan aivan akuston navan viereen ja akuston lähellä käytetään eristettyjä työkaluja.
+**Vastaus:** Oikosulkuvirta voi olla noin $6\,\text{kA}$, noin $50$ kertaa sulakkeen nimellisvirta. Sisäenergiaksi muuttuu satoja kilowatteja, joten jakoavain ja navat kuumenevat hetkessä hehkuviksi: syntyy valokaari, sulaa metallia roiskuu, ja palovammojen ja tulipalon vaara on suuri. Siksi sulake asennetaan aivan akuston navan viereen ja akuston lähellä käytetään eristettyjä työkaluja.
 
 Nimellisjännitteen vertaaminen suojajänniterajaan ei yksin riitä. Akuston jännite, noin $51\,\text{V}$ ja täyteen ladattuna noin $58\,\text{V}$, on alle tasajännitteen suojajänniterajan $120\,\text{V}$, mutta raja ei tarkoita, että akuston paljaisiin napoihin olisi turvallista koskea. Sähköiskun riski riippuu muun muassa kosketusolosuhteista, kuten ihon kosteudesta, ja virtatiestä kehon läpi. Lisäksi akustoon on varastoitunut noin $10\,\text{kWh}$ energiaa, ja jo yksi oikosulkeva työkalu tai koru voi vapauttaa sen valokaarena ja lämpönä. Siksi akuston paljaita johtavia osia ei käsitellä ilman asianmukaisia suojauksia ja osaamista, ja akustoon liittyvissä töissä noudatetaan valmistajan ohjeita ja sähköturvallisuusmenettelyjä.
 **Järkevyys:** Arvio on yläraja, koska jakoavaimen ja liitoskohtien resistanssi pienentää virtaa. Jos mukana olisi kaapelin $4{,}0\,\text{m}\Omega$, virta olisi silti noin $4\,\text{kA}$.

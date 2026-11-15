@@ -76,8 +76,8 @@
 **Formula:** $I_\text{heater} + I_\text{charger} = I_\text{main}$ and $I_\text{heater} = \dfrac{P_\text{heater}}{3U}$, so $I_\text{charger} = I_\text{main} - \dfrac{P_\text{heater}}{3U}$, where $I_\text{main} = 25\,\text{A}$
 **Conversions:** $P_\text{heater} = 9.0\,\text{kW} = 9000\,\text{W}$
 **Substitution:** $I_\text{charger} = 25\,\text{A} - \dfrac{9000\,\text{W}}{3 \cdot 230\,\text{V}} = 25\,\text{A} - 13.04\,\text{A} = 11.96\,\text{A}$
-**Answer:** $12\,\text{A}$, two significant figures like the current of the main fuse $25\,\text{A}$.
-**Reasonableness:** The heater and the car together then draw $13\,\text{A} + 12\,\text{A} = 25\,\text{A}$ from each phase. The power of the car is about $3 \cdot 230\,\text{V} \cdot 12\,\text{A} \approx 8.3\,\text{kW}$, less than the $11\,\text{kW}$ of the station, so load management has to reduce the charging for the time of the sauna.
+**Answer:** $11\,\text{A}$, two significant figures like the current of the main fuse $25\,\text{A}$. The current may be at most $11.96\,\text{A}$, so the limit is rounded down: $12\,\text{A}$ would exceed the current of the main fuse.
+**Reasonableness:** The heater and the car together then draw $13.0\,\text{A} + 11\,\text{A} = 24\,\text{A}$ from each phase, just under $25\,\text{A}$. The power of the car is about $3 \cdot 230\,\text{V} \cdot 11\,\text{A} \approx 7.6\,\text{kW}$, less than the $11\,\text{kW}$ of the station, so load management has to reduce the charging for the time of the sauna.
 
 ## fy6-16-L2-04
 **Given:** length of cable $l = 30\,\text{m}$, cross-sectional area $A = 2.5\,\text{mm}^2$, current $I = 16\,\text{A}$, $\rho = 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m}$
@@ -152,12 +152,12 @@
 **Formula:** $P_\text{max} = 3UI_\text{f}$ and $P_\text{house} + P_\text{s} \le P_\text{max}$, so $P_\text{s} = 3UI_\text{f} - P_\text{house}$, where $I_\text{f} = 25\,\text{A}$
 **Conversions:** $3UI_\text{f}$ is calculated in watts and converted to kilowatts: $17\,250\,\text{W} = 17.25\,\text{kW}$.
 **Substitution:** $P_\text{max} = 3 \cdot 230\,\text{V} \cdot 25\,\text{A} = 17\,250\,\text{W} = 17.25\,\text{kW}$, so $P_\text{s} = 17.25\,\text{kW} - 6.8\,\text{kW} = 10.45\,\text{kW}$
-**Answer:** In the answer box $10.5\,\text{kW}$, one decimal like the powers in the table. a) The peak power is at $19\text{–}20$.
+**Answer:** In the answer box $10.4\,\text{kW}$, one decimal like the powers in the table. The power may be at most $10.45\,\text{kW}$, so the limit is rounded down. a) The peak power is at $19\text{–}20$.
 
-b) The power of the station may be at most $10.5\,\text{kW}$ during the peak.
+b) The power of the station may be at most $10.4\,\text{kW}$ during the peak.
 
 c) The station may use the full power $11\,\text{kW}$ when the power of the house is at most $17.25\,\text{kW} - 11\,\text{kW} = 6.25\,\text{kW}$. In the table only $19\text{–}20$ exceeds this ($6.8\,\text{kW}$), so in the other hours no load management is needed under this assumption (the power of the house stays at the table value for an hour), but at $19\text{–}20$ the station has to be limited. In reality, peaks within the hour may require load management.
-**Reasonableness:** Current during the peak: house $6800\,\text{W} : 690\,\text{V} \approx 9.9\,\text{A}$ and station $10\,450\,\text{W} : 690\,\text{V} \approx 15.1\,\text{A}$ in each phase, together $25.0\,\text{A}$, exactly the limit of the main fuse. The result is smaller than the $11\,\text{kW}$ of the station, as it should be during the peak.
+**Reasonableness:** Current during the peak: house $6800\,\text{W} : 690\,\text{V} \approx 9.9\,\text{A}$ and station $10\,400\,\text{W} : 690\,\text{V} \approx 15.1\,\text{A}$ in each phase, together about $24.9\,\text{A}$, just under the limit of the main fuse. The result is smaller than the $11\,\text{kW}$ of the station, as it should be during the peak.
 
 ## fy6-16-L2-06
 **Given:** energy of the battery $60\,\text{kWh}$, charge level $20\,\% \to 80\,\%$, power taken from the grid $P = 7.4\,\text{kW}$, $\eta = 92\,\%$

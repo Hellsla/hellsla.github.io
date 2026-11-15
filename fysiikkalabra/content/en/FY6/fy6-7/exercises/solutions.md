@@ -25,7 +25,7 @@
 **Formula:** $P = UI$, so $I = \dfrac{P}{U}$
 **Conversions:** Not needed: $1\,\text{W} : 1\,\text{V} = 1\,\text{A}$.
 **Substitution:** $I = \dfrac{1200\,\text{W}}{230\,\text{V}} = 5.217\,\text{A}$
-**Answer:** $5.2\,\text{A}$, two significant figures like the voltage $230\,\text{V}$.
+**Answer:** $5.22\,\text{A}$, three significant figures like the voltage $230\,\text{V}$, which is a value with three significant figures.
 **Reasonableness:** The estimate $1200\,\text{W} : 200\,\text{V} = 6\,\text{A}$ is a little larger, because the divisor is smaller. The current is under $10\,\text{A}$, so the iron suits a circuit protected by a $10\,\text{A}$ or $16\,\text{A}$ fuse when no other high-power devices are on at the same time.
 
 ## fy6-7-L1-04
