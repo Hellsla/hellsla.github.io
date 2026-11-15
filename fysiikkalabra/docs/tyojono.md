@@ -69,6 +69,18 @@ jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md
 - `CLAUDE.md`:n Ääneenluku-kappale ja `test_readaloud.py` päivitetään samassa PR:ssä. Lukujen tekstejä ei muuteta, joten
   katselmoinnit eivät vanhene.
 
+## 5d. Leikkautuvat kaavat omalle rivilleen ja align-muotoon (opettaja 2026-11-15)
+
+Kohdan 5b tarkistus löysi mainista noin 4 800 kaavaa, jotka leikkautuvat puhelimella (`docs/clipped-formulas.tsv`).
+Esimerkki: fy2-3, Esimerkki 2, jossa tekstin sisällä oleva $E = 1500 \cdot 3{,}0\,\text{kWh} = 4500\,\text{kWh}$
+näkyy 360 px:llä muodossa "4500 kW". Opettaja 2026-11-15:
+- Tekstin sisällä oleva pitkä kaava nostetaan omaksi kaavarivikseen, ja pitkä ketju jaetaan `aligned`-ympäristöön
+  yhtäsuuruusmerkit tasattuina (`E &= 1500 \cdot 3{,}0\,\text{kWh} \\ &= 4500\,\text{kWh}`).
+- Pelkkä tällainen muutos (samat luvut, merkit ja yksiköt samassa järjestyksessä) katselmoidaan vain ulkoasun osalta:
+  `reflow`-carry (5b) siirtää tiede- ja pedagogiikkakatselmoinnit.
+Tehdään kurssi kerrallaan, yksi PR per kurssi, alkaen kursseista, joilla rivejä on eniten (FY8, FY9, FY2); jokainen
+korjattu kaava poistaa rivinsä listalta. Ei muita sisältömuutoksia samassa PR:ssä.
+
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13, 2026-11-14 ja 2026-11-15)
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
