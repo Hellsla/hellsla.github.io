@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4217f2037e77873f
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 54fa624a843aa99a.
+CONTENT-HASH: 6bd8953fb5e744db
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (024a3851f574b445); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-- s6:n $k = 85\,\%$ ja c-kohdan $k = 0{,}133\,\text{g/W}$ (kulmakerroin) ovat eri tehtävissä, mutta sama kirjain; $\eta$ tai $f$ erottaisi.
+- B (kept): solid volume expansion has no row; "kappale" vs "neste" is the only hint between the two expansion rows.
 
 ## Checked
-$k_\text{h}$, $\ell$, $p$, $P_1$, $\Delta m_1$ ja $P/(P-P_\text{h})$ esitelty; lumensulatus ja talon jäähtyminen: kaava symboleissa ennen lukuja. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.
+- Diff read: only teacher.md "kunkin rivin kohdalla" changed (round-1 Polish A fixed); chart and aria-label unchanged, so the chart PNG was not reopened.
+- The rest passes through the round-1 report.

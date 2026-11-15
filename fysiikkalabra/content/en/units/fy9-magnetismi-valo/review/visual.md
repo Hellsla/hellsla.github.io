@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 086631afee2d127b
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at bf5117373f141a6c.
+CONTENT-HASH: 6580713d647b1f4c
+Review of the recognition chart (queue 9c) and the term change against the version passed at 086631afee2d127b; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [C] The chart title and subtitle begin with a lowercase letter ("how do I tell the law?", "free-body diagram first, ..."); capitalise the title in figures.json (sentence case) if the Finnish title is capitalised.
+- [C] aria-label row says "Light passes from one medium to another", chart says "light enters another medium"; align the wording.
 
 ## Checked
-Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: sovella/solutions.md: transformer line loss $RP/U^2$, fibre-link $N_\text{s}$, $A_\text{s}$, $\beta$, grating $\lambda = \sin(\tan^{-1}(x_k/L))/(kN)$. The factor $\beta$ is used the same way as in fy9-aallot. No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.
+- Chart PNGs at 360 and 1280 px: 9 rows (force on a particle ... grating). No clipped, overlapping or cramped label; white on #1a4d2e is clearly legible; pill, card, spine and start-box style match the other units.
+- Typography: KaTeX, italic variables, upright names and units, subscripts and \overline vectors as in MAFY; decimal point in English.
+- aria-label in figures.json is in English, complete, and matches the rows in order and meaning (see Polish for any wording difference).
+- Diff: figures.json term and label translations (all present), teacher.md "concept map" -> "recognition chart", other changed lines; terms consistent (sliding friction).

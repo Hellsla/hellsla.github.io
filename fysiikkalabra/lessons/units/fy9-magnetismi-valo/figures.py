@@ -6,8 +6,7 @@ current #7048e8; force red, velocity blue (CLAUDE.md); heat loss dark brown-red 
 hero        the Why scene: an archipelago in cross-section, the mainland's transformer kiosk on the left, a sea
             cable along the seabed, the island's kiosk and two red cottages with lit windows on the right (no text,
             no people)
-kartta      the concept map of the review: the magnetic field at the top, then three boxes (forces in a field,
-            induction, light), each with three laws
+kartta      the recognition chart of the review (Mistä tunnistan, mitä lakia käytän?): task signs -> the law or method
 siirto      the hook to scale: the same 40 kW through a 0,50 ohm cable at 230 V and at 20 kV, the share lost as heat
             drawn to scale (38 % and 0,005 %) with the currents
 ympyra      a positive particle in a uniform field into the page: the circular path, the velocity tangent and the
@@ -33,6 +32,8 @@ LOSS = "#8f3b1b"        # power lost as heat: a dark brown-red, not the orange o
 P_HOOK = 40e3          # W
 R_HOOK = 0.50          # ohm, both conductors of the 1,0 km cable together
 U_LOW, U_HIGH = 230.0, 20e3
+
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
 
 
 def hero():
@@ -102,42 +103,50 @@ def hero():
 
 
 def kartta():
-    """The concept map, stacked for a phone: the magnetic field at the top, a spine down the left and three boxes
-    (forces in a field, induction, light), each with three laws and a grey word beside each."""
-    f = Fig("fy9mv-kartta", 704, "Käsitekartta. Ylhäällä solmu magneettikenttä: magneettivuon tiheys B ja magneettivuo fii = B A. Siitä lähtee "
-            "alas kolme haaraa. Voimat kentässä, liikkuva varaus: magneettinen voima F M = Q v B kohtisuora, virtajohtimeen "
-            "kohdistuva voima F M = I l B kohtisuora ja suoran johtimen kenttä B = myy nolla I per 2 pii r. Induktio, "
-            "muuttuva vuo: induktiolaki e = miinus N delta fii per delta t, generaattorin huippujännite u 0 = N A B kertaa "
-            "2 pii f ja muuntaja N 1 per N 2 = U 1 per U 2. Valo, sähkömagneettinen aalto: taittumislaki sini alfa 1 per "
-            "sini alfa 2 = n 2 per n 1, hilayhtälö d sini alfa = n lambda ja Malusin laki I = I 0 kertaa kosini toiseen "
-            "theeta.", width=380, size=20)
-    groups = [
-        ("voimat kentässä", "liike tai virta", [(r"F_\text{M} = QvB_\perp", "varaus"), (r"F_\text{M} = I\ell B_\perp", "johdin"),
-                                                (r"B = \mu_0 I/(2\pi r)", "johtimen kenttä")]),
-        ("induktio", "muuttuva vuo", [(r"e = -N\,\Delta\Phi/\Delta t", "induktiolaki"), (r"u_0 = NAB \cdot 2\pi f", "generaattori"),
-                                      (r"N_1/N_2 = U_1/U_2", "muuntaja")]),
-        ("valo", "sm-aalto", [(r"\sin\alpha_1/\sin\alpha_2 = n_2/n_1", "taittuminen"), (r"d\sin\alpha = n\lambda", "hila"),
-                              (r"I = I_0\cos^2\theta", "polarisaatio")]),
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words (YO language): the sign on top, the choice it leads to and, as the result in a
+    pill in the site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
+    rows = [
+        (r"\text{hiukkanen liikkuu kentässä}", r"\to\ \text{voima}", r"F_\text{M} = QvB_\perp"),
+        (r"\text{virtajohdin kentässä}", r"\to\ \text{voima}", r"F_\text{M} = I\ell B_\perp"),
+        (r"\text{hiukkanen kiertää ympyrää}", r"\to\ \text{keskeisvoima}", r"r = mv/(QB)"),
+        (r"\text{magneettivuo muuttuu}", r"\to\ \text{induktio}", r"e = -N\Delta\Phi/\Delta t"),
+        (r"\text{muuntaja}", r"\to\ \text{kierrokset ja jännite}", r"N_1/N_2 = U_1/U_2"),
+        (r"\text{generaattori pyörii}", r"\to\ \text{huippujännite}", r"u_0 = NAB\,2\pi f"),
+        (r"\text{valo kulkee aineesta toiseen}", r"\to\ \text{taittuminen}", r"\text{Snellin laki}"),
+        (r"\text{valo ei pääse ulos aineesta}", r"\to\ \text{kokonaisheijastus}", r"\sin\alpha_\text{r} = n_2/n_1"),
+        (r"\text{valo osuu hilaan}", r"\to\ \text{interferenssi}", r"d\sin\alpha = n\lambda"),
     ]
-    hub_y, hub_h, x_box, gh, top = 8, 72, 44, 188, 100
-    spine = 24
-    f.line(spine, hub_y + hub_h, spine, top + 2 * (gh + 16) + 22, RULE, 3)
-    f.rect(8, hub_y, 364, hub_h, GOOD_LIGHT, FIELD, 2.5, 12)
-    f.tex(190, hub_y + 22, r"\text{magneettikenttä}", "middle", INK)
-    f.tex(190, hub_y + 51, r"\overline{B},\ \Phi = BA", "middle", INK)
-    for k, (head, sub, rows) in enumerate(groups):
-        y = top + k * (gh + 16)
-        f.line(spine, y + 22, x_box, y + 22, RULE, 3)
-        f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
-        f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
-        f.tex(362, y + 22, r"\text{" + sub + "}", "end", MUTED, size=17)
-        f.line(x_box + 10, y + 42, 362, y + 42, RULE_LIGHT, 1.5)
-        for j, (law, word) in enumerate(rows):
-            yy = y + 68 + j * 52
-            long_law = len(law) > 28
-            f.tex(x_box + 14, yy - (9 if long_law else 0), law, "start", INK, size=18 if long_law else None)
-            if word: f.tex(362, yy + (13 if long_law else 0), r"\text{" + word + "}", "end", MUTED, size=17)
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    ys = [top + (ch + gap) * k for k in range(len(rows))]
+    height = ys[-1] + ch + 8
+    f = Fig("fy9mv-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + ch / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{kuva ja suunnat ensin, sitten tunnusmerkki}", "middle", INK, size=17, w=340)
+    for (sign, choice, law), y in zip(rows, ys):
+        f.line(14, y + ch / 2, x0, y + ch / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=170)
+        f.rect(x1 - 134, yy - 11, 124, 24, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 72, yy + 1, law, "middle", WHITE, size=17, w=116)
     return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Tee ensin kuva ja merkitse suunnat, ja katso sitten, mikä  "
+               "tehtävän tunnusmerkki sopii. Hiukkanen liikkuu kentässä: magneettinen voima on varaus kertaa nopeus kertaa  "
+               "kohtisuora magneettivuon tiheys. Virtajohdin kentässä: voima on virta kertaa johtimen pituus kertaa kohtisuora  "
+               "magneettivuon tiheys. Hiukkanen kiertää ympyrää: magneettinen voima on keskeisvoima, ja säde on massa kertaa  "
+               "nopeus jaettuna varauksen ja magneettivuon tiheyden tulolla. Magneettivuo muuttuu: käämiin indusoituva jännite  "
+               "on miinus kierrosluku kertaa vuon muutos jaettuna ajalla. Muuntaja: kierroslukujen suhde on jännitteiden suhde.  "
+               "Generaattori pyörii: indusoituvan jännitteen huippuarvo on kierrosluku kertaa pinta-ala kertaa magneettivuon  "
+               "tiheys kertaa kaksi pii kertaa taajuus. Valo kulkee aineesta toiseen: taittumisessa käytetään Snellin lakia.  "
+               "Valo ei pääse ulos aineesta: kokonaisheijastuksen rajakulman sini on taitekertoimien suhde. Valo osuu hilaan:  "
+               "hilayhtälö on rakovälin ja kulman sinin tulo yhtä suuri kuin kertaluku kertaa aallonpituus.")
 
 
 def siirto():

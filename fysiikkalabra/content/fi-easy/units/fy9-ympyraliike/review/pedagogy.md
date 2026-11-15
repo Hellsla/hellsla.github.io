@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 91df63573f747d28
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 7b3699a510e8acef.
+CONTENT-HASH: 1a63edba19d2c30c
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (e98058080562c84a); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+(none new; round-1 findings stand)
 
 ## Checked
-Diff only: distances named r_t, r_v, r_k, d_p, d_k, d_m with the lever-arm conversion shown in Muunnokset; solutions give the answer in symbols first. Staging and force-diagram description unchanged.
+- Round-1 Blocking fixed: teacher.md "Jokainen rivi alkaa voimakuviosta ... jokaisen rivin kohdalla".
+- Road bend row "lepokitka kaartaa, F = mv²/r", aria-label "lepokitka kaartaa, ja kitkavoima on m v toiseen per r"; consistent (fi PNG opened: eight rows, nothing clipped).

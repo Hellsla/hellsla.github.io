@@ -211,44 +211,70 @@ All the problems of this lesson start from the same principle: **energy is conse
 
 Three questions branch off from the conservation law, and the energy problems of the exam come back to them. **How fast** is energy transformed? Power tells that. **How large a share** is useful? Efficiency tells that. **Where** does the energy come from? From the heat of combustion of a fuel, from the work done by a force, or from flowing water, the wind and the sun.
 
-<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Concept map. At the top is the node energy is conserved: E initial equals E final. Three branches lead down from it. Power: P = ΔE / Δt, energy from power E = P t and the kilowatt-hour 1 kWh = 3.6 MJ. Efficiency: eta = W a / W o, losses W o = W a + W h and from powers eta = P a / P o. Source of energy: fuel Q = H m, work W = F s and work of lifting W = m g h." style="max-width:100%;font-size:21px">
-  <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+<svg data-fig="kartta" viewBox="0 0 380 870" role="img" aria-label="Recognition chart: how do I tell which law to use? Start by listing the forms of energy and see which sign in the task fits. Isolated system: energy is conserved, so the initial energy equals the final energy. Energy over time: power is the change of energy divided by the time. Steady power, duration known: energy is power times time. Kilowatt-hours: convert to joules, one kilowatt-hour is 3.6 megajoules. Useful energy and input energy: efficiency is the useful energy divided by the input energy. Several devices in a row: multiply the efficiencies of the stages. Fuel, heating value: the heat released in burning is the heating value times the mass. A force moves a distance: the work is force times distance." style="max-width:100%;font-size:21px">
+  <line x1="14" y1="80" x2="14" y2="826" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
-  <foreignObject x="93" y="16.5" width="194" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{energy is conserved}$</div></foreignObject>
-  <foreignObject x="104" y="46.5" width="172" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$E_\text{initial} = E_\text{final}$</div></foreignObject>
-  <line x1="24" y1="122" x2="44" y2="122" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="100" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="109.5" width="74" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{power}$</div></foreignObject>
-  <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="153.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$P = \Delta E/\Delta t$</div></foreignObject>
-  <foreignObject x="260" y="155" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{definition}$</div></foreignObject>
-  <foreignObject x="58" y="187.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$E = P\,t$</div></foreignObject>
-  <foreignObject x="214" y="189" width="148" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{energy from power}$</div></foreignObject>
-  <foreignObject x="58" y="221.5" width="139" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$1\,\text{kWh} = 3.6\,\text{MJ}$</div></foreignObject>
-  <foreignObject x="232" y="223" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{kilowatt-hour}$</div></foreignObject>
-  <line x1="24" y1="288" x2="44" y2="288" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="266" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="275.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{efficiency}$</div></foreignObject>
-  <line x1="54" y1="308" x2="362" y2="308" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="319.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = W_\text{a}/W_\text{o}$</div></foreignObject>
-  <foreignObject x="260" y="321" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{definition}$</div></foreignObject>
-  <foreignObject x="58" y="353.5" width="95" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W_\text{o} = W_\text{a} + W_\text{h}$</div></foreignObject>
-  <foreignObject x="298" y="355" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{losses}$</div></foreignObject>
-  <foreignObject x="58" y="387.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = P_\text{a}/P_\text{o}$</div></foreignObject>
-  <foreignObject x="260" y="389" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{from powers}$</div></foreignObject>
-  <line x1="24" y1="454" x2="44" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="432" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="441.5" width="172" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{source of energy}$</div></foreignObject>
-  <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="485.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$Q = Hm$</div></foreignObject>
-  <foreignObject x="317" y="487" width="45" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{fuel}$</div></foreignObject>
-  <foreignObject x="58" y="519.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = Fs$</div></foreignObject>
-  <foreignObject x="317" y="521" width="45" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{work}$</div></foreignObject>
-  <foreignObject x="58" y="553.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = mgh$</div></foreignObject>
-  <foreignObject x="232" y="555" width="130" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{work of lifting}$</div></foreignObject>
+  <foreignObject x="25" y="21.5" width="330" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\textbf{how do I tell the law?}$</div></foreignObject>
+  <foreignObject x="20" y="52" width="340" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px">$\text{forms of energy first, then the sign}$</div></foreignObject>
+  <line x1="14" y1="149" x2="30" y2="149" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="98" width="342" height="102" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="108.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{isolated system}$</div></foreignObject>
+  <line x1="40" y1="138" x2="362" y2="138" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="143" width="314" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{energy is conserved}$</div></foreignObject>
+  <rect x="142" y="172" width="220" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="146" y="174" width="212" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$E_\text{initial} = E_\text{final}$</div></foreignObject>
+  <line x1="14" y1="250" x2="30" y2="250" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="214" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="224.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{energy over time}$</div></foreignObject>
+  <line x1="40" y1="254" x2="362" y2="254" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="259" width="176" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{power}$</div></foreignObject>
+  <rect x="232" y="258" width="130" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="236" y="260" width="122" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$P = \Delta E/\Delta t$</div></foreignObject>
+  <line x1="14" y1="336" x2="30" y2="336" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="300" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="310.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{steady power, duration known}$</div></foreignObject>
+  <line x1="40" y1="340" x2="362" y2="340" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="345" width="182" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{energy}$</div></foreignObject>
+  <rect x="238" y="344" width="124" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="242" y="346" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$E = Pt$</div></foreignObject>
+  <line x1="14" y1="437" x2="30" y2="437" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="386" width="342" height="102" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="396.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{kilowatt-hours}$</div></foreignObject>
+  <line x1="40" y1="426" x2="362" y2="426" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="431" width="314" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{convert to joules}$</div></foreignObject>
+  <rect x="172" y="460" width="190" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="176" y="462" width="182" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$1\,\text{kWh} = 3.6\,\text{MJ}$</div></foreignObject>
+  <line x1="14" y1="538" x2="30" y2="538" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="502" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="512.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{useful and input energy}$</div></foreignObject>
+  <line x1="40" y1="542" x2="362" y2="542" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="547" width="176" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{efficiency}$</div></foreignObject>
+  <rect x="232" y="546" width="130" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="236" y="548" width="122" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\eta = W_\text{a}/W_\text{o}$</div></foreignObject>
+  <line x1="14" y1="639" x2="30" y2="639" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="588" width="342" height="102" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="598.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{several devices in a row}$</div></foreignObject>
+  <line x1="40" y1="628" x2="362" y2="628" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="633" width="314" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{multiply efficiencies}$</div></foreignObject>
+  <rect x="212" y="662" width="150" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="216" y="664" width="142" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\eta = \eta_1\eta_2\eta_3$</div></foreignObject>
+  <line x1="14" y1="740" x2="30" y2="740" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="704" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="714.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{fuel, heating value}$</div></foreignObject>
+  <line x1="40" y1="744" x2="362" y2="744" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="749" width="206" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{heat of combustion}$</div></foreignObject>
+  <rect x="262" y="748" width="100" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="266" y="750" width="92" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$Q = Hm$</div></foreignObject>
+  <line x1="14" y1="826" x2="30" y2="826" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="790" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="800.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{a force moves a distance}$</div></foreignObject>
+  <line x1="40" y1="830" x2="362" y2="830" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="835" width="182" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{work}$</div></foreignObject>
+  <rect x="238" y="834" width="124" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="242" y="836" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$W = Fs$</div></foreignObject>
 </svg>
 
-In the exam a solution starts with recognising which branch the problem is about and writing its law before the numbers. Energy and power are different quantities: the kilowatt tells the rate, the kilowatt-hour the amount.
+In the exam a solution starts with recognising which sign the problem gives and writing its law before the numbers. Energy and power are different quantities: the kilowatt tells the rate, the kilowatt-hour the amount.
 
 This also answers the opening question. Ten litres of petrol contain about $7.5\,\text{kg} \cdot 43\,\text{MJ/kg} \approx 320\,\text{MJ} \approx 90\,\text{kWh}$ of energy, more than a $40\,\text{kWh}$ battery. Charging still takes a long time, because the power of the socket is small: $40\,\text{kWh} : 2.3\,\text{kW} \approx 17\,\text{h}$.
 

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e297d1ba1b8c1dd6
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 90beeadb37d7835e.
+CONTENT-HASH: 30d9fe8f97cb2a78
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (6ad4a6f43f1059e3).
 
 ## Blocking
 (none)
 
 ## Polish
-- s1 d Periaate writes the line as $E = E_0 + kT$, while c writes $E = E_0 + k(T-T_0)$. This is correct because $T_0 = 0\,{}^\circ\text{C}$, but it could say so ("koska $T_0 = 0\,{}^\circ\text{C}$").
+- C: "voima siirtää matkan -> W = Fs" assumes a constant force along the displacement (round 1, stands).
 
 ## Checked
-- s1 c: $E = E_0 + k(T - T_0)$ with $(0\,{}^\circ\text{C}; 93\,\text{kWh})$ gives 230.2 kWh, so 230 kWh. d: $T = (E_\text{muu}-E_0)/k = 16.5\,{}^\circ\text{C}$.
-- s2 a: $P_\text{ka} = kNP_\text{nim} = 0.60$ MW, 5.26 GWh a year, battery 1.7 h.
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- Round-1 Blocking fixed: row 1 is now "eristetty systeemi" (en "isolated system") in figures.py, the rendered chart and the aria-label (fi ARIA_KARTTA); this matches the Kaava ("Eristetyssä systeemissä …"/"In an isolated system …") and glossary eristetty systeemi.
+- unit.md sentence after the chart: "which branch" -> "which sign the problem gives"; no physics changed.
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- Rows 2-8 unchanged and correct as in round 1 (1 kWh = 3,6 MJ recomputed).
+- Hash taken at the start and the end (30d9fe8f97cb2a78).

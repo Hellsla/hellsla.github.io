@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 5755edad4011f77c
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at da59d2b57a4936df.
+CONTENT-HASH: cd1b14955e148aa1
+Review of the recognition chart (queue 9c) and the term change against the version passed at 5755edad4011f77c; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
@@ -9,4 +9,7 @@ Delta review (merge of #523 solution practice into #522, 2026-11-13) of the vers
 (none)
 
 ## Checked
-Diff only: transformer c) gives P_h/P = RP/U^2 before substituting; fibre c) names N_j, A_j, beta and keeps the 4 x 0,10 dB in Sijoitus; grating d = 1/N with the unit 'per length' explained, then d = 1 mm/600 in Muunnokset. No contradiction with the #522 formula names.
+- Every chart row of the fi-easy version (sign in task wording -> choice -> law pill), from the 360 px capture or figures.py: each result follows from its sign, no formula list, order useful, start box fits the unit.
+- fi-easy aria-label (figures.json): states the same rows in clear Finnish, usable as a text alternative, formulas spoken in words.
+- Placement after Ydinajatus, unit.md aria-label equals figures.json.
+- Term change: no liikekitka left in the unit texts (grep); teacher.md sentence checked against rows.

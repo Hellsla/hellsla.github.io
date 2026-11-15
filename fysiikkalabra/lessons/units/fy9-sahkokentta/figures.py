@@ -6,8 +6,7 @@ never told by colour alone.
 
 hero        the Why scene: a winter evening in a hallway, a hand in a knitted sleeve reaching for the metal door handle
             and a small spark jumping across the gap; a wool rug on the floor, a snowy window, a radiator (no text)
-kartta      the concept map of the review: charge makes a field, F = qE, then four boxes (charge and force, field and
-            potential, the capacitor, components and safety), each with three laws
+kartta      the recognition chart of the review (Mistä tunnistan, mitä lakia käytän?): task signs -> the law or method
 kipina      the hook answered: the fingertip and the handle's metal plate 3 mm apart, the induced charges and the green
             field across the gap, and the numbers U = Ed (E the breakdown strength), Q = CU and W = 1/2 C U^2 beside it
 levyt       the Kaava figure: two plates at 200 V and 0 V, the green uniform field, dashed equipotentials every 50 V,
@@ -33,6 +32,8 @@ U_HOOK = E_AIR * GAP         # 9,0 kV
 Q_HOOK = C_BODY * U_HOOK     # 0,90 µC
 W_HOOK = 0.5 * C_BODY * U_HOOK ** 2   # 4,05 mJ
 Q_DANGER = 0.050 * 1.0       # C, 50 mA for about one second
+
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
 
 
 def _ball(f, x, y, sign, r=15):
@@ -153,43 +154,47 @@ def hero():
 
 
 def kartta():
-    """The concept map, stacked for a phone: the idea at the top (charge makes a field, F = qE), a spine down the left
-    and four boxes, each with three laws and a grey word beside each."""
-    groups = [
-        ("varaus ja voima", [(r"Q = ne", "alkeisvaraus"), (r"F_E = k\,Q_1 Q_2/r^2", "Coulomb"),
-                             (r"\overline{F} = \overline{F}_1 + \overline{F}_2", "summa")]),
-        ("kenttä ja potentiaali", [(r"U = Ed", "homogeeninen"), (r"W = QU", "kentän työ"),
-                                   (r"E_\text{k} = \tfrac12 mv^2", "kiihdytys")]),
-        ("kondensaattori", [(r"Q = CU", "kapasitanssi"), (r"C = \varepsilon_0\varepsilon_\text{r}A/d", "levyt"),
-                            (r"E = \tfrac12 CU^2", "energia")]),
-        ("komponentit ja turvallisuus", [(r"\Sigma \Delta V = 0", "etuvastus"),
-                                         (r"\eta = P/(GA)", "kenno"), (r"U = RI", "kehon virta")]),
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words (YO language): the sign on top, the choice it leads to and, as the result in a
+    pill in the site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
+    rows = [
+        (r"\text{kaksi varattua kappaletta}", r"\to\ \text{voima}", r"F_E = kQ_1Q_2/r^2"),
+        (r"\text{varaus sähkökentässä}", r"\to\ \text{kentän voimakkuus}", r"E = F_E/Q"),
+        (r"\text{levyjen välillä tasainen kenttä}", r"\to\ \text{jännite ja matka}", r"U = Ed"),
+        (r"\text{varaus kiihtyy jännitteessä}", r"\to\ \text{työ ja energia}", r"QU = \tfrac12 mv^2"),
+        (r"\text{kondensaattorin varaus}", r"\to\ \text{kapasitanssi}", r"Q = CU"),
+        (r"\text{levykondensaattorin mitat}", r"\to\ \text{kapasitanssi}", r"C = \varepsilon_0\varepsilon_\text{r}A/d"),
+        (r"\text{kondensaattorin energia}", r"\to\ \text{varastoitu energia}", r"E = \tfrac12 CU^2"),
+        (r"\text{LED tarvitsee etuvastuksen}", r"\to\ \text{silmukka}", r"\Sigma\Delta V = 0"),
     ]
-    hub_y, hub_h, x_box, gh, top = 8, 72, 44, 156, 100
-    height = top + 4 * (gh + 16) - 8
-    f = Fig("fy9sk-kartta", height, "Käsitekartta. Ylhäällä solmu: varaus synnyttää sähkökentän, ja kenttä kohdistaa varaukseen voiman F = q E. "
-            "Siitä lähtee alas neljä haaraa. Varaus ja voima: varaus Q = n e, Coulombin laki F E = k kertaa varausten tulo "
-            "jaettuna r toiseen ja voimien vektorisumma. Kenttä ja potentiaali: homogeeninen kenttä U = E kertaa d, kentän "
-            "työ W = Q U ja kiihdytyksessä liike-energia E k = puoli m v toiseen. Kondensaattori: kapasitanssi Q = C U, "
-            "levykondensaattori C = epsilon nolla epsilon r A jaettuna d:llä ja energia E = puoli C U toiseen. Komponentit "
-            "ja turvallisuus: etuvastus Kirchhoffin 2. laista, summa delta V = 0, aurinkokennon hyötysuhde eta = P jaettuna "
-            "G A:lla ja kehon läpi kulkeva virta I = U jaettuna R:llä.", width=380, size=22)
-    spine = 24
-    f.line(spine, hub_y + hub_h, spine, top + 3 * (gh + 16) + 22, RULE, 3)
-    f.rect(8, hub_y, 364, hub_h, GOOD_LIGHT, GOOD, 2.5, 12)
-    f.tex(190, hub_y + 22, r"\text{varaus synnyttää kentän}", "middle", INK)
-    f.tex(190, hub_y + 51, r"\overline{F} = q\overline{E}", "middle", INK)
-    for k, (head, rows) in enumerate(groups):
-        y = top + k * (gh + 16)
-        f.line(spine, y + 22, x_box, y + 22, RULE, 3)
-        f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
-        f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
-        f.line(x_box + 10, y + 42, 362, y + 42, RULE_LIGHT, 1.5)
-        for j, (law, word) in enumerate(rows):
-            yy = y + 66 + j * 37
-            f.tex(x_box + 14, yy, law, "start", INK)
-            f.tex(362, yy, r"\text{" + word + "}", "end", MUTED, size=17)
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    ys = [top + (ch + gap) * k for k in range(len(rows))]
+    height = ys[-1] + ch + 8
+    f = Fig("fy9sk-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + ch / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{piirrä tilanne ensin, sitten tunnusmerkki}", "middle", INK, size=17, w=340)
+    for (sign, choice, law), y in zip(rows, ys):
+        f.line(14, y + ch / 2, x0, y + ch / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=170)
+        f.rect(x1 - 134, yy - 11, 124, 24, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 72, yy + 1, law, "middle", WHITE, size=17, w=116)
     return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Piirrä tilanne ensin ja katso, mikä tehtävän tunnusmerkki  "
+               "sopii. Kaksi varattua kappaletta: Coulombin voima on Coulombin vakio kertaa varausten tulo jaettuna etäisyyden  "
+               "neliöllä. Varaus sähkökentässä: kentän voimakkuus on voima jaettuna varauksella. Levyjen välillä tasainen  "
+               "kenttä: jännite on kentän voimakkuus kertaa etäisyys. Varaus kiihtyy jännitteessä: kentän työ varauksen ja  "
+               "jännitteen tulo on yhtä suuri kuin liike-energia. Kondensaattorin varaus: varaus on kapasitanssi kertaa jännite.  "
+               "Levykondensaattorin mitat: kapasitanssi on tyhjiön permittiivisyys kertaa suhteellinen permittiivisyys kertaa  "
+               "pinta-ala jaettuna levyjen välimatkalla. Kondensaattorin energia: puolet kapasitanssin ja jännitteen neliön  "
+               "tulosta. LED tarvitsee etuvastuksen: silmukkaan sovelletaan Kirchhoffin 2. lakia, jännitteiden summa on nolla.")
 
 
 def kipina():

@@ -33,5 +33,22 @@
  "värähtelijät": "oscillators",
  "aallot": "waves",
  "ääni": "sound",
- "Käsitekartta. Ylhäällä solmu jaksollinen liike: jaksonaika T, taajuus f = 1 per T ja amplitudi A. Siitä lähtee alas kolme haaraa. Värähtelijät, toistuva liike: jousen voima F = miinus k x vektoreina, jousivärähtelijän jaksonaika T = 2 pii kertaa neliöjuuri m per k ja heilurin jaksonaika T = 2 pii kertaa neliöjuuri l per g. Aallot, värähtely etenee: aaltoliikkeen perusyhtälö v = f lambda, vahvistava interferenssi, kun matkaero on n lambda, ja kielen ominaistaajuudet f n = n v per 2 L. Ääni, aalto ilmassa: huojunta f H = f 1 miinus f 2 itseisarvona, Dopplerin ilmiö lähteen liikkuessa kohti havaitsijaa ja intensiteettitaso L = 10 desibeliä kertaa logaritmi I per I 0.": "Concept map. At the top the node periodic motion: period T, frequency f = 1 over T and amplitude A. Three branches lead down from it. Oscillators, repeating motion: spring force F = minus k x as vectors, period of the mass–spring oscillator T = 2 pi times the square root of m over k and period of the pendulum T = 2 pi times the square root of l over g. Waves, oscillation travels: the wave equation v = f lambda, constructive interference when the path difference is n lambda, and the natural frequencies of a string f n = n v over 2 L. Sound, a wave in air: beats f H = the absolute value of f 1 minus f 2, the Doppler effect for a source moving towards the observer and the intensity level L = 10 decibels times the logarithm of I over I 0."
+ "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita kysymällä, onko tehtävässä liike vai aalto, ja katso, mikä tunnusmerkki sopii. Massa jousen päässä: värähtelijän jaksonaika on kaksi pii kertaa neliöjuuri massasta jaettuna jousivakiolla. Heiluri, pieni kulma: jaksonaika on kaksi pii kertaa neliöjuuri pituudesta jaettuna putoamiskiihtyvyydellä. Aallon nopeus, taajuus, pituus: aaltoyhtälö, nopeus on taajuus kertaa aallonpituus. Kaksi lähdettä, voimistuu: matkaero on kokonaisluku kertaa aallonpituus. Kaksi lähdettä, vaimenee: matkaero on kokonaisluku ja puoli kertaa aallonpituus. Kieli tai avoin putki: seisova aalto, ominaistaajuus on n kertaa nopeus jaettuna kahdella pituudella. Kaksi lähes samaa taajuutta: huojunta, huojuntataajuus on taajuuksien erotuksen itseisarvo. Lähde tai havaitsija liikkuu: taajuus muuttuu, kyseessä on Dopplerin ilmiö. Äänen voimakkuus desibeleinä: intensiteettitaso on kymmenen kertaa intensiteetin ja kynnysintensiteetin suhteen kymmenkantainen logaritmi desibeleinä.": "Recognition chart: how do I tell which law to use? Start by asking whether the task is about a motion or a wave, and see which sign fits. Mass on a spring: the period of the oscillator is two pi times the square root of the mass divided by the spring constant. Pendulum, small angle: the period is two pi times the square root of the length divided by the acceleration of free fall. Wave speed, frequency, wavelength: the wave equation, speed is frequency times wavelength. Two sources, reinforce: the path difference is a whole number times the wavelength. Two sources, cancel: the path difference is a whole number plus a half, times the wavelength. String or open pipe: a standing wave, the natural frequency is n times the speed divided by twice the length. Two almost equal frequencies: beats, the beat frequency is the absolute value of the difference of the frequencies. Source or observer moves: the frequency changes, this is the Doppler effect. Loudness in decibels: the sound intensity level is ten times the base-ten logarithm of the ratio of the intensity to the threshold intensity, in decibels.",
+ "intensiteettitaso": "intensity level",
+ "matkaero": "path difference",
+ "taajuus muuttuu": "frequency changes",
+ "heiluri, pieni kulma": "pendulum, small angle",
+ "kaksi lähdettä, voimistuu": "two sources, reinforce",
+ "kaksi lähdettä, vaimenee": "two sources, cancel",
+ "aaltoyhtälö": "wave equation",
+ "kieli tai avoin putki": "string or open pipe",
+ "mistä tunnistan lain?": "how do I tell the law?",
+ "jaksonaika": "period",
+ "äänen voimakkuus desibeleinä": "loudness in decibels",
+ "liike vai aalto? katso tunnusmerkki": "motion or wave? look at the sign",
+ "kaksi lähes samaa taajuutta": "two almost equal frequencies",
+ "massa jousen päässä": "mass on a spring",
+ "aallon nopeus, taajuus, pituus": "wave speed, frequency, wavelength",
+ "H": "H",
+ "lähde tai havaitsija liikkuu": "source or observer moves"
 }

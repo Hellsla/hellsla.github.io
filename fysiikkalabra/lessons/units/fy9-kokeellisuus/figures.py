@@ -84,41 +84,54 @@ def hero():
     return f.svg()
 
 
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
+
+
 def kartta():
-    """The loop of an experimental task: plan on the left (question and hypothesis, variables, instruments and
-    repeats), analysis on the right (table and graph, result with uncertainty, error sources and conclusion)."""
-    f = Fig("fy9ko-kartta", 380, "Kaavakuva kokeellisen tehtävän vaiheista kahtena sarakkeena. Vasemmalla suunnittelu "
-            "ylhäältä alas: tutkimuskysymys ja hypoteesi, muuttujat ja vakioitavat suureet, välineet ja toistomittaukset. "
-            "Alhaalta nuoli vie oikeaan sarakkeeseen, analyysiin, alhaalta ylös: taulukko, kuvaaja ja sovitus, tulos "
-            "muodossa x keskiarvo plus miinus delta x, virhelähteet ja johtopäätös. Ylhäältä katkoviivanuoli palaa "
-            "tutkimuskysymykseen: johtopäätös voi synnyttää uuden kysymyksen.")
-    f.tex(150, 22, r"\text{suunnittelu}", "middle", MUTED)
-    f.tex(450, 22, r"\text{analyysi}", "middle", MUTED)
-    boxes = {  # (column, row): two lines
-        (0, 0): (r"\text{tutkimuskysymys}", r"\text{ja hypoteesi}"),
-        (0, 1): (r"\text{muuttujat ja}", r"\text{vakioitavat suureet}"),
-        (0, 2): (r"\text{välineet ja}", r"\text{toistomittaukset}"),
-        (1, 2): (r"\text{taulukko, kuvaaja}", r"\text{ja sovitus}"),
-        (1, 1): (r"\text{tulos}", r"\bar{x} \pm \Delta x"),
-        (1, 0): (r"\text{virhelähteet ja}", r"\text{johtopäätös}"),
-    }
-    X0, W, Y0, H_, GAP = 20, 260, 50, 82, 30
-    for (c, r), (l1, l2) in boxes.items():
-        x, y = X0 + c * 300, Y0 + r * (H_ + GAP)
-        f.rect(x, y, W, H_, GLASS if c == 0 else SAND_LIGHT, INK, 2.5, 10)
-        f.tex(x + W / 2, y + 26, l1, "middle")
-        f.tex(x + W / 2, y + 56, l2, "middle")
-    cx0, cx1 = X0 + W / 2, X0 + 300 + W / 2
-    for r in (0, 1):                                                              # down the plan, up the analysis
-        y1, y2 = Y0 + r * (H_ + GAP) + H_, Y0 + (r + 1) * (H_ + GAP)
-        f.arrow(cx0, y1 + 2, cx0, y2 - 2, INK, 2.5, 12)
-        f.arrow(cx1, y2 - 2, cx1, y1 + 2, INK, 2.5, 12)
-    yb = Y0 + 2 * (H_ + GAP) + H_ / 2
-    f.arrow(X0 + W + 2, yb, X0 + 300 - 2, yb, INK, 2.5, 12)                      # plan -> analysis
-    yt = Y0 + H_ / 2
-    f.line(X0 + 300 - 2, yt, X0 + W + 16, yt, MUTED, 2.5, "7 6")                  # back to a new question
-    f.path(f"M{X0 + W + 2},{n(yt)} L{X0 + W + 16},{n(yt - 6)} L{X0 + W + 16},{n(yt + 6)} Z", MUTED)
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words: the sign on top, the choice it leads to and, as the result in a pill in the
+    site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
+    rows = [
+        (r"\text{mittaustuloksia on monta}", r"\to\ \text{paras arvio}", r"\bar{x} = \sum x_i / n", 150, False),
+        (r"\text{kuinka paljon tulos vaihtelee?}", r"\to\ \text{vaihteluvälin puolikas}", r"\Delta x = \tfrac{x_\text{max} - x_\text{min}}{2}", 160, True),
+        (r"\text{ilmoita lopullinen tulos}", r"\to\ \text{virhearvio mukaan}", r"\bar{x} \pm \Delta x", 100, False),
+        (r"\text{onko epävarmuus pieni?}", r"\to\ \text{suhteellinen epävarmuus}", r"\varepsilon = \Delta x / \bar{x}", 150, True),
+        (r"\text{suureet riippuvat lineaarisesti}", r"\to\ \text{sovita suora}", r"y = kx + b", 100, False),
+        (r"\text{tulos kulmakertoimesta}", r"\to\ \text{kaukaiset pisteet}", r"k = \Delta y / \Delta x", 130, False),
+        (r"\text{malli origon kautta, suora ei}", r"\to\ \text{systemaattinen virhe}", r"b \neq 0", 80, False),
+    ]
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    heights = [ch + (30 if r[4] else 0) for r in rows]
+    ys = [top + sum(heights[:k]) + gap * k for k in range(len(rows))]
+    height = ys[-1] + heights[-1] + 8
+    f = Fig("fy9ko-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + heights[-1] / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan menetelmän?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{tehtävä kysyy, menetelmä vastaa}", "middle", INK, size=17, w=340)
+    for (sign, choice, law, pw, tall), y, ch_ in zip(rows, ys, heights):
+        f.line(14, y + ch_ / 2, x0, y + ch_ / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch_, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 38 - (0 if tall else pw))
+        if tall:                                               # a long result on a line of its own
+            yy += 30
+            f.rect(x1 - 10 - pw, yy - 12, pw, 26, ACCENT, ACCENT, 2, 8)
+        else:
+            f.rect(x1 - 10 - pw, yy - 11, pw, 24, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 10 - pw / 2, yy + 1, law, "middle", WHITE, size=17, w=pw - 8)
     return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mikä menetelmä sopii kokeellisen tehtävän kysymykseen? Mittaustuloksia on monta: paras arvio "
+               "on keskiarvo, eli tulosten summa jaettuna lukumäärällä. Kuinka paljon tulos vaihtelee: vaihteluvälin puolikas, "
+               "suurin miinus pienin tulos jaettuna kahdella. Ilmoita lopullinen tulos: keskiarvo plus miinus virhearvio. Onko "
+               "epävarmuus pieni: suhteellinen epävarmuus on virhearvio jaettuna keskiarvolla. Suureet riippuvat "
+               "lineaarisesti: sovita suora y on k x plus b. Tulos kulmakertoimesta: kulmakerroin luetaan suoran kahdesta "
+               "kaukana toisistaan olevasta pisteestä, k on delta y per delta x. Malli kulkee origon kautta, mutta suora ei: vakio b ei ole "
+               "nolla, mikä viittaa systemaattiseen virheeseen.")
 
 
 def virhe():

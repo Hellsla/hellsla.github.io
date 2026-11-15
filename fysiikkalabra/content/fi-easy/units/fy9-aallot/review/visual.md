@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 56c058a7e6212ab4
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 20cd0c5ea68aaf63.
+CONTENT-HASH: 4a0d8e1f5459c529
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (67d7b7f5a224ebfb).
 
 ## Blocking
 (none)
@@ -9,4 +9,4 @@ Delta review (merge of #523 solution practice into #522, 2026-11-13) of the vers
 (none)
 
 ## Checked
-Read every added line of the merge diff for this unit (fi-easy). check_latex.py on the unit: all fragments ok. Symbols introduced by the symbolic solutions (Annettu/Kaava/Sijoitus) compared with the unit text and neighbouring solutions: no clash with #522 formula names or notation found; no derivation duplicated; order principle, symbolic formula, substitution, result kept; units upright with thin space, decimal comma, no plain numbers with units in the added text. No capture built (source judged sufficient for these text-only changes).
+- Opened fy9-aallot-fi-easy-360.png (chart unchanged); the diff is only teacher.md branch-to-row wording, which reads correctly.

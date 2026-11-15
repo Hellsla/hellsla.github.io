@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 456c89720f6a41c5
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 126db917d5bd6620.
+CONTENT-HASH: 3ca7bc5c5466ca22
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (3d8ac69f058acd26); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+(none new; round-1 findings stand)
 
 ## Checked
-Diff only: exit ticket answers now state E_k = 1/2 mv^2 and m1v1 = (m1+m2)v' before numbers (CLAUDE.md symbolic-first); level and length unchanged. Inquiry and sovella solutions add ratio formulas, y = s_p/v0 reading, symbols N, k for tasks; consistent.
+- Round-1 Blocking fixed: teacher.md "jokaisen rivin kohdalla". Diff read in full: nothing else changed.

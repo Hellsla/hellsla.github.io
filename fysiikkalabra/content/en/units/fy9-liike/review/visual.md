@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 8e16b09b0e569f61
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 0462ca982df89864.
+CONTENT-HASH: 4cde8bd5463d7c4f
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (b242489c281d686d).
 
 ## Blocking
 (none)
@@ -9,4 +9,5 @@ Delta review (merge of #523 solution practice into #522, 2026-11-13) of the vers
 (none)
 
 ## Checked
-Source-level delta review of the diff (the changes are inline formulas and short text, no figure or layout changes, so no new captures were taken). Looked at: sovella/solutions.md: $y_\text{top} = y_{0\text{A}} + v_0^2/(2g)$ and $a_\text{min}$, $a_\text{max}$ formulas; LaTeX balanced. No clash between the #522 notation and the #523 symbols found; no duplicated derivation; every changed line has balanced `$` and braces; units upright with a thin space.
+- Opened fy9-liike-en-360.png (every row, pill and header read; no overlap except as noted), and read the changed aria-label/figures.json entry and the diff against the chart; the diff's other lines (teacher.md rows wording, unit.md sign wording, line break fix) read in full.
+- Round-1 finding(s) of my role re-checked: unchanged rest holds.

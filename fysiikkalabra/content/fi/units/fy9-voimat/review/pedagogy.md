@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8fb4b213f8bfbe4b
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 101f629e435eab31.
+CONTENT-HASH: edfdbc1e8340a554
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (8fd79cadff819b5c); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- B (kept): no row for weight and slope components.
 
 ## Checked
-Kytketyt laatikot: $a$ ratkaistu symboleissa ennen $P$:tä; voimakuvio ennen yhtälöitä säilyi (voimakuvio-lohko ennen Kaavaa); lisäpunnus $m_x$, $k'$ ja $F_0'$; lepokitka $\mu_0 = \tan\alpha_\text{ka}$ ja epävarmuuden kaava. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.
+- Round-1 Polish B fixed: "putoaa, ilmanvastus, nopeus tasaantuu -> F_v = G" now states the vertical fall; "tanko tai vipu pysyy paikallaan -> myös momentit" states the equilibrium condition; both also in the aria-label.
+- 360 px PNG opened: nine rows; the long "putoaa…" sign fits its card.
+- The rest passes through the round-1 report.

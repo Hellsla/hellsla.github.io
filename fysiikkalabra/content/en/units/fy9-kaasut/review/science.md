@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6263b46de4aa9695
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at cb173dd417c974be.
+CONTENT-HASH: 806a1f1affaa7986
+Round 3 delta against cc5cfb996b96c940.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- B-leaning, not blocking: the work row now reads "constant pressure, volume changes → work done, W = pΔV" (was "magnitude of the work"). The Kaava (line 321) names the same formula "work done by an expanding gas / on a compressed gas", with ΔV a magnitude (line 324), so the chart agrees with the Kaava; but the 1st-law row uses W for the work done on the gas, where an expansion gives W = −pΔV (line 330). "magnitude of the work" or "work (magnitude)" kept that sign explicit; the fi chart still says "työn suuruus".
+- The aria-label still says "the magnitude of the work is pressure times the magnitude of the change of volume": same physics as the pill, only more precise than the visible label; aligning the wording is advised.
+- Round-2 items stand: the 1st-law row does not name W as work done on the gas; the key "kaasuun tehty työ" is unused.
 
 ## Checked
-Every hunk of the en merge diff (word diff). Suction lift: the recovered share $\eta_\text{h}$; the wet upright lift rewritten in full form: $\Delta p_\text{w} = m(g+a)/(\mu_\text{w}A) = 37\,380$ Pa, $s = 1.61$ recomputed (792.72 N); the conclusion (fails the factor 2) and the friction mechanism (the pressure force is horizontal, so friction carries the weight) unchanged and correct. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.
+- Diff: only the figures.json string "työn suuruus" and the matching chart label in unit.md changed; formula W = pΔV, other rows, Kaava and aria-label unchanged.
+- Chart label vs Kaava lines 321–330: consistent as a magnitude statement.
+- Hash at start and end: 806a1f1affaa7986.

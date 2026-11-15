@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 72daa2767c4da87f
-
-Delta review (round 3, Kaava sign convention, 2026-11-13) of the version reviewed at 7f560b98c5ecb9d0.
+CONTENT-HASH: 45d2c7dbc75e17b1
+Review of the recognition chart (queue 9c) and the term change against the version passed at the earlier hash; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+C: F_E has an italic subscript E, while other force labels (F_M, F_μ) have upright or Greek subscripts; make the name subscript upright, F_\text{E}.
 
 ## Checked
-- Round-3 diff only: the Formula line against the Principle line of the same solution (source). U is now one quantity (U = V - V_0, positive, as in the Principle), U_AB = V_0 - V is named separately with a subscript, and "the voltage from the start to the point" wording is in place. The chain W = QU_AB = (-e)(V_0 - V) = e(V - V_0) = eU is well-formed KaTeX and keeps principle, symbolic equation, substitution, result. No captures opened: text-only change inside a collapsed solution, layout unchanged.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- Chart at 360 px (fy9-tunnistus/fy9-sahkokentta-fi-easy-360.png): every row's sign, arrow label and pill read in full, no clipped or overlapping label, white on #1a4d2e legible, pill style matches the other units, KaTeX subscripts and \overline vectors render.
+- ARIA_KARTTA/figures.json aria-label is Finnish and lists every row of the chart.
+- Friction terms: no liikekitka left in the unit's fi-easy texts.

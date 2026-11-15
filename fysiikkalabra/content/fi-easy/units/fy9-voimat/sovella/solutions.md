@@ -2,11 +2,11 @@
 
 ### a)
 **Kysytty:** veneen voimakuvio, kun vinssi vetää venettä luiskaa ylös tasaisella nopeudella
-**Periaate:** Valitaan kappaleeksi vene. Etsitään sen vuorovaikutukset: Maa (paino), luiskan liukulistat (tukivoima ja kitka) ja vaijeri (jännitysvoima). Vene liukuu luiskaa ylös. Siksi liikekitka osoittaa luiskaa alas. Nopeus on vakio, joten voimien summa on nolla.
+**Periaate:** Valitaan kappaleeksi vene. Etsitään sen vuorovaikutukset: Maa (paino), luiskan liukulistat (tukivoima ja kitka) ja vaijeri (jännitysvoima). Vene liukuu luiskaa ylös. Siksi liukukitka osoittaa luiskaa alas. Nopeus on vakio, joten voimien summa on nolla.
 **Mallivastaus:** Vene piirretään suorakulmioksi, joka on luiskan suuntainen.
 - Paino $\overline{G}$ lähtee keskipisteestä suoraan alas. Se ei ole kohtisuorassa luiskaa vastaan.
 - Tukivoima $\overline{N}$ lähtee pohjasta. Se on kohtisuorassa luiskaa vastaan ja osoittaa luiskasta ulospäin. Se on yhtä suuri kuin painon se komponentti, joka on kohtisuorassa luiskaa vastaan. Siksi tukivoima on vähän pienempi kuin paino.
-- Liikekitka $\overline{F}_\mu$ lähtee pohjan alemmasta kulmasta ja osoittaa luiskaa alas.
+- Liukukitka $\overline{F}_\mu$ lähtee pohjan alemmasta kulmasta ja osoittaa luiskaa alas.
 - Vaijerin jännitysvoima $\overline{T}$ lähtee keulasta eli veneen etuosasta ja osoittaa luiskaa ylös.
 
 Nuolten pituudet: $\overline{T}$ on yhtä pitkä kuin kitka ja painon luiskan suuntainen komponentti yhteensä. Tämä johtuu siitä, että kokonaisvoima on nolla. Nopeuden saa merkitä erikseen kuvion viereen, mutta sitä ei piirretä voimaksi.
@@ -21,9 +21,9 @@ v ylös
 ```
 
 ### b)
-**Annettu:** massa $m = 280\,\text{kg}$, luiskan kaltevuuskulma $\alpha = 14^\circ$, liikekitkakerroin $\mu = 0{,}25$, nopeus on vakio, $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** massa $m = 280\,\text{kg}$, luiskan kaltevuuskulma $\alpha = 14^\circ$, liukukitkakerroin $\mu = 0{,}25$, nopeus on vakio, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** vaijerin jännitysvoima $T$
-**Periaate:** Nopeus on vakio. Siksi Newtonin ensimmäisen lain mukaan voimien summa on nolla sekä luiskan suunnassa että luiskaa vastaan kohtisuorassa suunnassa. Vene liukuu, joten kitka on liikekitkaa $\mu N$. Kohtisuorassa suunnassa vaikuttavat vain painon komponentti ja tukivoima (luku *Paino, kitka ja kalteva taso*).
+**Periaate:** Nopeus on vakio. Siksi Newtonin ensimmäisen lain mukaan voimien summa on nolla sekä luiskan suunnassa että luiskaa vastaan kohtisuorassa suunnassa. Vene liukuu, joten kitka on liukukitkaa $\mu N$. Kohtisuorassa suunnassa vaikuttavat vain painon komponentti ja tukivoima (luku *Paino, kitka ja kalteva taso*).
 **Voimakuvio:** a-kohdan kuvio. $x$-akseli osoittaa luiskaa ylös, ja $y$-akseli osoittaa kohtisuoraan luiskasta ulos. Painon komponentit ovat $G_x = mg\sin\alpha$ luiskaa alas ja $G_y = mg\cos\alpha$ luiskaa kohti.
 ```voimakuvio
 pinta 14
@@ -62,7 +62,7 @@ a 0
 ### Yleisiä virheitä
 - Voimakuvioon piirretään vaijerin voiman lisäksi ”liikkeen voima”, joka vie venettä luiskaa ylös. Tai painon komponentit piirretään omiksi voimikseen painon lisäksi.
 - Tukivoimaksi otetaan $N = mg$, vaikka luiskalla $N = mg\cos\alpha$.
-- Kitka piirretään luiskaa ylös. Vene kuitenkin liukuu ylös, ja liikekitka vastustaa liukumista.
+- Kitka piirretään luiskaa ylös. Vene kuitenkin liukuu ylös, ja liukukitka vastustaa liukumista.
 - c-kohdassa lepokitkaksi otetaan suoraan $\mu_0 N$, vaikka se on vain yläraja. Tai liukumisen ehto kirjoitetaan sinin avulla, $\sin\alpha_0 = \mu_0$.
 
 ### Hyväksytään myös
@@ -74,8 +74,8 @@ a 0
 **Kysytty:** reen A ja reen B voimakuviot kiihdytyksen aikana
 **Periaate:** Kytketyistä kappaleista kumpikin valitaan vuorollaan kappaleeksi. Kummallekin piirretään oma kuvio. Kuviossa ovat vain ne voimat, jotka vaikuttavat siihen rekeen. Köysi vetää kumpaakin rekeä itseään kohti. Köysi 2 vetää A:ta taaksepäin ja B:tä eteenpäin. Voimat ovat yhtä suuret, koska köysi on kevyt.
 **Mallivastaus:** Kumpikin reki piirretään omaksi suorakulmiokseen.
-- Reki A: paino $\overline{G}_\text{A}$ alas, tukivoima $\overline{N}_\text{A}$ ylös, köyden 1 voima $\overline{T}_1$ eteenpäin, köyden 2 voima $\overline{T}_2$ taaksepäin ja liikekitka $\overline{F}_{\mu\text{A}}$ taaksepäin.
-- Reki B: paino $\overline{G}_\text{B}$ alas, tukivoima $\overline{N}_\text{B}$ ylös, köyden 2 voima $\overline{T}_2$ eteenpäin ja liikekitka $\overline{F}_{\mu\text{B}}$ taaksepäin.
+- Reki A: paino $\overline{G}_\text{A}$ alas, tukivoima $\overline{N}_\text{A}$ ylös, köyden 1 voima $\overline{T}_1$ eteenpäin, köyden 2 voima $\overline{T}_2$ taaksepäin ja liukukitka $\overline{F}_{\mu\text{A}}$ taaksepäin.
+- Reki B: paino $\overline{G}_\text{B}$ alas, tukivoima $\overline{N}_\text{B}$ ylös, köyden 2 voima $\overline{T}_2$ eteenpäin ja liukukitka $\overline{F}_{\mu\text{B}}$ taaksepäin.
 
 Kummankin reen kokonaisvoima osoittaa eteenpäin, koska reet kiihtyvät. Kiihtyvyys merkitään kuvioiden viereen omalla värillään. Kelkkaa ei piirretä. B:n voimaa köyteen ei piirretä B:n kuvioon. Vaakasuorat voimat on piirretty omassa mittakaavassaan, koska ne ovat paljon pienempiä kuin painot.
 ```voimakuvio
@@ -96,7 +96,7 @@ a oikea
 ```
 
 ### b)
-**Annettu:** $m_\text{B} = 80\,\text{kg}$, liikekitkakerroin $\mu = 0{,}10$, kiihtyvyys $a = 0{,}50\,\text{m/s}^2$, $g = 9{,}81\,\text{m/s}^2$
+**Annettu:** $m_\text{B} = 80\,\text{kg}$, liukukitkakerroin $\mu = 0{,}10$, kiihtyvyys $a = 0{,}50\,\text{m/s}^2$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** köyden 2 jännitysvoima $T_2$
 **Periaate:** Rekeen B vaikuttaa kaksi vaakasuoraa voimaa: köyden 2 veto eteenpäin ja kitka taaksepäin. Newtonin toisen lain mukaan niiden summa on $m_\text{B} a$. Pystysuunnassa ei ole kiihtyvyyttä. Siksi $N_\text{B} = m_\text{B} g$, ja kitka on $\mu m_\text{B} g$ (luku *Liikeyhtälö kytketyille kappaleille*).
 **Kaava:** $T_2 - \mu m_\text{B} g = m_\text{B} a$, joten $T_2 = m_\text{B}(a + \mu g)$
@@ -314,9 +314,9 @@ v oikea
 *Johtopäätös.* Tulos koskee vain tätä kuorta ja tätä kirjan kantta. Se ei koske kaikkia pintoja. Lisäksi oikealla kaavalla rajakulma on noin $22^\circ$, ei $33^\circ$. Puhelin lähtee liukumaan jo noin $22^\circ$:n kulmassa.
 
 ### c)
-**Kysytty:** koe, jolla samoille pinnoille määritetään liikekitkakerroin
-**Periaate:** Liikekitka vaikuttaa liukuvaan kappaleeseen. Sen suuruus saadaan Newtonin laeista. Mitataan joko veto tasaisella nopeudella tai kiihtyvyys rinteessä.
-**Mallivastaus:** *Menetelmä 1, veto.* Kirja on vaakasuoralla pöydällä. Puhelimeen kiinnitetään lanka ja voima-anturi (tai jousivaaka). Puhelinta vedetään vaakasuoraan tasaisella nopeudella. Silloin veto on yhtä suuri kuin liikekitka, ja tukivoima on yhtä suuri kuin paino: $\mu = \dfrac{F}{mg}$. Puhelimen massa punnitaan vaa'alla. Massaa muutetaan lisäämällä puhelimen päälle punnuksia. $(N, F_\mu)$-pisteisiin sovitetaan suora, joka kulkee origon kautta. Suoran kulmakerroin on $\mu$.
+**Kysytty:** koe, jolla samoille pinnoille määritetään liukukitkakerroin
+**Periaate:** Liukukitka vaikuttaa liukuvaan kappaleeseen. Sen suuruus saadaan Newtonin laeista. Mitataan joko veto tasaisella nopeudella tai kiihtyvyys rinteessä.
+**Mallivastaus:** *Menetelmä 1, veto.* Kirja on vaakasuoralla pöydällä. Puhelimeen kiinnitetään lanka ja voima-anturi (tai jousivaaka). Puhelinta vedetään vaakasuoraan tasaisella nopeudella. Silloin veto on yhtä suuri kuin liukukitka, ja tukivoima on yhtä suuri kuin paino: $\mu = \dfrac{F}{mg}$. Puhelimen massa punnitaan vaa'alla. Massaa muutetaan lisäämällä puhelimen päälle punnuksia. $(N, F_\mu)$-pisteisiin sovitetaan suora, joka kulkee origon kautta. Suoran kulmakerroin on $\mu$.
 
 *Menetelmä 2, kiihtyvyys.* Kantta kallistetaan jyrkemmäksi kuin rajakulma, esimerkiksi $30^\circ$:een. Puhelin päästetään liukumaan levosta. Kiihtyvyys mitataan videolta tai puhelimen omalla kiihtyvyysanturilla. Voimakuviosta saadaan $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$.
 
@@ -326,7 +326,7 @@ v oikea
 - Mittaus 5 poistetaan vain siksi, että se poikkeaa muista. Tai se otetaan mukaan keskiarvoon, vaikka karkea virhe on kirjattu.
 - Kerroin lasketaan sinillä tai kosinilla, vaikka pitäisi käyttää tangenttia.
 - Kertoimelle annetaan yksikkö.
-- c-kohdassa vetoa ei tehdä tasaisella nopeudella. Silloin veto ei ole yhtä suuri kuin kitka. Tai liikekitkaa yritetään mitata rajakulmasta, vaikka rajakulma antaa lepokitkan.
+- c-kohdassa vetoa ei tehdä tasaisella nopeudella. Silloin veto ei ole yhtä suuri kuin kitka. Tai liukukitkaa yritetään mitata rajakulmasta, vaikka rajakulma antaa lepokitkan.
 
 ### Hyväksytään myös
 - a-kohdassa lasketaan kunkin kulman tangentti erikseen ja niiden keskiarvo ($0{,}415$).
@@ -335,10 +335,10 @@ v oikea
 ## fy9-voimat-s6
 
 ### a)
-**Annettu:** rinteen pituus $L = 40\,\text{m}$, kaltevuuskulma $\alpha = 12^\circ$, liikekitkakerroin $\mu = 0{,}080$, alkunopeus $0$, $g = 9{,}81\,\text{m/s}^2$; ilmanvastusta ei oteta huomioon
+**Annettu:** rinteen pituus $L = 40\,\text{m}$, kaltevuuskulma $\alpha = 12^\circ$, liukukitkakerroin $\mu = 0{,}080$, alkunopeus $0$, $g = 9{,}81\,\text{m/s}^2$; ilmanvastusta ei oteta huomioon
 **Kysytty:** nopeus $v$ rinteen alapäässä
-**Periaate:** Laskijaan vaikuttavat paino, rinteen tukivoima ja liikekitka rinnettä ylös. Voimat ovat vakiot, joten kiihtyvyys on vakio (luku *Paino, kitka ja kalteva taso*). Siksi tasaisesti kiihtyvän liikkeen yhtälöt pätevät eli ovat voimassa (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*).
-**Voimakuvio:** Laskija on rinteen suuntainen suorakulmio. $x$-akseli osoittaa rinnettä alas. Paino $\overline{G}$ lähtee keskipisteestä suoraan alas. Tukivoima $\overline{N}$ on kohtisuorassa rinnettä vastaan ja osoittaa rinteestä ulos. Liikekitka $\overline{F}_\mu$ lähtee alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit piirretään katkoviivoilla.
+**Periaate:** Laskijaan vaikuttavat paino, rinteen tukivoima ja liukukitka rinnettä ylös. Voimat ovat vakiot, joten kiihtyvyys on vakio (luku *Paino, kitka ja kalteva taso*). Siksi tasaisesti kiihtyvän liikkeen yhtälöt pätevät eli ovat voimassa (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*).
+**Voimakuvio:** Laskija on rinteen suuntainen suorakulmio. $x$-akseli osoittaa rinnettä alas. Paino $\overline{G}$ lähtee keskipisteestä suoraan alas. Tukivoima $\overline{N}$ on kohtisuorassa rinnettä vastaan ja osoittaa rinteestä ulos. Liukukitka $\overline{F}_\mu$ lähtee alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit piirretään katkoviivoilla.
 ```voimakuvio
 pinta -12
 G 100
@@ -357,8 +357,8 @@ komponentit G
 ### b)
 **Annettu:** a-kohdasta $v = 10{,}09\,\text{m/s}$, $\mu = 0{,}080$, loppunopeus $0$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** liukumatka $s_2$ pellolla
-**Periaate:** Rinteen ja pellon välinen kohta on loiva. Siksi nopeus pellon alussa on a-kohdan nopeus. Vaakasuoralla pellolla tukivoima on yhtä suuri kuin paino. Ainoa vaakasuora voima on liikekitka taaksepäin. Hidastuvuus on vakio, joten tasaisesti kiihtyvän liikkeen yhtälöt pätevät.
-**Voimakuvio:** Laskija on suorakulmio. Paino $\overline{G}$ osoittaa alas, tukivoima $\overline{N}$ ylös ja liikekitka $\overline{F}_\mu$ taaksepäin. Kiihtyvyys osoittaa taaksepäin ja nopeus eteenpäin.
+**Periaate:** Rinteen ja pellon välinen kohta on loiva. Siksi nopeus pellon alussa on a-kohdan nopeus. Vaakasuoralla pellolla tukivoima on yhtä suuri kuin paino. Ainoa vaakasuora voima on liukukitka taaksepäin. Hidastuvuus on vakio, joten tasaisesti kiihtyvän liikkeen yhtälöt pätevät.
+**Voimakuvio:** Laskija on suorakulmio. Paino $\overline{G}$ osoittaa alas, tukivoima $\overline{N}$ ylös ja liukukitka $\overline{F}_\mu$ taaksepäin. Kiihtyvyys osoittaa taaksepäin ja nopeus eteenpäin.
 ```voimakuvio
 pinta 0
 G 100

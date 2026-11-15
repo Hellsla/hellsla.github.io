@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f2ccc4940864b96a
-Delta review (round 3, Kaava sign convention, 2026-11-13) of the version reviewed at c63477ece610534e.
+CONTENT-HASH: 9d34a7e0143e622e
+Review of the recognition chart (queue 9c) and the term change against the version passed at f2ccc4940864b96a; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- A: the old chart covered the solar-cell efficiency eta = P/(GA), the body current I = U/R and Q = ne; the unit's 'components and safety' part and its tasks (defibrillator, LED, spark safety) now have only the LED row. Add rows for the cell and for current through the body.
+- B: "a charge in a field -> E = F/Q" is the definition; a vector F = qE row would match the unit's Ydinajatus.
+- B: row 'LED needs a series resistor -> Sigma DeltaV = 0' is right but the student must still apply Ohm's law; fine.
 
 ## Checked
-The round-2 contradiction is gone: U now means the positive potential difference V - V_0 throughout (Principle, hints, Kaava, Substitution). The sign step uses its own symbol U_AB = V_0 - V, with Q = -e giving W = e(V - V_0) = eU, staged in one readable line. Final formula and Substitution unchanged and consistent.
+Rows: Coulomb, E = F/Q, U = Ed, QU = mv^2/2, Q = CU, plate capacitor, capacitor energy, LED loop. Signs concrete. teacher.md updated and true. aria matches.

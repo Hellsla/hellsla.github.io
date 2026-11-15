@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e8a6f31d617c0812
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at a189d66a000efca2.
+CONTENT-HASH: 4cd62524a8e4a57d
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (6fc6fb8caaf31946); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C (kept): the aria-label says "hajonta on vaihteluvälin puolikas", which the chart does not show.
+- C (kept): "karkea virhe" and "systemaattinen" are terms, not laws.
+- C (kept): no row for the intercept b.
 
 ## Checked
-Paperin tiheys: $A$ supistuu, vaihe on nyt näkyvissä; vaa'an korjaus $m = m_\text{lukema}/k$; kuvaajan Mallivastaus lineaarisesta mallista; unit.md-lause tarkoista määristä ristiriidaton solutionien kanssa (öljyn massa, $\pm 0{,}02$). Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.
+- Only change: the header "mistä tunnistan menetelmän?" with the subtitle "mitä aineisto antaa, mitä kysytään?"; fits, since the rows are methods.
+- 360 px PNG opened: eight rows, no clipped label, signs as in round 1. No teacher.md sentence to check.

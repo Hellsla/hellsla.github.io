@@ -144,55 +144,67 @@
 
 Almost every matriculation exam in physics has a problem that gives a set of measurement data and asks for a quantity to be determined from it. Processing measurement data often proceeds from the measurement results and their uncertainties to a graph, where needed to fitting a model and interpreting it, and finally to the result with its uncertainty. Not every problem requires every step. Points can be gained or lost at every step.
 
-<svg data-fig="kartta" viewBox="0 0 600 448" role="img" aria-label="Diagram: from measurement to result in five steps joined by downward arrows. 1 Measure: reading, uncertainty Δx and precision. 2 Graph: quantity and unit on the axes. 3 Fit: straight line or linearisation. 4 Interpret: slope k and constant term b with their units. 5 Result: k ± Δk and the range of validity of the model." style="max-width:100%;font-size:26px">
-  <rect x="14" y="14" width="572" height="64" rx="10" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
-  <rect x="14" y="14" width="196" height="64" rx="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <rect x="196" y="16.5" width="14" height="59" fill="#d0e6fb"/>
-  <line x1="210" y1="14" x2="210" y2="78" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="42" cy="46" r="18" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="31" y="30.5" width="22" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$1$</div></foreignObject>
-  <foreignObject x="70" y="30.5" width="132" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{Measure}$</div></foreignObject>
-  <foreignObject x="222" y="30.5" width="358" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{reading}, \ \Delta x, \ \text{precision}$</div></foreignObject>
-  <line x1="110" y1="80" x2="110" y2="91" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M110,102 L104.5,90 L115.5,90 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <rect x="14" y="104" width="572" height="64" rx="10" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
-  <rect x="14" y="104" width="196" height="64" rx="10" fill="#d0e6fb" stroke="#1971c2" stroke-width="2.5"/>
-  <rect x="196" y="106.5" width="14" height="59" fill="#d0e6fb"/>
-  <line x1="210" y1="104" x2="210" y2="168" stroke="#1971c2" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="42" cy="136" r="18" fill="#ffffff" stroke="#1971c2" stroke-width="2.5"/>
-  <foreignObject x="31" y="120.5" width="22" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$2$</div></foreignObject>
-  <foreignObject x="70" y="120.5" width="132" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{Graph}$</div></foreignObject>
-  <foreignObject x="222" y="120.5" width="358" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{quantity (unit)}$</div></foreignObject>
-  <line x1="110" y1="170" x2="110" y2="181" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M110,192 L104.5,180 L115.5,180 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <rect x="14" y="194" width="572" height="64" rx="10" fill="#ffffff" stroke="#e8590c" stroke-width="2.5"/>
-  <rect x="14" y="194" width="196" height="64" rx="10" fill="#ffc078" stroke="#e8590c" stroke-width="2.5"/>
-  <rect x="196" y="196.5" width="14" height="59" fill="#ffc078"/>
-  <line x1="210" y1="194" x2="210" y2="258" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="42" cy="226" r="18" fill="#ffffff" stroke="#e8590c" stroke-width="2.5"/>
-  <foreignObject x="31" y="210.5" width="22" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$3$</div></foreignObject>
-  <foreignObject x="70" y="210.5" width="132" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{Fit}$</div></foreignObject>
-  <foreignObject x="222" y="210.5" width="358" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{line or linearisation}$</div></foreignObject>
-  <line x1="110" y1="260" x2="110" y2="271" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M110,282 L104.5,270 L115.5,270 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <rect x="14" y="284" width="572" height="64" rx="10" fill="#ffffff" stroke="#e8590c" stroke-width="2.5"/>
-  <rect x="14" y="284" width="196" height="64" rx="10" fill="#ffc078" stroke="#e8590c" stroke-width="2.5"/>
-  <rect x="196" y="286.5" width="14" height="59" fill="#ffc078"/>
-  <line x1="210" y1="284" x2="210" y2="348" stroke="#e8590c" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="42" cy="316" r="18" fill="#ffffff" stroke="#e8590c" stroke-width="2.5"/>
-  <foreignObject x="31" y="300.5" width="22" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$4$</div></foreignObject>
-  <foreignObject x="70" y="300.5" width="132" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{Interpret}$</div></foreignObject>
-  <foreignObject x="222" y="300.5" width="358" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$k \text{ and } b \text{ with units}$</div></foreignObject>
-  <line x1="110" y1="350" x2="110" y2="361" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M110,372 L104.5,360 L115.5,360 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <rect x="14" y="374" width="572" height="64" rx="10" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.5"/>
-  <rect x="14" y="374" width="196" height="64" rx="10" fill="#b2f2bb" stroke="#2b8a3e" stroke-width="2.5"/>
-  <rect x="196" y="376.5" width="14" height="59" fill="#b2f2bb"/>
-  <line x1="210" y1="374" x2="210" y2="438" stroke="#2b8a3e" stroke-width="2.5" stroke-linecap="butt"/>
-  <circle cx="42" cy="406" r="18" fill="#ffffff" stroke="#2b8a3e" stroke-width="2.5"/>
-  <foreignObject x="31" y="390.5" width="22" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:26px">$5$</div></foreignObject>
-  <foreignObject x="70" y="390.5" width="132" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$\text{Result}$</div></foreignObject>
-  <foreignObject x="222" y="390.5" width="358" height="31" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:26px">$k \pm \Delta k, \ \text{range of validity}$</div></foreignObject>
+<svg data-fig="kartta" viewBox="0 0 380 780" role="img" aria-label="Recognition chart: how do I tell which method to use? See what the task gives and what it asks. Repeated measurement: the best estimate is the mean and the spread is half the range, the result is the mean plus or minus the uncertainty. How large the error is: the relative uncertainty is the uncertainty divided by the mean. One outlying result: a gross error, check it and do not drop it without a reason. Always off in the same direction: a systematic error, repeating does not remove it. Points lie on a line: fit a line, y equals k x plus b. The steepness of the graph is asked: read the slope from two points of the line far apart, k is delta y divided by delta x. Uncertainty of the slope: draw the extreme lines, the uncertainty is half the difference between the largest and the smallest slope. The points form a curve: change the quantity of an axis, for example distance against the square of the time, so that the graph is a line." style="max-width:100%;font-size:21px">
+  <line x1="14" y1="80" x2="14" y2="736" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
+  <foreignObject x="25" y="21.5" width="330" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\textbf{how do I tell the method?}$</div></foreignObject>
+  <foreignObject x="20" y="52" width="340" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px">$\text{what the data gives, what is asked?}$</div></foreignObject>
+  <line x1="14" y1="134" x2="30" y2="134" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="98" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="108.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{repeated measurement}$</div></foreignObject>
+  <line x1="40" y1="138" x2="362" y2="138" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="143" width="170" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{best estimate}$</div></foreignObject>
+  <rect x="238" y="142" width="124" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="242" y="144" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\bar{x} \pm \Delta x$</div></foreignObject>
+  <line x1="14" y1="220" x2="30" y2="220" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="184" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="194.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{how large the error is}$</div></foreignObject>
+  <line x1="40" y1="224" x2="362" y2="224" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="229" width="170" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{relative}$</div></foreignObject>
+  <rect x="238" y="228" width="124" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="242" y="230" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\varepsilon = \Delta x/\bar{x}$</div></foreignObject>
+  <line x1="14" y1="306" x2="30" y2="306" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="270" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="280.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{one outlying result}$</div></foreignObject>
+  <line x1="40" y1="310" x2="362" y2="310" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="315" width="170" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{check it}$</div></foreignObject>
+  <rect x="238" y="314" width="124" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="242" y="316" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\text{gross error}$</div></foreignObject>
+  <line x1="14" y1="392" x2="30" y2="392" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="356" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="366.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{always off in the same direction}$</div></foreignObject>
+  <line x1="40" y1="396" x2="362" y2="396" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="401" width="170" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{find the cause}$</div></foreignObject>
+  <rect x="238" y="400" width="124" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="242" y="402" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\text{systematic}$</div></foreignObject>
+  <line x1="14" y1="478" x2="30" y2="478" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="442" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="452.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{points lie on a line}$</div></foreignObject>
+  <line x1="40" y1="482" x2="362" y2="482" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="487" width="170" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{fit a line}$</div></foreignObject>
+  <rect x="238" y="486" width="124" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="242" y="488" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$y = kx + b$</div></foreignObject>
+  <line x1="14" y1="564" x2="30" y2="564" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="528" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="538.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{the steepness of the graph is asked}$</div></foreignObject>
+  <line x1="40" y1="568" x2="362" y2="568" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="573" width="170" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{far-apart points}$</div></foreignObject>
+  <rect x="238" y="572" width="124" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="242" y="574" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$k = \Delta y/\Delta x$</div></foreignObject>
+  <line x1="14" y1="650" x2="30" y2="650" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="614" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="624.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{uncertainty of the slope}$</div></foreignObject>
+  <line x1="40" y1="654" x2="362" y2="654" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="659" width="170" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \Delta k$</div></foreignObject>
+  <rect x="238" y="658" width="124" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="242" y="660" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\text{extreme lines}$</div></foreignObject>
+  <line x1="14" y1="736" x2="30" y2="736" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="700" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="710.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{the points form a curve}$</div></foreignObject>
+  <line x1="40" y1="740" x2="362" y2="740" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="745" width="170" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{new quantity}$</div></foreignObject>
+  <rect x="238" y="744" width="124" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="242" y="746" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$s\ \text{vs.}\ t^2$</div></foreignObject>
 </svg>
 
 ## Formula: The measurement result and the equation of a line

@@ -100,42 +100,55 @@ def hero():
     return f.svg()
 
 
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
+
+
 def kartta():
-    """The concept map, stacked for a phone: two conservation laws at the top, a spine down the left and three boxes
-    (energy, momentum, the applications), each with three MAFY laws and a grey word beside each (teacher 2026-11-12:
-    only MAFY's formulas; the stopping distance and the power of the power plants are "Johda itse" tasks in the text)."""
-    f = Fig("fy9sl-kartta", 604, "Käsitekartta. Ylhäällä solmu säilymislait: energia ja liikemäärä. Siitä lähtee alas kolme haaraa. Energia: "
-            "liike-energia E k = puolet m v toiseen, potentiaalienergia E p = m g h ja energiaperiaate, jossa alun "
-            "mekaaninen energia ja muiden voimien työ on yhtä suuri kuin lopun mekaaninen energia. Liikemäärä: p = m v "
-            "vektoreina, impulssiperiaate impulssi I = delta p ja liikemäärän säilyminen törmäyksessä. Sovellukset: "
-            "törmäyksessä liikemäärä säilyy mutta liike-energia vain kimmoisassa, pysähtymismatka tasaisesti kiihtyvän "
-            "liikkeen paikasta x = x 0 + v 0 t + puolet a t toiseen, ja voimaloiden sähköteho hyötysuhteesta eeta = P a "
-            "per P o.", width=380, size=20)
-    groups = [
-        ("energia", [(r"E_\text{k} = \tfrac12 mv^2", "liike-energia"), (r"E_\text{p} = mgh", "potentiaalienergia"),
-                     (r"E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}", "")]),
-        ("liikemäärä", [(r"\overline{p} = m\overline{v}", "määritelmä"), (r"\overline{I} = \Delta\overline{p}", "impulssi"),
-                        (r"\overline{p}_\text{ennen} = \overline{p}_\text{jälkeen}", "säilyminen")]),
-        ("sovellukset", [(r"\text{törmäys: } p \text{ säilyy, } E_\text{k} \text{ ei aina}", ""),
-                      (r"x = x_0 + v_0 t + \tfrac12 at^2", "pysähtyminen"), (r"\eta = P_\text{a}/P_\text{o}", "voimalat")]),
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words: the sign on top, the choice it leads to and, as the result in a pill in the
+    site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
+    rows = [
+        (r"\text{ei kitkaa, vain painovoima}", r"\to\ \text{mekaaninen energia säilyy}", r"E_{\text{p}0} + E_{\text{k}0} = E_\text{p} + E_\text{k}", 230, True),
+        (r"\text{kitka tai moottori tekee työtä}", r"\to\ \text{energiaperiaate}", r"E_{\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}", 290, True),
+        (r"\text{kappale liikkuu}", r"\to\ \text{liike-energia}", r"E_\text{k} = \tfrac12 mv^2", 124, False),
+        (r"\text{korkeus muuttuu}", r"\to\ \text{potentiaalienergia}", r"E_\text{p} = mgh", 106, False),
+        (r"\text{törmäys tai räjähdys}", r"\to\ \text{liikemäärä säilyy}", r"\overline{p}_\text{ennen} = \overline{p}_\text{jälkeen}", 210, True),
+        (r"\text{kimmoisa törmäys}", r"\to\ \text{liike-energia säilyy}", r"\Delta E_\text{k} = 0", 100, False),
+        (r"\text{voima vaikuttaa tietyn ajan}", r"\to\ \text{impulssi}", r"\overline{I} = \Delta\overline{p}", 116, False),
+        (r"\text{teho tai hyötysuhde kysytään}", r"\to\ \text{hyötysuhde}", r"\eta = P_\text{a}/P_\text{o}", 124, False),
     ]
-    hub_y, hub_h, x_box, gh, top = 8, 72, 44, 150, 100
-    spine = 24
-    f.line(spine, hub_y + hub_h, spine, top + 2 * (gh + 16) + 22, RULE, 3)
-    f.rect(8, hub_y, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
-    f.tex(190, hub_y + 22, r"\text{säilymislait}", "middle", INK)
-    f.tex(190, hub_y + 51, r"\text{energia ja liikemäärä}", "middle", INK)
-    for k, (head, rows) in enumerate(groups):
-        y = top + k * (gh + 16)
-        f.line(spine, y + 22, x_box, y + 22, RULE, 3)
-        f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
-        f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
-        f.line(x_box + 10, y + 42, 362, y + 42, RULE_LIGHT, 1.5)
-        for j, (law, word) in enumerate(rows):
-            yy = y + 66 + j * 34
-            f.tex(x_box + 14, yy, law, "start", INK, size=18 if len(law) > 34 else None)
-            if word: f.tex(362, yy, r"\text{" + word + "}", "end", MUTED, size=17)
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    heights = [ch + (30 if r[4] else 0) for r in rows]
+    ys = [top + sum(heights[:k]) + gap * k for k in range(len(rows))]
+    height = ys[-1] + heights[-1] + 8
+    f = Fig("fy9sl-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + heights[-1] / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{ensin tunnusmerkki, sitten laki}", "middle", INK, size=17, w=340)
+    for (sign, choice, law, pw, tall), y, ch_ in zip(rows, ys, heights):
+        f.line(14, y + ch_ / 2, x0, y + ch_ / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch_, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 38 - (0 if tall else pw))
+        if tall:                                               # a long result on a line of its own
+            yy += 30
+            f.rect(x1 - 10 - pw, yy - 12, pw, 26, ACCENT, ACCENT, 2, 8)
+        else:
+            f.rect(x1 - 10 - pw, yy - 11, pw, 24, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 10 - pw / 2, yy + 1, law, "middle", WHITE, size=17, w=pw - 8)
     return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Katso ensin tehtävän tunnusmerkki. Ei kitkaa, vain "
+               "painovoima: mekaaninen energia säilyy, eli alun potentiaali- ja liike-energian summa on yhtä suuri kuin lopun. "
+               "Kitka tai moottori tekee työtä: energiaperiaate, jossa alun mekaaniseen energiaan lisätään muiden voimien työ. "
+               "Kappale liikkuu: liike-energia on puolet m v toiseen. Korkeus muuttuu: potentiaalienergia on m g h. Törmäys "
+               "tai räjähdys: liikemäärä säilyy, ennen on yhtä suuri kuin jälkeen. Kimmoisa törmäys: myös liike-energia "
+               "säilyy, sen muutos on nolla. Voima vaikuttaa tietyn ajan: impulssi on liikemäärän muutos. Teho tai hyötysuhde "
+               "kysytään: hyötysuhde on antoteho jaettuna ottotehoon.")
 
 
 def tormays():

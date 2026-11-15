@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: c07064310b8f07c3
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 782699fd4ffa0aba.
+CONTENT-HASH: 79c4d3698d63167e
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (32cd94238f6e3a04); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+(none new; round-1 findings stand)
 
 ## Checked
-Diff only: a = (F - mu(mA+mB)g)/(mA+mB) written before substitution after the force diagram (diagram still precedes equations); lisäpunnus symbol m_x; mu0 = tan(alpha_ka) step explained with uncertainty formula.
+- "tanko tai vipu pysyy paikallaan" (ΣM = 0) and "putoaa, ilmanvastus, nopeus tasaantuu" (F_v = G) state their conditions, chart and aria-label (fi PNG opened: nine rows, long sign fits).

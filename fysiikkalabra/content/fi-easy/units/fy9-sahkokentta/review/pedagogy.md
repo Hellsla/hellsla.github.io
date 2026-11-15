@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 72daa2767c4da87f
-Delta review (round 3, Kaava sign convention, 2026-11-13) of the version reviewed at 7f560b98c5ecb9d0.
+CONTENT-HASH: 45d2c7dbc75e17b1
+Review of the recognition chart (queue 9c) and the term change against the version passed at 72daa2767c4da87f; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
@@ -9,4 +9,7 @@ Delta review (round 3, Kaava sign convention, 2026-11-13) of the version reviewe
 (none)
 
 ## Checked
-The round-2 contradiction is gone: U now means the positive potential difference V - V_0 throughout (Principle, hints, Kaava, Substitution). The sign step uses its own symbol U_AB = V_0 - V, with Q = -e giving W = e(V - V_0) = eU, staged in one readable line. Final formula and Substitution unchanged and consistent.
+- Every chart row of the fi-easy version (sign in task wording -> choice -> law pill), from the 360 px capture or figures.py: each result follows from its sign, no formula list, order useful, start box fits the unit.
+- fi-easy aria-label (figures.json): states the same rows in clear Finnish, usable as a text alternative, formulas spoken in words.
+- Placement after Ydinajatus, unit.md aria-label equals figures.json.
+- Term change: no liikekitka left in the unit texts (grep); teacher.md sentence checked against rows.
