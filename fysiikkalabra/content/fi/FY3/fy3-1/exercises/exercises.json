@@ -207,7 +207,7 @@
       "unit": "m/s²",
       "tolerance": 0.03,
       "data": {
-        "caption": "Punnusten massa ja voimamittarin lukema Maassa (esimerkkiaineisto)",
+        "caption": "Punnusten massa ja voimamittarin lukema Maassa",
         "columns": [
           "$m\\,(\\text{kg})$",
           "$G\\,(\\text{N})$"
@@ -248,7 +248,7 @@
       "unit": "m/s²",
       "tolerance": 0.03,
       "data": {
-        "caption": "Saman näytteen paino kolmella taivaankappaleella (esimerkkiaineisto)",
+        "caption": "Saman näytteen paino kolmella taivaankappaleella",
         "columns": [
           "Taivaankappale",
           "$G\\,(\\text{N})$"
@@ -327,7 +327,7 @@
       "unit": "m/s²",
       "tolerance": 0.04,
       "data": {
-        "caption": "Jousen venymä Maassa punnuksen massan funktiona (esimerkkiaineisto)",
+        "caption": "Jousen venymä Maassa punnuksen massan funktiona",
         "columns": [
           "$m\\,(\\text{kg})$",
           "$x\\,(\\text{cm})$"
@@ -373,7 +373,7 @@
       "unit": "kg",
       "tolerance": 0.02,
       "data": {
-        "caption": "Laskeutumisyksikön osien massat (esimerkkiaineisto)",
+        "caption": "Laskeutumisyksikön osien massat",
         "columns": [
           "Osa",
           "$m\\,(\\text{kg})$"

@@ -198,7 +198,7 @@
    "unit": "m/s²",
    "tolerance": 0.04,
    "data": {
-    "caption": "Kuulan nopeus heilurin alimmassa kohdassa (esimerkkiaineisto)",
+    "caption": "Kuulan nopeus heilurin alimmassa kohdassa",
     "columns": [
      "$h\\,(\\text{m})$",
      "$v\\,(\\text{m/s})$"
@@ -244,7 +244,7 @@
    "unit": "kJ",
    "tolerance": 0.02,
    "data": {
-    "caption": "Vaunun mittaukset radan eri kohdissa (esimerkkiaineisto)",
+    "caption": "Vaunun mittaukset radan eri kohdissa",
     "columns": [
      "Kohta",
      "$s\\,(\\text{m})$",
@@ -292,7 +292,7 @@
    "unit": "N",
    "tolerance": 0.05,
    "data": {
-    "caption": "Palikan pysähtymismatka eri alkunopeuksilla (esimerkkiaineisto)",
+    "caption": "Palikan pysähtymismatka eri alkunopeuksilla",
     "columns": [
      "$v_0\\,(\\text{m/s})$",
      "$s\\,(\\text{m})$"
@@ -385,7 +385,7 @@
    "unit": "N",
    "tolerance": 0.03,
    "data": {
-    "caption": "Pysähtymismatka vaakasuoralla lumella (esimerkkiaineisto)",
+    "caption": "Pysähtymismatka vaakasuoralla lumella",
     "columns": [
      "Lasku",
      "$s\\,(\\text{m})$"
@@ -431,7 +431,7 @@
    "unit": "%",
    "tolerance": 0.03,
    "data": {
-    "caption": "Pallon korkeus ylimmässä kohdassa (esimerkkiaineisto)",
+    "caption": "Pallon korkeus ylimmässä kohdassa",
     "columns": [
      "Kimmahduksia",
      "$h\\,(\\text{m})$"

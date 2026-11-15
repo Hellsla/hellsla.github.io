@@ -202,7 +202,7 @@
       "unit": "kPa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Pressure in a lake as a function of depth (example data)",
+        "caption": "Pressure in a lake as a function of depth",
         "columns": [
           "$h\\,(\\text{m})$",
           "$p\\,(\\text{kPa})$"
@@ -247,7 +247,7 @@
       "unit": "kPa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Gauge pressure at the bottom of different vessels (example data)",
+        "caption": "Gauge pressure at the bottom of different vessels",
         "columns": [
           "Vessel",
           "$V\\,(\\text{l})$",
@@ -289,7 +289,7 @@
       "unit": "kPa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Height difference between the liquid surfaces (example data)",
+        "caption": "Height difference between the liquid surfaces",
         "columns": [
           "Measurement",
           "$\\Delta h\\,(\\text{cm})$"
@@ -358,7 +358,7 @@
       "unit": "kPa",
       "tolerance": 0.04,
       "data": {
-        "caption": "Water layers of a lake (example data)",
+        "caption": "Water layers of a lake",
         "columns": [
           "Layer",
           "$d\\,(\\text{m})$",
@@ -400,7 +400,7 @@
       "unit": "kN",
       "tolerance": 0.02,
       "data": {
-        "caption": "Parts of a strip of the wall (example data)",
+        "caption": "Parts of a strip of the wall",
         "columns": [
           "Part",
           "$h_1\\,(\\text{m})$",

@@ -192,7 +192,7 @@
       "unit": "cm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Echo peaks of the A-scan (example data)",
+        "caption": "Echo peaks of the A-scan",
         "columns": [
           "Peak",
           "$t\\,(\\mu\\text{s})$"
@@ -225,7 +225,7 @@
       "unit": "m/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Distance of the plate and return time of the echo in water (example data)",
+        "caption": "Distance of the plate and return time of the echo in water",
         "columns": [
           "$L\\,(\\text{cm})$",
           "$t\\,(\\mu\\text{s})$"
@@ -376,7 +376,7 @@
       "unit": "km",
       "tolerance": 0.03,
       "data": {
-        "caption": "Stations and time differences (example data)",
+        "caption": "Stations and time differences",
         "columns": [
           "Station",
           "$(x,\\,y)\\,(\\text{km})$",
@@ -414,7 +414,7 @@
       "unit": "min",
       "tolerance": 0.03,
       "data": {
-        "caption": "Route of the tsunami (example data)",
+        "caption": "Route of the tsunami",
         "columns": [
           "Section",
           "$s\\,(\\text{km})$",

@@ -171,7 +171,7 @@
       "unit": "kJ/kg",
       "tolerance": 0.05,
       "data": {
-        "caption": "Jään lämmitys $600\\,\\text{W}$:n teholla (esimerkkiaineisto)",
+        "caption": "Jään lämmitys $600\\,\\text{W}$:n teholla",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T\\,({}^\\circ\\text{C})$"
@@ -342,7 +342,7 @@
       "unit": "kJ",
       "tolerance": 0.08,
       "data": {
-        "caption": "Steariinierän jäähtyminen (esimerkkiaineisto)",
+        "caption": "Steariinierän jäähtyminen",
         "columns": [
           "$t\\,(\\text{min})$",
           "$T\\,({}^\\circ\\text{C})$"

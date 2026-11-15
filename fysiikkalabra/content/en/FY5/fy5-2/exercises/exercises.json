@@ -137,7 +137,7 @@
       "unit": "kg",
       "tolerance": 0.05,
       "data": {
-        "caption": "Reading of the left sensor as a function of the position of the person (example data)",
+        "caption": "Reading of the left sensor as a function of the position of the person",
         "columns": [
           "$x\\,(\\text{m})$",
           "$N_1\\,(\\text{N})$"
@@ -189,7 +189,7 @@
       "unit": "g",
       "tolerance": 0.03,
       "data": {
-        "caption": "Support point at which the metre rule stays horizontal (example data)",
+        "caption": "Support point at which the metre rule stays horizontal",
         "columns": [
           "$m\\,(\\text{g})$",
           "$x\\,(\\text{cm})$"
@@ -301,7 +301,7 @@
       "unit": "°",
       "tolerance": 0.04,
       "data": {
-        "caption": "Position of the centre of mass of the person as a function of the lean (example data)",
+        "caption": "Position of the centre of mass of the person as a function of the lean",
         "columns": [
           "$\\theta\\,({}^\\circ)$",
           "$x_\\text{h}\\,(\\text{cm})$"

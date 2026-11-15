@@ -169,7 +169,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kiuaskivien lämpötila lämmityksen aikana (esimerkkiaineisto)",
+        "caption": "Kiuaskivien lämpötila lämmityksen aikana",
         "columns": [
           "$t\\,(\\text{min})$",
           "$T\\,({}^\\circ\\text{C})$"
@@ -207,7 +207,7 @@
       "unit": "W/K",
       "tolerance": 0.05,
       "data": {
-        "caption": "Lämmitysenergia kuukaudessa (esimerkkiaineisto)",
+        "caption": "Lämmitysenergia kuukaudessa",
         "columns": [
           "$T_\\text{ulko}\\,({}^\\circ\\text{C})$",
           "$E\\,(\\text{kWh})$"
@@ -331,7 +331,7 @@
       "unit": "€",
       "tolerance": 0.03,
       "data": {
-        "caption": "Kuukauden keskilämpötila ulkona (esimerkkiaineisto)",
+        "caption": "Kuukauden keskilämpötila ulkona",
         "columns": [
           "Kuukausi",
           "$T_\\text{ulko}\\,({}^\\circ\\text{C})$"

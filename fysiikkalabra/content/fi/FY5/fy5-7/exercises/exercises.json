@@ -199,7 +199,7 @@
       "unit": "Hz",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kuvaajan huippujen ajat (esimerkkiaineisto)",
+        "caption": "Kuvaajan huippujen ajat",
         "columns": [
           "Huippu",
           "$t\\,(\\text{s})$"
@@ -244,7 +244,7 @@
       "unit": "s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kymmenen heilahduksen kesto (esimerkkiaineisto)",
+        "caption": "Kymmenen heilahduksen kesto",
         "columns": [
           "Mittaus",
           "$t_{10}\\,(\\text{s})$"
@@ -285,7 +285,7 @@
       "unit": "Hz",
       "tolerance": 0.02,
       "data": {
-        "caption": "Tasapainoaseman ohitukset (esimerkkiaineisto)",
+        "caption": "Tasapainoaseman ohitukset",
         "columns": [
           "$t\\,(\\text{s})$",
           "Suunta"
@@ -352,7 +352,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "R-piikkien ajat (esimerkkiaineisto)",
+        "caption": "R-piikkien ajat",
         "columns": [
           "Lyönti",
           "$t_{\\text{lepo}}\\,(\\text{s})$",
@@ -409,7 +409,7 @@
       "unit": "cm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Etäisyys liiketunnistimeen (esimerkkiaineisto)",
+        "caption": "Etäisyys liiketunnistimeen",
         "columns": [
           "$t\\,(\\text{s})$",
           "$d\\,(\\text{cm})$"
