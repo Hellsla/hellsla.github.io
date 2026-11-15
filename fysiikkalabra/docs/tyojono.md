@@ -77,6 +77,18 @@ näkyy 360 px:llä muodossa "4500 kW". Opettaja 2026-11-15:
 Tehdään kurssi kerrallaan, yksi PR per kurssi, alkaen kursseista, joilla rivejä on eniten (FY8, FY9, FY2); jokainen
 korjattu kaava poistaa rivinsä listalta. Ei muita sisältömuutoksia samassa PR:ssä.
 
+## 9c. FY9: käsitekartat tunnistuskaavioiksi (opettaja 2026-11-15)
+
+Varattu: claude/fy9-tunnistuskaavio-pilotti
+FY9:n kertausyksiköiden käsitekartta (`data-fig="kartta"`, Ydinajatus-osion jälkeen, 14 yksikköä,
+`lessons/units/fy9-*/figures.py`) on pelkkä kaavalista laatikoissa, ja samat kaavat toistuvat Kaava-osiossa. Kartta
+korvataan tunnistuskaaviolla, joka vastaa kysymykseen "Mistä tunnistan, mitä lakia käytän?": lähtökohtana tehtävän
+tilanne tai tunnusmerkki (YO-tehtävien kielellä), siitä valintaan ja lakiin tai menetelmään; kaava näkyy vain valinnan
+tuloksena, lyhyesti. Luettava 360 px:llä ilman vaakavieritystä, aria-label kolmella kielellä, ei uutta käyttöliittymätekstiä.
+1. Pilotti vain fy9-voimat: ennen–jälkeen-PNG 360 ja 1280 px PR:ään; pysähdytään opettajan hyväksyntään
+   (koordinaattori välittää; teacher-figures.tsv:ää ei kirjata tässä).
+2. Hyväksynnän jälkeen loput 13 yksikköä samalla mallilla; katselmoinnit `reviews.py`:n scopen mukaan.
+
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13, 2026-11-14 ja 2026-11-15)
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
