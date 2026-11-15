@@ -2,18 +2,17 @@ VERDICT: PASS
 CONTENT-HASH: 5cd62b0183fa3d77
 
 ## Blocking
+- none
 
 ## Polish
-- docs/figures/catalog.json:927–928 — the catalog descriptions of `fy7-5/flux-task` and `fy7-5/flux-task-2` still say "millivebereinä", while figures.py now says "milliwebereinä" (the packet's figure list was built from the catalog) — regenerate the catalog (figcat) so that the description the figure gets matches figures.py. This file is outside the exercise set, so it does not block.
+- solutions.md fy7-5-L3-05 Periaate — writes eΔt = −NΔΦ while the task's first pulse is positive as the flux grows; add "etumerkki riippuu käämin kytkennästä, joten lasketaan itseisarvoja" so the sign does not look contradictory (same in L3-03 if wished).
+- exercises.json fy7-5-L3-05 — the example data's peak ratio 2,16 : 1,77 ≈ 1,22 with ~20 ms between peaks implies a speed of about 0,9 m/s at the coil (Δv = gΔt ≈ 0,2 m/s), i.e. a drop of only ~4 cm, which sits awkwardly with "magneetti on kaukana käämistä"; a smaller ratio (~1,1) fits a drop of 15–20 cm. The explanation and the area result are unaffected.
 
 ## Checked
-- I recomputed all 19 numeric answers in one script with my own formulas (Φ = BA, |e| = N|ΔΦ|/Δt, e = vBl, I = e/R, NBlv, 2BA for the flip coil, triangle and trapezoid areas, fits through the origin). They agree with answers.py and exercises.json, and every rounded answer is within its tolerance (largest gaps: L1-07 2.2 % against 3 %, L3-04 2.7 % against 4 %).
-- L1-09 ordering: C 0, D 0.60, A 1.2, E 2.0, B 3.0 V. It is correct, and the two wrong lines of reasoning in the model answer move the situations as it says.
-- L1-06, L2-07: each has exactly one correct option, every distractor is really wrong, and each feedback gives the right reason. In L2-07, v ∥ B gives no force on the electrons and no change in flux.
-- L2-05: interval ΔΦ values recomputed; the steepest is 0.40–0.50 s, 1.21 mWb → 1.45 V. Three significant figures is justified by the table.
-- L2-06, L3-04: the ratios e/v and e/t fall in the ranges stated. A free fit gives an intercept ≈ 0, which supports the line through the origin (t counted from rest, e = aBl·t). s = ½at² = 1.18 m.
-- L3-05: trapezoid areas 0.01946 and −0.01968 V·s → 0.078 and 0.079 mWb. The explanation of the sign and the narrower, taller second pulse is consistent with the data (peak 2.16 vs 1.77 V).
-- L3-01: correct argument that only the vertical component of B gives a force along the axle (v × B_h is vertical). 4.23 mV → 4.2 mV.
-- L3-02: ΔΦ = 2BA for a half turn, B = 50 µT, a realistic value for Finland. L3-03: the task states that the flux is zero at the start and largest at the end of the pulse.
-- Figures: the flux-task and flux-task-2 polylines give every value the solutions read (4.0 mWb over 0.20/0.10 s; 5.0 → −3.0 mWb over 0.40 s). Neither shows a voltage. The alt text in figures.py matches the drawing.
-- Scope and notation: induction, e = vBl and the flux graph, as in the brief. There is no self-induction, and Lenz's law is deferred to its own chapter. Every solution solves symbolically before substituting. The fixes in this round (weber, tesloina) changed no physics. A grep finds no "veber" or "teslaina" left in the exercise set, answers.py or figures.py.
+- Hash 5cd62b0183fa3d77 (--exercises) at start and end.
+- All answers recomputed in one script with own formulas: L1-01 5,04→5,0 mWb; L1-02 3,0 V; L1-03 0,20 V; L1-04 0,36 mWb; L1-05 0,50 m/s; L1-07 2,25→2,3 V (tolerance 3 % covers both roundings); L1-08 0,060 T; L1-09 order C 0 < D 0,60 < A 1,2 < E 2,0 < B 3,0 V; L2-01 48 mV; L2-02 2,0 V; L2-03 0,30 A; L2-04 75 mV; L2-05 1,452 V; L2-06 least squares 0,1498 T, ratios 29–31 mV/(m/s); L2-08 4,0 V; L3-01 4,23 mV; L3-02 50 µT (ΔΦ = 2BA); L3-03 0,060 mWb; L3-04 a = 1,64 m/s², s = 1,18 m; L3-05 areas 0,01946 and −0,01968 V·s → 0,0778 and 0,0787 mWb. answers.py implements the same physics.
+- Task figures flux-task and flux-task-2 (figures.py) hold the values the solutions read; L2-08 asks only 0–0,40 s where the graph is straight.
+- L3-01: only the vertical component gives an axle-directed force; reasoning correct.
+- L2-07, L1-06: exactly one correct option; distractor feedback correct (open-circuit rod still has e = vBl; current is consequence, not cause).
+- Solutions symbolic first, conversions right, significant figures justified by the limiting datum, reasonableness checks real (flux-sweep cross-checks, field magnitudes).
+- Scope: Φ, induction law, vBl, Ohm's law and uniform acceleration from earlier courses; no self-induction.
