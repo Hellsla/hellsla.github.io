@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d3d1439fdcda5a28
+CONTENT-HASH: 91a38165a32382cd
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: d3d1439fdcda5a28
 - none
 
 ## Checked
-batch delta review (exercises): Järkevyys line 3,1 -> 3,0 m (0,83 + 2,2 = 3,03, so 3,0 is the honest rounding of the estimate; last measurement 3,07 m still "matches"); the genitive/rephrased water-mass sentence is grammatical and keeps the estimate step; no exercise text changed.
+round 2 delta review (exercises): solutions.md Järkevyys sentence reordered to "Jos vettä olisi/on V, sen massa olisi/on noin ... g"; grammatical, keeps the estimate step, no number, unit or exercise text changed.

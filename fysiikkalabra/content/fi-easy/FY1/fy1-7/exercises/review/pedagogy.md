@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7e3c7ca16ee2b79a
+CONTENT-HASH: 5b5a2b0f03e07467
 
 ## Blocking
 - none
@@ -8,4 +8,4 @@ CONTENT-HASH: 7e3c7ca16ee2b79a
 - none
 
 ## Checked
-batch delta review (exercises): the rewritten sentence 'Veden massa on 50 g, jos vettä on 50 cm3' is clear and keeps the estimate step; no numbers changed.
+round 2 delta review (exercises): solutions.md Järkevyys sentence reordered to "Jos vettä olisi/on V, sen massa olisi/on noin ... g"; grammatical, keeps the estimate step, no number, unit or exercise text changed.
