@@ -1,12 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 806a1f1affaa7986
-Round 3 delta against cc5cfb996b96c940
+VERDICT: FAIL
+CONTENT-HASH: e2d6e4c2648d54df
 
 ## Blocking
-(none)
+- [Major] fy9-kaasut/review/shots/reflow-*.png — the student's calculation quote wraps the lifted display: the opening mark dangles at the end of the lead-in (“…was 100 kPa: “”), the closing mark is detached after the formula (cropped under the sticky bar in the capture) — a lifted formula leaves a broken sentence (dangling or lone punctuation) — keep the opening mark/parenthesis, the formula and the closing mark/parenthesis together: drop the quotation marks or parentheses around the lifted display, or lift the formula out so the sentence closes before it and the closing punctuation stays on the formula row's sentence (e.g. a colon before the display and no quote marks).
 
 ## Polish
-(none)
+- None. The formulas themselves are fully visible at 360 px, relations aligned, no clipped units.
 
 ## Checked
-docs/figures/fy9-tunnistus/fy9-kaasut-en-360.png and -1280.png: all 9 rows opened. 'work done' now sits clear of the pill (W = p\Delta V) in its row; no row clipped or overlapped; other pills and labels fine. (The sticky stage bar covering the header in the 1280 capture is a capture artefact.)
+- batch delta review 5d: opened all 3 sheet(s) (reflow-1.png, reflow-2.png, reflow-3.png) at 360 px.

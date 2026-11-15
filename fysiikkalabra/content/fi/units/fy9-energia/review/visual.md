@@ -1,13 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 30d9fe8f97cb2a78
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (6ad4a6f43f1059e3).
+VERDICT: FAIL
+CONTENT-HASH: 45abe3769687094e
 
 ## Blocking
-(none)
+- [Major] reflow-2 ja reflow-3 — sulkeisiin kirjoitettu nostettu kaava jättää "(" rivin loppuun ja ")." / "), jolloin" omalle rivilleen ("osan lopussa (" … ")."; "(" 2,0 MW·8760 h = 17,5 GWh ")," ; "). Talo tarvitsee") — lause katkeaa, yksinäinen sulku rivin alussa — lue luonnollisesti vain, jos sulkeet kuuluvat kaavan ensimmäiselle ja viimeiselle riville — siirrä "(" ja ")"+välimerkki kaavan rivien sisään (sama kuin pilkulle, työjono 5e) tai jätä kaava sulkeiden sisällä riviin.
 
 ## Polish
-(none)
+- [Minor] Kaikissa yksiköissä: "Opiskelija laski: ”" -esimerkeissä sulkeva ”. alkaa omalta riviltä kaavan jälkeen; hyväksyttävä, mutta siirrettävissä kaavan viimeiseen riviin.
 
 ## Checked
-- Opened fy9-energia-fi-360.png (every row, pill and header read; no overlap except as noted), and read the changed aria-label/figures.json entry and the diff against the chart; the diff's other lines (teacher.md rows wording, unit.md sign wording, line break fix) read in full.
-- Round-1 finding(s) of my role re-checked: unchanged rest holds.
+- batch delta review 5d: reflow-*.png (3 sheets, all opened at 360 px); kaavat luettavissa ja täysin näkyvissä, relaatiot samassa sarakkeessa, ei vaakavieritystä.

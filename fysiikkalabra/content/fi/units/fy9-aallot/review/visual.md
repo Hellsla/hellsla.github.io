@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a3e2059181de8338
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (7bbe7f3465dd6d42).
+CONTENT-HASH: bfe569a0df0f5ada
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none)
+- [Minor] Esimerkin lainaus: sulkeva ”. alkaa omalta riviltä lifted-kaavan jälkeen (”. Mikä ratkaisussa on väärin?); sama kuvio muissa yksiköissä, jaettu korjaus rakenteeseen.
 
 ## Checked
-- Opened fy9-aallot-fi-360.png (chart unchanged); the diff is only teacher.md branch-to-row wording, which reads correctly.
+- batch delta review 5d: reflow-*.png (3 sheets, all opened at 360 px); kaavat luettavissa ja täysin näkyvissä, relaatiot samassa sarakkeessa, ei vaakavieritystä.

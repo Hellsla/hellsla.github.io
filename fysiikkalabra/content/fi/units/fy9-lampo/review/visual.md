@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6bd8953fb5e744db
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (024a3851f574b445).
+CONTENT-HASH: 37c76f5ae34b5724
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none)
+- [Minor] Kaikissa yksiköissä: "Opiskelija laski: ”" -esimerkeissä sulkeva ”. alkaa omalta riviltä kaavan jälkeen; hyväksyttävä, mutta siirrettävissä kaavan viimeiseen riviin.
 
 ## Checked
-- Opened fy9-lampo-fi-360.png (chart unchanged); the diff is only teacher.md branch-to-row wording, which reads correctly.
+- batch delta review 5d: reflow-*.png (2 sheets, all opened at 360 px); kaavat luettavissa ja täysin näkyvissä, relaatiot samassa sarakkeessa, ei vaakavieritystä.
