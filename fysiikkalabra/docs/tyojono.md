@@ -547,8 +547,6 @@ Kortteja ei lisätä niihin.
 
 ## Kirjattu päätös: kaikki roolit Fable (opettaja 2026-11-15)
 
-Varattu: claude/mallit-fable. Jaettu muutos (`.claude/`): yhdistetään kohdan 8m (#618) jälkeen, ennen sisältötöitä.
-
 Opettaja 15.11: "Fable usage is 0% and all models 67%. Can I use fable more? Change models so". Kaikki agentit
 (`.claude/agents/`: developer, science-reviewer, pedagogy-reviewer, visual-editorial-reviewer) ja komennot
 (`.claude/commands/`) ajetaan Fablella; `/lesson`-komennon mallitaulukko on ohje. Aiempi sääntö "Fable never without
