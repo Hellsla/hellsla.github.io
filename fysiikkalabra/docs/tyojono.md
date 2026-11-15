@@ -6,7 +6,7 @@ valmis kohta poistetaan tästä samassa pull requestissa.
 Tämä on ainoa työjono (opettaja 2026-11-13): ei GitHub Issuesia eikä erillisiä listoja. Kohdat ovat
 `docs/ROADMAP.md`:n järjestyksessä. Kohdan ottava ketju katsoo ensin avoimet pull requestit, merkitsee kohtaan
 ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta muut ketjut näkevät varauksen
-(repon juuren `CLAUDE.md`). Saman kurssin kohdat tehdään peräkkäin, eri kurssien enintään kolme rinnakkain.
+(repon juuren `CLAUDE.md`). Saman kurssin kohdat tehdään peräkkäin, eri kurssien enintään kuusi rinnakkain (opettaja 2026-11-15).
 
 ## 3. Kaavat taulukkokirjan muotoon: valmis
 
@@ -511,7 +511,7 @@ täyden katselmoinnin, työntekijä kertoo koordinaattorille ennen ajoa. Kurssin
 merkitsevät numerot, termit, "lämmöksi", likiarvorivit, kieli) samalla kierroksella (P2), myös tehtävänannot,
 inquiry.json, kuvien tekstit ja käännökset. Kurssi aloitetaan, kun kohta 8m on yhdistetty ja kurssin kohdan 5d
 leikkautuvat kaavat ovat mainissa (FY8 odottaa #601:tä). Avoin kohta 12 ratkesi päätöksellä P9: pieniä arvoeroja ei
-muuteta. Yksi kurssi = yksi haara ja yksi PR; enintään kolme kurssia yhtä aikaa.
+muuteta. Yksi kurssi = yksi haara ja yksi PR; enintään kuusi työntekijää yhtä aikaa.
 
 ## Kirjattu päätös: teorian taitto, vaihtoehto B (opettaja 2026-11-14)
 
