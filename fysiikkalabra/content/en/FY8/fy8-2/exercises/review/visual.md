@@ -1,18 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 1de1e6f9b64da513
+VERDICT: PASS
+CONTENT-HASH: b3052b1085923292
+SCOPE: delta added-exercise from d4cac7da6f13b625 base f6ae5d507c79
 
 ## Blocking
-- [Major] L2-09 solution, SUBSTITUTION, 360 px — the first row of the chain is one fraction that does not fit (chain scrolls 281 > 272 px): the numerator ends "…10^8 m/" and the "s" of m/s is cut off — a unit appears wrong and only a hidden horizontal scroll shows it — set hc as its own step as L3-06 does: `hc = 6.626 \cdot 10^{-34}\,\text{J s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J m}`, then `E = \dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J m}}{436 \cdot 10^{-9}\,\text{m}}` (the later rows break correctly at 360 px)
-- [Major] L3-06 solution, REASONABLENESS, 360 px — inline chains `5.461 eV − 4.667 eV = 0.794 eV` and `1240 eV nm : 0.79 eV ≈ 1570 nm` do not wrap and are clipped by the card ("1570 nm" reads "1570 nr") — the result is cut — split each into two shorter inline formulas or display rows (`5.461\,\text{eV} - 4.667\,\text{eV}` / `= 0.794\,\text{eV}`)
+(none)
 
 ## Polish
-- [Minor] figure at 360 px — tick numbers are about 9 px high in the task figure; legible but small; consider larger figure labels if the figure is reused on phones.
+- [Minor] figure, 360 px — scale numbers are small (about 9 px) but readable; unchanged from round 2.
+- [Minor] L3-06 solution, SUBSTITUTION a), 360 px — the en denominator "1.602 · 10^-19 J/eV" is a slash while fi and fi-easy stack J over eV; it fits, but is tight against the card edge. Optional: stack it for consistency.
 
 ## Checked
-- 1280 px: opened the en captures open-exercises-L2-1280-12 and L3-1280-9, -10 (figure, ticks, axis label, solution chains aligned); the fi and fi-easy 1280 captures were not opened (same templates, judged from the 360 px captures).
-- Made own 360 px captures of 2-9 / 2-23 cards (L2-09, L3-06) with solutions open, all three languages (scratchpad s/*-360.png); measured chain overflow in the DOM.
-- Figure SVG source not opened (no defect traced to it).
-- Delta covers only the two added figure tasks (fy8-2-L2-09, fy8-2-L3-06) and the figure lamp-spectrum; other exercises not re-read.
+- Round 3, 360 px: own captures with solutions open of tasks L2-09 and L3-06 in this language (scratchpad s/, cropped parts), read in full: the SIJOITUS hc row, the E rows with stacked fractions, the Järkevyys rows (L2-09 "1240 eV nm : 436 nm ≈ 2,84 eV"; L3-06 5,461 eV − 4,667 eV in prose, λ row), the Vastaus.
+- DOM measurement: no chain is clipped by the card or the viewport; every unit ("m/s", "J/eV", "1570 nm") is fully visible.
+- Delta covers only the two added figure tasks and the figure lamp-spectrum (seen in the fi 390 px capture fig-8); other exercises not re-read.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 3
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
