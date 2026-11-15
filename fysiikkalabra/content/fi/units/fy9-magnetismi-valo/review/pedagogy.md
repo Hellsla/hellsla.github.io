@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 753f6c76a98443bb
-Review of the recognition chart (queue 9c) and the term change against the version passed at 0944d5d3eb93fbe8; full on the chart, delta on the rest.
+CONTENT-HASH: a05765c3ca384b0a
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- B: "valo kulkee aineesta toiseen" has the pill "Snellin laki" only; the formula is the point of the row, as the other rows show their result. Show n1 sin α1 = n2 sin α2 (if it fits).
-- B: "valo ei pääse ulos aineesta" is a conclusion; "valo tulee tiheämmästä aineesta, suuri kulma" would be the sign a student sees. The condition n1>n2 is in the teacher.md only.
-- C: "generaattori pyörii" gives u0 only for a coil in a uniform field; fine at this level.
+- A, `sovella/tasks.json` s7 b is a bare unit conversion worth 2 points (the teacher's order). The solution's check with the classical kinetic energy (120 times the speed of light) is the instructive part; a short "Mitä tulos kertoo klassisesta liike-energian lausekkeesta?" in b or d would bring it into the task.
+- C, `sovella/solutions.md` s7 d: "kolme merkitsevää numeroa kuten nopeus 100 km/h" is a weak justification, since 100 km/h and 1500 kg have ambiguous precision.
+- C, `tasks.json` intro: "Ratkaise ne kuten kokeessa" now follows the sentence about the last task. Move the new sentence to the end, as in fy9-energia.
 
 ## Checked
-- Rows: hiukkanen kentässä, virtajohdin, ympyrärata, induktio (the sign in the formula), muuntaja, generaattori, Snell, kokonaisheijastus, hila. teacher.md already says "rivi kerrallaan", true. Start box "tee ensin kuva" matches the unit.
-- Rows read against the unit's tasks and Ydinajatus; chart placed in Ydinajatus (after the paragraph, before Kaava); no formula list, each pill is the short result of its choice; aria-label read through, it gives sign -> choice -> law for every row in the same order and wording as the chart, usable as a screen-reader list; white on #1a4d2e pill identical in all charts; the only other changed lines are the teacher.md sentence (käsitekartta -> tunnistuskaavio). fi-easy/en not in my scope here.
+- Item 18 hunks: hook question, unit.md (magnetic field and a charge at rest, hook answer, transmission-loss paragraph and derivation), s1 c part text and solution, `siirto` aria-label and labels. All carry P1 correctly and read well. The new labels "häviö 38 %" and "häviö 2,0 W = 0,005 %" captured at 360 px: legible, not clipped, colour still paired with text.
+- s7 in full: a 11 245 · 26 659 m = 299 780 455 m/s, v/c = 0,99996, difference 12 km/s, rounding interval 2,9976–2,9980 · 10^8 m/s; b 1,0894 · 10^-6 J, classical speed 3,6 · 10^10 m/s; c 4,0 · 10^14 protons, 435,7 MJ, mass 0,67 ng; d 0,5787 MJ, 753 cars, wrong route 7,5 MJ and 58. All recomputed and correct.
+- Points 3+2+3+3+4 = 15; criteria sum to each part. Part a asks what can and cannot be concluded from rounded data, which is a real evaluation step. The source is needed in a and e. The solution stays inside FY1–FY8: it says where the classical expressions fail instead of using relativity. No overlap with s6 (cyclotron).
+- Preview at 360 px: the s7 card renders without overflow.
