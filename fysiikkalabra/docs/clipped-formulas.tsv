@@ -1953,7 +1953,7 @@ fi-easy/fy2-8	= (820 - 490)\,\tfrac{\text{g}}{\text{kWh}} \cdot 20\,000\,\text{k
 fi-easy/fy2-8	= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \cdot 3600\,\text{kWh}
 fi-easy/fy2-8	= 2\,952\,000 \cdot 10^{-6}\,\text{t}
 fi-easy/fy2-8	= 414\,\text{ppm} + 2{,}2\,\text{ppm/a} \cdot 20\,\text{a}
-fi-easy/fy2-8	= 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l}
+fi-easy/fy2-8	= 74\,\text{g/MJ} \cdot 30\,\textsf{l} \cdot 36\,\text{MJ/}\textsf{l} 
 fi-easy/fy2-8	m = 820\,\text{g/kWh} \cdot 2{,}0\,\text{kWh} = 1640
 fi-easy/fy2-8	m = e \cdot E = 12\,\text{g/kWh} \cdot 3600\,\text{kWh} = 43\,200\,\te
 fi-easy/fy3-1	0{,}10 + 0{,}20 + 0{,}30 + 0{,}40 + 0{,}50 + 0{,}60 = 2{,}10\,\text{kg
