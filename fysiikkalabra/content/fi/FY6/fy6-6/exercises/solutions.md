@@ -77,7 +77,7 @@
 **Muunnokset:** $R = 1{,}0\,\text{k}\Omega = 1{,}0 \cdot 1000\,\Omega = 1000\,\Omega$
 **Sijoitus:** $U = \sqrt{0{,}25\,\text{W} \cdot 1000\,\Omega} = \sqrt{250\,\text{V}^2} = 15{,}8\,\text{V}$
 **Vastaus:** $16\,\text{V}$, kaksi merkitsevää numeroa kuten tehossa ja resistanssissa.
-**Järkevyys:** Tarkistus: $(15{,}8\,\text{V})^2 : 1000\,\Omega = 0{,}25\,\text{W}$. Yksikkö $\sqrt{\text{W} \cdot \Omega} = \sqrt{\text{V}^2} = \text{V}$ on oikea. Tavallisessa $5\,\text{V}$:n tai $9\,\text{V}$:n piirissä vastus on siis turvallisella alueella, vaikka koko jännite olisi vastuksen yli.
+**Järkevyys:** Tarkistus: $$(15{,}8\,\text{V})^2 : 1000\,\Omega = 0{,}25\,\text{W}$$. Yksikkö $\sqrt{\text{W} \cdot \Omega} = \sqrt{\text{V}^2} = \text{V}$ on oikea. Tavallisessa $5\,\text{V}$:n tai $9\,\text{V}$:n piirissä vastus on siis turvallisella alueella, vaikka koko jännite olisi vastuksen yli.
 
 ## fy6-6-L2-04
 **Annettu:** teho $P = 200\,\text{W}$, veden massa $m = 0{,}80\,\text{kg}$, aika $t = 5{,}0\,\text{min}$, $c = 4190\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}}$
@@ -97,7 +97,7 @@
 **Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $R_{40} = \dfrac{(230\,\text{V})^2}{40\,\text{W}} = 1322{,}5\,\Omega$, $R_{100} = \dfrac{(230\,\text{V})^2}{100\,\text{W}} = 529\,\Omega$, $I = \dfrac{230\,\text{V}}{1851{,}5\,\Omega} = 0{,}1242\,\text{A}$ ja $P_{40} = 1322{,}5\,\Omega \cdot (0{,}1242\,\text{A})^2 = 20{,}4\,\text{W}$
 **Vastaus:** $20\,\text{W}$, kaksi merkitsevää numeroa kuten tehossa $40\,\text{W}$.
-**Järkevyys:** $100\,\text{W}$:n lampun teho on $529\,\Omega \cdot (0{,}1242\,\text{A})^2 \approx 8{,}2\,\text{W}$, joten sarjassa $40\,\text{W}$:n lamppu palaa kirkkaammin, koska sen resistanssi on suurempi ja virta on sama. Kummankin teho on pienempi kuin merkitty, koska kummankin yli on vain osa verkkojännitteestä.
+**Järkevyys:** $100\,\text{W}$:n lampun teho on $$529\,\Omega \cdot (0{,}1242\,\text{A})^2 \approx 8{,}2\,\text{W}$$, joten sarjassa $40\,\text{W}$:n lamppu palaa kirkkaammin, koska sen resistanssi on suurempi ja virta on sama. Kummankin teho on pienempi kuin merkitty, koska kummankin yli on vain osa verkkojännitteestä.
 
 ## fy6-6-L3-02
 **Annettu:** $20$ samanlaista lamppua sarjassa, verkkojännite $U = 230\,\text{V}$, sarjan teho $P = 9{,}2\,\text{W}$
@@ -107,7 +107,7 @@
 **Muunnokset:** Ei tarvita: $\text{V} : \text{A} = \Omega$.
 **Sijoitus:** $I = \dfrac{9{,}2\,\text{W}}{230\,\text{V}} = 0{,}040\,\text{A}$, $U_1 = \dfrac{230\,\text{V}}{20} = 11{,}5\,\text{V}$ ja $R = \dfrac{11{,}5\,\text{V}}{0{,}040\,\text{A}} = 287{,}5\,\Omega$
 **Vastaus:** $2{,}9 \cdot 10^{2}\,\Omega$ eli noin $290\,\Omega$, kaksi merkitsevää numeroa kuten tehossa $9{,}2\,\text{W}$.
-**Järkevyys:** Yhden lampun teho on $9{,}2\,\text{W} : 20 = 0{,}46\,\text{W}$, ja $(11{,}5\,\text{V})^2 : 287{,}5\,\Omega = 0{,}46\,\text{W}$ antaa saman. Koko sarjan resistanssi $20 \cdot 287{,}5\,\Omega = 5750\,\Omega$ antaa virran $230\,\text{V} : 5750\,\Omega = 0{,}040\,\text{A}$.
+**Järkevyys:** Yhden lampun teho on $9{,}2\,\text{W} : 20 = 0{,}46\,\text{W}$, ja $$(11{,}5\,\text{V})^2 : 287{,}5\,\Omega = 0{,}46\,\text{W}$$ antaa saman. Koko sarjan resistanssi $20 \cdot 287{,}5\,\Omega = 5750\,\Omega$ antaa virran $230\,\text{V} : 5750\,\Omega = 0{,}040\,\text{A}$.
 
 ## fy6-6-L3-03
 **Annettu:** rinnankytkentä, jännite $U = 12\,\text{V}$, $R_1 = 6{,}0\,\Omega$, kokonaisteho $P = 36\,\text{W}$
@@ -183,7 +183,7 @@
 **Muunnokset:** $U' = 1{,}10 \cdot 230\,\text{V} = 253\,\text{V}$ ja $1{,}4\,\text{kW} = 1400\,\text{W}$, $0{,}75\,\text{kW} = 750\,\text{W}$
 **Sijoitus:** $R_1 = \dfrac{(230\,\text{V})^2}{1100\,\text{W}} = 48{,}09\,\Omega$ ja $R_2 = \dfrac{(230\,\text{V})^2}{420\,\text{W}} - 48{,}09\,\Omega = 125{,}95\,\Omega - 48{,}09\,\Omega = 77{,}86\,\Omega$. Jännitteellä $253\,\text{V}$: $P_1' = \dfrac{(253\,\text{V})^2}{48{,}09\,\Omega} = 1331\,\text{W}$ ja $P_2' = \dfrac{(253\,\text{V})^2}{77{,}86\,\Omega} = 822\,\text{W}$
 **Vastaus:** $822\,\text{W}$ vastuksessa $R_2$ (pyöristettynä $8{,}2 \cdot 10^{2}\,\text{W}$). Kohdan a) resistanssit ovat $R_1 = 48{,}1\,\Omega$ ja $R_2 = 77{,}9\,\Omega$. Ylikuormittuva vastus on siis $R_2$. Pyöristetyssä tuloksessa on kaksi merkitsevää numeroa kuten sarjakytkennän tehossa $420\,\text{W}$. Se ylittää sallitun tehon $750\,\text{W}$, kun taas vastuksen $R_1$ teho $1331\,\text{W}$ jää alle rajan $1400\,\text{W}$. Vastuksessa $R_1$ muuttuu enemmän energiaa, mutta teho kasvaa kummassakin yhtä paljon ($1{,}10^2 = 1{,}21$-kertaiseksi), ja vastus $R_2$ on rajallaan jo valmiiksi: sen teho on $679\,\text{W} : 750\,\text{W} = 91\,\%$ sallitusta, vastuksen $R_1$ vain $79\,\%$.
-**Järkevyys:** Rinnankytkennän mittaus täsmää: $R_2$:n teho jännitteellä $230\,\text{V}$ on $(230\,\text{V})^2 : 77{,}86\,\Omega = 679\,\text{W}$, joten $1100\,\text{W} + 679\,\text{W} = 1779\,\text{W} \approx 1780\,\text{W}$. Tehon kasvukerroin tarkistuu: $679\,\text{W} \cdot 1{,}21 = 822\,\text{W}$ ja $1100\,\text{W} \cdot 1{,}21 = 1331\,\text{W}$.
+**Järkevyys:** Rinnankytkennän mittaus täsmää: $R_2$:n teho jännitteellä $230\,\text{V}$ on $$(230\,\text{V})^2 : 77{,}86\,\Omega = 679\,\text{W}$$, joten $1100\,\text{W} + 679\,\text{W} = 1779\,\text{W} \approx 1780\,\text{W}$. Tehon kasvukerroin tarkistuu: $679\,\text{W} \cdot 1{,}21 = 822\,\text{W}$ ja $1100\,\text{W} \cdot 1{,}21 = 1331\,\text{W}$.
 
 ## fy6-6-L3-05
 **Annettu:** lämmittimen nimellisarvot $P_\text{n} = 2{,}0\,\text{kW}$ ja $U_\text{n} = 230\,\text{V}$; pistorasian jännite $U = 230\,\text{V}$; jatkojohdon resistanssi: ohut $R_\text{o} = 2{,}4\,\Omega$, paksu $R_\text{p} = 0{,}71\,\Omega$; lämmitin ja johto sarjassa
@@ -193,7 +193,7 @@
 **Muunnokset:** $P_\text{n} = 2{,}0\,\text{kW} = 2000\,\text{W}$
 **Sijoitus:** $R_\text{L} = \dfrac{(230\,\text{V})^2}{2000\,\text{W}} = 26{,}45\,\Omega$. Ohut johto: $I = \dfrac{230\,\text{V}}{26{,}45\,\Omega + 2{,}4\,\Omega} = 7{,}97\,\text{A}$ ja $P_\text{o} = 2{,}4\,\Omega \cdot (7{,}97\,\text{A})^2 = 152{,}5\,\text{W}$. Paksu johto: $I = \dfrac{230\,\text{V}}{26{,}45\,\Omega + 0{,}71\,\Omega} = 8{,}47\,\text{A}$ ja $P_\text{p} = 0{,}71\,\Omega \cdot (8{,}47\,\text{A})^2 = 50{,}9\,\text{W}$
 **Vastaus:** $152{,}5\,\text{W}$, pyöristettynä $1{,}5 \cdot 10^{2}\,\text{W}$ eli noin $150\,\text{W}$ ohuessa johdossa ja $51\,\text{W}$ paksussa, kaksi merkitsevää numeroa kuten resistanssissa $2{,}4\,\Omega$. Virta on molemmilla johdoilla lähes sama, $7{,}97\,\text{A}$ ja $8{,}47\,\text{A}$, joten johdon teho $RI^2$ riippuu lähinnä sen resistanssista: ohuen johdon resistanssi on noin $3{,}4$-kertainen ja teho noin kolminkertainen. Rullalla oleva ohut johto jäähtyy huonosti, joten se lämpenee. Kuormitettu johtokela kannattaa kelata auki, eikä johdon sallittua virtaa saa ylittää. Paksussa johdossa muuttuu vähemmän energiaa, joten se pysyy viileämpänä.
-**Järkevyys:** Ohuen johdon kanssa lämmittimen teho on $26{,}45\,\Omega \cdot (7{,}97\,\text{A})^2 = 1681\,\text{W}$, ja yhdessä johdon kanssa $1681\,\text{W} + 152{,}5\,\text{W} = 1834\,\text{W}$. Tämä on sama kuin lähteen teho $230\,\text{V} \cdot 7{,}97\,\text{A} = 1834\,\text{W}$. Lämmitin saa siis ohuen johdon takia noin $1681\,\text{W}$ nimellistehon $2000\,\text{W}$ sijaan.
+**Järkevyys:** Ohuen johdon kanssa lämmittimen teho on $$26{,}45\,\Omega \cdot (7{,}97\,\text{A})^2 = 1681\,\text{W}$$, ja yhdessä johdon kanssa $$\begin{aligned} &1681\,\text{W} + 152{,}5\,\text{W} \\ &= 1834\,\text{W} \end{aligned}$$. Tämä on sama kuin lähteen teho $230\,\text{V} \cdot 7{,}97\,\text{A} = 1834\,\text{W}$. Lämmitin saa siis ohuen johdon takia noin $1681\,\text{W}$ nimellistehon $2000\,\text{W}$ sijaan.
 
 ## fy6-6-L2-08
 **Kysytty:** miten vastuksen $R_1$ teho muuttuu, kun sen kanssa kytketään sarjaan samanlainen vastus $R_2$ ja lähteen jännite pysyy samana.
@@ -223,6 +223,6 @@ Tehojen suhde on $\tfrac{1{,}5\,\text{W}}{6{,}0\,\text{W}} = \tfrac{1}{4}$, eli 
 **Kuvaajan lukeminen:** Kuvaaja on vaakasuora kolmessa osassa: $P_1 = 2000\,\text{W}$ ajan $0$–$3{,}0\,\text{min}$, $P_2 = 1000\,\text{W}$ ajan $3{,}0$–$8{,}0\,\text{min}$ ja $P_3 = 500\,\text{W}$ ajan $8{,}0$–$12\,\text{min}$. Vaiheiden kestot ovat $t_1 = 3{,}0\,\text{min}$, $t_2 = 5{,}0\,\text{min}$ ja $t_3 = 4{,}0\,\text{min}$.
 **Kaava:** $E = E_1 + E_2 + E_3 = P_1t_1 + P_2t_2 + P_3t_3$
 **Muunnokset:** $t_1 = 3{,}0 \cdot 60\,\text{s} = 180\,\text{s}$, $t_2 = 5{,}0 \cdot 60\,\text{s} = 300\,\text{s}$, $t_3 = 4{,}0 \cdot 60\,\text{s} = 240\,\text{s}$
-**Sijoitus:** $E = 2000\,\text{W} \cdot 180\,\text{s} + 1000\,\text{W} \cdot 300\,\text{s} + 500\,\text{W} \cdot 240\,\text{s} = 360\,\text{kJ} + 300\,\text{kJ} + 120\,\text{kJ} = 780\,\text{kJ}$
+**Sijoitus:** $$\begin{aligned} E &= 2000\,\text{W} \cdot 180\,\text{s} + 1000\,\text{W} \\ &\cdot 300\,\text{s} + 500\,\text{W} \cdot 240\,\text{s} \\ &= 360\,\text{kJ} + 300\,\text{kJ} + 120\,\text{kJ} \\ &= 780\,\text{kJ} \end{aligned}$$
 **Vastaus:** $780\,\text{kJ}$, kolme merkitsevää numeroa, koska vaiheiden arvot luetaan tarkasti ruudukkoviivoilta.
 **Järkevyys:** Keskiteho on $780\,\text{kJ} : 720\,\text{s} \approx 1{,}08\,\text{kW}$, mikä on suurimman ja pienimmän tehon välissä ($0{,}5$–$2{,}0\,\text{kW}$). Energia on myös kuvaajan viivan alle jäävä pinta-ala.

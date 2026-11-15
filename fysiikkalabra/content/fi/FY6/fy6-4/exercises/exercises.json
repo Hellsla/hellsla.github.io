@@ -59,7 +59,7 @@
         },
         {
           "text": "Kaikki kolme sarjaan, koska silloin virta kulkee jokaisen vastuksen läpi.",
-          "feedback": "Sarjaankytkennässä resistanssit summautuvat: $100\\,\\Omega + 100\\,\\Omega + 100\\,\\Omega = 300\\,\\Omega$. Se on kytkennöistä suurin, ei pienin."
+          "feedback": "Sarjaankytkennässä resistanssit summautuvat: $$100\\,\\Omega + 100\\,\\Omega + 100\\,\\Omega = 300\\,\\Omega$$. Se on kytkennöistä suurin, ei pienin."
         },
         {
           "text": "Kaksi rinnan ja kolmas niiden kanssa sarjaan, koska kytkennässä on kumpaakin tapaa.",

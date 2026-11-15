@@ -37,7 +37,7 @@
 **Muunnokset:** $d = 1{,}0\,\text{mm} = 1{,}0 \cdot 10^{-3}\,\text{m}$
 **Sijoitus:** $C = \dfrac{8{,}854 \cdot 10^{-12}\,\text{F/m} \cdot 0{,}025\,\text{m}^2}{1{,}0 \cdot 10^{-3}\,\text{m}} = 221 \cdot 10^{-12}\,\text{F} = 221\,\text{pF}$
 **Vastaus:** $2{,}2 \cdot 10^{2}\,\text{pF} = 220\,\text{pF}$. Laskettu arvo $221\,\text{pF}$ pyöristetään kahteen merkitsevään numeroon, kuten pinta-ala ja etäisyys.
-**Järkevyys:** Suhde $A : d = 0{,}025\,\text{m}^2 : 0{,}0010\,\text{m} = 25\,\text{m}$, ja $25\,\text{m} \cdot 8{,}854\,\text{pF/m} \approx 220\,\text{pF}$. Ilmaeristeisen levykondensaattorin kapasitanssi on tavallisesti satoja pikofaradeja.
+**Järkevyys:** Suhde $A : d = 0{,}025\,\text{m}^2 : 0{,}0010\,\text{m} = 25\,\text{m}$, ja $$25\,\text{m} \cdot 8{,}854\,\text{pF/m} \approx 220\,\text{pF}$$. Ilmaeristeisen levykondensaattorin kapasitanssi on tavallisesti satoja pikofaradeja.
 
 ## fy6-13-L1-05
 **Annettu:** kuvaajan jännite varauksen funktiona, jännite $U = 12\,\text{V}$
@@ -106,7 +106,7 @@
 **Periaate:** Lähde pitää jännitteen samana koko ajan. Eriste kasvattaa kapasitanssin $\varepsilon_\text{r}$-kertaiseksi. Siksi samalla jännitteellä levyillä on $\varepsilon_\text{r}$-kertainen varaus. Erotuksen tuo lähde.
 **Kaava:** $Q_1 = C_1 U$ ja $Q_2 = \varepsilon_\text{r} C_1 U$, josta $\Delta Q = Q_2 - Q_1 = (\varepsilon_\text{r} - 1) C_1 U$
 **Muunnokset:** $C_1 = 220\,\text{pF} = 220 \cdot 10^{-12}\,\text{F}$ ja $U = 1{,}5\,\text{kV} = 1{,}5 \cdot 1000\,\text{V} = 1500\,\text{V}$
-**Sijoitus:** $\Delta Q = (5{,}6 - 1) \cdot 220 \cdot 10^{-12}\,\text{F} \cdot 1500\,\text{V} = 1{,}518 \cdot 10^{-6}\,\text{C}$
+**Sijoitus:** $$\begin{aligned} \Delta Q &= (5{,}6 - 1) \cdot 220 \cdot 10^{-12}\,\text{F} \\ &\cdot 1500\,\text{V} \\ &= 1{,}518 \cdot 10^{-6}\,\text{C} \end{aligned}$$
 **Vastaus:** $1{,}5\,\mu\text{C}$. Vastauksessa on kaksi merkitsevää numeroa, kuten jännitteessä $1{,}5\,\text{kV}$ ja suhteellisessa permittiivisyydessä $5{,}6$.
 **Järkevyys:** Alussa varaus on $220\,\text{pF} \cdot 1500\,\text{V} = 0{,}33\,\mu\text{C}$. Lasin kanssa varaus on $5{,}6$ kertaa niin suuri eli $1{,}85\,\mu\text{C}$. Lisäys $1{,}5\,\mu\text{C}$ on näiden erotus. Jos lähde olisi irrotettu, varaus ei olisi muuttunut lainkaan.
 
@@ -118,7 +118,7 @@
 **Muunnokset:** $U = 6{,}0\,\text{kV} = 6000\,\text{V}$, $E_\text{max} = 24 \cdot 10^{6}\,\text{V/m}$, $C = 1{,}0 \cdot 10^{-9}\,\text{F}$ ja lopuksi $1\,\text{m}^2 = 100\,\text{cm} \cdot 100\,\text{cm} = 10\,000\,\text{cm}^2$
 **Sijoitus:** $d = \dfrac{2 \cdot 6000\,\text{V}}{24 \cdot 10^{6}\,\text{V/m}} = 5{,}0 \cdot 10^{-4}\,\text{m}$ ja $A = \dfrac{1{,}0 \cdot 10^{-9}\,\text{F} \cdot 5{,}0 \cdot 10^{-4}\,\text{m}}{8{,}854 \cdot 10^{-12}\,\text{F/m} \cdot 2{,}6} \approx 0{,}0217\,\text{m}^2 = 217\,\text{cm}^2$
 **Vastaus:** $220\,\text{cm}^2$ eli $2{,}2 \cdot 10^{2}\,\text{cm}^2$. Vastauksessa on kaksi merkitsevää numeroa, kuten kapasitanssissa ja jännitteessä.
-**Järkevyys:** Eriste on $0{,}50\,\text{mm}$ paksu. Kenttä on siinä $6000\,\text{V} : 0{,}50\,\text{mm} = 12\,\text{MV/m}$, eli puolet läpilyöntilujuudesta. Neliön sivu olisi noin $15\,\text{cm}$. Ohuempi eriste pienentäisi levyjä. Silloin kondensaattori ei kuitenkaan kestäisi jännitettä enää varmasti.
+**Järkevyys:** Eriste on $0{,}50\,\text{mm}$ paksu. Kenttä on siinä $$\begin{aligned} &6000\,\text{V} : 0{,}50\,\text{mm} \\ &= 12\,\text{MV/m} \end{aligned}$$, eli puolet läpilyöntilujuudesta. Neliön sivu olisi noin $15\,\text{cm}$. Ohuempi eriste pienentäisi levyjä. Silloin kondensaattori ei kuitenkaan kestäisi jännitettä enää varmasti.
 
 ## fy6-13-L1-06
 **Kysytty:** mitä kapasitanssille tapahtuu, kun jännite kaksinkertaistuu.
@@ -195,7 +195,7 @@ $W = 7{,}2 \cdot 10^{-3}\,\text{J} = 7{,}2\,\text{mJ}$
 **Sijoitus:** $W = \tfrac{1}{2} \cdot 220 \cdot 10^{-6}\,\text{F} \cdot (24\,\text{V})^2 = 0{,}0634\,\text{J} = 63{,}4\,\text{mJ}$
 **Vastaus:** $63\,\text{mJ}$. Vastauksessa on kaksi merkitsevää numeroa. Rajoittava tieto on jännite $24\,\text{V}$. Kapasitanssissa $220\,\mu\text{F}$ on kolme.
 **Mallivastaus virheestä:** Oppilaan laskema $QU = 127\,\text{mJ}$ on lähteen antama energia. Kondensaattoriin varastoituu siitä vain puolet. Latauksen aikana kondensaattorin jännite on aluksi nolla. Se kasvaa vasta vähitellen arvoon $24\,\text{V}$. Varaus ei siis siirry koko ajan täyden jännitteen yli. Toinen puoli, noin $63\,\text{mJ}$, muuttuu johtimien ja vastusten sisäenergiaksi. Se siirtyy lämpönä ympäristöön.
-**Järkevyys:** Varastoitunut energia on $\tfrac{1}{2} \cdot 5{,}28\,\text{mC} \cdot 24\,\text{V} = 63{,}4\,\text{mJ}$, sama tulos. Se on tasan puolet oppilaan luvusta $127\,\text{mJ}$.
+**Järkevyys:** Varastoitunut energia on $$\tfrac{1}{2} \cdot 5{,}28\,\text{mC} \cdot 24\,\text{V} = 63{,}4\,\text{mJ}$$, sama tulos. Se on tasan puolet oppilaan luvusta $127\,\text{mJ}$.
 
 ## fy6-13-L3-04
 **Annettu:** latausvirta $I = 15\,\text{mA}$, taulukon pisteet $(t;\ U)$: $(0\,\text{s};\ 0\,\text{V})$, $(2\,\text{s};\ 203\,\text{V})$, $(4\,\text{s};\ 396\,\text{V})$, $(6\,\text{s};\ 607\,\text{V})$, $(8\,\text{s};\ 805\,\text{V})$, $(10\,\text{s};\ 992\,\text{V})$ ja $(12\,\text{s};\ 1201\,\text{V})$, iskun jännite $1{,}8\,\text{kV}$, purkautumisaika $5{,}0\,\text{ms}$

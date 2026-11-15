@@ -77,7 +77,7 @@
 **Conversions:** $R = 1.0\,\text{k}\Omega = 1.0 \cdot 1000\,\Omega = 1000\,\Omega$
 **Substitution:** $U = \sqrt{0.25\,\text{W} \cdot 1000\,\Omega} = \sqrt{250\,\text{V}^2} = 15.8\,\text{V}$
 **Answer:** $16\,\text{V}$, two significant figures like the power and the resistance.
-**Reasonableness:** Check: $(15.8\,\text{V})^2 : 1000\,\Omega = 0.25\,\text{W}$. The unit $\sqrt{\text{W} \cdot \Omega} = \sqrt{\text{V}^2} = \text{V}$ is correct. In an ordinary $5\,\text{V}$ or $9\,\text{V}$ circuit the resistor is therefore in the safe range, even if the whole voltage were across the resistor.
+**Reasonableness:** Check: $$(15.8\,\text{V})^2 : 1000\,\Omega = 0.25\,\text{W}$$. The unit $\sqrt{\text{W} \cdot \Omega} = \sqrt{\text{V}^2} = \text{V}$ is correct. In an ordinary $5\,\text{V}$ or $9\,\text{V}$ circuit the resistor is therefore in the safe range, even if the whole voltage were across the resistor.
 
 ## fy6-6-L2-04
 **Given:** power $P = 200\,\text{W}$, mass of the water $m = 0.80\,\text{kg}$, time $t = 5.0\,\text{min}$, $c = 4190\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}}$
@@ -97,7 +97,7 @@
 **Conversions:** Not needed: all quantities are in base units.
 **Substitution:** $R_{40} = \dfrac{(230\,\text{V})^2}{40\,\text{W}} = 1322.5\,\Omega$, $R_{100} = \dfrac{(230\,\text{V})^2}{100\,\text{W}} = 529\,\Omega$, $I = \dfrac{230\,\text{V}}{1851.5\,\Omega} = 0.1242\,\text{A}$ and $P_{40} = 1322.5\,\Omega \cdot (0.1242\,\text{A})^2 = 20.4\,\text{W}$
 **Answer:** $20\,\text{W}$, two significant figures like the power $40\,\text{W}$.
-**Reasonableness:** The power of the $100\,\text{W}$ bulb is $529\,\Omega \cdot (0.1242\,\text{A})^2 \approx 8.2\,\text{W}$, so in series the $40\,\text{W}$ bulb shines brighter, because its resistance is larger and the current is the same. The power of each is smaller than the marked one, because across each there is only a part of the mains voltage.
+**Reasonableness:** The power of the $100\,\text{W}$ bulb is $$529\,\Omega \cdot (0.1242\,\text{A})^2 \approx 8.2\,\text{W}$$, so in series the $40\,\text{W}$ bulb shines brighter, because its resistance is larger and the current is the same. The power of each is smaller than the marked one, because across each there is only a part of the mains voltage.
 
 ## fy6-6-L3-02
 **Given:** $20$ identical bulbs in series, mains voltage $U = 230\,\text{V}$, power of the string $P = 9.2\,\text{W}$
@@ -107,7 +107,7 @@
 **Conversions:** Not needed: $\text{V} : \text{A} = \Omega$.
 **Substitution:** $I = \dfrac{9.2\,\text{W}}{230\,\text{V}} = 0.040\,\text{A}$, $U_1 = \dfrac{230\,\text{V}}{20} = 11.5\,\text{V}$ and $R = \dfrac{11.5\,\text{V}}{0.040\,\text{A}} = 287.5\,\Omega$
 **Answer:** $2.9 \cdot 10^{2}\,\Omega$, that is about $290\,\Omega$, two significant figures like the power $9.2\,\text{W}$.
-**Reasonableness:** The power of one bulb is $9.2\,\text{W} : 20 = 0.46\,\text{W}$, and $(11.5\,\text{V})^2 : 287.5\,\Omega = 0.46\,\text{W}$ gives the same. The resistance of the whole string, $20 \cdot 287.5\,\Omega = 5750\,\Omega$, gives the current $230\,\text{V} : 5750\,\Omega = 0.040\,\text{A}$.
+**Reasonableness:** The power of one bulb is $9.2\,\text{W} : 20 = 0.46\,\text{W}$, and $$(11.5\,\text{V})^2 : 287.5\,\Omega = 0.46\,\text{W}$$ gives the same. The resistance of the whole string, $20 \cdot 287.5\,\Omega = 5750\,\Omega$, gives the current $230\,\text{V} : 5750\,\Omega = 0.040\,\text{A}$.
 
 ## fy6-6-L3-03
 **Given:** parallel connection, voltage $U = 12\,\text{V}$, $R_1 = 6.0\,\Omega$, total power $P = 36\,\text{W}$
@@ -183,7 +183,7 @@
 **Conversions:** $U' = 1.10 \cdot 230\,\text{V} = 253\,\text{V}$ and $1.4\,\text{kW} = 1400\,\text{W}$, $0.75\,\text{kW} = 750\,\text{W}$
 **Substitution:** $R_1 = \dfrac{(230\,\text{V})^2}{1100\,\text{W}} = 48.09\,\Omega$ and $R_2 = \dfrac{(230\,\text{V})^2}{420\,\text{W}} - 48.09\,\Omega = 125.95\,\Omega - 48.09\,\Omega = 77.86\,\Omega$. At the voltage $253\,\text{V}$: $P_1' = \dfrac{(253\,\text{V})^2}{48.09\,\Omega} = 1331\,\text{W}$ and $P_2' = \dfrac{(253\,\text{V})^2}{77.86\,\Omega} = 822\,\text{W}$
 **Answer:** $822\,\text{W}$ in the resistor $R_2$ (rounded $8.2 \cdot 10^{2}\,\text{W}$). The resistances of part a) are $R_1 = 48.1\,\Omega$ and $R_2 = 77.9\,\Omega$. The overloaded resistor is therefore $R_2$. The rounded result has two significant figures like the power $420\,\text{W}$ of the series connection. It exceeds the permitted power $750\,\text{W}$, whereas the power $1331\,\text{W}$ of the resistor $R_1$ stays below the limit $1400\,\text{W}$. More energy is transformed in the resistor $R_1$, but the power grows by the same factor in both ($1.10^2 = 1.21$ times), and the resistor $R_2$ is already near its limit: its power is $679\,\text{W} : 750\,\text{W} = 91\,\%$ of the permitted power, that of the resistor $R_1$ only $79\,\%$.
-**Reasonableness:** The measurement of the parallel connection agrees: the power of $R_2$ at the voltage $230\,\text{V}$ is $(230\,\text{V})^2 : 77.86\,\Omega = 679\,\text{W}$, so $1100\,\text{W} + 679\,\text{W} = 1779\,\text{W} \approx 1780\,\text{W}$. The growth factor of the power checks out: $679\,\text{W} \cdot 1.21 = 822\,\text{W}$ and $1100\,\text{W} \cdot 1.21 = 1331\,\text{W}$.
+**Reasonableness:** The measurement of the parallel connection agrees: the power of $R_2$ at the voltage $230\,\text{V}$ is $$(230\,\text{V})^2 : 77.86\,\Omega = 679\,\text{W}$$, so $1100\,\text{W} + 679\,\text{W} = 1779\,\text{W} \approx 1780\,\text{W}$. The growth factor of the power checks out: $679\,\text{W} \cdot 1.21 = 822\,\text{W}$ and $1100\,\text{W} \cdot 1.21 = 1331\,\text{W}$.
 
 ## fy6-6-L3-05
 **Given:** rated values of the heater $P_\text{n} = 2.0\,\text{kW}$ and $U_\text{n} = 230\,\text{V}$; voltage of the socket $U = 230\,\text{V}$; resistance of the extension cord: thin $R_\text{thin} = 2.4\,\Omega$, thick $R_\text{thick} = 0.71\,\Omega$; heater and cord in series
@@ -193,7 +193,7 @@
 **Conversions:** $P_\text{n} = 2.0\,\text{kW} = 2000\,\text{W}$
 **Substitution:** $R_\text{h} = \dfrac{(230\,\text{V})^2}{2000\,\text{W}} = 26.45\,\Omega$. Thin cord: $I = \dfrac{230\,\text{V}}{26.45\,\Omega + 2.4\,\Omega} = 7.97\,\text{A}$ and $P_\text{thin} = 2.4\,\Omega \cdot (7.97\,\text{A})^2 = 152.5\,\text{W}$. Thick cord: $I = \dfrac{230\,\text{V}}{26.45\,\Omega + 0.71\,\Omega} = 8.47\,\text{A}$ and $P_\text{thick} = 0.71\,\Omega \cdot (8.47\,\text{A})^2 = 50.9\,\text{W}$
 **Answer:** $152.5\,\text{W}$, rounded $1.5 \cdot 10^{2}\,\text{W}$ or about $150\,\text{W}$ in the thin cord and $51\,\text{W}$ in the thick one, two significant figures like the resistance $2.4\,\Omega$. The current is almost the same with both cords, $7.97\,\text{A}$ and $8.47\,\text{A}$, so the power $RI^2$ of the cord depends mainly on its resistance: the resistance of the thin cord is about $3.4$ times as large and the power about three times as large. A thin cord on a reel cools poorly, so it warms up. A loaded cord reel should be unwound, and the permitted current of the cord must not be exceeded. Less energy is transformed in the thick cord, so it stays cooler.
-**Reasonableness:** With the thin cord the power of the heater is $26.45\,\Omega \cdot (7.97\,\text{A})^2 = 1681\,\text{W}$, and together with the cord $1681\,\text{W} + 152.5\,\text{W} = 1834\,\text{W}$. This is the same as the power of the source $230\,\text{V} \cdot 7.97\,\text{A} = 1834\,\text{W}$. Because of the thin cord the heater thus gets about $1681\,\text{W}$ instead of the rated power $2000\,\text{W}$.
+**Reasonableness:** With the thin cord the power of the heater is $$26.45\,\Omega \cdot (7.97\,\text{A})^2 = 1681\,\text{W}$$, and together with the cord $$\begin{aligned} &1681\,\text{W} + 152.5\,\text{W} \\ &= 1834\,\text{W} \end{aligned}$$. This is the same as the power of the source $230\,\text{V} \cdot 7.97\,\text{A} = 1834\,\text{W}$. Because of the thin cord the heater thus gets about $1681\,\text{W}$ instead of the rated power $2000\,\text{W}$.
 
 ## fy6-6-L2-08
 **Find:** how the power of the resistor $R_1$ changes when an identical resistor $R_2$ is connected in series with it and the voltage of the source stays the same.
@@ -223,6 +223,6 @@ The ratio of the powers is $\tfrac{1.5\,\text{W}}{6.0\,\text{W}} = \tfrac{1}{4}$
 **Reading the graph:** The graph is horizontal in three parts: $P_1 = 2000\,\text{W}$ for $0$–$3.0\,\text{min}$, $P_2 = 1000\,\text{W}$ for $3.0$–$8.0\,\text{min}$ and $P_3 = 500\,\text{W}$ for $8.0$–$12\,\text{min}$. The durations of the steps are $t_1 = 3.0\,\text{min}$, $t_2 = 5.0\,\text{min}$ and $t_3 = 4.0\,\text{min}$.
 **Formula:** $E = E_1 + E_2 + E_3 = P_1t_1 + P_2t_2 + P_3t_3$
 **Conversions:** $t_1 = 3.0 \cdot 60\,\text{s} = 180\,\text{s}$, $t_2 = 5.0 \cdot 60\,\text{s} = 300\,\text{s}$, $t_3 = 4.0 \cdot 60\,\text{s} = 240\,\text{s}$
-**Substitution:** $E = 2000\,\text{W} \cdot 180\,\text{s} + 1000\,\text{W} \cdot 300\,\text{s} + 500\,\text{W} \cdot 240\,\text{s} = 360\,\text{kJ} + 300\,\text{kJ} + 120\,\text{kJ} = 780\,\text{kJ}$
+**Substitution:** $$\begin{aligned} E &= 2000\,\text{W} \cdot 180\,\text{s} + 1000\,\text{W} \\ &\cdot 300\,\text{s} + 500\,\text{W} \cdot 240\,\text{s} \\ &= 360\,\text{kJ} + 300\,\text{kJ} + 120\,\text{kJ} \\ &= 780\,\text{kJ} \end{aligned}$$
 **Answer:** $780\,\text{kJ}$, three significant figures, because the values of the steps are read exactly from the gridlines.
 **Reasonableness:** The average power is $780\,\text{kJ} : 720\,\text{s} \approx 1.08\,\text{kW}$, which lies between the largest and smallest power ($0.5$–$2.0\,\text{kW}$). The energy is also the area under the line of the graph.

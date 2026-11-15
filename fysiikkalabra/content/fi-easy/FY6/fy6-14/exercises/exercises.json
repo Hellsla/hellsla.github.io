@@ -247,7 +247,7 @@
     {
       "id": "fy6-14-L2-07",
       "level": 2,
-      "text": "Opiskelija mitoittaa sinisen LEDin etuvastuksen. Pariston jännite on $9{,}0\\,\\text{V}$ ja LEDin jännite $3{,}2\\,\\text{V}$. Virraksi halutaan $15\\,\\text{mA}$.\n\nOpiskelijan ratkaisu: ”Vastuksen yli on pariston jännite, joten $R = U : I = 9{,}0\\,\\text{V} : 0{,}015\\,\\text{A} = 600\\,\\Omega$.”\n\na) Mikä virhe opiskelijan ratkaisussa on?\n\nb) Laske etuvastus oikein. Vastaa kohdan b tulos ohmeina.",
+      "text": "Opiskelija mitoittaa sinisen LEDin etuvastuksen. Pariston jännite on $9{,}0\\,\\text{V}$ ja LEDin jännite $3{,}2\\,\\text{V}$. Virraksi halutaan $15\\,\\text{mA}$.\n\nOpiskelijan ratkaisu: ”Vastuksen yli on pariston jännite, joten $$\\begin{aligned} R &= U : I \\\\ &= 9{,}0\\,\\text{V} : 0{,}015\\,\\text{A} \\\\ &= 600\\,\\Omega \\end{aligned}$$.”\n\na) Mikä virhe opiskelijan ratkaisussa on?\n\nb) Laske etuvastus oikein. Vastaa kohdan b tulos ohmeina.",
       "kind": [
         "error"
       ],

@@ -57,7 +57,7 @@
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{s} = \dfrac{4{,}30\,\text{V} - 3{,}70\,\text{V}}{0{,}80\,\text{A} - 0{,}20\,\text{A}} = \dfrac{0{,}60\,\text{V}}{0{,}60\,\text{A}} = 1{,}0\,\Omega$
 **Vastaus:** $1{,}0\,\Omega$. Vastauksessa on kaksi merkitsevää numeroa, kuten erotuksissa $0{,}60\,\text{V}$ ja $0{,}60\,\text{A}$.
-**Järkevyys:** Lähdejännite on $E = 4{,}30\,\text{V} + 1{,}0\,\Omega \cdot 0{,}20\,\text{A} = 4{,}50\,\text{V}$. Toinen mittaus antaa saman: $3{,}70\,\text{V} + 1{,}0\,\Omega \cdot 0{,}80\,\text{A} = 4{,}50\,\text{V}$. Kyseessä voi olla litteä $4{,}5\,\text{V}$:n paristo. Sen sisäinen resistanssi on ohmin luokkaa.
+**Järkevyys:** Lähdejännite on $E = 4{,}30\,\text{V} + 1{,}0\,\Omega \cdot 0{,}20\,\text{A} = 4{,}50\,\text{V}$. Toinen mittaus antaa saman: $$\begin{aligned} &3{,}70\,\text{V} + 1{,}0\,\Omega \cdot 0{,}80\,\text{A} \\ &= 4{,}50\,\text{V} \end{aligned}$$. Kyseessä voi olla litteä $4{,}5\,\text{V}$:n paristo. Sen sisäinen resistanssi on ohmin luokkaa.
 
 ## fy6-8-L2-02
 **Annettu:** lähdejännite $E = 6{,}0\,\text{V}$, sisäinen resistanssi $R_\text{s} = 0{,}50\,\Omega$, kuormitusvastus $R = 5{,}5\,\Omega$
@@ -97,7 +97,7 @@
 **Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $R_\text{s} = \dfrac{0{,}40\,\Omega}{2} = 0{,}20\,\Omega$, $I = \dfrac{1{,}5\,\text{V}}{0{,}80\,\Omega + 0{,}20\,\Omega} = 1{,}5\,\text{A}$ ja $I_1 = \dfrac{1{,}5\,\text{A}}{2} = 0{,}75\,\text{A}$
 **Vastaus:** $0{,}75\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, kuten lähtötiedoissa.
-**Järkevyys:** Napajännite on $0{,}80\,\Omega \cdot 1{,}5\,\text{A} = 1{,}2\,\text{V}$. Kunkin pariston yli tämä on $1{,}5\,\text{V} - 0{,}40\,\Omega \cdot 0{,}75\,\text{A} = 1{,}2\,\text{V}$. Molemmat haarat antavat siis saman jännitteen. Yksi paristo yksinään antaisi vain $1{,}5\,\text{V} : 1{,}20\,\Omega = 1{,}25\,\text{A}$, ja sen pitäisi antaa koko virta itse.
+**Järkevyys:** Napajännite on $0{,}80\,\Omega \cdot 1{,}5\,\text{A} = 1{,}2\,\text{V}$. Kunkin pariston yli tämä on $$\begin{aligned} &1{,}5\,\text{V} - 0{,}40\,\Omega \cdot 0{,}75\,\text{A} \\ &= 1{,}2\,\text{V} \end{aligned}$$. Molemmat haarat antavat siis saman jännitteen. Yksi paristo yksinään antaisi vain $1{,}5\,\text{V} : 1{,}20\,\Omega = 1{,}25\,\text{A}$, ja sen pitäisi antaa koko virta itse.
 
 ## fy6-8-L3-02
 **Annettu:** kolme paristoa sarjassa, yksi väärin päin. Kunkin $E_1 = 1{,}5\,\text{V}$ ja $R_{\text{s}1} = 0{,}25\,\Omega$. Lampun resistanssi on $R = 4{,}0\,\Omega$.
@@ -117,7 +117,7 @@
 **Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $I_1 = \dfrac{1{,}20\,\text{V}}{2{,}0\,\Omega} = 0{,}60\,\text{A}$, $I_2 = \dfrac{1{,}44\,\text{V}}{6{,}0\,\Omega} = 0{,}24\,\text{A}$, $R_\text{s} = \dfrac{1{,}44\,\text{V} - 1{,}20\,\text{V}}{0{,}60\,\text{A} - 0{,}24\,\text{A}} = 0{,}667\,\Omega$ ja $E = 1{,}20\,\text{V} + 0{,}667\,\Omega \cdot 0{,}60\,\text{A} = 1{,}60\,\text{V}$
 **Vastaus:** $1{,}60\,\text{V}$. Vastaus on annettu sadasosavoltin tarkkuudella, kuten mitatut napajännitteet.
-**Järkevyys:** Toinen mittaus antaa saman: $1{,}44\,\text{V} + 0{,}667\,\Omega \cdot 0{,}24\,\text{A} = 1{,}60\,\text{V}$. Lähdejännite on suurempi kuin kumpikin napajännite, kuten pitääkin. Lisäksi $1{,}60\,\text{V}$ on tyypillinen uuden AA-pariston lähdejännite.
+**Järkevyys:** Toinen mittaus antaa saman: $$\begin{aligned} &1{,}44\,\text{V} + 0{,}667\,\Omega \cdot 0{,}24\,\text{A} \\ &= 1{,}60\,\text{V} \end{aligned}$$. Lähdejännite on suurempi kuin kumpikin napajännite, kuten pitääkin. Lisäksi $1{,}60\,\text{V}$ on tyypillinen uuden AA-pariston lähdejännite.
 
 ## fy6-8-L1-06
 **Kysytty:** milloin pariston napajännite on yhtä suuri kuin sen lähdejännite.
@@ -148,7 +148,7 @@
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{s} = \dfrac{1{,}54\,\text{V} - 0{,}87\,\text{V}}{1{,}20\,\text{A} - 0\,\text{A}} = \dfrac{0{,}67\,\text{V}}{1{,}20\,\text{A}} = 0{,}558\,\Omega$
 **Vastaus:** a) $E \approx 1{,}54\,\text{V}$. b) $R_\text{s} \approx 0{,}56\,\Omega$. Vastauksessa on kaksi merkitsevää numeroa, koska suora sovitetaan silmämääräisesti. Silmämääräinen sovitus vaihtelee: kulmakerroin voi muuttua noin $\pm 0{,}03\,\Omega$. Arvo väliltä $0{,}53\text{–}0{,}59\,\Omega$ on siis hyvä vastaus.
-**Järkevyys:** Mallin mukaan virralla $0{,}60\,\text{A}$ napajännite on $1{,}54\,\text{V} - 0{,}56\,\Omega \cdot 0{,}60\,\text{A} = 1{,}20\,\text{V}$. Se on taulukon kolmas arvo. Lähdejännite on suurempi kuin yksikään mitattu napajännite, kuten pitää. Oikosulkuvirta olisi $1{,}54\,\text{V} : 0{,}56\,\Omega \approx 2{,}8\,\text{A}$. Se on suoran jatke mittausalueen ulkopuolelle, eikä sitä mitata.
+**Järkevyys:** Mallin mukaan virralla $0{,}60\,\text{A}$ napajännite on $$\begin{aligned} &1{,}54\,\text{V} - 0{,}56\,\Omega \cdot 0{,}60\,\text{A} \\ &= 1{,}20\,\text{V} \end{aligned}$$. Se on taulukon kolmas arvo. Lähdejännite on suurempi kuin yksikään mitattu napajännite, kuten pitää. Oikosulkuvirta olisi $1{,}54\,\text{V} : 0{,}56\,\Omega \approx 2{,}8\,\text{A}$. Se on suoran jatke mittausalueen ulkopuolelle, eikä sitä mitata.
 
 ## fy6-8-L2-06
 **Annettu:** taulukon mittauspisteet $(I;\ U_\text{A};\ U_\text{B})$ virroilla $0{,}10\,\text{A}$ … $1{,}00\,\text{A}$. A-pariston napajännite pienenee arvosta $1{,}55\,\text{V}$ arvoon $1{,}10\,\text{V}$. B-pariston napajännite pienenee arvosta $1{,}47\,\text{V}$ arvoon $1{,}27\,\text{V}$ (esimerkkiaineisto).
@@ -159,7 +159,7 @@
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Sijoitus:** $I = \dfrac{1{,}60\,\text{V} - 1{,}49\,\text{V}}{0{,}50\,\Omega - 0{,}22\,\Omega} = \dfrac{0{,}11\,\text{V}}{0{,}28\,\Omega} = 0{,}39\,\text{A}$
 **Vastaus:** a) Noin $0{,}40\,\text{A}$. Kuvaajan lukeminen ja laskenta antavat arvon väliltä $0{,}35\text{–}0{,}45\,\text{A}$, koska suorien sovitus vaihtelee. b) Suurella virralla parempi on paristo B. Sen sisäinen resistanssi $0{,}22\,\Omega$ on pienempi kuin pariston A $0{,}50\,\Omega$, joten sen napajännite pienenee virran kasvaessa loivemmin. Pariston A lähdejännite on suurempi. Siksi pienellä virralla, alle $0{,}4\,\text{A}$, paristo A antaa korkeamman napajännitteen. Virralla $1{,}00\,\text{A}$ napajännite on paristolla A $1{,}10\,\text{V}$ ja paristolla B $1{,}27\,\text{V}$.
-**Järkevyys:** Virralla $0{,}40\,\text{A}$ pariston A napajännite on $1{,}60\,\text{V} - 0{,}50\,\Omega \cdot 0{,}40\,\text{A} = 1{,}40\,\text{V}$. Pariston B napajännite on $1{,}49\,\text{V} - 0{,}22\,\Omega \cdot 0{,}40\,\text{A} = 1{,}40\,\text{V}$. Tämä on taulukon rivien $0{,}30\,\text{A}$ ja $0{,}50\,\text{A}$ välissä, kuten pitää. Oikosulkuvirta on paristolla B $1{,}49\,\text{V} : 0{,}22\,\Omega \approx 6{,}8\,\text{A}$ ja paristolla A $1{,}60\,\text{V} : 0{,}50\,\Omega = 3{,}2\,\text{A}$. B pystyy siis antamaan suuremman virran.
+**Järkevyys:** Virralla $0{,}40\,\text{A}$ pariston A napajännite on $$\begin{aligned} &1{,}60\,\text{V} - 0{,}50\,\Omega \cdot 0{,}40\,\text{A} \\ &= 1{,}40\,\text{V} \end{aligned}$$. Pariston B napajännite on $$\begin{aligned} &1{,}49\,\text{V} - 0{,}22\,\Omega \cdot 0{,}40\,\text{A} \\ &= 1{,}40\,\text{V} \end{aligned}$$. Tämä on taulukon rivien $0{,}30\,\text{A}$ ja $0{,}50\,\text{A}$ välissä, kuten pitää. Oikosulkuvirta on paristolla B $1{,}49\,\text{V} : 0{,}22\,\Omega \approx 6{,}8\,\text{A}$ ja paristolla A $1{,}60\,\text{V} : 0{,}50\,\Omega = 3{,}2\,\text{A}$. B pystyy siis antamaan suuremman virran.
 
 ## fy6-8-L2-07
 **Kysytty:** mikä väite oppilaan päätelmästä, että sisäinen resistanssi on nolla, on oikein.
@@ -190,7 +190,7 @@ c) Teho on suurin, noin $0{,}53\,\text{W}$, kuormalla $1{,}1\,\Omega$. Se on yht
 ## fy6-8-L3-05
 **Annettu:** taulukon mittauspisteet $(I;\ U)$ virroilla $0{,}50\,\text{A}$ … $3{,}00\,\text{A}$. Jännite pienenee arvosta $5{,}56\,\text{V}$ arvoon $2{,}79\,\text{V}$ (esimerkkiaineisto). Johtimien yhteenlaskettu resistanssi on $R_\text{j} = 0{,}30\,\Omega$. Oppilaan kulmakerroin on $1{,}1\,\Omega$ ja oikosulkuvirta $5{,}6\,\text{A}$.
 **Kysytty:** a) lähdejännite $E$; b) oppilaan virhe ja paristoryhmän oikea sisäinen resistanssi; c) paristoryhmän oikea oikosulkuvirta $I_\text{k}$ ampeereina
-**Periaate:** Jännitemittari on kuormitusvastuksen navoissa. Se näyttää siksi jännitteen, joka on pienempi kuin paristoryhmän napajännite. Erotus on johtimien jännitehäviö $R_\text{j} I$: $U = E - R_\text{s} I - R_\text{j} I = E - (R_\text{s} + R_\text{j}) I$. Kuvaajan kulmakerroin on siis $-(R_\text{s} + R_\text{j})$, ja oppilaan luku sisältää johtimien resistanssin. Paristoryhmän oma sisäinen resistanssi saadaan vähentämällä $R_\text{j}$. Oikosulkuvirta lasketaan siitä.
+**Periaate:** Jännitemittari on kuormitusvastuksen navoissa. Se näyttää siksi jännitteen, joka on pienempi kuin paristoryhmän napajännite. Erotus on johtimien jännitehäviö $R_\text{j} I$: $$\begin{aligned} U &= E - R_\text{s} I - R_\text{j} I \\ &= E - (R_\text{s} + R_\text{j}) I \end{aligned}$$. Kuvaajan kulmakerroin on siis $-(R_\text{s} + R_\text{j})$, ja oppilaan luku sisältää johtimien resistanssin. Paristoryhmän oma sisäinen resistanssi saadaan vähentämällä $R_\text{j}$. Oikosulkuvirta lasketaan siitä.
 **Kuvaajan lukeminen:** Sovitettu suora kulkee pisteiden $(0{,}50\,\text{A};\ 5{,}56\,\text{V})$ ja $(3{,}00\,\text{A};\ 2{,}80\,\text{V})$ kautta. Pisteet jäävät suoran molemmille puolille. Suora leikkaa pystyakselin kohdassa $6{,}11\,\text{V}$. Se on lähdejännite, koska kun virta on nolla, johtimissa ei ole jännitehäviötä.
 **Kaava:** $E = U_1 + (R_\text{s} + R_\text{j}) I_1$; $R_\text{s} + R_\text{j} = \dfrac{U_1 - U_2}{I_2 - I_1}$; $R_\text{s} = (R_\text{s} + R_\text{j}) - R_\text{j}$; $I_\text{k} = \dfrac{E}{R_\text{s}}$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
@@ -201,7 +201,7 @@ b) $R_\text{s} = 1{,}10\,\Omega - 0{,}30\,\Omega = 0{,}80\,\Omega$.
 c) $I_\text{k} = \dfrac{6{,}11\,\text{V}}{0{,}80\,\Omega} = 7{,}64\,\text{A}$
 **Vastaus:** Vastauslaatikkoon: c) $7{,}6\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, kuten johtimien resistanssissa $0{,}30\,\Omega$. Mittaus olisi pitänyt tehdä kytkemällä jännitemittari suoraan paristoryhmän napoihin. Silloin johtimien jännitehäviö ei sisälly mitattuun jännitteeseen.
 Muut kohdat: a) Paristoryhmän lähdejännite on $E \approx 6{,}11\,\text{V}$. b) Oppilaan sisäinen resistanssi on liian suuri, koska kulmakerroin sisältää johtimien resistanssin. Paristoryhmän sisäinen resistanssi on $0{,}80\,\Omega$. Oppilaan oikosulkuvirta $5{,}6\,\text{A}$ on liian pieni, koska hän jakoi lähdejännitteen liian suurella resistanssilla.
-**Järkevyys:** Mallin mukaan virralla $2{,}00\,\text{A}$ paristoryhmän napajännite on $6{,}11\,\text{V} - 0{,}80\,\Omega \cdot 2{,}00\,\text{A} = 4{,}51\,\text{V}$. Johtimien jälkeen jännite on $4{,}51\,\text{V} - 0{,}30\,\Omega \cdot 2{,}00\,\text{A} = 3{,}91\,\text{V}$. Se on taulukon neljäs arvo. Oikea oikosulkuvirta on suurempi kuin oppilaan, koska paristoryhmän sisäinen resistanssi on pienempi kuin oppilaan saama $1{,}1\,\Omega$. Jos navat yhdistettäisiin johtimilla, virta olisi pienempi: $6{,}11\,\text{V} : 1{,}10\,\Omega \approx 5{,}6\,\text{A}$. Se on oppilaan luku, mutta se on virta johtimien kanssa eikä paristoryhmän oikosulkuvirta.
+**Järkevyys:** Mallin mukaan virralla $2{,}00\,\text{A}$ paristoryhmän napajännite on $$\begin{aligned} &6{,}11\,\text{V} - 0{,}80\,\Omega \cdot 2{,}00\,\text{A} \\ &= 4{,}51\,\text{V} \end{aligned}$$. Johtimien jälkeen jännite on $$\begin{aligned} &4{,}51\,\text{V} - 0{,}30\,\Omega \cdot 2{,}00\,\text{A} \\ &= 3{,}91\,\text{V} \end{aligned}$$. Se on taulukon neljäs arvo. Oikea oikosulkuvirta on suurempi kuin oppilaan, koska paristoryhmän sisäinen resistanssi on pienempi kuin oppilaan saama $1{,}1\,\Omega$. Jos navat yhdistettäisiin johtimilla, virta olisi pienempi: $6{,}11\,\text{V} : 1{,}10\,\Omega \approx 5{,}6\,\text{A}$. Se on oppilaan luku, mutta se on virta johtimien kanssa eikä paristoryhmän oikosulkuvirta.
 
 ## fy6-8-L2-08
 **Kysytty:** mikä johtopäätös pariston lähdejännitteestä $E$ ja sisäisestä resistanssista $R_\text{s}$ on taulukon mittausten perusteella perusteltu.
@@ -238,4 +238,4 @@ $$R_\text{s} = \frac{U_1 - U_2}{I_2 - I_1}$$
 **Muunnokset:** Ei tarvita: jännite on voltteina ja virta ampeereina.
 **Sijoitus:** $R_\text{s} = \dfrac{11\,\text{V} - 7\,\text{V}}{250\,\text{A} - 50\,\text{A}} = \dfrac{4\,\text{V}}{200\,\text{A}} = 0{,}020\,\Omega$
 **Vastaus:** $0{,}020\,\Omega$ eli $20\,\text{m}\Omega$. Vastauksessa on kaksi merkitsevää numeroa, koska arvot luetaan ruudukolta.
-**Järkevyys:** Auton akun sisäinen resistanssi on hyvin pieni, jotta akku jaksaa antaa satojen ampeerien virran. Tarkistetaan kolmannella pisteellä $(150\,\text{A};\ 9\,\text{V})$: jännite laskee aina $2\,\text{V}$, kun virta kasvaa $100\,\text{A}$, joten $2\,\text{V} : 100\,\text{A} = 0{,}020\,\Omega$. Lähdejännite olisi $U + R_\text{s} I = 11\,\text{V} + 0{,}020\,\Omega \cdot 50\,\text{A} = 12\,\text{V}$. Se on tavallisen lyijyakun lähdejännite.
+**Järkevyys:** Auton akun sisäinen resistanssi on hyvin pieni, jotta akku jaksaa antaa satojen ampeerien virran. Tarkistetaan kolmannella pisteellä $(150\,\text{A};\ 9\,\text{V})$: jännite laskee aina $2\,\text{V}$, kun virta kasvaa $100\,\text{A}$, joten $2\,\text{V} : 100\,\text{A} = 0{,}020\,\Omega$. Lähdejännite olisi $$\begin{aligned} &U + R_\text{s} I \\ &= 11\,\text{V} + 0{,}020\,\Omega \cdot 50\,\text{A} \\ &= 12\,\text{V} \end{aligned}$$. Se on tavallisen lyijyakun lähdejännite.

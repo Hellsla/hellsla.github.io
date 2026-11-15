@@ -1,7 +1,7 @@
 [
   {
     "q": "Elektroni siirtyy kohdasta, jonka potentiaali on $20\\,\\text{V}$, kohtaan, jonka potentiaali on $70\\,\\text{V}$. Kasvaako vai pieneneekö sen potentiaalienergia, ja kuinka paljon elektronivoltteina?",
-    "a": "Elektronin potentiaalienergia on $-eV$, joten se pienenee, kun potentiaali kasvaa: muutos on $-e \\cdot (70\\,\\text{V} - 20\\,\\text{V}) = -50\\,\\text{eV}$."
+    "a": "Elektronin potentiaalienergia on $-eV$, joten se pienenee, kun potentiaali kasvaa: muutos on $$\\begin{aligned} &-e \\cdot (70\\,\\text{V} - 20\\,\\text{V}) \\\\ &= -50\\,\\text{eV} \\end{aligned}$$."
   },
   {
     "q": "Kuinka paljon on $3{,}0\\,\\text{keV}$ jouleina?",

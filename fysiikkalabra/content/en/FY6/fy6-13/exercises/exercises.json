@@ -129,7 +129,7 @@
         {
           "text": "The charges of the plates are $+1.2\\,\\text{mC}$ and $-1.2\\,\\text{mC}$, so the total charge of the capacitor is zero.",
           "true": true,
-          "feedback": "Correct: $Q = CU$, that is, $Q = 100\\,\\mu\\text{F} \\cdot 12\\,\\text{V} = 1.2\\,\\text{mC}$. The battery only moves charge from one plate to the other, so the charges of the plates are equal and opposite."
+          "feedback": "Correct: $Q = CU$, that is, $$\\begin{aligned} Q &= 100\\,\\mu\\text{F} \\cdot 12\\,\\text{V} \\\\ &= 1.2\\,\\text{mC} \\end{aligned}$$. The battery only moves charge from one plate to the other, so the charges of the plates are equal and opposite."
         },
         {
           "text": "After charging has ended, current passes through the insulator between the plates in the same way as in conductors.",

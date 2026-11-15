@@ -172,7 +172,7 @@
 ## Ydinajatus
 
 ### Akku, teho ja latausaika
-Sähköauton akku on suuri litiumioniakku (luku *Akut ja latauspiiri*). Tässä luvussa käytetään esimerkkiautoa, jonka akun nimellisjännite on $400\,\text{V}$ ja kapasiteetti $160\,\text{Ah}$. Akun energia on silloin $W = UQ = 400\,\text{V} \cdot 160\,\text{Ah} = 64\,\text{kWh}$, ja se riittää noin $350\,\text{km}$:n ajoon, kun auto käyttää $18\,\text{kWh}$ sadalla kilometrillä. Akkuun mahtuu siis yhtä paljon energiaa kuin $6\,\text{kW}$:n kiuas käyttää yli kymmenessä tunnissa.
+Sähköauton akku on suuri litiumioniakku (luku *Akut ja latauspiiri*). Tässä luvussa käytetään esimerkkiautoa, jonka akun nimellisjännite on $400\,\text{V}$ ja kapasiteetti $160\,\text{Ah}$. Akun energia on silloin $$\begin{aligned} W &= UQ \\ &= 400\,\text{V} \cdot 160\,\text{Ah} \\ &= 64\,\text{kWh} \end{aligned}$$, ja se riittää noin $350\,\text{km}$:n ajoon, kun auto käyttää $18\,\text{kWh}$ sadalla kilometrillä. Akkuun mahtuu siis yhtä paljon energiaa kuin $6\,\text{kW}$:n kiuas käyttää yli kymmenessä tunnissa.
 
 Latausaika riippuu siitä, kuinka paljon energiaa akkuun pitää siirtää ja kuinka suurella teholla se tehdään. Latauksessa osa verkosta otetusta energiasta ei päädy akkuun, vaan muuttuu auton laturin, johtojen ja akun sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Kotilatauksen hyötysuhde on tyypillisesti noin $80\text{–}95\,\%$, ja se jää aina alle $100\,\%$. Verkosta on siksi otettava enemmän energiaa kuin akkuun varastoituu.
 
@@ -455,7 +455,7 @@ Esimerkkiauton akun energia on $64\,\text{kWh}$. Akku ladataan yöllä varaustas
 
 <!-- vaihe -->
 
-**Tulos.** Lataus kestää noin $3{,}9\,\text{h}$ ja maksaa noin $6{,}4\,\text{€}$. Verkosta otetaan $38{,}4\,\text{kWh} : 0{,}90 \approx 42{,}7\,\text{kWh}$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla kuten hyötysuhde $0{,}90$ ja hinta $15\,\text{snt/kWh}$.
+**Tulos.** Lataus kestää noin $3{,}9\,\text{h}$ ja maksaa noin $6{,}4\,\text{€}$. Verkosta otetaan $$38{,}4\,\text{kWh} : 0{,}90 \approx 42{,}7\,\text{kWh}$$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla kuten hyötysuhde $0{,}90$ ja hinta $15\,\text{snt/kWh}$.
 
 <!-- vaihe -->
 

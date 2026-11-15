@@ -172,7 +172,7 @@
 ## Ydinajatus
 
 ### Akku, teho ja latausaika
-Sähköauton akku on suuri litiumioniakku (luku *Akut ja latauspiiri*). Tässä luvussa käytetään esimerkkiautoa. Sen akun nimellisjännite on $400\,\text{V}$ ja kapasiteetti $160\,\text{Ah}$. Nimellisjännite on jännite, jonka akku yleensä antaa. Akun energia on silloin $W = UQ = 400\,\text{V} \cdot 160\,\text{Ah} = 64\,\text{kWh}$. Energia riittää noin $350\,\text{km}$:n ajoon, kun auto käyttää $18\,\text{kWh}$ sadalla kilometrillä. Akkuun mahtuu siis yhtä paljon energiaa kuin $6\,\text{kW}$:n kiuas käyttää yli kymmenessä tunnissa.
+Sähköauton akku on suuri litiumioniakku (luku *Akut ja latauspiiri*). Tässä luvussa käytetään esimerkkiautoa. Sen akun nimellisjännite on $400\,\text{V}$ ja kapasiteetti $160\,\text{Ah}$. Nimellisjännite on jännite, jonka akku yleensä antaa. Akun energia on silloin $$\begin{aligned} W &= UQ \\ &= 400\,\text{V} \cdot 160\,\text{Ah} \\ &= 64\,\text{kWh} \end{aligned}$$. Energia riittää noin $350\,\text{km}$:n ajoon, kun auto käyttää $18\,\text{kWh}$ sadalla kilometrillä. Akkuun mahtuu siis yhtä paljon energiaa kuin $6\,\text{kW}$:n kiuas käyttää yli kymmenessä tunnissa.
 
 Latausaika riippuu kahdesta asiasta. Ensimmäinen on se, kuinka paljon energiaa akkuun pitää siirtää. Toinen on se, kuinka suurella teholla energia siirretään. Latauksessa osa verkosta otetusta energiasta ei päädy akkuun. Se muuttuu auton laturin, johtojen ja akun sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Kotilatauksen hyötysuhde on tyypillisesti noin $80\text{–}95\,\%$. Hyötysuhde kertoo, kuinka suuri osa verkosta otetusta energiasta päätyy akkuun. Se jää aina alle $100\,\%$. Verkosta on siksi otettava enemmän energiaa kuin akkuun varastoituu.
 
@@ -457,7 +457,7 @@ Esimerkkiauton akun energia on $64\,\text{kWh}$. Akku ladataan yöllä varaustas
 
 <!-- vaihe -->
 
-**Tulos.** Lataus kestää noin $3{,}9\,\text{h}$ ja maksaa noin $6{,}4\,\text{€}$. Verkosta otetaan $38{,}4\,\text{kWh} : 0{,}90 \approx 42{,}7\,\text{kWh}$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla, kuten hyötysuhde $0{,}90$ ja hinta $15\,\text{snt/kWh}$.
+**Tulos.** Lataus kestää noin $3{,}9\,\text{h}$ ja maksaa noin $6{,}4\,\text{€}$. Verkosta otetaan $$38{,}4\,\text{kWh} : 0{,}90 \approx 42{,}7\,\text{kWh}$$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla, kuten hyötysuhde $0{,}90$ ja hinta $15\,\text{snt/kWh}$.
 
 <!-- vaihe -->
 

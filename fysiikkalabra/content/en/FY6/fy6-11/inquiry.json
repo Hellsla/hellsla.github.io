@@ -227,7 +227,7 @@
         "hints": [
           "Divide the force of each row by the magnitude of the charge in the same row. What do you notice?",
           "First convert the units: $1\\,\\mu\\text{N} = 10^{-6}\\,\\text{N}$ and $1\\,\\text{nC} = 10^{-9}\\,\\text{C}$.",
-          "For example, the row $q = 3\\,\\text{nC}$ gives $E = 150 \\cdot 10^{-6}\\,\\text{N} : (3 \\cdot 10^{-9}\\,\\text{C})$."
+          "For example, the row $q = 3\\,\\text{nC}$ gives $$\\begin{aligned} E &= 150 \\cdot 10^{-6}\\,\\text{N} \\\\ &: (3 \\cdot 10^{-9}\\,\\text{C}) \\end{aligned}$$."
         ],
         "mistakes": [
           {
@@ -313,7 +313,7 @@
             "feedback": "This is the voltage in kilovolts. Answer in volts: $2.0\\,\\text{kV} = 2000\\,\\text{V}$."
           }
         ],
-        "solution": "**Given:** readings of the model with the voltage $U = 2.0\\,\\text{kV}$ and the charge $q = 2.0\\,\\text{nC}$: at the distance $d = 2.0\\,\\text{cm}$ the force $F = 200\\,\\mu\\text{N}$ and at the distance $d = 6.0\\,\\text{cm}$ the force $F = 66.7\\,\\mu\\text{N}$\n\n**Find:** the product $Ed$ in volts\n\n**Principle:** At each distance the electric field strength is obtained from the force and the charge, $E = F : q$. If the electric field strength is $E = U : d$, the product $Ed$ is the same in every row and equal to the voltage of the plates.\n\n**Formula:** $E = \\dfrac{F}{q}$, so $Ed = \\dfrac{Fd}{q}$\n\n**Conversions:** $F = 200 \\cdot 10^{-6}\\,\\text{N}$, $q = 2.0 \\cdot 10^{-9}\\,\\text{C}$ and $d = 2.0\\,\\text{cm} = 0.020\\,\\text{m}$.\n\n**Substitution:** $E = \\dfrac{200 \\cdot 10^{-6}\\,\\text{N}}{2.0 \\cdot 10^{-9}\\,\\text{C}} = 1.0 \\cdot 10^{5}\\,\\text{N/C}$ and $Ed = 1.0 \\cdot 10^{5}\\,\\text{N/C} \\cdot 0.020\\,\\text{m} = 2000\\,\\text{V}$\n\n**Answer:** $2.0 \\cdot 10^{3}\\,\\text{V}$ or $2000\\,\\text{V}$, two significant figures like the charge and the distance.\n\n**Reasonableness:** The row $d = 6.0\\,\\text{cm}$ gives the same: $66.7 \\cdot 10^{-6}\\,\\text{N} \\cdot 0.060\\,\\text{m} : (2.0 \\cdot 10^{-9}\\,\\text{C}) = 2000\\,\\text{V}$. The product is the voltage of the plates $2.0\\,\\text{kV}$, so $E = U : d$. Units: $\\text{N} \\cdot \\text{m} : \\text{C} = \\text{J/C} = \\text{V}$."
+        "solution": "**Given:** readings of the model with the voltage $U = 2.0\\,\\text{kV}$ and the charge $q = 2.0\\,\\text{nC}$: at the distance $d = 2.0\\,\\text{cm}$ the force $F = 200\\,\\mu\\text{N}$ and at the distance $d = 6.0\\,\\text{cm}$ the force $F = 66.7\\,\\mu\\text{N}$\n\n**Find:** the product $Ed$ in volts\n\n**Principle:** At each distance the electric field strength is obtained from the force and the charge, $E = F : q$. If the electric field strength is $E = U : d$, the product $Ed$ is the same in every row and equal to the voltage of the plates.\n\n**Formula:** $E = \\dfrac{F}{q}$, so $Ed = \\dfrac{Fd}{q}$\n\n**Conversions:** $F = 200 \\cdot 10^{-6}\\,\\text{N}$, $q = 2.0 \\cdot 10^{-9}\\,\\text{C}$ and $d = 2.0\\,\\text{cm} = 0.020\\,\\text{m}$.\n\n**Substitution:** $E = \\dfrac{200 \\cdot 10^{-6}\\,\\text{N}}{2.0 \\cdot 10^{-9}\\,\\text{C}} = 1.0 \\cdot 10^{5}\\,\\text{N/C}$ and $$\\begin{aligned} Ed &= 1.0 \\cdot 10^{5}\\,\\text{N/C} \\cdot 0.020\\,\\text{m} \\\\ &= 2000\\,\\text{V} \\end{aligned}$$\n\n**Answer:** $2.0 \\cdot 10^{3}\\,\\text{V}$ or $2000\\,\\text{V}$, two significant figures like the charge and the distance.\n\n**Reasonableness:** The row $d = 6.0\\,\\text{cm}$ gives the same: $$\\begin{aligned} &66.7 \\cdot 10^{-6}\\,\\text{N} \\cdot 0.060\\,\\text{m} \\\\ &: (2.0 \\cdot 10^{-9}\\,\\text{C}) \\\\ &= 2000\\,\\text{V} \\end{aligned}$$. The product is the voltage of the plates $2.0\\,\\text{kV}$, so $E = U : d$. Units: $\\text{N} \\cdot \\text{m} : \\text{C} = \\text{J/C} = \\text{V}$."
       }
     },
     {
@@ -426,7 +426,7 @@
         {
           "text": "The distance has not been converted to metres: the correct result is $4.0 \\cdot 10^{4}\\,\\text{V/m}$.",
           "correct": true,
-          "feedback": "Correct. In the unit $\\text{V/m}$ the distance is in metres: $d = 3.0\\,\\text{cm} = 0.030\\,\\text{m}$, so $E = 1200\\,\\text{V} : 0.030\\,\\text{m} = 4.0 \\cdot 10^{4}\\,\\text{V/m}$. The error shows in the units: the student's divisor has no unit at all, so the result cannot be $\\text{V/m}$."
+          "feedback": "Correct. In the unit $\\text{V/m}$ the distance is in metres: $d = 3.0\\,\\text{cm} = 0.030\\,\\text{m}$, so $$\\begin{aligned} E &= 1200\\,\\text{V} : 0.030\\,\\text{m} \\\\ &= 4.0 \\cdot 10^{4}\\,\\text{V/m} \\end{aligned}$$. The error shows in the units: the student's divisor has no unit at all, so the result cannot be $\\text{V/m}$."
         },
         {
           "text": "The electric field strength is calculated by multiplying: $E = Ud = 36\\,\\text{V} \\cdot \\text{m}$.",
@@ -434,7 +434,7 @@
         },
         {
           "text": "The voltage should not have been converted to volts, but $1.2 : 3.0 = 0.40\\,\\text{V/m}$ should have been calculated.",
-          "feedback": "The conversion of the voltage, $1.2\\,\\text{kV} = 1200\\,\\text{V}$, is correct. The error is in the distance, which has not been converted to metres: $E = 1200\\,\\text{V} : 0.030\\,\\text{m} = 4.0 \\cdot 10^{4}\\,\\text{V/m}$."
+          "feedback": "The conversion of the voltage, $1.2\\,\\text{kV} = 1200\\,\\text{V}$, is correct. The error is in the distance, which has not been converted to metres: $$\\begin{aligned} E &= 1200\\,\\text{V} : 0.030\\,\\text{m} \\\\ &= 4.0 \\cdot 10^{4}\\,\\text{V/m} \\end{aligned}$$."
         },
         {
           "text": "The calculations are correct, because the equation $E = U : d$ gives the field directly.",
@@ -454,7 +454,7 @@
       "hints": [
         "Which force accelerates the droplet towards a plate, and how does it depend on the field of the plates?",
         "The electric field strength between the plates is $E = U : d$, the force is $F = qE$, and by Newton's second law $a = F : m$.",
-        "The field is $1600\\,\\text{V} : 0.0020\\,\\text{m} = 8.0 \\cdot 10^{5}\\,\\text{V/m}$."
+        "The field is $$\\begin{aligned} &1600\\,\\text{V} : 0.0020\\,\\text{m} \\\\ &= 8.0 \\cdot 10^{5}\\,\\text{V/m} \\end{aligned}$$."
       ],
       "mistakes": [
         {

@@ -227,7 +227,7 @@
         "hints": [
           "Jaa jokaisen rivin voima saman rivin varauksen suuruudella. Mitä huomaat?",
           "Muunna ensin yksiköt: $1\\,\\mu\\text{N} = 10^{-6}\\,\\text{N}$ ja $1\\,\\text{nC} = 10^{-9}\\,\\text{C}$.",
-          "Esimerkiksi rivillä $q = 3\\,\\text{nC}$ on $E = 150 \\cdot 10^{-6}\\,\\text{N} : (3 \\cdot 10^{-9}\\,\\text{C})$."
+          "Esimerkiksi rivillä $q = 3\\,\\text{nC}$ on $$\\begin{aligned} E &= 150 \\cdot 10^{-6}\\,\\text{N} \\\\ &: (3 \\cdot 10^{-9}\\,\\text{C}) \\end{aligned}$$."
         ],
         "mistakes": [
           {
@@ -313,7 +313,7 @@
             "feedback": "Tämä on jännite kilovoltteina. Vastaa voltteina: $2{,}0\\,\\text{kV} = 2000\\,\\text{V}$."
           }
         ],
-        "solution": "**Annettu:** mallin lukemat jännitteellä $U = 2{,}0\\,\\text{kV}$ ja varauksella $q = 2{,}0\\,\\text{nC}$: etäisyydellä $d = 2{,}0\\,\\text{cm}$ voima $F = 200\\,\\mu\\text{N}$ ja etäisyydellä $d = 6{,}0\\,\\text{cm}$ voima $F = 66{,}7\\,\\mu\\text{N}$\n\n**Kysytty:** tulo $Ed$ voltteina\n\n**Periaate:** Sähkökentän voimakkuus saadaan kullakin etäisyydellä voimasta ja varauksesta, $E = F : q$. Jos sähkökentän voimakkuus on $E = U : d$, tulo $Ed$ on sama kaikilla riveillä ja yhtä suuri kuin levyjen jännite.\n\n**Kaava:** $E = \\dfrac{F}{q}$, joten $Ed = \\dfrac{Fd}{q}$\n\n**Muunnokset:** $F = 200 \\cdot 10^{-6}\\,\\text{N}$, $q = 2{,}0 \\cdot 10^{-9}\\,\\text{C}$ ja $d = 2{,}0\\,\\text{cm} = 0{,}020\\,\\text{m}$.\n\n**Sijoitus:** $E = \\dfrac{200 \\cdot 10^{-6}\\,\\text{N}}{2{,}0 \\cdot 10^{-9}\\,\\text{C}} = 1{,}0 \\cdot 10^{5}\\,\\text{N/C}$ ja $Ed = 1{,}0 \\cdot 10^{5}\\,\\text{N/C} \\cdot 0{,}020\\,\\text{m} = 2000\\,\\text{V}$\n\n**Vastaus:** $2{,}0 \\cdot 10^{3}\\,\\text{V}$ eli $2000\\,\\text{V}$, kaksi merkitsevää numeroa kuten varauksessa ja etäisyydessä.\n\n**Järkevyys:** Rivi $d = 6{,}0\\,\\text{cm}$ antaa saman: $66{,}7 \\cdot 10^{-6}\\,\\text{N} \\cdot 0{,}060\\,\\text{m} : (2{,}0 \\cdot 10^{-9}\\,\\text{C}) = 2000\\,\\text{V}$. Tulo on levyjen jännite $2{,}0\\,\\text{kV}$, joten $E = U : d$. Yksiköt: $\\text{N} \\cdot \\text{m} : \\text{C} = \\text{J/C} = \\text{V}$."
+        "solution": "**Annettu:** mallin lukemat jännitteellä $U = 2{,}0\\,\\text{kV}$ ja varauksella $q = 2{,}0\\,\\text{nC}$: etäisyydellä $d = 2{,}0\\,\\text{cm}$ voima $F = 200\\,\\mu\\text{N}$ ja etäisyydellä $d = 6{,}0\\,\\text{cm}$ voima $F = 66{,}7\\,\\mu\\text{N}$\n\n**Kysytty:** tulo $Ed$ voltteina\n\n**Periaate:** Sähkökentän voimakkuus saadaan kullakin etäisyydellä voimasta ja varauksesta, $E = F : q$. Jos sähkökentän voimakkuus on $E = U : d$, tulo $Ed$ on sama kaikilla riveillä ja yhtä suuri kuin levyjen jännite.\n\n**Kaava:** $E = \\dfrac{F}{q}$, joten $Ed = \\dfrac{Fd}{q}$\n\n**Muunnokset:** $F = 200 \\cdot 10^{-6}\\,\\text{N}$, $q = 2{,}0 \\cdot 10^{-9}\\,\\text{C}$ ja $d = 2{,}0\\,\\text{cm} = 0{,}020\\,\\text{m}$.\n\n**Sijoitus:** $E = \\dfrac{200 \\cdot 10^{-6}\\,\\text{N}}{2{,}0 \\cdot 10^{-9}\\,\\text{C}} = 1{,}0 \\cdot 10^{5}\\,\\text{N/C}$ ja $$\\begin{aligned} Ed &= 1{,}0 \\cdot 10^{5}\\,\\text{N/C} \\cdot 0{,}020\\,\\text{m} \\\\ &= 2000\\,\\text{V} \\end{aligned}$$\n\n**Vastaus:** $2{,}0 \\cdot 10^{3}\\,\\text{V}$ eli $2000\\,\\text{V}$, kaksi merkitsevää numeroa kuten varauksessa ja etäisyydessä.\n\n**Järkevyys:** Rivi $d = 6{,}0\\,\\text{cm}$ antaa saman: $$\\begin{aligned} &66{,}7 \\cdot 10^{-6}\\,\\text{N} \\cdot 0{,}060\\,\\text{m} \\\\ &: (2{,}0 \\cdot 10^{-9}\\,\\text{C}) \\\\ &= 2000\\,\\text{V} \\end{aligned}$$. Tulo on levyjen jännite $2{,}0\\,\\text{kV}$, joten $E = U : d$. Yksiköt: $\\text{N} \\cdot \\text{m} : \\text{C} = \\text{J/C} = \\text{V}$."
       }
     },
     {
@@ -426,7 +426,7 @@
         {
           "text": "Etäisyyttä ei ole muunnettu metreiksi: oikea tulos on $4{,}0 \\cdot 10^{4}\\,\\text{V/m}$.",
           "correct": true,
-          "feedback": "Oikein. Yksikössä $\\text{V/m}$ etäisyys on metreinä: $d = 3{,}0\\,\\text{cm} = 0{,}030\\,\\text{m}$, joten $E = 1200\\,\\text{V} : 0{,}030\\,\\text{m} = 4{,}0 \\cdot 10^{4}\\,\\text{V/m}$. Virheen huomaa yksiköistä: opiskelijan jakajassa ei ole yksikköä lainkaan, joten tulos ei voi olla $\\text{V/m}$."
+          "feedback": "Oikein. Yksikössä $\\text{V/m}$ etäisyys on metreinä: $d = 3{,}0\\,\\text{cm} = 0{,}030\\,\\text{m}$, joten $$\\begin{aligned} E &= 1200\\,\\text{V} : 0{,}030\\,\\text{m} \\\\ &= 4{,}0 \\cdot 10^{4}\\,\\text{V/m} \\end{aligned}$$. Virheen huomaa yksiköistä: opiskelijan jakajassa ei ole yksikköä lainkaan, joten tulos ei voi olla $\\text{V/m}$."
         },
         {
           "text": "Sähkökentän voimakkuus lasketaan kertomalla: $E = Ud = 36\\,\\text{V} \\cdot \\text{m}$.",
@@ -434,7 +434,7 @@
         },
         {
           "text": "Jännitettä ei olisi pitänyt muuntaa volteiksi, vaan laskea $1{,}2 : 3{,}0 = 0{,}40\\,\\text{V/m}$.",
-          "feedback": "Jännitteen muunnos $1{,}2\\,\\text{kV} = 1200\\,\\text{V}$ on oikein. Virhe on etäisyydessä, jota ei ole muunnettu metreiksi: $E = 1200\\,\\text{V} : 0{,}030\\,\\text{m} = 4{,}0 \\cdot 10^{4}\\,\\text{V/m}$."
+          "feedback": "Jännitteen muunnos $1{,}2\\,\\text{kV} = 1200\\,\\text{V}$ on oikein. Virhe on etäisyydessä, jota ei ole muunnettu metreiksi: $$\\begin{aligned} E &= 1200\\,\\text{V} : 0{,}030\\,\\text{m} \\\\ &= 4{,}0 \\cdot 10^{4}\\,\\text{V/m} \\end{aligned}$$."
         },
         {
           "text": "Laskut ovat oikein, koska yhtälö $E = U : d$ antaa kentän suoraan.",
@@ -454,7 +454,7 @@
       "hints": [
         "Mikä voima kiihdyttää pisaraa kohti levyä, ja miten se riippuu levyjen kentästä?",
         "Levyjen välinen sähkökentän voimakkuus on $E = U : d$, voima $F = qE$ ja Newtonin toisen lain mukaan $a = F : m$.",
-        "Kenttä on $1600\\,\\text{V} : 0{,}0020\\,\\text{m} = 8{,}0 \\cdot 10^{5}\\,\\text{V/m}$."
+        "Kenttä on $$\\begin{aligned} &1600\\,\\text{V} : 0{,}0020\\,\\text{m} \\\\ &= 8{,}0 \\cdot 10^{5}\\,\\text{V/m} \\end{aligned}$$."
       ],
       "mistakes": [
         {

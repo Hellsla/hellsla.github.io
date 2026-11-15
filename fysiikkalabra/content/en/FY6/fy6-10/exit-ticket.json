@@ -1,7 +1,7 @@
 [
   {
     "q": "The charge of an object is $+3.2 \\cdot 10^{-19}\\,\\text{C}$. How many electrons is the object missing?",
-    "a": "Charge is made of elementary charges, so $n = Q : e = 3.2 \\cdot 10^{-19}\\,\\text{C} : 1.602 \\cdot 10^{-19}\\,\\text{C} \\approx 2$. The object is missing two electrons, and that is why it is positive."
+    "a": "Charge is made of elementary charges, so $$\\begin{aligned} n &= Q : e \\\\ &= 3.2 \\cdot 10^{-19}\\,\\text{C} : 1.602 \\\\ &\\cdot 10^{-19}\\,\\text{C} \\\\ &\\approx 2 \\end{aligned}$$. The object is missing two electrons, and that is why it is positive."
   },
   {
     "q": "Both charges of two point charges are doubled, and at the same time the distance between them is doubled. How does the force between them change?",

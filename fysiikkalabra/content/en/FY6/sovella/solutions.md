@@ -105,7 +105,7 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 **Conversions:** Not needed, all quantities are in base units.
 **Substitution:** $I = \dfrac{4.60\,\text{V}}{8.0\,\Omega + 1.2\,\Omega} = \dfrac{4.60\,\text{V}}{9.2\,\Omega} = 0.50\,\text{A}$, $P = 8.0\,\Omega \cdot (0.50\,\text{A})^2 = 2.0\,\text{W}$ and $P_\text{int} = 1.2\,\Omega \cdot (0.50\,\text{A})^2 = 0.30\,\text{W}$. The fraction is $\dfrac{0.30\,\text{W}}{2.0\,\text{W} + 0.30\,\text{W}} = 0.13$.
 **Answer:** The power transferred to the resistor is $P \approx 2.0\,\text{W}$, and about $13\,\%$ of the electric power of the battery is transferred as heat inside the battery. The result is given to two significant figures like the initial data.
-**Reasonableness:** The terminal voltage is $R I = 4.0\,\text{V}$, which is the same as $E - R_\text{int} I = 4.60\,\text{V} - 0.60\,\text{V}$, and on the graph the voltage at a current of $0.50\,\text{A}$ is about $4.0\,\text{V}$. Since the external resistance is more than seven times the internal resistance, only a small part of the power stays inside the battery.
+**Reasonableness:** The terminal voltage is $R I = 4.0\,\text{V}$, which is the same as $$E - R_\text{int} I = 4.60\,\text{V} - 0.60\,\text{V}$$, and on the graph the voltage at a current of $0.50\,\text{A}$ is about $4.0\,\text{V}$. Since the external resistance is more than seven times the internal resistance, only a small part of the power stays inside the battery.
 
 ### d)
 **Find:** the effect of discharging and warming on the result for the source voltage and the internal resistance, the uncertainty of $R_\text{int}$ caused by the scatter, and an improvement of the measurement
@@ -150,9 +150,9 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 **Principle:** According to the loop rule the voltage of the battery bank is divided between the voltage drop in the cable and the voltage of the lamps: $E - R_\text{c} I - U_\text{L} = 0$. The voltage of the lamps is therefore lower than the rated voltage, and the power is calculated from this actual voltage.
 **Formula:** $U_\text{L} = E - R_\text{c} I$ and $P_\text{A} = \dfrac{U_\text{L}^2}{R_\text{A}}$
 **Conversions:** Not needed.
-**Substitution:** $U_\text{L} = 12.0\,\text{V} - 0.80\,\Omega \cdot 2.5\,\text{A} = 12.0\,\text{V} - 2.0\,\text{V} = 10.0\,\text{V}$ and $P_\text{A} = \dfrac{(10.0\,\text{V})^2}{6.0\,\Omega} = 16.7\,\text{W}$
+**Substitution:** $$\begin{aligned} U_\text{L} &= 12.0\,\text{V} - 0.80\,\Omega \cdot 2.5\,\text{A} \\ &= 12.0\,\text{V} - 2.0\,\text{V} \\ &= 10.0\,\text{V} \end{aligned}$$ and $P_\text{A} = \dfrac{(10.0\,\text{V})^2}{6.0\,\Omega} = 16.7\,\text{W}$
 **Answer:** $P_\text{A} \approx 17\,\text{W}$, about $70\,\%$ of the rated $24\,\text{W}$, two significant figures as in the initial data ($0.80\,\Omega$, $24\,\text{W}$, $12\,\text{V}$).
-**Reasonableness:** The lamp shines dimmer than at the rated voltage, because its voltage is only $10.0\,\text{V}$. Check: the power of lamp B is $\dfrac{(10.0\,\text{V})^2}{12\,\Omega} = 8.3\,\text{W}$ and the heat transferred to the cable is $0.80\,\Omega \cdot (2.5\,\text{A})^2 = 5.0\,\text{W}$. The sum $16.7\,\text{W} + 8.3\,\text{W} + 5.0\,\text{W} = 30\,\text{W}$ is equal to the power of the battery bank, $12.0\,\text{V} \cdot 2.5\,\text{A} = 30\,\text{W}$.
+**Reasonableness:** The lamp shines dimmer than at the rated voltage, because its voltage is only $10.0\,\text{V}$. Check: the power of lamp B is $\dfrac{(10.0\,\text{V})^2}{12\,\Omega} = 8.3\,\text{W}$ and the heat transferred to the cable is $0.80\,\Omega \cdot (2.5\,\text{A})^2 = 5.0\,\text{W}$. The sum $$\begin{aligned} &16.7\,\text{W} + 8.3\,\text{W} + 5.0\,\text{W} \\ &= 30\,\text{W} \end{aligned}$$ is equal to the power of the battery bank, $12.0\,\text{V} \cdot 2.5\,\text{A} = 30\,\text{W}$.
 
 ### c)
 **Find:** how the brightness of lamp A, the current from the battery bank and the warming of the cable change when lamp B is removed from the circuit, and a check of the power of lamp A by calculation
@@ -161,7 +161,7 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 
 *Brightness.* The smaller current reduces the voltage drop in the cable: $0.80\,\Omega \cdot 1.76\,\text{A} \approx 1.4\,\text{V}$, previously $2.0\,\text{V}$. A larger voltage $U_\text{A} \approx 10.6\,\text{V}$ is therefore left for lamp A, and its power is $\dfrac{(10.6\,\text{V})^2}{6.0\,\Omega} \approx 18.7\,\text{W}$, previously $16.7\,\text{W}$. So lamp A shines brighter, although nothing changed in its own branch.
 
-*Cable.* The power transferred to the cable as heat is $R_\text{c} I^2 = 0.80\,\Omega \cdot (1.76\,\text{A})^2 \approx 2.5\,\text{W}$, previously $5.0\,\text{W}$. So the cable warms up less, because the power depends on the square of the current.
+*Cable.* The power transferred to the cable as heat is $$\begin{aligned} R_\text{c} I^2 &= 0.80\,\Omega \cdot (1.76\,\text{A})^2 \\ &\approx 2.5\,\text{W} \end{aligned}$$, previously $5.0\,\text{W}$. So the cable warms up less, because the power depends on the square of the current.
 
 *Conclusion.* Lamps connected in parallel are independent of each other only if the voltage across them stays constant. The resistance of the cable makes the lamps slightly dependent on each other: if the resistance of the cable were zero, the brightness of lamp A would not change at all.
 
@@ -197,7 +197,7 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 **Conversions:** $20\,\text{cm} = 0.20\,\text{m}$ and $60\,\text{kV} = 60 \cdot 1000\,\text{V} = 6.0 \cdot 10^{4}\,\text{V}$.
 **Substitution:** $E = \dfrac{6.0 \cdot 10^{4}\,\text{V}}{0.20\,\text{m}} = 3.0 \cdot 10^{5}\,\text{V/m}$ and $F = 6.0 \cdot 10^{-13}\,\text{C} \cdot 3.0 \cdot 10^{5}\,\text{V/m} = 1.8 \cdot 10^{-7}\,\text{N}$
 **Answer:** $F \approx 1.8 \cdot 10^{-7}\,\text{N}$ in the direction of the field towards the workpiece, two significant figures as in the initial data.
-**Reasonableness:** The weight of the droplet is $mg = 4.0 \cdot 10^{-10}\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 3.9 \cdot 10^{-9}\,\text{N}$, only about $2\,\%$ of the electric force, so the weight can be ignored. The strength of the field, $3.0 \cdot 10^{5}\,\text{V/m} = 0.30\,\text{MV/m}$, is about a tenth of the dielectric strength of air, $3\,\text{MV/m}$, so no sparking occurs.
+**Reasonableness:** The weight of the droplet is $mg = 4.0 \cdot 10^{-10}\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 3.9 \cdot 10^{-9}\,\text{N}$, only about $2\,\%$ of the electric force, so the weight can be ignored. The strength of the field, $$3.0 \cdot 10^{5}\,\text{V/m} = 0.30\,\text{MV/m}$$, is about a tenth of the dielectric strength of air, $3\,\text{MV/m}$, so no sparking occurs.
 
 ### b)
 **Given:** $q = 6.0 \cdot 10^{-13}\,\text{C}$, $U = 6.0 \cdot 10^{4}\,\text{V}$, $m = 4.0 \cdot 10^{-10}\,\text{kg}$ and the droplet leaves from rest
@@ -205,18 +205,18 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 **Principle:** The work done by the electric field on the droplet is the charge times the potential difference, $W = qU$, and it increases the kinetic energy of the droplet. Weight and air resistance are left out, so there are no other forces. In this way it is enough to know the potential difference, and the strength of the field or the acceleration is not needed.
 **Formula:** $q U = \dfrac{1}{2} m v^2$, so $v = \sqrt{\dfrac{2 q U}{m}}$
 **Conversions:** Not needed, all quantities are in base units; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
-**Substitution:** $qU = 6.0 \cdot 10^{-13}\,\text{C} \cdot 6.0 \cdot 10^{4}\,\text{V} = 3.6 \cdot 10^{-8}\,\text{J}$ and $v = \sqrt{\dfrac{2 \cdot 3.6 \cdot 10^{-8}\,\text{J}}{4.0 \cdot 10^{-10}\,\text{kg}}} = \sqrt{180\,\text{m}^2/\text{s}^2} = 13.4\,\text{m/s}$
+**Substitution:** $$\begin{aligned} qU &= 6.0 \cdot 10^{-13}\,\text{C} \cdot 6.0 \cdot 10^{4}\,\text{V} \\ &= 3.6 \cdot 10^{-8}\,\text{J} \end{aligned}$$ and $v = \sqrt{\dfrac{2 \cdot 3.6 \cdot 10^{-8}\,\text{J}}{4.0 \cdot 10^{-10}\,\text{kg}}} = \sqrt{180\,\text{m}^2/\text{s}^2} = 13.4\,\text{m/s}$
 **Answer:** $v \approx 13\,\text{m/s}$, two significant figures as in the initial data.
-**Reasonableness:** The acceleration is $\dfrac{F}{m} = \dfrac{1.8 \cdot 10^{-7}\,\text{N}}{4.0 \cdot 10^{-10}\,\text{kg}} = 450\,\text{m/s}^2$, so over a distance of $0.20\,\text{m}$ the speed would be $\sqrt{2 \cdot 450\,\text{m/s}^2 \cdot 0.20\,\text{m}} = 13.4\,\text{m/s}$, which confirms the result. The work done by the weight over the whole distance would be only $7.8 \cdot 10^{-10}\,\text{J}$, about $2\,\%$ of the work done by the electric field.
+**Reasonableness:** The acceleration is $\dfrac{F}{m} = \dfrac{1.8 \cdot 10^{-7}\,\text{N}}{4.0 \cdot 10^{-10}\,\text{kg}} = 450\,\text{m/s}^2$, so over a distance of $0.20\,\text{m}$ the speed would be $$\begin{aligned} &\sqrt{2 \cdot 450\,\text{m/s}^2 \cdot 0.20\,\text{m}} \\ &= 13.4\,\text{m/s} \end{aligned}$$, which confirms the result. The work done by the weight over the whole distance would be only $7.8 \cdot 10^{-10}\,\text{J}$, about $2\,\%$ of the work done by the electric field.
 
 ### c)
 **Find:** why the measured impact speed $5.0\,\text{m/s}$ is much smaller than the result of part b and where the work done by the electric field goes
 **Principle:** The model of part b left out air resistance. Air resistance acts against the direction of motion of the droplet, and the work it does is negative. When the speed of the droplet increases, air resistance increases, and the droplet moves at a speed at which air resistance and the electric force are approximately equal. According to the conservation of energy, the work done by the electric field is not lost but goes elsewhere.
 **Model answer:** *Explanation.* The speed $13\,\text{m/s}$ of part b would be possible only in a vacuum. In air, air resistance limits the speed to a much smaller value, so the result of part b is the greatest possible speed of the droplet, an upper limit.
 
-*Calculation.* The actual kinetic energy of the droplet is $\dfrac{1}{2} m v^2 = \dfrac{1}{2} \cdot 4.0 \cdot 10^{-10}\,\text{kg} \cdot (5.0\,\text{m/s})^2 = 5.0 \cdot 10^{-9}\,\text{J}$. The work done by the electric field is $3.6 \cdot 10^{-8}\,\text{J}$, so only $\dfrac{5.0 \cdot 10^{-9}\,\text{J}}{3.6 \cdot 10^{-8}\,\text{J}} \approx 14\,\%$ ends up as kinetic energy.
+*Calculation.* The actual kinetic energy of the droplet is $$\begin{aligned} \dfrac{1}{2} m v^2 &= \dfrac{1}{2} \cdot 4.0 \cdot 10^{-10}\,\text{kg} \\ &\cdot (5.0\,\text{m/s})^2 \\ &= 5.0 \cdot 10^{-9}\,\text{J} \end{aligned}$$. The work done by the electric field is $3.6 \cdot 10^{-8}\,\text{J}$, so only $\dfrac{5.0 \cdot 10^{-9}\,\text{J}}{3.6 \cdot 10^{-8}\,\text{J}} \approx 14\,\%$ ends up as kinetic energy.
 
-*The fate of the energy.* The rest, $3.6 \cdot 10^{-8}\,\text{J} - 5.0 \cdot 10^{-9}\,\text{J} = 3.1 \cdot 10^{-8}\,\text{J}$, is transferred to the air. The internal energy of the air increases, and the energy is transferred further as heat to the surroundings. So energy is not lost.
+*The fate of the energy.* The rest, $$\begin{aligned} &3.6 \cdot 10^{-8}\,\text{J} - 5.0 \cdot 10^{-9}\,\text{J} \\ &= 3.1 \cdot 10^{-8}\,\text{J} \end{aligned}$$, is transferred to the air. The internal energy of the air increases, and the energy is transferred further as heat to the surroundings. So energy is not lost.
 
 *Conclusion.* The assumption of part b (no air resistance) makes the speed too large, so the result is the greatest possible speed. Energy is not lost but is transferred to the air.
 
@@ -226,7 +226,7 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 **Principle:** The droplets are much smaller than the distance between them, so they can be treated as point charges. The force between them obeys Coulomb's law: charges of the same sign repel each other.
 **Formula:** $F = k\dfrac{q_1 q_2}{r^2}$
 **Conversions:** $1.0\,\text{mm} = 1.0 \cdot 10^{-3}\,\text{m}$
-**Substitution:** $F = 8.988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} \cdot \dfrac{(6.0 \cdot 10^{-13}\,\text{C})^2}{(1.0 \cdot 10^{-3}\,\text{m})^2} = 8.988 \cdot 10^{9} \cdot \dfrac{3.6 \cdot 10^{-25}}{1.0 \cdot 10^{-6}}\,\text{N} = 3.2 \cdot 10^{-9}\,\text{N}$
+**Substitution:** $$\begin{aligned} F &= 8.988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} \\ &\cdot \dfrac{(6.0 \cdot 10^{-13}\,\text{C})^2}{(1.0 \cdot 10^{-3}\,\text{m})^2} \\ &= 8.988 \cdot 10^{9} \cdot \dfrac{3.6 \cdot 10^{-25}}{1.0 \cdot 10^{-6}}\,\text{N} \\ &= 3.2 \cdot 10^{-9}\,\text{N} \end{aligned}$$
 **Answer:** $F \approx 3.2 \cdot 10^{-9}\,\text{N}$, repulsive, two significant figures as in the initial data.
 **Reasonableness:** The force is about $1.8\,\%$ of the force of the field, $1.8 \cdot 10^{-7}\,\text{N}$, but $0.8$ times the weight of the droplet, $3.9 \cdot 10^{-9}\,\text{N}$. The repulsive force is therefore small compared with the force of the electric field, so the droplets still move towards the workpiece, but the repulsion spreads the cloud of droplets sideways. This is part of the reason why the spray widens after the nozzle.
 
@@ -259,7 +259,7 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 **Principle:** The energy transferred to the flash is the change in the energy of the capacitor: it is the energy before the flash minus the energy after the flash. The voltage is squared in the energy formula, so each energy is calculated separately; the change in voltage $\Delta U$ alone is not enough.
 **Formula:** $\Delta E = \dfrac{1}{2} C U_1^2 - \dfrac{1}{2} C U_2^2$
 **Conversions:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
-**Substitution:** $E_1 = 14.85\,\text{J}$ and $E_2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 = 7.99\,\text{J}$, so $\Delta E = 14.85\,\text{J} - 7.99\,\text{J} = 6.86\,\text{J}$. The fraction is $\dfrac{6.86\,\text{J}}{14.85\,\text{J}} = 0.46$.
+**Substitution:** $E_1 = 14.85\,\text{J}$ and $$\begin{aligned} E_2 &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 \\ &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 \\ &= 7.99\,\text{J} \end{aligned}$$, so $\Delta E = 14.85\,\text{J} - 7.99\,\text{J} = 6.86\,\text{J}$. The fraction is $\dfrac{6.86\,\text{J}}{14.85\,\text{J}} = 0.46$.
 **Answer:** The energy transferred to the flash was $\Delta E \approx 6.9\,\text{J}$, about $46\,\%$ of the stored energy, two significant figures as in part a.
 **Reasonableness:** The voltage decreased by only $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, but $46\,\%$ of the energy was transferred, because energy is proportional to the square of the voltage: $1 - \left(\dfrac{220}{300}\right)^2 = 0.46$. The transferred energy is smaller than the initial energy, as it should be.
 
@@ -269,7 +269,7 @@ The scale of the vertical axis starts at $3.6\,\text{V}$ so that the small decre
 **Principle:** Current is the rate at which charge is transferred. The charge of the capacitor is $Q = C U$, so when the voltage decreases by $80\,\text{V}$, a charge $\Delta Q = C\,\Delta U$ has left the capacitor through the flash tube.
 **Formula:** $I = \dfrac{\Delta Q}{\Delta t}$ and $\Delta Q = C\,\Delta U$
 **Conversions:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$ and $1.0\,\text{ms} = 1.0 \cdot 10^{-3}\,\text{s}$
-**Substitution:** $\Delta Q = 330 \cdot 10^{-6}\,\text{F} \cdot 80\,\text{V} = 0.0264\,\text{C}$ and $I = \dfrac{0.0264\,\text{C}}{1.0 \cdot 10^{-3}\,\text{s}} = 26.4\,\text{A}$
+**Substitution:** $$\begin{aligned} \Delta Q &= 330 \cdot 10^{-6}\,\text{F} \cdot 80\,\text{V} \\ &= 0.0264\,\text{C} \end{aligned}$$ and $I = \dfrac{0.0264\,\text{C}}{1.0 \cdot 10^{-3}\,\text{s}} = 26.4\,\text{A}$
 **Answer:** $I \approx 26\,\text{A}$, two significant figures like the precision of the duration $1.0\,\text{ms}$.
 **Reasonableness:** The average power is $\dfrac{6.86\,\text{J}}{1.0 \cdot 10^{-3}\,\text{s}} \approx 6.9\,\text{kW}$ and the current $26\,\text{A}$: these are much larger than a small battery could supply in such a short pulse. That is why the energy is first stored in the capacitor, which releases it quickly.
 

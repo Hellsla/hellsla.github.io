@@ -30,11 +30,11 @@
         {
           "text": "$200\\,\\Omega$",
           "correct": true,
-          "feedback": "Oikein. Ohmin lain mukaan $R = \\tfrac{U}{I} = 3{,}0\\,\\text{V} : 0{,}015\\,\\text{A} = 200\\,\\Omega$ (luku *Resistanssi ja Ohmin laki*). Tänään vastus rajoittaa LEDin virtaa."
+          "feedback": "Oikein. Ohmin lain mukaan $$\\begin{aligned} R &= \\tfrac{U}{I} \\\\ &= 3{,}0\\,\\text{V} : 0{,}015\\,\\text{A} \\\\ &= 200\\,\\Omega \\end{aligned}$$ (luku *Resistanssi ja Ohmin laki*). Tänään vastus rajoittaa LEDin virtaa."
         },
         {
           "text": "$0{,}20\\,\\Omega$",
-          "feedback": "Jaoit jännitteen milliampeereilla. Virta muutetaan ampeereiksi: $15\\,\\text{mA} = 0{,}015\\,\\text{A}$, ja $R = 3{,}0\\,\\text{V} : 0{,}015\\,\\text{A} = 200\\,\\Omega$."
+          "feedback": "Jaoit jännitteen milliampeereilla. Virta muutetaan ampeereiksi: $15\\,\\text{mA} = 0{,}015\\,\\text{A}$, ja $$\\begin{aligned} R &= 3{,}0\\,\\text{V} : 0{,}015\\,\\text{A} \\\\ &= 200\\,\\Omega \\end{aligned}$$."
         },
         {
           "text": "$45\\,\\Omega$",
@@ -491,7 +491,7 @@
         {
           "text": "Vastuksen yli on vain $9{,}0\\,\\text{V} - 2{,}0\\,\\text{V} = 7{,}0\\,\\text{V}$, joten vastuksen pitää olla $350\\,\\Omega$.",
           "correct": true,
-          "feedback": "Oikein. Pariston jännite jakautuu LEDille ja vastukselle, joten $R = \\tfrac{U - U_\\text{D}}{I} = 7{,}0\\,\\text{V} : 0{,}020\\,\\text{A} = 350\\,\\Omega$. Opiskelijan $450\\,\\Omega$:n vastuksella virta olisi vain $7{,}0\\,\\text{V} : 450\\,\\Omega \\approx 16\\,\\text{mA}$, ja LED palaisi himmeämmin."
+          "feedback": "Oikein. Pariston jännite jakautuu LEDille ja vastukselle, joten $$\\begin{aligned} R &= \\tfrac{U - U_\\text{D}}{I} \\\\ &= 7{,}0\\,\\text{V} : 0{,}020\\,\\text{A} \\\\ &= 350\\,\\Omega \\end{aligned}$$. Opiskelijan $450\\,\\Omega$:n vastuksella virta olisi vain $7{,}0\\,\\text{V} : 450\\,\\Omega \\approx 16\\,\\text{mA}$, ja LED palaisi himmeämmin."
         },
         {
           "text": "Virta pitää sijoittaa milliampeereina, joten vastus on $0{,}45\\,\\Omega$.",
@@ -531,7 +531,7 @@
           "feedback": "Kerroit jännitteiden erotuksen $5{,}2\\,\\text{V}$ ja virtojen erotuksen $0{,}30\\,\\text{A}$ keskenään. Teho lasketaan kummassakin pisteessä erikseen, $P = UI$, ja vasta sitten tehot vähennetään."
         }
       ],
-      "solution": "**Annettu:** maksimitehopisteessä $U_1 = 18{,}0\\,\\text{V}$ ja $I_1 = 5{,}50\\,\\text{A}$, akkuun kytkettynä $U_2 = 12{,}8\\,\\text{V}$ ja $I_2 = 5{,}80\\,\\text{A}$\n\n**Kysytty:** tehon pieneneminen $\\Delta P$ watteina\n\n**Periaate:** Aurinkopaneeli on tasajännitelähde, ja sen teho on jännite kertaa virta. Akku määrää paneelin jännitteen, joten paneeli toimii $(U, I)$-käyränsä toisessa pisteessä kuin maksimitehopisteessä. Virta on siellä hieman suurempi, mutta jännite paljon pienempi.\n\n**Kaava:** $P_1 = U_1 I_1$ ja $P_2 = U_2 I_2$, josta $\\Delta P = U_1 I_1 - U_2 I_2$\n\n**Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja virrat ampeereina, ja $\\text{V} \\cdot \\text{A} = \\text{W}$.\n\n**Sijoitus:** $\\Delta P = 18{,}0\\,\\text{V} \\cdot 5{,}50\\,\\text{A} - 12{,}8\\,\\text{V} \\cdot 5{,}80\\,\\text{A} = 99{,}0\\,\\text{W} - 74{,}24\\,\\text{W} = 24{,}76\\,\\text{W}$\n\n**Vastaus:** $24{,}8\\,\\text{W}$, kolme merkitsevää numeroa, koska annetut jännitteet ja virrat ovat kolmen merkitsevän numeron arvoja ja erotuksen tarkkuus on kymmenesosawattia.\n\n**Järkevyys:** Akkuun kytkettynä paneeli antaa noin $74\\,\\text{W} : 99\\,\\text{W} \\approx 75\\,\\%$ suurimmasta tehostaan, eli neljäsosa menetetään. Virta kasvoi vain noin $5\\,\\%$, mutta jännite pieneni noin $30\\,\\%$. Siksi aurinkolatureissa on maksimitehopistettä hakeva säädin."
+      "solution": "**Annettu:** maksimitehopisteessä $U_1 = 18{,}0\\,\\text{V}$ ja $I_1 = 5{,}50\\,\\text{A}$, akkuun kytkettynä $U_2 = 12{,}8\\,\\text{V}$ ja $I_2 = 5{,}80\\,\\text{A}$\n\n**Kysytty:** tehon pieneneminen $\\Delta P$ watteina\n\n**Periaate:** Aurinkopaneeli on tasajännitelähde, ja sen teho on jännite kertaa virta. Akku määrää paneelin jännitteen, joten paneeli toimii $(U, I)$-käyränsä toisessa pisteessä kuin maksimitehopisteessä. Virta on siellä hieman suurempi, mutta jännite paljon pienempi.\n\n**Kaava:** $P_1 = U_1 I_1$ ja $P_2 = U_2 I_2$, josta $\\Delta P = U_1 I_1 - U_2 I_2$\n\n**Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja virrat ampeereina, ja $\\text{V} \\cdot \\text{A} = \\text{W}$.\n\n**Sijoitus:** $$\\begin{aligned} \\Delta P &= 18{,}0\\,\\text{V} \\cdot 5{,}50\\,\\text{A} - 12{,}8\\,\\text{V} \\\\ &\\cdot 5{,}80\\,\\text{A} \\\\ &= 99{,}0\\,\\text{W} - 74{,}24\\,\\text{W} \\\\ &= 24{,}76\\,\\text{W} \\end{aligned}$$\n\n**Vastaus:** $24{,}8\\,\\text{W}$, kolme merkitsevää numeroa, koska annetut jännitteet ja virrat ovat kolmen merkitsevän numeron arvoja ja erotuksen tarkkuus on kymmenesosawattia.\n\n**Järkevyys:** Akkuun kytkettynä paneeli antaa noin $74\\,\\text{W} : 99\\,\\text{W} \\approx 75\\,\\%$ suurimmasta tehostaan, eli neljäsosa menetetään. Virta kasvoi vain noin $5\\,\\%$, mutta jännite pieneni noin $30\\,\\%$. Siksi aurinkolatureissa on maksimitehopistettä hakeva säädin."
     },
     {
       "id": "harjoitukset",
@@ -599,7 +599,7 @@
       "title": "3. Selitä etuvastus",
       "optional": true,
       "prompt": "Kaveri kytkee punaisen LEDin suoraan $4{,}5\\,\\text{V}$:n paristoon, koska ”hehkulampullekaan ei tarvita vastusta”. LED välähtää ja sammuu lopullisesti. Selitä, mitä tapahtui ja miksi hehkulamppu kestää saman kytkennän.",
-      "model": "LEDin jännite on päästösuunnassa noin $2\\,\\text{V}$, ja sen yläpuolella pieni jännitteen lisäys kasvattaa virtaa hyvin paljon. Ilman etuvastusta LEDin yli tuli lähes koko pariston jännite, ja virtaa rajoittivat vain pariston sisäinen resistanssi ja johdot. Jos niiden resistanssi on noin $1\\,\\Omega$, virta on suuruusluokkaa $(4{,}5\\,\\text{V} - 2{,}0\\,\\text{V}) : 1\\,\\Omega \\approx 2{,}5\\,\\text{A}$, yli sata kertaa LEDin suositeltu $20\\,\\text{mA}$. LED kuumeni ja rikkoutui. Hehkulampun lanka noudattaa likimain Ohmin lakia, ja sen resistanssi kasvaa langan kuumetessa, joten lamppu rajoittaa itse virtaansa. LED ei rajoita virtaansa samalla tavalla, joten sen virtaa on rajoitettava kytkennällä. Paristoon kytkettävässä yksinkertaisessa piirissä se tehdään sarjaan kytketyllä etuvastuksella, joka ottaa ylimääräisen jännitteen ja määrää virran.",
+      "model": "LEDin jännite on päästösuunnassa noin $2\\,\\text{V}$, ja sen yläpuolella pieni jännitteen lisäys kasvattaa virtaa hyvin paljon. Ilman etuvastusta LEDin yli tuli lähes koko pariston jännite, ja virtaa rajoittivat vain pariston sisäinen resistanssi ja johdot. Jos niiden resistanssi on noin $1\\,\\Omega$, virta on suuruusluokkaa $$(4{,}5\\,\\text{V} - 2{,}0\\,\\text{V}) : 1\\,\\Omega \\approx 2{,}5\\,\\text{A}$$, yli sata kertaa LEDin suositeltu $20\\,\\text{mA}$. LED kuumeni ja rikkoutui. Hehkulampun lanka noudattaa likimain Ohmin lakia, ja sen resistanssi kasvaa langan kuumetessa, joten lamppu rajoittaa itse virtaansa. LED ei rajoita virtaansa samalla tavalla, joten sen virtaa on rajoitettava kytkennällä. Paristoon kytkettävässä yksinkertaisessa piirissä se tehdään sarjaan kytketyllä etuvastuksella, joka ottaa ylimääräisen jännitteen ja määrää virran.",
       "criteria": [
         "Vastaus kertoo, että LEDin jännite pysyy lähes vakiona ja pieni jännitteen lisäys kasvattaa virtaa paljon.",
         "Vastaus kertoo, että ilman etuvastusta virtaa rajoittivat vain pariston sisäinen resistanssi ja johdot, joten virta kasvoi liian suureksi ja LED kuumeni.",

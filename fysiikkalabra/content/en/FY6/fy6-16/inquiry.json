@@ -30,15 +30,15 @@
         {
           "text": "About $60\\,\\text{kWh}$, because energy is voltage times charge.",
           "correct": true,
-          "feedback": "Correct. $W = UQ = 400\\,\\text{V} \\cdot 150\\,\\text{Ah} = 60\\,000\\,\\text{Wh} = 60\\,\\text{kWh}$ (chapter *Batteries and the charging circuit*). Today we calculate how long it takes to charge a battery like this at home and what that demands of the electrical system of the home."
+          "feedback": "Correct. $$\\begin{aligned} W &= UQ \\\\ &= 400\\,\\text{V} \\cdot 150\\,\\text{Ah} \\\\ &= 60\\,000\\,\\text{Wh} \\\\ &= 60\\,\\text{kWh} \\end{aligned}$$ (chapter *Batteries and the charging circuit*). Today we calculate how long it takes to charge a battery like this at home and what that demands of the electrical system of the home."
         },
         {
           "text": "About $150\\,\\text{kWh}$, because the capacity tells the energy of the battery.",
-          "feedback": "Capacity is charge, not energy: an ampere-hour is current times time. Energy is obtained by multiplying the charge by the voltage: $W = UQ = 400\\,\\text{V} \\cdot 150\\,\\text{Ah} = 60\\,\\text{kWh}$ (chapter *Batteries and the charging circuit*)."
+          "feedback": "Capacity is charge, not energy: an ampere-hour is current times time. Energy is obtained by multiplying the charge by the voltage: $$\\begin{aligned} W &= UQ \\\\ &= 400\\,\\text{V} \\cdot 150\\,\\text{Ah} \\\\ &= 60\\,\\text{kWh} \\end{aligned}$$ (chapter *Batteries and the charging circuit*)."
         },
         {
           "text": "About $2.7\\,\\text{kWh}$, because energy is voltage divided by charge.",
-          "feedback": "Voltage tells the energy per unit of charge, so energy is obtained by multiplying, not dividing: $W = UQ = 400\\,\\text{V} \\cdot 150\\,\\text{Ah} = 60\\,\\text{kWh}$ (chapter *Batteries and the charging circuit*)."
+          "feedback": "Voltage tells the energy per unit of charge, so energy is obtained by multiplying, not dividing: $$\\begin{aligned} W &= UQ \\\\ &= 400\\,\\text{V} \\cdot 150\\,\\text{Ah} \\\\ &= 60\\,\\text{kWh} \\end{aligned}$$ (chapter *Batteries and the charging circuit*)."
         }
       ]
     },
@@ -87,7 +87,7 @@
       "choices": [
         {
           "text": "Nothing, because each device is connected to its own circuit with its own fuse.",
-          "feedback": "The circuit fuses each protect the cable of their own circuit, but the currents of all the circuits pass through the same main fuses. According to the table, phase $\\text{L}_1$ carries $13.0\\,\\text{A} + 16\\,\\text{A} + 8.7\\,\\text{A} \\approx 37.7\\,\\text{A}$, which is well over $25\\,\\text{A}$."
+          "feedback": "The circuit fuses each protect the cable of their own circuit, but the currents of all the circuits pass through the same main fuses. According to the table, phase $\\text{L}_1$ carries $$13.0\\,\\text{A} + 16\\,\\text{A} + 8.7\\,\\text{A} \\approx 37.7\\,\\text{A}$$, which is well over $25\\,\\text{A}$."
         },
         {
           "text": "The current exceeds $25\\,\\text{A}$ in every phase, so without load management a main fuse may blow.",
@@ -165,7 +165,7 @@
             "feedback": "You calculated the power of all the devices through a single $230\\,\\text{V}$ phase. Three-phase devices share their power between three phase conductors, so their current in one phase is $P : (3U)$."
           }
         ],
-        "solution": "**Given:** heater $P_\\text{heater} = 9.0\\,\\text{kW}$ and charging station $P_\\text{charger} = 11\\,\\text{kW}$ on three phases, kettle $P_\\text{kettle} = 2.0\\,\\text{kW}$ on phase $\\text{L}_1$, $U = 230\\,\\text{V}$\n\n**Find:** current $I_1$ of phase conductor $\\text{L}_1$ in amperes\n\n**Principle:** A three-phase device draws the same current from each phase, so its power is $P = 3UI$; the power of a single-phase device is $P = UI$. All the devices get their current through the same phase conductor, so the currents are added (chapter *Kirchhoff's laws and potential in a circuit*).\n\n**Formula:** $I_1 = \\dfrac{P_\\text{heater}}{3U} + \\dfrac{P_\\text{charger}}{3U} + \\dfrac{P_\\text{kettle}}{U}$\n\n**Conversions:** $P_\\text{heater} = 9000\\,\\text{W}$, $P_\\text{charger} = 11\\,000\\,\\text{W}$ and $P_\\text{kettle} = 2000\\,\\text{W}$; $3U = 690\\,\\text{V}$\n\n**Substitution:** $I_1 = \\dfrac{9000\\,\\text{W}}{690\\,\\text{V}} + \\dfrac{11\\,000\\,\\text{W}}{690\\,\\text{V}} + \\dfrac{2000\\,\\text{W}}{230\\,\\text{V}} = 13.04\\,\\text{A} + 15.94\\,\\text{A} + 8.70\\,\\text{A} = 37.7\\,\\text{A}$\n\n**Answer:** $38\\,\\text{A}$, two significant figures like the powers $9.0\\,\\text{kW}$ and $11\\,\\text{kW}$.\n\n**Reasonableness:** The heater and the station together draw $20\\,\\text{kW}$ from three phases, about $6.7\\,\\text{kW}$ per phase or about $29\\,\\text{A}$, and the kettle adds about $9\\,\\text{A}$. The current is about one and a half times the $25\\,\\text{A}$ of the main fuse, so without load management the fuse could blow."
+        "solution": "**Given:** heater $P_\\text{heater} = 9.0\\,\\text{kW}$ and charging station $P_\\text{charger} = 11\\,\\text{kW}$ on three phases, kettle $P_\\text{kettle} = 2.0\\,\\text{kW}$ on phase $\\text{L}_1$, $U = 230\\,\\text{V}$\n\n**Find:** current $I_1$ of phase conductor $\\text{L}_1$ in amperes\n\n**Principle:** A three-phase device draws the same current from each phase, so its power is $P = 3UI$; the power of a single-phase device is $P = UI$. All the devices get their current through the same phase conductor, so the currents are added (chapter *Kirchhoff's laws and potential in a circuit*).\n\n**Formula:** $I_1 = \\dfrac{P_\\text{heater}}{3U} + \\dfrac{P_\\text{charger}}{3U} + \\dfrac{P_\\text{kettle}}{U}$\n\n**Conversions:** $P_\\text{heater} = 9000\\,\\text{W}$, $P_\\text{charger} = 11\\,000\\,\\text{W}$ and $P_\\text{kettle} = 2000\\,\\text{W}$; $3U = 690\\,\\text{V}$\n\n**Substitution:** $$\\begin{aligned} I_1 &= \\dfrac{9000\\,\\text{W}}{690\\,\\text{V}} + \\dfrac{11\\,000\\,\\text{W}}{690\\,\\text{V}} \\\\ &+ \\dfrac{2000\\,\\text{W}}{230\\,\\text{V}} \\\\ &= 13.04\\,\\text{A} + 15.94\\,\\text{A} + 8.70\\,\\text{A} \\\\ &= 37.7\\,\\text{A} \\end{aligned}$$\n\n**Answer:** $38\\,\\text{A}$, two significant figures like the powers $9.0\\,\\text{kW}$ and $11\\,\\text{kW}$.\n\n**Reasonableness:** The heater and the station together draw $20\\,\\text{kW}$ from three phases, about $6.7\\,\\text{kW}$ per phase or about $29\\,\\text{A}$, and the kettle adds about $9\\,\\text{A}$. The current is about one and a half times the $25\\,\\text{A}$ of the main fuse, so without load management the fuse could blow."
       }
     },
     {
@@ -219,17 +219,17 @@
       "prompt": "A student calculates how much energy is taken from the grid when $38.4\\,\\text{kWh}$ has to be stored in the battery and the efficiency of charging is $90\\,\\%$:\n\n$$\\begin{aligned} W_\\text{grid} &= \\eta W_\\text{battery} \\\\ &= 0.90 \\cdot 38.4\\,\\text{kWh} \\\\ &\\approx 34.6\\,\\text{kWh} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
-          "text": "You have to divide by the efficiency: $38.4\\,\\text{kWh} : 0.90 \\approx 42.7\\,\\text{kWh}$.",
+          "text": "You have to divide by the efficiency: $$38.4\\,\\text{kWh} : 0.90 \\approx 42.7\\,\\text{kWh}$$.",
           "correct": true,
           "feedback": "Correct. The efficiency is $\\eta = W_\\text{battery} : W_\\text{grid}$, so $W_\\text{grid} = W_\\text{battery} : \\eta$. The error could have been noticed from the result being smaller than the energy going into the battery, although because of the losses more has to be taken from the grid."
         },
         {
           "text": "The efficiency has to be converted first: $90\\,\\%$ is $90$, not $0.90$.",
-          "feedback": "A percent means a hundredth, so $90\\,\\% = 0.90$ is correct. Multiplying by $90$ would give over $3000\\,\\text{kWh}$, which is impossible. The error is that the energy was multiplied by the efficiency: the correct way is $W_\\text{grid} = 38.4\\,\\text{kWh} : 0.90 \\approx 42.7\\,\\text{kWh}$."
+          "feedback": "A percent means a hundredth, so $90\\,\\% = 0.90$ is correct. Multiplying by $90$ would give over $3000\\,\\text{kWh}$, which is impossible. The error is that the energy was multiplied by the efficiency: the correct way is $$\\begin{aligned} W_\\text{grid} &= 38.4\\,\\text{kWh} : 0.90 \\\\ &\\approx 42.7\\,\\text{kWh} \\end{aligned}$$."
         },
         {
           "text": "There is no error in the calculation, because losses reduce the energy.",
-          "feedback": "Losses reduce the energy that ends up in the battery, not the energy taken from the grid. What is taken from the grid is the energy going into the battery plus the losses, so $W_\\text{grid} = W_\\text{battery} : \\eta \\approx 42.7\\,\\text{kWh}$."
+          "feedback": "Losses reduce the energy that ends up in the battery, not the energy taken from the grid. What is taken from the grid is the energy going into the battery plus the losses, so $$\\begin{aligned} W_\\text{grid} &= W_\\text{battery} : \\eta \\\\ &\\approx 42.7\\,\\text{kWh} \\end{aligned}$$."
         }
       ]
     },
@@ -257,7 +257,7 @@
           "feedback": "You multiplied the resistance by the current, which gives the voltage $RI$ in volts. By Joule's law the power is $P = RI^2 = 0.34\\,\\Omega \\cdot (16\\,\\text{A})^2 \\approx 87\\,\\text{W}$."
         }
       ],
-      "solution": "**Given:** length of cable $l = 25\\,\\text{m}$, cross-sectional area $A = 2.5\\,\\text{mm}^2$, current $I = 16\\,\\text{A}$, resistivity of copper $\\rho = 1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$\n\n**Find:** heating power $P_\\text{cable}$ dissipated in the cable in watts\n\n**Principle:** The copper conductors of the cable are a resistor through which the charging current flows. The current flows in both an outgoing and a return conductor, so the length of copper is $2l$. By Joule's law the power dissipated in a resistor is $RI^2$, and it turns into internal energy of the cable, which is transferred to the surroundings as heat.\n\n**Formula:** $P_\\text{cable} = RI^2$ and $R = \\rho \\dfrac{2l}{A}$, so $P_\\text{cable} = \\rho \\dfrac{2l}{A} I^2$\n\n**Conversions:** $A = 2.5\\,\\text{mm}^2 = 2.5 \\cdot (10^{-3}\\,\\text{m})^2 = 2.5 \\cdot 10^{-6}\\,\\text{m}^2$\n\n**Substitution:** $R = 1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m} \\cdot \\dfrac{2 \\cdot 25\\,\\text{m}}{2.5 \\cdot 10^{-6}\\,\\text{m}^2} = 0.34\\,\\Omega$ and $P_\\text{cable} = 0.34\\,\\Omega \\cdot (16\\,\\text{A})^2 = 0.34\\,\\Omega \\cdot 256\\,\\text{A}^2 = 87.0\\,\\text{W}$\n\n**Answer:** $87\\,\\text{W}$, two significant figures like the resistivity $1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$ and the cross-sectional area $2.5\\,\\text{mm}^2$.\n\n**Reasonableness:** The power is $87\\,\\text{W} : 3680\\,\\text{W} \\approx 2.4\\,\\%$ of the power of the charging station, and it is spread over the $25\\,\\text{m}$ stretch, about $3.5\\,\\text{W}$ per metre, so a fixed cable warms up only a little. With half the current the power would be a quarter, about $22\\,\\text{W}$."
+      "solution": "**Given:** length of cable $l = 25\\,\\text{m}$, cross-sectional area $A = 2.5\\,\\text{mm}^2$, current $I = 16\\,\\text{A}$, resistivity of copper $\\rho = 1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$\n\n**Find:** heating power $P_\\text{cable}$ dissipated in the cable in watts\n\n**Principle:** The copper conductors of the cable are a resistor through which the charging current flows. The current flows in both an outgoing and a return conductor, so the length of copper is $2l$. By Joule's law the power dissipated in a resistor is $RI^2$, and it turns into internal energy of the cable, which is transferred to the surroundings as heat.\n\n**Formula:** $P_\\text{cable} = RI^2$ and $R = \\rho \\dfrac{2l}{A}$, so $P_\\text{cable} = \\rho \\dfrac{2l}{A} I^2$\n\n**Conversions:** $A = 2.5\\,\\text{mm}^2 = 2.5 \\cdot (10^{-3}\\,\\text{m})^2 = 2.5 \\cdot 10^{-6}\\,\\text{m}^2$\n\n**Substitution:** $$\\begin{aligned} R &= 1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m} \\\\ &\\cdot \\dfrac{2 \\cdot 25\\,\\text{m}}{2.5 \\cdot 10^{-6}\\,\\text{m}^2} \\\\ &= 0.34\\,\\Omega \\end{aligned}$$ and $P_\\text{cable} = 0.34\\,\\Omega \\cdot (16\\,\\text{A})^2 = 0.34\\,\\Omega \\cdot 256\\,\\text{A}^2 = 87.0\\,\\text{W}$\n\n**Answer:** $87\\,\\text{W}$, two significant figures like the resistivity $1.7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$ and the cross-sectional area $2.5\\,\\text{mm}^2$.\n\n**Reasonableness:** The power is $87\\,\\text{W} : 3680\\,\\text{W} \\approx 2.4\\,\\%$ of the power of the charging station, and it is spread over the $25\\,\\text{m}$ stretch, about $3.5\\,\\text{W}$ per metre, so a fixed cable warms up only a little. With half the current the power would be a quarter, about $22\\,\\text{W}$."
     },
     {
       "id": "harjoitukset",

@@ -46,7 +46,7 @@
 **Conversions:** Not needed: both energies are in kilowatt-hours, so the unit cancels. A decimal number is converted to a percentage by multiplying by a hundred.
 **Substitution:** $\eta = \dfrac{44\,\text{kWh}}{50\,\text{kWh}} = 0.88 = 88\,\%$
 **Answer:** $88\,\%$, two significant figures like the energies $44\,\text{kWh}$ and $50\,\text{kWh}$.
-**Reasonableness:** The losses were $50\,\text{kWh} - 44\,\text{kWh} = 6\,\text{kWh}$, that is, $12\,\%$ of the energy taken; $88\,\% + 12\,\% = 100\,\%$. The efficiency is below $100\,\%$ and of the size typical of home charging.
+**Reasonableness:** The losses were $$50\,\text{kWh} - 44\,\text{kWh} = 6\,\text{kWh}$$, that is, $12\,\%$ of the energy taken; $88\,\% + 12\,\% = 100\,\%$. The efficiency is below $100\,\%$ and of the size typical of home charging.
 
 ## fy6-16-L2-01
 **Given:** powers and times read from the graph
@@ -55,9 +55,9 @@
 **Reading the graph:** In the first period the power is $P_1 = 11\,\text{kW}$ for the time $0\text{–}2.0\,\text{h}$, so $t_1 = 2.0\,\text{h}$. In the second period the power is $P_2 = 5.5\,\text{kW}$ for the time $2.0\text{–}3.0\,\text{h}$, so $t_2 = 1.0\,\text{h}$. After that the power is zero.
 **Formula:** $W_\text{grid} = P_1 t_1 + P_2 t_2$
 **Conversions:** Not needed: with kilowatts and hours the energy comes out directly in kilowatt-hours.
-**Substitution:** $W_\text{grid} = 11\,\text{kW} \cdot 2.0\,\text{h} + 5.5\,\text{kW} \cdot 1.0\,\text{h} = 22\,\text{kWh} + 5.5\,\text{kWh} = 27.5\,\text{kWh}$
+**Substitution:** $$\begin{aligned} W_\text{grid} &= 11\,\text{kW} \cdot 2.0\,\text{h} + 5.5\,\text{kW} \\ &\cdot 1.0\,\text{h} \\ &= 22\,\text{kWh} + 5.5\,\text{kWh} \\ &= 27.5\,\text{kWh} \end{aligned}$$
 **Answer:** $28\,\text{kWh}$, two significant figures like the values read from the graph.
-**Reasonableness:** If the power had been $11\,\text{kW}$ for all three hours, $33\,\text{kWh}$ would have been taken; the halved power in the last hour reduces this by $5.5\,\text{kWh}$, so $33\,\text{kWh} - 5.5\,\text{kWh} = 27.5\,\text{kWh}$.
+**Reasonableness:** If the power had been $11\,\text{kW}$ for all three hours, $33\,\text{kWh}$ would have been taken; the halved power in the last hour reduces this by $5.5\,\text{kWh}$, so $$\begin{aligned} &33\,\text{kWh} - 5.5\,\text{kWh} \\ &= 27.5\,\text{kWh} \end{aligned}$$.
 
 ## fy6-16-L2-02
 **Given:** $U = 230\,\text{V}$, $I = 16\,\text{A}$, one phase, energy of the battery $60\,\text{kWh}$, charge level $20\,\% \to 80\,\%$, $\eta = 90\,\%$
@@ -85,7 +85,7 @@
 **Principle:** The copper conductors of the cable are a resistor through which the charging current flows. The current goes to the station along the phase conductor and returns along the neutral conductor, so the length of copper is $2l$. By Ohm's law the voltage across a resistance is resistance times current.
 **Formula:** $U_\text{loss} = RI$ and $R = \rho \dfrac{2l}{A}$, so $U_\text{loss} = \rho \dfrac{2l}{A} I$
 **Conversions:** $A = 2.5\,\text{mm}^2 = 2.5 \cdot (10^{-3}\,\text{m})^2 = 2.5 \cdot 10^{-6}\,\text{m}^2$
-**Substitution:** $U_\text{loss} = 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \dfrac{2 \cdot 30\,\text{m}}{2.5 \cdot 10^{-6}\,\text{m}^2} \cdot 16\,\text{A} = 0.408\,\Omega \cdot 16\,\text{A} = 6.53\,\text{V}$
+**Substitution:** $$\begin{aligned} U_\text{loss} &= 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \\ &\cdot \dfrac{2 \cdot 30\,\text{m}}{2.5 \cdot 10^{-6}\,\text{m}^2} \cdot 16\,\text{A} \\ &= 0.408\,\Omega \cdot 16\,\text{A} \\ &= 6.53\,\text{V} \end{aligned}$$
 **Answer:** $6.5\,\text{V}$, two significant figures like the resistivity $1.7 \cdot 10^{-8}\,\Omega\cdot\text{m}$ and the cross-sectional area $2.5\,\text{mm}^2$.
 **Reasonableness:** The loss is $6.5\,\text{V} : 230\,\text{V} \approx 3\,\%$ of the mains voltage, so the station still gets almost the whole voltage. A power of $6.5\,\text{V} \cdot 16\,\text{A} \approx 100\,\text{W}$ is dissipated in the cable, that is, about $3.5\,\text{W}$ per metre, which is spread over a long stretch.
 
@@ -95,9 +95,9 @@
 **Principle:** The same energy goes into the battery either way, but the energy taken from the grid is the energy going into the battery divided by the efficiency. The saving comes from less being taken from the grid with the charging station, and it is paid at the same price.
 **Formula:** $W_\text{grid} = \dfrac{W_\text{battery}}{\eta}$ and $K = a W_\text{grid}$, so $\Delta K = a \left(\dfrac{W_\text{battery}}{\eta_1} - \dfrac{W_\text{battery}}{\eta_2}\right)$
 **Conversions:** $\eta_1 = 0.82$, $\eta_2 = 0.92$ and $a = 15\,\text{c/kWh} = 0.15\,\text{€/kWh}$
-**Substitution:** $\Delta K = 0.15\,\text{€/kWh} \cdot \left(\dfrac{3000\,\text{kWh}}{0.82} - \dfrac{3000\,\text{kWh}}{0.92}\right) = 0.15\,\text{€/kWh} \cdot (3658.5\,\text{kWh} - 3260.9\,\text{kWh}) = 0.15\,\text{€/kWh} \cdot 397.7\,\text{kWh} = 59.7\,\text{€}$
+**Substitution:** $$\begin{aligned} &\Delta K \\ &= 0.15\,\text{€/kWh} \\ &\cdot \left(\dfrac{3000\,\text{kWh}}{0.82} - \dfrac{3000\,\text{kWh}}{0.92}\right) \\ &= 0.15\,\text{€/kWh} \\ &\cdot (3658.5\,\text{kWh} - 3260.9\,\text{kWh}) \\ &= 0.15\,\text{€/kWh} \cdot 397.7\,\text{kWh} \\ &= 59.7\,\text{€} \end{aligned}$$
 **Answer:** $60\,\text{€}$, two significant figures like the efficiencies $82\,\%$ and $92\,\%$.
-**Reasonableness:** The difference in efficiency is ten percentage points, so the energy taken from the grid differs by about $10\text{–}12\,\%$ of the annual consumption ($3260\,\text{kWh}$ or $3660\,\text{kWh}$), that is, by about $400\,\text{kWh}$. $400\,\text{kWh} \cdot 0.15\,\text{€/kWh} = 60\,\text{€}$. The saving is small compared with the price of a charging station; a more important reason for a charging station is safety.
+**Reasonableness:** The difference in efficiency is ten percentage points, so the energy taken from the grid differs by about $10\text{–}12\,\%$ of the annual consumption ($3260\,\text{kWh}$ or $3660\,\text{kWh}$), that is, by about $400\,\text{kWh}$. $$\begin{aligned} &400\,\text{kWh} \cdot 0.15\,\text{€/kWh} \\ &= 60\,\text{€} \end{aligned}$$. The saving is small compared with the price of a charging station; a more important reason for a charging station is safety.
 
 ## fy6-16-L3-02
 **Given:** the current grows from $I_1 = 10\,\text{A}$ to $I_2 = 16\,\text{A}$, the resistance $R$ of the cable stays the same
@@ -156,7 +156,7 @@
 
 b) The power of the station may be at most $10.4\,\text{kW}$ during the peak.
 
-c) The station may use the full power $11\,\text{kW}$ when the power of the house is at most $17.25\,\text{kW} - 11\,\text{kW} = 6.25\,\text{kW}$. In the table only $19\text{–}20$ exceeds this ($6.8\,\text{kW}$), so in the other hours no load management is needed under this assumption (the power of the house stays at the table value for an hour), but at $19\text{–}20$ the station has to be limited. In reality, peaks within the hour may require load management.
+c) The station may use the full power $11\,\text{kW}$ when the power of the house is at most $$17.25\,\text{kW} - 11\,\text{kW} = 6.25\,\text{kW}$$. In the table only $19\text{–}20$ exceeds this ($6.8\,\text{kW}$), so in the other hours no load management is needed under this assumption (the power of the house stays at the table value for an hour), but at $19\text{–}20$ the station has to be limited. In reality, peaks within the hour may require load management.
 **Reasonableness:** Current during the peak: house $6800\,\text{W} : 690\,\text{V} \approx 9.9\,\text{A}$ and station $10\,400\,\text{W} : 690\,\text{V} \approx 15.1\,\text{A}$ in each phase, together about $24.9\,\text{A}$, just under the limit of the main fuse. The result is smaller than the $11\,\text{kW}$ of the station, as it should be during the peak.
 
 ## fy6-16-L2-06
@@ -180,7 +180,7 @@ b) The correct charging time is $5.3\,\text{h}$.
 **Reading the graph:** The points are joined with straight lines, and the area of each half-hour interval is the mean of the powers at the end points of the interval times $\Delta t = 0.5\,\text{h}$. The first and last powers are $11.0\,\text{kW}$ and $1.4\,\text{kW}$, and in between are $11.0$, $10.8$, $8.7$, $5.9$ and $3.1\,\text{kW}$.
 **Formula:** interval by interval $W_i = \Delta t \cdot \dfrac{P_i + P_{i+1}}{2}$, the sum over all the intervals $W_\text{grid} = \sum W_i$, and $P_\text{avg} = \dfrac{W_\text{grid}}{t}$
 **Conversions:** Not needed: kilowatts times hours gives kilowatt-hours.
-**Substitution:** The sum of the intermediate powers is $11.0 + 10.8 + 8.7 + 5.9 + 3.1 = 39.5\,\text{kW}$ and the mean of the end points $(11.0 + 1.4) : 2 = 6.2\,\text{kW}$, so $W_\text{grid} = 0.5\,\text{h} \cdot (6.2\,\text{kW} + 39.5\,\text{kW}) = 22.85\,\text{kWh}$ and $P_\text{avg} = \dfrac{22.85\,\text{kWh}}{3.0\,\text{h}} = 7.617\,\text{kW}$
+**Substitution:** The sum of the intermediate powers is $$\begin{aligned} &11.0 + 10.8 + 8.7 + 5.9 + 3.1 \\ &= 39.5\,\text{kW} \end{aligned}$$ and the mean of the end points $(11.0 + 1.4) : 2 = 6.2\,\text{kW}$, so $$\begin{aligned} W_\text{grid} &= 0.5\,\text{h} \\ &\cdot (6.2\,\text{kW} + 39.5\,\text{kW}) \\ &= 22.85\,\text{kWh} \end{aligned}$$ and $P_\text{avg} = \dfrac{22.85\,\text{kWh}}{3.0\,\text{h}} = 7.617\,\text{kW}$
 **Answer:** In the answer box $23\,\text{kWh}$, two significant figures like the powers. a) The energy taken from the grid is $23\,\text{kWh}$.
 
 b) The average power is $7.6\,\text{kW}$.
@@ -223,12 +223,12 @@ that is, $t \approx 11\,\text{h}$. Losses make charging longer, so both are too 
 **Principle:** The yearly cost is the amount consumed times the price. With the electric car the energy taken from the grid is paid for, so the energy consumed from the battery is divided by the efficiency. With the petrol car the litres bought are paid for. For both, the consumption is directly proportional to the distance driven, so the consumption per $100\,\text{km}$ is multiplied by the number $s : 100\,\text{km}$.
 **Formula:** $W_\text{grid} = \dfrac{s}{100\,\text{km}} \cdot \dfrac{w}{\eta}$, $K_\text{e} = a W_\text{grid}$, $K_\text{p} = \dfrac{s}{100\,\text{km}} \cdot v b$ and $\Delta K = K_\text{p} - K_\text{e}$, where $w = 16.0\,\text{kWh}$ and $v = 6.50\,\textsf{l}$
 **Conversions:** $a_\text{home} = 15\,\text{c/kWh} = 0.15\,\text{€/kWh}$ and $\eta = 0.900$
-**Substitution:** The sum of the monthly distances is $s = 14\,640\,\text{km}$, so $s : 100\,\text{km} = 146.4$. Electric car: $W_\text{grid} = 146.4 \cdot 16.0\,\text{kWh} : 0.900 = 2602.7\,\text{kWh}$ and $K_\text{e} = 0.15\,\text{€/kWh} \cdot 2602.7\,\text{kWh} = 390.4\,\text{€}$. Petrol car: $K_\text{p} = 146.4 \cdot 6.50\,\textsf{l} \cdot 1.85\,\text{€/}\textsf{l} = 1760.5\,\text{€}$. The difference is $\Delta K = 1760.5\,\text{€} - 390.4\,\text{€} = 1370.1\,\text{€}$.
+**Substitution:** The sum of the monthly distances is $s = 14\,640\,\text{km}$, so $s : 100\,\text{km} = 146.4$. Electric car: $W_\text{grid} = 146.4 \cdot 16.0\,\text{kWh} : 0.900 = 2602.7\,\text{kWh}$ and $$\begin{aligned} K_\text{e} &= 0.15\,\text{€/kWh} \cdot 2602.7\,\text{kWh} \\ &= 390.4\,\text{€} \end{aligned}$$. Petrol car: $K_\text{p} = 146.4 \cdot 6.50\,\textsf{l} \cdot 1.85\,\text{€/}\textsf{l} = 1760.5\,\text{€}$. The difference is $\Delta K = 1760.5\,\text{€} - 390.4\,\text{€} = 1370.1\,\text{€}$.
 **Answer:** In the answer box $1.37 \cdot 10^{3}\,\text{€}$, that is, rounded to ten euros, because the cost of electricity $390\,\text{€}$ is accurate to two significant figures. a) The yearly driving distance is $14\,640\,\text{km}$.
 
 b) The petrol car costs about $1.37 \cdot 10^{3}\,\text{€}$ more in a year.
 
-c) With public charging $K_\text{e} = 0.45\,\text{€/kWh} \cdot 2602.7\,\text{kWh} = 1171.2\,\text{€}$, which is still less than the $1760.5\,\text{€}$ of the petrol car. The saving decreases to $1760.5\,\text{€} - 1171.2\,\text{€} = 589.3\,\text{€}$, that is, by about $780\,\text{€}$, but the electric car is still cheaper, because its energy consumption is small and its cost is about two thirds of the cost of the petrol car.
+c) With public charging $$\begin{aligned} K_\text{e} &= 0.45\,\text{€/kWh} \cdot 2602.7\,\text{kWh} \\ &= 1171.2\,\text{€} \end{aligned}$$, which is still less than the $1760.5\,\text{€}$ of the petrol car. The saving decreases to $1760.5\,\text{€} - 1171.2\,\text{€} = 589.3\,\text{€}$, that is, by about $780\,\text{€}$, but the electric car is still cheaper, because its energy consumption is small and its cost is about two thirds of the cost of the petrol car.
 **Reasonableness:** Estimate: $15\,000\,\text{km}$ is $150$ times $100\,\text{km}$. The electric car costs about $150 \cdot 2.7\,\text{€} \approx 400\,\text{€}$ ($100\,\text{km}$ costs $17.8\,\text{kWh} \cdot 0.15\,\text{€/kWh} \approx 2.7\,\text{€}$) and the petrol car $150 \cdot 12\,\text{€} = 1800\,\text{€}$ ($100\,\text{km}$ costs $6.5\,\textsf{l} \cdot 1.85\,\text{€/}\textsf{l} \approx 12\,\text{€}$), so the difference is about $1400\,\text{€}$. The energy taken from the grid, $17.8\,\text{kWh}$ per hundred kilometres, is larger than the $16.0\,\text{kWh}$ consumed from the battery, as it should be because of the losses.
 
 ## fy6-16-L3-05
@@ -236,14 +236,14 @@ c) With public charging $K_\text{e} = 0.45\,\text{€/kWh} \cdot 2602.7\,\text{k
 **Find:** b) the largest charging current $I_\text{s}$ in amperes and c) the heating power of the cable $P_\text{cable}$ at two currents
 **Principle:** The currents through the same phase conductor are added, and the sum may be at most the current of the main fuse. The loads of the house are divided equally between the phases, so the current of the house per phase is obtained from the formula for three-phase power. A single-phase station loads only one phase, so what is left of that phase remains for it. The copper conductors of the cable are a resistor, in which the power according to Joule's law is $RI^2$.
 **Formula:** $P_\text{house} = 3UI_\text{house}$, so $I_\text{house} = \dfrac{P_\text{house}}{3U}$; $I_\text{house} + I_\text{s} \le I_\text{f}$, so $I_\text{s} = I_\text{f} - I_\text{house}$; $P_\text{cable} = \rho \dfrac{2l}{A} I^2$
-**Conversions:** $P_\text{house} = 6.0\,\text{kW} + 3.3\,\text{kW} + 1.8\,\text{kW} + 0.90\,\text{kW} = 12.0\,\text{kW} = 12\,000\,\text{W}$ and $A = 2.5\,\text{mm}^2 = 2.5 \cdot 10^{-6}\,\text{m}^2$
-**Substitution:** $I_\text{house} = \dfrac{12\,000\,\text{W}}{3 \cdot 230\,\text{V}} = 17.39\,\text{A}$ and $I_\text{s} = 25\,\text{A} - 17.39\,\text{A} = 7.609\,\text{A}$. The resistance of the cable is $R = 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \dfrac{2 \cdot 30\,\text{m}}{2.5 \cdot 10^{-6}\,\text{m}^2} = 0.408\,\Omega$, so $P_\text{cable} = 0.408\,\Omega \cdot (7.609\,\text{A})^2 = 23.6\,\text{W}$ and at a current of $16\,\text{A}$ $P_\text{cable} = 0.408\,\Omega \cdot (16\,\text{A})^2 = 104.4\,\text{W}$.
+**Conversions:** $$\begin{aligned} P_\text{house} &= 6.0\,\text{kW} + 3.3\,\text{kW} \\ &+ 1.8\,\text{kW} + 0.90\,\text{kW} \\ &= 12.0\,\text{kW} \\ &= 12\,000\,\text{W} \end{aligned}$$ and $A = 2.5\,\text{mm}^2 = 2.5 \cdot 10^{-6}\,\text{m}^2$
+**Substitution:** $I_\text{house} = \dfrac{12\,000\,\text{W}}{3 \cdot 230\,\text{V}} = 17.39\,\text{A}$ and $I_\text{s} = 25\,\text{A} - 17.39\,\text{A} = 7.609\,\text{A}$. The resistance of the cable is $$\begin{aligned} R &= 1.7 \cdot 10^{-8}\,\Omega\cdot\text{m} \\ &\cdot \dfrac{2 \cdot 30\,\text{m}}{2.5 \cdot 10^{-6}\,\text{m}^2} \\ &= 0.408\,\Omega \end{aligned}$$, so $P_\text{cable} = 0.408\,\Omega \cdot (7.609\,\text{A})^2 = 23.6\,\text{W}$ and at a current of $16\,\text{A}$ $P_\text{cable} = 0.408\,\Omega \cdot (16\,\text{A})^2 = 104.4\,\text{W}$.
 **Answer:** In the answer box $7.6\,\text{A}$, two significant figures like the powers of the loads. The current may be at most the calculated value, so the limit is rounded down. a) The current of the house is $17\,\text{A}$ in each phase conductor.
 
 b) The station may draw at most $7.6\,\text{A}$.
 
 c) The heating power of the cable is $24\,\text{W}$ at a current of $7.6\,\text{A}$ and $104\,\text{W}$ at a current of $16\,\text{A}$. The current increases by a factor of $16 : 7.609 \approx 2.1$, but the power increases by its square, to about $4.4$ times. In the evening the main fuse is already almost full, and $16\,\text{A}$ would exceed it ($17.4\,\text{A} + 16\,\text{A} = 33.4\,\text{A}$), so load management has to limit the charging current for the peak time; a smaller current also keeps the cable cooler.
-**Reasonableness:** The current of the house and the current of the station together are $17.39\,\text{A} + 7.609\,\text{A} = 25.0\,\text{A}$, exactly the limit of the main fuse. The power of the station would be only $230\,\text{V} \cdot 7.609\,\text{A} \approx 1.75\,\text{kW}$, so slow charging is physically reasonable at peak time: at night, when the sauna heater and the stove are off, the current can be increased again.
+**Reasonableness:** The current of the house and the current of the station together are $$17.39\,\text{A} + 7.609\,\text{A} = 25.0\,\text{A}$$, exactly the limit of the main fuse. The power of the station would be only $230\,\text{V} \cdot 7.609\,\text{A} \approx 1.75\,\text{kW}$, so slow charging is physically reasonable at peak time: at night, when the sauna heater and the stove are off, the current can be increased again.
 
 ## fy6-16-L2-09
 **Given:** powers and times read from the graph, price $a = 16\,\text{c/kWh}$
@@ -252,6 +252,6 @@ c) The heating power of the cable is $24\,\text{W}$ at a current of $7.6\,\text{
 **Reading the graph:** The power is $P_1 = 2\,\text{kW}$ at 18–19, $P_2 = 5\,\text{kW}$ at 19–20, $P_3 = 7\,\text{kW}$ at 20–21 and $P_4 = 3\,\text{kW}$ at 21–22. Each period lasts $\Delta t = 1.0\,\text{h}$.
 **Formula:** $W = (P_1 + P_2 + P_3 + P_4) \Delta t$ and $K = a W$
 **Conversions:** $a = 16\,\text{c/kWh} = 0.16\,\text{€/kWh}$
-**Substitution:** $W = (2\,\text{kW} + 5\,\text{kW} + 7\,\text{kW} + 3\,\text{kW}) \cdot 1.0\,\text{h} = 17\,\text{kWh}$ and $K = 0.16\,\text{€/kWh} \cdot 17\,\text{kWh} = 2.72\,\text{€}$
+**Substitution:** $$\begin{aligned} W &= (2\,\text{kW} + 5\,\text{kW} + 7\,\text{kW} \\ &+ 3\,\text{kW}) \\ &\cdot 1.0\,\text{h} \\ &= 17\,\text{kWh} \end{aligned}$$ and $K = 0.16\,\text{€/kWh} \cdot 17\,\text{kWh} = 2.72\,\text{€}$
 **Answer:** $2.7\,\text{€}$, two significant figures like the values read from the graph.
 **Reasonableness:** The mean power is $17\,\text{kWh} : 4.0\,\text{h} \approx 4.3\,\text{kW}$, which lies between the smallest and the largest power of the graph. Four hours at about $4\,\text{kW}$ is about $17\,\text{kWh}$, and it costs about $17 \cdot 0.16\,\text{€} \approx 2.7\,\text{€}$.

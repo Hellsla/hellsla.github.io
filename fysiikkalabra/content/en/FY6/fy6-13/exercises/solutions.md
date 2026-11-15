@@ -37,7 +37,7 @@
 **Conversions:** $d = 1.0\,\text{mm} = 1.0 \cdot 10^{-3}\,\text{m}$
 **Substitution:** $C = \dfrac{8.854 \cdot 10^{-12}\,\text{F/m} \cdot 0.025\,\text{m}^2}{1.0 \cdot 10^{-3}\,\text{m}} = 221 \cdot 10^{-12}\,\text{F} = 221\,\text{pF}$
 **Answer:** $2.2 \cdot 10^{2}\,\text{pF} = 220\,\text{pF}$ (the calculated value $221\,\text{pF}$ rounded to two significant figures like the area and the distance).
-**Reasonableness:** The ratio $A : d = 0.025\,\text{m}^2 : 0.0010\,\text{m} = 25\,\text{m}$, and $25\,\text{m} \cdot 8.854\,\text{pF/m} \approx 220\,\text{pF}$. The capacitance of a parallel-plate capacitor with air is typically hundreds of picofarads.
+**Reasonableness:** The ratio $A : d = 0.025\,\text{m}^2 : 0.0010\,\text{m} = 25\,\text{m}$, and $$25\,\text{m} \cdot 8.854\,\text{pF/m} \approx 220\,\text{pF}$$. The capacitance of a parallel-plate capacitor with air is typically hundreds of picofarads.
 
 ## fy6-13-L1-05
 **Given:** the graph of the voltage as a function of the charge, voltage $U = 12\,\text{V}$
@@ -106,7 +106,7 @@
 **Principle:** The source keeps the voltage the same all the time. The dielectric makes the capacitance $\varepsilon_\text{r}$ times as large, so at the same voltage the plates have $\varepsilon_\text{r}$ times the charge, and the source brings the difference.
 **Formula:** $Q_1 = C_1 U$ and $Q_2 = \varepsilon_\text{r} C_1 U$, from which $\Delta Q = Q_2 - Q_1 = (\varepsilon_\text{r} - 1) C_1 U$
 **Conversions:** $C_1 = 220\,\text{pF} = 220 \cdot 10^{-12}\,\text{F}$ and $U = 1.5\,\text{kV} = 1.5 \cdot 1000\,\text{V} = 1500\,\text{V}$
-**Substitution:** $\Delta Q = (5.6 - 1) \cdot 220 \cdot 10^{-12}\,\text{F} \cdot 1500\,\text{V} = 1.518 \cdot 10^{-6}\,\text{C}$
+**Substitution:** $$\begin{aligned} \Delta Q &= (5.6 - 1) \cdot 220 \cdot 10^{-12}\,\text{F} \\ &\cdot 1500\,\text{V} \\ &= 1.518 \cdot 10^{-6}\,\text{C} \end{aligned}$$
 **Answer:** $1.5\,\mu\text{C}$, two significant figures like the voltage $1.5\,\text{kV}$ and the relative permittivity $5.6$.
 **Reasonableness:** At the start the charge is $220\,\text{pF} \cdot 1500\,\text{V} = 0.33\,\mu\text{C}$, and with glass $5.6$ times as much, that is, $1.85\,\mu\text{C}$. The increase $1.5\,\mu\text{C}$ is the difference. If the source had been disconnected, the charge would not have changed at all.
 
@@ -118,7 +118,7 @@
 **Conversions:** $U = 6.0\,\text{kV} = 6000\,\text{V}$, $E_\text{max} = 24 \cdot 10^{6}\,\text{V/m}$, $C = 1.0 \cdot 10^{-9}\,\text{F}$ and finally $1\,\text{m}^2 = 100\,\text{cm} \cdot 100\,\text{cm} = 10\,000\,\text{cm}^2$
 **Substitution:** $d = \dfrac{2 \cdot 6000\,\text{V}}{24 \cdot 10^{6}\,\text{V/m}} = 5.0 \cdot 10^{-4}\,\text{m}$ and $A = \dfrac{1.0 \cdot 10^{-9}\,\text{F} \cdot 5.0 \cdot 10^{-4}\,\text{m}}{8.854 \cdot 10^{-12}\,\text{F/m} \cdot 2.6} \approx 0.0217\,\text{m}^2 = 217\,\text{cm}^2$
 **Answer:** $220\,\text{cm}^2$, that is, $2.2 \cdot 10^{2}\,\text{cm}^2$, two significant figures like the capacitance and the voltage.
-**Reasonableness:** The dielectric is $0.50\,\text{mm}$ thick, and the field in it is $6000\,\text{V} : 0.50\,\text{mm} = 12\,\text{MV/m}$, half of the dielectric strength. The side of a square would be about $15\,\text{cm}$. A thinner dielectric would make the plates smaller, but the capacitor would no longer withstand the voltage safely.
+**Reasonableness:** The dielectric is $0.50\,\text{mm}$ thick, and the field in it is $$\begin{aligned} &6000\,\text{V} : 0.50\,\text{mm} \\ &= 12\,\text{MV/m} \end{aligned}$$, half of the dielectric strength. The side of a square would be about $15\,\text{cm}$. A thinner dielectric would make the plates smaller, but the capacitor would no longer withstand the voltage safely.
 
 ## fy6-13-L1-06
 **Find:** what happens to the capacitance when the voltage doubles.
@@ -195,7 +195,7 @@ $W = 7.2 \cdot 10^{-3}\,\text{J} = 7.2\,\text{mJ}$
 **Substitution:** $W = \tfrac{1}{2} \cdot 220 \cdot 10^{-6}\,\text{F} \cdot (24\,\text{V})^2 = 0.0634\,\text{J} = 63.4\,\text{mJ}$
 **Answer:** $63\,\text{mJ}$, two significant figures, because the limiting datum is the voltage $24\,\text{V}$; the capacitance $220\,\mu\text{F}$ has three.
 **Model answer on the error:** The student’s $QU = 127\,\text{mJ}$ is the energy given by the source, but only half of it is stored in the capacitor. During charging the voltage of the capacitor is at first zero and grows only gradually to $24\,\text{V}$, so the charge does not move across the full voltage all the time. The other half, about $63\,\text{mJ}$, becomes internal energy of the wires and resistors and passes to the surroundings as heat.
-**Reasonableness:** The stored energy is $\tfrac{1}{2} \cdot 5.28\,\text{mC} \cdot 24\,\text{V} = 63.4\,\text{mJ}$, the same result, and it is exactly half of the student’s figure $127\,\text{mJ}$.
+**Reasonableness:** The stored energy is $$\tfrac{1}{2} \cdot 5.28\,\text{mC} \cdot 24\,\text{V} = 63.4\,\text{mJ}$$, the same result, and it is exactly half of the student’s figure $127\,\text{mJ}$.
 
 ## fy6-13-L3-04
 **Given:** charging current $I = 15\,\text{mA}$, the points $(t;\ U)$ of the table: $(0\,\text{s};\ 0\,\text{V})$, $(2\,\text{s};\ 203\,\text{V})$, $(4\,\text{s};\ 396\,\text{V})$, $(6\,\text{s};\ 607\,\text{V})$, $(8\,\text{s};\ 805\,\text{V})$, $(10\,\text{s};\ 992\,\text{V})$ and $(12\,\text{s};\ 1201\,\text{V})$, voltage of the shock $1.8\,\text{kV}$, discharge time $5.0\,\text{ms}$

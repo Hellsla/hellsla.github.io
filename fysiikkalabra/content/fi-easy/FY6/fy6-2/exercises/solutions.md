@@ -14,7 +14,7 @@
 **Periaate:** Virheraja on prosenttiosuus lukemasta ja siihen lisätty kaksi viimeisen numeron askelta. Alueella $200\,\text{mA}$ viimeinen numero on milliampeerin kymmenesosa. Yksi askel on siis $0{,}1\,\text{mA}$.
 **Kaava:** $\Delta I = p \cdot I + n \cdot r$
 **Muunnokset:** $p = 1{,}0\,\% = 0{,}010$. Lukema ja resoluutio ovat jo milliampeereina.
-**Sijoitus:** $\Delta I = 0{,}010 \cdot 146{,}3\,\text{mA} + 2 \cdot 0{,}1\,\text{mA} = 1{,}463\,\text{mA} + 0{,}2\,\text{mA} = 1{,}663\,\text{mA}$
+**Sijoitus:** $$\begin{aligned} \Delta I &= 0{,}010 \cdot 146{,}3\,\text{mA} + 2 \\ &\cdot 0{,}1\,\text{mA} \\ &= 1{,}463\,\text{mA} + 0{,}2\,\text{mA} \\ &= 1{,}663\,\text{mA} \end{aligned}$$
 **Vastaus:** $1{,}7\,\text{mA}$. Vastauksessa on kaksi merkitsevää numeroa, koska virherajan ensimmäinen numero on 1.
 **Järkevyys:** Prosentti $146\,\text{mA}$:sta on noin $1{,}5\,\text{mA}$. Numeroiden osuus $0{,}2\,\text{mA}$ on sitä pienempi, koska lukema on lähellä alueen ylärajaa. Tulos on vähän yli prosentin lukemasta.
 
@@ -64,7 +64,7 @@
 **Periaate:** Virheraja on osuus lukemasta ja siihen lisätty kaksi viimeisen numeron askelta. Lukema ja resoluutio on ilmoitettu eri yksiköissä. Siksi ne muutetaan samaan yksikköön ennen yhteenlaskua.
 **Kaava:** $\Delta I = p \cdot I + n \cdot r$
 **Muunnokset:** $p = 1{,}0\,\% = 0{,}010$ ja $r = 0{,}1\,\text{mA} = 0{,}1 \cdot 0{,}001\,\text{A} = 0{,}0001\,\text{A}$
-**Sijoitus:** $\Delta I = 0{,}010 \cdot 0{,}0875\,\text{A} + 2 \cdot 0{,}0001\,\text{A} = 0{,}000875\,\text{A} + 0{,}0002\,\text{A} = 0{,}001075\,\text{A}$
+**Sijoitus:** $$\begin{aligned} \Delta I &= 0{,}010 \cdot 0{,}0875\,\text{A} + 2 \\ &\cdot 0{,}0001\,\text{A} \\ &= 0{,}000875\,\text{A} + 0{,}0002\,\text{A} \\ &= 0{,}001075\,\text{A} \end{aligned}$$
 **Vastaus:** $0{,}0011\,\text{A}$ eli noin $1{,}1\,\text{mA}$. Vastauksessa on kaksi merkitsevää numeroa, koska virherajan ensimmäinen numero on 1.
 **Järkevyys:** Näyttö näyttää $87{,}5\,\text{mA}$. Prosentti siitä on noin $0{,}9\,\text{mA}$ ja kaksi askelta on $0{,}2\,\text{mA}$. Yhteensä tulee noin $1{,}1\,\text{mA}$. Jos resoluutiota ei muuntaisi ampeereiksi, tulos olisi järjetön $0{,}2\,\text{A}$. Se on suurempi kuin itse virta.
 
@@ -74,7 +74,7 @@
 **Periaate:** Prosenttiosa on molemmilla alueilla lähes sama, koska lukema on sama. Ero syntyy numeroiden osuudesta. Suuremmalla alueella viimeinen numero on kymmenen kertaa karkeampi.
 **Kaava:** $\Delta U = p \cdot U + n \cdot r$, joten $\dfrac{\Delta U_{20}}{\Delta U_2} = \dfrac{p \cdot U_{20} + n \cdot r_{20}}{p \cdot U_2 + n \cdot r_2}$
 **Muunnokset:** $p = 0{,}5\,\% = 0{,}005$. Jännitteet ovat voltteina.
-**Sijoitus:** $\Delta U_2 = 0{,}005 \cdot 1{,}234\,\text{V} + 2 \cdot 0{,}001\,\text{V} = 0{,}00817\,\text{V}$ ja $\Delta U_{20} = 0{,}005 \cdot 1{,}23\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}02615\,\text{V}$, joten $\dfrac{\Delta U_{20}}{\Delta U_2} = \dfrac{0{,}02615\,\text{V}}{0{,}00817\,\text{V}} = 3{,}20$
+**Sijoitus:** $$\begin{aligned} \Delta U_2 &= 0{,}005 \cdot 1{,}234\,\text{V} + 2 \\ &\cdot 0{,}001\,\text{V} \\ &= 0{,}00817\,\text{V} \end{aligned}$$ ja $\Delta U_{20} = 0{,}005 \cdot 1{,}23\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}02615\,\text{V}$, joten $\dfrac{\Delta U_{20}}{\Delta U_2} = \dfrac{0{,}02615\,\text{V}}{0{,}00817\,\text{V}} = 3{,}20$
 **Vastaus:** $3{,}2$. Suhde lasketaan pyöristämättömistä virherajoista. Ne ovat arvioita, joten kaksi numeroa riittää. Alueen $20\,\text{V}$ virheraja on noin kolminkertainen.
 **Järkevyys:** Jos virheraja olisi pelkkiä numeroita, suhde olisi $10$. Jos se olisi pelkkä prosenttiosa, suhde olisi $1$. Tulos on näiden välissä ja lähempänä pientä päätä. Syy on se, että alueella $2\,\text{V}$ prosenttiosa $0{,}006\,\text{V}$ on suurempi kuin numeroiden osuus $0{,}002\,\text{V}$.
 
@@ -102,9 +102,9 @@
 **Annettu:** mittari A: lukema $U_\text{A} = 5{,}02\,\text{V}$, virheraja $\pm(0{,}5\,\% + 2\ \text{numeroa})$. Mittari B: lukema $U_\text{B} = 5{,}14\,\text{V}$, virheraja $\pm(1{,}5\,\% + 3\ \text{numeroa})$. Molemmilla resoluutio on $r = 0{,}01\,\text{V}$. Lukemien ero on $0{,}12\,\text{V}$.
 **Kysytty:** virherajojen summa $\Delta U_\text{A} + \Delta U_\text{B}$ voltteina. Lisäksi kysytään, voiko eroa pitää todisteena viasta.
 **Periaate:** Valmistajan mukaan kummankin lukeman oikea arvo on oman virherajan sisällä. Lukemat sopivat yhteen, jos niiden välit menevät päällekkäin. Silloin ero on pienempi kuin virherajojen summa. Tällöin eroa ei voi osoittaa mittareiden viaksi.
-**Kaava:** $\Delta U = p \cdot U + n \cdot r$, joten $\Delta U_\text{A} + \Delta U_\text{B} = p_\text{A} \cdot U_\text{A} + n_\text{A} \cdot r + p_\text{B} \cdot U_\text{B} + n_\text{B} \cdot r$
+**Kaava:** $\Delta U = p \cdot U + n \cdot r$, joten $$\begin{aligned} &\Delta U_\text{A} + \Delta U_\text{B} \\ &= p_\text{A} \cdot U_\text{A} + n_\text{A} \cdot r + p_\text{B} \cdot U_\text{B} \\ &+ n_\text{B} \cdot r \end{aligned}$$
 **Muunnokset:** $p_\text{A} = 0{,}5\,\% = 0{,}005$ ja $p_\text{B} = 1{,}5\,\% = 0{,}015$. Jännitteet ovat voltteina.
-**Sijoitus:** $\Delta U_\text{A} = 0{,}005 \cdot 5{,}02\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}0451\,\text{V}$ ja $\Delta U_\text{B} = 0{,}015 \cdot 5{,}14\,\text{V} + 3 \cdot 0{,}01\,\text{V} = 0{,}1071\,\text{V}$, joten $\Delta U_\text{A} + \Delta U_\text{B} = 0{,}0451\,\text{V} + 0{,}1071\,\text{V} = 0{,}1522\,\text{V}$
+**Sijoitus:** $\Delta U_\text{A} = 0{,}005 \cdot 5{,}02\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}0451\,\text{V}$ ja $\Delta U_\text{B} = 0{,}015 \cdot 5{,}14\,\text{V} + 3 \cdot 0{,}01\,\text{V} = 0{,}1071\,\text{V}$, joten $$\begin{aligned} &\Delta U_\text{A} + \Delta U_\text{B} \\ &= 0{,}0451\,\text{V} + 0{,}1071\,\text{V} \\ &= 0{,}1522\,\text{V} \end{aligned}$$
 **Vastaus:** $0{,}15\,\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, koska virherajojen summan ensimmäinen numero on 1. Lukemien ero $0{,}12\,\text{V}$ on pienempi kuin $0{,}15\,\text{V}$. Välit $4{,}97$–$5{,}07\,\text{V}$ ja $5{,}03$–$5{,}25\,\text{V}$ menevät siis päällekkäin. Eron perusteella kumpaakaan mittaria ei voi sanoa vialliseksi. Se ei silti todista, että mittarit näyttäisivät aina saman.
 **Järkevyys:** Halvemman mittarin virheraja on yli kaksinkertainen. Sitä sen suurempi prosentti ja numeromäärä antavat odottaa. Ero $0{,}12\,\text{V}$ on noin $2\,\%$ lukemasta. Se on samaa suuruusluokkaa kuin mittari B:n virheraja.
 
@@ -147,7 +147,7 @@
 **Kaava:** $\Delta U = p \cdot U + n \cdot r$
 **Muunnokset:** $p = 0{,}5\,\% = 0{,}005$. Lukemat ja resoluutiot ovat voltteina. Lopuksi tulos muutetaan millivolteiksi: $1\,\text{V} = 1000\,\text{mV}$.
 **Sijoitus:**
-$\Delta U_2 = 0{,}005 \cdot 1{,}847\,\text{V} + 2 \cdot 0{,}001\,\text{V} = 0{,}009235\,\text{V} + 0{,}002\,\text{V} = 0{,}011235\,\text{V} = 11{,}235\,\text{mV}$
+$$\begin{aligned} \Delta U_2 &= 0{,}005 \cdot 1{,}847\,\text{V} + 2 \\ &\cdot 0{,}001\,\text{V} \\ &= 0{,}009235\,\text{V} + 0{,}002\,\text{V} \\ &= 0{,}011235\,\text{V} \\ &= 11{,}235\,\text{mV} \end{aligned}$$
 $\Delta U_{20} = 0{,}005 \cdot 1{,}85\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}00925\,\text{V} + 0{,}02\,\text{V} = 0{,}02925\,\text{V} = 29{,}25\,\text{mV}$
 $\Delta U_{200} = 0{,}005 \cdot 1{,}8\,\text{V} + 2 \cdot 0{,}1\,\text{V} = 0{,}009\,\text{V} + 0{,}2\,\text{V} = 0{,}209\,\text{V} = 209\,\text{mV}$
 **Vastaus:** paras alue on $2\,\text{V}$, koska sen virheraja on pienin: $11\,\text{mV}$. Vastauksessa on kaksi merkitsevää numeroa, koska ensimmäinen numero on 1. Laskimen arvo on $11{,}235\,\text{mV}$. Alueen $20\,\text{V}$ virheraja on $29\,\text{mV}$ ja alueen $200\,\text{V}$ virheraja $209\,\text{mV}$. Jännite mahtuu alueelle $2\,\text{V}$. Pienin sopiva alue antaa siis tarkimman tuloksen.
@@ -164,7 +164,7 @@ $\Delta U_{200} = 0{,}005 \cdot 1{,}8\,\text{V} + 2 \cdot 0{,}1\,\text{V} = 0{,}
 **Periaate:** Toistomittaus kertoo, kuinka paljon lukemat hajoavat. Puolet vaihteluvälistä on yksinkertainen arvio hajonnasta. Se ei ole keskiarvon epävarmuus. Mittarin virheraja ei pienene toistamalla, koska se kuuluu mittariin. Tulos on sopusoinnussa vertailuarvon kanssa, jos arvojen ero on pienempi kuin virheraja.
 **Kaava:** $U_\text{ka} = \dfrac{\text{lukemien summa}}{N}$, hajonnan arvio $\dfrac{U_\text{max} - U_\text{min}}{2}$ ja virheraja $\Delta U = p \cdot U_\text{ka} + n \cdot r$
 **Muunnokset:** $p = 0{,}5\,\% = 0{,}005$. Kaikki jännitteet ovat voltteina.
-**Sijoitus:** a) Lukemien summa on $62{,}45\,\text{V}$ ja lukemia on $N = 5$, joten $U_\text{ka} = 62{,}45\,\text{V} : 5 = 12{,}49\,\text{V}$. b) Hajonnan arvio on $(12{,}52\,\text{V} - 12{,}46\,\text{V}) : 2 = 0{,}03\,\text{V}$. c) $\Delta U = 0{,}005 \cdot 12{,}49\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}06245\,\text{V} + 0{,}02\,\text{V} = 0{,}08245\,\text{V}$
+**Sijoitus:** a) Lukemien summa on $62{,}45\,\text{V}$ ja lukemia on $N = 5$, joten $U_\text{ka} = 62{,}45\,\text{V} : 5 = 12{,}49\,\text{V}$. b) Hajonnan arvio on $$(12{,}52\,\text{V} - 12{,}46\,\text{V}) : 2 = 0{,}03\,\text{V}$$. c) $\Delta U = 0{,}005 \cdot 12{,}49\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}06245\,\text{V} + 0{,}02\,\text{V} = 0{,}08245\,\text{V}$
 **Vastaus:** c)-kohdan virheraja on $0{,}08\,\text{V}$. Vastauksessa on yksi merkitsevä numero, koska ensimmäinen numero on 8. Laskimen arvo on $0{,}08245\,\text{V}$. Keskiarvo on $12{,}49\,\text{V}$ ja hajonnan arvio $0{,}03\,\text{V}$. Lepojännitteen ja keskiarvon ero on $12{,}60\,\text{V} - 12{,}49\,\text{V} = 0{,}11\,\text{V}$. Se on suurempi kuin virheraja $0{,}08\,\text{V}$. Tulos $12{,}49\,\text{V} \pm 0{,}08\,\text{V}$ ei ole sopusoinnussa täyteen ladatun akun lepojännitteen kanssa. Akku on todennäköisesti osittain purkautunut. Toistaminen ei auttaisi, koska hajonta $0{,}03\,\text{V}$ on jo pieni ja virheraja kuuluu mittariin.
 **Järkevyys:** Tulosväli $12{,}41$–$12{,}57\,\text{V}$ ei sisällä arvoa $12{,}60\,\text{V}$. Väli on kuitenkin lähellä sitä, joten akku on vain vähän vajaa. Virheraja $0{,}08\,\text{V}$ on lähes kolminkertainen hajonnan arvioon $0{,}03\,\text{V}$ nähden. Mittarin oma virheraja hallitsee siis tulosta, eikä lukemien toistaminen pienennä sitä.
 
@@ -176,7 +176,7 @@ $\Delta U_{200} = 0{,}005 \cdot 1{,}8\,\text{V} + 2 \cdot 0{,}1\,\text{V} = 0{,}
 **Muunnokset:** Vastusten suhteet ovat paljaita lukuja, joten megaohmeja ei tarvitse muuntaa: $\dfrac{R_1}{R_2} = 1{,}0$ ja $\dfrac{R_1}{R_\text{m}} = \dfrac{1{,}0\,\text{M}\Omega}{10\,\text{M}\Omega} = 0{,}10$.
 **Sijoitus:** a) Ilman mittaria vastuksilla on sama virta ja sama resistanssi, joten jännite jakautuu tasan: $U_\text{ilman} = 12{,}0\,\text{V} : 2 = 6{,}00\,\text{V}$. b) Kerrotaan yhtälö $\dfrac{U_0 - U}{R_1} = \dfrac{U}{R_2} + \dfrac{U}{R_\text{m}}$ puolittain resistanssilla $R_1$: $U_0 - U = U \cdot \dfrac{R_1}{R_2} + U \cdot \dfrac{R_1}{R_\text{m}}$. Siirretään $U$ samalle puolelle: $U_0 = U \left(1 + \dfrac{R_1}{R_2} + \dfrac{R_1}{R_\text{m}}\right)$. Sitten jaetaan sulkeella. Silloin $U = \dfrac{12{,}0\,\text{V}}{1 + 1{,}0 + 0{,}10} = \dfrac{12{,}0\,\text{V}}{2{,}10} = 5{,}714\,\text{V}$. c) Pieneneminen on $6{,}00\,\text{V} - 5{,}714\,\text{V} = 0{,}286\,\text{V}$, joten $\dfrac{0{,}286\,\text{V}}{6{,}00\,\text{V}} = 0{,}0476 = 4{,}76\,\%$. d) Lukemalle $5{,}71\,\text{V}$ mittarin virheraja on $\Delta U = 0{,}005 \cdot 5{,}71\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}0486\,\text{V}$.
 **Vastaus:** c)-kohdan tulos on $4{,}8\,\%$. Vastauksessa on kaksi merkitsevää numeroa, kuten annetuissa resistansseissa. Laskimen arvo on $4{,}76\,\%$. Ilman mittaria jännite on $6{,}00\,\text{V}$ ja mittarin näyttämä jännite $5{,}71\,\text{V}$. Mittarin aiheuttama muutos $0{,}286\,\text{V}$ on noin $5{,}9$-kertainen virherajaan $0{,}0486\,\text{V}$ verrattuna. Virheraja kertoo vain mittarin sisäisen epätarkkuuden. Se ei kerro mittarin vaikutusta piiriin. Mittaustulos $5{,}71\,\text{V} \pm 0{,}05\,\text{V}$ ei siis ole luotettava, koska jännite ilman mittaria, $6{,}00\,\text{V}$, jää sen ulkopuolelle. Mittaus on luotettavampi, kun mittarin resistanssi on paljon suurempi kuin mitattavan komponentin resistanssi tai kun vastukset ovat pienempiä. Jos vastukset olisivat $R_1 = R_2 = 10\,\text{k}\Omega$, mittarin vaikutus olisi vain $0{,}05\,\%$.
-**Järkevyys:** Tarkistetaan sijoittamalla takaisin. Vastuksen $R_1$ läpi kulkee virta $(12{,}0 - 5{,}714)\,\text{V} : 1{,}0\,\text{M}\Omega = 6{,}29\,\mu\text{A}$. Se on vastuksen $R_2$ virran ja mittarin virran summa: $5{,}714\,\mu\text{A} + 0{,}571\,\mu\text{A} = 6{,}29\,\mu\text{A}$. Mittari vie vastuksen $R_2$ virrasta lähes kymmenesosan. Jännite pienenee siksi noin $5\,\%$, mikä sopii tulokseen $4{,}8\,\%$. Pienempien vastusten tapauksessa $U = 12{,}0\,\text{V} : 2{,}001 = 5{,}997\,\text{V}$. Se on lähes $6{,}00\,\text{V}$.
+**Järkevyys:** Tarkistetaan sijoittamalla takaisin. Vastuksen $R_1$ läpi kulkee virta $$\begin{aligned} &(12{,}0 - 5{,}714)\,\text{V} : 1{,}0\,\text{M}\Omega \\ &= 6{,}29\,\mu\text{A} \end{aligned}$$. Se on vastuksen $R_2$ virran ja mittarin virran summa: $$\begin{aligned} &5{,}714\,\mu\text{A} + 0{,}571\,\mu\text{A} \\ &= 6{,}29\,\mu\text{A} \end{aligned}$$. Mittari vie vastuksen $R_2$ virrasta lähes kymmenesosan. Jännite pienenee siksi noin $5\,\%$, mikä sopii tulokseen $4{,}8\,\%$. Pienempien vastusten tapauksessa $U = 12{,}0\,\text{V} : 2{,}001 = 5{,}997\,\text{V}$. Se on lähes $6{,}00\,\text{V}$.
 
 ## fy6-2-L3-05
 **Annettu:** esimerkkiaineisto: jännitemittarin resistanssi $10\,\text{M}\Omega$, jännite $U = 4{,}52\,\text{V}$ alueella $20\,\text{V}$ ($r = 0{,}01\,\text{V}$, virheraja $\pm(0{,}5\,\% + 2\ \text{numeroa})$), virta $I = 38{,}4\,\text{mA}$ alueella $200\,\text{mA}$ ($r = 0{,}1\,\text{mA}$, virheraja $\pm(1{,}0\,\% + 2\ \text{numeroa})$). Opiskelijan väite: $R = 117{,}71\,\Omega$, joten vastus ei ole $120\,\Omega$ vaan viallinen.
@@ -184,7 +184,7 @@ $\Delta U_{200} = 0{,}005 \cdot 1{,}8\,\text{V} + 2 \cdot 0{,}1\,\text{V} = 0{,}
 **Periaate:** Resistanssi lasketaan mittaustuloksista osamääränä $R = U : I$. Sen virheraja saadaan osamäärän säännöstä: suhteellinen virheraja on jännitteen ja virran suhteellisten virherajojen summa. Tulos on sopusoinnussa nimellisarvon kanssa, jos nimellisarvo mahtuu tulosväliin. Pelkkä ero lasketusta arvosta ei osoita vikaa.
 **Kaava:** $R = \dfrac{U}{I}$, $\Delta U = p_U \cdot U + n_U \cdot r_U$, $\Delta I = p_I \cdot I + n_I \cdot r_I$ ja $\dfrac{\Delta R}{R} = \dfrac{\Delta U}{U} + \dfrac{\Delta I}{I}$
 **Muunnokset:** $p_U = 0{,}5\,\% = 0{,}005$ ja $p_I = 1{,}0\,\% = 0{,}010$. Virta muutetaan ampeereiksi: $I = 38{,}4\,\text{mA} = 0{,}0384\,\text{A}$.
-**Sijoitus:** a) $R = \dfrac{4{,}52\,\text{V}}{0{,}0384\,\text{A}} = 117{,}71\,\Omega$. b) $\Delta U = 0{,}005 \cdot 4{,}52\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}0426\,\text{V}$, joten $\dfrac{\Delta U}{U} = \dfrac{0{,}0426\,\text{V}}{4{,}52\,\text{V}} = 0{,}00942 = 0{,}94\,\%$. Lisäksi $\Delta I = 0{,}010 \cdot 38{,}4\,\text{mA} + 2 \cdot 0{,}1\,\text{mA} = 0{,}584\,\text{mA}$, joten $\dfrac{\Delta I}{I} = \dfrac{0{,}584\,\text{mA}}{38{,}4\,\text{mA}} = 0{,}0152 = 1{,}5\,\%$. c) Suhteellinen virheraja on $0{,}00942 + 0{,}0152 = 0{,}0246 = 2{,}5\,\%$, joten $\Delta R = 0{,}0246 \cdot 117{,}71\,\Omega = 2{,}90\,\Omega$.
+**Sijoitus:** a) $R = \dfrac{4{,}52\,\text{V}}{0{,}0384\,\text{A}} = 117{,}71\,\Omega$. b) $\Delta U = 0{,}005 \cdot 4{,}52\,\text{V} + 2 \cdot 0{,}01\,\text{V} = 0{,}0426\,\text{V}$, joten $\dfrac{\Delta U}{U} = \dfrac{0{,}0426\,\text{V}}{4{,}52\,\text{V}} = 0{,}00942 = 0{,}94\,\%$. Lisäksi $\Delta I = 0{,}010 \cdot 38{,}4\,\text{mA} + 2 \cdot 0{,}1\,\text{mA} = 0{,}584\,\text{mA}$, joten $\dfrac{\Delta I}{I} = \dfrac{0{,}584\,\text{mA}}{38{,}4\,\text{mA}} = 0{,}0152 = 1{,}5\,\%$. c) Suhteellinen virheraja on $$\begin{aligned} &0{,}00942 + 0{,}0152 \\ &= 0{,}0246 \\ &= 2{,}5\,\% \end{aligned}$$, joten $\Delta R = 0{,}0246 \cdot 117{,}71\,\Omega = 2{,}90\,\Omega$.
 **Vastaus:** c)-kohdan virheraja on $\Delta R = 3\,\Omega$. Vastauksessa on yksi merkitsevä numero. Laskimen arvo on $2{,}90\,\Omega$. Mittaustulos on $R = 118\,\Omega \pm 3\,\Omega$ eli väli $115$–$121\,\Omega$. Nimellisarvo $120\,\Omega$ mahtuu tähän väliin. Opiskelijan päätelmä on väärä. Ero nimellisarvoon on $2{,}3\,\Omega$, ja se on pienempi kuin virheraja. Mittaus ei siis osoita vastusta vialliseksi. Raportissa pitää antaa tulos virherajoineen ja pyöristää tulos virherajan mukaan. Neljää merkitsevää numeroa ei kirjoiteta ilman virherajaa. Jännitemittarin virta on $4{,}52\,\text{V} : 10\,\text{M}\Omega = 0{,}45\,\mu\text{A}$. Se on vain $0{,}001\,\%$ virrasta $38{,}4\,\text{mA}$, joten sen voi jättää huomiotta. Mittarin resistanssi on suuri verrattuna vastukseen $118\,\Omega$.
 **Järkevyys:** Jännitteen ja virran suhteelliset virherajat ovat noin yksi ja puolitoista prosenttia. Niiden summa on noin kaksi ja puoli prosenttia. Luvusta $118\,\Omega$ $2{,}5\,\%$ on noin $3\,\Omega$. Nimellisarvo $120\,\Omega$ poikkeaa mittaustuloksesta noin $2\,\%$ ($2{,}29\,\Omega : 117{,}71\,\Omega = 1{,}95\,\%$). Se on pienempi kuin $2{,}5\,\%$.
 
@@ -197,13 +197,13 @@ Rivi 2 on oikein: suuruusluokkaa ei tiedetä, joten aloitetaan alueelta $10\,\te
 
 Rivi 3 on väärin. Lukema $0{,}14\,\text{A} = 140\,\text{mA}$ mahtuu alueelle $200\,\text{mA}$. Virherajat ovat alueella $10\,\text{A}$
 
-$\Delta I = 0{,}020 \cdot 0{,}14\,\text{A} + 3 \cdot 0{,}01\,\text{A}$
+$$\Delta I = 0{,}020 \cdot 0{,}14\,\text{A} + 3 \cdot 0{,}01\,\text{A}$$
 
 $\Delta I \approx 0{,}033\,\text{A} = 33\,\text{mA}$ (välitulos, noin $0{,}03\,\text{A}$)
 
 ja alueella $200\,\text{mA}$, kun lukema on noin $140{,}0\,\text{mA}$ ja $2 \cdot 0{,}1\,\text{mA} = 0{,}2\,\text{mA}$,
 
-$\Delta I = 0{,}010 \cdot 140\,\text{mA} + 0{,}2\,\text{mA}$
+$$\Delta I = 0{,}010 \cdot 140\,\text{mA} + 0{,}2\,\text{mA}$$
 
 $\Delta I = 1{,}6\,\text{mA}$
 

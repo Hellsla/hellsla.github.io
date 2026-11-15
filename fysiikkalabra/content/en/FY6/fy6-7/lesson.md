@@ -183,7 +183,7 @@ When the power of a device stays constant, the electrical energy it uses is
 ```latex
 E = Pt
 ```
-where $E$ is the energy (J or kWh), $P$ the power (W or kW) and $t$ the time (s or h). When the power is in watts and the time in seconds, the energy comes out in joules; with kilowatts and hours it comes out in kilowatt-hours. The conversion is done by substituting the units: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3\,600\,000\,\text{J} = 3.6\,\text{MJ}$.
+where $E$ is the energy (J or kWh), $P$ the power (W or kW) and $t$ the time (s or h). When the power is in watts and the time in seconds, the energy comes out in joules; with kilowatts and hours it comes out in kilowatt-hours. The conversion is done by substituting the units: $$\begin{aligned} 1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\ &= 3\,600\,000\,\text{J} \\ &= 3.6\,\text{MJ} \end{aligned}$$.
 
 <svg data-fig="kwh" viewBox="0 0 600 360" role="img" aria-label="Schematic figure, not to scale: on the left an electric radiator with a power of 1 kW and orange heat arrows above it. In the middle a clock whose minute hand goes around once, that is 1 hour. On the right an electricity meter whose reading increases by 1 kilowatt-hour. Below the figure: 1 kWh = 1000 W · 3600 s = 3.6 MJ." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy67-heatup" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8590c"/><stop offset="1" stop-color="#ffc078"/></linearGradient><linearGradient id="fy67-fin0" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy67-fin1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy67-fin2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy67-fin3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy67-fin4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy67-fin5" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient><linearGradient id="fy67-meter" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#c4ccd4"/></linearGradient></defs>
@@ -235,7 +235,7 @@ where $E$ is the energy (J or kWh), $P$ the power (W or kW) and $t$ the time (s 
   <rect x="462" y="224" width="88" height="10" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="426" y="265.5" width="160" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$E = 1\,\text{kWh}$</div></foreignObject>
   <line x1="30" y1="308" x2="570" y2="308" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <foreignObject x="40" y="319.5" width="520" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$</div></foreignObject>
+  <foreignObject x="40" y="319.5" width="520" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$$\begin{aligned} 1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\ &= 3.6\,\text{MJ} \end{aligned}$$</div></foreignObject>
 </svg>
 
 Since the electric power is $P = UI$, the energy can also be calculated from the voltage and the current:
@@ -304,7 +304,7 @@ Another common mistake is to read a kilowatt-hour as "kilowatts per hour". A kil
 
 ## Summary
 - The electrical energy used by a device working at a constant power is $E = Pt = UIt$. Power tells how fast energy is used, energy how much.
-- The kilowatt-hour is a unit of energy: $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$. Energy calculated with kilowatts and hours comes out directly in kilowatt-hours.
+- The kilowatt-hour is a unit of energy: $$\begin{aligned} 1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\ &= 3.6\,\text{MJ} \end{aligned}$$. Energy calculated with kilowatts and hours comes out directly in kilowatt-hours.
 - The current of a heating device in a $230\,\text{V}$ mains is $I = P : U$; a high-power device draws a large current.
 - An electricity bill is the price of energy and transmission times the energy used, plus the basic charges. The energy is the difference of the meter readings.
 - The most is saved by reducing the power or the time of use of the devices whose energy is the greatest: heating, hot water and the sauna.

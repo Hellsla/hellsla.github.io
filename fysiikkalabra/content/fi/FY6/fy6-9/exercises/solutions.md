@@ -58,7 +58,7 @@
 **Muunnokset:** $R_\text{s} = 40\,\text{m}\Omega = 40 \cdot 0{,}001\,\Omega = 0{,}040\,\Omega$
 **Sijoitus:** $I = \dfrac{14{,}4\,\text{V} - 12{,}4\,\text{V}}{0{,}36\,\Omega + 0{,}040\,\Omega} = \dfrac{2{,}0\,\text{V}}{0{,}40\,\Omega} = 5{,}0\,\text{A}$
 **Vastaus:** $5{,}0\,\text{A}$, kaksi merkitsevää numeroa kuten jännite-erotuksessa $2{,}0\,\text{V}$ ja resistansseissa.
-**Järkevyys:** Napajännite on $12{,}4\,\text{V} + 0{,}040\,\Omega \cdot 5{,}0\,\text{A} = 12{,}6\,\text{V}$, ja laturin puolelta $14{,}4\,\text{V} - 0{,}36\,\Omega \cdot 5{,}0\,\text{A} = 12{,}6\,\text{V}$, sama. Ilman milliohmien muuntamista resistanssi olisi $40\,\Omega$ ja virta vain noin $0{,}05\,\text{A}$.
+**Järkevyys:** Napajännite on $$\begin{aligned} &12{,}4\,\text{V} + 0{,}040\,\Omega \cdot 5{,}0\,\text{A} \\ &= 12{,}6\,\text{V} \end{aligned}$$, ja laturin puolelta $$\begin{aligned} &14{,}4\,\text{V} - 0{,}36\,\Omega \cdot 5{,}0\,\text{A} \\ &= 12{,}6\,\text{V} \end{aligned}$$, sama. Ilman milliohmien muuntamista resistanssi olisi $40\,\Omega$ ja virta vain noin $0{,}05\,\text{A}$.
 
 ## fy6-9-L2-02
 **Annettu:** $U_\text{lat} = 5{,}0\,\text{V}$, $E = 3{,}8\,\text{V}$, $R = 0{,}80\,\Omega$, $I = 1{,}2\,\text{A}$
@@ -68,7 +68,7 @@
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{s} = \dfrac{5{,}0\,\text{V} - 3{,}8\,\text{V}}{1{,}2\,\text{A}} - 0{,}80\,\Omega = 1{,}0\,\Omega - 0{,}80\,\Omega = 0{,}20\,\Omega$
 **Vastaus:** $0{,}2\,\Omega$, kymmenesosaohmin tarkkuudella kuten termi $(U_\text{lat} - E) : I = 1{,}0\,\Omega$, joka rajoittaa erotuksen tarkkuutta.
-**Järkevyys:** Tarkistus: $1{,}2\,\text{A} \cdot (0{,}80\,\Omega + 0{,}20\,\Omega) = 1{,}2\,\text{V}$, mikä on laturin ja kennon jännitteiden erotus. Tulos on positiivinen ja pienen akkukennon sisäiselle resistanssille sopiva.
+**Järkevyys:** Tarkistus: $$\begin{aligned} &1{,}2\,\text{A} \cdot (0{,}80\,\Omega + 0{,}20\,\Omega) \\ &= 1{,}2\,\text{V} \end{aligned}$$, mikä on laturin ja kennon jännitteiden erotus. Tulos on positiivinen ja pienen akkukennon sisäiselle resistanssille sopiva.
 
 ## fy6-9-L2-03
 **Annettu:** kapasiteetti $4500\,\text{mAh}$, varaustaso $15\,\%$ → $80\,\%$, keskimääräinen virta $I = 1{,}8\,\text{A}$
@@ -159,11 +159,11 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö, ja se on myös akun energian
 **Annettu:** purkausvirta $I = 0{,}50\,\text{A}$, mittausväli $\Delta t = 1{,}0\,\text{h}$, napajännitteet taulukosta $4{,}15\,\text{V}$, $3{,}92\,\text{V}$, $3{,}80\,\text{V}$, $3{,}71\,\text{V}$, $3{,}58\,\text{V}$ ja $3{,}12\,\text{V}$
 **Kysytty:** kennon antama energia $W$ wattitunteina
 **Periaate:** Teho on jännite kertaa virta, ja vakiovirralla jännite muuttuu ajan mukana. Jännite oletetaan tasaisesti muuttuvaksi mittausten välillä, joten jokaisen välin keskijännite on välin päiden jännitteiden keskiarvo. Energia on virta kertaa aika kertaa keskijännite, summattuna kaikkien välien yli.
-**Kaava:** $W = I\,\Delta t\,(U_{1,\text{ka}} + U_{2,\text{ka}} + \dots + U_{5,\text{ka}})$, missä $U_{k,\text{ka}}$ on välin $k$ keskijännite
+**Kaava:** $$\begin{aligned} W &= I\,\Delta t\,(U_{1,\text{ka}} + U_{2,\text{ka}} + \dots \\ &+ U_{5,\text{ka}}) \end{aligned}$$, missä $U_{k,\text{ka}}$ on välin $k$ keskijännite
 **Muunnokset:** Ei tarvita: ampeeri kertaa tunti kertaa voltti on wattitunti.
 **Sijoitus:** Välien keskijännitteet ovat $4{,}035\,\text{V}$, $3{,}86\,\text{V}$, $3{,}755\,\text{V}$, $3{,}645\,\text{V}$ ja $3{,}35\,\text{V}$, ja niiden summa on $18{,}645\,\text{V}$. Siis $W = 0{,}50\,\text{A} \cdot 1{,}0\,\text{h} \cdot 18{,}645\,\text{V} = 9{,}3225\,\text{Wh}$
 **Vastaus:** $9{,}3\,\text{Wh}$, kaksi merkitsevää numeroa kuten virrassa $0{,}50\,\text{A}$ ja mittausvälissä $1{,}0\,\text{h}$.
-**Järkevyys:** Purkaus kesti viisi tuntia, joten varaus on $0{,}50\,\text{A} \cdot 5{,}0\,\text{h} = 2{,}5\,\text{Ah}$. Energian ja varauksen osamäärä $9{,}3225\,\text{Wh} : 2{,}5\,\text{Ah} \approx 3{,}73\,\text{V}$ on keskijännite, ja se on mitattujen jännitteiden $3{,}12\,\text{V}$ ja $4{,}15\,\text{V}$ välissä litiumkennon nimellisjännitteen $3{,}7\,\text{V}$ tuntumassa.
+**Järkevyys:** Purkaus kesti viisi tuntia, joten varaus on $0{,}50\,\text{A} \cdot 5{,}0\,\text{h} = 2{,}5\,\text{Ah}$. Energian ja varauksen osamäärä $$9{,}3225\,\text{Wh} : 2{,}5\,\text{Ah} \approx 3{,}73\,\text{V}$$ on keskijännite, ja se on mitattujen jännitteiden $3{,}12\,\text{V}$ ja $4{,}15\,\text{V}$ välissä litiumkennon nimellisjännitteen $3{,}7\,\text{V}$ tuntumassa.
 
 ## fy6-9-L2-06
 **Annettu:** latausvirta $I = 2{,}0\,\text{A}$, aika $t = 1{,}5\,\text{h}$, laturin jännite $U_\text{lat} = 4{,}2\,\text{V}$, akun lähdejännite $E = 3{,}7\,\text{V}$
@@ -173,7 +173,7 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö, ja se on myös akun energian
 **Muunnokset:** Ei tarvita: tunnit ja ampeerit voltteihin kerrottuna antavat suoraan wattitunteja.
 **Sijoitus:** $$\begin{aligned} W_\text{häviö} &= (4{,}2\,\text{V} - 3{,}7\,\text{V}) \cdot 2{,}0\,\text{A} \\ &\cdot 1{,}5\,\text{h} \\ &= 0{,}5\,\text{V} \cdot 3{,}0\,\text{Ah} \\ &= 1{,}5\,\text{Wh} \end{aligned}$$
 **Vastaus:** $1{,}5\,\text{Wh}$, kaksi merkitsevää numeroa kuten virrassa $2{,}0\,\text{A}$ ja ajassa $1{,}5\,\text{h}$; tulos on kymmenesosawattitunnin tarkkuudella kuten energioiden erotus $12{,}6\,\text{Wh} - 11{,}1\,\text{Wh}$. Vastaus a): oppilaan päättelyssä on väärin se, että kaikki laturin antama energia varastoituu akkuun, sillä osa muuttuu resistanssien sisäenergiaksi.
-**Järkevyys:** Akkuun varastoituu $3{,}7\,\text{V} \cdot 2{,}0\,\text{A} \cdot 1{,}5\,\text{h} = 11{,}1\,\text{Wh}$, ja summa $11{,}1\,\text{Wh} + 1{,}5\,\text{Wh}$ on laturin antama $12{,}6\,\text{Wh}$. Resistanssit ovat yhteensä $0{,}5\,\text{V} : 2{,}0\,\text{A} = 0{,}25\,\Omega$, ja niissä muuttuu energiaa $0{,}25\,\Omega \cdot (2{,}0\,\text{A})^2 \cdot 1{,}5\,\text{h} = 1{,}5\,\text{Wh}$, sama tulos.
+**Järkevyys:** Akkuun varastoituu $3{,}7\,\text{V} \cdot 2{,}0\,\text{A} \cdot 1{,}5\,\text{h} = 11{,}1\,\text{Wh}$, ja summa $11{,}1\,\text{Wh} + 1{,}5\,\text{Wh}$ on laturin antama $12{,}6\,\text{Wh}$. Resistanssit ovat yhteensä $0{,}5\,\text{V} : 2{,}0\,\text{A} = 0{,}25\,\Omega$, ja niissä muuttuu energiaa $$0{,}25\,\Omega \cdot (2{,}0\,\text{A})^2 \cdot 1{,}5\,\text{h} = 1{,}5\,\text{Wh}$$, sama tulos.
 
 ## fy6-9-L2-07
 **Annettu:** laturin jännitteet $13{,}0\,\text{V}$, $13{,}4\,\text{V}$, $13{,}8\,\text{V}$, $14{,}2\,\text{V}$ ja $14{,}6\,\text{V}$ sekä latausvirrat $1{,}6\,\text{A}$, $2{,}4\,\text{A}$, $3{,}5\,\text{A}$, $4{,}6\,\text{A}$ ja $5{,}5\,\text{A}$ taulukosta
@@ -184,7 +184,7 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö, ja se on myös akun energian
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{kok} = \dfrac{14{,}6\,\text{V} - 13{,}0\,\text{V}}{5{,}5\,\text{A} - 1{,}5\,\text{A}} = \dfrac{1{,}6\,\text{V}}{4{,}0\,\text{A}} = 0{,}40\,\Omega$
 **Vastaus:** $0{,}40\,\Omega$, kaksi merkitsevää numeroa kuten virtojen lukemissa. Käsin sovitettu suora antaa tuloksen muutaman prosentin tarkkuudella.
-**Järkevyys:** Suora leikkaa vaaka-akselin kohdassa $13{,}0\,\text{V} - 1{,}5\,\text{A} \cdot 0{,}40\,\Omega = 12{,}4\,\text{V}$, mikä on akun lähdejännite ja sopii $12\,\text{V}$:n lyijyakulle. Kohdassa $13{,}8\,\text{V}$ jännitelaki antaa virran $(13{,}8\,\text{V} - 12{,}4\,\text{V}) : 0{,}40\,\Omega = 3{,}5\,\text{A}$, ja mittaus on $3{,}5\,\text{A}$.
+**Järkevyys:** Suora leikkaa vaaka-akselin kohdassa $$\begin{aligned} &13{,}0\,\text{V} - 1{,}5\,\text{A} \cdot 0{,}40\,\Omega \\ &= 12{,}4\,\text{V} \end{aligned}$$, mikä on akun lähdejännite ja sopii $12\,\text{V}$:n lyijyakulle. Kohdassa $13{,}8\,\text{V}$ jännitelaki antaa virran $$\begin{aligned} &(13{,}8\,\text{V} - 12{,}4\,\text{V}) : 0{,}40\,\Omega \\ &= 3{,}5\,\text{A} \end{aligned}$$, ja mittaus on $3{,}5\,\text{A}$.
 
 ## fy6-9-L2-08
 **Annettu:** akun nimellisjännite $U = 11{,}1\,\text{V}$ ja kuvaajan latausvirta ajan funktiona
@@ -193,7 +193,7 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö, ja se on myös akun energian
 **Kuvaajan lukeminen:** Virta on $2{,}0\,\text{A}$ ajasta $0$ aikaan $1{,}0\,\text{h}$, $1{,}5\,\text{A}$ ajasta $1{,}0\,\text{h}$ aikaan $3{,}0\,\text{h}$ ja $0{,}5\,\text{A}$ ajasta $3{,}0\,\text{h}$ aikaan $4{,}0\,\text{h}$, jonka jälkeen se on nolla.
 **Kaava:** $Q = I_1 t_1 + I_2 t_2 + I_3 t_3$ ja $W = UQ$, josta $W = U\,(I_1 t_1 + I_2 t_2 + I_3 t_3)$
 **Muunnokset:** Ei tarvita: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$. Kestot ovat $t_1 = 1{,}0\,\text{h}$, $t_2 = 3{,}0\,\text{h} - 1{,}0\,\text{h} = 2{,}0\,\text{h}$ ja $t_3 = 4{,}0\,\text{h} - 3{,}0\,\text{h} = 1{,}0\,\text{h}$.
-**Sijoitus:** $Q = 2{,}0\,\text{A} \cdot 1{,}0\,\text{h} + 1{,}5\,\text{A} \cdot 2{,}0\,\text{h} + 0{,}5\,\text{A} \cdot 1{,}0\,\text{h} = 2{,}0\,\text{Ah} + 3{,}0\,\text{Ah} + 0{,}5\,\text{Ah} = 5{,}5\,\text{Ah}$ ja $W = 11{,}1\,\text{V} \cdot 5{,}5\,\text{Ah} = 61{,}05\,\text{Wh}$
+**Sijoitus:** $$\begin{aligned} Q &= 2{,}0\,\text{A} \cdot 1{,}0\,\text{h} + 1{,}5\,\text{A} \cdot 2{,}0\,\text{h} \\ &+ 0{,}5\,\text{A} \cdot 1{,}0\,\text{h} \\ &= 2{,}0\,\text{Ah} + 3{,}0\,\text{Ah} + 0{,}5\,\text{Ah} \\ &= 5{,}5\,\text{Ah} \end{aligned}$$ ja $W = 11{,}1\,\text{V} \cdot 5{,}5\,\text{Ah} = 61{,}05\,\text{Wh}$
 **Vastaus:** $61\,\text{Wh}$, kaksi merkitsevää numeroa kuten virran lukemissa. Arvot luetaan ruudukkoviivoilta, joiden väli on $0{,}5\,\text{A}$ ja $0{,}5\,\text{h}$.
 **Järkevyys:** Keskimääräinen virta on $5{,}5\,\text{Ah} : 4{,}0\,\text{h} \approx 1{,}4\,\text{A}$, mikä on kuvaajan suurimman ja pienimmän virran välissä. Energia $61\,\text{Wh}$ on kannettavan tietokoneen akulle tavallisen $50$–$100\,\text{Wh}$:n alueella.
 
@@ -205,7 +205,7 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö, ja se on myös akun energian
 **Muunnokset:** Ei tarvita: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$ ja $1\,\text{V} : 1\,\text{A} = 1\,\Omega$. Lopuksi $0{,}7745 = 77{,}45\,\%$.
 **Sijoitus:** a) $Q_1 = 0{,}50\,\text{A} \cdot 5{,}2\,\text{h} = 2{,}6\,\text{Ah}$ ja $W_1 = 3{,}70\,\text{V} \cdot 2{,}6\,\text{Ah} = 9{,}62\,\text{Wh}$ sekä $Q_2 = 2{,}0\,\text{A} \cdot 1{,}2\,\text{h} = 2{,}4\,\text{Ah}$ ja $W_2 = 3{,}55\,\text{V} \cdot 2{,}4\,\text{Ah} = 8{,}52\,\text{Wh}$. b) $\eta = \dfrac{8{,}52\,\text{Wh}}{11{,}0\,\text{Wh}} = 0{,}7745$. c) $R_\text{s} = \dfrac{3{,}70\,\text{V} - 3{,}55\,\text{V}}{2{,}0\,\text{A} - 0{,}50\,\text{A}} = \dfrac{0{,}15\,\text{V}}{1{,}5\,\text{A}} = 0{,}10\,\Omega$
 **Vastaus:** $77\,\%$ (tarkemmin $77{,}45\,\%$), kaksi merkitsevää numeroa kuten purkauksen kestossa $1{,}2\,\text{h}$. Selitys: suurella virralla jännitehäviö $R_\text{s} I$ on suurempi, joten napajännite laskee rajaan $3{,}00\,\text{V}$ aiemmin ja osa kapasiteetista jää käyttämättä, $2{,}4\,\text{Ah}$ eikä $2{,}6\,\text{Ah}$. Sisäisessä resistanssissa muuttuu sisäenergiaksi teho $R_\text{s} I^2$, ja nelinkertaisella virralla se on $16$-kertainen. Pikalatauksessa virta on suuri, joten pieni $R_\text{s}$ pitää häviöt ja akun lämpenemisen pieninä.
-**Järkevyys:** Lähdejännite on molemmilla virroilla sama: $3{,}70\,\text{V} + 0{,}10\,\Omega \cdot 0{,}50\,\text{A} = 3{,}75\,\text{V}$ ja $3{,}55\,\text{V} + 0{,}10\,\Omega \cdot 2{,}0\,\text{A} = 3{,}75\,\text{V}$, kuten oletus vaatii. Pienellä virralla hyötysuhde on $9{,}62\,\text{Wh} : 11{,}0\,\text{Wh} \approx 87{,}5\,\%$, mikä on suurempi kuin suurella virralla ja pysyy alle $100\,\%$.
+**Järkevyys:** Lähdejännite on molemmilla virroilla sama: $$\begin{aligned} &3{,}70\,\text{V} + 0{,}10\,\Omega \cdot 0{,}50\,\text{A} \\ &= 3{,}75\,\text{V} \end{aligned}$$ ja $$\begin{aligned} &3{,}55\,\text{V} + 0{,}10\,\Omega \cdot 2{,}0\,\text{A} \\ &= 3{,}75\,\text{V} \end{aligned}$$, kuten oletus vaatii. Pienellä virralla hyötysuhde on $$9{,}62\,\text{Wh} : 11{,}0\,\text{Wh} \approx 87{,}5\,\%$$, mikä on suurempi kuin suurella virralla ja pysyy alle $100\,\%$.
 
 ## fy6-9-L3-05
 **Annettu:** kapasiteetti $Q_\text{kap} = 50\,\text{Ah}$, laturin jännite $U_\text{lat} = 14{,}0\,\text{V}$, resistanssit yhteensä $R_\text{kok} = 0{,}40\,\Omega$, lähdejännitteet taulukosta $12{,}00\,\text{V}$, $12{,}20\,\text{V}$, $12{,}40\,\text{V}$ ja $12{,}60\,\text{V}$ varaustasoilla $20\,\%$, $40\,\%$, $60\,\%$ ja $80\,\%$
@@ -215,4 +215,4 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö, ja se on myös akun energian
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$ ja $1\,\text{Ah} : 1\,\text{A} = 1\,\text{h}$. Jokaisessa vaiheessa varaustaso nousee $20\,\%$, joten $\Delta Q = 0{,}20 \cdot 50\,\text{Ah} = 10\,\text{Ah}$.
 **Sijoitus:** a) Keskimääräiset lähdejännitteet ovat $12{,}10\,\text{V}$, $12{,}30\,\text{V}$ ja $12{,}50\,\text{V}$. Virrat ovat $I_1 = 1{,}90\,\text{V} : 0{,}40\,\Omega = 4{,}75\,\text{A}$, $I_2 = 1{,}70\,\text{V} : 0{,}40\,\Omega = 4{,}25\,\text{A}$ ja $I_3 = 1{,}50\,\text{V} : 0{,}40\,\Omega = 3{,}75\,\text{A}$. Kestot ovat $t_1 = 10\,\text{Ah} : 4{,}75\,\text{A} = 2{,}105\,\text{h}$, $t_2 = 10\,\text{Ah} : 4{,}25\,\text{A} = 2{,}353\,\text{h}$ ja $t_3 = 10\,\text{Ah} : 3{,}75\,\text{A} = 2{,}667\,\text{h}$, joten $t = 2{,}105\,\text{h} + 2{,}353\,\text{h} + 2{,}667\,\text{h} = 7{,}125\,\text{h}$. b) Alkuvirta on $I_0 = (14{,}0\,\text{V} - 12{,}00\,\text{V}) : 0{,}40\,\Omega = 5{,}0\,\text{A}$ ja varausta siirrettävä $30\,\text{Ah}$, joten $t_0 = 30\,\text{Ah} : 5{,}0\,\text{A} = 6{,}0\,\text{h}$
 **Vastaus:** $7{,}1\,\text{h}$, kaksi merkitsevää numeroa kuten resistanssissa $0{,}40\,\Omega$. Vakiovirralla $5{,}0\,\text{A}$ aika olisi $6{,}0\,\text{h}$, ja todellinen lataus on pitempi, koska lähdejännite kasvaa, jännite-erotus $U_\text{lat} - E$ pienenee ja virta laskee: $4{,}75\,\text{A}$:sta $3{,}75\,\text{A}$:iin, joten saman varauksen siirtyminen vie kauemmin.
-**Järkevyys:** Aika on alkuvirran antaman alarajan $6{,}0\,\text{h}$ ja loppuvirran antaman ylärajan välissä: loppuvirta on $(14{,}0\,\text{V} - 12{,}60\,\text{V}) : 0{,}40\,\Omega = 3{,}5\,\text{A}$, jolloin aika olisi $30\,\text{Ah} : 3{,}5\,\text{A} \approx 8{,}6\,\text{h}$. Tulos $7{,}1\,\text{h}$ on näiden välissä.
+**Järkevyys:** Aika on alkuvirran antaman alarajan $6{,}0\,\text{h}$ ja loppuvirran antaman ylärajan välissä: loppuvirta on $$\begin{aligned} &(14{,}0\,\text{V} - 12{,}60\,\text{V}) : 0{,}40\,\Omega \\ &= 3{,}5\,\text{A} \end{aligned}$$, jolloin aika olisi $30\,\text{Ah} : 3{,}5\,\text{A} \approx 8{,}6\,\text{h}$. Tulos $7{,}1\,\text{h}$ on näiden välissä.

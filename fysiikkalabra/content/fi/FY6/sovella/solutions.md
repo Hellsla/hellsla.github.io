@@ -105,7 +105,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $I = \dfrac{4{,}60\,\text{V}}{8{,}0\,\Omega + 1{,}2\,\Omega} = \dfrac{4{,}60\,\text{V}}{9{,}2\,\Omega} = 0{,}50\,\text{A}$, $P = 8{,}0\,\Omega \cdot (0{,}50\,\text{A})^2 = 2{,}0\,\text{W}$ ja $P_\text{s} = 1{,}2\,\Omega \cdot (0{,}50\,\text{A})^2 = 0{,}30\,\text{W}$. Osuus on $\dfrac{0{,}30\,\text{W}}{2{,}0\,\text{W} + 0{,}30\,\text{W}} = 0{,}13$.
 **Vastaus:** Vastukseen siirtyy teho $P \approx 2{,}0\,\text{W}$, ja noin $13\,\%$ pariston sähkötehosta siirtyy lämpönä pariston sisällä. Tulos on annettu kahden merkitsevän numeron tarkkuudella kuten lähtötiedot.
-**Järkevyys:** Napajännite on $R I = 4{,}0\,\text{V}$, mikä on sama kuin $E - R_\text{s} I = 4{,}60\,\text{V} - 0{,}60\,\text{V}$, ja kuvaajalla virran $0{,}50\,\text{A}$ kohdalla jännite on noin $4{,}0\,\text{V}$. Koska ulkoinen vastus on yli seitsemän kertaa sisäistä resistanssia suurempi, vain pieni osa tehosta jää pariston sisälle.
+**Järkevyys:** Napajännite on $R I = 4{,}0\,\text{V}$, mikä on sama kuin $$E - R_\text{s} I = 4{,}60\,\text{V} - 0{,}60\,\text{V}$$, ja kuvaajalla virran $0{,}50\,\text{A}$ kohdalla jännite on noin $4{,}0\,\text{V}$. Koska ulkoinen vastus on yli seitsemän kertaa sisäistä resistanssia suurempi, vain pieni osa tehosta jää pariston sisälle.
 
 ### d)
 **Kysytty:** purkautumisen ja lämpenemisen vaikutus lähdejännitteen ja sisäisen resistanssin tulokseen, hajonnan aiheuttama epävarmuus $R_\text{s}$:ssä ja mittauksen parannus
@@ -150,9 +150,9 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Silmukkasäännön mukaan akun jännite jakautuu kaapelin jännitehäviön ja lamppujen jännitteen kesken: $E - R_\text{k} I - U_\text{L} = 0$. Lamppujen jännite jää siksi nimellisjännitettä pienemmäksi, ja teho lasketaan tästä todellisesta jännitteestä.
 **Kaava:** $U_\text{L} = E - R_\text{k} I$ ja $P_\text{A} = \dfrac{U_\text{L}^2}{R_\text{A}}$
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** $U_\text{L} = 12{,}0\,\text{V} - 0{,}80\,\Omega \cdot 2{,}5\,\text{A} = 12{,}0\,\text{V} - 2{,}0\,\text{V} = 10{,}0\,\text{V}$ ja $P_\text{A} = \dfrac{(10{,}0\,\text{V})^2}{6{,}0\,\Omega} = 16{,}7\,\text{W}$
+**Sijoitus:** $$\begin{aligned} U_\text{L} &= 12{,}0\,\text{V} - 0{,}80\,\Omega \cdot 2{,}5\,\text{A} \\ &= 12{,}0\,\text{V} - 2{,}0\,\text{V} \\ &= 10{,}0\,\text{V} \end{aligned}$$ ja $P_\text{A} = \dfrac{(10{,}0\,\text{V})^2}{6{,}0\,\Omega} = 16{,}7\,\text{W}$
 **Vastaus:** $P_\text{A} \approx 17\,\text{W}$, noin $70\,\%$ nimellisarvosta $24\,\text{W}$, kaksi merkitsevää numeroa kuten lähtötiedoissa ($0{,}80\,\Omega$, $24\,\text{W}$, $12\,\text{V}$).
-**Järkevyys:** Lamppu palaa himmeämmin kuin nimellisjännitteellä, koska sen jännite on vain $10{,}0\,\text{V}$. Tarkistus: lampun B teho on $\dfrac{(10{,}0\,\text{V})^2}{12\,\Omega} = 8{,}3\,\text{W}$ ja kaapeliin siirtyy lämpönä $0{,}80\,\Omega \cdot (2{,}5\,\text{A})^2 = 5{,}0\,\text{W}$. Summa $16{,}7\,\text{W} + 8{,}3\,\text{W} + 5{,}0\,\text{W} = 30\,\text{W}$ on yhtä suuri kuin akuston teho $12{,}0\,\text{V} \cdot 2{,}5\,\text{A} = 30\,\text{W}$.
+**Järkevyys:** Lamppu palaa himmeämmin kuin nimellisjännitteellä, koska sen jännite on vain $10{,}0\,\text{V}$. Tarkistus: lampun B teho on $\dfrac{(10{,}0\,\text{V})^2}{12\,\Omega} = 8{,}3\,\text{W}$ ja kaapeliin siirtyy lämpönä $0{,}80\,\Omega \cdot (2{,}5\,\text{A})^2 = 5{,}0\,\text{W}$. Summa $$\begin{aligned} &16{,}7\,\text{W} + 8{,}3\,\text{W} + 5{,}0\,\text{W} \\ &= 30\,\text{W} \end{aligned}$$ on yhtä suuri kuin akuston teho $12{,}0\,\text{V} \cdot 2{,}5\,\text{A} = 30\,\text{W}$.
 
 ### c)
 **Kysytty:** miten lampun A kirkkaus, akuston virta ja kaapelin lämpeneminen muuttuvat, kun lamppu B poistuu piiristä, sekä lampun A tehon tarkistus laskemalla
@@ -161,7 +161,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 
 *Kirkkaus.* Pienempi virta pienentää kaapelin jännitehäviötä: $0{,}80\,\Omega \cdot 1{,}76\,\text{A} \approx 1{,}4\,\text{V}$, aiemmin $2{,}0\,\text{V}$. Lampulle A jää siksi suurempi jännite $U_\text{A} \approx 10{,}6\,\text{V}$, ja sen teho on $\dfrac{(10{,}6\,\text{V})^2}{6{,}0\,\Omega} \approx 18{,}7\,\text{W}$, aiemmin $16{,}7\,\text{W}$. Lamppu A siis palaa kirkkaammin, vaikka sen omassa haarassa ei muuttunut mikään.
 
-*Kaapeli.* Kaapeliin siirtyy lämpönä teho $R_\text{k} I^2 = 0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 \approx 2{,}5\,\text{W}$, aiemmin $5{,}0\,\text{W}$. Kaapeli lämpenee siis vähemmän, koska teho riippuu virran neliöstä.
+*Kaapeli.* Kaapeliin siirtyy lämpönä teho $$\begin{aligned} R_\text{k} I^2 &= 0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 \\ &\approx 2{,}5\,\text{W} \end{aligned}$$, aiemmin $5{,}0\,\text{W}$. Kaapeli lämpenee siis vähemmän, koska teho riippuu virran neliöstä.
 
 *Johtopäätös.* Rinnankytketyt lamput ovat toisistaan riippumattomia vain, jos jännite niiden yli pysyy vakiona. Kaapelin resistanssi tekee lampuista hieman riippuvaisia toisistaan: jos kaapelin resistanssi olisi nolla, lampun A kirkkaus ei muuttuisi lainkaan.
 
@@ -197,7 +197,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Muunnokset:** $20\,\text{cm} = 0{,}20\,\text{m}$ ja $60\,\text{kV} = 60 \cdot 1000\,\text{V} = 6{,}0 \cdot 10^{4}\,\text{V}$.
 **Sijoitus:** $E = \dfrac{6{,}0 \cdot 10^{4}\,\text{V}}{0{,}20\,\text{m}} = 3{,}0 \cdot 10^{5}\,\text{V/m}$ ja $F = 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 3{,}0 \cdot 10^{5}\,\text{V/m} = 1{,}8 \cdot 10^{-7}\,\text{N}$
 **Vastaus:** $F \approx 1{,}8 \cdot 10^{-7}\,\text{N}$ kentän suuntaan kohti työkappaletta, kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Pisaran paino on $mg = 4{,}0 \cdot 10^{-10}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 3{,}9 \cdot 10^{-9}\,\text{N}$, eli vain noin $2\,\%$ sähkövoimasta, joten painon voi jättää huomiotta. Kentän voimakkuus $3{,}0 \cdot 10^{5}\,\text{V/m} = 0{,}30\,\text{MV/m}$ on noin kymmenesosa ilman läpilyöntilujuudesta $3\,\text{MV/m}$, joten kipinöintiä ei synny.
+**Järkevyys:** Pisaran paino on $mg = 4{,}0 \cdot 10^{-10}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 3{,}9 \cdot 10^{-9}\,\text{N}$, eli vain noin $2\,\%$ sähkövoimasta, joten painon voi jättää huomiotta. Kentän voimakkuus $$3{,}0 \cdot 10^{5}\,\text{V/m} = 0{,}30\,\text{MV/m}$$ on noin kymmenesosa ilman läpilyöntilujuudesta $3\,\text{MV/m}$, joten kipinöintiä ei synny.
 
 ### b)
 **Annettu:** $q = 6{,}0 \cdot 10^{-13}\,\text{C}$, $U = 6{,}0 \cdot 10^{4}\,\text{V}$, $m = 4{,}0 \cdot 10^{-10}\,\text{kg}$ ja pisara lähtee levosta
@@ -205,18 +205,18 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Sähkökentän pisaraan tekemä työ on varaus kertaa potentiaaliero, $W = qU$, ja se kasvattaa pisaran liike-energiaa. Paino ja ilmanvastus jätetään pois, joten muita voimia ei ole. Tällä tavalla riittää tietää potentiaaliero, eikä kentän voimakkuutta tai kiihtyvyyttä tarvita.
 **Kaava:** $q U = \dfrac{1}{2} m v^2$, josta $v = \sqrt{\dfrac{2 q U}{m}}$
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
-**Sijoitus:** $qU = 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 6{,}0 \cdot 10^{4}\,\text{V} = 3{,}6 \cdot 10^{-8}\,\text{J}$ ja $v = \sqrt{\dfrac{2 \cdot 3{,}6 \cdot 10^{-8}\,\text{J}}{4{,}0 \cdot 10^{-10}\,\text{kg}}} = \sqrt{180\,\text{m}^2/\text{s}^2} = 13{,}4\,\text{m/s}$
+**Sijoitus:** $$\begin{aligned} qU &= 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 6{,}0 \cdot 10^{4}\,\text{V} \\ &= 3{,}6 \cdot 10^{-8}\,\text{J} \end{aligned}$$ ja $v = \sqrt{\dfrac{2 \cdot 3{,}6 \cdot 10^{-8}\,\text{J}}{4{,}0 \cdot 10^{-10}\,\text{kg}}} = \sqrt{180\,\text{m}^2/\text{s}^2} = 13{,}4\,\text{m/s}$
 **Vastaus:** $v \approx 13\,\text{m/s}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Kiihtyvyys on $\dfrac{F}{m} = \dfrac{1{,}8 \cdot 10^{-7}\,\text{N}}{4{,}0 \cdot 10^{-10}\,\text{kg}} = 450\,\text{m/s}^2$, joten $0{,}20\,\text{m}$:n matkalla nopeus olisi $\sqrt{2 \cdot 450\,\text{m/s}^2 \cdot 0{,}20\,\text{m}} = 13{,}4\,\text{m/s}$, mikä vahvistaa tuloksen. Painon työ koko matkalla olisi vain $7{,}8 \cdot 10^{-10}\,\text{J}$ eli noin $2\,\%$ sähkökentän työstä.
+**Järkevyys:** Kiihtyvyys on $\dfrac{F}{m} = \dfrac{1{,}8 \cdot 10^{-7}\,\text{N}}{4{,}0 \cdot 10^{-10}\,\text{kg}} = 450\,\text{m/s}^2$, joten $0{,}20\,\text{m}$:n matkalla nopeus olisi $$\begin{aligned} &\sqrt{2 \cdot 450\,\text{m/s}^2 \cdot 0{,}20\,\text{m}} \\ &= 13{,}4\,\text{m/s} \end{aligned}$$, mikä vahvistaa tuloksen. Painon työ koko matkalla olisi vain $7{,}8 \cdot 10^{-10}\,\text{J}$ eli noin $2\,\%$ sähkökentän työstä.
 
 ### c)
 **Kysytty:** miksi mitattu osumanopeus $5{,}0\,\text{m/s}$ on paljon pienempi kuin b-kohdan tulos ja minne sähkökentän tekemä työ jää
 **Periaate:** B-kohdan malli jätti ilmanvastuksen pois. Ilmanvastus vaikuttaa pisaran liikkeen suuntaa vastaan, ja sen tekemä työ on negatiivista. Kun pisaran nopeus kasvaa, ilmanvastus kasvaa, ja pisara etenee nopeudella, jolla ilmanvastus ja sähkövoima ovat likimain yhtä suuret. Energian säilymisen mukaan sähkökentän tekemä työ ei häviä, vaan se siirtyy muualle.
 **Mallivastaus:** *Selitys.* B-kohdan nopeus $13\,\text{m/s}$ olisi mahdollinen vain tyhjiössä. Ilmassa ilmanvastus rajoittaa nopeuden paljon pienemmäksi, joten b-kohdan tulos on pisaran suurin mahdollinen nopeus eli yläraja.
 
-*Laskenta.* Pisaran todellinen liike-energia on $\dfrac{1}{2} m v^2 = \dfrac{1}{2} \cdot 4{,}0 \cdot 10^{-10}\,\text{kg} \cdot (5{,}0\,\text{m/s})^2 = 5{,}0 \cdot 10^{-9}\,\text{J}$. Sähkökentän tekemä työ on $3{,}6 \cdot 10^{-8}\,\text{J}$, joten liike-energiaksi päätyy vain $\dfrac{5{,}0 \cdot 10^{-9}\,\text{J}}{3{,}6 \cdot 10^{-8}\,\text{J}} \approx 14\,\%$.
+*Laskenta.* Pisaran todellinen liike-energia on $$\begin{aligned} \dfrac{1}{2} m v^2 &= \dfrac{1}{2} \cdot 4{,}0 \cdot 10^{-10}\,\text{kg} \\ &\cdot (5{,}0\,\text{m/s})^2 \\ &= 5{,}0 \cdot 10^{-9}\,\text{J} \end{aligned}$$. Sähkökentän tekemä työ on $3{,}6 \cdot 10^{-8}\,\text{J}$, joten liike-energiaksi päätyy vain $\dfrac{5{,}0 \cdot 10^{-9}\,\text{J}}{3{,}6 \cdot 10^{-8}\,\text{J}} \approx 14\,\%$.
 
-*Energian kohtalo.* Loput $3{,}6 \cdot 10^{-8}\,\text{J} - 5{,}0 \cdot 10^{-9}\,\text{J} = 3{,}1 \cdot 10^{-8}\,\text{J}$ siirtyy ilmaan. Ilman sisäenergia kasvaa, ja energia siirtyy edelleen lämpönä ympäristöön. Energia ei siis häviä.
+*Energian kohtalo.* Loput $$\begin{aligned} &3{,}6 \cdot 10^{-8}\,\text{J} - 5{,}0 \cdot 10^{-9}\,\text{J} \\ &= 3{,}1 \cdot 10^{-8}\,\text{J} \end{aligned}$$ siirtyy ilmaan. Ilman sisäenergia kasvaa, ja energia siirtyy edelleen lämpönä ympäristöön. Energia ei siis häviä.
 
 *Johtopäätös.* B-kohdan oletus (ei ilmanvastusta) tekee nopeudesta liian suuren, joten tulos on suurin mahdollinen nopeus. Energia ei häviä, vaan se siirtyy ilmaan.
 
@@ -226,7 +226,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Pisarat ovat paljon pienempiä kuin niiden etäisyys, joten ne voi käsitellä pistemäisinä varauksina. Niiden välinen voima noudattaa Coulombin lakia: samanmerkkiset varaukset hylkivät toisiaan.
 **Kaava:** $F = k\dfrac{q_1 q_2}{r^2}$
 **Muunnokset:** $1{,}0\,\text{mm} = 1{,}0 \cdot 10^{-3}\,\text{m}$
-**Sijoitus:** $F = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} \cdot \dfrac{(6{,}0 \cdot 10^{-13}\,\text{C})^2}{(1{,}0 \cdot 10^{-3}\,\text{m})^2} = 8{,}988 \cdot 10^{9} \cdot \dfrac{3{,}6 \cdot 10^{-25}}{1{,}0 \cdot 10^{-6}}\,\text{N} = 3{,}2 \cdot 10^{-9}\,\text{N}$
+**Sijoitus:** $$\begin{aligned} F &= 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} \\ &\cdot \dfrac{(6{,}0 \cdot 10^{-13}\,\text{C})^2}{(1{,}0 \cdot 10^{-3}\,\text{m})^2} \\ &= 8{,}988 \cdot 10^{9} \cdot \dfrac{3{,}6 \cdot 10^{-25}}{1{,}0 \cdot 10^{-6}}\,\text{N} \\ &= 3{,}2 \cdot 10^{-9}\,\text{N} \end{aligned}$$
 **Vastaus:** $F \approx 3{,}2 \cdot 10^{-9}\,\text{N}$, hylkivä, kaksi merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Voima on noin $1{,}8\,\%$ kentän voimasta $1{,}8 \cdot 10^{-7}\,\text{N}$ mutta $0{,}8$-kertainen pisaran painoon $3{,}9 \cdot 10^{-9}\,\text{N}$ verrattuna. Hylkimisvoima on siis pieni verrattuna sähkökentän voimaan, joten pisarat kulkevat edelleen kohti työkappaletta, mutta hylkiminen levittää pisarapilveä sivusuunnassa. Tämä on osa sitä, miksi suihku leviää suuttimen jälkeen.
 
@@ -259,7 +259,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Salamaan siirtynyt energia on kondensaattorin energian muutos: se on energia ennen salamaa vähennettynä energialla salaman jälkeen. Jännite on energiakaavassa neliönä, joten kumpikin energia lasketaan erikseen; pelkkä jännitteen muutos $\Delta U$ ei riitä.
 **Kaava:** $\Delta E = \dfrac{1}{2} C U_1^2 - \dfrac{1}{2} C U_2^2$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
-**Sijoitus:** $E_1 = 14{,}85\,\text{J}$ ja $E_2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 = 7{,}99\,\text{J}$, joten $\Delta E = 14{,}85\,\text{J} - 7{,}99\,\text{J} = 6{,}86\,\text{J}$. Osuus on $\dfrac{6{,}86\,\text{J}}{14{,}85\,\text{J}} = 0{,}46$.
+**Sijoitus:** $E_1 = 14{,}85\,\text{J}$ ja $$\begin{aligned} E_2 &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 \\ &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 \\ &= 7{,}99\,\text{J} \end{aligned}$$, joten $\Delta E = 14{,}85\,\text{J} - 7{,}99\,\text{J} = 6{,}86\,\text{J}$. Osuus on $\dfrac{6{,}86\,\text{J}}{14{,}85\,\text{J}} = 0{,}46$.
 **Vastaus:** Salamaan siirtyi $\Delta E \approx 6{,}9\,\text{J}$, noin $46\,\%$ varastoidusta energiasta, kaksi merkitsevää numeroa kuten a-kohdassa.
 **Järkevyys:** Jännite pieneni vain $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, mutta energiaa siirtyi $46\,\%$, koska energia on verrannollinen jännitteen neliöön: $1 - \left(\dfrac{220}{300}\right)^2 = 0{,}46$. Siirtynyt energia on pienempi kuin alkuenergia, kuten pitääkin.
 
@@ -269,7 +269,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Virta on varauksen siirtymisnopeus. Kondensaattorin varaus on $Q = C U$, joten jännitteen pienentyessä $80\,\text{V}$ kondensaattorilta on lähtenyt varausta $\Delta Q = C\,\Delta U$ salamaputken kautta.
 **Kaava:** $I = \dfrac{\Delta Q}{\Delta t}$ ja $\Delta Q = C\,\Delta U$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$ ja $1{,}0\,\text{ms} = 1{,}0 \cdot 10^{-3}\,\text{s}$
-**Sijoitus:** $\Delta Q = 330 \cdot 10^{-6}\,\text{F} \cdot 80\,\text{V} = 0{,}0264\,\text{C}$ ja $I = \dfrac{0{,}0264\,\text{C}}{1{,}0 \cdot 10^{-3}\,\text{s}} = 26{,}4\,\text{A}$
+**Sijoitus:** $$\begin{aligned} \Delta Q &= 330 \cdot 10^{-6}\,\text{F} \cdot 80\,\text{V} \\ &= 0{,}0264\,\text{C} \end{aligned}$$ ja $I = \dfrac{0{,}0264\,\text{C}}{1{,}0 \cdot 10^{-3}\,\text{s}} = 26{,}4\,\text{A}$
 **Vastaus:** $I \approx 26\,\text{A}$, kaksi merkitsevää numeroa kuten keston $1{,}0\,\text{ms}$ tarkkuus.
 **Järkevyys:** Keskiteho on $\dfrac{6{,}86\,\text{J}}{1{,}0 \cdot 10^{-3}\,\text{s}} \approx 6{,}9\,\text{kW}$ ja virta $26\,\text{A}$: nämä ovat paljon suurempia kuin pieni paristo voisi antaa näin lyhyessä pulssissa. Siksi energia varastoidaan ensin kondensaattoriin, joka luovuttaa sen nopeasti.
 

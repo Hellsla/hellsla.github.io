@@ -30,15 +30,15 @@
         {
           "text": "Noin $8{,}7\\,\\text{A}$, koska virta on teho jaettuna jännitteellä.",
           "correct": true,
-          "feedback": "Oikein. Kaavasta $P = UI$ saadaan $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8{,}7\\,\\text{A}$ (luku *Sähköteho ja vastuksen lämpeneminen*). Tänään lasketaan, mitä tapahtuu, kun monta tällaista laitetta on samassa ryhmässä."
+          "feedback": "Oikein. Kaavasta $P = UI$ saadaan $$\\begin{aligned} I &= P : U \\\\ &= 2000\\,\\text{W} : 230\\,\\text{V} \\\\ &\\approx 8{,}7\\,\\text{A} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*). Tänään lasketaan, mitä tapahtuu, kun monta tällaista laitetta on samassa ryhmässä."
         },
         {
           "text": "Noin $0{,}12\\,\\text{A}$, koska virta on jännite jaettuna teholla.",
-          "feedback": "Jännite jaettuna teholla ei ole virta, eikä sen yksikkö ole ampeeri. Kaavasta $P = UI$ ratkaistaan $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8{,}7\\,\\text{A}$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
+          "feedback": "Jännite jaettuna teholla ei ole virta, eikä sen yksikkö ole ampeeri. Kaavasta $P = UI$ ratkaistaan $$\\begin{aligned} I &= P : U \\\\ &= 2000\\,\\text{W} : 230\\,\\text{V} \\\\ &\\approx 8{,}7\\,\\text{A} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
         },
         {
           "text": "Noin $2000\\,\\text{A}$, koska laitteen virta on sama luku kuin sen teho.",
-          "feedback": "Teho ja virta ovat eri suureita. Sama teho saadaan pienellä virralla, kun jännite on suuri: $I = P : U = 2000\\,\\text{W} : 230\\,\\text{V} \\approx 8{,}7\\,\\text{A}$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
+          "feedback": "Teho ja virta ovat eri suureita. Sama teho saadaan pienellä virralla, kun jännite on suuri: $$\\begin{aligned} I &= P : U \\\\ &= 2000\\,\\text{W} : 230\\,\\text{V} \\\\ &\\approx 8{,}7\\,\\text{A} \\end{aligned}$$ (luku *Sähköteho ja vastuksen lämpeneminen*)."
         }
       ]
     },

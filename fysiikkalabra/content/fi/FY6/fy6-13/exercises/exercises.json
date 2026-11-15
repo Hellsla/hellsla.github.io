@@ -129,7 +129,7 @@
         {
           "text": "Levyjen varaukset ovat $+1{,}2\\,\\text{mC}$ ja $-1{,}2\\,\\text{mC}$, joten kondensaattorin kokonaisvaraus on nolla.",
           "true": true,
-          "feedback": "Oikein: $Q = CU$, eli $Q = 100\\,\\mu\\text{F} \\cdot 12\\,\\text{V} = 1{,}2\\,\\text{mC}$. Paristo vain siirtää varausta levystä toiseen, joten levyjen varaukset ovat yhtä suuret ja vastakkaismerkkiset."
+          "feedback": "Oikein: $Q = CU$, eli $$\\begin{aligned} Q &= 100\\,\\mu\\text{F} \\cdot 12\\,\\text{V} \\\\ &= 1{,}2\\,\\text{mC} \\end{aligned}$$. Paristo vain siirtää varausta levystä toiseen, joten levyjen varaukset ovat yhtä suuret ja vastakkaismerkkiset."
         },
         {
           "text": "Latauksen päätyttyä virta kulkee levyjen välisen eristeen läpi samalla tavalla kuin johtimissa.",

@@ -411,7 +411,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "Muunnos $1{,}0\\,\\text{mm} = 1{,}0 \\cdot 10^{-3}\\,\\text{m}$. Sitten $F = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2} \\cdot \\dfrac{(6{,}0 \\cdot 10^{-13}\\,\\text{C})^2}{(1{,}0 \\cdot 10^{-3}\\,\\text{m})^2}$."
+              "detail": "Muunnos $1{,}0\\,\\text{mm} = 1{,}0 \\cdot 10^{-3}\\,\\text{m}$. Sitten $$\\begin{aligned} F &= 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2} \\\\ &\\cdot \\dfrac{(6{,}0 \\cdot 10^{-13}\\,\\text{C})^2}{(1{,}0 \\cdot 10^{-3}\\,\\text{m})^2} \\end{aligned}$$."
             },
             {
               "key": "units_precision",
