@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f22ac3e71db8780e
-SCOPE: delta added-exercise from b4640f1fa75ce4b0 base 5a45b28682e8
+CONTENT-HASH: 7192b15eb690bddb
 
 ## Blocking
 (none)
 
 ## Polish
-(none new; round-1 polish on L2-08 level and "Kaava" wording unchanged and optional)
+- content/en/FY8/fy8-1/exercises/exercises.json (fy8-1-L2-09) — the solution's answer is now $4.3 \cdot 10^{2}\,\text{nm}$ while the checked answer stays 428 (tolerance 4 %); 430 passes, so nothing breaks — optional, the solution names the calculated value 428 nm.
 
 ## Checked
-- L2-08 solution diff: Muunnokset now states frequencies are used in units of 10^14 Hz so the slope 0.4136 eV gives eV directly; the old line mixed units (eV per 10^14 Hz times a unitless-looking factor) and is repaired.
-- Sijoitus 0.4136 * (12 - 5.56) = 2.66 eV is correct and consistent with the stated unit convention.
-- Järkevyys no longer uses the work function (not readable in the task); compares the graph reading 2.7 eV to hf = 4.96 eV and notes 2.66 agrees: clearer, reading stays the primary route.
-- Reading step, answer (2.7 eV, tolerance) and L1-10, L2-09 untouched; earlier PASS stands.
-- Method: text diff only.
+- solutions.md L2-09 Answer: two significant figures now follow the graph reading $7.0 \cdot 10^{14}\,\text{Hz}$; the old "three significant figures ... about ±1 %" contradicted the reading's precision. The reason is stated in one sentence a student can follow.
+- The calculated value 428 nm stays in view, so the Reasonableness line (1240 : 428) still connects to the answer.
+- Answer 428, tolerance 0.04: a student who rounds to 430 nm is accepted; no trap.
+- English: decimal point, number with unit in LaTeX, natural wording; same content as the Finnish line.
+- exercises.json: caption marker removed (teacher-approved) and chains re-broken; no change to any task's demand or data.
+- Method: text diff in context and the exercise entry; captures not needed for a rounding change.

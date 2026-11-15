@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 959b5037fa5f1543
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 14b54a6e061b7b91
 
 ## Blocking
-- none
+
+(none)
 
 ## Polish
-- fy8-12-L3-06 solution is long (about 280 words); acceptable for a level 3 data task. Interaction shares are rounded estimates from NIST XCOM attenuation coefficients.
+
+- exercises.json:391 (fy8-12-L3-05 text) — the marker was taken out of the captions, but the task text still says "(taulukko, esimerkkiaineisto)"; by the teacher's rule of 2026-11-13 (no provenance badge on example data) write "(taulukko)".
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+
+- Delta only: "kilobecquereleina" corrected to "kilobecquereleinä" twice in the text of fy8-12-L3-05 and once in its solution's Kysytty line; the front-vowel ending is right and the same as in the Finnish version.
+- No number, symbol, question or step changed; the short sentences of the selkeä suomi version are untouched.
+- Removing the caption marker takes nothing the task needs: the table is still referred to in the text.
+- Judged from the diff and the packet text; no capture opened.

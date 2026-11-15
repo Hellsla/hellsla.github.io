@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 01b6f24892569a77
-SCOPE: delta reflow from 7b7785dbfa112764 base cf5f907
+CONTENT-HASH: 95f4812c2cd2b6b6
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Delta round 4, calculation chains re-broken into aligned rows. Changed blocks judged from the source diff and the identical shared aligned renderer seen in fy8-1 and fy8-6 captures; this set's own solution captures not opened.
-- Kaava lines keep the equals sign in the first row; sentence marks sit inside the last row.
+- Delta round 1 (wording, caption-label). Hash 95f4812c2cd2b6b6 at the start and at the end.
+- Opened fy8-3-open-exercises-L3-1280-5 (task 3-20, solution open): Muunnokset now reads "Fotonien energiat lasketaan jouleina ja muunnetaan elektronivolteiksi"; "jouleina" is the correct essive plural (the old "joulina" was a misspelling), the paragraph wraps cleanly and the formulas around it (Kaava boxes, Sijoitus list and aligned rows) are intact.
+- Opened fy8-3-open-exercises-L3-1280-4 (task 3-20 text and its table): the caption is "Pilven emissioviivat" with no marker left behind, no stray bracket or double space; the table sits inside the card.
+- No figure, formula, number or unit changed; nothing else judged in this delta.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -14,10 +14,8 @@ CONTENT-HASH: 7192b15eb690bddb
 ## Checked
 - All 21 numeric answers recomputed from the English task texts with my own script: every one agrees with exercises.json and answers.py inside half the tolerance (L2-02 2.2 % of 3 %).
 - Data tables, answers, tolerances, correct option and truth values identical to the Finnish set; decimal points throughout.
-- L2-05 least-squares fit: $k = 4.195 \cdot 10^{-15}\,\text{V/Hz}$, $h = 6.72 \cdot 10^{-34}\,\text{J}\,\text{s}$, $f_0 = 5.57 \cdot 10^{14}\,\text{Hz}$, $W = 2.34\,\text{eV}$; residuals within $\pm 0.02\,\text{V}$.
 - L1-10 calcium $3.20\,\text{eV}$ matches the verified MAFY row (docs/mafy-arvot.tsv).
 - L1-06: exactly one correct option; distractors wrong, feedback right. L1-09: 1 F, 2 T, 3 F, 4 T, 5 F correct.
 - Figure kuvaaja-ab: $f_{0,\text{A}} = 5.56$, $f_{0,\text{B}} = 7.01 \cdot 10^{14}\,\text{Hz}$; readings 2.7 eV and 428 nm inside tolerance.
 - L3-04: yield 0.0930 % at both powers, $W = 2.30\,\text{eV}$. L3-05: 2.64, 2.00, 3.40 eV; 1.516 + 0.294 µA; $U_\text{s} = 1.10\,\text{V}$.
-- L3-01 non-relativistic ($v/c = 0.2\,\%$); L3-02 wave-model assumptions stated; unit "days" consistent.
-- Terms (work function, threshold frequency, stopping voltage, quantum efficiency) used correctly; scope inside FY8.
+- L3-01 non-relativistic; L3-02 assumptions stated; scope inside FY8; symbols as in the lesson.

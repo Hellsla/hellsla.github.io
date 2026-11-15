@@ -17,6 +17,4 @@ CONTENT-HASH: cb48bd7706c41840
 - L1-06: exactly one correct option; each distractor wrong and its feedback right. L1-09: truth values 1 F, 2 T, 3 F, 4 T, 5 F correct.
 - Figure kuvaaja-ab: $f_{0,\text{A}} = 5{,}56$, $f_{0,\text{B}} = 7{,}01 \cdot 10^{14}\,\text{Hz}$; readings 2,7 eV and 428 nm inside tolerance; description does not give the answer.
 - L3-04: yield 0,0930 % at both powers, $W = 2{,}30\,\text{eV}$. L3-05: A 2,64 eV, B 2,00 eV, C 3,40 eV; 1,516 + 0,294 µA; $U_\text{s} = 1{,}10\,\text{V}$.
-- L3-01 non-relativistic ($v/c = 0{,}2\,\%$); L3-02 wave-model assumptions stated in the task.
-- Scope: inside FY8 contents; stopping voltage defined in L2-05; no de Broglie.
-- Symbols ($W$, $E_\text{k,max}$, $f_0$, $\lambda_0$) as in the lesson brief; solutions symbolic before substitution.
+- L3-01 non-relativistic; L3-02 assumptions stated; scope inside FY8; symbols as in the lesson.
