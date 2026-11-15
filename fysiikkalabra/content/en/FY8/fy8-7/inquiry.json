@@ -34,7 +34,7 @@
         },
         {
           "text": "The energy of the photon is the energy of the upper level $n = 3$, so it is $1.51\\,\\text{eV}$.",
-          "feedback": "The photon carries not the energy of one level but the difference of the levels: $E_3 - E_2 = -1.51\\,\\text{eV} + 3.40\\,\\text{eV} = 1.89\\,\\text{eV}$, which corresponds to the wavelength $656\\,\\text{nm}$."
+          "feedback": "The photon carries not the energy of one level but the difference of the levels: $$\n\\begin{aligned}\nE_3 - E_2 &= -1.51\\,\\text{eV} + 3.40\\,\\text{eV} \\\\\n&= 1.89\\,\\text{eV}\n\\end{aligned}\n$$, which corresponds to the wavelength $656\\,\\text{nm}$."
         },
         {
           "text": "The photon always leaves in the same direction, because the transition is exactly the same every time.",
@@ -464,7 +464,7 @@
       "tolerance": 0.02,
       "hints": [
         "The energy of a laser photon is the difference of the levels $E_2 - E_1$, not the energy of either level.",
-        "$E_2 - E_1 = -3.12\\,\\text{eV} - (-5.45\\,\\text{eV}) = 2.33\\,\\text{eV}$.",
+        "$$\n\\begin{aligned}\nE_2 - E_1 &= -3.12\\,\\text{eV} \\\\\n&- (-5.45\\,\\text{eV}) \\\\\n&= 2.33\\,\\text{eV}\n\\end{aligned}\n$$.",
         "$\\lambda = \\dfrac{hc}{E_2 - E_1} = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2.33 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}}$."
       ],
       "mistakes": [
@@ -477,7 +477,7 @@
           "feedback": "You used the magnitude of the energy of the lower level, $5.45\\,\\text{eV}$, as the energy of the photon. The energy of the photon is the difference of the levels, $2.33\\,\\text{eV}$."
         }
       ],
-      "solution": "**Given:** energy of the upper laser level $E_2 = -3.12\\,\\text{eV}$, of the lower $E_1 = -5.45\\,\\text{eV}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Asked:** the wavelength of the laser light $\\lambda$ in nanometres\n\n**Principle:** All the photons of a laser are produced in the transition from the upper laser level to the lower. Energy is conserved, so the energy of each photon is the difference of the levels, $\\tfrac{hc}{\\lambda} = E_2 - E_1$.\n\n**Formula:** $\\dfrac{hc}{\\lambda} = E_2 - E_1$, from which\n\n$$\\lambda = \\frac{hc}{E_2 - E_1}$$\n\n**Conversions:** $E_2 - E_1 = -3.12\\,\\text{eV} + 5.45\\,\\text{eV} = 2.33\\,\\text{eV} = 2.33 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} = 3.7327 \\cdot 10^{-19}\\,\\text{J}$; finally $1\\,\\text{m} = 10^{9}\\,\\text{nm}$.\n\n**Substitution:** $hc = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2.998 \\cdot 10^{8}\\,\\text{m/s} = 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$. $\\lambda = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{3.7327 \\cdot 10^{-19}\\,\\text{J}} = 5.3219 \\cdot 10^{-7}\\,\\text{m} = 532.19\\,\\text{nm}$\n\n**Answer:** $532\\,\\text{nm}$, three significant figures like the energy difference $2.33\\,\\text{eV}$.\n\n**Reasonableness:** The photon energy $2.33\\,\\text{eV}$ is within the photon energies of visible light, $1.7$–$3.3\\,\\text{eV}$, and $532\\,\\text{nm}$ is green light, the wavelength of green laser pointers. The points of the graph, $405\\,\\text{nm}$ ($3.06\\,\\text{eV}$) and $650\\,\\text{nm}$ ($1.91\\,\\text{eV}$), bracket the result sensibly.",
+      "solution": "**Given:** energy of the upper laser level $E_2 = -3.12\\,\\text{eV}$, of the lower $E_1 = -5.45\\,\\text{eV}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Asked:** the wavelength of the laser light $\\lambda$ in nanometres\n\n**Principle:** All the photons of a laser are produced in the transition from the upper laser level to the lower. Energy is conserved, so the energy of each photon is the difference of the levels, $\\tfrac{hc}{\\lambda} = E_2 - E_1$.\n\n**Formula:** $\\dfrac{hc}{\\lambda} = E_2 - E_1$, from which\n\n$$\\lambda = \\frac{hc}{E_2 - E_1}$$\n\n**Conversions:** $E_2 - E_1 = -3.12\\,\\text{eV} + 5.45\\,\\text{eV} = 2.33\\,\\text{eV} = 2.33 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} = 3.7327 \\cdot 10^{-19}\\,\\text{J}$; finally $1\\,\\text{m} = 10^{9}\\,\\text{nm}$.\n\n**Substitution:** $$\n\\begin{aligned}\nhc &= 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\\\\n&\\cdot 2.998 \\cdot 10^{8}\\,\\text{m/s} \\\\\n&= 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}\n\\end{aligned}\n$$. $\\lambda = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{3.7327 \\cdot 10^{-19}\\,\\text{J}} = 5.3219 \\cdot 10^{-7}\\,\\text{m} = 532.19\\,\\text{nm}$\n\n**Answer:** $532\\,\\text{nm}$, three significant figures like the energy difference $2.33\\,\\text{eV}$.\n\n**Reasonableness:** The photon energy $2.33\\,\\text{eV}$ is within the photon energies of visible light, $1.7$–$3.3\\,\\text{eV}$, and $532\\,\\text{nm}$ is green light, the wavelength of green laser pointers. The points of the graph, $405\\,\\text{nm}$ ($3.06\\,\\text{eV}$) and $650\\,\\text{nm}$ ($1.91\\,\\text{eV}$), bracket the result sensibly.",
       "practice": "Practise calculating the energy and the wavelength of a photon in the tasks of level 1."
     },
     {

@@ -131,7 +131,7 @@
     {
       "id": "fy8-11-L2-03",
       "level": 2,
-      "text": "Uranium-235 can also split in the reaction ${}^{1}_{0}\\text{n} + {}^{235}_{92}\\text{U} \\rightarrow {}^{140}_{54}\\text{Xe} + {}^{94}_{38}\\text{Sr} + x\\,{}^{1}_{0}\\text{n}$. The atomic masses are: uranium-235 $235.0439282\\,\\text{u}$, xenon-140 $139.9216458\\,\\text{u}$, strontium-94 $93.9153556\\,\\text{u}$ and neutron $1.0086649\\,\\text{u}$. First deduce the number of neutrons $x$. How much energy is released in the reaction? Give the answer in megaelectronvolts.",
+      "text": "Uranium-235 can also split in the reaction $$\n\\begin{aligned}\n&{}^{1}_{0}\\text{n} \\\\\n&+ {}^{235}_{92}\\text{U} \\rightarrow {}^{140}_{54}\\text{Xe} + {}^{94}_{38}\\text{Sr} + x\\,{}^{1}_{0}\\text{n}\n\\end{aligned}\n$$. The atomic masses are: uranium-235 $235.0439282\\,\\text{u}$, xenon-140 $139.9216458\\,\\text{u}$, strontium-94 $93.9153556\\,\\text{u}$ and neutron $1.0086649\\,\\text{u}$. First deduce the number of neutrons $x$. How much energy is released in the reaction? Give the answer in megaelectronvolts.",
       "answer": 185,
       "unit": "MeV",
       "tolerance": 0.02

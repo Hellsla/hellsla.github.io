@@ -84,7 +84,15 @@
 **Periaate:** Potilasta pidetään pistemäisenä lähteenä. Annosnopeus on silloin kääntäen verrannollinen etäisyyden neliöön (luku *Säteilyannos ja säteilyturvallisuus Suomessa*). Annosnopeus pysyy tämän ajan vakiona, joten annos on annosnopeus kertaa aika.
 **Kaava:** $\dot{H}_2 = \dot{H}_1 \left(\tfrac{r_1}{r_2}\right)^2$ ja $H = \dot{H}_2 t$, joten $H = \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 t$
 **Muunnokset:** Aika muutetaan tunneiksi: $t = 5{,}0\,\text{min} = 5{,}0 \cdot \tfrac{1}{60}\,\text{h} = 0{,}08333\,\text{h}$
-**Sijoitus:** $H = 30\,\mu\text{Sv/h} \cdot \left(\dfrac{1{,}0\,\text{m}}{0{,}50\,\text{m}}\right)^2 \cdot 0{,}08333\,\text{h} = 30\,\mu\text{Sv/h} \cdot 4 \cdot 0{,}08333\,\text{h} = 120\,\mu\text{Sv/h} \cdot 0{,}08333\,\text{h} = 10\,\mu\text{Sv}$
+**Sijoitus:** $$
+\begin{aligned}
+H &= 30\,\mu\text{Sv/h} \cdot \left(\dfrac{1{,}0\,\text{m}}{0{,}50\,\text{m}}\right)^2 \\
+&\cdot 0{,}08333\,\text{h} \\
+&= 30\,\mu\text{Sv/h} \cdot 4 \cdot 0{,}08333\,\text{h} \\
+&= 120\,\mu\text{Sv/h} \cdot 0{,}08333\,\text{h} \\
+&= 10\,\mu\text{Sv}
+\end{aligned}
+$$
 **Vastaus:** $10\,\mu\text{Sv}$. Vastauksessa on kaksi merkitsevää numeroa, kuten annosnopeudessa $30\,\mu\text{Sv/h}$ ja ajassa $5{,}0\,\text{min}$.
 **Järkevyys:** Puolet lyhyempi etäisyys nelinkertaistaa annosnopeuden arvoon $120\,\mu\text{Sv/h}$. Viisi minuuttia on kahdestoistaosa tunnista, ja $120 : 12 = 10$. Metrin päässä hoitaja saisi samassa ajassa vain $2{,}5\,\mu\text{Sv}$. Etäisyys on siis tehokas suoja.
 
@@ -144,7 +152,15 @@
 **Periaate:** Efektiivisiä annoksia voi verrata suoraan ja laskea yhteen. Kokonaisannos on jokaisen tutkimuksen annos kertaa tutkimusten lukumäärä, ja nämä tulot lasketaan yhteen. Vertailu tehdään yhdellä jakolaskulla.
 **Kaava:** $H = n_1 H_1 + n_2 H_2 + n_3 H_3$ ja $p = \dfrac{H}{H_\text{luonto}} \cdot 100\,\%$
 **Muunnokset:** Niitä ei tarvita, koska kaikki annokset ovat millisieverteinä. Osuus muutetaan prosenteiksi kertomalla se luvulla $100\,\%$.
-**Sijoitus:** $H = 3 \cdot 0{,}010\,\text{mSv} + 2 \cdot 0{,}10\,\text{mSv} + 1 \cdot 2{,}0\,\text{mSv} = 0{,}030\,\text{mSv} + 0{,}20\,\text{mSv} + 2{,}0\,\text{mSv} = 2{,}23\,\text{mSv}$
+**Sijoitus:** $$
+\begin{aligned}
+H &= 3 \cdot 0{,}010\,\text{mSv} + 2 \\
+&\cdot 0{,}10\,\text{mSv} + 1 \cdot 2{,}0\,\text{mSv} \\
+&= 0{,}030\,\text{mSv} + 0{,}20\,\text{mSv} \\
+&+ 2{,}0\,\text{mSv} \\
+&= 2{,}23\,\text{mSv}
+\end{aligned}
+$$
 $p = \dfrac{2{,}23\,\text{mSv}}{5{,}1\,\text{mSv}} \cdot 100\,\% = 43{,}73\,\%$
 **Vastaus:** $44\,\%$. Vastauksessa on kaksi merkitsevää numeroa, kuten luonnon säteilyn annoksessa $5{,}1\,\text{mSv}$.
 **Järkevyys:** Pään TT:n annos $2{,}0\,\text{mSv}$ on lähes koko summa, ja $2{,}0 : 5{,}1 \approx 0{,}39$. Pienet kuvat lisäävät vain $0{,}23\,\text{mSv}$. Kokonaisuus on siis $(2{,}0 + 0{,}23) : 5{,}1 \approx 0{,}44$ eli noin $44\,\%$. Annos on alle puolet vuosiannoksesta, ja suurin osa siitä tulee yhdestä TT-tutkimuksesta.
@@ -177,7 +193,14 @@ b) $A_\text{hajoaminen} = 500\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12{,}
 **Periaate:** Kuvaukseen tarvittava aktiivisuus $A_\text{kuv} = a m$ on oltava jäljellä odotusajan jälkeen. Odotusaikana aktiivisuus pienenee vain hajoamalla. Siksi ruiskutettava aktiivisuus $A_0$ on suurempi kuin $A_\text{kuv}$. Pienin sopiva arvo saadaan hajoamislaista. Annos riippuu ruiskutetusta aktiivisuudesta. PET-osan ja TT-osan annokset lasketaan yhteen.
 **Kaava:** $A_\text{kuv} = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, josta $A_0 = \dfrac{a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}}$, ja $H = k A_0 + H_\text{TT}$
 **Muunnokset:** Niitä ei tarvita, koska odotusaika ja puoliintumisaika ovat molemmat minuutteina. Annoskerroin on millisievertteinä megabecquerelia kohti.
-**Sijoitus:** $A_\text{kuv} = 2{,}0\,\tfrac{\text{MBq}}{\text{kg}} \cdot 75\,\text{kg} = 150\,\text{MBq}$ ja $\left(\tfrac{1}{2}\right)^{60\,\text{min} / 110\,\text{min}} = \left(\tfrac{1}{2}\right)^{0{,}5455} = 0{,}6853$, joten $A_0 = \dfrac{150\,\text{MBq}}{0{,}6853} = 218{,}9\,\text{MBq}$. Tällöin $H = 0{,}019\,\tfrac{\text{mSv}}{\text{MBq}} \cdot 218{,}9\,\text{MBq} + 6{,}0\,\text{mSv} = 4{,}16\,\text{mSv} + 6{,}0\,\text{mSv} = 10{,}16\,\text{mSv}$
+**Sijoitus:** $A_\text{kuv} = 2{,}0\,\tfrac{\text{MBq}}{\text{kg}} \cdot 75\,\text{kg} = 150\,\text{MBq}$ ja $\left(\tfrac{1}{2}\right)^{60\,\text{min} / 110\,\text{min}} = \left(\tfrac{1}{2}\right)^{0{,}5455} = 0{,}6853$, joten $A_0 = \dfrac{150\,\text{MBq}}{0{,}6853} = 218{,}9\,\text{MBq}$. Tällöin $$
+\begin{aligned}
+H &= 0{,}019\,\tfrac{\text{mSv}}{\text{MBq}} \cdot 218{,}9\,\text{MBq} \\
+&+ 6{,}0\,\text{mSv} \\
+&= 4{,}16\,\text{mSv} + 6{,}0\,\text{mSv} \\
+&= 10{,}16\,\text{mSv}
+\end{aligned}
+$$
 **Vastaus:** a) $10\,\text{mSv}$. Vastauksessa on kaksi merkitsevää numeroa, kuten massassa $75\,\text{kg}$ ja aktiivisuudessa $2{,}0\,\tfrac{\text{MBq}}{\text{kg}}$. b) Kokonaisannos on noin kaksi luonnon säteilyn vuosiannosta ($10{,}16 : 5{,}1 = 2{,}0$). Se on siis selvästi suurempi kuin vuosiannos. Tutkimus on oikeutettu, kun lääkäri arvioi kaksi asiaa. Tulos ratkaisee hoitoa koskevan kysymyksen, eikä pienemmän annoksen menetelmällä saada samaa tietoa. Silloin hyöty potilaalle on suurempi kuin säteilyn aiheuttama pieni lisäriski. Annos optimoidaan käyttämällä pienintä aktiivisuutta, jolla kuva onnistuu.
 **Järkevyys:** Odotusaika $60\,\text{min}$ on hieman yli puolet puoliintumisajasta. Noin kolmannes aktiivisuudesta ehtii siis hajota: $150 : 0{,}69 \approx 217\,\text{MBq}$. Tämä vastaa tulosta $218{,}9\,\text{MBq}$. PET-osan annos $4{,}2\,\text{mSv}$ on samaa suuruusluokkaa kuin muiden PET-tutkimusten annokset, ja TT-osa lisää siihen vielä enemmän.
 

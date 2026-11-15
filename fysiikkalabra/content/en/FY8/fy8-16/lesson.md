@@ -422,7 +422,12 @@ where $\lambda$ is the wavelength measured from the light of the galaxy, $\lambd
 ```latex
 v = c\,z
 ```
-where $v$ is the recession speed and $c = 2.998 \cdot 10^{5}\,\text{km/s}$ the speed of light. For example, a redshift of $z = 0.010$ means a speed of $v = 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.010 \approx 3000\,\text{km/s}$. For very distant galaxies with a large redshift, the equation no longer holds.
+where $v$ is the recession speed and $c = 2.998 \cdot 10^{5}\,\text{km/s}$ the speed of light. For example, a redshift of $z = 0.010$ means a speed of $$
+\begin{aligned}
+v &= 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.010 \\
+&\approx 3000\,\text{km/s}
+\end{aligned}
+$$. For very distant galaxies with a large redshift, the equation no longer holds.
 
 ### The Hubble–Lemaître law
 The distances of galaxies are measured in **megaparsecs**: $1\,\text{Mpc} = 3.086 \cdot 10^{22}\,\text{m}$, so light travels a megaparsec in about $3.26$ million years. The present recession speed of a galaxy is directly proportional to its distance:
@@ -555,7 +560,12 @@ In the spectrum of a galaxy, the red $\text{H}\alpha$ line of hydrogen, whose wa
 
 <!-- vaihe -->
 
-**Reasonableness.** The speed is about $3.5\,\%$ of the speed of light, so the redshift is small and the equation $v = cz$ holds. With rounded numbers, $\tfrac{23}{660} \approx 0.035$ and $0.035 \cdot 300\,000\,\text{km/s} \approx 10\,500\,\text{km/s}$. The result $70\,\tfrac{\text{km/s}}{\text{Mpc}}$ is the same as the known value of the Hubble constant.
+**Reasonableness.** The speed is about $3.5\,\%$ of the speed of light, so the redshift is small and the equation $v = cz$ holds. With rounded numbers, $\tfrac{23}{660} \approx 0.035$ and $$
+\begin{aligned}
+&0.035 \cdot 300\,000\,\text{km/s} \\
+&\approx 10\,500\,\text{km/s}
+\end{aligned}
+$$. The result $70\,\tfrac{\text{km/s}}{\text{Mpc}}$ is the same as the known value of the Hubble constant.
 
 ## Common misconception
 Many people think that the Big Bang was an explosion at a particular point in space and that the galaxies are flying away from it into empty space. Then the centre of the explosion would be somewhere, and seen from there the galaxies would recede differently than seen from elsewhere. Observations show otherwise: seen from any direction, galaxies recede in the same way, and the background radiation arrives almost evenly from every direction. The expansion does not happen in space, but space itself expands, and the distances between distant galaxies grow on average in the same proportion. The expansion has neither a centre nor an edge.

@@ -4,9 +4,21 @@
 **Periaate:** Valon energia on kvantittunut fotoneiksi, ja yhden fotonin energia riippuu vain valon taajuudesta: $E = hf$. Koska tunnetaan aallonpituus, taajuus lausutaan aaltoliikkeen perusyhtälöstä $c = f\lambda$.
 **Kaava:** $E = hf$ ja $f = \dfrac{c}{\lambda}$, joten $E = \dfrac{hc}{\lambda}$
 **Muunnokset:** $\lambda = 532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{532 \cdot 10^{-9}\,\text{m}} = 3{,}734 \cdot 10^{-19}\,\text{J}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{532 \cdot 10^{-9}\,\text{m}} = 3{,}734 \cdot 10^{-19}\,\text{J}$
 **Vastaus:** $3{,}73 \cdot 10^{-19}\,\text{J}$, kolme merkitsevää numeroa kuten aallonpituudessa $532\,\text{nm}$.
-**Järkevyys:** Elektronivoltteina energia on $3{,}734 \cdot 10^{-19}\,\text{J} : 1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}} \approx 2{,}33\,\text{eV}$. Näkyvän valon fotonien energiat ovat noin $1{,}8$–$3{,}1\,\text{eV}$, ja vihreä on tämän välin keskellä.
+**Järkevyys:** Elektronivoltteina energia on $$
+\begin{aligned}
+&3{,}734 \cdot 10^{-19}\,\text{J} \\
+&: 1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}} \\
+&\approx 2{,}33\,\text{eV}
+\end{aligned}
+$$. Näkyvän valon fotonien energiat ovat noin $1{,}8$–$3{,}1\,\text{eV}$, ja vihreä on tämän välin keskellä.
 
 ## fy8-1-L1-02
 **Annettu:** taajuus $f = 2{,}45\,\text{GHz}$, Planckin vakio $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$
@@ -34,7 +46,13 @@
 **Periaate:** Fotonin energia on $E = hf$, ja taajuus saadaan aallonpituudesta, koska säteily etenee valon nopeudella: $f = \tfrac{c}{\lambda}$. Tulos jouleina muunnetaan lopuksi elektronivolteiksi.
 **Kaava:** $E = \dfrac{hc}{\lambda}$
 **Muunnokset:** $\lambda = 254\,\text{nm} = 254 \cdot 10^{-9}\,\text{m}$; energia jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{254 \cdot 10^{-9}\,\text{m}} = 7{,}821 \cdot 10^{-19}\,\text{J} = \dfrac{7{,}821 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 4{,}882\,\text{eV}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{254 \cdot 10^{-9}\,\text{m}} = 7{,}821 \cdot 10^{-19}\,\text{J} = \dfrac{7{,}821 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 4{,}882\,\text{eV}$
 **Vastaus:** $4{,}88\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituudessa $254\,\text{nm}$.
 **Järkevyys:** Pyöreillä luvuilla $E \approx 1240\,\text{eV}\,\text{nm} : 254\,\text{nm} \approx 4{,}9\,\text{eV}$. UV-C-fotonin energia on selvästi suurempi kuin näkyvän valon $1{,}8$–$3{,}1\,\text{eV}$, ja juuri siksi se vaurioittaa mikrobien perimää.
 
@@ -61,7 +79,15 @@
 **Muunnokset:** $W = 2{,}30\,\text{eV} = 2{,}30 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}685 \cdot 10^{-19}\,\text{J}$; $1\,\text{m} = 10^{9}\,\text{nm}$
 **Sijoitus:** a) $f_0 = \dfrac{3{,}685 \cdot 10^{-19}\,\text{J}}{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}} = 5{,}561 \cdot 10^{14}\,\text{Hz}$; b) $\lambda_0 = \dfrac{2{,}998 \cdot 10^8\,\text{m/s}}{5{,}561 \cdot 10^{14}\,\text{Hz}} = 5{,}391 \cdot 10^{-7}\,\text{m} = 539{,}1\,\text{nm}$
 **Vastaus:** a) $5{,}56 \cdot 10^{14}\,\text{Hz}$, kolme merkitsevää numeroa kuten irrotustyössä $2{,}30\,\text{eV}$; b) $\lambda_0 = 539\,\text{nm}$. Punaisen valon aallonpituus $650\,\text{nm}$ on suurempi kuin $539\,\text{nm}$, joten sen fotonin energia on liian pieni eikä punainen valo irrota kaliumista elektroneja.
-**Järkevyys:** Pyöreillä luvuilla $1240\,\text{eV}\,\text{nm} : 2{,}30\,\text{eV} \approx 539\,\text{nm}$, kuten sijoituksessa. Punaisen valon fotonin energia on $1240\,\text{eV}\,\text{nm} : 650\,\text{nm} \approx 1{,}91\,\text{eV}$, mikä on pienempi kuin $2{,}30\,\text{eV}$. Raja-aallonpituus on lähellä natriumin arvoa $544\,\text{nm}$, ja kaliumin irrotustyö on hieman suurempi kuin natriumin, joten sen raja-aallonpituuden pitääkin olla hieman lyhyempi.
+**Järkevyys:** Pyöreillä luvuilla $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 2{,}30\,\text{eV} &\approx 539\,\text{nm}
+\end{aligned}
+$$, kuten sijoituksessa. Punaisen valon fotonin energia on $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 650\,\text{nm} &\approx 1{,}91\,\text{eV}
+\end{aligned}
+$$, mikä on pienempi kuin $2{,}30\,\text{eV}$. Raja-aallonpituus on lähellä natriumin arvoa $544\,\text{nm}$, ja kaliumin irrotustyö on hieman suurempi kuin natriumin, joten sen raja-aallonpituuden pitääkin olla hieman lyhyempi.
 
 ## fy8-1-L1-08
 **Kysytty:** miksi himmeä ultraviolettivalo irrottaa elektroneja heti mutta kirkas punainen valo ei lainkaan
@@ -75,7 +101,11 @@
 
 $E_\text{k,max} = hf - W$
 
-$E_\text{k,max} = 3{,}10\,\text{eV} - 2{,}50\,\text{eV}$
+$$
+\begin{aligned}
+E_\text{k,max} &= 3{,}10\,\text{eV} - 2{,}50\,\text{eV}
+\end{aligned}
+$$
 
 $E_\text{k,max} = 0{,}60\,\text{eV}$
 
@@ -97,9 +127,19 @@ Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}5
 **Periaate:** Elektroni irtoaa vain, jos yhden fotonin energia on vähintään irrotustyön suuruinen. Fotonin energia pienenee, kun aallonpituus kasvaa, joten pisin irrottava aallonpituus on se, jolla fotonin energia on täsmälleen $W$ ja liike-energia nolla.
 **Kaava:** $\dfrac{hc}{\lambda_0} = W$, joten $\lambda_0 = \dfrac{hc}{W}$
 **Muunnokset:** $W = 2{,}14\,\text{eV} = 2{,}14 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}428 \cdot 10^{-19}\,\text{J}$; tulos metreistä nanometreiksi $1\,\text{m} = 10^{9}\,\text{nm}$
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $\lambda_0 = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}428 \cdot 10^{-19}\,\text{J}} = 5{,}794 \cdot 10^{-7}\,\text{m} = 579{,}4\,\text{nm}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $\lambda_0 = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}428 \cdot 10^{-19}\,\text{J}} = 5{,}794 \cdot 10^{-7}\,\text{m} = 579{,}4\,\text{nm}$
 **Vastaus:** $579\,\text{nm}$, kolme merkitsevää numeroa kuten irrotustyössä $2{,}14\,\text{eV}$.
-**Järkevyys:** Tarkistus pyöreillä luvuilla: $1240\,\text{eV}\,\text{nm} : 2{,}14\,\text{eV} \approx 580\,\text{nm}$. Se on keltaista valoa, joten vihreä ja sininen valo irrottavat elektroneja cesiumista, punainen ei. Cesiumin irrotustyö on pienempi kuin natriumin $2{,}28\,\text{eV}$, joten sen raja-aallonpituuden on oltava pidempi kuin natriumin $544\,\text{nm}$, kuten on.
+**Järkevyys:** Tarkistus pyöreillä luvuilla: $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 2{,}14\,\text{eV} &\approx 580\,\text{nm}
+\end{aligned}
+$$. Se on keltaista valoa, joten vihreä ja sininen valo irrottavat elektroneja cesiumista, punainen ei. Cesiumin irrotustyö on pienempi kuin natriumin $2{,}28\,\text{eV}$, joten sen raja-aallonpituuden on oltava pidempi kuin natriumin $544\,\text{nm}$, kuten on.
 
 ## fy8-1-L2-02
 **Annettu:** laserin teho $P = 5{,}0\,\text{mW}$, aallonpituus $\lambda = 650\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$
@@ -107,7 +147,13 @@ Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}5
 **Periaate:** Valon energia kulkee fotoneina, joilla kaikilla on sama energia $E = \tfrac{hc}{\lambda}$, koska laservalolla on yksi aallonpituus. Teho on sekunnissa lähtevä energia, joten fotonien määrä sekunnissa on teho jaettuna yhden fotonin energialla.
 **Kaava:** $P = N E = N \dfrac{hc}{\lambda}$, joten $N = \dfrac{P \lambda}{hc}$
 **Muunnokset:** $P = 5{,}0\,\text{mW} = 5{,}0 \cdot 10^{-3}\,\text{W}$, $\lambda = 650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $N = \dfrac{5{,}0 \cdot 10^{-3}\,\text{W} \cdot 650 \cdot 10^{-9}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1{,}636 \cdot 10^{16}\,\tfrac{1}{\text{s}}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $N = \dfrac{5{,}0 \cdot 10^{-3}\,\text{W} \cdot 650 \cdot 10^{-9}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1{,}636 \cdot 10^{16}\,\tfrac{1}{\text{s}}$
 **Vastaus:** $1{,}6 \cdot 10^{16}$ fotonia sekunnissa, kaksi merkitsevää numeroa kuten tehossa $5{,}0\,\text{mW}$.
 **Järkevyys:** Yhden fotonin energia on noin $3 \cdot 10^{-19}\,\text{J}$, ja $5 \cdot 10^{-3}\,\text{J} : (3 \cdot 10^{-19}\,\text{J}) \approx 1{,}7 \cdot 10^{16}$. Yksiköt: $\tfrac{\text{W} \cdot \text{m}}{\text{J}\,\text{s} \cdot \text{m/s}} = \tfrac{\text{J/s}}{\text{J}} = \tfrac{1}{\text{s}}$. Fotoneja on niin paljon, ettei yksittäisiä fotoneja huomaa tavallisessa valossa.
 
@@ -117,9 +163,19 @@ Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}5
 **Periaate:** Yksi fotoni luovuttaa energiansa yhdelle elektronille, ja energia säilyy: fotonin energiasta kuluu irrotustyö, loppu jää liike-energiaksi (valosähköinen yhtälö). Fotonin energia lasketaan aallonpituudesta.
 **Kaava:** $hf = W + E_\text{k,max}$ ja $hf = \dfrac{hc}{\lambda}$, joten $E_\text{k,max} = \dfrac{hc}{\lambda} - W$
 **Muunnokset:** $\lambda = 222\,\text{nm} = 222 \cdot 10^{-9}\,\text{m}$; fotonin energia jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $\dfrac{hc}{\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{222 \cdot 10^{-9}\,\text{m}} = 8{,}948 \cdot 10^{-19}\,\text{J} = 5{,}586\,\text{eV}$, joten $E_\text{k,max} = 5{,}586\,\text{eV} - 3{,}68\,\text{eV} = 1{,}906\,\text{eV}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $\dfrac{hc}{\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{222 \cdot 10^{-9}\,\text{m}} = 8{,}948 \cdot 10^{-19}\,\text{J} = 5{,}586\,\text{eV}$, joten $E_\text{k,max} = 5{,}586\,\text{eV} - 3{,}68\,\text{eV} = 1{,}906\,\text{eV}$
 **Vastaus:** $1{,}91\,\text{eV}$, sadasosan tarkkuudella kuten irrotustyö $3{,}68\,\text{eV}$.
-**Järkevyys:** Arvio: $1240\,\text{eV}\,\text{nm} : 222\,\text{nm} \approx 5{,}6\,\text{eV}$, ja $5{,}6\,\text{eV} - 3{,}7\,\text{eV} \approx 1{,}9\,\text{eV}$. Fotonin energia ylittää irrotustyön, joten elektroneja todella irtoaa.
+**Järkevyys:** Arvio: $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 222\,\text{nm} &\approx 5{,}6\,\text{eV}
+\end{aligned}
+$$, ja $5{,}6\,\text{eV} - 3{,}7\,\text{eV} \approx 1{,}9\,\text{eV}$. Fotonin energia ylittää irrotustyön, joten elektroneja todella irtoaa.
 
 ## fy8-1-L2-04
 **Annettu:** aallonpituus $\lambda = 300\,\text{nm}$, suurin liike-energia $E_\text{k,max} = 1{,}85\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
@@ -127,7 +183,13 @@ Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}5
 **Periaate:** Valosähköinen yhtälö kertoo energian säilymisen: fotonin energia on irrotustyön ja suurimman liike-energian summa. Kun fotonin energia ja suurin liike-energia tunnetaan, irrotustyö on niiden erotus.
 **Kaava:** $\dfrac{hc}{\lambda} = W + E_\text{k,max}$, joten $W = \dfrac{hc}{\lambda} - E_\text{k,max}$
 **Muunnokset:** $\lambda = 300\,\text{nm} = 300 \cdot 10^{-9}\,\text{m}$; fotonin energia jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $\dfrac{hc}{\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{300 \cdot 10^{-9}\,\text{m}} = 6{,}622 \cdot 10^{-19}\,\text{J} = 4{,}133\,\text{eV}$, joten $W = 4{,}133\,\text{eV} - 1{,}85\,\text{eV} = 2{,}283\,\text{eV}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $\dfrac{hc}{\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{300 \cdot 10^{-9}\,\text{m}} = 6{,}622 \cdot 10^{-19}\,\text{J} = 4{,}133\,\text{eV}$, joten $W = 4{,}133\,\text{eV} - 1{,}85\,\text{eV} = 2{,}283\,\text{eV}$
 **Vastaus:** $2{,}28\,\text{eV}$, sadasosan tarkkuudella kuten mitattu liike-energia $1{,}85\,\text{eV}$.
 **Järkevyys:** Irrotustyö on positiivinen ja pienempi kuin fotonin energia, kuten pitää. Arvo sopii natriumille ($2{,}28\,\text{eV}$), joten metalli voi olla natriumia.
 
@@ -138,16 +200,32 @@ Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}5
 **Kuvaajan lukeminen:** Taajuudet ovat $f = \tfrac{c}{\lambda}$: $8{,}21$, $7{,}40$, $6{,}88$, $6{,}38$ ja $5{,}94$ yksikössä $10^{14}\,\text{Hz}$. Pisteiden läpi sovitetaan suora, joka kulkee pisteiden lomassa. Suoralta valitaan kaksi kaukana toisistaan olevaa pistettä, esimerkiksi $(6{,}0 \cdot 10^{14}\,\text{Hz};\ 0{,}179\,\text{V})$ ja $(8{,}0 \cdot 10^{14}\,\text{Hz};\ 1{,}018\,\text{V})$. Rajataajuus luetaan kohdasta, jossa suora leikkaa taajuusakselin.
 **Kaava:** $k = \dfrac{\Delta U_\text{s}}{\Delta f}$ ja $k = \dfrac{h}{e}$, joten $h = ek$; rajataajuudella $hf_0 = W$
 **Muunnokset:** Taajuudet laskettiin aallonpituuksista $\lambda = 365\,\text{nm} = 365 \cdot 10^{-9}\,\text{m}$ jne.; muita muunnoksia ei tarvita.
-**Sijoitus:** $k = \dfrac{1{,}018\,\text{V} - 0{,}179\,\text{V}}{8{,}0 \cdot 10^{14}\,\text{Hz} - 6{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}195 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}}$, joten $h = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}195 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}} = 6{,}72 \cdot 10^{-34}\,\text{J}\,\text{s}$. Suora leikkaa taajuusakselin kohdassa $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$, ja $W = hf_0 = 6{,}72 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5{,}57 \cdot 10^{14}\,\text{Hz} = 3{,}74 \cdot 10^{-19}\,\text{J} = 2{,}34\,\text{eV}$
+**Sijoitus:** $k = \dfrac{1{,}018\,\text{V} - 0{,}179\,\text{V}}{8{,}0 \cdot 10^{14}\,\text{Hz} - 6{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}195 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}}$, joten $$
+\begin{aligned}
+h &= 1{,}602 \cdot 10^{-19}\,\text{C} \\
+&\cdot 4{,}195 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}} \\
+&= 6{,}72 \cdot 10^{-34}\,\text{J}\,\text{s}
+\end{aligned}
+$$. Suora leikkaa taajuusakselin kohdassa $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$, ja $W = hf_0 = 6{,}72 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5{,}57 \cdot 10^{14}\,\text{Hz} = 3{,}74 \cdot 10^{-19}\,\text{J} = 2{,}34\,\text{eV}$
 **Vastaus:** $h = 6{,}7 \cdot 10^{-34}\,\text{J}\,\text{s}$, kaksi merkitsevää numeroa, koska jännitteen epävarmuus $\pm 0{,}02\,\text{V}$ rajoittaa kulmakerrointa. Lisäksi $f_0 \approx 5{,}6 \cdot 10^{14}\,\text{Hz}$ ja $W \approx 2{,}3\,\text{eV}$.
-**Järkevyys:** Tulos poikkeaa taulukkoarvosta $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ vain noin $1{,}4\,\%$, mikä sopii mittausepävarmuuteen. Irrotustyö $2{,}3\,\text{eV}$ vastaa raja-aallonpituutta $1240\,\text{eV}\,\text{nm} : 2{,}34\,\text{eV} \approx 530\,\text{nm}$, ja kaikki mitatut aallonpituudet $365$–$505\,\text{nm}$ ovat sitä lyhyempiä, joten estojännitteet ovat positiivisia, kuten taulukossa.
+**Järkevyys:** Tulos poikkeaa taulukkoarvosta $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ vain noin $1{,}4\,\%$, mikä sopii mittausepävarmuuteen. Irrotustyö $2{,}3\,\text{eV}$ vastaa raja-aallonpituutta $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 2{,}34\,\text{eV} &\approx 530\,\text{nm}
+\end{aligned}
+$$, ja kaikki mitatut aallonpituudet $365$–$505\,\text{nm}$ ovat sitä lyhyempiä, joten estojännitteet ovat positiivisia, kuten taulukossa.
 
 ## fy8-1-L2-06
 **Annettu:** taulukko $E_\text{k,A}$ ja $E_\text{k,B}$ taajuuksilla $8{,}0$–$11{,}0 \cdot 10^{14}\,\text{Hz}$
 **Kysytty:** irrotustöiden erotus $W_\text{B} - W_\text{A}$ elektronivoltteina sekä se, kumman metallin irrotustyö on suurempi
 **Periaate:** Valosähköisen yhtälön mukaan $E_\text{k,max} = hf - W$ kummallekin metallille. Samalla taajuudella fotonin energia $hf$ on sama, joten liike-energioiden erotus on irrotustöiden erotus. Suorien kulmakerroin on kummallakin $h$.
 **Kuvaajan lukeminen:** Paperille piirretyssä kuvaajassa A:n suora kulkee B:n suoran yläpuolella. Suorien pystysuuntainen väli on joka taajuudella noin $0{,}9\,\text{eV}$, joten ne ovat yhdensuuntaiset. Kulmakertoimet ovat $\tfrac{2{,}26\,\text{eV} - 1{,}01\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}2 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$ ja $\tfrac{1{,}35\,\text{eV} - 0{,}12\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}1 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, eli kumpikin on likimain $\tfrac{h}{e} = 4{,}14 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$.
-**Kaava:** $E_\text{k,A} - E_\text{k,B} = (hf - W_\text{A}) - (hf - W_\text{B}) = W_\text{B} - W_\text{A}$
+**Kaava:** $$
+\begin{aligned}
+E_\text{k,A} - E_\text{k,B} &= (hf - W_\text{A}) \\
+&- (hf - W_\text{B}) \\
+&= W_\text{B} - W_\text{A}
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita: kaikki energiat ovat elektronivoltteina.
 **Sijoitus:** Erotukset ovat $0{,}89\,\text{eV}$, $0{,}91\,\text{eV}$, $0{,}90\,\text{eV}$ ja $0{,}91\,\text{eV}$. Niiden summa on $3{,}61\,\text{eV}$, joten $D = \dfrac{3{,}61\,\text{eV}}{4} = 0{,}9025\,\text{eV}$
 **Vastaus:** metallin B irrotustyö on suurempi, ja se on $0{,}90\,\text{eV}$ suurempi kuin A:n, kaksi merkitsevää numeroa. Suorat ovat yhdensuuntaiset, koska niiden kulmakerroin on molemmilla $h$; metalli vaikuttaa vain siihen, kuinka paljon suora on siirtynyt, ja siirtymä on irrotustyön ero.
@@ -160,9 +238,28 @@ Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}5
 **Kuvaajan lukeminen:** Opiskelijan lukema $-2{,}1\,\text{eV}$ on pystyakselin leikkauspiste, ja sen yksikkö on energian yksikkö eV, ei taajuuden yksikkö Hz. Rajataajuus on vaaka-akselin leikkauspiste. Suoran kulmakerroin lasketaan ensimmäisestä ja viimeisestä pisteestä.
 **Kaava:** $k = \dfrac{E_3 - E_1}{f_3 - f_1}$; rajataajuudella $0 = E_1 + k(f_0 - f_1)$, joten $f_0 = f_1 - \dfrac{E_1}{k}$, ja $W = kf_0$
 **Muunnokset:** Ei tarvita: energia on elektronivoltteina ja taajuus hertseinä, joten kulmakerroin on yksikössä $\text{eV/Hz}$.
-**Sijoitus:** $k = \dfrac{1{,}79\,\text{eV} - 0{,}55\,\text{eV}}{9{,}5 \cdot 10^{14}\,\text{Hz} - 6{,}5 \cdot 10^{14}\,\text{Hz}} = 4{,}133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, joten $f_0 = 6{,}5 \cdot 10^{14}\,\text{Hz} - \dfrac{0{,}55\,\text{eV}}{4{,}133 \cdot 10^{-15}\,\text{eV/Hz}} = 5{,}169 \cdot 10^{14}\,\text{Hz}$ ja $W = 4{,}133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}} \cdot 5{,}169 \cdot 10^{14}\,\text{Hz} = 2{,}137\,\text{eV}$
+**Sijoitus:** $k = \dfrac{1{,}79\,\text{eV} - 0{,}55\,\text{eV}}{9{,}5 \cdot 10^{14}\,\text{Hz} - 6{,}5 \cdot 10^{14}\,\text{Hz}} = 4{,}133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, joten $$
+\begin{aligned}
+f_0 &= 6{,}5 \cdot 10^{14}\,\text{Hz} \\
+&- \dfrac{0{,}55\,\text{eV}}{4{,}133 \cdot 10^{-15}\,\text{eV/Hz}} \\
+&= 5{,}169 \cdot 10^{14}\,\text{Hz}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+W &= 4{,}133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}} \\
+&\cdot 5{,}169 \cdot 10^{14}\,\text{Hz} \\
+&= 2{,}137\,\text{eV}
+\end{aligned}
+$$
 **Vastaus:** a) Opiskelija sekoitti pystyakselin leikkauspisteen rajataajuuteen: leikkauspiste $-2{,}1\,\text{eV}$ on irrotustyön vastaluku $-W$, ja rajataajuus luetaan vaaka-akselin leikkauspisteestä. b) $W = 2{,}14\,\text{eV}$, kolme merkitsevää numeroa kuten datan energioissa; rajataajuus on $5{,}17 \cdot 10^{14}\,\text{Hz}$.
-**Järkevyys:** Pystyakselin leikkauspiste on $0{,}55\,\text{eV} - 4{,}133 \cdot 10^{-15}\,\text{eV/Hz} \cdot 6{,}5 \cdot 10^{14}\,\text{Hz} = -2{,}137\,\text{eV}$, joten sen itseisarvo on sama kuin $W$, ja opiskelijan lukema $-2{,}1\,\text{eV}$ sopii tähän. Kulmakerroin $4{,}133 \cdot 10^{-15}\,\text{eV/Hz}$ on Planckin vakio $\tfrac{h}{e}$, kuten pitää, ja rajataajuus $5{,}17 \cdot 10^{14}\,\text{Hz}$ on pienempi kuin pienin mitattu taajuus $6{,}5 \cdot 10^{14}\,\text{Hz}$, koska sillä taajuudella elektroneja jo irtosi.
+**Järkevyys:** Pystyakselin leikkauspiste on $$
+\begin{aligned}
+&0{,}55\,\text{eV} \\
+&- 4{,}133 \cdot 10^{-15}\,\text{eV/Hz} \\
+&\cdot 6{,}5 \cdot 10^{14}\,\text{Hz} \\
+&= -2{,}137\,\text{eV}
+\end{aligned}
+$$, joten sen itseisarvo on sama kuin $W$, ja opiskelijan lukema $-2{,}1\,\text{eV}$ sopii tähän. Kulmakerroin $4{,}133 \cdot 10^{-15}\,\text{eV/Hz}$ on Planckin vakio $\tfrac{h}{e}$, kuten pitää, ja rajataajuus $5{,}17 \cdot 10^{14}\,\text{Hz}$ on pienempi kuin pienin mitattu taajuus $6{,}5 \cdot 10^{14}\,\text{Hz}$, koska sillä taajuudella elektroneja jo irtosi.
 
 ## fy8-1-L3-01
 **Annettu:** natriumin irrotustyö $W = 2{,}28\,\text{eV}$, aallonpituus $\lambda = 350\,\text{nm}$, elektronin massa $m = 9{,}109 \cdot 10^{-31}\,\text{kg}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
@@ -170,7 +267,22 @@ Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}5
 **Periaate:** Nopeimmat elektronit saavat suurimman liike-energian $E_\text{k,max} = hf - W$ (valosähköinen yhtälö, energian säilyminen). Vauhti saadaan liike-energiasta $E_\text{k} = \tfrac{1}{2} m v^2$, joka pätee, koska vauhti jää paljon valon nopeutta pienemmäksi (tämä tarkistetaan lopuksi). Liike-energian on oltava jouleina, jotta vauhti tulee yksikössä $\text{m/s}$.
 **Kaava:** $E_\text{k,max} = \dfrac{hc}{\lambda} - W$ ja $\dfrac{1}{2} m v^2 = E_\text{k,max}$, joten $v = \sqrt{\dfrac{2 E_\text{k,max}}{m}}$
 **Muunnokset:** $\lambda = 350\,\text{nm} = 350 \cdot 10^{-9}\,\text{m}$; $W = 2{,}28\,\text{eV} = 2{,}28 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}653 \cdot 10^{-19}\,\text{J}$
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $E_\text{k,max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{350 \cdot 10^{-9}\,\text{m}} - 3{,}653 \cdot 10^{-19}\,\text{J} = 5{,}676 \cdot 10^{-19}\,\text{J} - 3{,}653 \cdot 10^{-19}\,\text{J} = 2{,}023 \cdot 10^{-19}\,\text{J}$, joten $v = \sqrt{\dfrac{2 \cdot 2{,}023 \cdot 10^{-19}\,\text{J}}{9{,}109 \cdot 10^{-31}\,\text{kg}}} = 6{,}665 \cdot 10^{5}\,\text{m/s}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $$
+\begin{aligned}
+&E_\text{k,max} \\
+&= \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{350 \cdot 10^{-9}\,\text{m}} \\
+&- 3{,}653 \cdot 10^{-19}\,\text{J} \\
+&= 5{,}676 \cdot 10^{-19}\,\text{J} \\
+&- 3{,}653 \cdot 10^{-19}\,\text{J} \\
+&= 2{,}023 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$, joten $v = \sqrt{\dfrac{2 \cdot 2{,}023 \cdot 10^{-19}\,\text{J}}{9{,}109 \cdot 10^{-31}\,\text{kg}}} = 6{,}665 \cdot 10^{5}\,\text{m/s}$
 **Vastaus:** $6{,}66 \cdot 10^{5}\,\text{m/s}$, kolme merkitsevää numeroa kuten aallonpituudessa ja irrotustyössä.
 **Järkevyys:** Vauhti on noin $0{,}2\,\%$ valon nopeudesta, joten kaava $\tfrac{1}{2} m v^2$ on käyttökelpoinen. Liike-energia on $1{,}26\,\text{eV}$, ja $1\,\text{eV}$:n elektronin vauhti on noin $6 \cdot 10^{5}\,\text{m/s}$, joten tulos on oikeaa suuruusluokkaa. Yksiköt: $\sqrt{\tfrac{\text{J}}{\text{kg}}} = \sqrt{\tfrac{\text{kg}\,\text{m}^2/\text{s}^2}{\text{kg}}} = \text{m/s}$.
 
@@ -190,9 +302,24 @@ Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}5
 **Periaate:** Valosähköisen yhtälön mukaan $E_\text{k,max} = hf - W$ on taajuuden suhteen suora. Rajataajuudella elektroni juuri ja juuri irtoaa, joten suurin liike-energia on nolla: rajataajuus on kohta, jossa suora leikkaa taajuusakselin. Suoran kulmakerroin saadaan kahdesta mittauspisteestä.
 **Kaava:** kulmakerroin $k = \dfrac{E_2 - E_1}{f_2 - f_1}$, ja suoralla $E = E_1 + k(f - f_1)$; ehdosta $E = 0$ saadaan $f_0 = f_1 - \dfrac{E_1}{k}$
 **Muunnokset:** Ei tarvita: energiat ovat samassa yksikössä ja taajuudet hertseinä, joten yksiköt supistuvat.
-**Sijoitus:** $k = \dfrac{1{,}84\,\text{eV} - 0{,}60\,\text{eV}}{1{,}00 \cdot 10^{15}\,\text{Hz} - 7{,}0 \cdot 10^{14}\,\text{Hz}} = \dfrac{1{,}24\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, joten $f_0 = 7{,}0 \cdot 10^{14}\,\text{Hz} - \dfrac{0{,}60\,\text{eV}}{4{,}133 \cdot 10^{-15}\,\text{eV/Hz}} = 7{,}0 \cdot 10^{14}\,\text{Hz} - 1{,}452 \cdot 10^{14}\,\text{Hz} = 5{,}548 \cdot 10^{14}\,\text{Hz}$
+**Sijoitus:** $k = \dfrac{1{,}84\,\text{eV} - 0{,}60\,\text{eV}}{1{,}00 \cdot 10^{15}\,\text{Hz} - 7{,}0 \cdot 10^{14}\,\text{Hz}} = \dfrac{1{,}24\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, joten $$
+\begin{aligned}
+f_0 &= 7{,}0 \cdot 10^{14}\,\text{Hz} \\
+&- \dfrac{0{,}60\,\text{eV}}{4{,}133 \cdot 10^{-15}\,\text{eV/Hz}} \\
+&= 7{,}0 \cdot 10^{14}\,\text{Hz} \\
+&- 1{,}452 \cdot 10^{14}\,\text{Hz} \\
+&= 5{,}548 \cdot 10^{14}\,\text{Hz}
+\end{aligned}
+$$
 **Vastaus:** $5{,}5 \cdot 10^{14}\,\text{Hz}$, kaksi merkitsevää numeroa kuten taajuudessa $7{,}0 \cdot 10^{14}\,\text{Hz}$ ja energiassa $0{,}60\,\text{eV}$.
-**Järkevyys:** Kulmakertoimen pitää olla Planckin vakio: $k = 4{,}133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}} = 4{,}133 \cdot 10^{-15} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}\,\text{s} = 6{,}62 \cdot 10^{-34}\,\text{J}\,\text{s}$, kuten on. Rajataajuus on pienempi kuin kumpikin mittaustaajuus, kuten pitää, koska kummallakin taajuudella elektroneja irtosi. Irrotustyö on $W = h f_0 \approx 2{,}3\,\text{eV}$, joten metalli voi olla natriumia.
+**Järkevyys:** Kulmakertoimen pitää olla Planckin vakio: $$
+\begin{aligned}
+k &= 4{,}133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}} \\
+&= 4{,}133 \cdot 10^{-15} \\
+&\cdot 1{,}602 \cdot 10^{-19}\,\text{J}\,\text{s} \\
+&= 6{,}62 \cdot 10^{-34}\,\text{J}\,\text{s}
+\end{aligned}
+$$, kuten on. Rajataajuus on pienempi kuin kumpikin mittaustaajuus, kuten pitää, koska kummallakin taajuudella elektroneja irtosi. Irrotustyö on $W = h f_0 \approx 2{,}3\,\text{eV}$, joten metalli voi olla natriumia.
 
 ## fy8-1-L3-04
 **Annettu:** $\lambda = 400\,\text{nm}$, $P_1 = 1{,}0\,\text{mW}$, $P_2 = 2{,}0\,\text{mW}$, kyllästysvirrat taulukosta $I_1 = 0{,}30\,\mu\text{A}$ ja $I_2 = 0{,}60\,\mu\text{A}$, virta on nolla jännitteellä $U = -0{,}80\,\text{V}$ ja sen alapuolella; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
@@ -210,9 +337,28 @@ Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}5
 **Periaate:** Lähde irrottaa elektroneja vain, jos sen fotonin energia $\tfrac{hc}{\lambda}$ on vähintään $W$; teho ei korvaa fotonin energiaa. Irrottavan lähteen fotonien määrä sekunnissa on $N_\text{f} = \tfrac{P\lambda}{hc}$, elektroneja irtoaa $\eta N_\text{f}$ ja virta on $I = e \eta N_\text{f}$. Eri lähteiden virrat summataan. Estojännite määräytyy suurimmasta liike-energiasta, joten sen antaa suurin fotonin energia.
 **Kaava:** $E_\text{f} = \dfrac{hc}{\lambda}$; $I = \dfrac{e \eta P \lambda}{hc}$ jokaiselle irrottavalle lähteelle; $U_\text{s} = \dfrac{E_\text{f,max} - W}{e}$
 **Muunnokset:** $\lambda = 470\,\text{nm} = 470 \cdot 10^{-9}\,\text{m}$ jne., $P_\text{A} = 4{,}0\,\text{mW} = 4{,}0 \cdot 10^{-3}\,\text{W}$, $\eta = 0{,}10\,\% = 1{,}0 \cdot 10^{-3}$; fotonin energia $\text{J}$:sta $\text{eV}$:iin jakamalla luvulla $1{,}602 \cdot 10^{-19}$
-**Sijoitus:** a) $E_\text{A} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{470 \cdot 10^{-9}\,\text{m}} = 4{,}227 \cdot 10^{-19}\,\text{J} = 2{,}64\,\text{eV}$, $E_\text{B} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3{,}204 \cdot 10^{-19}\,\text{J} = 2{,}00\,\text{eV}$ ja $E_\text{C} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{365 \cdot 10^{-9}\,\text{m}} = 5{,}443 \cdot 10^{-19}\,\text{J} = 3{,}40\,\text{eV}$. Lähteet A ja C ylittävät arvon $2{,}30\,\text{eV}$, lähde B ei. b) $I_\text{A} = \dfrac{4{,}0 \cdot 10^{-3}\,\text{W}}{4{,}227 \cdot 10^{-19}\,\text{J}} \cdot 1{,}0 \cdot 10^{-3} \cdot 1{,}602 \cdot 10^{-19}\,\text{C} = 1{,}516 \cdot 10^{-6}\,\text{A}$ ja $I_\text{C} = \dfrac{1{,}0 \cdot 10^{-3}\,\text{W}}{5{,}443 \cdot 10^{-19}\,\text{J}} \cdot 1{,}0 \cdot 10^{-3} \cdot 1{,}602 \cdot 10^{-19}\,\text{C} = 2{,}94 \cdot 10^{-7}\,\text{A}$, joten $I = 1{,}516\,\mu\text{A} + 0 + 0{,}294\,\mu\text{A} = 1{,}810\,\mu\text{A}$. c) $U_\text{s} = \dfrac{3{,}397\,\text{eV} - 2{,}30\,\text{eV}}{e} = 1{,}10\,\text{V}$
+**Sijoitus:** a) $E_\text{A} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{470 \cdot 10^{-9}\,\text{m}} = 4{,}227 \cdot 10^{-19}\,\text{J} = 2{,}64\,\text{eV}$, $E_\text{B} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3{,}204 \cdot 10^{-19}\,\text{J} = 2{,}00\,\text{eV}$ ja $E_\text{C} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{365 \cdot 10^{-9}\,\text{m}} = 5{,}443 \cdot 10^{-19}\,\text{J} = 3{,}40\,\text{eV}$. Lähteet A ja C ylittävät arvon $2{,}30\,\text{eV}$, lähde B ei. b) $$
+\begin{aligned}
+I_\text{A} &= \dfrac{4{,}0 \cdot 10^{-3}\,\text{W}}{4{,}227 \cdot 10^{-19}\,\text{J}} \\
+&\cdot 1{,}0 \cdot 10^{-3} \\
+&\cdot 1{,}602 \cdot 10^{-19}\,\text{C} \\
+&= 1{,}516 \cdot 10^{-6}\,\text{A}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+I_\text{C} &= \dfrac{1{,}0 \cdot 10^{-3}\,\text{W}}{5{,}443 \cdot 10^{-19}\,\text{J}} \\
+&\cdot 1{,}0 \cdot 10^{-3} \\
+&\cdot 1{,}602 \cdot 10^{-19}\,\text{C} \\
+&= 2{,}94 \cdot 10^{-7}\,\text{A}
+\end{aligned}
+$$, joten $I = 1{,}516\,\mu\text{A} + 0 + 0{,}294\,\mu\text{A} = 1{,}810\,\mu\text{A}$. c) $U_\text{s} = \dfrac{3{,}397\,\text{eV} - 2{,}30\,\text{eV}}{e} = 1{,}10\,\text{V}$
 **Vastaus:** $I = 1{,}8\,\mu\text{A}$, kaksi merkitsevää numeroa kuten tehoissa ja osuudessa $0{,}10\,\%$. Elektroneja irrottavat lähteet A ja C; estojännite on $1{,}10\,\text{V}$. Punaisen lähteen B fotonin energia $2{,}00\,\text{eV}$ on pienempi kuin irrotustyö, joten yksikään sen fotoni ei irrota elektronia, vaikka teho on suurin ja fotoneja tulee eniten. Teho vain kertoo fotonien määrän, ja virta syntyy vain fotoneista, joiden energia riittää; estojännite taas riippuu suurimmasta fotonin energiasta, eli ultraviolettilähteestä C.
-**Järkevyys:** Elektroneja irtoaa yhteensä $\tfrac{1{,}810 \cdot 10^{-6}\,\text{A}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 1{,}13 \cdot 10^{13}$ sekunnissa, mikä on $0{,}10\,\%$ lähteiden A ja C fotonien määrästä $9{,}46 \cdot 10^{15} + 1{,}84 \cdot 10^{15} = 1{,}13 \cdot 10^{16}$ sekunnissa. Punaisen lähteen $8{,}0\,\text{mW}$ vastaa $2{,}5 \cdot 10^{16}$ fotonia sekunnissa, enemmän kuin kahden muun yhteensä, mutta niiden energia on liian pieni; tehon perusteella arvioitu virta olisi siis täysin väärä.
+**Järkevyys:** Elektroneja irtoaa yhteensä $\tfrac{1{,}810 \cdot 10^{-6}\,\text{A}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 1{,}13 \cdot 10^{13}$ sekunnissa, mikä on $0{,}10\,\%$ lähteiden A ja C fotonien määrästä $$
+\begin{aligned}
+&9{,}46 \cdot 10^{15} + 1{,}84 \cdot 10^{15} \\
+&= 1{,}13 \cdot 10^{16}
+\end{aligned}
+$$ sekunnissa. Punaisen lähteen $8{,}0\,\text{mW}$ vastaa $2{,}5 \cdot 10^{16}$ fotonia sekunnissa, enemmän kuin kahden muun yhteensä, mutta niiden energia on liian pieni; tehon perusteella arvioitu virta olisi siis täysin väärä.
 
 ## fy8-1-L1-10
 **Annettu:** kalsiumin irrotustyö MAFY-taulukosta (*Irrotustöitä*, kalsium) $W = 3{,}20\,\text{eV}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
@@ -220,9 +366,20 @@ Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}5
 **Periaate:** Elektroni irtoaa vain, jos fotonin energia riittää irrotustyöhön: $hf \geq W$. Pisimmällä aallonpituudella ja pienimmällä taajuudella fotonin energia on juuri yhtä suuri kuin irrotustyö, $hf_0 = W$. Irrotustyö on haettava taulukosta, koska sitä ei anneta tehtävässä.
 **Kaava:** $hf_0 = W$ ja $f_0 = \dfrac{c}{\lambda_0}$, joten $\lambda_0 = \dfrac{hc}{W}$
 **Muunnokset:** $W = 3{,}20\,\text{eV} = 3{,}20 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 5{,}126 \cdot 10^{-19}\,\text{J}$
-**Sijoitus:** $\lambda_0 = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\tfrac{\text{m}}{\text{s}}}{5{,}126 \cdot 10^{-19}\,\text{J}} = 3{,}875 \cdot 10^{-7}\,\text{m} = 387{,}5\,\text{nm}$
+**Sijoitus:** $$
+\begin{aligned}
+&\lambda_0 \\
+&= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\tfrac{\text{m}}{\text{s}}}{5{,}126 \cdot 10^{-19}\,\text{J}} \\
+&= 3{,}875 \cdot 10^{-7}\,\text{m} \\
+&= 387{,}5\,\text{nm}
+\end{aligned}
+$$
 **Vastaus:** $\lambda_0 \approx 387\,\text{nm}$, kolme merkitsevää numeroa kuten irrotustyössä $3{,}20\,\text{eV}$. Irrotustyö $3{,}20\,\text{eV}$ on MAFY-taulukon *Irrotustöitä* arvo kalsiumille; taulukkojen painosten arvot voivat poiketa hieman, ja vastaus hyväksytään noin $\pm 5\,\%$ tarkkuudella.
-**Järkevyys:** Pikaarvio: $1240\,\text{eV}\,\text{nm} : 3{,}20\,\text{eV} \approx 388\,\text{nm}$. Raja-aallonpituus on juuri violetin näkyvän valon rajan, noin $400\,\text{nm}$, alapuolella eli ultraviolettialueella: tavallinen näkyvä valo ei irrota kalsiumista elektroneja, mutta UV-A:n lyhytaaltoinen pää irrottaa.
+**Järkevyys:** Pikaarvio: $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 3{,}20\,\text{eV} &\approx 388\,\text{nm}
+\end{aligned}
+$$. Raja-aallonpituus on juuri violetin näkyvän valon rajan, noin $400\,\text{nm}$, alapuolella eli ultraviolettialueella: tavallinen näkyvä valo ei irrota kalsiumista elektroneja, mutta UV-A:n lyhytaaltoinen pää irrottaa.
 
 ## fy8-1-L2-08
 **Annettu:** kuvaaja, jossa metallin A ja B suurin liike-energia $E_\text{k,max}$ taajuuden $f$ funktiona; valon taajuus $f = 12 \cdot 10^{14}\,\text{Hz}$
@@ -244,4 +401,8 @@ Lampun B fotonin energia $2{,}25\,\text{eV}$ on pienempi kuin irrotustyö $2{,}5
 **Muunnokset:** $f_0 = 7{,}0 \cdot 10^{14}\,\text{Hz}$ on jo hertseinä; tulos metreinä muunnetaan nanometreiksi: $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $\lambda_0 = \dfrac{2{,}998 \cdot 10^8\,\tfrac{\text{m}}{\text{s}}}{7{,}0 \cdot 10^{14}\,\tfrac{1}{\text{s}}} = 4{,}283 \cdot 10^{-7}\,\text{m} = 428\,\text{nm}$
 **Vastaus:** $\lambda_0 \approx 428\,\text{nm}$, kolme merkitsevää numeroa; luettu taajuus on kahden merkitsevän numeron tarkkuudella, joten tulos on tarkka noin $\pm 1\,\%$.
-**Järkevyys:** Raja-aallonpituus on violetin valon alueella, ja sitä vastaava fotonin energia on $1240\,\text{eV}\,\text{nm} : 428\,\text{nm} \approx 2{,}9\,\text{eV}$. Se on suurempi kuin metallin A irrotustyö $2{,}3\,\text{eV}$, ja B:n suora alkaakin A:n suoran oikealta puolelta.
+**Järkevyys:** Raja-aallonpituus on violetin valon alueella, ja sitä vastaava fotonin energia on $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 428\,\text{nm} &\approx 2{,}9\,\text{eV}
+\end{aligned}
+$$. Se on suurempi kuin metallin A irrotustyö $2{,}3\,\text{eV}$, ja B:n suora alkaakin A:n suoran oikealta puolelta.

@@ -24,9 +24,20 @@
 **Periaate:** Valo koostuu fotoneista, ja yhden fotonin energia riippuu vain valon aallonpituudesta: mitä lyhyempi aallonpituus, sitä suurempi energia.
 **Kaava:** $E = hf = \dfrac{hc}{\lambda}$
 **Muunnokset:** $\lambda = 486\,\text{nm} = 486 \cdot 10^{-9}\,\text{m}$. Lopuksi joulet muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$, koska $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
-**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{486 \cdot 10^{-9}\,\text{m}} = 4{,}0874 \cdot 10^{-19}\,\text{J} = \dfrac{4{,}0874 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 2{,}5514\,\text{eV}$
+**Sijoitus:** Tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{486 \cdot 10^{-9}\,\text{m}} = 4{,}0874 \cdot 10^{-19}\,\text{J} = \dfrac{4{,}0874 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 2{,}5514\,\text{eV}$
 **Vastaus:** $2{,}55\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituudessa $486\,\text{nm}$.
-**Järkevyys:** Näkyvän valon fotonien energiat ovat noin $1{,}7$–$3{,}3\,\text{eV}$, ja syaani valo on spektrin keskivaiheilla. Tulos on myös vedyn tasojen $n = 4$ ja $n = 2$ erotus: $-0{,}850\,\text{eV} + 3{,}40\,\text{eV} = 2{,}55\,\text{eV}$.
+**Järkevyys:** Näkyvän valon fotonien energiat ovat noin $1{,}7$–$3{,}3\,\text{eV}$, ja syaani valo on spektrin keskivaiheilla. Tulos on myös vedyn tasojen $n = 4$ ja $n = 2$ erotus: $$
+\begin{aligned}
+&-0{,}850\,\text{eV} + 3{,}40\,\text{eV} \\
+&= 2{,}55\,\text{eV}
+\end{aligned}
+$$.
 
 ## fy8-3-L1-04
 **Annettu:** vetyatomin energiatasot $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, atomi tilassa $n = 3$
@@ -54,7 +65,13 @@
 **Periaate:** Energia säilyy: atomin energia pienenee tasojen erotuksen verran, ja sen vie yksi fotoni, jonka energia on $\tfrac{hc}{\lambda}$.
 **Kaava:** $\dfrac{hc}{\lambda} = E_5 - E_2$, josta $\lambda = \dfrac{hc}{E_5 - E_2}$
 **Muunnokset:** Energiaero lasketaan elektronivoltteina ja muunnetaan jouleiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $E_5 - E_2 = -\dfrac{13{,}6\,\text{eV}}{25} + \dfrac{13{,}6\,\text{eV}}{4} = 2{,}856\,\text{eV} = 2{,}856 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 4{,}5753 \cdot 10^{-19}\,\text{J}$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4{,}5753 \cdot 10^{-19}\,\text{J}} = 4{,}3417 \cdot 10^{-7}\,\text{m} = 434{,}17\,\text{nm}$
+**Sijoitus:** Tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $E_5 - E_2 = -\dfrac{13{,}6\,\text{eV}}{25} + \dfrac{13{,}6\,\text{eV}}{4} = 2{,}856\,\text{eV} = 2{,}856 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 4{,}5753 \cdot 10^{-19}\,\text{J}$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4{,}5753 \cdot 10^{-19}\,\text{J}} = 4{,}3417 \cdot 10^{-7}\,\text{m} = 434{,}17\,\text{nm}$
 **Vastaus:** $434\,\text{nm}$, kolme merkitsevää numeroa kuten arvossa $13{,}6\,\text{eV}$.
 **Järkevyys:** Siirtymä päättyy tasolle $n = 2$, joten viiva kuuluu Balmerin sarjaan ja on näkyvää valoa. Se on lyhyempi kuin siirtymän $4 \to 2$ viiva $486\,\text{nm}$, koska energiaero on suurempi, ja vedyn spektrissä on sininen viiva juuri kohdassa $434\,\text{nm}$.
 
@@ -64,9 +81,20 @@
 **Periaate:** Fotonin energia on tasojen erotus. Kun fotonin energia ja alemman tason energia tunnetaan, ylemmän tason energia saadaan niiden summana, ja siitä tason järjestysluku.
 **Kaava:** $\dfrac{hc}{\lambda} = E_n - E_2$, josta $E_n = E_2 + \dfrac{hc}{\lambda}$ ja lausekkeesta $E_n = -\dfrac{13{,}6\,\text{eV}}{n^2}$ ratkaistuna $n = \sqrt{\dfrac{13{,}6\,\text{eV}}{-E_n}}$
 **Muunnokset:** $\lambda = 410 \cdot 10^{-9}\,\text{m}$; fotonin energia muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$.
-**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\dfrac{hc}{\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{410 \cdot 10^{-9}\,\text{m}} = 4{,}8451 \cdot 10^{-19}\,\text{J} = 3{,}0244\,\text{eV}$, $E_n = -3{,}40\,\text{eV} + 3{,}0244\,\text{eV} = -0{,}3756\,\text{eV}$ ja $n = \sqrt{\dfrac{13{,}6\,\text{eV}}{0{,}3756\,\text{eV}}} = \sqrt{36{,}21} = 6{,}017$
+**Sijoitus:** Tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $\dfrac{hc}{\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{410 \cdot 10^{-9}\,\text{m}} = 4{,}8451 \cdot 10^{-19}\,\text{J} = 3{,}0244\,\text{eV}$, $E_n = -3{,}40\,\text{eV} + 3{,}0244\,\text{eV} = -0{,}3756\,\text{eV}$ ja $n = \sqrt{\dfrac{13{,}6\,\text{eV}}{0{,}3756\,\text{eV}}} = \sqrt{36{,}21} = 6{,}017$
 **Vastaus:** $n = 6$. Järjestysluku on kokonaisluku, ja laskettu $6{,}02$ poikkeaa siitä vain pyöristyksen verran.
-**Järkevyys:** Tarkistus toiseen suuntaan: $E_6 - E_2 = -0{,}378\,\text{eV} + 3{,}40\,\text{eV} = 3{,}02\,\text{eV}$, mikä vastaa aallonpituutta $410\,\text{nm}$. Violetti viiva on Balmerin näkyvistä viivoista lyhin, joten sen ylemmän tason on oltava korkein näistä neljästä.
+**Järkevyys:** Tarkistus toiseen suuntaan: $$
+\begin{aligned}
+E_6 - E_2 &= -0{,}378\,\text{eV} + 3{,}40\,\text{eV} \\
+&= 3{,}02\,\text{eV}
+\end{aligned}
+$$, mikä vastaa aallonpituutta $410\,\text{nm}$. Violetti viiva on Balmerin näkyvistä viivoista lyhin, joten sen ylemmän tason on oltava korkein näistä neljästä.
 
 ## fy8-3-L2-03
 **Annettu:** kuvitteellisen atomin energiatasokaavio, siirtymä tasolta $E_3$ tasolle $E_2$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
@@ -75,7 +103,13 @@
 **Kuvaajan lukeminen:** Taso $E_3$ on ruudukon viivalla $-3\,\text{eV}$ ja taso $E_2$ viivalla $-5\,\text{eV}$, joten $E_3 = -3{,}0\,\text{eV}$ ja $E_2 = -5{,}0\,\text{eV}$. Energiaero on $E_3 - E_2 = -3{,}0\,\text{eV} - (-5{,}0\,\text{eV}) = 2{,}0\,\text{eV}$.
 **Kaava:** $\dfrac{hc}{\lambda} = E_3 - E_2$, josta $\lambda = \dfrac{hc}{E_3 - E_2}$
 **Muunnokset:** $E_3 - E_2 = 2{,}0\,\text{eV} = 2{,}0 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}204 \cdot 10^{-19}\,\text{J}$ ja lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}204 \cdot 10^{-19}\,\text{J}} = 6{,}2000 \cdot 10^{-7}\,\text{m} = 620{,}00\,\text{nm}$
+**Sijoitus:** Tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}204 \cdot 10^{-19}\,\text{J}} = 6{,}2000 \cdot 10^{-7}\,\text{m} = 620{,}00\,\text{nm}$
 **Vastaus:** $620\,\text{nm}$ eli $6{,}2 \cdot 10^{2}\,\text{nm}$, kaksi merkitsevää numeroa, koska kuvasta luettu energiaero $2{,}0\,\text{eV}$ tunnetaan kahden numeron tarkkuudella.
 **Järkevyys:** Energiaero $2{,}0\,\text{eV}$ on näkyvän valon fotonien välillä $1{,}7$–$3{,}3\,\text{eV}$, ja $620\,\text{nm}$ on oranssinpunaista valoa. Pienempi energiaero kuin vedyn punaisessa viivassa ($1{,}89\,\text{eV}$) antaisi pidemmän aallonpituuden; tässä ero on hieman suurempi ja aallonpituus hieman lyhyempi kuin $656\,\text{nm}$.
 
@@ -85,7 +119,13 @@
 **Periaate:** Energia säilyy. Fotonin energiasta kuluu ionisaatioenergian verran elektronin irrottamiseen, ja loppu jää vapaan elektronin liike-energiaksi. Ionisaatiossa fotonin energian ei tarvitse vastata mitään tasoparin erotusta, kunhan se on vähintään ionisaatioenergia.
 **Kaava:** $\dfrac{hc}{\lambda} = E_\text{ion} + E_\text{k}$, josta $E_\text{k} = \dfrac{hc}{\lambda} - E_\text{ion}$
 **Muunnokset:** $\lambda = 80{,}0 \cdot 10^{-9}\,\text{m}$; fotonin energia muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$.
-**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\dfrac{hc}{\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{80{,}0 \cdot 10^{-9}\,\text{m}} = 2{,}4831 \cdot 10^{-18}\,\text{J} = 15{,}500\,\text{eV}$ ja $E_\text{k} = 15{,}500\,\text{eV} - 13{,}6\,\text{eV} = 1{,}900\,\text{eV}$
+**Sijoitus:** Tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $\dfrac{hc}{\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{80{,}0 \cdot 10^{-9}\,\text{m}} = 2{,}4831 \cdot 10^{-18}\,\text{J} = 15{,}500\,\text{eV}$ ja $E_\text{k} = 15{,}500\,\text{eV} - 13{,}6\,\text{eV} = 1{,}900\,\text{eV}$
 **Vastaus:** $1{,}9\,\text{eV}$. Erotus ilmoitetaan yhden desimaalin tarkkuudella kuten ionisaatioenergia $13{,}6\,\text{eV}$, joten tuloksessa on kaksi merkitsevää numeroa.
 **Järkevyys:** Fotonin energia on vain vähän yli ionisaatioenergian, joten elektronille jää pieni liike-energia. Tarkistus: aallonpituus $80{,}0\,\text{nm}$ on lyhyempi kuin Lymanin sarjan raja $91{,}2\,\text{nm}$, joten fotoni todella voi ionisoida perustilassa olevan atomin.
 
@@ -105,7 +145,13 @@
 **Periaate:** Ionissa on yksi elektroni, joten sen energia on kvantittunut samalla tavalla kuin vedyssä, vain energiat ovat suurempia. Energia säilyy: fotonin energia on tasojen erotus.
 **Kaava:** $\dfrac{hc}{\lambda} = E_4 - E_3$, josta $\lambda = \dfrac{hc}{E_4 - E_3}$
 **Muunnokset:** Energiaero muunnetaan jouleiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$ ja lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $E_4 - E_3 = -\dfrac{54{,}4\,\text{eV}}{16} + \dfrac{54{,}4\,\text{eV}}{9} = 2{,}6444\,\text{eV} = 2{,}6444 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 4{,}2364 \cdot 10^{-19}\,\text{J}$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4{,}2364 \cdot 10^{-19}\,\text{J}} = 4{,}6891 \cdot 10^{-7}\,\text{m} = 468{,}91\,\text{nm}$
+**Sijoitus:** Tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $E_4 - E_3 = -\dfrac{54{,}4\,\text{eV}}{16} + \dfrac{54{,}4\,\text{eV}}{9} = 2{,}6444\,\text{eV} = 2{,}6444 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 4{,}2364 \cdot 10^{-19}\,\text{J}$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4{,}2364 \cdot 10^{-19}\,\text{J}} = 4{,}6891 \cdot 10^{-7}\,\text{m} = 468{,}91\,\text{nm}$
 **Vastaus:** $469\,\text{nm}$, kolme merkitsevää numeroa kuten arvossa $54{,}4\,\text{eV}$.
 **Järkevyys:** Heliumionin tasot ovat nelinkertaisia vetyyn verrattuna, joten siirtymän $4 \to 3$ energiaero on nelinkertainen vedyn vastaavaan $0{,}661\,\text{eV}$:iin verrattuna, ja aallonpituus on neljäsosa vedyn infrapunaviivasta $1876\,\text{nm}$: $1876\,\text{nm} : 4 = 469\,\text{nm}$. Viiva on sinistä näkyvää valoa.
 
@@ -130,7 +176,13 @@
 **Periaate:** Aallonpituus on sitä pidempi, mitä pienempi fotonin energia on. Perustilaan päättyvistä siirtymistä pienin energiaero on lähimmältä tasolta, siirtymässä $n = 2 \to n = 1$.
 **Kaava:** $\dfrac{hc}{\lambda} = E_2 - E_1$, josta $\lambda_\text{max} = \dfrac{hc}{E_2 - E_1}$
 **Muunnokset:** $E_2 - E_1$ lasketaan elektronivoltteina ja muunnetaan jouleiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $E_2 - E_1 = -\dfrac{13{,}6\,\text{eV}}{4} + 13{,}6\,\text{eV} = 10{,}2\,\text{eV} = 10{,}2 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}6340 \cdot 10^{-18}\,\text{J}$ ja $\lambda_\text{max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}6340 \cdot 10^{-18}\,\text{J}} = 1{,}2157 \cdot 10^{-7}\,\text{m} = 121{,}57\,\text{nm}$
+**Sijoitus:** Tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $E_2 - E_1 = -\dfrac{13{,}6\,\text{eV}}{4} + 13{,}6\,\text{eV} = 10{,}2\,\text{eV} = 10{,}2 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}6340 \cdot 10^{-18}\,\text{J}$ ja $\lambda_\text{max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}6340 \cdot 10^{-18}\,\text{J}} = 1{,}2157 \cdot 10^{-7}\,\text{m} = 121{,}57\,\text{nm}$
 **Vastaus:** $122\,\text{nm}$, kolme merkitsevää numeroa kuten arvossa $13{,}6\,\text{eV}$.
 **Järkevyys:** Aallonpituus on lyhyempi kuin näkyvän valon alaraja noin $400\,\text{nm}$, joten viiva on ultraviolettia. Siirtymä $3 \to 1$ antaa energian $12{,}09\,\text{eV}$ ja lyhyemmän aallonpituuden $102{,}6\,\text{nm}$, joten $122\,\text{nm}$ on sarjan pisin.
 
@@ -151,7 +203,15 @@
 **Kuvaajan lukeminen:** Taajuudet $f = \tfrac{c}{\lambda}$ ovat $456{,}5$; $616{,}7$; $690{,}0$ ja $730{,}9\,\text{THz}$ kohdissa $\tfrac{1}{n^2} = 0{,}111$; $0{,}0625$; $0{,}0400$ ja $0{,}0278$. Pisteisiin sovitettu suora kulkee mittausalueen sisällä pisteiden $(0{,}0300;\ 723{,}3\,\text{THz})$ ja $(0{,}1100;\ 460{,}2\,\text{THz})$ kautta, joten kulmakerroin on $k = \dfrac{460{,}2\,\text{THz} - 723{,}3\,\text{THz}}{0{,}1100 - 0{,}0300} = -3289\,\text{THz}$.
 **Kaava:** $k = -\dfrac{E_\text{ion}}{h}$, josta $E_\text{ion} = -h k$
 **Muunnokset:** $k = -3289\,\text{THz} = -3{,}289 \cdot 10^{15}\,\text{Hz}$, ja joulet muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$.
-**Sijoitus:** $E_\text{ion} = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 3{,}289 \cdot 10^{15}\,\text{Hz} = 2{,}1793 \cdot 10^{-18}\,\text{J} = \dfrac{2{,}1793 \cdot 10^{-18}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 13{,}60\,\text{eV}$
+**Sijoitus:** $$
+\begin{aligned}
+E_\text{ion} &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 3{,}289 \cdot 10^{15}\,\text{Hz} \\
+&= 2{,}1793 \cdot 10^{-18}\,\text{J} \\
+&= \dfrac{2{,}1793 \cdot 10^{-18}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\
+&= 13{,}60\,\text{eV}
+\end{aligned}
+$$
 **Vastaus:** $13{,}6\,\text{eV}$. Pisteet asettuvat suoralle, koska taajuus on lineaarinen funktio suureesta $\tfrac{1}{n^2}$. Kolme merkitsevää numeroa; aallonpituuksien epävarmuus $\pm 0{,}5\,\text{nm}$ on alle $0{,}2\,\%$ aallonpituudesta, joten se ei rajoita kolmatta numeroa.
 **Järkevyys:** Suoran jatke pystyakselille on ekstrapolointi mittausalueen ulkopuolelle, mikä on sallittua, koska malli on lineaarinen. Suoran vakiotermi $822\,\text{THz}$ vastaa energiaa $h \cdot 822\,\text{THz} = 3{,}40\,\text{eV}$, joka on $\tfrac{13{,}6\,\text{eV}}{4}$, ja sitä vastaava aallonpituus $\tfrac{c}{822\,\text{THz}} \approx 365\,\text{nm}$ on Balmerin sarjan raja. Tulos on sama kuin vedyn ionisaatioenergia perustilasta, joka tunnetaan arvona $13{,}6\,\text{eV}$.
 
@@ -162,7 +222,19 @@
 **Kuvaajan lukeminen:** Tasot ovat $E_1 = -8{,}0\,\text{eV}$, $E_2 = -5{,}0\,\text{eV}$, $E_3 = -3{,}0\,\text{eV}$ ja $E_4 = -2{,}0\,\text{eV}$. Perustilasta lähtevät erotukset ovat $E_2 - E_1 = 3{,}0\,\text{eV}$, $E_3 - E_1 = 5{,}0\,\text{eV}$ ja $E_4 - E_1 = 6{,}0\,\text{eV}$. Ionisaatioon tarvittaisiin $0 - E_1 = 8{,}0\,\text{eV}$.
 **Kaava:** $E = \dfrac{hc}{\lambda}$
 **Muunnokset:** $\lambda = 300 \cdot 10^{-9}\,\text{m}$ jne., ja joulet muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$.
-**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Fotoni $300\,\text{nm}$: $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{300 \cdot 10^{-9}\,\text{m} \cdot 1{,}602 \cdot 10^{-19}\,\text{J/eV}} = 4{,}13\,\text{eV}$, fotoni $413\,\text{nm}$: $3{,}00\,\text{eV}$, fotoni $500\,\text{nm}$: $2{,}48\,\text{eV}$, fotoni $207\,\text{nm}$: $5{,}99\,\text{eV}$ ja fotoni $248\,\text{nm}$: $5{,}00\,\text{eV}$. Absorboituvat fotonit ovat $413\,\text{nm}$ ($1 \to 2$), $248\,\text{nm}$ ($1 \to 3$) ja $207\,\text{nm}$ ($1 \to 4$).
+**Sijoitus:** Tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. Fotoni $300\,\text{nm}$: $$
+\begin{aligned}
+&E \\
+&= \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{300 \cdot 10^{-9}\,\text{m} \cdot 1{,}602 \cdot 10^{-19}\,\text{J/eV}} \\
+&= 4{,}13\,\text{eV}
+\end{aligned}
+$$, fotoni $413\,\text{nm}$: $3{,}00\,\text{eV}$, fotoni $500\,\text{nm}$: $2{,}48\,\text{eV}$, fotoni $207\,\text{nm}$: $5{,}99\,\text{eV}$ ja fotoni $248\,\text{nm}$: $5{,}00\,\text{eV}$. Absorboituvat fotonit ovat $413\,\text{nm}$ ($1 \to 2$), $248\,\text{nm}$ ($1 \to 3$) ja $207\,\text{nm}$ ($1 \to 4$).
 **Vastaus:** $3$ fotonia. Atomi absorboi fotonit $413\,\text{nm}$, $248\,\text{nm}$ ja $207\,\text{nm}$, koska niiden energiat vastaavat perustilasta ylöspäin lähteviä erotuksia; fotonit $300\,\text{nm}$ ja $500\,\text{nm}$ eivät vastaa mitään erotusta.
 **Järkevyys:** Absorboituvien fotonien energiat ovat alle ionisaatioenergian $8{,}0\,\text{eV}$, joten atomi jää sidotuksi. Fotoni $300\,\text{nm}$ ($4{,}13\,\text{eV}$) on kahden sallitun erotuksen $3{,}0\,\text{eV}$ ja $5{,}0\,\text{eV}$ välissä, joten se menee atomin läpi.
 
@@ -232,4 +304,9 @@ Ionisaatioon tilasta $3$ tarvitaan $1{,}5111\,\text{eV} = 1{,}5111 \cdot 1{,}602
 **Muunnokset:** Fotonien energiat muunnetaan jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J}$; lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** Tulo $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Viivojen energiat ovat $12{,}09$; $10{,}20$; $2{,}551$; $1{,}889$ ja $0{,}661\,\text{eV}$. Ne vastaavat tasoparien erotuksia $E_3 - E_1 = 12{,}09\,\text{eV}$, $E_2 - E_1 = 10{,}20\,\text{eV}$, $E_4 - E_2 = 2{,}55\,\text{eV}$, $E_3 - E_2 = 1{,}889\,\text{eV}$ ja $E_4 - E_3 = 0{,}661\,\text{eV}$. Viivat ovat siis siirtymät $3 \to 1$, $2 \to 1$, $4 \to 2$, $3 \to 2$ ja $4 \to 3$. Ylin lähtötaso on $n = 4$. Tasolta $n = 5$ lähtisi viivoja $\lambda = 95{,}0$; $434$; $1282$ tai $4052\,\text{nm}$, mutta taulukossa ei ole yhtäkään, joten atomit eivät virittyneet ylemmäs kuin tasolle $n = 4$. Suora siirtymä $4 \to 1$ lähettää lähteen aallonpituuden $97{,}3\,\text{nm}$, joka suodatettiin pois, joten sitä ei ole taulukossa. Lähteen fotonin energia on $E_4 - E_1 = 13{,}6\,\text{eV} - \dfrac{13{,}6\,\text{eV}}{16} = 12{,}75\,\text{eV} = 12{,}75 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}0426 \cdot 10^{-18}\,\text{J}$ ja $\lambda_\text{L} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}0426 \cdot 10^{-18}\,\text{J}} = 9{,}725 \cdot 10^{-8}\,\text{m} = 97{,}25\,\text{nm}$
 **Vastaus:** $97{,}3\,\text{nm}$, kolme merkitsevää numeroa kuten arvossa $13{,}6\,\text{eV}$.
-**Järkevyys:** Lähteen fotonin energia $12{,}75\,\text{eV}$ on pienempi kuin ionisaatioenergia $13{,}6\,\text{eV}$, joten atomit eivät ionisoidu, ja aallonpituus on lyhyempi kuin lyhin havaittu viiva $102{,}6\,\text{nm}$. Kaskadin $4 \to 3 \to 2 \to 1$ fotonien energioiden summa on $0{,}661\,\text{eV} + 1{,}889\,\text{eV} + 10{,}20\,\text{eV} = 12{,}75\,\text{eV}$, joten palautuessa vapautuu täsmälleen absorboitu energia.
+**Järkevyys:** Lähteen fotonin energia $12{,}75\,\text{eV}$ on pienempi kuin ionisaatioenergia $13{,}6\,\text{eV}$, joten atomit eivät ionisoidu, ja aallonpituus on lyhyempi kuin lyhin havaittu viiva $102{,}6\,\text{nm}$. Kaskadin $4 \to 3 \to 2 \to 1$ fotonien energioiden summa on $$
+\begin{aligned}
+&0{,}661\,\text{eV} + 1{,}889\,\text{eV} + 10{,}20\,\text{eV} \\
+&= 12{,}75\,\text{eV}
+\end{aligned}
+$$, joten palautuessa vapautuu täsmälleen absorboitu energia.

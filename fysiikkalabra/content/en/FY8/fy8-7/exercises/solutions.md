@@ -4,7 +4,16 @@
 **Principle:** All the photons of a laser are produced in the same transition, so they have the same energy, and the energy of one photon depends only on the wavelength of the light.
 **Formula:** $E = hf$ and $f = \tfrac{c}{\lambda}$, so $E = \dfrac{hc}{\lambda}$
 **Conversions:** $\lambda = 633\,\text{nm} = 633 \cdot 10^{-9}\,\text{m}$. Finally joules are converted to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
-**Substitution:** $E = (6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}) : (633 \cdot 10^{-9}\,\text{m}) = 3.1382 \cdot 10^{-19}\,\text{J} = \dfrac{3.1382 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 1.9589\,\text{eV}$
+**Substitution:** $$
+\begin{aligned}
+E &= (6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s}) \\
+&: (633 \cdot 10^{-9}\,\text{m}) \\
+&= 3.1382 \cdot 10^{-19}\,\text{J} \\
+&= \dfrac{3.1382 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} \\
+&= 1.9589\,\text{eV}
+\end{aligned}
+$$
 **Answer:** $1.96\,\text{eV}$, three significant figures like the wavelength $633\,\text{nm}$.
 **Reasonableness:** The energies of photons of visible light are about $1.7$–$3.3\,\text{eV}$, and red light is at the low-energy end of the range, like the result. The photon of the red line of hydrogen, $656\,\text{nm}$, has the energy $1.89\,\text{eV}$; at a slightly shorter wavelength the energy is slightly greater.
 
@@ -14,7 +23,13 @@
 **Principle:** Light consists of photons, and the energy of one photon is inversely proportional to the wavelength of the light.
 **Formula:** $E = \dfrac{hc}{\lambda}$
 **Conversions:** $\lambda = 1550\,\text{nm} = 1550 \cdot 10^{-9}\,\text{m}$. Finally joules to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
-**Substitution:** $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1550 \cdot 10^{-9}\,\text{m}} = 1.2816 \cdot 10^{-19}\,\text{J} = \dfrac{1.2816 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 0.80000\,\text{eV}$, when $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$
+**Substitution:** $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1550 \cdot 10^{-9}\,\text{m}} = 1.2816 \cdot 10^{-19}\,\text{J} = \dfrac{1.2816 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 0.80000\,\text{eV}$, when $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$
 **Answer:** $0.800\,\text{eV}$, three significant figures like the constants; the wavelength $1550\,\text{nm}$ is given with at least three.
 **Reasonableness:** The wavelength is more than twice the wavelength of visible red light, so the energy is less than half of the about $1.9\,\text{eV}$ of a red photon. The photon is infrared, and its energy is smaller than the lower limit of visible light, $1.7\,\text{eV}$, as it should be.
 
@@ -24,7 +39,16 @@
 **Principle:** Energy is conserved: when an ion drops from the upper laser level to the lower, its energy decreases by the difference of the levels, and exactly this energy is carried away by one photon.
 **Formula:** $\dfrac{hc}{\lambda} = E_2 - E_1$, from which $\lambda = \dfrac{hc}{E_2 - E_1}$
 **Conversions:** $E_2 - E_1 = 1.79\,\text{eV} = 1.79 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.8676 \cdot 10^{-19}\,\text{J}$; finally $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Substitution:** $\lambda = (6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}) : (2.8676 \cdot 10^{-19}\,\text{J}) = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.8676 \cdot 10^{-19}\,\text{J}} = 6.9274 \cdot 10^{-7}\,\text{m} = 692.74\,\text{nm}$
+**Substitution:** $$
+\begin{aligned}
+\lambda &= (6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s}) \\
+&: (2.8676 \cdot 10^{-19}\,\text{J}) \\
+&= \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.8676 \cdot 10^{-19}\,\text{J}} \\
+&= 6.9274 \cdot 10^{-7}\,\text{m} \\
+&= 692.74\,\text{nm}
+\end{aligned}
+$$
 **Answer:** $693\,\text{nm}$, three significant figures like the energy difference $1.79\,\text{eV}$.
 **Reasonableness:** The result is at the red end of visible light, and the light of a ruby laser is dark red with a wavelength of about $694\,\text{nm}$. The energy $1.79\,\text{eV}$ is at the low end of the range of visible light, $1.7$–$3.3\,\text{eV}$, which fits red light.
 
@@ -34,7 +58,16 @@
 **Principle:** All the photons of a laser are identical, so the energy of the pulse is the number of photons multiplied by the energy of one photon $\tfrac{hc}{\lambda}$.
 **Formula:** $E = N \cdot \dfrac{hc}{\lambda}$, from which $N = \dfrac{E\lambda}{hc}$
 **Conversions:** $E = 3.0\,\text{mJ} = 3.0 \cdot 10^{-3}\,\text{J}$ and $\lambda = 1064\,\text{nm} = 1064 \cdot 10^{-9}\,\text{m}$.
-**Substitution:** $N = (3.0 \cdot 10^{-3}\,\text{J} \cdot 1064 \cdot 10^{-9}\,\text{m}) : (6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}) = \dfrac{3.192 \cdot 10^{-9}\,\text{J}\,\text{m}}{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1.6069 \cdot 10^{16}$
+**Substitution:** $$
+\begin{aligned}
+N &= (3.0 \cdot 10^{-3}\,\text{J} \\
+&\cdot 1064 \cdot 10^{-9}\,\text{m}) \\
+&: (6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s}) \\
+&= \dfrac{3.192 \cdot 10^{-9}\,\text{J}\,\text{m}}{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} \\
+&= 1.6069 \cdot 10^{16}
+\end{aligned}
+$$
 **Answer:** $1.6 \cdot 10^{16}$ photons, two significant figures like the energy of the pulse $3.0\,\text{mJ}$.
 **Reasonableness:** The energy of one photon is $\tfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1064 \cdot 10^{-9}\,\text{m}} \approx 1.9 \cdot 10^{-19}\,\text{J}$, and $1.6 \cdot 10^{16} \cdot 1.9 \cdot 10^{-19}\,\text{J} \approx 3 \cdot 10^{-3}\,\text{J}$, as it should be. The unit cancels, so the result is a pure number.
 
@@ -74,7 +107,15 @@
 **Principle:** The energy of a photon is $\tfrac{hc}{\lambda}$. We calculate the photon energy of the larger dot, add $0.35\,\text{eV}$ to it and calculate the wavelength from the new energy. The energy gap of the smaller dot is larger, so its photon energy is greater.
 **Formula:** $E_\text{large} = \dfrac{hc}{\lambda_\text{large}}$ and $\dfrac{hc}{\lambda} = E_\text{large} + \Delta E$, from which $\lambda = \dfrac{hc}{E_\text{large} + \Delta E}$
 **Conversions:** $\lambda_\text{large} = 620\,\text{nm} = 620 \cdot 10^{-9}\,\text{m}$; energies in electronvolts and joules by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$; finally $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Substitution:** $E_\text{large} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3.2040 \cdot 10^{-19}\,\text{J} = 2.0000\,\text{eV}$. $E_\text{large} + \Delta E = 2.0000\,\text{eV} + 0.35\,\text{eV} = 2.3500\,\text{eV} = 2.3500 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.7647 \cdot 10^{-19}\,\text{J}$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.7647 \cdot 10^{-19}\,\text{J}} = 5.2766 \cdot 10^{-7}\,\text{m} = 527.66\,\text{nm}$
+**Substitution:** $E_\text{large} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3.2040 \cdot 10^{-19}\,\text{J} = 2.0000\,\text{eV}$. $$
+\begin{aligned}
+&E_\text{large} + \Delta E \\
+&= 2.0000\,\text{eV} + 0.35\,\text{eV} \\
+&= 2.3500\,\text{eV} \\
+&= 2.3500 \cdot 1.602 \cdot 10^{-19}\,\text{J} \\
+&= 3.7647 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.7647 \cdot 10^{-19}\,\text{J}} = 5.2766 \cdot 10^{-7}\,\text{m} = 527.66\,\text{nm}$
 **Answer:** $528\,\text{nm}$, three significant figures like the wavelength $620\,\text{nm}$.
 **Reasonableness:** The smaller dot emits a shorter wavelength, green light, as quantum dots should. In the table of quantum dots, the dot of $3.0\,\text{nm}$ emits light with the wavelength $530\,\text{nm}$, so the smaller dot is of this order of size.
 
@@ -129,7 +170,13 @@
 **Principle:** The photons of a laser are identical, so the power is the number of photons per second multiplied by the energy of one photon $\tfrac{hc}{\lambda}$.
 **Formula:** $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$, from which $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
 **Conversions:** $P = 5.0\,\text{mW} = 5.0 \cdot 10^{-3}\,\text{W}$ and $\lambda = 532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$.
-**Substitution:** $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ and $P\lambda = 5.0 \cdot 10^{-3}\,\text{W} \cdot 532 \cdot 10^{-9}\,\text{m} = 2.660 \cdot 10^{-9}\,\text{W}\,\text{m}$, so $\tfrac{N}{t} = \dfrac{2.660 \cdot 10^{-9}\,\text{W}\,\text{m}}{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1.3391 \cdot 10^{16}\,\tfrac{1}{\text{s}}$
+**Substitution:** $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ and $P\lambda = 5.0 \cdot 10^{-3}\,\text{W} \cdot 532 \cdot 10^{-9}\,\text{m} = 2.660 \cdot 10^{-9}\,\text{W}\,\text{m}$, so $\tfrac{N}{t} = \dfrac{2.660 \cdot 10^{-9}\,\text{W}\,\text{m}}{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1.3391 \cdot 10^{16}\,\tfrac{1}{\text{s}}$
 **Answer:** $1.3 \cdot 10^{16}$ photons per second (calculator result $1.34 \cdot 10^{16}$), two significant figures like the power $5.0\,\text{mW}$.
 **Reasonableness:** The energy of one photon is $\tfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{532 \cdot 10^{-9}\,\text{m}} \approx 3.7 \cdot 10^{-19}\,\text{J}$, and $1.3 \cdot 10^{16}\,\tfrac{1}{\text{s}} \cdot 3.7 \cdot 10^{-19}\,\text{J} \approx 5 \cdot 10^{-3}\,\text{W}$, as it should be. One mW would give $2.7 \cdot 10^{15}$ photons per second, so with five times the power, $5.0\,\text{mW}$, there are about $1.3 \cdot 10^{16}$ photons per second.
 
@@ -180,7 +227,13 @@ $$\begin{aligned}
 **Reading the graph:** From the table: the diameter $2.0\,\text{nm}$ corresponds to the wavelength $486\,\text{nm}$ and the diameter $6.0\,\text{nm}$ to the wavelength $617\,\text{nm}$. When the diameter increases, the wavelength increases at every step.
 **Formula:** $E = \dfrac{hc}{\lambda}$ and $\Delta E = E_{2.0\,\text{nm}} - E_{6.0\,\text{nm}}$
 **Conversions:** $\lambda = 486 \cdot 10^{-9}\,\text{m}$ and so on; joules are converted to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
-**Substitution:** a) $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. The energy of the photon of the dot $2.0\,\text{nm}$ is $\dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{486 \cdot 10^{-9}\,\text{m}} = 4.0875 \cdot 10^{-19}\,\text{J} = 2.551\,\text{eV}$. In the same way for the dots $3.0$; $4.0$; $5.0$ and $6.0\,\text{nm}$ we get $2.344\,\text{eV}$, $2.164\,\text{eV}$, $2.063\,\text{eV}$ and $2.010\,\text{eV}$. b) The energy gap decreases as the dot grows: the smaller the dot, the greater the gap. The change slows down as the size grows: between $2.0 \to 3.0\,\text{nm}$ the gap decreases by $0.207\,\text{eV}$ and between $5.0 \to 6.0\,\text{nm}$ by only $0.053\,\text{eV}$, so the energy gap is not directly proportional to the size of the dot and the dependence is not linear. c) $\Delta E = 2.5514\,\text{eV} - 2.0097\,\text{eV} = 0.5417\,\text{eV}$
+**Substitution:** a) $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. The energy of the photon of the dot $2.0\,\text{nm}$ is $\dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{486 \cdot 10^{-9}\,\text{m}} = 4.0875 \cdot 10^{-19}\,\text{J} = 2.551\,\text{eV}$. In the same way for the dots $3.0$; $4.0$; $5.0$ and $6.0\,\text{nm}$ we get $2.344\,\text{eV}$, $2.164\,\text{eV}$, $2.063\,\text{eV}$ and $2.010\,\text{eV}$. b) The energy gap decreases as the dot grows: the smaller the dot, the greater the gap. The change slows down as the size grows: between $2.0 \to 3.0\,\text{nm}$ the gap decreases by $0.207\,\text{eV}$ and between $5.0 \to 6.0\,\text{nm}$ by only $0.053\,\text{eV}$, so the energy gap is not directly proportional to the size of the dot and the dependence is not linear. c) $\Delta E = 2.5514\,\text{eV} - 2.0097\,\text{eV} = 0.5417\,\text{eV}$
 **Answer:** $0.54\,\text{eV}$. The wavelengths are given with three significant figures, and the difference is given to hundredths.
 **Reasonableness:** The smallest dot emits the shortest wavelength, $486\,\text{nm}$, and the largest the longest, $617\,\text{nm}$, as is the case with quantum dots. The difference $0.54\,\text{eV}$ is about $27\,\%$ of the gap of the largest dot, $2.01\,\text{eV}$, and the wavelength of the smallest dot is $\tfrac{486}{617} = 79\,\%$ of the largest wavelength, which fits together.
 
@@ -212,7 +265,19 @@ a) $hc = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Pump photons: $\tfrac{N_\te
 
 b) $\eta_\text{q} = \dfrac{8.080 \cdot 10^{19}\,\tfrac{1}{\text{s}}}{9.826 \cdot 10^{19}\,\tfrac{1}{\text{s}}} = 0.8222 = 82.2\,\%$.
 
-c) The thermal power is $20.0\,\text{W} - 15.0\,\text{W} = 5.0\,\text{W}$. The energy difference of the photons is $\dfrac{hc}{\lambda_\text{p}} - \dfrac{hc}{\lambda_\text{L}} = 2.0354 \cdot 10^{-19}\,\text{J} - 1.8566 \cdot 10^{-19}\,\text{J} = 1.788 \cdot 10^{-20}\,\text{J}$, so the unavoidable part is $P_\text{unav} = 8.080 \cdot 10^{19}\,\tfrac{1}{\text{s}} \cdot 1.788 \cdot 10^{-20}\,\text{J} = 1.44\,\text{W}$, that is, about $29\,\%$ of the thermal power.
+c) The thermal power is $20.0\,\text{W} - 15.0\,\text{W} = 5.0\,\text{W}$. The energy difference of the photons is $$
+\begin{aligned}
+\dfrac{hc}{\lambda_\text{p}} - \dfrac{hc}{\lambda_\text{L}} &= 2.0354 \cdot 10^{-19}\,\text{J} \\
+&- 1.8566 \cdot 10^{-19}\,\text{J} \\
+&= 1.788 \cdot 10^{-20}\,\text{J}
+\end{aligned}
+$$, so the unavoidable part is $$
+\begin{aligned}
+P_\text{unav} &= 8.080 \cdot 10^{19}\,\tfrac{1}{\text{s}} \\
+&\cdot 1.788 \cdot 10^{-20}\,\text{J} \\
+&= 1.44\,\text{W}
+\end{aligned}
+$$, that is, about $29\,\%$ of the thermal power.
 
 d) The energy efficiency is $\tfrac{15.0\,\text{W}}{20.0\,\text{W}} = 0.750 = 75.0\,\%$, so it is smaller than $\eta_\text{q} = 82.2\,\%$. The reason is that the energy of each laser photon is smaller than that of a pump photon: the ratio of the energies is $\eta_\text{q}$ multiplied by the ratio of the energies of the photons $\tfrac{976}{1070} = 0.912$, and $0.8222 \cdot 0.912 = 0.750$. The difference between the energies of a pump photon and a laser photon remains in the medium as heat, even if every pump photon produced a laser photon.
 

@@ -84,7 +84,15 @@
 **Principle:** The patient is treated as a point source, so the dose rate is inversely proportional to the square of the distance (chapter *Radiation dose and radiation safety in Finland*). The dose rate stays constant during this time, so the dose is the dose rate times the time.
 **Formula:** $\dot{H}_2 = \dot{H}_1 \left(\tfrac{r_1}{r_2}\right)^2$ and $H = \dot{H}_2 t$, so $H = \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 t$
 **Conversions:** $t = 5.0\,\text{min} = 5.0 \cdot \tfrac{1}{60}\,\text{h} = 0.08333\,\text{h}$
-**Substitution:** $H = 30\,\mu\text{Sv/h} \cdot \left(\dfrac{1.0\,\text{m}}{0.50\,\text{m}}\right)^2 \cdot 0.08333\,\text{h} = 30\,\mu\text{Sv/h} \cdot 4 \cdot 0.08333\,\text{h} = 120\,\mu\text{Sv/h} \cdot 0.08333\,\text{h} = 10\,\mu\text{Sv}$
+**Substitution:** $$
+\begin{aligned}
+H &= 30\,\mu\text{Sv/h} \cdot \left(\dfrac{1.0\,\text{m}}{0.50\,\text{m}}\right)^2 \\
+&\cdot 0.08333\,\text{h} \\
+&= 30\,\mu\text{Sv/h} \cdot 4 \cdot 0.08333\,\text{h} \\
+&= 120\,\mu\text{Sv/h} \cdot 0.08333\,\text{h} \\
+&= 10\,\mu\text{Sv}
+\end{aligned}
+$$
 **Answer:** $10\,\mu\text{Sv}$, two significant figures like the dose rate $30\,\mu\text{Sv/h}$ and the time $5.0\,\text{min}$.
 **Reasonableness:** Halving the distance quadruples the dose rate to $120\,\mu\text{Sv/h}$, and five minutes is a twelfth of an hour: $120 : 12 = 10$. At a distance of a metre the nurse would receive only $2.5\,\mu\text{Sv}$ in the same time, so distance is an effective protection.
 
@@ -144,7 +152,15 @@
 **Principle:** Effective doses can be compared directly and added together, so the total dose is the dose of each examination times the number of examinations, summed. The comparison is made with a single division.
 **Formula:** $H = n_1 H_1 + n_2 H_2 + n_3 H_3$ and $p = \dfrac{H}{H_\text{nature}} \cdot 100\,\%$
 **Conversions:** Not needed: all doses are in millisieverts. The share is converted to a percentage by multiplying by $100\,\%$.
-**Substitution:** $H = 3 \cdot 0.010\,\text{mSv} + 2 \cdot 0.10\,\text{mSv} + 1 \cdot 2.0\,\text{mSv} = 0.030\,\text{mSv} + 0.20\,\text{mSv} + 2.0\,\text{mSv} = 2.23\,\text{mSv}$
+**Substitution:** $$
+\begin{aligned}
+H &= 3 \cdot 0.010\,\text{mSv} + 2 \\
+&\cdot 0.10\,\text{mSv} + 1 \cdot 2.0\,\text{mSv} \\
+&= 0.030\,\text{mSv} + 0.20\,\text{mSv} \\
+&+ 2.0\,\text{mSv} \\
+&= 2.23\,\text{mSv}
+\end{aligned}
+$$
 $p = \dfrac{2.23\,\text{mSv}}{5.1\,\text{mSv}} \cdot 100\,\% = 43.73\,\%$
 **Answer:** $44\,\%$, two significant figures like the dose from natural radiation $5.1\,\text{mSv}$.
 **Reasonableness:** The dose of the head CT, $2.0\,\text{mSv}$, is almost the whole sum, and $2.0 : 5.1 \approx 0.39$. The small images add only $0.23\,\text{mSv}$, so the whole is $(2.0 + 0.23) : 5.1 \approx 0.44$, or about $44\,\%$. The dose is less than half of the annual dose, and most of it comes from a single CT examination.
@@ -177,7 +193,14 @@ b) $A_\text{decay} = 500\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12.0\,\tex
 **Principle:** The activity needed for imaging, $A_\text{scan} = a m$, must remain after the waiting time, and during the wait the activity decreases only by decay. So the injected activity $A_0$ is greater than $A_\text{scan}$, and the smallest suitable value comes from the decay law. The dose depends on the injected activity, and the doses of the PET part and the CT part are added together.
 **Formula:** $A_\text{scan} = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, so $A_0 = \dfrac{a m}{\left(\tfrac{1}{2}\right)^{t/T_{1/2}}}$, and $H = k A_0 + H_\text{CT}$
 **Conversions:** Not needed: the waiting time and the half-life are both in minutes, and the dose coefficient is in millisieverts per megabecquerel.
-**Substitution:** $A_\text{scan} = 2.0\,\tfrac{\text{MBq}}{\text{kg}} \cdot 75\,\text{kg} = 150\,\text{MBq}$ and $\left(\tfrac{1}{2}\right)^{60\,\text{min} / 110\,\text{min}} = \left(\tfrac{1}{2}\right)^{0.5455} = 0.6853$, so $A_0 = \dfrac{150\,\text{MBq}}{0.6853} = 218.9\,\text{MBq}$. Then $H = 0.019\,\tfrac{\text{mSv}}{\text{MBq}} \cdot 218.9\,\text{MBq} + 6.0\,\text{mSv} = 4.16\,\text{mSv} + 6.0\,\text{mSv} = 10.16\,\text{mSv}$
+**Substitution:** $A_\text{scan} = 2.0\,\tfrac{\text{MBq}}{\text{kg}} \cdot 75\,\text{kg} = 150\,\text{MBq}$ and $\left(\tfrac{1}{2}\right)^{60\,\text{min} / 110\,\text{min}} = \left(\tfrac{1}{2}\right)^{0.5455} = 0.6853$, so $A_0 = \dfrac{150\,\text{MBq}}{0.6853} = 218.9\,\text{MBq}$. Then $$
+\begin{aligned}
+H &= 0.019\,\tfrac{\text{mSv}}{\text{MBq}} \cdot 218.9\,\text{MBq} \\
+&+ 6.0\,\text{mSv} \\
+&= 4.16\,\text{mSv} + 6.0\,\text{mSv} \\
+&= 10.16\,\text{mSv}
+\end{aligned}
+$$
 **Answer:** a) $10\,\text{mSv}$, two significant figures like the mass $75\,\text{kg}$ and the activity $2.0\,\tfrac{\text{MBq}}{\text{kg}}$. b) The total dose is about two annual doses from natural radiation ($10.16 : 5.1 = 2.0$), so clearly greater than the annual dose. The examination is justified when the physician judges that the result settles a question about the treatment and that a method with a smaller dose would not give the same information; the benefit to the patient is then greater than the small additional risk caused by the radiation. The dose is optimised by using the smallest activity with which the imaging succeeds.
 **Reasonableness:** The waiting time $60\,\text{min}$ is a little over half of the half-life, so about a third of the activity has time to decay: $150 : 0.69 \approx 217\,\text{MBq}$. This agrees with the result $218.9\,\text{MBq}$. The dose of the PET part, $4.2\,\text{mSv}$, is of the same order of magnitude as the doses of other PET examinations, and the CT part adds even more to it.
 

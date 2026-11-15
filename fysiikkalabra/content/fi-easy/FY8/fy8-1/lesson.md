@@ -162,7 +162,18 @@ Tällä mallilla jokainen havainto selittyy. Samanvärisellä valolla intensitee
 <figure class="unit-photo"><img src="pics/fy8/photomultiplier-tube.webp" alt="Suuri pyöreä lasikupu museon vitriinissä. Kuvun sisäpinta on kuin peili."><figcaption>Valomonistinputki museossa Tokiossa. Fotoni osuu kuvun sisäpintaan ja irrottaa elektronin. Tämä on valosähköinen ilmiö. Putki vahvistaa elektronin mitattavaksi sähköpulssiksi.</figcaption></figure>
 
 ### Elektronivoltti
-Fotonin ja elektronin energiat ovat jouleina hyvin pieniä lukuja. Siksi niille käytetään usein yksikköä **elektronivoltti** ($\text{eV}$). Yksi elektronivoltti on se energia, jonka elektroni saa, kun se kiihtyy sähkökentässä $1\,\text{V}$:n jännitteen läpi. Elektronin varauksen suuruus on $e = 1{,}602 \cdot 10^{-19}\,\text{C}$. Siksi $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Muunnos tehdään sijoittamalla. Esimerkiksi $3{,}20 \cdot 10^{-19}\,\text{J} = \tfrac{3{,}20 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \approx 2{,}00\,\text{eV}$.
+Fotonin ja elektronin energiat ovat jouleina hyvin pieniä lukuja. Siksi niille käytetään usein yksikköä **elektronivoltti** ($\text{eV}$). Yksi elektronivoltti on se energia, jonka elektroni saa, kun se kiihtyy sähkökentässä $1\,\text{V}$:n jännitteen läpi. Elektronin varauksen suuruus on $e = 1{,}602 \cdot 10^{-19}\,\text{C}$. Siksi $$
+\begin{aligned}
+1\,\text{eV} &= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} \\
+&= 1{,}602 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$. Muunnos tehdään sijoittamalla. Esimerkiksi $$
+\begin{aligned}
+&3{,}20 \cdot 10^{-19}\,\text{J} \\
+&= \tfrac{3{,}20 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\
+&\approx 2{,}00\,\text{eV}
+\end{aligned}
+$$.
 
 ## Kaava: Fotonin energia
 
@@ -175,7 +186,13 @@ Tässä $E$ on fotonin energia ($\text{J}$), $h = 6{,}626 \cdot 10^{-34}\,\text{
 ```kaavat
 fotonin energia :: E = \frac{hc}{\lambda}
 ```
-Tässä $\lambda$ on säteilyn aallonpituus tyhjiössä ($\text{m}$). Mitä lyhyempi aallonpituus on, sitä suurempi on fotonin energia. Esimerkki: vihreän valon aallonpituus on $\lambda = 500\,\text{nm}$. Sen fotonin energia on $E = \tfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s}}{500 \cdot 10^{-9}\,\text{m}} = 3{,}97 \cdot 10^{-19}\,\text{J}$ eli $2{,}48\,\text{eV}$. Arvioita varten kannattaa muuntaa tulo $hc$ kerran elektronivolteiksi ja nanometreiksi. Muunnoksessa käytetään yhtälöitä $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$ ja $1\,\text{m} = 10^{9}\,\text{nm}$. Tulo on
+Tässä $\lambda$ on säteilyn aallonpituus tyhjiössä ($\text{m}$). Mitä lyhyempi aallonpituus on, sitä suurempi on fotonin energia. Esimerkki: vihreän valon aallonpituus on $\lambda = 500\,\text{nm}$. Sen fotonin energia on $$
+\begin{aligned}
+&E \\
+&= \tfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s}}{500 \cdot 10^{-9}\,\text{m}} \\
+&= 3{,}97 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$ eli $2{,}48\,\text{eV}$. Arvioita varten kannattaa muuntaa tulo $hc$ kerran elektronivolteiksi ja nanometreiksi. Muunnoksessa käytetään yhtälöitä $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$ ja $1\,\text{m} = 10^{9}\,\text{nm}$. Tulo on
 
 ```latex
 \begin{aligned}
@@ -257,7 +274,12 @@ Tässä $hf$ on fotonin energia, $W$ on metallin irrotustyö ja $E_\text{k,max}$
 Yhtälö voidaan kirjoittaa muotoon $E_\text{k,max} = hf - W$. Tämä on suoran yhtälö. Suurin liike-energia kasvaa tasaisesti taajuuden mukana. Suoran kulmakerroin on Planckin vakio $h$ kaikille metalleille. Eri metallien suorat ovat siksi yhdensuuntaiset. Ne alkavat vaaka-akselilta kunkin metallin rajataajuudelta. Robert Millikan mittasi tällaisia suoria vuonna 1916. Hän sai suorien kulmakertoimesta Planckin vakion. Valon intensiteetti ei esiinny yhtälössä lainkaan.
 
 ### Sinkki tarvitsee lyhytaaltoista ultraviolettia
-Rajataajuutta vastaa **raja-aallonpituus** $\lambda_0 = hc : W$. Sitä pidempiaaltoinen säteily ei irrota elektroneja. Sinkistä irtoaa elektroneja vain, jos fotonin energia on suurempi kuin sinkin irrotustyö. Irrotustyö on $4{,}31\,\text{eV}$, joten raja-aallonpituus on $\lambda_0 \approx 1240\,\text{eV}\,\text{nm} : 4{,}31\,\text{eV} \approx 288\,\text{nm}$. Tavallinen $365\,\text{nm}$:n UV-A-lamppu ei siksi riitä. Lyhytaaltoisempi säteily, esimerkiksi $254\,\text{nm}$:n UV-C, voi irrottaa elektroneja. Koe onnistuu parhaiten, kun sinkkipinta on juuri hiottu. Pinnan oksidikerros ja lika heikentävät ilmiötä.
+Rajataajuutta vastaa **raja-aallonpituus** $\lambda_0 = hc : W$. Sitä pidempiaaltoinen säteily ei irrota elektroneja. Sinkistä irtoaa elektroneja vain, jos fotonin energia on suurempi kuin sinkin irrotustyö. Irrotustyö on $4{,}31\,\text{eV}$, joten raja-aallonpituus on $$
+\begin{aligned}
+\lambda_0 &\approx 1240\,\text{eV}\,\text{nm} : 4{,}31\,\text{eV} \\
+&\approx 288\,\text{nm}
+\end{aligned}
+$$. Tavallinen $365\,\text{nm}$:n UV-A-lamppu ei siksi riitä. Lyhytaaltoisempi säteily, esimerkiksi $254\,\text{nm}$:n UV-C, voi irrottaa elektroneja. Koe onnistuu parhaiten, kun sinkkipinta on juuri hiottu. Pinnan oksidikerros ja lika heikentävät ilmiötä.
 
 UV-C-säteily vaurioittaa silmiä ja ihoa jo lyhyessä ajassa. Koulussa koetta ei tehdä suojaamattomalla UV-C-lampulla. Opettaja voi näyttää kokeen suojatulla laitteistolla. Muuten ilmiötä tutkitaan simulaatiolla ja valmiilla mittausaineistolla.
 

@@ -2,7 +2,11 @@
 **Given:** atomic masses $m_\text{Li} = 6.0151229\,\text{u}$, $m_\text{n} = 1.0086649\,\text{u}$, $m_\text{He} = 4.0026033\,\text{u}$ and $m_\text{T} = 3.0160493\,\text{u}$
 **Asked:** the reaction energy $Q$ in megaelectronvolts
 **Principle:** The reaction releases an energy that corresponds to the difference between the masses of the starting materials and the products. The sum of the atomic numbers is conserved ($3 + 0 = 2 + 1$), so the electrons in the atomic masses cancel and the atomic masses can be used directly.
-**Formula:** $Q = (m_\text{initial} - m_\text{final})\,c^2$, from which $Q = (m_\text{Li} + m_\text{n} - m_\text{He} - m_\text{T})\,c^2$
+**Formula:** $Q = (m_\text{initial} - m_\text{final})\,c^2$, from which $$
+\begin{aligned}
+Q &= (m_\text{Li} + m_\text{n} - m_\text{He} - m_\text{T})\,c^2
+\end{aligned}
+$$
 **Conversions:** $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$, so the mass difference in atomic mass units is multiplied by $931.5\,\tfrac{\text{MeV}}{c^2}$ and $c^2$ cancels.
 **Substitution:** $Q = (7.0237878\,\text{u} - 7.0186526\,\text{u})\,c^2 = 0.0051352\,\text{u} \cdot c^2 = 0.0051352 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 4.7834\,\text{MeV}$
 **Answer:** $4.78\,\text{MeV}$, three significant figures; the precision of the mass difference $0.0051352\,\text{u}$ would allow even more.
@@ -63,18 +67,48 @@
 **Asked:** the energy released per kilogram of fuel, $\tfrac{E}{m}$, in the unit $10^{14}\,\tfrac{\text{J}}{\text{kg}}$
 **Principle:** One reaction releases the energy $Q$ that corresponds to the mass difference and uses up one deuterium atom and one tritium atom. The energy per unit mass is the energy of one reaction divided by the mass of the fuel of one reaction.
 **Formula:** $Q = (m_\text{D} + m_\text{T} - m_\text{He} - m_\text{n})\,c^2$ and $\dfrac{E}{m} = \dfrac{Q}{m_\text{D} + m_\text{T}}$
-**Conversions:** $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$; $1\,\text{MeV} = 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J}$; mass of the fuel $5.0301511\,\text{u} = 5.0301511 \cdot 1.66054 \cdot 10^{-27}\,\text{kg} = 8.3528 \cdot 10^{-27}\,\text{kg}$
+**Conversions:** $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$; $$
+\begin{aligned}
+1\,\text{MeV} &= 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$; mass of the fuel $$
+\begin{aligned}
+&5.0301511\,\text{u} \\
+&= 5.0301511 \\
+&\cdot 1.66054 \cdot 10^{-27}\,\text{kg} \\
+&= 8.3528 \cdot 10^{-27}\,\text{kg}
+\end{aligned}
+$$
 **Substitution:** $Q = 0.0188829 \cdot 931.5\,\text{MeV} = 17.589\,\text{MeV} = 17.589 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.8178 \cdot 10^{-12}\,\text{J}$, so $\dfrac{E}{m} = \dfrac{2.8178 \cdot 10^{-12}\,\text{J}}{8.3528 \cdot 10^{-27}\,\text{kg}} = 3.3735 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$
 **Answer:** $3.37 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$, three significant figures; the atomic masses are very precise, and the conversion factor $1.602 \cdot 10^{-19}\,\text{J}$ limits the precision to four figures.
 **Reasonableness:** The heating value of coal is about $2.4 \cdot 10^{7}\,\tfrac{\text{J}}{\text{kg}}$, so fusion fuel releases about $10^{7}$ times as much energy per kilogram. According to the chapter, fusion produces about four times as much as fission, and the $8.2 \cdot 10^{13}\,\tfrac{\text{J}}{\text{kg}}$ of the fission of uranium-235 times four is about $3 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$.
 
 ## fy8-11-L2-03
-**Given:** reaction ${}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{140}_{54}\text{Xe} + {}^{94}_{38}\text{Sr} + x\,{}^{1}_{0}\text{n}$; atomic masses $m_\text{U} = 235.0439282\,\text{u}$, $m_\text{Xe} = 139.9216458\,\text{u}$, $m_\text{Sr} = 93.9153556\,\text{u}$ and $m_\text{n} = 1.0086649\,\text{u}$
+**Given:** reaction $$
+\begin{aligned}
+&{}^{1}_{0}\text{n} \\
+&+ {}^{235}_{92}\text{U} \rightarrow {}^{140}_{54}\text{Xe} + {}^{94}_{38}\text{Sr} + x\,{}^{1}_{0}\text{n}
+\end{aligned}
+$$; atomic masses $m_\text{U} = 235.0439282\,\text{u}$, $m_\text{Xe} = 139.9216458\,\text{u}$, $m_\text{Sr} = 93.9153556\,\text{u}$ and $m_\text{n} = 1.0086649\,\text{u}$
 **Asked:** the number of neutrons $x$ and the reaction energy $Q$ in megaelectronvolts
 **Principle:** In a nuclear reaction the mass number is conserved, so the number of neutrons follows from the sums of the mass numbers. The atomic numbers already match ($92 = 54 + 38$), so the electrons in the atomic masses cancel. The energy corresponds to the difference in masses.
-**Formula:** $1 + 235 = 140 + 94 + x$, from which $x = 236 - 234 = 2$; $Q = (m_\text{n} + m_\text{U} - m_\text{Xe} - m_\text{Sr} - 2m_\text{n})\,c^2$
+**Formula:** $1 + 235 = 140 + 94 + x$, from which $x = 236 - 234 = 2$; $$
+\begin{aligned}
+Q &= (m_\text{n} + m_\text{U} - m_\text{Xe} - m_\text{Sr} \\
+&- 2m_\text{n})\,c^2
+\end{aligned}
+$$
 **Conversions:** $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$, so $c^2$ cancels.
-**Substitution:** $Q = (236.0525931\,\text{u} - 235.8543312\,\text{u})\,c^2 = 0.1982619\,\text{u} \cdot c^2 = 0.1982619 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 184.68\,\text{MeV}$
+**Substitution:** $$
+\begin{aligned}
+Q &= (236.0525931\,\text{u} \\
+&- 235.8543312\,\text{u})\,c^2 \\
+&= 0.1982619\,\text{u} \cdot c^2 \\
+&= 0.1982619 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \\
+&\cdot c^2 \\
+&= 184.68\,\text{MeV}
+\end{aligned}
+$$
 **Answer:** $185\,\text{MeV}$, three significant figures as in the example of the chapter; two neutrons are released in the reaction.
 **Reasonableness:** The result is of the same order of magnitude as in the reaction of the example ($173\,\text{MeV}$): different ways of splitting release slightly different energies, on average about $200\,\text{MeV}$ per fission when the later decays of the fission products are included.
 
@@ -84,7 +118,12 @@
 **Principle:** When the multiplication factor stays the same, the number of neutrons is multiplied by $k$ in every generation, so after $40$ generations the original number has been multiplied by $k^{40}$.
 **Formula:** $N_g = N_0 k^g$, from which $k^{g} = \dfrac{N_g}{N_0}$ and $k = \left(\dfrac{N_g}{N_0}\right)^{1/g}$
 **Conversions:** None are needed: the numbers of neutrons are pure numbers. Finally, the growth in percent is $(k - 1) \cdot 100\,\%$.
-**Substitution:** $k = \left(\dfrac{5000}{1000}\right)^{1/40} = 5^{0.025} = 1.04106$, so the growth is $(1.04106 - 1) \cdot 100\,\% = 4.106\,\%$
+**Substitution:** $k = \left(\dfrac{5000}{1000}\right)^{1/40} = 5^{0.025} = 1.04106$, so the growth is $$
+\begin{aligned}
+&(1.04106 - 1) \cdot 100\,\% \\
+&= 4.106\,\%
+\end{aligned}
+$$
 **Answer:** about $4.1\,\%$ per generation, two significant figures.
 **Reasonableness:** Check: $1.041^{40} \approx 4.99$, so the number becomes five times as large. If the growth were a steady $100$ neutrons per generation, $4000$ more would come in $40$ generations, which is $10\,\%$ of the initial number per generation; compounding growth needs a smaller percentage.
 
@@ -93,8 +132,20 @@
 **Asked:** the mass $m$ of uranium-235 that undergoes fission in a day, in kilograms
 **Principle:** By the assumption of the problem, all the thermal power comes from the fissions of uranium-235 (in a real reactor some comes from the fissions of plutonium-239). The thermal power is the energy released in fissions per unit time, so the number of fissions is the energy released divided by the energy of one fission. Each fission uses up one uranium-235 atom, so the mass is the number of fissions times the mass of an atom.
 **Formula:** $Pt = NQ$, from which $N = \dfrac{Pt}{Q}$ and $m = N m_\text{U} = \dfrac{Pt\,m_\text{U}}{Q}$
-**Conversions:** $P = 4300 \cdot 10^{6}\,\text{W}$; $t = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$; $Q = 200 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.204 \cdot 10^{-11}\,\text{J}$; $m_\text{U} = 235.0439282 \cdot 1.66054 \cdot 10^{-27}\,\text{kg} = 3.9030 \cdot 10^{-25}\,\text{kg}$
-**Substitution:** $N = \dfrac{4300 \cdot 10^{6}\,\text{W} \cdot 86\,400\,\text{s}}{3.204 \cdot 10^{-11}\,\text{J}} = 1.1596 \cdot 10^{25}$, so $m = 1.1596 \cdot 10^{25} \cdot 3.9030 \cdot 10^{-25}\,\text{kg} = 4.5257\,\text{kg}$
+**Conversions:** $P = 4300 \cdot 10^{6}\,\text{W}$; $t = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$; $Q = 200 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.204 \cdot 10^{-11}\,\text{J}$; $$
+\begin{aligned}
+m_\text{U} &= 235.0439282 \\
+&\cdot 1.66054 \cdot 10^{-27}\,\text{kg} \\
+&= 3.9030 \cdot 10^{-25}\,\text{kg}
+\end{aligned}
+$$
+**Substitution:** $N = \dfrac{4300 \cdot 10^{6}\,\text{W} \cdot 86\,400\,\text{s}}{3.204 \cdot 10^{-11}\,\text{J}} = 1.1596 \cdot 10^{25}$, so $$
+\begin{aligned}
+m &= 1.1596 \cdot 10^{25} \\
+&\cdot 3.9030 \cdot 10^{-25}\,\text{kg} \\
+&= 4.5257\,\text{kg}
+\end{aligned}
+$$
 **Answer:** $4.5\,\text{kg}$, two significant figures like the power $4300\,\text{MW}$.
 **Reasonableness:** According to the chapter, one gram of uranium-235 releases about $82\,\text{GJ}$. In a day the reactor produces $4.3 \cdot 10^{9}\,\text{W} \cdot 86\,400\,\text{s} \approx 3.7 \cdot 10^{14}\,\text{J}$, and $3.7 \cdot 10^{14}\,\text{J} : 8.2 \cdot 10^{10}\,\tfrac{\text{J}}{\text{g}} \approx 4500\,\text{g}$. The result matches.
 
@@ -103,7 +154,11 @@
 **Asked:** the rate at which helium nuclei are formed, $\tfrac{N}{t}$, in the unit $10^{37}\,\tfrac{1}{\text{s}}$
 **Principle:** For each helium nucleus formed, an energy $Q$ is released that corresponds to the difference between the masses of four hydrogen atoms and a helium atom. Because all the energy ends up as radiation, the radiated power is $Q$ times the rate at which helium nuclei are formed.
 **Formula:** $Q = (4m_\text{H} - m_\text{He})\,c^2$ and $P = \dfrac{N}{t}\,Q$, from which $\dfrac{N}{t} = \dfrac{P}{Q}$
-**Conversions:** $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$ and $1\,\text{MeV} = 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J}$
+**Conversions:** $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$ and $$
+\begin{aligned}
+1\,\text{MeV} &= 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$
 **Substitution:** $Q = (4.0313000\,\text{u} - 4.0026033\,\text{u})\,c^2 = 0.0286967 \cdot 931.5\,\text{MeV} = 26.731\,\text{MeV} = 26.731 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 4.2823 \cdot 10^{-12}\,\text{J}$, so $\dfrac{N}{t} = \dfrac{3.83 \cdot 10^{26}\,\tfrac{\text{J}}{\text{s}}}{4.2823 \cdot 10^{-12}\,\text{J}} = 8.9438 \cdot 10^{37}\,\tfrac{1}{\text{s}}$
 **Answer:** $8.94 \cdot 10^{37}\,\tfrac{1}{\text{s}}$, three significant figures like the radiated power $3.83 \cdot 10^{26}\,\text{W}$.
 **Reasonableness:** By estimation $4 \cdot 10^{26}\,\text{W} : 4 \cdot 10^{-12}\,\text{J} = 10^{38}\,\tfrac{1}{\text{s}}$. The mass of the Sun decreases by $\tfrac{P}{c^2} \approx 4 \cdot 10^{9}\,\tfrac{\text{kg}}{\text{s}}$, which is negligible compared with the mass of the Sun.
@@ -154,9 +209,22 @@
 **Principle:** The total power is the sum of the powers of the reactors. Energy is power times time, and by the capacity factor $0.90$ the reactors produce in a year $90\,\%$ of the energy they would produce running at nominal power for the whole year.
 **Formula:** $P = P_1 + P_2 + P_3 + P_4 + P_5$ and $E = 0.90\,P\,t$
 **Conversions:** $t = 365 \cdot 24\,\text{h} = 8760\,\text{h}$, $P = 4394\,\text{MW} = 4394 \cdot 10^{6}\,\text{W}$ and $1\,\text{TWh} = 10^{12}\,\text{Wh}$
-**Substitution:** a) The sum is $890 + 890 + 1600 + 507 + 507 = 4394$, so $P = 4394\,\text{MW}$. b) $E = 0.90 \cdot 4394 \cdot 10^{6}\,\text{W} \cdot 8760\,\text{h} = 3.464 \cdot 10^{13}\,\text{Wh} = 34.64\,\text{TWh}$
+**Substitution:** a) The sum is $$
+\begin{aligned}
+&890 + 890 + 1600 + 507 + 507 \\
+&= 4394
+\end{aligned}
+$$, so $P = 4394\,\text{MW}$. b) $E = 0.90 \cdot 4394 \cdot 10^{6}\,\text{W} \cdot 8760\,\text{h} = 3.464 \cdot 10^{13}\,\text{Wh} = 34.64\,\text{TWh}$
 **Answer:** $34.6\,\text{TWh}$, three significant figures; the powers in the table are rounded and the capacity factor is an assumption, so the result is an estimate.
-**Reasonableness:** At nominal power for the whole year the energy would be $4394\,\text{MW} \cdot 8760\,\text{h} \approx 38.5\,\text{TWh}$, and $90\,\%$ of that is about $34.6\,\text{TWh}$. With round numbers $4.4\,\text{GW} \cdot 0.9 \cdot 8800\,\text{h} \approx 35\,\text{TWh}$.
+**Reasonableness:** At nominal power for the whole year the energy would be $$
+\begin{aligned}
+4394\,\text{MW} \cdot 8760\,\text{h} &\approx 38.5\,\text{TWh}
+\end{aligned}
+$$, and $90\,\%$ of that is about $34.6\,\text{TWh}$. With round numbers $$
+\begin{aligned}
+4.4\,\text{GW} \cdot 0.9 \cdot 8800\,\text{h} &\approx 35\,\text{TWh}
+\end{aligned}
+$$.
 
 ## fy8-11-L2-07
 **Asked:** what the error is in the student's reasoning when the student concludes that no energy is released in fission.
@@ -202,7 +270,19 @@ The reason that the binding energy is released when the nucleus splits is incorr
 **Asked:** a) the thermal power $P_\text{th}$ and the power $P_\text{waste}$ transferred to the cooling water, b) the mass $m$ of uranium-235 that undergoes fission in a year, c) the mass of the corresponding coal
 **Principle:** The efficiency is the electrical power divided by the thermal power, so the thermal power is obtained from the electrical power. The part of the thermal power that is not turned into electricity is transferred to the cooling water. By the assumption, all the thermal power comes from fissions of uranium-235. The energy released in a year divided by the energy of one fission is the number of fissions, and each fission uses up one uranium-235 atom.
 **Formula:** $\eta = \dfrac{P_\text{e}}{P_\text{th}}$, $P_\text{waste} = P_\text{th} - P_\text{e}$, $E = 0.92\,P_\text{th}\,t$, $N = \dfrac{E}{Q}$, $m = N\,m_\text{U}$ and $m_\text{coal} = \dfrac{E}{\text{heating value}}$
-**Conversions:** $t = 365 \cdot 24 \cdot 3600\,\text{s} = 31\,536\,000\,\text{s}$; $Q = 200 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.204 \cdot 10^{-11}\,\text{J}$; $m_\text{U} = 235.0439282 \cdot 1.66054 \cdot 10^{-27}\,\text{kg} = 3.9030 \cdot 10^{-25}\,\text{kg}$; $24\,\tfrac{\text{MJ}}{\text{kg}} = 24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}$
-**Substitution:** a) $P_\text{th} = \dfrac{507\,\text{MW}}{0.33} = 1536\,\text{MW}$ and $P_\text{waste} = 1536\,\text{MW} - 507\,\text{MW} = 1029\,\text{MW}$. b) $E = 0.92 \cdot 1536.4 \cdot 10^{6}\,\text{W} \cdot 31\,536\,000\,\text{s} = 4.457 \cdot 10^{16}\,\text{J}$, so $N = \dfrac{4.457 \cdot 10^{16}\,\text{J}}{3.204 \cdot 10^{-11}\,\text{J}} = 1.391 \cdot 10^{27}$ and $m = 1.391 \cdot 10^{27} \cdot 3.9030 \cdot 10^{-25}\,\text{kg} = 543.0\,\text{kg}$. c) $m_\text{coal} = \dfrac{4.457 \cdot 10^{16}\,\text{J}}{24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}} = 1.857 \cdot 10^{9}\,\text{kg} = 1.86 \cdot 10^{6}\,\text{t}$
+**Conversions:** $t = 365 \cdot 24 \cdot 3600\,\text{s} = 31\,536\,000\,\text{s}$; $Q = 200 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.204 \cdot 10^{-11}\,\text{J}$; $$
+\begin{aligned}
+m_\text{U} &= 235.0439282 \\
+&\cdot 1.66054 \cdot 10^{-27}\,\text{kg} \\
+&= 3.9030 \cdot 10^{-25}\,\text{kg}
+\end{aligned}
+$$; $24\,\tfrac{\text{MJ}}{\text{kg}} = 24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}$
+**Substitution:** a) $P_\text{th} = \dfrac{507\,\text{MW}}{0.33} = 1536\,\text{MW}$ and $P_\text{waste} = 1536\,\text{MW} - 507\,\text{MW} = 1029\,\text{MW}$. b) $$
+\begin{aligned}
+E &= 0.92 \cdot 1536.4 \cdot 10^{6}\,\text{W} \\
+&\cdot 31\,536\,000\,\text{s} \\
+&= 4.457 \cdot 10^{16}\,\text{J}
+\end{aligned}
+$$, so $N = \dfrac{4.457 \cdot 10^{16}\,\text{J}}{3.204 \cdot 10^{-11}\,\text{J}} = 1.391 \cdot 10^{27}$ and $m = 1.391 \cdot 10^{27} \cdot 3.9030 \cdot 10^{-25}\,\text{kg} = 543.0\,\text{kg}$. c) $m_\text{coal} = \dfrac{4.457 \cdot 10^{16}\,\text{J}}{24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}} = 1.857 \cdot 10^{9}\,\text{kg} = 1.86 \cdot 10^{6}\,\text{t}$
 **Answer:** $540\,\text{kg}$ as the result of part b); two significant figures, because the efficiency $0.33$ and the operating time $92\,\%$ are given with two figures. In part a) the thermal power is $1500\,\text{MW}$ and $1000\,\text{MW}$ is transferred to the cooling water (the same two significant figures). In part c) about $1.9$ million tonnes of coal would be needed: in nuclear reactions the energy is millions of electronvolts per atom and in combustion of the order of an electronvolt, so about $3.4$ million times as much mass of coal is needed as of uranium-235.
 **Reasonableness:** According to the chapter, a gram of uranium-235 releases about $82\,\text{GJ}$. The energy $4.457 \cdot 10^{16}\,\text{J}$ divided by $8.2 \cdot 10^{10}\,\tfrac{\text{J}}{\text{g}}$ is about $5.4 \cdot 10^{5}\,\text{g} = 540\,\text{kg}$, which matches. The power transferred to the cooling water is greater than the electrical power, which fits the efficiency $0.33$, because $1029 > 507$.

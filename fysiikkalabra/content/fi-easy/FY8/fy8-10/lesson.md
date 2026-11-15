@@ -86,7 +86,17 @@ Atomien ja ytimien massat ilmoitetaan **atomimassayksikköinä**. Se on hyvin pi
 Lähde: atomimassataulukko AME2020 (Atomic Mass Evaluation 2020, IAEA:n Atomic Mass Data Center). Arvot on pyöristetty kuuteen desimaaliin. Ytimen massoissa tarvitaan näin monta desimaalia, koska tärkeät erot ovat pieniä.
 
 ### Massavaje
-Helium-4-atomissa on kaksi protonia, kaksi neutronia ja kaksi elektronia. Samat hiukkaset ovat kahdessa vetyatomissa ja kahdessa neutronissa. Niiden yhteinen massa on $2 \cdot 1{,}007825\,\text{u} + 2 \cdot 1{,}008665\,\text{u} = 4{,}032980\,\text{u}$. Helium-4-atomin massa on kuitenkin vain $4{,}002603\,\text{u}$. Kun protonit ja neutronit eli **nukleonit** ovat sitoutuneet ytimeksi, niiden massa on pienempi kuin erillään. Erotus $4{,}032980\,\text{u} - 4{,}002603\,\text{u} = 0{,}030377\,\text{u}$ on ytimen **massavaje** $\Delta m$. Se on noin $0{,}76\,\%$ atomin massasta. Laskussa käytetään vetyatomeja erillisten protonien sijaan, jotta elektronien massat kumoutuvat eli niitä ei tarvitse laskea erikseen: molemmilla puolilla on kaksi elektronia.
+Helium-4-atomissa on kaksi protonia, kaksi neutronia ja kaksi elektronia. Samat hiukkaset ovat kahdessa vetyatomissa ja kahdessa neutronissa. Niiden yhteinen massa on $$
+\begin{aligned}
+&2 \cdot 1{,}007825\,\text{u} + 2 \cdot 1{,}008665\,\text{u} \\
+&= 4{,}032980\,\text{u}
+\end{aligned}
+$$. Helium-4-atomin massa on kuitenkin vain $4{,}002603\,\text{u}$. Kun protonit ja neutronit eli **nukleonit** ovat sitoutuneet ytimeksi, niiden massa on pienempi kuin erillään. Erotus $$
+\begin{aligned}
+&4{,}032980\,\text{u} - 4{,}002603\,\text{u} \\
+&= 0{,}030377\,\text{u}
+\end{aligned}
+$$ on ytimen **massavaje** $\Delta m$. Se on noin $0{,}76\,\%$ atomin massasta. Laskussa käytetään vetyatomeja erillisten protonien sijaan, jotta elektronien massat kumoutuvat eli niitä ei tarvitse laskea erikseen: molemmilla puolilla on kaksi elektronia.
 
 <svg data-fig="massat" viewBox="0 0 600 350" role="img" aria-label="Pylväskuva. Pystyakseli on mittakaavassa mutta katkaistu: se alkaa arvosta 3,990 u eikä nollasta. Vasen pylväs on kahden vetyatomin ja kahden neutronin yhteenlaskettu massa, 4,032980 u. Oikea pylväs on helium-4-atomin massa, 4,002603 u. Pylväiden ero eli massavaje on 0,030377 u. Se on merkitty punaisella hakasulkeella." style="max-width:100%;font-size:24px">
   <line x1="130" y1="243" x2="560" y2="243" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -186,7 +196,13 @@ Ytimien energiat ilmoitetaan megaelektronivoltteina: $1\,\text{MeV} = 10^{6}\,\t
 &\approx 931{,}5\,\text{MeV}
 \end{aligned}
 ```
-Siis $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Kun massavaje on atomimassayksikköinä, tämä arvo sijoitetaan yksikön paikalle, ja $c^2$ supistuu pois. Esimerkiksi $0{,}001000\,\text{u} \cdot c^2 = 0{,}001000 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 0{,}9315\,\text{MeV}$. Jos vakioissa olisi vain neljä numeroa, $1{,}661 \cdot 10^{-27}\,\text{kg}$, $2{,}998 \cdot 10^{8}\,\text{m/s}$ ja $1{,}602 \cdot 10^{-19}\,\text{J}$, tulos olisi $931{,}9\,\text{MeV}$. Neljän numeron vakiot muuttavat siis jo tuloksen neljättä numeroa.
+Siis $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Kun massavaje on atomimassayksikköinä, tämä arvo sijoitetaan yksikön paikalle, ja $c^2$ supistuu pois. Esimerkiksi $$
+\begin{aligned}
+&0{,}001000\,\text{u} \cdot c^2 \\
+&= 0{,}001000 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&= 0{,}9315\,\text{MeV}
+\end{aligned}
+$$. Jos vakioissa olisi vain neljä numeroa, $1{,}661 \cdot 10^{-27}\,\text{kg}$, $2{,}998 \cdot 10^{8}\,\text{m/s}$ ja $1{,}602 \cdot 10^{-19}\,\text{J}$, tulos olisi $931{,}9\,\text{MeV}$. Neljän numeron vakiot muuttavat siis jo tuloksen neljättä numeroa.
 
 ### Sidosenergia nukleonia kohti
 Ytimien sidoksen lujuutta vertaillaan **sidosenergialla nukleonia kohti**:
@@ -284,7 +300,12 @@ Kuvaajasta näkee, milloin ydinreaktio vapauttaa energiaa. Jos syntyvät ytimet 
 ```kaavat
 ydinreaktiossa vapautuva energia :: Q = (m_\text{alku} - m_\text{loppu})\,c^2
 ```
-Tässä $m_\text{alku}$ on lähtöaineiden massojen summa ja $m_\text{loppu}$ on syntyvien hiukkasten massojen summa. Kun $Q > 0$, energiaa vapautuu. Se muuttuu syntyvien hiukkasten liike-energiaksi ja gammasäteilyksi. Kun $Q < 0$, reaktio tarvitsee energiaa. Kaavaan lasketaan kummallakin puolella kaikkien hiukkasten massat. Taulukoiden atomimassoihin sisältyvät myös atomien elektronit. Alfahajoamisessa ja useimmissa ydinreaktioissa elektroneja on kummallakin puolella yhtä monta. Silloin atomimassat voi sijoittaa kaavaan suoraan. Esimerkiksi uraani-238:n alfahajoamisessa ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$ massa pienenee $0{,}004583\,\text{u}$. Siksi $Q = 0{,}004583 \cdot 931{,}5\,\text{MeV} \approx 4{,}27\,\text{MeV}$.
+Tässä $m_\text{alku}$ on lähtöaineiden massojen summa ja $m_\text{loppu}$ on syntyvien hiukkasten massojen summa. Kun $Q > 0$, energiaa vapautuu. Se muuttuu syntyvien hiukkasten liike-energiaksi ja gammasäteilyksi. Kun $Q < 0$, reaktio tarvitsee energiaa. Kaavaan lasketaan kummallakin puolella kaikkien hiukkasten massat. Taulukoiden atomimassoihin sisältyvät myös atomien elektronit. Alfahajoamisessa ja useimmissa ydinreaktioissa elektroneja on kummallakin puolella yhtä monta. Silloin atomimassat voi sijoittaa kaavaan suoraan. Esimerkiksi uraani-238:n alfahajoamisessa ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$ massa pienenee $0{,}004583\,\text{u}$. Siksi $$
+\begin{aligned}
+Q &= 0{,}004583 \cdot 931{,}5\,\text{MeV} \\
+&\approx 4{,}27\,\text{MeV}
+\end{aligned}
+$$.
 
 <svg data-fig="reaktio" viewBox="0 0 600 350" role="img" aria-label="Pylväskuva. Pystyakseli on mittakaavassa mutta katkaistu: se alkaa arvosta 238,040 u eikä nollasta. Vasen pylväs on uraani-238-atomin massa, 238,050787 u. Oikea pylväs on alfahajoamisessa syntyvien torium-234- ja helium-4-atomien yhteinen massa, 238,046204 u. Ero 0,004583 u on merkitty punaisella hakasulkeella. Se vastaa reaktioenergiaa Q = 4,27 MeV." style="max-width:100%;font-size:24px">
   <line x1="130" y1="212" x2="560" y2="212" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

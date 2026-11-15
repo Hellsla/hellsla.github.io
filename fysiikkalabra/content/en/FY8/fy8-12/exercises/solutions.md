@@ -44,9 +44,20 @@
 **Principle:** A single photon can ionise a molecule only if its energy is at least the ionisation energy. The energy of a photon is $E = hf = \tfrac{hc}{\lambda}$, so the longer the wavelength, the smaller the energy. The longest ionising wavelength corresponds to a photon whose energy is exactly the ionisation energy.
 **Formula:** $E = \dfrac{hc}{\lambda}$, from which $\lambda = \dfrac{hc}{E}$
 **Conversions:** $12.6\,\text{eV} = 12.6 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.0185 \cdot 10^{-18}\,\text{J}$, and finally $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Substitution:** $\lambda = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{2.0185 \cdot 10^{-18}\,\text{J}} = 9.8412 \cdot 10^{-8}\,\text{m} = 98.412\,\text{nm}$
+**Substitution:** $$
+\begin{aligned}
+\lambda &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{2.0185 \cdot 10^{-18}\,\text{J}} \\
+&= 9.8412 \cdot 10^{-8}\,\text{m} \\
+&= 98.412\,\text{nm}
+\end{aligned}
+$$
 **Answer:** $98.4\,\text{nm}$, three significant figures like the ionisation energy $12.6\,\text{eV}$.
-**Reasonableness:** The wavelength is much shorter than the $380$–$720\,\text{nm}$ of visible light, so visible light does not ionise water, as it should. Check: $1240\,\text{eV}\,\text{nm} : 12.6\,\text{eV} \approx 98\,\text{nm}$.
+**Reasonableness:** The wavelength is much shorter than the $380$–$720\,\text{nm}$ of visible light, so visible light does not ionise water, as it should. Check: $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 12.6\,\text{eV} &\approx 98\,\text{nm}
+\end{aligned}
+$$.
 
 ## fy8-12-L2-01
 **Given:** pulse count near the source $N = 1260$, pulse count of the background radiation $N_\text{t} = 72$, both in the time $t = 3.00\,\text{min}$
@@ -202,7 +213,12 @@ Lead is not the best shield here, although its half-value thickness is the small
 **Conversions:** $t = 60\,\text{s}$ and $1.5\,\% = 0.015$. Finally $1\,\text{kBq} = 1000\,\text{Bq}$ and $1\,\text{Bq} = 1\,\tfrac{1}{\text{s}}$.
 **Substitution:** a) With the source there are $5050$ pulses in total and without the source $130$, so the means are $\dfrac{5050}{5} = 1010$ and $\dfrac{130}{5} = 26$, and $R = \dfrac{1010 - 26}{60\,\text{s}} = \dfrac{984}{60\,\text{s}} = 16.4\,\tfrac{1}{\text{s}}$. b) $T = \left(\tfrac{1}{2}\right)^{8.0\,\text{mm} / 5.5\,\text{mm}} = \left(\tfrac{1}{2}\right)^{1.4545} = 0.3649$. c) $A = \dfrac{16.4\,\tfrac{1}{\text{s}}}{0.3649 \cdot 0.015} = \dfrac{16.4\,\tfrac{1}{\text{s}}}{0.005473} = 2997\,\text{Bq} = 3.0\,\text{kBq}$
 **Answer:** $3.0\,\text{kBq}$, two significant figures like the thickness $8.0\,\text{mm}$ and the efficiency $1.5\,\%$. The net pulse rate is $16.4\,\tfrac{1}{\text{s}}$ (a), and about $36\,\%$ of the photons pass through the wall (b). In part d) the true activity is greater, because the tube does not count every photon and not every decay is accompanied by one photon.
-**Reasonableness:** The wall contains $1.45$ half-value thicknesses, so the fraction passing through is between $\tfrac{1}{2}$ and $\tfrac{1}{4}$, like $0.36$. Calculating back: $3000\,\text{Bq} \cdot 0.365 \cdot 0.015 = 16.4\,\tfrac{1}{\text{s}}$, as measured. Justification of part d): a GM tube detects only a small fraction of gamma photons, so counting all the photons hitting the tube as pulses underestimates the decays; in addition, only about $85\,\%$ of the decays of caesium-137 emit a gamma photon. Both assumptions make the estimate too small.
+**Reasonableness:** The wall contains $1.45$ half-value thicknesses, so the fraction passing through is between $\tfrac{1}{2}$ and $\tfrac{1}{4}$, like $0.36$. Calculating back: $$
+\begin{aligned}
+&3000\,\text{Bq} \cdot 0.365 \cdot 0.015 \\
+&= 16.4\,\tfrac{1}{\text{s}}
+\end{aligned}
+$$, as measured. Justification of part d): a GM tube detects only a small fraction of gamma photons, so counting all the photons hitting the tube as pulses underestimates the decays; in addition, only about $85\,\%$ of the decays of caesium-137 emit a gamma photon. Both assumptions make the estimate too small.
 
 ## fy8-12-L3-06
 **Given:** the shares in the table in water and lead at the energies $0.05$–$20\,\text{MeV}$; situations (1) $50\,\text{keV}$ in soft tissue, (2) $50\,\text{keV}$ in lead, (3) $662\,\text{keV}$ in water, (4) $20\,\text{MeV}$ in lead; photon energy in pair production $E_\gamma = 5.0\,\text{MeV}$ and $m_ec^2 = 0.511\,\text{MeV}$

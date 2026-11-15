@@ -86,7 +86,17 @@ The masses of atoms and nuclei are given in **atomic mass units**. The atomic ma
 Source: the atomic mass table AME2020 (Atomic Mass Evaluation 2020, IAEA Atomic Mass Data Center), rounded to six decimals. This many decimals are needed for nuclear masses because the important differences are small.
 
 ### Mass defect
-A helium-4 atom contains two protons, two neutrons and two electrons. The same particles are in two hydrogen atoms and two neutrons, whose total mass is $2 \cdot 1.007825\,\text{u} + 2 \cdot 1.008665\,\text{u} = 4.032980\,\text{u}$. The mass of the helium-4 atom, however, is only $4.002603\,\text{u}$. When the nucleons are bound into a nucleus, their mass is smaller than when they are apart. The difference $4.032980\,\text{u} - 4.002603\,\text{u} = 0.030377\,\text{u}$ is the **mass defect** $\Delta m$ of the nucleus, about $0.76\,\%$ of the mass of the atom. Hydrogen atoms are used instead of separate protons so that the masses of the electrons cancel: there are two electrons on both sides.
+A helium-4 atom contains two protons, two neutrons and two electrons. The same particles are in two hydrogen atoms and two neutrons, whose total mass is $$
+\begin{aligned}
+&2 \cdot 1.007825\,\text{u} + 2 \cdot 1.008665\,\text{u} \\
+&= 4.032980\,\text{u}
+\end{aligned}
+$$. The mass of the helium-4 atom, however, is only $4.002603\,\text{u}$. When the nucleons are bound into a nucleus, their mass is smaller than when they are apart. The difference $$
+\begin{aligned}
+&4.032980\,\text{u} - 4.002603\,\text{u} \\
+&= 0.030377\,\text{u}
+\end{aligned}
+$$ is the **mass defect** $\Delta m$ of the nucleus, about $0.76\,\%$ of the mass of the atom. Hydrogen atoms are used instead of separate protons so that the masses of the electrons cancel: there are two electrons on both sides.
 
 <svg data-fig="massat" viewBox="0 0 600 350" role="img" aria-label="Bar chart, the vertical axis to scale but broken: it starts at the value 3.990 u, not at zero. The left bar is the total mass of two hydrogen atoms and two neutrons, 4.032980 u. The right bar is the mass of a helium-4 atom, 4.002603 u. The difference between the bars, the mass defect, is 0.030377 u, and it is marked with a red bracket." style="max-width:100%;font-size:24px">
   <line x1="130" y1="243" x2="560" y2="243" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -186,7 +196,13 @@ The energies of nuclei are given in megaelectronvolts: $1\,\text{MeV} = 10^{6}\,
 &\approx 931.5\,\text{MeV}
 \end{aligned}
 ```
-So $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. When the mass defect is in atomic mass units, this is put in place of the unit, and $c^2$ cancels: for example $0.001000\,\text{u} \cdot c^2 = 0.001000 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 0.9315\,\text{MeV}$. With four-figure constants $1.661 \cdot 10^{-27}\,\text{kg}$, $2.998 \cdot 10^{8}\,\text{m/s}$ and $1.602 \cdot 10^{-19}\,\text{J}$ the result would be $931.9\,\text{MeV}$, so four-figure constants already change the fourth figure.
+So $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. When the mass defect is in atomic mass units, this is put in place of the unit, and $c^2$ cancels: for example $$
+\begin{aligned}
+&0.001000\,\text{u} \cdot c^2 \\
+&= 0.001000 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&= 0.9315\,\text{MeV}
+\end{aligned}
+$$. With four-figure constants $1.661 \cdot 10^{-27}\,\text{kg}$, $2.998 \cdot 10^{8}\,\text{m/s}$ and $1.602 \cdot 10^{-19}\,\text{J}$ the result would be $931.9\,\text{MeV}$, so four-figure constants already change the fourth figure.
 
 ### Binding energy per nucleon
 The strength of the binding of nuclei is compared with the **binding energy per nucleon**
@@ -284,7 +300,12 @@ In a **nuclear reaction** nuclei change: a nucleus decays, or another nucleus or
 ```kaavat
 energy released in a nuclear reaction :: Q = (m_\text{initial} - m_\text{final})\,c^2
 ```
-where $m_\text{initial}$ is the sum of the masses of the starting materials and $m_\text{final}$ the sum of the masses of the particles formed. When $Q > 0$, energy is released as the kinetic energy of the particles formed and as gamma radiation; when $Q < 0$, the reaction needs energy. The formula counts the masses of all the particles on both sides. The atomic masses in tables also include the electrons of the atoms. In alpha decay and most nuclear reactions there are equally many electrons on both sides, so atomic masses can be put into the formula directly. For example, in the alpha decay of uranium-238, ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$, the mass decreases by $0.004583\,\text{u}$, so $Q = 0.004583 \cdot 931.5\,\text{MeV} \approx 4.27\,\text{MeV}$.
+where $m_\text{initial}$ is the sum of the masses of the starting materials and $m_\text{final}$ the sum of the masses of the particles formed. When $Q > 0$, energy is released as the kinetic energy of the particles formed and as gamma radiation; when $Q < 0$, the reaction needs energy. The formula counts the masses of all the particles on both sides. The atomic masses in tables also include the electrons of the atoms. In alpha decay and most nuclear reactions there are equally many electrons on both sides, so atomic masses can be put into the formula directly. For example, in the alpha decay of uranium-238, ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$, the mass decreases by $0.004583\,\text{u}$, so $$
+\begin{aligned}
+Q &= 0.004583 \cdot 931.5\,\text{MeV} \\
+&\approx 4.27\,\text{MeV}
+\end{aligned}
+$$.
 
 <svg data-fig="reaktio" viewBox="0 0 600 350" role="img" aria-label="Bar chart, the vertical axis to scale but broken: it starts at the value 238.040 u, not at zero. The left bar is the mass of a uranium-238 atom, 238.050787 u. The right bar is the combined mass of the thorium-234 and helium-4 atoms formed in alpha decay, 238.046204 u. The difference 0.004583 u is marked with a red bracket, and it corresponds to the reaction energy Q = 4.27 MeV." style="max-width:100%;font-size:24px">
   <line x1="130" y1="212" x2="560" y2="212" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

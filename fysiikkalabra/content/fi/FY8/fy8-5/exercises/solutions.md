@@ -54,7 +54,13 @@
 **Periaate:** Energia säilyy: atomin energia pienenee tilojen energioiden erotuksen verran, ja sama energia lähtee fotonina, jonka energia on $hf = \tfrac{hc}{\lambda}$. Vetyatomissa tilan energia riippuu vain pääkvanttiluvusta.
 **Kaava:** $\dfrac{hc}{\lambda} = E_3 - E_1$, josta $\lambda = \dfrac{hc}{E_3 - E_1}$
 **Muunnokset:** Energiaero elektronivoltteina on $E_3 - E_1 = -\tfrac{13{,}6\,\text{eV}}{9} + 13{,}6\,\text{eV} = 12{,}089\,\text{eV}$. Sijoitetaan $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$: $E_3 - E_1 = 12{,}089 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}9366 \cdot 10^{-18}\,\text{J}$. Lopuksi $1\,\text{nm} = 10^{-9}\,\text{m}$.
-**Sijoitus:** Ensin $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja sitten $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}9366 \cdot 10^{-18}\,\text{J}} = 1{,}0257 \cdot 10^{-7}\,\text{m} = 102{,}57\,\text{nm}$
+**Sijoitus:** Ensin $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ ja sitten $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}9366 \cdot 10^{-18}\,\text{J}} = 1{,}0257 \cdot 10^{-7}\,\text{m} = 102{,}57\,\text{nm}$
 **Vastaus:** $103\,\text{nm}$, kolme merkitsevää numeroa kuten energiassa $13{,}6\,\text{eV}$.
 **Järkevyys:** Fotonin energia on noin $12\,\text{eV}$, enemmän kuin siirtymän $2\text{p} \to 1\text{s}$ energia $10{,}2\,\text{eV}$, joten aallonpituuden on oltava lyhyempi kuin tämän siirtymän $122\,\text{nm}$. Säteily on ultraviolettia, kuten vedyn kaikki perustilaan päättyvät viivat.
 
@@ -84,7 +90,13 @@
 **Periaate:** Fotonin energian on oltava vähintään irrottamiseen tarvittava energia $0 - E_2$. Fotonin energia $\tfrac{hc}{\lambda}$ pienenee aallonpituuden kasvaessa, joten suurin kelpaava aallonpituus vastaa juuri tätä energiaa.
 **Kaava:** $\dfrac{hc}{\lambda_\text{max}} = 0 - E_2$, josta $\lambda_\text{max} = \dfrac{hc}{-E_2}$
 **Muunnokset:** $-E_2 = \tfrac{13{,}6\,\text{eV}}{4} = 3{,}40\,\text{eV}$. Sijoitetaan $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$: $-E_2 = 3{,}40 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 5{,}4468 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{nm} = 10^{-9}\,\text{m}$.
-**Sijoitus:** Ensin $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja sitten $\lambda_\text{max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{5{,}4468 \cdot 10^{-19}\,\text{J}} = 3{,}6470 \cdot 10^{-7}\,\text{m} = 364{,}70\,\text{nm}$
+**Sijoitus:** Ensin $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ ja sitten $\lambda_\text{max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{5{,}4468 \cdot 10^{-19}\,\text{J}} = 3{,}6470 \cdot 10^{-7}\,\text{m} = 364{,}70\,\text{nm}$
 **Vastaus:** $365\,\text{nm}$, kolme merkitsevää numeroa kuten energiassa $13{,}6\,\text{eV}$.
 **Järkevyys:** Energia $3{,}4\,\text{eV}$ on hieman yli violetin valon fotonin energian, joten aallonpituus on juuri näkyvän alueen alapuolella, lähellä ultraviolettia. Tätä pidempiaaltoinen näkyvä valo ei irrota elektronia kuorelta $n = 2$.
 
@@ -93,7 +105,13 @@
 **Kysytty:** orbitaalien määrä sillä kuorella $n$, jolle elektroni siirtyy
 **Periaate:** Atomi voi absorboida fotonin vain, jos fotonin energia on täsmälleen kahden tilan energioiden erotus. Fotonin energiasta saadaan ylemmän tilan energia $E_n = E_1 + \tfrac{hc}{\lambda}$, siitä kuoren numero $n$, ja kuorella $n$ on $n^2$ orbitaalia.
 **Kaava:** $E_n = E_1 + \dfrac{hc}{\lambda}$, josta $n = \sqrt{\dfrac{13{,}6\,\text{eV}}{-E_n}}$ ja orbitaalien määrä on $n^2$
-**Muunnokset:** $\lambda = 97{,}3\,\text{nm} = 97{,}3 \cdot 10^{-9}\,\text{m}$. Kun $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, fotonin energia on $\tfrac{hc}{\lambda} = \tfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{97{,}3 \cdot 10^{-9}\,\text{m}} = 2{,}0416 \cdot 10^{-18}\,\text{J}$. Elektronivolteiksi se muunnetaan sijoittamalla $1\,\text{J} = \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV}$: $\tfrac{2{,}0416 \cdot 10^{-18}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 12{,}744\,\text{eV}$.
+**Muunnokset:** $\lambda = 97{,}3\,\text{nm} = 97{,}3 \cdot 10^{-9}\,\text{m}$. Kun $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, fotonin energia on $\tfrac{hc}{\lambda} = \tfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{97{,}3 \cdot 10^{-9}\,\text{m}} = 2{,}0416 \cdot 10^{-18}\,\text{J}$. Elektronivolteiksi se muunnetaan sijoittamalla $1\,\text{J} = \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV}$: $\tfrac{2{,}0416 \cdot 10^{-18}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 12{,}744\,\text{eV}$.
 **Sijoitus:** $E_n = -13{,}6\,\text{eV} + 12{,}744\,\text{eV} = -0{,}856\,\text{eV}$ ja $n = \sqrt{\dfrac{13{,}6\,\text{eV}}{0{,}856\,\text{eV}}} = \sqrt{15{,}9} = 3{,}99 \approx 4$, joten orbitaaleja on $4^2 = 16$
 **Vastaus:** $16$ orbitaalia (kuori $n = 4$: $4\text{s}$, kolme $4\text{p}$, viisi $4\text{d}$ ja seitsemän $4\text{f}$); $n$ on kokonaisluku, joten pyöristys $3{,}99 \to 4$ on luotettava.
 **Järkevyys:** Kuoren $n = 4$ energia $-\tfrac{13{,}6\,\text{eV}}{16} = -0{,}85\,\text{eV}$ on yhtä kuin laskettu $-0{,}856\,\text{eV}$ aallonpituuden kolmen numeron tarkkuudella. Kuorien $n = 3$ ($-1{,}51\,\text{eV}$) ja $n = 5$ ($-0{,}54\,\text{eV}$) energiat ovat selvästi kauempana, joten muu kuori ei sovi.
@@ -102,7 +120,12 @@
 **Annettu:** täyttöjärjestys $1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$; orbitaalille enintään kaksi elektronia; $3\text{p}$-alikuori puoliksi täynnä
 **Kysytty:** atomin elektronien määrä $N$
 **Periaate:** Perustilassa elektronit täyttävät orbitaalit alimmasta energiasta alkaen, joten $3\text{p}$-alikuorelle tulee elektroneja vasta, kun $1\text{s}$, $2\text{s}$, $2\text{p}$ ja $3\text{s}$ ovat täynnä. s-alikuorella on yksi orbitaali ja p-alikuorella kolme, joten niille mahtuu $2$ ja $6$ elektronia. Puoliksi täyteen $3\text{p}$-alikuoreen kuuluu puolet sen enimmäismäärästä.
-**Kaava:** $N = N_\text{1s} + N_\text{2s} + N_\text{2p} + N_\text{3s} + \dfrac{N_\text{3p,max}}{2}$
+**Kaava:** $$
+\begin{aligned}
+N &= N_\text{1s} + N_\text{2s} + N_\text{2p} + N_\text{3s} \\
+&+ \dfrac{N_\text{3p,max}}{2}
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita, koska kysytään lukumäärää.
 **Sijoitus:** $N = 2 + 2 + 6 + 2 + \dfrac{6}{2} = 2 + 2 + 6 + 2 + 3 = 15$
 **Vastaus:** $15$ elektronia (alkuaine on fosfori, konfiguraatio $1\text{s}^2\,2\text{s}^2\,2\text{p}^6\,3\text{s}^2\,3\text{p}^3$); tulos on tarkka kokonaisluku.
@@ -171,8 +194,19 @@ a) Yleisin luokka on $0{,}05$–$0{,}10\,\text{nm}$.
 
 b) $72{,}3\,\%$, kolme merkitsevää numeroa kuten lukumäärissä.
 
-c) Alle $0{,}10\,\text{nm}$:n etäisyydelle osuu $72{,}3\,\%$ ja alle $0{,}15\,\text{nm}$:n etäisyydelle $92{,}0\,\%$ mittauksista, joten $90\,\%$ saavutetaan näiden välissä. Lineaarisesti interpoloiden raja on noin $0{,}10\,\text{nm} + \tfrac{90{,}0 - 72{,}3}{92{,}0 - 72{,}3} \cdot 0{,}05\,\text{nm} = 0{,}145\,\text{nm}$, mikä on lähellä arvoa $0{,}14\,\text{nm}$. Aineisto on siis sopusoinnussa rajan kanssa. Rajan ulkopuolellakin on osumia: etäisyydellä yli $0{,}15\,\text{nm}$ on $23 + 7 + 2 = 32$ mittausta, eli $8{,}0\,\%$.
-**Järkevyys:** Yleisin luokka $0{,}05$–$0{,}10\,\text{nm}$ sisältää Bohrin säteen $0{,}053\,\text{nm}$, ja ydintä lähinnä oleva luokka on toiseksi yleisin. Lukumäärät pienenevät nopeasti ulospäin, ja yhteensä $118 + 171 + 79 + 23 + 7 + 2 = 400$, kuten pitää.
+c) Alle $0{,}10\,\text{nm}$:n etäisyydelle osuu $72{,}3\,\%$ ja alle $0{,}15\,\text{nm}$:n etäisyydelle $92{,}0\,\%$ mittauksista, joten $90\,\%$ saavutetaan näiden välissä. Lineaarisesti interpoloiden raja on noin $$
+\begin{aligned}
+&0{,}10\,\text{nm} + \tfrac{90{,}0 - 72{,}3}{92{,}0 - 72{,}3} \\
+&\cdot 0{,}05\,\text{nm} \\
+&= 0{,}145\,\text{nm}
+\end{aligned}
+$$, mikä on lähellä arvoa $0{,}14\,\text{nm}$. Aineisto on siis sopusoinnussa rajan kanssa. Rajan ulkopuolellakin on osumia: etäisyydellä yli $0{,}15\,\text{nm}$ on $23 + 7 + 2 = 32$ mittausta, eli $8{,}0\,\%$.
+**Järkevyys:** Yleisin luokka $0{,}05$–$0{,}10\,\text{nm}$ sisältää Bohrin säteen $0{,}053\,\text{nm}$, ja ydintä lähinnä oleva luokka on toiseksi yleisin. Lukumäärät pienenevät nopeasti ulospäin, ja yhteensä $$
+\begin{aligned}
+&118 + 171 + 79 + 23 + 7 + 2 \\
+&= 400
+\end{aligned}
+$$, kuten pitää.
 
 ## fy8-5-L2-06
 **Annettu:** kielen pituus $L = 0{,}80\,\text{m}$; aallon nopeus $v = 64\,\text{m/s}$; kielen päät kiinnitetty
@@ -202,7 +236,13 @@ c) Solmujen lisääntyessä kuvuja mahtuu kieleen enemmän, joten aallonpituus l
 **Periaate:** Atomin energia pienenee tilojen energioiden erotuksen verran, ja sama energia lähtee fotonina: $E_\text{f} = \tfrac{hc}{\lambda} = E_n - E_2$. Sijoittamalla energiatasokaava saadaan $E_\text{f} = 13{,}6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)$. Jos pisteet piirretään tämän yhtälön mukaisesti, ne asettuvat suoralle, jonka kulmakerroin on energiatasokaavan vakio.
 **Kuvaajan lukeminen:** Vaaka-akselin arvot ovat $\tfrac{1}{4} - \tfrac{1}{n^2} = 0{,}139$, $0{,}188$, $0{,}210$ ja $0{,}222$ kuorille $n = 3, 4, 5, 6$ ja pystyakselin arvot kohdan a) energiat. Pisteet asettuvat likimain suoralle, joka kulkee origon kautta; mittauspisteet vaihtelevat hieman suoran ympärillä. Tarkistuksena ensimmäisen ja viimeisen mittauspisteen $(0{,}1389;\ 1{,}887\,\text{eV})$ ja $(0{,}2222;\ 3{,}020\,\text{eV})$ kautta laskettu kulmakerroin on $\dfrac{3{,}020\,\text{eV} - 1{,}887\,\text{eV}}{0{,}2222 - 0{,}1389} = 13{,}6\,\text{eV}$, ja kaikkiin pisteisiin sovitettu suora, jonka kulmakerrointa käytetään vastauksena, antaa $13{,}62\,\text{eV}$ ja vakiotermiksi $-0{,}003\,\text{eV}$.
 **Kaava:** $E_\text{f} = \dfrac{hc}{\lambda}$, $\ \dfrac{1}{n^2} = \dfrac{1}{4} - \dfrac{E_\text{f}}{13{,}6\,\text{eV}}$ ja kulmakerroin $k = \dfrac{\Delta E_\text{f}}{\Delta\left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)}$
-**Muunnokset:** Aallonpituus $657{,}1\,\text{nm} = 657{,}1 \cdot 10^{-9}\,\text{m}$ ja samoin muut. Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Joulet muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}$.
+**Muunnokset:** Aallonpituus $657{,}1\,\text{nm} = 657{,}1 \cdot 10^{-9}\,\text{m}$ ja samoin muut. Tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. Joulet muunnetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}$.
 **Sijoitus:** a) Ensimmäiselle viivalle $E_\text{f} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{657{,}1 \cdot 10^{-9}\,\text{m}} = 3{,}0231 \cdot 10^{-19}\,\text{J} = 1{,}887\,\text{eV}$. Samoin muille viivoille: $2{,}555\,\text{eV}$, $2{,}860\,\text{eV}$ ja $3{,}020\,\text{eV}$. b) Ensimmäiselle viivalle $\dfrac{1}{n^2} = \dfrac{1}{4} - \dfrac{1{,}887\,\text{eV}}{13{,}6\,\text{eV}} = 0{,}2500 - 0{,}1388 = 0{,}1112$, joten $n = \sqrt{\dfrac{1}{0{,}1112}} = 3{,}00$. Samoin muille viivoille $n = 4{,}01$, $5{,}02$ ja $5{,}98$. d) Kuoresta $n = 7$ lähtevän fotonin energia on $13{,}6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{49}\right) = 3{,}122\,\text{eV} = 5{,}002 \cdot 10^{-19}\,\text{J}$ ja aallonpituus $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{5{,}002 \cdot 10^{-19}\,\text{J}} = 3{,}971 \cdot 10^{-7}\,\text{m} = 397{,}1\,\text{nm}$.
 **Vastaus:** a) $1{,}887\,\text{eV}$, $2{,}555\,\text{eV}$, $2{,}860\,\text{eV}$ ja $3{,}020\,\text{eV}$; b) alkukuoret ovat $n = 3, 4, 5$ ja $6$, koska $n$ on kuoren numero ja siksi kokonaisluku, ja lasketut arvot $3{,}00$, $4{,}01$, $5{,}02$ ja $5{,}98$ poikkeavat kokonaisluvuista vain mittausepävarmuuden verran; c) kulmakerroin on $13{,}6\,\text{eV}$, ja se on energiatasokaavan vakio eli vetyatomin perustilan energian itseisarvo; d) noin $397\,\text{nm}$.
 **Järkevyys:** Kulmakerroin $13{,}6\,\text{eV}$ on sama kuin energiatasokaavan vakio, ja suora kulkee origon kautta, kuten $E_\text{f} = 13{,}6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)$ edellyttää. Ennustettu aallonpituus $397\,\text{nm}$ on lyhyempi kuin neljännen viivan $410{,}6\,\text{nm}$, ja viivat tihenevät kohti rajaa, jossa $n \to \infty$: tällöin $E_\text{f} = \tfrac{13{,}6\,\text{eV}}{4} = 3{,}40\,\text{eV}$ ja $\lambda = 365\,\text{nm}$. Viivat ovat erillisiä, koska elektronin sallitut tilat ovat seisovia aaltoja ja energia on kvantittunut.
@@ -213,6 +253,12 @@ c) Solmujen lisääntyessä kuvuja mahtuu kieleen enemmän, joten aallonpituus l
 **Periaate:** Perustilassa elektronit täyttävät orbitaalit alimmasta energiasta alkaen, kullekin orbitaalille enintään kaksi. Atomin energia muuttuu fotonin absorptiossa fotonin energian verran, joten fotonin energia on tilojen energioiden erotus, $\tfrac{hc}{\lambda} = \Delta E$. Elektronin irrottamiseen tarvitaan vähintään ionisaatioenergia, joten pisin kelpaava aallonpituus vastaa energiaa $E_\text{i}$.
 **Kaava:** $\lambda = \dfrac{hc}{\Delta E}$ ja $\lambda_\text{max} = \dfrac{hc}{E_\text{i}}$
 **Muunnokset:** $\Delta E = 2{,}10\,\text{eV} = 2{,}10 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}3642 \cdot 10^{-19}\,\text{J}$ ja $E_\text{i} = 5{,}14\,\text{eV} = 5{,}14 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 8{,}2343 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{nm} = 10^{-9}\,\text{m}$.
-**Sijoitus:** Ensin $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Kohdassa c) $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}3642 \cdot 10^{-19}\,\text{J}} = 5{,}905 \cdot 10^{-7}\,\text{m} = 590{,}5\,\text{nm}$ ja kohdassa d) $\lambda_\text{max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{8{,}2343 \cdot 10^{-19}\,\text{J}} = 2{,}412 \cdot 10^{-7}\,\text{m} = 241{,}2\,\text{nm}$.
+**Sijoitus:** Ensin $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. Kohdassa c) $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}3642 \cdot 10^{-19}\,\text{J}} = 5{,}905 \cdot 10^{-7}\,\text{m} = 590{,}5\,\text{nm}$ ja kohdassa d) $\lambda_\text{max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{8{,}2343 \cdot 10^{-19}\,\text{J}} = 2{,}412 \cdot 10^{-7}\,\text{m} = 241{,}2\,\text{nm}$.
 **Vastaus:** a) Atomissa on $11$ elektronia, ja konfiguraatio on $1\text{s}^2\,2\text{s}^2\,2\text{p}^6\,3\text{s}^1$: kuoret $n = 1$ ja $n = 2$ täyttyvät ($2 + 8 = 10$ elektronia), ja yhdestoista elektroni on seuraavassa alimmassa orbitaalissa $3\text{s}$, joten uloimmalla kuorella on vain yksi elektroni. b) Valenssielektroni on litiumilla kuorella $n = 2$, natriumilla kuorella $n = 3$ ja kaliumilla kuorella $n = 4$. Se on sitä kauempana ytimestä, mitä korkeampi kuori on, ja sen ja ytimen välissä on yhä useampi täysi kuori, jonka elektronit hylkivät sitä. Ytimen varaus kasvaa lukujen $3$, $11$ ja $19$ mukaan, mutta ionisaatioenergia silti pienenee arvoista $5{,}39\,\text{eV}$ ja $5{,}14\,\text{eV}$ arvoon $4{,}34\,\text{eV}$, joten kuoren kasvun vaikutus on suurempi kuin ytimen varauksen. Vetyatomin kaava $\tfrac{13{,}6\,\text{eV}}{n^2}$ antaisi samalla tavalla pienenevät arvot $3{,}40\,\text{eV}$, $1{,}51\,\text{eV}$ ja $0{,}85\,\text{eV}$; alkalimetalleilla arvot ovat suurempia, koska sisäkuorten elektronit eivät varjosta ytimen varausta täysin, joten valenssielektroniin vaikuttaa suurempi varaus kuin vedyssä. c) Fotonin aallonpituus on $590\,\text{nm}$, kolme merkitsevää numeroa kuten luvussa $2{,}10\,\text{eV}$. d) Ionisaatioon kelpaa fotoni, jonka aallonpituus on enintään $241\,\text{nm}$. Fotonin energia $2{,}10\,\text{eV}$ on pienempi kuin $E_\text{i} = 5{,}14\,\text{eV}$, joten c)-kohdan fotoni ei riitä irrottamaan elektronia; se vain siirtää elektronin tilalle $3\text{p}$.
 **Järkevyys:** Aallonpituus $590\,\text{nm}$ on näkyvän valon alueella, keltaisen valon kohdalla, ja natriumlamppu hohtaa keltaisena. Energiat ovat johdonmukaisia: ionisoiva fotoni tarvitsee energian $5{,}14\,\text{eV}$, mikä on $\tfrac{5{,}14}{2{,}10} = 2{,}45$ kertaa viritysfotonin energia, ja aallonpituus on vastaavasti $\tfrac{590{,}5\,\text{nm}}{241{,}2\,\text{nm}} = 2{,}45$ kertaa niin pitkä. Ionisaatioraja $241\,\text{nm}$ on ultraviolettia, kuten pitääkin.

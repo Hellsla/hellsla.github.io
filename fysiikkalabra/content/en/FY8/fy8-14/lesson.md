@@ -445,7 +445,20 @@ When a positron and an electron annihilate almost at rest, their combined mass $
 E_\gamma = m_e c^2
 ```
 
-where $E_\gamma$ is the energy of one photon ($\text{J}$), $m_e = 9.109 \cdot 10^{-31}\,\text{kg}$ is the mass of the electron and the positron, and $c = 2.998 \cdot 10^{8}\,\text{m/s}$ is the speed of light. Substituting gives $E_\gamma = 9.109 \cdot 10^{-31}\,\text{kg} \cdot (2.998 \cdot 10^{8}\,\text{m/s})^2 = 8.187 \cdot 10^{-14}\,\text{J}$. Substituting $1\,\text{J} = \tfrac{1}{1.602 \cdot 10^{-19}}\,\text{eV}$ gives $E_\gamma = 8.187 \cdot 10^{-14} \cdot \tfrac{1}{1.602 \cdot 10^{-19}}\,\text{eV} = 5.11 \cdot 10^{5}\,\text{eV} = 511\,\text{keV}$. This energy is about $150\,000$ times that of a photon of visible light, and it is the same in every annihilation, so a PET scanner can reject photons whose energy differs clearly from it, because they have scattered on the way.
+where $E_\gamma$ is the energy of one photon ($\text{J}$), $m_e = 9.109 \cdot 10^{-31}\,\text{kg}$ is the mass of the electron and the positron, and $c = 2.998 \cdot 10^{8}\,\text{m/s}$ is the speed of light. Substituting gives $$
+\begin{aligned}
+E_\gamma &= 9.109 \cdot 10^{-31}\,\text{kg} \\
+&\cdot (2.998 \cdot 10^{8}\,\text{m/s})^2 \\
+&= 8.187 \cdot 10^{-14}\,\text{J}
+\end{aligned}
+$$. Substituting $1\,\text{J} = \tfrac{1}{1.602 \cdot 10^{-19}}\,\text{eV}$ gives $$
+\begin{aligned}
+E_\gamma &= 8.187 \cdot 10^{-14} \\
+&\cdot \tfrac{1}{1.602 \cdot 10^{-19}}\,\text{eV} \\
+&= 5.11 \cdot 10^{5}\,\text{eV} \\
+&= 511\,\text{keV}
+\end{aligned}
+$$. This energy is about $150\,000$ times that of a photon of visible light, and it is the same in every annihilation, so a PET scanner can reject photons whose energy differs clearly from it, because they have scattered on the way.
 
 ## Worked example
 

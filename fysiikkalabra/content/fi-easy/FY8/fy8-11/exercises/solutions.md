@@ -2,11 +2,19 @@
 **Annettu:** atomimassat $m_\text{Li} = 6{,}0151229\,\text{u}$, $m_\text{n} = 1{,}0086649\,\text{u}$, $m_\text{He} = 4{,}0026033\,\text{u}$ ja $m_\text{T} = 3{,}0160493\,\text{u}$
 **Kysytty:** reaktioenergia $Q$ megaelektronivoltteina
 **Periaate:** Reaktiossa vapautuu energiaa, joka vastaa lähtöaineiden ja tuotteiden massojen erotusta. Järjestyslukujen summa säilyy ($3 + 0 = 2 + 1$). Siksi atomimassojen elektronit kumoutuvat, ja atomimassoja voi käyttää suoraan.
-**Kaava:** $Q = (m_\text{alku} - m_\text{loppu})\,c^2$, josta $Q = (m_\text{Li} + m_\text{n} - m_\text{He} - m_\text{T})\,c^2$
+**Kaava:** $Q = (m_\text{alku} - m_\text{loppu})\,c^2$, josta $$
+\begin{aligned}
+Q &= (m_\text{Li} + m_\text{n} - m_\text{He} - m_\text{T})\,c^2
+\end{aligned}
+$$
 **Muunnokset:** $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Massaero atomimassayksikköinä kerrotaan luvulla $931{,}5\,\tfrac{\text{MeV}}{c^2}$, ja $c^2$ supistuu.
 **Sijoitus:** $Q = (7{,}0237878\,\text{u} - 7{,}0186526\,\text{u})\,c^2 = 0{,}0051352\,\text{u} \cdot c^2 = 0{,}0051352 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 4{,}7834\,\text{MeV}$
 **Vastaus:** $4{,}78\,\text{MeV}$. Vastauksessa on kolme merkitsevää numeroa. Massaeron $0{,}0051352\,\text{u}$ tarkkuus riittäisi myös useampaan numeroon.
-**Järkevyys:** Massaero on noin $0{,}005\,\text{u}$, ja $0{,}005 \cdot 900\,\text{MeV} = 4{,}5\,\text{MeV}$. Tulos on pienempi kuin deuteriumin ja tritiumin fuusiossa ($17{,}6\,\text{MeV}$), mutta se on selvästi positiivinen. Reaktio vapauttaa siis energiaa.
+**Järkevyys:** Massaero on noin $0{,}005\,\text{u}$, ja $$
+\begin{aligned}
+0{,}005 \cdot 900\,\text{MeV} &= 4{,}5\,\text{MeV}
+\end{aligned}
+$$. Tulos on pienempi kuin deuteriumin ja tritiumin fuusiossa ($17{,}6\,\text{MeV}$), mutta se on selvästi positiivinen. Reaktio vapauttaa siis energiaa.
 
 ## fy8-11-L1-02
 **Annettu:** massan pieneneminen $\Delta m = 0{,}1915\,\text{u}$
@@ -36,7 +44,11 @@
 **Muunnokset:** $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Tekijä $c^2$ supistuu, ja energia saadaan megaelektronivoltteina.
 **Sijoitus:** $Q = (4{,}0282036\,\text{u} - 4{,}0246942\,\text{u})\,c^2 = 0{,}0035094\,\text{u} \cdot c^2 = 0{,}0035094 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 3{,}2690\,\text{MeV}$
 **Vastaus:** $3{,}27\,\text{MeV}$. Vastauksessa on kolme merkitsevää numeroa. Massaero $0{,}0035094\,\text{u}$ on laskettu riittävän tarkasti.
-**Järkevyys:** Massaero on noin $0{,}0035\,\text{u}$, ja $0{,}0035 \cdot 1000\,\text{MeV} = 3{,}5\,\text{MeV}$. Tulos on noin viidesosa deuteriumin ja tritiumin fuusion energiasta. Tämä on yksi syy siihen, että voimaloihin suunnitellaan juuri tritiumia.
+**Järkevyys:** Massaero on noin $0{,}0035\,\text{u}$, ja $$
+\begin{aligned}
+0{,}0035 \cdot 1000\,\text{MeV} &= 3{,}5\,\text{MeV}
+\end{aligned}
+$$. Tulos on noin viidesosa deuteriumin ja tritiumin fuusion energiasta. Tämä on yksi syy siihen, että voimaloihin suunnitellaan juuri tritiumia.
 
 ## fy8-11-L1-05
 **Annettu:** neutronin massa $m_\text{n} = 1{,}0086649\,\text{u}$
@@ -63,18 +75,48 @@
 **Kysytty:** vapautuva energia polttoainekilogrammaa kohti $\tfrac{E}{m}$ yksikössä $10^{14}\,\tfrac{\text{J}}{\text{kg}}$
 **Periaate:** Yksi reaktio vapauttaa massaeroa vastaavan energian $Q$ ja kuluttaa yhden deuteriumatomin ja yhden tritiumatomin. Energia massayksikköä kohti on yhden reaktion energia jaettuna yhden reaktion polttoaineen massalla.
 **Kaava:** $Q = (m_\text{D} + m_\text{T} - m_\text{He} - m_\text{n})\,c^2$ ja $\dfrac{E}{m} = \dfrac{Q}{m_\text{D} + m_\text{T}}$
-**Muunnokset:** $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$; $1\,\text{MeV} = 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$; polttoaineen massa $5{,}0301511\,\text{u} = 5{,}0301511 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg} = 8{,}3528 \cdot 10^{-27}\,\text{kg}$
+**Muunnokset:** $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$; $$
+\begin{aligned}
+1\,\text{MeV} &= 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$; polttoaineen massa $$
+\begin{aligned}
+&5{,}0301511\,\text{u} \\
+&= 5{,}0301511 \\
+&\cdot 1{,}66054 \cdot 10^{-27}\,\text{kg} \\
+&= 8{,}3528 \cdot 10^{-27}\,\text{kg}
+\end{aligned}
+$$
 **Sijoitus:** $Q = 0{,}0188829 \cdot 931{,}5\,\text{MeV} = 17{,}589\,\text{MeV} = 17{,}589 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}8178 \cdot 10^{-12}\,\text{J}$, joten $\dfrac{E}{m} = \dfrac{2{,}8178 \cdot 10^{-12}\,\text{J}}{8{,}3528 \cdot 10^{-27}\,\text{kg}} = 3{,}3735 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$
 **Vastaus:** $3{,}37 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$. Vastauksessa on kolme merkitsevää numeroa. Atomimassat ovat hyvin tarkkoja, ja muuntokerroin $1{,}602 \cdot 10^{-19}\,\text{J}$ rajoittaa tarkkuuden neljään numeroon.
 **Järkevyys:** Kivihiilen lämpöarvo on noin $2{,}4 \cdot 10^{7}\,\tfrac{\text{J}}{\text{kg}}$. Fuusiopolttoaine vapauttaa siis noin $10^{7}$-kertaisesti energiaa kilogrammaa kohti. Luvun mukaan fuusio tuottaa noin nelinkertaisesti energiaa fissioon verrattuna. Uraani-235:n fissio vapauttaa $8{,}2 \cdot 10^{13}\,\tfrac{\text{J}}{\text{kg}}$, ja kun se kerrotaan neljällä, saadaan noin $3 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$.
 
 ## fy8-11-L2-03
-**Annettu:** reaktio ${}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{140}_{54}\text{Xe} + {}^{94}_{38}\text{Sr} + x\,{}^{1}_{0}\text{n}$; atomimassat $m_\text{U} = 235{,}0439282\,\text{u}$, $m_\text{Xe} = 139{,}9216458\,\text{u}$, $m_\text{Sr} = 93{,}9153556\,\text{u}$ ja $m_\text{n} = 1{,}0086649\,\text{u}$
+**Annettu:** reaktio $$
+\begin{aligned}
+&{}^{1}_{0}\text{n} \\
+&+ {}^{235}_{92}\text{U} \rightarrow {}^{140}_{54}\text{Xe} + {}^{94}_{38}\text{Sr} + x\,{}^{1}_{0}\text{n}
+\end{aligned}
+$$; atomimassat $m_\text{U} = 235{,}0439282\,\text{u}$, $m_\text{Xe} = 139{,}9216458\,\text{u}$, $m_\text{Sr} = 93{,}9153556\,\text{u}$ ja $m_\text{n} = 1{,}0086649\,\text{u}$
 **Kysytty:** neutronien määrä $x$ ja reaktioenergia $Q$ megaelektronivoltteina
 **Periaate:** Ydinreaktiossa massaluku säilyy, joten neutronien määrä saadaan massalukujen summista. Järjestysluvut täsmäävät jo ($92 = 54 + 38$), joten atomimassojen elektronit kumoutuvat. Energia vastaa massojen erotusta.
-**Kaava:** $1 + 235 = 140 + 94 + x$, josta $x = 236 - 234 = 2$; $Q = (m_\text{n} + m_\text{U} - m_\text{Xe} - m_\text{Sr} - 2m_\text{n})\,c^2$
+**Kaava:** $1 + 235 = 140 + 94 + x$, josta $x = 236 - 234 = 2$; $$
+\begin{aligned}
+Q &= (m_\text{n} + m_\text{U} - m_\text{Xe} - m_\text{Sr} \\
+&- 2m_\text{n})\,c^2
+\end{aligned}
+$$
 **Muunnokset:** $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$, ja $c^2$ supistuu.
-**Sijoitus:** $Q = (236{,}0525931\,\text{u} - 235{,}8543312\,\text{u})\,c^2 = 0{,}1982619\,\text{u} \cdot c^2 = 0{,}1982619 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 184{,}68\,\text{MeV}$
+**Sijoitus:** $$
+\begin{aligned}
+Q &= (236{,}0525931\,\text{u} \\
+&- 235{,}8543312\,\text{u})\,c^2 \\
+&= 0{,}1982619\,\text{u} \cdot c^2 \\
+&= 0{,}1982619 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \\
+&\cdot c^2 \\
+&= 184{,}68\,\text{MeV}
+\end{aligned}
+$$
 **Vastaus:** $185\,\text{MeV}$. Vastauksessa on kolme merkitsevää numeroa, kuten luvun esimerkissä. Reaktiossa vapautuu kaksi neutronia.
 **Järkevyys:** Tulos on lähellä esimerkin reaktion energiaa ($173\,\text{MeV}$). Eri jakautumistavoissa vapautuu hieman eri energiat. Kun fissiotuotteiden hajoamiset lasketaan mukaan, keskimääräinen energia on noin $200\,\text{MeV}$ fissiota kohti.
 
@@ -84,7 +126,12 @@
 **Periaate:** Kun kasvukerroin pysyy samana, neutronien määrä kerrotaan jokaisessa sukupolvessa luvulla $k$. Siksi $40$ sukupolven jälkeen alkuperäinen määrä on kerrottu luvulla $k^{40}$.
 **Kaava:** $N_g = N_0 k^g$, josta $k^{g} = \dfrac{N_g}{N_0}$ ja $k = \left(\dfrac{N_g}{N_0}\right)^{1/g}$
 **Muunnokset:** Ei tarvita: neutronien määrät ovat pelkkiä lukuja. Lopuksi kasvu prosentteina on $(k - 1) \cdot 100\,\%$.
-**Sijoitus:** $k = \left(\dfrac{5000}{1000}\right)^{1/40} = 5^{0{,}025} = 1{,}04106$, joten kasvu on $(1{,}04106 - 1) \cdot 100\,\% = 4{,}106\,\%$
+**Sijoitus:** $k = \left(\dfrac{5000}{1000}\right)^{1/40} = 5^{0{,}025} = 1{,}04106$, joten kasvu on $$
+\begin{aligned}
+&(1{,}04106 - 1) \cdot 100\,\% \\
+&= 4{,}106\,\%
+\end{aligned}
+$$
 **Vastaus:** noin $4{,}1\,\%$ sukupolvessa. Vastauksessa on kaksi merkitsevää numeroa.
 **Järkevyys:** Tarkistus: $1{,}041^{40} \approx 4{,}99$, eli määrä viisinkertaistuu. Jos kasvu olisi tasaisesti $100$ neutronia sukupolvessa, $40$ sukupolvessa tulisi $4000$ lisää. Se on $10\,\%$ alkumäärästä sukupolvea kohti. Kasvu kertautuu, joten tarvittava prosentti on pienempi.
 
@@ -93,8 +140,20 @@
 **Kysytty:** vuorokaudessa fissioituvan uraani-235:n massa $m$ kilogrammoina
 **Periaate:** Tehtävän oletuksen mukaan koko lämpöteho syntyy uraani-235:n fissioista. Todellisessa reaktorissa osa tulee plutonium-239:n fissioista. Lämpöteho on fissioissa vapautuva energia aikayksikössä, joten fissioiden määrä on vapautunut energia jaettuna yhden fission energialla. Jokainen fissio kuluttaa yhden uraani-235-atomin, joten massa on fissioiden määrä kertaa atomin massa.
 **Kaava:** $Pt = NQ$, josta $N = \dfrac{Pt}{Q}$ ja $m = N m_\text{U} = \dfrac{Pt\,m_\text{U}}{Q}$
-**Muunnokset:** $P = 4300 \cdot 10^{6}\,\text{W}$; $t = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$; $Q = 200 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}204 \cdot 10^{-11}\,\text{J}$; $m_\text{U} = 235{,}0439282 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg} = 3{,}9030 \cdot 10^{-25}\,\text{kg}$
-**Sijoitus:** $N = \dfrac{4300 \cdot 10^{6}\,\text{W} \cdot 86\,400\,\text{s}}{3{,}204 \cdot 10^{-11}\,\text{J}} = 1{,}1596 \cdot 10^{25}$, joten $m = 1{,}1596 \cdot 10^{25} \cdot 3{,}9030 \cdot 10^{-25}\,\text{kg} = 4{,}5257\,\text{kg}$
+**Muunnokset:** $P = 4300 \cdot 10^{6}\,\text{W}$; $t = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$; $Q = 200 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}204 \cdot 10^{-11}\,\text{J}$; $$
+\begin{aligned}
+m_\text{U} &= 235{,}0439282 \\
+&\cdot 1{,}66054 \cdot 10^{-27}\,\text{kg} \\
+&= 3{,}9030 \cdot 10^{-25}\,\text{kg}
+\end{aligned}
+$$
+**Sijoitus:** $N = \dfrac{4300 \cdot 10^{6}\,\text{W} \cdot 86\,400\,\text{s}}{3{,}204 \cdot 10^{-11}\,\text{J}} = 1{,}1596 \cdot 10^{25}$, joten $$
+\begin{aligned}
+m &= 1{,}1596 \cdot 10^{25} \\
+&\cdot 3{,}9030 \cdot 10^{-25}\,\text{kg} \\
+&= 4{,}5257\,\text{kg}
+\end{aligned}
+$$
 **Vastaus:** $4{,}5\,\text{kg}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tehossa $4300\,\text{MW}$.
 **Järkevyys:** Luvun mukaan yksi gramma uraani-235:tä vapauttaa noin $82\,\text{GJ}$. Vuorokaudessa reaktori tuottaa $4{,}3 \cdot 10^{9}\,\text{W} \cdot 86\,400\,\text{s} \approx 3{,}7 \cdot 10^{14}\,\text{J}$. Lisäksi $3{,}7 \cdot 10^{14}\,\text{J} : 8{,}2 \cdot 10^{10}\,\tfrac{\text{J}}{\text{g}} \approx 4500\,\text{g}$. Tulos täsmää.
 
@@ -103,7 +162,11 @@
 **Kysytty:** heliumytimien syntymisnopeus $\tfrac{N}{t}$ yksikössä $10^{37}\,\tfrac{1}{\text{s}}$
 **Periaate:** Jokaista syntyvää heliumydintä kohti vapautuu energia $Q$. Se vastaa neljän vetyatomin ja yhden heliumatomin massojen erotusta. Kaikki energia päätyy säteilyksi, joten säteilyteho on $Q$ kertaa heliumytimien syntymisnopeus.
 **Kaava:** $Q = (4m_\text{H} - m_\text{He})\,c^2$ ja $P = \dfrac{N}{t}\,Q$, josta $\dfrac{N}{t} = \dfrac{P}{Q}$
-**Muunnokset:** $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$ ja $1\,\text{MeV} = 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Muunnokset:** $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$ ja $$
+\begin{aligned}
+1\,\text{MeV} &= 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$
 **Sijoitus:** $Q = (4{,}0313000\,\text{u} - 4{,}0026033\,\text{u})\,c^2 = 0{,}0286967 \cdot 931{,}5\,\text{MeV} = 26{,}731\,\text{MeV} = 26{,}731 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 4{,}2823 \cdot 10^{-12}\,\text{J}$, joten $\dfrac{N}{t} = \dfrac{3{,}83 \cdot 10^{26}\,\tfrac{\text{J}}{\text{s}}}{4{,}2823 \cdot 10^{-12}\,\text{J}} = 8{,}9438 \cdot 10^{37}\,\tfrac{1}{\text{s}}$
 **Vastaus:** $8{,}94 \cdot 10^{37}\,\tfrac{1}{\text{s}}$. Vastauksessa on kolme merkitsevää numeroa, kuten säteilytehossa $3{,}83 \cdot 10^{26}\,\text{W}$.
 **Järkevyys:** Arviolla $4 \cdot 10^{26}\,\text{W} : 4 \cdot 10^{-12}\,\text{J} = 10^{38}\,\tfrac{1}{\text{s}}$. Auringon massa pienenee nopeudella $\tfrac{P}{c^2} \approx 4 \cdot 10^{9}\,\tfrac{\text{kg}}{\text{s}}$. Se on Auringon massaan verrattuna mitätön.
@@ -154,9 +217,22 @@
 **Periaate:** Yhteenlaskettu teho on reaktoreiden tehojen summa. Energia on teho kertaa aika. Kapasiteettikertoimen $0{,}90$ mukaan reaktorit tuottavat vuodessa $90\,\%$ siitä energiasta, jonka ne tuottaisivat koko vuoden nimellisteholla.
 **Kaava:** $P = P_1 + P_2 + P_3 + P_4 + P_5$ ja $E = 0{,}90\,P\,t$
 **Muunnokset:** $t = 365 \cdot 24\,\text{h} = 8760\,\text{h}$, $P = 4394\,\text{MW} = 4394 \cdot 10^{6}\,\text{W}$ ja $1\,\text{TWh} = 10^{12}\,\text{Wh}$
-**Sijoitus:** a) Summa on $890 + 890 + 1600 + 507 + 507 = 4394$, joten $P = 4394\,\text{MW}$. b) $E = 0{,}90 \cdot 4394 \cdot 10^{6}\,\text{W} \cdot 8760\,\text{h} = 3{,}464 \cdot 10^{13}\,\text{Wh} = 34{,}64\,\text{TWh}$
+**Sijoitus:** a) Summa on $$
+\begin{aligned}
+&890 + 890 + 1600 + 507 + 507 \\
+&= 4394
+\end{aligned}
+$$, joten $P = 4394\,\text{MW}$. b) $E = 0{,}90 \cdot 4394 \cdot 10^{6}\,\text{W} \cdot 8760\,\text{h} = 3{,}464 \cdot 10^{13}\,\text{Wh} = 34{,}64\,\text{TWh}$
 **Vastaus:** $34{,}6\,\text{TWh}$. Vastauksessa on kolme merkitsevää numeroa. Taulukon tehot on pyöristetty ja kapasiteettikerroin on oletus, joten tulos on arvio.
-**Järkevyys:** Koko vuoden nimellisteholla energia olisi $4394\,\text{MW} \cdot 8760\,\text{h} \approx 38{,}5\,\text{TWh}$. Siitä $90\,\%$ on noin $34{,}6\,\text{TWh}$. Pyöreillä luvuilla $4{,}4\,\text{GW} \cdot 0{,}9 \cdot 8800\,\text{h} \approx 35\,\text{TWh}$.
+**Järkevyys:** Koko vuoden nimellisteholla energia olisi $$
+\begin{aligned}
+4394\,\text{MW} \cdot 8760\,\text{h} &\approx 38{,}5\,\text{TWh}
+\end{aligned}
+$$. Siitä $90\,\%$ on noin $34{,}6\,\text{TWh}$. Pyöreillä luvuilla $$
+\begin{aligned}
+4{,}4\,\text{GW} \cdot 0{,}9 \cdot 8800\,\text{h} &\approx 35\,\text{TWh}
+\end{aligned}
+$$.
 
 ## fy8-11-L2-07
 **Kysytty:** mikä oppilaan päättelyssä on virhe, kun hän päättelee, ettei fissiossa vapaudu energiaa.
@@ -202,7 +278,19 @@ Perustelu, että sidosenergia vapautuu ytimen jakautuessa, on virheellinen: sido
 **Kysytty:** a) lämpöteho $P_\text{th}$ ja jäähdytysveteen siirtyvä teho $P_\text{jäte}$, b) vuodessa fissioituvan uraani-235:n massa $m$, c) vastaavan kivihiilen massa
 **Periaate:** Hyötysuhde on sähköteho jaettuna lämpöteholla, joten lämpöteho saadaan sähkötehosta. Se osa lämpötehosta, joka ei muutu sähköksi, siirtyy jäähdytysveteen. Oletuksen mukaan kaikki lämpöteho syntyy uraani-235:n fissioista. Vuodessa vapautunut energia jaettuna yhden fission energialla on fissioiden määrä. Jokainen fissio kuluttaa yhden uraani-235-atomin.
 **Kaava:** $\eta = \dfrac{P_\text{s}}{P_\text{th}}$, $P_\text{jäte} = P_\text{th} - P_\text{s}$, $E = 0{,}92\,P_\text{th}\,t$, $N = \dfrac{E}{Q}$, $m = N\,m_\text{U}$ ja $m_\text{hiili} = \dfrac{E}{\text{lämpöarvo}}$
-**Muunnokset:** $t = 365 \cdot 24 \cdot 3600\,\text{s} = 31\,536\,000\,\text{s}$; $Q = 200 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}204 \cdot 10^{-11}\,\text{J}$; $m_\text{U} = 235{,}0439282 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg} = 3{,}9030 \cdot 10^{-25}\,\text{kg}$; $24\,\tfrac{\text{MJ}}{\text{kg}} = 24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}$
-**Sijoitus:** a) $P_\text{th} = \dfrac{507\,\text{MW}}{0{,}33} = 1536\,\text{MW}$ ja $P_\text{jäte} = 1536\,\text{MW} - 507\,\text{MW} = 1029\,\text{MW}$. b) $E = 0{,}92 \cdot 1536{,}4 \cdot 10^{6}\,\text{W} \cdot 31\,536\,000\,\text{s} = 4{,}457 \cdot 10^{16}\,\text{J}$, joten $N = \dfrac{4{,}457 \cdot 10^{16}\,\text{J}}{3{,}204 \cdot 10^{-11}\,\text{J}} = 1{,}391 \cdot 10^{27}$ ja $m = 1{,}391 \cdot 10^{27} \cdot 3{,}9030 \cdot 10^{-25}\,\text{kg} = 543{,}0\,\text{kg}$. c) $m_\text{hiili} = \dfrac{4{,}457 \cdot 10^{16}\,\text{J}}{24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}} = 1{,}857 \cdot 10^{9}\,\text{kg} = 1{,}86 \cdot 10^{6}\,\text{t}$
+**Muunnokset:** $t = 365 \cdot 24 \cdot 3600\,\text{s} = 31\,536\,000\,\text{s}$; $Q = 200 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}204 \cdot 10^{-11}\,\text{J}$; $$
+\begin{aligned}
+m_\text{U} &= 235{,}0439282 \\
+&\cdot 1{,}66054 \cdot 10^{-27}\,\text{kg} \\
+&= 3{,}9030 \cdot 10^{-25}\,\text{kg}
+\end{aligned}
+$$; $24\,\tfrac{\text{MJ}}{\text{kg}} = 24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}$
+**Sijoitus:** a) $P_\text{th} = \dfrac{507\,\text{MW}}{0{,}33} = 1536\,\text{MW}$ ja $P_\text{jäte} = 1536\,\text{MW} - 507\,\text{MW} = 1029\,\text{MW}$. b) $$
+\begin{aligned}
+E &= 0{,}92 \cdot 1536{,}4 \cdot 10^{6}\,\text{W} \\
+&\cdot 31\,536\,000\,\text{s} \\
+&= 4{,}457 \cdot 10^{16}\,\text{J}
+\end{aligned}
+$$, joten $N = \dfrac{4{,}457 \cdot 10^{16}\,\text{J}}{3{,}204 \cdot 10^{-11}\,\text{J}} = 1{,}391 \cdot 10^{27}$ ja $m = 1{,}391 \cdot 10^{27} \cdot 3{,}9030 \cdot 10^{-25}\,\text{kg} = 543{,}0\,\text{kg}$. c) $m_\text{hiili} = \dfrac{4{,}457 \cdot 10^{16}\,\text{J}}{24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}} = 1{,}857 \cdot 10^{9}\,\text{kg} = 1{,}86 \cdot 10^{6}\,\text{t}$
 **Vastaus:** $540\,\text{kg}$ kohdan b) tuloksena. Kaksi merkitsevää numeroa riittää, koska hyötysuhde $0{,}33$ ja käyttöaika $92\,\%$ on annettu kahdella numerolla. Kohdassa a) lämpöteho on $1500\,\text{MW}$ ja jäähdytysveteen siirtyy $1000\,\text{MW}$ (samat kaksi merkitsevää numeroa). Kohdassa c) tarvittaisiin noin $1{,}9$ miljoonaa tonnia kivihiiltä. Ydinreaktioissa energia on miljoonia elektronivoltteja atomia kohti, ja palamisessa se on elektronivoltin luokkaa. Siksi hiiltä tarvitaan noin $3{,}4$ miljoonaa kertaa enemmän massaa kuin uraani-235:tä.
 **Järkevyys:** Luvun mukaan gramma uraani-235:tä vapauttaa noin $82\,\text{GJ}$. Energia $4{,}457 \cdot 10^{16}\,\text{J}$ jaettuna luvulla $8{,}2 \cdot 10^{10}\,\tfrac{\text{J}}{\text{g}}$ on noin $5{,}4 \cdot 10^{5}\,\text{g} = 540\,\text{kg}$. Se täsmää. Jäähdytysveteen siirtyvä teho on suurempi kuin sähköteho, mikä sopii hyötysuhteeseen $0{,}33$, koska $1029 > 507$.

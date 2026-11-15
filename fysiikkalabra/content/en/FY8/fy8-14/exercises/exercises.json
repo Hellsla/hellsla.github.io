@@ -240,7 +240,7 @@
       "id": "fy8-14-L2-07",
       "level": 2,
       "core": true,
-      "text": "The lead shield of a PET syringe is dimensioned so that at most $1.0\\,\\%$ of the $511\\,\\text{keV}$ photons of the syringe get through the shield. The half-value thickness of lead is $0.26\\,\\text{mm}$ for $140\\,\\text{keV}$ photons and $3.9\\,\\text{mm}$ for $511\\,\\text{keV}$ photons.\n\nThe student's solution: “The share to be let through is $0.010$, so $\\left(\\tfrac{1}{2}\\right)^{n} = 0.010$ and $n = \\dfrac{\\ln 0.010}{\\ln 0.5} = 6.64$. The thickness is $d = n \\cdot d_{1/2} = 6.64 \\cdot 0.26\\,\\text{mm} = 1.7\\,\\text{mm}$.”\n\nFind the student's error and calculate the correct thickness of the lead shield in millimetres.",
+      "text": "The lead shield of a PET syringe is dimensioned so that at most $1.0\\,\\%$ of the $511\\,\\text{keV}$ photons of the syringe get through the shield. The half-value thickness of lead is $0.26\\,\\text{mm}$ for $140\\,\\text{keV}$ photons and $3.9\\,\\text{mm}$ for $511\\,\\text{keV}$ photons.\n\nThe student's solution: “The share to be let through is $0.010$, so $\\left(\\tfrac{1}{2}\\right)^{n} = 0.010$ and $n = \\dfrac{\\ln 0.010}{\\ln 0.5} = 6.64$. The thickness is $$\n\\begin{aligned}\nd &= n \\cdot d_{1/2} \\\\\n&= 6.64 \\cdot 0.26\\,\\text{mm} \\\\\n&= 1.7\\,\\text{mm}\n\\end{aligned}\n$$.”\n\nFind the student's error and calculate the correct thickness of the lead shield in millimetres.",
       "kind": [
         "error",
         "reasoning"

@@ -253,7 +253,7 @@
       "hints": [
         "The energy released is the energy corresponding to the mass difference, $Q = (m_\\text{initial} - m_\\text{final})\\,c^2$.",
         "At the start there is only the muon, at the end an electron and two neutrinos, whose masses are left out.",
-        "$Q = (105.658 - 0.511)\\,\\text{MeV}$."
+        "$$\n\\begin{aligned}\nQ &= (105.658 - 0.511)\\,\\text{MeV}\n\\end{aligned}\n$$."
       ],
       "mistakes": [
         {

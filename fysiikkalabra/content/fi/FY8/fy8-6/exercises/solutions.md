@@ -6,7 +6,11 @@
 **Muunnokset:** Ei tarvita: $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
 **Sijoitus:** $E = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}95\,\text{V} = 3{,}1239 \cdot 10^{-19}\,\text{J}$
 **Vastaus:** $3{,}12 \cdot 10^{-19}\,\text{J}$, kolme merkitsevää numeroa kuten jännitteessä $1{,}95\,\text{V}$.
-**Järkevyys:** Elektronivoltteina energia on täsmälleen $1{,}95\,\text{eV}$, koska $1\,\text{eV}$ on energia, jonka elektroni saa $1\,\text{V}$:n jännitteessä. Se on oranssin valon fotonin energian suuruusluokkaa: $1240\,\text{eV}\,\text{nm} : 605\,\text{nm} \approx 2{,}0\,\text{eV}$.
+**Järkevyys:** Elektronivoltteina energia on täsmälleen $1{,}95\,\text{eV}$, koska $1\,\text{eV}$ on energia, jonka elektroni saa $1\,\text{V}$:n jännitteessä. Se on oranssin valon fotonin energian suuruusluokkaa: $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 605\,\text{nm} &\approx 2{,}0\,\text{eV}
+\end{aligned}
+$$.
 
 ## fy8-6-L1-02
 **Annettu:** aallonpituus $\lambda = 525\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
@@ -14,9 +18,19 @@
 **Periaate:** Valon energia on kvantittunut fotoneiksi, ja yhden fotonin energia on $E = hf$. Taajuus saadaan aallonpituudesta, koska valo etenee nopeudella $c = f\lambda$.
 **Kaava:** $E = hf$ ja $f = \dfrac{c}{\lambda}$, joten $E = \dfrac{hc}{\lambda}$
 **Muunnokset:** $\lambda = 525\,\text{nm} = 525 \cdot 10^{-9}\,\text{m}$; tulos jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{525 \cdot 10^{-9}\,\text{m}} = 3{,}7838 \cdot 10^{-19}\,\text{J} = \dfrac{3{,}7838 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 2{,}362\,\text{eV}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{525 \cdot 10^{-9}\,\text{m}} = 3{,}7838 \cdot 10^{-19}\,\text{J} = \dfrac{3{,}7838 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 2{,}362\,\text{eV}$
 **Vastaus:** $2{,}36\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituudessa $525\,\text{nm}$.
-**Järkevyys:** Pyöreillä luvuilla $1240\,\text{eV}\,\text{nm} : 525\,\text{nm} \approx 2{,}4\,\text{eV}$. Vihreä valo on näkyvän alueen keskellä, ja sen fotonin energia on punaisen, noin $2{,}0\,\text{eV}$, ja violetin, noin $3{,}1\,\text{eV}$, välissä.
+**Järkevyys:** Pyöreillä luvuilla $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 525\,\text{nm} &\approx 2{,}4\,\text{eV}
+\end{aligned}
+$$. Vihreä valo on näkyvän alueen keskellä, ja sen fotonin energia on punaisen, noin $2{,}0\,\text{eV}$, ja violetin, noin $3{,}1\,\text{eV}$, välissä.
 
 ## fy8-6-L1-03
 **Annettu:** aallonpituus $\lambda = 650\,\text{nm}$, valon nopeus $c = 2{,}998 \cdot 10^8\,\text{m/s}$
@@ -34,9 +48,19 @@
 **Periaate:** LEDissä elektroni putoaa johtavuusvyöstä valenssivyön aukkoon ja luovuttaa energiansa yhtenä fotonina. Fotonin energia on likimain energia-aukon suuruinen, $\tfrac{hc}{\lambda} \approx E_\text{g}$.
 **Kaava:** $\dfrac{hc}{\lambda} = E_\text{g}$, joten $\lambda = \dfrac{hc}{E_\text{g}}$
 **Muunnokset:** $E_\text{g} = 1{,}42\,\text{eV} = 1{,}42 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}2748 \cdot 10^{-19}\,\text{J}$; tulos metreistä nanometreiksi $1\,\text{m} = 10^{9}\,\text{nm}$
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}2748 \cdot 10^{-19}\,\text{J}} = 8{,}733 \cdot 10^{-7}\,\text{m} = 873{,}3\,\text{nm}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}2748 \cdot 10^{-19}\,\text{J}} = 8{,}733 \cdot 10^{-7}\,\text{m} = 873{,}3\,\text{nm}$
 **Vastaus:** $873\,\text{nm}$, kolme merkitsevää numeroa kuten energia-aukossa $1{,}42\,\text{eV}$.
-**Järkevyys:** Pyöreillä luvuilla $1240\,\text{eV}\,\text{nm} : 1{,}42\,\text{eV} \approx 870\,\text{nm}$. Aallonpituus on yli $700\,\text{nm}$, joten valo on infrapunaa. Se sopii, koska energia-aukko on pienempi kuin punaisen valon fotonin energia, noin $1{,}8\,\text{eV}$.
+**Järkevyys:** Pyöreillä luvuilla $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 1{,}42\,\text{eV} &\approx 870\,\text{nm}
+\end{aligned}
+$$. Aallonpituus on yli $700\,\text{nm}$, joten valo on infrapunaa. Se sopii, koska energia-aukko on pienempi kuin punaisen valon fotonin energia, noin $1{,}8\,\text{eV}$.
 
 ## fy8-6-L1-05
 **Annettu:** sovitetun suoran kulmakerroin $k = 4{,}10 \cdot 10^{-15}\,\text{V}\,\text{s}$, alkeisvaraus $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
@@ -46,7 +70,12 @@
 **Muunnokset:** Ei tarvita: $\text{C} \cdot \text{V}\,\text{s} = \text{J}\,\text{s}$, koska $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
 **Sijoitus:** $h = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}10 \cdot 10^{-15}\,\text{V}\,\text{s} = 6{,}568 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Vastaus:** $6{,}57 \cdot 10^{-34}\,\text{J}\,\text{s}$, kolme merkitsevää numeroa kuten kulmakertoimessa $4{,}10 \cdot 10^{-15}\,\text{V}\,\text{s}$.
-**Järkevyys:** Hyväksytty arvo on $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, ja tulos poikkeaa siitä $(6{,}568 - 6{,}626) : 6{,}626 \approx -0{,}9\,\%$. Kynnysjännitteisiin perustuvassa mittauksessa muutaman prosentin ero on tavallinen, joten tulos on uskottava.
+**Järkevyys:** Hyväksytty arvo on $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, ja tulos poikkeaa siitä $$
+\begin{aligned}
+&(6{,}568 - 6{,}626) : 6{,}626 \\
+&\approx -0{,}9\,\%
+\end{aligned}
+$$. Kynnysjännitteisiin perustuvassa mittauksessa muutaman prosentin ero on tavallinen, joten tulos on uskottava.
 
 ## fy8-6-L2-01
 **Annettu:** aallonpituus $\lambda = 470\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
@@ -54,9 +83,19 @@
 **Periaate:** LED säteilee vasta, kun jokainen elektroni saa jännitelähteeltä vähintään likimain yhden fotonin energian. Kynnysjännitteellä elektronin energia $eU_\text{k}$ on fotonin energian $\tfrac{hc}{\lambda}$ suuruinen.
 **Kaava:** $eU_\text{k} = \dfrac{hc}{\lambda}$, joten $U_\text{k} = \dfrac{hc}{e\lambda}$
 **Muunnokset:** $\lambda = 470\,\text{nm} = 470 \cdot 10^{-9}\,\text{m}$; $1\,\tfrac{\text{J}}{\text{C}} = 1\,\text{V}$
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $e\lambda = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 470 \cdot 10^{-9}\,\text{m} = 7{,}5294 \cdot 10^{-26}\,\text{C}\,\text{m}$ ja $U_\text{k} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{7{,}5294 \cdot 10^{-26}\,\text{C}\,\text{m}} = 2{,}638\,\text{V}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $e\lambda = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 470 \cdot 10^{-9}\,\text{m} = 7{,}5294 \cdot 10^{-26}\,\text{C}\,\text{m}$ ja $U_\text{k} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{7{,}5294 \cdot 10^{-26}\,\text{C}\,\text{m}} = 2{,}638\,\text{V}$
 **Vastaus:** noin $2{,}64\,\text{V}$, kolme merkitsevää numeroa kuten aallonpituudessa $470\,\text{nm}$.
-**Järkevyys:** Pyöreillä luvuilla $1240\,\text{V}\,\text{nm} : 470\,\text{nm} \approx 2{,}6\,\text{V}$. Jännite on suurempi kuin punaisen LEDin noin $1{,}9\,\text{V}$, koska sinisen valon fotoni tarvitsee enemmän energiaa. Mitattu kynnysjännite on yleensä noin $0{,}1\,\text{V}$ tätä arviota pienempi.
+**Järkevyys:** Pyöreillä luvuilla $$
+\begin{aligned}
+1240\,\text{V}\,\text{nm} : 470\,\text{nm} &\approx 2{,}6\,\text{V}
+\end{aligned}
+$$. Jännite on suurempi kuin punaisen LEDin noin $1{,}9\,\text{V}$, koska sinisen valon fotoni tarvitsee enemmän energiaa. Mitattu kynnysjännite on yleensä noin $0{,}1\,\text{V}$ tätä arviota pienempi.
 
 ## fy8-6-L2-02
 **Annettu:** huippuaallonpituus $\lambda = 605\,\text{nm}$, kynnysjännite $U_\text{k} = 1{,}95\,\text{V}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
@@ -64,9 +103,20 @@
 **Periaate:** Oletetaan, että kynnysjännitteellä elektronin saama energia $eU_\text{k}$ on täsmälleen yhden fotonin energia $\tfrac{hc}{\lambda}$. Yhtälöstä voi ratkaista Planckin vakion.
 **Kaava:** $eU_\text{k} = \dfrac{hc}{\lambda}$, joten $h = \dfrac{eU_\text{k}\lambda}{c}$
 **Muunnokset:** $\lambda = 605\,\text{nm} = 605 \cdot 10^{-9}\,\text{m}$; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
-**Sijoitus:** $eU_\text{k} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}95\,\text{V} = 3{,}1239 \cdot 10^{-19}\,\text{J}$ ja $eU_\text{k}\lambda = 3{,}1239 \cdot 10^{-19}\,\text{J} \cdot 605 \cdot 10^{-9}\,\text{m} = 1{,}8900 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $h = \dfrac{1{,}8900 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 6{,}304 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Sijoitus:** $eU_\text{k} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}95\,\text{V} = 3{,}1239 \cdot 10^{-19}\,\text{J}$ ja $$
+\begin{aligned}
+eU_\text{k}\lambda &= 3{,}1239 \cdot 10^{-19}\,\text{J} \\
+&\cdot 605 \cdot 10^{-9}\,\text{m} \\
+&= 1{,}8900 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $h = \dfrac{1{,}8900 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 6{,}304 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Vastaus:** $6{,}30 \cdot 10^{-34}\,\text{J}\,\text{s}$, kolme merkitsevää numeroa kuten jännitteessä ja aallonpituudessa.
-**Järkevyys:** Tulos on oikeaa suuruusluokkaa, mutta $(6{,}304 - 6{,}626) : 6{,}626 \approx -4{,}9\,\%$ hyväksyttyä arvoa pienempi. Ero johtuu siitä, että mitattu kynnysjännite on hieman pienempi kuin $\tfrac{hf}{e}$. Siksi Planckin vakio määritetään monen LEDin suoran kulmakertoimesta, johon tämä lähes vakiosuuruinen ero ei vaikuta.
+**Järkevyys:** Tulos on oikeaa suuruusluokkaa, mutta $$
+\begin{aligned}
+&(6{,}304 - 6{,}626) : 6{,}626 \\
+&\approx -4{,}9\,\%
+\end{aligned}
+$$ hyväksyttyä arvoa pienempi. Ero johtuu siitä, että mitattu kynnysjännite on hieman pienempi kuin $\tfrac{hf}{e}$. Siksi Planckin vakio määritetään monen LEDin suoran kulmakertoimesta, johon tämä lähes vakiosuuruinen ero ei vaikuta.
 
 ## fy8-6-L2-03
 **Annettu:** virta $I = 20\,\text{mA}$, aallonpituus $\lambda = 630\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$; jokainen elektroni synnyttää yhden fotonin, joka pääsee ulos
@@ -74,7 +124,14 @@
 **Periaate:** Virta kertoo, kuinka paljon varausta kulkee sekunnissa, joten elektronien määrä sekunnissa on $N = \tfrac{I}{e}$. Oletuksen mukaan fotoneja syntyy sekunnissa yhtä monta, ja jokainen vie energian $\tfrac{hc}{\lambda}$. Valoteho on fotonien sekunnissa viemä energia.
 **Kaava:** $N = \dfrac{I}{e}$ ja $P = N \cdot \dfrac{hc}{\lambda}$, joten $P = \dfrac{Ihc}{e\lambda}$
 **Muunnokset:** $I = 20\,\text{mA} = 0{,}020\,\text{A}$, $\lambda = 630\,\text{nm} = 630 \cdot 10^{-9}\,\text{m}$; lopuksi $1\,\text{W} = 1000\,\text{mW}$
-**Sijoitus:** $N = \dfrac{0{,}020\,\text{C/s}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 1{,}2484 \cdot 10^{17}\,\tfrac{1}{\text{s}}$, fotonin energia $\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{630 \cdot 10^{-9}\,\text{m}} = 3{,}1532 \cdot 10^{-19}\,\text{J}$, joten $P = 1{,}2484 \cdot 10^{17}\,\tfrac{1}{\text{s}} \cdot 3{,}1532 \cdot 10^{-19}\,\text{J} = 0{,}03937\,\text{W} = 39{,}4\,\text{mW}$
+**Sijoitus:** $N = \dfrac{0{,}020\,\text{C/s}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 1{,}2484 \cdot 10^{17}\,\tfrac{1}{\text{s}}$, fotonin energia $\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{630 \cdot 10^{-9}\,\text{m}} = 3{,}1532 \cdot 10^{-19}\,\text{J}$, joten $$
+\begin{aligned}
+P &= 1{,}2484 \cdot 10^{17}\,\tfrac{1}{\text{s}} \\
+&\cdot 3{,}1532 \cdot 10^{-19}\,\text{J} \\
+&= 0{,}03937\,\text{W} \\
+&= 39{,}4\,\text{mW}
+\end{aligned}
+$$
 **Vastaus:** noin $39\,\text{mW}$, kaksi merkitsevää numeroa kuten virrassa $20\,\text{mA}$.
 **Järkevyys:** Fotonin energia on noin $2\,\text{eV}$, joten valoteho on noin $2\,\text{V} \cdot 0{,}020\,\text{A} = 40\,\text{mW}$, kuten saatiin. Todellinen LED säteilee tätä vähemmän, koska kaikki elektronit eivät synnytä fotonia ja osa fotoneista absorboituu LEDin sisällä.
 
@@ -95,9 +152,21 @@
 **Kuvaajan lukeminen:** Kun taajuudet lasketaan ja suora sovitetaan Graphical Analysis Prossa valinnoilla **Käyrän sovitus** ja **Lineaarinen**, tulosruudussa on $m = 4{,}212 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}}$ ja $b = -0{,}164\,\text{V}$.
 **Kaava:** $f = \dfrac{c}{\lambda}$ ja $k = \dfrac{h}{e}$, joten $h = ek$
 **Muunnokset:** aallonpituudet metreiksi, esimerkiksi $625\,\text{nm} = 625 \cdot 10^{-9}\,\text{m}$; $\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$
-**Sijoitus:** $f_1 = \dfrac{2{,}998 \cdot 10^8\,\text{m/s}}{625 \cdot 10^{-9}\,\text{m}} = 4{,}797 \cdot 10^{14}\,\text{Hz}$, samoin $f_2 = 5{,}081 \cdot 10^{14}\,\text{Hz}$, $f_3 = 5{,}765 \cdot 10^{14}\,\text{Hz}$ ja $f_4 = 6{,}447 \cdot 10^{14}\,\text{Hz}$. Sovituksen kulmakertoimesta $h = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}212 \cdot 10^{-15}\,\text{V}\,\text{s} = 6{,}748 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Sijoitus:** $f_1 = \dfrac{2{,}998 \cdot 10^8\,\text{m/s}}{625 \cdot 10^{-9}\,\text{m}} = 4{,}797 \cdot 10^{14}\,\text{Hz}$, samoin $f_2 = 5{,}081 \cdot 10^{14}\,\text{Hz}$, $f_3 = 5{,}765 \cdot 10^{14}\,\text{Hz}$ ja $f_4 = 6{,}447 \cdot 10^{14}\,\text{Hz}$. Sovituksen kulmakertoimesta $$
+\begin{aligned}
+h &= 1{,}602 \cdot 10^{-19}\,\text{C} \\
+&\cdot 4{,}212 \cdot 10^{-15}\,\text{V}\,\text{s} \\
+&= 6{,}748 \cdot 10^{-34}\,\text{J}\,\text{s}
+\end{aligned}
+$$
 **Vastaus:** $6{,}75 \cdot 10^{-34}\,\text{J}\,\text{s}$, kolme merkitsevää numeroa kuten kynnysjännitteissä.
-**Järkevyys:** Tarkistus kauimmaisista pisteistä: $(2{,}55\,\text{V} - 1{,}86\,\text{V}) : (1{,}650 \cdot 10^{14}\,\text{Hz}) = 4{,}18 \cdot 10^{-15}\,\text{V}\,\text{s}$, lähellä sovituksen arvoa. Tulos poikkeaa hyväksytystä arvosta $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ noin $+1{,}8\,\%$, mikä on tavallinen tarkkuus tällä menetelmällä.
+**Järkevyys:** Tarkistus kauimmaisista pisteistä: $$
+\begin{aligned}
+&(2{,}55\,\text{V} - 1{,}86\,\text{V}) \\
+&: (1{,}650 \cdot 10^{14}\,\text{Hz}) \\
+&= 4{,}18 \cdot 10^{-15}\,\text{V}\,\text{s}
+\end{aligned}
+$$, lähellä sovituksen arvoa. Tulos poikkeaa hyväksytystä arvosta $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ noin $+1{,}8\,\%$, mikä on tavallinen tarkkuus tällä menetelmällä.
 
 ## fy8-6-L3-02
 **Annettu:** jyrkimmän suoran kulmakerroin $k_\text{max} = 4{,}25 \cdot 10^{-15}\,\text{V}\,\text{s}$, loivimman $k_\text{min} = 3{,}95 \cdot 10^{-15}\,\text{V}\,\text{s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
@@ -105,7 +174,20 @@
 **Periaate:** Jokainen kulmakerroin antaa Planckin vakiolle arvon $h = ek$. Jyrkin ja loivin pisteisiin sopiva suora rajaavat *arvioidun* välin, jolla kulmakerroin todennäköisesti on; epävarmuus arvioidaan puoleksi välin leveydestä.
 **Kaava:** $h_\text{max} = ek_\text{max}$ ja $h_\text{min} = ek_\text{min}$, joten $\Delta h = \dfrac{h_\text{max} - h_\text{min}}{2} = \dfrac{e\,(k_\text{max} - k_\text{min})}{2}$
 **Muunnokset:** Ei tarvita: $\text{C} \cdot \text{V}\,\text{s} = \text{J}\,\text{s}$.
-**Sijoitus:** $k_\text{max} - k_\text{min} = 4{,}25 \cdot 10^{-15}\,\text{V}\,\text{s} - 3{,}95 \cdot 10^{-15}\,\text{V}\,\text{s} = 0{,}30 \cdot 10^{-15}\,\text{V}\,\text{s}$, joten $\Delta h = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 0{,}30 \cdot 10^{-15}\,\text{V}\,\text{s} : 2 = 2{,}403 \cdot 10^{-35}\,\text{J}\,\text{s}$
+**Sijoitus:** $$
+\begin{aligned}
+&k_\text{max} - k_\text{min} \\
+&= 4{,}25 \cdot 10^{-15}\,\text{V}\,\text{s} \\
+&- 3{,}95 \cdot 10^{-15}\,\text{V}\,\text{s} \\
+&= 0{,}30 \cdot 10^{-15}\,\text{V}\,\text{s}
+\end{aligned}
+$$, joten $$
+\begin{aligned}
+\Delta h &= 1{,}602 \cdot 10^{-19}\,\text{C} \\
+&\cdot 0{,}30 \cdot 10^{-15}\,\text{V}\,\text{s} : 2 \\
+&= 2{,}403 \cdot 10^{-35}\,\text{J}\,\text{s}
+\end{aligned}
+$$
 **Vastaus:** $\Delta h \approx 2{,}4 \cdot 10^{-35}\,\text{J}\,\text{s}$, kaksi merkitsevää numeroa kuten kulmakertoimien erotuksessa $0{,}30 \cdot 10^{-15}\,\text{V}\,\text{s}$.
 **Järkevyys:** Keskimmäinen arvo on $e \cdot 4{,}10 \cdot 10^{-15}\,\text{V}\,\text{s} = 6{,}57 \cdot 10^{-34}\,\text{J}\,\text{s}$, joten tulos on $h = (6{,}6 \pm 0{,}2) \cdot 10^{-34}\,\text{J}\,\text{s}$. Epävarmuus on noin $4\,\%$, ja hyväksytty arvo $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ on tällä välillä.
 
@@ -117,7 +199,11 @@
 **Muunnokset:** $P = 15\,\text{mW} = 0{,}015\,\text{W}$, $I = 20\,\text{mA} = 0{,}020\,\text{A}$, $\lambda = 365 \cdot 10^{-9}\,\text{m}$; lopuksi osuus prosenteiksi kertomalla luvulla $100\,\%$
 **Sijoitus:** $N_\text{f} = \dfrac{0{,}015\,\text{J/s} \cdot 365 \cdot 10^{-9}\,\text{m}}{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 2{,}756 \cdot 10^{16}\,\tfrac{1}{\text{s}}$ ja $N_\text{e} = \dfrac{0{,}020\,\text{C/s}}{1{,}602 \cdot 10^{-19}\,\text{C}} = 1{,}2484 \cdot 10^{17}\,\tfrac{1}{\text{s}}$, joten $\dfrac{N_\text{f}}{N_\text{e}} = \dfrac{2{,}756 \cdot 10^{16}}{1{,}2484 \cdot 10^{17}} = 0{,}2208 = 22{,}1\,\%$
 **Vastaus:** noin $22\,\%$, kaksi merkitsevää numeroa kuten tehossa $15\,\text{mW}$ ja virrassa $20\,\text{mA}$.
-**Järkevyys:** Fotonin energia on $1240\,\text{eV}\,\text{nm} : 365\,\text{nm} \approx 3{,}4\,\text{eV}$, joten jos jokainen elektroni synnyttäisi fotonin, säteilyteho olisi noin $3{,}4\,\text{V} \cdot 0{,}020\,\text{A} = 68\,\text{mW}$. Mitattu $15\,\text{mW}$ on siitä noin viidennes, kuten saatiin. Osuus on alle $100\,\%$, kuten pitää.
+**Järkevyys:** Fotonin energia on $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 365\,\text{nm} &\approx 3{,}4\,\text{eV}
+\end{aligned}
+$$, joten jos jokainen elektroni synnyttäisi fotonin, säteilyteho olisi noin $3{,}4\,\text{V} \cdot 0{,}020\,\text{A} = 68\,\text{mW}$. Mitattu $15\,\text{mW}$ on siitä noin viidennes, kuten saatiin. Osuus on alle $100\,\%$, kuten pitää.
 
 ## fy8-6-L1-06
 **Kysytty:** miksi LED syttyy vasta kynnysjännitteellä
@@ -130,9 +216,19 @@
 **Periaate:** Kynnysjännitteellä elektronin jännitelähteeltä saama energia $eU_\text{k}$ on likimain yhden fotonin energia $\tfrac{hc}{\lambda}$. Yhtälöstä voi ratkaista aallonpituuden, koska valon taajuus ja aallonpituus liittyvät yhtälöön $c = f\lambda$.
 **Kaava:** $eU_\text{k} = \dfrac{hc}{\lambda}$, joten $\lambda = \dfrac{hc}{eU_\text{k}}$
 **Muunnokset:** Ei tarvita muuta kuin tuloksen muunnos metreistä nanometreiksi: $1\,\text{m} = 10^{9}\,\text{nm}$. Tulossa $e \cdot U_\text{k}$ on $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $eU_\text{k} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 2{,}30\,\text{V} = 3{,}6846 \cdot 10^{-19}\,\text{J}$, joten $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}6846 \cdot 10^{-19}\,\text{J}} = 5{,}391 \cdot 10^{-7}\,\text{m} = 539{,}1\,\text{nm}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ ja $eU_\text{k} = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 2{,}30\,\text{V} = 3{,}6846 \cdot 10^{-19}\,\text{J}$, joten $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}6846 \cdot 10^{-19}\,\text{J}} = 5{,}391 \cdot 10^{-7}\,\text{m} = 539{,}1\,\text{nm}$
 **Vastaus:** $539\,\text{nm}$, kolme merkitsevää numeroa kuten kynnysjännitteessä $2{,}30\,\text{V}$.
-**Järkevyys:** Pyöreillä luvuilla $1240\,\text{V}\,\text{nm} : 2{,}30\,\text{V} \approx 539\,\text{nm}$. Aallonpituus on näkyvän valon vihreällä alueella ($500$–$570\,\text{nm}$), kuten LEDin värin mukaan pitääkin olla.
+**Järkevyys:** Pyöreillä luvuilla $$
+\begin{aligned}
+1240\,\text{V}\,\text{nm} : 2{,}30\,\text{V} &\approx 539\,\text{nm}
+\end{aligned}
+$$. Aallonpituus on näkyvän valon vihreällä alueella ($500$–$570\,\text{nm}$), kuten LEDin värin mukaan pitääkin olla.
 
 ## fy8-6-L1-08
 **Annettu:** virta $I = 10{,}0\,\text{mA}$, alkeisvaraus $e = 1{,}602 \cdot 10^{-19}\,\text{C}$
@@ -153,7 +249,12 @@
 **Muunnokset:** Ei tarvita kohdassa b); kohdassa c) $\lambda = 650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$ ja $1\,\tfrac{\text{J}}{\text{C}} = 1\,\text{V}$.
 **Sijoitus:** Sovitetun suoran kautta kulkee pisteiden keskipiste $(2{,}10\,\text{V};\ 14{,}92\,\text{mA})$, joten $U_\text{k} = 2{,}10\,\text{V} - \dfrac{14{,}92\,\text{mA}}{61{,}5\,\text{mA/V}} = 2{,}10\,\text{V} - 0{,}243\,\text{V} = 1{,}857\,\text{V}$. Vertailu: $\dfrac{hc}{e\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 650 \cdot 10^{-9}\,\text{m}} = 1{,}908\,\text{V}$
 **Vastaus:** $U_\text{k} = 1{,}86\,\text{V}$, kolme merkitsevää numeroa kuten jännitteissä. Mitattu kynnysjännite on noin $0{,}05\,\text{V}$ pienempi kuin $\tfrac{hc}{e\lambda} = 1{,}91\,\text{V}$, mikä on tavallinen pieni ero.
-**Järkevyys:** Punaisen LEDin kynnysjännite on tyypillisesti $1{,}8$–$2{,}0\,\text{V}$, ja tulos on sen sisällä. Tarkistus pisteestä $(2{,}30\,\text{V};\ 27{,}3\,\text{mA})$: $2{,}30\,\text{V} - 27{,}3 : 61{,}5\,\text{V} = 1{,}856\,\text{V}$, sama arvo. Tulos $1{,}86\,\text{V}$ on suurempi kuin jännite $1{,}80\,\text{V}$, jolla virta on vasta $0{,}6\,\text{mA}$: suoran jatke leikkaa jänniteakselin kaarevan alkuosan jälkeen.
+**Järkevyys:** Punaisen LEDin kynnysjännite on tyypillisesti $1{,}8$–$2{,}0\,\text{V}$, ja tulos on sen sisällä. Tarkistus pisteestä $(2{,}30\,\text{V};\ 27{,}3\,\text{mA})$: $$
+\begin{aligned}
+&2{,}30\,\text{V} - 27{,}3 : 61{,}5\,\text{V} \\
+&= 1{,}856\,\text{V}
+\end{aligned}
+$$, sama arvo. Tulos $1{,}86\,\text{V}$ on suurempi kuin jännite $1{,}80\,\text{V}$, jolla virta on vasta $0{,}6\,\text{mA}$: suoran jatke leikkaa jänniteakselin kaarevan alkuosan jälkeen.
 
 ## fy8-6-L2-06
 **Annettu:** huippuaallonpituus $\lambda = 630\,\text{nm}$; kynnysjännitteet Aino $1{,}74\,\text{V}$, Eero $1{,}88\,\text{V}$, Salla $2{,}04\,\text{V}$; $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, hyväksytty $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$
@@ -162,7 +263,19 @@
 **Kuvaajan lukeminen:** Taulukon jännitteet on luettu samasta kuvaajasta $(U, I)$: Aino luki jännitteen kuvaajan kaarevasta alusta kohdasta $I = 0{,}1\,\text{mA}$, Eero suoran osan jatkeesta kohdasta $I = 0$ ja Salla suoran osan yläpäästä kohdasta $I = 10\,\text{mA}$. Luetut jännitteet ovat $1{,}74\,\text{V}$, $1{,}88\,\text{V}$ ja $2{,}04\,\text{V}$.
 **Kaava:** $h = \dfrac{eU_\text{k}\lambda}{c}$ ja poikkeama $\dfrac{h - h_0}{h_0} \cdot 100\,\%$, missä $h_0 = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Muunnokset:** $\lambda = 630\,\text{nm} = 630 \cdot 10^{-9}\,\text{m}$; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
-**Sijoitus:** Ainon arvolle $eU_\text{k}\lambda = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}74\,\text{V} \cdot 630 \cdot 10^{-9}\,\text{m} = 1{,}7561 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $h = \dfrac{1{,}7561 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 5{,}858 \cdot 10^{-34}\,\text{J}\,\text{s}$, Eeron arvo samoin $6{,}329 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja Sallan arvolle $eU_\text{k}\lambda = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 2{,}04\,\text{V} \cdot 630 \cdot 10^{-9}\,\text{m} = 2{,}0589 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $h = \dfrac{2{,}0589 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 6{,}868 \cdot 10^{-34}\,\text{J}\,\text{s}$. Sallan poikkeama on $\dfrac{6{,}868 - 6{,}626}{6{,}626} \cdot 100\,\% = 3{,}65\,\%$.
+**Sijoitus:** Ainon arvolle $$
+\begin{aligned}
+eU_\text{k}\lambda &= 1{,}602 \cdot 10^{-19}\,\text{C} \\
+&\cdot 1{,}74\,\text{V} \cdot 630 \cdot 10^{-9}\,\text{m} \\
+&= 1{,}7561 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $h = \dfrac{1{,}7561 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 5{,}858 \cdot 10^{-34}\,\text{J}\,\text{s}$, Eeron arvo samoin $6{,}329 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja Sallan arvolle $$
+\begin{aligned}
+eU_\text{k}\lambda &= 1{,}602 \cdot 10^{-19}\,\text{C} \\
+&\cdot 2{,}04\,\text{V} \cdot 630 \cdot 10^{-9}\,\text{m} \\
+&= 2{,}0589 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $h = \dfrac{2{,}0589 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 6{,}868 \cdot 10^{-34}\,\text{J}\,\text{s}$. Sallan poikkeama on $\dfrac{6{,}868 - 6{,}626}{6{,}626} \cdot 100\,\% = 3{,}65\,\%$.
 **Vastaus:** Sallan Planckin vakio poikkeaa hyväksytystä arvosta $3{,}65\,\%$ ylöspäin, kolme merkitsevää numeroa kuten jännitteissä. Muut tulokset ovat Ainolla $5{,}86 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-11{,}6\,\%$) ja Eerolla $6{,}33 \cdot 10^{-34}\,\text{J}\,\text{s}$ ($-4{,}5\,\%$). Kohta b): Ainon ja Sallan lukutavat ovat virheellisiä, koska tulos riippuu valitusta virrasta. Ainon lukema on liian pieni, koska virta $0{,}1\,\text{mA}$ kulkee jo ennen suoran jatkeen antamaa kynnystä, ja Sallan liian suuri, koska virralla $10\,\text{mA}$ elektronit tarvitsevat kynnyksen lisäksi jännitettä virran kasvattamiseen. Eeron lukutapa ei riipu valitusta virrasta. Sallan arvo osuu sattumalta lähemmäs hyväksyttyä arvoa, koska hänen ylimääräinen noin $0{,}16\,\text{V}$ kumoaa osan siitä, että kynnysjännite on yleensä noin $0{,}1\,\text{V}$ pienempi kuin $\tfrac{hf}{e}$. Lähellä taulukkoarvoa oleva tulos ei todista lukutapaa oikeaksi; suoran jatkeen jäljelle jäävä ero poistuu kulmakertoimesta.
 **Järkevyys:** Eeron $h$ poikkeaa hyväksytystä arvosta silti $-4{,}5\,\%$, ja ero on juuri luvun mainitsema noin $0{,}1\,\text{V}$ ($\tfrac{hc}{e\lambda} = 1{,}97\,\text{V}$ ja Eeron $1{,}88\,\text{V}$), joten sitä ei pidä pitää virheellisenä lukutapana. Suunta täsmää: $5{,}86 < 6{,}33 < 6{,}87$ vastaa jännitteiden järjestystä $1{,}74\,\text{V} < 1{,}88\,\text{V} < 2{,}04\,\text{V}$.
 
@@ -225,13 +338,32 @@ Muut johtopäätökset eivät ole perusteltuja. Suoran ei tarvitse kulkea origon
 **Kuvaajan lukeminen:** Taajuudet ovat $4{,}759$, $5{,}081$, $5{,}260$, $5{,}710$ ja $6{,}447$ yksikössä $10^{14}\,\text{Hz}$. Sovitus kaikkiin viiteen mitattuun pisteeseen antaa kulmakertoimen $m = 4{,}208 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja leikkauskohdan $b = -0{,}062\,\text{V}$. Korjattujen jännitteiden $U = U_\text{mitattu} - 0{,}05\,\text{V}$ sovitus antaa saman kulmakertoimen $4{,}208 \cdot 10^{-15}\,\text{V}\,\text{s}$ ja leikkauskohdan $-0{,}112\,\text{V}$.
 **Kaava:** $f = \dfrac{c}{\lambda}$, $k = \dfrac{h}{e}$, joten $h = ek$. Yhden LEDin kaava on $h = \dfrac{eU_\text{k}\lambda}{c}$.
 **Muunnokset:** $\lambda = 630 \cdot 10^{-9}\,\text{m}$ jne.; $\tfrac{\text{V}}{\text{Hz}} = \text{V}\,\text{s}$ ja $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$
-**Sijoitus:** $h = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}208 \cdot 10^{-15}\,\text{V}\,\text{s} = 6{,}742 \cdot 10^{-34}\,\text{J}\,\text{s}$, poikkeama $\dfrac{6{,}742 - 6{,}626}{6{,}626} \cdot 100\,\% = 1{,}7\,\%$. Punaisella LEDillä $630\,\text{nm}$ ennen korjausta $eU_\text{k}\lambda = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}93\,\text{V} \cdot 630 \cdot 10^{-9}\,\text{m} = 1{,}9479 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $h = \dfrac{1{,}9479 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 6{,}497 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja korjauksen ($1{,}88\,\text{V}$) jälkeen $6{,}329 \cdot 10^{-34}\,\text{J}\,\text{s}$.
+**Sijoitus:** $$
+\begin{aligned}
+h &= 1{,}602 \cdot 10^{-19}\,\text{C} \\
+&\cdot 4{,}208 \cdot 10^{-15}\,\text{V}\,\text{s} \\
+&= 6{,}742 \cdot 10^{-34}\,\text{J}\,\text{s}
+\end{aligned}
+$$, poikkeama $\dfrac{6{,}742 - 6{,}626}{6{,}626} \cdot 100\,\% = 1{,}7\,\%$. Punaisella LEDillä $630\,\text{nm}$ ennen korjausta $$
+\begin{aligned}
+eU_\text{k}\lambda &= 1{,}602 \cdot 10^{-19}\,\text{C} \\
+&\cdot 1{,}93\,\text{V} \cdot 630 \cdot 10^{-9}\,\text{m} \\
+&= 1{,}9479 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ ja $h = \dfrac{1{,}9479 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 6{,}497 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja korjauksen ($1{,}88\,\text{V}$) jälkeen $6{,}329 \cdot 10^{-34}\,\text{J}\,\text{s}$.
 **Vastaus:** $6{,}74 \cdot 10^{-34}\,\text{J}\,\text{s}$, kolme merkitsevää numeroa kuten jännitteissä; se poikkeaa hyväksytystä arvosta $1{,}7\,\%$. Korjaus muutti leikkauskohdan arvosta $-0{,}062\,\text{V}$ arvoon $-0{,}112\,\text{V}$, mutta ei kulmakerrointa.
 
 Perustelu kulmakertoimelle: nollapistevirhe on vakio, joten kulmakerroin ei riipu siitä ja suoran antama $h$ on sama ennen korjausta ja sen jälkeen. Yhden LEDin $h$ taas muuttuu: nollapistevirhe $0{,}05\,\text{V}$ on noin $2{,}6\,\%$ jännitteestä $1{,}93\,\text{V}$, ja punaisen LEDin tulos muuttuu saman verran.
 
 Korjattukin yhden LEDin arvo on $4{,}5\,\%$ liian pieni, koska mitattu kynnysjännite on yleensä hieman pienempi kuin $\tfrac{hf}{e}$; korjattu leikkauskohta $-0{,}112\,\text{V}$ osoittaa tämän noin $0{,}1\,\text{V}$:n eron. Kun ero on lähes sama kaikilla LEDeillä, suoran sovitus poistaa suurimman osan sen vaikutuksesta kulmakertoimeen, joten Planckin vakio määritetään kulmakertoimesta eikä yhdestä LEDistä.
-**Järkevyys:** Kauimmaisista pisteistä $(2{,}64\,\text{V} - 1{,}93\,\text{V}) : (6{,}447 \cdot 10^{14}\,\text{Hz} - 4{,}759 \cdot 10^{14}\,\text{Hz}) = 4{,}21 \cdot 10^{-15}\,\text{V}\,\text{s}$, sama kuin sovituksen kulmakerroin. Korjattu leikkauskohta $-0{,}11\,\text{V}$ on samaa suuruusluokkaa kuin luvussa mainittu ero noin $0{,}1\,\text{V}$.
+**Järkevyys:** Kauimmaisista pisteistä $$
+\begin{aligned}
+&(2{,}64\,\text{V} - 1{,}93\,\text{V}) \\
+&: (6{,}447 \cdot 10^{14}\,\text{Hz} \\
+&- 4{,}759 \cdot 10^{14}\,\text{Hz}) \\
+&= 4{,}21 \cdot 10^{-15}\,\text{V}\,\text{s}
+\end{aligned}
+$$, sama kuin sovituksen kulmakerroin. Korjattu leikkauskohta $-0{,}11\,\text{V}$ on samaa suuruusluokkaa kuin luvussa mainittu ero noin $0{,}1\,\text{V}$.
 
 ## fy8-6-L3-05
 **Annettu:** kalibrointisuora $U_\text{k} = kf + b$, $k = 4{,}15 \cdot 10^{-15}\,\text{V}\,\text{s}$, $b = -0{,}10\,\text{V}$; tuntemattoman LEDin $U_\text{k} = 2{,}46\,\text{V}$ ($\pm 0{,}05\,\text{V}$), spektrometrin huippu $483\,\text{nm}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$

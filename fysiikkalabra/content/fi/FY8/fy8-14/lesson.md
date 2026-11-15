@@ -445,7 +445,20 @@ Kun positroni ja elektroni annihiloituvat lähes levossa, niiden yhteinen massa 
 E_\gamma = m_e c^2
 ```
 
-missä $E_\gamma$ on yhden fotonin energia ($\text{J}$), $m_e = 9{,}109 \cdot 10^{-31}\,\text{kg}$ elektronin ja positronin massa ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ valon nopeus. Sijoittamalla saadaan $E_\gamma = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2 = 8{,}187 \cdot 10^{-14}\,\text{J}$. Kun sijoitetaan $1\,\text{J} = \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV}$, saadaan $E_\gamma = 8{,}187 \cdot 10^{-14} \cdot \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 5{,}11 \cdot 10^{5}\,\text{eV} = 511\,\text{keV}$. Energia on noin $150\,000$-kertainen näkyvän valon fotoniin verrattuna, ja jokaisessa annihilaatiossa se on sama, joten PET-laite voi hylätä fotonit, joiden energia poikkeaa siitä selvästi, koska ne ovat sironneet matkalla.
+missä $E_\gamma$ on yhden fotonin energia ($\text{J}$), $m_e = 9{,}109 \cdot 10^{-31}\,\text{kg}$ elektronin ja positronin massa ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ valon nopeus. Sijoittamalla saadaan $$
+\begin{aligned}
+E_\gamma &= 9{,}109 \cdot 10^{-31}\,\text{kg} \\
+&\cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2 \\
+&= 8{,}187 \cdot 10^{-14}\,\text{J}
+\end{aligned}
+$$. Kun sijoitetaan $1\,\text{J} = \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV}$, saadaan $$
+\begin{aligned}
+E_\gamma &= 8{,}187 \cdot 10^{-14} \\
+&\cdot \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\
+&= 5{,}11 \cdot 10^{5}\,\text{eV} \\
+&= 511\,\text{keV}
+\end{aligned}
+$$. Energia on noin $150\,000$-kertainen näkyvän valon fotoniin verrattuna, ja jokaisessa annihilaatiossa se on sama, joten PET-laite voi hylätä fotonit, joiden energia poikkeaa siitä selvästi, koska ne ovat sironneet matkalla.
 
 ## Esimerkki
 

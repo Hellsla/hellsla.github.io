@@ -105,7 +105,13 @@ $q = -\tfrac{1}{3}e - \tfrac{2}{3}e = -e$
 **Principle:** The decaying particle is heavier than the products together, and the energy corresponding to the mass difference is released as the kinetic energy of the products ($E = mc^2$). The decay is allowed: the charge $0 = 1 - 1$, the baryon number $1 = 1 + 0$ and the lepton number $0 = 0 + 0$ are conserved.
 **Formula:** $Q = (m_\text{initial} - m_\text{final})\,c^2$, so $Q = (m_\Lambda - m_p - m_\pi)\,c^2$
 **Conversions:** Not needed: the masses are in the unit $\tfrac{\text{MeV}}{c^2}$, so $c^2$ cancels.
-**Substitution:** $Q = (1115.683 - 938.272 - 139.570)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 37.841\,\text{MeV}$
+**Substitution:** $$
+\begin{aligned}
+Q &= (1115.683 - 938.272 \\
+&- 139.570)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&= 37.841\,\text{MeV}
+\end{aligned}
+$$
 **Answer:** $37.84\,\text{MeV}$; the masses are given to the precision of a thousandth, so $37.841\,\text{MeV}$ is accepted too.
 **Reasonableness:** Rounded, $1116 - 938 - 140 = 38$, close to the result. The energy is positive, so the decay is possible as far as energy is concerned, and it is only about $3\,\%$ of the rest energy of the lambda, because the products are almost as heavy.
 
@@ -115,7 +121,14 @@ $q = -\tfrac{1}{3}e - \tfrac{2}{3}e = -e$
 **Principle:** In pair production the masses of the electron and the positron are made from the energy of the photon, so the energy of the photon must be at least the sum of their rest energies. The energy of a photon is $\tfrac{hc}{\lambda}$, so the smallest energy corresponds to the greatest wavelength.
 **Formula:** $E = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{E}$
 **Conversions:** $E = 2 \cdot 0.511 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.6372 \cdot 10^{-13}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
-**Substitution:** $\lambda = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{1.6372 \cdot 10^{-13}\,\text{J}} = 1.2133 \cdot 10^{-12}\,\text{m} = 1.2133\,\text{pm}$
+**Substitution:** $$
+\begin{aligned}
+\lambda &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{1.6372 \cdot 10^{-13}\,\text{J}} \\
+&= 1.2133 \cdot 10^{-12}\,\text{m} \\
+&= 1.2133\,\text{pm}
+\end{aligned}
+$$
 **Answer:** $1.21\,\text{pm}$, three significant figures like the rest energy $0.511\,\text{MeV}$.
 **Reasonableness:** The wavelength of a gamma photon is of the order of picometres, like that of the gamma radiation in the chapter *The atomic nucleus and radioactive decay*. A photon with a longer wavelength is not enough to make a pair, because its energy is smaller than $1.022\,\text{MeV}$.
 
@@ -160,7 +173,13 @@ The number of yes rows is $N = 5$.
 ## fy8-15-L2-07
 **Asked:** what is wrong in the student’s claim “a free neutron is stable, because it is an elementary particle”.
 **Principle:** An elementary particle has no parts, but the neutron is made of three quarks $u\,d\,d$. A particle can decay if charge, baryon number and lepton number are conserved and the mass of the particles produced is smaller.
-**Model answer:** The mistake is the starting assumption: the neutron is not an elementary particle but is made of quarks, and in the weak interaction its $d$ quark can turn into a $u$ quark. The neutron decays by the reaction $n \to p + e^- + \bar{\nu}_e$, and the energy released is $(939.565 - 938.272 - 0.511)\,\text{MeV} = 0.782\,\text{MeV}$. Some elementary particles do decay (the muon). Decay is decided by the conservation laws and $Q > 0$; the $d$ quark of the neutron can turn into a $u$ quark. The conservation of energy does not prevent the decay of the neutron, and the existence of an antiparticle does not affect it.
+**Model answer:** The mistake is the starting assumption: the neutron is not an elementary particle but is made of quarks, and in the weak interaction its $d$ quark can turn into a $u$ quark. The neutron decays by the reaction $n \to p + e^- + \bar{\nu}_e$, and the energy released is $$
+\begin{aligned}
+&(939.565 - 938.272 \\
+&- 0.511)\,\text{MeV} \\
+&= 0.782\,\text{MeV}
+\end{aligned}
+$$. Some elementary particles do decay (the muon). Decay is decided by the conservation laws and $Q > 0$; the $d$ quark of the neutron can turn into a $u$ quark. The conservation of energy does not prevent the decay of the neutron, and the existence of an antiparticle does not affect it.
 
 ## fy8-15-L3-01
 **Given:** $\Omega^- = s\,s\,s$, $m_\Omega = 1672.45\,\tfrac{\text{MeV}}{c^2}$; $\Lambda^0 = u\,d\,s$, $m_\Lambda = 1115.683\,\tfrac{\text{MeV}}{c^2}$; $\Sigma^0 = u\,d\,s$, $m_\Sigma = 1192.642\,\tfrac{\text{MeV}}{c^2}$; $K^- = s\,\bar{u}$, $m_K = 493.677\,\tfrac{\text{MeV}}{c^2}$; $\pi^0$ an uncharged meson, $m_\pi = 134.977\,\tfrac{\text{MeV}}{c^2}$
@@ -168,7 +187,20 @@ The number of yes rows is $N = 5$.
 **Principle:** A reaction is possible only if the charge, the baryon number and the lepton number are conserved and the energy released is positive, because a particle at rest cannot produce products heavier than itself. The charges and baryon numbers are calculated from the quarks. There are no leptons, so $L = 0$ everywhere. Charges: $\Omega^-$: $3 \cdot \left(-\tfrac{1}{3}\right)e = -e$; $\Lambda^0$ and $\Sigma^0$: $\left(\tfrac{2}{3} - \tfrac{1}{3} - \tfrac{1}{3}\right)e = 0$; $K^-$: $\left(-\tfrac{1}{3} - \tfrac{2}{3}\right)e = -e$. The baryon number is $\tfrac{3 - 0}{3} = 1$ for baryons and $\tfrac{1 - 1}{3} = 0$ for mesons.
 **Formula:** $q_\text{initial} = q_\text{final}$, $B_\text{initial} = B_\text{final}$ and $Q = (m_\text{initial} - m_\text{final})\,c^2 > 0$; for reaction (3) $Q = (m_\Omega - m_\Lambda - m_K)\,c^2$
 **Conversions:** Not needed: the masses are in the unit $\tfrac{\text{MeV}}{c^2}$, so $c^2$ cancels.
-**Substitution:** (1) the charge $-1 = -1 + 0$ is conserved, but the baryon number $1 \ne 0 + 0$, so the reaction is forbidden. (2) the charge $-1 = 0 - 1$ and the baryon number $1 = 1 + 0$ are conserved, but $Q = (1672.45 - 1192.642 - 493.677)\,\text{MeV} = -13.869\,\text{MeV} < 0$, so the energy is not enough. (3) the charge $-1 = 0 - 1$ and the baryon number $1 = 1 + 0$ are conserved, and $Q = (1672.45 - 1115.683 - 493.677)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 63.090\,\text{MeV}$
+**Substitution:** (1) the charge $-1 = -1 + 0$ is conserved, but the baryon number $1 \ne 0 + 0$, so the reaction is forbidden. (2) the charge $-1 = 0 - 1$ and the baryon number $1 = 1 + 0$ are conserved, but $$
+\begin{aligned}
+Q &= (1672.45 - 1192.642 \\
+&- 493.677)\,\text{MeV} \\
+&= -13.869\,\text{MeV} \\
+&< 0
+\end{aligned}
+$$, so the energy is not enough. (3) the charge $-1 = 0 - 1$ and the baryon number $1 = 1 + 0$ are conserved, and $$
+\begin{aligned}
+Q &= (1672.45 - 1115.683 \\
+&- 493.677)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&= 63.090\,\text{MeV}
+\end{aligned}
+$$
 **Answer:** Reaction (3) $\Omega^- \to \Lambda^0 + K^-$ is possible, and it releases $63.09\,\text{MeV}$, to the precision of a hundredth like the mass of the omega.
 **Reasonableness:** Rounded, $1672 - 1116 - 494 = 62$, close to the result. Reactions (2) and (3) differ only in the mass of the baryon: the lighter $\Lambda^0$ leaves energy over, the heavier $\Sigma^0$ does not. The charge alone does not tell the kind of quarks: $\Delta^- = d\,d\,d$ also has the charge $-e$, but its mass is only about $1232\,\tfrac{\text{MeV}}{c^2}$, because the $d$ quark is lighter than the $s$ quark. The observed $\Omega^-$ most often decays precisely by reaction (3).
 
@@ -178,7 +210,15 @@ The number of yes rows is $N = 5$.
 **Principle:** In annihilation the mass of both the antimatter and the ordinary matter turns into the energy of radiation, so the whole mass $2.0\,\text{g}$ takes part. The equivalence of mass and energy gives the energy.
 **Formula:** $E = mc^2$, where $m = m_\text{anti} + m_\text{matter}$, so $E = (m_\text{anti} + m_\text{matter})\,c^2$
 **Conversions:** $1.0\,\text{g} + 1.0\,\text{g} = 2.0\,\text{g} = 2.0 \cdot 10^{-3}\,\text{kg}$, and $1\,\text{kg} \cdot \tfrac{\text{m}^2}{\text{s}^2} = 1\,\text{J}$.
-**Substitution:** $E = 2.0 \cdot 10^{-3}\,\text{kg} \cdot (2.998 \cdot 10^{8}\,\text{m/s})^2 = 2.0 \cdot 10^{-3}\,\text{kg} \cdot 8.988 \cdot 10^{16}\,\tfrac{\text{m}^2}{\text{s}^2} = 1.798 \cdot 10^{14}\,\text{J}$
+**Substitution:** $$
+\begin{aligned}
+E &= 2.0 \cdot 10^{-3}\,\text{kg} \\
+&\cdot (2.998 \cdot 10^{8}\,\text{m/s})^2 \\
+&= 2.0 \cdot 10^{-3}\,\text{kg} \\
+&\cdot 8.988 \cdot 10^{16}\,\tfrac{\text{m}^2}{\text{s}^2} \\
+&= 1.798 \cdot 10^{14}\,\text{J}
+\end{aligned}
+$$
 **Answer:** $1.8 \cdot 10^{14}\,\text{J}$, two significant figures like the masses $1.0\,\text{g}$.
 **Reasonableness:** By estimate $2 \cdot 10^{-3} \cdot (3 \cdot 10^{8})^2 = 1.8 \cdot 10^{14}$. A common mistake would be to use only the mass of the antimatter, which would give half of the result. The energy corresponds to about $50\,\text{GWh}$, since $1\,\text{GWh} = 3.6 \cdot 10^{12}\,\text{J}$.
 
@@ -213,7 +253,21 @@ a) Charge: at the start $-1 + 1 = 0$ and at the end $0 + 0 = 0$
 Baryon number: at the start $0 + 1 = 1$ and at the end $1 + 0 = 1$
 Net numbers of quarks at the start: $u$: $-1 + 2 = 1$, $d$: $1 + 1 = 2$, $s$: $0$
 Net numbers of quarks at the end: $u$: $1 + 0 = 1$, $d$: $1 + 1 = 2$, $s$: $1 - 1 = 0$, so all agree
-b) $Q = (497.611 - 2 \cdot 139.570)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = (497.611 - 279.140)\,\text{MeV} = 218.471\,\text{MeV}$
+b) $$
+\begin{aligned}
+Q &= (497.611 - 2 \\
+&\cdot 139.570)\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&= (497.611 - 279.140)\,\text{MeV} \\
+&= 218.471\,\text{MeV}
+\end{aligned}
+$$
 c) The uncharged particles $\Lambda^0$ and $K^0$ do not ionise the liquid of the chamber, so they leave no track. They leave a track only when they decay into charged particles at the tip of the V. Charge is conserved, so the particles produced in the decay have opposite charges ($+1$ and $-1$), and the magnetic field bends them in opposite directions.
 **Answer:** $218.471\,\text{MeV}$; the subtraction has thousandths, so the result is given to the precision of a thousandth. The reaction $\pi^- + p \to \Lambda^0 + K^0$ conserves everything that was checked, and the absence of a track and the opposite curving of the arms are explained by charge.
-**Reasonableness:** Rounded, $498 - 280 = 218$, close to the result. The energy is positive, so the decay is possible as far as energy is concerned, and it is about $44\,\%$ of the rest energy of the kaon, since $218.5 : 497.6 = 0.439$. The result is greater than the $37.8\,\text{MeV}$ of the decay of the lambda, because the pions are light compared with the kaon. In the collision itself $Q = (139.570 + 938.272 - 1115.683 - 497.611)\,\text{MeV} = -535.452\,\text{MeV}$, so the kinetic energy of the pion pays for the mass of the new particles.
+**Reasonableness:** Rounded, $498 - 280 = 218$, close to the result. The energy is positive, so the decay is possible as far as energy is concerned, and it is about $44\,\%$ of the rest energy of the kaon, since $218.5 : 497.6 = 0.439$. The result is greater than the $37.8\,\text{MeV}$ of the decay of the lambda, because the pions are light compared with the kaon. In the collision itself $$
+\begin{aligned}
+Q &= (139.570 + 938.272 \\
+&- 1115.683 \\
+&- 497.611)\,\text{MeV} \\
+&= -535.452\,\text{MeV}
+\end{aligned}
+$$, so the kinetic energy of the pion pays for the mass of the new particles.

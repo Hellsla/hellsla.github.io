@@ -317,7 +317,7 @@
         },
         {
           "text": "Laskussa olisi pitänyt käyttää millimetrien sijasta senttimetrejä.",
-          "feedback": "Yksiköllä ei ole merkitystä, kunhan paksuus ja puoliintumispaksuus ovat samassa yksikössä: $11\\,\\text{mm} : 5{,}5\\,\\text{mm} = 1{,}1\\,\\text{cm} : 0{,}55\\,\\text{cm} = 2$. Virhe on päättelyssä. Toinen kerros puolittaa vain sen, mikä pääsi ensimmäisen läpi."
+          "feedback": "Yksiköllä ei ole merkitystä, kunhan paksuus ja puoliintumispaksuus ovat samassa yksikössä: $$\n\\begin{aligned}\n11\\,\\text{mm} : 5{,}5\\,\\text{mm} &= 1{,}1\\,\\text{cm} \\\\\n&: 0{,}55\\,\\text{cm} \\\\\n&= 2\n\\end{aligned}\n$$. Virhe on päättelyssä. Toinen kerros puolittaa vain sen, mikä pääsi ensimmäisen läpi."
         }
       ]
     },

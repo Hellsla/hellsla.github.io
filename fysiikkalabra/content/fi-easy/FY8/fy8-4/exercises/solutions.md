@@ -34,7 +34,13 @@
 **Periaate:** Fotonin liikemäärä on sen energia jaettuna valon nopeudella. Fotoni etenee aina nopeudella $c$, eikä sillä ole massaa.
 **Kaava:** $p = \dfrac{E}{c}$, josta $E = pc$
 **Muunnokset:** Ei tarvita. Suureet ovat SI-yksiköissä, ja $\text{kg}\cdot\tfrac{\text{m}}{\text{s}} \cdot \tfrac{\text{m}}{\text{s}} = \text{kg}\cdot\tfrac{\text{m}^2}{\text{s}^2} = \text{J}$.
-**Sijoitus:** $E = 2{,}00 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 5{,}996 \cdot 10^{-19}\,\text{J}$
+**Sijoitus:** $$
+\begin{aligned}
+E &= 2{,}00 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 5{,}996 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$
 **Vastaus:** $6{,}00 \cdot 10^{-19}\,\text{J}$, kolme merkitsevää numeroa kuten liikemäärässä $2{,}00 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$.
 **Järkevyys:** Elektronivoltteina energia on $\tfrac{5{,}996 \cdot 10^{-19}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\text{J}} \cdot 1\,\text{eV} \approx 3{,}7\,\text{eV}$. Fotonin aallonpituus on $\lambda = \tfrac{h}{p} = \tfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{2{,}00 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}} \approx 331\,\text{nm}$. Fotoni kuuluu lähi-ultraviolettiin, vähän näkyvän valon violetin pään ($400\,\text{nm}$) ulkopuolelle. Tulos on järkevä, koska liikemäärä on noin puolitoistakertainen $500\,\text{nm}$:n fotonin liikemäärään verrattuna.
 
@@ -54,7 +60,21 @@
 **Periaate:** Comptonin ilmiössä fotoni törmää lähes vapaaseen elektroniin. Energia säilyy. Elektroni saa siis sen energian, jonka fotoni menettää: $hf = hf' + E_\text{k}$. Fotonien energiat saadaan aallonpituuksista.
 **Kaava:** $\dfrac{hc}{\lambda} = \dfrac{hc}{\lambda'} + E_\text{k}$, josta $E_\text{k} = \dfrac{hc}{\lambda} - \dfrac{hc}{\lambda'}$
 **Muunnokset:** $0{,}0711\,\text{nm} = 0{,}0711 \cdot 10^{-9}\,\text{m}$ ja $0{,}0735\,\text{nm} = 0{,}0735 \cdot 10^{-9}\,\text{m}$. Lopuksi joulet muutetaan elektronivolteiksi: $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $E_\text{k} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{0{,}0711 \cdot 10^{-9}\,\text{m}} - \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{0{,}0735 \cdot 10^{-9}\,\text{m}} = 2{,}7939 \cdot 10^{-15}\,\text{J} - 2{,}7027 \cdot 10^{-15}\,\text{J} = 9{,}123 \cdot 10^{-17}\,\text{J}$ ja elektronivoltteina $E_\text{k} = \dfrac{9{,}123 \cdot 10^{-17}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\text{J}} \cdot 1\,\text{eV} = 569{,}5\,\text{eV}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $$
+\begin{aligned}
+E_\text{k} &= \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{0{,}0711 \cdot 10^{-9}\,\text{m}} \\
+&- \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{0{,}0735 \cdot 10^{-9}\,\text{m}} \\
+&= 2{,}7939 \cdot 10^{-15}\,\text{J} \\
+&- 2{,}7027 \cdot 10^{-15}\,\text{J} \\
+&= 9{,}123 \cdot 10^{-17}\,\text{J}
+\end{aligned}
+$$ ja elektronivoltteina $E_\text{k} = \dfrac{9{,}123 \cdot 10^{-17}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\text{J}} \cdot 1\,\text{eV} = 569{,}5\,\text{eV}$
 **Vastaus:** $5{,}7 \cdot 10^2\,\text{eV}$, kaksi merkitsevää numeroa, koska aallonpituuksien ero $0{,}0024\,\text{nm}$ tunnetaan vain kahden numeron tarkkuudella.
 **Järkevyys:** Tulevan fotonin energia on $\tfrac{2{,}7939 \cdot 10^{-15}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\text{J}} \cdot 1\,\text{eV} \approx 17{,}4\,\text{keV}$. Aallonpituus kasvaa noin $3\,\%$, joten fotoni menettää noin $3\,\%$ energiastaan eli noin $0{,}6\,\text{keV}$. Elektroni saa energiaa, joten tulos on positiivinen.
 
@@ -84,7 +104,13 @@
 **Periaate:** Teho on sekunnissa saapuvien fotonien yhteenlaskettu energia. Jokaisen fotonin energia on $hf = \tfrac{hc}{\lambda}$, koska valo on yhden aallonpituuden valoa.
 **Kaava:** $P = \dfrac{N}{t} \cdot hf$, missä $hf = \dfrac{hc}{\lambda}$, joten $P = \dfrac{N}{t} \cdot \dfrac{hc}{\lambda}$
 **Muunnokset:** $550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$
-**Sijoitus:** $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten $hf = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{550 \cdot 10^{-9}\,\text{m}} = 3{,}6118 \cdot 10^{-19}\,\text{J}$ ja $P = 2{,}40 \cdot 10^4\,\tfrac{1}{\text{s}} \cdot 3{,}6118 \cdot 10^{-19}\,\text{J} = 8{,}668 \cdot 10^{-15}\,\text{W}$
+**Sijoitus:** $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^8\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, joten $hf = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{550 \cdot 10^{-9}\,\text{m}} = 3{,}6118 \cdot 10^{-19}\,\text{J}$ ja $P = 2{,}40 \cdot 10^4\,\tfrac{1}{\text{s}} \cdot 3{,}6118 \cdot 10^{-19}\,\text{J} = 8{,}668 \cdot 10^{-15}\,\text{W}$
 **Vastaus:** $8{,}67 \cdot 10^{-15}\,\text{W}$, kolme merkitsevää numeroa kuten fotonimäärässä $2{,}40 \cdot 10^4$ ja aallonpituudessa $550\,\text{nm}$.
 **Järkevyys:** Teho on äärimmäisen pieni, yli satatuhatta kertaa pienempi kuin yksi miljardisosa wattia. Tällainen valo on silmälle näkymättömän heikkoa. Tarkistus toisin päin: $\tfrac{8{,}668 \cdot 10^{-15}\,\text{W}}{3{,}6118 \cdot 10^{-19}\,\text{J}} = 2{,}40 \cdot 10^4\,\tfrac{1}{\text{s}}$.
 
@@ -94,7 +120,13 @@
 **Periaate:** Liikemäärä säilyy. Kun atomi imee vastaan tulevan fotonin, atomin liikemäärä pienenee fotonin liikemäärän $\tfrac{h}{\lambda}$ verran. Sen nopeus pienenee silloin määrän $\Delta v = \tfrac{h}{\lambda m}$. Atomi pysähtyy, kun $N$ fotonia on pienentänyt sen liikemäärän $m v_0$ nollaan. Uudelleen lähetetyt fotonit lähtevät satunnaisiin suuntiin, joten ne kumoavat toistensa vaikutuksen keskimäärin.
 **Kaava:** $m v_0 = N p$, missä $p = \dfrac{h}{\lambda}$, joten $N = \dfrac{m v_0}{p}$
 **Muunnokset:** $589\,\text{nm} = 589 \cdot 10^{-9}\,\text{m}$
-**Sijoitus:** $p = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{589 \cdot 10^{-9}\,\text{m}} = 1{,}1250 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$ ja $m v_0 = 3{,}82 \cdot 10^{-26}\,\text{kg} \cdot 3{,}00 \cdot 10^2\,\text{m/s} = 1{,}146 \cdot 10^{-23}\,\text{kg}\cdot\text{m/s}$, joten $N = \dfrac{1{,}146 \cdot 10^{-23}\,\text{kg}\cdot\text{m/s}}{1{,}1250 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}} = 1{,}0187 \cdot 10^4$
+**Sijoitus:** $p = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{589 \cdot 10^{-9}\,\text{m}} = 1{,}1250 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}$ ja $$
+\begin{aligned}
+m v_0 &= 3{,}82 \cdot 10^{-26}\,\text{kg} \\
+&\cdot 3{,}00 \cdot 10^2\,\text{m/s} \\
+&= 1{,}146 \cdot 10^{-23}\,\text{kg}\cdot\text{m/s}
+\end{aligned}
+$$, joten $N = \dfrac{1{,}146 \cdot 10^{-23}\,\text{kg}\cdot\text{m/s}}{1{,}1250 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}} = 1{,}0187 \cdot 10^4$
 **Vastaus:** $1{,}02 \cdot 10^4$ fotonia, kolme merkitsevää numeroa kuten massassa, nopeudessa ja aallonpituudessa.
 **Järkevyys:** Yksi fotoni muuttaa atomin nopeutta $\tfrac{1{,}1250 \cdot 10^{-27}\,\text{kg}\cdot\text{m/s}}{3{,}82 \cdot 10^{-26}\,\text{kg}} \approx 0{,}029\,\text{m/s}$. Nopeuden $300\,\text{m/s}$ pysäyttämiseen tarvitaan siis noin $300 : 0{,}029 \approx 10\,000$ fotonia. Atomi voi imeä ja lähettää fotoneja miljoonia kertoja sekunnissa, joten jarrutus kestää vain noin millisekunnin.
 
@@ -103,10 +135,20 @@
 **Kysytty:** sironneen fotonin aallonpituus $\lambda'$ nanometreinä
 **Periaate:** Comptonin ilmiössä energia säilyy. Tulevan fotonin energia jakautuu sironneelle fotonille ja elektronille. Sironneen fotonin energiasta saadaan sen aallonpituus.
 **Kaava:** $\dfrac{hc}{\lambda} = \dfrac{hc}{\lambda'} + E_\text{k}$, josta $\lambda' = \dfrac{hc}{hc/\lambda - E_\text{k}}$
-**Muunnokset:** $0{,}0500\,\text{nm} = 0{,}0500 \cdot 10^{-9}\,\text{m}$ ja $1{,}00\,\text{keV} = 1{,}00 \cdot 10^3 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}602 \cdot 10^{-16}\,\text{J}$
+**Muunnokset:** $0{,}0500\,\text{nm} = 0{,}0500 \cdot 10^{-9}\,\text{m}$ ja $$
+\begin{aligned}
+1{,}00\,\text{keV} &= 1{,}00 \cdot 10^3 \\
+&\cdot 1{,}602 \cdot 10^{-19}\,\text{J} \\
+&= 1{,}602 \cdot 10^{-16}\,\text{J}
+\end{aligned}
+$$
 **Sijoitus:** $\dfrac{hc}{\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{0{,}0500 \cdot 10^{-9}\,\text{m}} = 3{,}9729 \cdot 10^{-15}\,\text{J}$, joten sironneen fotonin energia on $3{,}9729 \cdot 10^{-15}\,\text{J} - 0{,}1602 \cdot 10^{-15}\,\text{J} = 3{,}8127 \cdot 10^{-15}\,\text{J}$ ja $\lambda' = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}8127 \cdot 10^{-15}\,\text{J}} = 5{,}210 \cdot 10^{-11}\,\text{m} = 0{,}05210\,\text{nm}$
 **Vastaus:** $0{,}0521\,\text{nm}$, kolme merkitsevää numeroa kuten aallonpituudessa $0{,}0500\,\text{nm}$ ja energiassa $1{,}00\,\text{keV}$.
-**Järkevyys:** Tulevan fotonin energia on noin $24{,}8\,\text{keV}$. Elektroni saa siitä $1{,}00\,\text{keV}$ eli noin $4\,\%$. Fotonin aallonpituus kasvaa siis noin $4\,\%$: $0{,}0500\,\text{nm} \cdot 1{,}04 = 0{,}0520\,\text{nm}$. Aallonpituus kasvaa, kuten Comptonin ilmiössä pitää.
+**Järkevyys:** Tulevan fotonin energia on noin $24{,}8\,\text{keV}$. Elektroni saa siitä $1{,}00\,\text{keV}$ eli noin $4\,\%$. Fotonin aallonpituus kasvaa siis noin $4\,\%$: $$
+\begin{aligned}
+0{,}0500\,\text{nm} \cdot 1{,}04 &= 0{,}0520\,\text{nm}
+\end{aligned}
+$$. Aallonpituus kasvaa, kuten Comptonin ilmiössä pitää.
 
 ## fy8-4-L3-03
 **Annettu:** siirtymä $n = 3 \to n = 2$, $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, vetyatomin massa $m = 1{,}67 \cdot 10^{-27}\,\text{kg}$, atomi aluksi levossa; $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
@@ -129,7 +171,13 @@
 **Periaate:** Fotonin energia on $E = hf$. Valon taajuus saadaan aallonpituudesta yhtälöllä $c = f\lambda$. Energia on siis kääntäen verrannollinen aallonpituuteen. Mitä lyhyempi aallonpituus, sitä suurempi energia.
 **Kaava:** $E = hf = \dfrac{hc}{\lambda}$
 **Muunnokset:** $405\,\text{nm} = 405 \cdot 10^{-9}\,\text{m}$. Lopuksi muutetaan joulet elektronivolteiksi: $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
-**Sijoitus:** $E = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s}}{405 \cdot 10^{-9}\,\text{m}} = 4{,}905 \cdot 10^{-19}\,\text{J}$ ja elektronivoltteina $E = \dfrac{4{,}905 \cdot 10^{-19}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\text{J}} \cdot 1\,\text{eV} = 3{,}062\,\text{eV}$
+**Sijoitus:** $$
+\begin{aligned}
+&E \\
+&= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s}}{405 \cdot 10^{-9}\,\text{m}} \\
+&= 4{,}905 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$ ja elektronivoltteina $E = \dfrac{4{,}905 \cdot 10^{-19}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\text{J}} \cdot 1\,\text{eV} = 3{,}062\,\text{eV}$
 **Vastaus:** $3{,}06\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituudessa $405\,\text{nm}$.
 **Järkevyys:** Aallonpituuden $500\,\text{nm}$ fotonin energia on noin $2{,}5\,\text{eV}$. Aallonpituus $405\,\text{nm}$ on noin $0{,}81$-kertainen siihen verrattuna. Energia on siis noin $2{,}5\,\text{eV} : 0{,}81 \approx 3{,}1\,\text{eV}$. Violetin valon fotonilla on enemmän energiaa kuin vihreän, kuten pitääkin.
 
@@ -146,7 +194,11 @@
 **Muunnokset:** Ei tarvita. Osumien määrät ovat lukumääriä. Osuus ilmoitetaan prosentteina kertomalla sadalla.
 **Sijoitus:** a) $\dfrac{22}{50} \cdot 100\,\% = 44\,\%$, $\dfrac{248}{500} \cdot 100\,\% = 49{,}6\,\%$ ja $\dfrac{2377}{5000} \cdot 100\,\% = 47{,}5\,\%$. b) $\dfrac{n_4}{n_3} = \dfrac{2377}{208} = 11{,}43$. c) Kun $N = 500$, kirkkailla kaistoilla on $88$, $248$ ja $87$ osumaa. Tummilla on $22$, $18$, $23$ ja $14$. Kun $N = 50$, kirkkailla sivukaistoilla on $6$ ja $7$ osumaa. Tummilla on $3$, $3$, $5$ ja $4$.
 **Vastaus:** b) noin $11$ kertaa (laskettu $11{,}43$). Osumien määrä on satunnainen. Kun osumia on $n$, vaihtelu on suuruusluokkaa $\sqrt{n}$. Siksi $208 \pm 14$ on noin $\pm 7\,\%$. Suhde tunnetaan vain kahden merkitsevän numeron tarkkuudella. c) Raidat erottuvat selvästi, kun $N = 500$. Kirkkaiden kaistojen osumia ($88$, $248$, $87$; vaihtelu noin $\pm 9$ ja $\pm 16$) on moninkertaisesti tummiin verrattuna ($14$–$23$; vaihtelu noin $\pm 4$). Kun $N = 50$, sivukaistojen $6$ ja $7$ ($\pm 2{,}5$) ero tummiin ($3$–$5$; $\pm 2$) on pienempi kuin vaihtelu. Raidat eivät siis erotu.
-**Järkevyys:** Jokaisen sarakkeen osumien summa on $N$, esimerkiksi $3 + 6 + 3 + 22 + 5 + 7 + 4 = 50$. Keskikaistan osuus pysyy noin puolessa kaikista osumista ($44\,\%$, $49{,}6\,\%$, $47{,}5\,\%$). Se heilahtelee eniten, kun $N$ on pieni. Jos fotonit kulkisivat kuulien tavoin, tummille kaistoille tulisi suunnilleen yhtä paljon osumia kuin kirkkaille sivukaistoille. Tummia raitoja ei syntyisi. Nyt tummille kaistoille tulee vain noin $4\,\%$ osumista (esimerkiksi $\tfrac{208}{5000} = 4{,}2\,\%$).
+**Järkevyys:** Jokaisen sarakkeen osumien summa on $N$, esimerkiksi $$
+\begin{aligned}
+3 + 6 + 3 + 22 + 5 + 7 + 4 &= 50
+\end{aligned}
+$$. Keskikaistan osuus pysyy noin puolessa kaikista osumista ($44\,\%$, $49{,}6\,\%$, $47{,}5\,\%$). Se heilahtelee eniten, kun $N$ on pieni. Jos fotonit kulkisivat kuulien tavoin, tummille kaistoille tulisi suunnilleen yhtä paljon osumia kuin kirkkaille sivukaistoille. Tummia raitoja ei syntyisi. Nyt tummille kaistoille tulee vain noin $4\,\%$ osumista (esimerkiksi $\tfrac{208}{5000} = 4{,}2\,\%$).
 
 ## fy8-4-L2-06
 **Annettu:** tulevan säteilyn aallonpituus $\lambda = 71{,}10\,\text{pm}$ ja sironneen säteilyn aallonpituudet $\lambda'$ kulmilla $\theta = 30\,{}^\circ$, $60\,{}^\circ$, $90\,{}^\circ$, $120\,{}^\circ$ ja $150\,{}^\circ$ (taulukko)
@@ -165,7 +217,13 @@
 **Periaate:** Teho on sekunnissa lähtevien fotonien energia yhteensä. Siksi $\tfrac{N}{t} = \tfrac{P}{hf}$ ja $hf = \tfrac{hc}{\lambda}$. Kaavassa aallonpituus on metreinä, koska $h$ ja $c$ ovat SI-yksiköissä.
 **Kaava:** $\dfrac{N}{t} = \dfrac{P}{hf}$, missä $hf = \dfrac{hc}{\lambda}$, joten $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$
 **Muunnokset:** Oppilas sijoitti aallonpituuden nanometreinä: $633\,\text{nm} = 633 \cdot 10^{-9}\,\text{m}$. Virhe on $10^{-9}$-kertainen fotonin energiassa. Teho: $2{,}0\,\text{mW} = 2{,}0 \cdot 10^{-3}\,\text{W}$.
-**Sijoitus:** $hf = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s}}{633 \cdot 10^{-9}\,\text{m}} = 3{,}138 \cdot 10^{-19}\,\text{J}$ ja $\dfrac{N}{t} = \dfrac{2{,}0 \cdot 10^{-3}\,\text{J/s}}{3{,}138 \cdot 10^{-19}\,\text{J}} = 6{,}37 \cdot 10^{15}\,\tfrac{1}{\text{s}}$
+**Sijoitus:** $$
+\begin{aligned}
+&hf \\
+&= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s}}{633 \cdot 10^{-9}\,\text{m}} \\
+&= 3{,}138 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$ ja $\dfrac{N}{t} = \dfrac{2{,}0 \cdot 10^{-3}\,\text{J/s}}{3{,}138 \cdot 10^{-19}\,\text{J}} = 6{,}37 \cdot 10^{15}\,\tfrac{1}{\text{s}}$
 **Vastaus:** a) Oppilas sijoitti aallonpituuden nanometreinä metrien sijaan. Nimittäjässä oli $633$ eikä $633 \cdot 10^{-9}$. Fotonin energia jäi $10^{9}$ kertaa liian pieneksi ($3{,}14 \cdot 10^{-28}\,\text{J}$ oikean arvon $3{,}14 \cdot 10^{-19}\,\text{J}$ sijaan). Fotonien määrä sekunnissa tuli siksi $10^{9}$ kertaa liian suureksi. b) $6{,}4 \cdot 10^{15}\,\tfrac{1}{\text{s}}$, kaksi merkitsevää numeroa kuten tehossa $2{,}0\,\text{mW}$.
 **Järkevyys:** Luvun $1\,\text{mW}$:n laserosoitin lähettää noin $3 \cdot 10^{15}$ fotonia sekunnissa. Teho $2{,}0\,\text{mW}$ antaa siis noin $2 \cdot 3 \cdot 10^{15}\,\tfrac{1}{\text{s}} = 6 \cdot 10^{15}\,\tfrac{1}{\text{s}}$. Se sopii tulokseen. Oppilaan luku $6{,}4 \cdot 10^{24}\,\tfrac{1}{\text{s}}$ olisi miljardi kertaa suurempi. Jo siitä näkee, että luku on väärin.
 
@@ -196,7 +254,13 @@ Oikea perustelu on, että sironneen fotonin energia on pienempi ja fotonin energ
 **Periaate:** Teho on fotonien energia sekunnissa. Rakoihin tulee siis $\tfrac{P}{hf}$ fotonia sekunnissa. Vain osa rakoihin tulevista fotoneista rekisteröidään osumaksi. Ensin $20\,\%$ kulkee rakojen läpi ja osuu ilmaisimeen. Siitä $40\,\%$ rekisteröidään. Osumia tulee siis $0{,}20 \cdot 0{,}40 = 0{,}080$ kertaa rakoihin tulevien fotonien määrä. Fotonit etenevät nopeudella $c$. Niiden väli on sekunnissa kuljettu matka jaettuna fotonien määrällä sekunnissa.
 **Kaava:** $hf = \dfrac{hc}{\lambda}$, $\dfrac{N}{t} = \dfrac{P}{hf}$, rekisteröidyt osumat sekunnissa $r = 0{,}20 \cdot 0{,}40 \cdot \dfrac{N}{t}$, aika $t = \dfrac{5000}{r}$ ja väli $d = \dfrac{c}{N/t}$
 **Muunnokset:** $532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$ sekä $20\,\% = 0{,}20$ ja $40\,\% = 0{,}40$. Teho on jo watteina eli jouleina sekunnissa.
-**Sijoitus:** a) $hf = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s}}{532 \cdot 10^{-9}\,\text{m}} = 3{,}734 \cdot 10^{-19}\,\text{J}$ ja $\dfrac{N}{t} = \dfrac{1{,}5 \cdot 10^{-15}\,\text{J/s}}{3{,}734 \cdot 10^{-19}\,\text{J}} = 4017\,\tfrac{1}{\text{s}}$. b) $r = 0{,}20 \cdot 0{,}40 \cdot 4017\,\tfrac{1}{\text{s}} = 321{,}4\,\tfrac{1}{\text{s}}$. c) $t = \dfrac{5000}{321{,}4\,\tfrac{1}{\text{s}}} = 15{,}56\,\text{s}$. d) $d = \dfrac{2{,}998 \cdot 10^8\,\text{m/s}}{4017\,\tfrac{1}{\text{s}}} = 7{,}46 \cdot 10^{4}\,\text{m}$. Laitteessa, jonka pituus on $1{,}5\,\text{m}$, on siis keskimäärin $\dfrac{1{,}5\,\text{m}}{7{,}46 \cdot 10^{4}\,\text{m}} = 2{,}0 \cdot 10^{-5}$ fotonia.
+**Sijoitus:** a) $$
+\begin{aligned}
+&hf \\
+&= \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^8\,\text{m/s}}{532 \cdot 10^{-9}\,\text{m}} \\
+&= 3{,}734 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$ ja $\dfrac{N}{t} = \dfrac{1{,}5 \cdot 10^{-15}\,\text{J/s}}{3{,}734 \cdot 10^{-19}\,\text{J}} = 4017\,\tfrac{1}{\text{s}}$. b) $r = 0{,}20 \cdot 0{,}40 \cdot 4017\,\tfrac{1}{\text{s}} = 321{,}4\,\tfrac{1}{\text{s}}$. c) $t = \dfrac{5000}{321{,}4\,\tfrac{1}{\text{s}}} = 15{,}56\,\text{s}$. d) $d = \dfrac{2{,}998 \cdot 10^8\,\text{m/s}}{4017\,\tfrac{1}{\text{s}}} = 7{,}46 \cdot 10^{4}\,\text{m}$. Laitteessa, jonka pituus on $1{,}5\,\text{m}$, on siis keskimäärin $\dfrac{1{,}5\,\text{m}}{7{,}46 \cdot 10^{4}\,\text{m}} = 2{,}0 \cdot 10^{-5}$ fotonia.
 **Vastaus:** c) $15{,}6\,\text{s} \approx 16\,\text{s}$, kaksi merkitsevää numeroa kuten tehossa $1{,}5 \cdot 10^{-15}\,\text{W}$. d) Peräkkäisten fotonien väli on noin $75\,\text{km}$. Se on noin $50\,000$ kertaa laitteen pituus. Laitteessa on lähes aina korkeintaan yksi fotoni kerrallaan. Fotonit eivät siis voi törmätä toisiinsa. Raitakuvio syntyy silti. Se ei johdu fotonien keskinäisestä vuorovaikutuksesta. Aalto määrää, kuinka todennäköisesti yksittäinen fotoni osuu mihinkin kohtaan. e) Raitakuvio syntyy, kun aalto kulkee molempien rakojen kautta. Aaltojen yhteisvaikutus määrää osumien todennäköisyyden. Jos mittari paljastaa reitin, fotoni on kulkenut vain toisen raon kautta. Silloin aaltojen yhteisvaikutusta ei ole. Osumat jakautuvat kahden yhden raon kuvion summaksi, eikä tummia raitoja synny. Kuvio vaatii siis sen, ettei reittiä tiedetä. Se ei voi syntyä siitä, että fotoni kulkee vain toisen raon kautta ja sen voi tietää.
 **Järkevyys:** Tarkistus toisin päin: $321{,}4\,\tfrac{1}{\text{s}} \cdot 15{,}56\,\text{s} = 5000$. Rekisteröidyt osumat ovat $0{,}080 \cdot 4017 \approx 321$, noin $8\,\%$ rakoihin tulleista fotoneista. Fotoneja tulee noin $4000$ sekunnissa. Ne tulevat keskimäärin $0{,}25\,\text{ms}$:n välein. Valo kulkee $1{,}5\,\text{m}$:n laitteen läpi vain $5\,\text{ns}$:ssa. Laite on siis lähes aina tyhjä.
 
@@ -205,7 +269,37 @@ Oikea perustelu on, että sironneen fotonin energia on pienempi ja fotonin energ
 **Kysytty:** elektronin liikemäärän suuruus $p_\text{e}$ yksikössä $10^{-23}\,\text{kg}\cdot\text{m/s}$ ja liike-energioiden vertailu
 **Periaate:** Liikemäärä säilyy vektorisuureena: $\overline{p} = \overline{p}' + \overline{p}_e$, joten $\overline{p}_e = \overline{p} - \overline{p}'$. Vektorit $\overline{p}$, $\overline{p}'$ ja $\overline{p}_e$ muodostavat kolmion. Vektorien $\overline{p}$ ja $\overline{p}'$ välinen kulma on sirontakulma $\theta$. Fotonin liikemäärä on $\tfrac{h}{\lambda}$. Myös energia säilyy. Elektronin liike-energia on sama kuin fotonin menettämä energia.
 **Kaava:** $p = \dfrac{h}{\lambda}$, $p' = \dfrac{h}{\lambda'}$ ja kosinilauseella $p_\text{e} = \sqrt{p^2 + p'^2 - 2pp'\cos\theta}$. Liike-energia on $E_\text{k} = \dfrac{p_\text{e}^2}{2m_\text{e}}$ tai $E_\text{k} = \dfrac{hc}{\lambda} - \dfrac{hc}{\lambda'}$.
-**Muunnokset:** $0{,}07110\,\text{nm} = 0{,}07110 \cdot 10^{-9}\,\text{m}$ ja $0{,}07476\,\text{nm} = 0{,}07476 \cdot 10^{-9}\,\text{m}$. Kulmalla $\theta = 120\,{}^\circ$ on $\cos 120\,{}^\circ = -0{,}5$.
-**Sijoitus:** a) $p = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{0{,}07110 \cdot 10^{-9}\,\text{m}} = 9{,}319 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}$ ja $p' = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{0{,}07476 \cdot 10^{-9}\,\text{m}} = 8{,}863 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}$. b) Piirros: vektorikolmion kaksi sivua ovat $p$ ja $p'$. Niiden välinen kulma on $\theta = 120\,{}^\circ$ (vektorit piirretään samasta pisteestä). Kolmas sivu on $p_\text{e}$. Taulukon rivejä $60\,{}^\circ$ ja $90\,{}^\circ$ ei tarvita. Kosinilause: $p_\text{e}^2 = (9{,}319^2 + 8{,}863^2 + 9{,}319 \cdot 8{,}863) \cdot 10^{-48}\,\text{kg}^2\text{m}^2/\text{s}^2 = 2{,}480 \cdot 10^{-46}\,\text{kg}^2\text{m}^2/\text{s}^2$, joten $p_\text{e} = 1{,}575 \cdot 10^{-23}\,\text{kg}\cdot\text{m/s}$. c) Liikemäärästä $E_\text{k} = \dfrac{2{,}480 \cdot 10^{-46}\,\text{kg}^2\text{m}^2/\text{s}^2}{2 \cdot 9{,}109 \cdot 10^{-31}\,\text{kg}} = 1{,}361 \cdot 10^{-16}\,\text{J} = 850\,\text{eV}$. Energian säilymisestä $E_\text{k} = 2{,}794 \cdot 10^{-15}\,\text{J} - 2{,}657 \cdot 10^{-15}\,\text{J} = 1{,}368 \cdot 10^{-16}\,\text{J} = 854\,\text{eV}$.
-**Vastaus:** $1{,}57 \cdot 10^{-23}\,\text{kg}\cdot\text{m/s}$, kolme merkitsevää numeroa. Aallonpituuden muutos $\Delta\lambda = 0{,}07476\,\text{nm} - 0{,}07110\,\text{nm} = 0{,}00366\,\text{nm} = 3{,}66\,\text{pm}$ tunnetaan kolmella numerolla. Liike-energian kaksi arvoa, $850\,\text{eV}$ ja $854\,\text{eV}$, poikkeavat toisistaan vain noin $0{,}5\,\%$. Ne sopivat siis yhteen: liikemäärän säilyminen ja energian säilyminen antavat saman tuloksen. Pieni ero johtuu siitä, että aallonpituuden muutos $3{,}66\,\text{pm}$ tunnetaan vain kolmen numeron tarkkuudella.
+**Muunnokset:** $$
+\begin{aligned}
+&0{,}07110\,\text{nm} \\
+&= 0{,}07110 \cdot 10^{-9}\,\text{m}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+&0{,}07476\,\text{nm} \\
+&= 0{,}07476 \cdot 10^{-9}\,\text{m}
+\end{aligned}
+$$. Kulmalla $\theta = 120\,{}^\circ$ on $\cos 120\,{}^\circ = -0{,}5$.
+**Sijoitus:** a) $p = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{0{,}07110 \cdot 10^{-9}\,\text{m}} = 9{,}319 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}$ ja $p' = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}}{0{,}07476 \cdot 10^{-9}\,\text{m}} = 8{,}863 \cdot 10^{-24}\,\text{kg}\cdot\text{m/s}$. b) Piirros: vektorikolmion kaksi sivua ovat $p$ ja $p'$. Niiden välinen kulma on $\theta = 120\,{}^\circ$ (vektorit piirretään samasta pisteestä). Kolmas sivu on $p_\text{e}$. Taulukon rivejä $60\,{}^\circ$ ja $90\,{}^\circ$ ei tarvita. Kosinilause: $$
+\begin{aligned}
+&p_\text{e}^2 \\
+&= (9{,}319^2 + 8{,}863^2 + 9{,}319 \\
+&\cdot 8{,}863) \cdot 10^{-48}\,\text{kg}^2\text{m}^2/\text{s}^2 \\
+&= 2{,}480 \cdot 10^{-46}\,\text{kg}^2\text{m}^2/\text{s}^2
+\end{aligned}
+$$, joten $p_\text{e} = 1{,}575 \cdot 10^{-23}\,\text{kg}\cdot\text{m/s}$. c) Liikemäärästä $E_\text{k} = \dfrac{2{,}480 \cdot 10^{-46}\,\text{kg}^2\text{m}^2/\text{s}^2}{2 \cdot 9{,}109 \cdot 10^{-31}\,\text{kg}} = 1{,}361 \cdot 10^{-16}\,\text{J} = 850\,\text{eV}$. Energian säilymisestä $$
+\begin{aligned}
+E_\text{k} &= 2{,}794 \cdot 10^{-15}\,\text{J} \\
+&- 2{,}657 \cdot 10^{-15}\,\text{J} \\
+&= 1{,}368 \cdot 10^{-16}\,\text{J} \\
+&= 854\,\text{eV}
+\end{aligned}
+$$.
+**Vastaus:** $1{,}57 \cdot 10^{-23}\,\text{kg}\cdot\text{m/s}$, kolme merkitsevää numeroa. Aallonpituuden muutos $$
+\begin{aligned}
+\Delta\lambda &= 0{,}07476\,\text{nm} - 0{,}07110\,\text{nm} \\
+&= 0{,}00366\,\text{nm} \\
+&= 3{,}66\,\text{pm}
+\end{aligned}
+$$ tunnetaan kolmella numerolla. Liike-energian kaksi arvoa, $850\,\text{eV}$ ja $854\,\text{eV}$, poikkeavat toisistaan vain noin $0{,}5\,\%$. Ne sopivat siis yhteen: liikemäärän säilyminen ja energian säilyminen antavat saman tuloksen. Pieni ero johtuu siitä, että aallonpituuden muutos $3{,}66\,\text{pm}$ tunnetaan vain kolmen numeron tarkkuudella.
 **Järkevyys:** Kolmion sivun $p_\text{e}$ pitää olla suurempi kuin fotonien liikemäärien erotus ja pienempi kuin niiden summa: $0{,}456 \cdot 10^{-23} < 1{,}575 \cdot 10^{-23} < 1{,}818 \cdot 10^{-23}$ (yksikkö $\text{kg}\cdot\text{m/s}$). Kulma $120\,{}^\circ$ on lähellä takaisinsirontaa. Tulos on siksi lähempänä summaa, kuten pitääkin. Elektroni sai noin $850\,\text{eV}$. Se on noin $5\,\%$ tulevan fotonin energiasta $17{,}4\,\text{keV}$ ($E = \dfrac{hc}{\lambda} = 2{,}794 \cdot 10^{-15}\,\text{J}$). Aallonpituus kasvoi myös noin $5\,\%$, joten luvut ovat samaa suuruusluokkaa.

@@ -115,7 +115,7 @@
         {
           "text": "The maximum kinetic energy of the electrons released by lamp A is $0.60\\,\\text{eV}$.",
           "true": true,
-          "feedback": "True: from the photoelectric equation $E_\\text{k,max} = hf - W$, so $E_\\text{k,max} = 3.10\\,\\text{eV} - 2.50\\,\\text{eV}$, that is $0.60\\,\\text{eV}$."
+          "feedback": "True: from the photoelectric equation $E_\\text{k,max} = hf - W$, so $$\n\\begin{aligned}\nE_\\text{k,max} &= 3.10\\,\\text{eV} - 2.50\\,\\text{eV}\n\\end{aligned}\n$$, that is $0.60\\,\\text{eV}$."
         },
         {
           "text": "When the intensity of lamp A is doubled, the maximum kinetic energy is $1.20\\,\\text{eV}$.",

@@ -422,7 +422,12 @@ Tässä $\lambda$ on galaksin valosta mitattu aallonpituus, $\lambda_0$ saman vi
 ```latex
 v = c\,z
 ```
-Tässä $v$ on etääntymisnopeus ja $c = 2{,}998 \cdot 10^{5}\,\text{km/s}$ valon nopeus. Esimerkiksi punasiirtymä $z = 0{,}010$ tarkoittaa nopeutta $v = 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}010 \approx 3000\,\text{km/s}$. Hyvin kaukaisille galakseille punasiirtymä on suuri, eikä yhtälö enää päde.
+Tässä $v$ on etääntymisnopeus ja $c = 2{,}998 \cdot 10^{5}\,\text{km/s}$ valon nopeus. Esimerkiksi punasiirtymä $z = 0{,}010$ tarkoittaa nopeutta $$
+\begin{aligned}
+v &= 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}010 \\
+&\approx 3000\,\text{km/s}
+\end{aligned}
+$$. Hyvin kaukaisille galakseille punasiirtymä on suuri, eikä yhtälö enää päde.
 
 ### Hubblen ja Lemaîtren laki
 Galaksien etäisyyksiä mitataan **megaparsekeina**. Yksi megaparsek on $1\,\text{Mpc} = 3{,}086 \cdot 10^{22}\,\text{m}$. Valo kulkee megaparsekin noin $3{,}26$ miljoonassa vuodessa. Galaksin etääntymisnopeus on nykyhetkellä suoraan verrannollinen sen etäisyyteen:
@@ -555,7 +560,12 @@ Galaksin spektrissä vedyn punainen $\text{H}\alpha$-viiva näkyy aallonpituudel
 
 <!-- vaihe -->
 
-**Järkevyys.** Nopeus on noin $3{,}5\,\%$ valon nopeudesta. Punasiirtymä on siis pieni, ja yhtälö $v = cz$ pätee. Tarkistetaan pyöristetyillä luvuilla: $\tfrac{23}{660} \approx 0{,}035$ ja $0{,}035 \cdot 300\,000\,\text{km/s} \approx 10\,500\,\text{km/s}$. Tulos $70\,\tfrac{\text{km/s}}{\text{Mpc}}$ on sama kuin Hubblen vakion tunnettu arvo.
+**Järkevyys.** Nopeus on noin $3{,}5\,\%$ valon nopeudesta. Punasiirtymä on siis pieni, ja yhtälö $v = cz$ pätee. Tarkistetaan pyöristetyillä luvuilla: $\tfrac{23}{660} \approx 0{,}035$ ja $$
+\begin{aligned}
+&0{,}035 \cdot 300\,000\,\text{km/s} \\
+&\approx 10\,500\,\text{km/s}
+\end{aligned}
+$$. Tulos $70\,\tfrac{\text{km/s}}{\text{Mpc}}$ on sama kuin Hubblen vakion tunnettu arvo.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että alkuräjähdys oli räjähdys tietyssä avaruuden kohdassa. Hän ajattelee myös, että galaksit lentävät siitä poispäin tyhjään avaruuteen. Silloin räjähdyksen keskipiste olisi jossain, ja sieltä katsottuna galaksit loittonisivat eri tavalla kuin muualta katsottuna. Havainnot osoittavat toisin. Miltä suunnalta tahansa katsottuna galaksit loittonevat samalla tavalla, ja taustasäteilyä tulee joka suunnasta lähes yhtä paljon. Laajeneminen ei tapahdu avaruudessa, vaan avaruus itse laajenee. Kaukaisten galaksien väliset etäisyydet kasvavat keskimäärin samassa suhteessa. Laajenemisella ei ole keskipistettä eikä reunaa.

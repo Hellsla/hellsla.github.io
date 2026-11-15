@@ -29,7 +29,7 @@
         {
           "text": "$1.89\\,\\text{eV}$, because the energy of the photon is the difference between the levels.",
           "correct": true,
-          "feedback": "Correct (chapter *Energy levels of the hydrogen atom and the Bohr model*): $hf = E_3 - E_2 = -1.51\\,\\text{eV} + 3.40\\,\\text{eV} = 1.89\\,\\text{eV}$, the red line of hydrogen. In this chapter the same principle is carried over to the atomic nucleus."
+          "feedback": "Correct (chapter *Energy levels of the hydrogen atom and the Bohr model*): $$\n\\begin{aligned}\nhf &= E_3 - E_2 \\\\\n&= -1.51\\,\\text{eV} + 3.40\\,\\text{eV} \\\\\n&= 1.89\\,\\text{eV}\n\\end{aligned}\n$$, the red line of hydrogen. In this chapter the same principle is carried over to the atomic nucleus."
         },
         {
           "text": "$1.51\\,\\text{eV}$, because the photon gets the energy of the starting level.",
@@ -335,7 +335,7 @@
       "tolerance": 0.02,
       "hints": [
         "The energy of a photon is $E_\\gamma = \\tfrac{hc}{\\lambda}$. Solve the wavelength.",
-        "First convert the energy to joules: $140.5 \\cdot 1000 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "First convert the energy to joules: $$\n140.5 \\cdot 1000 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}\n$$.",
         "$\\lambda = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2.2508 \\cdot 10^{-14}\\,\\text{J}}$."
       ],
       "mistakes": [
@@ -344,7 +344,7 @@
           "feedback": "You used electronvolts as the energy instead of kiloelectronvolts: the factor $1000$ is missing. The wavelength of a gamma photon is a thousand times shorter."
         }
       ],
-      "solution": "**Given:** the energy of the gamma photon $E_\\gamma = 140.5\\,\\text{keV}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Find:** the wavelength $\\lambda$ of the photon in picometres\n\n**Principle:** Gamma radiation is electromagnetic radiation, so the energy and the wavelength of its photon are related as for a photon of visible light: the greater the energy, the shorter the wavelength.\n\n**Formula:** $E_\\gamma = \\dfrac{hc}{\\lambda}$, from which $\\lambda = \\dfrac{hc}{E_\\gamma}$\n\n**Conversions:** $E_\\gamma = 140.5\\,\\text{keV} = 140.5 \\cdot 1000 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} = 2.2508 \\cdot 10^{-14}\\,\\text{J}$; finally $1\\,\\text{m} = 10^{12}\\,\\text{pm}$.\n\n**Substitution:** The product $hc = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2.998 \\cdot 10^{8}\\,\\text{m/s} = 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$. $\\lambda = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2.2508 \\cdot 10^{-14}\\,\\text{J}} = 8.8256 \\cdot 10^{-12}\\,\\text{m} = 8.8256\\,\\text{pm}$\n\n**Answer:** $8.826\\,\\text{pm}$ or about $8.83 \\cdot 10^{-12}\\,\\text{m}$, four significant figures like the energy $140.5\\,\\text{keV}$.\n\n**Reasonableness:** The caesium photon of the example, $661.7\\,\\text{keV}$, has about $4.7$ times more energy, and its wavelength of $1.874\\,\\text{pm}$ is about $4.7$ times shorter: $8.83 : 1.874 \\approx 4.7$. The wavelength is much smaller than the size of an atom, $10^{-10}\\,\\text{m} = 100\\,\\text{pm}$, as it should be for gamma radiation.",
+      "solution": "**Given:** the energy of the gamma photon $E_\\gamma = 140.5\\,\\text{keV}$, $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Find:** the wavelength $\\lambda$ of the photon in picometres\n\n**Principle:** Gamma radiation is electromagnetic radiation, so the energy and the wavelength of its photon are related as for a photon of visible light: the greater the energy, the shorter the wavelength.\n\n**Formula:** $E_\\gamma = \\dfrac{hc}{\\lambda}$, from which $\\lambda = \\dfrac{hc}{E_\\gamma}$\n\n**Conversions:** $E_\\gamma = 140.5\\,\\text{keV} = 140.5 \\cdot 1000 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J} = 2.2508 \\cdot 10^{-14}\\,\\text{J}$; finally $1\\,\\text{m} = 10^{12}\\,\\text{pm}$.\n\n**Substitution:** The product $$\n\\begin{aligned}\nhc &= 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\\\\n&\\cdot 2.998 \\cdot 10^{8}\\,\\text{m/s} \\\\\n&= 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}\n\\end{aligned}\n$$. $\\lambda = \\dfrac{1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2.2508 \\cdot 10^{-14}\\,\\text{J}} = 8.8256 \\cdot 10^{-12}\\,\\text{m} = 8.8256\\,\\text{pm}$\n\n**Answer:** $8.826\\,\\text{pm}$ or about $8.83 \\cdot 10^{-12}\\,\\text{m}$, four significant figures like the energy $140.5\\,\\text{keV}$.\n\n**Reasonableness:** The caesium photon of the example, $661.7\\,\\text{keV}$, has about $4.7$ times more energy, and its wavelength of $1.874\\,\\text{pm}$ is about $4.7$ times shorter: $8.83 : 1.874 \\approx 4.7$. The wavelength is much smaller than the size of an atom, $10^{-10}\\,\\text{m} = 100\\,\\text{pm}$, as it should be for gamma radiation.",
       "practice": "Practise calculating the energy and the wavelength of a gamma photon in the tasks of levels 1 and 2."
     },
     {

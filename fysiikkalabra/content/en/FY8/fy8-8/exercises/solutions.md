@@ -34,7 +34,13 @@
 **Principle:** Gamma radiation is electromagnetic radiation, so the energy of a photon is $\tfrac{hc}{\lambda}$, as for a photon of visible light.
 **Formula:** $E_\gamma = \dfrac{hc}{\lambda}$, from which $\lambda = \dfrac{hc}{E_\gamma}$
 **Conversions:** $E_\gamma = 59.54\,\text{keV} = 59.54 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 9.5383 \cdot 10^{-15}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
-**Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{9.5383 \cdot 10^{-15}\,\text{J}} = 2.0826 \cdot 10^{-11}\,\text{m} = 20.826\,\text{pm}$
+**Substitution:** The product $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{9.5383 \cdot 10^{-15}\,\text{J}} = 2.0826 \cdot 10^{-11}\,\text{m} = 20.826\,\text{pm}$
 **Answer:** $20.8\,\text{pm}$, three significant figures; the energy is given with four figures, and $20.83\,\text{pm}$ is just as correct.
 **Reasonableness:** The caesium photon of the example, $661.7\,\text{keV}$, has about $11$ times more energy, and its wavelength of $1.874\,\text{pm}$ is about $11$ times shorter: $20.8 : 1.874 \approx 11$. The wavelength is smaller than the diameter of an atom, about $100\,\text{pm}$.
 
@@ -78,8 +84,23 @@
 **Find:** the wavelength $\lambda$ of the gamma photon in picometres
 **Principle:** The energy of a nucleus is quantised. Energy is conserved, so the energy of the photon that leaves in a transition is the difference between the levels, as in transitions of an atom, and the energy of a photon is $\tfrac{hc}{\lambda}$.
 **Formula:** $\dfrac{hc}{\lambda} = E_\text{u} - E_\text{l}$, from which $\lambda = \dfrac{hc}{E_\text{u} - E_\text{l}}$
-**Conversions:** $E_\text{u} - E_\text{l} = 2505.8\,\text{keV} - 1332.5\,\text{keV} = 1173.3\,\text{keV} = 1173.3 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.8796 \cdot 10^{-13}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
-**Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.8796 \cdot 10^{-13}\,\text{J}} = 1.0568 \cdot 10^{-12}\,\text{m} = 1.0568\,\text{pm}$
+**Conversions:** $$
+\begin{aligned}
+E_\text{u} - E_\text{l} &= 2505.8\,\text{keV} \\
+&- 1332.5\,\text{keV} \\
+&= 1173.3\,\text{keV} \\
+&= 1173.3 \cdot 1000 \\
+&\cdot 1.602 \cdot 10^{-19}\,\text{J} \\
+&= 1.8796 \cdot 10^{-13}\,\text{J}
+\end{aligned}
+$$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
+**Substitution:** The product $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.8796 \cdot 10^{-13}\,\text{J}} = 1.0568 \cdot 10^{-12}\,\text{m} = 1.0568\,\text{pm}$
 **Answer:** $1.06\,\text{pm}$, three significant figures; more precisely $1.057\,\text{pm}$, four figures like the energy difference $1173.3\,\text{keV}$.
 **Reasonableness:** The measured gamma photon is $1173.2\,\text{keV}$, one of the two peaks of the gamma spectrum of cobalt-60; the difference of $0.1\,\text{keV}$ from the level difference $1173.3\,\text{keV}$ comes almost entirely from rounding of the levels (the exact level difference is $1173.24\,\text{keV}$), and the recoil of the nucleus takes only about $0.01\,\text{keV}$. The difference does not change the wavelength at three-figure precision. Its energy is a little smaller than the $1332.5\,\text{keV}$ of the other photon, so the wavelength is a little longer than its $0.931\,\text{pm}$, as it should be.
 
@@ -99,7 +120,18 @@
 **Principle:** The energy of each photon depends only on its wavelength or frequency. The energy of the green photon is calculated from the wavelength, and the comparison is made with one division in the same unit.
 **Formula:** $E_\text{g} = \dfrac{hc}{\lambda}$, and the ratio asked for is $\dfrac{E_\gamma}{E_\text{g}} = \dfrac{E_\gamma \lambda}{hc}$
 **Conversions:** $\lambda = 550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$ and $E_\gamma = 661.7\,\text{keV} = 661.7 \cdot 1000\,\text{eV} = 661\,700\,\text{eV}$; the energy of the green photon is converted to electronvolts by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
-**Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $E_\text{g} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{550 \cdot 10^{-9}\,\text{m}} = 3.6118 \cdot 10^{-19}\,\text{J} = 2.2545\,\text{eV}$ and $661\,700\,\text{eV} : 2.2545\,\text{eV} = 293\,500$
+**Substitution:** The product $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $E_\text{g} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{550 \cdot 10^{-9}\,\text{m}} = 3.6118 \cdot 10^{-19}\,\text{J} = 2.2545\,\text{eV}$ and $$
+\begin{aligned}
+&661\,700\,\text{eV} : 2.2545\,\text{eV} \\
+&= 293\,500
+\end{aligned}
+$$
 **Answer:** about $293\,000$, that is, $2.93 \cdot 10^{5}$ times greater, three significant figures like the wavelength $550\,\text{nm}$.
 **Reasonableness:** An estimate with round numbers: $660\,000\,\text{eV} : 2\,\text{eV} \approx 330\,000$, the same order of magnitude. For this gamma line the difference between the levels of the nucleus is hundreds of thousands of times greater than the differences between the levels of the electrons of an atom, as the theory of the chapter says.
 
@@ -111,7 +143,12 @@
 **Conversions:** None are needed, because the numbers are counts.
 **Substitution:** $A_\text{final} = 232 - 4 = 228$, $Z_\text{final} = 90 - 2 + 1 + 1 = 90$ and $N = 228 - 90 = 138$
 **Answer:** $138$. The result is the exact number of neutrons. The nucleus is thorium-228 ${}^{228}_{90}\text{Th}$.
-**Reasonableness:** The chain is ${}^{232}_{90}\text{Th} \to {}^{228}_{88}\text{Ra} \to {}^{228}_{89}\text{Ac} \to {}^{228}_{90}\text{Th}$. At the end we are in thorium again, but there are four fewer neutrons than at the start ($142 - 4 = 138$): the alpha particle took two, and each beta decay changed one neutron into a proton.
+**Reasonableness:** The chain is $$
+\begin{aligned}
+&{}^{232}_{90}\text{Th} \to {}^{228}_{88}\text{Ra} \to {}^{228}_{89}\text{Ac} \\
+&\to {}^{228}_{90}\text{Th}
+\end{aligned}
+$$. At the end we are in thorium again, but there are four fewer neutrons than at the start ($142 - 4 = 138$): the alpha particle took two, and each beta decay changed one neutron into a proton.
 
 ## fy8-8-L2-05
 **Given:** the numbers $Z$, $N$ of the six nuclei of the table before decay and $Z'$, $N'$ after it
@@ -179,7 +216,13 @@ The correct answer is line 3.
 **Principle:** The energy of every gamma photon is the difference between two levels. The possible transitions are $1.00 \to 0$ ($1.00\,\text{MeV}$), $1.00 \to 0.40$ ($0.60\,\text{MeV}$) and $0.40 \to 0$ ($0.40\,\text{MeV}$). Because $\lambda = \tfrac{hc}{E}$, the shortest wavelength comes from the greatest energy, that is, from the direct transition to the ground state.
 **Formula:** $\dfrac{hc}{\lambda_\text{min}} = E_\text{max}$, from which $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
 **Conversions:** $E_\text{max} = 1.00\,\text{MeV} = 1.00 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.602 \cdot 10^{-13}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
-**Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\lambda_\text{min} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.602 \cdot 10^{-13}\,\text{J}} = 1.2400 \cdot 10^{-12}\,\text{m} = 1.2400\,\text{pm}$
+**Substitution:** The product $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $\lambda_\text{min} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.602 \cdot 10^{-13}\,\text{J}} = 1.2400 \cdot 10^{-12}\,\text{m} = 1.2400\,\text{pm}$
 **Answer:** $1.24\,\text{pm}$, three significant figures like the energy $1.00\,\text{MeV}$.
 **Reasonableness:** The spectrum shows three lines, as any three levels give three transitions. The other two wavelengths are longer: $0.60\,\text{MeV}$ gives $\tfrac{1.24}{0.60}\,\text{pm} \approx 2.1\,\text{pm}$ and $0.40\,\text{MeV}$ about $3.1\,\text{pm}$.
 
@@ -204,7 +247,12 @@ b) Pb-210 $\to$ Pb-206: $n_\alpha = \dfrac{210 - 206}{4} = 1$. The atomic number
 c) In the whole series $n_\alpha = \dfrac{222 - 206}{4} = 4$ and $n_\beta = 82 - 86 + 2 \cdot 4 = 4$. From the table and the calculation of part b): alpha decays $3 + 1 = 4$ and beta minus decays $2 + 2 = 4$.
 d) Four alpha decays would decrease the atomic number by $4 \cdot 2 = 8$ and take it to $86 - 8 = 78$. The atomic number of lead is $82$, so the atomic number has to be raised by $82 - 78 = 4$ by beta minus decays.
 **Answer:** $4$. The number of beta minus decays is an exact integer; there are also $4$ alpha decays, $8$ decays in total. Alpha decays alone would take the atomic number to $78$, so four beta minus decays are needed.
-**Reasonableness:** Check: the mass number $222 - 4 \cdot 4 = 206$ and the atomic number $86 - 2 \cdot 4 + 4 = 82$ balance. At the end of the series ${}^{210}_{82}\text{Pb} \to {}^{210}_{83}\text{Bi} \to {}^{210}_{84}\text{Po} \to {}^{206}_{82}\text{Pb}$ there are two beta decays and one alpha decay.
+**Reasonableness:** Check: the mass number $222 - 4 \cdot 4 = 206$ and the atomic number $86 - 2 \cdot 4 + 4 = 82$ balance. At the end of the series $$
+\begin{aligned}
+&{}^{210}_{82}\text{Pb} \to {}^{210}_{83}\text{Bi} \to {}^{210}_{84}\text{Po} \\
+&\to {}^{206}_{82}\text{Pb}
+\end{aligned}
+$$ there are two beta decays and one alpha decay.
 
 ## fy8-8-L3-05
 **Given:** the measured lines $351.2$, $468.9$, $681.3$, $820.5$ and $1501.4\,\text{keV}$; three excited levels; the nucleus is at first on the top level; the lowest excited level $351.2\,\text{keV}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
@@ -212,8 +260,24 @@ d) Four alpha decays would decrease the atomic number by $4 \cdot 2 = 8$ and tak
 **Principle:** The energy of a gamma photon is the difference between two levels. With three excited levels and the ground state there are six possible transitions, of which five appear in the table. The greatest energy is the transition from the top level to the ground state, and every line has to be a difference between two levels. With the help of the lowest level $351.2\,\text{keV}$ the remaining levels can be solved uniquely. The missing transition is the one that is not in the table.
 **Formula:** $E_\gamma = E_\text{u} - E_\text{l}$ and $\lambda = \dfrac{hc}{E_\gamma}$
 **Conversions:** $E_\text{m} = 1150.2\,\text{keV} = 1150.2 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.8427 \cdot 10^{-13}\,\text{J}$; finally $1\,\text{m} = 10^{12}\,\text{pm}$.
-**Substitution:** a) By the greatest line the top level is $E_3 = 1501.4\,\text{keV}$ and the lowest excited level is $E_1 = 351.2\,\text{keV}$, which is also the smallest line of the table (a transition to the ground state). The third level is obtained from the line $820.5\,\text{keV}$, if it is a transition to the ground state: $E_2 = 820.5\,\text{keV}$. Check with the differences of the levels: $E_2 - E_1 = 820.5 - 351.2 = 469.3$, which is the line $468.9\,\text{keV}$, and $E_3 - E_2 = 1501.4 - 820.5 = 680.9$, which is the line $681.3\,\text{keV}$. All five lines are explained when the measurement uncertainty is less than $0.5\,\text{keV}$. No other order works: if the second level were $681.3\,\text{keV}$, the transition $E_2 - E_1 = 330.1\,\text{keV}$ would be missing from the table and the line $468.9\,\text{keV}$ would remain unexplained.
+**Substitution:** a) By the greatest line the top level is $E_3 = 1501.4\,\text{keV}$ and the lowest excited level is $E_1 = 351.2\,\text{keV}$, which is also the smallest line of the table (a transition to the ground state). The third level is obtained from the line $820.5\,\text{keV}$, if it is a transition to the ground state: $E_2 = 820.5\,\text{keV}$. Check with the differences of the levels: $$
+\begin{aligned}
+E_2 - E_1 &= 820.5 - 351.2 \\
+&= 469.3
+\end{aligned}
+$$, which is the line $468.9\,\text{keV}$, and $$
+\begin{aligned}
+E_3 - E_2 &= 1501.4 - 820.5 \\
+&= 680.9
+\end{aligned}
+$$, which is the line $681.3\,\text{keV}$. All five lines are explained when the measurement uncertainty is less than $0.5\,\text{keV}$. No other order works: if the second level were $681.3\,\text{keV}$, the transition $E_2 - E_1 = 330.1\,\text{keV}$ would be missing from the table and the line $468.9\,\text{keV}$ would remain unexplained.
 b) The missing transition is from the top level to the lowest excited level: $E_\text{m} = E_3 - E_1 = 1501.4 - 351.2 = 1150.2\,\text{keV}$.
-c) $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ and $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.8427 \cdot 10^{-13}\,\text{J}} = 1.0780 \cdot 10^{-12}\,\text{m} = 1.0780\,\text{pm}$
+c) $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ and $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.8427 \cdot 10^{-13}\,\text{J}} = 1.0780 \cdot 10^{-12}\,\text{m} = 1.0780\,\text{pm}$
 **Answer:** $1.08\,\text{pm}$, three significant figures. The levels are $351.2$, $820.5$ and $1501.4\,\text{keV}$ above the ground state, and the energy of the missing line is $1150.2\,\text{keV}$.
 **Reasonableness:** The missing energy $1150.2\,\text{keV}$ is smaller than the greatest line $1501.4\,\text{keV}$ and greater than the line $820.5\,\text{keV}$. So the wavelength is longer than the $0.83\,\text{pm}$ of the greatest line and shorter than the wavelength $1.51\,\text{pm}$ of the line $820.5\,\text{keV}$. The result $1.08\,\text{pm}$ is between these.

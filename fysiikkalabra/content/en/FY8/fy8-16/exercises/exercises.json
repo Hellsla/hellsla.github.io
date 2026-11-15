@@ -210,7 +210,7 @@
     {
       "id": "fy8-16-L2-06",
       "level": 2,
-      "text": "The $\\text{H}\\beta$ line of hydrogen is $486.1\\,\\text{nm}$ in the laboratory and $505.5\\,\\text{nm}$ in the spectrum of a galaxy. The distance of the galaxy is to be calculated when $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ and $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$.\n\nStudent's solution: “The redshift is $z = 0.0399$ and the speed $v = c\\,z = 1.196 \\cdot 10^{4}\\,\\text{km/s}$. The distance is $d = v \\cdot H_0 = 1.196 \\cdot 10^{4} \\cdot 70 = 8.4 \\cdot 10^{5}\\,\\text{Mpc}$.”\n\na) Find the student's error and explain why the result is impossible from the units alone.\n\nb) Calculate the correct distance of the galaxy in megaparsecs.\n\nEnter the result of part b) in the answer field.",
+      "text": "The $\\text{H}\\beta$ line of hydrogen is $486.1\\,\\text{nm}$ in the laboratory and $505.5\\,\\text{nm}$ in the spectrum of a galaxy. The distance of the galaxy is to be calculated when $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ and $c = 2.998 \\cdot 10^{5}\\,\\text{km/s}$.\n\nStudent's solution: “The redshift is $z = 0.0399$ and the speed $v = c\\,z = 1.196 \\cdot 10^{4}\\,\\text{km/s}$. The distance is $$\n\\begin{aligned}\nd &= v \\cdot H_0 \\\\\n&= 1.196 \\cdot 10^{4} \\cdot 70 \\\\\n&= 8.4 \\cdot 10^{5}\\,\\text{Mpc}\n\\end{aligned}\n$$.”\n\na) Find the student's error and explain why the result is impossible from the units alone.\n\nb) Calculate the correct distance of the galaxy in megaparsecs.\n\nEnter the result of part b) in the answer field.",
       "kind": [
         "error"
       ],

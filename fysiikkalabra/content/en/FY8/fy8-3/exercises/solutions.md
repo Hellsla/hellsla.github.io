@@ -24,9 +24,20 @@
 **Principle:** Light consists of photons, and the energy of one photon depends only on the wavelength of the light: the shorter the wavelength, the greater the energy.
 **Formula:** $E = hf = \dfrac{hc}{\lambda}$
 **Conversions:** $\lambda = 486\,\text{nm} = 486 \cdot 10^{-9}\,\text{m}$. Finally the joules are converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$, because $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
-**Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{486 \cdot 10^{-9}\,\text{m}} = 4.0874 \cdot 10^{-19}\,\text{J} = \dfrac{4.0874 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 2.5514\,\text{eV}$
+**Substitution:** The product $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{486 \cdot 10^{-9}\,\text{m}} = 4.0874 \cdot 10^{-19}\,\text{J} = \dfrac{4.0874 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 2.5514\,\text{eV}$
 **Answer:** $2.55\,\text{eV}$, three significant figures, as in the wavelength $486\,\text{nm}$.
-**Reasonableness:** The energies of visible-light photons are about $1.7$–$3.3\,\text{eV}$, and cyan light is in the middle of the spectrum. The result is also the difference between the hydrogen levels $n = 4$ and $n = 2$: $-0.850\,\text{eV} + 3.40\,\text{eV} = 2.55\,\text{eV}$.
+**Reasonableness:** The energies of visible-light photons are about $1.7$–$3.3\,\text{eV}$, and cyan light is in the middle of the spectrum. The result is also the difference between the hydrogen levels $n = 4$ and $n = 2$: $$
+\begin{aligned}
+&-0.850\,\text{eV} + 3.40\,\text{eV} \\
+&= 2.55\,\text{eV}
+\end{aligned}
+$$.
 
 ## fy8-3-L1-04
 **Given:** energy levels of the hydrogen atom $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, atom in state $n = 3$
@@ -54,7 +65,13 @@
 **Principle:** Energy is conserved: the energy of the atom decreases by the difference between the levels, and one photon, with energy $\tfrac{hc}{\lambda}$, carries it away.
 **Formula:** $\dfrac{hc}{\lambda} = E_5 - E_2$, so $\lambda = \dfrac{hc}{E_5 - E_2}$
 **Conversions:** The energy difference is calculated in electron volts and converted to joules by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $E_5 - E_2 = -\dfrac{13.6\,\text{eV}}{25} + \dfrac{13.6\,\text{eV}}{4} = 2.856\,\text{eV} = 2.856 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 4.5753 \cdot 10^{-19}\,\text{J}$ and $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4.5753 \cdot 10^{-19}\,\text{J}} = 4.3417 \cdot 10^{-7}\,\text{m} = 434.17\,\text{nm}$
+**Substitution:** The product $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $E_5 - E_2 = -\dfrac{13.6\,\text{eV}}{25} + \dfrac{13.6\,\text{eV}}{4} = 2.856\,\text{eV} = 2.856 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 4.5753 \cdot 10^{-19}\,\text{J}$ and $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4.5753 \cdot 10^{-19}\,\text{J}} = 4.3417 \cdot 10^{-7}\,\text{m} = 434.17\,\text{nm}$
 **Answer:** $434\,\text{nm}$, three significant figures, as in the value $13.6\,\text{eV}$.
 **Reasonableness:** The transition ends on level $n = 2$, so the line belongs to the Balmer series and is visible light. It is shorter than the line $486\,\text{nm}$ of the transition $4 \to 2$, because the energy difference is larger, and the hydrogen spectrum has a blue line exactly at $434\,\text{nm}$.
 
@@ -64,7 +81,13 @@
 **Principle:** The energy of a photon is the difference between levels. When the energy of the photon and the energy of the lower level are known, the energy of the upper level is their sum, and from it the number of the level.
 **Formula:** $\dfrac{hc}{\lambda} = E_n - E_2$, so $E_n = E_2 + \dfrac{hc}{\lambda}$, and solving from the expression $E_n = -\dfrac{13.6\,\text{eV}}{n^2}$ gives $n = \sqrt{\dfrac{13.6\,\text{eV}}{-E_n}}$
 **Conversions:** $\lambda = 410 \cdot 10^{-9}\,\text{m}$; the energy of the photon is converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$.
-**Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{410 \cdot 10^{-9}\,\text{m}} = 4.8451 \cdot 10^{-19}\,\text{J} = 3.0244\,\text{eV}$, $E_n = -3.40\,\text{eV} + 3.0244\,\text{eV} = -0.3756\,\text{eV}$ and $n = \sqrt{\dfrac{13.6\,\text{eV}}{0.3756\,\text{eV}}} = \sqrt{36.21} = 6.017$
+**Substitution:** The product $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $\dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{410 \cdot 10^{-9}\,\text{m}} = 4.8451 \cdot 10^{-19}\,\text{J} = 3.0244\,\text{eV}$, $E_n = -3.40\,\text{eV} + 3.0244\,\text{eV} = -0.3756\,\text{eV}$ and $n = \sqrt{\dfrac{13.6\,\text{eV}}{0.3756\,\text{eV}}} = \sqrt{36.21} = 6.017$
 **Answer:** $n = 6$. The number of a level is an integer, and the calculated $6.02$ differs from it only by rounding.
 **Reasonableness:** Check in the other direction: $E_6 - E_2 = -0.378\,\text{eV} + 3.40\,\text{eV} = 3.02\,\text{eV}$, which corresponds to the wavelength $410\,\text{nm}$. The violet line is the shortest of the visible Balmer lines, so its upper level must be the highest of these four.
 
@@ -75,7 +98,13 @@
 **Reading the graph:** Level $E_3$ is on the grid line $-3\,\text{eV}$ and level $E_2$ on the line $-5\,\text{eV}$, so $E_3 = -3.0\,\text{eV}$ and $E_2 = -5.0\,\text{eV}$. The energy difference is $E_3 - E_2 = -3.0\,\text{eV} - (-5.0\,\text{eV}) = 2.0\,\text{eV}$.
 **Formula:** $\dfrac{hc}{\lambda} = E_3 - E_2$, so $\lambda = \dfrac{hc}{E_3 - E_2}$
 **Conversions:** $E_3 - E_2 = 2.0\,\text{eV} = 2.0 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.204 \cdot 10^{-19}\,\text{J}$ and finally $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.204 \cdot 10^{-19}\,\text{J}} = 6.2000 \cdot 10^{-7}\,\text{m} = 620.00\,\text{nm}$
+**Substitution:** The product $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.204 \cdot 10^{-19}\,\text{J}} = 6.2000 \cdot 10^{-7}\,\text{m} = 620.00\,\text{nm}$
 **Answer:** $620\,\text{nm}$, that is $6.2 \cdot 10^{2}\,\text{nm}$, two significant figures, because the energy difference $2.0\,\text{eV}$ read from the figure is known to two figures.
 **Reasonableness:** The energy difference $2.0\,\text{eV}$ lies within the range of visible-light photons, $1.7$–$3.3\,\text{eV}$, and $620\,\text{nm}$ is orange-red light. A smaller energy difference than in the red line of hydrogen ($1.89\,\text{eV}$) would give a longer wavelength; here the difference is slightly larger and the wavelength slightly shorter than $656\,\text{nm}$.
 
@@ -85,7 +114,13 @@
 **Principle:** Energy is conserved. Of the energy of the photon, the ionisation energy is used to free the electron, and the rest stays as the kinetic energy of the free electron. In ionisation the energy of the photon does not have to correspond to the difference of any pair of levels, as long as it is at least the ionisation energy.
 **Formula:** $\dfrac{hc}{\lambda} = E_\text{ion} + E_\text{k}$, so $E_\text{k} = \dfrac{hc}{\lambda} - E_\text{ion}$
 **Conversions:** $\lambda = 80.0 \cdot 10^{-9}\,\text{m}$; the energy of the photon is converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$.
-**Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{80.0 \cdot 10^{-9}\,\text{m}} = 2.4831 \cdot 10^{-18}\,\text{J} = 15.500\,\text{eV}$ and $E_\text{k} = 15.500\,\text{eV} - 13.6\,\text{eV} = 1.900\,\text{eV}$
+**Substitution:** The product $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $\dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{80.0 \cdot 10^{-9}\,\text{m}} = 2.4831 \cdot 10^{-18}\,\text{J} = 15.500\,\text{eV}$ and $E_\text{k} = 15.500\,\text{eV} - 13.6\,\text{eV} = 1.900\,\text{eV}$
 **Answer:** $1.9\,\text{eV}$. The difference is given to one decimal place, like the ionisation energy $13.6\,\text{eV}$, so the result has two significant figures.
 **Reasonableness:** The energy of the photon is only a little above the ionisation energy, so the electron is left with a small kinetic energy. Check: the wavelength $80.0\,\text{nm}$ is shorter than the limit of the Lyman series, $91.2\,\text{nm}$, so the photon really can ionise an atom in the ground state.
 
@@ -105,7 +140,13 @@
 **Principle:** The ion has one electron, so its energy is quantised in the same way as in hydrogen, only the energies are greater. Energy is conserved: the energy of the photon is the difference between the levels.
 **Formula:** $\dfrac{hc}{\lambda} = E_4 - E_3$, so $\lambda = \dfrac{hc}{E_4 - E_3}$
 **Conversions:** The energy difference is converted to joules by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$, and finally $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $E_4 - E_3 = -\dfrac{54.4\,\text{eV}}{16} + \dfrac{54.4\,\text{eV}}{9} = 2.6444\,\text{eV} = 2.6444 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 4.2364 \cdot 10^{-19}\,\text{J}$ and $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4.2364 \cdot 10^{-19}\,\text{J}} = 4.6891 \cdot 10^{-7}\,\text{m} = 468.91\,\text{nm}$
+**Substitution:** The product $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $E_4 - E_3 = -\dfrac{54.4\,\text{eV}}{16} + \dfrac{54.4\,\text{eV}}{9} = 2.6444\,\text{eV} = 2.6444 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 4.2364 \cdot 10^{-19}\,\text{J}$ and $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4.2364 \cdot 10^{-19}\,\text{J}} = 4.6891 \cdot 10^{-7}\,\text{m} = 468.91\,\text{nm}$
 **Answer:** $469\,\text{nm}$, three significant figures, as in the value $54.4\,\text{eV}$.
 **Reasonableness:** The levels of the helium ion are four times those of hydrogen, so the energy difference of the transition $4 \to 3$ is four times the corresponding $0.661\,\text{eV}$ of hydrogen, and the wavelength is a quarter of the infrared line of hydrogen, $1876\,\text{nm}$: $1876\,\text{nm} : 4 = 469\,\text{nm}$. The line is blue visible light.
 
@@ -130,7 +171,13 @@
 **Principle:** The smaller the energy of the photon, the longer the wavelength. Of the transitions ending in the ground state, the smallest energy difference is from the nearest level, in the transition $n = 2 \to n = 1$.
 **Formula:** $\dfrac{hc}{\lambda} = E_2 - E_1$, so $\lambda_\text{max} = \dfrac{hc}{E_2 - E_1}$
 **Conversions:** $E_2 - E_1$ is calculated in electron volts and converted to joules by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $E_2 - E_1 = -\dfrac{13.6\,\text{eV}}{4} + 13.6\,\text{eV} = 10.2\,\text{eV} = 10.2 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.6340 \cdot 10^{-18}\,\text{J}$ and $\lambda_\text{max} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.6340 \cdot 10^{-18}\,\text{J}} = 1.2157 \cdot 10^{-7}\,\text{m} = 121.57\,\text{nm}$
+**Substitution:** The product $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $E_2 - E_1 = -\dfrac{13.6\,\text{eV}}{4} + 13.6\,\text{eV} = 10.2\,\text{eV} = 10.2 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.6340 \cdot 10^{-18}\,\text{J}$ and $\lambda_\text{max} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.6340 \cdot 10^{-18}\,\text{J}} = 1.2157 \cdot 10^{-7}\,\text{m} = 121.57\,\text{nm}$
 **Answer:** $122\,\text{nm}$, three significant figures, as in the value $13.6\,\text{eV}$.
 **Reasonableness:** The wavelength is shorter than the lower limit of visible light, about $400\,\text{nm}$, so the line is ultraviolet. The transition $3 \to 1$ gives the energy $12.09\,\text{eV}$ and a shorter wavelength, $102.6\,\text{nm}$, so $122\,\text{nm}$ is the longest of the series.
 
@@ -151,7 +198,15 @@
 **Reading the graph:** The frequencies $f = \tfrac{c}{\lambda}$ are $456.5$; $616.7$; $690.0$ and $730.9\,\text{THz}$ at $\tfrac{1}{n^2} = 0.111$; $0.0625$; $0.0400$ and $0.0278$. The line fitted to the points passes, within the measured range, through the points $(0.0300;\ 723.3\,\text{THz})$ and $(0.1100;\ 460.2\,\text{THz})$, so the slope is $k = \dfrac{460.2\,\text{THz} - 723.3\,\text{THz}}{0.1100 - 0.0300} = -3289\,\text{THz}$.
 **Formula:** $k = -\dfrac{E_\text{ion}}{h}$, so $E_\text{ion} = -h k$
 **Conversions:** $k = -3289\,\text{THz} = -3.289 \cdot 10^{15}\,\text{Hz}$, and joules are converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$.
-**Substitution:** $E_\text{ion} = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 3.289 \cdot 10^{15}\,\text{Hz} = 2.1793 \cdot 10^{-18}\,\text{J} = \dfrac{2.1793 \cdot 10^{-18}}{1.602 \cdot 10^{-19}}\,\text{eV} = 13.60\,\text{eV}$
+**Substitution:** $$
+\begin{aligned}
+E_\text{ion} &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 3.289 \cdot 10^{15}\,\text{Hz} \\
+&= 2.1793 \cdot 10^{-18}\,\text{J} \\
+&= \dfrac{2.1793 \cdot 10^{-18}}{1.602 \cdot 10^{-19}}\,\text{eV} \\
+&= 13.60\,\text{eV}
+\end{aligned}
+$$
 **Answer:** $13.6\,\text{eV}$. The points lie on a straight line because the frequency is a linear function of $\tfrac{1}{n^2}$. Three significant figures; the uncertainty of the wavelengths, $\pm 0.5\,\text{nm}$, is less than $0.2\,\%$ of the wavelength, so it does not limit the third figure.
 **Reasonableness:** Extending the line to the vertical axis is extrapolation outside the measured range, which is allowed because the model is linear. The constant term of the line, $822\,\text{THz}$, corresponds to the energy $h \cdot 822\,\text{THz} = 3.40\,\text{eV}$, which is $\tfrac{13.6\,\text{eV}}{4}$, and the corresponding wavelength $\tfrac{c}{822\,\text{THz}} \approx 365\,\text{nm}$ is the limit of the Balmer series. The result is the same as the ionisation energy of hydrogen from the ground state, known to be $13.6\,\text{eV}$.
 
@@ -162,7 +217,19 @@
 **Reading the graph:** The levels are $E_1 = -8.0\,\text{eV}$, $E_2 = -5.0\,\text{eV}$, $E_3 = -3.0\,\text{eV}$ and $E_4 = -2.0\,\text{eV}$. The differences from the ground state are $E_2 - E_1 = 3.0\,\text{eV}$, $E_3 - E_1 = 5.0\,\text{eV}$ and $E_4 - E_1 = 6.0\,\text{eV}$. Ionisation would need $0 - E_1 = 8.0\,\text{eV}$.
 **Formula:** $E = \dfrac{hc}{\lambda}$
 **Conversions:** $\lambda = 300 \cdot 10^{-9}\,\text{m}$ etc., and joules are converted to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$.
-**Substitution:** The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Photon $300\,\text{nm}$: $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{300 \cdot 10^{-9}\,\text{m} \cdot 1.602 \cdot 10^{-19}\,\text{J/eV}} = 4.13\,\text{eV}$, photon $413\,\text{nm}$: $3.00\,\text{eV}$, photon $500\,\text{nm}$: $2.48\,\text{eV}$, photon $207\,\text{nm}$: $5.99\,\text{eV}$ and photon $248\,\text{nm}$: $5.00\,\text{eV}$. The photons that are absorbed are $413\,\text{nm}$ ($1 \to 2$), $248\,\text{nm}$ ($1 \to 3$) and $207\,\text{nm}$ ($1 \to 4$).
+**Substitution:** The product $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. Photon $300\,\text{nm}$: $$
+\begin{aligned}
+&E \\
+&= \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{300 \cdot 10^{-9}\,\text{m} \cdot 1.602 \cdot 10^{-19}\,\text{J/eV}} \\
+&= 4.13\,\text{eV}
+\end{aligned}
+$$, photon $413\,\text{nm}$: $3.00\,\text{eV}$, photon $500\,\text{nm}$: $2.48\,\text{eV}$, photon $207\,\text{nm}$: $5.99\,\text{eV}$ and photon $248\,\text{nm}$: $5.00\,\text{eV}$. The photons that are absorbed are $413\,\text{nm}$ ($1 \to 2$), $248\,\text{nm}$ ($1 \to 3$) and $207\,\text{nm}$ ($1 \to 4$).
 **Answer:** $3$. The atom absorbs three photons: the photons $413\,\text{nm}$, $248\,\text{nm}$ and $207\,\text{nm}$, because their energies correspond to the differences from the ground state upwards; the photons $300\,\text{nm}$ and $500\,\text{nm}$ do not correspond to any difference.
 **Reasonableness:** The energies of the absorbed photons are below the ionisation energy $8.0\,\text{eV}$, so the atom stays bound. The photon $300\,\text{nm}$ ($4.13\,\text{eV}$) lies between the two allowed differences $3.0\,\text{eV}$ and $5.0\,\text{eV}$, so it passes through the atom.
 
@@ -232,4 +299,9 @@ Ionisation from state $3$ requires $1.5111\,\text{eV} = 1.5111 \cdot 1.602 \cdot
 **Conversions:** The energies of the photons are converted from joules to electron volts by dividing by $1.602 \cdot 10^{-19}\,\text{J}$; finally $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** The product $hc = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. The energies of the lines are $12.09$; $10.20$; $2.551$; $1.889$ and $0.661\,\text{eV}$. They correspond to the differences between pairs of levels $E_3 - E_1 = 12.09\,\text{eV}$, $E_2 - E_1 = 10.20\,\text{eV}$, $E_4 - E_2 = 2.55\,\text{eV}$, $E_3 - E_2 = 1.889\,\text{eV}$ and $E_4 - E_3 = 0.661\,\text{eV}$. So the lines are the transitions $3 \to 1$, $2 \to 1$, $4 \to 2$, $3 \to 2$ and $4 \to 3$. The highest initial level is $n = 4$. From level $n = 5$ there would be lines $\lambda = 95.0$; $434$; $1282$ or $4052\,\text{nm}$, but none of them is in the table, so the atoms were not excited higher than level $n = 4$. The direct transition $4 \to 1$ emits the wavelength of the source, $97.3\,\text{nm}$, which was filtered out, so it is not in the table. The energy of the photon of the source is $E_4 - E_1 = 13.6\,\text{eV} - \dfrac{13.6\,\text{eV}}{16} = 12.75\,\text{eV} = 12.75 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.0426 \cdot 10^{-18}\,\text{J}$ and $\lambda_\text{L} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.0426 \cdot 10^{-18}\,\text{J}} = 9.725 \cdot 10^{-8}\,\text{m} = 97.25\,\text{nm}$
 **Answer:** $97.3\,\text{nm}$, three significant figures, as in the value $13.6\,\text{eV}$.
-**Reasonableness:** The energy of the photon of the source, $12.75\,\text{eV}$, is smaller than the ionisation energy $13.6\,\text{eV}$, so the atoms are not ionised, and the wavelength is shorter than the shortest observed line, $102.6\,\text{nm}$. The sum of the energies of the photons of the cascade $4 \to 3 \to 2 \to 1$ is $0.661\,\text{eV} + 1.889\,\text{eV} + 10.20\,\text{eV} = 12.75\,\text{eV}$, so on returning exactly the absorbed energy is released.
+**Reasonableness:** The energy of the photon of the source, $12.75\,\text{eV}$, is smaller than the ionisation energy $13.6\,\text{eV}$, so the atoms are not ionised, and the wavelength is shorter than the shortest observed line, $102.6\,\text{nm}$. The sum of the energies of the photons of the cascade $4 \to 3 \to 2 \to 1$ is $$
+\begin{aligned}
+&0.661\,\text{eV} + 1.889\,\text{eV} + 10.20\,\text{eV} \\
+&= 12.75\,\text{eV}
+\end{aligned}
+$$, so on returning exactly the absorbed energy is released.

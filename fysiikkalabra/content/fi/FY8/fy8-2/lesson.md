@@ -249,7 +249,13 @@ Neonvalomainoksen spektrissä on voimakas punaoranssi viiva aallonpituudella $64
 
 <!-- vaihe -->
 
-**Sijoitus.** Lasketaan ensin tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja sitten energiaero:
+**Sijoitus.** Lasketaan ensin tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ ja sitten energiaero:
 ```latex
 \begin{aligned}
 \Delta E &= \frac{hc}{\lambda} \\

@@ -471,7 +471,12 @@ $$
 where $m_\text{initial}$ is the total mass of the starting materials, $m_\text{final}$ the total mass of the products and $c$ the speed of light. When $Q > 0$, energy is released. The masses are calculated from the given atomic masses in atomic mass units (the table in the chapter *Mass defect and nuclear binding energy*). Atomic masses include the electrons too, but when the sum of the atomic numbers is conserved, the masses of the electrons cancel in the difference.
 
 ### From atomic mass units to megaelectronvolts
-The chapter *Mass defect and nuclear binding energy* stated that the energy corresponding to an atomic mass unit is $931.5\,\text{MeV}$, that is, $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. When the mass difference is substituted in this unit, the factor $c^2$ cancels: for example, for a mass difference of $0.1\,\text{u}$ we get $Q = 0.1 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 93.15\,\text{MeV}$.
+The chapter *Mass defect and nuclear binding energy* stated that the energy corresponding to an atomic mass unit is $931.5\,\text{MeV}$, that is, $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. When the mass difference is substituted in this unit, the factor $c^2$ cancels: for example, for a mass difference of $0.1\,\text{u}$ we get $$
+\begin{aligned}
+Q &= 0.1 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&= 93.15\,\text{MeV}
+\end{aligned}
+$$.
 
 The figure shows the masses of the fission of uranium-235 before and after the reaction. The mass decreases by only about $0.08\,\%$, but this corresponds to an energy of about $173\,\text{MeV}$. When the later decays of the fission products are included, one fission releases about $200\,\text{MeV}$ on average.
 
@@ -617,7 +622,12 @@ A light-water reactor cannot explode like a nuclear weapon, because its fuel con
 Physics does not decide how much nuclear power society should use, but it helps to tell correct claims from incorrect ones. The life-cycle greenhouse gas emissions of nuclear power are about $12\,\tfrac{\text{g}}{\text{kWh}}$ of carbon dioxide equivalent, of the same order as wind power and about $1.5\,\%$ of the emissions of coal (IPCC 2014). Little fuel is needed, and the plant produces steadily regardless of the weather. On the other hand, spent fuel is dangerous for a very long time, serious accidents such as Chernobyl in 1986 and Fukushima in 2011 are rare but have wide effects, and building power plants is expensive and slow: construction of Olkiluoto 3 began in 2005 and regular electricity production in 2023. Weighing risks against benefits is a matter of values, and the knowledge of physics is the starting point.
 
 ## Worked example
-A uranium-235 nucleus captures a slow neutron and splits in the reaction ${}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3\,{}^{1}_{0}\text{n}$. The atomic masses are: uranium-235 $235.0439282\,\text{u}$, barium-141 $140.9144033\,\text{u}$, krypton-92 $91.9261731\,\text{u}$ and neutron $1.0086649\,\text{u}$. How much energy is released in the reaction?
+A uranium-235 nucleus captures a slow neutron and splits in the reaction $$
+\begin{aligned}
+&{}^{1}_{0}\text{n} \\
+&+ {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3\,{}^{1}_{0}\text{n}
+\end{aligned}
+$$. The atomic masses are: uranium-235 $235.0439282\,\text{u}$, barium-141 $140.9144033\,\text{u}$, krypton-92 $91.9261731\,\text{u}$ and neutron $1.0086649\,\text{u}$. How much energy is released in the reaction?
 
 <!-- vaihe -->
 
@@ -644,7 +654,14 @@ A uranium-235 nucleus captures a slow neutron and splits in the reaction ${}^{1}
 
 <!-- vaihe -->
 
-**Substitution.** The mass of the starting materials is $m_\text{initial} = 1.0086649\,\text{u} + 235.0439282\,\text{u} = 236.0525931\,\text{u}$ and that of the products $m_\text{final} = 140.9144033\,\text{u} + 91.9261731\,\text{u} + 3 \cdot 1.0086649\,\text{u} = 235.8665711\,\text{u}$.
+**Substitution.** The mass of the starting materials is $m_\text{initial} = 1.0086649\,\text{u} + 235.0439282\,\text{u} = 236.0525931\,\text{u}$ and that of the products $$
+\begin{aligned}
+m_\text{final} &= 140.9144033\,\text{u} \\
+&+ 91.9261731\,\text{u} + 3 \\
+&\cdot 1.0086649\,\text{u} \\
+&= 235.8665711\,\text{u}
+\end{aligned}
+$$.
 ```latex
 \begin{aligned}
 &Q = (m_\text{initial} - m_\text{final})\,c^2 \\

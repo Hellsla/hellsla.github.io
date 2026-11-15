@@ -34,7 +34,13 @@
 **Periaate:** Gammasäteily on sähkömagneettista säteilyä, joten fotonin energia on $\tfrac{hc}{\lambda}$ kuten näkyvän valon fotonilla.
 **Kaava:** $E_\gamma = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{E_\gamma}$
 **Muunnokset:** $E_\gamma = 59{,}54\,\text{keV} = 59{,}54 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 9{,}5383 \cdot 10^{-15}\,\text{J}$; lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
-**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{9{,}5383 \cdot 10^{-15}\,\text{J}} = 2{,}0826 \cdot 10^{-11}\,\text{m} = 20{,}826\,\text{pm}$
+**Sijoitus:** Tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{9{,}5383 \cdot 10^{-15}\,\text{J}} = 2{,}0826 \cdot 10^{-11}\,\text{m} = 20{,}826\,\text{pm}$
 **Vastaus:** $20{,}8\,\text{pm}$, kolme merkitsevää numeroa; energia on annettu neljällä numerolla, ja $20{,}83\,\text{pm}$ on yhtä oikein.
 **Järkevyys:** Esimerkin cesiumin fotoni $661{,}7\,\text{keV}$ on noin $11$ kertaa energisempi, ja sen aallonpituus $1{,}874\,\text{pm}$ on noin $11$ kertaa lyhyempi: $20{,}8 : 1{,}874 \approx 11$. Aallonpituus on pienempi kuin atomin halkaisija noin $100\,\text{pm}$.
 
@@ -78,8 +84,23 @@
 **Kysytty:** gammafotonin aallonpituus $\lambda$ pikometreinä
 **Periaate:** Ytimen energia on kvantittunut. Energia säilyy, joten siirtymässä lähtevän fotonin energia on tasojen erotus, kuten atomin siirtymissä, ja fotonin energia on $\tfrac{hc}{\lambda}$.
 **Kaava:** $\dfrac{hc}{\lambda} = E_\text{y} - E_\text{a}$, josta $\lambda = \dfrac{hc}{E_\text{y} - E_\text{a}}$
-**Muunnokset:** $E_\text{y} - E_\text{a} = 2505{,}8\,\text{keV} - 1332{,}5\,\text{keV} = 1173{,}3\,\text{keV} = 1173{,}3 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}8796 \cdot 10^{-13}\,\text{J}$; lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
-**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}8796 \cdot 10^{-13}\,\text{J}} = 1{,}0568 \cdot 10^{-12}\,\text{m} = 1{,}0568\,\text{pm}$
+**Muunnokset:** $$
+\begin{aligned}
+E_\text{y} - E_\text{a} &= 2505{,}8\,\text{keV} \\
+&- 1332{,}5\,\text{keV} \\
+&= 1173{,}3\,\text{keV} \\
+&= 1173{,}3 \cdot 1000 \\
+&\cdot 1{,}602 \cdot 10^{-19}\,\text{J} \\
+&= 1{,}8796 \cdot 10^{-13}\,\text{J}
+\end{aligned}
+$$; lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
+**Sijoitus:** Tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}8796 \cdot 10^{-13}\,\text{J}} = 1{,}0568 \cdot 10^{-12}\,\text{m} = 1{,}0568\,\text{pm}$
 **Vastaus:** $1{,}06\,\text{pm}$, kolme merkitsevää numeroa; tarkemmin $1{,}057\,\text{pm}$, neljä numeroa kuten energiaerossa $1173{,}3\,\text{keV}$.
 **Järkevyys:** Mitattu gammafotoni on $1173{,}2\,\text{keV}$, yksi koboltti-60:n gammaspektrin kahdesta piikistä; ero $0{,}1\,\text{keV}$ tasojen erotukseen $1173{,}3\,\text{keV}$ johtuu lähes kokonaan tasojen pyöristyksestä (tarkka tasojen erotus on $1173{,}24\,\text{keV}$), ja ytimen rekyyli vie vain noin $0{,}01\,\text{keV}$. Ero ei muuta aallonpituutta kolmen numeron tarkkuudella. Se on vähän pienempi kuin toisen fotonin $1332{,}5\,\text{keV}$, joten aallonpituus on vähän pidempi kuin sen $0{,}931\,\text{pm}$, kuten pitää.
 
@@ -99,9 +120,24 @@
 **Periaate:** Kummankin fotonin energia riippuu vain sen aallonpituudesta tai taajuudesta. Vihreän fotonin energia lasketaan aallonpituudesta, ja vertailu tehdään yhdellä jakolaskulla samassa yksikössä.
 **Kaava:** $E_\text{v} = \dfrac{hc}{\lambda}$, ja kysytty suhde on $\dfrac{E_\gamma}{E_\text{v}} = \dfrac{E_\gamma \lambda}{hc}$
 **Muunnokset:** $\lambda = 550\,\text{nm} = 550 \cdot 10^{-9}\,\text{m}$ ja $E_\gamma = 661{,}7\,\text{keV} = 661{,}7 \cdot 1000\,\text{eV} = 661\,700\,\text{eV}$; vihreän fotonin energia muunnetaan elektronivolteiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
-**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $E_\text{v} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{550 \cdot 10^{-9}\,\text{m}} = 3{,}6118 \cdot 10^{-19}\,\text{J} = 2{,}2545\,\text{eV}$ ja $661\,700\,\text{eV} : 2{,}2545\,\text{eV} = 293\,500$
+**Sijoitus:** Tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $E_\text{v} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{550 \cdot 10^{-9}\,\text{m}} = 3{,}6118 \cdot 10^{-19}\,\text{J} = 2{,}2545\,\text{eV}$ ja $$
+\begin{aligned}
+&661\,700\,\text{eV} : 2{,}2545\,\text{eV} \\
+&= 293\,500
+\end{aligned}
+$$
 **Vastaus:** noin $293\,000$ eli $2{,}93 \cdot 10^{5}$ kertaa suurempi, kolme merkitsevää numeroa kuten aallonpituudessa $550\,\text{nm}$.
-**Järkevyys:** Arvio pyöreillä luvuilla: $660\,000\,\text{eV} : 2\,\text{eV} \approx 330\,000$, samaa suuruusluokkaa. Ytimen tasojen erot ovat satojatuhansia kertoja suurempia kuin atomin elektronien tasojen erot, kuten luvun teoriassa todetaan.
+**Järkevyys:** Arvio pyöreillä luvuilla: $$
+\begin{aligned}
+660\,000\,\text{eV} : 2\,\text{eV} &\approx 330\,000
+\end{aligned}
+$$, samaa suuruusluokkaa. Ytimen tasojen erot ovat satojatuhansia kertoja suurempia kuin atomin elektronien tasojen erot, kuten luvun teoriassa todetaan.
 
 ## fy8-8-L2-04
 **Annettu:** emoydin ${}^{232}_{90}\text{Th}$; alfahajoaminen ja sen jälkeen kaksi beeta miinus -hajoamista
@@ -111,7 +147,12 @@
 **Muunnokset:** Ei tarvita, koska luvut ovat kappalemääriä.
 **Sijoitus:** $A_\text{loppu} = 232 - 4 = 228$, $Z_\text{loppu} = 90 - 2 + 1 + 1 = 90$ ja $N = 228 - 90 = 138$
 **Vastaus:** $138$. Tulos on neutronien tarkka lukumäärä. Ydin on torium-228 ${}^{228}_{90}\text{Th}$.
-**Järkevyys:** Ketju on ${}^{232}_{90}\text{Th} \to {}^{228}_{88}\text{Ra} \to {}^{228}_{89}\text{Ac} \to {}^{228}_{90}\text{Th}$. Lopussa ollaan taas toriumissa, mutta neutroneja on neljä vähemmän kuin alussa ($142 - 4 = 138$): alfa vei kaksi ja kumpikin beetahajoaminen muutti yhden neutronin protoniksi.
+**Järkevyys:** Ketju on $$
+\begin{aligned}
+&{}^{232}_{90}\text{Th} \to {}^{228}_{88}\text{Ra} \to {}^{228}_{89}\text{Ac} \\
+&\to {}^{228}_{90}\text{Th}
+\end{aligned}
+$$. Lopussa ollaan taas toriumissa, mutta neutroneja on neljä vähemmän kuin alussa ($142 - 4 = 138$): alfa vei kaksi ja kumpikin beetahajoaminen muutti yhden neutronin protoniksi.
 
 ## fy8-8-L2-05
 **Annettu:** taulukon kuuden ytimen luvut $Z$, $N$ ennen hajoamista ja $Z'$, $N'$ sen jälkeen
@@ -121,7 +162,12 @@
 **Muunnokset:** Ei tarvita, koska luvut ovat kappalemääriä.
 **Sijoitus:** Ra-226: $88 \to 86$ ja $138 \to 136$, alfahajoaminen. Pb-210: $82 \to 83$ ja $128 \to 127$, beeta miinus. Na-22: $11 \to 10$ ja $11 \to 12$, beeta plus. I-131: $53 \to 54$ ja $78 \to 77$, beeta miinus. Ba-137 (viritetty): $56 \to 56$ ja $81 \to 81$, gammahajoaminen. Sr-90: $38 \to 39$ ja $52 \to 51$, beeta miinus.
 **Vastaus:** $3$. Beeta miinus -hajoamisia ovat lyijy-210, jodi-131 ja strontium-90. Tulos on rivien tarkka lukumäärä.
-**Järkevyys:** Jokaisella rivillä nukleonien määrä pysyy tai pienenee neljällä: $Z + N = 226 \to 222$ alfahajoamisessa, ja muissa riveissä summa ei muutu ($82 + 128 = 83 + 127 = 210$). Beetahajoamisissa massaluku säilyy, kuten pitää.
+**Järkevyys:** Jokaisella rivillä nukleonien määrä pysyy tai pienenee neljällä: $Z + N = 226 \to 222$ alfahajoamisessa, ja muissa riveissä summa ei muutu ($$
+\begin{aligned}
+82 + 128 &= 83 + 127 \\
+&= 210
+\end{aligned}
+$$). Beetahajoamisissa massaluku säilyy, kuten pitää.
 
 ## fy8-8-L2-06
 **Annettu:** oppilaan yhtälö ${}^{241}_{95}\text{Am} \to {}^{237}_{94}\text{Np} + {}^{4}_{2}\text{He}$ ja perustelu ”järjestysluku pienenee yhdellä”
@@ -179,7 +225,13 @@ Oikea vastaus on rivi 3.
 **Periaate:** Jokaisen gammafotonin energia on kahden tason erotus. Mahdolliset siirtymät ovat $1{,}00 \to 0$ ($1{,}00\,\text{MeV}$), $1{,}00 \to 0{,}40$ ($0{,}60\,\text{MeV}$) ja $0{,}40 \to 0$ ($0{,}40\,\text{MeV}$). Koska $\lambda = \tfrac{hc}{E}$, lyhin aallonpituus tulee suurimmasta energiasta eli suorasta siirtymästä perustilaan.
 **Kaava:** $\dfrac{hc}{\lambda_\text{min}} = E_\text{max}$, josta $\lambda_\text{min} = \dfrac{hc}{E_\text{max}}$
 **Muunnokset:** $E_\text{max} = 1{,}00\,\text{MeV} = 1{,}00 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}602 \cdot 10^{-13}\,\text{J}$; lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
-**Sijoitus:** Tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. $\lambda_\text{min} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}602 \cdot 10^{-13}\,\text{J}} = 1{,}2400 \cdot 10^{-12}\,\text{m} = 1{,}2400\,\text{pm}$
+**Sijoitus:** Tulo $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. $\lambda_\text{min} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}602 \cdot 10^{-13}\,\text{J}} = 1{,}2400 \cdot 10^{-12}\,\text{m} = 1{,}2400\,\text{pm}$
 **Vastaus:** $1{,}24\,\text{pm}$, kolme merkitsevää numeroa kuten energiassa $1{,}00\,\text{MeV}$.
 **Järkevyys:** Spektrissä näkyy kolme viivaa, kuten vetyatomin kolmesta tasosta saadaan kolme siirtymää. Muut kaksi aallonpituutta ovat pidempiä: $0{,}60\,\text{MeV}$ antaa $\tfrac{1{,}24}{0{,}60}\,\text{pm} \approx 2{,}1\,\text{pm}$ ja $0{,}40\,\text{MeV}$ noin $3{,}1\,\text{pm}$.
 
@@ -204,7 +256,12 @@ b) Pb-210 $\to$ Pb-206: $n_\alpha = \dfrac{210 - 206}{4} = 1$. Järjestysluku on
 c) Koko sarjassa $n_\alpha = \dfrac{222 - 206}{4} = 4$ ja $n_\beta = 82 - 86 + 2 \cdot 4 = 4$. Taulukon ja b-kohdan laskusta: alfahajoamisia $3 + 1 = 4$ ja beeta miinus -hajoamisia $2 + 2 = 4$.
 d) Neljä alfahajoamista pienentäisi järjestyslukua $4 \cdot 2 = 8$ ja veisi sen arvoon $86 - 8 = 78$. Lyijyn järjestysluku on $82$, joten järjestyslukua täytyy nostaa $82 - 78 = 4$ beeta miinus -hajoamisella.
 **Vastaus:** $4$. Beeta miinus -hajoamisten määrä on tarkka kokonaisluku; alfahajoamisia on myös $4$, yhteensä $8$ hajoamista. Pelkät alfahajoamiset veisivät järjestysluvun arvoon $78$, joten neljä beeta miinus -hajoamista tarvitaan.
-**Järkevyys:** Tarkistus: massaluku $222 - 4 \cdot 4 = 206$ ja järjestysluku $86 - 2 \cdot 4 + 4 = 82$ täsmäävät. Sarjan lopussa ${}^{210}_{82}\text{Pb} \to {}^{210}_{83}\text{Bi} \to {}^{210}_{84}\text{Po} \to {}^{206}_{82}\text{Pb}$ on kaksi beetahajoamista ja yksi alfahajoaminen.
+**Järkevyys:** Tarkistus: massaluku $222 - 4 \cdot 4 = 206$ ja järjestysluku $86 - 2 \cdot 4 + 4 = 82$ täsmäävät. Sarjan lopussa $$
+\begin{aligned}
+&{}^{210}_{82}\text{Pb} \to {}^{210}_{83}\text{Bi} \to {}^{210}_{84}\text{Po} \\
+&\to {}^{206}_{82}\text{Pb}
+\end{aligned}
+$$ on kaksi beetahajoamista ja yksi alfahajoaminen.
 
 ## fy8-8-L3-05
 **Annettu:** mitatut viivat $351{,}2$, $468{,}9$, $681{,}3$, $820{,}5$ ja $1501{,}4\,\text{keV}$; kolme viritystasoa; ydin aluksi ylimmällä tasolla; alin viritystaso $351{,}2\,\text{keV}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{keV} = 1000\,\text{eV}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
@@ -214,6 +271,12 @@ d) Neljä alfahajoamista pienentäisi järjestyslukua $4 \cdot 2 = 8$ ja veisi s
 **Muunnokset:** $E_\text{p} = 1150{,}2\,\text{keV} = 1150{,}2 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}8427 \cdot 10^{-13}\,\text{J}$; lopuksi $1\,\text{m} = 10^{12}\,\text{pm}$.
 **Sijoitus:** a) Ylin taso on suurimman viivan mukaan $E_3 = 1501{,}4\,\text{keV}$ ja alin viritystaso $E_1 = 351{,}2\,\text{keV}$, joka on myös taulukon pienin viiva (siirtymä perustilaan). Kolmas taso saadaan viivasta $820{,}5\,\text{keV}$, jos se on siirtymä perustilaan: $E_2 = 820{,}5\,\text{keV}$. Tarkistus tasojen erotuksilla: $E_2 - E_1 = 820{,}5 - 351{,}2 = 469{,}3$, joka on viiva $468{,}9\,\text{keV}$, ja $E_3 - E_2 = 1501{,}4 - 820{,}5 = 680{,}9$, joka on viiva $681{,}3\,\text{keV}$. Kaikki viisi viivaa selittyvät, kun mittausepävarmuus on alle $0{,}5\,\text{keV}$. Muu järjestys ei toimi: jos toinen taso olisi $681{,}3\,\text{keV}$, siirtymä $E_2 - E_1 = 330{,}1\,\text{keV}$ puuttuisi taulukosta ja viiva $468{,}9\,\text{keV}$ jäisi selittämättä.
 b) Puuttuva siirtymä on ylimmältä tasolta alimmalle viritystasolle: $E_\text{p} = E_3 - E_1 = 1501{,}4 - 351{,}2 = 1150{,}2\,\text{keV}$.
-c) $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}8427 \cdot 10^{-13}\,\text{J}} = 1{,}0780 \cdot 10^{-12}\,\text{m} = 1{,}0780\,\text{pm}$
+c) $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ ja $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1{,}8427 \cdot 10^{-13}\,\text{J}} = 1{,}0780 \cdot 10^{-12}\,\text{m} = 1{,}0780\,\text{pm}$
 **Vastaus:** $1{,}08\,\text{pm}$, kolme merkitsevää numeroa. Tasot ovat perustilan yläpuolella $351{,}2$, $820{,}5$ ja $1501{,}4\,\text{keV}$, ja puuttuvan viivan energia on $1150{,}2\,\text{keV}$.
 **Järkevyys:** Puuttuva energia $1150{,}2\,\text{keV}$ on pienempi kuin suurin viiva $1501{,}4\,\text{keV}$ ja suurempi kuin viiva $820{,}5\,\text{keV}$. Siksi aallonpituus on pidempi kuin suurimman viivan $0{,}83\,\text{pm}$ ja lyhyempi kuin viivan $820{,}5\,\text{keV}$ aallonpituus $1{,}51\,\text{pm}$. Tulos $1{,}08\,\text{pm}$ on näiden välissä.

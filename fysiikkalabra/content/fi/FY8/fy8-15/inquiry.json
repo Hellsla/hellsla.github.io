@@ -253,7 +253,7 @@
       "hints": [
         "Vapautuva energia on massojen erotusta vastaava energia $Q = (m_\\text{alku} - m_\\text{loppu})\\,c^2$.",
         "Alussa on vain myoni, lopussa elektroni ja kaksi neutriinoa, joiden massat jätetään pois.",
-        "$Q = (105{,}658 - 0{,}511)\\,\\text{MeV}$."
+        "$$\n\\begin{aligned}\nQ &= (105{,}658 - 0{,}511)\\,\\text{MeV}\n\\end{aligned}\n$$."
       ],
       "mistakes": [
         {

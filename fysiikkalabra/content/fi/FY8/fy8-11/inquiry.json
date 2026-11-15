@@ -256,12 +256,12 @@
       "type": "choice",
       "title": "Etsi virhe",
       "optional": true,
-      "prompt": "Opiskelija laskee esimerkin reaktion ${}^{1}_{0}\\text{n} + {}^{235}_{92}\\text{U} \\rightarrow {}^{141}_{56}\\text{Ba} + {}^{92}_{36}\\text{Kr} + 3\\,{}^{1}_{0}\\text{n}$ energian. Hän kirjoittaa\n\n$$\\begin{aligned} &\\Delta m = 235{,}0439282\\,\\text{u} \\\\ &\\quad - 140{,}9144033\\,\\text{u} \\\\ &\\quad - 91{,}9261731\\,\\text{u} \\\\ &\\quad - 3 \\cdot 1{,}0086649\\,\\text{u} \\\\ &= -0{,}8226429\\,\\text{u} \\end{aligned}$$\n\nja saa tulokseksi $Q = -0{,}8226429 \\cdot 931{,}5\\,\\text{MeV} \\approx -766\\,\\text{MeV}$. Hän päättelee, että fissio sitoo energiaa.\n\nMissä on virhe?",
+      "prompt": "Opiskelija laskee esimerkin reaktion $$\n\\begin{aligned}\n&{}^{1}_{0}\\text{n} \\\\\n&+ {}^{235}_{92}\\text{U} \\rightarrow {}^{141}_{56}\\text{Ba} + {}^{92}_{36}\\text{Kr} + 3\\,{}^{1}_{0}\\text{n}\n\\end{aligned}\n$$ energian. Hän kirjoittaa\n\n$$\\begin{aligned} &\\Delta m = 235{,}0439282\\,\\text{u} \\\\ &\\quad - 140{,}9144033\\,\\text{u} \\\\ &\\quad - 91{,}9261731\\,\\text{u} \\\\ &\\quad - 3 \\cdot 1{,}0086649\\,\\text{u} \\\\ &= -0{,}8226429\\,\\text{u} \\end{aligned}$$\n\nja saa tulokseksi $$\n\\begin{aligned}\nQ &= -0{,}8226429 \\cdot 931{,}5\\,\\text{MeV} \\\\\n&\\approx -766\\,\\text{MeV}\n\\end{aligned}\n$$. Hän päättelee, että fissio sitoo energiaa.\n\nMissä on virhe?",
       "choices": [
         {
           "text": "Lähtöaineiden massasta puuttuu ytimeen osuva neutroni.",
           "correct": true,
-          "feedback": "Oikein. Lähtöaineita ovat uraaniydin *ja* neutroni, joten $m_\\text{alku} = 235{,}0439282\\,\\text{u} + 1{,}0086649\\,\\text{u} = 236{,}0525931\\,\\text{u}$. Silloin $\\Delta m = 0{,}1860220\\,\\text{u}$ ja $Q \\approx 173\\,\\text{MeV}$. Negatiivinen tulos oli merkki virheestä: uraanin fissio vapauttaa energiaa, ja massaero on vain noin $0{,}08\\,\\%$ lähtöaineiden massasta."
+          "feedback": "Oikein. Lähtöaineita ovat uraaniydin *ja* neutroni, joten $$\n\\begin{aligned}\nm_\\text{alku} &= 235{,}0439282\\,\\text{u} \\\\\n&+ 1{,}0086649\\,\\text{u} \\\\\n&= 236{,}0525931\\,\\text{u}\n\\end{aligned}\n$$. Silloin $\\Delta m = 0{,}1860220\\,\\text{u}$ ja $Q \\approx 173\\,\\text{MeV}$. Negatiivinen tulos oli merkki virheestä: uraanin fissio vapauttaa energiaa, ja massaero on vain noin $0{,}08\\,\\%$ lähtöaineiden massasta."
         },
         {
           "text": "Atomimassoja ei saa käyttää, koska niissä ovat mukana myös elektronit.",
@@ -302,7 +302,7 @@
       "tolerance": 0.02,
       "hints": [
         "Teho kertoo, kuinka monta joulea energiaa vapautuu sekunnissa. Kuinka monta joulea vapautuu yhdessä reaktiossa?",
-        "Muunna reaktioenergia jouleiksi sijoittamalla $1\\,\\text{MeV} = 10^{6} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "Muunna reaktioenergia jouleiksi sijoittamalla $$\n\\begin{aligned}\n1\\,\\text{MeV} &= 10^{6} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}\n\\end{aligned}\n$$.",
         "Yhdessä reaktiossa vapautuu $2{,}82 \\cdot 10^{-12}\\,\\text{J}$. Jaa teho $500 \\cdot 10^{6}\\,\\text{W}$ tällä."
       ],
       "mistakes": [

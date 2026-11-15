@@ -1,7 +1,7 @@
 [
   {
     "q": "Säteilyn taajuus on $1{,}0 \\cdot 10^{15}\\,\\text{Hz}$. Kuinka suuri on yhden fotonin energia?",
-    "a": "$E = hf = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 1{,}0 \\cdot 10^{15}\\,\\tfrac{1}{\\text{s}} = 6{,}6 \\cdot 10^{-19}\\,\\text{J}$ eli noin $4{,}1\\,\\text{eV}$."
+    "a": "$$\n\\begin{aligned}\nE &= hf \\\\\n&= 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\\\\n&\\cdot 1{,}0 \\cdot 10^{15}\\,\\tfrac{1}{\\text{s}} \\\\\n&= 6{,}6 \\cdot 10^{-19}\\,\\text{J}\n\\end{aligned}\n$$ eli noin $4{,}1\\,\\text{eV}$."
   },
   {
     "q": "Natriumlevyä ($W = 2{,}28\\,\\text{eV}$) valaistaan keltaisella valolla, $\\lambda = 590\\,\\text{nm}$, eikä elektroneja irtoa. Kumpi auttaa: keltaisen valon kirkastaminen vai vaihtaminen siniseen valoon, $\\lambda = 470\\,\\text{nm}$? Miksi?",

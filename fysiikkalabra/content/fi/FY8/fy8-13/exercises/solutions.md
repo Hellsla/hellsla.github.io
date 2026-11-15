@@ -66,7 +66,11 @@
 **Muunnokset:** Ei tarvita: annos on mikrosieverteinä ja annosnopeus yksikössä $\mu\text{Sv/h}$, joten aika saadaan tunteina.
 **Sijoitus:** $t = \dfrac{100\,\mu\text{Sv}}{150\,\mu\text{Sv/h}} \cdot \left(\dfrac{2{,}5\,\text{m}}{1{,}0\,\text{m}}\right)^2 = 0{,}66667\,\text{h} \cdot 6{,}25 = 4{,}1667\,\text{h}$
 **Vastaus:** $4{,}2\,\text{h}$, kaksi merkitsevää numeroa kuten etäisyyksissä $1{,}0\,\text{m}$ ja $2{,}5\,\text{m}$.
-**Järkevyys:** Työpisteen annosnopeus on $150 : 6{,}25 = 24\,\mu\text{Sv/h}$, ja $4{,}2\,\text{h} \cdot 24\,\mu\text{Sv/h} \approx 100\,\mu\text{Sv}$. Metrin päässä sama annos kertyisi alle tunnissa, joten etäisyys pidentää työaikaa moninkertaisesti.
+**Järkevyys:** Työpisteen annosnopeus on $150 : 6{,}25 = 24\,\mu\text{Sv/h}$, ja $$
+\begin{aligned}
+4{,}2\,\text{h} \cdot 24\,\mu\text{Sv/h} &\approx 100\,\mu\text{Sv}
+\end{aligned}
+$$. Metrin päässä sama annos kertyisi alle tunnissa, joten etäisyys pidentää työaikaa moninkertaisesti.
 
 ## fy8-13-L2-03
 **Annettu:** keskimääräinen pitoisuus $94\,\tfrac{\text{Bq}}{\text{m}^3}$ ja siitä aiheutuva annos $4{,}0\,\text{mSv}$ vuodessa, kodin pitoisuus $300\,\tfrac{\text{Bq}}{\text{m}^3}$; annos on verrannollinen pitoisuuteen
@@ -86,7 +90,9 @@
 **Muunnokset:** Ei tarvita: annosnopeudet ovat samassa yksikössä, ja paksuus saadaan samassa yksikössä kuin puoliintumispaksuus eli millimetreinä.
 **Sijoitus:** $\dfrac{\dot{H}_0}{\dot{H}} = \dfrac{96\,\mu\text{Sv/h}}{3{,}0\,\mu\text{Sv/h}} = 32 = 2^5$, joten $d = 6{,}0\,\text{mm} \cdot 5 = 30\,\text{mm}$
 **Vastaus:** $30\,\text{mm}$, kaksi merkitsevää numeroa kuten puoliintumispaksuudessa $6{,}0\,\text{mm}$ ja tavoitteessa $3{,}0\,\mu\text{Sv/h}$.
-**Järkevyys:** Viisi puolitusta peräkkäin: $96 \to 48 \to 24 \to 12 \to 6 \to 3$ (yksikkönä $\mu\text{Sv/h}$). Kolmen sentin lyijy on tavallinen gammalähteen suojan paksuus.
+**Järkevyys:** Viisi puolitusta peräkkäin: $$
+96 \to 48 \to 24 \to 12 \to 6 \to 3
+$$ (yksikkönä $\mu\text{Sv/h}$). Kolmen sentin lyijy on tavallinen gammalähteen suojan paksuus.
 
 ## fy8-13-L3-01
 **Annettu:** annosnopeus $\dot{H}_1 = 80\,\mu\text{Sv/h}$ etäisyydellä $r_1 = 1{,}0\,\text{m}$ ilman suojaa, työaika $t = 30\,\text{min}$; A: $r = 2{,}0\,\text{m}$ ilman suojaa; B: $r = 1{,}0\,\text{m}$ ja lyijyä $d = 18\,\text{mm}$, $d_{1/2} = 6{,}0\,\text{mm}$
@@ -114,7 +120,14 @@
 **Periaate:** Alfasäteily säteilyttää vain keuhkot, joten sen efektiivinen annos on keuhkojen ekvivalenttiannos kerrottuna keuhkojen painotuskertoimella. Gammasäteily säteilyttää koko kehon tasaisesti, ja kudosten painotuskertoimien summa on $1$, joten sen efektiivinen annos on sama kuin kehon ekvivalenttiannos. Efektiiviset annokset lasketaan yhteen.
 **Kaava:** $H_\text{E} = w_\text{T} w_{\text{R},\alpha} D_\text{keuhkot} + w_{\text{R},\gamma} D_\gamma$
 **Muunnokset:** Ei tarvita: kun absorboituneet annokset ovat milligrayna, painotetut annokset saadaan millisieverteinä.
-**Sijoitus:** $H_\text{E} = 0{,}12 \cdot 20 \cdot 0{,}10\,\text{mGy} + 1 \cdot 0{,}50\,\text{mGy} = 0{,}24\,\text{mSv} + 0{,}50\,\text{mSv} = 0{,}74\,\text{mSv}$
+**Sijoitus:** $$
+\begin{aligned}
+H_\text{E} &= 0{,}12 \cdot 20 \cdot 0{,}10\,\text{mGy} + 1 \\
+&\cdot 0{,}50\,\text{mGy} \\
+&= 0{,}24\,\text{mSv} + 0{,}50\,\text{mSv} \\
+&= 0{,}74\,\text{mSv}
+\end{aligned}
+$$
 **Vastaus:** $0{,}74\,\text{mSv}$, kaksi merkitsevää numeroa kuten annoksissa $0{,}10\,\text{mGy}$ ja $0{,}50\,\text{mGy}$.
 **Järkevyys:** Alfasäteilyn absorboitunut annos on viidesosa gamman annoksesta, mutta painotettuna sen osuus on lähes puolet gamman osuudesta, koska $0{,}12 \cdot 20 = 2{,}4$. Jos keuhkojen kerroin unohtuisi, alfan osuudeksi tulisi virheellisesti $2{,}0\,\text{mSv}$.
 
@@ -127,9 +140,22 @@
 **Annettu:** maksan ekvivalenttiannos $H_\text{maksa} = 2{,}0\,\text{mSv}$ ja painotuskerroin $w_\text{maksa} = 0{,}04$, mahalaukun ekvivalenttiannos $H_\text{mahalaukku} = 1{,}0\,\text{mSv}$ ja painotuskerroin $w_\text{mahalaukku} = 0{,}12$
 **Kysytty:** efektiivinen annos $H_\text{E}$ millisieverteinä
 **Periaate:** Efektiivinen annos saadaan kertomalla jokaisen säteilytetyn kudoksen ekvivalenttiannos sen painotuskertoimella ja laskemalla tulot yhteen. Muut kudokset eivät saa annosta, joten ne eivät lisää summaan mitään.
-**Kaava:** $H_\text{E} = w_\text{maksa} H_\text{maksa} + w_\text{mahalaukku} H_\text{mahalaukku}$
+**Kaava:** $$
+\begin{aligned}
+&H_\text{E} \\
+&= w_\text{maksa} H_\text{maksa} \\
+&+ w_\text{mahalaukku} H_\text{mahalaukku}
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita: kun ekvivalenttiannokset ovat millisieverteinä, efektiivinen annos saadaan millisieverteinä, koska painotuskertoimet ovat paljaita lukuja.
-**Sijoitus:** $H_\text{E} = 0{,}04 \cdot 2{,}0\,\text{mSv} + 0{,}12 \cdot 1{,}0\,\text{mSv} = 0{,}080\,\text{mSv} + 0{,}12\,\text{mSv} = 0{,}20\,\text{mSv}$
+**Sijoitus:** $$
+\begin{aligned}
+H_\text{E} &= 0{,}04 \cdot 2{,}0\,\text{mSv} + 0{,}12 \\
+&\cdot 1{,}0\,\text{mSv} \\
+&= 0{,}080\,\text{mSv} + 0{,}12\,\text{mSv} \\
+&= 0{,}20\,\text{mSv}
+\end{aligned}
+$$
 **Vastaus:** $0{,}20\,\text{mSv}$, kaksi merkitsevää numeroa kuten annoksissa $2{,}0\,\text{mSv}$ ja $1{,}0\,\text{mSv}$.
 **Järkevyys:** Painotuskertoimien summa on vain $0{,}04 + 0{,}12 = 0{,}16$, joten efektiivinen annos on pienempi kuin kummankaan elimen ekvivalenttiannos ($2{,}0\,\text{mSv}$ ja $1{,}0\,\text{mSv}$). Sillä arvioidaan koko kehon pitkän aikavälin syöpäriskiä keskimääräiselle ihmiselle, vaikka vain kaksi elintä säteilytetään.
 
@@ -149,7 +175,13 @@
 **Periaate:** Efektiiviset annokset eri lähteistä lasketaan yhteen, koska niillä arvioidaan samaa asiaa: koko kehon pitkän aikavälin syöpäriskiä keskimääräiselle ihmiselle. Radonin osuus on sen annos jaettuna kokonaisannoksella.
 **Kaava:** $H_\text{yht} = H_1 + H_2 + H_3$ ja $\text{osuus} = \dfrac{H_\text{radon}}{H_\text{yht}} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita: kaikki annokset ovat millisieverteinä.
-**Sijoitus:** a) $H_\text{yht} = 4{,}0\,\text{mSv} + 1{,}1\,\text{mSv} + 0{,}8\,\text{mSv} = 5{,}9\,\text{mSv}$; b) $\text{osuus} = \dfrac{4{,}0\,\text{mSv}}{5{,}9\,\text{mSv}} \cdot 100\,\% = 67{,}8\,\%$
+**Sijoitus:** a) $$
+\begin{aligned}
+H_\text{yht} &= 4{,}0\,\text{mSv} + 1{,}1\,\text{mSv} \\
+&+ 0{,}8\,\text{mSv} \\
+&= 5{,}9\,\text{mSv}
+\end{aligned}
+$$; b) $\text{osuus} = \dfrac{4{,}0\,\text{mSv}}{5{,}9\,\text{mSv}} \cdot 100\,\% = 67{,}8\,\%$
 **Vastaus:** $68\,\%$, kaksi merkitsevää numeroa kuten annoksissa. Summa $5{,}9\,\text{mSv}$ täsmää STUK-A263:n (2020) keskiarvoon.
 **Järkevyys:** Radonin annos $4{,}0\,\text{mSv}$ on hieman yli kaksi kolmasosaa summasta, koska kaksi kolmasosaa olisi $\tfrac{2}{3} \cdot 5{,}9\,\text{mSv} = 3{,}9\,\text{mSv}$. Muut lähteet yhteensä ovat $1{,}1 + 0{,}8 = 1{,}9\,\text{mSv}$, alle kolmasosa.
 
@@ -160,9 +192,18 @@
 **Taulukon lukeminen:** Tulot lasketaan taulukon jokaiselle riville. Jos tulo kasvaisi tai pienenisi järjestelmällisesti etäisyyden mukana, laki ei pätisi.
 **Kaava:** $k = \dot{H} r^2$ ja $\dot{H}(r) = \dfrac{k_\text{ka}}{r^2}$
 **Muunnokset:** Ei tarvita: etäisyydet ovat metreinä ja annosnopeudet yksikössä $\mu\text{Sv/h}$.
-**Sijoitus:** a) $k_1 = 410\,\mu\text{Sv/h} \cdot (0{,}50\,\text{m})^2 = 102{,}5\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$, $k_2 = 98{,}0\,\mu\text{Sv/h} \cdot (1{,}00\,\text{m})^2 = 98{,}0\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$, $k_3 = 44{,}0\,\mu\text{Sv/h} \cdot (1{,}50\,\text{m})^2 = 99{,}0\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$ ja $k_4 = 26{,}0\,\mu\text{Sv/h} \cdot (2{,}00\,\text{m})^2 = 104{,}0\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$; b) tulot ovat $98$–$104$ eikä niissä ole suuntaa: ne vaihtelevat noin $\pm 3\,\%$ ympäri keskiarvon, joten mittaus noudattaa neliölakia; c) tulojen summa on $102{,}5 + 98{,}0 + 99{,}0 + 104{,}0 = 403{,}5$, joten $k_\text{ka} = \dfrac{403{,}5}{4} = 100{,}875\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$ ja $\dot{H} = \dfrac{100{,}875\,\mu\text{Sv} \cdot \text{m}^2/\text{h}}{(3{,}0\,\text{m})^2} = 11{,}208\,\mu\text{Sv/h}$
+**Sijoitus:** a) $k_1 = 410\,\mu\text{Sv/h} \cdot (0{,}50\,\text{m})^2 = 102{,}5\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$, $k_2 = 98{,}0\,\mu\text{Sv/h} \cdot (1{,}00\,\text{m})^2 = 98{,}0\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$, $k_3 = 44{,}0\,\mu\text{Sv/h} \cdot (1{,}50\,\text{m})^2 = 99{,}0\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$ ja $k_4 = 26{,}0\,\mu\text{Sv/h} \cdot (2{,}00\,\text{m})^2 = 104{,}0\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$; b) tulot ovat $98$–$104$ eikä niissä ole suuntaa: ne vaihtelevat noin $\pm 3\,\%$ ympäri keskiarvon, joten mittaus noudattaa neliölakia; c) tulojen summa on $$
+\begin{aligned}
+&102{,}5 + 98{,}0 + 99{,}0 + 104{,}0 \\
+&= 403{,}5
+\end{aligned}
+$$, joten $k_\text{ka} = \dfrac{403{,}5}{4} = 100{,}875\,\mu\text{Sv} \cdot \text{m}^2/\text{h}$ ja $\dot{H} = \dfrac{100{,}875\,\mu\text{Sv} \cdot \text{m}^2/\text{h}}{(3{,}0\,\text{m})^2} = 11{,}208\,\mu\text{Sv/h}$
 **Vastaus:** $11\,\mu\text{Sv/h}$ (tarkemmin $11{,}2\,\mu\text{Sv/h}$), kaksi merkitsevää numeroa kuten etäisyydessä $3{,}0\,\text{m}$.
-**Järkevyys:** Neliölain mukaan etäisyydeltä $2{,}00\,\text{m}$ etäisyydelle $3{,}0\,\text{m}$ annosnopeus pienenee tekijällä $\left(\tfrac{2{,}00}{3{,}0}\right)^2 = 0{,}444$, joten $26{,}0\,\mu\text{Sv/h} \cdot 0{,}444 = 11{,}6\,\mu\text{Sv/h}$ (vain uloimman mittauksen perusteella; keskiarvomenetelmä antaa hieman pienemmän arvon). Tulos $11{,}2\,\mu\text{Sv/h}$ on lähellä sitä ja pienempi kuin mikään mitattu arvo, kuten kasvavalla etäisyydellä kuuluu.
+**Järkevyys:** Neliölain mukaan etäisyydeltä $2{,}00\,\text{m}$ etäisyydelle $3{,}0\,\text{m}$ annosnopeus pienenee tekijällä $\left(\tfrac{2{,}00}{3{,}0}\right)^2 = 0{,}444$, joten $$
+\begin{aligned}
+26{,}0\,\mu\text{Sv/h} \cdot 0{,}444 &= 11{,}6\,\mu\text{Sv/h}
+\end{aligned}
+$$ (vain uloimman mittauksen perusteella; keskiarvomenetelmä antaa hieman pienemmän arvon). Tulos $11{,}2\,\mu\text{Sv/h}$ on lähellä sitä ja pienempi kuin mikään mitattu arvo, kuten kasvavalla etäisyydellä kuuluu.
 
 ## fy8-13-L2-07
 **Annettu:** maksan massa $m = 1{,}8\,\text{kg}$, absorboitunut energia $E = 0{,}63\,\text{mJ}$, alfasäteilyn painotuskerroin $w_\text{R} = 20$
@@ -181,22 +222,44 @@
 **Periaate:** Jaksot ovat yhtä pitkiä, joten vuoden keskipitoisuus on niiden keskiarvo. Radonannos on oletuksen mukaan suoraan verrannollinen pitoisuuteen ja kotonaoloaikaan, joten annos saadaan kertomalla suomalaisten keskimääräinen annos pitoisuuksien suhteella ja aikojen suhteella. Kohdassa d) sama yhtälö ratkaistaan pitoisuudelle.
 **Kaava:** $c_\text{ka} = \dfrac{c_1 + c_2 + c_3 + c_4}{4}$, $H = H_\text{ka} \dfrac{c}{c_\text{ka,Suomi}} \cdot f$ ja $c = \dfrac{H}{H_\text{ka} f} c_\text{ka,Suomi}$, missä $f = 0{,}80$ on kotonaoloajan suhde
 **Muunnokset:** Ei tarvita: pitoisuudet ovat samassa yksikössä ja annokset millisieverteinä; $80\,\% = 0{,}80$.
-**Sijoitus:** a) Pitoisuuksien summa on $380 + 260 + 140 + 300 = 1080\,\tfrac{\text{Bq}}{\text{m}^3}$, joten $c_\text{ka} = \dfrac{1080\,\tfrac{\text{Bq}}{\text{m}^3}}{4} = 270\,\tfrac{\text{Bq}}{\text{m}^3}$; b) $H = 4{,}0\,\text{mSv} \cdot \dfrac{270\,\tfrac{\text{Bq}}{\text{m}^3}}{94\,\tfrac{\text{Bq}}{\text{m}^3}} \cdot 0{,}80 = 4{,}0\,\text{mSv} \cdot 2{,}8723 \cdot 0{,}80 = 9{,}19\,\text{mSv}$; d) $c = \dfrac{2{,}0\,\text{mSv}}{4{,}0\,\text{mSv} \cdot 0{,}80} \cdot 94\,\tfrac{\text{Bq}}{\text{m}^3} = 0{,}625 \cdot 94\,\tfrac{\text{Bq}}{\text{m}^3} = 58{,}75\,\tfrac{\text{Bq}}{\text{m}^3}$
+**Sijoitus:** a) Pitoisuuksien summa on $$
+\begin{aligned}
+&380 + 260 + 140 + 300 \\
+&= 1080\,\tfrac{\text{Bq}}{\text{m}^3}
+\end{aligned}
+$$, joten $c_\text{ka} = \dfrac{1080\,\tfrac{\text{Bq}}{\text{m}^3}}{4} = 270\,\tfrac{\text{Bq}}{\text{m}^3}$; b) $H = 4{,}0\,\text{mSv} \cdot \dfrac{270\,\tfrac{\text{Bq}}{\text{m}^3}}{94\,\tfrac{\text{Bq}}{\text{m}^3}} \cdot 0{,}80 = 4{,}0\,\text{mSv} \cdot 2{,}8723 \cdot 0{,}80 = 9{,}19\,\text{mSv}$; d) $c = \dfrac{2{,}0\,\text{mSv}}{4{,}0\,\text{mSv} \cdot 0{,}80} \cdot 94\,\tfrac{\text{Bq}}{\text{m}^3} = 0{,}625 \cdot 94\,\tfrac{\text{Bq}}{\text{m}^3} = 58{,}75\,\tfrac{\text{Bq}}{\text{m}^3}$
 **Vastaus:** $59\,\tfrac{\text{Bq}}{\text{m}^3}$, kaksi merkitsevää numeroa kuten tavoiteannoksessa $2{,}0\,\text{mSv}$. Kohdan b) annos on noin $9{,}2\,\text{mSv}$.
-**Mallivastaus kohtaan c):** Talvella radonpitoisuus on suurin, koska lämmin sisäilma nousee ja imee radonia maaperästä (savupiippuilmiö) ja ikkunat ovat kiinni. Tässä mallissa annos määräytyy vuoden keskipitoisuudesta $270\,\tfrac{\text{Bq}}{\text{m}^3}$, joten talven arvosta $380\,\tfrac{\text{Bq}}{\text{m}^3}$ laskettu annos olisi $\tfrac{380}{270} = 1{,}4$-kertainen eli noin $40\,\%$ liian suuri. Virallinen mittaus tehdään silti lämmityskaudella, vähintään kahden kuukauden ajan, ja tulosta käytetään vuosikeskiarvon arviona: se on hieman suuri mutta turvallisella puolella. Tässä lämmityskauden (syksy, talvi ja kevät) keskipitoisuus on $(300 + 380 + 260) : 3 \approx 313\,\tfrac{\text{Bq}}{\text{m}^3}$ eli yli viitearvon $300\,\tfrac{\text{Bq}}{\text{m}^3}$, joten radonkorjausta suositeltaisiin. Vuoden keskipitoisuus $270\,\tfrac{\text{Bq}}{\text{m}^3}$ on kuitenkin viitearvoa pienempi; se on silti noin kolminkertainen suomalaisten asuntojen keskiarvoon verrattuna.
+**Mallivastaus kohtaan c):** Talvella radonpitoisuus on suurin, koska lämmin sisäilma nousee ja imee radonia maaperästä (savupiippuilmiö) ja ikkunat ovat kiinni. Tässä mallissa annos määräytyy vuoden keskipitoisuudesta $270\,\tfrac{\text{Bq}}{\text{m}^3}$, joten talven arvosta $380\,\tfrac{\text{Bq}}{\text{m}^3}$ laskettu annos olisi $\tfrac{380}{270} = 1{,}4$-kertainen eli noin $40\,\%$ liian suuri. Virallinen mittaus tehdään silti lämmityskaudella, vähintään kahden kuukauden ajan, ja tulosta käytetään vuosikeskiarvon arviona: se on hieman suuri mutta turvallisella puolella. Tässä lämmityskauden (syksy, talvi ja kevät) keskipitoisuus on $$
+\begin{aligned}
+(300 + 380 + 260) : 3 &\approx 313\,\tfrac{\text{Bq}}{\text{m}^3}
+\end{aligned}
+$$ eli yli viitearvon $300\,\tfrac{\text{Bq}}{\text{m}^3}$, joten radonkorjausta suositeltaisiin. Vuoden keskipitoisuus $270\,\tfrac{\text{Bq}}{\text{m}^3}$ on kuitenkin viitearvoa pienempi; se on silti noin kolminkertainen suomalaisten asuntojen keskiarvoon verrattuna.
 **Järkevyys:** Tarkistus: $4{,}0\,\text{mSv} \cdot \dfrac{58{,}75}{94} \cdot 0{,}80 = 4{,}0\,\text{mSv} \cdot 0{,}625 \cdot 0{,}80 = 2{,}0\,\text{mSv}$. Pitoisuuden pitää pienentyä noin $78\,\%$ (arvosta $270$ arvoon $58{,}75$), mikä on suuri mutta radonkorjauksilla saavutettavissa oleva muutos.
 
 ## fy8-13-L3-05
 **Annettu:** annosnopeus $1{,}0\,\text{m}$:n etäisyydellä betoniseinän takana taulukosta (paksuudella $0$, $4{,}0$, $8{,}0$ ja $12{,}0\,\text{cm}$: $240$, $121$, $60{,}5$ ja $29{,}8\,\mu\text{Sv/h}$), työpisteen etäisyys $r_2 = 2{,}0\,\text{m}$, seinän paksuus $d = 10\,\text{cm}$, annosrajoite $H = 25\,\mu\text{Sv}$
 **Kysytty:** a) betonin puoliintumispaksuus $d_{1/2}$, b) annosnopeus työpisteessä, c) suurin työaika $t$ tunteina, d) yksi oletus, joka voi tehdä työajasta liian pitkän
 **Periaate:** Betoni puolittaa annosnopeuden jokaisella puoliintumispaksuudella, ja etäisyys pienentää sitä neliölain mukaan. Molemmat vaikutukset ovat toisistaan riippumattomia, joten niiden tekijät kerrotaan. Annosnopeus työpisteessä on vakio, joten sallittu aika on annosrajoite jaettuna annosnopeudella.
-**Taulukon lukeminen:** Taulukossa $240 \to 121 \to 60{,}5 \to 29{,}8\,\mu\text{Sv/h}$: annosnopeus puolittuu aina, kun paksuus kasvaa $4{,}0\,\text{cm}$ ($240 : 2 = 120 \approx 121$, $121 : 2 \approx 60{,}5$ ja $60{,}5 : 2 \approx 30 \approx 29{,}8$). Siksi $d_{1/2} \approx 4{,}0\,\text{cm}$.
+**Taulukon lukeminen:** Taulukossa $$
+240 \to 121 \to 60{,}5 \to 29{,}8\,\mu\text{Sv/h}
+$$: annosnopeus puolittuu aina, kun paksuus kasvaa $4{,}0\,\text{cm}$ ($240 : 2 = 120 \approx 121$, $121 : 2 \approx 60{,}5$ ja $60{,}5 : 2 \approx 30 \approx 29{,}8$). Siksi $d_{1/2} \approx 4{,}0\,\text{cm}$.
 **Kaava:** $\dot{H} = \dot{H}_1 \left(\dfrac{r_1}{r_2}\right)^2 \left(\dfrac{1}{2}\right)^{d/d_{1/2}}$ ja $H = \dot{H} t$, joten $t = \dfrac{H}{\dot{H}}$
 **Muunnokset:** Ei tarvita: paksuus ja puoliintumispaksuus ovat senttimetreinä, etäisyydet metreinä ja annos mikrosieverteinä.
-**Sijoitus:** b) $\dot{H} = 240\,\mu\text{Sv/h} \cdot \left(\dfrac{1{,}0\,\text{m}}{2{,}0\,\text{m}}\right)^2 \cdot \left(\dfrac{1}{2}\right)^{10\,\text{cm}/4{,}0\,\text{cm}} = 60\,\mu\text{Sv/h} \cdot 0{,}1768 = 10{,}61\,\mu\text{Sv/h}$; c) $t = \dfrac{25\,\mu\text{Sv}}{10{,}61\,\mu\text{Sv/h}} = 2{,}357\,\text{h}$
+**Sijoitus:** b) $$
+\begin{aligned}
+\dot{H} &= 240\,\mu\text{Sv/h} \cdot \left(\dfrac{1{,}0\,\text{m}}{2{,}0\,\text{m}}\right)^2 \\
+&\cdot \left(\dfrac{1}{2}\right)^{10\,\text{cm}/4{,}0\,\text{cm}} \\
+&= 60\,\mu\text{Sv/h} \cdot 0{,}1768 \\
+&= 10{,}61\,\mu\text{Sv/h}
+\end{aligned}
+$$; c) $t = \dfrac{25\,\mu\text{Sv}}{10{,}61\,\mu\text{Sv/h}} = 2{,}357\,\text{h}$
 **Vastaus:** $2{,}4\,\text{h}$, kaksi merkitsevää numeroa kuten annosrajoitteessa $25\,\mu\text{Sv}$ ja seinän paksuudessa $10\,\text{cm}$. Kohdan b) annosnopeus on noin $11\,\mu\text{Sv/h}$.
 **Mallivastaus kohtaan d):** Kaava olettaa, että betoniin osuneet fotonit joko absorboituvat tai pääsevät läpi samalla osuudella. Todellisuudessa osa gammasäteilystä siroaa seinässä ja ympäristössä, ja sironnut säteily voi nostaa annosnopeuden työpisteessä laskettua suuremmaksi. Myös lähteen pistemäisyys ja puoliintumispaksuuden lukeminen taulukosta ovat likimääräisiä. Siksi työaika kannattaa valita laskettua lyhyemmäksi, esimerkiksi puolet siitä, ja seurata annosta annosmittarilla.
-**Järkevyys:** Seinän takana $1{,}0\,\text{m}$:n etäisyydellä annosnopeus olisi $240 \cdot \left(\tfrac{1}{2}\right)^{2{,}5} = 42{,}4\,\mu\text{Sv/h}$, joka on taulukon arvojen $60{,}5$ ja $29{,}8\,\mu\text{Sv/h}$ välissä, kuten $10\,\text{cm}$ on paksuuksien $8{,}0\,\text{cm}$ ja $12{,}0\,\text{cm}$ välissä. Etäisyys $2{,}0\,\text{m}$ pienentää sen neljäsosaan eli $10{,}6\,\mu\text{Sv/h}$, ja $2{,}4\,\text{h} \cdot 10{,}6\,\mu\text{Sv/h} \approx 25\,\mu\text{Sv}$.
+**Järkevyys:** Seinän takana $1{,}0\,\text{m}$:n etäisyydellä annosnopeus olisi $240 \cdot \left(\tfrac{1}{2}\right)^{2{,}5} = 42{,}4\,\mu\text{Sv/h}$, joka on taulukon arvojen $60{,}5$ ja $29{,}8\,\mu\text{Sv/h}$ välissä, kuten $10\,\text{cm}$ on paksuuksien $8{,}0\,\text{cm}$ ja $12{,}0\,\text{cm}$ välissä. Etäisyys $2{,}0\,\text{m}$ pienentää sen neljäsosaan eli $10{,}6\,\mu\text{Sv/h}$, ja $$
+\begin{aligned}
+2{,}4\,\text{h} \cdot 10{,}6\,\mu\text{Sv/h} &\approx 25\,\mu\text{Sv}
+\end{aligned}
+$$.
 
 ## fy8-13-L2-08
 **Kysytty:** lennoista vuodessa kertyvän annoksen $H$ suuruusluokka millisieverteinä.

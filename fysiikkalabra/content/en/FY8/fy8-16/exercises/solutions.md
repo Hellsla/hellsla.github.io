@@ -16,7 +16,12 @@
 **Conversions:** None needed: the speed of light is already in kilometres per second, and the redshift is a pure number.
 **Substitution:** $v = 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.0250 = 7495\,\text{km/s}$
 **Answer:** $7.50 \cdot 10^{3}\,\text{km/s}$, three significant figures, as in the redshift $0.0250$.
-**Reasonableness:** A redshift of $0.025$ means that the speed is $2.5\,\%$ of the speed of light: $0.025 \cdot 300\,000\,\text{km/s} = 7500\,\text{km/s}$. The speed is much smaller than the speed of light, as it should be for a small redshift.
+**Reasonableness:** A redshift of $0.025$ means that the speed is $2.5\,\%$ of the speed of light: $$
+\begin{aligned}
+&0.025 \cdot 300\,000\,\text{km/s} \\
+&= 7500\,\text{km/s}
+\end{aligned}
+$$. The speed is much smaller than the speed of light, as it should be for a small redshift.
 
 ## fy8-16-L1-03
 **Given:** distance of the galaxy $d = 120\,\text{Mpc}$, Hubble constant $H_0 = 70\,\tfrac{\text{km/s}}{\text{Mpc}}$
@@ -44,7 +49,15 @@
 **Principle:** The background radiation is electromagnetic radiation whose energy is quantised into photons (chapter *The photoelectric effect and the photon*). The energy of a photon is inversely proportional to its wavelength.
 **Formula:** $E = hf$ and $f = \dfrac{c}{\lambda}$, so $E = \dfrac{hc}{\lambda}$
 **Conversions:** $1.06\,\text{mm} = 1.06 \cdot 10^{-3}\,\text{m}$. To change from joules to electronvolts, substitute $1\,\text{J} = \dfrac{1}{1.602 \cdot 10^{-19}}\,\text{eV}$.
-**Substitution:** $E = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{1.06 \cdot 10^{-3}\,\text{m}} = 1.8740 \cdot 10^{-22}\,\text{J} = \dfrac{1.8740 \cdot 10^{-22}}{1.602 \cdot 10^{-19}}\,\text{eV} = 1.1698 \cdot 10^{-3}\,\text{eV}$
+**Substitution:** $$
+\begin{aligned}
+E &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{1.06 \cdot 10^{-3}\,\text{m}} \\
+&= 1.8740 \cdot 10^{-22}\,\text{J} \\
+&= \dfrac{1.8740 \cdot 10^{-22}}{1.602 \cdot 10^{-19}}\,\text{eV} \\
+&= 1.1698 \cdot 10^{-3}\,\text{eV}
+\end{aligned}
+$$
 **Answer:** $1.17 \cdot 10^{-3}\,\text{eV}$, three significant figures, as in the wavelength $1.06\,\text{mm}$.
 **Reasonableness:** A photon of visible light has an energy of $1.7$–$3.3\,\text{eV}$ and a wavelength of about $500\,\text{nm}$. The wavelength of the background radiation is about $2000$ times longer, so the energy is about $2000$ times smaller: $2\,\text{eV} : 2000 = 1 \cdot 10^{-3}\,\text{eV}$.
 
@@ -74,7 +87,15 @@
 **Principle:** The expansion has stretched every wavelength by a factor of $1100$, so when it was released, the wavelength was $1100$ times shorter than now. The energy of a photon is obtained from the wavelength, as in the chapter *The photoelectric effect and the photon*.
 **Formula:** $\lambda = \dfrac{\lambda_\text{now}}{1100}$ and $E = \dfrac{hc}{\lambda}$, so $E = \dfrac{1100\,hc}{\lambda_\text{now}}$
 **Conversions:** $1.06\,\text{mm} = 1.06 \cdot 10^{-3}\,\text{m}$, and to change from joules to electronvolts, substitute $1\,\text{J} = \dfrac{1}{1.602 \cdot 10^{-19}}\,\text{eV}$.
-**Substitution:** $\lambda = \dfrac{1.06 \cdot 10^{-3}\,\text{m}}{1100} = 9.636 \cdot 10^{-7}\,\text{m}$ and $E = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{9.636 \cdot 10^{-7}\,\text{m}} = 2.0615 \cdot 10^{-19}\,\text{J} = \dfrac{2.0615 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 1.287\,\text{eV}$
+**Substitution:** $\lambda = \dfrac{1.06 \cdot 10^{-3}\,\text{m}}{1100} = 9.636 \cdot 10^{-7}\,\text{m}$ and $$
+\begin{aligned}
+E &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{9.636 \cdot 10^{-7}\,\text{m}} \\
+&= 2.0615 \cdot 10^{-19}\,\text{J} \\
+&= \dfrac{2.0615 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} \\
+&= 1.287\,\text{eV}
+\end{aligned}
+$$
 **Answer:** $1.3\,\text{eV}$, two significant figures, as in the stretching factor $1100$.
 **Reasonableness:** The wavelength $964\,\text{nm}$ is near-infrared, a little below the limit of visible light, $1.7\,\text{eV}$. A typical photon was therefore much weaker than the $13.6\,\text{eV}$ needed to ionise hydrogen. However, there are vastly more photons than atoms, so the atoms stayed ionised for as long as there were enough of the rare photons above $13.6\,\text{eV}$. When the temperature fell to about $3000\,\text{K}$, there were too few of them, the electrons bound to atoms and the light could travel freely.
 
@@ -116,7 +137,12 @@
 **Conversions:** None needed: the nanometres and the kilometres per second cancel.
 **Substitution:** $z = \dfrac{676.2\,\text{nm} - 656.3\,\text{nm}}{656.3\,\text{nm}} = \dfrac{19.9\,\text{nm}}{656.3\,\text{nm}} = 0.030322$, $v = 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.030322 = 9090.5\,\text{km/s}$ and $d = \dfrac{9090.5\,\text{km/s}}{70\,\tfrac{\text{km/s}}{\text{Mpc}}} = 129.9\,\text{Mpc}$
 **Answer:** $1.3 \cdot 10^{2}\,\text{Mpc}$, two significant figures, as in the Hubble constant $70\,\tfrac{\text{km/s}}{\text{Mpc}}$.
-**Reasonableness:** The shifts $13.2\,\text{nm}$, $14.8\,\text{nm}$ and $19.9\,\text{nm}$ are not equal, but each is $3.0\,\%$ of its own wavelength, as it should be in redshift. Estimate: $0.03 \cdot 300\,000\,\text{km/s} = 9000\,\text{km/s}$ and $9000 : 70 \approx 130$.
+**Reasonableness:** The shifts $13.2\,\text{nm}$, $14.8\,\text{nm}$ and $19.9\,\text{nm}$ are not equal, but each is $3.0\,\%$ of its own wavelength, as it should be in redshift. Estimate: $$
+\begin{aligned}
+&0.03 \cdot 300\,000\,\text{km/s} \\
+&= 9000\,\text{km/s}
+\end{aligned}
+$$ and $9000 : 70 \approx 130$.
 
 ## fy8-16-L1-06
 **Asked:** what causes the shift of the spectral lines of distant galaxies to longer wavelengths, that is, the redshift.
@@ -209,4 +235,12 @@ The distance of galaxy B is about $3.0$ times the distance of galaxy A, two sign
 **Conversions:** None needed: the wavelengths are in nanometres, and the unit cancels.
 **Substitution:** a) $z = \dfrac{486.4\,\text{nm} - 121.6\,\text{nm}}{121.6\,\text{nm}} = \dfrac{364.8\,\text{nm}}{121.6\,\text{nm}} = 3.000$. b) $v = c\,z = 3.000\,c = 8.99 \cdot 10^{5}\,\text{km/s}$. c) $k = 1 + 3.000 = 4.000$ and $T = 4.000 \cdot 2.725\,\text{K} = 10.9\,\text{K}$
 **Answer:** $10.9\,\text{K}$, three significant figures, as in the redshift $z = 3.00$. a) $z = 3.00$. b) The formula $v = c\,z$ is an approximation for a small redshift ($z < 0.1$), and here $z = 3.00$ is much larger, so the result cannot be regarded as the speed of the galaxy.
-**Reasonableness:** A common slip is to use $z = 3$ as the stretching factor instead of $1 + z = 4$, which would wrongly give the temperature $8.2\,\text{K}$. The temperature $10.9\,\text{K}$ is greater than the present $2.725\,\text{K}$ but much smaller than the $3000\,\text{K}$ when the background radiation was released, as it should be, because the light of the quasar set out much later than the background radiation. The typical wavelength was then $1.06\,\text{mm} : 4 = 0.265\,\text{mm}$, and the product $T \cdot \lambda$ is the same as now: $10.9\,\text{K} \cdot 0.265\,\text{mm} = 2.89\,\text{K mm}$ and $2.725\,\text{K} \cdot 1.06\,\text{mm} = 2.89\,\text{K mm}$.
+**Reasonableness:** A common slip is to use $z = 3$ as the stretching factor instead of $1 + z = 4$, which would wrongly give the temperature $8.2\,\text{K}$. The temperature $10.9\,\text{K}$ is greater than the present $2.725\,\text{K}$ but much smaller than the $3000\,\text{K}$ when the background radiation was released, as it should be, because the light of the quasar set out much later than the background radiation. The typical wavelength was then $1.06\,\text{mm} : 4 = 0.265\,\text{mm}$, and the product $T \cdot \lambda$ is the same as now: $$
+\begin{aligned}
+10.9\,\text{K} \cdot 0.265\,\text{mm} &= 2.89\,\text{K mm}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+2.725\,\text{K} \cdot 1.06\,\text{mm} &= 2.89\,\text{K mm}
+\end{aligned}
+$$.

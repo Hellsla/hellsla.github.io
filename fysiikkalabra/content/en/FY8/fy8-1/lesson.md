@@ -162,7 +162,18 @@ With this model every observation is explained. For light of one colour, the int
 <figure class="unit-photo"><img src="pics/fy8/photomultiplier-tube.webp" alt="A large round glass bulb with a mirror-like inner surface in a museum display case."><figcaption>A photomultiplier tube from the Super-Kamiokande neutrino detector in a museum in Tokyo. A photon hitting the inner surface of the bulb releases an electron in the photoelectric effect, and the tube amplifies it into a measurable electric pulse.</figcaption></figure>
 
 ### The electronvolt
-The energies of photons and electrons are very small numbers in joules, so they are often given in the unit **electronvolt** ($\text{eV}$). One electronvolt is the energy an electron gains when it is accelerated in an electric field through a voltage of $1\,\text{V}$. Since the magnitude of the charge of the electron is $e = 1.602 \cdot 10^{-19}\,\text{C}$, we have $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} = 1.602 \cdot 10^{-19}\,\text{J}$. The conversion is done by substitution: for example $3.20 \cdot 10^{-19}\,\text{J} = \tfrac{3.20 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} \approx 2.00\,\text{eV}$.
+The energies of photons and electrons are very small numbers in joules, so they are often given in the unit **electronvolt** ($\text{eV}$). One electronvolt is the energy an electron gains when it is accelerated in an electric field through a voltage of $1\,\text{V}$. Since the magnitude of the charge of the electron is $e = 1.602 \cdot 10^{-19}\,\text{C}$, we have $$
+\begin{aligned}
+1\,\text{eV} &= 1.602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} \\
+&= 1.602 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$. The conversion is done by substitution: for example $$
+\begin{aligned}
+&3.20 \cdot 10^{-19}\,\text{J} \\
+&= \tfrac{3.20 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} \\
+&\approx 2.00\,\text{eV}
+\end{aligned}
+$$.
 
 ## Formula: Photon energy
 
@@ -175,7 +186,13 @@ where $E$ is the photon energy ($\text{J}$), $h = 6.626 \cdot 10^{-34}\,\text{J}
 ```kaavat
 photon energy :: E = \frac{hc}{\lambda}
 ```
-where $\lambda$ is the wavelength of the radiation in a vacuum ($\text{m}$). The shorter the wavelength, the greater the photon energy. For example, the photon energy of green light, $\lambda = 500\,\text{nm}$, is $E = \tfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^8\,\text{m/s}}{500 \cdot 10^{-9}\,\text{m}} = 3.97 \cdot 10^{-19}\,\text{J}$, or $2.48\,\text{eV}$. For estimates it is worth converting the product $hc$ once into electronvolts and nanometres. Since $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$ and $1\,\text{m} = 10^{9}\,\text{nm}$, the product is
+where $\lambda$ is the wavelength of the radiation in a vacuum ($\text{m}$). The shorter the wavelength, the greater the photon energy. For example, the photon energy of green light, $\lambda = 500\,\text{nm}$, is $$
+\begin{aligned}
+&E \\
+&= \tfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^8\,\text{m/s}}{500 \cdot 10^{-9}\,\text{m}} \\
+&= 3.97 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$, or $2.48\,\text{eV}$. For estimates it is worth converting the product $hc$ once into electronvolts and nanometres. Since $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$ and $1\,\text{m} = 10^{9}\,\text{nm}$, the product is
 
 ```latex
 \begin{aligned}
@@ -257,7 +274,12 @@ where $hf$ is the photon energy, $W$ is the work function of the metal and $E_\t
 When the equation is written in the form $E_\text{k,max} = hf - W$, it is the equation of a straight line: the maximum kinetic energy grows steadily with the frequency, and the slope of the line is the Planck constant $h$ for all metals. The lines of different metals are therefore parallel, and each starts on the horizontal axis at the threshold frequency of its metal. Robert Millikan measured such lines in 1916 and obtained the Planck constant from the slope. The intensity of the light does not appear in the equation at all.
 
 ### Zinc needs short-wavelength ultraviolet
-The threshold frequency corresponds to the **threshold wavelength** $\lambda_0 = hc : W$: radiation of longer wavelength does not release electrons. Electrons are released from zinc only if the photon energy of the radiation exceeds the work function of zinc. With the work function $4.31\,\text{eV}$ the threshold wavelength is $\lambda_0 \approx 1240\,\text{eV}\,\text{nm} : 4.31\,\text{eV} \approx 288\,\text{nm}$. For example, an ordinary $365\,\text{nm}$ UV-A lamp is therefore not enough, but ultraviolet radiation of short enough wavelength, such as $254\,\text{nm}$ UV-C, can release electrons. The experiment works best with a freshly polished zinc surface, because an oxide layer and dirt on the surface weaken the effect.
+The threshold frequency corresponds to the **threshold wavelength** $\lambda_0 = hc : W$: radiation of longer wavelength does not release electrons. Electrons are released from zinc only if the photon energy of the radiation exceeds the work function of zinc. With the work function $4.31\,\text{eV}$ the threshold wavelength is $$
+\begin{aligned}
+\lambda_0 &\approx 1240\,\text{eV}\,\text{nm} : 4.31\,\text{eV} \\
+&\approx 288\,\text{nm}
+\end{aligned}
+$$. For example, an ordinary $365\,\text{nm}$ UV-A lamp is therefore not enough, but ultraviolet radiation of short enough wavelength, such as $254\,\text{nm}$ UV-C, can release electrons. The experiment works best with a freshly polished zinc surface, because an oxide layer and dirt on the surface weaken the effect.
 
 UV-C radiation damages the eyes and skin even in a short exposure. At school the experiment is not done with an unshielded UV-C lamp: it is done as a teacher demonstration with shielded apparatus, or studied with a simulation and ready-made measurement data.
 

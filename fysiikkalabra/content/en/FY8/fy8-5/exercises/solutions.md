@@ -54,7 +54,13 @@
 **Principle:** Energy is conserved: the energy of the atom decreases by the difference between the energies of the states, and the same energy leaves as a photon, whose energy is $hf = \tfrac{hc}{\lambda}$. In the hydrogen atom the energy of a state depends only on the principal quantum number.
 **Formula:** $\dfrac{hc}{\lambda} = E_3 - E_1$, so $\lambda = \dfrac{hc}{E_3 - E_1}$
 **Conversions:** The energy difference in electronvolts is $E_3 - E_1 = -\tfrac{13.6\,\text{eV}}{9} + 13.6\,\text{eV} = 12.089\,\text{eV}$. Substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$: $E_3 - E_1 = 12.089 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.9366 \cdot 10^{-18}\,\text{J}$. Finally $1\,\text{nm} = 10^{-9}\,\text{m}$.
-**Substitution:** First $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ and then $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.9366 \cdot 10^{-18}\,\text{J}} = 1.0257 \cdot 10^{-7}\,\text{m} = 102.57\,\text{nm}$
+**Substitution:** First $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ and then $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{1.9366 \cdot 10^{-18}\,\text{J}} = 1.0257 \cdot 10^{-7}\,\text{m} = 102.57\,\text{nm}$
 **Answer:** $103\,\text{nm}$, three significant figures like the energy $13.6\,\text{eV}$.
 **Reasonableness:** The energy of the photon is about $12\,\text{eV}$, more than the energy $10.2\,\text{eV}$ of the transition $2\text{p} \to 1\text{s}$, so the wavelength must be shorter than the $122\,\text{nm}$ of that transition. The radiation is ultraviolet, like all the lines of hydrogen that end in the ground state.
 
@@ -84,7 +90,13 @@
 **Principle:** The energy of the photon must be at least the energy $0 - E_2$ needed for release. The energy of a photon, $\tfrac{hc}{\lambda}$, decreases as the wavelength increases, so the greatest suitable wavelength corresponds to exactly this energy.
 **Formula:** $\dfrac{hc}{\lambda_\text{max}} = 0 - E_2$, so $\lambda_\text{max} = \dfrac{hc}{-E_2}$
 **Conversions:** $-E_2 = \tfrac{13.6\,\text{eV}}{4} = 3.40\,\text{eV}$. Substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$: $-E_2 = 3.40 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 5.4468 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{nm} = 10^{-9}\,\text{m}$.
-**Substitution:** First $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ and then $\lambda_\text{max} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{5.4468 \cdot 10^{-19}\,\text{J}} = 3.6470 \cdot 10^{-7}\,\text{m} = 364.70\,\text{nm}$
+**Substitution:** First $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ and then $\lambda_\text{max} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{5.4468 \cdot 10^{-19}\,\text{J}} = 3.6470 \cdot 10^{-7}\,\text{m} = 364.70\,\text{nm}$
 **Answer:** $365\,\text{nm}$, three significant figures like the energy $13.6\,\text{eV}$.
 **Reasonableness:** The energy $3.4\,\text{eV}$ is slightly above the energy of a photon of violet light, so the wavelength is just below the visible range, near ultraviolet. Visible light with a longer wavelength does not release an electron from the shell $n = 2$.
 
@@ -93,7 +105,13 @@
 **Asked:** the number of orbitals in the shell $n$ to which the electron moves
 **Principle:** An atom can absorb a photon only if the energy of the photon is exactly the difference between the energies of two states. The energy of the photon gives the energy of the upper state, $E_n = E_1 + \tfrac{hc}{\lambda}$, from that the number of the shell $n$, and the shell $n$ has $n^2$ orbitals.
 **Formula:** $E_n = E_1 + \dfrac{hc}{\lambda}$, so $n = \sqrt{\dfrac{13.6\,\text{eV}}{-E_n}}$ and the number of orbitals is $n^2$
-**Conversions:** $\lambda = 97.3\,\text{nm} = 97.3 \cdot 10^{-9}\,\text{m}$. With $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, the energy of the photon is $\tfrac{hc}{\lambda} = \tfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{97.3 \cdot 10^{-9}\,\text{m}} = 2.0416 \cdot 10^{-18}\,\text{J}$. It is converted to electronvolts by substituting $1\,\text{J} = \tfrac{1}{1.602 \cdot 10^{-19}}\,\text{eV}$: $\tfrac{2.0416 \cdot 10^{-18}}{1.602 \cdot 10^{-19}}\,\text{eV} = 12.744\,\text{eV}$.
+**Conversions:** $\lambda = 97.3\,\text{nm} = 97.3 \cdot 10^{-9}\,\text{m}$. With $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, the energy of the photon is $\tfrac{hc}{\lambda} = \tfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{97.3 \cdot 10^{-9}\,\text{m}} = 2.0416 \cdot 10^{-18}\,\text{J}$. It is converted to electronvolts by substituting $1\,\text{J} = \tfrac{1}{1.602 \cdot 10^{-19}}\,\text{eV}$: $\tfrac{2.0416 \cdot 10^{-18}}{1.602 \cdot 10^{-19}}\,\text{eV} = 12.744\,\text{eV}$.
 **Substitution:** $E_n = -13.6\,\text{eV} + 12.744\,\text{eV} = -0.856\,\text{eV}$ and $n = \sqrt{\dfrac{13.6\,\text{eV}}{0.856\,\text{eV}}} = \sqrt{15.9} = 3.99 \approx 4$, so there are $4^2 = 16$ orbitals
 **Answer:** $16$ orbitals (shell $n = 4$: $4\text{s}$, three $4\text{p}$, five $4\text{d}$ and seven $4\text{f}$); $n$ is an integer, so the rounding $3.99 \to 4$ is reliable.
 **Reasonableness:** The energy of the shell $n = 4$, $-\tfrac{13.6\,\text{eV}}{16} = -0.85\,\text{eV}$, equals the calculated $-0.856\,\text{eV}$ to the precision of three figures of the wavelength. The energies of the shells $n = 3$ ($-1.51\,\text{eV}$) and $n = 5$ ($-0.54\,\text{eV}$) are clearly farther away, so no other shell fits.
@@ -102,7 +120,12 @@
 **Given:** filling order $1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$; at most two electrons per orbital; the $3\text{p}$ subshell is half full
 **Asked:** the number of electrons $N$ in the atom
 **Principle:** In the ground state the electrons fill the orbitals starting from the lowest energy, so electrons go to the $3\text{p}$ subshell only when $1\text{s}$, $2\text{s}$, $2\text{p}$ and $3\text{s}$ are full. An s subshell has one orbital and a p subshell three, so they hold $2$ and $6$ electrons. A half-full $3\text{p}$ subshell contains half of its maximum number.
-**Formula:** $N = N_\text{1s} + N_\text{2s} + N_\text{2p} + N_\text{3s} + \dfrac{N_\text{3p,max}}{2}$
+**Formula:** $$
+\begin{aligned}
+N &= N_\text{1s} + N_\text{2s} + N_\text{2p} + N_\text{3s} \\
+&+ \dfrac{N_\text{3p,max}}{2}
+\end{aligned}
+$$
 **Conversions:** None are needed, because a count is asked.
 **Substitution:** $N = 2 + 2 + 6 + 2 + \dfrac{6}{2} = 2 + 2 + 6 + 2 + 3 = 15$
 **Answer:** $15$ electrons (the element is phosphorus, configuration $1\text{s}^2\,2\text{s}^2\,2\text{p}^6\,3\text{s}^2\,3\text{p}^3$); the result is an exact integer.
@@ -171,8 +194,19 @@ a) The most common class is $0.05$–$0.10\,\text{nm}$.
 
 b) $72.3\,\%$, three significant figures like the counts.
 
-c) $72.3\,\%$ of the measurements land at a distance of less than $0.10\,\text{nm}$ and $92.0\,\%$ at a distance of less than $0.15\,\text{nm}$, so $90\,\%$ is reached between these. Interpolating linearly, the boundary is about $0.10\,\text{nm} + \tfrac{90.0 - 72.3}{92.0 - 72.3} \cdot 0.05\,\text{nm} = 0.145\,\text{nm}$, which is close to $0.14\,\text{nm}$. So the data is consistent with the boundary. There are hits outside the boundary too: at a distance of more than $0.15\,\text{nm}$ there are $23 + 7 + 2 = 32$ measurements, that is, $8.0\,\%$.
-**Reasonableness:** The most common class $0.05$–$0.10\,\text{nm}$ contains the Bohr radius $0.053\,\text{nm}$, and the class nearest the nucleus is the second most common. The counts decrease quickly outwards, and in total $118 + 171 + 79 + 23 + 7 + 2 = 400$, as it should be.
+c) $72.3\,\%$ of the measurements land at a distance of less than $0.10\,\text{nm}$ and $92.0\,\%$ at a distance of less than $0.15\,\text{nm}$, so $90\,\%$ is reached between these. Interpolating linearly, the boundary is about $$
+\begin{aligned}
+&0.10\,\text{nm} + \tfrac{90.0 - 72.3}{92.0 - 72.3} \\
+&\cdot 0.05\,\text{nm} \\
+&= 0.145\,\text{nm}
+\end{aligned}
+$$, which is close to $0.14\,\text{nm}$. So the data is consistent with the boundary. There are hits outside the boundary too: at a distance of more than $0.15\,\text{nm}$ there are $23 + 7 + 2 = 32$ measurements, that is, $8.0\,\%$.
+**Reasonableness:** The most common class $0.05$–$0.10\,\text{nm}$ contains the Bohr radius $0.053\,\text{nm}$, and the class nearest the nucleus is the second most common. The counts decrease quickly outwards, and in total $$
+\begin{aligned}
+&118 + 171 + 79 + 23 + 7 + 2 \\
+&= 400
+\end{aligned}
+$$, as it should be.
 
 ## fy8-5-L2-06
 **Given:** length of the string $L = 0.80\,\text{m}$; speed of the wave $v = 64\,\text{m/s}$; ends of the string fixed
@@ -202,7 +236,13 @@ c) As the number of nodes increases, more antinodes fit on the string, so the wa
 **Principle:** The energy of the atom decreases by the difference of the energies of the states, and the same energy leaves as a photon: $E_\text{f} = \tfrac{hc}{\lambda} = E_n - E_2$. Substituting the energy-level formula gives $E_\text{f} = 13.6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)$. If the points are plotted according to this equation, they fall on a line whose slope is the constant of the energy-level formula.
 **Reading the graph:** The values on the horizontal axis are $\tfrac{1}{4} - \tfrac{1}{n^2} = 0.139$, $0.188$, $0.210$ and $0.222$ for the shells $n = 3, 4, 5, 6$, and the values on the vertical axis are the energies of part a). The points fall approximately on a line that passes through the origin; the measured points vary slightly around the line. As a check, the slope calculated through the first and the last measured point, $(0.1389;\ 1.887\,\text{eV})$ and $(0.2222;\ 3.020\,\text{eV})$, is $\dfrac{3.020\,\text{eV} - 1.887\,\text{eV}}{0.2222 - 0.1389} = 13.6\,\text{eV}$, and the line fitted to all the points, whose slope is used as the answer, gives $13.62\,\text{eV}$ and the constant term $-0.003\,\text{eV}$.
 **Formula:** $E_\text{f} = \dfrac{hc}{\lambda}$, $\ \dfrac{1}{n^2} = \dfrac{1}{4} - \dfrac{E_\text{f}}{13.6\,\text{eV}}$ and the slope $k = \dfrac{\Delta E_\text{f}}{\Delta\left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)}$
-**Conversions:** The wavelength $657.1\,\text{nm} = 657.1 \cdot 10^{-9}\,\text{m}$ and similarly for the others. The product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Joules are converted to electronvolts by dividing by $1.602 \cdot 10^{-19}$.
+**Conversions:** The wavelength $657.1\,\text{nm} = 657.1 \cdot 10^{-9}\,\text{m}$ and similarly for the others. The product $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. Joules are converted to electronvolts by dividing by $1.602 \cdot 10^{-19}$.
 **Substitution:** a) For the first line $E_\text{f} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{657.1 \cdot 10^{-9}\,\text{m}} = 3.0231 \cdot 10^{-19}\,\text{J} = 1.887\,\text{eV}$. Similarly for the other lines: $2.555\,\text{eV}$, $2.860\,\text{eV}$ and $3.020\,\text{eV}$. b) For the first line $\dfrac{1}{n^2} = \dfrac{1}{4} - \dfrac{1.887\,\text{eV}}{13.6\,\text{eV}} = 0.2500 - 0.1388 = 0.1112$, so $n = \sqrt{\dfrac{1}{0.1112}} = 3.00$. Similarly for the other lines $n = 4.01$, $5.02$ and $5.98$. d) The energy of a photon starting from the shell $n = 7$ is $13.6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{49}\right) = 3.122\,\text{eV} = 5.002 \cdot 10^{-19}\,\text{J}$ and the wavelength is $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{5.002 \cdot 10^{-19}\,\text{J}} = 3.971 \cdot 10^{-7}\,\text{m} = 397.1\,\text{nm}$.
 **Answer:** a) $1.887\,\text{eV}$, $2.555\,\text{eV}$, $2.860\,\text{eV}$ and $3.020\,\text{eV}$; b) the starting shells are $n = 3, 4, 5$ and $6$, because $n$ is the number of the shell and therefore an integer, and the calculated values $3.00$, $4.01$, $5.02$ and $5.98$ differ from integers only by the measurement uncertainty; c) the slope is $13.6\,\text{eV}$, and it is the constant of the energy-level formula, that is, the absolute value of the ground-state energy of the hydrogen atom; d) about $397\,\text{nm}$.
 **Reasonableness:** The slope $13.6\,\text{eV}$ equals the constant of the energy-level formula, and the line passes through the origin, as $E_\text{f} = 13.6\,\text{eV} \cdot \left(\tfrac{1}{4} - \tfrac{1}{n^2}\right)$ requires. The predicted wavelength $397\,\text{nm}$ is shorter than $410.6\,\text{nm}$ of the fourth line, and the lines get closer together towards the limit where $n \to \infty$: then $E_\text{f} = \tfrac{13.6\,\text{eV}}{4} = 3.40\,\text{eV}$ and $\lambda = 365\,\text{nm}$. The lines are separate, because the allowed states of the electron are standing waves and the energy is quantised.
@@ -213,6 +253,12 @@ c) As the number of nodes increases, more antinodes fit on the string, so the wa
 **Principle:** In the ground state the electrons fill the orbitals starting from the lowest energy, at most two in each orbital. When a photon is absorbed, the energy of the atom changes by the energy of the photon, so the energy of the photon is the difference of the energies of the states, $\tfrac{hc}{\lambda} = \Delta E$. At least the ionisation energy is needed to release the electron, so the longest acceptable wavelength corresponds to the energy $E_\text{i}$.
 **Formula:** $\lambda = \dfrac{hc}{\Delta E}$ and $\lambda_\text{max} = \dfrac{hc}{E_\text{i}}$
 **Conversions:** $\Delta E = 2.10\,\text{eV} = 2.10 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.3642 \cdot 10^{-19}\,\text{J}$ and $E_\text{i} = 5.14\,\text{eV} = 5.14 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 8.2343 \cdot 10^{-19}\,\text{J}$. Finally $1\,\text{nm} = 10^{-9}\,\text{m}$.
-**Substitution:** First $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. In part c) $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.3642 \cdot 10^{-19}\,\text{J}} = 5.905 \cdot 10^{-7}\,\text{m} = 590.5\,\text{nm}$ and in part d) $\lambda_\text{max} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{8.2343 \cdot 10^{-19}\,\text{J}} = 2.412 \cdot 10^{-7}\,\text{m} = 241.2\,\text{nm}$.
+**Substitution:** First $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. In part c) $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.3642 \cdot 10^{-19}\,\text{J}} = 5.905 \cdot 10^{-7}\,\text{m} = 590.5\,\text{nm}$ and in part d) $\lambda_\text{max} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{8.2343 \cdot 10^{-19}\,\text{J}} = 2.412 \cdot 10^{-7}\,\text{m} = 241.2\,\text{nm}$.
 **Answer:** a) The atom has $11$ electrons, and the configuration is $1\text{s}^2\,2\text{s}^2\,2\text{p}^6\,3\text{s}^1$: the shells $n = 1$ and $n = 2$ fill up ($2 + 8 = 10$ electrons), and the eleventh electron is in the next lowest orbital, $3\text{s}$, so there is only one electron in the outermost shell. b) The valence electron is in the shell $n = 2$ in lithium, in the shell $n = 3$ in sodium and in the shell $n = 4$ in potassium. The higher the shell, the farther from the nucleus it is, and between it and the nucleus there are more and more full shells whose electrons repel it. The charge of the nucleus grows according to the numbers $3$, $11$ and $19$, but the ionisation energy still decreases from $5.39\,\text{eV}$ and $5.14\,\text{eV}$ to $4.34\,\text{eV}$, so the effect of the growth of the shell is greater than that of the charge of the nucleus. The formula $\tfrac{13.6\,\text{eV}}{n^2}$ of the hydrogen atom would give similarly decreasing values $3.40\,\text{eV}$, $1.51\,\text{eV}$ and $0.85\,\text{eV}$; for the alkali metals the values are greater, because the electrons of the inner shells do not completely screen the charge of the nucleus, so a greater charge than in hydrogen acts on the valence electron. c) The wavelength of the photon is $590\,\text{nm}$, three significant figures like the number $2.10\,\text{eV}$. d) A photon with a wavelength of at most $241\,\text{nm}$ is suitable for ionisation. The energy of the photon, $2.10\,\text{eV}$, is smaller than $E_\text{i} = 5.14\,\text{eV}$, so the photon of part c) is not enough to release the electron; it only moves the electron to the state $3\text{p}$.
 **Reasonableness:** The wavelength $590\,\text{nm}$ is in the region of visible light, at yellow light, and a sodium lamp glows yellow. The energies are consistent: an ionising photon needs the energy $5.14\,\text{eV}$, which is $\tfrac{5.14}{2.10} = 2.45$ times the energy of the exciting photon, and the wavelength is correspondingly $\tfrac{590.5\,\text{nm}}{241.2\,\text{nm}} = 2.45$ times as long. The ionisation limit $241\,\text{nm}$ is ultraviolet, as it should be.

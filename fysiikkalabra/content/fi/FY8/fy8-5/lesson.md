@@ -1415,7 +1415,13 @@ Vetyatomin elektroni siirtyy $3\text{d}$-orbitaalilta $2\text{p}$-orbitaalille, 
 
 <!-- vaihe -->
 
-**Sijoitus.** Lasketaan ensin osoittaja $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}98647 \cdot 10^{-25}\,\text{J}\,\text{m}$ ja jaetaan se energiaerolla:
+**Sijoitus.** Lasketaan ensin osoittaja $$
+\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}98647 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ ja jaetaan se energiaerolla:
 ```latex
 \begin{aligned}
 &\lambda = \frac{hc}{E_3 - E_2} \\

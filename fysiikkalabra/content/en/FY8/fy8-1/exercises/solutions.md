@@ -4,7 +4,13 @@
 **Principle:** The energy of light is quantised into photons, and the energy of one photon depends only on the frequency of the light: $E = hf$. Since the wavelength is known, the frequency is expressed with the basic equation of wave motion $c = f\lambda$.
 **Formula:** $E = hf$ and $f = \dfrac{c}{\lambda}$, so $E = \dfrac{hc}{\lambda}$
 **Conversions:** $\lambda = 532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$
-**Substitution:** $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^8\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, so $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{532 \cdot 10^{-9}\,\text{m}} = 3.734 \cdot 10^{-19}\,\text{J}$
+**Substitution:** $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^8\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, so $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{532 \cdot 10^{-9}\,\text{m}} = 3.734 \cdot 10^{-19}\,\text{J}$
 **Answer:** $3.73 \cdot 10^{-19}\,\text{J}$, three significant figures like the wavelength $532\,\text{nm}$.
 **Reasonableness:** In electronvolts the energy is $3.734 \cdot 10^{-19}\,\text{J} : 1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}} \approx 2.33\,\text{eV}$. The energies of photons of visible light are about $1.8$–$3.1\,\text{eV}$, and green is in the middle of this range.
 
@@ -34,7 +40,13 @@
 **Principle:** The photon energy is $E = hf$, and the frequency is obtained from the wavelength, because the radiation travels at the speed of light: $f = \tfrac{c}{\lambda}$. The result in joules is finally converted to electronvolts.
 **Formula:** $E = \dfrac{hc}{\lambda}$
 **Conversions:** $\lambda = 254\,\text{nm} = 254 \cdot 10^{-9}\,\text{m}$; the energy from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
-**Substitution:** $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^8\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, so $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{254 \cdot 10^{-9}\,\text{m}} = 7.821 \cdot 10^{-19}\,\text{J} = \dfrac{7.821 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 4.882\,\text{eV}$
+**Substitution:** $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^8\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, so $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{254 \cdot 10^{-9}\,\text{m}} = 7.821 \cdot 10^{-19}\,\text{J} = \dfrac{7.821 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 4.882\,\text{eV}$
 **Answer:** $4.88\,\text{eV}$, three significant figures like the wavelength $254\,\text{nm}$.
 **Reasonableness:** With round numbers $E \approx 1240\,\text{eV}\,\text{nm} : 254\,\text{nm} \approx 4.9\,\text{eV}$. The energy of a UV-C photon is clearly greater than the $1.8$–$3.1\,\text{eV}$ of visible light, and this is exactly why it damages the genetic material of microbes.
 
@@ -61,7 +73,15 @@
 **Conversions:** $W = 2.30\,\text{eV} = 2.30 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.685 \cdot 10^{-19}\,\text{J}$; $1\,\text{m} = 10^{9}\,\text{nm}$
 **Substitution:** a) $f_0 = \dfrac{3.685 \cdot 10^{-19}\,\text{J}}{6.626 \cdot 10^{-34}\,\text{J}\,\text{s}} = 5.561 \cdot 10^{14}\,\text{Hz}$; b) $\lambda_0 = \dfrac{2.998 \cdot 10^8\,\text{m/s}}{5.561 \cdot 10^{14}\,\text{Hz}} = 5.391 \cdot 10^{-7}\,\text{m} = 539.1\,\text{nm}$
 **Answer:** a) $5.56 \cdot 10^{14}\,\text{Hz}$, three significant figures like the work function $2.30\,\text{eV}$; b) $\lambda_0 = 539\,\text{nm}$. The wavelength of the red light, $650\,\text{nm}$, is greater than $539\,\text{nm}$, so its photon energy is too small and red light does not release electrons from potassium.
-**Reasonableness:** With round numbers $1240\,\text{eV}\,\text{nm} : 2.30\,\text{eV} \approx 539\,\text{nm}$, as in the substitution. The photon energy of red light is $1240\,\text{eV}\,\text{nm} : 650\,\text{nm} \approx 1.91\,\text{eV}$, which is smaller than $2.30\,\text{eV}$. The threshold wavelength is close to the value for sodium, $544\,\text{nm}$, and the work function of potassium is slightly greater than that of sodium, so its threshold wavelength should indeed be slightly shorter.
+**Reasonableness:** With round numbers $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 2.30\,\text{eV} &\approx 539\,\text{nm}
+\end{aligned}
+$$, as in the substitution. The photon energy of red light is $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 650\,\text{nm} &\approx 1.91\,\text{eV}
+\end{aligned}
+$$, which is smaller than $2.30\,\text{eV}$. The threshold wavelength is close to the value for sodium, $544\,\text{nm}$, and the work function of potassium is slightly greater than that of sodium, so its threshold wavelength should indeed be slightly shorter.
 
 ## fy8-1-L1-08
 **Find:** why dim ultraviolet light releases electrons immediately but bright red light releases none
@@ -75,7 +95,11 @@
 
 $E_\text{k,max} = hf - W$
 
-$E_\text{k,max} = 3.10\,\text{eV} - 2.50\,\text{eV}$
+$$
+\begin{aligned}
+E_\text{k,max} &= 3.10\,\text{eV} - 2.50\,\text{eV}
+\end{aligned}
+$$
 
 $E_\text{k,max} = 0.60\,\text{eV}$
 
@@ -97,9 +121,19 @@ The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work functio
 **Principle:** An electron is released only if the energy of one photon is at least equal to the work function. The photon energy decreases as the wavelength grows, so the longest wavelength that releases electrons is the one at which the photon energy is exactly $W$ and the kinetic energy is zero.
 **Formula:** $\dfrac{hc}{\lambda_0} = W$, so $\lambda_0 = \dfrac{hc}{W}$
 **Conversions:** $W = 2.14\,\text{eV} = 2.14 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.428 \cdot 10^{-19}\,\text{J}$; the result from metres to nanometres, $1\,\text{m} = 10^{9}\,\text{nm}$
-**Substitution:** $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^8\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, so $\lambda_0 = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.428 \cdot 10^{-19}\,\text{J}} = 5.794 \cdot 10^{-7}\,\text{m} = 579.4\,\text{nm}$
+**Substitution:** $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^8\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, so $\lambda_0 = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3.428 \cdot 10^{-19}\,\text{J}} = 5.794 \cdot 10^{-7}\,\text{m} = 579.4\,\text{nm}$
 **Answer:** $579\,\text{nm}$, three significant figures like the work function $2.14\,\text{eV}$.
-**Reasonableness:** Check with round numbers: $1240\,\text{eV}\,\text{nm} : 2.14\,\text{eV} \approx 580\,\text{nm}$. This is yellow light, so green and blue light release electrons from caesium, red light does not. The work function of caesium is smaller than that of sodium, $2.28\,\text{eV}$, so its threshold wavelength must be longer than that of sodium, $544\,\text{nm}$, and it is.
+**Reasonableness:** Check with round numbers: $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 2.14\,\text{eV} &\approx 580\,\text{nm}
+\end{aligned}
+$$. This is yellow light, so green and blue light release electrons from caesium, red light does not. The work function of caesium is smaller than that of sodium, $2.28\,\text{eV}$, so its threshold wavelength must be longer than that of sodium, $544\,\text{nm}$, and it is.
 
 ## fy8-1-L2-02
 **Given:** power of the laser $P = 5.0\,\text{mW}$, wavelength $\lambda = 650\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$
@@ -107,7 +141,13 @@ The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work functio
 **Principle:** The energy of light travels as photons that all have the same energy $E = \tfrac{hc}{\lambda}$, because laser light has a single wavelength. Power is the energy emitted per second, so the number of photons per second is the power divided by the energy of one photon.
 **Formula:** $P = N E = N \dfrac{hc}{\lambda}$, so $N = \dfrac{P \lambda}{hc}$
 **Conversions:** $P = 5.0\,\text{mW} = 5.0 \cdot 10^{-3}\,\text{W}$, $\lambda = 650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$
-**Substitution:** $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^8\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, so $N = \dfrac{5.0 \cdot 10^{-3}\,\text{W} \cdot 650 \cdot 10^{-9}\,\text{m}}{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1.636 \cdot 10^{16}\,\tfrac{1}{\text{s}}$
+**Substitution:** $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^8\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, so $N = \dfrac{5.0 \cdot 10^{-3}\,\text{W} \cdot 650 \cdot 10^{-9}\,\text{m}}{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = 1.636 \cdot 10^{16}\,\tfrac{1}{\text{s}}$
 **Answer:** $1.6 \cdot 10^{16}$ photons per second, two significant figures like the power $5.0\,\text{mW}$.
 **Reasonableness:** The energy of one photon is about $3 \cdot 10^{-19}\,\text{J}$, and $5 \cdot 10^{-3}\,\text{J} : (3 \cdot 10^{-19}\,\text{J}) \approx 1.7 \cdot 10^{16}$. Units: $\tfrac{\text{W} \cdot \text{m}}{\text{J}\,\text{s} \cdot \text{m/s}} = \tfrac{\text{J/s}}{\text{J}} = \tfrac{1}{\text{s}}$. There are so many photons that individual photons are not noticed in ordinary light.
 
@@ -117,9 +157,19 @@ The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work functio
 **Principle:** One photon gives its energy to one electron, and energy is conserved: of the photon energy, the work function is used up and the rest remains as kinetic energy (the photoelectric equation). The photon energy is calculated from the wavelength.
 **Formula:** $hf = W + E_\text{k,max}$ and $hf = \dfrac{hc}{\lambda}$, so $E_\text{k,max} = \dfrac{hc}{\lambda} - W$
 **Conversions:** $\lambda = 222\,\text{nm} = 222 \cdot 10^{-9}\,\text{m}$; the photon energy from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
-**Substitution:** $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^8\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, so $\dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{222 \cdot 10^{-9}\,\text{m}} = 8.948 \cdot 10^{-19}\,\text{J} = 5.586\,\text{eV}$, so $E_\text{k,max} = 5.586\,\text{eV} - 3.68\,\text{eV} = 1.906\,\text{eV}$
+**Substitution:** $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^8\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, so $\dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{222 \cdot 10^{-9}\,\text{m}} = 8.948 \cdot 10^{-19}\,\text{J} = 5.586\,\text{eV}$, so $E_\text{k,max} = 5.586\,\text{eV} - 3.68\,\text{eV} = 1.906\,\text{eV}$
 **Answer:** $1.91\,\text{eV}$, to the nearest hundredth like the work function $3.68\,\text{eV}$.
-**Reasonableness:** Estimate: $1240\,\text{eV}\,\text{nm} : 222\,\text{nm} \approx 5.6\,\text{eV}$, and $5.6\,\text{eV} - 3.7\,\text{eV} \approx 1.9\,\text{eV}$. The photon energy exceeds the work function, so electrons really are released.
+**Reasonableness:** Estimate: $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 222\,\text{nm} &\approx 5.6\,\text{eV}
+\end{aligned}
+$$, and $5.6\,\text{eV} - 3.7\,\text{eV} \approx 1.9\,\text{eV}$. The photon energy exceeds the work function, so electrons really are released.
 
 ## fy8-1-L2-04
 **Given:** wavelength $\lambda = 300\,\text{nm}$, maximum kinetic energy $E_\text{k,max} = 1.85\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
@@ -127,7 +177,13 @@ The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work functio
 **Principle:** The photoelectric equation expresses conservation of energy: the photon energy is the sum of the work function and the maximum kinetic energy. When the photon energy and the maximum kinetic energy are known, the work function is their difference.
 **Formula:** $\dfrac{hc}{\lambda} = W + E_\text{k,max}$, so $W = \dfrac{hc}{\lambda} - E_\text{k,max}$
 **Conversions:** $\lambda = 300\,\text{nm} = 300 \cdot 10^{-9}\,\text{m}$; the photon energy from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
-**Substitution:** $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^8\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, so $\dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{300 \cdot 10^{-9}\,\text{m}} = 6.622 \cdot 10^{-19}\,\text{J} = 4.133\,\text{eV}$, so $W = 4.133\,\text{eV} - 1.85\,\text{eV} = 2.283\,\text{eV}$
+**Substitution:** $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^8\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, so $\dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{300 \cdot 10^{-9}\,\text{m}} = 6.622 \cdot 10^{-19}\,\text{J} = 4.133\,\text{eV}$, so $W = 4.133\,\text{eV} - 1.85\,\text{eV} = 2.283\,\text{eV}$
 **Answer:** $2.28\,\text{eV}$, to the nearest hundredth like the measured kinetic energy $1.85\,\text{eV}$.
 **Reasonableness:** The work function is positive and smaller than the photon energy, as it should be. The value fits sodium ($2.28\,\text{eV}$), so the metal may be sodium.
 
@@ -138,16 +194,32 @@ The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work functio
 **Reading the graph:** The frequencies are $f = \tfrac{c}{\lambda}$: $8.21$, $7.40$, $6.88$, $6.38$ and $5.94$ in the unit $10^{14}\,\text{Hz}$. A line is fitted through the points so that it passes between the points. Two points far apart are chosen on the line, for example $(6.0 \cdot 10^{14}\,\text{Hz};\ 0.179\,\text{V})$ and $(8.0 \cdot 10^{14}\,\text{Hz};\ 1.018\,\text{V})$. The threshold frequency is read at the point where the line crosses the frequency axis.
 **Formula:** $k = \dfrac{\Delta U_\text{s}}{\Delta f}$ and $k = \dfrac{h}{e}$, so $h = ek$; at the threshold frequency $hf_0 = W$
 **Conversions:** The frequencies were calculated from the wavelengths $\lambda = 365\,\text{nm} = 365 \cdot 10^{-9}\,\text{m}$ etc.; no other conversions are needed.
-**Substitution:** $k = \dfrac{1.018\,\text{V} - 0.179\,\text{V}}{8.0 \cdot 10^{14}\,\text{Hz} - 6.0 \cdot 10^{14}\,\text{Hz}} = 4.195 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}}$, so $h = 1.602 \cdot 10^{-19}\,\text{C} \cdot 4.195 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}} = 6.72 \cdot 10^{-34}\,\text{J}\,\text{s}$. The line crosses the frequency axis at $f_0 \approx 5.6 \cdot 10^{14}\,\text{Hz}$, and $W = hf_0 = 6.72 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5.57 \cdot 10^{14}\,\text{Hz} = 3.74 \cdot 10^{-19}\,\text{J} = 2.34\,\text{eV}$
+**Substitution:** $k = \dfrac{1.018\,\text{V} - 0.179\,\text{V}}{8.0 \cdot 10^{14}\,\text{Hz} - 6.0 \cdot 10^{14}\,\text{Hz}} = 4.195 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}}$, so $$
+\begin{aligned}
+h &= 1.602 \cdot 10^{-19}\,\text{C} \\
+&\cdot 4.195 \cdot 10^{-15}\,\tfrac{\text{V}}{\text{Hz}} \\
+&= 6.72 \cdot 10^{-34}\,\text{J}\,\text{s}
+\end{aligned}
+$$. The line crosses the frequency axis at $f_0 \approx 5.6 \cdot 10^{14}\,\text{Hz}$, and $W = hf_0 = 6.72 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5.57 \cdot 10^{14}\,\text{Hz} = 3.74 \cdot 10^{-19}\,\text{J} = 2.34\,\text{eV}$
 **Answer:** $h = 6.7 \cdot 10^{-34}\,\text{J}\,\text{s}$, two significant figures, because the uncertainty of the voltage, $\pm 0.02\,\text{V}$, limits the slope. In addition $f_0 \approx 5.6 \cdot 10^{14}\,\text{Hz}$ and $W \approx 2.3\,\text{eV}$.
-**Reasonableness:** The result differs from the table value $6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ by only about $1.4\,\%$, which fits the measurement uncertainty. A work function of $2.3\,\text{eV}$ corresponds to a threshold wavelength of $1240\,\text{eV}\,\text{nm} : 2.34\,\text{eV} \approx 530\,\text{nm}$, and all the measured wavelengths, $365$–$505\,\text{nm}$, are shorter than that, so the stopping voltages are positive, as in the table.
+**Reasonableness:** The result differs from the table value $6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ by only about $1.4\,\%$, which fits the measurement uncertainty. A work function of $2.3\,\text{eV}$ corresponds to a threshold wavelength of $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 2.34\,\text{eV} &\approx 530\,\text{nm}
+\end{aligned}
+$$, and all the measured wavelengths, $365$–$505\,\text{nm}$, are shorter than that, so the stopping voltages are positive, as in the table.
 
 ## fy8-1-L2-06
 **Given:** table $E_\text{k,A}$ and $E_\text{k,B}$ at the frequencies $8.0$–$11.0 \cdot 10^{14}\,\text{Hz}$
 **Find:** the difference of the work functions $W_\text{B} - W_\text{A}$ in electronvolts and which metal has the greater work function
 **Principle:** According to the photoelectric equation $E_\text{k,max} = hf - W$ for both metals. At the same frequency the photon energy $hf$ is the same, so the difference of the kinetic energies is the difference of the work functions. The slope of both lines is $h$.
 **Reading the graph:** In the graph drawn on paper the line of A runs above the line of B. The vertical gap between the lines is about $0.9\,\text{eV}$ at every frequency, so they are parallel. The slopes are $\tfrac{2.26\,\text{eV} - 1.01\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.2 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$ and $\tfrac{1.35\,\text{eV} - 0.12\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.1 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, that is both are approximately $\tfrac{h}{e} = 4.14 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$.
-**Formula:** $E_\text{k,A} - E_\text{k,B} = (hf - W_\text{A}) - (hf - W_\text{B}) = W_\text{B} - W_\text{A}$
+**Formula:** $$
+\begin{aligned}
+E_\text{k,A} - E_\text{k,B} &= (hf - W_\text{A}) \\
+&- (hf - W_\text{B}) \\
+&= W_\text{B} - W_\text{A}
+\end{aligned}
+$$
 **Conversions:** Not needed: all the energies are in electronvolts.
 **Substitution:** The differences are $0.89\,\text{eV}$, $0.91\,\text{eV}$, $0.90\,\text{eV}$ and $0.91\,\text{eV}$. Their sum is $3.61\,\text{eV}$, so $D = \dfrac{3.61\,\text{eV}}{4} = 0.9025\,\text{eV}$
 **Answer:** the work function of metal B is greater, and it is $0.90\,\text{eV}$ greater than that of A, two significant figures. The lines are parallel because both have the slope $h$; the metal affects only how far the line is shifted, and the shift is the difference of the work functions.
@@ -160,9 +232,28 @@ The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work functio
 **Reading the graph:** The student's reading $-2.1\,\text{eV}$ is the intersection with the vertical axis, and its unit is the unit of energy, eV, not the unit of frequency, Hz. The threshold frequency is the intersection with the horizontal axis. The slope of the line is calculated from the first and the last point.
 **Formula:** $k = \dfrac{E_3 - E_1}{f_3 - f_1}$; at the threshold frequency $0 = E_1 + k(f_0 - f_1)$, so $f_0 = f_1 - \dfrac{E_1}{k}$, and $W = kf_0$
 **Conversions:** Not needed: the energy is in electronvolts and the frequency in hertz, so the slope is in the unit $\text{eV/Hz}$.
-**Substitution:** $k = \dfrac{1.79\,\text{eV} - 0.55\,\text{eV}}{9.5 \cdot 10^{14}\,\text{Hz} - 6.5 \cdot 10^{14}\,\text{Hz}} = 4.133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, so $f_0 = 6.5 \cdot 10^{14}\,\text{Hz} - \dfrac{0.55\,\text{eV}}{4.133 \cdot 10^{-15}\,\text{eV/Hz}} = 5.169 \cdot 10^{14}\,\text{Hz}$ and $W = 4.133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}} \cdot 5.169 \cdot 10^{14}\,\text{Hz} = 2.137\,\text{eV}$
+**Substitution:** $k = \dfrac{1.79\,\text{eV} - 0.55\,\text{eV}}{9.5 \cdot 10^{14}\,\text{Hz} - 6.5 \cdot 10^{14}\,\text{Hz}} = 4.133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, so $$
+\begin{aligned}
+f_0 &= 6.5 \cdot 10^{14}\,\text{Hz} \\
+&- \dfrac{0.55\,\text{eV}}{4.133 \cdot 10^{-15}\,\text{eV/Hz}} \\
+&= 5.169 \cdot 10^{14}\,\text{Hz}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+W &= 4.133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}} \\
+&\cdot 5.169 \cdot 10^{14}\,\text{Hz} \\
+&= 2.137\,\text{eV}
+\end{aligned}
+$$
 **Answer:** a) The student confused the intersection with the vertical axis with the threshold frequency: the intersection $-2.1\,\text{eV}$ is the negative of the work function, $-W$, and the threshold frequency is read from the intersection with the horizontal axis. b) $W = 2.14\,\text{eV}$, three significant figures like the energies in the data; the threshold frequency is $5.17 \cdot 10^{14}\,\text{Hz}$.
-**Reasonableness:** The intersection with the vertical axis is $0.55\,\text{eV} - 4.133 \cdot 10^{-15}\,\text{eV/Hz} \cdot 6.5 \cdot 10^{14}\,\text{Hz} = -2.137\,\text{eV}$, so its absolute value is the same as $W$, and the student's reading $-2.1\,\text{eV}$ agrees with this. The slope $4.133 \cdot 10^{-15}\,\text{eV/Hz}$ is the Planck constant $\tfrac{h}{e}$, as it should be, and the threshold frequency $5.17 \cdot 10^{14}\,\text{Hz}$ is smaller than the smallest measured frequency $6.5 \cdot 10^{14}\,\text{Hz}$, because electrons were already released at that frequency.
+**Reasonableness:** The intersection with the vertical axis is $$
+\begin{aligned}
+&0.55\,\text{eV} \\
+&- 4.133 \cdot 10^{-15}\,\text{eV/Hz} \\
+&\cdot 6.5 \cdot 10^{14}\,\text{Hz} \\
+&= -2.137\,\text{eV}
+\end{aligned}
+$$, so its absolute value is the same as $W$, and the student's reading $-2.1\,\text{eV}$ agrees with this. The slope $4.133 \cdot 10^{-15}\,\text{eV/Hz}$ is the Planck constant $\tfrac{h}{e}$, as it should be, and the threshold frequency $5.17 \cdot 10^{14}\,\text{Hz}$ is smaller than the smallest measured frequency $6.5 \cdot 10^{14}\,\text{Hz}$, because electrons were already released at that frequency.
 
 ## fy8-1-L3-01
 **Given:** work function of sodium $W = 2.28\,\text{eV}$, wavelength $\lambda = 350\,\text{nm}$, mass of the electron $m = 9.109 \cdot 10^{-31}\,\text{kg}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
@@ -170,7 +261,22 @@ The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work functio
 **Principle:** The fastest electrons receive the maximum kinetic energy $E_\text{k,max} = hf - W$ (the photoelectric equation, conservation of energy). The speed is obtained from the kinetic energy $E_\text{k} = \tfrac{1}{2} m v^2$, which holds because the speed remains much smaller than the speed of light (this is checked at the end). The kinetic energy must be in joules for the speed to come out in $\text{m/s}$.
 **Formula:** $E_\text{k,max} = \dfrac{hc}{\lambda} - W$ and $\dfrac{1}{2} m v^2 = E_\text{k,max}$, so $v = \sqrt{\dfrac{2 E_\text{k,max}}{m}}$
 **Conversions:** $\lambda = 350\,\text{nm} = 350 \cdot 10^{-9}\,\text{m}$; $W = 2.28\,\text{eV} = 2.28 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.653 \cdot 10^{-19}\,\text{J}$
-**Substitution:** $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^8\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, so $E_\text{k,max} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{350 \cdot 10^{-9}\,\text{m}} - 3.653 \cdot 10^{-19}\,\text{J} = 5.676 \cdot 10^{-19}\,\text{J} - 3.653 \cdot 10^{-19}\,\text{J} = 2.023 \cdot 10^{-19}\,\text{J}$, so $v = \sqrt{\dfrac{2 \cdot 2.023 \cdot 10^{-19}\,\text{J}}{9.109 \cdot 10^{-31}\,\text{kg}}} = 6.665 \cdot 10^{5}\,\text{m/s}$
+**Substitution:** $$
+\begin{aligned}
+hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^8\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$, so $$
+\begin{aligned}
+&E_\text{k,max} \\
+&= \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{350 \cdot 10^{-9}\,\text{m}} \\
+&- 3.653 \cdot 10^{-19}\,\text{J} \\
+&= 5.676 \cdot 10^{-19}\,\text{J} \\
+&- 3.653 \cdot 10^{-19}\,\text{J} \\
+&= 2.023 \cdot 10^{-19}\,\text{J}
+\end{aligned}
+$$, so $v = \sqrt{\dfrac{2 \cdot 2.023 \cdot 10^{-19}\,\text{J}}{9.109 \cdot 10^{-31}\,\text{kg}}} = 6.665 \cdot 10^{5}\,\text{m/s}$
 **Answer:** $6.66 \cdot 10^{5}\,\text{m/s}$, three significant figures like the wavelength and the work function.
 **Reasonableness:** The speed is about $0.2\,\%$ of the speed of light, so the formula $\tfrac{1}{2} m v^2$ is usable. The kinetic energy is $1.26\,\text{eV}$, and the speed of an electron with $1\,\text{eV}$ is about $6 \cdot 10^{5}\,\text{m/s}$, so the result is of the right order of magnitude. Units: $\sqrt{\tfrac{\text{J}}{\text{kg}}} = \sqrt{\tfrac{\text{kg}\,\text{m}^2/\text{s}^2}{\text{kg}}} = \text{m/s}$.
 
@@ -190,7 +296,15 @@ The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work functio
 **Principle:** According to the photoelectric equation, $E_\text{k,max} = hf - W$ is a straight line as a function of the frequency. At the threshold frequency an electron is just barely released, so the maximum kinetic energy is zero: the threshold frequency is the point where the line crosses the frequency axis. The slope of the line is obtained from the two measurement points.
 **Formula:** slope $k = \dfrac{E_2 - E_1}{f_2 - f_1}$, and on the line $E = E_1 + k(f - f_1)$; the condition $E = 0$ gives $f_0 = f_1 - \dfrac{E_1}{k}$
 **Conversions:** Not needed: the energies are in the same unit and the frequencies are in hertz, so the units cancel.
-**Substitution:** $k = \dfrac{1.84\,\text{eV} - 0.60\,\text{eV}}{1.00 \cdot 10^{15}\,\text{Hz} - 7.0 \cdot 10^{14}\,\text{Hz}} = \dfrac{1.24\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, so $f_0 = 7.0 \cdot 10^{14}\,\text{Hz} - \dfrac{0.60\,\text{eV}}{4.133 \cdot 10^{-15}\,\text{eV/Hz}} = 7.0 \cdot 10^{14}\,\text{Hz} - 1.452 \cdot 10^{14}\,\text{Hz} = 5.548 \cdot 10^{14}\,\text{Hz}$
+**Substitution:** $k = \dfrac{1.84\,\text{eV} - 0.60\,\text{eV}}{1.00 \cdot 10^{15}\,\text{Hz} - 7.0 \cdot 10^{14}\,\text{Hz}} = \dfrac{1.24\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, so $$
+\begin{aligned}
+f_0 &= 7.0 \cdot 10^{14}\,\text{Hz} \\
+&- \dfrac{0.60\,\text{eV}}{4.133 \cdot 10^{-15}\,\text{eV/Hz}} \\
+&= 7.0 \cdot 10^{14}\,\text{Hz} \\
+&- 1.452 \cdot 10^{14}\,\text{Hz} \\
+&= 5.548 \cdot 10^{14}\,\text{Hz}
+\end{aligned}
+$$
 **Answer:** $5.5 \cdot 10^{14}\,\text{Hz}$, two significant figures like the frequency $7.0 \cdot 10^{14}\,\text{Hz}$ and the energy $0.60\,\text{eV}$.
 **Reasonableness:** The slope must be the Planck constant: $k = 4.133 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}} = 4.133 \cdot 10^{-15} \cdot 1.602 \cdot 10^{-19}\,\text{J}\,\text{s} = 6.62 \cdot 10^{-34}\,\text{J}\,\text{s}$, and it is. The threshold frequency is smaller than both measurement frequencies, as it should be, because electrons were released at both frequencies. The work function is $W = h f_0 \approx 2.3\,\text{eV}$, so the metal may be sodium.
 
@@ -210,9 +324,28 @@ The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work functio
 **Principle:** A source releases electrons only if its photon energy $\tfrac{hc}{\lambda}$ is at least $W$; power does not make up for photon energy. The number of photons per second of a releasing source is $N_\text{f} = \tfrac{P\lambda}{hc}$, the number of released electrons is $\eta N_\text{f}$ and the current is $I = e \eta N_\text{f}$. The currents of the different sources are added. The stopping voltage is determined by the greatest kinetic energy, so it is given by the greatest photon energy.
 **Formula:** $E_\text{f} = \dfrac{hc}{\lambda}$; $I = \dfrac{e \eta P \lambda}{hc}$ for each releasing source; $U_\text{s} = \dfrac{E_\text{f,max} - W}{e}$
 **Conversions:** $\lambda = 470\,\text{nm} = 470 \cdot 10^{-9}\,\text{m}$ etc., $P_\text{A} = 4.0\,\text{mW} = 4.0 \cdot 10^{-3}\,\text{W}$, $\eta = 0.10\,\% = 1.0 \cdot 10^{-3}$; the photon energy from $\text{J}$ to $\text{eV}$ by dividing by $1.602 \cdot 10^{-19}$
-**Substitution:** a) $E_\text{A} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{470 \cdot 10^{-9}\,\text{m}} = 4.227 \cdot 10^{-19}\,\text{J} = 2.64\,\text{eV}$, $E_\text{B} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3.204 \cdot 10^{-19}\,\text{J} = 2.00\,\text{eV}$ and $E_\text{C} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{365 \cdot 10^{-9}\,\text{m}} = 5.443 \cdot 10^{-19}\,\text{J} = 3.40\,\text{eV}$. Sources A and C exceed $2.30\,\text{eV}$, source B does not. b) $I_\text{A} = \dfrac{4.0 \cdot 10^{-3}\,\text{W}}{4.227 \cdot 10^{-19}\,\text{J}} \cdot 1.0 \cdot 10^{-3} \cdot 1.602 \cdot 10^{-19}\,\text{C} = 1.516 \cdot 10^{-6}\,\text{A}$ and $I_\text{C} = \dfrac{1.0 \cdot 10^{-3}\,\text{W}}{5.443 \cdot 10^{-19}\,\text{J}} \cdot 1.0 \cdot 10^{-3} \cdot 1.602 \cdot 10^{-19}\,\text{C} = 2.94 \cdot 10^{-7}\,\text{A}$, so $I = 1.516\,\mu\text{A} + 0 + 0.294\,\mu\text{A} = 1.810\,\mu\text{A}$. c) $U_\text{s} = \dfrac{3.397\,\text{eV} - 2.30\,\text{eV}}{e} = 1.10\,\text{V}$
+**Substitution:** a) $E_\text{A} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{470 \cdot 10^{-9}\,\text{m}} = 4.227 \cdot 10^{-19}\,\text{J} = 2.64\,\text{eV}$, $E_\text{B} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3.204 \cdot 10^{-19}\,\text{J} = 2.00\,\text{eV}$ and $E_\text{C} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{365 \cdot 10^{-9}\,\text{m}} = 5.443 \cdot 10^{-19}\,\text{J} = 3.40\,\text{eV}$. Sources A and C exceed $2.30\,\text{eV}$, source B does not. b) $$
+\begin{aligned}
+I_\text{A} &= \dfrac{4.0 \cdot 10^{-3}\,\text{W}}{4.227 \cdot 10^{-19}\,\text{J}} \\
+&\cdot 1.0 \cdot 10^{-3} \\
+&\cdot 1.602 \cdot 10^{-19}\,\text{C} \\
+&= 1.516 \cdot 10^{-6}\,\text{A}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+I_\text{C} &= \dfrac{1.0 \cdot 10^{-3}\,\text{W}}{5.443 \cdot 10^{-19}\,\text{J}} \\
+&\cdot 1.0 \cdot 10^{-3} \\
+&\cdot 1.602 \cdot 10^{-19}\,\text{C} \\
+&= 2.94 \cdot 10^{-7}\,\text{A}
+\end{aligned}
+$$, so $I = 1.516\,\mu\text{A} + 0 + 0.294\,\mu\text{A} = 1.810\,\mu\text{A}$. c) $U_\text{s} = \dfrac{3.397\,\text{eV} - 2.30\,\text{eV}}{e} = 1.10\,\text{V}$
 **Answer:** $I = 1.8\,\mu\text{A}$, two significant figures like the powers and the fraction $0.10\,\%$. The sources that release electrons are A and C; the stopping voltage is $1.10\,\text{V}$. The photon energy of the red source B, $2.00\,\text{eV}$, is smaller than the work function, so none of its photons releases an electron, even though its power is the greatest and the most photons arrive from it. Power only tells the number of photons, and current is produced only by photons whose energy is sufficient; the stopping voltage, on the other hand, depends on the greatest photon energy, that is on the ultraviolet source C.
-**Reasonableness:** In total $\tfrac{1.810 \cdot 10^{-6}\,\text{A}}{1.602 \cdot 10^{-19}\,\text{C}} = 1.13 \cdot 10^{13}$ electrons are released per second, which is $0.10\,\%$ of the number of photons of sources A and C, $9.46 \cdot 10^{15} + 1.84 \cdot 10^{15} = 1.13 \cdot 10^{16}$ per second. The $8.0\,\text{mW}$ of the red source corresponds to $2.5 \cdot 10^{16}$ photons per second, more than the other two together, but their energy is too small; a current estimated from the power would therefore be completely wrong.
+**Reasonableness:** In total $\tfrac{1.810 \cdot 10^{-6}\,\text{A}}{1.602 \cdot 10^{-19}\,\text{C}} = 1.13 \cdot 10^{13}$ electrons are released per second, which is $0.10\,\%$ of the number of photons of sources A and C, $$
+\begin{aligned}
+&9.46 \cdot 10^{15} + 1.84 \cdot 10^{15} \\
+&= 1.13 \cdot 10^{16}
+\end{aligned}
+$$ per second. The $8.0\,\text{mW}$ of the red source corresponds to $2.5 \cdot 10^{16}$ photons per second, more than the other two together, but their energy is too small; a current estimated from the power would therefore be completely wrong.
 
 ## fy8-1-L1-10
 **Given:** work function of calcium from the MAFY table (*Irrotustöitä*, calcium) $W = 3.20\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
@@ -220,9 +353,20 @@ The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work functio
 **Principle:** An electron is released only if the photon energy is enough for the work function: $hf \geq W$. At the longest wavelength and the lowest frequency the photon energy is exactly the work function, $hf_0 = W$. The work function is not given in the task, so it is looked up in the table.
 **Formula:** $hf_0 = W$ and $f_0 = \dfrac{c}{\lambda_0}$, so $\lambda_0 = \dfrac{hc}{W}$
 **Conversions:** $W = 3.20\,\text{eV} = 3.20 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 5.126 \cdot 10^{-19}\,\text{J}$
-**Substitution:** $\lambda_0 = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^8\,\tfrac{\text{m}}{\text{s}}}{5.126 \cdot 10^{-19}\,\text{J}} = 3.875 \cdot 10^{-7}\,\text{m} = 387.5\,\text{nm}$
+**Substitution:** $$
+\begin{aligned}
+&\lambda_0 \\
+&= \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^8\,\tfrac{\text{m}}{\text{s}}}{5.126 \cdot 10^{-19}\,\text{J}} \\
+&= 3.875 \cdot 10^{-7}\,\text{m} \\
+&= 387.5\,\text{nm}
+\end{aligned}
+$$
 **Answer:** $\lambda_0 \approx 387\,\text{nm}$, three significant figures like the work function $3.20\,\text{eV}$. The value $3.20\,\text{eV}$ is the one in the MAFY table *Irrotustöitä* for calcium; editions of the tables may differ slightly, and the answer is accepted within about $\pm 5\,\%$.
-**Reasonableness:** Quick estimate: $1240\,\text{eV}\,\text{nm} : 3.20\,\text{eV} \approx 388\,\text{nm}$. The threshold wavelength is just below the violet edge of visible light, about $400\,\text{nm}$, so in the ultraviolet: ordinary visible light does not release electrons from calcium, but the short-wavelength end of UV-A does.
+**Reasonableness:** Quick estimate: $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 3.20\,\text{eV} &\approx 388\,\text{nm}
+\end{aligned}
+$$. The threshold wavelength is just below the violet edge of visible light, about $400\,\text{nm}$, so in the ultraviolet: ordinary visible light does not release electrons from calcium, but the short-wavelength end of UV-A does.
 
 ## fy8-1-L2-08
 **Given:** a graph of the greatest kinetic energy $E_\text{k,max}$ of metals A and B as a function of the frequency $f$; light frequency $f = 12 \cdot 10^{14}\,\text{Hz}$
@@ -244,4 +388,8 @@ The photon energy of lamp B, $2.25\,\text{eV}$, is smaller than the work functio
 **Conversions:** $f_0 = 7.0 \cdot 10^{14}\,\text{Hz}$ is already in hertz; the result in metres is converted to nanometres: $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** $\lambda_0 = \dfrac{2.998 \cdot 10^8\,\tfrac{\text{m}}{\text{s}}}{7.0 \cdot 10^{14}\,\tfrac{1}{\text{s}}} = 4.283 \cdot 10^{-7}\,\text{m} = 428\,\text{nm}$
 **Answer:** $\lambda_0 \approx 428\,\text{nm}$, three significant figures; the frequency was read to two, so the result is accurate to about $\pm 1\,\%$.
-**Reasonableness:** The threshold wavelength is in the violet region, and the photon energy there is $1240\,\text{eV}\,\text{nm} : 428\,\text{nm} \approx 2.9\,\text{eV}$. It is larger than the work function of metal A, $2.3\,\text{eV}$, and the line of B indeed starts to the right of the line of A.
+**Reasonableness:** The threshold wavelength is in the violet region, and the photon energy there is $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 428\,\text{nm} &\approx 2.9\,\text{eV}
+\end{aligned}
+$$. It is larger than the work function of metal A, $2.3\,\text{eV}$, and the line of B indeed starts to the right of the line of A.

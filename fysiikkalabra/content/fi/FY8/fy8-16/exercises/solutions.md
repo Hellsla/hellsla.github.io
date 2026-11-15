@@ -16,7 +16,12 @@
 **Muunnokset:** Ei tarvita: valon nopeus on valmiiksi kilometreinä sekunnissa, ja punasiirtymä on paljas luku.
 **Sijoitus:** $v = 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}0250 = 7495\,\text{km/s}$
 **Vastaus:** $7{,}50 \cdot 10^{3}\,\text{km/s}$, kolme merkitsevää numeroa kuten punasiirtymässä $0{,}0250$.
-**Järkevyys:** Punasiirtymä $0{,}025$ tarkoittaa, että nopeus on $2{,}5\,\%$ valon nopeudesta: $0{,}025 \cdot 300\,000\,\text{km/s} = 7500\,\text{km/s}$. Nopeus on paljon pienempi kuin valon nopeus, kuten pienellä punasiirtymällä pitää.
+**Järkevyys:** Punasiirtymä $0{,}025$ tarkoittaa, että nopeus on $2{,}5\,\%$ valon nopeudesta: $$
+\begin{aligned}
+&0{,}025 \cdot 300\,000\,\text{km/s} \\
+&= 7500\,\text{km/s}
+\end{aligned}
+$$. Nopeus on paljon pienempi kuin valon nopeus, kuten pienellä punasiirtymällä pitää.
 
 ## fy8-16-L1-03
 **Annettu:** galaksin etäisyys $d = 120\,\text{Mpc}$, Hubblen vakio $H_0 = 70\,\tfrac{\text{km/s}}{\text{Mpc}}$
@@ -44,7 +49,15 @@
 **Periaate:** Taustasäteily on sähkömagneettista säteilyä, jonka energia on kvantittunut fotoneiksi (luku *Valosähköinen ilmiö ja fotoni*). Fotonin energia on kääntäen verrannollinen sen aallonpituuteen.
 **Kaava:** $E = hf$ ja $f = \dfrac{c}{\lambda}$, joten $E = \dfrac{hc}{\lambda}$
 **Muunnokset:** $1{,}06\,\text{mm} = 1{,}06 \cdot 10^{-3}\,\text{m}$. Jouleista elektronivoltteihin sijoitetaan $1\,\text{J} = \dfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV}$.
-**Sijoitus:** $E = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{1{,}06 \cdot 10^{-3}\,\text{m}} = 1{,}8740 \cdot 10^{-22}\,\text{J} = \dfrac{1{,}8740 \cdot 10^{-22}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 1{,}1698 \cdot 10^{-3}\,\text{eV}$
+**Sijoitus:** $$
+\begin{aligned}
+E &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{1{,}06 \cdot 10^{-3}\,\text{m}} \\
+&= 1{,}8740 \cdot 10^{-22}\,\text{J} \\
+&= \dfrac{1{,}8740 \cdot 10^{-22}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\
+&= 1{,}1698 \cdot 10^{-3}\,\text{eV}
+\end{aligned}
+$$
 **Vastaus:** $1{,}17 \cdot 10^{-3}\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituudessa $1{,}06\,\text{mm}$.
 **Järkevyys:** Näkyvän valon fotonin energia on $1{,}7$–$3{,}3\,\text{eV}$ ja aallonpituus noin $500\,\text{nm}$. Taustasäteilyn aallonpituus on noin $2000$ kertaa pidempi, joten energia on noin $2000$ kertaa pienempi: $2\,\text{eV} : 2000 = 1 \cdot 10^{-3}\,\text{eV}$.
 
@@ -74,7 +87,15 @@
 **Periaate:** Laajeneminen on venyttänyt jokaisen aallonpituuden $1100$-kertaiseksi, joten vapautuessaan aallonpituus oli $1100$ kertaa lyhyempi kuin nyt. Fotonin energia saadaan aallonpituudesta, kuten luvussa *Valosähköinen ilmiö ja fotoni*.
 **Kaava:** $\lambda = \dfrac{\lambda_\text{nyt}}{1100}$ ja $E = \dfrac{hc}{\lambda}$, joten $E = \dfrac{1100\,hc}{\lambda_\text{nyt}}$
 **Muunnokset:** $1{,}06\,\text{mm} = 1{,}06 \cdot 10^{-3}\,\text{m}$, ja jouleista elektronivoltteihin sijoitetaan $1\,\text{J} = \dfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV}$.
-**Sijoitus:** $\lambda = \dfrac{1{,}06 \cdot 10^{-3}\,\text{m}}{1100} = 9{,}636 \cdot 10^{-7}\,\text{m}$ ja $E = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{9{,}636 \cdot 10^{-7}\,\text{m}} = 2{,}0615 \cdot 10^{-19}\,\text{J} = \dfrac{2{,}0615 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 1{,}287\,\text{eV}$
+**Sijoitus:** $\lambda = \dfrac{1{,}06 \cdot 10^{-3}\,\text{m}}{1100} = 9{,}636 \cdot 10^{-7}\,\text{m}$ ja $$
+\begin{aligned}
+E &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{9{,}636 \cdot 10^{-7}\,\text{m}} \\
+&= 2{,}0615 \cdot 10^{-19}\,\text{J} \\
+&= \dfrac{2{,}0615 \cdot 10^{-19}}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\
+&= 1{,}287\,\text{eV}
+\end{aligned}
+$$
 **Vastaus:** $1{,}3\,\text{eV}$, kaksi merkitsevää numeroa kuten venymiskertoimessa $1100$.
 **Järkevyys:** Aallonpituus $964\,\text{nm}$ on lähi-infrapunaa, hieman näkyvän valon rajan $1{,}7\,\text{eV}$ alapuolella. Tyypillinen fotoni oli siis paljon heikompi kuin vedyn ionisoimiseen tarvittava $13{,}6\,\text{eV}$. Fotoneja on kuitenkin valtavasti enemmän kuin atomeja, joten atomit pysyivät ionisoituina niin kauan, kuin harvinaisia yli $13{,}6\,\text{eV}$:n fotoneja riitti. Kun lämpötila laski noin $3000\,\text{K}$:iin, niitä oli liian vähän, elektronit sitoutuivat atomeihin ja valo pääsi kulkemaan vapaasti.
 
@@ -116,7 +137,12 @@
 **Muunnokset:** Ei tarvita: nanometrit ja kilometrit sekunnissa supistuvat.
 **Sijoitus:** $z = \dfrac{676{,}2\,\text{nm} - 656{,}3\,\text{nm}}{656{,}3\,\text{nm}} = \dfrac{19{,}9\,\text{nm}}{656{,}3\,\text{nm}} = 0{,}030322$, $v = 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}030322 = 9090{,}5\,\text{km/s}$ ja $d = \dfrac{9090{,}5\,\text{km/s}}{70\,\tfrac{\text{km/s}}{\text{Mpc}}} = 129{,}9\,\text{Mpc}$
 **Vastaus:** $1{,}3 \cdot 10^{2}\,\text{Mpc}$, kaksi merkitsevää numeroa kuten Hubblen vakiossa $70\,\tfrac{\text{km/s}}{\text{Mpc}}$.
-**Järkevyys:** Siirtymät $13{,}2\,\text{nm}$, $14{,}8\,\text{nm}$ ja $19{,}9\,\text{nm}$ eivät ole yhtä suuria, mutta kukin on $3{,}0\,\%$ omasta aallonpituudestaan, kuten punasiirtymässä pitää. Arvio: $0{,}03 \cdot 300\,000\,\text{km/s} = 9000\,\text{km/s}$ ja $9000 : 70 \approx 130$.
+**Järkevyys:** Siirtymät $13{,}2\,\text{nm}$, $14{,}8\,\text{nm}$ ja $19{,}9\,\text{nm}$ eivät ole yhtä suuria, mutta kukin on $3{,}0\,\%$ omasta aallonpituudestaan, kuten punasiirtymässä pitää. Arvio: $$
+\begin{aligned}
+&0{,}03 \cdot 300\,000\,\text{km/s} \\
+&= 9000\,\text{km/s}
+\end{aligned}
+$$ ja $9000 : 70 \approx 130$.
 
 ## fy8-16-L1-06
 **Kysytty:** mikä aiheuttaa kaukaisten galaksien spektriviivojen siirtymän pidempiin aallonpituuksiin eli punasiirtymän.
@@ -209,4 +235,12 @@ Galaksin B etäisyys on noin $3{,}0$-kertainen galaksin A etäisyyteen verrattun
 **Muunnokset:** Ei tarvita: aallonpituudet ovat nanometreinä, ja yksikkö supistuu.
 **Sijoitus:** a) $z = \dfrac{486{,}4\,\text{nm} - 121{,}6\,\text{nm}}{121{,}6\,\text{nm}} = \dfrac{364{,}8\,\text{nm}}{121{,}6\,\text{nm}} = 3{,}000$. b) $v = c\,z = 3{,}000\,c = 8{,}99 \cdot 10^{5}\,\text{km/s}$. c) $k = 1 + 3{,}000 = 4{,}000$ ja $T = 4{,}000 \cdot 2{,}725\,\text{K} = 10{,}9\,\text{K}$
 **Vastaus:** $10{,}9\,\text{K}$, kolme merkitsevää numeroa kuten punasiirtymässä $z = 3{,}00$. a) $z = 3{,}00$. b) Kaava $v = c\,z$ on pienen punasiirtymän likiarvo ($z < 0{,}1$), ja nyt $z = 3{,}00$ on paljon suurempi, joten tulosta ei voi pitää galaksin nopeutena.
-**Järkevyys:** Yleinen lipsahdus on käyttää venymiskertoimena $z = 3$ eikä $1 + z = 4$, jolloin lämpötilaksi tulisi väärin $8{,}2\,\text{K}$. Lämpötila $10{,}9\,\text{K}$ on suurempi kuin nykyinen $2{,}725\,\text{K}$ mutta paljon pienempi kuin $3000\,\text{K}$ taustasäteilyn vapautuessa, kuten pitää, koska kvasaarin valo lähti paljon myöhemmin kuin taustasäteily. Tyypillinen aallonpituus oli silloin $1{,}06\,\text{mm} : 4 = 0{,}265\,\text{mm}$, ja tulo $T \cdot \lambda$ on sama kuin nyt: $10{,}9\,\text{K} \cdot 0{,}265\,\text{mm} = 2{,}89\,\text{K mm}$ ja $2{,}725\,\text{K} \cdot 1{,}06\,\text{mm} = 2{,}89\,\text{K mm}$.
+**Järkevyys:** Yleinen lipsahdus on käyttää venymiskertoimena $z = 3$ eikä $1 + z = 4$, jolloin lämpötilaksi tulisi väärin $8{,}2\,\text{K}$. Lämpötila $10{,}9\,\text{K}$ on suurempi kuin nykyinen $2{,}725\,\text{K}$ mutta paljon pienempi kuin $3000\,\text{K}$ taustasäteilyn vapautuessa, kuten pitää, koska kvasaarin valo lähti paljon myöhemmin kuin taustasäteily. Tyypillinen aallonpituus oli silloin $1{,}06\,\text{mm} : 4 = 0{,}265\,\text{mm}$, ja tulo $T \cdot \lambda$ on sama kuin nyt: $$
+\begin{aligned}
+10{,}9\,\text{K} \cdot 0{,}265\,\text{mm} &= 2{,}89\,\text{K mm}
+\end{aligned}
+$$ ja $$
+\begin{aligned}
+2{,}725\,\text{K} \cdot 1{,}06\,\text{mm} &= 2{,}89\,\text{K mm}
+\end{aligned}
+$$.

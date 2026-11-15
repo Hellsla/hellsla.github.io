@@ -115,7 +115,7 @@
         {
           "text": "Lampun A irrottamien elektronien suurin liike-energia on $0{,}60\\,\\text{eV}$.",
           "true": true,
-          "feedback": "Tosi: valosähköisestä yhtälöstä $E_\\text{k,max} = hf - W$ saadaan $E_\\text{k,max} = 3{,}10\\,\\text{eV} - 2{,}50\\,\\text{eV}$. Tulos on $0{,}60\\,\\text{eV}$."
+          "feedback": "Tosi: valosähköisestä yhtälöstä $E_\\text{k,max} = hf - W$ saadaan $$\n\\begin{aligned}\nE_\\text{k,max} &= 3{,}10\\,\\text{eV} - 2{,}50\\,\\text{eV}\n\\end{aligned}\n$$. Tulos on $0{,}60\\,\\text{eV}$."
         },
         {
           "text": "Kun lampun A intensiteetti kaksinkertaistetaan, suurin liike-energia on $1{,}20\\,\\text{eV}$.",

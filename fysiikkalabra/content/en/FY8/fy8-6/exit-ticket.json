@@ -1,7 +1,7 @@
 [
   {
     "q": "The wavelength of a violet laser diode is $405\\,\\text{nm}$. Estimate its threshold voltage.",
-    "a": "At the threshold voltage $eU_\\text{k} \\approx \\tfrac{hc}{\\lambda}$, so $U_\\text{k} \\approx \\tfrac{hc}{e\\lambda}$. First we calculate $hc = 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$ and $e\\lambda = 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 405 \\cdot 10^{-9}\\,\\text{m} = 6.488 \\cdot 10^{-26}\\,\\text{C}\\,\\text{m}$, so $U_\\text{k} \\approx 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m} : 6.488 \\cdot 10^{-26}\\,\\text{C}\\,\\text{m} = 3.06\\,\\text{V}$. Each electron must receive from the voltage source approximately the energy of one photon, $3.06\\,\\text{eV}$; the measured threshold voltage is usually slightly smaller than this."
+    "a": "At the threshold voltage $eU_\\text{k} \\approx \\tfrac{hc}{\\lambda}$, so $U_\\text{k} \\approx \\tfrac{hc}{e\\lambda}$. First we calculate $hc = 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$ and $$\n\\begin{aligned}\ne\\lambda &= 1.602 \\cdot 10^{-19}\\,\\text{C} \\\\\n&\\cdot 405 \\cdot 10^{-9}\\,\\text{m} \\\\\n&= 6.488 \\cdot 10^{-26}\\,\\text{C}\\,\\text{m}\n\\end{aligned}\n$$, so $$\n\\begin{aligned}\nU_\\text{k} &\\approx 1.9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m} \\\\\n&: 6.488 \\cdot 10^{-26}\\,\\text{C}\\,\\text{m} \\\\\n&= 3.06\\,\\text{V}\n\\end{aligned}\n$$. Each electron must receive from the voltage source approximately the energy of one photon, $3.06\\,\\text{eV}$; the measured threshold voltage is usually slightly smaller than this."
   },
   {
     "q": "The wavelength of the light source is needed in measuring the Planck constant. Why is the wavelength of a laser diode known more accurately than that of an LED?",
