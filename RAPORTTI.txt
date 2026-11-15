@@ -1,0 +1,96 @@
+FY1 – uudelleenpiirron raportti
+
+Luettelorivejä: 70.
+Uudelleen piirretty: 36 PNG-kuvaa (21 kuvitusta, 15 kaaviota).
+Ohitettu: 34 (11 kuvitusten/kaavioiden joukosta ja 23 kuvaajakansiosta).
+Generoinnissa epäonnistuneita: 0.
+
+MENETELMÄ
+Sisäänrakennettu kuvagenerointi. Ei API-avainta eikä varaskriptiä.
+Kullekin kuvalle annettiin alkuperäinen ja kuvaus; hyväksytty tyylinäyte oli
+lisäksi toisena kuvatulona hyväksymisen jälkeen. Kuvat tehtiin erikseen.
+Tekstit poistettiin pyynnön mukaisesti.
+
+TIEDOSTOKOOT JA TARKKUUS
+TIEDOSTOT.tsv sisältää alkuperäisten ja uusien kuvien pikselimitat.
+PNG:t ovat generointityökalun alkuperäisiä tuloksia, eivät SVG-tiedostoja.
+Työkalu voi tuottaa pieniä kuvasuhde-, geometria- ja värisävyeroja.
+Asteikkoviivojen lukumäärän ja värien heksakoodien täsmällistä vastaavuutta
+ei ole varmennettu pikselitasolla.
+
+TEHDYT
+FY1_luku-01_fy1-1__eclipse-uusi.png
+FY1_luku-01_fy1-1__hero-uusi.png
+FY1_luku-01_fy1-1__rain-field-uusi.png
+FY1_luku-02_fy1-2__cyclist-uusi.png
+FY1_luku-02_fy1-2__hero-uusi.png
+FY1_luku-02_fy1-2__tap-bucket-uusi.png
+FY1_luku-03_fy1-3__hero-uusi.png
+FY1_luku-03_fy1-3__paper-stack-uusi.png
+FY1_luku-03_fy1-3__pendulum-timing-uusi.png
+FY1_luku-04_fy1-4__candle-uusi.png
+FY1_luku-04_fy1-4__spring-masses-uusi.png
+FY1_luku-05_fy1-5__hero-uusi.png
+FY1_luku-05_fy1-5__lightning-uusi.png
+FY1_luku-05_fy1-5__two-friends-uusi.png
+FY1_luku-06_fy1-6__apple-uusi.png
+FY1_luku-06_fy1-6__hero-uusi.png
+FY1_luku-07_fy1-7__hero-uusi.png
+FY1_luku-07_fy1-7__sinker-uusi.png
+FY1_luku-08_fy1-8__hero-uusi.png
+FY1_luku-08_fy1-8__ramp-ball-uusi.png
+FY1_luku-08_fy1-8__two-balls-ramp-uusi.png
+FY1_luku-01_fy1-1__atom-stadium-uusi.png
+FY1_luku-01_fy1-1__interactions-uusi.png
+FY1_luku-01_fy1-1__matter-ladder-uusi.png
+FY1_luku-02_fy1-2__conversion-uusi.png
+FY1_luku-02_fy1-2__quantity-uusi.png
+FY1_luku-02_fy1-2__ruler-read-uusi.png
+FY1_luku-03_fy1-3__zero-scale-uusi.png
+FY1_luku-05_fy1-5__motion-uusi.png
+FY1_luku-06_fy1-6__free-fall-uusi.png
+FY1_luku-06_fy1-6__light-gates-uusi.png
+FY1_luku-06_fy1-6__same-fall-uusi.png
+FY1_luku-07_fy1-7__cylinders-read-uusi.png
+FY1_luku-07_fy1-7__displacement-uusi.png
+FY1_luku-07_fy1-7__gold-bar-uusi.png
+FY1_luku-08_fy1-8__setup-uusi.png
+
+OHITETUT JA SYY
+1-kuvitukset/FY1_luku-04_fy1-4__hero.png	Kuvaaja: koordinaattiakselit, mittauspisteet virhepalkkeineen ja sovitettu suora.
+2-kaaviot/FY1_luku-01_fy1-1__cosmic-address.png	Pääosin tekstiä sisäkkäisissä laatikoissa: kosminen osoite.
+2-kaaviot/FY1_luku-01_fy1-1__ladder.png	Kuvaaja: pylväillä ja yhteisellä perusviivalla esitetty kokoluokka-asteikko.
+2-kaaviot/FY1_luku-01_fy1-1__object-types.png	Kuvaaja: kohteiden sijainnit logaritmisella kokoakselilla.
+2-kaaviot/FY1_luku-01_fy1-1__scale-axis.png	Kuvaaja: kohteiden sijainnit logaritmisella kokoakselilla.
+2-kaaviot/FY1_luku-01_fy1-1__scale-marks.png	Kuvaaja: kohteiden sijainnit logaritmisella kokoakselilla.
+2-kaaviot/FY1_luku-02_fy1-2__prefixes.png	Pääosin tekstiä laatikoissa: etuliitteiden käsitteellinen kaavio.
+2-kaaviot/FY1_luku-03_fy1-3__error-types.png	Kuvaaja: mittauspisteet numeerisilla aika-akseleilla.
+2-kaaviot/FY1_luku-03_fy1-3__pendulum-dots.png	Kuvaaja: viisi mittauspistettä asteikollisella aika-akselilla.
+2-kaaviot/FY1_luku-03_fy1-3__range-half.png	Kuvaaja: mittauspisteet aika-akselilla ja vaihteluvälin esitys.
+2-kaaviot/FY1_luku-07_fy1-7__cubes.png	Kuvaaja: massoja kuvaavien vaakapylväiden pituudet on piirretty mittakaavaan.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-04_fy1-4__kettle.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-04_fy1-4__scatter.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-04_fy1-4__scatter-points.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-04_fy1-4__slope.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-04_fy1-4__inquiry-1.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-05_fy1-5__graph.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-05_fy1-5__line-read.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-05_fy1-5__pick-away.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-05_fy1-5__pick-back.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-05_fy1-5__pick-distance.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-05_fy1-5__pick-vt.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-06_fy1-6__two-planets.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-06_fy1-6__vt-graph.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-06_fy1-6__inquiry-1.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-07_fy1-7__graph.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-08_fy1-8__epavarmuus.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_luku-08_fy1-8__inquiry-1.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_fy1-koe__fy1-k1-walk.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_fy1-koe__fy1-k2-graph.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_fy1-koe__fy1-k3-graph.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_fy1-koe__fy1-k6-graph.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_fy1-koe__fy1-k7-graph.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+3-kuvaajat-ei-piirreta-uudelleen/FY1_fy1-sovella__fy1-s1-graph.png	Kuvaaja; rajattu tehtävän ulkopuolelle. Kuvaa ei ole ZIP-lähdeaineistossa.
+
+EPÄONNISTUNEET
+Ei generointivirheitä.
