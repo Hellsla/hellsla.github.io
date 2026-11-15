@@ -1536,7 +1536,7 @@ def changes(folder, base, part="lesson", split=False, new=None):
                 if a == b: continue
         if not binary and a and b and rel.endswith((".md", ".json")) and not rel.startswith("figure:"):   # calculation chains re-broken into rows (teacher 2026-11-15)
             na, nb = chain_view(a, rel), chain_view(b, rel)
-            if (na, nb) != (a, b):
+            if (na, nb) != (a, b) and len(MATH_SPAN.findall(a)) != len(MATH_SPAN.findall(b)):   # a chain is re-broken when the number of formulas changes; a blank line or a break inside one formula is no re-break (and a stripped approved figure leaves such whitespace)
                 if na == nb: cats.add("reflow"); diff.append(f"--- {rel}: calculation chains only re-broken into rows"); continue
                 if len(_changed(a, b)) > len(_changed(na, nb)): cats.add("reflow"); a, b = na, nb   # some of the change is a re-break; classify what else changed as usual
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base, new)); diff.append(f"--- {rel}: simulation assertions changed"); continue
