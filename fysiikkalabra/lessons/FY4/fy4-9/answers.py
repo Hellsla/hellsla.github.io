@@ -52,8 +52,9 @@ m9 = I9 / dv9                                        # I = Δp = m Δv, so m = F
 a9 = dv9 / dt9                                       # the same with Newton II: a = Δv / Δt = 0,25 m/s², m = F / a = 80 kg
 assert abs(m9 - 80) < 1e-9 and abs(F9 / a9 - m9) < 1e-9
 m1, u1, u2 = 10.0, 0.40, 0.050                       # method 2: known 10,0 kg leaves at 0,40 m/s, the unknown body at 0,050 m/s
-m2 = m1 * u1 / u2                                    # equal and opposite impulses from rest: m1 v1 = m2 v2, m2 = 80 kg
-assert abs(m2 - 80) < 1e-9
+p1 = m1 * u1                                         # momentum of the known body: p1 = m1 v1 = 4,0 kg·m/s
+m2 = p1 / u2                                         # equal and opposite impulses from rest: m1 v1 = m2 v2, m2 = 80 kg
+assert abs(p1 - 4.0) < 1e-9 and abs(m2 - 80) < 1e-9
 dv_err = 0.130                                       # part d): Δv read 0,130 m/s instead of 0,125 m/s (4 % too large)
 m_err = I9 / dv_err                                  # m = 76,9 kg ≈ 77 kg
 rel_dv, rel_m = dv_err / dv9 - 1, m_err / m9 - 1     # +4,0 % in Δv gives −3,8 % in m: about the same relative error

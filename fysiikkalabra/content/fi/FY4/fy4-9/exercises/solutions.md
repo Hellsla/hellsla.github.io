@@ -249,7 +249,13 @@ Toinen mahdollinen menetelmä: tunnettu kappale, jonka massa on $m_1 = 10{,}0\,\
 
 $m_2 = \dfrac{m_1 v_1}{v_2}$
 
-$$\begin{aligned} m_2 &= \dfrac{10{,}0\,\text{kg} \cdot 0{,}40\,\text{m/s}}{0{,}050\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
+Tunnetun kappaleen liikemäärän suuruus on
+
+$$\begin{aligned} p_1 &= m_1 v_1 \\ &= 10{,}0\,\text{kg} \cdot 0{,}40\,\text{m/s} \\ &= 4{,}0\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+ja tuntemattoman kappaleen massa on
+
+$$\begin{aligned} m_2 &= \dfrac{4{,}0\,\text{kg}\cdot\text{m/s}}{0{,}050\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
 
 d) Esimerkkimenetelmän virhelähteitä ovat nämä: jousen voima ei pysy vakiona työnnön aikana; lyhyen työnnön kestoa on vaikea mitata; videolta luettu nopeus riippuu mittakaavasta ja kuvataajuudesta; kappale ei ole jäykkä, jos raajat tai irtotavarat liikkuvat; ilmavirrat sekä seinien tai kaapelien kosketus lisäävät voimia; työntimen omilla liikkuvilla osilla on massaa. Toistot ja keskiarvo pienentävät satunnaisvirheen vaikutusta. Systemaattista virhettä pienennetään kalibroimalla laite tunnetuilla massoilla. Lisäksi kappale pidetään jäykkänä ja kiinni varressa, työnnöstä tehdään pidempi ja aika mitataan anturilla eikä sekuntikellolla.
 

@@ -249,7 +249,13 @@ Toinen mahdollinen menetelmä on tämä. Tunnetun kappaleen massa on $m_1 = 10{,
 
 $m_2 = \dfrac{m_1 v_1}{v_2}$
 
-$$\begin{aligned} m_2 &= \dfrac{10{,}0\,\text{kg} \cdot 0{,}40\,\text{m/s}}{0{,}050\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
+Tunnetun kappaleen liikemäärän suuruus on
+
+$$\begin{aligned} p_1 &= m_1 v_1 \\ &= 10{,}0\,\text{kg} \cdot 0{,}40\,\text{m/s} \\ &= 4{,}0\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+Tuntemattoman kappaleen massa on
+
+$$\begin{aligned} m_2 &= \dfrac{4{,}0\,\text{kg}\cdot\text{m/s}}{0{,}050\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
 
 d) Esimerkkimenetelmässä on nämä virhelähteet: jousen voima ei pysy vakiona työnnön aikana; lyhyen työnnön kestoa on vaikea mitata; videolta luettu nopeus riippuu mittakaavasta ja kuvataajuudesta eli siitä, kuinka monta kuvaa kamera ottaa sekunnissa; kappale ei ole jäykkä, jos raajat tai irtotavarat liikkuvat; ilmavirrat sekä seinien tai kaapelien kosketus lisäävät voimia; työntimen omilla liikkuvilla osilla on massaa. Kun mittaus toistetaan ja lasketaan keskiarvo, satunnaisvirheen vaikutus pienenee. Systemaattinen virhe eli virhe, joka on joka kerta samanlainen, pienenee, kun laite kalibroidaan tunnetuilla massoilla. Kalibrointi tarkoittaa, että laitteen lukemaa verrataan tunnettuun arvoon. Lisäksi kappale pidetään jäykkänä ja kiinni varressa. Työnnöstä tehdään pidempi, ja aika mitataan anturilla eikä sekuntikellolla.
 
