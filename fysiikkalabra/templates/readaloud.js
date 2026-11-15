@@ -153,6 +153,9 @@
           case '>': return { w: W.gt };
           case '≈': return { w: W.approx };
           case '°': return { w: '°' };
+          case '(':                       // "(-15)": the sign of a negative number in brackets is read "negatiivinen", so -10-(-15) is not "miinus 10 miinus miinus 15" (teacher 2026-11-15)
+            if (isCh(peek(), '-') || isCh(peek(), '−')) { i++; return { w: W.negative || W.minus }; }
+            return { w: '' };
           case ',': case '.': return { w: t.v };
           case '%': return { w: W.percent };
           default: return { w: '' };
@@ -196,6 +199,8 @@
           i++;
           const e = arg(), r = e.raw.replace(/\s+/g, '');
           if (r === '\\circ' || r === '\\degree' || r === '°') a = { w: a.w + ' °' };
+          else if (r === '-' || r === '−') a = { w: a.w + ' ' + W.minus };    // \beta^{-} is "beeta miinus", not "beeta potenssiin miinus" (teacher 2026-11-15)
+          else if (r === '+') a = { w: a.w + ' ' + W.plus };
           else if (r === '2') a = { w: a.w + ' ' + W.squared };
           else if (r === '3') a = { w: a.w + ' ' + W.cubed };
           else a = { w: a.w + ' ' + W.power + ' ' + e.w };

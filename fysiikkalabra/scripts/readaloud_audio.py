@@ -43,7 +43,7 @@ TENS = {2: "kaksikymmentä", 3: "kolmekymmentä", 4: "neljäkymmentä", 5: "viis
 LETTERS = {"a": "aa", "b": "bee", "c": "see", "d": "dee", "e": "ee", "f": "äf", "g": "gee", "h": "hoo", "i": "ii", "j": "jii",
            "k": "koo", "l": "äl", "m": "äm", "n": "än", "o": "oo", "p": "pee", "q": "kuu", "r": "är", "s": "äs", "t": "tee",
            "u": "uu", "v": "vee", "w": "kaksoisvee", "x": "äks", "y": "yy", "z": "tset", "å": "oo", "ä": "ää", "ö": "öö"}
-ACRONYMS = {"SI": "es ii", "AU": "aa uu"}      # short words of the lesson that a voice would read as a word
+ACRONYMS = {"SI": "es ii", "AU": "aa uu", "m/s": "metriä sekunnissa"}      # short words of the lesson that a voice would read as a word
 
 
 def below_thousand(n):
@@ -75,7 +75,7 @@ def integer(n):
 
 def number(tok):
     """'1,7' → 'yksi pilkku seitsemän'; '93' → 'yhdeksänkymmentäkolme'; the digits after the comma one by one."""
-    m = re.fullmatch(r"(\d+)(?:,(\d+))?", tok)
+    m = re.fullmatch(r"(\d+)(?:[,.](\d+))?", tok)
     if not m: return None
     out = integer(int(m[1]))
     if m[2]: out += " pilkku " + " ".join(ONES[int(c)] for c in m[2])
@@ -84,7 +84,7 @@ def number(tok):
 
 def spoken(token):
     """One word of the block's speech text as it is said; punctuation around it stays."""
-    t = token.replace("⁠", "").replace(" ", " ")
+    t = token.replace("\u2060", "").replace("\u00ad", "").replace("\u200b", "")   # word joiner, soft hyphen, zero-width space
     m = re.fullmatch(r"([(\"“]*)(.*?)([.,:;!?)\"”]*)", t)
     pre, core, post = m[1], m[2], m[3]
     if core in ACRONYMS: core = ACRONYMS[core]
@@ -98,7 +98,7 @@ def spoken_text(text):
     """(the text sent to the voice, for each word of the page the (first, last) character of its spoken words)."""
     out, spans = "", []
     for tok in text.split():
-        tok = tok.replace("\u2060", "")
+        tok = tok.replace("\u2060", "").replace("\u00ad", "").replace("\u200b", "")
         if not tok: continue
         w = spoken(tok)
         glue = not out or w == "," or re.fullmatch(r"[.,:;!?)]+|:\w+", tok) is not None   # "metriä ." → "metriä.", "AU :n" → "AU:n"

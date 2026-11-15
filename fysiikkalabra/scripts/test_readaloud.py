@@ -83,9 +83,11 @@ TEX = {
            (r"\overline{F}_{\mu}", "vektori F myy"), (r"2{,}5\,\text{m}^3", "2,5 kuutiometriä"),
            (r"c = 4190\,\frac{\text{J}}{\text{kg}\cdot{}^\circ\text{C}}", "c on 4190 joulea per kilogramma per celsiusaste"),
            (r"20\,^\circ\text{C}", "20 celsiusastetta"), (r"p = \frac{F}{A}", "p on F jaettuna A"), (r"1{,}18\,\text{kN}", "1,18 kilonewtonia"),
-           (r"3{,}0 \cdot 10^{8}\,\text{m/s}", "3,0 kertaa 10 potenssiin 8 metriä sekunnissa"), (r"12\,000\,\text{J}", "12000 joulea")],
+           (r"3{,}0 \cdot 10^{8}\,\text{m/s}", "3,0 kertaa 10 potenssiin 8 metriä sekunnissa"), (r"12\,000\,\text{J}", "12000 joulea"),
+           (r"\beta^{-}", "beeta miinus"), (r"\beta^{+}", "beeta plus"), (r"-10-(-15) = 5", "miinus 10 miinus negatiivinen 15 on 5"), (r"10^{-15}", "10 potenssiin miinus 15")],
     "en": [(r"F = m \cdot a", "F equals m times a"), (r"9.81\,\text{m/s}^2", "9.81 metres per second squared"),
-           (r"2.5\,\text{m}^2", "2.5 square metres"), (r"E = 3.6\,\text{kWh}", "E equals 3.6 kilowatt hours")],
+           (r"2.5\,\text{m}^2", "2.5 square metres"), (r"E = 3.6\,\text{kWh}", "E equals 3.6 kilowatt hours"),
+           (r"-10-(-15) = 5", "minus 10 minus negative 15 equals 5")],
 }
 
 
