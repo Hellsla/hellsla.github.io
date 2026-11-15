@@ -134,6 +134,24 @@ def kuvaaja():
     return f.svg()
 
 
+def kuvaaja_ab():
+    """Task figure: E_k,max(f) lines of two unnamed metals A (W = 2,30 eV) and B (W = 2,90 eV); no f_0 labels, no slope triangle."""
+    hv = h / e * 1e14
+    f = Fig("fy81-kuvaaja-ab", 400, "Kuvaaja mittakaavassa: irtoavien elektronien suurin liike-energia elektronivoltteina valon "
+            "taajuuden funktiona kahdelle metallille A ja B. Taajuusakseli on nollasta 16 kertaa 10 potenssiin 14 hertsiin, "
+            "energia-akseli nollasta viiteen elektronivolttiin, ja ruudukko auttaa lukemaan arvoja. Molemmat suorat alkavat "
+            "vaaka-akselilta omalta rajataajuudeltaan ja nousevat yhdensuuntaisina oikealle. Metallin A suora alkaa vasemmalta "
+            "ja metallin B suora sen oikealta puolelta. Rajataajuuden alapuolella elektroneja ei irtoa.")
+    ax = Axes(f, (96, 340), (420, 56), x=(0, 16), y=(0, 5), xticks=list(range(2, 17, 2)), yticks=[1, 2, 3, 4, 5],
+              xlabel=r"f\ (10^{14}\,\text{Hz})", ylabel=r"E_\text{k,max}\ (\text{eV})")
+    for W, col, name in ((2.30, HEAT, "A"), (2.90, IRON, "B")):
+        f0 = W / hv
+        ax.line([(f0, 0), (16, hv * 16 - W)], col, 3)
+        ax.point(f0, 0, col)
+        f.tex(ax.X(16) + 10, ax.Y(hv * 16 - W), name, "start", col)
+    return f.svg()
+
+
 def hero():
     """The chapter's opening illustration: two charged electroscopes with zinc plates; ultraviolet light discharges one,
     bright red light leaves the other charged."""
@@ -177,11 +195,12 @@ def hero():
     return f.svg()
 
 
-FIGURES = {"hero": hero, "ilmio": ilmio, "energia": energia, "kuvaaja": kuvaaja}
+FIGURES = {"hero": hero, "ilmio": ilmio, "energia": energia, "kuvaaja": kuvaaja, "kuvaaja-ab": kuvaaja_ab}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "hero": "decorative",
     "ilmio": "reveals: red light frees no electrons from zinc, ultraviolet frees them",
     "energia": "reveals: for sodium hf < W at 650 nm, hf = W at 544 nm, E_k,max = 0,78 eV at 405 nm",
     "kuvaaja": "reveals: E_k,max(f) lines of sodium and zinc start at f0 = W/h and have slope h",
+    "kuvaaja-ab": "safe: E_k,max(f) lines of two unnamed metals A and B on a grid, no f0 values or work functions written",
 }

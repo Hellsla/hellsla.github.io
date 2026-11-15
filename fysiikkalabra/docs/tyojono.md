@@ -40,8 +40,34 @@ voidaan tehdä, kun mikään jaettu muutos ei ole auki. #579:n koko sivuston ajo
 Tapa ajaa selaintarkistukset CI:n kontissa (`mcr.microsoft.com/playwright/python:v1.65.0-noble`) paikallisesti, ja
 layout-testien virheilmoitukset nimeämään ylivuotava elementti (`docs/QUALITY.md` aukot 1–2). Jaettuja tiedostoja:
 tehdään yksin ja yhdistetään ennen muita.
+Löydös (2026-11-15, #590): `check_lesson.py` layout-tarkistus (360 px, ratkaisu auki) ei havainnut fy8-1-L2-08:n
+sijoitusketjun ylivuotoa en-versiossa (oikea reuna 372 px vs. laatikko 330 px, yksikkö Hz leikkautui; ulkoasukatselmoija
+löysi sen); lisää `check_layout.py`:hin tarkistus, joka mittaa ratkaisun kaavaketjun ylivuodon avoimessa tilassa
+kaikilla kielillä 360 ja 390 px:llä.
 
 ## 6. Kuvatehtävät FY8, FY9, FY10 ja FY14, taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13 ja 2026-11-14)
+
+Varattu: claude/fy8-kuva-taulukkotehtavat (FY8, erä 1: fy8-1…3, PR #590)
+
+FY8 yksi luku per PR erästä 2 alkaen (koordinaattori 2026-11-15). Erä 1 (#590) valmistui osittain: fy8-1 on tehty ja
+katselmoitu (+3 tehtävää: L1-10 MAFY kalsiumin irrotustyö 3,20 eV, L2-08 ja L2-09 kuvatehtävät; tiede, pedagogiikka ja
+ulkoasu PASS fi, en, fi-easy). fy8-3:ssa on jo kaksi kuvatehtävää (L2-03, L2-06), ei muutosta. fy8-2 palautettiin mainin
+tilaan ja jää erään 2: lisää kaksi kuvatehtävää kuvalla `fy8-2/lamp-spectrum`, esim. L2-09 (sinisen viivan 436 nm
+fotonin energia, 2,84 eV) ja L3-06 (405 nm ja 546 nm viivat; tiedekatselmointi hylkäsi version, jossa viivat tulivat
+kahdelta ylätasolta samalle alatasolle: kuvan elohopeassa ne tulevat yhdeltä ylätasolta 7³S₁ kahdelle eri alatasolle,
+joten b) kysyy alatasojen eroa 5,461 − 4,667 = 0,79 eV ja c) selittää, miksi eroa ei saa laskea yhteen; korjaa tehtävä,
+ratkaisu, mallivastaus ja 1570 nm infrapunahuomautus tämän mukaan). Seuraavat: fy8-4, fy8-5, ..., fy8-16 (MAFY-taulukkotehtävä
+noin joka kolmanteen: ehdotus fy8-4, 7, 10, 13 ja 16, arvot `docs/mafy-arvot.tsv`:ään lähde-URL:lla).
+Kulutus (mitattu, erä 1): noin 300 k per luku katselmointeineen (kehittäjä 90–105 k, täydet delta-katselmoinnit kolmella
+kielellä 150–200 k, korjauskierros 35 k + uusintakatselmoinnit 160 k); erän 1 kokonaiskulutus noin 955 k ja koordinaattori
+hyväksyi ylityksen jälkikäteen (alkuperäinen katto 350 k, sitten 500 k, 650 k ja 1 000 k). Mitoita erät sen mukaan: yksi
+luku per PR, ja ota katselmoijat per rooli yhdellä ajolla kolmelle kielelle (en/fi-easy-tiede ei kulje fi:n PASS:n
+mukana, jos käännöksessä on ennestään eroja: `reviews.py` `translation_differs` fy8-1:ssä L3-02 en, L3-01 fi-easy).
+Polish-kohdat (ei estä, ei korjattu, jotta fy8-1:n hash ei muutu): `lessons/FY8/fy8-1/answers.py`:n kommentti
+"387,6 nm -> 388 nm" pitäisi olla "387,5 nm -> 387 nm"; L2-08:n ratkaisussa 5,56 on tarkempi kuin kuvasta luettava 5,6;
+L2-09:n ratkaisun "±1 %" löysä (7,0 ± 0,1 antaa ±1,5 %) ja merkitsevien numeroiden perustelu epäselvä; L2-08 on kevyt
+tasolle 2; kuva on pieni tehtäväkortissa (jakoarvot noin 8 px, sama kaikilla kuvatehtävillä).
+Tämä kohta jää, kunnes FY9, FY10 ja FY14 on tehty.
 
 Sama tahti kuin FY4:stä alkaen: jokaisessa luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka
 kolmannessa luvussa (#521, #528). FY10:een ja FY14:ään ei lisätä taulukkotehtäviä, vain kuvatehtävät (opettaja

@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5b627e2749906f73
+CONTENT-HASH: 8dc2567292c69c38
+SCOPE: delta added-exercise from 5b627e2749906f73 base 5a45b28682e8
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json fy8-1-L2-07 (older task) — the stem quotes the intercept "-2,1 eV", so the boxed W = 2,14 eV is reachable as |intercept| within the 3 % tolerance without the slope work; box f_0 (5,17e14 Hz) instead.
-- exercises.json fy8-1-L2-07 a) — the question restates the answer; shorten to "Mikä virhe opiskelijan päättelyssä on?".
+(none new; round-1 polish on L2-08 level and "Kaava" wording unchanged and optional)
 
 ## Checked
-- Round 2: only the solution line of fy8-1-L1-09 changed (the subtraction and the result are now two lines); content unchanged, the Round 1 findings on the task stand (two true, three false, each false one a warned error with its own feedback, no form tell).
-- Method: text only (diff and packet); no renders opened.
+- L2-08 solution diff: Muunnokset now states frequencies are used in units of 10^14 Hz so the slope 0.4136 eV gives eV directly; the old line mixed units (eV per 10^14 Hz times a unitless-looking factor) and is repaired.
+- Sijoitus 0.4136 * (12 - 5.56) = 2.66 eV is correct and consistent with the stated unit convention.
+- Järkevyys no longer uses the work function (not readable in the task); compares the graph reading 2.7 eV to hf = 4.96 eV and notes 2.66 agrees: clearer, reading stays the primary route.
+- Reading step, answer (2.7 eV, tolerance) and L1-10, L2-09 untouched; earlier PASS stands.
+- Method: text diff only.
