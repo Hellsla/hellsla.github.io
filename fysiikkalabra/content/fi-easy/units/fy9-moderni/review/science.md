@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 25434baad88cf0fc
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 3899b2fed1ddbaa3
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
 - (none)
 
 ## Polish
-- A: s7 a and d: 2,05 MJ is the laser energy delivered to the target; only part of it is absorbed by the fuel itself. "Laserit toivat polttoaineeseen" is an acceptable simplification at this level; "polttoainekohtioon" would be exact.
-- A: s7 d, third criterion (electricity about 1 MJ with a thermal plant's efficiency) rests on the third bullet of the task data, which part d's text does not name; add "ja lämpövoimalan hyötysuhdetta" to the part text.
+- (none)
 
 ## Checked
-- Item 18 hunk: s6 common mistake, "Δm lasketaan sähkötehosta eikä lämpötehosta": agrees with the solution of s6 b, which computes Δm from the thermal power 4300 MW.
-- s7 recomputed with own formulas: 3,15/2,05 = 1,537; difference 1,10 MJ = 53,7 % of 2,05 MJ; inverse 0,651; m = 3,15e6 J / (4190 J/(kg K) · 80 K) = 9,397 kg, cΔT = 335 200 J/kg; 3,15/300 = 1,05 %; 2,05/300 = 0,68 %; one third of 3,15 MJ = 1,05 MJ = 0,35 % of 300 MJ; Δm = 3,15e6 J / c^2 = 3,50e-11 kg = 35 ng. All agree with tasks.json, the solution and answers.py.
-- s7 physics: fusion of light nuclei, which energy is which, gain above 1 only for the fuel's balance, system boundary decides the balance, Q = cmΔT without vaporisation (said), energy conservation with E = Δm c^2 and the more tightly bound products. Two significant figures in c justified by the estimated starting temperature. Points 2+3+4+3+3 = 15.
+- s7 d part text (round-1 Blocking): now asks for the estimate of the electrical energy with a thermal plant's efficiency, so the third criterion (about 1 MJ, under half a percent of 300 MJ) asks only what the task asks and gives (third bullet of the data). The solution's Kysytty is extended the same way; 3,15 MJ / 3 = 1,05 MJ = 0,35 % of 300 MJ; 3,15/300 = 1,05 %; 2,05/300 = 0,68 %.
+- s7 c Vastaus: two significant figures justified by the temperature difference 80 K (100 °C − 20 °C, both given in the part); m = 3,15e6 J / (4190 J/(kg K) · 80 K) = 9,397 kg, so 9,4 kg, as in tasks.json and the rubric.
+- s7 task data: the three extra facts are now full sentences under "Lisätietoja"; values unchanged (4,19 kJ/(kg K), about 300 MJ, about one third).
+- s7 e first criterion: either reason is accepted (no electricity was produced, or a grid-connected plant is decades away); both are true and the solution gives both.
 - `python scripts/practice.py check units/fy9-moderni`: OK (7 tasks, 110 points). Hash equal at start and end.

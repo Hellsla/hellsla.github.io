@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 27b6abb9d4641483
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 6baa2111c76a816f
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
 - (none)
 
 ## Polish
-- A: unit.md Ydinajatus: "Liikkuvaan varaukseen ... se kohdistaa voiman" holds when the velocity is not parallel to the field; the formula map already uses the perpendicular component, a clause here ("kun liike ei ole kentän suuntainen") would close it.
-- A: s7 d, conclusion criterion: "Suihkun protonien yhteinen massa on silti alle nanogramman" is not asked in d; mark it as an extra remark, not a requirement.
+- (none)
 
 ## Checked
-- Item 18 hunks: hook question, "Etsi virhe" prompt, s1 c (asked quantity, answer), unit.md (loss power in the cable, derivation text), figure "siirto" labels now "häviö 38 %" and "häviö 2,0 W = 0,005 %", aria texts. Numbers around them unchanged.
-- s7 recomputed with own formulas: v = 11 245 · 26 659 m/s = 299 780 455 m/s; v/c = 0,99996; c − v = 12,0 km/s = 0,0040 %; rounding interval 2,99762e8 … 2,99799e8 m/s contains c; E1 = 1,0894e-6 J; classical v = 3,61e10 m/s = 120 c; N = 4,0e14; E = 435,7 MJ; mass 6,69e-13 kg; both beams 871 MJ; E_k = 0,5787 MJ; ratio 753 (760 with rounded values); wrong 7,5 MJ and 58. All agree with tasks.json, the solution and answers.py.
-- s7 physics: the conclusion in a is the right one (the figures cannot resolve c − v; a particle with mass stays below c); classical E_k rejected for the proton, used for the car; magnetic force perpendicular to the velocity does no work; energy from the cavities' electric field; R = 0 in the superconducting state so RI^2 = 0. Points 3+2+3+3+4 = 15.
-- `python scripts/practice.py check units/fy9-magnetismi-valo`: OK. Hash equal at start and end.
+- unit.md Ydinajatus: "Liikkuvaan varaukseen ja virtajohtimeen se kohdistaa voiman, kun liike tai virta ei ole kentän suuntainen": the condition is now stated and agrees with the formula map's perpendicular component.
+- s7 a part text: the added sentence about the precision of the source's figures points to the conclusion criterion (c − v is smaller than the rounding of 26 659 m and 11 245 1/s, so its size cannot be concluded; a particle with mass stays below c). No number changed: v = 11 245 · 26 659 m/s = 2,9978e8 m/s, v/c = 0,99996.
+- s7 d conclusion criterion: the sentence about the protons' total mass is removed, so the criterion asks only what d asks (ratio 4,357e8 J / 5,787e5 J = 753). The mass remark stays in the solution as a reasonableness note (6,7e-13 kg, below a nanogram: right).
+- `python scripts/practice.py check units/fy9-magnetismi-valo`: OK (7 tasks, 110 points). Hash equal at start and end.

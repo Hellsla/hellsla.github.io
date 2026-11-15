@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5b3a27971a4efdaf
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 1c8be0fc88c80344
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
 - (none)
 
 ## Polish
-- A: solutions s2, the row 485 kW − 175 kW − 233 kW ≈ 77 kW now agrees with the numbers shown; the unrounded value is 77,6 kW, so "eli 16 %" still holds. A half sentence ("pyöristetyillä arvoilla") would stop a student who computes 78 kW from the unrounded values from doubting it.
+- (none)
 
 ## Checked
-- Item 18 hunks: s2 rounding row (485 − 175 − 233 = 77); s5 common mistake: with the total pressure 311 kPa instead of the rise 210 kPa, Δn is 311/210 times too large and M is 210/311 = 0,68 of the right value, so "noin kaksi kolmasosaa" is right (the old "kolmasosa" was wrong).
-- s7 recomputed with own formulas: η = 1600/4300 = 0,3721; P2 = 2700 MW; Q2 = 64 800 MWh = 64,8 GWh = 2,333e14 J; 38,4 GWh + 64,8 GWh = 103,2 GWh = 4300 MW · 24 h; 1600 MW · 8760 h = 14,0 TWh; cρ(V/t) = 2,388e8 W/K; ΔT = 11,31 K; 47,4 kJ/kg; wrong 18,0 K with 4300 MW; 563 K, 283 K, 280/563 = 0,50. All agree with tasks.json, the solution and answers.py.
-- s7 physics: efficiency from powers, steady state so P1 = Ps + P2, Q = cmΔT with m = ρV derived in symbols, direction of the estimate, heat engine must reject Q2 (not a loss), low-temperature heat cannot heat a district-heating network by itself. Points 2+3+4+3+3 = 15.
+- s2 c Järkevyys: 485 kW − 175 kW − 233 kW = 77 kW from the rounded powers; the added sentence gives 77,6 kW unrounded, which is what answers.py now computes (`fy9-kaasut-s2-waste` = 77,6; 0,64 · 0,25 · 485,1 kW). 77,6/485,1 = 16 %, so the row's conclusion holds.
+- s5 common mistake: with 311 kPa instead of the rise 210 kPa the amount of substance is too large and the molar mass is 210/311 = 0,68 of the right one; "moolimassaksi tulee noin kaksi kolmasosaa oikeasta" now names the right quantity.
+- s7 e: 10 °C + 11 K = 21 °C; now the same as c's Järkevyys ("palaa mereen noin 21 °C:n lämpöisenä") and the task's sea temperature. No 20 °C left in s7.
+- s7 c part text: asks for a symbolic expression from the heat per unit time and the volume per second without naming Q = cmΔT; the solution and the equation criterion derive ΔT = P_2 t/(cρV) from exactly those; ΔT = 2,7e9 W / 2,388e8 W/K = 11,3 K unchanged.
 - `python scripts/practice.py check units/fy9-kaasut`: OK (7 tasks, 110 points). Hash equal at start and end.
