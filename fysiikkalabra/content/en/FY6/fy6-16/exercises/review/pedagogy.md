@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 44d102baf5907a2c
-SCOPE: delta added-exercise from 38935656dc0691fb base 8f23aa7ae3bd
+CONTENT-HASH: 64560c496d3a4f35
+SCOPE: delta proofreading fixes 2026-11-15, round 1
 
 ## Blocking
 - none
 
 ## Polish
-- L2-09 shows the same kind of data as L2-05 (a house's evening power, hour by hour, before the charging station). The question differs (cost from the area, against the peak and the fuses), so it is not a repeat, but check that the graph's values are not the table's; using different values keeps the two from being solved together.
-- L2-09 text: "from 18 to 22" would read better as "from 18.00 to 22.00".
+- fy6-16 L2-05 and L2-03: the question text does not say the limit is rounded down; the solution explains it and the 10.45 kW and 11.96 A answers are still accepted, so no student is penalised.
 
 ## Checked
-- Level 2: energy from a stepped power graph (four one-hour rectangles), then cost with c/kWh converted to euros; a household situation tied to the chapter; not the worked example.
-- Figure gives 2, 5, 7 and 3 kW per hour with hourly gridlines; the description matches and gives neither the energy nor the cost.
-- Situation first, question last as its own sentence ("Read the necessary values from the graph" tells the student what to do).
-- Solution complete: given, principle, reading each hour, symbolic formula, price conversion, substitution (17 kWh, 2.72 euros), significant figures, reasonableness by mean power (about 4.3 kW).
-- Arithmetic verified: 2 + 5 + 7 + 3 = 17 kWh; 0.16 * 17 = 2.72 EUR; the 2 % tolerance covers 2.7.
-- Fit: it adds a cost-from-graph task at level 2 (similar to the energy-price tasks in other chapters but in the car and home setting); the set's mix of kinds (data, error, model, graph) is kept.
+- L2-03: 25 A - 13.04 A = 11.96 A, rounded down to 11 A (12 A would exceed the fuse); relative tolerance 0.043 around 11.478 accepts 10.98-11.97 A, so 11 and 11.96 pass and 12 fails.
+- Reasonableness 13.0 + 11 = 24 A and 7.6 kW are correct.
+- L2-05: 10.45 -> 10.4 kW rounded down with reason; 24.9 A check correct; tolerance still accepts 10.45.
+- The safety-limit principle (round a maximum down, a minimum up) is stated in three solutions: good practice.
+- 156 % -> 1.6e2 %, 1370 EUR -> 1.37e3 EUR: correct.
