@@ -1,19 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 1042d3c37f4db574
-SCOPE: delta added-exercise from cbbbb7286332c468 base 6792c2c543a7
+CONTENT-HASH: c780a0d8565071dc
 
 ## Blocking
 
 ## Polish
-- solutions.md fy8-2-L3-06 Vastaus — "lukuvirhe näkyy jo kolmannessa numerossa" is ambiguous. A reading error of ±2 nm in each line moves ΔE by about ±0,02 eV (0,767–0,814), so it already reaches the second significant figure of 0,79, which is the third digit of 3,06 and 2,27 — say "energioiden toisessa desimaalissa" so that it is clear which numbers are meant.
-- solutions.md fy8-2-L2-09 Kuvaajan lukeminen — "Sininen viiva on viiva, joka on lähimpänä arvoa 436 nm" still assumes the value it is meant to read. Describe the line first (between 430 and 440 nm, a little to the right of 430) and then give the reading 436 nm.
+- solutions.md:188 (fy8-2-L1-07) with exercises.json L1-07 — the model answer requires the cause "ytimen varaus ja elektronien määrä ovat erilaiset" ("tämä syy vaaditaan"), which the brief's lesson does not teach (it says only that each element has its own states). The physics is right — either drop "vaaditaan" and accept "jokaisella alkuaineella on omat energiatilansa", or give the cause in the task text.
+- solutions.md:273 (fy8-2-L3-04) Järkevyys — "yli $780\,\text{nm}$, eli infrapunaa" uses another edge of visible light than the lesson and L2-08 ($380$–$750\,\text{nm}$, task band to $720\,\text{nm}$) — write $750\,\text{nm}$.
+- solutions.md:283 (fy8-2-L3-05) Vastaus — part d) gives $477\,\text{nm}$ with three figures from $0{,}50\,\text{eV}$ without a reason — add that $3{,}10\,\text{eV} - 0{,}50\,\text{eV} = 2{,}60\,\text{eV}$ is known to hundredths, so three figures stand.
+- solutions.md:69 (fy8-2-L2-01) Sijoitus — the shown quotient $1{,}9865 \cdot 10^{-25} : 4{,}0851 \cdot 10^{-19}$ is $4{,}8628 \cdot 10^{-7}\,\text{m}$, the text has $4{,}8627$ (the unrounded value); the answer $486\,\text{nm}$ is unaffected.
+- solutions.md fy8-2-L3-04 b) — the task asks for a drawn level diagram; the solution gives it only in words. A model figure would complete it.
 
 ## Checked
-- I recomputed in my own script with h = 6,626e-34, c = 2,998e8, e = 1,602e-19: hc = 1,9865e-25 J m; L2-09: 4,5561e-19 J = 2,8440 eV, so 2,84 eV. L3-06: 3,0617 − 2,2711 = 0,7907 eV, so 0,79 eV. These match answers.py (2.844029; 0.790664), the JSON and every intermediate value in solutions.md ✓.
-- The split chains are correct. L2-09 gives hc as its own step, then J, then eV, and every unit carries through. In L3-06 a), hc/(λ·e) with e in J/eV gives eV directly ✓.
-- Renamed indices: E_viol and E_vihr, and E_a,viol and E_a,vihr, are used consistently. ΔE = E_a,vihr − E_a,viol = E_viol − E_vihr has the right sign: the green line ends at the higher lower level (6³P₂, 5,461 eV) ✓.
-- c) model answer: the two lines are alternative transitions, not a cascade. A sum (5,33 eV) would count E_y twice. This is correct ✓.
-- Järkevyys: 5,461 − 4,667 = 0,794 eV agrees with NIST. The 1570 nm remark stays conditional (hc/0,7907 eV = 1568 nm) ✓.
-- Tolerances are unchanged and still fair. L2-09: ±0,03 covers readings from 434 to 441 nm. L3-06: ±0,05 covers ±2 nm in both readings ✓.
-- The figure is unchanged: it is to scale with lines at 405, 436 and 546 nm, and it does not give the answers away ✓.
-- Hash 1042d3c37f4db574 at the start and the end.
+- One script recomputed all 17 numeric answers from the task texts with my own formulas (h = 6,626e-34 J s, c = 2,998e8 m/s, 1 eV = 1,602e-19 J): every one agrees with exercises.json and answers.py inside the tolerance (largest relative difference 0,35 %, L2-03).
+- Intermediate values of every solution (joules, eV, hc = 1,9865e-25 J m) recomputed; only the L2-01 last digit above differs.
+- L2-07: my least-squares fit gives λ = 12,01 nm/mm · x + 299,65 nm, residuals at most 0,76 nm, 496,6 nm at 16,4 mm (inside the calibrated range, no extrapolation); slope read from the fitted line as the guardrail asks.
+- L3-04: photon energies 3,90/2,80/2,40/1,50/1,30 eV; levels 1,10/2,40/3,90 eV reproduce all five lines; the mirror solution is excluded by the task's statement about the sixth line; both routes to E1 give 1127–1129 nm.
+- L2-08: 496, 413, 282 nm from the ground state, 653 nm only from level 2; exactly one option right, the four figures drawn to scale from the same level data, each distractor's feedback correct.
+- L3-05: shares 18,9 / 22,1 / 15,1 %, d) 477 nm; one photon in, one out stated in the task.
+- L3-06: mercury 404,7 and 546,1 nm do share the upper level (7³S₁ → 6³P₀, 6³P₂); 0,79 eV matches 5,461 − 4,667 eV; two figures justified.
+- L2-05, L2-06: reference lines of H, He, Na, Hg, Ca II, Mg correct and labelled esimerkkiaineisto; line E rightly unidentified; E_y = −0,85 eV is n = 4.
+- Concept tasks L1-06, L1-08: one correct option, distractors really wrong, feedback correct.
+- Symbols (E_y, E_a, ΔE, hf, λ) as in the lesson; every solution symbolic first; scope inside FY8.

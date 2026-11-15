@@ -21,5 +21,4 @@ Mode: full, round 1
 - Kontrasti graph to scale: curves within 0,004 of (1/2)^(d/d½), markers right.
 - Each choice has exactly one correct option; distractor feedback gives the right reason; the single-coincidence answer states its condition (no arrival-time difference).
 - E_γ = m_e c² carries its condition (nearly at rest); two photons argued from momentum.
-- Radiotherapy 5 · 0,40 Gy figure: simplifications stated right after it (C).
-- Scope inside FY8; justification, optimisation and the 20 mSv limit agree across theory, summary and exit ticket.
+- Radiotherapy 5 · 0,40 Gy figure: simplifications stated after it (C); scope inside FY8; theory, summary and exit ticket agree.
