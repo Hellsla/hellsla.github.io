@@ -36,7 +36,7 @@
 **Kaava:** $P_\text{h} = P_\text{o} - P_\text{a}$, missä $P_\text{o}$ on vaiheeseen tuleva ottoteho ja $P_\text{a}$ siitä lähtevä antoteho; höyrykierrossa $P_\text{o} = P_1$ ja $P_\text{a} = P_2$, joten $P_\text{h} = P_1 - P_2$
 **Muunnokset:** Ei tarvita: kaikki tehot ovat megawatteina.
 **Sijoitus:** $P_\text{h} = 350\,\text{MW} - 150\,\text{MW} = 200\,\text{MW}$
-**Vastaus:** Eniten teho pienenee höyrykierrossa, jossa lämpönä ympäristöön siirtyy $200\,\text{MW}$. Pylväiden päät ovat tarkasti ruudukon viivoilla, joten lukemat $350\,\text{MW}$ ja $150\,\text{MW}$ ovat täysiä megawatteja, kolmen numeron arvoja, ja tulos $200\,\text{MW}$ on kolmen merkitsevän numeron tarkkuudella.
+**Vastaus:** Eniten teho pienenee höyrykierrossa, jossa lämpönä ympäristöön siirtyy $200\,\text{MW}$. Pylväiden $P_1$ ja $P_2$ päät ovat tarkasti ruudukon viivoilla, joten lukemat $350\,\text{MW}$ ja $150\,\text{MW}$ ovat täysiä megawatteja, kolmen numeron arvoja, ja tulos $200\,\text{MW}$ on kolmen merkitsevän numeron tarkkuudella.
 **Järkevyys:** Vaiheiden häviöt ovat yhteensä $50 + 200 + 10 = 260\,\text{MW} = P_\text{o} - P_3 = 400\,\text{MW} - 140\,\text{MW}$, joten tase täsmää. Höyrykierron hyötysuhde on $150 / 350 \approx 0{,}43$, joka sopii höyrykierrolle, ja sen häviö on yli $75\,\%$ koko laitoksen hukkalämmöstä.
 
 ## fy3-15-L1-05
@@ -238,5 +238,5 @@ $P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfr
 **Kaava:** $P_2 = \eta_2 P_1$, joten $\eta_2 = \dfrac{P_2}{P_1}$
 **Muunnokset:** Molemmat tehot ovat samassa yksikössä $\text{MW}$, joten yksikkö supistuu pois; hyötysuhde prosentteina saadaan kertomalla sadalla.
 **Sijoitus:** $\eta_2 = \dfrac{150\,\text{MW}}{350\,\text{MW}} = 0{,}4286 = 42{,}86\,\%$
-**Vastaus:** $\eta_2 \approx 42{,}9\,\%$, kolme merkitsevää numeroa: pylväiden päät ovat tarkasti ruudukon viivoilla, joten lukemat $350\,\text{MW}$ ja $150\,\text{MW}$ ovat täysiä megawatteja, kolmen numeron arvoja.
+**Vastaus:** $\eta_2 \approx 42{,}9\,\%$, kolme merkitsevää numeroa: pylväiden $P_1$ ja $P_2$ päät ovat tarkasti ruudukon viivoilla, joten lukemat $350\,\text{MW}$ ja $150\,\text{MW}$ ovat täysiä megawatteja, kolmen numeron arvoja.
 **Järkevyys:** Hyötysuhde on alle $100\,\%$ ja tyypillinen höyrykierrolle. Riippumaton tarkistus: kattilan hyötysuhde on $350/400 = 0{,}875$ ja generaattorin ja muuntajan $140/150 = 0{,}933$, joten koko ketjun hyötysuhde on $0{,}875 \cdot 0{,}4286 \cdot 0{,}933 = 0{,}350 = 140/400$, mikä täsmää.

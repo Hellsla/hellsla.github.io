@@ -36,7 +36,7 @@
 **Formula:** $P_\text{h} = P_\text{o} - P_\text{a}$, where $P_\text{o}$ is the input power coming into the step and $P_\text{a}$ the output power leaving it; in the steam cycle $P_\text{o} = P_1$ and $P_\text{a} = P_2$, so $P_\text{h} = P_1 - P_2$
 **Conversions:** Not needed: all powers are in megawatts.
 **Substitution:** $P_\text{h} = 350\,\text{MW} - 150\,\text{MW} = 200\,\text{MW}$
-**Answer:** The power decreases the most in the steam cycle, where $200\,\text{MW}$ is transferred to the surroundings as heat. The ends of the bars lie exactly on gridlines, so the readings $350\,\text{MW}$ and $150\,\text{MW}$ are whole megawatts with three figures, and the result $200\,\text{MW}$ has three significant figures.
+**Answer:** The power decreases the most in the steam cycle, where $200\,\text{MW}$ is transferred to the surroundings as heat. The ends of the bars $P_1$ and $P_2$ lie exactly on gridlines, so the readings $350\,\text{MW}$ and $150\,\text{MW}$ are whole megawatts with three figures, and the result $200\,\text{MW}$ has three significant figures.
 **Reasonableness:** The losses of the steps add up to $50 + 200 + 10 = 260\,\text{MW} = P_\text{o} - P_3 = 400\,\text{MW} - 140\,\text{MW}$, so the balance works out. The efficiency of the steam cycle is $150 / 350 \approx 0.43$, which suits a steam cycle, and its loss is over $75\,\%$ of the waste heat of the whole plant.
 
 ## fy3-15-L1-05
@@ -238,5 +238,5 @@ $P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfr
 **Formula:** $P_2 = \eta_2 P_1$, so $\eta_2 = \dfrac{P_2}{P_1}$
 **Conversions:** Both powers are in $\text{MW}$, so the unit cancels; the efficiency as a percentage is obtained by multiplying by one hundred.
 **Substitution:** $\eta_2 = \dfrac{150\,\text{MW}}{350\,\text{MW}} = 0.4286 = 42.86\,\%$
-**Answer:** $\eta_2 \approx 42.9\,\%$, three significant figures: the ends of the bars lie exactly on gridlines, so the readings $350\,\text{MW}$ and $150\,\text{MW}$ are whole megawatts with three figures.
+**Answer:** $\eta_2 \approx 42.9\,\%$, three significant figures: the ends of the bars $P_1$ and $P_2$ lie exactly on gridlines, so the readings $350\,\text{MW}$ and $150\,\text{MW}$ are whole megawatts with three figures.
 **Reasonableness:** The efficiency is below $100\,\%$ and typical of a steam cycle. An independent check: the efficiency of the boiler is $350/400 = 0.875$ and that of the generator and transformer $140/150 = 0.933$, so the efficiency of the whole chain is $0.875 \cdot 0.4286 \cdot 0.933 = 0.350 = 140/400$, which matches.

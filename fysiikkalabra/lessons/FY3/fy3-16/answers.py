@@ -15,7 +15,7 @@ a["fy3-16-L1-05"] = c_neste * 0.50 * 8.0 / 1e3            # coolant: P = c (m/t)
 # Level 2: two steps, one conversion or one rearrangement
 UA2 = 2.0 * 0.50                                          # U A = 2,0 · 0,50 = 1,0 W/K; ΔT = 25 K
 P2 = UA2 * 25                                             # P = 25 W
-a["fy3-16-L2-01"] = P2 * 6.0 * 3600 / s                   # P t = s m -> m = 25 · 21 600 / 334 000 = 1,617 kg -> 1,6 kg
+a["fy3-16-L2-01"] = math.ceil(P2 * 6.0 * 3600 / s * 10) / 10   # P t = s m -> m = 25 · 21 600 / 334 000 = 1,617 kg; a minimum: rounded up -> 1,7 kg (oikoluku 2026-11-15, P7c)
 a["fy3-16-L2-02"] = (c_vesi * 0.25 * (100 - 20) + r * 0.25) / 1e3   # 83 800 + 565 000 = 648 800 J -> 650 kJ
 a["fy3-16-L2-03"] = 24e3 / (c_neste * 8.0)                # m/t = P / (c ΔT) = 24 000 / (3500 · 8,0) = 0,857 kg/s -> 0,86 kg/s
 a["fy3-16-L2-04"] = c_vesi * 0.33 * 22 / s * 1e3          # melted ice m = c m_j ΔT / s = 4190 · 0,33 · 22 / 334 000 = 0,0911 kg -> 91 g

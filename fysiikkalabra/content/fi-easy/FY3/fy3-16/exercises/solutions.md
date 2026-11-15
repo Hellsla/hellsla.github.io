@@ -55,7 +55,7 @@
 **Kaava:** $U A\,\Delta T\,t = s\,m$, joten $m = \dfrac{U A\,\Delta T\,t}{s}$
 **Muunnokset:** $t = 6{,}0\,\text{h} = 6{,}0 \cdot 3600\,\text{s} = 21\,600\,\text{s}$. Lisäksi $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Silloin watti kertaa sekunti on joule.
 **Sijoitus:** $P = 2{,}0 \cdot 0{,}50 \cdot 25\,\text{W} = 25\,\text{W}$ ja $m = \dfrac{25\,\text{W} \cdot 21\,600\,\text{s}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = \dfrac{540\,000\,\text{J}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = 1{,}617\,\text{kg}$
-**Vastaus:** $1{,}6\,\text{kg}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska U-arvo $2{,}0$, pinta-ala $0{,}50\,\text{m}^2$, lämpötilaero $25\,\text{K}$ ja aika $6{,}0\,\text{h}$ ovat kaikki kahdella numerolla.
+**Vastaus:** $1{,}7\,\text{kg}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska U-arvo $2{,}0$, pinta-ala $0{,}50\,\text{m}^2$, lämpötilaero $25\,\text{K}$ ja aika $6{,}0\,\text{h}$ ovat kaikki kahdella numerolla. Laskettu $1{,}617\,\text{kg}$ on pienin riittävä massa. Siksi se pyöristetään ylöspäin: $1{,}6\,\text{kg}$ ei riittäisi koko kuudeksi tunniksi.
 **Järkevyys:** Teho on $25\,\text{W}$. Kuudessa tunnissa laukkuun tulee siis $540\,\text{kJ}$. Palautus: $1{,}617\,\text{kg} \cdot 334\,\tfrac{\text{kJ}}{\text{kg}} = 540\,\text{kJ}$. Vähän yli puolentoista kilon jääpussi on tavallinen koko. Kaksinkertainen aika vaatisi kaksinkertaisen massan.
 
 ## fy3-16-L2-02

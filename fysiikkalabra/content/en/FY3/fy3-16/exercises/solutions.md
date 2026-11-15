@@ -55,7 +55,7 @@
 **Formula:** $U A\,\Delta T\,t = s\,m$, so $m = \dfrac{U A\,\Delta T\,t}{s}$
 **Conversions:** $t = 6.0\,\text{h} = 6.0 \cdot 3600\,\text{s} = 21\,600\,\text{s}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$, so that a watt times a second is a joule.
 **Substitution:** $P = 2.0 \cdot 0.50 \cdot 25\,\text{W} = 25\,\text{W}$ and $m = \dfrac{25\,\text{W} \cdot 21\,600\,\text{s}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = \dfrac{540\,000\,\text{J}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = 1.617\,\text{kg}$
-**Answer:** $1.6\,\text{kg}$, two significant figures, because the U-value $2.0$, the area $0.50\,\text{m}^2$, the temperature difference $25\,\text{K}$ and the time $6.0\,\text{h}$ all have two figures.
+**Answer:** $1.7\,\text{kg}$, two significant figures, because the U-value $2.0$, the area $0.50\,\text{m}^2$, the temperature difference $25\,\text{K}$ and the time $6.0\,\text{h}$ all have two figures. The calculated $1.617\,\text{kg}$ is the smallest mass that is enough, so it is rounded up: $1.6\,\text{kg}$ would not last the full six hours.
 **Reasonableness:** The power is $25\,\text{W}$, so in six hours $540\,\text{kJ}$ comes into the bag. Check: $1.617\,\text{kg} \cdot 334\,\tfrac{\text{kJ}}{\text{kg}} = 540\,\text{kJ}$. An ice pack of a little over one and a half kilograms is a common size, and twice the time would need twice the mass.
 
 ## fy3-16-L2-02
