@@ -1,18 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 3129e7b116601f43
-SCOPE: delta added-exercise from ad1ab6804b19c83a base 8f23aa7ae3bd
+CONTENT-HASH: 38b2c5ddb83972d4
 
 ## Blocking
-(none)
 
 ## Polish
-- solutions.md fy6-14-L2-09 (Reasonableness) — compares with "the maximum power of the panel in the chapter (0.92 W)", but the task never says this is the chapter's panel (it is the same model in figures.py, so the number is right) — say "the maximum power of this panel, about 0.92 W near 5 V" or drop the chapter reference.
+- exercises.json L3-05 vs L1-05 — "a green LED" is $2.00\,\text{V}$ at $9.8\,\text{mA}$ in L3-05 but $2.2\,\text{V}$ at $10\,\text{mA}$ in L1-05. Real LEDs do differ, but a reader may look for one value. — Say "another green LED" in L3-05, or leave it.
+- solutions.md L1-06 — "(at most about $1\,\text{V}$)" holds for a silicon diode, not for an LED. — Write "(for a silicon diode about $0.7\,\text{V}$)".
+- answers.py:812–813 — the answers of the multiple-choice tasks L1-06 and L1-07 are the Finnish option texts. That is harmless for checking, because those answers are not numeric. — None needed unless the lint compares strings per language.
 
 ## Checked
-- Delta: only the added exercise fy6-14-L2-09 judged; the rest unchanged per `reviews.py added_exercises`.
-- Figure ex-kenno (figures.py, diode model M = 0.40 V, I_sc = 200 mA, U_oc = 6.0 V): recomputed I(4.0 V) = 198.7 mA, on the 200 mA gridline as read; I(3.9–4.1 V) = 198–199 mA, so the reading is robust; the curve's knee near 5 V, max power 0.918 W at 4.96 V (matches the 0.92 W quoted). The description matches the drawing and gives no power.
-- Physics: the panel as a DC source at fixed irradiance, P = UI at the operating point given by the load voltage — correct; "irradiance stays the same" stated.
-- Recomputed: P = 4.0 V · 0.200 A = 0.80 W (answers.py 0.8); the exact model value 0.795 W is 0.7 % off, inside the 4 % tolerance.
-- Reasonableness checks valid: I_sc·U_oc = 1.2 W is an upper bound not reached; 0.80 W < P_max.
-- Solution complete: graph reading described, formula, mA → A conversion, substitution with units, rounding reason (two figures, 50 mA grid).
-- Scope: solar cell as a DC source, component level (FY6 central content).
+- I recomputed all 19 numeric answers in one script with my own formulas: $U = RI + U_\text{D}$, $P = UI$, $\eta = P/(GA)$, $E = Pt$, the maximum of $UI$ over the tables, and the load line against linear interpolation of the table. Every one matches answers.py and exercises.json.
+- The figures match their tasks. In ex-led the curve passes $(2.2\,\text{V};\ 10\,\text{mA})$ exactly. In ex-kenno $I(4.0\,\text{V}) = 198.7\,\text{mA}$, so reading $200\,\text{mA}$ and $0.80\,\text{W}$ is correct. The figure's model gives $P_\text{max} = 0.92\,\text{W}$, as solution L2-09 states. Neither figure gives the answer away.
+- L3-05 checks out: threshold $2.00\,\text{V}$ (slope $420\,\text{mA/V}$) and operating point $2.02\,\text{V}$, $13.8\,\text{mA}$ (below $25\,\text{mA}$). In part c the voltage changes by $0.10\,\text{V}$ while the current grows more than fourfold.
+- L3-04 checks out: $\sum H = 1027\,\text{kWh/m}^2$, $4683\,\text{kWh}$ produced and $87.7\,\%$ self-sufficiency. The six deficit months need $2517\,\text{kWh}$ ($47\,\%$). "At least this share is bought" is the right conclusion without storage. The data are labelled example data and are realistic for Finland.
+- L2-06 data are internally consistent: $U/I$ matches each load resistor to within $2\,\%$. L3-02 is consistent too: the maximum is $49.3\,\text{W}$ at $5.86\,\Omega$, and the reason given for two significant figures is sound.
+- L1-06, L1-07 and L2-08 (with its reasons) each have exactly one correct option. Every distractor is really wrong, and its feedback says why. Conventional current runs from + to −, and the anode on the + side means forward direction. The parallel branches are treated as independent circuits.
+- L2-01 states the assumption of no reverse current. The reasonableness note on the reverse-voltage rating is a correct safety remark.
+- Every answer rounded as its solution rounds it stays within the tolerance (largest deviation $2.0\,\%$ in L1-08, tolerance 0.03). The rounding reasons name the limiting datum, consistent with P7.
+- The set stays in scope: components only, no p–n microphysics, and efficiencies, currents and powers are realistic.
+- The content hash was the same at the start and at the end.

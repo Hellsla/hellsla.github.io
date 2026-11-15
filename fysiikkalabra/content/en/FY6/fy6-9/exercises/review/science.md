@@ -1,17 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 30bb671b683987a1
-SCOPE: delta added-exercise from 51f6a10c66298771 base 8f23aa7ae3bd
+CONTENT-HASH: 69d3219159d1724e
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- exercises.json:294 (fy6-9-L3-01) — `"unit": "kertaa"` is the Finnish word in the English set — use `"times"` or `""` as fy6-1-L3-02 does.
+- solutions.md:120 (fy6-9-L3-03 Reasonableness) — "the loss is a few percent": $3.24\,\text{kJ} : 43\,\text{kJ} \approx 7.5\,\%$ — say "about $8\,\%$" or "under a tenth".
+- solutions.md (fy6-9-L3-04 c) — the internal resistance from the two discharges' mean voltages assumes the same mean source voltage, though the discharges end at different depths ($2.6\,\text{Ah}$ vs $2.4\,\text{Ah}$); the task states the assumption, so this is C, but the answer could call $0.10\,\Omega$ an estimate.
+- exercises/review/packet-science.md — the exercise brief is empty, so notation ($W$ for energy, $E$ for source voltage, $R_\text{s}$, $U_\text{ch}$) was checked against the glossary and internal consistency only; it is consistent throughout the set.
 
 ## Checked
-- Delta: only the added exercise fy6-9-L2-08 judged; the rest unchanged per `reviews.py added_exercises`.
-- Physics: charge as the area under a piecewise-constant I(t) graph, Q = sum I_i t_i; stored energy W = UQ with the nominal voltage, stated as the task's assumption (consistent with the glossary's battery capacity/energy definition).
-- Recomputed independently: Q = 2.0·1.0 + 1.5·2.0 + 0.5·1.0 = 5.5 Ah, W = 61.05 Wh; answers.py prints 61.05; a student's 61 Wh is 0.08 % off, inside tolerance 0.02.
-- Figure ex-current2 (figures.py): segments 2.0 A on 0–1.0 h, 1.5 A on 1.0–3.0 h, 0.5 A on 3.0–4.0 h, then zero; grid 0.5 h / 0.5 A; matches the solution's readings and the text description; the charge is not written in the figure.
-- Solution complete: given/asked, principle with reason, symbolic formula before numbers, conversion (V·Ah = Wh), substitution with units, rounding reason, reasonableness (mean current 1.4 A between extremes; 61 Wh realistic for a laptop battery).
-- Unit Wh and scope (FY6 batteries and charging circuit) correct.
+- All 19 numeric answers recomputed in one script with my own formulas ($Q = It$, $W = UQ$, loop law $I = (U_\text{ch} - E)/(R + R_\text{s})$, trapezoid energy sum, least-squares slope, $R_\text{s} I^2 t$, staged charging): all agree with exercises.json and answers.py.
+- L2-07: least-squares slope $2.5\,\text{A/V}$ gives $R_\text{tot} = 0.40\,\Omega$, intercept $E = 12.39\,\text{V}$; the solution's line readings $(13.0\,\text{V};\ 1.5\,\text{A})$, $(14.6\,\text{V};\ 5.5\,\text{A})$ lie on the fitted line, slope read from the line not raw neighbours (guardrails).
+- L3-05: stage currents $4.75$, $4.25$, $3.75\,\text{A}$, total $7.12\,\text{h}$, bounds $6.0\,\text{h}$ and $8.6\,\text{h}$ correct.
+- L3-04: $\eta = 77\,\%$ (large current), $87\,\%$ (small), $R_\text{s} = 0.10\,\Omega$, $E = 3.75\,\text{V}$ at both currents.
+- L1-07: charging current inside the battery from + to −, correct; every distractor wrong and its feedback right.
+- L1-06, L1-09: exactly one correct option; unit analysis ($\text{V}\cdot\text{Ah} = \text{Wh}$; $UQt$ double-counts time) right; "a battery does not store charge" consistent with the glossary.
+- L2-06: the loss $(U_\text{ch} - E)It = 1.5\,\text{Wh}$ cross-checked with $R I^2 t$; constant voltages stated in the task.
+- P7: L1-02 four s.f. from $3000\,\text{mAh}$ (trailing zeros significant); every student rounding stays within tolerance.
+- Figures ex-current, ex-current2: steps match the solutions' readings ($4.0\,\text{Ah}$, $5.5\,\text{Ah}$); alt texts carry the same values, no answer shown.
+- Scope: battery capacity (Ah, Wh), charging circuit with the loop law, efficiency; all in FY6 contents; magnitudes realistic (e-bike $0.47\,\text{kWh}$, laptop $61\,\text{Wh}$).
