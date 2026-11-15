@@ -6,3 +6,7 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-11-15T20:50Z	fy7-14	FY7	science-reviewer	review	claude-opus-5-5	medium	full	1	1147103	30	11820	1037767	97486	104040	14	425	15		0.9315	transcript	0f496c5351b4
 2026-11-15T20:50Z	fy7-14	FY7	science-reviewer	review	claude-opus-5-5	medium	full	1	681969	18	11382	550348	120221	127307	8	121	9		0.9389	transcript	cca242c1ecd2
 2026-11-15T20:50Z	fy7-14	FY7	orchestrator	orchestrate	claude-opus-5-5		since/10		10355151	58	13482	10287214	54397	61297	285	5086	316		2.7625	transcript	2b67098a8fb8
+2026-11-15T22:48Z	fy7-14	FY7	visual-editorial-reviewer	review	claude-fable-5-2			4	304003	16	3400	235580	65007	72414	7	34	11		1.0416	transcript	3604148bc054
+2026-11-15T22:48Z	fy7-14	FY7	science-reviewer	review	claude-fable-5-2	medium	delta	1	309716	18	7125	252898	49675	50754	9	67	10		1.0406	transcript	967c000a8e1d
+2026-11-15T22:48Z	fy7-14	FY7	pedagogy-reviewer	review	claude-fable-5-2	medium	delta	1	245388	18	4433	207385	33552	34483	9	44	9		0.6931	transcript	6794bdd1cf60
+2026-11-15T22:48Z	fy7-14	FY7	orchestrator	orchestrate	claude-opus-5-5		since/3	4	10818299	51	9511	10766731	42006	41538	67	2205	60		2.6798	transcript	ad0c43b991a2
