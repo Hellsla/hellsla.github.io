@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: e6938d7621155d3f
+CONTENT-HASH: aef6370e24e7fdba
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Delta only. Opened en/fy4-3 captures: example-390-2 (Result and extended Reasonableness) at readable size. Edited text renders in natural English; every number with its unit is inline LaTeX, no inline formula wraps, no overflow or clipping, surrounding layout intact.
-
-## Scores
-illustrations 4 · typography 4 · Finnish (English language quality) 5 · accessibility 4
+batch delta review: "kinetic" to "sliding" friction in the simulation's model text; opened sim-390, fig-8-390 (curling force diagram, F_mu label) and fig-row-1280; layout, labels and colours (force red, velocity blue) intact, nothing clipped.
