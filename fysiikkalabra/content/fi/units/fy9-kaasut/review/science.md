@@ -1,14 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 380511676da95b96
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 28ee1741c90a7ebf.
+VERDICT: FAIL
+CONTENT-HASH: 9d91dfe6c6c1bab9
+Review of the recognition chart (queue 9c) and the term change against the version passed at 380511676da95b96; full on the chart, delta on the rest.
 
 ## Blocking
-(none)
+- B (row 7 and ARIA_KARTTA): "kaasu laajenee tai puristuu → kaasun työ, W = pΔV". W = pΔV holds only at constant pressure; in general the work is the area under the (V, p) curve. The unit's Kaava section states the condition ("Vakiopaineessa laajeneva kaasu tekee työn …; työ on (V, p)-kuvaajan alle jäävä pinta-ala"), the chart drops it, so a student would apply pΔV to an isothermal or adiabatic change. Fix: "kaasu laajenee vakiopaineessa" (or add "vakiopaine" to the choice) in the chart and the aria-label.
 
 ## Polish
-(none)
+- C: "sisäenergia muuttuu → ΔU = Q + W": the sign convention (W work done on the gas) is in the Kaava section; fine for a chart.
+- C: "syvyys nesteessä → p = ρgh" is the overpressure in a fluid at rest; the Kaava says so, and the next row gives p = p_0 + ρgh, so the pair is right.
 
 ## Checked
-- s2 c: $\eta_\text{l} = 0.75$ gives $P_\text{l} = 232.9$ kW and $\eta_\text{kok} = 0.840$.
-- s6 c (new structure): $\Delta p_\text{m} = m(g+a)/(\mu_\text{m}A) = 37\,380$ Pa and $s = 1.61$, below 2. This is the same model as part b with $\mu_0 \to \mu_\text{m}$, and the force-ratio requirement in the task equals the pressure ratio because $A$ is the same. The Järkevyys figures (×2, 3.2, 5.4) agree.
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- Rows against the Kaava section: force over an area → p = F/A; depth → p = ρgh; depth and air pressure → p = p_0 + ρgh (p_0 the pressure at the surface, usually air pressure: aria says so); amount of substance known → pV = nRT; state changes, amount does not → p_1V_1/T_1 = p_2V_2/T_2; Celsius → T = θ + 273,15 K (θ the numerical value, as the Kaava defines); gas expands or is compressed → W = pΔV (above); internal energy → first law; engine takes heat and does work → η = W/Q_1.
+- Names agree with kaavanimet.tsv; the Johda itse result W = Q_1 − Q_2 is kept out, as decided 2026-11-12; nothing outside FY9.
+- ARIA_KARTTA: same nine rows, same order and physics.
+- teacher.md: only the term "tunnistuskaavio". unit.md: only the figure.

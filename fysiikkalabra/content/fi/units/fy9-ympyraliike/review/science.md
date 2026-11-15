@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: add641812b74c0f3
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at c2a116adf76021a5.
+CONTENT-HASH: bc9cdc28a007fde8
+Review of the recognition chart (queue 9c) and the term change against the version passed at add641812b74c0f3; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C (row 4, "mikä voima kaartaa rataa?" → $\Sigma F = ma_\text{n}$): Strictly, this is the component of the net force toward the centre. It equals the whole net force only in uniform circular motion. Acceptable at this level.
+- C (row 7): $mg = \gamma Mm/r^2$ neglects the Earth's rotation, which is standard.
 
 ## Checked
-- Arms as $r$ match the unit's $M = Fr$. Shovel: $F_\text{e} = 142.8$ N. Wheelbarrow: $F = mgr_\text{p}/r_\text{k} = 235.4$ N. Trailer: $F = 444.6$ N and $m_\text{a} = 45.3$ kg; c: $\Delta x = (m_ar_k - m_tr_t - m_vr_v)/m_v = 0.111$ m. Satellite: $q = \gamma M/(gr^2) = 0.783$. Metre stick: arms 30.0, 42.0 and 10.0 cm, $m_\text{k} = 114.3$ g.
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- Row 1, a rod stays in place → $\Sigma M = 0$ in addition to $\Sigma\overline{F} = \overline{0}$: correct condition, matches Kaava.
+- Rows 2–3 → $a_\text{n} = v^2/r$ and $v = \omega r$: match Kaava and use the term normaalikiihtyvyys.
+- Row 5, curve on a level road → friction provides the turn, $F_\mu = mv^2/r$: correct. It is static friction, and the symbol $F_\mu$ is the unit's generic friction.
+- Row 6 → $F_\text{g} = \gamma Mm/r^2$: equivalent to Kaava's $m_1 m_2$ form.
+- Row 8, satellite → $\gamma Mm/r^2 = mv^2/r$ (circular orbit): this is the starting equation of the *Johda itse* derivation, not its result, so it is consistent with the unit.
+- The aria-label states the same physics as each row.
+- teacher.md: käsitekartta → tunnistuskaavio. The physics is unchanged.

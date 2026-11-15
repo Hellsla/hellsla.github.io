@@ -1,14 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 62a144b4944a81b5
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 7ec58540d76c5256.
+VERDICT: FAIL
+CONTENT-HASH: a160a51a52b7e3ef
+Review of the recognition chart (queue 9c) and the term change against the version passed at 62a144b4944a81b5; full on the chart, delta on the rest.
 
 ## Blocking
-(none)
+- B (row 4 and ARIA_KARTTA): "ei kiihtyvyyttä tiedossa → keskinopeus, Δx = (v_0 + v)/2 · t". The mean of the initial and final velocities is the average velocity only in uniformly accelerated motion; the unit's Kaava and its johda block say so ("Tasaisesti kiihtyvässä liikkeessä keskinopeus on siis alku- ja loppunopeuden keskiarvo"). The sign states the opposite of a condition (the acceleration is unknown), which invites the formula for any motion with given end speeds. Fix: e.g. "kiihtyvyys vakio, mutta a ei tiedossa" in the chart and "Kiihtyvyys on vakio, mutta sitä ei tiedetä" in the aria-label.
 
 ## Polish
-(none)
+- C: "nopeus paikkakuvaajasta → v = Δx/Δt": for a curved (t, x) graph the instantaneous velocity is the slope of the tangent (Kaava); "tangentin kulmakerroin" in the choice would match.
+- C: "kiihtyvyys on vakio, matka? → x = x_0 + v_0t + ½at²" gives position; distance equals |x − x_0| only if the motion does not reverse.
+- Note for pedagogy: the keskinopeus result is the Johda itse result of the Kaava section.
 
 ## Checked
-- $y_\text{l} = y_{0\text{A}} + v_0^2/(2g) = 8.84$ m, the same as the stepwise substitution.
-- $a_\text{min} = 2x/(t+\Delta t)^2 = 0.741$ and $a_\text{max} = 1.224$ m/s²: the bounds are the right way round.
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- Rows against the Kaava section: constant velocity → x = x_0 + vt; constant acceleration → v = v_0 + at and x = x_0 + v_0t + ½at²; keskinopeus (above); slopes v = Δx/Δt and a = Δv/Δt; distance from the (t, v) graph → area (as total unsigned area this is the distance; the Kaava's signed area is the displacement; both consistent).
+- Symbols agree with kaavanimet.tsv; nothing outside FY9.
+- ARIA_KARTTA: same seven rows, same order and physics.
+- teacher.md: only "tunnistuskaavio". unit.md: only the old map figure replaced (its polylines removed).
