@@ -112,9 +112,9 @@
       "id": "fy6-16-L2-03",
       "level": 2,
       "text": "The main fuses of a detached house are $3 \\cdot 25\\,\\text{A}$. A $9.0\\,\\text{kW}$ sauna heater is on in the sauna, drawing an equal current from each of the three phase conductors. The phase voltage is $230\\,\\text{V}$, and no other devices are assumed to be on. How large a current may a three-phase charging station draw from each phase so that the current of the main fuses is not exceeded?",
-      "answer": 11.956522,
+      "answer": 11.5,
       "unit": "A",
-      "tolerance": 0.09
+      "tolerance": 0.05
     },
     {
       "id": "fy6-16-L2-04",

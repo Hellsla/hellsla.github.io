@@ -112,9 +112,9 @@
       "id": "fy6-16-L2-03",
       "level": 2,
       "text": "Omakotitalon pääsulakkeet ovat $3 \\cdot 25\\,\\text{A}$. Saunassa on päällä $9{,}0\\,\\text{kW}$:n kiuas, joka ottaa jokaisesta kolmesta vaihejohtimesta yhtä suuren virran. Vaihejännite on $230\\,\\text{V}$. Muita laitteita ei ole päällä. Kuinka suuren virran kolmivaiheinen latausasema saa ottaa jokaisesta vaiheesta, jotta pääsulakkeiden virta ei ylity?",
-      "answer": 11.956522,
+      "answer": 11.5,
       "unit": "A",
-      "tolerance": 0.09
+      "tolerance": 0.05
     },
     {
       "id": "fy6-16-L2-04",

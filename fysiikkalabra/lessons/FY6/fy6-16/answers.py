@@ -24,7 +24,7 @@ a["fy6-16-L1-08"] = 0.25 * 16 ** 2                        # cable R = 0,25 ohm, 
 a["fy6-16-L2-01"] = 11 * 2.0 + 5.5 * 1.0                  # area under (t, P): 22 kWh + 5,5 kWh = 27,5 kWh from the grid
 P1 = U * 16 / 1000                                        # single-phase charger 16 A: 3,68 kW
 a["fy6-16-L2-02"] = (0.80 - 0.20) * 60 / (0.90 * P1)      # 36 kWh : (0,90 · 3,68 kW) = 10,9 h
-a["fy6-16-L2-03"] = 25 - 9000 / (3 * U)                   # sauna stove 9,0 kW evenly on three phases: 13,04 A each; 25 A - 13,04 A = 11,96 A; the model answer rounds this maximum down to 11 A (P7c), and the check accepts both directions (teacher 2026-11-15): tolerance 0.09 covers 11 A and 12 A
+a["fy6-16-L2-03"] = (math.floor(25 - 9000 / (3 * U)) + 1 + math.floor(25 - 9000 / (3 * U))) / 2   # exact limit 25 A - 13,04 A = 11,96 A; the model answer rounds it down to 11 A (P7c). The check accepts both roundings (teacher 2026-11-15): key 11,5 midway between 11 A and 12 A with tolerance 0.05 accepts 10,93-12,08 A, so 11, 11,96 and 12 A pass and 13 A (over the 25 A fuse) does not (coordinator 2026-11-15, option A)
 R_cable = RHO * 2 * 30 / 2.5e-6                           # 30 m, 2,5 mm^2, out and back: 60 m of copper, 0,408 ohm
 a["fy6-16-L2-04"] = R_cable * 16                          # voltage drop U = R I = 0,408 ohm · 16 A = 6,53 V
 # L2-05: house power 17-22 h (kW): 2,1; 3,4; 6,8; 5,2; 3,9; main fuses 3 x 25 A
