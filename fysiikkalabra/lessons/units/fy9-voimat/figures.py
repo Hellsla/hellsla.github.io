@@ -2,7 +2,7 @@
 writes them into content/fi/units/fy9-voimat/unit.md. The unit is Finnish, so the decimal sign is a comma.
 
 hero        the Why scene: a car tows a trailer of firewood along a lakeside road in autumn (no text, no people)
-kartta      the concept map of the review: the force diagram first, then Newton's laws, the forces and three special cases
+kartta      the recognition chart of the review (Mistä tunnistan, mitä lakia käytän?): task signs -> the law or method
 kalteva     a sled sliding down a snowy slope: the situation picture and the sled's force diagram with the weight's
             components dashed (kinetic friction up the slope, acceleration down it)
 hihna       the Sovella error task, not in unit.md: a box on an accelerating conveyor belt and a student's force diagram
@@ -70,38 +70,43 @@ def hero():
 
 
 def kartta():
-    """The concept map, stacked for a phone: the method (one line of steps) at the top, a spine down the left and three
-    boxes: Newton's laws, the forces, and three special cases, each law with a grey word beside it."""
-    f = Fig("fy9vo-kartta", 640, "Käsitekartta. Ylhäällä solmu voimakuvio ensin: valitse kappale, etsi vuorovaikutukset, piirrä voimakuvio, "
-            "valitse akselit ja kirjoita liikeyhtälöt. Siitä lähtee alas kolme haaraa. Newtonin lait: ensimmäinen laki, "
-            "summa F on nolla, kun nopeus on vakio; toinen laki summa F = m a; kolmas laki F A B = − F B A. Voimat: paino G "
-            "= m g vektoreina, liikekitka F myy = myy N ja lepokitka enintään myy nolla N, ilmanvastus vastustaa liikettä. "
-            "Erikoistilanteet: rinteessä G x = m g sin alfa, kytketyillä kappaleilla oma yhtälö kullekin ja rajanopeudella "
-            "F v = G.", width=380, size=21)
-    groups = [
-        ("Newtonin lait", [(r"\Sigma\overline{F} = \overline{0}", "I: lepo tai vakionopeus"), (r"\Sigma\overline{F} = m\overline{a}", "II"),
-                           (r"\overline{F}_{AB} = -\overline{F}_{BA}", "III")]),
-        ("voimat", [(r"\overline{G} = m\overline{g}", "paino"), (r"F_\mu = \mu N", "liikekitka"), (r"F_{\mu_0} = \mu_0 N", "lepokitka")]),
-        ("erikoistilanteet", [(r"G_x = mg\sin\alpha", "rinne"), (r"\Sigma F_x = m_i a_x", "kytketyt"), (r"F_\text{v} = G", "rajanopeus")]),
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words (YO language): the sign on top, the choice it leads to and, as the result in a
+    green pill, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
+    rows = [
+        (r"\text{vakionopeus tai levossa}", r"\to\ a = 0", r"\Sigma\overline{F} = \overline{0}"),
+        (r"\text{lähtee levosta tai kiihtyy}", r"\to\ a \neq 0", r"\Sigma\overline{F} = m\overline{a}"),
+        (r"\text{tanko tai vipu voi kiertyä}", r"\to\ \text{myös momentit}", r"\Sigma M = 0"),
+        (r"\text{kaksi kappaletta köydellä}", r"\to\ \text{yhtälö kummallekin}", r"\Sigma F_i = m_i a_i"),
+        (r"\text{kitkaton pinta}", r"\to\ \text{ei kitkavoimaa}", r"F_\mu = 0"),
+        (r"\text{liukuu karhealla pinnalla}", r"\to\ \text{liikekitka}", r"F_\mu = \mu N"),
+        (r"\text{ilmanvastus, nopeus tasaantuu}", r"\to\ \text{voimat tasapainossa}", r"F_\text{v} = G"),
     ]
-    hub_y, hub_h, x_box, gh, top = 8, 112, 44, 150, 140
-    spine = 24
-    f.line(spine, hub_y + hub_h, spine, top + 2 * (gh + 16) + 22, RULE, 3)
-    f.rect(8, hub_y, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
-    f.tex(190, hub_y + 22, r"\textbf{voimakuvio ensin}", "middle", INK)
-    f.tex(190, hub_y + 54, r"\text{kappale} \to \text{vuorovaikutukset}", "middle", INK, size=19)
-    f.tex(190, hub_y + 86, r"\to \text{akselit} \to \Sigma F_x = ma_x", "middle", INK, size=19)
-    for k, (head, rows) in enumerate(groups):
-        y = top + k * (gh + 16)
-        f.line(spine, y + 22, x_box, y + 22, RULE, 3)
-        f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
-        f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
-        f.line(x_box + 10, y + 42, 362, y + 42, RULE_LIGHT, 1.5)
-        for j, (law, word) in enumerate(rows):
-            yy = y + 66 + j * 34
-            f.tex(x_box + 14, yy, law, "start", INK)
-            f.tex(362, yy, r"\text{" + word + "}", "end", MUTED, size=17)
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    height = top + len(rows) * (ch + gap) - gap + 8
+    f = Fig("fy9vo-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, top + len(rows) * (ch + gap) - gap - ch / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{voimakuvio ensin, sitten tunnusmerkki}", "middle", INK, size=17, w=340)
+    for k, (sign, choice, law) in enumerate(rows):
+        y = top + k * (ch + gap)
+        f.line(14, y + ch / 2, x0, y + ch / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        f.tex(x0 + 14, y + 55, choice, "start", MUTED, size=17, w=170)
+        f.rect(x1 - 134, y + 44, 124, 24, GOOD_LIGHT, GOOD, 2, 8)
+        f.tex(x1 - 72, y + 56, law, "middle", INK, size=17, w=116)
     return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita voimakuviosta ja katso, mikä tehtävän tunnusmerkki sopii. "
+               "Vakionopeus tai levossa: kiihtyvyys on nolla, joten voimien summa on nolla. Lähtee levosta tai kiihtyy: kiihtyvyys ei "
+               "ole nolla, joten voimien summa on massa kertaa kiihtyvyys. Tanko tai vipu voi kiertyä: myös momenttien summa on nolla. "
+               "Kaksi kappaletta köydellä: oma liikeyhtälö kummallekin kappaleelle. Kitkaton pinta: ei kitkavoimaa. Liukuu karhealla "
+               "pinnalla: liikekitka on kitkakerroin kertaa tukivoima. Ilmanvastus ja nopeus tasaantuu: voimat ovat tasapainossa ja "
+               "ilmanvastus on yhtä suuri kuin paino.")
 
 
 def _sled(f, x0, y0, s, deg, L=92, hh=30):

@@ -20,5 +20,18 @@
  "Newtonin lait": "Newton's laws",
  "voimat": "forces",
  "erikoistilanteet": "special cases",
- "Käsitekartta. Ylhäällä solmu voimakuvio ensin: valitse kappale, etsi vuorovaikutukset, piirrä voimakuvio, valitse akselit ja kirjoita liikeyhtälöt. Siitä lähtee alas kolme haaraa. Newtonin lait: ensimmäinen laki, summa F on nolla, kun nopeus on vakio; toinen laki summa F = m a; kolmas laki F A B = − F B A. Voimat: paino G = m g vektoreina, liikekitka F myy = myy N ja lepokitka enintään myy nolla N, ilmanvastus vastustaa liikettä. Erikoistilanteet: rinteessä G x = m g sin alfa, kytketyillä kappaleilla oma yhtälö kullekin ja rajanopeudella F v = G.": "Concept map. At the top is the node free-body diagram first: choose the object, find the interactions, draw the free-body diagram, choose the axes and write the equations of motion. Three branches go down from it. Newton's laws: first law, sum F is zero when the velocity is constant; second law sum F = m a; third law F A B = − F B A. Forces: weight G = m g as vectors, kinetic friction F mu = mu N and static friction at most mu zero N, air resistance opposes the motion. Special cases: on a slope G x = m g sin alpha, connected bodies have an equation each, and at terminal velocity F v = G."
+ "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita voimakuviosta ja katso, mikä tehtävän tunnusmerkki sopii. Vakionopeus tai levossa: kiihtyvyys on nolla, joten voimien summa on nolla. Lähtee levosta tai kiihtyy: kiihtyvyys ei ole nolla, joten voimien summa on massa kertaa kiihtyvyys. Tanko tai vipu voi kiertyä: myös momenttien summa on nolla. Kaksi kappaletta köydellä: oma liikeyhtälö kummallekin kappaleelle. Kitkaton pinta: ei kitkavoimaa. Liukuu karhealla pinnalla: liikekitka on kitkakerroin kertaa tukivoima. Ilmanvastus ja nopeus tasaantuu: voimat ovat tasapainossa ja ilmanvastus on yhtä suuri kuin paino.": "Recognition chart: how do I tell which law to use? Start from the free-body diagram and see which sign in the task fits. Constant velocity or at rest: the acceleration is zero, so the sum of the forces is zero. Starts from rest or speeds up: the acceleration is not zero, so the sum of the forces is mass times acceleration. A rod or lever can rotate: the sum of the moments is zero too. Two bodies joined by a rope: an equation of motion for each body. Frictionless surface: no friction force. Slides on a rough surface: kinetic friction is the coefficient of friction times the normal force. Air resistance and the speed levels off: the forces balance and the air resistance equals the weight.",
+ "mistä tunnistan lain?": "how do I tell the law?",
+ "voimakuvio ensin, sitten tunnusmerkki": "free-body diagram first, then the sign",
+ "vakionopeus tai levossa": "constant velocity or at rest",
+ "lähtee levosta tai kiihtyy": "starts from rest or speeds up",
+ "tanko tai vipu voi kiertyä": "a rod or lever can rotate",
+ "kaksi kappaletta köydellä": "two bodies on a rope",
+ "kitkaton pinta": "frictionless surface",
+ "liukuu karhealla pinnalla": "slides on a rough surface",
+ "ilmanvastus, nopeus tasaantuu": "air resistance, speed levels off",
+ "myös momentit": "moments too",
+ "yhtälö kummallekin": "an equation each",
+ "ei kitkavoimaa": "no friction force",
+ "voimat tasapainossa": "forces balance"
 }

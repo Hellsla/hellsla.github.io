@@ -20,5 +20,18 @@
  "Newtonin lait": "Newtonin lait",
  "voimat": "voimat",
  "erikoistilanteet": "erikoistilanteet",
- "Käsitekartta. Ylhäällä solmu voimakuvio ensin: valitse kappale, etsi vuorovaikutukset, piirrä voimakuvio, valitse akselit ja kirjoita liikeyhtälöt. Siitä lähtee alas kolme haaraa. Newtonin lait: ensimmäinen laki, summa F on nolla, kun nopeus on vakio; toinen laki summa F = m a; kolmas laki F A B = − F B A. Voimat: paino G = m g vektoreina, liikekitka F myy = myy N ja lepokitka enintään myy nolla N, ilmanvastus vastustaa liikettä. Erikoistilanteet: rinteessä G x = m g sin alfa, kytketyillä kappaleilla oma yhtälö kullekin ja rajanopeudella F v = G.": "Käsitekartta. Ylhäällä on solmu voimakuvio ensin: valitse kappale, etsi vuorovaikutukset, piirrä voimakuvio, valitse akselit ja kirjoita liikeyhtälöt. Siitä lähtee alas kolme haaraa. Ensimmäinen haara on Newtonin lait: ensimmäinen laki, summa F on nolla, kun nopeus on vakio; toinen laki summa F = m a; kolmas laki F A B = − F B A. Toinen haara on voimat: paino G = m g vektoreina, liikekitka F myy = myy N ja lepokitka enintään myy nolla N. Ilmanvastus vastustaa liikettä. Kolmas haara on erikoistilanteet: rinteessä G x = m g sin alfa, kytketyillä kappaleilla on oma yhtälö kullekin, ja rajanopeudella F v = G."
+ "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita voimakuviosta ja katso, mikä tehtävän tunnusmerkki sopii. Vakionopeus tai levossa: kiihtyvyys on nolla, joten voimien summa on nolla. Lähtee levosta tai kiihtyy: kiihtyvyys ei ole nolla, joten voimien summa on massa kertaa kiihtyvyys. Tanko tai vipu voi kiertyä: myös momenttien summa on nolla. Kaksi kappaletta köydellä: oma liikeyhtälö kummallekin kappaleelle. Kitkaton pinta: ei kitkavoimaa. Liukuu karhealla pinnalla: liikekitka on kitkakerroin kertaa tukivoima. Ilmanvastus ja nopeus tasaantuu: voimat ovat tasapainossa ja ilmanvastus on yhtä suuri kuin paino.": "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita voimakuviosta ja katso, mikä tehtävän tunnusmerkki sopii. Vakionopeus tai levossa: kiihtyvyys on nolla, joten voimien summa on nolla. Lähtee levosta tai kiihtyy: kiihtyvyys ei ole nolla, joten voimien summa on massa kertaa kiihtyvyys. Tanko tai vipu voi kiertyä: myös momenttien summa on nolla. Kaksi kappaletta köydellä: kummallekin kappaleelle oma liikeyhtälö. Kitkaton pinta: kitkavoimaa ei ole. Liukuu karhealla pinnalla: liikekitka on kitkakerroin kertaa tukivoima. Ilmanvastus ja nopeus tasaantuu: voimat ovat tasapainossa ja ilmanvastus on yhtä suuri kuin paino.",
+ "mistä tunnistan lain?": "mistä tunnistan lain?",
+ "voimakuvio ensin, sitten tunnusmerkki": "voimakuvio ensin, sitten tunnusmerkki",
+ "vakionopeus tai levossa": "vakionopeus tai levossa",
+ "lähtee levosta tai kiihtyy": "lähtee levosta tai kiihtyy",
+ "tanko tai vipu voi kiertyä": "tanko tai vipu voi kiertyä",
+ "kaksi kappaletta köydellä": "kaksi kappaletta köydellä",
+ "kitkaton pinta": "kitkaton pinta",
+ "liukuu karhealla pinnalla": "liukuu karhealla pinnalla",
+ "ilmanvastus, nopeus tasaantuu": "ilmanvastus, nopeus tasaantuu",
+ "myös momentit": "myös momentit",
+ "yhtälö kummallekin": "yhtälö kummallekin",
+ "ei kitkavoimaa": "ei kitkavoimaa",
+ "voimat tasapainossa": "voimat tasapainossa"
 }
