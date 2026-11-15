@@ -1,19 +1,23 @@
-VERDICT: PASS
-CONTENT-HASH: f22ac3e71db8780e
-SCOPE: delta added-exercise from b4640f1fa75ce4b0 base 5a45b28682e8
+VERDICT: FAIL
+CONTENT-HASH: 7192b15eb690bddb
 
 ## Blocking
-(none)
+- exercises/solutions.md:386 (also :221, :259) — **A**: the slope of the $E_\text{k,max}(f)$ line is called $\tfrac{h}{e}$. L2-08 writes $E_\text{k,max} = hf - W = \tfrac{h}{e}(f - f_0)$, which is false as written ($hf - W = h(f - f_0)$); L2-07 says "the Planck constant $\tfrac{h}{e}$" and L2-06 "$\tfrac{h}{e} = 4.14 \cdot 10^{-15}\,\text{eV/Hz}$" ($h/e$ has the unit V s). This contradicts the Principle of L2-06 (slope is $h$) and blurs the difference from L2-05, where the slope of $U_\text{s}(f)$ really is $h/e$ — fix: write $h = 4.136 \cdot 10^{-15}\,\text{eV}\,\text{s}$ (that is $0.4136\,\text{eV}$ per $10^{14}\,\text{Hz}$) and $E_\text{k,max} = h(f - f_0)$ in all three places; numbers unchanged.
 
 ## Polish
-- lessons/FY8/fy8-1/answers.py:263 — the comment says "387,6 nm -> 388 nm", but hc/W computes to 387.50 nm and the stored answer is 387 nm (the solution says 387.5 nm). Both are well inside the ±5 % tolerance. — Make the comment say 387.5 nm -> 387 nm (shared file; this is not a translation issue).
+- exercises/solutions.md:251 — L2-07 "three significant figures like the energies in the data": $0.55\,\text{eV}$ has two; $W$ is a difference known to the hundredth — give that reason.
+- lessons/FY8/fy8-1/answers.py:45 — comment says "387,6 nm -> 388 nm"; the value is 387.5 → 387 (as exercises.json and the solution).
+- exercises.json L3-04, L3-05 — the solutions use $e = 1.602 \cdot 10^{-19}\,\text{C}$ and $eU_\text{s} = E_\text{k,max}$, which these task texts do not give (only L2-05 does); add them to the given values.
+- exercises/solutions.md L3-04 a) — the table only shows $0.70\,\text{V} < U_\text{s} \le 0.80\,\text{V}$; say that $0.80\,\text{V}$ is the smallest tabulated value with zero current.
+- packet — the English exercise brief is empty (no lesson extract), so notation was compared with the Finnish version's symbols only.
 
 ## Checked
-- L1-10: λ0 = hc/W with W = 3.20 eV (MAFY, Ca) gives 387.50 nm; answer 387 nm, tol 5 %. Principle hf0 = W, the symbolic step, the eV→J conversion and the 1240 eV nm estimate are all right. Calling 387 nm UV, just short of the violet edge, is correct.
-- L2-08: h/e = 0.41361 eV per 1e14 Hz, f0A = 5.56e14 Hz, E_k,max = 4.963 − 2.30 = 2.663 eV; answer 2.66, tol 5 % (2.53–2.79) takes the graph reading of 2.7 eV. The reading description (about 0.3 below 3 eV) matches the line.
-- L2-09: f0B = 2.90/0.41361 = 7.01e14 Hz, halfway between the 6 and 8 grid lines; λ0 = c/7.0e14 = 428.3 nm; answer 428, tol 4 %. The reasonableness check (2.9 eV > W_A, so B's line lies to the right of A's) is a real check.
-- The figure kuvaaja-ab (W_A = 2.30 eV, W_B = 2.90 eV, slope h/e, axes 0–16e14 Hz and 0–5 eV) gives every value the tasks need and writes no f0 or W on it; its description does not give the answers away.
-- The solutions use the brief's notation and model (E_k,max = hf − W, f0, λ0). It is all inside FY8 scope.
-- The English wording and numbers match the Finnish set the earlier review passed, with decimal points.
-- Recomputed in one script, compared with answers.py: they agree.
-- Hash f22ac3e71db8780e at start and end.
+- All 21 numeric answers recomputed from the English task texts with my own script: every one agrees with exercises.json and answers.py inside half the tolerance (L2-02 2.2 % of 3 %).
+- Data tables, answers, tolerances, correct option and truth values identical to the Finnish set; decimal points throughout.
+- L2-05 least-squares fit: $k = 4.195 \cdot 10^{-15}\,\text{V/Hz}$, $h = 6.72 \cdot 10^{-34}\,\text{J}\,\text{s}$, $f_0 = 5.57 \cdot 10^{14}\,\text{Hz}$, $W = 2.34\,\text{eV}$; residuals within $\pm 0.02\,\text{V}$.
+- L1-10 calcium $3.20\,\text{eV}$ matches the verified MAFY row (docs/mafy-arvot.tsv).
+- L1-06: exactly one correct option; distractors wrong, feedback right. L1-09: 1 F, 2 T, 3 F, 4 T, 5 F correct.
+- Figure kuvaaja-ab: $f_{0,\text{A}} = 5.56$, $f_{0,\text{B}} = 7.01 \cdot 10^{14}\,\text{Hz}$; readings 2.7 eV and 428 nm inside tolerance.
+- L3-04: yield 0.0930 % at both powers, $W = 2.30\,\text{eV}$. L3-05: 2.64, 2.00, 3.40 eV; 1.516 + 0.294 µA; $U_\text{s} = 1.10\,\text{V}$.
+- L3-01 non-relativistic ($v/c = 0.2\,\%$); L3-02 wave-model assumptions stated; unit "days" consistent.
+- Terms (work function, threshold frequency, stopping voltage, quantum efficiency) used correctly; scope inside FY8.

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 138a67d70afe38e3
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 6ef02eec981df84d
+Mode: delta (round 1)
 
 ## Blocking
 - none
@@ -9,4 +9,8 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+- exercises.json:121 fy8-6-L2-04 question "jää sisäenergiaksi yhtä fotonia kohti": question last, short sentences kept, level-2 demand unchanged.
+- solutions.md:83-89 Kysytty, Periaate and Järkevyys use the task's term; the principle is still explained in short sentences, no step dropped compared with the Finnish version.
+- No leftover "lämmöksi" in exercises.json or solutions.md; numbers, answer and tolerance untouched.
+- Plain-Finnish register kept; "sisäenergia" is a course term from FY3.
+- Hash identical at start and end.
