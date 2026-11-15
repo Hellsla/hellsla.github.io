@@ -81,11 +81,11 @@ See the topics [pre-flight inspection](ahjo-turvallisuus.html#drone-tarkastus), 
 
 A row of the flight log can look like this. The numbers are a made-up example.
 
-| Flight | Pilot | Battery | Duration (s) | Drift (cm) | Direction | Observation |
-|---|---|---|---|---|---|---|
-| 1 | A | full | 5 | 40 | to the left | rose at a slant straight away |
-| 2 | A | full | 5 | 25 | to the left | |
-| 3 | A | used | 5 | 55 | backwards | throttle had to be added |
+| Pilot | Battery | Duration (s) | Drift | Note |
+|---|---|---|---|---|
+| A | full | 5 | 40 cm left | rose at a slant straight away |
+| A | full | 5 | 25 cm left | |
+| A | used | 5 | 55 cm back | throttle had to be added |
 
 The mean is calculated by dividing the sum of the results by their number. The range is the smallest and the largest result.
 

@@ -81,11 +81,11 @@ Katso aiheet [lentoa edeltävä tarkastus](ahjo-turvallisuus.html#drone-tarkastu
 
 Lentopöytäkirjan rivi voi näyttää tältä. Luvut ovat keksitty esimerkki.
 
-| Lento | Lentäjä | Akku | Kesto (s) | Ajautuminen (cm) | Suunta | Havainto |
-|---|---|---|---|---|---|---|
-| 1 | A | täysi | 5 | 40 | vasemmalle | nousi vinoon heti |
-| 2 | A | täysi | 5 | 25 | vasemmalle | |
-| 3 | A | käytetty | 5 | 55 | taakse | kaasua piti lisätä |
+| Lentäjä | Akku | Kesto (s) | Ajautuminen | Huomio |
+|---|---|---|---|---|
+| A | täysi | 5 | 40 cm vasemmalle | nousi vinoon heti |
+| A | täysi | 5 | 25 cm vasemmalle | |
+| A | vajaa | 5 | 55 cm taakse | kaasua piti lisätä |
 
 Keskiarvo lasketaan jakamalla tulosten summa niiden määrällä. Vaihteluväli on pienin ja suurin tulos.
 

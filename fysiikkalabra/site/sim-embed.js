@@ -56,13 +56,15 @@
   };
 
   const MATH = { delimiters: [{ left: '$', right: '$', display: false }], throwOnError: false };
-  // the playback-speed choice (a select whose options are the three paces 0.5 · 1 · 2) gets class sim-speed on its label, so the
-  // card's playback row (site.css .sim-card2) can put it at the row's end without a name row of its own; its name stays as
-  // the select's aria-label (work queue 10, PR 2). Recognised here, in the shared code, never in a sim.js.
+  // the playback-speed choice gets class sim-speed on its label, so the card's playback row (site.css .sim-card2) can put it
+  // at the row's end without a name row of its own; its name stays as the select's aria-label (work queue 10, PR 2-3).
+  // It is the select of three ascending numbers that stands on its middle one and whose options are words (hidas · normaali ·
+  // nopea), not quantities with a number first ("0,40 kg", "100 kierrosta"). Recognised here, in the shared code, never in a sim.js.
   function tagSpeed(root) {
-    for (const sel of root.querySelectorAll('label > select')) {
-      const v = [...sel.options].map((o) => o.value).join(',');
-      if (v !== '0.5,1,2') continue;
+    for (const sel of root.querySelectorAll('.controls > * > select')) {   // the select in its label (or, in FY3, in a box) in the controls row
+      const o = [...sel.options], v = o.map((x) => parseFloat(x.value));
+      if (o.length !== 3 || v.some((x) => !isFinite(x)) || !(v[0] < v[1] && v[1] < v[2]) || sel.selectedIndex !== 1) continue;
+      if (o.some((x) => /^\s*[\d\u2212-]/.test(x.text))) continue;
       const lab = sel.parentElement, name = lab.querySelector(':scope > span');
       lab.classList.add('sim-speed');
       if (name && !sel.hasAttribute('aria-label')) sel.setAttribute('aria-label', name.textContent.trim());
