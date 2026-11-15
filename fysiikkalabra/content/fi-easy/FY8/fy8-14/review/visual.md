@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: de97bfb49381158a
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: d13ca0928f47bb81
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Source-level read of the diff: Finnish/English wording, LaTeX number+unit typography (thin space, \text units, decimal comma in fi/fi-easy, \cdot), the aligned block with \approx in fy8-9 where applicable; no inline formula wrapping, no new figures. No render made.
+- No capture opened; the E_gamma block judged from source, the same block type seen aligned in fy8-1 theory-1280-2.
+- Delta judged: formula lifted into an aligned block, first row the left-hand side alone; words, numbers and units unchanged.

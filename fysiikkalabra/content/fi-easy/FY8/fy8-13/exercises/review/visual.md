@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c46d79db763e3164
-Round 1
+CONTENT-HASH: 23bf9b5906840889
+SCOPE: delta reflow from d30c62fd51a73d33 base 56362aafa0
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Own scratch script (preview built with build.py, 390 px, task card opened with its answer and solution): opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/fi-easy-fy8-13-L2-08.png (order of magnitude, 5 options; wrong option feedback open; Answer and solution open, all of it read) .
-- Same checks by script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's own screenshot list was empty and was not used; answers.py and solutions.md read as source only.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+- No fy8-13 capture opened; judged from source, the same block type seen aligned in fy8-1 and fy8-6 captures.
+- Delta judged: long solution formulas lifted into aligned rows, each + or - term whole, first row the left-hand side alone; words, numbers and units unchanged.

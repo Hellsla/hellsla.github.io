@@ -41,7 +41,9 @@
 ## fy8-9-L1-05
 **Given:** initial activity $A_0 = 800\,\text{kBq}$, activity $A = 200\,\text{kBq}$ after the time $t = 48.0\,\text{h}$
 **Asked:** the half-life $T_{1/2}$ in hours
-**Principle:** The activity halves during every half-life, because it is proportional to the number of undecayed nuclei. We count how many half-lives fit in the time $t$: $800\,\text{kBq} \to 400\,\text{kBq} \to 200\,\text{kBq}$ is two halvings.
+**Principle:** The activity halves during every half-life, because it is proportional to the number of undecayed nuclei. We count how many half-lives fit in the time $t$: $$
+800\,\text{kBq} \to 400\,\text{kBq} \to 200\,\text{kBq}
+$$ is two halvings.
 **Formula:** $\dfrac{A}{A_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}} = \tfrac{1}{4} = \left(\tfrac{1}{2}\right)^{2}$, so $\tfrac{t}{T_{1/2}} = 2$ and $T_{1/2} = \dfrac{t}{2}$
 **Conversions:** None are needed: the time is in hours, and the answer is asked in hours.
 **Substitution:** $T_{1/2} = \dfrac{48.0\,\text{h}}{2} = 24.0\,\text{h}$
@@ -63,7 +65,12 @@ The statement that all have decayed is an error, because the second half-life re
 **Conversions:** None are needed: the time and the half-life are both in years, so their ratio is a pure number. Finally the fraction is converted to a percentage by multiplying by $100$.
 **Substitution:** $\dfrac{N}{N_0} = \left(\tfrac{1}{2}\right)^{144\,\text{a} : 28.8\,\text{a}} = \left(\tfrac{1}{2}\right)^{5.00} = \tfrac{1}{32} = 0.03125 = 3.125\,\%$
 **Answer:** $3.13\,\%$, three significant figures like the given values.
-**Reasonableness:** After five half-lives the fraction has been halved five times: $100\,\% \!\to\! 50\,\% \!\to\! 25\,\% \!\to\! 12.5\,\% \!\to\! 6.25\,\% \!\to\! 3.125\,\%$. The sample is not empty, but only a small fraction of it is left.
+**Reasonableness:** After five half-lives the fraction has been halved five times: $$
+\begin{aligned}
+&100\,\% \!\to\! 50\,\% \!\to\! 25\,\% \!\to\! 12.5\,\% \\
+&\!\to\! 6.25\,\% \!\to\! 3.125\,\%
+\end{aligned}
+$$. The sample is not empty, but only a small fraction of it is left.
 
 ## fy8-9-L1-08
 **Given:** half-life $T_{1/2} = 5.27\,\text{a}$, activity $A = 0.100\,A_0$
@@ -199,7 +206,17 @@ In graph A the activity decreases steadily and is zero at the time $4.0\,\text{h
 **Principle:** Each nuclide follows its own decay law, and the total activity is their sum. The activity of the shorter-lived one has dropped almost to zero in the last measurements: at $96\,\text{h}$ there have passed $\tfrac{96}{6.0} = 16$ half-lives, and $\left(\tfrac{1}{2}\right)^{16} \approx 1.5 \cdot 10^{-5}$. So the late points describe only the longer-lived nuclide.
 **Formula:** $\dfrac{A_2(t_2)}{A_2(t_1)} = \left(\tfrac{1}{2}\right)^{(t_2 - t_1)/T_2}$, so $T_2 = \dfrac{(t_2 - t_1) \ln 2}{\ln \left(A_2(t_1) / A_2(t_2)\right)}$
 **Conversions:** The points $t_1 = 96\,\text{h}$ and $t_2 = 168\,\text{h}$ are $\Delta t = 72\,\text{h}$ apart. The result is converted to days by dividing by $24\,\tfrac{\text{h}}{\text{d}}$.
-**Substitution:** a) $A(96\,\text{h}) = 71.2\,\text{MBq}$ and $A(168\,\text{h}) = 32.8\,\text{MBq}$, so $T_2 = \dfrac{72\,\text{h} \cdot 0.69315}{\ln (71.2 : 32.8)} = \dfrac{49.907\,\text{h}}{0.7752} = 64.38\,\text{h} = \dfrac{64.38\,\text{h}}{24\,\text{h/d}} = 2.683\,\text{d}$. b) The activity at the moment $t = 0$ is $A_2(0) = 71.2\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{-96/64.38} = 71.2\,\text{MBq} \cdot 2^{1.491} = 71.2\,\text{MBq} \cdot 2.811 = 200\,\text{MBq}$. The total activity at the start is $1000\,\text{MBq}$, so the activity of the shorter-lived nuclide is $1000\,\text{MBq} - 200\,\text{MBq} = 800\,\text{MBq}$, that is, $80\,\%$ of the total activity. c) At $12\,\text{h}$ the activity of the longer-lived nuclide is $200\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12/64.38} = 200\,\text{MBq} \cdot 0.879 = 175.8\,\text{MBq}$. The activity of the shorter-lived one is then $376\,\text{MBq} - 175.8\,\text{MBq} = 200.2\,\text{MBq}$. The initial activity $800\,\text{MBq}$ has halved twice ($12\,\text{h} = 2 \cdot 6.0\,\text{h}$): $\tfrac{800\,\text{MBq}}{4} = 200\,\text{MBq}$, which matches.
+**Substitution:** a) $A(96\,\text{h}) = 71.2\,\text{MBq}$ and $A(168\,\text{h}) = 32.8\,\text{MBq}$, so $T_2 = \dfrac{72\,\text{h} \cdot 0.69315}{\ln (71.2 : 32.8)} = \dfrac{49.907\,\text{h}}{0.7752} = 64.38\,\text{h} = \dfrac{64.38\,\text{h}}{24\,\text{h/d}} = 2.683\,\text{d}$. b) The activity at the moment $t = 0$ is $A_2(0) = 71.2\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{-96/64.38} = 71.2\,\text{MBq} \cdot 2^{1.491} = 71.2\,\text{MBq} \cdot 2.811 = 200\,\text{MBq}$. The total activity at the start is $1000\,\text{MBq}$, so the activity of the shorter-lived nuclide is $$
+\begin{aligned}
+&1000\,\text{MBq} - 200\,\text{MBq} \\
+&= 800\,\text{MBq}
+\end{aligned}
+$$, that is, $80\,\%$ of the total activity. c) At $12\,\text{h}$ the activity of the longer-lived nuclide is $200\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12/64.38} = 200\,\text{MBq} \cdot 0.879 = 175.8\,\text{MBq}$. The activity of the shorter-lived one is then $$
+\begin{aligned}
+&376\,\text{MBq} - 175.8\,\text{MBq} \\
+&= 200.2\,\text{MBq}
+\end{aligned}
+$$. The initial activity $800\,\text{MBq}$ has halved twice ($12\,\text{h} = 2 \cdot 6.0\,\text{h}$): $\tfrac{800\,\text{MBq}}{4} = 200\,\text{MBq}$, which matches.
 **Answer:** $2.68\,\text{d}$, three significant figures like the activities of the table.
 **Reasonableness:** The result $2.68\,\text{d} = 64.4\,\text{h}$ is much longer than $6.0\,\text{h}$, as the task requires. With a third pair of points the result stays the same: $A(120\,\text{h}) = 55.9\,\text{MBq}$ and $A(168\,\text{h}) = 32.8\,\text{MBq}$ give $T_2 = \tfrac{48\,\text{h} \cdot 0.69315}{\ln 1.704} = 62.4\,\text{h} \approx 2.6\,\text{d}$, which is close to the result, considering the random variation of the measurement points.
 
@@ -211,4 +228,9 @@ In graph A the activity decreases steadily and is zero at the time $4.0\,\text{h
 **Conversions:** All times are in days, so no unit conversions are needed. The equation $\lambda = \tfrac{\ln 2}{T_{1/2}}$ divided by $\ln 2$ gives $\tfrac{1}{T_\text{bio}} = \tfrac{1}{T_\text{eff}} - \tfrac{1}{T_\text{phys}}$.
 **Substitution:** a) $T_\text{eff} = \dfrac{8.0\,\text{d} \cdot 0.69315}{\ln (400 : 65.5)} = \dfrac{5.545\,\text{d}}{1.8092} = 3.065\,\text{d}$. b) $\dfrac{1}{T_\text{bio}} = \dfrac{1}{3.065\,\text{d}} - \dfrac{1}{8.02\,\text{d}} = 0.3263\,\tfrac{1}{\text{d}} - 0.1247\,\tfrac{1}{\text{d}} = 0.2016\,\tfrac{1}{\text{d}}$, so $T_\text{bio} = \dfrac{1}{0.2016\,\tfrac{1}{\text{d}}} = 4.96\,\text{d}$. c) With decay alone the remaining fraction would be $100\,\% \cdot \left(\tfrac{1}{2}\right)^{8.0/8.02} = 100\,\% \cdot 0.5008 = 50.1\,\%$. The measured fraction is $\tfrac{65.5}{400} = 16.4\,\%$. Both processes act on all nuclei, so the faster process is the one with the greater decay constant: $\lambda_\text{bio} = \tfrac{0.69315}{4.96\,\text{d}} = 0.140\,\tfrac{1}{\text{d}}$ and $\lambda_\text{phys} = \tfrac{0.69315}{8.02\,\text{d}} = 0.0864\,\tfrac{1}{\text{d}}$.
 **Answer:** $T_\text{bio} = 4.96\,\text{d}$, three significant figures like the values of the table.
-**Reasonableness:** The biological half-life is shorter than the physical one, so removal is the faster process and the effective time is shorter than either: $3.07\,\text{d} < 4.96\,\text{d} < 8.02\,\text{d}$. Check: $\lambda_\text{eff} = \tfrac{0.69315}{3.065\,\text{d}} = 0.2262\,\tfrac{1}{\text{d}}$ and $\lambda_\text{phys} + \lambda_\text{bio} = 0.0864\,\tfrac{1}{\text{d}} + 0.1398\,\tfrac{1}{\text{d}} = 0.2262\,\tfrac{1}{\text{d}}$. On the basis of part c), biological removal decreases the iodine-131 activity of the body faster than physical decay, because $\lambda_\text{bio} > \lambda_\text{phys}$. Together they leave only $16.4\,\%$ and not the $50.1\,\%$ of decay alone.
+**Reasonableness:** The biological half-life is shorter than the physical one, so removal is the faster process and the effective time is shorter than either: $3.07\,\text{d} < 4.96\,\text{d} < 8.02\,\text{d}$. Check: $\lambda_\text{eff} = \tfrac{0.69315}{3.065\,\text{d}} = 0.2262\,\tfrac{1}{\text{d}}$ and $$
+\begin{aligned}
+\lambda_\text{phys} + \lambda_\text{bio} &= 0.0864\,\tfrac{1}{\text{d}} + 0.1398\,\tfrac{1}{\text{d}} \\
+&= 0.2262\,\tfrac{1}{\text{d}}
+\end{aligned}
+$$. On the basis of part c), biological removal decreases the iodine-131 activity of the body faster than physical decay, because $\lambda_\text{bio} > \lambda_\text{phys}$. Together they leave only $16.4\,\%$ and not the $50.1\,\%$ of decay alone.

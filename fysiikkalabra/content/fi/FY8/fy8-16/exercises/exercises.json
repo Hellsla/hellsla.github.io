@@ -210,7 +210,7 @@
     {
       "id": "fy8-16-L2-06",
       "level": 2,
-      "text": "Vedyn $\\text{H}\\beta$-viiva on laboratoriossa $486{,}1\\,\\text{nm}$ ja erään galaksin spektrissä $505{,}5\\,\\text{nm}$. Galaksin etäisyys halutaan laskea, kun $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ ja $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$.\n\nOppilaan ratkaisu: ”Punasiirtymä on $z = 0{,}0399$ ja nopeus $v = c\\,z = 1{,}196 \\cdot 10^{4}\\,\\text{km/s}$. Etäisyys on $d = v \\cdot H_0 = 1{,}196 \\cdot 10^{4} \\cdot 70 = 8{,}4 \\cdot 10^{5}\\,\\text{Mpc}$.”\n\na) Etsi oppilaan virhe ja perustele, miksi tulos on jo yksiköiden perusteella mahdoton.\n\nb) Laske galaksin oikea etäisyys megaparsekeina.\n\nAnna b)-kohdan tulos vastauskenttään.",
+      "text": "Vedyn $\\text{H}\\beta$-viiva on laboratoriossa $486{,}1\\,\\text{nm}$ ja erään galaksin spektrissä $505{,}5\\,\\text{nm}$. Galaksin etäisyys halutaan laskea, kun $H_0 = 70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}$ ja $c = 2{,}998 \\cdot 10^{5}\\,\\text{km/s}$.\n\nOppilaan ratkaisu: ”Punasiirtymä on $z = 0{,}0399$ ja nopeus $v = c\\,z = 1{,}196 \\cdot 10^{4}\\,\\text{km/s}$. Etäisyys on $$\n\\begin{aligned}\nd &= v \\cdot H_0 \\\\\n&= 1{,}196 \\cdot 10^{4} \\cdot 70 \\\\\n&= 8{,}4 \\cdot 10^{5}\\,\\text{Mpc}\n\\end{aligned}\n$$.”\n\na) Etsi oppilaan virhe ja perustele, miksi tulos on jo yksiköiden perusteella mahdoton.\n\nb) Laske galaksin oikea etäisyys megaparsekeina.\n\nAnna b)-kohdan tulos vastauskenttään.",
       "kind": [
         "error"
       ],
