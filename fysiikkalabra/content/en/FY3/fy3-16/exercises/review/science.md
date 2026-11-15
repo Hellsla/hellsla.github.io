@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 097ebcd0ca9722b8
+CONTENT-HASH: dd0ed8e8a279aeef
 
 ## Blocking
 
 ## Polish
-- solutions.md fy3-16-L2-09 — "The assumption of no losses makes the true value slightly smaller" reads backwards — fix: "With losses, the true $c$ is slightly smaller than calculated."
-- solutions.md fy3-16-L2-06 — "in a month like February" names a month, but the table has no months — fix: "in the month with $T_\text{out} = -8\,{}^\circ\text{C}$".
+- exercises.json fy3-16-L2-01, fy3-16-L3-03 — with tolerance 0.07 the check accepts 1.58–1.82 kg (key 1.7) and 1.49–1.71 kg (key 1.6), so the value one step above the key (1.8 kg; 1.7 kg) also passes — follows from the teacher's both-directions decision; no change needed.
 
 ## Checked
-- Round 2 fix: L2-01 (1.7 kg) and L3-03 (1.6 kg) now have tolerance 0.04. The accepted ranges are 1.632–1.768 and 1.536–1.664. The rounded-down 1.6 (−5.9 %) and 1.5 (−6.3 %) are rejected, which matches "Round your answer up so that the ice is sure to last" and the solutions' "would not last". answers.py rounds up with `math.ceil`.
-- I recomputed all 19 numeric answers with my own formulas in one script. They agree with answers.py, the same file as fi-easy's, and with exercises.json within tolerance. Every answer, tolerance, unit and correct flag is the same as in the fi-easy version, which I reviewed in the same session.
-- L2-06: least-squares slope $-99.8\,\text{kWh/K}$, so $UA = 139\,\text{W/K}$. The x-intercept is $20.1\,{}^\circ\text{C}$. The slope is read from points on the line, not from raw points.
-- L3-02: the check that all the ice melts comes first, and $T = 8.06\,{}^\circ\text{C}$. The case where ice is left is stated.
-- L2-07 (ratio 11.5) and L2-08 (ratio 2, one correct option, the distractors' feedback is right).
-- L1-06 and L1-07: one correct option each. The net-transfer and melting wordings follow the guardrails.
-- L2-05: the period efficiencies 82/75/70 % and the explanation of the losses are right.
-- L3-04 ($5443\,\text{kWh}$, $480.6\,\text{€}$, break-even $0.44\,\text{€/kg}$) and L3-05 ($592\,\text{kW}$, freezing $85\,\%$, a lower limit).
-- L2-10: the graph's 220 kJ and the exact 220.6 kJ both lie inside the tolerance.
-- The exercise brief in this packet is empty again, so I compared the notation against the set and the fi-easy brief: it is consistent. Scope is FY3.
+- Round 4, full: all 21 numeric answers recomputed in one script from the task texts with my own formulas; all agree with exercises.json and answers.py.
+- Limit-value tasks L2-01 and L3-03: key and model answer round up (1.617→1.7; 1.511→1.6), answers.py uses ceil; tolerance 0.07 accepts the rounded-down 1.6 (5.9 %) and 1.5 (6.3 %) as the teacher decided; the unrounded values pass too.
+- Every other tolerance lets a student who rounds to the data's figures pass (680 vs 678, 2.4 vs 2.444, 140 vs 139, 480 vs 480.6, 590 vs 592).
+- Laws and conditions: Q = cmΔT only without a change of state (said in each Periaate), sm and rm at constant temperature, P = UAΔT with the inside at 0 °C stated in the task, mixing task checks 251 400 J > 167 000 J first and states the "not enough" case correctly.
+- Multiple choice L1-06, L1-07, L2-08: exactly one correct option; each distractor is wrong and its feedback gives the right physics (net transfer wording, no "cold flows", t ∝ m/(UΔT) ratio = 2).
+- Intermediate numbers of the solutions recomputed (period efficiencies, break-even price 0.44 €/kg, stage energies, fitted line, axis crossing ≈ +20 °C): all right.
+- Figures fy3-6/heating-line and fy3-7/melting-curve give the needed readings (180 s, 40 K; 220 kJ), agree with c_ice·m·ΔT + sm = 20.2 + 200 kJ, and do not show the answer.
+- Scope: FY3 central contents only (heat, changes of state, U-value from the lesson); symbols as in the brief (s, r, c, m/t, UA).
+- Guardrails: melting explained by interaction energy, heater efficiency "käytännössä 100 %", example data called esimerkkiaineisto, slope read from the fitted line.
+- en: answers, units, tolerances, data and correct options identical to fi; every number in every solution matches fi (compared mechanically); the packet's exercise brief is empty for en, so notation was judged against the Finnish brief.

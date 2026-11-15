@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 9d4d47952b34a428
+CONTENT-HASH: c5435cd354b04553
 
 ## Blocking
 
 ## Polish
-- solutions.md fy3-16-L2-09 — "Oletus häviöttömyydestä tekee todellisesta arvosta hieman pienemmän" is right but reads backwards — fix: "Jos häviöitä on, todellinen $c$ on hieman laskettua pienempi."
-- solutions.md fy3-16-L2-06 — "helmikuun kaltaisella kuukaudella" names a month, but the table has no months — fix: "kuukaudella, jolloin $T_\text{ulko} = -8\,{}^\circ\text{C}$".
+- exercises.json fy3-16-L2-01, fy3-16-L3-03 — with tolerance 0.07 the check accepts 1.58–1.82 kg (key 1.7) and 1.49–1.71 kg (key 1.6), so the value one step above the key (1.8 kg; 1.7 kg) also passes — follows from the teacher's both-directions decision; no change needed.
 
 ## Checked
-- Round 2 fix: L2-01 (1,7 kg) and L3-03 (1,6 kg) now have tolerance 0,04. The accepted ranges are 1,632–1,768 and 1,536–1,664. The rounded-down 1,6 (−5,9 %) and 1,5 (−6,3 %) are now rejected, which matches the task's "pyöristä ylöspäin" and the solutions' "ei riittäisi". answers.py rounds them up with `math.ceil`. The unrounded 1,617 shows "Lähellä" and the unrounded 1,511 is rejected. Both are consistent with a task that asks for a rounded-up minimum.
-- I recomputed all 19 numeric answers with my own formulas in one script. They agree with answers.py and exercises.json within tolerance (largest gap among the others: L2-05 +0,6 %).
-- L2-10: the exact $20{,}16 + 200{,}4 = 220{,}6\,\text{kJ}$ gives 2,451 h. The graph value 220 kJ gives 2,444 h. Both are inside the 0,03 tolerance.
-- L2-06: least-squares slope $-99{,}8\,\text{kWh/K}$, so $UA = 139\,\text{W/K}$. The x-intercept is $20{,}1\,{}^\circ\text{C}$. The slope is read from points on the fitted line, as the guardrail asks.
-- L3-02: the check that all the ice melts ($251\,400 > 167\,000\,\text{J}$) comes first, and $T = 8{,}06\,{}^\circ\text{C}$. The case where ice is left is stated.
-- L2-07 ($26\,\text{K}$ against $299\,\text{K}$, ratio 11,5) and L2-08 (ratio 2, one correct option, each distractor's feedback names its real error).
-- L1-06 and L1-07: one correct option each. The net-transfer wording and the wording on melting as interaction energy follow the guardrails.
-- L2-05: the period efficiencies (82, 75, 70 %) are right, and so is the explanation that losses grow with the temperature difference.
-- L3-04: $E = 5443\,\text{kWh}$, saving $480{,}6\,\text{€}$, break-even price $0{,}44\,\text{€/kg}$. L3-05: $592\,\text{kW}$, freezing $85\,\%$, the result is correctly a lower limit.
-- The figures heating-line and melting-curve give the needed grid values and state no answer. The notation matches the brief. Scope is FY3.
+- Round 4, full: all 21 numeric answers recomputed in one script from the task texts with my own formulas; all agree with exercises.json and answers.py.
+- Limit-value tasks L2-01 and L3-03: key and model answer round up (1.617→1.7; 1.511→1.6), answers.py uses ceil; tolerance 0.07 accepts the rounded-down 1.6 (5.9 %) and 1.5 (6.3 %) as the teacher decided; the unrounded values pass too.
+- Every other tolerance lets a student who rounds to the data's figures pass (680 vs 678, 2.4 vs 2.444, 140 vs 139, 480 vs 480.6, 590 vs 592).
+- Laws and conditions: Q = cmΔT only without a change of state (said in each Periaate), sm and rm at constant temperature, P = UAΔT with the inside at 0 °C stated in the task, mixing task checks 251 400 J > 167 000 J first and states the "not enough" case correctly.
+- Multiple choice L1-06, L1-07, L2-08: exactly one correct option; each distractor is wrong and its feedback gives the right physics (net transfer wording, no "cold flows", t ∝ m/(UΔT) ratio = 2).
+- Intermediate numbers of the solutions recomputed (period efficiencies, break-even price 0.44 €/kg, stage energies, fitted line, axis crossing ≈ +20 °C): all right.
+- Figures fy3-6/heating-line and fy3-7/melting-curve give the needed readings (180 s, 40 K; 220 kJ), agree with c_ice·m·ΔT + sm = 20.2 + 200 kJ, and do not show the answer.
+- Scope: FY3 central contents only (heat, changes of state, U-value from the lesson); symbols as in the brief (s, r, c, m/t, UA).
+- Guardrails: melting explained by interaction energy, heater efficiency "käytännössä 100 %", example data called esimerkkiaineisto, slope read from the fitted line.
+- fi-easy: answers, units, tolerances, data rows and correct options identical to fi; every number in every solution matches the fi solution (compared mechanically); no step or justification dropped.
