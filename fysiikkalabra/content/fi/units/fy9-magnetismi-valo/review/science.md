@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 753f6c76a98443bb
-Review of the recognition chart (queue 9c) and the term change against the version passed at 0944d5d3eb93fbe8; full on the chart, delta on the rest.
+CONTENT-HASH: a05765c3ca384b0a
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- C: "hiukkanen kiertää ympyrää → r = mv/(QB)" assumes v perpendicular to a uniform B; the circular path implies it and the Kaava's johda states it. It and "sin α_r = n_2/n_1" are Johda itse results of the Kaava section shown as pills (pedagogy's call).
-- C: ARIA_KARTTA has double spaces at the line joins (harmless for a screen reader).
+- A: `unit.md`, Ydinajatus: "liikkuvaan varaukseen ja virtajohtimeen se kohdistaa voiman" holds only when the motion or the wire is not parallel to the field (the formula section already uses the perpendicular component). Add "kun liike ei ole kentän suuntaista".
+- A: s7 e: 1,9 K is given as the temperature where the conductor is superconducting; the niobium-titanium winding is superconducting already below about 10 K, and the lower temperature allows the large current and field. "Lämpötilassa 1,9 K käämien johdin on suprajohtavassa tilassa" stays true, so this is optional.
+- B: `site/` is not rebuilt on this branch: the built `siirto` figure still shows "lämmöksi 38 %". The new labels are shorter and end-anchored at the same x, so no clipping is expected; look at it after the rebuild.
 
 ## Checked
-- Rows against the Kaava section and kaavanimet.tsv: charged particle in a field → F_M = QvB_⊥; conductor in a field → F_M = IℓB_⊥ (ℓ as MAFY); circle → magnetic force is the centripetal force, r = mv/(QB) (from QvB = mv²/r, recomputed); changing flux → e = −NΔΦ/Δt; transformer → N_1/N_2 = U_1/U_2 (ideal, as the Kaava); rotating generator → u_0 = NAB·2πf; light between media → Snell's law; light cannot leave → total reflection, sin α_r = n_2/n_1 (n_1 > n_2 implied by "ei pääse ulos"); grating → d sin α = nλ.
-- Rendered PNG (1280): the pills show these formulas, B_⊥ and subscripts correct.
-- ARIA_KARTTA: same nine rows, same order and physics; the start box's "kuva ja suunnat ensin" included.
-- teacher.md: "käsitekartta … haara kerrallaan" → "tunnistuskaavio … rivi kerrallaan"; the conditions it lists are unchanged and true. unit.md: only the figure.
+- Item 18 hunks: hook question, s1 c (337,5 W, 0,225 %, 844 kW, 2250 V), unit.md hook answer (174 A, 15 kW, 38 %, 2,0 A, 2,0 W, 0,005 %), figure aria and labels, transmission-loss text: all consistent.
+- s7 recomputed in one script: v = 299 780 455 m/s, v/c = 0,99996, difference 12,0 km/s = 0,004 %, rounding interval 2,9976–2,9980e8 m/s (contains c); E1 = 1,0894e-6 J; classical v = 3,61e10 m/s = 120 c; N = 4,0e14; E = 435,7 MJ; both beams 871 MJ; mass 0,67 ng; Ek = 0,5787 MJ; 753 cars (760 with rounded values); wrong 7,5 MJ and 58. All agree with tasks.json, solutions.md and answers.py; `practice.py check` OK (7 tasks, 110 points; s7 3+2+3+3+4).
+- Physics: the conclusion in a (the data cannot resolve c - v; a massive proton stays below c) is right; the magnetic force does no work; energy from the cavity electric field; RI^2 argument; the warning against r = mv/(qB) with the rest mass is correct.

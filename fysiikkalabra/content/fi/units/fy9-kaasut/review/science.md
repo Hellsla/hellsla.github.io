@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9723f5bee22920e2
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (9d91dfe6c6c1bab9).
+CONTENT-HASH: 7438c4b5df51d729
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- C: the 1st-law row still writes W without naming it the work done on the gas; the work row now says "työn suuruus" (magnitude) as the Kaava does, so the pair no longer contradicts the Kaava. "→ 1. pääsääntö, W kaasuun" would make the sign explicit.
-- C: "syvyys nesteessä → p = ρgh" is the hydrostatic part (round 1, stands).
+- A: `sovella/solutions.md`, s5 common mistakes: "ainemäärä lasketaan kokonaispaineella 311 kPa ..., jolloin tulos on noin kaksi kolmasosaa oikeasta" is right for the molar mass (17,2 against 25,4 g/mol, 0,68) but the amount of substance itself becomes 1,5-fold; write "jolloin moolimassaksi tulee noin kaksi kolmasosaa oikeasta".
+- C: s2 c check row: 485 - 175 - 233 = 77 kW is right for the rounded terms shown; the unrounded value is 77,6 kW (16 %, = 25 % of 310,5 kW), which the text around it still matches.
+- A: s7 e says the cooling water is "noin 20 °C"; c's own check gives about 21 °C. Either is fine at two figures.
 
 ## Checked
-- Round-1 Blocking fixed (fi: missing constant-pressure condition): row 7 is now "paine vakio, tilavuus muuttuu → työn suuruus, W = pΔV" (en "constant pressure, volume changes → magnitude of the work"), which is exactly the Kaava row (constant pressure, ΔV a magnitude, ΔU = Q + W with W done on the gas; on expansion W = −pΔV).
-- aria-label: "työn suuruus on paine kertaa tilavuuden muutoksen suuruus" states the same physics as the pill.
-- Rendered chart (360 px) shows the new row; other rows unchanged and correct as in round 1.
-- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
-- Hash taken at the start and the end (9723f5bee22920e2).
+- Both item 18 hunks against their tasks (s2 c numbers, s5 a with p0 + 210 kPa = 311 kPa).
+- s7 recomputed in one script: eta = 0,3721; P2 = 2700 MW; Q2 = 64,8 GWh = 2,333e14 J; 62,8 % + 37,2 %; 38,4 + 64,8 = 103,2 GWh; 14,0 TWh a year; c·rho·V/t = 2,388e8 W/K; dT = 11,31 K; 47,4 kJ/kg; wrong 18,0 K; 563 K, 283 K, 280/563 = 0,50. All agree with tasks.json answers, solutions.md and answers.py; `practice.py check` OK (7 tasks, 110 points; s7 2+3+4+3+3).
+- Physics of s7: steady state gives P1 = Ps + P2; the heat-engine argument in d is the right mechanism (Q2 is a condition of operation, not a loss; temperature ratio used qualitatively, within the unit's scope); c's upper-bound judgement and the salt remark are correct; e's low-temperature argument is correct. Rubric criteria match the parts and the solution.
