@@ -265,7 +265,7 @@ Aurinkokunnalla ei ole yhtä tarkkaa reunaa. Auringosta virtaa hiukkasia, **auri
 
 ### Kohdetyyppejä, ei portaita
 
-Kaikki tähtitieteelliset kohteet eivät ole portaita samassa sisäkkäisyydessä, vaan ne ovat galaksien sisällä tähtien joukossa. **Sumu** on kaasu- ja pölypilvi; esimerkiksi Orionin sumussa syntyy uusia tähtiä. **Neutronitähti** on jäänne raskaan tähden räjähdyksestä. Sen massa on tavallisesti suurempi kuin Auringon, mutta halkaisija vain noin $20$–$25\,\text{km}$, koska aine on puristunut lähes pelkiksi neutroneiksi.
+Kaikki tähtitieteelliset kohteet eivät ole portaita samassa sisäkkäisyydessä. Sumut, neutronitähdet ja mustat aukot ovat kohteiden tyyppejä, joita on galaksien sisällä tähtien joukossa. **Sumu** on kaasu- ja pölypilvi; esimerkiksi Orionin sumussa syntyy uusia tähtiä. **Neutronitähti** on jäänne raskaan tähden räjähdyksestä. Sen massa on tavallisesti suurempi kuin Auringon, mutta halkaisija vain noin $20$–$25\,\text{km}$, koska aine on puristunut lähes pelkiksi neutroneiksi.
 
 **Musta aukko** on alue, josta painovoiman takia mikään, ei edes valo, pääse ulos. Sillä ei ole pintaa: sen kooksi ilmoitetaan rajan eli **tapahtumahorisontin** halkaisija, joka kasvaa massan mukana. Linnunradan keskustan mustan aukon massa on noin neljä miljoonaa Auringon massaa ja tapahtumahorisontin halkaisija noin $2{,}5\cdot10^{10}\,\text{m}$. Koko ei siis kerro kohteen tyyppiä: neutronitähti on Maata pienempi, ja tämä musta aukko on Aurinkoa suurempi.
 

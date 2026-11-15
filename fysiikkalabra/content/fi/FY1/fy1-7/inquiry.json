@@ -248,7 +248,7 @@
     },
     {
      "text": "Laskussa ei ole virhettä, vaan palan massa on todella satoja tonneja.",
-     "feedback": "Arvioi tulos: $250\\,\\text{cm}^3$ on neljännes litraa, joten pala on kämmenen kokoinen. Vettä sen verran olisi $250\\,\\text{g}$, ja alumiini on 2,7-kertaisen tiheää, joten massa on noin $0{,}7\\,\\text{kg}$."
+     "feedback": "Arvioi tulos: $250\\,\\text{cm}^3$ on neljännes litraa, joten pala on kämmenen kokoinen. Vettä sen verran olisi $250\\,\\text{g}$, ja alumiini on noin 2,7 kertaa niin tiheää kuin vesi, joten massa on noin $0{,}7\\,\\text{kg}$."
     }
    ]
   },
