@@ -159,7 +159,7 @@
 **Muunnokset:** Ei tarvita: ajat ovat sekunteina ja paikat metreinä.
 **Sijoitus:** $v = \dfrac{3{,}07\,\text{m} - 0{,}83\,\text{m}}{5{,}0\,\text{s} - 0{,}0\,\text{s}} = 0{,}448\,\tfrac{\text{m}}{\text{s}}$ ja $b = 0{,}83\,\text{m} - 0{,}448\,\tfrac{\text{m}}{\text{s}} \cdot 0{,}0\,\text{s} = 0{,}83\,\text{m}$
 **Vastaus:** $0{,}83\,\text{m}$, kaksi desimaalia kuten paikoissa. Silmämääräinen sovitus vaihtelee, joten noin $0{,}75\text{–}0{,}91\,\text{m}$ on hyvä vastaus. Suora ei kulje origon kautta, koska kärry oli kellon käynnistyessä jo $0{,}83\,\text{m}$:n päässä radan merkistä, josta paikka mitataan. Vakiotermi on siis kärryn paikka kellon käynnistyshetkellä, eikä origon kautta kulkeva suora sopisi tähän mittaukseen.
-**Järkevyys:** Nopeus $0{,}45\,\text{m/s}$ vie kärryn viidessä sekunnissa noin $2{,}2\,\text{m}$ eteenpäin: $0{,}83\,\text{m} + 2{,}2\,\text{m} \approx 3{,}1\,\text{m}$, mikä vastaa viimeistä mittausta. Vakiotermi on positiivinen, koska kärry oli jo merkin edellä.
+**Järkevyys:** Nopeus $0{,}45\,\text{m/s}$ vie kärryn viidessä sekunnissa noin $2{,}2\,\text{m}$ eteenpäin: $0{,}83\,\text{m} + 2{,}2\,\text{m} \approx 3{,}0\,\text{m}$, mikä vastaa viimeistä mittausta. Vakiotermi on positiivinen, koska kärry oli jo merkin edellä.
 
 ## fy1-4-L2-07
 **Annettu:** taulukon tilavuudet $V = 10{,}0\text{–}50{,}0\,\text{cm}^3$ sekä massat $m_\text{A}$: $27{,}4$, $53{,}8$, $82{,}1$, $108{,}9$ ja $135{,}2\,\text{g}$ ja $m_\text{B}$: $78{,}6$, $156{,}8$, $237{,}1$, $313{,}5$ ja $392{,}0\,\text{g}$
@@ -207,4 +207,4 @@
 **Muunnokset:** $2{,}70\cdot10^{3}\,\text{kg/m}^3 = 2{,}70\,\text{g/cm}^3$, koska $1\,\text{kg} = 10^{3}\,\text{g}$ ja $1\,\text{m}^3 = 10^{6}\,\text{cm}^3$. Näin tilavuus voidaan käyttää kuutiosenttimetreinä ja massa tulee grammoina.
 **Sijoitus:** $m = 2{,}70\,\dfrac{\text{g}}{\text{cm}^3} \cdot 45\,\text{cm}^3 = 121{,}5\,\text{g}$
 **Vastaus:** $m \approx 1{,}2\cdot10^{2}\,\text{g}$ (laskettu arvo $121{,}5\,\text{g}$), kaksi merkitsevää numeroa kuten tilavuudessa $45\,\text{cm}^3$. Tiheys on MAFY-taulukosta (kiinteiden aineiden tiheyksiä); vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Alumiini on noin kolme kertaa vettä tiheämpää, ja $45\,\text{cm}^3$ vettä painaisi noin $45\,\text{g}$. Tulos $121{,}5\,\text{g}$ on noin $2{,}7$-kertainen siihen nähden.
+**Järkevyys:** Alumiini on noin kolme kertaa vettä tiheämpää, ja $45\,\text{cm}^3$:n veden massa olisi noin $45\,\text{g}$. Tulos $121{,}5\,\text{g}$ on noin $2{,}7$-kertainen siihen nähden.

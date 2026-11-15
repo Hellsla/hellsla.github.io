@@ -159,7 +159,7 @@
 **Conversions:** None needed: the times are in seconds and the positions in metres.
 **Substitution:** $v = \dfrac{3.07\,\text{m} - 0.83\,\text{m}}{5.0\,\text{s} - 0.0\,\text{s}} = 0.448\,\tfrac{\text{m}}{\text{s}}$ and $b = 0.83\,\text{m} - 0.448\,\tfrac{\text{m}}{\text{s}} \cdot 0.0\,\text{s} = 0.83\,\text{m}$
 **Answer:** $0.83\,\text{m}$, two decimal places, like the positions. Fitting by eye varies, so about $0.75\text{–}0.91\,\text{m}$ is a good answer. The line does not pass through the origin, because when the clock was started the trolley was already $0.83\,\text{m}$ from the mark on the track from which the position is measured. The constant term is therefore the position of the trolley when the clock was started, and a line through the origin would not fit this measurement.
-**Reasonableness:** A speed of $0.45\,\text{m/s}$ takes the trolley about $2.2\,\text{m}$ further in five seconds: $0.83\,\text{m} + 2.2\,\text{m} \approx 3.1\,\text{m}$, which matches the last measurement. The constant term is positive, because the trolley was already ahead of the mark.
+**Reasonableness:** A speed of $0.45\,\text{m/s}$ takes the trolley about $2.2\,\text{m}$ further in five seconds: $0.83\,\text{m} + 2.2\,\text{m} \approx 3.0\,\text{m}$, which matches the last measurement. The constant term is positive, because the trolley was already ahead of the mark.
 
 ## fy1-4-L2-07
 **Given:** the volumes of the table $V = 10.0\text{–}50.0\,\text{cm}^3$ and the masses $m_\text{A}$: $27.4$, $53.8$, $82.1$, $108.9$ and $135.2\,\text{g}$ and $m_\text{B}$: $78.6$, $156.8$, $237.1$, $313.5$ and $392.0\,\text{g}$

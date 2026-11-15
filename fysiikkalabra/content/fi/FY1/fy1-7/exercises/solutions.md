@@ -16,7 +16,7 @@
 **Muunnokset:** Ei tarvita: tiheys on yksikössä $\text{g/cm}^3$ ja tilavuus yksikössä $\text{cm}^3$, joten massa tulee suoraan grammoina.
 **Sijoitus:** $m = 2{,}70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 35{,}0\,\text{cm}^3 = 94{,}5\,\text{g}$
 **Vastaus:** $94{,}5\,\text{g}$, kolme merkitsevää numeroa kuten tiedoissa.
-**Järkevyys:** Veden, jonka tilavuus on $35\,\text{cm}^3$, massa olisi $35\,\text{g}$. Alumiini on noin 2,7-kertaisen tiheää, joten $2{,}7 \cdot 35\,\text{g} \approx 95\,\text{g}$. Tulos täsmää.
+**Järkevyys:** Veden, jonka tilavuus on $35\,\text{cm}^3$, massa olisi $35\,\text{g}$. Alumiini on noin 2,7 kertaa niin tiheää kuin vesi, joten $2{,}7 \cdot 35\,\text{g} \approx 95\,\text{g}$. Tulos täsmää.
 
 ## fy1-7-L1-03
 **Annettu:** etanolin massa $m = 316\,\text{g}$ ja tiheys $\rho = 0{,}79\,\tfrac{\text{g}}{\text{cm}^3}$
@@ -56,7 +56,7 @@
 **Muunnokset:** Tiheys on yksikössä $\text{kg/m}^3$, joten mitat muunnetaan metreiksi: $10{,}0\,\text{cm} = 10{,}0 \cdot 0{,}01\,\text{m} = 0{,}100\,\text{m}$, $5{,}0\,\text{cm} = 5{,}0 \cdot 0{,}01\,\text{m} = 0{,}050\,\text{m}$ ja $2{,}0\,\text{cm} = 2{,}0 \cdot 0{,}01\,\text{m} = 0{,}020\,\text{m}$.
 **Sijoitus:** $m = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0{,}100\,\text{m} \cdot 0{,}050\,\text{m} \cdot 0{,}020\,\text{m} = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1{,}0 \cdot 10^{-4}\,\text{m}^3 = 1{,}93\,\text{kg}$
 **Vastaus:** $1{,}9\,\text{kg}$, kaksi merkitsevää numeroa, koska mitat $5{,}0\,\text{cm}$ ja $2{,}0\,\text{cm}$ tunnetaan kahden numeron tarkkuudella.
-**Järkevyys:** Harkon tilavuus on $100\,\text{cm}^3$, ja saman tilavuuden veden massa olisi $100\,\text{g}$. Kulta on noin 19-kertaisen tiheää, joten $19 \cdot 100\,\text{g} \approx 1{,}9\,\text{kg}$.
+**Järkevyys:** Harkon tilavuus on $100\,\text{cm}^3$, ja saman tilavuuden veden massa olisi $100\,\text{g}$. Kulta on noin 19 kertaa niin tiheää kuin vesi, joten $19 \cdot 100\,\text{g} \approx 1{,}9\,\text{kg}$.
 
 ## fy1-7-L2-02
 **Annettu:** etanolin tilavuus $V = 2{,}5\,\text{dm}^3$ ja tiheys $\rho = 790\,\tfrac{\text{kg}}{\text{m}^3}$
@@ -233,4 +233,4 @@ Kappale B kelluisi vedessä ja muut uppoaisivat. Massan mukaan järjestys olisi 
 **Muunnokset:** $1\,\text{cm}^3 = 10^{-6}\,\text{m}^3$, joten $V = 50 \cdot 10^{-6}\,\text{m}^3 = 5{,}0 \cdot 10^{-5}\,\text{m}^3$.
 **Sijoitus:** $m = 8{,}96 \cdot 10^3\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5{,}0 \cdot 10^{-5}\,\text{m}^3 = 0{,}448\,\text{kg}$
 **Vastaus:** $0{,}45\,\text{kg}$ (tarkemmin $0{,}448\,\text{kg}$), kaksi merkitsevää numeroa kuten tilavuudessa $50\,\text{cm}^3$. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Kupari on noin $9$ kertaa vettä tiheämpää, ja $50\,\text{cm}^3$ vettä painaa $50\,\text{g}$. Kuparia on siis noin $9 \cdot 50\,\text{g} = 450\,\text{g} = 0{,}45\,\text{kg}$.
+**Järkevyys:** Kupari on noin $9$ kertaa vettä tiheämpää, ja $50\,\text{cm}^3$:n veden massa on $50\,\text{g}$. Kuparia on siis noin $9 \cdot 50\,\text{g} = 450\,\text{g} = 0{,}45\,\text{kg}$.
