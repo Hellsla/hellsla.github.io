@@ -105,7 +105,7 @@
 **Kaava:** $v = \sqrt{\dfrac{\gamma M}{r}}$, joten $\Delta v = \sqrt{\dfrac{\gamma M}{R + h_2}} - \sqrt{\dfrac{\gamma M}{R + h_1}}$
 **Muunnokset:** $r_1 = 6771\,\text{km} = 6{,}771 \cdot 10^{6}\,\text{m}$, $r_2 = 6769\,\text{km} = 6{,}769 \cdot 10^{6}\,\text{m}$, ja $\gamma M = 3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2$. Kaksi nopeutta on lähes yhtä suuria. Niiden erotus on vain noin yksi metri sekunnissa. Siksi välituloksia ei pyöristetä ennen vähennystä. Nopeudet lasketaan kahden desimaalin tarkkuudella, ja vasta sitten ne vähennetään.
 **Sijoitus:** $v_1 = \sqrt{\dfrac{3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6{,}771 \cdot 10^{6}\,\text{m}}} = 7671{,}03\,\text{m/s}$, $v_2 = \sqrt{\dfrac{3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6{,}769 \cdot 10^{6}\,\text{m}}} = 7672{,}17\,\text{m/s}$, joten $\Delta v = 7672{,}17\,\text{m/s} - 7671{,}03\,\text{m/s} = 1{,}13\,\text{m/s}$
-**Vastaus:** Ratanopeus kasvaa noin $1{,}13\,\text{m/s}$. Kolme merkitsevää numeroa kuten Maan massassa $5{,}97 \cdot 10^{24}\,\text{kg}$: korkeudet $400\,\text{km}$ ja $398\,\text{km}$ ovat tässä mallin tarkkoja arvoja, joten niiden erotus $2\,\text{km}$ ei rajoita tarkkuutta. Jos korkeudet olisi mitattu kilometrin tarkkuudella, erotuksessa olisi vain yksi merkitsevä numero ja tulos olisi noin $1\,\text{m/s}$.
+**Vastaus:** Ratanopeus kasvaa noin $1{,}13\,\text{m/s}$. Kolme merkitsevää numeroa kuten Maan massassa $5{,}97 \cdot 10^{24}\,\text{kg}$: korkeudet ovat tässä mallin tarkkoja arvoja. Kilometrin tarkkuudella mitattujen korkeuksien erotuksessa $2\,\text{km}$ olisi vain yksi merkitsevä numero, ja tulos olisi noin $1\,\text{m/s}$.
 **Järkevyys:** Säde pienenee vain $2\,\text{km}$ eli noin $0{,}03\,\%$. Siksi nopeuden muutos on pieni: $1{,}13\,\text{m/s}$ on noin $0{,}015\,\%$ nopeudesta $7671\,\text{m/s}$, mikä sopii niin pieneen säteen muutokseen. Etumerkki on positiivinen, vaikka ilma jarruttaa. Rata madaltuu, ja alempana gravitaatio vaatii suuremman nopeuden.
 
 ## fy5-6-L3-03
@@ -243,7 +243,7 @@ Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}
 **Järkevyys:** Koska $7{,}7^2 \approx 59$, tulos sopii etäisyyksien suhteeseen $59{,}7$. Nopeus on suurempi lähempänä Aurinkoa, kuten kaava $v \propto \tfrac{1}{\sqrt{r}}$ sanoo.
 
 ## fy5-6-L2-09
-**Annettu:** NASAn *Planetary Fact Sheet* -taulukosta luetaan kaksi riviä. Rivi *Distance from Sun* on keskietäisyys Auringosta eli radan isoakselin puolikas $a$ (yksikkö $10^{6}\,\text{km}$). Rivi *Orbital Period* on kiertoaika $T$ vuorokausina. Kohta a), esimerkki, aineisto luettu 15.11.2026. Jos valitset eri planeetat tai luet taulukon myöhemmin, luvut voivat olla hieman erilaiset. Menetelmä on silti sama.
+**Annettu:** NASAn *Planetary Fact Sheet* -taulukosta luetaan kaksi riviä. Rivi *Distance from Sun* on keskietäisyys Auringosta eli radan isoakselin puolikas $a$ (yksikkö $10^{6}\,\text{km}$). Rivi *Orbital Period* on kiertoaika $T$ vuorokausina. Kohta a), esimerkki, aineisto luettu 15. marraskuuta 2026. Jos valitset eri planeetat tai luet taulukon myöhemmin, luvut voivat olla hieman erilaiset. Menetelmä on silti sama.
 
 | Planeetta | $a\,(10^{6}\,\text{km})$ | $T\,(\text{d})$ |
 |---|---|---|
