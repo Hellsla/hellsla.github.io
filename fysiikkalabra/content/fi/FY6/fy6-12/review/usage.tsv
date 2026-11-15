@@ -1,3 +1,13 @@
 date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache_read	cache_write	context	turns	seconds	calls	verdict	cost_usd	source	ref
 2026-11-13T23:44Z	fy6-12	FY6	developer	develop	claude-sonnet-5-5	medium	fix	2	88196	10	2024	64645	21517	22288	5	243	5		0.0870	transcript	2d9b9f60528b
 2026-11-13T23:44Z	fy6-12	FY6	orchestrator	orchestrate	claude-sonnet-5-5		session/15	2	1483358	22	3158	1468218	11960	16522	126	7436	105		0.3731	transcript	2d1100cb6c75
+2026-11-15T20:03Z	fy6-12	FY6	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	376468	18	3039	307018	66393	72679	8	26	9		0.2578	transcript	4d17f66c26cc
+2026-11-15T20:03Z	fy6-12	FY6	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	268525	10	4333	199922	64260	70492	5	35	8		0.2440	transcript	8e19220f539b
+2026-11-15T20:03Z	fy6-12	FY6	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	batch/4	1	226329	10	1464	207990	16865	18630	17	66	22		0.0984	transcript	c38de921a68e
+2026-11-15T20:03Z	fy6-12	FY6	science-reviewer	review	claude-opus-5-5	medium	full	1	1856524	34	13079	1686824	156587	163709	16	158	16		1.3820	transcript	31ccec8d3ac0
+2026-11-15T20:03Z	fy6-12	FY6	pedagogy-reviewer	review	claude-sonnet-5-5	medium	full	1	326927	16	4448	253693	68770	75261	7	35	8		0.2672	transcript	dad1fd011d6a
+2026-11-15T20:03Z	fy6-12	FY6	science-reviewer	review	claude-opus-5-5	medium	full	1	1747412	30	18368	1549232	179782	186772	14	211	16		1.5762	transcript	4faff5bb4014
+2026-11-15T20:03Z	fy6-12	FY6	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	batch/4	1	150293	7	1074	133045	16167	18000	13	39	19		0.0778	transcript	3985e42472e9
+2026-11-15T20:03Z	fy6-12	FY6	visual-editorial-reviewer	review	claude-sonnet-5-5	medium	batch/4	1	107615	5	735	92544	14331	16142	9	29	14		0.0617	transcript	0a5696b1caf0
+2026-11-15T20:03Z	fy6-12	FY6	science-reviewer	review	claude-opus-5-5	medium	full	1	1888022	34	15143	1713682	159163	166045	16	179	16		1.4415	transcript	cae9f9cb8d46
+2026-11-15T20:03Z	fy6-12	FY6	orchestrator	orchestrate	claude-opus-5-5		since/10	1	6474776	44	12466	6421924	40342	47200	207	2689	216		1.8566	transcript	6a3eb871bdff
