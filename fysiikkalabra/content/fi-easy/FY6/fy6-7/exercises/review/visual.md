@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 20b8e6c3a3fdd3a2
+CONTENT-HASH: c8e52f41798e37c2
 
 ## Blocking
 - none
@@ -8,10 +8,9 @@ CONTENT-HASH: 20b8e6c3a3fdd3a2
 - none
 
 ## Checked
-- Delta, round 1 (a·10^n answers, wording, caption marker removed).
-- open-exercises-1280-3 (7-3, 5,22 A, three-figure note).
-- open-exercises-L2-1280-3 (7-12, 4,8·10² kJ), -6 (7-15 answer 7,3·10² kWh), -7 (7-16), -8 (7-17, 3,0·10² kWh), -10 (7-18 dryer figure with axes and units).
-- Powers of ten render upright with the unit and thin space, nothing clipped, figure captions clean.
+- Delta (calculation re-broken into an inline aligned block, same numbers, signs and units). Opened content/fi-easy/FY6/fy6-7/review/shots/fy6-7-open-exercises-L2-1280-6.png: L2-05 Järkevyys "365 · 2 kWh = 7,3·10² kWh" and the 2,01 kWh : 24 h block above it.
+- At 1280 px (captured column 664 px) aligned at `=`, unclipped, units upright with thin space; the sentences around the blocks are short and clear.
+- No 360/390 px capture shows an opened solution, so phone wrapping rests on the passing check_layout 360 px result in the packet.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

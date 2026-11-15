@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0725c3201eb7ad5e
+CONTENT-HASH: 7af1b6d05699a20c
 
 ## Blocking
 - none
@@ -8,9 +8,9 @@ CONTENT-HASH: 0725c3201eb7ad5e
 - none
 
 ## Checked
-- open-exercises-1280-3 (7-3, 5,22 A with three-s.f. reasoning).
-- open-exercises-L2-1280-3 (kJ as a·10^n in Vastaus and Järkevyys), -6 (7-15, 7,3·10^2 kWh, new limiting-data sentence), -7 and -9 (7-16/7-17, 3,0·10^2 kWh).
-- a·10^n is set with \cdot, units upright with thin space, answer rows match Vastaus, sentences fluent, no overflow.
+- Delta (calculation re-broken into an inline aligned block, same numbers, signs and units). Opened content/fi/FY6/fy6-7/review/shots/fy6-7-open-exercises-L2-1280-6.png: L2-05 Järkevyys "365 · 2 kWh = 7,3·10² kWh" and the 2,01 kWh : 24 h block above it.
+- At 1280 px (captured column 664 px) the block is aligned at `=`, unclipped, operators spaced, units upright with thin space; reads as a natural continuation of the sentence.
+- No 360/390 px capture shows an opened solution (only the closed stage-exercises-390), so phone wrapping rests on the passing check_layout 360 px result in the packet, not on my eyes.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

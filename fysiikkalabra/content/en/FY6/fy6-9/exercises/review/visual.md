@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 69d3219159d1724e
+CONTENT-HASH: ed49b4d836471970
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md fy6-9-L2-02 Answer — the substitution ends in $0.20\,\Omega$ but the answer is $0.2\,\Omega$; add "(calculated $0.20\,\Omega$)" so the drop of a figure is visible.
-- [Minor] solutions.md fy6-9-L1-02 Answer — "four significant figures like the capacity $3000\,\text{mAh}$" treats trailing zeros as significant; for science: confirm this reading is intended for the course.
-- [Minor] solutions.md fy6-9-L2-06 Answer — the answer line carries the figure reasoning and part a) in one paragraph; start "Answer to a)" on its own line.
+- [Minor] L2-06 Substitution — the row breaks before `· 1.5 h` although the first row has room at 1280 px, and the second row carries a second `=` step (`= 0.5 V · 3.0 Ah`) after the continued product. Optional: put `= 0.5 V · 3.0 Ah` on its own row. It reads correctly as it is.
 
 ## Checked
-- Opened content/en/FY6/fy6-9/review/shots/fy6-9-open-exercises-1280-1, -2, -3 (9-1, 9-2 1.080·10^4 C, 9-3 4.7·10^2 Wh), fy6-9-open-exercises-L2-1280-2 (9-11 internal resistance), -6, -7 (9-15 loss 1.5 Wh), -8 (9-16 for context). Typography clean, nothing clipped, answer boxes agree with the solutions.
+- Delta (calculation re-broken into an inline aligned block, same numbers, signs and units). Opened content/en/FY6/fy6-9/review/shots/fy6-9-open-exercises-L2-1280-7.png: L2-06 Substitution W_loss = (4.2 V − 3.7 V) · 2.0 A / · 1.5 h = 0.5 V · 3.0 Ah / = 1.5 Wh, with Answer and Reasonableness below.
+- Aligned at `=`, unclipped, units upright with thin space, decimal point correct.
+- No 360/390 px capture shows an opened solution, so phone wrapping rests on the passing check_layout 360 px result in the packet.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · English 5 · accessibility 5
