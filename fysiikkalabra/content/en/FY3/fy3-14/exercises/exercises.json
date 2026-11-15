@@ -175,7 +175,7 @@
       "unit": "kJ/kg",
       "tolerance": 0.04,
       "data": {
-        "caption": "Mass of melted water during heating (example data)",
+        "caption": "Mass of melted water during heating",
         "columns": [
           "$t\\,(\\text{s})$",
           "$m\\,(\\text{g})$"
@@ -340,7 +340,7 @@
       "unit": "kJ/kg",
       "tolerance": 0.02,
       "data": {
-        "caption": "Calorimeter measurements (example data)",
+        "caption": "Calorimeter measurements",
         "columns": [
           "Measurement",
           "$T_\\text{i}\\,({}^\\circ\\text{C})$",
@@ -373,7 +373,7 @@
       "unit": "°C",
       "tolerance": 0.02,
       "data": {
-        "caption": "Final temperature at different initial temperatures of the water (example data)",
+        "caption": "Final temperature at different initial temperatures of the water",
         "columns": [
           "$T_\\text{w}\\,({}^\\circ\\text{C})$",
           "$T\\,({}^\\circ\\text{C})$"

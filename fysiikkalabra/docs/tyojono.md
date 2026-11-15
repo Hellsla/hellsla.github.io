@@ -99,6 +99,20 @@ välimerkillä ("… $$kaava$$." tai "$$kaava$$, joten …"), välimerkki jää 
 4. `site/` muuttuu vain display-kaava + välimerkki -kohdista; `check_layout.py` SMOKE-sivuille; `reviews.py verify`
    (rakennusmuutos, mikään katselmointi ei vanhene).
 
+
+## 5f. Reflow-carry yksiköille, Sovella-sarjoille ja esimerkkikokeille (koordinaattori 2026-11-15)
+
+Varattu: claude/item-reflow-carry
+
+Kohdan 5d FY9-PR #611: FY9:n sisältö on yksiköitä (`content/*/units/fy9-*`), ja `carry-item` siirsi vain opettajan
+hyväksymät kuvat, kaavanimet ja MAFY-tunnukset. Pelkkä rivijako vanhensi siis yksikön kaikki kolme katselmointia; sama
+koskee FY8:n (#601) Sovella-sarjoja ja esimerkkikoetta. Jaettu muutos (`scripts/reviews.py`, `test_reviews.py`): ajetaan
+yksin, 8l:n (#607) jälkeen ja ennen 8m:ää.
+1. `carry-item` vertaa tekstejä myös `chain_view`-muodossa (sama kuin luvun `reflow`-luokka): kun ero on pelkkä
+   rivijako, tiede ja pedagogiikka siirtyvät luokalla `reflow`, ja ulkoasu tarvitsee delta-katselmoinnin (RULES).
+2. `verify` johtaa reflow-rivit uudelleen eikä hyväksy reflow-riviä ulkoasukatselmoinnille.
+3. Testi (`test_reviews.py` 8n): yksikön kaava nostettuna `aligned`-muotoon siirtää tieteen ja pedagogiikan, ei ulkoasua;
+   muuttunut luku, merkki tai sana ei siirrä mitään.
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13, 2026-11-14 ja 2026-11-15)
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
@@ -258,15 +272,6 @@ kuten `teacher-figure`: `reviews.py approve-text <id> [--lang]` kirjaa hyväksyt
 (esim. `docs/teacher-text.tsv`, ei käsin), `scope` antaa sille none/carry, `verify` johtaa sen uudelleen CI:ssä.
 Rivi kirjataan vain opettajan nimenomaisesta hyväksynnästä; mikä tahansa muu muutos samassa luvussa katselmoidaan
 normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yksin.
-
-## 8l. Taulukoiden otsikoista pois "(esimerkkiaineisto)" (opettaja 2026-11-15)
-
-Opettaja 2026-11-15: "Voisiko taulukoista ottaa pois tuon (esimerkkiaineisto)". Tehtävien taulukko-otsikoissa (`"caption"`
-`exercises.json`:issa) on merkintä noin 930 kertaa: fi 312, en 292 ("(example data)"), fi-easy 325, kursseilla FY2–FY8.
-Poistetaan vain otsikoista. Jos sulkeissa on muutakin, se jää (esim. "(esimerkkiaineisto, energiat NNDC NuDat 3)" →
-"(energiat NNDC NuDat 3)"). Tehtävätekstin maininnat (noin 18) ja taulukon alla oleva lähderivi eivät muutu. Tehdään
-kohdan 8k `teacher-text`-kategorialla (opettajan nimenomainen hyväksyntä tälle mekaaniselle muutokselle), jotta
-katselmoinnit kulkevat muutoksen yli. Jaettu muutos (`scripts/reviews.py` ja kaikki kurssit), ajetaan yksin, sim PR 3:n (#591) jälkeen.
 
 ## 8m. Liukukitka, ei liikekitka (opettaja 2026-11-15)
 

@@ -214,7 +214,7 @@
       "unit": "mJ",
       "tolerance": 0.04,
       "data": {
-        "caption": "Kondensaattorin varaus jännitteen funktiona (esimerkkiaineisto)",
+        "caption": "Kondensaattorin varaus jännitteen funktiona",
         "columns": [
           "$U\\,(\\text{V})$",
           "$Q\\,(\\mu\\text{C})$"
@@ -280,7 +280,7 @@
         }
       ],
       "data": {
-        "caption": "Kondensaattorin jännite latauksen aikana (esimerkkiaineisto)",
+        "caption": "Kondensaattorin jännite latauksen aikana",
         "columns": [
           "$t\\,(\\text{s})$",
           "$U\\,(\\text{V})$"
@@ -377,7 +377,7 @@
       "unit": "kW",
       "tolerance": 0.05,
       "data": {
-        "caption": "Kondensaattorin jännite vakiovirtalatauksessa (esimerkkiaineisto)",
+        "caption": "Kondensaattorin jännite vakiovirtalatauksessa",
         "columns": [
           "$t\\,(\\text{s})$",
           "$U\\,(\\text{V})$"

@@ -170,7 +170,7 @@
       "unit": "m/s²",
       "tolerance": 0.03,
       "data": {
-        "caption": "Acceleration of an Atwood machine at different mass differences (example data)",
+        "caption": "Acceleration of an Atwood machine at different mass differences",
         "columns": [
           "$\\Delta m\\,(\\text{g})$",
           "$a\\,(\\text{m/s}^2)$"
@@ -212,7 +212,7 @@
       "tolerance": 0.04,
       "fbd": "equations",
       "data": {
-        "caption": "Acceleration of the cart with different hanging masses (example data)",
+        "caption": "Acceleration of the cart with different hanging masses",
         "columns": [
           "$m_2\\,(\\text{kg})$",
           "$a\\,(\\text{m/s}^2)$"
@@ -356,7 +356,7 @@
       "unit": "kN",
       "tolerance": 0.04,
       "data": {
-        "caption": "Speed of the train after the start (example data)",
+        "caption": "Speed of the train after the start",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -398,7 +398,7 @@
       "unit": "kg",
       "tolerance": 0.04,
       "data": {
-        "caption": "Descent time of the hanging mass over a distance of $0.80\\,\\text{m}$ (example data)",
+        "caption": "Descent time of the hanging mass over a distance of $0.80\\,\\text{m}$",
         "columns": [
           "$m_2\\,(\\text{kg})$",
           "$t\\,(\\text{s})$"

@@ -170,7 +170,7 @@
       "tolerance": 0.02,
       "fbd": "equations",
       "data": {
-        "caption": "Hissin nopeus ylöspäin lähdön jälkeen (esimerkkiaineisto)",
+        "caption": "Hissin nopeus ylöspäin lähdön jälkeen",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -220,7 +220,7 @@
       "tolerance": 0.05,
       "fbd": "equations",
       "data": {
-        "caption": "Pulkan paikka vaakasuoralla lumella (esimerkkiaineisto)",
+        "caption": "Pulkan paikka vaakasuoralla lumella",
         "columns": [
           "$t\\,(\\text{s})$",
           "$x\\,(\\text{m})$"
@@ -266,7 +266,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Kaltevuuskulma, jolla laatikko liukuu tasaisesti (esimerkkiaineisto)",
+        "caption": "Kaltevuuskulma, jolla laatikko liukuu tasaisesti",
         "columns": [
           "Mittaus",
           "$\\alpha\\,({}^\\circ)$"
@@ -307,7 +307,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Pulkan vaakamatka (esimerkkiaineisto)",
+        "caption": "Pulkan vaakamatka",
         "columns": [
           "$m\\,(\\text{kg})$",
           "$h\\,(\\text{m})$",
@@ -412,7 +412,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Pulkkamäen osat (esimerkkiaineisto)",
+        "caption": "Pulkkamäen osat",
         "columns": [
           "Osa",
           "$\\alpha\\,({}^\\circ)$",
@@ -445,7 +445,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Hyppääjän nopeus varjon avautumisen jälkeen (esimerkkiaineisto)",
+        "caption": "Hyppääjän nopeus varjon avautumisen jälkeen",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
