@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 4ab4996445590e25
+CONTENT-HASH: 5d1fdfd93438d9dc
 
 ## Blocking
-- (none)
 
 ## Polish
-- [Minor] reflow-1: "2,7 m" -kaavan jälkeen sijamuoto ":n päässä" alkaa omalta riviltä; siirrä päätteen rivi kaavan viimeiseen riviin kuten välimerkit.
+- [Minor] Lifted formulas that sit between words keep a short "ja" or "joten" on a line of their own after them; reads naturally, no change needed.
 
 ## Checked
-- batch delta review 5d: reflow-*.png (2 sheets, all opened at 360 px); kaavat luettavissa ja täysin näkyvissä, relaatiot samassa sarakkeessa, ei vaakavieritystä.
+batch delta review 5d (round 2): reflow-1..1 at 360 px opened; every lifted formula fully visible, relations aligned, continuation rows start with an operator, no bracket, quote or case ending left around a lifted formula.

@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6501312fba02e6a4
+CONTENT-HASH: cb68fad59af3c0c1
 
 ## Blocking
-- None.
+- none
 
 ## Polish
-- None. Every lifted formula is fully visible at 360 px, relations aligned in one column, operators lead continuation rows, no lone symbol or unit, and the surrounding sentences read naturally.
+- none
 
 ## Checked
-- batch delta review 5d: opened all 2 sheet(s) (reflow-1.png, reflow-2.png) at 360 px.
+batch delta review 5d round 2: reflow-1.png  (360 px, everything open); lifted formulas fully visible, relations aligned, no bracket, quote or case ending left around a lifted formula, no lone punctuation, operators stay with their terms.

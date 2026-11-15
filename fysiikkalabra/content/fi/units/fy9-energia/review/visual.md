@@ -1,11 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: 45abe3769687094e
+VERDICT: PASS
+CONTENT-HASH: a28a5665b989a807
 
 ## Blocking
-- [Major] reflow-2 ja reflow-3 — sulkeisiin kirjoitettu nostettu kaava jättää "(" rivin loppuun ja ")." / "), jolloin" omalle rivilleen ("osan lopussa (" … ")."; "(" 2,0 MW·8760 h = 17,5 GWh ")," ; "). Talo tarvitsee") — lause katkeaa, yksinäinen sulku rivin alussa — lue luonnollisesti vain, jos sulkeet kuuluvat kaavan ensimmäiselle ja viimeiselle riville — siirrä "(" ja ")"+välimerkki kaavan rivien sisään (sama kuin pilkulle, työjono 5e) tai jätä kaava sulkeiden sisällä riviin.
 
 ## Polish
-- [Minor] Kaikissa yksiköissä: "Opiskelija laski: ”" -esimerkeissä sulkeva ”. alkaa omalta riviltä kaavan jälkeen; hyväksyttävä, mutta siirrettävissä kaavan viimeiseen riviin.
+- [Minor] Lifted formulas that sit between words keep a short "ja" or "joten" on a line of their own after them; reads naturally, no change needed.
 
 ## Checked
-- batch delta review 5d: reflow-*.png (3 sheets, all opened at 360 px); kaavat luettavissa ja täysin näkyvissä, relaatiot samassa sarakkeessa, ei vaakavieritystä.
+batch delta review 5d (round 2): reflow-1..2 at 360 px opened; every lifted formula fully visible, relations aligned, continuation rows start with an operator, no bracket, quote or case ending left around a lifted formula.

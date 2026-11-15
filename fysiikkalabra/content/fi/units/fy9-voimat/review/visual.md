@@ -1,11 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: 3b80bf2d9afba477
+VERDICT: PASS
+CONTENT-HASH: 41f90297c38c68a9
 
 ## Blocking
-- [Major] reflow-2, "Laskimen tai taulukkolaskennan suoran sovitus (" — kaava — ")." — sulku jää rivin loppuun ja ")." yksin omalle rivilleen, lause katkeaa — siirrä "(" ja ")." kaavan ensimmäiselle ja viimeiselle riville tai jätä kaava riviin.
 
 ## Polish
-- [Minor] Kaikissa yksiköissä: "Opiskelija laski: ”" -esimerkeissä sulkeva ”. alkaa omalta riviltä kaavan jälkeen; hyväksyttävä, mutta siirrettävissä kaavan viimeiseen riviin.
+- [Minor] Lifted formulas that sit between words keep a short "ja" or "joten" on a line of their own after them; reads naturally, no change needed.
 
 ## Checked
-- batch delta review 5d: reflow-*.png (2 sheets, all opened at 360 px); kaavat luettavissa ja täysin näkyvissä, relaatiot samassa sarakkeessa, ei vaakavieritystä.
+batch delta review 5d (round 2): reflow-1..2 at 360 px opened; every lifted formula fully visible, relations aligned, continuation rows start with an operator, no bracket, quote or case ending left around a lifted formula.
