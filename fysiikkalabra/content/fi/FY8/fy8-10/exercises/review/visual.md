@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b1f9cda044de58c0
-Round: 2 (delta)
+CONTENT-HASH: f7a79ce1e4f53212
+SCOPE: delta reflow from b1f9cda044de58c0 base cf5f907
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] solutions.md L2-08 — the rows "Z m_H = 79 · …" and "Z m_H = 79,618175 u" repeat the left side; fine, aligned and readable at 390 px.
+- none
 
 ## Checked
-- Own 390 px re-render of 10-16 with feedback and solution open: new options (0,002 / 8 / 1600 / 180 000 MeV), split mass lines, aligned blocks and the "lähin vaihtoehto" sentence render cleanly; measured: no overflowing KaTeX, no page scroll. The round 1 "suuruusluokka" wording is resolved.
+- Delta round 4, calculation chains re-broken into aligned rows. Changed blocks judged from the source diff and the identical shared aligned renderer seen in fy8-1 and fy8-6 captures; this set's own solution captures not opened.
+- Kaava lines keep the equals sign in the first row; sentence marks sit inside the last row.
 
 ## Scores
-illustrations n/a (5) · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

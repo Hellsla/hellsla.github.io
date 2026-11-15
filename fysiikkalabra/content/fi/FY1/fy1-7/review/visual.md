@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 734ea9a4523590e2
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: f447cdfb0ba35ecd
 
 ## Blocking
 - none
@@ -9,4 +8,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Rendered the displacement figure (fi/en/fi-easy share figures.py): new label V = V_2 - V_1 (w=130) with separate '= 30 ml' line fits, no overlap with bracket or cylinder, KaTeX renders; text diff (V = V_2 - V_1 consistent with V_1/V_2 labels, $g\,t$, Kármán wording, iceberg alt) read for notation and language.
+- batch delta review: diff is one inquiry feedback sentence ('noin 2,7 kertaa niin tiheää kuin vesi', fixes the odd '2,7-kertaisen tiheää'); dimensionless 2,7 in plain text is fine, units are LaTeX; no figure changed (teacher-approved). Opened no fy1-7 capture, the text change does not touch layout.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

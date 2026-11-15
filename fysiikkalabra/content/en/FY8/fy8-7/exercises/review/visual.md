@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: bca8b6fbba11c0f6
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 1799d3f4f3fab803
+SCOPE: delta reflow from 4fb5fefaaa3f4072 base 56362aafa0
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- delta reflow, en: no solution capture of this set opened; the reflowed blocks judged from the source diff only (rows broken at whole terms). Layout of the card around the blocks intact; no 390 px open-solution capture exists, so phone wrapping is judged by the build's rule only. Hash re-run at the end: unchanged.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

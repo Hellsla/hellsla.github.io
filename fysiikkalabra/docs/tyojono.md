@@ -73,6 +73,8 @@ jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen ja align-muotoon (opettaja 2026-11-15)
 
+Varattu: claude/fy8-clipped-formulas (FY8)
+
 Kohdan 5b tarkistus löysi mainista noin 4 800 kaavaa, jotka leikkautuvat puhelimella (`docs/clipped-formulas.tsv`).
 Esimerkki: fy2-3, Esimerkki 2, jossa tekstin sisällä oleva $E = 1500 \cdot 3{,}0\,\text{kWh} = 4500\,\text{kWh}$
 näkyy 360 px:llä muodossa "4500 kW". Opettaja 2026-11-15:
@@ -472,6 +474,7 @@ leikkautuvat kaavat ovat mainissa (FY8 odottaa #601:tä). Avoin kohta 12 ratkesi
 muuteta. Yksi kurssi = yksi haara ja yksi PR; rinnakkaisuus kuten jonon alussa (kiireellä ei ylärajaa).
 Päätös (opettaja 2026-11-15): raja-arvotehtävien tarkistus hyväksyy jatkossakin poikkeaman molempiin suuntiin
 (esim. fy6-16 L2-05: 10,4 ja 10,5 kW), eikä yksipuolista tarkistusta tehdä. P7c koskee vain mallivastauksen pyöristystä.
+FY1 tehty: claude/fy1-oikoluku (PR #614).
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
@@ -545,3 +548,10 @@ Perustelu: marginaaliin mahtuva kuva olisi noin neljänneksen pienempi, ja Teori
 
 Luvut fy3-13, fy3-14, fy3-16 ja fy4-16 jäävät ilman omia kortteja ja alleviivauksia (#526:n siirtojen jälkeen).
 Kortteja ei lisätä niihin.
+
+## Kirjattu päätös: kaikki roolit Fable (opettaja 2026-11-15)
+
+Opettaja 15.11: "Fable usage is 0% and all models 67%. Can I use fable more? Change models so". Kaikki agentit
+(`.claude/agents/`: developer, science-reviewer, pedagogy-reviewer, visual-editorial-reviewer) ja komennot
+(`.claude/commands/`) ajetaan Fablella; `/lesson`-komennon mallitaulukko on ohje. Aiempi sääntö "Fable never without
+the teacher's word" on poistettu. `.claude/parked/` on ennallaan.

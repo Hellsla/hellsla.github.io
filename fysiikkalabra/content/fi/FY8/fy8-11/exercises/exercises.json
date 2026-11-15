@@ -131,7 +131,7 @@
     {
       "id": "fy8-11-L2-03",
       "level": 2,
-      "text": "Uraani-235 voi jakautua myös reaktiossa ${}^{1}_{0}\\text{n} + {}^{235}_{92}\\text{U} \\rightarrow {}^{140}_{54}\\text{Xe} + {}^{94}_{38}\\text{Sr} + x\\,{}^{1}_{0}\\text{n}$. Atomimassat ovat: uraani-235 $235{,}0439282\\,\\text{u}$, ksenon-140 $139{,}9216458\\,\\text{u}$, strontium-94 $93{,}9153556\\,\\text{u}$ ja neutroni $1{,}0086649\\,\\text{u}$. Päättele ensin neutronien määrä $x$. Kuinka paljon energiaa reaktiossa vapautuu? Anna vastaus megaelektronivoltteina.",
+      "text": "Uraani-235 voi jakautua myös reaktiossa $$\n\\begin{aligned}\n&{}^{1}_{0}\\text{n} \\\\\n&+ {}^{235}_{92}\\text{U} \\rightarrow {}^{140}_{54}\\text{Xe} + {}^{94}_{38}\\text{Sr} + x\\,{}^{1}_{0}\\text{n}\n\\end{aligned}\n$$. Atomimassat ovat: uraani-235 $235{,}0439282\\,\\text{u}$, ksenon-140 $139{,}9216458\\,\\text{u}$, strontium-94 $93{,}9153556\\,\\text{u}$ ja neutroni $1{,}0086649\\,\\text{u}$. Päättele ensin neutronien määrä $x$. Kuinka paljon energiaa reaktiossa vapautuu? Anna vastaus megaelektronivoltteina.",
       "answer": 185,
       "unit": "MeV",
       "tolerance": 0.02

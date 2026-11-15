@@ -256,12 +256,12 @@
       "type": "choice",
       "title": "Find the error",
       "optional": true,
-      "prompt": "A student calculates the energy of the reaction of the example, ${}^{1}_{0}\\text{n} + {}^{235}_{92}\\text{U} \\rightarrow {}^{141}_{56}\\text{Ba} + {}^{92}_{36}\\text{Kr} + 3\\,{}^{1}_{0}\\text{n}$. The student writes\n\n$$\\begin{aligned} &\\Delta m = 235.0439282\\,\\text{u} \\\\ &\\quad - 140.9144033\\,\\text{u} \\\\ &\\quad - 91.9261731\\,\\text{u} \\\\ &\\quad - 3 \\cdot 1.0086649\\,\\text{u} \\\\ &= -0.8226429\\,\\text{u} \\end{aligned}$$\n\nand gets the result $Q = -0.8226429 \\cdot 931.5\\,\\text{MeV} \\approx -766\\,\\text{MeV}$. The student concludes that fission binds energy.\n\nWhere is the error?",
+      "prompt": "A student calculates the energy of the reaction of the example, $$\n\\begin{aligned}\n&{}^{1}_{0}\\text{n} \\\\\n&+ {}^{235}_{92}\\text{U} \\rightarrow {}^{141}_{56}\\text{Ba} + {}^{92}_{36}\\text{Kr} + 3\\,{}^{1}_{0}\\text{n}\n\\end{aligned}\n$$. The student writes\n\n$$\\begin{aligned} &\\Delta m = 235.0439282\\,\\text{u} \\\\ &\\quad - 140.9144033\\,\\text{u} \\\\ &\\quad - 91.9261731\\,\\text{u} \\\\ &\\quad - 3 \\cdot 1.0086649\\,\\text{u} \\\\ &= -0.8226429\\,\\text{u} \\end{aligned}$$\n\nand gets the result $$\n\\begin{aligned}\nQ &= -0.8226429 \\cdot 931.5\\,\\text{MeV} \\\\\n&\\approx -766\\,\\text{MeV}\n\\end{aligned}\n$$. The student concludes that fission binds energy.\n\nWhere is the error?",
       "choices": [
         {
           "text": "The mass of the starting materials lacks the neutron that hits the nucleus.",
           "correct": true,
-          "feedback": "Correct. The starting materials are the uranium nucleus *and* the neutron, so $m_\\text{initial} = 235.0439282\\,\\text{u} + 1.0086649\\,\\text{u} = 236.0525931\\,\\text{u}$. Then $\\Delta m = 0.1860220\\,\\text{u}$ and $Q \\approx 173\\,\\text{MeV}$. The negative result was a sign of an error: the fission of uranium releases energy, and the mass difference is only about $0.08\\,\\%$ of the mass of the starting materials."
+          "feedback": "Correct. The starting materials are the uranium nucleus *and* the neutron, so $$\n\\begin{aligned}\nm_\\text{initial} &= 235.0439282\\,\\text{u} \\\\\n&+ 1.0086649\\,\\text{u} \\\\\n&= 236.0525931\\,\\text{u}\n\\end{aligned}\n$$. Then $\\Delta m = 0.1860220\\,\\text{u}$ and $Q \\approx 173\\,\\text{MeV}$. The negative result was a sign of an error: the fission of uranium releases energy, and the mass difference is only about $0.08\\,\\%$ of the mass of the starting materials."
         },
         {
           "text": "Atomic masses must not be used, because they include the electrons too.",
@@ -302,7 +302,7 @@
       "tolerance": 0.02,
       "hints": [
         "Power tells how many joules of energy are released per second. How many joules are released in one reaction?",
-        "Convert the reaction energy to joules by substituting $1\\,\\text{MeV} = 10^{6} \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "Convert the reaction energy to joules by substituting $$\n\\begin{aligned}\n1\\,\\text{MeV} &= 10^{6} \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}\n\\end{aligned}\n$$.",
         "One reaction releases $2.82 \\cdot 10^{-12}\\,\\text{J}$. Divide the power $500 \\cdot 10^{6}\\,\\text{W}$ by this."
       ],
       "mistakes": [

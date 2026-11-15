@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f5b8668b0e07b561
-SCOPE: delta added-exercise from c4c16865602712dd base 81db4a6fd727
+CONTENT-HASH: ad080d2165d3e71d
 
 ## Blocking
 - none
@@ -9,9 +8,8 @@ SCOPE: delta added-exercise from c4c16865602712dd base 81db4a6fd727
 - none
 
 ## Checked
-- fy1-7-L1-09 only (delta, added exercise); hash the same at start and end.
-- Recomputed independently: m = ρV = 8,96 g/cm³ · 50 cm³ = 448 g = 0,448 kg (key 0.448).
-- MAFY copper density 8,96·10³ kg/m³ is right; the hint names the right table.
-- The formula ρ = m/V is solved for m before substitution, as the lesson does. The conversion 1 cm³ = 10⁻⁶ m³ is right.
-- Rounding: 0,45 kg, two figures as in V = 50 cm³, is justified; it is 0,4 % from the key, inside the tolerance 0,04.
-- Reasonableness: about 9 times the mass of the same volume of water, which is a real check.
+- Delta only (wording in three Järkevyys lines of solutions.md). The hash was the same at the start and the end.
+- L1-02: "noin 2,7 kertaa niin tiheää kuin vesi" is right. Recomputed: 2,70 g/cm³ · 35,0 cm³ = 94,5 g, and 2,7 · 35 g ≈ 95 g.
+- L2-01: "Kulta on noin 19 kertaa niin tiheää kuin vesi" is right (19 300/1000 = 19,3). Recomputed: 19 300 kg/m³ · 1,0·10⁻⁴ m³ = 1,93 kg ≈ 1,9 kg.
+- L1-09: "50 cm³:n veden massa on 50 g" replaces "painaa", which fixes a mass/weight slip. Recomputed: 8,96·10³ kg/m³ · 5,0·10⁻⁵ m³ = 0,448 kg.
+- Each check still compares with water of the same volume, so it is a real check.

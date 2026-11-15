@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 831c7e820df028d2
-Round 1
+CONTENT-HASH: 25b7f371479b6cdc
+SCOPE: delta reflow from 3ec86898452bb546 base d4ee68c800
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Own scratch script, 390 px, task card opened with Answer and solution: opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-b3-r5w1/s-fi-easy-fy8-11.png (the whole new card fy8-11-L2-08 cut into columns for legibility: two-step choice (energy released? then which reason?); first step answered wrong, feedback open, second step's options visible); read in full, including the stacked fractions and the model-answer boxes.
-- Older tasks with re-set text (fy8-11-L3-02): opened the top 760 px of each in /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-b3-r5w1/m-fi-easy.png (text and input only; solutions not opened).
-- By script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's screenshot list was empty and not used; solutions.md and answers.py read as source only.
-- Not exercised: the second step's feedback after choosing a reason.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+- No fy8-11 capture opened; judged from source (Q row and m_loppu row alone first), the same block type seen aligned in fy8-1 and fy8-6 captures.
+- Delta judged: long solution formulas lifted into aligned rows, each + or - term whole, first row the left-hand side alone; words, numbers and units unchanged.

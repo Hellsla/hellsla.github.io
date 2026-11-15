@@ -1,14 +1,14 @@
 ---
 description: Write or rework a course's module-end "Sovella itsenäisesti" tasks (worked solutions, rubrics) from a small packet, review them and open a draft pull request
 argument-hint: <COURSE> <what to do, e.g. "write the tasks" or "replace task 2 with a data task on pressure"> [--warn 120000] [--limit 200000]
-model: sonnet
+model: fable
 effort: medium
 ---
 Work on the Sovella itsenäisesti tasks of $ARGUMENTS. Work in `fysiikkalabra/` (`cd fysiikkalabra` first). The tasks are a part of their own (README "Sovella itsenäisesti", NOTES.md §9, teacher 2026-10-28): `content/fi/<COURSE>/sovella/` (tasks.json, solutions.md, review/) and `lessons/<COURSE>/sovella/` (answers.py, figures.py). This run never touches lesson files or their reviews. You coordinate; agents work from packets, and you read only the scripts' output and the agents' reports.
 
 **When.** Once per course, after its lessons, as part of producing the course: as many tasks as the module's goals and extent call for (teacher 2026-10-29: evaluate first; FY1 has 2, FY2 1, FY3 3; never three by default), each 12–20 points, plus at most one `own` rubric for the course's own investigation. Fewer, better tasks; never relabel chapter exercises. **Token economy**: no lesson texts in any packet; shared criteria by key; translate only new or changed text.
 
-**Routing** as in `/lesson`: developer Sonnet medium (Opus medium for a demanding physics model or after two failed checks), science reviewer Opus medium, pedagogy reviewer Sonnet medium, visual-editorial-reviewer Sonnet medium. Prompt: `Read <packet path> and follow it. Course: <COURSE>. Task: <the teacher's words>. Round: <n>.`
+**Routing** as in `/lesson`: every agent Fable medium (teacher 2026-11-15): developer (Fable high after two failed checks), science reviewer, pedagogy reviewer, visual-editorial-reviewer. Prompt: `Read <packet path> and follow it. Course: <COURSE>. Task: <the teacher's words>. Round: <n>.`
 
 1. `python scripts/practice.py packet <COURSE> --role developer`, then the developer.
 2. `python scripts/practice.py figures <COURSE>`, `python scripts/practice.py check <COURSE>`, `python scripts/build.py <COURSE>-sovella`, `python scripts/check_layout.py <COURSE>-sovella --width 360` (and 768, 1280). On FAIL the developer fixes, at most twice.
