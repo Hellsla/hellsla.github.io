@@ -144,7 +144,7 @@
    "title": "Marsmönkijän voimanlähde",
    "source": "statistics",
    "source_note": "NASA, MMRTG-generaattorin tiedot (Curiosity ja Perseverance), pyöristetty; atomimassat AME2020; puoliintumisajat NNDC (tarkistettu 2026).",
-   "text": "Marsmönkijät Curiosity ja Perseverance saavat sähkönsä radioisotooppigeneraattorista. Generaattorissa on $4{,}8\\,\\text{kg}$ plutoniumdioksidia $\\text{PuO}_2$, jonka plutoniumista suurin osa on plutonium-238:aa. Plutonium-238 hajoaa alfahajoamisella uraani-234:ksi. Hajoamisen energia muuttuu generaattorissa polttoaineen sisäenergiaksi, ja lämpösähköparit muuttavat osan polttoaineesta lämpönä siirtyvästä energiasta sähköksi. Laukaisuhetkellä generaattorin lämpöteho oli noin $2000\\,\\text{W}$ ja sähköteho noin $110\\,\\text{W}$.\n\n| aine | atomimassa $(\\text{u})$ |\n|---|---|\n| ${}^{238}_{94}\\text{Pu}$ | $238{,}049560$ |\n| ${}^{234}_{92}\\text{U}$ | $234{,}040952$ |\n| ${}^{4}_{2}\\text{He}$ | $4{,}002603$ |\n\nPlutonium-238:n puoliintumisaika on $87{,}7\\,\\text{a}$. Lisäksi $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$ ja $1\\,\\text{a} = 365{,}25\\,\\text{d}$.\n\nGeneraattorin polttoaineeksi voisi ajatella myös muita radioaktiivisia aineita:\n\n| aine | hajoaminen | puoliintumisaika |\n|---|---|---|\n| polonium-210 | $\\alpha$ | $138\\,\\text{d}$ |\n| koboltti-60 | $\\beta^-$, voimakas $\\gamma$ | $5{,}27\\,\\text{a}$ |\n| plutonium-238 | $\\alpha$ | $87{,}7\\,\\text{a}$ |\n| uraani-238 | $\\alpha$ | $4{,}47 \\cdot 10^{9}\\,\\text{a}$ |",
+   "text": "Marsmönkijät Curiosity ja Perseverance saavat sähkönsä radioisotooppigeneraattorista. Generaattorissa on $4{,}8\\,\\text{kg}$ plutoniumdioksidia $\\text{PuO}_2$, jonka plutoniumista suurin osa on plutonium-238:aa. Plutonium-238 hajoaa alfahajoamisella uraani-234:ksi. Hajoamisen energia muuttuu generaattorissa polttoaineen sisäenergiaksi, ja lämpösähköparit muuttavat osan polttoaineesta lämpönä siirtyvästä energiasta sähköksi. Laukaisuhetkellä generaattorin lämpöteho oli noin $2000\\,\\text{W}$ ja sähköteho noin $110\\,\\text{W}$.\n\n| aine | atomimassa $(\\text{u})$ |\n|---|---|\n| ${}^{238}_{94}\\text{Pu}$ | $238{,}049560$ |\n| ${}^{234}_{92}\\text{U}$ | $234{,}040952$ |\n| ${}^{4}_{2}\\text{He}$ | $4{,}002603$ |\n\nPlutonium-238:n puoliintumisaika on $87{,}7\\,\\text{a}$. Lisäksi $1\\,\\text{u} = 931{,}5\\,\\tfrac{\\text{MeV}}{c^2}$ ja $1\\,\\text{u} = 1{,}66054 \\cdot 10^{-27}\\,\\text{kg}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$ ja $1\\,\\text{a} = 365{,}25\\,\\text{d}$.\n\nGeneraattorin polttoaineeksi voisi ajatella myös muita radioaktiivisia aineita:\n\n| aine | hajoaminen | puoliintumisaika |\n|---|---|---|\n| polonium-210 | $\\alpha$ | $138\\,\\text{d}$ |\n| koboltti-60 | $\\beta^-$, voimakas $\\gamma$ | $5{,}27\\,\\text{a}$ |\n| plutonium-238 | $\\alpha$ | $87{,}7\\,\\text{a}$ |\n| uraani-238 | $\\alpha$ | $4{,}47 \\cdot 10^{9}\\,\\text{a}$ |",
    "parts": [
     {
      "id": "a",
@@ -456,7 +456,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "Annosnopeus tällä etäisyydellä on noin $3{,}0\\,\\mu\\text{Sv/h} \\cdot \\left(\\tfrac{10\\,\\text{cm}}{36\\,\\text{cm}}\\right)^2 \\approx 0{,}2\\,\\mu\\text{Sv/h}$."
+       "detail": "Annosnopeus tällä etäisyydellä on noin $3{,}0\\,\\mu\\text{Sv/h} \\cdot \\left(\\tfrac{10\\,\\text{cm}}{36\\,\\text{cm}}\\right)^2$ eli noin $0{,}2\\,\\mu\\text{Sv/h}$."
       },
       {
        "key": "conclusion",

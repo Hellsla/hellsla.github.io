@@ -69,22 +69,6 @@ FY7-sovella	6{,}0\,\text{MW} - 0{,}85\,\text{MW} \approx 5{,}2\,\text{MW}
 FY7-sovella	= 1{,}8281 \cdot 10^{-26}\,\text{kg} \cdot 7{,}251 \cdot 10^{5}\,\text
 FY7-sovella	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 30{,}0 \
 FY7-sovella	m_{10} : m_{11} = 1{,}6627 : 1{,}8281 \approx 0{,}91
-FY8-koe	17{,}59\,\text{MeV} : 5{,}03\,\text{u} = 3{,}5\,\text{MeV/u}
-FY8-koe	1\,\text{u} = 931{,}5\,\text{MeV}/c^2 = 1{,}6605 \cdot 10^{-27}\,\text
-FY8-koe	1{,}889\,\text{eV} = 1{,}889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
-FY8-koe	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}61\,\text{V}}{1{,}
-FY8-koe	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}87\,\text{V}}{1{,}
-FY8-koe	= 280\,\text{MBq} \cdot 2^{2{,}46} \approx 280\,\text{MBq} \cdot 5{,}5
-FY8-koe	= 28{,}30\,\text{MeV} - 2{,}22\,\text{MeV} - 8{,}48\,\text{MeV}
-FY8-koe	E_\text{s} = (Zm_\text{H} + Nm_\text{n} - m_\text{atomi})\,c^2
-FY8-sovella	1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2} = 1{,}66054 \cdot 10^{-
-FY8-sovella	939{,}565\,\tfrac{\text{MeV}}{c^2} - 938{,}272\,\tfrac{\text{MeV}}{c^2
-FY8-sovella	= 10\,\tfrac{1}{\text{s}} \cdot 3{,}156 \cdot 10^{7}\,\text{s} \cdot 8
-FY8-sovella	= 238{,}049560 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg}
-FY8-sovella	= 238{,}049560\,\text{u} - 234{,}040952\,\text{u} - 4{,}002603\,\text{
-FY8-sovella	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdo
-FY8-sovella	\dfrac{1}{\sqrt{R}} = \dfrac{r + d}{\sqrt{K}} = \dfrac{1}{\sqrt{K}} \c
-FY8-sovella	k = \dfrac{12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}} - 0}{20{,}0\,\text{
 en/FY2-sovella	0.11 \cdot 10\,\text{MW} \cdot 8760\,\text{h} \approx 9.6\,\text{GWh}
 en/FY2-sovella	0.50 \cdot 20\,\text{MW} \cdot 8760\,\text{h} \approx 88\,\text{GWh}
 en/FY2-sovella	12\,\text{g/kWh} \cdot 380 \cdot 10^{6}\,\text{kWh} \approx 4.6 \cdot 
@@ -130,14 +114,6 @@ en/FY7-sovella	2700\,\text{kg/m}^3 \cdot 5.0 \cdot 10^{4}\,\text{m} \cdot 150 \c
 en/FY7-sovella	= 1.8281 \cdot 10^{-26}\,\text{kg} \cdot 7.251 \cdot 10^{5}\,\text{m/s
 en/FY7-sovella	= \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 30.0 \cdot
 en/FY7-sovella	m_{10} : m_{11} = 1.6627 : 1.8281 \approx 0.91
-en/FY8-sovella	1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2} = 1.66054 \cdot 10^{-27}\
-en/FY8-sovella	939.565\,\tfrac{\text{MeV}}{c^2} - 938.272\,\tfrac{\text{MeV}}{c^2} - 
-en/FY8-sovella	= 10\,\tfrac{1}{\text{s}} \cdot 3.156 \cdot 10^{7}\,\text{s} \cdot 8.9
-en/FY8-sovella	= 238.049560 \cdot 1.66054 \cdot 10^{-27}\,\text{kg}
-en/FY8-sovella	= 238.049560\,\text{u} - 234.040952\,\text{u} - 4.002603\,\text{u}
-en/FY8-sovella	= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10
-en/FY8-sovella	\dfrac{1}{\sqrt{R}} = \dfrac{r + d}{\sqrt{K}} = \dfrac{1}{\sqrt{K}} \c
-en/FY8-sovella	k = \dfrac{12.0 \cdot 10^{-2}\,\sqrt{\text{min}} - 0}{20.0\,\text{cm} 
 en/fy1-1	1.27\cdot10^{7}\,\text{m} = 1.27\cdot10^{4}\cdot10^{3}\,\text{m}
 en/fy1-1	1.334\cdot10^{8}\,\text{s} : 3.156\cdot10^{7}\,\text{s} = 4.23
 en/fy1-1	1.39\cdot10^{9}\,\text{m} : 3.47\cdot10^{6}\,\text{m}\approx400
@@ -1539,14 +1515,6 @@ fi-easy/FY7-sovella	6{,}0\,\text{MW} - 0{,}85\,\text{MW} \approx 5{,}2\,\text{MW
 fi-easy/FY7-sovella	= 1{,}8281 \cdot 10^{-26}\,\text{kg} \cdot 7{,}251 \cdot 10^{5}\,\text
 fi-easy/FY7-sovella	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 30{,}0 \
 fi-easy/FY7-sovella	m_{10} : m_{11} = 1{,}6627 : 1{,}8281 \approx 0{,}91
-fi-easy/FY8-sovella	1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2} = 1{,}66054 \cdot 10^{-
-fi-easy/FY8-sovella	939{,}565\,\tfrac{\text{MeV}}{c^2} - 938{,}272\,\tfrac{\text{MeV}}{c^2
-fi-easy/FY8-sovella	= 10\,\tfrac{1}{\text{s}} \cdot 3{,}156 \cdot 10^{7}\,\text{s} \cdot 8
-fi-easy/FY8-sovella	= 238{,}049560 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg}
-fi-easy/FY8-sovella	= 238{,}049560\,\text{u} - 234{,}040952\,\text{u} - 4{,}002603\,\text{
-fi-easy/FY8-sovella	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdo
-fi-easy/FY8-sovella	\dfrac{1}{\sqrt{R}} = \dfrac{r + d}{\sqrt{K}} = \dfrac{1}{\sqrt{K}} \c
-fi-easy/FY8-sovella	k = \dfrac{12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}} - 0}{20{,}0\,\text{
 fi-easy/fy1-1	100\,\text{cm} : 200\,\text{cm}\cdot30{,}1\,\text{AU} = 15{,}05\,\text
 fi-easy/fy1-1	1{,}19\cdot10^{9} : 6{,}0\cdot10^{3} \approx 2\cdot10^{5}
 fi-easy/fy1-1	1{,}27\cdot10^{7}\,\text{m} = 1{,}27\cdot10^{4}\,\text{km}

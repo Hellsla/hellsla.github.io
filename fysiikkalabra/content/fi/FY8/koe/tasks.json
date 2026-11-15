@@ -1,5 +1,5 @@
 {
- "intro": "Koe kattaa koko moduulin: valosähköinen ilmiö ja fotoni, spektrit ja atomin energiatasot, vetyatomi, kvanttimekaaninen atomimalli, LED ja laser, atomiydin ja radioaktiivinen hajoaminen, hajoamislaki, sidosenergia, fissio ja fuusio, ionisoiva säteily ja säteilyannokset, säteily lääketieteessä sekä standardimalli. Käytä tarvittaessa arvoja: Planckin vakio $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, valon nopeus $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$ (joten $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$) ja atomimassayksikkö $1\\,\\text{u} = 931{,}5\\,\\text{MeV}/c^2 = 1{,}6605 \\cdot 10^{-27}\\,\\text{kg}$. Vetyatomin energiatasot ovat $E_n = -13{,}6\\,\\text{eV} / n^2$. Laskin ja taulukkolaskenta ovat sallittuja. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
+ "intro": "Koe kattaa koko moduulin: valosähköinen ilmiö ja fotoni, spektrit ja atomin energiatasot, vetyatomi, kvanttimekaaninen atomimalli, LED ja laser, atomiydin ja radioaktiivinen hajoaminen, hajoamislaki, sidosenergia, fissio ja fuusio, ionisoiva säteily ja säteilyannokset, säteily lääketieteessä sekä standardimalli. Käytä tarvittaessa arvoja: Planckin vakio $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, valon nopeus $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, alkeisvaraus $e = 1{,}602 \\cdot 10^{-19}\\,\\text{C}$ (joten $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$) ja atomimassayksikkö $1\\,\\text{u} = 931{,}5\\,\\text{MeV}/c^2$ eli $1\\,\\text{u} = 1{,}6605 \\cdot 10^{-27}\\,\\text{kg}$. Vetyatomin energiatasot ovat $E_n = -13{,}6\\,\\text{eV} / n^2$. Laskin ja taulukkolaskenta ovat sallittuja. Pisteytyksessä sama virhe vähentää pisteitä vain kerran: jos jatkat väärällä välituloksella oikein, saat myöhemmistä vaiheista pisteet.",
  "minutes": 120,
  "max_points": 70,
  "sections": [
@@ -540,7 +540,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$Q = 17{,}59\\,\\text{MeV} = 2{,}818 \\cdot 10^{-12}\\,\\text{J}$ ja massa $8{,}35 \\cdot 10^{-27}\\,\\text{kg}$."
+       "detail": "$Q = 17{,}59\\,\\text{MeV}$ eli $2{,}818 \\cdot 10^{-12}\\,\\text{J}$ ja massa $8{,}35 \\cdot 10^{-27}\\,\\text{kg}$."
       },
       {
        "key": "units_precision",
