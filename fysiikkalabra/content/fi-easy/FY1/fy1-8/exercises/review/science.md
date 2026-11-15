@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 077bbc73147433b4
-SCOPE: delta added-exercise from de998fe1e15345d2 base 81db4a6fd727
+CONTENT-HASH: 35ea97317da552d9
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md fy1-8-L1-10 — the rounding up to 1,4 km is correctly argued (a minimum distance); one could add that 0,2 s has only one significant figure, which is why the result is a design estimate rather than a 3-s.f. answer — optional sentence.
+- none
 
 ## Checked
-- fy1-8-L1-10: relative uncertainty Δt/t ≤ ε_max gives t ≥ Δt/ε_max = 4,0 s, then s = v t for sound at constant speed; solved in symbols first.
-- Terms follow the guardrails: "ajanoton epävarmuus" and "suhteellinen epävarmuus", hand timing about 0,2 s as in docs/physics-guardrails.md.
-- MAFY speed of sound in air at 20 °C, 343,4 m/s, is right.
-- Recomputed independently: 343,4 · 4,0 = 1373,6 m = 1,3736 km; answers.py and exercises.json agree; unit km as asked.
-- 1,4 km and 1,37 km both within the 4 % tolerance; rounding up keeps the 5 % limit met.
-- Back-check 0,2 s / 4,0 s = 5 % is a real check. Same numbers, answer, unit and tolerance as the Finnish original.
+- The diff is exercises.json:373 and solutions.md:169 (fy1-8-L3-04). "mitkä väitteet aineisto tukee" became "mitä väitteitä aineisto tukee", a grammatical case change only.
+- No number, symbol, unit, answer or tolerance changed. The task data are unchanged: 3,12 ± 0,04 s, 3,08 ± 0,04 s and hand timing 0,15 s. The difference is 0,04 s, so the ratio is 0,15/0,04 ≈ 3,8.
+- The question and the solution's "Kysytty" still ask the same thing. The principle (overlapping intervals cannot show a difference; the experiment does not prove the hypothesis) follows the guardrails.
+- The hash is the same at the start and at the end.

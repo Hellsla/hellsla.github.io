@@ -166,7 +166,7 @@
 
 ## fy1-8-L3-04
 **Annettu:** $\bar{t}_{50} = 3{,}12\,\text{s} \pm 0{,}04\,\text{s}$, $\bar{t}_{200} = 3{,}08\,\text{s} \pm 0{,}04\,\text{s}$; käsiajanoton epävarmuus $\Delta t_\text{käsi} = 0{,}15\,\text{s}$; pohdinnan väitteet ”koe onnistui hyvin”, ”hypoteesi oli oikein” ja ”virheitä oli vähän”
-**Kysytty:** kuinka moninkertainen $\Delta t_\text{käsi}$ on keskiarvojen erotukseen verrattuna, ja mitkä väitteet aineisto tukee
+**Kysytty:** kuinka moninkertainen $\Delta t_\text{käsi}$ on keskiarvojen erotukseen verrattuna, ja mitä väitteitä aineisto tukee
 **Periaate:** Pohdinnassa arvioidaan, mitä tulokset osoittavat ja kuinka luotettavia ne ovat. Keskiarvojen eroa verrataan epävarmuuksiin. Tässä epävarmuusvälit menevät päällekkäin. Siksi tämän aineiston perusteella ei voi luotettavasti päätellä, että pallojen vierimisajat ovat erilaiset. Tuloksia tulkitessa täytyy huomioida myös käsiajanoton epävarmuus. Koe ei todista hypoteesia varmaksi. Lausetta ”virheitä oli vähän” ei myöskään saa jättää ilman lukuja.
 **Kaava:** erotus $d = \bar{t}_{50} - \bar{t}_{200}$ ja suhde $k = \dfrac{\Delta t_\text{käsi}}{d}$
 **Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita.
