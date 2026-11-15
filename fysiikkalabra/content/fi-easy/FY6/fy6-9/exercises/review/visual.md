@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c464157cc013fdd3
+CONTENT-HASH: 3b56acf60ce0f476
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] L2-06 Sijoitus — the row breaks before `· 1,5 h` although the first row has room at 1280 px, and the second row carries a second `=` step (`= 0,5 V · 3,0 Ah`) after the continued product. Optional: put `= 0,5 V · 3,0 Ah` on its own row. It reads correctly as it is.
 
 ## Checked
-- Delta, round 1 (solutions.md only).
-- open-exercises-1280-2 (9-1, 1,080·10⁴ C) and -3 (9-3, 4,7·10² Wh).
-- open-exercises-L2-1280-2 (9-11, 0,2 Ω), -3 (9-12) and -7 (9-15, 1,5 Wh).
-- Rewritten Vastaus lines read clearly; formulas and units upright; rows aligned; nothing clipped.
+- Delta (calculation re-broken into an inline aligned block, same numbers, signs and units). Opened content/fi-easy/FY6/fy6-9/review/shots/fy6-9-open-exercises-L2-1280-7.png: L2-06 Sijoitus W = (4,2 V − 3,7 V) · 2,0 A / · 1,5 h = 0,5 V · 3,0 Ah / = 1,5 Wh, with Vastaus and Järkevyys below.
+- Aligned at `=`, unclipped, units upright with thin space; the Finnish around it is plain and clear.
+- No 360/390 px capture shows an opened solution, so phone wrapping rests on the passing check_layout 360 px result in the packet.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

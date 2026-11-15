@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c8602335ddec9591
+CONTENT-HASH: 8b49d2e85f94831f
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] L3-01 Answer — "338 V (337.5 V), rounded to three significant figures according to the precision of the voltage 450 V" reads slightly oddly beside the chip that already shows 338 V; consider "three significant figures like the voltage 450 V".
+- none
 
 ## Checked
-- review/shots/fy6-11-open-exercises-1280-2.png: 11-2 (L1-02), substitution rows end in 1.0 \cdot 10^2 \mu N, answer chip and reason agree.
-- review/shots/fy6-11-open-exercises-L3-1280-1.png and -2.png: 11-18 (L3-01) answer 338 V, three significant figures, reasonableness intact.
-- review/shots/fy6-11-open-exercises-L3-1280-2.png and -3.png: 11-19 (L3-02) answer 4.2 \cdot 10^3 km/s, chip matches.
-- review/shots/fy6-11-open-exercises-L3-1280-4.png: 11-20 (L3-03) reasonableness 3.6 mN, block rendered, nothing clipped.
-- Units upright with thin space, \mu N correct, chains aligned, no red KaTeX, no overflow.
+- Delta (calculation chains re-broken into inline aligned blocks, same numbers, signs and units). Opened content/en/FY6/fy6-11/review/shots/fy6-11-open-exercises-1280-5.png (L1-05 Reasonableness "91 µN : 3.0 nC ≈ 3.0·10⁴ N/C", plus its fraction Substitution) and fy6-11-open-exercises-L3-1280-3.png (L3-02 v = √(2 · 8.794·10¹⁴ m/s² · 0.010 m) = 4.19·10⁶ m/s).
+- The root sign spans the whole radicand, `=` rows aligned, nothing clipped, units upright with thin space, decimal point correct.
+- No 360/390 px capture shows an opened solution, so phone wrapping rests on the passing check_layout 360 px result in the packet.
 
 ## Scores
-illustrations n/a (4) · typography 5 · English 5 · accessibility 4
+illustrations 5 · typography 5 · English 5 · accessibility 5
