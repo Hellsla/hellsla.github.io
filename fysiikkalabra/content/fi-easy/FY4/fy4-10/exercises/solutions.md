@@ -265,13 +265,13 @@ b) Kappaleen liikemäärä on $p = mv$ ja liike-energia $E_\text{k} = \tfrac12 m
 
 $$\begin{aligned} p &= m_1 v_1 + m_2 v_2 \\ &= 0{,}50\,\text{kg} \cdot 1{,}00\,\text{m/s} \\ &\quad + 1{,}50\,\text{kg} \cdot (-0{,}50\,\text{m/s}) \\ &= -0{,}25\,\text{kg}\cdot\text{m/s} \end{aligned}$$
 
-$$\begin{aligned} E_\text{k} &= \tfrac12 m_1 v_1^2 + \tfrac12 m_2 v_2^2 \\ &= \tfrac12 \cdot 0{,}50\,\text{kg} \cdot (1{,}00\,\text{m/s})^2 \\ &\quad + \tfrac12 \cdot 1{,}50\,\text{kg} \cdot (-0{,}50\,\text{m/s})^2 \\ &= 0{,}25\,\text{J} + 0{,}1875\,\text{J} \\ &= 0{,}4375\,\text{J} \\ &\approx 0{,}44\,\text{J} \end{aligned}$$
+$$\begin{aligned} E_{\text{k},1} &= \tfrac12 m_1 v_1^2 \\ &= \tfrac12 \cdot 0{,}50\,\text{kg} \cdot (1{,}00\,\text{m/s})^2 \\ &= 0{,}25\,\text{J} \\[6pt] E_{\text{k},2} &= \tfrac12 m_2 v_2^2 \\ &= \tfrac12 \cdot 1{,}50\,\text{kg} \cdot (-0{,}50\,\text{m/s})^2 \\ &= 0{,}1875\,\text{J} \\[6pt] E_\text{k} &= E_{\text{k},1} + E_{\text{k},2} \\ &= 0{,}25\,\text{J} + 0{,}1875\,\text{J} \\ &= 0{,}4375\,\text{J} \\ &\approx 0{,}44\,\text{J} \end{aligned}$$
 
 Törmäyksen jälkeen, kun elastisuus on $100\,\%$:
 
 $$\begin{aligned} p' &= m_1 v_1' + m_2 v_2' \\ &= 0{,}50\,\text{kg} \cdot (-1{,}25\,\text{m/s}) \\ &\quad + 1{,}50\,\text{kg} \cdot 0{,}25\,\text{m/s} \\ &= -0{,}25\,\text{kg}\cdot\text{m/s} \end{aligned}$$
 
-$$\begin{aligned} E_\text{k}' &= \tfrac12 m_1 v_1'^2 + \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 0{,}50\,\text{kg} \cdot (-1{,}25\,\text{m/s})^2 \\ &\quad + \tfrac12 \cdot 1{,}50\,\text{kg} \cdot (0{,}25\,\text{m/s})^2 \\ &= 0{,}3906\,\text{J} + 0{,}0469\,\text{J} \\ &= 0{,}4375\,\text{J} \\ &\approx 0{,}44\,\text{J} \end{aligned}$$
+$$\begin{aligned} E_{\text{k},1}' &= \tfrac12 m_1 v_1'^2 \\ &= \tfrac12 \cdot 0{,}50\,\text{kg} \cdot (-1{,}25\,\text{m/s})^2 \\ &= 0{,}3906\,\text{J} \\[6pt] E_{\text{k},2}' &= \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 1{,}50\,\text{kg} \cdot (0{,}25\,\text{m/s})^2 \\ &= 0{,}0469\,\text{J} \\[6pt] E_\text{k}' &= E_{\text{k},1}' + E_{\text{k},2}' \\ &= 0{,}3906\,\text{J} + 0{,}0469\,\text{J} \\ &= 0{,}4375\,\text{J} \\ &\approx 0{,}44\,\text{J} \end{aligned}$$
 
 Liikemäärä on sama ennen ja jälkeen. Myös liike-energia on sama ennen ja jälkeen. Molemmat siis säilyvät. Simulaatio näyttää liike-energiaksi saman arvon $0{,}44\,\text{J}$ ennen törmäystä ja sen jälkeen. Tulokset ilmoitetaan kahdella desimaalilla, koska simulaatio näyttää arvot kahdella desimaalilla.
 
@@ -279,7 +279,7 @@ c) Kun elastisuus on $50\,\%$, simulaatio näyttää törmäyksen jälkeen nopeu
 
 $$\begin{aligned} p' &= m_1 v_1' + m_2 v_2' \\ &= 0{,}50\,\text{kg} \cdot (-0{,}69\,\text{m/s}) \\ &\quad + 1{,}50\,\text{kg} \cdot 0{,}06\,\text{m/s} \\ &= -0{,}255\,\text{kg}\cdot\text{m/s} \\ &\approx -0{,}26\,\text{kg}\cdot\text{m/s} \end{aligned}$$
 
-$$\begin{aligned} E_\text{k}' &= \tfrac12 m_1 v_1'^2 + \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 0{,}50\,\text{kg} \cdot (-0{,}69\,\text{m/s})^2 \\ &\quad + \tfrac12 \cdot 1{,}50\,\text{kg} \cdot (0{,}06\,\text{m/s})^2 \\ &= 0{,}1190\,\text{J} + 0{,}0027\,\text{J} \\ &= 0{,}1217\,\text{J} \\ &\approx 0{,}12\,\text{J} \end{aligned}$$
+$$\begin{aligned} E_{\text{k},1}' &= \tfrac12 m_1 v_1'^2 \\ &= \tfrac12 \cdot 0{,}50\,\text{kg} \cdot (-0{,}69\,\text{m/s})^2 \\ &= 0{,}1190\,\text{J} \\[6pt] E_{\text{k},2}' &= \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 1{,}50\,\text{kg} \cdot (0{,}06\,\text{m/s})^2 \\ &= 0{,}0027\,\text{J} \\[6pt] E_\text{k}' &= E_{\text{k},1}' + E_{\text{k},2}' \\ &= 0{,}1190\,\text{J} + 0{,}0027\,\text{J} \\ &= 0{,}1217\,\text{J} \\ &\approx 0{,}12\,\text{J} \end{aligned}$$
 
 Kun elastisuus on $0\,\%$, pallot jäävät kiinni toisiinsa. Ne liikkuvat yhteisellä nopeudella $v' = -0{,}13\,\text{m/s}$. Yhteinen massa on $m_1 + m_2 = 2{,}00\,\text{kg}$:
 

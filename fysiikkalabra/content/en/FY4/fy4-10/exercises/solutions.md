@@ -265,13 +265,13 @@ b) The momentum of a body is $p = mv$ and its kinetic energy is $E_\text{k} = \t
 
 $$\begin{aligned} p &= m_1 v_1 + m_2 v_2 \\ &= 0.50\,\text{kg} \cdot 1.00\,\text{m/s} \\ &\quad + 1.50\,\text{kg} \cdot (-0.50\,\text{m/s}) \\ &= -0.25\,\text{kg}\cdot\text{m/s} \end{aligned}$$
 
-$$\begin{aligned} E_\text{k} &= \tfrac12 m_1 v_1^2 + \tfrac12 m_2 v_2^2 \\ &= \tfrac12 \cdot 0.50\,\text{kg} \cdot (1.00\,\text{m/s})^2 \\ &\quad + \tfrac12 \cdot 1.50\,\text{kg} \cdot (-0.50\,\text{m/s})^2 \\ &= 0.25\,\text{J} + 0.1875\,\text{J} \\ &= 0.4375\,\text{J} \\ &\approx 0.44\,\text{J} \end{aligned}$$
+$$\begin{aligned} E_{\text{k},1} &= \tfrac12 m_1 v_1^2 \\ &= \tfrac12 \cdot 0.50\,\text{kg} \cdot (1.00\,\text{m/s})^2 \\ &= 0.25\,\text{J} \\[6pt] E_{\text{k},2} &= \tfrac12 m_2 v_2^2 \\ &= \tfrac12 \cdot 1.50\,\text{kg} \cdot (-0.50\,\text{m/s})^2 \\ &= 0.1875\,\text{J} \\[6pt] E_\text{k} &= E_{\text{k},1} + E_{\text{k},2} \\ &= 0.25\,\text{J} + 0.1875\,\text{J} \\ &= 0.4375\,\text{J} \\ &\approx 0.44\,\text{J} \end{aligned}$$
 
 After the collision, when the elasticity is $100\,\%$:
 
 $$\begin{aligned} p' &= m_1 v_1' + m_2 v_2' \\ &= 0.50\,\text{kg} \cdot (-1.25\,\text{m/s}) \\ &\quad + 1.50\,\text{kg} \cdot 0.25\,\text{m/s} \\ &= -0.25\,\text{kg}\cdot\text{m/s} \end{aligned}$$
 
-$$\begin{aligned} E_\text{k}' &= \tfrac12 m_1 v_1'^2 + \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 0.50\,\text{kg} \cdot (-1.25\,\text{m/s})^2 \\ &\quad + \tfrac12 \cdot 1.50\,\text{kg} \cdot (0.25\,\text{m/s})^2 \\ &= 0.3906\,\text{J} + 0.0469\,\text{J} \\ &= 0.4375\,\text{J} \\ &\approx 0.44\,\text{J} \end{aligned}$$
+$$\begin{aligned} E_{\text{k},1}' &= \tfrac12 m_1 v_1'^2 \\ &= \tfrac12 \cdot 0.50\,\text{kg} \cdot (-1.25\,\text{m/s})^2 \\ &= 0.3906\,\text{J} \\[6pt] E_{\text{k},2}' &= \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 1.50\,\text{kg} \cdot (0.25\,\text{m/s})^2 \\ &= 0.0469\,\text{J} \\[6pt] E_\text{k}' &= E_{\text{k},1}' + E_{\text{k},2}' \\ &= 0.3906\,\text{J} + 0.0469\,\text{J} \\ &= 0.4375\,\text{J} \\ &\approx 0.44\,\text{J} \end{aligned}$$
 
 The momentum and the kinetic energy are the same before and after, so both are conserved. The simulation shows the same kinetic energy, $0.44\,\text{J}$, before the collision and after it. The results are given to two decimals, because the simulation shows its values to two decimals.
 
@@ -279,7 +279,7 @@ c) When the elasticity is $50\,\%$, the simulation shows the velocities $v_1' = 
 
 $$\begin{aligned} p' &= m_1 v_1' + m_2 v_2' \\ &= 0.50\,\text{kg} \cdot (-0.69\,\text{m/s}) \\ &\quad + 1.50\,\text{kg} \cdot 0.06\,\text{m/s} \\ &= -0.255\,\text{kg}\cdot\text{m/s} \\ &\approx -0.26\,\text{kg}\cdot\text{m/s} \end{aligned}$$
 
-$$\begin{aligned} E_\text{k}' &= \tfrac12 m_1 v_1'^2 + \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 0.50\,\text{kg} \cdot (-0.69\,\text{m/s})^2 \\ &\quad + \tfrac12 \cdot 1.50\,\text{kg} \cdot (0.06\,\text{m/s})^2 \\ &= 0.1190\,\text{J} + 0.0027\,\text{J} \\ &= 0.1217\,\text{J} \\ &\approx 0.12\,\text{J} \end{aligned}$$
+$$\begin{aligned} E_{\text{k},1}' &= \tfrac12 m_1 v_1'^2 \\ &= \tfrac12 \cdot 0.50\,\text{kg} \cdot (-0.69\,\text{m/s})^2 \\ &= 0.1190\,\text{J} \\[6pt] E_{\text{k},2}' &= \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 1.50\,\text{kg} \cdot (0.06\,\text{m/s})^2 \\ &= 0.0027\,\text{J} \\[6pt] E_\text{k}' &= E_{\text{k},1}' + E_{\text{k},2}' \\ &= 0.1190\,\text{J} + 0.0027\,\text{J} \\ &= 0.1217\,\text{J} \\ &\approx 0.12\,\text{J} \end{aligned}$$
 
 When the elasticity is $0\,\%$, the balls stick together and move with the common velocity $v' = -0.13\,\text{m/s}$. The combined mass is $m_1 + m_2 = 2.00\,\text{kg}$:
 

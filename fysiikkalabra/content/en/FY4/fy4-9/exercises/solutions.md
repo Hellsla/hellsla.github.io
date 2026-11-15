@@ -241,7 +241,7 @@ c) The task has many correct solutions, and this is one example. Its numbers are
 
 $m = \dfrac{F\,\Delta t}{\Delta v}$
 
-$m = \dfrac{20.0\,\text{N} \cdot 0.50\,\text{s}}{0.125\,\text{m/s}} = 80\,\text{kg}$
+$$\begin{aligned} m &= \dfrac{20.0\,\text{N} \cdot 0.50\,\text{s}}{0.125\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
 
 The result has two significant figures, like the time $0.50\,\text{s}$. The unit is right, because $1\,\text{N}\cdot\text{s} = 1\,\text{kg}\cdot\text{m/s}$.
 
@@ -249,7 +249,7 @@ Another possible method: a known body with the mass $m_1 = 10.0\,\text{kg}$ and 
 
 $m_2 = \dfrac{m_1 v_1}{v_2}$
 
-$m_2 = \dfrac{10.0\,\text{kg} \cdot 0.40\,\text{m/s}}{0.050\,\text{m/s}} = 80\,\text{kg}$
+$$\begin{aligned} m_2 &= \dfrac{10.0\,\text{kg} \cdot 0.40\,\text{m/s}}{0.050\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
 
 d) The sources of error of the example method are these: the force of the spring does not stay constant during the push; the duration of a short push is hard to measure; the velocity read from a video depends on the scale and the frame rate; the body is not rigid if limbs or loose items move; air currents and touching the walls or cables add forces; the pusher's own moving parts have mass. Repeating the measurement and taking the mean reduce the effect of random error. Systematic error is reduced by calibrating the device with known masses. In addition, the body is kept rigid and fixed to the arm, the push is made longer and the time is measured with a sensor instead of a stopwatch.
 

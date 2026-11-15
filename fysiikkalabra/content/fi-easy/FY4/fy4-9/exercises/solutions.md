@@ -241,7 +241,7 @@ c) Tehtävään on monta oikeaa ratkaisua. Tämä on yksi esimerkki. Sen luvut o
 
 $m = \dfrac{F\,\Delta t}{\Delta v}$
 
-$m = \dfrac{20{,}0\,\text{N} \cdot 0{,}50\,\text{s}}{0{,}125\,\text{m/s}} = 80\,\text{kg}$
+$$\begin{aligned} m &= \dfrac{20{,}0\,\text{N} \cdot 0{,}50\,\text{s}}{0{,}125\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
 
 Tuloksessa on kaksi merkitsevää numeroa, kuten ajassa $0{,}50\,\text{s}$. Yksikkö on oikea, koska $1\,\text{N}\cdot\text{s} = 1\,\text{kg}\cdot\text{m/s}$.
 
@@ -249,7 +249,7 @@ Toinen mahdollinen menetelmä on tämä. Tunnetun kappaleen massa on $m_1 = 10{,
 
 $m_2 = \dfrac{m_1 v_1}{v_2}$
 
-$m_2 = \dfrac{10{,}0\,\text{kg} \cdot 0{,}40\,\text{m/s}}{0{,}050\,\text{m/s}} = 80\,\text{kg}$
+$$\begin{aligned} m_2 &= \dfrac{10{,}0\,\text{kg} \cdot 0{,}40\,\text{m/s}}{0{,}050\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
 
 d) Esimerkkimenetelmässä on nämä virhelähteet: jousen voima ei pysy vakiona työnnön aikana; lyhyen työnnön kestoa on vaikea mitata; videolta luettu nopeus riippuu mittakaavasta ja kuvataajuudesta eli siitä, kuinka monta kuvaa kamera ottaa sekunnissa; kappale ei ole jäykkä, jos raajat tai irtotavarat liikkuvat; ilmavirrat sekä seinien tai kaapelien kosketus lisäävät voimia; työntimen omilla liikkuvilla osilla on massaa. Kun mittaus toistetaan ja lasketaan keskiarvo, satunnaisvirheen vaikutus pienenee. Systemaattinen virhe eli virhe, joka on joka kerta samanlainen, pienenee, kun laite kalibroidaan tunnetuilla massoilla. Kalibrointi tarkoittaa, että laitteen lukemaa verrataan tunnettuun arvoon. Lisäksi kappale pidetään jäykkänä ja kiinni varressa. Työnnöstä tehdään pidempi, ja aika mitataan anturilla eikä sekuntikellolla.
 

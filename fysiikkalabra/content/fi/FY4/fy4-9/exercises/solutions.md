@@ -241,7 +241,7 @@ c) Tehtävällä on monta oikeaa ratkaisua, ja tämä on yksi esimerkki. Sen luv
 
 $m = \dfrac{F\,\Delta t}{\Delta v}$
 
-$m = \dfrac{20{,}0\,\text{N} \cdot 0{,}50\,\text{s}}{0{,}125\,\text{m/s}} = 80\,\text{kg}$
+$$\begin{aligned} m &= \dfrac{20{,}0\,\text{N} \cdot 0{,}50\,\text{s}}{0{,}125\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
 
 Tuloksessa on kaksi merkitsevää numeroa, kuten ajassa $0{,}50\,\text{s}$. Yksikkö on oikea, koska $1\,\text{N}\cdot\text{s} = 1\,\text{kg}\cdot\text{m/s}$.
 
@@ -249,7 +249,7 @@ Toinen mahdollinen menetelmä: tunnettu kappale, jonka massa on $m_1 = 10{,}0\,\
 
 $m_2 = \dfrac{m_1 v_1}{v_2}$
 
-$m_2 = \dfrac{10{,}0\,\text{kg} \cdot 0{,}40\,\text{m/s}}{0{,}050\,\text{m/s}} = 80\,\text{kg}$
+$$\begin{aligned} m_2 &= \dfrac{10{,}0\,\text{kg} \cdot 0{,}40\,\text{m/s}}{0{,}050\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
 
 d) Esimerkkimenetelmän virhelähteitä ovat nämä: jousen voima ei pysy vakiona työnnön aikana; lyhyen työnnön kestoa on vaikea mitata; videolta luettu nopeus riippuu mittakaavasta ja kuvataajuudesta; kappale ei ole jäykkä, jos raajat tai irtotavarat liikkuvat; ilmavirrat sekä seinien tai kaapelien kosketus lisäävät voimia; työntimen omilla liikkuvilla osilla on massaa. Toistot ja keskiarvo pienentävät satunnaisvirheen vaikutusta. Systemaattista virhettä pienennetään kalibroimalla laite tunnetuilla massoilla. Lisäksi kappale pidetään jäykkänä ja kiinni varressa, työnnöstä tehdään pidempi ja aika mitataan anturilla eikä sekuntikellolla.
 
