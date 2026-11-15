@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: a2e5e2d92c27c53b
-Round 2: delta against the version round 1 reviewed (fix round 1).
+CONTENT-HASH: 300bb0101bde0453
+Round 3: delta against the version round 2 reviewed (one sentence in s7 d).
 
 ## Blocking
 - (none)
 
 ## Polish
-- C, `sovella/tasks.json` s7 c, criterion 4: "lämmitykseen ja häviöihin kuluva energia on poissa ajamisesta ja toimintamatka lyhenee" is correct, but the part asks why the consumption per kilometre grows. It could end as the corrected solution does: "jokainen kilometri vaatii akusta enemmän energiaa".
-- C, s7 d: "jäi suhteellisesti eniten ilmoitetusta" is understandable; "jäi suhteellisesti eniten jälkeen ilmoitetusta" is the more usual idiom.
-- C (carried from round 1), s7 a solution: the sentence about three significant figures after whole per cents.
+- C, `sovella/tasks.json` s7 d: the task text calls the source "testin tulossivu"; "Testin raportin mukaan" names the same source with a new word. "Testin tulossivun mukaan" would keep one name. Understandable as it is.
+- C (round 2), s7 c, criterion 4: could end as the solution does, "jokainen kilometri vaatii akusta enemmän energiaa".
+- C (round 1), s7 a solution: the sentence about three significant figures after whole per cents.
 
 ## Checked
-- `solutions.md` s7 c, closing sentence (round-1 Blocking of the science review): "Jokainen kilometri vaatii siksi akusta enemmän energiaa kuin leudolla säällä, ja kylmästä akusta energiaa saadaan vähemmän, joten toimintamatka lyhenee." It now agrees with the part ("kulutus kilometriä kohti kasvaa"), with b's assumption note and with the three bullets above it. No sentence left in s7 says that less energy per kilometre remains for driving (read c, d, e and the common mistakes).
-- `solutions.md` s7 b, Järkevyys: the new sentence says plainly that the measured consumptions belong to other cars and give only the order of magnitude; the unclear "sopii oletuksen rajoitukseen" is gone.
-- `tasks.json` s7 c: criterion 1 no longer rewards the unasked combustion-car comparison (the solution keeps it as extra); criterion 2 accepts either electrical argument, so one point matches one idea. Criteria still sum to 4.
-- s7 d: the new wording cannot be read as "lost most of its range"; it agrees with the solution's "suurin poikkeama" (Lucid Air 45,8 %).
-- s7 e: the part now states "Nimeä ainakin kolme tekijää", which criterion 1 demands; the three instructions follow in a clear order and do not overlap with d.
+- `git diff c502cb9e26 -- content/*/units/fy9-energia`: three files, one line each (`sovella/tasks.json` line 818); nothing else changed outside `review/`.
+- s7 d, new sentence: "Testin raportin mukaan pisimmälle ajaneen auton toimintamatka jäi suhteellisesti eniten jälkeen ilmoitetusta." The claim is now attributed to the test's own report, so it no longer rests on the three cars of the task's table; it agrees with part a's result (Lucid Air 45,8 %, the largest of the three) and with the solution of d.
+- "jäi ... jälkeen ilmoitetusta" is the usual idiom (my round-2 Polish, now done).
+- Both criteria of d (use of the temperature data; the cars did not drive in the same conditions) are untouched and still assess exactly what the part asks. The attribution discloses nothing of the answer: the student must still find the reason in the source.
+- Situation first, instruction last; one sentence each.
+- Hash identical at start and end.

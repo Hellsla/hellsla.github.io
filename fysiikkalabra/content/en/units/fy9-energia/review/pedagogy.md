@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 6b06c33381daf737
-Round 2: delta against the version round 1 reviewed (fix round 1).
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 99322ddd2a419363
+Round 3: delta against the version round 2 reviewed (one sentence in s7 d).
 
 ## Blocking
 - (none)
 
 ## Polish
-- C: sovella/tasks.json s7 c, criterion "Electricity": "gives at least one of these: … or …" would read more easily as two lettered alternatives; "and lowers the terminal voltage" belongs to the second one only.
-- C: s7 a and e: "Tell also how" (round 1): "say" reads more naturally.
+- C: sovella/tasks.json s7 d: the task text calls the source "the results page of the test"; "the test report" is a second name for it. Understandable as it is.
+- C (round 2): s7 c, criterion "Electricity": two lettered alternatives would read more easily.
+- C (round 1): s7 a and e: "Tell also how": "say" reads more naturally.
 
 ## Checked
-- solutions.md s7 c closing sentence (the round-1 Blocking of the other reviewers): "Every kilometre therefore takes more energy from the battery than in mild weather, and less energy is available from a cold battery, so the range shrinks" now agrees with the three bullets above it (heating and battery losses raise the consumption, internal resistance lowers the available energy, larger resistive forces raise the work) and with part b's assessment of its assumption. Criterion 4 of c ("energy that goes to heating and to losses is not available for driving") is still consistent with it.
-- solutions.md s7 b Reasonableness: "those of other cars than the model car, so they show only the order of magnitude" is clear and no longer overclaims.
-- tasks.json s7 c: criterion 1 without the combustion-engine clause still matches the model answer, which keeps that clause as extra. Criterion 2 accepts either idea for 1 p (my round-1 Polish A). Criteria still sum to 4.
-- s7 d part text: "fell short of its stated range by the largest percentage" is unambiguous; Lucid Air $(960 - 520) : 960 = 45.8\,\%$ is the largest of the table. Situation first, question last.
-- s7 e part text now asks for "at least three factors", which is what criterion 1 already required; nothing is disclosed.
+- `git diff c502cb9e26 -- content/*/units/fy9-energia`: three files, one line each (sovella/tasks.json line 818); nothing else changed outside `review/`.
+- s7 d, new sentence: "According to the test report, the range of the car that drove the furthest fell short of its stated range by the largest percentage." The claim is attributed to the test's own report, so it no longer depends on the three cars of the task's table; it agrees with part a (Lucid Air 45.8 %, the largest of the three) and with the solution of d.
+- The sentence is grammatical and unambiguous; "in the test" was dropped without loss, because the opening phrase carries it.
+- Both criteria of d are untouched and still assess what the part asks; the attribution gives nothing of the answer away.
+- Situation first, instruction last.
 - Hash identical at start and end.
