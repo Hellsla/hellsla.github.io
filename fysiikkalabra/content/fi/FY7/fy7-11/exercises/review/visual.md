@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 5e6573a29a4c4bb8
+CONTENT-HASH: fc791a269fb99e11
 
 ## Blocking
 - none
 
+## Outside this change (queue item 5d, not blocking here)
+- [Major] docs/clipped-formulas.tsv lists 4 formulas of this language's fy7-11 solutions that are clipped at 360 px with solutions open: (180° + 2·59,0° − 4·40,07°; the 2,55033·10⁻⁵ s difference; Δx = 2,00 m·(tan … − tan …); sin α₂ = sin 60,0° : 1,5302). Old, untouched by this diff; fix under 5d.
+
 ## Polish
-- [Minor] 11-21 task text — "flinttilasia (esimerkkiaineisto)" still shows the marker in the task text (the diff took it out of captions only) — check with the teacher whether the text marker goes too.
-- [Minor] 11-17 Vastaus — "Sadasosa-asteiksi pyöristetyillä välituloksilla (tarkoilla välituloksilla 0,966° ≈ 0,97°)" has no verb; e.g. "Tulos on 0,98°, kun välitulokset on pyöristetty sadasosa-asteiksi (tarkoilla välituloksilla 0,966° ≈ 0,97°)."
+- [Minor] 11-20 task text — "tuntematon sokeriliuos (esimerkkiaineisto)" — the provenance marker was taken out of 11-21 but stays here; ask the teacher whether it goes too (rule 2026-11-13: no provenance badge on example data).
 
 ## Checked
-- fy7-11-open-exercises-L3-1280-1, -2 (task 11-17: new 0,57119, 0,58509, 0,98°, Vastaus, Järkevyys 29,83°/30,81°), -7 (11-19: n = 1,40), -10 (11-21 Järkevyys 0,65°), L2-1280-5 (11-13): numbers in place, rows aligned, no clipping or overflow.
+- Delta (wording only, task 11-21 text; no figure, number or formula changed). Captures are current for this hash.
+- contact-8 (level 3 overview: card order, no overflow, solutions inside their cards).
+- fy7-11-open-exercises-L3-1280-7 and -8: the 11-21 card with the changed first sentence, the rest of the task text, answer field, and the opened solution below it. The sentence reads naturally without the bracket, the inline formulas sit on their lines, the paragraph breaks and the card layout are unchanged; the end of the 11-20 card above is intact.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 5
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4
