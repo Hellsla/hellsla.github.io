@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5742dd1f4adca003
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 71f0ef9cfadd67d6.
+CONTENT-HASH: 01488dd1f9e29516
+Review of the recognition chart (queue 9c) and the term change against the version passed at 5742dd1f4adca003; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- (C) "two sources, reinforce/cancel": $\Delta s = n\lambda$ and $(n+\tfrac12)\lambda$ hold for sources in phase; the unit's tasks use in-phase sources, so this is a fair simplification, but "two sources in phase" would make the sign exact.
 
 ## Checked
-Every hunk of the en merge diff (word diff). inquiry dB task: $\beta = 10$ dB introduced as the decibel factor, no clash with the unit's ```kaavat``` name *sound intensity level* $L = 10\lg(I/I_0)$ dB ($L$ for level, $\beta$ not used elsewhere in the unit); $r_2 = 20\,\text{m}\cdot\sqrt{10^{1.9}} = 178.3$ m recomputed. Sovella: $d = L - v/(2f') = 70.8$ mm, $l_0 = -b/k = -1.4$ cm, $l = 0.977$ m, $d = L_0 + x = 39.6$ m, all symbolic before substitution. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.
+- Every row: spring $T = 2\pi\sqrt{m/k}$; pendulum, small angle $T = 2\pi\sqrt{l/g}$ (condition stated); $v = f\lambda$; path difference $n\lambda$ / $(n+1/2)\lambda$; string or (both-ends) open pipe $f_n = nv/(2L)$; beats $f_\text{H} = |f_1 - f_2|$; Doppler for a moving source or observer; $L = 10\lg(I/I_0)\,\text{dB}$. All agree with the Formula section (same symbols, MAFY $f_\text{H}$, $\lg$).
+- The en aria-label states the same nine rows and results as the chart; the built unit.md carries the figures.json value unchanged.
+- Term change: the diff's other lines are "concept map" -> "recognition chart" in teacher.md and new figures.json keys; no formula, number or task changed.
+- The en chart (docs/figures/fy9-tunnistus/fy9-aallot-en-360.png) and the hash, taken at the start and the end (01488dd1f9e29516).

@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 27d2f4575e83302f
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at c1bdc8faf7226de3.
+CONTENT-HASH: 0d1a744ac444e23f
+Review of the recognition chart (queue 9c) and the term change against the version passed at 27d2f4575e83302f; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
@@ -9,4 +9,7 @@ Delta review (merge of #523 solution practice into #522, 2026-11-13) of the vers
 (none)
 
 ## Checked
-Every hunk of the en merge diff (word diff). $\rho = \sigma A/(Ad) = \sigma/d$; $(1.38 \pm 0.02)$ kg from 1.3 % (part d: $0.012:0.919$); scale factor $m = m_\text{reading}/k$, 765/1.02 = 750 g; $x = vt + x_0$; unit.md sig-fig rule (exact quantities do not limit) correct. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.
+- Every row: $\bar{x} \pm \Delta x$ for repeated measurements; $\varepsilon = \Delta x/\bar{x}$; outlier = gross error, checked, not dropped without reason; one-directional deviation = systematic; $y = kx + b$; $k = \Delta y/\Delta x$ from far-apart points; $\Delta k$ from the extreme lines; linearise a curve ($s$ vs. $t^2$). Correct and consistent with the unit.
+- The aria-label matches the chart.
+- Delta: the Sovella figure's only change is the label "check" -> "check it" (shared key); no number or physics changed. teacher.md wording only.
+- The en chart (docs/figures/fy9-tunnistus/fy9-mittaaminen-en-360.png) and the hash, taken at the start and the end (0d1a744ac444e23f).

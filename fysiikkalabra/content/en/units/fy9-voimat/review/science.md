@@ -1,12 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: 28a3c34741ddd22d
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 4a1e0daa19b91386.
+VERDICT: FAIL
+CONTENT-HASH: 65a72267ecdbb241
+Review of the recognition chart (queue 9c) and the term change against the version passed at 28a3c34741ddd22d; full on the chart, delta on the rest.
 
 ## Blocking
-(none)
+- **Term, unit.md line 239 (Formula section): "In free-body diagrams $\overline{F}_\mu$ stands for either kind of friction, static or kinetic."** The rename left this one "kinetic"; the same paragraph and the chart now say sliding friction. Fix: "static or sliding".
 
 ## Polish
-(none)
+- Row 9 "air resistance, speed levels off → $F_\text{v} = G$" holds for a vertical fall (as the Formula section's terminal velocity); "falling" in the sign would rule out a cyclist or car.
 
 ## Checked
-Every hunk of the en merge diff (word diff). $a = (F - \mu(m_A+m_B)g)/(m_A+m_B)$; for the $a$–$F$ line slope $1/m'$ and horizontal intercept $\mu m'g$ with $m' = m + m_\text{x}$; $\mu_0 = \tan\alpha_\text{ka}$ with $\Delta\mu_0 = (\tan\alpha_\text{max} - \tan\alpha_\text{min})/2$. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.
+- Every row: $a = 0 \Rightarrow \Sigma\overline{F} = \overline{0}$; $a \neq 0 \Rightarrow \Sigma\overline{F} = m\overline{a}$; $\Sigma M = 0$ for a rod; one equation $\Sigma F_i = m_ia_i$ per body on a rope; frictionless $F_\mu = 0$; sliding friction $F_\mu = \mu N$; static friction $F \leq F_{\mu_0}$; just about to slide: fully developed static friction = limiting friction $F_{\mu_0} = \mu_0N$. Agree with the Formula section.
+- The aria-label matches the chart.
+- Term change (inquiry.json 12, solutions.md 17, tasks.json 5, unit.md 3, figures.json, answers.py comment): each is "kinetic" -> "sliding" and every one refers to a body that slides; no formula, number or answer changed; no other "kinetic friction" is left in any en FY9 unit.
+- The en chart (docs/figures/fy9-tunnistus/fy9-voimat-en-360.png) and the hash, taken at the start and the end (65a72267ecdbb241).

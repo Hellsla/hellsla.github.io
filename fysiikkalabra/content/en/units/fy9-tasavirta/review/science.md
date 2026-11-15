@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 5990f23ea9ddfef8
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 5fb97cd3bc0ffb0e.
+CONTENT-HASH: 8b9ec94f3a8cf71b
+Review of the recognition chart (queue 9c) and the term change against the version passed at 5990f23ea9ddfef8; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
@@ -9,4 +9,7 @@ Delta review (merge of #523 solution practice into #522, 2026-11-13) of the vers
 (none)
 
 ## Checked
-Every hunk of the en merge diff (word diff). $t = Nnt_1$; $W_\text{ch} = 42.0\cdot10.4 = 436.8$ Wh, $\eta = 0.857$, $K = 0.066$ €; series cells $E_1 = E/3$, $R_{s1} = R_s/3$; $P/(EI) = R/(R+R_s)$; $Pt = Q = cm\Delta T$. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.
+- Every row: $I = \Delta Q/\Delta t$; $U = RI$; $R = \rho\ell/A$; series $R_\text{tot} = \Sigma R$ (same current); parallel $1/R_\text{tot} = \Sigma 1/R$ (same voltage); $\Sigma I_\text{in} = \Sigma I_\text{out}$; $\Sigma\Delta V = 0$; $P = UI$; $U = E - R_\text{s}I$. Agree with the Formula section (MAFY symbols).
+- The aria-label matches the chart. The new keys "t"->"in", "l"->"out" give the same subscripts as the Formula section.
+- Term change: the diff's other lines are "concept map" -> "recognition chart" in teacher.md and new figures.json keys; no formula, number or task changed.
+- The en chart (docs/figures/fy9-tunnistus/fy9-tasavirta-en-360.png) and the hash, taken at the start and the end (8b9ec94f3a8cf71b).

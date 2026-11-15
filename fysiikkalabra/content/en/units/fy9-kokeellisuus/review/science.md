@@ -1,12 +1,15 @@
-VERDICT: PASS
-CONTENT-HASH: fdfc56cdc13d1300
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at cc45b31ff1a97ba3.
+VERDICT: FAIL
+CONTENT-HASH: 95262ce9df1aca45
+Review of the recognition chart (queue 9c) and the term change against the version passed at fdfc56cdc13d1300; full on the chart, delta on the rest.
 
 ## Blocking
-(none)
+- **B, chart row 7 and aria-label: "the line misses the origin → systematic error, $b \neq 0$".** Only true when the model predicts a line through the origin; the Formula section states exactly that condition ("If according to the model the line should pass through the origin but $b$ clearly differs from zero"), and row 5 of the same chart fits $y = kx + b$ with a legitimate $b$ (guardrail: a line through the origin needs a physical reason). Fix: e.g. "model: through the origin, but the line misses it".
 
 ## Polish
 (none)
 
 ## Checked
-Every hunk of the en merge diff (word diff). $\rho = 2677$ kg/m³ → $2.7\cdot10^3$ with $(2680 \pm 80)$ kg/m³ written to the uncertainty; rubric accepts 2680. Braking task: $a = 1/(2k) = 4.1667$ m/s², $\mu_0 \ge a/g = 0.4247$, $a/1.1025 = 3.779$ m/s², recomputed; the force equations ($N = mg$, $F_{\mu0} = ma \le \mu_0 N$) are correct. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.
+- Rows 1–6: $\bar{x} = \sum x_i/n$; $\Delta x = (x_\text{max} - x_\text{min})/2$; $\bar{x} \pm \Delta x$; $\varepsilon = \Delta x/\bar{x}$; $y = kx + b$; $k = \Delta y/\Delta x$ from far-apart points of the line. All agree with the Formula section.
+- The aria-label matches the chart.
+- Term change: sovella/solutions.md (2 lines) and the link title in unit.md "kinetic" -> "sliding friction"; the physics of both lines (steady pull = sliding friction, grip = static friction) is unchanged and correct.
+- The en chart (docs/figures/fy9-tunnistus/fy9-kokeellisuus-en-360.png) and the hash, taken at the start and the end (95262ce9df1aca45).
