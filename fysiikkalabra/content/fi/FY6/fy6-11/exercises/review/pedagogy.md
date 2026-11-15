@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: b380572990b00c2b
-SCOPE: delta proofreading fixes 2026-11-15
 
 ## Blocking
 - none

@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 5404e1fb42f97550
-SCOPE: delta (solutions.md: significant figures written as a·10^n, wording)
 
 ## Blocking
 None.

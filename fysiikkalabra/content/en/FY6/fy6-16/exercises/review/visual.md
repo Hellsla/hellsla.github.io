@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 6c786ed6b0783012
-SCOPE: delta (limits rounded and explained, a·10^n forms, L2-03/L2-05 answer checks)
 
 ## Blocking
 None.

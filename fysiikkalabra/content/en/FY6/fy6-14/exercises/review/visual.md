@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 38b2c5ddb83972d4
-SCOPE: delta (solutions.md: a·10^n answers, one added product)
 
 ## Blocking
 - none

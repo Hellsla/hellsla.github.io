@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 6a32e9655e538bee
-SCOPE: delta (solutions.md Answer of the battery task, significant figures)
 
 ## Blocking
 - none

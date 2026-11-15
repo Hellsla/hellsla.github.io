@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 52fabbb87f61e010
-SCOPE: delta round 2, changed solution lines in L1-02, L3-01, L3-02, L3-03 (fi-easy captures)
 
 ## Blocking
 (none)

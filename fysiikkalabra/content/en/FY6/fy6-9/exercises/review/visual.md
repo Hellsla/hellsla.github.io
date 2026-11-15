@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 69d3219159d1724e
-SCOPE: delta (solutions.md: significant figures)
 
 ## Blocking
 - none

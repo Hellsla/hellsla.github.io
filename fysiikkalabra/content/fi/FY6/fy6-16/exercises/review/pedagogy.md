@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 9dcbe1d153d30989
-SCOPE: delta round 3, L2-03 key and tolerance
 
 ## Blocking
 None.

@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 9ff2b23aaedfa400
-SCOPE: delta round 2, changed Vastaus/Sijoitus/Järkevyys lines (fi-easy captures)
 
 ## Blocking
 (none)
