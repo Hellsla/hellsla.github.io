@@ -156,7 +156,7 @@
 b) $7{,}3 \cdot 10^{2}\,\text{kWh}$. Vastaus on annettu kahdella merkitsevällä numerolla. Rajoittavat tiedot ovat tehot $90\,\text{W}$ ja $60\,\text{W}$ sekä käyttöajat. Tehoissa $110\,\text{W}$, $800\,\text{W}$ ja $1200\,\text{W}$ on enemmän numeroita.
 
 c) Säästökohteeksi sopii valaistus. Se on toiseksi suurin erä. Sen tehoa voi pienentää vaihtamalla lamput LED-lamppuihin. Pölynimurin käyttöaikaa ei voi lyhentää ilman, että siivous kärsii.
-**Järkevyys:** Vuorokauden energia on $2{,}01\,\text{kWh}$, joten keskiteho on $2{,}01\,\text{kWh} : 24\,\text{h} = 0{,}084\,\text{kW} = 84\,\text{W}$. Se on kohtuullinen koti-iltojen laitteille. Vuodessa $365 \cdot 2\,\text{kWh} = 7{,}3 \cdot 10^{2}\,\text{kWh}$ täsmää tulokseen. Pölynimuri käyttää enemmän kuin valaistus. Sen teho on $13$-kertainen ($1200\,\text{W} : 90\,\text{W}$), mutta aika on vain kymmenesosa.
+**Järkevyys:** Vuorokauden energia on $2{,}01\,\text{kWh}$, joten keskiteho on $2{,}01\,\text{kWh} : 24\,\text{h} = 0{,}084\,\text{kW} = 84\,\text{W}$. Se on kohtuullinen koti-iltojen laitteille. Vuodessa $365 \cdot 2\,\text{kWh}$ eli noin $7{,}3 \cdot 10^{2}\,\text{kWh}$ täsmää tulokseen. Pölynimuri käyttää enemmän kuin valaistus. Sen teho on $13$-kertainen ($1200\,\text{W} : 90\,\text{W}$), mutta aika on vain kymmenesosa.
 
 ## fy6-7-L2-06
 **Annettu:** mittarin lukemat $12\,437{,}2\,\text{kWh}$ alussa ja $12\,493{,}5\,\text{kWh}$ seitsemän vuorokauden kuluttua, hinta $a = 16\,\text{snt/kWh}$
