@@ -232,10 +232,8 @@
 <p>where $U_1$ is the primary voltage (V), $U_2$ the secondary voltage (V), $N_1$ and $N_2$ the numbers of turns of the primary and secondary coils and $I_1$ and $I_2$ the primary and secondary currents (A). The ratio $N_1 : N_2$ is the turns ratio. The latter equality follows from the conservation of power: $U_1 I_1 = U_2 I_2$. The voltages and currents are effective (rms) values (chapter <em>The generator and alternating current</em>). When the voltage increases, the current decreases in the same proportion.</p>
 <h4>Power loss of a transmission line</h4>
 <p>The principle of power transmission is illustrated with a simplified two-wire circuit: the current flows to the destination along one conductor and returns along the other. A power plant sends a power $P$ at a voltage $U$. The current of the line and the power that becomes internal energy in the line are</p>
-<p>$$\begin{aligned}
-P &= U I \\[6pt]
-P_\text{h} &= R I^2 = \frac{R P^2}{U^2}
-\end{aligned}$$</p>
+<dl class="kaavat"><div class="kaava-rivi"><dt>power consumed in a conductor</dt><dd>$$P = U I$$</dd></div><div class="kaava-rivi nimeton"><dd>$$P_\text{h} = R I^2 = \frac{R P^2}{U^2}$$</dd></div></dl>
+
 <div class="fig-row side"><div class="fig-text"><p>where $P$ is the transmitted power (W), $U$ the transmission voltage (V), $I$ the current of the line (A), $R$ the combined resistance of both conductors (Ω) and $P_\text{h}$ the power loss (W). When the same power is transmitted at double the voltage, the current halves and the power loss falls to a quarter. The transmission voltage $U$ is not the voltage across the resistance of the line: the voltage drop between the ends of the line is only $R I$, so the power loss must not be calculated with the expression $U^2 : R$.</p></div><div class="fig"><svg width="600" data-fig="loss-graph" viewBox="0 0 600 340" role="img" aria-label="Graph, to scale: the share of the transmitted power that becomes internal energy in a transmission line, as a percentage, as a function of the transmission voltage in kilovolts, when the transmitted power is 200 MW and the resistance of the line 6.0 ohms in the simplified two-wire model. The curve falls steeply: at 100 kV the share is 12 %, at 200 kV 3.0 % and at 400 kV 0.75 %. When the voltage doubles, the share falls to a quarter." style="max-width:100%;font-size:24px">
   <line x1="143" y1="290" x2="143" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="189.5" y1="290" x2="189.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

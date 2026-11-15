@@ -41,4 +41,10 @@ def current_uA(l, P):                                      # 0,10 % of the photo
     E = h * c / l
     return P / E * 1e-3 * e * 1e6 if E >= 2.30 * e else 0.0
 a["fy8-1-L3-05"] = current_uA(470e-9, 4.0e-3) + current_uA(620e-9, 8.0e-3) + current_uA(365e-9, 1.0e-3)   # 1,516 + 0 + 0,294 = 1,810 µA -> 1,8 µA
+# Added exercises (figure and MAFY tasks)
+a["fy8-1-L1-10"] = h * c / (3.20 * e) * 1e9                # calcium W = 3,20 eV (MAFY, Irrotustöitä): λ0 = hc/W = 387,6 nm -> 388 nm
+hv = h / e                                                 # slope of the E_k,max(f) lines, eV per Hz (0,4136 eV per 1e14 Hz)
+a["fy8-1-L2-08"] = hv * 12e14 - 2.30                       # figure, metal A (W = 2,30 eV) at 12e14 Hz: E_k,max = 4,963 − 2,30 = 2,663 eV -> 2,66 eV
+f0B = 2.90 / hv                                            # figure, metal B: f0 = W/h = 7,012e14 Hz (read 7,0e14 Hz)
+a["fy8-1-L2-09"] = c / f0B * 1e9                           # λ0 = c/f0 = 427,5 nm -> 428 nm (read: 7,0e14 Hz gives 428 nm)
 print(json.dumps({k: (round(v, 8) if abs(v) >= 1e-3 else float(f"{v:.6g}")) for k, v in a.items()}))

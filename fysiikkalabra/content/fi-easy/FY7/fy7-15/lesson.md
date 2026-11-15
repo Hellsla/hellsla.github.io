@@ -512,12 +512,10 @@ Huoneen taustavalo nostaa kaikkia lukemia saman verran, joten suora ei kulje ori
 Valo tulee aineesta, jonka taitekerroin on $n_1$, aineeseen, jonka taitekerroin on $n_2$. Heijastunut valo on täysin polarisoitunutta yhdellä tulokulmalla. Tätä kulmaa sanotaan **Brewsterin kulmaksi** $\alpha_\text{B}$.
 
 Silloin heijastunut ja taittunut säde ovat kohtisuorassa toisiaan vastaan. Taitekulma on siis $\alpha_2 = 90^\circ - \alpha_\text{B}$, ja $\sin\alpha_2 = \cos\alpha_\text{B}$. Sijoitetaan tämä taittumislakiin (luku *Valon heijastuminen ja taittuminen*):
-```latex
-\begin{aligned}
-&n_1 \sin\alpha_\text{B} = n_2 \sin\alpha_2 \\[4pt]
-&n_1 \sin\alpha_\text{B} = n_2 \cos\alpha_\text{B} \\[4pt]
-&\tan\alpha_\text{B} = \frac{n_2}{n_1}
-\end{aligned}
+```kaavat
+n_1 \sin\alpha_\text{B} = n_2 \sin\alpha_2
+n_1 \sin\alpha_\text{B} = n_2 \cos\alpha_\text{B}
+Brewsterin laki :: \tan\alpha_\text{B} = \frac{n_2}{n_1}
 ```
 missä $\alpha_\text{B}$ on Brewsterin kulma pinnan normaalista mitattuna, $n_1$ sen aineen taitekerroin, josta valo tulee ja johon se heijastuu, ja $n_2$ sen aineen taitekerroin, johon valo taittuu.
 

@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b4640f1fa75ce4b0
-Mode: translation
+CONTENT-HASH: f22ac3e71db8780e
+SCOPE: delta added-exercise from b4640f1fa75ce4b0 base 5a45b28682e8
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+(none new; round-1 polish on L2-08 level and "Kaava" wording unchanged and optional)
 
 ## Checked
-- fy8-1-L1-09 (en): situation first, question last as its own sentence, options and feedback keep the misconception each wrong option carries, as in fi.
-- Each feedback names the specific error and repairs it; none gives the answer before the student commits.
-- Solution can be followed step by step (Kysytto, Periaate, Mallivastaus) and matches fi.
-- English decimal point used, wording natural English.
-- Hash b4640f1fa75ce4b0 at start and end.
+- L2-08 solution diff: Muunnokset now states frequencies are used in units of 10^14 Hz so the slope 0.4136 eV gives eV directly; the old line mixed units (eV per 10^14 Hz times a unitless-looking factor) and is repaired.
+- Sijoitus 0.4136 * (12 - 5.56) = 2.66 eV is correct and consistent with the stated unit convention.
+- Järkevyys no longer uses the work function (not readable in the task); compares the graph reading 2.7 eV to hf = 4.96 eV and notes 2.66 agrees: clearer, reading stays the primary route.
+- Reading step, answer (2.7 eV, tolerance) and L1-10, L2-09 untouched; earlier PASS stands.
+- Method: text diff only.

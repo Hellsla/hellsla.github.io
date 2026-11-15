@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 5b627e2749906f73
-ROUND: 2
+CONTENT-HASH: 8dc2567292c69c38
+SCOPE: delta added-exercise from 5b627e2749906f73 base 5a45b28682e8
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] none beyond carried-over template matters.
+(none new; the round-1 Minor on the small figure in the task card stands)
 
 ## Checked
-Round 1 Blocking resolved. Own 390 and 1280 px renders of the new task with options, feedback and solution open (r3 captures, read as 2x tiles); every formula line now fits the card, no clipping, no page overflow (measured). fy8-1-L1-09: the E_k,max substitution and result are on separate lines, 0,60 eV fully visible; statement cards and feedback intact.
+- Own scratch captures of the L2-08 card with every solution open at 360 and 390 px (fi), read in full from the preview build; review/shots not used.
+- Substitution row now /bin/bash.4136 · (12 − 5.56) = 2.66$ and splits into two aligned rows; no formula in the card is wider than the card at 360 or 390 px (measured in the browser); the Conversions and Reasonableness lines read cleanly, the unseen 2.3 eV is gone.
+- Figure kuvaaja-ab seen in the card: axes, units, grid, A and B distinct.
+- L1-10 and L2-09 were passed in round 1 and are unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

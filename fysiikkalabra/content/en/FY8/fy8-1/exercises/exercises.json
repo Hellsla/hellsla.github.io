@@ -133,6 +133,21 @@
           "feedback": "False: a delay is a prediction of the wave model that is not observed in experiments. Already the first photon of lamp A brings the energy $3.10\\,\\text{eV}$, which is greater than the work function, so electrons are released immediately even with dim light."
         }
       ]
+    },
+    {
+      "id": "fy8-1-L1-10",
+      "level": 1,
+      "kind": [
+        "data"
+      ],
+      "lookup": "MAFY",
+      "text": "A calcium surface is illuminated at different wavelengths. Look up the work function of calcium in the MAFY table (mafytaulukot.fi). Use $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. What is the longest wavelength at which calcium releases electrons? Give the answer in nanometres.",
+      "answer": 387,
+      "unit": "nm",
+      "tolerance": 0.05,
+      "hints": [
+        "The value is in the MAFY table *Irrotustöitä* (work functions)."
+      ]
     }
   ],
   "level2": [
@@ -286,6 +301,32 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-1-L2-08",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "figure": "fy8-1/kuvaaja-ab",
+      "text": "The figure shows the greatest kinetic energy of the released electrons for two metals, A and B, as a function of the frequency of the light. Metal A is illuminated with light of frequency $12 \\cdot 10^{14}\\,\\text{Hz}$. Read from the graph how large the greatest kinetic energy $E_\\text{k,max}$ of the released electrons is. Give the answer in electronvolts.",
+      "answer": 2.66,
+      "unit": "eV",
+      "tolerance": 0.05
+    },
+    {
+      "id": "fy8-1-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "figure": "fy8-1/kuvaaja-ab",
+      "text": "The figure shows the greatest kinetic energy of the released electrons for two metals, A and B, as a function of the frequency of the light. Use the speed of light $c = 2.998 \\cdot 10^8\\,\\text{m/s}$. Read the threshold frequency $f_0$ of metal B from the graph and calculate the corresponding threshold wavelength $\\lambda_0$. Give the answer in nanometres.",
+      "answer": 428,
+      "unit": "nm",
+      "tolerance": 0.04
     }
   ],
   "level3": [

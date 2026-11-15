@@ -133,6 +133,21 @@
           "feedback": "Epätosi: viive on aaltomallin ennuste, jota kokeissa ei havaita. Jo lampun A ensimmäinen fotoni tuo energian $3{,}10\\,\\text{eV}$. Se on suurempi kuin irrotustyö, joten elektroneja irtoaa heti, vaikka valo on himmeää."
         }
       ]
+    },
+    {
+      "id": "fy8-1-L1-10",
+      "level": 1,
+      "kind": [
+        "data"
+      ],
+      "lookup": "MAFY",
+      "text": "Kalsiumpintaa valaistaan eri aallonpituuksilla. Hae kalsiumin irrotustyö MAFY-taulukosta (mafytaulukot.fi). Irrotustyö on pienin energia, jonka elektroni tarvitsee irrotakseen metallista. Käytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Mikä on pisin aallonpituus, jolla kalsiumista irtoaa elektroneja? Anna vastaus nanometreinä.",
+      "answer": 387,
+      "unit": "nm",
+      "tolerance": 0.05,
+      "hints": [
+        "Arvo löytyy MAFY-taulukon taulukosta *Irrotustöitä*."
+      ]
     }
   ],
   "level2": [
@@ -286,6 +301,32 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-1-L2-08",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "figure": "fy8-1/kuvaaja-ab",
+      "text": "Kuvassa on kahden metallin, A:n ja B:n, irtoavien elektronien suurin liike-energia. Se on esitetty valon taajuuden funktiona. Metallia A valaistaan valolla, jonka taajuus on $12 \\cdot 10^{14}\\,\\text{Hz}$. Lue kuvaajasta irtoavien elektronien suurin liike-energia $E_\\text{k,max}$. Anna vastaus elektronivoltteina.",
+      "answer": 2.66,
+      "unit": "eV",
+      "tolerance": 0.05
+    },
+    {
+      "id": "fy8-1-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph"
+      ],
+      "figure": "fy8-1/kuvaaja-ab",
+      "text": "Kuvassa on kahden metallin, A:n ja B:n, irtoavien elektronien suurin liike-energia. Se on esitetty valon taajuuden funktiona. Käytä valon nopeutta $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$. Lue kuvaajasta metallin B rajataajuus $f_0$. Rajataajuus on pienin taajuus, jolla elektroneja irtoaa. Laske sitä vastaava raja-aallonpituus $\\lambda_0$ nanometreinä.",
+      "answer": 428,
+      "unit": "nm",
+      "tolerance": 0.04
     }
   ],
   "level3": [
