@@ -12,7 +12,7 @@
     {
       "id": "fy7-15-L1-02",
       "level": 1,
-      "text": "The intensity of polarised light is $200\\,\\text{W/m}^2$. The light arrives at an ideal analyser whose transmission axis is at an angle of $30.0^\\circ$ to the direction of polarisation of the light. What is the intensity of the light after the analyser?",
+      "text": "Extension task.\n\nThe intensity of polarised light is $200\\,\\text{W/m}^2$. The light arrives at an ideal analyser whose transmission axis is at an angle of $30.0^\\circ$ to the direction of polarisation of the light. What is the intensity of the light after the analyser?",
       "answer": 150.0,
       "unit": "W/m²",
       "tolerance": 0.02
@@ -20,7 +20,7 @@
     {
       "id": "fy7-15-L1-03",
       "level": 1,
-      "text": "The intensity of polarised light is $80.0\\,\\text{W/m}^2$. The transmission axis of an ideal polariser is at an angle of $70.0^\\circ$ to the direction of polarisation of the light. What is the intensity of the light after the polariser?",
+      "text": "Extension task.\n\nThe intensity of polarised light is $80.0\\,\\text{W/m}^2$. The transmission axis of an ideal polariser is at an angle of $70.0^\\circ$ to the direction of polarisation of the light. What is the intensity of the light after the polariser?",
       "answer": 9.3582,
       "unit": "W/m²",
       "tolerance": 0.02
@@ -28,7 +28,7 @@
     {
       "id": "fy7-15-L1-04",
       "level": 1,
-      "text": "Sunlight is reflected from the surface of an acrylic sheet. The refractive index of acrylic is $1.49$ and that of air $1.00$. At what angle of incidence is the reflected light completely polarised?",
+      "text": "Extension task.\n\nSunlight is reflected from the surface of an acrylic sheet. The refractive index of acrylic is $1.49$ and that of air $1.00$. At what angle of incidence is the reflected light completely polarised?",
       "answer": 56.1328,
       "unit": "°",
       "tolerance": 0.02
@@ -36,7 +36,7 @@
     {
       "id": "fy7-15-L1-05",
       "level": 1,
-      "text": "The refractive index of diamond is $2.42$. At what angle of incidence is light arriving from air at the surface of a diamond reflected completely polarised? The refractive index of air is $1.00$.",
+      "text": "Extension task.\n\nThe refractive index of diamond is $2.42$. At what angle of incidence is light arriving from air at the surface of a diamond reflected completely polarised? The refractive index of air is $1.00$.",
       "answer": 67.5485,
       "unit": "°",
       "tolerance": 0.02
@@ -75,7 +75,7 @@
     {
       "id": "fy7-15-L1-07",
       "level": 1,
-      "text": "The intensity of the polarised light of a phone display is $300\\,\\text{W/m}^2$. The light arrives at an ideal polariser film whose transmission axis is at an angle of $55.0^\\circ$ to the polarisation direction of the light. What is the intensity of the light after the film?",
+      "text": "Extension task.\n\nThe intensity of the polarised light of a phone display is $300\\,\\text{W/m}^2$. The light arrives at an ideal polariser film whose transmission axis is at an angle of $55.0^\\circ$ to the polarisation direction of the light. What is the intensity of the light after the film?",
       "answer": 98.697,
       "unit": "W/m²",
       "tolerance": 0.02
@@ -83,7 +83,7 @@
     {
       "id": "fy7-15-L1-08",
       "level": 1,
-      "text": "The refractive index of fused quartz glass is $1.46$. At what angle of incidence is light arriving from air at the surface of quartz glass reflected completely polarised? The refractive index of air is $1.00$.",
+      "text": "Extension task.\n\nThe refractive index of fused quartz glass is $1.46$. At what angle of incidence is light arriving from air at the surface of quartz glass reflected completely polarised? The refractive index of air is $1.00$.",
       "answer": 55.5915,
       "unit": "°",
       "tolerance": 0.02
@@ -121,7 +121,7 @@
     {
       "id": "fy7-15-L1-10",
       "level": 1,
-      "text": "The figure shows the share $I : I_0$ of polarised light that passes through, as a function of the angle $\\theta$. Polarised light of intensity $400\\,\\text{W/m}^2$ arrives at an ideal polariser whose transmission axis is at $35^\\circ$ to the direction of polarisation of the light.\n\nRead from the graph what share of the light passes through, and calculate the intensity that comes through the polariser.",
+      "text": "Extension task.\n\nThe figure shows the share $I : I_0$ of polarised light that passes through, as a function of the angle $\\theta$. Polarised light of intensity $400\\,\\text{W/m}^2$ arrives at an ideal polariser whose transmission axis is at $35^\\circ$ to the direction of polarisation of the light.\n\nRead from the graph what share of the light passes through, and calculate the intensity that comes through the polariser.",
       "kind": [
         "data",
         "graph"
@@ -134,7 +134,7 @@
     {
       "id": "fy7-15-L1-11",
       "level": 1,
-      "text": "Sunlight reflects from the surface of a crown glass plate. Look up the refractive index of crown glass in the MAFY table (mafytaulukot.fi). The refractive index of air is $1.00$. At what angle of incidence is the reflected light completely polarised? Give the answer in degrees.",
+      "text": "Extension task.\n\nSunlight reflects from the surface of a crown glass plate. Look up the refractive index of crown glass in the MAFY table (mafytaulukot.fi). The refractive index of air is $1.00$. At what angle of incidence is the reflected light completely polarised? Give the answer in degrees.",
       "lookup": "MAFY",
       "answer": 56.6593,
       "unit": "°",
@@ -149,7 +149,7 @@
       "id": "fy7-15-L2-01",
       "level": 2,
       "core": false,
-      "text": "The intensity of unpolarised light is $900\\,\\text{W/m}^2$. The light passes through two ideal polarisers, and the angle between the transmission axes of the polarisers is $40.0^\\circ$. What is the intensity of the light after the second polariser?",
+      "text": "Extension task.\n\nThe intensity of unpolarised light is $900\\,\\text{W/m}^2$. The light passes through two ideal polarisers, and the angle between the transmission axes of the polarisers is $40.0^\\circ$. What is the intensity of the light after the second polariser?",
       "answer": 264.0708,
       "unit": "W/m²",
       "tolerance": 0.02
@@ -158,7 +158,7 @@
       "id": "fy7-15-L2-02",
       "level": 2,
       "core": false,
-      "text": "Polarised light arrives at an ideal analyser. What is the angle between the direction of polarisation of the light and the transmission axis of the analyser when $25.0\\,\\%$ of the intensity of the light arriving at it passes through the analyser?",
+      "text": "Extension task.\n\nPolarised light arrives at an ideal analyser. What is the angle between the direction of polarisation of the light and the transmission axis of the analyser when $25.0\\,\\%$ of the intensity of the light arriving at it passes through the analyser?",
       "answer": 60.0,
       "unit": "°",
       "tolerance": 0.02
@@ -166,7 +166,7 @@
     {
       "id": "fy7-15-L2-03",
       "level": 2,
-      "text": "Light arriving from air at the surface of a transparent plastic sheet is reflected completely polarised when the angle of incidence is $57.5^\\circ$. What is the refractive index of the plastic? The refractive index of air is $1.00$.",
+      "text": "Extension task.\n\nLight arriving from air at the surface of a transparent plastic sheet is reflected completely polarised when the angle of incidence is $57.5^\\circ$. What is the refractive index of the plastic? The refractive index of air is $1.00$.",
       "answer": 1.5697,
       "unit": "",
       "tolerance": 0.02
@@ -319,7 +319,7 @@
     {
       "id": "fy7-15-L3-01",
       "level": 3,
-      "text": "Two ideal polarisers are crossed, so no light passes through them. A third polariser is placed between them, with its transmission axis at an angle of $30.0^\\circ$ to the transmission axis of the first polariser. Unpolarised light with intensity $800\\,\\text{W/m}^2$ arrives at the first polariser. What is the intensity of the light that passes through the last polariser?",
+      "text": "Extension task.\n\nTwo ideal polarisers are crossed, so no light passes through them. A third polariser is placed between them, with its transmission axis at an angle of $30.0^\\circ$ to the transmission axis of the first polariser. Unpolarised light with intensity $800\\,\\text{W/m}^2$ arrives at the first polariser. What is the intensity of the light that passes through the last polariser?",
       "answer": 75.0,
       "unit": "W/m²",
       "tolerance": 0.02
@@ -327,7 +327,7 @@
     {
       "id": "fy7-15-L3-02",
       "level": 3,
-      "text": "A diver looks up from the bottom of a pool. Light from a lamp on the bottom of the pool meets the water surface from below, and part of it is reflected back into the water. The refractive index of water is $1.33$ and that of air $1.00$. At what angle of incidence is the light reflected back into the water completely polarised?",
+      "text": "Extension task.\n\nA diver looks up from the bottom of a pool. Light from a lamp on the bottom of the pool meets the water surface from below, and part of it is reflected back into the water. The refractive index of water is $1.33$ and that of air $1.00$. At what angle of incidence is the light reflected back into the water completely polarised?",
       "answer": 36.9388,
       "unit": "°",
       "tolerance": 0.02
@@ -343,7 +343,7 @@
     {
       "id": "fy7-15-L3-04",
       "level": 3,
-      "text": "Three ideal polarisers are placed one after another. Unpolarised light with intensity $960\\,\\text{W/m}^2$ arrives at the first one. The transmission axis of the last one is perpendicular to that of the first, and the middle one is at an angle $\\theta$ to the first.\n\nA student measured the intensity $I_3$ of the light after the last polariser as a function of the angle $\\theta$. The data is example data.\n\na) At what angle $\\theta$ is the intensity greatest? Justify why the angles $15^\\circ$ and $75^\\circ$ give approximately the same reading.\n\nb) Derive an expression for the intensity $I_3$ as a function of the angle $\\theta$, and calculate what percentage of the intensity $I_0$ of the unpolarised light passes through at most.\n\nc) Explain why the third polariser lets light through even though the first and the last are crossed.\n\nWrite the result of part b) as a percentage in the answer box.",
+      "text": "Extension task.\n\nThree ideal polarisers are placed one after another. Unpolarised light with intensity $960\\,\\text{W/m}^2$ arrives at the first one. The transmission axis of the last one is perpendicular to that of the first, and the middle one is at an angle $\\theta$ to the first.\n\nA student measured the intensity $I_3$ of the light after the last polariser as a function of the angle $\\theta$. The data is example data.\n\na) At what angle $\\theta$ is the intensity greatest? Justify why the angles $15^\\circ$ and $75^\\circ$ give approximately the same reading.\n\nb) Derive an expression for the intensity $I_3$ as a function of the angle $\\theta$, and calculate what percentage of the intensity $I_0$ of the unpolarised light passes through at most.\n\nc) Explain why the third polariser lets light through even though the first and the last are crossed.\n\nWrite the result of part b) as a percentage in the answer box.",
       "kind": [
         "data",
         "model",

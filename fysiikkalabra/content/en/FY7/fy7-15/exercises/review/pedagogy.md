@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5f4c14bdd0bd3e40
-SCOPE: delta added-exercise from d854aa8f386f0906 base 8f23aa7ae3bd
+CONTENT-HASH: d1769284e1bc70b1
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- Brewster tasks now number four at level 1 (L1-04, L1-05, L1-08, L1-11); L1-11 differs by the lookup only.
-- L2-08 reuses the phone display context of L2-05 and L3-03.
-- L1-10 answer text '270 or 268' may confuse; give one value.
+- The "Extension task." label is applied inconsistently: it is on L2-04, L2-05, L2-06, L2-07, L2-08, L3-05, but not on other Malus's-law and Brewster's-law tasks (L1-02, L1-03, L1-04, L1-05, L1-08, L1-11, L2-01, L3-01, L3-03). A student sees the same law marked in one task and not in another. Label all of them or none (the course scope makes both laws extension).
+- L2-08 carries the label although it only reads a line; if the label is meant to mark the law, it fits only if the task needs it.
+- Label sits as the first line of the text, before the situation; acceptable as a tag, but a separate field would keep "situation first".
 
 ## Checked
-- L1-10: 0.67 · 400 = 268 W/m² verified; L1-11: 56.66° verified.
-- L2-08: E = 360 cos²θ + 15, θ = 44.2° verified; the description gives the line's end points.
-- Language checked: en. Hash 5f4c14bdd0bd3e40 at start and end.
+- Diff is only the "Extension task." line added to six tasks; no numbers, answers or solutions touched.
+- The wording is plain English and clear to a student.
+- Language checked: en. Hash d1769284e1bc70b1 at start and end.

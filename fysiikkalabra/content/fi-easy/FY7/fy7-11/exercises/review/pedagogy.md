@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6c19f9aefbc31fb5
+CONTENT-HASH: 257e985767a7a94b
 
 ## Blocking
 None.
@@ -8,5 +8,5 @@ None.
 None.
 
 ## Checked
-- Delta: pääsateenkaaren ulkoreunalla: correct case and term.
-- Nothing else touched; numbers, answers and solution steps unchanged.
+- Delta: Δδ 0,96° -> 0,98° (välitulokset 0,57119 / 0,58509; tarkka 0,966° mainittu), yhden pinnan ero 0,65°, n = 1,40. Solution steps follow the new numbers and the rounding note is honest.
+- Nothing else touched in pedagogy terms.

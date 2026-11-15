@@ -1,16 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 730aa0cfcf2b68b4
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
-
+CONTENT-HASH: d4ecfda68d8cca93
 ## Blocking
-- none
-
 ## Polish
-- none
-
+- lesson.md:204 — the phone-charger scene now sits before the paragraph that explains the charger (line 219), so it follows the distribution-transformer paragraph, which it does not illustrate; CLAUDE.md wants a figure right after the text it explains. Move it to after line 219, or leave it if the page layout puts it beside that paragraph.
 ## Checked
-- Diff: transformer 'teho = UI' limited to resistive load; distribution transformer 20 kV -> low-voltage network ~400 V between phases / ~230 V phase-neutral; transmission-loss section opens with the simplified two-wire circuit and R = both conductors; new subsection 'Todellinen kantaverkko on kolmivaiheinen' with P = sqrt3 U I cos phi; summary bullet; grid and loss-graph aria texts; inquiry virhe/siirto prompts state the two-wire model.
-- Order works: model first, real grid after the loss graph, then the explicit rule 'laskutehtävissä käytetään kaksijohtimista mallia, ellei toisin mainita', so students know which formula a task expects. New terms (pääjännite, pätöteho, tehokerroin) are each defined in the sentence.
-- Inquiry prompts: situation, then the model sentence, then the question last.
-- Round 2: '1,73-kertainen' sentence now says same voltage, current and power factor, so the comparison is fair; en paragraph split only.
-- Language checked: en. Hash 730aa0cfcf2b68b4 at start and end.
+- Delta: the unlabelled scene moved from Summary to Key idea; drawing, aria-label and palette unchanged, so it still reads as a charger, a cable and a charging phone. It adds no information, so nothing is disclosed early. The summary list now ends cleanly with the two-wire-model bullet.
+- Captures listed still name the old position (Summary), so I judged the change from the diff and the source, not from a capture.
+- Hash d4ecfda68d8cca93 at start and end.

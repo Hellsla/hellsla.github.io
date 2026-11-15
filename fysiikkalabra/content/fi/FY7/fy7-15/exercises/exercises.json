@@ -12,7 +12,7 @@
     {
       "id": "fy7-15-L1-02",
       "level": 1,
-      "text": "Polarisoituneen valon intensiteetti on $200\\,\\text{W/m}^2$. Valo tulee ihanteelliseen analysaattoriin, jonka läpäisysuunta on $30{,}0^\\circ$:n kulmassa valon polarisaatiosuuntaan nähden. Kuinka suuri on valon intensiteetti analysaattorin jälkeen?",
+      "text": "Syventävä tehtävä.\n\nPolarisoituneen valon intensiteetti on $200\\,\\text{W/m}^2$. Valo tulee ihanteelliseen analysaattoriin, jonka läpäisysuunta on $30{,}0^\\circ$:n kulmassa valon polarisaatiosuuntaan nähden. Kuinka suuri on valon intensiteetti analysaattorin jälkeen?",
       "answer": 150.0,
       "unit": "W/m²",
       "tolerance": 0.02
@@ -20,7 +20,7 @@
     {
       "id": "fy7-15-L1-03",
       "level": 1,
-      "text": "Polarisoituneen valon intensiteetti on $80{,}0\\,\\text{W/m}^2$. Ihanteellisen polarisaattorin läpäisysuunta on $70{,}0^\\circ$:n kulmassa valon polarisaatiosuuntaan nähden. Kuinka suuri on valon intensiteetti polarisaattorin jälkeen?",
+      "text": "Syventävä tehtävä.\n\nPolarisoituneen valon intensiteetti on $80{,}0\\,\\text{W/m}^2$. Ihanteellisen polarisaattorin läpäisysuunta on $70{,}0^\\circ$:n kulmassa valon polarisaatiosuuntaan nähden. Kuinka suuri on valon intensiteetti polarisaattorin jälkeen?",
       "answer": 9.3582,
       "unit": "W/m²",
       "tolerance": 0.02
@@ -28,7 +28,7 @@
     {
       "id": "fy7-15-L1-04",
       "level": 1,
-      "text": "Auringonvalo heijastuu akryylilevyn pinnasta. Akryylin taitekerroin on $1{,}49$ ja ilman $1{,}00$. Millä tulokulmalla heijastunut valo on täysin polarisoitunutta?",
+      "text": "Syventävä tehtävä.\n\nAuringonvalo heijastuu akryylilevyn pinnasta. Akryylin taitekerroin on $1{,}49$ ja ilman $1{,}00$. Millä tulokulmalla heijastunut valo on täysin polarisoitunutta?",
       "answer": 56.1328,
       "unit": "°",
       "tolerance": 0.02
@@ -36,7 +36,7 @@
     {
       "id": "fy7-15-L1-05",
       "level": 1,
-      "text": "Timantin taitekerroin on $2{,}42$. Millä tulokulmalla ilmasta timantin pintaan tuleva valo heijastuu täysin polarisoituneena? Ilman taitekerroin on $1{,}00$.",
+      "text": "Syventävä tehtävä.\n\nTimantin taitekerroin on $2{,}42$. Millä tulokulmalla ilmasta timantin pintaan tuleva valo heijastuu täysin polarisoituneena? Ilman taitekerroin on $1{,}00$.",
       "answer": 67.5485,
       "unit": "°",
       "tolerance": 0.02
@@ -75,7 +75,7 @@
     {
       "id": "fy7-15-L1-07",
       "level": 1,
-      "text": "Puhelimen näytön polarisoituneen valon intensiteetti on $300\\,\\text{W/m}^2$. Valo tulee ihanteelliseen polarisaattorikalvoon, jonka läpäisysuunta on $55{,}0^\\circ$:n kulmassa valon polarisaatiosuuntaan nähden. Kuinka suuri on valon intensiteetti kalvon jälkeen?",
+      "text": "Syventävä tehtävä.\n\nPuhelimen näytön polarisoituneen valon intensiteetti on $300\\,\\text{W/m}^2$. Valo tulee ihanteelliseen polarisaattorikalvoon, jonka läpäisysuunta on $55{,}0^\\circ$:n kulmassa valon polarisaatiosuuntaan nähden. Kuinka suuri on valon intensiteetti kalvon jälkeen?",
       "answer": 98.697,
       "unit": "W/m²",
       "tolerance": 0.02
@@ -83,7 +83,7 @@
     {
       "id": "fy7-15-L1-08",
       "level": 1,
-      "text": "Sulatetun kvartsilasin taitekerroin on $1{,}46$. Millä tulokulmalla ilmasta kvartsilasin pintaan tuleva valo heijastuu täysin polarisoituneena? Ilman taitekerroin on $1{,}00$.",
+      "text": "Syventävä tehtävä.\n\nSulatetun kvartsilasin taitekerroin on $1{,}46$. Millä tulokulmalla ilmasta kvartsilasin pintaan tuleva valo heijastuu täysin polarisoituneena? Ilman taitekerroin on $1{,}00$.",
       "answer": 55.5915,
       "unit": "°",
       "tolerance": 0.02
@@ -121,7 +121,7 @@
     {
       "id": "fy7-15-L1-10",
       "level": 1,
-      "text": "Kuvassa on polarisoituneen valon läpäisemän osuuden $I : I_0$ kuvaaja kulman $\\theta$ funktiona. Polarisoituneen valon intensiteetti on $400\\,\\text{W/m}^2$, ja se tulee ihanteelliseen polarisaattoriin, jonka läpäisysuunta on kulmassa $35^\\circ$ valon polarisaatiosuuntaan nähden.\n\nLue kuvaajasta, kuinka suuri osuus valosta pääsee läpi, ja laske polarisaattorin läpi tuleva intensiteetti.",
+      "text": "Syventävä tehtävä.\n\nKuvassa on polarisoituneen valon läpäisemän osuuden $I : I_0$ kuvaaja kulman $\\theta$ funktiona. Polarisoituneen valon intensiteetti on $400\\,\\text{W/m}^2$, ja se tulee ihanteelliseen polarisaattoriin, jonka läpäisysuunta on kulmassa $35^\\circ$ valon polarisaatiosuuntaan nähden.\n\nLue kuvaajasta, kuinka suuri osuus valosta pääsee läpi, ja laske polarisaattorin läpi tuleva intensiteetti.",
       "kind": [
         "data",
         "graph"
@@ -134,7 +134,7 @@
     {
       "id": "fy7-15-L1-11",
       "level": 1,
-      "text": "Auringonvalo heijastuu kruunulasilevyn pinnasta. Hae kruunulasin taitekerroin MAFY-taulukosta (mafytaulukot.fi). Ilman taitekerroin on $1{,}00$. Millä tulokulmalla heijastunut valo on täysin polarisoitunutta? Anna vastaus asteina.",
+      "text": "Syventävä tehtävä.\n\nAuringonvalo heijastuu kruunulasilevyn pinnasta. Hae kruunulasin taitekerroin MAFY-taulukosta (mafytaulukot.fi). Ilman taitekerroin on $1{,}00$. Millä tulokulmalla heijastunut valo on täysin polarisoitunutta? Anna vastaus asteina.",
       "lookup": "MAFY",
       "answer": 56.6593,
       "unit": "°",
@@ -149,7 +149,7 @@
       "id": "fy7-15-L2-01",
       "level": 2,
       "core": false,
-      "text": "Polarisoimattoman valon intensiteetti on $900\\,\\text{W/m}^2$. Valo kulkee kahden ihanteellisen polarisaattorin läpi, ja polarisaattorien läpäisysuuntien välinen kulma on $40{,}0^\\circ$. Kuinka suuri on valon intensiteetti toisen polarisaattorin jälkeen?",
+      "text": "Syventävä tehtävä.\n\nPolarisoimattoman valon intensiteetti on $900\\,\\text{W/m}^2$. Valo kulkee kahden ihanteellisen polarisaattorin läpi, ja polarisaattorien läpäisysuuntien välinen kulma on $40{,}0^\\circ$. Kuinka suuri on valon intensiteetti toisen polarisaattorin jälkeen?",
       "answer": 264.0708,
       "unit": "W/m²",
       "tolerance": 0.02
@@ -158,7 +158,7 @@
       "id": "fy7-15-L2-02",
       "level": 2,
       "core": false,
-      "text": "Polarisoitunut valo tulee ihanteelliseen analysaattoriin. Kuinka suuri on valon polarisaatiosuunnan ja analysaattorin läpäisysuunnan välinen kulma, kun analysaattorin läpi pääsee $25{,}0\\,\\%$ siihen tulevan valon intensiteetistä?",
+      "text": "Syventävä tehtävä.\n\nPolarisoitunut valo tulee ihanteelliseen analysaattoriin. Kuinka suuri on valon polarisaatiosuunnan ja analysaattorin läpäisysuunnan välinen kulma, kun analysaattorin läpi pääsee $25{,}0\\,\\%$ siihen tulevan valon intensiteetistä?",
       "answer": 60.0,
       "unit": "°",
       "tolerance": 0.02
@@ -166,7 +166,7 @@
     {
       "id": "fy7-15-L2-03",
       "level": 2,
-      "text": "Ilmasta läpinäkyvän muovilevyn pintaan tuleva valo heijastuu täysin polarisoituneena, kun tulokulma on $57{,}5^\\circ$. Kuinka suuri on muovin taitekerroin? Ilman taitekerroin on $1{,}00$.",
+      "text": "Syventävä tehtävä.\n\nIlmasta läpinäkyvän muovilevyn pintaan tuleva valo heijastuu täysin polarisoituneena, kun tulokulma on $57{,}5^\\circ$. Kuinka suuri on muovin taitekerroin? Ilman taitekerroin on $1{,}00$.",
       "answer": 1.5697,
       "unit": "",
       "tolerance": 0.02
@@ -319,7 +319,7 @@
     {
       "id": "fy7-15-L3-01",
       "level": 3,
-      "text": "Kaksi ihanteellista polarisaattoria on ristissä, joten niiden läpi ei pääse valoa. Niiden väliin asetetaan kolmas polarisaattori, jonka läpäisysuunta on $30{,}0^\\circ$:n kulmassa ensimmäisen polarisaattorin läpäisysuuntaan nähden. Ensimmäiseen polarisaattoriin tulee polarisoimatonta valoa, jonka intensiteetti on $800\\,\\text{W/m}^2$. Kuinka suuri on viimeisen polarisaattorin läpi tulevan valon intensiteetti?",
+      "text": "Syventävä tehtävä.\n\nKaksi ihanteellista polarisaattoria on ristissä, joten niiden läpi ei pääse valoa. Niiden väliin asetetaan kolmas polarisaattori, jonka läpäisysuunta on $30{,}0^\\circ$:n kulmassa ensimmäisen polarisaattorin läpäisysuuntaan nähden. Ensimmäiseen polarisaattoriin tulee polarisoimatonta valoa, jonka intensiteetti on $800\\,\\text{W/m}^2$. Kuinka suuri on viimeisen polarisaattorin läpi tulevan valon intensiteetti?",
       "answer": 75.0,
       "unit": "W/m²",
       "tolerance": 0.02
@@ -327,7 +327,7 @@
     {
       "id": "fy7-15-L3-02",
       "level": 3,
-      "text": "Sukeltaja katsoo altaan pohjalta ylöspäin. Altaan pohjalla olevan lampun valo osuu veden alta vedenpintaan, ja osa siitä heijastuu takaisin veteen. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$. Millä tulokulmalla takaisin veteen heijastunut valo on täysin polarisoitunutta?",
+      "text": "Syventävä tehtävä.\n\nSukeltaja katsoo altaan pohjalta ylöspäin. Altaan pohjalla olevan lampun valo osuu veden alta vedenpintaan, ja osa siitä heijastuu takaisin veteen. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$. Millä tulokulmalla takaisin veteen heijastunut valo on täysin polarisoitunutta?",
       "answer": 36.9388,
       "unit": "°",
       "tolerance": 0.02
@@ -343,7 +343,7 @@
     {
       "id": "fy7-15-L3-04",
       "level": 3,
-      "text": "Kolme ihanteellista polarisaattoria on peräkkäin. Ensimmäiseen tulee polarisoimatonta valoa, jonka intensiteetti on $960\\,\\text{W/m}^2$. Viimeisen läpäisysuunta on kohtisuorassa ensimmäisen läpäisysuuntaan nähden, ja keskimmäinen on kulmassa $\\theta$ ensimmäiseen nähden.\n\nOpiskelija mittasi viimeisen polarisaattorin jälkeen valon intensiteetin $I_3$ kulman $\\theta$ funktiona. Aineisto on esimerkkiaineisto.\n\na) Millä kulmalla $\\theta$ intensiteetti on suurin? Perustele, miksi kulmat $15^\\circ$ ja $75^\\circ$ antavat likimain saman lukeman.\n\nb) Johda intensiteetille $I_3$ lauseke kulman $\\theta$ funktiona ja laske, kuinka monta prosenttia polarisoimattoman valon intensiteetistä $I_0$ pääsee läpi suurimmillaan.\n\nc) Selitä, miksi kolmas polarisaattori päästää valoa läpi, vaikka ensimmäinen ja viimeinen ovat ristissä.\n\nKirjoita vastauslaatikkoon kohdan b) tulos prosentteina.",
+      "text": "Syventävä tehtävä.\n\nKolme ihanteellista polarisaattoria on peräkkäin. Ensimmäiseen tulee polarisoimatonta valoa, jonka intensiteetti on $960\\,\\text{W/m}^2$. Viimeisen läpäisysuunta on kohtisuorassa ensimmäisen läpäisysuuntaan nähden, ja keskimmäinen on kulmassa $\\theta$ ensimmäiseen nähden.\n\nOpiskelija mittasi viimeisen polarisaattorin jälkeen valon intensiteetin $I_3$ kulman $\\theta$ funktiona. Aineisto on esimerkkiaineisto.\n\na) Millä kulmalla $\\theta$ intensiteetti on suurin? Perustele, miksi kulmat $15^\\circ$ ja $75^\\circ$ antavat likimain saman lukeman.\n\nb) Johda intensiteetille $I_3$ lauseke kulman $\\theta$ funktiona ja laske, kuinka monta prosenttia polarisoimattoman valon intensiteetistä $I_0$ pääsee läpi suurimmillaan.\n\nc) Selitä, miksi kolmas polarisaattori päästää valoa läpi, vaikka ensimmäinen ja viimeinen ovat ristissä.\n\nKirjoita vastauslaatikkoon kohdan b) tulos prosentteina.",
       "kind": [
         "data",
         "model",

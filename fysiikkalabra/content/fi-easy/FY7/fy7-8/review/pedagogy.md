@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 02ed5717f19b13fa
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: b7748c0fe5fbff15
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- lesson.md "Todellinen kantaverkko on kolmivaiheinen" (and Tiivistelmä last bullet) — the section is dense for selkeä suomi and goes beyond the slot's goals; "pääjännite", "pätöteho", "tehokerroin", "vaihejohdin", "nollajohdin", "kuorma", "resistiivinen", "tasasuuntaa" are not explained at first use (NOTES.md §12) — explain each in half a sentence or move the section into a closed extra box.
+- lesson.md "Yleinen virhekäsitys" — "Siirtojännite on johtimien ja maan tai johtimien keskinäinen jännite" is too abstract for this reader; say: "$U$ on koko siirtojohdon jännite, mutta johdon resistanssin yli on vain pieni osa siitä, $R I$."
+- inquiry.json "ennuste-dc" — the DC-versus-AC prediction is answered by theory only, with no simulation or table to refute it. Acceptable for one lesson, but a line in the feedback ("Jännitepulssi näkyy vain kytkentähetkellä") could be turned into a demonstration later.
+- inquiry.json "simulaatio" `model` — the Finnish is correct but "Todellinen kantaverkko on kolmivaiheinen, mutta häviön riippuvuus virrasta on sama" repeats the lesson. Shorten it.
+- inquiry.json "tarkistus-3" is optional, so the only required explanation is the conclusion. That fits the workload, but the exit ticket asks no question about the DC idea. Consider one.
 
 ## Checked
-- Diff: transformer 'teho = UI' limited to resistive load; distribution transformer 20 kV -> low-voltage network ~400 V between phases / ~230 V phase-neutral; transmission-loss section opens with the simplified two-wire circuit and R = both conductors; new subsection 'Todellinen kantaverkko on kolmivaiheinen' with P = sqrt3 U I cos phi; summary bullet; grid and loss-graph aria texts; inquiry virhe/siirto prompts state the two-wire model.
-- Order works: model first, real grid after the loss graph, then the explicit rule 'laskutehtävissä käytetään kaksijohtimista mallia, ellei toisin mainita', so students know which formula a task expects. New terms (pääjännite, pätöteho, tehokerroin) are each defined in the sentence.
-- Inquiry prompts: situation, then the model sentence, then the question last.
-- Round 2: '1,73-kertainen' sentence now says same voltage, current and power factor, so the comparison is fair; en paragraph split only.
-- Language checked: fi-easy. fi-easy: the new text is in short, clear sentences and keeps every point of fi (nothing dropped). Hash 02ed5717f19b13fa at start and end.
+- Learning path: prior (induction, AC) -> hook -> two predictions -> sim -> theory -> staged example -> error-spotting item -> transfer task -> checks; the opening question is answered in the conclusion's model answer only after the student acts.
+- Predictions can be refuted: koe-1 locks P and l, varies U, and its table shows I, P_h and share; each wrong option has its own repairing feedback (the P = U^2/R error is addressed twice).
+- Workload is one lesson; optional items are marked.
+- Example is staged in seven stages with a check on power conservation.
+- Captures lab-1280 and theory-1280: the sim sits beside the experiment, text sits behind the Käyttöohje, Mallin oletukset and Laskennan selitys boxes, figures stand beside their paragraphs, the formula table is legible.
+- Hero, transformer, grid and loss-graph figures have descriptions that carry the same data without the answer.
+- Finnish: case after number+unit is correct, terms match the glossary, and the model-value wording is consistent.

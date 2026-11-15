@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "Polkupyörän napadynamossa ei ole paristoa eikä akkua. Kun pyörä seisoo, lamppu on pimeä. Heti kun pyörä alkaa pyöriä, lamppu syttyy, ja mitä lujempaa ajat, sitä kirkkaammin se palaa. Dynamon sisällä on kestomagneetti ja johdinkäämi. Vuonna 1831 Michael Faraday teki samanlaisen havainnon laboratoriossaan: magneetti käämin vieressä ei tuottanut virtaa, mutta liikkuva magneetti tuotti.",
+      "text": "Polkupyörän napadynamossa ei ole paristoa eikä akkua. Kun pyörä seisoo, lamppu on pimeä. Heti kun pyörä alkaa pyöriä, lamppu syttyy, ja mitä lujempaa ajat, sitä kirkkaammin se palaa. Dynamon sisällä on kestomagneetti ja johdinkäämi. Vuonna 1831 Michael Faraday tutki laboratoriossaan, synnyttääkö magneetti käämiin virran: magneetti käämin vieressä ei tuottanut virtaa.",
       "question": "Mikä magneetin ja käämin tilanteessa ratkaisee, syntyykö käämiin jännite, ja mistä jännitteen suuruus riippuu?"
     },
     {

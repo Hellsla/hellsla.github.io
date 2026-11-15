@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3d1e122452fa32a3
-SCOPE: delta added-exercise from 84431a520674b52a base 8f23aa7ae3bd
+CONTENT-HASH: e1d2e7d7f5934cfb
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+None.
 
 ## Checked
-- L2-08: 1 - 1,3/4,3 = 69,8 %, answer 70 % within tolerance; L3-06: k = 2, d = 350 nm checked, new graph task at the right level.
-- Language checked: fi-easy. Hash 3d1e122452fa32a3 at start; unchanged at end.
+- Delta: Järkevyys now explains why the coating does not cancel fully (n = 1,38 > sqrt(1,52) = 1,23, unequal reflections); correct and teaches.
+- Nothing else touched.

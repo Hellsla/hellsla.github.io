@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b9abc60f8708a971
-SCOPE: delta added-exercise from c7a891d427fd5589 base 8f23aa7ae3bd
+CONTENT-HASH: 272340bdf157de82
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+None.
 
 ## Checked
-- L2-08: 1 - 1.3/4.3 = 69.8 %, within tolerance; L3-06: k = 2, d = 350 nm; staged, a new reading-and-reasoning graph task.
-- Language checked: en. Hash b9abc60f8708a971 at start; unchanged at end.
+- L2-08 Reasonableness now gives the real physical reason (n = 1.38 > sqrt(1.52) = 1.23, unequal amplitudes); correct, and replaces a vague claim.
+- L3 thin-film c): "almost three times as strongly" = 5.8 % : 2.0 % = 2.9; correct, and clearer than "darker than any colour".
+- Numbers and answers unchanged.
+- Language checked: en. Hash 272340bdf157de82 at start and end.

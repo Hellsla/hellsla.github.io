@@ -201,6 +201,8 @@ A power line has resistance, and the current flowing in the line heats it. The p
 ### The voltage is lowered step by step
 At substations, transformers lower the voltage to $110\,\text{kV}$ in the regional network and $20\,\text{kV}$ in the distribution network, and the distribution transformer of a residential area lowers, for example, the $20\,\text{kV}$ voltage to the voltage of the low-voltage network. In the low-voltage network there is about $400\,\text{V}$ between the phase conductors and about $230\,\text{V}$ between a phase conductor and the neutral conductor, which is the voltage of a socket at home.
 
+High voltage is not brought into homes, because insulating it requires long insulators and large distances, and touching it would be fatal (chapter *Electrical safety at home and at work*). The charger of a phone lowers the voltage still further to about $5\,\text{V}$. A modern charger first changes the mains voltage to a very high frequency, so that the transformer can be small, and rectifies it at the end. The coils of the charger's transformer do not touch each other, so the phone is not conductively connected to the power grid.
+
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: a small phone charger is plugged into a wall socket, and its cable leads to a phone on a table, which is charging." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy78s-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy78s-screen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
   <rect x="0" y="0" width="600" height="360" fill="#f6f1e6"/>
@@ -215,8 +217,6 @@ At substations, transformers lower the voltage to $110\,\text{kV}$ in the region
   <rect x="360" y="304" width="30" height="18" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
   <rect x="364" y="308" width="16" height="10" rx="1" fill="#2b8a3e"/>
 </svg>
-
-High voltage is not brought into homes, because insulating it requires long insulators and large distances, and touching it would be fatal (chapter *Electrical safety at home and at work*). The charger of a phone lowers the voltage still further to about $5\,\text{V}$. A modern charger first changes the mains voltage to a very high frequency, so that the transformer can be small, and rectifies it at the end. The coils of the charger's transformer do not touch each other, so the phone is not conductively connected to the power grid.
 
 ## Formula: Transformer and transmission loss
 The voltages and currents of an ideal transformer depend on the numbers of turns of the coils:

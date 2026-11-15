@@ -211,6 +211,8 @@ Saman tehon voi siirtää suurella jännitteellä ja pienellä virralla. Kun jä
 ### Jännite lasketaan vaiheittain
 Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin. Asuinalueen muuntamossa on jakelumuuntaja. Se laskee esimerkiksi $20\,\text{kV}$:n jännitteen pienjänniteverkon jännitteeksi. Pienjänniteverkossa vaihejohtimien välillä on noin $400\,\text{V}$. Vaihejohtimen ja nollajohtimen välillä on noin $230\,\text{V}$. Se on kodin pistorasian jännite. Suurjännitettä ei tuoda koteihin. Sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku *Sähköturvallisuus kotona ja työssä*).
 
+Puhelimen laturi laskee jännitteen vielä noin $5\,\text{V}$:iin. Nykyaikainen laturi muuttaa verkkojännitteen ensin hyvin suuritaajuiseksi. Silloin muuntaja voi olla pieni. Lopuksi laturi tasasuuntaa jännitteen. Laturin muuntajan käämit eivät kosketa toisiaan. Puhelin ei siis ole johtavassa yhteydessä sähköverkkoon.
+
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: pieni puhelimen laturi on kytketty seinäpistorasiaan. Laturin johto vie pöydällä olevaan puhelimeen, joka latautuu." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy78s-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy78s-screen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
   <rect x="0" y="0" width="600" height="360" fill="#f6f1e6"/>
@@ -225,8 +227,6 @@ Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin j
   <rect x="360" y="304" width="30" height="18" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
   <rect x="364" y="308" width="16" height="10" rx="1" fill="#2b8a3e"/>
 </svg>
-
-Puhelimen laturi laskee jännitteen vielä noin $5\,\text{V}$:iin. Nykyaikainen laturi muuttaa verkkojännitteen ensin hyvin suuritaajuiseksi. Silloin muuntaja voi olla pieni. Lopuksi laturi tasasuuntaa jännitteen. Laturin muuntajan käämit eivät kosketa toisiaan. Puhelin ei siis ole johtavassa yhteydessä sähköverkkoon.
 
 ## Kaava: Muuntaja ja siirtohäviö
 Ideaalisen muuntajan jännitteet ja virrat riippuvat käämien kierrosten lukumääristä:

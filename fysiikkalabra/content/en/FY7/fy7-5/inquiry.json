@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "The hub dynamo of a bicycle has no battery or accumulator. When the bicycle stands still, the lamp is dark. As soon as the wheel begins to turn, the lamp lights up, and the faster you ride, the brighter it shines. Inside the dynamo there is a permanent magnet and a wire coil. In 1831 Michael Faraday made a similar observation in his laboratory: a magnet beside a coil produced no current, but a moving magnet did.",
+      "text": "The hub dynamo of a bicycle has no battery or accumulator. When the bicycle stands still, the lamp is dark. As soon as the wheel begins to turn, the lamp lights up, and the faster you ride, the brighter it shines. Inside the dynamo there is a permanent magnet and a wire coil. In 1831 Michael Faraday investigated in his laboratory whether a magnet produces a current in a coil: a magnet beside a coil produced no current.",
       "question": "What decides whether a voltage appears in the coil in the situation of the magnet and the coil, and what does the size of the voltage depend on?"
     },
     {
