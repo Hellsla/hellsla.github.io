@@ -16,7 +16,7 @@
 **Muunnokset:** Muunnoksia ei tarvita: venymä ratkeaa samassa yksikössä kuin $x_1$ (senttimetreinä), ja newtonit supistuvat suhteessa $\dfrac{F}{F_1}$.
 **Sijoitus:** $x = \dfrac{2{,}0\,\text{cm} \cdot 12\,\text{N}}{4{,}0\,\text{N}} = 6{,}0\,\text{cm}$
 **Vastaus:** $6{,}0\,\text{cm}$, kaksi merkitsevää numeroa kuten annetuissa arvoissa.
-**Järkevyys:** Voima on $\dfrac{12}{4{,}0} = 3$-kertainen, joten venymän pitää olla $3 \cdot 2{,}0\,\text{cm} = 6{,}0\,\text{cm}$. Myös jousivakio täsmää: $\dfrac{2{,}0\,\text{cm}}{4{,}0\,\text{N}} = 0{,}50\,\tfrac{\text{cm}}{\text{N}}$ ja $0{,}50 \cdot 12 = 6{,}0$.
+**Järkevyys:** Voima on $\dfrac{12}{4{,}0} = 3$-kertainen, joten venymän pitää olla $3 \cdot 2{,}0\,\text{cm} = 6{,}0\,\text{cm}$. Myös venymä newtonia kohti täsmää: $\dfrac{2{,}0\,\text{cm}}{4{,}0\,\text{N}} = 0{,}50\,\tfrac{\text{cm}}{\text{N}}$ ja $0{,}50 \cdot 12 = 6{,}0$.
 
 ## fy3-1-L1-03
 **Annettu:** $m = 30\,\text{kg}$; taulukosta $g_\text{Kuu} = 1{,}62\,\text{m/s}^2$

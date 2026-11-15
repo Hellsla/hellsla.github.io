@@ -16,7 +16,7 @@
 **Conversions:** No conversions are needed: the extension comes out in the same unit as $x_1$ (centimetres), and the newtons cancel in the ratio $\dfrac{F}{F_1}$.
 **Substitution:** $x = \dfrac{2.0\,\text{cm} \cdot 12\,\text{N}}{4.0\,\text{N}} = 6.0\,\text{cm}$
 **Answer:** $6.0\,\text{cm}$, two significant figures like the given values.
-**Reasonableness:** The force is $\dfrac{12}{4.0} = 3$ times as great, so the extension must be $3 \cdot 2.0\,\text{cm} = 6.0\,\text{cm}$. The spring constant agrees too: $\dfrac{2.0\,\text{cm}}{4.0\,\text{N}} = 0.50\,\tfrac{\text{cm}}{\text{N}}$ and $0.50 \cdot 12 = 6.0$.
+**Reasonableness:** The force is $\dfrac{12}{4.0} = 3$ times as great, so the extension must be $3 \cdot 2.0\,\text{cm} = 6.0\,\text{cm}$. The extension per newton agrees too: $\dfrac{2.0\,\text{cm}}{4.0\,\text{N}} = 0.50\,\tfrac{\text{cm}}{\text{N}}$ and $0.50 \cdot 12 = 6.0$.
 
 ## fy3-1-L1-03
 **Given:** $m = 30\,\text{kg}$; from the table $g_\text{Moon} = 1.62\,\text{m/s}^2$
