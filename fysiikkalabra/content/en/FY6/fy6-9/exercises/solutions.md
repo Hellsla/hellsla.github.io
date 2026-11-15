@@ -13,9 +13,9 @@
 **Find:** the charge $Q$ in coulombs
 **Principle:** The capacity is the charge that the battery moves from full to empty. An ampere-hour is the charge that a current of $1\,\text{A}$ moves in an hour, so it is converted to coulombs by substituting $1\,\text{A} = 1\,\text{C/s}$ and $1\,\text{h} = 3600\,\text{s}$.
 **Formula:** $Q = It$
-**Conversions:** $3000\,\text{mAh} = 3000 \cdot 0.001\,\text{Ah} = 3.0\,\text{Ah}$ and $1\,\text{Ah} = 1\,\text{A} \cdot 3600\,\text{s}$
-**Substitution:** $Q = 3.0\,\text{A} \cdot 3600\,\text{s} = 10\,800\,\text{C}$
-**Answer:** $1.08 \cdot 10^{4}\,\text{C}$, that is, about $11\,000\,\text{C}$, two significant figures like the capacity $3.0\,\text{Ah}$.
+**Conversions:** $3000\,\text{mAh} = 3000 \cdot 0.001\,\text{Ah} = 3.000\,\text{Ah}$ and $1\,\text{Ah} = 1\,\text{A} \cdot 3600\,\text{s}$
+**Substitution:** $Q = 3.000\,\text{A} \cdot 3600\,\text{s} = 10\,800\,\text{C}$
+**Answer:** $1.080 \cdot 10^{4}\,\text{C}$, four significant figures like the capacity $3000\,\text{mAh}$.
 **Reasonableness:** One ampere-hour is $3600\,\text{C}$, and three ampere-hours is three times as much, $10\,800\,\text{C}$. In coulombs the number is large, because an hour has $3600$ seconds.
 
 ## fy6-9-L1-03
@@ -25,7 +25,7 @@
 **Formula:** $W = UQ$
 **Conversions:** Not needed: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$.
 **Substitution:** $W = 36\,\text{V} \cdot 13\,\text{Ah} = 468\,\text{Wh}$
-**Answer:** $470\,\text{Wh}$, two significant figures like the voltage and the capacity.
+**Answer:** $4.7 \cdot 10^{2}\,\text{Wh}$, or $0.47\,\text{kWh}$, two significant figures like the voltage and the capacity.
 **Reasonableness:** The estimate $40\,\text{V} \cdot 12\,\text{Ah} = 480\,\text{Wh}$ is close. About half a kilowatt-hour is usual for an electric-bike battery, and it lasts for tens of kilometres.
 
 ## fy6-9-L1-04
@@ -66,7 +66,7 @@
 **Formula:** $U_\text{ch} - RI - R_\text{s} I - E = 0$, from which $R_\text{s} = \dfrac{U_\text{ch} - E}{I} - R$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Substitution:** $R_\text{s} = \dfrac{5.0\,\text{V} - 3.8\,\text{V}}{1.2\,\text{A}} - 0.80\,\Omega = 1.0\,\Omega - 0.80\,\Omega = 0.20\,\Omega$
-**Answer:** $0.20\,\Omega$, to a hundredth of an ohm like the resistance $0.80\,\Omega$; the difference $1.2\,\text{V}$ and the current limit the precision.
+**Answer:** $0.2\,\Omega$, to a tenth of an ohm like the term $(U_\text{ch} - E) : I = 1.0\,\Omega$, which limits the precision of the difference.
 **Reasonableness:** Check: $1.2\,\text{A} \cdot (0.80\,\Omega + 0.20\,\Omega) = 1.2\,\text{V}$, which is the difference between the voltages of the charger and the cell. The result is positive and suits the internal resistance of a small battery cell.
 
 ## fy6-9-L2-03
@@ -171,7 +171,7 @@ Only the unit of $UQ$ is a unit of energy, and it is also the formula for the en
 **Formula:** $W_\text{loss} = U_\text{ch} I t - E I t$, from which $W_\text{loss} = (U_\text{ch} - E)\, I t$
 **Conversions:** Not needed: hours and amperes multiplied by volts give watt-hours directly.
 **Substitution:** $W_\text{loss} = (4.2\,\text{V} - 3.7\,\text{V}) \cdot 2.0\,\text{A} \cdot 1.5\,\text{h} = 0.5\,\text{V} \cdot 3.0\,\text{Ah} = 1.5\,\text{Wh}$
-**Answer:** $1.5\,\text{Wh}$, two significant figures like the current $2.0\,\text{A}$ and the time $1.5\,\text{h}$. Answer to a): what is wrong in the student's reasoning is that all the energy given by the charger is stored in the battery, since part of it becomes internal energy of the resistances.
+**Answer:** $1.5\,\text{Wh}$, two significant figures like the current $2.0\,\text{A}$ and the time $1.5\,\text{h}$; the result is to a tenth of a watt-hour like the difference of the energies $12.6\,\text{Wh} - 11.1\,\text{Wh}$. Answer to a): what is wrong in the student's reasoning is that all the energy given by the charger is stored in the battery, since part of it becomes internal energy of the resistances.
 **Reasonableness:** The energy stored in the battery is $3.7\,\text{V} \cdot 2.0\,\text{A} \cdot 1.5\,\text{h} = 11.1\,\text{Wh}$, and the sum $11.1\,\text{Wh} + 1.5\,\text{Wh}$ is the $12.6\,\text{Wh}$ given by the charger. The resistances are together $0.5\,\text{V} : 2.0\,\text{A} = 0.25\,\Omega$, and the energy that becomes internal energy in them is $0.25\,\Omega \cdot (2.0\,\text{A})^2 \cdot 1.5\,\text{h} = 1.5\,\text{Wh}$, the same result.
 
 ## fy6-9-L2-07

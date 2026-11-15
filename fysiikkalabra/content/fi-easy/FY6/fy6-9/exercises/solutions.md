@@ -14,9 +14,9 @@
 **Kysytty:** varaus $Q$ coulombeina
 **Periaate:** Kapasiteetti on varaus, jonka akku siirtää täydestä tyhjäksi. Ampeeritunti on varaus, jonka virta $1\,\text{A}$ siirtää tunnissa. Se muunnetaan coulombeiksi sijoittamalla $1\,\text{A} = 1\,\text{C/s}$ ja $1\,\text{h} = 3600\,\text{s}$.
 **Kaava:** $Q = It$
-**Muunnokset:** $3000\,\text{mAh} = 3000 \cdot 0{,}001\,\text{Ah} = 3{,}0\,\text{Ah}$ ja $1\,\text{Ah} = 1\,\text{A} \cdot 3600\,\text{s}$
-**Sijoitus:** $Q = 3{,}0\,\text{A} \cdot 3600\,\text{s} = 10\,800\,\text{C}$
-**Vastaus:** $1{,}08 \cdot 10^{4}\,\text{C}$ eli noin $11\,000\,\text{C}$, kaksi merkitsevää numeroa kuten kapasiteetissa $3{,}0\,\text{Ah}$.
+**Muunnokset:** $3000\,\text{mAh} = 3000 \cdot 0{,}001\,\text{Ah} = 3{,}000\,\text{Ah}$ ja $1\,\text{Ah} = 1\,\text{A} \cdot 3600\,\text{s}$
+**Sijoitus:** $Q = 3{,}000\,\text{A} \cdot 3600\,\text{s} = 10\,800\,\text{C}$
+**Vastaus:** $1{,}080 \cdot 10^{4}\,\text{C}$, neljä merkitsevää numeroa kuten kapasiteetissa $3000\,\text{mAh}$.
 **Järkevyys:** Yksi ampeeritunti on $3600\,\text{C}$. Kolme ampeerituntia on kolme kertaa niin paljon, $10\,800\,\text{C}$. Coulombeina luku on suuri, koska tunnissa on $3600$ sekuntia.
 
 ## fy6-9-L1-03
@@ -26,7 +26,7 @@
 **Kaava:** $W = UQ$
 **Muunnokset:** Ei tarvita: $1\,\text{V} \cdot 1\,\text{Ah} = 1\,\text{Wh}$.
 **Sijoitus:** $W = 36\,\text{V} \cdot 13\,\text{Ah} = 468\,\text{Wh}$
-**Vastaus:** $470\,\text{Wh}$, kaksi merkitsevää numeroa kuten jännitteessä ja kapasiteetissa.
+**Vastaus:** $4{,}7 \cdot 10^{2}\,\text{Wh}$ eli $0{,}47\,\text{kWh}$, kaksi merkitsevää numeroa kuten jännitteessä ja kapasiteetissa.
 **Järkevyys:** Arvio $40\,\text{V} \cdot 12\,\text{Ah} = 480\,\text{Wh}$ on lähellä. Noin puoli kilowattituntia on sähköpyörän akulle tavallinen. Sillä ajaa kymmeniä kilometrejä.
 
 ## fy6-9-L1-04
@@ -67,7 +67,7 @@
 **Kaava:** $U_\text{lat} - RI - R_\text{s} I - E = 0$, josta $R_\text{s} = \dfrac{U_\text{lat} - E}{I} - R$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{s} = \dfrac{5{,}0\,\text{V} - 3{,}8\,\text{V}}{1{,}2\,\text{A}} - 0{,}80\,\Omega = 1{,}0\,\Omega - 0{,}80\,\Omega = 0{,}20\,\Omega$
-**Vastaus:** $0{,}20\,\Omega$, sadasosaohmin tarkkuudella kuten resistanssi $0{,}80\,\Omega$; erotus $1{,}2\,\text{V}$ ja virta rajoittavat tarkkuutta.
+**Vastaus:** $0{,}2\,\Omega$, kymmenesosaohmin tarkkuudella kuten termi $(U_\text{lat} - E) : I = 1{,}0\,\Omega$, joka rajoittaa erotuksen tarkkuutta.
 **Järkevyys:** Tarkistus: $1{,}2\,\text{A} \cdot (0{,}80\,\Omega + 0{,}20\,\Omega) = 1{,}2\,\text{V}$, mikä on laturin ja kennon jännitteiden erotus. Tulos on positiivinen ja pienen akkukennon sisäiselle resistanssille sopiva.
 
 ## fy6-9-L2-03
@@ -172,7 +172,7 @@ Vain lausekkeen $UQ$ yksikkö on energian yksikkö. Se on myös akun energian ka
 **Kaava:** $W_\text{häviö} = U_\text{lat} I t - E I t$, josta $W_\text{häviö} = (U_\text{lat} - E)\, I t$
 **Muunnokset:** Ei tarvita: tunnit ja ampeerit voltteihin kerrottuna antavat suoraan wattitunteja.
 **Sijoitus:** $W_\text{häviö} = (4{,}2\,\text{V} - 3{,}7\,\text{V}) \cdot 2{,}0\,\text{A} \cdot 1{,}5\,\text{h} = 0{,}5\,\text{V} \cdot 3{,}0\,\text{Ah} = 1{,}5\,\text{Wh}$
-**Vastaus:** $1{,}5\,\text{Wh}$, kaksi merkitsevää numeroa kuten virrassa $2{,}0\,\text{A}$ ja ajassa $1{,}5\,\text{h}$. Vastaus a): oppilaan päättelyssä on väärin se, että kaikki laturin antama energia varastoituu akkuun. Osa energiasta muuttuu resistanssien sisäenergiaksi.
+**Vastaus:** $1{,}5\,\text{Wh}$, kaksi merkitsevää numeroa kuten virrassa $2{,}0\,\text{A}$ ja ajassa $1{,}5\,\text{h}$; tulos on kymmenesosawattitunnin tarkkuudella kuten energioiden erotus $12{,}6\,\text{Wh} - 11{,}1\,\text{Wh}$. Vastaus a): oppilaan päättelyssä on väärin se, että kaikki laturin antama energia varastoituu akkuun. Osa energiasta muuttuu resistanssien sisäenergiaksi.
 **Järkevyys:** Akkuun varastoituu $3{,}7\,\text{V} \cdot 2{,}0\,\text{A} \cdot 1{,}5\,\text{h} = 11{,}1\,\text{Wh}$. Summa $11{,}1\,\text{Wh} + 1{,}5\,\text{Wh}$ on laturin antama $12{,}6\,\text{Wh}$. Resistanssit ovat yhteensä $0{,}5\,\text{V} : 2{,}0\,\text{A} = 0{,}25\,\Omega$. Niissä muuttuu energiaa $0{,}25\,\Omega \cdot (2{,}0\,\text{A})^2 \cdot 1{,}5\,\text{h} = 1{,}5\,\text{Wh}$. Tulos on sama.
 
 ## fy6-9-L2-07
