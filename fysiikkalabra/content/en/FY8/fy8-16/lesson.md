@@ -424,7 +424,8 @@ v = c\,z
 ```
 where $v$ is the recession speed and $c = 2.998 \cdot 10^{5}\,\text{km/s}$ the speed of light. For example, a redshift of $z = 0.010$ means a speed of $$
 \begin{aligned}
-v &= 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.010 \\
+&v \\
+&= 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.010 \\
 &\approx 3000\,\text{km/s}
 \end{aligned}
 $$. For very distant galaxies with a large redshift, the equation no longer holds.

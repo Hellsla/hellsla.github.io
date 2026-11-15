@@ -473,7 +473,8 @@ where $m_\text{initial}$ is the total mass of the starting materials, $m_\text{f
 ### From atomic mass units to megaelectronvolts
 The chapter *Mass defect and nuclear binding energy* stated that the energy corresponding to an atomic mass unit is $931.5\,\text{MeV}$, that is, $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. When the mass difference is substituted in this unit, the factor $c^2$ cancels: for example, for a mass difference of $0.1\,\text{u}$ we get $$
 \begin{aligned}
-Q &= 0.1 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&Q \\
+&= 0.1 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
 &= 93.15\,\text{MeV}
 \end{aligned}
 $$.
@@ -656,7 +657,8 @@ $$. The atomic masses are: uranium-235 $235.0439282\,\text{u}$, barium-141 $140.
 
 **Substitution.** The mass of the starting materials is $m_\text{initial} = 1.0086649\,\text{u} + 235.0439282\,\text{u} = 236.0525931\,\text{u}$ and that of the products $$
 \begin{aligned}
-m_\text{final} &= 140.9144033\,\text{u} \\
+&m_\text{final} \\
+&= 140.9144033\,\text{u} \\
 &+ 91.9261731\,\text{u} \\
 &+ 3 \cdot 1.0086649\,\text{u} \\
 &= 235.8665711\,\text{u}

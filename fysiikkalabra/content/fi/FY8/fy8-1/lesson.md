@@ -164,7 +164,8 @@ Tällä mallilla jokainen havainto selittyy. Samanvärisellä valolla intensitee
 ### Elektronivoltti
 Fotonin ja elektronin energiat ovat jouleina hyvin pieniä lukuja, joten niille käytetään usein yksikköä **elektronivoltti** ($\text{eV}$). Yksi elektronivoltti on energia, jonka elektroni saa, kun se kiihtyy sähkökentässä $1\,\text{V}$:n jännitteen läpi. Koska elektronin varauksen suuruus on $e = 1{,}602 \cdot 10^{-19}\,\text{C}$, on $$
 \begin{aligned}
-1\,\text{eV} &= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} \\
+&1\,\text{eV} \\
+&= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} \\
 &= 1{,}602 \cdot 10^{-19}\,\text{J}
 \end{aligned}
 $$. Muunnos tehdään sijoittamalla: esimerkiksi $$

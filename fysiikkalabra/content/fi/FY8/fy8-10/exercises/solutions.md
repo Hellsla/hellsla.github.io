@@ -307,12 +307,9 @@ $$. Energiaa vapautuu, koska helium-4 on sidosenergiakäyrällä paljon ylempän
 **Annettu:** taulukon atomimassat ja $\tfrac{E_\text{B}}{A}$-arvot, $m_\text{n} = 1{,}008665\,\text{u}$, $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$, $1\,\text{u} = 1{,}66054 \cdot 10^{-27}\,\text{kg}$, $1\,\text{MeV} = 1{,}602177 \cdot 10^{-13}\,\text{J}$, näytteen massa $m = 1{,}00\,\text{g}$
 **Kysytty:** a) ja b) reaktioenergia $Q$ kahdella tavalla, c) vapautuva kokonaisenergia $E$ yksikössä $10^{10}\,\text{J}$
 **Periaate:** Reaktiossa massaluku ja varausluku säilyvät, mutta massa pienenee, ja massan väheneminen vapautuu energiana $Q = (m_\text{alku} - m_\text{loppu})\,c^2$. Sama energia saadaan sidosenergioista: vapaan neutronin sidosenergia on nolla, joten $Q$ on syntyvien ytimien sidosenergioiden summa vähennettynä uraanin sidosenergialla. Kun yhden ytimen energia tunnetaan, näytteen energia saadaan kertomalla se ytimien lukumäärällä.
-**Kaava:** a) $$
-\begin{aligned}
-Q &= (m_\text{U} + m_\text{n} - m_\text{Ba} - m_\text{Kr} \\
+**Kaava:** a) $$\begin{aligned} Q &= (m_\text{U} + m_\text{n} - m_\text{Ba} - m_\text{Kr} \\
 &- 3\,m_\text{n})\,c^2
-\end{aligned}
-$$; b) $$
+\end{aligned}$$; b) $$
 \begin{aligned}
 Q &= E_\text{B}(\text{Ba}) + E_\text{B}(\text{Kr}) \\
 &- E_\text{B}(\text{U})

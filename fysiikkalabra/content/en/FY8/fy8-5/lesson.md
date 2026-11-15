@@ -1417,7 +1417,8 @@ The electron of a hydrogen atom moves from the $3\text{d}$ orbital to the $2\tex
 
 **Substitution.** First we calculate the numerator $$
 \begin{aligned}
-hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&hc \\
+&= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
 &= 1.98647 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}

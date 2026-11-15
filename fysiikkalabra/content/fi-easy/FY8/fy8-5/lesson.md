@@ -1429,7 +1429,8 @@ Vetyatomin elektroni siirtyy $3\text{d}$-orbitaalilta $2\text{p}$-orbitaalille, 
 
 **Sijoitus.** Lasketaan ensin osoittaja $$
 \begin{aligned}
-hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&hc \\
+&= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
 &= 1{,}98647 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}

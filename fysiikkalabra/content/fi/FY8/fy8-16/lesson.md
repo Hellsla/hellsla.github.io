@@ -424,7 +424,8 @@ v = c\,z
 ```
 missä $v$ on etääntymisnopeus ja $c = 2{,}998 \cdot 10^{5}\,\text{km/s}$ valon nopeus. Esimerkiksi punasiirtymä $z = 0{,}010$ tarkoittaa nopeutta $$
 \begin{aligned}
-v &= 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}010 \\
+&v \\
+&= 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}010 \\
 &\approx 3000\,\text{km/s}
 \end{aligned}
 $$. Hyvin kaukaisille galakseille, joiden punasiirtymä on suuri, yhtälö ei enää päde.

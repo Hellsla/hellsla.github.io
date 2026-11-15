@@ -120,12 +120,9 @@ $$, fotonin energia on $\tfrac{hc}{\lambda} = \tfrac{1{,}9865 \cdot 10^{-25}\,\t
 **Annettu:** täyttöjärjestys $1\text{s}$, $2\text{s}$, $2\text{p}$, $3\text{s}$, $3\text{p}$; orbitaalille enintään kaksi elektronia; $3\text{p}$-alikuori puoliksi täynnä
 **Kysytty:** atomin elektronien määrä $N$
 **Periaate:** Perustilassa elektronit täyttävät orbitaalit alimmasta energiasta alkaen, joten $3\text{p}$-alikuorelle tulee elektroneja vasta, kun $1\text{s}$, $2\text{s}$, $2\text{p}$ ja $3\text{s}$ ovat täynnä. s-alikuorella on yksi orbitaali ja p-alikuorella kolme, joten niille mahtuu $2$ ja $6$ elektronia. Puoliksi täyteen $3\text{p}$-alikuoreen kuuluu puolet sen enimmäismäärästä.
-**Kaava:** $$
-\begin{aligned}
-N &= N_\text{1s} + N_\text{2s} + N_\text{2p} + N_\text{3s} \\
+**Kaava:** $$\begin{aligned} N &= N_\text{1s} + N_\text{2s} + N_\text{2p} + N_\text{3s} \\
 &+ \dfrac{N_\text{3p,max}}{2}
-\end{aligned}
-$$
+\end{aligned}$$
 **Muunnokset:** Ei tarvita, koska kysytään lukumäärää.
 **Sijoitus:** $N = 2 + 2 + 6 + 2 + \dfrac{6}{2} = 2 + 2 + 6 + 2 + 3 = 15$
 **Vastaus:** $15$ elektronia (alkuaine on fosfori, konfiguraatio $1\text{s}^2\,2\text{s}^2\,2\text{p}^6\,3\text{s}^2\,3\text{p}^3$); tulos on tarkka kokonaisluku.

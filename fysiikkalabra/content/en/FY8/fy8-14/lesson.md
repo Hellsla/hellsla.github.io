@@ -447,7 +447,8 @@ E_\gamma = m_e c^2
 
 where $E_\gamma$ is the energy of one photon ($\text{J}$), $m_e = 9.109 \cdot 10^{-31}\,\text{kg}$ is the mass of the electron and the positron, and $c = 2.998 \cdot 10^{8}\,\text{m/s}$ is the speed of light. Substituting gives $$
 \begin{aligned}
-E_\gamma &= 9.109 \cdot 10^{-31}\,\text{kg} \\
+&E_\gamma \\
+&= 9.109 \cdot 10^{-31}\,\text{kg} \\
 &\cdot (2.998 \cdot 10^{8}\,\text{m/s})^2 \\
 &= 8.187 \cdot 10^{-14}\,\text{J}
 \end{aligned}

@@ -164,7 +164,8 @@ With this model every observation is explained. For light of one colour, the int
 ### The electronvolt
 The energies of photons and electrons are very small numbers in joules, so they are often given in the unit **electronvolt** ($\text{eV}$). One electronvolt is the energy an electron gains when it is accelerated in an electric field through a voltage of $1\,\text{V}$. Since the magnitude of the charge of the electron is $e = 1.602 \cdot 10^{-19}\,\text{C}$, we have $$
 \begin{aligned}
-1\,\text{eV} &= 1.602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} \\
+&1\,\text{eV} \\
+&= 1.602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} \\
 &= 1.602 \cdot 10^{-19}\,\text{J}
 \end{aligned}
 $$. The conversion is done by substitution: for example $$

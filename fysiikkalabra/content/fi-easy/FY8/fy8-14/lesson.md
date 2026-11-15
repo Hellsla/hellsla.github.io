@@ -477,7 +477,8 @@ E_\gamma = m_e c^2
 
 Tässä $E_\gamma$ on yhden fotonin energia ($\text{J}$). Massa $m_e = 9{,}109 \cdot 10^{-31}\,\text{kg}$ on elektronin ja positronin massa. Nopeus $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ on valon nopeus. Sijoittamalla saadaan $$
 \begin{aligned}
-E_\gamma &= 9{,}109 \cdot 10^{-31}\,\text{kg} \\
+&E_\gamma \\
+&= 9{,}109 \cdot 10^{-31}\,\text{kg} \\
 &\cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2 \\
 &= 8{,}187 \cdot 10^{-14}\,\text{J}
 \end{aligned}

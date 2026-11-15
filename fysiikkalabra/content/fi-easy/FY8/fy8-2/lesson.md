@@ -253,7 +253,8 @@ Neonvalomainoksen spektrissä on voimakas punaoranssi viiva aallonpituudella $64
 
 **Sijoitus.** Lasketaan ensin tulo $$
 \begin{aligned}
-hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&hc \\
+&= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
 &= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}

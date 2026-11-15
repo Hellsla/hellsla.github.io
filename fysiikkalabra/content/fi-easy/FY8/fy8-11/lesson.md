@@ -473,7 +473,8 @@ missä $m_\text{alku}$ on lähtöaineiden ja $m_\text{loppu}$ tuotteiden yhteenl
 ### Atomimassayksiköstä megaelektronivoltteihin
 Luvussa *Massavaje ja ytimen sidosenergia* todettiin, että atomimassayksikköä vastaava energia on $931{,}5\,\text{MeV}$, eli $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Kun massaero sijoitetaan tähän yksikköön, tekijä $c^2$ supistuu. Esimerkiksi massaerolla $0{,}1\,\text{u}$ saadaan $$
 \begin{aligned}
-Q &= 0{,}1 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&Q \\
+&= 0{,}1 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
 &= 93{,}15\,\text{MeV}
 \end{aligned}
 $$.
@@ -658,7 +659,8 @@ $$. Atomimassat ovat: uraani-235 $235{,}0439282\,\text{u}$, barium-141 $140{,}91
 
 **Sijoitus.** Lähtöaineiden massa on $m_\text{alku} = 1{,}0086649\,\text{u} + 235{,}0439282\,\text{u} = 236{,}0525931\,\text{u}$ ja tuotteiden $$
 \begin{aligned}
-m_\text{loppu} &= 140{,}9144033\,\text{u} \\
+&m_\text{loppu} \\
+&= 140{,}9144033\,\text{u} \\
 &+ 91{,}9261731\,\text{u} \\
 &+ 3 \cdot 1{,}0086649\,\text{u} \\
 &= 235{,}8665711\,\text{u}

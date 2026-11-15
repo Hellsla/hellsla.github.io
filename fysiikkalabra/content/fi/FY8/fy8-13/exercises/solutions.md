@@ -140,13 +140,9 @@ $$
 **Annettu:** maksan ekvivalenttiannos $H_\text{maksa} = 2{,}0\,\text{mSv}$ ja painotuskerroin $w_\text{maksa} = 0{,}04$, mahalaukun ekvivalenttiannos $H_\text{mahalaukku} = 1{,}0\,\text{mSv}$ ja painotuskerroin $w_\text{mahalaukku} = 0{,}12$
 **Kysytty:** efektiivinen annos $H_\text{E}$ millisieverteinä
 **Periaate:** Efektiivinen annos saadaan kertomalla jokaisen säteilytetyn kudoksen ekvivalenttiannos sen painotuskertoimella ja laskemalla tulot yhteen. Muut kudokset eivät saa annosta, joten ne eivät lisää summaan mitään.
-**Kaava:** $$
-\begin{aligned}
-&H_\text{E} \\
-&= w_\text{maksa} H_\text{maksa} \\
+**Kaava:** $$\begin{aligned} H_\text{E} &= w_\text{maksa} H_\text{maksa} \\
 &+ w_\text{mahalaukku} H_\text{mahalaukku}
-\end{aligned}
-$$
+\end{aligned}$$
 **Muunnokset:** Ei tarvita: kun ekvivalenttiannokset ovat millisieverteinä, efektiivinen annos saadaan millisieverteinä, koska painotuskertoimet ovat paljaita lukuja.
 **Sijoitus:** $$
 \begin{aligned}

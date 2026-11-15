@@ -302,7 +302,8 @@ energy released in a nuclear reaction :: Q = (m_\text{initial} - m_\text{final})
 ```
 where $m_\text{initial}$ is the sum of the masses of the starting materials and $m_\text{final}$ the sum of the masses of the particles formed. When $Q > 0$, energy is released as the kinetic energy of the particles formed and as gamma radiation; when $Q < 0$, the reaction needs energy. The formula counts the masses of all the particles on both sides. The atomic masses in tables also include the electrons of the atoms. In alpha decay and most nuclear reactions there are equally many electrons on both sides, so atomic masses can be put into the formula directly. For example, in the alpha decay of uranium-238, ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$, the mass decreases by $0.004583\,\text{u}$, so $$
 \begin{aligned}
-Q &= 0.004583 \cdot 931.5\,\text{MeV} \\
+&Q \\
+&= 0.004583 \cdot 931.5\,\text{MeV} \\
 &\approx 4.27\,\text{MeV}
 \end{aligned}
 $$.

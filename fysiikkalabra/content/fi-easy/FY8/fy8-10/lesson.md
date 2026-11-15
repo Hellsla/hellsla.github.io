@@ -302,7 +302,8 @@ ydinreaktiossa vapautuva energia :: Q = (m_\text{alku} - m_\text{loppu})\,c^2
 ```
 Tässä $m_\text{alku}$ on lähtöaineiden massojen summa ja $m_\text{loppu}$ on syntyvien hiukkasten massojen summa. Kun $Q > 0$, energiaa vapautuu. Se muuttuu syntyvien hiukkasten liike-energiaksi ja gammasäteilyksi. Kun $Q < 0$, reaktio tarvitsee energiaa. Kaavaan lasketaan kummallakin puolella kaikkien hiukkasten massat. Taulukoiden atomimassoihin sisältyvät myös atomien elektronit. Alfahajoamisessa ja useimmissa ydinreaktioissa elektroneja on kummallakin puolella yhtä monta. Silloin atomimassat voi sijoittaa kaavaan suoraan. Esimerkiksi uraani-238:n alfahajoamisessa ${}^{238}_{92}\text{U} \to {}^{234}_{90}\text{Th} + {}^{4}_{2}\text{He}$ massa pienenee $0{,}004583\,\text{u}$. Siksi $$
 \begin{aligned}
-Q &= 0{,}004583 \cdot 931{,}5\,\text{MeV} \\
+&Q \\
+&= 0{,}004583 \cdot 931{,}5\,\text{MeV} \\
 &\approx 4{,}27\,\text{MeV}
 \end{aligned}
 $$.

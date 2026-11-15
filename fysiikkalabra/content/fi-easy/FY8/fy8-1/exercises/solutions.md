@@ -219,13 +219,10 @@ $$. Kaikki mitatut aallonpituudet $365$–$505\,\text{nm}$ ovat sitä lyhyempiä
 **Kysytty:** irrotustöiden erotus $W_\text{B} - W_\text{A}$ elektronivoltteina ja se, kumman metallin irrotustyö on suurempi
 **Periaate:** Valosähköisen yhtälön mukaan $E_\text{k,max} = hf - W$ kummallekin metallille. Samalla taajuudella fotonin energia $hf$ on sama. Siksi liike-energioiden erotus on irrotustöiden erotus. Kummankin suoran kulmakerroin on $h$.
 **Kuvaajan lukeminen:** Paperille piirretyssä kuvaajassa A:n suora kulkee B:n suoran yläpuolella. Suorien pystysuuntainen väli on joka taajuudella noin $0{,}9\,\text{eV}$. Suorat ovat siis yhdensuuntaiset. Kulmakertoimet ovat $\tfrac{2{,}26\,\text{eV} - 1{,}01\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}2 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$ ja $\tfrac{1{,}35\,\text{eV} - 0{,}12\,\text{eV}}{3{,}0 \cdot 10^{14}\,\text{Hz}} = 4{,}1 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$. Kumpikin on siis likimain $\tfrac{h}{e} = 4{,}14 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$.
-**Kaava:** $$
-\begin{aligned}
-E_\text{k,A} - E_\text{k,B} &= (hf - W_\text{A}) \\
+**Kaava:** $$\begin{aligned} E_\text{k,A} - E_\text{k,B} &= (hf - W_\text{A}) \\
 &- (hf - W_\text{B}) \\
 &= W_\text{B} - W_\text{A}
-\end{aligned}
-$$
+\end{aligned}$$
 **Muunnokset:** Ei tarvita. Kaikki energiat ovat elektronivoltteina.
 **Sijoitus:** Erotukset ovat $0{,}89\,\text{eV}$, $0{,}91\,\text{eV}$, $0{,}90\,\text{eV}$ ja $0{,}91\,\text{eV}$. Niiden summa on $3{,}61\,\text{eV}$, joten $D = \dfrac{3{,}61\,\text{eV}}{4} = 0{,}9025\,\text{eV}$
 **Vastaus:** Metallin B irrotustyö on suurempi. Se on $0{,}90\,\text{eV}$ suurempi kuin A:n. Vastauksessa on kaksi merkitsevää numeroa. Suorat ovat yhdensuuntaiset, koska molempien kulmakerroin on $h$. Metalli vaikuttaa vain siihen, kuinka paljon suora on siirtynyt. Siirtymä on irrotustöiden ero.
