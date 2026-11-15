@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 5b5a2b0f03e07467
+CONTENT-HASH: 43f9031dcce617c3
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: 5b5a2b0f03e07467
 - none
 
 ## Checked
-- Delta of solutions.md only (Järkevyys sentence of one level 1 task reordered: 'Jos vettä on 50 cm³, sen massa on 50 g'). Opened fi-easy fy1-7-open-exercises-1280-8: the solution card lays out cleanly, maths and units in LaTeX, the Järkevyys block reads fluently and the order is natural. No figure changed.
+- delta review 5d reflow, round 1: opened the 360 px captures (inquiry 01-06, 12-13, solutions 07-11); nothing clipped or scrolling, rows break at sensible points, equals signs aligned
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

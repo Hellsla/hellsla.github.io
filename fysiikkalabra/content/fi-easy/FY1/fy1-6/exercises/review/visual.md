@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: cad0abb245786510
+CONTENT-HASH: 52fe9b124a8c1f53
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-6-L1-09 text — "Kuun pinnalla" and "Kuun pinnalla" in two sentences — vary the second.
+- none
 
 ## Checked
-- Delta (new MAFY task fy1-6-L1-09 and its solution; figure tasks with apple, two-planets, light-gates), captures rebuilt for this hash.
-- Opened at 1280 px: open-exercises-1280 part holding fy1-6-L1-09 (task, hint, lock, answer field, solution rows, Vastaus, Järkevyys): KaTeX renders, chains aligned, thin spaces, decimal commas, no clipping.
-- Figure tasks are teacher-approved drawings (layout only); the neighbouring tasks' captures showed no layout damage. Packet carries no SCOPE line, so none is written.
+- delta review 5d reflow, round 1: opened the 360 px captures (inquiry 01-02, 07, solutions 03-06); nothing clipped or scrolling, rows break at sensible points, equals signs aligned
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

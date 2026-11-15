@@ -1,17 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 975837ebd5d3d00b
+VERDICT: FAIL
+CONTENT-HASH: 4add4725eaf9f05d
 
 ## Blocking
-- none
+- [Major] content/fi-easy/FY1/fy1-1/exercises/exercises.json, Voyager 2 task (captures 14-15) — the student's quoted solution lifts two formulas into displays, and the sentence marks after them are not set inside the last row: '$$…$$. Etäisyys on' and '$$. Voyager olisi…' leave a lone '.' at the start of the next line, and the quotation is chopped into three blocks — reads broken, and a lone full stop is an explicit failure of the reflow rule — fix: set the full stop as the last-row '\text{.}' (or put the sentence mark inside the display), or keep these two short formulas inline split at '=' ('$s = vt$ $= 15{,}341\,\text{km/s}\cdot7{,}25$ $= 111{,}2\,\text{km}$') so the quote wraps as running text; then recapture.
 
 ## Polish
-- [Minor] hint "Arvo on MAFY-taulukon taulukossa …" — "taulukon taulukossa" reads clumsily — write "Arvo löytyy MAFY-taulukosta, taulukosta …".
-- [Minor] fy1-1-L1-10 — "MAFY-taulukko" is not explained for S2 readers as fy1-5…8 do ("koulun fysiikan taulukkokirja") — add that sentence.
+- [Minor] fy1-1 solutions captures 07-08 — '(' alone at line end before the formula — keep it with the formula.
 
 ## Checked
-- Delta (new MAFY task fy1-1-L1-10 and its solution; figure tasks with eclipse, rain-field), captures rebuilt for this hash.
-- Opened at 1280 px: open-exercises-1280 part holding fy1-1-L1-10 (task, hint, lock, answer field, solution rows, Vastaus, Järkevyys): KaTeX renders, chains aligned, thin spaces, decimal commas, no clipping.
-- Figure tasks are teacher-approved drawings (layout only); the neighbouring tasks' captures showed no layout damage. Packet carries no SCOPE line, so none is written.
+- delta review 5d reflow, round 1: opened the 360 px captures (inquiry 01, solutions 02, 05-13); nothing clipped or scrolling, rows break at sensible points, equals signs aligned, except 14-15.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 3 · Finnish 4 · accessibility 4

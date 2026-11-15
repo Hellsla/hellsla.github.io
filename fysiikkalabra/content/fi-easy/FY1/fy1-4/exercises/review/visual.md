@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 91a38165a32382cd
+CONTENT-HASH: 45df921ac1e3540c
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: 91a38165a32382cd
 - none
 
 ## Checked
-- Delta of solutions.md only (Järkevyys sentence of one level 1 task reordered: 'Jos vettä olisi 45 cm³, sen massa olisi noin 45 g'). Opened fi-easy fy1-4-open-exercises-1280-9: the solution card lays out cleanly, maths and units in LaTeX, the Järkevyys block reads fluently and the order is natural. No figure changed.
+- delta review 5d reflow, round 1: opened the 360 px captures (inquiry 01-02, exercises 04-12, solutions 03, 13); nothing clipped or scrolling, rows break at sensible points, equals signs aligned
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
