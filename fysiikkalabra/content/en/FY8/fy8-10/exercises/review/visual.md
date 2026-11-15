@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 58292ca053ef9493
-Round 1
+CONTENT-HASH: ad9545351c124c22
+SCOPE: delta reflow from 81ce1002c45b50ff base d4ee68c800
 
 ## Blocking
 (none)
@@ -9,8 +9,7 @@ Round 1
 (none)
 
 ## Checked
-- Own scratch script, 390 px, task card opened with Answer and solution: opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-b3-r5w1/s-en-fy8-10.png (the whole new card fy8-10-L2-08 cut into columns for legibility: binding energy of gold-197, four options; wrong option's feedback open); read in full, including the stacked fractions and the model-answer boxes.
-- By script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's screenshot list was empty and not used; solutions.md and answers.py read as source only.
+- delta reflow, en: opened open-exercises-1280-3 (10-3 solution): aligned blocks, equals signs aligned, sentence marks inside the last row, no clipping. Layout of the card around the blocks intact; no 390 px open-solution capture exists, so phone wrapping is judged by the build's rule only. Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

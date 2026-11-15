@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 713a11e75112cd7e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 66970dfd23a04566
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] stage rows with a lone unit continuation row (e.g. "· 2,998 · 10^8 m/s" in fy8-4) could join the "=" column; existing layout, not a regression.
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- batch delta review, round 2: no capture of this lesson was opened. Judged by inference from the shared mathlayout.with_punct build, which I saw working in fy8-4, fy8-8, fy8-13 (and fy8-1 theory); this lesson's own lifted formulas were not individually seen. The lesson's own diff (formula names, reflow) was not inspected in a capture.

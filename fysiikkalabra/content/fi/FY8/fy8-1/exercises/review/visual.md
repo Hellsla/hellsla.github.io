@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8dc2567292c69c38
-SCOPE: delta added-exercise from 5b627e2749906f73 base 5a45b28682e8
+CONTENT-HASH: 35ee75510d7fa791
+SCOPE: delta reflow from 8dc2567292c69c38 base cf5f907
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none new; the round-1 Minor on the small figure in the task card stands)
+- none
 
 ## Checked
-- Own scratch captures of the L2-08 card with every solution open at 360 and 390 px (fi), read in full from the preview build; review/shots not used.
-- Substitution row now /bin/bash.4136 · (12 − 5.56) = 2.66$ and splits into two aligned rows; no formula in the card is wider than the card at 360 or 390 px (measured in the browser); the Conversions and Reasonableness lines read cleanly, the unseen 2.3 eV is gone.
-- Figure kuvaaja-ab seen in the card: axes, units, grid, A and B distinct.
-- L1-10 and L2-09 were passed in round 1 and are unchanged.
+- Delta round 4, calculation chains re-broken into aligned rows. Opened fy8-1 open-exercises-L3-1280-6 (Kaava line and Sijoitus blocks, aligned, nothing clipped); this set's changed blocks judged from source and the shared renderer.
+- Kaava lines keep the equals sign in the first row; sentence marks sit inside the last row.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

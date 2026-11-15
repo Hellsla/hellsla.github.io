@@ -1,7 +1,7 @@
 [
   {
     "q": "Vismutti-209-ytimen sidosenergia on $1640\\,\\text{MeV}$ ja kalsium-40-ytimen sidosenergia on $342\\,\\text{MeV}$. Kumpi ydin on tiiviimmin sidottu?",
-    "a": "Kalsium-40. Sidoksen lujuutta kuvaa sidosenergia nukleonia kohti. Vismutilla se on $1640\\,\\text{MeV} : 209 \\approx 7{,}85\\,\\text{MeV}$ ja kalsiumilla $342\\,\\text{MeV} : 40 \\approx 8{,}55\\,\\text{MeV}$. Vismutin koko sidosenergia on suurempi vain siksi, että siinä on enemmän nukleoneja."
+    "a": "Kalsium-40. Sidoksen lujuutta kuvaa sidosenergia nukleonia kohti. Vismutilla se on $$\n\\begin{aligned}\n1640\\,\\text{MeV} : 209 &\\approx 7{,}85\\,\\text{MeV}\n\\end{aligned}\n$$ ja kalsiumilla $$\n\\begin{aligned}\n342\\,\\text{MeV} : 40 &\\approx 8{,}55\\,\\text{MeV}\n\\end{aligned}\n$$. Vismutin koko sidosenergia on suurempi vain siksi, että siinä on enemmän nukleoneja."
   },
   {
     "q": "Massavajetta laskettaessa ytimen massana käytetään atomin massaa. Miksi silloin käytetään vetyatomin massaa eikä protonin massaa?",

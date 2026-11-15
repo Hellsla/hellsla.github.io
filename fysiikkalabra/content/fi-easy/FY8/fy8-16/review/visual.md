@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: bcdc97b32687d881
+CONTENT-HASH: 0912e2a035aed477
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] 'nuklideista' and 'gravitaatio' are unexplained/different from the chapter's 'painovoima'; use 'ytimistä' and 'painovoima'.
-- [Minor] 'Sidosenergia ... raudan ja nikkelin alueella' sits oddly beside 'aina rautaan asti'; say 'rautaryhmän ytimiin' in both.
 
 ## Checked
-batch delta review: opened fy8-16-fig-row-1280 (spectrum figure unchanged, legible); read all changed lines in lesson and inquiry.
+- No capture opened; the v block judged from source, the same block type seen aligned in fy8-1 theory-1280-2.
+- Delta judged: formula lifted into an aligned block, first row the left-hand side alone; words, numbers and units unchanged.

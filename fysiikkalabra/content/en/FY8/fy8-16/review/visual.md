@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9fc38bb9ac8250fa
+CONTENT-HASH: bf4b51f0a89d39a6
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] inquiry.json feedback — "seen from any galaxy distant galaxies recede" — add a comma: "seen from any galaxy, distant galaxies recede".
+(none)
 
 ## Checked
-- batch delta review: opened fy8-16-fig-row-1280.png (redshift figure unchanged, teacher-approved) and read the diff; $8.8\,\text{MeV}$ and $1.5$ stay LaTeX, no plain-text quantities.
+- batch delta review, en: opened example-390-1 (stage 3 block); the other changed blocks judged from the diff/source only (rows broken before each + or -, first row left-hand side alone, no clipping seen in the capture sampled). Hash re-run at the end: unchanged.

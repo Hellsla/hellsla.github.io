@@ -1,7 +1,7 @@
 ---
 description: Make the figure corrections the teacher approved in the illustration audit for one course, show each before and after, and stop for the teacher's approval
 argument-hint: <COURSE, e.g. FY3 | FY10 | FY14 | TVT> [<lesson-id> …]
-model: opus
+model: fable
 effort: medium
 ---
 Make the approved figure corrections of $ARGUMENTS. Work in `fysiikkalabra/` (`cd fysiikkalabra` first): every path below is relative to it. Report to the teacher in Finnish.

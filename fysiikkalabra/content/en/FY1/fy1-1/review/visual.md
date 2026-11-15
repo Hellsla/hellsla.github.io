@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 089f17b519fe81f6
+CONTENT-HASH: edd1918d89b51a14
 
 ## Blocking
 - none
@@ -8,8 +8,7 @@ CONTENT-HASH: 089f17b519fe81f6
 - none
 
 ## Checked
-- Delta round 2: opened fy1-1-theory-1280-1.png: the added rule sentence reads cleanly, 10^n and 10^{n+1} set in KaTeX with correct superscripts, paragraph still short, figure beside the preceding paragraph and the next paragraph unaffected.
-- Surrounding layout intact, units and powers of ten are KaTeX, no clipping.
+- batch delta review (en): diff is one wording sentence ('Nebulae, neutron stars and black holes are types of objects found inside galaxies'), reads naturally; fi capture fy1-1-fig-20-390 opened for the shared figure, en captures regenerated, not separately opened.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 (English text reviewed) · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

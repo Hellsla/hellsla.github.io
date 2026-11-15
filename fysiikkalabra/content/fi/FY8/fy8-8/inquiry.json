@@ -29,7 +29,7 @@
         {
           "text": "$1{,}89\\,\\text{eV}$, koska fotonin energia on tasojen erotus.",
           "correct": true,
-          "feedback": "Oikein (luku *Vetyatomin energiatasot ja Bohrin malli*): $hf = E_3 - E_2 = -1{,}51\\,\\text{eV} + 3{,}40\\,\\text{eV} = 1{,}89\\,\\text{eV}$, vedyn punainen viiva. Tänään sama periaate siirretään atomiytimeen."
+          "feedback": "Oikein (luku *Vetyatomin energiatasot ja Bohrin malli*): $$\n\\begin{aligned}\nhf &= E_3 - E_2 \\\\\n&= -1{,}51\\,\\text{eV} + 3{,}40\\,\\text{eV} \\\\\n&= 1{,}89\\,\\text{eV}\n\\end{aligned}\n$$, vedyn punainen viiva. Tänään sama periaate siirretään atomiytimeen."
         },
         {
           "text": "$1{,}51\\,\\text{eV}$, koska fotoni saa lähtötason energian.",
@@ -335,7 +335,7 @@
       "tolerance": 0.02,
       "hints": [
         "Fotonin energia on $E_\\gamma = \\tfrac{hc}{\\lambda}$. Ratkaise aallonpituus.",
-        "Muunna energia ensin jouleiksi: $140{,}5 \\cdot 1000 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "Muunna energia ensin jouleiksi: $$\n140{,}5 \\cdot 1000 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}\n$$.",
         "$\\lambda = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2{,}2508 \\cdot 10^{-14}\\,\\text{J}}$."
       ],
       "mistakes": [
@@ -344,7 +344,7 @@
           "feedback": "Käytit energiana elektronivoltteja kiloelektronivolttien sijaan: kerroin $1000$ puuttuu. Gammafotonin aallonpituus on tuhat kertaa lyhyempi."
         }
       ],
-      "solution": "**Annettu:** gammafotonin energia $E_\\gamma = 140{,}5\\,\\text{keV}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Kysytty:** fotonin aallonpituus $\\lambda$ pikometreinä\n\n**Periaate:** Gammasäteily on sähkömagneettista säteilyä, joten sen fotonin energia ja aallonpituus liittyvät toisiinsa kuten näkyvän valon fotonilla: mitä suurempi energia, sitä lyhyempi aallonpituus.\n\n**Kaava:** $E_\\gamma = \\dfrac{hc}{\\lambda}$, josta $\\lambda = \\dfrac{hc}{E_\\gamma}$\n\n**Muunnokset:** $E_\\gamma = 140{,}5\\,\\text{keV} = 140{,}5 \\cdot 1000 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 2{,}2508 \\cdot 10^{-14}\\,\\text{J}$; lopuksi $1\\,\\text{m} = 10^{12}\\,\\text{pm}$.\n\n**Sijoitus:** Tulo $hc = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\cdot 2{,}998 \\cdot 10^{8}\\,\\text{m/s} = 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}$. $\\lambda = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2{,}2508 \\cdot 10^{-14}\\,\\text{J}} = 8{,}8256 \\cdot 10^{-12}\\,\\text{m} = 8{,}8256\\,\\text{pm}$\n\n**Vastaus:** $8{,}826\\,\\text{pm}$ eli noin $8{,}83 \\cdot 10^{-12}\\,\\text{m}$, neljä merkitsevää numeroa kuten energiassa $140{,}5\\,\\text{keV}$.\n\n**Järkevyys:** Esimerkin cesiumin fotoni $661{,}7\\,\\text{keV}$ on noin $4{,}7$ kertaa energisempi, ja sen aallonpituus $1{,}874\\,\\text{pm}$ on noin $4{,}7$ kertaa lyhyempi: $8{,}83 : 1{,}874 \\approx 4{,}7$. Aallonpituus on paljon pienempi kuin atomin koko $10^{-10}\\,\\text{m} = 100\\,\\text{pm}$, kuten gammasäteilylle kuuluu.",
+      "solution": "**Annettu:** gammafotonin energia $E_\\gamma = 140{,}5\\,\\text{keV}$, $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{keV} = 1000\\,\\text{eV}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$\n\n**Kysytty:** fotonin aallonpituus $\\lambda$ pikometreinä\n\n**Periaate:** Gammasäteily on sähkömagneettista säteilyä, joten sen fotonin energia ja aallonpituus liittyvät toisiinsa kuten näkyvän valon fotonilla: mitä suurempi energia, sitä lyhyempi aallonpituus.\n\n**Kaava:** $E_\\gamma = \\dfrac{hc}{\\lambda}$, josta $\\lambda = \\dfrac{hc}{E_\\gamma}$\n\n**Muunnokset:** $E_\\gamma = 140{,}5\\,\\text{keV} = 140{,}5 \\cdot 1000 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 2{,}2508 \\cdot 10^{-14}\\,\\text{J}$; lopuksi $1\\,\\text{m} = 10^{12}\\,\\text{pm}$.\n\n**Sijoitus:** Tulo $$\n\\begin{aligned}\nhc &= 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s} \\\\\n&\\cdot 2{,}998 \\cdot 10^{8}\\,\\text{m/s} \\\\\n&= 1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}\n\\end{aligned}\n$$. $\\lambda = \\dfrac{1{,}9865 \\cdot 10^{-25}\\,\\text{J}\\,\\text{m}}{2{,}2508 \\cdot 10^{-14}\\,\\text{J}} = 8{,}8256 \\cdot 10^{-12}\\,\\text{m} = 8{,}8256\\,\\text{pm}$\n\n**Vastaus:** $8{,}826\\,\\text{pm}$ eli noin $8{,}83 \\cdot 10^{-12}\\,\\text{m}$, neljä merkitsevää numeroa kuten energiassa $140{,}5\\,\\text{keV}$.\n\n**Järkevyys:** Esimerkin cesiumin fotoni $661{,}7\\,\\text{keV}$ on noin $4{,}7$ kertaa energisempi, ja sen aallonpituus $1{,}874\\,\\text{pm}$ on noin $4{,}7$ kertaa lyhyempi: $8{,}83 : 1{,}874 \\approx 4{,}7$. Aallonpituus on paljon pienempi kuin atomin koko $10^{-10}\\,\\text{m} = 100\\,\\text{pm}$, kuten gammasäteilylle kuuluu.",
       "practice": "Harjoittele gammafotonin energian ja aallonpituuden laskemista tason 1 ja 2 tehtävissä."
     },
     {

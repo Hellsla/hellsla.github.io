@@ -41,7 +41,9 @@
 ## fy8-9-L1-05
 **Annettu:** alkuaktiivisuus $A_0 = 800\,\text{kBq}$, aktiivisuus $A = 200\,\text{kBq}$ ajan $t = 48{,}0\,\text{h}$ kuluttua
 **Kysytty:** puoliintumisaika $T_{1/2}$ tunteina
-**Periaate:** Aktiivisuus puolittuu jokaisen puoliintumisajan aikana, koska se on verrannollinen hajoamattomien ytimien määrään. Lasketaan, montako puoliintumisaikaa on kulunut ajassa $t$. Ketju $800\,\text{kBq} \to 400\,\text{kBq} \to 200\,\text{kBq}$ on kaksi puolittumista.
+**Periaate:** Aktiivisuus puolittuu jokaisen puoliintumisajan aikana, koska se on verrannollinen hajoamattomien ytimien määrään. Lasketaan, montako puoliintumisaikaa on kulunut ajassa $t$. Ketju $$
+800\,\text{kBq} \to 400\,\text{kBq} \to 200\,\text{kBq}
+$$ on kaksi puolittumista.
 **Kaava:** $\dfrac{A}{A_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}} = \tfrac{1}{4} = \left(\tfrac{1}{2}\right)^{2}$, joten $\tfrac{t}{T_{1/2}} = 2$ ja $T_{1/2} = \dfrac{t}{2}$
 **Muunnokset:** Ei tarvita. Aika on tunteina, ja vastaus kysytään tunteina.
 **Sijoitus:** $T_{1/2} = \dfrac{48{,}0\,\text{h}}{2} = 24{,}0\,\text{h}$
@@ -63,7 +65,12 @@ Väite, että kaikki ovat hajonneet, on virhe. Toinen puoliintumisaika poistaa v
 **Muunnokset:** Ei tarvita. Aika ja puoliintumisaika ovat molemmat vuosina, joten niiden suhde on pelkkä luku. Lopuksi osuus muutetaan prosenteiksi kertomalla luvulla $100$.
 **Sijoitus:** $\dfrac{N}{N_0} = \left(\tfrac{1}{2}\right)^{144\,\text{a} : 28{,}8\,\text{a}} = \left(\tfrac{1}{2}\right)^{5{,}00} = \tfrac{1}{32} = 0{,}03125 = 3{,}125\,\%$
 **Vastaus:** $3{,}13\,\%$. Vastauksessa on kolme merkitsevää numeroa kuten annetuissa arvoissa.
-**Järkevyys:** Viiden puoliintumisajan jälkeen osuus on puolitettu viisi kertaa: $100\,\% \!\to\! 50\,\% \!\to\! 25\,\% \!\to\! 12{,}5\,\% \!\to\! 6{,}25\,\% \!\to\! 3{,}125\,\%$. Näyte ei ole tyhjä, mutta siitä on jäljellä enää pieni osa.
+**Järkevyys:** Viiden puoliintumisajan jälkeen osuus on puolitettu viisi kertaa: $$
+\begin{aligned}
+&100\,\% \!\to\! 50\,\% \!\to\! 25\,\% \!\to\! 12{,}5\,\% \\
+&\!\to\! 6{,}25\,\% \!\to\! 3{,}125\,\%
+\end{aligned}
+$$. Näyte ei ole tyhjä, mutta siitä on jäljellä enää pieni osa.
 
 ## fy8-9-L1-08
 **Annettu:** puoliintumisaika $T_{1/2} = 5{,}27\,\text{a}$, aktiivisuus $A = 0{,}100\,A_0$
@@ -199,7 +206,17 @@ Kuvaajassa A aktiivisuus pienenee tasaisesti ja on nolla hetkellä $4{,}0\,\text
 **Periaate:** Kumpikin nuklidi hajoaa oman hajoamislakinsa mukaan, ja kokonaisaktiivisuus on niiden summa. Lyhytikäisen aktiivisuus on viimeisissä mittauksissa pudonnut lähes nollaan: hetkeen $96\,\text{h}$ mennessä on kulunut $\tfrac{96}{6{,}0} = 16$ puoliintumisaikaa, ja $\left(\tfrac{1}{2}\right)^{16} \approx 1{,}5 \cdot 10^{-5}$. Siksi myöhäiset pisteet kuvaavat vain pitkäikäistä nuklidia.
 **Kaava:** $\dfrac{A_2(t_2)}{A_2(t_1)} = \left(\tfrac{1}{2}\right)^{(t_2 - t_1)/T_2}$, joten $T_2 = \dfrac{(t_2 - t_1) \ln 2}{\ln \left(A_2(t_1) / A_2(t_2)\right)}$
 **Muunnokset:** Pisteet $t_1 = 96\,\text{h}$ ja $t_2 = 168\,\text{h}$ ovat $\Delta t = 72\,\text{h}$ päässä toisistaan. Tulos muutetaan vuorokausiksi jakamalla luvulla $24\,\tfrac{\text{h}}{\text{d}}$.
-**Sijoitus:** a) $A(96\,\text{h}) = 71{,}2\,\text{MBq}$ ja $A(168\,\text{h}) = 32{,}8\,\text{MBq}$, joten $T_2 = \dfrac{72\,\text{h} \cdot 0{,}69315}{\ln (71{,}2 : 32{,}8)} = \dfrac{49{,}907\,\text{h}}{0{,}7752} = 64{,}38\,\text{h} = \dfrac{64{,}38\,\text{h}}{24\,\text{h/d}} = 2{,}683\,\text{d}$. b) Aktiivisuus hetkellä $t = 0$ on $A_2(0) = 71{,}2\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{-96/64{,}38} = 71{,}2\,\text{MBq} \cdot 2^{1{,}491} = 71{,}2\,\text{MBq} \cdot 2{,}811 = 200\,\text{MBq}$. Kokonaisaktiivisuus alussa on $1000\,\text{MBq}$, joten lyhytikäisen aktiivisuus on $1000\,\text{MBq} - 200\,\text{MBq} = 800\,\text{MBq}$ eli $80\,\%$ kokonaisaktiivisuudesta. c) Hetkellä $12\,\text{h}$ pitkäikäisen aktiivisuus on $200\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12/64{,}38} = 200\,\text{MBq} \cdot 0{,}879 = 175{,}8\,\text{MBq}$. Lyhytikäisen aktiivisuus on silloin $376\,\text{MBq} - 175{,}8\,\text{MBq} = 200{,}2\,\text{MBq}$. Alkuaktiivisuus $800\,\text{MBq}$ on puolittunut kaksi kertaa ($12\,\text{h} = 2 \cdot 6{,}0\,\text{h}$): $\tfrac{800\,\text{MBq}}{4} = 200\,\text{MBq}$. Se täsmää.
+**Sijoitus:** a) $A(96\,\text{h}) = 71{,}2\,\text{MBq}$ ja $A(168\,\text{h}) = 32{,}8\,\text{MBq}$, joten $T_2 = \dfrac{72\,\text{h} \cdot 0{,}69315}{\ln (71{,}2 : 32{,}8)} = \dfrac{49{,}907\,\text{h}}{0{,}7752} = 64{,}38\,\text{h} = \dfrac{64{,}38\,\text{h}}{24\,\text{h/d}} = 2{,}683\,\text{d}$. b) Aktiivisuus hetkellä $t = 0$ on $A_2(0) = 71{,}2\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{-96/64{,}38} = 71{,}2\,\text{MBq} \cdot 2^{1{,}491} = 71{,}2\,\text{MBq} \cdot 2{,}811 = 200\,\text{MBq}$. Kokonaisaktiivisuus alussa on $1000\,\text{MBq}$, joten lyhytikäisen aktiivisuus on $$
+\begin{aligned}
+&1000\,\text{MBq} - 200\,\text{MBq} \\
+&= 800\,\text{MBq}
+\end{aligned}
+$$ eli $80\,\%$ kokonaisaktiivisuudesta. c) Hetkellä $12\,\text{h}$ pitkäikäisen aktiivisuus on $200\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12/64{,}38} = 200\,\text{MBq} \cdot 0{,}879 = 175{,}8\,\text{MBq}$. Lyhytikäisen aktiivisuus on silloin $$
+\begin{aligned}
+&376\,\text{MBq} - 175{,}8\,\text{MBq} \\
+&= 200{,}2\,\text{MBq}
+\end{aligned}
+$$. Alkuaktiivisuus $800\,\text{MBq}$ on puolittunut kaksi kertaa ($12\,\text{h} = 2 \cdot 6{,}0\,\text{h}$): $\tfrac{800\,\text{MBq}}{4} = 200\,\text{MBq}$. Se täsmää.
 **Vastaus:** $2{,}68\,\text{d}$. Vastauksessa on kolme merkitsevää numeroa kuten taulukon aktiivisuuksissa.
 **Järkevyys:** Tulos $2{,}68\,\text{d} = 64{,}4\,\text{h}$ on paljon pidempi kuin $6{,}0\,\text{h}$, kuten tehtävä vaatii. Kolmannella pisteparilla tulos pysyy samana: $A(120\,\text{h}) = 55{,}9\,\text{MBq}$ ja $A(168\,\text{h}) = 32{,}8\,\text{MBq}$ antavat $T_2 = \tfrac{48\,\text{h} \cdot 0{,}69315}{\ln 1{,}704} = 62{,}4\,\text{h} \approx 2{,}6\,\text{d}$. Se on lähellä tulosta, kun otetaan huomioon mittauspisteiden satunnainen vaihtelu.
 
@@ -211,4 +228,9 @@ Kuvaajassa A aktiivisuus pienenee tasaisesti ja on nolla hetkellä $4{,}0\,\text
 **Muunnokset:** Kaikki ajat ovat vuorokausina, joten yksikkömuunnoksia ei tarvita. Kun yhtälö $\lambda = \tfrac{\ln 2}{T_{1/2}}$ jaetaan luvulla $\ln 2$, saadaan $\tfrac{1}{T_\text{bio}} = \tfrac{1}{T_\text{eff}} - \tfrac{1}{T_\text{fys}}$.
 **Sijoitus:** a) $T_\text{eff} = \dfrac{8{,}0\,\text{d} \cdot 0{,}69315}{\ln (400 : 65{,}5)} = \dfrac{5{,}545\,\text{d}}{1{,}8092} = 3{,}065\,\text{d}$. b) $\dfrac{1}{T_\text{bio}} = \dfrac{1}{3{,}065\,\text{d}} - \dfrac{1}{8{,}02\,\text{d}} = 0{,}3263\,\tfrac{1}{\text{d}} - 0{,}1247\,\tfrac{1}{\text{d}} = 0{,}2016\,\tfrac{1}{\text{d}}$, joten $T_\text{bio} = \dfrac{1}{0{,}2016\,\tfrac{1}{\text{d}}} = 4{,}96\,\text{d}$. c) Pelkällä hajoamisella jäljellä olisi $100\,\% \cdot \left(\tfrac{1}{2}\right)^{8{,}0/8{,}02} = 100\,\% \cdot 0{,}5008 = 50{,}1\,\%$. Mitattu osuus on $\tfrac{65{,}5}{400} = 16{,}4\,\%$. Kumpikin prosessi vaikuttaa kaikkiin ytimiin. Nopeampi prosessi on se, jonka hajoamisvakio on suurempi: $\lambda_\text{bio} = \tfrac{0{,}69315}{4{,}96\,\text{d}} = 0{,}140\,\tfrac{1}{\text{d}}$ ja $\lambda_\text{fys} = \tfrac{0{,}69315}{8{,}02\,\text{d}} = 0{,}0864\,\tfrac{1}{\text{d}}$.
 **Vastaus:** $T_\text{bio} = 4{,}96\,\text{d}$. Vastauksessa on kolme merkitsevää numeroa kuten taulukon arvoissa.
-**Järkevyys:** Biologinen puoliintumisaika on lyhyempi kuin fysikaalinen. Siksi poistuminen on nopeampi prosessi, ja efektiivinen aika on lyhyempi kuin kumpikaan: $3{,}07\,\text{d} < 4{,}96\,\text{d} < 8{,}02\,\text{d}$. Tarkistus: $\lambda_\text{eff} = \tfrac{0{,}69315}{3{,}065\,\text{d}} = 0{,}2262\,\tfrac{1}{\text{d}}$ ja $\lambda_\text{fys} + \lambda_\text{bio} = 0{,}0864\,\tfrac{1}{\text{d}} + 0{,}1398\,\tfrac{1}{\text{d}} = 0{,}2262\,\tfrac{1}{\text{d}}$. Kohdan c) perusteella biologinen poistuminen pienentää kehon jodi-131-aktiivisuutta nopeammin kuin fysikaalinen hajoaminen, koska $\lambda_\text{bio} > \lambda_\text{fys}$. Yhdessä ne jättävät jäljelle vain $16{,}4\,\%$ eikä pelkän hajoamisen $50{,}1\,\%$.
+**Järkevyys:** Biologinen puoliintumisaika on lyhyempi kuin fysikaalinen. Siksi poistuminen on nopeampi prosessi, ja efektiivinen aika on lyhyempi kuin kumpikaan: $3{,}07\,\text{d} < 4{,}96\,\text{d} < 8{,}02\,\text{d}$. Tarkistus: $\lambda_\text{eff} = \tfrac{0{,}69315}{3{,}065\,\text{d}} = 0{,}2262\,\tfrac{1}{\text{d}}$ ja $$
+\begin{aligned}
+\lambda_\text{fys} + \lambda_\text{bio} &= 0{,}0864\,\tfrac{1}{\text{d}} + 0{,}1398\,\tfrac{1}{\text{d}} \\
+&= 0{,}2262\,\tfrac{1}{\text{d}}
+\end{aligned}
+$$. Kohdan c) perusteella biologinen poistuminen pienentää kehon jodi-131-aktiivisuutta nopeammin kuin fysikaalinen hajoaminen, koska $\lambda_\text{bio} > \lambda_\text{fys}$. Yhdessä ne jättävät jäljelle vain $16{,}4\,\%$ eikä pelkän hajoamisen $50{,}1\,\%$.
