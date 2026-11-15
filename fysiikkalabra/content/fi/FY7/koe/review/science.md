@@ -1,27 +1,29 @@
 VERDICT: PASS
-CONTENT-HASH: 54aea9709824828a
+CONTENT-HASH: 6d4426affade3fc5
 
 ## Blocking
 None.
 
 ## Polish
-- k4 c Sijoitus: $\tfrac{150 \cdot 230\,\text{V}}{12{,}37\,\text{V}} = 2789$, not $2788$. The value $2788$ comes from the unrounded $12{,}374\,\text{V}$. The answer $\approx 2790$ and the tolerance are unaffected. Either write $2789$ or use $12{,}374\,\text{V}$ in the chain.
-- k6 d Mallivastaus and the conclusion criterion still say "noin yhdeksässä vuodessa", while c's remark gives about $9{,}7\,\text{a}$ when the transformer losses are counted. Saying "noin $9$–$10$ vuodessa" in d would make the two agree. The conclusion is unchanged either way.
+- fy7-k3 c asks for I, F and P; `answer` lists only F and P. Add I = 0,50 A.
+- fy7-k5 b: k = 3 is called the most reliable order, but the plain mean (3,331 µm) is the best estimate; a weighted mean gives 3,326 µm. Järkevyys says the results "sopivat yhteen", then shows that k = 2 and k = 3 differ by 0,026 µm, more than their 0,018 µm reading uncertainties. Make the solution and the conclusion criterion say the same.
+- fy7-k7 a: graph_fit requires a line through the origin. A free fit (slope 2,81·10⁻³ m·K, intercept −19 nm) is also valid. Add it to Hyväksytään myös.
+- fy7-k2 c Järkevyys: the relative uncertainty of r is 1,5–2,6 %, not 2–3 %.
+- fy7-k6 d: 4000 full-power hours are the worst case for losses at a given energy. With variable production the losses are smaller and the payback longer than 9 a; state that direction.
 
 ## Checked
-I recomputed every number of tasks.json and solutions.md in my own script. Everything agrees with answers.py and the solutions:
-- k1: d $0{,}08\,\text{V}$ and its distractors; i $73{,}7^\circ$; h $0{,}12\,\text{m}$ and $3{,}0\,\text{m}$; one correct option in a–j.
-- k2: $r^2$ and the bars $\pm 2r\Delta r$. The read slope gives $1{,}81 \cdot 10^{-5}\,\text{m}^2/\text{V}$, $B^2k = 1{,}16 \cdot 10^{-11}$ and $1{,}72 \cdot 10^{11}\,\text{C/kg}$; least squares gives $1{,}74 \cdot 10^{11}\,\text{C/kg}$. Both extreme lines stay inside all five bars (checked). They give $1{,}68$ and $1{,}85 \cdot 10^{11}\,\text{C/kg}$, so $\pm 0{,}08 \cdot 10^{11}\,\text{C/kg}$ ($4{,}8\,\%$).
-- k3: $0{,}30\,\text{V}$, $0{,}50\,\text{A}$, $0{,}060\,\text{N}$, $0{,}15\,\text{W} = I^2R$. The current runs up the rod both by Lenz's law and by $q\overline{v}\times\overline{B}$.
-- k4: $40\,\text{Hz}$; $U = 12{,}374\,\text{V}$, shown as $12{,}4\,\text{V}$ with the two-figure reading caveat, and $12{,}37\,\text{V}$ carried into c. Also $339{,}3\,\text{m}^2/\text{s}$, $0{,}0516\,\text{T}$, $I_1 = 3{,}72\,\text{A}$ and $U_1 I_1 = 46\,\text{W}$.
-- k5: $3{,}327$, $3{,}347$ and $3{,}321\,\mu\text{m}$; $\pm 27$, $12$ and $6\,\text{nm}$; $d/\lambda = 6{,}26$, $73{,}4^\circ$. The new b remark compares $k = 2$ and $k = 3$ correctly: the gap $0{,}026\,\mu\text{m}$ exceeds the sum $0{,}018\,\mu\text{m}$.
-- k6: $600\,\text{A}$, $1{,}728\,\text{MW}$ ($14{,}4\,\%$, drop $2{,}88\,\text{kV}$); $109\,\text{A}$, $57{,}1\,\text{kW}$; $500$ turns; $6912$ and $228{,}5\,\text{MWh}$; $334\,175\,\text{€}$, $8{,}98\,\text{a}$. The new remark checks: $120\,\text{kW}$, $24\,000\,\text{€}$, $310\,000\,\text{€}$, $9{,}67\,\text{a}$, and $177\,\text{kW}$ is under a tenth of $1{,}73\,\text{MW}$.
-- k7: $b = 2{,}758 \cdot 10^{-3}\,\text{m} \cdot \text{K}$ through the origin. The read points $550$ and $1100\,\text{nm}$ lie on that line ($552$ and $1103\,\text{nm}$). All $\lambda T$ products are below the literature value; the deviation is $4{,}8\,\%$ against a random $2{,}6\,\%$, and the emissivity argument points the right way. Also $9{,}47\,\mu\text{m}$ and $5269\,\text{K}$. The new e argument uses the operating range ($1{,}32$–$0{,}97\,\mu\text{m}$) and $0{,}78\,\mu\text{m}$ at $3695\,\text{K}$, both correct, and the rubric matches it.
-
-Also checked:
-- Points: Osa 1 is $20$ p, k2–k5 are $15$ p each, k6 and k7 are $20$ p each, and every rubric adds up to its part's points.
-- Every criterion asks only what its part gives.
-- The scope is FY7 only (polarisation stays qualitative).
-- The figure data match the tasks.
-- The round-2 Polish items are all addressed.
-- The hash was unchanged at the start and the end.
+- Recomputed every number with my own script from the task data; all agree with the solutions and answers.py:
+  - k1: d 0,08 V; i 73,7°; h 0,122 m and 3,0 m
+  - k2: e/m 1,74·10¹¹ C/kg (read 1,72·10¹¹); extreme lines 1,68 and 1,85·10¹¹, so ±0,084·10¹¹ C/kg
+  - k3: 0,30 V, 0,50 A, 0,060 N, 0,15 W = I²R
+  - k4: 40 Hz, 12,37 V, 0,0516 T, 2788 turns, 3,72 A
+  - k5: 3,327/3,347/3,321 µm, ±27/12/6 nm, k_max = 6
+  - k6: 600 A, 1,728 MW (14,4 %), 109 A, 57,1 kW, N₁ = 500, 334 200 €/a, 8,98 a; with transformer losses 9,67 a
+  - k7: b 2,758·10⁻³ m·K, 4,8 %, 2,6 % random, 9,47 µm, 5269 K
+- Osa 1: each item has exactly one correct option, and the distractors and their feedback are right.
+- k3 b: the current direction (Lenz and v × B) is correct.
+- k7 c: the systematic error and its direction (tungsten's emissivity) are correct.
+- Rubrics: each criterion asks only what its part asks; all part sums are right.
+- Scope: everything is inside FY7. Polarisation stays qualitative; no self-induction, no photon.
+- Data: invented data are marked `source: example`; the constants are correct.
+- Figures: the data in figures.py match the tasks, and the read points lie on the drawn lines.
