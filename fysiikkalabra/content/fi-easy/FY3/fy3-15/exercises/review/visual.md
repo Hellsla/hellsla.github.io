@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b769d69d2c84482b
+CONTENT-HASH: c9fc6cae7eec5478
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+- [Minor] solutions.md L1-02..04 and L3-02 — reworded heat sentences were read in the diff only; they read correctly.
 
 ## Checked
-- Delta: L3-01 solution (Reasonableness) open at 1280 px, fi-easy: changed sentence reads cleanly, layout intact, units and maths unchanged.
+- Delta (heat wording, bar-chart reading text, η2 42,9 %): open-exercises-L2-1280-11 (bar chart with gridlines every 50 MW, P1 and P2 on lines, P3 in blue; answer 42,9 % and "Pylväiden… ruudukon viivoilla" match the graph), -9 (neighbouring solution layout).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
