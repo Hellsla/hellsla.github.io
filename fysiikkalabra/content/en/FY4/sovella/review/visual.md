@@ -1,19 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: ec85c073c6b06f71
+CONTENT-HASH: 0123029cc461927a
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-s1-fbd (fig-3, 390 px): the label G_x sits against the right edge of the skier rectangle and is crowded by the dashed component arrow; move it a few px outside the box.
-- [Minor] captures: the screenshots were made from the Finnish page (content/fi/.../review/shots), none exist for the en page. Figures are language-neutral and the term change is text-only (alt text, task and solution wording), so the judgement holds, but a captured en page would make the check exact.
+- [Minor] fy4-s1-fbd (fig-3, 390 px), carried from the previous round: the label G_x sits against the right edge of the skier rectangle and is crowded by the dashed component arrow; move it a few px outside the box.
+- [Minor] captures: `screenshot.py` captures a Sovella set in Finnish only, so the en page has no review/shots. The two changed places were therefore captured from the built en page (preview/en/FY4-sovella.html) for this review; a `--lang` option for Sovella sets would make the check routine.
 
 ## Checked
-- Contact sheet 1, top-390 view of the page (first screen and the tasks).
-- fig-1 (fy4-s1-graph), fig-3 (fy4-s1-fbd situation and free-body diagram), fig-5 (free-body diagram in the model answer, with x/y axes), fig-7 (fy4-s1-drag graph), fig-19 (fy4-s3-collision) at 390 px.
-- Term change (kinetic friction to sliding friction) in tasks.json and solutions.md read in source: consistent "sliding friction", with $\overline{F}_\mu$ and "coefficient of sliding friction"; numbers with units are in LaTeX. Rendering of the changed lines (s1 b and c, s3 a) seen in the 390 px captures: no overflow or KaTeX error.
-- Colours follow the convention: force red, velocity blue, acceleration orange, momentum purple. Graphs: axes titled with units, points distinct from fitted lines, a0 read at v = 0 marked.
-- fig-2, fig-4, fig-6, fig-8 and fig-20 are blank or tiny files (116 to 338 bytes): not viewed, probably hidden or empty containers rather than figures in the inventory.
+- Delta, round 2: the diff since the last PASS is two lines of solutions.md (187 and 490), each an inline division chain turned into an aligned block; numbers, units and order unchanged.
+- Own captures of the built en page with every solution open, at 360, 390 and 1280 px: s1 d) Model answer ("0.02 m/s^2 : 9.786 m/s^2 ≈ 0.002.") and s3 c) Reasonableness ("7.86 m/s : 0.12 s ≈ 66 m/s^2,"). Opened at readable size: both places at 360 px and at 1280 px.
+- 360 px: each chain is two rows in its formula box (the division, then "≈ result"), fully inside the card (formula 51–309 px in a 44–316 px column), "m/s^2" complete, nothing clipped or scrolled; page width 360 px, no horizontal overflow, no KaTeX error. 390 px the same by measurement (63–327 px in 46–344 px).
+- 1280 px: each chain is one row in the reading column, the text around it undisturbed.
+- The sentence punctuation is set inside the block (full stop after 0.002, comma after 66 m/s^2), and the sentence continues correctly after it ("almost 7g", "An uncertainty in the angle…"); decimal point and units upright with a thin space, division written with a colon.
+- Finnish captures (current for the fi hash): contact sheets 2 and 3 for triage, page-390-28 at full size (the same s3 c) block in Finnish): the layout around the block survived.
+- Figures are untouched by this diff and were not reopened; the previous round's judgement of them stands.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4
