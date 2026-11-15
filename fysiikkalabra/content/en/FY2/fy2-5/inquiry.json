@@ -246,7 +246,7 @@
       "prompt": "A student calculates how much energy is released when $250\\,\\text{g}$ of air-dried firewood ($H = 15\\,\\text{MJ/kg}$) is burnt:\n\n$$\\begin{aligned} E &= Hm \\\\ &= 15\\,\\text{MJ/kg} \\cdot 250 \\\\ &= 3750\\,\\text{MJ} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
-          "text": "The mass has not been converted to kilograms: $250\\,\\text{g} = 250 \\cdot (1 : 1000)\\,\\text{kg} = 0.250\\,\\text{kg}$, so $E = 3.75\\,\\text{MJ}$.",
+          "text": "The mass has not been converted to kilograms: $$\n\\begin{aligned}\n250\\,\\text{g} &= 250 \\cdot (1 : 1000)\\,\\text{kg} \\\\\n&= 0.250\\,\\text{kg}\n\\end{aligned}\n$$, so $E = 3.75\\,\\text{MJ}$.",
           "feedback": "Correct. The heat of combustion is energy per kilogram, so the mass must be in kilograms. You could have noticed that the result was wrong: $3750\\,\\text{MJ}$ would be the energy of $250\\,\\text{kg}$ of wood, and $250\\,\\text{g}$ is a thousandth of that.",
           "correct": true
         },
@@ -339,7 +339,7 @@
         },
         {
           "text": "The petrol, because its heat of combustion is almost three times that of the wood.",
-          "feedback": "The heat of combustion tells you the energy per kilogram, not the total energy. There is four times the mass of wood, so it releases $E = Hm = 15\\,\\text{MJ/kg} \\cdot 4.0\\,\\text{kg} = 60\\,\\text{MJ}$, more than the $43\\,\\text{MJ}$ of the petrol."
+          "feedback": "The heat of combustion tells you the energy per kilogram, not the total energy. There is four times the mass of wood, so it releases $$\n\\begin{aligned}\nE &= Hm \\\\\n&= 15\\,\\text{MJ/kg} \\cdot 4.0\\,\\text{kg} \\\\\n&= 60\\,\\text{MJ}\n\\end{aligned}\n$$, more than the $43\\,\\text{MJ}$ of the petrol."
         },
         {
           "text": "The petrol, because the wood releases only $15 : 4.0 \\approx 3.8\\,\\text{MJ}$.",

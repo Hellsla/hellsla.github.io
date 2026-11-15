@@ -211,7 +211,7 @@
         {
           "text": "Massaa ei muutettu kilogrammoiksi: $3{,}0\\,\\text{t} = 3000\\,\\text{kg}$, joten oikea tulos on $78\\,000\\,\\text{MJ}$.",
           "correct": true,
-          "feedback": "Oikein. Lämpöarvo on energia yhtä kilogrammaa kohti, joten massa pitää sijoittaa kilogrammoina. $E = 26\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 3000\\,\\text{kg} = 78\\,000\\,\\text{MJ}$."
+          "feedback": "Oikein. Lämpöarvo on energia yhtä kilogrammaa kohti, joten massa pitää sijoittaa kilogrammoina. $$\n\\begin{aligned}\nE &= 26\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 3000\\,\\text{kg} \\\\\n&= 78\\,000\\,\\text{MJ}\n\\end{aligned}\n$$."
         },
         {
           "text": "Kivihiilen lämpöarvo on väärä, koska oikea arvo olisi $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, joten tulos on $129\\,\\text{MJ}$.",

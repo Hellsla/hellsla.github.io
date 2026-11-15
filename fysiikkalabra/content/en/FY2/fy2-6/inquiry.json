@@ -146,7 +146,7 @@
         "hints": [
           "Production must match consumption at every moment: the sum of the powers of all sources equals consumption.",
           "The power of the other sources is the part of consumption that nuclear and wind power do not cover.",
-          "$P_\\text{m} = 13.1\\,\\text{GW} - 4.3\\,\\text{GW} - 0.4\\,\\text{GW}$."
+          "$$\n\\begin{aligned}\nP_\\text{m} &= 13.1\\,\\text{GW} - 4.3\\,\\text{GW} \\\\\n&- 0.4\\,\\text{GW}\n\\end{aligned}\n$$."
         ],
         "mistakes": [
           {
@@ -162,7 +162,7 @@
             "feedback": "This is the figure for Monday, when the wind blew well. Calculate in the same way from the Thursday row."
           }
         ],
-        "solution": "**Given:** consumption on Thursday $P_\\text{cons} = 13.1\\,\\text{GW}$, power of nuclear power $P_\\text{n} = 4.3\\,\\text{GW}$ and power of wind power $P_\\text{t} = 0.4\\,\\text{GW}$ (from the table)\n\n**Find:** the power $P_\\text{m}$ of the other ways of producing electricity in gigawatts\n\n**Principle:** Electricity cannot be stored in the grid, so production must match consumption at every moment: the sum of the powers of all sources is the power of consumption. The part that nuclear and wind power do not produce must be produced in other ways.\n\n**Formula:** $P_\\text{cons} = P_\\text{n} + P_\\text{t} + P_\\text{m}$, so $P_\\text{m} = P_\\text{cons} - P_\\text{n} - P_\\text{t}$\n\n**Conversions:** Not needed: all powers are in gigawatts.\n\n**Substitution:** $P_\\text{m} = 13.1\\,\\text{GW} - 4.3\\,\\text{GW} - 0.4\\,\\text{GW} = 8.4\\,\\text{GW}$\n\n**Answer:** $8.4\\,\\text{GW}$, to one decimal place like the powers in the table, because the difference is as precise as the numbers it is calculated from.\n\n**Reasonableness:** The result is smaller than consumption, as it should be. On Monday the same calculation gives only $11.3\\,\\text{GW} - 4.3\\,\\text{GW} - 6.4\\,\\text{GW} = 0.6\\,\\text{GW}$, so the other power plants had to raise their power many times over on Thursday, because the wind died down."
+        "solution": "**Given:** consumption on Thursday $P_\\text{cons} = 13.1\\,\\text{GW}$, power of nuclear power $P_\\text{n} = 4.3\\,\\text{GW}$ and power of wind power $P_\\text{t} = 0.4\\,\\text{GW}$ (from the table)\n\n**Find:** the power $P_\\text{m}$ of the other ways of producing electricity in gigawatts\n\n**Principle:** Electricity cannot be stored in the grid, so production must match consumption at every moment: the sum of the powers of all sources is the power of consumption. The part that nuclear and wind power do not produce must be produced in other ways.\n\n**Formula:** $P_\\text{cons} = P_\\text{n} + P_\\text{t} + P_\\text{m}$, so $$\n\\begin{aligned}\nP_\\text{m} &= P_\\text{cons} \\\\\n&- P_\\text{n} - P_\\text{t}\n\\end{aligned}\n$$\n\n**Conversions:** Not needed: all powers are in gigawatts.\n\n**Substitution:** $$\n\\begin{aligned}\nP_\\text{m} &= 13.1\\,\\text{GW} - 4.3\\,\\text{GW} \\\\\n&- 0.4\\,\\text{GW} \\\\\n&= 8.4\\,\\text{GW}\n\\end{aligned}\n$$\n\n**Answer:** $8.4\\,\\text{GW}$, to one decimal place like the powers in the table, because the difference is as precise as the numbers it is calculated from.\n\n**Reasonableness:** The result is smaller than consumption, as it should be. On Monday the same calculation gives only $$\n\\begin{aligned}\n&11.3\\,\\text{GW} - 4.3\\,\\text{GW} - 6.4\\,\\text{GW} \\\\\n&= 0.6\\,\\text{GW}\n\\end{aligned}\n$$, so the other power plants had to raise their power many times over on Thursday, because the wind died down."
       }
     },
     {
@@ -212,12 +212,12 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the mistake",
-      "prompt": "A student calculates the average power of a power plant when the annual energy is $14\\,\\text{GWh}$. She writes $P = 14\\,\\text{GWh} \\cdot 8760\\,\\text{h} \\approx 123\\,000\\,\\text{GW}$ and wonders why the result is huge. Where is the mistake?",
+      "prompt": "A student calculates the average power of a power plant when the annual energy is $14\\,\\text{GWh}$. She writes $$\n\\begin{aligned}\nP &= 14\\,\\text{GWh} \\cdot 8760\\,\\text{h} \\\\\n&\\approx 123\\,000\\,\\text{GW}\n\\end{aligned}\n$$ and wonders why the result is huge. Where is the mistake?",
       "choices": [
         {
           "text": "The energy was multiplied by time, although the average power is $P = E : t \\approx 1.6\\,\\text{MW}$.",
           "correct": true,
-          "feedback": "Correct. The formula $E = P t$ is solved for power by dividing by time: $P = 14 \\cdot 10^{6}\\,\\text{kWh} : 8760\\,\\text{h} \\approx 1.6\\,\\text{MW}$. The mistake could have been spotted from the units: GWh times h is not a unit of power, and the result would be larger than the power of all the power plants in Finland."
+          "feedback": "Correct. The formula $E = P t$ is solved for power by dividing by time: $$\n\\begin{aligned}\nP &= 14 \\cdot 10^{6}\\,\\text{kWh} : 8760\\,\\text{h} \\\\\n&\\approx 1.6\\,\\text{MW}\n\\end{aligned}\n$$. The mistake could have been spotted from the units: GWh times h is not a unit of power, and the result would be larger than the power of all the power plants in Finland."
         },
         {
           "text": "A year does not have $8760\\,\\text{h}$ but $365\\,\\text{h}$, so the time is wrong in the calculation.",
@@ -245,7 +245,7 @@
       "tolerance": 0.02,
       "hints": [
         "The power and the time are known, so the energy is found by multiplying them together.",
-        "Convert the power to kilowatts: $1600\\,\\text{MW} = 1600 \\cdot 1000\\,\\text{kW}$. The product is then in kilowatt-hours.",
+        "Convert the power to kilowatts: $$\n1600\\,\\text{MW} = 1600 \\cdot 1000\\,\\text{kW}\n$$. The product is then in kilowatt-hours.",
         "$E = 1.6 \\cdot 10^{6}\\,\\text{kW} \\cdot 8760\\,\\text{h}$, and finally $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$."
       ],
       "mistakes": [
@@ -258,7 +258,7 @@
           "feedback": "You divided the power by time. Energy is power multiplied by time: $E = P t$."
         }
       ],
-      "solution": "**Given:** power $P = 1600\\,\\text{MW}$, time $t = 8760\\,\\text{h}$\n\n**Find:** the annual energy $E$ in terawatt-hours\n\n**Principle:** The power is constant when the plant runs at full power, so the energy is the power multiplied by time.\n\n**Formula:** $E = P t$\n\n**Conversions:** $1600\\,\\text{MW} = 1600 \\cdot 1000\\,\\text{kW} = 1.6 \\cdot 10^{6}\\,\\text{kW}$ and finally $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$.\n\n**Substitution:** $E = 1.6 \\cdot 10^{6}\\,\\text{kW} \\cdot 8760\\,\\text{h} = 14.016 \\cdot 10^{9}\\,\\text{kWh} = 14.0\\,\\text{TWh}$\n\n**Answer:** $14.0\\,\\text{TWh}$, three significant figures like the power $1600\\,\\text{MW}$.\n\n**Reasonableness:** This is an upper limit: actual production is smaller, because the plant is out of use at times. Total production in Finland was $79.9\\,\\text{TWh}$, and $14.0 : 79.9 \\approx 18\\,\\%$, so one plant would produce at most almost a fifth.",
+      "solution": "**Given:** power $P = 1600\\,\\text{MW}$, time $t = 8760\\,\\text{h}$\n\n**Find:** the annual energy $E$ in terawatt-hours\n\n**Principle:** The power is constant when the plant runs at full power, so the energy is the power multiplied by time.\n\n**Formula:** $E = P t$\n\n**Conversions:** $$\n\\begin{aligned}\n1600\\,\\text{MW} &= 1600 \\cdot 1000\\,\\text{kW} \\\\\n&= 1.6 \\cdot 10^{6}\\,\\text{kW}\n\\end{aligned}\n$$ and finally $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$.\n\n**Substitution:** $E = 1.6 \\cdot 10^{6}\\,\\text{kW} \\cdot 8760\\,\\text{h} = 14.016 \\cdot 10^{9}\\,\\text{kWh} = 14.0\\,\\text{TWh}$\n\n**Answer:** $14.0\\,\\text{TWh}$, three significant figures like the power $1600\\,\\text{MW}$.\n\n**Reasonableness:** This is an upper limit: actual production is smaller, because the plant is out of use at times. Total production in Finland was $79.9\\,\\text{TWh}$, and $14.0 : 79.9 \\approx 18\\,\\%$, so one plant would produce at most almost a fifth.",
       "optional": true
     },
     {
