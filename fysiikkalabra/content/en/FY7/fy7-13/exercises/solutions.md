@@ -151,7 +151,7 @@
 **Formula:** $d = \dfrac{1\,\text{mm}}{N}$ and slope $a = \dfrac{\lambda}{d}$, so $\lambda = a\,d$
 **Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 100 = 1.00 \cdot 10^{-5}\,\text{m}$ and finally $1\,\text{nm} = 1 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $\lambda = 0.06337 \cdot 1.00 \cdot 10^{-5}\,\text{m} = 6.337 \cdot 10^{-7}\,\text{m} = 633.7\,\text{nm}$
-**Answer:** $634\,\text{nm}$, three significant figures like the distance $L$. The wavelength of red light is usually about $630$–$650\,\text{nm}$, so the result fits.
+**Answer:** $634\,\text{nm}$, three significant figures like the distance $L$. The wavelength of a red laser is usually about $630$–$650\,\text{nm}$, so the result fits.
 **Reasonableness:** A single point gives the same order of magnitude: $k = 8$ gives $\lambda = 0.5081 \cdot 10.0\,\mu\text{m} : 8 = 635\,\text{nm}$. For the most distant maximum the same measurement error in $x_k$ is a smaller part, so fitting a line to the whole data set confirms the result.
 
 ## fy7-13-L2-06
@@ -202,7 +202,7 @@ For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. T
 **Formula:** $\tan\theta = \dfrac{x}{L}$ and $d\sin\theta = k\lambda$, so $\lambda = \dfrac{d\sin\theta}{k}$ and $x_k = L\tan\theta_k$
 **Conversions:** $d = 0.250\,\text{mm} = 2.50 \cdot 10^{-4}\,\text{m}$ and $x_1 = 5.0\,\text{mm} = 5.0 \cdot 10^{-3}\,\text{m}$.
 **Substitution:** a) $\theta_1 = \tan^{-1}\dfrac{5.0 \cdot 10^{-3}\,\text{m}}{2.00\,\text{m}} = \tan^{-1} 0.00250 = 0.143^\circ$ and $\lambda = 2.50 \cdot 10^{-4}\,\text{m} \cdot \sin 0.143^\circ = 2.50 \cdot 10^{-4}\,\text{m} \cdot 0.00250 = 6.25 \cdot 10^{-7}\,\text{m} = 625\,\text{nm}$. b) $\sin\theta_2 = \dfrac{2 \cdot 625 \cdot 10^{-9}\,\text{m}}{2.50 \cdot 10^{-4}\,\text{m}} = 0.00500$, so $x_2 = 2.00\,\text{m} \cdot \tan 0.2865^\circ = 0.0100\,\text{m} = 10.0\,\text{mm}$; in the table the peak $I = 1.00$ is exactly at this position. c) The first maximum of the grating appears at the same position, $x_1 = 5.0\,\text{mm}$.
-**Answer:** $625\,\text{nm}$, three significant figures like the slit separation and the distance. The second-order maximum is at $10.0\,\text{mm}$, which fits the table. The maxima of the grating are at the same positions, because $d$ and the condition $d\sin\theta = k\lambda$ are the same, but they are narrower and brighter, and between them there is a wide dark region.
+**Answer:** $\lambda \approx 6.3 \cdot 10^2\,\text{nm}$ (calculated value $625\,\text{nm}$), two significant figures, because the position of the maximum read from the table, $x_1 = 5.0\,\text{mm}$, has two. The second-order maximum is at $10.0\,\text{mm}$, which fits the table. The maxima of the grating are at the same positions, because $d$ and the condition $d\sin\theta = k\lambda$ are the same, but they are narrower and brighter, and between them there is a wide dark region.
 **Reasonableness:** The wavelength $625\,\text{nm}$ is orange-red light. The spacing of the maxima is $5.0\,\text{mm}$, so the minima are at $2.5\,\text{mm}$ and $7.5\,\text{mm}$, and in the table the intensity is $0.00$ there. A grating spacing of $0.250\,\text{mm}$ means only $4$ lines per millimetre, so the grating of part c) is imaginary; the line density of a real grating is hundreds of lines per millimetre. The angle is small, so $\lambda \approx d x_1 : L = 625\,\text{nm}$.
 
 ## fy7-13-L3-05

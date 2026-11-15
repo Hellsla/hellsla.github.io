@@ -174,7 +174,7 @@
     {
       "id": "fy7-15-L2-04",
       "level": 2,
-      "text": "Valo tulee ilmasta lasilevyn pintaan Brewsterin kulmassa. Lasin taitekerroin on $1{,}50$ ja ilman $1{,}00$. Kuinka suuressa kulmassa pinnan normaaliin nähden taittunut säde etenee lasissa?",
+      "text": "Syventävä tehtävä.\n\nValo tulee ilmasta lasilevyn pintaan Brewsterin kulmassa. Lasin taitekerroin on $1{,}50$ ja ilman $1{,}00$. Kuinka suuressa kulmassa pinnan normaaliin nähden taittunut säde etenee lasissa?",
       "answer": 33.6901,
       "unit": "°",
       "tolerance": 0.02
@@ -182,7 +182,7 @@
     {
       "id": "fy7-15-L2-05",
       "level": 2,
-      "text": "Opiskelija tutki Malusin lakia valoanturilla. Anturin edessä oli polarisaattorikalvo. Anturi mittasi puhelimen näytön polarisoitunutta valoa ja huoneen taustavaloa. Kulma $\\theta$ on kalvon läpäisysuunnan ja näytön polarisaatiosuunnan välinen kulma. Luku $E$ on anturin lukema luksiyksikössä. Aineisto on esimerkkiaineisto.\n\nPiirrä lukema $E$ kulman kosinin neliön $\\cos^2\\theta$ funktiona ja sovita pisteisiin suora. Taustavalo lisää jokaiseen lukemaan saman verran. Vähennä taustavalon osuus. Kuinka suuri on lukema, jonka pelkkä näytön polarisoitunut valo antaa, kun kalvon läpäisysuunta on näytön polarisaation suuntainen?",
+      "text": "Syventävä tehtävä.\n\nOpiskelija tutki Malusin lakia valoanturilla. Anturin edessä oli polarisaattorikalvo. Anturi mittasi puhelimen näytön polarisoitunutta valoa ja huoneen taustavaloa. Kulma $\\theta$ on kalvon läpäisysuunnan ja näytön polarisaatiosuunnan välinen kulma. Luku $E$ on anturin lukema luksiyksikössä. Aineisto on esimerkkiaineisto.\n\nPiirrä lukema $E$ kulman kosinin neliön $\\cos^2\\theta$ funktiona ja sovita pisteisiin suora. Taustavalo lisää jokaiseen lukemaan saman verran. Vähennä taustavalon osuus. Kuinka suuri on lukema, jonka pelkkä näytön polarisoitunut valo antaa, kun kalvon läpäisysuunta on näytön polarisaation suuntainen?",
       "kind": [
         "data",
         "graph",
@@ -244,7 +244,7 @@
     {
       "id": "fy7-15-L2-06",
       "level": 2,
-      "text": "Opiskelija mittasi, kuinka suuri osa polarisoituneesta valosta pääsee polarisaattorin läpi. Hän mittasi sen polarisaattorin kulman funktiona. Kulma $\\theta$ on valon polarisaatiosuunnan ja polarisaattorin läpäisysuunnan välinen kulma. Suhde $I : I_0$ on läpi tulleen valon intensiteetin suhde tulevan valon intensiteettiin. Aineisto on esimerkkiaineisto.\n\nPiirrä mittauspisteistä kuvaaja ja piirrä niiden kautta tasainen käyrä. Lue käyrältä kulma, jolla intensiteetti on $40\\,\\%$ tulevan valon intensiteetistä. Tarkista tulos Malusin laista. Anna kulma asteina.",
+      "text": "Syventävä tehtävä.\n\nOpiskelija mittasi, kuinka suuri osa polarisoituneesta valosta pääsee polarisaattorin läpi. Hän mittasi sen polarisaattorin kulman funktiona. Kulma $\\theta$ on valon polarisaatiosuunnan ja polarisaattorin läpäisysuunnan välinen kulma. Suhde $I : I_0$ on läpi tulleen valon intensiteetin suhde tulevan valon intensiteettiin. Aineisto on esimerkkiaineisto.\n\nPiirrä mittauspisteistä kuvaaja ja piirrä niiden kautta tasainen käyrä. Lue käyrältä kulma, jolla intensiteetti on $40\\,\\%$ tulevan valon intensiteetistä. Tarkista tulos Malusin laista. Anna kulma asteina.",
       "kind": [
         "data",
         "graph"
@@ -293,7 +293,7 @@
     {
       "id": "fy7-15-L2-07",
       "level": 2,
-      "text": "Opiskelija ratkaisee tehtävää: ”Valo tulee ilmasta etanolin pintaan. Etanolin taitekerroin on $1{,}36$ ja ilman $1{,}00$. Millä tulokulmalla heijastunut valo on täysin polarisoitunutta?”\n\nHän kirjoittaa: ”Brewsterin laki on $\\tan\\alpha_\\text{B} = n_1 : n_2$. Ilman taitekerroin on $n_1 = 1{,}00$ ja etanolin $n_2 = 1{,}36$, joten $\\tan\\alpha_\\text{B} = 1{,}00 : 1{,}36 = 0{,}735$ ja $\\alpha_\\text{B} = 36{,}3^\\circ$.”\n\nEtsi opiskelijan virhe ja laske oikea Brewsterin kulma asteina. Selitä, mikä opiskelijan saama kulma $36{,}3^\\circ$ oikeasti on tässä tilanteessa.",
+      "text": "Syventävä tehtävä.\n\nOpiskelija ratkaisee tehtävää: ”Valo tulee ilmasta etanolin pintaan. Etanolin taitekerroin on $1{,}36$ ja ilman $1{,}00$. Millä tulokulmalla heijastunut valo on täysin polarisoitunutta?”\n\nHän kirjoittaa: ”Brewsterin laki on $\\tan\\alpha_\\text{B} = n_1 : n_2$. Ilman taitekerroin on $n_1 = 1{,}00$ ja etanolin $n_2 = 1{,}36$, joten $\\tan\\alpha_\\text{B} = 1{,}00 : 1{,}36 = 0{,}735$ ja $\\alpha_\\text{B} = 36{,}3^\\circ$.”\n\nEtsi opiskelijan virhe ja laske oikea Brewsterin kulma asteina. Selitä, mikä opiskelijan saama kulma $36{,}3^\\circ$ oikeasti on tässä tilanteessa.",
       "kind": [
         "error"
       ],
@@ -304,7 +304,7 @@
     {
       "id": "fy7-15-L2-08",
       "level": 2,
-      "text": "Kuvassa on suora, joka on mitattu puhelimen näytön valosta polarisaattorikalvon läpi. Valoanturin lukema $E$ on kalvon kulman kosinin neliön $\\cos^2\\theta$ funktiona. Kulma $\\theta$ on kalvon läpäisysuunnan ja näytön polarisaatiosuunnan välinen kulma. Lukemassa on mukana huoneen taustavalo.\n\nLue suoralta, millä kulmalla $\\theta$ anturin lukema on $200\\,\\text{lx}$. Anna vastaus asteina.",
+      "text": "Syventävä tehtävä.\n\nKuvassa on suora, joka on mitattu puhelimen näytön valosta polarisaattorikalvon läpi. Valoanturin lukema $E$ on kalvon kulman kosinin neliön $\\cos^2\\theta$ funktiona. Kulma $\\theta$ on kalvon läpäisysuunnan ja näytön polarisaatiosuunnan välinen kulma. Lukemassa on mukana huoneen taustavalo.\n\nLue suoralta, millä kulmalla $\\theta$ anturin lukema on $200\\,\\text{lx}$. Anna vastaus asteina.",
       "kind": [
         "data",
         "graph"
@@ -393,7 +393,7 @@
     {
       "id": "fy7-15-L3-05",
       "level": 3,
-      "text": "Kalastaja istuu järven rannalla. Vedenpinnasta heijastuu häikäisevää auringonvaloa. Heijastuneen valon intensiteetti silmän kohdalla on $40\\,\\text{W/m}^2$. Aurinko on niin korkealla, että valo heijastuu veden pinnasta Brewsterin kulmassa. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$.\n\nKalastaja käyttää polaroituja aurinkolaseja. Lasien läpäisysuunta on pystysuora. Hän kallistaa päätään niin, että läpäisysuunta on kulmassa $25{,}0^\\circ$ pystysuunnasta.\n\na) Kuinka korkealla Aurinko on horisontin yläpuolella?\n\nb) Kuinka suuri on häikäisyn intensiteetti lasien jälkeen?\n\nc) Tavallinen tummennettu lasi päästäisi läpi $30\\,\\%$ valon intensiteetistä suunnasta riippumatta. Kumpi lasi vähentää häikäisyä enemmän, ja miksi? Vertaa lopuksi lasien vaikutusta polarisoimattomaan valoon.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
+      "text": "Syventävä tehtävä.\n\nKalastaja istuu järven rannalla. Vedenpinnasta heijastuu häikäisevää auringonvaloa. Heijastuneen valon intensiteetti silmän kohdalla on $40\\,\\text{W/m}^2$. Aurinko on niin korkealla, että valo heijastuu veden pinnasta Brewsterin kulmassa. Veden taitekerroin on $1{,}33$ ja ilman $1{,}00$.\n\nKalastaja käyttää polaroituja aurinkolaseja. Lasien läpäisysuunta on pystysuora. Hän kallistaa päätään niin, että läpäisysuunta on kulmassa $25{,}0^\\circ$ pystysuunnasta.\n\na) Kuinka korkealla Aurinko on horisontin yläpuolella?\n\nb) Kuinka suuri on häikäisyn intensiteetti lasien jälkeen?\n\nc) Tavallinen tummennettu lasi päästäisi läpi $30\\,\\%$ valon intensiteetistä suunnasta riippumatta. Kumpi lasi vähentää häikäisyä enemmän, ja miksi? Vertaa lopuksi lasien vaikutusta polarisoimattomaan valoon.\n\nKirjoita vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "model",
         "reasoning"

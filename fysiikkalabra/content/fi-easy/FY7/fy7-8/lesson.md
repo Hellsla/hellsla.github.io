@@ -157,7 +157,7 @@ Ideaalinen muuntaja ei kuluta energiaa. Siksi ensiökäämiin tuleva teho on yht
 Muuntaja ei siis lisää energiaa eikä tehoa. Se vaihtaa suuren virran suureksi jännitteeksi tai päinvastoin. Todellisessa muuntajassa osa energiasta muuttuu sisäenergiaksi käämien resistanssissa ja rautasydämen pyörrevirroissa. Siksi sydän kootaan ohuista levyistä, jotka on eristetty toisistaan (luku *Lenzin laki ja pyörrevirrat*). Suurten voimalaitosmuuntajien hyötysuhde on yli $99\,\%$.
 
 ### Siirtohäviö ja suurjännite
-Voimajohdolla on resistanssi. Johdossa kulkeva virta lämmittää johtoa. Lämmöksi muuttuva teho on verrannollinen virran neliöön. Siksi virta kannattaa pitää pienenä.
+Voimajohdolla on resistanssi. Johdossa kulkeva virta lämmittää johtoa. Osa siirrettävästä energiasta muuttuu johdon sisäenergiaksi. Se siirtyy lämpönä ympäristöön. Tämä häviöteho on verrannollinen virran neliöön. Siksi virta kannattaa pitää pienenä.
 
 Saman tehon voi siirtää suurella jännitteellä ja pienellä virralla. Kun jännite nostetaan kymmenkertaiseksi, virta pienenee kymmenesosaan ja häviöteho sadasosaan. Siksi voimalaitoksen generaattorin jännite nostetaan muuntajalla **suurjännitteeksi**. Fingrid ylläpitää Suomen kantaverkkoa. Kantaverkon jännitteet ovat $400\,\text{kV}$, $220\,\text{kV}$ ja $110\,\text{kV}$. Kantaverkon häviöt vastaavat noin $2\,\%$:a Suomessa käytetystä sähköstä (Fingrid, *Yhteisillä linjoilla* 2026, vuoden 2025 tiedot).
 
@@ -221,7 +221,7 @@ muuntaja :: \frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}
 Tässä $U_1$ on ensiöjännite (V) ja $U_2$ on toisiojännite (V). Kirjaimet $N_1$ ja $N_2$ ovat ensiökäämin ja toisiokäämin kierrosten lukumäärät. Kirjaimet $I_1$ ja $I_2$ ovat ensiövirta ja toisiovirta (A). Suhde $N_1 : N_2$ on muuntosuhde. Viimeinen yhtäsuuruus seuraa tehon säilymisestä: $U_1 I_1 = U_2 I_2$. Jännitteet ja virrat ovat tehollisia arvoja (luku *Generaattori ja vaihtovirta*). Kun jännite kasvaa, virta pienenee samassa suhteessa.
 
 ### Siirtojohdon tehohäviö
-Sähkönsiirtoa kuvataan ensin yksinkertaistetulla kaksijohtimisella virtapiirillä. Siinä virta kulkee perille yhtä johdinta pitkin ja palaa toista pitkin. Voimalaitos lähettää tehon $P$ jännitteellä $U$. Johdon virta ja johdossa lämmöksi muuttuva teho ovat
+Sähkönsiirtoa kuvataan ensin yksinkertaistetulla kaksijohtimisella virtapiirillä. Siinä virta kulkee perille yhtä johdinta pitkin ja palaa toista pitkin. Voimalaitos lähettää tehon $P$ jännitteellä $U$. Johdon virta ja johdossa sisäenergiaksi muuttuva teho ovat
 ```kaavat
 tehonkulutus johtimessa :: P = U I
 P_\text{h} = R I^2 = \frac{R P^2}{U^2}
@@ -230,7 +230,7 @@ Tässä $P$ on siirrettävä teho (W), $U$ on siirtojännite (V) ja $I$ on johdo
 
 Siirtojännite $U$ ei ole sama kuin jännite johdon resistanssin yli. Johdon päiden välinen jännitehäviö on vain $R I$. Siksi häviötehoa ei saa laskea lausekkeella $U^2 : R$.
 
-<svg data-fig="loss-graph" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: siirtojohdossa lämmöksi muuttuvan tehon osuus siirretystä tehosta prosentteina. Osuus on siirtojännitteen funktio, ja jännite on kilovoltteina. Siirretty teho on 200 MW ja johdon resistanssi 6,0 ohmia yksinkertaistetussa kaksijohtimisessa mallissa. Käyrä laskee jyrkästi. Jännitteellä 100 kV osuus on 12 %, jännitteellä 200 kV 3,0 % ja jännitteellä 400 kV 0,75 %. Kun jännite kaksinkertaistuu, osuus pienenee neljäsosaan." style="max-width:100%;font-size:24px">
+<svg data-fig="loss-graph" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: siirtojohdossa sisäenergiaksi muuttuvan tehon osuus siirretystä tehosta prosentteina. Osuus on siirtojännitteen funktio, ja jännite on kilovoltteina. Siirretty teho on 200 MW ja johdon resistanssi 6,0 ohmia yksinkertaistetussa kaksijohtimisessa mallissa. Käyrä laskee jyrkästi. Jännitteellä 100 kV osuus on 12 %, jännitteellä 200 kV 3,0 % ja jännitteellä 400 kV 0,75 %. Kun jännite kaksinkertaistuu, osuus pienenee neljäsosaan." style="max-width:100%;font-size:24px">
   <line x1="143" y1="290" x2="143" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="189.5" y1="290" x2="189.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="236" y1="290" x2="236" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

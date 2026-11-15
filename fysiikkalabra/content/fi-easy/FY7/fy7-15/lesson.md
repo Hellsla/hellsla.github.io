@@ -416,6 +416,8 @@ Myös monien puhelinten näyttöjen pinnassa on polarisaattorikalvo, joten näyt
 
 ## Kaava: Malusin laki ja Brewsterin laki
 
+**Syventävä osio.** Malusin ja Brewsterin lait syventävät luvun aihetta. Ydinpolulla riittää ymmärtää edellä kuvattu malli ilman laskuja: miten polarisaattori ja heijastus polarisoivat valoa. Tämän osion laskut ovat syventäviä. Myös luvun esimerkki ja näihin lakeihin liittyvät tehtävät ovat syventäviä.
+
 ### Malusin laki
 Polarisoituneen valon sähkökentän amplitudi on $E_0$. Valo tulee analysaattoriin, jonka läpäisysuunta on kulmassa $\theta$ valon polarisaatiosuuntaan nähden. Sähkökentän läpäisysuuntainen komponentti $E_0 \cos\theta$ pääsee läpi. Kohtisuora komponentti $E_0 \sin\theta$ absorboituu.
 
@@ -565,7 +567,7 @@ Brewsterin kulmassa heijastuneen valon sähkökenttä värähtelee pinnan suunta
 </svg>
 
 ## Esimerkki
-Polarisoimattoman valon intensiteetti on $840\,\text{W/m}^2$. Valo kulkee kahden ihanteellisen polarisaattorin läpi, ja polarisaattorien läpäisysuuntien välinen kulma on $35^\circ$. Kuinka suuri on valon intensiteetti toisen polarisaattorin jälkeen?
+Syventävä esimerkki. Polarisoimattoman valon intensiteetti on $840\,\text{W/m}^2$. Valo kulkee kahden ihanteellisen polarisaattorin läpi, ja polarisaattorien läpäisysuuntien välinen kulma on $35^\circ$. Kuinka suuri on valon intensiteetti toisen polarisaattorin jälkeen?
 
 <!-- vaihe -->
 

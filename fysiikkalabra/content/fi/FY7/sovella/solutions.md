@@ -165,7 +165,7 @@ Positiiviseen ioniin vaikuttava sähköinen voima on sähkökentän suuntainen, 
 ### a)
 **Annettu:** sähköaseman johtoon syöttämä teho $P = 6{,}0\,\text{MW}$, siirtojännite $U = 20\,\text{kV}$, johdon pituus $25\,\text{km}$, kaksi johdinta, poikkipinta-ala $A = 150\,\text{mm}^2$ ja resistiivisyys $\rho = 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m}$
 **Kysytty:** johdon häviöteho $P_\text{h}$ ja sen osuus johtoon syötetystä tehosta
-**Periaate:** Virta kulkee kaivokselle toista johdinta pitkin ja palaa toista pitkin, joten yksinkertaistetussa kaksijohtimisessa mallissa virtapiirin johtimien pituus on $2 \cdot 25\,\text{km}$. Resistanssi saadaan resistiivisyydestä, pituudesta ja poikkipinta-alasta. Siirrettävä teho on jännitteen ja virran tulo, joten virta on teho jaettuna jännitteellä. Johdon resistanssissa lämmöksi muuttuva teho on resistanssin ja virran neliön tulo.
+**Periaate:** Virta kulkee kaivokselle toista johdinta pitkin ja palaa toista pitkin, joten yksinkertaistetussa kaksijohtimisessa mallissa virtapiirin johtimien pituus on $2 \cdot 25\,\text{km}$. Resistanssi saadaan resistiivisyydestä, pituudesta ja poikkipinta-alasta. Siirrettävä teho on jännitteen ja virran tulo, joten virta on teho jaettuna jännitteellä. Johdon resistanssissa sisäenergiaksi muuttuva teho on resistanssin ja virran neliön tulo.
 **Kaava:** $R = \rho \dfrac{l}{A}$, $I = \dfrac{P}{U}$ ja $P_\text{h} = R I^2$
 **Muunnokset:** $l = 2 \cdot 25\,\text{km} = 5{,}0 \cdot 10^{4}\,\text{m}$, $A = 150\,\text{mm}^2 = 150 \cdot 10^{-6}\,\text{m}^2$, $P = 6{,}0 \cdot 10^{6}\,\text{W}$ ja $U = 20 \cdot 10^{3}\,\text{V}$
 **Sijoitus:** $R = 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{4}\,\text{m}}{150 \cdot 10^{-6}\,\text{m}^2} = 9{,}40\,\Omega$, $I = \dfrac{6{,}0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 300\,\text{A}$ ja $P_\text{h} = 9{,}40\,\Omega \cdot (300\,\text{A})^2 = 846\,000\,\text{W}$. Osuus on $846\,\text{kW} : 6000\,\text{kW} = 0{,}141 = 14{,}1\,\%$.
@@ -235,7 +235,7 @@ Positiiviseen ioniin vaikuttava sähköinen voima on sähkökentän suuntainen, 
 **Kysytty:** aihion pinnan lämpötila celsiusasteina
 **Periaate:** Kuuman kappaleen lämpösäteilyn spektri on jatkuva, ja sen huippu siirtyy lyhyempiin aallonpituuksiin lämpötilan kasvaessa. Mustan kappaleen spektrin huipun aallonpituuden ja absoluuttisen lämpötilan tulo on vakio (Wienin siirtymälaki). Aihio oletetaan mustaksi kappaleeksi, kuten kuvaaja tekee.
 **Kuvaajan lukeminen:** Käyrän huippu on ruudukon pystysuoralla viivalla $2{,}0\,\mu\text{m}$:n kohdalla, joten $\lambda_\text{max} = 2{,}0\,\mu\text{m}$. Huippu on loiva, joten sen paikan voi lukea noin $\pm 0{,}05\,\mu\text{m}$:n tarkkuudella (d-kohta).
-**Kaava:** $\lambda_\text{max} T = b$, josta $T = \dfrac{b}{\lambda_\text{max}}$, Celsiusasteina lämpötilan lukuarvo on $273$ pienempi kuin kelvineinä.
+**Kaava:** $\lambda_\text{max} T = b$, josta $T = \dfrac{b}{\lambda_\text{max}}$. Celsiusasteina lämpötilan lukuarvo on $273$ pienempi kuin kelvineinä.
 **Muunnokset:** $\lambda_\text{max} = 2{,}0\,\mu\text{m} = 2{,}0 \cdot 10^{-6}\,\text{m}$
 **Sijoitus:** $T = \dfrac{2{,}898 \cdot 10^{-3}\,\text{m} \cdot \text{K}}{2{,}0 \cdot 10^{-6}\,\text{m}} = 1449\,\text{K}$, joten $t = (1449 - 273)\,{}^\circ\text{C} \approx 1176\,{}^\circ\text{C}$
 **Vastaus:** $T \approx 1450\,\text{K}$ eli $t \approx 1180\,{}^\circ\text{C}$, kolme merkitsevää numeroa, koska huippu on ruudukon viivalla; lukutarkkuuden vaikutus arvioidaan d-kohdassa.

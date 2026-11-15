@@ -105,7 +105,7 @@
     {
       "id": "fy7-1-L1-08",
       "level": 1,
-      "text": "In Oulu the magnetic flux density of the Earth's magnetic field is about $53\\,\\mu\\text{T}$, and the field points $76\\,{}^\\circ$ below the horizontal. What is the vertical component of the field in microtesla?",
+      "text": "In Oulu the magnetic flux density of the Earth's magnetic field is about $53\\,\\mu\\text{T}$, and the field points $76^\\circ$ below the horizontal. What is the vertical component of the field in microtesla?",
       "kind": [
         "model"
       ],
@@ -275,7 +275,7 @@
     {
       "id": "fy7-1-L2-07",
       "level": 2,
-      "text": "A student solves the problem: “At a compass the horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north and the field of a magnet on the table is $30\\,\\mu\\text{T}$ towards the east. Through how many degrees does the needle turn from north towards east?”\n\nTheir solution: $\\tan\\theta = \\dfrac{B_\\text{h}}{B_\\text{m}} = \\dfrac{14\\,\\mu\\text{T}}{30\\,\\mu\\text{T}} = 0.467$, so $\\theta = \\tan^{-1} 0.467 = 25\\,{}^\\circ$.\n\na) Why is the result implausible when the field of the magnet is much greater than the Earth's field? What is the mistake in the solution?\n\nb) Calculate the correct angle.\n\nEnter the result of part b) in degrees in the answer field.",
+      "text": "A student solves the problem: “At a compass the horizontal component of the Earth's magnetic field is $14\\,\\mu\\text{T}$ towards the north and the field of a magnet on the table is $30\\,\\mu\\text{T}$ towards the east. Through how many degrees does the needle turn from north towards east?”\n\nTheir solution: $\\tan\\theta = \\dfrac{B_\\text{h}}{B_\\text{m}} = \\dfrac{14\\,\\mu\\text{T}}{30\\,\\mu\\text{T}} = 0.467$, so $\\theta = \\tan^{-1} 0.467 = 25^\\circ$.\n\na) Why is the result implausible when the field of the magnet is much greater than the Earth's field? What is the mistake in the solution?\n\nb) Calculate the correct angle.\n\nEnter the result of part b) in degrees in the answer field.",
       "kind": [
         "error"
       ],

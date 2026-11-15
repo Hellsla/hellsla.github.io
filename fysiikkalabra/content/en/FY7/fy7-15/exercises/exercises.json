@@ -174,7 +174,7 @@
     {
       "id": "fy7-15-L2-04",
       "level": 2,
-      "text": "Light arrives from air at the surface of a glass sheet at Brewster's angle. The refractive index of glass is $1.50$ and that of air $1.00$. At what angle to the normal of the surface does the refracted ray travel in the glass?",
+      "text": "Extension task.\n\nLight arrives from air at the surface of a glass sheet at Brewster's angle. The refractive index of glass is $1.50$ and that of air $1.00$. At what angle to the normal of the surface does the refracted ray travel in the glass?",
       "answer": 33.6901,
       "unit": "°",
       "tolerance": 0.02
@@ -182,7 +182,7 @@
     {
       "id": "fy7-15-L2-05",
       "level": 2,
-      "text": "A student investigated Malus's law with a light sensor. A polariser film was in front of the sensor, and the sensor measured the polarised light of a phone display and the background light of the room. The angle $\\theta$ is the angle between the transmission axis of the film and the polarisation direction of the display, and $E$ is the reading of the sensor in lux. The data is example data.\n\nPlot the reading $E$ as a function of the square of the cosine of the angle, $\\cos^2\\theta$, and fit a straight line to the points. The background light adds the same amount to every reading. Subtract the share of the background light. What is the reading that the polarised light of the display alone gives when the transmission axis of the film is aligned with the polarisation of the display?",
+      "text": "Extension task.\n\nA student investigated Malus's law with a light sensor. A polariser film was in front of the sensor, and the sensor measured the polarised light of a phone display and the background light of the room. The angle $\\theta$ is the angle between the transmission axis of the film and the polarisation direction of the display, and $E$ is the reading of the sensor in lux. The data is example data.\n\nPlot the reading $E$ as a function of the square of the cosine of the angle, $\\cos^2\\theta$, and fit a straight line to the points. The background light adds the same amount to every reading. Subtract the share of the background light. What is the reading that the polarised light of the display alone gives when the transmission axis of the film is aligned with the polarisation of the display?",
       "kind": [
         "data",
         "graph",
@@ -244,7 +244,7 @@
     {
       "id": "fy7-15-L2-06",
       "level": 2,
-      "text": "A student measured the share of polarised light that passes through a polariser as a function of the angle of the polariser. The angle $\\theta$ is the angle between the polarisation direction of the light and the transmission axis of the polariser, and $I : I_0$ is the ratio of the intensity of the transmitted light to the intensity of the incident light. The data is example data.\n\nPlot a graph of the measured points and draw a smooth curve through them. Read from the curve the angle at which the intensity is $40\\,\\%$ of the intensity of the incident light, and check the result with Malus's law. Give the angle in degrees.",
+      "text": "Extension task.\n\nA student measured the share of polarised light that passes through a polariser as a function of the angle of the polariser. The angle $\\theta$ is the angle between the polarisation direction of the light and the transmission axis of the polariser, and $I : I_0$ is the ratio of the intensity of the transmitted light to the intensity of the incident light. The data is example data.\n\nPlot a graph of the measured points and draw a smooth curve through them. Read from the curve the angle at which the intensity is $40\\,\\%$ of the intensity of the incident light, and check the result with Malus's law. Give the angle in degrees.",
       "kind": [
         "data",
         "graph"
@@ -293,7 +293,7 @@
     {
       "id": "fy7-15-L2-07",
       "level": 2,
-      "text": "A student is solving a problem: “Light arrives from air at the surface of ethanol. The refractive index of ethanol is $1.36$ and that of air $1.00$. At what angle of incidence is the reflected light completely polarised?”\n\nThe student writes: “Brewster's law is $\\tan\\alpha_\\text{B} = n_1 : n_2$. The refractive index of air is $n_1 = 1.00$ and that of ethanol $n_2 = 1.36$, so $\\tan\\alpha_\\text{B} = 1.00 : 1.36 = 0.735$ and $\\alpha_\\text{B} = 36.3^\\circ$.”\n\nFind the student's error and calculate the correct Brewster's angle in degrees. Explain what the angle $36.3^\\circ$ that the student obtained actually is in this situation.",
+      "text": "Extension task.\n\nA student is solving a problem: “Light arrives from air at the surface of ethanol. The refractive index of ethanol is $1.36$ and that of air $1.00$. At what angle of incidence is the reflected light completely polarised?”\n\nThe student writes: “Brewster's law is $\\tan\\alpha_\\text{B} = n_1 : n_2$. The refractive index of air is $n_1 = 1.00$ and that of ethanol $n_2 = 1.36$, so $\\tan\\alpha_\\text{B} = 1.00 : 1.36 = 0.735$ and $\\alpha_\\text{B} = 36.3^\\circ$.”\n\nFind the student's error and calculate the correct Brewster's angle in degrees. Explain what the angle $36.3^\\circ$ that the student obtained actually is in this situation.",
       "kind": [
         "error"
       ],
@@ -304,7 +304,7 @@
     {
       "id": "fy7-15-L2-08",
       "level": 2,
-      "text": "The figure shows the line obtained when the light of a phone display was measured through a polarising film: the reading $E$ of a light sensor as a function of $\\cos^2\\theta$ of the angle of the film. The angle $\\theta$ is the angle between the transmission axis of the film and the direction of polarisation of the display. The reading includes the background light of the room.\n\nRead from the line at what angle $\\theta$ the reading of the sensor is $200\\,\\text{lx}$. Give the answer in degrees.",
+      "text": "Extension task.\n\nThe figure shows the line obtained when the light of a phone display was measured through a polarising film: the reading $E$ of a light sensor as a function of $\\cos^2\\theta$ of the angle of the film. The angle $\\theta$ is the angle between the transmission axis of the film and the direction of polarisation of the display. The reading includes the background light of the room.\n\nRead from the line at what angle $\\theta$ the reading of the sensor is $200\\,\\text{lx}$. Give the answer in degrees.",
       "kind": [
         "data",
         "graph"
@@ -393,7 +393,7 @@
     {
       "id": "fy7-15-L3-05",
       "level": 3,
-      "text": "An angler sits on the shore of a lake, and glaring sunlight is reflected from the surface of the water. The intensity of the reflected light at the eye is $40\\,\\text{W/m}^2$. The Sun is at such a height that the light is reflected from the water surface at Brewster's angle. The refractive index of water is $1.33$ and that of air $1.00$.\n\nThe angler wears polarised sunglasses whose transmission axis is vertical, and tilts their head so that the transmission axis is at an angle of $25.0^\\circ$ from the vertical.\n\na) How high is the Sun above the horizon?\n\nb) What is the intensity of the glare after the glasses?\n\nc) An ordinary tinted lens would let through $30\\,\\%$ of the intensity of the light regardless of direction. Which lens reduces glare more, and why? Finally, compare the effect of the lenses on unpolarised light.\n\nWrite the result of part b) in the answer box.",
+      "text": "Extension task.\n\nAn angler sits on the shore of a lake, and glaring sunlight is reflected from the surface of the water. The intensity of the reflected light at the eye is $40\\,\\text{W/m}^2$. The Sun is at such a height that the light is reflected from the water surface at Brewster's angle. The refractive index of water is $1.33$ and that of air $1.00$.\n\nThe angler wears polarised sunglasses whose transmission axis is vertical, and tilts their head so that the transmission axis is at an angle of $25.0^\\circ$ from the vertical.\n\na) How high is the Sun above the horizon?\n\nb) What is the intensity of the glare after the glasses?\n\nc) An ordinary tinted lens would let through $30\\,\\%$ of the intensity of the light regardless of direction. Which lens reduces glare more, and why? Finally, compare the effect of the lenses on unpolarised light.\n\nWrite the result of part b) in the answer box.",
       "kind": [
         "model",
         "reasoning"

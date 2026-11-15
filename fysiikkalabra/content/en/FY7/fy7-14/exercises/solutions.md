@@ -168,7 +168,7 @@ The expression $\lambda : (4n)$ is obtained if the shift is forgotten, but it is
 **Conversions:** Not needed: both shares are read in percent, and the ratio has no unit.
 **Substitution:** $\text{removed share} = 1 - \dfrac{R_\text{coated}}{R_0} = 1 - \dfrac{1.3\,\%}{4.3\,\%} = 1 - 0.302 = 0.698 = 69.8\,\%$
 **Answer:** about $70\,\%$, two significant figures like the values read from the graph. The uncertainty of reading the graph affects the third figure.
-**Reasonableness:** The coating reduces the reflection by more than half, as in the chapter: the reflection falls from about $4.3\,\%$ to about $1.3\,\%$. The result is below $100\,\%$, so the coating does not cancel the reflection completely, as expected, because a single coating layer cannot cancel the reflection at all wavelengths.
+**Reasonableness:** The coating reduces the reflection by more than half, as in the chapter: the reflection falls from about $4.3\,\%$ to about $1.3\,\%$. The result is below $100\,\%$, so the coating does not cancel the reflection completely even at the wavelength where it works best. This is expected: the refractive index of $\text{MgF}_2$, $1.38$, is larger than $\sqrt{1.52} \approx 1.23$, so the waves reflected from the two surfaces of the coating are not equally strong and do not cancel each other completely.
 
 ## fy7-14-L3-01
 **Given:** refractive index of the soap film $n = 1.33$, air on both sides, wavelength $\lambda = 589\,\text{nm}$, normal incidence; the film thickens from top to bottom, and the topmost part is black

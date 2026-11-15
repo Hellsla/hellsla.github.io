@@ -168,7 +168,7 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Muunnokset:** Ei tarvita. Molemmat osuudet luetaan prosentteina, ja suhteella ei ole yksikköä.
 **Sijoitus:** $\text{poistuva osuus} = 1 - \dfrac{R_\text{pinn}}{R_0} = 1 - \dfrac{1{,}3\,\%}{4{,}3\,\%} = 1 - 0{,}302 = 0{,}698 = 69{,}8\,\%$
 **Vastaus:** noin $70\,\%$. Vastauksessa on kaksi merkitsevää numeroa, koska kuvasta luetut arvot ovat kahden numeron tarkkuudella. Lukemisen epätarkkuus vaikuttaa kolmanteen numeroon.
-**Järkevyys:** Pinnoite vähentää heijastusta yli puoleen, kuten luvussa: heijastus pienenee noin $4{,}3\,\%$:sta noin $1{,}3\,\%$:iin. Tulos on alle $100\,\%$, joten pinnoite ei poista heijastusta kokonaan. Se on odotettua, koska yksi pinnoitekerros ei voi kumota heijastusta kaikilla aallonpituuksilla.
+**Järkevyys:** Pinnoite vähentää heijastusta yli puoleen, kuten luvussa: heijastus pienenee noin $4{,}3\,\%$:sta noin $1{,}3\,\%$:iin. Tulos on alle $100\,\%$, joten pinnoite ei poista heijastusta kokonaan edes sillä aallonpituudella, jolla se toimii parhaiten. Se on odotettua. $\text{MgF}_2$:n taitekerroin $1{,}38$ on suurempi kuin $\sqrt{1{,}52} \approx 1{,}23$. Siksi pinnoitteen kahdesta pinnasta heijastuneet aallot eivät ole yhtä voimakkaat, eivätkä ne kumoa toisiaan täysin.
 
 ## fy7-14-L3-01
 **Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, ilmaa molemmin puolin, aallonpituus $\lambda = 589\,\text{nm}$, kohtisuora tulo; kalvo paksunee ylhäältä alaspäin, ylin osa on musta

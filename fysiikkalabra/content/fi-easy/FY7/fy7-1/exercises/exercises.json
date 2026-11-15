@@ -105,7 +105,7 @@
     {
       "id": "fy7-1-L1-08",
       "level": 1,
-      "text": "Oulussa Maan magneettikentän magneettivuon tiheys on noin $53\\,\\mu\\text{T}$. Kenttä osoittaa $76\\,{}^\\circ$ vaakatason alapuolelle. Kuinka suuri on kentän pystykomponentti mikrotesloina?",
+      "text": "Oulussa Maan magneettikentän magneettivuon tiheys on noin $53\\,\\mu\\text{T}$. Kenttä osoittaa $76^\\circ$ vaakatason alapuolelle. Kuinka suuri on kentän pystykomponentti mikrotesloina?",
       "kind": [
         "model"
       ],
@@ -275,7 +275,7 @@
     {
       "id": "fy7-1-L2-07",
       "level": 2,
-      "text": "Opiskelija ratkaisee tehtävän: ”Kompassin kohdalla Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Pöydällä olevan magneetin kenttä on $30\\,\\mu\\text{T}$ itään. Kuinka monta astetta pohjoisesta itään neula kääntyy?”\n\nHänen ratkaisunsa: $\\tan\\theta = \\dfrac{B_\\text{h}}{B_\\text{m}} = \\dfrac{14\\,\\mu\\text{T}}{30\\,\\mu\\text{T}} = 0{,}467$, joten $\\theta = \\tan^{-1} 0{,}467 = 25\\,{}^\\circ$.\n\na) Miksi tulos on epäuskottava, kun magneetin kenttä on paljon Maan kenttää suurempi? Mikä ratkaisussa on virhe?\n\nb) Laske oikea kulma.\n\nKirjoita vastauskenttään kohdan b) tulos asteina.",
+      "text": "Opiskelija ratkaisee tehtävän: ”Kompassin kohdalla Maan magneettikentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen. Pöydällä olevan magneetin kenttä on $30\\,\\mu\\text{T}$ itään. Kuinka monta astetta pohjoisesta itään neula kääntyy?”\n\nHänen ratkaisunsa: $\\tan\\theta = \\dfrac{B_\\text{h}}{B_\\text{m}} = \\dfrac{14\\,\\mu\\text{T}}{30\\,\\mu\\text{T}} = 0{,}467$, joten $\\theta = \\tan^{-1} 0{,}467 = 25^\\circ$.\n\na) Miksi tulos on epäuskottava, kun magneetin kenttä on paljon Maan kenttää suurempi? Mikä ratkaisussa on virhe?\n\nb) Laske oikea kulma.\n\nKirjoita vastauskenttään kohdan b) tulos asteina.",
       "kind": [
         "error"
       ],

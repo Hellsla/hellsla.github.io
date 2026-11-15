@@ -119,7 +119,7 @@
       "choices": [
         {
           "text": "The coil under the glass gets hot, and the hot glass conducts the heat up into the pan.",
-          "feedback": "If the heat came from the coil through the glass, the glass would be the hottest part and would also get hot next to the pan. The heat is produced in the base of the pan, however: the changing field of the coil induces eddy currents in the base, and their electrical energy changes into internal energy of the base."
+          "feedback": "If the heat came from the coil through the glass, the glass would be the hottest part and would also get hot next to the pan. The base of the pan heats up itself, however: the changing field of the coil induces eddy currents in the base, and their electrical energy changes into internal energy of the base."
         },
         {
           "text": "The changing field of the coil induces eddy currents in the base of the pan, and they heat the base.",
@@ -128,7 +128,7 @@
         },
         {
           "text": "The hob emits microwaves, which pass through the base and heat the water.",
-          "feedback": "A microwave oven heats water with electromagnetic radiation, but an induction hob works differently. An empty steel pan gets hot quickly on the hob, so the heat is produced in the base of the pan: the changing field of the coil induces eddy currents in it."
+          "feedback": "A microwave oven heats water with electromagnetic radiation, but an induction hob works differently. An empty steel pan gets hot quickly on the hob, so the base itself heats up: the changing field of the coil induces eddy currents in it."
         },
         {
           "text": "The magnetic field pulls the steel base back and forth, and friction against the glass heats it.",

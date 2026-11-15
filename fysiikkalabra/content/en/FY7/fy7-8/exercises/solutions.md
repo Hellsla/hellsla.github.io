@@ -15,7 +15,7 @@
 **Formula:** $\dfrac{U_1}{U_2} = \dfrac{N_1}{N_2}$, so $N_1 = \dfrac{N_2 U_1}{U_2}$
 **Conversions:** Not needed: in the ratio of the voltages the volts cancel.
 **Substitution:** $N_1 = \dfrac{40 \cdot 230\,\text{V}}{8.0\,\text{V}} = 1150$
-**Answer:** $1150$ turns. The number of turns is a whole number, and the two significant figures of the voltage $8.0\,\text{V}$ are enough for this precision.
+**Answer:** $1150$ turns. This is the whole number that the given values give exactly. The voltage $8.0\,\text{V}$ is given to only two significant figures, however, so the number of turns is reliable to about two figures, $1.2 \cdot 10^3$ turns.
 **Reasonableness:** The voltage falls by a factor of about $29$ ($230\,\text{V} : 8.0\,\text{V} \approx 29$), so the primary coil must have about $29$ times as many turns as the secondary coil: $29 \cdot 40 \approx 1150$.
 
 ## fy7-8-L1-03
