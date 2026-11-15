@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f3f6bb4a41c5ad53
+CONTENT-HASH: 0e9256de0c213bf4
 
 ## Blocking
 
 ## Polish
-- The Kaava section's new note says the calculations are syventävä, while the core prediction ennuste-kolme gives the model value $12{,}5\,\%$ (½ · ½ · ½). The value comes from the qualitative "half through each film" idea and is called a model value, so it is not a contradiction (C). If the teacher wants a strict split, its feedback could say that the exact value is computed in the syventävä section.
+- ennuste-kolme (core) still gives the model value $12{,}5\,\%$ (½ · ½ · ½) while the section's calculations are syventävä. This is a fair simplification (C), as noted in round 1. It is no contradiction.
 
 ## Checked
-- batch delta review: The "Syventävä osio" note above Malusin laki keeps the qualitative model (the polariser halves unpolarised light, reflection polarises) on the core path and moves the calculations, the example and their tasks to syventävä. This agrees with the contribution in inquiry.json ("Laskut ovat syventävä osa"), the learn goals (none asks for a calculation), the "Syventävä:" titles of the Malus and Brewster activities, and the exercises intro. The halving of unpolarised light is already stated qualitatively before the section (Polaroidut aurinkolasit), so the core path loses no premise. The example's lead-in "Syventävä esimerkki." changes no number. The hash is the same at the start and the end.
+- delta review (round 2): the Syventävä note now says "Tämän osion laskut ja luvun esimerkki ovat syventäviä, samoin tehtävät, jotka on merkitty syventäviksi". It claims only what is marked: six exercises (L2-04 to L2-08, L3-05) carry "Syventävä tehtävä." No unmarked task is now called syventävä, so the note and the exercise set agree. This closes my exercise-set Polish item, as far as the lesson goes. Whether to mark the other Malus and Brewster tasks is the teacher's call. The core qualitative model (halving of unpolarised light, polarisation by reflection) is still stated before the section. No number or symbol changed. The hash is the same at the start and the end.
