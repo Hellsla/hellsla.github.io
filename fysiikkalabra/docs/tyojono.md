@@ -50,6 +50,7 @@ Kohdat 6 ja 8l voivat jatkua; #593 (fy8-2) yhdistää mainin ja ajaa `check_layo
 ## 5c. ElevenLabs-ääneenluku FY1 ja FY2 (opettaja 2026-11-15)
 
 Varattu: claude/elevenlabs-readaloud
+Varattu: claude/elevenlabs-fy2 (FY2)
 
 Tilanne 2026-11-15 (PR #598 suljettu, jatkuu uudessa PR:ssä haarasta claude/readaloud-recorded): ääneksi valittu Oskari - Finnish;
 `flSpeech.blocks()` lukee käsitekortin termin; FY1:n luvut fy1-1…fy1-8 on äänitetty. Opettajan päätös: mp3-tiedostot eivät kuulu
