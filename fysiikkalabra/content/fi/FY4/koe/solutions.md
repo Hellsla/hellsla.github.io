@@ -13,10 +13,10 @@
 **Perustelu:** Ylöspäin liikkuva hissi hidastuu, joten sen ja henkilön kiihtyvyys osoittaa alaspäin. Henkilöön vaikuttavat vain paino alas ja tukivoima ylös. Newtonin II lain mukaan kokonaisvoima osoittaa kiihtyvyyden suuntaan eli alas, joten $G - N = ma$ ja $N < G$. Liikkeen suunta ei ratkaise, vaan kiihtyvyyden suunta. Tukivoima ja paino eivät ole voima ja vastavoima, koska ne kohdistuvat samaan kappaleeseen; painon vastavoima on henkilön Maahan kohdistama vetovoima.
 
 ### e)
-**Perustelu:** Palikkaan vaikuttavat Maa (paino suoraan alas), lauta (tukivoima kohtisuoraan pinnasta ulos) ja laudan liikekitka. Palikka liukuu ylös, joten liikekitka osoittaa liukumista vastaan eli rinnettä alas, kuten kuviossa A. Kuviossa B on keksitty voima $\overline{F}$ liikkeen suuntaan, vaikka mikään ei enää työnnä palikkaa: liike jatkuu ilman voimaa, ja voimat hidastavat sitä. Kuviossa C kitka osoittaa väärään suuntaan, ja kuviossa D tukivoima ei ole kohtisuorassa pintaa vastaan.
+**Perustelu:** Palikkaan vaikuttavat Maa (paino suoraan alas), lauta (tukivoima kohtisuoraan pinnasta ulos) ja laudan liukukitka. Palikka liukuu ylös, joten liukukitka osoittaa liukumista vastaan eli rinnettä alas, kuten kuviossa A. Kuviossa B on keksitty voima $\overline{F}$ liikkeen suuntaan, vaikka mikään ei enää työnnä palikkaa: liike jatkuu ilman voimaa, ja voimat hidastavat sitä. Kuviossa C kitka osoittaa väärään suuntaan, ja kuviossa D tukivoima ei ole kohtisuorassa pintaa vastaan.
 
 ### f)
-**Perustelu:** Laatikko pysyy paikallaan, joten siihen vaikuttavien vaakasuorien voimien summa on nolla: lepokitka on yhtä suuri kuin työntövoima eli $120\,\text{N}$ ja vastakkaissuuntainen. Lauseke $\mu_0 N = 0{,}50 \cdot 40\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 196\,\text{N}$ on lepokitkan suurin mahdollinen arvo, ei sen arvo tässä tilanteessa. $392\,\text{N}$ on laatikon paino, ja $0\,\text{N}$ olisi oikein vain, jos laatikkoa ei työnnettäisi.
+**Perustelu:** Laatikko pysyy paikallaan, joten siihen vaikuttavien vaakasuorien voimien summa on nolla: lepokitka on yhtä suuri kuin työntövoima eli $120\,\text{N}$ ja vastakkaissuuntainen. Lauseke $\mu_0 N = 0{,}50 \cdot 40\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 196\,\text{N}$ on täysin kehittynyt lepokitka eli lähtökitka, ei lepokitkan arvo tässä tilanteessa. $392\,\text{N}$ on laatikon paino, ja $0\,\text{N}$ olisi oikein vain, jos laatikkoa ei työnnettäisi.
 
 ### g)
 **Perustelu:** Mekaanisen energian säilymisestä $mgh = \tfrac{1}{2}mv^2$, joten $v = \sqrt{2gh}$. Nopeus on verrannollinen korkeuden neliöjuureen: nelinkertainen korkeus antaa $\sqrt{4} = 2$ kertaa suuremman nopeuden eli $2v$. Vastaus $4v$ syntyy, jos nopeuden luullaan olevan verrannollinen korkeuteen; nelinkertainen on liike-energia, ei nopeus. Nopeus $\sqrt{2}\,v$ vastaisi kaksinkertaista korkeutta.
@@ -198,12 +198,12 @@
 ### d)
 **Annettu:** $\mu = 0{,}30$, auton hidastuvuus $5{,}0\,\text{m/s}^2$ (c-kohta)
 **Kysytty:** laatikkoon vaikuttavat voimat, laatikon hidastuvuus tien suhteen ja laatikon liike lavan suhteen
-**Periaate:** Laatikkoon vaikuttavat paino, tukivoima ja liikekitka. Laatikko liukuu lavan suhteen eteenpäin, joten liikekitka osoittaa taaksepäin. Pystysuunnassa $N = mg$, ja vaakasuunnassa Newtonin II lain mukaan $\mu mg = ma$.
+**Periaate:** Laatikkoon vaikuttavat paino, tukivoima ja liukukitka. Laatikko liukuu lavan suhteen eteenpäin, joten liukukitka osoittaa taaksepäin. Pystysuunnassa $N = mg$, ja vaakasuunnassa Newtonin II lain mukaan $\mu mg = ma$.
 **Kaava:** $a = \mu g$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $a = 0{,}30 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 2{,}9\,\tfrac{\text{m}}{\text{s}^2}$
-**Vastaus:** Laatikkoon vaikuttavat paino alas, tukivoima ylös ja liikekitka taaksepäin; eteenpäin osoittavaa voimaa ei ole. Laatikko hidastuu tien suhteen noin $2{,}9\,\text{m/s}^2$, vähemmän kuin auto. Newtonin I lain mukaan laatikko jatkaisi liikettään ennallaan ilman voimia, ja kitka hidastaa sitä vain osittain. Auto hidastuu laatikon alta nopeammin, joten lavan suhteen laatikko liikkuu eteenpäin, vaikka mikään ei työnnä sitä.
-**Järkevyys:** Liikekitka on pienempi kuin lepokitkan enimmäisarvo, joten liukuvan laatikon hidastuvuus on pienempi kuin b-kohdan $3{,}9\,\text{m/s}^2$, kuten pitääkin.
+**Vastaus:** Laatikkoon vaikuttavat paino alas, tukivoima ylös ja liukukitka taaksepäin; eteenpäin osoittavaa voimaa ei ole. Laatikko hidastuu tien suhteen noin $2{,}9\,\text{m/s}^2$, vähemmän kuin auto. Newtonin I lain mukaan laatikko jatkaisi liikettään ennallaan ilman voimia, ja kitka hidastaa sitä vain osittain. Auto hidastuu laatikon alta nopeammin, joten lavan suhteen laatikko liikkuu eteenpäin, vaikka mikään ei työnnä sitä.
+**Järkevyys:** Liukukitka on pienempi kuin lepokitkan enimmäisarvo, joten liukuvan laatikon hidastuvuus on pienempi kuin b-kohdan $3{,}9\,\text{m/s}^2$, kuten pitääkin.
 
 ### Yleisiä virheitä
 - Voimakuvioon piirretään eteenpäin osoittava ”liikevoima” tai kitka taaksepäin kiihdytyksen aikana.
@@ -219,13 +219,13 @@
 
 ### a)
 **Annettu:** $v = 1{,}50\,\text{m/s}$, $s = 0{,}46\,\text{m}$, $m = 0{,}20\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** liikekitkakerroin $\mu$
-**Periaate:** Mekaniikan energiaperiaate: pöytä on vaakasuora, joten potentiaalienergia ei muutu, ja liukumisen aikana ainoa työtä tekevä voima on liikekitka. Sen työ on negatiivinen ja kuluttaa koko liike-energian. Vaakasuoralla pinnalla tukivoima on painon suuruinen, $N = mg$, joten kitka on $F_\mu = \mu mg$.
+**Kysytty:** liukukitkakerroin $\mu$
+**Periaate:** Mekaniikan energiaperiaate: pöytä on vaakasuora, joten potentiaalienergia ei muutu, ja liukumisen aikana ainoa työtä tekevä voima on liukukitka. Sen työ on negatiivinen ja kuluttaa koko liike-energian. Vaakasuoralla pinnalla tukivoima on painon suuruinen, $N = mg$, joten kitka on $F_\mu = \mu mg$.
 **Kaava:** $\tfrac{1}{2}mv^2 - \mu mg\,s = 0 \quad\Rightarrow\quad \mu = \dfrac{v^2}{2gs}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $\mu = \dfrac{\left(1{,}50\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}46\,\text{m}} = \dfrac{2{,}25\,\tfrac{\text{m}^2}{\text{s}^2}}{9{,}03\,\tfrac{\text{m}^2}{\text{s}^2}} \approx 0{,}249$
-**Vastaus:** Liikekitkakerroin on $\mu \approx 0{,}25$. Kertoimella ei ole yksikköä. Massa supistuu pois, joten sitä ei tarvita.
-**Järkevyys:** Puun liikekitkakerroin puuta tai lakattua pintaa vastaan on tyypillisesti $0{,}2$–$0{,}5$, joten tulos on uskottava.
+**Vastaus:** Liukukitkakerroin on $\mu \approx 0{,}25$. Kertoimella ei ole yksikköä. Massa supistuu pois, joten sitä ei tarvita.
+**Järkevyys:** Puun liukukitkakerroin puuta tai lakattua pintaa vastaan on tyypillisesti $0{,}2$–$0{,}5$, joten tulos on uskottava.
 
 ### b)
 **Annettu:** $v = (1{,}50 \pm 0{,}03)\,\text{m/s}$ ja $s = (0{,}46 \pm 0{,}01)\,\text{m}$

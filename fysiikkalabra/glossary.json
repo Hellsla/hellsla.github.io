@@ -2181,7 +2181,7 @@
     ],
     "see_also": [
       "lepokitka",
-      "liikekitka",
+      "liukukitka",
       "kitkakerroin",
       "tukivoima"
     ],
@@ -2189,20 +2189,21 @@
   },
   {
     "term": "lepokitka",
-    "definition": "Kitka kahden toisiinsa nähden levossa olevan pinnan välillä. Lepokitka on juuri niin suuri kuin tarvitaan estämään liukuminen, enintään μ₀N, missä μ₀ on lepokitkakerroin ja N tukivoima.",
+    "definition": "Kitka kahden toisiinsa nähden levossa olevan pinnan välillä. Lepokitka on juuri niin suuri kuin tarvitaan estämään liukuminen, enintään μ₀N, missä μ₀ on lepokitkakerroin ja N tukivoima. Sen suurin arvo on täysin kehittynyt lepokitka eli lähtökitka.",
     "lessons": [
       "fy4-6"
     ],
     "see_also": [
       "kitka",
-      "liikekitka",
+      "lähtökitka",
+      "liukukitka",
       "kitkakerroin"
     ],
     "locked": false
   },
   {
     "term": "lähtökitka",
-    "definition": "Lepokitkan suurin arvo eli täysin kehittynyt lepokitka juuri ennen kuin kappale lähtee liukumaan: F_μ0 = μ₀N, missä μ₀ on lepokitkakerroin ja N tukivoima.",
+    "definition": "Täysin kehittynyt lepokitka eli lepokitkan suurin arvo juuri ennen kuin kappale lähtee liukumaan: F_μ0 = μ₀N, missä μ₀ on lepokitkakerroin ja N tukivoima.",
     "lessons": [
       "fy4-6"
     ],
@@ -2214,24 +2215,13 @@
     "locked": false
   },
   {
-    "term": "liikekitka",
-    "definition": "Kitka toistensa suhteen liukuvien pintojen välillä. Liikekitka eli liukukitka on F_μ = μN, missä μ on liikekitkakerroin ja N tukivoima; se on yleensä pienempi kuin lepokitkan suurin arvo.",
+    "term": "liukukitka",
+    "definition": "Toistensa suhteen liukuvien pintojen välinen kitka, F_μ = μN, missä μ on liukukitkakerroin ja N tukivoima (aiemmin myös liikekitka). Se on yleensä pienempi kuin täysin kehittynyt lepokitka eli lähtökitka.",
     "lessons": [
       "fy4-6"
     ],
     "see_also": [
       "kitka",
-      "lepokitka",
-      "kitkakerroin"
-    ],
-    "locked": false
-  },
-  {
-    "term": "liukukitka",
-    "definition": "Toistensa suhteen liukuvien pintojen välinen kitka, F_μ = μN, missä μ on liukukitkakerroin ja N tukivoima (FY4:n luvuissa liikekitka). Se on yleensä pienempi kuin lähtökitka eli täysin kehittynyt lepokitka.",
-    "lessons": [],
-    "see_also": [
-      "liikekitka",
       "lepokitka",
       "lähtökitka",
       "kitkakerroin"
@@ -2240,14 +2230,14 @@
   },
   {
     "term": "kitkakerroin",
-    "definition": "Yksikötön luku, joka kertoo kitkavoiman ja tukivoiman suhteen: liikekitkakerroin μ = F_μ/N ja lepokitkakerroin μ₀ lepokitkan suurimmalle arvolle. Se riippuu pintojen aineista ja kunnosta, ja yleensä μ < μ₀. Lepokitkakerroin saadaan rajakulmasta: μ₀ = tan α₀.",
+    "definition": "Yksikötön luku, joka kertoo kitkavoiman ja tukivoiman suhteen: liukukitkakerroin μ = F_μ/N ja lepokitkakerroin μ₀ täysin kehittyneelle lepokitkalle eli lähtökitkalle, μ₀ = F_μ0/N. Se riippuu pintojen aineista ja kunnosta, ja yleensä μ < μ₀. Lepokitkakerroin saadaan rajakulmasta: μ₀ = tan α₀.",
     "lessons": [
       "fy4-6"
     ],
     "see_also": [
       "kitka",
       "lepokitka",
-      "liikekitka"
+      "liukukitka"
     ],
     "locked": false
   },

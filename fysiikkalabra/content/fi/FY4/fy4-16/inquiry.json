@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Soveltava tunti: moduulin työkalut yhdistetään kolmessa arkisessa tilanteessa. Jokainen ratkaisu alkaa voimakuviosta, ja oppilas valitsee kysymyksen mukaan liikeyhtälön tai energiaperiaatteen: hississä vaaka mittaa tukivoimaa $N = m(g + a)$, rajanopeudella ilmanvastuksen työ on $-mgh$, ja suoralla rinteellä liikekitkan työ $-\\mu mgx$ riippuu vaakamatkasta, joten pulkka pysähtyy vaakamatkan $h/\\mu$ päähän huipusta.",
+  "contribution": "Soveltava tunti: moduulin työkalut yhdistetään kolmessa arkisessa tilanteessa. Jokainen ratkaisu alkaa voimakuviosta, ja oppilas valitsee kysymyksen mukaan liikeyhtälön tai energiaperiaatteen: hississä vaaka mittaa tukivoimaa $N = m(g + a)$, rajanopeudella ilmanvastuksen työ on $-mgh$, ja suoralla rinteellä liukukitkan työ $-\\mu mgx$ riippuu vaakamatkasta, joten pulkka pysähtyy vaakamatkan $h/\\mu$ päähän huipusta.",
   "learn": [
     "valitsemaan voimakuvion perusteella, ratkaisetko tilanteen liikeyhtälöllä vai energiaperiaatteella.",
     "piirtämään voimakuvion ja laskemaan tukivoiman tai kiihtyvyyden kiihtyvässä hississä.",
@@ -8,7 +8,7 @@
   ],
   "prior": [
     "Kokonaisvoima osoittaa kiihtyvyyden suuntaan, ja $\\Sigma\\overline{F} = m\\overline{a}$ (luku *Newtonin toinen laki*)",
-    "Rinteessä tukivoima on $mg\\cos\\alpha$ ja liikekitka $\\mu N$ (luku *Paino, kitka ja kalteva taso*)",
+    "Rinteessä tukivoima on $mg\\cos\\alpha$ ja liukukitka $\\mu N$ (luku *Paino, kitka ja kalteva taso*)",
     "Mekaanisen energian muutos on muiden voimien kuin painon tekemä työ (luku *Mekaanisen energian säilyminen ja energiaperiaate*)"
   ],
   "activities": [
@@ -145,7 +145,7 @@
       "type": "interpret",
       "title": "Kolme yhtä korkeaa mäkeä",
       "source": "model",
-      "text": "Taulukossa on mallilla laskettu, miten pulkka liukuu kolmesta mäestä, joiden korkeus on sama, $h = 6{,}0\\,\\text{m}$. Pulkka lähtee levosta huipulta, liikekitkakerroin on $\\mu = 0{,}10$ sekä rinteessä että tasaisella, ilmanvastus jätetään huomiotta ja rinteen juuren mutkassa ei menetetä lisää energiaa. Kulma $\\alpha$ on rinteen kaltevuuskulma, $x_1$ rinteen vaakasuora pituus, $v$ pulkan nopeus rinteen juurella ja $x_2$ matka, jonka pulkka liukuu tasaisella ennen kuin pysähtyy. Luvut ovat *mallilla laskettuja arvoja*, eivät mittauksia.\n\n| $\\alpha$ | $x_1$ (m) | $v$ (m/s) | $x_2$ (m) |\n|---|---|---|---|\n| $30^\\circ$ | $10{,}4$ | $9{,}87$ | $49{,}6$ |\n| $20^\\circ$ | $16{,}5$ | $9{,}24$ | $43{,}5$ |\n| $10^\\circ$ | $34{,}0$ | $7{,}14$ | $26{,}0$ |",
+      "text": "Taulukossa on mallilla laskettu, miten pulkka liukuu kolmesta mäestä, joiden korkeus on sama, $h = 6{,}0\\,\\text{m}$. Pulkka lähtee levosta huipulta, liukukitkakerroin on $\\mu = 0{,}10$ sekä rinteessä että tasaisella, ilmanvastus jätetään huomiotta ja rinteen juuren mutkassa ei menetetä lisää energiaa. Kulma $\\alpha$ on rinteen kaltevuuskulma, $x_1$ rinteen vaakasuora pituus, $v$ pulkan nopeus rinteen juurella ja $x_2$ matka, jonka pulkka liukuu tasaisella ennen kuin pysähtyy. Luvut ovat *mallilla laskettuja arvoja*, eivät mittauksia.\n\n| $\\alpha$ | $x_1$ (m) | $v$ (m/s) | $x_2$ (m) |\n|---|---|---|---|\n| $30^\\circ$ | $10{,}4$ | $9{,}87$ | $49{,}6$ |\n| $20^\\circ$ | $16{,}5$ | $9{,}24$ | $43{,}5$ |\n| $10^\\circ$ | $34{,}0$ | $7{,}14$ | $26{,}0$ |",
       "question": {
         "type": "choice",
         "prompt": "Laske jokaiselta riviltä $x_1 + x_2$, pulkan koko vaakasuora matka huipulta pysähtymiskohtaan. Mitä taulukko osoittaa?",

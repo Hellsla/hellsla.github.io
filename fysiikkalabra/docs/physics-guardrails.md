@@ -93,6 +93,11 @@ values are equal.
 ## Energy, heat and efficiency (fy2-1, fy2-4, fy2-5, fy2-8, fy3-2, fy3-11, fy3-12, fy3-15)
 - **Heat is energy in transfer.** A body has internal energy, not heat. Friction turns mechanical energy into
   internal energy; it creates no energy. FY2 may say "lämpöenergia" as long as it does not contradict FY3.
+- **Energy into heat, never "lämmöksi"** (teacher 2026-11-15, P1; FY3–FY9, task texts included). Use these words:
+  "muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön" (model: FY6 *Kondensaattori*). Never "muuttuu
+  lämmöksi", "jää lämmöksi", "sisäenergiaksi eli lämmöksi" or "ääneen ja lämpöön". "Lämpöteho" and "siirtyy lämpönä"
+  are right and stay. A wrong option and a described misconception keep their words. FY2 keeps "lämpöenergia"
+  (MAOL's word in FY2). Checker rule heat-into.
 - **Net transfer.** Use these words: "Lämpötilaeron vuoksi energiaa siirtyy nettomääräisesti lämpimämmästä
   kappaleesta kylmempään. Lämpösäteilyä lähtee kuitenkin molemmista kappaleista."
 - **Efficiency limit.** Use these words: "Hyötysuhde on enintään 100 %. Todellisissa laitteissa se jää usein alle
@@ -107,6 +112,21 @@ values are equal.
   yksikössä MJ/kg. Ruoan ravintoarvomerkintä kuvaa elimistön hyödynnettävissä olevaa energiaa, kun taas
   polttoaineen lämpöarvo kuvaa palamisessa vapautuvaa energiaa."
 - **Carbon dioxide.** CO₂ comes from fuels that contain carbon. Hydrogen burns to water.
+
+## Friction (fy4-6, fy4-16, fy5-4; teacher 2026-11-15, P8)
+- **Terms.** Sliding surfaces: **liukukitka** $F_\mu = \mu N$, $\mu$ the **liukukitkakerroin** (en sliding friction),
+  never liikekitka. A body at rest: **lepokitka**, only as large as the situation needs, $F_{\mu 0} \le \mu_0 N$.
+  Its greatest value, just before sliding starts, is **täysin kehittynyt lepokitka eli lähtökitka**, $\mu_0 N$, with
+  the **lepokitkakerroin** $\mu_0$ (en maximum (fully developed) static friction). Name it so where it is introduced
+  as a quantity, then "lähtökitka". Checker rule liikekitka.
+
+## Values and significant figures (teacher 2026-11-15, P7, P8, P9)
+- **Significant figures.** 230 V has three. Trailing zeros are significant unless the task says otherwise. A limit
+  value is rounded to the safe side: an "enintään" value down, a "vähintään" value up.
+- **Values.** Use the MAFY table's value whenever MAFY has one; otherwise give the value and its source behind a link.
+  Small differences are not contradictions and stay (P9): ice 334 kJ/kg, water 4190 J/(kg·K), sound 340 or 343 m/s,
+  Mars 3,71 m/s², Am-241 432 a, C-14 5700 a. Clear contradictions between chapters (light fuel oil, coal, a chest
+  X-ray's dose) take MAFY's value or one sourced value.
 
 ## Motion graphs (fy4-12)
 - **Higher line, larger position.** In a $(t, x)$ graph a higher line means a larger position coordinate, not "ahead".

@@ -322,7 +322,7 @@
    "id": "fy4-k3",
    "title": "Laatikko lava-autossa",
    "source": "example",
-   "text": "Lava-auton avolavalla on $40\\,\\text{kg}$:n puulaatikko, jota ei ole sidottu. Laatikon ja lavan välinen lepokitkakerroin on $0{,}40$ ja liikekitkakerroin $0{,}30$. Auto liikkuu suoralla ja vaakasuoralla tiellä. Ilmanvastusta laatikkoon ei oteta huomioon.",
+   "text": "Lava-auton avolavalla on $40\\,\\text{kg}$:n puulaatikko, jota ei ole sidottu. Laatikon ja lavan välinen lepokitkakerroin on $0{,}40$ ja liukukitkakerroin $0{,}30$. Auto liikkuu suoralla ja vaakasuoralla tiellä. Ilmanvastusta laatikkoon ei oteta huomioon.",
    "parts": [
     {
      "id": "a",
@@ -424,7 +424,7 @@
      },
      "criteria": [
       {
-       "text": "Nimeää voimat: paino, tukivoima ja taaksepäin osoittava liikekitka; eteenpäin osoittavaa voimaa ei ole.",
+       "text": "Nimeää voimat: paino, tukivoima ja taaksepäin osoittava liukukitka; eteenpäin osoittavaa voimaa ei ole.",
        "tag": "concept",
        "points": 1
       },
@@ -458,13 +458,13 @@
    "title": "Liukuva puupalikka",
    "source": "example",
    "source_note": "Mittaustulokset on laadittu esimerkiksi.",
-   "text": "Opiskelija tutki puupalikan ja pöydän välistä liikekitkaa. Hän tönäisi $0{,}20\\,\\text{kg}$:n palikan liukumaan vaakasuoralla pöydällä. Valoportti mittasi palikan nopeudeksi $v = (1{,}50 \\pm 0{,}03)\\,\\text{m/s}$ kohdassa, josta palikka liukui vielä matkan $s = (0{,}46 \\pm 0{,}01)\\,\\text{m}$ ennen pysähtymistään. Ilmanvastus on merkityksetön.",
+   "text": "Opiskelija tutki puupalikan ja pöydän välistä liukukitkaa. Hän tönäisi $0{,}20\\,\\text{kg}$:n palikan liukumaan vaakasuoralla pöydällä. Valoportti mittasi palikan nopeudeksi $v = (1{,}50 \\pm 0{,}03)\\,\\text{m/s}$ kohdassa, josta palikka liukui vielä matkan $s = (0{,}46 \\pm 0{,}01)\\,\\text{m}$ ennen pysähtymistään. Ilmanvastus on merkityksetön.",
    "parts": [
     {
      "id": "a",
      "kind": "calc",
      "points": 5,
-     "text": "Määritä palikan ja pöydän välinen liikekitkakerroin.",
+     "text": "Määritä palikan ja pöydän välinen liukukitkakerroin.",
      "answer": {
       "value": 0.249,
       "unit": "",

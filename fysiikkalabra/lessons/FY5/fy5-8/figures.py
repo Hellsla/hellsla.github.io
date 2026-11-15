@@ -305,7 +305,7 @@ def malli_laatikko():
     m = 6.0; G = m * g; Fmu = 18.0
     f = Fig("fy58-malli-laatikko", 340, "Mallikuvio: laatikko suorakulmiona vaakasuoralla lattialla. Paino G keskipisteestä alas. Lattian "
             "tukivoima N alapinnasta ylös yhtä pitkänä. Jousen voima F oikean sivun keskeltä vaakasuoraan oikealle ja "
-            "liikekitka F μ alapinnan vasemmasta kulmasta vasemmalle, yhtä pitkinä, noin kolmasosa painon pituudesta. "
+            "liukukitka F μ alapinnan vasemmasta kulmasta vasemmalle, yhtä pitkinä, noin kolmasosa painon pituudesta. "
             "Erillään sininen nopeusnuoli v oikealle. Nurkassa akselit x oikealle ja y ylös.")
     bx, by, w, h = 300, 170, 140, 70
     ground(f, 120, 500, by + h / 2)

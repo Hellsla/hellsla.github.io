@@ -42,7 +42,7 @@
       "kind": "physics",
       "level": "essential",
       "target": "fy4-6",
-      "why": "Liikekitka $F_\\mu = \\mu N$ ja tukivoima vaakasuoralla alustalla."
+      "why": "Liukukitka $F_\\mu = \\mu N$ ja tukivoima vaakasuoralla alustalla."
     },
     {
       "kind": "physics",

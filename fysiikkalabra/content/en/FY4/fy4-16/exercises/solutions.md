@@ -53,7 +53,7 @@ v alas
 **Given:** initial speed $v_1 = 6.0\,\text{m/s}$, final speed $v_2 = 0$, $\mu = 0.080$; $g = 9.81\,\text{m/s}^2$
 **Find:** the sliding distance $s$ in $\text{m}$
 **Principle:** The question is about the distance over which the kinetic energy is used up, so we use the work–energy principle. The height does not change, and friction is the only force doing work: its negative work turns the kinetic energy into internal energy. The friction force comes from the free-body diagram.
-**Free-body diagram:** The sled as a rectangle. The weight $\overline{G}$ from the centre down, the normal force $\overline{N}$ of the snow from the bottom surface up, equally long, and the kinetic friction $\overline{F}_\mu$ from the rear corner of the bottom surface backwards. There is no force pointing forwards. In the vertical direction $N - mg = 0$, so $F_\mu = \mu mg$.
+**Free-body diagram:** The sled as a rectangle. The weight $\overline{G}$ from the centre down, the normal force $\overline{N}$ of the snow from the bottom surface up, equally long, and the sliding friction $\overline{F}_\mu$ from the rear corner of the bottom surface backwards. There is no force pointing forwards. In the vertical direction $N - mg = 0$, so $F_\mu = \mu mg$.
 ```voimakuvio
 pinta 0
 G 100
@@ -70,8 +70,8 @@ a vasen
 ## fy4-16-L1-05
 **Given:** $\mu = 0.15$, the speed is constant, air resistance is ignored
 **Find:** the angle of inclination $\alpha$ of the slope in degrees
-**Principle:** The speed is constant, so by Newton's second law the net force is zero both along the slope and perpendicular to it. The component of the weight along the slope and the kinetic friction cancel each other.
-**Free-body diagram:** The sled as a rectangle along the slope, $x$ down the slope and $y$ perpendicularly out of the slope. The weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ from the bottom surface perpendicularly out of the slope and the kinetic friction $\overline{F}_\mu$ from the upper corner of the bottom surface up the slope. The components of the weight as dashed lines.
+**Principle:** The speed is constant, so by Newton's second law the net force is zero both along the slope and perpendicular to it. The component of the weight along the slope and the sliding friction cancel each other.
+**Free-body diagram:** The sled as a rectangle along the slope, $x$ down the slope and $y$ perpendicularly out of the slope. The weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ from the bottom surface perpendicularly out of the slope and the sliding friction $\overline{F}_\mu$ from the upper corner of the bottom surface up the slope. The components of the weight as dashed lines.
 ```voimakuvio
 pinta -8,53
 G 100
@@ -106,9 +106,9 @@ a ylös
 
 ## fy4-16-L2-02
 **Given:** $L = 18.0\,\text{m}$, $\alpha = 12.0^\circ$, $v_1 = 0$, $v_2 = 5.10\,\text{m/s}$; $g = 9.81\,\text{m/s}^2$
-**Find:** the coefficient of kinetic friction $\mu$ (no unit)
-**Principle:** The speed is known at the start and at the end of the slope, so we use the work–energy principle. The weight does work through the potential energy, the normal force does no work, and kinetic friction does negative work along the whole slope. The friction force comes from the free-body diagram.
-**Free-body diagram:** The sled as a rectangle along the slope, $x$ down the slope and $y$ perpendicularly out of the slope. The weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ from the bottom surface perpendicularly out of the slope and the kinetic friction $\overline{F}_\mu$ from the upper corner of the bottom surface up the slope. In the $y$ direction $N = mg\cos\alpha$, so $F_\mu = \mu mg\cos\alpha$.
+**Find:** the coefficient of sliding friction $\mu$ (no unit)
+**Principle:** The speed is known at the start and at the end of the slope, so we use the work–energy principle. The weight does work through the potential energy, the normal force does no work, and sliding friction does negative work along the whole slope. The friction force comes from the free-body diagram.
+**Free-body diagram:** The sled as a rectangle along the slope, $x$ down the slope and $y$ perpendicularly out of the slope. The weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ from the bottom surface perpendicularly out of the slope and the sliding friction $\overline{F}_\mu$ from the upper corner of the bottom surface up the slope. In the $y$ direction $N = mg\cos\alpha$, so $F_\mu = \mu mg\cos\alpha$.
 ```voimakuvio
 pinta -12
 G 100
@@ -162,7 +162,7 @@ v ylös
 **Given:** height difference $h = 4.50\,\text{m}$, $\mu = 0.120$ all the way, parts of the slope $25^\circ$ and $10^\circ$, $v_1 = 0$ and at the end $v_2 = 0$
 **Find:** the horizontal distance $x$ from the top to the stopping point in $\text{m}$
 **Principle:** The sled is at rest at the start and at the end, so by the work–energy principle the negative work done by friction is equal to the decrease in potential energy. On a straight surface the work done by friction is $-\mu mg$ times the horizontal distance, because on a slope $N = mg\cos\alpha$ and $L\cos\alpha$ is the horizontal length of the slope. So the angles of the parts of the slope are not needed.
-**Free-body diagram:** On each part of the slope the sled as a rectangle along the slope: the weight $\overline{G}$ from the centre down, the normal force $\overline{N}$ perpendicularly out of the slope, $N = mg\cos\alpha$, and the kinetic friction $\overline{F}_\mu$ up the slope. On the flat $N = mg$ and the friction points backwards. The normal force does no work anywhere.
+**Free-body diagram:** On each part of the slope the sled as a rectangle along the slope: the weight $\overline{G}$ from the centre down, the normal force $\overline{N}$ perpendicularly out of the slope, $N = mg\cos\alpha$, and the sliding friction $\overline{F}_\mu$ up the slope. On the flat $N = mg$ and the friction points backwards. The normal force does no work anywhere.
 ```voimakuvio
 pinta -25
 G 100
@@ -229,9 +229,9 @@ v alas
 
 ## fy4-16-L1-08
 **Given:** $m = 20.0\,\text{kg}$, $\alpha = 30.0\,{}^\circ$, $\mu = 0.200$, the sled slides down the slope; the student's result $39.2\,\text{N}$; $g = 9.81\,\text{m/s}^2$
-**Find:** the student's error and the correct kinetic friction force $F_\mu$ in $\text{N}$
-**Principle:** Kinetic friction is $F_\mu = \mu N$, and the normal force $N$ comes from the free-body diagram perpendicular to the slope. The sled does not accelerate in this direction, so the normal force cancels only the component of the weight perpendicular to the slope. The student assumed that the normal force cancels the whole weight, which holds only on a horizontal surface.
-**Free-body diagram:** The sled as a rectangle along the slope, $x$ down the slope and $y$ perpendicularly out of the slope. The weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ from the bottom surface perpendicularly out of the slope, shorter than the weight, and the kinetic friction $\overline{F}_\mu$ from the upper corner of the bottom surface up the slope. The components of the weight as dashed lines.
+**Find:** the student's error and the correct sliding friction force $F_\mu$ in $\text{N}$
+**Principle:** Sliding friction is $F_\mu = \mu N$, and the normal force $N$ comes from the free-body diagram perpendicular to the slope. The sled does not accelerate in this direction, so the normal force cancels only the component of the weight perpendicular to the slope. The student assumed that the normal force cancels the whole weight, which holds only on a horizontal surface.
+**Free-body diagram:** The sled as a rectangle along the slope, $x$ down the slope and $y$ perpendicularly out of the slope. The weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ from the bottom surface perpendicularly out of the slope, shorter than the weight, and the sliding friction $\overline{F}_\mu$ from the upper corner of the bottom surface up the slope. The components of the weight as dashed lines.
 ```voimakuvio
 pinta -30
 G 196,2
@@ -267,10 +267,10 @@ a ylös
 
 ## fy4-16-L2-06
 **Given:** from the table the positions $x$ at $t = 0$, $1.0\,\text{s}$, $4.0\,\text{s}$ and $5.0\,\text{s}$; horizontal surface, air resistance is ignored; $g = 9.81\,\text{m/s}^2$
-**Find:** the coefficient of kinetic friction $\mu$ (no unit)
+**Find:** the coefficient of sliding friction $\mu$ (no unit)
 **Principle:** The average speed over a time interval is the displacement divided by the time. In uniformly decelerating motion it is equal to the speed in the middle of the interval, so the deceleration follows from the average speeds of two intervals. On a horizontal surface friction is the only horizontal force, so Newton's second law gives the coefficient of friction.
 **Reading the graph:** During the first second the sled travels $3.62\,\text{m} - 0 = 3.62\,\text{m}$, so the average speed is $3.62\,\text{m/s}$ and it is the speed at $t = 0.5\,\text{s}$. During the last second the sled travels $10.03\,\text{m} - 9.57\,\text{m} = 0.46\,\text{m}$, so the average speed is $0.46\,\text{m/s}$ at $t = 4.5\,\text{s}$.
-**Free-body diagram:** The sled as a rectangle. The weight $\overline{G}$ from the centre down, the normal force $\overline{N}$ from the bottom surface up, equally long, and the kinetic friction $\overline{F}_\mu$ from the rear corner of the bottom surface backwards. There is no force pointing forwards. In the vertical direction $N = mg$, and in the horizontal direction, when the positive direction is the direction of motion, $-\mu mg = ma$.
+**Free-body diagram:** The sled as a rectangle. The weight $\overline{G}$ from the centre down, the normal force $\overline{N}$ from the bottom surface up, equally long, and the sliding friction $\overline{F}_\mu$ from the rear corner of the bottom surface backwards. There is no force pointing forwards. In the vertical direction $N = mg$, and in the horizontal direction, when the positive direction is the direction of motion, $-\mu mg = ma$.
 ```voimakuvio
 pinta 0
 G 100
@@ -286,9 +286,9 @@ a vasen
 
 ## fy4-16-L2-07
 **Given:** five angles $17.5\,{}^\circ$, $18.0\,{}^\circ$, $18.5\,{}^\circ$, $17.0\,{}^\circ$ and $18.0\,{}^\circ$; the pushed box slides at a steady speed
-**Find:** a) the coefficient of kinetic friction $\mu$ from the mean of the angles; b) the range of the coefficient and the variation around the mean
-**Principle:** The box is given a push. If the box were at rest, the angle would depend on static friction. When the pushed box slides at a steady speed, the net force is zero. The component of the weight along the slope cancels the kinetic friction, and the friction is $\mu mg\cos\alpha$, so $\tan\alpha = \mu$. The measurements have random variation, so the mean is taken as the angle, and the variation is described by the interval between the extreme values of the measurements.
-**Free-body diagram:** The box as a rectangle along the board, $x$ down the board and $y$ perpendicularly out of the board. The weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ from the bottom surface perpendicularly out of the board and the kinetic friction $\overline{F}_\mu$ up the board. The forces cancel each other along the slope and perpendicular to it.
+**Find:** a) the coefficient of sliding friction $\mu$ from the mean of the angles; b) the range of the coefficient and the variation around the mean
+**Principle:** The box is given a push. If the box were at rest, the angle would depend on static friction. When the pushed box slides at a steady speed, the net force is zero. The component of the weight along the slope cancels the sliding friction, and the friction is $\mu mg\cos\alpha$, so $\tan\alpha = \mu$. The measurements have random variation, so the mean is taken as the angle, and the variation is described by the interval between the extreme values of the measurements.
+**Free-body diagram:** The box as a rectangle along the board, $x$ down the board and $y$ perpendicularly out of the board. The weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ from the bottom surface perpendicularly out of the board and the sliding friction $\overline{F}_\mu$ up the board. The forces cancel each other along the slope and perpendicular to it.
 ```voimakuvio
 pinta -17,8
 G 100
@@ -308,7 +308,7 @@ komponentit G
 **Given:** slope $\alpha = 14.0\,{}^\circ$, $\mu_1 = 0.060$; flat part $\mu_2 = 0.150$; the fence is $25.0\,\text{m}$ from the foot of the slope and the sled must stop at least $5.0\,\text{m}$ before it, so the length of the flat part is $d = 25.0\,\text{m} - 5.0\,\text{m} = 20.0\,\text{m}$; $v_1 = 0$ and at the end $v_2 = 0$; $g = 9.81\,\text{m/s}^2$
 **Find:** b) the maximum length $L$ of the slope in $\text{m}$; c) the speed $v$ at the foot of the slope
 **Principle:** The sled is at rest at the start and at the end, so we use the work–energy principle for the whole distance. The decrease of potential energy is used up by the negative work of friction, first on the slope and then on the flat. The normal force does no work. On the slope the friction force comes from the free-body diagram, and its work is $-\mu_1 mg\cos\alpha\cdot L$. A longer slope would give more speed, so the sled stops next to the fence exactly at the maximum allowed length.
-**Free-body diagram:** On the slope the sled as a rectangle along the slope: the weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ perpendicularly out of the slope, $N = mg\cos\alpha$, and the kinetic friction $\overline{F}_\mu$ up the slope. On the flat the weight down, the normal force up, equally long, and the friction backwards, and the friction is larger there because $\mu_2 > \mu_1$. The velocity is not drawn as a force.
+**Free-body diagram:** On the slope the sled as a rectangle along the slope: the weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ perpendicularly out of the slope, $N = mg\cos\alpha$, and the sliding friction $\overline{F}_\mu$ up the slope. On the flat the weight down, the normal force up, equally long, and the friction backwards, and the friction is larger there because $\mu_2 > \mu_1$. The velocity is not drawn as a force.
 ```voimakuvio
 pinta -14
 G 100
@@ -363,7 +363,7 @@ $40.2\,\text{m} - 39.5\,\text{m} = 0.7\,\text{m}$
 
 They are smaller than $2\Delta x = 2.0\,\text{m}$, so the uncertainty intervals overlap, and the heavier sled travelled farther from the height $2.00\,\text{m}$ but a shorter distance from the height $4.00\,\text{m}$. So the data do not show that the heavier sled would travel farther. They do not prove, however, that the mass has no effect at all, because an effect of under $2\,\text{m}$ would be lost in the uncertainty. The result fits the model $x = \tfrac{h}{\mu}$, in which the mass cancels out.
 
-The distance $80\,\text{m}$ from the height $8.00\,\text{m}$ would be an estimate extended outside the measured range, and it assumes the same coefficient of friction for the whole distance, so it is not a certain result. The result is reasonable: the ratio $h : x \approx 0.10$ is almost the same in every row and is a reasonable coefficient of kinetic friction between snow and a sled.
+The distance $80\,\text{m}$ from the height $8.00\,\text{m}$ would be an estimate extended outside the measured range, and it assumes the same coefficient of friction for the whole distance, so it is not a certain result. The result is reasonable: the ratio $h : x \approx 0.10$ is almost the same in every row and is a reasonable coefficient of sliding friction between snow and a sled.
 
 ## fy4-16-L2-09
 **Given:** $m = 60.0\,\text{kg}$; from the graph the normal force in the slowing-down phase $N = 550\,\text{N}$; $g = 9.81\,\text{m/s}^2$

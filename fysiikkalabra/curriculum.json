@@ -950,7 +950,7 @@
           "LOPS FY4: paino ja kitka",
           "Kokeellisesti: kitkakertoimen määrittäminen",
           "Täsmennys: muitakin voimia kuten noste ja väliaineen vastusvoima voidaan käsitellä",
-          "Voimakuvio: paino pystysuoraan alas, tukivoima kohtisuoraan pintaa vastaan, lepo- ja liikekitka pinnan suuntaisia, painon komponentit katkoviivoin, yhtälöiden etumerkit (esimerkki D); kitka ei aina vastusta kappaleen liikettä (esimerkki J, laadullisesti)."
+          "Voimakuvio: paino pystysuoraan alas, tukivoima kohtisuoraan pintaa vastaan, lepo- ja liukukitka pinnan suuntaisia, painon komponentit katkoviivoin, yhtälöiden etumerkit (esimerkki D); kitka ei aina vastusta kappaleen liikettä (esimerkki J, laadullisesti)."
         ],
         "prerequisites": [
           "fy4-5"
@@ -960,7 +960,7 @@
           "paino",
           "kitka",
           "lepokitka",
-          "liikekitka",
+          "liukukitka",
           "kitkakerroin",
           "kalteva taso"
         ],
@@ -1247,7 +1247,7 @@
         "title": "Kappaleiden välinen gravitaatiovoima",
         "goals": [
           "LOPS FY5: gravitaatiolaki ja planetaarinen liike",
-          "Täsmennys: kaikki kappaleet vetävät toisiaan; gravitaatiovoima F = γm₁m₂/r², painovoima ja gravitaatiokentän voimakkuus; gravitaatio maailmankaikkeuden rakenteiden synnyssä"
+          "Täsmennys: kaikki kappaleet vetävät toisiaan; gravitaatiovoima F = γm₁m₂/r², painovoima; gravitaatiokentän voimakkuus syventävänä (opettaja 2026-11-15); gravitaatio maailmankaikkeuden rakenteiden synnyssä"
         ],
         "prerequisites": [
           "fy5-4"
@@ -1265,7 +1265,7 @@
         "goals": [
           "LOPS FY5: gravitaatiolaki ja planetaarinen liike",
           "LOPS FY5: osaa mallintaa planetaarista liikettä ympyräliikkeenä",
-          "Täsmennys: planeettojen, kuiden ja satelliittien liike ympyräratamallina, painottomuus, milloin tasaisen ympyräliikkeen malli pätee; Keplerin lait ja gravitaatiokentän potentiaalienergia eivät kuulu keskeisiin sisältöihin"
+          "Täsmennys: planeettojen, kuiden ja satelliittien liike ympyräratamallina, painottomuus, milloin tasaisen ympyräliikkeen malli pätee; Keplerin lait ja gravitaatiokentän potentiaalienergia eivät kuulu keskeisiin sisältöihin; gravitaatiokentän voimakkuus ja mekaaninen energia gravitaatiokentässä eivät kuulu keskeisiin sisältöihin (MAOL)"
         ],
         "prerequisites": [
           "fy5-5"
@@ -1885,7 +1885,7 @@
       "optinen tiedonsiirto"
     ],
     "kokeet": [
-      "magneettivuon tiheyden määritys käämin sisällä",
+      "magneettivuon tiheyden määrittäminen käämin sisällä",
       "valon heijastumisen ja taittumisen tutkiminen rajapinnassa",
       "laserin aallonpituuden määrittäminen hilan avulla"
     ],
@@ -1964,7 +1964,7 @@
         "title": "Virtajohtimen ja käämin magneettikenttä",
         "goals": [
           "LOPS FY7: virtajohtimen magneettikenttä ja kahden virtajohtimen välinen voima",
-          "Kokeellisesti: magneettivuon tiheyden määritys käämin sisällä",
+          "Kokeellisesti: magneettivuon tiheyden määrittäminen käämin sisällä",
           "Täsmennys: suoran johtimen ja käämin magneettikenttä, oikean käden sääntö, sähkömagneetti"
         ],
         "prerequisites": [
@@ -2184,7 +2184,7 @@
         "title": "Valon polarisaatio",
         "goals": [
           "LOPS FY7: valon polarisaatio kvalitatiivisesti",
-          "Täsmennys: polarisaatio polarisaattorissa ja eristeestä heijastuessa, Brewsterin laki"
+          "Täsmennys: polarisaatio polarisaattorissa ja eristeestä heijastuessa, Malusin ja Brewsterin lait syventävänä (opettaja 2026-11-15)"
         ],
         "prerequisites": [
           "fy7-10"
@@ -2574,7 +2574,7 @@
       }
     ],
     "scope_notes": [
-      "Plan approved by the teacher 2026-11-03 (16 chapters from LOPS 2021 and the MAOL täsmennykset only; no commercial textbook or timetable structure). The climate-change link is an optional box in chapter 2 (absorption bands), not its own chapter; the de Broglie wavelength is not taught at all (teacher 2026-11-03).",
+      "Plan approved by the teacher 2026-11-03 (16 chapters from LOPS 2019 and the MAOL täsmennykset only; no commercial textbook or timetable structure). The climate-change link is an optional box in chapter 2 (absorption bands), not its own chapter; the de Broglie wavelength is not taught at all (teacher 2026-11-03).",
       "Photon energy E = hf, h = 6,626·10^-34 Js; electronvolt allowed with conversion shown by substitution. Hydrogen levels E_n = -13,6 eV / n^2 given as data, not derived. No Schrödinger equation; the wave-mechanical model is qualitative (standing waves, probability, orbital as a threshold region).",
       "Decay law N = N0 (1/2)^(t/T½) and N = N0 e^(-λt) with A = λN; exponential fitting done with Graphical Analysis-style data (TVT). Binding energy and reaction energy from atomic masses in u with c^2; 1 u = 931,5 MeV/c^2.",
       "Doses: absorbed dose Gy, effective dose Sv; Finnish figures from STUK with source and year. Old FY08_*.html simulations in the site root (valosahkoinen, spektri, bohr, kaksoisrako, tunneloituminen, alfahajoaminen, beetahajoaminen, fissio, fuusio, geiger, lapaisykyky) are starting points for ideas only; new sims follow the house rules (LaTeX labels, speed control, assets/sims/fy8/)."

@@ -1478,7 +1478,7 @@
       "ylhaalta": "$\\text{Rata ylhäältä}$",
       "takaa": "$\\text{Voimakuvio takaa}$",
       "tarve": "$\\text{Tarvittava kitka}$",
-      "lukemat": "$a_\\text{n} = {{an}}\\,\\text{m/s}^2$<br>tarvittava kitka ${{Ft}}\\,\\text{kN}$, suurin lepokitka ${{Fm}}\\,\\text{kN}$<br>tien kitka $F_\\mu = {{F}}\\,\\text{kN}$, {{tila}}",
+      "lukemat": "$a_\\text{n} = {{an}}\\,\\text{m/s}^2$<br>tarvittava kitka ${{Ft}}\\,\\text{kN}$, lähtökitka ${{Fm}}\\,\\text{kN}$<br>tien kitka $F_\\mu = {{F}}\\,\\text{kN}$, {{tila}}",
       "pitaa": "pito riittää",
       "eipida": "pito ei riitä",
       "liukuu": "auto liukuu"
@@ -2194,7 +2194,7 @@
       "jannite": "Siirtojännite $U = {{U}}\\,\\text{kV}$",
       "teho": "Teho $P = {{P}}\\,\\text{MW}$",
       "pituus": "Johdon pituus $l = {{l}}\\,\\text{km}$",
-      "selite": "Vihreä palkki on perille tuleva teho. Oranssi palkki on johdossa lämmöksi muuttuva teho.",
+      "selite": "Vihreä palkki on perille tuleva teho. Oranssi palkki on teho, joka muuttuu johdossa sisäenergiaksi. Johto luovuttaa sen lämpönä ympäristöön.",
       "lukemat": "<strong>Häviö $P_\\text{h} = {{Ph}}\\,\\text{MW}$ eli ${{o}}\\,\\%$ tehosta</strong><br>$I = {{I}}\\,\\text{A}$, $R = {{R}}\\,\\Omega$, $P_\\text{perille} = {{Pp}}\\,\\text{MW}$<br>Nostomuuntaja $N_2 : N_1 = {{n}}$",
       "lukemat_mahdoton": "<strong>Siirto ei onnistu: häviö olisi suurempi kuin lähetetty teho.</strong><br>$I = {{I}}\\,\\text{A}$, $R = {{R}}\\,\\Omega$<br>Nostomuuntaja $N_2 : N_1 = {{n}}$",
       "palkki_perille": "$P_\\text{perille}$"
