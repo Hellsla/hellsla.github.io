@@ -1,21 +1,20 @@
-VERDICT: FAIL
-CONTENT-HASH: 5457f120f0c3d934
+VERDICT: PASS
+CONTENT-HASH: f70b284460cf3f45
 
 ## Blocking
-- exercises.json fy7-8-L1-02 / solutions.md:18 — A (assessment): the answer is 1150 with tolerance 0,02. The solution then says that because $8{,}0\,\text{V}$ has two significant figures the result is reliable only to $1{,}2\cdot10^3$. A student who rounds that way (1200, 4,3 % off) is outside the tolerance and is marked "Lähellä", not correct. This breaks the rule that a student rounding to the data's precision stays inside the tolerance. — Fix: give $U_2 = 8{,}00\,\text{V}$ and drop the $1{,}2\cdot10^3$ sentence (answer 1150), or raise the tolerance to 0,05.
 
 ## Polish
-- solutions.md L1-02 Järkevyys — "$29 \cdot 40 \approx 1150$": $29\cdot40 = 1160$. Write $28{,}75 \cdot 40 = 1150$.
-- solutions.md L2-06 — $P_1 = U_1I_1$ overstates the input power at light load, because the magnetising current is not in phase with the voltage. The task states the assumption, so this is C. One clause in b) ("osin myös oletuksen $P_1 = U_1I_1$ vuoksi") would make the low-load explanation complete.
+- solutions.md (L3-03 Järkevyys): $331\,\text{MW} : 400\,\text{kV} = 828\,\text{A}$, not $826\,\text{A}$. 826 A belongs to 330,6 MW. Write 330 MW, or 828 A.
+- solutions.md (L3-04 Vastaus): two significant figures are better justified by $0{,}040\,\Omega/\text{km}$ than by "200 MW", which has an ambiguous number of significant figures.
+- solutions.md (L2-06 Kaava): the assumption $P_1 = U_1 I_1$ is stated, which is right. At light load the primary current is largely magnetising current, so the low efficiency of the first row is partly an artefact of this assumption. This is a C simplification; one clause in b) could say so.
+- solutions.md (L1-02 Järkevyys): $230 : 8{,}00 = 28{,}75$. "Noin 29-kertaisesti … 1160, lähellä 1150" is a valid estimate. Writing $28{,}75 \cdot 40 = 1150$ would make the check exact.
 
 ## Checked
-- Recomputed all 20 numeric answers in one script with my own formulas. All agree with exercises.json and answers.py (largest difference 0,1 %, L2-04).
-- L2-04: a least-squares fit through the origin of the five plotted points gives $0{,}801\,\Omega$, and the figure's curve $0{,}8I^2$ passes through (5,0 A; 20 W). L2-09: the curve in figures.py is $RP/U^2$ with $R = 6{,}0\,\Omega$ and passes through (200 kV; 3,0 %).
-- L2-05: the slope through the origin gives $N_1 = 485{,}7$, and a free fit gives 486,6. Both are inside the 3 % tolerance.
-- L3-05: the data fit the model $P_0 + aP^2$ (a least-squares fit gives 54,1 kW). The stated range of 49–57 kW and the condition for maximum efficiency are right.
-- L3-04: $R = 6{,}0\,\Omega$, 909 A and 500 A, 4,96 MW and 1,50 MW, 30 300 MWh, 1,51 M€.
-- L1-05: three-phase $\sqrt3\,UI$ with the line-to-line voltage, and its justification are correct. L1-03 notes that three-phase does not change the current ratio.
-- L2-08: exactly one correct option. Each distractor's origin ($RI$ = 75 V; 690 V giving 9,5 MW; $U^2/R$ = 800 MW) is computed correctly.
-- L1-06: one correct option, and each distractor's feedback is physically right.
-- Every solution starts from the basic law, solves symbolically, substitutes with units and justifies its rounding. All are within FY7 scope.
-- Hash checked at the start and the end, unchanged.
+- Round 1's Blocking item (L1-02) is fixed. The datum is now $8{,}00\,\text{V}$, so $N_1 = 40 \cdot 230 : 8{,}00 = 1150$ is justified to three significant figures by 230 V and 8,00 V. Answer 1150 with tolerance 0.02 now agrees with the stated precision. answers.py gives 1150, which is numerically unchanged. The diff since round 1 (`git diff HEAD~2`) touches only L1-02 in exercises.json and solutions.md.
+- I recomputed all 20 numeric answers from the task texts with my own formulas in one script. All agree with answers.py and exercises.json: 11,5 V; 1150; 5,0 A; 36 kW; 554 MW (√3UI); 210 kW; 90 %; 826 kW; 43,5 mA; 0,992 %; 0,80 Ω; 485,7 (slope through the origin; a slope with an intercept gives 486,6, inside the 3 % tolerance); 87,7 %; 0,20 A; 6,0 Ω; 0,75 %; 4,0 Ω; 3,31; 1,515 M€; 54,3 kW.
+- "lämmöksi" is gone from exercises.json, solutions.md, figures.py and the figure catalog; "sisäenergiaksi" is used throughout and agrees with the brief.
+- The figures: loss-current is $0{,}8 I^2$, matching the points; loss-graph-curve is $6\,\Omega \cdot P / U^2$ through (200 kV; 3,0 %). The descriptions match the drawings, and neither gives R away.
+- L2-08: the distractors $RI = 75\,\text{V}$, 9,45 MW at 690 V and $U^2 : R = 800\,\text{MW}$ are each really wrong, and their feedback is right. Exactly one option is correct (11,25 kW).
+- L1-06: the "virta asettunut vakioksi" condition handles the switch-on transient. Exactly one option is correct, and the feedback is right.
+- L2-06 and L3-05: the row-by-row efficiencies and losses agree. In L3-05, a from the 80 kW row and the 49–57 kW spread from the other rows are correct.
+- The two-conductor model is stated in every transmission task, and the three-phase formula is used only where the task says so (L1-05). Everything is within the FY7 scope and the brief. Every solution solves symbolically before substituting.

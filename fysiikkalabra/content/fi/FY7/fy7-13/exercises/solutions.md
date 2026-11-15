@@ -165,9 +165,9 @@
 **Järkevyys:** Kulmassa $18{,}6^\circ$ tangentti on suurempi kuin sini: $\tan\theta : \sin\theta = 0{,}337 : 0{,}3193 = 1{,}055$, joten opiskelijan tulos on $5{,}5\,\%$ liian suuri. Oikea tulos $532\,\text{nm}$ vastaa vihreän laserin ilmoitettua aallonpituutta. Virhe kasvaa kulman mukana.
 
 ## fy7-13-L2-07
-**Kysytty:** mikä muutos pienentää aallonpituuden suhteellista virhettä, kun lukemisvirhe $\Delta x$ on aina sama
-**Periaate:** Aallonpituus lasketaan etäisyydestä $x$, ja suhteellinen virhe on likimain $\Delta x : x$. Kun $\Delta x$ pysyy samana, virhe on sitä pienempi osa, mitä suurempi $x$ on. Siksi mittaus kannattaa tehdä niin, että $x$ on mahdollisimman suuri.
-**Mallivastaus:** Suhteellinen virhe pienenee, kun mitataan kaukaisempi maksimi: sama lukemisvirhe on silloin pienempi osa suuremmasta etäisyydestä. Varjostimen siirtäminen lähemmäs hilaa pienentää $x$:ää, joten sama $\Delta x$ on suurempi osa ja virhe kasvaa. Harvempi hila pienentää kulmia ja siten $x$:ää, joten suhteellinen virhe kasvaa sekin eikä virhe jakaudu mihinkään. Kirkkaampi laser ei muuta maksimien paikkoja, koska ne määräytyvät aallonpituudesta, hilavakiosta ja etäisyydestä $L$.
+**Kysytty:** mikä muutos pienentää aallonpituuden suhteellista epävarmuutta, kun lukeman epävarmuus $\Delta x$ on aina sama
+**Periaate:** Aallonpituus lasketaan etäisyydestä $x$, ja suhteellinen epävarmuus on likimain $\Delta x : x$. Kun $\Delta x$ pysyy samana, epävarmuus on sitä pienempi osa, mitä suurempi $x$ on. Siksi mittaus kannattaa tehdä niin, että $x$ on mahdollisimman suuri.
+**Mallivastaus:** Suhteellinen epävarmuus pienenee, kun mitataan kaukaisempi maksimi: sama lukeman epävarmuus on silloin pienempi osa suuremmasta etäisyydestä. Varjostimen siirtäminen lähemmäs hilaa pienentää $x$:ää, joten sama $\Delta x$ on suurempi osa ja epävarmuus kasvaa. Harvempi hila pienentää kulmia ja siten $x$:ää, joten suhteellinen epävarmuus kasvaa sekin eikä virhe jakaudu mihinkään. Kirkkaampi laser ei muuta maksimien paikkoja, koska ne määräytyvät aallonpituudesta, hilavakiosta ja etäisyydestä $L$.
 
 ## fy7-13-L2-08
 **Kysytty:** miten ensimmäisen kertaluvun maksimin etäisyys $x$ keskimaksimista muuttuu, kun hila vaihdetaan tiheämpään ja varjostin siirretään lähemmäs.

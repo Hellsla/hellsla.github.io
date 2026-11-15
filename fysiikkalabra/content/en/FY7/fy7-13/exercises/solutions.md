@@ -165,9 +165,9 @@
 **Reasonableness:** At the angle $18.6^\circ$ the tangent is larger than the sine: $\tan\theta : \sin\theta = 0.337 : 0.3193 = 1.055$, so the student's result is $5.5\,\%$ too large. The correct result $532\,\text{nm}$ matches the stated wavelength of a green laser. The error grows with the angle.
 
 ## fy7-13-L2-07
-**Find:** which change reduces the relative error of the wavelength when the reading error $\Delta x$ is always the same
-**Principle:** The wavelength is calculated from the distance $x$, and the relative error is approximately $\Delta x : x$. When $\Delta x$ stays the same, the error is a smaller part the larger $x$ is. So the measurement should be made so that $x$ is as large as possible.
-**Model answer:** The relative error decreases when a more distant maximum is measured: the same reading error is then a smaller part of a larger distance. Moving the screen closer to the grating makes $x$ smaller, so the same $\Delta x$ is a larger part and the error grows. A sparser grating makes the angles and so $x$ smaller, so the relative error grows too, and the error is not divided among several maxima. A brighter laser does not change the positions of the maxima, because they are determined by the wavelength, the grating spacing and the distance $L$.
+**Find:** which change reduces the relative uncertainty of the wavelength when the reading uncertainty $\Delta x$ is always the same
+**Principle:** The wavelength is calculated from the distance $x$, and the relative uncertainty is approximately $\Delta x : x$. When $\Delta x$ stays the same, the uncertainty is a smaller part the larger $x$ is. So the measurement should be made so that $x$ is as large as possible.
+**Model answer:** The relative uncertainty decreases when a more distant maximum is measured: the same reading uncertainty is then a smaller part of a larger distance. Moving the screen closer to the grating makes $x$ smaller, so the same $\Delta x$ is a larger part and the uncertainty grows. A sparser grating makes the angles and so $x$ smaller, so the relative uncertainty grows too, and the error is not divided among several maxima. A brighter laser does not change the positions of the maxima, because they are determined by the wavelength, the grating spacing and the distance $L$.
 
 ## fy7-13-L2-08
 **Find:** how the distance $x$ of the first-order maximum from the central maximum changes when the grating is replaced with a denser one and the screen is moved closer.
