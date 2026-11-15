@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 8bbe1c98fa95eed9
+CONTENT-HASH: 3a5329e4800fba78
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. lesson.md: 'antotyö W_a' and 'ottotyö W_o' are named but not explained in one phrase (output/input work); a half-sentence defining them for a first-time reader would help, especially in fi-easy.
+(none)
 
 ## Checked
-Whole chapter text for the new symbols, formula sections, inquiry, exit ticket, solutions; numbers unchanged; fi-easy and en match fi.
+- Delta: the diff judged in its context; hash 3a5329e4800fba78 at start and end.
+- lesson.md:358 (Reasonableness of the worked example): 2.14 · 1.02 MW gives 2.2 MW, so the stated estimate now follows from the numbers shown (2.1 · 1.0 gave 2.1).
+- The stage is still one step with its own lead-in; nothing else changed.
