@@ -60,7 +60,7 @@
         },
         {
           "text": "In combined production the turbine converts a larger share of the heat into electricity, so less waste heat is left.",
-          "feedback": "A combined heat and power plant usually produces less electricity than a condensing power plant, because part of the energy of the steam stays as heat. The overall efficiency is higher because this heat is also used."
+          "feedback": "A combined heat and power plant usually produces less electricity than a condensing power plant, because part of the energy of the steam is transferred as heat to the district heating water instead of becoming electricity. The overall efficiency is higher because this heat is also used."
         },
         {
           "text": "The district heating network adds energy as the water circulates in the pipes, so more comes out than goes in.",

@@ -122,7 +122,7 @@
 ## fy3-5-L1-06
 **Kysytty:** kummalla vesimäärällä on suurempi sisäenergia, kun lämpötila on sama
 **Periaate:** Sisäenergia on systeemin hiukkasten liike-energian ja hiukkasten välisten vuorovaikutusten energian summa. Lämpötila kertoo hiukkasten liikkeen voimakkuudesta, mutta sisäenergia riippuu myös hiukkasten määrästä. Lämpö ei ole kappaleeseen varastoitunut määrä, vaan energian siirtymistä lämpötilaeron vuoksi.
-**Mallivastaus:** Kattilassa on suurempi sisäenergia, koska samassa lämpötilassa hiukkasia on enemmän. Väite, että sisäenergia on sama, sekoittaa lämpötilan ja sisäenergian. Kupin sisäenergian ei voi olla suurempi, koska siinä on vähemmän hiukkasia. Väite, että kattilassa on enemmän lämpöä, on virheellinen, koska kappaleeseen varastoituu sisäenergiaa eikä lämpöä.
+**Mallivastaus:** Kattilassa on suurempi sisäenergia, koska samassa lämpötilassa hiukkasia on enemmän. Väite, että sisäenergia on sama, sekoittaa lämpötilan ja sisäenergian. Kupin sisäenergia ei voi olla suurempi, koska siinä on vähemmän hiukkasia. Väite, että kattilassa on enemmän lämpöä, on virheellinen, koska kappaleeseen varastoituu sisäenergiaa eikä lämpöä.
 
 ## fy3-5-L1-07
 **Kysytty:** mitä energialle tapahtuu, kun kuumaa ja kylmää vettä sekoitetaan eristetyssä astiassa (astian oma lämpeneminen jätetään huomiotta)
@@ -166,7 +166,7 @@
 **Kaava:** $F_\text{ka} = \dfrac{\text{mittausten summa}}{5}$, yhden vedon työ $W_1 = F_\text{ka}\, s$ ja kaikkien vetojen $\Delta U = nW_1$
 **Muunnokset:** Ei tarvita: voima on newtoneina ja matka metreinä, joten tulo on jouleina.
 **Sijoitus:** Mittausten summa on $4{,}1\,\text{N} + 4{,}3\,\text{N} + 4{,}2\,\text{N} + 4{,}0\,\text{N} + 4{,}4\,\text{N} = 21{,}0\,\text{N}$, joten $F_\text{ka} = \dfrac{21{,}0\,\text{N}}{5} = 4{,}20\,\text{N}$. Yhden vedon työ on $W_1 = 4{,}20\,\text{N} \cdot 0{,}600\,\text{m} = 2{,}52\,\text{J}$, joten $\Delta U = 20 \cdot 2{,}52\,\text{J} = 50{,}4\,\text{J}$
-**Vastaus:** $50{,}4\,\text{J}$, eli noin $50\,\text{J}$: mittaukset on annettu kahdella merkitsevällä numerolla ja ne vaihtelevat noin $\pm 0{,}2\,\text{N}$ ($\approx 5\,\%$), joten kahden merkitsevän numeron tulos on rehellinen. Oikea kasvu on todennäköisesti hieman pienempi, koska osa lämmenneestä palikasta ja pöydästä siirtää lämpöä ilmaan, jolloin $Q < 0$ ja $\Delta U = Q + W < W$.
+**Vastaus:** $50\,\text{J}$ (laskettu $50{,}4\,\text{J}$), kaksi merkitsevää numeroa, koska voimamittaukset on annettu kahdella merkitsevällä numerolla ja ne vaihtelevat noin $\pm 0{,}2\,\text{N}$ ($\approx 5\,\%$). Oikea kasvu on todennäköisesti hieman pienempi, koska osa lämmenneestä palikasta ja pöydästä siirtää lämpöä ilmaan, jolloin $Q < 0$ ja $\Delta U = Q + W < W$.
 **Järkevyys:** Yhden vedon $2{,}52\,\text{J}$ on pieni, ja siksi kitkan aiheuttama lämpeneminen on arjessa vaikea huomata, mutta $20$ vedon $50{,}4\,\text{J}$ on jo selvästi mitattava. Tarkistus: $20 \cdot 0{,}600\,\text{m} = 12{,}0\,\text{m}$ vetomatkaa kerrottuna voimalla $4{,}20\,\text{N}$ antaa $50{,}4\,\text{J}$.
 
 ## fy3-5-L3-04

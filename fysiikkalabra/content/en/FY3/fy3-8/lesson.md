@@ -262,7 +262,7 @@ For a solid $\gamma \approx 3\alpha$, because an object expands in all three dir
 </svg>
 
 ## Worked example
-The deck of a steel bridge is $120\,\text{m}$ long. At the location the temperature varies during the year from a frost of $-30\,{}^\circ\text{C}$ to a heatwave of +$30\,{}^\circ\text{C}$, and the coefficient of linear expansion of steel is 12 · 10⁻⁶ 1/K. By how much does the length of the deck change, that is, how much must the expansion joint give at least?
+The deck of a steel bridge is $120\,\text{m}$ long. At the location the temperature varies during the year from a frost of $-30\,{}^\circ\text{C}$ to a heatwave of $+30\,{}^\circ\text{C}$, and the coefficient of linear expansion of steel is $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$. By how much does the length of the deck change, that is, how much must the expansion joint give at least?
 
 <!-- vaihe -->
 

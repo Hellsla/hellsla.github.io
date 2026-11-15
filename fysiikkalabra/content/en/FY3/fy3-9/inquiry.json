@@ -7,7 +7,7 @@
     "explain how the volume of a gas depends on the temperature in kelvins at constant pressure."
   ],
   "prior": [
-    "Pressure is force per unit area, $p = F/A$, and atmospheric pressure is about 101 kPa (chapter *Pressure and hydrostatic pressure*)",
+    "Pressure is force per unit area, $p = F/A$, and atmospheric pressure is about $101\\,\\text{kPa}$ (chapter *Pressure and hydrostatic pressure*)",
     "When the volume and the amount of gas stay the same, the pressure of a dilute gas is proportional to the temperature in kelvins, and the extension of the line meets absolute zero (chapter *Thermodynamic system, state variables and temperature*)",
     "Gases expand much more than liquids and solids when heated; for air $\\gamma = 3.4 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ at constant pressure (chapter *Thermal expansion*)"
   ],
@@ -24,19 +24,19 @@
       "stage": "herata",
       "type": "choice",
       "title": "Recap: pressure and force",
-      "prompt": "The area of a syringe plunger is 3.0 cm², and the air pressure in the syringe is 100 kPa. How large a force does the air exert on the plunger?",
+      "prompt": "The area of a syringe plunger is $3.0\\,\\text{cm}^2$, and the air pressure in the syringe is $100\\,\\text{kPa}$. How large a force does the air exert on the plunger?",
       "choices": [
         {
-          "text": "30 N",
+          "text": "$30\\,\\text{N}$",
           "correct": true,
           "feedback": "Correct: $F = pA = 100\\,000\\,\\text{Pa} \\cdot 3.0 \\cdot 10^{-4}\\,\\text{m}^2 = 30\\,\\text{N}$. Pressure is the force caused by particle collisions per unit area, and this lesson builds on it."
         },
         {
-          "text": "300 N",
+          "text": "$300\\,\\text{N}$",
           "feedback": "The conversion of square centimetres went wrong: $1\\,\\text{cm}^2 = (0.01\\,\\text{m})^2 = 10^{-4}\\,\\text{m}^2$, so $3.0\\,\\text{cm}^2 = 3.0 \\cdot 10^{-4}\\,\\text{m}^2$ and $F = pA = 30\\,\\text{N}$."
         },
         {
-          "text": "0.030 N",
+          "text": "$0.030\\,\\text{N}$",
           "feedback": "The pressure must be substituted in pascals: $100\\,\\text{kPa} = 100\\,000\\,\\text{Pa}$. Then $F = pA = 100\\,000\\,\\text{Pa} \\cdot 3.0 \\cdot 10^{-4}\\,\\text{m}^2 = 30\\,\\text{N}$."
         },
         {
@@ -51,7 +51,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 1: the gas is compressed to half",
-      "prompt": "A closed cylinder contains 50 ml of air at a pressure of 100 kPa and a temperature of $20\\,{}^\\circ\\text{C}$. The plunger is pressed slowly until the volume is 25 ml. The temperature stays at $20\\,{}^\\circ\\text{C}$, and no air escapes. What is the pressure now?",
+      "prompt": "A closed cylinder contains 50 ml of air at a pressure of $100\\,\\text{kPa}$ and a temperature of $20\\,{}^\\circ\\text{C}$. The plunger is pressed slowly until the volume is 25 ml. The temperature stays at $20\\,{}^\\circ\\text{C}$, and no air escapes. What is the pressure now?",
       "justify": true,
       "reveal": {
         "after": "exp-1",
@@ -59,21 +59,21 @@
       },
       "choices": [
         {
-          "text": "100 kPa, because no air was added or removed.",
-          "feedback": "In the model's values the pressure rose to 200 000 Pa at 25 ml. The amount of air stayed the same, but the same particles are now in a space half as large and hit the walls twice as often."
+          "text": "$100\\,\\text{kPa}$, because no air was added or removed.",
+          "feedback": "In the model's values the pressure rose to $200\\,000\\,\\text{Pa}$ at 25 ml. The amount of air stayed the same, but the same particles are now in a space half as large and hit the walls twice as often."
         },
         {
-          "text": "150 kPa, because the volume decreased by $50\\,\\%$ and the pressure increases by $50\\,\\%$.",
-          "feedback": "In the model's values the pressure at 25 ml was 200 000 Pa, that is, 200 kPa. The pressure does not increase by the same percentage as the volume decreases: halving the volume doubles the pressure, because the product $pV$ stays the same."
+          "text": "$150\\,\\text{kPa}$, because the volume decreased by $50\\,\\%$ and the pressure increases by $50\\,\\%$.",
+          "feedback": "In the model's values the pressure at 25 ml was $200\\,000\\,\\text{Pa}$, that is, $200\\,\\text{kPa}$. The pressure does not increase by the same percentage as the volume decreases: halving the volume doubles the pressure, because the product $pV$ stays the same."
         },
         {
-          "text": "200 kPa, that is, the pressure doubles.",
+          "text": "$200\\,\\text{kPa}$, that is, the pressure doubles.",
           "correct": true,
           "feedback": "The model's values support this: at 50 ml $p = 100\\,000\\,\\text{Pa}$ and at 25 ml $p = 200\\,000\\,\\text{Pa}$. The product $pV$ is $5.00\\,\\text{J}$ in both."
         },
         {
-          "text": "400 kPa, because the particles hit the walls more often and also harder.",
-          "feedback": "In the model's values the pressure at 25 ml was 200 kPa, not 400 kPa. The temperature stayed the same, so the speed of the particles did not change and they do not hit harder; they only hit twice as often."
+          "text": "$400\\,\\text{kPa}$, because the particles hit the walls more often and also harder.",
+          "feedback": "In the model's values the pressure at 25 ml was $200\\,\\text{kPa}$, not $400\\,\\text{kPa}$. The temperature stayed the same, so the speed of the particles did not change and they do not hit harder; they only hit twice as often."
         }
       ]
     },
@@ -82,7 +82,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Prediction 2: a free plunger and heating",
-      "prompt": "The plunger of the cylinder can now move freely, and a weight on top of it keeps the air pressure at 100 kPa. There is 50 ml of air, and its temperature is $20\\,{}^\\circ\\text{C}$. The air is heated to $80\\,{}^\\circ\\text{C}$. What is the volume of the air now?",
+      "prompt": "The plunger of the cylinder can now move freely, and a weight on top of it keeps the air pressure at $100\\,\\text{kPa}$. There is 50 ml of air, and its temperature is $20\\,{}^\\circ\\text{C}$. The air is heated to $80\\,{}^\\circ\\text{C}$. What is the volume of the air now?",
       "justify": true,
       "reveal": {
         "after": "exp-2",
@@ -100,7 +100,7 @@
         },
         {
           "text": "50 ml, because the pressure stays the same.",
-          "feedback": "In the model's values the volume grew to about 60 ml even though the pressure stayed at 100 kPa. When heated, the particles move faster and hit the plunger more often and harder, so the plunger rises. It stops when the collisions of the thinner gas push on it as much as the weight does: the pressure is the same, the volume is larger."
+          "feedback": "In the model's values the volume grew to about 60 ml even though the pressure stayed at $100\\,\\text{kPa}$. When heated, the particles move faster and hit the plunger more often and harder, so the plunger rises. It stops when the collisions of the thinner gas push on it as much as the weight does: the pressure is the same, the volume is larger."
         },
         {
           "text": "110 ml, because the volume grows by 1 ml for every degree of heating.",
@@ -123,12 +123,12 @@
       "choices": [
         {
           "text": "Aino: a falling straight line. The pressure decreases by the same amount for every extra millilitre, and the line finally crosses the $V$ axis.",
-          "feedback": "In the model's values the drop in pressure is not even: from 25 ml to 50 ml the pressure falls by 100 kPa, but from 50 ml to 100 ml, an interval twice as long, by only 50 kPa. The pressure also does not reach zero at any volume, because $p = \\text{constant}/V$."
+          "feedback": "In the model's values the drop in pressure is not even: from 25 ml to 50 ml the pressure falls by $100\\,\\text{kPa}$, but from 50 ml to 100 ml, an interval twice as long, by only $50\\,\\text{kPa}$. The pressure also does not reach zero at any volume, because $p = \\text{constant}/V$."
         },
         {
           "text": "Bea: a falling curve that flattens and approaches the axes but never meets them.",
           "correct": true,
-          "feedback": "The model's values support this: 25 ml → 200 kPa, 50 ml → 100 kPa, 100 ml → 50 kPa. The drop gets smaller as the volume grows, and in the graph of the simulation the points are on a curve. A straight line is obtained only when $p$ is plotted as a function of $1/V$. The simulation calculates the pressure from the gas law, so it shows the consequences of the law but does not prove it; the proof is real measurements, which the example values of the syringe experiment resemble."
+          "feedback": "The model's values support this: 25 ml → $200\\,\\text{kPa}$, 50 ml → $100\\,\\text{kPa}$, 100 ml → $50\\,\\text{kPa}$. The drop gets smaller as the volume grows, and in the graph of the simulation the points are on a curve. A straight line is obtained only when $p$ is plotted as a function of $1/V$. The simulation calculates the pressure from the gas law, so it shows the consequences of the law but does not prove it; the proof is real measurements, which the example values of the syringe experiment resemble."
         },
         {
           "text": "Cem: a straight line through the origin, because $p$ and $V$ are proportional.",
@@ -151,7 +151,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 1: only the volume changes",
-      "intro": "Test predictions 1 and 3. The change of state is isothermal, so the temperature stays at $20\\,{}^\\circ\\text{C}$. Change only the volume and record a measurement at least at the volumes 50 ml, 25 ml and 100 ml. The table shows the volume in millilitres, like the slider, but the pressure in pascals (100 kPa = 100 000 Pa) and the product $pV$ in joules ($1\\,\\text{kPa} \\cdot 1\\,\\text{ml} = 0.001\\,\\text{J}$).",
+      "intro": "Test predictions 1 and 3. The change of state is isothermal, so the temperature stays at $20\\,{}^\\circ\\text{C}$. Change only the volume and record a measurement at least at the volumes 50 ml, 25 ml and 100 ml. The table shows the volume in millilitres, like the slider, but the pressure in pascals ($100\\,\\text{kPa} = 100\\,000\\,\\text{Pa}$) and the product $pV$ in joules ($1\\,\\text{kPa} \\cdot 1\\,\\text{ml} = 0.001\\,\\text{J}$).",
       "initial": {
         "mode": "isoterminen",
         "Tc": 20,
@@ -194,7 +194,7 @@
       "stage": "tutki",
       "type": "experiment",
       "title": "Experiment 2: only the temperature changes, the pressure stays the same",
-      "intro": "Test prediction 2. The piston is free to move, and the weight on top of it keeps the pressure at 100 kPa, so the change of state is isobaric. Change only the temperature and record a measurement at least at temperatures $20\\,{}^\\circ\\text{C}$ and $80\\,{}^\\circ\\text{C}$, preferably also $150\\,{}^\\circ\\text{C}$ and $-50\\,{}^\\circ\\text{C}$. In the $(T, V)$ graph, see where a line drawn through the points would hit if it were extended. The table shows the Celsius temperature $\\theta$ you set, the kelvin temperature $T$, the volume of the air in millilitres and the ratio $V/T$ in ml/K.",
+      "intro": "Test prediction 2. The piston is free to move, and the weight on top of it keeps the pressure at $100\\,\\text{kPa}$, so the change of state is isobaric. Change only the temperature and record a measurement at least at temperatures $20\\,{}^\\circ\\text{C}$ and $80\\,{}^\\circ\\text{C}$, preferably also $150\\,{}^\\circ\\text{C}$ and $-50\\,{}^\\circ\\text{C}$. In the $(T, V)$ graph, see where a line drawn through the points would hit if it were extended. The table shows the Celsius temperature $\\theta$ you set, the kelvin temperature $T$, the volume of the air in millilitres and the ratio $V/T$ in ml/K.",
       "initial": {
         "mode": "isobaarinen",
         "Tc": 20
@@ -278,11 +278,11 @@
           },
           {
             "text": "The 30 ml row, because air leaked out of the syringe.",
-            "feedback": "The row is right, but the reason is not: a leak would reduce the amount of gas and thus also the product $pV$. In the 30 ml row $pV$ is greater (about 5430 kPa·ml) than in the other rows, which fits warming."
+            "feedback": "The row is right, but the reason is not: a leak would reduce the amount of gas and thus also the product $pV$. In the 30 ml row $pV$ is greater (about $5430\\,\\text{kPa}\\cdot\\text{ml}$) than in the other rows, which fits warming."
           },
           {
             "text": "No row deviates, because the pressure increases in every row as the volume decreases.",
-            "feedback": "An increase in pressure does not yet prove Boyle's law; the product $pV$ must stay the same. In the rows 60, 50, 40 and 20 ml it is about 5040 kPa·ml, but in the 30 ml row about 5430 kPa·ml, almost $8\\,\\%$ greater."
+            "feedback": "An increase in pressure does not yet prove Boyle's law; the product $pV$ must stay the same. In the rows 60, 50, 40 and 20 ml it is about $5040\\,\\text{kPa}\\cdot\\text{ml}$, but in the 30 ml row about $5430\\,\\text{kPa}\\cdot\\text{ml}$, almost $8\\,\\%$ greater."
           }
         ]
       },
@@ -321,7 +321,7 @@
       "stage": "selita",
       "type": "reflect",
       "title": "Return to your predictions",
-      "prompt": "Compare your predictions with the experimental results and with Boyle's law $p_1V_1 = p_2V_2$. Then return to the opening question: what changes during the flight, and why does the air in a sealed bag expand? Use Boyle's law to estimate how much the volume of the air in the bag can increase when the cabin pressure drops from 101 kPa to 78 kPa.",
+      "prompt": "Compare your predictions with the experimental results and with Boyle's law $p_1V_1 = p_2V_2$. Then return to the opening question: what changes during the flight, and why does the air in a sealed bag expand? Use Boyle's law to estimate how much the volume of the air in the bag can increase when the cabin pressure drops from $101\\,\\text{kPa}$ to $78\\,\\text{kPa}$.",
       "predictions": [
         "pred-1",
         "pred-2",
@@ -342,7 +342,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "The cylinder of a bicycle pump contains $0.50\\,\\textsf{l}$ of air at a pressure of 101 kPa. The valve is closed, and the plunger is pressed slowly until the volume of the air is $0.20\\,\\textsf{l}$. The temperature stays the same. A student calculates: $p_2 = \\dfrac{p_1 V_2}{V_1} = \\dfrac{101\\,\\text{kPa} \\cdot 0.20\\,\\textsf{l}}{0.50\\,\\textsf{l}} \\approx 40\\,\\text{kPa}$. Where is the error?",
+      "prompt": "The cylinder of a bicycle pump contains $0.50\\,\\textsf{l}$ of air at a pressure of $101\\,\\text{kPa}$. The valve is closed, and the plunger is pressed slowly until the volume of the air is $0.20\\,\\textsf{l}$. The temperature stays the same. A student calculates: $p_2 = \\dfrac{p_1 V_2}{V_1} = \\dfrac{101\\,\\text{kPa} \\cdot 0.20\\,\\textsf{l}}{0.50\\,\\textsf{l}} \\approx 40\\,\\text{kPa}$. Where is the error?",
       "choices": [
         {
           "text": "The volumes should have been converted to cubic metres and the pressure to pascals.",
@@ -351,7 +351,7 @@
         {
           "text": "The ratio of the volumes is upside down. From Boyle's law $p_2 = \\dfrac{p_1 V_1}{V_2} \\approx 250\\,\\text{kPa}$.",
           "correct": true,
-          "feedback": "Correct. When the volume decreases, the pressure must increase, so 40 kPa is an impossible result. Solve symbolically first: $p_2 = p_1V_1/V_2 = 101\\,\\text{kPa} \\cdot 0.50\\,\\textsf{l} / 0.20\\,\\textsf{l} \\approx 250\\,\\text{kPa}$."
+          "feedback": "Correct. When the volume decreases, the pressure must increase, so $40\\,\\text{kPa}$ is an impossible result. Solve symbolically first: $p_2 = p_1V_1/V_2 = 101\\,\\text{kPa} \\cdot 0.50\\,\\textsf{l} / 0.20\\,\\textsf{l} \\approx 250\\,\\text{kPa}$."
         },
         {
           "text": "The temperature should have been included in kelvins.",
@@ -359,7 +359,7 @@
         },
         {
           "text": "There is no error in the calculation.",
-          "feedback": "Check the reasonableness: when compressed, the volume of the air decreases, so the pressure must increase and not decrease. The result 40 kPa is smaller than the initial pressure."
+          "feedback": "Check the reasonableness: when compressed, the volume of the air decreases, so the pressure must increase and not decrease. The result $40\\,\\text{kPa}$ is smaller than the initial pressure."
         }
       ],
       "optional": true
@@ -369,7 +369,7 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Apply to a new situation",
-      "prompt": "A hiker drinks a 1.50-litre plastic bottle empty at a mountain hut and closes the cap. At the hut the air pressure is 72.0 kPa. In the valley the air pressure is 101 kPa, and the bottle has collapsed. Assume that the temperature of the air in the bottle is the same in both places, that the air in the bottle is an ideal gas, and that the soft bottle collapses so that the pressure inside is the same as outside. What is the volume of the air in the bottle in the valley? Answer in litres.",
+      "prompt": "A hiker drinks a 1.50-litre plastic bottle empty at a mountain hut and closes the cap. At the hut the air pressure is $72.0\\,\\text{kPa}$. In the valley the air pressure is $101\\,\\text{kPa}$, and the bottle has collapsed. Assume that the temperature of the air in the bottle is the same in both places, that the air in the bottle is an ideal gas, and that the soft bottle collapses so that the pressure inside is the same as outside. What is the volume of the air in the bottle in the valley? Answer in litres.",
       "answer": 1.07,
       "unit": "l",
       "tolerance": 0.02,
@@ -454,7 +454,7 @@
       "stage": "tarkista",
       "type": "numeric",
       "title": "3. Graph and calculation",
-      "prompt": "The $(1/V, p)$ graph drawn from measurements of the air in a syringe is a straight line through the origin whose slope is 3.6 kPa·l. What is the air pressure when its volume is 30.0 ml? The temperature stays the same. Answer in kilopascals.",
+      "prompt": "The $(1/V, p)$ graph drawn from measurements of the air in a syringe is a straight line through the origin whose slope is $3.6\\,\\text{kPa}\\cdot\\textsf{l}$. What is the air pressure when its volume is 30.0 ml? The temperature stays the same. Answer in kilopascals.",
       "answer": 120,
       "unit": "kPa",
       "tolerance": 0.02,

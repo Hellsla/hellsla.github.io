@@ -11,7 +11,7 @@
 ## fy3-15-L1-02
 **Annettu:** ilmavirran liike-energian teho $P_\text{tuuli} = 2{,}50\,\text{MW}$ ja sähköteho $P_\text{sähkö} = 1{,}05\,\text{MW}$
 **Kysytty:** voimalan hyötysuhde $\eta$ prosentteina
-**Periaate:** Hyötysuhde kertoo, kuinka suuri osa laitokseen tulevasta tehosta saadaan hyödyksi. Tässä tulotehona on roottorin läpi virtaavan ilman liike-energian teho. Hyötytehona on sähköverkkoon menevä teho. Loput energiasta jää ilman liikkeeseen tai muuttuu lämmöksi.
+**Periaate:** Hyötysuhde kertoo, kuinka suuri osa laitokseen tulevasta tehosta saadaan hyödyksi. Tässä tulotehona on roottorin läpi virtaavan ilman liike-energian teho. Hyötytehona on sähköverkkoon menevä teho. Loput energiasta jää ilman liikkeeseen tai muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön.
 **Kaava:** $\eta = \dfrac{P_\text{sähkö}}{P_\text{tuuli}}$
 **Muunnokset:** Molemmat tehot ovat megawatteina, joten yksiköt supistuvat. Tulos kerrotaan sadalla, jotta saadaan prosentit.
 **Sijoitus:** $\eta = \dfrac{1{,}05\,\text{MW}}{2{,}50\,\text{MW}} = 0{,}420 = 42{,}0\,\%$
@@ -21,7 +21,7 @@
 ## fy3-15-L1-03
 **Annettu:** pinta-ala $A = 20{,}0\,\text{m}^2$, säteilyn teho pinta-alaa kohti $I = 1{,}00\,\tfrac{\text{kW}}{\text{m}^2}$, hyötysuhde $\eta = 0{,}210$
 **Kysytty:** paneelin sähköteho $P$ kilowatteina
-**Periaate:** Paneeliin osuvan säteilyn teho on intensiteetti kertaa pinta-ala. Hyötysuhde kertoo, kuinka suuri osa siitä muuttuu sähköksi. Loput muuttuu lämmöksi tai heijastuu pois. Sähköteho on siis $\eta$-osa ottotehosta $P_\text{o} = IA$ eli paneeliin tulevan säteilyn tehosta.
+**Periaate:** Paneeliin osuvan säteilyn teho on intensiteetti kertaa pinta-ala. Hyötysuhde kertoo, kuinka suuri osa siitä muuttuu sähköksi. Loput heijastuu pois tai muuttuu paneelin sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Sähköteho on siis $\eta$-osa ottotehosta $P_\text{o} = IA$ eli paneeliin tulevan säteilyn tehosta.
 **Kaava:** $P = \eta P_\text{o} = \eta I A$
 **Muunnokset:** Yksiköt kulkevat mukana: $\tfrac{\text{kW}}{\text{m}^2} \cdot \text{m}^2 = \text{kW}$. Tulos tulee suoraan kilowatteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $P = 0{,}210 \cdot 1{,}00\,\tfrac{\text{kW}}{\text{m}^2} \cdot 20{,}0\,\text{m}^2 = 0{,}210 \cdot 20{,}0\,\text{kW} = 4{,}20\,\text{kW}$
@@ -36,7 +36,7 @@
 **Kaava:** $P_\text{h} = P_\text{o} - P_\text{a}$. Tässä $P_\text{o}$ on vaiheeseen tuleva ottoteho ja $P_\text{a}$ vaiheesta lähtevä antoteho. Höyrykierrossa $P_\text{o} = P_1$ ja $P_\text{a} = P_2$, joten $P_\text{h} = P_1 - P_2$
 **Muunnokset:** Ei tarvita. Kaikki tehot ovat megawatteina.
 **Sijoitus:** $P_\text{h} = 350\,\text{MW} - 150\,\text{MW} = 200\,\text{MW}$
-**Vastaus:** Eniten teho pienenee höyrykierrossa. Siinä lämpönä ympäristöön siirtyy $200\,\text{MW}$. Arvot luetaan ruudukon viivoilta täysinä megawatteina. Tulos on siis kolmen numeron tarkkuudella $200\,\text{MW}$.
+**Vastaus:** Eniten teho pienenee höyrykierrossa. Siinä lämpönä ympäristöön siirtyy $200\,\text{MW}$. Pylväiden päät ovat tarkasti ruudukon viivoilla. Lukemat $350\,\text{MW}$ ja $150\,\text{MW}$ ovat siis täysiä megawatteja eli kolmen numeron arvoja. Tulos $200\,\text{MW}$ on kolmen merkitsevän numeron tarkkuudella.
 **Järkevyys:** Vaiheiden häviöt ovat yhteensä $50 + 200 + 10 = 260\,\text{MW} = P_\text{o} - P_3 = 400\,\text{MW} - 140\,\text{MW}$. Tase siis täsmää. Höyrykierron hyötysuhde on $150 / 350 \approx 0{,}43$. Se sopii höyrykierrolle. Höyrykierron häviö on yli $75\,\%$ koko laitoksen hukkalämmöstä.
 
 ## fy3-15-L1-05
@@ -181,12 +181,12 @@ Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ poltto
 ## fy3-15-L3-02
 **Annettu:** sähköenergia $E = 36{,}0\,\text{GWh}$, hyötysuhde $\eta = 0{,}380$ ja hiilen lämpöarvo $H = 25{,}0\,\tfrac{\text{MJ}}{\text{kg}}$. Annettu $1\,\text{GWh} = 3{,}60 \cdot 10^{12}\,\text{J}$
 **Kysytty:** vuodessa poltettavan hiilen massa $m$ kilotonneina
-**Periaate:** Energia säilyy. Hiilen kemiallinen energia $Q_1$ muuttuu sähköksi hyötysuhteella $\eta$. Loput muuttuu hukkalämmöksi. Hyötysuhteen nimittäjä on ostettu polttoaine. Polttoaineen energia on lämpöarvo kertaa massa.
+**Periaate:** Energia säilyy. Hiilen kemiallinen energia $Q_1$ muuttuu sähköksi hyötysuhteella $\eta$. Loput siirtyy hukkalämpönä ympäristöön. Hyötysuhteen nimittäjä on ostettu polttoaine. Polttoaineen energia on lämpöarvo kertaa massa.
 **Kaava:** $E = \eta Q_1$ ja $Q_1 = H m$, joten $m = \dfrac{E}{\eta H}$
 **Muunnokset:** $E = 36{,}0 \cdot 3{,}60 \cdot 10^{12}\,\text{J} = 1{,}296 \cdot 10^{14}\,\text{J}$ ja $H = 25{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. Lopuksi $1\,\text{kt} = 10^6\,\text{kg}$.
 **Sijoitus:** $m = \dfrac{1{,}296 \cdot 10^{14}\,\text{J}}{0{,}380 \cdot 25{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 1{,}3642 \cdot 10^7\,\text{kg} = 13{,}642\,\text{kt}$
 **Vastaus:** $13{,}6\,\text{kt}$, kolme merkitsevää numeroa. Sähköenergia $36{,}0\,\text{GWh}$, hyötysuhde $0{,}380$, lämpöarvo $25{,}0\,\tfrac{\text{MJ}}{\text{kg}}$ ja muuntokerroin $3{,}60 \cdot 10^{12}\,\text{J}/\text{GWh}$ ovat kaikki kolmella numerolla.
-**Järkevyys:** Arvio: $\tfrac{1{,}3 \cdot 10^{14}\,\text{J}}{0{,}4 \cdot 2{,}5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1{,}3 \cdot 10^7\,\text{kg}$. Määrä vastaa noin 270 junavaunullista hiiltä, kun vaunuun mahtuu $50\,\text{t}$. Hyötysuhteita ei voi verrata suoraan. Hiilivoimalassa nimittäjä on ostettu polttoaine, joka kuluu. Sen energiasta noin $38\,\%$ muuttuu sähköksi ja loput hukkalämmöksi. Palamisessa syntyy myös päästöjä. Tuulen energia ei ole varasto, jota kuluu. Tuulipuiston hyötysuhde kertoo vain, kuinka suuri osa roottorin läpi virtaavan ilman liike-energiasta saadaan sähköksi.
+**Järkevyys:** Arvio: $\tfrac{1{,}3 \cdot 10^{14}\,\text{J}}{0{,}4 \cdot 2{,}5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1{,}3 \cdot 10^7\,\text{kg}$. Määrä vastaa noin 270 junavaunullista hiiltä, kun vaunuun mahtuu $50\,\text{t}$. Hyötysuhteita ei voi verrata suoraan. Hiilivoimalassa nimittäjä on ostettu polttoaine, joka kuluu. Sen energiasta noin $38\,\%$ muuttuu sähköksi ja loput siirtyy hukkalämpönä ympäristöön. Palamisessa syntyy myös päästöjä. Tuulen energia ei ole varasto, jota kuluu. Tuulipuiston hyötysuhde kertoo vain, kuinka suuri osa roottorin läpi virtaavan ilman liike-energiasta saadaan sähköksi.
 
 ## fy3-15-L3-03
 **Annettu:** lämmitystarve $Q_1 = 100\,\text{kWh}$, lämpökerroin $\varepsilon = 3{,}00$, voimalan hyötysuhde $\eta_\text{voimala} = 0{,}400$ ja siirron osuus $\eta_\text{siirto} = 0{,}950$
@@ -238,5 +238,5 @@ $P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfr
 **Kaava:** $P_2 = \eta_2 P_1$. Siis $\eta_2 = \dfrac{P_2}{P_1}$.
 **Muunnokset:** Molemmat tehot ovat yksikössä $\text{MW}$. Yksikkö supistuu pois. Hyötysuhde prosentteina saadaan kertomalla sadalla.
 **Sijoitus:** $\eta_2 = \dfrac{150\,\text{MW}}{350\,\text{MW}} = 0{,}4286 = 42{,}86\,\%$
-**Vastaus:** $\eta_2 \approx 43\,\%$. Vastaus annetaan kahdella merkitsevällä numerolla, koska arvot luetaan $50\,\text{MW}$:n ruudukolta.
+**Vastaus:** $\eta_2 \approx 42{,}9\,\%$. Vastaus annetaan kolmella merkitsevällä numerolla. Pylväiden päät ovat tarkasti ruudukon viivoilla, joten lukemat $350\,\text{MW}$ ja $150\,\text{MW}$ ovat täysiä megawatteja eli kolmen numeron arvoja.
 **Järkevyys:** Hyötysuhde on alle $100\,\%$ ja tyypillinen höyrykierrolle. Tehdään vielä riippumaton tarkistus. Kattilan hyötysuhde on $350/400 = 0{,}875$. Generaattorin ja muuntajan hyötysuhde on $140/150 = 0{,}933$. Koko ketjun hyötysuhde on $0{,}875 \cdot 0{,}4286 \cdot 0{,}933 = 0{,}350 = 140/400$. Se täsmää.

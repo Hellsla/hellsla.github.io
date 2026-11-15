@@ -243,7 +243,7 @@ $Q_3 = 4{,}19 \cdot 0{,}50 \cdot 37\,\text{kJ} \approx 78\,\text{kJ}$
 Yhteensä noin $250\,\text{kJ}$, eli noin puolet banaanin ravintoenergiasta. Pakkasessa keho tarvitsee energiansa pysyäkseen lämpimänä, joten lumen syöminen jäähdyttää kehoa ja altistaa paleltumiselle. Siksi lumi sulatetaan keittimellä.
 
 ### Yleisiä virheitä
-- Sulamislämpö unohdetaan, jolloin energia jää alle puoleen.
+- Kohdassa d sulamislämpö unohdetaan, jolloin energia jää noin kolmasosaan.
 - Lumen ja veden lämpeneminen lasketaan samalla ominaislämpökapasiteetilla.
 - Hyötysuhde lasketaan säiliön koko massasta eikä palaneesta kaasusta.
 - Kohdassa c erotuksen epävarmuudeksi otetaan vain yhden lukeman epävarmuus $1\,\text{g}$.
@@ -440,7 +440,7 @@ $P = (56 + 25 + 40)\,\tfrac{\text{W}}{\text{K}} \cdot 20\,\text{K} = 121\,\tfrac
 ### b)
 **Annettu:** $P = 2420\,\text{W}$, $t = 5100\,\text{h}$, ilmanvaihto ja käyttövesi $8{,}0\,\text{MWh}$, lämpökerroin $\varepsilon = 3{,}0$
 **Kysytty:** vuotuinen lämmöntarve $Q_1$ ja lämmityksen sähkönkulutus $W$ kahdella tavalla
-**Periaate:** Keskimääräinen teho kerrottuna ajalla on energia. Lämpöpumpun lämpökerroin on taloon annetun lämmön ja pumpun käyttämän sähköenergian osamäärä. Sähkövastus muuttaa sähköenergian kokonaan lämmöksi.
+**Periaate:** Keskimääräinen teho kerrottuna ajalla on energia. Lämpöpumpun lämpökerroin on taloon annetun lämmön ja pumpun käyttämän sähköenergian osamäärä. Sähkövastuksessa koko sähköenergia muuttuu vastuksen sisäenergiaksi, joka siirtyy lämpönä taloon.
 **Kaava:** $Q_1 = Pt + Q_\text{iv}$ ja $\varepsilon = \dfrac{Q_1}{W}$, joten $W = \dfrac{Q_1}{\varepsilon}$
 **Muunnokset:** $2420\,\text{W} \cdot 5100\,\text{h} = 12\,342\,000\,\text{Wh} \approx 12{,}3\,\text{MWh}$
 **Sijoitus:** $Q_1 = 12{,}3\,\text{MWh} + 8{,}0\,\text{MWh} \approx 20{,}3\,\text{MWh}$

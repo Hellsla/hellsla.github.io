@@ -47,7 +47,7 @@
 **Muunnokset:** Massa on kilogrammoina ja $g$ yksikössä $\text{m/s}^2$, joten tulos tulee suoraan newtoneina.
 **Sijoitus:** $G = 2{,}5\,\text{kg} \cdot 24{,}8\,\text{m/s}^2 = 62{,}0\,\text{N}$
 **Vastaus:** $62\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $2{,}5\,\text{kg}$.
-**Järkevyys:** Maassa paino olisi $2{,}5\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 24{,}5\,\text{N}$. Jupiterin $g$ on $\dfrac{24{,}8}{9{,}81} \approx 2{,}5$-kertainen Maan arvoon verrattuna, ja $2{,}5 \cdot 24{,}5\,\text{N} \approx 62\,\text{N}$, joten $62\,\text{N}$ täsmää.
+**Järkevyys:** Maassa paino olisi $2{,}5\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 24{,}5\,\text{N}$. Jupiterin $g$ on $\dfrac{24{,}8}{9{,}81} \approx 2{,}5$-kertainen Maan arvoon verrattuna, ja $2{,}5 \cdot 24{,}5\,\text{N} \approx 61\,\text{N}$, joten $62\,\text{N}$ täsmää suhteen $2{,}5$ pyöristyksen tarkkuudella.
 
 ## fy3-1-L2-01
 **Annettu:** voimamittarin lukema eli paino $G = 49\,\text{N}$ Maassa; taulukosta $g = 9{,}81\,\text{m/s}^2$

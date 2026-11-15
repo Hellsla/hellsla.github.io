@@ -122,8 +122,8 @@ Energy from the wall: $U A\,\Delta T\,t = 1.5 \cdot 0.50 \cdot 30 \cdot 21\,600\
 Energy from the drinks: $c\,m_\text{j}\,\Delta T_\text{j} = 4190 \cdot 0.50 \cdot 24\,\text{J} = 50\,280\,\text{J}$
 Energy taken by the ice per kilogram: $c_\text{ice}\,\Delta T_\text{ice} + s = 21\,000 + 334\,000 = 355\,000\,\tfrac{\text{J}}{\text{kg}}$
 Smallest mass: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfrac{\text{J}}{\text{kg}}} = 1.511\,\text{kg}$
-**Answer:** $1.5\,\text{kg}$, two significant figures, because the U-value $1.5$, the area $0.50\,\text{m}^2$, the mass of the drinks $0.50\,\text{kg}$ and the time $6.0\,\text{h}$ all have two figures.
-**Reasonableness:** The wall brings in $486\,\text{kJ}$ and the drinks $50\,\text{kJ}$, about $536\,\text{kJ}$ in total. If the ice were already at $0\,{}^\circ\text{C}$, we would need $\tfrac{536\,\text{kJ}}{334\,\text{kJ/kg}} \approx 1.6\,\text{kg}$. Warming freezer ice takes about $\tfrac{21}{334} \approx 6\,\%$ more energy per kilogram, so the mass needed is slightly smaller, $1.51\,\text{kg}$, which with two figures gives the smallest suitable mass $1.5\,\text{kg}$.
+**Answer:** $1.6\,\text{kg}$, two significant figures, because the U-value $1.5$, the area $0.50\,\text{m}^2$, the mass of the drinks $0.50\,\text{kg}$ and the time $6.0\,\text{h}$ all have two figures. The calculated $1.511\,\text{kg}$ is the smallest mass that is enough, so it is rounded up: $1.5\,\text{kg}$ would not be enough.
+**Reasonableness:** The wall brings in $486\,\text{kJ}$ and the drinks $50\,\text{kJ}$, about $536\,\text{kJ}$ in total. If the ice were already at $0\,{}^\circ\text{C}$, we would need $\tfrac{536\,\text{kJ}}{334\,\text{kJ/kg}} \approx 1.6\,\text{kg}$. Warming freezer ice takes about $\tfrac{21}{334} \approx 6\,\%$ more energy per kilogram, so the mass needed is slightly smaller, $1.51\,\text{kg}$, and rounded up to two figures the smallest mass that is enough is $1.6\,\text{kg}$.
 
 ## fy3-16-L1-06
 **Find:** why a metal handle feels colder than a wooden handle even though both are at room temperature.
@@ -148,7 +148,7 @@ Smallest mass: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tf
 ## fy3-16-L2-05
 **Given:** power $P = 6.0\,\text{kW}$, stones $m = 40\,\text{kg}$ and $c = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; from the table $T = 20\,{}^\circ\text{C}$ at $0\,\text{min}$ and $T = 275\,{}^\circ\text{C}$ at $30\,\text{min}$ (intermediate values $112\,{}^\circ\text{C}$ and $196\,{}^\circ\text{C}$)
 **Find:** efficiency $\eta$ of the heating as a percentage
-**Principle:** The stones stay solid, so the energy transferred to them is $Q = c\,m\,\Delta T$. The elements convert electrical energy into heat at the power $P$, so the energy used is $P\,t$. Efficiency is the ratio of the useful energy to the energy used.
+**Principle:** The stones stay solid, so the energy transferred to them is $Q = c\,m\,\Delta T$. The elements convert electrical energy into internal energy at the power $P$, and it is transferred to the stones as heat, so the energy used is $P\,t$. Efficiency is the ratio of the useful energy to the energy used.
 **Formula:** $\eta = \dfrac{Q}{P\,t} = \dfrac{c\,m\,\Delta T}{P\,t}$
 **Conversions:** The change in temperature is the same in kelvins: $\Delta T = 275\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 255\,\text{K}$. The time is $t = 30\,\text{min} = 1800\,\text{s}$ and the power is $P = 6.0\,\text{kW} = 6000\,\text{W}$.
 **Substitution:** $\eta = \dfrac{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 40\,\text{kg} \cdot 255\,\text{K}}{6000\,\text{W} \cdot 1800\,\text{s}} = \dfrac{8.16 \cdot 10^{6}\,\text{J}}{10.8 \cdot 10^{6}\,\text{J}} = 0.756 = 75.6\,\%$

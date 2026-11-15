@@ -60,7 +60,7 @@
         },
         {
           "text": "Turbiini muuttaa yhteistuotannossa suuremman osan lämmöstä sähköksi, joten hukkalämpöä jää vähemmän.",
-          "feedback": "Yhteistuotannossa sähköä saadaan yleensä vähemmän kuin lauhdevoimalaitoksessa, koska osa höyryn energiasta jää lämmöksi. Kokonaishyötysuhde on suurempi, koska myös tämä lämpö hyödynnetään."
+          "feedback": "Yhteistuotannossa sähköä saadaan yleensä vähemmän kuin lauhdevoimalaitoksessa, koska osa höyryn energiasta siirtyy lämpönä kaukolämpöveteen eikä muutu sähköksi. Kokonaishyötysuhde on suurempi, koska myös tämä lämpö hyödynnetään."
         },
         {
           "text": "Kaukolämpöverkko lisää energiaa, kun vesi kiertää putkissa, joten ulos saadaan enemmän kuin sisään.",

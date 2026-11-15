@@ -122,8 +122,8 @@ Seinän energia: $U A\,\Delta T\,t = 1{,}5 \cdot 0{,}50 \cdot 30 \cdot 21\,600\,
 Juomien energia: $c\,m_\text{j}\,\Delta T_\text{j} = 4190 \cdot 0{,}50 \cdot 24\,\text{J} = 50\,280\,\text{J}$
 Jään energia kilogrammaa kohti: $c_\text{jää}\,\Delta T_\text{jää} + s = 21\,000 + 334\,000 = 355\,000\,\tfrac{\text{J}}{\text{kg}}$
 Pienin massa: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfrac{\text{J}}{\text{kg}}} = 1{,}511\,\text{kg}$
-**Vastaus:** $1{,}5\,\text{kg}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska U-arvo $1{,}5$, pinta-ala $0{,}50\,\text{m}^2$, juomien massa $0{,}50\,\text{kg}$ ja aika $6{,}0\,\text{h}$ ovat kaikki kahdella numerolla.
-**Järkevyys:** Seinä tuo $486\,\text{kJ}$ ja juomat $50\,\text{kJ}$. Yhteensä energiaa on noin $536\,\text{kJ}$. Jos jää olisi jo $0\,{}^\circ\text{C}$:ssa, tarvittaisiin $\tfrac{536\,\text{kJ}}{334\,\text{kJ/kg}} \approx 1{,}6\,\text{kg}$. Pakastinjään lämmittäminen vie noin $\tfrac{21}{334} \approx 6\,\%$ enemmän energiaa kilogrammaa kohti. Tarvittava massa on siksi hieman pienempi, $1{,}51\,\text{kg}$. Kahdella numerolla pienin sopiva massa on $1{,}5\,\text{kg}$.
+**Vastaus:** $1{,}6\,\text{kg}$. Vastaus on annettu kahdella merkitsevällä numerolla, koska U-arvo $1{,}5$, pinta-ala $0{,}50\,\text{m}^2$, juomien massa $0{,}50\,\text{kg}$ ja aika $6{,}0\,\text{h}$ ovat kaikki kahdella numerolla. Laskettu $1{,}511\,\text{kg}$ on pienin riittävä massa. Siksi se pyöristetään ylöspäin: $1{,}5\,\text{kg}$ ei riittäisi.
+**Järkevyys:** Seinä tuo $486\,\text{kJ}$ ja juomat $50\,\text{kJ}$. Yhteensä energiaa on noin $536\,\text{kJ}$. Jos jää olisi jo $0\,{}^\circ\text{C}$:ssa, tarvittaisiin $\tfrac{536\,\text{kJ}}{334\,\text{kJ/kg}} \approx 1{,}6\,\text{kg}$. Pakastinjään lämmittäminen vie noin $\tfrac{21}{334} \approx 6\,\%$ enemmän energiaa kilogrammaa kohti. Tarvittava massa on siksi hieman pienempi, $1{,}51\,\text{kg}$. Kahdella numerolla ylöspäin pyöristettynä pienin riittävä massa on $1{,}6\,\text{kg}$.
 
 ## fy3-16-L1-06
 **Kysytty:** miksi metallikahva tuntuu kylmemmältä kuin puukahva, vaikka molemmat ovat huoneen lämpötilassa.
@@ -148,7 +148,7 @@ Pienin massa: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfr
 ## fy3-16-L2-05
 **Annettu:** teho $P = 6{,}0\,\text{kW}$, kivet $m = 40\,\text{kg}$ ja $c = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$. Taulukosta $T = 20\,{}^\circ\text{C}$ hetkellä $0\,\text{min}$ ja $T = 275\,{}^\circ\text{C}$ hetkellä $30\,\text{min}$ (väliarvot $112\,{}^\circ\text{C}$ ja $196\,{}^\circ\text{C}$).
 **Kysytty:** lämmityksen hyötysuhde $\eta$ prosentteina
-**Periaate:** Kivet pysyvät kiinteinä. Niihin siirtynyt energia on siis $Q = c\,m\,\Delta T$. Vastukset muuttavat sähköenergian lämmöksi teholla $P$, joten käytetty energia on $P\,t$. Hyötysuhde kertoo, kuinka suuri osa käytetystä energiasta päätyy hyödyksi.
+**Periaate:** Kivet pysyvät kiinteinä. Niihin siirtynyt energia on siis $Q = c\,m\,\Delta T$. Vastukset muuttavat sähköenergiaa sisäenergiaksi teholla $P$, ja se siirtyy lämpönä kiviin, joten käytetty energia on $P\,t$. Hyötysuhde kertoo, kuinka suuri osa käytetystä energiasta päätyy hyödyksi.
 **Kaava:** $\eta = \dfrac{Q}{P\,t} = \dfrac{c\,m\,\Delta T}{P\,t}$
 **Muunnokset:** Lämpötilan muutos on sama kelvineinä: $\Delta T = 275\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 255\,\text{K}$. Aika on $t = 30\,\text{min} = 1800\,\text{s}$ ja teho $P = 6{,}0\,\text{kW} = 6000\,\text{W}$.
 **Sijoitus:** $\eta = \dfrac{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 40\,\text{kg} \cdot 255\,\text{K}}{6000\,\text{W} \cdot 1800\,\text{s}} = \dfrac{8{,}16 \cdot 10^{6}\,\text{J}}{10{,}8 \cdot 10^{6}\,\text{J}} = 0{,}756 = 75{,}6\,\%$

@@ -47,7 +47,7 @@
 **Conversions:** The mass is in kilograms and $g$ in $\text{m/s}^2$, so the result comes out directly in newtons.
 **Substitution:** $G = 2.5\,\text{kg} \cdot 24.8\,\text{m/s}^2 = 62.0\,\text{N}$
 **Answer:** $62\,\text{N}$, two significant figures like the mass $2.5\,\text{kg}$.
-**Reasonableness:** On Earth the weight would be $2.5\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 24.5\,\text{N}$. Jupiter's $g$ is $\dfrac{24.8}{9.81} \approx 2.5$ times the Earth's value, and $2.5 \cdot 24.5\,\text{N} \approx 62\,\text{N}$, so $62\,\text{N}$ agrees.
+**Reasonableness:** On Earth the weight would be $2.5\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 24.5\,\text{N}$. Jupiter's $g$ is $\dfrac{24.8}{9.81} \approx 2.5$ times the Earth's value, and $2.5 \cdot 24.5\,\text{N} \approx 61\,\text{N}$, so $62\,\text{N}$ agrees to within the rounding of the ratio $2.5$.
 
 ## fy3-1-L2-01
 **Given:** the force meter reading, that is, the weight $G = 49\,\text{N}$ on Earth; from the table $g = 9.81\,\text{m/s}^2$
