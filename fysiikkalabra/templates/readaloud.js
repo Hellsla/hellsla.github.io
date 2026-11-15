@@ -153,6 +153,9 @@
           case '>': return { w: W.gt };
           case '≈': return { w: W.approx };
           case '°': return { w: '°' };
+          case '(':                       // "(-15)": the sign of a negative number in brackets is read "negatiivinen", so -10-(-15) is not "miinus 10 miinus miinus 15" (teacher 2026-11-15)
+            if (isCh(peek(), '-') || isCh(peek(), '−')) { i++; return { w: W.negative || W.minus }; }
+            return { w: '' };
           case ',': case '.': return { w: t.v };
           case '%': return { w: W.percent };
           default: return { w: '' };
@@ -196,6 +199,8 @@
           i++;
           const e = arg(), r = e.raw.replace(/\s+/g, '');
           if (r === '\\circ' || r === '\\degree' || r === '°') a = { w: a.w + ' °' };
+          else if (r === '-' || r === '−') a = { w: a.w + ' ' + W.minus };    // \beta^{-} is "beeta miinus", not "beeta potenssiin miinus" (teacher 2026-11-15)
+          else if (r === '+') a = { w: a.w + ' ' + W.plus };
           else if (r === '2') a = { w: a.w + ' ' + W.squared };
           else if (r === '3') a = { w: a.w + ' ' + W.cubed };
           else a = { w: a.w + ' ' + W.power + ' ' + e.w };
@@ -226,6 +231,7 @@
   /* ---------- the text of the page ---------- */
   const BLOCK = 'h1,h2,h3,h4,h5,p,li,dt,dd,figcaption,caption,th,td,label,legend,output,.katex-display';
   const SKIP = 'svg,script,style,noscript,template,button,input,select,textarea,summary,nav,.ra-ui,#sim-root,.sim-wrap,.toc,.sr-only,.visually-hidden,[aria-hidden="true"]';
+  const TERM = 'button.kc-term-btn';   // a concept-card term in the text (kortit.js puts its words inside a button): read like the text around it (teacher 2026-11-15)
   const isBlock = (el) => el.nodeType === 1 && el.matches(BLOCK);
   const SCOPE = main.querySelector('section.stage#herata, section.stage#selita') ? '#herata, #selita' : null;
   const NOT_READ = '.activity:not(.act-hook):not(.act-theory), details.opt, details.answer, details.hint, .hints, .feedback, .sol-step, .example, form, fieldset, .photo-credit';
@@ -263,7 +269,7 @@
           if (w) { text += ' '; segs.push({ a: text.length, b: text.length + w.length, el: ch }); text += w + ' '; }
           continue;
         }
-        if (isBlock(ch) || ch.matches(SKIP)) continue;
+        if (isBlock(ch) || (ch.matches(SKIP) && !ch.matches(TERM))) continue;
         if (ch.tagName === 'BR') { text += ' '; continue; }
         const cs = getComputedStyle(ch), apart = cs.display !== 'inline' || getComputedStyle(ch, '::before').content !== 'none';
         if (apart) text += ' ';            // a word in a box of its own, or after a CSS "(", is never glued to the one before
@@ -323,6 +329,32 @@
     const ok = voices.filter((v) => (v.lang || '').toLowerCase().replace('_', '-').slice(0, 2) === base);
     if (!ok.length) return null;
     return ok.slice().sort((x, y) => voiceScore(y, want) - voiceScore(x, want))[0];
+  }
+  /* ---------- recorded voice (teacher 2026-11-15: ElevenLabs "Oskari - Finnish", Finnish FY1 and FY2 lessons) ----------
+     A block whose speech text has a recording (audio/fi/<page>.json, made by scripts/readaloud_audio.py, never in the
+     student's browser) is played from that mp3; its word times drive the same sentence and word highlight. The recording is
+     tied to the hash of the block's speech text: a block that changed since is read by the voices above until it is made
+     again. Nothing is sent: the files are the site's own. */
+  const norm = (t) => t.replace(/\s+/g, ' ').trim();
+  function textHash(t) {                          // FNV-1a over the UTF-16 code units + length; the same in scripts/readaloud_audio.py
+    let h = 0x811c9dc5;
+    for (let i = 0; i < t.length; i++) { h ^= t.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; }
+    return h.toString(16).padStart(8, '0') + t.length.toString(16).padStart(4, '0');
+  }
+  const REC = { man: null, base: null, audio: null, bad: new Set() };
+  (() => {                                        // build.py names the page in the page's strings ("audio") only when it has recordings: no request, no 404 elsewhere
+    const file = L10N.audio;
+    if (!file || pageLang.slice(0, 2) !== 'fi' || location.protocol === 'file:') return;
+    const base = new URL('audio/fi/', (SCRIPT && SCRIPT.src) || location.href).href;
+    fetch(base + file + '.json').then((r) => (r.ok ? r.json() : null)).then((m) => {
+      if (!m || !m.blocks) return;
+      REC.man = m; REC.base = base; offer();
+    }, () => {});
+  })();
+  function recFor(blk) {
+    if (!REC.man || !blk) return null;
+    const e = REC.man.blocks[textHash(norm(blk.text))];
+    return e && !REC.bad.has(e.file) ? { e, url: REC.base + e.file } : null;
   }
   const LANG_TAG = { fi: 'fi-FI', en: 'en-GB', fr: 'fr-FR', sv: 'sv-SE', de: 'de-DE' };
 
@@ -637,6 +669,8 @@
     const my = ++token;
     const lang = langOf(cur.el);
     paint(null);
+    const rec = recFor(cur);
+    if (rec) return speakRecorded(rec, my);
     if (useNeural(lang)) {
       const j = chunkEnd(cur, si, !chained), marks = [], a0 = cur.sents[si][0], all = cur.sents[j - 1][1] - a0;
       for (let k = si + 1; k < j; k++) marks.push([k, (cur.sents[k][0] - a0) / all]);   // where each sentence starts, as a share of the chunk
@@ -644,6 +678,36 @@
     }
     if (!synth) { si++; return speakSentence(); }
     speakBrowser(text, lang, a, my);
+  }
+  function speakRecorded(rec, my) {
+    const blk = cur, toks = [...blk.text.matchAll(/\S+/g)], words = rec.e.words || [];
+    if (!toks.length || words.length !== toks.length) { REC.bad.add(rec.e.file); return speakSentence(); }
+    const k0 = Math.max(0, toks.findIndex((m) => m.index >= blk.sents[si][0]));
+    const a = REC.audio || (REC.audio = new Audio());
+    a.onended = a.onerror = a.ontimeupdate = null;
+    a.src = rec.url; a.preservesPitch = true; a.playbackRate = rate;
+    let at = -1, started = false;
+    const sentOf = (pos) => { const k = blk.sents.findIndex(([x, y]) => pos >= x && pos < y); return k < 0 ? si : k; };
+    const follow = () => {
+      if (my !== token || !playing || cur !== blk) return;
+      const t = a.currentTime;
+      let k = words.findIndex((w) => t >= w[0] && t < w[1]);
+      if (k < 0) k = words.findIndex((w) => w[0] > t) - 1;
+      if (k < 0 && t > 0) k = words.length - 1;
+      if (k < 0 || k === at) return;
+      at = k;
+      const m = toks[k], s = sentOf(m.index);
+      if (s !== si) { si = s; paint(null); }
+      paint([m.index, m.index + m[0].length]);
+    };
+    a.ontimeupdate = follow;
+    a.onended = () => { if (my !== token || !playing) return; si = blk.sents.length; speakSentence(true); };
+    a.onerror = () => { if (my !== token) return; REC.bad.add(rec.e.file); if (playing) speakSentence(); };
+    a.onloadedmetadata = () => { if (my === token && !started) { started = true; try { a.currentTime = words[k0][0]; } catch (e) { /* from the start */ } } };
+    const n = nextBlock(blk.el, 1), nr = n && recFor(n);
+    if (nr) fetch(nr.url).catch(() => {});          // the next block's file is on its way while this one plays
+    const pr = a.play();
+    if (pr && pr.catch) pr.catch(() => { if (my === token && playing) { REC.bad.add(rec.e.file); speakSentence(); } });
   }
   function speakNeural(text, l2, my, end, marks) {
     neural.start();
@@ -691,7 +755,7 @@
     synth.speak(u);
     if (synth.paused) synth.resume();
   }
-  function hush() { token++; if (synth) synth.cancel(); neural.stopAudio(); neural.keep(); }
+  function hush() { token++; if (synth) synth.cancel(); if (REC.audio) REC.audio.pause(); neural.stopAudio(); neural.keep(); }
   function play() {
     if (!cur) {
       if (window.scrollY > 300) {                   // scrolled: from the first block that is read below the bar
@@ -702,7 +766,7 @@
       if (!cur) cur = nextBlock(null, 1);
       if (!cur) return;
       // no voice of the page's language on the device and the better voice not chosen: the menu offers it
-      if (!neuralOn() && !voiceFor(LANG_TAG[pageLang.slice(0, 2)] || pageLang)) { cur = null; openMenu(true); showNote(msg('ra_no_lang_voice')); return; }
+      if (!neuralOn() && !recFor(cur) && !voiceFor(LANG_TAG[pageLang.slice(0, 2)] || pageLang)) { cur = null; openMenu(true); showNote(msg('ra_no_lang_voice')); return; }
       si = 0;
     }
     if (neuralOn()) neural.start();
@@ -814,6 +878,7 @@
   }
   // the button only where there is a voice for the page's language: the neural voice, or one of the device's
   function haveVoice() {
+    if (REC.man) return true;                      // a recorded voice for this page
     // the neural voice can be chosen in the menu (on a phone it is not on by default), so it counts while it works
     if (neural.ok && !neural.failed && NEURAL_LANGS.includes(pageLang.slice(0, 2))) return true;
     return !!voiceFor(LANG_TAG[pageLang.slice(0, 2)] || pageLang);
@@ -842,7 +907,7 @@
     if (neuralOn()) neural.start();
     hush(); cur = n; si = 0; playing = true; render(); mark(cur.el); speakSentence();
   });
-  window.addEventListener('pagehide', () => { if (synth) synth.cancel(); neural.stopAudio(); });
+  window.addEventListener('pagehide', () => { if (synth) synth.cancel(); if (REC.audio) REC.audio.pause(); neural.stopAudio(); });
   if (synth) synth.cancel();                       // a voice left over from the previous page
 
   if (toc) toc.append(ui.bar);
@@ -850,7 +915,8 @@
   document.body.append(ui.menu, ui.note);
   offer();
   if (synth && synth.addEventListener) synth.addEventListener('voiceschanged', offer);
-  window.flSpeech = { tex: texSpeech, unit: unitWords, blocks: () => { const out = []; let b = nextBlock(null, 1); while (b && out.length < 2000) { out.push(b.text.replace(/\s+/g, ' ').trim()); b = nextBlock(b.el, 1); } return out; },
+  window.flSpeech = { tex: texSpeech, unit: unitWords, hash: textHash, rec: () => (REC.man ? Object.keys(REC.man.blocks).length : 0),
+    recorded: () => { const out = []; let b = nextBlock(null, 1); while (b && out.length < 2000) { out.push(!!recFor(b)); b = nextBlock(b.el, 1); } return out; }, blocks: () => { const out = []; let b = nextBlock(null, 1); while (b && out.length < 2000) { out.push(b.text.replace(/\s+/g, ' ').trim()); b = nextBlock(b.el, 1); } return out; },
     state: () => ({ engine: neuralOn() ? 'neural' : 'browser', light: lightDevice, modelBase: MODEL_BASE, ep: neural.ep, workers: neural.pool.length, failed: neural.failed, playing, voice: voiceChoice, progress: neural.progress, rate }),
     elements: () => { const out = []; let b = nextBlock(null, 1); while (b && out.length < 2000) { out.push(b.el); b = nextBlock(b.el, 1); } return out; } };
 })();

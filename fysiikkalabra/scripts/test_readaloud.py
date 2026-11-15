@@ -58,6 +58,18 @@ for f in sorted(SITE.rglob("*.html")):
 expect(f"{count} pages built from lesson.html load readaloud.js", not missing and count > 0, missing[:10])
 expect("every such page carries lang \"speech\"", not nospeech, nospeech[:10])
 
+# recordings (assets/audio/fi/<page>.json, copied to site/audio by build.py; the mp3 files are in Hellsla/ruukkilabra-audio, not here, and no test needs
+# them): every manifest names a file for each block and has one increasing time pair per word
+bad = []
+for mf in sorted((SITE / "audio" / "fi").glob("*.json")):
+    m = json.loads(mf.read_text())
+    for h, e in m["blocks"].items():
+        w = e["words"]
+        if not e.get("file", "").endswith(f"{h}.mp3") or not w or any(len(x) != 2 or x[1] < x[0] for x in w) or any(w[k + 1][0] < w[k][0] for k in range(len(w) - 1)):
+            bad.append(f"{mf.name}:{h}")
+expect("every manifest in site/audio names a file for each block and has increasing word times", not bad, bad[:5])
+expect("no mp3 file is kept in this repository", not list((SITE / "audio").rglob("*.mp3")) and not list((ROOT / "assets" / "audio").rglob("*.mp3")))
+
 # a stand-in voice: reports each word as a boundary, then ends the sentence; records what was spoken
 MOCK = r"""(() => {
   const spoken = []; window.__spoken = spoken;
@@ -83,9 +95,11 @@ TEX = {
            (r"\overline{F}_{\mu}", "vektori F myy"), (r"2{,}5\,\text{m}^3", "2,5 kuutiometriä"),
            (r"c = 4190\,\frac{\text{J}}{\text{kg}\cdot{}^\circ\text{C}}", "c on 4190 joulea per kilogramma per celsiusaste"),
            (r"20\,^\circ\text{C}", "20 celsiusastetta"), (r"p = \frac{F}{A}", "p on F jaettuna A"), (r"1{,}18\,\text{kN}", "1,18 kilonewtonia"),
-           (r"3{,}0 \cdot 10^{8}\,\text{m/s}", "3,0 kertaa 10 potenssiin 8 metriä sekunnissa"), (r"12\,000\,\text{J}", "12000 joulea")],
+           (r"3{,}0 \cdot 10^{8}\,\text{m/s}", "3,0 kertaa 10 potenssiin 8 metriä sekunnissa"), (r"12\,000\,\text{J}", "12000 joulea"),
+           (r"\beta^{-}", "beeta miinus"), (r"\beta^{+}", "beeta plus"), (r"-10-(-15) = 5", "miinus 10 miinus negatiivinen 15 on 5"), (r"10^{-15}", "10 potenssiin miinus 15")],
     "en": [(r"F = m \cdot a", "F equals m times a"), (r"9.81\,\text{m/s}^2", "9.81 metres per second squared"),
-           (r"2.5\,\text{m}^2", "2.5 square metres"), (r"E = 3.6\,\text{kWh}", "E equals 3.6 kilowatt hours")],
+           (r"2.5\,\text{m}^2", "2.5 square metres"), (r"E = 3.6\,\text{kWh}", "E equals 3.6 kilowatt hours"),
+           (r"-10-(-15) = 5", "minus 10 minus negative 15 equals 5")],
 }
 
 
@@ -340,6 +354,65 @@ if NPAGE and MBASE:
         pg.wait_for_timeout(3000)
         expect(f"neural {NPAGE}: under 8 GB of memory one worker only", pg.evaluate("flSpeech.state().workers") == 1, pg.evaluate("flSpeech.state()"))
         expect(f"neural {NPAGE}: no script errors on the second visit", not errs, errs[:3])
+        b.close()
+
+# Concept-card terms and the recorded voice (teacher 2026-11-15: "Fix it" for the term, ElevenLabs "Oskari - Finnish").
+# kortit.js puts a Teoria term inside a button; a button is not read, so "Fysiikka on luonnontiede…" was read as "on
+# luonnontiede…". The term is read now, by the device's voice as by every other. A block with a recording (a stand-in
+# manifest and a silent file here) is played from it, with the hash of its speech text the same in Python and in
+# the browser, and a block without one is read by the voice of the device.
+RPAGE = "fy1-1.html"
+if (SITE / RPAGE).is_file() and (SITE / "kortit").is_dir():
+    import struct, wave, io
+    from readaloud_audio import text_hash
+    buf = io.BytesIO()
+    with wave.open(buf, "wb") as w: w.setnchannels(1); w.setsampwidth(2); w.setframerate(8000); w.writeframes(struct.pack("<h", 0) * 8000 * 2)
+    silence = buf.getvalue()
+    with sync_playwright() as pw:
+        b = launch(pw)
+        pg = b.new_page(viewport={"width": 1280, "height": 800})
+        errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
+        pg.add_init_script(MOCK)
+        pg.goto(BASE + RPAGE); pg.wait_for_timeout(600)
+        blocks = pg.evaluate("flSpeech.blocks()")
+        terms = pg.evaluate("[...document.querySelectorAll('#selita .kc-term-btn')].map(b => b.textContent.trim())")
+        lost = [t for t in terms[:6] if not any(t in x for x in blocks)]
+        expect(f"{RPAGE}: a concept-card term in the text is read with the text around it", len(terms) >= 3 and not lost, lost or terms)
+        expect(f"{RPAGE}: \"Fysiikka\" begins the sentence it is the term of", any(x.startswith("Fysiikka on luonnontiede") for x in blocks), blocks[5:8])
+        hashes = pg.evaluate("flSpeech.blocks().map(t => flSpeech.hash(t))")
+        expect(f"{RPAGE}: the hash of a block's speech text is the same in the browser and in scripts/readaloud_audio.py", hashes == [text_hash(x) for x in blocks], hashes[:2])
+        ntok = [len(x.split()) for x in blocks]
+        man = {"voice": "test", "blocks": {hashes[i]: {"file": f"t/{i}.wav", "words": [[k * 0.01, (k + 1) * 0.01] for k in range(ntok[i])]} for i in (1, 2)}}
+        pg.close()
+        pg = b.new_page(viewport={"width": 1280, "height": 800})
+        errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
+        pg.add_init_script(MOCK)
+        pg.route("**/audio/fi/fy1-1.json", lambda r: r.fulfill(status=200, content_type="application/json", body=json.dumps(man)))
+        pg.route("**/audio/fi/t/*.wav", lambda r: r.fulfill(status=200, content_type="audio/wav", body=silence))
+        pg.goto(BASE + RPAGE); pg.wait_for_timeout(800)
+        expect(f"{RPAGE}: the manifest is found and two blocks are recorded", pg.evaluate("flSpeech.rec()") == 2 and pg.evaluate("flSpeech.recorded().filter(Boolean).length") == 2)
+        pg.evaluate("window.scrollTo(0, 0)")
+        pg.click(".ra-start"); pg.wait_for_timeout(200)
+        expect(f"{RPAGE}: the first block has no recording, so the device's voice reads it", pg.evaluate("window.__spoken.length") >= 1)
+        pg.evaluate("window.__spoken.length = 0")
+        pg.wait_for_function("window.__spoken.length > 0 || (document.querySelector('.ra-on') && flSpeech.recorded()[[...flSpeech.elements()].indexOf(document.querySelector('.ra-on'))])", timeout=8000)
+        pg.wait_for_timeout(300)
+        on = pg.evaluate("(() => { const k = [...flSpeech.elements()].indexOf(document.querySelector('.ra-on')); return { k, rec: flSpeech.recorded()[k], word: CSS.highlights.has('ra-word') || CSS.highlights.has('ra-sentence'), spoken: window.__spoken.length }; })()")
+        expect(f"{RPAGE}: a recorded block is played from its file, marked and highlighted, and the device's voice is silent", on["rec"] and on["word"] and on["spoken"] == 0, on)
+        pg.wait_for_timeout(5000)
+        past = pg.evaluate("(() => { const k = [...flSpeech.elements()].indexOf(document.querySelector('.ra-on')); return { k, spoken: window.__spoken.length }; })()")
+        expect(f"{RPAGE}: after the recorded blocks the unrecorded one is read by the device's voice", past["k"] >= 3 and past["spoken"] > 0, past)
+        pg.click(".ra-start")
+        expect(f"{RPAGE}: no script errors", not errs, errs[:3])
+        pg.close()
+        other = pick("fy3-6.html")
+        if other:                                    # a page without recordings asks for none (no 404 in anyone's console)
+            pg = b.new_page(viewport={"width": 1280, "height": 800}); asked = []; msgs = []
+            pg.on("request", lambda r: asked.append(r.url) if "/audio/" in r.url else None)
+            pg.on("console", lambda m: msgs.append(m.text) if m.type == "error" else None)
+            pg.goto(BASE + other); pg.wait_for_timeout(800)
+            expect(f"{other}: no recording is asked for, no console error", not asked and not msgs, asked[:2] + msgs[:2])
+            pg.close()
         b.close()
 srv.shutdown()
 print("FAIL" if fails else "PASS", f"({fails} failures)" if fails else "")
