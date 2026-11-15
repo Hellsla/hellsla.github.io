@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: fd054a287d5cf164
-SCOPE: delta added-exercise from 2040e0e2c0e5a3c7 base 81db4a6fd727
+CONTENT-HASH: da2c178e628d95c8
+SCOPE: delta added-exercise from 4c8ef47087644985 base abdc9e095e4f
+
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Round 2 change, lessons/FY4/fy4-10/figures.py ex-vt-kaarryt: `ticks_below=True` only moves the time tick labels under the plot, away from the $v = 0$ axis. I rendered the figure: A goes 0.8 → 0.2 m/s and B goes −0.4 → 0.6 m/s at 2.0 s, all still read at grid crossings, and no data point moved.
-- L2-09 recomputed: $m_\text{B} = 0.50 \cdot 0.6 / 1.0 = 0.30\,\text{kg}$. Momentum is 0.28 kg·m/s before and after, and kinetic energy drops (0.184 J → 0.064 J), so the collision is physically possible. The forgotten-sign value of 1.5 kg is right.
-- L3-06 recomputed: $v = 0.60$, $v' = 0.20\,\text{m/s}$, $m_\text{B} = 0.60\,\text{kg}$, $\Delta E_\text{k} = 0.054 - 0.018 = 0.036\,\text{J}$. The fraction $m_\text{B}/(m_\text{A}+m_\text{B}) = 2/3$ is right.
-- answers.py run: every numeric answer equals exercises.json.
-- Script comparison with content/fi: answers, units, tolerances, figure ids and every number identical.
+- Hash identical at start and end (da2c178e628d95c8).
+- Added exercise L2-10 only, judged as in a full review.
+- Default values and readings (0.50 kg, 1.00 m/s; 1.50 kg, −0.50 m/s; after: −1.25 and 0.25; −0.69 and 0.06; −0.13 m/s; 0.44 J) and the English control names (Explore 1D, Values, Kinetic Energy, More Data, Reflecting Border, Elasticity) agree with the coordinator's record; version and date stated.
+- My own collision model (momentum conservation with the restitution of the relative velocity) reproduces the readings: 100 % −1.25 and 0.25 m/s; 50 % −0.6875 and 0.0625 m/s; 0 % −0.125 m/s.
+- Recomputed: $p = -0.25\,\text{kg}\cdot\text{m/s}$ before and after; $E_\text{k} = 0.4375\,\text{J}$ before and at 100 %; from the shown values at 50 % $p' = -0.255$, $E_\text{k}' = 0.1217\,\text{J}$; at 0 % $p' = -0.26$, $E_\text{k}' = 0.0169\,\text{J}$; losses 72 % and 96 %; momentum changes $\mp 1.125\,\text{kg}\cdot\text{m/s}$.
+- The −0.26 against −0.25 is explained as display rounding with the exact −0.125 m/s: right.
+- The solution gives the method first and says the numbers depend on the student's values; the example is dated, so no moving number is the only right one.
+- Part d: third-law forces for the same time, equal and opposite impulses, condition "no external force along the track" stated; kinetic energy goes to internal energy and sound, total energy conserved. Correct, no "heat" wording.
+- Terms elastic and perfectly inelastic collision tied to 100 % and 0 %.
