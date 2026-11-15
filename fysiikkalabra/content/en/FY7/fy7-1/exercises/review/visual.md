@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7c42a154c01acd85
-SCOPE: delta added-exercise from 24b9ddd2db5cbc0a base 8f23aa7ae3bd
+CONTENT-HASH: 533fdb7793fd1128
+SCOPE: delta
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Major, outside this change, queue item 5d] formulas listed for en/fy7-1 in docs/clipped-formulas.tsv (3 rows) are known clipped at 360 px; the diff touches none of them.
+- [Minor] 1-9 statement 4 is long to read on a phone but wraps cleanly; acceptable.
 
 ## Checked
-- fy7-1-open-exercises-L2-1280-9, -10, -11, -12 (en): tasks 1-17 and 1-18 with their figures (sum-grid, incl-grid), answer fields and fully opened solutions.
-- Figures: green arrows on a 5 µT grid, axis titles and ticks in KaTeX, labels $\overline{B}_\text{h}$, $\overline{B}_\text{m}$, $\overline{B}$ legible, nothing clipped; neither figure draws the resultant, needle or angle.
-- Typography: units upright with thin space, aligned rows, no red KaTeX; the set reads as one.
+- fy7-1-open-exercises-1280-8 (task 1-9: reworded statement 4, now "south pole of the Earth's bar-magnet model"), fy7-1-open-exercises-L3-1280-2 (task 1-20: "in steel many of them stay aligned", solution consistent). Degree signs $76^\circ$ etc. read upright in the solutions; no layout damage.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

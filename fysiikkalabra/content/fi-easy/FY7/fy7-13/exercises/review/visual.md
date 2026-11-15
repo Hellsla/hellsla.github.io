@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: fcf85ef109574b6d
+CONTENT-HASH: 1bd412beb5abc8e6
 SCOPE: delta added-exercise from e43942314a516939 base 8f23aa7ae3bd
 
 ## Blocking
-- none
+
+## Outside this change (queue item 5d)
+- [Major] docs/clipped-formulas.tsv lists 21 formulas of fi-easy/fy7-13 that are clipped at 360/390 px with solutions open. These are old, outside this change, and belong to queue item 5d; not a blocker for this delta.
 
 ## Polish
-- none
+- [Minor] The Mallivastaus states the reason for each wrong option; the instructions are clear. Observation, assumption and conclusion are kept apart.
 
 ## Checked
-- Added exercises L1-09, L2-09, L2-10 (fi-easy, FY7 fy7-13): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-13.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
-- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
-- Hash identical at start and end.
+- Delta: the new choice task on measurement uncertainty (L2-1280-9: options, feedback box and Mallivastaus; Δx : x with a colon, LaTeX units) and its solution lines. 13-L1 answer line read in source.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

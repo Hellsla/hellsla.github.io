@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6c19f9aefbc31fb5
+CONTENT-HASH: 257e985767a7a94b
+SCOPE: delta
 
 ## Blocking
-- none
+
+## Outside this change (queue item 5d)
+- [Major] docs/clipped-formulas.tsv lists 4 formulas of fi-easy/fy7-11 that are clipped at 360/390 px with solutions open. These are old, outside this change, and belong to queue item 5d; not a blocker for this delta.
 
 ## Polish
-- none
+- [Minor] The long Sijoitus line of the prism solution is a chain of several short rows and reads well at 1280 px.
 
 ## Checked
-- Delta: L3-03 solution at 1280 px (open-exercises-L3-1280-4), fi-easy: Principle sentence and rainbow-width substitution blocks render and align; the Reasonableness sentence is just below the capture's edge and was not opened. figures.json change is approval metadata only.
+- Delta: L3-02 prism solution (L3-1280-2, rows aligned at =, units and degrees upright, fractions \dfrac, chain broken at meaningful points) and the surrounding 11-18 card. The changed 'Vastaus' and 'Järkevyys' lines read in source and capture.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4
