@@ -98,7 +98,7 @@ hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 \end{aligned}
 $$ and then $\lambda_\text{max} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{5.4468 \cdot 10^{-19}\,\text{J}} = 3.6470 \cdot 10^{-7}\,\text{m} = 364.70\,\text{nm}$
 **Answer:** $365\,\text{nm}$, three significant figures like the energy $13.6\,\text{eV}$.
-**Reasonableness:** The energy $3.4\,\text{eV}$ is slightly above the energy of a photon of violet light, so the wavelength is just below the visible range, near ultraviolet. Visible light with a longer wavelength does not release an electron from the shell $n = 2$.
+**Reasonableness:** The energy $3.4\,\text{eV}$ is slightly above the energy of a photon of violet light, so the wavelength is just outside the visible range, in the ultraviolet (UVA). Visible light with a longer wavelength does not release an electron from the shell $n = 2$.
 
 ## fy8-5-L3-01
 **Given:** wavelength of the photon $\lambda = 97.3\,\text{nm}$; atom in the ground state, $n = 1$; $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$

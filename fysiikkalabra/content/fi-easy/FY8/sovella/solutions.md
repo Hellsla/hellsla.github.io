@@ -61,7 +61,7 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa. Moni atomi lähettä
 **Kaava:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$ ja $Q = (m_\text{Pu} - m_\text{U} - m_\text{He})\,c^2$
 **Muunnokset:** Massavaje muutetaan energiaksi sijoittamalla $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$.
 **Sijoitus:** $m_\text{Pu} - m_\text{U} - m_\text{He} = 238{,}049560\,\text{u} - 234{,}040952\,\text{u} - 4{,}002603\,\text{u} = 0{,}006005\,\text{u}$, joten $Q = 0{,}006005 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 5{,}594\,\text{MeV}$
-**Vastaus:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$, ja yksi hajoaminen vapauttaa $Q \approx 5{,}59\,\text{MeV}$. Vastauksessa on kolme merkitsevää numeroa, koska massavajeessa $0{,}006005\,\text{u}$ on neljä.
+**Vastaus:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$, ja yksi hajoaminen vapauttaa $Q \approx 5{,}59\,\text{MeV}$. Massavajeessa $0{,}006005\,\text{u}$ ja muuntokertoimessa $931{,}5\,\tfrac{\text{MeV}}{c^2}$ on kummassakin neljä merkitsevää numeroa. Kolmen merkitsevän numeron vastaus on siis varmasti perusteltu. Jatkossa lasketaan pyöristämättömällä arvolla $5{,}594\,\text{MeV}$.
 **Järkevyys:** Alfahajoamisten energiat ovat tyypillisesti muutamia megaelektronivoltteja. Ne ovat miljoonakertaisia kemiallisiin reaktioihin verrattuna. Massa pienenee vain noin $0{,}0025\,\%$.
 
 ### b)
@@ -76,12 +76,12 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa. Moni atomi lähettä
 
 ### c)
 **Kysytty:** miksi polttoaineeksi valitaan plutonium-238 ja mikä on säteilyturvallisuuden kannalta tärkeää
-**Periaate:** Polttoaineelta vaaditaan kolmea asiaa. Ensinnäkin teho ei saa pienentyä paljon lennon aikana. Toiseksi aktiivisuuden on oltava suuri pienessä massassa. Kolmanneksi säteilyn on muututtava lämmöksi polttoaineen sisällä ilman raskasta suojaa. Aktiivisuus ytimien määrää kohti on $\lambda = \tfrac{\ln 2}{T_{1/2}}$. Se on siis kääntäen verrannollinen puoliintumisaikaan: mitä pidempi puoliintumisaika, sitä pienempi aktiivisuus.
+**Periaate:** Polttoaineelta vaaditaan kolmea asiaa. Ensinnäkin teho ei saa pienentyä paljon lennon aikana. Toiseksi aktiivisuuden on oltava suuri pienessä massassa. Kolmanneksi säteilyn on muututtava sisäenergiaksi polttoaineen sisällä ilman raskasta suojaa. Aktiivisuus ytimien määrää kohti on $\lambda = \tfrac{\ln 2}{T_{1/2}}$. Se on siis kääntäen verrannollinen puoliintumisaikaan: mitä pidempi puoliintumisaika, sitä pienempi aktiivisuus.
 **Mallivastaus:** *Polonium-210.* Puoliintumisaika $138\,\text{d}$ on lyhyt. Vuoden kuluttua tehosta on jäljellä $\left(\tfrac{1}{2}\right)^{365{,}25 / 138} \approx 0{,}16$ eli noin kuudesosa. Polonium ei sovi vuosikymmenten lentoon.
 
 *Uraani-238.* Puoliintumisaika on $4{,}47 \cdot 10^{9}\,\text{a} : 87{,}7\,\text{a} \approx 5 \cdot 10^{7}$ kertaa pidempi kuin plutonium-238:lla. Aktiivisuus ytimien määrää kohti on siksi yhtä monta kertaa pienempi. Saman tehon tuottamiseen tarvittaisiin satoja miljoonia kilogrammoja uraania.
 
-*Koboltti-60.* Puoliintumisaika on melko lyhyt. Lisäksi voimakas gammasäteily läpäisee ainetta helposti. Se vaatisi tonneittain lyijysuojaa ja vaurioittaisi mönkijän elektroniikkaa ja mittalaitteita. Plutonium-238:n alfahiukkaset taas pysähtyvät jo polttoaineeseen. Niiden energia muuttuu silloin lämmöksi siellä, missä sitä tarvitaan. Plutonium-238 on siis riittävän pitkäikäinen ja silti riittävän aktiivinen.
+*Koboltti-60.* Puoliintumisaika on melko lyhyt. Lisäksi voimakas gammasäteily läpäisee ainetta helposti. Se vaatisi tonneittain lyijysuojaa ja vaurioittaisi mönkijän elektroniikkaa ja mittalaitteita. Plutonium-238:n alfahiukkaset taas pysähtyvät jo polttoaineeseen. Niiden energia muuttuu silloin sisäenergiaksi siellä, missä lämpöä tarvitaan. Plutonium-238 on siis riittävän pitkäikäinen ja silti riittävän aktiivinen.
 
 *Säteilyturvallisuus.* Alfasäteily ei läpäise generaattorin kuorta, joten ulkoinen säteily on pientä. Plutonium on kuitenkin hyvin vaarallista, jos sitä joutuu elimistöön, esimerkiksi hengitettynä pölynä. Alfahiukkaset luovuttavat silloin koko energiansa lähellä oleville soluille. Siksi polttoaine on kestävänä keraamisena plutoniumdioksidina tiiviissä kapseleissa. Kapselit on suunniteltu kestämään räjähdys ja putoaminen laukaisuonnettomuudessa.
 
@@ -297,7 +297,7 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa. Moni atomi lähettä
   <foreignObject x="165" y="364.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(-1{,}3;\ 0)$</span></div></foreignObject>
 </svg>
 
-**Mallivastaus:** Pisteet asettuvat hyvin suoralle. Malli kuvaa siis mittausta koko välillä. Suoraa jatketaan katkoviivana $r$-akselille, jonka se leikkaa kohdassa $r = -1{,}3\,\text{cm}$. Leikkauskohdan voi myös laskea suoran kahdesta kaukaisesta pisteestä $(-1{,}3\,\text{cm};\ 0)$ ja $(20{,}0\,\text{cm};\ 12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}})$. Siten $d \approx 1{,}3\,\text{cm}$. Putken tehollinen havaintokohta on siis noin senttimetrin ikkunan takana. Tämä sopii GM-putken rakenteeseen. Silmällä sovitetuista suorista saadaan tyypillisesti $d = 1{,}0$–$1{,}6\,\text{cm}$. Suoran kulmakerroin on $k = \dfrac{12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}} - 0}{20{,}0\,\text{cm} - (-1{,}3\,\text{cm})} = 5{,}63 \cdot 10^{-3}\,\tfrac{\sqrt{\text{min}}}{\text{cm}}$, josta $K = \dfrac{1}{k^2} = 3{,}15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$.
+**Mallivastaus:** Pisteet asettuvat hyvin suoralle. Malli kuvaa siis mittausta koko välillä. Suoraa jatketaan katkoviivana $r$-akselille, jonka se leikkaa kohdassa $r = -1{,}3\,\text{cm}$. Leikkauskohdan voi myös laskea kahdesta suoralta mittausalueelta luetusta pisteestä $(2{,}0\,\text{cm};\ 1{,}86 \cdot 10^{-2}\,\sqrt{\text{min}})$ ja $(20{,}0\,\text{cm};\ 12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}})$: suora on nollassa kohdassa $r = 2{,}0\,\text{cm} - \dfrac{1{,}86 \cdot 10^{-2}\,\sqrt{\text{min}}}{k} = -1{,}3\,\text{cm}$, kun $k$ on alla laskettu kulmakerroin. Siten $d \approx 1{,}3\,\text{cm}$. Putken tehollinen havaintokohta on siis noin senttimetrin ikkunan takana. Tämä sopii GM-putken rakenteeseen. Silmällä sovitetuista suorista saadaan tyypillisesti $d = 1{,}0$–$1{,}6\,\text{cm}$. Suoran kulmakerroin on $k = \dfrac{(12{,}0 - 1{,}86) \cdot 10^{-2}\,\sqrt{\text{min}}}{20{,}0\,\text{cm} - 2{,}0\,\text{cm}} = 5{,}63 \cdot 10^{-3}\,\tfrac{\sqrt{\text{min}}}{\text{cm}}$, josta $K = \dfrac{1}{k^2} = 3{,}15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$.
 
 ### c)
 **Kysytty:** $2{,}0\,\text{cm}$:n ja $20\,\text{cm}$:n nettopulssitaajuuksien epävarmuus, epävarmempi piste ja parannukset
@@ -400,7 +400,7 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa. Moni atomi lähettä
 
 *Käynnistyminen.* Kun pohjavettä tunkeutui malmiin, se hidasti fissiossa syntyvät nopeat neutronit. Hitaat neutronit aiheuttivat uusia uraani-235:n fissioita. Kun kasvukerroin nousi ykköseen, ketjureaktio käynnistyi.
 
-*Sammuminen.* Fissioiden energia muuttui lämmöksi, ja malmi kuumeni niin, että vesi kiehui pois. Ilman hidastinta neutronit pysyivät nopeina. Kasvukerroin putosi alle ykkösen, ja ketjureaktio sammui. Kun malmi jäähtyi, vettä virtasi takaisin ja reaktio käynnistyi uudelleen. Tämä selittää havaitut jaksot: noin puoli tuntia toimintaa ja parin tunnin tauko. Reaktori säätyi siis itse. Kevytvesireaktorissa tapahtuu samaa: kiehuminen heikentää veden kykyä hidastaa neutroneja.
+*Sammuminen.* Fissioiden energia muuttui malmin sisäenergiaksi, ja malmi kuumeni niin, että vesi kiehui pois. Ilman hidastinta neutronit pysyivät nopeina. Kasvukerroin putosi alle ykkösen, ja ketjureaktio sammui. Kun malmi jäähtyi, vettä virtasi takaisin ja reaktio käynnistyi uudelleen. Tämä selittää havaitut jaksot: noin puoli tuntia toimintaa ja parin tunnin tauko. Reaktori säätyi siis itse. Kevytvesireaktorissa tapahtuu samaa: kiehuminen heikentää veden kykyä hidastaa neutroneja.
 
 ### c)
 **Annettu:** Oklon teho $P_\text{O} = 100\,\text{kW}$, aika $t_\text{O} = 150\,000\,\text{a}$ ja Olkiluoto 3:n lämpöteho $P_\text{OL3} = 4300\,\text{MW}$

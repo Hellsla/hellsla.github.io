@@ -372,7 +372,7 @@ $$ sekunnissa. Punaisen lähteen $8{,}0\,\text{mW}$ vastaa $2{,}5 \cdot 10^{16}$
 \end{aligned}
 $$
 **Vastaus:** $\lambda_0 \approx 387\,\text{nm}$, kolme merkitsevää numeroa kuten irrotustyössä $3{,}20\,\text{eV}$. Irrotustyö $3{,}20\,\text{eV}$ on MAFY-taulukon *Irrotustöitä* arvo kalsiumille; taulukkojen painosten arvot voivat poiketa hieman, ja vastaus hyväksytään noin $\pm 5\,\%$ tarkkuudella.
-**Järkevyys:** Pikaarvio: $$
+**Järkevyys:** Pika-arvio: $$
 \begin{aligned}
 1240\,\text{eV}\,\text{nm} : 3{,}20\,\text{eV} &\approx 388\,\text{nm}
 \end{aligned}
@@ -397,7 +397,7 @@ $$. Raja-aallonpituus on juuri violetin näkyvän valon rajan, noin $400\,\text{
 **Kaava:** $c = f_0 \lambda_0$, joten $\lambda_0 = \dfrac{c}{f_0}$
 **Muunnokset:** $f_0 = 7{,}0 \cdot 10^{14}\,\text{Hz}$ on jo hertseinä; tulos metreinä muunnetaan nanometreiksi: $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $\lambda_0 = \dfrac{2{,}998 \cdot 10^8\,\tfrac{\text{m}}{\text{s}}}{7{,}0 \cdot 10^{14}\,\tfrac{1}{\text{s}}} = 4{,}283 \cdot 10^{-7}\,\text{m} = 428\,\text{nm}$
-**Vastaus:** $\lambda_0 \approx 428\,\text{nm}$, kolme merkitsevää numeroa; luettu taajuus on kahden merkitsevän numeron tarkkuudella, joten tulos on tarkka noin $\pm 1\,\%$.
+**Vastaus:** $\lambda_0 \approx 4{,}3 \cdot 10^{2}\,\text{nm}$ (laskettu arvo $428\,\text{nm}$). Kaksi merkitsevää numeroa, koska kuvaajasta luettu taajuus $7{,}0 \cdot 10^{14}\,\text{Hz}$ on kahden merkitsevän numeron tarkkuudella.
 **Järkevyys:** Raja-aallonpituus on violetin valon alueella, ja sitä vastaava fotonin energia on $$
 \begin{aligned}
 1240\,\text{eV}\,\text{nm} : 428\,\text{nm} &\approx 2{,}9\,\text{eV}

@@ -84,7 +84,7 @@ $$
 ## fy8-7-L2-01
 **Annettu:** pumppausvalon aallonpituus $\lambda_\text{p} = 808\,\text{nm}$, laservalon aallonpituus $\lambda_\text{L} = 1064\,\text{nm}$. Yksi pumppausfotoni tuottaa enintään yhden laserfotonin.
 **Kysytty:** suurin osuus $\eta$ pumppausfotonin energiasta, joka päätyy laserfotonin energiaksi, prosentteina
-**Periaate:** Yksi pumppausfotoni tuottaa yhden laserfotonin. Laserfotoniin päätyy vain osa pumppausfotonin energiasta, ja loput jää aineeseen lämmöksi. Fotonin energia on $\tfrac{hc}{\lambda}$. Siksi osuus on fotonien energioiden suhde.
+**Periaate:** Yksi pumppausfotoni tuottaa yhden laserfotonin. Laserfotoniin päätyy vain osa pumppausfotonin energiasta, ja loput jää aineeseen sisäenergiaksi. Fotonin energia on $\tfrac{hc}{\lambda}$. Siksi osuus on fotonien energioiden suhde.
 **Kaava:** $\eta = \dfrac{hc / \lambda_\text{L}}{hc / \lambda_\text{p}}$, josta $\eta = \dfrac{\lambda_\text{p}}{\lambda_\text{L}}$
 **Muunnokset:** Ei tarvita. Aallonpituudet ovat samassa yksikössä, ja $hc$ supistuu pois. Lopuksi osuus muunnetaan prosenteiksi kertomalla luvulla $100\,\%$.
 **Sijoitus:** $\eta = \dfrac{808\,\text{nm}}{1064\,\text{nm}} = 0{,}75940 = 75{,}940\,\%$
@@ -104,7 +104,7 @@ $$
 ## fy8-7-L2-03
 **Annettu:** isomman pisteen valon aallonpituus $\lambda_\text{iso} = 620\,\text{nm}$, pienemmän pisteen fotonin energia on $\Delta E = 0{,}35\,\text{eV}$ suurempi, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** pienemmän pisteen valon aallonpituus $\lambda$ nanometreinä
-**Periaate:** Fotonin energia on $\tfrac{hc}{\lambda}$. Lasketaan ensin isomman pisteen fotonin energia. Siihen lisätään $0{,}35\,\text{eV}$, ja uudesta energiasta lasketaan aallonpituus. Pienemmän pisteen energiarako on suurempi, joten sen fotonin energia on suurempi.
+**Periaate:** Fotonin energia on $\tfrac{hc}{\lambda}$. Lasketaan ensin isomman pisteen fotonin energia. Siihen lisätään $0{,}35\,\text{eV}$, ja uudesta energiasta lasketaan aallonpituus. Pienemmän pisteen energia-aukko on suurempi, joten sen fotonin energia on suurempi.
 **Kaava:** $E_\text{iso} = \dfrac{hc}{\lambda_\text{iso}}$ ja $\dfrac{hc}{\lambda} = E_\text{iso} + \Delta E$, josta $\lambda = \dfrac{hc}{E_\text{iso} + \Delta E}$
 **Muunnokset:** $\lambda_\text{iso} = 620\,\text{nm} = 620 \cdot 10^{-9}\,\text{m}$. Energiat muunnetaan elektronivolteista jouleiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Sijoitus:** $E_\text{iso} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{620 \cdot 10^{-9}\,\text{m}} = 3{,}2040 \cdot 10^{-19}\,\text{J} = 2{,}0000\,\text{eV}$. $$
@@ -148,7 +148,7 @@ $$. $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{3{,}7647 \cdo
 **Muunnokset:** $\lambda_\text{p} = 808\,\text{nm} = 808 \cdot 10^{-9}\,\text{m}$. Teho on valmiiksi watteina.
 **Sijoitus:** $\dfrac{N_\text{v}}{t} = \dfrac{1{,}0\,\text{W} \cdot 808 \cdot 10^{-9}\,\text{m}}{2 \cdot 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}} = \dfrac{4{,}0675 \cdot 10^{18}}{2}\,\tfrac{1}{\text{s}} = 2{,}0338 \cdot 10^{18}\,\tfrac{1}{\text{s}}$
 **Vastaus:** $2{,}0 \cdot 10^{18}$ vihreää fotonia sekunnissa. Vastauksessa on kaksi merkitsevää numeroa, kuten tehossa $1{,}0\,\text{W}$.
-**Järkevyys:** Vihreiden fotonien kokonaisteho olisi enintään $2{,}0 \cdot 10^{18}\,\tfrac{1}{\text{s}} \cdot \tfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{532 \cdot 10^{-9}\,\text{m}} \approx 0{,}76\,\text{W}$. Se on vähemmän kuin pumppausteho $1{,}0\,\text{W}$, kuten energian säilymisen mukaan pitääkin. Todellisen laserosoittimen vihreä teho on vain milliwatteja, koska muunnokset ovat paljon tätä ihannetapausta heikompia.
+**Järkevyys:** Vihreiden fotonien kokonaisteho olisi enintään $2{,}0 \cdot 10^{18}\,\tfrac{1}{\text{s}} \cdot \tfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{532 \cdot 10^{-9}\,\text{m}} \approx 0{,}75\,\text{W}$. Se on vähemmän kuin pumppausteho $1{,}0\,\text{W}$, kuten energian säilymisen mukaan pitääkin. Todellisen laserosoittimen vihreä teho on vain milliwatteja, koska muunnokset ovat paljon tätä ihannetapausta heikompia.
 
 ## fy8-7-L3-03
 **Annettu:** kubitin tilojen energiaeroa vastaavan fotonin taajuus $f_\text{q} = 5{,}0\,\text{GHz}$, punaisen valon aallonpituus $\lambda = 650\,\text{nm}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
@@ -188,7 +188,7 @@ $$ ja $P\lambda = 5{,}0 \cdot 10^{-3}\,\text{W} \cdot 532 \cdot 10^{-9}\,\text{m
 
 ## fy8-7-L1-09
 **Kysytty:** mitkä viidestä väitteestä laserista ja kvanttipisteistä A ja B ovat tosia.
-**Periaate:** Fotonin energia riippuu vain aallonpituudesta, $hf = \tfrac{hc}{\lambda}$. Sillä ei ole väliä, millainen valonlähde fotonin lähettää. Laservalo syntyy stimuloidussa emissiossa. Se vaatii populaatioinversion $N_2 > N_1$. Inversio saadaan pumppaamalla aineeseen, jossa on ainakin kolme tasoa. Kvanttipisteessä energiarako kasvaa, kun piste pienenee.
+**Periaate:** Fotonin energia riippuu vain aallonpituudesta, $hf = \tfrac{hc}{\lambda}$. Sillä ei ole väliä, millainen valonlähde fotonin lähettää. Laservalo syntyy stimuloidussa emissiossa. Se vaatii populaatioinversion $N_2 > N_1$. Atomi- ja ionilasereissa inversio saadaan pumppaamalla aineeseen, jossa on ainakin kolme energiatasoa. Kvanttipisteessä energia-aukko kasvaa, kun piste pienenee.
 **Mallivastaus:** Kummankin valonlähteen $650\,\text{nm}$:n fotonin energia on
 
 $hf = \dfrac{hc}{\lambda}$
@@ -217,14 +217,14 @@ $$\begin{aligned}
 
 3 epätosi: kahden tason mallissa pumppausvalo aiheuttaa ylätilan atomeissa stimuloitua emissiota yhtä todennäköisesti kuin virittää perustilan atomeja. Ylätilaan saadaan siis enintään puolet atomeista. Atomi- ja ionilasereissa populaatioinversio tehdään pumppaamalla aineeseen, jossa on kolme tai neljä tasoa ja pitkäikäinen ylempi lasertaso.
 
-4 epätosi: piste A on pienempi, joten sen energiarako on suurempi ja fotonin energia on suurempi. Piste A lähettää siis lyhyemmän aallonpituuden valoa kuin piste B.
+4 epätosi: piste A on pienempi, joten sen energia-aukko on suurempi ja fotonin energia on suurempi. Piste A lähettää siis lyhyemmän aallonpituuden valoa kuin piste B.
 
 5 tosi: akselin suuntainen valo kulkee peilien välissä aineen läpi monta kertaa ja vahvistuu. Osittain läpäisevän peilin läpi tulee ulos säde. Sivulle lähtevät fotonit poistuvat aineesta eivätkä ehdi monistua.
 
 ## fy8-7-L2-05
 **Annettu:** kvanttipisteiden halkaisijat $d = 2{,}0$; $3{,}0$; $4{,}0$; $5{,}0$ ja $6{,}0\,\text{nm}$ ja niiden valon aallonpituudet $\lambda = 486$; $529$; $573$; $601$ ja $617\,\text{nm}$ (taulukko), $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
-**Kysytty:** energiarakojen erotus $\Delta E$ pienimmän ja suurimman pisteen välillä elektronivoltteina
-**Periaate:** Fotonin energia on yhtä suuri kuin pisteen energiarako. Silloin rako saadaan aallonpituudesta kaavalla $E = \tfrac{hc}{\lambda}$. Lasketaan rako jokaiselle pisteelle ja verrataan sitä pisteen kokoon.
+**Kysytty:** energia-aukkojen erotus $\Delta E$ pienimmän ja suurimman pisteen välillä elektronivoltteina
+**Periaate:** Fotonin energia on yhtä suuri kuin pisteen energia-aukko. Silloin rako saadaan aallonpituudesta kaavalla $E = \tfrac{hc}{\lambda}$. Lasketaan rako jokaiselle pisteelle ja verrataan sitä pisteen kokoon.
 **Kuvaajan lukeminen:** Taulukosta: halkaisija $2{,}0\,\text{nm}$ vastaa aallonpituutta $486\,\text{nm}$. Halkaisija $6{,}0\,\text{nm}$ vastaa aallonpituutta $617\,\text{nm}$. Kun halkaisija kasvaa, aallonpituus kasvaa joka välillä.
 **Kaava:** $E = \dfrac{hc}{\lambda}$ ja $\Delta E = E_{2{,}0\,\text{nm}} - E_{6{,}0\,\text{nm}}$
 **Muunnokset:** $\lambda = 486 \cdot 10^{-9}\,\text{m}$ ja niin edelleen. Joulet muunnetaan elektronivolteiksi sijoittamalla $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
@@ -234,7 +234,7 @@ hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
 &= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
-$$. Pisteen $2{,}0\,\text{nm}$ fotonin energia on $\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{486 \cdot 10^{-9}\,\text{m}} = 4{,}0875 \cdot 10^{-19}\,\text{J} = 2{,}551\,\text{eV}$. Samalla tavalla pisteille $3{,}0$; $4{,}0$; $5{,}0$ ja $6{,}0\,\text{nm}$ saadaan $2{,}344\,\text{eV}$, $2{,}164\,\text{eV}$, $2{,}063\,\text{eV}$ ja $2{,}010\,\text{eV}$. b) Energiarako pienenee, kun piste kasvaa. Mitä pienempi piste, sitä suurempi rako. Muutos hidastuu koon kasvaessa. Välillä $2{,}0 \to 3{,}0\,\text{nm}$ rako pienenee $0{,}207\,\text{eV}$. Välillä $5{,}0 \to 6{,}0\,\text{nm}$ se pienenee vain $0{,}053\,\text{eV}$. Energiarako ei siis ole suoraan verrannollinen pisteen kokoon, eikä riippuvuus ole lineaarinen. c) $\Delta E = 2{,}5514\,\text{eV} - 2{,}0097\,\text{eV} = 0{,}5417\,\text{eV}$
+$$. Pisteen $2{,}0\,\text{nm}$ fotonin energia on $\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{486 \cdot 10^{-9}\,\text{m}} = 4{,}0875 \cdot 10^{-19}\,\text{J} = 2{,}551\,\text{eV}$. Samalla tavalla pisteille $3{,}0$; $4{,}0$; $5{,}0$ ja $6{,}0\,\text{nm}$ saadaan $2{,}344\,\text{eV}$, $2{,}164\,\text{eV}$, $2{,}063\,\text{eV}$ ja $2{,}010\,\text{eV}$. b) Energia-aukko pienenee, kun piste kasvaa. Mitä pienempi piste, sitä suurempi rako. Muutos hidastuu koon kasvaessa. Välillä $2{,}0 \to 3{,}0\,\text{nm}$ rako pienenee $0{,}207\,\text{eV}$. Välillä $5{,}0 \to 6{,}0\,\text{nm}$ se pienenee vain $0{,}053\,\text{eV}$. Energia-aukko ei siis ole suoraan verrannollinen pisteen kokoon, eikä riippuvuus ole lineaarinen. c) $\Delta E = 2{,}5514\,\text{eV} - 2{,}0097\,\text{eV} = 0{,}5417\,\text{eV}$
 **Vastaus:** $0{,}54\,\text{eV}$. Aallonpituudet on annettu kolmella merkitsevällä numerolla. Erotus ilmoitetaan sadasosien tarkkuudella.
 **Järkevyys:** Pienin piste lähettää lyhyintä aallonpituutta, $486\,\text{nm}$. Suurin piste lähettää pisintä, $617\,\text{nm}$. Näin kvanttipisteillä kuuluu olla. Erotus $0{,}54\,\text{eV}$ on noin $27\,\%$ suurimman pisteen raosta $2{,}01\,\text{eV}$. Pienimmän pisteen aallonpituus on $\tfrac{486}{617} = 79\,\%$ suurimman aallonpituudesta. Nämä sopivat yhteen.
 
@@ -257,7 +257,7 @@ $$. Pisteen $2{,}0\,\text{nm}$ fotonin energia on $\dfrac{1{,}9865 \cdot 10^{-25
 ## fy8-7-L3-04
 **Annettu:** pumppausvalon aallonpituus $\lambda_\text{p} = 976\,\text{nm}$ ja teho $P_\text{p} = 20{,}0\,\text{W}$, laservalon aallonpituus $\lambda_\text{L} = 1070\,\text{nm}$ ja teho $P_\text{L} = 15{,}0\,\text{W}$, kaikki pumppausvalo absorboituu, loput energiasta on lämpöä, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
 **Kysytty:** kvanttihyötysuhde $\eta_\text{q} = \tfrac{N_\text{L}}{N_\text{p}}$ prosentteina
-**Periaate:** Teho on fotonien määrä sekunnissa kerrottuna fotonin energialla $\tfrac{hc}{\lambda}$. Siksi fotonien määrät saadaan tehoista. Energia säilyy, joten lämpöteho on pumppausteho miinus lasertehon. Lämpöä syntyy kahdesta syystä. Laserfotonin energia on pienempi kuin pumppausfotonin energia. Lisäksi osa pumppausfotoneista ei tuota laserfotonia.
+**Periaate:** Teho on fotonien määrä sekunnissa kerrottuna fotonin energialla $\tfrac{hc}{\lambda}$. Siksi fotonien määrät saadaan tehoista. Energia säilyy, joten lämpöteho on pumppausteho miinus laserteho. Lämpöä syntyy kahdesta syystä. Laserfotonin energia on pienempi kuin pumppausfotonin energia. Lisäksi osa pumppausfotoneista ei tuota laserfotonia.
 **Kaava:** $\dfrac{N}{t} = \dfrac{P\lambda}{hc}$, joten $\eta_\text{q} = \dfrac{P_\text{L}\lambda_\text{L}}{P_\text{p}\lambda_\text{p}}$, lämpöteho $P_\text{lämpö} = P_\text{p} - P_\text{L}$ ja pakollinen osa $P_\text{pak} = \dfrac{N_\text{L}}{t}\left(\dfrac{hc}{\lambda_\text{p}} - \dfrac{hc}{\lambda_\text{L}}\right)$
 **Muunnokset:** $\lambda_\text{p} = 976 \cdot 10^{-9}\,\text{m}$ ja $\lambda_\text{L} = 1070 \cdot 10^{-9}\,\text{m}$. Tehot ovat valmiiksi watteina.
 **Sijoitus:**
@@ -280,7 +280,7 @@ P_\text{pak} &= 8{,}080 \cdot 10^{19}\,\tfrac{1}{\text{s}} \\
 \end{aligned}
 $$ eli noin $29\,\%$ lämpötehosta.
 
-d) Energiahyötysuhde on $\tfrac{15{,}0\,\text{W}}{20{,}0\,\text{W}} = 0{,}750 = 75{,}0\,\%$. Se on pienempi kuin $\eta_\text{q} = 82{,}2\,\%$. Syy on, että jokaisen laserfotonin energia on pienempi kuin pumppausfotonin. Energiahyötysuhde on $\eta_\text{q}$ kerrottuna fotonien energioiden suhteella $\tfrac{976}{1070} = 0{,}912$, ja $0{,}8222 \cdot 0{,}912 = 0{,}750$. Pumppausfotonin ja laserfotonin energioiden erotus jää aineeseen lämmöksi. Näin käy, vaikka jokainen pumppausfotoni tuottaisi laserfotonin.
+d) Energiahyötysuhde on $\tfrac{15{,}0\,\text{W}}{20{,}0\,\text{W}} = 0{,}750 = 75{,}0\,\%$. Se on pienempi kuin $\eta_\text{q} = 82{,}2\,\%$. Syy on, että jokaisen laserfotonin energia on pienempi kuin pumppausfotonin. Energiahyötysuhde on $\eta_\text{q}$ kerrottuna fotonien energioiden suhteella $\tfrac{976}{1070} = 0{,}912$, ja $0{,}8222 \cdot 0{,}912 = 0{,}750$. Pumppausfotonin ja laserfotonin energioiden erotus jää aineeseen sisäenergiaksi. Näin käy, vaikka jokainen pumppausfotoni tuottaisi laserfotonin.
 
 **Vastaus:** $82{,}2\,\%$. Vastauksessa on kolme merkitsevää numeroa, kuten tehossa $20{,}0\,\text{W}$. Lämpöteho $5{,}0\,\text{W}$ ja sen pakollinen osa $1{,}4\,\text{W}$ eivät kuulu vastauslaatikkoon.
 **Järkevyys:** Kvanttihyötysuhde on alle $100\,\%$, koska laserfotoneja ei synny enempää kuin pumppausfotoneja. Energiahyötysuhteen yläraja on $\tfrac{976}{1070} = 91{,}2\,\%$. Todellinen $75{,}0\,\%$ on sen alla, kuten pitää. Pakollinen lämpö $1{,}44\,\text{W}$ on pienempi kuin koko lämpöteho $5{,}0\,\text{W}$, kuten pitää.

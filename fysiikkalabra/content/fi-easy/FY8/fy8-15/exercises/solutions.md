@@ -169,7 +169,7 @@ Kyllä-rivejä on yhteensä $N = 5$ kappaletta.
 **Muunnokset:** Ei tarvita, koska luvuilla ei ole yksikköä.
 **Sijoitus:** (1) $L$: $0 = 0 + 1 - 1$, sallittu. (2) kaikki luvut $0$ molemmin puolin, sallittu. (3) $L$: $0 \ne 0 + 1$, kielletty. (4) $q$: $+1 - 1 = 0$, $B$: $1 = 1$ ja $L$: $0 + 1 = 0 + 1$, sallittu. (5) $q$: $+1 + 0 = 1 \ne 2$, kielletty. (6) $q$: $-1 = -1$ ja $L$: $0 = 1 - 1$, sallittu. (7) $B$: $1 + 1 = 2 \ne 0$, kielletty. Kiellettyjä on $N = 3$.
 **Vastaus:** $3$ reaktiota (3, 5 ja 7). Tulos on tarkka kokonaisluku.
-**Järkevyys:** Jokainen kielletty reaktio rikkoo eri lakia: reaktio 3 leptolukua, reaktio 5 varausta ja reaktio 7 baryolukua. Säilymislakien puolesta sallittuja on $7 - 3 = 4$. Säilymislait ovat välttämättömiä ehtoja, ja reaktion pitää lisäksi olla energian puolesta mahdollinen. Reaktio 1 on neutronin beetahajoaminen ja reaktio 2 protonin ja antiprotonin annihilaatio. Ne tunnetaan.
+**Järkevyys:** Jokainen kielletty reaktio rikkoo eri lakia: reaktio 3 leptonilukua, reaktio 5 varausta ja reaktio 7 baryonilukua. Säilymislakien puolesta sallittuja on $7 - 3 = 4$. Säilymislait ovat välttämättömiä ehtoja, ja reaktion pitää lisäksi olla energian puolesta mahdollinen. Reaktio 1 on neutronin beetahajoaminen ja reaktio 2 protonin ja antiprotonin annihilaatio. Ne tunnetaan.
 
 ## fy8-15-L2-07
 **Kysytty:** mikä opiskelijan väitteessä ”vapaa neutroni on hajoamaton, koska se on perushiukkanen” on virheellistä.

@@ -356,7 +356,7 @@
         },
         {
           "text": "Valo muuttuu sinisemmäksi, koska elektronit saavat enemmän energiaa.",
-          "feedback": "Fotonin energia on likimain energia-aukon suuruinen, eikä energia-aukko muutu jännitteen mukana. Ylimääräinen energia muuttuu LEDissä lämmöksi, ja väri pysyy punaisena."
+          "feedback": "Fotonin energia on likimain energia-aukon suuruinen, eikä energia-aukko muutu jännitteen mukana. Ylimääräinen energia muuttuu LEDissä sisäenergiaksi, ja väri pysyy punaisena."
         },
         {
           "text": "Mikään ei muutu, koska LED on jo syttynyt.",

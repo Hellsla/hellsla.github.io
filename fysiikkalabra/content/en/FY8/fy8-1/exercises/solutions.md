@@ -397,7 +397,7 @@ $$. The threshold wavelength is just below the violet edge of visible light, abo
 **Formula:** $c = f_0 \lambda_0$, so $\lambda_0 = \dfrac{c}{f_0}$
 **Conversions:** $f_0 = 7.0 \cdot 10^{14}\,\text{Hz}$ is already in hertz; the result in metres is converted to nanometres: $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** $\lambda_0 = \dfrac{2.998 \cdot 10^8\,\tfrac{\text{m}}{\text{s}}}{7.0 \cdot 10^{14}\,\tfrac{1}{\text{s}}} = 4.283 \cdot 10^{-7}\,\text{m} = 428\,\text{nm}$
-**Answer:** $\lambda_0 \approx 428\,\text{nm}$, three significant figures; the frequency was read to two, so the result is accurate to about $\pm 1\,\%$.
+**Answer:** $\lambda_0 \approx 4.3 \cdot 10^{2}\,\text{nm}$ (calculated value $428\,\text{nm}$). Two significant figures, because the frequency $7.0 \cdot 10^{14}\,\text{Hz}$ read from the graph has two.
 **Reasonableness:** The threshold wavelength is in the violet region, and the photon energy there is $$
 \begin{aligned}
 1240\,\text{eV}\,\text{nm} : 428\,\text{nm} &\approx 2.9\,\text{eV}

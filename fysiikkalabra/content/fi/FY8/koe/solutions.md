@@ -278,7 +278,7 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 **Muunnokset:** Aika pysyy minuutteina, koska $\lambda$ ja $t$ ovat samassa yksikössä.
 **Sijoitus:** $\lambda = \dfrac{0{,}693}{3{,}2\,\text{min}} \approx 0{,}217\,\text{min}^{-1}$. Eksponentti on $\lambda t = 0{,}217\,\text{min}^{-1} \cdot 15\,\text{min} = 3{,}25$, joten $N = 800 \cdot e^{-3{,}25}$ $\approx 800 \cdot 0{,}0386$ $\approx 31$
 **Vastaus:** Hajoamisvakio on noin $0{,}22\,\text{min}^{-1}$, ja $30\,\text{s}$:n aikana rekisteröidään noin $31$ pulssia.
-**Järkevyys:** $15\,\text{min}$ on noin $4{,}7$ puoliintumisaikaa, joten jäljelle jää $2^{-4{,}7} \approx 0{,}039$ eli noin $4\,\%$ alkuarvosta; $0{,}04 \cdot 800 \approx 31$.
+**Järkevyys:** $15\,\text{min}$ on noin $4{,}7$ puoliintumisaikaa, joten jäljelle jää $2^{-4{,}7} \approx 0{,}039$ eli noin $4\,\%$ alkuarvosta; $0{,}04 \cdot 800 = 32$.
 
 ### d)
 **Annettu:** $N = 803$
@@ -472,7 +472,7 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
   <foreignObject x="136" y="49" width="94" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:20px"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(0;\ 4{,}78)$</span></div></foreignObject>
 </svg>
 
-**Mallivastaus:** Jos vaimeneminen on eksponentiaalista, $R = R_0 e^{-\mu d}$, niin $\ln R = \ln R_0 - \mu d$, joten $\ln R$ on suoraan verrannollinen paksuuteen $d$. Pisteet asettuvat suoralle, ja pienet poikkeamat ovat satunnaisia. Pulssinopeus vaimenee eksponentiaalisesti lyijyn paksuuden kasvaessa.
+**Mallivastaus:** Jos vaimeneminen on eksponentiaalista, $R = R_0 e^{-\mu d}$, niin $\ln R = \ln R_0 - \mu d$, joten $\ln R$ riippuu paksuudesta $d$ lineaarisesti: kuvaaja on laskeva suora, jonka kulmakerroin on $-\mu$. Pisteet asettuvat suoralle, ja pienet poikkeamat ovat satunnaisia. Pulssinopeus vaimenee eksponentiaalisesti lyijyn paksuuden kasvaessa.
 
 ### c)
 **Annettu:** b-kohdan suora
@@ -541,7 +541,7 @@ Vaihtoehto $2{,}3 \cdot 10^{-19}\,\text{J}$ syntyy, kun elektronivolteissa saatu
 ### c)
 **Annettu:** $m_\text{e} = 9{,}109 \cdot 10^{-31}\,\text{kg}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$
 **Kysytty:** miksi kaksi fotonia, yhden fotonin energia ja aallonpituus
-**Periaate:** Liikemäärän säilymisen mukaan lähes levossa olevan hiukkaspareen kokonaisliikemäärä on nolla, ja syntyvien fotonien kokonaisliikemäärän täytyy olla nolla. Yksi fotoni ei voi täyttää ehtoa, koska sillä on aina liikemäärä, joten fotoneja on kaksi ja ne lähtevät vastakkaisiin suuntiin. Energian säilymisen mukaan hiukkasten lepoenergia $2m_\text{e}c^2$ jakautuu kahdelle yhtä suurelle fotonille.
+**Periaate:** Liikemäärän säilymisen mukaan lähes levossa olevan hiukkasparin kokonaisliikemäärä on nolla, ja syntyvien fotonien kokonaisliikemäärän täytyy olla nolla. Yksi fotoni ei voi täyttää ehtoa, koska sillä on aina liikemäärä, joten fotoneja on kaksi ja ne lähtevät vastakkaisiin suuntiin. Energian säilymisen mukaan hiukkasten lepoenergia $2m_\text{e}c^2$ jakautuu kahdelle yhtä suurelle fotonille.
 **Kaava:** $E = m_\text{e}c^2$ ja $\lambda = \dfrac{hc}{E}$
 **Muunnokset:** $1\,\text{keV} = 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Sijoitus:** Ensin $c^2 = (2{,}998 \cdot 10^{8}\,\text{m/s})^2$ $= 8{,}988 \cdot 10^{16}\,\text{m}^2/\text{s}^2$. Sitten $E = m_\text{e}c^2$ $= 9{,}109 \cdot 10^{-31}\,\text{kg}$ $\cdot\ 8{,}988 \cdot 10^{16}\,\text{m}^2/\text{s}^2$ $= 8{,}187 \cdot 10^{-14}\,\text{J}$, ja $E = \dfrac{8{,}187 \cdot 10^{-14}\,\text{J}}{1{,}602 \cdot 10^{-16}\,\text{J/keV}}$ $\approx 511\,\text{keV}$. Aallonpituudelle: $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ $\cdot\ 2{,}998 \cdot 10^{8}\,\text{m/s}$ $= 1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}$. Sitten $\lambda = \dfrac{hc}{E}$ $= \dfrac{1{,}986 \cdot 10^{-25}\,\text{J}\,\text{m}}{8{,}187 \cdot 10^{-14}\,\text{J}}$ $\approx 2{,}43 \cdot 10^{-12}\,\text{m}$

@@ -140,13 +140,13 @@ $$
 
 ## fy8-6-L2-04
 **Annettu:** sinisen fotonin aallonpituus $\lambda_1 = 450\,\text{nm}$, keltaisen fotonin aallonpituus $\lambda_2 = 560\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
-**Kysytty:** lämmöksi jäävä energia $\Delta E$ yhtä fotonia kohti elektronivoltteina
-**Periaate:** Fluoresenssissa (luku *Spektrit paljastavat atomin energiatasot*) aine absorboi fotonin ja säteilee pienempienergisen fotonin. Energia säilyy, joten absorboidun ja säteillyn fotonin energioiden erotus jää loisteaineeseen lämmöksi.
+**Kysytty:** sisäenergiaksi jäävä energia $\Delta E$ yhtä fotonia kohti elektronivoltteina
+**Periaate:** Fluoresenssissa (luku *Spektrit paljastavat atomin energiatasot*) aine absorboi fotonin ja säteilee pienempienergisen fotonin. Energia säilyy, joten absorboidun ja säteillyn fotonin energioiden erotus jää loisteaineeseen sisäenergiaksi.
 **Kaava:** $\Delta E = \dfrac{hc}{\lambda_1} - \dfrac{hc}{\lambda_2}$
 **Muunnokset:** $\lambda_1 = 450 \cdot 10^{-9}\,\text{m}$, $\lambda_2 = 560 \cdot 10^{-9}\,\text{m}$; energiat jouleista elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Sijoitus:** $\dfrac{hc}{\lambda_1} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{450 \cdot 10^{-9}\,\text{m}} = 4{,}4144 \cdot 10^{-19}\,\text{J} = 2{,}7556\,\text{eV}$ ja $\dfrac{hc}{\lambda_2} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{560 \cdot 10^{-9}\,\text{m}} = 3{,}5473 \cdot 10^{-19}\,\text{J} = 2{,}2143\,\text{eV}$, joten $\Delta E = 2{,}7556\,\text{eV} - 2{,}2143\,\text{eV} = 0{,}5413\,\text{eV}$
 **Vastaus:** $0{,}541\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituuksissa.
-**Järkevyys:** Pyöreillä luvuilla $1240 : 450 - 1240 : 560 \approx 2{,}76 - 2{,}21 = 0{,}55$, eli noin $0{,}5\,\text{eV}$. Säteilty fotoni on pidempiaaltoinen kuin absorboitu, joten erotuksen on oltava positiivinen, kuten fluoresenssissa aina. Noin viidennes sinisen fotonin energiasta muuttuu lämmöksi.
+**Järkevyys:** Pyöreillä luvuilla $1240 : 450 - 1240 : 560 \approx 2{,}76 - 2{,}21 = 0{,}55$, eli noin $0{,}5\,\text{eV}$. Säteilty fotoni on pidempiaaltoinen kuin absorboitu, joten erotuksen on oltava positiivinen, kuten fluoresenssissa aina. Noin viidennes sinisen fotonin energiasta muuttuu sisäenergiaksi.
 
 ## fy8-6-L3-01
 **Annettu:** neljän LEDin huippuaallonpituudet ja kynnysjännitteet: $625\,\text{nm}$ ja $1{,}86\,\text{V}$, $590\,\text{nm}$ ja $1{,}97\,\text{V}$, $520\,\text{nm}$ ja $2{,}27\,\text{V}$, $465\,\text{nm}$ ja $2{,}55\,\text{V}$; $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $e = 1{,}602 \cdot 10^{-19}\,\text{C}$

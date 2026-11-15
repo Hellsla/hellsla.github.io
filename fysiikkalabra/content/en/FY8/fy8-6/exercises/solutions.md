@@ -140,13 +140,13 @@ $$
 
 ## fy8-6-L2-04
 **Given:** wavelength of the blue photon $\lambda_1 = 450\,\text{nm}$, wavelength of the yellow photon $\lambda_2 = 560\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
-**Asked:** the energy $\Delta E$ left as heat per photon, in electronvolts
-**Principle:** In fluorescence (chapter *Spectra reveal the energy levels of atoms*) a substance absorbs a photon and emits a photon of lower energy. Energy is conserved, so the difference between the energies of the absorbed and the emitted photon is left in the phosphor as heat.
+**Asked:** the energy $\Delta E$ left as internal energy per photon, in electronvolts
+**Principle:** In fluorescence (chapter *Spectra reveal the energy levels of atoms*) a substance absorbs a photon and emits a photon of lower energy. Energy is conserved, so the difference between the energies of the absorbed and the emitted photon is left in the phosphor as internal energy.
 **Formula:** $\Delta E = \dfrac{hc}{\lambda_1} - \dfrac{hc}{\lambda_2}$
 **Conversions:** $\lambda_1 = 450 \cdot 10^{-9}\,\text{m}$, $\lambda_2 = 560 \cdot 10^{-9}\,\text{m}$; the energies from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$
 **Substitution:** $\dfrac{hc}{\lambda_1} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{450 \cdot 10^{-9}\,\text{m}} = 4.4144 \cdot 10^{-19}\,\text{J} = 2.7556\,\text{eV}$ and $\dfrac{hc}{\lambda_2} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{560 \cdot 10^{-9}\,\text{m}} = 3.5473 \cdot 10^{-19}\,\text{J} = 2.2143\,\text{eV}$, so $\Delta E = 2.7556\,\text{eV} - 2.2143\,\text{eV} = 0.5413\,\text{eV}$
 **Answer:** $0.541\,\text{eV}$, three significant figures like the wavelengths.
-**Reasonableness:** With round numbers $1240 : 450 - 1240 : 560 \approx 2.76 - 2.21 = 0.55$, that is about $0.5\,\text{eV}$. The emitted photon has a longer wavelength than the absorbed one, so the difference must be positive, as it always is in fluorescence. About a fifth of the energy of the blue photon turns into heat.
+**Reasonableness:** With round numbers $1240 : 450 - 1240 : 560 \approx 2.76 - 2.21 = 0.55$, that is about $0.5\,\text{eV}$. The emitted photon has a longer wavelength than the absorbed one, so the difference must be positive, as it always is in fluorescence. About a fifth of the energy of the blue photon turns into internal energy.
 
 ## fy8-6-L3-01
 **Given:** the peak wavelengths and threshold voltages of four LEDs: $625\,\text{nm}$ and $1.86\,\text{V}$, $590\,\text{nm}$ and $1.97\,\text{V}$, $520\,\text{nm}$ and $2.27\,\text{V}$, $465\,\text{nm}$ and $2.55\,\text{V}$; $c = 2.998 \cdot 10^8\,\text{m/s}$, $e = 1.602 \cdot 10^{-19}\,\text{C}$

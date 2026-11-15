@@ -61,7 +61,7 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 **Kaava:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$ ja $Q = (m_\text{Pu} - m_\text{U} - m_\text{He})\,c^2$
 **Muunnokset:** Massavaje muunnetaan energiaksi sijoittamalla $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$.
 **Sijoitus:** $m_\text{Pu} - m_\text{U} - m_\text{He} = 238{,}049560\,\text{u} - 234{,}040952\,\text{u} - 4{,}002603\,\text{u} = 0{,}006005\,\text{u}$, joten $Q = 0{,}006005 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 5{,}594\,\text{MeV}$
-**Vastaus:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$, ja yksi hajoaminen vapauttaa $Q \approx 5{,}59\,\text{MeV}$. Kolme merkitsevää numeroa, koska massavajeessa $0{,}006005\,\text{u}$ on neljä.
+**Vastaus:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$, ja yksi hajoaminen vapauttaa $Q \approx 5{,}59\,\text{MeV}$. Massavajeessa $0{,}006005\,\text{u}$ ja muuntokertoimessa $931{,}5\,\tfrac{\text{MeV}}{c^2}$ on kummassakin neljä merkitsevää numeroa, joten kolmen merkitsevän numeron vastaus on varmasti perusteltu; jatkossa lasketaan pyöristämättömällä arvolla $5{,}594\,\text{MeV}$.
 **Järkevyys:** Alfahajoamisten energiat ovat tyypillisesti muutamia megaelektronivoltteja, miljoonakertaisia kemiallisiin reaktioihin verrattuna. Massa pienenee vain noin $0{,}0025\,\%$.
 
 ### b)
@@ -76,12 +76,12 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 
 ### c)
 **Kysytty:** miksi polttoaineeksi valitaan plutonium-238 ja mikä on säteilyturvallisuuden kannalta tärkeää
-**Periaate:** Polttoaineelta vaaditaan kolmea asiaa: teho ei saa pienentyä paljon lennon aikana, aktiivisuuden on oltava suuri pienessä massassa, ja säteilyn on muututtava lämmöksi polttoaineen sisällä ilman raskasta suojaa. Aktiivisuus ytimien määrää kohti on $\lambda = \tfrac{\ln 2}{T_{1/2}}$, joten se on kääntäen verrannollinen puoliintumisaikaan.
+**Periaate:** Polttoaineelta vaaditaan kolmea asiaa: teho ei saa pienentyä paljon lennon aikana, aktiivisuuden on oltava suuri pienessä massassa, ja säteilyn on muututtava sisäenergiaksi polttoaineen sisällä ilman raskasta suojaa. Aktiivisuus ytimien määrää kohti on $\lambda = \tfrac{\ln 2}{T_{1/2}}$, joten se on kääntäen verrannollinen puoliintumisaikaan.
 **Mallivastaus:** *Polonium-210.* Puoliintumisaika $138\,\text{d}$ on lyhyt. Vuoden kuluttua tehosta on jäljellä $\left(\tfrac{1}{2}\right)^{365{,}25 / 138} \approx 0{,}16$ eli noin kuudesosa, joten vuosikymmenten lentoon se ei sovi.
 
 *Uraani-238.* Puoliintumisaika on $4{,}47 \cdot 10^{9}\,\text{a} : 87{,}7\,\text{a} \approx 5 \cdot 10^{7}$ kertaa pidempi kuin plutonium-238:lla, joten aktiivisuus ytimien määrää kohti on yhtä monta kertaa pienempi. Saman tehon tuottamiseen tarvittaisiin satoja miljoonia kilogrammoja uraania.
 
-*Koboltti-60.* Puoliintumisaika on lyhyehkö, ja voimakas gammasäteily läpäisee ainetta: se vaatisi tonneittain lyijysuojaa ja vaurioittaisi mönkijän elektroniikkaa ja mittalaitteita. Plutonium-238:n alfahiukkaset taas pysähtyvät jo polttoaineeseen, jolloin niiden energia muuttuu lämmöksi siellä, missä sitä tarvitaan. Plutonium-238 on siis riittävän pitkäikäinen ja silti riittävän aktiivinen.
+*Koboltti-60.* Puoliintumisaika on lyhyehkö, ja voimakas gammasäteily läpäisee ainetta: se vaatisi tonneittain lyijysuojaa ja vaurioittaisi mönkijän elektroniikkaa ja mittalaitteita. Plutonium-238:n alfahiukkaset taas pysähtyvät jo polttoaineeseen, jolloin niiden energia muuttuu sisäenergiaksi siellä, missä lämpöä tarvitaan. Plutonium-238 on siis riittävän pitkäikäinen ja silti riittävän aktiivinen.
 
 *Säteilyturvallisuus.* Alfasäteily ei läpäise generaattorin kuorta, joten ulkoinen säteily on pientä. Plutonium on kuitenkin hyvin vaarallista, jos sitä joutuu elimistöön esimerkiksi hengitettynä pölynä: alfahiukkaset luovuttavat koko energiansa lähisoluihin. Siksi polttoaine on kestävänä keraamisena plutoniumdioksidina tiiviissä kapseleissa, jotka on suunniteltu kestämään räjähdys ja putoaminen laukaisuonnettomuudessa.
 
@@ -297,7 +297,7 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
   <foreignObject x="165" y="364.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(-1{,}3;\ 0)$</span></div></foreignObject>
 </svg>
 
-**Mallivastaus:** Pisteet asettuvat hyvin suoralle, joten malli kuvaa mittausta koko välillä. Suoraa jatketaan katkoviivana $r$-akselille, jonka se leikkaa kohdassa $r = -1{,}3\,\text{cm}$. Leikkauskohdan voi myös laskea suoran kahdesta kaukaisesta pisteestä $(-1{,}3\,\text{cm};\ 0)$ ja $(20{,}0\,\text{cm};\ 12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}})$. Siten $d \approx 1{,}3\,\text{cm}$. Putken tehollinen havaintokohta on siis noin senttimetrin ikkunan takana, mikä sopii GM-putken rakenteeseen. Silmämääräisesti sovitetuista suorista saadaan tyypillisesti $d = 1{,}0$–$1{,}6\,\text{cm}$. Suoran kulmakerroin on $k = \dfrac{12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}} - 0}{20{,}0\,\text{cm} - (-1{,}3\,\text{cm})} = 5{,}63 \cdot 10^{-3}\,\tfrac{\sqrt{\text{min}}}{\text{cm}}$, josta $K = \dfrac{1}{k^2} = 3{,}15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$.
+**Mallivastaus:** Pisteet asettuvat hyvin suoralle, joten malli kuvaa mittausta koko välillä. Suoraa jatketaan katkoviivana $r$-akselille, jonka se leikkaa kohdassa $r = -1{,}3\,\text{cm}$. Leikkauskohdan voi myös laskea kahdesta suoralta mittausalueelta luetusta pisteestä $(2{,}0\,\text{cm};\ 1{,}86 \cdot 10^{-2}\,\sqrt{\text{min}})$ ja $(20{,}0\,\text{cm};\ 12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}})$: suora on nollassa kohdassa $r = 2{,}0\,\text{cm} - \dfrac{1{,}86 \cdot 10^{-2}\,\sqrt{\text{min}}}{k} = -1{,}3\,\text{cm}$, kun $k$ on alla laskettu kulmakerroin. Siten $d \approx 1{,}3\,\text{cm}$. Putken tehollinen havaintokohta on siis noin senttimetrin ikkunan takana, mikä sopii GM-putken rakenteeseen. Silmämääräisesti sovitetuista suorista saadaan tyypillisesti $d = 1{,}0$–$1{,}6\,\text{cm}$. Suoran kulmakerroin on $k = \dfrac{(12{,}0 - 1{,}86) \cdot 10^{-2}\,\sqrt{\text{min}}}{20{,}0\,\text{cm} - 2{,}0\,\text{cm}} = 5{,}63 \cdot 10^{-3}\,\tfrac{\sqrt{\text{min}}}{\text{cm}}$, josta $K = \dfrac{1}{k^2} = 3{,}15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$.
 
 ### c)
 **Kysytty:** $2{,}0\,\text{cm}$:n ja $20\,\text{cm}$:n nettopulssitaajuuksien epävarmuus, epävarmempi piste ja parannukset
@@ -391,7 +391,7 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 **Muunnokset:** Ei tarvita, koska kaikki ajat ovat vuosina.
 **Sijoitus:** $\dfrac{t}{T_{235}} = \dfrac{2{,}0 \cdot 10^{9}\,\text{a}}{7{,}04 \cdot 10^{8}\,\text{a}} = 2{,}841$ ja $\dfrac{t}{T_{238}} = \dfrac{2{,}0 \cdot 10^{9}\,\text{a}}{4{,}47 \cdot 10^{9}\,\text{a}} = 0{,}447$. $N_{0,235} = 0{,}720 \cdot 2^{2{,}841} = 0{,}720 \cdot 7{,}17 = 5{,}16$ ja $N_{0,238} = 99{,}274 \cdot 2^{0{,}447} = 99{,}274 \cdot 1{,}364 = 135{,}4$. Osuus on $\dfrac{5{,}16}{5{,}16 + 135{,}4} = 0{,}0367$.
 **Vastaus:** $2{,}0$ miljardia vuotta sitten uraanista noin $3{,}7\,\%$ oli uraani-235:tä. Osuus oli sama kuin nykyisten kevytvesireaktorien rikastetussa polttoaineessa, joten tavallinen vesi riitti hidastimeksi ja ketjureaktio oli mahdollinen. Nyt luonnonuraanissa on vain $0{,}72\,\%$ uraani-235:tä, eikä ketjureaktio kevyen veden kanssa onnistu.
-**Järkevyys:** Uraani-235:stä on kulunut lähes kolme puoliintumisaikaa, joten sitä oli noin seitsemän kertaa nykyistä enemmän, uraani-238:sta vain noin kolmannes yhdestä. Osuuden kasvu noin viisinkertaiseksi on siis järkevä. Kaksi merkitsevää numeroa, kuten iässä $2{,}0 \cdot 10^{9}\,\text{a}$.
+**Järkevyys:** Uraani-235:stä on kulunut lähes kolme puoliintumisaikaa, joten sitä oli noin seitsemän kertaa nykyistä enemmän, uraani-238:aa vain noin kolmanneksen nykyistä enemmän, koska sen puoliintumisajasta on kulunut vajaa puolet. Osuuden kasvu noin viisinkertaiseksi on siis järkevä. Kaksi merkitsevää numeroa, kuten iässä $2{,}0 \cdot 10^{9}\,\text{a}$.
 
 ### b)
 **Kysytty:** mistä pieni uraani-235:n osuus kertoo ja miten pohjavesi käynnisti ja sammutti reaktorin
@@ -400,7 +400,7 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 
 *Käynnistyminen.* Kun pohjavettä tunkeutui malmiin, se hidasti fissiossa syntyvät nopeat neutronit. Hitaat neutronit aiheuttivat uusia uraani-235:n fissioita, ja kun kasvukerroin nousi ykköseen, ketjureaktio käynnistyi.
 
-*Sammuminen.* Fissioiden energia muuttui lämmöksi, ja malmi kuumeni niin, että vesi kiehui pois. Ilman hidastinta neutronit pysyivät nopeina, kasvukerroin putosi alle ykkösen ja ketjureaktio sammui. Kun malmi jäähtyi, vettä virtasi takaisin ja reaktio käynnistyi uudelleen. Tämä selittää havaitut jaksot, noin puoli tuntia toimintaa ja parin tunnin tauko. Reaktori säätyi siis itse, samaan tapaan kuin kevytvesireaktori, jossa kiehuminen pienentää hidastuskykyä.
+*Sammuminen.* Fissioiden energia muuttui malmin sisäenergiaksi, ja malmi kuumeni niin, että vesi kiehui pois. Ilman hidastinta neutronit pysyivät nopeina, kasvukerroin putosi alle ykkösen ja ketjureaktio sammui. Kun malmi jäähtyi, vettä virtasi takaisin ja reaktio käynnistyi uudelleen. Tämä selittää havaitut jaksot, noin puoli tuntia toimintaa ja parin tunnin tauko. Reaktori säätyi siis itse, samaan tapaan kuin kevytvesireaktori, jossa kiehuminen pienentää hidastuskykyä.
 
 ### c)
 **Annettu:** Oklon teho $P_\text{O} = 100\,\text{kW}$, aika $t_\text{O} = 150\,000\,\text{a}$ ja Olkiluoto 3:n lämpöteho $P_\text{OL3} = 4300\,\text{MW}$

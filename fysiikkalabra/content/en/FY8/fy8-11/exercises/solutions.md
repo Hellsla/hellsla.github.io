@@ -90,7 +90,7 @@ $$; mass of the fuel $$
 $$
 **Substitution:** $Q = 0.0188829 \cdot 931.5\,\text{MeV} = 17.589\,\text{MeV} = 17.589 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.8178 \cdot 10^{-12}\,\text{J}$, so $\dfrac{E}{m} = \dfrac{2.8178 \cdot 10^{-12}\,\text{J}}{8.3528 \cdot 10^{-27}\,\text{kg}} = 3.3735 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$
 **Answer:** $3.37 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$, three significant figures; the atomic masses are very precise, and the conversion factor $1.602 \cdot 10^{-19}\,\text{J}$ limits the precision to four figures.
-**Reasonableness:** The heating value of coal is about $2.4 \cdot 10^{7}\,\tfrac{\text{J}}{\text{kg}}$, so fusion fuel releases about $10^{7}$ times as much energy per kilogram. According to the chapter, fusion produces about four times as much as fission, and the $8.2 \cdot 10^{13}\,\tfrac{\text{J}}{\text{kg}}$ of the fission of uranium-235 times four is about $3 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$.
+**Reasonableness:** The heating value of coal is about $2.9 \cdot 10^{7}\,\tfrac{\text{J}}{\text{kg}}$, so fusion fuel releases about $10^{7}$ times as much energy per kilogram. According to the chapter, fusion produces about four times as much as fission, and the $8.2 \cdot 10^{13}\,\tfrac{\text{J}}{\text{kg}}$ of the fission of uranium-235 times four is about $3 \cdot 10^{14}\,\tfrac{\text{J}}{\text{kg}}$.
 
 ## fy8-11-L2-03
 **Given:** reaction $$
@@ -275,7 +275,7 @@ The reason that the binding energy is released when the nucleus splits is incorr
 **Reasonableness:** In the table the activity at $30$ years is $15\,050$, about half of the initial value $30\,000$, so the half-life is about $30\,\text{a}$. Eight half-lives reduce the activity by a factor of $2^{8} = 256$, and $30\,000 : 256 \approx 117$, so $100\,\tfrac{\text{TBq}}{\text{t}}$ is reached after about $250\,\text{a}$. The model describes only the fission products.
 
 ## fy8-11-L3-05
-**Given:** (the problem continues problem L3-01 with another reactor) net electrical power $P_\text{e} = 507\,\text{MW}$, efficiency $\eta = 0.33$, operating time $92\,\%$ of the year ($365\,\text{d}$), energy of a fission $Q = 200\,\text{MeV}$, $m_\text{U} = 235.0439282\,\text{u}$, $1\,\text{u} = 1.66054 \cdot 10^{-27}\,\text{kg}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$, heating value of coal $24\,\tfrac{\text{MJ}}{\text{kg}}$
+**Given:** (the problem continues problem L3-01 with another reactor) net electrical power $P_\text{e} = 507\,\text{MW}$, efficiency $\eta = 0.33$, operating time $92\,\%$ of the year ($365\,\text{d}$), energy of a fission $Q = 200\,\text{MeV}$, $m_\text{U} = 235.0439282\,\text{u}$, $1\,\text{u} = 1.66054 \cdot 10^{-27}\,\text{kg}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$, heating value of coal $29\,\tfrac{\text{MJ}}{\text{kg}}$
 **Asked:** a) the thermal power $P_\text{th}$ and the power $P_\text{waste}$ transferred to the cooling water, b) the mass $m$ of uranium-235 that undergoes fission in a year, c) the mass of the corresponding coal
 **Principle:** The efficiency is the electrical power divided by the thermal power, so the thermal power is obtained from the electrical power. The part of the thermal power that is not turned into electricity is transferred to the cooling water. By the assumption, all the thermal power comes from fissions of uranium-235. The energy released in a year divided by the energy of one fission is the number of fissions, and each fission uses up one uranium-235 atom.
 **Formula:** $\eta = \dfrac{P_\text{e}}{P_\text{th}}$, $P_\text{waste} = P_\text{th} - P_\text{e}$, $E = 0.92\,P_\text{th}\,t$, $N = \dfrac{E}{Q}$, $m = N\,m_\text{U}$ and $m_\text{coal} = \dfrac{E}{\text{heating value}}$
@@ -285,13 +285,13 @@ m_\text{U} &= 235.0439282 \\
 &\cdot 1.66054 \cdot 10^{-27}\,\text{kg} \\
 &= 3.9030 \cdot 10^{-25}\,\text{kg}
 \end{aligned}
-$$; $24\,\tfrac{\text{MJ}}{\text{kg}} = 24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}$
+$$; $29\,\tfrac{\text{MJ}}{\text{kg}} = 29 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}$
 **Substitution:** a) $P_\text{th} = \dfrac{507\,\text{MW}}{0.33} = 1536\,\text{MW}$ and $P_\text{waste} = 1536\,\text{MW} - 507\,\text{MW} = 1029\,\text{MW}$. b) $$
 \begin{aligned}
 E &= 0.92 \cdot 1536.4 \cdot 10^{6}\,\text{W} \\
 &\cdot 31\,536\,000\,\text{s} \\
 &= 4.457 \cdot 10^{16}\,\text{J}
 \end{aligned}
-$$, so $N = \dfrac{4.457 \cdot 10^{16}\,\text{J}}{3.204 \cdot 10^{-11}\,\text{J}} = 1.391 \cdot 10^{27}$ and $m = 1.391 \cdot 10^{27} \cdot 3.9030 \cdot 10^{-25}\,\text{kg} = 543.0\,\text{kg}$. c) $m_\text{coal} = \dfrac{4.457 \cdot 10^{16}\,\text{J}}{24 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}} = 1.857 \cdot 10^{9}\,\text{kg} = 1.86 \cdot 10^{6}\,\text{t}$
-**Answer:** $540\,\text{kg}$ as the result of part b); two significant figures, because the efficiency $0.33$ and the operating time $92\,\%$ are given with two figures. In part a) the thermal power is $1500\,\text{MW}$ and $1000\,\text{MW}$ is transferred to the cooling water (the same two significant figures). In part c) about $1.9$ million tonnes of coal would be needed: in nuclear reactions the energy is millions of electronvolts per atom and in combustion of the order of an electronvolt, so about $3.4$ million times as much mass of coal is needed as of uranium-235.
+$$, so $N = \dfrac{4.457 \cdot 10^{16}\,\text{J}}{3.204 \cdot 10^{-11}\,\text{J}} = 1.391 \cdot 10^{27}$ and $m = 1.391 \cdot 10^{27} \cdot 3.9030 \cdot 10^{-25}\,\text{kg} = 543.0\,\text{kg}$. c) $m_\text{coal} = \dfrac{4.457 \cdot 10^{16}\,\text{J}}{29 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}} = 1.537 \cdot 10^{9}\,\text{kg} = 1.54 \cdot 10^{6}\,\text{t}$
+**Answer:** $540\,\text{kg}$ as the result of part b); two significant figures, because the efficiency $0.33$ and the operating time $92\,\%$ are given with two figures. In part a) the thermal power is $1500\,\text{MW}$ and $1000\,\text{MW}$ is transferred to the cooling water (the same two significant figures). In part c) about $1.5$ million tonnes of coal would be needed: in nuclear reactions the energy is millions of electronvolts per atom and in combustion of the order of an electronvolt, so about $2.8$ million times as much mass of coal is needed as of uranium-235.
 **Reasonableness:** According to the chapter, a gram of uranium-235 releases about $82\,\text{GJ}$. The energy $4.457 \cdot 10^{16}\,\text{J}$ divided by $8.2 \cdot 10^{10}\,\tfrac{\text{J}}{\text{g}}$ is about $5.4 \cdot 10^{5}\,\text{g} = 540\,\text{kg}$, which matches. The power transferred to the cooling water is greater than the electrical power, which fits the efficiency $0.33$, because $1029 > 507$.

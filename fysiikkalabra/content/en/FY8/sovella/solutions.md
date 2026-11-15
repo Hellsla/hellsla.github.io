@@ -61,7 +61,7 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 **Formula:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$ and $Q = (m_\text{Pu} - m_\text{U} - m_\text{He})\,c^2$
 **Conversions:** The mass defect is converted to energy by substituting $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$.
 **Substitution:** $m_\text{Pu} - m_\text{U} - m_\text{He} = 238.049560\,\text{u} - 234.040952\,\text{u} - 4.002603\,\text{u} = 0.006005\,\text{u}$, so $Q = 0.006005 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 5.594\,\text{MeV}$
-**Answer:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$, and one decay releases $Q \approx 5.59\,\text{MeV}$. Three significant figures, because the mass defect $0.006005\,\text{u}$ has four.
+**Answer:** ${}^{238}_{94}\text{Pu} \rightarrow {}^{234}_{92}\text{U} + {}^{4}_{2}\text{He}$, and one decay releases $Q \approx 5.59\,\text{MeV}$. The mass defect $0.006005\,\text{u}$ and the conversion factor $931.5\,\tfrac{\text{MeV}}{c^2}$ both have four significant figures, so an answer with three significant figures is certainly justified; the unrounded value $5.594\,\text{MeV}$ is used in the later parts.
 **Reasonableness:** The energies of alpha decays are typically a few megaelectronvolts, a million times those of chemical reactions. The mass decreases by only about $0.0025\,\%$.
 
 ### b)
@@ -76,12 +76,12 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 
 ### c)
 **Find:** why plutonium-238 is chosen as the fuel and what is important for radiation safety
-**Principle:** Three things are required of a fuel: the power must not decrease much during the flight, the activity must be high in a small mass, and the radiation must be turned into heat inside the fuel without heavy shielding. The activity per nucleus is $\lambda = \tfrac{\ln 2}{T_{1/2}}$, so it is inversely proportional to the half-life.
+**Principle:** Three things are required of a fuel: the power must not decrease much during the flight, the activity must be high in a small mass, and the radiation must be turned into internal energy inside the fuel without heavy shielding. The activity per nucleus is $\lambda = \tfrac{\ln 2}{T_{1/2}}$, so it is inversely proportional to the half-life.
 **Model answer:** *Polonium-210.* The half-life $138\,\text{d}$ is short. After a year the fraction of the power left is $\left(\tfrac{1}{2}\right)^{365.25 / 138} \approx 0.16$, about one sixth, so it is not suitable for a flight of decades.
 
 *Uranium-238.* The half-life $4.47 \cdot 10^{9}\,\text{a} : 87.7\,\text{a} \approx 5 \cdot 10^{7}$ times longer than that of plutonium-238, so the activity per nucleus is that many times smaller. Hundreds of millions of kilograms of uranium would be needed to produce the same power.
 
-*Cobalt-60.* The half-life is rather short, and the strong gamma radiation penetrates matter: it would require tonnes of lead shielding and would damage the electronics and instruments of the rover. The alpha particles of plutonium-238, on the other hand, stop already in the fuel, so their energy is turned into heat where it is needed. Plutonium-238 is thus long-lived enough and still active enough.
+*Cobalt-60.* The half-life is rather short, and the strong gamma radiation penetrates matter: it would require tonnes of lead shielding and would damage the electronics and instruments of the rover. The alpha particles of plutonium-238, on the other hand, stop already in the fuel, so their energy is turned into internal energy where the heating is needed. Plutonium-238 is thus long-lived enough and still active enough.
 
 *Radiation safety.* Alpha radiation does not penetrate the shell of the generator, so the external radiation is small. Plutonium is, however, very dangerous if it gets into the body, for example as inhaled dust: alpha particles give all their energy to the nearby cells. This is why the fuel is a durable ceramic, plutonium dioxide, in tight capsules that are designed to withstand an explosion and a fall in a launch accident.
 
@@ -297,7 +297,7 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
   <foreignObject x="165" y="364.5" width="112" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2"><span style="background:#ffffff;padding:0 5px;border-radius:3px">$(-1.3;\ 0)$</span></div></foreignObject>
 </svg>
 
-**Model answer:** The points lie well on a straight line, so the model describes the measurement over the whole range. The line is extended as a dashed line to the $r$ axis, which it crosses at $r = -1.3\,\text{cm}$. The intercept can also be calculated from two distant points of the line, $(-1.3\,\text{cm};\ 0)$ and $(20.0\,\text{cm};\ 12.0 \cdot 10^{-2}\,\sqrt{\text{min}})$. Thus $d \approx 1.3\,\text{cm}$. The effective detection point of the tube is therefore about a centimetre behind the window, which fits the structure of a GM tube. Lines fitted by eye typically give $d = 1.0$–$1.6\,\text{cm}$. The slope of the line is $k = \dfrac{12.0 \cdot 10^{-2}\,\sqrt{\text{min}} - 0}{20.0\,\text{cm} - (-1.3\,\text{cm})} = 5.63 \cdot 10^{-3}\,\tfrac{\sqrt{\text{min}}}{\text{cm}}$, from which $K = \dfrac{1}{k^2} = 3.15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$.
+**Model answer:** The points lie well on a straight line, so the model describes the measurement over the whole range. The line is extended as a dashed line to the $r$ axis, which it crosses at $r = -1.3\,\text{cm}$. The intercept can also be calculated from two points read from the line within the measured range, $(2.0\,\text{cm};\ 1.86 \cdot 10^{-2}\,\sqrt{\text{min}})$ and $(20.0\,\text{cm};\ 12.0 \cdot 10^{-2}\,\sqrt{\text{min}})$: the line is zero at $r = 2.0\,\text{cm} - \dfrac{1.86 \cdot 10^{-2}\,\sqrt{\text{min}}}{k} = -1.3\,\text{cm}$, where $k$ is the slope calculated below. Thus $d \approx 1.3\,\text{cm}$. The effective detection point of the tube is therefore about a centimetre behind the window, which fits the structure of a GM tube. Lines fitted by eye typically give $d = 1.0$–$1.6\,\text{cm}$. The slope of the line is $k = \dfrac{(12.0 - 1.86) \cdot 10^{-2}\,\sqrt{\text{min}}}{20.0\,\text{cm} - 2.0\,\text{cm}} = 5.63 \cdot 10^{-3}\,\tfrac{\sqrt{\text{min}}}{\text{cm}}$, from which $K = \dfrac{1}{k^2} = 3.15 \cdot 10^{4}\,\tfrac{\text{cm}^2}{\text{min}}$.
 
 ### c)
 **Find:** the uncertainty of the net count rates at $2.0\,\text{cm}$ and $20\,\text{cm}$, the more uncertain point and improvements
@@ -400,7 +400,7 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 
 *Starting.* When groundwater seeped into the ore, it slowed down the fast neutrons produced in fission. The slow neutrons caused new fissions of uranium-235, and when the multiplication factor rose to one, the chain reaction started.
 
-*Stopping.* The energy of the fissions turned into heat, and the ore heated up so much that the water boiled away. Without a moderator the neutrons stayed fast, the multiplication factor fell below one and the chain reaction stopped. When the ore cooled, water flowed back and the reaction started again. This explains the observed cycles, about half an hour of operation and a pause of a couple of hours. The reactor thus regulated itself, in the same way as a light-water reactor, in which boiling reduces the moderating ability.
+*Stopping.* The energy of the fissions turned into internal energy of the ore, and the ore heated up so much that the water boiled away. Without a moderator the neutrons stayed fast, the multiplication factor fell below one and the chain reaction stopped. When the ore cooled, water flowed back and the reaction started again. This explains the observed cycles, about half an hour of operation and a pause of a couple of hours. The reactor thus regulated itself, in the same way as a light-water reactor, in which boiling reduces the moderating ability.
 
 ### c)
 **Given:** power of Oklo $P_\text{O} = 100\,\text{kW}$, time $t_\text{O} = 150\,000\,\text{a}$ and the thermal power of Olkiluoto 3 $P_\text{OL3} = 4300\,\text{MW}$
