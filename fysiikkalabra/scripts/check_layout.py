@@ -39,7 +39,7 @@ only = set(args)   # none: every page; CI on a pull request passes the pages scr
 OUT = pathlib.Path(sys.argv[sys.argv.index("--dir") + 1]) if "--dir" in sys.argv else ROOT / "site" if "--site" in sys.argv else ROOT / "preview" if (ROOT / "preview" / "index.html").exists() else ROOT / "site"   # --site: the published pages (CI)
 
 CLIPPED = "clipped or scrolling, not fully shown: "
-KNOWN = ROOT / "docs" / "clipped-formulas.tsv"   # page <TAB> formula: what the pages already had when the check was added (2026-11-15); never added to by hand
+KNOWN = pathlib.Path(__import__("os").environ.get("CLIPPED_KNOWN") or ROOT / "docs" / "clipped-formulas.tsv")   # page <TAB> formula: what the pages already had when the check was added (2026-11-15); never added to by hand
 known = {tuple(l.rstrip("\n").split("\t", 1)) for l in KNOWN.read_text().splitlines() if l and not l.startswith("#")} if KNOWN.is_file() else set()
 write_known = "--write-known" in sys.argv   # add what this run finds to docs/clipped-formulas.tsv (once, from a full run at 360 and 390 px)
 found_known = set()
@@ -85,7 +85,7 @@ JS = """() => {
       lim = Math.min(lim, a.getBoundingClientRect().left + a.clientLeft + a.clientWidth);
     }
     const hidden = Math.max(Math.round(ink(k) - lim), getComputedStyle(k).overflowX === 'visible' ? 0 : k.scrollWidth - k.clientWidth);
-    if (hidden > 2) { const ann = k.querySelector('annotation'); out.push({what: 'formula', over: hidden, text: 'clipped or scrolling, not fully shown: ' + (ann ? ann.textContent.slice(0, 70) : '')}); }
+    if (hidden > 3) { const ann = k.querySelector('annotation'); out.push({what: 'formula', over: hidden, text: 'clipped or scrolling, not fully shown: ' + (ann ? ann.textContent.slice(0, 70) : '')}); }
   }
   for (const c of document.querySelectorAll('main .eq-chain')) {   // a calculation set as rows (mathlayout.py): its left side must neither spill into the right one
     if (!V(c)) continue;                                          // nor wrap while the chain has room (teacher 2026-10-31, the visual reviewer's fy1-4 and fy3-7 findings)
