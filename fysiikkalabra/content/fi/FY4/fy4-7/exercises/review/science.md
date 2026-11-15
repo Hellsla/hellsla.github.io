@@ -7,16 +7,13 @@ CONTENT-HASH: 9218a0cc5bf3ce91
 ## Polish
 - solutions.md:348 (a) — "Suurin osa ajaa siis lähellä rajoitusta, vähän sen yli": the group 0–10 km/h over is $48{,}2\,\%$, the largest group but under half, and the table does not say how far under the limit the $38{,}0\,\%$ drive — "suurin ryhmä ($48{,}2\,\%$) ajaa enintään $10\,\text{km/h}$ yli rajoituksen".
 - solutions.md:370 (d) — "mittausasemat eivät ole niissä" (junctions, built-up areas) is stated as a fact of the source; the coordinator's record of the report says only that the stations are on main roads — soften ("mittausasemat ovat pääteillä") or check it in the report.
-- solutions.md:367 — $\sqrt{-2a\,\Delta s} = 14{,}58\,\text{m/s} = 52{,}5\,\text{km/h}$: "noin $52\,\text{km/h}$" sits on the rounding edge; fine, or write $14{,}6\,\text{m/s} \approx 52\,\text{km/h}$ consistently.
 
 ## Checked
 - All 21 numeric answers recomputed with my own formulas: agree with exercises.json and answers.py inside each tolerance.
 - L2-10 table, 268 stations, summer 2025, definitions of the shares: the same as the coordinator's record of the Fintraffic report; source dated (16.11.2026); every number the task needs is in the task, so no moving value.
-- L2-10 a: $38{,}0 / 48{,}2 / 13{,}8\,\%$ and $60{,}2 / 31{,}7 / 8{,}1\,\%$ (station means subtract linearly).
 - L2-10 b: $370\,370\,\text{J}$, $489\,815\,\text{J}$, ratio $1{,}3225$ (+32 %, speed +15 %).
 - L2-10 c: $53{,}09\,\text{m}$, $66{,}37\,\text{m}$, $\Delta s = 13{,}29\,\text{m}$; answer 13.3, tolerance 0.05 accepts the shown $13\,\text{m}$; two significant figures justified.
 - L2-10 c is derived from $v_0 + a t_\text{j} = 0$ and $s = v_0 t + \tfrac12 a t^2$ (symbolic first); kinematics is a prerequisite; scope FY4.
 - L2-10 d: no causal claim about accidents from the table; model limits stated; braking energy "sisäenergiaksi".
 - L1-07 proofreading fix: $80 \cdot 10 \cdot 12 = 9600\,\text{J} = 9{,}6\,\text{kJ}$, compared correctly with $9{,}4\,\text{kJ}$.
-- Notation ($E_\text{k}$, $E_\text{p}$, $E_\text{mek}$, $g = 9{,}81\,\text{m/s}^2$) as in the brief.
 - Hash the same at the start and the end.
