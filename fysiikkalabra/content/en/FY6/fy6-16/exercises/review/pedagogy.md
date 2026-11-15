@@ -1,16 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 64560c496d3a4f35
-SCOPE: delta proofreading fixes 2026-11-15, round 1
+VERDICT: FAIL
+CONTENT-HASH: 1fadf91487d828c9
+SCOPE: delta round 2, L2-03 key and tolerance
 
 ## Blocking
-- none
+- L2-03: answer 11.956522 with relative tolerance 0.09 accepts 10.88-13.03 A. That passes 13 A, which with the sauna's 13.04 A is 26.04 A per phase and trips the 25 A main fuse; it also contradicts the solution ("12 A would exceed"). The teacher's decision (11 A and 12 A both pass) needs only about 10.9-12.1 A. Fix: answer 11.5 (midpoint of 11 and 12), tolerance 0.05 (10.93-12.08 A); then 11, 11.96 and 12 pass, 13 and 10 fail. Update the answers.py comment to match.
 
 ## Polish
-- fy6-16 L2-05 and L2-03: the question text does not say the limit is rounded down; the solution explains it and the 10.45 kW and 11.96 A answers are still accepted, so no student is penalised.
+- The question does not say the limit is a maximum to round down; the solution explains it, and since both roundings now pass, no student is penalised.
 
 ## Checked
-- L2-03: 25 A - 13.04 A = 11.96 A, rounded down to 11 A (12 A would exceed the fuse); relative tolerance 0.043 around 11.478 accepts 10.98-11.97 A, so 11 and 11.96 pass and 12 fails.
-- Reasonableness 13.0 + 11 = 24 A and 7.6 kW are correct.
-- L2-05: 10.45 -> 10.4 kW rounded down with reason; 24.9 A check correct; tolerance still accepts 10.45.
-- The safety-limit principle (round a maximum down, a minimum up) is stated in three solutions: good practice.
-- 156 % -> 1.6e2 %, 1370 EUR -> 1.37e3 EUR: correct.
+- Intent of the change (a limit rounded in either direction accepted, model answer 11 A with the reason stated) is pedagogically sound and consistent across the three languages.
+- 25 - 9000/(3*230) = 11.96 A; Järkevyys sum 13.0 + 11 = 24 A and 7.6 kW unchanged and correct.
+- Tolerance semantics: relative (docs/inquiry.md), so 0.09 is +-1.08 A.
