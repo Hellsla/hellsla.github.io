@@ -275,6 +275,8 @@ normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yks
 
 ## 8m. Liukukitka, ei liikekitka (opettaja 2026-11-15)
 
+Varattu: claude/8m-liukukitka
+
 Opettaja 2026-11-15: "pitää olla liukukitka". Termi vaihdetaan koko sivustolla: liikekitka → liukukitka,
 liikekitkakerroin → liukukitkakerroin (ja taivutusmuodot), `glossary.json`, käsitekortit, lukujen tekstit, tehtävät,
 ratkaisut ja kuvien tekstit kolmella kielellä (en: sliding friction / coefficient of sliding friction).
