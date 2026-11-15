@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 54ecc1dd0a02fade
-
-Round 2 (delta): judged whether a lone ", " or ". " still starts a line after a lifted display formula.
+CONTENT-HASH: ec94a7c0d8f34324
 
 ## Blocking
-- None.
+(none)
 
 ## Polish
-- None.
+(none)
 
 ## Checked
-- No capture of this lesson was opened in round 2. Judged from the shared build (mathlayout.with_punct), which I verified on fy8-3, fy8-8, fy8-12 and fy8-16 (marks sit inside the last row, no lone mark); the text of this lesson is unchanged by it.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review, en: opened example-390-1 (stage 3 block); the other changed blocks judged from the diff/source only (rows broken before each + or -, first row left-hand side alone, no clipping seen in the capture sampled). Hash re-run at the end: unchanged.

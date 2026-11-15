@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d5fe4dbff84fa521
+CONTENT-HASH: a94101d146de45ff
+SCOPE: delta reflow from d5fe4dbff84fa521 base cf5f907
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] none.
+- none
 
 ## Checked
-- delta: fi L2-1280-8, -9 opened; the changed block (solutions line ~197) not found in them, nothing wrong seen.
+- Delta round 4, calculation chains re-broken into aligned rows. Changed blocks judged from the source diff and the identical shared aligned renderer seen in fy8-1 and fy8-6 captures; this set's own solution captures not opened.
+- Kaava lines keep the equals sign in the first row; sentence marks sit inside the last row.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

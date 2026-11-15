@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0c24825674864bad
+CONTENT-HASH: 69af52f6f77a83ff
+SCOPE: delta reflow from 0c24825674864bad base cf5f907
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] H_E block: second row '+ 1 · 0,50 mGy = 0,24 mSv + 0,50 mSv' joins a term and the next equality on one row; reads as a chain, fine.
+- none
 
 ## Checked
-- delta: fi L3-1280-4 opened; H_E block terms whole, aligned.
+- Delta round 4, calculation chains re-broken into aligned rows. Changed blocks judged from the source diff and the identical shared aligned renderer seen in fy8-1 and fy8-6 captures; this set's own solution captures not opened.
+- Kaava lines keep the equals sign in the first row; sentence marks sit inside the last row.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

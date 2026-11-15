@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: dc9c1e133b91dc6b
+CONTENT-HASH: 97bcda50fbbdcbbb
 
 ## Blocking
+- none
 
 ## Polish
-- The lifted block in the optional box 'Etsi virhe' (': 500' on its own row) sits in a closed box with no capture; judged from source and the same renderer seen elsewhere.
+- none
 
 ## Checked
-- batch delta review: fi sovella-390-2 opened; the 'Etsi virhe' block is in a closed optional box and has no capture (browser unavailable to re-capture), judged from source: terms whole, ':' break only inside the long hc/lambda term.
+- Delta round 4, long formulas re-set as aligned blocks. Opened fy8-1 example-390-1 and theory-1280-2 at readable size: the changed 1 eV block sets as aligned rows, = under =, nothing clipped.
+- Words, numbers and units unchanged by the diff.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

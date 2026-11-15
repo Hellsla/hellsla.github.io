@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 79b6515753764d4d
-SCOPE: delta reflow from 811adecc5e47049e base cf5f907
+CONTENT-HASH: 0898f251bae7359d
+SCOPE: delta reflow from 79b6515753764d4d base 56362aafa0
 
 ## Blocking
 (none)
@@ -9,9 +9,7 @@ SCOPE: delta reflow from 811adecc5e47049e base cf5f907
 (none)
 
 ## Checked
-- Contact-sheet level triage skipped; opened open-exercise captures at 1280 px (fy8-1 L2-3, fy8-5 L2-5, fy8-7 1, fy8-13 L3-4, fy8-16 L2-6): aligned blocks, equals signs aligned, sentence marks inside the last row, no clipping, layout intact.
-- No 390 px open-exercise capture exists in the packet (only stage-exercises-390); the other formulas of this lesson were checked from the source breaks, not from a capture.
-- Hash re-run at the end: unchanged.
+- delta reflow, en: opened open-exercises-1280-2 (3-2 solution): aligned blocks, equals signs aligned, sentence marks inside the last row, no clipping. Layout of the card around the blocks intact; no 390 px open-solution capture exists, so phone wrapping is judged by the build's rule only. Hash re-run at the end: unchanged.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 5 · accessibility 4

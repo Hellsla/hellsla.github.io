@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c7c2d1cd197af1d1
+CONTENT-HASH: f22d191b59d568a6
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- batch delta review (round 3): re-broken chains judged in en captures (fy8-11 example-390-2 shows whole-term rows; fy8-1 chain is in an optional find-the-mistake task, its capture not located, rows seen only in source: each term whole). Tarkista/sovella captures opened, no clipping.
+- batch delta review, en: opened theory-1280-3 (the 1 eV block, the threshold-wavelength block); the other changed blocks judged from the diff/source only (rows broken before each + or -, first row left-hand side alone, no clipping seen in the capture sampled). Hash re-run at the end: unchanged.

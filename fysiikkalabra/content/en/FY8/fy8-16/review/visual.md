@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a398d30653c0d1e9
-
-Round 2 (delta): judged whether a lone ", " or ". " still starts a line after a lifted display formula.
+CONTENT-HASH: bf4b51f0a89d39a6
 
 ## Blocking
-- None.
+(none)
 
 ## Polish
-- None.
+(none)
 
 ## Checked
-- Opened (fy8-16): open-exercises-1280-2, stage-selita-390-3. Lifted formulas in the staged example and open solutions show the sentence mark inside the formula's last row; no lone mark, no clipping, rows aligned.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review, en: opened example-390-1 (stage 3 block); the other changed blocks judged from the diff/source only (rows broken before each + or -, first row left-hand side alone, no clipping seen in the capture sampled). Hash re-run at the end: unchanged.

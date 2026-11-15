@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: ed1169cb7ee71d18
+CONTENT-HASH: 336b7486617c07ac
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] stage rows with a lone unit continuation row (e.g. "· 2,998 · 10^8 m/s" in fy8-4) could join the "=" column; existing layout, not a regression.
 
 ## Checked
-- batch delta review, round 2: no capture of this lesson was opened. Judged by inference from the shared mathlayout.with_punct build, which I saw working in fy8-4, fy8-8, fy8-13 (and fy8-1 theory); this lesson's own lifted formulas were not individually seen. The lesson's own diff (formula names, reflow) was not inspected in a capture.
+- Opened fy8-6 open-exercises-1280-1 and L2-1280-9 (same block type); changed inquiry feedback rows judged from source.
+- Delta judged: formula lifted into an aligned block, first row the left-hand side alone; words, numbers and units unchanged.
