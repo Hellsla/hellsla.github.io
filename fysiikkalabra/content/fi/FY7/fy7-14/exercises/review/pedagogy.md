@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 672a5131cfaddc4d
+CONTENT-HASH: 9a26cfef32568a85
 
 ## Blocking
 (none)
@@ -8,5 +8,8 @@ CONTENT-HASH: 672a5131cfaddc4d
 (none)
 
 ## Checked
-- L2-08 Järkevyys now explains why the cancellation is incomplete (1,38 above sqrt(1,52), so the two amplitudes differ): correct and understandable.
-- L3-02 c) "lähes kolminkertaisesti" (5,8 % against 2,0 %) is right and clearer than the earlier wording.
+- Delta: the only change is the removal of the parenthesis "(esimerkkiaineisto)" from the text of fy7-14-L3-05; no number, symbol, question or answer field changed.
+- The sentence reads correctly without it: "Taulukossa on tummien raitojen etäisyys x koskettumisviivasta. Raita k = 0 on ..."; punctuation and spacing intact.
+- The task still gives every value it needs, the situation comes first and the question last; level 3 demand unchanged.
+- solutions.md never refers to the removed label, so the solution stays consistent with the task; the label on other tasks' data tables is outside this diff and untouched.
+- Language checked: fi. Hash 9a26cfef32568a85 at start and end.
