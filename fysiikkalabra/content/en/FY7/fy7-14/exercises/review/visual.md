@@ -1,13 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b9abc60f8708a971
+CONTENT-HASH: 272340bdf157de82
+SCOPE: delta
 
 ## Blocking
 
 ## Polish
+- none
+
+## Outside this change (queue 5d, not blocking here)
+- [Major] fy7-14 solutions at 360 px — clipped formulas listed in docs/clipped-formulas.tsv (queue 5d) — outside this change; fix under 5d.
 
 ## Checked
-- Delta: redrawn fy7-14/soap-curve in task 14-23 with its solution (fy7-14-open-exercises-L3-1280-9, -10, full size): the label "soap film" now sits in the clear lower right area, away from the curve's maximum and minimum that the task reads; axes with units, ticks readable.
-- Changed solution of the coating task 14-17 (fy7-14-open-exercises-L2-1280-11): "removed share" chain renders as aligned rows, Reasonableness reads cleanly. Rest not re-reviewed.
+- Delta: the coating reasonableness text (L2-08, part 11 at 1280 px): reads clearly, MgF$_2$ and the square root typeset correctly; the thin-film L3 text change read in the source.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6430771966740047
-SCOPE: delta added-exercise from 9ceabd6ae4d66620 base 8f23aa7ae3bd
+CONTENT-HASH: 3c82ce2ff300ff5d
+SCOPE: delta
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] fy7-8/loss-graph-curve — the 1 % and 25 kV gridlines are very dense (a comb of unlabelled ticks, about 7 px per percent) so counting to the 3 % line is fiddly — label the gridlines every 5 % only, or draw the minor lines fainter than the labelled ones.
+- [Minor] fy7-8 8-16 solution — the whole calculation is one long block of prose lines; split into rows when next edited.
+
+## Outside this change (queue 5d, not blocking here)
+- [Major] fy7-8 solutions at 360 px — clipped formulas listed in docs/clipped-formulas.tsv (queue 5d) — outside this change; fix under 5d.
 
 ## Checked
-- fy7-8-open-exercises-L2-1280-11, -12 (en): task 8-17 with the loss-share graph (axis titles with units, orange curve, "P = 200 MW" label, nothing clipped), answer field and the opened solution (aligned chains, ohm unit, reasonableness).
-- Typography: units upright with thin space, no red KaTeX, no overflow; the set reads as one.
+- Delta: 8-1, 8-2 (8.00 V, three-figure answer and reasonableness read well), 8-12 (loss-current graph: points distinct from the dashed fitted curve, units on axes), 8-15, 8-17 (loss-graph-curve, labelled axes and units) at 1280 px.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

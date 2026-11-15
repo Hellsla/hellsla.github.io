@@ -10,7 +10,7 @@ SCOPE: delta
 - none
 
 ## Checked
-- fy7-3-open-exercises-L3-1280-3 (the L3 solutions with the changed $17.5^\circ$-type angles and fitted chains) and the L2-07 sensor task wording: $60^\circ$ upright, aligned rows; the figure captions without the "example data" marker are teacher-approved and checked for layout only.
+- fy7-3-open-exercises-L3-1280-3 (neighbouring L3 solutions: layout, units, aligned rows intact). The changed degree signs ($60^\circ$, $17.5^\circ$) in L2-07 and L3-04 were read in the diff only, their own captures not opened. Teacher-approved figure captions are checked for layout only.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4
