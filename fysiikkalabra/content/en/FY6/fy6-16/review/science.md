@@ -1,7 +1,7 @@
-VERDICT: FAIL
-CONTENT-HASH: b2a29f5bb1349f0e
+VERDICT: PASS
+CONTENT-HASH: b64fcfc3e328592d
 ## Blocking
-- A (quantitative, internal consistency). lesson.md:184 now says "The same 40 kWh charge takes almost a day from a socket". The paragraph before it states charging losses (efficiency 80–95 %). The inquiry "tavat" stores 40 kWh into the battery, and lesson-answers.py `t-socket-h` gives this sentence's value as 40 : (0.85 · 1.84) = 25.6 h. The inquiry solution says 26 h and "Charging takes more than a day", and the explain model answer also gives about 26 h. "Almost a day" holds only without losses (21.7 h). That is the very value the inquiry's mistake feedback flags as forgetting the losses. The 80–95 % range gives 22.9–27.2 h, and the three-phase "about four hours" (4.03 h) still includes losses. Fix: "about a day" (true across 80–95 %) or back to "more than a day".
 ## Polish
+- At the upper end of the 80–95 % efficiency range the lesson states, the socket time is 22,9 h (40 kWh : (0,95 · 1,84 kW)). "more than a day" holds at the lesson's own η = 0,85 (25,6 h, lesson-answers.py `t-socket-h`), so this is not an error. If wanted, name the 85 % in the sentence.
 ## Checked
-batch delta review: one wording change at lesson.md:184. Recomputed the socket, single-phase and three-phase times with and without losses against lesson-answers.py and the inquiry. The new wording contradicts the lesson's own loss model. Figure and formula-name changes are the teacher's.
+- batch delta review: lesson.md:184 round-2 change (the socket charging time with charging losses counted). Recomputed: P = 230 V · 8 A = 1,84 kW; t = 40 kWh : (0,85 · 1,84 kW) = 25,6 h > 24 h, and without losses 21,7 h. So the added condition is the one the claim needs. Also recomputed 3,68 kW and 11,04 kW, and the three-phase t = 4,03 h (η = 0,90). The sentence now agrees with the inquiry "tavat" solution, its hint, its no-losses mistake feedback (21,7 h) and the "yli vuorokauden" reasonableness line. Both times in the sentence now use the same model, losses included. Hash was the same at start and end.

@@ -1,7 +1,7 @@
-VERDICT: FAIL
-CONTENT-HASH: 5cef466e8945a470
+VERDICT: PASS
+CONTENT-HASH: 1938cbb208369bd3
 ## Blocking
-- A (quantitative, internal consistency). lesson.md:184 now says "Sama 40 kWh:n lataus kestää pistorasiasta lähes vuorokauden". The text before it states the losses (efficiency 80–95 %), and the inquiry "tavat" stores 40 kWh into the battery. lesson-answers.py `t-socket-h` gives 40 : (0,85 · 1,84) = 25,6 h. The inquiry solution says 26 h and "Lataus kestää yli vuorokauden", and the explain model answer also gives about 26 h. "Lähes vuorokauden" holds only without losses (21,7 h), the value the inquiry's mistake feedback marks as "Unohdit häviöt". The 80–95 % range gives 22,9–27,2 h, and the three-phase "noin neljä tuntia" (4,03 h) includes losses. Fix: "noin vuorokauden" or back to "yli vuorokauden", the same as the fi version.
 ## Polish
+- At the upper end of the 80–95 % efficiency range the lesson states, the socket time is 22,9 h (40 kWh : (0,95 · 1,84 kW)). "yli vuorokauden" holds at the lesson's own η = 0,85 (25,6 h, lesson-answers.py `t-socket-h`), so this is not an error. If wanted, name the 85 % in the sentence.
 ## Checked
-batch delta review: one wording change at lesson.md:184. Recomputed with and without losses against lesson-answers.py and the inquiry. The new wording contradicts the lesson's own loss model. Figure and formula-name changes are the teacher's.
+- batch delta review: lesson.md:184 round-2 change (the socket charging time with charging losses counted). Recomputed: P = 230 V · 8 A = 1,84 kW; t = 40 kWh : (0,85 · 1,84 kW) = 25,6 h > 24 h, and without losses 21,7 h. So the added condition is the one the claim needs. Also recomputed 3,68 kW and 11,04 kW, and the three-phase t = 4,03 h (η = 0,90). The sentence now agrees with the inquiry "tavat" solution, its hint, its no-losses mistake feedback (21,7 h) and the "yli vuorokauden" reasonableness line. Both times in the sentence now use the same model, losses included. Hash was the same at start and end.
