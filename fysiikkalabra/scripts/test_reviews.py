@@ -735,6 +735,53 @@ expect("(c) the fi set changed after the carry (fi hash new, fi science stale): 
        "exercises: draft" in out and "science=missing" in out and "translation-of-passed" not in en("scope"), out)
 code, out = run(t, "reviews.py", "verify")
 expect("... verify: no error, the en exercise set is simply not reviewed", code == 0 and "ERROR" not in out, out[-600:])
+
+# 8n. an item's reflow carry (work queue 5f, teacher 2026-11-15): a unit's (or a Sovella set's or an example exam's)
+# calculation chain re-broken into an aligned display formula carries its science and pedagogy PASS, never the visual one;
+# a changed number, word or sign carries nothing, and verify re-derives the rows
+UNIT = "fy9-kokeellisuus"
+def unit_project():
+    tmp = pathlib.Path(tempfile.mkdtemp())
+    skip = lambda d, names: [n for n in names if n in ("__pycache__", "review")]
+    for d in ("scripts", "lang", "templates", "docs/fy9", f"content/fi/units/{UNIT}", f"lessons/units/{UNIT}"):
+        if (SRC / d).is_dir(): shutil.copytree(SRC / d, tmp / d, ignore=skip)
+    for f in ("local-courses.json", "curriculum.json", "glossary.json", "competencies.json", "CLAUDE.md", "NOTES.md",
+              "docs/teacher-figures.tsv", "docs/presentation-only.tsv"):
+        if (SRC / f).is_file(): (tmp / f).parent.mkdir(parents=True, exist_ok=True); shutil.copy(SRC / f, tmp / f)
+    return tmp
+t = unit_project(); init_git(t); U = t / "content/fi/units" / UNIT; um = U / "unit.md"
+CH3 = "$v = s : t = 12{,}0\\,\\text{m} : 4{,}0\\,\\text{s} = 3{,}0\\,\\text{m/s}$"
+src3 = um.read_text().rstrip("\n") + "\n\nEsimerkiksi " + CH3 + ", joten nopeus on pieni.\n"; um.write_text(src3)
+uh = lambda: run(t, "units.py", "hash", UNIT)[1].strip()
+def ureport(name, verdict="PASS"):
+    (U / "review").mkdir(exist_ok=True); (U / "review" / f"{name}.md").write_text(f"VERDICT: {verdict}\nCONTENT-HASH: {uh()}\n\n## Blocking\nnone\n")
+for n in ("science", "pedagogy", "visual"): ureport(n)
+git(t, "add", "."); git(t, "commit", "-qm", "unit reviewed")
+AL3 = "Esimerkiksi $$\n\\begin{aligned}\nv &= s : t \\\\\n&= 12{,}0\\,\\text{m} : 4{,}0\\,\\text{s} \\\\\n&= 3{,}0\\,\\text{m/s}\n\\end{aligned}\n$$, joten nopeus on pieni."
+def ulift(new_text):
+    um.write_text(src3.replace("Esimerkiksi " + CH3 + ", joten nopeus on pieni.", new_text, 1)); (U / "review/carry.tsv").unlink(missing_ok=True)
+    return run(t, "reviews.py", "carry-item", "unit", UNIT)[1]
+out = ulift(AL3)
+expect("a unit's inline chain lifted into an aligned display formula: science and pedagogy carried over (reflow), visual needed",
+       "science: carried over" in out and "pedagogy: carried over" in out and "visual: calculation chains re-broken into rows: delta review needed" in out
+       and "reflow" in (U / "review/carry.tsv").read_text() and "draft" in out, out)
+ureport("visual"); out = run(t, "reviews.py", "carry-item", "unit", UNIT)[1]
+expect("... and with the visual reviewer's PASS of the new hash the unit is reviewed", out.rstrip().endswith("reviewed"), out)
+git(t, "add", "."); git(t, "commit", "-qm", "reflow carried, visual passed")
+code, out = run(t, "reviews.py", "verify")
+expect("... verify re-derives the unit's reflow carry", not re.search(rf"ERROR \S*{UNIT}", out), out[-600:])
+for what, new_text in (("a number", AL3.replace("4{,}0", "4{,}1")), ("a sign", AL3.replace("s : t", "s \\cdot t")),
+                       ("a word", AL3.replace("nopeus on pieni", "nopeus on melko pieni"))):
+    git(t, "checkout", "-q", "HEAD~1", "--", "content"); (U / "review/visual.md").write_text((U / "review/visual.md").read_text())
+    out = ulift(new_text)
+    expect(f"... but a changed {what} with the re-break carries nothing", "science: carried over" not in out and "review needed" in out, out)
+git(t, "checkout", "-q", "HEAD", "--", "content")
+rows = (U / "review/carry.tsv").read_text().splitlines()
+(U / "review/carry.tsv").write_text("\n".join(rows + ["\t".join([rows[-1].split("\t")[0], "visual"] + rows[-1].split("\t")[2:])]) + "\n")   # forged
+(U / "review/visual.md").write_text((U / "review/visual.md").read_text().replace(uh(), rows[-1].split("\t")[2]))   # the visual PASS of the version before the re-break
+code, out = run(t, "reviews.py", "verify")
+expect("... and verify rejects a visual carry row over a reflow", code == 1 and "does not carry the visual review" in out, out[-600:])
+
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)
