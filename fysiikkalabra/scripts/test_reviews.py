@@ -389,6 +389,61 @@ code, out = run(t, "reviews.py", "scope", LESSON)
 expect("a prose line with a number reworded, its numbers and formulas the same: wording (science delta, not full)", "science: delta" in out and "wording" in out, out)
 p.write_text(src_md)
 
+# 8b2. a calculation chain only re-broken into rows is the category reflow (teacher 2026-11-15): science and pedagogy carry
+# over, the visual reviewer always looks again; any other change in the same text is reviewed as usual
+t = project(); init_git(t); L = t / "content/fi/FY3" / LESSON; p = L / "lesson.md"
+CH = "$F = m a = 2{,}0\\,\\text{kg} \\cdot 3{,}0\\,\\text{m/s}^2 = 6{,}0\\,\\text{N}$"
+src_md = p.read_text().rstrip("\n") + "\n\nSijoitus: " + CH + "\n"
+p.write_text(src_md)
+for n in ("science", "pedagogy", "visual"): report(t, n)
+git(t, "add", "."); git(t, "commit", "-qm", "chain added, all passed")
+def reflow(new_text):
+    p.write_text(src_md.replace(CH, new_text, 1)); return run(t, "reviews.py", "scope", LESSON)[1]
+ROWS = "$F = m a$\n$= 2{,}0\\,\\text{kg} \\cdot 3{,}0\\,\\text{m/s}^2$\n\n$= 6{,}0\\,\\text{N}$"
+out = reflow(ROWS)
+expect("a chain split into rows, nothing else: science and pedagogy none, visual delta, category reflow",
+       "science: none" in out and "pedagogy: none" in out and "visual: delta" in out and "reflow" in out, out)
+for what, new_text in (("a number", ROWS.replace("3{,}0", "3{,}1")), ("a sign", ROWS.replace("\\cdot", "+")), ("a unit", ROWS.replace("m/s}^2", "m/s}^3")),
+                       ("the order", "$F = m a$\n$= 3{,}0\\,\\text{m/s}^2 \\cdot 2{,}0\\,\\text{kg}$\n\n$= 6{,}0\\,\\text{N}$")):
+    out = reflow(new_text)
+    expect(f"... but a changed {what} in the rows is not reflow: science is not none", "science: full" in out and "pedagogy: delta" in out, out)
+out = reflow(ROWS + " Lisäsana.")
+expect("... a word added next to the re-broken chain is reviewed as usual: science is not none", "science: none" not in out, out)
+out = reflow(ROWS.replace("6{,}0", "6{,}1"))
+expect("... a number changed while the chain is also re-broken: science full", "science: full" in out, out)
+p.write_text(src_md); code, out = run(t, "reviews.py", "carry", LESSON)
+expect("no carry is written when nothing changed", "carried over" not in out, out)
+reflow(ROWS); code, out = run(t, "reviews.py", "carry", LESSON)
+expect("carry records reflow for science and pedagogy only", "science: carried over" in out and "pedagogy: carried over" in out and "visual: delta review needed" in out, out)
+code, out = run(t, "reviews.py", "verify")
+expect("verify re-derives the reflow carry in CI", code == 0 and "ERROR" not in out, out)
+
+sys.path.insert(0, str(SRC / "scripts")); import reviews as _rv
+_j = lambda x: json.dumps({"solution": x}, ensure_ascii=False, indent=1)
+expect("reflow in an exercise set's JSON (a line break is \\n in the string): same chain, same view",
+       _rv.chain_view(_j("Sij: $a = b = c$"), "x.json") == _rv.chain_view(_j("Sij: $a = b$\n$= c$"), "x.json")
+       and _rv.chain_view(_j("Sij: $a = b = c$"), "x.json") != _rv.chain_view(_j("Sij: $a = b$\n$= d$"), "x.json"))
+
+# the teacher's fy2-3 case (2026-11-15): a long inline formula lifted into its own display formula, aligned at the equals signs
+CH2 = "$E = 1500 \\cdot 3{,}0\\,\\text{kWh} = 4500\\,\\text{kWh}$"
+src2 = src_md.replace(CH, "Hän kirjoittaa " + CH2 + " ja hinnaksi $900\\,\\text{€}$.", 1); p.write_text(src2)
+git(t, "add", "."); git(t, "commit", "-qm", "the fy2-3 formula as an inline formula")
+for n in ("science", "pedagogy", "visual"): report(t, n)
+git(t, "add", "."); git(t, "commit", "-qm", "reviewed")
+AL = "Hän kirjoittaa\n\n$$\\begin{aligned} E &= 1500 \\cdot 3{,}0\\,\\text{kWh} \\\\ &= 4500\\,\\text{kWh} \\end{aligned}$$\n\nja hinnaksi $900\\,\\text{€}$."
+def lift(new_text):
+    p.write_text(src2.replace("Hän kirjoittaa " + CH2 + " ja hinnaksi $900\\,\\text{€}$.", new_text, 1)); return run(t, "reviews.py", "scope", LESSON)[1]
+out = lift(AL)
+expect("an inline formula lifted into an aligned display formula (fy2-3): science and pedagogy none, visual delta, reflow",
+       "science: none" in out and "pedagogy: none" in out and "visual: delta" in out and "reflow" in out, out)
+for what, new_text in (("a number", AL.replace("4500", "4501")), ("a sign", AL.replace("\\cdot", "+")), ("a unit", AL.replace("kWh} \\\\", "Wh} \\\\")),
+                       ("the order", AL.replace("1500 \\cdot 3{,}0", "3{,}0 \\cdot 1500"))):
+    out = lift(new_text)
+    expect(f"... but a changed {what} in the aligned rows is not reflow: science full", "science: full" in out and "pedagogy: delta" in out, out)
+out = lift(AL.replace("ja hinnaksi", "ja lisäksi hinnaksi"))
+expect("... a word added next to the lifted formula is reviewed as usual", "science: none" not in out, out)
+p.write_text(src_md)
+
 # 8c. investigations, TVT guides and Sovella sets: three reports, or a baseline row for exactly this hash
 sys.path.insert(0, str(HERE)); import reviews as rv
 expect("a value with its unit set as maths is typography", rv._typography_pair("paksuus on 82 µm.", r"paksuus on $82\,\mu\text{m}$."))
