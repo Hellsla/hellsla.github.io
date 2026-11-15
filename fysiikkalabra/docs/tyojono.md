@@ -26,15 +26,6 @@ tarkistetaan ensin kuvista (fy10-hiuksen-paksuus antoi kahdella ajolla eri tulok
 kuvasääntö erillisenä eränä opettajan päätöksellä; jaettujen komponenttien muutokset (`templates/`, `screenshot.py`:n
 tyhjät 28×28 px kaappaukset) tehdään yksin. Voi kulkea rinnakkain kohdan 2 kanssa.
 
-## 4c. Esittelyvideo Opettajalle-sivun alkuun (opettaja 2026-11-15)
-
-Varattu: claude/nice-maxwell-8luw7m
-
-Ruukkilabran esittelyvideo (selostus ja musiikki, kuva ajoitettu selostukseen) Työkalut-sivun alkuun: suomenkielinen
-video suomen- ja selkosuomenkielisellä sivulla, englanninkielinen englanninkielisellä. Videot kerran kansiossa
-`tyokalut/video/`, ei automaattista toistoa. Ahjon videota ei upoteta. Jaettu muutos (`scripts/build.py`, `lang/`,
-`templates/site.css`): yksin.
-
 ## 5. CI:n toistettavuus (2026-11-13)
 
 Tapa ajaa selaintarkistukset CI:n kontissa (`mcr.microsoft.com/playwright/python:v1.65.0-noble`) paikallisesti, ja

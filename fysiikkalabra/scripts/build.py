@@ -252,6 +252,7 @@ def teacher_page_body(name):
     screen = (TOOLS / "luokkanaytto.html").is_file()
     return (f'<h1>{esc(T("teacher.title"))}</h1>'
             f'<p class="lead">{esc(T("teacher.lead"))}</p>'
+            + teacher_video()
             + (f'<section class="teacher-tool"><h2>{esc(T("teacher.screen_h"))}</h2>'
                f'<p><a class="pad-btn" href="tyokalut/luokkanaytto.html">{esc(T("teacher.screen_open"))}</a></p></section>' if screen else '')
             + f'<section class="teacher-tool"><h2>{esc(T("teacher.grading_h"))}</h2>'
@@ -261,6 +262,18 @@ def teacher_page_body(name):
             f'<section class="teacher-steps"><h2>{esc(T("teacher.steps_h"))}</h2><ol>'
             + "".join(f'<li>{T(f"teacher.step_{i}", returns=pal)}</li>' for i in range(1, 6)) + '</ol></section>'   # the steps keep their <i> and <b>
             + teacher_examples())
+
+
+def teacher_video():
+    """The introduction video at the top of Työkalut (teacher 2026-11-15): narration and music, the picture timed to the
+    narration. The page's own language when tyokalut/video/ has it (en), otherwise the Finnish one (fi, fi-easy). Never
+    plays by itself and loads only when the viewer starts it (preload="none"); the captions are part of the picture."""
+    name = next((n for n in (f"ruukkilabra-esittely-{T.lang}", f"ruukkilabra-esittely-{i18n.SOURCE}") if (TOOLS / "video" / f"{n}.mp4").is_file()), None)
+    if not name: return ''
+    return (f'<section class="teacher-video"><h2>{esc(T("teacher.video_h"))}</h2>'
+            f'<video controls preload="none" playsinline width="1920" height="1080" poster="tyokalut/video/{name}.webp" aria-label="{esc(T("teacher.video_h"))}">'
+            f'<source src="tyokalut/video/{name}.mp4" type="video/mp4"></video>'
+            f'<p>{esc(T("teacher.video_p"))}</p></section>')
 
 
 SHOTS = [("opiskelija", 1600, 702), ("opettaja-kooste", 1190, 1140), ("opettaja-sormenjalki", 1594, 656), ("opettaja-arviointi", 1600, 594)]   # captions: lang "teacher.shot_<name>"
@@ -793,14 +806,14 @@ removed = []   # lessons on the live site that this build leaves out
 
 def rebase(html):
     """A page of another language lives in site/<lang>/ and shares the assets of site/ (style, scripts, vendor/, the
-    simulations and pictures): every relative src, href and data-base that is not a page gets the prefix ../ .
+    simulations and pictures): every relative src, href, poster and data-base that is not a page gets the prefix ../ .
     Every page passes here, so here a figure shown twice gets its own definition ids (svgids.py, teacher 2026-10-29)
     and a figure is never drawn larger than it was designed (figsize.py, teacher 2026-11-12)."""
     html = figsize.natural(svgids.namespace(html))
     if svgids.duplicates(html): sys.exit(f"ERROR: repeated ids on a page: {', '.join(svgids.duplicates(html))} (scripts/svgids.py)")
     if not UP: return html
     keep = lambda v: re.match(r"[a-z]+:|#|/|\.\./", v) or re.match(r"[\w.-]+\.html([#?]|$)", v)
-    return re.sub(r'\b(src|href|data-base)="([^"]*)"', lambda m: m.group(0) if keep(m.group(2)) else f'{m.group(1)}="{UP}{m.group(2)}"', html)
+    return re.sub(r'\b(src|href|data-base|poster)="([^"]*)"', lambda m: m.group(0) if keep(m.group(2)) else f'{m.group(1)}="{UP}{m.group(2)}"', html)
 
 
 def languages_nav(name):

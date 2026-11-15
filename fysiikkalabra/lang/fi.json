@@ -3191,6 +3191,8 @@
     "title": "Työkalut",
     "lead": "Opettajan työkalut: luokan näyttö ja palautusten arviointi omalla koneella.",
     "desc": "Opettajan työkalut: luokkanäyttö ja arviointisivu.",
+    "video_h": "Esittelyvideo",
+    "video_p": "Kolmen minuutin video näyttää oppitunnin seitsemän vaihetta, tehtävien tekemisen ja opettajan näkymät. Videossa on selostus ja musiikkia.",
     "screen_h": "Luokkanäyttö",
     "screen_open": "Avaa luokkanäyttö",
     "grading_h": "Arviointityökalu",
