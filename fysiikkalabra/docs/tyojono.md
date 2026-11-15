@@ -53,6 +53,24 @@ molemmat:
    mikä tahansa muu muutos samassa tehtävässä katselmoidaan normaalisti.
 Jaettu muutos, ajetaan yksin, ennen kohtia 6 ja 8l. Sen jälkeen #593 (fy8-2) jatkaa kolmannella korjauksella.
 
+## 5c. ElevenLabs-ääneenluku FY1 ja FY2 (opettaja 2026-11-15)
+
+Suomenkielisten FY1- ja FY2-lukujen Kuuntele-nappi soittaa etukäteen tehdyn ElevenLabs-äänitteen; muut kielet ja kurssit
+jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md, testit): ajetaan yksin, 5b:n (#594) jälkeen.
+- Äänitteet tehdään skriptillä (`scripts/`), ei koskaan oppilaan selaimesta. API-avain on ympäristön network secret
+  osoitteelle api.elevenlabs.io (otsake `xi-api-key`; tallennettu ympäristöön hellsla.github.io 2026-11-15); avainta ei
+  kirjoiteta repoon.
+- Skripti avaa rakennetun sivun Playwrightilla ja ottaa `readaloud.js`:ltä samat lohkot ja saman puhetekstin kuin
+  Kuuntele-nappi lukee (Pohdinta ja Teoria; ei tehtäviä, vihjeitä eikä ratkaisuja). Kaavat sanoiksi `lang/fi.json`
+  "speech"-säännöillä, luvut ja yksittäiset tunnukset kirjoitettuna auki.
+- Yksi mp3 ja aikaleimat per lohko, sidottuna lohkon puhetekstin tiivisteeseen. Muuttunut lohko luetaan Supertonicilla,
+  kunnes se generoidaan uudelleen. Lauseen ja sanan korostus säilyy.
+- Ensin ääninäytteet: sama fy1-1:n kappale kolmella suomenkielisellä kirjastoäänellä opettajan valittavaksi. Pysähdys valintaan.
+- Sitten pilotti: vain fy1-1. PR:ään lista fy1-1:n kaavoista muodossa "TeX → puheteksti", äänitiedostojen yhteiskoko ja
+  käytetty merkkimäärä. Pysähdys opettajan kuunteluun.
+- `CLAUDE.md`:n Ääneenluku-kappale ja `test_readaloud.py` päivitetään samassa PR:ssä. Lukujen tekstejä ei muuteta, joten
+  katselmoinnit eivät vanhene.
+
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13, 2026-11-14 ja 2026-11-15)
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
