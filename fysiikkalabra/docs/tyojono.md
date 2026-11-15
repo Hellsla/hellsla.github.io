@@ -423,17 +423,37 @@ koetila ja minikokeet, kertauspolku, kielten tarkistus) muuttavat jaettuja tiedo
 kerrallaan, kohdan 10 PR 1–PR 5:n ja kohdan 11 U1:n jälkeen; PR 9 Abitti 2 -ohje (sisältö); PR 10 kielimallin
 selvitys (dokumentti). Arvio noin 2,5–3,5 M tokenia.
 
-## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
+## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
 
-`kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
-käsitekortteja eikä alleviivauksia.
+Ohjeet, nykytila, testit ja päätökset K1–K9: `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`.
+Jokainen osa on oma ketjunsa, haaransa ja luonnos-PR:nsä; lähes kaikki muuttavat jaettuja tiedostoja, joten ne
+tehdään yksin, yksi kerrallaan. Uusien käyttöliittymätekstien sanamuodot luetellaan PR:n kuvauksessa, ja opettaja
+hyväksyy ne yhdistämällä. Tallennusavaimia, tiedostomuotoja ja korttien id:itä ei muuteta.
 
-## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; järjestys 2026-11-14)
+- **17a Verkoton käyttö ja asennus:** PR 1 service worker (käydyt sivut toimivat verkotta), PR 2 manifesti ja
+  pysyvä tallennus, PR 3 moduuli laitteelle (pilotti FY3, pysähtyy hyväksyntään).
+- **17b Koko työ yhteen tiedostoon:** PR 1 varmuuskopio `ruukkilabra-kaikki` v1 (myös korttipakka), PR 2 jakovalikko
+  puhelimessa.
+- **17c Yleisvirheiden tunnistus:** PR 1 yleinen tunnistus (etumerkki, kertaluokka, aika, kelvin) `lesson.js`:ään,
+  kohdan 10 PR 2–PR 5:n ja kohdan 11 U1–U3:n jälkeen; PR 2 tehtäväkohtaiset virheet kurssi kerrallaan
+  sisältömuutosten yhteydessä.
+- **17d Ajoitettu kertaus:** PR 1 kortit palaavat pakkaan 5, 10 ja 20 vrk:n päästä; PR 2 sekoitettu kertaus
+  FY1–FY8:lle FY9-valmentajan laajennuksena, kohdan 11b PR 4:n jälkeen.
+- **17e Luokan yhteenveto arviointisivulle:** tehtävittäin ja tavoitteittain, ilman nimiä; 17c PR 1:n jälkeen.
+- **17f Hakemistot ja haku:** PR 1 kaavahakemisto, PR 2 simulaatiogalleria, PR 3 koko sivuston haku.
 
-Kilparobotiikka on kirjoitettu jaksopohjan lohkoina (#516–#517, `scripts/jaksot.py`); Ahjo ja LUMA-tutor piirtyvät
-vielä osin omilla moduuleillaan (`ahjo.py`, `lumatutor.py`). Siirretään ne samaan pohjaan niin, että sivut pysyvät
-tavulleen samoina kuten Kilparobotiikassa, ja puuttuvat lohkot lisätään yhteiseen lohkokirjastoon. Jaettuja
-tiedostoja: tehdään yksin.
+Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2.
+
+## 18. Oikoluvun korjaukset FY1–FY9 (opettaja 2026-11-15)
+
+Ohjeet ja päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md` kohdat 4–11 ja 13. Kaikki luvut, kurssi kerrallaan,
+ilman pilottipysähdystä (opettaja: "kaikki luvut vaan, ei ongelma jos tokeneita menee"); kulutus raportoidaan, mutta
+budjetti ei pysäytä työtä. Katselmointi on delta-katselmointi vain muuttuneista kohdista; jos `reviews.py scope` vaatii
+täyden katselmoinnin, työntekijä kertoo koordinaattorille ennen ajoa. Kurssin kaikki korjaukset (väitteet,
+merkitsevät numerot, termit, "lämmöksi", likiarvorivit, kieli) samalla kierroksella (P2), myös tehtävänannot,
+inquiry.json, kuvien tekstit ja käännökset. Kurssi aloitetaan, kun kohta 8m on yhdistetty ja kurssin kohdan 5d
+leikkautuvat kaavat ovat mainissa (FY8 odottaa #601:tä). Avoin kohta 12 ratkesi päätöksellä P9: pieniä arvoeroja ei
+muuteta. Yksi kurssi = yksi haara ja yksi PR; enintään kuusi työntekijää yhtä aikaa.
 
 ## 15. Kustannustoimituksellinen lopputarkistus FY1–FY8 (opettaja 2026-11-14)
 
@@ -472,38 +492,21 @@ merkitään hyväksytyksi.
 (kohta 16) on tehty. Työ on laaja
 (113 lukua), joten se tehdään kurssi kerrallaan omissa ketjuissaan (`/quality-audit <id> --audit-only`, budjetit
 `.claude/commands/lesson.md`).
+Järjestys (opettaja 2026-11-15): kohtien 17 ja 18 jälkeen; sen jälkeen 13, 14 ja viimeisenä 16.
 
-## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
+## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
-Ohjeet, nykytila, testit ja päätökset K1–K9: `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`.
-Jokainen osa on oma ketjunsa, haaransa ja luonnos-PR:nsä; lähes kaikki muuttavat jaettuja tiedostoja, joten ne
-tehdään yksin, yksi kerrallaan. Uusien käyttöliittymätekstien sanamuodot luetellaan PR:n kuvauksessa, ja opettaja
-hyväksyy ne yhdistämällä. Tallennusavaimia, tiedostomuotoja ja korttien id:itä ei muuteta.
+`kortit/en/` ei sisällä tiedostoja `fy6.json` ja `fy8.json`, joten englanninkielisillä FY6- ja FY8-sivuilla ei ole
+käsitekortteja eikä alleviivauksia.
+Järjestys (opettaja 2026-11-15): lopputarkistuksen (15) jälkeen, juuri ennen kohtaa 14.
 
-- **17a Verkoton käyttö ja asennus:** PR 1 service worker (käydyt sivut toimivat verkotta), PR 2 manifesti ja
-  pysyvä tallennus, PR 3 moduuli laitteelle (pilotti FY3, pysähtyy hyväksyntään).
-- **17b Koko työ yhteen tiedostoon:** PR 1 varmuuskopio `ruukkilabra-kaikki` v1 (myös korttipakka), PR 2 jakovalikko
-  puhelimessa.
-- **17c Yleisvirheiden tunnistus:** PR 1 yleinen tunnistus (etumerkki, kertaluokka, aika, kelvin) `lesson.js`:ään,
-  kohdan 10 PR 2–PR 5:n ja kohdan 11 U1–U3:n jälkeen; PR 2 tehtäväkohtaiset virheet kurssi kerrallaan
-  sisältömuutosten yhteydessä.
-- **17d Ajoitettu kertaus:** PR 1 kortit palaavat pakkaan 5, 10 ja 20 vrk:n päästä; PR 2 sekoitettu kertaus
-  FY1–FY8:lle FY9-valmentajan laajennuksena, kohdan 11b PR 4:n jälkeen.
-- **17e Luokan yhteenveto arviointisivulle:** tehtävittäin ja tavoitteittain, ilman nimiä; 17c PR 1:n jälkeen.
-- **17f Hakemistot ja haku:** PR 1 kaavahakemisto, PR 2 simulaatiogalleria, PR 3 koko sivuston haku.
+## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; järjestys 2026-11-14)
 
-Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2.
-
-## 18. Oikoluvun korjaukset FY1–FY9 (opettaja 2026-11-15)
-
-Ohjeet ja päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md` kohdat 4–11 ja 13. Kaikki luvut, kurssi kerrallaan,
-ilman pilottipysähdystä (opettaja: "kaikki luvut vaan, ei ongelma jos tokeneita menee"); kulutus raportoidaan, mutta
-budjetti ei pysäytä työtä. Katselmointi on delta-katselmointi vain muuttuneista kohdista; jos `reviews.py scope` vaatii
-täyden katselmoinnin, työntekijä kertoo koordinaattorille ennen ajoa. Kurssin kaikki korjaukset (väitteet,
-merkitsevät numerot, termit, "lämmöksi", likiarvorivit, kieli) samalla kierroksella (P2), myös tehtävänannot,
-inquiry.json, kuvien tekstit ja käännökset. Kurssi aloitetaan, kun kohta 8m on yhdistetty ja kurssin kohdan 5d
-leikkautuvat kaavat ovat mainissa (FY8 odottaa #601:tä). Avoin kohta 12 ratkesi päätöksellä P9: pieniä arvoeroja ei
-muuteta. Yksi kurssi = yksi haara ja yksi PR; enintään kuusi työntekijää yhtä aikaa.
+Kilparobotiikka on kirjoitettu jaksopohjan lohkoina (#516–#517, `scripts/jaksot.py`); Ahjo ja LUMA-tutor piirtyvät
+vielä osin omilla moduuleillaan (`ahjo.py`, `lumatutor.py`). Siirretään ne samaan pohjaan niin, että sivut pysyvät
+tavulleen samoina kuten Kilparobotiikassa, ja puuttuvat lohkot lisätään yhteiseen lohkokirjastoon. Jaettuja
+tiedostoja: tehdään yksin.
+Järjestys (opettaja 2026-11-15): juuri ennen vihkoja (16).
 
 ## 16. Vihkot FY1–FY8 nykyisellä tiiviillä asettelulla (opettaja 2026-11-13; jonon viimeinen 2026-11-14 ja 2026-11-15)
 

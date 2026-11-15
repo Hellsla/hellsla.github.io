@@ -45,11 +45,6 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
     any time; the shared PR 2–8 one at a time after step 10's PR 1–PR 5 and step 11's U1.
 12. Targeted content corrections in FY3–FY8 (queue 12, teacher 2026-11-14, `docs/audits/2026-11-14-kohdennetut-sisaltokorjaukset.md`):
     thirteen small fixes to reviewed content, delta reviews of the changed passages only, one pull request.
-13. English concept cards for FY6 and FY8 (queue: later, the teacher's decision).
-14. Ahjo and LUMA-tutor onto the shared unit template (`jaksot.py` blocks, as Kilparobotiikka). Shared files,
-    so alone.
-15. Editorial final review of FY1–FY8 (queue 15, teacher 2026-11-14): after every other step except the booklets (step 16); a report first, course by course, with verified
-    errors, possible problems and optional improvements apart; no source changes until the teacher has read it.
 17. Development without logins (queue 17, teacher 2026-11-15, `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`,
     decisions K1–K9): offline use and installing (17a), the whole work in one file (17b), recognising common mistakes in
     numeric tasks (17c), spaced review of the concept cards (17d), a class summary on the grading page (17e), indexes
@@ -60,6 +55,11 @@ work is in `CLAUDE.md` at the repository root. Update it when the teacher change
     decisions P1–P9): every chapter, course by course, no pilot stop; delta reviews of the changed passages only. The
     shared part (curriculum, glossary, rules, `physics_phrases.py`) goes with step 8m and merges first; each course
     starts once 8m and that course's clipped-formula fixes (5d) are on main.
+15. Editorial final review of FY1–FY8 (queue 15, teacher 2026-11-14): after steps 17 and 18 and every other step except 13, 14 and the booklets (teacher 2026-11-15); a report first, course by course, with verified
+    errors, possible problems and optional improvements apart; no source changes until the teacher has read it.
+13. English concept cards for FY6 and FY8 (queue: later, the teacher's decision; teacher 2026-11-15: after step 15, just before step 14).
+14. Ahjo and LUMA-tutor onto the shared unit template (`jaksot.py` blocks, as Kilparobotiikka). Shared files,
+    so alone. Teacher 2026-11-15: just before the booklets (step 16).
 16. Last (teacher 2026-11-14; after steps 17 and 18, teacher 2026-11-15: no proofreading after the booklets): printed A5 booklets for FY1–FY8 in the current compact layout (`print_book.py --publish`): FY1–FY4 again, FY5–FY8
     new; each course after its data-book formulas (step 3) are merged.
 
