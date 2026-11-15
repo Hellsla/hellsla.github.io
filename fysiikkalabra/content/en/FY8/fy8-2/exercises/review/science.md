@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 1de1e6f9b64da513
+CONTENT-HASH: aee274b8dfc29f65
 SCOPE: delta added-exercise from d4cac7da6f13b625 base f6ae5d507c79
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- solutions.md fy8-2-L3-06 Answer — "a reading error of a few nanometres already affects the third figure" is ambiguous. ±2 nm in each line moves ΔE by about ±0.02 eV (0.767–0.814), so it reaches the second significant figure of 0.79, which is the second decimal of 3.06 and 2.27 — name which numbers are meant.
+- solutions.md fy8-2-L2-09 Reading the graph — "The blue line is the one closest to 436 nm" assumes the value it is meant to read. Describe the line's position first (between 430 and 440 nm) and then give 436 nm.
 
 ## Checked
-- I recomputed fy8-2-L2-09 with my own script: E = hc/λ at 436 nm gives 4.556e-19 J = 2.844 eV. That matches answers.py (2.844029) and the JSON (2.84 eV). Readings of 433–439 nm give 2.825–2.864 eV, so a tolerance of 0.03 fits a few nm of reading error.
-- I recomputed fy8-2-L3-06. E_v(405 nm) = 3.0617 eV and E_g(546 nm) = 2.2711 eV, so ΔE = 0.7907 eV. That matches answers.py and the JSON (0.79 eV). Readings 2 nm either way give 0.77–0.81 eV, inside the tolerance of 0.05.
-- L3-06 physics: both transitions start from the same upper state, so E_u cancels and the difference of the photon energies is the difference of the lower levels. The model answer for c is right: the two photons are alternative transitions of one atom, not consecutive steps, and a sum would count E_u twice.
-- The L3-06 data matches real mercury levels. 7s ³S₁ (7.730 eV) → 6p ³P₀ (4.667 eV) gives 404.8 nm and → ³P₂ (5.461 eV) gives 546.4 nm. The lower levels differ by 0.794 eV, which agrees with 0.79 to two significant figures as the solution says.
-- The corrected 1570 nm remark is right: 1240 eV nm / 0.79 eV ≈ 1570 nm (1561 nm from 0.794 eV), which is infrared. It is worded as a conditional ("if an atom could move…"), so it does not claim such a line exists.
-- The figure has lines at 405, 436, 546, 577 and 579 nm on a 380–720 nm scale, small ticks every 10 nm and numbers every 50 nm. The 436 nm line is drawn blue (Bruton colour, b = 1, r ≈ 0.07). The figure gives every value both tasks need, and its description carries the same information. Neither gives away an answer.
-- Both solutions are complete. Each states the principle with its reason, gives the formula symbolically before substituting (ΔE = E_v − E_g derived from the two transition equations), shows conversions and substitution with units, justifies the rounding by the reading uncertainty (3 s.f. and 2 s.f.), and checks reasonableness against the 1240 eV nm shortcut, line ordering and tabulated levels.
-- Scope: E = hf with eV conversion and transitions between quantised states fall within FY8's central contents and the lesson's brief. Notation and constants (h, c, e) are the FY8 conventions. The English text uses decimal points.
-- Hash 1de1e6f9b64da513 at start and end.
+- I recomputed in my own script (h = 6.626e-34, c = 2.998e8, e = 1.602e-19): hc = 1.9865e-25 J m. L2-09: 4.5561e-19 J = 2.8440 eV, so 2.84 eV. L3-06: 3.0617 − 2.2711 = 0.7907 eV, so 0.79 eV. These match answers.py (2.844029; 0.790664), the JSON and every intermediate value ✓.
+- The split chains are correct. L2-09 computes hc as its own step, then J, then eV. In L3-06 a), hc/(λ·e) with e in J/eV gives eV directly, and the units carry through ✓.
+- Renamed indices: E_viol and E_green, E_u, and E_l,viol and E_l,green are consistent. ΔE = E_l,green − E_l,viol = E_viol − E_green has the right sign (the green line ends at 6³P₂, 5.461 eV, which is above 6³P₀) ✓.
+- c) model answer: the two lines are alternative transitions, not a cascade. A sum (5.33 eV) would count E_u twice. This is correct ✓.
+- Reasonableness: 5.461 − 4.667 = 0.794 eV agrees with NIST. The 1570 nm remark is conditional (hc/0.7907 eV = 1568 nm) ✓.
+- Tolerances are unchanged and fair. L2-09: ±0.03 covers readings from 434 to 441 nm. L3-06: ±0.05 covers ±2 nm in both readings ✓.
+- The figure is unchanged: it is to scale (lines at 405, 436 and 546 nm) and does not give the answers away ✓.
+- The numbers and physics are the same as in the Finnish version ✓.
+- Hash aee274b8dfc29f65 at the start and the end.

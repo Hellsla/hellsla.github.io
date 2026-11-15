@@ -1,20 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: e5f214473aa0341c
-SCOPE: delta added-exercise from e7c7b458ee26ff45 base f6ae5d507c79
+CONTENT-HASH: f8a99910a377f36b
+SCOPE: delta round 2 (formula chains split, subscripts renamed, precision wordings)
 
 ## Blocking
 (none)
 
 ## Polish
-- solutions.md L3-06 — alaindeksi g (vihreä) on englannin "green"; käytä esim. $\text{vi}$ (v = violetti) tai selitä merkintä Annettu-rivillä.
-- solutions.md L2-09 Kuvaajan lukeminen — "energian toinen desimaali on varma": ±3 nm antaa noin ±0,02 eV; sano "energia on varma noin ±0,02 eV". Lause "epävarmuus on muutaman nanometrin luokkaa" on S2-lukijalle vaikea; selitä "lukemasi voi olla muutaman nanometrin pielessä".
-- exercises.json L3-06 — "Vastauslaatikkoon tulee kohdan b) tulos." sopii; lisää kohtaan a) "Laske sitten" kuten L2-09:ssä, jotta kaksi käskyä on omissa lauseissaan (jo tehty a-kohdassa, tarkista yhtenäisyys).
+- solutions.md L3-06 reading the graph / answer — "lähes yhtä suuren energian" ylikorostaa (3,06 ja 2,27 eV); sano "vähennyksessä numeroita katoaa, joten suhteellinen virhe kasvaa". Lause on myös pitkä easy-tasolle: jaa kahtia.
+- "Voit olla luetussa arvossa muutaman nanometrin pielessä" on selkeä ja sopii easy-versioon; L2-09 kolmas numero on silti epävarma (±0,02 eV), mainitse.
 
 ## Checked
-- L2-09: taso 2 sopii; "emissiospektri eli lampun lähettämän valon värit viivoina" selittää termin S2-lukijalle; kysymys omana lauseenaan viimeisenä.
-- L2-09: teksti ei paljasta arvoa; kuva ja kuvaus antavat tarvittavan; toleranssi 0,03 kattaa lukuvirheen.
-- L3-06: taso 3 sopii; fysiikka oikein (0,79 eV, taulukkoarvo 0,794 eV); mallivastaus korjaa summa-virheen ja on jaettu lyhyisiin lauseisiin.
-- Kuva ei paljasta vastausta; "tuntematon lamppu" ja elohopea eivät ole ristiriidassa.
-- Ei toista esimerkkiä (neon) eikä L1-01:tä; kuvaajatehtävät lisäävät joukon kind-vaihtelua.
-- Ratkaisut täydelliset ja samat kuin fi:ssä, lauseet lyhyempiä.
-- Menetelmä: vain teksti (paketti).
+- L2-09 chain split into hc, E in J, E in eV: each step one operation, units carried; 1.9865e-25/436e-9 = 4.556e-19 J and /1.602e-19 = 2.844 eV verified.
+- L2-09 "energy secure to about ±0.02 eV": ±3 nm at 436 nm gives 0.02 eV; consistent, and answer tolerance 0.03 still covers it.
+- L3-06 subscripts (viol/vihr or viol/green; E_a,viol etc.) are consistent across Given, Asked, Formula, Substitution; the g/green clash from round 1 is gone.
+- L3-06 numbers verified: 3.0617, 2.2711, 0.7907 eV; 0.794 eV table value; 1240/0.79 = 1570 nm; the split Reasonableness formulas read cleanly.
+- Model answer in c) still repairs the sum misconception directly.
+- Figure lamp-spectrum and its description unchanged by the diff: no answer disclosed.
