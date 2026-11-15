@@ -815,7 +815,7 @@
           "id": "d",
           "kind": "word",
           "points": 2,
-          "text": "Testissä pisimmälle ajaneen auton toimintamatka jäi suhteellisesti eniten ilmoitetusta. Tästä ei voi päätellä, että se kestää pakkasta huonommin kuin muut autot. Selitä aineiston avulla, miksi ei.",
+          "text": "Testin raportin mukaan pisimmälle ajaneen auton toimintamatka jäi suhteellisesti eniten jälkeen ilmoitetusta. Tästä ei voi päätellä, että se kestää pakkasta huonommin kuin muut autot. Selitä aineiston avulla, miksi ei.",
           "criteria": [
             {
               "text": "Käyttää aineistoa: lämpötila laski reitin varrella $-7\\,{}^\\circ\\text{C}$:sta $-32\\,{}^\\circ\\text{C}$:seen. Pisimmälle ajanut auto ajoi siksi suuren osan matkastaan kylmimmällä osuudella ja oli pakkasessa pisimpään. Lyhyen toimintamatkan auto pysähtyi jo $-16\\,{}^\\circ\\text{C}$:n kohdalla.",
