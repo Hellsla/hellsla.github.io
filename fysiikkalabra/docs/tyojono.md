@@ -36,9 +36,43 @@ sijoitusketjun ylivuotoa en-versiossa (oikea reuna 372 px vs. laatikko 330 px, y
 löysi sen); lisää `check_layout.py`:hin tarkistus, joka mittaa ratkaisun kaavaketjun ylivuodon avoimessa tilassa
 kaikilla kielillä 360 ja 390 px:llä.
 
-## 6. Kuvatehtävät FY8, FY9, FY10 ja FY14, taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13 ja 2026-11-14)
+## 5b. Leikkautuva kaava: tarkistus ja rivijako-carry (opettaja 2026-11-15)
 
-Varattu: claude/fy8-kuva-taulukkotehtavat (FY8, erä 1: fy8-1…3, PR #590)
+Kohta 6 pysähtyi (fy8-1 #590, fy8-2 #593): ulkoasukatselmointi hylkäsi kahdessa erässä peräkkäin ratkaisujen
+kaavaketjut, jotka leikkautuvat 360 px:llä (esim. "m/s" → "m/"). `check_layout.py` ei havaitse leikkautumista, ja jokainen
+rivijakokorjaus vanhentaa kaikki katselmoinnit (fy8-2: noin 650 k ennen kolmatta kierrosta). Opettaja 2026-11-15 hyväksyi
+molemmat:
+1. `check_layout.py` havaitsee KaTeX-kaavan, joka leikkautuu tai ylittää laatikkonsa (myös inline-kaava ja avattu
+   ratkaisu, kaikilla kolmella kielellä), jotta kehittäjä korjaa sen ennen katselmointeja. Testi löydöksillä fy8-2 L2-09
+   ja L3-06 (#593:n kuvaus) ja fy8-1 L2-08 (#590).
+2. Uusi carry-kategoria: kaavaketjun pelkkä rivijako (samat luvut, merkit ja yksiköt samassa järjestyksessä, vain
+   rivinvaihdot ja `=`-rivien jako muuttuvat) siirtää tiede- ja pedagogiikkakatselmoinnit muutoksen yli. Ulkoasu
+   katselmoidaan aina uudelleen. `reviews.py scope` tunnistaa ja `verify` johtaa sen uudelleen CI:ssä (kuten `formula-names`);
+   mikä tahansa muu muutos samassa tehtävässä katselmoidaan normaalisti.
+Jaettu muutos, ajetaan yksin, ennen kohtia 6 ja 8l. Sen jälkeen #593 (fy8-2) jatkaa kolmannella korjauksella.
+
+## 5c. ElevenLabs-ääneenluku FY1 ja FY2 (opettaja 2026-11-15)
+
+Suomenkielisten FY1- ja FY2-lukujen Kuuntele-nappi soittaa etukäteen tehdyn ElevenLabs-äänitteen; muut kielet ja kurssit
+jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md, testit): ajetaan yksin, 5b:n (#594) jälkeen.
+- Äänitteet tehdään skriptillä (`scripts/`), ei koskaan oppilaan selaimesta. API-avain on ympäristön network secret
+  osoitteelle api.elevenlabs.io (otsake `xi-api-key`; tallennettu ympäristöön hellsla.github.io 2026-11-15); avainta ei
+  kirjoiteta repoon.
+- Skripti avaa rakennetun sivun Playwrightilla ja ottaa `readaloud.js`:ltä samat lohkot ja saman puhetekstin kuin
+  Kuuntele-nappi lukee (Pohdinta ja Teoria; ei tehtäviä, vihjeitä eikä ratkaisuja). Kaavat sanoiksi `lang/fi.json`
+  "speech"-säännöillä, luvut ja yksittäiset tunnukset kirjoitettuna auki.
+- Yksi mp3 ja aikaleimat per lohko, sidottuna lohkon puhetekstin tiivisteeseen. Muuttunut lohko luetaan Supertonicilla,
+  kunnes se generoidaan uudelleen. Lauseen ja sanan korostus säilyy.
+- Ensin ääninäytteet: sama fy1-1:n kappale kolmella suomenkielisellä kirjastoäänellä opettajan valittavaksi. Pysähdys valintaan.
+- Sitten pilotti: vain fy1-1. PR:ään lista fy1-1:n kaavoista muodossa "TeX → puheteksti", äänitiedostojen yhteiskoko ja
+  käytetty merkkimäärä. Pysähdys opettajan kuunteluun.
+- `CLAUDE.md`:n Ääneenluku-kappale ja `test_readaloud.py` päivitetään samassa PR:ssä. Lukujen tekstejä ei muuteta, joten
+  katselmoinnit eivät vanhene.
+
+## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13, 2026-11-14 ja 2026-11-15)
+
+Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
+FY10:een ja FY14:ään ei tehdä kuvatehtäviä eikä taulukkotehtäviä.
 
 FY8 yksi luku per PR erästä 2 alkaen (koordinaattori 2026-11-15). Erä 1 (#590) valmistui osittain: fy8-1 on tehty ja
 katselmoitu (+3 tehtävää: L1-10 MAFY kalsiumin irrotustyö 3,20 eV, L2-08 ja L2-09 kuvatehtävät; tiede, pedagogiikka ja
@@ -58,11 +92,10 @@ Polish-kohdat (ei estä, ei korjattu, jotta fy8-1:n hash ei muutu): `lessons/FY8
 "387,6 nm -> 388 nm" pitäisi olla "387,5 nm -> 387 nm"; L2-08:n ratkaisussa 5,56 on tarkempi kuin kuvasta luettava 5,6;
 L2-09:n ratkaisun "±1 %" löysä (7,0 ± 0,1 antaa ±1,5 %) ja merkitsevien numeroiden perustelu epäselvä; L2-08 on kevyt
 tasolle 2; kuva on pieni tehtäväkortissa (jakoarvot noin 8 px, sama kaikilla kuvatehtävillä).
-Tämä kohta jää, kunnes FY9, FY10 ja FY14 on tehty.
+Tämä kohta jää, kunnes FY8 ja FY9 on tehty.
 
 Sama tahti kuin FY4:stä alkaen: jokaisessa luvussa vähintään kaksi kuvatehtävää ja taulukkotehtävä noin joka
-kolmannessa luvussa (#521, #528). FY10:een ja FY14:ään ei lisätä taulukkotehtäviä, vain kuvatehtävät (opettaja
-2026-11-14). Arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit lähde-URL:n kanssa. Aloitetaan,
+kolmannessa luvussa (#521, #528). Arvot vain `docs/mafy-arvot.tsv`:stä, uudet rivit lähde-URL:n kanssa. Aloitetaan,
 kun kohdan 2 katselmoinnit on tehty, jotta katselmoimattomien sarjojen jono ei kasva.
 
 ## 8. Virhekäsitys omana komponenttinaan; virhekäsitys ja tiivistelmä avattaviin laatikoihin (opettaja 2026-11-13)
@@ -203,6 +236,15 @@ kuten `teacher-figure`: `reviews.py approve-text <id> [--lang]` kirjaa hyväksyt
 (esim. `docs/teacher-text.tsv`, ei käsin), `scope` antaa sille none/carry, `verify` johtaa sen uudelleen CI:ssä.
 Rivi kirjataan vain opettajan nimenomaisesta hyväksynnästä; mikä tahansa muu muutos samassa luvussa katselmoidaan
 normaalisti. Jaettuja tiedostoja (`scripts/reviews.py` ja testit): tehdään yksin.
+
+## 8l. Taulukoiden otsikoista pois "(esimerkkiaineisto)" (opettaja 2026-11-15)
+
+Opettaja 2026-11-15: "Voisiko taulukoista ottaa pois tuon (esimerkkiaineisto)". Tehtävien taulukko-otsikoissa (`"caption"`
+`exercises.json`:issa) on merkintä noin 930 kertaa: fi 312, en 292 ("(example data)"), fi-easy 325, kursseilla FY2–FY8.
+Poistetaan vain otsikoista. Jos sulkeissa on muutakin, se jää (esim. "(esimerkkiaineisto, energiat NNDC NuDat 3)" →
+"(energiat NNDC NuDat 3)"). Tehtävätekstin maininnat (noin 18) ja taulukon alla oleva lähderivi eivät muutu. Tehdään
+kohdan 8k `teacher-text`-kategorialla (opettajan nimenomainen hyväksyntä tälle mekaaniselle muutokselle), jotta
+katselmoinnit kulkevat muutoksen yli. Jaettu muutos (`scripts/reviews.py` ja kaikki kurssit), ajetaan yksin, sim PR 3:n (#591) jälkeen.
 
 ## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
 
