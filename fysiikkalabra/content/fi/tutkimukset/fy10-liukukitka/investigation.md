@@ -45,7 +45,7 @@ Kun auton kuljettaja jarruttaa lukkojarruin, auto liukuu vielä matkan ennen kui
 
 ## Tutkimustehtävä
 
-**Selvitettävä:** miten pysähtymismatka riippuu alkunopeudesta ja kuinka suuri on jarrun ja radan välinen liukukitkakerroin eli liukukitkakerroin epävarmuuksineen. Kerroin määritetään graafisesti, energiaperiaatteen avulla.
+**Selvitettävä:** miten pysähtymismatka riippuu alkunopeudesta ja kuinka suuri on jarrun ja radan välinen liukukitkakerroin epävarmuuksineen. Kerroin määritetään graafisesti, energiaperiaatteen avulla.
 
 **Päätät itse:** mitkä suureet mittaat ja miten luet ne liikeanturin tuloksista, alkunopeudet ja niiden määrän, toistojen määrän, kuvaajan akselit perusteluineen sekä tavan, jolla arvioit tuloksen epävarmuuden. Ohjatussa ja osittain ohjatussa työtavassa sivu antaa näihin tukea, itsenäisessä työtavassa perustelet valintasi itse.
 
@@ -80,7 +80,7 @@ Kun vaunu liukuu vaakasuoralla radalla jarru radan pintaa vasten, siihen vaikutt
 F_\mu = \mu N
 ```
 
-missä $\mu$ on liukukitkakerroin, jota tässä työssä kutsutaan myös liukukitkakertoimeksi. Kerroin on yksikötön. Malli olettaa, että jarru painuu rataa vasten koko vaunun painolla. Jos pyörät kantavat osan painosta ja jarrua painaa esimerkiksi jousi, mittaamasi luku on kitkavoiman ja painon suhde, joka kuvaa koko vaunun jarrutusta, eikä pelkästään jarrun ja radan pintojen kitkakerroin. [[apua:fy4-6|Kitka ja kitkakerroin]]
+missä $\mu$ on liukukitkakerroin. Kerroin on yksikötön. Malli olettaa, että jarru painuu rataa vasten koko vaunun painolla. Jos pyörät kantavat osan painosta ja jarrua painaa esimerkiksi jousi, mittaamasi luku on kitkavoiman ja painon suhde, joka kuvaa koko vaunun jarrutusta, eikä pelkästään jarrun ja radan pintojen kitkakerroin. [[apua:fy4-6|Kitka ja kitkakerroin]]
 
 <svg data-fig="forces" viewBox="0 0 600 330" role="img" aria-label="Voimakuvio: radalla oikealle liukuva ja hidastuva vaunu suorakulmiona. Paino G osoittaa keskipisteestä alas. Radan tukivoima N osoittaa alapinnasta ylös, ja se on yhtä pitkä kuin paino. Liukukitka F myy osoittaa alapinnan takakulmasta vasemmalle eli liikettä vastaan, ja se on paljon lyhyempi kuin paino. Kappaleen yläpuolella sininen nopeusnuoli v osoittaa oikealle ja oranssi kiihtyvyysnuoli a vasemmalle." style="max-width:100%;font-size:24px">
   <line x1="150" y1="192" x2="510" y2="192" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
