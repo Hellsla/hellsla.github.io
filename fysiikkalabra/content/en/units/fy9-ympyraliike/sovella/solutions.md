@@ -6,7 +6,15 @@
 **Principle:** Choose the trailer and the boat together as the body. In the free-body diagram the forces on them are the weight of the trailer $\overline{G}_\text{t}$ and the weight of the boat $\overline{G}_\text{b}$ down from the centres of gravity, the normal force of the ground $\overline{N}$ up at the wheels and the force of the coupling $\overline{F}$ up at the end of the drawbar. At rest the horizontal force of the coupling is zero. The trailer is at rest, so it is in equilibrium: the sum of the forces and the sum of the moments are zero. The axle is chosen as the pivot point, so the lever arm of the unknown normal force is zero. The forces are vertical and the distances horizontal, so the distances are the lever arms of the forces (chapter *Equilibrium of a body: forces and moments*).
 **Formula:** $F r_\text{k} - m_\text{t} g\, r_\text{t} - m_\text{b} g\, r_\text{b} = 0$, so $F = \dfrac{(m_\text{t} r_\text{t} + m_\text{b} r_\text{b})\,g}{r_\text{k}}$ and the nose weight is $m_\text{n} = \dfrac{F}{g} = \dfrac{m_\text{t} r_\text{t} + m_\text{b} r_\text{b}}{r_\text{k}}$
 **Conversions:** None needed: the masses are in kilograms and the distances in metres.
-**Substitution:** The sum of the moments of the weights about the axle is $(165\,\text{kg} \cdot 0.58\,\text{m} + 430\,\text{kg} \cdot 0.12\,\text{m}) \cdot 9.81\,\text{m/s}^2 = 147.3\,\text{kg} \cdot \text{m} \cdot 9.81\,\text{m/s}^2 = 1445\,\text{N} \cdot \text{m}$, so $F = \dfrac{1445\,\text{N} \cdot \text{m}}{3.25\,\text{m}} = 444.6\,\text{N}$, and the nose weight is $\dfrac{444.6\,\text{N}}{9.81\,\text{m/s}^2} = 45.3\,\text{kg}$.
+**Substitution:** The sum of the moments of the weights about the axle is $$
+\begin{aligned}
+&(165\,\text{kg} \cdot 0.58\,\text{m} \\
+&+ 430\,\text{kg} \cdot 0.12\,\text{m}) \\
+&\cdot 9.81\,\text{m/s}^2 \\
+&= 147.3\,\text{kg} \cdot \text{m} \cdot 9.81\,\text{m/s}^2 \\
+&= 1445\,\text{N} \cdot \text{m}
+\end{aligned}
+$$, so $F = \dfrac{1445\,\text{N} \cdot \text{m}}{3.25\,\text{m}} = 444.6\,\text{N}$, and the nose weight is $\dfrac{444.6\,\text{N}}{9.81\,\text{m/s}^2} = 45.3\,\text{kg}$.
 **Answer:** $F \approx 440\,\text{N}$ and the nose weight about $45\,\text{kg}$, two significant figures like the distances of the centres of gravity $0.58\,\text{m}$ and $0.12\,\text{m}$. The nose weight is below the lower limit of the instructions, $50\,\text{kg}$.
 **Reasonableness:** The common centre of gravity is $\tfrac{147.3\,\text{kg} \cdot \text{m}}{595\,\text{kg}} \approx 0.25\,\text{m}$ in front of the axle, that is, about $\tfrac{0.25}{3.25} \approx 8\,\%$ of the distance of the coupling. So the coupling carries about $8\,\%$ of the total mass $595\,\text{kg}$, about $45\,\text{kg}$, as found.
 
@@ -26,7 +34,14 @@
 **Principle:** The moment condition about the axle still holds. The move changes only the lever arm of the weight of the boat, from $0.12\,\text{m}$ to $0.12\,\text{m} + \Delta x$. The nose weight $60\,\text{kg}$ corresponds to the force $F = 60\,\text{kg} \cdot g$ (chapter *Moment: the turning effect of a force*).
 **Formula:** $m_\text{n} g\, r_\text{k} = m_\text{t} g\, r_\text{t} + m_\text{b} g\,(r_\text{b} + \Delta x)$, so $g$ cancels and $\Delta x = \dfrac{m_\text{n} r_\text{k} - m_\text{t} r_\text{t} - m_\text{b} r_\text{b}}{m_\text{b}}$
 **Conversions:** The result is converted to centimetres: $1\,\text{m} = 100\,\text{cm}$.
-**Substitution:** $m_\text{b} \Delta x = 195\,\text{kg} \cdot \text{m} - 95.7\,\text{kg} \cdot \text{m} - 51.6\,\text{kg} \cdot \text{m} = 47.7\,\text{kg} \cdot \text{m}$, so $\Delta x = \dfrac{47.7\,\text{kg} \cdot \text{m}}{430\,\text{kg}} = 0.1109\,\text{m} = 0.1109 \cdot 100\,\text{cm} = 11.1\,\text{cm}$
+**Substitution:** $$
+\begin{aligned}
+m_\text{b} \Delta x &= 195\,\text{kg} \cdot \text{m} \\
+&- 95.7\,\text{kg} \cdot \text{m} \\
+&- 51.6\,\text{kg} \cdot \text{m} \\
+&= 47.7\,\text{kg} \cdot \text{m}
+\end{aligned}
+$$, so $\Delta x = \dfrac{47.7\,\text{kg} \cdot \text{m}}{430\,\text{kg}} = 0.1109\,\text{m} = 0.1109 \cdot 100\,\text{cm} = 11.1\,\text{cm}$
 **Answer:** The boat is moved about $11\,\text{cm}$ forwards, two significant figures like the distances of the centres of gravity.
 **Reasonableness:** When $430\,\text{kg}$ moves $0.111\,\text{m}$, the moment grows by $47.7\,\text{kg} \cdot \text{m}$, and divided by the lever arm of the coupling, $3.25\,\text{m}$, it adds $\tfrac{47.7}{3.25}\,\text{kg} \approx 15\,\text{kg}$ to the nose weight: $45\,\text{kg} + 15\,\text{kg} = 60\,\text{kg}$. A small move is enough, because the boat is heavy.
 
@@ -47,17 +62,34 @@
 ## fy9-ympyraliike-s2
 
 ### a)
-**Given:** height $h = 830\,\text{km}$, mass of the Earth $M = 5.97 \cdot 10^{24}\,\text{kg}$ and radius $R = 6371\,\text{km}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
+**Given:** height $h = 830\,\text{km}$, mass of the Earth $M = 5.97 \cdot 10^{24}\,\text{kg}$ and radius $R = 6371\,\text{km}$, $$
+\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
+$$
 **Find:** the orbital speed $v$ and the period $T$ in minutes
 **Principle:** Only the gravitational force of the Earth acts on the satellite, so it is the net force. The orbit is a circle, so by Newton's second law the gravitational force gives the satellite the centripetal acceleration $\tfrac{v^2}{r}$ towards the centre of the Earth. The radius of the orbit is measured from the centre of the Earth, $r = R + h$, and in one revolution the satellite travels the circumference $2\pi r$ (chapter *Satellites and planets in circular orbits*).
 **Formula:** $\gamma\dfrac{Mm}{r^2} = m\dfrac{v^2}{r}$, so the mass of the satellite cancels and $v = \sqrt{\dfrac{\gamma M}{r}}$; $T = \dfrac{2\pi r}{v}$
 **Conversions:** $r = 6371\,\text{km} + 830\,\text{km} = 7201\,\text{km} = 7201 \cdot 1000\,\text{m} = 7.201 \cdot 10^{6}\,\text{m}$. Finally $1\,\text{km} = 1000\,\text{m}$ and $1\,\text{min} = 60\,\text{s}$.
-**Substitution:** $\gamma M = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 5.97 \cdot 10^{24}\,\text{kg} = 3.984 \cdot 10^{14}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}}$, so $v = \sqrt{\dfrac{3.984 \cdot 10^{14}\,\text{N}\cdot\text{m}^2/\text{kg}}{7.201 \cdot 10^{6}\,\text{m}}} = 7438\,\text{m/s} = 7.438\,\text{km/s}$ and $T = \dfrac{2\pi \cdot 7.201 \cdot 10^{6}\,\text{m}}{7438\,\text{m/s}} = 6083\,\text{s} = \dfrac{6083}{60}\,\text{min} = 101.4\,\text{min}$
+**Substitution:** $$
+\begin{aligned}
+\gamma M &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \\
+&\cdot 5.97 \cdot 10^{24}\,\text{kg} \\
+&= 3.984 \cdot 10^{14}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}}
+\end{aligned}
+$$, so $v = \sqrt{\dfrac{3.984 \cdot 10^{14}\,\text{N}\cdot\text{m}^2/\text{kg}}{7.201 \cdot 10^{6}\,\text{m}}} = 7438\,\text{m/s} = 7.438\,\text{km/s}$ and $$
+\begin{aligned}
+T &= \dfrac{2\pi \cdot 7.201 \cdot 10^{6}\,\text{m}}{7438\,\text{m/s}} \\
+&= 6083\,\text{s} \\
+&= \dfrac{6083}{60}\,\text{min} \\
+&= 101.4\,\text{min}
+\end{aligned}
+$$
 **Answer:** $v \approx 7.44\,\text{km/s}$ and $T \approx 101\,\text{min}$, three significant figures like the height $830\,\text{km}$ and the mass of the Earth.
 **Reasonableness:** The orbital speed is a little smaller than the ISS's roughly $7.7\,\text{km/s}$ and the period a little longer than the ISS's roughly $93\,\text{min}$, because the orbit is higher. In a day the satellite makes $\tfrac{86\,400\,\text{s}}{6083\,\text{s}} \approx 14$ revolutions.
 
 ### b)
-**Given:** $m = 4100\,\text{kg}$, $r = 7.201 \cdot 10^{6}\,\text{m}$, $M = 5.97 \cdot 10^{24}\,\text{kg}$, $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$, $g = 9.81\,\text{m/s}^2$
+**Given:** $m = 4100\,\text{kg}$, $r = 7.201 \cdot 10^{6}\,\text{m}$, $M = 5.97 \cdot 10^{24}\,\text{kg}$, $$
+\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
+$$, $g = 9.81\,\text{m/s}^2$
 **Find:** the gravitational force $F$ in orbit and its share of the weight $mg$ at the surface
 **Principle:** By the law of gravitation the force is inversely proportional to the square of the distance measured from the centres. The satellite is about $13\,\%$ further from the centre of the Earth than at the surface (chapter *The gravitational force between bodies*).
 **Formula:** $F = \gamma\dfrac{Mm}{r^2}$ and the share $q = \dfrac{F}{mg} = \dfrac{\gamma M}{g\,r^2}$
@@ -270,12 +302,23 @@
 ### a)
 **Find:** whether the claim that there is no gravity at a height of $400\,\text{km}$ is true
 **Principle:** The gravitational field strength $g = \gamma\tfrac{M}{r^2}$ decreases with the square of the distance but never becomes zero. Weightlessness is free fall: only gravitation acts on the body, and the normal force is zero (chapter *Satellites and planets in circular orbits*).
-**Model answer:** The claim is wrong. At a height of $400\,\text{km}$ the distance from the centre of the Earth is $6771\,\text{km}$, only about $6\,\%$ more than at the surface. The field strength there is $\gamma\tfrac{M}{r^2} = \tfrac{6.674 \cdot 10^{-11} \cdot 5.97 \cdot 10^{24}}{(6.771 \cdot 10^{6})^2}\,\text{m/s}^2 \approx 8.7\,\text{m/s}^2$, almost $90\,\%$ of its value at the surface. It is gravitation that keeps the station in its orbit: it is the only force on the station and turns the direction of its velocity all the time. Without gravitation the station would carry straight on out of its orbit. Astronauts float because the station and the astronaut fall freely together: both get the same acceleration towards the Earth. So the floor does not press on the astronaut, the normal force is zero, and a scale would read zero, although the weight acts all the time.
+**Model answer:** The claim is wrong. At a height of $400\,\text{km}$ the distance from the centre of the Earth is $6771\,\text{km}$, only about $6\,\%$ more than at the surface. The field strength there is $$
+\begin{aligned}
+\gamma\tfrac{M}{r^2} &= \tfrac{6.674 \cdot 10^{-11} \cdot 5.97 \cdot 10^{24}}{(6.771 \cdot 10^{6})^2}\,\text{m/s}^2 \\
+&\approx 8.7\,\text{m/s}^2
+\end{aligned}
+$$, almost $90\,\%$ of its value at the surface. It is gravitation that keeps the station in its orbit: it is the only force on the station and turns the direction of its velocity all the time. Without gravitation the station would carry straight on out of its orbit. Astronauts float because the station and the astronaut fall freely together: both get the same acceleration towards the Earth. So the floor does not press on the astronaut, the normal force is zero, and a scale would read zero, although the weight acts all the time.
 
 ### b)
 **Find:** why an astronaut feels heavy on the floor of the rotating ring, which direction is “down”, and at what period the force of the floor matches the Earth's surface
 **Principle:** An astronaut moving with the ring is in uniform circular motion, so the sum of the forces on them points to the centre of the ring: $\Sigma F = m\tfrac{v^2}{r}$. The orbital speed is $v = \tfrac{2\pi r}{T}$ (chapters *Centripetal acceleration and the equation of motion in a circle* and *Moving in a circle: period and speed*).
-**Model answer:** Inside the station only the normal force of the floor acts on the astronaut, when the gravitation of the Earth is ignored because it acts on the station in the same way. The astronaut moves in a circle with the ring, so the net force on them must point to the centre of the ring. That is why the outer wall, the floor, pushes on the soles of their feet towards the centre with the force $N = m\tfrac{v^2}{r}$. On the Earth's surface the same push on the soles feels like supporting one's weight, so the astronaut feels heavy, and “down” is away from the centre of the ring, towards the outer wall. There is no outward centrifugal force: without the floor the astronaut would carry straight on. The floor pushes with as large a force as the Earth's surface when $\tfrac{v^2}{r} = g$. With $v = \tfrac{2\pi r}{T}$ we get $T = 2\pi\sqrt{\tfrac{r}{g}} = 2\pi\sqrt{\tfrac{110\,\text{m}}{9.81\,\text{m/s}^2}} \approx 21\,\text{s}$, so the ring turns about three times a minute, and the orbital speed of the floor is about $33\,\text{m/s}$.
+**Model answer:** Inside the station only the normal force of the floor acts on the astronaut, when the gravitation of the Earth is ignored because it acts on the station in the same way. The astronaut moves in a circle with the ring, so the net force on them must point to the centre of the ring. That is why the outer wall, the floor, pushes on the soles of their feet towards the centre with the force $N = m\tfrac{v^2}{r}$. On the Earth's surface the same push on the soles feels like supporting one's weight, so the astronaut feels heavy, and “down” is away from the centre of the ring, towards the outer wall. There is no outward centrifugal force: without the floor the astronaut would carry straight on. The floor pushes with as large a force as the Earth's surface when $\tfrac{v^2}{r} = g$. With $v = \tfrac{2\pi r}{T}$ we get $$
+\begin{aligned}
+T &= 2\pi\sqrt{\tfrac{r}{g}} \\
+&= 2\pi\sqrt{\tfrac{110\,\text{m}}{9.81\,\text{m/s}^2}} \\
+&\approx 21\,\text{s}
+\end{aligned}
+$$, so the ring turns about three times a minute, and the orbital speed of the floor is about $33\,\text{m/s}$.
 
 ### c)
 **Find:** the motion of the key after it is released as seen from outside the station and from the astronaut's point of view
@@ -296,7 +339,15 @@
 **Principle:** The stick is at rest, so the sum of the moments about the edge is zero. The edge is not at the centre of gravity of the stick, so the weight of the stick also turns the stick: its lever arm is $10.0\,\text{cm}$, and it turns in the same direction as the stone. The forces are vertical and the stick horizontal, so the lever arms are the distances from the edge (chapter *Equilibrium of a body: forces and moments*).
 **Formula:** $m_\text{p} g\, d_\text{p} - m_\text{s} g\, d_\text{s} - m_\text{m} g\, d_\text{m} = 0$, so $g$ cancels and $m_\text{s} = \dfrac{m_\text{p} d_\text{p} - m_\text{m} d_\text{m}}{d_\text{s}}$, where $d_\text{p}$, $d_\text{s}$ and $d_\text{m}$ are the distances of the weight, the stone and the centre of gravity of the stick from the edge
 **Conversions:** The lever arms from the edge: $d_\text{p} = 40.0\,\text{cm} - 10.0\,\text{cm} = 30.0\,\text{cm}$, $d_\text{s} = 82.0\,\text{cm} - 40.0\,\text{cm} = 42.0\,\text{cm}$ and $d_\text{m} = 50.0\,\text{cm} - 40.0\,\text{cm} = 10.0\,\text{cm}$. No other conversions are needed: the centimetres cancel, and the mass comes out in grams.
-**Substitution:** $m_\text{s} \cdot 42.0\,\text{cm} = 200\,\text{g} \cdot 30.0\,\text{cm} - 120\,\text{g} \cdot 10.0\,\text{cm} = 6000\,\text{g} \cdot \text{cm} - 1200\,\text{g} \cdot \text{cm} = 4800\,\text{g} \cdot \text{cm}$, so $m_\text{s} = \dfrac{4800\,\text{g} \cdot \text{cm}}{42.0\,\text{cm}} = 114.3\,\text{g}$
+**Substitution:** $$
+\begin{aligned}
+&m_\text{s} \cdot 42.0\,\text{cm} \\
+&= 200\,\text{g} \cdot 30.0\,\text{cm} \\
+&- 120\,\text{g} \cdot 10.0\,\text{cm} \\
+&= 6000\,\text{g} \cdot \text{cm} - 1200\,\text{g} \cdot \text{cm} \\
+&= 4800\,\text{g} \cdot \text{cm}
+\end{aligned}
+$$, so $m_\text{s} = \dfrac{4800\,\text{g} \cdot \text{cm}}{42.0\,\text{cm}} = 114.3\,\text{g}$
 **Answer:** $m_\text{s} \approx 114\,\text{g}$, three significant figures like the measured positions. The result differs from the reading of the scale, $113\,\text{g}$, by about $1\,\%$.
 **Reasonableness:** Reading the balance point to $\pm 0.5\,\text{cm}$ changes the result by about $\pm 1.5\,\text{g}$, so the difference from the reading of the scale is within the accuracy of the measurement. The $142.9\,\text{g}$ of the report is $26\,\%$ too large, because the moment of the stick's own weight, $1200\,\text{g} \cdot \text{cm}$, was left out.
 
@@ -337,7 +388,13 @@
 **Principle:** Choose the passenger as the body. In the free-body diagram the forces on them are the weight $\overline{G}$ down and the normal force of the seat $\overline{N}$ up; no centrifugal force is drawn. At the bottom the passenger is for a moment on a circular path whose centre is above. At the bottom there is no net force along the tangent, so the net force points up and is $m\tfrac{v^2}{r}$ (chapter *Centripetal acceleration and the equation of motion in a circle*).
 **Formula:** With the direction up towards the centre positive, $N - mg = m\dfrac{v_\text{b}^2}{r}$, so $N = m\left(g + \dfrac{v_\text{b}^2}{r}\right)$
 **Conversions:** None needed: the quantities are in base units.
-**Substitution:** $\dfrac{v_\text{b}^2}{r} = \dfrac{518.0\,\text{m}^2/\text{s}^2}{10.0\,\text{m}} = 51.80\,\text{m/s}^2$, so $N = 60.0\,\text{kg} \cdot (9.81\,\text{m/s}^2 + 51.80\,\text{m/s}^2) = 3696\,\text{N}$. Compared with the weight $\dfrac{N}{mg} = \dfrac{3696\,\text{N}}{588.6\,\text{N}} = 6.28$.
+**Substitution:** $\dfrac{v_\text{b}^2}{r} = \dfrac{518.0\,\text{m}^2/\text{s}^2}{10.0\,\text{m}} = 51.80\,\text{m/s}^2$, so $$
+\begin{aligned}
+N &= 60.0\,\text{kg} \\
+&\cdot (9.81\,\text{m/s}^2 + 51.80\,\text{m/s}^2) \\
+&= 3696\,\text{N}
+\end{aligned}
+$$. Compared with the weight $\dfrac{N}{mg} = \dfrac{3696\,\text{N}}{588.6\,\text{N}} = 6.28$.
 **Answer:** $N \approx 3.70\,\text{kN}$, three significant figures like the mass and the radius. The force is about $6.3$ times the weight of the passenger.
 **Reasonableness:** The centripetal acceleration is over five times the acceleration of free fall, so the seat must press on the passenger with over six times the weight: one $mg$ holds up the weight and the rest turns the motion. Such a large force would feel violent, which is the reason for the shape in part d.
 
@@ -347,7 +404,14 @@
 **Principle:** In the loop mechanical energy is conserved, so kinetic energy turns into potential energy in the rise $2r$ (chapter *Conservation of mechanical energy and the work–energy principle*). At the top the passenger is upside down, and the centre is below them. The weight and the normal force of the seat both point down towards the centre, and their sum is $m\tfrac{v^2}{r}$ (chapter *Centripetal acceleration and the equation of motion in a circle*).
 **Formula:** $\tfrac12 mv_\text{b}^2 = \tfrac12 mv_\text{t}^2 + mg \cdot 2r$, so $v_\text{t} = \sqrt{v_\text{b}^2 - 4gr}$; at the top $N + mg = m\dfrac{v_\text{t}^2}{r}$, so $N = m\left(\dfrac{v_\text{t}^2}{r} - g\right)$
 **Conversions:** None needed: the quantities are in base units.
-**Substitution:** $v_\text{t} = \sqrt{518.0\,\tfrac{\text{m}^2}{\text{s}^2} - 4 \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 10.0\,\text{m}} = \sqrt{125.6\,\tfrac{\text{m}^2}{\text{s}^2}} = 11.21\,\text{m/s}$ and $N = 60.0\,\text{kg} \cdot \left(\dfrac{125.6\,\text{m}^2/\text{s}^2}{10.0\,\text{m}} - 9.81\,\text{m/s}^2\right) = 60.0\,\text{kg} \cdot 2.75\,\text{m/s}^2 = 165\,\text{N}$
+**Substitution:** $v_\text{t} = \sqrt{518.0\,\tfrac{\text{m}^2}{\text{s}^2} - 4 \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 10.0\,\text{m}} = \sqrt{125.6\,\tfrac{\text{m}^2}{\text{s}^2}} = 11.21\,\text{m/s}$ and $$
+\begin{aligned}
+N &= 60.0\,\text{kg} \\
+&\cdot \left(\dfrac{125.6\,\text{m}^2/\text{s}^2}{10.0\,\text{m}} - 9.81\,\text{m/s}^2\right) \\
+&= 60.0\,\text{kg} \cdot 2.75\,\text{m/s}^2 \\
+&= 165\,\text{N}
+\end{aligned}
+$$
 **Answer:** $v_\text{t} \approx 11.2\,\text{m/s}$ and $N \approx 165\,\text{N}$, three significant figures. The seat presses on the passenger even at the top, but only with about $0.28$ times the weight.
 **Reasonableness:** The passenger stays in the seat without a safety bar if $N \ge 0$, that is, $v_\text{t}^2 \ge gr$: the limit is $v_\text{t} \ge \sqrt{9.81\,\text{m/s}^2 \cdot 10.0\,\text{m}} \approx 9.9\,\text{m/s}$. The speed $11.2\,\text{m/s}$ exceeds the limit only a little, so the safety bar is still needed. The difference between the forces at the top and at the bottom is about $6\,mg$.
 
@@ -363,4 +427,9 @@
 - In part c the height of the top is taken as $r$ instead of $2r$, or at the top the weight and the normal force are written in opposite directions.
 
 ### Hyväksytään myös
-- In part c the speed at the top directly from the work–energy principle from the first hill to the top: $\tfrac12 mv_\text{t}^2 = 0.88 \cdot mgh - mg \cdot 2r$, the same result.
+- In part c the speed at the top directly from the work–energy principle from the first hill to the top: $$
+\begin{aligned}
+&\tfrac12 mv_\text{t}^2 \\
+&= 0.88 \cdot mgh - mg \cdot 2r
+\end{aligned}
+$$, the same result.

@@ -1,7 +1,7 @@
 [
   {
     "q": "Renkaan painemittari näyttää $220\\,\\text{kPa}$. Ilmanpaine on $101\\,\\text{kPa}$. Mikä renkaan ilman paine sijoitetaan tilanyhtälöön?",
-    "a": "Kokonaispaine $p = p_0 + \\Delta p = 101\\,\\text{kPa} + 220\\,\\text{kPa} = 321\\,\\text{kPa} = 321\\,000\\,\\text{Pa}$. Mittari näyttää vain ylipaineen. Hiukkasten törmäykset tuottavat kuitenkin koko paineen."
+    "a": "Kokonaispaine $$\n\\begin{aligned}\np &= p_0 + \\Delta p \\\\\n&= 101\\,\\text{kPa} + 220\\,\\text{kPa} \\\\\n&= 321\\,\\text{kPa} \\\\\n&= 321\\,000\\,\\text{Pa}\n\\end{aligned}\n$$. Mittari näyttää vain ylipaineen. Hiukkasten törmäykset tuottavat kuitenkin koko paineen."
   },
   {
     "q": "Lämpövoimakoneen hyötysuhde on aina alle $1$. Miksi lämpöpumpun lämpökerroin voi silti olla yli $1$?",

@@ -46,12 +46,12 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$F \\cdot 3{,}25\\,\\text{m} = m_\\text{t} g \\cdot 0{,}58\\,\\text{m} + m_\\text{v} g \\cdot 0{,}12\\,\\text{m}$"
+              "detail": "$$\n\\begin{aligned}\n&F \\cdot 3{,}25\\,\\text{m} \\\\\n&= m_\\text{t} g \\cdot 0{,}58\\,\\text{m} \\\\\n&+ m_\\text{v} g \\cdot 0{,}12\\,\\text{m}\n\\end{aligned}\n$$"
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$F \\cdot 3{,}25\\,\\text{m} = (165 \\cdot 0{,}58 + 430 \\cdot 0{,}12)\\,\\text{kg} \\cdot \\text{m} \\cdot 9{,}81\\,\\text{m/s}^2$, joten $F \\approx 445\\,\\text{N}$"
+              "detail": "$$\n\\begin{aligned}\n&F \\cdot 3{,}25\\,\\text{m} \\\\\n&= (165 \\cdot 0{,}58 + 430 \\cdot 0{,}12)\\,\\text{kg} \\\\\n&\\cdot \\text{m} \\cdot 9{,}81\\,\\text{m/s}^2\n\\end{aligned}\n$$, joten $F \\approx 445\\,\\text{N}$"
             },
             {
               "key": "units_precision",
@@ -79,7 +79,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$N = 595\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 - 445\\,\\text{N} \\approx 5390\\,\\text{N}$"
+              "detail": "$$\n\\begin{aligned}\nN &= 595\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\\n&- 445\\,\\text{N} \\\\\n&\\approx 5390\\,\\text{N}\n\\end{aligned}\n$$"
             },
             {
               "key": "reasonableness",
@@ -107,12 +107,12 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "$60\\,\\text{kg} \\cdot g \\cdot 3{,}25\\,\\text{m} = m_\\text{t} g \\cdot 0{,}58\\,\\text{m} + m_\\text{v} g\\,(0{,}12\\,\\text{m} + \\Delta x)$, joten $g$ supistuu"
+              "detail": "$$\n\\begin{aligned}\n&60\\,\\text{kg} \\cdot g \\cdot 3{,}25\\,\\text{m} \\\\\n&= m_\\text{t} g \\cdot 0{,}58\\,\\text{m} \\\\\n&+ m_\\text{v} g\\,(0{,}12\\,\\text{m} + \\Delta x)\n\\end{aligned}\n$$, joten $g$ supistuu"
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\Delta x = \\dfrac{195\\,\\text{kg} \\cdot \\text{m} - 147{,}3\\,\\text{kg} \\cdot \\text{m}}{430\\,\\text{kg}} \\approx 0{,}111\\,\\text{m}$"
+              "detail": "$$\n\\begin{aligned}\n\\Delta x &= \\dfrac{195\\,\\text{kg} \\cdot \\text{m} - 147{,}3\\,\\text{kg} \\cdot \\text{m}}{430\\,\\text{kg}} \\\\\n&\\approx 0{,}111\\,\\text{m}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -157,7 +157,7 @@
         "fy5-5",
         "fy5-3"
       ],
-      "text": "Eurooppalainen sääsatelliitti kiertää Maata. Rata on lähes ympyrä, ja se kulkee napojen yli. Pohjois-Suomessa on vastaanottoasema Maan pinnalla. Asema saa satelliitin mittaukset monella kierroksella peräkkäin, koska satelliitti ohittaa pohjoisnavan joka kierroksella.\n\n- satelliitin massa on $4100\\,\\text{kg}$, ja radan korkeus maanpinnasta on $830\\,\\text{km}$\n- Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$, ja Maan säde on $6371\\,\\text{km}$\n- Maa pyörähtää akselinsa ympäri kerran $23\\,\\text{h}\\;56\\,\\text{min}$:ssa\n- gravitaatiovakio on $\\gamma = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$",
+      "text": "Eurooppalainen sääsatelliitti kiertää Maata. Rata on lähes ympyrä, ja se kulkee napojen yli. Pohjois-Suomessa on vastaanottoasema Maan pinnalla. Asema saa satelliitin mittaukset monella kierroksella peräkkäin, koska satelliitti ohittaa pohjoisnavan joka kierroksella.\n\n- satelliitin massa on $4100\\,\\text{kg}$, ja radan korkeus maanpinnasta on $830\\,\\text{km}$\n- Maan massa on $5{,}97 \\cdot 10^{24}\\,\\text{kg}$, ja Maan säde on $6371\\,\\text{km}$\n- Maa pyörähtää akselinsa ympäri kerran $23\\,\\text{h}\\;56\\,\\text{min}$:ssa\n- gravitaatiovakio on $$\n\\gamma = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}\n$$",
       "parts": [
         {
           "id": "a",
@@ -197,7 +197,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$T = \\dfrac{2\\pi \\cdot 7{,}201 \\cdot 10^{6}\\,\\text{m}}{7438\\,\\text{m/s}} \\approx 6083\\,\\text{s} \\approx 101\\,\\text{min}$"
+              "detail": "$$\n\\begin{aligned}\nT &= \\dfrac{2\\pi \\cdot 7{,}201 \\cdot 10^{6}\\,\\text{m}}{7438\\,\\text{m/s}} \\\\\n&\\approx 6083\\,\\text{s} \\\\\n&\\approx 101\\,\\text{min}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -225,7 +225,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$F = \\dfrac{3{,}984 \\cdot 10^{14} \\cdot 4100}{(7{,}201 \\cdot 10^{6})^2}\\,\\text{N} \\approx 31{,}5\\,\\text{kN}$, kun $\\gamma M = 3{,}984 \\cdot 10^{14}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}}$"
+              "detail": "$$\n\\begin{aligned}\nF &= \\dfrac{3{,}984 \\cdot 10^{14} \\cdot 4100}{(7{,}201 \\cdot 10^{6})^2}\\,\\text{N} \\\\\n&\\approx 31{,}5\\,\\text{kN}\n\\end{aligned}\n$$, kun $\\gamma M = 3{,}984 \\cdot 10^{14}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}}$"
             },
             {
               "text": "Vertaa voimaa painoon $mg \\approx 40{,}2\\,\\text{kN}$. Voima on noin $78\\,\\%$ painosta. Sama osuus saadaan lausekkeesta $\\left(\\tfrac{R}{R + h}\\right)^2$.",
@@ -267,7 +267,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\dfrac{6083\\,\\text{s}}{86\\,160\\,\\text{s}} \\cdot 360^\\circ \\approx 25{,}4^\\circ$ ja $2\\pi \\cdot 6371\\,\\text{km} \\cdot 0{,}0706 \\approx 2830\\,\\text{km}$"
+              "detail": "$\\dfrac{6083\\,\\text{s}}{86\\,160\\,\\text{s}} \\cdot 360^\\circ \\approx 25{,}4^\\circ$ ja $$\n\\begin{aligned}\n&2\\pi \\cdot 6371\\,\\text{km} \\cdot 0{,}0706 \\\\\n&\\approx 2830\\,\\text{km}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -559,7 +559,7 @@
         "fy1-3",
         "fy1-8"
       ],
-      "text": "Opiskelija määritti kiven massan. Hän käytti metrimittaa ja punnusta, jonka massa tunnetaan. Tässä on ote hänen raportistaan:\n\n> Asetin metrimitan vaakasuoraan tukiterän päälle. Terä oli mitan kohdassa $40{,}0\\,\\text{cm}$, koska siinä mitta pysyi parhaiten paikallaan. Ripustin $200\\,\\text{g}$:n punnuksen kohtaan $10{,}0\\,\\text{cm}$ ja kiven langalla terän toiselle puolelle. Siirtelin kiveä, kunnes mitta pysyi vaakasuorassa: kohta oli $82{,}0\\,\\text{cm}$. Momenttiehdosta $m_\\text{k} \\cdot 42{,}0\\,\\text{cm} = 200\\,\\text{g} \\cdot 30{,}0\\,\\text{cm}$, joten $m_\\text{k} = 142{,}857\\,\\text{g}$. Keittiövaaka näytti kivelle $113\\,\\text{g}$. Ero johtuu tukiterän kitkasta.\n\nMetrimitta on tasapaksu eli joka kohdasta yhtä paksu. Sen massa on $120\\,\\text{g}$. Lankojen massat ovat niin pieniä, että niillä ei ole merkitystä.",
+      "text": "Opiskelija määritti kiven massan. Hän käytti metrimittaa ja punnusta, jonka massa tunnetaan. Tässä on ote hänen raportistaan:\n\n> Asetin metrimitan vaakasuoraan tukiterän päälle. Terä oli mitan kohdassa $40{,}0\\,\\text{cm}$, koska siinä mitta pysyi parhaiten paikallaan. Ripustin $200\\,\\text{g}$:n punnuksen kohtaan $10{,}0\\,\\text{cm}$ ja kiven langalla terän toiselle puolelle. Siirtelin kiveä, kunnes mitta pysyi vaakasuorassa: kohta oli $82{,}0\\,\\text{cm}$. Momenttiehdosta $$\n\\begin{aligned}\n&m_\\text{k} \\cdot 42{,}0\\,\\text{cm} \\\\\n&= 200\\,\\text{g} \\cdot 30{,}0\\,\\text{cm}\n\\end{aligned}\n$$, joten $m_\\text{k} = 142{,}857\\,\\text{g}$. Keittiövaaka näytti kivelle $113\\,\\text{g}$. Ero johtuu tukiterän kitkasta.\n\nMetrimitta on tasapaksu eli joka kohdasta yhtä paksu. Sen massa on $120\\,\\text{g}$. Lankojen massat ovat niin pieniä, että niillä ei ole merkitystä.",
       "parts": [
         {
           "id": "a",
@@ -580,12 +580,12 @@
             {
               "key": "equation",
               "points": 1,
-              "detail": "Momenttiehto terän suhteen: $m_\\text{p} g \\cdot 30{,}0\\,\\text{cm} = m_\\text{k} g \\cdot 42{,}0\\,\\text{cm} + m_\\text{m} g \\cdot 10{,}0\\,\\text{cm}$"
+              "detail": "Momenttiehto terän suhteen: $$\n\\begin{aligned}\n&m_\\text{p} g \\cdot 30{,}0\\,\\text{cm} \\\\\n&= m_\\text{k} g \\cdot 42{,}0\\,\\text{cm} \\\\\n&+ m_\\text{m} g \\cdot 10{,}0\\,\\text{cm}\n\\end{aligned}\n$$"
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$m_\\text{k} \\cdot 42{,}0\\,\\text{cm} = 200\\,\\text{g} \\cdot 30{,}0\\,\\text{cm} - 120\\,\\text{g} \\cdot 10{,}0\\,\\text{cm}$, joten $m_\\text{k} \\approx 114\\,\\text{g}$"
+              "detail": "$$\n\\begin{aligned}\n&m_\\text{k} \\cdot 42{,}0\\,\\text{cm} \\\\\n&= 200\\,\\text{g} \\cdot 30{,}0\\,\\text{cm} \\\\\n&- 120\\,\\text{g} \\cdot 10{,}0\\,\\text{cm}\n\\end{aligned}\n$$, joten $m_\\text{k} \\approx 114\\,\\text{g}$"
             },
             {
               "key": "units_precision",
@@ -700,7 +700,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$v_\\text{p} = \\sqrt{2 \\cdot 0{,}88 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 30{,}0\\,\\text{m}} \\approx 22{,}8\\,\\text{m/s}$"
+              "detail": "$$\n\\begin{aligned}\nv_\\text{p} &= \\sqrt{2 \\cdot 0{,}88 \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 30{,}0\\,\\text{m}} \\\\\n&\\approx 22{,}8\\,\\text{m/s}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -733,7 +733,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$N = 60{,}0\\,\\text{kg} \\cdot (9{,}81 + 51{,}8)\\,\\text{m/s}^2 \\approx 3700\\,\\text{N}$"
+              "detail": "$$\n\\begin{aligned}\nN &= 60{,}0\\,\\text{kg} \\\\\n&\\cdot (9{,}81 + 51{,}8)\\,\\text{m/s}^2 \\\\\n&\\approx 3700\\,\\text{N}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -770,12 +770,12 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$v_\\text{h} = \\sqrt{518\\,\\text{m}^2/\\text{s}^2 - 392\\,\\text{m}^2/\\text{s}^2} \\approx 11{,}2\\,\\text{m/s}$"
+              "detail": "$$\n\\begin{aligned}\nv_\\text{h} &= \\sqrt{518\\,\\text{m}^2/\\text{s}^2 - 392\\,\\text{m}^2/\\text{s}^2} \\\\\n&\\approx 11{,}2\\,\\text{m/s}\n\\end{aligned}\n$$"
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$N = 60{,}0\\,\\text{kg} \\cdot (12{,}56 - 9{,}81)\\,\\text{m/s}^2 \\approx 165\\,\\text{N}$"
+              "detail": "$$\n\\begin{aligned}\nN &= 60{,}0\\,\\text{kg} \\\\\n&\\cdot (12{,}56 - 9{,}81)\\,\\text{m/s}^2 \\\\\n&\\approx 165\\,\\text{N}\n\\end{aligned}\n$$"
             },
             {
               "text": "Tulkitsee tuloksen: $N > 0$, joten istuin painaa matkustajaa myös huipulla. Voima on kuitenkin vain noin $0{,}28$-kertainen painoon verrattuna. Ehto $v_\\text{h}^2 \\ge gr$ täyttyy.",

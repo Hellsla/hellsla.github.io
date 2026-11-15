@@ -28,7 +28,9 @@
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $F_\text{ka} = \dfrac{82{,}0\,\text{kg} \cdot 15{,}0\,\tfrac{\text{m}}{\text{s}}}{1{,}6\,\text{s}} = \dfrac{1230\,\text{kg} \cdot \text{m/s}}{1{,}6\,\text{s}} = 768{,}8\,\text{N}$. Paino on $mg = 82{,}0\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 804{,}4\,\text{N}$, ja suhde on $768{,}8\,\text{N} : 804{,}4\,\text{N} \approx 0{,}96$.
 **Vastaus:** $F_\text{ka} \approx 770\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa kuten jarrutusajassa $1{,}6\,\text{s}$. Voima on lähes yhtä suuri kuin laskijan, valjaiden ja vaunun yhteinen paino.
-**Järkevyys:** Hidastuvuus on $15{,}0\,\text{m/s} : 1{,}6\,\text{s} \approx 9{,}4\,\text{m/s}^2$. Se on noin yhtä suuri kuin putoamiskiihtyvyys. Jarrutus tuntuu voimakkaana mutta lyhyenä nykäyksenä. Valjaat jakavat voiman koko vartalolle.
+**Järkevyys:** Hidastuvuus on $$
+15{,}0\,\text{m/s} : 1{,}6\,\text{s} \approx 9{,}4\,\text{m/s}^2
+$$. Se on noin yhtä suuri kuin putoamiskiihtyvyys. Jarrutus tuntuu voimakkaana mutta lyhyenä nykäyksenä. Valjaat jakavat voiman koko vartalolle.
 
 ### d)
 **Kysytty:** pitävätkö valvojan väite ja sen perustelu paikkansa
@@ -54,7 +56,13 @@
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\mu = \dfrac{\left(2{,}40\,\tfrac{\text{m}}{\text{s}}\right)^2 - \left(0{,}62\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 27{,}0\,\text{m}} = \dfrac{5{,}376\,\tfrac{\text{m}^2}{\text{s}^2}}{529{,}7\,\tfrac{\text{m}^2}{\text{s}^2}} = 0{,}01015$
 **Vastaus:** $\mu \approx 0{,}010$. Vastauksessa on kaksi merkitsevää numeroa kuten nopeudessa $0{,}62\,\text{m/s}$.
-**Järkevyys:** Kitkakerroin on hyvin pieni. Näin kuuluu olla, kun kivi liukuu sileällä jäällä: kitka on vain noin prosentti kiven painosta. Kitkan työ on $-0{,}01015 \cdot 19{,}0\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 27{,}0\,\text{m} \approx -51\,\text{J}$. Liike-energia pieneni juuri saman verran: $\tfrac12 \cdot 19{,}0\,\text{kg} \cdot (5{,}76 - 0{,}384)\,\tfrac{\text{m}^2}{\text{s}^2} \approx 51\,\text{J}$.
+**Järkevyys:** Kitkakerroin on hyvin pieni. Näin kuuluu olla, kun kivi liukuu sileällä jäällä: kitka on vain noin prosentti kiven painosta. Kitkan työ on $$
+\begin{aligned}
+&-0{,}01015 \cdot 19{,}0\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\
+&\cdot 27{,}0\,\text{m} \\
+&\approx -51\,\text{J}
+\end{aligned}
+$$. Liike-energia pieneni juuri saman verran: $\tfrac12 \cdot 19{,}0\,\text{kg} \cdot (5{,}76 - 0{,}384)\,\tfrac{\text{m}^2}{\text{s}^2} \approx 51\,\text{J}$.
 
 ### b)
 **Annettu:** kummankin kiven massa $m = 19{,}0\,\text{kg}$; ennen törmäystä $v_1 = 0{,}62\,\text{m/s}$ ja toinen kivi on levossa; törmäyksen jälkeen heitetyn kiven nopeus on $v_1' = 0{,}05\,\text{m/s}$ samaan suuntaan
@@ -62,7 +70,13 @@
 **Periaate:** Voimat, joilla kivet vaikuttavat toisiinsa, ovat sisäisiä. Törmäys kestää vain hetken, ja kitka on pieni. Siksi ulkoisten voimien impulssi on niin pieni, ettei sillä ole merkitystä, ja kokonaisliikemäärä säilyy (luku *Liikemäärän säilyminen ja yksiulotteiset törmäykset*). Törmäys on kimmoisa, jos myös liike-energia säilyy. Heiton suunta on positiivinen.
 **Kaava:** $mv_1 = mv_1' + mv_2'$, joten massa supistuu pois ja $v_2' = v_1 - v_1'$; liike-energiat ovat $E_\text{k} = \tfrac12 mv_1^2$ ja $E_\text{k}' = \tfrac12 mv_1'^2 + \tfrac12 mv_2'^2$; osuus $\dfrac{E_\text{k}'}{E_\text{k}}$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $v_2' = 0{,}62\,\tfrac{\text{m}}{\text{s}} - 0{,}05\,\tfrac{\text{m}}{\text{s}} = 0{,}57\,\text{m/s}$. Liike-energiat: $E_\text{k} = \tfrac12 \cdot 19{,}0\,\text{kg} \cdot \left(0{,}62\,\tfrac{\text{m}}{\text{s}}\right)^2 = 3{,}652\,\text{J}$ ja $E_\text{k}' = \tfrac12 \cdot 19{,}0\,\text{kg} \cdot \left[\left(0{,}05\,\tfrac{\text{m}}{\text{s}}\right)^2 + \left(0{,}57\,\tfrac{\text{m}}{\text{s}}\right)^2\right] = 3{,}110\,\text{J}$, joten $E_\text{k}' : E_\text{k} = 0{,}852$.
+**Sijoitus:** $v_2' = 0{,}62\,\tfrac{\text{m}}{\text{s}} - 0{,}05\,\tfrac{\text{m}}{\text{s}} = 0{,}57\,\text{m/s}$. Liike-energiat: $E_\text{k} = \tfrac12 \cdot 19{,}0\,\text{kg} \cdot \left(0{,}62\,\tfrac{\text{m}}{\text{s}}\right)^2 = 3{,}652\,\text{J}$ ja $$
+\begin{aligned}
+E_\text{k}' &= \tfrac12 \cdot 19{,}0\,\text{kg} \\
+&\cdot \left[\left(0{,}05\,\tfrac{\text{m}}{\text{s}}\right)^2 + \left(0{,}57\,\tfrac{\text{m}}{\text{s}}\right)^2\right] \\
+&= 3{,}110\,\text{J}
+\end{aligned}
+$$, joten $E_\text{k}' : E_\text{k} = 0{,}852$.
 **Vastaus:** $v_2' \approx 0{,}57\,\text{m/s}$ heiton suuntaan. Tulos on erotus, joten sen tarkkuus on sadasosa metriä sekunnissa. Videolta luettu $0{,}05\,\text{m/s}$ tunnetaan vain noin $0{,}01\,\text{m/s}$:n tarkkuudella, ja se rajoittaa tulosta. Liike-energiasta säilyy noin $85\,\%$. Törmäys ei siis ole täysin kimmoisa, mutta se on lähellä sitä.
 **Järkevyys:** Täysin kimmoisassa törmäyksessä samanmassaiset kivet vaihtaisivat nopeuksia. Heitetty kivi pysähtyisi, ja toinen kivi jatkaisi nopeudella $0{,}62\,\text{m/s}$. Graniitti on kovaa, joten on odotettavaa, että törmäys on lähes kimmoisa. Noin $0{,}5\,\text{J}$ muuttuu ääneksi ja kivien sisäenergiaksi.
 
@@ -74,7 +88,12 @@
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $s_2 = \dfrac{\left(0{,}57\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 0{,}01015 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} = \dfrac{0{,}3249\,\tfrac{\text{m}^2}{\text{s}^2}}{0{,}1991\,\tfrac{\text{m}}{\text{s}^2}} = 1{,}632\,\text{m}$
 **Vastaus:** $s_2 \approx 1{,}6\,\text{m}$. Vastauksessa on kaksi merkitsevää numeroa kuten nopeudessa $0{,}57\,\text{m/s}$.
-**Järkevyys:** Kun kitka on sama, liukumatka on verrannollinen nopeuden neliöön. Heitetty kivi olisi pysähtynyt nopeudesta $2{,}40\,\text{m/s}$ matkalla $\dfrac{(2{,}40\,\text{m/s})^2}{2 \cdot 0{,}01015 \cdot 9{,}81\,\text{m/s}^2} \approx 28{,}9\,\text{m}$. Tulos täsmää, koska $(0{,}57 : 2{,}40)^2 \cdot 28{,}9\,\text{m} \approx 1{,}6\,\text{m}$. Matka on lyhyt, koska kivellä on jäljellä vain noin $6\,\%$ alkuperäisestä liike-energiasta.
+**Järkevyys:** Kun kitka on sama, liukumatka on verrannollinen nopeuden neliöön. Heitetty kivi olisi pysähtynyt nopeudesta $2{,}40\,\text{m/s}$ matkalla $\dfrac{(2{,}40\,\text{m/s})^2}{2 \cdot 0{,}01015 \cdot 9{,}81\,\text{m/s}^2} \approx 28{,}9\,\text{m}$. Tulos täsmää, koska $$
+\begin{aligned}
+&(0{,}57 : 2{,}40)^2 \cdot 28{,}9\,\text{m} \\
+&\approx 1{,}6\,\text{m}
+\end{aligned}
+$$. Matka on lyhyt, koska kivellä on jäljellä vain noin $6\,\%$ alkuperäisestä liike-energiasta.
 
 ### d)
 **Kysytty:** miksi harjattu kivi liukuu pidemmälle, vaikka harjat eivät koske kiveen
@@ -165,7 +184,13 @@ Katkoviiva on käyrä, joka on laskettu b- ja c-kohdan mallista. Se on piirretty
 
 ### b)
 **Kysytty:** aineistosta muodostettu suure, jonka kuvaaja lähtönopeuden funktiona on suora, sekä kuvaaja ja sovitettu suora
-**Kuvaaja:** Pysähtymismatkan malli on $s_\text{p} = v_0 t_\text{r} + v_0^2 : (2a)$ (luku *Liikenneturvallisuus: jarrutus, turvavyö ja turvatyyny*). Kun yhtälö jaetaan nopeudella $v_0$, saadaan $\tfrac{s_\text{p}}{v_0} = t_\text{r} + \tfrac{1}{2a}\,v_0$. Tämä on suora. Sen vakiotermi on $t_\text{r}$ ja kulmakerroin $1 : (2a)$. Nopeudet muunnetaan sijoittamalla. Esimerkiksi $30\,\text{km/h} = 30 \cdot 1000\,\text{m} : 3600\,\text{s} = 8{,}333\,\text{m/s}$, ja silloin $12{,}5\,\text{m} : 8{,}333\,\text{m/s} = 1{,}50\,\text{s}$. Kaikki arvot:
+**Kuvaaja:** Pysähtymismatkan malli on $s_\text{p} = v_0 t_\text{r} + v_0^2 : (2a)$ (luku *Liikenneturvallisuus: jarrutus, turvavyö ja turvatyyny*). Kun yhtälö jaetaan nopeudella $v_0$, saadaan $\tfrac{s_\text{p}}{v_0} = t_\text{r} + \tfrac{1}{2a}\,v_0$. Tämä on suora. Sen vakiotermi on $t_\text{r}$ ja kulmakerroin $1 : (2a)$. Nopeudet muunnetaan sijoittamalla. Esimerkiksi $$
+\begin{aligned}
+&30\,\text{km/h} \\
+&= 30 \cdot 1000\,\text{m} : 3600\,\text{s} \\
+&= 8{,}333\,\text{m/s}
+\end{aligned}
+$$, ja silloin $12{,}5\,\text{m} : 8{,}333\,\text{m/s} = 1{,}50\,\text{s}$. Kaikki arvot:
 
 | $v_0\ (\text{m/s})$ | $s_\text{p}/v_0\ (\text{s})$ |
 |---|---|
@@ -282,12 +307,24 @@ Ympyröidyt kohdat ovat suoran kaksi pistettä. Niistä luetaan c-kohdan kulmake
 ### b)
 **Kysytty:** pitääkö väite 2 paikkansa, ja mikä on vesivoimalan energiaketju
 **Periaate:** Energia säilyy. Se muuttuu muodosta toiseen, mutta se ei synny tyhjästä (luku *Energialajit ja energian säilyminen*). Vesivoimala muuttaa veden potentiaalienergiaa $mgh$ sähköksi. Hyötysuhde on enintään $100\,\%$ (luvut *Liike-energia, potentiaalienergia ja mekaaninen energia* ja *Vesi- ja tuulivoima energian muuntajina*).
-**Mallivastaus:** Väite on väärä. Voimala ei tuota energiaa tyhjästä, vaan se muuntaa energiaa. Padon takana olevalla vedellä on potentiaalienergiaa, kun sitä verrataan alaveteen eli voimalan alapuolella olevaan veteen. Kuutiometri vettä menettää $9{,}0\,\text{m}$:n putouksessa energiaa noin $1000\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9{,}0\,\text{m} \approx 88\,\text{kJ}$. Putkessa potentiaalienergia muuttuu liike-energiaksi. Virtaava vesi pyörittää turbiinia, ja turbiini pyörittää generaattoria. Generaattori muuttaa liikkeen energian sähköksi. Veden energia on peräisin auringosta. Auringon säteily haihduttaa vettä. Vesi nousee ilmaan ja sataa ylemmäs valuma-alueelle. Sama vesi ei siis kierrä voimalan läpi itsestään, vaan aurinko ”nostaa” sen joka kerta uudelleen. Kaikki energia, jonka vesi menettää, ei muutu sähköksi. Putken ja turbiinin kitka sekä generaattorin lämpeneminen muuttavat osan energiasta sisäenergiaksi. Lisäksi alaveteen virtaavalla vedellä on vielä liike-energiaa. Siksi hyötysuhde on alle $100\,\%$, tässä $90\,\%$.
+**Mallivastaus:** Väite on väärä. Voimala ei tuota energiaa tyhjästä, vaan se muuntaa energiaa. Padon takana olevalla vedellä on potentiaalienergiaa, kun sitä verrataan alaveteen eli voimalan alapuolella olevaan veteen. Kuutiometri vettä menettää $9{,}0\,\text{m}$:n putouksessa energiaa noin $$
+\begin{aligned}
+&1000\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9{,}0\,\text{m} \\
+&\approx 88\,\text{kJ}
+\end{aligned}
+$$. Putkessa potentiaalienergia muuttuu liike-energiaksi. Virtaava vesi pyörittää turbiinia, ja turbiini pyörittää generaattoria. Generaattori muuttaa liikkeen energian sähköksi. Veden energia on peräisin auringosta. Auringon säteily haihduttaa vettä. Vesi nousee ilmaan ja sataa ylemmäs valuma-alueelle. Sama vesi ei siis kierrä voimalan läpi itsestään, vaan aurinko ”nostaa” sen joka kerta uudelleen. Kaikki energia, jonka vesi menettää, ei muutu sähköksi. Putken ja turbiinin kitka sekä generaattorin lämpeneminen muuttavat osan energiasta sisäenergiaksi. Lisäksi alaveteen virtaavalla vedellä on vielä liike-energiaa. Siksi hyötysuhde on alle $100\,\%$, tässä $90\,\%$.
 
 ### c)
 **Kysytty:** pitääkö väite 3 paikkansa, ja kuinka suuri on voimalan nykyinen sähköteho
 **Periaate:** Vesivoimalan sähköteho on $P = \eta \rho Q g h$. Sekunnissa virtaa veden massa $\rho Q$. Se menettää potentiaalienergian $\rho Q g h$, ja siitä osuus $\eta$ muuttuu sähköksi (luku *Vesi- ja tuulivoima energian muuntajina*).
-**Mallivastaus:** Nykyinen sähköteho on $P = 0{,}90 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{\text{m}^3}{\text{s}} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9{,}0\,\text{m} \approx 9{,}54 \cdot 10^{6}\,\text{W} \approx 9{,}5\,\text{MW}$. Teho on suoraan verrannollinen sekä virtaamaan $Q$ että putouskorkeuteen $h$. Kun pato korotetaan $9\,\text{m}$:stä $12\,\text{m}$:iin, putouskorkeus kasvaa kertoimella $\dfrac{P'}{P} = \dfrac{h'}{h} = \tfrac{12}{9} = \tfrac43$ eli kolmanneksella. Teho kasvaa samassa suhteessa noin $12{,}7\,\text{MW}$:iin. Jos virtaama kasvaisi kolmanneksella, teho kasvaisi täsmälleen yhtä paljon. Väite pitää siis paikkansa, kun hyötysuhde pysyy samana eikä korotus muuta joen virtaamaa. Käytännössä virtaama riippuu sateista ja valuma-alueesta. Siksi virtaamaa ei voi kasvattaa, mutta korkeutta voi.
+**Mallivastaus:** Nykyinen sähköteho on $$
+\begin{aligned}
+P &= 0{,}90 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{\text{m}^3}{\text{s}} \\
+&\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9{,}0\,\text{m} \\
+&\approx 9{,}54 \cdot 10^{6}\,\text{W} \\
+&\approx 9{,}5\,\text{MW}
+\end{aligned}
+$$. Teho on suoraan verrannollinen sekä virtaamaan $Q$ että putouskorkeuteen $h$. Kun pato korotetaan $9\,\text{m}$:stä $12\,\text{m}$:iin, putouskorkeus kasvaa kertoimella $\dfrac{P'}{P} = \dfrac{h'}{h} = \tfrac{12}{9} = \tfrac43$ eli kolmanneksella. Teho kasvaa samassa suhteessa noin $12{,}7\,\text{MW}$:iin. Jos virtaama kasvaisi kolmanneksella, teho kasvaisi täsmälleen yhtä paljon. Väite pitää siis paikkansa, kun hyötysuhde pysyy samana eikä korotus muuta joen virtaamaa. Käytännössä virtaama riippuu sateista ja valuma-alueesta. Siksi virtaamaa ei voi kasvattaa, mutta korkeutta voi.
 
 ### Yleisiä virheitä
 - a-kohdassa oletetaan, että teho on verrannollinen nopeuden neliöön, koska liike-energia on $\tfrac12 mv^2$. Silloin unohtuu, että myös sekunnissa virtaava ilmamäärä kasvaa.
@@ -332,7 +369,13 @@ Ympyröidyt kohdat ovat suoran kaksi pistettä. Niistä luetaan c-kohdan kulmake
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $v = \sqrt{2 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}60\,\text{m}} = \sqrt{11{,}77\,\tfrac{\text{m}^2}{\text{s}^2}} = 3{,}431\,\text{m/s}$
 **Vastaus:** $v \approx 3{,}4\,\text{m/s}$. Vastauksessa on kaksi merkitsevää numeroa kuten korkeudessa $0{,}60\,\text{m}$.
-**Järkevyys:** Puolen metrin pudotus antaa muutaman metrin sekunnissa nopeuden. Sama tapahtuu esimerkiksi, kun hyppäät tuolilta lattialle. Järkäleen liike-energia on $Mgh = 3500\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}60\,\text{m} \approx 20{,}6\,\text{kJ}$.
+**Järkevyys:** Puolen metrin pudotus antaa muutaman metrin sekunnissa nopeuden. Sama tapahtuu esimerkiksi, kun hyppäät tuolilta lattialle. Järkäleen liike-energia on $$
+\begin{aligned}
+Mgh &= 3500\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\
+&\cdot 0{,}60\,\text{m} \\
+&\approx 20{,}6\,\text{kJ}
+\end{aligned}
+$$.
 
 ### b)
 **Annettu:** $M = 3500\,\text{kg}$, $m = 1100\,\text{kg}$, $v = 3{,}431\,\text{m/s}$, paalu on levossa; järkäle ei kimpoa
@@ -348,9 +391,23 @@ Ympyröidyt kohdat ovat suoran kaksi pistettä. Niistä luetaan c-kohdan kulmake
 **Annettu:** $M + m = 4600\,\text{kg}$, $v' = 2{,}611\,\text{m/s}$, liike-energia törmäyksen jälkeen $15\,675\,\text{J}$, painuma $s = 18\,\text{mm}$, loppunopeus $0$
 **Kysytty:** keskimääräinen voima $F$, jolla maa vaikuttaa paaluun
 **Periaate:** Törmäyksen jälkeen järkäle ja paalu liikkuvat yhdessä matkan $s$ alaspäin ja pysähtyvät. Painon työ otetaan huomioon potentiaalienergian pienenemisenä $(M + m)\,gs$. Maan voima osoittaa liikettä vastaan, joten sen työ on $-Fs$. Energiaperiaatteen mukaan alun liike-energia, alun potentiaalienergia ja maan voiman työ ovat yhteensä yhtä suuret kuin lopun energia (luku *Mekaanisen energian säilyminen ja energiaperiaate*). Nollataso on paalun pään loppuasema.
-**Kaava:** $\tfrac12 (M + m)\,v'^2 + (M + m)\,gs - Fs = 0$, joten $F = \dfrac{\tfrac12 (M + m)\,v'^2}{s} + (M + m)\,g$
+**Kaava:** $$
+\begin{aligned}
+&\tfrac12 (M + m)\,v'^2 + (M + m)\,gs \\
+&- Fs \\
+&= 0
+\end{aligned}
+$$, joten $F = \dfrac{\tfrac12 (M + m)\,v'^2}{s} + (M + m)\,g$
 **Muunnokset:** $18\,\text{mm} = 18 \cdot 0{,}001\,\text{m} = 0{,}018\,\text{m}$ ja lopuksi $1\,\text{N} = 0{,}001\,\text{kN}$
-**Sijoitus:** $F = \dfrac{15\,675\,\text{J}}{0{,}018\,\text{m}} + 4600\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 870\,800\,\text{N} + 45\,100\,\text{N} = 915\,900\,\text{N} \approx 916\,\text{kN}$
+**Sijoitus:** $$
+\begin{aligned}
+F &= \dfrac{15\,675\,\text{J}}{0{,}018\,\text{m}} \\
+&+ 4600\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\
+&= 870\,800\,\text{N} + 45\,100\,\text{N} \\
+&= 915\,900\,\text{N} \\
+&\approx 916\,\text{kN}
+\end{aligned}
+$$
 **Vastaus:** $F \approx 0{,}92\,\text{MN}$. Vastauksessa on kaksi merkitsevää numeroa kuten painumassa $18\,\text{mm}$.
 **Järkevyys:** Voima on noin $20$-kertainen järkäleen ja paalun painoon $45\,\text{kN}$ verrattuna. Syy on se, että liike-energia pysäytetään hyvin lyhyellä matkalla. Paino vaikuttaa tulokseen vain noin $5\,\%$. Jos paino unohtuu, virhe on siis pieni mutta todellinen.
 
@@ -360,7 +417,13 @@ Ympyröidyt kohdat ovat suoran kaksi pistettä. Niistä luetaan c-kohdan kulmake
 **Periaate:** Liike-energia, joka muuttui törmäyksessä, ei katoa. Osa siitä muuttuu paalun yläpään teräksen sisäenergiaksi. Oletetaan, että teräs ei luovuta lämpöä ympäristöön eikä sen olomuoto muutu. Silloin sisäenergian kasvu nostaa lämpötilaa, ja $\Delta U = cm\Delta T$ pätee (luku *Aineen lämpeneminen ja jäähtyminen*).
 **Kaava:** $\Delta U = N k E_\text{h} = c\,m_\text{t}\,\Delta T$, joten $\Delta T = \dfrac{N k E_\text{h}}{c\,m_\text{t}}$, missä $N$ on lyöntien lukumäärä ja $k$ on osuus, joka muuttuu paalun yläpään sisäenergiaksi
 **Muunnokset:** $40\,\% = 0{,}40$; muut suureet ovat perusyksiköissä. Lämpötilan muutos on sama kelvineinä ja celsiusasteina.
-**Sijoitus:** $\Delta T = \dfrac{50 \cdot 0{,}40 \cdot 4926\,\text{J}}{460\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}} \cdot 30\,\text{kg}} = \dfrac{98\,520\,\text{J}}{13\,800\,\tfrac{\text{J}}{\text{K}}} = 7{,}14\,\text{K}$
+**Sijoitus:** $$
+\begin{aligned}
+\Delta T &= \dfrac{50 \cdot 0{,}40 \cdot 4926\,\text{J}}{460\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}} \cdot 30\,\text{kg}} \\
+&= \dfrac{98\,520\,\text{J}}{13\,800\,\tfrac{\text{J}}{\text{K}}} \\
+&= 7{,}14\,\text{K}
+\end{aligned}
+$$
 **Vastaus:** $\Delta T \approx 7\,\text{K}$. Vastauksessa on yksi merkitsevä numero, koska osuus $40\,\%$ ja lämpenevä massa $30\,\text{kg}$ ovat vain arvioita. Todellinen lämpeneminen on pienempi. Teräs johtaa lämpöä paalun alempiin osiin ja luovuttaa lämpöä ilmaan lyöntien välillä. Lisäksi osa energiasta muuttuu ääneksi ja järkäleen sisäenergiaksi.
 **Järkevyys:** Yksi lyönti lämmittää yläpäätä vain noin $0{,}14\,\text{K}$, mutta lyöntejä on paljon. Muutaman asteen lämpeneminen sopii siihen, että paalun pää tuntuu lyöntien jälkeen lämpimältä mutta ei kuumalta.
 
