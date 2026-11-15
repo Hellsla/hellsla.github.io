@@ -1,26 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: d4cac7da6f13b625
-Mode: delta
-Round: 2
+VERDICT: FAIL
+CONTENT-HASH: 1de1e6f9b64da513
 
 ## Blocking
-(none)
-
-## Fixed
-- fy8-2-L1-08: the chain is now split ("that is" / "eli"); at 390 px every formula ends by 354 px, no clipping.
+- [Major] L2-09 solution, SUBSTITUTION, 360 px — the first row of the chain is one fraction that does not fit (chain scrolls 281 > 272 px): the numerator ends "…10^8 m/" and the "s" of m/s is cut off — a unit appears wrong and only a hidden horizontal scroll shows it — set hc as its own step as L3-06 does: `hc = 6.626 \cdot 10^{-34}\,\text{J s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J m}`, then `E = \dfrac{hc}{\lambda} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J m}}{436 \cdot 10^{-9}\,\text{m}}` (the later rows break correctly at 360 px)
+- [Major] L3-06 solution, REASONABLENESS, 360 px — inline chains `5.461 eV − 4.667 eV = 0.794 eV` and `1240 eV nm : 0.79 eV ≈ 1570 nm` do not wrap and are clipped by the card ("1570 nm" reads "1570 nr") — the result is cut — split each into two shorter inline formulas or display rows (`5.461\,\text{eV} - 4.667\,\text{eV}` / `= 0.794\,\text{eV}`)
 
 ## Polish
-- [Minor] fy8-2-L2-08 option order — the build shows the options as B, A, D, C, so the letters in the labels and in the solution run out of order — keep the letters in display order or name the options without letters.
-- [Minor] fy8-2/pick-* in the option cards — scale numbers are about 8 px at 390 px because the figure sits in a padded card — widen the card figure or enlarge the tick type slightly.
-- [Minor] fy8-2/pick-* alt text — a 50-word description sits inside every radio label, so a screen reader reads it with the option name — acceptable; a shorter label name for the radio would help.
+- [Minor] figure at 360 px — tick numbers are about 9 px high in the task figure; legible but small; consider larger figure labels if the figure is reused on phones.
 
 ## Checked
-- Round 2: re-rendered fy8-2-L1-08 at 390 px: /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/r2-en-L1-08.png (opened); fits, reads cleanly.
-- Own scratch script, 390 px, feedback and solution open: /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/en-fy8-2-fy8-2-L2-08-0.png, -1.png, -2.png (all three tiles read).
-- The four option figures fy8-2/pick-* at 2.5x: /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/en-pick-0.png to en-pick-3.png (lines at 413 and 496 nm, the 653 nm line in B, black band to 496 nm in D, emission lines in A all match the descriptions and the solution).
-- Changed tasks L1-08 and L3-01 at 390 px: /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/oldsheet-en.png; L1-08 overflow measured in the browser (right edge 423 px).
-- Standard captures review/shots/ were absent for this hash (packet: STALE or MISSING), so the scratch captures above are what I judged; not opened: any figure of the lesson itself (exercises-only review).
-- Text of the new task: situation first, question last, LaTeX units with thin space, decimal point correct; feedback and answer boxes open inside the card without horizontal overflow (except L1-08 above).
+- 1280 px: opened the en captures open-exercises-L2-1280-12 and L3-1280-9, -10 (figure, ticks, axis label, solution chains aligned); the fi and fi-easy 1280 captures were not opened (same templates, judged from the 360 px captures).
+- Made own 360 px captures of 2-9 / 2-23 cards (L2-09, L3-06) with solutions open, all three languages (scratchpad s/*-360.png); measured chain overflow in the DOM.
+- Figure SVG source not opened (no defect traced to it).
+- Delta covers only the two added figure tasks (fy8-2-L2-09, fy8-2-L3-06) and the figure lamp-spectrum; other exercises not re-read.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 5 · accessibility 4
+illustrations 5 · typography 3 · Finnish 4 · accessibility 3
