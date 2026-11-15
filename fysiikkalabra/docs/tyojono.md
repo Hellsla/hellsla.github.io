@@ -121,6 +121,20 @@ yksin, 8l:n (#607) jälkeen ja ennen 8m:ää.
 2. `verify` johtaa reflow-rivit uudelleen eikä hyväksy reflow-riviä ulkoasukatselmoinnille.
 3. Testi (`test_reviews.py` 8n): yksikön kaava nostettuna `aligned`-muotoon siirtää tieteen ja pedagogiikan, ei ulkoasua;
    muuttunut luku, merkki tai sana ei siirrä mitään.
+## 5g. Leveän näytön rivien yhdistys: jatkorivi ei saa relaatioriviä (koordinaattori 2026-11-15)
+
+Varattu: claude/mathlayout-join-wide
+
+Kohdan 5d PR #610 (FY2 Sovella, ulkoasu FAIL 1280 px:llä): `mathlayout.join_wide` liittää leveällä näytöllä `=`- tai
+`\approx`-rivin edelliseen riviin aina, kun sillä ei ole relaatiota, myös jatkoriviin (`&+ …`, `&- …`, `&\cdot …`,
+`&: …`). Tulos 1280 px:llä esim. fy2-6: `: 5000 kWh = 14 016 000 000 kWh`; puhelimella oikein. Koskee 5d:n lohkoja
+(FY8 #601 mainissa, FY2 #610, FY9). Jaettu muutos (`scripts/mathlayout.py`, `test_mathlayout.py`): ajetaan yksin, #620:n
+jälkeen ja ennen 8m:ää.
+1. Binäärioperaattorilla alkava rivi (`&+`, `&-`, `&\cdot`, `&:`) on jatko kuten `&\quad`-rivi: se liitetään edelliseen,
+   kun WIDE_MAX sallii.
+2. Relaatiorivi liitetään vain riviin, joka on pelkkä vasen puoli eikä itse jatkorivi.
+3. Testit (`test_mathlayout.py`), ja FY8:n, FY9:n ja FY2:n muuttuneet lohkot tarkistetaan 1280 px:llä.
+
 ## 6. Kuvatehtävät ja taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13, 2026-11-14 ja 2026-11-15)
 
 Opettaja 2026-11-15: kaksi kuvatehtävää per luku on hyväksytty kustannuksesta huolimatta (noin 300 k per luku);
