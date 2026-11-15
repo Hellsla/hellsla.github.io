@@ -1,15 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: c247f8c2335da8c2
+VERDICT: FAIL
+CONTENT-HASH: 039f947b5c91a8ac
 
 ## Blocking
+- content/fi/FY7/fy7-15/exercises/exercises.json:92 — B, scope and consistency. L1-09 is a Malus calculation. Situations A, C, D and E need $I = I_0\cos^2\theta$ (150, 240, 100 and 125 W/m²), but the task has no "Syventävä tehtävä." lead. The scope note puts Malus's law in the extension material, and the teacher's decision of 2026-11-15 makes every Malus/Brewster calculation an extension task. Left unmarked, it looks like a core-path task that needs extension physics. — Fix: begin the text with "Syventävä tehtävä.\n\n" as in the other 14 tasks.
+- content/fi/FY7/fy7-15/exercises/exercises.json:336 — B, the same problem. L3-03 computes $E = (E_\text{max} - E_\text{t})\cos^2\theta + E_\text{t}$ = 117 lx with Malus's law and has no lead. — Fix: the same lead.
 
 ## Polish
-- content/fi/FY7/fy7-15/exercises/exercises.json — The diff marks only six tasks "Syventävä tehtävä." (L2-04 to L2-08, L3-05). Many unmarked tasks are also Malus or Brewster calculations: L1-02, L1-03, L1-04, L1-05, L1-07, L1-08, L1-10, L1-11, L2-01, L2-02, L2-03, L3-01, L3-02 and L3-04. The lesson's new Kaava note says "niihin liittyvät tehtävät ovat syventäviä". No physics is wrong. Still, a student cannot tell from the markers which tasks belong to the core path. Fix: mark the rest the same way, or reword the lesson note to match the chosen subset. This is the teacher's or pedagogy's call.
 
 ## Checked
-- Delta: the six task texts gain the lead "Syventävä tehtävä." and nothing else. No number, symbol, answer, unit or tolerance changed, so the earlier recomputation (L2-04 33,69°, L2-08 44,2°, the L3-05 parts) still stands.
-- Every marked task really is a Malus or Brewster task: L2-04 Brewster + Snell, L2-05/L2-08 Malus fit with a background term, L2-06 Malus graph reading, L2-07 the Brewster error task, L3-05 Brewster angle + Malus through tilted polaroids.
-- No core task (L1-01, L1-06) is marked syventävä. Both rest on the qualitative model (halving of unpolarised light; vertical polaroid against horizontally polarised glare), which stays on the core path.
-- L2-05 and L2-06 still say "Aineisto on esimerkkiaineisto." in the task text, so the provenance of the data is stated (guardrail "say whether each number is measured"). Only the figure-caption marker was removed, with the teacher's approval (teacher-figure).
-- Figures fy7-15/fit and fy7-15/graph-task: the descriptions still give the same data (seven points 374…15 lx; cos² curve) and give no answer away.
 - The hash is the same at the start and the end.
+- Diff against 528023bb26^, field by field in a script. Fourteen tasks (L1-02, L1-03, L1-04, L1-05, L1-07, L1-08, L1-10, L1-11, L2-01, L2-02, L2-03, L3-01, L3-02, L3-04) gain only the prefix "Syventävä tehtävä.\n\n". No answer, unit, tolerance, choice, data, figure or core flag changed, so the earlier recomputation of all 22 answers still stands.
+- Each newly marked task really uses Malus's law (L1-02, L1-03, L1-07, L1-10, L2-01, L2-02, L3-01, L3-04) or Brewster's law (L1-04, L1-05, L1-08, L1-11, L2-03, L3-02).
+- Together with L2-04 to L2-08 and L3-05, 20 of the 22 calculation tasks are now marked. The two left out are listed under Blocking.
+- The core tasks L1-01 (halving only) and L1-06 (qualitative glare) stay unmarked and core. That is right: neither needs Malus or Brewster.
+- Level 2 has no core task (L2-01 and L2-02 have core: false), so no task is both extension and core.
+- Recomputed L1-09 (D 100 < E 125 < A 150 < B 200 < C 240 W/m²) and L3-03 (404 · 0,250 + 16 = 117 lx). Both are correct; only the marking is missing.
