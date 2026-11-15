@@ -48,6 +48,7 @@ kaikilla kielillä 360 ja 390 px:llä.
 ## 6. Kuvatehtävät FY8, FY9, FY10 ja FY14, taulukkotehtävät FY8 ja FY9 (opettaja 2026-11-13 ja 2026-11-14)
 
 Varattu: claude/fy8-kuva-taulukkotehtavat (FY8, erä 1: fy8-1…3, PR #590)
+Varattu: claude/exercises-fy8-2 (FY8 erä 2, fy8-2)
 
 FY8 yksi luku per PR erästä 2 alkaen (koordinaattori 2026-11-15). Erä 1 (#590) valmistui osittain: fy8-1 on tehty ja
 katselmoitu (+3 tehtävää: L1-10 MAFY kalsiumin irrotustyö 3,20 eV, L2-08 ja L2-09 kuvatehtävät; tiede, pedagogiikka ja
