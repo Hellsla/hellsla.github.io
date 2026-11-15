@@ -16,7 +16,7 @@
 **Muunnokset:** Niitä ei tarvita. Jännitteiden suhteessa voltit supistuvat.
 **Sijoitus:** $N_1 = \dfrac{40 \cdot 230\,\text{V}}{8{,}00\,\text{V}} = 1150$
 **Vastaus:** $1150$ kierrosta. Vastauksessa on kolme merkitsevää numeroa, kuten jännitteissä $230\,\text{V}$ ja $8{,}00\,\text{V}$.
-**Järkevyys:** Jännite laskee noin $29$-kertaisesti ($230\,\text{V} : 8{,}00\,\text{V} \approx 29$), joten ensiökäämissä on oltava noin $29$ kertaa enemmän kierroksia kuin toisiokäämissä: $29 \cdot 40 \approx 1150$.
+**Järkevyys:** Jännite laskee noin $29$-kertaisesti ($230\,\text{V} : 8{,}00\,\text{V} \approx 29$), joten ensiökäämissä on oltava noin $29$ kertaa enemmän kierroksia kuin toisiokäämissä: $29 \cdot 40 = 1160$, mikä on lähellä tulosta $1150$.
 
 ## fy7-8-L1-03
 **Annettu:** ensiöjännite $U_1 = 20\,\text{kV}$, toisiojännite $U_2 = 400\,\text{V}$, toisiovirta $I_2 = 250\,\text{A}$, ideaalinen muuntaja
