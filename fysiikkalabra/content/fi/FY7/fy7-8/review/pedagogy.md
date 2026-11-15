@@ -1,8 +1,8 @@
-VERDICT: FAIL
-CONTENT-HASH: 6a91c39269e0ec4c
+VERDICT: PASS
+CONTENT-HASH: 6d89e55a6a451d04
 
 ## Blocking
-- lesson.md (figure `scene`, last element after Tiivistelmä) — the phone-charger illustration explains the paragraph "Jännite lasketaan vaiheittain" in Ydinajatus but stands after the Tiivistelmä list, apart from it (1280 px capture theory-1280-3: a stray picture beside the summary bullets, which are about 400 kV and cos φ). Breaks "figures right after the paragraph they explain" — move it directly after that paragraph.
+- none (round 2: figure `scene` now stands directly after "Jännite lasketaan vaiheittain"; at 1280 px it sits beside that paragraph, theory-1280-2, no longer beside the summary).
 
 ## Polish
 - Pohdinta/Ennusta: ennuste-dc has no experiment in the sim and is revealed only after Teoria; acceptable, but the retrieval item (induction) is optional, so a student who skips it meets the prediction cold. Make it required, or keep it and accept it.
@@ -20,4 +20,4 @@ CONTENT-HASH: 6a91c39269e0ec4c
 - Sim at 390 and 1280: bars, readout and three boxes; lead under 30 words.
 - Worked example staged, derivation before numbers; reasonableness check present.
 - Finnish: case endings after units ("$400\,\text{V}$:iin") fine.
-- Hash 6a91c39269e0ec4c at start and end.
+- Hash 6d89e55a6a451d04 at start and end.
