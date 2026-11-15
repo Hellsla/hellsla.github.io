@@ -1,18 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: e8571d0ddd50133c
-SCOPE: delta added-exercise from 717b427c7d574c97 base 81db4a6fd727
+VERDICT: FAIL
+CONTENT-HASH: e165c1601691d33b
 
 ## Blocking
+- exercises/solutions.md:58, exercises.json:128, answers.py:18 (L2-01) — A (internal consistency and assessment). L2-01 asks the same thing as L3-03: how large the ice pack must be so that the ice lasts 6,0 h. That is a minimum. L3-03 now rounds its minimum up (1,511 → 1,6 kg) and says that the lower value "ei riittäisi". L2-01 still rounds 1,617 kg down to 1,6 kg, which by that rule does not last 6,0 h. A student who applies the set's own rule answers 1,7 kg. That is 6 % off the key, so the page marks it wrong. — Treat L2-01 the same way: give 1,7 kg in answers.py (ceil) and in the key, with the same "pyöristetään ylöspäin, 1,6 kg ei riittäisi" sentence in the Vastaus. Alternatively, reword the task so it no longer asks for a minimum.
 
 ## Polish
-- exercises/solutions.md (fy3-16-L1-09, Periaate) — "Lämpö otetaan keittolevyltä, joten energia säilyy" draws the wrong conclusion from the right fact. Better: "Energia säilyy: höyrystymiseen sitoutuva lämpö tulee keittolevyltä."
-- exercises/solutions.md (fy3-16-L2-09, Järkevyys) — "Oletus häviöttömyydestä tekee todellisesta arvosta hieman pienemmän" is still ambiguous (carried over). Meant: with losses, less than $Pt$ reaches the block, so the true $c$ is a little below the computed 900 J/(kg·K). Say that.
+- exercises.json:314 (L3-03) — The tolerance of 0,06 is needed so that the computed 1,51 kg is accepted, but it also accepts 1,5 kg, which the solution calls insufficient. No tolerance can separate the two, so state the reason in the Vastaus as well: 1,5 kg counts as correct to two figures, but 1,6 kg is the safe choice.
 
 ## Checked
-- L1-09 (new situation, boiling pan): water already at 100 °C, so $Q = rm$ alone applies; $2260 \cdot 0{,}30 = 678\,\text{kJ} \approx 680\,\text{kJ}$; MAFY 2260 kJ/kg as in docs/mafy-arvot.tsv (VERIFIED); answers.py agrees. The check against heating the same water 0→100 °C (126 kJ, ratio 5,4) is right.
-- L2-09: $c = Pt/(m\Delta T) = 400 \cdot 180/(2{,}0 \cdot 40) = 900\,\text{J/(kg·K)}$; the lossless assumption is stated in the task; both end points are on grid crossings of `fy3-6/heating-line`.
-- The same figure in the chapter *Aineen lämpeneminen ja jäähtyminen* (0,50 kg, 100 W) also gives 900 J/(kg·K), so the two chapters do not contradict each other.
-- L2-10: $t = Q/P = 220\,000/25 = 8800\,\text{s} = 2{,}44\,\text{h}$; answers.py gives 2,444. The figure's data agree with the task: $2100 \cdot 0{,}60 \cdot 16 + 334\,000 \cdot 0{,}60 = 20{,}2 + 200{,}4 = 220{,}6\,\text{kJ}$ (2,45 h, inside tolerance 0,03), and the solution's independent check says so.
-- L2-10: constant 25 W through the walls is stated as a task condition; the read point (220 kJ; 0 °C) is a grid crossing; the J and h conversions are shown; two figures from 25 W.
-- All three solutions are complete, solved in symbols first, with units carried; inside FY3 (lämpeneminen, olomuodon muutokset).
-- Rest of the set unchanged since PASS; hash same at start and end.
+- I recomputed all 21 numeric answers in one script with my own formulas: Q = cmΔT, sm, rm; P = UAΔT; P = c(m/t)ΔT; and the energy balances. Each one agrees with answers.py; the keys are rounded correctly.
+- L3-03: the wall brings 486 000 J and the drinks 50 280 J, against 355 000 J per kg of freezer ice, so m = 1,511 kg. answers.py's ceil gives 1,6, and the solution's reasoning and check are consistent.
+- L2-05, edited mechanism line: the resistors convert electrical energy into internal energy, which is transferred as heat to the stones. This is correct. η = 8,16/10,8 = 75,6 % → 76 %.
+- L1-08, edited wording ("jouleina"): t = 251 s → 250 s; the physics is unchanged.
+- L2-06: the least-squares slope is −99,8 kWh/K, so UA = 139 W/K, and the line crosses the axis at about 20 °C (the indoor temperature). This is correct.
+- L2-09 and L2-10: the figures' data give 900 J/(kg·K) and 220,6 kJ (2,44 h).
+- L3-02: the water can give 251 kJ, more than the 167 kJ needed to melt all the ice, so all of it melts and T = 8,06 °C. L3-05: m = 54 000 kg, the three stages need 2,72, 18,04 and 0,57 GJ, and the power is 592 kW → 590 kW.
+- L3-04: ΣΔT = 126 K and E = 5443 kWh; electricity costs 816 € and wood 336 €, so the saving is 481 € → 480 €.
+- Multiple choice: L1-06, L1-07 and L2-08 (t₂/t₁ = 2) each have exactly one correct option, and every distractor's feedback is right.
+- The hash was the same at the start and the end.

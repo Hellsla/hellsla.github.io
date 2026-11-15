@@ -1,18 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: 2d86ef406e58a1c7
-SCOPE: delta added-exercise from bf811b5954b48e62 base 89bcb63b7431
+CONTENT-HASH: b0becb0dcbed361b
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (fy3-7-L2-09, Kuvaajan lukeminen) — "(alkupiste on origossa, $0\,\text{kJ}$)": the start point is $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$, not the origin. Write "alkupisteessä $Q = 0\,\text{kJ}$".
-- exercises/solutions.md (fy3-7-L2-09, Vastaus) — the reason for "hyväksytään $2020\ldots2150$" is that the heat is read from a grid crossing, but an exact crossing gives no reading spread. The range is in fact the 3 % tolerance. Say so, or drop the range.
-- exercises/exercises.json (fy3-7-L1-09) — as in round 1: "sitoo ihosta" assumes that all the heat of evaporation comes from the skin. Optional: "Oleta, että kaikki lämpö tulee ihosta."
+- exercises.json:41 (fy3-7-L1-05) and exercises.json:303 (fy3-7-L2-09) — the stored answers are 333 and 2083,3, but the solutions' Vastaus lines give two significant figures ($3{,}3 \cdot 10^{2}$, $2{,}1 \cdot 10^{3}$). The tolerances accept both. Consider making the shown answer and the Vastaus agree.
 
 ## Checked
-- Round-1 blocker fixed: the start temperature $-16\,{}^\circ\text{C}$ is now in the task text, and the student reads only $Q = 20\,\text{kJ}$ at the crossing $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$ of the 20 kJ / 10 °C grid.
-- L2-09 recomputed: $c = Q/(m\Delta T) = 20\,000\,\text{J}/(0{,}60\,\text{kg} \cdot 16\,\text{K}) = 2083\,\text{J/(kg·K)}$, which matches answers.py. Tolerance 0,03 (2021–2146) accepts $2{,}1 \cdot 10^3$.
-- L2-09 physics: $Q = cm\Delta T$ is used only on the rising part, before any melting. The solution is complete (symbols first, kJ → J, two figures from 0,60 kg), and the check against $c_\text{vesi}$ and the energy balance is real.
-- L1-09 unchanged since round 1: $Q = rm = 840\,\text{kJ/kg} \cdot 0{,}0050\,\text{kg} = 4{,}2\,\text{kJ}$, MAFY value as verified then; the remark that the boiling-point value applies is right.
-- Figure description lists the same points; it does not name the parts or give $c$ or $s$.
-- In FY3 scope; rest of the set unchanged since PASS; hash same at start and end.
+- I recomputed all 20 numeric answers in one script with my own formulas. Every one lies within its tolerance.
+  - L2-05: I extrapolated the plateau edges independently (17,5 s and 156,7 s), which gives 334 kJ/kg.
+  - L3-04: P = 11,98 W, solidification from 3,24 to 30,9 min, Q = 19,9 kJ, s ≈ 200 kJ/kg. These are realistic for stearic acid (melting point about 69 °C).
+- L2-05 data is internally consistent. The ice warming takes 10,5 kJ by both P t and c m ΔT, and the water rise of 0,575 K/s equals P/(c m). The figure melting-curve matches 200 kJ / 0,60 kg, c(ice) 2083 and the slope of the water part.
+- L3-03: the two-power method cancels the loss of about 60 W. The data reproduce 90,0 g at 400 W, and the single-run values (2,45 and 2,67 MJ/kg) are right and too large for the stated reason.
+- Guardrails:
+  - Constant temperature during a change of state is tied to constant pressure (L1-06 feedback, L2-06).
+  - The microscopic wording of L1-06 follows the guardrail text.
+  - Freezing and condensation release energy (L1-03, L1-04, L3-05).
+  - L3-01 checks that all the ice melts (36,7 kJ > 20,0 kJ).
+- L2-07: interpolating between 50 and 70 kPa gives 85,65 °C, so the drop is 14,4 K. The true value is about 85,9 °C, so the ±4 % tolerance is appropriate.
+- L3-05: 23,5 g of steam against 0,386 kg of water; 94 % of the steam's energy comes from condensation. The burn reasoning is right.
+- L1-09: the ethanol value r = 840 kJ/kg is given with a correct caveat about the temperature.
+- L2-08 order: 84 < 167 < 201 < 226 kJ. L1-06 and L1-07 have exactly one correct option each, and every distractor's feedback is right.
+- Every solution states its assumptions in the task's terms, is symbolic first and justifies its rounding. Its checks are real.

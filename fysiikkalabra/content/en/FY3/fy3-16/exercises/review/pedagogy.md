@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 95b438af4632227f
+CONTENT-HASH: 7dde9624df498934
 
 ## Blocking
 (none)
 
 ## Polish
-- fy3-16-L2-10 and L1-04 / L2-01 still use the cool bag (third cool-bag task at levels 1-2). Optional.
-- fy3-16-L1-09 — the situation does not say where the heat comes from; "taken from the hob" in the question is fine. The unrounded answer is 678 kJ and the stored answer is 678.0, so the solution's "680 kJ" (2 s.f.) matches the tolerance; keep that.
+- fy3-16-L3-03 — the task now needs rounding up (answer 1.6, tolerance 6 % so 1.51 passes but 1.5 does not), yet the question says only "smallest mass"; add "rounded up to two figures" or a hint, otherwise a student who correctly gets 1.5 sees a wrong mark with no reason.
 
 ## Checked
-- This was my earlier polish point: L1-09 is now boiling on a hob, no longer the water thrown on the sauna stones of L1-02, so the two level 1 tasks are no longer twins; the lookup stays the new element.
-- Numbers are unchanged (0.30 kg, 2260 kJ/kg, 678 kJ); the principle, symbolic Q = rm and the 4 % tolerance still hold.
-- The solution's principle line and the reasonableness note were adapted to the hob, and the sauna remark was removed, so the text is consistent with the new situation.
+- Delta: the cool-bag answer 1.511 kg is now given as 1.6 kg because the smallest sufficient mass is rounded up, and the solution says why 1.5 kg would not be enough; reasonableness consistent with it; answers.py computes the same (ceil to 0.1).
+- The sauna-stone efficiency task's principle now says electricity becomes internal energy transferred as heat; no number changed.

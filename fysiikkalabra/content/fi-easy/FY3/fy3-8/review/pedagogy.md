@@ -1,12 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: a2466c06e4019128
+CONTENT-HASH: 55d454ed07d07adc
 
 ## Blocking
-None. Read the whole chapter (lesson, inquiry, exit ticket); the new notation can be followed by a first-time student, the inquiry, worked example and exit ticket use the same symbols, and no number or answer changed.
+- none
 
 ## Polish
-1. lesson.md, Kaava: l = l₀(1 + αΔT) and V = V₀(1 + γΔT) with Δl = l − l₀ = αl₀ΔT as the working form is a clear two-step path, and the cooling case (ΔT < 0, Δl < 0) is stated. The worked bridge example, inquiry, exit ticket and simulation labels all use l/Δl/l₀ consistently.
-2. The MAFY form l = l₀(1 + αΔT) is never used in a task (inquiry, exit ticket and exercises ask Δl only). Add one task or hint that asks for the new length l, so the exam form is practised.
-3. Litres are written with sans-serif l (\textsf{l}) so that they cannot be mistaken for the length l; this is good, keep it in new tasks.
+- inquiry.json olomuodot — the correct option is the longest and the only one with a full explanation, so it can be picked by length — shorten it or lengthen the two distractors to similar size.
+- lesson.md Esimerkki stage 6 — the significant-figure justification (three sentences about what limits the result) is heavy for the easy-language version — keep one sentence: "Kaksi merkitsevää numeroa, koska $\alpha$ ja $\Delta T$ on annettu kahdella."
+- lesson.md Esimerkki stage 7 — "Kansi pitenee kesään mennessä lähes yhdeksän senttimetriä, koska lämpötila nousee" — say "Kansi on helteellä noin $86\,\text{mm}$ pidempi kuin pakkasella", which matches the question.
+- The form l = l_0(1 + αΔT) is in the Kaava but no task asks for the new length l — add a hint or part asking for l (the earlier review noted the same).
 
-fi-easy: wording stays clear and says the same as fi.
+## Checked
+- Full review (no earlier version in git). Hero (comb joint), particle, rod, volume and rail figures: recognisable, labelled, exaggeration stated; sim at 390 px shows micromodel, rod and (T, Δl) graph, readout fits.
+- Path: comb-joint hook -> retrieval of ΔT in kelvins -> predictions (2x for ΔT, 2x for l_0, which mechanism) -> experiments vary one quantity with material and the other locked -> theory -> example.
+- Pred-1 can be refuted by the table (6,00 mm then 12,0 mm); the option "ratio of Celsius readings" targets the ΔT-versus-T misconception; feedback repairs it.
+- Pred-3 distractors name real misconceptions (particles grow, heat is a substance, symmetric vibration); the sim's limits (symmetric drawing, exaggeration x100) are stated.
+- Worked example staged in seven steps, symbolic first, ΔT = 60 K converted, order-of-magnitude check.
+- Etsi virhe (T instead of ΔT), transfer (thermometer, cm³ -> mm³ with mistake feedback), concept checks (water 4 °C, hole in plate) and the exit ticket test the core ideas.
+- Goals met: micromodel, solids, liquids, gases; no scope creep. Finnish and cases after number+unit correct.
+- Workload: optional items marked; one lesson.

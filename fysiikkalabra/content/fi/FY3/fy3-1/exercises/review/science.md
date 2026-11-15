@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 9cf120f0c0c90ba6
-SCOPE: delta added-exercise from 0fe3461097d29d49 base c52e6381769f
+CONTENT-HASH: 1197308b4ca04e20
 
 ## Blocking
 
 ## Polish
+- exercises.json:155 (fy3-1-L1-10) — the stored answer is 316,2 N, but the solution's Vastaus is $316\,\text{N}$ (3 s.f.). The tolerance accepts both, so no student is wrongly marked. Still, the answer shown on the page has one more figure than the solution justifies — consider storing 316 (the ±4 % tolerance already covers MAFY 3,72 and the lesson's 3,71, which gives 315,4 N).
 
 ## Checked
-- Figure generator: five points $(m, 5m)$, m = 2…10 kg, on the 2 kg / 10 N grid; the description lists the same points and gives neither $g$ nor the answer.
-- Recomputed: $g = 20/4 = 50/10 = 5{,}0\,\text{m/s}^2$, $G = 12 \cdot 5{,}0 = 60\,\text{N}$; answers.py gives 60.
-- The stated accepted range 58,2–61,8 N now equals the tolerance 0,03; $g$ is written in m/s² throughout (both earlier polish points fixed).
-- Model $G = mg$ with one $g$ for every body at one surface; the extrapolation to 12 kg, just past the data, is justified by proportionality, as the solution says. FY3 scope, no Newton's laws.
-- Unit N; two significant figures justified by 12 kg; the check (1,2 × 50 N) is a real check.
-- Solution complete: given, principle, reading the graph, formula in symbols, conversions, substitution with units, rounding, check.
-- Rest of the set unchanged since PASS (packet: added_exercises verified).
-- Hash same at start and end.
+- I recomputed all 20 numeric answers in one script with my own formulas. Every one lies within its tolerance of my value. L2-05 used a least-squares fit through the origin (9,80 m/s²). L3-04 used a least-squares $x/m$ (3,61 against the solution's 3,59, which comes from a sum ratio). The answers.py lines compute the right physics.
+- G = mg is used everywhere with the lesson's g table. Mass and weight are kept apart, and the spring stretch is proportional to the force with "not over-stretched" stated. Everything stays inside FY3 scope: no Newton's laws are used. In L1-09 the equality F = G comes from the meter reading equalling mg.
+- L1-09 force diagrams: B (G down from the centre, F up from the hook face, same length) is the only right one. A (pull missing), C (pull drawn twice) and D (F_k is the third-law partner acting on the meter) each carry exactly the intended error, and their feedback says why.
+- L1-06 and L1-07: exactly one option is correct, and every distractor's feedback is physically right.
+- The figures spring-points and weight-points give every value the tasks need. Their descriptions list the points without the ratio or g, so neither gives the answer away.
+- L2-06 data is consistent: the Moon row gives 1,59 m/s² against the table's 1,62.
+- L3-03 is a scale calibrated in kg on Earth and read on Mars. The model is right and the solution is symbolic first.
+- L3-05: the leg limit is a force, and the solution gets 1617 − 935 = 682 kg. The Earth comparison (612 kg) is right.
+- Significant figures follow the limiting datum in every solution, and the reasonableness checks are real (back-calculation, ratio to Earth's g).

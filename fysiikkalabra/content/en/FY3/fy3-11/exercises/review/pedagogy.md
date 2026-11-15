@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 68419fe71066d43a
+CONTENT-HASH: ef7b4644ff709336
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- L1-09 and L2-09 are good level fits. Optional: L1-09 solution could say why 4 % tolerance (atm 101325 vs 1e5 rounding).
+- diesel-ferry task — the solution now says the final zero of 480 kW is significant (three figures), but the task writes $480\,\text{kW}$ with no sign of that; either write 480. or say two figures. The answer 720 kW is accepted either way.
 
 ## Checked
-Changed symbols (P_a/P_o, Q1) and the added exercises read in full: solutions follow the staged format, symbols are defined where used, added L1-09 (lookup) and L2-09 (figure) match their levels and chapter.
+- Delta: the answer's significant-figure note changed from two to three figures; the numbers (720 kW), the principle and the reasonableness (60/40 = 1.5) are unchanged and correct.

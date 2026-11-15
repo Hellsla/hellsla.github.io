@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e406b191af20f91d
+CONTENT-HASH: 4d884b467d055fce
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- L2-08 solution: g = G/m now in m/s², formula line reads g = G1/m1, so G = mg; consistent with the lesson and CLAUDE.md (never N/kg).
-- Polish from round 1 applied (suurempi kuin); the accepted range 58,2–61,8 N is stated.
+- Delta 2026-11-15: L2 Jupiter-weight reasonableness now reads 2,5 · 24,5 N ≈ 61 N and says 62 N agrees "suhteen 2,5 pyöristyksen tarkkuudella"; 2,5 · 24,5 = 61,25, so the check is honest about rounding and the answer 62 N stands.
+- No task, answer or level changed.

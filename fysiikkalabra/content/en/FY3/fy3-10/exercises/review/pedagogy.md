@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a1183f2bb759e378
+CONTENT-HASH: 1d1d07f24a542ddf
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. L2-09 Reasonableness refers to 'the task where the difference is calculated in moles' without naming it (L2-04); name it or drop the sentence.
+- fy3-10-L2-09 — the reasonableness still says "as in the task where the difference is calculated in moles" without naming the task (it is the previous L2 task); name it by its number or drop the clause (carried from the last report).
 
 ## Checked
-- Round 2 delta judged in context (round-1 findings addressed).
-- L2-09 ratio of amounts from the slopes is no longer a subset of L2-04 (difference in moles); proportional reasoning n ~ p/T at equal V and R, level 2 fits.
-- L2-09 figure gives both lines as read points on gridlines; description equals the image and states no amounts; answer 1.67 correct, tolerance 3 %.
+- Delta: sig-fig statements now follow the data (pressure 60 kPa and difference 40 kPa have two figures, the volume 2.00 l three); the balloon check now compares 7.5 m³ with the calculated 7.4 m³; the amounts ratio is 1.7 (calculated 1.667), within the 3 % tolerance of the stored 1.67.
+- Numbers, steps and answers otherwise unchanged; solutions stay symbolic-first.

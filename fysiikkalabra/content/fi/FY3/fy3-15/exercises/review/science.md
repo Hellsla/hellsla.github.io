@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 18715801cb2d4975
+CONTENT-HASH: e0b178c42e148725
 
 ## Blocking
-- none
 
 ## Polish
-1. answers.py docstring and comments still write P₀ and P_hyöty; use P_o and P_a as the chapter does (carried from the previous report).
-2. L1-09: Answer gives c at 20 °C for hot district-heating water; one clause that c of 60-100 °C water is about 4,19-4,22 kJ/(kg·K) (still inside 4 %) would make the lookup honest (carried from the previous report).
+- exercises/solutions.md:39 and :241 (L1-04, L2-09) — The text says "Pylväiden päät ovat tarkasti ruudukon viivoilla" without limiting it to two bars. In `fy3-15/chain-bars` the grid step is 50 MW, so P₃ = 140 MW lies between gridlines. The sentence holds only for P_o, P₁ and P₂. — Write "Pylväiden P₁ ja P₂ päät ovat tarkasti ruudukon viivoilla".
 
 ## Checked
-- Hash 18715801cb2d4975 at start and end, unchanged.
-- Delta: L3-01 Järkevyys, fi solutions.md:179. "kaukolämpö vain lämmitykseen" is now "kaukolämpöä käytetään pääasiassa lämmitykseen". This fixes a claim that was too absolute (category A: district heat also serves domestic hot water, some industrial process heat and absorption cooling). The new wording matches the lesson's Yleinen virhekäsitys ("kaukolämpöä pääasiassa lämmitykseen") and the guardrail on CHP (keep the value of electricity and heat apart).
-- en solutions.md:179 ("district heat is mainly used for heating") and fi-easy solutions.md:179 (the same claim split into short sentences) say the same thing as fi. No "vain lämmitykseen" or "only for heating" is left in any language's exercise files.
-- The numbers in the context are unchanged, and I recomputed them: k = 60/348 = 0,17241, P_s = 205,5 MW, which rounds to 206 MW, and η_kok = 67,6 %. They agree with the solution.
-- The conclusion still holds: an added total efficiency does not decide profitability, which depends on demand and prices.
+- I recomputed all 20 numeric answers in one script with my own formulas: η as a product along the chain, P_h = P_o − P_a, η_kok = (P_s + P_k)/P_o, P_L = c q_m ΔT. Each one agrees with answers.py and with the key.
+- L1-04 and L2-09, edited sig-fig lines: the figure has P_o = 400, P₁ = 350, P₂ = 150 and P₃ = 140 MW. The largest drop is 200 MW, and η₂ = 150/350 = 42,86 % → 42,9 %. Three figures is justified, because 350 and 150 sit exactly on gridlines. The page shows the answer as "42,9 %", inside the tolerance of 0,03.
+- Edited energy wording in L1-02, L1-03, L1-06 (feedback) and L3-02: the energy becomes internal energy and is transferred as heat to the surroundings or the district-heating water. This is correct and follows the guardrail, and the CHP feedback now names the real mechanism.
+- L2-05: the electrical efficiency is 35 / 32 / 30 % and the total efficiency 84,6 / 88,4 / 90,0 %. The explanation (more district heat in a cold year) is correct.
+- L2-06: the efficiencies are 35 / 36 / 32 % and the waste heat 1560 / 768 / 238 MW. "No" is right: the least efficient plant does not have the largest waste heat.
+- L2-08: P_L = 503 MW, and each distractor's value matches the mistake its feedback names (0,50, 50 and 14 600 MW).
+- L3-01: P_s = 205,5 MW and η_kok = 67,6 %. L3-03 gives 87,7 kWh, against 263 kWh for direct electric heating and 111 kWh for the oil boiler. L3-04: option A needs 472,2 MW and option B 340,3 MW, so the saving is 131,9 MW (28 %).
+- L3-05: the ΔT values are 10,9 / 10,7 / 10,6 / 10,9 K, with mean 10,775 K, so P_L = 1716 MW → 1720 MW, which is below P_h = 1800 MW. L1-09 with the MAFY value c = 4,182 kJ/(kg·K) gives 13,4 MW.
+- The hash was the same at the start and the end.
