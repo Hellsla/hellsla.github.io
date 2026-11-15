@@ -8,7 +8,8 @@
 **Answer:** $3.12 \cdot 10^{-19}\,\text{J}$, three significant figures like the voltage $1.95\,\text{V}$.
 **Reasonableness:** In electronvolts the energy is exactly $1.95\,\text{eV}$, because $1\,\text{eV}$ is the energy that an electron receives in a voltage of $1\,\text{V}$. It is of the order of the energy of a photon of orange light: $$
 \begin{aligned}
-1240\,\text{eV}\,\text{nm} : 605\,\text{nm} &\approx 2.0\,\text{eV}
+&1240\,\text{eV}\,\text{nm} : 605\,\text{nm} \\
+&\approx 2.0\,\text{eV}
 \end{aligned}
 $$.
 
@@ -28,7 +29,8 @@ $$, so $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{525 \cdot 10^{-9}\
 **Answer:** $2.36\,\text{eV}$, three significant figures like the wavelength $525\,\text{nm}$.
 **Reasonableness:** With round numbers $$
 \begin{aligned}
-1240\,\text{eV}\,\text{nm} : 525\,\text{nm} &\approx 2.4\,\text{eV}
+&1240\,\text{eV}\,\text{nm} : 525\,\text{nm} \\
+&\approx 2.4\,\text{eV}
 \end{aligned}
 $$. Green light is in the middle of the visible range, and the energy of its photon is between that of red, about $2.0\,\text{eV}$, and that of violet, about $3.1\,\text{eV}$.
 
@@ -58,7 +60,8 @@ $$, so $\lambda = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.2748 \cdot
 **Answer:** $873\,\text{nm}$, three significant figures like the energy gap $1.42\,\text{eV}$.
 **Reasonableness:** With round numbers $$
 \begin{aligned}
-1240\,\text{eV}\,\text{nm} : 1.42\,\text{eV} &\approx 870\,\text{nm}
+&1240\,\text{eV}\,\text{nm} : 1.42\,\text{eV} \\
+&\approx 870\,\text{nm}
 \end{aligned}
 $$. The wavelength is over $700\,\text{nm}$, so the light is infrared. That fits, because the energy gap is smaller than the energy of a photon of red light, about $1.8\,\text{eV}$.
 
@@ -198,7 +201,8 @@ $$
 **Answer:** about $22\,\%$, two significant figures like the power $15\,\text{mW}$ and the current $20\,\text{mA}$.
 **Reasonableness:** The energy of a photon is $$
 \begin{aligned}
-1240\,\text{eV}\,\text{nm} : 365\,\text{nm} &\approx 3.4\,\text{eV}
+&1240\,\text{eV}\,\text{nm} : 365\,\text{nm} \\
+&\approx 3.4\,\text{eV}
 \end{aligned}
 $$, so if every electron created a photon, the radiated power would be about $3.4\,\text{V} \cdot 0.020\,\text{A} = 68\,\text{mW}$. The measured $15\,\text{mW}$ is about a fifth of that, as was obtained. The share is less than $100\,\%$, as it must be.
 
@@ -259,13 +263,15 @@ $$, the same value. The result $1.86\,\text{V}$ is larger than the voltage $1.80
 **Substitution:** For Aino’s value $$
 \begin{aligned}
 eU_\text{k}\lambda &= 1.602 \cdot 10^{-19}\,\text{C} \\
-&\cdot 1.74\,\text{V} \cdot 630 \cdot 10^{-9}\,\text{m} \\
+&\cdot 1.74\,\text{V} \\
+&\cdot 630 \cdot 10^{-9}\,\text{m} \\
 &= 1.7561 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$, so $h = \dfrac{1.7561 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.998 \cdot 10^8\,\text{m/s}} = 5.858 \cdot 10^{-34}\,\text{J}\,\text{s}$, Eero’s value similarly $6.329 \cdot 10^{-34}\,\text{J}\,\text{s}$, and for Salla’s value $$
 \begin{aligned}
 eU_\text{k}\lambda &= 1.602 \cdot 10^{-19}\,\text{C} \\
-&\cdot 2.04\,\text{V} \cdot 630 \cdot 10^{-9}\,\text{m} \\
+&\cdot 2.04\,\text{V} \\
+&\cdot 630 \cdot 10^{-9}\,\text{m} \\
 &= 2.0589 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$, so $h = \dfrac{2.0589 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.998 \cdot 10^8\,\text{m/s}} = 6.868 \cdot 10^{-34}\,\text{J}\,\text{s}$. Salla’s deviation is $\dfrac{6.868 - 6.626}{6.626} \cdot 100\,\% = 3.65\,\%$.
@@ -340,7 +346,8 @@ h &= 1.602 \cdot 10^{-19}\,\text{C} \\
 $$, deviation $\dfrac{6.742 - 6.626}{6.626} \cdot 100\,\% = 1.7\,\%$. For the red LED of $630\,\text{nm}$ before the correction $$
 \begin{aligned}
 eU_\text{k}\lambda &= 1.602 \cdot 10^{-19}\,\text{C} \\
-&\cdot 1.93\,\text{V} \cdot 630 \cdot 10^{-9}\,\text{m} \\
+&\cdot 1.93\,\text{V} \\
+&\cdot 630 \cdot 10^{-9}\,\text{m} \\
 &= 1.9479 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$ and $h = \dfrac{1.9479 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.998 \cdot 10^8\,\text{m/s}} = 6.497 \cdot 10^{-34}\,\text{J}\,\text{s}$, and after the correction ($1.88\,\text{V}$) $6.329 \cdot 10^{-34}\,\text{J}\,\text{s}$.

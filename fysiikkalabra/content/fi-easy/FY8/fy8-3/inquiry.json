@@ -327,7 +327,7 @@
         {
           "text": "Fotonin energia on tasojen erotus $E_4 - E_2$, ei yhden tason energia.",
           "correct": true,
-          "feedback": "Oikein. Fotonin energia on $$\n\\begin{aligned}\nE_4 - E_2 &= -0{,}850\\,\\text{eV} + 3{,}40\\,\\text{eV} \\\\\n&= 2{,}55\\,\\text{eV}\n\\end{aligned}\n$$. Silloin $\\lambda = \\tfrac{hc}{2{,}55\\,\\text{eV}} = 486\\,\\text{nm}$, ja se on syaani näkyvän valon viiva. Tason $n = 2$ energiaa ei voi jättää pois, koska siirtymä päättyy sille."
+          "feedback": "Oikein. Fotonin energia on $$\n\\begin{aligned}\nE_4 - E_2 &= -0{,}850\\,\\text{eV} \\\\\n&+ 3{,}40\\,\\text{eV} \\\\\n&= 2{,}55\\,\\text{eV}\n\\end{aligned}\n$$. Silloin $\\lambda = \\tfrac{hc}{2{,}55\\,\\text{eV}} = 486\\,\\text{nm}$, ja se on syaani näkyvän valon viiva. Tason $n = 2$ energiaa ei voi jättää pois, koska siirtymä päättyy sille."
         },
         {
           "text": "Energia olisi pitänyt muuntaa jouleiksi. Elektronivolteilla laskettuna aallonpituus tulee väärin.",

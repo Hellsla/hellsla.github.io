@@ -327,7 +327,7 @@
         {
           "text": "The energy of the photon is the difference between levels $E_4 - E_2$, not the energy of a single level.",
           "correct": true,
-          "feedback": "Correct. The energy of the photon is $$\n\\begin{aligned}\nE_4 - E_2 &= -0.850\\,\\text{eV} + 3.40\\,\\text{eV} \\\\\n&= 2.55\\,\\text{eV}\n\\end{aligned}\n$$, and $\\lambda = \\tfrac{hc}{2.55\\,\\text{eV}} = 486\\,\\text{nm}$, the cyan line of visible light. The energy of level $n = 2$ cannot be left out, because the transition ends on it."
+          "feedback": "Correct. The energy of the photon is $$\n\\begin{aligned}\nE_4 - E_2 &= -0.850\\,\\text{eV} \\\\\n&+ 3.40\\,\\text{eV} \\\\\n&= 2.55\\,\\text{eV}\n\\end{aligned}\n$$, and $\\lambda = \\tfrac{hc}{2.55\\,\\text{eV}} = 486\\,\\text{nm}$, the cyan line of visible light. The energy of level $n = 2$ cannot be left out, because the transition ends on it."
         },
         {
           "text": "The energy should have been converted to joules; calculated in electron volts, the wavelength comes out wrong.",

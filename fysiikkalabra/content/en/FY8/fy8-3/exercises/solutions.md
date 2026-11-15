@@ -301,7 +301,8 @@ Ionisation from state $3$ requires $1.5111\,\text{eV} = 1.5111 \cdot 1.602 \cdot
 **Answer:** $97.3\,\text{nm}$, three significant figures, as in the value $13.6\,\text{eV}$.
 **Reasonableness:** The energy of the photon of the source, $12.75\,\text{eV}$, is smaller than the ionisation energy $13.6\,\text{eV}$, so the atoms are not ionised, and the wavelength is shorter than the shortest observed line, $102.6\,\text{nm}$. The sum of the energies of the photons of the cascade $4 \to 3 \to 2 \to 1$ is $$
 \begin{aligned}
-&0.661\,\text{eV} + 1.889\,\text{eV} + 10.20\,\text{eV} \\
+&0.661\,\text{eV} + 1.889\,\text{eV} \\
+&+ 10.20\,\text{eV} \\
 &= 12.75\,\text{eV}
 \end{aligned}
 $$, so on returning exactly the absorbed energy is released.

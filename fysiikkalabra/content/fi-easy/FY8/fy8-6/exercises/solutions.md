@@ -8,7 +8,8 @@
 **Vastaus:** $3{,}12 \cdot 10^{-19}\,\text{J}$, kolme merkitsevää numeroa kuten jännitteessä $1{,}95\,\text{V}$.
 **Järkevyys:** Elektronivoltteina energia on täsmälleen $1{,}95\,\text{eV}$, koska $1\,\text{eV}$ on energia, jonka elektroni saa $1\,\text{V}$:n jännitteessä. Se on oranssin valon fotonin energian suuruinen: $$
 \begin{aligned}
-1240\,\text{eV}\,\text{nm} : 605\,\text{nm} &\approx 2{,}0\,\text{eV}
+&1240\,\text{eV}\,\text{nm} : 605\,\text{nm} \\
+&\approx 2{,}0\,\text{eV}
 \end{aligned}
 $$.
 
@@ -28,7 +29,8 @@ $$, joten $E = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{525 \cdot 10^
 **Vastaus:** $2{,}36\,\text{eV}$, kolme merkitsevää numeroa kuten aallonpituudessa $525\,\text{nm}$.
 **Järkevyys:** Pyöreillä luvuilla $$
 \begin{aligned}
-1240\,\text{eV}\,\text{nm} : 525\,\text{nm} &\approx 2{,}4\,\text{eV}
+&1240\,\text{eV}\,\text{nm} : 525\,\text{nm} \\
+&\approx 2{,}4\,\text{eV}
 \end{aligned}
 $$. Vihreä valo on näkyvän alueen keskellä. Sen fotonin energia on punaisen (noin $2{,}0\,\text{eV}$) ja violetin (noin $3{,}1\,\text{eV}$) välissä.
 
@@ -58,7 +60,8 @@ $$, joten $\lambda = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}274
 **Vastaus:** $873\,\text{nm}$, kolme merkitsevää numeroa kuten energia-aukossa $1{,}42\,\text{eV}$.
 **Järkevyys:** Pyöreillä luvuilla $$
 \begin{aligned}
-1240\,\text{eV}\,\text{nm} : 1{,}42\,\text{eV} &\approx 870\,\text{nm}
+&1240\,\text{eV}\,\text{nm} : 1{,}42\,\text{eV} \\
+&\approx 870\,\text{nm}
 \end{aligned}
 $$. Aallonpituus on yli $700\,\text{nm}$, joten valo on infrapunaa. Se sopii, koska energia-aukko on pienempi kuin punaisen valon fotonin energia, noin $1{,}8\,\text{eV}$.
 
@@ -202,7 +205,8 @@ $$
 **Vastaus:** noin $22\,\%$, kaksi merkitsevää numeroa kuten tehossa $15\,\text{mW}$ ja virrassa $20\,\text{mA}$.
 **Järkevyys:** Fotonin energia on $$
 \begin{aligned}
-1240\,\text{eV}\,\text{nm} : 365\,\text{nm} &\approx 3{,}4\,\text{eV}
+&1240\,\text{eV}\,\text{nm} : 365\,\text{nm} \\
+&\approx 3{,}4\,\text{eV}
 \end{aligned}
 $$. Jos jokainen elektroni synnyttäisi fotonin, säteilyteho olisi noin $3{,}4\,\text{V} \cdot 0{,}020\,\text{A} = 68\,\text{mW}$. Mitattu $15\,\text{mW}$ on siitä noin viidennes, kuten saatiin. Osuus on alle $100\,\%$, kuten pitää.
 
@@ -267,13 +271,15 @@ $$, sama arvo. Tulos $1{,}86\,\text{V}$ on suurempi kuin jännite $1{,}80\,\text
 **Sijoitus:** Ainon arvolle $$
 \begin{aligned}
 eU_\text{k}\lambda &= 1{,}602 \cdot 10^{-19}\,\text{C} \\
-&\cdot 1{,}74\,\text{V} \cdot 630 \cdot 10^{-9}\,\text{m} \\
+&\cdot 1{,}74\,\text{V} \\
+&\cdot 630 \cdot 10^{-9}\,\text{m} \\
 &= 1{,}7561 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$, joten $h = \dfrac{1{,}7561 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 5{,}858 \cdot 10^{-34}\,\text{J}\,\text{s}$. Eeron arvo lasketaan samoin: $6{,}329 \cdot 10^{-34}\,\text{J}\,\text{s}$. Sallan arvolle $$
 \begin{aligned}
 eU_\text{k}\lambda &= 1{,}602 \cdot 10^{-19}\,\text{C} \\
-&\cdot 2{,}04\,\text{V} \cdot 630 \cdot 10^{-9}\,\text{m} \\
+&\cdot 2{,}04\,\text{V} \\
+&\cdot 630 \cdot 10^{-9}\,\text{m} \\
 &= 2{,}0589 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$, joten $h = \dfrac{2{,}0589 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 6{,}868 \cdot 10^{-34}\,\text{J}\,\text{s}$. Sallan poikkeama on $\dfrac{6{,}868 - 6{,}626}{6{,}626} \cdot 100\,\% = 3{,}65\,\%$.
@@ -348,7 +354,8 @@ h &= 1{,}602 \cdot 10^{-19}\,\text{C} \\
 $$, poikkeama $\dfrac{6{,}742 - 6{,}626}{6{,}626} \cdot 100\,\% = 1{,}7\,\%$. Punaisella LEDillä $630\,\text{nm}$ ennen korjausta $$
 \begin{aligned}
 eU_\text{k}\lambda &= 1{,}602 \cdot 10^{-19}\,\text{C} \\
-&\cdot 1{,}93\,\text{V} \cdot 630 \cdot 10^{-9}\,\text{m} \\
+&\cdot 1{,}93\,\text{V} \\
+&\cdot 630 \cdot 10^{-9}\,\text{m} \\
 &= 1{,}9479 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$ ja $h = \dfrac{1{,}9479 \cdot 10^{-25}\,\text{J}\,\text{m}}{2{,}998 \cdot 10^8\,\text{m/s}} = 6{,}497 \cdot 10^{-34}\,\text{J}\,\text{s}$. Korjauksen ($1{,}88\,\text{V}$) jälkeen tulos on $6{,}329 \cdot 10^{-34}\,\text{J}\,\text{s}$.

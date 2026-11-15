@@ -91,7 +91,8 @@ $$. $\dfrac{hc}{\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{4
 **Vastaus:** $n = 6$. Järjestysluku on kokonaisluku, ja laskettu arvo $6{,}02$ poikkeaa siitä vain pyöristyksen verran.
 **Järkevyys:** Tarkistus toiseen suuntaan: $$
 \begin{aligned}
-E_6 - E_2 &= -0{,}378\,\text{eV} + 3{,}40\,\text{eV} \\
+E_6 - E_2 &= -0{,}378\,\text{eV} \\
+&+ 3{,}40\,\text{eV} \\
 &= 3{,}02\,\text{eV}
 \end{aligned}
 $$, ja se vastaa aallonpituutta $410\,\text{nm}$. Violetti viiva on Balmerin näkyvistä viivoista lyhin. Sen ylemmän tason täytyy siis olla näistä neljästä korkein.
@@ -306,7 +307,8 @@ Ionisaatioon tilasta $3$ tarvitaan $1{,}5111\,\text{eV} = 1{,}5111 \cdot 1{,}602
 **Vastaus:** $97{,}3\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, kuten arvossa $13{,}6\,\text{eV}$.
 **Järkevyys:** Lähteen fotonin energia $12{,}75\,\text{eV}$ on pienempi kuin ionisaatioenergia $13{,}6\,\text{eV}$, joten atomit eivät ionisoidu. Aallonpituus on lyhyempi kuin lyhin havaittu viiva $102{,}6\,\text{nm}$. Siirtymäketjun $4 \to 3 \to 2 \to 1$ fotonien energioiden summa on $$
 \begin{aligned}
-&0{,}661\,\text{eV} + 1{,}889\,\text{eV} + 10{,}20\,\text{eV} \\
+&0{,}661\,\text{eV} + 1{,}889\,\text{eV} \\
+&+ 10{,}20\,\text{eV} \\
 &= 12{,}75\,\text{eV}
 \end{aligned}
 $$. Palatessaan atomi siis vapauttaa täsmälleen absorboidun energian.
