@@ -28,6 +28,8 @@ tyhjät 28×28 px kaappaukset) tehdään yksin. Voi kulkea rinnakkain kohdan 2 k
 
 ## 4b. Dronelabra: lentokokeiden taulukko liian leveä puhelimella (2026-11-14)
 
+Varattu: claude/ahjo-taulukot-4b
+
 Löytyi #568:n koko sivuston ajossa 360 ja 390 px:llä: `ahjo-drone-lentokokeet` (fi, en, fi-easy) taulukko on
 91–130 px laatikkoaan leveämpi (`check_layout` `table`, suljettu tila). Ainoa löydös koko sivustolla näillä
 leveyksillä. Lähde `jaksot/ahjo/kohteet/ahjo-drone-lentokokeet.md`. Korjaus ensisijaisesti jaksopohjan taulukon
