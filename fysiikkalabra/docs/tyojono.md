@@ -6,7 +6,7 @@ valmis kohta poistetaan tästä samassa pull requestissa.
 Tämä on ainoa työjono (opettaja 2026-11-13): ei GitHub Issuesia eikä erillisiä listoja. Kohdat ovat
 `docs/ROADMAP.md`:n järjestyksessä. Kohdan ottava ketju katsoo ensin avoimet pull requestit, merkitsee kohtaan
 ensimmäisessä commitissaan `Varattu: <haara>` ja avaa luonnos-PR:n heti, jotta muut ketjut näkevät varauksen
-(repon juuren `CLAUDE.md`). Saman kurssin kohdat tehdään peräkkäin, eri kurssien enintään kuusi rinnakkain (opettaja 2026-11-15).
+(repon juuren `CLAUDE.md`). Saman kurssin kohdat tehdään peräkkäin, eri kurssien yleensä enintään kolme rinnakkain; kun opettaja sanoo työn kiireelliseksi, ei ylärajaa (opettaja 2026-11-15).
 
 ## 3. Kaavat taulukkokirjan muotoon: valmis
 
@@ -82,6 +82,12 @@ näkyy 360 px:llä muodossa "4500 kW". Opettaja 2026-11-15:
   `reflow`-carry (5b) siirtää tiede- ja pedagogiikkakatselmoinnit.
 Tehdään kurssi kerrallaan, yksi PR per kurssi, alkaen kursseista, joilla rivejä on eniten (FY8, FY9, FY2); jokainen
 korjattu kaava poistaa rivinsä listalta. Ei muita sisältömuutoksia samassa PR:ssä.
+Opit FY8:sta (#601, 15.11): (1) inline-`$$` samalla rivillä ilman tyhjiä rivejä pitää tekstin välit ennallaan, jolloin
+reviews.py:n rivipohjainen luokitus ei anna `numbers`-luokkaa sekatiedostoissa (esim. inquiry.json). (2) lint_lesson:
+lessonin Esimerkki-`$$`-lohkon ensimmäisellä rivillä ei lukuja ja yksiköitä (vasen puoli omalle riville); solutions.md:n
+Kaava-rivin ensimmäisellä rivillä `=` (`$$\begin{aligned}` ja ensimmäinen rivi samalla rivillä). (3) check_i18n vaatii
+saman kaavarakenteen kaikilla kielillä: rivijako päätetään kielineutraalisti. (4) CI:n Chromium on noin 4 px tiukempi
+kuin paikallinen: aja check_layout myös 352 px:llä. (5) Rakenna site/ vasta, kun kaikki katselmoinnit ovat voimassa.
 
 ## 5e. Välimerkki display-kaavan perään (koordinaattori 2026-11-15)
 
@@ -440,7 +446,10 @@ täyden katselmoinnin, työntekijä kertoo koordinaattorille ennen ajoa. Kurssin
 merkitsevät numerot, termit, "lämmöksi", likiarvorivit, kieli) samalla kierroksella (P2), myös tehtävänannot,
 inquiry.json, kuvien tekstit ja käännökset. Kurssi aloitetaan, kun kohta 8m on yhdistetty ja kurssin kohdan 5d
 leikkautuvat kaavat ovat mainissa (FY8 odottaa #601:tä). Avoin kohta 12 ratkesi päätöksellä P9: pieniä arvoeroja ei
-muuteta. Yksi kurssi = yksi haara ja yksi PR; enintään kuusi työntekijää yhtä aikaa.
+muuteta. Yksi kurssi = yksi haara ja yksi PR; rinnakkaisuus kuten jonon alussa (kiireellä ei ylärajaa).
+Päätös (opettaja 2026-11-15): raja-arvotehtävien tarkistus hyväksyy jatkossakin poikkeaman molempiin suuntiin
+(esim. fy6-16 L2-05: 10,4 ja 10,5 kW), eikä yksipuolista tarkistusta tehdä. P7c koskee vain mallivastauksen pyöristystä.
+FY1 tehty: claude/fy1-oikoluku (PR #614).
 Kohta 8m (#618) lisäsi `physics_phrases.py`:hen säännöt heat-into (P1) ja liikekitka: kurssin "lämmöksi"-virkkeet ovat
 `docs/physics-phrases-known.tsv`:ssä (vain fi; samat virkkeet fi-easy- ja en-versioissa korjataan samalla), ja korjaus poistaa
 kurssin rivit. FY9:n lepokitkan nimitykset ("suurin lepokitka") yhtenäistetään 9c:ssä (#602).

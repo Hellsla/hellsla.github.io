@@ -165,7 +165,7 @@
 **Järkevyys:** Mittauspisteet kasvavat noin $0{,}6\,\text{m}$ joka kahden sekunnin välein, eli noin $0{,}3\,\text{m/s}$. Tulos on leluauton nopeuden luokkaa.
 ## fy1-8-L3-04
 **Annettu:** $\bar{t}_{50} = 3{,}12\,\text{s} \pm 0{,}04\,\text{s}$, $\bar{t}_{200} = 3{,}08\,\text{s} \pm 0{,}04\,\text{s}$; käsiajanoton epävarmuus $\Delta t_\text{käsi} = 0{,}15\,\text{s}$; pohdinnan väitteet ”koe onnistui hyvin”, ”hypoteesi oli oikein” ja ”virheitä oli vähän”
-**Kysytty:** kuinka moninkertainen $\Delta t_\text{käsi}$ on keskiarvojen erotukseen verrattuna, ja mitkä väitteet aineisto tukee
+**Kysytty:** kuinka moninkertainen $\Delta t_\text{käsi}$ on keskiarvojen erotukseen verrattuna, ja mitä väitteitä aineisto tukee
 **Periaate:** Pohdinta arvioi, mitä tulokset osoittavat ja kuinka luotettavia ne ovat. Keskiarvojen eroa verrataan niiden epävarmuuksiin. Tässä mittausarvojen epävarmuusvälit menevät päällekkäin, joten tämän aineiston perusteella ei voida luotettavasti päätellä, että pallojen vierimisajat poikkeavat toisistaan. Tulosten tulkinnassa on huomioitava myös käsiajanoton epävarmuus. Kokeen ei sanota todistavan hypoteesia varmaksi, eikä lauseen ”virheitä oli vähän” pidä jäädä ilman lukuja.
 **Kaava:** erotus $d = \bar{t}_{50} - \bar{t}_{200}$ ja suhde $k = \dfrac{\Delta t_\text{käsi}}{d}$
 **Muunnokset:** Kaikki ajat ovat sekunteina, joten muunnoksia ei tarvita.
