@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0775225e55ef25bc
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 9b293083aae3919e.
+CONTENT-HASH: 14b317dac8dafa44
+Review of the recognition chart (queue 9c) and the term change against the version passed at 0775225e55ef25bc; full on the chart, delta on the rest.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- (C) "no friction, only gravity" and "collision → momentum conserved" leave out "no other force does work" / "external impulse negligible"; fair at this level.
 
 ## Checked
-Every hunk of the en merge diff (word diff). Exit ticket $E_\text{k}$ and perfectly inelastic $v' = m_1v_1/(m_1+m_2)$; shares $1 - (m_A+m_B)v'^2/(m_Av_A^2)$, $1 - v^2/(2gh)$, $\Delta p/p$; $s_\text{p}/v_0 = t_\text{r} + v_0/(2a)$ so $t_\text{r} = y_1 - kv_1$, $a = 1/(2k)$; $(9/6)^3 = 3.375$; $P'/P = h'/h = 4/3$; pile $\Delta T = NkE_\text{loss}/(cm_\text{t})$. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.
+- Every row: $E_\text{p0} + E_\text{k0} = E_\text{p} + E_\text{k}$; work-energy principle with $W$ of the other forces; $E_\text{k} = \tfrac12mv^2$; $E_\text{p} = mgh$; $\overline{p}_\text{before} = \overline{p}_\text{after}$ (overlined vectors); elastic $\Delta E_\text{k} = 0$; $\overline{I} = \Delta\overline{p}$; $\eta = P_\text{a}/P_\text{o}$. Agree with the Formula section.
+- The aria-label matches the chart.
+- Term change: sovella/solutions.md "Kinetic" -> "Sliding friction $F_\mu = \mu N = \mu mg$", physics unchanged and correct; teacher.md wording only.
+- The en chart (docs/figures/fy9-tunnistus/fy9-sailymislait-en-360.png) and the hash, taken at the start and the end (14b317dac8dafa44).

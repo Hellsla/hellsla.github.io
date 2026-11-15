@@ -19,6 +19,8 @@ import herolib as H
 
 figlib.set_language({}, ",")
 
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
+
 # the hook (computed here and quoted in unit.md and inquiry.json)
 F_WHISTLE = 3000.0          # Hz
 V_AIR = 350.0               # m/s, the warm air of the hall (about 28 °C)
@@ -106,39 +108,57 @@ def hero():
 
 
 def kartta():
-    """The concept map, stacked for a phone: periodic motion at the top, a spine down the left and three boxes
-    (oscillators, waves, sound), each with three laws and a grey word beside each."""
-    f = Fig("fy9aa-kartta", 704, "Käsitekartta. Ylhäällä solmu jaksollinen liike: jaksonaika T, taajuus f = 1 per T ja amplitudi A. Siitä lähtee "
-            "alas kolme haaraa. Värähtelijät, toistuva liike: jousen voima F = miinus k x vektoreina, jousivärähtelijän "
-            "jaksonaika T = 2 pii kertaa neliöjuuri m per k ja heilurin jaksonaika T = 2 pii kertaa neliöjuuri l per g. "
-            "Aallot, värähtely etenee: aaltoliikkeen perusyhtälö v = f lambda, vahvistava interferenssi, kun matkaero on n "
-            "lambda, ja kielen ominaistaajuudet f n = n v per 2 L. Ääni, aalto ilmassa: huojunta f H = f 1 miinus f 2 "
-            "itseisarvona, Dopplerin ilmiö lähteen liikkuessa kohti havaitsijaa ja intensiteettitaso L = 10 desibeliä "
-            "kertaa logaritmi I per I 0.", width=380, size=20)
-    groups = [
-        ("värähtelijät", "toistuva liike", [(r"\overline{F} = -k\overline{x}", "jousen voima"), (r"T = 2\pi\sqrt{m/k}", "jousi"), (r"T = 2\pi\sqrt{l/g}", "heiluri")]),
-        ("aallot", "värähtely etenee", [(r"v = f\lambda", "eteneminen"), (r"\Delta s = n\lambda", "vahvistava"), (r"f_n = n \cdot v/(2L)", "seisova aalto")]),
-        ("ääni", "aalto ilmassa", [(r"f_\text{H} = |f_1 - f_2|", "huojunta"), (r"f = f_0\,v/(v - v_\text{L})", "Doppler"),
-                  (r"L = 10\lg(I/I_0)\,\text{dB}", "taso")]),
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words (YO language): the sign on top, the choice it leads to and, as the result in a
+    pill in the site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from
+    the start box. A row is (sign, choice, law, pill width, law on a line of its own)."""
+    rows = [
+        (r"\text{massa jousen päässä}", r"\to\ \text{jaksonaika}", r"T = 2\pi\sqrt{m/k}", 150, False),
+        (r"\text{heiluri, pieni kulma}", r"\to\ \text{jaksonaika}", r"T = 2\pi\sqrt{l/g}", 150, False),
+        (r"\text{aallon nopeus, taajuus, pituus}", r"\to\ \text{aaltoyhtälö}", r"v = f\lambda", 124, False),
+        (r"\text{kaksi lähdettä, voimistuu}", r"\to\ \text{matkaero}", r"\Delta s = n\lambda", 124, False),
+        (r"\text{kaksi lähdettä, vaimenee}", r"\to\ \text{matkaero}", r"\Delta s = (n + 1/2)\lambda", 160, False),
+        (r"\text{kieli tai avoin putki}", r"\to\ \text{seisova aalto}", r"f_n = n\,v/(2L)", 130, False),
+        (r"\text{kaksi lähes samaa taajuutta}", r"\to\ \text{huojunta}", r"f_\text{H} = |f_1 - f_2|", 150, False),
+        (r"\text{lähde tai havaitsija liikkuu}", r"\to\ \text{taajuus muuttuu}", r"\text{Doppler}", 124, False),
+        (r"\text{äänen voimakkuus desibeleinä}", r"\to\ \text{intensiteettitaso}", r"L = 10\lg(I/I_0)\,\text{dB}", 190, True),
     ]
-    hub_y, hub_h, x_box, gh, top = 8, 72, 44, 188, 100
-    spine = 24
-    f.line(spine, hub_y + hub_h, spine, top + 2 * (gh + 16) + 22, RULE, 3)
-    f.rect(8, hub_y, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
-    f.tex(190, hub_y + 22, r"\text{jaksollinen liike}", "middle", INK)
-    f.tex(190, hub_y + 51, r"T,\ f = 1/T,\ A", "middle", INK)
-    for k, (head, sub, rows) in enumerate(groups):
-        y = top + k * (gh + 16)
-        f.line(spine, y + 22, x_box, y + 22, RULE, 3)
-        f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
-        f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
-        f.tex(362, y + 22, r"\text{" + sub + "}", "end", MUTED, size=17)
-        f.line(x_box + 10, y + 42, 362, y + 42, RULE_LIGHT, 1.5)
-        for j, (law, word) in enumerate(rows):
-            yy = y + 68 + j * 52
-            f.tex(x_box + 14, yy, law, "start", INK, size=18 if len(law) > 22 else None)
-            if word: f.tex(362, yy, r"\text{" + word + "}", "end", MUTED, size=17)
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    heights = [ch + (30 if r[4] else 0) for r in rows]
+    ys = [top + sum(heights[:k]) + gap * k for k in range(len(rows))]
+    height = ys[-1] + heights[-1] + 8
+    f = Fig("fy9aa-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + heights[-1] / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{liike vai aalto? katso tunnusmerkki}", "middle", INK, size=17, w=340)
+    for (sign, choice, law, pw, wide), y, ch_ in zip(rows, ys, heights):
+        f.line(14, y + ch_ / 2, x0, y + ch_ / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch_, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        if wide:                                               # the choice on a line of its own, the law below it
+            f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 28)
+            yy += 30
+        else:
+            f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 28 - pw - 8)
+        ph = 28 if "sqrt" in law else 24
+        f.rect(x1 - pw - 10, yy - ph / 2 + 1, pw, ph, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 10 - pw / 2, yy + 1, law, "middle", WHITE, size=17, w=pw - 8)
     return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita kysymällä, onko tehtävässä liike vai aalto, ja "
+               "katso, mikä tunnusmerkki sopii. Massa jousen päässä: värähtelijän jaksonaika on kaksi pii kertaa neliöjuuri "
+               "massasta jaettuna jousivakiolla. Heiluri, pieni kulma: jaksonaika on kaksi pii kertaa neliöjuuri pituudesta "
+               "jaettuna putoamiskiihtyvyydellä. Aallon nopeus, taajuus, pituus: aaltoyhtälö, nopeus on taajuus kertaa "
+               "aallonpituus. Kaksi lähdettä, voimistuu: matkaero on kokonaisluku kertaa aallonpituus. Kaksi lähdettä, "
+               "vaimenee: matkaero on kokonaisluku ja puoli kertaa aallonpituus. Kieli tai avoin putki: seisova aalto, "
+               "ominaistaajuus on n kertaa nopeus jaettuna kahdella pituudella. Kaksi lähes samaa taajuutta: huojunta, "
+               "huojuntataajuus on taajuuksien erotuksen itseisarvo. Lähde tai havaitsija liikkuu: taajuus muuttuu, kyseessä "
+               "on Dopplerin ilmiö. Äänen voimakkuus desibeleinä: intensiteettitaso on kymmenen kertaa intensiteetin ja "
+               "kynnysintensiteetin suhteen kymmenkantainen logaritmi desibeleinä.")
 
 
 def pilli():

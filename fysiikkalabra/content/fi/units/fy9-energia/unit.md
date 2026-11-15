@@ -211,44 +211,70 @@ Kaikki tämän tunnin tehtävät lähtevät samasta periaatteesta: **energia sä
 
 Säilymislaista haarautuu kolme kysymystä, joihin kokeen energiatehtävät palautuvat. **Kuinka nopeasti** energiaa muuttuu? Sen kertoo teho. **Kuinka suuri osa** tulee hyödyksi? Sen kertoo hyötysuhde. **Mistä** energia tulee? Polttoaineen lämpöarvosta, voiman tekemästä työstä tai virtaavasta vedestä, tuulesta ja auringosta.
 
-<svg data-fig="kartta" viewBox="0 0 380 596" role="img" aria-label="Käsitekartta. Ylhäällä solmu energia säilyy: E alussa on yhtä suuri kuin E lopussa. Siitä lähtee alas kolme haaraa. Teho: P = ΔE / Δt, energia tehosta E = P t ja kilowattitunti 1 kWh = 3,6 MJ. Hyötysuhde: eeta = W a / W o, häviöt W o = W a + W h ja tehoista eeta = P a / P o. Energian lähde: polttoaine Q = H m, työ W = F s ja nostotyö W = m g h." style="max-width:100%;font-size:21px">
-  <line x1="24" y1="80" x2="24" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+<svg data-fig="kartta" viewBox="0 0 380 870" role="img" aria-label="Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Aloita luettelemalla energialajit ja katso, mikä tehtävän tunnusmerkki sopii. Eristetty systeemi: energia säilyy, joten energia alussa on yhtä suuri kuin energia lopussa. Energia ajan kuluessa: teho on energian muutos jaettuna ajalla. Tasainen teho, kesto tiedossa: energia on teho kertaa aika. Kilowattitunteja: muunna jouleiksi, yksi kilowattitunti on 3,6 megajoulea. Hyötyenergia ja otettu energia: hyötysuhde on annettu energia jaettuna otetulla energialla. Monta laitetta peräkkäin: kerro vaiheiden hyötysuhteet keskenään. Polttoaine, lämpöarvo: palamislämpö on lämpöarvo kertaa massa. Voima siirtää matkan: työ on voima kertaa matka." style="max-width:100%;font-size:21px">
+  <line x1="14" y1="80" x2="14" y2="826" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
   <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
-  <foreignObject x="115" y="16.5" width="150" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\text{energia säilyy}$</div></foreignObject>
-  <foreignObject x="98.5" y="46.5" width="183" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$E_\text{alussa} = E_\text{lopussa}$</div></foreignObject>
-  <line x1="24" y1="122" x2="44" y2="122" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="100" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="109.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{teho}$</div></foreignObject>
-  <line x1="54" y1="142" x2="362" y2="142" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="153.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$P = \Delta E/\Delta t$</div></foreignObject>
-  <foreignObject x="260" y="155" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{määritelmä}$</div></foreignObject>
-  <foreignObject x="58" y="187.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$E = P\,t$</div></foreignObject>
-  <foreignObject x="223" y="189" width="139" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{energia tehosta}$</div></foreignObject>
-  <foreignObject x="58" y="221.5" width="139" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$1\,\text{kWh} = 3{,}6\,\text{MJ}$</div></foreignObject>
-  <foreignObject x="223" y="223" width="139" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{kilowattitunti}$</div></foreignObject>
-  <line x1="24" y1="288" x2="44" y2="288" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="266" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="275.5" width="128" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{hyötysuhde}$</div></foreignObject>
-  <line x1="54" y1="308" x2="362" y2="308" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="319.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = W_\text{a}/W_\text{o}$</div></foreignObject>
-  <foreignObject x="260" y="321" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{määritelmä}$</div></foreignObject>
-  <foreignObject x="58" y="353.5" width="95" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W_\text{o} = W_\text{a} + W_\text{h}$</div></foreignObject>
-  <foreignObject x="298" y="355" width="64" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{häviöt}$</div></foreignObject>
-  <foreignObject x="58" y="387.5" width="84" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\eta = P_\text{a}/P_\text{o}$</div></foreignObject>
-  <foreignObject x="279" y="389" width="83" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{tehoista}$</div></foreignObject>
-  <line x1="24" y1="454" x2="44" y2="454" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
-  <rect x="44" y="432" width="328" height="150" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
-  <foreignObject x="58" y="441.5" width="161" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$\textbf{energian lähde}$</div></foreignObject>
-  <line x1="54" y1="474" x2="362" y2="474" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
-  <foreignObject x="58" y="485.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$Q = Hm$</div></foreignObject>
-  <foreignObject x="260" y="487" width="102" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{polttoaine}$</div></foreignObject>
-  <foreignObject x="58" y="519.5" width="52" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = Fs$</div></foreignObject>
-  <foreignObject x="326" y="521" width="36" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{työ}$</div></foreignObject>
-  <foreignObject x="58" y="553.5" width="63" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:21px">$W = mgh$</div></foreignObject>
-  <foreignObject x="279" y="555" width="83" height="22" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:18px;color:#6b7480">$\text{nostotyö}$</div></foreignObject>
+  <foreignObject x="25" y="21.5" width="330" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\textbf{mistä tunnistan lain?}$</div></foreignObject>
+  <foreignObject x="20" y="52" width="340" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px">$\text{energialajit ensin, sitten tunnusmerkki}$</div></foreignObject>
+  <line x1="14" y1="149" x2="30" y2="149" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="98" width="342" height="102" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="108.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{eristetty systeemi}$</div></foreignObject>
+  <line x1="40" y1="138" x2="362" y2="138" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="143" width="314" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{energia säilyy}$</div></foreignObject>
+  <rect x="142" y="172" width="220" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="146" y="174" width="212" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$E_\text{alussa} = E_\text{lopussa}$</div></foreignObject>
+  <line x1="14" y1="250" x2="30" y2="250" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="214" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="224.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{energia ajan kuluessa}$</div></foreignObject>
+  <line x1="40" y1="254" x2="362" y2="254" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="259" width="176" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{teho}$</div></foreignObject>
+  <rect x="232" y="258" width="130" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="236" y="260" width="122" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$P = \Delta E/\Delta t$</div></foreignObject>
+  <line x1="14" y1="336" x2="30" y2="336" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="300" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="310.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{tasainen teho, kesto tiedossa}$</div></foreignObject>
+  <line x1="40" y1="340" x2="362" y2="340" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="345" width="182" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{energia}$</div></foreignObject>
+  <rect x="238" y="344" width="124" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="242" y="346" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$E = Pt$</div></foreignObject>
+  <line x1="14" y1="437" x2="30" y2="437" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="386" width="342" height="102" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="396.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{kilowattitunteja}$</div></foreignObject>
+  <line x1="40" y1="426" x2="362" y2="426" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="431" width="314" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{muunna jouleiksi}$</div></foreignObject>
+  <rect x="172" y="460" width="190" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="176" y="462" width="182" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$1\,\text{kWh} = 3{,}6\,\text{MJ}$</div></foreignObject>
+  <line x1="14" y1="538" x2="30" y2="538" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="502" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="512.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{hyötyenergia ja otettu energia}$</div></foreignObject>
+  <line x1="40" y1="542" x2="362" y2="542" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="547" width="176" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{hyötysuhde}$</div></foreignObject>
+  <rect x="232" y="546" width="130" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="236" y="548" width="122" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\eta = W_\text{a}/W_\text{o}$</div></foreignObject>
+  <line x1="14" y1="639" x2="30" y2="639" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="588" width="342" height="102" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="598.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{monta laitetta peräkkäin}$</div></foreignObject>
+  <line x1="40" y1="628" x2="362" y2="628" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="633" width="314" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{kerro hyötysuhteet}$</div></foreignObject>
+  <rect x="212" y="662" width="150" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="216" y="664" width="142" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\eta = \eta_1\eta_2\eta_3$</div></foreignObject>
+  <line x1="14" y1="740" x2="30" y2="740" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="704" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="714.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{polttoaine, lämpöarvo}$</div></foreignObject>
+  <line x1="40" y1="744" x2="362" y2="744" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="749" width="206" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{palamislämpö}$</div></foreignObject>
+  <rect x="262" y="748" width="100" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="266" y="750" width="92" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$Q = Hm$</div></foreignObject>
+  <line x1="14" y1="826" x2="30" y2="826" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="790" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="800.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{voima siirtää matkan}$</div></foreignObject>
+  <line x1="40" y1="830" x2="362" y2="830" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="835" width="182" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{työ}$</div></foreignObject>
+  <rect x="238" y="834" width="124" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="242" y="836" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$W = Fs$</div></foreignObject>
 </svg>
 
-Kokeessa ratkaisu alkaa siitä, että tunnistat, mikä haara tehtävässä on kyseessä, ja kirjoitat sen lain ennen lukuja. Energia ja teho ovat eri suureita: kilowatti kertoo vauhdin, kilowattitunti määrän.
+Kokeessa ratkaisu alkaa siitä, että tunnistat, minkä tunnusmerkin tehtävä antaa, ja kirjoitat sen lain ennen lukuja. Energia ja teho ovat eri suureita: kilowatti kertoo vauhdin, kilowattitunti määrän.
 
 Tästä saadaan myös vastaus alun kysymykseen. Kymmenessä litrassa bensiiniä on energiaa noin $7{,}5\,\text{kg} \cdot 43\,\text{MJ/kg} \approx 320\,\text{MJ} \approx 90\,\text{kWh}$, enemmän kuin $40\,\text{kWh}$:n akussa. Lataus kestää silti kauan, koska pistorasian teho on pieni: $40\,\text{kWh} : 2{,}3\,\text{kW} \approx 17\,\text{h}$.
 

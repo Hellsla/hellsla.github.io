@@ -9,6 +9,8 @@ from figlib import (Fig, Axes, fi, n, INK, MUTED, WHITE, RULE, RULE_LIGHT, GLASS
 import herolib as H
 from herolib import grad, rnd
 
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
+
 
 def _fit(x, y):
     mx, my = sum(x) / len(x), sum(y) / len(y)
@@ -123,30 +125,48 @@ def hero():
 
 
 def kartta():
-    """The overview of the lesson as one chain: from the measurement to the reported result, with what each step asks."""
-    f = Fig("fy9m-kartta", 448, "Kaavio: mittauksesta tulokseen viidessä vaiheessa, jotka on yhdistetty alaspäin osoittavilla nuolilla. "
-            "1 Mittaus: lukema, epävarmuus Δx ja tarkkuus. 2 Kuvaaja: akseleilla suure ja yksikkö. 3 Sovitus: suora tai "
-            "linearisointi. 4 Tulkinta: kulmakerroin k ja vakiotermi b yksiköineen. 5 Tulos: k ± Δk ja mallin pätevyysalue.", size=26)
-    steps = [(r"\text{Mittaus}", r"\text{lukema}, \ \Delta x, \ \text{tarkkuus}"),
-             (r"\text{Kuvaaja}", r"\text{suure (yksikkö)}"),
-             (r"\text{Sovitus}", r"\text{suora tai linearisointi}"),
-             (r"\text{Tulkinta}", r"k \text{ ja } b \text{ yksiköineen}"),
-             (r"\text{Tulos}", r"k \pm \Delta k, \ \text{pätevyysalue}")]
-    colours = [(COLD_LIGHT, COLD), (COLD_LIGHT, COLD), (HEAT_LIGHT, HEAT), (HEAT_LIGHT, HEAT), (GOOD_LIGHT, GOOD)]
-    top, h, gap = 14, 64, 26
-    for i, ((name, note), (fill, edge)) in enumerate(zip(steps, colours)):
-        y = top + i * (h + gap)
-        f.rect(14, y, 572, h, WHITE, edge, 2.5, 10)
-        f.rect(14, y, 196, h, fill, edge, 2.5, 10)
-        f.rect(196, y + 2.5, 14, h - 5, fill)
-        f.line(210, y, 210, y + h, edge, 2.5)
-        f.circle(42, y + h / 2, 18, WHITE, edge, 2.5)
-        f.tex(42, y + h / 2, str(i + 1), "middle")
-        f.tex(70, y + h / 2, name, "start", w=132)
-        f.tex(222, y + h / 2, note, "start", w=358)
-        if i < len(steps) - 1:
-            f.arrow(110, y + h + 2, 110, y + h + gap - 2, INK, 2.5, 12)
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words (YO language): the sign on top, the choice it leads to and, as the result in a
+    pill in the site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
+    rows = [
+        (r"\text{toistettu mittaus}", r"\to\ \text{paras arvio}", r"\bar{x} \pm \Delta x"),
+        (r"\text{kuinka suuri virhe on}", r"\to\ \text{suhteellinen}", r"\varepsilon = \Delta x/\bar{x}"),
+        (r"\text{yksi poikkeava tulos}", r"\to\ \text{tarkista}", r"\text{karkea virhe}"),
+        (r"\text{poikkeama aina samaan suuntaan}", r"\to\ \text{etsi syy}", r"\text{systemaattinen}"),
+        (r"\text{pisteet asettuvat suoralle}", r"\to\ \text{sovita suora}", r"y = kx + b"),
+        (r"\text{kysytään kuvaajan jyrkkyyttä}", r"\to\ \text{kaukaiset pisteet}", r"k = \Delta y/\Delta x"),
+        (r"\text{kulmakertoimen epävarmuus}", r"\to\ \Delta k", r"\text{ääriviivat}"),
+        (r"\text{pisteet muodostavat käyrän}", r"\to\ \text{uusi suure}", r"s\ \text{vs.}\ t^2"),
+    ]
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    ys = [top + (ch + gap) * k for k in range(len(rows))]
+    height = ys[-1] + ch + 8
+    f = Fig("fy9m-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + ch / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan menetelmän?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{mitä aineisto antaa, mitä kysytään?}", "middle", INK, size=17, w=340)
+    for (sign, choice, law), y in zip(rows, ys):
+        f.line(14, y + ch / 2, x0, y + ch / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=170)
+        f.rect(x1 - 134, yy - 11, 124, 24, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 72, yy + 1, law, "middle", WHITE, size=17, w=116)
     return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä menetelmää käytän? Katso, mitä tehtävä antaa ja mitä siinä kysytään.  "
+               "Toistettu mittaus: paras arvio on keskiarvo ja hajonta on vaihteluvälin puolikas, tulos on keskiarvo plus miinus  "
+               "epävarmuus. Kuinka suuri virhe on: suhteellinen epävarmuus on epävarmuus jaettuna keskiarvolla. Yksi poikkeava  "
+               "tulos: karkea virhe, tarkista tulos äläkä poista sitä perustelematta. Poikkeama aina samaan suuntaan:  "
+               "systemaattinen virhe, toisto ei poista sitä. Pisteet asettuvat suoralle: sovita suora, y on k x plus b. Kysytään  "
+               "kuvaajan jyrkkyyttä: kulmakerroin luetaan suoran kahdesta kaukana toisistaan olevasta pisteestä, k on delta y  "
+               "jaettuna delta x:llä. Kulmakertoimen epävarmuus: piirrä ääriviivat, epävarmuus on suurimman ja pienimmän  "
+               "kulmakertoimen erotuksen puolikas. Pisteet muodostavat käyrän: muuta akselin suuretta, esimerkiksi matka ajan  "
+               "neliön funktiona, jolloin kuvaaja on suora.")
 
 
 def anatomia():

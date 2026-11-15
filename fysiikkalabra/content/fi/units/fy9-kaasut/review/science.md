@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 380511676da95b96
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 28ee1741c90a7ebf.
+CONTENT-HASH: 9723f5bee22920e2
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (9d91dfe6c6c1bab9).
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: the 1st-law row still writes W without naming it the work done on the gas; the work row now says "työn suuruus" (magnitude) as the Kaava does, so the pair no longer contradicts the Kaava. "→ 1. pääsääntö, W kaasuun" would make the sign explicit.
+- C: "syvyys nesteessä → p = ρgh" is the hydrostatic part (round 1, stands).
 
 ## Checked
-- s2 c: $\eta_\text{l} = 0.75$ gives $P_\text{l} = 232.9$ kW and $\eta_\text{kok} = 0.840$.
-- s6 c (new structure): $\Delta p_\text{m} = m(g+a)/(\mu_\text{m}A) = 37\,380$ Pa and $s = 1.61$, below 2. This is the same model as part b with $\mu_0 \to \mu_\text{m}$, and the force-ratio requirement in the task equals the pressure ratio because $A$ is the same. The Järkevyys figures (×2, 3.2, 5.4) agree.
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- Round-1 Blocking fixed (fi: missing constant-pressure condition): row 7 is now "paine vakio, tilavuus muuttuu → työn suuruus, W = pΔV" (en "constant pressure, volume changes → magnitude of the work"), which is exactly the Kaava row (constant pressure, ΔV a magnitude, ΔU = Q + W with W done on the gas; on expansion W = −pΔV).
+- aria-label: "työn suuruus on paine kertaa tilavuuden muutoksen suuruus" states the same physics as the pill.
+- Rendered chart (360 px) shows the new row; other rows unchanged and correct as in round 1.
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- Hash taken at the start and the end (9723f5bee22920e2).

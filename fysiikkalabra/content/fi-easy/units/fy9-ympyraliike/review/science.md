@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 91df63573f747d28
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 7b3699a510e8acef.
+CONTENT-HASH: 1a63edba19d2c30c
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (e98058080562c84a).
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: the chart now writes F = mv²/r for the bend, the Kaava text F_μ = mv²/r; same force, both correct (static friction is the only horizontal force).
 
 ## Checked
-Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: shovel $F_\text{e} = 142{,}8\,\text{N}$; wheelbarrow $F = mg r_\text{p}/r_\text{k} = 235\,\text{N}$; trailer $F = 444{,}6\,\text{N}$, $m_\text{a} = 45{,}3\,\text{kg}$, $\Delta x = 0{,}111\,\text{m}$; $q = \gamma M/(g r^2) = 0{,}783$; metre stick lever arms $30{,}0$, $42{,}0$, $10{,}0\,\text{cm}$, $m_\text{k} = 114{,}3\,\text{g}$. Moment equations and signs match the stated pivots.
+- Changed row 5: "kaarre tasaisella tiellä → lepokitka kaartaa, F = mv²/r" (en "static friction turns the car"); the aria-label says "lepokitka … kitkavoima on m v toiseen per r". Correct: the tyres do not slip, so static friction provides the net (normal) force; F not F_μ removes the clash with F_μ = μN of Voimat (round-1 fi-easy Polish resolved).
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- Other rows unchanged and correct as in round 1.
+- Hash taken at the start and the end (1a63edba19d2c30c).

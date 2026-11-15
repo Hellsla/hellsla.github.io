@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4217f2037e77873f
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 54fa624a843aa99a.
+CONTENT-HASH: 6bd8953fb5e744db
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (024a3851f574b445).
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- Round-1 Polish items stand as written there (C, not blocking).
 
 ## Checked
-- inquiry: $\Delta T = k_\text{h}\Delta T_\text{ero}\,t/C = 0.886$ K. Snow: $m = \ell p t/s = 3.88$ kg.
-- s2 c: 35.8 %. s3 d: $P/(P-P_\text{h}) = 1.13$. s6: with $k = 0.85$, $\Delta T = 31.5$ K and 133.7 K. $k$ is not used for anything else within s6.
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- The chart, its aria-label and every other file are unchanged since round 1; the round-1 Checked list holds.
+- Hash taken at the start and the end (6bd8953fb5e744db).

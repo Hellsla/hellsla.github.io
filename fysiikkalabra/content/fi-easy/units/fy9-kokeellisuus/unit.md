@@ -163,39 +163,60 @@ Ylioppilaskokeessa on tehtäviä, joissa lukee ”suunnittele koe”. Niissä ar
 
 Virhelähde tarkoittaa virheen syytä. Kokeessa muutetaan vain yhtä muuttujaa kerrallaan. Muuten et voi päätellä, mikä aiheutti tuloksen muutoksen.
 
-<svg data-fig="kartta" viewBox="0 0 600 380" role="img" aria-label="Kaavakuva kokeellisen tehtävän vaiheista. Kuvassa on kaksi saraketta. Vasemmassa sarakkeessa on suunnittelu ylhäältä alas: tutkimuskysymys ja hypoteesi, muuttujat ja vakioitavat suureet, välineet ja toistomittaukset. Alhaalta nuoli vie oikeaan sarakkeeseen. Siinä on analyysi alhaalta ylös: taulukko, kuvaaja ja sovitus, tulos muodossa x keskiarvo plus miinus delta x, virhelähteet ja johtopäätös. Ylhäältä katkoviivanuoli palaa tutkimuskysymykseen. Se tarkoittaa, että johtopäätös voi synnyttää uuden kysymyksen." style="max-width:100%;font-size:24px">
-  <foreignObject x="77.5" y="7.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{suunnittelu}$</div></foreignObject>
-  <foreignObject x="396" y="7.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{analyysi}$</div></foreignObject>
-  <rect x="20" y="50" width="260" height="82" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="52.5" y="61.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tutkimuskysymys}$</div></foreignObject>
-  <foreignObject x="77.5" y="91.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ja hypoteesi}$</div></foreignObject>
-  <rect x="20" y="162" width="260" height="82" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="77.5" y="173.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{muuttujat ja}$</div></foreignObject>
-  <foreignObject x="33.5" y="203.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{vakioitavat suureet}$</div></foreignObject>
-  <rect x="20" y="274" width="260" height="82" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="83.5" y="285.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{välineet ja}$</div></foreignObject>
-  <foreignObject x="46" y="315.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{toistomittaukset}$</div></foreignObject>
-  <rect x="320" y="274" width="260" height="82" rx="10" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="346" y="285.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{taulukko, kuvaaja}$</div></foreignObject>
-  <foreignObject x="390" y="315.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ja sovitus}$</div></foreignObject>
-  <rect x="320" y="162" width="260" height="82" rx="10" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="415" y="173.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tulos}$</div></foreignObject>
-  <foreignObject x="415" y="203.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\bar{x} \pm \Delta x$</div></foreignObject>
-  <rect x="320" y="50" width="260" height="82" rx="10" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="358.5" y="61.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{virhelähteet ja}$</div></foreignObject>
-  <foreignObject x="377.5" y="91.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{johtopäätös}$</div></foreignObject>
-  <line x1="150" y1="134" x2="150" y2="149" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M150,160 L144.5,148 L155.5,148 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="450" y1="160" x2="450" y2="145" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M450,134 L455.5,146 L444.5,146 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="150" y1="246" x2="150" y2="261" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M150,272 L144.5,260 L155.5,260 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="450" y1="272" x2="450" y2="257" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M450,246 L455.5,258 L444.5,258 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="282" y1="315" x2="307" y2="315" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M318,315 L306,320.5 L306,309.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="318" y1="91" x2="296" y2="91" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
-  <path d="M282,91 L296,85 L296,97 Z" fill="#6b7480" stroke-linejoin="round"/>
+<svg data-fig="kartta" viewBox="0 0 380 754" role="img" aria-label="Tunnistuskaavio: mikä menetelmä sopii kokeellisen tehtävän kysymykseen? Mittaustuloksia on monta: paras arvio on keskiarvo, eli tulosten summa jaettuna lukumäärällä. Kuinka paljon tulos vaihtelee: vaihteluvälin puolikas, suurin miinus pienin tulos jaettuna kahdella. Ilmoita lopullinen tulos: keskiarvo plus miinus virhearvio. Onko epävarmuus pieni: suhteellinen epävarmuus on virhearvio jaettuna keskiarvolla. Suureet riippuvat lineaarisesti: sovita suora y on k x plus b. Tulos kulmakertoimesta: kulmakerroin luetaan suoran kahdesta kaukana toisistaan olevasta pisteestä, k on delta y per delta x. Malli kulkee origon kautta, mutta suora ei: vakio b ei ole nolla, mikä viittaa systemaattiseen virheeseen." style="max-width:100%;font-size:21px">
+  <line x1="14" y1="80" x2="14" y2="710" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
+  <foreignObject x="25" y="21.5" width="330" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\textbf{mistä tunnistan menetelmän?}$</div></foreignObject>
+  <foreignObject x="20" y="52" width="340" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px">$\text{tehtävä kysyy, menetelmä vastaa}$</div></foreignObject>
+  <line x1="14" y1="134" x2="30" y2="134" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="98" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="108.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{mittaustuloksia on monta}$</div></foreignObject>
+  <line x1="40" y1="138" x2="362" y2="138" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="143" width="154" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{paras arvio}$</div></foreignObject>
+  <rect x="212" y="142" width="150" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="216" y="133.5" width="142" height="41" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\bar{x} = \sum x_i / n$</div></foreignObject>
+  <line x1="14" y1="235" x2="30" y2="235" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="184" width="342" height="102" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="194.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{kuinka paljon tulos vaihtelee?}$</div></foreignObject>
+  <line x1="40" y1="224" x2="362" y2="224" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="229" width="304" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{vaihteluvälin puolikas}$</div></foreignObject>
+  <rect x="202" y="257" width="160" height="26" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="206" y="260" width="152" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\Delta x = \tfrac{x_\text{max} - x_\text{min}}{2}$</div></foreignObject>
+  <line x1="14" y1="336" x2="30" y2="336" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="300" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="310.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{ilmoita lopullinen tulos}$</div></foreignObject>
+  <line x1="40" y1="340" x2="362" y2="340" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="345" width="204" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{virhearvio mukaan}$</div></foreignObject>
+  <rect x="262" y="344" width="100" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="266" y="346" width="92" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\bar{x} \pm \Delta x$</div></foreignObject>
+  <line x1="14" y1="437" x2="30" y2="437" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="386" width="342" height="102" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="396.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{onko epävarmuus pieni?}$</div></foreignObject>
+  <line x1="40" y1="426" x2="362" y2="426" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="431" width="304" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{suhteellinen epävarmuus}$</div></foreignObject>
+  <rect x="212" y="459" width="150" height="26" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="216" y="462" width="142" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\varepsilon = \Delta x / \bar{x}$</div></foreignObject>
+  <line x1="14" y1="538" x2="30" y2="538" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="502" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="512.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{suureet riippuvat lineaarisesti}$</div></foreignObject>
+  <line x1="40" y1="542" x2="362" y2="542" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="547" width="204" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{sovita suora}$</div></foreignObject>
+  <rect x="262" y="546" width="100" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="266" y="548" width="92" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$y = kx + b$</div></foreignObject>
+  <line x1="14" y1="624" x2="30" y2="624" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="588" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="598.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{tulos kulmakertoimesta}$</div></foreignObject>
+  <line x1="40" y1="628" x2="362" y2="628" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="633" width="174" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{kaukaiset pisteet}$</div></foreignObject>
+  <rect x="232" y="632" width="130" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="236" y="634" width="122" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$k = \Delta y / \Delta x$</div></foreignObject>
+  <line x1="14" y1="710" x2="30" y2="710" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="674" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="684.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{malli origon kautta, suora ei}$</div></foreignObject>
+  <line x1="40" y1="714" x2="362" y2="714" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="719" width="224" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{systemaattinen virhe}$</div></foreignObject>
+  <rect x="282" y="718" width="80" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="286" y="720" width="72" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$b \neq 0$</div></foreignObject>
 </svg>
 
 ### Virhe, epävarmuus ja resoluutio

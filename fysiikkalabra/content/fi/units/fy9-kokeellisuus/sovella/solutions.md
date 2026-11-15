@@ -32,7 +32,7 @@ Myös jousivaa'an nollakohta tarkistetaan ennen mittausta vaa'an omassa mittausa
 - Suunnitelmasta puuttuu, mitä pidetään vakiona, tai kenkiä mitataan eri laudoilla tai eri päivinä.
 - Jokainen kenkä mitataan kerran, jolloin vaihtelua ei näe eikä eroa voi osoittaa.
 - Virhelähteeksi kirjoitetaan ”inhimillinen virhe” tai ”mittausvirhe” kertomatta, mikä virhe se on ja miten sitä pienennetään.
-- Tulosta verrataan liikekitkaan: kenkää vedetään tasaisella nopeudella, vaikka pito tarkoittaa lepokitkaa juuri ennen liukumista.
+- Tulosta verrataan liukukitkaan: kenkää vedetään tasaisella nopeudella, vaikka pito tarkoittaa lepokitkaa juuri ennen liukumista.
 
 ### Hyväksytään myös
 - Kitkakertoimen sijasta voi verrata kenkiä, jos molempiin lisätään punnuksia niin, että kokonaismassa on sama, ja verrataan jousivaa'an lukemia. Massan on silloin oltava sama ja punnittu.
@@ -375,7 +375,7 @@ kaksi merkitsevää numeroa kuten jarrutusmatkoissa ja kulmakertoimessa.
 - Kuvaajaksi piirretään $(v, s)$, ja kaarevaan pisteistöön sovitetaan suora.
 - Nopeudet neliöidään yksikössä $\text{km/h}$, jolloin hidastuvuus tulee väärään yksikköön ja väärän suuruiseksi; muunnos on $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 - Hidastuvuudeksi otetaan kulmakerroin itse tai $\tfrac{1}{k}$; kertoimesta $\tfrac{1}{2}$ unohtuu kakkonen.
-- c-kohdassa käytetään liikekitkaa, vaikka pyörät eivät luista, tai vastaukseksi annetaan tarkka arvo eikä alaraja.
+- c-kohdassa käytetään liukukitkaa, vaikka pyörät eivät luista, tai vastaukseksi annetaan tarkka arvo eikä alaraja.
 - d-kohdassa poikkeamaksi annetaan $5\,\%$, jolloin unohtuu, että nopeus on kaavassa toisessa potenssissa.
 
 ### Hyväksytään myös

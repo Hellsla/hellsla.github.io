@@ -3,8 +3,7 @@ writes them into content/fi/units/fy9-moderni/unit.md. The unit is Finnish, so t
 
 hero        the Why scene: a greenhouse on a snowy winter night, its red and blue LED grow lights glowing over rows of
             tomato plants, spruces and a starry sky behind (no text, no people)
-kartta      the concept map of the review: quantised energy at the top, then photon and atom (eV), the nucleus (MeV)
-            and radiation and the body (dose), each with the laws of its topic
+kartta      the recognition chart of the review (Mistä tunnistan, mitä lakia käytän?): task signs -> the law or method
 fotonit     the hook to scale: photon energies on a logarithmic axis from 0,1 eV to 10 MeV, the visible band, the
             red LED (1,9 eV), the ionisation energy of water (12,6 eV), a dental X-ray (60 keV) and the Cs-137 gamma
             (662 keV), with the electron-level and nuclear-level ranges
@@ -28,6 +27,8 @@ E_RED = h * c / 660e-9 / e          # 1,88 eV, the red grow light
 E_ION = 12.6                        # eV, the ionisation energy of a water molecule (luku Ionisoiva säteily ja elimistö)
 E_XRAY = 60e3                       # eV, the mean photon energy of a dental X-ray (luku Säteily lääketieteessä ja teknologiassa)
 E_CS = 662e3                        # eV, the Cs-137 (Ba-137m) gamma
+
+ACCENT = "#1a4d2e"                                        # the site's own dark green (site.css --accent, the buttons)
 
 
 def hero():
@@ -96,44 +97,57 @@ def hero():
 
 
 def kartta():
-    """The concept map, stacked for a phone: quantised energy at the top, a spine down the left and three boxes
-    (photon and atom, the nucleus, radiation and the body), each with its laws and a grey word beside each; a box's
-    height follows its row count (teacher 2026-11-12: only formulas that stay in the text; the dose rate at a
-    distance is a "Johda itse" task, not a row of the map)."""
-    groups = [
-        ("fotoni ja atomi", "eV", [(r"hf = W + E_\text{k,max}", "irtoaminen"), (r"hf = E_\text{y} - E_\text{a}", "spektri"),
-                                    (r"eU_\text{k} \approx hf", "LED")]),
-        ("ydin", "MeV", [(r"N = N_0 e^{-\lambda t}", "hajoaminen"), (r"A = \lambda N", "aktiivisuus"),
-                         (r"E = \Delta m\,c^2", "reaktio")]),
-        ("säteily ja ihminen", "annos", [(r"D = E/m", "absorboitunut"), (r"H = w_\text{R} D", "painotettu")]),
+    """The recognition chart (teacher 2026-11-15, replaces the concept map): "Mistä tunnistan, mitä lakia käytän?". One
+    card per sign in the task's own words (YO language): the sign on top, the choice it leads to and, as the result in a
+    pill in the site's dark green, the law or method; no list of formulas. Stacked for a phone: a spine down the left from the start box."""
+    rows = [
+        (r"\text{fotonin taajuus tai aallonpituus}", r"\to\ \text{fotonin energia}", r"E = hf", 100, False),
+        (r"\text{valo irrottaa elektroneja}", r"\to\ \text{valosähköinen ilmiö}", r"hf = W + E_\text{k,max}", 100, True),
+        (r"\text{atomi lähettää tai absorboi}", r"\to\ \text{kvanttihyppy}", r"hf = E_\text{y} - E_\text{a}", 100, False),
+        (r"\text{ydin hajoaa ajan kuluessa}", r"\to\ \text{hajoamislaki}", r"N = N_0 e^{-\lambda t}", 100, False),
+        (r"\text{montako hajoamista sekunnissa}", r"\to\ \text{aktiivisuus}", r"A = \lambda N", 100, False),
+        (r"\text{ydinreaktion massaero}", r"\to\ \text{vapautuva energia}", r"E = \Delta m c^2", 100, False),
+        (r"\text{säteilyn laji otetaan huomioon}", r"\to\ \text{ekvivalenttiannos}", r"H = w_\text{R} D", 100, False),
+        (r"\text{etäisyys lähteestä muuttuu}", r"\to\ \text{pistemäinen lähde}", r"\dot{H} \propto 1/r^2", 100, False),
+        (r"\text{säteily läpäisee aineen}", r"\to\ \text{heikeneminen}", r"I = I_0 e^{-\mu x}", 100, False),
     ]
-    hub_y, hub_h, x_box, top, spine, gap = 8, 72, 44, 100, 24, 16
-    heights = [32 + 52 * len(rows) for _, _, rows in groups]
-    ys = [top + sum(heights[:k]) + gap * k for k in range(len(groups))]
-    f = Fig("fy9mo-kartta", ys[-1] + heights[-1] + 48, "Käsitekartta. Ylhäällä solmu kvantittunut energia: fotonin energia E = h f ja massan ja energian yhteys E = m "
-            "c toiseen. Siitä lähtee alas kolme haaraa. Fotoni ja atomi, elektronivolttien maailma: valosähköinen yhtälö h "
-            "f = W + E k max, spektriviivan fotoni h f = E y miinus E a ja LEDin kynnysjännite e U k likimain h f. Ydin, "
-            "megaelektronivolttien maailma: hajoamislaki N = N 0 kertaa e potenssiin miinus lambda t, aktiivisuus A = "
-            "lambda N ja reaktioenergia E = massaero kertaa c toiseen. Säteily ja ihminen, annos: absorboitunut annos D = E "
-            "per m ja ekvivalenttiannos H = w R kertaa D. Alareunassa kaikkia haaroja yhdistävä ohje: "
-            "ensin yksi hiukkanen, sitten lukumäärä.", width=380, size=20)
-    f.line(spine, hub_y + hub_h, spine, ys[-1] + 22, RULE, 3)
-    f.rect(8, hub_y, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
-    f.tex(190, hub_y + 22, r"\text{kvantittunut energia}", "middle", INK)
-    f.tex(190, hub_y + 51, r"E = hf,\quad E = mc^2", "middle", INK)
-    for (head, sub, rows), y, gh in zip(groups, ys, heights):
-        f.line(spine, y + 22, x_box, y + 22, RULE, 3)
-        f.rect(x_box, y, 372 - x_box, gh, WHITE, MUTED, 2, 10)
-        f.tex(x_box + 14, y + 22, r"\textbf{" + head + "}", "start", INK)
-        f.tex(362, y + 22, r"\text{" + sub + "}", "end", MUTED, size=17)
-        f.line(x_box + 10, y + 42, 362, y + 42, RULE_LIGHT, 1.5)
-        for j, (law, word) in enumerate(rows):
-            yy = y + 68 + j * 52
-            f.tex(x_box + 14, yy, law, "start", INK, size=18 if len(law) > 26 else None)
-            f.tex(362, yy, r"\text{" + word + "}", "end", MUTED, size=17)
-    # what joins the branches: one particle first, then the number of particles
-    f.tex(190, ys[-1] + heights[-1] + 28, r"\text{joka haarassa: yksi hiukkanen, sitten lukumäärä}", "middle", INK, size=17)
-    return f.svg().replace("max-width:100%;", "max-width:min(100%,420px);", 1)
+    hub_h, x0, x1, ch, gap, top = 72, 30, 372, 72, 14, 98
+    heights = [ch + (30 if r[4] else 0) for r in rows]
+    ys = [top + sum(heights[:k]) + gap * k for k in range(len(rows))]
+    height = ys[-1] + heights[-1] + 8
+    f = Fig("fy9mo-kartta", height, ARIA_KARTTA, width=380, size=21)
+    f.line(14, hub_h + 8, 14, ys[-1] + heights[-1] / 2, RULE, 3)
+    f.rect(8, 8, 364, hub_h, SAND_LIGHT, SAND, 2.5, 12)
+    f.tex(190, 8 + 26, r"\textbf{mistä tunnistan lain?}", "middle", INK, w=330)
+    f.tex(190, 8 + 54, r"\text{mikä suure annetaan? sitten tunnusmerkki}", "middle", INK, size=17, w=340)
+    for (sign, choice, law, pw, tall), y, ch_ in zip(rows, ys, heights):
+        f.line(14, y + ch_ / 2, x0, y + ch_ / 2, RULE, 3)
+        f.rect(x0, y, x1 - x0, ch_, WHITE, MUTED, 2, 10)
+        f.tex(x0 + 14, y + 22, sign, "start", INK, size=19, w=x1 - x0 - 28)
+        f.line(x0 + 10, y + 40, x1 - 10, y + 40, RULE_LIGHT, 1.5)
+        yy = y + 55
+        f.tex(x0 + 14, yy, choice, "start", MUTED, size=17, w=x1 - x0 - 38 if tall else 170)
+        if tall:                                               # a long result on a line of its own
+            yy += 30
+            pw = 180
+            f.rect(x1 - 10 - pw, yy - 12, pw, 26, ACCENT, ACCENT, 2, 8)
+        else:
+            pw = 124
+            f.rect(x1 - 10 - pw, yy - 11, pw, 24, ACCENT, ACCENT, 2, 8)
+        f.tex(x1 - 10 - pw / 2, yy + 1, law, "middle", WHITE, size=17, w=pw - 8)
+    return f.svg()
+
+
+ARIA_KARTTA = ("Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Katso ensin, mikä suure tehtävässä annetaan, ja sitten,  "
+               "mikä tunnusmerkki sopii. Fotonin taajuus tai aallonpituus: fotonin energia on Planckin vakio kertaa taajuus.  "
+               "Valo irrottaa elektroneja: valosähköisessä ilmiössä fotonin energia on irrotustyö plus elektronin suurin  "
+               "liike-energia. Atomi lähettää tai absorboi: kvanttihyppy, fotonin energia on ylemmän ja alemman energiatason  "
+               "erotus. Ydin hajoaa ajan kuluessa: hajoamislaki, jäljellä oleva määrä on alkumäärä kertaa e potenssiin miinus  "
+               "hajoamisvakio kertaa aika. Montako hajoamista sekunnissa: aktiivisuus on hajoamisvakio kertaa ytimien määrä.  "
+               "Ydinreaktion massaero: vapautuva energia on massaero kertaa valonnopeuden neliö. Säteilyn laji otetaan huomioon:  "
+               "ekvivalenttiannos on säteilyn painokerroin kertaa absorboitunut annos. Etäisyys lähteestä muuttuu: pistemäisen  "
+               "lähteen annosnopeus on kääntäen verrannollinen etäisyyden neliöön. Säteily läpäisee aineen: heikennyslaki,  "
+               "intensiteetti on alkuintensiteetti kertaa e potenssiin miinus heikennyskerroin kertaa paksuus.")
 
 
 def fotonit():

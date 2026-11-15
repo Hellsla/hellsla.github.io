@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: add641812b74c0f3
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at c2a116adf76021a5.
+CONTENT-HASH: 9fd5651620511350
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (bc9cdc28a007fde8); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- B (kept): "mikä voima kaartaa rataa?" is a question, not a sign; the chart's first row "tanko pysyy paikallaan" is odd at the head of a circular-motion chart.
 
 ## Checked
-Momenttitehtävät: $r_\text{e}$, $r_\text{k}$, $r_\text{p}$, $d$ ja $q$ esitetty ennen lukuja; vaaka-tehtävässä varret terästä lasketaan Muunnokset-kohdassa, ei enää kätkettynä kaavaan; Sijoitus yhtenevä. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.
+- Round-1 Blocking fixed: "kaarre tasaisella tiellä -> lepokitka kaartaa -> F = mv²/r"; the non-μ symbol no longer implies sliding friction; the aria-label says "lepokitka kaartaa, ja kitkavoima on mv²/r".
+- teacher.md "jokainen rivi alkaa voimakuviosta" (round-1 Polish B fixed).
+- 360 px PNG opened: eight rows, no clipped label.

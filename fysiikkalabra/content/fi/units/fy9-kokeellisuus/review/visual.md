@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4fca163bc3ac2f29
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 7a9383fdf3772fc8.
+CONTENT-HASH: 2e223f8749c7ebf6
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (d8caf555a4e34ae3).
 
 ## Blocking
 (none)
 
 ## Polish
-- fy9-kokeellisuus/sovella/solutions.md a) Vastaus: rho = 2,7 * 10^3 kg/m^3 and (2680 +- 80) kg/m^3 side by side reads as a contradiction at first glance; say that the uncertainty is a separate result of b). Also c): Kaava in prose with Sigma F is fine.
+(none)
 
 ## Checked
-Diff only, read in full. `check_latex.py` on the unit: all fragments parse in KaTeX. Rounding, carried digits 4,167 / 4,1667, the force-balance Kaava in c), tasks.json hint. No contradiction between #522 formula names or notation and the #523 solutions found; no duplicated derivation; Finnish and typography (thin spaces, decimal comma, \cdot, colon division, LaTeX units) in the changed lines are correct. No captures made: the changes are text-only solution lines, no figure or layout changed.
+- Opened fy9-kokeellisuus-fi-360.png (every row, pill and header read; no overlap except as noted), and read the changed aria-label/figures.json entry and the diff against the chart; the diff's other lines (teacher.md rows wording, unit.md sign wording, line break fix) read in full.
+- Round-1 finding(s) of my role re-checked: unchanged rest holds.

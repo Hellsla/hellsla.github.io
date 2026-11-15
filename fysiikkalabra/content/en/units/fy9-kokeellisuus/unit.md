@@ -154,39 +154,60 @@
 ### A plan answers six questions
 In the matriculation exam, a “plan an experiment” task is marked on whether someone else could carry out the experiment from your answer. A good plan says **what is changed**, **what is measured and with which instrument**, **what is kept constant**, **how many measurements and repetitions are made**, **how the result is calculated from a graph** and **which sources of error are the largest and how they are reduced**. In an experiment one variable is changed at a time, because otherwise the cause of a change in the result cannot be inferred.
 
-<svg data-fig="kartta" viewBox="0 0 600 380" role="img" aria-label="Diagram of the stages of an experimental task in two columns. On the left, planning from top to bottom: research question and hypothesis, variables and controlled quantities, instruments and repeated measurements. From the bottom an arrow leads to the right-hand column, analysis, from bottom to top: table, graph and fit, the result in the form mean x plus or minus delta x, sources of error and conclusion. From the top a dashed arrow returns to the research question: a conclusion can raise a new question." style="max-width:100%;font-size:24px">
-  <foreignObject x="96" y="7.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{planning}$</div></foreignObject>
-  <foreignObject x="396" y="7.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{analysis}$</div></foreignObject>
-  <rect x="20" y="50" width="260" height="82" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="46" y="61.5" width="208" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{research question}$</div></foreignObject>
-  <foreignObject x="65" y="91.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{and hypothesis}$</div></foreignObject>
-  <rect x="20" y="162" width="260" height="82" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="71" y="173.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{variables and}$</div></foreignObject>
-  <foreignObject x="21" y="203.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{controlled quantities}$</div></foreignObject>
-  <rect x="20" y="274" width="260" height="82" rx="10" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="58.5" y="285.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{instruments and}$</div></foreignObject>
-  <foreignObject x="21" y="315.5" width="258" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{repeated measurements}$</div></foreignObject>
-  <rect x="320" y="274" width="260" height="82" rx="10" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="377.5" y="285.5" width="145" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{table, graph}$</div></foreignObject>
-  <foreignObject x="408.5" y="315.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{and fit}$</div></foreignObject>
-  <rect x="320" y="162" width="260" height="82" rx="10" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="408.5" y="173.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{result}$</div></foreignObject>
-  <foreignObject x="415" y="203.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\bar{x} \pm \Delta x$</div></foreignObject>
-  <rect x="320" y="50" width="260" height="82" rx="10" fill="#f1dfb5" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="340" y="61.5" width="220" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{sources of error and}$</div></foreignObject>
-  <foreignObject x="383.5" y="91.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{conclusion}$</div></foreignObject>
-  <line x1="150" y1="134" x2="150" y2="149" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M150,160 L144.5,148 L155.5,148 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="450" y1="160" x2="450" y2="145" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M450,134 L455.5,146 L444.5,146 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="150" y1="246" x2="150" y2="261" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M150,272 L144.5,260 L155.5,260 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="450" y1="272" x2="450" y2="257" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M450,246 L455.5,258 L444.5,258 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="282" y1="315" x2="307" y2="315" stroke="#1f2933" stroke-width="2.5" stroke-linecap="butt"/>
-  <path d="M318,315 L306,320.5 L306,309.5 Z" fill="#1f2933" stroke-linejoin="round"/>
-  <line x1="318" y1="91" x2="296" y2="91" stroke="#6b7480" stroke-width="2.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
-  <path d="M282,91 L296,85 L296,97 Z" fill="#6b7480" stroke-linejoin="round"/>
+<svg data-fig="kartta" viewBox="0 0 380 754" role="img" aria-label="Recognition chart: which method fits the question of an experimental task? There are many results: the best estimate is the mean, the sum of the results divided by their number. How much does the result vary: half the range, the largest minus the smallest result divided by two. State the final result: the mean plus or minus the error estimate. Is the uncertainty small: the relative uncertainty is the error estimate divided by the mean. The quantities depend linearly: fit a line y equals k x plus b. Result from the slope: the slope is read from two points of the line far apart, k equals delta y per delta x. The model passes through the origin but the line does not: the constant b is not zero, which suggests a systematic error." style="max-width:100%;font-size:21px">
+  <line x1="14" y1="80" x2="14" y2="710" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="8" y="8" width="364" height="72" rx="12" fill="#f1dfb5" stroke="#d9b26a" stroke-width="2.5"/>
+  <foreignObject x="25" y="21.5" width="330" height="25" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:21px">$\textbf{how do I tell the method?}$</div></foreignObject>
+  <foreignObject x="20" y="52" width="340" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px">$\text{the task asks, the method answers}$</div></foreignObject>
+  <line x1="14" y1="134" x2="30" y2="134" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="98" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="108.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{there are many results}$</div></foreignObject>
+  <line x1="40" y1="138" x2="362" y2="138" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="143" width="154" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{best estimate}$</div></foreignObject>
+  <rect x="212" y="142" width="150" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="216" y="133.5" width="142" height="41" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\bar{x} = \sum x_i / n$</div></foreignObject>
+  <line x1="14" y1="235" x2="30" y2="235" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="184" width="342" height="102" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="194.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{how much does the result vary?}$</div></foreignObject>
+  <line x1="40" y1="224" x2="362" y2="224" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="229" width="304" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{half the range}$</div></foreignObject>
+  <rect x="202" y="257" width="160" height="26" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="206" y="260" width="152" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\Delta x = \tfrac{x_\text{max} - x_\text{min}}{2}$</div></foreignObject>
+  <line x1="14" y1="336" x2="30" y2="336" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="300" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="310.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{state the final result}$</div></foreignObject>
+  <line x1="40" y1="340" x2="362" y2="340" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="345" width="204" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{with the error estimate}$</div></foreignObject>
+  <rect x="262" y="344" width="100" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="266" y="346" width="92" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\bar{x} \pm \Delta x$</div></foreignObject>
+  <line x1="14" y1="437" x2="30" y2="437" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="386" width="342" height="102" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="396.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{is the uncertainty small?}$</div></foreignObject>
+  <line x1="40" y1="426" x2="362" y2="426" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="431" width="304" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{relative uncertainty}$</div></foreignObject>
+  <rect x="212" y="459" width="150" height="26" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="216" y="462" width="142" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\varepsilon = \Delta x / \bar{x}$</div></foreignObject>
+  <line x1="14" y1="538" x2="30" y2="538" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="502" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="512.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{the quantities depend linearly}$</div></foreignObject>
+  <line x1="40" y1="542" x2="362" y2="542" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="547" width="204" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{fit a line}$</div></foreignObject>
+  <rect x="262" y="546" width="100" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="266" y="548" width="92" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$y = kx + b$</div></foreignObject>
+  <line x1="14" y1="624" x2="30" y2="624" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="588" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="598.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{result from the slope}$</div></foreignObject>
+  <line x1="40" y1="628" x2="362" y2="628" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="633" width="174" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{far-apart points}$</div></foreignObject>
+  <rect x="232" y="632" width="130" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="236" y="634" width="122" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$k = \Delta y / \Delta x$</div></foreignObject>
+  <line x1="14" y1="710" x2="30" y2="710" stroke="#c9c2b2" stroke-width="3" stroke-linecap="butt"/>
+  <rect x="30" y="674" width="342" height="72" rx="10" fill="#ffffff" stroke="#6b7480" stroke-width="2"/>
+  <foreignObject x="44" y="684.5" width="314" height="23" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:19px">$\text{model through origin, line not}$</div></foreignObject>
+  <line x1="40" y1="714" x2="362" y2="714" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
+  <foreignObject x="44" y="719" width="224" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:17px;color:#6b7480">$\to\ \text{systematic error}$</div></foreignObject>
+  <rect x="282" y="718" width="80" height="24" rx="8" fill="#1a4d2e" stroke="#1a4d2e" stroke-width="2"/>
+  <foreignObject x="286" y="720" width="72" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$b \neq 0$</div></foreignObject>
 </svg>
 
 ### Error, uncertainty and resolution
@@ -288,4 +309,4 @@ If according to the model the line should pass through the origin but $b$ clearl
 - The kinds of error, the mean and the error estimate: [*Measuring and the reliability of a measurement*](fy1-3.html)
 - Graphs and fitting a straight line: [*Graphing and fitting a straight line*](fy1-4.html)
 - Extrapolation and extreme lines: [*Determining absolute zero*](fy3-13.html)
-- Examples of complete investigations: [*Determining the free-fall acceleration with a pendulum*](fy10-heiluri.html), [*Determining the coefficient of kinetic friction*](fy10-liukukitka.html) and [*Determining a spring constant*](fy10-jousivakio.html)
+- Examples of complete investigations: [*Determining the free-fall acceleration with a pendulum*](fy10-heiluri.html), [*Determining the coefficient of sliding friction*](fy10-liukukitka.html) and [*Determining a spring constant*](fy10-jousivakio.html)

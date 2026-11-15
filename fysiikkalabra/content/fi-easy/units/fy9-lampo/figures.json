@@ -17,5 +17,18 @@
  "olomuodon muutos": "olomuodon muutos",
  "lämpölaajeneminen": "lämpölaajeneminen",
  "lämmön siirtyminen": "lämmön siirtyminen",
- "Käsitekartta. Ylhäällä solmu energia säilyy: eristetyssä systeemissä luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Siitä lähtee alas neljä haaraa. Lämpeneminen: Q = c m ΔT, kun olomuoto ei muutu, ja kelvinlämpötila T = θ + 273,15. Olomuodon muutos: sulaminen Q = s m ja höyrystyminen Q = r m vakiolämpötilassa. Lämpölaajeneminen: pituus l = l0 kertaa 1 + α ΔT ja tilavuus V = V0 kertaa 1 + γ ΔT. Lämmön siirtyminen: johtuminen, konvektio ja säteily, sekä seinän läpi johtuva teho P = U A ΔT.": "Käsitekartta. Ylhäällä on solmu energia säilyy: eristetyssä systeemissä luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Solmusta lähtee alas neljä haaraa. Lämpeneminen: Q = c m ΔT, kun olomuoto ei muutu, ja kelvinlämpötila T = θ + 273,15. Olomuodon muutos: sulaminen Q = s m ja höyrystyminen Q = r m, kun lämpötila pysyy samana. Lämpölaajeneminen: pituus l = l0 kertaa 1 + α ΔT ja tilavuus V = V0 kertaa 1 + γ ΔT. Lämmön siirtyminen: johtuminen, konvektio ja säteily sekä seinän läpi johtuva teho P = U A ΔT."
+ "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Kysy, mitä aineelle tapahtuu, ja katso, mikä tehtävän tunnusmerkki sopii. Lämpötila muuttuu, olomuoto ei: lämpeneminen, lämpömäärä on ominaislämpökapasiteetti kertaa massa kertaa lämpötilan muutos. Jää sulaa tai vesi jäätyy: sulamislämpö, lämpömäärä on ominaissulamislämpö kertaa massa. Vesi kiehuu tai höyry tiivistyy: höyrystymislämpö, lämpömäärä on ominaishöyrystymislämpö kertaa massa. Eristetty astia, sekoitus: lämpötasapaino, luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Kappaleen pituus muuttuu: lämpölaajeneminen, pituus on alkuperäinen pituus kertaa yksi plus pituuden lämpötilakerroin kertaa lämpötilan muutos. Nesteen tilavuus muuttuu: lämpölaajeneminen, tilavuus on alkuperäinen tilavuus kertaa yksi plus tilavuuden lämpötilakerroin kertaa lämpötilan muutos. Lämpö johtuu seinän läpi: U-arvo, teho on U-arvo kertaa pinta-ala kertaa lämpötilaero.": "Tunnistuskaavio: mistä tunnistan, mitä lakia käytän? Kysy ensin, mitä aineelle tapahtuu. Katso sitten, mikä tunnusmerkki sopii. Lämpötila muuttuu, olomuoto ei: aine lämpenee tai jäähtyy. Lämpömäärä on ominaislämpökapasiteetti kertaa massa kertaa lämpötilan muutos. Jää sulaa tai vesi jäätyy: käytä sulamislämpöä. Lämpömäärä on ominaissulamislämpö kertaa massa. Vesi kiehuu tai höyry tiivistyy: käytä höyrystymislämpöä. Lämpömäärä on ominaishöyrystymislämpö kertaa massa. Eristetty astia, sekoitus: ainekset saavat saman lämpötilan. Luovutettu lämpömäärä on yhtä suuri kuin vastaanotettu. Kappaleen pituus muuttuu: lämpölaajeneminen. Pituus on alkuperäinen pituus kertaa yksi plus pituuden lämpötilakerroin kertaa lämpötilan muutos. Nesteen tilavuus muuttuu: lämpölaajeneminen. Tilavuus on alkuperäinen tilavuus kertaa yksi plus tilavuuden lämpötilakerroin kertaa lämpötilan muutos. Lämpö johtuu seinän läpi: käytä U-arvoa. Teho on U-arvo kertaa pinta-ala kertaa lämpötilaero.",
+ "jää sulaa tai vesi jäätyy": "jää sulaa tai vesi jäätyy",
+ "vesi kiehuu tai höyry tiivistyy": "vesi kiehuu tai höyry tiivistyy",
+ "nesteen tilavuus muuttuu": "nesteen tilavuus muuttuu",
+ "mitä aineelle tapahtuu?": "mitä aineelle tapahtuu?",
+ "lämpö johtuu seinän läpi": "lämpö johtuu seinän läpi",
+ "höyrystymislämpö": "höyrystymislämpö",
+ "sulamislämpö": "sulamislämpö",
+ "eristetty astia, sekoitus": "eristetty astia, sekoitus",
+ "lämpötila muuttuu, olomuoto ei": "lämpötila muuttuu, olomuoto ei",
+ "kappaleen pituus muuttuu": "kappaleen pituus muuttuu",
+ "mistä tunnistan lain?": "mistä tunnistan lain?",
+ "lämpötasapaino": "lämpötasapaino",
+ "U-arvo": "U-arvo"
 }

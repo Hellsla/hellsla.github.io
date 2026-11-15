@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4fca163bc3ac2f29
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 7a9383fdf3772fc8.
+CONTENT-HASH: 2e223f8749c7ebf6
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (d8caf555a4e34ae3); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-- a-kohdan vastaus antaa kaksi lukua: $2{,}7 \cdot 10^3$ (2 merk. numeroa) ja $(2680 \pm 80)$. Selitys on annettu, mutta opiskelijalle lukujen suhde (pyöristys kahteen vs. epävarmuuden desimaali) jää vaikeaksi; tasks.json hyväksyy kummankin.
+- A: teacher.md 33-43 min "käy läpi tunnistuskaavion seitsemän rivin ja kuvaajan vakiotermin" is ungrammatical; use "seitsemän riviä".
+- B (kept): a non-zero b can be physical; the row reads "malli origon kautta, suora ei -> systemaattinen virhe, b ≠ 0", better than before (the sign states the condition and the aria-label says "viittaa") but the pill could carry "tulkitse b".
+- B (kept): "kaukaiset pisteet" and "onko epävarmuus pieni?" wording.
 
 ## Checked
-Voimat c: positiivinen suunta ja $\Sigma F_x$, $\Sigma F_y$ esitetty ennen sijoitusta; 4,1667 -> 0,4247 -> 0,42 ja d 3,779 -> 3,8, 0,39 johdonmukaisia; tasks.json ja solutions yhtenevät. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.
+- Round-1 Blocking fixed: teacher.md now counts the chart's seven rows (the 360 px PNG shows exactly seven); the "kuuden kysymyksen" wording is gone from the teacher.md.
+- Header "mistä tunnistan menetelmän?" fits (a method, not a law); the aria-label starts "mikä menetelmä sopii kokeellisen tehtävän kysymykseen?".
+- 360 px PNG opened: seven rows, no clipped label.
+- The rest passes through the round-1 report.

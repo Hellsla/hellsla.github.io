@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a9cbf30e479be6e0
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at dd8b8c17905c3489.
+CONTENT-HASH: 5db2f536d8963325
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (8d054d0161d6c11a); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+(none new; round-1 findings stand)
 
 ## Checked
-Diff only: c) eta_l named; the märkä lasi task is now staged (Annettu, Kysytty, Periaate, Kaava, Muunnokset, Sijoitus, Mallivastaus, Järkevyys), solves s symbolically first. Reasoning (friction carries the weight, pressure force horizontal) retained in Järkevyys; not lost.
+- Round-1 Blocking fixed: teacher.md "Pyydä jokaiselle riville yksi esimerkki".
+- Changed row "paine pysyy, tilavuus muuttuu -> työn suuruus, W = pΔV": plain S2 wording, the condition is in the sign; the aria-label says "työn suuruus on paine kertaa tilavuuden muutoksen suuruus". Fi chart PNG opened: nine rows, nothing clipped.

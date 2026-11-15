@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: add641812b74c0f3
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at c2a116adf76021a5.
+CONTENT-HASH: 9fd5651620511350
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (bc9cdc28a007fde8).
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: the chart now writes F = mv²/r for the bend, the Kaava text F_μ = mv²/r; same force, both correct (static friction is the only horizontal force).
 
 ## Checked
-- Arms as $r$ match the unit's $M = Fr$. Shovel: $F_\text{e} = 142.8$ N. Wheelbarrow: $F = mgr_\text{p}/r_\text{k} = 235.4$ N. Trailer: $F = 444.6$ N and $m_\text{a} = 45.3$ kg; c: $\Delta x = (m_ar_k - m_tr_t - m_vr_v)/m_v = 0.111$ m. Satellite: $q = \gamma M/(gr^2) = 0.783$. Metre stick: arms 30.0, 42.0 and 10.0 cm, $m_\text{k} = 114.3$ g.
-Every number in the changed lines was recomputed with an independent script (scratchpad fy9merge/sci_fi.py); `units.py hash` gave the same value at the start and the end. LaTeX in all added lines has balanced `$` and braces.
+- Changed row 5: "kaarre tasaisella tiellä → lepokitka kaartaa, F = mv²/r" (en "static friction turns the car"); the aria-label says "lepokitka … kitkavoima on m v toiseen per r". Correct: the tyres do not slip, so static friction provides the net (normal) force; F not F_μ removes the clash with F_μ = μN of Voimat (round-1 fi-easy Polish resolved).
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- Other rows unchanged and correct as in round 1.
+- Hash taken at the start and the end (9fd5651620511350).

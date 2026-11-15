@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a9cbf30e479be6e0
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at dd8b8c17905c3489.
+CONTENT-HASH: 5db2f536d8963325
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (8d054d0161d6c11a).
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: the 1st-law row still writes W without naming it the work done on the gas; the work row now says "työn suuruus" (magnitude) as the Kaava does, so the pair no longer contradicts the Kaava. "→ 1. pääsääntö, W kaasuun" would make the sign explicit.
+- The figures.json key "kaasuun tehty työ" is added but not used by the chart (harmless).
 
 ## Checked
-Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: $\eta_\text{kok} = (174{,}6 + 0{,}75 \cdot 310{,}5)/485{,}1 = 0{,}840$; suction lifter c) $m(g+a) = 792{,}7\,\text{N}$, $\Delta p_\text{m} = 792{,}7/(0{,}30 \cdot 0{,}070\,69) = 37{,}4\,\text{kPa}$, $s = 1{,}61 < 2$; checks $2 \cdot 18{,}7 \approx 37$, $60/18{,}7 = 3{,}2$, $60/11{,}2 = 5{,}4$. The new c-part's model (friction $\le \mu N$, $N = \Delta p A$, upward acceleration) matches b; the conclusion is unchanged.
+- Round-1 Blocking fixed (fi-easy: W with two meanings): row 7 is now "paine vakio, tilavuus muuttuu → työn suuruus, W = pΔV" (en "constant pressure, volume changes → magnitude of the work"), which is exactly the Kaava row (constant pressure, ΔV a magnitude, ΔU = Q + W with W done on the gas; on expansion W = −pΔV).
+- aria-label: "työn suuruus on paine kertaa tilavuuden muutoksen suuruus" states the same physics as the pill.
+- Rendered chart (360 px) shows the new row; other rows unchanged and correct as in round 1.
+- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
+- Hash taken at the start and the end (5db2f536d8963325).

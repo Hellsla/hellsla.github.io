@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 62a144b4944a81b5
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 7ec58540d76c5256.
+CONTENT-HASH: b8e3ee3f1f15aa3e
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (a160a51a52b7e3ef); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- B (kept): "kiihtyvyys on vakio" and "kiihtyvyys on vakio, matka?" differ only in the question; free fall is not a row.
+- B: teacher.md "kaavion rivit kulkevat kulmakertoimella alaspäin" is a little awkward; it is true (x to v, v to a by slope, v to x by area).
 
 ## Checked
-Heitto: $y_l = y_0 + v_0^2/2g$ johdettu yhteen; ääriarvot $a_\text{min}$, $a_\text{max}$ esitetty kaavassa ennen lukuja. Compared the diff hunks against the #522 notation and the unit text; no formula name or symbol of #522 is contradicted by a #523 solution, no derivation duplicated, LaTeX in the hunks balanced. Sample solutions now solve the asked quantity in symbols before the numbers (CLAUDE.md Lesson form 7), which supports the learning path.
+- Round-1 Blocking fixed: the row now reads "vakiokiihtyvyys, a ei tiedossa -> keskinopeus, Δx = (v0+v)t/2" in the chart and as "Vakiokiihtyvyys, a ei tiedossa" in the aria-label; the condition is in the sign.
+- teacher.md new sentence read against the three graph rows (nopeus paikkakuvaajasta, kiihtyvyys nopeuskuvaajasta, matka nopeuskuvaajasta): matches.
+- 360 px PNG opened: seven rows, the new sign fits.

@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: db991bf31ee21542
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at ec7935cf8a9a834b.
+CONTENT-HASH: bbb5a2d9dbcc6a86
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (0d6428d22f2ec290); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+(none new; round-1 findings stand)
 
 ## Checked
-Diff only: c) uses E = E0 + k(T - T0) with the known point named; d) now solves T = (E_muu - E0)/k in symbols before numbers, consistent with c). Wind-turbine a) gives P_ka, E symbols before numbers. Finnish and level fit.
+- Round-1 Blocking fixed: teacher.md "jokaisesta rivistä"; unit.md "Tunnista ensin, minkä tunnusmerkin tehtävä antaa. Kirjoita sitten sen laki ..." no longer speaks of branches; the diff shows no other "haara" about the chart.
+- First row "eristetty systeemi" in chart (fi chart PNG opened: eight rows, nothing clipped) and in the aria-label; "systeemi" is the MAFY term, the S2 text keeps it without explanation, which the surrounding text supports.

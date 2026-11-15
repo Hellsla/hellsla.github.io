@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b314995820c7d472
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 6142a25bf9efaa0c.
+CONTENT-HASH: 5b158c0872d57a07
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (8d9ddf4a4ea0b4a3).
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: "tulos kulmakertoimesta → kaukaiset pisteet" (points of the fitted line) as in round 1.
 
 ## Checked
-Every hunk of the fi-easy merge diff for this unit: the new symbolic steps (solving for the asked quantity before numbers) against the existing substitutions, answers and unit formula names/notation of #522; LaTeX balanced. Content hash recomputed with scripts/units.py (matches). Recomputed: $\rho = 187{,}4/70 = 2{,}68\,\text{g/cm}^3$; two significant figures from $V = 70\,\text{cm}^3$, consistent with the b-part $(2680 \pm 80)\,\text{kg/m}^3$; the rubric now accepts both forms. $a = 1/(2k) = 4{,}167\,\text{m/s}^2$, $\mu_0 \ge a/g = 0{,}425$, $a/1{,}1025 = 3{,}78\,\text{m/s}^2$. The written component equations ($\Sigma F_x = F_{\mu0} = ma$, $N = mg$, sign convention stated) are correct.
+- Round-1 Blocking fixed: row 7 is now "malli origon kautta, suora ei → systemaattinen virhe, b ≠ 0" (en "model through origin, line not"); the aria-label says "Malli kulkee origon kautta, mutta suora ei". This is the unit's own condition ("Jos mallin mukaan suoran pitäisi kulkea origon kautta …").
+- Start box now "mistä tunnistan menetelmän?", consistent with the aria-label's "mikä menetelmä".
+- teacher.md: "kuuden kysymyksen kartan" -> "tunnistuskaavion seitsemän rivin"; the chart has seven rows (counted).
+- Rows 1-6 unchanged and correct as in round 1.
+- Hash taken at the start and the end (5b158c0872d57a07).

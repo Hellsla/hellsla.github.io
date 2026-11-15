@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "contribution": "Kertaustunnilla kootaan yhteen FY4-moduulin asioita: Newtonin lait, voimakuvion piirtäminen, paino, lepo- ja liikekitka, kalteva taso, kytketyt kappaleet ja ilmanvastus. Niistä tulee yksi menetelmä: ensin voimakuvio, sitten liikeyhtälöt. Tunnilla harjoitellaan ylioppilaskokeen tyyppisiä tehtäviä: etsitään virheitä voimakuvioista, kirjoitetaan liikeyhtälöt komponenteittain, lasketaan kytkettyjen kappaleiden jännitysvoimat, piirretään mittausaineiston kuvaaja ja sovitetaan suora sekä arvioidaan kitkakoe.",
+  "contribution": "Kertaustunnilla kootaan yhteen FY4-moduulin asioita: Newtonin lait, voimakuvion piirtäminen, paino, lepo- ja liukukitka, kalteva taso, kytketyt kappaleet ja ilmanvastus. Niistä tulee yksi menetelmä: ensin voimakuvio, sitten liikeyhtälöt. Tunnilla harjoitellaan ylioppilaskokeen tyyppisiä tehtäviä: etsitään virheitä voimakuvioista, kirjoitetaan liikeyhtälöt komponenteittain, lasketaan kytkettyjen kappaleiden jännitysvoimat, piirretään mittausaineiston kuvaaja ja sovitetaan suora sekä arvioidaan kitkakoe.",
   "learn": [
     "piirtämään voimakuvion ja kirjoittamaan liikeyhtälöt uudesta tilanteesta ilman apua",
     "ratkaisemaan Newtonin lain avulla tehtäviä, joissa on kitka, rinne tai kytkettyjä kappaleita",
@@ -10,7 +10,7 @@
     "Voima ja vastavoima vaikuttavat eri kappaleisiin (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*)",
     "Kokonaisvoima on $\\Sigma\\overline{F} = m\\overline{a}$, ja se osoittaa kiihtyvyyden suuntaan (luku *Newtonin toinen laki*)",
     "Voimakuvio piirretään kahdeksassa vaiheessa, ja komponentit korvaavat voiman laskussa (luku *Voimakuvio ja voimien yhteisvaikutus*)",
-    "Liikekitka on $F_\\mu = \\mu N$, ja rinteessä $N = mg\\cos\\alpha$ (luku *Paino, kitka ja kalteva taso*)",
+    "Liukukitka on $F_\\mu = \\mu N$, ja rinteessä $N = mg\\cos\\alpha$ (luku *Paino, kitka ja kalteva taso*)",
     "Jokaiselle kytketylle kappaleelle kirjoitetaan oma liikeyhtälö (luku *Liikeyhtälö kytketyille kappaleille*)",
     "Rajanopeudella ilmanvastus on yhtä suuri kuin paino (luku *Ilmanvastus ja putoaminen ilmassa*)"
   ],
@@ -212,15 +212,15 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe: pulkka rinteessä",
-      "prompt": "Pulkka liukuu rinnettä alas. Pulkan ja lapsen yhteinen massa on $25\\,\\text{kg}$. Rinteen kaltevuuskulma on $20^\\circ$, ja liikekitkakerroin on $0{,}10$. Opiskelija laski kitkan näin: ”$F_\\mu = \\mu m g = 0{,}10 \\cdot 25\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 25\\,\\text{N}$.” Mikä ratkaisussa on väärin?",
+      "prompt": "Pulkka liukuu rinnettä alas. Pulkan ja lapsen yhteinen massa on $25\\,\\text{kg}$. Rinteen kaltevuuskulma on $20^\\circ$, ja liukukitkakerroin on $0{,}10$. Opiskelija laski kitkan näin: ”$F_\\mu = \\mu m g = 0{,}10 \\cdot 25\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 25\\,\\text{N}$.” Mikä ratkaisussa on väärin?",
       "choices": [
         {
           "text": "Kitkan pitäisi olla $\\mu mg\\sin\\alpha \\approx 8{,}4\\,\\text{N}$, koska liike on rinteen suuntaista.",
           "feedback": "Kitka on rinteen suuntainen. Kitkan suuruus riippuu kuitenkin tukivoimasta. Tukivoima on kohtisuorassa rinnettä vastaan: $N = mg\\cos\\alpha$. Komponentti $mg\\sin\\alpha$ vie pulkkaa rinnettä alas."
         },
         {
-          "text": "Liukuvalle pulkalle pitäisi käyttää lepokitkakerrointa, ei liikekitkakerrointa.",
-          "feedback": "Pulkka liukuu. Siksi siihen vaikuttaa liikekitka $\\mu N$. Lepokitkakerroin antaa vain lepokitkan ylärajan kappaleelle, joka ei liu'u."
+          "text": "Liukuvalle pulkalle pitäisi käyttää lepokitkakerrointa, ei liukukitkakerrointa.",
+          "feedback": "Pulkka liukuu. Siksi siihen vaikuttaa liukukitka $\\mu N$. Lepokitkakerroin antaa vain lepokitkan ylärajan kappaleelle, joka ei liu'u."
         },
         {
           "text": "Tukivoima ei ole $mg$: rinteessä $N = mg\\cos\\alpha$, joten $F_\\mu \\approx 23\\,\\text{N}$.",
@@ -353,7 +353,7 @@
       "type": "numeric",
       "title": "Pulkan veto vinossa",
       "fbd": "equations",
-      "prompt": "Pulkkaa vedetään vaakasuoralla lumella tasaisella nopeudella. Pulkan massa kuormineen on $18\\,\\text{kg}$. Narun veto on $60\\,\\text{N}$. Naru on $25^\\circ$:n kulmassa vaakatasoon nähden. Määritä pulkan ja lumen välinen liikekitkakerroin.",
+      "prompt": "Pulkkaa vedetään vaakasuoralla lumella tasaisella nopeudella. Pulkan massa kuormineen on $18\\,\\text{kg}$. Narun veto on $60\\,\\text{N}$. Naru on $25^\\circ$:n kulmassa vaakatasoon nähden. Määritä pulkan ja lumen välinen liukukitkakerroin.",
       "answer": 0.35959,
       "unit": "",
       "tolerance": 0.03,
@@ -376,7 +376,7 @@
           "feedback": "Käytit kitkana vedon pystykomponenttia $T\\sin\\alpha$. Kitka on vaakasuora. Siksi se kumoaa vedon vaakakomponentin $T\\cos\\alpha$."
         }
       ],
-      "solution": "**Annettu:** massa $m = 18\\,\\text{kg}$, veto $T = 60\\,\\text{N}$, kulma $\\alpha = 25^\\circ$, nopeus on vakio, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** liikekitkakerroin $\\mu$\n\n**Periaate:** Nopeus on vakio. Siksi Newtonin ensimmäisen lain mukaan voimien summa on nolla kummankin akselin suunnassa. Narun voima on vino, joten se jaetaan komponentteihin. Pulkka liukuu, joten kitka on liikekitkaa $\\mu N$ (luvut *Voimakuvio ja voimien yhteisvaikutus* ja *Paino, kitka ja kalteva taso*).\n\n**Voimakuvio:** Pulkka on suorakulmio. $x$-akseli osoittaa oikealle ja $y$-akseli ylös. Paino $\\overline{G}$ lähtee keskipisteestä alas. Tukivoima $\\overline{N}$ lähtee alapinnasta ylös. Narun jännitysvoima $\\overline{T}$ lähtee etupäästä vinosti ylös. Liikekitka $\\overline{F}_\\mu$ lähtee alapinnan takakulmasta taaksepäin.\n```voimakuvio\npinta 0\nG 176,58\nN 151,22\nT 60 25\nF_mu 54,38 vasen\na 0\nv oikea\n```\n\n**Kaava:** $x$: $T\\cos\\alpha - F_\\mu = 0$ ja $y$: $N + T\\sin\\alpha - mg = 0$. Kun $F_\\mu = \\mu N$, saadaan $\\mu = \\dfrac{T\\cos\\alpha}{mg - T\\sin\\alpha}$\n\n**Muunnokset:** Ei tarvita. Suureet ovat perusyksiköissä.\n\n**Sijoitus:** $T\\cos\\alpha = 60\\,\\text{N} \\cdot \\cos 25^\\circ = 54{,}38\\,\\text{N}$ ja $N = 18\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 - 60\\,\\text{N} \\cdot \\sin 25^\\circ = 176{,}58\\,\\text{N} - 25{,}36\\,\\text{N} = 151{,}22\\,\\text{N}$, joten $\\mu = \\dfrac{54{,}38\\,\\text{N}}{151{,}22\\,\\text{N}} = 0{,}3596$\n\n**Vastaus:** $\\mu \\approx 0{,}36$. Tuloksessa on kaksi merkitsevää numeroa, kuten massassa $18\\,\\text{kg}$ ja vedossa $60\\,\\text{N}$. Kitkakertoimella ei ole yksikköä.\n\n**Järkevyys:** Kerroin on pienempi kuin $1$. Se on suurempi kuin voidellun suksen kerroin, joka on muutama sadasosa. Tulos sopii tavalliselle muovipulkalle pehmeässä lumessa. Jos tukivoimana käytettäisiin painoa, kerroin olisi noin $0{,}31$. Vinon vedon vaikutus on siis noin $15\\,\\%$."
+      "solution": "**Annettu:** massa $m = 18\\,\\text{kg}$, veto $T = 60\\,\\text{N}$, kulma $\\alpha = 25^\\circ$, nopeus on vakio, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** liukukitkakerroin $\\mu$\n\n**Periaate:** Nopeus on vakio. Siksi Newtonin ensimmäisen lain mukaan voimien summa on nolla kummankin akselin suunnassa. Narun voima on vino, joten se jaetaan komponentteihin. Pulkka liukuu, joten kitka on liukukitkaa $\\mu N$ (luvut *Voimakuvio ja voimien yhteisvaikutus* ja *Paino, kitka ja kalteva taso*).\n\n**Voimakuvio:** Pulkka on suorakulmio. $x$-akseli osoittaa oikealle ja $y$-akseli ylös. Paino $\\overline{G}$ lähtee keskipisteestä alas. Tukivoima $\\overline{N}$ lähtee alapinnasta ylös. Narun jännitysvoima $\\overline{T}$ lähtee etupäästä vinosti ylös. Liukukitka $\\overline{F}_\\mu$ lähtee alapinnan takakulmasta taaksepäin.\n```voimakuvio\npinta 0\nG 176,58\nN 151,22\nT 60 25\nF_mu 54,38 vasen\na 0\nv oikea\n```\n\n**Kaava:** $x$: $T\\cos\\alpha - F_\\mu = 0$ ja $y$: $N + T\\sin\\alpha - mg = 0$. Kun $F_\\mu = \\mu N$, saadaan $\\mu = \\dfrac{T\\cos\\alpha}{mg - T\\sin\\alpha}$\n\n**Muunnokset:** Ei tarvita. Suureet ovat perusyksiköissä.\n\n**Sijoitus:** $T\\cos\\alpha = 60\\,\\text{N} \\cdot \\cos 25^\\circ = 54{,}38\\,\\text{N}$ ja $N = 18\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 - 60\\,\\text{N} \\cdot \\sin 25^\\circ = 176{,}58\\,\\text{N} - 25{,}36\\,\\text{N} = 151{,}22\\,\\text{N}$, joten $\\mu = \\dfrac{54{,}38\\,\\text{N}}{151{,}22\\,\\text{N}} = 0{,}3596$\n\n**Vastaus:** $\\mu \\approx 0{,}36$. Tuloksessa on kaksi merkitsevää numeroa, kuten massassa $18\\,\\text{kg}$ ja vedossa $60\\,\\text{N}$. Kitkakertoimella ei ole yksikköä.\n\n**Järkevyys:** Kerroin on pienempi kuin $1$. Se on suurempi kuin voidellun suksen kerroin, joka on muutama sadasosa. Tulos sopii tavalliselle muovipulkalle pehmeässä lumessa. Jos tukivoimana käytettäisiin painoa, kerroin olisi noin $0{,}31$. Vinon vedon vaikutus on siis noin $15\\,\\%$."
     },
     {
       "id": "pulkkamaki",
@@ -384,7 +384,7 @@
       "type": "numeric",
       "title": "Jyrkkä pulkkamäki",
       "fbd": "equations",
-      "prompt": "Pulkka liukuu jyrkkää mäkeä alas. Mäen kaltevuuskulma on $28^\\circ$. Pulkan ja lumen välinen liikekitkakerroin on $0{,}15$. Ilmanvastusta ei oteta huomioon. Kuinka suuri on pulkan kiihtyvyys?",
+      "prompt": "Pulkka liukuu jyrkkää mäkeä alas. Mäen kaltevuuskulma on $28^\\circ$. Pulkan ja lumen välinen liukukitkakerroin on $0{,}15$. Ilmanvastusta ei oteta huomioon. Kuinka suuri on pulkan kiihtyvyys?",
       "answer": 3.3062,
       "unit": "m/s²",
       "tolerance": 0.02,
@@ -396,7 +396,7 @@
       "mistakes": [
         {
           "value": 4.6055,
-          "feedback": "Unohdit kitkan. Pulkka liukuu. Siksi liikekitka $\\mu N$ jarruttaa sitä. Kitka osoittaa rinnettä ylös."
+          "feedback": "Unohdit kitkan. Pulkka liukuu. Siksi liukukitka $\\mu N$ jarruttaa sitä. Kitka osoittaa rinnettä ylös."
         },
         {
           "value": 3.134,
@@ -407,7 +407,7 @@
           "feedback": "Pulkka liukuu alas. Siksi kitka osoittaa rinnettä ylös, ja se pienentää kiihtyvyyttä: $a = g(\\sin\\alpha - \\mu\\cos\\alpha)$."
         }
       ],
-      "solution": "**Annettu:** kaltevuuskulma $\\alpha = 28^\\circ$, liikekitkakerroin $\\mu = 0{,}15$, $g = 9{,}81\\,\\text{m/s}^2$; ilmanvastusta ei oteta huomioon\n\n**Kysytty:** pulkan kiihtyvyys $a$\n\n**Periaate:** Pulkkaan vaikuttavat Maa (paino) ja lumi (tukivoima ja liikekitka). Pulkka liukuu alas, joten kitka osoittaa rinnettä ylös. Newtonin toinen laki kirjoitetaan kahdelle akselille. Toinen akseli on rinteen suuntainen, ja toinen on kohtisuorassa rinnettä vastaan. Kohtisuorassa suunnassa kiihtyvyys on nolla (luku *Paino, kitka ja kalteva taso*).\n\n**Voimakuvio:** Pulkka on rinteen suuntainen suorakulmio. $x$-akseli osoittaa rinnettä alas. Paino $\\overline{G}$ lähtee keskipisteestä suoraan alas. Tukivoima $\\overline{N}$ lähtee alapinnasta kohtisuoraan rinteestä ulos. Liikekitka $\\overline{F}_\\mu$ lähtee alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit piirretään katkoviivoilla.\n```voimakuvio\npinta -28\nG 100\nN 88,29\nF_mu 13,24 ylös\na alas\nakselit -28\nkomponentit G\n```\n\n**Kaava:** $y$: $N - mg\\cos\\alpha = 0$ ja $x$: $mg\\sin\\alpha - \\mu N = ma$, joten $a = g(\\sin\\alpha - \\mu\\cos\\alpha)$\n\n**Muunnokset:** Ei tarvita. Massaa ei tarvita, koska se supistuu.\n\n**Sijoitus:** $a = 9{,}81\\,\\text{m/s}^2 \\cdot (\\sin 28^\\circ - 0{,}15 \\cdot \\cos 28^\\circ) = 9{,}81\\,\\text{m/s}^2 \\cdot (0{,}4695 - 0{,}1324) = 3{,}306\\,\\text{m/s}^2$\n\n**Vastaus:** $a \\approx 3{,}3\\,\\text{m/s}^2$. Tuloksessa on kaksi merkitsevää numeroa, kuten kitkakertoimessa $0{,}15$.\n\n**Järkevyys:** Ilman kitkaa kiihtyvyys olisi $g\\sin 28^\\circ \\approx 4{,}6\\,\\text{m/s}^2$. Kitka pienentää sitä noin neljänneksellä. Tulos on pienempi kuin $g$, kuten rinteessä pitää. Voimakuviossa paino on $100$ yksikköä. Siksi nuolten pituudet ovat mittakaavassa."
+      "solution": "**Annettu:** kaltevuuskulma $\\alpha = 28^\\circ$, liukukitkakerroin $\\mu = 0{,}15$, $g = 9{,}81\\,\\text{m/s}^2$; ilmanvastusta ei oteta huomioon\n\n**Kysytty:** pulkan kiihtyvyys $a$\n\n**Periaate:** Pulkkaan vaikuttavat Maa (paino) ja lumi (tukivoima ja liukukitka). Pulkka liukuu alas, joten kitka osoittaa rinnettä ylös. Newtonin toinen laki kirjoitetaan kahdelle akselille. Toinen akseli on rinteen suuntainen, ja toinen on kohtisuorassa rinnettä vastaan. Kohtisuorassa suunnassa kiihtyvyys on nolla (luku *Paino, kitka ja kalteva taso*).\n\n**Voimakuvio:** Pulkka on rinteen suuntainen suorakulmio. $x$-akseli osoittaa rinnettä alas. Paino $\\overline{G}$ lähtee keskipisteestä suoraan alas. Tukivoima $\\overline{N}$ lähtee alapinnasta kohtisuoraan rinteestä ulos. Liukukitka $\\overline{F}_\\mu$ lähtee alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit piirretään katkoviivoilla.\n```voimakuvio\npinta -28\nG 100\nN 88,29\nF_mu 13,24 ylös\na alas\nakselit -28\nkomponentit G\n```\n\n**Kaava:** $y$: $N - mg\\cos\\alpha = 0$ ja $x$: $mg\\sin\\alpha - \\mu N = ma$, joten $a = g(\\sin\\alpha - \\mu\\cos\\alpha)$\n\n**Muunnokset:** Ei tarvita. Massaa ei tarvita, koska se supistuu.\n\n**Sijoitus:** $a = 9{,}81\\,\\text{m/s}^2 \\cdot (\\sin 28^\\circ - 0{,}15 \\cdot \\cos 28^\\circ) = 9{,}81\\,\\text{m/s}^2 \\cdot (0{,}4695 - 0{,}1324) = 3{,}306\\,\\text{m/s}^2$\n\n**Vastaus:** $a \\approx 3{,}3\\,\\text{m/s}^2$. Tuloksessa on kaksi merkitsevää numeroa, kuten kitkakertoimessa $0{,}15$.\n\n**Järkevyys:** Ilman kitkaa kiihtyvyys olisi $g\\sin 28^\\circ \\approx 4{,}6\\,\\text{m/s}^2$. Kitka pienentää sitä noin neljänneksellä. Tulos on pienempi kuin $g$, kuten rinteessä pitää. Voimakuviossa paino on $100$ yksikköä. Siksi nuolten pituudet ovat mittakaavassa."
     },
     {
       "id": "lentopallo",
@@ -475,7 +475,7 @@
       "type": "numeric",
       "title": "2. Laskeminen",
       "fbd": "equations",
-      "prompt": "Laatikko A ($30\\,\\text{kg}$) ja laatikko B ($20\\,\\text{kg}$) ovat vierekkäin vaakasuoralla lattialla. A:ta työnnetään vaakasuoraan voimalla $120\\,\\text{N}$. A työntää B:tä edellään. Kummankin laatikon ja lattian välinen liikekitkakerroin on $0{,}15$. Kuinka suurella voimalla A työntää B:tä?",
+      "prompt": "Laatikko A ($30\\,\\text{kg}$) ja laatikko B ($20\\,\\text{kg}$) ovat vierekkäin vaakasuoralla lattialla. A:ta työnnetään vaakasuoraan voimalla $120\\,\\text{N}$. A työntää B:tä edellään. Kummankin laatikon ja lattian välinen liukukitkakerroin on $0{,}15$. Kuinka suurella voimalla A työntää B:tä?",
       "answer": 48.0,
       "unit": "N",
       "tolerance": 0.02,
@@ -499,7 +499,7 @@
         }
       ],
       "practice": "Kertaa, miten jokaiselle kappaleelle piirretään oma voimakuvio ja kirjoitetaan oma liikeyhtälö, luvussa [*Liikeyhtälö kytketyille kappaleille*](fy4-13.html). Kertaa kitka luvussa [*Paino, kitka ja kalteva taso*](fy4-6.html).",
-      "solution": "**Annettu:** $m_\\text{A} = 30\\,\\text{kg}$, $m_\\text{B} = 20\\,\\text{kg}$, työntö $F = 120\\,\\text{N}$, liikekitkakerroin $\\mu = 0{,}15$ kummallakin, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** voima $P$, jolla A työntää B:tä\n\n**Periaate:** Laatikot liikkuvat yhdessä, joten niillä on sama kiihtyvyys. Kiihtyvyys saadaan koko systeemistä. Systeemissä A:n ja B:n väliset voimat ovat sisäisiä voimia, ja ne kumoavat toisensa (kolmas laki). Sitten valitaan kappaleeksi pelkkä B. Silloin A:n voima on ulkoinen voima (luku *Liikeyhtälö kytketyille kappaleille*).\n\n**Voimakuvio:** Laatikko B on suorakulmio. Positiivinen suunta on oikealle. Paino $\\overline{G}$ lähtee keskipisteestä alas. Tukivoima $\\overline{N}$ lähtee alapinnasta ylös. A:n työntö $\\overline{P}$ lähtee vasemmasta sivusta oikealle. Liikekitka $\\overline{F}_\\mu$ lähtee alapinnan takakulmasta vasemmalle.\n```voimakuvio\npinta 0\nG 196,2\nN 196,2\nP 48 0 työntö @vasen\nF_mu 29,43 vasen\na oikea\n```\n\n**Kaava:** Systeemi: $F - \\mu(m_\\text{A} + m_\\text{B})g = (m_\\text{A} + m_\\text{B})a$, joten $a = \\dfrac{F - \\mu(m_\\text{A} + m_\\text{B})g}{m_\\text{A} + m_\\text{B}}$. B: $P - \\mu m_\\text{B} g = m_\\text{B} a$, joten $P = m_\\text{B}(a + \\mu g) = \\dfrac{m_\\text{B}}{m_\\text{A} + m_\\text{B}}\\,F$\n\n**Muunnokset:** Ei tarvita. Suureet ovat perusyksiköissä.\n\n**Sijoitus:** $a = \\dfrac{120\\,\\text{N} - 0{,}15 \\cdot 50\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2}{50\\,\\text{kg}} = \\dfrac{46{,}425\\,\\text{N}}{50\\,\\text{kg}} = 0{,}9285\\,\\text{m/s}^2$ ja $P = 20\\,\\text{kg} \\cdot (0{,}9285\\,\\text{m/s}^2 + 1{,}4715\\,\\text{m/s}^2) = 48{,}0\\,\\text{N}$\n\n**Vastaus:** $P \\approx 48\\,\\text{N}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kitkakertoimessa $0{,}15$.\n\n**Järkevyys:** Kun kitkakerroin on sama, B saa työnnöstä saman osuuden kuin sen osuus massasta on: $\\tfrac{20}{50} \\cdot 120\\,\\text{N} = 48\\,\\text{N}$. Voima on pienempi kuin työntö $120\\,\\text{N}$, kuten pitää. A työntää B:tä voimalla $48\\,\\text{N}$. B työntää A:ta taaksepäin yhtä suurella voimalla."
+      "solution": "**Annettu:** $m_\\text{A} = 30\\,\\text{kg}$, $m_\\text{B} = 20\\,\\text{kg}$, työntö $F = 120\\,\\text{N}$, liukukitkakerroin $\\mu = 0{,}15$ kummallakin, $g = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** voima $P$, jolla A työntää B:tä\n\n**Periaate:** Laatikot liikkuvat yhdessä, joten niillä on sama kiihtyvyys. Kiihtyvyys saadaan koko systeemistä. Systeemissä A:n ja B:n väliset voimat ovat sisäisiä voimia, ja ne kumoavat toisensa (kolmas laki). Sitten valitaan kappaleeksi pelkkä B. Silloin A:n voima on ulkoinen voima (luku *Liikeyhtälö kytketyille kappaleille*).\n\n**Voimakuvio:** Laatikko B on suorakulmio. Positiivinen suunta on oikealle. Paino $\\overline{G}$ lähtee keskipisteestä alas. Tukivoima $\\overline{N}$ lähtee alapinnasta ylös. A:n työntö $\\overline{P}$ lähtee vasemmasta sivusta oikealle. Liukukitka $\\overline{F}_\\mu$ lähtee alapinnan takakulmasta vasemmalle.\n```voimakuvio\npinta 0\nG 196,2\nN 196,2\nP 48 0 työntö @vasen\nF_mu 29,43 vasen\na oikea\n```\n\n**Kaava:** Systeemi: $F - \\mu(m_\\text{A} + m_\\text{B})g = (m_\\text{A} + m_\\text{B})a$, joten $a = \\dfrac{F - \\mu(m_\\text{A} + m_\\text{B})g}{m_\\text{A} + m_\\text{B}}$. B: $P - \\mu m_\\text{B} g = m_\\text{B} a$, joten $P = m_\\text{B}(a + \\mu g) = \\dfrac{m_\\text{B}}{m_\\text{A} + m_\\text{B}}\\,F$\n\n**Muunnokset:** Ei tarvita. Suureet ovat perusyksiköissä.\n\n**Sijoitus:** $a = \\dfrac{120\\,\\text{N} - 0{,}15 \\cdot 50\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2}{50\\,\\text{kg}} = \\dfrac{46{,}425\\,\\text{N}}{50\\,\\text{kg}} = 0{,}9285\\,\\text{m/s}^2$ ja $P = 20\\,\\text{kg} \\cdot (0{,}9285\\,\\text{m/s}^2 + 1{,}4715\\,\\text{m/s}^2) = 48{,}0\\,\\text{N}$\n\n**Vastaus:** $P \\approx 48\\,\\text{N}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kitkakertoimessa $0{,}15$.\n\n**Järkevyys:** Kun kitkakerroin on sama, B saa työnnöstä saman osuuden kuin sen osuus massasta on: $\\tfrac{20}{50} \\cdot 120\\,\\text{N} = 48\\,\\text{N}$. Voima on pienempi kuin työntö $120\\,\\text{N}$, kuten pitää. A työntää B:tä voimalla $48\\,\\text{N}$. B työntää A:ta taaksepäin yhtä suurella voimalla."
     },
     {
       "id": "tarkistus-3",

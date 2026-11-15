@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5990f23ea9ddfef8
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 5fb97cd3bc0ffb0e.
+CONTENT-HASH: 3717a9af9d7a1097
+Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (8b9ec94f3a8cf71b).
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: "kiertämällä piiri" means one closed loop; fine at this level.
 
 ## Checked
-Every hunk of the en merge diff (word diff). $t = Nnt_1$; $W_\text{ch} = 42.0\cdot10.4 = 436.8$ Wh, $\eta = 0.857$, $K = 0.066$ €; series cells $E_1 = E/3$, $R_{s1} = R_s/3$; $P/(EI) = R/(R+R_s)$; $Pt = Q = cm\Delta T$. Every changed formula is symbolic before substitution and uses no symbol in a sense that differs from the unit's ```kaavat``` names or notation from #522; the $ and brace balance of each added line is checked; `units.py check` passes; the hash was taken at the start and the end and matches.
+- Changed row 9: "paristolla on sisäinen vastus → johda silmukalla, ΣΔV = 0" replaces the pill U = E − R_sI. Correct: going round the loop, E − R_sI − RI = 0 gives the terminal voltage U = E − R_sI, the unit's Johda itse result; the chart no longer shows a derived formula as a law.
+- aria-label: "napajännite johdetaan kiertämällä piiri, jännitteiden summa on nolla" states the same.
+- Other rows unchanged and correct as in round 1.
+- Hash taken at the start and the end (3717a9af9d7a1097).

@@ -32,7 +32,7 @@ The zero of the spring balance is also checked before the measurement, with the 
 - The plan does not say what is kept constant, or the shoes are measured on different boards or on different days.
 - Each shoe is measured once, so the variation cannot be seen and the difference cannot be shown.
 - “Human error” or “measurement error” is written as a source of error without saying what the error is and how it is reduced.
-- The result is compared with kinetic friction: the shoe is pulled at a steady speed, although grip means static friction just before sliding.
+- The result is compared with sliding friction: the shoe is pulled at a steady speed, although grip means static friction just before sliding.
 
 ### Hyväksytään myös
 - Instead of the coefficient of friction, the shoes can be compared if masses are added to both so that the total mass is the same, and the readings of the spring balance are compared. The mass must then be the same and weighed.
@@ -375,7 +375,7 @@ two significant figures as in the braking distances and the slope.
 - The graph drawn is $(v, s)$, and a straight line is fitted to the curved set of points.
 - The speeds are squared in $\text{km/h}$, so the deceleration comes out in the wrong unit and with the wrong size; the conversion is $1\,\text{m/s} = 3.6\,\text{km/h}$.
 - The slope itself or $\tfrac{1}{k}$ is taken as the deceleration; the two of the factor $\tfrac{1}{2}$ is forgotten.
-- In part c kinetic friction is used, although the wheels do not slip, or an exact value is given as the answer instead of a lower limit.
+- In part c sliding friction is used, although the wheels do not slip, or an exact value is given as the answer instead of a lower limit.
 - In part d the deviation is given as $5\,\%$, forgetting that the speed is squared in the formula.
 
 ### Hyväksytään myös

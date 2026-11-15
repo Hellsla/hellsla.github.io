@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 5990f23ea9ddfef8
-Delta review (merge of #523 solution practice into #522, 2026-11-13) of the version passed at 5fb97cd3bc0ffb0e.
+CONTENT-HASH: 3717a9af9d7a1097
+Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (8b9ec94f3a8cf71b); earlier findings kept unless named fixed.
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- C: the aria-label still has double spaces ("task  sign", after "tehtävän  tunnusmerkki" in the source) despite the fix round; harmless for a screen reader.
 
 ## Checked
-Kettle cost with $t = Nnt_1$ before numbers, charger $0.4368\,\text{kWh}$ (conversion now matches the $436.8\,\text{Wh}$ in the substitution), series battery per-cell formulas, bulb power fraction $R/(R+R_\text{s})$, water heating.
-Read the diff hunks of this unit for how #522 notation and #523 symbolic-first solutions interact: no symbol used with two meanings inside one solution, no duplicated derivation, no contradiction with the unit text, LaTeX balanced, the answer lines still match the substitutions, and the formula still precedes the numbers (CLAUDE.md Lesson form 7). Staging of the worked solutions (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness) is intact.
+- Row "battery has internal resistance -> derive by a loop, ΣΔV = 0" is translated; the English aria-label says "the terminal voltage is derived by going once round the circuit, the sum of the voltages is zero". Fits the unit's Johda itse approach (fi-easy 360 px PNG opened: nine rows, nothing clipped).
+- The rest passes through the round-1 report.
