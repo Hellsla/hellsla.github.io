@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6c0936636b690650
-SCOPE: delta added-exercise from 5e217585a15dde17 base 8f23aa7ae3bd
+CONTENT-HASH: b380572990b00c2b
+SCOPE: delta (solutions.md: significant figures written as a·10^n, wording)
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy6-11-L1-09 Kaava — the symbol E is the field strength and also stands for the breakdown strength in Annettu; fine as is, but "läpilyöntikestävyys" could carry its own symbol $E_\text{max}$ so the Periaate line reads "kun $E = E_\text{max}$".
+None.
 
 ## Checked
-- review/shots/fy6-11-open-exercises-1280-9.png (and -8.png for the neighbouring task 11-8, stamp hash 6c0936636b690650): task 11-9 (L1-09) with hint, answer row and the open solution, Annettu to Järkevyys.
-- Typography: fraction, unit conversion by words, units upright, colon for division, case ending after the maths ($2{,}5\,\text{mm}$:n); the task is situation first, question last; the set still reads as one.
+- fy6-11-open-exercises-1280-1, -2, -3, -5, -6, -8 and -L3-1280-1, -2, -3, -4, -8 (all opened, current hash): tasks 11-1, 11-2 (1,0·10^2 µN chain and Vastaus), 11-18 (338 V), 11-19 (4,2·10^3 km/s), 11-20 (3,6 mN), the droplet-printer task (Vaakanopeudella wording).
+- Tasks where the answer is not a plain digit string (a·10^n) are all written the same way in the answer chip, Vastaus box and Sijoitus chain; no plain-text quantity or stray × introduced. Layout survived; formulas upright, units thin-spaced, decimal comma kept.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

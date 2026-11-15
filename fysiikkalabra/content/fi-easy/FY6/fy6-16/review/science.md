@@ -1,13 +1,7 @@
-VERDICT: PASS
-CONTENT-HASH: 9e1f7c5564a24ca1
-
+VERDICT: FAIL
+CONTENT-HASH: 5cef466e8945a470
 ## Blocking
-
+- A (quantitative, internal consistency). lesson.md:184 now says "Sama 40 kWh:n lataus kestää pistorasiasta lähes vuorokauden". The text before it states the losses (efficiency 80–95 %), and the inquiry "tavat" stores 40 kWh into the battery. lesson-answers.py `t-socket-h` gives 40 : (0,85 · 1,84) = 25,6 h. The inquiry solution says 26 h and "Lataus kestää yli vuorokauden", and the explain model answer also gives about 26 h. "Lähes vuorokauden" holds only without losses (21,7 h), the value the inquiry's mistake feedback marks as "Unohdit häviöt". The 80–95 % range gives 22,9–27,2 h, and the three-phase "noin neljä tuntia" (4,03 h) includes losses. Fix: "noin vuorokauden" or back to "yli vuorokauden", the same as the fi version.
 ## Polish
-
 ## Checked
-- Diff tarkistus-1 (inquiry.json:273): the correct option now says the supply is dimensioned for long, high-power charging and that RCD protection meeting the requirements is needed whether the charging point is indoors or outdoors — right (the installation standard requires RCD protection for every charging point, not only outdoor ones); the old implication that outdoor risk is the reason is removed.
-- Feedback: own group → cable and fuse sized for the long-lasting charging current, no other loads; RCD trips on leakage, e.g. through a damaged cable and a person to earth — right and consistent with lesson.md "Miksi latausasemalla on oma ryhmä ja vikavirtasuoja" (outdoor damage is more likely, stated as a further reason, not a condition).
-- Exactly one correct option; both distractors still wrong and their feedback right (own group does not raise the charging current; RCD responds to leakage, not overload; load management prevents main-fuse overload).
-- tarkistus-2 unchanged, recomputed: 30 kWh : 0,90 : 3,68 kW = 9,06 h.
-- Rest relies on the previous PASS. Hash identical at start and end.
+batch delta review: one wording change at lesson.md:184. Recomputed with and without losses against lesson-answers.py and the inquiry. The new wording contradicts the lesson's own loss model. Figure and formula-name changes are the teacher's.
