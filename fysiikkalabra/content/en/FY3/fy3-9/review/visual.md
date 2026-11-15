@@ -1,11 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 7dacc875513ffc50
+VERDICT: FAIL
+CONTENT-HASH: 3ccad76c26d15915
 
 ## Blocking
-(none)
+- [Major] inquiry.json, exit-ticket.json (prompts of Prediction 1, Prediction 2, "q") — the edited sentences now typeset $100\,\text{kPa}$ but keep "50 ml", "25 ml", "40 ml" in plain text; in open-ennusta-1280-1 the two sit side by side in different typefaces and "25 / ml" breaks across a line — teacher rule 2026-11-01 (a plain number with unit in edited text) — typeset the ml values in every edited line, preferably all 32 in inquiry.json and exit-ticket.json, as `$25\,\text{ml}$`.
 
 ## Polish
-(none)
+- [Minor] lesson.md — the edited paragraph and worked example are correct; no other findings.
 
 ## Checked
-batch delta review: preview/en/fy3-9.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved BARREL balloon photo captured with its surroundings. New spot after the last Ydinajatus figure row (which ends above it); at 1280 it floats beside the Boyle formula section (p1V1 = p2V2, p = vakio·1/V) without touching the formula boxes. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (gas expanding as outside pressure falls, next to Boyle's law).
+- Diff: kPa, cm², N, Pa and kPa·ml typeset in inquiry.json, exit-ticket.json and lesson.md. Opened fy3-9-open-ennusta-1280-1 (kPa choices render upright, thin space, aligned; the plain ml defect above). Source-checked the other changed lines.
+
+## Scores
+illustrations 5 · typography 3 · Finnish 5 · accessibility 4
