@@ -1,13 +1,15 @@
 VERDICT: PASS
 CONTENT-HASH: af4a4cef49e4f774
-SCOPE: delta added-exercise from e6fd55e011a5217c base 81db4a6fd727
 
 ## Blocking
 (none)
 
 ## Polish
-- fy3-5-L2-05 — the new opening word "Extension task." appears in no other exercise and means nothing to a student (extension of what? is it optional?); drop it, or use the same label in every extra task, so the situation comes first as the house rule asks.
+- fy3-5-L2-05 — "Extension task." opens the text; the label is harmless but a student may read it as optional. Keep it only if the site explains what it means.
 
 ## Checked
-- Delta: the friction-warming task's answer is now 50 J (calculated 50.4 J) with the reason for two figures (force data to 2 s.f., scatter about 5 %), and the Q < 0 remark is kept; the stored tolerance accepts both.
-- The solution's substitution, reasonableness (20 · 0.600 m · 4.20 N) unchanged and consistent.
+- L2-05: the prefix is the only change; situation, data table and the question (work in step 4, with sign) are intact and the question is still last.
+- Solution of the 50 N-pull task (answer line): now 50 J, two significant figures, with the calculated 50.4 J in brackets; the reason (data to two significant figures, spread about 5 %) is given, so the rounding is taught rather than just done.
+- The heat-loss remark (Q < 0, so DeltaU < W) is kept and consistent with the signs of the first law in the lesson.
+- Substitution and reasonableness lines are unchanged and agree with the new answer line.
+- FY3 scope kept; counts and kinds unchanged.
