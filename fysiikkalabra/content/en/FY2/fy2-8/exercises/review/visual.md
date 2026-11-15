@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: c58324be388ede19
-SCOPE: delta round 2 (calculation chains re-broken into rows, reflow)
+SCOPE: delta reflow from eb49af87d3a81c59 base b5600a63ddae
 
 ## Blocking
 (none)
