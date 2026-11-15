@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5a4c9abffc639a36
-Mode: delta
-Round: 1
+CONTENT-HASH: a667fee4dba0eeec
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy8-3-L2-08 — inline \tfrac fractions (13.6 eV over n^2, hc over E_u-E_l) are small at 390 px in the task and feedback — set them as \frac in display or keep as is.
+- [Minor] open-exercise captures: no 390 px capture of an opened solution exists in the shots; the 360 px open-solution check is the developer's (CLAUDE.md), so narrow-width clipping of the aligned blocks is not judged here.
 
 ## Checked
-- Own scratch script, 390 px, every feedback and solution open: captures /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/fi-easy-fy8-3-fy8-3-L2-08-0.png, -1.png, -2.png (all three tiles, new task fy8-3-L2-08 read in full).
-- Changed existing tasks L3-01 and L3-02 at 390 px: /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/oldsheet-fi-easy.png (task heads only: the new paragraph breaks read situation first, question last, units and decimal sign correct).
-- Standard captures review/shots/ were absent for this hash (packet: STALE or MISSING), so the scratch captures above are what I judged; not opened: any figure of the lesson itself (exercises-only review).
-- Text of the new task: situation first, question last, LaTeX units with thin space, decimal comma correct; feedback and answer boxes open inside the card without horizontal overflow.
+- Delta (reflow of long solution formulas into aligned blocks), judged from 1280 px open-exercise captures of fy8-1 (L1 part 1), fy8-6 (L2 part 3), fy8-10 (L1 part 2), fy8-13 (L2 part 2), fy8-16 (L1 part 3) and the 390 px fy8-1 exercises stage. Not every capture of this lesson opened; the review of this lesson rests on that sample of the shared presentation.
+- Blocks sit on their own line in a white panel, = signs aligned, continuation rows start with the operator (\cdot, =), units upright with thin space, sentence marks (. , :) inside the last row, and a following sentence ("Sitten saadaan", "joten") reads naturally; no clipping at 1280 px; numbers and words unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

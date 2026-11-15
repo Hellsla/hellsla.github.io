@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 323023f502e30fb8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 061692b87db44d9a
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] open-exercise captures: no 390 px capture of an opened solution exists in the shots; the 360 px open-solution check is the developer's (CLAUDE.md), so narrow-width clipping of the aligned blocks is not judged here.
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Delta (reflow of long solution formulas into aligned blocks), judged from 1280 px open-exercise captures of fy8-1 (L1 part 1), fy8-6 (L2 part 3), fy8-10 (L1 part 2), fy8-13 (L2 part 2), fy8-16 (L1 part 3) and the 390 px fy8-1 exercises stage. Not every capture of this lesson opened; the review of this lesson rests on that sample of the shared presentation.
+- Blocks sit on their own line in a white panel, = signs aligned, continuation rows start with the operator (\cdot, =), units upright with thin space, sentence marks (. , :) inside the last row, and a following sentence ("Sitten saadaan", "joten") reads naturally; no clipping at 1280 px; numbers and words unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

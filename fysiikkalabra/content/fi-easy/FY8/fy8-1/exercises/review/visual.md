@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 660f444084d55575
-SCOPE: delta added-exercise from 5e7e04fa3110d92d base 5a45b28682e8
+CONTENT-HASH: b64ca3b0224e105d
 
 ## Blocking
 (none)
 
 ## Polish
-(none new; the round-1 Minor on the small figure in the task card stands)
+- [Minor] open-exercise captures: no 390 px capture of an opened solution exists in the shots; the 360 px open-solution check is the developer's (CLAUDE.md), so narrow-width clipping of the aligned blocks is not judged here.
 
 ## Checked
-- Own scratch captures of the L2-08 card with every solution open at 360 and 390 px (fi-easy), read in full from the preview build; review/shots not used.
-- Substitution row now /bin/bash.4136 · (12 − 5.56) = 2.66$ and splits into two aligned rows; no formula in the card is wider than the card at 360 or 390 px (measured in the browser); the Conversions and Reasonableness lines read cleanly, the unseen 2.3 eV is gone.
-- Figure kuvaaja-ab seen in the card: axes, units, grid, A and B distinct.
-- L1-10 and L2-09 were passed in round 1 and are unchanged.
+- Delta (reflow of long solution formulas into aligned blocks), judged from 1280 px open-exercise captures of fy8-1 (L1 part 1), fy8-6 (L2 part 3), fy8-10 (L1 part 2), fy8-13 (L2 part 2), fy8-16 (L1 part 3) and the 390 px fy8-1 exercises stage. Not every capture of this lesson opened; the review of this lesson rests on that sample of the shared presentation.
+- Blocks sit on their own line in a white panel, = signs aligned, continuation rows start with the operator (\cdot, =), units upright with thin space, sentence marks (. , :) inside the last row, and a following sentence ("Sitten saadaan", "joten") reads naturally; no clipping at 1280 px; numbers and words unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
