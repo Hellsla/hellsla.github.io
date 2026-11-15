@@ -50,7 +50,15 @@
 **Principle:** The balls are small compared with the distance, so they can be treated as point charges, and Coulomb's law gives the force. The charges are equal, so the product of the charges is $q^2$. Charge consists of elementary charges, so the positive balls lack $n = \tfrac{q}{e}$ electrons (chapter *Electric charge and Coulomb's law*).
 **Formula:** $F_\text{s} = k\dfrac{q^2}{r^2}$, so $q = r\sqrt{\dfrac{F_\text{s}}{k}}$ and $n = \dfrac{q}{e}$
 **Conversions:** $r = 8.0\,\text{cm} = 8.0 \cdot 0.01\,\text{m} = 0.080\,\text{m}$ and $F_\text{s} = 0.493\,\text{mN} = 0.493 \cdot 0.001\,\text{N} = 4.93 \cdot 10^{-4}\,\text{N}$. Finally $1\,\text{nC} = 10^{-9}\,\text{C}$.
-**Substitution:** $q = 0.080\,\text{m} \cdot \sqrt{\dfrac{4.93 \cdot 10^{-4}\,\text{N}}{8.988 \cdot 10^{9}\,\text{N}\cdot\text{m}^2/\text{C}^2}} = 0.080\,\text{m} \cdot 2.342 \cdot 10^{-7}\,\tfrac{\text{C}}{\text{m}} = 1.874 \cdot 10^{-8}\,\text{C} = 18.7\,\text{nC}$ and $n = \dfrac{1.874 \cdot 10^{-8}\,\text{C}}{1.602 \cdot 10^{-19}\,\text{C}} = 1.17 \cdot 10^{11}$
+**Substitution:** $$
+\begin{aligned}
+q &= 0.080\,\text{m} \\
+&\cdot \sqrt{\dfrac{4.93 \cdot 10^{-4}\,\text{N}}{8.988 \cdot 10^{9}\,\text{N}\cdot\text{m}^2/\text{C}^2}} \\
+&= 0.080\,\text{m} \cdot 2.342 \cdot 10^{-7}\,\tfrac{\text{C}}{\text{m}} \\
+&= 1.874 \cdot 10^{-8}\,\text{C} \\
+&= 18.7\,\text{nC}
+\end{aligned}
+$$ and $n = \dfrac{1.874 \cdot 10^{-8}\,\text{C}}{1.602 \cdot 10^{-19}\,\text{C}} = 1.17 \cdot 10^{11}$
 **Answer:** $q \approx 19\,\text{nC}$, and about $1.2 \cdot 10^{11}$ electrons have moved away from each ball. Two significant figures, as in the data.
 **Reasonableness:** Check: $k\tfrac{q^2}{r^2} = 8.988 \cdot 10^{9} \cdot \tfrac{(1.874 \cdot 10^{-8})^2}{0.080^2}\,\text{N} = 4.93 \cdot 10^{-4}\,\text{N}$. Tens of nanocoulombs is the order of magnitude of the charge obtained by rubbing, and $10^{11}$ electrons are a negligibly small fraction of all the electrons of the ball.
 
@@ -92,7 +100,12 @@
 **Find:** the capacitance $C$ and the charge $Q$
 **Principle:** The distance between the plates is small compared with the size of the plates, so there is a uniform field between the plates and the expression for the capacitance of a parallel-plate capacitor holds. The charge is directly proportional to the voltage, and the capacitance is their ratio (chapter *The capacitor and its energy*).
 **Formula:** $C = \dfrac{\varepsilon_0\varepsilon_\text{r}A}{d}$, where $A = a^2$, and $Q = CU$
-**Conversions:** $A = 0.250\,\text{m} \cdot 0.250\,\text{m} = 0.0625\,\text{m}^2$, $d = 3.00\,\text{mm} = 3.00 \cdot 0.001\,\text{m} = 0.00300\,\text{m}$ and $U = 4.50\,\text{kV} = 4.50 \cdot 1000\,\text{V} = 4500\,\text{V}$. Finally $1\,\text{pF} = 10^{-12}\,\text{F}$ and $1\,\mu\text{C} = 10^{-6}\,\text{C}$.
+**Conversions:** $$
+\begin{aligned}
+A &= 0.250\,\text{m} \cdot 0.250\,\text{m} \\
+&= 0.0625\,\text{m}^2
+\end{aligned}
+$$, $d = 3.00\,\text{mm} = 3.00 \cdot 0.001\,\text{m} = 0.00300\,\text{m}$ and $U = 4.50\,\text{kV} = 4.50 \cdot 1000\,\text{V} = 4500\,\text{V}$. Finally $1\,\text{pF} = 10^{-12}\,\text{F}$ and $1\,\mu\text{C} = 10^{-6}\,\text{C}$.
 **Substitution:** $C = \dfrac{8.854 \cdot 10^{-12}\,\text{F/m} \cdot 1.0 \cdot 0.0625\,\text{m}^2}{0.00300\,\text{m}} = 1.845 \cdot 10^{-10}\,\text{F} = 184.5\,\text{pF}$ and $Q = 1.845 \cdot 10^{-10}\,\text{F} \cdot 4500\,\text{V} = 8.30 \cdot 10^{-7}\,\text{C} = 0.830\,\mu\text{C}$
 **Answer:** $C \approx 184\,\text{pF}$ and $Q \approx 0.830\,\mu\text{C}$, three significant figures, as in the side of the plate, the distance and the voltage. The relative permittivity of air is very precisely $1$, so the $1.0$ of the table does not limit the precision.
 **Reasonableness:** The capacitance of an air-filled capacitor is small, only hundreds of picofarads, although the plates are larger than a palm. The unit is correct: $\tfrac{\text{F}}{\text{m}} \cdot \tfrac{\text{m}^2}{\text{m}} = \text{F}$. The charge is less than a microcoulomb, of the same order of magnitude as the charge discharged in a spark.
@@ -103,9 +116,22 @@
 **Principle:** During charging the voltage grows from zero to $U$ in the same ratio as the charge, so the energy $\tfrac12 QU = \tfrac12 CU^2$ is stored in the capacitor. Between the plates the field is uniform, so its strength is the voltage divided by the distance. Breakdown does not occur if the field is smaller than the dielectric strength of air (chapters *The capacitor and its energy* and *Uniform electric field*).
 **Formula:** $W = \tfrac12 CU^2$, $E = \dfrac{U}{d}$ and $U_\text{max} = E_\text{max} d$
 **Conversions:** Finally $1\,\text{J} = 1000\,\text{mJ}$ and $1\,\text{MV/m} = 10^{6}\,\text{V/m}$.
-**Substitution:** $W = \tfrac12 \cdot 1.845 \cdot 10^{-10}\,\text{F} \cdot (4500\,\text{V})^2 = 1.868 \cdot 10^{-3}\,\text{J} = 1.87\,\text{mJ}$, $E = \dfrac{4500\,\text{V}}{0.00300\,\text{m}} = 1.50 \cdot 10^{6}\,\text{V/m}$ and $U_\text{max} = 3 \cdot 10^{6}\,\text{V/m} \cdot 0.00300\,\text{m} = 9 \cdot 10^{3}\,\text{V}$
+**Substitution:** $$
+\begin{aligned}
+W &= \tfrac12 \cdot 1.845 \cdot 10^{-10}\,\text{F} \\
+&\cdot (4500\,\text{V})^2 \\
+&= 1.868 \cdot 10^{-3}\,\text{J} \\
+&= 1.87\,\text{mJ}
+\end{aligned}
+$$, $E = \dfrac{4500\,\text{V}}{0.00300\,\text{m}} = 1.50 \cdot 10^{6}\,\text{V/m}$ and $U_\text{max} = 3 \cdot 10^{6}\,\text{V/m} \cdot 0.00300\,\text{m} = 9 \cdot 10^{3}\,\text{V}$
 **Answer:** $W \approx 1.87\,\text{mJ}$ and $E \approx 1.50\,\text{MV/m}$, three significant figures. The field is half of the dielectric strength of air, so the air gap withstands it: breakdown would occur only at a voltage of about $9\,\text{kV}$.
-**Reasonableness:** The other form gives the same: $\tfrac12 QU = \tfrac12 \cdot 8.30 \cdot 10^{-7}\,\text{C} \cdot 4500\,\text{V} = 1.87\,\text{mJ}$. The energy is small, but the margin to breakdown is only a factor of two, and humid air, dust or a sharp edge can trigger a spark at a lower voltage too.
+**Reasonableness:** The other form gives the same: $$
+\begin{aligned}
+&\tfrac12 QU \\
+&= \tfrac12 \cdot 8.30 \cdot 10^{-7}\,\text{C} \cdot 4500\,\text{V} \\
+&= 1.87\,\text{mJ}
+\end{aligned}
+$$. The energy is small, but the margin to breakdown is only a factor of two, and humid air, dust or a sharp edge can trigger a spark at a lower voltage too.
 
 ### c)
 **Given:** from part a $Q = 8.30 \cdot 10^{-7}\,\text{C}$ and $C = 1.845 \cdot 10^{-10}\,\text{F}$; for glass $\varepsilon_\text{r} = 5.6$; the glass fills the gap; the source disconnected
@@ -289,7 +315,14 @@
 **Reading the graph:** The dashed extension of the line crosses the vertical axis at about $22\,\text{pF}$, which is marked in the graph with an orange point.
 **Formula:** $C = k \cdot \tfrac{1}{d} + b$, so $b = C_1 - k \cdot \tfrac{1}{d_1}$, where $C_1$ is the value of the line at $\tfrac{1}{d} = \tfrac{1}{d_1}$
 **Conversions:** None needed: the slope and the value of the quantity $\tfrac{1}{d}$ are in the units $\text{pF}\cdot\text{mm}$ and $\tfrac{1}{\text{mm}}$, so the product is in picofarads.
-**Substitution:** $b = 93\,\text{pF} - 353.8\,\text{pF}\cdot\text{mm} \cdot 0.20\,\tfrac{1}{\text{mm}} = 93\,\text{pF} - 70.8\,\text{pF} = 22.2\,\text{pF}$
+**Substitution:** $$
+\begin{aligned}
+b &= 93\,\text{pF} \\
+&- 353.8\,\text{pF}\cdot\text{mm} \cdot 0.20\,\tfrac{1}{\text{mm}} \\
+&= 93\,\text{pF} - 70.8\,\text{pF} \\
+&= 22.2\,\text{pF}
+\end{aligned}
+$$
 **Answer:** $b \approx 22\,\text{pF}$, two significant figures, because it is the difference of two almost equal numbers.
 **Reasonableness:** The constant term is the capacitance of the leads and the meter themselves: the leads are close to each other and to the terminals of the meter, and the meter measures their capacitance in addition to the capacitance of the plates. Tens of picofarads is the usual order of magnitude for test leads. The model works in the measured range, because even the largest distance, $6.0\,\text{mm}$, is only $3\,\%$ of the side of the plate, $200\,\text{mm}$. If the distance were centimetres, the curving field at the edges would increase the capacitance above the value of the model. At the smallest distances, on the other hand, the uncertainty of the thickness of the spacers and the bending of the plates, for example $\pm 0.1\,\text{mm}$, is $10\,\%$ of the distance $1.0\,\text{mm}$. That is why the slope is best determined from the whole line and not from a single point.
 
@@ -309,7 +342,18 @@
 ### a)
 **Find:** an assessment of the claim that the bird on the conductor is safe because its feet insulate
 **Principle:** A current flows through the body only if there is a voltage, that is, a potential difference, between two points of the body. The voltage between different points of a conductor comes from Ohm's law when the resistance of the conductor between them and the current are known (chapters *Electrical safety at home and at work* and *Potential energy and potential in an electric field*).
-**Model answer:** The bird's feet are about $5\,\text{cm}$ apart. The resistance of the conductor between the feet is $0.30\,\tfrac{\Omega}{\text{km}} \cdot 0.05 \cdot 10^{-3}\,\text{km} = 1.5 \cdot 10^{-5}\,\Omega$, so the voltage between the feet is $U = RI = 1.5 \cdot 10^{-5}\,\Omega \cdot 100\,\text{A} = 1.5\,\text{mV}$. Such a small voltage does not drive a noticeable current through the bird's body. The bird is indeed at almost the same potential as the conductor, about $12\,\text{kV}$ relative to earth (the $20\,\text{kV}$ of the line is the voltage between the phase conductors), but potential alone is not dangerous: a current needs two points at different potentials. The bird does not touch the ground, the pole or another conductor, so no current flows through its body. The conclusion of the claim is right, but the justification is wrong: the bird would be safe even if its feet conducted electricity well. The bird is in danger if it touches another conductor or an earthed part of the pole with its wing at the same time.
+**Model answer:** The bird's feet are about $5\,\text{cm}$ apart. The resistance of the conductor between the feet is $$
+\begin{aligned}
+&0.30\,\tfrac{\Omega}{\text{km}} \cdot 0.05 \cdot 10^{-3}\,\text{km} \\
+&= 1.5 \cdot 10^{-5}\,\Omega
+\end{aligned}
+$$, so the voltage between the feet is $$
+\begin{aligned}
+U &= RI \\
+&= 1.5 \cdot 10^{-5}\,\Omega \cdot 100\,\text{A} \\
+&= 1.5\,\text{mV}
+\end{aligned}
+$$. Such a small voltage does not drive a noticeable current through the bird's body. The bird is indeed at almost the same potential as the conductor, about $12\,\text{kV}$ relative to earth (the $20\,\text{kV}$ of the line is the voltage between the phase conductors), but potential alone is not dangerous: a current needs two points at different potentials. The bird does not touch the ground, the pole or another conductor, so no current flows through its body. The conclusion of the claim is right, but the justification is wrong: the bird would be safe even if its feet conducted electricity well. The bird is in danger if it touches another conductor or an earthed part of the pole with its wing at the same time.
 
 ### b)
 **Find:** why the angler can get a shock without touching the conductor, and the smallest air gap that can break down
@@ -336,7 +380,14 @@
 **Principle:** The power given by the panel is the product of the voltage and the current measured at the same time with the same load. The power is zero both in a short circuit and with no load, and between them it is largest at the maximum power point. The efficiency is the largest electric power divided by the power of the light falling on the panel (chapter *Semiconductors, the diode, the LED and the solar cell*).
 **Formula:** $P = UI$ with each load and $\eta = \dfrac{P_\text{max}}{GA}$
 **Conversions:** The currents from milliamperes to amperes, for example $199\,\text{mA} = 199 \cdot 0.001\,\text{A} = 0.199\,\text{A}$, and $A = 60\,\text{cm}^2 = 60 \cdot 10^{-4}\,\text{m}^2 = 0.0060\,\text{m}^2$.
-**Substitution:** The powers are in order $2.10\,\text{V} \cdot 0.210\,\text{A} = 0.441\,\text{W}$, $0.872\,\text{W}$, $4.97\,\text{V} \cdot 0.199\,\text{A} = 0.989\,\text{W}$, $0.959\,\text{W}$, $0.805\,\text{W}$, $0.574\,\text{W}$ and $0.358\,\text{W}$, so $P_\text{max} = 0.989\,\text{W}$ and $\eta = \dfrac{0.989\,\text{W}}{1000\,\tfrac{\text{W}}{\text{m}^2} \cdot 0.0060\,\text{m}^2} = \dfrac{0.989\,\text{W}}{6.0\,\text{W}} = 0.165 = 16.5\,\%$
+**Substitution:** The powers are in order $2.10\,\text{V} \cdot 0.210\,\text{A} = 0.441\,\text{W}$, $0.872\,\text{W}$, $4.97\,\text{V} \cdot 0.199\,\text{A} = 0.989\,\text{W}$, $0.959\,\text{W}$, $0.805\,\text{W}$, $0.574\,\text{W}$ and $0.358\,\text{W}$, so $P_\text{max} = 0.989\,\text{W}$ and $$
+\begin{aligned}
+\eta &= \dfrac{0.989\,\text{W}}{1000\,\tfrac{\text{W}}{\text{m}^2} \cdot 0.0060\,\text{m}^2} \\
+&= \dfrac{0.989\,\text{W}}{6.0\,\text{W}} \\
+&= 0.165 \\
+&= 16.5\,\%
+\end{aligned}
+$$
 **Answer:** $P_\text{max} \approx 0.99\,\text{W}$ with the load $25\,\Omega$ and $\eta \approx 16\,\%$, two significant figures, as in the area $60\,\text{cm}^2$.
 **Reasonableness:** The largest power is smaller than the $U_\text{oc}I_\text{sc} = 1.28\,\text{W}$ of the report, as it should be, because the panel does not give the open-circuit voltage and the short-circuit current at the same time. Every row of the table satisfies Ohm's law for the load, for example $\tfrac{4.97\,\text{V}}{0.199\,\text{A}} \approx 25\,\Omega$, so the measurements are consistent. The efficiency of ordinary silicon cells is about $15\text{–}22\,\%$.
 
@@ -364,7 +415,14 @@
 **Principle:** Between the grids only the electric force acts on an ion: the weight of the ions is negligible, and there is no air resistance in space. The electric force is conservative, so the decrease $eU$ in the potential energy of the ion turns into kinetic energy. The grids are close to each other, so the field between them is uniform (chapters *Potential energy and potential in an electric field* and *Uniform electric field*).
 **Formula:** $\tfrac12 mv^2 = eU$, so $v = \sqrt{\dfrac{2eU}{m}}$, and $E = \dfrac{U}{d}$
 **Conversions:** $U = 1.10\,\text{kV} = 1.10 \cdot 1000\,\text{V} = 1100\,\text{V}$ and $d = 1.0\,\text{mm} = 1.0 \cdot 0.001\,\text{m} = 0.0010\,\text{m}$. In addition $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$, and finally $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Substitution:** $v = \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 1100\,\text{V}}{2.180 \cdot 10^{-25}\,\text{kg}}} = \sqrt{1.617 \cdot 10^{9}\,\text{m}^2/\text{s}^2} = 4.021 \cdot 10^{4}\,\text{m/s} = 40.2\,\text{km/s}$ and $E = \dfrac{1100\,\text{V}}{0.0010\,\text{m}} = 1.1 \cdot 10^{6}\,\text{V/m}$
+**Substitution:** $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 1100\,\text{V}}{2.180 \cdot 10^{-25}\,\text{kg}}} \\
+&= \sqrt{1.617 \cdot 10^{9}\,\text{m}^2/\text{s}^2} \\
+&= 4.021 \cdot 10^{4}\,\text{m/s} \\
+&= 40.2\,\text{km/s}
+\end{aligned}
+$$ and $E = \dfrac{1100\,\text{V}}{0.0010\,\text{m}} = 1.1 \cdot 10^{6}\,\text{V/m}$
 **Answer:** $v \approx 40.2\,\text{km/s}$, three significant figures, as in the voltage $1.10\,\text{kV}$, and $E \approx 1.1\,\text{MV/m}$, two significant figures, as in the distance $1.0\,\text{mm}$.
 **Reasonableness:** The kinetic energy of the ion is $1100\,\text{eV}$. An electron would get the same energy, but a xenon ion is about $2.4 \cdot 10^{5}$ times heavier, so its speed is $\sqrt{2.4 \cdot 10^{5}} \approx 490$ times smaller. Still, the speed is about ten times the exhaust speed of a chemical rocket engine, about $3\text{–}4\,\text{km/s}$. In air the field $1.1\,\text{MV/m}$ would come close to breakdown, but in a vacuum there is no gas that could conduct.
 
@@ -374,7 +432,20 @@
 **Principle:** Current is the charge flowing per unit time, so it tells how many ions the thruster sends out per second. The mass $\Delta m$ of the ions leaving in the time $\Delta t$ gets the speed $v$ from almost rest. By the impulse principle their change in momentum $\Delta m \cdot v$ is the impulse $F\,\Delta t$ of the force the thruster exerts on them. By Newton's third law the ions exert an equal and opposite force on the thruster, which pushes the satellite (chapters *Momentum and impulse* and *Interaction and force: Newton's first and third laws*).
 **Formula:** $N = \dfrac{I}{e}$, $\dfrac{\Delta m}{\Delta t} = Nm$ and $F\,\Delta t = \Delta m \cdot v$, so $F = \dfrac{\Delta m}{\Delta t}\,v = \dfrac{Imv}{e}$
 **Conversions:** $1\,\text{A} = 1\,\text{C/s}$. Finally $1\,\text{N} = 1000\,\text{mN}$.
-**Substitution:** $N = \dfrac{1.60\,\text{C/s}}{1.602 \cdot 10^{-19}\,\text{C}} = 9.988 \cdot 10^{18}\,\tfrac{1}{\text{s}}$, $\dfrac{\Delta m}{\Delta t} = 9.988 \cdot 10^{18}\,\tfrac{1}{\text{s}} \cdot 2.180 \cdot 10^{-25}\,\text{kg} = 2.177 \cdot 10^{-6}\,\text{kg/s}$ and $F = 2.177 \cdot 10^{-6}\,\text{kg/s} \cdot 4.021 \cdot 10^{4}\,\text{m/s} = 0.08754\,\text{N} = 87.5\,\text{mN}$
+**Substitution:** $N = \dfrac{1.60\,\text{C/s}}{1.602 \cdot 10^{-19}\,\text{C}} = 9.988 \cdot 10^{18}\,\tfrac{1}{\text{s}}$, $$
+\begin{aligned}
+\dfrac{\Delta m}{\Delta t} &= 9.988 \cdot 10^{18}\,\tfrac{1}{\text{s}} \cdot 2.180 \\
+&\cdot 10^{-25}\,\text{kg} \\
+&= 2.177 \cdot 10^{-6}\,\text{kg/s}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+F &= 2.177 \cdot 10^{-6}\,\text{kg/s} \cdot 4.021 \\
+&\cdot 10^{4}\,\text{m/s} \\
+&= 0.08754\,\text{N} \\
+&= 87.5\,\text{mN}
+\end{aligned}
+$$
 **Answer:** $F \approx 87.5\,\text{mN}$, three significant figures, as in the current and the voltage.
 **Reasonableness:** The force is as large as the weight of an object of about $9\,\text{g}$ at the surface of the Earth, that is, very small. The unit is correct: $\tfrac{\text{kg}}{\text{s}} \cdot \tfrac{\text{m}}{\text{s}} = \text{kg} \cdot \tfrac{\text{m}}{\text{s}^2} = \text{N}$.
 
@@ -383,15 +454,44 @@
 **Find:** the change $\Delta v$ in the speed of the satellite and the xenon used, $m_\text{Xe}$
 **Principle:** The thrust is constant, so by Newton's second law the acceleration of the satellite is constant, and the change in speed is the acceleration times the time. The thrust is assumed to be along the orbit, and only the change in speed it causes is considered. The mass of the satellite stays almost constant if little xenon is used; this is checked at the end (chapters *Newton's second law* and *Momentum and impulse*).
 **Formula:** $a = \dfrac{F}{M}$, $\Delta v = a\,\Delta t$ and $m_\text{Xe} = \dfrac{\Delta m}{\Delta t} \cdot \Delta t$
-**Conversions:** $\Delta t = 30 \cdot 24 \cdot 3600\,\text{s} = 2.592 \cdot 10^{6}\,\text{s}$
-**Substitution:** $a = \dfrac{0.08754\,\text{N}}{650\,\text{kg}} = 1.347 \cdot 10^{-4}\,\text{m/s}^2$, $\Delta v = 1.347 \cdot 10^{-4}\,\text{m/s}^2 \cdot 2.592 \cdot 10^{6}\,\text{s} = 349\,\text{m/s}$ and $m_\text{Xe} = 2.177 \cdot 10^{-6}\,\text{kg/s} \cdot 2.592 \cdot 10^{6}\,\text{s} = 5.64\,\text{kg}$
+**Conversions:** $$
+\begin{aligned}
+\Delta t &= 30 \cdot 24 \cdot 3600\,\text{s} \\
+&= 2.592 \cdot 10^{6}\,\text{s}
+\end{aligned}
+$$
+**Substitution:** $a = \dfrac{0.08754\,\text{N}}{650\,\text{kg}} = 1.347 \cdot 10^{-4}\,\text{m/s}^2$, $$
+\begin{aligned}
+\Delta v &= 1.347 \cdot 10^{-4}\,\text{m/s}^2 \\
+&\cdot 2.592 \cdot 10^{6}\,\text{s} \\
+&= 349\,\text{m/s}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+m_\text{Xe} &= 2.177 \cdot 10^{-6}\,\text{kg/s} \\
+&\cdot 2.592 \cdot 10^{6}\,\text{s} \\
+&= 5.64\,\text{kg}
+\end{aligned}
+$$
 **Answer:** $\Delta v \approx 349\,\text{m/s}$ and $m_\text{Xe} \approx 5.64\,\text{kg}$, three significant figures, as in the thrust.
 **Reasonableness:** Less than $1\,\%$ of the mass of the satellite is used as xenon, so the constant-mass assumption is good. By the impulse principle a chemical engine with an exhaust speed of about $3\,\text{km/s}$ would need about $\tfrac{650\,\text{kg} \cdot 349\,\text{m/s}}{3000\,\text{m/s}} \approx 76\,\text{kg}$ of fuel for the same change in speed, over ten times as much.
 
 ### d)
 **Find:** whether the solar panels are enough, why the thrust is small despite the large power, and why an ion thruster is used anyway
 **Principle:** A current flowing across the accelerating voltage gets the power $P = UI$. When only the electric force does work, the same power goes into the kinetic energy of the ions. The thrust is the change in momentum of the ions per second (chapters *Potential energy and potential in an electric field* and *Momentum and impulse*).
-**Model answer:** The ion beam needs the power $P = UI = 1100\,\text{V} \cdot 1.60\,\text{A} = 1.76\,\text{kW}$. It is as large as the kinetic energy of the ions per second, $\tfrac12 \cdot 2.177 \cdot 10^{-6}\,\tfrac{\text{kg}}{\text{s}} \cdot (4.021 \cdot 10^{4}\,\tfrac{\text{m}}{\text{s}})^2 = 1.76\,\text{kW}$, as the conservation of energy requires. The $2.5\,\text{kW}$ of the panels is therefore enough for the beam, and the remaining $0.7\,\text{kW}$ goes to ionisation, neutralisation and the other devices of the satellite. The thrust is $F = \tfrac{\Delta m}{\Delta t}\,v$ and the power $P = \tfrac12 \tfrac{\Delta m}{\Delta t}\,v^2$, so $F = \tfrac{2P}{v}$. With a given power a large ion speed gives a small thrust, only $87.5\,\text{mN}$. On the other hand, a large speed means that each kilogram of propellant gives a lot of momentum, so little xenon is used. An ion thruster is not suitable for launch or fast manoeuvres, but for long orbit changes of weeks or months it is good, because it saves tens of kilograms of mass.
+**Model answer:** The ion beam needs the power $$
+\begin{aligned}
+P &= UI \\
+&= 1100\,\text{V} \cdot 1.60\,\text{A} \\
+&= 1.76\,\text{kW}
+\end{aligned}
+$$. It is as large as the kinetic energy of the ions per second, $$
+\begin{aligned}
+&\tfrac12 \cdot 2.177 \cdot 10^{-6}\,\tfrac{\text{kg}}{\text{s}} \\
+&\cdot (4.021 \cdot 10^{4}\,\tfrac{\text{m}}{\text{s}})^2 \\
+&= 1.76\,\text{kW}
+\end{aligned}
+$$, as the conservation of energy requires. The $2.5\,\text{kW}$ of the panels is therefore enough for the beam, and the remaining $0.7\,\text{kW}$ goes to ionisation, neutralisation and the other devices of the satellite. The thrust is $F = \tfrac{\Delta m}{\Delta t}\,v$ and the power $P = \tfrac12 \tfrac{\Delta m}{\Delta t}\,v^2$, so $F = \tfrac{2P}{v}$. With a given power a large ion speed gives a small thrust, only $87.5\,\text{mN}$. On the other hand, a large speed means that each kilogram of propellant gives a lot of momentum, so little xenon is used. An ion thruster is not suitable for launch or fast manoeuvres, but for long orbit changes of weeks or months it is good, because it saves tens of kilograms of mass.
 
 ### Yleisiä virheitä
 - In part a the mass of the electron is used as the mass of the ion, or kilovolts are not converted to volts.
@@ -401,4 +501,10 @@
 - In part d a large power is assumed to mean a large thrust.
 
 ### Hyväksytään myös
-- In part b the same result from the forces between the grids: the field exerts the force $eE$ on each ion between the grids, and an ion stays between them for the time $\tfrac{2d}{v}$, so there are $N \cdot \tfrac{2d}{v}$ ions between them at a time and $F = N \cdot \tfrac{2d}{v} \cdot e\tfrac{U}{d} = \tfrac{2UI}{v} \approx 87.5\,\text{mN}$.
+- In part b the same result from the forces between the grids: the field exerts the force $eE$ on each ion between the grids, and an ion stays between them for the time $\tfrac{2d}{v}$, so there are $N \cdot \tfrac{2d}{v}$ ions between them at a time and $$
+\begin{aligned}
+F &= N \cdot \tfrac{2d}{v} \cdot e\tfrac{U}{d} \\
+&= \tfrac{2UI}{v} \\
+&\approx 87.5\,\text{mN}
+\end{aligned}
+$$.

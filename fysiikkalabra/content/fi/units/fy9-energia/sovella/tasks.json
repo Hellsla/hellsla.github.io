@@ -135,7 +135,7 @@
       {
        "key": "calculation",
        "points": 2,
-       "detail": "$E = 9{,}5\\,\\text{MJ}/\\text{kg} \\cdot 42\\,000\\,\\text{kg} = 399\\,000\\,\\text{MJ}$ ja $t = 3600\\,\\text{s}$; tonnit ja tunti muunnettu sijoittamalla."
+       "detail": "$$\n\\begin{aligned}\nE &= 9{,}5\\,\\text{MJ}/\\text{kg} \\cdot 42\\,000\\,\\text{kg} \\\\\n&= 399\\,000\\,\\text{MJ}\n\\end{aligned}\n$$ ja $t = 3600\\,\\text{s}$; tonnit ja tunti muunnettu sijoittamalla."
       },
       {
        "key": "units_precision",
@@ -200,7 +200,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$78{,}9\\,\\text{MW} + 77{,}8\\,\\text{MW} \\approx 157\\,\\text{MW}$ ja massa $m = \\dfrac{P_0\\,t}{H}$"
+       "detail": "$$\n\\begin{aligned}\n&78{,}9\\,\\text{MW} + 77{,}8\\,\\text{MW} \\\\\n&\\approx 157\\,\\text{MW}\n\\end{aligned}\n$$ ja massa $m = \\dfrac{P_0\\,t}{H}$"
       },
       {
        "key": "units_precision",
@@ -321,7 +321,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$E \\approx 93\\,\\text{kWh} + 4{,}9\\,\\text{kWh}/{}^\\circ\\text{C} \\cdot 28\\,{}^\\circ\\text{C} \\approx 230\\,\\text{kWh}$"
+       "detail": "$$\n\\begin{aligned}\nE &\\approx 93\\,\\text{kWh} \\\\\n&+ 4{,}9\\,\\text{kWh}/{}^\\circ\\text{C} \\cdot 28\\,{}^\\circ\\text{C} \\\\\n&\\approx 230\\,\\text{kWh}\n\\end{aligned}\n$$"
       },
       {
        "key": "assumptions",
@@ -381,7 +381,7 @@
      "text": "Arvioi ensimmäinen väite. Perustele vastauksesi laskelmalla.",
      "criteria": [
       {
-       "text": "Laskee tuulivoimaloiden vuoden energian keskitehosta: $2{,}0\\,\\text{MW} \\cdot 0{,}30 \\cdot 8760\\,\\text{h} \\approx 5{,}3\\,\\text{GWh}$, mikä on enemmän kuin $3{,}0\\,\\text{GWh}$.",
+       "text": "Laskee tuulivoimaloiden vuoden energian keskitehosta: $$\n\\begin{aligned}\n&2{,}0\\,\\text{MW} \\cdot 0{,}30 \\cdot 8760\\,\\text{h} \\\\\n&\\approx 5{,}3\\,\\text{GWh}\n\\end{aligned}\n$$, mikä on enemmän kuin $3{,}0\\,\\text{GWh}$.",
        "tag": "math",
        "points": 1
       },
@@ -432,7 +432,7 @@
      "text": "Arvioi toinen väite. Kuinka suuri on dieselvoimalan vuotuinen hiilidioksidipäästö, ja miten sitä verrataan tuulivoiman päästöihin?",
      "criteria": [
       {
-       "text": "Laskee dieselin päästön: $m = e \\cdot E = 700\\,\\text{g}/\\text{kWh} \\cdot 3{,}0 \\cdot 10^{6}\\,\\text{kWh} = 2{,}1 \\cdot 10^{9}\\,\\text{g} = 2100\\,\\text{t}$.",
+       "text": "Laskee dieselin päästön: $$\n\\begin{aligned}\nm &= e \\cdot E \\\\\n&= 700\\,\\text{g}/\\text{kWh} \\cdot 3{,}0 \\\\\n&\\cdot 10^{6}\\,\\text{kWh} \\\\\n&= 2{,}1 \\cdot 10^{9}\\,\\text{g} \\\\\n&= 2100\\,\\text{t}\n\\end{aligned}\n$$.",
        "tag": "math",
        "points": 2
       },
@@ -488,7 +488,7 @@
       {
        "key": "calculation",
        "points": 2,
-       "detail": "$Q = 4190\\,\\text{J}/(\\text{kg} \\cdot \\text{K}) \\cdot 1{,}0\\,\\text{kg} \\cdot 81\\,\\text{K} \\approx 339\\,\\text{kJ}$ ja $E = 2200\\,\\text{W} \\cdot 185\\,\\text{s} = 407\\,\\text{kJ}$"
+       "detail": "$$\n\\begin{aligned}\nQ &= 4190\\,\\text{J}/(\\text{kg} \\cdot \\text{K}) \\cdot 1{,}0\\,\\text{kg} \\\\\n&\\cdot 81\\,\\text{K} \\\\\n&\\approx 339\\,\\text{kJ}\n\\end{aligned}\n$$ ja $E = 2200\\,\\text{W} \\cdot 185\\,\\text{s} = 407\\,\\text{kJ}$"
       },
       {
        "key": "units_precision",

@@ -37,7 +37,15 @@ komponentit G
 ```
 **Kaava:** $y$: $N - mg\cos\alpha = 0$ ja $x$: $T - mg\sin\alpha - \mu N = 0$, joten $T = mg(\sin\alpha + \mu\cos\alpha)$
 **Muunnokset:** Ei tarvita, suureet ovat perusyksiköissä.
-**Sijoitus:** $T = 280\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot (\sin 14^\circ + 0{,}25 \cdot \cos 14^\circ) = 2746{,}8\,\text{N} \cdot (0{,}2419 + 0{,}2426) = 1330{,}8\,\text{N}$
+**Sijoitus:** $$
+\begin{aligned}
+T &= 280\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&\cdot (\sin 14^\circ + 0{,}25 \cdot \cos 14^\circ) \\
+&= 2746{,}8\,\text{N} \\
+&\cdot (0{,}2419 + 0{,}2426) \\
+&= 1330{,}8\,\text{N}
+\end{aligned}
+$$
 **Vastaus:** $T \approx 1{,}3\,\text{kN}$, kaksi merkitsevää numeroa kuten kulmassa $14^\circ$ ja kitkakertoimessa $0{,}25$.
 **Järkevyys:** Painon luiskan suuntainen komponentti on $665\,\text{N}$ ja kitka $666\,\text{N}$, joten vinssi tekee kitkaa vastaan lähes yhtä paljon kuin nostaa venettä. Veto on noin puolet painosta $2{,}7\,\text{kN}$: luiska keventää työtä, mutta kitka syö siitä paljon.
 
@@ -55,7 +63,13 @@ a 0
 ```
 **Kaava:** Vene pysyy, kun $mg\sin\alpha \le \mu_0 mg\cos\alpha$ eli $\tan\alpha \le \mu_0$. Rajakulmalla $\tan\alpha_0 = \mu_0$, joten $\alpha_0 = \arctan\mu_0$
 **Muunnokset:** Ei tarvita. Massa supistuu.
-**Sijoitus:** Tarvittava lepokitka $mg\sin\alpha = 2746{,}8\,\text{N} \cdot \sin 14^\circ = 664{,}5\,\text{N}$ ja yläraja $\mu_0 mg\cos\alpha = 0{,}35 \cdot 2746{,}8\,\text{N} \cdot \cos 14^\circ = 932{,}8\,\text{N}$; rajakulma $\alpha_0 = \arctan 0{,}35 = 19{,}29^\circ$
+**Sijoitus:** Tarvittava lepokitka $mg\sin\alpha = 2746{,}8\,\text{N} \cdot \sin 14^\circ = 664{,}5\,\text{N}$ ja yläraja $$
+\begin{aligned}
+\mu_0 mg\cos\alpha &= 0{,}35 \cdot 2746{,}8\,\text{N} \\
+&\cdot \cos 14^\circ \\
+&= 932{,}8\,\text{N}
+\end{aligned}
+$$; rajakulma $\alpha_0 = \arctan 0{,}35 = 19{,}29^\circ$
 **Vastaus:** Vene pysyy paikallaan, koska $664{,}5\,\text{N} < 932{,}8\,\text{N}$ (yhtä hyvin $\tan 14^\circ \approx 0{,}25 < 0{,}35$). Itsestään se lähtisi liukumaan, jos luiska olisi vähintään noin $19^\circ$:n kulmassa; kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}35$.
 **Järkevyys:** Rajakulma ei riipu massasta, koska sekä alas vievä komponentti että kitkan yläraja ovat verrannollisia massaan. Märkä, liukas tai jäinen lista voi pienentää lepokitkakerrointa, jolloin vene voi lähteä liikkeelle loivemmallakin luiskalla: venettä ei kannata jättää pelkän kitkan varaan.
 
@@ -101,9 +115,21 @@ a oikea
 **Periaate:** Reen B vaakasuorat voimat ovat köyden 2 veto eteenpäin ja kitka taaksepäin. Newtonin toisen lain mukaan niiden summa on $m_\text{B} a$. Pystysuunnassa ei ole kiihtyvyyttä, joten $N_\text{B} = m_\text{B} g$ ja kitka on $\mu m_\text{B} g$ (luku *Liikeyhtälö kytketyille kappaleille*).
 **Kaava:** $T_2 - \mu m_\text{B} g = m_\text{B} a$, joten $T_2 = m_\text{B}(a + \mu g)$
 **Muunnokset:** Ei tarvita, suureet ovat perusyksiköissä.
-**Sijoitus:** $T_2 = 80\,\text{kg} \cdot (0{,}50\,\text{m/s}^2 + 0{,}10 \cdot 9{,}81\,\text{m/s}^2) = 80\,\text{kg} \cdot 1{,}481\,\text{m/s}^2 = 118{,}48\,\text{N}$
+**Sijoitus:** $$
+\begin{aligned}
+T_2 &= 80\,\text{kg} \cdot (0{,}50\,\text{m/s}^2 \\
+&+ 0{,}10 \cdot 9{,}81\,\text{m/s}^2) \\
+&= 80\,\text{kg} \cdot 1{,}481\,\text{m/s}^2 \\
+&= 118{,}48\,\text{N}
+\end{aligned}
+$$
 **Vastaus:** $T_2 \approx 120\,\text{N}$, kaksi merkitsevää numeroa kuten kiihtyvyydessä $0{,}50\,\text{m/s}^2$ ja kitkakertoimessa $0{,}10$.
-**Järkevyys:** B:n kitka on $0{,}10 \cdot 80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 78\,\text{N}$ ja kiihdyttämiseen tarvitaan $80\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 40\,\text{N}$; yhteensä noin $118\,\text{N}$, kuten pitää.
+**Järkevyys:** B:n kitka on $$
+\begin{aligned}
+&0{,}10 \cdot 80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&\approx 78\,\text{N}
+\end{aligned}
+$$ ja kiihdyttämiseen tarvitaan $80\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 40\,\text{N}$; yhteensä noin $118\,\text{N}$, kuten pitää.
 
 ### c)
 **Annettu:** $m_\text{A} = 120\,\text{kg}$, $m_\text{B} = 80\,\text{kg}$, $\mu = 0{,}10$, $a = 0{,}50\,\text{m/s}^2$, b-kohdasta $T_2 = 118{,}48\,\text{N}$, $g = 9{,}81\,\text{m/s}^2$
@@ -111,14 +137,32 @@ a oikea
 **Periaate:** Reen A vaakasuorat voimat ovat köyden 1 veto eteenpäin sekä köyden 2 veto ja kitka taaksepäin, ja niiden summa on $m_\text{A} a$. Saman tuloksen antaa molempien rekien systeemi, jossa köyden 2 voimat ovat sisäisiä ja kumoavat toisensa.
 **Kaava:** $T_1 - T_2 - \mu m_\text{A} g = m_\text{A} a$, joten $T_1 = T_2 + m_\text{A}(a + \mu g) = (m_\text{A} + m_\text{B})(a + \mu g)$
 **Muunnokset:** Ei tarvita, suureet ovat perusyksiköissä.
-**Sijoitus:** $T_1 = 118{,}48\,\text{N} + 120\,\text{kg} \cdot 1{,}481\,\text{m/s}^2 = 118{,}48\,\text{N} + 177{,}72\,\text{N} = 296{,}2\,\text{N}$
+**Sijoitus:** $$
+\begin{aligned}
+T_1 &= 118{,}48\,\text{N} \\
+&+ 120\,\text{kg} \cdot 1{,}481\,\text{m/s}^2 \\
+&= 118{,}48\,\text{N} + 177{,}72\,\text{N} \\
+&= 296{,}2\,\text{N}
+\end{aligned}
+$$
 **Vastaus:** $T_1 \approx 300\,\text{N}$ ($296\,\text{N}$), kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Systeemin tarkistus: $(120 + 80)\,\text{kg} \cdot 1{,}481\,\text{m/s}^2 = 296{,}2\,\text{N}$, sama tulos. Etummainen köysi on kireämpi, koska se kiihdyttää ja vetää molempia rekiä.
+**Järkevyys:** Systeemin tarkistus: $$
+\begin{aligned}
+&(120 + 80)\,\text{kg} \cdot 1{,}481\,\text{m/s}^2 \\
+&= 296{,}2\,\text{N}
+\end{aligned}
+$$, sama tulos. Etummainen köysi on kireämpi, koska se kiihdyttää ja vetää molempia rekiä.
 
 ### d)
 **Kysytty:** pitääkö väite ”takimmaisen köyden voima on puolet etummaisen voimasta” paikkansa
 **Periaate:** Kumpikin köysi vetää kaikkia niitä rekiä, jotka ovat sen takana. Kun kitkakerroin on sama, jokainen reki tarvitsee vetoa $m(a + \mu g)$, eli vedon tarve on verrannollinen massaan.
-**Mallivastaus:** Väite ei pidä. Köysi 2 vetää vain rekeä B, köysi 1 molempia rekiä. b- ja c-kohdan tuloksista $T_2 : T_1 = 118\,\text{N} : 296\,\text{N} = 0{,}40$, mikä on sama kuin massojen suhde $80\,\text{kg} : 200\,\text{kg}$. Suhde riippuu siis rekien massoista, ei niiden lukumäärästä. Puolet se olisi vain, jos reet olisivat yhtä raskaat ja niillä olisi sama kitkakerroin.
+**Mallivastaus:** Väite ei pidä. Köysi 2 vetää vain rekeä B, köysi 1 molempia rekiä. b- ja c-kohdan tuloksista $$
+\begin{aligned}
+&T_2 : T_1 \\
+&= 118\,\text{N} : 296\,\text{N} \\
+&= 0{,}40
+\end{aligned}
+$$, mikä on sama kuin massojen suhde $80\,\text{kg} : 200\,\text{kg}$. Suhde riippuu siis rekien massoista, ei niiden lukumäärästä. Puolet se olisi vain, jos reet olisivat yhtä raskaat ja niillä olisi sama kitkakerroin.
 
 ### Yleisiä virheitä
 - Molemmat reet piirretään yhteen kuvioon, tai kelkan voima piirretään suoraan rekeen B.
@@ -239,7 +283,12 @@ Vaakasuunnan liikeyhtälö kuviosta on $T - F_\mu = ma$, sama kuin b-kohdan suor
 **Kaava:** $\mu = \dfrac{F_\mu}{N} = \dfrac{F_\mu}{mg}$; lisäpunnuksella $m' = m + m_\text{x}$, suoran kulmakerroin on $k' = \dfrac{1}{m'}$ ja leikkauskohta vaaka-akselilla $F_0' = \mu m' g$
 **Muunnokset:** Ei tarvita, suureet ovat perusyksiköissä.
 **Sijoitus:** $\mu = \dfrac{0{,}238\,\text{N}}{0{,}851\,\text{kg} \cdot 9{,}81\,\text{m/s}^2} = \dfrac{0{,}238\,\text{N}}{8{,}35\,\text{N}} = 0{,}0285$
-**Vastaus:** $\mu \approx 0{,}029$, kaksi merkitsevää numeroa kuten $F_\mu$; kertoimella ei ole yksikköä. Lisäpunnuksella massa on $1{,}351\,\text{kg}$: suora loivenee, kulmakerroin $\tfrac{1}{1{,}351\,\text{kg}} \approx 0{,}74\,\tfrac{1}{\text{kg}}$, ja leikkauskohta siirtyy oikealle, kohtaan $0{,}029 \cdot 1{,}351\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 0{,}38\,\text{N}$.
+**Vastaus:** $\mu \approx 0{,}029$, kaksi merkitsevää numeroa kuten $F_\mu$; kertoimella ei ole yksikköä. Lisäpunnuksella massa on $1{,}351\,\text{kg}$: suora loivenee, kulmakerroin $\tfrac{1}{1{,}351\,\text{kg}} \approx 0{,}74\,\tfrac{1}{\text{kg}}$, ja leikkauskohta siirtyy oikealle, kohtaan $$
+\begin{aligned}
+&0{,}029 \cdot 1{,}351\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
+&\approx 0{,}38\,\text{N}
+\end{aligned}
+$$.
 **Järkevyys:** Pyörillä kulkevan vaunun vierimisvastus on paljon pienempi kuin liukuvan kappaleen kitka, jonka kerroin on tyypillisesti $0{,}2\text{–}0{,}6$, joten $0{,}03$ on uskottava. Ennuste perustuu malliin, jossa kitka ei riipu nopeudesta; se kannattaa tarkistaa toistamalla mittaus punnuksen kanssa.
 
 ### Yleisiä virheitä
@@ -282,7 +331,12 @@ v oikea
 ### d)
 **Kysytty:** suurin tien antama kiihtyvyys asfaltilla ja jäällä sekä miksi etuvetoisella autolla se on pienempi
 **Periaate:** Kiihdyttävä voima on tien lepokitka, joka on enintään $\mu_0 N$. Jos kaikki pyörät vetävät, tukivoima on koko auton paino, $N = mg$.
-**Mallivastaus:** Suurin kiihdyttävä voima on $\mu_0 mg$, joten $ma_\text{max} = \mu_0 mg$ ja $a_\text{max} = \mu_0 g$; massa supistuu. Asfaltilla $a_\text{max} \approx 0{,}8 \cdot 9{,}81\,\text{m/s}^2 \approx 8\,\text{m/s}^2$ ja jäällä $0{,}1 \cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, kun vastukset jätetään huomiotta. Etuvetoisessa autossa eteenpäin vievä lepokitka vaikuttaa vain vetäviin etupyöriin, ja niiden tukivoima on vain osa auton painosta, esimerkiksi noin puolet. Silloin suurin kiihdyttävä voima on $\mu_0 N_\text{etu} < \mu_0 mg$, ja suurin kiihtyvyys on pienempi. Jäällä etuvetoinen auto voi siis kiihtyä enintään alle $1\,\text{m/s}^2$.
+**Mallivastaus:** Suurin kiihdyttävä voima on $\mu_0 mg$, joten $ma_\text{max} = \mu_0 mg$ ja $a_\text{max} = \mu_0 g$; massa supistuu. Asfaltilla $$
+\begin{aligned}
+a_\text{max} &\approx 0{,}8 \cdot 9{,}81\,\text{m/s}^2 \\
+&\approx 8\,\text{m/s}^2
+\end{aligned}
+$$ ja jäällä $0{,}1 \cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, kun vastukset jätetään huomiotta. Etuvetoisessa autossa eteenpäin vievä lepokitka vaikuttaa vain vetäviin etupyöriin, ja niiden tukivoima on vain osa auton painosta, esimerkiksi noin puolet. Silloin suurin kiihdyttävä voima on $\mu_0 N_\text{etu} < \mu_0 mg$, ja suurin kiihtyvyys on pienempi. Jäällä etuvetoinen auto voi siis kiihtyä enintään alle $1\,\text{m/s}^2$.
 
 ### Yleisiä virheitä
 - Kävelijää tai autoa ”työntävät” lihakset tai moottori, eli sisäinen voima esitetään ulkoisena.
@@ -350,7 +404,15 @@ komponentit G
 ```
 **Kaava:** $y$: $N = mg\cos\alpha$; $x$: $mg\sin\alpha - \mu mg\cos\alpha = ma_1$, joten $a_1 = g(\sin\alpha - \mu\cos\alpha)$. Levosta lähtevälle $v^2 = 2a_1 L$, joten $v = \sqrt{2gL(\sin\alpha - \mu\cos\alpha)}$
 **Muunnokset:** Ei tarvita, suureet ovat perusyksiköissä.
-**Sijoitus:** $a_1 = 9{,}81\,\text{m/s}^2 \cdot (\sin 12^\circ - 0{,}080 \cdot \cos 12^\circ) = 9{,}81\,\text{m/s}^2 \cdot (0{,}2079 - 0{,}0783) = 1{,}272\,\text{m/s}^2$ ja $v = \sqrt{2 \cdot 1{,}272\,\text{m/s}^2 \cdot 40\,\text{m}} = \sqrt{101{,}76\,\text{m}^2/\text{s}^2} = 10{,}09\,\text{m/s}$
+**Sijoitus:** $$
+\begin{aligned}
+a_1 &= 9{,}81\,\text{m/s}^2 \\
+&\cdot (\sin 12^\circ - 0{,}080 \cdot \cos 12^\circ) \\
+&= 9{,}81\,\text{m/s}^2 \\
+&\cdot (0{,}2079 - 0{,}0783) \\
+&= 1{,}272\,\text{m/s}^2
+\end{aligned}
+$$ ja $v = \sqrt{2 \cdot 1{,}272\,\text{m/s}^2 \cdot 40\,\text{m}} = \sqrt{101{,}76\,\text{m}^2/\text{s}^2} = 10{,}09\,\text{m/s}$
 **Vastaus:** $v \approx 10\,\text{m/s}$, kaksi merkitsevää numeroa kuten rinteen pituudessa $40\,\text{m}$.
 **Järkevyys:** $10{,}09\,\text{m/s} = 10{,}09 \cdot 3{,}6\,\text{km/h} \approx 36\,\text{km/h}$, liukurille nopea mutta mahdollinen. Lasku kestää $t = v : a_1 \approx 7{,}9\,\text{s}$. Ilman kitkaa nopeus olisi $\sqrt{2gL\sin\alpha} \approx 12{,}8\,\text{m/s}$, joten kitka pienentää sitä selvästi.
 
@@ -371,7 +433,9 @@ v oikea
 **Muunnokset:** Ei tarvita, suureet ovat perusyksiköissä.
 **Sijoitus:** $s_2 = \dfrac{101{,}76\,\text{m}^2/\text{s}^2}{2 \cdot 0{,}080 \cdot 9{,}81\,\text{m/s}^2} = \dfrac{101{,}76\,\text{m}^2/\text{s}^2}{1{,}5696\,\text{m/s}^2} = 64{,}83\,\text{m}$
 **Vastaus:** $s_2 \approx 65\,\text{m}$, kaksi merkitsevää numeroa kuten rinteen pituudessa ja kitkakertoimessa.
-**Järkevyys:** Pellolla hidastuvuus $0{,}785\,\text{m/s}^2$ on pienempi kuin rinteen kiihtyvyys $1{,}272\,\text{m/s}^2$, joten pysähtymismatka on rinnettä pidempi samassa suhteessa: $40\,\text{m} \cdot 1{,}272 : 0{,}785 \approx 65\,\text{m}$. Matka on tamppautuneella lumella pitkä mutta mahdollinen.
+**Järkevyys:** Pellolla hidastuvuus $0{,}785\,\text{m/s}^2$ on pienempi kuin rinteen kiihtyvyys $1{,}272\,\text{m/s}^2$, joten pysähtymismatka on rinnettä pidempi samassa suhteessa: $$
+40\,\text{m} \cdot 1{,}272 : 0{,}785 \approx 65\,\text{m}
+$$. Matka on tamppautuneella lumella pitkä mutta mahdollinen.
 
 ### c)
 **Kysytty:** liukuuko raskas isä pidemmälle kuin kevyet lapset mallissa ja kun ilmanvastus otetaan huomioon

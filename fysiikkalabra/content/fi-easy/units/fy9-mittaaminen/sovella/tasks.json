@@ -195,7 +195,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "Pituudet metreinä sijoittamalla: $210\\,\\text{mm} = 210 \\cdot 0{,}001\\,\\text{m} = 0{,}210\\,\\text{m}$. Massa grammoina."
+              "detail": "Pituudet metreinä sijoittamalla: $$\n\\begin{aligned}\n&210\\,\\text{mm} \\\\\n&= 210 \\cdot 0{,}001\\,\\text{m} \\\\\n&= 0{,}210\\,\\text{m}\n\\end{aligned}\n$$. Massa grammoina."
             },
             {
               "key": "calculation",
@@ -409,7 +409,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$m = \\rho V$ ilman mittalasin massaa: $0{,}919\\,\\text{g/cm}^3 \\cdot 1500\\,\\text{cm}^3 \\approx 1380\\,\\text{g}$."
+              "detail": "$m = \\rho V$ ilman mittalasin massaa: $$\n\\begin{aligned}\n&0{,}919\\,\\text{g/cm}^3 \\cdot 1500\\,\\text{cm}^3 \\\\\n&\\approx 1380\\,\\text{g}\n\\end{aligned}\n$$."
             },
             {
               "key": "units_precision",
@@ -546,7 +546,7 @@
       "title": "Leluauton nopeus videolta",
       "source": "example",
       "source_note": "Keksitty esimerkkiaineisto: luvut on laskettu mallista. Niihin on lisätty pientä satunnaista vaihtelua, kuten oikeassa mittauksessa.",
-      "text": "Ryhmä kuvasi puhelimella leluautoa. Auto kulki suoraan tasaisella lattialla. Lattiaan oli teipattu mittanauha. Videoanalyysiohjelmaan asetettiin mittakaavaksi mittanauhan $1{,}00\\,\\text{m}$:n väli. Auton etupää merkittiin kuviin puolen sekunnin välein. Ajanotto alkoi, kun auto oli jo liikkeessä.\n\n| $t\\ (\\text{s})$ | $x\\ (\\text{m})$ |\n|---|---|\n| $0{,}0$ | $0{,}35$ |\n| $0{,}5$ | $0{,}61$ |\n| $1{,}0$ | $0{,}83$ |\n| $1{,}5$ | $1{,}32$ |\n| $2{,}0$ | $1{,}30$ |\n| $2{,}5$ | $1{,}57$ |\n| $3{,}0$ | $1{,}78$ |\n\nOte ryhmän raportista:\n\n> Yhdistimme pisteet kuvaajassa viivalla. Poistimme pisteen $t = 1{,}5\\,\\text{s}$, koska se ei osunut muiden kanssa samalle viivalle. Laskimme nopeuden kahdesta viimeisestä pisteestä: $(1{,}78\\,\\text{m} - 1{,}57\\,\\text{m}) : 0{,}5\\,\\text{s} = 0{,}42\\,\\text{m/s}$. Koska tulos tuntui pieneltä, sovitimme vielä origon kautta kulkevan suoran, jonka kulmakerroin oli $0{,}6341\\,\\text{m/s}$. Johtopäätös: leluauton nopeus on $0{,}6341\\,\\text{m/s}$.",
+      "text": "Ryhmä kuvasi puhelimella leluautoa. Auto kulki suoraan tasaisella lattialla. Lattiaan oli teipattu mittanauha. Videoanalyysiohjelmaan asetettiin mittakaavaksi mittanauhan $1{,}00\\,\\text{m}$:n väli. Auton etupää merkittiin kuviin puolen sekunnin välein. Ajanotto alkoi, kun auto oli jo liikkeessä.\n\n| $t\\ (\\text{s})$ | $x\\ (\\text{m})$ |\n|---|---|\n| $0{,}0$ | $0{,}35$ |\n| $0{,}5$ | $0{,}61$ |\n| $1{,}0$ | $0{,}83$ |\n| $1{,}5$ | $1{,}32$ |\n| $2{,}0$ | $1{,}30$ |\n| $2{,}5$ | $1{,}57$ |\n| $3{,}0$ | $1{,}78$ |\n\nOte ryhmän raportista:\n\n> Yhdistimme pisteet kuvaajassa viivalla. Poistimme pisteen $t = 1{,}5\\,\\text{s}$, koska se ei osunut muiden kanssa samalle viivalle. Laskimme nopeuden kahdesta viimeisestä pisteestä: $$\n\\begin{aligned}\n&(1{,}78\\,\\text{m} - 1{,}57\\,\\text{m}) : 0{,}5\\,\\text{s} \\\\\n&= 0{,}42\\,\\text{m/s}\n\\end{aligned}\n$$. Koska tulos tuntui pieneltä, sovitimme vielä origon kautta kulkevan suoran, jonka kulmakerroin oli $0{,}6341\\,\\text{m/s}$. Johtopäätös: leluauton nopeus on $0{,}6341\\,\\text{m/s}$.",
       "parts": [
         {
           "id": "a",
@@ -757,7 +757,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$1\\,\\text{MPa} \\cdot \\text{ml} = 10^{6}\\,\\text{Pa} \\cdot 10^{-6}\\,\\text{m}^3 = 1\\,\\text{J}$ ja $T = 295{,}15\\,\\text{K}$."
+              "detail": "$$\n\\begin{aligned}\n&1\\,\\text{MPa} \\cdot \\text{ml} \\\\\n&= 10^{6}\\,\\text{Pa} \\cdot 10^{-6}\\,\\text{m}^3 \\\\\n&= 1\\,\\text{J}\n\\end{aligned}\n$$ ja $T = 295{,}15\\,\\text{K}$."
             },
             {
               "key": "calculation",

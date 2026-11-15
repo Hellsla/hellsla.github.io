@@ -1,13 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 2d27b5a5e0730863
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-
+CONTENT-HASH: 8a1254cb5510ecf5
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Esimerkkimittarin liittimet; mittarit eroavat, tarkista merkinnät; ei virtamittaria jännitelähteen napojen rinnalle; koulussa turvalliset pienjännitelähteet (= fi).
-- Diff since origin/main compared sentence by sentence with the Finnish source change; content hash checked at start and end.
+batch delta review: "virhe-arvio" to "virhearvio" in lesson.md (Kaava paragraph and the worked example's Tulos stage) and the inquiry numeric solution is a spelling fix only; the term still means the rounding of an uncertainty estimate and matches how the chapter uses virheraja and the measurement guardrails; recomputed 0,005 · 0,846 V + 2 · 0,001 V = 6,23 mV, giving 6 mV; no number, symbol or choice changed.

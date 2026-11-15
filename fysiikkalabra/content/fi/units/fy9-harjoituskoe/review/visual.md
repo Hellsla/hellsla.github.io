@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b042fabb2e261987
-Delta review (reworded extra-answers sentence, fi, 2026-11-14) of the version passed at 1c760d7d1d71cc80.
+CONTENT-HASH: 73d50e4357f16e80
 
 ## Blocking
-- none
+- (none)
 
 ## Polish
-- [Minor] "ne vastaukset, joiden pistesumma on pienin" is slightly clumsy; "pienimmän pistemäärän saaneet vastaukset" reads more naturally.
+- [Minor] Kaikissa yksiköissä: "Opiskelija laski: ”" -esimerkeissä sulkeva ”. alkaa omalta riviltä kaavan jälkeen; hyväksyttävä, mutta siirrettävissä kaavan viimeiseen riviin.
 
 ## Checked
-- Source-level read of the changed sentence in the scoring paragraph: clear, $120$ p in LaTeX, repetition of "ne ... joiden pistesumma on pienin" aside fluent; no layout effect. The figure did not change in this unit; no captures needed.
+- batch delta review 5d: reflow-*.png (1 sheets, all opened at 360 px); kaavat luettavissa ja täysin näkyvissä, relaatiot samassa sarakkeessa, ei vaakavieritystä.

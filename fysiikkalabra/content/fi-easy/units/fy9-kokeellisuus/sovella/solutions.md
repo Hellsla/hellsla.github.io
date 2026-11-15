@@ -51,7 +51,12 @@ Myös jousivaa'an nollakohta tarkistetaan ennen mittausta vaa'an omassa mittausa
 ### b)
 **Kysytty:** miten ominaislämpökapasiteetti saadaan $(t, T)$-kuvaajasta
 **Periaate:** Kun häviöt ovat pienet, $P\,\Delta t = cm\,\Delta T$, joten lämpötila nousee tasaisesti ja $(t, T)$-kuvaaja on suora, jonka kulmakerroin on $k = \tfrac{\Delta T}{\Delta t} = \tfrac{P}{cm}$.
-**Mallivastaus:** Piirrän $(t, T)$-kuvaajan: aika vaaka-akselille ja lämpötila pystyakselille. Alussa pisteet ovat suoralla, ja niihin sovitan suoran. Kulmakertoimen luen suoran kahdesta kaukana toisistaan olevasta pisteestä. Sitten $c = \tfrac{P}{mk}$. Esimerkiksi kulmakertoimella $0{,}125\,\text{K/s}$ saataisiin $c = \tfrac{50\,\text{W}}{0{,}200\,\text{kg} \cdot 0{,}125\,\text{K/s}} = 2{,}0\,\text{kJ/(kg}\cdot\text{K)}$.
+**Mallivastaus:** Piirrän $(t, T)$-kuvaajan: aika vaaka-akselille ja lämpötila pystyakselille. Alussa pisteet ovat suoralla, ja niihin sovitan suoran. Kulmakertoimen luen suoran kahdesta kaukana toisistaan olevasta pisteestä. Sitten $c = \tfrac{P}{mk}$. Esimerkiksi kulmakertoimella $0{,}125\,\text{K/s}$ saataisiin $$
+\begin{aligned}
+c &= \tfrac{50\,\text{W}}{0{,}200\,\text{kg} \cdot 0{,}125\,\text{K/s}} \\
+&= 2{,}0\,\text{kJ/(kg}\cdot\text{K)}
+\end{aligned}
+$$.
 
 Käytän kuvaajan alkuosaa. Kun öljy lämpenee ympäristöä lämpimämmäksi, lämpöä siirtyy yhä enemmän ympäristöön. Silloin kuvaaja kaartuu ja muuttuu loivemmaksi. Kulmakerroin on parempi kuin pelkkä alkulukema ja loppulukema, koska kaikki pisteet vaikuttavat tulokseen.
 
@@ -196,7 +201,9 @@ Pudotan pallon esimerkiksi viideltä korkeudelta $0{,}5\text{–}3{,}0\,\text{m}
 **Muunnokset:** Ei tarvita: pituus on metreinä ja $T^2$ yksikössä $\text{s}^2$.
 **Sijoitus:** $k = \dfrac{4{,}12\,\text{s}^2 - 0{,}91\,\text{s}^2}{1{,}000\,\text{m} - 0{,}200\,\text{m}} = \dfrac{3{,}21\,\text{s}^2}{0{,}800\,\text{m}} = 4{,}013\,\text{s}^2/\text{m}$ ja $g = \dfrac{4\pi^2}{4{,}013\,\text{s}^2/\text{m}} = 9{,}839\,\text{m/s}^2$
 **Vastaus:** $g \approx 9{,}8\,\text{m/s}^2$. Kaksi merkitsevää numeroa, koska kulmakerroin luetaan piirretystä suorasta noin $\pm 0{,}1\,\text{s}^2/\text{m}$:n tarkkuudella (d-kohta).
-**Järkevyys:** Tulos on lähellä taulukkoarvoa $9{,}81\,\text{m/s}^2$. Tarkistus: metrin heilurin jaksonaika olisi $2\pi\sqrt{1{,}0\,\text{m} : 9{,}8\,\text{m/s}^2} \approx 2{,}0\,\text{s}$, ja mitattu $T$ on $1{,}000\,\text{m}$:n kohdalla $2{,}03\,\text{s}$, mikä sopii, koska todellinen pituus on hieman mitattua suurempi.
+**Järkevyys:** Tulos on lähellä taulukkoarvoa $9{,}81\,\text{m/s}^2$. Tarkistus: metrin heilurin jaksonaika olisi $$
+2\pi\sqrt{1{,}0\,\text{m} : 9{,}8\,\text{m/s}^2} \approx 2{,}0\,\text{s}
+$$, ja mitattu $T$ on $1{,}000\,\text{m}$:n kohdalla $2{,}03\,\text{s}$, mikä sopii, koska todellinen pituus on hieman mitattua suurempi.
 
 ### c)
 **Annettu:** a-kohdan suora, b-kohdan kulmakerroin $k = 4{,}013\,\text{s}^2/\text{m}$; pituus mitattiin kuulan yläpintaan
@@ -274,7 +281,12 @@ Tilavuuden epävarmuutta pienennetään kapeammalla mittalasilla, jonka asteikko
 
 ### Hyväksytään myös
 - a-kohdan vastaukseksi $2{,}7 \cdot 10^3\,\text{kg/m}^3$ tai $2{,}68\,\text{g/cm}^3$, kun yksikkö on oikein.
-- b-kohdassa epävarmuuden voi laskea myös suhteellisista epävarmuuksista: $\tfrac{\Delta\rho}{\rho} \approx 0{,}05\,\% + 2{,}9\,\% \approx 2{,}9\,\%$, jolloin $\Delta\rho \approx 80\,\text{kg/m}^3$.
+- b-kohdassa epävarmuuden voi laskea myös suhteellisista epävarmuuksista: $$
+\begin{aligned}
+\tfrac{\Delta\rho}{\rho} &\approx 0{,}05\,\% + 2{,}9\,\% \\
+&\approx 2{,}9\,\%
+\end{aligned}
+$$, jolloin $\Delta\rho \approx 80\,\text{kg/m}^3$.
 
 ## fy9-kokeellisuus-s6
 
@@ -347,7 +359,14 @@ Oletuksen voi testata piirtämällä $(v^2, s)$-kuvaajan. Jos oletus pitää, pi
 
 **Mallivastaus:** Pisteet ovat lähellä origon kautta kulkevaa suoraa, joten vakiohidastuvuuden oletus saa tukea. Suora piirretään origon kautta, koska nollanopeudella jarrutusmatka on nolla. Suoralta luetaan kaukainen piste $(60\,\text{m}^2/\text{s}^2;\ 7{,}2\,\text{m})$, joten kulmakerroin on $k = \tfrac{7{,}2\,\text{m}}{60\,\text{m}^2/\text{s}^2} = 0{,}12\,\text{s}^2/\text{m}$. Koska $s = \tfrac{1}{2a}\, v^2$, kulmakerroin on $k = \tfrac{1}{2a}$ ja hidastuvuus
 
-$a = \tfrac{1}{2k} = \tfrac{1}{2 \cdot 0{,}12\,\text{s}^2/\text{m}} = 4{,}167\,\text{m/s}^2 \approx 4{,}2\,\text{m/s}^2$,
+$$
+\begin{aligned}
+a &= \tfrac{1}{2k} \\
+&= \tfrac{1}{2 \cdot 0{,}12\,\text{s}^2/\text{m}} \\
+&= 4{,}167\,\text{m/s}^2 \\
+&\approx 4{,}2\,\text{m/s}^2
+\end{aligned}
+$$,
 
 kaksi merkitsevää numeroa kuten jarrutusmatkoissa ja kulmakertoimessa.
 

@@ -76,8 +76,8 @@
 **Kaava:** $I_\text{k} + I_\text{a} = I_\text{p}$ ja $I_\text{k} = \dfrac{P_\text{k}}{3U}$, joten $I_\text{a} = I_\text{p} - \dfrac{P_\text{k}}{3U}$, missä $I_\text{p} = 25\,\text{A}$
 **Muunnokset:** $P_\text{k} = 9{,}0\,\text{kW} = 9000\,\text{W}$
 **Sijoitus:** $I_\text{a} = 25\,\text{A} - \dfrac{9000\,\text{W}}{3 \cdot 230\,\text{V}} = 25\,\text{A} - 13{,}04\,\text{A} = 11{,}96\,\text{A}$
-**Vastaus:** $12\,\text{A}$, kaksi merkitsevää numeroa kuten pääsulakkeen virrassa $25\,\text{A}$.
-**Järkevyys:** Kiuas ja auto yhdessä ottavat silloin $13\,\text{A} + 12\,\text{A} = 25\,\text{A}$ jokaisesta vaiheesta. Auton teho on noin $3 \cdot 230\,\text{V} \cdot 12\,\text{A} \approx 8{,}3\,\text{kW}$, vähemmän kuin aseman $11\,\text{kW}$, joten kuormanhallinnan pitää pienentää latausta saunan ajaksi.
+**Vastaus:** $11\,\text{A}$, kaksi merkitsevää numeroa kuten pääsulakkeen virrassa $25\,\text{A}$. Virta saa olla enintään $11{,}96\,\text{A}$, joten raja-arvo pyöristetään alaspäin: $12\,\text{A}$ ylittäisi pääsulakkeen virran.
+**Järkevyys:** Kiuas ja auto yhdessä ottavat silloin $13{,}0\,\text{A} + 11\,\text{A} = 24\,\text{A}$ jokaisesta vaiheesta, juuri alle $25\,\text{A}$. Auton teho on noin $3 \cdot 230\,\text{V} \cdot 11\,\text{A} \approx 7{,}6\,\text{kW}$, vähemmän kuin aseman $11\,\text{kW}$, joten kuormanhallinnan pitää pienentää latausta saunan ajaksi.
 
 ## fy6-16-L2-04
 **Annettu:** kaapelin pituus $l = 30\,\text{m}$, poikkipinta-ala $A = 2{,}5\,\text{mm}^2$, virta $I = 16\,\text{A}$, $\rho = 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m}$
@@ -106,7 +106,7 @@
 **Kaava:** $P = RI^2$, joten $\dfrac{P_2}{P_1} = \dfrac{R I_2^2}{R I_1^2} = \left(\dfrac{I_2}{I_1}\right)^2$ ja kasvu on $\dfrac{P_2}{P_1} - 1$
 **Muunnokset:** Ei tarvita: ampeerit supistuvat. Kasvu muunnetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** $\dfrac{P_2}{P_1} = \left(\dfrac{16\,\text{A}}{10\,\text{A}}\right)^2 = 1{,}6^2 = 2{,}56$, joten kasvu on $2{,}56 - 1 = 1{,}56 = 156\,\%$
-**Vastaus:** $156\,\%$; $10\,\text{A}$ ja $16\,\text{A}$ ovat latauslaitteen tarkat asetukset, joten $156\,\%$ annetaan sellaisena kuin se laskettiin.
+**Vastaus:** $1{,}6 \cdot 10^{2}\,\%$ (laskettu $156\,\%$), kaksi merkitsevää numeroa kuten virroissa $10\,\text{A}$ ja $16\,\text{A}$.
 **Järkevyys:** Virta kasvaa $60\,\%$, mutta teho yli kaksinkertaistuu, koska virta on neliössä. Jos virta kaksinkertaistuisi, teho nelinkertaistuisi eli kasvaisi $300\,\%$; $156\,\%$ on sopivasti $60\,\%$:n ja $300\,\%$:n välissä.
 
 ## fy6-16-L3-03
@@ -116,7 +116,7 @@
 **Kaava:** $\eta \cdot 3UI \cdot t = W_\text{akku}$, joten $I = \dfrac{W_\text{akku}}{3 \eta U t}$
 **Muunnokset:** $t = 7.00 - 22.00 = 9{,}0\,\text{h}$; $W_\text{akku} = 40\,\text{kWh} = 40\,000\,\text{Wh}$, jotta tulos saadaan ampeereina; $\eta = 0{,}90$
 **Sijoitus:** $I = \dfrac{40\,000\,\text{Wh}}{3 \cdot 0{,}90 \cdot 230\,\text{V} \cdot 9{,}0\,\text{h}} = \dfrac{40\,000\,\text{Wh}}{5589\,\text{Vh}} = 7{,}157\,\text{A}$
-**Vastaus:** $7{,}2\,\text{A}$, kaksi merkitsevää numeroa kuten energiassa $40\,\text{kWh}$ ja hyötysuhteessa $90\,\%$.
+**Vastaus:** $7{,}2\,\text{A}$, kaksi merkitsevää numeroa kuten energiassa $40\,\text{kWh}$ ja hyötysuhteessa $90\,\%$. Virran on oltava vähintään laskettu arvo, joten raja-arvo pyöristetään ylöspäin.
 **Järkevyys:** Verkosta otetaan $40\,\text{kWh} : 0{,}90 \approx 44\,\text{kWh}$, mikä yhdeksässä tunnissa vaatii noin $4{,}9\,\text{kW}$; $4900\,\text{W} : 690\,\text{V} \approx 7\,\text{A}$. Virta on alle puolet aseman $16\,\text{A}$:stä, joten hidas yölataus jättää tilaa saunalle ja muille kuormille.
 
 ## fy6-16-L1-06
@@ -152,12 +152,12 @@
 **Kaava:** $P_\text{max} = 3UI_\text{p}$ ja $P_\text{talo} + P_\text{a} \le P_\text{max}$, joten $P_\text{a} = 3UI_\text{p} - P_\text{talo}$, missä $I_\text{p} = 25\,\text{A}$
 **Muunnokset:** $3UI_\text{p}$ lasketaan watteina ja muunnetaan kilowateiksi: $17\,250\,\text{W} = 17{,}25\,\text{kW}$.
 **Sijoitus:** $P_\text{max} = 3 \cdot 230\,\text{V} \cdot 25\,\text{A} = 17\,250\,\text{W} = 17{,}25\,\text{kW}$, joten $P_\text{a} = 17{,}25\,\text{kW} - 6{,}8\,\text{kW} = 10{,}45\,\text{kW}$
-**Vastaus:** Vastauslaatikkoon $10{,}5\,\text{kW}$, yksi desimaali kuten taulukon tehoissa. a) Huipputeho on kello $19\text{–}20$.
+**Vastaus:** Vastauslaatikkoon $10{,}4\,\text{kW}$, yksi desimaali kuten taulukon tehoissa. Teho saa olla enintään $10{,}45\,\text{kW}$, joten raja-arvo pyöristetään alaspäin. a) Huipputeho on kello $19\text{–}20$.
 
-b) Aseman teho saa olla huipun aikana enintään $10{,}5\,\text{kW}$.
+b) Aseman teho saa olla huipun aikana enintään $10{,}4\,\text{kW}$.
 
 c) Asema saa käyttää täyttä tehoa $11\,\text{kW}$, kun talon teho on enintään $17{,}25\,\text{kW} - 11\,\text{kW} = 6{,}25\,\text{kW}$. Taulukossa vain kello $19\text{–}20$ ylittää tämän ($6{,}8\,\text{kW}$), joten muina tunteina kuormanhallintaa ei tarvita tämän oletuksen mukaan (talon teho pysyy tunnin ajan taulukon arvossa), mutta kello $19\text{–}20$ asemaa pitää rajoittaa. Todellisuudessa tunnin sisäiset huiput voivat vaatia kuormanhallintaa.
-**Järkevyys:** Virta huipun aikana: talo $6800\,\text{W} : 690\,\text{V} \approx 9{,}9\,\text{A}$ ja asema $10\,450\,\text{W} : 690\,\text{V} \approx 15{,}1\,\text{A}$ jokaisessa vaiheessa, yhteensä $25{,}0\,\text{A}$ eli täsmälleen pääsulakkeen raja. Tulos on pienempi kuin aseman $11\,\text{kW}$, kuten huipun aikana pitääkin.
+**Järkevyys:** Virta huipun aikana: talo $6800\,\text{W} : 690\,\text{V} \approx 9{,}9\,\text{A}$ ja asema $10\,400\,\text{W} : 690\,\text{V} \approx 15{,}1\,\text{A}$ jokaisessa vaiheessa, yhteensä noin $24{,}9\,\text{A}$ eli juuri pääsulakkeen rajan alla. Tulos on pienempi kuin aseman $11\,\text{kW}$, kuten huipun aikana pitääkin.
 
 ## fy6-16-L2-06
 **Annettu:** akun energia $60\,\text{kWh}$, varaustaso $20\,\% \to 80\,\%$, verkosta otettu teho $P = 7{,}4\,\text{kW}$, $\eta = 92\,\%$
@@ -224,9 +224,9 @@ eli $t \approx 11\,\text{h}$. Häviöt pidentävät latausta, joten kumpikin on 
 **Kaava:** $W_\text{verkko} = \dfrac{s}{100\,\text{km}} \cdot \dfrac{w}{\eta}$, $K_\text{s} = a W_\text{verkko}$, $K_\text{b} = \dfrac{s}{100\,\text{km}} \cdot v b$ ja $\Delta K = K_\text{b} - K_\text{s}$, missä $w = 16{,}0\,\text{kWh}$ ja $v = 6{,}50\,\textsf{l}$
 **Muunnokset:** $a_\text{koti} = 15\,\text{snt/kWh} = 0{,}15\,\text{€/kWh}$ ja $\eta = 0{,}900$
 **Sijoitus:** Kuukausimatkojen summa on $s = 14\,640\,\text{km}$, joten $s : 100\,\text{km} = 146{,}4$. Sähköauto: $W_\text{verkko} = 146{,}4 \cdot 16{,}0\,\text{kWh} : 0{,}900 = 2602{,}7\,\text{kWh}$ ja $K_\text{s} = 0{,}15\,\text{€/kWh} \cdot 2602{,}7\,\text{kWh} = 390{,}4\,\text{€}$. Bensiiniauto: $K_\text{b} = 146{,}4 \cdot 6{,}50\,\textsf{l} \cdot 1{,}85\,\text{€/}\textsf{l} = 1760{,}5\,\text{€}$. Erotus on $\Delta K = 1760{,}5\,\text{€} - 390{,}4\,\text{€} = 1370{,}1\,\text{€}$.
-**Vastaus:** Vastauslaatikkoon $1370\,\text{€}$ eli pyöristettynä kymmeneen euroon, koska sähkön kustannus $390\,\text{€}$ on kahden merkitsevän numeron tarkkuudella. a) Vuosittainen ajomatka on $14\,640\,\text{km}$.
+**Vastaus:** Vastauslaatikkoon $1{,}37 \cdot 10^{3}\,\text{€}$ eli pyöristettynä kymmeneen euroon, koska sähkön kustannus $390\,\text{€}$ on kahden merkitsevän numeron tarkkuudella. a) Vuosittainen ajomatka on $14\,640\,\text{km}$.
 
-b) Bensiiniauto maksaa vuodessa noin $1370\,\text{€}$ enemmän.
+b) Bensiiniauto maksaa vuodessa noin $1{,}37 \cdot 10^{3}\,\text{€}$ enemmän.
 
 c) Julkisella latauksella $K_\text{s} = 0{,}45\,\text{€/kWh} \cdot 2602{,}7\,\text{kWh} = 1171{,}2\,\text{€}$, mikä on edelleen pienempi kuin bensiiniauton $1760{,}5\,\text{€}$. Säästö pienenee arvoon $1760{,}5\,\text{€} - 1171{,}2\,\text{€} = 589{,}3\,\text{€}$ eli noin $780\,\text{€}$ pienemmäksi, mutta sähköauto on silti edullisempi, koska sen energiankulutus on pieni ja sen kustannus on noin kaksi kolmasosaa bensiiniauton kustannuksesta.
 **Järkevyys:** Arvio: $15\,000\,\text{km}$ on $150$ kertaa $100\,\text{km}$. Sähköauto maksaa noin $150 \cdot 2{,}7\,\text{€} \approx 400\,\text{€}$ ($100\,\text{km}$ maksaa $17{,}8\,\text{kWh} \cdot 0{,}15\,\text{€/kWh} \approx 2{,}7\,\text{€}$) ja bensiiniauto $150 \cdot 12\,\text{€} = 1800\,\text{€}$ ($100\,\text{km}$ maksaa $6{,}5\,\textsf{l} \cdot 1{,}85\,\text{€/}\textsf{l} \approx 12\,\text{€}$), joten erotus on noin $1400\,\text{€}$. Verkosta otettu energia $17{,}8\,\text{kWh}$ sadalla kilometrillä on suurempi kuin akusta kulutettu $16{,}0\,\text{kWh}$, kuten häviöiden vuoksi pitääkin.
@@ -238,7 +238,7 @@ c) Julkisella latauksella $K_\text{s} = 0{,}45\,\text{€/kWh} \cdot 2602{,}7\,\
 **Kaava:** $P_\text{talo} = 3UI_\text{talo}$, joten $I_\text{talo} = \dfrac{P_\text{talo}}{3U}$; $I_\text{talo} + I_\text{a} \le I_\text{p}$, joten $I_\text{a} = I_\text{p} - I_\text{talo}$; $P_\text{johto} = \rho \dfrac{2l}{A} I^2$
 **Muunnokset:** $P_\text{talo} = 6{,}0\,\text{kW} + 3{,}3\,\text{kW} + 1{,}8\,\text{kW} + 0{,}90\,\text{kW} = 12{,}0\,\text{kW} = 12\,000\,\text{W}$ ja $A = 2{,}5\,\text{mm}^2 = 2{,}5 \cdot 10^{-6}\,\text{m}^2$
 **Sijoitus:** $I_\text{talo} = \dfrac{12\,000\,\text{W}}{3 \cdot 230\,\text{V}} = 17{,}39\,\text{A}$ ja $I_\text{a} = 25\,\text{A} - 17{,}39\,\text{A} = 7{,}609\,\text{A}$. Kaapelin resistanssi on $R = 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot \dfrac{2 \cdot 30\,\text{m}}{2{,}5 \cdot 10^{-6}\,\text{m}^2} = 0{,}408\,\Omega$, joten $P_\text{johto} = 0{,}408\,\Omega \cdot (7{,}609\,\text{A})^2 = 23{,}6\,\text{W}$ ja virralla $16\,\text{A}$ $P_\text{johto} = 0{,}408\,\Omega \cdot (16\,\text{A})^2 = 104{,}4\,\text{W}$.
-**Vastaus:** Vastauslaatikkoon $7{,}6\,\text{A}$, kaksi merkitsevää numeroa kuten kuormien tehoissa. a) Talon virta on $17\,\text{A}$ jokaisessa vaihejohtimessa.
+**Vastaus:** Vastauslaatikkoon $7{,}6\,\text{A}$, kaksi merkitsevää numeroa kuten kuormien tehoissa. Virta saa olla enintään laskettu arvo, joten raja-arvo pyöristetään alaspäin. a) Talon virta on $17\,\text{A}$ jokaisessa vaihejohtimessa.
 
 b) Asema saa ottaa enintään $7{,}6\,\text{A}$.
 

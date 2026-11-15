@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1f98286bb0445e33
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: c66f27034b63f0f5
 
 ## Blocking
 - none
@@ -9,5 +8,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Multimeter terminal sentences (meter-specific wording, check the meter's own markings), ammeter never across source terminals, school labs use safe low-voltage sources: fluent Finnish, consistent voice, units LaTeX.
-- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.
+- batch delta review: opened fy6-2-fig-row-1280.png (first theory figure, unchanged by the diff), fy6-2-theory-1280-2.png (the changed sentence "sama kuin virhearviossa" in the error-limit section, plus table, formulas and figures around it) and fy6-2-theory-1280-3.png (end of the theory: range figure, Yleinen virhekäsitys, Tiivistelmä; the changed "Tulos" sentence was not visible there and was read from the diff only). Wording-only change, spelling "virhearvio" consistent, nothing clipped. The inquiry.json solution change was read from the diff only, not as a capture.

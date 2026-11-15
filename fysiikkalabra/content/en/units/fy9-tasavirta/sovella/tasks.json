@@ -75,7 +75,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "$A = \\dfrac{3.0 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m} \\cdot 1.10\\,\\text{m}}{11.25\\,\\Omega} = 2.93 \\cdot 10^{-8}\\,\\text{m}^2$ and $h = \\dfrac{2.93 \\cdot 10^{-8}\\,\\text{m}^2}{3.0 \\cdot 10^{-3}\\,\\text{m}} = 9.8 \\cdot 10^{-6}\\,\\text{m}$"
+              "detail": "$$\n\\begin{aligned}\nA &= \\dfrac{3.0 \\cdot 10^{-7}\\,\\Omega\\cdot\\text{m} \\cdot 1.10\\,\\text{m}}{11.25\\,\\Omega} \\\\\n&= 2.93 \\cdot 10^{-8}\\,\\text{m}^2\n\\end{aligned}\n$$ and $$\n\\begin{aligned}\nh &= \\dfrac{2.93 \\cdot 10^{-8}\\,\\text{m}^2}{3.0 \\cdot 10^{-3}\\,\\text{m}} \\\\\n&= 9.8 \\cdot 10^{-6}\\,\\text{m}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -126,7 +126,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$R = 1.125\\,\\Omega$, $I = \\dfrac{12.6\\,\\text{V}}{1.145\\,\\Omega} = 11.0\\,\\text{A}$ and $P = 1.125\\,\\Omega \\cdot (11.0\\,\\text{A})^2 \\approx 136\\,\\text{W}$"
+              "detail": "$R = 1.125\\,\\Omega$, $I = \\dfrac{12.6\\,\\text{V}}{1.145\\,\\Omega} = 11.0\\,\\text{A}$ and $$\n\\begin{aligned}\nP &= 1.125\\,\\Omega \\cdot (11.0\\,\\text{A})^2 \\\\\n&\\approx 136\\,\\text{W}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -253,7 +253,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$I = \\dfrac{42.0\\,\\text{V} - 34.5\\,\\text{V}}{2.6\\,\\Omega + 0.40\\,\\Omega} = 2.5\\,\\text{A}$ and $U = 34.5\\,\\text{V} + 0.40\\,\\Omega \\cdot 2.5\\,\\text{A} = 35.5\\,\\text{V}$"
+              "detail": "$I = \\dfrac{42.0\\,\\text{V} - 34.5\\,\\text{V}}{2.6\\,\\Omega + 0.40\\,\\Omega} = 2.5\\,\\text{A}$ and $$\n\\begin{aligned}\nU &= 34.5\\,\\text{V} + 0.40\\,\\Omega \\cdot 2.5\\,\\text{A} \\\\\n&= 35.5\\,\\text{V}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -281,7 +281,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$W_\\text{ch} = 42.0\\,\\text{V} \\cdot 10.4\\,\\text{Ah} = 437\\,\\text{Wh}$ and $\\eta = \\dfrac{374\\,\\text{Wh}}{437\\,\\text{Wh}} = 0.857$; cost $0.437\\,\\text{kWh} \\cdot 0.15\\,\\tfrac{\\text{€}}{\\text{kWh}} \\approx 0.066\\,\\text{€}$"
+              "detail": "$$\n\\begin{aligned}\nW_\\text{ch} &= 42.0\\,\\text{V} \\cdot 10.4\\,\\text{Ah} \\\\\n&= 437\\,\\text{Wh}\n\\end{aligned}\n$$ and $\\eta = \\dfrac{374\\,\\text{Wh}}{437\\,\\text{Wh}} = 0.857$; cost $0.437\\,\\text{kWh} \\cdot 0.15\\,\\tfrac{\\text{€}}{\\text{kWh}} \\approx 0.066\\,\\text{€}$"
             },
             {
               "key": "units_precision",
@@ -375,7 +375,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$R_\\text{s} = -\\dfrac{\\Delta U}{\\Delta I} = -\\dfrac{3.75\\,\\text{V} - 4.63\\,\\text{V}}{1.20\\,\\text{A}} \\approx 0.73\\,\\Omega$"
+              "detail": "$$\n\\begin{aligned}\nR_\\text{s} &= -\\dfrac{\\Delta U}{\\Delta I} \\\\\n&= -\\dfrac{3.75\\,\\text{V} - 4.63\\,\\text{V}}{1.20\\,\\text{A}} \\\\\n&\\approx 0.73\\,\\Omega\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -715,7 +715,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$Q = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 300\\,\\text{kg} \\cdot 55\\,\\text{K} = 69.1\\,\\text{MJ}$ and $t = \\dfrac{69.1 \\cdot 10^6\\,\\text{J}}{3000\\,\\text{W}} = 23\\,000\\,\\text{s}$"
+              "detail": "$$\n\\begin{aligned}\nQ &= 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 300\\,\\text{kg} \\cdot 55\\,\\text{K} \\\\\n&= 69.1\\,\\text{MJ}\n\\end{aligned}\n$$ and $t = \\dfrac{69.1 \\cdot 10^6\\,\\text{J}}{3000\\,\\text{W}} = 23\\,000\\,\\text{s}$"
             },
             {
               "key": "units_precision",
@@ -809,7 +809,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$E = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 80\\,\\text{kg} \\cdot 25\\,\\text{K} = 8.38\\,\\text{MJ} = 2.33\\,\\text{kWh}$"
+              "detail": "$$\n\\begin{aligned}\nE &= 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 80\\,\\text{kg} \\cdot 25\\,\\text{K} \\\\\n&= 8.38\\,\\text{MJ} \\\\\n&= 2.33\\,\\text{kWh}\n\\end{aligned}\n$$"
             },
             {
               "key": "reasonableness",

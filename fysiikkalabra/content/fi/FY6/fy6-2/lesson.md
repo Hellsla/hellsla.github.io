@@ -223,7 +223,7 @@ Lukeman $x$ virheraja on
 ```latex
 \Delta x = p \cdot x + n \cdot r
 ```
-missä $\Delta x$ on virheraja, $x$ lukema, $p$ valmistajan ilmoittama prosenttiosuus desimaalilukuna ($0{,}5\,\% = 0{,}005$), $n$ numeroiden määrä ja $r$ alueen resoluutio. Tulos kirjataan muodossa $x \pm \Delta x$, esimerkiksi $U = 4{,}50\,\text{V} \pm 0{,}04\,\text{V}$. Merkintä on sama kuin virhe-arviossa, mutta tässä $\Delta x$ on mittarin oma virheraja, ei koko mittauksen epävarmuus. Eri mittausten tarkkuutta verrataan **suhteellisella virherajalla**
+missä $\Delta x$ on virheraja, $x$ lukema, $p$ valmistajan ilmoittama prosenttiosuus desimaalilukuna ($0{,}5\,\% = 0{,}005$), $n$ numeroiden määrä ja $r$ alueen resoluutio. Tulos kirjataan muodossa $x \pm \Delta x$, esimerkiksi $U = 4{,}50\,\text{V} \pm 0{,}04\,\text{V}$. Merkintä on sama kuin virhearviossa, mutta tässä $\Delta x$ on mittarin oma virheraja, ei koko mittauksen epävarmuus. Eri mittausten tarkkuutta verrataan **suhteellisella virherajalla**
 ```latex
 \frac{\Delta x}{x}
 ```
@@ -312,7 +312,7 @@ Lampun jännite mitataan yleismittarilla kahdesti. Alueella $20\,\text{V}$ näyt
 
 <!-- vaihe -->
 
-**Tulos.** Alueella $20\,\text{V}$ jännite on $1{,}50\,\text{V} \pm 0{,}03\,\text{V}$ ja alueella $2\,\text{V}$ $1{,}500\,\text{V} \pm 0{,}010\,\text{V}$. Suhteelliset virherajat ovat $2\,\%$ ja $0{,}67\,\%$. Virheraja pyöristetään kuten virhe-arvio yhteen merkitsevään numeroon, tai kahteen, jos ensimmäinen numero on 1. Alue $2\,\text{V}$ kannattaa valita: sen virheraja on noin kolmasosa.
+**Tulos.** Alueella $20\,\text{V}$ jännite on $1{,}50\,\text{V} \pm 0{,}03\,\text{V}$ ja alueella $2\,\text{V}$ $1{,}500\,\text{V} \pm 0{,}010\,\text{V}$. Suhteelliset virherajat ovat $2\,\%$ ja $0{,}67\,\%$. Virheraja pyöristetään kuten virhearvio yhteen merkitsevään numeroon, tai kahteen, jos ensimmäinen numero on 1. Alue $2\,\text{V}$ kannattaa valita: sen virheraja on noin kolmasosa.
 
 <!-- vaihe -->
 

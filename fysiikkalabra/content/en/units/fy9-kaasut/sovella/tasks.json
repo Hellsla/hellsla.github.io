@@ -32,7 +32,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "$A = \\pi r^2 = \\pi \\cdot (0.100\\,\\text{m})^2 \\approx 0.0314\\,\\text{m}^2$ and $mg \\approx 17.7\\,\\text{kN}$, so $\\Delta p \\approx 562\\,\\text{kPa}$."
+              "detail": "$$\n\\begin{aligned}\nA &= \\pi r^2 \\\\\n&= \\pi \\cdot (0.100\\,\\text{m})^2 \\\\\n&\\approx 0.0314\\,\\text{m}^2\n\\end{aligned}\n$$ and $mg \\approx 17.7\\,\\text{kN}$, so $\\Delta p \\approx 562\\,\\text{kPa}$."
             },
             {
               "key": "units_precision",
@@ -65,7 +65,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$W = 1800\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\cdot 1.20\\,\\text{m} \\approx 21.2\\,\\text{kJ}$ and $562\\,\\text{kPa} \\cdot 37.7\\,\\textsf{l} \\approx 21.2\\,\\text{kJ}$."
+              "detail": "$$\n\\begin{aligned}\nW &= 1800\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\\n&\\cdot 1.20\\,\\text{m} \\\\\n&\\approx 21.2\\,\\text{kJ}\n\\end{aligned}\n$$ and $562\\,\\text{kPa} \\cdot 37.7\\,\\textsf{l} \\approx 21.2\\,\\text{kJ}$."
             },
             {
               "text": "Explains that the air in the cylinder pushes the piston with the total pressure $663\\,\\text{kPa}$ and does the work $p\\,\\Delta V \\approx 25.0\\,\\text{kJ}$; the difference $3.8\\,\\text{kJ}$ goes into pushing the outside air above the piston out of the way.",
@@ -98,7 +98,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$p_1 = 1001\\,\\text{kPa}$, so $p_2 = 1001\\,\\text{kPa} - 663\\,\\text{kPa} \\cdot 0.377 \\approx 751\\,\\text{kPa}$, that is, about $650\\,\\text{kPa}$ on the gauge."
+              "detail": "$p_1 = 1001\\,\\text{kPa}$, so $$\n\\begin{aligned}\np_2 &= 1001\\,\\text{kPa} \\\\\n&- 663\\,\\text{kPa} \\cdot 0.377 \\\\\n&\\approx 751\\,\\text{kPa}\n\\end{aligned}\n$$, that is, about $650\\,\\text{kPa}$ on the gauge."
             },
             {
               "text": "Justifies that air flows only from a higher pressure to a lower one, so the tank must hold at least $663\\,\\text{kPa}$ throughout the lift; after a second lift the pressure would be about $501\\,\\text{kPa}$, so the second lift stops partway (at a height of about $0.4\\,\\text{m}$).",
@@ -160,7 +160,7 @@
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "The density of methane $34.9\\,\\text{kg} : 52.0\\,\\text{m}^3 \\approx 0.67\\,\\text{kg/m}^3$ is smaller than that of air, because the molar mass of methane is smaller."
+              "detail": "The density of methane $$\n\\begin{aligned}\n&34.9\\,\\text{kg} : 52.0\\,\\text{m}^3 \\\\\n&\\approx 0.67\\,\\text{kg/m}^3\n\\end{aligned}\n$$ is smaller than that of air, because the molar mass of methane is smaller."
             }
           ]
         },
@@ -216,7 +216,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "The heat power given away $485\\,\\text{kW} - 175\\,\\text{kW} \\approx 310\\,\\text{kW}$, recovered $0.75 \\cdot 310\\,\\text{kW} \\approx 233\\,\\text{kW}$, so $\\eta_\\text{tot} = (175 + 233) : 485 \\approx 84\\,\\%$."
+              "detail": "The heat power given away $485\\,\\text{kW} - 175\\,\\text{kW} \\approx 310\\,\\text{kW}$, recovered $0.75 \\cdot 310\\,\\text{kW} \\approx 233\\,\\text{kW}$, so $$\n\\begin{aligned}\n\\eta_\\text{tot} &= (175 + 233) : 485 \\\\\n&\\approx 84\\,\\%\n\\end{aligned}\n$$."
             },
             {
               "key": "conclusion",
@@ -291,7 +291,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\theta_0 = -\\dfrac{V_0}{k} = -\\dfrac{37.7\\,\\text{ml}}{0.135\\,\\text{ml}/{}^\\circ\\text{C}} \\approx -279\\,{}^\\circ\\text{C}$"
+              "detail": "$$\n\\begin{aligned}\n\\theta_0 &= -\\dfrac{V_0}{k} \\\\\n&= -\\dfrac{37.7\\,\\text{ml}}{0.135\\,\\text{ml}/{}^\\circ\\text{C}} \\\\\n&\\approx -279\\,{}^\\circ\\text{C}\n\\end{aligned}\n$$"
             },
             {
               "key": "uncertainty",
@@ -324,17 +324,17 @@
             {
               "key": "units_precision",
               "points": 2,
-              "detail": "$k = 0.135\\,\\text{ml/K} = 0.135 \\cdot 10^{-6}\\,\\text{m}^3/\\text{K}$ and $p = 101\\,300\\,\\text{Pa}$; three significant figures."
+              "detail": "$$\n\\begin{aligned}\nk &= 0.135\\,\\text{ml/K} \\\\\n&= 0.135 \\cdot 10^{-6}\\,\\text{m}^3/\\text{K}\n\\end{aligned}\n$$ and $p = 101\\,300\\,\\text{Pa}$; three significant figures."
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$n \\approx 1.65 \\cdot 10^{-3}\\,\\text{mol} = 1.65\\,\\text{mmol}$"
+              "detail": "$$\n\\begin{aligned}\nn &\\approx 1.65 \\cdot 10^{-3}\\,\\text{mol} \\\\\n&= 1.65\\,\\text{mmol}\n\\end{aligned}\n$$"
             },
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "A single measured point gives almost the same: $n = \\dfrac{pV}{RT} = \\dfrac{101\\,300\\,\\text{Pa} \\cdot 41.1 \\cdot 10^{-6}\\,\\text{m}^3}{8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 298.15\\,\\text{K}} \\approx 1.68\\,\\text{mmol}$."
+              "detail": "A single measured point gives almost the same: $$\n\\begin{aligned}\nn &= \\dfrac{pV}{RT} \\\\\n&= \\dfrac{101\\,300\\,\\text{Pa} \\cdot 41.1 \\cdot 10^{-6}\\,\\text{m}^3}{8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 298.15\\,\\text{K}} \\\\\n&\\approx 1.68\\,\\text{mmol}\n\\end{aligned}\n$$."
             }
           ]
         },
@@ -423,7 +423,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\eta = 30\\,\\text{kW} : 500\\,\\text{kW} = 0.060 = 6.0\\,\\%$ and $P_2 = 470\\,\\text{kW}$"
+              "detail": "$$\n\\begin{aligned}\n\\eta &= 30\\,\\text{kW} : 500\\,\\text{kW} \\\\\n&= 0.060 \\\\\n&= 6.0\\,\\%\n\\end{aligned}\n$$ and $P_2 = 470\\,\\text{kW}$"
             },
             {
               "text": "Explains that the temperature difference of $23\\,\\text{K}$ between the hot source and the cold environment is small compared with the temperature of the hot source, $276\\,\\text{K}$, so only a small part of the heat can turn into work.",
@@ -433,7 +433,7 @@
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "Energy is conserved: $30\\,\\text{kW} + 470\\,\\text{kW} = 500\\,\\text{kW}$; the machine gives almost all the heat it takes to the cold."
+              "detail": "Energy is conserved: $$\n30\\,\\text{kW} + 470\\,\\text{kW} = 500\\,\\text{kW}\n$$; the machine gives almost all the heat it takes to the cold."
             }
           ]
         },

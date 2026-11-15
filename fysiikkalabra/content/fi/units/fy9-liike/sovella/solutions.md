@@ -5,7 +5,13 @@
 **Kysytty:** kiihdytyksen kesto $t$ sekunteina
 **Periaate:** Kiihtyvyys on vakio, joten $(t,v)$-kuvaaja on suora ja sen alle jäävä alue on puolisuunnikas. Siirtymä on tämän alueen pinta-ala, joten keskinopeus on alku- ja loppunopeuden keskiarvo (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*). Kiihtyvyyttä ei tarvita ajan laskemiseen.
 **Kaava:** $\Delta x = \dfrac{v_0 + v}{2}\,t$, joten $t = \dfrac{2\,\Delta x}{v_0 + v}$
-**Muunnokset:** $54\,\text{km/h} = \dfrac{54 \cdot 1000\,\text{m}}{3600\,\text{s}} = 15\,\text{m/s}$ ja $108\,\text{km/h} = \dfrac{108 \cdot 1000\,\text{m}}{3600\,\text{s}} = 30\,\text{m/s}$
+**Muunnokset:** $$
+\begin{aligned}
+&54\,\text{km/h} \\
+&= \dfrac{54 \cdot 1000\,\text{m}}{3600\,\text{s}} \\
+&= 15\,\text{m/s}
+\end{aligned}
+$$ ja $108\,\text{km/h} = \dfrac{108 \cdot 1000\,\text{m}}{3600\,\text{s}} = 30\,\text{m/s}$
 **Sijoitus:** $t = \dfrac{2 \cdot 270\,\text{m}}{15\,\text{m/s} + 30\,\text{m/s}} = \dfrac{540\,\text{m}}{45\,\text{m/s}} = 12{,}0\,\text{s}$
 **Vastaus:** $t \approx 12\,\text{s}$, kaksi merkitsevää numeroa kuten nopeudet $54\,\text{km/h}$ ja $108\,\text{km/h}$.
 **Järkevyys:** Keskinopeus on $22{,}5\,\text{m/s}$, ja $22{,}5\,\text{m/s} \cdot 12{,}0\,\text{s} = 270\,\text{m}$, kaistan pituus. Noin kymmenen sekunnin kiihdytys moottoritienopeuteen on henkilöautolle tavallinen.
@@ -18,7 +24,14 @@
 **Muunnokset:** Nopeudet on muunnettu a-kohdassa yksikköön $\text{m/s}$, ja aika on sekunteina.
 **Sijoitus:** $a = \dfrac{30\,\text{m/s} - 15\,\text{m/s}}{12{,}0\,\text{s}} = \dfrac{15\,\text{m/s}}{12{,}0\,\text{s}} = 1{,}25\,\text{m/s}^2$
 **Vastaus:** $a \approx 1{,}3\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten nopeudet (myös $1{,}25\,\text{m/s}^2$ hyväksytään).
-**Järkevyys:** Nopeus kasvaa joka sekunti $1{,}25\,\text{m/s} = 4{,}5\,\text{km/h}$, joten kahdessatoista sekunnissa se kasvaa $54\,\text{km/h}$, kuten aineistossa. Tarkistus paikan yhtälöllä: $15\,\text{m/s} \cdot 12{,}0\,\text{s} + \tfrac{1}{2} \cdot 1{,}25\,\text{m/s}^2 \cdot (12{,}0\,\text{s})^2 = 180\,\text{m} + 90\,\text{m} = 270\,\text{m}$.
+**Järkevyys:** Nopeus kasvaa joka sekunti $1{,}25\,\text{m/s} = 4{,}5\,\text{km/h}$, joten kahdessatoista sekunnissa se kasvaa $54\,\text{km/h}$, kuten aineistossa. Tarkistus paikan yhtälöllä: $$
+\begin{aligned}
+&15\,\text{m/s} \cdot 12{,}0\,\text{s} \\
+&+ \tfrac{1}{2} \cdot 1{,}25\,\text{m/s}^2 \cdot (12{,}0\,\text{s})^2 \\
+&= 180\,\text{m} + 90\,\text{m} \\
+&= 270\,\text{m}
+\end{aligned}
+$$.
 
 ### c)
 **Annettu:** origo kiihdytyskaistan alussa, positiivinen suunta ajosuunta; auto: $x_{0\text{A}} = 0$, $v_0 = 15\,\text{m/s}$, $a = 1{,}25\,\text{m/s}^2$; rekka: $x_{0\text{R}} = -40\,\text{m}$, $v_\text{R} = 81\,\text{km/h}$ (vakio)
@@ -26,14 +39,40 @@
 **Periaate:** Paikat kirjoitetaan samassa koordinaatistossa (luku *Kahden kappaleen liikkeiden vertailu*). Rekka on aluksi nopeampi ja lähestyy autoa. Välimatka pienenee niin kauan kuin rekka on nopeampi ja alkaa kasvaa, kun auto on nopeampi, joten se on pienimmillään silloin, kun nopeudet ovat yhtä suuret. Jos välimatka on silloin positiivinen, rekka ei ehdi rinnalle.
 **Kaava:** $x_\text{A} = v_0\,t + \tfrac{1}{2}\,a\,t^2$ ja $x_\text{R} = x_{0\text{R}} + v_\text{R}\,t$. Nopeudet yhtä suuret: $v_0 + a\,t_1 = v_\text{R}$, joten $t_1 = \dfrac{v_\text{R} - v_0}{a}$ ja $d_\text{min} = x_\text{A}(t_1) - x_\text{R}(t_1)$
 **Muunnokset:** $81\,\text{km/h} = \dfrac{81 \cdot 1000\,\text{m}}{3600\,\text{s}} = 22{,}5\,\text{m/s}$
-**Sijoitus:** $t_1 = \dfrac{22{,}5\,\text{m/s} - 15\,\text{m/s}}{1{,}25\,\text{m/s}^2} = 6{,}0\,\text{s}$; $x_\text{A} = 15\,\text{m/s} \cdot 6{,}0\,\text{s} + \tfrac{1}{2} \cdot 1{,}25\,\text{m/s}^2 \cdot (6{,}0\,\text{s})^2 = 90\,\text{m} + 22{,}5\,\text{m} = 112{,}5\,\text{m}$; $x_\text{R} = -40\,\text{m} + 22{,}5\,\text{m/s} \cdot 6{,}0\,\text{s} = 95\,\text{m}$; $d_\text{min} = 112{,}5\,\text{m} - 95\,\text{m} = 17{,}5\,\text{m}$
+**Sijoitus:** $t_1 = \dfrac{22{,}5\,\text{m/s} - 15\,\text{m/s}}{1{,}25\,\text{m/s}^2} = 6{,}0\,\text{s}$; $$
+\begin{aligned}
+x_\text{A} &= 15\,\text{m/s} \cdot 6{,}0\,\text{s} \\
+&+ \tfrac{1}{2} \cdot 1{,}25\,\text{m/s}^2 \cdot (6{,}0\,\text{s})^2 \\
+&= 90\,\text{m} + 22{,}5\,\text{m} \\
+&= 112{,}5\,\text{m}
+\end{aligned}
+$$; $x_\text{R} = -40\,\text{m} + 22{,}5\,\text{m/s} \cdot 6{,}0\,\text{s} = 95\,\text{m}$; $d_\text{min} = 112{,}5\,\text{m} - 95\,\text{m} = 17{,}5\,\text{m}$
 **Vastaus:** Rekka ei ehdi auton rinnalle. Välimatka on pienimmillään noin $18\,\text{m}$ hetkellä $6{,}0\,\text{s}$, kaksi merkitsevää numeroa kuten etäisyys $40\,\text{m}$ ja nopeudet.
-**Järkevyys:** Kaistan lopussa ($12{,}0\,\text{s}$) rekka on kohdassa $-40\,\text{m} + 22{,}5\,\text{m/s} \cdot 12{,}0\,\text{s} = 230\,\text{m}$ ja auto kohdassa $270\,\text{m}$, joten ero on taas $40\,\text{m}$, kuten pitääkin: nopeuskuvaajien väliin jäävät alat ennen ja jälkeen hetken $6{,}0\,\text{s}$ ovat yhtä suuret. Kohtaamisyhtälöllä $\tfrac{1}{2}\,a\,t^2 + (v_0 - v_\text{R})\,t - x_{0\text{R}} = 0$ ei ole reaalisia ratkaisuja, koska diskriminantti $(-7{,}5)^2 - 4 \cdot 0{,}625 \cdot 40 < 0$.
+**Järkevyys:** Kaistan lopussa ($12{,}0\,\text{s}$) rekka on kohdassa $$
+\begin{aligned}
+&-40\,\text{m} + 22{,}5\,\text{m/s} \cdot 12{,}0\,\text{s} \\
+&= 230\,\text{m}
+\end{aligned}
+$$ ja auto kohdassa $270\,\text{m}$, joten ero on taas $40\,\text{m}$, kuten pitääkin: nopeuskuvaajien väliin jäävät alat ennen ja jälkeen hetken $6{,}0\,\text{s}$ ovat yhtä suuret. Kohtaamisyhtälöllä $$
+\tfrac{1}{2}\,a\,t^2 + (v_0 - v_\text{R})\,t - x_{0\text{R}} = 0
+$$ ei ole reaalisia ratkaisuja, koska diskriminantti $$
+(-7{,}5)^2 - 4 \cdot 0{,}625 \cdot 40 < 0
+$$.
 
 ### d)
 **Kysytty:** miksi rekka saavuttaa tasaisesti vain nopeuteen $72\,\text{km/h}$ kiihdyttävän auton ja miksi liikenteen nopeuteen kannattaa kiihdyttää
 **Periaate:** Siirtymä on $(t,v)$-kuvaajan pinta-ala, ja välimatka muuttuu kahden kuvaajan väliin jäävän alan verran (luku *Kahden kappaleen liikkeiden vertailu*).
-**Mallivastaus:** Tämä auto on koko kaistan ajan rekkaa hitaampi, koska sen suurin nopeus $72\,\text{km/h} = 20\,\text{m/s}$ on pienempi kuin rekan $22{,}5\,\text{m/s}$. $(t,v)$-kuvaajassa rekan vaakasuora viiva on koko ajan auton nousevan viivan yläpuolella, joten rekan siirtymä kasvaa joka hetki enemmän kuin auton ja $40\,\text{m}$:n ero pienenee koko ajan. Kun ero on kurottu umpeen, rekka on auton rinnalla ja menee ohi. Laskelma vahvistaa tämän (auto kiihdyttää tasaisesti koko kaistan matkan): kiihdytys kestää $2 \cdot 270\,\text{m} : (15\,\text{m/s} + 20\,\text{m/s}) \approx 15{,}4\,\text{s}$, auton keskinopeus on $17{,}5\,\text{m/s}$, joten rekka kulkee keskimäärin $5\,\text{m/s}$ nopeammin ja kuroo $5\,\text{m/s} \cdot 15{,}4\,\text{s} \approx 77\,\text{m}$, enemmän kuin $40\,\text{m}$:n eron; ja sinä aikana rekka ehtii kohtaan $-40\,\text{m} + 22{,}5\,\text{m/s} \cdot 15{,}4\,\text{s} \approx 307\,\text{m}$, auton ohi ennen kaistan loppua ($270\,\text{m}$). Auton on silloin hidastettava ja liityttävä rekan taakse. Kun auto kiihdyttää liikenteen nopeuteen, se on loppuvaiheessa rekkaa nopeampi, välimatka kasvaa taas ja auto voi liittyä turvallisesti rekan eteen.
+**Mallivastaus:** Tämä auto on koko kaistan ajan rekkaa hitaampi, koska sen suurin nopeus $72\,\text{km/h} = 20\,\text{m/s}$ on pienempi kuin rekan $22{,}5\,\text{m/s}$. $(t,v)$-kuvaajassa rekan vaakasuora viiva on koko ajan auton nousevan viivan yläpuolella, joten rekan siirtymä kasvaa joka hetki enemmän kuin auton ja $40\,\text{m}$:n ero pienenee koko ajan. Kun ero on kurottu umpeen, rekka on auton rinnalla ja menee ohi. Laskelma vahvistaa tämän (auto kiihdyttää tasaisesti koko kaistan matkan): kiihdytys kestää $$
+\begin{aligned}
+&2 \cdot 270\,\text{m} : (15\,\text{m/s} + 20\,\text{m/s}) \\
+&\approx 15{,}4\,\text{s}
+\end{aligned}
+$$, auton keskinopeus on $17{,}5\,\text{m/s}$, joten rekka kulkee keskimäärin $5\,\text{m/s}$ nopeammin ja kuroo $5\,\text{m/s} \cdot 15{,}4\,\text{s} \approx 77\,\text{m}$, enemmän kuin $40\,\text{m}$:n eron; ja sinä aikana rekka ehtii kohtaan $$
+\begin{aligned}
+&-40\,\text{m} + 22{,}5\,\text{m/s} \cdot 15{,}4\,\text{s} \\
+&\approx 307\,\text{m}
+\end{aligned}
+$$, auton ohi ennen kaistan loppua ($270\,\text{m}$). Auton on silloin hidastettava ja liityttävä rekan taakse. Kun auto kiihdyttää liikenteen nopeuteen, se on loppuvaiheessa rekkaa nopeampi, välimatka kasvaa taas ja auto voi liittyä turvallisesti rekan eteen.
 
 ### Yleisiä virheitä
 - Nopeuksia ei muunneta yksikköön $\text{m/s}$, ja kilometrit tunnissa kerrotaan sekunneilla.
@@ -43,7 +82,13 @@
 
 ### Hyväksytään myös
 - a-kohdassa ratkaistaan ensin $a = \dfrac{v^2 - v_0^2}{2\,\Delta x}$ ja sitten $t = \dfrac{v - v_0}{a}$, tai käytetään paikan yhtälöä ja nopeuden yhtälöä yhdessä.
-- c-kohdassa välimatka $d(t) = x_\text{A} - x_\text{R} = 40\,\text{m} - 7{,}5\,\text{m/s} \cdot t + 0{,}625\,\text{m/s}^2 \cdot t^2$ ja sen pienin arvo paraabelin huipusta.
+- c-kohdassa välimatka $$
+\begin{aligned}
+d(t) &= x_\text{A} - x_\text{R} \\
+&= 40\,\text{m} - 7{,}5\,\text{m/s} \cdot t \\
+&+ 0{,}625\,\text{m/s}^2 \cdot t^2
+\end{aligned}
+$$ ja sen pienin arvo paraabelin huipusta.
 
 ## fy9-liike-s2
 
@@ -53,7 +98,16 @@
 **Periaate:** Pallon kiihtyvyys on koko lennon ajan $g$ alaspäin, joten liike on tasaisesti kiihtyvää. Lakipisteessä pallon nopeus on hetken nolla, vaikka kiihtyvyys ei ole (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*).
 **Kaava:** $v = v_0 - g\,t_\text{l} = 0$, joten $t_\text{l} = \dfrac{v_0}{g}$, ja $y_\text{l} = y_{0\text{A}} + v_0\,t_\text{l} - \tfrac{1}{2}\,g\,t_\text{l}^2 = y_{0\text{A}} + \dfrac{v_0^2}{2g}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $t_\text{l} = \dfrac{12{,}0\,\text{m/s}}{9{,}81\,\text{m/s}^2} = 1{,}223\,\text{s}$; $y_\text{l} = 1{,}5\,\text{m} + 12{,}0\,\text{m/s} \cdot 1{,}223\,\text{s} - \tfrac{1}{2} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}223\,\text{s})^2 = 1{,}5\,\text{m} + 14{,}68\,\text{m} - 7{,}34\,\text{m} = 8{,}84\,\text{m}$
+**Sijoitus:** $t_\text{l} = \dfrac{12{,}0\,\text{m/s}}{9{,}81\,\text{m/s}^2} = 1{,}223\,\text{s}$; $$
+\begin{aligned}
+y_\text{l} &= 1{,}5\,\text{m} \\
+&+ 12{,}0\,\text{m/s} \cdot 1{,}223\,\text{s} \\
+&- \tfrac{1}{2} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}223\,\text{s})^2 \\
+&= 1{,}5\,\text{m} + 14{,}68\,\text{m} \\
+&- 7{,}34\,\text{m} \\
+&= 8{,}84\,\text{m}
+\end{aligned}
+$$
 **Vastaus:** $y_\text{l} \approx 8{,}8\,\text{m}$, kymmenesosien tarkkuudella, koska heittokorkeus $1{,}5\,\text{m}$ tunnetaan kymmenesosien tarkkuudella.
 **Järkevyys:** Nousu on $7{,}34\,\text{m}$; pallon keskinopeus nousun aikana on $6{,}0\,\text{m/s}$, ja $6{,}0\,\text{m/s} \cdot 1{,}223\,\text{s} \approx 7{,}3\,\text{m}$. Pallo ei nouse kolmannen kerroksen kaiteelle ($9{,}0\,\text{m}$) asti, mikä sopii voimakkaaseen mutta tavalliseen heittoon.
 
@@ -63,9 +117,27 @@
 **Periaate:** Pallot ohittavat toisensa, kun ne ovat samalla korkeudella samalla hetkellä: $y_\text{A}(t) = y_\text{B}(t)$ (luku *Kahden kappaleen liikkeiden vertailu*). Kummankin liike on tasaisesti kiihtyvää samalla kiihtyvyydellä, joten termit $-\tfrac{1}{2}\,g\,t^2$ kumoutuvat.
 **Kaava:** $y_{0\text{A}} + v_0\,t - \tfrac{1}{2}\,g\,t^2 = y_{0\text{B}} - \tfrac{1}{2}\,g\,t^2$, joten $t = \dfrac{y_{0\text{B}} - y_{0\text{A}}}{v_0}$ ja $y = y_{0\text{B}} - \tfrac{1}{2}\,g\,t^2$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $t = \dfrac{9{,}0\,\text{m} - 1{,}5\,\text{m}}{12{,}0\,\text{m/s}} = \dfrac{7{,}5\,\text{m}}{12{,}0\,\text{m/s}} = 0{,}625\,\text{s}$; $y = 9{,}0\,\text{m} - \tfrac{1}{2} \cdot 9{,}81\,\text{m/s}^2 \cdot (0{,}625\,\text{s})^2 = 9{,}0\,\text{m} - 1{,}916\,\text{m} = 7{,}08\,\text{m}$
+**Sijoitus:** $t = \dfrac{9{,}0\,\text{m} - 1{,}5\,\text{m}}{12{,}0\,\text{m/s}} = \dfrac{7{,}5\,\text{m}}{12{,}0\,\text{m/s}} = 0{,}625\,\text{s}$; $$
+\begin{aligned}
+y &= 9{,}0\,\text{m} \\
+&- \tfrac{1}{2} \cdot 9{,}81\,\text{m/s}^2 \cdot (0{,}625\,\text{s})^2 \\
+&= 9{,}0\,\text{m} - 1{,}916\,\text{m} \\
+&= 7{,}08\,\text{m}
+\end{aligned}
+$$
 **Vastaus:** Pallot ohittavat toisensa hetkellä $t \approx 0{,}63\,\text{s}$ korkeudella $y \approx 7{,}1\,\text{m}$, kaksi merkitsevää numeroa kuten korkeusero $7{,}5\,\text{m}$.
-**Järkevyys:** Pallon A paikkafunktio antaa saman korkeuden: $1{,}5\,\text{m} + 12{,}0\,\text{m/s} \cdot 0{,}625\,\text{s} - 1{,}916\,\text{m} = 7{,}08\,\text{m}$. Ohitus tapahtuu ennen A:n lakipistettä hetkellä $1{,}22\,\text{s}$ ja ennen kuin B osuu lattiaan hetkellä $\sqrt{2 \cdot 9{,}0\,\text{m} : 9{,}81\,\text{m/s}^2} \approx 1{,}35\,\text{s}$.
+**Järkevyys:** Pallon A paikkafunktio antaa saman korkeuden: $$
+\begin{aligned}
+&1{,}5\,\text{m} + 12{,}0\,\text{m/s} \cdot 0{,}625\,\text{s} \\
+&- 1{,}916\,\text{m} \\
+&= 7{,}08\,\text{m}
+\end{aligned}
+$$. Ohitus tapahtuu ennen A:n lakipistettä hetkellä $1{,}22\,\text{s}$ ja ennen kuin B osuu lattiaan hetkellä $$
+\begin{aligned}
+&\sqrt{2 \cdot 9{,}0\,\text{m} : 9{,}81\,\text{m/s}^2} \\
+&\approx 1{,}35\,\text{s}
+\end{aligned}
+$$.
 
 ### c)
 **Kysytty:** miksi ohitushetki ei riipu putoamiskiihtyvyydestä, ja ohittaisivatko pallot toisensa Kuussa samalla hetkellä
@@ -78,9 +150,21 @@
 **Periaate:** Tasaisesti kiihtyvässä liikkeessä nopeus muuttuu joka sekunti kiihtyvyyden verran. Ylös on positiivinen, joten kiihtyvyys on $-g$, ja nopeuden etumerkki kertoo suunnan (luku *Kiihtyvyys ja tasaisesti kiihtyvä liike*).
 **Kaava:** $v_\text{A} = v_0 - g\,t$ ja $v_\text{B} = -g\,t$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $v_\text{A} = 12{,}0\,\text{m/s} - 9{,}81\,\text{m/s}^2 \cdot 0{,}625\,\text{s} = 12{,}0\,\text{m/s} - 6{,}131\,\text{m/s} = 5{,}869\,\text{m/s}$ ja $v_\text{B} = -9{,}81\,\text{m/s}^2 \cdot 0{,}625\,\text{s} = -6{,}131\,\text{m/s}$
+**Sijoitus:** $$
+\begin{aligned}
+v_\text{A} &= 12{,}0\,\text{m/s} \\
+&- 9{,}81\,\text{m/s}^2 \cdot 0{,}625\,\text{s} \\
+&= 12{,}0\,\text{m/s} - 6{,}131\,\text{m/s} \\
+&= 5{,}869\,\text{m/s}
+\end{aligned}
+$$ ja $v_\text{B} = -9{,}81\,\text{m/s}^2 \cdot 0{,}625\,\text{s} = -6{,}131\,\text{m/s}$
 **Vastaus:** $v_\text{A} \approx 5{,}9\,\text{m/s}$ ylöspäin ja $v_\text{B} \approx -6{,}1\,\text{m/s}$ eli $6{,}1\,\text{m/s}$ alaspäin, kaksi merkitsevää numeroa kuten ohitushetki.
-**Järkevyys:** Nopeuksien erotus on $5{,}869\,\text{m/s} - (-6{,}131\,\text{m/s}) = 12{,}0\,\text{m/s}$, kuten c-kohdan päättely edellyttää. Pallo A nousee vielä, koska sen lakipiste on vasta hetkellä $1{,}22\,\text{s}$.
+**Järkevyys:** Nopeuksien erotus on $$
+\begin{aligned}
+&5{,}869\,\text{m/s} - (-6{,}131\,\text{m/s}) \\
+&= 12{,}0\,\text{m/s}
+\end{aligned}
+$$, kuten c-kohdan päättely edellyttää. Pallo A nousee vielä, koska sen lakipiste on vasta hetkellä $1{,}22\,\text{s}$.
 
 ### Yleisiä virheitä
 - Lakipisteessä kiihtyvyydeksi oletetaan nolla, tai korkeus lasketaan ilman heittokorkeutta $1{,}5\,\text{m}$.
@@ -249,7 +333,18 @@
 ### c)
 **Kysytty:** keskinopeuden epävarmuus $3{,}0\,\text{km}$:n ja $100\,\text{m}$:n osuudella, kun auto ajaa nopeudella $80\,\text{km/h}$, ja pitääkö kolmas kannanotto
 **Periaate:** Keskinopeus lasketaan kulkuajasta, ja kulkuaika on kahden kirjauksen erotus, joten kummankin kirjauksen $0{,}5\,\text{s}$:n epävarmuus vaikuttaa siihen: yhteensä enintään noin $1\,\text{s}$. Mitä lyhyempi kulkuaika on, sitä suurempi on saman aikavirheen suhteellinen vaikutus (luku *Mittaaminen ja mittauksen luotettavuus*).
-**Mallivastaus:** Nopeudella $80\,\text{km/h} = \dfrac{80 \cdot 1000\,\text{m}}{3600\,\text{s}} = 22{,}2\,\text{m/s}$ pitkän osuuden kulkuaika on $3000\,\text{m} : 22{,}2\,\text{m/s} = 135\,\text{s}$. Sekunnin virhe on siitä alle $1\,\%$, joten keskinopeuden epävarmuus on noin $80\,\text{km/h} \cdot 1\,\text{s} : 135\,\text{s} \approx 0{,}6\,\text{km/h}$. Lyhyellä osuudella kulkuaika on vain $100\,\text{m} : 22{,}2\,\text{m/s} = 4{,}5\,\text{s}$, ja sekunnin virhe on siitä yli $20\,\%$: keskinopeus voisi olla mitattuna noin $65$–$100\,\text{km/h}$, eli epävarmuus on noin $18\,\text{km/h}$. Kolmas kannanotto ei siis pidä. Lyhyellä osuudella järjestelmä ei pystyisi erottamaan rajoitusnopeutta ajavaa ylinopeutta ajavasta, ja tulos voisi mennä kumpaan suuntaan tahansa. Valvontaosuuden on oltava pitkä, jotta ajanoton epävarmuus on pieni verrattuna kulkuaikaan.
+**Mallivastaus:** Nopeudella $$
+\begin{aligned}
+&80\,\text{km/h} \\
+&= \dfrac{80 \cdot 1000\,\text{m}}{3600\,\text{s}} \\
+&= 22{,}2\,\text{m/s}
+\end{aligned}
+$$ pitkän osuuden kulkuaika on $3000\,\text{m} : 22{,}2\,\text{m/s} = 135\,\text{s}$. Sekunnin virhe on siitä alle $1\,\%$, joten keskinopeuden epävarmuus on noin $$
+\begin{aligned}
+&80\,\text{km/h} \cdot 1\,\text{s} : 135\,\text{s} \\
+&\approx 0{,}6\,\text{km/h}
+\end{aligned}
+$$. Lyhyellä osuudella kulkuaika on vain $100\,\text{m} : 22{,}2\,\text{m/s} = 4{,}5\,\text{s}$, ja sekunnin virhe on siitä yli $20\,\%$: keskinopeus voisi olla mitattuna noin $65$–$100\,\text{km/h}$, eli epävarmuus on noin $18\,\text{km/h}$. Kolmas kannanotto ei siis pidä. Lyhyellä osuudella järjestelmä ei pystyisi erottamaan rajoitusnopeutta ajavaa ylinopeutta ajavasta, ja tulos voisi mennä kumpaan suuntaan tahansa. Valvontaosuuden on oltava pitkä, jotta ajanoton epävarmuus on pieni verrattuna kulkuaikaan.
 
 ### Yleisiä virheitä
 - b-kohdassa lasketaan nopeuksien keskiarvo, painotettu keskiarvo matkoilla ($\tfrac{2}{3} \cdot 100 + \tfrac{1}{3} \cdot 60 \approx 87\,\text{km/h}$) tai jaetaan matka väärällä nopeudella.
@@ -257,7 +352,13 @@
 - c-kohdassa ajanoton epävarmuus verrataan matkaan tai nopeuteen eikä kulkuaikaan.
 
 ### Hyväksytään myös
-- b-kohta sekunteina ja metreinä: $3000\,\text{m} : 132\,\text{s} = 22{,}7\,\text{m/s} \approx 82\,\text{km/h}$.
+- b-kohta sekunteina ja metreinä: $$
+\begin{aligned}
+&3000\,\text{m} : 132\,\text{s} \\
+&= 22{,}7\,\text{m/s} \\
+&\approx 82\,\text{km/h}
+\end{aligned}
+$$.
 - c-kohdassa epävarmuus $0{,}5\,\text{s}$:n perusteella ($0{,}3\,\text{km/h}$ ja $9\,\text{km/h}$), kun johtopäätös on sama.
 
 ## fy9-liike-s5
@@ -302,7 +403,9 @@
 **Muunnokset:** Kerroin on valmiiksi yksikössä $\text{m/s}^2$, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = 2 \cdot (-4{,}44\,\text{m/s}^2) = -8{,}88\,\text{m/s}^2$
 **Vastaus:** Mitattu putoamiskiihtyvyys on $8{,}88\,\text{m/s}^2$ alaspäin (miinusmerkki, koska $y$ kasvaa ylöspäin), kolme merkitsevää numeroa kuten kerroin $A$.
-**Järkevyys:** Tarkistus taulukosta: kun $t = 0{,}50\,\text{s}$, pallo on pudonnut $1{,}653\,\text{m} - 0{,}538\,\text{m} = 1{,}115\,\text{m}$, ja $\tfrac{1}{2} \cdot 8{,}88\,\text{m/s}^2 \cdot (0{,}50\,\text{s})^2 = 1{,}11\,\text{m}$. Tulos on samaa suuruusluokkaa kuin $9{,}81\,\text{m/s}^2$ mutta selvästi pienempi, joten jokin vaikuttaa mittaukseen.
+**Järkevyys:** Tarkistus taulukosta: kun $t = 0{,}50\,\text{s}$, pallo on pudonnut $$
+1{,}653\,\text{m} - 0{,}538\,\text{m} = 1{,}115\,\text{m}
+$$, ja $\tfrac{1}{2} \cdot 8{,}88\,\text{m/s}^2 \cdot (0{,}50\,\text{s})^2 = 1{,}11\,\text{m}$. Tulos on samaa suuruusluokkaa kuin $9{,}81\,\text{m/s}^2$ mutta selvästi pienempi, joten jokin vaikuttaa mittaukseen.
 
 ### b)
 **Annettu:** $A = (-4{,}44 \pm 0{,}05)\,\text{m/s}^2$, a-kohdasta $a = 8{,}88\,\text{m/s}^2$; taulukkoarvo $g = 9{,}81\,\text{m/s}^2$
@@ -310,7 +413,17 @@
 **Periaate:** Kun suure kerrotaan vakiolla, sen epävarmuus kerrotaan samalla vakiolla. Tulos sopii vertailuarvoon, jos ero on epävarmuuden suuruinen tai pienempi (luku *Mittaaminen ja mittauksen luotettavuus*).
 **Kaava:** $a = 2A$, joten $\Delta a = 2\,\Delta A$
 **Muunnokset:** Ei tarvita: yksiköt ovat samat.
-**Sijoitus:** $\Delta a = 2 \cdot 0{,}05\,\text{m/s}^2 = 0{,}10\,\text{m/s}^2$; ero taulukkoarvoon $9{,}81\,\text{m/s}^2 - 8{,}88\,\text{m/s}^2 = 0{,}93\,\text{m/s}^2$
+**Sijoitus:** $$
+\begin{aligned}
+\Delta a &= 2 \cdot 0{,}05\,\text{m/s}^2 \\
+&= 0{,}10\,\text{m/s}^2
+\end{aligned}
+$$; ero taulukkoarvoon $$
+\begin{aligned}
+&9{,}81\,\text{m/s}^2 - 8{,}88\,\text{m/s}^2 \\
+&= 0{,}93\,\text{m/s}^2
+\end{aligned}
+$$
 **Vastaus:** $a = (8{,}88 \pm 0{,}10)\,\text{m/s}^2$. Ero taulukkoarvoon, $0{,}93\,\text{m/s}^2$, on noin yhdeksän kertaa epävarmuus, joten tulos ei sovi taulukkoarvoon.
 **Järkevyys:** Suhteellinen epävarmuus on $0{,}10 : 8{,}88 \approx 1{,}1\,\%$, mikä sopii pisteiden pieneen, muutaman millimetrin hajontaan. Sovituksen epävarmuus kertoo vain satunnaisesta hajonnasta, ei systemaattisesta virheestä, joka siirtää kaikkia pisteitä samaan suuntaan.
 
@@ -336,5 +449,10 @@
 - Sovituksen epävarmuutta pidetään tuloksen koko epävarmuutena ja systemaattinen virhe jätetään huomiotta.
 
 ### Hyväksytään myös
-- c-kohdassa korjataan ensin kerroin $A$: $A_\text{k} = 1{,}10 \cdot (-4{,}44\,\text{m/s}^2) = -4{,}88\,\text{m/s}^2$ ja sitten $a_\text{k} = 2A_\text{k}$.
+- c-kohdassa korjataan ensin kerroin $A$: $$
+\begin{aligned}
+A_\text{k} &= 1{,}10 \cdot (-4{,}44\,\text{m/s}^2) \\
+&= -4{,}88\,\text{m/s}^2
+\end{aligned}
+$$ ja sitten $a_\text{k} = 2A_\text{k}$.
 - b-kohdassa vertailu suhteellisina lukuina: ero noin $9{,}5\,\%$, epävarmuus noin $1\,\%$.

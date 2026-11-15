@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 060191698eb68ae9
-Delta review (reworded extra-answers sentence, fi-easy, 2026-11-14) of the version passed at 889350cdbeb1cd52.
+CONTENT-HASH: 65942c63dea5794e
 
 ## Blocking
-- none
+
 
 ## Polish
-- [Minor] "ne vastaukset, joiden pistesumma on pienin" is slightly clumsy; "pienimmän pistemäärän saaneet vastaukset" is more natural.
+- [Minor] Short inline formulas followed by 'ja' or a comma stay on their own lines in the stacked sheet; acceptable, no action.
 
 ## Checked
-- Source-level read of the changed sentences in the scoring paragraph: short, plain, suits the selkeä suomi register, $120$ p in LaTeX, no layout effect. The figure did not change in this unit; no captures needed.
+batch delta review 5d: all reflow-*.png sheets at 360 px opened; no formula clipped, relations aligned, operators lead continuation rows.
