@@ -91,7 +91,7 @@
 ## fy5-3-L3-01
 **Annettu:** sisempi kaari $r_1 = 36{,}5\,\text{m}$, sisemmän vauhti $v_1 = 7{,}0\,\text{m/s}$, ulompi kaari $r_2 = 40{,}2\,\text{m}$; kaaret ovat samankeskisiä puoliympyröitä
 **Kysytty:** ulomman juoksijan vauhti $v_2$ yksikössä $\text{m/s}$
-**Periaate:** Rinnakkain juoksevat ovat koko ajan samalla säteellä samasta keskipisteestä katsottuna, joten he juoksevat puoliympyrän samassa ajassa $t$. Kumpikin on tasaisessa ympyräliikkeessä, ja puolikkaan kierroksen matka on $\pi r$. Kun aika on sama, vauhti on suoraan verrannollinen säteeseen.
+**Periaate:** Rinnakkain juoksevat ovat koko ajan samalla yhteisestä keskipisteestä lähtevällä suoralla, joten he juoksevat puoliympyrän samassa ajassa $t$. Kumpikin on tasaisessa ympyräliikkeessä, ja puolikkaan kierroksen matka on $\pi r$. Kun aika on sama, vauhti on suoraan verrannollinen säteeseen.
 **Kaava:** $t = \dfrac{\pi r_1}{v_1} = \dfrac{\pi r_2}{v_2}$, josta $v_2 = \dfrac{r_2}{r_1}\, v_1$
 **Muunnokset:** Ei tarvita: säteiden yksikkö supistuu.
 **Sijoitus:** $v_2 = \dfrac{40{,}2\,\text{m}}{36{,}5\,\text{m}} \cdot 7{,}0\,\text{m/s} = 1{,}1014 \cdot 7{,}0\,\text{m/s} = 7{,}710\,\text{m/s}$
@@ -282,7 +282,7 @@ t &= \frac{5378\,\text{m}}{1{,}2\,\text{m/s}} \\
 **Muunnokset:** Tiedot ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $v = \dfrac{2\pi\cdot 1{,}80\,\text{m}}{5{,}0\,\text{s}} = 2{,}262\,\text{m/s}$
 **Vastaus:** $2{,}3\,\text{m/s}$, kaksi merkitsevää numeroa kuten kierrosajassa $5{,}0\,\text{s}$.
-**Järkevyys:** Piste $B$ kulkee kierroksella matkan $2\pi\cdot 1{,}80\,\text{m} \approx 11\,\text{m}$ ajassa $5\,\text{s}$. Vauhti vastaa reipasta kävelyä, kuten leikkipuiston karusellin reunalla.
+**Järkevyys:** Piste $B$ kulkee kierroksella matkan $2\pi\cdot 1{,}80\,\text{m} \approx 11\,\text{m}$ ajassa $5\,\text{s}$. Vauhti vastaa hölkkävauhtia, kuten leikkipuiston karusellin reunalla.
 
 ## fy5-3-L1-11
 **Annettu:** kierrosaika $T = 365\,\text{d}$; taulukosta (MAFY-taulukko, Aurinkokunta, Maa) keskietäisyys Auringosta $r = 150\cdot 10^{6}\,\text{km}$

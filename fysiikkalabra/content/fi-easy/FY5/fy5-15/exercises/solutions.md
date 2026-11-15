@@ -180,7 +180,7 @@ L &= 10\,\text{dB} \cdot \lg \dfrac{1{,}0\,\text{W/m}^2}{1{,}0 \cdot 10^{-12}\,\
 &= 120\,\text{dB}
 \end{aligned}
 ```
-**Vastaus:** $120\,\text{dB}$. Vastauksessa on kaksi merkitsevää numeroa kuten kipukynnyksessä $1{,}0\,\text{W/m}^2$.
+**Vastaus:** $120\,\text{dB}$. Vastaus annetaan kokonaisina desibeleinä, koska kipukynnys $1{,}0\,\text{W/m}^2$ on annettu kahdella merkitsevällä numerolla.
 **Järkevyys:** Intensiteettien suhde on $10^{12}$. Jokainen kymmenkertaistuminen lisää tasoa $10\,\text{dB}$, joten $12 \cdot 10\,\text{dB} = 120\,\text{dB}$. Tämä sopii yleiseen tietoon: $120\,\text{dB}$ on suihkukoneen lähellä oleva taso, ja se sattuu korvaan.
 
 ## fy5-15-L2-05

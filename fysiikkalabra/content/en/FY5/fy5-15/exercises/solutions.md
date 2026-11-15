@@ -180,7 +180,7 @@ L &= 10\,\text{dB} \cdot \lg \dfrac{1.0\,\text{W/m}^2}{1.0 \cdot 10^{-12}\,\text
 &= 120\,\text{dB}
 \end{aligned}
 ```
-**Answer:** $120\,\text{dB}$, two significant figures like the threshold of pain $1.0\,\text{W/m}^2$.
+**Answer:** $120\,\text{dB}$, in whole decibels, because the threshold of pain $1.0\,\text{W/m}^2$ is given with two significant figures.
 **Reasonableness:** The ratio of the intensities is $10^{12}$, and every tenfold increase raises the level by $10\,\text{dB}$, so $12 \cdot 10\,\text{dB} = 120\,\text{dB}$. This matches the common knowledge that $120\,\text{dB}$ is the level near a jet aircraft and hurts the ear.
 
 ## fy5-15-L2-05
