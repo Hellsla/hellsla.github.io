@@ -288,4 +288,4 @@ If according to the model the line should pass through the origin but $b$ clearl
 - The kinds of error, the mean and the error estimate: [*Measuring and the reliability of a measurement*](fy1-3.html)
 - Graphs and fitting a straight line: [*Graphing and fitting a straight line*](fy1-4.html)
 - Extrapolation and extreme lines: [*Determining absolute zero*](fy3-13.html)
-- Examples of complete investigations: [*Determining the free-fall acceleration with a pendulum*](fy10-heiluri.html), [*Determining the coefficient of kinetic friction*](fy10-liukukitka.html) and [*Determining a spring constant*](fy10-jousivakio.html)
+- Examples of complete investigations: [*Determining the free-fall acceleration with a pendulum*](fy10-heiluri.html), [*Determining the coefficient of sliding friction*](fy10-liukukitka.html) and [*Determining a spring constant*](fy10-jousivakio.html)

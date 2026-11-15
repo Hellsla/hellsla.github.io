@@ -11,7 +11,7 @@
         "fy4-6",
         "fy4-4"
       ],
-      "text": "On the shore by the summer cottage there is a wooden boat ramp whose angle of inclination is $14^\\circ$. The surface of the ramp has plastic slide strips. In the autumn an aluminium boat with a mass of $280\\,\\text{kg}$ is pulled out of the water up the ramp with an electric winch. The cable of the winch is parallel to the ramp.\n\nBetween the bottom of the boat and the wet slide strips:\n\n- coefficient of static friction $\\mu_0 = 0.35$\n- coefficient of kinetic friction $\\mu = 0.25$",
+      "text": "On the shore by the summer cottage there is a wooden boat ramp whose angle of inclination is $14^\\circ$. The surface of the ramp has plastic slide strips. In the autumn an aluminium boat with a mass of $280\\,\\text{kg}$ is pulled out of the water up the ramp with an electric winch. The cable of the winch is parallel to the ramp.\n\nBetween the bottom of the boat and the wet slide strips:\n\n- coefficient of static friction $\\mu_0 = 0.35$\n- coefficient of sliding friction $\\mu = 0.25$",
       "parts": [
         {
           "id": "a",
@@ -22,7 +22,7 @@
             {
               "key": "fbd_forces",
               "points": 1,
-              "detail": "Four forces: the weight, the normal force of the ramp, kinetic friction and the tension of the cable; no extra force in the direction of motion."
+              "detail": "Four forces: the weight, the normal force of the ramp, sliding friction and the tension of the cable; no extra force in the direction of motion."
             },
             {
               "key": "fbd_directions",
@@ -140,7 +140,7 @@
         "fy4-6",
         "fy4-3"
       ],
-      "text": "On a frozen lake a snowmobile pulls two sledges one behind the other. Between the snowmobile and the front sledge A there is rope 1, and between sledge A and the rear sledge B rope 2. The ropes are horizontal and light.\n\n| Sledge | Mass with load |\n|---|---|\n| A | $120\\,\\text{kg}$ |\n| B | $80\\,\\text{kg}$ |\n\nThe coefficient of kinetic friction between each sledge and the snow is $0.10$. The snowmobile sets off so that the sledges accelerate steadily at $0.50\\,\\text{m/s}^2$. Air resistance is ignored.",
+      "text": "On a frozen lake a snowmobile pulls two sledges one behind the other. Between the snowmobile and the front sledge A there is rope 1, and between sledge A and the rear sledge B rope 2. The ropes are horizontal and light.\n\n| Sledge | Mass with load |\n|---|---|\n| A | $120\\,\\text{kg}$ |\n| B | $80\\,\\text{kg}$ |\n\nThe coefficient of sliding friction between each sledge and the snow is $0.10$. The snowmobile sets off so that the sledges accelerate steadily at $0.50\\,\\text{m/s}^2$. Air resistance is ignored.",
       "parts": [
         {
           "id": "a",
@@ -626,7 +626,7 @@
           "id": "c",
           "kind": "word",
           "points": 5,
-          "text": "Plan an experiment to determine the coefficient of kinetic friction for the same surfaces. Say what is measured, with what equipment, how the result is calculated and how the reliability is improved.",
+          "text": "Plan an experiment to determine the coefficient of sliding friction for the same surfaces. Say what is measured, with what equipment, how the result is calculated and how the reliability is improved.",
           "criteria": [
             {
               "text": "A working method: for example the phone is pulled on the horizontal cover with a force sensor at a constant velocity, so that $F = \\mu mg$, or the phone slides on a steeper cover and the acceleration is measured from a video or with the phone's acceleration sensor.",
@@ -667,7 +667,7 @@
         "fy4-2",
         "fy4-14"
       ],
-      "text": "Behind the school there is a hill for sliding mats: a $40\\,\\text{m}$ long even slope with an angle of inclination of $12^\\circ$, and below it a horizontal field. The transition between the slope and the field is gentle, and the speed does not change there. The coefficient of kinetic friction between the plastic sliding mat and the packed snow is $0.080$ both on the slope and on the field. A rider starts from rest at the top of the slope. In the first model air resistance is ignored.",
+      "text": "Behind the school there is a hill for sliding mats: a $40\\,\\text{m}$ long even slope with an angle of inclination of $12^\\circ$, and below it a horizontal field. The transition between the slope and the field is gentle, and the speed does not change there. The coefficient of sliding friction between the plastic sliding mat and the packed snow is $0.080$ both on the slope and on the field. A rider starts from rest at the top of the slope. In the first model air resistance is ignored.",
       "parts": [
         {
           "id": "a",

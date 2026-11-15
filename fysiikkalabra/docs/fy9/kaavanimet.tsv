@@ -120,7 +120,7 @@ fy9-voimat	190	\Sigma\overline{F} = \overline{0} \ \Leftrightarrow\ \overline{v}
 fy9-voimat	190	\Sigma\overline{F} = m\overline{a}	\Sigma\overline{F} = m\overline{a}	Newtonin 2. laki (dynamiikan peruslaki)	Newton's second law (fundamental law of dynamics)	MAFY	Mekaniikan kaavoja	
 fy9-voimat	190	\overline{F}_{AB} = -\overline{F}_{BA}	\overline{F}_{AB} = -\overline{F}_{BA}			ei MAFY:ssa		ei MAFY:ssa
 fy9-voimat	200	\overline{G} = m\overline{g}	\overline{G} = m\overline{g}	kappaleeseen vaikuttava painovoima Maan pinnalla	weight of a body at the Earth's surface	MAFY	Mekaniikan kaavoja	
-fy9-voimat	200	F_\mu = \mu N	F_\mu = \mu N	liukukitka	kinetic friction	MAFY	Mekaniikan kaavoja	
+fy9-voimat	200	F_\mu = \mu N	F_\mu = \mu N	liukukitka	sliding friction	MAFY	Mekaniikan kaavoja	
 fy9-voimat	200	F_{\mu_0} = \mu_0 N	F_{\mu_0} = \mu_0 N	lähtökitka, eli täysin kehittynyt lepokitka	limiting static friction	MAFY	Mekaniikan kaavoja	kirjoitettu MAFY:n muotoon 2026-11-12 (docs/fy9/mafy-tunnukset.tsv)
 fy9-ympyraliike	253	M = Fr	M = Fr	voiman momentti	moment of a force	MAFY	Mekaniikan kaavoja	
 fy9-ympyraliike	253	\Sigma\overline{F} = \overline{0}	\Sigma\overline{F} = \overline{0}			ei MAFY:ssa		ei MAFY:ssa

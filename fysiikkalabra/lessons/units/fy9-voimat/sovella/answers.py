@@ -20,7 +20,7 @@ G = m * g
 Gx, Gy = G * math.sin(rad(al)), G * math.cos(rad(al))
 T_const = Gx + mu * Gy                                # constant speed: T = mg sin a + mu mg cos a
 a_start = 0.20
-T_start = T_const + m * a_start                       # speeding up 0,20 m/s^2 (still sliding: kinetic friction)
+T_start = T_const + m * a_start                       # speeding up 0,20 m/s^2 (still sliding: sliding friction)
 alpha0 = math.degrees(math.atan(mu0))                 # the boat slides off by itself above this angle
 out.update({"fy9-voimat-s1-G": round(G, 1), "fy9-voimat-s1-Gx": round(Gx, 1), "fy9-voimat-s1-N": round(Gy, 1),
             "fy9-voimat-s1-Fmu": round(mu * Gy, 1), "fy9-voimat-s1-b": round(T_const, 1),

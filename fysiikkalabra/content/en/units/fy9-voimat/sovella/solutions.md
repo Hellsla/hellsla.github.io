@@ -2,11 +2,11 @@
 
 ### a)
 **Find:** the free-body diagram of the boat when the winch pulls it up the ramp at a constant velocity
-**Principle:** The boat is chosen as the object and its interactions are found: the Earth (weight), the slide strips of the ramp (normal force and friction) and the cable (tension). The boat slides up the ramp, so kinetic friction points down the ramp. The velocity is constant, so the sum of the forces is zero.
+**Principle:** The boat is chosen as the object and its interactions are found: the Earth (weight), the slide strips of the ramp (normal force and friction) and the cable (tension). The boat slides up the ramp, so sliding friction points down the ramp. The velocity is constant, so the sum of the forces is zero.
 **Model answer:** The boat is drawn as a rectangle parallel to the ramp.
 - The weight $\overline{G}$ starts from the centre and points straight down, not perpendicular to the ramp.
 - The normal force $\overline{N}$ starts from the bottom and points perpendicular to the ramp, outwards. It is as large as the component of the weight perpendicular to the ramp, so it is slightly smaller than the weight.
-- Kinetic friction $\overline{F}_\mu$ starts from the lower corner of the bottom and points down the ramp.
+- Sliding friction $\overline{F}_\mu$ starts from the lower corner of the bottom and points down the ramp.
 - The tension of the cable $\overline{T}$ starts from the bow and points up the ramp.
 
 Lengths of the arrows: $\overline{T}$ is as long as the friction and the component of the weight along the ramp together, because the net force is zero. The velocity may be marked separately next to the diagram, but not as a force.
@@ -21,9 +21,9 @@ v ylös
 ```
 
 ### b)
-**Given:** mass $m = 280\,\text{kg}$, angle of inclination of the ramp $\alpha = 14^\circ$, coefficient of kinetic friction $\mu = 0.25$, velocity constant, $g = 9.81\,\text{m/s}^2$
+**Given:** mass $m = 280\,\text{kg}$, angle of inclination of the ramp $\alpha = 14^\circ$, coefficient of sliding friction $\mu = 0.25$, velocity constant, $g = 9.81\,\text{m/s}^2$
 **Find:** the tension $T$ of the winch cable
-**Principle:** The velocity is constant, so by Newton's first law the sum of the forces is zero both along the ramp and perpendicular to it. The boat slides, so the friction is kinetic friction $\mu N$, and perpendicular to the ramp only the component of the weight and the normal force act (chapter *Weight, friction and the inclined plane*).
+**Principle:** The velocity is constant, so by Newton's first law the sum of the forces is zero both along the ramp and perpendicular to it. The boat slides, so the friction is sliding friction $\mu N$, and perpendicular to the ramp only the component of the weight and the normal force act (chapter *Weight, friction and the inclined plane*).
 **Free-body diagram:** the diagram of part a; the $x$ axis up the ramp and the $y$ axis perpendicular to the ramp, outwards. The components of the weight are $G_x = mg\sin\alpha$ down the ramp and $G_y = mg\cos\alpha$ towards the ramp.
 ```voimakuvio
 pinta 14
@@ -62,7 +62,7 @@ a 0
 ### Yleisiä virheitä
 - A "force of motion" up the ramp is drawn in the free-body diagram in addition to the force of the cable, or the components of the weight are drawn as forces of their own in addition to the weight.
 - The normal force is taken as $N = mg$, although on the ramp $N = mg\cos\alpha$.
-- Friction is drawn up the ramp, although the boat slides up and kinetic friction opposes the sliding.
+- Friction is drawn up the ramp, although the boat slides up and sliding friction opposes the sliding.
 - In part c static friction is taken directly as $\mu_0 N$, although that is only the upper limit; or the condition for sliding is written with the sine, $\sin\alpha_0 = \mu_0$.
 
 ### Hyväksytään myös
@@ -74,8 +74,8 @@ a 0
 **Find:** the free-body diagrams of sledge A and sledge B during the acceleration
 **Principle:** Each of the connected bodies is chosen as the object in turn, and each gets its own diagram containing only the forces acting on it. A rope pulls each sledge towards itself: rope 2 pulls A backwards and B forwards with forces of the same magnitude, because the rope is light.
 **Model answer:** Each sledge is drawn as a rectangle of its own.
-- Sledge A: weight $\overline{G}_\text{A}$ down, normal force $\overline{N}_\text{A}$ up, the force of rope 1 $\overline{T}_1$ forwards, the force of rope 2 $\overline{T}_2$ backwards and kinetic friction $\overline{F}_{\mu\text{A}}$ backwards.
-- Sledge B: weight $\overline{G}_\text{B}$ down, normal force $\overline{N}_\text{B}$ up, the force of rope 2 $\overline{T}_2$ forwards and kinetic friction $\overline{F}_{\mu\text{B}}$ backwards.
+- Sledge A: weight $\overline{G}_\text{A}$ down, normal force $\overline{N}_\text{A}$ up, the force of rope 1 $\overline{T}_1$ forwards, the force of rope 2 $\overline{T}_2$ backwards and sliding friction $\overline{F}_{\mu\text{A}}$ backwards.
+- Sledge B: weight $\overline{G}_\text{B}$ down, normal force $\overline{N}_\text{B}$ up, the force of rope 2 $\overline{T}_2$ forwards and sliding friction $\overline{F}_{\mu\text{B}}$ backwards.
 
 The net force on each sledge points forwards, because the sledges accelerate. The acceleration is marked next to the diagrams in its own colour. The snowmobile is not drawn, and the force of B on the rope is not drawn in the diagram of B. The horizontal forces are drawn to a scale of their own, because they are much smaller than the weights.
 ```voimakuvio
@@ -96,7 +96,7 @@ a oikea
 ```
 
 ### b)
-**Given:** $m_\text{B} = 80\,\text{kg}$, coefficient of kinetic friction $\mu = 0.10$, acceleration $a = 0.50\,\text{m/s}^2$, $g = 9.81\,\text{m/s}^2$
+**Given:** $m_\text{B} = 80\,\text{kg}$, coefficient of sliding friction $\mu = 0.10$, acceleration $a = 0.50\,\text{m/s}^2$, $g = 9.81\,\text{m/s}^2$
 **Find:** the tension $T_2$ in rope 2
 **Principle:** The horizontal forces on sledge B are the pull of rope 2 forwards and friction backwards. By Newton's second law their sum is $m_\text{B} a$. There is no vertical acceleration, so $N_\text{B} = m_\text{B} g$ and the friction is $\mu m_\text{B} g$ (chapter *Equation of motion for connected bodies*).
 **Formula:** $T_2 - \mu m_\text{B} g = m_\text{B} a$, so $T_2 = m_\text{B}(a + \mu g)$
@@ -314,9 +314,9 @@ v oikea
 *Conclusion.* The result applies only to this case and this book cover, not to all surfaces. Moreover, with the correct formula the limiting angle is about $22^\circ$, not $33^\circ$: the phone starts to slide already at an angle of about $22^\circ$.
 
 ### c)
-**Find:** an experiment to determine the coefficient of kinetic friction for the same surfaces
-**Principle:** Kinetic friction acts on a sliding object, and its magnitude is found from Newton's laws when either the pull at a constant velocity or the acceleration on a slope is measured.
-**Model answer:** *Method 1, pulling.* The book lies on a horizontal table, and a string and a force sensor (or a spring balance) are attached to the phone. The phone is pulled horizontally at a constant velocity, so the pull equals the kinetic friction and the normal force equals the weight: $\mu = \dfrac{F}{mg}$. The mass of the phone is weighed on a scale. The mass is changed by adding masses on top of the phone, and the slope of the line through the origin fitted to the $(N, F_\mu)$ points is $\mu$.
+**Find:** an experiment to determine the coefficient of sliding friction for the same surfaces
+**Principle:** Sliding friction acts on a sliding object, and its magnitude is found from Newton's laws when either the pull at a constant velocity or the acceleration on a slope is measured.
+**Model answer:** *Method 1, pulling.* The book lies on a horizontal table, and a string and a force sensor (or a spring balance) are attached to the phone. The phone is pulled horizontally at a constant velocity, so the pull equals the sliding friction and the normal force equals the weight: $\mu = \dfrac{F}{mg}$. The mass of the phone is weighed on a scale. The mass is changed by adding masses on top of the phone, and the slope of the line through the origin fitted to the $(N, F_\mu)$ points is $\mu$.
 
 *Method 2, acceleration.* The cover is tilted steeper than the limiting angle, for example to $30^\circ$, and the phone is released to slide from rest. The acceleration is measured from a video or with the phone's own acceleration sensor. From the free-body diagram $\mu = \dfrac{g\sin\alpha - a}{g\cos\alpha}$.
 
@@ -326,7 +326,7 @@ v oikea
 - Measurement 5 is removed only because it differs from the others, or it is included in the mean although a gross error is recorded.
 - The coefficient is calculated with the sine or the cosine instead of the tangent.
 - The coefficient is given a unit.
-- In part c the pull is not made at a constant velocity, so the pull is not equal to the friction, or kinetic friction is measured from the limiting angle, which gives static friction.
+- In part c the pull is not made at a constant velocity, so the pull is not equal to the friction, or sliding friction is measured from the limiting angle, which gives static friction.
 
 ### Hyväksytään myös
 - In part a the tangent of each angle separately and their mean ($0.415$).
@@ -335,10 +335,10 @@ v oikea
 ## fy9-voimat-s6
 
 ### a)
-**Given:** length of the slope $L = 40\,\text{m}$, angle of inclination $\alpha = 12^\circ$, coefficient of kinetic friction $\mu = 0.080$, initial velocity $0$, $g = 9.81\,\text{m/s}^2$; air resistance is left out
+**Given:** length of the slope $L = 40\,\text{m}$, angle of inclination $\alpha = 12^\circ$, coefficient of sliding friction $\mu = 0.080$, initial velocity $0$, $g = 9.81\,\text{m/s}^2$; air resistance is left out
 **Find:** the speed $v$ at the bottom of the slope
-**Principle:** The forces on the rider are the weight, the normal force of the slope and kinetic friction up the slope. The forces are constant, so the acceleration is constant (chapter *Weight, friction and the inclined plane*), and the equations of uniformly accelerated motion apply (chapter *Acceleration and uniformly accelerated motion*).
-**Free-body diagram:** The rider as a rectangle parallel to the slope, the $x$ axis down the slope. The weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ perpendicular to the slope, outwards, and kinetic friction $\overline{F}_\mu$ from the upper corner of the bottom surface up the slope. The components of the weight with dashed lines.
+**Principle:** The forces on the rider are the weight, the normal force of the slope and sliding friction up the slope. The forces are constant, so the acceleration is constant (chapter *Weight, friction and the inclined plane*), and the equations of uniformly accelerated motion apply (chapter *Acceleration and uniformly accelerated motion*).
+**Free-body diagram:** The rider as a rectangle parallel to the slope, the $x$ axis down the slope. The weight $\overline{G}$ from the centre straight down, the normal force $\overline{N}$ perpendicular to the slope, outwards, and sliding friction $\overline{F}_\mu$ from the upper corner of the bottom surface up the slope. The components of the weight with dashed lines.
 ```voimakuvio
 pinta -12
 G 100
@@ -357,8 +357,8 @@ komponentit G
 ### b)
 **Given:** from part a $v = 10.09\,\text{m/s}$, $\mu = 0.080$, final velocity $0$, $g = 9.81\,\text{m/s}^2$
 **Find:** the sliding distance $s_2$ on the field
-**Principle:** The transition between the slope and the field is gentle, so the initial speed on the field is the speed of part a. On the horizontal field the normal force equals the weight, and the only horizontal force is kinetic friction backwards. The deceleration is constant, so the equations of uniformly accelerated motion apply.
-**Free-body diagram:** The rider as a rectangle: the weight $\overline{G}$ down, the normal force $\overline{N}$ up and kinetic friction $\overline{F}_\mu$ backwards. The acceleration points backwards and the velocity forwards.
+**Principle:** The transition between the slope and the field is gentle, so the initial speed on the field is the speed of part a. On the horizontal field the normal force equals the weight, and the only horizontal force is sliding friction backwards. The deceleration is constant, so the equations of uniformly accelerated motion apply.
+**Free-body diagram:** The rider as a rectangle: the weight $\overline{G}$ down, the normal force $\overline{N}$ up and sliding friction $\overline{F}_\mu$ backwards. The acceleration points backwards and the velocity forwards.
 ```voimakuvio
 pinta 0
 G 100
