@@ -472,7 +472,7 @@ Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitte
 
 ## 18. Oikoluvun korjaukset FY1–FY9 (opettaja 2026-11-15)
 
-Tehty: FY6 (PR #615).
+Tehty: FY6 (PR #615). FY3 tehty: claude/oikoluku-fy3 (PR #613).
 
 Ohjeet ja päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md` kohdat 4–11 ja 13. Kaikki luvut, kurssi kerrallaan,
 ilman pilottipysähdystä (opettaja: "kaikki luvut vaan, ei ongelma jos tokeneita menee"); kulutus raportoidaan, mutta

@@ -426,11 +426,11 @@
         },
         {
           "text": "Sähkö muuttuu lämmöksi pumpussa kolminkertaisella hyötysuhteella.",
-          "feedback": "Hyötysuhde ei voi olla yli $100\\,\\%$, koska sähköstä ei saa enempää energiaa kuin sitä tuli. Sähkövastus muuttaisi $1{,}0\\,\\text{kWh}$ sähköä täsmälleen $1{,}0\\,\\text{kWh}$ lämmöksi. Lämpöpumpun lämpökerroin $3{,}0$ on eri asia kuin hyötysuhde, koska suurin osa luovutetusta lämmöstä on siirretty ulkoa."
+          "feedback": "Hyötysuhde ei voi olla yli $100\\,\\%$, koska sähköstä ei saa enempää energiaa kuin sitä tuli. Sähkövastuksessa $1{,}0\\,\\text{kWh}$ sähköä kasvattaisi vastuksen sisäenergiaa täsmälleen $1{,}0\\,\\text{kWh}$, ja tämä energia siirtyisi lämpönä huoneeseen. Lämpöpumpun lämpökerroin $3{,}0$ on eri asia kuin hyötysuhde, koska suurin osa luovutetusta lämmöstä on siirretty ulkoa."
         },
         {
           "text": "Ylimääräinen lämpö syntyy pumpun kitkasta ja muista häviöistä.",
-          "feedback": "Kitka ja häviöt muuttavat osan sähköstä lämmöksi, mutta se on osa sähköenergiaa $1{,}0\\,\\text{kWh}$, eikä se voi selittää kahta lisäkilowattituntia. Suurin osa luovutetusta lämmöstä on lämpöä, joka on siirretty ulkoilmasta."
+          "feedback": "Kitka ja häviöt muuttavat osan sähköstä sisäenergiaksi, joka siirtyy lämpönä ympäristöön, mutta se on osa sähköenergiaa $1{,}0\\,\\text{kWh}$, eikä se voi selittää kahta lisäkilowattituntia. Suurin osa luovutetusta lämmöstä on lämpöä, joka on siirretty ulkoilmasta."
         }
       ]
     },

@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fe7f595d5dc5d197
+CONTENT-HASH: e9f9fa81916b9e73
 
 ## Blocking
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-batch delta review: scratchpad kc/fy3-9-390.png and kc/fy3-9-1280.png (the new section cut from the built page, preview/fi-easy/fy3-9.html): stacked at 390 px, two columns at 1280 px, no raw maths, no overflow, no clipping; the diff text read for wording (the packet's own captures show no figure change, so only sheets of the new section were opened).
+- delta: open-ennusta-1280-1 (Prediction 1 and 2: ml, kPa, N, degrees all typeset, upright, thin space, no line break inside a quantity), open-exit-1280 (exit ticket question and answer chain). Source of inquiry.json, exit-ticket.json and lesson.md scanned: no plain number with unit remains outside aria-labels.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

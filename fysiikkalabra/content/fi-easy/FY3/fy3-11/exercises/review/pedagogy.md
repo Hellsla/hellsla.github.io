@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f00dc3e983462abd
+CONTENT-HASH: e3ee53612f37dd4f
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- L1-09 and L2-09 are good level fits. Optional: L1-09 solution could say why 4 % tolerance (atm 101325 vs 1e5 rounding).
+- fy3-11 L1 heat-loss solution — "kolme merkitsevää numeroa, koska loppunolla on merkitsevä" asserts a convention the task does not state (480 kW can be read as two figures); either write 480 kW as $4{,}80 \cdot 10^{2}\,\text{kW}$ in the task or keep two figures as before.
 
 ## Checked
-Changed symbols (P_a/P_o, Q1) and the added exercises read in full: solutions follow the staged format, symbols are defined where used, added L1-09 (lookup) and L2-09 (figure) match their levels and chapter.
+- Delta 2026-11-15: "polttoatehon" -> "polttoainetehon" is the correct term; "jakautuu mekaaniseen tehoon ja hukkalämpöön, joka siirtyy ympäristöön" reads correctly in both principle lines (also the fuel-consumption task).
+- Numbers (720 kW, 120 MW) and solution structure unchanged.

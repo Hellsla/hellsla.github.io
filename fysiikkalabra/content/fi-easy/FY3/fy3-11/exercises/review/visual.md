@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f00dc3e983462abd
+CONTENT-HASH: e3ee53612f37dd4f
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- [Minor] fy3-11 page, section #sovella (not an exercise): at 390 px a KaTeX span reaches x=431, so the page scrolls horizontally; fy3-15 has an SVG over 390 px wide. Neither is in the changed exercises; check separately.
+- [Minor] solutions.md L3-01 and L3-03 — the reworded "mekaaniseen tehoon ja hukkalämpöön, joka siirtyy…" lines were read in the diff only.
 
 ## Checked
-fy3-11 L1-09, L2-09 (pv-isobaari figure), L2-04, L3-02 opened with solutions at 390 and 1280 px (fi-easy). P_a/P_o and Q_1 render cleanly; the graph is legible with axes and units.
+- Delta (sisäenergia/lämpönä wording, 720 kW now three significant figures, "polttoainetehon"): open-exercises-L2-1280-5 (L2-04 solution: chain, answer, järkevyys; next task and table layout intact).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

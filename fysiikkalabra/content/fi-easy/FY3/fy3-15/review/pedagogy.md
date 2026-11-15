@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 534f119cf21d1296
+CONTENT-HASH: cd1a10f1eb4be45c
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- Lesson: 'Laitoksen sähkö- ja lämpötehon suhde sekä käyttö riippuvat laitostyypistä ja energiantarpeesta' is vague for an S2 reader; one concrete example (kesä/talvi) would help.
-- 'jäähdytyksen tuottamisessa' and 'lämpöprosesseissa' are not explained; one short gloss each.
+- none
 
 ## Checked
-batch delta review: wording diff in lesson.md and inquiry.json model answer; consistent with the Yleinen virhekäsitys and the task.
+- Delta 2026-11-15: "sähköksi, kaukolämmöksi ja hukkalämmöksi" -> "sähköön, kaukolämpöön ja hukkalämpöön" in the hint and the solution is the correct case for energy dividing into parts; the Yleinen virhekäsitys line "siirtyisi hukkalämpönä ympäristöön" is clearer and physically exact.
+- Hint, solution (400 − 120 − 232 = 48 MW) and misconception text agree; no number or step changed.

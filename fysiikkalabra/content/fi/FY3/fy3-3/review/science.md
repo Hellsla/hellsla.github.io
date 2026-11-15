@@ -1,15 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: d97ae414b55734f2
+CONTENT-HASH: 0bb2960dd8b3e142
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- inquiry.json siirto solution, Järkevyys — "kansi painuu ulospäin": the net force on the lid is outward, but a tight lid need not move; "ilma painaa kantta ulospäin" says what the numbers show.
+- lesson.md Esimerkki, Tulos — two significant figures are claimed but the slope 0,37 kPa/°C comes from 137 − 100 (two figures by subtraction); a least-squares fit gives −271 °C, so −270 °C is fine; one clause saying the difference of the end readings limits the precision would make the reason exact.
 
 ## Checked
-- delta review 2026-11-10 (measurement window reset, teacher's FY3 brief): a change of T or V empties hist before the steps of the frame, so the 1,5 s window holds only hits of the new state; the piston fix maps x > right−R to BOX.x+R+(x−BOX.x−R)·V/V_old ≤ right−R, so compression adds no clamp hits and keeps speeds (T slider fixed, as the model says); expansion untouched. Node port: long-run measured/theory 0,99–1,00 at (300, 1), (300, 2), (600, 0,5), (150, 1), so p ∝ T/V is not faked; window scatter ±5 % (1 dm³) to ±12 % (2 dm³, 150 K) is pre-existing. Settling text keeps the theory value, which is the model, not a measurement; t = 0 guard gives 0 only while hidden. 'odota pari sekuntia' (≥ 1,5 s) still valid. Hashes equal at start and end.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): summary bullet and kelvin-scale figure label (figures.py w=300, x=72, centred on 222) now the numerical-value equation T/K = θ/°C + 273{,}15, identical to the teacher's Kaava (lesson.md:231); 0 K = −273{,}15 °C unchanged and consistent. Hashes equal at start and end.
-- delta review 2026-11-07 (teacher's proofread replacement texts): kelvin formula as numerical-value equation T/K = θ/°C + 273,15, example 20 °C = 293,15 K and temperature difference 10 K = 10 °C are correct; inquiry changes are typesetting only (128 kPa = 120 kPa·313,15/293,15 rechecked).
-- delta review 2026-11-06 (teacher's correction): Ennuste 3 title no longer says a warm gas "painaa enemmän" (reads as 'weighs more'; heating a closed gas does not change its mass or weight) but asks why the pressure of a warm gas is higher; the hook question and two feedback texts now speak of the air's pressure increasing. Physics consistent with the micro model (same particles, faster, more frequent and harder wall collisions → higher pressure). No numbers, symbols, answers or correct options changed.
-Re-review after typesetting round (word-level diff against the passed versions). Only change: inquiry.json activity 17 solution, Sijoitus line. Old nested fraction 100 / (1/3 1/°C) replaced by 100 · 3 °C: 100 ÷ (1/3 per °C) = 300 °C, so θ0 = 27 °C − 300 °C = −273 °C unchanged; k = 1/3 1/°C, answer, Järkevyys chain and absolute-zero remark untouched and correct (linear extrapolation, p ∝ T; −273,15 °C stated). Unit is correct (°C), \cdot used, valid LaTeX. Learning-goal verb changes (-maan/-mään) carry no physics.
+- Changed lines: siirto check 60/293 ≈ 0,205, 0,205 · 101 kPa ≈ 21 kPa, 122 kPa — right; "ala-asteikko" wording only.
+- Definitions: system, closed system, state variables, pressure, temperature with its limits (dilute gas: translational KE; liquids/solids: interaction energy; motion does not stop at 0 K) follow the guardrails.
+- Mechanism: volume change → more frequent hits, not harder; temperature rise → more frequent and harder hits — stated consistently in text, predictions, model answer and exit ticket.
+- p ∝ T stated with its conditions (constant V and n, dilute gas far from condensing).
+- Worked example: symbolic θ₀ = −p₀/k first; k = 0,37, θ₀ = −270 °C; check 136,6 kPa vs 137 kPa; extrapolation flagged as a model (gases condense first); endpoints are not neighbouring points.
+- Kelvin-scale figure is to scale as claimed; formula T/K = θ/°C + 273,15 right.
+- sim.js: 2D momentum flux per wall length averaged over both axes gives p ∝ T/V; pRef and pTheory consistent; speed control does not alter pressure; equal-speed, no-collision 2D assumptions stated in `model`.
+- exp-1 (T varied, V = 1 locked) and exp-2 (V varied, T = 300 K locked) isolate their variable; simState gives theta, vRel, pRel, pTheory.
+- Recomputed: 600,15/300,15 ≈ 2, √2 = 1,41; 128 kPa; 122/404/83,8 kPa; 1,035; −273 °C; all predictions and checks have exactly one correct option with correct distractor feedback.
+- Misconception, summary, check-3 model and exit ticket agree with the theory.

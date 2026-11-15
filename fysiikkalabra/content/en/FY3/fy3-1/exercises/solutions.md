@@ -16,7 +16,7 @@
 **Conversions:** No conversions are needed: the extension comes out in the same unit as $x_1$ (centimetres), and the newtons cancel in the ratio $\dfrac{F}{F_1}$.
 **Substitution:** $x = \dfrac{2.0\,\text{cm} \cdot 12\,\text{N}}{4.0\,\text{N}} = 6.0\,\text{cm}$
 **Answer:** $6.0\,\text{cm}$, two significant figures like the given values.
-**Reasonableness:** The force is $\dfrac{12}{4.0} = 3$ times as great, so the extension must be $3 \cdot 2.0\,\text{cm} = 6.0\,\text{cm}$. The spring constant agrees too: $\dfrac{2.0\,\text{cm}}{4.0\,\text{N}} = 0.50\,\tfrac{\text{cm}}{\text{N}}$ and $0.50 \cdot 12 = 6.0$.
+**Reasonableness:** The force is $\dfrac{12}{4.0} = 3$ times as great, so the extension must be $3 \cdot 2.0\,\text{cm} = 6.0\,\text{cm}$. The extension per newton agrees too: $\dfrac{2.0\,\text{cm}}{4.0\,\text{N}} = 0.50\,\tfrac{\text{cm}}{\text{N}}$ and $0.50 \cdot 12 = 6.0$.
 
 ## fy3-1-L1-03
 **Given:** $m = 30\,\text{kg}$; from the table $g_\text{Moon} = 1.62\,\text{m/s}^2$
@@ -47,7 +47,7 @@
 **Conversions:** The mass is in kilograms and $g$ in $\text{m/s}^2$, so the result comes out directly in newtons.
 **Substitution:** $G = 2.5\,\text{kg} \cdot 24.8\,\text{m/s}^2 = 62.0\,\text{N}$
 **Answer:** $62\,\text{N}$, two significant figures like the mass $2.5\,\text{kg}$.
-**Reasonableness:** On Earth the weight would be $2.5\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 24.5\,\text{N}$. Jupiter's $g$ is $\dfrac{24.8}{9.81} \approx 2.5$ times the Earth's value, and $2.5 \cdot 24.5\,\text{N} \approx 62\,\text{N}$, so $62\,\text{N}$ agrees.
+**Reasonableness:** On Earth the weight would be $2.5\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 24.5\,\text{N}$. Jupiter's $g$ is $\dfrac{24.8}{9.81} \approx 2.5$ times the Earth's value, and $2.5 \cdot 24.5\,\text{N} \approx 61\,\text{N}$, so $62\,\text{N}$ agrees to within the rounding of the ratio $2.5$.
 
 ## fy3-1-L2-01
 **Given:** the force meter reading, that is, the weight $G = 49\,\text{N}$ on Earth; from the table $g = 9.81\,\text{m/s}^2$

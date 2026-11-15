@@ -152,7 +152,7 @@ Työ on tapa siirtää energiaa. Tämän osoitti James Prescott Joule 1840-luvul
 
 <svg data-fig="joule" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva Joulen kokeesta. Putoava paino vetää narua, joka kulkee väkipyörän yli ja pyörittää vesiastiassa olevaa siipipyörää. Painon voima tekee työn pudotusmatkalla h, ja siipipyörä lämmittää vettä: työ kasvattaa veden sisäenergiaa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy32-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
-  <foreignObject x="190" y="15.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{työ} \to \text{sisäenergia}$</div></foreignObject>
+  <foreignObject x="152.5" y="15.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{työ} \to \text{sisäenergia}$</div></foreignObject>
   <rect x="62" y="170" width="196" height="100" fill="url(#fy32-water)"/>
   <line x1="62" y1="170" x2="258" y2="170" stroke="#2f74b5" stroke-width="2" stroke-linecap="butt"/>
   <path d="M60,130 V272 H260 V130" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round"/>

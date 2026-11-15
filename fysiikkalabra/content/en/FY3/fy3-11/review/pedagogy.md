@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: fd5256866c60f33c
+CONTENT-HASH: 908453e7bc0e46a6
 
 ## Blocking
-
-None. W = pΔV is now the magnitude of compression work and P_a is defined in the worked example; notation is followable.
+(none)
 
 ## Polish
-
-None.
+(none)
 
 ## Checked
-
-Diff since previous PASS and the MAFY notation in lesson/solutions; symbols defined where first used; numbers and levels unchanged.
+- Delta: two distractor feedbacks of the heat-pump check now say that electricity raises the internal energy of the resistor or the pump, which is transferred to the room as heat; correct use of heat versus internal energy and it still repairs the 'efficiency over 100 %' and 'friction' misconceptions.
+- The wrong options still do not disclose the correct explanation before the student has chosen; COP 3.0 versus efficiency distinction kept.
