@@ -637,11 +637,13 @@ code, out = run(t, "reviews.py", "verify")
 expect("verify rejects a scope line whose base does not hold the hash it names", code == 1 and "does not hold hash" in out, out[-600:])
 # 8c. the marker "(esimerkkiaineisto)" taken out of table captions (teacher 2026-11-15): all three reviewers carry over; any
 # other change in the same file, a changed caption word included, is reviewed as usual
-t = project(); init_git(t); X = t / "content/fi/FY3" / LESSON / "exercises"; E = X / "exercises.json"
+t = project(); X = t / "content/fi/FY3" / LESSON / "exercises"; E = X / "exercises.json"
+E.write_text(re.sub(r'("caption": ")([^"]*)(")', r'\1\2 (esimerkkiaineisto)\3', E.read_text()))   # the passed version has the marker, whatever the real content has now
+init_git(t)
 for n in ("science", "pedagogy", "visual"): report(t, n, part="exercises")
 git(t, "add", "."); git(t, "commit", "-qm", "exercise reviews")
 E0 = E.read_text(); LAB = " (esimerkkiaineisto)"
-expect("fy3-3's exercises have captions with the marker", E0.count(LAB + '"') >= 2, E0.count(LAB))
+expect("the passed exercise set has captions with the marker", E0.count(LAB + '"') >= 2, E0.count(LAB))
 def cap(text): E.write_text(text); return run(t, "reviews.py", "scope", LESSON, "--exercises")[1]
 out = cap(E0.replace(LAB + '"', '"'))
 expect("the marker taken out of every caption: none for all three, category caption-label", out.count(": none") == 3 and "caption-label" in out, out)
