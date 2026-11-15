@@ -544,3 +544,10 @@ Perustelu: marginaaliin mahtuva kuva olisi noin neljänneksen pienempi, ja Teori
 
 Luvut fy3-13, fy3-14, fy3-16 ja fy4-16 jäävät ilman omia kortteja ja alleviivauksia (#526:n siirtojen jälkeen).
 Kortteja ei lisätä niihin.
+
+## Kirjattu päätös: kaikki roolit Fable (opettaja 2026-11-15)
+
+Opettaja 15.11: "Fable usage is 0% and all models 67%. Can I use fable more? Change models so". Kaikki agentit
+(`.claude/agents/`: developer, science-reviewer, pedagogy-reviewer, visual-editorial-reviewer) ja komennot
+(`.claude/commands/`) ajetaan Fablella; `/lesson`-komennon mallitaulukko on ohje. Aiempi sääntö "Fable never without
+the teacher's word" on poistettu. `.claude/parked/` on ennallaan.
