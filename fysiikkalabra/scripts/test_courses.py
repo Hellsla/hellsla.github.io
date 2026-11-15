@@ -131,6 +131,7 @@ expect("a picture from another course's folder is refused", code == 1 and "belon
 expect("a missing picture is refused", code == 1 and "not found" in out, out)
 
 # 5. every deterministic check
+ENV["CHECK_LAYOUT_NO_CLIPPED"] = "1"   # this lesson is fy3-2's text under another id, so docs/clipped-formulas.tsv does not know it; the clipped-formula check has test_check_layout.py
 code, out = run("check_lesson.py", "fy4-1")
 expect("check_lesson: lint, LaTeX, build, sims, inquiry, answer positions, 360 px all ok", code == 0 and all(f"ok   {s}" in out for s in ("lint", "latex", "build", "sims", "inquiry", "answer positions", "layout 360 px")), out)
 page = (T / "preview/fy4-1.html").read_text()
