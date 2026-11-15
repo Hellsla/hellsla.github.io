@@ -1,17 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 5b120f8cff7105c8
+VERDICT: FAIL
+CONTENT-HASH: d58b44c26abfaf99
 
 ## Blocking
-- none
+- [Major] inquiry.json solutions: stranded ", vedyn punainen viiva.", ". $\lambda = …" and trailing "." after display blocks — a sentence punctuation mark detached from its sentence reads as an error and looks broken on a phone (lone "." or "," rows) — keep the sentence's punctuation out of the break: end the sentence before the block ("…massa on:" then the block) and start the next sentence with a capital after it, or put the closing "\," . or "," inside the aligned block's last row; never leave a paragraph starting with "." or ",".
 
 ## Polish
-- none
+- [Minor] Display blocks that stay in running text use \tfrac, so the fractions in the aligned rows are small and hard to read at 390 px — use \dfrac in these lifted blocks.
 
 ## Checked
-- Delta review (round 3). The diff changes wording in one lesson paragraph and one inquiry solution ("alle $0{,}1\,\text{keV}$" becomes "noin $0{,}1\,\text{keV}$"). No figure changed.
-- Opened fy8-8-theory-1280-2.png: the revised gamma-spectrum paragraph renders cleanly, with no KaTeX errors and no clipping. $2505{,}8\,\text{keV}$, $1173{,}2\,\text{keV}$, $1332{,}5\,\text{keV}$, $0{,}1\,\text{keV}$ and $0{,}03\,\text{keV}$ are in LaTeX with thin spaces. The energy-level figure beside it is intact and its labels match the text.
-- Opened fy8-8-open-tarkista-1280-3.png: the layout around the tasks survived. This capture does not show the changed Ni-60 solution; I judged that line from source. It is plain Finnish with its numbers and units in LaTeX, and it agrees with the lesson paragraph.
-- Finnish: "Fotonien summa jää siitä noin $0{,}1\,\text{keV}$. Ero on suurimmaksi osaksi pyöristystä: rekyyli … on vain noin $0{,}03\,\text{keV}$" is fluent and consistent with the lesson text.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+batch delta review: opened the 390 px theory/example captures where the lifted formulas appear (fy8-1 selita-3/4, fy8-2 example-1, fy8-5 example-2, fy8-10 selita-1/2/4); the aligned rows themselves fit without clipping, equals signs aligned; the stranded punctuation was confirmed in the rendered captures and in the sources of this lesson.

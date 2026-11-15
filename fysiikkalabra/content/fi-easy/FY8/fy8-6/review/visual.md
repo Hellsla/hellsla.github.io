@@ -1,12 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: d11a5fbd4cff7477
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+VERDICT: FAIL
+CONTENT-HASH: ed1169cb7ee71d18
 
 ## Blocking
-- none
+- [Major] lesson.md, inquiry.json, solutions.md (the lifted formulas) — the formula was set as `$$...$$` in the middle of a sentence, so the sentence's closing punctuation (". ", ", ") lands alone at the start of the line after the display block (seen in fy8-1 theory-1280-2 and -3: a lone "." line under the block; ". Tavallinen 365 nm:n UV-A-lamppu..." begins with a full stop). The sentence is broken, and a student reads a stray dot — Fix: close the lead-in sentence before the display (end it with a colon or let the formula stand as its own unit: "Siksi:" / block / next sentence starting with a capital), and put any trailing words after the block in a new sentence; no punctuation may start a line.
 
 ## Polish
-- none
+- [Minor] The aligned blocks themselves (rows, = and ≈ in one column, units upright, thin spaces) read well at 1280 px; the 360 px check is for check_layout.
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- batch delta review: fy8-1 theory-1280-2, theory-1280-3 opened (the defect is seen there); the same `$$` + punctuation pattern found by grep in this lesson's changed lines (lesson.md, inquiry.json or solutions.md); other captures not individually opened.

@@ -1,18 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: c347cb60476725a3
+VERDICT: FAIL
+CONTENT-HASH: 60d4680b6d8d1544
 
 ## Blocking
-- none
+- [Major] lesson.md, inquiry.json, solutions.md (the lifted formulas) — the formula was set as `$$...$$` in the middle of a sentence, so the sentence's closing punctuation (". ", ", ") lands alone at the start of the line after the display block (seen in fy8-1 theory-1280-2 and -3: a lone "." line under the block; ". Tavallinen 365 nm:n UV-A-lamppu..." begins with a full stop). The sentence is broken, and a student reads a stray dot — Fix: close the lead-in sentence before the display (end it with a colon or let the formula stand as its own unit: "Siksi:" / block / next sentence starting with a capital), and put any trailing words after the block in a new sentence; no punctuation may start a line.
 
 ## Polish
-- [Minor] lesson.md, elektronisieppaus-kaava — the new display formula stands in running prose; the three decay equations below it have a caption line ("beeta miinus -hajoaminen"), this one has none — keep as is or add a caption for consistency.
-- [Minor] lesson.md, beta paragraph — a stray space before the full stop after "neutriino" (popover-marked term, "neutriino ."), visible at 1280 px; build-side term marking, not a source problem.
+- [Minor] The aligned blocks themselves (rows, = and ≈ in one column, units upright, thin spaces) read well at 1280 px; the 360 px check is for check_layout.
 
 ## Checked
-- Delta: fy8-8-theory-1280-1.png (new elektronisieppaus paragraph and equation, new summary context), fy8-8-theory-1280-2.png (equation end, Be-7 example, energy-level paragraphs with the changed rekyyli/rounding text and the levels figure), fy8-8-theory-1280-3.png (decay equations, Z-N figure, formula block).
-- Figures unchanged (teacher-approved); the levels figure still sits right of its paragraph, nothing clipped.
-- New maths renders without KaTeX errors: nuclide notation, ${}^{0}_{-1}\text{e}$, $\nu_\text{e}$, $Z - 1$; units in LaTeX with thin space and decimal comma ($0{,}03\,\text{keV}$, $0{,}1\,\text{keV}$).
-- Not opened: the Testaa ja arvioi solution capture (inquiry.json change is text-only in a solution, same structure and LaTeX conventions as before).
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: fy8-1 theory-1280-2, theory-1280-3 opened (the defect is seen there); the same `$$` + punctuation pattern found by grep in this lesson's changed lines (lesson.md, inquiry.json or solutions.md); other captures not individually opened.

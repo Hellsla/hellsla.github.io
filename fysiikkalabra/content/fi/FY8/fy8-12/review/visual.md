@@ -1,19 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 29277166eb22fd45
-
-Mode: delta (lesson.md: the half-value-thickness paragraph "Puoliintumispaksuus riippuu aineesta ja energiasta")
+VERDICT: FAIL
+CONTENT-HASH: 8e340dea1aabdddf
 
 ## Blocking
-- none
+- [Major] inquiry.json solution: ". Virhe on päättelyssä…" starts the text after a display block — a sentence punctuation mark detached from its sentence reads as an error and looks broken on a phone (lone "." or "," rows) — keep the sentence's punctuation out of the break: end the sentence before the block ("…massa on:" then the block) and start the next sentence with a capital after it, or put the closing "\," . or "," inside the aligned block's last row; never leave a paragraph starting with "." or ",".
 
 ## Polish
-- [Minor] lesson.md, same paragraph — "Puoliintumispaksuus riippuu aineen tiheydestä, koostumuksesta ja säteilyn energiasta" and "Gammasäteilyn läpäisykyky riippuu fotonien energiasta ja väliaineesta" say nearly the same thing twice. Optional: drop or merge the second one into "Energian kasvaessa…".
-- [Minor] same paragraph — it is about 70 words and has no plain number with a unit. It could still gain a short sentence saying that the lead-to-concrete ratio applies at 62\,\text{keV}$, but the table sentence at the end already does this.
+- [Minor] Display blocks that stay in running text use \tfrac, so the fractions in the aligned rows are small and hard to read at 390 px — use \dfrac in these lifted blocks.
 
 ## Checked
-- Opened fy8-12-theory-1280-4.png. The rewritten paragraph sits under its ### heading, below the graph and above the table. It reads fluently with no clipping. "62\,\text{keV}$:n" is set correctly with the case ending after the maths. The graph above and the table start below are intact.
-- Opened fy8-12-theory-1280-5.png. The end of the table and the text after it are intact, so the layout survived.
-- I did not open the en and fi-easy versions. The packet covers fi only, so the English and Selkeä suomi wording was not judged here.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+batch delta review: opened the 390 px theory/example captures where the lifted formulas appear (fy8-1 selita-3/4, fy8-2 example-1, fy8-5 example-2, fy8-10 selita-1/2/4); the aligned rows themselves fit without clipping, equals signs aligned; the stranded punctuation was confirmed in the rendered captures and in the sources of this lesson.

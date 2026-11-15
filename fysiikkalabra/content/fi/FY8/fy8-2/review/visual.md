@@ -1,12 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 7346d9cf9e68d361
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+VERDICT: FAIL
+CONTENT-HASH: f4d4beecdc2e560f
 
 ## Blocking
-- none
+- [Major] inquiry.json solutions: a comma or full stop left at the start of the text after a display block ("$$, saadaan…") — a sentence punctuation mark detached from its sentence reads as an error and looks broken on a phone (lone "." or "," rows) — keep the sentence's punctuation out of the break: end the sentence before the block ("…massa on:" then the block) and start the next sentence with a capital after it, or put the closing "\," . or "," inside the aligned block's last row; never leave a paragraph starting with "." or ",".
 
 ## Polish
-- none
+- [Minor] Display blocks that stay in running text use \tfrac, so the fractions in the aligned rows are small and hard to read at 390 px — use \dfrac in these lifted blocks.
 
 ## Checked
-- Source-level read of the diff: Finnish/English wording, LaTeX number+unit typography (thin space, \text units, decimal comma in fi/fi-easy, \cdot), the aligned block with \approx in fy8-9 where applicable; no inline formula wrapping, no new figures. No render made.
+batch delta review: opened the 390 px theory/example captures where the lifted formulas appear (fy8-1 selita-3/4, fy8-2 example-1, fy8-5 example-2, fy8-10 selita-1/2/4); the aligned rows themselves fit without clipping, equals signs aligned; the stranded punctuation was confirmed in the rendered captures and in the sources of this lesson.

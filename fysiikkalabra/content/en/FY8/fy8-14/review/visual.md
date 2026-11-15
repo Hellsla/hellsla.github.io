@@ -1,12 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 7ca8af81a83eed0d
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+VERDICT: FAIL
+CONTENT-HASH: 54ecc1dd0a02fade
 
 ## Blocking
-- none
+- [Major] solutions, inquiry feedback, lesson text (about 2 display blocks cut out of running sentences) — a lifted formula is set as `$$...$$` in the middle of a sentence, so the punctuation or connective that followed it ("$$, so", "$$. The…", "and $$") lands as an orphan fragment (", so", "so", "and") on a line of its own in a separate box; seen in fy8-1 open-exercises-L2-1280-5 (", so" / "so" between the Substitution blocks). Many are also one-row `aligned` blocks of a short formula (e.g. a single `1240 eV nm : 2.30 eV ≈ 539 nm`) that never needed lifting. — the sentence reads as broken fragments and the Substitution/Reasonableness blocks lose their flow — keep short and single-row formulas inline; lift only chains that really clip at 360 px and make the whole step one display (the connective text inside `\text{}` or in a following line with no leading punctuation), or move the trailing words ("so …", ". The …") into the same display or the next sentence.
 
 ## Polish
-- none
+- [Minor] Row wrapping: "hc = 6.626·10^-34 J s / · 2.998·10^8 m/s = 1.9865…" is merged by the build into two rows, fine, but the manual three-row source is redundant; leave the chain to mathlayout.
 
 ## Checked
-- Source-level read of the diff: Finnish/English wording, LaTeX number+unit typography (thin space, \text units, decimal comma in fi/fi-easy, \cdot), the aligned block with \approx in fy8-9 where applicable; no inline formula wrapping, no new figures. No render made.
+- Source diff of commit 27b591e3f5 for this lesson; open-exercises captures of fy8-1 (1280) for the rendering of the lifted blocks; the pattern is the same source construct in all lessons of this batch. Figures unchanged by the diff, not re-judged.
+
+## Scores
+illustrations 4 · typography 3 · Finnish 4 · accessibility 4

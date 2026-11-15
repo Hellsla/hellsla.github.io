@@ -1,15 +1,11 @@
-VERDICT: PASS
-CONTENT-HASH: 8411fab9ce0d0aa9
+VERDICT: FAIL
+CONTENT-HASH: aaa75c66831fbfcc
 
 ## Blocking
+- [Major] lesson.md, inquiry.json, solutions.md (the lifted formulas) — the formula was set as `$$...$$` in the middle of a sentence, so the sentence's closing punctuation (". ", ", ") lands alone at the start of the line after the display block (seen in fy8-1 theory-1280-2 and -3: a lone "." line under the block; ". Tavallinen 365 nm:n UV-A-lamppu..." begins with a full stop). The sentence is broken, and a student reads a stray dot — Fix: close the lead-in sentence before the display (end it with a colon or let the formula stand as its own unit: "Siksi:" / block / next sentence starting with a capital), and put any trailing words after the block in a new sentence; no punctuation may start a line.
 
 ## Polish
-- [Minor] lesson.md l. 453 — "Kun energia kasvaa, gammasäteily alkaa vuorovaikuttaa aineen kanssa eri tavalla" stays abstract for S2 readers; an optional concrete clause (for example "ja osa energioista läpäisee ohuenkin kerroksen helpommin kuin toiset") would help, but the teacher's rule against "higher energy always penetrates better" is respected as it stands.
-- [Minor] Same paragraph — "tehokkaasti monilla energioilla" is vague; "hyvin" would do. Nine short sentences read slightly choppy; the line "Sama vaimennus vaatii betonia..." could name lyijy again ("Lyijyn kanssa sama vaimennus...") so the comparison is unambiguous.
+- [Minor] The aligned blocks themselves (rows, = and ≈ in one column, units upright, thin spaces) read well at 1280 px; the 360 px check is for check_layout.
 
 ## Checked
-- fy8-12-theory-1280-5: the reworded paragraph in context with the formula blocks, graph (lyijy, alumiini) and the d_1/2 table; layout intact, KaTeX renders $662\,\text{keV}$ and $d_{1/2}$ correctly, table values (lyijy 5,5 mm, betoni 39 mm) match "noin seitsemän kertaa".
-- Packet diff and lesson.md lines 376-384 read; hash run at start and end (8411fab9ce0d0aa9). Other captures unchanged by the diff, not reopened.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: fy8-1 theory-1280-2, theory-1280-3 opened (the defect is seen there); the same `$$` + punctuation pattern found by grep in this lesson's changed lines (lesson.md, inquiry.json or solutions.md); other captures not individually opened.
