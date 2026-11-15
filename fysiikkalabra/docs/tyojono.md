@@ -36,20 +36,16 @@ sijoitusketjun ylivuotoa en-versiossa (oikea reuna 372 px vs. laatikko 330 px, y
 löysi sen); lisää `check_layout.py`:hin tarkistus, joka mittaa ratkaisun kaavaketjun ylivuodon avoimessa tilassa
 kaikilla kielillä 360 ja 390 px:llä.
 
-## 5b. Leikkautuva kaava: tarkistus ja rivijako-carry (opettaja 2026-11-15)
+## 5b. Leikkautuva kaava: tarkistus ja rivijako-carry: tehty (PR #594, opettaja 2026-11-15)
 
-Kohta 6 pysähtyi (fy8-1 #590, fy8-2 #593): ulkoasukatselmointi hylkäsi kahdessa erässä peräkkäin ratkaisujen
-kaavaketjut, jotka leikkautuvat 360 px:llä (esim. "m/s" → "m/"). `check_layout.py` ei havaitse leikkautumista, ja jokainen
-rivijakokorjaus vanhentaa kaikki katselmoinnit (fy8-2: noin 650 k ennen kolmatta kierrosta). Opettaja 2026-11-15 hyväksyi
-molemmat:
-1. `check_layout.py` havaitsee KaTeX-kaavan, joka leikkautuu tai ylittää laatikkonsa (myös inline-kaava ja avattu
-   ratkaisu, kaikilla kolmella kielellä), jotta kehittäjä korjaa sen ennen katselmointeja. Testi löydöksillä fy8-2 L2-09
-   ja L3-06 (#593:n kuvaus) ja fy8-1 L2-08 (#590).
-2. Uusi carry-kategoria: kaavaketjun pelkkä rivijako (samat luvut, merkit ja yksiköt samassa järjestyksessä, vain
-   rivinvaihdot ja `=`-rivien jako muuttuvat) siirtää tiede- ja pedagogiikkakatselmoinnit muutoksen yli. Ulkoasu
-   katselmoidaan aina uudelleen. `reviews.py scope` tunnistaa ja `verify` johtaa sen uudelleen CI:ssä (kuten `formula-names`);
-   mikä tahansa muu muutos samassa tehtävässä katselmoidaan normaalisti.
-Jaettu muutos, ajetaan yksin, ennen kohtia 6 ja 8l. Sen jälkeen #593 (fy8-2) jatkaa kolmannella korjauksella.
+Tehty: `check_layout.py` havaitsee leikkautuvan kaavan (360 ja 390 px, avattu ratkaisu, kolme kieltä), `reviews.py` tuntee
+kategorian `reflow` (science ja pedagogy none, visual delta), kehittäjäohjeessa on rivi. Mainissa jo olevat leikkautuvat
+kaavat ovat `docs/clipped-formulas.tsv`:ssä (rivejä vain poistetaan). Auki, opettajan päätettävä:
+1. lasketaanko vierityslinjalle jäävä inline-kaava leikkautuneeksi (nyt kyllä), ja korjataanko vanha lista jaetulla
+   komponentilla vai sivu kerrallaan;
+2. tehdäänkö täysi CI-pohjainen lista (koko sivuston ajo, noin 20 ydintuntia): lista on tehty paikallisella Chromiumilla, ja
+   CI voi löytää sivuilta uusia rivejä, jotka lisätään CI:n lokista.
+Kohdat 6 ja 8l voivat jatkua; #593 (fy8-2) yhdistää mainin ja ajaa `check_layout.py fy8-2 --width 360`.
 
 ## 5c. ElevenLabs-ääneenluku FY1 ja FY2 (opettaja 2026-11-15)
 

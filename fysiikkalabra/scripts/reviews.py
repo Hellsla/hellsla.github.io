@@ -157,6 +157,7 @@ RULES = {                       # category: (science, pedagogy, visual)
     "teacher-figure": ("none",  "none", "none"),    # a figure the teacher approved as drawn (docs/teacher-figures.tsv, its exact Finnish SVG), its words in a translation, a task given it by "figure": the layout is check_layout's (teacher 2026-11-10)
     "split":          ("none",  "none", "none"),    # passed as one lesson before the split; this part's files moved, unchanged (answers.py: line for line)
     "figure-words-added": ("none", "none", "none"),   # a translation's figures.json only gained entries (a new figure variant for a task); every existing entry as it was (teacher 2026-11-12)
+    "reflow":         ("none",  "none", "delta"),    # a calculation chain only re-broken into rows (same numbers, signs and units in the same order; line breaks or =-rows differ): the visual reviewer always looks again (teacher 2026-11-15)
     "added-exercise": ("delta", "delta", "delta"),   # whole exercises added or replaced, every other exercise of the set as it was passed (added_exercises; teacher 2026-11-12)
 }
 WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing else", "paragraphs": "a task text cut into paragraphs, its words unchanged", "photo": "a licensed illustration photograph added, moved or recaptioned", "typography": "formulas re-set (spacing, fraction style, decimal comma) or a symbol set as maths, or blank lines, without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
@@ -180,6 +181,7 @@ WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing el
        "presentation-only": "a simulation's drawing only, the change approved in docs/presentation-only.tsv",
        "split": "the exercises moved to their own folder, every file as it was passed (answers.py split line for line)",
        "figure-words-added": "the translation's figures.json only gained entries for a new figure (every existing entry unchanged)",
+       "reflow": "a calculation chain re-broken into rows, its numbers, signs and units unchanged and in the same order",
        "added-exercise": "whole exercises added or replaced, every other exercise of the set unchanged",
        "translation-of-passed": "a translation of the Finnish exercise set, its numbers, answers and formulas the same: the Finnish set's science PASS for its current hash carries over (teacher 2026-11-12)"}
 # Not a RULES category: "translation-of-passed" is never found by `changes`; `scope` grants it to the science reviewer of a
@@ -1453,6 +1455,50 @@ def approve_presentation(rel, base="origin/main", note=""):
     print(f"\nrecorded in {PRESENTATION.relative_to(ROOT)}: {rel} {row[1]} -> {row[2]}")
 
 
+MATH_SPAN = re.compile(r"\$\$.+?\$\$|\$[^$\n]+?\$|\$[^$]+?\$", re.S)
+ALIGNED = re.compile(r"\\begin\{aligned\}(.*?)\\end\{aligned\}", re.S)
+
+
+def _flat(inner, json_view):
+    """One formula's text with its layout taken out: a JSON string decoded, an aligned block (\\begin{aligned} a &= b \\\\ &= c
+    \\end{aligned}) opened into its rows without the alignment marks & and \\\\, whitespace collapsed."""
+    if json_view:
+        try: inner = json.loads('"' + inner + '"')
+        except json.JSONDecodeError: pass
+    inner = ALIGNED.sub(lambda m: m.group(1).replace("&", " ").replace("\\\\", " "), inner)
+    return " ".join(inner.split())
+
+
+def chain_view(text, rel="", outside=True):
+    """`text` with every calculation chain put in one form: a run of formulas that only whitespace separates (a chain broken
+    into rows by hand: `$a = b$` + a line break + `$= c$`) is one formula, an aligned block (`$$\\begin{aligned} a &= b \\\\
+    &= c \\end{aligned}$$`, an inline formula lifted into a display formula) is its rows in one line, and whitespace is
+    collapsed everywhere. Two texts with the same chain_view differ only in line breaks, in how a chain is divided into
+    rows or in its delimiters, \\begin{aligned}, & and \\\\: every number, sign, unit and symbol is the same and in the same
+    order, and every word outside the formulas is as it was (category "reflow", teacher 2026-11-15). In a .json view a
+    line break is the two characters \\n, so that counts as whitespace too. `outside` False leaves the text between the formulas
+    exactly as it is (its lines stay lines, so that what else changed can be classified by line)."""
+    js = rel.endswith(".json")
+    ws = re.compile(r"(?:\s|(?<!\\)\\n)+") if js else re.compile(r"\s+")
+    gap = re.compile(r"(?:\s|(?<!\\)\\n)*\Z") if js else re.compile(r"\s*\Z")
+    out, pos, run = [], 0, []
+    def flush():
+        if run: out.append("$" + " ".join(run) + "$"); run.clear()
+    for m in MATH_SPAN.finditer(text):
+        between = text[pos:m.start()]
+        if run and not gap.match(between): flush()
+        if not run: out.append(ws.sub(" ", between) if outside else between)
+        run.append(_flat(m.group(0).strip("$"), js))
+        pos = m.end()
+    flush(); out.append(ws.sub(" ", text[pos:]) if outside else text[pos:])
+    return "".join(out)
+
+
+def layout_marks(text):
+    """What a re-break changes and nothing else does: how many formulas, display formulas and aligned blocks a text has."""
+    return (len(MATH_SPAN.findall(text)), text.count("$$"), text.count("begin{aligned}"))
+
+
 def _unnamed(a, b, ok):
     """`b` with each ```kaavat block whose names are all approved (`ok`) put back as `a`'s block of the same formulas
     (a passed version's ```latex or ```kaavat block), so what else changed is classified as usual; None when a name
@@ -1467,6 +1513,10 @@ def _unnamed(a, b, ok):
         if old is None: continue
         out.append(b[pos:m.start()] + old); pos = m.end()
     return "".join(out) + b[pos:]
+
+
+def _changed(a, b):
+    return [l for l in difflib.unified_diff(a.splitlines(), b.splitlines(), lineterm="", n=0) if l.startswith(("+", "-")) and not l.startswith(("+++", "---"))]
 
 
 def changes(folder, base, part="lesson", split=False, new=None):
@@ -1505,6 +1555,12 @@ def changes(folder, base, part="lesson", split=False, new=None):
             if b2 is not None and b2 != b:
                 cats.add("formula-names"); diff.append(f"--- {rel}: formula names the teacher approved"); b = rb = b2
                 if a == b: continue
+        if not binary and a and b and rel.endswith((".md", ".json")) and not rel.startswith("figure:"):   # calculation chains re-broken into rows (teacher 2026-11-15)
+            na, nb = chain_view(a, rel), chain_view(b, rel)
+            if (na, nb) != (a, b) and layout_marks(a) != layout_marks(b):   # a chain is re-broken when its formulas, display delimiters or aligned blocks change; a blank line or a break inside one formula is no re-break (and a stripped approved figure leaves such whitespace)
+                if na == nb: cats.add("reflow"); diff.append(f"--- {rel}: calculation chains only re-broken into rows"); continue
+                ga, gb = chain_view(a, rel, False), chain_view(b, rel, False)   # the text between the formulas as it is: lines stay lines
+                if len(_changed(a, b)) > len(_changed(ga, gb)): cats.add("reflow"); a, b = ga, gb   # some of the change is a re-break; classify what else changed as usual
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base, new)); diff.append(f"--- {rel}: simulation assertions changed"); continue
         if not binary and presentation_change(old, new, rel):   # where or how the sim draws, the exact change of the file approved (one row for every language): the visual reviewer sees the diff
             cats.add("presentation-only"); n += 1

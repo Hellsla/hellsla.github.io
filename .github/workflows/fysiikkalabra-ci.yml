@@ -150,6 +150,8 @@ jobs:
       - name: Menu on a phone, skip link, named self-assessment levels, Jatka (design audit 2026-11-10)
         run: python scripts/test_jatka.py
       - run: python scripts/test_reviews.py
+      - name: the clipped-formula check of check_layout.py on the findings of fy8-1 and fy8-2 (work queue 5b, teacher 2026-11-15)
+        run: python scripts/test_check_layout.py
       - name: named formulas (```kaavat, FY9's names from mafytaulukot.fi) and the carry over approved formula names (teacher 2026-11-12)
         run: python scripts/test_kaavat.py
       - run: python scripts/test_inquiry.py
