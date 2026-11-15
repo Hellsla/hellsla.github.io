@@ -558,7 +558,7 @@
      "id": "d",
      "kind": "word",
      "points": 4,
-     "text": "Sidosenergia nukleonia kohti on deuteriumilla $1{,}11\\,\\text{MeV}$, tritiumilla $2{,}83\\,\\text{MeV}$ ja helium-4:llä $7{,}07\\,\\text{MeV}$. Selitä näiden avulla, miksi reaktio vapauttaa energiaa, ja miksi fuusion käynnistäminen vaatii noin sadan miljoonan kelvinin lämpötilan.",
+     "text": "Sidosenergia nukleonia kohti on deuteriumilla $1{,}11\\,\\text{MeV}$ ja tritiumilla $2{,}83\\,\\text{MeV}$. Selitä näiden ja a-kohdassa laskemasi helium-4:n arvon avulla, miksi reaktio vapauttaa energiaa, ja miksi fuusion käynnistäminen vaatii noin sadan miljoonan kelvinin lämpötilan.",
      "criteria": [
       {
        "text": "Vertaa sidosenergioita nukleonia kohti ($7{,}07$ vs. $1{,}11$ ja $2{,}83\\,\\text{MeV}$): lopputila on tiukemmin sidottu, joten sen massa on pienempi ja massaero vapautuu energiana.",
