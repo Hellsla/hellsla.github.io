@@ -49,6 +49,12 @@ Kohdat 6 ja 8l voivat jatkua; #593 (fy8-2) yhdistää mainin ja ajaa `check_layo
 
 ## 5c. ElevenLabs-ääneenluku FY1 ja FY2 (opettaja 2026-11-15)
 
+Varattu: claude/elevenlabs-readaloud
+
+Tilanne 2026-11-15 (PR #598 suljettu, jatkuu uudessa PR:ssä haarasta claude/readaloud-recorded): ääneksi valittu Oskari - Finnish;
+`flSpeech.blocks()` lukee käsitekortin termin; FY1:n luvut fy1-1…fy1-8 on äänitetty. Opettajan päätös: mp3-tiedostot eivät kuulu
+päärepoon vaan repoon Hellsla/ruukkilabra-audio (kuten mallit); päärepossa on vain manifestit. FY2 odottaa opettajan päätöstä.
+
 Suomenkielisten FY1- ja FY2-lukujen Kuuntele-nappi soittaa etukäteen tehdyn ElevenLabs-äänitteen; muut kielet ja kurssit
 jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md, testit): ajetaan yksin, 5b:n (#594) jälkeen.
 - Äänitteet tehdään skriptillä (`scripts/`), ei koskaan oppilaan selaimesta. API-avain on ympäristön network secret
