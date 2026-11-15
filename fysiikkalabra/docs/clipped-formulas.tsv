@@ -3010,6 +3010,7 @@ fi-easy/fy9-aallot	L' = L \cdot \dfrac{f_1}{f'} = 648\,\text{mm} \cdot \dfrac{11
 fi-easy/fy9-aallot	L_2 - L_1 = 10\,\text{dB} \cdot \lg 2 \approx 3{,}0\,\text{dB}
 fi-easy/fy9-aallot	\Delta s = 4{,}25\,\text{m} - 3{,}40\,\text{m} = 0{,}85\,\text{m} = \t
 fi-easy/fy9-aallot	a = \dfrac{2590\,\text{N} - 706\,\text{N}}{72{,}0\,\text{kg}} \approx
+fi-easy/fy9-aallot	a = \dfrac{2590\,\text{N} - 706\,\text{N}}{72{,}0\,\text{kg}} \approx 
 fi-easy/fy9-aallot	d = \dfrac{340\,\text{m/s} \cdot 0{,}0120\,\text{s}}{2} \approx 2{,}04
 fi-easy/fy9-aallot	d = vt = 1480\,\tfrac{\text{m}}{\text{s}} \cdot 0{,}024\,\text{s} = 35
 fi-easy/fy9-aallot	f = 30{,}0\,\text{kHz} \cdot \dfrac{346\,\text{m/s}}{334\,\text{m/s}} 
