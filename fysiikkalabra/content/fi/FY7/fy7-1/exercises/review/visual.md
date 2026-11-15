@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 9a398310c855a2de
-SCOPE: delta wording-and-notation from 0d7da54a5fc6a1b1 (exercises.json, solutions.md)
 
 ## Blocking
 - none

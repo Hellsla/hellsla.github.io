@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: b21795c385640322
-SCOPE: delta
 
 ## Blocking
 - none

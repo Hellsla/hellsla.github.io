@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 5e6573a29a4c4bb8
-SCOPE: delta numbers (the packet gives no SCOPE line; changed lines carry numbers: tasks 11-17, 11-19, 11-21 and the caption marker)
 
 ## Blocking
 - none
