@@ -1456,26 +1456,46 @@ def approve_presentation(rel, base="origin/main", note=""):
 
 
 MATH_SPAN = re.compile(r"\$\$.+?\$\$|\$[^$\n]+?\$|\$[^$]+?\$", re.S)
+ALIGNED = re.compile(r"\\begin\{aligned\}(.*?)\\end\{aligned\}", re.S)
+
+
+def _flat(inner, json_view):
+    """One formula's text with its layout taken out: a JSON string decoded, an aligned block (\\begin{aligned} a &= b \\\\ &= c
+    \\end{aligned}) opened into its rows without the alignment marks & and \\\\, whitespace collapsed."""
+    if json_view:
+        try: inner = json.loads('"' + inner + '"')
+        except json.JSONDecodeError: pass
+    inner = ALIGNED.sub(lambda m: m.group(1).replace("&", " ").replace("\\\\", " "), inner)
+    return " ".join(inner.split())
 
 
 def chain_view(text, rel=""):
-    """`text` with every run of formulas that only whitespace separates (a calculation chain broken into rows by hand:
-    `$a = b$` + a line break + `$= c$`) put back as one formula with its whitespace collapsed. Two texts with the same
-    chain_view differ only in line breaks or in how a chain is divided into rows: every number, sign, unit and
-    symbol is the same and in the same order, and every word outside the formulas is as it was (category "reflow",
-    teacher 2026-11-15). In a .json view a line break is the two characters \\n, so that counts as whitespace too."""
-    gap = re.compile(r"(?:\s|(?<!\\)\\n)*\Z") if rel.endswith(".json") else re.compile(r"\s*\Z")
+    """`text` with every calculation chain put in one form: a run of formulas that only whitespace separates (a chain broken
+    into rows by hand: `$a = b$` + a line break + `$= c$`) is one formula, an aligned block (`$$\\begin{aligned} a &= b \\\\
+    &= c \\end{aligned}$$`, an inline formula lifted into a display formula) is its rows in one line, and whitespace is
+    collapsed everywhere. Two texts with the same chain_view differ only in line breaks, in how a chain is divided into
+    rows or in its delimiters, \\begin{aligned}, & and \\\\: every number, sign, unit and symbol is the same and in the same
+    order, and every word outside the formulas is as it was (category "reflow", teacher 2026-11-15). In a .json view a
+    line break is the two characters \\n, so that counts as whitespace too."""
+    js = rel.endswith(".json")
+    ws = re.compile(r"(?:\s|(?<!\\)\\n)+") if js else re.compile(r"\s+")
+    gap = re.compile(r"(?:\s|(?<!\\)\\n)*\Z") if js else re.compile(r"\s*\Z")
     out, pos, run = [], 0, []
     def flush():
         if run: out.append("$" + " ".join(run) + "$"); run.clear()
     for m in MATH_SPAN.finditer(text):
         between = text[pos:m.start()]
         if run and not gap.match(between): flush()
-        if not run: out.append(between)
-        run.append(" ".join(m.group(0).strip("$").split()))
+        if not run: out.append(ws.sub(" ", between))
+        run.append(_flat(m.group(0).strip("$"), js))
         pos = m.end()
-    flush(); out.append(text[pos:])
+    flush(); out.append(ws.sub(" ", text[pos:]))
     return "".join(out)
+
+
+def layout_marks(text):
+    """What a re-break changes and nothing else does: how many formulas, display formulas and aligned blocks a text has."""
+    return (len(MATH_SPAN.findall(text)), text.count("$$"), text.count("begin{aligned}"))
 
 
 def _unnamed(a, b, ok):
@@ -1536,7 +1556,7 @@ def changes(folder, base, part="lesson", split=False, new=None):
                 if a == b: continue
         if not binary and a and b and rel.endswith((".md", ".json")) and not rel.startswith("figure:"):   # calculation chains re-broken into rows (teacher 2026-11-15)
             na, nb = chain_view(a, rel), chain_view(b, rel)
-            if (na, nb) != (a, b) and len(MATH_SPAN.findall(a)) != len(MATH_SPAN.findall(b)):   # a chain is re-broken when the number of formulas changes; a blank line or a break inside one formula is no re-break (and a stripped approved figure leaves such whitespace)
+            if (na, nb) != (a, b) and layout_marks(a) != layout_marks(b):   # a chain is re-broken when its formulas, display delimiters or aligned blocks change; a blank line or a break inside one formula is no re-break (and a stripped approved figure leaves such whitespace)
                 if na == nb: cats.add("reflow"); diff.append(f"--- {rel}: calculation chains only re-broken into rows"); continue
                 if len(_changed(a, b)) > len(_changed(na, nb)): cats.add("reflow"); a, b = na, nb   # some of the change is a re-break; classify what else changed as usual
         if rel.startswith("tests/sims/"): cats.add(test_change(rel, base, new)); diff.append(f"--- {rel}: simulation assertions changed"); continue
