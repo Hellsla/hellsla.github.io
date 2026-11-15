@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 50744c876de01073
+CONTENT-HASH: 38d3d691033469cf
 
 ## Blocking
-
+- none. Lifted formulas legible and fully visible at 360 px; relations aligned, operators lead continuation rows, no lone bracket, quote or case ending around a lifted formula.
 
 ## Polish
-- [Minor] Short inline formulas followed by 'ja' or a comma stay on their own lines in the stacked sheet; acceptable, no action.
+- none
 
 ## Checked
-batch delta review 5d: all reflow-*.png sheets at 360 px opened; no formula clipped, relations aligned, operators lead continuation rows.
+- batch delta review 5d round 2: reflow-1.png reflow-2.png 

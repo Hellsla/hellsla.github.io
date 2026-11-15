@@ -1,11 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: fd59ff053524d29e
+VERDICT: PASS
+CONTENT-HASH: 74e0133051ea2b2f
 
 ## Blocking
-- [Major] reflow-2 — 'Suoran sovitus laskimella tai taulukkolaskennalla (' / formula / ').' leaves a lone ')' and period on their own line. Fix: as above, move the brackets into the lifted formula or drop them.
+- none. Lifted formulas legible and fully visible at 360 px; relations aligned, operators lead continuation rows, no lone bracket, quote or case ending around a lifted formula.
 
 ## Polish
-- [Minor] Short inline formulas followed by 'ja' or a comma stay on their own lines in the stacked sheet; acceptable, no action.
+- none
 
 ## Checked
-batch delta review 5d: all reflow-*.png sheets at 360 px opened; no formula clipped, relations aligned, operators lead continuation rows.
+- batch delta review 5d round 2: reflow-1.png 
