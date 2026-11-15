@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ddbe8e2dcd6bbc03
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: aea1d440c4ddfe37
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- content/en/FY8/fy8-5/exercises/solutions.md:89 — "(UVA)"; the module's photoelectric chapter writes "UV-A" — use one spelling: "in the ultraviolet (UV-A)".
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+- solutions.md:89 Reasonableness: "just below the visible range, near ultraviolet" → "just outside the visible range, in the ultraviolet (UVA)". The old wording was ambiguous ("below" in wavelength or energy) and called $365\,\text{nm}$ only "near" ultraviolet; the new sentence agrees with the answer and with the following sentence about longer-wavelength visible light.
+- The check still argues from the photon energy $3.4\,\text{eV}$ against violet light, so a student can follow why the result is plausible.
+- Same correction as the Finnish set; no number, symbol or step changed. The Finnish-only spelling fix (kupuja) has no English counterpart, correctly.
+- exercises.json: only re-broken calculation chains; no task's demand changed.
+- Method: text diff in context; captures not needed for a wording correction.
