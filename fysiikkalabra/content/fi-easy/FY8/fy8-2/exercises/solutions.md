@@ -254,7 +254,7 @@ $$\begin{aligned}
 
 $$\begin{aligned}
 E_\text{viol} &= \\
-&\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{405 \cdot 10^{-9}\,\text{m} \cdot 1{,}602 \cdot 10^{-19}\,\text{J/eV}} \\
+&\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{405 \cdot 10^{-9}\,\text{m} \cdot 1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} \\
 &= 3{,}0617\,\text{eV}
 \end{aligned}$$
 
@@ -262,7 +262,7 @@ E_\text{viol} &= \\
 
 $$\begin{aligned}
 E_\text{vihr} &= \\
-&\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{546 \cdot 10^{-9}\,\text{m} \cdot 1{,}602 \cdot 10^{-19}\,\text{J/eV}} \\
+&\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{546 \cdot 10^{-9}\,\text{m} \cdot 1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} \\
 &= 2{,}2711\,\text{eV}
 \end{aligned}$$
 
