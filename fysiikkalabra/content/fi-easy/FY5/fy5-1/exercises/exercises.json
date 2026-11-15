@@ -197,7 +197,7 @@
       "unit": "Nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Mutterin avaaminen eri varsilla (esimerkkiaineisto)",
+        "caption": "Mutterin avaaminen eri varsilla",
         "columns": [
           "$r\\,(\\text{m})$",
           "$F\\,(\\text{N})$"
@@ -238,7 +238,7 @@
       "unit": "Nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Mittakepin punnukset (esimerkkiaineisto)",
+        "caption": "Mittakepin punnukset",
         "columns": [
           "Punnus",
           "$m\\,(\\text{g})$",
@@ -323,7 +323,7 @@
       "unit": "Nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Takahammaspyörän säde eri vaihteilla (esimerkkiaineisto)",
+        "caption": "Takahammaspyörän säde eri vaihteilla",
         "columns": [
           "Vaihde",
           "$r_{\\text{taka}}\\,(\\text{cm})$"
@@ -356,7 +356,7 @@
       "unit": "N",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kolme avainta ahtaassa tilassa (esimerkkiaineisto)",
+        "caption": "Kolme avainta ahtaassa tilassa",
         "columns": [
           "Avain",
           "$d\\,(\\text{m})$",

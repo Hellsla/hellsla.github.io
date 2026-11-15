@@ -135,7 +135,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Average annual effective dose of a Finn by source (example data)",
+        "caption": "Average annual effective dose of a Finn by source",
         "columns": [
           "Source",
           "$H_\\text{E}\\,(\\text{mSv})$"
@@ -168,7 +168,7 @@
       "unit": "µSv/h",
       "tolerance": 0.03,
       "data": {
-        "caption": "Dose rate at different distances from the source (example data)",
+        "caption": "Dose rate at different distances from the source",
         "columns": [
           "$r\\,(\\text{m})$",
           "$\\dot{H}\\,(\\mu\\text{Sv/h})$"
@@ -277,7 +277,7 @@
       "unit": "Bq/m³",
       "tolerance": 0.02,
       "data": {
-        "caption": "Radon concentration in the indoor air of a dwelling (example data)",
+        "caption": "Radon concentration in the indoor air of a dwelling",
         "columns": [
           "Period",
           "$c\\,(\\tfrac{\\text{Bq}}{\\text{m}^3})$"
@@ -314,7 +314,7 @@
       "unit": "h",
       "tolerance": 0.04,
       "data": {
-        "caption": "Dose rate at a distance of $1.0\\,\\text{m}$ behind a concrete wall (example data)",
+        "caption": "Dose rate at a distance of $1.0\\,\\text{m}$ behind a concrete wall",
         "columns": [
           "$d\\,(\\text{cm})$",
           "$\\dot{H}\\,(\\mu\\text{Sv/h})$"

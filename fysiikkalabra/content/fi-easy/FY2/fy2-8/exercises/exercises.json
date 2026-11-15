@@ -206,7 +206,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Päästöt aloittain (esimerkkiaineisto)",
+        "caption": "Päästöt aloittain",
         "columns": [
           "Ala",
           "$m_{2010}\\,(\\text{Mt})$",
@@ -283,7 +283,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Esimerkkivoimalan tuotanto ja päästö (esimerkkiaineisto)",
+        "caption": "Esimerkkivoimalan tuotanto ja päästö",
         "columns": [
           "$t\\,(\\text{a})$",
           "$E\\,(\\text{GWh})$",
@@ -427,7 +427,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Esimerkkikaupungin sähköntuotanto (esimerkkiaineisto)",
+        "caption": "Esimerkkikaupungin sähköntuotanto",
         "columns": [
           "Tuotantotapa",
           "$E\\,(\\text{GWh})$"

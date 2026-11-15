@@ -198,7 +198,7 @@
       "unit": "m/s²",
       "tolerance": 0.04,
       "data": {
-        "caption": "Speed of the bob at the lowest point of the pendulum (example data)",
+        "caption": "Speed of the bob at the lowest point of the pendulum",
         "columns": [
           "$h\\,(\\text{m})$",
           "$v\\,(\\text{m/s})$"
@@ -244,7 +244,7 @@
       "unit": "kJ",
       "tolerance": 0.02,
       "data": {
-        "caption": "Measurements of the car at different points of the track (example data)",
+        "caption": "Measurements of the car at different points of the track",
         "columns": [
           "Point",
           "$s\\,(\\text{m})$",
@@ -292,7 +292,7 @@
       "unit": "N",
       "tolerance": 0.05,
       "data": {
-        "caption": "Stopping distance of the block at different initial speeds (example data)",
+        "caption": "Stopping distance of the block at different initial speeds",
         "columns": [
           "$v_0\\,(\\text{m/s})$",
           "$s\\,(\\text{m})$"
@@ -385,7 +385,7 @@
       "unit": "N",
       "tolerance": 0.03,
       "data": {
-        "caption": "Stopping distance on horizontal snow (example data)",
+        "caption": "Stopping distance on horizontal snow",
         "columns": [
           "Run",
           "$s\\,(\\text{m})$"
@@ -431,7 +431,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Height of the ball at the highest point (example data)",
+        "caption": "Height of the ball at the highest point",
         "columns": [
           "Bounces",
           "$h\\,(\\text{m})$"

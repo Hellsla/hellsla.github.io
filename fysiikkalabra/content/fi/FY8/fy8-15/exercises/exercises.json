@@ -200,7 +200,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kvarkkiyhdistelmiä (esimerkkiaineisto)",
+        "caption": "Kvarkkiyhdistelmiä",
         "columns": [
           "Nro",
           "Yhdistelmä"
@@ -250,7 +250,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Reaktioita (esimerkkiaineisto)",
+        "caption": "Reaktioita",
         "columns": [
           "Nro",
           "Reaktio"

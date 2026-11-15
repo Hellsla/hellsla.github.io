@@ -197,7 +197,7 @@
    "unit": "C",
    "tolerance": 0.02,
    "data": {
-    "caption": "Lampun läpi kulkeva virta ajan funktiona (esimerkkiaineisto)",
+    "caption": "Lampun läpi kulkeva virta ajan funktiona",
     "columns": [
      "$t\\,(\\text{s})$",
      "$I\\,(\\text{A})$"
@@ -259,7 +259,7 @@
    "unit": "",
    "tolerance": 0.02,
    "data": {
-    "caption": "Virta ennen lamppua ja lampun jälkeen (esimerkkiaineisto)",
+    "caption": "Virta ennen lamppua ja lampun jälkeen",
     "columns": [
      "Mittaus",
      "$I_{\\text{ennen}}\\,(\\text{A})$",
@@ -343,7 +343,7 @@
    "unit": "Wh",
    "tolerance": 0.04,
    "data": {
-    "caption": "Puhelimen akun purkautuminen (esimerkkiaineisto)",
+    "caption": "Puhelimen akun purkautuminen",
     "columns": [
      "Tunti",
      "$U\\,(\\text{V})$",

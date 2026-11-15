@@ -144,7 +144,7 @@
       "unit": "K/W",
       "tolerance": 0.05,
       "data": {
-        "caption": "Vastuksen lämpeneminen (esimerkkiaineisto)",
+        "caption": "Vastuksen lämpeneminen",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{A})$",
@@ -191,7 +191,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Hehkulampun virta jännitteen funktiona (esimerkkiaineisto)",
+        "caption": "Hehkulampun virta jännitteen funktiona",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{A})$"
@@ -241,7 +241,7 @@
       "unit": "W",
       "tolerance": 0.02,
       "data": {
-        "caption": "Sarjaan kytketyt lamput (esimerkkiaineisto)",
+        "caption": "Sarjaan kytketyt lamput",
         "columns": [
           "Lamppu",
           "$U\\,(\\text{V})$",
@@ -340,7 +340,7 @@
       "unit": "W",
       "tolerance": 0.03,
       "data": {
-        "caption": "Paahtimen vastusten teho $230\\,\\text{V}$:n jännitteellä (esimerkkiaineisto)",
+        "caption": "Paahtimen vastusten teho $230\\,\\text{V}$:n jännitteellä",
         "columns": [
           "Kytkentä",
           "$P\\,(\\text{W})$"
@@ -374,7 +374,7 @@
       "unit": "W",
       "tolerance": 0.03,
       "data": {
-        "caption": "Jatkojohdon johtimien resistanssi (esimerkkiaineisto)",
+        "caption": "Jatkojohdon johtimien resistanssi",
         "columns": [
           "Johto",
           "$A\\,(\\text{mm}^2)$",

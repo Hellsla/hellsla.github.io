@@ -171,7 +171,7 @@
       "unit": "nC",
       "tolerance": 0.05,
       "data": {
-        "caption": "Force $F$ between the spheres as a function of the distance $r$ (example data)",
+        "caption": "Force $F$ between the spheres as a function of the distance $r$",
         "columns": [
           "$r\\,(\\text{cm})$",
           "$F\\,(\\text{mN})$"
@@ -216,7 +216,7 @@
       "unit": "nC",
       "tolerance": 0.05,
       "data": {
-        "caption": "Force $F$ for the charge pairs A and B (example data)",
+        "caption": "Force $F$ for the charge pairs A and B",
         "columns": [
           "$r\\,(\\text{cm})$",
           "$F_\\text{A}\\,(\\text{mN})$",

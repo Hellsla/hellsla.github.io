@@ -169,7 +169,7 @@
       "unit": "kg",
       "tolerance": 0.04,
       "data": {
-        "caption": "Kärryn kiihtyvyys eri vetovoimilla (esimerkkiaineisto)",
+        "caption": "Kärryn kiihtyvyys eri vetovoimilla",
         "columns": [
           "$F\\,(\\text{N})$",
           "$a\\,(\\text{m/s}^2)$"
@@ -211,7 +211,7 @@
       "unit": "N",
       "tolerance": 0.04,
       "data": {
-        "caption": "Kärryn kiihtyvyys eri massoilla (esimerkkiaineisto)",
+        "caption": "Kärryn kiihtyvyys eri massoilla",
         "columns": [
           "$m\\,(\\text{kg})$",
           "$a\\,(\\text{m/s}^2)$"
@@ -338,7 +338,7 @@
       "unit": "N",
       "tolerance": 0.05,
       "data": {
-        "caption": "Kärryn kiihtyvyys eri vetovoimilla (esimerkkiaineisto)",
+        "caption": "Kärryn kiihtyvyys eri vetovoimilla",
         "columns": [
           "$F\\,(\\text{N})$",
           "$a\\,(\\text{m/s}^2)$"
@@ -381,7 +381,7 @@
       "tolerance": 0.02,
       "fbd": "equations",
       "data": {
-        "caption": "Hissin kiihtyvyys vaiheissa 1 ja 2 (esimerkkiaineisto)",
+        "caption": "Hissin kiihtyvyys vaiheissa 1 ja 2",
         "columns": [
           "Vaihe",
           "$t_{\\text{alku}}\\,(\\text{s})$",

@@ -172,7 +172,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Power and fuel consumption of a diesel engine (example data)",
+        "caption": "Power and fuel consumption of a diesel engine",
         "columns": [
           "$P\\,(\\text{kW})$",
           "$q_m\\,(\\text{kg/h})$"
@@ -240,7 +240,7 @@
       "unit": "kWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Measurements of the heat pump (example data)",
+        "caption": "Measurements of the heat pump",
         "columns": [
           "Day",
           "$T_\\text{outdoor}\\,({}^\\circ\\text{C})$",
@@ -369,7 +369,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Heat demand of the house and coefficient of performance of the heat pump (example data)",
+        "caption": "Heat demand of the house and coefficient of performance of the heat pump",
         "columns": [
           "Month",
           "$T_\\text{outdoor}\\,({}^\\circ\\text{C})$",
@@ -422,7 +422,7 @@
       "unit": "kJ",
       "tolerance": 0.02,
       "data": {
-        "caption": "Height of the piston during the heating (example data)",
+        "caption": "Height of the piston during the heating",
         "columns": [
           "$t\\,(\\text{s})$",
           "$h\\,(\\text{cm})$"
