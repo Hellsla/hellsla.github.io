@@ -215,3 +215,56 @@ Viiva $282\,\text{nm}$ on ultraviolettia eikä näy tutkitulla alueella, joten j
 **Vastaus:** $22{,}1\,\%$ väriaineessa B, kolme merkitsevää numeroa kuten aallonpituuksissa. Muissa osuus on pienempi. Väriaineen D fluoresenssivalon aallonpituus on $477\,\text{nm}$ (kohta d).
 **Järkevyys:** Arvio $1 - \tfrac{405}{520} \approx 1 - 0{,}78 = 0{,}22$ antaa saman tuloksen. Fluoresenssifotonin energia $2{,}38\,\text{eV}$ on pienempi kuin absorboidun $3{,}06\,\text{eV}$, kuten pidempiaaltoisen valon pitää olla.
 **Mallivastaus:** Absorboinut molekyyli on viritystilassa. Ennen fotonin lähettämistä osa sen energiasta muuttuu molekyylin ja ympäristön lämpöliikkeen energiaksi, joten lähetetyn fotonin energia on pienempi kuin absorboidun. Pienempi energia tarkoittaa pidempää aallonpituutta, koska $E = \tfrac{hc}{\lambda}$.
+
+## fy8-2-L2-09
+**Annettu:** kuvasta luettu sinisen viivan aallonpituus $\lambda = 436\,\text{nm}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** sinisen viivan fotonin energia $E$ elektronivoltteina
+**Periaate:** Kaasun atomi lähettää fotonin siirtyessään ylemmästä energiatilasta alempaan, ja fotonin energia on tilojen energioiden erotus: $E = hf = \dfrac{hc}{\lambda}$, kun $f = \dfrac{c}{\lambda}$.
+**Kuvaajan lukeminen:** Aallonpituusasteikon pienet jakoviivat ovat $10\,\text{nm}$ välein ja luvut $50\,\text{nm}$ välein. Sininen viiva on viiva, joka on lähimpänä arvoa $436\,\text{nm}$: se on hieman luvun $450\,\text{nm}$ vasemmalla puolella, $14\,\text{nm}$ sen alapuolella. Muut viivat ovat violetti noin $405\,\text{nm}$, vihreä noin $546\,\text{nm}$ ja keltaiset noin $577\,\text{nm}$ ja $579\,\text{nm}$. Luetun arvon epävarmuus on muutaman nanometrin luokkaa, joten energia on varma noin $\pm 0{,}02\,\text{eV}$ tarkkuudella.
+**Kaava:** $E = \dfrac{hc}{\lambda}$
+**Muunnokset:** $436\,\text{nm} = 436 \cdot 10^{-9}\,\text{m}$. Joulet muutetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
+**Sijoitus:** 
+
+$$\begin{aligned}
+hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}$$
+
+$E = \dfrac{hc}{\lambda} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{436 \cdot 10^{-9}\,\text{m}} = 4{,}5561 \cdot 10^{-19}\,\text{J}$
+
+$E = \dfrac{4{,}5561 \cdot 10^{-19}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} = 2{,}8440\,\text{eV}$
+**Vastaus:** $2{,}84\,\text{eV}$, kolme merkitsevää numeroa kuten luetussa aallonpituudessa.
+**Järkevyys:** Likiarvolla 
+
+$$\begin{aligned}
+&1240\,\text{eV}\,\text{nm} : 436\,\text{nm} \\
+&\approx 2{,}84\,\text{eV}
+\end{aligned}$$
+
+ saadaan sama tulos. Violetin ($405\,\text{nm}$) fotonin energia on suurempi ja vihreän ($546\,\text{nm}$) pienempi, ja sininen sijoittuu niiden väliin kuten pitääkin.
+
+## fy8-2-L3-06
+**Annettu:** kuvasta luetut aallonpituudet violetti $\lambda_\text{viol} = 405\,\text{nm}$ ja vihreä $\lambda_\text{vihr} = 546\,\text{nm}$, molemmat lähtevät samalta ylemmältä tilalta $E_\text{y}$ ja päättyvät eri alempiin tiloihin, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** a) fotonien energiat $E_\text{viol}$ ja $E_\text{vihr}$, b) alempien tilojen energiaero $\Delta E$ elektronivoltteina, c) miksi $\Delta E$ ei ole energioiden summa
+**Periaate:** Fotonin energia on siirtymän lähtö- ja päätetilan energioiden erotus. Kun kaksi siirtymää alkaa samalta ylemmältä tilalta $E_\text{y}$, niiden fotonien energioiden erotus on alempien tilojen erotus, koska $E_\text{y}$ supistuu pois.
+**Kuvaajan lukeminen:** Asteikon pienet jakoviivat ovat $10\,\text{nm}$ välein. Violetti viiva on lähellä arvoa $405\,\text{nm}$ ja vihreä lähellä arvoa $546\,\text{nm}$; muita viivoja ei tarvita. Luettujen arvojen epävarmuus on muutaman nanometrin luokkaa, mutta kahden lähes yhtä suuren energian erotuksessa johtavat numerot kumoutuvat, joten erotus on varma vain kahden merkitsevän numeron tarkkuudella.
+**Kaava:** $E = \dfrac{hc}{\lambda}$, $E_\text{viol} = E_\text{y} - E_\text{a,viol}$ ja $E_\text{vihr} = E_\text{y} - E_\text{a,vihr}$, joten $\Delta E = E_\text{a,vihr} - E_\text{a,viol} = E_\text{viol} - E_\text{vihr}$
+**Muunnokset:** $1\,\text{nm} = 10^{-9}\,\text{m}$; joulet muutetaan elektronivolteiksi jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$.
+**Sijoitus:** a) $hc = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$, joten 
+
+$$\begin{aligned}
+E_\text{viol} &= \\
+&\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{405 \cdot 10^{-9}\,\text{m} \cdot 1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} \\
+&= 3{,}0617\,\text{eV}
+\end{aligned}$$
+
+ ja 
+
+$$\begin{aligned}
+E_\text{vihr} &= \\
+&\dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{546 \cdot 10^{-9}\,\text{m} \cdot 1{,}602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}} \\
+&= 2{,}2711\,\text{eV}
+\end{aligned}$$. b) $\Delta E = 3{,}0617\,\text{eV} - 2{,}2711\,\text{eV} = 0{,}7907\,\text{eV}$
+**Vastaus:** a) $3{,}06\,\text{eV}$ ja $2{,}27\,\text{eV}$; b) $0{,}79\,\text{eV}$, kaksi merkitsevää numeroa, koska lähes yhtä suurten energioiden erotuksessa johtavat numerot kumoutuvat ja lukuvirhe näkyy jo kolmannessa numerossa; c) katso mallivastaus.
+**Järkevyys:** Erotus on pienempi kuin kumpikaan fotonin energia. Elohopean alempien tilojen taulukkoarvoilla $5{,}461\,\text{eV} - 4{,}667\,\text{eV}$ on $0{,}794\,\text{eV}$, joka on sama kuin tulos kahden numeron tarkkuudella. Jos atomi voisi siirtyä näiden tilojen välillä, fotonin aallonpituus olisi noin $\lambda = \dfrac{1240\,\text{eV}\,\text{nm}}{0{,}79\,\text{eV}}$ eli $1570\,\text{nm}$, infrapunaa, joten sellaista viivaa ei näkyvällä alueella ole.
+**Mallivastaus:** Violetti ja vihreä fotoni ovat vaihtoehtoisia siirtymiä samalta ylemmältä tilalta: yksittäinen atomi lähettää toisen niistä, ei kumpaakin peräkkäin. Fotonin energia on oman siirtymänsä lähtö- ja päätetilan erotus, joten kahden fotonin erotuksesta ylemmän tilan energia supistuu pois ja jäljelle jää alempien tilojen erotus. Summaa ei saa käyttää, koska energiat eivät ole peräkkäisiä askelia: summa olisi kahden peräkkäisen siirtymän kokonaisenergia, ja tässä ylempi tila $E_\text{y}$ olisi siinä mukana kahdesti.

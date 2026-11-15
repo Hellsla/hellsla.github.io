@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: d4cac7da6f13b625
-Mode: delta
+CONTENT-HASH: aee274b8dfc29f65
+SCOPE: delta added-exercise from d4cac7da6f13b625 base f6ae5d507c79
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- solutions.md L3-06 reading the graph / answer — "two nearly equal energies" overstates it: 3.06 and 2.27 eV differ by a quarter; say "subtracting leaves fewer significant digits, so the relative error grows".
+- L2-09 answer 2.84 (three figures) vs ±0.02 eV: the last digit is uncertain; say so. Not blocking.
 
 ## Checked
-- fy8-2-L2-08 (en): situation first, question last as its own sentence, options and feedback keep the misconception each wrong option carries, as in fi.
-- Each feedback names the specific error and repairs it; none gives the answer before the student commits.
-- Solution can be followed step by step (Kysytto, Periaate, Mallivastaus) and matches fi.
-- English decimal point used, wording natural English.
-- Delta: L1-08 student chain now reads E_3 - E_2 = -1.51 eV - (-3.40 eV), that is E_3 - E_2 = 1.89 eV; arithmetic -1.51 + 3.40 = 1.89 correct, same as fi, nothing else changed; answer and options unaffected.
-- Hash d4cac7da6f13b625 at start and end.
+- L2-09 chain split into hc, E in J, E in eV: each step one operation, units carried; 1.9865e-25/436e-9 = 4.556e-19 J and /1.602e-19 = 2.844 eV verified.
+- L2-09 "energy secure to about ±0.02 eV": ±3 nm at 436 nm gives 0.02 eV; consistent, and answer tolerance 0.03 still covers it.
+- L3-06 subscripts (viol/vihr or viol/green; E_a,viol etc.) are consistent across Given, Asked, Formula, Substitution; the g/green clash from round 1 is gone.
+- L3-06 numbers verified: 3.0617, 2.2711, 0.7907 eV; 0.794 eV table value; 1240/0.79 = 1570 nm; the split Reasonableness formulas read cleanly.
+- Model answer in c) still repairs the sum misconception directly.
+- Figure lamp-spectrum and its description unchanged by the diff: no answer disclosed.

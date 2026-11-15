@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cbbbb7286332c468
-ROUND: 2
+CONTENT-HASH: c30cdbfb227c98e9
+SCOPE: delta added-exercise from cbbbb7286332c468 base 6792c2c543a7
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] figures pick-* — axis numbers about 7 px at 390 px; descriptions are full.
+- [Minor] L3-06 solution, SUBSTITUTION, 360 px — after the second display block a lone ". b)" starts a line (source: `$$. b) ...`), so a full stop leads the line; move the period inside the display (`\,.`) or drop it and start "b)" on its own line.
+- [Minor] figure, 360 px — scale numbers small (about 9 px) but readable; unchanged.
 
 ## Checked
-- Delta for fy8-2-L1-08 (2-8): 390 px render with options open; the student quotation is now split ("... (-3,40 eV), eli E_3 - E_2 = 1,89 eV"), every line fits the card, no clipping or overflow.
-Round 1 Blocking resolved. Own 390 and 1280 px renders of the new task with options, feedback and solution open (r3 captures, read as 2x tiles); every formula line now fits the card, no clipping, no page overflow (measured). fy8-2-L2-08: the E and lambda lines (12, 13, 14) are one short row each; option A feedback now says the lines are bright emission lines on black; all four option figures checked again, unchanged and consistent with the solution.
+- Round 4, 360 px, solutions open: own captures of L2-09 and L3-06 (fi), read in full in chunks; scrollWidth 360, no horizontal overflow.
+- L3-06 SUBSTITUTION a): both denominators now stack J over eV and sit inside the card with margin; nothing clipped. L2-09 conversion, E rows, answer, figure lamp-spectrum seen.
+- Delta covers only these two figure tasks.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4
