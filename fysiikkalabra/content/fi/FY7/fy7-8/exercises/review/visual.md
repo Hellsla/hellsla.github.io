@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 216bb34ce703f90c
+CONTENT-HASH: f70b284460cf3f45
 SCOPE: delta added-exercise from fb4a6839555b1dd9 base 8f23aa7ae3bd
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 8-17 (fy7-8/loss-graph-curve) — dense 1 % ticks and only 5 % numbers make reading 3,0 % at 200 kV fiddly; label every 2 %.
+- none
 
 ## Checked
-- fy7-8 L2 captures 11-12 (8-17 graph, solution).
-- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
+- Captures (current for this hash): open-exercises 1280 L1 parts 1-2 (8-1, 8-2: 8,00 V, three significant figures, the new reasonableness line 29·40 = 1160 close to 1150), L2 parts 1, 3, 4, 6, 8 (8-9, 8-10, 8-11, 8-12 graph, the data task, the transformer table: "sisäenergiaksi" in task, Kysytty, Periaate and Järkevyys), L3 parts 1-2 (8-18, 8-19).
+- The changed wording is fluent; the formulas and units, spacing and layout of the changed lines are intact. The 8-12 graph (axes with units, data points distinct from the fitted curve, dashed beyond 5 A) is unchanged; only its alt text changed.
+- Delta only; the rest of the set was not re-reviewed. Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

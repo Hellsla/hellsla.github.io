@@ -201,6 +201,21 @@ Voimajohdolla on resistanssi, ja johdossa kulkeva virta lämmittää sitä: osa 
 ### Jännite lasketaan vaiheittain
 Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin, ja asuinalueen muuntamon jakelumuuntaja laskee esimerkiksi $20\,\text{kV}$:n jännitteen pienjänniteverkon jännitteeksi. Pienjänniteverkossa vaihejohtimien välillä on noin $400\,\text{V}$ ja vaihejohtimen ja nollajohtimen välillä noin $230\,\text{V}$, joka on kodin pistorasian jännite. Suurjännitettä ei tuoda koteihin, koska sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku *Sähköturvallisuus kotona ja työssä*). Puhelimen laturi laskee jännitteen vielä noin $5\,\text{V}$:iin. Nykyaikainen laturi muuttaa verkkojännitteen ensin hyvin suuritaajuiseksi, jolloin muuntaja voi olla pieni, ja tasasuuntaa sen lopuksi. Laturin muuntajan käämit eivät kosketa toisiaan, joten puhelin ei ole johtavassa yhteydessä sähköverkkoon.
 
+<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: seinäpistorasiaan on kytketty pieni puhelimen laturi, ja sen johto vie pöydällä olevaan puhelimeen, joka latautuu." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy78s-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy78s-screen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
+  <rect x="0" y="0" width="600" height="360" fill="#f6f1e6"/>
+  <rect x="0" y="270" width="600" height="90" fill="url(#fy78s-desk)"/>
+  <rect x="120" y="60" width="120" height="120" rx="14" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="180" cy="120" r="42" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
+  <rect x="150" y="100" width="60" height="64" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="166" y="116" width="28" height="8" rx="3" fill="#6c757d"/>
+  <path d="M180,164 C180,240 300,200 330,290" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="300" y="286" width="150" height="54" rx="10" fill="#1f2933"/>
+  <rect x="310" y="292" width="130" height="42" rx="4" fill="url(#fy78s-screen)"/>
+  <rect x="360" y="304" width="30" height="18" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <rect x="364" y="308" width="16" height="10" rx="1" fill="#2b8a3e"/>
+</svg>
+
 ## Kaava: Muuntaja ja siirtohäviö
 Ideaalisen muuntajan jännitteet ja virrat riippuvat käämien kierrosten lukumääristä:
 ```kaavat
@@ -339,18 +354,3 @@ Moni laskee voimajohdon häviötehon lausekkeella $P = U^2 : R$ ja päättelee, 
 - Siirtojohdon häviöteho on $P_\text{h} = R I^2$, missä $I = P : U$. Kaksinkertainen siirtojännite pienentää häviöt neljäsosaan.
 - Sähkö siirretään pitkiä matkoja suurjännitteellä: Suomen kantaverkon jännitteet ovat $400\,\text{kV}$, $220\,\text{kV}$ ja $110\,\text{kV}$, ja muuntajat laskevat jännitteen vaiheittain pienjänniteverkon $400\,\text{V}$:iin ja $230\,\text{V}$:iin.
 - Laskuissa käytetään yksinkertaistettua kaksijohtimista mallia $P = UI$. Todellinen kantaverkko on kolmivaiheinen: $400\,\text{kV}$ on pääjännite, ja pätöteho on $P = \sqrt{3}\,U I \cos\varphi$.
-
-<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: seinäpistorasiaan on kytketty pieni puhelimen laturi, ja sen johto vie pöydällä olevaan puhelimeen, joka latautuu." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy78s-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy78s-screen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
-  <rect x="0" y="0" width="600" height="360" fill="#f6f1e6"/>
-  <rect x="0" y="270" width="600" height="90" fill="url(#fy78s-desk)"/>
-  <rect x="120" y="60" width="120" height="120" rx="14" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="180" cy="120" r="42" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
-  <rect x="150" y="100" width="60" height="64" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <rect x="166" y="116" width="28" height="8" rx="3" fill="#6c757d"/>
-  <path d="M180,164 C180,240 300,200 330,290" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="300" y="286" width="150" height="54" rx="10" fill="#1f2933"/>
-  <rect x="310" y="292" width="130" height="42" rx="4" fill="url(#fy78s-screen)"/>
-  <rect x="360" y="304" width="30" height="18" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
-  <rect x="364" y="308" width="16" height="10" rx="1" fill="#2b8a3e"/>
-</svg>

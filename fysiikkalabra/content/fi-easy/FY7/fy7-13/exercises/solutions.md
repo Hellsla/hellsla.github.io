@@ -167,7 +167,7 @@
 ## fy7-13-L2-07
 **Kysytty:** mikä muutos pienentää aallonpituuden suhteellista epävarmuutta, kun lukeman epävarmuus $\Delta x$ on aina sama
 **Periaate:** Aallonpituus lasketaan etäisyydestä $x$. Suhteellinen epävarmuus on likimain $\Delta x : x$. Kun $\Delta x$ pysyy samana, epävarmuus on sitä pienempi osa, mitä suurempi $x$ on. Siksi mittaus kannattaa tehdä niin, että $x$ on mahdollisimman suuri.
-**Mallivastaus:** Suhteellinen epävarmuus pienenee, kun mitataan kauempana oleva maksimi. Sama lukeman epävarmuus on silloin pienempi osa suuremmasta etäisyydestä. Jos varjostin siirretään lähemmäs hilaa, $x$ pienenee. Silloin sama $\Delta x$ on suurempi osa, ja virhe kasvaa. Harvempi hila pienentää kulmia ja siksi myös $x$:ää. Silloin suhteellinen epävarmuus kasvaa, eikä virhe jakaudu mihinkään. Kirkkaampi laser ei muuta maksimien paikkoja. Paikat riippuvat aallonpituudesta, hilavakiosta ja etäisyydestä $L$.
+**Mallivastaus:** Suhteellinen epävarmuus pienenee, kun mitataan kauempana oleva maksimi. Sama lukeman epävarmuus on silloin pienempi osa suuremmasta etäisyydestä. Jos varjostin siirretään lähemmäs hilaa, $x$ pienenee. Silloin sama $\Delta x$ on suurempi osa, ja suhteellinen epävarmuus kasvaa. Harvempi hila pienentää kulmia ja siksi myös $x$:ää. Silloin suhteellinen epävarmuus kasvaa, eikä virhe jakaudu mihinkään. Kirkkaampi laser ei muuta maksimien paikkoja. Paikat riippuvat aallonpituudesta, hilavakiosta ja etäisyydestä $L$.
 
 ## fy7-13-L2-08
 **Kysytty:** miten ensimmäisen kertaluvun maksimin etäisyys $x$ keskimaksimista muuttuu, kun hila vaihdetaan tiheämpään ja varjostin siirretään lähemmäs.
