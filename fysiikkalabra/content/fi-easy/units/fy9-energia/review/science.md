@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: f6ad08df6e7380d7
-Round 2: delta against the version round 1 reviewed (fix round 1).
+CONTENT-HASH: 3c8c8618ecbaa2da
+Round 3: delta against the version round 2 reviewed (one sentence in s7 d).
 
 ## Blocking
 - (none)
 
 ## Polish
-- (none)
+- C (not a finding, for the teacher's information): in the source chart's own data the Opel Grandland (484 km stated, 262 km measured) comes to -45,87 % and the Lucid Air (960 km, 520 km) to -45,83 %, so a student who computes every car from the chart finds the Opel 0,04 percentage points ahead. The sentence is attributed to the report, which makes it true as written; a teacher note or a "noin 46 %" in the solution would forestall the question. The report's text gives 519 km for the Lucid, the chart 520 km (the task uses the chart).
 
 ## Checked
-- s7 c closing sentence (round-1 Blocking): now "jokainen kilometri vaatii akusta enemmän energiaa ... Lisäksi kylmästä akusta saadaan vähemmän energiaa. Siksi toimintamatka lyhenee." Right: consumption per kilometre rises and the usable energy falls; it agrees with b's judgement of the equal-energy assumption and with the fourth criterion of c.
-- s7 b Järkevyys: measured 21,2 and 21,6 kWh/100 km are said to be other cars' values that give only the order of magnitude; correct, and the model's 27 kWh (75 kWh / 279 km = 26,9) is unchanged. Factor 1/0,62 = 1,61.
-- s7 c rubric: thermal criterion without the combustion-car clause still matches the task; electricity criterion accepts either the heater's P = UI or the larger internal resistance (R_s I^2, lower terminal voltage); the solution shows both.
-- s7 d text: "toimintamatka jäi suhteellisesti eniten ilmoitetusta" states the same fact as before (Lucid Air −45,8 %), agrees with the solution and rubric.
-- s7 e text: now asks for at least three factors, as the rubric requires; the solution names nine.
-- unit.md: internal energy defined as the sum of the particles' kinetic energy and the energy of their interactions: agrees with the guardrails.
-- `python scripts/practice.py check units/fy9-energia`: OK (7 tasks, 105 points). Hash equal at start and end.
+- `git diff c502cb9e26 -- content/*/units/fy9-energia`: three files, one line each, only the s7 d sentence. Nothing else changed.
+- New sentence: "Testin raportin mukaan pisimmälle ajaneen auton toimintamatka jäi suhteellisesti eniten jälkeen ilmoitetusta." Opened the source myself (naf.no, elprix-vinter-2026-rekkeviddetest): "Lucid var også bilen med størst avvik fra WLTP-rekkevidden, med hele 46 prosent." The attribution is accurate, and the same article gives the task's own reasoning (the Lucid had by far the longest time in the coldest surroundings).
+- Recomputed from the task's table: Inster -28,89 %, Tesla -42,93 %, Lucid -45,83 %: the sentence agrees with part a and with the 46 % of the report. From the chart data of all 24 cars the Lucid drove the furthest (520 km) and the mean deviation is 38 %, as the task says.
+- Part d criteria (source use: -7 to -32 degrees C, short-range car stopped at -16 degrees C; conclusion: not the same conditions, no ranking by percentages) and the model answer are unchanged and agree with the new sentence; they need nothing the task does not give. Points 1 + 1 = 2.
+- The round-2 Polish about the claim's scope (en) is settled by the attribution.
+- `practice.py check units/fy9-energia` OK (7 tasks, 105 points). Hash the same at the start and the end.

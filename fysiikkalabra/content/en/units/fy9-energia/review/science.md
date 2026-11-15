@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6b06c33381daf737
-Round 2: delta against the version round 1 reviewed (fix round 1).
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 99322ddd2a419363
+Round 3: delta against the version round 2 reviewed (one sentence in s7 d).
 
 ## Blocking
 - (none)
 
 ## Polish
-- A: s7 d still says the furthest car fell short "by the largest percentage" of the whole test; the task's table supports this only among its three cars (carried over from round 1; depends on the source chart, which I cannot open).
+- C (not a finding, for the teacher's information): in the source chart's own data the Opel Grandland (484 km stated, 262 km measured) comes to -45,87 % and the Lucid Air (960 km, 520 km) to -45,83 %, so a student who computes every car from the chart finds the Opel 0,04 percentage points ahead. The sentence is attributed to the report, which makes it true as written; a teacher note or a "noin 46 %" in the solution would forestall the question. The report's text gives 519 km for the Lucid, the chart 520 km (the task uses the chart).
 
 ## Checked
-- s7 c closing sentence (round-1 Blocking): "Every kilometre therefore takes more energy from the battery than in mild weather, and less energy is available from a cold battery, so the range shrinks" is right and now agrees with the task (consumption per kilometre grows), with the three bullets above it and with the remark of part b that a cold battery gives less energy. The fourth rubric criterion says the same thing.
-- s7 c rubric: the thermal criterion no longer demands the combustion-engine comparison the task does not ask; the electricity criterion accepts either P = UI of the heater or R_s I^2 with the lower terminal voltage. Both statements are correct physics; points still add up to 4.
-- s7 b reasonableness: the new sentence (measured consumptions belong to other cars, order of magnitude only) is correct; numbers around it recomputed: 16.67 kWh, 26.88 kWh, factor 1.61, 600 N.
-- s7 d wording "fell short of its stated range by the largest percentage" agrees with a (-28.9 %, -42.9 %, -45.8 %). s7 e now asks for the three factors its rubric requires.
-- practice.py check OK (7 tasks, 105 points). Hash the same at the start and the end.
+- `git diff c502cb9e26 -- content/*/units/fy9-energia`: three files, one line each, only the s7 d sentence. Nothing else changed.
+- New sentence: "According to the test report, the range of the car that drove the furthest fell short of its stated range by the largest percentage." Opened the source myself (naf.no, elprix-vinter-2026-rekkeviddetest): "Lucid var også bilen med størst avvik fra WLTP-rekkevidden, med hele 46 prosent." The attribution is accurate, and the same article gives the task's own reasoning (the Lucid had by far the longest time in the coldest surroundings).
+- Recomputed from the task's table: Inster -28,89 %, Tesla -42,93 %, Lucid -45,83 %: the sentence agrees with part a and with the 46 % of the report. From the chart data of all 24 cars the Lucid drove the furthest (520 km) and the mean deviation is 38 %, as the task says.
+- Part d criteria (source use: -7 to -32 degrees C, short-range car stopped at -16 degrees C; conclusion: not the same conditions, no ranking by percentages) and the model answer are unchanged and agree with the new sentence; they need nothing the task does not give. Points 1 + 1 = 2.
+- The round-2 Polish about the claim's scope (en) is settled by the attribution.
+- `practice.py check units/fy9-energia` OK (7 tasks, 105 points). Hash the same at the start and the end.
