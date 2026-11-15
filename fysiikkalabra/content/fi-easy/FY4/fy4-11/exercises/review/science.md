@@ -1,15 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 1ecf085acd3d008f
-SCOPE: delta added-exercise from 5338796927c96918 base 81db4a6fd727
+CONTENT-HASH: 1c4ee976ee44ae1c
+Mode: full
+
 ## Blocking
 
 ## Polish
+- solutions.md:865–866 (L3-04 c and Järkevyys) — the impact speed at 80 km/h is 14,31 m/s = 51,5 km/h; "noin 51 km/h" comes from rounding 14,3 m/s first — write "noin 52 km/h" (or "noin 51–52 km/h").
+- solutions.md:936 (L2-10 Periaate) — "vain yksi vaakasuora voima: kitka" assumes that air resistance is neglected and the road is level; the calculator's text does not say so — add "kun ilmanvastus jätetään huomiotta".
+- exercises.json L2-10 — the answer field (69,4 km/h) follows the calculator's parameters as read on 16.11.2026 (1 s, 9 m/s²); the solution says so and tells the student to use the values they read; if the calculator changes, the field must follow.
 
 ## Checked
-- L1-09 (final fix): locked wheels sliding, so the sliding coefficient (liukukitkakerroin, teacher's choice) is the right one; level road, no air resistance stated; a = μg = 0,8 · 9,81 = 7,85 m/s², s = (22,22 m/s)²/(2 · 7,85 m/s²) = 31,46 m → ≈ 31 m (recomputed); exercises.json 31.46 equals fi and answers.py.
-- L1-09 range: μ = 0,8 is the table range's upper end, giving the shorter extreme; μ = 0,5 gives 50,3 m ≈ 50 m, so the stated "longer at the lower end" is right; comparison with ABS on dry asphalt (μ ≈ 0,9, brief's 0,92) consistent. Tolerance 5 % accepts 31 m and 30 m.
-- L2-09: rectangle 20 m/s · 1,0 s + triangle ½ · 20 m/s · 2,5 s = 45 m (recomputed from figures.py); deceleration 8,0 m/s² plausible; 70 m upper bound check right.
-- L3-06: Δv = 15 m/s, Δt_A = 0,060 s, Δt_B = 0,150 s; F_A = 17,5 kN, F_B = 7,0 kN, difference 10,5 kN (recomputed); linear v(t) justifies constant force; ratio 2,5 = inverse time ratio.
-- Both figures give the needed values (0,150 s halfway between 0,14 and 0,16 gridlines, also in the description) and show no answer.
-- All 24 tasks: answer, unit, tolerance, figure, data and correct options equal the Finnish set; answers.py agrees.
-- Hash unchanged at start and end.
+- Hash the same at the start and the end (1c4ee976ee44ae1c).
+- All 22 numeric answers recomputed with my own formulas in one script; all inside tolerance and equal to answers.py (L2-05 a = 7,85; L2-06 60,0 km/h; L3-01 36,7 km/h; L3-02 11 253 N; L3-03 35,9 m; L3-04 fit t_r = 1,21 s, a = 5,10 m/s², v_max = 66,0 km/h; L3-05 0,79 m, 10 kN, 18 kN).
+- L2-10 b: s_j = v0²/(2a) derived from t_j = v0/a and the triangle; 6,86; 15,43; 27,43; 42,87 m round to the calculator's 7, 15, 27, 43 m; 40 → 80 km/h four-fold.
+- L2-10 c: 80 km/h 49,66 m < 50 m (margin 0,3 m, the calculator shows 50 m by rounding, practical conclusion stated); 100 km/h: 22,22 m left, v² = 771,6 − 400,0 = 371,6 m²/s², v = 19,28 m/s = 69,4 km/h; with the rounded 28 m 69,8 km/h, inside tolerance 0.03.
+- L2-10 d: ice 164,6 m + 22,2 m = 186,8 m; six-fold braking distance as 9 : 1,5; μ = a/g = 0,92 and 0,15 from ΣF = ma, mass cancels.
+- L2-10 e: ABS cannot raise μ; 1,25² = 1,56 (+56 %), calculator 27 → 43 m.
+- Source (coordinator's record, 16.11.2026): task gives no reaction time or deceleration (read from Lisätietoa); solution states 1 s, 9 and 1,5 m/s², rounding to a metre and the table values exactly as recorded; solution is dated and names itself an example.
+- Fixes: L3-05 answer 18 kN with two figures (Δv = 4,5 m/s), answer 18.0 unchanged; L2-05 "kahden tai kolmen numeron"; L3-06 11 kN (computed 10,5 kN), tolerance 0.05 accepts 11.
+- L2-08: exactly one correct option (2 : 4 = 0,50); each distractor's feedback names its error correctly.
+- Figures ex-tv-jarrutus (20 m + 25 m = 45 m) and ex-tv-tyyny (17,5 kN − 7,0 kN = 10,5 kN) give the values at grid crossings; descriptions match.
