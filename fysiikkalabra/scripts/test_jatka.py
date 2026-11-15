@@ -96,7 +96,7 @@ with sync_playwright() as pw:
     names = pg.evaluate("""(() => { const fs = document.querySelector('fieldset.sa-rate'); if (!fs) return null;
       return [...fs.querySelectorAll('.sa-opt')].map(o => [o.dataset.level, o.querySelector('.sa-sw').textContent.trim(), getComputedStyle(o.querySelector('.sa-sw')).backgroundColor]); })()""")
     expect("a self-assessment row names all five levels before any choice", bool(names) and [n[0] for n in names] == ["d", "c", "b", "a", "x"] and all(len(n[1]) > 3 for n in names), names)
-    expect("no level is coloured before it is chosen", bool(names) and len({n[2] for n in names}) == 1, names)
+    expect("every level shows its own colour before it is chosen (teacher 2026-11-13)", bool(names) and len({n[2] for n in names}) == 5, names)
     if names:
         pg.click("fieldset.sa-rate .sa-opt[data-level=c]"); pg.wait_for_timeout(400)
         got = pg.evaluate("(() => { const fs = document.querySelector('fieldset.sa-rate'); return [fs.querySelector('.sa-desc').textContent.trim().length > 10, getComputedStyle(fs.querySelector('.sa-opt[data-level=c] .sa-sw')).backgroundColor !== getComputedStyle(fs.querySelector('.sa-opt[data-level=b] .sa-sw')).backgroundColor, document.documentElement.scrollWidth > innerWidth]; })()")
