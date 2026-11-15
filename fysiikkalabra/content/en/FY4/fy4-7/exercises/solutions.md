@@ -131,7 +131,7 @@
 **Conversions:** $9.4\,\text{kJ} = 9.4 \cdot 1000\,\text{J} = 9400\,\text{J}$
 **Substitution:** $\Delta h = \dfrac{9400\,\text{J}}{80\,\text{kg} \cdot 9.81\,\text{m/s}^2} = \dfrac{9400\,\text{J}}{784.8\,\text{N}} \approx 11.98\,\text{m}$
 **Answer:** $12\,\text{m}$, two significant figures like the mass and the energy.
-**Reasonableness:** With rounded numbers $80\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 12\,\text{m} = 9600\,\text{J} \approx 9.4\,\text{kJ}$. About $12\,\text{m}$ corresponds to the height of four floors, which suits the distance travelled by a lift.
+**Reasonableness:** With rounded numbers $80\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 12\,\text{m} = 9600\,\text{J} = 9.6\,\text{kJ}$, which is close to the given $9.4\,\text{kJ}$; the difference comes from rounding $g$ upwards. About $12\,\text{m}$ corresponds to the height of four floors, which suits the distance travelled by a lift.
 
 ## fy4-7-L1-08
 **Find:** the signs of the kinetic energy and the potential energy of the bucket when the bucket is below the zero level and moving
@@ -333,3 +333,40 @@ Only the unit of the expression $\dfrac{G v^2}{2g}$ is joule. It is kinetic ener
 **Substitution:** $m = \dfrac{39\,\text{J}}{9.81\,\text{m/s}^2 \cdot 2.0\,\text{m}} = 1.99\,\text{kg}$
 **Answer:** $2.0\,\text{kg}$, two significant figures, like the height $2.0\,\text{m}$.
 **Reasonableness:** Another point read from the graph, about $20\,\text{J}$ at the height $1.0\,\text{m}$, gives $m = \dfrac{20\,\text{J}}{9.81\,\text{m/s}^2 \cdot 1.0\,\text{m}} \approx 2.0\,\text{kg}$. The slope of the line, $\dfrac{39\,\text{J}}{2.0\,\text{m}} \approx 19.5\,\text{N}$, is the weight of the crate.
+
+## fy4-7-L2-10
+**Given:** the figures of the table for the summer season 2025: the mean speed, the share that exceeded the limit and the share that exceeded it by more than $10\,\text{km/h}$ for three types of road. The mass of the car is $m = 1500\,\text{kg}$, the speeds are $v_1 = 80\,\text{km/h}$ and $v_2 = 92\,\text{km/h}$, the reaction time is $t_\text{r} = 1.0\,\text{s}$ and the deceleration $8.0\,\text{m/s}^2$, so the acceleration in braking is $a = -8.0\,\text{m/s}^2$.
+Facts taken from the source: the figures of the table are from the report <a href="https://www.fintraffic.fi/sites/default/files/2026-05/Ajonopeudet_maanteilla_2025.pdf" rel="noopener">Fintraffic: Ajonopeudet maanteillä 2025</a> (in Finnish, read 16 November 2026). According to the report, the figure of each type of road is the mean over its measuring stations, speeding means exceeding the speed limit of the road, and stretches of road with variable speed limits are left out. The raw data of the measuring stations is opened on Fintraffic's page <a href="https://www.fintraffic.fi/fi/fintraffic/digitraffic-ja-avoin-data" rel="noopener">Digitraffic ja avoin data</a>.
+**Find:** a) the distribution of driving speeds on the $80\,\text{km/h}$ roads and a comparison with the $100\,\text{km/h}$ roads, b) the kinetic energies $E_\text{k,1}$ and $E_\text{k,2}$ and their difference in per cent, c) the difference $\Delta s$ between the stopping distances in metres, d) conclusions about road safety and the factors the data says nothing about
+**Principle:** Kinetic energy depends on the mass and on the square of the speed. The stopping distance is the sum of two motions. During the reaction time the car moves uniformly, because the driver is not yet braking. After that the motion is uniformly decelerated, because the deceleration is assumed constant. So the equations of uniform motion and of uniformly accelerated motion are used (chapter *Acceleration and uniformly accelerated motion*), and in braking the acceleration is negative.
+**Formula:** The kinetic energy is $E_\text{k} = \tfrac{1}{2}\,m v^2$. The reaction distance is $s_\text{r} = v_0\,t_\text{r}$. At the end of the braking the velocity is zero, $v_0 + a\,t_\text{b} = 0$, so the braking time is $t_\text{b} = -\dfrac{v_0}{a}$. The braking distance is then
+$$\begin{aligned} s_\text{b} &= v_0\,t_\text{b} + \tfrac{1}{2}\,a\,t_\text{b}^2 \\ &= -\dfrac{v_0^2}{a} + \dfrac{v_0^2}{2a} \\ &= -\dfrac{v_0^2}{2a} \end{aligned}$$
+The stopping distance is $s = s_\text{r} + s_\text{b}$, and the difference asked for is $\Delta s = s_2 - s_1$
+**Conversions:** The speeds are converted to $\text{m/s}$:
+$$\begin{aligned} v_1 &= 80 \cdot 1000\,\text{m} : 3600\,\text{s} \\ &= 22.22\ldots\,\text{m/s} \end{aligned}$$
+$$\begin{aligned} v_2 &= 92 \cdot 1000\,\text{m} : 3600\,\text{s} \\ &= 25.55\ldots\,\text{m/s} \end{aligned}$$
+**Substitution:** Part a): on the $80\,\text{km/h}$ roads $100\,\% - 62.0\,\% = 38.0\,\%$ of the vehicles drive at the limit or below it. $62.0\,\% - 13.8\,\% = 48.2\,\%$ exceed the limit by at most $10\,\text{km/h}$, and $13.8\,\%$, about one vehicle in seven, exceed it by more than $10\,\text{km/h}$. So most vehicles drive close to the limit, a little over it. That is why the mean speed $82.3\,\text{km/h}$ is above the limit.
+On the $100\,\text{km/h}$ roads the corresponding shares are $100\,\% - 39.8\,\% = 60.2\,\%$, $39.8\,\% - 8.1\,\% = 31.7\,\%$ and $8.1\,\%$. The mean speed $96.3\,\text{km/h}$ is below the limit, so the distribution lies lower relative to the limit. The table gives only the mean and two shares, so the exact shape of the distribution between these boundaries cannot be read from it.
+Part b):
+$$\begin{aligned} E_\text{k,1} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (22.22\ldots\,\text{m/s})^2 \\ &\approx 370\,370\,\text{J} \\ &\approx 0.37\,\text{MJ} \end{aligned}$$
+$$\begin{aligned} E_\text{k,2} &= \tfrac{1}{2} \cdot 1500\,\text{kg} \cdot (25.55\ldots\,\text{m/s})^2 \\ &\approx 489\,815\,\text{J} \\ &\approx 0.49\,\text{MJ} \end{aligned}$$
+In the ratio of the energies the mass and the factor $\tfrac{1}{2}$ cancel:
+$$\begin{aligned} \dfrac{E_\text{k,2}}{E_\text{k,1}} &= \dfrac{v_2^2}{v_1^2} \\ &= \left(\dfrac{92\,\text{km/h}}{80\,\text{km/h}}\right)^2 \\ &= 1.3225 \end{aligned}$$
+The kinetic energy is about $32\,\%$ larger, although the speed is only $15\,\%$ larger, because kinetic energy grows with the square of the speed.
+Part c): at the speed $v_1$
+$$\begin{aligned} s_\text{r,1} &= 22.22\ldots\,\text{m/s} \cdot 1.0\,\text{s} \\ &\approx 22.2\,\text{m} \end{aligned}$$
+$$\begin{aligned} s_\text{b,1} &= -\dfrac{(22.22\ldots\,\text{m/s})^2}{2 \cdot (-8.0\,\text{m/s}^2)} \\ &\approx 30.9\,\text{m} \end{aligned}$$
+$$\begin{aligned} s_1 &= 22.2\,\text{m} + 30.9\,\text{m} \\ &= 53.1\,\text{m} \end{aligned}$$
+and at the speed $v_2$
+$$\begin{aligned} s_\text{r,2} &= 25.55\ldots\,\text{m/s} \cdot 1.0\,\text{s} \\ &\approx 25.6\,\text{m} \end{aligned}$$
+$$\begin{aligned} s_\text{b,2} &= -\dfrac{(25.55\ldots\,\text{m/s})^2}{2 \cdot (-8.0\,\text{m/s}^2)} \\ &\approx 40.8\,\text{m} \end{aligned}$$
+$$\begin{aligned} s_2 &= 25.6\,\text{m} + 40.8\,\text{m} \\ &= 66.4\,\text{m} \end{aligned}$$
+The difference between the stopping distances is
+$$\begin{aligned} \Delta s &= 66.4\,\text{m} - 53.1\,\text{m} \\ &= 13.3\,\text{m} \end{aligned}$$
+The braking distances are in the same ratio as the kinetic energies, $40.8\,\text{m} : 30.9\,\text{m} \approx 1.32$, because both are proportional to the square of the speed. In braking, the kinetic energy of the car turns into internal energy of the brakes, the tyres and the road.
+An extra remark that the task did not ask for: when the slower car has already stopped, the faster one still has $13.3\,\text{m}$ of braking distance left. The formula $s_\text{b} = -\dfrac{v^2}{2a}$ gives its speed at that point as $v = \sqrt{-2a\,\Delta s} \approx 14.6\,\text{m/s}$, about $52\,\text{km/h}$.
+Part d): the data shows that on the $80\,\text{km/h}$ roads most vehicles exceed the limit and about one in seven by more than $10\,\text{km/h}$. By parts b and c, such a difference in speed means about a third more kinetic energy and a stopping distance about $13\,\text{m}$ longer. So the measured speeding has physically significant consequences.
+The data does not show how much speed adds to accidents, because the table has no accident data. The figures are also means over the whole summer season and many stations, so they say nothing about a single road or moment.
+The data says nothing about, for example, these factors: the weather and the road surface (friction), visibility and darkness, the volume of traffic and following distances, the driver's alertness and reaction time, the condition of the vehicle, its tyres and safety devices, pedestrians and cyclists, junctions and built-up areas (the measuring stations are not there), roads with variable limits, and the winter season, when the limits and speeds are different. The model of part c is a simplification as well: not all drivers and cars have the same reaction time or deceleration.
+**Answer:** $13\,\text{m}$, two significant figures like the speeds, the reaction time $1.0\,\text{s}$ and the deceleration $8.0\,\text{m/s}^2$.
+**Reasonableness:** The difference can be estimated in parts. During the reaction time the faster car travels $12\,\text{km/h} \cdot 1.0\,\text{s} \approx 3.3\,\text{m/s} \cdot 1.0\,\text{s} \approx 3\,\text{m}$ further. The braking distance grows in the same ratio as the kinetic energy, by about $32\,\%$, which is $0.32 \cdot 30.9\,\text{m} \approx 10\,\text{m}$. In all, the difference is about $13\,\text{m}$, about the length of three passenger cars.
