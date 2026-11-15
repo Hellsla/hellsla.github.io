@@ -156,7 +156,7 @@
 b) $7.3 \cdot 10^{2}\,\text{kWh}$, two significant figures. The limiting data are the powers $90\,\text{W}$ and $60\,\text{W}$ and the usage times; the powers $110\,\text{W}$, $800\,\text{W}$ and $1200\,\text{W}$ have more figures.
 
 c) Lighting is a suitable target for saving, because it is the second largest item and its power can be reduced by changing the lamps to LED lamps, whereas the time of use of the vacuum cleaner cannot be shortened without the cleaning suffering.
-**Reasonableness:** With the energy of a day, $2.01\,\text{kWh}$, the average power is $2.01\,\text{kWh} : 24\,\text{h} = 0.084\,\text{kW} = 84\,\text{W}$, which is reasonable for the appliances of evenings at home. In a year $365 \cdot 2\,\text{kWh} = 7.3 \cdot 10^{2}\,\text{kWh}$ agrees with the result. The vacuum cleaner uses more than the lighting, because its power is $13$ times as large ($1200\,\text{W} : 90\,\text{W}$) but its time is only a tenth.
+**Reasonableness:** With the energy of a day, $2.01\,\text{kWh}$, the average power is $2.01\,\text{kWh} : 24\,\text{h} = 0.084\,\text{kW} = 84\,\text{W}$, which is reasonable for the appliances of evenings at home. In a year $$\begin{aligned} &365 \cdot 2\,\text{kWh} \\ &= 7.3 \cdot 10^{2}\,\text{kWh} \end{aligned}$$ agrees with the result. The vacuum cleaner uses more than the lighting, because its power is $13$ times as large ($1200\,\text{W} : 90\,\text{W}$) but its time is only a tenth.
 
 ## fy6-7-L2-06
 **Given:** meter readings $12\,437.2\,\text{kWh}$ at the start and $12\,493.5\,\text{kWh}$ after seven days, price $a = 16\,\text{c/kWh}$

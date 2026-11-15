@@ -47,7 +47,7 @@
 **Conversions:** $120\,\mu\text{N} = 120 \cdot 10^{-6}\,\text{N}$ and $4.0\,\text{nC} = 4.0 \cdot 10^{-9}\,\text{C}$.
 **Substitution:** $E = \dfrac{120 \cdot 10^{-6}\,\text{N}}{4.0 \cdot 10^{-9}\,\text{C}} = 3.0 \cdot 10^{4}\,\text{N/C}$
 **Answer:** $3.0 \cdot 10^{4}\,\text{N/C}$, two significant figures, because a crossing of the grid is read from the graph, where the force is $120\,\mu\text{N}$ with two significant figures.
-**Reasonableness:** The measurement point $(3.0\,\text{nC};\ 91\,\mu\text{N})$ gives almost the same value: $91\,\mu\text{N} : 3.0\,\text{nC} \approx 3.0 \cdot 10^{4}\,\text{N/C}$. The line was fitted through the origin because, by the model $F = qE$, an uncharged ball feels no electric force in a uniform field, although the field exists.
+**Reasonableness:** The measurement point $(3.0\,\text{nC};\ 91\,\mu\text{N})$ gives almost the same value: $$\begin{aligned} &91\,\mu\text{N} : 3.0\,\text{nC} \\ &\approx 3.0 \cdot 10^{4}\,\text{N/C} \end{aligned}$$. The line was fitted through the origin because, by the model $F = qE$, an uncharged ball feels no electric force in a uniform field, although the field exists.
 
 ## fy6-11-L1-09
 **Given:** plate separation $d = 2.5\,\text{mm}$; dielectric strength of air from the MAFY table (Eristeiden läpilyöntikestävyyksiä, air) $E = 3.0\,\text{kV/mm}$
@@ -115,7 +115,7 @@
 **Principle:** In a uniform field a constant force $eE$ acts on the electron towards the positive plate, and the plates are in vacuum, so there are no other forces (the weight is negligibly small). By Newton's second law the acceleration $a = eE : m$ is constant, so the motion is uniformly accelerated, and for a body that has travelled the distance $d$ from rest $v^2 = 2ad$ holds.
 **Formula:** $a = \dfrac{eE}{m} = \dfrac{eU}{md}$ and $v^2 = 2ad$, so $v = \sqrt{2ad} = \sqrt{\dfrac{2eU}{m}}$
 **Conversions:** $d = 1.0\,\text{cm} = 0.010\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Substitution:** $E = \dfrac{50\,\text{V}}{0.010\,\text{m}} = 5000\,\text{V/m}$, $a = \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 5000\,\text{V/m}}{9.109 \cdot 10^{-31}\,\text{kg}} = 8.794 \cdot 10^{14}\,\text{m/s}^2$ and $v = \sqrt{2 \cdot 8.794 \cdot 10^{14}\,\text{m/s}^2 \cdot 0.010\,\text{m}} = 4.19 \cdot 10^{6}\,\text{m/s}$
+**Substitution:** $E = \dfrac{50\,\text{V}}{0.010\,\text{m}} = 5000\,\text{V/m}$, $a = \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 5000\,\text{V/m}}{9.109 \cdot 10^{-31}\,\text{kg}} = 8.794 \cdot 10^{14}\,\text{m/s}^2$ and $$\begin{aligned} v &= \sqrt{2 \cdot 8.794 \cdot 10^{14}\,\text{m/s}^2 \cdot 0.010\,\text{m}} \\ &= 4.19 \cdot 10^{6}\,\text{m/s} \end{aligned}$$
 **Answer:** about $4.2 \cdot 10^{3}\,\text{km/s}$ or $4.2 \cdot 10^{6}\,\text{m/s}$, two significant figures like the voltage and the distance.
 **Reasonableness:** The speed is about $1.4\,\%$ of the speed of light, so classical mechanics is enough. The final result $\sqrt{2eU : m}$ does not depend on the plate distance: the shorter distance is compensated by the stronger field.
 

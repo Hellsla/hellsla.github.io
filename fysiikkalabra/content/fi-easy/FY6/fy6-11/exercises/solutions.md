@@ -47,7 +47,7 @@
 **Muunnokset:** $120\,\mu\text{N} = 120 \cdot 10^{-6}\,\text{N}$ ja $4{,}0\,\text{nC} = 4{,}0 \cdot 10^{-9}\,\text{C}$.
 **Sijoitus:** $E = \dfrac{120 \cdot 10^{-6}\,\text{N}}{4{,}0 \cdot 10^{-9}\,\text{C}} = 3{,}0 \cdot 10^{4}\,\text{N/C}$
 **Vastaus:** $3{,}0 \cdot 10^{4}\,\text{N/C}$, kaksi merkitsevää numeroa, koska kuvaajasta luetaan ruudukon risteys, jossa voima on $120\,\mu\text{N}$ kahden merkitsevän numeron tarkkuudella.
-**Järkevyys:** Mittauspiste $(3{,}0\,\text{nC};\ 91\,\mu\text{N})$ antaa lähes saman arvon: $91\,\mu\text{N} : 3{,}0\,\text{nC} \approx 3{,}0 \cdot 10^{4}\,\text{N/C}$. Suora sovitettiin origon kautta. Mallin $F = qE$ mukaan varaukseton pallo ei tunne homogeenisessa kentässä sähköistä voimaa, vaikka kenttä on olemassa.
+**Järkevyys:** Mittauspiste $(3{,}0\,\text{nC};\ 91\,\mu\text{N})$ antaa lähes saman arvon: $$\begin{aligned} &91\,\mu\text{N} : 3{,}0\,\text{nC} \\ &\approx 3{,}0 \cdot 10^{4}\,\text{N/C} \end{aligned}$$. Suora sovitettiin origon kautta. Mallin $F = qE$ mukaan varaukseton pallo ei tunne homogeenisessa kentässä sähköistä voimaa, vaikka kenttä on olemassa.
 
 ## fy6-11-L1-09
 **Annettu:** levyjen etäisyys $d = 2{,}5\,\text{mm}$. Ilman läpilyöntikestävyys MAFY-taulukosta (Eristeiden läpilyöntikestävyyksiä, ilma) on $E = 3{,}0\,\text{kV/mm}$.
@@ -115,7 +115,7 @@
 **Periaate:** Homogeenisessa kentässä elektroniin kohdistuu vakiovoima $eE$ kohti positiivista levyä. Levyt ovat tyhjiössä, joten muita voimia ei ole (paino on häviävän pieni). Newtonin toisen lain mukaan kiihtyvyys $a = eE : m$ on vakio. Liike on siis tasaisesti kiihtyvää. Levosta lähteneelle kappaleelle, joka on kulkenut matkan $d$, pätee $v^2 = 2ad$.
 **Kaava:** $a = \dfrac{eE}{m} = \dfrac{eU}{md}$ ja $v^2 = 2ad$, joten $v = \sqrt{2ad} = \sqrt{\dfrac{2eU}{m}}$
 **Muunnokset:** $d = 1{,}0\,\text{cm} = 0{,}010\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Sijoitus:** $E = \dfrac{50\,\text{V}}{0{,}010\,\text{m}} = 5000\,\text{V/m}$, $a = \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 5000\,\text{V/m}}{9{,}109 \cdot 10^{-31}\,\text{kg}} = 8{,}794 \cdot 10^{14}\,\text{m/s}^2$ ja $v = \sqrt{2 \cdot 8{,}794 \cdot 10^{14}\,\text{m/s}^2 \cdot 0{,}010\,\text{m}} = 4{,}19 \cdot 10^{6}\,\text{m/s}$
+**Sijoitus:** $E = \dfrac{50\,\text{V}}{0{,}010\,\text{m}} = 5000\,\text{V/m}$, $a = \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 5000\,\text{V/m}}{9{,}109 \cdot 10^{-31}\,\text{kg}} = 8{,}794 \cdot 10^{14}\,\text{m/s}^2$ ja $$\begin{aligned} v &= \sqrt{2 \cdot 8{,}794 \cdot 10^{14}\,\text{m/s}^2 \cdot 0{,}010\,\text{m}} \\ &= 4{,}19 \cdot 10^{6}\,\text{m/s} \end{aligned}$$
 **Vastaus:** noin $4{,}2 \cdot 10^{3}\,\text{km/s}$ eli $4{,}2 \cdot 10^{6}\,\text{m/s}$, kaksi merkitsevää numeroa kuten jännite ja etäisyys.
 **Järkevyys:** Nopeus on noin $1{,}4\,\%$ valon nopeudesta, joten klassinen mekaniikka riittää. Lopputulos $\sqrt{2eU : m}$ ei riipu levyjen etäisyydestä: lyhyempi matka kompensoituu voimakkaammalla kentällä.
 
