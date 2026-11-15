@@ -37,8 +37,9 @@ change needs a genuine visual PASS, in full, since the rest of the part was neve
 ever removed: `verify` fails on a row that the file's first commit did not have. The exercise set's fallback
 (published_exercises) treats a baseline hash as the visual PASS of that version, so unreviewed exercise edits never
 replace the exercises published before. Investigations, TVT guides, units, Sovella sets and example exams
-(`item_status`) have one carry only: over figures the teacher approved as drawn (`carry-item`, teacher 2026-11-11);
-otherwise a report or a baseline row counts for its exact hash only.
+(`item_status`) carry over figures the teacher approved as drawn (`carry-item`, teacher 2026-11-11), formula names
+and MAFY's symbols the teacher approved, and, for science and pedagogy only, calculation chains re-broken into rows
+(category "reflow", work queue 5f, teacher 2026-11-15); otherwise a report or a baseline row counts for its exact hash only.
 
 Two parts are reviewed apart (teacher 2026-10-28, README "Exercises"): the *lesson* (its texts, simulation, figures
 and lesson-answers.py, reports in review/) and its *exercises* (exercises/exercises.json, exercises/solutions.md and
@@ -1153,6 +1154,9 @@ def approve_figures(lid):
 # approved figures' SVGs taken out, the other code as it is, and each not-approved figure as figures.py of that
 # version draws it. So anything a reader sees outside the approved figures is what the reviewers passed, and a change
 # to a helper that moves another figure, or to the shared figure library, does not carry. `verify` re-derives it.
+# A calculation chain re-broken into rows or a long inline formula lifted into an aligned display formula (work queue 5d
+# and 5f, teacher 2026-11-15) carries the science and pedagogy PASS as for a lesson (category "reflow"): the views are
+# then compared with every chain in one form (chain_view); the visual reviewer always looks again (RULES["reflow"]).
 ITEM_KINDS = ("investigation", "sovella", "koe", "unit", "guide")
 
 
@@ -1171,7 +1175,7 @@ def _item(kind, iid):
     raise SystemExit(f"carry-item: kind must be one of {', '.join(ITEM_KINDS)}")
 
 
-def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozenset(), tx=None, code_tx=None, drawn=False):
+def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozenset(), tx=None, code_tx=None, drawn=False, reflow=False):
     """The texts with the approved figures of owner `oid` taken out, the other code as it is, each not-approved figure as
     drawn; a .md text as kaavat.review_view sees it, so formula names in `names` (approved by the teacher) carry too.
     `tx(name, text)` / `code_tx(text)`: the teacher's exact replacements made on a passed version (MAFY's symbols,
@@ -1182,7 +1186,8 @@ def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozens
     read = lambda n: (tx or (lambda _, t: t))(n, caption_free(src.read(rel(folder / n)) or "") if n.endswith(".json") else src.read(rel(folder / n)) or "")   # the marker "(esimerkkiaineisto)" in a caption is no part of what the reviewers judge (teacher 2026-11-15)
     fit = lambda t: re.sub(r"font-size:\d+px", "", re.sub(r"<foreignObject\b[^>]*>", lambda m: re.sub(r'\s(?:x|y|width|height)="[\d.]+"', "", m.group(0)), t)) if drawn else t   # a label box follows its formula's size
     after = lambda n, t: tx(n, t, True) if tx and n.endswith(".md") else t   # a replacement also on the canonical formulas (an aligned block of the passed version)
-    out = [(n, after(n, md(n, normalized(fit(_strip_approved_svgs(read(n), oid)), n)))) for n in texts]
+    chains = lambda n, t: chain_view(t, n) if reflow and n.endswith((".md", ".json")) else t   # `reflow`: calculation chains in one form (category "reflow")
+    out = [(n, chains(n, after(n, md(n, normalized(fit(_strip_approved_svgs(read(n), oid)), n))))) for n in texts]
     for n in code_names:
         code = src.read(rel(code_folder / n))
         if code_tx and code: code = code_tx(code)
@@ -1196,19 +1201,21 @@ def _figure_free(folder, code_folder, texts, code_names, oid, src, names=frozens
     return out
 
 
-def item_view(kind, iid, lang, src, passed=False):
+def item_view(kind, iid, lang, src, passed=False, reflow=False):
     """What an item's reviews judge apart from its teacher-approved figures, as `src` (WorkTree or Commit) has it. A
-    unit's own task set is reviewed with the unit: the same view of it, its figures owned by "<unit>-sovella"."""
+    unit's own task set is reviewed with the unit: the same view of it, its figures owned by "<unit>-sovella". `reflow`: every
+    calculation chain of the texts in one form (chain_view), so a chain only re-broken into rows or lifted into an aligned
+    display formula is no difference (category "reflow": science and pedagogy carry over it, the visual reviewer looks)."""
     m, key, oid = _item(kind, iid)
     names = (kaavat.ANY if passed else frozenset(kaavat.approved(key, lang))) if kind == "unit" else frozenset()   # a passed version's names may be taken out
     sym = kind == "unit" and bool(kaavat.symbol_rows(key, lang))     # MAFY's symbols (docs/fy9/mafy-tunnukset.tsv)
     tx = (lambda n, t, canonical=False: kaavat.apply_symbols(key, lang, n, t, canonical)) if sym and passed else None
     code_tx = (lambda t: kaavat.apply_symbols(key, None, "figures.py", t)) if sym and passed else None
-    out = _figure_free(m.folder(key, lang), m.code_folder(key), m.TEXTS, getattr(m, "CODE", ("figures.py",)), oid, src, names, tx, code_tx, drawn=sym)
+    out = _figure_free(m.folder(key, lang), m.code_folder(key), m.TEXTS, getattr(m, "CODE", ("figures.py",)), oid, src, names, tx, code_tx, drawn=sym, reflow=reflow)
     if kind == "unit" and m.has_tasks(key, lang):
         import practice
         tk = m.task_key(key)
-        out += [("sovella", _figure_free(practice.folder(tk, lang), practice.code_folder(tk), practice.TEXTS, practice.CODE, f"{key}-sovella", src))]
+        out += [("sovella", _figure_free(practice.folder(tk, lang), practice.code_folder(tk), practice.TEXTS, practice.CODE, f"{key}-sovella", src, reflow=reflow))]
     return out
 
 
@@ -1234,8 +1241,14 @@ def item_carry(kind, iid, lang=i18n.SOURCE):
         base = _item_base(kind, iid, lang, frm)
         if base is None: print(f"{name}: the version it passed is not in git history, review needed"); continue
         now = now or item_view(kind, iid, lang, WorkTree())
-        if item_view(kind, iid, lang, Commit(base), passed=True) != now: print(f"{name}: more than teacher-approved figures and formula names changed, review needed"); continue
-        cat = item_category(kind, iid, lang, base)
+        reflowed = False
+        if item_view(kind, iid, lang, Commit(base), passed=True) != now:
+            if item_view(kind, iid, lang, Commit(base), passed=True, reflow=True) != item_view(kind, iid, lang, WorkTree(), reflow=True):
+                print(f"{name}: more than teacher-approved figures, formula names and re-broken calculation chains changed, review needed"); continue
+            if RULES["reflow"][REVIEWS.index(name)] != "none":
+                print(f"{name}: calculation chains re-broken into rows: {RULES['reflow'][REVIEWS.index(name)]} review needed"); continue
+            reflowed = True
+        cat = item_category(kind, iid, lang, base, reflowed)
         rows.append({"date": str(datetime.date.today()), "reviewer": name, "from": frm, "to": h, "base": base[:12], "categories": cat})
         added.append(name); print(f"{name}: carried over ({'; '.join(WHY[c] for c in cat.split(','))})")
     if added:
@@ -1244,7 +1257,7 @@ def item_carry(kind, iid, lang=i18n.SOURCE):
     print(f"{lang}/{key}: {m.status(key, lang)['state']}")
 
 
-def item_category(kind, iid, lang, base):
+def item_category(kind, iid, lang, base, reflowed=False):
     """What a carried item change was: "formula-names" when the named formulas of its texts changed, "teacher-figure"
     when anything else did (approved figures), both when both did."""
     m, key, oid = _item(kind, iid)
@@ -1255,6 +1268,7 @@ def item_category(kind, iid, lang, base):
     if kind == "unit" and [kaavat.apply_symbols(key, lang, n, t) for n, t in zip(m.TEXTS, old)] != old: cats.append("mafy-symbols")
     if any(t and caption_free(t) != t for t in (Commit(base).read((m.folder(key, lang) / n).relative_to(ROOT).as_posix()) for n in m.TEXTS if n.endswith(".json"))): cats.append("caption-label")
     if _figures_differ(kind, iid, lang, base): cats.append("teacher-figure")
+    if reflowed: cats.append("reflow")
     return ",".join(cats or ["teacher-figure"])
 
 
@@ -1279,7 +1293,9 @@ def verify_item_carries(kind, iid, lang):
         what = f"{lang}/{key}: carry of {name}"
         if git("rev-parse", "--verify", "-q", f"{c['base']}^{{commit}}") is None: errs.append(f"{what} names commit {c['base']}, not in history (CI needs fetch-depth: 0)"); continue
         if m.content_hash(key, lang, read=Commit(c["base"]).read) != c["from"]: errs.append(f"{what}: commit {c['base']} does not hold hash {c['from']}"); continue
-        if item_view(kind, iid, lang, Commit(c["base"]), passed=True) != item_view(kind, iid, lang, WorkTree()): errs.append(f"{what} covers more than figures and formula names the teacher approved")
+        rf = "reflow" in c["categories"].split(",")
+        if rf and RULES["reflow"][REVIEWS.index(name)] != "none": errs.append(f"{what}: a re-break of calculation chains (reflow) does not carry the {name} review"); continue
+        if item_view(kind, iid, lang, Commit(c["base"]), passed=True, reflow=rf) != item_view(kind, iid, lang, WorkTree(), reflow=rf): errs.append(f"{what} covers more than figures, formula names and re-broken calculation chains the rules allow")
     return errs
 
 
