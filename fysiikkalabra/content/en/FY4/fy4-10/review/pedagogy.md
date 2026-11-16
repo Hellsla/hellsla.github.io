@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0bfb415053657560
+CONTENT-HASH: dfdef7affccf750c
 
 ## Blocking
+- none
 
 ## Polish
+- The Newton's cradle photo follows the billiards paragraph; the caption could say it is another near-elastic collision, so the photo teaches rather than decorates.
 
 ## Checked
-Delta review: selector name "situation" is clear plain English for a 16-year-old and consistent with the other names (mass m_1, initial velocity v_1). Nothing else changed; teaching sequence as before.
+batch delta review: retrieval task now belongs to the chapter's phenomenon, numbers, options and misconception feedback consistent, distractors plausible, correct option reasoned, no answer disclosed before action; figures and photos judged from the diff.
