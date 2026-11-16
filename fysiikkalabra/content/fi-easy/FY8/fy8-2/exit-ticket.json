@@ -5,6 +5,6 @@
   },
   {
     "q": "Tavallisessa fluoresenssissa aine absorboi yhden fotonin ja lähettää yhden fotonin. Aine ei saa lisäenergiaa muualta. Fluoresoiva aine absorboi sinistä valoa, jonka aallonpituus on $450\\,\\text{nm}$. Voiko se tällaisessa fluoresenssissa lähettää violettia valoa, jonka aallonpituus on $400\\,\\text{nm}$? Perustele energian avulla.",
-    "a": "Ei voi. Fotonin energia on $E = \\tfrac{hc}{\\lambda}$. Siksi $400\\,\\text{nm}$:n fotonin energia on suurempi kuin $450\\,\\text{nm}$:n fotonin. Tavallisessa fluoresenssissa energiaa ei tule muualta. Lisäksi osa absorboidun fotonin energiasta muuttuu lämmöksi. Siksi lähetetyn fotonin energia on pienempi ja aallonpituus pidempi kuin absorboidun. Lyhyempi aallonpituus on mahdollinen vain erikoistapauksissa, joissa lisäenergiaa tulee muualta, esimerkiksi kahdesta absorboidusta fotonista."
+    "a": "Ei voi. Fotonin energia on $E = \\tfrac{hc}{\\lambda}$. Siksi $400\\,\\text{nm}$:n fotonin energia on suurempi kuin $450\\,\\text{nm}$:n fotonin. Tavallisessa fluoresenssissa energiaa ei tule muualta. Lisäksi osa absorboidun fotonin energiasta muuttuu sisäenergiaksi. Siksi lähetetyn fotonin energia on pienempi ja aallonpituus pidempi kuin absorboidun. Lyhyempi aallonpituus on mahdollinen vain erikoistapauksissa, joissa lisäenergiaa tulee muualta, esimerkiksi kahdesta absorboidusta fotonista."
   }
 ]

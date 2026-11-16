@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 477fba2ef0ddaf08
-SCOPE: delta reflow from a4ebb11d9e9fefdd base d4ee68c800
+CONTENT-HASH: c6f2c3a890e2d599
 
 ## Blocking
 (none)
@@ -9,7 +8,7 @@ SCOPE: delta reflow from a4ebb11d9e9fefdd base d4ee68c800
 (none)
 
 ## Checked
-- delta reflow, en: no solution capture of this set opened; the reflowed blocks judged from the source diff only (rows broken at whole terms). Layout of the card around the blocks intact; no 390 px open-solution capture exists, so phone wrapping is judged by the build's rule only. Hash re-run at the end: unchanged.
+- Delta (round 3): fy8-1-L2-06 solution, "Reading the graph" (captures fy8-1-open-exercises-L2-1280-8 and -9): the sentence now ends "that is both are approximately $h = 4.14 \cdot 10^{-15}\,\text{eV}\,\text{s}$". Renders cleanly, unit upright with thin space, decimal point, slope rows above aligned, no clipping; Formula, Substitution and Answer below intact.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -11,7 +11,7 @@ Data, from knowledge (the network was closed when this was written, 2026-11-04; 
   Hajoamislaki ja puoliintumisaika).
 - Effective dose coefficients ICRP 128 (2015), adult: F-18 FDG 0,019 mSv/MBq, Tc-99m MDP (bone scan) 0,0049 mSv/MBq.
   Typical effective doses (STUK, Säteily terveydenhuollossa; rounded orders of magnitude): dental X-ray under
-  0,01 mSv, chest X-ray about 0,02 mSv, head CT about 2 mSv, body CT 5–10 mSv.
+  0,01 mSv, chest X-ray (PA + lateral) about 0,1 mSv, head CT about 2 mSv, body CT 5–10 mSv.
 - Radiotherapy: 2 Gy per fraction, 60 Gy in 30 fractions (a usual curative scheme); sterilisation dose 25 kGy
   (ISO 11137 reference dose); smoke detector Am-241 about 37 kBq.
 - Constants as in FY8: h = 6,626e-34 J s, c = 2,998e8 m/s, e = 1,602e-19 C, m_e = 9,109e-31 kg.

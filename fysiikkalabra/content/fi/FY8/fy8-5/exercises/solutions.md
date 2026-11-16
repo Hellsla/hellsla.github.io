@@ -98,7 +98,7 @@ hc &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 \end{aligned}
 $$ ja sitten $\lambda_\text{max} = \dfrac{1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{5{,}4468 \cdot 10^{-19}\,\text{J}} = 3{,}6470 \cdot 10^{-7}\,\text{m} = 364{,}70\,\text{nm}$
 **Vastaus:** $365\,\text{nm}$, kolme merkitsevää numeroa kuten energiassa $13{,}6\,\text{eV}$.
-**Järkevyys:** Energia $3{,}4\,\text{eV}$ on hieman yli violetin valon fotonin energian, joten aallonpituus on juuri näkyvän alueen alapuolella, lähellä ultraviolettia. Tätä pidempiaaltoinen näkyvä valo ei irrota elektronia kuorelta $n = 2$.
+**Järkevyys:** Energia $3{,}4\,\text{eV}$ on hieman yli violetin valon fotonin energian, joten aallonpituus on juuri näkyvän alueen ulkopuolella, ultraviolettialueella (UVA). Tätä pidempiaaltoinen näkyvä valo ei irrota elektronia kuorelta $n = 2$.
 
 ## fy8-5-L3-01
 **Annettu:** fotonin aallonpituus $\lambda = 97{,}3\,\text{nm}$; atomi perustilassa, $n = 1$; $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$
@@ -219,7 +219,7 @@ a) Aallonpituudet ovat $1{,}60\,\text{m}$, $0{,}80\,\text{m}$ ja $0{,}533\,\text
 
 b) Taajuudet ovat $40\,\text{Hz}$, $80\,\text{Hz}$ ja $120\,\text{Hz}$.
 
-c) Solmujen lisääntyessä kuvuja mahtuu kieleen enemmän, joten aallonpituus lyhenee ja taajuus kasvaa: aallonpituudet $1{,}60\,\text{m}$, $0{,}80\,\text{m}$ ja $0{,}533\,\text{m}$ antavat taajuudet $40\,\text{Hz}$, $80\,\text{Hz}$ ja $120\,\text{Hz}$. Atomin elektronin tilaa kuvaa myös seisova aalto, joten vain tietyt aallon muodot ovat mahdollisia ja energia on kvantittunut. Vetyatomissa mitä enemmän solmuja, sitä suurempi energia, aivan kuten kielellä mitä enemmän solmuja, sitä suurempi taajuus.
+c) Solmujen lisääntyessä kupuja mahtuu kieleen enemmän, joten aallonpituus lyhenee ja taajuus kasvaa: aallonpituudet $1{,}60\,\text{m}$, $0{,}80\,\text{m}$ ja $0{,}533\,\text{m}$ antavat taajuudet $40\,\text{Hz}$, $80\,\text{Hz}$ ja $120\,\text{Hz}$. Atomin elektronin tilaa kuvaa myös seisova aalto, joten vain tietyt aallon muodot ovat mahdollisia ja energia on kvantittunut. Vetyatomissa mitä enemmän solmuja, sitä suurempi energia, aivan kuten kielellä mitä enemmän solmuja, sitä suurempi taajuus.
 **Järkevyys:** Tilassa $m = 2$ aallonpituus $0{,}80\,\text{m}$ on yhtä kuin kielen pituus, ja sen taajuus $\dfrac{64\,\text{m/s}}{0{,}80\,\text{m}} = 80\,\text{Hz}$ on välissä $40\,\text{Hz}$ ja $120\,\text{Hz}$. Taajuudet $40\,\text{Hz}$, $80\,\text{Hz}$ ja $120\,\text{Hz}$ ovat peräkkäisiä perustaajuuden $40\,\text{Hz}$ monikertoja, kuten kuvun lukumäärän mukaan pitääkin.
 
 ## fy8-5-L2-07

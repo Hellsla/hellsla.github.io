@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: de97bfb49381158a
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: 767448765f642c7e
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- inquiry.json (feedback of the supporting option) — "Suurillakin N:n arvoilla ... neljäsosa (kun N oli 10 ja 20, vain 10 % ja 5 %)": the parenthesis is about small N and sits inside a sentence about large N; split it into its own sentence ("Pienillä N:n arvoilla osuus oli vielä pienempi: 10 % ja 5 %"). Same in the other languages.
 
 ## Checked
-- Diff since origin/main: changed exit-ticket questions and answers (fy8-2, fy8-12, fy8-14) and the fy8-9 source note and worked-example sign read clearly for a 16-19-year-old; questions remain answerable from the lesson; model answers match the question.
-- fi-easy: short plain sentences, no new jargon; en matches fi; no bold in task statements, decimal convention kept.
+- Diff: the CT dose now "tens of times" the chest X-ray (0.1 mSv, front and side), consistent with 2 mSv and 5-10 mSv rows and lesson-answers; STUK source link added; question and table still readable.
+- lämpö/lämmöksi to sisäenergia/lämpeneminen in the X-ray tube and sterilisation texts: physics unchanged, wording clear.
+- The refuting option's feedback now says "even with large N" and still repairs the misconception (a segment starts anywhere in the body).

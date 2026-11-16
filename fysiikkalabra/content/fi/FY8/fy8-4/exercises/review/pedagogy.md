@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 42a2a3e4a5fc1187
+CONTENT-HASH: df0225f5b9796ad4
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json fy8-4-L2-08 reasons 1 and 3 — they still differ by one word ("suoraan"/"kääntäen") and are the most alike; add a wrong reason that is not a twin of the correct one, or make reason 4 less complete.
+- content/fi/FY8/fy8-4/exercises/exercises.json (fy8-4-L2-08, reasons 1 and 3) — carried from the earlier round, still optional: the two reasons differ by one word ("suoraan" / "kääntäen") — add a wrong reason that is not a twin of the correct one.
 
 ## Checked
-- Round 2: the "lyhyempi" feedback is now a prompt ("Mieti, saako fotoni sironnassa energiaa lisää vai luovuttaako se sitä, ja miten energia riippuu aallonpituudesta") and no longer states the reason stage; it still points at the two ideas the second stage tests, which is acceptable as repair.
-- The solution line hf' = 17,4 - 0,55 = 16,85 keV is split in two; numbers unchanged and verified (ratio 1,03).
-- Other options and reasons unchanged from Round 1.
-- Method: text only (diff and packet); no renders opened.
+- solutions.md:253 (fy8-4-L3-04) Kysytty: the comma added after "sekunteina" separates the three asked things (the time $t$, the mean spacing $d$, the justification); without it "sekunteina fotonien keskimääräinen väli" read as one phrase. The list now matches the three parts the solution answers.
+- No number, symbol, unit or step changed on the line; Annettu, Periaate and Kaava around it are untouched and still lead from the principle to the combined expression.
+- exercises.json: unchanged apart from re-broken calculation chains (category reflow); no task's demand changed.
+- Method: text diff in context; captures not needed for a punctuation correction.

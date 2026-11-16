@@ -68,27 +68,6 @@ FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text
 FY7-sovella	= 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{
 FY7-sovella	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 30{,}0 \
 FY7-sovella	m_{10} : m_{11} = 1{,}6627 : 1{,}8281 \approx 0{,}91
-FY8-koe	17{,}59\,\text{MeV} : 5{,}03\,\text{u} = 3{,}5\,\text{MeV/u}
-FY8-koe	1\,\text{u} = 931{,}5\,\text{MeV}/c^2 = 1{,}6605 \cdot 10^{-27}\,\text
-FY8-koe	1{,}889\,\text{eV} = 1{,}889 \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
-FY8-koe	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}61\,\text{V}}{1{,}
-FY8-koe	= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot \dfrac{0{,}87\,\text{V}}{1{,}
-FY8-koe	= 280\,\text{MBq} \cdot 2^{2{,}46} \approx 280\,\text{MBq} \cdot 5{,}5
-FY8-koe	= 28{,}30\,\text{MeV} - 2{,}22\,\text{MeV} - 8{,}48\,\text{MeV}
-FY8-koe	E_\text{s} = (Zm_\text{H} + Nm_\text{n} - m_\text{atomi})\,c^2
-FY8-koe	E_\text{s} = 0{,}030377\,\text{u} \cdot 931{,}5\,\text{MeV/u}
-FY8-koe	Q = 0{,}018883\,\text{u} \cdot 931{,}5\,\text{MeV/u}
-FY8-koe	Q = 17{,}59 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J}
-FY8-koe	Q = 17{,}59\,\text{MeV} = 2{,}818 \cdot 10^{-12}\,\text{J}
-FY8-sovella	1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2} = 1{,}66054 \cdot 10^{-
-FY8-sovella	3{,}0\,\mu\text{Sv/h} \cdot \left(\tfrac{10\,\text{cm}}{36\,\text{cm}}
-FY8-sovella	939{,}565\,\tfrac{\text{MeV}}{c^2} - 938{,}272\,\tfrac{\text{MeV}}{c^2
-FY8-sovella	= 10\,\tfrac{1}{\text{s}} \cdot 3{,}156 \cdot 10^{7}\,\text{s} \cdot 8
-FY8-sovella	= 238{,}049560 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg}
-FY8-sovella	= 238{,}049560\,\text{u} - 234{,}040952\,\text{u} - 4{,}002603\,\text{
-FY8-sovella	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdo
-FY8-sovella	\dfrac{1}{\sqrt{R}} = \dfrac{r + d}{\sqrt{K}} = \dfrac{1}{\sqrt{K}} \c
-FY8-sovella	k = \dfrac{12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}} - 0}{20{,}0\,\text{
 en/FY3-sovella	= 101\,000\,\text{Pa} + 1000\,\text{kg/m}^3 \cdot 9.81\,\text{m/s}^2 \
 en/FY3-sovella	= 4.0\,\text{cm}^3 \cdot \dfrac{248\,150\,\text{Pa}}{101\,000\,\text{P
 en/FY3-sovella	= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4.00\,\text{kg}
@@ -133,15 +112,6 @@ en/FY7-sovella	= 2.82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5.0 \cdot 10^
 en/FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m
 en/FY7-sovella	= \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 30.0 \cdot
 en/FY7-sovella	m_{10} : m_{11} = 1.6627 : 1.8281 \approx 0.91
-en/FY8-sovella	1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2} = 1.66054 \cdot 10^{-27}\
-en/FY8-sovella	3.0\,\mu\text{Sv/h} \cdot \left(\tfrac{10\,\text{cm}}{36\,\text{cm}}\r
-en/FY8-sovella	939.565\,\tfrac{\text{MeV}}{c^2} - 938.272\,\tfrac{\text{MeV}}{c^2} - 
-en/FY8-sovella	= 10\,\tfrac{1}{\text{s}} \cdot 3.156 \cdot 10^{7}\,\text{s} \cdot 8.9
-en/FY8-sovella	= 238.049560 \cdot 1.66054 \cdot 10^{-27}\,\text{kg}
-en/FY8-sovella	= 238.049560\,\text{u} - 234.040952\,\text{u} - 4.002603\,\text{u}
-en/FY8-sovella	= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10
-en/FY8-sovella	\dfrac{1}{\sqrt{R}} = \dfrac{r + d}{\sqrt{K}} = \dfrac{1}{\sqrt{K}} \c
-en/FY8-sovella	k = \dfrac{12.0 \cdot 10^{-2}\,\sqrt{\text{min}} - 0}{20.0\,\text{cm} 
 en/fy1-3	= \dfrac{1.004 + 1.012 + 1.008 + 1.014 + 1.012}{5}\,\dfrac{\text{g}}{\
 en/fy14-atom-models	-0.85\ \text{eV} - (-1.51\ \text{eV}) = 0.66\ \text{eV}
 en/fy14-atom-models	1240\ \text{eV} \cdot \text{nm} : 13.6\ \text{eV} \approx 91\ \text{nm
@@ -1085,15 +1055,6 @@ fi-easy/FY7-sovella	= 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6
 fi-easy/FY7-sovella	= 2{,}82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5{,}0 \cdot 10^{
 fi-easy/FY7-sovella	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 30{,}0 \
 fi-easy/FY7-sovella	m_{10} : m_{11} = 1{,}6627 : 1{,}8281 \approx 0{,}91
-fi-easy/FY8-sovella	1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2} = 1{,}66054 \cdot 10^{-
-fi-easy/FY8-sovella	3{,}0\,\mu\text{Sv/h} \cdot \left(\tfrac{10\,\text{cm}}{36\,\text{cm}}
-fi-easy/FY8-sovella	939{,}565\,\tfrac{\text{MeV}}{c^2} - 938{,}272\,\tfrac{\text{MeV}}{c^2
-fi-easy/FY8-sovella	= 10\,\tfrac{1}{\text{s}} \cdot 3{,}156 \cdot 10^{7}\,\text{s} \cdot 8
-fi-easy/FY8-sovella	= 238{,}049560 \cdot 1{,}66054 \cdot 10^{-27}\,\text{kg}
-fi-easy/FY8-sovella	= 238{,}049560\,\text{u} - 234{,}040952\,\text{u} - 4{,}002603\,\text{
-fi-easy/FY8-sovella	= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdo
-fi-easy/FY8-sovella	\dfrac{1}{\sqrt{R}} = \dfrac{r + d}{\sqrt{K}} = \dfrac{1}{\sqrt{K}} \c
-fi-easy/FY8-sovella	k = \dfrac{12{,}0 \cdot 10^{-2}\,\sqrt{\text{min}} - 0}{20{,}0\,\text{
 fi-easy/fy1-3	= \dfrac{1{,}004 + 1{,}012 + 1{,}008 + 1{,}014 + 1{,}012}{5}\,\dfrac{\
 fi-easy/fy2-2	2{,}5\,\text{kJ} = 2{,}5 : 1000\,\text{J} = 0{,}0025\,\text{J}
 fi-easy/fy2-3	0{,}05\,\text{kW} \cdot 1500\,\text{h} = 75\,\text{kWh}

@@ -140,7 +140,7 @@
         {
           "text": "Kvanttipiste A lähettää pidemmän aallonpituuden valoa kuin samasta aineesta tehty kvanttipiste B.",
           "true": false,
-          "feedback": "Epätosi: tässä koon ja värin yhteys luetaan väärin päin. Pienemmässä pisteessä sallitut energiat erkanevat eli etääntyvät toisistaan, ja energiarako kasvaa. Siksi piste A ($3\\,\\text{nm}$) lähettää lyhyemmän aallonpituuden valoa kuin piste B ($5\\,\\text{nm}$)."
+          "feedback": "Epätosi: tässä koon ja värin yhteys luetaan väärin päin. Pienemmässä pisteessä sallitut energiat erkanevat eli etääntyvät toisistaan, ja energia-aukko kasvaa. Siksi piste A ($3\\,\\text{nm}$) lähettää lyhyemmän aallonpituuden valoa kuin piste B ($5\\,\\text{nm}$)."
         },
         {
           "text": "Laserissa vahvistuu vain peilien välisen akselin suuntainen valo, ja se tulee ulos säteenä.",
@@ -193,7 +193,7 @@
         "data",
         "reasoning"
       ],
-      "text": "Lisätietotehtävä.\n\nEsimerkkiaineisto: samasta puolijohteesta valmistettujen kvanttipisteiden halkaisija $d$ on mitattu elektronimikroskoopilla. Niiden lähettämän valon aallonpituus $\\lambda$ on mitattu spektrometrillä. Taulukossa on viiden pisteen tulokset.\n\nOletetaan, että fotonin energia on yhtä suuri kuin pisteen energiarako. Energiarako on pisteen kahden energiatason erotus.\n\na) Laske kunkin pisteen fotonin energia elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).\n\nb) Päättele taulukon perusteella, miten energiarako riippuu pisteen koosta. Onko energiarako suoraan verrannollinen pisteen kokoon?\n\nc) Kuinka paljon suurempi energiarako on pienimmällä pisteellä kuin suurimmalla pisteellä?\n\nAnna c)-kohdan tulos vastauslaatikkoon.",
+      "text": "Lisätietotehtävä.\n\nEsimerkkiaineisto: samasta puolijohteesta valmistettujen kvanttipisteiden halkaisija $d$ on mitattu elektronimikroskoopilla. Niiden lähettämän valon aallonpituus $\\lambda$ on mitattu spektrometrillä. Taulukossa on viiden pisteen tulokset.\n\nOletetaan, että fotonin energia on yhtä suuri kuin pisteen energia-aukko. Energia-aukko on pisteen kahden energiatason erotus.\n\na) Laske kunkin pisteen fotonin energia elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).\n\nb) Päättele taulukon perusteella, miten energia-aukko riippuu pisteen koosta. Onko energia-aukko suoraan verrannollinen pisteen kokoon?\n\nc) Kuinka paljon suurempi energia-aukko on pienimmällä pisteellä kuin suurimmalla pisteellä?\n\nAnna c)-kohdan tulos vastauslaatikkoon.",
       "answer": 0.54,
       "unit": "eV",
       "tolerance": 0.04,
@@ -334,7 +334,7 @@
         "model",
         "reasoning"
       ],
-      "text": "Esimerkkiaineisto: kuitulaseria pumpataan laserdiodeilla. Diodien valon aallonpituus on $976\\,\\text{nm}$ ja yhteenlaskettu teho $20{,}0\\,\\text{W}$. Laser lähettää valoa, jonka aallonpituus on $1070\\,\\text{nm}$. Sen lähtöteho on $15{,}0\\,\\text{W}$.\n\nOleta, että kaikki pumppausvalo absorboituu aineeseen. Se osa pumppausenergiasta, joka ei lähde laservalona, muuttuu lämmöksi.\n\nKvanttihyötysuhde $\\eta_\\text{q}$ on laserfotonien lukumäärän ja pumppausfotonien lukumäärän suhde samana aikana ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).\n\na) Laske pumppausfotonien ja laserfotonien määrät sekunnissa.\n\nb) Laske kvanttihyötysuhde prosentteina.\n\nc) Laske aineeseen sekunnissa muuttuva lämpöteho. Laske myös sen osa, joka syntyy siitä, että laserfotonin energia on pienempi kuin pumppausfotonin energia.\n\nd) Perustele laskettujen lukujen avulla, miksi laserin energiahyötysuhde on pienempi kuin kvanttihyötysuhde.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
+      "text": "Esimerkkiaineisto: kuitulaseria pumpataan laserdiodeilla. Diodien valon aallonpituus on $976\\,\\text{nm}$ ja yhteenlaskettu teho $20{,}0\\,\\text{W}$. Laser lähettää valoa, jonka aallonpituus on $1070\\,\\text{nm}$. Sen lähtöteho on $15{,}0\\,\\text{W}$.\n\nOleta, että kaikki pumppausvalo absorboituu aineeseen. Se osa pumppausenergiasta, joka ei lähde laservalona, muuttuu sisäenergiaksi.\n\nKvanttihyötysuhde $\\eta_\\text{q}$ on laserfotonien lukumäärän ja pumppausfotonien lukumäärän suhde samana aikana ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$).\n\na) Laske pumppausfotonien ja laserfotonien määrät sekunnissa.\n\nb) Laske kvanttihyötysuhde prosentteina.\n\nc) Laske aineeseen sekunnissa muuttuva lämpöteho. Laske myös sen osa, joka syntyy siitä, että laserfotonin energia on pienempi kuin pumppausfotonin energia.\n\nd) Perustele laskettujen lukujen avulla, miksi laserin energiahyötysuhde on pienempi kuin kvanttihyötysuhde.\n\nAnna b)-kohdan tulos vastauslaatikkoon.",
       "answer": 82.2,
       "unit": "%",
       "tolerance": 0.02

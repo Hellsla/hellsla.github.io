@@ -212,7 +212,7 @@ Lyijy ei ole tässä paras suoja, vaikka sen puoliintumispaksuus on pienin. Vesi
 
 ## fy8-12-L3-05
 **Annettu:** lyijyseinän paksuus $d = 8{,}0\,\text{mm}$ ja puoliintumispaksuus $d_{1/2} = 5{,}5\,\text{mm}$, geometrinen hyötysuhde $\eta = 1{,}5\,\% = 0{,}015$, viiden $60\,\text{s}$:n jakson pulssit lähteen kanssa $1010$, $987$, $1032$, $1001$ ja $1020$ sekä ilman lähdettä $24$, $29$, $22$, $27$ ja $28$
-**Kysytty:** lähteen aktiivisuus $A$ kilobecquereleina
+**Kysytty:** lähteen aktiivisuus $A$ kilobecquereleinä
 **Periaate:** Tausta vähennetään ensin. Nettopulssitaajuus kertoo, kuinka monta fotonia sekunnissa osuu putkeen. Lähteen fotoneista vain osuus $\eta$ lähtee putken suuntaan, ja lyijyseinä vaimentaa fotoneja vaimenemislain mukaan. Aktiivisuus on hajoamisten määrä sekunnissa. Jokainen hajoaminen lähettää oletuksen mukaan yhden fotonin. Lähteen fotonit sekunnissa saa, kun jakaa pulssitaajuuden sillä osuudella, joka pääsee putkeen asti.
 **Kaava:** $R = \dfrac{N_\text{l,ka} - N_\text{t,ka}}{t}$, seinän läpäisevä osuus $T = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$ ja $R = A \cdot T \cdot \eta$, josta $A = \dfrac{R}{T \cdot \eta}$
 **Muunnokset:** $t = 60\,\text{s}$ ja $1{,}5\,\% = 0{,}015$. Lopuksi $1\,\text{kBq} = 1000\,\text{Bq}$ ja $1\,\text{Bq} = 1\,\tfrac{1}{\text{s}}$.

@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d11a5fbd4cff7477
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 295325ec5f0a88cc
+Mode: delta (round 1)
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- lesson.md:58 — the new relative clause makes the one long sentence in a paragraph of otherwise short ones — "Ylimääräinen energia muuttuu LEDissä sisäenergiaksi. Sisäenergia siirtyy lämpönä ympäristöön."
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+- inquiry.json:359 feedback "muuttuu LEDissä sisäenergiaksi": still repairs the misconception (energy gap fixes the photon energy, colour stays red).
+- lesson.md:58 (rendered :208): causal chain intact, paragraph short; feedback and theory agree. "Sisäenergia" is a course term from FY3, not a new difficult word, and the added clause ties it to the familiar "lämpö".
+- lesson.md:464 "Ylimääräinen energia lämmittää LEDiä" is consistent; no leftover "muuttuu lämmöksi".
+- exit-ticket.json: chains only re-broken into rows; same numbers and order as the Finnish version, whose capture reads cleanly.
+- Hash identical at start and end.

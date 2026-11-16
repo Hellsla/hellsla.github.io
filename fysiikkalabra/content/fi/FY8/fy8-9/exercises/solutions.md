@@ -145,7 +145,7 @@ Kuvaajassa A aktiivisuus pienenee tasaisesti ja on nolla hetkellä $4{,}0\,\text
 **Kaava:** $\dfrac{R}{R_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, joten $T_{1/2} = \dfrac{t \ln 2}{\ln (R_0 / R)}$, missä $R_0$ ja $R$ ovat nettopulssimäärät
 **Muunnokset:** a) Nettopulssimäärät ovat $291 - 8 = 283$, $250 - 8 = 242$, $204 - 8 = 196$, $178 - 8 = 170$, $143 - 8 = 135$, $126 - 8 = 118$, $103 - 8 = 95$, $90 - 8 = 82$, $72 - 8 = 64$, $66 - 8 = 58$ ja $51 - 8 = 43$ ($t = 0, 40, \ldots, 400\,\text{s}$). Aikayksikkö on sekunti kuten vastauksessakin, joten muita muunnoksia ei tarvita.
 **Sijoitus:** b) Alussa $R_0 = 283$ ja $t = 320\,\text{s}$:n kohdalla $R = 64$. Suhde on $\tfrac{283}{64} = 4{,}42$, eli hieman yli kaksi puoliintumisaikaa ($2^2 = 4$), ja $64$ on noin $23\,\%$ luvusta $283$. Siis $T_{1/2} = \dfrac{320\,\text{s} \cdot 0{,}69315}{\ln 4{,}42} = \dfrac{221{,}8\,\text{s}}{1{,}4865} = 149{,}2\,\text{s}$
-**Vastaus:** $149\,\text{s}$ eli noin $150\,\text{s}$. Kahden pisteen arvion tarkkuus on noin $\pm 8\,\%$, koska nettomäärän $64$ hajonta on noin $\sqrt{64} = 8$.
+**Vastaus:** $149\,\text{s}$ eli noin $150\,\text{s}$. Kahden pisteen arvion tarkkuus on noin $\pm 8\,\%$: nettomäärän $64$ hajonta on noin $\sqrt{64} = 8$ eli suhteellisesti $\tfrac{8}{64} \approx 13\,\%$, ja puoliintumisaikaan se vaikuttaa jaettuna luvulla $\ln 4{,}42 \approx 1{,}5$.
 **Järkevyys:** Alkuarvon puolikas on $\tfrac{283}{2} = 141{,}5$. Taulukossa nettopulssimäärä on $170$ ajanhetkellä $120\,\text{s}$ ja $135$ hetkellä $160\,\text{s}$, joten puolittuminen tapahtuu noin $150\,\text{s}$:n kohdalla. Se sopii tulokseen. Pisteet eivät ole täsmälleen käyrällä, koska pulssimäärät vaihtelevat satunnaisesti.
 
 ## fy8-9-L2-06

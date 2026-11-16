@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6292a2294b6f26af
-SCOPE: delta reflow from 0c6901df2fab04a3 base cf5f907
+CONTENT-HASH: edbc5d57c6709a2b
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Sijoitus blocks with a \cdot continuation: the block shows a mid-row "=" (e.g. fy8-6 "hc = 6,626·10^-34 J s / · 2,998·10^8 m/s = 1,9865·10^-25 J m,", fy8-10-11 "E_B = a / · (c)² = a / · 8,98800·10^16 m²/s² = 2,04479·10^-11 J"). The "=" is not in the aligned column and a continuation row such as "· (2,998·10^8 m/s)² = 2,27502·10^-28 kg" reads like an equation of its own. Fix: put each "=" on its own row (the source already does); if the build merges rows, adjust mathlayout so a "=" row stays a row of its own. Readable, so it does not block.
-- [Minor] The comma after a block ("... J m,") is inside the last row as agreed, and the answer lines read cleanly.
+- [Minor] exercises.json fy8-12-L3-05, first paragraph — the caption's marker is gone but the sentence still ends "(taulukko, esimerkkiaineisto)"; if the teacher's rule (no provenance marker on example data) is meant for the running text too, write "(taulukko)". Not a language error, so it does not block.
 
 ## Checked
-- No capture of this lesson opened; judged by the same shared component as fy8-1, 2, 6, 10 and 16, whose captures I opened (see the other lessons' reports). Source of the aligned blocks read only. If its blocks differ in kind, ask again.
-- Across the opened captures: blocks sit inside the card, no clipping, equals signs aligned in ordinary chains, fractions and units upright with a thin space, decimal comma, sentence marks inside the last row, words and numbers unchanged.
+- Delta round 1 (wording, caption-label): "kilobecquereleina" → "kilobecquereleinä" twice in the task text and once in the solution's Kysytty. Hash edbc5d57c6709a2b at the start and at the end.
+- Opened fy8-12-open-exercises-L3-1280-7 (task 12-21 with its table): part c) and the last instruction both read "kilobecquereleinä"; the front-vowel ending is right for a word pronounced with front vowels only, and the answer box's unit kBq agrees. Situation first, question parts on their own rows, the instruction last.
+- Same capture: the table's caption is "GM-mittarin pulssit 60 s:n jaksoissa", no marker or stray bracket left; the table sits inside the card.
+- Opened fy8-12-open-exercises-L3-1280-8 (the solution): Kysytty reads "lähteen aktiivisuus A kilobecquereleinä"; Periaate, Kaava, Muunnokset and the aligned Sijoitus blocks are intact.
+- No figure, formula, number or unit changed.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 5 · accessibility 4
