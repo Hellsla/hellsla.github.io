@@ -88,7 +88,7 @@
 **Muunnokset:** Kuvaajan arvot ovat newtoneina ja metreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{p} = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot(0{,}080\,\text{m})^2 = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}0064\,\text{m}^2 = 0{,}192\,\text{J}$
 **Vastaus:** $0{,}19\,\text{J}$, kaksi merkitsevää numeroa, joilla kuvaajan arvot voi lukea.
-**Järkevyys:** Kolmion pinta-alana: venymällä $0{,}080\,\text{m}$ jousen A voima on $60\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}080\,\text{m} = 4{,}8\,\text{N}$, ja $\tfrac{1}{2}\cdot 4{,}8\,\text{N}\cdot 0{,}080\,\text{m} = 0{,}19\,\text{J}$. Loivemman jousen B energia samalla venymällä olisi pienempi, koska sen kolmio on matalampi.
+**Järkevyys:** Kolmion pinta-alana: venymällä $0{,}080\,\text{m}$ jousen A voima on $60\,\tfrac{\text{N}}{\text{m}}\cdot 0{,}080\,\text{m} = 4{,}8\,\text{N}$, ja $$\tfrac{1}{2}\cdot 4{,}8\,\text{N}\cdot 0{,}080\,\text{m} = 0{,}19\,\text{J}$$. Loivemman jousen B energia samalla venymällä olisi pienempi, koska sen kolmio on matalampi.
 
 ## fy5-8-L3-01
 **Annettu:** matkustajien massa $\Delta m = 300\,\text{kg}$, jousten lisäpuristuma $\Delta x = 3{,}0\,\text{cm}$, neljä samanlaista jousta; $g = 9{,}81\,\text{m/s}^2$

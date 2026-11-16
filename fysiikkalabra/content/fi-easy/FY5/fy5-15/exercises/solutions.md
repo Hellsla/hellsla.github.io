@@ -36,7 +36,7 @@
 **Muunnokset:** Niitä ei tarvita. Teho on watteina ja etäisyys metreinä.
 **Sijoitus:** $I = \dfrac{2{,}0\,\text{W}}{4\pi \cdot (25\,\text{m})^2} = \dfrac{2{,}0\,\text{W}}{7854\,\text{m}^2} = 2{,}55 \cdot 10^{-4}\,\text{W/m}^2 = 0{,}000255\,\text{W/m}^2$
 **Vastaus:** $0{,}00025\,\text{W/m}^2$. Vastauksessa on kaksi merkitsevää numeroa kuten tehossa $2{,}0\,\text{W}$ ja etäisyydessä $25\,\text{m}$.
-**Järkevyys:** Pallon pinta-ala on noin $8000\,\text{m}^2$, ja $2\,\text{W} : 8000\,\text{m}^2 = 0{,}00025\,\text{W/m}^2$. Tasona tämä on noin $84\,\text{dB}$. Se on uskottava sireenille $25\,\text{m}$:n päässä.
+**Järkevyys:** Pallon pinta-ala on noin $8000\,\text{m}^2$, ja $$\begin{aligned} &2\,\text{W} : 8000\,\text{m}^2 \\ &= 0{,}00025\,\text{W/m}^2 \end{aligned}$$. Tasona tämä on noin $84\,\text{dB}$. Se on uskottava sireenille $25\,\text{m}$:n päässä.
 
 ## fy5-15-L1-05
 **Annettu:** intensiteettien suhde $\dfrac{I_2}{I_1} = 100$
@@ -83,7 +83,7 @@
 **Muunnokset:** Niitä ei tarvita. Kumpikin etäisyys on metreinä, ja yksiköt supistuvat.
 **Sijoitus:** $\dfrac{r_1^2}{r_2^2} = \dfrac{(3{,}0\,\text{m})^2}{(12\,\text{m})^2} = \dfrac{1}{16}$, joten $L_2 = 85\,\text{dB} + 10\,\text{dB} \cdot \lg \dfrac{1}{16} = 85\,\text{dB} - 12{,}04\,\text{dB} = 72{,}96\,\text{dB}$
 **Vastaus:** $73\,\text{dB}$. Vastaus annetaan kokonaisina desibeleinä kuten lähtötaso $85\,\text{dB}$.
-**Järkevyys:** Etäisyys kaksinkertaistuu kahdesti ($3\,\text{m} \to 6\,\text{m} \to 12\,\text{m}$). Kumpikin kaksinkertaistus pienentää tasoa noin $6\,\text{dB}$: $85\,\text{dB} - 6\,\text{dB} - 6\,\text{dB} = 73\,\text{dB}$. Taso pienenee, kuten pitääkin kauempana lähteestä.
+**Järkevyys:** Etäisyys kaksinkertaistuu kahdesti ($3\,\text{m} \to 6\,\text{m} \to 12\,\text{m}$). Kumpikin kaksinkertaistus pienentää tasoa noin $6\,\text{dB}$: $$85\,\text{dB} - 6\,\text{dB} - 6\,\text{dB} = 73\,\text{dB}$$. Taso pienenee, kuten pitääkin kauempana lähteestä.
 
 ## fy5-15-L2-04
 **Annettu:** yksi saha $L_1 = 85\,\text{dB}$ ja kaikki sahat yhdessä $L = 91\,\text{dB}$. Sahat ovat samanlaisia ja yhtä kaukana mittarista.
@@ -186,7 +186,7 @@ L &= 10\,\text{dB} \cdot \lg \dfrac{1{,}0\,\text{W/m}^2}{1{,}0 \cdot 10^{-12}\,\
 ## fy5-15-L2-05
 **Annettu:** taulukosta etäisyydet $1{,}0\,\text{m}$, $2{,}0\,\text{m}$, $4{,}0\,\text{m}$, $8{,}0\,\text{m}$ ja $16\,\text{m}$ sekä tasot $84{,}2\,\text{dB}$, $78{,}1\,\text{dB}$, $72{,}3\,\text{dB}$, $66{,}2\,\text{dB}$ ja $60{,}1\,\text{dB}$
 **Kysytty:** tason keskimääräinen lasku $\Delta L_1$ yhtä etäisyyden kaksinkertaistumista kohti desibeleinä
-**Periaate:** Jokainen mittauspiste on edellisen kaksinkertainen. Etäisyydet ovat $1{,}0\,\text{m} \to 2{,}0\,\text{m} \to 4{,}0\,\text{m} \to 8{,}0\,\text{m} \to 16\,\text{m}$, joten kaksinkertaistumisia on $n = 4$. Keskimääräinen lasku saadaan jakamalla tason kokonaismuutos luvulla $n$.
+**Periaate:** Jokainen mittauspiste on edellisen kaksinkertainen. Etäisyydet ovat $$\begin{aligned} &1{,}0\,\text{m} \to 2{,}0\,\text{m} \to 4{,}0\,\text{m} \to 8{,}0\,\text{m} \\ &\quad \to 16\,\text{m} \end{aligned}$$, joten kaksinkertaistumisia on $n = 4$. Keskimääräinen lasku saadaan jakamalla tason kokonaismuutos luvulla $n$.
 **Kaava:** $\Delta L_1 = \dfrac{L(1{,}0\,\text{m}) - L(16\,\text{m})}{n}$
 **Muunnokset:** Niitä ei tarvita. Tasot ovat desibeleinä, ja $n$ on paljas luku.
 **Sijoitus:** kaksinkertaistumisia on $n = 4$, joten

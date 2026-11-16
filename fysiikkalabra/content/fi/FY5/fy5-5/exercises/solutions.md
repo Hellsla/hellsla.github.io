@@ -4,7 +4,7 @@
 **Periaate:** Kaikki kappaleet vetävät toisiaan Newtonin gravitaatiolain mukaisesti. Kun opiskelijoita käsitellään pistemäisinä, etäisyys mitataan painopisteiden välillä, ja sama voima vaikuttaa kumpaankin.
 **Kaava:** $F = \gamma \dfrac{m_1 m_2}{r^2}$
 **Muunnokset:** Massat ja etäisyys ovat SI-yksiköissä. Lopuksi $1\,\mu\text{N} = 10^{-6}\,\text{N}$.
-**Sijoitus:** $F = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot \dfrac{70\,\text{kg} \cdot 55\,\text{kg}}{(0{,}80\,\text{m})^2} = 4{,}015 \cdot 10^{-7}\,\text{N} = 0{,}4015\,\mu\text{N}$
+**Sijoitus:** $F$ $= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot$ $\dfrac{70\,\text{kg} \cdot 55\,\text{kg}}{(0{,}80\,\text{m})^2}$ $= 4{,}015 \cdot 10^{-7}\,\text{N}$ $= 0{,}4015\,\mu\text{N}$
 **Vastaus:** $0{,}40\,\mu\text{N}$, kaksi merkitsevää numeroa kuten massoissa ja etäisyydessä $0{,}80\,\text{m}$.
 **Järkevyys:** Voima vastaa noin $0{,}04\,\text{mg}$:n massaisen hiukkasen painoa, joten sitä ei arjessa huomaa. Suuruusluokka on sama kuin luvun esimerkissä, jossa kahden ihmisen välinen voima metrin etäisyydellä oli noin $0{,}28\,\mu\text{N}$; tässä etäisyys on pienempi, joten voima on hieman suurempi.
 

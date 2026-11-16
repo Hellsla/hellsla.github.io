@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: def38e3f4133d801
+CONTENT-HASH: 1aa8f389cb393b4a
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] known clipped formulas at 360 px in fy5-6 (docs/clipped-formulas.tsv), untouched.
+(none)
 
 ## Checked
-- Delta is reflow of inquiry chains and teacher-approved figures only. Rendered the Examples stage at 360 px (stage capture, all boxes open; ISS error task chain aligned at =, no KaTeX errors, doc width 360) and opened fy5-6-stage-tarkista-390-1.png; figures untouched (approved).
+- Round 3 delta (re-broken calculations only). Own Playwright captures of preview/en/fy5-6.html?ratkaisut=1, every details box open, at 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-1/r3/: sheet-fy5-6-les-390-0.png, sheet-fy5-6-les-1280-0.png (opened as combo-fy5-6-2.png).
+- Every formula the branch changed in inquiry.json was located on the page and opened in the sheets; page scrollWidth equals the viewport with the boxes open except for the ISS quiz formula already listed in docs/clipped-formulas.tsv (not a finding), no KaTeX error, no script error.
+- `γM = 6.674 · 10⁻¹¹ N·m²/kg² · 5.97 · 10²⁴ kg = …` and `γT² = … · (27 540 s)² = …`: at 390 px the second factor is an indented row starting with `·`, mantissa and power of ten together, comma on the last row; one row plus result at 1280 px.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

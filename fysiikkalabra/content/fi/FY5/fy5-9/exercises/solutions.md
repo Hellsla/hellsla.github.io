@@ -159,7 +159,7 @@ $$, joten $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0{,}00750\,\text{m}^2} = \
 **Muunnokset:** Jaksonaika saadaan kymmenen jakson ajasta jakamalla kymmenellä, esimerkiksi $4{,}5\,\text{s} : 10 = 0{,}45\,\text{s}$. Massa on jo kilogrammoina.
 **Sijoitus:** $a = \dfrac{0{,}98\,\text{s}^2}{0{,}500\,\text{kg}} = 1{,}96\,\tfrac{\text{s}^2}{\text{kg}}$ ja $k = \dfrac{4\pi^2}{1{,}96\,\text{s}^2/\text{kg}} = 20{,}14\,\text{N/m}$
 **Vastaus:** $20\,\text{N/m}$ (välitulos $20{,}14\,\text{N/m}$), kaksi merkitsevää numeroa, koska kymmenen jakson ajat $t_{10}$, esimerkiksi $4{,}5\,\text{s}$, on annettu kahdella merkitsevällä numerolla. Silmämääräinen sovitus vaihtelee hieman.
-**Järkevyys:** Sijoitetaan tulos takaisin: massalla $0{,}300\,\text{kg}$ jaksonaika on $2\pi\sqrt{0{,}300 : 20{,}14}\,\text{s} = 0{,}767\,\text{s}$, joten kymmenen jakson aika olisi $7{,}67\,\text{s}$, kuten taulukossa $7{,}7\,\text{s}$. Noin $20\,\text{N/m}$ on tavallinen koulun jousen jousivakio.
+**Järkevyys:** Sijoitetaan tulos takaisin: massalla $0{,}300\,\text{kg}$ jaksonaika on $$2\pi\sqrt{0{,}300 : 20{,}14}\,\text{s} = 0{,}767\,\text{s}$$, joten kymmenen jakson aika olisi $7{,}67\,\text{s}$, kuten taulukossa $7{,}7\,\text{s}$. Noin $20\,\text{N/m}$ on tavallinen koulun jousen jousivakio.
 
 ## fy5-9-L2-07
 **Annettu:** heilurin pituus $l = 1{,}000\,\text{m}$, $g = 9{,}81\,\text{m/s}^2$, kymmenen jakson ajat $t_{10}$: $20{,}1\,\text{s}$ ($10{,}0\,{}^\circ$), $20{,}2\,\text{s}$ ($20{,}0\,{}^\circ$), $20{,}7\,\text{s}$ ($40{,}0\,{}^\circ$) ja $21{,}5\,\text{s}$ ($60{,}0\,{}^\circ$); ajanoton epävarmuus noin $0{,}2\,\text{s}$

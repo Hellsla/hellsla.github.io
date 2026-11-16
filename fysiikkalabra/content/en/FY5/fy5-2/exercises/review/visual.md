@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 24819334321b131a
-Mode: delta (new task fy5-2-L2-08), Round: 1
+CONTENT-HASH: b8c219881eea790f
 
 ## Blocking
 (none)
 
 ## Polish
-- None.
+(none)
 
 ## Checked
-- Own 390 px render of preview/en/fy5-2.html after the page scripts ran, task fy5-2-L2-08 with answer feedback and solution opened (scratch script shot_trv5.py): page scrollWidth 390, no element outside the viewport except inside a scroll box, no KaTeX error source, no raw $ left, no JS errors.
-- Opened the task captures in tiles: scenario text, no figure or table in the task, choice feedback, full worked solution; units, decimal marks and case endings render correctly.
-- Task text and solution read as English; language matches the reviewed Finnish set.
+- Round 3 delta (re-broken calculations only). Own Playwright captures of preview/en/fy5-2.html?ratkaisut=1, every details box open, at 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-1/r3/: sheet-fy5-2-ex-390-0…2.png, sheet-fy5-2-ex-1280-0…1.png (opened as combo-fy5-2-0.png, combo-fy5-2-1.png).
+- Every formula the branch changed in exercises/solutions.md was located on the page and opened in the sheets; page scrollWidth equals the viewport with the boxes open, no KaTeX error, no script error.
+- Twenty lifted formulas in fifteen blocks: moment conditions, weights, ladder moments (`· 0.9063`, `· 0.4226` as indented continuation rows), centre-of-mass sums; punctuation after the last row, sentences read on across the boxes, nothing clipped.
 
 ## Scores
-illustrations 5 · typography 5 · language 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

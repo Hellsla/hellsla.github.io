@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8bde674d3810f5d8
+CONTENT-HASH: 709410ed3ef787d6
+ROUND: 3 (delta, work queue 5d: calculations re-broken; en)
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] L3-05 solution has a 121-word paragraph; a split would be tidier.
-- [Minor] L2-09 (14-19) source line adds "(in Finnish)" after the link, fine; the Finnish source title should stay as the link text.
+- [Minor] L2-05 Processing the data — the display row `431 + 429 + 432 + 430 = 1722` is followed by the word "hertz" on the next text line, so the unit is parted from its number — write the unit inside the formula (`= 1722\,\text{Hz}`) when the line is next edited (wording untouched in this round).
 
 ## Checked
-- own Playwright render of preview/en/fy5-14.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L1-04, L1-10, L2-02, L2-08, L2-09 (new) at 360 and 1280 px opened where noted. Opened 14-19 at 360 and 1280.
-- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
+- fy5-14-390-1/-2.png, fy5-14-1280-1/-2.png (sheet-14-390.png, sheet-14-1280.png): L1-10 Reasonableness (two rows at 390 px, joined to one at 1280 px, comma inside the box, sentence continues), L2-05 Processing the data.
+- Own Playwright captures of preview/en (`?ratkaisut=1`, every details box opened) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-13/; page scan at both widths: no horizontal overflow, no formula past the viewport, no KaTeX error.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 5

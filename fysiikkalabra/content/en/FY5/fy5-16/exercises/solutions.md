@@ -145,7 +145,7 @@ All the differences are close to the expected $6.0\,\text{dB}$, and the largest 
 **Given:** before the panels the level falls from $90.3\,\text{dB}$ to $74.4\,\text{dB}$ and after the panels from $90.2\,\text{dB}$ to $50.1\,\text{dB}$ in a time $\Delta t = 0.40\,\text{s}$; the fall is steady
 **Find:** the shortening of the reverberation time as a percentage
 **Principle:** When the level falls steadily, the reverberation time is the time in which the fall is $60\,\text{dB}$. It is calculated for both measurements from the measured drop and time, and the times are compared.
-**Reading the table:** The drop before the panels is $\Delta L_1 = 90.3\,\text{dB} - 74.4\,\text{dB} = 15.9\,\text{dB}$ and after the panels $\Delta L_2 = 90.2\,\text{dB} - 50.1\,\text{dB} = 40.1\,\text{dB}$.
+**Reading the table:** The drop before the panels is $$\begin{aligned} \Delta L_1 &= 90.3\,\text{dB} - 74.4\,\text{dB} \\ &= 15.9\,\text{dB} \end{aligned}$$ and after the panels $$\begin{aligned} \Delta L_2 &= 90.2\,\text{dB} - 50.1\,\text{dB} \\ &= 40.1\,\text{dB} \end{aligned}$$.
 **Formula:** $T = \dfrac{60\,\text{dB}}{\Delta L} \cdot \Delta t$ and shortening $= \dfrac{T_1 - T_2}{T_1} \cdot 100\,\%$
 **Conversions:** Not needed.
 **Substitution:**
@@ -216,7 +216,7 @@ $$\begin{aligned}
 &= 3\,\text{dB} \cdot 1.755 \\
 &= 5.26\,\text{dB}
 \end{aligned}$$
-Part c: the enclosure lowers the level of sawing to $87\,\text{dB}$, whereby $n_1 = \dfrac{2}{3}$ and $t_{\text{ref},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5.04\,\text{h}$, and the share is $1.0 : 5.04 = 0.198$. The new dose is $D = 0.198 + 1.0 + 0.375 = 1.57$.
+Part c: the enclosure lowers the level of sawing to $87\,\text{dB}$, whereby $n_1 = \dfrac{2}{3}$ and $t_{\text{ref},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5.04\,\text{h}$, and the share is $1.0 : 5.04 = 0.198$. The new dose is $$\begin{aligned} D &= 0.198 + 1.0 + 0.375 \\ &= 1.57 \end{aligned}$$.
 **Answer:** a) about $340\,\%$. b) at least $5.3\,\text{dB}$. c) It is not enough alone, because the dose is still about $160\,\%$ of the reference dose. In addition to the enclosure, for example hearing protectors with an attenuation of at least $\dfrac{3\,\text{dB} \cdot \lg 1.57}{\lg 2} = 2.0\,\text{dB}$ are needed, or the planer could be placed away from the workstation.
 **Reasonableness:** Sawing and planing are above the action value, so the dose must be over $100\,\%$. Ordinary protectors attenuate $20$–$30\,\text{dB}$, so $5.3\,\text{dB}$ is easily met.
 

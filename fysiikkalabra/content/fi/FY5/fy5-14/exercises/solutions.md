@@ -147,7 +147,7 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 **Annettu:** torven taajuus paikallaan $f_0 = 392\,\text{Hz}$, neljä mitattua taajuutta $431\,\text{Hz}$, $429\,\text{Hz}$, $432\,\text{Hz}$ ja $430\,\text{Hz}$, äänen nopeus $v = 340\,\text{m/s}$
 **Kysytty:** auton nopeus $v_\text{L}$
 **Periaate:** Auto eli äänilähde lähestyy paikallaan olevaa kuulijaa, joten pätee liikkuvan lähteen Dopplerin kaava miinusmerkillä. Mittaukset vaihtelevat hieman, joten käytetään niiden keskiarvoa $f_\text{ka}$. Kaavasta ratkaistaan lähteen nopeus.
-**Aineiston käsittely:** Taulukon neljän taajuuden summa on $431 + 429 + 432 + 430 = 1722$ hertsiä, joten keskiarvo on $f_\text{ka} = \dfrac{1722\,\text{Hz}}{4} = 430{,}5\,\text{Hz}$.
+**Aineiston käsittely:** Taulukon neljän taajuuden summa on $$431 + 429 + 432 + 430 = 1722$$ hertsiä, joten keskiarvo on $f_\text{ka} = \dfrac{1722\,\text{Hz}}{4} = 430{,}5\,\text{Hz}$.
 **Kaava:** $f_\text{ka} = f_0 \cdot \dfrac{v}{v - v_\text{L}}$, josta $v - v_\text{L} = \dfrac{f_0 v}{f_\text{ka}}$ ja $v_\text{L} = v \left(1 - \dfrac{f_0}{f_\text{ka}}\right)$
 **Muunnokset:** Ei tarvita: taajuudet ovat hertseinä, ja niiden suhteesta yksikkö supistuu.
 **Sijoitus:** $v_\text{L} = 340\,\text{m/s} \cdot \left(1 - \dfrac{392\,\text{Hz}}{430{,}5\,\text{Hz}}\right) = 340\,\text{m/s} \cdot 0{,}08943 = 30{,}41\,\text{m/s}$
@@ -215,7 +215,7 @@ $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,
 **Muunnokset:** Ei tarvita: taajuudet luetaan hertseinä.
 **Sijoitus:** $f_7 = 7 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$
 **Vastaus:** $1400\,\text{Hz}$ eli $1{,}40 \cdot 10^{3}\,\text{Hz}$, kolme merkitsevää numeroa kuten kuvaajasta luetussa perustaajuudessa $200\,\text{Hz}$.
-**Järkevyys:** Seitsemäs harmoninen on viidettä piikkiä $1000\,\text{Hz}$ korkeammalla: $1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$, koska piikkien väli on $200\,\text{Hz}$.
+**Järkevyys:** Seitsemäs harmoninen on viidettä piikkiä $1000\,\text{Hz}$ korkeammalla: $$\begin{aligned} &1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} \\ &= 1400\,\text{Hz} \end{aligned}$$, koska piikkien väli on $200\,\text{Hz}$.
 
 ## fy5-14-L2-08
 **Annettu:** kahden yhtä aikaa soivan ääniraudan yhteinen ääni kuvassa; toinen äänirauta $523\,\text{Hz}$; vaha laskee tuntemattoman ääniraudan taajuutta ja huojunta nopeutuu
