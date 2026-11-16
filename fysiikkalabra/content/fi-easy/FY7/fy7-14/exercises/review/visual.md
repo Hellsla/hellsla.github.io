@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d546c7be180b582b
+CONTENT-HASH: c6ba68be21278758
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md:64 — at 390 px the line breaks after the opening parenthesis before the inline formula; harmless, could be avoided with "eli" instead of brackets.
+- [Minor] solutions.md:64 — the bracketed formula's second part starts with a bare relation, so on one line (1280 px) the gap before "=" is narrower than after it. `{}=` evens it.
 
 ## Checked
-- Packet captures have no phone-width opened solutions, so own Playwright captures of the current preview build (preview/fi-easy) at 390 px and 1280 px, every solution open; plus a scripted scan of every formula of the exercise set at 360 and 390 px: none wider than its box, none scrolling, no page overflow.
-- The hash changed during the review (f139c7b268916dd7 → current: commit 7e4ba8466f put the bracketed formula of 14-7 back inline); preview rebuilt, 14-7 Järkevyys re-captured at 390 and 1280: the formula sits inside its parentheses in the sentence, nothing clipped.
-- Delta: the other 4 re-broken blocks (607,2 nm, 94,2 nm, 540 nm, 221 nm) at 390 and 1280 px, full size (unchanged by the later commit). Rest not re-reviewed.
+- Delta since round 1: solutions.md:64 only. "(570 nm : (4 · 1,33) = 107 nm)" is inline inside its parentheses, split at the relation; at 360 px it wraps before "= 107 nm)", at 390 and 1280 px it is on one line; the brackets stay with the formula, nothing clipped.
+- Own captures of the rebuilt preview (preview/fi-easy, ?ratkaisut=1, everything open): contact sheets of every aligned block of the set at 390 and 1280 px (607,2 nm, 94,2 nm, 540 nm, 221 nm blocks unchanged and intact); line 64 at 360 px.
+- Overflow scan of every formula at 360/390/1280 px: none. No red KaTeX. Hash identical at start and end.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

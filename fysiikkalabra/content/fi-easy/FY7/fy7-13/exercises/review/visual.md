@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 432e64faa918019f
+CONTENT-HASH: 61132275c6f55d3b
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions.md:163 — the error chain still begins with a bare = after the words "ja virhe"; start it with the quantity, e.g. \text{virhe} = …, as every chain shows what it computes.
-- [Minor] solutions.md:237 — on a phone the row "= 1,20 m" is followed by "· tan(…)"; readable, but \bigl( \bigr) are too low for the fraction inside: use \left( \right).
+- [Minor] solutions.md:161 (untouched, same as main) — at 390 px the Kaava line wraps and the denominator "N" of the first line touches the numerator "λ_op − λ" of the second; give the error formula its own line or block.
+- [Minor] solutions.md:163 — the error chain begins with a bare "=" after "ja virhe" (carried from round 1).
+- [Minor] exercises.json:202 — the continuation formulas start with a bare relation, so the gap before "=" is narrower than after it. `{}=` evens it.
 
 ## Checked
-- Packet captures have no phone-width opened solutions, so own Playwright captures of the current preview build (preview/fi-easy) at 390 px and 1280 px, every solution open; plus a scripted scan of every formula of the exercise set at 360 and 390 px: none wider than its box, none scrolling, no page overflow.
-- The hash changed during the review (f845ee49d7da3de1 → current: commit 7e4ba8466f put the task's quoted formula back inline and re-broke the error chain); preview rebuilt and the review redone for the current hash.
-- Delta: 15 re-broken blocks (d conversions, Tarkistus rows, d₁, d₂, x₂ : x₁, x₁ chain) at 390 and 1280 px, full size; 13-15 Sijoitus re-captured after the fix at 390 and 1280: fraction · 100 % on one row, = 5,53 % under it, equals aligned, nothing clipped.
-- 13-15 task text (now inline again, as in the version passed earlier): source diff and the 360/390 px scan only, no new full capture of that paragraph. Rest not re-reviewed.
+- Delta since round 1: exercises.json:202 only. The quoted chain λ = d sin θ = 1,667 µm · 0,337 / = 562 nm.” is inline, split at its relations; it wraps before "= 562 nm" at 360, 390 and 1280 px, the closing quotation mark stays with the result, nothing clipped.
+- Own captures of the rebuilt preview (preview/fi-easy, ?ratkaisut=1, everything open): contact sheets of every aligned block of the set at 390 and 1280 px; the task text at 360 px after real clicks.
+- Overflow scan of every formula at 360/390/1280 px: none. No red KaTeX. Hash identical at start and end.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 5 · accessibility 4
