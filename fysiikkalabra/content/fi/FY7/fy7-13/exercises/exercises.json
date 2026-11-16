@@ -199,7 +199,7 @@
     {
       "id": "fy7-13-L2-06",
       "level": 2,
-      "text": "Opiskelija mittaa hilalla, jossa on $600$ viivaa millimetrillä, vihreän laserin ensimmäisen kertaluvun maksimin. Varjostin on $L = 1{,}00\\,\\text{m}$:n päässä hilasta kohtisuorassa sädettä vastaan, ja maksimi on $x = 33{,}7\\,\\text{cm}$:n päässä keskimaksimista.\n\nOpiskelija ratkaisee aallonpituuden näin: ”Kulma on pieni, joten $\\sin\\theta \\approx x : L = 0{,}337$. Hilayhtälöstä $$\\begin{aligned} \\lambda &= d\\sin\\theta \\\\ &= 1{,}667\\,\\mu\\text{m} \\cdot 0{,}337 \\\\ &= 562\\,\\text{nm} \\end{aligned}$$.”\n\na) Mikä opiskelijan päättelyssä on virheellistä?\n\nb) Laske aallonpituus oikein.\n\nc) Kuinka monta prosenttia opiskelijan tulos poikkeaa oikeasta tuloksesta? Sijoita oikea tulos nimittäjään.\n\nKohdan c) tulos prosentteina kirjoitetaan vastauslaatikkoon.",
+      "text": "Opiskelija mittaa hilalla, jossa on $600$ viivaa millimetrillä, vihreän laserin ensimmäisen kertaluvun maksimin. Varjostin on $L = 1{,}00\\,\\text{m}$:n päässä hilasta kohtisuorassa sädettä vastaan, ja maksimi on $x = 33{,}7\\,\\text{cm}$:n päässä keskimaksimista.\n\nOpiskelija ratkaisee aallonpituuden näin: ”Kulma on pieni, joten $\\sin\\theta \\approx x : L = 0{,}337$. Hilayhtälöstä $\\lambda = d\\sin\\theta = 1{,}667\\,\\mu\\text{m} \\cdot 0{,}337 = 562\\,\\text{nm}$.”\n\na) Mikä opiskelijan päättelyssä on virheellistä?\n\nb) Laske aallonpituus oikein.\n\nc) Kuinka monta prosenttia opiskelijan tulos poikkeaa oikeasta tuloksesta? Sijoita oikea tulos nimittäjään.\n\nKohdan c) tulos prosentteina kirjoitetaan vastauslaatikkoon.",
       "kind": [
         "error"
       ],

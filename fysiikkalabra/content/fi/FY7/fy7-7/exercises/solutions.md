@@ -110,7 +110,7 @@
 **Periaate:** Keskimääräinen teho on vuoden aikana tuotettu energia jaettuna vuoden pituudella. Tuulivoimalat tuottavat nimellistehonsa vain kovalla tuulella, joten keskiteho on selvästi nimellistehoa pienempi. Osuus saadaan jakamalla keskiteho nimellisteholla.
 **Kaava:** $P = \dfrac{E}{t}$ ja osuus $= \dfrac{P}{P_\text{n}} \cdot 100\,\%$
 **Muunnokset:** $t = 366 \cdot 24\,\text{h} = 8784\,\text{h}$, $E = 19{,}8\,\text{TWh} = 19{,}8 \cdot 10^{12}\,\text{Wh}$ ja $P_\text{n} = 8358\,\text{MW} = 8358 \cdot 10^{6}\,\text{W}$
-**Sijoitus:** $P = \dfrac{19{,}8 \cdot 10^{12}\,\text{Wh}}{8784\,\text{h}} = 2{,}254 \cdot 10^{9}\,\text{W}$ ja osuus $$\begin{aligned} &= \dfrac{2{,}254 \cdot 10^{9}\,\text{W}}{8358 \cdot 10^{6}\,\text{W}} \\ &\cdot 100\,\% = 26{,}97\,\% \end{aligned}$$
+**Sijoitus:** $P = \dfrac{19{,}8 \cdot 10^{12}\,\text{Wh}}{8784\,\text{h}} = 2{,}254 \cdot 10^{9}\,\text{W}$ ja osuus $$\begin{aligned} &= \dfrac{2{,}254 \cdot 10^{9}\,\text{W}}{8358 \cdot 10^{6}\,\text{W}} \cdot 100\,\% \\ &= 26{,}97\,\% \end{aligned}$$
 **Vastaus:** $27\,\%$, kaksi merkitsevää numeroa, koska tuotanto $19{,}8\,\text{TWh}$ on ilmoitettu kolmella numerolla ja tulos on arvio.
 **Järkevyys:** Tuulivoimaloiden keskiteho on tyypillisesti neljännes tai kolmannes nimellistehosta, joten $27\,\%$ on uskottava. Todellinen osuus on hieman suurempi, koska nimellisteho kasvoi vuoden aikana: alkuvuonna voimaloita oli vähemmän kuin vuoden lopussa.
 
@@ -131,7 +131,7 @@
 **Periaate:** Huippuarvo $e_0 = NBA \cdot 2\pi f$ on suoraan verrannollinen pyörimistaajuuteen, kun $N$, $B$ ja $A$ pysyvät samoina. Kaksinkertainen pyörimistaajuus antaa siis kaksinkertaisen huippuarvon. Poikkeama lasketaan ennusteen ja mittauksen erotuksena suhteessa ennusteeseen.
 **Kaava:** $e_{0,2} = e_{0,1} \cdot \dfrac{f_2}{f_1}$ ja poikkeama $$\begin{aligned} &= \dfrac{|e_{0,\text{ennuste}} - e_{0,\text{mitattu}}|}{e_{0,\text{ennuste}}} \\ &\cdot 100\,\% \end{aligned}$$
 **Muunnokset:** Ei tarvita: suhde $f_2 : f_1$ on lukuarvo.
-**Sijoitus:** a) $e_{0,\text{ennuste}} = 4{,}1\,\text{V} \cdot \dfrac{10{,}0\,\text{Hz}}{5{,}0\,\text{Hz}} = 8{,}2\,\text{V}$. b) Poikkeama $$\begin{aligned} &= \dfrac{|8{,}2\,\text{V} - 8{,}0\,\text{V}|}{8{,}2\,\text{V}} \\ &\cdot 100\,\% = 2{,}44\,\% \end{aligned}$$
+**Sijoitus:** a) $e_{0,\text{ennuste}} = 4{,}1\,\text{V} \cdot \dfrac{10{,}0\,\text{Hz}}{5{,}0\,\text{Hz}} = 8{,}2\,\text{V}$. b) Poikkeama $$\begin{aligned} &= \dfrac{|8{,}2\,\text{V} - 8{,}0\,\text{V}|}{8{,}2\,\text{V}} \cdot 100\,\% \\ &= 2{,}44\,\% \end{aligned}$$
 **Vastaus:** Poikkeama on $2{,}4\,\%$. c) Jännitteen taajuus on sama kuin pyörimistaajuus, joten sekin kaksinkertaistuu: jaksonaika puolittuu arvosta $200\,\text{ms}$ arvoon $100\,\text{ms}$. Kunkin huippuarvon lukemisen epävarmuus on $\pm 0{,}1\,\text{V}$. Ennuste $2 \cdot 4{,}1\,\text{V}$ kaksinkertaistaa lukeman epävarmuuden ($\pm 0{,}2\,\text{V}$), ja mitatun arvon epävarmuus $\pm 0{,}1\,\text{V}$ lisäksi, joten yhteensä epävarmuus on noin $\pm 0{,}3\,\text{V}$. Erotus $0{,}2\,\text{V}$ on tätä pienempi, joten mittaus ei poikkea ennusteesta enempää kuin lukematarkkuus sallii: eroa verrannollisuudesta ei voida osoittaa, ja mittaus on sopusoinnussa ennusteen kanssa.
 **Järkevyys:** Kaksinkertaisella taajuudella huippuarvo on lähes kaksinkertainen: $8{,}0 : 4{,}1 = 1{,}95$. Jos huippuarvo olisi riippunut taajuudesta jotenkin muuten, esimerkiksi neliöllisesti, tulos olisi ollut noin $16\,\text{V}$.
 

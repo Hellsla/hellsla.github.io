@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a845cf8deec5c093
+CONTENT-HASH: 9c0f11f51ee1c63c
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md, flux-graph task, Reasonableness — in "$$ -8.0 mWb : 0.40 s = -20 mWb/s $$" the leading minus is set with operator spacing ("− 8.0 mWb"), which reads as a subtraction; write it "{-}8.0" so the sign hugs the number (390 px capture shows the gap).
-- [Minor] solutions.md, entering coil, Reasonableness (open-exercises-L2-1280-5) — the time block "0.050 m : 0.25 m/s = 0.20 s," runs the full card width while its neighbours are narrow; the trailing comma sits inside the block, which is sensible.
-- [Minor] solutions.md, train axle, Substitution (open-exercises-L3-1280-2) — the break after the second factor is forced at 1280 px although the row fits; the second row also carries "= 4.233·10^-3 V", so the equals signs are not in one column.
-
-## Outside this change (queue 5d, not blocking here)
-- [Major] en/fy7-5 rows in docs/clipped-formulas.tsv (200 · 3.0 · 10^-3 Wb : 0.40 s = 1.5 V, 50 · 4.0 · 10^-3 Wb : 0.20 s = 1.0 V, ...) remain clipped on a phone.
+- [Minor] exercises.json:259 — the formula block in the task text is centred at 1280 px while the blocks in the solutions are left-aligned; a template matter, no content change.
 
 ## Checked
-- open-exercises-L2-1280-5, L3-1280-1, L3-1280-2 at 1280 px; 390 px render of the slope block (readable, nothing clipped).
-- Hash identical at start and end.
+- Delta (reflow). The packet's inventory has no phone-width capture of the opened exercise solutions, so own captures were made from preview/en/fy7-5.html (built after the content) with every exercise solution open at 390 and 1280 px: every solution step holding a display formula, opened at full size (sheets S5-390-1.png, S5-1280-1.png in the session scratchpad).
+- Measured at both widths: no formula wider than its card, no page overflow, no KaTeX error, no raw LaTeX; no row starts inside a number, a power of ten or a unit.
+- Task text of the find-the-error exercise (exercises.json:259): three aligned rows, the sentence continues below without stray punctuation.
+- Trapezoid sum (solutions.md:201): breaks at + signs inside the bracket, readable at 390 px and joined to two rows at 1280 px.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

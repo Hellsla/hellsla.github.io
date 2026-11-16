@@ -217,4 +217,4 @@ Reason: the force is perpendicular to the current and to the field, and the righ
 **Conversions:** $$\begin{aligned} l &= 25\,\text{cm} \\ &= 25 \cdot 0.01\,\text{m} \\ &= 0.25\,\text{m} \end{aligned}$$
 **Substitution:** $B = \dfrac{0.45\,\text{N}}{6.0\,\text{A} \cdot 0.25\,\text{m}} = \dfrac{0.45\,\text{N}}{1.5\,\text{A}\cdot\text{m}} = 0.30\,\text{T}$
 **Answer:** $0.30\,\text{T}$, two significant figures like the current $6.0\,\text{A}$.
-**Reasonableness:** Check with another point: at $30^\circ$ the curve gives about $0.225\,\text{N}$, and $$\begin{aligned} &0.225\,\text{N} : (6.0\,\text{A} \cdot 0.25\,\text{m} \\ &\cdot \sin 30^\circ) \\ &= 0.30\,\text{T} \end{aligned}$$. The value is common in the gap of a magnet.
+**Reasonableness:** Check with another point: at $30^\circ$ the curve gives about $0.225\,\text{N}$, and $$\begin{aligned} &0.225\,\text{N} \\ &: (6.0\,\text{A} \cdot 0.25\,\text{m} \cdot \sin 30^\circ) \\ &= 0.30\,\text{T} \end{aligned}$$. The value is common in the gap of a magnet.

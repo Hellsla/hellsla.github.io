@@ -61,7 +61,7 @@
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{570\,\text{nm}}{4 \cdot 1.47} = 96.94\,\text{nm}$
 **Answer:** $96.9\,\text{nm}$, three significant figures like the refractive index $1.47$ and the wavelength $570\,\text{nm}$.
-**Reasonableness:** Check: the path difference is $2 \cdot 1.47 \cdot 96.94\,\text{nm} = 285\,\text{nm} = \tfrac{1}{2} \cdot 570\,\text{nm}$. The film is thinner than a soap film for the same wavelength ($$\begin{aligned} &570\,\text{nm} : (4 \cdot 1.33) \\ &= 107\,\text{nm} \end{aligned}$$), because the refractive index of oil is greater and the wavelength in oil is therefore shorter.
+**Reasonableness:** Check: the path difference is $2 \cdot 1.47 \cdot 96.94\,\text{nm} = 285\,\text{nm} = \tfrac{1}{2} \cdot 570\,\text{nm}$. The film is thinner than a soap film for the same wavelength ($570\,\text{nm} : (4 \cdot 1.33) = 107\,\text{nm}$), because the refractive index of oil is greater and the wavelength in oil is therefore shorter.
 
 ## fy7-14-L1-08
 **Given:** refractive index of the soap film $n = 1.33$, thickness $d = 300\,\text{nm}$, wavelength in air $\lambda = 532\,\text{nm}$, normal incidence

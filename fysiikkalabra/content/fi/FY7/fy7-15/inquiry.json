@@ -408,7 +408,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Syventävä: etsi virhe",
-      "prompt": "Lampun polarisoimattoman valon intensiteetti on $200\\,\\text{W/m}^2$. Valo kulkee kahden polarisaattorin läpi, ja niiden läpäisysuuntien välinen kulma on $60^\\circ$. Opiskelija kirjoittaa: ”Malusin lain mukaan $$\\begin{aligned} I &= I_0 \\cos^2 60^\\circ \\\\ &= 200\\,\\text{W/m}^2 \\cdot 0{,}25 \\\\ &= 50\\,\\text{W/m}^2 \\end{aligned}$$.” Missä on virhe?",
+      "prompt": "Lampun polarisoimattoman valon intensiteetti on $200\\,\\text{W/m}^2$. Valo kulkee kahden polarisaattorin läpi, ja niiden läpäisysuuntien välinen kulma on $60^\\circ$. Opiskelija kirjoittaa: ”Malusin lain mukaan $I = I_0 \\cos^2 60^\\circ = 200\\,\\text{W/m}^2 \\cdot 0{,}25 = 50\\,\\text{W/m}^2$.” Missä on virhe?",
       "choices": [
         {
           "text": "Ensimmäinen polarisaattori puolittaa polarisoimattoman valon, joten oikea tulos on $25\\,\\text{W/m}^2$.",

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 501fed00974f9db8
-SCOPE: delta added-exercise from 2b448767c99df0bc base 8f23aa7ae3bd
+CONTENT-HASH: 38d53f56e53fd8a2
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy7-4/force-angle — the data points are purple, the colour kept for momentum, while the fitted curve is the force red — draw the markers ink or red so purple keeps one meaning.
+- [Minor] solutions.md:220 — on a phone the row breaks inside the brackets (`(6.0 A · 0.25 m` / `· sin 30°)`); break before the colon instead: `&0.225\,\text{N} \\ &: (6.0\,\text{A} \cdot 0.25\,\text{m} \cdot \sin 30^\circ)`.
+- [Minor] solutions.md:100 — at 1280 px the `= 0.074 T.` row stays on its own row although the line has room; harmless.
 
 ## Checked
-- fy7-4-open-exercises-L2-1280-11, -12, -13 (en): task 4-17 with the F(alpha) graph (axis titles with units, six markers distinct from the red fitted curve, grid), answer field and the fully opened solution.
-- Typography: units upright with thin space, aligned chains, $\sin 30^\circ$ and the check chain set cleanly, no red KaTeX; the set reads as one.
+- Delta (reflow). The packet's inventory has no phone-width capture of the opened exercise solutions, so own captures were made from preview/en/fy7-4.html (built after the content) with every exercise solution open at 390 and 1280 px: every solution step holding a display formula, opened at full size (sheets S4-390-1.png, S4-1280-1.png in the session scratchpad).
+- Measured at both widths: no formula wider than its card, no page overflow, no KaTeX error, no raw LaTeX; no row starts inside a number, a power of ten or a unit.
+- All eleven changed blocks (conversions, checks, L3 substitution and reasonableness) read correctly at both widths; punctuation stays inside the blocks.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

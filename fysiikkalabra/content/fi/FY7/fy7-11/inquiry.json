@@ -293,7 +293,7 @@
       "hints": [
         "Laske ensin kummankin värin taitekulma vedessä. Kumpi taittuu enemmän?",
         "Kun taitekulma $\\beta$ tunnetaan, säde etenee syvyydellä $h$ vaakasuunnassa matkan $x = h \\tan\\beta$.",
-        "$\\beta_\\text{p} = 40{,}57^\\circ$ ja $\\beta_\\text{v} = 40{,}15^\\circ$, joten $$\\begin{aligned} \\Delta x &= 2{,}00\\,\\text{m} \\cdot (\\tan 40{,}57^\\circ \\\\ &- \\tan 40{,}15^\\circ) \\end{aligned}$$."
+        "$\\beta_\\text{p} = 40{,}57^\\circ$ ja $\\beta_\\text{v} = 40{,}15^\\circ$, joten $$\\begin{aligned} \\Delta x &= 2{,}00\\,\\text{m} \\\\ &\\cdot (\\tan 40{,}57^\\circ - \\tan 40{,}15^\\circ) \\end{aligned}$$."
       ],
       "mistakes": [
         {

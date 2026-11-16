@@ -293,7 +293,7 @@
       "hints": [
         "First calculate the angle of refraction of each colour in water. Which one is refracted more?",
         "Once the angle of refraction $\\beta$ is known, the ray travels a horizontal distance $x = h \\tan\\beta$ at depth $h$.",
-        "$\\beta_\\text{r} = 40.57^\\circ$ and $\\beta_\\text{v} = 40.15^\\circ$, so $$\\begin{aligned} \\Delta x &= 2.00\\,\\text{m} \\cdot (\\tan 40.57^\\circ \\\\ &- \\tan 40.15^\\circ) \\end{aligned}$$."
+        "$\\beta_\\text{r} = 40.57^\\circ$ and $\\beta_\\text{v} = 40.15^\\circ$, so $$\\begin{aligned} \\Delta x &= 2.00\\,\\text{m} \\\\ &\\cdot (\\tan 40.57^\\circ - \\tan 40.15^\\circ) \\end{aligned}$$."
       ],
       "mistakes": [
         {

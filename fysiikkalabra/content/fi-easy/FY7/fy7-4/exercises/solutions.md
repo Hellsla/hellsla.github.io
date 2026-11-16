@@ -217,4 +217,4 @@ Perustelu: voima on kohtisuorassa virtaa ja kenttää vastaan, ja oikean käden 
 **Muunnokset:** $$\begin{aligned} l &= 25\,\text{cm} \\ &= 25 \cdot 0{,}01\,\text{m} \\ &= 0{,}25\,\text{m} \end{aligned}$$
 **Sijoitus:** $B = \dfrac{0{,}45\,\text{N}}{6{,}0\,\text{A} \cdot 0{,}25\,\text{m}} = \dfrac{0{,}45\,\text{N}}{1{,}5\,\text{A}\cdot\text{m}} = 0{,}30\,\text{T}$
 **Vastaus:** $0{,}30\,\text{T}$, kaksi merkitsevää numeroa kuten virrassa $6{,}0\,\text{A}$.
-**Järkevyys:** Tarkistus toisella pisteellä: kulmalla $30^\circ$ käyrä antaa noin $0{,}225\,\text{N}$, ja $$\begin{aligned} &0{,}225\,\text{N} : (6{,}0\,\text{A} \cdot 0{,}25\,\text{m} \\ &\cdot \sin 30^\circ) \\ &= 0{,}30\,\text{T} \end{aligned}$$. Arvo on tavallinen magneetin raossa.
+**Järkevyys:** Tarkistus toisella pisteellä: kulmalla $30^\circ$ käyrä antaa noin $0{,}225\,\text{N}$, ja $$\begin{aligned} &0{,}225\,\text{N} \\ &: (6{,}0\,\text{A} \cdot 0{,}25\,\text{m} \cdot \sin 30^\circ) \\ &= 0{,}30\,\text{T} \end{aligned}$$. Arvo on tavallinen magneetin raossa.

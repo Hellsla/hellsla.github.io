@@ -1,19 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 6d4426affade3fc5
+VERDICT: FAIL
+CONTENT-HASH: f09b1fd9dac7accf
 
 ## Blocking
-(none)
+- [Major] content/fi/FY7/koe/solutions.md:306 (task 6 c Sijoitus; own captures FY7-koe-390-s1, FY7-koe-1280-s1) — "säästö" is broken inside its parentheses (`= (6912 MWh` / `− 228,5 MWh)`) and the last row `·50 €/MWh = 334 200 €` is flush left, outside the column of the `=`, with the result on a continuation row — misaligned, hard to read on a phone — break as `&= (6912\,\text{MWh} - 228{,}5\,\text{MWh}) \\ &\quad \cdot 50\,\text{€/MWh} \\ &= 334\,200\,\text{€}`.
+- [Major] content/fi/FY7/koe/solutions.md:122 (task 2 b Sijoitus) — the block ends at `· 1,81 · 10⁻⁵ m²/V` and the result `= 1,16 · 10⁻¹¹ T²m²/V` follows outside it as inline text in a larger size, at both widths — the chain's result is detached from the chain — make it the block's third row.
 
 ## Polish
-- [Major, may wait: known, listed issue, work queue 5d] shots/FY7-koe-stage-osa-3-390-5.png (task 6 c, Sijoitus; solutions.md:305-306) — at 390 px the rows "1,728 MW · 4000 h = 6912 MWh", "0,0571 MW · 4000 h = 228,5 MWh" and "= (6912 MWh − 228,5 MWh) · 50 €/MWh = 334 200 €" are clipped. I confirmed it in the capture. It may wait because the rows are in docs/clipped-formulas.tsv (FY7-koe, lines 60-62), the fix is the separate re-break PR of item 5d (own PR, no other content changes), the lines are not part of this change, and the clipped step's result still shows in Vastaus and Järkevyys. Do it in 5d; a new visual look is needed after the re-break.
-- [Minor] fig-3 / fig-12 — markers and error bars are small at 390 px; make them a little larger.
-- [Minor] osa-2-390-4 (task 2 b, Järkevyys) — the unit fraction 1/(T²·m²/V) = V/(T²m²) is tiny in its display box; set it larger or inline.
-- [Minor] fig-6 — the t-axis numbers sit at the bottom of the plot, not on the axis; ticks on the axis would be clearer.
+- [Minor] task 6 c — "säästö" and "takaisinmaksuaika" chains begin with a bare `=` after a word; the latter inline fraction is larger than the chains around it.
+- [Minor] carried: fig-3 / fig-12 small markers, fig-6 tick numbers, task 2 b unit fraction.
 
 ## Checked
-- top-390, fig-1, fig-3, fig-6, fig-12 (graphs: quantities, units, ticks, labelled points fine); fig-2, 4, 5 and 14 (inline formulas render and read).
-- stage-osa-1-390-1, osa-2-390-1, osa-2-390-4, osa-2-390-12, osa-3-390-1, osa-3-390-5; page-1280-5 (opened model answer, wide layout).
-- Not opened: the contact sheets and the other page-390/1280 parts. The verdict rests on this sample.
+- own captures of every aligned block of the opened solutions at 390 and 1280 px (preview page at this hash, /tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/vis_b916/shots/FY7-koe-390-s1, FY7-koe-1280-s1, koe-k7-390.png): all five re-broken blocks (B²k, the two MWh products, säästö, the square root). The MWh products and the root are clean at both widths.
+- Overflow of every formula measured at 360 and 390 px with all boxes open: none (the task 7 table reads in full).
+- Figures and the rest of the page: not re-opened; unchanged since my full review of the previous version.
 
 ## Scores
 illustrations 4 · typography 3 · Finnish 4 · accessibility 4

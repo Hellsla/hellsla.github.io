@@ -199,7 +199,7 @@
     {
       "id": "fy7-13-L2-06",
       "level": 2,
-      "text": "A student uses a grating with $600$ lines per millimetre to measure the first-order maximum of a green laser. The screen is $L = 1.00\\,\\text{m}$ from the grating, perpendicular to the beam, and the maximum is $x = 33.7\\,\\text{cm}$ from the central maximum.\n\nThe student solves for the wavelength like this: “The angle is small, so $\\sin\\theta \\approx x : L = 0.337$. From the grating equation $$\\begin{aligned} \\lambda &= d\\sin\\theta \\\\ &= 1.667\\,\\mu\\text{m} \\cdot 0.337 \\\\ &= 562\\,\\text{nm} \\end{aligned}$$.”\n\na) What is wrong in the student's reasoning?\n\nb) Calculate the wavelength correctly.\n\nc) By how many percent does the student's result differ from the correct result? Put the correct result in the denominator.\n\nThe result of part c) in percent is written in the answer box.",
+      "text": "A student uses a grating with $600$ lines per millimetre to measure the first-order maximum of a green laser. The screen is $L = 1.00\\,\\text{m}$ from the grating, perpendicular to the beam, and the maximum is $x = 33.7\\,\\text{cm}$ from the central maximum.\n\nThe student solves for the wavelength like this: “The angle is small, so $\\sin\\theta \\approx x : L = 0.337$. From the grating equation $\\lambda = d\\sin\\theta = 1.667\\,\\mu\\text{m} \\cdot 0.337 = 562\\,\\text{nm}$.”\n\na) What is wrong in the student's reasoning?\n\nb) Calculate the wavelength correctly.\n\nc) By how many percent does the student's result differ from the correct result? Put the correct result in the denominator.\n\nThe result of part c) in percent is written in the answer box.",
       "kind": [
         "error"
       ],

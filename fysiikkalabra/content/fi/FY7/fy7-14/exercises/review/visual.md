@@ -1,19 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 9a26cfef32568a85
+VERDICT: FAIL
+CONTENT-HASH: acc887b31da30396
 
 ## Blocking
-
-## Outside this change (queue item 5d, not blocking here)
-- [Major] docs/clipped-formulas.tsv lists 8 of this set's solution formulas as clipped at 360 px with the solutions open — old, untouched by this change; fix under queue item 5d.
+- [Major] content/fi/FY7/fy7-14/exercises/solutions.md:64 (fy7-14-L1-07 Järkevyys; own captures fy7-14-390-s1, fy7-14-1280-s1) — the bracketed check became a display block inside its parentheses: the text line ends with a lone `(` and the next begins `), koska …`, at both widths — broken sentence typography in edited text — take the brackets away, e.g. "Kalvo on ohuempi kuin saippuakalvo samalle aallonpituudelle, $$…= 107\,\text{nm}$$, koska öljyn taitekerroin on suurempi …" (the comma then sits inside the last row), or keep the short formula inline.
 
 ## Polish
-- [Minor] 14-20 Vastaus (L3-1280-6) — the c) reasoning sits in one long paragraph after the precision remark (untouched text) — start c) as its own paragraph.
 
 ## Checked
-- Delta: task 14-22 (fy7-14-L3-05), the marker for example data removed from the task text.
-- fy7-14-open-exercises-L3-1280-6 (14-22 heading row, situation paragraphs and the changed sentence: it reads as a complete sentence, inline maths on one line, no orphaned parenthesis or double space; the end of the 14-20 solution above it intact).
-- fy7-14-open-exercises-L3-1280-7 (parts b and c, the data table with its caption, answer row, opened answer and the start of the solution: inside the card, no overflow or clipping, the layout unchanged).
-- Not opened: other captures (outside the delta).
+- own captures of every aligned block of the opened solutions at 390 and 1280 px (preview page at this hash, /tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/vis_b916/shots/fy7-14-390-s1, -s2, fy7-14-1280-s1): L1-07, L1-09, L2-02, L2-03, L2-07, L3-01. The other five blocks are clean (colon rows 570 nm : (4 · 1,33), punctuation inside the row, wide form on one row).
+- No formula of the exercises overflows its box at 360 or 390 px (measured in the browser, every solution open).
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 3 · Finnish 4 · accessibility 4

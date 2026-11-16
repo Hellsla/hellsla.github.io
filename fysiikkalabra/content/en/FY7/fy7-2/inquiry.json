@@ -314,7 +314,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A student calculates how large a circle a proton goes round when it has been accelerated from rest by a voltage of $2.0\\,\\text{kV}$ and then flies perpendicular to a magnetic field of $0.10\\,\\text{T}$. She writes\n\n$$\\begin{aligned} qU &= mv^2 \\\\ v &= \\sqrt{\\frac{qU}{m}} = 4.38 \\cdot 10^{5}\\,\\text{m/s} \\\\ r &= \\frac{mv}{qB} = 4.57\\,\\text{cm} \\end{aligned}$$\n\nWhere is the error?",
+      "prompt": "A student calculates how large a circle a proton goes round when it has been accelerated from rest by a voltage of $2.0\\,\\text{kV}$ and then flies perpendicular to a magnetic field of $0.10\\,\\text{T}$. She writes\n\n$$\\begin{aligned} qU &= mv^2 v \\\\ &= \\sqrt{\\frac{qU}{m}} \\\\ &= 4.38 \\cdot 10^{5}\\,\\text{m/s} r \\\\ &= \\frac{mv}{qB} \\\\ &= 4.57\\,\\text{cm} \\end{aligned}$$\n\nWhere is the error?",
       "choices": [
         {
           "text": "The kinetic energy is $\\tfrac{1}{2}mv^2$, so the correct speed is $6.19 \\cdot 10^{5}\\,\\text{m/s}$ and the radius $6.46\\,\\text{cm}$.",

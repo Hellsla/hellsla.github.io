@@ -408,7 +408,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Extension: find the error",
-      "prompt": "The intensity of the unpolarised light of a lamp is $200\\,\\text{W/m}^2$. The light passes through two polarisers, and the angle between their transmission axes is $60^\\circ$. A student writes: \"According to Malus's law $$\\begin{aligned} I &= I_0 \\cos^2 60^\\circ \\\\ &= 200\\,\\text{W/m}^2 \\cdot 0.25 \\\\ &= 50\\,\\text{W/m}^2 \\end{aligned}$$.\" Where is the error?",
+      "prompt": "The intensity of the unpolarised light of a lamp is $200\\,\\text{W/m}^2$. The light passes through two polarisers, and the angle between their transmission axes is $60^\\circ$. A student writes: \"According to Malus's law $I = I_0 \\cos^2 60^\\circ = 200\\,\\text{W/m}^2 \\cdot 0.25 = 50\\,\\text{W/m}^2$.\" Where is the error?",
       "choices": [
         {
           "text": "The first polariser halves unpolarised light, so the correct result is $25\\,\\text{W/m}^2$.",
