@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: a158a19c96763680
+CONTENT-HASH: ad3d0693f1748ce9
 ## Blocking
 
 ## Polish
-- inquiry.json:122 — correct-option feedback says the momentum changes from $mv$ to zero "in any case"; the theory now adds the caveat (same initial and final velocity; an unbelted passenger may keep moving). The feedback itself sets the dashboard scenario, so this is C; optionally add "when the passenger stops".
+- lesson.md:165 — "Lepokitka voi olla suurempi kuin liukukitka" is right (the greatest static friction, μ₀N, exceeds μN for tyre on road); optionally say "suurin lepokitka (lähtökitka)" so a reader does not take any static friction to exceed sliding friction. C, not a finding.
 
 ## Checked
-- New heading and paragraph: same mass, same initial and final velocity ⇒ same $\Delta p$ — correct, condition now stated (B from earlier wording resolved).
-- Windscreen caveat is physically correct and does not contradict the figure (unbelted passenger stops at 0,090–0,100 s on the interior).
-- Misconception paragraph and summary carry the same condition in the same words.
-- Numbers unchanged: $75\,\text{kg} \cdot 13{,}9\,\text{m/s} \approx 1040\,\text{kg·m/s}$; $\approx 10\,\text{kN}$ over 0,10 s, $\approx 100\,\text{kN}$ over 0,010 s.
-- Inquiry options/feedback (ball catch, belt prediction, explain model answer at 611) consistent with the qualified claim.
+- batch delta review: the one changed sentence replaces "liikekitka" with "liukukitka" per the friction guardrail (P8); the physics (rolling tyre surface does not slip, so static friction acts; ABS keeps wheels rolling and the car steerable) is unchanged and correct; no other "liikekitka" remains in the fi-easy lesson; no numbers, symbols, options or feedback changed, so the previous PASS on the rest stands.

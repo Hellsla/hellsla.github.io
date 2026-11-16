@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "contribution": "Weight $G = mg$ and friction enter the free-body diagram as forces of their own: static friction adapts to the situation up to the upper limit $\\mu_0 N$, kinetic friction is $\\mu N$, and on an inclined plane the components of the weight $mg\\sin\\alpha$ and $mg\\cos\\alpha$ (dashed) give the normal force, the friction and the acceleration; the coefficient of friction is determined experimentally from the limiting angle and with a spring balance, and friction can point in the direction of motion.",
+  "contribution": "Weight $G = mg$ and friction enter the free-body diagram as forces of their own: static friction adapts to the situation up to the upper limit $\\mu_0 N$, sliding friction is $\\mu N$, and on an inclined plane the components of the weight $mg\\sin\\alpha$ and $mg\\cos\\alpha$ (dashed) give the normal force, the friction and the acceleration; the coefficient of friction is determined experimentally from the limiting angle and with a spring balance, and friction can point in the direction of motion.",
   "learn": [
-    "distinguish static friction from kinetic friction and calculate the friction force using the coefficient of friction.",
+    "distinguish static friction from sliding friction and calculate the friction force using the coefficient of friction.",
     "draw the free-body diagram of an object on an inclined plane and write its equations of motion.",
     "determine the coefficient of friction experimentally."
   ],
@@ -83,11 +83,11 @@
         {
           "text": "Both accelerate equally.",
           "correct": true,
-          "feedback": "Correct. A larger component pulls the heavier box down the slope, but the normal force and the kinetic friction are larger in the same proportion. The net force is proportional to the mass, so the acceleration is the same. In the model values at $35^\\circ$ the acceleration is $3.22\\,\\text{m/s}^2$ for the masses $2.0$, $3.0$ and $4.0\\,\\text{kg}$."
+          "feedback": "Correct. A larger component pulls the heavier box down the slope, but the normal force and the sliding friction are larger in the same proportion. The net force is proportional to the mass, so the acceleration is the same. In the model values at $35^\\circ$ the acceleration is $3.22\\,\\text{m/s}^2$ for the masses $2.0$, $3.0$ and $4.0\\,\\text{kg}$."
         },
         {
           "text": "The heavy box, because a greater weight acts on it.",
-          "feedback": "The weight and its component along the slope are greater, but the kinetic friction $\\mu mg\\cos\\alpha$ also grows in the same proportion. In addition, a greater mass accelerates less for the same force. In the model values the acceleration is $3.22\\,\\text{m/s}^2$ for all masses."
+          "feedback": "The weight and its component along the slope are greater, but the sliding friction $\\mu mg\\cos\\alpha$ also grows in the same proportion. In addition, a greater mass accelerates less for the same force. In the model values the acceleration is $3.22\\,\\text{m/s}^2$ for all masses."
         },
         {
           "text": "The light box, because a greater friction acts on the heavy one.",
@@ -101,7 +101,7 @@
       "type": "sim",
       "text": "A box is on a plank whose slope you can change. Left: a snapshot and a graph of the friction force. Right: the free-body diagram of the box, to scale.",
       "howto": "Adjust the angle $\\alpha$ of the plank with the slider. Choose the *Mass* and the *Surfaces*. The free-body diagram and the readings update at once. If the box slides, press *Start* to see the sliding, and *Reset* to return the box to the start. The graph marks the friction force at every angle you have tried. The box *Show the components of the weight* shows the components as dashed lines. *Speed* slows down or speeds up the motion without changing the readings.",
-      "model": "The values are model values calculated by the simulation. The box is at rest at first. It stays in place if the static friction needed is at most $\\mu_0 N$; otherwise it slides, and kinetic friction $\\mu N$ acts on it. The coefficients of friction are model values: wood on wood $\\mu_0 = 0.50$ and $\\mu = 0.30$, plastic on wood $\\mu_0 = 0.30$ and $\\mu = 0.20$, rubber on wood $\\mu_0 = 0.80$ and $\\mu = 0.60$. Air drag is ignored. The blue arrow of the velocity is in the snapshot, not in the free-body diagram, because velocity is not a force.",
+      "model": "The values are model values calculated by the simulation. The box is at rest at first. It stays in place if the static friction needed is at most $\\mu_0 N$; otherwise it slides, and sliding friction $\\mu N$ acts on it. The coefficients of friction are model values: wood on wood $\\mu_0 = 0.50$ and $\\mu = 0.30$, plastic on wood $\\mu_0 = 0.30$ and $\\mu = 0.20$, rubber on wood $\\mu_0 = 0.80$ and $\\mu = 0.60$. Air drag is ignored. The blue arrow of the velocity is in the snapshot, not in the free-body diagram, because velocity is not a force.",
       "calc": "The components of the weight are $G_x = mg\\sin\\alpha$ down the slope and $G_y = mg\\cos\\alpha$ toward the surface, and $g = 9.81\\,\\text{m/s}^2$. In the direction perpendicular to the surface the box does not accelerate, so $N = mg\\cos\\alpha$. If $G_x \\le \\mu_0 N$, the box stays in place, the static friction is $F_\\mu = G_x$ and $a = 0$. Otherwise $F_\\mu = \\mu N$ and along the slope $G_x - F_\\mu = ma$, so $a = g(\\sin\\alpha - \\mu\\cos\\alpha)$."
     },
     {
@@ -240,7 +240,7 @@
         "The answer says that both the component along the slope and the friction are proportional to the mass, so the mass cancels.",
         "The answer uses the measurement results, for example the friction at two angles or the acceleration at two masses."
       ],
-      "model": "At rest the static friction acting on the box equals the component $G_x = mg\\sin\\alpha$ that pulls it down the slope, so it grows with the angle: in the model values $3.4\\,\\text{N}$ at $10^\\circ$ and $8.6\\,\\text{N}$ at $26^\\circ$. At the same time the normal force $N = mg\\cos\\alpha$ decreases, and with it the upper limit $\\mu_0 N$ of static friction. When $G_x$ exceeds the upper limit, at about $27^\\circ$, the box starts to slide, and the friction drops to the kinetic friction $\\mu N$, in the model values $5.2\\,\\text{N}$. Both $G_x$ and the friction are proportional to the mass, so the mass cancels, and at $35^\\circ$ the acceleration is $3.22\\,\\text{m/s}^2$ for all masses, which shows in the table of experiment 2. That the limiting angle does not depend on the mass follows from the condition $\\tan\\alpha_0 = \\mu_0$, which contains no mass; this was not measured."
+      "model": "At rest the static friction acting on the box equals the component $G_x = mg\\sin\\alpha$ that pulls it down the slope, so it grows with the angle: in the model values $3.4\\,\\text{N}$ at $10^\\circ$ and $8.6\\,\\text{N}$ at $26^\\circ$. At the same time the normal force $N = mg\\cos\\alpha$ decreases, and with it the upper limit $\\mu_0 N$ of static friction. When $G_x$ exceeds the upper limit, at about $27^\\circ$, the box starts to slide, and the friction drops to the sliding friction $\\mu N$, in the model values $5.2\\,\\text{N}$. Both $G_x$ and the friction are proportional to the mass, so the mass cancels, and at $35^\\circ$ the acceleration is $3.22\\,\\text{m/s}^2$ for all masses, which shows in the table of experiment 2. That the limiting angle does not depend on the mass follows from the condition $\\tan\\alpha_0 = \\mu_0$, which contains no mass; this was not measured."
     },
     {
       "id": "aineisto",
@@ -252,12 +252,12 @@
       "text": "Students pull a wooden block on a horizontal table with a spring balance, horizontally and at a constant velocity. They add weights on top of the block and record the reading of the balance.\n\n| $m$ (kg) | $0.50$ | $1.00$ | $1.50$ | $2.00$ |\n|---|---|---|---|---|\n| $F$ (N) | $1.7$ | $3.5$ | $5.1$ | $6.9$ |",
       "question": {
         "type": "numeric",
-        "prompt": "Determine the coefficient of kinetic friction $\\mu$ between the block and the table as the mean of the measurements.",
+        "prompt": "Determine the coefficient of sliding friction $\\mu$ between the block and the table as the mean of the measurements.",
         "answer": 0.3504,
         "unit": "",
         "tolerance": 0.03,
         "hints": [
-          "The block moves at a constant velocity, so the force of the balance equals the kinetic friction. What is the normal force on a horizontal table?",
+          "The block moves at a constant velocity, so the force of the balance equals the sliding friction. What is the normal force on a horizontal table?",
           "$N = mg$ and $\\mu = \\dfrac{F_\\mu}{N} = \\dfrac{F}{mg}$ for each row.",
           "For example from the first row $\\mu = \\dfrac{1.7\\,\\text{N}}{0.50\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2} \\approx 0.35$. Calculate all four and their mean."
         ],
@@ -267,7 +267,7 @@
             "feedback": "You divided the force by the mass. The coefficient of friction is the ratio of the friction force to the *normal force*, and the normal force is $N = mg$ in newtons."
           }
         ],
-        "solution": "**Given:** the masses in the table $0.50$–$2.00\\,\\text{kg}$ and the balance readings $1.7$–$6.9\\,\\text{N}$; the block moves horizontally at a constant velocity; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the coefficient of kinetic friction $\\mu$ (no unit)\n\n**Principle:** The block moves at a constant velocity, so the sum of the forces is zero: in the horizontal direction the force of the balance equals the kinetic friction and in the vertical direction the normal force equals the weight. The kinetic friction is $F_\\mu = \\mu N$.\n\n**Formula:** $F - \\mu N = 0$ and $N - mg = 0$, so $\\mu = \\dfrac{F}{mg}$\n\n**Conversions:** The masses are in kilograms and the forces in newtons, so no conversions are needed.\n\n**Substitution:** $\\mu_1 = \\dfrac{1.7\\,\\text{N}}{0.50\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2} = 0.347$, similarly $\\mu_2 = 0.357$, $\\mu_3 = 0.347$ and $\\mu_4 = 0.352$; the mean $\\mu = (0.347 + 0.357 + 0.347 + 0.352) : 4 = 0.350$\n\n**Answer:** $0.35$, two significant figures like the balance readings, for example $1.7\\,\\text{N}$.\n\n**Reasonableness:** All four ratios are close to each other, so the friction really is proportional to the normal force. When the mass becomes four times as great, the reading grows from $1.7\\,\\text{N}$ to $6.9\\,\\text{N}$, that is about four times as great. The coefficient of friction of wood on wood is typically $0.3$–$0.6$."
+        "solution": "**Given:** the masses in the table $0.50$–$2.00\\,\\text{kg}$ and the balance readings $1.7$–$6.9\\,\\text{N}$; the block moves horizontally at a constant velocity; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the coefficient of sliding friction $\\mu$ (no unit)\n\n**Principle:** The block moves at a constant velocity, so the sum of the forces is zero: in the horizontal direction the force of the balance equals the sliding friction and in the vertical direction the normal force equals the weight. The sliding friction is $F_\\mu = \\mu N$.\n\n**Formula:** $F - \\mu N = 0$ and $N - mg = 0$, so $\\mu = \\dfrac{F}{mg}$\n\n**Conversions:** The masses are in kilograms and the forces in newtons, so no conversions are needed.\n\n**Substitution:** $\\mu_1 = \\dfrac{1.7\\,\\text{N}}{0.50\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2} = 0.347$, similarly $\\mu_2 = 0.357$, $\\mu_3 = 0.347$ and $\\mu_4 = 0.352$; the mean $\\mu = (0.347 + 0.357 + 0.347 + 0.352) : 4 = 0.350$\n\n**Answer:** $0.35$, two significant figures like the balance readings, for example $1.7\\,\\text{N}$.\n\n**Reasonableness:** All four ratios are close to each other, so the friction really is proportional to the normal force. When the mass becomes four times as great, the reading grows from $1.7\\,\\text{N}$ to $6.9\\,\\text{N}$, that is about four times as great. The coefficient of friction of wood on wood is typically $0.3$–$0.6$."
       }
     },
     {
@@ -397,7 +397,7 @@
       "stage": "tarkista",
       "type": "choice",
       "title": "1. Concept",
-      "prompt": "A heavy cabinet is pushed on a horizontal floor with a horizontal force of $150\\,\\text{N}$, but it does not move. The greatest possible value of static friction in this situation is $400\\,\\text{N}$. How large is the friction force of the floor on the cabinet?",
+      "prompt": "A heavy cabinet is pushed on a horizontal floor with a horizontal force of $150\\,\\text{N}$, but it does not move. The maximum static friction in this situation is $400\\,\\text{N}$. How large is the friction force of the floor on the cabinet?",
       "choices": [
         {
           "text": "$150\\,\\text{N}$, against the push.",
@@ -420,7 +420,7 @@
       "type": "numeric",
       "title": "2. Calculation",
       "fbd": "equations",
-      "prompt": "A book is given a push on a tilted desktop, and it slides down at a constant velocity when the angle of the desktop is $17^\\circ$. How large is the coefficient of kinetic friction between the book and the desktop?",
+      "prompt": "A book is given a push on a tilted desktop, and it slides down at a constant velocity when the angle of the desktop is $17^\\circ$. How large is the coefficient of sliding friction between the book and the desktop?",
       "answer": 0.3057,
       "unit": "",
       "tolerance": 0.02,
@@ -439,7 +439,7 @@
           "feedback": "You calculated $\\cos 17^\\circ$. The friction must cancel the component along the slope $mg\\sin\\alpha$, and the normal force is $mg\\cos\\alpha$, so $\\mu = \\tan\\alpha$."
         }
       ],
-      "solution": "**Given:** the angle of the desktop $\\alpha = 17^\\circ$, the book slides down at a constant velocity\n\n**Find:** the coefficient of kinetic friction $\\mu$ (no unit)\n\n**Principle:** In uniform motion the acceleration is zero, so by Newton's second law the sum of the forces is zero in both directions. The book slides, so kinetic friction $F_\\mu = \\mu N$ acts on it.\n\n**Free-body diagram:** The book as a rectangle along the desktop, $x$ down along the desktop and $y$ perpendicular to the desktop, outward. The weight $\\overline{G}$ straight down and its components $mg\\sin\\alpha$ and $mg\\cos\\alpha$ dashed, the normal force $\\overline{N}$ perpendicular to the desktop, outward, and the kinetic friction $\\overline{F}_\\mu$ up along the desktop, because the book slides down.\n```voimakuvio\npinta -17\nG 9,81\nN 9,381\nF_mu 2,868 ylös\na 0\nakselit -17\nkomponentit G\n```\n\n**Formula:** $y$: $N - mg\\cos\\alpha = 0$ and $x$: $mg\\sin\\alpha - \\mu N = 0$, so $\\mu = \\dfrac{mg\\sin\\alpha}{mg\\cos\\alpha} = \\tan\\alpha$\n\n**Conversions:** The angle is in degrees; no other conversions are needed, and the mass cancels.\n\n**Substitution:** $\\mu = \\tan 17^\\circ = 0.3057$\n\n**Answer:** $0.31$, two significant figures like the angle $17^\\circ$.\n\n**Reasonableness:** The coefficient is positive and less than $1$, as is typical between a book and wood. A smaller angle would mean a smaller coefficient of friction: on ice a book would slide at a constant velocity already at a very gentle angle."
+      "solution": "**Given:** the angle of the desktop $\\alpha = 17^\\circ$, the book slides down at a constant velocity\n\n**Find:** the coefficient of sliding friction $\\mu$ (no unit)\n\n**Principle:** In uniform motion the acceleration is zero, so by Newton's second law the sum of the forces is zero in both directions. The book slides, so sliding friction $F_\\mu = \\mu N$ acts on it.\n\n**Free-body diagram:** The book as a rectangle along the desktop, $x$ down along the desktop and $y$ perpendicular to the desktop, outward. The weight $\\overline{G}$ straight down and its components $mg\\sin\\alpha$ and $mg\\cos\\alpha$ dashed, the normal force $\\overline{N}$ perpendicular to the desktop, outward, and the sliding friction $\\overline{F}_\\mu$ up along the desktop, because the book slides down.\n```voimakuvio\npinta -17\nG 9,81\nN 9,381\nF_mu 2,868 ylös\na 0\nakselit -17\nkomponentit G\n```\n\n**Formula:** $y$: $N - mg\\cos\\alpha = 0$ and $x$: $mg\\sin\\alpha - \\mu N = 0$, so $\\mu = \\dfrac{mg\\sin\\alpha}{mg\\cos\\alpha} = \\tan\\alpha$\n\n**Conversions:** The angle is in degrees; no other conversions are needed, and the mass cancels.\n\n**Substitution:** $\\mu = \\tan 17^\\circ = 0.3057$\n\n**Answer:** $0.31$, two significant figures like the angle $17^\\circ$.\n\n**Reasonableness:** The coefficient is positive and less than $1$, as is typical between a book and wood. A smaller angle would mean a smaller coefficient of friction: on ice a book would slide at a constant velocity already at a very gentle angle."
     },
     {
       "id": "check-3",
@@ -449,7 +449,7 @@
       "fbd": "draw",
       "draw": true,
       "model_figure": "fy4-6/malli-veto",
-      "prompt": "A box of mass $20\\,\\text{kg}$ is pulled by a rope up a $20^\\circ$ slope at a constant velocity. The rope is parallel to the slope, and the coefficient of kinetic friction between the box and the slope is $0.25$. Draw the free-body diagram of the box on paper: the box as a rectangle and every force from its point of application. Then write the equations of motion along the slope and perpendicular to it and calculate the tension of the rope.",
+      "prompt": "A box of mass $20\\,\\text{kg}$ is pulled by a rope up a $20^\\circ$ slope at a constant velocity. The rope is parallel to the slope, and the coefficient of sliding friction between the box and the slope is $0.25$. Draw the free-body diagram of the box on paper: the box as a rectangle and every force from its point of application. Then write the equations of motion along the slope and perpendicular to it and calculate the tension of the rope.",
       "criteria": [
         {
           "key": "fbd_object",
@@ -457,7 +457,7 @@
         },
         {
           "key": "fbd_forces",
-          "detail": "Four forces: the weight, the normal force of the slope, the kinetic friction and the tension of the rope. No extra force in the direction of motion."
+          "detail": "Four forces: the weight, the normal force of the slope, the sliding friction and the tension of the rope. No extra force in the direction of motion."
         },
         {
           "key": "fbd_directions",
@@ -476,7 +476,7 @@
           "detail": "$y$: $N - mg\\cos 20^\\circ = 0$ and $x$ up the slope: $T - mg\\sin 20^\\circ - \\mu N = 0$, so $T \\approx 113\\,\\text{N}$."
         }
       ],
-      "model": "The Earth, the slope and the rope act on the box. The weight $\\overline{G}$ points straight down from the center. The slope acts from the lower surface with two forces: the normal force $\\overline{N}$ points perpendicular to the surface, outward, and the kinetic friction $\\overline{F}_\\mu$ down the slope, because the box slides up. The tension $\\overline{T}$ of the rope points up the slope. The box moves at a constant velocity, so the net force is zero. When $x$ points up the slope and $y$ out of the surface: $y$: $N - mg\\cos 20^\\circ = 0$, so $N = 20\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot\\cos 20^\\circ \\approx 184\\,\\text{N}$ and $F_\\mu = \\mu N \\approx 46\\,\\text{N}$. $x$: $T - mg\\sin 20^\\circ - \\mu N = 0$, so $T = mg\\sin 20^\\circ + \\mu mg\\cos 20^\\circ \\approx 67\\,\\text{N} + 46\\,\\text{N} \\approx 113\\,\\text{N}$. The rope has to overcome both the component of the weight along the slope and the friction."
+      "model": "The Earth, the slope and the rope act on the box. The weight $\\overline{G}$ points straight down from the center. The slope acts from the lower surface with two forces: the normal force $\\overline{N}$ points perpendicular to the surface, outward, and the sliding friction $\\overline{F}_\\mu$ down the slope, because the box slides up. The tension $\\overline{T}$ of the rope points up the slope. The box moves at a constant velocity, so the net force is zero. When $x$ points up the slope and $y$ out of the surface: $y$: $N - mg\\cos 20^\\circ = 0$, so $N = 20\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot\\cos 20^\\circ \\approx 184\\,\\text{N}$ and $F_\\mu = \\mu N \\approx 46\\,\\text{N}$. $x$: $T - mg\\sin 20^\\circ - \\mu N = 0$, so $T = mg\\sin 20^\\circ + \\mu mg\\cos 20^\\circ \\approx 67\\,\\text{N} + 46\\,\\text{N} \\approx 113\\,\\text{N}$. The rope has to overcome both the component of the weight along the slope and the friction."
     },
     {
       "id": "lahtolippu",

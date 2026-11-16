@@ -1,13 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e9d67811e7221d2e
+CONTENT-HASH: a3452fa2bbc2dd2e
+
 ## Blocking
 
 ## Polish
-- inquiry.json:122 — correct-option feedback says the momentum changes from $mv$ to zero "in any case"; the theory now adds the caveat (same initial and final velocity; an unbelted passenger may keep moving). The feedback itself sets the dashboard scenario, so this is C; optionally add "when the passenger stops".
+- "the sliding friction of a sliding tyre" repeats "sliding"; "the friction of a sliding (locked) tyre" would read more smoothly. Not a physics issue.
 
 ## Checked
-- New heading and paragraph: same mass, same initial and final velocity ⇒ same $\Delta p$ — correct, condition now stated (B from earlier wording resolved).
-- Windscreen caveat is physically correct and does not contradict the figure (unbelted passenger stops at 0,090–0,100 s on the interior).
-- Misconception paragraph and summary carry the same condition in the same words.
-- Numbers unchanged: $75\,\text{kg} \cdot 13{,}9\,\text{m/s} \approx 1040\,\text{kg·m/s}$; $\approx 10\,\text{kN}$ over 0,10 s, $\approx 100\,\text{kN}$ over 0,010 s.
-- Inquiry options/feedback (ball catch, belt prediction, explain model answer at 611) consistent with the qualified claim.
+batch delta review: lesson.md l.166 "kinetic friction" -> "sliding friction" (guardrail Friction, P8). The claim is still right: a rolling tyre's contact patch does not slide, so static friction acts, and its fully developed value can be greater than the sliding friction of a locked wheel. The term matches the exercise set ("coefficient of sliding friction"). No "kinetic friction" or "liikekitka" is left in the English lesson. No numbers, symbols or choices changed. Hash the same at start and end.

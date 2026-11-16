@@ -60,7 +60,7 @@ fy4-5	424	\phantom{N} = 12\,\text{kg}\cdot 9{,}81\,\text{m/s}^2	\phantom{N} = 12
 fy4-5	424	\ - 80\,\text{N}\cdot\sin 35^\circ	\ - 80\,\text{N}\cdot\sin 35^\circ					
 fy4-5	424	\phantom{N} \approx 71{,}8\,\text{N}	\phantom{N} \approx 71.8\,\text{N}					
 fy4-6	303	G = mg	G = mg	kappaleeseen vaikuttava painovoima Maan pinnalla	weight of a body at the Earth's surface	MAFY	Mekaniikan kaavoja	MAFY vektorina; vektorimerkintä jätetään pois (opettaja 2026-11-12)
-fy4-6	309	F_\mu = \mu N	F_\mu = \mu N	liukukitka	kinetic friction	MAFY	Mekaniikan kaavoja	tunnin teksti: liikekitka
+fy4-6	309	F_\mu = \mu N	F_\mu = \mu N	liukukitka	sliding friction	MAFY	Mekaniikan kaavoja	tunnin teksti: liukukitka
 fy4-6	313	F_{\mu 0} \le \mu_0 N	F_{\mu 0} \le \mu_0 N					
 fy4-6	317	F_{\mu 0} = \mu_0 N	F_{\mu 0} = \mu_0 N	lähtökitka, eli täysin kehittynyt lepokitka	limiting static friction	MAFY	Mekaniikan kaavoja	opettaja 2026-11-13: MAFYn yhtälö lisätty epäyhtälön F_μ0 ≤ μ0N viereen
 fy4-6	323	G_x = G\sin\alpha	G_x = G\sin\alpha					

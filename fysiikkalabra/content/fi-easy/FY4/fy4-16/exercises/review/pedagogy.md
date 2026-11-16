@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a514089c83370aaa
+CONTENT-HASH: 92fbde3992f971c6
 
 ## Blocking
-None. Solutions use the new symbols consistently; steps and answers unchanged.
+None.
 
 ## Polish
 None.
 
 ## Checked
-Read the changed text and the surrounding formula section, worked example, solutions and inquiry for the MAFY symbols; grep found no leftover old symbol (F_parallel, W_kok, W_muut, E_k,1, E_mek,1) in this language.
+- Diff is a term change liikekitka -> liukukitka in texts and solutions, matching the lesson's glossary term; numbers, answers and steps unchanged.
+- grep finds no leftover "liikekitka" in exercises.json or solutions.md.
+- Voimakuvio descriptions in solutions use the same term; the force diagram still comes before the equation.
+- figures.json changes are caption wording only; the figure descriptions give no answers.
+- "Taulukko on esimerkkiaineisto" in the task texts still marks invented data, as the lesson intends.

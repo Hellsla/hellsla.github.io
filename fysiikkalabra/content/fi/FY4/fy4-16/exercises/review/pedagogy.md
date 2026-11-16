@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5583281d5053c519
+CONTENT-HASH: 300f0acc09180cf2
 
 ## Blocking
-None. Solutions use the new symbols consistently; steps and answers unchanged.
+None. The diff is a terminology change (liikekitka to liukukitka) with no number, symbol or unit touched. It matches the house rule on sliding friction.
 
 ## Polish
 None.
 
 ## Checked
-Read the changed text and the surrounding formula section, worked example, solutions and inquiry for the MAFY symbols; grep found no leftover old symbol (F_parallel, W_kok, W_muut, E_k,1, E_mek,1) in this language.
+- Read the whole diff in exercises.json and solutions.md: L1-04, L1-05, L1-08, L2-02, L2-06, L2-07, L3-01 and the matching solution text.
+- Grep: no "liikekitka" is left in either file, so the term is the same in tasks, "Kysytty" lines and solutions.
+- Grammar holds after the change (liukukitkakerroin, liukukitkavoima, "oikea liukukitkavoima", "liukukitkakertoimeksi").
+- L1-08 still asks for the force diagram and the error analysis, and the answer is unchanged.
+- The tasks do not give the answer away, and the solution steps are unchanged.
+- The hash was the same at the start and the end.
