@@ -1,17 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: edbc5d57c6709a2b
+VERDICT: FAIL
+CONTENT-HASH: 6048e1bfb9aa68ef
 
 ## Blocking
+- [Major] fy8-12-L2-08 solution, Sijoitus (capture fy8-12-open-exercises-L2-1280-12) — the comparisons are set as display boxes in mid-sentence: "…energia 10 eV on tähän verrattuna [box] -kertainen. Gammafotonin … on [box] -kertainen" — the sentence is torn, the suffix "-kertainen" starts a line alone, hard to read — write the ratio inline (`$\dfrac{10\,\text{eV}}{1{,}448 \cdot 10^{-5}\,\text{eV}} = 6{,}9 \cdot 10^{5}$`-kertainen is the cause) or put the sentence first and the ratio as its own row: "Suhde on $\tfrac{10\,\text{eV}}{…} = 6{,}9 \cdot 10^{5}$."
 
 ## Polish
-- [Minor] exercises.json fy8-12-L3-05, first paragraph — the caption's marker is gone but the sentence still ends "(taulukko, esimerkkiaineisto)"; if the teacher's rule (no provenance marker on example data) is meant for the running text too, write "(taulukko)". Not a language error, so it does not block.
+- [Minor] fy8-12-L2-08 — `\text{Js}` instead of `\text{J}\,\text{s}` (chapter convention) in Annettu and Sijoitus.
+- [Minor] fy8-12-L2-08 — "24 tuntia vuorokaudessa" is a plain quantity; write $24\,\text{h}$ (task and solution).
+- [Minor] fy8-12-L2-08 — straight quotes "anti-5G" in solutions; use ”…”.
 
 ## Checked
-- Delta round 1 (wording, caption-label): "kilobecquereleina" → "kilobecquereleinä" twice in the task text and once in the solution's Kysytty. Hash edbc5d57c6709a2b at the start and at the end.
-- Opened fy8-12-open-exercises-L3-1280-7 (task 12-21 with its table): part c) and the last instruction both read "kilobecquereleinä"; the front-vowel ending is right for a word pronounced with front vowels only, and the answer box's unit kBq agrees. Situation first, question parts on their own rows, the instruction last.
-- Same capture: the table's caption is "GM-mittarin pulssit 60 s:n jaksoissa", no marker or stray bracket left; the table sits inside the card.
-- Opened fy8-12-open-exercises-L3-1280-8 (the solution): Kysytty reads "lähteen aktiivisuus A kilobecquereleinä"; Periaate, Kaava, Muunnokset and the aligned Sijoitus blocks are intact.
-- No figure, formula, number or unit changed.
+- Delta: added fy8-12-L2-08 (ANVS news). Captures fy8-12-open-exercises-L2-1280-11, -12, -13: Annettu to Järkevyys.
+- Chain rows aligned, µeV upright, decimal comma correct, Vastaus and Järkevyys clean, no clipping. Finnish fluent; claim and observation separated.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 3 · Finnish 4 · accessibility 5

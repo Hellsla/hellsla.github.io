@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 010cc9be0b649006
+CONTENT-HASH: 0a743d1f79e88e55
+SCOPE: delta added-exercise from 010cc9be0b649006 base 415cbc7c6bc3
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md fy8-9-L2-05 Vastaus — "ja puoliintumisaikaan se vaikuttaa jaettuna luvulla" is compressed; clearer: "Puoliintumisajan suhteellinen epätarkkuus saadaan jakamalla tämä luvulla $\ln 4{,}42 \approx 1{,}5$, eli se on noin $8\,\%$." Understandable as it is.
-- [Minor] for science: the $\pm 8\,\%$ estimate uses only the spread of the count $64$ (not that of $R_0 = 283$ or the background); confirm the simplification is acceptable.
+- [Minor] fy8-9-L2-08 task text — `*Elintarvikkeiden radioaktiiviset aineet*` shows literal asterisks (9-17 capture) — use quotation marks or plain text.
+- [Minor] fy8-9-L2-08 solution Vastaus — ASCII quotes "noin 30 a" render as straight quotes; use ”…”.
+- [Minor] fy8-9-L2-08 — years are plain text in the task (vuonna 1986) but maths in the solution ($1986$); make consistent.
 
 ## Checked
-- Hash at start and end 010cc9be0b649006; the captures' stamp shows the same hash.
-- fy8-9-open-exercises-L2-1280-6 (content/fi/FY8/fy8-9/review/shots/): task 9-14 (fy8-9-L2-05) solution open. The Vastaus sentence renders: answer box "149 s" set apart, "±8 %", "√64 = 8", 8/64 ≈ 13 %, "ln 4,42 ≈ 1,5" in KaTeX, decimal comma, nothing clipped; Sijoitus chain aligned, Järkevyys block intact.
-- Delta: the packet diff is empty; only this capture judged. No 390 px capture of the opened exercises exists; the 360 px layout check is the developer's.
+- Delta: added fy8-9-L2-08 (STUK data task with table). Captures fy8-9-open-exercises-L2-1280-10 (task and table), -11, -12 (all solution blocks).
+- Table fits the card, with caption, header units in LaTeX and no overflow; chain with exponent `40 a:30 a` readable; answer box and Järkevyys clean; Finnish fluent.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5
