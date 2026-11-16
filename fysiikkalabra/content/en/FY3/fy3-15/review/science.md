@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4813d28d443de144
+CONTENT-HASH: 8ca245f89f4d92ad
 
 ## Blocking
 
 ## Polish
 
-
 ## Checked
-batch delta review: "district heating is mainly used for heating" (lesson, common-mistake paragraph, explain model answer). The added uses (district cooling via absorption, industrial process heat), the seasonal demand and the ratio of electric to heat power depending on the plant type and demand are all correct. They replace the overgeneral "almost only electricity in summer" claim. No other text still says "only for heating". The 0.88/0.30/0.40 figures are unchanged.
+- Delta: lesson.md misconception sentence "part of the energy that would otherwise be transferred to the surroundings as waste heat can be used as district heating"; teacher-approved figures not judged.
+- Right, and per the guardrails (waste heat is energy transferred to the surroundings, not energy that "is left").
+- Paragraph's numbers unchanged: chain 0.92 · 0.46 · 0.945 = 0.40, mean 0.78, overall 88 %.
+- Same physics as fi and fi-easy; hash the same at start and end.

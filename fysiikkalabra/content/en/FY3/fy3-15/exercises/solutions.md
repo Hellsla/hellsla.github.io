@@ -11,7 +11,7 @@
 ## fy3-15-L1-02
 **Given:** power of the kinetic energy of the air flow $P_\text{wind} = 2.50\,\text{MW}$ and electric power $P_\text{elec} = 1.05\,\text{MW}$
 **Find:** the efficiency $\eta$ of the turbine as a percentage
-**Principle:** Efficiency is the share of the useful power in the power coming into the plant. Here the input power is the power of the kinetic energy of the air flowing through the rotor and the useful power is the power going to the electricity grid; the rest of the energy stays in the motion of the air or turns into heat.
+**Principle:** Efficiency is the share of the useful power in the power coming into the plant. Here the input power is the power of the kinetic energy of the air flowing through the rotor and the useful power is the power going to the electricity grid; the rest of the energy stays in the motion of the air or turns into internal energy, which is transferred to the surroundings as heat.
 **Formula:** $\eta = \dfrac{P_\text{elec}}{P_\text{wind}}$
 **Conversions:** Both powers are in megawatts, so the units cancel. The result is multiplied by a hundred to give a percentage.
 **Substitution:** $\eta = \dfrac{1.05\,\text{MW}}{2.50\,\text{MW}} = 0.420 = 42.0\,\%$
@@ -21,7 +21,7 @@
 ## fy3-15-L1-03
 **Given:** area $A = 20.0\,\text{m}^2$, radiation power per unit area $I = 1.00\,\tfrac{\text{kW}}{\text{m}^2}$, efficiency $\eta = 0.210$
 **Find:** the electric power $P$ of the panel in kilowatts
-**Principle:** The power of the radiation hitting the panel is the intensity times the area, and the efficiency tells what fraction of it turns into electricity. The rest turns into heat or is reflected, so the electric power is the $\eta$ fraction of the input power $P_\text{o} = IA$, the power of the radiation hitting the panel.
+**Principle:** The power of the radiation hitting the panel is the intensity times the area, and the efficiency tells what fraction of it turns into electricity. The rest is reflected or turns into internal energy of the panel, which is transferred to the surroundings as heat, so the electric power is the $\eta$ fraction of the input power $P_\text{o} = IA$, the power of the radiation hitting the panel.
 **Formula:** $P = \eta P_\text{o} = \eta I A$
 **Conversions:** The units go along with the numbers: $\tfrac{\text{kW}}{\text{m}^2} \cdot \text{m}^2 = \text{kW}$, so the result comes directly in kilowatts and no conversions are needed.
 **Substitution:** $P = 0.210 \cdot 1.00\,\tfrac{\text{kW}}{\text{m}^2} \cdot 20.0\,\text{m}^2 = 0.210 \cdot 20.0\,\text{kW} = 4.20\,\text{kW}$
@@ -36,7 +36,7 @@
 **Formula:** $P_\text{h} = P_\text{o} - P_\text{a}$, where $P_\text{o}$ is the input power coming into the step and $P_\text{a}$ the output power leaving it; in the steam cycle $P_\text{o} = P_1$ and $P_\text{a} = P_2$, so $P_\text{h} = P_1 - P_2$
 **Conversions:** Not needed: all powers are in megawatts.
 **Substitution:** $P_\text{h} = 350\,\text{MW} - 150\,\text{MW} = 200\,\text{MW}$
-**Answer:** The power decreases the most in the steam cycle, where $200\,\text{MW}$ is transferred to the surroundings as heat. The values are read from the gridlines as whole megawatts, so the result to three significant figures is $200\,\text{MW}$.
+**Answer:** The power decreases the most in the steam cycle, where $200\,\text{MW}$ is transferred to the surroundings as heat. The ends of the bars $P_1$ and $P_2$ lie exactly on gridlines, so the readings $350\,\text{MW}$ and $150\,\text{MW}$ are whole megawatts with three figures, and the result $200\,\text{MW}$ has three significant figures.
 **Reasonableness:** The losses of the steps add up to $50 + 200 + 10 = 260\,\text{MW} = P_\text{o} - P_3 = 400\,\text{MW} - 140\,\text{MW}$, so the balance works out. The efficiency of the steam cycle is $150 / 350 \approx 0.43$, which suits a steam cycle, and its loss is over $75\,\%$ of the waste heat of the whole plant.
 
 ## fy3-15-L1-05
@@ -181,12 +181,12 @@ The nearest option is $500\,\text{MW}$. Reasonableness: the result is about $42\
 ## fy3-15-L3-02
 **Given:** electrical energy $E = 36.0\,\text{GWh}$, efficiency $\eta = 0.380$ and heat of combustion of coal $H = 25.0\,\tfrac{\text{MJ}}{\text{kg}}$; given $1\,\text{GWh} = 3.60 \cdot 10^{12}\,\text{J}$
 **Find:** the mass $m$ of coal burned in a year, in kilotonnes
-**Principle:** Energy is conserved: the chemical energy $Q_1$ of the coal turns into electricity with efficiency $\eta$ and the rest into waste heat. The denominator of the efficiency is the bought fuel, and the energy of the fuel is the heat of combustion times the mass.
+**Principle:** Energy is conserved: the chemical energy $Q_1$ of the coal turns into electricity with efficiency $\eta$, and the rest is transferred to the surroundings as waste heat. The denominator of the efficiency is the bought fuel, and the energy of the fuel is the heat of combustion times the mass.
 **Formula:** $E = \eta Q_1$ and $Q_1 = H m$, so $m = \dfrac{E}{\eta H}$
 **Conversions:** $E = 36.0 \cdot 3.60 \cdot 10^{12}\,\text{J} = 1.296 \cdot 10^{14}\,\text{J}$ and $H = 25.0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. At the end $1\,\text{kt} = 10^6\,\text{kg}$.
 **Substitution:** $m = \dfrac{1.296 \cdot 10^{14}\,\text{J}}{0.380 \cdot 25.0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 1.3642 \cdot 10^7\,\text{kg} = 13.642\,\text{kt}$
 **Answer:** $13.6\,\text{kt}$, three significant figures, because the electrical energy $36.0\,\text{GWh}$, the efficiency $0.380$, the heat of combustion $25.0\,\tfrac{\text{MJ}}{\text{kg}}$ and the conversion factor $3.60 \cdot 10^{12}\,\text{J}/\text{GWh}$ all have three figures.
-**Reasonableness:** Estimate: $\tfrac{1.3 \cdot 10^{14}\,\text{J}}{0.4 \cdot 2.5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1.3 \cdot 10^7\,\text{kg}$. The amount corresponds to about 270 wagonloads of coal, when a wagon holds $50\,\text{t}$. The efficiencies cannot be compared directly: in a coal power plant the denominator is bought fuel, which gets used up: about $38\,\%$ of its energy turns into electricity and the rest into waste heat, and burning produces emissions, but the energy of the wind is not a store that gets used up. The efficiency of a wind farm only tells what fraction of the kinetic energy of the air flowing through the rotors is turned into electricity.
+**Reasonableness:** Estimate: $\tfrac{1.3 \cdot 10^{14}\,\text{J}}{0.4 \cdot 2.5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1.3 \cdot 10^7\,\text{kg}$. The amount corresponds to about 270 wagonloads of coal, when a wagon holds $50\,\text{t}$. The efficiencies cannot be compared directly: in a coal power plant the denominator is bought fuel, which gets used up: about $38\,\%$ of its energy turns into electricity and the rest is transferred to the surroundings as waste heat, and burning produces emissions, but the energy of the wind is not a store that gets used up. The efficiency of a wind farm only tells what fraction of the kinetic energy of the air flowing through the rotors is turned into electricity.
 
 ## fy3-15-L3-03
 **Given:** heating need $Q_1 = 100\,\text{kWh}$, coefficient of performance $\varepsilon = 3.00$, efficiency of the power plant $\eta_\text{plant} = 0.400$ and share left after transmission $\eta_\text{transm} = 0.950$
@@ -218,7 +218,7 @@ The nearest option is $500\,\text{MW}$. Reasonableness: the result is about $42\
 **Substitution:** The sum of the rises is $10.9 + 10.7 + 10.6 + 10.9 = 43.1\,\text{K}$, so $\Delta T_\text{avg} = 10.775\,\text{K}$. Then
 $P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10.775\,\text{K} = 1.7156 \cdot 10^{9}\,\text{W} = 1716\,\text{MW}$
 **Answer:** $1720\,\text{MW}$, three significant figures like the water flow and the rise in temperature.
-**Reasonableness:** Estimate: $4000 \cdot 4 \cdot 10^4 \cdot 11\,\text{W} \approx 1.8 \cdot 10^9\,\text{W}$. The waste heat power is $P_\text{h} = 2700\,\text{MW} - 900\,\text{MW} = 1800\,\text{MW}$, and the condenser's share of it is $\tfrac{1716}{1800} = 95\,\%$; the rest, about $84\,\text{MW}$, goes into the air, for example as losses of the generator and the transformer. Less heat is transferred to the sea water than the waste heat, as it should be. After the condenser the water is only about $11\,\text{K}$ warmer than the surroundings, so it can no longer be used to produce electricity, but the energy has not disappeared: it warms the sea. In July the water leaves at a temperature of $28.4\,{}^\circ\text{C}$, so the sea is warmer in the discharge area than elsewhere, and conditions for aquatic life may worsen.
+**Reasonableness:** Estimate: $4000 \cdot 4 \cdot 10^4 \cdot 11\,\text{W} \approx 1.8 \cdot 10^9\,\text{W}$. The waste heat power is $P_\text{h} = 2700\,\text{MW} - 900\,\text{MW} = 1800\,\text{MW}$, and the condenser's share of it is $\tfrac{1716}{1800} = 95\,\%$; the rest, about $84\,\text{MW}$, goes into the air, for example as losses of the generator and the transformer. Less heat is transferred to the sea water than the waste heat, as it should be. After the condenser the water is only about $11\,\text{K}$ warmer than the surroundings, so in practice it can no longer be used to produce electricity: with so small a temperature difference the largest possible efficiency would be only a few per cent, but the energy has not disappeared: it warms the sea. In July the water leaves at a temperature of $28.4\,{}^\circ\text{C}$, so the sea is warmer in the discharge area than elsewhere, and conditions for aquatic life may worsen.
 
 ## fy3-15-L1-09
 **Given:** mass flow of the water $q_m = 80\,\text{kg/s}$, rise in temperature $\Delta T = 40\,\text{K}$; from the table (MAFY table, specific heat capacities, liquids, water) $c = 4.182\,\text{kJ/(kg}\cdot\text{K)}$
@@ -238,5 +238,5 @@ $P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfr
 **Formula:** $P_2 = \eta_2 P_1$, so $\eta_2 = \dfrac{P_2}{P_1}$
 **Conversions:** Both powers are in $\text{MW}$, so the unit cancels; the efficiency as a percentage is obtained by multiplying by one hundred.
 **Substitution:** $\eta_2 = \dfrac{150\,\text{MW}}{350\,\text{MW}} = 0.4286 = 42.86\,\%$
-**Answer:** $\eta_2 \approx 43\,\%$, two significant figures, because the values are read from a $50\,\text{MW}$ grid.
+**Answer:** $\eta_2 \approx 42.9\,\%$, three significant figures: the ends of the bars $P_1$ and $P_2$ lie exactly on gridlines, so the readings $350\,\text{MW}$ and $150\,\text{MW}$ are whole megawatts with three figures.
 **Reasonableness:** The efficiency is below $100\,\%$ and typical of a steam cycle. An independent check: the efficiency of the boiler is $350/400 = 0.875$ and that of the generator and transformer $140/150 = 0.933$, so the efficiency of the whole chain is $0.875 \cdot 0.4286 \cdot 0.933 = 0.350 = 140/400$, which matches.

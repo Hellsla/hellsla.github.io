@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9cf120f0c0c90ba6
-ROUND: 2
+CONTENT-HASH: fbc2796c4aef5550
 
 ## Blocking
 (none)
@@ -9,7 +8,8 @@ ROUND: 2
 (none)
 
 ## Checked
-- Round 2, delta. Opened fy3-1-open-exercises-L2-1280-9 (L2-08 solution, graph task above unchanged). Round-1 polish items (repeated Kaava formula, 'suurempi kuin') are fixed; Kuvaajan lukeminen now gives g in m/s², matching the rule; aligned chains, thin spaces, decimal comma fine. Hash same at start and end.
+- Round 1, delta (oikoluvun korjaukset). Opened fy3-1-open-exercises-1280-2 (1-2, Järkevyys "venymä newtonia kohti"), -3 and -5 (1-5 Jupiter, "61 N ... täsmää suhteen 2,5 pyöristyksen tarkkuudella") and -6.
+- Fractions, thin spaces, decimal commas and answer box read well; nothing clipped. Hash same at start and end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

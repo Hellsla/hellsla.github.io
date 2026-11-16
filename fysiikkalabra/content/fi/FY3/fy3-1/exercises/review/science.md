@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9cf120f0c0c90ba6
-SCOPE: delta added-exercise from 0fe3461097d29d49 base c52e6381769f
+CONTENT-HASH: fbc2796c4aef5550
 
 ## Blocking
 
 ## Polish
+- solutions.md:19 (fy3-1-L1-02): the check's last product, $0{,}50 \cdot 12 = 6{,}0$, has no units. Consider writing $0{,}50\,\tfrac{\text{cm}}{\text{N}} \cdot 12\,\text{N} = 6{,}0\,\text{cm}$. This is style only.
 
 ## Checked
-- Figure generator: five points $(m, 5m)$, m = 2…10 kg, on the 2 kg / 10 N grid; the description lists the same points and gives neither $g$ nor the answer.
-- Recomputed: $g = 20/4 = 50/10 = 5{,}0\,\text{m/s}^2$, $G = 12 \cdot 5{,}0 = 60\,\text{N}$; answers.py gives 60.
-- The stated accepted range 58,2–61,8 N now equals the tolerance 0,03; $g$ is written in m/s² throughout (both earlier polish points fixed).
-- Model $G = mg$ with one $g$ for every body at one surface; the extrapolation to 12 kg, just past the data, is justified by proportionality, as the solution says. FY3 scope, no Newton's laws.
-- Unit N; two significant figures justified by 12 kg; the check (1,2 × 50 N) is a real check.
-- Solution complete: given, principle, reading the graph, formula in symbols, conversions, substitution with units, rounding, check.
-- Rest of the set unchanged since PASS (packet: added_exercises verified).
-- Hash same at start and end.
+- The delta is solutions.md:19 alone. "jousivakio" is now "venymä newtonia kohti", which is the right name for $x/F$ (cm/N). The old wording named a quantity that is not taught in FY3 and is the inverse of the spring constant, so the fix is correct.
+- Recomputed: $2{,}0\,\text{cm}/4{,}0\,\text{N} = 0{,}50\,\text{cm/N}$ and $0{,}50 \cdot 12 = 6{,}0\,\text{cm}$. This matches the answer and the ratio method of the solution.
+- The word "jousivakio" no longer appears anywhere in exercises.json or solutions.md. The FY3 scope holds (no Hooke's law constant k).
+- No number, symbol or other task changed. The previous report's checks still stand.
+- The hash was the same at the start and the end.

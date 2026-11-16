@@ -166,7 +166,7 @@
 **Kaava:** $F_\text{ka} = \dfrac{\text{mittausten summa}}{5}$, yhden vedon työ $W_1 = F_\text{ka}\, s$ ja kaikkien vetojen $\Delta U = nW_1$
 **Muunnokset:** Ei tarvita: voima on newtoneina ja matka metreinä, joten tulo on jouleina.
 **Sijoitus:** Mittausten summa on $4{,}1\,\text{N} + 4{,}3\,\text{N} + 4{,}2\,\text{N} + 4{,}0\,\text{N} + 4{,}4\,\text{N} = 21{,}0\,\text{N}$, joten $F_\text{ka} = \dfrac{21{,}0\,\text{N}}{5} = 4{,}20\,\text{N}$. Yhden vedon työ on $W_1 = 4{,}20\,\text{N} \cdot 0{,}600\,\text{m} = 2{,}52\,\text{J}$, joten $\Delta U = 20 \cdot 2{,}52\,\text{J} = 50{,}4\,\text{J}$
-**Vastaus:** $50{,}4\,\text{J}$, eli noin $50\,\text{J}$. Mittaukset on annettu kahdella merkitsevällä numerolla, ja ne vaihtelevat noin $\pm 0{,}2\,\text{N}$ ($\approx 5\,\%$). Siksi kahden merkitsevän numeron tulos on rehellinen. Oikea kasvu on todennäköisesti hieman pienempi. Lämmennyt palikka ja pöytä siirtävät osan lämmöstä ilmaan, jolloin $Q < 0$ ja $\Delta U = Q + W < W$.
+**Vastaus:** $50\,\text{J}$ (laskettu $50{,}4\,\text{J}$), kaksi merkitsevää numeroa. Voimamittaukset on annettu kahdella merkitsevällä numerolla, ja ne vaihtelevat noin $\pm 0{,}2\,\text{N}$ ($\approx 5\,\%$). Oikea kasvu on todennäköisesti hieman pienempi. Lämmennyt palikka ja pöytä siirtävät osan energiasta lämpönä ilmaan, jolloin $Q < 0$ ja $\Delta U = Q + W < W$.
 **Järkevyys:** Yhden vedon $2{,}52\,\text{J}$ on pieni. Siksi kitkan aiheuttama lämpeneminen on arjessa vaikea huomata. Mutta $20$ vedon $50{,}4\,\text{J}$ on jo selvästi mitattava. Tarkistus: $20 \cdot 0{,}600\,\text{m} = 12{,}0\,\text{m}$ vetomatkaa kerrottuna voimalla $4{,}20\,\text{N}$ antaa $50{,}4\,\text{J}$.
 
 ## fy3-5-L3-04

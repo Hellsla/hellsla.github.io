@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e406b191af20f91d
-Mode: delta
-Round: 2
+CONTENT-HASH: 2a0490285f2ef3cd
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] solutions.md fy3-1-L2-08 Kuvaajan lukeminen — range "58,2–61,8" is typed with a hyphen — use an en dash as in "58–62" elsewhere.
+None.
 
 ## Checked
-- fy3-1-open-exercises-L2-1280-8 and -9 (L2-08 task graph, solution: g in m/s², Kaava, Sijoitus rows, Järkevyys; round-1 wording fixes in place).
+- Delta (solutions.md: 1-2 "venymä newtonia kohti täsmää", 1-5 ratio 2,5 wording): open-exercises-1280-2 and -5 read at full size; 1-1 and the 1-4 graph solution in -1 and -4 for layout. Formulas aligned, units upright, järkevyys blocks readable, no clipping.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
