@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4d38135ea821fc70
+CONTENT-HASH: c22ab0cb6503d179
 
 ## Blocking
 
@@ -27,3 +27,4 @@ None.
 ## Checked (delta 2026-11-16)
 
 - Text/typography diff read in context: thin spaces only. No blocking finding.
+- Redo: `15\,{}^\circ\text{C}` fixes the KaTeX parse error; the text reads the same ("noin 15 °C"). No blocking finding.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 85386c40a3dc2ce8
+CONTENT-HASH: daea67607c8150ac
 
 ## Blocking
 
@@ -9,7 +9,6 @@ None.
 
 None.
 
-## Checked (delta 2026-11-16)
+## Checked (delta 2026-11-16, redone)
 
-- Read the diff against origin/main in context. Table headers now read "mittaus 1/2/3" instead of the bare "1.", clearer for a student. Thin spaces in the v0 sentence only.
-- Nothing a student needs was lost and no instruction became unclear; no figure changed.
+- Read the diff against origin/main in context. Table headers now read "mittaus 1/2/3" instead of the bare "1.", which is clearer. In the speed-of-sound formula note the thin spaces before units are added and "0 °C" is written `0\,{}^\circ\text{C}`, which fixes the formula so it displays and reads the same as before. No wording or instruction changed. No figure changed.
