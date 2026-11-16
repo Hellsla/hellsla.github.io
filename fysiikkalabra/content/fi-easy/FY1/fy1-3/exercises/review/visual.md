@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 490cd5ebb646e9f3
+CONTENT-HASH: b0ce2820365163de
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-3-L1-09 hint — "MAFY-taulukon taulukossa Veden tiheys …" still clumsy — "Arvo löytyy MAFY-taulukon kohdasta Veden tiheys eri lämpötiloissa."
-- [Minor] fy1-3-L1-09 Vastaus — the "(tarkemmin …)" sentence starts lowercase under the boxed answer; fine, but a full sentence would read better.
+- none
 
 ## Checked
-- Delta: fy1-3-L1-09 (3-9) at 1280 px, open-exercises parts 9 and 10: task (situation, then question as its own sentence), hint, lock, Annettu, two-row Kaava and Sijoitus chains aligned at "=", Vastaus box, split-out "Lisäksi: virhearvio" paragraph, Järkevyys. KaTeX clean, units upright, decimal commas, no clipping; the solution layout fixed in round 1 holds.
+- delta review 5d reflow, round 1: opened the 360 px captures (lesson 01, inquiry 02-04, solutions 05-15); nothing clipped or scrolling, rows break at sensible points, equals signs aligned
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

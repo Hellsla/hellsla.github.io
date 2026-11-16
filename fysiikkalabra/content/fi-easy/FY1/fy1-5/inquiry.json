@@ -82,7 +82,7 @@
         {
           "text": "$14\\,\\text{m}$.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: $s = 6{,}0\\,\\text{m} + 2{,}0\\,\\text{m/s} \\cdot 4{,}0\\,\\text{s} = 14\\,\\text{m}$. Matka kaksinkertaistui ($4{,}0\\,\\text{m}$:stä $8{,}0\\,\\text{m}$:iin), mutta paikka ei. Alkupaikka $6{,}0\\,\\text{m}$ pysyy mukana."
+          "feedback": "Mallin arvot tukevat tätä: $$\\begin{aligned} s &= 6{,}0\\,\\text{m} \\\\ &+ 2{,}0\\,\\text{m/s} \\cdot 4{,}0\\,\\text{s} \\\\ &= 14\\,\\text{m} \\end{aligned}$$. Matka kaksinkertaistui ($4{,}0\\,\\text{m}$:stä $8{,}0\\,\\text{m}$:iin), mutta paikka ei. Alkupaikka $6{,}0\\,\\text{m}$ pysyy mukana."
         },
         {
           "text": "$12\\,\\text{m}$, koska nopeus on $2{,}0\\,\\text{m/s}$ ja paikka kasvaa siis $2{,}0\\,\\text{m}$.",
@@ -201,7 +201,7 @@
           {
             "text": "Matka $\\Delta s$: osamäärä $\\Delta s : t$ on joka rivillä sama, $2{,}0\\,\\text{m/s}$.",
             "correct": true,
-            "feedback": "Oikein. Esimerkiksi $4{,}0\\,\\text{m} : 2{,}0\\,\\text{s} = 8{,}0\\,\\text{m} : 4{,}0\\,\\text{s} = 2{,}0\\,\\text{m/s}$. Paikan osamäärä $s : t$ muuttuu ($10 : 2{,}0 = 5{,}0$, mutta $14 : 4{,}0 = 3{,}5$). Siksi paikka ei ole suoraan verrannollinen aikaan."
+            "feedback": "Oikein. Esimerkiksi $$\\begin{aligned} &4{,}0\\,\\text{m} : 2{,}0\\,\\text{s} \\\\ &= 8{,}0\\,\\text{m} : 4{,}0\\,\\text{s} \\\\ &= 2{,}0\\,\\text{m/s} \\end{aligned}$$. Paikan osamäärä $s : t$ muuttuu ($10 : 2{,}0 = 5{,}0$, mutta $14 : 4{,}0 = 3{,}5$). Siksi paikka ei ole suoraan verrannollinen aikaan."
           },
           {
             "text": "Paikka $s$, koska se on kuvaajan pystyakselilla.",
@@ -269,7 +269,7 @@
       "prompt": "Opiskelija ratkaisee tehtävän. Kärry on alussa kohdassa $s_0 = 5{,}0\\,\\text{m}$ ja liikkuu nopeudella $3{,}0\\,\\text{m/s}$. Missä se on hetkellä $t = 6{,}0\\,\\text{s}$? Opiskelija laskee: ”Hetkellä $2{,}0\\,\\text{s}$ paikka on $5{,}0\\,\\text{m} + 3{,}0\\,\\text{m/s} \\cdot 2{,}0\\,\\text{s} = 11\\,\\text{m}$. Aika $6{,}0\\,\\text{s}$ on kolminkertainen, joten paikka on $3 \\cdot 11\\,\\text{m} = 33\\,\\text{m}$.” Missä on virhe?",
       "choices": [
         {
-          "text": "Paikka ei ole suoraan verrannollinen aikaan, koska alkupaikka ei ole nolla. Oikea tulos on $s = 5{,}0\\,\\text{m} + 3{,}0\\,\\text{m/s} \\cdot 6{,}0\\,\\text{s} = 23\\,\\text{m}$.",
+          "text": "Paikka ei ole suoraan verrannollinen aikaan, koska alkupaikka ei ole nolla. Oikea tulos on $$\\begin{aligned} s &= 5{,}0\\,\\text{m} \\\\ &+ 3{,}0\\,\\text{m/s} \\cdot 6{,}0\\,\\text{s} \\\\ &= 23\\,\\text{m} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Oikein. Vain matka $\\Delta s = vt$ kolminkertaistuu ($6{,}0\\,\\text{m}$:stä $18\\,\\text{m}$:iin). Alkupaikka lisätään vain kerran: $5{,}0\\,\\text{m} + 18\\,\\text{m} = 23\\,\\text{m}$. Virheen olisi voinut huomata järkeilemällä. Kärry ei voi olla kohdassa $33\\,\\text{m}$, koska se lähtee kohdasta $5{,}0\\,\\text{m}$ ja kulkee $6{,}0\\,\\text{s}$:ssa vain $18\\,\\text{m}$."
         },

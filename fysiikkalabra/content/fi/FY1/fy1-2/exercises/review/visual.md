@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2afc0aba92faf652
+CONTENT-HASH: d28a369571b20a91
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: 2afc0aba92faf652
 - none
 
 ## Checked
-- fy1-2-open-exercises-1280-9 and -10 (fresh, stamp exercises 2afc0aba92faf652): task 2-10 with its solution open. Answer chip "t ≈ 1,28 s", Sijoitus rows (= 1,282 s, ≈ 1,28 s, aligned at the operators), Vastaus box and the new significant-figure paragraph all agree on three figures; Järkevyys intact. Decimal comma, upright LaTeX units, nothing clipped. The new reasoning sentence reads fluently ("keskipisteestä keskipisteeseen"). Delta covers only this task; the rest of the page is unchanged.
+delta 5d reflow, round 1: opened contact sheet of all fi/fy1-2 captures at 360 px (captures 01,05,08-15); no clipping, equals signs aligned, rows break outside numbers and units.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

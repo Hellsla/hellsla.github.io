@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7e7531b4f666d267
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: c09b0e392c0c5fd6
 
 ## Blocking
 - none
 
 ## Polish
-- fy1-5 figure: the two lines are told apart by colour and the end labels; the alt text does not name colours, so nothing to change.
+- none
 
 ## Checked
-- lesson.md (table header units \text, one wording), inquiry.json (feedback wording, units in \text{}); no figures.py change
-- Changes mirror the Finnish fix in fi; no notation, unit or decimal-comma error introduced.
+delta 5d reflow, round 1: opened contact sheet of all fi/fy1-4 captures at 360 px (captures 01,02); no clipping, equals signs aligned, rows break outside numbers and units.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

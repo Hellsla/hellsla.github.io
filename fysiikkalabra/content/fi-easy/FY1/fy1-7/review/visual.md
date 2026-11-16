@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4acefd1011b47ee8
+CONTENT-HASH: 88947e71f82d60a3
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: 4acefd1011b47ee8
 - none
 
 ## Checked
-- batch delta review (fi-easy): same feedback sentence fixed ('noin 2,7 kertaa niin tiheää kuin vesi'); no figure changed. No capture opened, text-only change.
+- delta review 5d reflow, round 1: opened the 360 px captures (inquiry 01-06, 12-13, solutions 07-11); nothing clipped or scrolling, rows break at sensible points, equals signs aligned
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
