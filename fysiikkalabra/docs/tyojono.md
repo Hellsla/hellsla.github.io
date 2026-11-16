@@ -260,16 +260,6 @@ sitten sijoitus. Korjataan kurssi kerrallaan `/exercises`- ja `/practice`-putkel
 scope-säännön mukaan); järjestys kuten kohta 2. Ei rinnakkain saman kurssin tehtäväkatselmoinnin kanssa: yhdistetään
 samaan ketjuun, kun kurssin katselmointi on vielä kesken (FY5, FY6, FY7).
 
-## 8i. FY2: energialajit taulukoksi (opettaja 2026-11-13)
-
-Varattu: claude/fy2-energialajit-taulukko
-
-fy2-1:n "Seitsemän energialajia" on luettelo pitkiä kohtia; opettaja: "tässäkin toimisi taulukko" (CLAUDE.md: "A table
-when the content is a table"). Taulukko, esim. sarakkeet Energialaji (ja tunnus) | Mihin liittyy | Esimerkki;
-käsitekorttien alleviivaukset säilyvät. Lämpöenergian kohdan selitys lämmön ja lämpöenergian erosta ei mahdu soluun:
-se jää taulukon alle omaksi kappaleekseen. Kaikki kielet (fi, en, fi-easy). Sisältömuutos: katselmoinnit
-`reviews.py scope fy2-1` mukaan (opettaja pyysi muutosta itse). Pieni oma PR.
-
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
 
 fy4-1:n Pohdinnassa ilmiö on pyöräilijän matka kauppaan ja takaisin (matkamittari 4,0 km, siirtymä 0 m) ja kysymys
