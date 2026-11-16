@@ -1,5 +1,5 @@
 # Packet: FY6-sovella (Sovella itsenäisesti, fi)
-Role: **visual** (`.claude/agents/visual-editorial-reviewer.md`). Mode: **full**. Content hash now: `a34f3aab0e6c03cc`.
+Role: **visual** (`.claude/agents/visual-editorial-reviewer.md`). Mode: **full**. Content hash now: `d77d42d66a61045f`.
 House rules: `CLAUDE.md` (in your context). This is not a lesson: no inquiry stages, no exercises; judge the page as the Sovella itsenäisesti it is (an investigation: the student's working instructions by working mode, the figures and set-up sketches, the data tables and graphs, the teacher's notes; a guide: the screenshots of the software are the school's own and are judged for legibility and fit, not redrawn).
 
 ## Your standard (docs/EDITORIAL_QUALITY_STANDARD.md: severity and dimensions 7–10)
@@ -132,7 +132,7 @@ whitespace anywhere.
 - Every display formula fits a 360 px phone: about 25 characters per row, one `=` step per row. In `aligned`
   the columns add up, so a long left side goes alone on its own row and the `= …` parts follow in one
   left-aligned column (`\begin{aligned} &a \\ &= b \\ &\approx c \end{aligned}`). `check_lesson.py` measures it.
-- Markdown tables scroll sideways on a phone by design; keep header cells short.
+- No table scrolls sideways at any width (teacher 2026-11-08): cells wrap, long words in a Finnish table break at soft hyphens (`scripts/tablefit.py`), and `check_layout.py` fails a table wider than its box. Keep header cells short and put a long row of readings in a column (a vertical table), not in nine columns.
 
 - **Figures.** At least one inline SVG in `## Ydinajatus` and one in `## Kaava: <law>`, right after the paragraph,
   table or list it explains (the page sets it beside that block on a wide screen): the micro model, a setup sketch,
@@ -414,7 +414,7 @@ whitespace anywhere.
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$U_\\text{L} = 12{,}0\\,\\text{V} - 0{,}80\\,\\Omega \\cdot 2{,}5\\,\\text{A} = 10{,}0\\,\\text{V}$ ja $P_\\text{A} = \\dfrac{(10{,}0\\,\\text{V})^2}{6{,}0\\,\\Omega} = 16{,}7\\,\\text{W}$."
+              "detail": "$$\\begin{aligned} U_\\text{L} &= 12{,}0\\,\\text{V} - 0{,}80\\,\\Omega \\cdot 2{,}5\\,\\text{A} \\\\ &= 10{,}0\\,\\text{V} \\end{aligned}$$ ja $P_\\text{A} = \\dfrac{(10{,}0\\,\\text{V})^2}{6{,}0\\,\\Omega} = 16{,}7\\,\\text{W}$."
             },
             {
               "key": "reasonableness",
@@ -557,7 +557,7 @@ whitespace anywhere.
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$qU = 6{,}0 \\cdot 10^{-13}\\,\\text{C} \\cdot 6{,}0 \\cdot 10^{4}\\,\\text{V} = 3{,}6 \\cdot 10^{-8}\\,\\text{J}$ ja $v = \\sqrt{\\dfrac{2 \\cdot 3{,}6 \\cdot 10^{-8}\\,\\text{J}}{4{,}0 \\cdot 10^{-10}\\,\\text{kg}}}$."
+              "detail": "$$\\begin{aligned} qU &= 6{,}0 \\cdot 10^{-13}\\,\\text{C} \\cdot 6{,}0 \\cdot 10^{4}\\,\\text{V} \\\\ &= 3{,}6 \\cdot 10^{-8}\\,\\text{J} \\end{aligned}$$ ja $v = \\sqrt{\\dfrac{2 \\cdot 3{,}6 \\cdot 10^{-8}\\,\\text{J}}{4{,}0 \\cdot 10^{-10}\\,\\text{kg}}}$."
             },
             {
               "key": "units_precision",
@@ -613,7 +613,7 @@ whitespace anywhere.
             {
               "key": "calculation",
               "points": 1,
-              "detail": "Muunnos $1{,}0\\,\\text{mm} = 1{,}0 \\cdot 10^{-3}\\,\\text{m}$; $F = 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2} \\cdot \\dfrac{(6{,}0 \\cdot 10^{-13}\\,\\text{C})^2}{(1{,}0 \\cdot 10^{-3}\\,\\text{m})^2}$."
+              "detail": "Muunnos $1{,}0\\,\\text{mm} = 1{,}0 \\cdot 10^{-3}\\,\\text{m}$; $$\\begin{aligned} F &= 8{,}988 \\cdot 10^{9}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{C}^2} \\\\ &\\cdot \\dfrac{(6{,}0 \\cdot 10^{-13}\\,\\text{C})^2}{(1{,}0 \\cdot 10^{-3}\\,\\text{m})^2} \\end{aligned}$$."
             },
             {
               "key": "units_precision",
@@ -675,11 +675,20 @@ whitespace anywhere.
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri energia siirtyi salamaan? Kuinka suuri osa varastoidusta energiasta tämä on, ja miksi osuus on suurempi kuin jännitteen pieneneminen?",
-          "answer": {
-            "value": 6.86,
-            "unit": "J",
-            "tolerance": 0.03
-          },
+          "answer": [
+            {
+              "name": "E",
+              "value": 6.86,
+              "unit": "J",
+              "tolerance": 0.03
+            },
+            {
+              "name": "share",
+              "value": 46.2,
+              "unit": "%",
+              "tolerance": 0.03
+            }
+          ],
           "criteria": [
             {
               "text": "Päättelee, että salamaan siirtynyt energia on kondensaattorin energian muutos: energiat lasketaan erikseen ennen ja jälkeen eikä jännitteen muutoksella $\\Delta U$ yksin.",
@@ -694,7 +703,7 @@ whitespace anywhere.
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$E_2 = \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 = 7{,}99\\,\\text{J}$ ja $\\Delta E = 14{,}85\\,\\text{J} - 7{,}99\\,\\text{J} = 6{,}9\\,\\text{J}$."
+              "detail": "$$\\begin{aligned} E_2 &= \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 \\\\ &= 7{,}99\\,\\text{J} \\end{aligned}$$ ja $\\Delta E = 14{,}85\\,\\text{J} - 7{,}99\\,\\text{J} = 6{,}9\\,\\text{J}$."
             },
             {
               "key": "reasonableness",
@@ -722,7 +731,7 @@ whitespace anywhere.
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\Delta Q = 330 \\cdot 10^{-6}\\,\\text{F} \\cdot 80\\,\\text{V} = 0{,}0264\\,\\text{C}$ ja $\\Delta t = 1{,}0 \\cdot 10^{-3}\\,\\text{s}$."
+              "detail": "$$\\begin{aligned} \\Delta Q &= 330 \\cdot 10^{-6}\\,\\text{F} \\cdot 80\\,\\text{V} \\\\ &= 0{,}0264\\,\\text{C} \\end{aligned}$$ ja $\\Delta t = 1{,}0 \\cdot 10^{-3}\\,\\text{s}$."
             },
             {
               "key": "reasonableness",
@@ -735,7 +744,7 @@ whitespace anywhere.
           "id": "d",
           "kind": "word",
           "points": 4,
-          "text": "Korjaaja irrottaa salamalaitteesta pariston ja avaa laitteen heti sen jälkeen. Arvioi, onko kondensaattorissa vaaraa, ja kuvaile, miten kondensaattori puretaan turvallisesti. Arvioi vaaraa myös laskemalla virta, jos ihmisen kehon resistanssi on noin $1{,}0\\,\\text{k}\\Omega$.",
+          "text": "Korjaaja irrottaa salamalaitteesta pariston ja avaa laitteen heti sen jälkeen. Selitä, miksi kondensaattori voi olla edelleen vaarallinen. Arvioi laskennallisesti kehon läpi kulkevan virran suuruus kuvitteellisessa kosketustilanteessa, jossa ihmisen kehon resistanssi on noin $1{,}0\\,\\text{k}\\Omega$. Miksi laitteen turvallinen huolto ja kondensaattorin jännitteettömyyden varmistaminen kuuluvat tehtävään perehtyneelle ammattilaiselle?",
           "criteria": [
             {
               "text": "Tietää, että kondensaattori säilyttää varauksensa ja energiansa, kun paristo irrotetaan: se on edelleen $300\\,\\text{V}$:ssa ja siinä on noin $15\\,\\text{J}$, vaikka laitetta syöttää pieni paristo.",
@@ -743,19 +752,19 @@ whitespace anywhere.
               "points": 1
             },
             {
-              "text": "Laskee virran kehon läpi: $I = \\dfrac{U}{R} = \\dfrac{300\\,\\text{V}}{1{,}0 \\cdot 10^{3}\\,\\Omega} = 0{,}30\\,\\text{A}$, mikä on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia.",
+              "text": "Laskee idealisoidun arvion virrasta kehon läpi: $I = \\dfrac{U}{R} = \\dfrac{300\\,\\text{V}}{1{,}0 \\cdot 10^{3}\\,\\Omega} = 0{,}30\\,\\text{A}$, mikä on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia.",
               "tag": "math",
               "points": 1
             },
             {
-              "text": "Kuvaa turvallisen purkamisen: napojen väliin kytketään eristetyillä työkaluilla sopiva vastus, esimerkiksi $10\\,\\text{k}\\Omega$, jolloin energia siirtyy vastuksen sisäenergiaksi ja edelleen lämpönä ympäristöön; alkuvirta on $\\dfrac{300\\,\\text{V}}{10\\,\\text{k}\\Omega} = 30\\,\\text{mA}$. Napoja ei oikosulkuteta, ja jännite varmistetaan mittarilla. Vastuksen on kestettävä alussa noin $\\dfrac{(300\\,\\text{V})^2}{10\\,\\text{k}\\Omega} = 9\\,\\text{W}$, joten sen tehonkesto on valittava sen mukaan. Kuvaus on tarkoitettu ymmärtämiseen: älä yritä purkaa itse.",
+              "text": "Perustelee, että turvallinen huolto edellyttää kondensaattorin varatun energian hallittua poistamista ja jännitteettömyyden luotettavaa varmistamista, eikä huoltoa saa yrittää ilman asianmukaista pätevyyttä ja välineitä.",
               "tag": "concept",
               "points": 1
             },
             {
               "key": "conclusion",
               "points": 1,
-              "detail": "Päättelee, että laitetta ei saa avata heti: vaara johtuu varastoituneesta energiasta ja jännitteestä eikä pariston koosta. Kehon resistanssi vaihtelee (esimerkiksi kostea iho), joten arvio on suuruusluokka."
+              "detail": "Päättelee, että laitetta ei saa avata heti: vaara johtuu varastoituneesta energiasta ja jännitteestä eikä pariston koosta. Laskettu virta on idealisoitu suuruusluokka-arvio eikä kuvaus todellisesta sähköiskusta, koska kehon resistanssi vaihtelee esimerkiksi ihon kosteuden mukaan."
             }
           ]
         }
@@ -813,7 +822,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $I = \dfrac{4{,}60\,\text{V}}{8{,}0\,\Omega + 1{,}2\,\Omega} = \dfrac{4{,}60\,\text{V}}{9{,}2\,\Omega} = 0{,}50\,\text{A}$, $P = 8{,}0\,\Omega \cdot (0{,}50\,\text{A})^2 = 2{,}0\,\text{W}$ ja $P_\text{s} = 1{,}2\,\Omega \cdot (0{,}50\,\text{A})^2 = 0{,}30\,\text{W}$. Osuus on $\dfrac{0{,}30\,\text{W}}{2{,}0\,\text{W} + 0{,}30\,\text{W}} = 0{,}13$.
 **Vastaus:** Vastukseen siirtyy teho $P \approx 2{,}0\,\text{W}$, ja noin $13\,\%$ pariston sähkötehosta siirtyy lämpönä pariston sisällä. Tulos on annettu kahden merkitsevän numeron tarkkuudella kuten lähtötiedot.
-**Järkevyys:** Napajännite on $R I = 4{,}0\,\text{V}$, mikä on sama kuin $E - R_\text{s} I = 4{,}60\,\text{V} - 0{,}60\,\text{V}$, ja kuvaajalla virran $0{,}50\,\text{A}$ kohdalla jännite on noin $4{,}0\,\text{V}$. Koska ulkoinen vastus on yli seitsemän kertaa sisäistä resistanssia suurempi, vain pieni osa tehosta jää pariston sisälle.
+**Järkevyys:** Napajännite on $R I = 4{,}0\,\text{V}$, mikä on sama kuin $$\begin{aligned} &E - R_\text{s} I \\ &= 4{,}60\,\text{V} - 0{,}60\,\text{V} \end{aligned}$$, ja kuvaajalla virran $0{,}50\,\text{A}$ kohdalla jännite on noin $4{,}0\,\text{V}$. Koska ulkoinen vastus on yli seitsemän kertaa sisäistä resistanssia suurempi, vain pieni osa tehosta jää pariston sisälle.
 
 ### d)
 **Kysytty:** purkautumisen ja lämpenemisen vaikutus lähdejännitteen ja sisäisen resistanssin tulokseen, hajonnan aiheuttama epävarmuus $R_\text{s}$:ssä ja mittauksen parannus
@@ -858,9 +867,9 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Silmukkasäännön mukaan akun jännite jakautuu kaapelin jännitehäviön ja lamppujen jännitteen kesken: $E - R_\text{k} I - U_\text{L} = 0$. Lamppujen jännite jää siksi nimellisjännitettä pienemmäksi, ja teho lasketaan tästä todellisesta jännitteestä.
 **Kaava:** $U_\text{L} = E - R_\text{k} I$ ja $P_\text{A} = \dfrac{U_\text{L}^2}{R_\text{A}}$
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** $U_\text{L} = 12{,}0\,\text{V} - 0{,}80\,\Omega \cdot 2{,}5\,\text{A} = 12{,}0\,\text{V} - 2{,}0\,\text{V} = 10{,}0\,\text{V}$ ja $P_\text{A} = \dfrac{(10{,}0\,\text{V})^2}{6{,}0\,\Omega} = 16{,}7\,\text{W}$
+**Sijoitus:** $$\begin{aligned} U_\text{L} &= 12{,}0\,\text{V} - 0{,}80\,\Omega \cdot 2{,}5\,\text{A} \\ &= 12{,}0\,\text{V} - 2{,}0\,\text{V} \\ &= 10{,}0\,\text{V} \end{aligned}$$ ja $P_\text{A} = \dfrac{(10{,}0\,\text{V})^2}{6{,}0\,\Omega} = 16{,}7\,\text{W}$
 **Vastaus:** $P_\text{A} \approx 17\,\text{W}$, noin $70\,\%$ nimellisarvosta $24\,\text{W}$, kaksi merkitsevää numeroa kuten lähtötiedoissa ($0{,}80\,\Omega$, $24\,\text{W}$, $12\,\text{V}$).
-**Järkevyys:** Lamppu palaa himmeämmin kuin nimellisjännitteellä, koska sen jännite on vain $10{,}0\,\text{V}$. Tarkistus: lampun B teho on $\dfrac{(10{,}0\,\text{V})^2}{12\,\Omega} = 8{,}3\,\text{W}$ ja kaapeliin siirtyy lämpönä $0{,}80\,\Omega \cdot (2{,}5\,\text{A})^2 = 5{,}0\,\text{W}$. Summa $16{,}7\,\text{W} + 8{,}3\,\text{W} + 5{,}0\,\text{W} = 30\,\text{W}$ on yhtä suuri kuin akuston teho $12{,}0\,\text{V} \cdot 2{,}5\,\text{A} = 30\,\text{W}$.
+**Järkevyys:** Lamppu palaa himmeämmin kuin nimellisjännitteellä, koska sen jännite on vain $10{,}0\,\text{V}$. Tarkistus: lampun B teho on $\dfrac{(10{,}0\,\text{V})^2}{12\,\Omega} = 8{,}3\,\text{W}$ ja kaapeliin siirtyy lämpönä $0{,}80\,\Omega \cdot (2{,}5\,\text{A})^2 = 5{,}0\,\text{W}$. Summa $$\begin{aligned} &16{,}7\,\text{W} + 8{,}3\,\text{W} + 5{,}0\,\text{W} \\ &= 30\,\text{W} \end{aligned}$$ on yhtä suuri kuin akuston teho $12{,}0\,\text{V} \cdot 2{,}5\,\text{A} = 30\,\text{W}$.
 
 ### c)
 **Kysytty:** miten lampun A kirkkaus, akuston virta ja kaapelin lämpeneminen muuttuvat, kun lamppu B poistuu piiristä, sekä lampun A tehon tarkistus laskemalla
@@ -869,7 +878,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 
 *Kirkkaus.* Pienempi virta pienentää kaapelin jännitehäviötä: $0{,}80\,\Omega \cdot 1{,}76\,\text{A} \approx 1{,}4\,\text{V}$, aiemmin $2{,}0\,\text{V}$. Lampulle A jää siksi suurempi jännite $U_\text{A} \approx 10{,}6\,\text{V}$, ja sen teho on $\dfrac{(10{,}6\,\text{V})^2}{6{,}0\,\Omega} \approx 18{,}7\,\text{W}$, aiemmin $16{,}7\,\text{W}$. Lamppu A siis palaa kirkkaammin, vaikka sen omassa haarassa ei muuttunut mikään.
 
-*Kaapeli.* Kaapeliin siirtyy lämpönä teho $R_\text{k} I^2 = 0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 \approx 2{,}5\,\text{W}$, aiemmin $5{,}0\,\text{W}$. Kaapeli lämpenee siis vähemmän, koska teho riippuu virran neliöstä.
+*Kaapeli.* Kaapeliin siirtyy lämpönä teho $$\begin{aligned} R_\text{k} I^2 &= 0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 \\ &\approx 2{,}5\,\text{W} \end{aligned}$$, aiemmin $5{,}0\,\text{W}$. Kaapeli lämpenee siis vähemmän, koska teho riippuu virran neliöstä.
 
 *Johtopäätös.* Rinnankytketyt lamput ovat toisistaan riippumattomia vain, jos jännite niiden yli pysyy vakiona. Kaapelin resistanssi tekee lampuista hieman riippuvaisia toisistaan: jos kaapelin resistanssi olisi nolla, lampun A kirkkaus ei muuttuisi lainkaan.
 
@@ -905,7 +914,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Muunnokset:** $20\,\text{cm} = 0{,}20\,\text{m}$ ja $60\,\text{kV} = 60 \cdot 1000\,\text{V} = 6{,}0 \cdot 10^{4}\,\text{V}$.
 **Sijoitus:** $E = \dfrac{6{,}0 \cdot 10^{4}\,\text{V}}{0{,}20\,\text{m}} = 3{,}0 \cdot 10^{5}\,\text{V/m}$ ja $F = 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 3{,}0 \cdot 10^{5}\,\text{V/m} = 1{,}8 \cdot 10^{-7}\,\text{N}$
 **Vastaus:** $F \approx 1{,}8 \cdot 10^{-7}\,\text{N}$ kentän suuntaan kohti työkappaletta, kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Pisaran paino on $mg = 4{,}0 \cdot 10^{-10}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 3{,}9 \cdot 10^{-9}\,\text{N}$, eli vain noin $2\,\%$ sähkövoimasta, joten painon voi jättää huomiotta. Kentän voimakkuus $3{,}0 \cdot 10^{5}\,\text{V/m} = 0{,}30\,\text{MV/m}$ on noin kymmenesosa ilman läpilyöntilujuudesta $3\,\text{MV/m}$, joten kipinöintiä ei synny.
+**Järkevyys:** Pisaran paino on $mg = 4{,}0 \cdot 10^{-10}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 3{,}9 \cdot 10^{-9}\,\text{N}$, eli vain noin $2\,\%$ sähkövoimasta, joten painon voi jättää huomiotta. Kentän voimakkuus $$3{,}0 \cdot 10^{5}\,\text{V/m} = 0{,}30\,\text{MV/m}$$ on noin kymmenesosa ilman läpilyöntilujuudesta $3\,\text{MV/m}$, joten kipinöintiä ei synny.
 
 ### b)
 **Annettu:** $q = 6{,}0 \cdot 10^{-13}\,\text{C}$, $U = 6{,}0 \cdot 10^{4}\,\text{V}$, $m = 4{,}0 \cdot 10^{-10}\,\text{kg}$ ja pisara lähtee levosta
@@ -913,18 +922,18 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Sähkökentän pisaraan tekemä työ on varaus kertaa potentiaaliero, $W = qU$, ja se kasvattaa pisaran liike-energiaa. Paino ja ilmanvastus jätetään pois, joten muita voimia ei ole. Tällä tavalla riittää tietää potentiaaliero, eikä kentän voimakkuutta tai kiihtyvyyttä tarvita.
 **Kaava:** $q U = \dfrac{1}{2} m v^2$, josta $v = \sqrt{\dfrac{2 q U}{m}}$
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä; $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
-**Sijoitus:** $qU = 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 6{,}0 \cdot 10^{4}\,\text{V} = 3{,}6 \cdot 10^{-8}\,\text{J}$ ja $v = \sqrt{\dfrac{2 \cdot 3{,}6 \cdot 10^{-8}\,\text{J}}{4{,}0 \cdot 10^{-10}\,\text{kg}}} = \sqrt{180\,\text{m}^2/\text{s}^2} = 13{,}4\,\text{m/s}$
+**Sijoitus:** $$\begin{aligned} qU &= 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 6{,}0 \cdot 10^{4}\,\text{V} \\ &= 3{,}6 \cdot 10^{-8}\,\text{J} \end{aligned}$$ ja $v = \sqrt{\dfrac{2 \cdot 3{,}6 \cdot 10^{-8}\,\text{J}}{4{,}0 \cdot 10^{-10}\,\text{kg}}} = \sqrt{180\,\text{m}^2/\text{s}^2} = 13{,}4\,\text{m/s}$
 **Vastaus:** $v \approx 13\,\text{m/s}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Kiihtyvyys on $\dfrac{F}{m} = \dfrac{1{,}8 \cdot 10^{-7}\,\text{N}}{4{,}0 \cdot 10^{-10}\,\text{kg}} = 450\,\text{m/s}^2$, joten $0{,}20\,\text{m}$:n matkalla nopeus olisi $\sqrt{2 \cdot 450\,\text{m/s}^2 \cdot 0{,}20\,\text{m}} = 13{,}4\,\text{m/s}$, mikä vahvistaa tuloksen. Painon työ koko matkalla olisi vain $7{,}8 \cdot 10^{-10}\,\text{J}$ eli noin $2\,\%$ sähkökentän työstä.
+**Järkevyys:** Kiihtyvyys on $\dfrac{F}{m} = \dfrac{1{,}8 \cdot 10^{-7}\,\text{N}}{4{,}0 \cdot 10^{-10}\,\text{kg}} = 450\,\text{m/s}^2$, joten $0{,}20\,\text{m}$:n matkalla nopeus olisi $$\begin{aligned} &\sqrt{2 \cdot 450\,\text{m/s}^2 \cdot 0{,}20\,\text{m}} \\ &= 13{,}4\,\text{m/s} \end{aligned}$$, mikä vahvistaa tuloksen. Painon työ koko matkalla olisi vain $7{,}8 \cdot 10^{-10}\,\text{J}$ eli noin $2\,\%$ sähkökentän työstä.
 
 ### c)
 **Kysytty:** miksi mitattu osumanopeus $5{,}0\,\text{m/s}$ on paljon pienempi kuin b-kohdan tulos ja minne sähkökentän tekemä työ jää
 **Periaate:** B-kohdan malli jätti ilmanvastuksen pois. Ilmanvastus vaikuttaa pisaran liikkeen suuntaa vastaan, ja sen tekemä työ on negatiivista. Kun pisaran nopeus kasvaa, ilmanvastus kasvaa, ja pisara etenee nopeudella, jolla ilmanvastus ja sähkövoima ovat likimain yhtä suuret. Energian säilymisen mukaan sähkökentän tekemä työ ei häviä, vaan se siirtyy muualle.
 **Mallivastaus:** *Selitys.* B-kohdan nopeus $13\,\text{m/s}$ olisi mahdollinen vain tyhjiössä. Ilmassa ilmanvastus rajoittaa nopeuden paljon pienemmäksi, joten b-kohdan tulos on pisaran suurin mahdollinen nopeus eli yläraja.
 
-*Laskenta.* Pisaran todellinen liike-energia on $\dfrac{1}{2} m v^2 = \dfrac{1}{2} \cdot 4{,}0 \cdot 10^{-10}\,\text{kg} \cdot (5{,}0\,\text{m/s})^2 = 5{,}0 \cdot 10^{-9}\,\text{J}$. Sähkökentän tekemä työ on $3{,}6 \cdot 10^{-8}\,\text{J}$, joten liike-energiaksi päätyy vain $\dfrac{5{,}0 \cdot 10^{-9}\,\text{J}}{3{,}6 \cdot 10^{-8}\,\text{J}} \approx 14\,\%$.
+*Laskenta.* Pisaran todellinen liike-energia on $$\begin{aligned} \dfrac{1}{2} m v^2 &= \dfrac{1}{2} \cdot 4{,}0 \cdot 10^{-10}\,\text{kg} \\ &\cdot (5{,}0\,\text{m/s})^2 \\ &= 5{,}0 \cdot 10^{-9}\,\text{J} \end{aligned}$$. Sähkökentän tekemä työ on $3{,}6 \cdot 10^{-8}\,\text{J}$, joten liike-energiaksi päätyy vain $\dfrac{5{,}0 \cdot 10^{-9}\,\text{J}}{3{,}6 \cdot 10^{-8}\,\text{J}} \approx 14\,\%$.
 
-*Energian kohtalo.* Loput $3{,}6 \cdot 10^{-8}\,\text{J} - 5{,}0 \cdot 10^{-9}\,\text{J} = 3{,}1 \cdot 10^{-8}\,\text{J}$ siirtyy ilmaan. Ilman sisäenergia kasvaa, ja energia siirtyy edelleen lämpönä ympäristöön. Energia ei siis häviä.
+*Energian kohtalo.* Loput $$\begin{aligned} &3{,}6 \cdot 10^{-8}\,\text{J} - 5{,}0 \cdot 10^{-9}\,\text{J} \\ &= 3{,}1 \cdot 10^{-8}\,\text{J} \end{aligned}$$ siirtyy ilmaan. Ilman sisäenergia kasvaa, ja energia siirtyy edelleen lämpönä ympäristöön. Energia ei siis häviä.
 
 *Johtopäätös.* B-kohdan oletus (ei ilmanvastusta) tekee nopeudesta liian suuren, joten tulos on suurin mahdollinen nopeus. Energia ei häviä, vaan se siirtyy ilmaan.
 
@@ -934,7 +943,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Pisarat ovat paljon pienempiä kuin niiden etäisyys, joten ne voi käsitellä pistemäisinä varauksina. Niiden välinen voima noudattaa Coulombin lakia: samanmerkkiset varaukset hylkivät toisiaan.
 **Kaava:** $F = k\dfrac{q_1 q_2}{r^2}$
 **Muunnokset:** $1{,}0\,\text{mm} = 1{,}0 \cdot 10^{-3}\,\text{m}$
-**Sijoitus:** $F = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} \cdot \dfrac{(6{,}0 \cdot 10^{-13}\,\text{C})^2}{(1{,}0 \cdot 10^{-3}\,\text{m})^2} = 8{,}988 \cdot 10^{9} \cdot \dfrac{3{,}6 \cdot 10^{-25}}{1{,}0 \cdot 10^{-6}}\,\text{N} = 3{,}2 \cdot 10^{-9}\,\text{N}$
+**Sijoitus:** $$\begin{aligned} F &= 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} \\ &\cdot \dfrac{(6{,}0 \cdot 10^{-13}\,\text{C})^2}{(1{,}0 \cdot 10^{-3}\,\text{m})^2} \\ &= 8{,}988 \cdot 10^{9} \cdot \dfrac{3{,}6 \cdot 10^{-25}}{1{,}0 \cdot 10^{-6}}\,\text{N} \\ &= 3{,}2 \cdot 10^{-9}\,\text{N} \end{aligned}$$
 **Vastaus:** $F \approx 3{,}2 \cdot 10^{-9}\,\text{N}$, hylkivä, kaksi merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Voima on noin $1{,}8\,\%$ kentän voimasta $1{,}8 \cdot 10^{-7}\,\text{N}$ mutta $0{,}8$-kertainen pisaran painoon $3{,}9 \cdot 10^{-9}\,\text{N}$ verrattuna. Hylkimisvoima on siis pieni verrattuna sähkökentän voimaan, joten pisarat kulkevat edelleen kohti työkappaletta, mutta hylkiminen levittää pisarapilveä sivusuunnassa. Tämä on osa sitä, miksi suihku leviää suuttimen jälkeen.
 
@@ -967,7 +976,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Salamaan siirtynyt energia on kondensaattorin energian muutos: se on energia ennen salamaa vähennettynä energialla salaman jälkeen. Jännite on energiakaavassa neliönä, joten kumpikin energia lasketaan erikseen; pelkkä jännitteen muutos $\Delta U$ ei riitä.
 **Kaava:** $\Delta E = \dfrac{1}{2} C U_1^2 - \dfrac{1}{2} C U_2^2$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$
-**Sijoitus:** $E_1 = 14{,}85\,\text{J}$ ja $E_2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 = 7{,}99\,\text{J}$, joten $\Delta E = 14{,}85\,\text{J} - 7{,}99\,\text{J} = 6{,}86\,\text{J}$. Osuus on $\dfrac{6{,}86\,\text{J}}{14{,}85\,\text{J}} = 0{,}46$.
+**Sijoitus:** $E_1 = 14{,}85\,\text{J}$ ja $$\begin{aligned} E_2 &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text{V})^2 \\ &= \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot 48\,400\,\text{V}^2 \\ &= 7{,}99\,\text{J} \end{aligned}$$, joten $\Delta E = 14{,}85\,\text{J} - 7{,}99\,\text{J} = 6{,}86\,\text{J}$. Osuus on $\dfrac{6{,}86\,\text{J}}{14{,}85\,\text{J}} = 0{,}46$.
 **Vastaus:** Salamaan siirtyi $\Delta E \approx 6{,}9\,\text{J}$, noin $46\,\%$ varastoidusta energiasta, kaksi merkitsevää numeroa kuten a-kohdassa.
 **Järkevyys:** Jännite pieneni vain $\dfrac{80\,\text{V}}{300\,\text{V}} \approx 27\,\%$, mutta energiaa siirtyi $46\,\%$, koska energia on verrannollinen jännitteen neliöön: $1 - \left(\dfrac{220}{300}\right)^2 = 0{,}46$. Siirtynyt energia on pienempi kuin alkuenergia, kuten pitääkin.
 
@@ -977,20 +986,20 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 **Periaate:** Virta on varauksen siirtymisnopeus. Kondensaattorin varaus on $Q = C U$, joten jännitteen pienentyessä $80\,\text{V}$ kondensaattorilta on lähtenyt varausta $\Delta Q = C\,\Delta U$ salamaputken kautta.
 **Kaava:** $I = \dfrac{\Delta Q}{\Delta t}$ ja $\Delta Q = C\,\Delta U$
 **Muunnokset:** $330\,\mu\text{F} = 330 \cdot 10^{-6}\,\text{F}$ ja $1{,}0\,\text{ms} = 1{,}0 \cdot 10^{-3}\,\text{s}$
-**Sijoitus:** $\Delta Q = 330 \cdot 10^{-6}\,\text{F} \cdot 80\,\text{V} = 0{,}0264\,\text{C}$ ja $I = \dfrac{0{,}0264\,\text{C}}{1{,}0 \cdot 10^{-3}\,\text{s}} = 26{,}4\,\text{A}$
+**Sijoitus:** $$\begin{aligned} \Delta Q &= 330 \cdot 10^{-6}\,\text{F} \cdot 80\,\text{V} \\ &= 0{,}0264\,\text{C} \end{aligned}$$ ja $I = \dfrac{0{,}0264\,\text{C}}{1{,}0 \cdot 10^{-3}\,\text{s}} = 26{,}4\,\text{A}$
 **Vastaus:** $I \approx 26\,\text{A}$, kaksi merkitsevää numeroa kuten keston $1{,}0\,\text{ms}$ tarkkuus.
 **Järkevyys:** Keskiteho on $\dfrac{6{,}86\,\text{J}}{1{,}0 \cdot 10^{-3}\,\text{s}} \approx 6{,}9\,\text{kW}$ ja virta $26\,\text{A}$: nämä ovat paljon suurempia kuin pieni paristo voisi antaa näin lyhyessä pulssissa. Siksi energia varastoidaan ensin kondensaattoriin, joka luovuttaa sen nopeasti.
 
 ### d)
-**Kysytty:** onko kondensaattorissa vaaraa pariston irrottamisen jälkeen, miten se puretaan turvallisesti ja kuinka suuri virta kulkisi kehon läpi
+**Kysytty:** miksi kondensaattori voi olla vaarallinen pariston irrottamisen jälkeen, kuinka suuri virta kulkisi laskennallisesti kehon läpi ja miksi huolto kuuluu ammattilaiselle
 **Periaate:** Kondensaattorin levyillä on varaukset $+Q$ ja $-Q$, ja energia on varastoitunut levyjen väliseen sähkökenttään. Jännite ei katoa, kun lataava paristo irrotetaan. Vaara riippuu varastoituneesta energiasta ja jännitteestä, ei paristosta. Virran suuruus kehon läpi saadaan jännitteestä ja resistanssista.
 **Mallivastaus:** *Vaara.* Kondensaattori on pariston irrottamisen jälkeen edelleen $300\,\text{V}$:ssa, ja siinä on noin $15\,\text{J}$. Laite ei saa jännitettä pienestä paristosta, vaan kondensaattorista, joka voi purkautua korjaajan kehon kautta.
 
-*Virta.* Jos kehon resistanssi on $1{,}0\,\text{k}\Omega$, virta olisi aluksi $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1{,}0 \cdot 10^{3}\,\Omega} = 0{,}30\,\text{A}$. Se on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia. Virta pienenee kondensaattorin purkautuessa, mutta alun virta riittää vaaralliseen sähköiskuun.
+*Virta.* Lasketaan idealisoitu arvio kuvitellussa kosketustilanteessa. Jos kehon resistanssi on $1{,}0\,\text{k}\Omega$, virta olisi aluksi $I = \dfrac{U}{R} = \dfrac{300\,\text{V}}{1{,}0 \cdot 10^{3}\,\Omega} = 0{,}30\,\text{A}$. Se on moninkertainen verrattuna muutamaan kymmeneen milliampeeriin, jotka voivat jo olla vaarallisia. Virta pienenee kondensaattorin purkautuessa, mutta alun virta riittää vaaralliseen sähköiskuun.
 
-*Turvallinen purku* (vain ymmärtämiseksi: älä yritä purkaa kondensaattoria itse). Kondensaattorin napojen väliin kytketään eristetyillä työkaluilla sopiva vastus, esimerkiksi $10\,\text{k}\Omega$. Alkuvirta on silloin $\dfrac{300\,\text{V}}{10\,\text{k}\Omega} = 30\,\text{mA}$, ja kondensaattorin energia siirtyy vastuksen sisäenergiaksi ja siitä lämpönä ympäristöön. Vastuksen teho on aluksi $\dfrac{(300\,\text{V})^2}{10\,\text{k}\Omega} = 9\,\text{W}$, joten vastuksen tehonkeston on oltava sen mukainen. Napoja ei oikosulkuteta ruuvimeisselillä, koska silloin virta on hyvin suuri ja syntyy kipinä. Lopuksi jännite varmistetaan mittarilla.
+*Huolto kuuluu ammattilaiselle.* Turvallinen huolto edellyttää, että kondensaattorin varattu energia poistetaan hallitusti ja jännitteettömyys varmistetaan luotettavasti ennen kuin laitteen sisäosiin kosketaan. Tämä vaatii perehtymistä laitteeseen sekä oikeat välineet ja menettelyt, joten huoltoa ei saa yrittää ilman asianmukaista pätevyyttä.
 
-*Johtopäätös.* Laitetta ei saa avata heti. Vaara johtuu kondensaattorin varastoimasta energiasta ja jännitteestä eikä pariston koosta. Kehon resistanssi vaihtelee esimerkiksi ihon kosteuden mukaan, joten laskettu virta on suuruusluokka-arvio.
+*Johtopäätös.* Laitetta ei saa avata heti. Vaara johtuu kondensaattorin varastoimasta energiasta ja jännitteestä eikä pariston koosta. Laskettu virta on idealisoitu suuruusluokka-arvio eikä kuvaus todellisesta sähköiskusta: kehon resistanssi vaihtelee esimerkiksi ihon kosteuden mukaan, ja virta pienenee kondensaattorin purkautuessa.
 
 ### Hyväksytään myös
 - a-kohdassa energian saa laskea myös kaavalla $E = \dfrac{1}{2} Q U$, missä $Q = C U = 0{,}099\,\text{C}$.
@@ -1002,7 +1011,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 - Energian laskemisessa unohdetaan jännitteen neliöinti, tai salamaan siirtynyt energia lasketaan kaavasta $\tfrac{1}{2} C (\Delta U)^2$.
 - Virta lasketaan jakamalla energia ajalla, jolloin saadaan teho.
 - Todetaan, että kondensaattori on vaaraton, koska laitteessa on vain pieni paristo.
-- Kondensaattori puretaan oikosulkemalla se metallityökalulla.
+- Laskettua kehon virtaa pidetään tarkkana arvona, vaikka se on idealisoitu suuruusluokka-arvio.
 ```
 
 ## Figure inventory (inline figures; the captures `fig-N-390` show them in page order)
@@ -1022,7 +1031,7 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 | review/shots/contact-9.png | contact sheet: captures #97–#108 | 1260×1932 | 3245 |
 | review/shots/contact-10.png | contact sheet: captures #109–#120 | 1260×1224 | 2056 |
 | review/shots/contact-11.png | contact sheet: captures #121–#132 | 1260×1224 | 2056 |
-| review/shots/contact-12.png | contact sheet: captures #133–#135 | 1260×416 | 698 |
+| review/shots/contact-12.png | contact sheet: captures #133–#134 | 1260×416 | 698 |
 | review/shots/FY6-sovella-top-390.png | #1 first screen at 390 px | 390×844 | 438 |
 | review/shots/FY6-sovella-page-390-1.png | #2 the whole page at 390 px, every box open (teacher's notes included) (part 1/42) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-2.png | #3 the whole page at 390 px, every box open (teacher's notes included) (part 2/42) | 366×1408 | 687 |
@@ -1065,99 +1074,98 @@ Pystyakselin asteikko alkaa arvosta $3{,}6\,\text{V}$, jotta pisteiden vähäine
 | review/shots/FY6-sovella-page-390-39.png | #40 the whole page at 390 px, every box open (teacher's notes included) (part 39/42) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-40.png | #41 the whole page at 390 px, every box open (teacher's notes included) (part 40/42) | 366×1408 | 687 |
 | review/shots/FY6-sovella-page-390-41.png | #42 the whole page at 390 px, every box open (teacher's notes included) (part 41/42) | 366×1408 | 687 |
-| review/shots/FY6-sovella-page-390-42.png | #43 the whole page at 390 px, every box open (teacher's notes included) (part 42/42) | 366×522 | 254 |
-| review/shots/FY6-sovella-fig-1-390.png | #44 figure 1 in “1Taskulampun paristo 15 pistettä”: Kytkentäkaavio, ei mittakaavassa: pariston mittaus. Vasemmalla on tutkittava paristo, plus | 331×182 | 80 |
+| review/shots/FY6-sovella-page-390-42.png | #43 the whole page at 390 px, every box open (teacher's notes included) (part 42/42) | 366×168 | 81 |
+| review/shots/FY6-sovella-fig-1-390.png | #44 figure 1 in “1Taskulampun paristo 15 pistettä”: Kytkentäkaavio, ei mittakaavassa: pariston mittaus. Vasemmalla on tutkittava paristo, plus | 332×182 | 80 |
 | review/shots/FY6-sovella-fig-2-390.png | #45 figure 2 in “1Taskulampun paristo 15 pistettä”:  | 28×28 | 1 |
-| review/shots/FY6-sovella-fig-3-390.png | #46 figure 3 in “Mallivastaus”: Kuvaaja: pariston napajännite U voltteina virran I funktiona ampeereina. Kuusi mustaa pist | 305×202 | 82 |
+| review/shots/FY6-sovella-fig-3-390.png | #46 figure 3 in “Mallivastaus”: Kuvaaja: pariston napajännite U voltteina virran I funktiona ampeereina. Kuusi mustaa pist | 306×202 | 82 |
 | review/shots/FY6-sovella-fig-4-390.png | #47 figure 4 in “Mallivastaus”:  | 28×28 | 1 |
-| review/shots/FY6-sovella-fig-5-390.png | #48 figure 5 in “2Mökin pihavalot 15 pistettä”: Kytkentäkaavio, ei mittakaavassa: mökin valaistus. Vasemmalla on 12 voltin akku, plusnapa  | 331×182 | 80 |
+| review/shots/FY6-sovella-fig-5-390.png | #48 figure 5 in “2Mökin pihavalot 15 pistettä”: Kytkentäkaavio, ei mittakaavassa: mökin valaistus. Vasemmalla on 12 voltin akku, plusnapa  | 332×182 | 80 |
 | review/shots/FY6-sovella-fig-6-390.png | #49 figure 6 in “2Mökin pihavalot 15 pistettä”:  | 28×28 | 1 |
-| review/shots/FY6-sovella-fig-7-390.png | #50 figure 7 in “3Ruiskumaalaus 16 pistettä”: Kaaviokuva, ei mittakaavassa: ruiskumaalauksen sähkökenttä. Ylhäällä on vaakasuora suutinl | 331×203 | 89 |
+| review/shots/FY6-sovella-fig-7-390.png | #50 figure 7 in “3Ruiskumaalaus 16 pistettä”: Kaaviokuva, ei mittakaavassa: ruiskumaalauksen sähkökenttä. Ylhäällä on vaakasuora suutinl | 332×203 | 89 |
 | review/shots/FY6-sovella-fig-8-390.png | #51 figure 8 in “3Ruiskumaalaus 16 pistettä”:  | 28×28 | 1 |
 | review/shots/FY6-sovella-fig-9-390.png | #52 figure 9 in “Mallivastaus”:  | 69×59 | 5 |
 | review/shots/FY6-sovella-fig-10-390.png | #53 figure 10 in “Mallivastaus”:  | 128×60 | 10 |
 | review/shots/FY6-sovella-fig-11-390.png | #54 figure 11 in “Mallivastaus”:  | 96×29 | 3 |
-| review/shots/FY6-sovella-fig-12-390.png | #55 figure 12 in “Mallivastaus”:  | 190×44 | 11 |
-| review/shots/FY6-sovella-fig-13-390.png | #56 figure 13 in “Hyväksytään myös”:  | 59×31 | 2 |
-| review/shots/FY6-sovella-fig-14-390.png | #57 figure 14 in “Yleisiä virheitä”:  | 59×31 | 2 |
-| review/shots/FY6-sovella-fig-15-390.png | #58 figure 15 in “Pisteytys ja itsearviointi”:  | 69×59 | 5 |
-| review/shots/FY6-sovella-fig-16-390.png | #59 figure 16 in “Pisteytys ja itsearviointi”:  | 153×71 | 14 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-1.png | #60 inquiry stage Taskulampun paristo 15 pistettä (part 1/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-2.png | #61 inquiry stage Taskulampun paristo 15 pistettä (part 2/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-3.png | #62 inquiry stage Taskulampun paristo 15 pistettä (part 3/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-4.png | #63 inquiry stage Taskulampun paristo 15 pistettä (part 4/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-5.png | #64 inquiry stage Taskulampun paristo 15 pistettä (part 5/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-6.png | #65 inquiry stage Taskulampun paristo 15 pistettä (part 6/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-7.png | #66 inquiry stage Taskulampun paristo 15 pistettä (part 7/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-8.png | #67 inquiry stage Taskulampun paristo 15 pistettä (part 8/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-9.png | #68 inquiry stage Taskulampun paristo 15 pistettä (part 9/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-10.png | #69 inquiry stage Taskulampun paristo 15 pistettä (part 10/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-11.png | #70 inquiry stage Taskulampun paristo 15 pistettä (part 11/12) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s1-390-12.png | #71 inquiry stage Taskulampun paristo 15 pistettä (part 12/12) | 366×249 | 121 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-1.png | #72 inquiry stage Mökin pihavalot 15 pistettä (part 1/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-2.png | #73 inquiry stage Mökin pihavalot 15 pistettä (part 2/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-3.png | #74 inquiry stage Mökin pihavalot 15 pistettä (part 3/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-4.png | #75 inquiry stage Mökin pihavalot 15 pistettä (part 4/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-5.png | #76 inquiry stage Mökin pihavalot 15 pistettä (part 5/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-6.png | #77 inquiry stage Mökin pihavalot 15 pistettä (part 6/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-7.png | #78 inquiry stage Mökin pihavalot 15 pistettä (part 7/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-8.png | #79 inquiry stage Mökin pihavalot 15 pistettä (part 8/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-9.png | #80 inquiry stage Mökin pihavalot 15 pistettä (part 9/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-10.png | #81 inquiry stage Mökin pihavalot 15 pistettä (part 10/11) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s2-390-11.png | #82 inquiry stage Mökin pihavalot 15 pistettä (part 11/11) | 366×1077 | 525 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-1.png | #83 inquiry stage Ruiskumaalaus 16 pistettä (part 1/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-2.png | #84 inquiry stage Ruiskumaalaus 16 pistettä (part 2/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-3.png | #85 inquiry stage Ruiskumaalaus 16 pistettä (part 3/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-4.png | #86 inquiry stage Ruiskumaalaus 16 pistettä (part 4/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-5.png | #87 inquiry stage Ruiskumaalaus 16 pistettä (part 5/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-6.png | #88 inquiry stage Ruiskumaalaus 16 pistettä (part 6/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-7.png | #89 inquiry stage Ruiskumaalaus 16 pistettä (part 7/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-8.png | #90 inquiry stage Ruiskumaalaus 16 pistettä (part 8/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-9.png | #91 inquiry stage Ruiskumaalaus 16 pistettä (part 9/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s3-390-10.png | #92 inquiry stage Ruiskumaalaus 16 pistettä (part 10/10) | 366×1026 | 500 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-1.png | #93 inquiry stage Kameran salama 14 pistettä (part 1/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-2.png | #94 inquiry stage Kameran salama 14 pistettä (part 2/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-3.png | #95 inquiry stage Kameran salama 14 pistettä (part 3/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-4.png | #96 inquiry stage Kameran salama 14 pistettä (part 4/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-5.png | #97 inquiry stage Kameran salama 14 pistettä (part 5/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-6.png | #98 inquiry stage Kameran salama 14 pistettä (part 6/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-7.png | #99 inquiry stage Kameran salama 14 pistettä (part 7/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-8.png | #100 inquiry stage Kameran salama 14 pistettä (part 8/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-9.png | #101 inquiry stage Kameran salama 14 pistettä (part 9/10) | 366×1408 | 687 |
-| review/shots/FY6-sovella-stage-fy6-s4-390-10.png | #102 inquiry stage Kameran salama 14 pistettä (part 10/10) | 366×279 | 136 |
-| review/shots/FY6-sovella-top-1280.png | #103 first screen at 1280 px | 1280×900 | 1536 |
-| review/shots/FY6-sovella-page-1280-1.png | #104 the whole page at 1280 px, every box open (teacher's notes included) (part 1/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-2.png | #105 the whole page at 1280 px, every box open (teacher's notes included) (part 2/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-3.png | #106 the whole page at 1280 px, every box open (teacher's notes included) (part 3/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-4.png | #107 the whole page at 1280 px, every box open (teacher's notes included) (part 4/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-5.png | #108 the whole page at 1280 px, every box open (teacher's notes included) (part 5/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-6.png | #109 the whole page at 1280 px, every box open (teacher's notes included) (part 6/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-7.png | #110 the whole page at 1280 px, every box open (teacher's notes included) (part 7/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-8.png | #111 the whole page at 1280 px, every box open (teacher's notes included) (part 8/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-9.png | #112 the whole page at 1280 px, every box open (teacher's notes included) (part 9/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-10.png | #113 the whole page at 1280 px, every box open (teacher's notes included) (part 10/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-11.png | #114 the whole page at 1280 px, every box open (teacher's notes included) (part 11/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-12.png | #115 the whole page at 1280 px, every box open (teacher's notes included) (part 12/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-13.png | #116 the whole page at 1280 px, every box open (teacher's notes included) (part 13/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-14.png | #117 the whole page at 1280 px, every box open (teacher's notes included) (part 14/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-15.png | #118 the whole page at 1280 px, every box open (teacher's notes included) (part 15/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-16.png | #119 the whole page at 1280 px, every box open (teacher's notes included) (part 16/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-17.png | #120 the whole page at 1280 px, every box open (teacher's notes included) (part 17/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-18.png | #121 the whole page at 1280 px, every box open (teacher's notes included) (part 18/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-19.png | #122 the whole page at 1280 px, every box open (teacher's notes included) (part 19/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-20.png | #123 the whole page at 1280 px, every box open (teacher's notes included) (part 20/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-21.png | #124 the whole page at 1280 px, every box open (teacher's notes included) (part 21/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-22.png | #125 the whole page at 1280 px, every box open (teacher's notes included) (part 22/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-23.png | #126 the whole page at 1280 px, every box open (teacher's notes included) (part 23/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-24.png | #127 the whole page at 1280 px, every box open (teacher's notes included) (part 24/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-25.png | #128 the whole page at 1280 px, every box open (teacher's notes included) (part 25/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-26.png | #129 the whole page at 1280 px, every box open (teacher's notes included) (part 26/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-27.png | #130 the whole page at 1280 px, every box open (teacher's notes included) (part 27/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-28.png | #131 the whole page at 1280 px, every box open (teacher's notes included) (part 28/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-29.png | #132 the whole page at 1280 px, every box open (teacher's notes included) (part 29/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-30.png | #133 the whole page at 1280 px, every box open (teacher's notes included) (part 30/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-31.png | #134 the whole page at 1280 px, every box open (teacher's notes included) (part 31/32) | 1160×1408 | 2177 |
-| review/shots/FY6-sovella-page-1280-32.png | #135 the whole page at 1280 px, every box open (teacher's notes included) (part 32/32) | 1160×18 | 27 |
+| review/shots/FY6-sovella-fig-13-390.png | #55 figure 13 in “Mallivastaus”:  | 169×39 | 8 |
+| review/shots/FY6-sovella-fig-14-390.png | #56 figure 14 in “Hyväksytään myös”:  | 57×30 | 2 |
+| review/shots/FY6-sovella-fig-15-390.png | #57 figure 15 in “Yleisiä virheitä”:  | 57×30 | 2 |
+| review/shots/FY6-sovella-fig-16-390.png | #58 figure 16 in “Pisteytys ja itsearviointi”:  | 69×59 | 5 |
+| review/shots/FY6-sovella-fig-17-390.png | #59 figure 17 in “Pisteytys ja itsearviointi”:  | 153×71 | 14 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-1.png | #60 inquiry stage Taskulampun paristo 15 pistettä (part 1/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-2.png | #61 inquiry stage Taskulampun paristo 15 pistettä (part 2/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-3.png | #62 inquiry stage Taskulampun paristo 15 pistettä (part 3/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-4.png | #63 inquiry stage Taskulampun paristo 15 pistettä (part 4/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-5.png | #64 inquiry stage Taskulampun paristo 15 pistettä (part 5/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-6.png | #65 inquiry stage Taskulampun paristo 15 pistettä (part 6/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-7.png | #66 inquiry stage Taskulampun paristo 15 pistettä (part 7/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-8.png | #67 inquiry stage Taskulampun paristo 15 pistettä (part 8/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-9.png | #68 inquiry stage Taskulampun paristo 15 pistettä (part 9/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-10.png | #69 inquiry stage Taskulampun paristo 15 pistettä (part 10/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s1-390-11.png | #70 inquiry stage Taskulampun paristo 15 pistettä (part 11/11) | 366×1388 | 677 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-1.png | #71 inquiry stage Mökin pihavalot 15 pistettä (part 1/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-2.png | #72 inquiry stage Mökin pihavalot 15 pistettä (part 2/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-3.png | #73 inquiry stage Mökin pihavalot 15 pistettä (part 3/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-4.png | #74 inquiry stage Mökin pihavalot 15 pistettä (part 4/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-5.png | #75 inquiry stage Mökin pihavalot 15 pistettä (part 5/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-6.png | #76 inquiry stage Mökin pihavalot 15 pistettä (part 6/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-7.png | #77 inquiry stage Mökin pihavalot 15 pistettä (part 7/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-8.png | #78 inquiry stage Mökin pihavalot 15 pistettä (part 8/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-9.png | #79 inquiry stage Mökin pihavalot 15 pistettä (part 9/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-10.png | #80 inquiry stage Mökin pihavalot 15 pistettä (part 10/11) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s2-390-11.png | #81 inquiry stage Mökin pihavalot 15 pistettä (part 11/11) | 366×1013 | 494 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-1.png | #82 inquiry stage Ruiskumaalaus 16 pistettä (part 1/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-2.png | #83 inquiry stage Ruiskumaalaus 16 pistettä (part 2/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-3.png | #84 inquiry stage Ruiskumaalaus 16 pistettä (part 3/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-4.png | #85 inquiry stage Ruiskumaalaus 16 pistettä (part 4/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-5.png | #86 inquiry stage Ruiskumaalaus 16 pistettä (part 5/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-6.png | #87 inquiry stage Ruiskumaalaus 16 pistettä (part 6/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-7.png | #88 inquiry stage Ruiskumaalaus 16 pistettä (part 7/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-8.png | #89 inquiry stage Ruiskumaalaus 16 pistettä (part 8/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-9.png | #90 inquiry stage Ruiskumaalaus 16 pistettä (part 9/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s3-390-10.png | #91 inquiry stage Ruiskumaalaus 16 pistettä (part 10/10) | 366×1147 | 559 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-1.png | #92 inquiry stage Kameran salama 14 pistettä (part 1/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-2.png | #93 inquiry stage Kameran salama 14 pistettä (part 2/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-3.png | #94 inquiry stage Kameran salama 14 pistettä (part 3/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-4.png | #95 inquiry stage Kameran salama 14 pistettä (part 4/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-5.png | #96 inquiry stage Kameran salama 14 pistettä (part 5/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-6.png | #97 inquiry stage Kameran salama 14 pistettä (part 6/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-7.png | #98 inquiry stage Kameran salama 14 pistettä (part 7/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-8.png | #99 inquiry stage Kameran salama 14 pistettä (part 8/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-9.png | #100 inquiry stage Kameran salama 14 pistettä (part 9/10) | 366×1408 | 687 |
+| review/shots/FY6-sovella-stage-fy6-s4-390-10.png | #101 inquiry stage Kameran salama 14 pistettä (part 10/10) | 366×216 | 105 |
+| review/shots/FY6-sovella-top-1280.png | #102 first screen at 1280 px | 1280×900 | 1536 |
+| review/shots/FY6-sovella-page-1280-1.png | #103 the whole page at 1280 px, every box open (teacher's notes included) (part 1/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-2.png | #104 the whole page at 1280 px, every box open (teacher's notes included) (part 2/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-3.png | #105 the whole page at 1280 px, every box open (teacher's notes included) (part 3/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-4.png | #106 the whole page at 1280 px, every box open (teacher's notes included) (part 4/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-5.png | #107 the whole page at 1280 px, every box open (teacher's notes included) (part 5/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-6.png | #108 the whole page at 1280 px, every box open (teacher's notes included) (part 6/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-7.png | #109 the whole page at 1280 px, every box open (teacher's notes included) (part 7/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-8.png | #110 the whole page at 1280 px, every box open (teacher's notes included) (part 8/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-9.png | #111 the whole page at 1280 px, every box open (teacher's notes included) (part 9/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-10.png | #112 the whole page at 1280 px, every box open (teacher's notes included) (part 10/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-11.png | #113 the whole page at 1280 px, every box open (teacher's notes included) (part 11/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-12.png | #114 the whole page at 1280 px, every box open (teacher's notes included) (part 12/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-13.png | #115 the whole page at 1280 px, every box open (teacher's notes included) (part 13/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-14.png | #116 the whole page at 1280 px, every box open (teacher's notes included) (part 14/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-15.png | #117 the whole page at 1280 px, every box open (teacher's notes included) (part 15/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-16.png | #118 the whole page at 1280 px, every box open (teacher's notes included) (part 16/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-17.png | #119 the whole page at 1280 px, every box open (teacher's notes included) (part 17/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-18.png | #120 the whole page at 1280 px, every box open (teacher's notes included) (part 18/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-19.png | #121 the whole page at 1280 px, every box open (teacher's notes included) (part 19/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-20.png | #122 the whole page at 1280 px, every box open (teacher's notes included) (part 20/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-21.png | #123 the whole page at 1280 px, every box open (teacher's notes included) (part 21/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-22.png | #124 the whole page at 1280 px, every box open (teacher's notes included) (part 22/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-23.png | #125 the whole page at 1280 px, every box open (teacher's notes included) (part 23/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-24.png | #126 the whole page at 1280 px, every box open (teacher's notes included) (part 24/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-25.png | #127 the whole page at 1280 px, every box open (teacher's notes included) (part 25/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-26.png | #128 the whole page at 1280 px, every box open (teacher's notes included) (part 26/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-27.png | #129 the whole page at 1280 px, every box open (teacher's notes included) (part 27/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-28.png | #130 the whole page at 1280 px, every box open (teacher's notes included) (part 28/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-29.png | #131 the whole page at 1280 px, every box open (teacher's notes included) (part 29/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-30.png | #132 the whole page at 1280 px, every box open (teacher's notes included) (part 30/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-31.png | #133 the whole page at 1280 px, every box open (teacher's notes included) (part 31/32) | 1160×1408 | 2177 |
+| review/shots/FY6-sovella-page-1280-32.png | #134 the whole page at 1280 px, every box open (teacher's notes included) (part 32/32) | 1160×209 | 323 |
 
-## Report: write `content/fi/FY6/sovella/review/visual.md` (format and severities: .claude/agents/visual-editorial-reviewer.md), under 400 words
+## Report: write `content/fi/FY6/sovella/review/visual.md` with the Write tool (format and severities: .claude/agents/visual-editorial-reviewer.md), under 400 words; a report only in your reply is not recorded: the gate reads the file
 Line 1 `VERDICT: PASS` or `VERDICT: FAIL`; line 2 `CONTENT-HASH: <output of python3 scripts/practice.py hash FY6>` run at the start and again at the end. Then `## Blocking` (FAIL if and only if non-empty; `[Critical|Major] file/figure — problem — why it matters — fix`), `## Polish` (at most five `[Minor]`), `## Checked` (the captures you opened; at most ten lines), `## Scores` (illustrations · typography · Finnish · accessibility, 1–5). A PASS needs the captures: if you could not look, FAIL with `visual verification incomplete`. Never edit any file but your report.
