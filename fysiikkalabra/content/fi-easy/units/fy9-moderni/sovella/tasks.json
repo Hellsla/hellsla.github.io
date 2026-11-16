@@ -1,5 +1,5 @@
 {
-  "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa yhteen tunnin asiat: fotonit, atomit, ytimet ja säteilyn. Ratkaise tehtävät samalla tavalla kuin kokeessa. Nimeä ilmiö ja malli, ja perustele, miksi malli sopii tilanteeseen. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "intro": "Seitsemän ylioppilaskokeen tyylistä tehtävää kokoaa yhteen tunnin asiat: fotonit, atomit, ytimet ja säteilyn. Ratkaise tehtävät samalla tavalla kuin kokeessa. Nimeä ilmiö ja malli, ja perustele, miksi malli sopii tilanteeseen. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis. Viimeinen tehtävä on soveltava aineistotehtävä. Sen lähde avautuu tehtävän linkistä.",
   "tasks": [
     {
       "id": "fy9-moderni-s1",
@@ -65,7 +65,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$A = 2400\\,\\tfrac{\\text{Bq}}{\\text{kg}} \\cdot \\left(\\tfrac12\\right)^{36 : 30{,}1} = 2400\\,\\tfrac{\\text{Bq}}{\\text{kg}} \\cdot 0{,}4365$"
+              "detail": "$$\n\\begin{aligned}\nA &= 2400\\,\\tfrac{\\text{Bq}}{\\text{kg}} \\cdot \\left(\\tfrac12\\right)^{36 : 30{,}1} \\\\\n&= 2400\\,\\tfrac{\\text{Bq}}{\\text{kg}} \\cdot 0{,}4365\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -93,7 +93,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$1048\\,\\tfrac{\\text{Bq}}{\\text{kg}} \\cdot 5{,}0\\,\\text{kg} = 5240\\,\\text{Bq}$ ja $5240\\,\\text{Bq} \\cdot 1{,}3 \\cdot 10^{-8}\\,\\tfrac{\\text{Sv}}{\\text{Bq}} \\approx 6{,}8 \\cdot 10^{-5}\\,\\text{Sv}$"
+              "detail": "$1048\\,\\tfrac{\\text{Bq}}{\\text{kg}} \\cdot 5{,}0\\,\\text{kg} = 5240\\,\\text{Bq}$ ja $$\n\\begin{aligned}\n&5240\\,\\text{Bq} \\cdot 1{,}3 \\cdot 10^{-8}\\,\\tfrac{\\text{Sv}}{\\text{Bq}} \\\\\n&\\approx 6{,}8 \\cdot 10^{-5}\\,\\text{Sv}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -177,7 +177,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$E_3 - E_2 = 1{,}889\\,\\text{eV} = 3{,}026 \\cdot 10^{-19}\\,\\text{J}$"
+              "detail": "$$\n\\begin{aligned}\n&E_3 - E_2 \\\\\n&= 1{,}889\\,\\text{eV} \\\\\n&= 3{,}026 \\cdot 10^{-19}\\,\\text{J}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -219,7 +219,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "$z = \\dfrac{671{,}8\\,\\text{nm} - 656{,}3\\,\\text{nm}}{656{,}3\\,\\text{nm}} = 0{,}0236$, $v \\approx 7080\\,\\text{km/s}$ ja $d = \\dfrac{7080\\,\\text{km/s}}{70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}} \\approx 101\\,\\text{Mpc}$"
+              "detail": "$$\n\\begin{aligned}\nz &= \\dfrac{671{,}8\\,\\text{nm} - 656{,}3\\,\\text{nm}}{656{,}3\\,\\text{nm}} \\\\\n&= 0{,}0236\n\\end{aligned}\n$$, $v \\approx 7080\\,\\text{km/s}$ ja $d = \\dfrac{7080\\,\\text{km/s}}{70\\,\\tfrac{\\text{km/s}}{\\text{Mpc}}} \\approx 101\\,\\text{Mpc}$"
             },
             {
               "key": "units_precision",
@@ -252,7 +252,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$\\lambda = 486{,}1\\,\\text{nm} \\cdot 1{,}0236 \\approx 497{,}6\\,\\text{nm}$"
+              "detail": "$$\n\\begin{aligned}\n\\lambda &= 486{,}1\\,\\text{nm} \\cdot 1{,}0236 \\\\\n&\\approx 497{,}6\\,\\text{nm}\n\\end{aligned}\n$$"
             }
           ]
         },
@@ -694,7 +694,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "$\\eta = \\dfrac{1600\\,\\text{MW}}{4300\\,\\text{MW}} \\approx 0{,}372$; $E_\\text{f} = 200 \\cdot 10^{6} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 3{,}204 \\cdot 10^{-11}\\,\\text{J}$ ja $\\dfrac{N}{t} \\approx 1{,}34 \\cdot 10^{20}\\,\\tfrac{1}{\\text{s}}$"
+              "detail": "$\\eta = \\dfrac{1600\\,\\text{MW}}{4300\\,\\text{MW}} \\approx 0{,}372$; $$\n\\begin{aligned}\nE_\\text{f} &= 200 \\cdot 10^{6} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} \\\\\n&= 3{,}204 \\cdot 10^{-11}\\,\\text{J}\n\\end{aligned}\n$$ ja $\\dfrac{N}{t} \\approx 1{,}34 \\cdot 10^{20}\\,\\tfrac{1}{\\text{s}}$"
             },
             {
               "key": "units_precision",
@@ -731,7 +731,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$1{,}342 \\cdot 10^{20}\\,\\tfrac{1}{\\text{s}} \\cdot 3{,}156 \\cdot 10^{7}\\,\\text{s} \\cdot 235 \\cdot 1{,}661 \\cdot 10^{-27}\\,\\text{kg} \\approx 1650\\,\\text{kg}$ ja $\\Delta m = \\dfrac{4{,}3 \\cdot 10^{9}\\,\\text{W} \\cdot 3{,}156 \\cdot 10^{7}\\,\\text{s}}{(2{,}998 \\cdot 10^{8}\\,\\text{m/s})^2} \\approx 1{,}5\\,\\text{kg}$"
+              "detail": "$$\n\\begin{aligned}\n&1{,}342 \\cdot 10^{20}\\,\\tfrac{1}{\\text{s}} \\cdot 3{,}156 \\cdot 10^{7}\\,\\text{s} \\\\\n&\\cdot 235 \\cdot 1{,}661 \\cdot 10^{-27}\\,\\text{kg} \\\\\n&\\approx 1650\\,\\text{kg}\n\\end{aligned}\n$$ ja $$\n\\begin{aligned}\n\\Delta m &= \\dfrac{4{,}3 \\cdot 10^{9}\\,\\text{W} \\cdot 3{,}156 \\cdot 10^{7}\\,\\text{s}}{(2{,}998 \\cdot 10^{8}\\,\\text{m/s})^2} \\\\\n&\\approx 1{,}5\\,\\text{kg}\n\\end{aligned}\n$$"
             },
             {
               "text": "Tulkitsee, että vain noin $0{,}09\\,\\%$ fissioituneen uraanin massasta muuttuu energiaksi. Loput jää fissiotuotteiksi ja neutroneiksi, koska massaluku säilyy.",
@@ -769,7 +769,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\dfrac{m}{t} = \\dfrac{2{,}7 \\cdot 10^{9}\\,\\text{W}}{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 11\\,\\text{K}} \\approx 5{,}86 \\cdot 10^{4}\\,\\tfrac{\\text{kg}}{\\text{s}}$"
+              "detail": "$$\n\\begin{aligned}\n\\dfrac{m}{t} &= \\dfrac{2{,}7 \\cdot 10^{9}\\,\\text{W}}{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 11\\,\\text{K}} \\\\\n&\\approx 5{,}86 \\cdot 10^{4}\\,\\tfrac{\\text{kg}}{\\text{s}}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -797,7 +797,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$m = \\dfrac{1{,}6 \\cdot 10^{9}\\,\\text{W} \\cdot 3{,}156 \\cdot 10^{7}\\,\\text{s}}{0{,}40 \\cdot 24 \\cdot 10^{6}\\,\\tfrac{\\text{J}}{\\text{kg}}} \\approx 5{,}3 \\cdot 10^{9}\\,\\text{kg}$"
+              "detail": "$$\n\\begin{aligned}\nm &= \\dfrac{1{,}6 \\cdot 10^{9}\\,\\text{W} \\cdot 3{,}156 \\cdot 10^{7}\\,\\text{s}}{0{,}40 \\cdot 24 \\cdot 10^{6}\\,\\tfrac{\\text{J}}{\\text{kg}}} \\\\\n&\\approx 5{,}3 \\cdot 10^{9}\\,\\text{kg}\n\\end{aligned}\n$$"
             },
             {
               "key": "reasonableness",
@@ -811,6 +811,161 @@
         "math": "fy8-11",
         "concept": "fy8-10",
         "transfer": "fy3-15"
+      }
+    },
+    {
+      "id": "fy9-moderni-s7",
+      "title": "Tuottiko fuusioreaktori enemmän energiaa kuin kulutti?",
+      "source": "statistics",
+      "source_note": "Yle Uutiset 12.12.2022, fuusiokoetta käsittelevä artikkeli (https://yle.fi/a/3-12684377). Tarkistettu 16.11.2026. Laserlaitteisto otti sähköverkosta noin $300\\,\\text{MJ}$. Tämän tiedon laboratorio ilmoitti joulukuussa 2022, eikä sitä ole artikkelissa.",
+      "skills": [
+        "fy8-11",
+        "fy8-10",
+        "fy3-6",
+        "fy2-4"
+      ],
+      "text": "Joulukuussa 2022 uutisissa kerrottiin fuusiotutkimuksen läpimurrosta. Avaa [Yle Uutisten artikkeli fuusiokokeesta](https://yle.fi/a/3-12684377) (12.12.2022, päivitetty 13.12.2022). Lue artikkeli kokonaan. Lue myös korjausmerkintä, joka on artikkelin lopussa.\n\nAineiston mukaan (tarkistettu 16.11.2026) kokeessa oli kaksi energiaa: $3{,}15\\,\\text{MJ}$ ja $2{,}05\\,\\text{MJ}$. Artikkeli vertaa suurempaa energiaa siihen, että kiehautetaan muutama kattilallinen vettä.\n\nLisätietoja:\n\n- Veden ominaislämpökapasiteetti on $4{,}19\\,\\tfrac{\\text{kJ}}{\\text{kg}\\cdot\\text{K}}$.\n- Laboratorion mukaan laserlaitteisto otti laukausta varten sähköverkosta noin $300\\,\\text{MJ}$. Tätä tietoa ei ole artikkelissa.\n- Lämpövoimala muuttaa sähköksi noin kolmasosan energiasta, jonka se saa lämpönä.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "word",
+          "points": 2,
+          "text": "Selvitä aineistosta, miten fuusioreaktio saatiin aikaan. Kumpi aineiston energioista vapautui fuusioreaktiossa? Mitä toinen energia tarkoittaa?",
+          "criteria": [
+            {
+              "text": "Kertoo aineiston perusteella, että suurten laserien säteet kohdistettiin pisteeseen, jossa polttoaine oli. Kertoo myös, että fuusiossa ytimet yhdistyvät raskaammiksi ytimiksi: syntyy heliumia ja energiaa vapautuu.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Tulkitsee energiat: $3{,}15\\,\\text{MJ}$ vapautui fuusioreaktiossa. $2{,}05\\,\\text{MJ}$ on energia, jonka laserit toivat polttoaineeseen. Siinä ei ole mukana energiaa, joka kului laserien toimintaan.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Laske energioiden suhde ja erotus. Mitä ne kertovat kokeen tuloksesta?",
+          "answer": [
+            {
+              "name": "ratio",
+              "value": 1.537,
+              "unit": "",
+              "tolerance": 0.02
+            },
+            {
+              "name": "diff",
+              "value": 1.1,
+              "unit": "MJ",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$\\dfrac{E_\\text{f}}{E_\\text{l}}$ ja $\\Delta E = E_\\text{f} - E_\\text{l}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\dfrac{3{,}15\\,\\text{MJ}}{2{,}05\\,\\text{MJ}} \\approx 1{,}54$ ja $3{,}15\\,\\text{MJ} - 2{,}05\\,\\text{MJ} = 1{,}10\\,\\text{MJ}$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Fuusiossa vapautui noin $1{,}5$-kertainen energia. Se on $1{,}10\\,\\text{MJ}$ enemmän kuin laserit toivat polttoaineeseen. Suhde on suurempi kuin $1$. Tämä oli kokeen uusi tulos."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Tarkista artikkelin vertailu laskemalla. Energia $3{,}15\\,\\text{MJ}$ lämmittää vettä lämpötilasta $20\\,{}^\\circ\\text{C}$ kiehumispisteeseen $100\\,{}^\\circ\\text{C}$. Kuinka suuren vesimäärän se lämmittää? Pitääkö vertailu paikkansa?",
+          "answer": {
+            "value": 9.4,
+            "unit": "kg",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$Q = c_\\text{v}m\\Delta T$, joten $m = \\dfrac{Q}{c_\\text{v}\\Delta T}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nm &= \\dfrac{3{,}15 \\cdot 10^{6}\\,\\text{J}}{4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}} \\cdot 80\\,\\text{K}} \\\\\n&\\approx 9{,}40\\,\\text{kg}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "noin $9{,}4\\,\\text{kg}$ eli noin $9{,}4$ litraa"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Vertailu pitää paikkansa. Noin $9$ litraa on muutama kattilallinen, esimerkiksi kolme kolmen litran kattilallista."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Selitä, miksi tulos ei osoita, että koko koelaitteisto olisi tuottanut enemmän energiaa kuin se kulutti. Käytä perusteluna aineistoa ja sähköenergiaa, jonka laboratorio ilmoitti. Arvioi myös, kuinka paljon sähköenergiaa vapautuneesta energiasta saataisiin lämpövoimalan hyötysuhteella.",
+          "criteria": [
+            {
+              "text": "Rajaa systeemin: vertailu $3{,}15\\,\\text{MJ} > 2{,}05\\,\\text{MJ}$ koskee vain polttoainetta. Aineiston mukaan luvussa ei ole mukana energiaa, joka kului laserien toimintaan.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$\\dfrac{3{,}15\\,\\text{MJ}}{300\\,\\text{MJ}} \\approx 0{,}01$: fuusiossa vapautui noin $1\\,\\%$ energiasta, jonka laitteisto otti sähköverkosta."
+            },
+            {
+              "text": "Toteaa, että vapautunutta energiaa ei muutettu sähköksi. Lämpövoimalan hyötysuhteella sähköä saataisiin noin $1\\,\\text{MJ}$. Se on alle puoli prosenttia energiasta, joka otettiin verkosta.",
+              "tag": "transfer",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "Toinen verkkojulkaisu voisi otsikoida saman kokeen näin: ”Fuusiovoimala tuottaa jo enemmän energiaa kuin kuluttaa.” Otsikko on keksitty tätä tehtävää varten. Mitä otsikossa pitäisi täsmentää? Käytä esimerkkinä artikkelin omaa korjausmerkintää. Selitä myös, miksi kokeen tulos ei riko energian säilymistä.",
+          "criteria": [
+            {
+              "text": "Täsmentää, että kyseessä on yksittäinen laboratoriokoe eikä voimala. Perusteluksi käy esimerkiksi tämä: sähköä ei tuotettu. Perusteluksi käy myös tämä: aineiston mukaan sähköverkkoon kytketty fuusiovoimala on vielä vuosikymmenten päässä.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Täsmentää, että ”enemmän kuin kuluttaa” pätee vain polttoaineen energiataseeseen. Liittää tämän artikkelin korjausmerkintään: otsikkoa ja tekstiä muutettiin, jotta lukija ei luule, että laserien energia on luvussa mukana.",
+              "tag": "communication",
+              "points": 1
+            },
+            {
+              "text": "Selittää, että energia säilyy. Ylimääräinen energia vastaa sitä, että ytimien massa pienenee fuusiossa, $E = \\Delta m c^2$. Energia ei synny tyhjästä.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy8-11",
+        "math": "fy3-6",
+        "transfer": "fy3-15",
+        "communication": "fy8-11"
       }
     }
   ]

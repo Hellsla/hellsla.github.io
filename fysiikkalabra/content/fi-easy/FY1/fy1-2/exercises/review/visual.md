@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 06e2bb3f719a5f7d
+CONTENT-HASH: 226c539fa114bd81
+SCOPE: delta added-exercise from 46d8fb2ad4c08785 base 9df3f06ae3cc
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-2-L1-10 Vastaus — "Signaalin matka ei ole tarkalleen se, joten kolme merkitsevää numeroa riittää." The pronoun "se" is vague for an S2 reader; "Kuun etäisyys MAFY-taulukossa on keskiarvo keskipisteestä keskipisteeseen" is also heavy. Suggest: "Taulukon arvo on Kuun ja Maan keskipisteiden välinen keskietäisyys. Signaalin todellinen matka on hieman erilainen, joten kolme merkitsevää numeroa riittää."
-- [Minor] fy1-2-L1-10 Annettu — "taulukosta (MAFY-taulukko, Aurinkokunta) Kuun keskietäisyys Maasta $s = …$" still runs together (noted in earlier rounds) — "Kuun keskietäisyys Maasta (MAFY-taulukko, Aurinkokunta): $s = …$".
-- [Minor] fy1-2-L1-10 — the data has four significant figures but the answer is given with three; the new Vastaus paragraph explains it, so this is consistent. Optional: say "pyöristetään kolmeen merkitsevään numeroon" so the step is visible.
+- [Minor] fy1-2-L2-08 Mallivastaus b) — "ne ovat sitä suurempia, mitä kauemmin kappaleet muuttuvat" is vague for an S2 reader — "Ero kasvaa sitä mukaa, kun kappaleet muuttuvat vuosien kuluessa."
+- [Minor] fy1-2-L2-08 Muunnokset — the two conversions stack in one panel with their own rows; fine, but "25 µg" row could be separated by a blank line as in the capture (already is); no action unless the panel is reworked.
 
 ## Checked
-- Delta, fresh captures (screenshot.py run at start): fy1-2-open-exercises-1280-9 (task 2-10: text, hint, answer chip "t ≈ 1,28 s", Annettu, Kaava) and -10 (Muunnokset, Sijoitus, Vastaus, Järkevyys), solution open.
-- Changed value: answer chip, Sijoitus chain "= 1,282 s ≈ 1,28 s" (aligned rows, fraction legible), boxed Vastaus "t ≈ 1,28 s" and the "kolmella merkitsevällä numerolla" text agree; ±4 % tolerance unchanged. Decimal comma, upright units, thin spaces and \cdot are correct; layout intact, no clipping.
+- fy1-2 L2 captures 1280 px, parts 9, 10, 11 (task 2-18 text, input, Annettu, Kaava, Muunnokset, Sijoitus rows, Mallivastaus a–d, Vastaus, Järkevyys): KaTeX renders, equals aligned, units upright, decimal comma, nothing clipped.
+- No new figure. The 352-360 px and 1024-1920 px captures of the open solution are not in the packet; check_layout.py --width 360 was run (whole site, summary only) and showed no failure of this lesson's exercises that I could read.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

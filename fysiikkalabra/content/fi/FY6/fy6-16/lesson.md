@@ -172,7 +172,7 @@
 ## Ydinajatus
 
 ### Akku, teho ja latausaika
-Sähköauton akku on suuri litiumioniakku (luku *Akut ja latauspiiri*). Tässä luvussa käytetään esimerkkiautoa, jonka akun nimellisjännite on $400\,\text{V}$ ja kapasiteetti $160\,\text{Ah}$. Akun energia on silloin $W = UQ = 400\,\text{V} \cdot 160\,\text{Ah} = 64\,\text{kWh}$, ja se riittää noin $350\,\text{km}$:n ajoon, kun auto käyttää $18\,\text{kWh}$ sadalla kilometrillä. Akkuun mahtuu siis yhtä paljon energiaa kuin $6\,\text{kW}$:n kiuas käyttää yli kymmenessä tunnissa.
+Sähköauton akku on suuri litiumioniakku (luku *Akut ja latauspiiri*). Tässä luvussa käytetään esimerkkiautoa, jonka akun nimellisjännite on $400\,\text{V}$ ja kapasiteetti $160\,\text{Ah}$. Akun energia on silloin $$\begin{aligned} W &= UQ \\ &= 400\,\text{V} \cdot 160\,\text{Ah} \\ &= 64\,\text{kWh} \end{aligned}$$, ja se riittää noin $350\,\text{km}$:n ajoon, kun auto käyttää $18\,\text{kWh}$ sadalla kilometrillä. Akkuun mahtuu siis yhtä paljon energiaa kuin $6\,\text{kW}$:n kiuas käyttää yli kymmenessä tunnissa.
 
 Latausaika riippuu siitä, kuinka paljon energiaa akkuun pitää siirtää ja kuinka suurella teholla se tehdään. Latauksessa osa verkosta otetusta energiasta ei päädy akkuun, vaan muuttuu auton laturin, johtojen ja akun sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Kotilatauksen hyötysuhde on tyypillisesti noin $80\text{–}95\,\%$, ja se jää aina alle $100\,\%$. Verkosta on siksi otettava enemmän energiaa kuin akkuun varastoituu.
 
@@ -181,7 +181,7 @@ Latausaika riippuu siitä, kuinka paljon energiaa akkuun pitää siirtää ja ku
 ### Yksi vaihe vai kolme
 Suomalaiseen omakotitaloon tulee yleensä **kolmivaihesähkö**: kolme vaihejohdinta $\text{L}_1$, $\text{L}_2$ ja $\text{L}_3$ sekä nollajohdin $\text{N}$. Jokaisen vaihejohtimen ja nollajohtimen välillä on jännite $230\,\text{V}$. Tavallinen pistorasia ja vedenkeitin käyttävät yhtä vaihetta, kiuas ja latausasema yleensä kaikkia kolmea. Kun laite ottaa jokaisesta vaihejohtimesta saman virran $I$, jokainen vaihe siirtää tehon $UI$, ja kokonaisteho on kolminkertainen. Vaihejohtimien välinen jännite on $400\,\text{V}$, mutta sitä ei tässä tarvita.
 
-Laitteen virta saadaan tehosta kuten luvussa *Sähköenergia kotona*: yhdessä vaiheessa $I = P : U$. Tavallisesta pistorasiasta ladattaessa latauskaapeli rajoittaa virran yleensä noin $8\,\text{A}$:iin, jolloin teho on $230\,\text{V} \cdot 8\,\text{A} \approx 1{,}8\,\text{kW}$. Yksivaiheinen latausasema, jonka virta on $16\,\text{A}$, lataa teholla noin $3{,}7\,\text{kW}$, ja kolmivaiheinen samalla virralla kolminkertaisella teholla, noin $11\,\text{kW}$. Sama $40\,\text{kWh}$:n lataus kestää pistorasiasta yli vuorokauden, kolmivaiheisella asemalla noin neljä tuntia.
+Laitteen virta saadaan tehosta kuten luvussa *Sähköenergia kotona*: yhdessä vaiheessa $I = P : U$. Tavallisesta pistorasiasta ladattaessa latauskaapeli rajoittaa virran yleensä noin $8\,\text{A}$:iin, jolloin teho on $230\,\text{V} \cdot 8\,\text{A} \approx 1{,}8\,\text{kW}$. Yksivaiheinen latausasema, jonka virta on $16\,\text{A}$, lataa teholla noin $3{,}7\,\text{kW}$, ja kolmivaiheinen samalla virralla kolminkertaisella teholla, noin $11\,\text{kW}$. Sama $40\,\text{kWh}$:n lataus kestää pistorasiasta yli vuorokauden, kun latauksen häviöt otetaan huomioon, kolmivaiheisella asemalla noin neljä tuntia.
 
 ### Kodin sähköjärjestelmä
 Sähköverkosta tuleva kaapeli kulkee mittarin kautta **sähkökeskukseen**. Keskuksessa ovat ensin **pääsulakkeet**, yksi kussakin vaihejohtimessa, esimerkiksi $3 \cdot 25\,\text{A}$. Niiden jälkeen virta jakautuu **ryhmiin**: jokaisella ryhmällä on oma johtonsa ja oma sulakkeensa tai johdonsuojakatkaisijansa, esimerkiksi $10\,\text{A}$ tai $16\,\text{A}$. Sulake suojaa johtoa: se katkaisee virran, ennen kuin virta lämmittää johtoa vaarallisesti (luku *Sähköturvallisuus kotona ja työssä*). Siksi sulakkeen koko valitaan johdon poikkipinta-alan mukaan, eikä tilalle saa vaihtaa suurempaa.
@@ -455,7 +455,7 @@ Esimerkkiauton akun energia on $64\,\text{kWh}$. Akku ladataan yöllä varaustas
 
 <!-- vaihe -->
 
-**Tulos.** Lataus kestää noin $3{,}9\,\text{h}$ ja maksaa noin $6{,}4\,\text{€}$. Verkosta otetaan $38{,}4\,\text{kWh} : 0{,}90 \approx 42{,}7\,\text{kWh}$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla kuten hyötysuhde $0{,}90$ ja hinta $15\,\text{snt/kWh}$.
+**Tulos.** Lataus kestää noin $3{,}9\,\text{h}$ ja maksaa noin $6{,}4\,\text{€}$. Verkosta otetaan $$\begin{aligned} &38{,}4\,\text{kWh} : 0{,}90 \\ &\approx 42{,}7\,\text{kWh} \end{aligned}$$. Tulokset ilmoitetaan kahdella merkitsevällä numerolla kuten hyötysuhde $0{,}90$ ja hinta $15\,\text{snt/kWh}$.
 
 <!-- vaihe -->
 

@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e8571d0ddd50133c
-ROUND: 2
+CONTENT-HASH: b9b54603a99e5e91
 
 ## Blocking
 (none)
@@ -9,7 +8,9 @@ ROUND: 2
 (none)
 
 ## Checked
-- Round 2, delta. Opened fy3-16-open-exercises-1280-9 (L1-09: new task text, Vihje, whole solution). Text and solution agree (keittolevy, 0,30 kg, 678 kJ vs 680 kJ explained); the Järkevyys sentence ends cleanly, ambiguous round-1 sentence in L2-09 is outside this delta. Hash same at start and end.
+- Round 1, delta. Captured at 390 and 1280 px every re-set formula of the set (paragraphs with an aligned display, 16 blocks per width, in contact sheets) and read them: no clipping, equals signs in one column, continuation rows begin with an operator, no number or unit broken, the punctuation after a display stays on the last row, wide screens join rows that fit.
+- Captures made with a script from the current preview build (the stored shots hold no 390 px solutions); the stored 1280 px captures were not needed beyond fy3-9.
+- Hash same at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

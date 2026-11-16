@@ -28,7 +28,9 @@
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $F_\text{avg} = \dfrac{82.0\,\text{kg} \cdot 15.0\,\tfrac{\text{m}}{\text{s}}}{1.6\,\text{s}} = \dfrac{1230\,\text{kg} \cdot \text{m/s}}{1.6\,\text{s}} = 768.8\,\text{N}$. The weight is $mg = 82.0\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} = 804.4\,\text{N}$, and the ratio is $768.8\,\text{N} : 804.4\,\text{N} \approx 0.96$.
 **Answer:** $F_\text{avg} \approx 770\,\text{N}$, two significant figures like the braking time $1.6\,\text{s}$. The force is almost as large as the combined weight of the rider, the harness and the trolley.
-**Reasonableness:** The deceleration is $15.0\,\text{m/s} : 1.6\,\text{s} \approx 9.4\,\text{m/s}^2$, about the same as the acceleration of free fall. It feels like a strong but short jerk, and the harness spreads the force over the whole body.
+**Reasonableness:** The deceleration is $$
+15.0\,\text{m/s} : 1.6\,\text{s} \approx 9.4\,\text{m/s}^2
+$$, about the same as the acceleration of free fall. It feels like a strong but short jerk, and the harness spreads the force over the whole body.
 
 ### d)
 **Find:** whether the attendant's claim and its reasoning are correct
@@ -54,7 +56,13 @@
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $\mu = \dfrac{\left(2.40\,\tfrac{\text{m}}{\text{s}}\right)^2 - \left(0.62\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 27.0\,\text{m}} = \dfrac{5.376\,\tfrac{\text{m}^2}{\text{s}^2}}{529.7\,\tfrac{\text{m}^2}{\text{s}^2}} = 0.01015$
 **Answer:** $\mu \approx 0.010$, two significant figures like the speed $0.62\,\text{m/s}$.
-**Reasonableness:** The coefficient of friction is very small, as it should be for a stone sliding on smooth ice: friction is only about one per cent of the stone's weight. The work done by friction is $-0.01015 \cdot 19.0\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 27.0\,\text{m} \approx -51\,\text{J}$, and the kinetic energy decreased by exactly that much: $\tfrac12 \cdot 19.0\,\text{kg} \cdot (5.76 - 0.384)\,\tfrac{\text{m}^2}{\text{s}^2} \approx 51\,\text{J}$.
+**Reasonableness:** The coefficient of friction is very small, as it should be for a stone sliding on smooth ice: friction is only about one per cent of the stone's weight. The work done by friction is $$
+\begin{aligned}
+&-0.01015 \cdot 19.0\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \\
+&\cdot 27.0\,\text{m} \\
+&\approx -51\,\text{J}
+\end{aligned}
+$$, and the kinetic energy decreased by exactly that much: $\tfrac12 \cdot 19.0\,\text{kg} \cdot (5.76 - 0.384)\,\tfrac{\text{m}^2}{\text{s}^2} \approx 51\,\text{J}$.
 
 ### b)
 **Given:** mass of each stone $m = 19.0\,\text{kg}$; before, $v_1 = 0.62\,\text{m/s}$ and the other stone at rest; after, the velocity of the thrown stone $v_1' = 0.05\,\text{m/s}$ in the same direction
@@ -62,7 +70,13 @@
 **Principle:** The forces between the stones are internal. The collision lasts only an instant, and friction is small, so the impulse of the external forces is negligible and the total momentum is conserved (chapter *Conservation of momentum and one-dimensional collisions*). The collision is elastic if kinetic energy is also conserved. The direction of the throw is positive.
 **Formula:** $mv_1 = mv_1' + mv_2'$, so the mass cancels and $v_2' = v_1 - v_1'$; kinetic energies $E_\text{k} = \tfrac12 mv_1^2$ and $E_\text{k}' = \tfrac12 mv_1'^2 + \tfrac12 mv_2'^2$; share $\dfrac{E_\text{k}'}{E_\text{k}}$
 **Conversions:** The quantities are in base units, so no conversions are needed.
-**Substitution:** $v_2' = 0.62\,\tfrac{\text{m}}{\text{s}} - 0.05\,\tfrac{\text{m}}{\text{s}} = 0.57\,\text{m/s}$. Kinetic energies: $E_\text{k} = \tfrac12 \cdot 19.0\,\text{kg} \cdot \left(0.62\,\tfrac{\text{m}}{\text{s}}\right)^2 = 3.652\,\text{J}$ and $E_\text{k}' = \tfrac12 \cdot 19.0\,\text{kg} \cdot \left[\left(0.05\,\tfrac{\text{m}}{\text{s}}\right)^2 + \left(0.57\,\tfrac{\text{m}}{\text{s}}\right)^2\right] = 3.110\,\text{J}$, so $E_\text{k}' : E_\text{k} = 0.852$.
+**Substitution:** $v_2' = 0.62\,\tfrac{\text{m}}{\text{s}} - 0.05\,\tfrac{\text{m}}{\text{s}} = 0.57\,\text{m/s}$. Kinetic energies: $E_\text{k} = \tfrac12 \cdot 19.0\,\text{kg} \cdot \left(0.62\,\tfrac{\text{m}}{\text{s}}\right)^2 = 3.652\,\text{J}$ and $$
+\begin{aligned}
+E_\text{k}' &= \tfrac12 \cdot 19.0\,\text{kg} \\
+&\cdot \left[\left(0.05\,\tfrac{\text{m}}{\text{s}}\right)^2 + \left(0.57\,\tfrac{\text{m}}{\text{s}}\right)^2\right] \\
+&= 3.110\,\text{J}
+\end{aligned}
+$$, so $E_\text{k}' : E_\text{k} = 0.852$.
 **Answer:** $v_2' \approx 0.57\,\text{m/s}$ in the direction of the throw. The result is a difference, so it is precise to a hundredth of a metre per second: the $0.05\,\text{m/s}$ read from the video is known only to about $0.01\,\text{m/s}$, and that limits the result. About $85\,\%$ of the kinetic energy is conserved, so the collision is not perfectly elastic but close to it.
 **Reasonableness:** In a perfectly elastic collision stones of equal mass would exchange velocities: the thrown stone would stop, and the other would move on at $0.62\,\text{m/s}$. Granite is hard, so an almost elastic collision is to be expected, and about $0.5\,\text{J}$ is transformed into sound and internal energy of the stones.
 
@@ -74,7 +88,12 @@
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $s_2 = \dfrac{\left(0.57\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 0.01015 \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2}} = \dfrac{0.3249\,\tfrac{\text{m}^2}{\text{s}^2}}{0.1991\,\tfrac{\text{m}}{\text{s}^2}} = 1.632\,\text{m}$
 **Answer:** $s_2 \approx 1.6\,\text{m}$, two significant figures like the speed $0.57\,\text{m/s}$.
-**Reasonableness:** With the same friction the sliding distance is proportional to the square of the speed. The thrown stone would have stopped from $2.40\,\text{m/s}$ over the distance $\dfrac{(2.40\,\text{m/s})^2}{2 \cdot 0.01015 \cdot 9.81\,\text{m/s}^2} \approx 28.9\,\text{m}$, and $(0.57 : 2.40)^2 \cdot 28.9\,\text{m} \approx 1.6\,\text{m}$ agrees. The distance is short, because the stone has only about $6\,\%$ of the original kinetic energy left.
+**Reasonableness:** With the same friction the sliding distance is proportional to the square of the speed. The thrown stone would have stopped from $2.40\,\text{m/s}$ over the distance $\dfrac{(2.40\,\text{m/s})^2}{2 \cdot 0.01015 \cdot 9.81\,\text{m/s}^2} \approx 28.9\,\text{m}$, and $$
+\begin{aligned}
+&(0.57 : 2.40)^2 \cdot 28.9\,\text{m} \\
+&\approx 1.6\,\text{m}
+\end{aligned}
+$$ agrees. The distance is short, because the stone has only about $6\,\%$ of the original kinetic energy left.
 
 ### d)
 **Find:** why a swept stone slides further, even though the brooms do not touch the stone
@@ -165,7 +184,13 @@ The dashed line is a curve calculated from the model of parts b and c, drawn onl
 
 ### b)
 **Find:** a quantity formed from the data that is a straight line as a function of the initial speed, its graph and the fitted line
-**Graph:** The model of the stopping distance is $s_\text{p} = v_0 t_\text{r} + v_0^2 : (2a)$ (chapter *Road safety: braking, seat belts and airbags*). Dividing the equation by the speed $v_0$ gives $\tfrac{s_\text{p}}{v_0} = t_\text{r} + \tfrac{1}{2a}\,v_0$: a straight line whose intercept is $t_\text{r}$ and whose slope is $1 : (2a)$. The speeds are converted by substitution, for example $30\,\text{km/h} = 30 \cdot 1000\,\text{m} : 3600\,\text{s} = 8.333\,\text{m/s}$, and then $12.5\,\text{m} : 8.333\,\text{m/s} = 1.50\,\text{s}$. All the values:
+**Graph:** The model of the stopping distance is $s_\text{p} = v_0 t_\text{r} + v_0^2 : (2a)$ (chapter *Road safety: braking, seat belts and airbags*). Dividing the equation by the speed $v_0$ gives $\tfrac{s_\text{p}}{v_0} = t_\text{r} + \tfrac{1}{2a}\,v_0$: a straight line whose intercept is $t_\text{r}$ and whose slope is $1 : (2a)$. The speeds are converted by substitution, for example $$
+\begin{aligned}
+&30\,\text{km/h} \\
+&= 30 \cdot 1000\,\text{m} : 3600\,\text{s} \\
+&= 8.333\,\text{m/s}
+\end{aligned}
+$$, and then $12.5\,\text{m} : 8.333\,\text{m/s} = 1.50\,\text{s}$. All the values:
 
 | $v_0\ (\text{m/s})$ | $s_\text{p}/v_0\ (\text{s})$ |
 |---|---|
@@ -282,12 +307,24 @@ The circled places are the two points of the line from which the slope of part c
 ### b)
 **Find:** whether claim 2 is correct, and what the energy chain of a hydropower plant is
 **Principle:** Energy is conserved: it changes from one form to another but is not created from nothing (chapter *Forms of energy and conservation of energy*). A hydropower plant converts the potential energy $mgh$ of the water into electricity, and the efficiency is at most $100\,\%$ (chapters *Kinetic energy, potential energy and mechanical energy* and *Hydro and wind power as energy converters*).
-**Model answer:** The claim is wrong. The plant does not produce energy from nothing but converts it. The water behind the dam has potential energy compared with the tailwater: one cubic metre of water loses about $1000\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9.0\,\text{m} \approx 88\,\text{kJ}$ in a fall of $9.0\,\text{m}$. In the penstock the potential energy is transformed into kinetic energy, the flowing water turns the turbine, and the turbine turns the generator, which converts the energy of motion into electricity. The energy of the water comes from the Sun: solar radiation evaporates water, which rises into the air and falls as rain at a higher level in the catchment area. So the same water does not circulate through the plant by itself; the Sun “lifts” it again every time. Not all the energy the water loses is converted into electricity: friction in the penstock and the turbine and the heating of the generator transform part of it into internal energy, and the water discharged into the tailwater still has kinetic energy. That is why the efficiency is below $100\,\%$, here $90\,\%$.
+**Model answer:** The claim is wrong. The plant does not produce energy from nothing but converts it. The water behind the dam has potential energy compared with the tailwater: one cubic metre of water loses about $$
+\begin{aligned}
+&1000\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9.0\,\text{m} \\
+&\approx 88\,\text{kJ}
+\end{aligned}
+$$ in a fall of $9.0\,\text{m}$. In the penstock the potential energy is transformed into kinetic energy, the flowing water turns the turbine, and the turbine turns the generator, which converts the energy of motion into electricity. The energy of the water comes from the Sun: solar radiation evaporates water, which rises into the air and falls as rain at a higher level in the catchment area. So the same water does not circulate through the plant by itself; the Sun “lifts” it again every time. Not all the energy the water loses is converted into electricity: friction in the penstock and the turbine and the heating of the generator transform part of it into internal energy, and the water discharged into the tailwater still has kinetic energy. That is why the efficiency is below $100\,\%$, here $90\,\%$.
 
 ### c)
 **Find:** whether claim 3 is correct, and what the present electric power of the plant is
 **Principle:** The electric power of a hydropower plant is $P = \eta \rho Q g h$: the mass of water $\rho Q$ flowing per second loses the potential energy $\rho Q g h$, of which the share $\eta$ is converted into electricity (chapter *Hydro and wind power as energy converters*).
-**Model answer:** The present electric power is $P = 0.90 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{\text{m}^3}{\text{s}} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9.0\,\text{m} \approx 9.54 \cdot 10^{6}\,\text{W} \approx 9.5\,\text{MW}$. The power is directly proportional both to the flow rate $Q$ and to the head $h$. Raising the dam from $9\,\text{m}$ to $12\,\text{m}$ increases the head by a factor of $\dfrac{P'}{P} = \dfrac{h'}{h} = \tfrac{12}{9} = \tfrac43$, that is, by a third, and the power in the same ratio to about $12.7\,\text{MW}$. A flow rate a third larger would increase the power by exactly the same amount. So the claim is correct, provided the efficiency stays the same and raising the dam does not change the flow rate of the river. In practice the flow rate depends on the rainfall and the catchment area, so it cannot be increased, but the height can.
+**Model answer:** The present electric power is $$
+\begin{aligned}
+P &= 0.90 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{\text{m}^3}{\text{s}} \\
+&\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 9.0\,\text{m} \\
+&\approx 9.54 \cdot 10^{6}\,\text{W} \\
+&\approx 9.5\,\text{MW}
+\end{aligned}
+$$. The power is directly proportional both to the flow rate $Q$ and to the head $h$. Raising the dam from $9\,\text{m}$ to $12\,\text{m}$ increases the head by a factor of $\dfrac{P'}{P} = \dfrac{h'}{h} = \tfrac{12}{9} = \tfrac43$, that is, by a third, and the power in the same ratio to about $12.7\,\text{MW}$. A flow rate a third larger would increase the power by exactly the same amount. So the claim is correct, provided the efficiency stays the same and raising the dam does not change the flow rate of the river. In practice the flow rate depends on the rainfall and the catchment area, so it cannot be increased, but the height can.
 
 ### Yleisiä virheitä
 - In part a, the power is assumed to be proportional to the square of the speed, because the kinetic energy is $\tfrac12 mv^2$; this forgets that the amount of air flowing per second also increases.
@@ -309,7 +346,7 @@ The circled places are the two points of the line from which the slope of part c
 ### b)
 **Find:** whether the group's conclusion is justified, and what the difference between the measurements is due to
 **Principle:** The total momentum is conserved when the impulse of the external forces is negligible (chapter *Conservation of momentum and one-dimensional collisions*). In an inelastic collision it is kinetic energy that is transformed, not momentum. A systematic error shifts all the results in the same direction (chapter *Measuring and the reliability of a measurement*).
-**Model answer:** The conclusion is not justified. What is turned into heat and sound in an inelastic collision is kinetic energy: here too about half of the kinetic energy disappeared in test 2. Momentum is not a form of energy, and it cannot be turned into heat. The difference is most likely due to the way of measuring. The common velocity was measured only $0.40$–$0.80\,\text{m}$ after the point of collision, and on an ordinary track rolling resistance slows the trolleys down all the time. Rolling resistance is an external force, so its impulse reduces the momentum while the trolleys travel to the measuring range. This is supported by the difference being systematic, since the momentum decreased in every test, and by the relative difference being largest in the slowest test ($-12\,\%$) and smallest in the fastest ($-3\,\%$). Slow trolleys spend longer on the way, and a resistive force of constant magnitude reduces a small velocity relatively more. The deceleration need not be large: in test 2 the difference corresponds to a deceleration of only about $0.01\,\text{m/s}^2$. So the data do not show that momentum is not conserved.
+**Model answer:** The conclusion is not justified. What is converted into internal energy and sound in an inelastic collision is kinetic energy: here too about half of the kinetic energy disappeared in test 2. Momentum is not a form of energy, and it cannot be converted into internal energy. The difference is most likely due to the way of measuring. The common velocity was measured only $0.40$–$0.80\,\text{m}$ after the point of collision, and on an ordinary track rolling resistance slows the trolleys down all the time. Rolling resistance is an external force, so its impulse reduces the momentum while the trolleys travel to the measuring range. This is supported by the difference being systematic, since the momentum decreased in every test, and by the relative difference being largest in the slowest test ($-12\,\%$) and smallest in the fastest ($-3\,\%$). Slow trolleys spend longer on the way, and a resistive force of constant magnitude reduces a small velocity relatively more. The deceleration need not be large: in test 2 the difference corresponds to a deceleration of only about $0.01\,\text{m/s}^2$. So the data do not show that momentum is not conserved.
 
 ### c)
 **Find:** an improved experimental setup for testing conservation of momentum
@@ -332,7 +369,13 @@ The circled places are the two points of the line from which the slope of part c
 **Conversions:** The quantities are in base units, so no conversions are needed.
 **Substitution:** $v = \sqrt{2 \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0.60\,\text{m}} = \sqrt{11.77\,\tfrac{\text{m}^2}{\text{s}^2}} = 3.431\,\text{m/s}$
 **Answer:** $v \approx 3.4\,\text{m/s}$, two significant figures like the height $0.60\,\text{m}$.
-**Reasonableness:** A drop of half a metre gives a speed of a few metres per second, as for example in a jump from a chair to the floor. The kinetic energy of the ram is $Mgh = 3500\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0.60\,\text{m} \approx 20.6\,\text{kJ}$.
+**Reasonableness:** A drop of half a metre gives a speed of a few metres per second, as for example in a jump from a chair to the floor. The kinetic energy of the ram is $$
+\begin{aligned}
+Mgh &= 3500\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \\
+&\cdot 0.60\,\text{m} \\
+&\approx 20.6\,\text{kJ}
+\end{aligned}
+$$.
 
 ### b)
 **Given:** $M = 3500\,\text{kg}$, $m = 1100\,\text{kg}$, $v = 3.431\,\text{m/s}$, pile at rest; the ram does not bounce
@@ -348,9 +391,23 @@ The circled places are the two points of the line from which the slope of part c
 **Given:** $M + m = 4600\,\text{kg}$, $v' = 2.611\,\text{m/s}$, kinetic energy after the collision $15\,675\,\text{J}$, depth of sinking $s = 18\,\text{mm}$, final speed $0$
 **Find:** the average force $F$ of the ground on the pile
 **Principle:** After the collision the ram and the pile move together through the distance $s$ downwards and stop. The work done by the weight is taken into account as the decrease in potential energy $(M + m)\,gs$. The force of the ground points against the motion, so its work is $-Fs$. By the work–energy principle the initial kinetic and potential energy plus the work done by the ground's force equal the final energy (chapter *Conservation of mechanical energy and the work–energy principle*). The zero level is the final position of the pile head.
-**Formula:** $\tfrac12 (M + m)\,v'^2 + (M + m)\,gs - Fs = 0$, so $F = \dfrac{\tfrac12 (M + m)\,v'^2}{s} + (M + m)\,g$
+**Formula:** $$
+\begin{aligned}
+&\tfrac12 (M + m)\,v'^2 + (M + m)\,gs \\
+&- Fs \\
+&= 0
+\end{aligned}
+$$, so $F = \dfrac{\tfrac12 (M + m)\,v'^2}{s} + (M + m)\,g$
 **Conversions:** $18\,\text{mm} = 18 \cdot 0.001\,\text{m} = 0.018\,\text{m}$ and finally $1\,\text{N} = 0.001\,\text{kN}$
-**Substitution:** $F = \dfrac{15\,675\,\text{J}}{0.018\,\text{m}} + 4600\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} = 870\,800\,\text{N} + 45\,100\,\text{N} = 915\,900\,\text{N} \approx 916\,\text{kN}$
+**Substitution:** $$
+\begin{aligned}
+F &= \dfrac{15\,675\,\text{J}}{0.018\,\text{m}} \\
+&+ 4600\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \\
+&= 870\,800\,\text{N} + 45\,100\,\text{N} \\
+&= 915\,900\,\text{N} \\
+&\approx 916\,\text{kN}
+\end{aligned}
+$$
 **Answer:** $F \approx 0.92\,\text{MN}$, two significant figures like the depth $18\,\text{mm}$.
 **Reasonableness:** The force is about $20$ times the weight of the ram and the pile, $45\,\text{kN}$, because the kinetic energy is stopped over a very short distance. The weight affects the result by only about $5\,\%$, so forgetting it would be a small but real mistake.
 
@@ -360,7 +417,13 @@ The circled places are the two points of the line from which the slope of part c
 **Principle:** The kinetic energy transformed in the collision does not disappear: part of it becomes internal energy of the steel at the top of the pile. When the steel gives off no heat to the surroundings and its state does not change, the increase in internal energy raises the temperature, and $\Delta U = cm\Delta T$ holds (chapter *Heating and cooling of matter*).
 **Formula:** $\Delta U = N k E_\text{loss} = c\,m_\text{t}\,\Delta T$, so $\Delta T = \dfrac{N k E_\text{loss}}{c\,m_\text{t}}$, where $N$ is the number of blows and $k$ is the share that becomes internal energy of the pile top
 **Conversions:** $40\,\% = 0.40$; the other quantities are in base units. A change in temperature is the same in kelvins and in degrees Celsius.
-**Substitution:** $\Delta T = \dfrac{50 \cdot 0.40 \cdot 4926\,\text{J}}{460\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}} \cdot 30\,\text{kg}} = \dfrac{98\,520\,\text{J}}{13\,800\,\tfrac{\text{J}}{\text{K}}} = 7.14\,\text{K}$
+**Substitution:** $$
+\begin{aligned}
+\Delta T &= \dfrac{50 \cdot 0.40 \cdot 4926\,\text{J}}{460\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}} \cdot 30\,\text{kg}} \\
+&= \dfrac{98\,520\,\text{J}}{13\,800\,\tfrac{\text{J}}{\text{K}}} \\
+&= 7.14\,\text{K}
+\end{aligned}
+$$
 **Answer:** $\Delta T \approx 7\,\text{K}$, one significant figure, because the share $40\,\%$ and the warming mass $30\,\text{kg}$ are only estimates. The real warming is smaller: the steel conducts heat to the lower parts of the pile and gives it off to the air between the blows, and part of the energy is transformed into sound and internal energy of the ram.
 **Reasonableness:** One blow warms the top by only about $0.14\,\text{K}$, but there are many blows. A warming of a few degrees fits the fact that the head of the pile feels warm but not hot after a series of blows.
 

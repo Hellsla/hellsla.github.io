@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 66d63bbe91c2aaab
+CONTENT-HASH: fc791a269fb99e11
 
 ## Blocking
 (none)
@@ -8,6 +8,8 @@ CONTENT-HASH: 66d63bbe91c2aaab
 (none)
 
 ## Checked
-- solutions.md: both added "pääsateenkaaren" (Periaate and Järkevyys of the arc-width task) are correct; the calculation is a primary-arc one (one reflection, 4β-2α).
-- Numbers and steps are unchanged; the diagram of the principle still precedes the formulas.
-- Grammar: "punainen on pääsateenkaaren ulkoreunalla" is correct Finnish.
+- Delta: the only change is the removal of the parenthesis "(esimerkkiaineisto)" from the text of fy7-11-L3-05; no number, symbol, question or answer field changed.
+- The sentence reads correctly without it: "Spektrometrin prisma on flinttilasia, jonka taitekerroin on ...".
+- The task still gives every value it needs, the situation comes first and the question last; level 3 demand unchanged.
+- solutions.md never refers to the removed label, so the solution stays consistent with the task; the label on other tasks' data tables is outside this diff and untouched.
+- Language checked: fi. Hash fc791a269fb99e11 at start and end.

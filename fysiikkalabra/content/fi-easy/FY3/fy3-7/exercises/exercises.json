@@ -171,7 +171,7 @@
       "unit": "kJ/kg",
       "tolerance": 0.05,
       "data": {
-        "caption": "Jään lämmitys $600\\,\\text{W}$:n teholla (esimerkkiaineisto)",
+        "caption": "Jään lämmitys $600\\,\\text{W}$:n teholla",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T\\,({}^\\circ\\text{C})$"
@@ -303,6 +303,19 @@
       "answer": 2083.3,
       "unit": "J/(kg·K)",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-7-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "model",
+        "concept"
+      ],
+      "text": "Aineisto: <a href=\"https://phet.colorado.edu/en/simulations/states-of-matter-basics\" target=\"_blank\" rel=\"noopener\">PhET – States of Matter: Basics (Aineen olomuodot: Perusteet)</a> (luettu 16. marraskuuta 2026)\n\nSimulaatio näyttää aineen hiukkasmallin. Hiukkaset ovat palloja säiliössä. Vesi näkyy pieninä molekyyleinä. Avaa simulaatio ja valitse aineeksi vesi. Painikkeilla saat aineen kiinteäksi, nesteeksi tai kaasuksi. Säiliön lämmittimellä voit lämmittää tai jäähdyttää ainetta. Lämpömittari näyttää lämpötilan.\n\na) Katso jokaista kolmea olomuotoa. Vertaa hiukkasten liikettä ja järjestystä kiinteässä aineessa, nesteessä ja kaasussa.\n\nb) Lämmitä kiinteää ainetta. Seuraa, mitä hiukkasten rakenteelle tapahtuu. Selitä hiukkasmallin avulla, miksi aineeseen siirtyvä energia ei olomuodon muutoksen aikana välttämättä nosta aineen lämpötilaa. Tarkastele puhdasta ainetta, joka sulaa vakiopaineessa (paine ei muutu).\n\nc) Simulaation malli ei anna todellisia energiamääriä. Siksi tarkastellaan oikeaa jäätä. Jääpalan massa on $0{,}20\\,\\text{kg}$. Jää on sulamispisteessä $0\\,{}^\\circ\\text{C}$, ja sulamisvesi jää $0\\,{}^\\circ\\text{C}$:n lämpöiseksi. Laske, kuinka paljon energiaa jääpalan sulattamiseen tarvitaan. Käytä jään ominaissulamislämpönä arvoa $334\\,\\text{kJ/kg}$.\n\nd) Arvioi simulaation ja kohdan c) perusteella yksinkertaista hiukkasmallia. Mitä olomuodon muutokseen liittyviä ilmiöitä malli kuvaa hyvin? Mitä se jättää kuvaamatta? Mainitse kummastakin vähintään kaksi asiaa.\n\nVastauskenttään tulee kohdan c) tulos yksikössä $\\text{kJ}$. Kohtien a), b) ja d) vastaukset tarkistat mallivastauksesta.",
+      "answer": 67,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -342,7 +355,7 @@
       "unit": "kJ",
       "tolerance": 0.08,
       "data": {
-        "caption": "Steariinierän jäähtyminen (esimerkkiaineisto)",
+        "caption": "Steariinierän jäähtyminen",
         "columns": [
           "$t\\,(\\text{min})$",
           "$T\\,({}^\\circ\\text{C})$"

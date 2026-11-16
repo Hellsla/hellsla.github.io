@@ -30,7 +30,7 @@
   {
    "id": "fy4-16-L1-04",
    "level": 1,
-   "text": "Pulkka saapuu rinteen juurelta vaakasuoralle lumikentälle nopeudella $6{,}0\\,\\text{m/s}$. Pulkan ja lumen välinen liikekitkakerroin on $0{,}080$, ja ilmanvastus jätetään huomiotta. Kuinka pitkän matkan pulkka liukuu tasaisella ennen kuin pysähtyy?",
+   "text": "Pulkka saapuu rinteen juurelta vaakasuoralle lumikentälle nopeudella $6{,}0\\,\\text{m/s}$. Pulkan ja lumen välinen liukukitkakerroin on $0{,}080$, ja ilmanvastus jätetään huomiotta. Kuinka pitkän matkan pulkka liukuu tasaisella ennen kuin pysähtyy?",
    "answer": 22.93578,
    "unit": "m",
    "tolerance": 0.02,
@@ -39,7 +39,7 @@
   {
    "id": "fy4-16-L1-05",
    "level": 1,
-   "text": "Pulkka liukuu suoraa rinnettä alas tasaisella nopeudella. Pulkan ja lumen välinen liikekitkakerroin on $0{,}15$, ja ilmanvastus jätetään huomiotta. Kuinka suuri on rinteen kaltevuuskulma?",
+   "text": "Pulkka liukuu suoraa rinnettä alas tasaisella nopeudella. Pulkan ja lumen välinen liukukitkakerroin on $0{,}15$, ja ilmanvastus jätetään huomiotta. Kuinka suuri on rinteen kaltevuuskulma?",
    "answer": 8.530766,
    "unit": "°",
    "tolerance": 0.02,
@@ -109,7 +109,7 @@
   {
    "id": "fy4-16-L1-08",
    "level": 1,
-   "text": "Oppilas laskee pulkan liikekitkavoiman suoralla rinteellä. Pulkan massa lapsineen on $20{,}0\\,\\text{kg}$, rinteen kaltevuuskulma $30{,}0\\,{}^\\circ$ ja liikekitkakerroin $0{,}200$. Pulkka liukuu rinnettä alas.\n\nOppilaan ratkaisu: ”Tukivoima on yhtä suuri kuin paino, $N = mg$, joten kitkavoima on $F_\\mu = \\mu mg = 0{,}200 \\cdot 20{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 = 39{,}2\\,\\text{N}$.”\n\nPiirrä pulkan voimakuvio ja etsi oppilaan ratkaisun virhe. Kuinka suuri liikekitkavoima on oikeasti? Vastauslaatikkoon tulee oikea liikekitkavoima.",
+   "text": "Oppilas laskee pulkan liukukitkavoiman suoralla rinteellä. Pulkan massa lapsineen on $20{,}0\\,\\text{kg}$, rinteen kaltevuuskulma $30{,}0\\,{}^\\circ$ ja liukukitkakerroin $0{,}200$. Pulkka liukuu rinnettä alas.\n\nOppilaan ratkaisu: ”Tukivoima on yhtä suuri kuin paino, $N = mg$, joten kitkavoima on $$\\begin{aligned} &F_\\mu = \\mu mg \\\\ &= 0{,}200 \\cdot 20{,}0\\,\\text{kg} \\\\ &\\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &= 39{,}2\\,\\text{N} \\end{aligned}$$.”\n\nPiirrä pulkan voimakuvio ja etsi oppilaan ratkaisun virhe. Kuinka suuri liukukitkavoima on oikeasti? Vastauslaatikkoon tulee oikea liukukitkavoima.",
    "kind": [
     "error"
    ],
@@ -133,7 +133,7 @@
    "id": "fy4-16-L2-02",
    "level": 2,
    "core": true,
-   "text": "Pulkka lähtee levosta suoran rinteen ylimmästä kohdasta. Rinne on $18{,}0\\,\\text{m}$ pitkä ja $12{,}0^\\circ$:n kulmassa vaakatasoon nähden, ja rinteen juurella pulkan nopeus on $5{,}10\\,\\text{m/s}$. Ilmanvastus jätetään huomiotta. Kuinka suuri on pulkan ja lumen välinen liikekitkakerroin?",
+   "text": "Pulkka lähtee levosta suoran rinteen ylimmästä kohdasta. Rinne on $18{,}0\\,\\text{m}$ pitkä ja $12{,}0^\\circ$:n kulmassa vaakatasoon nähden, ja rinteen juurella pulkan nopeus on $5{,}10\\,\\text{m/s}$. Ilmanvastus jätetään huomiotta. Kuinka suuri on pulkan ja lumen välinen liukukitkakerroin?",
    "answer": 0.137262,
    "unit": "",
    "tolerance": 0.02,
@@ -170,7 +170,7 @@
    "tolerance": 0.02,
    "fbd": "equations",
    "data": {
-    "caption": "Hissin nopeus ylöspäin lähdön jälkeen (esimerkkiaineisto)",
+    "caption": "Hissin nopeus ylöspäin lähdön jälkeen",
     "columns": [
      "$t\\,(\\text{s})$",
      "$v\\,(\\text{m/s})$"
@@ -210,7 +210,7 @@
   {
    "id": "fy4-16-L2-06",
    "level": 2,
-   "text": "Pulkka liukuu vaakasuoralla lumella ilman, että sitä työnnetään. Pulkan paikka $x$ mitattiin videolta sekunnin välein hetkestä, jolloin se ohittaa merkityn pisteen. Taulukko on esimerkkiaineisto, ja ilmanvastus jätetään huomiotta.\n\nTasaisesti hidastuvassa liikkeessä aikavälin keskinopeus on yhtä suuri kuin nopeus välin keskellä. Laske pulkan keskinopeus ensimmäisellä ja viimeisellä sekunnilla, päättele niistä pulkan hidastuvuus ja laske pulkan ja lumen välinen liikekitkakerroin.",
+   "text": "Pulkka liukuu vaakasuoralla lumella ilman, että sitä työnnetään. Pulkan paikka $x$ mitattiin videolta sekunnin välein hetkestä, jolloin se ohittaa merkityn pisteen. Taulukko on esimerkkiaineisto, ja ilmanvastus jätetään huomiotta.\n\nTasaisesti hidastuvassa liikkeessä aikavälin keskinopeus on yhtä suuri kuin nopeus välin keskellä. Laske pulkan keskinopeus ensimmäisellä ja viimeisellä sekunnilla, päättele niistä pulkan hidastuvuus ja laske pulkan ja lumen välinen liukukitkakerroin.",
    "kind": [
     "data",
     "graph"
@@ -220,7 +220,7 @@
    "tolerance": 0.05,
    "fbd": "equations",
    "data": {
-    "caption": "Pulkan paikka vaakasuoralla lumella (esimerkkiaineisto)",
+    "caption": "Pulkan paikka vaakasuoralla lumella",
     "columns": [
      "$t\\,(\\text{s})$",
      "$x\\,(\\text{m})$"
@@ -256,7 +256,7 @@
   {
    "id": "fy4-16-L2-07",
    "level": 2,
-   "text": "Oppilas määrittää puisen laatikon ja laudan välisen liikekitkakertoimen. Hän asettaa laudan kaltevaksi, tönäisee laatikon liikkeelle ja säätää kaltevuutta, kunnes tönäisty laatikko jatkaa liukumista tasaisella nopeudella. Sitten hän mittaa laudan kaltevuuskulman. Hän toistaa mittauksen viisi kertaa. Taulukko on esimerkkiaineisto.\n\na) Laske kulman keskiarvo $\\alpha_{\\text{ka}}$ ja sen avulla liikekitkakerroin.\n\nb) Arvioi liikekitkakertoimen vaihteluväli laskemalla kerroin kulmien pienimmästä ja suurimmasta arvosta. Kuinka suuri on kertoimen vaihtelu keskiarvon ympärillä?\n\nVastauslaatikkoon tulee kohdan a) tulos.",
+   "text": "Oppilas määrittää puisen laatikon ja laudan välisen liukukitkakertoimen. Hän asettaa laudan kaltevaksi, tönäisee laatikon liikkeelle ja säätää kaltevuutta, kunnes tönäisty laatikko jatkaa liukumista tasaisella nopeudella. Sitten hän mittaa laudan kaltevuuskulman. Hän toistaa mittauksen viisi kertaa. Taulukko on esimerkkiaineisto.\n\na) Laske kulman keskiarvo $\\alpha_{\\text{ka}}$ ja sen avulla liukukitkakerroin.\n\nb) Arvioi liukukitkakertoimen vaihteluväli laskemalla kerroin kulmien pienimmästä ja suurimmasta arvosta. Kuinka suuri on kertoimen vaihtelu keskiarvon ympärillä?\n\nVastauslaatikkoon tulee kohdan a) tulos.",
    "kind": [
     "experiment",
     "data"
@@ -266,7 +266,7 @@
    "tolerance": 0.03,
    "fbd": "equations",
    "data": {
-    "caption": "Kaltevuuskulma, jolla laatikko liukuu tasaisesti (esimerkkiaineisto)",
+    "caption": "Kaltevuuskulma, jolla laatikko liukuu tasaisesti",
     "columns": [
      "Mittaus",
      "$\\alpha\\,({}^\\circ)$"
@@ -307,7 +307,7 @@
    "unit": "",
    "tolerance": 0.02,
    "data": {
-    "caption": "Pulkan vaakamatka (esimerkkiaineisto)",
+    "caption": "Pulkan vaakamatka",
     "columns": [
      "$m\\,(\\text{kg})$",
      "$h\\,(\\text{m})$",
@@ -374,7 +374,7 @@
   {
    "id": "fy4-16-L3-01",
    "level": 3,
-   "text": "Pulkkamäen huippu on $4{,}50\\,\\text{m}$ korkeammalla kuin mäen juurelta alkava tasainen lumikenttä. Mäen rinne koostuu kahdesta suorasta osasta: ylempi on $25^\\circ$:n ja alempi $10^\\circ$:n kulmassa vaakatasoon nähden.\n\nPulkka lähtee levosta huipulta, ja liikekitkakerroin on $0{,}120$ koko matkalla. Ilmanvastus ja kitkan kasvu rinteen mutkissa jätetään huomiotta.\n\nKuinka kaukana huipusta vaakasuunnassa mitattuna pulkka pysähtyy?",
+   "text": "Pulkkamäen huippu on $4{,}50\\,\\text{m}$ korkeammalla kuin mäen juurelta alkava tasainen lumikenttä. Mäen rinne koostuu kahdesta suorasta osasta: ylempi on $25^\\circ$:n ja alempi $10^\\circ$:n kulmassa vaakatasoon nähden.\n\nPulkka lähtee levosta huipulta, ja liukukitkakerroin on $0{,}120$ koko matkalla. Ilmanvastus ja kitkan kasvu rinteen mutkissa jätetään huomiotta.\n\nKuinka kaukana huipusta vaakasuunnassa mitattuna pulkka pysähtyy?",
    "answer": 37.5,
    "unit": "m",
    "tolerance": 0.02,
@@ -412,7 +412,7 @@
    "tolerance": 0.03,
    "fbd": "equations",
    "data": {
-    "caption": "Pulkkamäen osat (esimerkkiaineisto)",
+    "caption": "Pulkkamäen osat",
     "columns": [
      "Osa",
      "$\\alpha\\,({}^\\circ)$",
@@ -445,7 +445,7 @@
    "tolerance": 0.03,
    "fbd": "equations",
    "data": {
-    "caption": "Hyppääjän nopeus varjon avautumisen jälkeen (esimerkkiaineisto)",
+    "caption": "Hyppääjän nopeus varjon avautumisen jälkeen",
     "columns": [
      "$t\\,(\\text{s})$",
      "$v\\,(\\text{m/s})$"

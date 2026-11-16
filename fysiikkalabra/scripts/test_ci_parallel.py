@@ -132,11 +132,12 @@ r = reports(huge); del r["layout-5"]; rc, text = gate(r, huge); check("gate: a m
 import ci_scope
 
 
-def scoped(names, workflow=()):
-    """ci_scope.scope() of a pull request that changed these files of fysiikkalabra/ and these of .github/."""
+def scoped(names, workflow=(), patch=""):
+    """ci_scope.scope() of a pull request that changed these files of fysiikkalabra/ and these of .github/ (patch: their -U0 diff)."""
     real = ci_scope.git
     def fake(*a):
         if a[0] == "rev-parse": return "/repo\n"
+        if a[0] == "diff" and "-U0" in a: return patch
         if a[0] == "diff" and "--relative" in a: return "\n".join(names)
         if a[0] == "diff": return "\n".join(workflow)
         return real(*a)
@@ -157,6 +158,14 @@ check("scope: the review system's own files test no page", scoped(["scripts/revi
 k, w = scoped(["scripts/reviews.py", "assets/sims/fy4/fy4-1/sim.js", "site/sims/fy4/fy4-1/sim.js", "site/fy4-1.html"]); check("scope: a review rule with one simulation tests that lesson only", k == "pages" and set(w) == {"fy4-1"}, f"{k} {sorted(w)}")
 check("scope: the file that decides what publishes is still a full run", scoped(["docs/visual-baseline.tsv"])[0] == "full")
 k, w = scoped(["site/fy4-3.html", "site/en/fy4-3.html"]); check("scope: without a shared change a re-rendered page is tested", k == "pages" and set(w) == {"fy4-3"}, f"{k} {sorted(w)}")
+def page_patch(name, old, new): return f"diff --git a/{name} b/{name}\n--- a/{name}\n+++ b/{name}\n@@ -3 +3 @@\n-{old}\n+{new}\n"
+V = page_patch("site/fy4-3.html", '<link href="site.css?v=15c5e0f8"><script src="lesson.js?v=bfc68176">', '<link href="site.css?v=0a1b2c3d"><script src="lesson.js?v=99887766">')
+k, w = scoped(["site/fy4-3.html", "site/en/fy4-3.html"], patch=V + page_patch("site/en/fy4-3.html", '<p>old</p>', '<p>new</p>'))
+check("scope: a page whose only change is its ?v= cache tokens is not tested; one with a real change is", k == "pages" and w == {"fy4-3": ["site/en/fy4-3.html"]}, f"{k} {w}")
+k, w = scoped(["site/fy4-3.html"], patch=V); check("scope: ?v= tokens alone test no page", (k, w) == ("pages", {}), f"{k} {w}")
+k, w = scoped(["site/fy4-3.html"], patch=page_patch("site/fy4-3.html", '<a href="fy4-2.html?v=1">', '<a href="fy4-4.html?v=1">')); check("scope: a real change beside a ?v= token is tested", set(w) == {"fy4-3"}, f"{k} {w}")
+NEWP = "diff --git a/site/fy4-9.html b/site/fy4-9.html\nnew file mode 100644\n--- /dev/null\n+++ b/site/fy4-9.html\n@@ -0,0 +1 @@\n+<link href=\"site.css?v=1\">\n"
+k, w = scoped(["site/fy4-9.html"], patch=NEWP); check("scope: a new page is tested", set(w) == {"fy4-9"}, f"{k} {w}")
 check("scope: a document alone tests no page", scoped(["docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md"]) == ("pages", {}), str(scoped(["docs/audits/2026-11-10-vaiheiden-kayttoliittyma.md"])))
 check("scope: nothing changed tests no page", scoped([]) == ("pages", {}))
 k, w = scoped(["content/fi/FY3/fy3-1/lesson.md"]); check("scope: a lesson's text tests that lesson only", k == "pages" and list(w) == ["fy3-1"], f"{k} {w}")

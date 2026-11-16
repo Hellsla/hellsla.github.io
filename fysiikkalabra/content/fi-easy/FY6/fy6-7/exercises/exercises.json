@@ -186,7 +186,7 @@
       "unit": "kWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Laitteiden käyttö kotona (esimerkkiaineisto)",
+        "caption": "Laitteiden käyttö kotona",
         "columns": [
           "Laite",
           "$P\\,(\\text{W})$",
@@ -233,7 +233,7 @@
       "unit": "W",
       "tolerance": 0.02,
       "data": {
-        "caption": "Sähkömittarin lukemat (esimerkkiaineisto)",
+        "caption": "Sähkömittarin lukemat",
         "columns": [
           "$t\\,(\\text{vrk})$",
           "Lukema $(\\text{kWh})$"
@@ -287,7 +287,7 @@
       "unit": "kWh",
       "tolerance": 0.05,
       "data": {
-        "caption": "Jääkaapin energiamittarin lukema (esimerkkiaineisto)",
+        "caption": "Jääkaapin energiamittarin lukema",
         "columns": [
           "$t\\,(\\text{h})$",
           "$E\\,(\\text{kWh})$"
@@ -324,6 +324,38 @@
       "answer": 0.45,
       "unit": "€",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy6-7-L2-09",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://www.energystar.gov/productfinder/product/certified-residential-refrigerators/results\" target=\"_blank\" rel=\"noopener\">ENERGY STAR – Certified Residential Refrigerators</a> (Yhdysvaltain ympäristönsuojeluviraston ENERGY STAR -ohjelman tuotehaku, englanninkielinen)\n\nKuinka paljon jääkaappi kuluttaa sähköä? Aineisto on tietokanta eli iso luettelo jääkaappimalleista. Jokaisesta mallista kerrotaan tyyppi (Type) ja tilavuus kuutiojalkoina (Capacity (Total Volume)). Lisäksi kerrotaan vuotuinen sähköenergian kulutus kilowattitunteina (Annual Energy Use) eli energia, jonka laite käyttää vuodessa. Yksi kuutiojalka on $1\\,\\text{ft}^3 \\approx 28{,}3\\,\\textsf{l}$. Ilmoitettu kulutus on standardoidun testin tulos. Se ei ole kotona mitattu arvo.\n\nValitse tietokannasta kaksi jääkaappia. Niiden pitää olla mahdollisimman samankokoisia ja samaa tyyppiä, mutta niiden vuotuisen sähkönkulutuksen pitää olla eri. Sivun vasemmassa reunassa on suodattimet Type ja Capacity. Niillä voit rajata hakua. Tietokanta päivittyy eli sen tiedot muuttuvat. Kirjoita siksi muistiin valitsemasi mallit ja hakupäivä. Taulukossa on esimerkkipari, joka poimittiin tietokannasta 15. marraskuuta 2026. Molemmat ovat jääkaappipakastimia, joissa pakastin on ylhäällä (Top Freezer). Jos tietokanta ei ole käytettävissä, tee kohdat a)–c) taulukon parilla.\n\na) Vertaa laitteiden ilmoitettuja vuotuisia sähkönkulutuksia. Kuinka monta kilowattituntia enemmän toinen laite kuluttaa vuodessa? Kuinka monta prosenttia enemmän se kuluttaa?\n\nb) Laske kummankin jääkaapin keskimääräinen sähköteho watteina.\n\nc) Laske laitteiden sähkökustannukset kymmenen vuoden aikana. Sähkön kokonaishinta on $0{,}20\\,\\text{€/kWh}$. Kuinka suuri kustannusten ero on?\n\nd) Kompressori on jääkaapin osa, joka jäähdyttää kaappia. Sen hetkellinen ottoteho on teho, jonka se ottaa sähköverkosta käydessään. Selitä, miksi laskettu keskimääräinen sähköteho ei ole sama asia kuin kompressorin hetkellinen ottoteho.\n\nVastaa laatikkoon taulukon mallin A keskimääräinen sähköteho watteina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 39.269,
+      "unit": "W",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Esimerkkipari ENERGY STAR -tietokannasta 15. marraskuuta 2026",
+        "columns": [
+          "Malli",
+          "$V\\,(\\text{ft}^3)$",
+          "$E\\,(\\text{kWh/a})$"
+        ],
+        "rows": [
+          [
+            "A: LG LT18S1100*",
+            "17.5",
+            "344"
+          ],
+          [
+            "B: LG LT18S1200*",
+            "17.5",
+            "440"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -364,7 +396,7 @@
       "unit": "€",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kulutus ja hinta vuorokauden aikana (esimerkkiaineisto)",
+        "caption": "Kulutus ja hinta vuorokauden aikana",
         "columns": [
           "Jakso (klo)",
           "$E\\,(\\text{kWh})$",

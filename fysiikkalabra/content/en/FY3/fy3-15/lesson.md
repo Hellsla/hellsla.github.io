@@ -272,7 +272,7 @@ From this the efficiency is $\eta = \tfrac{228.228\,\text{MW}}{600\,\text{MW}} =
 
 <!-- vaihe -->
 
-**Reasonableness.** Estimate: $0.9 \cdot 0.45 \cdot 0.95 \cdot 600\,\text{MW} \approx 231\,\text{MW}$, which matches the result. The efficiency is smaller than that of the weakest step, 0.440, as a product should be, and fits the usual efficiency of a condensing power plant of about $40\,\%$ (typically $38$–$42\,\%$). The balance works out: the electricity $228\,\text{MW}$ and the waste $372\,\text{MW}$ add up to $600\,\text{MW}$. The power transferred to the condenser is $P_1 - P_2 = 546\,\text{MW} - 240.24\,\text{MW} \approx 306\,\text{MW}$, which is over half of the energy of the fuel.
+**Reasonableness.** Estimate: $$\begin{aligned} &0.9 \cdot 0.45 \cdot 0.95 \cdot 600\,\text{MW} \\ &\approx 231\,\text{MW} \end{aligned}$$, which matches the result. The efficiency is smaller than that of the weakest step, 0.440, as a product should be, and fits the usual efficiency of a condensing power plant of about $40\,\%$ (typically $38$–$42\,\%$). The balance works out: the electricity $228\,\text{MW}$ and the waste $372\,\text{MW}$ add up to $600\,\text{MW}$. The power transferred to the condenser is $P_1 - P_2 = 546\,\text{MW} - 240.24\,\text{MW} \approx 306\,\text{MW}$, which is over half of the energy of the fuel.
 
 The loss of the boiler is only $54\,\text{MW}$ and that of the generator and transformer $12\,\text{MW}$, so improvements should be aimed at the steam cycle and after that at the use of the heat of the condenser.
 
@@ -281,7 +281,7 @@ Many people think that waste heat is energy that has been lost. Energy does not 
 
 If heat is transferred to the surroundings at a temperature only slightly above that of the surroundings, it is hard to obtain much mechanical work or electricity from it. The smaller the temperature difference, the lower the maximum possible efficiency of a heat engine.
 
-In combined heat and power production, part of the energy that would otherwise be left as waste heat can be used as district heating.
+In combined heat and power production, part of the energy that would otherwise be transferred to the surroundings as waste heat can be used as district heating.
 
 Another mistake is to add the efficiencies of the steps or to take their mean. When the efficiencies of three steps are 0.92, 0.46 and 0.945, the efficiency of the chain is their product 0.40, not the mean 0.78. A third mistake is to take the overall efficiency of $88\,\%$ of combined production as a sign that all the energy would be equally valuable: electricity can be used for everything, district heating mainly for heating.
 

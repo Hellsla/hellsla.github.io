@@ -210,7 +210,7 @@
         "error",
         "concept"
       ],
-      "text": "Kahden pystysuoran levyn etäisyys on $6{,}0\\,\\text{cm}$ ja niiden välinen jännite $1{,}8\\,\\text{kV}$. Levyjen välissä on pieni pallo, jonka varaus on $4{,}0\\,\\text{nC}$ ja jonka etäisyys positiivisesta levystä on $1{,}5\\,\\text{cm}$. Pallo on kaukana levyjen päistä.\n\nOpiskelija ratkaisee voiman näin: ”Pallo on $1{,}5\\,\\text{cm}$:n päässä levystä, joten $E = U : d = 1800\\,\\text{V} : 0{,}015\\,\\text{m} = 1{,}2 \\cdot 10^{5}\\,\\text{V/m}$ ja $F = qE = 4{,}0 \\cdot 10^{-9}\\,\\text{C} \\cdot 1{,}2 \\cdot 10^{5}\\,\\text{V/m} = 0{,}48\\,\\text{mN}$.”\n\na) Mikä virhe opiskelijan ratkaisussa on?\n\nb) Laske sähköinen voima oikein.\n\nAnna vastauslaatikkoon b)-kohdan tulos millinewtoneina.",
+      "text": "Kahden pystysuoran levyn etäisyys on $6{,}0\\,\\text{cm}$ ja niiden välinen jännite $1{,}8\\,\\text{kV}$. Levyjen välissä on pieni pallo, jonka varaus on $4{,}0\\,\\text{nC}$ ja jonka etäisyys positiivisesta levystä on $1{,}5\\,\\text{cm}$. Pallo on kaukana levyjen päistä.\n\nOpiskelija ratkaisee voiman näin: ”Pallo on $1{,}5\\,\\text{cm}$:n päässä levystä, joten $$\\begin{aligned} E &= U : d \\\\ &= 1800\\,\\text{V} : 0{,}015\\,\\text{m} \\\\ &= 1{,}2 \\cdot 10^{5}\\,\\text{V/m} \\end{aligned}$$ ja $$\\begin{aligned} F &= qE \\\\ &= 4{,}0 \\cdot 10^{-9}\\,\\text{C} \\cdot 1{,}2 \\cdot 10^{5}\\,\\text{V/m} \\\\ &= 0{,}48\\,\\text{mN} \\end{aligned}$$.”\n\na) Mikä virhe opiskelijan ratkaisussa on?\n\nb) Laske sähköinen voima oikein.\n\nAnna vastauslaatikkoon b)-kohdan tulos millinewtoneina.",
       "answer": 0.12,
       "unit": "mN",
       "tolerance": 0.02

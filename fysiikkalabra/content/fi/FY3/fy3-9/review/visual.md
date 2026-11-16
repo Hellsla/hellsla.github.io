@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 354429effaadf21b
+CONTENT-HASH: 4287575e7d481911
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] Re-broken formulas (all lessons) — a lone "ja" or "joten" between two display formulas, and a parenthesis opened on one row and closed on the next (e.g. fy3-12 `P = (0,17 · 120 / + 1,0 · 20,0)`), read slightly broken — optional: join the short formulas or break outside the bracket.
+- [Minor] fy3-3 `− 195,75 + 273,15` — a leading minus on a row with no left side is set with binary spacing — write `{-}195{,}75` if the row stays.
 
 ## Checked
-batch delta review: preview/fy3-9.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved BARREL balloon photo captured with its surroundings. New spot after the last Ydinajatus figure row (which ends above it); at 1280 it floats beside the Boyle formula section (p1V1 = p2V2, p = vakio·1/V) without touching the formula boxes. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (gas expanding as outside pressure falls, next to Boyle's law).
+batch delta review: every changed chain rendered in a browser at 360, 390 and 1280 px with all hints, feedback, solutions and details open (no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator, no row breaks inside a number or unit); contact sheet of the changed blocks viewed at 390 px; existing captures sim/fig/example/tarkista of fy3-1 opened.

@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5b158c0872d57a07
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (8d9ddf4a4ea0b4a3).
+CONTENT-HASH: 3cbf8fb8c46c9eb8
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none)
+- (none)
 
 ## Checked
-- Opened fy9-kokeellisuus-fi-easy-360.png (every row, pill and header read; no overlap except as noted), and read the changed aria-label/figures.json entry and the diff against the chart; the diff's other lines (teacher.md rows wording, unit.md sign wording, line break fix) read in full.
-- Round-1 finding(s) of my role re-checked: unchanged rest holds.
+- Hunk: solutions.md task 1 a Periaate ("Lepokitkan suurin arvo on" → "Lähtökitka eli täysin kehittynyt lepokitka on").
+- Opened `fy9-kokeellisuus-stage-exercises-390-2.png`: the sentence renders whole with $\mu_0 N$ in KaTeX; the following "Se riippuu siis pinnoista…" still refers to it unambiguously; the paragraph and the Mallivastaus under it are intact.
+- The term is introduced with "eli", which suits clear Finnish (NOTES.md §12: a hard word explained at first use).
+- Page overflow at 390 and 1280 px, every box open: 0 px.

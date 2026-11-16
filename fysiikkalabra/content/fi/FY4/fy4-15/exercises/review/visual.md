@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4726e0daf5ce4eb7
+CONTENT-HASH: 1d9b0a37df671039
 
 ## Blocking
 None.
 
 ## Polish
-1. solutions.md: P_a used consistently with the lesson; numbers unchanged; solutions render without errors.
+None.
 
-Checked: opened solutions in the preview at 390 and 1280 px.
+## Checked
+- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-22, fi-390-23, fi-390-24 and fi-1280-17, fi-1280-18; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

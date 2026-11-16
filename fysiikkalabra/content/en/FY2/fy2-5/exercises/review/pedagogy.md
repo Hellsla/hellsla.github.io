@@ -1,8 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: dc433a75eb77d4f4
-SCOPE: delta added-exercise from 4ac0dae73e3c9ad3 base 611fb7d5c174
+CONTENT-HASH: 6bfe5ddbe100df3b
 Mode: delta
-Round: 1
 
 ## Blocking
 (none)
@@ -11,6 +9,8 @@ Round: 1
 (none)
 
 ## Checked
-- L1-09 (ethanol, MAFY): 26.7 MJ/kg x 0.50 kg = 13.35 MJ correct; hint names only the table; one lookup, one multiplication; the solution explains why MAFY is used.
-- L2-09 (figure lampoarvot): 12 x 43 : 15 = 34.4 kg correct; the values 43 and 15 are printed at the bars and in the description; the question (equal energy, mass of wood) differs from L1-02 (energy of gas) that uses the same figure.
-- L2-09 solution: energy first, then solves for m, plus a ratio check (about 3 times); two-step reasoning fits level 2.
+- Oil H changed 43 to 40.6 MJ/kg (MAFY table) in L3-01, L3-04, L3-05, in the texts, solutions and answers.py; the text of L3-01 and L3-04 now names the source.
+- L3-01: 120/40.6 = 2.956 kg, 8.0 - 2.96 = 5.04, answer 5.0 kg; check 2.71 x 2.96 = 8.0 correct.
+- L3-04: oil 53 200/40.6 = 1310 kg; ratio of masses 2.5, of heats 40.6:17 = 2.4, 2.4 x 0.90/0.85 = 2.5: the explanation of the efficiency still holds; answer (pellets 3300 kg) unchanged.
+- L3-05: oil 36 000/(0.90 x 40.6) = 985 kg (990); "more than twice" and 40.6:15 = 2.7 correct; answer 940 kg unchanged.
+- Edited during the review: the L3-05 table row for the oil boiler now reads 40.6 MJ/kg (light heating oil, MAFY table), matching the solution's 'from the table'; a necessary and correct fix.

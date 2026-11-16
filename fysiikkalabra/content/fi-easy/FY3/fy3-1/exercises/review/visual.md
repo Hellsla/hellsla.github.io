@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e406b191af20f91d
+CONTENT-HASH: 7cab5660f3e700ab
 Mode: delta
-Round: 2
+Round: 1
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] solutions.md fy3-1-L2-08 Kuvaajan lukeminen — range "58,2–61,8" is typed with a hyphen — use an en dash as in "58–62" elsewhere.
+- [Minor] 1-13 Järkevyys — a short sentence is split into three fragments by two display fractions ("Kuussa paino on / 1/6 / Maan painosta") — keep the fraction inline or move it after the sentence.
 
 ## Checked
-- fy3-1-open-exercises-L2-1280-8 and -9 (L2-08 task graph, solution: g in m/s², Kaava, Sijoitus rows, Järkevyys; round-1 wording fixes in place).
+- fy3-1-open-exercises-1280-2, -3, -4, L2-1280-3 (1-2, 1-3, 1-4, 1-13 Järkevyys lifted displays; trailing punctuation sits inside the display).
+- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

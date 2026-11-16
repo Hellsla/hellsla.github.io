@@ -13,7 +13,7 @@
 **Kysytty:** energia megajouleina
 **Periaate:** Kilowattitunti ja joule ovat saman suureen, energian, yksiköitä. Muunnos tehdään sijoittamalla kilowattitunnin tilalle se, mitä yksikkö tarkoittaa: kilowatti kertaa tunti.
 **Kaava:** $E = Pt$: kilowattitunti on kilowatin teho tunnin ajan, joten jouleiksi muunnetaan sijoittamalla kilowatin tilalle watit ja tunnin tilalle sekunnit.
-**Muunnokset:** $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3\,600\,000\,\text{J} = 3{,}6\,\text{MJ}$
+**Muunnokset:** $$\begin{aligned} 1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\ &= 3\,600\,000\,\text{J} \\ &= 3{,}6\,\text{MJ} \end{aligned}$$
 **Sijoitus:** $E = 0{,}15 \cdot 3{,}6\,\text{MJ} = 0{,}54\,\text{MJ}$
 **Vastaus:** $0{,}54\,\text{MJ}$, kaksi merkitsevää numeroa kuten energiassa $0{,}15\,\text{kWh}$.
 **Järkevyys:** Kilowattitunti on $3{,}6\,\text{MJ}$, joten vajaa viidesosa siitä on vähän yli puoli megajoulea. Jouleina luku on suurempi kuin kilowattitunteina, koska joule on paljon pienempi yksikkö.
@@ -25,7 +25,7 @@
 **Kaava:** $P = UI$, josta $I = \dfrac{P}{U}$
 **Muunnokset:** Ei tarvita: $1\,\text{W} : 1\,\text{V} = 1\,\text{A}$.
 **Sijoitus:** $I = \dfrac{1200\,\text{W}}{230\,\text{V}} = 5{,}217\,\text{A}$
-**Vastaus:** $5{,}2\,\text{A}$, kaksi merkitsevää numeroa kuten jännitteessä $230\,\text{V}$.
+**Vastaus:** $5{,}22\,\text{A}$, kolme merkitsevää numeroa kuten jännitteessä $230\,\text{V}$, joka on kolmen merkitsevän numeron arvo.
 **Järkevyys:** Arvio $1200\,\text{W} : 200\,\text{V} = 6\,\text{A}$ on hieman suurempi, koska jakaja on pienempi. Virta on alle $10\,\text{A}$, joten silitysrauta sopii $10\,\text{A}$:n tai $16\,\text{A}$:n sulakkeella suojattuun virtapiiriin, kun muita suuritehoisia laitteita ei ole samaan aikaan päällä.
 
 ## fy6-7-L1-04
@@ -55,7 +55,7 @@
 **Kuvaajan lukeminen:** Lämmitysvaiheessa teho on $2{,}0\,\text{kW}$ välillä $0$–$0{,}25\,\text{h}$, joten kesto on $0{,}25\,\text{h}$. Pesussa teho on $0{,}2\,\text{kW}$ välillä $0{,}25$–$1{,}25\,\text{h}$ eli $1{,}0\,\text{h}$. Linkouksessa teho on $0{,}4\,\text{kW}$ välillä $1{,}25$–$1{,}5\,\text{h}$ eli $0{,}25\,\text{h}$.
 **Kaava:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$
 **Muunnokset:** Ei tarvita: tehot luetaan kilowatteina ja ajat tunteina, joten energia saadaan kilowattitunteina.
-**Sijoitus:** $E = 2{,}0\,\text{kW} \cdot 0{,}25\,\text{h} + 0{,}2\,\text{kW} \cdot 1{,}0\,\text{h} + 0{,}4\,\text{kW} \cdot 0{,}25\,\text{h} = 0{,}80\,\text{kWh}$
+**Sijoitus:** $$\begin{aligned} E &= 2{,}0\,\text{kW} \cdot 0{,}25\,\text{h} \\ &+ 0{,}2\,\text{kW} \cdot 1{,}0\,\text{h} \\ &+ 0{,}4\,\text{kW} \cdot 0{,}25\,\text{h} \\ &= 0{,}80\,\text{kWh} \end{aligned}$$
 **Vastaus:** $0{,}80\,\text{kWh}$, kaksi merkitsevää numeroa, koska arvot luetaan $0{,}2\,\text{kW}$:n ja $0{,}25\,\text{h}$:n ruudukkoviivoilta.
 **Järkevyys:** Lämmitys on lyhyt mutta käyttää yli puolet energiasta, $0{,}50\,\text{kWh}$, koska sen teho on kymmenkertainen pesuun verrattuna. Puolentoista tunnin ohjelma keskimäärin noin $0{,}5\,\text{kW}$:n teholla antaisi $0{,}8\,\text{kWh}$.
 
@@ -66,8 +66,8 @@
 **Kaava:** $P = UI$ ja $E = Pt$, joten $E = UIt$
 **Muunnokset:** $t = 4{,}0\,\text{min} = 4{,}0 \cdot 60\,\text{s} = 240\,\text{s}$; lopuksi $1\,\text{kJ} = 1000\,\text{J}$
 **Sijoitus:** $E = 230\,\text{V} \cdot 8{,}7\,\text{A} \cdot 240\,\text{s} = 480\,240\,\text{J} = 480{,}24\,\text{kJ}$
-**Vastaus:** $480\,\text{kJ}$, kaksi merkitsevää numeroa kuten virrassa $8{,}7\,\text{A}$ ja ajassa $4{,}0\,\text{min}$.
-**Järkevyys:** Keittimen teho on $230\,\text{V} \cdot 8{,}7\,\text{A} \approx 2000\,\text{W}$ eli $2\,\text{kJ}$ sekunnissa, ja $240$ sekunnissa se on noin $480\,\text{kJ}$. Kilowattitunteina tämä on $0{,}13\,\text{kWh}$, mikä sopii yhteen vedenkeittimen tavallisen keittokerran kanssa.
+**Vastaus:** $4{,}8 \cdot 10^{2}\,\text{kJ}$, kaksi merkitsevää numeroa kuten virrassa $8{,}7\,\text{A}$ ja ajassa $4{,}0\,\text{min}$.
+**Järkevyys:** Keittimen teho on $230\,\text{V} \cdot 8{,}7\,\text{A} \approx 2000\,\text{W}$ eli $2\,\text{kJ}$ sekunnissa, ja $240$ sekunnissa se on noin $4{,}8 \cdot 10^{2}\,\text{kJ}$. Kilowattitunteina tämä on $0{,}13\,\text{kWh}$, mikä sopii yhteen vedenkeittimen tavallisen keittokerran kanssa.
 
 ## fy6-7-L2-03
 **Annettu:** valmiustilan teho $P = 4{,}5\,\text{W}$ koko vuoden, $365$ vuorokautta, hinta $a = 17\,\text{snt/kWh}$
@@ -87,7 +87,7 @@
 **Muunnokset:** $P_1 - P_2 = 60\,\text{W} - 8{,}0\,\text{W} = 52\,\text{W} = 0{,}052\,\text{kW}$; $t = 365 \cdot 4{,}0\,\text{h} = 1460\,\text{h}$
 **Sijoitus:** $\Delta E = 0{,}052\,\text{kW} \cdot 1460\,\text{h} = 75{,}92\,\text{kWh}$
 **Vastaus:** $76\,\text{kWh}$, kaksi merkitsevää numeroa kuten tehoissa $60\,\text{W}$ ja $8{,}0\,\text{W}$ sekä paloajassa $4{,}0\,\text{h}$.
-**Järkevyys:** Hehkulamppu käyttää vuodessa $0{,}060\,\text{kW} \cdot 1460\,\text{h} \approx 88\,\text{kWh}$ ja LED-lamppu noin $12\,\text{kWh}$; erotus on noin $76\,\text{kWh}$. Säästö on lähes koko hehkulampun kulutus, koska LED-lampun teho on vain noin seitsemäsosa.
+**Järkevyys:** Hehkulamppu käyttää vuodessa $$0{,}060\,\text{kW} \cdot 1460\,\text{h} \approx 88\,\text{kWh}$$ ja LED-lamppu noin $12\,\text{kWh}$; erotus on noin $76\,\text{kWh}$. Säästö on lähes koko hehkulampun kulutus, koska LED-lampun teho on vain noin seitsemäsosa.
 
 ## fy6-7-L3-01
 **Annettu:** keittimen teho $P_1 = 2200\,\text{W}$, aika $t_1 = 3{,}0\,\text{min}$, lampun teho $P_2 = 15\,\text{W}$
@@ -107,7 +107,7 @@
 **Muunnokset:** $a = 15{,}0\,\text{snt/kWh} = 0{,}150\,\text{€/kWh}$
 **Sijoitus:** $E = \dfrac{64{,}20\,\text{€} - 8{,}50\,\text{€}}{0{,}150\,\text{€/kWh}} = \dfrac{55{,}70\,\text{€}}{0{,}150\,\text{€/kWh}} = 371{,}3\,\text{kWh}$
 **Vastaus:** $371\,\text{kWh}$, kolme merkitsevää numeroa kuten hinnassa $15{,}0\,\text{snt/kWh}$.
-**Järkevyys:** Tarkistus: $371\,\text{kWh} \cdot 0{,}150\,\text{€/kWh} = 55{,}65\,\text{€}$, ja perusmaksujen kanssa summa on $64{,}15\,\text{€} \approx 64{,}20\,\text{€}$. Kulutus sopii kerrostaloasuntoon, jossa ei ole sähkölämmitystä. Jos perusmaksut olisi unohdettu, energiaksi olisi saatu liian suuri $428\,\text{kWh}$.
+**Järkevyys:** Tarkistus: $$\begin{aligned} &371\,\text{kWh} \cdot 0{,}150\,\text{€/kWh} \\ &= 55{,}65\,\text{€} \end{aligned}$$, ja perusmaksujen kanssa summa on $64{,}15\,\text{€} \approx 64{,}20\,\text{€}$. Kulutus sopii kerrostaloasuntoon, jossa ei ole sähkölämmitystä. Jos perusmaksut olisi unohdettu, energiaksi olisi saatu liian suuri $428\,\text{kWh}$.
 
 ## fy6-7-L3-03
 **Annettu:** lämmitysvastuksen resistanssi $R = 26{,}5\,\Omega$, jännite $U = 230\,\text{V}$, aika $t = 2{,}50\,\text{h}$
@@ -132,7 +132,7 @@
 **Muunnokset:** $t = 30 \cdot 15\,\text{min} = 450\,\text{min} = \tfrac{450}{60}\,\text{h} = 7{,}5\,\text{h}$; $a = 18\,\text{snt/kWh} = 0{,}18\,\text{€/kWh}$
 **Sijoitus:** $E = 0{,}90\,\text{kW} \cdot 7{,}5\,\text{h} = 6{,}75\,\text{kWh}$ ja $K = 0{,}18\,\tfrac{\text{€}}{\text{kWh}} \cdot 6{,}75\,\text{kWh} = 1{,}215\,\text{€}$
 **Vastaus:** $1{,}2\,\text{€}$, kaksi merkitsevää numeroa kuten tehossa $0{,}90\,\text{kW}$ ja hinnassa $18\,\text{snt/kWh}$.
-**Järkevyys:** Päivässä keitin käyttää $0{,}90\,\text{kW} \cdot 0{,}25\,\text{h} = 0{,}225\,\text{kWh}$, mikä maksaa noin $4\,\text{snt}$. Kolmessakymmenessä vuorokaudessa tämä on noin $30 \cdot 4\,\text{snt} = 120\,\text{snt} \approx 1{,}2\,\text{€}$.
+**Järkevyys:** Päivässä keitin käyttää $$\begin{aligned} &0{,}90\,\text{kW} \cdot 0{,}25\,\text{h} \\ &= 0{,}225\,\text{kWh} \end{aligned}$$, mikä maksaa noin $4\,\text{snt}$. Kolmessakymmenessä vuorokaudessa tämä on noin $30 \cdot 4\,\text{snt} = 120\,\text{snt} \approx 1{,}2\,\text{€}$.
 
 ## fy6-7-L1-08
 **Annettu:** energia $E = 1{,}0\,\text{kWh}$, teho $P = 40\,\text{W}$
@@ -151,12 +151,12 @@
 **Kaava:** $E_\text{vrk} = Pt$ jokaiselle laitteelle ja $E_\text{vuosi} = 365 \cdot E_\text{vrk,yht}$
 **Muunnokset:** $90\,\text{W} = 0{,}090\,\text{kW}$, $110\,\text{W} = 0{,}110\,\text{kW}$, $60\,\text{W} = 0{,}060\,\text{kW}$, $1200\,\text{W} = 1{,}200\,\text{kW}$ ja $800\,\text{W} = 0{,}800\,\text{kW}$
 **Sijoitus:** Valaistus $0{,}090\,\text{kW} \cdot 5{,}0\,\text{h} = 0{,}45\,\text{kWh}$; televisio $0{,}110\,\text{kW} \cdot 4{,}0\,\text{h} = 0{,}44\,\text{kWh}$; tietokone $0{,}060\,\text{kW} \cdot 6{,}0\,\text{h} = 0{,}36\,\text{kWh}$; pölynimuri $1{,}200\,\text{kW} \cdot 0{,}50\,\text{h} = 0{,}60\,\text{kWh}$; leivänpaahdin $0{,}800\,\text{kW} \cdot 0{,}20\,\text{h} = 0{,}16\,\text{kWh}$. Summa on $2{,}01\,\text{kWh}$ vuorokaudessa, joten $E_\text{vuosi} = 365 \cdot 2{,}01\,\text{kWh} = 733{,}65\,\text{kWh}$.
-**Vastaus:** Vastauslaatikkoon $730\,\text{kWh}$. a) Eniten energiaa käyttää pölynimuri, vaikka se on päällä vain puoli tuntia.
+**Vastaus:** Vastauslaatikkoon $7{,}3 \cdot 10^{2}\,\text{kWh}$. a) Eniten energiaa käyttää pölynimuri, vaikka se on päällä vain puoli tuntia.
 
-b) $730\,\text{kWh}$, kaksi merkitsevää numeroa kuten tehoissa ja ajoissa.
+b) $7{,}3 \cdot 10^{2}\,\text{kWh}$, kaksi merkitsevää numeroa. Rajoittavat lähtötiedot ovat tehot $90\,\text{W}$ ja $60\,\text{W}$ sekä käyttöajat; tehoissa $110\,\text{W}$, $800\,\text{W}$ ja $1200\,\text{W}$ on enemmän numeroita.
 
 c) Säästökohteeksi sopii valaistus, koska se on toiseksi suurin erä ja sen tehoa voi pienentää vaihtamalla lamput LED-lamppuihin, kun taas pölynimurin käyttöaikaa ei voi lyhentää ilman, että siivous kärsii.
-**Järkevyys:** Vuorokauden energialla $2{,}01\,\text{kWh}$ keskiteho on $2{,}01\,\text{kWh} : 24\,\text{h} = 0{,}084\,\text{kW} = 84\,\text{W}$, mikä on kohtuullinen koti-iltojen laitteille. Vuodessa $365 \cdot 2\,\text{kWh} = 730\,\text{kWh}$ täsmää tulokseen. Pölynimuri käyttää enemmän kuin valaistus, koska sen teho on $13$-kertainen ($1200\,\text{W} : 90\,\text{W}$) mutta aika vain kymmenesosa.
+**Järkevyys:** Vuorokauden energialla $2{,}01\,\text{kWh}$ keskiteho on $2{,}01\,\text{kWh} : 24\,\text{h} = 0{,}084\,\text{kW} = 84\,\text{W}$, mikä on kohtuullinen koti-iltojen laitteille. Vuodessa $$\begin{aligned} &365 \cdot 2\,\text{kWh} \\ &= 7{,}3 \cdot 10^{2}\,\text{kWh} \end{aligned}$$ täsmää tulokseen. Pölynimuri käyttää enemmän kuin valaistus, koska sen teho on $13$-kertainen ($1200\,\text{W} : 90\,\text{W}$) mutta aika vain kymmenesosa.
 
 ## fy6-7-L2-06
 **Annettu:** mittarin lukemat $12\,437{,}2\,\text{kWh}$ alussa ja $12\,493{,}5\,\text{kWh}$ seitsemän vuorokauden kuluttua, hinta $a = 16\,\text{snt/kWh}$
@@ -171,7 +171,7 @@ c) Säästökohteeksi sopii valaistus, koska se on toiseksi suurin erä ja sen t
 b) $335\,\text{W}$, kolme merkitsevää numeroa kuten energian erotuksessa $56{,}3\,\text{kWh}$.
 
 c) $9{,}0\,\text{€}$.
-**Järkevyys:** Tarkistus: $0{,}335\,\text{kW} \cdot 168\,\text{h} = 56{,}3\,\text{kWh}$. Keskiteho vastaa noin kolmea koko ajan palavaa $100\,\text{W}$:n lamppua, mikä sopii asuntoon, jossa lämmitys ei ole sähköllä. Hinta noin $9\,\text{€}$ viikossa on noin $8\,\text{kWh} \cdot 0{,}16\,\text{€/kWh} \cdot 7 \approx 9\,\text{€}$.
+**Järkevyys:** Tarkistus: $$\begin{aligned} &0{,}335\,\text{kW} \cdot 168\,\text{h} \\ &= 56{,}3\,\text{kWh} \end{aligned}$$. Keskiteho vastaa noin kolmea koko ajan palavaa $100\,\text{W}$:n lamppua, mikä sopii asuntoon, jossa lämmitys ei ole sähköllä. Hinta noin $9\,\text{€}$ viikossa on noin $$\begin{aligned} &8\,\text{kWh} \cdot 0{,}16\,\text{€/kWh} \cdot 7 \\ &\approx 9\,\text{€} \end{aligned}$$.
 
 ## fy6-7-L2-07
 **Annettu:** energiamittarin lukemat $0{,}00$–$1{,}64\,\text{kWh}$ ajan $0$–$48\,\text{h}$ funktiona, $365$ vuorokautta
@@ -181,12 +181,12 @@ c) $9{,}0\,\text{€}$.
 **Kaava:** $P_\text{ka} = \dfrac{E}{t}$ ja $E_\text{vuosi} = P_\text{ka} t_\text{vuosi}$
 **Muunnokset:** $t_\text{vuosi} = 365 \cdot 24\,\text{h} = 8760\,\text{h}$
 **Sijoitus:** $P_\text{ka} = \dfrac{1{,}64\,\text{kWh}}{48\,\text{h}} = 0{,}03417\,\text{kW}$ ja $E_\text{vuosi} = 0{,}03417\,\text{kW} \cdot 8760\,\text{h} = 299{,}3\,\text{kWh}$
-**Vastaus:** Vastauslaatikkoon $300\,\text{kWh}$. a) Suoralta luettu energia $48\,\text{h}$:n kohdalla on $1{,}64\,\text{kWh}$.
+**Vastaus:** Vastauslaatikkoon $3{,}0 \cdot 10^{2}\,\text{kWh}$. a) Suoralta luettu energia $48\,\text{h}$:n kohdalla on $1{,}64\,\text{kWh}$.
 
-b) $300\,\text{kWh}$, kaksi merkitsevää numeroa, koska suoran sovitus silmämääräisesti rajoittaa tarkkuutta.
+b) $3{,}0 \cdot 10^{2}\,\text{kWh}$, kaksi merkitsevää numeroa, koska suoran sovitus silmämääräisesti rajoittaa tarkkuutta.
 
 c) Huoneen lämpötila on mittauksen aikana toinen kuin vuoden keskiarvo, ja oven avaukset sekä jääkaapin sisältö vaihtelevat, joten kulutus ei ole koko vuoden sama. Lisäksi $48\,\text{h}$ on lyhyt aika, jolloin kompressorin käyntijaksot vaikuttavat tulokseen.
-**Järkevyys:** Keskiteho $0{,}034\,\text{kW} = 34\,\text{W}$ on pieni, koska kompressori on päällä vain osan ajasta; esimerkiksi $100\,\text{W}$:n kompressori käy noin kolmasosan ajasta. Tarkistus: $299\,\text{kWh} : 8760\,\text{h} = 0{,}0341\,\text{kW}$, mikä täsmää mittaukseen.
+**Järkevyys:** Keskiteho $0{,}034\,\text{kW} = 34\,\text{W}$ on pieni, koska kompressori on päällä vain osan ajasta; esimerkiksi $100\,\text{W}$:n kompressori käy noin kolmasosan ajasta. Tarkistus: $$\begin{aligned} &299\,\text{kWh} : 8760\,\text{h} \\ &= 0{,}0341\,\text{kW} \end{aligned}$$, mikä täsmää mittaukseen.
 
 ## fy6-7-L3-04
 **Annettu:** kulutus $E$ ja hinta $a$ kuudella neljän tunnin jaksolla taulukosta; varaajan teho $P = 2{,}0\,\text{kW}$, aika $t = 3{,}0\,\text{h}$ jaksolla klo $16$–$20$
@@ -201,7 +201,7 @@ $$S = E_\text{varaaja}\,(a_\text{kallis} - a_\text{halpa}).$$
 b) $0{,}93\,\text{€}$ vuorokaudessa, kaksi merkitsevää numeroa kuten varaajan tehossa $2{,}0\,\text{kW}$.
 
 c) Säästö syntyy, koska sama energia $6{,}0\,\text{kWh}$ ostetaan halvemmalla hinnalla, ei pienemmällä energialla. Siirto ei välttämättä onnistu joka vuorokausi, koska hinnat muuttuvat päivittäin eikä halvin jakso ole aina yöllä.
-**Järkevyys:** Siirron jälkeen kustannus on $267{,}44\,\text{snt} - 93{,}0\,\text{snt} = 174{,}44\,\text{snt}$ eli $1{,}74\,\text{€}$. Keskihinta $14\,\text{snt/kWh}$ on halvimman ja kalleimman jakson hinnan välissä.
+**Järkevyys:** Siirron jälkeen kustannus on $$\begin{aligned} &267{,}44\,\text{snt} - 93{,}0\,\text{snt} \\ &= 174{,}44\,\text{snt} \end{aligned}$$ eli $1{,}74\,\text{€}$. Keskihinta $14\,\text{snt/kWh}$ on halvimman ja kalleimman jakson hinnan välissä.
 
 ## fy6-7-L3-05
 **Annettu:** vanhan laitteen energia $E_\text{vanha} = 320\,\text{kWh}$ vuodessa, uuden $E_\text{uusi} = 98\,\text{kWh}$ vuodessa, uuden hinta $H = 489\,\text{€}$, sähkön hinta $a = 17\,\text{snt/kWh}$, käyttöikä $15\,\text{a}$
@@ -252,6 +252,25 @@ Uuni käyttää noin $0{,}060\,\text{kWh}$ eli $60\,\text{Wh}$ sähköenergiaa. 
 **Kuvaajan lukeminen:** Kuumennuksessa teho on $2{,}4\,\text{kW}$ välillä $0$–$0{,}5\,\text{h}$, joten kesto on $0{,}5\,\text{h}$. Kuivauksessa teho on $1{,}2\,\text{kW}$ välillä $0{,}5$–$1{,}5\,\text{h}$ eli $1{,}0\,\text{h}$. Jäähdytyksessä teho on $0{,}2\,\text{kW}$ välillä $1{,}5$–$2{,}0\,\text{h}$ eli $0{,}5\,\text{h}$.
 **Kaava:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$ ja $K = aE$
 **Muunnokset:** $a = 18\,\text{snt/kWh} = 0{,}18\,\text{€/kWh}$
-**Sijoitus:** $E = 2{,}4\,\text{kW} \cdot 0{,}5\,\text{h} + 1{,}2\,\text{kW} \cdot 1{,}0\,\text{h} + 0{,}2\,\text{kW} \cdot 0{,}5\,\text{h} = 1{,}2\,\text{kWh} + 1{,}2\,\text{kWh} + 0{,}10\,\text{kWh} = 2{,}5\,\text{kWh}$ ja $K = 0{,}18\,\tfrac{\text{€}}{\text{kWh}} \cdot 2{,}5\,\text{kWh} = 0{,}45\,\text{€}$
+**Sijoitus:** $$\begin{aligned} E &= 2{,}4\,\text{kW} \cdot 0{,}5\,\text{h} \\ &+ 1{,}2\,\text{kW} \cdot 1{,}0\,\text{h} \\ &+ 0{,}2\,\text{kW} \cdot 0{,}5\,\text{h} \\ &= 1{,}2\,\text{kWh} + 1{,}2\,\text{kWh} \\ &+ 0{,}10\,\text{kWh} \\ &= 2{,}5\,\text{kWh} \end{aligned}$$ ja $K = 0{,}18\,\tfrac{\text{€}}{\text{kWh}} \cdot 2{,}5\,\text{kWh} = 0{,}45\,\text{€}$
 **Vastaus:** $0{,}45\,\text{€}$, kaksi merkitsevää numeroa, koska arvot luetaan $0{,}4\,\text{kW}$:n ja $0{,}25\,\text{h}$:n ruudukkoviivoilta.
 **Järkevyys:** Kahden tunnin ohjelma keskimäärin noin $1{,}25\,\text{kW}$:n teholla antaisi $2{,}5\,\text{kWh}$. Tämä maksaa noin $2{,}5 \cdot 18\,\text{snt} = 45\,\text{snt}$, eli alle euron.
+
+## fy6-7-L2-09
+**Annettu:** aineistosta ([ENERGY STAR – Certified Residential Refrigerators](https://www.energystar.gov/productfinder/product/certified-residential-refrigerators/results), haettu 15. marraskuuta 2026, rajaus Type: Top Freezer ja tilavuusluokka $15$–$17{,}9\,\text{ft}^3$): malli A (LG LT18S1100*) $V = 17{,}5\,\text{ft}^3$ ja $E_\text{A} = 344\,\text{kWh}$ vuodessa; malli B (LG LT18S1200*) $V = 17{,}5\,\text{ft}^3$ ja $E_\text{B} = 440\,\text{kWh}$ vuodessa; sähkön hinta $a = 0{,}20\,\text{€/kWh}$; vuosien määrä $n = 10$
+**Kysytty:** a) vuotuisten kulutusten vertailu; b) keskitehot $P_\text{A}$ ja $P_\text{B}$ watteina; c) sähkökustannukset $K_\text{A}$ ja $K_\text{B}$ kymmenessä vuodessa euroina ja niiden ero; d) miksi keskiteho ei ole sama asia kuin kompressorin hetkellinen ottoteho
+**Periaate:** Teho kertoo, kuinka nopeasti laite käyttää energiaa, joten keskiteho on käytetty energia jaettuna koko sillä ajalla, jonka aikana energia kului. Jääkaappi on kytkettynä verkkoon koko vuoden, joten aika on vuoden kaikki tunnit. Sähköstä maksetaan kilowattituntia kohti, joten kustannus on hinta kertaa energia; yhden laitteen kustannukseen ei lasketa perusmaksuja. Omilla malleillasi luvut ovat toiset, mutta ratkaisutapa on sama. Alla on esimerkkiratkaisu taulukon parilla.
+**Taulukon lukeminen:** Molemmat mallit ovat samaa tyyppiä ja yhtä suuria: $$\begin{aligned} V &= 17{,}5\,\text{ft}^3 \\ &= 17{,}5 \cdot 28{,}3\,\textsf{l} \\ &\approx 495\,\textsf{l} \end{aligned}$$. Kulutusten ero ei siis johdu laitteen koosta eikä tyypistä. Sarakkeen $E$ arvo on energia, jonka laite käyttää yhdessä vuodessa standardoidussa testissä.
+**Kohta a):** Malli B kuluttaa vuodessa $$\begin{aligned} &E_\text{B} - E_\text{A} \\ &= 440\,\text{kWh} - 344\,\text{kWh} \\ &= 96\,\text{kWh} \end{aligned}$$ enemmän kuin malli A. Kulutusten suhde on $$\begin{aligned} &E_\text{B} : E_\text{A} \\ &= 440\,\text{kWh} : 344\,\text{kWh} \\ &\approx 1{,}28 \end{aligned}$$, eli malli B kuluttaa noin $28\,\%$ enemmän, vaikka laitteet ovat yhtä suuria ja samaa tyyppiä.
+**Kaava:** Kohta b): energia on $E = P_\text{ka}t$, josta keskiteho on $P_\text{ka} = \dfrac{E}{t}$. Kohta c): $n$ vuoden energia on $E_n = nE$ ja sen kustannus $K = aE_n = naE$
+**Muunnokset:** Vuosi tunteina: $t = 365 \cdot 24\,\text{h} = 8760\,\text{h}$. Teho saadaan kilowatteina, ja $1\,\text{kW} = 1000\,\text{W}$. Hinta on valmiiksi euroina kilowattituntia kohti.
+**Sijoitus:** $P_\text{A} = \dfrac{344\,\text{kWh}}{8760\,\text{h}} = 0{,}03927\,\text{kW} = 39{,}27\,\text{W}$ ja $P_\text{B} = \dfrac{440\,\text{kWh}}{8760\,\text{h}} = 0{,}05023\,\text{kW} = 50{,}23\,\text{W}$. Kustannukset ovat $K_\text{A} = 10 \cdot 0{,}20\,\tfrac{\text{€}}{\text{kWh}} \cdot 344\,\text{kWh} = 688\,\text{€}$ ja $K_\text{B} = 10 \cdot 0{,}20\,\tfrac{\text{€}}{\text{kWh}} \cdot 440\,\text{kWh} = 880\,\text{€}$. Niiden ero on $880\,\text{€} - 688\,\text{€} = 192\,\text{€}$.
+**Kohta d):** Jääkaapin kompressori ei käy koko ajan. Termostaatti käynnistää sen, kun kaapin sisälämpötila nousee, ja pysäyttää sen, kun kaappi on jäähtynyt tarpeeksi. Käydessään kompressori ottaa verkosta selvästi keskitehoa suuremman tehon, ja käyntijaksojen välillä jääkaappi ottaa tehoa hyvin vähän. Keskiteho on vuoden energia jaettuna vuoden kaikilla tunneilla, myös niillä, joiden aikana kompressori seisoo, joten se on pienempi kuin ottoteho käynnin aikana. Jos kompressori käy osuuden $k$ ajasta teholla $P_\text{käy}$, keskiteho on likimain $P_\text{ka} = kP_\text{käy}$. Kotijääkaapin kompressorin ottoteho on tyypillisesti sadan watin suuruusluokkaa (yleinen suuruusluokka, ei aineiston tieto). Esimerkiksi $100\,\text{W}$:n ottoteholla mallin A kompressori kävisi osuuden $k = 39{,}27\,\text{W} : 100\,\text{W} \approx 0{,}39$ eli noin $39\,\%$ ajasta. Keskitehosta ei siis näe, kuinka suuren tehon jääkaappi ottaa sillä hetkellä, kun kompressori käy.
+**Vastaus:** Vastauslaatikkoon $39{,}3\,\text{W}$. a) Malli B kuluttaa vuodessa $96\,\text{kWh}$ eli noin $28\,\%$ enemmän kuin malli A.
+
+b) $P_\text{A} = 39{,}3\,\text{W}$ ja $P_\text{B} = 50{,}2\,\text{W}$, kolme merkitsevää numeroa kuten vuosikulutuksissa $344\,\text{kWh}$ ja $440\,\text{kWh}$.
+
+c) Noin $690\,\text{€}$ ja $880\,\text{€}$, ero noin $190\,\text{€}$; kaksi merkitsevää numeroa kuten hinnassa $0{,}20\,\text{€/kWh}$.
+
+d) Kompressori käy jaksoissa, joten sen ottoteho käynnin aikana on keskitehoa suurempi. Tämä on esimerkkiratkaisu 15. marraskuuta 2026 poimituilla arvoilla; omalla parillasi luvut ovat toiset.
+**Järkevyys:** Tarkistus: $$\begin{aligned} &0{,}0393\,\text{kW} \cdot 8760\,\text{h} \\ &\approx 344\,\text{kWh} \end{aligned}$$, mikä on mallin A vuosikulutus. Muutaman kymmenen watin keskiteho sopii jääkaapille, jonka kompressori käy vain osan ajasta. Kustannus on noin $$\begin{aligned} &350\,\text{kWh} \cdot 0{,}20\,\text{€/kWh} \\ &= 70\,\text{€} \end{aligned}$$ vuodessa eli noin $700\,\text{€}$ kymmenessä vuodessa, samaa luokkaa kuin lasketut arvot. Todellinen kustannus poikkeaa tästä, koska kulutus kotona riippuu huoneen lämpötilasta ja oven avauksista eikä sähkön hinta pysy kymmentä vuotta samana.

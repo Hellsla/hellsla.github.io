@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 57dd86b23d8a85b6
-SCOPE: delta added-exercise from 22306330676659bc base 8f23aa7ae3bd
+CONTENT-HASH: 832d4c2bbf18b15c
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] fy7-12/graph-curve (tasks 12-9 and L2-09) — the 5 ° and 0.1 gridlines are dense and the curve is nearly flat beyond n = 1.5, so reading $n_1$ from 35 ° to the 0.02 the solution claims is optimistic — say "reading accuracy about 0.05" or widen the vertical scale; the tolerance already allows it.
-- [Minor] fy7-12 solutions — the "Substitution" row of 12-9 starts with the word "Check:" before a chain that is not the main method; acceptable, but "Check by calculation:" would say what it is.
+- [Minor] solutions.md fy7-12-L3-02 (107) — on a phone $\Delta t$ stands alone on the first row and the chain starts under it; correct and readable, the only way the fraction row fits.
 
 ## Checked
-- fy7-12-open-exercises-1280-9, -10 (en): task 12-9 (critical angle from the graph) with the graph (axis titles with units, magenta curve, "n_2 = 1.00 (air)" label), answer field, opened solution.
-- fy7-12-open-exercises-L2-1280-12, -13: task L2-09 statement, graph, answer field "1.72 · 10⁵ km/s", opened solution (fractions, $\sin 35.0^\circ$, unit conversion, reasonableness).
-- Typography: units upright with thin space, decimal point, no red KaTeX, no overflow; the set reads as one.
+- Delta (queue 5d reflow). Hash identical at the end.
+- Method: the packet's inventory has no phone capture of the exercises, so the reviewer captured each changed solution step from the current preview page (preview/en) at 390 px and at 1280 px, every solution open, and opened them at full size. check_layout.py at 360 and 390 px (open state): no clipped formula on this page.
+- 390 and 1280 px: 12-L3-02 Substitution (107) and 12-L2-05 Substitution (152: the sum of five angles, + row and = row on a phone, one row wide). Fractions, brackets and units whole; nothing clipped.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4

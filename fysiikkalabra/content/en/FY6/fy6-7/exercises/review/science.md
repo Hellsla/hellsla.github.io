@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3ddcea2954d318b6
-SCOPE: delta added-exercise from f6987a85f62564f9 base 8f23aa7ae3bd
+CONTENT-HASH: df6cf372cf645c1d
 
 ## Blocking
-- none
 
 ## Polish
-- exercises/solutions.md fy6-7-L2-08 Answer — "the values are read from the grid lines of 0.4 kW": the cooling power 0.2 kW lies halfway between two gridlines, not on one. Could say "0.2 kW lies halfway between gridlines". A misreading of ±0.1 kW changes the cost by only 2 %, inside the 0.03 tolerance, so the answer is safe.
 
 ## Checked
-- fy6-7-L1-10 recomputed: E = Pt = 1.5 kW · 2.0 h = 3.0 kWh; 3.0 · 3.6 MJ = 10.8 MJ; the stated 11 MJ is 1.9 % off, inside tolerance 0.04; 1 kWh = 3.6 · 10⁶ J is exact (1000 W · 3600 s).
-- fy6-7-L2-08 recomputed: E = 2.4 kW · 0.5 h + 1.2 kW · 1.0 h + 0.2 kW · 0.5 h = 2.5 kWh; K = 0.18 €/kWh · 2.5 kWh = 0.45 €; answers.py and exercises.json agree; unit €, tolerance 0.03.
-- Figure fy6-7/dryer (figures.py): steps 2.4 kW (0–0.5 h), 1.2 kW (0.5–1.5 h), 0.2 kW (1.5–2.0 h), then 0; gridlines 0.4 kW and 0.25 h; no energy or cost shown; description carries the same values.
-- Realistic magnitudes: a 2.4 kW heating stage and 2.5 kWh per program are typical for a tumble dryer; 18 c/kWh a plausible price.
-- Both solutions: E = Pt with the condition "power constant" stated, the energy as rectangle areas, the price conversion c → €, symbolic formulas before substitution, rounding stated, real reasonableness checks (average power 1.25 kW; 3 · 4 MJ upper bound).
-- Inside FY6 central contents (electric power; household energy builds on FY2 kWh).
-- Content hash checked at start and end.
+- The new task fy6-7-L2-09 matches the Finnish task passed earlier. The ENERGY STAR pair is LG LT18S1100* at 344 kWh/a and LT18S1200* at 440 kWh/a, both Top Freezer, 17,5 ft³, read 15 Nov 2026.
+- a) 96 kWh more, about 28 %.
+- b) P_avg = E/t gives 39,27 W and 50,23 W with t = 8760 h.
+- c) K = naE gives 688 € and 880 €, a difference of 192 €.
+- The rounding reasons match the Finnish set. The answer is 39,269 W with tolerance 0,02, and answers.py is shared.
+- d): the duty-cycle mechanism (P_avg ≈ kP_run, k ≈ 0,39 at 100 W) is correct. The 100 W is marked as a general order of magnitude, not as source data.
+- The task says the stated use is a standard test result, not a home measurement. 1 ft³ ≈ 28,3 l is correct.
+- Reflowed chains: same numbers, signs and units in the same order.
+- Hash read at start and end: unchanged.

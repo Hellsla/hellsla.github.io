@@ -1,0 +1,8 @@
+# The Python packages of the checks, the same in CI and in a session (work queue 5, 2026-11-16).
+# playwright is pinned: its version names the browser, and CI runs the browser checks in Playwright's own image of the
+# same version (mcr.microsoft.com/playwright/python:v<version>-noble in .github/workflows/fysiikkalabra-ci.yml). To move
+# to a newer Playwright, change this line and every image tag of the workflow together; scripts/ci_env.py check fails
+# CI when they differ. Run the browser checks locally in that image: python scripts/ci_env.py run -- <command>.
+markdown
+numpy
+playwright==1.65.0

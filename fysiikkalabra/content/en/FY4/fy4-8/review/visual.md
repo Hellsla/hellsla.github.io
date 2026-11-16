@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: dcb4c31e8b7caf56
+CONTENT-HASH: d9dc8894e0d09101
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- None.
 
 ## Checked
-- batch delta review: opened fy4-8-fig-row-1280.png (roller-coaster figure unchanged, teacher-approved) and read the diff (Miksi question, explain prompt, friction sentence); wording fluent, no plain-text quantities.
+- batch delta review: opened contact sheets en-390-09, en-390-10 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.

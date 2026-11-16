@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: fd5256866c60f33c
+CONTENT-HASH: 2f67c497cbf99990
 
 ## Blocking
-None. The fixes read well and are consistent with the lesson symbols.
 
 ## Polish
-None new (earlier polish unchanged).
 
 ## Checked
-Opened the changed sentence after W = pΔV and the worked-example formula stage at 390 px: render fine. Language: en; no clipping in the changed places.
+- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.

@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 79c4d3698d63167e
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (32cd94238f6e3a04).
+CONTENT-HASH: cd9e21b2902c37f6
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- C: "lepokitka → F ≤ F_μ0": F is the static friction (round 1, stands).
+- (none)
 
 ## Checked
-- Round-1 Blocking fixed (fi): row 3 "tanko tai vipu pysyy paikallaan → ΣM = 0" (equilibrium stated); row 9 "putoaa, ilmanvastus, nopeus tasaantuu → F_v = G" (vertical fall stated; buoyancy neglected, fine). Both in the chart (rendered 360 px) and the aria-label.
-- The friction rows (liukukitka F_μ = μN, lepokitka F ≤ F_μ0, lähtökitka F_μ0 = μ_0N) unchanged and correct.
-- No "liikekitka" left in fi/fi-easy FY9 content or figures.py.
-- Hash taken at the start and the end (79c4d3698d63167e).
+- inquiry.json lt-6: prompt now 'Lähtökitka eli täysin kehittynyt lepokitka on μ0N = 90 N'; correct option still 40 N (rest, net force zero), the three distractors wrong, feedbacks ('lepokitkan yläraja') consistent with the new term.
+- solutions.md boat ramp Järkevyys: 'Luiska pienentää tarvittavaa voimaa, ei työtä' is correct (T ≈ 1,3 kN against weight 2,7 kN; work per height is not reduced, with friction it grows). Agrees with 665 N and 666 N.
+- Limit-angle Periaate: mg sin α0 = μ0 mg cos α0 with fully developed static friction: correct.
+- No added task (last is s6). practice.py check: OK, 6 tasks, 95 points.

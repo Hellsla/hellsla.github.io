@@ -272,7 +272,7 @@ Tästä hyötysuhde on $\eta = \tfrac{228{,}228\,\text{MW}}{600\,\text{MW}} = 0{
 
 <!-- vaihe -->
 
-**Järkevyys.** Arvio: $0{,}9 \cdot 0{,}45 \cdot 0{,}95 \cdot 600\,\text{MW} \approx 231\,\text{MW}$. Se vastaa tulosta. Hyötysuhde on pienempi kuin heikoimman vaiheen 0,440, kuten tulon pitääkin. Se sopii lauhdevoimalaitoksen tavalliseen noin $40\,\%$:n hyötysuhteeseen (tyypillisesti $38$–$42\,\%$). Tase täsmää: sähkö $228\,\text{MW}$ ja hukka $372\,\text{MW}$ ovat yhteensä $600\,\text{MW}$. Lauhduttimeen siirtyy teho $P_1 - P_2 = 546\,\text{MW} - 240{,}24\,\text{MW} \approx 306\,\text{MW}$. Se on yli puolet polttoaineen energiasta.
+**Järkevyys.** Arvio: $$\begin{aligned} &0{,}9 \cdot 0{,}45 \cdot 0{,}95 \cdot 600\,\text{MW} \\ &\approx 231\,\text{MW} \end{aligned}$$. Se vastaa tulosta. Hyötysuhde on pienempi kuin heikoimman vaiheen 0,440, kuten tulon pitääkin. Se sopii lauhdevoimalaitoksen tavalliseen noin $40\,\%$:n hyötysuhteeseen (tyypillisesti $38$–$42\,\%$). Tase täsmää: sähkö $228\,\text{MW}$ ja hukka $372\,\text{MW}$ ovat yhteensä $600\,\text{MW}$. Lauhduttimeen siirtyy teho $P_1 - P_2 = 546\,\text{MW} - 240{,}24\,\text{MW} \approx 306\,\text{MW}$. Se on yli puolet polttoaineen energiasta.
 
 Kattilan häviö on vain $54\,\text{MW}$ ja generaattorin ja muuntajan $12\,\text{MW}$. Parannukset kannattaa siis kohdistaa höyrykiertoon ja sen jälkeen lauhduttimen lämmön käyttöön.
 
@@ -281,7 +281,7 @@ Moni ajattelee, että hukkalämpö on energiaa, joka on kadonnut. Energia ei kui
 
 Lämpö voi siirtyä ympäristöön lämpötilassa, joka on vain vähän ympäristön lämpötilaa korkeampi. Silloin siitä on vaikea saada paljon mekaanista työtä tai sähköä. Mitä pienempi lämpötilaero on, sitä pienempi on lämpövoimakoneen suurin mahdollinen hyötysuhde.
 
-Sähkön ja lämmön yhteistuotannossa osa energiasta voidaan käyttää kaukolämpönä. Muuten tämä energia jäisi hukkalämmöksi.
+Sähkön ja lämmön yhteistuotannossa osa energiasta voidaan käyttää kaukolämpönä. Muuten tämä energia siirtyisi hukkalämpönä ympäristöön.
 
 Toinen virhe on laskea vaiheiden hyötysuhteet yhteen tai ottaa niiden keskiarvo. Kolmen vaiheen hyötysuhteet ovat 0,92, 0,46 ja 0,945. Ketjun hyötysuhde on niiden tulo 0,40, ei keskiarvo 0,78. Kolmas virhe on pitää yhteistuotannon $88\,\%$:n kokonaishyötysuhdetta merkkinä siitä, että kaikki energia olisi yhtä arvokasta. Sähköä voi käyttää kaikkeen, kaukolämpöä pääasiassa lämmitykseen.
 

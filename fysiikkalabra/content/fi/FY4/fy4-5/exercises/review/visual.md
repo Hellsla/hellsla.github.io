@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9c30fcda079726fd
-none
+CONTENT-HASH: 4bbddaf2fec46c63
 
 ## Blocking
 None.
@@ -9,8 +8,4 @@ None.
 None.
 
 ## Checked
-- fy4-5-L2-08 solution (open-exercises-L2-1280-12 and -13): wording kiekko to kappale consistent throughout, force figure with dashed components and orange a, answer with angle from the x-axis clear. Also looked at L2-07 force diagram (-10).
-- Round 2 wording and angle phrasing are consistent.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-06, fi-390-07 and fi-1280-04, fi-1280-05; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

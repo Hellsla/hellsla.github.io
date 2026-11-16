@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 747580352a17a6db
+CONTENT-HASH: c367e5fc29791883
 
 ## Blocking
 (none)
 
 ## Polish
-1. L2-09 is little more than reading two times; at level 2 add the question of whether the forces are equal throughout, or move it to level 1.
-2. Figure description for anturit gives the peak values (about +4 and -4 N); acceptable for access, but then L1-09 is a pure reading task.
+(none)
 
 ## Checked
-- fy4-3-L1-09: reading the force on B at 0.10 s; the sensor labels make clear whose force each sensor measures, so the third law is applied, not just read.
-- fy4-3-L2-09: figure shared with L1-09, the answer needs only two readings of time.
-- L1 tasks use everyday contexts and one-step third-law/first-law reasoning; multiple-choice distractors name real misconceptions (forward force, weight as reaction, cancelling pair).
-- Levels 2 and 3 hold the data, error-analysis and horse-cart tasks the exercise bank plans; model answers explain, not only state.
+- Delta: the diff judged in its context; hash c367e5fc29791883 at start and end.
+- Principle and Answer c): the third-law pair is now cart–rope, and the rope–hand pair is named separately; this repairs the earlier wording in which the cart pulled the student directly.
+- The new sentences are short and readable, and consistent with each other in Principle and Answer.
+- The marker "(example data)" taken out of captions changes no task.
+- Force-diagram checklist untouched by the diff.

@@ -31,7 +31,14 @@
 **Periaate:** Ensin vesi lämpenee kiehumispisteeseen. Silloin olomuoto ei muutu. Sitten vesi höyrystyy, ja lämpötila pysyy samana. Kumpaankin vaiheeseen tarvittava energia tulee kivistä. Siksi energiat lasketaan yhteen.
 **Kaava:** $Q = c_\text{v} m \Delta T + r m$
 **Muunnokset:** $1{,}2\,\text{l}$ vettä on $1{,}2\,\text{kg}$. $c_\text{v} = 4{,}19 \cdot 1000\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}} = 4190\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}}$, $r = 2260 \cdot 1000\,\tfrac{\text{J}}{\text{kg}} = 2{,}26 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$ ja $\Delta T = 100\,{}^\circ\text{C} - 18\,{}^\circ\text{C} = 82\,\text{K}$.
-**Sijoitus:** $Q = 4190\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}} \cdot 1{,}2\,\text{kg} \cdot 82\,\text{K} + 2{,}26 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \cdot 1{,}2\,\text{kg} = 412\,296\,\text{J} + 2\,712\,000\,\text{J} = 3\,124\,296\,\text{J}$
+**Sijoitus:** $$
+\begin{aligned}
+Q &= 4190\,\tfrac{\text{J}}{\text{kg} \cdot \text{K}} \cdot 1{,}2\,\text{kg} \cdot 82\,\text{K} \\
+&+ 2{,}26 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \cdot 1{,}2\,\text{kg} \\
+&= 412\,296\,\text{J} + 2\,712\,000\,\text{J} \\
+&= 3\,124\,296\,\text{J}
+\end{aligned}
+$$
 **Vastaus:** $Q \approx 3{,}1\,\text{MJ}$. Tuloksessa on kaksi merkitsevää numeroa, kuten veden määrässä $1{,}2\,\text{l}$.
 **Järkevyys:** Höyrystyminen vie lähes $90\,\%$ energiasta. Se sopii siihen, että höyrystymislämpö on yli viisi kertaa niin suuri kuin energia, joka tarvitaan veden lämmittämiseen kiehumispisteeseen. Jos kiuas ei lämmittäisi, kivet jäähtyisivät $\tfrac{3{,}12\,\text{MJ}}{25\,\text{kg} \cdot 800\,\text{J/(kg K)}} \approx 160\,\text{K}$. Kiuas tuottaa saman energian $\tfrac{3{,}12\,\text{MJ}}{6000\,\text{W}} \approx 9\,\text{min}$:ssa. Siksi kiuas pitää kivet kuumina, kun löylyä heitetään vain silloin tällöin.
 
@@ -123,7 +130,7 @@
 
 ### d)
 **Kysytty:** auttaako laatikon massan kasvattaminen pitämään laatikon paikallaan
-**Periaate:** Suurin lepokitka on $\mu_0 N = \mu_0 mg$. Laatikon hidastamiseen tarvitaan voima $ma$. Molemmat ovat verrannollisia massaan.
+**Periaate:** Lähtökitka eli täysin kehittynyt lepokitka on $\mu_0 N = \mu_0 mg$. Laatikon hidastamiseen tarvitaan voima $ma$. Molemmat ovat verrannollisia massaan.
 **Mallivastaus:** Raskaampi laatikko painaa lavaa enemmän. Siksi suurin mahdollinen lepokitka $\mu_0 mg$ kasvaa. Raskaamman laatikon hidastamiseen tarvitaan kuitenkin myös suurempi voima $ma$. Tämä voima kasvaa samassa suhteessa. Massa supistuu eli häviää ehdosta $ma \le \mu_0 mg$. Siksi suurin sallittu hidastuvuus $a_\text{max} = \mu_0 g$ ei riipu massasta. Ehdotus ei siis auta. Toimivia keinoja ovat nämä: laatikko sidotaan lavaan liinoilla, tai kitkakerrointa suurennetaan, esimerkiksi laatikon alle laitetaan kuminen liukueste.
 
 ### Yleisiä virheitä
@@ -165,7 +172,14 @@
 **Periaate:** Kiinteä metalli lyhenee, kun se jäähtyy. Pituuden muutos on verrannollinen alkuperäiseen pituuteen ja lämpötilan muutokseen. Perustaajuus on kääntäen verrannollinen pituuteen: kun pituus pienenee, taajuus kasvaa. Siksi lyhenevä pilli nostaa taajuutta yhtä monta prosenttia kuin pituus pienenee.
 **Kaava:** $\Delta L = \alpha L_0 \Delta T$. Taajuus on $f = \dfrac{v}{2(L_0 + \Delta L)}$, joten $\dfrac{\Delta f}{f_0} = \dfrac{L_0}{L_0 + \Delta L} - 1 \approx -\dfrac{\Delta L}{L_0} = -\alpha \Delta T$, kun $|\Delta L| \ll L_0$
 **Muunnokset:** $\Delta T = 8\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = -12\,\text{K}$ ja lopuksi $1\,\text{m} = 1000\,\text{mm}$.
-**Sijoitus:** $\Delta L = 2{,}3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot 1{,}31\,\text{m} \cdot (-12\,\text{K}) = -3{,}62 \cdot 10^{-4}\,\text{m} = -0{,}362\,\text{mm}$ ja $\dfrac{\Delta L}{L_0} = \dfrac{-3{,}62 \cdot 10^{-4}\,\text{m}}{1{,}31\,\text{m}} = -2{,}8 \cdot 10^{-4} = -0{,}028\,\%$ ja $\dfrac{\Delta f}{f_0} \approx -\alpha \Delta T = -2{,}3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot (-12\,\text{K}) = +2{,}8 \cdot 10^{-4}$
+**Sijoitus:** $$
+\begin{aligned}
+\Delta L &= 2{,}3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot 1{,}31\,\text{m} \\
+&\cdot (-12\,\text{K}) \\
+&= -3{,}62 \cdot 10^{-4}\,\text{m} \\
+&= -0{,}362\,\text{mm}
+\end{aligned}
+$$ ja $\dfrac{\Delta L}{L_0} = \dfrac{-3{,}62 \cdot 10^{-4}\,\text{m}}{1{,}31\,\text{m}} = -2{,}8 \cdot 10^{-4} = -0{,}028\,\%$ ja $\dfrac{\Delta f}{f_0} \approx -\alpha \Delta T = -2{,}3 \cdot 10^{-5}\,\tfrac{1}{\text{K}} \cdot (-12\,\text{K}) = +2{,}8 \cdot 10^{-4}$
 **Vastaus:** Pilli lyhenee noin $0{,}36\,\text{mm}$. Tuloksessa on kaksi merkitsevää numeroa, kuten lämpötilakertoimessa. Lyheneminen nostaisi taajuutta vain noin $0{,}03\,\%$. Ilman jäähtyminen laskee taajuutta noin $2{,}1\,\%$, eli noin $75$ kertaa enemmän. Urut soivat siis matalammalta ilman takia. Syy ei ole se, että metalli kutistuu.
 **Järkevyys:** Arkikokemuksen mukaan metallit laajenevat lämmössä vain vähän. Metrin pituinen tanko muuttuu vain millimetrin kymmenesosia, kun lämpötila muuttuu kymmenen astetta.
 
@@ -193,7 +207,13 @@
 **Periaate:** Johtimen resistanssi on verrannollinen johtimen pituuteen. Se on kääntäen verrannollinen poikkipinta-alaan: kun pinta-ala kasvaa, resistanssi pienenee. Virta kulkee laitteelle yhtä johdinta pitkin ja palaa toista johdinta pitkin. Siksi virta kulkee matkan, joka on kaksi kertaa johdon pituus.
 **Kaava:** $R_\text{j} = \rho \dfrac{2l}{A}$
 **Muunnokset:** $A = 1{,}5\,\text{mm}^2 = 1{,}5 \cdot (10^{-3}\,\text{m})^2 = 1{,}5 \cdot 10^{-6}\,\text{m}^2$ ja $2l = 2 \cdot 25{,}0\,\text{m} = 50{,}0\,\text{m}$
-**Sijoitus:** $R_\text{j} = 1{,}68 \cdot 10^{-8}\,\Omega \cdot \text{m} \cdot \dfrac{50{,}0\,\text{m}}{1{,}5 \cdot 10^{-6}\,\text{m}^2} = 0{,}560\,\Omega$
+**Sijoitus:** $$
+\begin{aligned}
+R_\text{j} &= 1{,}68 \cdot 10^{-8}\,\Omega \cdot \text{m} \\
+&\cdot \dfrac{50{,}0\,\text{m}}{1{,}5 \cdot 10^{-6}\,\text{m}^2} \\
+&= 0{,}560\,\Omega
+\end{aligned}
+$$
 **Vastaus:** $R_\text{j} \approx 0{,}56\,\Omega$. Tuloksessa on kaksi merkitsevää numeroa, kuten poikkipinta-alassa.
 **Järkevyys:** Resistanssi on pieni verrattuna laitteiden resistansseihin, jotka ovat kymmeniä ohmeja. Sellaista johdolta odotetaan. Resistanssi ei kuitenkaan ole nolla.
 
@@ -209,7 +229,7 @@
 
 ### c)
 **Annettu:** $R_\text{j} = 0{,}560\,\Omega$, $I = 14{,}27\,\text{A}$ (a- ja b-kohdat)
-**Kysytty:** teho $P_\text{j}$, joka muuttuu johdossa lämmöksi
+**Kysytty:** teho $P_\text{j}$, joka muuttuu johdon sisäenergiaksi
 **Periaate:** Virta kulkee johdon resistanssin läpi. Silloin sähköenergiaa muuttuu johtimen sisäenergiaksi. Johdon teho saadaan johdon omasta resistanssista ja virrasta, joka kulkee johdon läpi.
 **Kaava:** $P_\text{j} = U_\text{j} I$ ja $U_\text{j} = R_\text{j} I$ (Ohmin laki), joten $P_\text{j} = R_\text{j} I^2$
 **Muunnokset:** Ei tarvita.
@@ -356,7 +376,13 @@ Pudotus kuvataan puhelimella, joka on jalustalla. Mittanauha on pystyssä pallon
 **Periaate:** Ylimmissä kohdissa pallo on hetken levossa. Siksi pallon mekaaninen energia on silloin pelkkää potentiaalienergiaa. Ilmanvastus on pieni, koska matka on lyhyt. Siksi energiaa muuttuu muuksi lähinnä pompussa. Silloin pallo ja lattia muuttavat muotoaan ja lämpenevät.
 **Kaava:** $E_1 = mgh_1$ ja $E_2 = mgh_2$, joten osuus $= \dfrac{E_1 - E_2}{E_1} = 1 - \dfrac{h_2}{h_1}$; massa supistuu
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** osuus $= 1 - \dfrac{0{,}36\,\text{m}}{1{,}50\,\text{m}} = 1 - 0{,}24 = 0{,}76$
+**Sijoitus:** osuus $$
+\begin{aligned}
+&= 1 - \dfrac{0{,}36\,\text{m}}{1{,}50\,\text{m}} \\
+&= 1 - 0{,}24 \\
+&= 0{,}76
+\end{aligned}
+$$
 **Vastaus:** Noin $76\,\%$ mekaanisesta energiasta muuttuu pompussa muiksi energiamuodoiksi. Tuloksessa on kaksi merkitsevää numeroa, kuten pomppukorkeudessa.
 **Järkevyys:** Squashpallo pomppaa huonosti, joten suuri osuus sopii. Tennispallo pomppaa samalta korkeudelta yli puoleen korkeuteen. Silloin osuus olisi alle $50\,\%$.
 
@@ -368,7 +394,12 @@ Pudotus kuvataan puhelimella, joka on jalustalla. Mittanauha on pystyssä pallon
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}36\,\text{m}} = \sqrt{7{,}063\,\text{m}^2/\text{s}^2} = 2{,}658\,\text{m/s}$
 **Vastaus:** $v \approx 2{,}7\,\text{m/s}$. Tuloksessa on kaksi merkitsevää numeroa, kuten pomppukorkeudessa.
-**Järkevyys:** Juuri ennen osumaa lattiaan nopeus oli $\sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}50\,\text{m}} = 5{,}4\,\text{m/s}$. Pomppu puolittaa nopeuden. Liike-energiaa jää $\left(\tfrac{2{,}66}{5{,}42}\right)^2 = 0{,}24$ eli $24\,\%$. Se vastaa b-kohdan tulosta.
+**Järkevyys:** Juuri ennen osumaa lattiaan nopeus oli $$
+\begin{aligned}
+&\sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}50\,\text{m}} \\
+&= 5{,}4\,\text{m/s}
+\end{aligned}
+$$. Pomppu puolittaa nopeuden. Liike-energiaa jää $\left(\tfrac{2{,}66}{5{,}42}\right)^2 = 0{,}24$ eli $24\,\%$. Se vastaa b-kohdan tulosta.
 
 ### d)
 **Kysytty:** kuinka tarkasti pomppukorkeuden voi lukea videolta ja kaksi keinoa parantaa mittausta

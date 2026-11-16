@@ -50,4 +50,6 @@ voy_2026 = voyager(2026, 1, 1)                         # 142,2 AU, 19,7 h; 19,71
 voy_feb = (voyager(2026, 2, 1)[0], voyager(2026, 2, 28)[0])   # 142,4 … 142,7 AU from the Sun ~ 142,5; JPL Feb 2026: 143,05 AU from the Earth (|Earth - Sun| <= 1 AU)
 tark2 = 0.387 * AU / C / 60                             # Mercury 0,387 AU: 5,790e7 km / 2,998e5 km/s = 193,1 s = 3,22 min
 a["fy1-2-L1-10"] = round(384400e3 / 2.998e8, 2)            # MAFY table (Aurinkokunta): Moon mean distance 384 400 km = 3,844·10⁸ m; t = s / c = 1,282 s, given to three significant figures: 1,28 s
+# FY1-A4 (work queue 19): BIPM kilogram, 1 mg of 1 kg
+a["fy1-2-L2-08"] = 1e-6 / 1 * 100                 # dm/m = 1e-6 = 1e-4 % (BIPM drift 25 µg: 2,5e-6 %)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -10,7 +10,7 @@
 **Perustelu:** Yön aikana lusikat ovat asettuneet lämpötasapainoon huoneen kanssa, joten niiden lämpötila on sama. Lämmin käsi luovuttaa lämpöä kumpaankin, mutta metalli johtaa lämpöä paljon paremmin kuin puu ja vie sitä kädestä nopeammin pois. Iho jäähtyy, ja metalli tuntuu kylmältä. Kylmä ei ole ainetta, joka siirtyisi. Ominaislämpökapasiteetti ei yksin selitä tuntemusta, ja metallin ominaislämpökapasiteetti massaa kohti on itse asiassa pienempi kuin puun.
 
 ### d)
-**Perustelu:** Hydrostaattinen paine on $p = \rho g h$, joten $h = \dfrac{p}{\rho g} = \dfrac{101\,000\,\text{Pa}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} \approx 10\,\text{m}$. Vaihtoehto $1\,\text{m}$ on kymmenen kertaa liian pieni: metrin vesipatsaan paine on vain noin $9{,}8\,\text{kPa}$.
+**Perustelu:** Hydrostaattinen paine on $p = \rho g h$, joten $$\begin{aligned} h &= \dfrac{p}{\rho g} \\ &= \dfrac{101\,000\,\text{Pa}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}} \\ &\approx 10\,\text{m} \end{aligned}$$. Vaihtoehto $1\,\text{m}$ on kymmenen kertaa liian pieni: metrin vesipatsaan paine on vain noin $9{,}8\,\text{kPa}$.
 
 ### e)
 **Perustelu:** Sisäenergian muutos on $\Delta U = Q + W$, missä $W$ on kaasuun tehty työ. Lämpöä ei siirry, joten $Q = 0$, mutta mäntä tekee ilmaan työtä, joten $W > 0$ ja sisäenergia kasvaa. Siksi ilman lämpötila nousee, kuten pyörän pumppu lämpenee. Vastaus ”sisäenergia ei muutu” unohtaa, että energiaa voi siirtyä myös työnä.
@@ -113,7 +113,7 @@ $\theta_0 = -\dfrac{58{,}0\,\text{mm}}{0{,}2125\,\tfrac{\text{mm}}{{}^\circ\text
 ### d)
 **Annettu:** jokainen lukema $2{,}0\,\text{mm}$ todellista suurempi; a-kohdan suoran kulmakerroin $k = 0{,}2125\,\tfrac{\text{mm}}{{}^\circ\text{C}}$
 **Kysytty:** toisen ryhmän tulos $\theta_0'$ ja virheen laji
-**Periaate:** Kun kaikkiin lukemiin lisätään sama $2{,}0\,\text{mm}$, suora siirtyy ylöspäin mutta sen kulmakerroin ei muutu. Pituus lämpötilassa $0\,{}^\circ\text{C}$ on silloin $58{,}0\,\text{mm} + 2{,}0\,\text{mm} = 60{,}0\,\text{mm}$.
+**Periaate:** Kun kaikkiin lukemiin lisätään sama $2{,}0\,\text{mm}$, suora siirtyy ylöspäin mutta sen kulmakerroin ei muutu. Pituus lämpötilassa $0\,{}^\circ\text{C}$ on silloin $$\begin{aligned} &58{,}0\,\text{mm} + 2{,}0\,\text{mm} \\ &= 60{,}0\,\text{mm} \end{aligned}$$.
 **Kaava:** $\theta_0' = -\dfrac{L_0'}{k}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $\theta_0' = -\dfrac{60{,}0\,\text{mm}}{0{,}2125\,\tfrac{\text{mm}}{{}^\circ\text{C}}} \approx -282\,{}^\circ\text{C}$
@@ -193,7 +193,7 @@ $W = 521{,}7\,\text{N} \cdot 0{,}0512\,\text{m} \approx 26{,}7\,\text{J}$
 **Annettu:** $m = 1{,}20\,\text{kg}$, $\theta_1 = -8{,}0\,{}^\circ\text{C}$, $\theta_2 = 100\,{}^\circ\text{C}$, $c_\text{j} = 2{,}09\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$, $s = 333\,\tfrac{\text{kJ}}{\text{kg}}$ ja $c_\text{v} = 4{,}19\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$
 **Kysytty:** lumen ja veden saama energia $Q$
 **Periaate:** Lumi lämpenee ensin sulamispisteeseen $0\,{}^\circ\text{C}$, sulaa sitten vakiolämpötilassa ja lopuksi vesi lämpenee kiehumispisteeseen. Kunkin vaiheen lämpömäärät lasketaan yhteen.
-**Kaava:** $Q = c_\text{j}m\,\Delta T_1 + sm + c_\text{v}m\,\Delta T_2$
+**Kaava:** $$Q = c_\text{j}m\,\Delta T_1 + sm + c_\text{v}m\,\Delta T_2$$
 **Muunnokset:** $\Delta T_1 = 8{,}0\,\text{K}$ ja $\Delta T_2 = 100\,\text{K}$
 **Sijoitus:** $Q_1 = 2{,}09\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}} \cdot 1{,}20\,\text{kg} \cdot 8{,}0\,\text{K} \approx 20\,\text{kJ}$
 
@@ -234,16 +234,16 @@ $\eta_\text{min} = \dfrac{922\,\text{kJ}}{0{,}044\,\text{kg} \cdot 46\,000\,\tfr
 **Periaate:** Syöty lumi lämpenee ja sulaa elimistön lämmöllä samoin kuin kattilassa, ja suurin energia kuluu sulamiseen.
 **Mallivastaus:** Kun lunta syödään, elimistö joutuu antamaan energian, joka lämmittää lumen nollaan asteeseen, sulattaa sen ja lämmittää syntyneen veden ruumiinlämpöön $37\,{}^\circ\text{C}$. Sulaminen vaatii näistä eniten energiaa, vaikka lumen lämpötila ei sulamisen aikana muutu. Puolen kilogramman lumimäärään kuluu energiaa kolmessa vaiheessa (jään ominaislämpökapasiteetti $2{,}09\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$, ominaissulamislämpö $333\,\tfrac{\text{kJ}}{\text{kg}}$, veden ominaislämpökapasiteetti $4{,}19\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$):
 
-$Q_1 = 2{,}09 \cdot 0{,}50 \cdot 8{,}0\,\text{kJ} \approx 8\,\text{kJ}$
+$$\begin{aligned} Q_1 &= 2{,}09 \cdot 0{,}50 \cdot 8{,}0\,\text{kJ} \\ &\approx 8\,\text{kJ} \end{aligned}$$
 
 $Q_2 = 333 \cdot 0{,}50\,\text{kJ} \approx 167\,\text{kJ}$
 
-$Q_3 = 4{,}19 \cdot 0{,}50 \cdot 37\,\text{kJ} \approx 78\,\text{kJ}$
+$$\begin{aligned} Q_3 &= 4{,}19 \cdot 0{,}50 \cdot 37\,\text{kJ} \\ &\approx 78\,\text{kJ} \end{aligned}$$
 
 Yhteensä noin $250\,\text{kJ}$, eli noin puolet banaanin ravintoenergiasta. Pakkasessa keho tarvitsee energiansa pysyäkseen lämpimänä, joten lumen syöminen jäähdyttää kehoa ja altistaa paleltumiselle. Siksi lumi sulatetaan keittimellä.
 
 ### Yleisiä virheitä
-- Sulamislämpö unohdetaan, jolloin energia jää alle puoleen.
+- Kohdassa d sulamislämpö unohdetaan, jolloin energia jää noin kolmasosaan.
 - Lumen ja veden lämpeneminen lasketaan samalla ominaislämpökapasiteetilla.
 - Hyötysuhde lasketaan säiliön koko massasta eikä palaneesta kaasusta.
 - Kohdassa c erotuksen epävarmuudeksi otetaan vain yhden lukeman epävarmuus $1\,\text{g}$.
@@ -379,7 +379,7 @@ $p_2 = 650\,000\,\text{Pa} - 325\,000\,\text{Pa} = 325\,000\,\text{Pa}$
 **Mallivastaus:** Alussa pisteet ovat vaakasuoralla suoralla noin $0{,}2\,{}^\circ\text{C}$:ssa. Hetkestä $8\,\text{min}$ alkaen pisteet ovat nousevalla suoralla, sillä silloin astiassa on pelkkää vettä. Piste $7\,\text{min}$ ($0{,}6\,{}^\circ\text{C}$) on siirtymävaiheessa, jolloin viimeiset jääpalat sulavat, eikä se kuulu kumpaankaan suoraan. Jää on sulanut kokonaan suorien leikkauskohdassa, noin hetkellä $t \approx 7{,}6\,\text{min}$.
 
 ### c)
-**Annettu:** nouseva suora, $m = 0{,}400\,\text{kg} + 0{,}100\,\text{kg} = 0{,}500\,\text{kg}$ ja $c = 4{,}19\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$
+**Annettu:** nouseva suora, $$\begin{aligned} m &= 0{,}400\,\text{kg} + 0{,}100\,\text{kg} \\ &= 0{,}500\,\text{kg} \end{aligned}$$ ja $c = 4{,}19\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$
 **Kysytty:** teho $P$, jolla vastus luovuttaa energiaa veteen
 **Periaate:** Kun jää on sulanut, vastuksen energia lämmittää koko vesimäärää. Teho on lämpömäärä aikayksikköä kohti, ja lämpötilan nousunopeus on suoran kulmakerroin.
 **Kuvaajan lukeminen:** Nousevalta suoralta luetaan pisteet $(9{,}0\,\text{min};\ 11{,}2\,{}^\circ\text{C})$ ja $(13{,}0\,\text{min};\ 42{,}9\,{}^\circ\text{C})$.
@@ -429,7 +429,7 @@ Koska virhelähteet vaikuttavat samaan suuntaan, ne sopivat havaittuun eroon. Mi
 **Annettu:** rakennusosien pinta-alat ja U-arvot, $\theta_\text{sisä} = 21\,{}^\circ\text{C}$ ja $\theta_\text{ulko} = +1{,}0\,{}^\circ\text{C}$
 **Kysytty:** rakennusosien läpi johtuva lämpöteho $P$ ja suurin lämmön karkaamisreitti
 **Periaate:** Rakennusosan läpi johtuva lämpöteho on verrannollinen U-arvoon, pinta-alaan ja lämpötilaeroon. Rakennusosat johtavat lämpöä rinnakkain, joten tehot lasketaan yhteen.
-**Kaava:** $P = (U_1A_1 + U_2A_2 + U_3A_3)\,\Delta T$
+**Kaava:** $$\begin{aligned} &P \\ &= (U_1A_1 + U_2A_2 + U_3A_3)\,\Delta T \end{aligned}$$
 **Muunnokset:** $\Delta T = 21\,{}^\circ\text{C} - 1{,}0\,{}^\circ\text{C} = 20\,\text{K}$
 **Sijoitus:** Ulkoseinät $0{,}40 \cdot 140\,\tfrac{\text{W}}{\text{K}} = 56\,\tfrac{\text{W}}{\text{K}}$, yläpohja $0{,}25 \cdot 100\,\tfrac{\text{W}}{\text{K}} = 25\,\tfrac{\text{W}}{\text{K}}$ ja ikkunat $2{,}0 \cdot 20\,\tfrac{\text{W}}{\text{K}} = 40\,\tfrac{\text{W}}{\text{K}}$.
 
@@ -440,7 +440,7 @@ $P = (56 + 25 + 40)\,\tfrac{\text{W}}{\text{K}} \cdot 20\,\text{K} = 121\,\tfrac
 ### b)
 **Annettu:** $P = 2420\,\text{W}$, $t = 5100\,\text{h}$, ilmanvaihto ja käyttövesi $8{,}0\,\text{MWh}$, lämpökerroin $\varepsilon = 3{,}0$
 **Kysytty:** vuotuinen lämmöntarve $Q_1$ ja lämmityksen sähkönkulutus $W$ kahdella tavalla
-**Periaate:** Keskimääräinen teho kerrottuna ajalla on energia. Lämpöpumpun lämpökerroin on taloon annetun lämmön ja pumpun käyttämän sähköenergian osamäärä. Sähkövastus muuttaa sähköenergian kokonaan lämmöksi.
+**Periaate:** Keskimääräinen teho kerrottuna ajalla on energia. Lämpöpumpun lämpökerroin on taloon annetun lämmön ja pumpun käyttämän sähköenergian osamäärä. Sähkövastuksessa koko sähköenergia muuttuu vastuksen sisäenergiaksi, joka siirtyy lämpönä taloon.
 **Kaava:** $Q_1 = Pt + Q_\text{iv}$ ja $\varepsilon = \dfrac{Q_1}{W}$, joten $W = \dfrac{Q_1}{\varepsilon}$
 **Muunnokset:** $2420\,\text{W} \cdot 5100\,\text{h} = 12\,342\,000\,\text{Wh} \approx 12{,}3\,\text{MWh}$
 **Sijoitus:** $Q_1 = 12{,}3\,\text{MWh} + 8{,}0\,\text{MWh} \approx 20{,}3\,\text{MWh}$

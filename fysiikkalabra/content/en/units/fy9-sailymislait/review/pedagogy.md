@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 14b317dac8dafa44
-Review of the recognition chart (queue 9c) and the term change against the version passed at 0775225e55ef25bc; full on the chart, delta on the rest.
+CONTENT-HASH: f5227f32d90da96e
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- B: rows 'a body moves -> E_k' and 'height changes -> E_p' are definitions, not task signs; they sit between the two energy laws and the collision rows and could move to the end or be dropped.
-- B: no sign for a perfectly inelastic collision ('stick together'), a frequent YO phrase; 'collision or explosion' and 'elastic' cover the rest.
-- B: 'no friction, only gravity' is a good sign; elastic forces (spring) are not mentioned.
+- A solutions.md b) model answer, changed sentence: "about half of the kinetic energy disappeared in test 2" keeps the word the corrected wording is meant to remove; "was converted" would match the sentence's own start.
 
 ## Checked
-Rows: conservation of mechanical energy, work-energy principle, E_k, E_p, momentum, elastic collision, impulse, efficiency. The conditions are in the signs (no friction; elastic). teacher.md updated ('for each sign'). Friction word in Sovella solution is now sliding, consistent. aria matches.
+- solutions.md b), tasks.json criterion (1 p, still observable) and unit.md common mistake: internal-energy wording carried out consistently; unit.md now names kinetic energy, which is more precise than "energy".
+- Half of kinetic energy lost: m_B/(m_A+m_B) = 0.48, correct.

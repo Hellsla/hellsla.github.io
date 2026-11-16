@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 21d60fa389075a14
-SCOPE: delta added-exercise from 73a27a6e79dbba01 base 8f23aa7ae3bd
+CONTENT-HASH: 61ea27233c7c2d79
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy7-3/wire-graph-task — the dashed guide lines to all three points are drawn, so the figure already marks the reading the task asks for — acceptable as it is; omit the guide from the 2.0 cm point if a harder reading is wanted.
+- [Minor] solutions.md:214, :218 — on a phone $B_1$ and $B_2$ stand alone on a row above the `=` row; readable, and joined on a wide screen — no change needed unless the block is touched.
 
 ## Checked
-- fy7-3-open-exercises-L2-1280-10, -11, -12 (en): tasks 3-17 (coil-fit graph) and 3-18 (wire-graph-task) with figures, answer fields and fully opened solutions.
-- Both graphs: axis titles with units, readable ticks, data points distinct from the fitted line, nothing clipped; solutions' aligned chains and $\tfrac{\text{Vs}}{\text{Am}}$ units set cleanly.
+- Delta (reflow). The packet's inventory has no phone-width capture of the opened exercise solutions, so own captures were made from preview/en/fy7-3.html (built after the content) with every exercise solution open at 390 and 1280 px: every solution step holding a display formula, opened at full size (sheets S3-390-1.png, S3-1280-1.png in the session scratchpad).
+- Measured at both widths: no formula wider than its card, no page overflow, no KaTeX error, no raw LaTeX; no row starts inside a number, a power of ten or a unit.
+- L1-03, L2-08 (part d), L3-01, L3-03, L3-04: rows start at `=`, `≈` or `:` between whole quantities; wide form joins the continuation rows.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

@@ -23,9 +23,15 @@
 **Find:** energy changed into thermal energy $E_\text{thermal}$ between points A and C in $\text{J}$
 **Principle:** The skater, the half-pipe and the air form an isolated system, so energy is conserved: $E_\text{initial} = E_\text{final}$. Friction changes part of the mechanical energy into thermal energy, so at the end the energy is mechanical energy and thermal energy.
 **Reading the graph:** At point A there is only the blue potential-energy bar, and its top is at the gridline $700\,\text{J}$; there is no kinetic energy because the skater is at rest. At point C there is only the orange kinetic-energy bar, and its top is at the line $500\,\text{J}$; there is no potential energy because the bottom is the zero level. The bars of point B are not needed.
-**Formula:** $E_\text{p,A} + E_\text{k,A} = E_\text{p,C} + E_\text{k,C} + E_\text{thermal}$, so $E_\text{thermal} = (E_\text{p,A} + E_\text{k,A}) - (E_\text{p,C} + E_\text{k,C})$
+**Formula:** $$ \begin{aligned} E_\text{p,A} + E_\text{k,A} &= E_\text{p,C} + E_\text{k,C} \\ &+ E_\text{thermal} \end{aligned} $$, so $$ \begin{aligned} E_\text{thermal} &= (E_\text{p,A} + E_\text{k,A}) \\ &- (E_\text{p,C} + E_\text{k,C}) \end{aligned} $$
 **Conversions:** All energies are in joules, so no conversions are needed.
-**Substitution:** $E_\text{thermal} = (700\,\text{J} + 0\,\text{J}) - (0\,\text{J} + 500\,\text{J}) = 200\,\text{J}$
+**Substitution:** $$
+\begin{aligned}
+E_\text{thermal} &= (700\,\text{J} + 0\,\text{J}) \\
+&- (0\,\text{J} + 500\,\text{J}) \\
+&= 200\,\text{J}
+\end{aligned}
+$$
 **Answer:** $200\,\text{J}$, to the nearest hundred joules, because the lengths of the bars are read from the $100\,\text{J}$ gridlines.
 **Reasonableness:** The mechanical energy decreases from $700\,\text{J}$ to $500\,\text{J}$, as it must on a track with friction. At point B the mechanical energy is $300\,\text{J} + 300\,\text{J} = 600\,\text{J}$, so by then only $100\,\text{J}$ has changed into thermal energy, and the thermal energy grows along the whole way. Check: $500\,\text{J} + 200\,\text{J} = 700\,\text{J}$.
 
@@ -72,7 +78,7 @@
 **Conversions:** The heating value is already in $\text{MJ/kg}$ and the mass in kilograms, so the answer comes out directly in megajoules and no conversions are needed.
 **Substitution:** $E = 43.4\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2.0\,\text{kg} = 86.8\,\text{MJ}$
 **Answer:** $E \approx 87\,\text{MJ}$, two significant figures as in the mass $2.0\,\text{kg}$. The heating value $H = 43.4\,\text{MJ/kg}$ is from the MAFY table (heating values of fuels, petrol); tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
-**Reasonableness:** A rough estimate: $40\,\text{MJ/kg} \cdot 2\,\text{kg} = 80\,\text{MJ}$, so the result is of the right order of magnitude. Since $1\,\text{kWh} = 3.6\,\text{MJ}$, $87\,\text{MJ}$ is about $24\,\text{kWh}$, and petrol holds much more energy per kilogram than wood, whose heating value is about $16\,\text{MJ/kg}$.
+**Reasonableness:** A rough estimate: $40\,\text{MJ/kg} \cdot 2\,\text{kg} = 80\,\text{MJ}$, so the result is of the right order of magnitude. Since $1\,\text{kWh} = 3.6\,\text{MJ}$, $87\,\text{MJ}$ is about $24\,\text{kWh}$, and petrol holds much more energy per kilogram than dry wood, whose heating value in the MAFY tables is $16.2\,\text{MJ/kg}$.
 
 ## fy2-1-L2-01
 **Given:** chemical energy released from the battery $E_\text{chem} = 3.00\,\text{kJ}$, kinetic energy of the scooter and rider $E_\text{k} = 2150\,\text{J}$
@@ -112,15 +118,26 @@
 **Conversions:** The prefix kilo means a thousand, so we substitute $360\,\text{kJ} = 360 \cdot 1000\,\text{J} = 360\,000\,\text{J}$ and $331\,\text{kJ} = 331 \cdot 1000\,\text{J} = 331\,000\,\text{J}$.
 **Substitution:** $E_\text{other} = 360\,000\,\text{J} - 331\,000\,\text{J} = 29\,000\,\text{J}$
 **Answer:** $29\,000\,\text{J}$ or $2.9 \cdot 10^{4}\,\text{J}$, two significant figures, because the data are given to the nearest kilojoule and the difference is $29\,\text{kJ}$.
-**Reasonableness:** $331\,\text{kJ} : 360\,\text{kJ} \approx 0.92$, over $90\,\%$, goes into the water, and the rest, $29\,\text{kJ}$, is a small part, as it should be with a well-insulated kettle. Checking backwards: $331\,000\,\text{J} + 29\,000\,\text{J} = 360\,000\,\text{J}$.
+**Reasonableness:** $331\,\text{kJ} : 360\,\text{kJ} \approx 0.92$, over $90\,\%$, goes into the water, and the rest, $29\,\text{kJ}$, is a small part, as it should be with a well-insulated kettle. Checking backwards: $$
+\begin{aligned}
+&331\,000\,\text{J} + 29\,000\,\text{J} \\
+&= 360\,000\,\text{J}
+\end{aligned}
+$$.
 
 ## fy2-1-L2-05
 **Given:** space heating $36.0\,\text{GJ}$, hot water $10.5\,\text{GJ}$, electrical appliances and lighting $9.0\,\text{GJ}$, sauna $4.5\,\text{GJ}$
 **Find:** the share of space heating in the total consumption as a percentage, and the biggest target for saving
 **Principle:** A share is the ratio of a part to the whole. The total consumption is the sum of the energies of all the uses, because the uses do not overlap.
-**Formula:** $E_\text{tot} = E_\text{heating} + E_\text{water} + E_\text{elec} + E_\text{sauna}$ and share $= \dfrac{E_\text{heating}}{E_\text{tot}}$
+**Formula:** $$ \begin{aligned} E_\text{tot} &= E_\text{heating} + E_\text{water} \\ &+ E_\text{elec} + E_\text{sauna} \end{aligned} $$ and share $= \dfrac{E_\text{heating}}{E_\text{tot}}$
 **Conversions:** All energies are in gigajoules, so no conversions are needed. The share is changed into a percentage by multiplying by one hundred.
-**Substitution:** The sum is $E_\text{tot} = 36.0\,\text{GJ} + 10.5\,\text{GJ} + 9.0\,\text{GJ} + 4.5\,\text{GJ} = 60.0\,\text{GJ}$, so the share is $\dfrac{36.0\,\text{GJ}}{60.0\,\text{GJ}} = 0.600 = 60.0\,\%$
+**Substitution:** The sum is $$
+\begin{aligned}
+E_\text{tot} &= 36.0\,\text{GJ} + 10.5\,\text{GJ} \\
+&+ 9.0\,\text{GJ} + 4.5\,\text{GJ} \\
+&= 60.0\,\text{GJ}
+\end{aligned}
+$$, so the share is $\dfrac{36.0\,\text{GJ}}{60.0\,\text{GJ}} = 0.600 = 60.0\,\%$
 **Answer:** The share of heating is $60\,\%$ of the consumption. The biggest target for saving is space heating, because it uses the most energy: a ten percent saving in heating would reduce the consumption by $3.6\,\text{GJ}$, but the same saving in the sauna by only $0.45\,\text{GJ}$.
 **Reasonableness:** The share is between $0$ and $100\,\%$, and heating is the biggest item, so more than half is believable in a residential building in the north. Checking the sum of the shares: $60\,\% + 17.5\,\% = 77.5\,\%$ and $15\,\% + 7.5\,\% = 22.5\,\%$, in total $77.5\,\% + 22.5\,\% = 100\,\%$.
 
@@ -138,7 +155,7 @@
 **Given:** electrical energy of each lamp $E_\text{elec} = 216\,\text{kJ}$; energy that changes into light $11\,\text{kJ}$ for the incandescent lamp, $16\,\text{kJ}$ for the halogen lamp and $54\,\text{kJ}$ for the LED lamp (example figures)
 **Find:** the difference between the thermal energies of the incandescent lamp and the LED lamp $\Delta E_\text{thermal}$ in $\text{kJ}$
 **Principle:** A lamp changes electrical energy into light and thermal energy, and energy is neither created nor destroyed, so $E_\text{elec} = E_\text{light} + E_\text{thermal}$.
-**Formula:** $E_\text{thermal} = E_\text{elec} - E_\text{light}$ for both lamps and $\Delta E_\text{thermal} = E_\text{thermal,incand} - E_\text{thermal,LED}$
+**Formula:** $E_\text{thermal} = E_\text{elec} - E_\text{light}$ for both lamps and $$ \begin{aligned} \Delta E_\text{thermal} &= E_\text{thermal,incand} \\ &- E_\text{thermal,LED} \end{aligned} $$
 **Conversions:** All energies are in kilojoules, so no conversions are needed.
 **Substitution:** $E_\text{thermal,incand} = 216\,\text{kJ} - 11\,\text{kJ} = 205\,\text{kJ}$ and $E_\text{thermal,LED} = 216\,\text{kJ} - 54\,\text{kJ} = 162\,\text{kJ}$, so $\Delta E_\text{thermal} = 205\,\text{kJ} - 162\,\text{kJ} = 43\,\text{kJ}$
 **Answer:** The incandescent lamp produces $43\,\text{kJ}$ more thermal energy. Two significant figures match the accuracy of the energy of light $11\,\text{kJ}$.
@@ -151,7 +168,13 @@
 **Reading the graph:** At A there is only a potential-energy bar, whose top is at the gridline $700\,\text{J}$, and the kinetic energy is zero because the skater is at rest. At B the potential-energy bar and the kinetic-energy bar each reach the gridline $300\,\text{J}$.
 **Formula:** $E_\text{A} = E_\text{B} + E_\text{thermal}$, so $E_\text{thermal} = E_\text{A} - E_\text{B}$, and the share is $p = \dfrac{E_\text{thermal}}{E_\text{A}} \cdot 100\,\%$
 **Conversions:** All energies are in joules, so no conversions are needed.
-**Substitution:** $E_\text{thermal} = (700\,\text{J} + 0\,\text{J}) - (300\,\text{J} + 300\,\text{J}) = 100\,\text{J}$, and $p = \dfrac{100\,\text{J}}{700\,\text{J}} \cdot 100\,\% = 14.3\,\%$
+**Substitution:** $$
+\begin{aligned}
+E_\text{thermal} &= (700\,\text{J} + 0\,\text{J}) \\
+&- (300\,\text{J} + 300\,\text{J}) \\
+&= 100\,\text{J}
+\end{aligned}
+$$, and $p = \dfrac{100\,\text{J}}{700\,\text{J}} \cdot 100\,\% = 14.3\,\%$
 **Answer:** $p \approx 14\,\%$, rounded to whole percent, because the energies are read from the figure to the nearest hundred joules.
 **Reasonableness:** The share is positive and below $100\,\%$, as it should be with friction. Check: $600\,\text{J} + 100\,\text{J} = 700\,\text{J}$.
 
@@ -159,7 +182,7 @@
 **Given:** at point A $E_\text{p} = 900\,\text{J}$ and $E_\text{k} = 0\,\text{J}$; at point B $E_\text{p} = 400\,\text{J}$ and $E_\text{k} = 480\,\text{J}$; at point C $E_\text{p} = 0\,\text{J}$ and $E_\text{k} = 750\,\text{J}$
 **Find:** energy changed into thermal energy between points B and C, $\Delta E_\text{thermal}$, in $\text{J}$
 **Principle:** The total energy of the system is conserved, so at every point $E_\text{p} + E_\text{k} + E_\text{thermal}$ is equal to its value at point A, which is $900\,\text{J}$. The thermal energy is what the mechanical energy is missing.
-**Formula:** $E_\text{thermal} = E_\text{A} - E_\text{p} - E_\text{k}$ at each point, and between points B and C $\Delta E_\text{thermal} = E_\text{thermal,C} - E_\text{thermal,B}$
+**Formula:** $E_\text{thermal} = E_\text{A} - E_\text{p} - E_\text{k}$ at each point, and between points B and C $$ \begin{aligned} \Delta E_\text{thermal} &= E_\text{thermal,C} \\ &- E_\text{thermal,B} \end{aligned} $$
 **Conversions:** All energies are in joules, so no conversions are needed.
 **Substitution:** $E_\text{thermal,B} = 900\,\text{J} - 400\,\text{J} - 480\,\text{J} = 20\,\text{J}$ and $E_\text{thermal,C} = 900\,\text{J} - 0\,\text{J} - 750\,\text{J} = 150\,\text{J}$, so $\Delta E_\text{thermal} = 150\,\text{J} - 20\,\text{J} = 130\,\text{J}$
 **Answer:** $130\,\text{J}$, two significant figures, because the initial data are given to the nearest ten joules.
@@ -173,7 +196,12 @@
 **Conversions:** All energies are in joules, so no conversions are needed.
 **Substitution:** $E_\text{thermal,1} = 5.00\,\text{J} - 4.00\,\text{J} = 1.00\,\text{J}$ and $E_\text{thermal,2} = 4.00\,\text{J} - 3.20\,\text{J} = 0.80\,\text{J}$, so $\Delta E = 1.00\,\text{J} - 0.80\,\text{J} = 0.20\,\text{J}$
 **Answer:** $0.20\,\text{J}$, to two decimal places like the energies in the table.
-**Reasonableness:** In each bounce a fifth of the ball's energy at that moment changes into thermal energy ($1.00\,\text{J}$ is a fifth of $5.00\,\text{J}$ and $0.80\,\text{J}$ is a fifth of $4.00\,\text{J}$). In the second bounce the ball has less energy, so less energy changes into thermal energy, and so the bounces get lower and lower but the decrease slows down. Checking backwards: $3.20\,\text{J} + 0.80\,\text{J} + 1.00\,\text{J} = 5.00\,\text{J}$.
+**Reasonableness:** In each bounce a fifth of the ball's energy at that moment changes into thermal energy ($1.00\,\text{J}$ is a fifth of $5.00\,\text{J}$ and $0.80\,\text{J}$ is a fifth of $4.00\,\text{J}$). In the second bounce the ball has less energy, so less energy changes into thermal energy, and so the bounces get lower and lower but the decrease slows down. Checking backwards: $$
+\begin{aligned}
+&3.20\,\text{J} + 0.80\,\text{J} + 1.00\,\text{J} \\
+&= 5.00\,\text{J}
+\end{aligned}
+$$.
 
 ## fy2-1-L3-03
 **Find:** a) the forms of energy at each stage of the nuclear power plant chain; b) where about two thirds of the nuclear energy goes and why the energy has not been lost
@@ -186,9 +214,21 @@
 **Principle:** The total consumption is the sum of the energies of all the sources, and a share is the ratio of a part to the whole. The amount per inhabitant is obtained by dividing the total energy by the number of inhabitants. Energy is conserved, so when fossil energy is replaced with hydro and wind power, the energy needed for the same use does not change, only its source does.
 **Formula:** $E_\text{tot} = \sum E$, share $= \dfrac{E_\text{fossil}}{E_\text{tot}}$ and $E_\text{person} = \dfrac{E_\text{tot}}{N}$; condition c): $E_\text{fossil} - E_\text{replaced} < \dfrac{E_\text{tot}}{3}$
 **Conversions:** Prefixes: $1\,\text{PJ} = 10^{15}\,\text{J}$ and $1\,\text{GJ} = 10^{9}\,\text{J}$, so $1\,\text{PJ} = 10^{15} : 10^{9}\,\text{GJ} = 10^{6}\,\text{GJ}$.
-**Substitution:** The total consumption is $E_\text{tot} = 380\,\text{PJ} + 290\,\text{PJ} + 230\,\text{PJ} + 120\,\text{PJ} + 100\,\text{PJ} + 80\,\text{PJ} = 1200\,\text{PJ}$. The sum of the fossil fuels is $E_\text{fossil} = 290\,\text{PJ} + 100\,\text{PJ} + 80\,\text{PJ} = 470\,\text{PJ}$, so the share is $\dfrac{470\,\text{PJ}}{1200\,\text{PJ}} = 0.392 = 39.2\,\%$. In gigajoules the total consumption is $1200\,\text{PJ} = 1200 \cdot 10^{6}\,\text{GJ} = 1.2 \cdot 10^{9}\,\text{GJ}$, and per inhabitant $E_\text{person} = \dfrac{1.2 \cdot 10^{9}\,\text{GJ}}{5.5 \cdot 10^{6}} = 218\,\text{GJ}$. A third of the total consumption is $1200\,\text{PJ} : 3 = 400\,\text{PJ}$, so the amount to be replaced is $E_\text{replaced} > 470\,\text{PJ} - 400\,\text{PJ} = 70\,\text{PJ}$.
+**Substitution:** The total consumption is $$
+\begin{aligned}
+E_\text{tot} &= 380\,\text{PJ} + 290\,\text{PJ} \\
+&+ 230\,\text{PJ} + 120\,\text{PJ} \\
+&+ 100\,\text{PJ} + 80\,\text{PJ} \\
+&= 1200\,\text{PJ}
+\end{aligned}
+$$. The sum of the fossil fuels is $E_\text{fossil} = 290\,\text{PJ} + 100\,\text{PJ} + 80\,\text{PJ} = 470\,\text{PJ}$, so the share is $\dfrac{470\,\text{PJ}}{1200\,\text{PJ}} = 0.392 = 39.2\,\%$. In gigajoules the total consumption is $1200\,\text{PJ} = 1200 \cdot 10^{6}\,\text{GJ} = 1.2 \cdot 10^{9}\,\text{GJ}$, and per inhabitant $E_\text{person} = \dfrac{1.2 \cdot 10^{9}\,\text{GJ}}{5.5 \cdot 10^{6}} = 218\,\text{GJ}$. A third of the total consumption is $1200\,\text{PJ} : 3 = 400\,\text{PJ}$, so the amount to be replaced is $E_\text{replaced} > 470\,\text{PJ} - 400\,\text{PJ} = 70\,\text{PJ}$.
 **Answer:** a) The share of fossil fuels is about $39\,\%$. b) The consumption is about $2.2 \cdot 10^{2}\,\text{GJ}$, that is $220\,\text{GJ}$ per inhabitant per year (two significant figures as in the number of inhabitants). c) More than $70\,\text{PJ}$ of fossil energy must be replaced (two significant figures as in the data), for example $71\,\text{PJ}$, which leaves $399\,\text{PJ}$ of fossil energy, that is $33.25\,\%$, and the share is below a third. The total consumption can stay the same because energy is neither created nor destroyed: the same energy needed for use is simply produced from another source, so the replacing hydro and wind power adds as much energy as the fossil energy decreases.
-**Reasonableness:** The share is below $100\,\%$. Checking backwards: $218\,\text{GJ} \cdot 5.5 \cdot 10^{6} \approx 1.2 \cdot 10^{9}\,\text{GJ}$. Limit value: if exactly $70\,\text{PJ}$ is replaced, there is $400\,\text{PJ}$ of fossil energy, exactly a third, so a little more is needed.
+**Reasonableness:** The share is below $100\,\%$. Checking backwards: $$
+\begin{aligned}
+&218\,\text{GJ} \cdot 5.5 \cdot 10^{6} \\
+&\approx 1.2 \cdot 10^{9}\,\text{GJ}
+\end{aligned}
+$$. Limit value: if exactly $70\,\text{PJ}$ is replaced, there is $400\,\text{PJ}$ of fossil energy, exactly a third, so a little more is needed.
 
 ## fy2-1-L3-05
 **Given:** input and useful energy of the stages: panel $5.00\,\text{MJ} \to 0.80\,\text{MJ}$, charge controller and battery $0.80\,\text{MJ} \to 0.64\,\text{MJ}$, battery discharge and wires $0.64\,\text{MJ} \to 0.56\,\text{MJ}$, LED lamp $0.56\,\text{MJ} \to 0.14\,\text{MJ}$
@@ -196,6 +236,14 @@
 **Principle:** At each stage energy is conserved: $E_\text{in} = E_\text{out} + E_\text{thermal}$. The model assumes that the rest of the energy changes into thermal energy, so the thermal energy is calculated as the part that does not continue onwards as useful energy. The thermal energy of the whole chain is the sum of the thermal energies of the stages.
 **Formula:** $E_\text{thermal} = E_\text{in} - E_\text{out}$ at each stage and $E_\text{thermal,tot}$ is the sum of the stages
 **Conversions:** All energies are in megajoules, so no conversions are needed.
-**Substitution:** In the panel $5.00\,\text{MJ} - 0.80\,\text{MJ} = 4.20\,\text{MJ}$, in the charge controller and battery $0.80\,\text{MJ} - 0.64\,\text{MJ} = 0.16\,\text{MJ}$, in the battery discharge and wires $0.64\,\text{MJ} - 0.56\,\text{MJ} = 0.08\,\text{MJ}$ and in the lamp $0.56\,\text{MJ} - 0.14\,\text{MJ} = 0.42\,\text{MJ}$. The sum is $E_\text{thermal,tot} = 4.20\,\text{MJ} + 0.16\,\text{MJ} + 0.08\,\text{MJ} + 0.42\,\text{MJ} = 4.86\,\text{MJ}$. The most is produced in the panel, and its share is $\dfrac{4.20\,\text{MJ}}{4.86\,\text{MJ}} = 0.864 = 86\,\%$.
+**Substitution:** In the panel $5.00\,\text{MJ} - 0.80\,\text{MJ} = 4.20\,\text{MJ}$, in the charge controller and battery $0.80\,\text{MJ} - 0.64\,\text{MJ} = 0.16\,\text{MJ}$, in the battery discharge and wires $0.64\,\text{MJ} - 0.56\,\text{MJ} = 0.08\,\text{MJ}$ and in the lamp $0.56\,\text{MJ} - 0.14\,\text{MJ} = 0.42\,\text{MJ}$. The sum is $$
+\begin{aligned}
+E_\text{thermal,tot} &= 4.20\,\text{MJ} \\
+&+ 0.16\,\text{MJ} \\
+&+ 0.08\,\text{MJ} \\
+&+ 0.42\,\text{MJ} \\
+&= 4.86\,\text{MJ}
+\end{aligned}
+$$. The most is produced in the panel, and its share is $\dfrac{4.20\,\text{MJ}}{4.86\,\text{MJ}} = 0.864 = 86\,\%$.
 **Answer:** a) In total $4.86\,\text{MJ}$ changes into thermal energy (three significant figures as in the table). b) The most thermal energy is produced in the solar panel, about $86\,\%$ of all of it. c) Check: $0.14\,\text{MJ} + 4.86\,\text{MJ} = 5.00\,\text{MJ}$, which equals the radiant energy that arrived at the panel. The energy has not been used up: it has changed into light and thermal energy, which is transferred to the surroundings. The light is only $2.8\,\%$ of the initial energy, because at every stage part of it changes into thermal energy, which cannot be turned back into a useful form.
 **Reasonableness:** The output energy of each stage is smaller than its input energy, for example $0.80 < 5.00$ and $0.14 < 0.56$, as it should be. The light of the lamp is $0.14\,\text{MJ} : 5.00\,\text{MJ} = 0.028$, that is $2.8\,\%$ of what arrived at the panel. The large thermal share of the solar panel is believable, because most of the sunlight does not change into electricity.

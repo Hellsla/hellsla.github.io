@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 177a7d99989cf3ad
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 3d103fcf9ae781bf
 
 ## Blocking
 - none
@@ -9,5 +8,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- P = UI paragraph: in-phase current and voltage / power factor about one, active power depends on the phase difference; LaTeX, decimal comma, colon division kept.
-- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.
+- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-7-lesson-1, -2: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
+
+## Scores
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

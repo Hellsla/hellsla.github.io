@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a81048a6915a3228
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 3
+CONTENT-HASH: 298e4ad8d54385f9
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- lesson.md:235 — the new sentence says "heating value" while the old one and the next heading say "heat of combustion"; use the one term this lesson uses (C, terminology only).
 
 ## Checked
-- Round-3 diff `git diff HEAD~1` (commit a84956a90) of this unit's files (en), judged in context; content hash recomputed and equal to the new hash.
-- inquiry.json ennuste-2: "Can the two numbers be compared as the same physical quantity?" is a neutral question, consistent with fi; the options and feedback still fit it; the numbers are unchanged (22 MJ/kg > 15 MJ/kg).
+- Delta review: hash 298e4ad8d54385f9 at the start and the end; I judged the one changed line in lesson.md (Moisture and fuel quality); the rest is re-broken chains, teacher-approved figures and formula names (carried).
+- 16.2 MJ/kg is MAFY's LHV for dry wood (docs/mafy-arvot.tsv, VERIFIED); it is larger than the table's air-dried 15 MJ/kg, so "Drier wood gives more" holds.
+- Same value and meaning as the Finnish version; decimal point is right in English.
+- No other 19 MJ/kg remains in lesson.md, inquiry.json or exit-ticket.json.

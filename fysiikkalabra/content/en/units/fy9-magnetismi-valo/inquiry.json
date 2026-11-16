@@ -19,7 +19,7 @@
       "stage": "herata",
       "type": "hook",
       "text": "The ten cottages of an island village get their electricity from the mainland through a submarine cable $1.0\\,\\text{km}$ long. The total resistance of the cable's conductors is $0.50\\,\\Omega$, and at most $40\\,\\text{kW}$ of power is transmitted along the cable from the mainland. In the cottages the voltage is $230\\,\\text{V}$, but the transmission voltage in the cable is $20\\,\\text{kV}$. In the exam a situation like this can be the start of a problem: the numbers are given, but the formula is not.",
-      "question": "How large a current would flow in the cable at each voltage, and what fraction of the power would turn into heat in the cable?"
+      "question": "How large a current would flow in the cable at each voltage, and what fraction of the power would be converted into internal energy of the cable?"
     },
     {
       "id": "lt-1",
@@ -213,7 +213,7 @@
         },
         {
           "text": "The transmission voltage is not across the line; first calculate the current $I = \\tfrac{P}{U}$.",
-          "feedback": "Correct. $I = \\tfrac{50 \\cdot 10^6\\,\\text{W}}{110 \\cdot 10^3\\,\\text{V}} \\approx 455\\,\\text{A}$ and $P_\\text{h} = RI^2 = 4.0\\,\\Omega \\cdot (455\\,\\text{A})^2 \\approx 830\\,\\text{kW}$, about $1.7\\,\\%$ of the transmitted power.",
+          "feedback": "Correct. $I = \\tfrac{50 \\cdot 10^6\\,\\text{W}}{110 \\cdot 10^3\\,\\text{V}} \\approx 455\\,\\text{A}$ and $$\n\\begin{aligned}\nP_\\text{h} &= RI^2 \\\\\n&= 4.0\\,\\Omega \\cdot (455\\,\\text{A})^2 \\\\\n&\\approx 830\\,\\text{kW}\n\\end{aligned}\n$$, about $1.7\\,\\%$ of the transmitted power.",
           "correct": true
         },
         {

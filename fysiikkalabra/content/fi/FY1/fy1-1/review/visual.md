@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 58fc8d7de6ebacca
-
-Mode: delta (rule sentence added to the Suuruusluokka paragraph)
+CONTENT-HASH: b73fa5e62d69739d
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md Suuruusluokka — "Jos kerroin on alle noin 3" does not name the symbol, so the link to $a$ of the paragraph above is left to the reader — write "Jos kerroin $a$ on alle noin 3".
+- none
 
 ## Checked
-- fy1-1-theory-1280-1.png: the paragraph beside the number-line figure; KaTeX renders $10^{n}$ and $10^{n+1}$, thin-space units and decimal comma intact, paragraph about 60 words, no layout gap.
+delta 5d reflow, round 1: opened contact sheet of all fi/fy1-1 captures at 360 px (captures 01.png); no clipping, equals signs aligned, rows break outside numbers and units.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

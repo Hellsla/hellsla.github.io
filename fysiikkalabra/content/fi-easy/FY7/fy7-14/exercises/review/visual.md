@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 3d1e122452fa32a3
-SCOPE: delta added-exercise from 84431a520674b52a base 8f23aa7ae3bd
+CONTENT-HASH: c6ba68be21278758
 
 ## Blocking
 
 ## Polish
-- [Minor] 14-17 Järkevyys: wording "Se on odotettua, koska yksi pinnoitekerros ei voi kumota…" is fine now; no further change.
+- [Minor] solutions.md:64 — the bracketed formula's second part starts with a bare relation, so on one line (1280 px) the gap before "=" is narrower than after it. `{}=` evens it.
 
 ## Checked
-- Added 14-17 (L2-08) and 14-23 (L3-06) with graphs and open solutions (fy7-14-open-exercises-L2-1280-10, -11, L3-1280-9, -10, full size). Redrawn soap-curve: label "saippuakalvo" now in the clear area below the peak, the earlier Major is resolved; coating graph labelled and legible; chains aligned, decimal comma, units upright; the set reads as one.
-- Rest not re-reviewed.
+- Delta since round 1: solutions.md:64 only. "(570 nm : (4 · 1,33) = 107 nm)" is inline inside its parentheses, split at the relation; at 360 px it wraps before "= 107 nm)", at 390 and 1280 px it is on one line; the brackets stay with the formula, nothing clipped.
+- Own captures of the rebuilt preview (preview/fi-easy, ?ratkaisut=1, everything open): contact sheets of every aligned block of the set at 390 and 1280 px (607,2 nm, 94,2 nm, 540 nm, 221 nm blocks unchanged and intact); line 64 at 360 px.
+- Overflow scan of every formula at 360/390/1280 px: none. No red KaTeX. Hash identical at start and end.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -1,6 +1,6 @@
 # Fission, fusion and nuclear power
 
-> **Why** does one gram of uranium-235 release as much energy in fission as about $3.4$ tonnes of coal do when burned?
+> **Why** does one gram of uranium-235 release as much energy in fission as about $2.8$ tonnes of coal do when burned?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Illustration: a nuclear power plant on a rocky sea shore. In the middle is a cylindrical reactor building with part of its dome drawn open: inside, the reactor core glows in the water. Next to it is a long turbine hall and behind it are the pylons of a power line. In front is the sea and in the sky a few clouds." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy811h-sky-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy811h-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><radialGradient id="fy811h-core" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient></defs>
@@ -471,7 +471,13 @@ $$
 where $m_\text{initial}$ is the total mass of the starting materials, $m_\text{final}$ the total mass of the products and $c$ the speed of light. When $Q > 0$, energy is released. The masses are calculated from the given atomic masses in atomic mass units (the table in the chapter *Mass defect and nuclear binding energy*). Atomic masses include the electrons too, but when the sum of the atomic numbers is conserved, the masses of the electrons cancel in the difference.
 
 ### From atomic mass units to megaelectronvolts
-The chapter *Mass defect and nuclear binding energy* stated that the energy corresponding to an atomic mass unit is $931.5\,\text{MeV}$, that is, $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. When the mass difference is substituted in this unit, the factor $c^2$ cancels: for example, for a mass difference of $0.1\,\text{u}$ we get $Q = 0.1 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 93.15\,\text{MeV}$.
+The chapter *Mass defect and nuclear binding energy* stated that the energy corresponding to an atomic mass unit is $931.5\,\text{MeV}$, that is, $1\,\text{u} = 931.5\,\tfrac{\text{MeV}}{c^2}$. When the mass difference is substituted in this unit, the factor $c^2$ cancels: for example, for a mass difference of $0.1\,\text{u}$ we get $$
+\begin{aligned}
+&Q \\
+&= 0.1 \cdot 931.5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&= 93.15\,\text{MeV}
+\end{aligned}
+$$.
 
 The figure shows the masses of the fission of uranium-235 before and after the reaction. The mass decreases by only about $0.08\,\%$, but this corresponds to an energy of about $173\,\text{MeV}$. When the later decays of the fission products are included, one fission releases about $200\,\text{MeV}$ on average.
 
@@ -546,7 +552,7 @@ The figure shows the masses of the fission of uranium-235 before and after the r
 ### Fission and fusion side by side
 In the fusion of deuterium and tritium, the mass decreases by $0.01888\,\text{u}$, so $Q = 17.6\,\text{MeV}$. One fusion therefore releases less energy than one fission, but more per nucleon: about $3.5\,\text{MeV}$ in fusion and about $0.85\,\text{MeV}$ in fission. The fusion of the same mass of fuel therefore releases about four times as much energy as fission.
 
-The question at the beginning can now be answered. One gram of uranium-235 contains $2.56 \cdot 10^{21}$ nuclei. If all of them undergo fission and each releases $200\,\text{MeV}$, the energy released is $8.2 \cdot 10^{10}\,\text{J}$, or about $82\,\text{GJ}$. The heating value of coal is about $24\,\tfrac{\text{MJ}}{\text{kg}}$, so the same energy is obtained by burning about $3.4$ tonnes of coal. Burning is a chemical reaction in which the bonds of electrons change, with energies of the order of an electronvolt; in a nuclear reaction the energies are millions of electronvolts.
+The question at the beginning can now be answered. One gram of uranium-235 contains $2.56 \cdot 10^{21}$ nuclei. If all of them undergo fission and each releases $200\,\text{MeV}$, the energy released is $8.2 \cdot 10^{10}\,\text{J}$, or about $82\,\text{GJ}$. The heating value of coal is about $29\,\tfrac{\text{MJ}}{\text{kg}}$ (the MAFY tables give $25$–$32\,\tfrac{\text{MJ}}{\text{kg}}$), so the same energy is obtained by burning about $2.8$ tonnes of coal. Burning is a chemical reaction in which the bonds of electrons change, with energies of the order of an electronvolt; in a nuclear reaction the energies are millions of electronvolts.
 
 ## Nuclear power in Finland {Ydinvoima Suomessa}
 
@@ -617,7 +623,12 @@ A light-water reactor cannot explode like a nuclear weapon, because its fuel con
 Physics does not decide how much nuclear power society should use, but it helps to tell correct claims from incorrect ones. The life-cycle greenhouse gas emissions of nuclear power are about $12\,\tfrac{\text{g}}{\text{kWh}}$ of carbon dioxide equivalent, of the same order as wind power and about $1.5\,\%$ of the emissions of coal (IPCC 2014). Little fuel is needed, and the plant produces steadily regardless of the weather. On the other hand, spent fuel is dangerous for a very long time, serious accidents such as Chernobyl in 1986 and Fukushima in 2011 are rare but have wide effects, and building power plants is expensive and slow: construction of Olkiluoto 3 began in 2005 and regular electricity production in 2023. Weighing risks against benefits is a matter of values, and the knowledge of physics is the starting point.
 
 ## Worked example
-A uranium-235 nucleus captures a slow neutron and splits in the reaction ${}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3\,{}^{1}_{0}\text{n}$. The atomic masses are: uranium-235 $235.0439282\,\text{u}$, barium-141 $140.9144033\,\text{u}$, krypton-92 $91.9261731\,\text{u}$ and neutron $1.0086649\,\text{u}$. How much energy is released in the reaction?
+A uranium-235 nucleus captures a slow neutron and splits in the reaction $$
+\begin{aligned}
+&{}^{1}_{0}\text{n} \\
+&+ {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3\,{}^{1}_{0}\text{n}
+\end{aligned}
+$$. The atomic masses are: uranium-235 $235.0439282\,\text{u}$, barium-141 $140.9144033\,\text{u}$, krypton-92 $91.9261731\,\text{u}$ and neutron $1.0086649\,\text{u}$. How much energy is released in the reaction?
 
 <!-- vaihe -->
 
@@ -644,7 +655,15 @@ A uranium-235 nucleus captures a slow neutron and splits in the reaction ${}^{1}
 
 <!-- vaihe -->
 
-**Substitution.** The mass of the starting materials is $m_\text{initial} = 1.0086649\,\text{u} + 235.0439282\,\text{u} = 236.0525931\,\text{u}$ and that of the products $m_\text{final} = 140.9144033\,\text{u} + 91.9261731\,\text{u} + 3 \cdot 1.0086649\,\text{u} = 235.8665711\,\text{u}$.
+**Substitution.** The mass of the starting materials is $m_\text{initial} = 1.0086649\,\text{u} + 235.0439282\,\text{u} = 236.0525931\,\text{u}$ and that of the products $$
+\begin{aligned}
+&m_\text{final} \\
+&= 140.9144033\,\text{u} \\
+&+ 91.9261731\,\text{u} \\
+&+ 3 \cdot 1.0086649\,\text{u} \\
+&= 235.8665711\,\text{u}
+\end{aligned}
+$$.
 ```latex
 \begin{aligned}
 &Q = (m_\text{initial} - m_\text{final})\,c^2 \\

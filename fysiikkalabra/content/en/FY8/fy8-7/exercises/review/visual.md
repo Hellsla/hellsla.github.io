@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bca8b6fbba11c0f6
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: e73b4e5e83dd72e3
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] fy8-7-L3-04 (open-exercises-L3-1280-5 and -6, task 7-20) — for science: the task now says the rest "turns into internal energy", while part c) still reads "the thermal power turning into heat in the medium" and the solution keeps "thermal power" and "unavoidable heat". Decide whether these follow the new wording.
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Round 1, delta: "as heat" → "as internal energy" (L3-04 task and part d, L2-01 Principle), $0.76 \to 0.75\,\text{W}$ (L3-02 Reasonableness), L1-09 Principle ("in atomic and ion lasers … at least three energy levels"). Hash the same at start and end. Captures are in the lesson's review/shots and current.
+- Opened at full size: open-exercises-L3-1280-3 (7-18: the Reasonableness block shows "≈ 0.75 W" on its own aligned row, inside the card) and open-exercises-L3-1280-6 (7-20: part d reads "remains in the medium as internal energy", answer and reasonableness blocks intact).
+- contact-7 for the rest: L1-09 Principle (#76) and L2-01 Principle (#78) show the new sentences inside their solution cards, no change of layout.
+- Decimal points, upright units and thin spaces as before; the new sentences are natural English; nothing clipped or overflowing in the captures opened.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

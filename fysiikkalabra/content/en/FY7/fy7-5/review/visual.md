@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0e04e6b96fbac7d1
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 78c9fab025692b2a
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md — the "The quotient $\Delta\Phi : \Delta t$" paragraph is about 131 words; optionally break before "In the graph below".
+- [Minor] inquiry.json:193 — the split inline chain (`… 2.0 mWb` / `= −20 mWb`) wraps cleanly on a phone; where both pieces share a line the second piece's `=` has no relation space on its left. `${} = …$` would restore it.
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- $e_\text{ka}$ / $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$ / $e(t) = -N\,\tfrac{\mathrm{d}\Phi}{\mathrm{d}t}$ typography; inquiry magnet task now uses $|e_\text{ka}|$ in Kysytty, Kaava and Sijoitus consistently.
-- Round-1 blocker fixed: the steady/uneven-change sentences are now their own paragraph; the formula-explanation paragraph is back under the limit.
-- Hash identical at start and end of this round.
+- batch delta review: queue 5d reflow, round 2. Page rebuilt (build.py fy7-5) and every changed formula of inquiry.json captured from preview/en/fy7-5.html at 360, 390 and 1280 px with every box, hint, solution and choice feedback forced open; the 390 and 1280 px sheets were read at full size. Round-1 Critical resolved: in the find-the-error task A and |e| are again separate equations, identical to main; seen at 390 and 1280 px. The feedback row `|e| = 200 · 0.30 T` / `· 6.0 · 10⁻⁴ m² : 0.050 s` / `= 0.72 V.` breaks between whole quantities. Measured at all three widths: no formula wider than its box, no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line (the closing full stop or comma is set inside the block). Source compared with main: the same tokens in the same order; every new row starts with a relation, a sign or between whole quantities. Hash identical at the end. Figures were not re-judged.

@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7682f24e4c0a7761
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: 9860abfa76373e51
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Source-level read of the diff: Finnish/English wording, LaTeX number+unit typography (thin space, \text units, decimal comma in fi/fi-easy, \cdot), the aligned block with \approx in fy8-9 where applicable; no inline formula wrapping, no new figures. No render made.
+- Delta: one wording change in inquiry.json, the "Sovella uuteen tilanteeseen" task (hint 3 and the 3,06 eV mistake feedback now say "Sisäenergiaksi jää ..." instead of "Lämmöksi jää ...").
+- No capture shows that task's hints at the current hash, so the sentence is judged from source. I opened fy8-2-stage-sovella-390-2 to confirm the surrounding layout.
+- The sentence is fluent Finnish and matches the task's prompt and hint 1 (sisäenergia). The formula $E_1 - E_2$ and the units are LaTeX. No figure, typography or layout change.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

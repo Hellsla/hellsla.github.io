@@ -1,6 +1,6 @@
 # Fissio, fuusio ja ydinvoima
 
-> **Miksi** gramma uraani-235:tä vapauttaa fissiossa eli ytimen jakautumisessa yhtä paljon energiaa kuin noin $3{,}4$ tonnia kivihiiltä palaessaan?
+> **Miksi** gramma uraani-235:tä vapauttaa fissiossa eli ytimen jakautumisessa yhtä paljon energiaa kuin noin $2{,}8$ tonnia kivihiiltä palaessaan?
 
 <svg data-fig="hero" viewBox="0 0 1200 600" role="img" aria-label="Kuvitus: ydinvoimala kallioisella merenrannalla. Keskellä on lieriön muotoinen reaktorirakennus. Sen kupolista osa on piirretty auki. Sisällä reaktorin sydän hehkuu vedessä. Vieressä on pitkä turbiinihalli, ja sen takana on voimalinjan pylväitä. Edessä on meri, ja taivaalla on muutama pilvi." class="fig-hero" style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy811h-sky-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#eef5f9"/></linearGradient><linearGradient id="fy811h-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient><radialGradient id="fy811h-core" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffc078"/><stop offset="0.55" stop-color="#e8590c" stop-opacity="0.8"/><stop offset="1" stop-color="#e8590c" stop-opacity="0"/></radialGradient></defs>
@@ -471,7 +471,13 @@ $$
 missä $m_\text{alku}$ on lähtöaineiden ja $m_\text{loppu}$ tuotteiden yhteenlaskettu massa ja $c$ on valon nopeus. Kun $Q > 0$, energiaa vapautuu. Massat lasketaan annetuista atomimassoista atomimassayksikköinä (taulukko luvussa *Massavaje ja ytimen sidosenergia*). Atomimassoissa ovat mukana myös elektronit. Kun järjestyslukujen summa säilyy, elektronien massat kumoutuvat erotuksessa.
 
 ### Atomimassayksiköstä megaelektronivoltteihin
-Luvussa *Massavaje ja ytimen sidosenergia* todettiin, että atomimassayksikköä vastaava energia on $931{,}5\,\text{MeV}$, eli $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Kun massaero sijoitetaan tähän yksikköön, tekijä $c^2$ supistuu. Esimerkiksi massaerolla $0{,}1\,\text{u}$ saadaan $Q = 0{,}1 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 = 93{,}15\,\text{MeV}$.
+Luvussa *Massavaje ja ytimen sidosenergia* todettiin, että atomimassayksikköä vastaava energia on $931{,}5\,\text{MeV}$, eli $1\,\text{u} = 931{,}5\,\tfrac{\text{MeV}}{c^2}$. Kun massaero sijoitetaan tähän yksikköön, tekijä $c^2$ supistuu. Esimerkiksi massaerolla $0{,}1\,\text{u}$ saadaan $$
+\begin{aligned}
+&Q \\
+&= 0{,}1 \cdot 931{,}5\,\tfrac{\text{MeV}}{c^2} \cdot c^2 \\
+&= 93{,}15\,\text{MeV}
+\end{aligned}
+$$.
 
 Kuvassa ovat uraani-235:n fission massat ennen reaktiota ja sen jälkeen. Massa pienenee vain noin $0{,}08\,\%$, mutta se vastaa noin $173\,\text{MeV}$:n energiaa. Kun mukaan lasketaan fissiotuotteiden myöhemmät hajoamiset, yhdestä fissiosta vapautuu keskimäärin noin $200\,\text{MeV}$.
 
@@ -546,7 +552,7 @@ Kuvassa ovat uraani-235:n fission massat ennen reaktiota ja sen jälkeen. Massa 
 ### Fissio ja fuusio rinnakkain
 Deuteriumin ja tritiumin fuusiossa massa pienenee $0{,}01888\,\text{u}$, joten $Q = 17{,}6\,\text{MeV}$. Yksi fuusio vapauttaa siis vähemmän energiaa kuin yksi fissio. Nukleonia kohti fuusio vapauttaa kuitenkin enemmän: fuusiossa noin $3{,}5\,\text{MeV}$ ja fissiossa noin $0{,}85\,\text{MeV}$. Saman polttoainemassan fuusio vapauttaa siten noin nelinkertaisesti energiaa fissioon verrattuna.
 
-Alun kysymykseen voi nyt vastata. Grammassa uraani-235:tä on $2{,}56 \cdot 10^{21}$ ydintä. Jos kaikki fissioituvat ja kustakin vapautuu $200\,\text{MeV}$, energiaa vapautuu $8{,}2 \cdot 10^{10}\,\text{J}$ eli noin $82\,\text{GJ}$. Kivihiilen lämpöarvo on noin $24\,\tfrac{\text{MJ}}{\text{kg}}$. Lämpöarvo kertoo, kuinka paljon energiaa vapautuu, kun kilogramma ainetta palaa. Sama energia saadaan siis polttamalla noin $3{,}4$ tonnia hiiltä. Palaminen on kemiallinen reaktio, jossa muuttuvat elektronien sidokset. Niiden energiat ovat elektronivoltin luokkaa. Ydinreaktiossa energiat ovat miljoonia elektronivoltteja.
+Alun kysymykseen voi nyt vastata. Grammassa uraani-235:tä on $2{,}56 \cdot 10^{21}$ ydintä. Jos kaikki fissioituvat ja kustakin vapautuu $200\,\text{MeV}$, energiaa vapautuu $8{,}2 \cdot 10^{10}\,\text{J}$ eli noin $82\,\text{GJ}$. Kivihiilen lämpöarvo on noin $29\,\tfrac{\text{MJ}}{\text{kg}}$ (MAFY-taulukoissa $25$–$32\,\tfrac{\text{MJ}}{\text{kg}}$). Lämpöarvo kertoo, kuinka paljon energiaa vapautuu, kun kilogramma ainetta palaa. Sama energia saadaan siis polttamalla noin $2{,}8$ tonnia hiiltä. Palaminen on kemiallinen reaktio, jossa muuttuvat elektronien sidokset. Niiden energiat ovat elektronivoltin luokkaa. Ydinreaktiossa energiat ovat miljoonia elektronivoltteja.
 
 ## Ydinvoima Suomessa
 
@@ -619,7 +625,12 @@ Fysiikka ei ratkaise, kuinka paljon ydinvoimaa yhteiskunnan pitäisi käyttää.
 Toisaalta käytetty polttoaine on vaarallista hyvin pitkään. Vakavat onnettomuudet kuten Tšernobyl 1986 ja Fukushima 2011 ovat harvinaisia mutta vaikutuksiltaan laajoja. Lisäksi voimaloiden rakentaminen on kallista ja hidasta: Olkiluoto 3:n rakentaminen alkoi vuonna 2005 ja säännöllinen sähköntuotanto vuonna 2023. Riskien ja hyötyjen punninta on arvovalinta, jossa fysiikan tieto on lähtökohta.
 
 ## Esimerkki
-Uraani-235-ydin kaappaa hitaan neutronin ja jakautuu reaktiossa ${}^{1}_{0}\text{n} + {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3\,{}^{1}_{0}\text{n}$. Atomimassat ovat: uraani-235 $235{,}0439282\,\text{u}$, barium-141 $140{,}9144033\,\text{u}$, krypton-92 $91{,}9261731\,\text{u}$ ja neutroni $1{,}0086649\,\text{u}$. Kuinka paljon energiaa reaktiossa vapautuu?
+Uraani-235-ydin kaappaa hitaan neutronin ja jakautuu reaktiossa $$
+\begin{aligned}
+&{}^{1}_{0}\text{n} \\
+&+ {}^{235}_{92}\text{U} \rightarrow {}^{141}_{56}\text{Ba} + {}^{92}_{36}\text{Kr} + 3\,{}^{1}_{0}\text{n}
+\end{aligned}
+$$. Atomimassat ovat: uraani-235 $235{,}0439282\,\text{u}$, barium-141 $140{,}9144033\,\text{u}$, krypton-92 $91{,}9261731\,\text{u}$ ja neutroni $1{,}0086649\,\text{u}$. Kuinka paljon energiaa reaktiossa vapautuu?
 
 <!-- vaihe -->
 
@@ -646,7 +657,15 @@ Uraani-235-ydin kaappaa hitaan neutronin ja jakautuu reaktiossa ${}^{1}_{0}\text
 
 <!-- vaihe -->
 
-**Sijoitus.** Lähtöaineiden massa on $m_\text{alku} = 1{,}0086649\,\text{u} + 235{,}0439282\,\text{u} = 236{,}0525931\,\text{u}$ ja tuotteiden $m_\text{loppu} = 140{,}9144033\,\text{u} + 91{,}9261731\,\text{u} + 3 \cdot 1{,}0086649\,\text{u} = 235{,}8665711\,\text{u}$.
+**Sijoitus.** Lähtöaineiden massa on $m_\text{alku} = 1{,}0086649\,\text{u} + 235{,}0439282\,\text{u} = 236{,}0525931\,\text{u}$ ja tuotteiden $$
+\begin{aligned}
+&m_\text{loppu} \\
+&= 140{,}9144033\,\text{u} \\
+&+ 91{,}9261731\,\text{u} \\
+&+ 3 \cdot 1{,}0086649\,\text{u} \\
+&= 235{,}8665711\,\text{u}
+\end{aligned}
+$$.
 ```latex
 \begin{aligned}
 &Q = (m_\text{alku} - m_\text{loppu})\,c^2 \\

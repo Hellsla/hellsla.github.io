@@ -41,7 +41,9 @@
 ## fy8-9-L1-05
 **Annettu:** alkuaktiivisuus $A_0 = 800\,\text{kBq}$, aktiivisuus $A = 200\,\text{kBq}$ ajan $t = 48{,}0\,\text{h}$ kuluttua
 **Kysytty:** puoliintumisaika $T_{1/2}$ tunteina
-**Periaate:** Aktiivisuus puolittuu jokaisen puoliintumisajan aikana, koska se on verrannollinen hajoamattomien ytimien määrään. Lasketaan, montako puoliintumisaikaa mahtuu aikaan $t$: $800\,\text{kBq} \to 400\,\text{kBq} \to 200\,\text{kBq}$ on kaksi puolittumista.
+**Periaate:** Aktiivisuus puolittuu jokaisen puoliintumisajan aikana, koska se on verrannollinen hajoamattomien ytimien määrään. Lasketaan, montako puoliintumisaikaa mahtuu aikaan $t$: $$
+800\,\text{kBq} \to 400\,\text{kBq} \to 200\,\text{kBq}
+$$ on kaksi puolittumista.
 **Kaava:** $\dfrac{A}{A_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}} = \tfrac{1}{4} = \left(\tfrac{1}{2}\right)^{2}$, joten $\tfrac{t}{T_{1/2}} = 2$ ja $T_{1/2} = \dfrac{t}{2}$
 **Muunnokset:** Ei tarvita: aika on tunteina, ja vastaus kysytään tunteina.
 **Sijoitus:** $T_{1/2} = \dfrac{48{,}0\,\text{h}}{2} = 24{,}0\,\text{h}$
@@ -63,7 +65,12 @@ Väite, että kaikki ovat hajonneet, on virhe, koska toinen puoliintumisaika poi
 **Muunnokset:** Ei tarvita: aika ja puoliintumisaika ovat molemmat vuosina, joten niiden suhde on paljas luku. Osuus muutetaan lopuksi prosenteiksi kertomalla luvulla $100$.
 **Sijoitus:** $\dfrac{N}{N_0} = \left(\tfrac{1}{2}\right)^{144\,\text{a} : 28{,}8\,\text{a}} = \left(\tfrac{1}{2}\right)^{5{,}00} = \tfrac{1}{32} = 0{,}03125 = 3{,}125\,\%$
 **Vastaus:** $3{,}13\,\%$, kolme merkitsevää numeroa kuten annetuissa arvoissa.
-**Järkevyys:** Viiden puoliintumisajan jälkeen osuus on puolitettu viisi kertaa: $100\,\% \!\to\! 50\,\% \!\to\! 25\,\% \!\to\! 12{,}5\,\% \!\to\! 6{,}25\,\% \!\to\! 3{,}125\,\%$. Näyte ei ole tyhjä, mutta siitä on jäljellä enää pieni murto-osa.
+**Järkevyys:** Viiden puoliintumisajan jälkeen osuus on puolitettu viisi kertaa: $$
+\begin{aligned}
+&100\,\% \!\to\! 50\,\% \!\to\! 25\,\% \!\to\! 12{,}5\,\% \\
+&\!\to\! 6{,}25\,\% \!\to\! 3{,}125\,\%
+\end{aligned}
+$$. Näyte ei ole tyhjä, mutta siitä on jäljellä enää pieni murto-osa.
 
 ## fy8-9-L1-08
 **Annettu:** puoliintumisaika $T_{1/2} = 5{,}27\,\text{a}$, aktiivisuus $A = 0{,}100\,A_0$
@@ -138,7 +145,7 @@ Kuvaajassa A aktiivisuus pienenee tasaisesti ja on nolla hetkellä $4{,}0\,\text
 **Kaava:** $\dfrac{R}{R_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, joten $T_{1/2} = \dfrac{t \ln 2}{\ln (R_0 / R)}$, missä $R_0$ ja $R$ ovat nettopulssimäärät
 **Muunnokset:** a) Nettopulssimäärät ovat $291 - 8 = 283$, $250 - 8 = 242$, $204 - 8 = 196$, $178 - 8 = 170$, $143 - 8 = 135$, $126 - 8 = 118$, $103 - 8 = 95$, $90 - 8 = 82$, $72 - 8 = 64$, $66 - 8 = 58$ ja $51 - 8 = 43$ ($t = 0, 40, \ldots, 400\,\text{s}$). Aikayksikkö on sekunti kuten vastauksessakin, joten muita muunnoksia ei tarvita.
 **Sijoitus:** b) Alussa $R_0 = 283$ ja $t = 320\,\text{s}$:n kohdalla $R = 64$. Suhde on $\tfrac{283}{64} = 4{,}42$, eli hieman yli kaksi puoliintumisaikaa ($2^2 = 4$), ja $64$ on noin $23\,\%$ luvusta $283$. Siis $T_{1/2} = \dfrac{320\,\text{s} \cdot 0{,}69315}{\ln 4{,}42} = \dfrac{221{,}8\,\text{s}}{1{,}4865} = 149{,}2\,\text{s}$
-**Vastaus:** $149\,\text{s}$ eli noin $150\,\text{s}$. Kahden pisteen arvion tarkkuus on noin $\pm 8\,\%$, koska nettomäärän $64$ hajonta on noin $\sqrt{64} = 8$.
+**Vastaus:** $149\,\text{s}$ eli noin $150\,\text{s}$. Kahden pisteen arvion tarkkuus on noin $\pm 8\,\%$: nettomäärän $64$ hajonta on noin $\sqrt{64} = 8$ eli suhteellisesti $\tfrac{8}{64} \approx 13\,\%$, ja puoliintumisaikaan se vaikuttaa jaettuna luvulla $\ln 4{,}42 \approx 1{,}5$.
 **Järkevyys:** Alkuarvon puolikas on $\tfrac{283}{2} = 141{,}5$. Taulukossa nettopulssimäärä on $170$ ajanhetkellä $120\,\text{s}$ ja $135$ hetkellä $160\,\text{s}$, joten puolittuminen tapahtuu noin $150\,\text{s}$:n kohdalla. Se sopii tulokseen. Pisteet eivät ole täsmälleen käyrällä, koska pulssimäärät vaihtelevat satunnaisesti.
 
 ## fy8-9-L2-06
@@ -162,6 +169,19 @@ Kuvaajassa A aktiivisuus pienenee tasaisesti ja on nolla hetkellä $4{,}0\,\text
 **Sijoitus:** a) Taustan pulssimäärien summa on $80$, joten keskiarvo on $N_\text{tausta} = \dfrac{80}{10} = 8{,}0$ pulssia $10\,\text{s}$:ssa. b) $N_\text{netto} = 340 - 8{,}0 = 332$ ja $R = \dfrac{332}{10\,\text{s}} = 33{,}2\,\tfrac{1}{\text{s}}$. c) Hajonta on $\sqrt{340} = 18{,}4$, joten suhteellinen hajonta on $\dfrac{18{,}4}{340} = 0{,}0542 = 5{,}4\,\%$.
 **Vastaus:** $33{,}2\,\tfrac{1}{\text{s}}$, kolme merkitsevää numeroa kuten nettopulssimäärässä $332$.
 **Järkevyys:** Taustan vaihtelu $5$–$11$ pulssia tarkoittaa enintään noin $\pm 3$ pulssin poikkeamaa keskiarvosta $8{,}0$. Se on alle prosentti pulssimäärästä $340$, kun taas näytteen oman pulssimäärän hajonta on noin $18$ pulssia. Näytteen mittauksen satunnaisuus hallitsee epävarmuutta, eikä taustan vaihtelu muuta nettotulosta merkittävästi.
+
+## fy8-9-L2-08
+**Annettu:** puoliintumisaika $T_{1/2} = 30\,\text{a}$ (tarkkana arvona), laskeuma vuonna $1986$ ja tarkastelu vuonna $2026$; taulukon pitoisuudet ja kohdan a) tiedot opiskelija lukee aineistosta ([STUK – Ympäristön säteilyvalvonta Suomessa: Vuosiraportti 2024](https://www.julkari.fi/items/86968f39-ac37-47d6-90b7-068406ac016d), luettu 16. marraskuuta 2026)
+**Kysytty:** a) cesium-$137$:n alkuperä; b) jäljellä oleva osuus $\dfrac{N}{N_0}$ prosentteina; c) pitoisuuksien vaihtelun syyt; d) miksi yhden näytteen tulosta ei voi yleistää
+**Periaate:** Cesium-$137$ ei häviä ympäristöstä muuten kuin radioaktiivisesti hajoamalla, joten jäljellä oleva määrä noudattaa hajoamislakia. Jokainen puoliintumisaika puolittaa määrän, eikä aika tarvitse olla puoliintumisajan monikerta. Ytimiä on valtavasti, joten laki kuvaa niiden määrää hyvin.
+**Kaava:** $N = N_0 \left(\dfrac{1}{2}\right)^{t/T_{1/2}}$, josta jäljellä oleva osuus on $\dfrac{N}{N_0} = \left(\dfrac{1}{2}\right)^{t/T_{1/2}}$
+**Muunnokset:** Kulunut aika on $t = 2026 - 1986 = 40\,\text{a}$. Aika ja puoliintumisaika ovat samassa yksikössä, joten muuta muunnosta ei tarvita.
+**Sijoitus:** $\dfrac{N}{N_0} = \left(\dfrac{1}{2}\right)^{40\,\text{a} : 30\,\text{a}} = \left(\dfrac{1}{2}\right)^{1{,}333} = 0{,}3969 = 39{,}69\,\%$
+**Kohta a):** Aineiston mukaan ympäristön keinotekoiset radioaktiiviset aineet ovat Suomessa peräisin pääosin vuoden $1986$ Tšernobylin onnettomuudesta ja ilmakehässä tehdyistä ydinasekokeista $1950$- ja $1960$-luvuilla. Ennen vuotta $1986$ laskeuman cesium-$137$ oli peräisin ydinasekokeista, ja sen jälkeen pääosin Tšernobylistä. Aineisto kertoo myös, että metsämarjoissa, järvikaloissa, sienissä ja riistassa on yhä Tšernobylin cesiumia ja että määrät ovat pienentyneet tasaisesti.
+**Kohta c):** Tämä on ratkaisun oma perustelu eikä aineiston väite; aineistosta tiedetään vain, että Tampereen seutu kuuluu Tšernobylin suurimman laskeuman alueeseen. Laskeuma levisi epätasaisesti, koska sen määrä riippui siitä, missä satoi keväällä $1986$ radioaktiivisen pilven kulkiessa ohi. Maaperän laatu vaikuttaa siihen, kuinka syvälle cesium on painunut ja kuinka hyvin kasvit ja sienet voivat ottaa sitä. Sienilajeilla on eri syvyydellä kasvava rihmasto, joten ne saavat cesiumia eri määrän. Siksi sama laskeuma voi tuottaa kymmenien kertojen eroja sienten pitoisuuksiin.
+**Kohta d):** Yhden näytteen tulos on vain yksi arvo koko jakaumasta. Taulukossa Tampereen $13$ näytteen pitoisuudet ovat välillä $3{,}5$–$670\,\text{Bq/kg}$, joten yksi näyte voi osua melkein mihin tahansa tästä välistä, eli noin $190$-kertaiseen eroon: $670 : 3{,}5 = 191$. Pitoisuus riippuu lajista ja paikasta, ja näytteitä on usein vähän: Rovaniemellä vain $2$. Pienessä otoksessa sattuma vaikuttaa paljon. Lisäksi mittauksella on oma epävarmuutensa, ja hajoamisten satunnaisuus vaihtelee mittauksesta toiseen. Luotettava arvio vaatii monta näytettä samasta lajista ja paikasta.
+**Vastaus:** $40\,\%$ on jäljellä (tarkemmin $39{,}7\,\%$). Vastauksessa on kaksi merkitsevää numeroa, koska puoliintumisaika on annettu muodossa "noin $30\,\text{a}$".
+**Järkevyys:** Neljäkymmentä vuotta on hieman yli yksi puoliintumisaika ($30\,\text{a}$) mutta selvästi alle kaksi ($60\,\text{a}$). Jäljellä pitää siis olla vähemmän kuin $50\,\%$ mutta enemmän kuin $25\,\%$. Tulos $40\,\%$ on tällä välillä. Se sopii aineiston tietoon, että cesium on yhä mitattavissa mutta sen määrä on pienentynyt.
 
 ## fy8-9-L3-01
 **Annettu:** näytteen aktiivisuus on $38{,}0\,\%$ elävän puun aktiivisuudesta grammaa hiiltä kohti, hiili-14:n puoliintumisaika $T_{1/2} = 5700\,\text{a}$
@@ -199,7 +219,17 @@ Kuvaajassa A aktiivisuus pienenee tasaisesti ja on nolla hetkellä $4{,}0\,\text
 **Periaate:** Kumpikin nuklidi noudattaa omaa hajoamislakiaan, ja kokonaisaktiivisuus on niiden summa. Lyhytikäisen aktiivisuus on viimeisissä mittauksissa pudonnut lähes nollaan: hetkellä $96\,\text{h}$ on kulunut $\tfrac{96}{6{,}0} = 16$ puoliintumisaikaa, ja $\left(\tfrac{1}{2}\right)^{16} \approx 1{,}5 \cdot 10^{-5}$. Siksi myöhäiset pisteet kuvaavat vain pitkäikäistä nuklidia.
 **Kaava:** $\dfrac{A_2(t_2)}{A_2(t_1)} = \left(\tfrac{1}{2}\right)^{(t_2 - t_1)/T_2}$, joten $T_2 = \dfrac{(t_2 - t_1) \ln 2}{\ln \left(A_2(t_1) / A_2(t_2)\right)}$
 **Muunnokset:** Pisteet $t_1 = 96\,\text{h}$ ja $t_2 = 168\,\text{h}$ ovat $\Delta t = 72\,\text{h}$ päässä toisistaan. Tulos muutetaan vuorokausiksi jakamalla luvulla $24\,\tfrac{\text{h}}{\text{d}}$.
-**Sijoitus:** a) $A(96\,\text{h}) = 71{,}2\,\text{MBq}$ ja $A(168\,\text{h}) = 32{,}8\,\text{MBq}$, joten $T_2 = \dfrac{72\,\text{h} \cdot 0{,}69315}{\ln (71{,}2 : 32{,}8)} = \dfrac{49{,}907\,\text{h}}{0{,}7752} = 64{,}38\,\text{h} = \dfrac{64{,}38\,\text{h}}{24\,\text{h/d}} = 2{,}683\,\text{d}$. b) Aktiivisuus hetkellä $t = 0$ on $A_2(0) = 71{,}2\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{-96/64{,}38} = 71{,}2\,\text{MBq} \cdot 2^{1{,}491} = 71{,}2\,\text{MBq} \cdot 2{,}811 = 200\,\text{MBq}$. Kokonaisaktiivisuus alussa on $1000\,\text{MBq}$, joten lyhytikäisen aktiivisuus on $1000\,\text{MBq} - 200\,\text{MBq} = 800\,\text{MBq}$ eli $80\,\%$ kokonaisaktiivisuudesta. c) Hetkellä $12\,\text{h}$ pitkäikäisen aktiivisuus on $200\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12/64{,}38} = 200\,\text{MBq} \cdot 0{,}879 = 175{,}8\,\text{MBq}$. Lyhytikäisen aktiivisuus on silloin $376\,\text{MBq} - 175{,}8\,\text{MBq} = 200{,}2\,\text{MBq}$. Alkuaktiivisuus $800\,\text{MBq}$ on puolittunut kaksi kertaa ($12\,\text{h} = 2 \cdot 6{,}0\,\text{h}$): $\tfrac{800\,\text{MBq}}{4} = 200\,\text{MBq}$, mikä täsmää.
+**Sijoitus:** a) $A(96\,\text{h}) = 71{,}2\,\text{MBq}$ ja $A(168\,\text{h}) = 32{,}8\,\text{MBq}$, joten $T_2 = \dfrac{72\,\text{h} \cdot 0{,}69315}{\ln (71{,}2 : 32{,}8)} = \dfrac{49{,}907\,\text{h}}{0{,}7752} = 64{,}38\,\text{h} = \dfrac{64{,}38\,\text{h}}{24\,\text{h/d}} = 2{,}683\,\text{d}$. b) Aktiivisuus hetkellä $t = 0$ on $A_2(0) = 71{,}2\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{-96/64{,}38} = 71{,}2\,\text{MBq} \cdot 2^{1{,}491} = 71{,}2\,\text{MBq} \cdot 2{,}811 = 200\,\text{MBq}$. Kokonaisaktiivisuus alussa on $1000\,\text{MBq}$, joten lyhytikäisen aktiivisuus on $$
+\begin{aligned}
+&1000\,\text{MBq} - 200\,\text{MBq} \\
+&= 800\,\text{MBq}
+\end{aligned}
+$$ eli $80\,\%$ kokonaisaktiivisuudesta. c) Hetkellä $12\,\text{h}$ pitkäikäisen aktiivisuus on $200\,\text{MBq} \cdot \left(\tfrac{1}{2}\right)^{12/64{,}38} = 200\,\text{MBq} \cdot 0{,}879 = 175{,}8\,\text{MBq}$. Lyhytikäisen aktiivisuus on silloin $$
+\begin{aligned}
+&376\,\text{MBq} - 175{,}8\,\text{MBq} \\
+&= 200{,}2\,\text{MBq}
+\end{aligned}
+$$. Alkuaktiivisuus $800\,\text{MBq}$ on puolittunut kaksi kertaa ($12\,\text{h} = 2 \cdot 6{,}0\,\text{h}$): $\tfrac{800\,\text{MBq}}{4} = 200\,\text{MBq}$, mikä täsmää.
 **Vastaus:** $2{,}68\,\text{d}$, kolme merkitsevää numeroa kuten taulukon aktiivisuuksissa.
 **Järkevyys:** Tulos $2{,}68\,\text{d} = 64{,}4\,\text{h}$ on paljon pidempi kuin $6{,}0\,\text{h}$, kuten tehtävä edellyttää. Kolmannella pisteparilla tulos pysyy samana: $A(120\,\text{h}) = 55{,}9\,\text{MBq}$ ja $A(168\,\text{h}) = 32{,}8\,\text{MBq}$ antavat $T_2 = \tfrac{48\,\text{h} \cdot 0{,}69315}{\ln 1{,}704} = 62{,}4\,\text{h} \approx 2{,}6\,\text{d}$, joka on lähellä tulosta, kun otetaan huomioon mittauspisteiden satunnainen vaihtelu.
 
@@ -211,4 +241,9 @@ Kuvaajassa A aktiivisuus pienenee tasaisesti ja on nolla hetkellä $4{,}0\,\text
 **Muunnokset:** Kaikki ajat ovat vuorokausina, joten yksikkömuunnoksia ei tarvita. Yhtälö $\lambda = \tfrac{\ln 2}{T_{1/2}}$ jaettuna luvulla $\ln 2$ antaa $\tfrac{1}{T_\text{bio}} = \tfrac{1}{T_\text{eff}} - \tfrac{1}{T_\text{fys}}$.
 **Sijoitus:** a) $T_\text{eff} = \dfrac{8{,}0\,\text{d} \cdot 0{,}69315}{\ln (400 : 65{,}5)} = \dfrac{5{,}545\,\text{d}}{1{,}8092} = 3{,}065\,\text{d}$. b) $\dfrac{1}{T_\text{bio}} = \dfrac{1}{3{,}065\,\text{d}} - \dfrac{1}{8{,}02\,\text{d}} = 0{,}3263\,\tfrac{1}{\text{d}} - 0{,}1247\,\tfrac{1}{\text{d}} = 0{,}2016\,\tfrac{1}{\text{d}}$, joten $T_\text{bio} = \dfrac{1}{0{,}2016\,\tfrac{1}{\text{d}}} = 4{,}96\,\text{d}$. c) Pelkällä hajoamisella jäljellä olisi $100\,\% \cdot \left(\tfrac{1}{2}\right)^{8{,}0/8{,}02} = 100\,\% \cdot 0{,}5008 = 50{,}1\,\%$. Mitattu osuus on $\tfrac{65{,}5}{400} = 16{,}4\,\%$. Kumpikin prosessi vaikuttaa kaikkiin ytimiin, joten nopeampi prosessi on se, jonka hajoamisvakio on suurempi: $\lambda_\text{bio} = \tfrac{0{,}69315}{4{,}96\,\text{d}} = 0{,}140\,\tfrac{1}{\text{d}}$ ja $\lambda_\text{fys} = \tfrac{0{,}69315}{8{,}02\,\text{d}} = 0{,}0864\,\tfrac{1}{\text{d}}$.
 **Vastaus:** $T_\text{bio} = 4{,}96\,\text{d}$, kolme merkitsevää numeroa kuten taulukon arvoissa.
-**Järkevyys:** Biologinen puoliintumisaika on lyhyempi kuin fysikaalinen, joten poistuminen on nopeampi prosessi ja efektiivinen aika on lyhyempi kuin kumpikaan: $3{,}07\,\text{d} < 4{,}96\,\text{d} < 8{,}02\,\text{d}$. Tarkistus: $\lambda_\text{eff} = \tfrac{0{,}69315}{3{,}065\,\text{d}} = 0{,}2262\,\tfrac{1}{\text{d}}$ ja $\lambda_\text{fys} + \lambda_\text{bio} = 0{,}0864\,\tfrac{1}{\text{d}} + 0{,}1398\,\tfrac{1}{\text{d}} = 0{,}2262\,\tfrac{1}{\text{d}}$. Kohdan c) perusteella biologinen poistuminen pienentää kehon jodi-131-aktiivisuutta nopeammin kuin fysikaalinen hajoaminen, koska $\lambda_\text{bio} > \lambda_\text{fys}$. Yhdessä ne jättävät jäljelle vain $16{,}4\,\%$ eikä pelkän hajoamisen $50{,}1\,\%$.
+**Järkevyys:** Biologinen puoliintumisaika on lyhyempi kuin fysikaalinen, joten poistuminen on nopeampi prosessi ja efektiivinen aika on lyhyempi kuin kumpikaan: $3{,}07\,\text{d} < 4{,}96\,\text{d} < 8{,}02\,\text{d}$. Tarkistus: $\lambda_\text{eff} = \tfrac{0{,}69315}{3{,}065\,\text{d}} = 0{,}2262\,\tfrac{1}{\text{d}}$ ja $$
+\begin{aligned}
+\lambda_\text{fys} + \lambda_\text{bio} &= 0{,}0864\,\tfrac{1}{\text{d}} + 0{,}1398\,\tfrac{1}{\text{d}} \\
+&= 0{,}2262\,\tfrac{1}{\text{d}}
+\end{aligned}
+$$. Kohdan c) perusteella biologinen poistuminen pienentää kehon jodi-131-aktiivisuutta nopeammin kuin fysikaalinen hajoaminen, koska $\lambda_\text{bio} > \lambda_\text{fys}$. Yhdessä ne jättävät jäljelle vain $16{,}4\,\%$ eikä pelkän hajoamisen $50{,}1\,\%$.

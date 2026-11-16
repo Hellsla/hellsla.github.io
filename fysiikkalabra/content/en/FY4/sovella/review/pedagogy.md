@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7cfdc14b6ecf2865
+CONTENT-HASH: 41c829f6cf6046f1
 
 ## Blocking
-None. Delta: line 294 (fy4-s2 b) now writes E_p0, the starting potential energy, as the energy principle needs; consistent with the lesson and the rest of the task.
+None.
 
 ## Polish
 None.
 
 ## Checked
-Diff of solutions.md since the passed version.
+- fy4-s2 Reasonableness sentences: "changes into internal energy" is the correct term; reasoning (upper-bound speed; 0.57 of the energy lost) unchanged.
+- Delta review of the changed lines only; the rest rests on the previous report.

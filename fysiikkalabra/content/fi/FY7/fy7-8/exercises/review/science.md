@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 216bb34ce703f90c
-SCOPE: delta added-exercise from fb4a6839555b1dd9 base 8f23aa7ae3bd
+CONTENT-HASH: b9e1574eb9548bca
 
 ## Blocking
 
 ## Polish
-- exercises.json:269 (L2-09) — "Siirtojohdon pienoismalli" for a 200 MW line: it is a simplified model, not a scale model (the same word in L2-04 means a real small rig) — "Siirtojohdon yksinkertaistettu malli:".
+
 
 ## Checked
-- Delta: L2-09 added; hash identical at start and end.
-- loss-graph-curve is 6,0 Ω · P/U²: 3,0 % at 200 kV (grid point) and 12 % at 100 kV, as the check says.
-- I = P/U = 1000 A, P_h = 0,030 P = 6,0 MW, R = P_h/I² = 6,0 Ω = answers.py; two-wire model stated in the task as the lesson requires.
-- Solution starts from P_h = RI² and P = UI, symbolic before substitution; magnitude realistic.
+- Delta round 2: compared with the version passed in round 1 (commit 1ec494e0df) with the row markup stripped: exercises.json is byte-identical and solutions.md differs in one line (L3-04 c) only by row breaks; no number, sign, unit or word changed. answers.py unchanged.
+- solutions.md:191 (L3-04 c, saving): rows are now "$= (43\,440\,\text{MWh} - 13\,140\,\text{MWh})$", "$\cdot 50\,\tfrac{\text{€}}{\text{MWh}}$", "$= 30\,300\,\text{MWh} \cdot 50\,\tfrac{\text{€}}{\text{MWh}}$", "$= 1{,}515 \cdot 10^{6}\,\text{€}$": the bracket is whole on one row and each relation starts a row; the chain reads correctly.
+- Recomputed: $(43\,440 - 13\,140)\,\text{MWh} = 30\,300\,\text{MWh}$, times $50\,\text{€/MWh}$ gives $1\,515\,000\,\text{€}$; $4{,}959\,\text{MW} \cdot 8760\,\text{h} = 43\,440\,\text{MWh}$, $1{,}500\,\text{MW} \cdot 8760\,\text{h} = 13\,140\,\text{MWh}$.
+- Hash identical at start and end.

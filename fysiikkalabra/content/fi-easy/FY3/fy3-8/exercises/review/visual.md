@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 65f7b748b1e5d4e4
+CONTENT-HASH: 1e3321925072288a
+Mode: delta
+Round: 1
 
 ## Blocking
 None.
 
 ## Polish
-none.
+- [Minor] fy3-8 10-15 task text still starts with the word "Esimerkkiaineisto:" (captions lost it; text left as is) — decide whether to drop it too.
 
 ## Checked
-- Delta: fy3-8-L1-09 (card with closed Vihje box, open solution: open-exercises-1280-9, -10) and fy3-8-L2-09 (card with length-graph, open solution: open-exercises-L2-1280-13, -14). Layout, KaTeX chains, graph legibility (axes, units, ticks, end points marked, answer not shown), Finnish, set still reads as one.
+- fy3-8-open-exercises-L2-1280-8, -16 (Muunnokset/Sijoitus aligned rows, trailing punctuation).
+- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

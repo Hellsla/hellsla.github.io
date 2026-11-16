@@ -1,16 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f8b2930f1cc1e2b3
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 565217a85a9c3bad
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Round-1 blocker fixed: the definition "Tämä on **kokonaisheijastuminen**." / "Tätä sanotaan **kokonaisheijastumiseksi**." / "This is **total internal reflection**." now follows "…heijastumislain mukaan." directly; the lossless-boundary and evanescent-field sentences follow it, so the antecedent is unambiguous. Added "eikä energiaa siirry toiseen aineeseen" / "and no energy passes into the second substance" reads naturally.
-- Paragraph now split at "Veden ja ilman rajapinnassa" / "At the boundary between water and air"; both parts within the limit.
-- Endoscope paragraph unchanged since round 1.
-- Hash identical at start and end of this round.
+- batch delta review: every re-broken chain of inquiry.json rendered from preview/fy7-12.html with all boxes open and inspected as crops at 352, 390 and 1280 px (own captures; the repository's 390 px captures keep hints and solutions closed); glyph-to-edge distance measured at 352–412 and 1280 px: nothing clipped, row breaks follow the rule, joined rows read well at 1280 px.

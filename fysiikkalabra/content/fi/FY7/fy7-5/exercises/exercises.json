@@ -3,7 +3,7 @@
   {
    "id": "fy7-5-L1-01",
    "level": 1,
-   "text": "Neliön muotoinen johdinsilmukka, jonka sivu on $0{,}12\\,\\text{m}$, on kohtisuorassa homogeenista magneettikenttää vastaan. Kentän magneettivuon tiheys on $0{,}35\\,\\text{T}$. Kuinka suuri magneettivuo silmukan läpi kulkee? Anna vastaus millivebereinä.",
+   "text": "Neliön muotoinen johdinsilmukka, jonka sivu on $0{,}12\\,\\text{m}$, on kohtisuorassa homogeenista magneettikenttää vastaan. Kentän magneettivuon tiheys on $0{,}35\\,\\text{T}$. Kuinka suuri magneettivuo silmukan läpi kulkee? Anna vastaus milliwebereinä.",
    "answer": 5.0,
    "unit": "mWb",
    "tolerance": 0.02
@@ -28,7 +28,7 @@
   {
    "id": "fy7-5-L1-04",
    "level": 1,
-   "text": "Käämissä on $150$ kierrosta. Kun magneetti vedetään käämistä pois, käämin päiden välille syntyy keskimäärin $0{,}45\\,\\text{V}$:n induktiojännite $0{,}12\\,\\text{s}$:n ajan. Kuinka paljon yhden kierroksen läpi kulkeva magneettivuo muuttui? Anna vastaus millivebereinä.",
+   "text": "Käämissä on $150$ kierrosta. Kun magneetti vedetään käämistä pois, käämin päiden välille syntyy keskimäärin $0{,}45\\,\\text{V}$:n induktiojännite $0{,}12\\,\\text{s}$:n ajan. Kuinka paljon yhden kierroksen läpi kulkeva magneettivuo muuttui? Anna vastaus milliwebereinä.",
    "answer": 0.36,
    "unit": "mWb",
    "tolerance": 0.02
@@ -256,7 +256,7 @@
     "error",
     "concept"
    ],
-   "text": "Opiskelija ratkaisee tehtävän: ”Metallitanko, jonka pituus on $0{,}30\\,\\text{m}$, liikkuu vauhdilla $2{,}0\\,\\text{m/s}$ homogeenisessa magneettikentässä $0{,}50\\,\\text{T}$. Tanko on kohtisuorassa kenttää vastaan mutta liikkuu kentän suuntaisesti.”\n\nHän laskee $e = vBl = 2{,}0\\,\\text{m/s} \\cdot 0{,}50\\,\\text{T} \\cdot 0{,}30\\,\\text{m} = 0{,}30\\,\\text{V}$ ja ilmoittaa, että tangon päiden välille syntyy $0{,}30\\,\\text{V}$:n jännite.\n\nMikä laskussa on virheellistä?",
+   "text": "Opiskelija ratkaisee tehtävän: ”Metallitanko, jonka pituus on $0{,}30\\,\\text{m}$, liikkuu vauhdilla $2{,}0\\,\\text{m/s}$ homogeenisessa magneettikentässä $0{,}50\\,\\text{T}$. Tanko on kohtisuorassa kenttää vastaan mutta liikkuu kentän suuntaisesti.”\n\nHän laskee $e = vBl$ $= 2{,}0\\,\\text{m/s} \\cdot 0{,}50\\,\\text{T} \\cdot 0{,}30\\,\\text{m}$ $= 0{,}30\\,\\text{V}$ ja ilmoittaa, että tangon päiden välille syntyy $0{,}30\\,\\text{V}$:n jännite.\n\nMikä laskussa on virheellistä?",
    "answer": "Nopeus on kentän suuntainen, joten magneettinen voima elektroneihin on nolla.",
    "unit": "",
    "tolerance": 0.02,
@@ -310,7 +310,7 @@
   {
    "id": "fy7-5-L3-03",
    "level": 3,
-   "text": "Sauvamagneetti pudotetaan pystysuoran $300$ kierroksen käämin läpi, ja käämin jännite mitataan datalogerilla.\n\nKun magneetti tulee käämiin, mittauksessa näkyy jännitepulssi, joka on likimain kolmion muotoinen: jännite kasvaa nollasta huippuarvoon $0{,}90\\,\\text{V}$ ja laskee takaisin nollaan, ja pulssi kestää kaikkiaan $40\\,\\text{ms}$. Ennen pudotusta magneetti on kaukana käämistä.\n\nKuinka suuri magneettivuo kulkee keskimäärin yhden kierroksen läpi silloin, kun pulssi on päättynyt ja magneetti on käämin keskellä? Anna vastaus millivebereinä.",
+   "text": "Sauvamagneetti pudotetaan pystysuoran $300$ kierroksen käämin läpi, ja käämin jännite mitataan datalogerilla.\n\nKun magneetti tulee käämiin, mittauksessa näkyy jännitepulssi, joka on likimain kolmion muotoinen: jännite kasvaa nollasta huippuarvoon $0{,}90\\,\\text{V}$ ja laskee takaisin nollaan, ja pulssi kestää kaikkiaan $40\\,\\text{ms}$. Ennen pudotusta magneetti on kaukana käämistä.\n\nKuinka suuri magneettivuo kulkee keskimäärin yhden kierroksen läpi silloin, kun pulssi on päättynyt ja magneetti on käämin keskellä? Anna vastaus milliwebereinä.",
    "answer": 0.06,
    "unit": "mWb",
    "tolerance": 0.02
@@ -369,7 +369,7 @@
     "model",
     "reasoning"
    ],
-   "text": "Sauvamagneetti pudotetaan pystysuoran $250$ kierroksen käämin läpi, ja käämin jännite $e$ tallennetaan oskilloskoopilla. Ennen pudotusta ja sen jälkeen magneetti on kaukana käämistä.\n\nTaulukossa on esimerkkiaineisto tallennuksesta. Jännite on ensin positiivinen, ja kun magneetti on käämin keskellä, jännite on likimain nolla.\n\na) Arvioi jännitekuvaajan ja aika-akselin väliin jäävä pinta-ala eli jännitteen ja ajan tulojen summa ensimmäisen pulssin aikana, kun $t = 0$–$24\\,\\text{ms}$, ja laske siitä yhden kierroksen läpi kulkeva suurin magneettivuo $\\Phi$.\n\nb) Laske sama suure toisen pulssin avulla, kun $t = 24$–$48\\,\\text{ms}$, ja selitä, miksi pulssit ovat etumerkiltään vastakkaiset ja toinen pulssi on korkeampi ja kapeampi mutta pinta-alaltaan yhtä suuri.\n\nKirjoita perustelut ja laskut vastaukseesi. Vastauslaatikkoon tulee kohdan a) magneettivuo millivebereinä.",
+   "text": "Sauvamagneetti pudotetaan pystysuoran $250$ kierroksen käämin läpi, ja käämin jännite $e$ tallennetaan oskilloskoopilla. Ennen pudotusta ja sen jälkeen magneetti on kaukana käämistä.\n\nTaulukossa on esimerkkiaineisto tallennuksesta. Jännite on ensin positiivinen, ja kun magneetti on käämin keskellä, jännite on likimain nolla.\n\na) Arvioi jännitekuvaajan ja aika-akselin väliin jäävä pinta-ala eli jännitteen ja ajan tulojen summa ensimmäisen pulssin aikana, kun $t = 0$–$24\\,\\text{ms}$, ja laske siitä yhden kierroksen läpi kulkeva suurin magneettivuo $\\Phi$.\n\nb) Laske sama suure toisen pulssin avulla, kun $t = 24$–$48\\,\\text{ms}$, ja selitä, miksi pulssit ovat etumerkiltään vastakkaiset ja toinen pulssi on korkeampi ja kapeampi mutta pinta-alaltaan yhtä suuri.\n\nKirjoita perustelut ja laskut vastaukseesi. Vastauslaatikkoon tulee kohdan a) magneettivuo milliwebereinä.",
    "answer": 0.078,
    "unit": "mWb",
    "tolerance": 0.05,

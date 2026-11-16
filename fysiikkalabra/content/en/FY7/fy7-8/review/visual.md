@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 730aa0cfcf2b68b4
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 52a7875c4df574ef
 
 ## Blocking
 - none
@@ -9,8 +8,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correct
 - none
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Three-phase subsection: "Samalla jännitteellä, virralla ja tehokertoimella … noin $1{,}73$-kertaisen tehon" (en: "At the same voltage, current and power factor … $1.73$ times") reads correctly; display formula $P = \sqrt{3}\,U I \cos\varphi$ and symbol list unchanged.
-- Aria texts of grid and loss-graph unchanged since round 1 and consistent across lesson.md, figures.py, figures.json.
-- Round-1 blocker fixed: substation paragraph split at "High voltage is not brought into homes"; both parts under the limit.
-- Hash identical at start and end of this round.
+- batch delta review: queue 5d reflow. The standard set has no phone captures of opened states, so every re-broken formula (4 rendered blocks) was captured from the built page (preview/en/fy7-8.html, the build of the shots stamp) at 390 px and 1280 px with every box, hint, solution and choice feedback forced open, and each capture was read; box overflow measured at 360, 375, 390, 412 and 1280 px: none clipped or scrolled. Row starts checked against the 5d rule; wide-screen joining (join_wide) seen at 1280 px. Figures and the formula-name / teacher-figure categories were not re-judged.

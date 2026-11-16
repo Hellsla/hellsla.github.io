@@ -74,7 +74,7 @@
           },
           "criteria": [
             {
-              "text": "Laskee keräimeen tulevan säteilytehon $800\\,\\text{W/m}^2 \\cdot 0{,}50\\,\\text{m}^2 = 400\\,\\text{W}$. Laskee hyötysuhteen hyödyllisen tehon ja tulevan tehon suhteena.",
+              "text": "Laskee keräimeen tulevan säteilytehon $$\\begin{aligned} &800\\,\\text{W/m}^2 \\cdot 0{,}50\\,\\text{m}^2 \\\\ &= 400\\,\\text{W} \\end{aligned}$$. Laskee hyötysuhteen hyödyllisen tehon ja tulevan tehon suhteena.",
               "tag": "math",
               "points": 1
             },

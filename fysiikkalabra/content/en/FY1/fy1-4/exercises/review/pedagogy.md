@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4a0ff6dc31b1442a
-SCOPE: delta added-exercise from b79a628ab354a3a9 base 81db4a6fd727
+CONTENT-HASH: 9446a1ba13882d4d
 
 ## Blocking
 - none
 
 ## Polish
-- fy1-4-L1-09 is a plain m = rho V; the graph-model link is only in the Principle line. Acceptable.
+- none new. The earlier polish on the L2-09 answer-box line (it applies to the table's 6-12 h rate) is not in this diff; check it is still wanted.
 
 ## Checked
-- Added exercise judged: level 1, wording (situation then question), table lookup is needed and stated, step-by-step solution, arithmetic verified.
-- Fit within the set of 22: progression, kinds and no repeat of the worked example.
-- Phone/language: nothing in the added text that clips; English reads plainly.
+- 16 o'clock value: 7.2 + 1.52*10 = 22.4 degC, now consistent with the earlier report; the 0 h value (-1.9 degC) and the 8 h and 10 h values are unchanged and correct.
+- The change is one number; the staging and the validity-range reasoning of part c) are unchanged.

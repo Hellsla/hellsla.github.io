@@ -47,4 +47,7 @@ a["fy7-2-L3-05"] = round(n35 / 2 * 2 * math.pi * mp / (e * 1.00) / 1e-6, 2)   # 
 a["fy7-2-L1-09"] = 9.1093837e-31 * 4.0e6 / (e * 0.80e-3) * 100   # v = 4,0e6 m/s, B = 0,80 mT: r = 2,843e-2 m = 2,8 cm
 # L2-09 figure task (fy7-2/r-points): read r = 15,7 cm at v = 1,5e6 m/s, B = 0,20 T, q = e; m = |q|Br/v
 a["fy7-2-L2-09"] = e * 0.20 * 0.157 / 1.5e6 / 1e-27     # 3,35e-27 kg (the figure's particle is a deuteron, 3,344e-27 kg)
+# Added 2026-11-16 (work queue 19, FY7-A5): L2-10 data task on space weather (example R numbers, an invented evening at one station)
+# part a) largest R number 810 -> rate of change R/1350 = 0,60 nT/s (the divisor is from FMI's guide); 36 nT in a minute, 0,072 % of 50 000 nT
+a["fy7-2-L2-10"] = mp * 4.0e5 / (e * 50e-6)             # part b) solar-wind proton, v = 4,0e5 m/s, B = 50 µT: r = mv/(|q|B) = 83,55 m -> 84 m
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

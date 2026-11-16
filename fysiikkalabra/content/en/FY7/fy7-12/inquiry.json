@@ -28,7 +28,7 @@
         {
           "text": "Away from the normal: the angle of refraction is larger than $30^\\circ$.",
           "correct": true,
-          "feedback": "Correct. The law of refraction gives $1.33 \\cdot \\sin 30^\\circ = 1.00 \\cdot \\sin\\alpha_2$, so $\\alpha_2 \\approx 41.7^\\circ$ (chapter *Reflection and refraction of light*)). Today we find out what happens when the angle of incidence is increased."
+          "feedback": "Correct. The law of refraction gives $$\\begin{aligned} &1.33 \\cdot \\sin 30^\\circ \\\\ &= 1.00 \\cdot \\sin\\alpha_2 \\end{aligned}$$, so $\\alpha_2 \\approx 41.7^\\circ$ (chapter *Reflection and refraction of light*)). Today we find out what happens when the angle of incidence is increased."
         },
         {
           "text": "Towards the normal: the angle of refraction is smaller than $30^\\circ$.",
@@ -281,7 +281,7 @@
       "hints": [
         "Light travels more slowly in glass than in a vacuum. At what speed?",
         "The speed in glass is $v = c : n$, and the travel time is $t = s : v = n s : c$.",
-        "$t = 1.47 \\cdot 1\\,172\\,000\\,\\text{m} : (3.00 \\cdot 10^8\\,\\text{m/s})$. Convert the seconds to milliseconds."
+        "$$\\begin{aligned} t &= 1.47 \\cdot 1\\,172\\,000\\,\\text{m} \\\\ &: (3.00 \\cdot 10^8\\,\\text{m/s}) \\end{aligned}$$. Convert the seconds to milliseconds."
       ],
       "mistakes": [
         {

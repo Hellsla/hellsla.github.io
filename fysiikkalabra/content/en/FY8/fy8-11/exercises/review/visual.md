@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: afa5374f044b067f
-Round 1
+CONTENT-HASH: f8c07e8ba0e19ff7
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Own scratch script, 390 px, task card opened with Answer and solution: opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-b3-r5w1/s-en-fy8-11.png (the whole new card fy8-11-L2-08 cut into columns for legibility: two-step choice (energy released? then which reason?); first step answered wrong, feedback open, second step's options visible); read in full, including the stacked fractions and the model-answer boxes.
-- Older tasks with re-set text (fy8-11-L3-02): opened the top 760 px of each in /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-b3-r5w1/m-en.png (text and input only; solutions not opened).
-- By script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's screenshot list was empty and not used; solutions.md and answers.py read as source only.
-- Not exercised: the second step's feedback after choosing a reason.
+- Delta (en): coal heating value 24 → 29 MJ/kg in task L3-05 (shown as 11-21) and its solution, and in the Reasonableness of L2-02 (shown as 11-10).
+- Opened (the English lesson's review/shots): open-exercises-L2-1280-3 (11-10: Reasonableness with $2.9 \cdot 10^{7}\,\tfrac{\text{J}}{\text{kg}}$ inside its panel), open-exercises-L3-1280-7 (11-21 task text, part c with $29\,\tfrac{\text{MJ}}{\text{kg}}$; Given), -8 (Conversions $29\,\tfrac{\text{MJ}}{\text{kg}} = 29 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}$; part c chain aligned at the equals signs, $1.537 \cdot 10^{9}\,\text{kg} = 1.54 \cdot 10^{6}\,\text{t}$; answer box) and -9 (end of Answer with $1.5$ and $2.8$ million, Reasonableness).
+- Decimal points throughout, `\cdot`, upright stacked units; rounding 1.537 → 1.54 → 1.5 shown consistently; nothing clipped, the cards keep their order and spacing.
+- English unchanged apart from the numbers.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · English 4 · accessibility 4

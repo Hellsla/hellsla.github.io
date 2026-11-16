@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4b0cc38bf955e1fc
-SCOPE: delta added-exercise from ebb42c79b13ea8b7 base 8f23aa7ae3bd
+CONTENT-HASH: 902a49c646002851
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy7-4/force-angle — data points are momentum purple on a force-red curve; use a neutral ink point colour if the palette allows.
+- none
 
 ## Checked
-- Added exercises L2-09 (fi-easy, FY7 fy7-4): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-4.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
-- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
-- Hash identical at start and end.
+- The content changed during the review (packet hash 41d6fcf7baaf714c; solutions.md:220 re-broken again): the page was rebuilt and the review redone on the hash above.
+- Delta (reflow): solutions.md:16, 29, 37, 100, 128, 158, 200, 202, 217, 220 from preview/fi-easy/fy7-4.html, every solution open, at 390 and 1280 px (own captures of all re-broken steps). Line 220 now reads "0,225 N / : (6,0 A · 0,25 m · sin 30°) / = 0,30 T." with the parenthesis whole. Rows start with "=", "·" or ":" between whole quantities; 53 · 10⁻⁶ T and 1,085 · 10⁻³ T stay together; punctuation inside the blocks; joined rows at 1280 px.
+- Overflow scan of every display formula, eq-chain and table at 360, 390 and 1280 px: none; no red KaTeX.
+- Hash identical before and after the second pass.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

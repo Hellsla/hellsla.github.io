@@ -48,4 +48,9 @@ a["fy1-7-inq-siirto"] = 0.187 / (70e-6)          # stone: 187 g, displaced 70 ml
 a["fy1-7-inq-virhe"] = 2.70 * 250   # Etsi virhe (not numeric): aluminium 250 cm3: m = 2,70 g/cm3 · 250 cm3 = 675 g
 a["fy1-7-inq-tarkistus-2"] = 500 * 0.200 ** 3   # pine cube: m = 500 kg/m3 · (0,200 m)^3 = 4,00 kg
 a["fy1-7-L1-09"] = 8960 * 50e-6                # MAFY: copper 8,96·10³ kg/m³; V = 50 cm³ = 50e-6 m³; m = rho V = 0,448 kg
+# FY1-A1 (work queue 19): NASA Planetary Fact Sheet, read 2026-11-16: Earth m = 5,97e24 kg, equatorial d = 12 756 km
+a["fy1-7-L2-09"] = 6 * 5.97e24 / (math.pi * 12756e3 ** 3)   # rho = 6m/(pi d^3) = 5493 kg/m3 -> 5,49e3 (NASA 5514); Saturn 6·568e24/(pi·120 536e3^3) = 619 (NASA 687)
+# FY1-A5: PhET Density, Intro, aluminium, example readings 2026-11-16 (m kg, V l); slope of the fit through the origin
+_m = [4.00, 8.00, 12.00, 16.00, 20.00]; _V = [1.48, 2.96, 4.44, 5.93, 7.41]
+a["fy1-7-L2-10"] = sum(x * y for x, y in zip(_m, _V)) / sum(v * v for v in _V) * 1000   # k = 2,700 kg/l = 2700 kg/m3; prediction 2,70 · 9,26 = 25,0 kg
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

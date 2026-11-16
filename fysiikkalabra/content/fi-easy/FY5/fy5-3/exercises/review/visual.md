@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9da02db2ed677dc7
-SCOPE: delta added-exercise from 3a1529b2bcd56749 base 81db4a6fd727
+CONTENT-HASH: 469d45abefa175d7
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-3 — the label r_B = 1,80 m touches the carousel rim (its m sits on the edge); shift the label inward (optional, figure is teacher-approved, so only if redrawn).
+- [Minor] fy5-3-L1-10 Järkevyys — "hölkkävauhtia" is a fine S2 word but the speed 2,3 m/s is brisk-walk to jog; fine, optional: keep one comparison only.
 
 ## Checked
-- Delta of the two or three added exercises (fi-easy): 1280 px open-exercises 1/10 and 1/11 (L1-10, L1-11) and L2 part 9 (L2-08 with the carousel figure).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal comma consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- Rendered preview/fi-easy/fy5-3.html?ratkaisut=1 at 360 and 1280 px with every solution open: DOM checks for red KaTeX, clipped or off-screen formulas, horizontal overflow, literal asterisks, plain quantities outside maths and paragraphs over 110 words (all clean except as listed). Exercise packets carried no capture files; judgement rests on these renders and the packet text.
+- Changed solutions (L1-10, L1-11 aligned Sijoitus rows, L1-08 Periaate/Järkevyys) read in the packet; rows show no clipping.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

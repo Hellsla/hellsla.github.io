@@ -15,7 +15,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "The hub dynamo of a bicycle has no battery or accumulator. When the bicycle stands still, the lamp is dark. As soon as the wheel begins to turn, the lamp lights up, and the faster you ride, the brighter it shines. Inside the dynamo there is a permanent magnet and a wire coil. In 1831 Michael Faraday made a similar observation in his laboratory: a magnet beside a coil produced no current, but a moving magnet did.",
+      "text": "The hub dynamo of a bicycle has no battery or accumulator. When the bicycle stands still, the lamp is dark. As soon as the wheel begins to turn, the lamp lights up, and the faster you ride, the brighter it shines. Inside the dynamo there is a permanent magnet and a wire coil. In 1831 Michael Faraday investigated in his laboratory whether a magnet produces a current in a coil: a magnet beside a coil produced no current.",
       "question": "What decides whether a voltage appears in the coil in the situation of the magnet and the coil, and what does the size of the voltage depend on?"
     },
     {
@@ -190,7 +190,7 @@
         "koe-2"
       ],
       "prompt": "Write on the basis of your tables: how does the voltage on entry depend on the speed of the coil and the number of turns, and what is the voltage when the coil is completely inside the field? What do you notice about the result $e \\cdot \\Delta t$ in experiment 1? Compare it with the greatest flux through one turn, $2.0\\,\\text{mWb}$, and the number of turns.",
-      "model": "In experiment 1 the voltage on entry was $-20.0\\,\\text{mV}$ at a speed of $0.10\\,\\text{m/s}$ and $-40.0\\,\\text{mV}$ at $0.20\\,\\text{m/s}$, so the voltage is proportional to the speed. The entry lasted $1.00\\,\\text{s}$ and $0.50\\,\\text{s}$ respectively, so the product $e \\cdot \\Delta t = -20\\,\\text{mV}\\cdot\\text{s}$ stayed the same. It is $-N\\Delta\\Phi = -10 \\cdot 2.0\\,\\text{mWb} = -20\\,\\text{mWb}$, since $1\\,\\text{mV}\\cdot\\text{s} = 1\\,\\text{mWb}$. The voltage is therefore $e = -N \\cdot \\Delta\\Phi : \\Delta t$, because the flux changed steadily: the same change in flux in a shorter time gives a greater voltage. In experiment 2 the voltage was $-10.0\\,\\text{mV}$ with $5$ turns and $-40.0\\,\\text{mV}$ with $20$ turns, so it is proportional to the number of turns. When the coil was completely inside the field, the voltage was zero, because the flux did not change. The values are calculated by the model.",
+      "model": "In experiment 1 the voltage on entry was $-20.0\\,\\text{mV}$ at a speed of $0.10\\,\\text{m/s}$ and $-40.0\\,\\text{mV}$ at $0.20\\,\\text{m/s}$, so the voltage is proportional to the speed. The entry lasted $1.00\\,\\text{s}$ and $0.50\\,\\text{s}$ respectively, so the product $e \\cdot \\Delta t = -20\\,\\text{mV}\\cdot\\text{s}$ stayed the same. It is $-N\\Delta\\Phi = -10 \\cdot 2.0\\,\\text{mWb}$ $= -20\\,\\text{mWb}$, since $1\\,\\text{mV}\\cdot\\text{s} = 1\\,\\text{mWb}$. The voltage is therefore $e = -N \\cdot \\Delta\\Phi : \\Delta t$, because the flux changed steadily: the same change in flux in a shorter time gives a greater voltage. In experiment 2 the voltage was $-10.0\\,\\text{mV}$ with $5$ turns and $-40.0\\,\\text{mV}$ with $20$ turns, so it is proportional to the number of turns. When the coil was completely inside the field, the voltage was zero, because the flux did not change. The values are calculated by the model.",
       "criteria": [
         "I said that the voltage on entry doubles when the speed doubles, and doubles when the number of turns doubles.",
         "I said that the voltage is zero when the coil is completely inside the field, because the flux then does not change.",
@@ -237,7 +237,7 @@
         {
           "text": "The conversion of the area is wrong: $1\\,\\text{cm}^2 = 10^{-4}\\,\\text{m}^2$, so the correct result is $0.72\\,\\text{V}$.",
           "correct": true,
-          "feedback": "Correct. A square centimetre is $(0.01\\,\\text{m})^2 = 10^{-4}\\,\\text{m}^2$, so $A = 6.0 \\cdot 10^{-4}\\,\\text{m}^2$ and $|e| = 200 \\cdot 0.30\\,\\text{T} \\cdot 6.0 \\cdot 10^{-4}\\,\\text{m}^2 : 0.050\\,\\text{s} = 0.72\\,\\text{V}$. The student multiplied the centimetres by $0.01$ only once, although in an area the centimetre is squared."
+          "feedback": "Correct. A square centimetre is $(0.01\\,\\text{m})^2 = 10^{-4}\\,\\text{m}^2$, so $A = 6.0 \\cdot 10^{-4}\\,\\text{m}^2$ and $$\\begin{aligned} |e| &= 200 \\cdot 0.30\\,\\text{T} \\\\ &\\cdot 6.0 \\cdot 10^{-4}\\,\\text{m}^2 : 0.050\\,\\text{s} \\\\ &= 0.72\\,\\text{V} \\end{aligned}$$. The student multiplied the centimetres by $0.01$ only once, although in an area the centimetre is squared."
         },
         {
           "text": "The number of turns should not be multiplied in, because all the turns are in the same field: $0.36\\,\\text{V}$.",
@@ -262,7 +262,7 @@
       "hints": [
         "What changes in the flux through the coil, and how fast? How many turns are in series?",
         "The magnitude of the average induced voltage is $|e_\\text{ka}| = N \\cdot |\\Delta\\Phi| : \\Delta t$. First convert the flux to webers and the time to seconds.",
-        "$\\Delta\\Phi = 0.12 \\cdot 10^{-3}\\,\\text{Wb}$ and $\\Delta t = 15 \\cdot 10^{-3}\\,\\text{s}$, so $|e_\\text{ka}| = 600 \\cdot 0.12 \\cdot 10^{-3}\\,\\text{Wb} : (15 \\cdot 10^{-3}\\,\\text{s})$."
+        "$\\Delta\\Phi = 0.12 \\cdot 10^{-3}\\,\\text{Wb}$ and $\\Delta t = 15 \\cdot 10^{-3}\\,\\text{s}$, so $$\\begin{aligned} |e_\\text{ka}| &= 600 \\cdot 0.12 \\cdot 10^{-3}\\,\\text{Wb} \\\\ &: (15 \\cdot 10^{-3}\\,\\text{s}) \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -320,7 +320,7 @@
       "hints": [
         "What acts on the electrons of the rod when the rod moves in the field, and where do the electrons move to?",
         "The voltage between the ends of the rod is $e = vBl$ when the velocity, the rod and the field are mutually perpendicular.",
-        "$l = 50\\,\\text{cm} = 0.50\\,\\text{m}$, so $e = 4.0\\,\\text{m/s} \\cdot 0.25\\,\\text{T} \\cdot 0.50\\,\\text{m}$."
+        "$l = 50\\,\\text{cm} = 0.50\\,\\text{m}$, so $$\n\\begin{aligned}\ne &= 4.0\\,\\text{m/s} \\cdot 0.25\\,\\text{T} \\\\\n&\\cdot 0.50\\,\\text{m}\n\\end{aligned}\n$$."
       ],
       "mistakes": [
         {
@@ -332,7 +332,7 @@
           "feedback": "The length of the rod is missing. The voltage arises along the whole length of the rod: the electric field $E = vB$ inside the rod is multiplied by the length of the rod, $e = vBl$."
         }
       ],
-      "solution": "**Given:** length of the rod $l = 50\\,\\text{cm}$, speed $v = 4.0\\,\\text{m/s}$, magnetic flux density $B = 0.25\\,\\text{T}$; the velocity, the rod and the field are mutually perpendicular\n\n**Find:** induced voltage $e$ between the ends of the rod in volts\n\n**Principle:** The electrons that move with the rod experience a magnetic force $evB$ along the rod, so electrons collect at one end of the rod. The electric field that appears grows until the electric force $eE$ cancels the magnetic force, that is, $E = vB$. The field is uniform, so the voltage between the ends is $El$.\n\n**Formula:** $e = vBl$\n\n**Conversions:** $l = 50\\,\\text{cm} = 50 \\cdot 0.01\\,\\text{m} = 0.50\\,\\text{m}$\n\n**Substitution:** $e = 4.0\\,\\text{m/s} \\cdot 0.25\\,\\text{T} \\cdot 0.50\\,\\text{m} = 0.50\\,\\text{V}$\n\n**Answer:** $0.50\\,\\text{V}$, two significant figures like the given values.\n\n**Reasonableness:** The units fit: $\\tfrac{\\text{m}}{\\text{s}} \\cdot \\tfrac{\\text{V}\\cdot\\text{s}}{\\text{m}^2} \\cdot \\text{m} = \\text{V}$. The voltage is under a volt, as is to be expected for a laboratory-sized device; the same voltage follows from Faraday's law, since the area swept by the rod grows every second by $0.50\\,\\text{m} \\cdot 4.0\\,\\text{m} = 2.0\\,\\text{m}^2$, and $0.25\\,\\text{T} \\cdot 2.0\\,\\tfrac{\\text{m}^2}{\\text{s}} = 0.50\\,\\tfrac{\\text{Wb}}{\\text{s}}$."
+      "solution": "**Given:** length of the rod $l = 50\\,\\text{cm}$, speed $v = 4.0\\,\\text{m/s}$, magnetic flux density $B = 0.25\\,\\text{T}$; the velocity, the rod and the field are mutually perpendicular\n\n**Find:** induced voltage $e$ between the ends of the rod in volts\n\n**Principle:** The electrons that move with the rod experience a magnetic force $evB$ along the rod, so electrons collect at one end of the rod. The electric field that appears grows until the electric force $eE$ cancels the magnetic force, that is, $E = vB$. The field is uniform, so the voltage between the ends is $El$.\n\n**Formula:** $e = vBl$\n\n**Conversions:** $l = 50\\,\\text{cm} = 50 \\cdot 0.01\\,\\text{m} = 0.50\\,\\text{m}$\n\n**Substitution:** $$\n\\begin{aligned}\ne &= 4.0\\,\\text{m/s} \\cdot 0.25\\,\\text{T} \\\\\n&\\cdot 0.50\\,\\text{m} \\\\\n&= 0.50\\,\\text{V}\n\\end{aligned}\n$$\n\n**Answer:** $0.50\\,\\text{V}$, two significant figures like the given values.\n\n**Reasonableness:** The units fit: $\\tfrac{\\text{m}}{\\text{s}} \\cdot \\tfrac{\\text{V}\\cdot\\text{s}}{\\text{m}^2} \\cdot \\text{m} = \\text{V}$. The voltage is under a volt, as is to be expected for a laboratory-sized device; the same voltage follows from Faraday's law, since the area swept by the rod grows every second by $0.50\\,\\text{m} \\cdot 4.0\\,\\text{m} = 2.0\\,\\text{m}^2$, and $0.25\\,\\text{T} \\cdot 2.0\\,\\tfrac{\\text{m}^2}{\\text{s}} = 0.50\\,\\tfrac{\\text{Wb}}{\\text{s}}$."
     },
     {
       "id": "tarkistus-3",

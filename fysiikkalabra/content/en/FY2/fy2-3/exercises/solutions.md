@@ -151,7 +151,13 @@ $E_\text{TV} = 80\,\text{W} \cdot 3.5\,\text{h} = 280\,\text{Wh}$
 $E_\text{laptop} = 50\,\text{W} \cdot 6.0\,\text{h} = 300\,\text{Wh}$
 $E_\text{kettle} = 2000\,\text{W} \cdot 0.20\,\text{h} = 400\,\text{Wh}$
 $E_\text{dryer} = 1800\,\text{W} \cdot 0.10\,\text{h} = 180\,\text{Wh}$
-The sum is $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, so $E_\text{tot} = 1960 \cdot 10^{-3}\,\text{kWh} = 1.96\,\text{kWh}$.
+The sum is $$
+\begin{aligned}
+&800 + 280 + 300 + 400 \\
+&+ 180 \\
+&= 1960\,\text{Wh}
+\end{aligned}
+$$, so $E_\text{tot} = 1960 \cdot 10^{-3}\,\text{kWh} = 1.96\,\text{kWh}$.
 **Answer:** $1.96\,\text{kWh}$, that is about $2.0\,\text{kWh}$. The fridge consumes the most energy, $0.80\,\text{kWh}$, although its power of $100\,\text{W}$ is smaller than that of the kettle and the hair dryer. The reason is the long running time.
 **Reasonableness:** The kettle and the hair dryer have the greatest power, but they run only for a short time: $0.58\,\text{kWh}$ together. The consumption in a day is of the order of a few kilowatt-hours, which suits a household whose annual consumption is thousands of kilowatt-hours.
 
@@ -174,7 +180,9 @@ The sum is $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, so $E_\text{tot} = 1
 **Conversions:** $50\,\text{min} = 50 \cdot (1\,\text{h} : 60) = \tfrac{5}{6}\,\text{h}$, so $\Delta t = 0.833\,\text{h}$. Finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $P = \dfrac{1.50\,\text{kWh} - 0.00\,\text{kWh}}{0.833\,\text{h}} = 1.80\,\text{kW} = 1.80 \cdot 1000\,\text{W} = 1800\,\text{W}$
 **Answer:** $1800\,\text{W}$, that is $1.8\,\text{kW}$, two significant figures. A fit by eye varies, so about $1710\text{–}1890\,\text{W}$ is a good answer. The line passes through the origin because the meter was zeroed at the start: when no time has passed, no energy has been transformed. The slope is the power, because it tells the increase in energy per unit of time.
-**Reasonableness:** A power of $1.8\,\text{kW}$ is typical of a heater or a hair dryer. In ten minutes the heater consumes $1.8\,\text{kW} \cdot (1\,\text{h} : 6) = 0.30\,\text{kWh}$, which corresponds to the first reading in the table, $0.31\,\text{kWh}$.
+**Reasonableness:** A power of $1.8\,\text{kW}$ is typical of a heater or a hair dryer. In ten minutes the heater consumes $$
+1.8\,\text{kW} \cdot (1\,\text{h} : 6) = 0.30\,\text{kWh}
+$$, which corresponds to the first reading in the table, $0.31\,\text{kWh}$.
 
 ## fy2-3-L3-04
 **Given:** the hours and average powers in the table (consumption $P_\text{c}$, production $P_\text{p}$ in megawatts): 05–06 $8400$ and $8900$, 06–07 $9100$ and $8900$, 07–08 $9900$ and $9300$, 08–09 $10\,400$ and $9600$, 09–10 $10\,600$ and $9800$, 10–11 $10\,300$ and $9900$, 11–12 $9800$ and $9900$, 12–13 $9600$ and $9800$
@@ -182,7 +190,13 @@ The sum is $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, so $E_\text{tot} = 1
 **Principle:** The power in each hour is an average power, so the energy of an hour is $E = P\,\Delta t$ with $\Delta t = 1\,\text{h}$. The missing power is the difference $\Delta P = P_\text{c} - P_\text{p}$ when it is positive. The missing energies are calculated hour by hour and summed.
 **Formula:** $\Delta P = P_\text{c} - P_\text{p}$ and $E = \Delta P\,\Delta t$
 **Conversions:** $1\,\text{MWh} = 10^{-3}\,\text{GWh}$, because $1\,\text{MW} = 10^{-3}\,\text{GW}$.
-**Substitution:** Differences hour by hour: 05–06 $-500\,\text{MW}$ (surplus production), 06–07 $200\,\text{MW}$, 07–08 $600\,\text{MW}$, 08–09 $800\,\text{MW}$, 09–10 $800\,\text{MW}$, 10–11 $400\,\text{MW}$, 11–12 $-100\,\text{MW}$ and 12–13 $-200\,\text{MW}$. Consumption exceeds production in the hours 06–11. The sum is $200 + 600 + 800 + 800 + 400 = 2800$, so $E = 2800\,\text{MW} \cdot 1\,\text{h} = 2800\,\text{MWh} = 2800 \cdot 10^{-3}\,\text{GWh} = 2.8\,\text{GWh}$.
+**Substitution:** Differences hour by hour: 05–06 $-500\,\text{MW}$ (surplus production), 06–07 $200\,\text{MW}$, 07–08 $600\,\text{MW}$, 08–09 $800\,\text{MW}$, 09–10 $800\,\text{MW}$, 10–11 $400\,\text{MW}$, 11–12 $-100\,\text{MW}$ and 12–13 $-200\,\text{MW}$. Consumption exceeds production in the hours 06–11. The sum is $$
+\begin{aligned}
+&200 + 600 + 800 + 800 \\
+&+ 400 \\
+&= 2800
+\end{aligned}
+$$, so $E = 2800\,\text{MW} \cdot 1\,\text{h} = 2800\,\text{MWh} = 2800 \cdot 10^{-3}\,\text{GWh} = 2.8\,\text{GWh}$.
 **Answer:** The missing energy is $2.8\,\text{GWh}$, two significant figures. Consumption is at its highest at 09–10, $10\,600\,\text{MW}$. The greatest shortfall is $800\,\text{MW}$ in the hours 08–09 and 09–10, so at least $800\,\text{MW}$ of balancing power and imports is needed. The shortfall grows quickly in the morning and shrinks around noon, so a power plant whose output can be adjusted quickly, such as a hydropower plant, is suitable for the task. Wind power is not suitable because it depends on the weather, and neither is a nuclear power plant because it is steady base load power.
 **Reasonableness:** The power of a hydropower plant is hundreds of megawatts, so $800\,\text{MW}$ is the combined power of several plants, which is believable for a system the size of Finland. The energy $2.8\,\text{GWh}$ is three to four times the shortfall of the peak hour, $0.8\,\text{GWh}$, which fits a five-hour shortfall that is at its largest for two hours.
 
@@ -190,9 +204,31 @@ The sum is $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, so $E_\text{tot} = 1
 **Given:** the periods in the table, in which the compressor runs for $11.5$, $12.0$, $11.5$ and $12.0\,\text{min}$ and is off for $18.0$, $18.5$, $17.5$ and $18.0\,\text{min}$; power when running $P = 100\,\text{W}$; annual consumption of the new fridge $130\,\text{kWh}$; price $0.20\,\text{€/kWh}$; year $8760\,\text{h}$
 **Find:** the average power and annual consumption of the old fridge and the saving in euros from changing to a new one; an assessment of whether it is worth it
 **Principle:** The compressor runs at $100\,\text{W}$ for only part of the time, so the average power is the running power multiplied by the fraction of the total time spent running. The annual consumption is the average power times the time in a year, and the saving is the difference in consumption times the price. The model assumes that the measured periods describe the whole year.
-**Formula:** $\text{fraction} = \dfrac{t_\text{on}}{t_\text{on} + t_\text{off}}$, $P_\text{avg} = \text{fraction} \cdot P$, $E = P_\text{avg}\,t$ and $\text{saving} = (E - E_\text{new}) \cdot \text{unit price}$
+**Formula:** $\text{fraction} = \dfrac{t_\text{on}}{t_\text{on} + t_\text{off}}$, $P_\text{avg} = \text{fraction} \cdot P$, $E = P_\text{avg}\,t$ and $$ \begin{aligned} \text{saving} &= (E - E_\text{new}) \\ &\cdot \text{unit price} \end{aligned} $$
 **Conversions:** The average power is converted to kilowatts by substituting $1\,\text{W} = 10^{-3}\,\text{kW}$.
-**Substitution:** The sum of the running times is $11.5 + 12.0 + 11.5 + 12.0 = 47.0\,\text{min}$ and the sum of the off times $18.0 + 18.5 + 17.5 + 18.0 = 72.0\,\text{min}$. The total time is $47.0\,\text{min} + 72.0\,\text{min} = 119.0\,\text{min}$, so the fraction is $\dfrac{47.0}{119.0} = 0.395$. The average power is $P_\text{avg} = 0.395 \cdot 100\,\text{W} = 39.5\,\text{W} = 0.0395\,\text{kW}$. The annual consumption is $E = 0.0395\,\text{kW} \cdot 8760\,\text{h} = 346\,\text{kWh}$. The saving is $(346\,\text{kWh} - 130\,\text{kWh}) \cdot 0.20\,\text{€/kWh} = 216\,\text{kWh} \cdot 0.20\,\text{€/kWh} = 43.2\,\text{€}$.
+**Substitution:** The sum of the running times is $$
+\begin{aligned}
+&11.5 + 12.0 + 11.5 + 12.0 \\
+&= 47.0\,\text{min}
+\end{aligned}
+$$ and the sum of the off times $$
+\begin{aligned}
+&18.0 + 18.5 + 17.5 + 18.0 \\
+&= 72.0\,\text{min}
+\end{aligned}
+$$. The total time is $$
+\begin{aligned}
+&47.0\,\text{min} + 72.0\,\text{min} \\
+&= 119.0\,\text{min}
+\end{aligned}
+$$, so the fraction is $\dfrac{47.0}{119.0} = 0.395$. The average power is $P_\text{avg} = 0.395 \cdot 100\,\text{W} = 39.5\,\text{W} = 0.0395\,\text{kW}$. The annual consumption is $E = 0.0395\,\text{kW} \cdot 8760\,\text{h} = 346\,\text{kWh}$. The saving is $$
+\begin{aligned}
+&(346\,\text{kWh} - 130\,\text{kWh}) \\
+&\cdot 0.20\,\text{€/kWh} \\
+&= 216\,\text{kWh} \cdot 0.20\,\text{€/kWh} \\
+&= 43.2\,\text{€}
+\end{aligned}
+$$.
 **Answer:** The average power is about $40\,\text{W}$, the annual consumption about $350\,\text{kWh}$ and the saving about $43\,\text{€}$ a year, two significant figures. A new fridge costing $600\,\text{€}$ would pay for itself only in a time of $600\,\text{€} : 43\,\text{€/a} \approx 14\,\text{a}$, so buying it for the saving in electricity alone is not worth it if the old fridge works. The assumptions that affect the result: the four measured periods are representative, and the room temperature, opening the door or the build-up of ice do not change the running time over the year, and other consumption such as the light and defrosting is ignored.
 **Reasonableness:** The average power of $40\,\text{W}$ is less than half of the running power, because the compressor runs about two fifths of the time. An annual consumption of a few hundred kilowatt-hours is typical of an old appliance, and the electricity price of $0.20\,\text{€/kWh}$ gives an annual cost of a few tens of euros.
 
@@ -203,7 +239,12 @@ The sum is $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, so $E_\text{tot} = 1
 
 The second time $P_2 = 6.0\,\text{kWh} : 1.5\,\text{h} = 4.0\,\text{kW}$.
 
-So the power doubles: $P_2 : P_1 = 4.0\,\text{kW} : 2.0\,\text{kW} = 2.0$. When the time is halved and the energy stays the same, the power doubles. The power is not halved, because the time is in the denominator and not a factor. It does not stay the same, because power describes the rate of the transformation and not the energy alone. It does not quadruple, because the time was halved only once.
+So the power doubles: $$
+\begin{aligned}
+P_2 : P_1 &= 4.0\,\text{kW} : 2.0\,\text{kW} \\
+&= 2.0
+\end{aligned}
+$$. When the time is halved and the energy stays the same, the power doubles. The power is not halved, because the time is in the denominator and not a factor. It does not stay the same, because power describes the rate of the transformation and not the energy alone. It does not quadruple, because the time was halved only once.
 
 ## fy2-3-L1-09
 **Given:** power $P = 5.0\,\text{hp}$ and time $\Delta t = 30\,\text{min}$; from the table (MAFY table, unit conversions, power, horsepower) $1\,\text{hp} = 735.5\,\text{W}$ (metric horsepower)
@@ -225,3 +266,30 @@ So the power doubles: $P_2 : P_1 = 4.0\,\text{kW} : 2.0\,\text{kW} = 2.0$. When 
 **Substitution:** $P_\text{A} = \dfrac{60\,000\,\text{J}}{40\,\text{s}} = 1500\,\text{W}$ and $P_\text{B} = \dfrac{40\,000\,\text{J}}{80\,\text{s}} = 500\,\text{W}$, so $\dfrac{P_\text{A}}{P_\text{B}} = \dfrac{1500\,\text{W}}{500\,\text{W}} = 3.0$
 **Answer:** The power of device A is $3.0$ times the power of device B.
 **Reasonableness:** The ratio is greater than one because A rises more steeply. At $80\,\text{s}$ A has converted $120\,\text{kJ}$ and B $40\,\text{kJ}$, and $120 : 40 = 3$, the same ratio.
+## fy2-3-L2-09
+**Given:** power $P = 2.0\,\text{kW}$ and time $\Delta t = 4\,\text{h}$ (the time is set by the task and exact), market price $h = -5.0\,\text{snt/kWh}$ and comparison price $+15\,\text{snt/kWh}$. From the article (Yle, 16.8.2023, accessed 16.11.2026): the price can fall below zero if there is more production than consumption; the sales margin of Vaasan sähkö, for example, is $0.41\,\text{snt/kWh}$, and Vaasan sähkö treats a negative hourly price as zero.
+**Find:** a) when the price can be negative; b) the energy $E$ and the cost $C$ in $\text{snt}$; c) the comparison with the price $+15\,\text{snt/kWh}$ and why a negative price is not free electricity; d) the effect of storage and of timing consumption
+**Principle:** An appliance at a steady power uses the energy $E = P\,\Delta t$, and the cost is the energy times the price per unit of energy, $C = h E$. The price is given per kilowatt-hour, so the energy is calculated in kilowatt-hours.
+**Formula:** $E = P\,\Delta t$ and $C = h E$, so $C = h\,P\,\Delta t$.
+**Conversions:** No unit needs changing: $\text{kW} \cdot \text{h} = \text{kWh}$ and the price is in $\text{snt/kWh}$. In euros $100\,\text{snt} = 1\,€$.
+**Substitution:** b)
+
+$$\begin{aligned} E &= 2.0\,\text{kW} \cdot 4\,\text{h} \\ &= 8.0\,\text{kWh} \end{aligned}$$
+
+$$\begin{aligned} C &= -5.0\,\text{snt/kWh} \cdot 8.0\,\text{kWh} \\ &= -40\,\text{snt} \end{aligned}$$
+
+c) At the price $+15\,\text{snt/kWh}$:
+
+$$\begin{aligned} C &= 15\,\text{snt/kWh} \cdot 8.0\,\text{kWh} \\ &= 120\,\text{snt} \end{aligned}$$
+
+For Vaasan sähkö the energy part is zero, and the sales margin is:
+
+$$\begin{aligned} C_\text{väl} &= 0.41\,\text{snt/kWh} \cdot 8.0\,\text{kWh} \\ &= 3.28\,\text{snt} \end{aligned}$$
+**Answer:** b) $E = 8.0\,\text{kWh}$ and $C = -40\,\text{snt} = -0.40\,€$, two significant figures as in the power $2.0\,\text{kW}$ and the price $-5.0\,\text{snt/kWh}$; four hours is exact. The minus sign means that the bill gets a credit.
+
+In addition: a) According to the article the exchange price can fall below zero when more electricity is produced than consumed, for example when a lot of electricity is on offer and consumption is small. Then the producer has to pay for the electricity to be taken from the grid.
+
+c) The cost $-40\,\text{snt}$ is a credit, whereas at $+15\,\text{snt/kWh}$ one would pay $120\,\text{snt} = 1.20\,€$; the difference is $160\,\text{snt}$. Still, a negative market price does not make electricity free. The consumer buys electricity from a seller, and the seller charges a sales margin: according to the article, for example, $0.41\,\text{snt/kWh}$ at Vaasan sähkö, $0.25\,\text{snt/kWh}$ at Oomi and $0.50\,\text{snt/kWh}$ at Vattenfall. Some sellers credit a negative hour, but Vaasan sähkö counts it as zero, so the consumer pays about $3.3\,\text{snt}$ for $8.0\,\text{kWh}$ and gets no credit. In addition the market price is only a part of the bill: the regional price on Fingrid's page is without taxes and electricity transmission costs, and the consumer pays for those too. The article is from 2023, so current contracts may differ; here it serves as a source for the principle of price formation.
+
+d) Storage moves energy in time: a storage is charged when there is more electricity than needed and the price is low or negative, and discharged when electricity is needed. Timing consumption (for example charging an electric car or a hot water heater in a cheap hour) also raises consumption when there is too much production and lowers it during a shortage. Both even out the difference between production and consumption. There are limits: not all the energy put into a storage comes back, because part of it becomes internal energy in the storage and in transfer, which is transferred to the surroundings as heat; storages have a limited capacity; and timing pays only if the contract follows the hourly price.
+**Reasonableness:** An estimate with round numbers: $2\,\text{kW} \cdot 4\,\text{h} = 8\,\text{kWh}$ and $8 \cdot (-5) = -40$. The sign is right, because the price is negative and the energy positive. The price $-5.0\,\text{snt/kWh}$ is small compared with $+15\,\text{snt/kWh}$, so the credit of $40\,\text{snt}$ is only a third of the cost of $120\,\text{snt}$ at the ordinary price. The unit is right: $\text{kWh} \cdot \text{snt/kWh} = \text{snt}$. The model assumes a steady power for all four hours and the same market price in every hour, but the real hourly price varies.

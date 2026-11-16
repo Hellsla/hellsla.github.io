@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: ec03da5bc800b705
+CONTENT-HASH: 47951765820da783
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] 'perinteisen ketjuhissillä toimivan vuoristoradan' is awkward (hissi does not make the ride work): '... ketjuhissillä varustetun vuoristoradan ensimmäinen mäki on yleensä korkein' in the Miksi question and the Selitä prompt.
 
 ## Checked
-batch delta review: opened fy4-8-fig-row-1280 (energy bars, unchanged); read all changed sentences; the work-of-friction sentence is now clear.
+- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.

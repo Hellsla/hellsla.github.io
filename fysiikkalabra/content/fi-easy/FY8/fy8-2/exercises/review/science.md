@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e7c7b458ee26ff45
-Mode: delta
+CONTENT-HASH: 3b8667a9b79b6a03
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- exercises/solutions.md (L2-05) — the solution now gives $2{,}270\,\text{eV}$ (four figures) while exercises.json shows the answer 2.27; consider answer 2.270 so the shown answer and the solution agree (inside tolerance either way).
 
 ## Checked
-- fy8-2-L2-08 (fi-easy) compared with reviewed fi: same data, same options, same correct option, same answer.
-- Recomputed independently: ground-state absorption 2.50, 3.00, 4.40 eV gives 496, 413, 282 nm (UV); 2->4 gives 1.90 eV = 653 nm which a cold gas does not absorb; so two dark lines in a continuous band (C); A is emission, B has the 653 nm line, D is a band; the four option-figure descriptions match these lines.
-- solutions.md L2-08: principle, symbolic step, substitution, rounding and reasonableness agree with fi; answers.py note agrees.
-- fi-easy follows NOTES.md section 12 (shorter sentences, terms explained, same physics and numbers as fi).
-- check_i18n shows nothing for fy8-2; build.py fy8-2 succeeds. No translation edit was needed.
-- Delta: L1-08 student chain now reads E_3 - E_2 = -1.51 eV - (-3.40 eV), that is E_3 - E_2 = 1.89 eV; arithmetic -1.51 + 3.40 = 1.89 correct, same as fi, nothing else changed; answer and options unaffected.
-- Hash e7c7b458ee26ff45 at start and end.
+- Round-1 blocking items fixed: L2-05 now four significant figures, justified by $546{,}3\,\text{nm}$ and the constants ($hc/\lambda = 2{,}2698\,\text{eV} \to 2{,}270$); L2-07 names only the limiting datum, the reading $16{,}4\,\text{mm}$ ($\pm 0{,}05\,\text{mm} \cdot 12\,\text{nm/mm} \approx 0{,}6\,\text{nm}$, so $497\,\text{nm}$ stands).
+- Recomputed in one script: L2-05 2.2698 eV, L2-07 $12{,}01 \cdot 16{,}4 + 299{,}6 = 496{,}6\,\text{nm}$; answers and tolerances unchanged and consistent.
+- New L2-09: blue Hg line read at $436\,\text{nm}$ (figure lamp-spectrum draws 405/436/546/577/579 nm to scale); $hc/\lambda = 2{,}844\,\text{eV}$, answer 2.84, tolerance 3 % covers a reading a few nm off; description does not give the energy.
+- New L3-06: $3{,}0617 - 2{,}2711 = 0{,}7907\,\text{eV}$ = answers.py; shared upper level 7³S₁ stated in the task; Hg 6³P₂ − 6³P₀ = $5{,}461 - 4{,}667 = 0{,}794\,\text{eV}$ confirms; two-figure reason (difference of near-equal energies) sound; model answer for c) right (alternative transitions, $E_\text{y}$ cancels).
+- "lämmöksi" → "sisäenergiaksi" in L3-03, L3-05 task and solutions: consistent with the guardrail (heat is energy in transfer); no number changed.
+- Raw source of L2-09 Sijoitus checked: separate display rows ($hc$, $E$ in J, $E$ in eV), not one merged chain.
+- Hash identical at start and end.

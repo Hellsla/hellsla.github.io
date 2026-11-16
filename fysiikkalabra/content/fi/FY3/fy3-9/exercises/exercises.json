@@ -170,7 +170,7 @@
       "unit": "kPa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Ilman paine astiassa A ja tilavuus astiassa B (esimerkkiaineisto)",
+        "caption": "Ilman paine astiassa A ja tilavuus astiassa B",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p_\\text{A}\\,(\\text{kPa})$",
@@ -212,7 +212,7 @@
       "unit": "ml",
       "tolerance": 0.1,
       "data": {
-        "caption": "Ilman paine ruiskun tilavuuden funktiona (esimerkkiaineisto)",
+        "caption": "Ilman paine ruiskun tilavuuden funktiona",
         "columns": [
           "$V\\,(\\text{ml})$",
           "$p\\,(\\text{kPa})$"
@@ -250,7 +250,7 @@
       "unit": "°C",
       "tolerance": 0.03,
       "data": {
-        "caption": "Ilman paine jäykässä pullossa (esimerkkiaineisto)",
+        "caption": "Ilman paine jäykässä pullossa",
         "columns": [
           "$\\theta\\,({}^\\circ\\text{C})$",
           "$p\\,(\\text{kPa})$"
@@ -325,6 +325,20 @@
       "answer": 149,
       "unit": "kPa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L2-10",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://phet.colorado.edu/en/simulations/gas-properties\" target=\"_blank\" rel=\"noopener\">PhET – Gas Properties (Kaasun ominaisuuksia)</a> (luettu 16. marraskuuta 2026)\n\nSimulaatiossa pumpataan kaasuhiukkasia säiliöön, jonka alla on lämmitin ja jäähdytin. Lämpömittari ja painemittari näyttävät kaasun lämpötilan ja paineen. Tutki simulaatiolla, miten kaasun paine riippuu lämpötilasta. Avaa näkymä ”Ideaalikaasu” (Ideal), valitse lämpömittarin yksiköksi kelvin ($\\text{K}$) ja painemittarin yksiköksi kilopascal ($\\text{kPa}$) ja pumppaa säiliöön noin 100 painavaa hiukkasta.\n\na) Pidä kaasun tilavuus ja hiukkasmäärä vakioina: valitse kohdasta ”pidä vakiona” tilavuus (V) äläkä pumppaa lisää hiukkasia mittausten aikana. Lämmitä ja jäähdytä kaasua ja mittaa paine vähintään kuudessa eri lämpötilassa väliltä $200\\,\\text{K}$–$500\\,\\text{K}$. Painemittarin lukema heilahtelee, joten lue se jokaisessa lämpötilassa muutaman kerran, kirjaa taulukkoon keskimmäinen lukema ja arvioi, kuinka paljon yksittäinen lukema voi siitä poiketa.\n\nb) Piirrä paineen kuvaaja absoluuttisen lämpötilan eli kelvinlämpötilan funktiona niin, että molemmat akselit alkavat nollasta. Sovita pisteisiin suora ja määritä suureiden välinen riippuvuus: kirjoita malli yhtälönä ja määritä sen vakio yksikköineen.\n\nc) Ennusta mallillasi paine lämpötilassa, jota et käyttänyt mallin muodostamiseen, esimerkiksi lämpötilassa $600\\,\\text{K}$. Tarkista ennuste simulaatiolla ja päättele, mahtuuko ero painemittarin heilahtelun rajoihin. Laske lisäksi mallistasi, kuinka moninkertaiseksi paine kasvaa, kun lämpötila nousee arvosta $300\\,\\text{K}$ arvoon $450\\,\\text{K}$.\n\nd) Selitä havaittu riippuvuus kaasun hiukkasmallin avulla.\n\nVastauskenttään tulee kohdan c) viimeinen tulos: kuinka moninkertaiseksi paine kasvaa (pelkkä luku ilman yksikköä).",
+      "kind": [
+        "data",
+        "graph",
+        "experiment",
+        "model"
+      ],
+      "answer": 1.5,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -365,7 +379,7 @@
       "unit": "°C",
       "tolerance": 0.03,
       "data": {
-        "caption": "Ilman paine hitaassa ja nopeassa puristuksessa (esimerkkiaineisto)",
+        "caption": "Ilman paine hitaassa ja nopeassa puristuksessa",
         "columns": [
           "$V\\,(\\text{ml})$",
           "$p_\\text{hidas}\\,(\\text{kPa})$",
@@ -408,7 +422,7 @@
       "unit": "m",
       "tolerance": 0.05,
       "data": {
-        "caption": "Vapaasukeltajan keuhkojen ilman tilavuus (esimerkkiaineisto)",
+        "caption": "Vapaasukeltajan keuhkojen ilman tilavuus",
         "columns": [
           "$h\\,(\\text{m})$",
           "$V\\,(\\textsf{l})$"

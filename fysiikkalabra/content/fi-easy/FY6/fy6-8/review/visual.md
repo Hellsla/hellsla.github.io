@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 6133a6d212501647
+CONTENT-HASH: 639880ed2cd691f0
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] caption: the long sentence with two size pairs is dense for S2 readers; consider two short sentences (21700: $21\,\text{mm}$ ja $70\,\text{mm}$; 18650: ...). Optional.
+- none
 
 ## Checked
-batch delta review: caption with diameter/length numbers ($21\,\text{mm}$, $70\,\text{mm}$ etc.) reads clearly. Rendered preview/fi-easy/fy6-8.html at 390 and 1280 px, photo figure opened at 390; KaTeX renders without error, no clipping, no horizontal overflow.
+- All 1 proof sheet(s) of fi-easy-fy6-8-lesson (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+
+## Scores
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 91929cab691c65d8
-SCOPE: delta added-exercise from 0103d8f31883bc59 base 8f23aa7ae3bd
+CONTENT-HASH: a59f2f9920709418
 
 ## Blocking
 
 ## Polish
-- [Minor] 10-18 solution — the highlighted Vastaus box still shows n_2 ≈ 1,50 while the field asks the angle α_2 (angle follows in the text below); show the asked angle in the box.
+- [Minor] carried from my previous report: 10-18 Vastaus box (n_2 vs the asked angle) not re-checked in this delta.
 
 ## Checked
-- Delta: changed 10-18 solution (open-exercises-L2-1280 parts 12-13 at full size): k as \dfrac, values 0,30/0,90, 1,50, 22,5°, new Järkevyys sentence; layout and notation intact, numbers consistent through the chain. Rest of the set not re-reviewed.
+- own captures of every aligned block of the opened solutions at 390 and 1280 px (preview page at this hash, /tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/vis_b916/shots/fy7-10-390-s1, -s2, fy7-10-1280-s1): L2-03 Järkevyys, L3-04 sum, L3-05 Periaate, Sijoitus c) and Järkevyys. Rows start with a relation or a + sign, = in one column, comma/period inside the last row, wide form joined to one row.
+- No formula of the exercises overflows its box at 360 or 390 px (measured in the browser, every solution open).
+- Answer value of fy7-10-L2-09 changed in JSON only; the solution text already shows 22,5°. Rest not re-reviewed.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

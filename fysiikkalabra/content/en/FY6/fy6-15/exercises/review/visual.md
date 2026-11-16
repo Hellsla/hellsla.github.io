@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 69299f6aec49b867
-SCOPE: delta added-exercise from f60d53b70291bcbe base 8f23aa7ae3bd
+CONTENT-HASH: 8b0aab82c5c21690
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-15-L2-08 — the question now also asks "does it exceed the rated current", but the answer field takes only the number; the yes/no sits in the solution only — optional: "Give the current in amperes and then say whether it exceeds the rated current".
+- [Minor] fy6-15: quotation marks are mixed (task text uses ”…”, Annettu stage uses straight "…"); use ”…” in both.
 
 ## Checked
-- en captures fy6-15-open-exercises-L2-1280-10 (task 15-17: "30 min" now LaTeX with its unit, "(example data)", the longer question as its own paragraph, step graph with P (W) and t (min), answer chip "I ≈ 17 A", solution to Formula) and -11 (Substitution, Answer chip now starts with the value, Reasonableness). The first previous Polish item is fixed. Graph unchanged in look, nothing clipped; the rest of the set unchanged and not re-reviewed.
+- Proof sheets en-fy6-15-exercises-* (all, every numbered formula, opened side by side with the other language).
+- New task: judged from its source text and solution text, and from the proof sheets; the L2 capture not opened (same template as the fi set I opened).
+- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
+- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
 
 ## Scores
-illustrations 4 · typography 5 · English 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

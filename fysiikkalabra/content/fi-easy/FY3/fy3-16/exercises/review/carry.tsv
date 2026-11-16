@@ -5,3 +5,13 @@ date	reviewer	from	to	base	categories
 2026-11-05	science	367c32d54eaac2ac	c7f18a8068cb479a	232f76a6dd99	core-mark,paragraphs
 2026-11-05	pedagogy	367c32d54eaac2ac	c7f18a8068cb479a	232f76a6dd99	core-mark,paragraphs
 2026-11-05	visual	367c32d54eaac2ac	c7f18a8068cb479a	232f76a6dd99	core-mark,paragraphs
+2026-11-15	visual	6afbe5a6243e4487	9d4d47952b34a428	7ad70e66b757	answers
+2026-11-15	science	9abc5f49d6a2185e	ca26cf16e1a68821	cf5f9072c557	caption-label
+2026-11-15	pedagogy	9abc5f49d6a2185e	ca26cf16e1a68821	cf5f9072c557	caption-label
+2026-11-15	visual	9abc5f49d6a2185e	ca26cf16e1a68821	cf5f9072c557	caption-label
+2026-11-15	science	9d4d47952b34a428	65a888fc215e5e06	5b79f41753d1	caption-label
+2026-11-15	pedagogy	9d4d47952b34a428	65a888fc215e5e06	5b79f41753d1	caption-label
+2026-11-15	visual	6afbe5a6243e4487	65a888fc215e5e06	7ad70e66b757	answers,caption-label
+2026-11-15	visual	6afbe5a6243e4487	c5435cd354b04553	7ad70e66b757	answers,caption-label
+2026-11-16	science	c5435cd354b04553	12e52c909bf5e60e	7ad1dca99ec5	reflow
+2026-11-16	pedagogy	c5435cd354b04553	12e52c909bf5e60e	7ad1dca99ec5	reflow

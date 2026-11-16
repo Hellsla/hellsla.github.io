@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2edf9cb094bb408e
+CONTENT-HASH: d614dadcdcb11cdb
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] for science: confirm that the photographed Oak Ridge instrument is an electron microscope as the caption states (the image shows a large multi-chamber instrument).
+- none
 
 ## Checked
-batch delta review: rendered the new figure.unit-photo at 390 px and 1280 px from the built page (own captures, plus fig-row-1280 to confirm the existing figures survived); photo loads, no horizontal overflow, caption and credit line legible, alt text matches the image, LaTeX in captions renders ($6{,}3\,\text{V}$, $656\,\text{nm}$, $n = 3$) with units upright; no clipping.
+- Round 2, delta (sentence mark after lifted formula). Opened fi 390 px captures across lessons (fy8-1 example-1, fy8-3 sovella-2, fy8-5 example-1, fy8-8 sovella-2, fy8-11 selita-3, fy8-12 example-2, fy8-14 sovella-1, fy8-16 example-2). No lone "," or "." starts a line after a lifted formula; marks sit inside the formula's last row (e.g. "≈ 10 500 km/s."), text unchanged. Rest of this lesson judged by inference from the shared build, not every capture opened.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

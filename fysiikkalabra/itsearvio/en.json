@@ -37,7 +37,7 @@
   "fy4-3": ["I understand why motion continues without a force pushing it forward.", "I can recognise a force and its reaction pair.", "I can calculate an unknown force when the net force is zero."],
   "fy4-4": ["I understand how acceleration depends on the net force and the mass.", "I can infer the direction of the net force, also in slowing motion.", "I can use Newton's second law in calculations."],
   "fy4-5": ["I can recognise the forces on an object and draw a force diagram.", "I can split a force into components.", "I can write the equations of motion from a force diagram."],
-  "fy4-6": ["I can tell static and kinetic friction apart.", "I can draw the force diagram of an object on a slope.", "I can determine a coefficient of friction experimentally."],
+  "fy4-6": ["I can tell static and sliding friction apart.", "I can draw the force diagram of an object on a slope.", "I can determine a coefficient of friction experimentally."],
   "fy4-7": ["I can calculate kinetic and potential energy relative to a chosen zero level.", "I understand why kinetic energy grows with the square of speed.", "I can recognise conservative forces."],
   "fy4-8": ["I understand when mechanical energy is conserved and where it goes.", "I can calculate speed or height with energy conservation.", "I can calculate the work of friction or another force with the work-energy principle."],
   "fy4-9": ["I can calculate momentum and its change with signs.", "I can read impulse as the area under a force-time graph.", "I understand why a longer stopping time reduces the force."],

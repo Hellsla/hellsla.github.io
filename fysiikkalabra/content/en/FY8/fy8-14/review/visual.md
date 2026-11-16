@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7ca8af81a83eed0d
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: 74dc9ad12cabc1e1
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] inquiry.json Prediction 2 feedback — reworded to "(when $N$ was $10$ and $20$, only $10\,\%$ and $5\,\%$)", but it still follows "Even with large values of $N$ only about a quarter" and so can read as contradictory; suggest "as $N$ grows the share approaches about a quarter; at $N = 10$ and $20$ it was only $10\,\%$ and $5\,\%$".
 
 ## Checked
-- Source-level read of the diff: Finnish/English wording, LaTeX number+unit typography (thin space, \text units, decimal comma in fi/fi-easy, \cdot), the aligned block with \approx in fy8-9 where applicable; no inline formula wrapping, no new figures. No render made.
+- Delta: the single reworded feedback sentence, read from the diff in the packet; numbers and units stay LaTeX, no layout-affecting change, so no capture was needed beyond the earlier shared-layout ones.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

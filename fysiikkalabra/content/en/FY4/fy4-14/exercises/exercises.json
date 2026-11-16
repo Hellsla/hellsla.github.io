@@ -149,7 +149,7 @@
         {
           "text": "At the terminal speed, the air resistance is greater than $2.65\\,\\text{N}$.",
           "true": false,
-          "feedback": "False: the weight is $0.270\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 2.65\\,\\text{N}$. At the terminal speed the net force is zero, so the air resistance is equal to the weight, not greater."
+          "feedback": "False: the weight is $$\\begin{aligned} &0.270\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\ &\\approx 2.65\\,\\text{N} \\end{aligned}$$. At the terminal speed the net force is zero, so the air resistance is equal to the weight, not greater."
         },
         {
           "text": "A ball of the same size and shape but lighter reaches the same terminal speed.",
@@ -210,7 +210,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Speed of a dropped foam ball (example data)",
+        "caption": "Speed of a dropped foam ball",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -264,7 +264,7 @@
       "tolerance": 0.02,
       "fbd": "equations",
       "data": {
-        "caption": "Terminal velocities of paper cones (example data)",
+        "caption": "Terminal velocities of paper cones",
         "columns": [
           "Cone",
           "$m\\,(\\text{g})$",
@@ -325,7 +325,7 @@
         }
       ],
       "data": {
-        "caption": "Speed of the skydiver after the parachute opened (example data)",
+        "caption": "Speed of the skydiver after the parachute opened",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -421,7 +421,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Speed of the skydiver after the parachute opened (example data)",
+        "caption": "Speed of the skydiver after the parachute opened",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"

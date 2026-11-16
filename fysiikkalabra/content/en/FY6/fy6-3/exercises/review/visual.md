@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b6b0408831f56328
-SCOPE: delta added-exercise from 9d14eab469b0e194 base 8f23aa7ae3bd
+CONTENT-HASH: 2a633435c63ab47d
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-3-L1-10 Reasonableness — "Units: Ω·m·m : m² = Ω" reads as a bare chain; "Units: Ω·m · m : m² = Ω" would show the multiplication and division clearly, or write the unit check as a fraction.
+- [Minor] fy6-3 all languages: the data-table caption wraps in a narrow, cramped table box; widen the table or keep the caption on one line.
+- [Minor] fy6-3 solution: the Kaava stage mixes parts b) and c) in one paragraph; give each part's formula its own line. 'Kohta b)' also appears twice (Sijoitus and as its own stage).
 
 ## Checked
-- en captures fy6-3-open-exercises-1280-3 (neighbouring tasks, for set consistency), -10 (task 3-10 with hint open, answer box, full solution) and -11. Conversions and substitution rows aligned with = in one column, units upright, \cdot, decimal point; hint opens inside the card without gaps; the other exercises unchanged and not re-reviewed.
+- Proof sheets en-fy6-3-exercises-* (all, every numbered formula, opened side by side with the other language).
+- New task: judged from its source text and solution text, and from the proof sheets; capture open-exercises-L2 of fy6-3 opened.
+- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
+- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

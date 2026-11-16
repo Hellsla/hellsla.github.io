@@ -84,7 +84,7 @@
     {
       "id": "fy4-8-L1-08",
       "level": 1,
-      "text": "Oppilas ratkaisee tehtävän: ”Laatikko liukuu kaltevaa lankkua alas $5{,}0\\,\\text{m}$:n matkan. Lankun päiden korkeusero on $1{,}5\\,\\text{m}$. Liikettä vastustava kitkavoima on $8{,}0\\,\\text{N}$. Kuinka suuren työn kitka tekee laatikkoon?”\n\nOppilaan ratkaisu: $W = -F_\\mu h = -8{,}0\\,\\text{N} \\cdot 1{,}5\\,\\text{m} = -12\\,\\text{J}$.\n\nMikä oppilaan ratkaisussa on virheellistä?",
+      "text": "Oppilas ratkaisee tehtävän: ”Laatikko liukuu kaltevaa lankkua alas $5{,}0\\,\\text{m}$:n matkan. Lankun päiden korkeusero on $1{,}5\\,\\text{m}$. Liikettä vastustava kitkavoima on $8{,}0\\,\\text{N}$. Kuinka suuren työn kitka tekee laatikkoon?”\n\nOppilaan ratkaisu: $$\\begin{aligned} &W = -F_\\mu h \\\\ &= -8{,}0\\,\\text{N} \\cdot 1{,}5\\,\\text{m} \\\\ &= -12\\,\\text{J} \\end{aligned}$$.\n\nMikä oppilaan ratkaisussa on virheellistä?",
       "kind": [
         "error",
         "concept"
@@ -198,7 +198,7 @@
       "unit": "m/s²",
       "tolerance": 0.04,
       "data": {
-        "caption": "Kuulan nopeus heilurin alimmassa kohdassa (esimerkkiaineisto)",
+        "caption": "Kuulan nopeus heilurin alimmassa kohdassa",
         "columns": [
           "$h\\,(\\text{m})$",
           "$v\\,(\\text{m/s})$"
@@ -244,7 +244,7 @@
       "unit": "kJ",
       "tolerance": 0.02,
       "data": {
-        "caption": "Vaunun mittaukset radan eri kohdissa (esimerkkiaineisto)",
+        "caption": "Vaunun mittaukset radan eri kohdissa",
         "columns": [
           "Kohta",
           "$s\\,(\\text{m})$",
@@ -292,7 +292,7 @@
       "unit": "N",
       "tolerance": 0.05,
       "data": {
-        "caption": "Palikan pysähtymismatka eri alkunopeuksilla (esimerkkiaineisto)",
+        "caption": "Palikan pysähtymismatka eri alkunopeuksilla",
         "columns": [
           "$v_0\\,(\\text{m/s})$",
           "$s\\,(\\text{m})$"
@@ -346,6 +346,19 @@
       "unit": "N",
       "tolerance": 0.05,
       "figure": "fy4-8/palkit-asteikko"
+    },
+    {
+      "id": "fy4-8-L2-10",
+      "level": 2,
+      "text": "Sivu <a href=\"https://www.liikenneturva.fi/liikenteessa/turvallinen-ajonopeus/\" target=\"_blank\" rel=\"noopener\">Liikenneturva: Turvallinen ajonopeus</a> (luettu 16. marraskuuta 2026) kertoo, miten ajonopeus vaikuttaa törmäyksen seurauksiin. Lue sivulta kohta ”Nopeus lisää törmäysvoimaa”. Tässä tehtävässä tutkitaan autoa. Auton massa on $1500\\,\\text{kg}$.\n\na) Laske auton liike-energia, kun nopeus on $30\\,\\text{km/h}$, $50\\,\\text{km/h}$ ja $90\\,\\text{km/h}$. Nopeudet ovat tarkkoja vertailuarvoja.\n\nb) Aineisto sanoo: ”Ajoneuvon törmäysenergia nelinkertaistuu, kun törmäysnopeus kaksinkertaistuu.” Törmäysenergia tarkoittaa ajoneuvon liike-energiaa törmäyksen hetkellä. Perustele väite liike-energian kaavalla. Kuinka moninkertainen auton liike-energia on nopeudella $90\\,\\text{km/h}$, kun sitä verrataan nopeuteen $30\\,\\text{km/h}$?\n\nc) Auto törmää kiinteään esteeseen ja pysähtyy. Kiinteä este on este, joka ei liiku eikä anna periksi. Mihin auton liike-energia siirtyy tai miksi se muuttuu?\n\nd) Aineisto kertoo tilanteesta, jossa auto törmää kiinteään esteeseen nopeudella $50\\,\\text{km/h}$. Autossa on ihminen, jonka massa on $80\\,\\text{kg}$. Aineiston mukaan ihmiseen vaikuttava törmäysvoima ”on $3\\,000\\,\\text{kg}$”. Kilogramma on kuitenkin massan yksikkö, ei voiman. Tulkitse luku siksi voimaksi, joka on yhtä suuri kuin $3000\\,\\text{kg}$:n kappaleen paino. Oleta, että voima on vakio eli koko ajan yhtä suuri. Kuinka pitkällä matkalla ihminen pysähtyy?\n\ne) Selitä d-kohdan avulla, miksi pelkkä liike-energia ei kerro varmasti, millaisia henkilövahinkoja eli ihmisten vammoja törmäyksessä syntyy.\n\nKirjoita vastauskenttään d-kohdan pysähtymismatka.",
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "answer": 0.26,
+      "unit": "m",
+      "tolerance": 0.05
     }
   ],
   "level3": [
@@ -385,7 +398,7 @@
       "unit": "N",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pysähtymismatka vaakasuoralla lumella (esimerkkiaineisto)",
+        "caption": "Pysähtymismatka vaakasuoralla lumella",
         "columns": [
           "Lasku",
           "$s\\,(\\text{m})$"
@@ -431,7 +444,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pallon korkeus ylimmässä kohdassa (esimerkkiaineisto)",
+        "caption": "Pallon korkeus ylimmässä kohdassa",
         "columns": [
           "Kimmahduksia",
           "$h\\,(\\text{m})$"

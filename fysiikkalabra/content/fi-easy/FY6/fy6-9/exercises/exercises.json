@@ -283,6 +283,19 @@
       "answer": 61.05,
       "unit": "Wh",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy6-9-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning",
+        "concept"
+      ],
+      "text": "Aineisto: <a href=\"https://tukes.fi/litiumioniakkujen-turvallinen-kayttaminen\" target=\"_blank\" rel=\"noopener\">Tukes – Litiumioniakkujen turvallinen käyttäminen</a>\n\nKuinka paljon energiaa sähköpyörän akussa on? Tutustu Tukesin aineistoon. Tukes on Turvallisuus- ja kemikaalivirasto. Aineisto kertoo, miten litiumioniakkuja käytetään turvallisesti.\n\na) Sähköpyörän akun nimellisjännite on $36\\,\\text{V}$ ja kapasiteetti $14\\,\\text{Ah}$. Laske akun nimellinen energiasisältö eli energia, joka täyteen akkuun on varastoitunut. Anna tulos wattitunteina ja jouleina.\n\nb) Laturi syöttää tyhjään akkuun tehon $120\\,\\text{W}$. Arvioi lyhin aika, jossa akku latautuu täyteen. Oleta, että latausteho pysyy koko ajan samana. Älä ota huomioon lataushäviöitä eli energiaa, joka ei varastoidu akkuun.\n\nc) Todellinen latausaika on yleensä pidempi kuin kohdassa b) laskettu aika. Selitä, miksi.\n\nd) Valitse aineistosta kaksi ohjetta, jotka koskevat akun lataamista. Selitä kummastakin tämän luvun fysiikan avulla, miksi latausolosuhteet tai sopiva laturi vaikuttavat turvallisuuteen.\n\nKirjoita laatikkoon kohdan b) lyhin latausaika tunteina.",
+      "answer": 4.2,
+      "unit": "h",
+      "tolerance": 0.02
     }
   ],
   "level3": [

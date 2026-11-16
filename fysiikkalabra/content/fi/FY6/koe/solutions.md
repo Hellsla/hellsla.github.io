@@ -13,10 +13,10 @@
 **Perustelu:** Kun kytkin on auki, $L_1$ ja $L_2$ ovat sarjassa, kokonaisresistanssi on $2R$ ja kummankin virta on $\tfrac{U}{2R}$. Kun kytkin suljetaan, $L_2$ ja $L_3$ ovat rinnan, ja niiden yhteinen resistanssi on $\tfrac{R}{2}$. Kokonaisresistanssi pienenee arvoon $1{,}5R$, joten lampun $L_1$ virta kasvaa arvoon $\tfrac{2U}{3R}$ ja $L_1$ kirkastuu. Lampun $L_1$ jännite kasvaa arvoon $\tfrac{2}{3}U$, joten rinnakkaisille lampuille jää vain $\tfrac{1}{3}U$ entisen $\tfrac{1}{2}U$:n sijaan, ja $L_2$ himmenee. Vaihtoehto, jossa $L_1$ ei muutu, olettaa, että paristo antaa aina saman virran; pariston jännite pysyy samana, mutta virta riippuu kytkennän resistanssista.
 
 ### e)
-**Perustelu:** Energia on teho kertaa aika. Keitin: $2{,}0\,\text{kW} \cdot 0{,}050\,\text{h} = 0{,}10\,\text{kWh}$, koska $3{,}0\,\text{min} = 0{,}050\,\text{h}$. Lamppu: $0{,}0080\,\text{kW} \cdot 5{,}0\,\text{h} = 0{,}040\,\text{kWh}$. Keitin käyttää siis $0{,}10 : 0{,}040 = 2{,}5$ kertaa niin paljon energiaa. Luku $250$ on tehojen suhde, josta aika puuttuu, ja $6{,}0\,\text{kWh}$ syntyy, kun minuutteja ei muunneta tunneiksi. Lamppu on päällä kauemmin, mutta sen teho on niin pieni, että energiaa kuluu vähemmän.
+**Perustelu:** Energia on teho kertaa aika. Keitin: $2{,}0\,\text{kW} \cdot 0{,}050\,\text{h} = 0{,}10\,\text{kWh}$, koska $3{,}0\,\text{min} = 0{,}050\,\text{h}$. Lamppu: $$\begin{aligned} &0{,}0080\,\text{kW} \cdot 5{,}0\,\text{h} \\ &= 0{,}040\,\text{kWh} \end{aligned}$$. Keitin käyttää siis $0{,}10 : 0{,}040 = 2{,}5$ kertaa niin paljon energiaa. Luku $250$ on tehojen suhde, josta aika puuttuu, ja $6{,}0\,\text{kWh}$ syntyy, kun minuutteja ei muunneta tunneiksi. Lamppu on päällä kauemmin, mutta sen teho on niin pieni, että energiaa kuluu vähemmän.
 
 ### f)
-**Perustelu:** Napajännite on lähdejännitteen suuruinen, kun virta on nolla, joten $E = 1{,}60\,\text{V}$. Napajännite pienenee virran kasvaessa sisäisen resistanssin jännitehäviön verran, joten $R_\text{s} = -\tfrac{\Delta U}{\Delta I} = \tfrac{1{,}60\,\text{V} - 1{,}20\,\text{V}}{1{,}0\,\text{A}} = 0{,}40\,\Omega$. Arvo $1{,}2\,\Omega$ on loppupisteen $U : I$ eli kuormituksen resistanssi, ei sisäinen resistanssi. $1{,}20\,\text{V}$ on napajännite virralla $1{,}0\,\text{A}$. Kuvaaja päättyy siihen, mihin mittaukset päättyvät; oikosulkuvirta saadaan jatkamalla suoraa vaaka-akselille, $I_\text{k} = \tfrac{E}{R_\text{s}} = 4{,}0\,\text{A}$.
+**Perustelu:** Napajännite on lähdejännitteen suuruinen, kun virta on nolla, joten $E = 1{,}60\,\text{V}$. Napajännite pienenee virran kasvaessa sisäisen resistanssin jännitehäviön verran, joten $$\begin{aligned} R_\text{s} &= -\tfrac{\Delta U}{\Delta I} \\ &= \tfrac{1{,}60\,\text{V} - 1{,}20\,\text{V}}{1{,}0\,\text{A}} \\ &= 0{,}40\,\Omega \end{aligned}$$. Arvo $1{,}2\,\Omega$ on loppupisteen $U : I$ eli kuormituksen resistanssi, ei sisäinen resistanssi. $1{,}20\,\text{V}$ on napajännite virralla $1{,}0\,\text{A}$. Kuvaaja päättyy siihen, mihin mittaukset päättyvät; oikosulkuvirta saadaan jatkamalla suoraa vaaka-akselille, $I_\text{k} = \tfrac{E}{R_\text{s}} = 4{,}0\,\text{A}$.
 
 ### g)
 **Perustelu:** Voimat $F_\text{A}$ ja $F_\text{B}$ ovat saman vuorovaikutuksen voima ja vastavoima, joten ne ovat aina yhtä suuret, vaikka varaukset ovat erisuuret. Myös Coulombin laki $F = k\tfrac{\lvert q_1 q_2 \rvert}{r^2}$ antaa molemmille saman arvon, koska siinä on varausten tulo. Voima on kääntäen verrannollinen etäisyyden neliöön, joten kaksinkertainen etäisyys pienentää kumpaakin voimaa $2^2 = 4$ kertaa eli neljäsosaan. Puolittuminen syntyisi, jos voima olisi kääntäen verrannollinen etäisyyteen eikä sen neliöön. Suurempi varaus ei kohdista pienempään suurempaa voimaa kuin pienempi suurempaan.
@@ -197,7 +197,7 @@
 **Periaate:** Kytkennässä 1 kummankin haaran jännite on lähteen jännite, joten kummassakin haarassa kulkee a-kohdan virta, ja Kirchhoffin virtalain mukaan lähteen virta on haarojen virtojen summa. Kytkennässä 2 sama virta kulkee kaikkien osien läpi, ja vastukselle jää lähteen jännitteestä se, mitä kaksi LEDiä eivät ota. Lähteen teho on $P = UI$ ja LEDin teho $U_\text{D} I_\text{D}$.
 **Kaava:** Kytkentä 1: $I_1 = 2I_\text{D}$; kytkentä 2: $I_2 = \dfrac{U - 2U_\text{D}}{R}$; osuus $= \dfrac{2U_\text{D} I_\text{D}}{UI}$
 **Muunnokset:** $13{,}6\,\text{mA} = 0{,}0136\,\text{A}$
-**Sijoitus:** Kytkentä 1: $I_1 = 2 \cdot 0{,}0136\,\text{A} \approx 0{,}0273\,\text{A}$ ja $P_1 = 5{,}0\,\text{V} \cdot 0{,}0273\,\text{A} \approx 0{,}136\,\text{W}$. LEDit saavat $2 \cdot 2{,}0\,\text{V} \cdot 0{,}0136\,\text{A} \approx 0{,}055\,\text{W}$, eli $40\,\%$. Kytkentä 2: $I_2 = \dfrac{5{,}0\,\text{V} - 4{,}0\,\text{V}}{68\,\Omega} \approx 0{,}0147\,\text{A}$ ja $P_2 = 5{,}0\,\text{V} \cdot 0{,}0147\,\text{A} \approx 0{,}074\,\text{W}$. LEDit saavat $4{,}0\,\text{V} \cdot 0{,}0147\,\text{A} \approx 0{,}059\,\text{W}$, eli $80\,\%$.
+**Sijoitus:** Kytkentä 1: $I_1 = 2 \cdot 0{,}0136\,\text{A} \approx 0{,}0273\,\text{A}$ ja $P_1 = 5{,}0\,\text{V} \cdot 0{,}0273\,\text{A} \approx 0{,}136\,\text{W}$. LEDit saavat $$\begin{aligned} &2 \cdot 2{,}0\,\text{V} \cdot 0{,}0136\,\text{A} \\ &\approx 0{,}055\,\text{W} \end{aligned}$$, eli $40\,\%$. Kytkentä 2: $I_2 = \dfrac{5{,}0\,\text{V} - 4{,}0\,\text{V}}{68\,\Omega} \approx 0{,}0147\,\text{A}$ ja $P_2 = 5{,}0\,\text{V} \cdot 0{,}0147\,\text{A} \approx 0{,}074\,\text{W}$. LEDit saavat $4{,}0\,\text{V} \cdot 0{,}0147\,\text{A} \approx 0{,}059\,\text{W}$, eli $80\,\%$.
 **Vastaus:** Kytkennässä 1 lähteestä otetaan noin $27\,\text{mA}$ ja lähde antaa noin $136\,\text{mW}$, josta LEDeihin siirtyy $40\,\%$. Kytkennässä 2 lähteestä otetaan noin $14{,}7\,\text{mA}$ ja lähde antaa noin $74\,\text{mW}$, josta LEDeihin siirtyy $80\,\%$. Loput muuttuvat vastusten sisäenergiaksi.
 **Järkevyys:** Osuus on sama kuin LEDien jännitteen osuus lähteen jännitteestä: $2{,}0\,\text{V} : 5{,}0\,\text{V} = 0{,}40$ ja $4{,}0\,\text{V} : 5{,}0\,\text{V} = 0{,}80$, koska sama virta kulkee LEDin ja sen vastuksen läpi.
 
@@ -254,7 +254,7 @@
 **Periaate:** Sähköteho on jännite kertaa virta. Jokainen ioni saa liike-energian $eU$, joten sekunnissa ionit saavat energian $N \cdot eU$, ja koska $N = \tfrac{I}{e}$, tämä on $UI$.
 **Kaava:** $P = UI$ ja $\dfrac{E_\text{k}}{t} = N \cdot \tfrac{1}{2}mv^2$
 **Muunnokset:** Ei tarvita.
-**Sijoitus:** $P = 1100\,\text{V} \cdot 1{,}76\,\text{A} \approx 1940\,\text{W}$ ja $N \cdot \tfrac{1}{2}mv^2 = 1{,}10 \cdot 10^{19} \cdot 1{,}76 \cdot 10^{-16}\,\text{J/s} \approx 1940\,\text{W}$
+**Sijoitus:** $P = 1100\,\text{V} \cdot 1{,}76\,\text{A} \approx 1940\,\text{W}$ ja $$\begin{aligned} &N \cdot \tfrac{1}{2}mv^2 \\ &= 1{,}10 \cdot 10^{19} \cdot 1{,}76 \cdot 10^{-16}\,\text{J/s} \\ &\approx 1940\,\text{W} \end{aligned}$$
 **Vastaus:** Ionien kiihdyttämiseen tarvittava teho on noin $1{,}9\,\text{kW}$. Yhden sekunnin aikana ionien saama liike-energia on noin $1{,}9\,\text{kJ}$. Siten liike-energian kasvunopeus on $1{,}9\,\text{kJ/s} = 1{,}9\,\text{kW}$, koska jokainen hiloilta lähtevä ioni saa energian $eU$.
 **Järkevyys:** Tulokset ovat samat, koska $N \cdot eU = \tfrac{I}{e} \cdot eU = UI$. Teho on samaa suuruusluokkaa kuin vedenkeittimen, ja sen voi tuottaa luotaimen aurinkopaneeleilla.
 
@@ -454,7 +454,7 @@ Vaaka-akselille merkitään $r^{-2}\ (\text{m}^{-2})$ ja pystyakselille $F\ (\te
 **Kaava:** $U = 16\,U_1$ ja $W = UQ$
 **Muunnokset:** $1\,\text{kWh} = 1000\,\text{Wh}$
 **Sijoitus:** $U = 16 \cdot 3{,}20\,\text{V} = 51{,}2\,\text{V}$ ja $W = 51{,}2\,\text{V} \cdot 200\,\text{Ah} = 10\,240\,\text{Wh} \approx 10{,}2\,\text{kWh}$
-**Vastaus:** Akuston nimellisjännite on $51{,}2\,\text{V}$, ja täyteen ladattuun akustoon on varastoitunut noin $10\,\text{kWh}$:n energia.
+**Vastaus:** Akuston nimellisjännite on $51{,}2\,\text{V}$, ja täyteen ladattuun akustoon on varastoitunut noin $10{,}2\,\text{kWh}$:n energia.
 **Järkevyys:** Kotiakustojen energia on tavallisesti $5\text{–}15\,\text{kWh}$, joten tulos on uskottava.
 
 ### b)
@@ -469,12 +469,12 @@ Vaaka-akselille merkitään $r^{-2}\ (\text{m}^{-2})$ ja pystyakselille $F\ (\te
 
 ### c)
 **Annettu:** $P = 5{,}0\,\text{kW}$, $U = 51{,}2\,\text{V}$, $16$ kennoa, joiden kunkin sisäinen resistanssi on $0{,}50\,\text{m}\Omega$, kaapelin resistanssi $4{,}0\,\text{m}\Omega$
-**Kysytty:** akuston virta $I$ ja lämmöksi muuttuva teho $P_\text{h}$
-**Periaate:** Teho on jännite kertaa virta. Kennojen sisäiset resistanssit ovat sarjassa keskenään ja kaapelin kanssa, joten resistanssit lasketaan yhteen. Joulen lain mukaan resistanssissa lämmöksi muuttuva teho on $RI^2$.
+**Kysytty:** akuston virta $I$ ja sisäenergiaksi muuttuva teho $P_\text{h}$
+**Periaate:** Teho on jännite kertaa virta. Kennojen sisäiset resistanssit ovat sarjassa keskenään ja kaapelin kanssa, joten resistanssit lasketaan yhteen. Joulen lain mukaan resistanssissa sisäenergiaksi muuttuva teho on $RI^2$, ja tämä energia siirtyy lämpönä ympäristöön.
 **Kaava:** $I = \dfrac{P}{U}$ ja $P_\text{h} = (R_\text{s} + R_\text{k})\,I^2$, missä $R_\text{s} = 16\,R_1$
 **Muunnokset:** $5{,}0\,\text{kW} = 5000\,\text{W}$; $R_\text{s} = 16 \cdot 0{,}50\,\text{m}\Omega = 8{,}0\,\text{m}\Omega$, joten $R_\text{s} + R_\text{k} = 12\,\text{m}\Omega = 0{,}012\,\Omega$
 **Sijoitus:** $I = \dfrac{5000\,\text{W}}{51{,}2\,\text{V}} \approx 97{,}7\,\text{A}$ ja $P_\text{h} = 0{,}012\,\Omega \cdot (97{,}7\,\text{A})^2 \approx 114\,\text{W}$
-**Vastaus:** Akuston virta on noin $98\,\text{A}$, ja lämmöksi muuttuu noin $110\,\text{W}$: noin $76\,\text{W}$ akustossa ja $38\,\text{W}$ kaapelissa. Se on noin $2\,\%$ siirrettävästä tehosta.
+**Vastaus:** Akuston virta on noin $98\,\text{A}$, ja sisäenergiaksi muuttuu noin $110\,\text{W}$: noin $76\,\text{W}$ akustossa ja $38\,\text{W}$ kaapelissa. Se on noin $2\,\%$ siirrettävästä tehosta.
 **Järkevyys:** Resistansseissa jännite pienenee $0{,}012\,\Omega \cdot 98\,\text{A} \approx 1{,}2\,\text{V}$, joten vaihtosuuntaajalle tulee hieman nimellisjännitettä pienempi jännite ja todellinen virta on muutaman prosentin suurempi, noin $100\,\text{A}$. Virta on alle sulakkeen nimellisvirran $125\,\text{A}$.
 
 ### d)
@@ -484,7 +484,7 @@ Vaaka-akselille merkitään $r^{-2}\ (\text{m}^{-2})$ ja pystyakselille $F\ (\te
 **Kaava:** $I_\text{k} = \dfrac{E}{R_\text{s}}$
 **Muunnokset:** $8{,}0\,\text{m}\Omega = 0{,}0080\,\Omega$
 **Sijoitus:** $I_\text{k} = \dfrac{51{,}2\,\text{V}}{0{,}0080\,\Omega} = 6400\,\text{A}$
-**Vastaus:** Oikosulkuvirta voi olla noin $6\,\text{kA}$, noin $50$ kertaa sulakkeen nimellisvirta. Lämmöksi muuttuu satoja kilowatteja, joten jakoavain ja navat kuumenevat hetkessä hehkuviksi: syntyy valokaari, sulaa metallia roiskuu, ja palovammojen ja tulipalon vaara on suuri. Siksi sulake asennetaan aivan akuston navan viereen ja akuston lähellä käytetään eristettyjä työkaluja.
+**Vastaus:** Oikosulkuvirta voi olla noin $6\,\text{kA}$, noin $50$ kertaa sulakkeen nimellisvirta. Sisäenergiaksi muuttuu satoja kilowatteja, enimmäkseen kennojen sisäisessä resistanssissa. Kiloampeerien virralla myös jakoavaimen ja liitosten pieneen resistanssiin muuttuu kilowatteja, joten jakoavain ja navat kuumenevat hetkessä hehkuviksi: syntyy valokaari, sulaa metallia roiskuu, ja palovammojen ja tulipalon vaara on suuri. Siksi sulake asennetaan aivan akuston navan viereen ja akuston lähellä käytetään eristettyjä työkaluja.
 
 Nimellisjännitteen vertaaminen suojajänniterajaan ei yksin riitä. Akuston jännite, noin $51\,\text{V}$ ja täyteen ladattuna noin $58\,\text{V}$, on alle tasajännitteen suojajänniterajan $120\,\text{V}$, mutta raja ei tarkoita, että akuston paljaisiin napoihin olisi turvallista koskea. Sähköiskun riski riippuu muun muassa kosketusolosuhteista, kuten ihon kosteudesta, ja virtatiestä kehon läpi. Lisäksi akustoon on varastoitunut noin $10\,\text{kWh}$ energiaa, ja jo yksi oikosulkeva työkalu tai koru voi vapauttaa sen valokaarena ja lämpönä. Siksi akuston paljaita johtavia osia ei käsitellä ilman asianmukaisia suojauksia ja osaamista, ja akustoon liittyvissä töissä noudatetaan valmistajan ohjeita ja sähköturvallisuusmenettelyjä.
 **Järkevyys:** Arvio on yläraja, koska jakoavaimen ja liitoskohtien resistanssi pienentää virtaa. Jos mukana olisi kaapelin $4{,}0\,\text{m}\Omega$, virta olisi silti noin $4\,\text{kA}$.

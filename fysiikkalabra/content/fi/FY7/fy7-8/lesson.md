@@ -149,7 +149,7 @@ Toisiokäämiin indusoituu jännite vain, kun sen läpi kulkeva magneettivuo muu
 Ideaalinen muuntaja ei kuluta energiaa, joten ensiökäämiin tuleva teho on yhtä suuri kuin toisiokäämistä lähtevä teho. Kun kuorma on resistiivinen, teho on jännitteen ja virran tulo, joten kun muuntaja nostaa jännitteen kymmenkertaiseksi, virta pienenee kymmenesosaan. Muuntaja ei siis lisää energiaa tai tehoa: se vaihtaa suuren virran suureksi jännitteeksi tai päinvastoin. Todellisessa muuntajassa osa energiasta muuttuu sisäenergiaksi käämien resistanssissa ja rautasydämen pyörrevirroissa. Siksi sydän kootaan ohuista toisistaan eristetyistä levyistä (luku *Lenzin laki ja pyörrevirrat*). Suurten voimalaitosmuuntajien hyötysuhde on yli $99\,\%$.
 
 ### Siirtohäviö ja suurjännite
-Voimajohdolla on resistanssi, ja johdossa kulkeva virta lämmittää sitä. Lämmöksi muuttuva teho on verrannollinen virran neliöön, joten virta kannattaa pitää pienenä. Saman tehon voi siirtää suurella jännitteellä ja pienellä virralla. Kun jännite nostetaan kymmenkertaiseksi, virta pienenee kymmenesosaan ja häviöteho sadasosaan. Siksi voimalaitoksen generaattorin jännite nostetaan muuntajalla **suurjännitteeksi**. Fingridin ylläpitämän Suomen kantaverkon jännitteet ovat $400\,\text{kV}$, $220\,\text{kV}$ ja $110\,\text{kV}$. Kantaverkon häviöt vastaavat noin $2\,\%$:a Suomessa käytetystä sähköstä (Fingrid, *Yhteisillä linjoilla* 2026, vuoden 2025 tiedot).
+Voimajohdolla on resistanssi, ja johdossa kulkeva virta lämmittää sitä: osa siirrettävästä energiasta muuttuu johdon sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Tämä häviöteho on verrannollinen virran neliöön, joten virta kannattaa pitää pienenä. Saman tehon voi siirtää suurella jännitteellä ja pienellä virralla. Kun jännite nostetaan kymmenkertaiseksi, virta pienenee kymmenesosaan ja häviöteho sadasosaan. Siksi voimalaitoksen generaattorin jännite nostetaan muuntajalla **suurjännitteeksi**. Fingridin ylläpitämän Suomen kantaverkon jännitteet ovat $400\,\text{kV}$, $220\,\text{kV}$ ja $110\,\text{kV}$. Kantaverkon häviöt vastaavat noin $2\,\%$:a Suomessa käytetystä sähköstä (Fingrid, *Yhteisillä linjoilla* 2026, vuoden 2025 tiedot).
 
 <svg data-fig="grid" viewBox="0 0 640 372" role="img" aria-label="Kaavakuva sähköverkosta yksiviivaesityksenä, ei mittakaavassa: todellisissa kolmivaiheisissa johdoissa on kolme vaihejohdinta. Ylärivillä voimalaitoksen generaattorin jännite 20 kV nostetaan muuntajalla 400 kilovoltiksi, ja kantaverkon suuret pylväät vievät sähkön sähköasemalle. Sähköasemalla muuntaja laskee jännitteen, ja alarivillä jakeluverkon pienet pylväät vievät 20 kV:n jännitteen muuntamolle, joka laskee sen pienjänniteverkon jännitteeksi: kotien pistorasioissa on 230 volttia." style="max-width:100%;font-size:24px">
   <rect x="60" y="66" width="14" height="40" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
@@ -201,6 +201,21 @@ Voimajohdolla on resistanssi, ja johdossa kulkeva virta lämmittää sitä. Läm
 ### Jännite lasketaan vaiheittain
 Sähköasemilla muuntajat laskevat jännitteen alueverkon $110\,\text{kV}$:iin ja jakeluverkon $20\,\text{kV}$:iin, ja asuinalueen muuntamon jakelumuuntaja laskee esimerkiksi $20\,\text{kV}$:n jännitteen pienjänniteverkon jännitteeksi. Pienjänniteverkossa vaihejohtimien välillä on noin $400\,\text{V}$ ja vaihejohtimen ja nollajohtimen välillä noin $230\,\text{V}$, joka on kodin pistorasian jännite. Suurjännitettä ei tuoda koteihin, koska sen eristäminen vaatii pitkiä eristimiä ja suuria etäisyyksiä, ja kosketus olisi hengenvaarallinen (luku *Sähköturvallisuus kotona ja työssä*). Puhelimen laturi laskee jännitteen vielä noin $5\,\text{V}$:iin. Nykyaikainen laturi muuttaa verkkojännitteen ensin hyvin suuritaajuiseksi, jolloin muuntaja voi olla pieni, ja tasasuuntaa sen lopuksi. Laturin muuntajan käämit eivät kosketa toisiaan, joten puhelin ei ole johtavassa yhteydessä sähköverkkoon.
 
+<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: seinäpistorasiaan on kytketty pieni puhelimen laturi, ja sen johto vie pöydällä olevaan puhelimeen, joka latautuu." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy78s-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy78s-screen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
+  <rect x="0" y="0" width="600" height="360" fill="#f6f1e6"/>
+  <rect x="0" y="270" width="600" height="90" fill="url(#fy78s-desk)"/>
+  <rect x="120" y="60" width="120" height="120" rx="14" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <circle cx="180" cy="120" r="42" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
+  <rect x="150" y="100" width="60" height="64" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
+  <rect x="166" y="116" width="28" height="8" rx="3" fill="#6c757d"/>
+  <path d="M180,164 C180,240 300,200 330,290" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="300" y="286" width="150" height="54" rx="10" fill="#1f2933"/>
+  <rect x="310" y="292" width="130" height="42" rx="4" fill="url(#fy78s-screen)"/>
+  <rect x="360" y="304" width="30" height="18" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
+  <rect x="364" y="308" width="16" height="10" rx="1" fill="#2b8a3e"/>
+</svg>
+
 ## Kaava: Muuntaja ja siirtohäviö
 Ideaalisen muuntajan jännitteet ja virrat riippuvat käämien kierrosten lukumääristä:
 ```kaavat
@@ -209,14 +224,16 @@ muuntaja :: \frac{U_1}{U_2} = \frac{N_1}{N_2} = \frac{I_2}{I_1}
 missä $U_1$ on ensiöjännite (V), $U_2$ toisiojännite (V), $N_1$ ja $N_2$ ensiö- ja toisiokäämin kierrosten lukumäärät ja $I_1$ ja $I_2$ ensiö- ja toisiovirta (A). Suhde $N_1 : N_2$ on muuntosuhde. Jälkimmäinen yhtäsuuruus seuraa tehon säilymisestä: $U_1 I_1 = U_2 I_2$. Jännitteet ja virrat ovat tehollisia arvoja (luku *Generaattori ja vaihtovirta*). Kun jännite kasvaa, virta pienenee samassa suhteessa.
 
 ### Siirtojohdon tehohäviö
-Sähkönsiirron periaatetta havainnollistetaan yksinkertaistetulla kaksijohtimisella virtapiirillä: virta kulkee perille yhtä johdinta pitkin ja palaa toista pitkin. Voimalaitos lähettää tehon $P$ jännitteellä $U$. Johdon virta ja johdossa lämmöksi muuttuva teho ovat
-```kaavat
-tehonkulutus johtimessa :: P = U I
-P_\text{h} = R I^2 = \frac{R P^2}{U^2}
+Sähkönsiirron periaatetta havainnollistetaan yksinkertaistetulla kaksijohtimisella virtapiirillä: virta kulkee perille yhtä johdinta pitkin ja palaa toista pitkin. Voimalaitos lähettää tehon $P$ jännitteellä $U$. Johdon virta ja johdossa sisäenergiaksi muuttuva teho ovat
+```latex
+\begin{aligned}
+&P = U I \\
+&P_\text{h} = R I^2 = \frac{R P^2}{U^2}
+\end{aligned}
 ```
 missä $P$ on siirrettävä teho (W), $U$ siirtojännite (V), $I$ johdon virta (A), $R$ kummankin johtimen yhteenlaskettu resistanssi (Ω) ja $P_\text{h}$ häviöteho (W). Kun sama teho siirretään kaksinkertaisella jännitteellä, virta puolittuu ja häviöteho pienenee neljäsosaan. Siirtojännite $U$ ei ole johdon resistanssin yli oleva jännite: johdon päiden välinen jännitehäviö on vain $R I$, joten häviötehoa ei saa laskea lausekkeella $U^2 : R$.
 
-<svg data-fig="loss-graph" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: siirtojohdossa lämmöksi muuttuvan tehon osuus siirretystä tehosta prosentteina siirtojännitteen funktiona kilovoltteina, kun siirretty teho on 200 MW ja johdon resistanssi 6,0 ohmia yksinkertaistetussa kaksijohtimisessa mallissa. Käyrä laskee jyrkästi: 100 kV:lla osuus on 12 %, 200 kV:lla 3,0 % ja 400 kV:lla 0,75 %. Kun jännite kaksinkertaistuu, osuus pienenee neljäsosaan." style="max-width:100%;font-size:24px">
+<svg data-fig="loss-graph" viewBox="0 0 600 340" role="img" aria-label="Kuvaaja mittakaavassa: siirtojohdossa sisäenergiaksi muuttuvan tehon osuus siirretystä tehosta prosentteina siirtojännitteen funktiona kilovoltteina, kun siirretty teho on 200 MW ja johdon resistanssi 6,0 ohmia yksinkertaistetussa kaksijohtimisessa mallissa. Käyrä laskee jyrkästi: 100 kV:lla osuus on 12 %, 200 kV:lla 3,0 % ja 400 kV:lla 0,75 %. Kun jännite kaksinkertaistuu, osuus pienenee neljäsosaan." style="max-width:100%;font-size:24px">
   <line x1="143" y1="290" x2="143" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="189.5" y1="290" x2="189.5" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="236" y1="290" x2="236" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -339,18 +356,3 @@ Moni laskee voimajohdon häviötehon lausekkeella $P = U^2 : R$ ja päättelee, 
 - Siirtojohdon häviöteho on $P_\text{h} = R I^2$, missä $I = P : U$. Kaksinkertainen siirtojännite pienentää häviöt neljäsosaan.
 - Sähkö siirretään pitkiä matkoja suurjännitteellä: Suomen kantaverkon jännitteet ovat $400\,\text{kV}$, $220\,\text{kV}$ ja $110\,\text{kV}$, ja muuntajat laskevat jännitteen vaiheittain pienjänniteverkon $400\,\text{V}$:iin ja $230\,\text{V}$:iin.
 - Laskuissa käytetään yksinkertaistettua kaksijohtimista mallia $P = UI$. Todellinen kantaverkko on kolmivaiheinen: $400\,\text{kV}$ on pääjännite, ja pätöteho on $P = \sqrt{3}\,U I \cos\varphi$.
-
-<svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Kuvitus: seinäpistorasiaan on kytketty pieni puhelimen laturi, ja sen johto vie pöydällä olevaan puhelimeen, joka latautuu." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy78s-desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient><linearGradient id="fy78s-screen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a5d8ff"/><stop offset="1" stop-color="#1971c2"/></linearGradient></defs>
-  <rect x="0" y="0" width="600" height="360" fill="#f6f1e6"/>
-  <rect x="0" y="270" width="600" height="90" fill="url(#fy78s-desk)"/>
-  <rect x="120" y="60" width="120" height="120" rx="14" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <circle cx="180" cy="120" r="42" fill="#e3dccb" stroke="#1f2933" stroke-width="2"/>
-  <rect x="150" y="100" width="60" height="64" rx="10" fill="#ffffff" stroke="#1f2933" stroke-width="3"/>
-  <rect x="166" y="116" width="28" height="8" rx="3" fill="#6c757d"/>
-  <path d="M180,164 C180,240 300,200 330,290" fill="none" stroke="#1f2933" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-  <rect x="300" y="286" width="150" height="54" rx="10" fill="#1f2933"/>
-  <rect x="310" y="292" width="130" height="42" rx="4" fill="url(#fy78s-screen)"/>
-  <rect x="360" y="304" width="30" height="18" rx="2" fill="none" stroke="#ffffff" stroke-width="2"/>
-  <rect x="364" y="308" width="16" height="10" rx="1" fill="#2b8a3e"/>
-</svg>

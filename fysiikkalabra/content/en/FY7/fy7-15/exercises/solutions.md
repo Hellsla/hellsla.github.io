@@ -94,9 +94,9 @@
 **Principle:** The first polariser halves the unpolarised light. After that, polarised light arrives at every polariser, so Malus's law applies to each one with the angle measured from the transmission axis of the previous polariser. The middle one is at an angle of $30.0^\circ$ to the first, so it is at an angle of $90.0^\circ - 30.0^\circ = 60.0^\circ$ to the last.
 **Formula:** $I_1 = \tfrac{1}{2} I_0$, $I_2 = I_1 \cos^2\theta_1$ and $I_3 = I_2 \cos^2\theta_2$, so $I_3 = \tfrac{1}{2} I_0 \cos^2\theta_1 \cos^2\theta_2$, where $\theta_1 = 30.0^\circ$ and $\theta_2 = 60.0^\circ$
 **Conversions:** Not needed: the intensity stays in $\text{W/m}^2$, and the angles are in degrees.
-**Substitution:** $I_3 = \tfrac{1}{2} \cdot 800\,\text{W/m}^2 \cdot \cos^2 30.0^\circ \cdot \cos^2 60.0^\circ = 400\,\text{W/m}^2 \cdot 0.750 \cdot 0.250 = 75.0\,\text{W/m}^2$
+**Substitution:** $$\begin{aligned} I_3 &= \tfrac{1}{2} \cdot 800\,\text{W/m}^2 \cdot \cos^2 30.0^\circ \\ &\cdot \cos^2 60.0^\circ \\ &= 400\,\text{W/m}^2 \cdot 0.750 \cdot 0.250 \\ &= 75.0\,\text{W/m}^2 \end{aligned}$$
 **Answer:** $75.0\,\text{W/m}^2$, three significant figures like the angles $30.0^\circ$ and $60.0^\circ$.
-**Reasonableness:** Without the middle polariser no light would get through. After the middle film the light is polarised at an angle of $30^\circ$, so it has a component along the transmission axis of the last film. The largest possible value, at the angle $45^\circ$, would be $400\,\text{W/m}^2 \cdot 0.5 \cdot 0.5 = 100\,\text{W/m}^2$, and the result is smaller than that, as it should be.
+**Reasonableness:** Without the middle polariser no light would get through. After the middle film the light is polarised at an angle of $30^\circ$, so it has a component along the transmission axis of the last film. The largest possible value, at the angle $45^\circ$, would be $$\begin{aligned} &400\,\text{W/m}^2 \cdot 0.5 \cdot 0.5 \\ &= 100\,\text{W/m}^2 \end{aligned}$$, and the result is smaller than that, as it should be.
 
 ## fy7-15-L3-02
 **Given:** refractive index of water $n_1 = 1.33$ (the light comes from water and is reflected into water), refractive index of air $n_2 = 1.00$
@@ -114,7 +114,7 @@
 **Principle:** The reading is the sum of the share of the polarised light of the display and the background light. At $90^\circ$ no light of the display passes through, so the reading $16\,\text{lx}$ is background light alone. The share of the light of the display is at most $E_\text{max} - E_\text{b}$, and according to Malus's law it decreases by the factor $\cos^2\theta$. The reading is proportional to the intensity, so Malus's law also applies to the reading.
 **Formula:** $E = (E_\text{max} - E_\text{b}) \cos^2\theta + E_\text{b}$
 **Conversions:** Not needed: the readings are in lux, and the angle is in degrees.
-**Substitution:** $E = (420\,\text{lx} - 16\,\text{lx}) \cdot \cos^2 60.0^\circ + 16\,\text{lx} = 404\,\text{lx} \cdot 0.250 + 16\,\text{lx} = 117\,\text{lx}$
+**Substitution:** $$\begin{aligned} E &= (420\,\text{lx} - 16\,\text{lx}) \cdot \cos^2 60.0^\circ \\ &+ 16\,\text{lx} \\ &= 404\,\text{lx} \cdot 0.250 + 16\,\text{lx} \\ &= 117\,\text{lx} \end{aligned}$$
 **Answer:** $117\,\text{lx}$, three significant figures like the reading $420\,\text{lx}$.
 **Reasonableness:** Without the background light the result would be $420\,\text{lx} \cdot 0.250 = 105\,\text{lx}$. The share of the background light does not change as the film is turned, so the reading must be slightly larger, as in the result. The result lies between the largest reading and the background light, as it should.
 
@@ -150,11 +150,11 @@
 
 $I_\text{A} = 600\,\text{W/m}^2 \cdot \cos^2 60.0^\circ$, that is $I_\text{A} = 150\,\text{W/m}^2$
 
-$I_\text{B} = \tfrac{1}{2} \cdot 400\,\text{W/m}^2 = 200\,\text{W/m}^2$
+$$\begin{aligned} I_\text{B} &= \tfrac{1}{2} \cdot 400\,\text{W/m}^2 \\ &= 200\,\text{W/m}^2 \end{aligned}$$
 
 $I_\text{C} = 320\,\text{W/m}^2 \cdot \cos^2 30.0^\circ$, that is $I_\text{C} = 240\,\text{W/m}^2$
 
-$I_\text{D} = \tfrac{1}{2} \cdot 800\,\text{W/m}^2 \cdot \cos^2 60.0^\circ$, that is $I_\text{D} = 100\,\text{W/m}^2$
+$$\begin{aligned} &I_\text{D} \\ &= \tfrac{1}{2} \cdot 800\,\text{W/m}^2 \cdot \cos^2 60.0^\circ \end{aligned}$$, that is $I_\text{D} = 100\,\text{W/m}^2$
 
 In situation E, after the first polariser the light is polarised in its transmission direction, and the second polariser is at an angle of $45.0^\circ$ to it:
 
@@ -207,7 +207,7 @@ If the factor $\cos\theta$ were taken without the square, the intensity of situa
 **Reading the graph:** The greatest reading of the table, $114\,\text{W/m}^2$, is at the angle $45^\circ$. The readings at the angles $15^\circ$ and $75^\circ$ are $32\,\text{W/m}^2$ and $28\,\text{W/m}^2$, so approximately equal, and the readings at the angles $0^\circ$ and $90^\circ$ are almost zero.
 **Formula:** $I_1 = \tfrac{1}{2} I_0$, $I_2 = I_1 \cos^2\theta$ and $I_3 = I_2 \cos^2(90^\circ - \theta) = I_2 \sin^2\theta$, so $I_3 = \tfrac{1}{2} I_0 \cos^2\theta \sin^2\theta = \tfrac{1}{8} I_0 \sin^2 2\theta$. The greatest value is obtained when $\sin 2\theta = 1$, that is $\theta = 45^\circ$, and then $\dfrac{I_3}{I_0} = \dfrac{1}{8}$.
 **Conversions:** Not needed: the angles are in degrees, and the share is converted to a percentage by multiplying by $100$.
-**Substitution:** $I_3 = \tfrac{1}{2} \cdot 960\,\text{W/m}^2 \cdot \cos^2 45^\circ \cdot \sin^2 45^\circ = 480\,\text{W/m}^2 \cdot 0.500 \cdot 0.500 = 120\,\text{W/m}^2$ and $\dfrac{I_3}{I_0} = \dfrac{120\,\text{W/m}^2}{960\,\text{W/m}^2} = 0.125 = 12.5\,\%$
+**Substitution:** $$\begin{aligned} &I_3 \\ &= \tfrac{1}{2} \cdot 960\,\text{W/m}^2 \cdot \cos^2 45^\circ \cdot \sin^2 45^\circ \\ &= 480\,\text{W/m}^2 \cdot 0.500 \cdot 0.500 \\ &= 120\,\text{W/m}^2 \end{aligned}$$ and $\dfrac{I_3}{I_0} = \dfrac{120\,\text{W/m}^2}{960\,\text{W/m}^2} = 0.125 = 12.5\,\%$
 **Answer:** $12.5\,\%$, that is $120\,\text{W/m}^2$. The result is exact, because the ideal model gives exactly $\tfrac{1}{8} = 0.125$. The intensity is greatest at the angle $45^\circ$. At the angles $15^\circ$ and $75^\circ$ the expression gives the same value, $30\,\text{W/m}^2$, because $\sin 2\theta$ is the same at the angles $\theta$ and $90^\circ - \theta$.
 **Reasonableness:** The greatest reading of the table, $114\,\text{W/m}^2$, is close to the calculated $120\,\text{W/m}^2$, and the calculated $30\,\text{W/m}^2$ at $15^\circ$ agrees with the reading $32\,\text{W/m}^2$ of the table. The readings differ from the calculated ones by a few $\text{W/m}^2$ in both directions (at $60^\circ$ the reading $93\,\text{W/m}^2$ is above the calculated $90\,\text{W/m}^2$), which is measurement uncertainty. The share $12.5\,\%$ is below the $50\,\%$ that the first polariser lets through, as it should be.
 **Model answer (part c):** After the first one the light is polarised perpendicular to the transmission axis of the last one, so the last one would block it. The middle one lets through only the component along its own transmission axis, so after it the light is polarised along that direction. The light then has a component also along the transmission axis of the last one, and part of it passes through. A polariser does not merely dim the light: the polarisation direction of the light that has passed through is always the transmission axis of the polariser, and part of the light is absorbed.
@@ -232,7 +232,7 @@ If the factor $\cos\theta$ were taken without the square, the intensity of situa
 **Conversions:** Not needed: the intensity stays in $\text{W/m}^2$ and the share is a dimensionless number.
 **Substitution:** $I = 400\,\text{W/m}^2 \cdot 0.67 = 268\,\text{W/m}^2$
 **Answer:** $270\,\text{W/m}^2$ (read from the graph $268\,\text{W/m}^2$), two or three significant figures according to the accuracy of the reading. A good answer is $260\text{–}280\,\text{W/m}^2$.
-**Reasonableness:** At $30^\circ$ the share is $0.75$ and at $45^\circ$ it is $0.50$, so the result $268\,\text{W/m}^2$ is between $300\,\text{W/m}^2$ and $200\,\text{W/m}^2$. Check by calculation: $400\,\text{W/m}^2 \cdot \cos^2 35^\circ = 268.4\,\text{W/m}^2$.
+**Reasonableness:** At $30^\circ$ the share is $0.75$ and at $45^\circ$ it is $0.50$, so the result $268\,\text{W/m}^2$ is between $300\,\text{W/m}^2$ and $200\,\text{W/m}^2$. Check by calculation: $$\begin{aligned} &400\,\text{W/m}^2 \cdot \cos^2 35^\circ \\ &= 268.4\,\text{W/m}^2 \end{aligned}$$.
 
 ## fy7-15-L1-11
 **Given:** refractive index of air $n_1 = 1.00$; the refractive index of crown glass is looked up in the MAFY table *Taitekertoimia*: $n_2 = 1.520$
@@ -254,3 +254,8 @@ If the factor $\cos\theta$ were taken without the square, the intensity of situa
 **Substitution:** $\cos^2\theta = \dfrac{200\,\text{lx} - 15\,\text{lx}}{360\,\text{lx}} = 0.514$ and $\theta = \cos^{-1}\sqrt{0.514} = \cos^{-1} 0.717 = 44.2^\circ$
 **Answer:** $44^\circ$, two significant figures according to the accuracy of reading the graph. A good answer is $43\text{–}46^\circ$.
 **Reasonableness:** The reading $200\,\text{lx}$ is close to $195\,\text{lx}$, which corresponds to $45^\circ$ ($\cos^2 45^\circ = 0.50$), so the angle must be slightly below $45^\circ$. Check: $360\,\text{lx} \cdot \cos^2 44.2^\circ + 15\,\text{lx} = 360\,\text{lx} \cdot 0.514 + 15\,\text{lx} = 200\,\text{lx}$.
+
+## fy7-15-L2-09
+**Find:** why the position of a polarising filter affects the reflection in a window but hardly affects the goods behind it, and why the reflection becomes bright again after a quarter turn
+**Principle:** A polariser lets through only the oscillation parallel to its transmission direction and absorbs the oscillation perpendicular to it. Light reflected from the surface of an insulator such as glass is partly polarised parallel to the surface, because the oscillation parallel to the surface is reflected more strongly than the others. The light coming from the goods through the window is unpolarised: it oscillates equally in all directions.
+**Model answer:** The reflection contains more oscillation parallel to the glass surface than in other directions. When the transmission direction of the filter is perpendicular to this direction, the filter absorbs most of the reflected light, and the reflection dims. The light from the goods is unpolarised, so the filter always lets about half of it through, whatever its position; that is why the brightness of the goods hardly changes. After a quarter turn ($90^\circ$) the transmission direction is parallel to the oscillation of the reflection, and the reflection passes again. The reflection does not usually disappear completely, because the reflected light is only partly polarised.

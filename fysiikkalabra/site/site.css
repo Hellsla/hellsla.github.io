@@ -573,6 +573,7 @@ table.tbl-stack tbody,table.tbl-stack tr{display:block}
 table.tbl-stack tr{padding:.35rem 0;border-bottom:1px solid var(--line)}
 table.tbl-stack tr:last-child{border-bottom:0}
 table.tbl-stack td,table.tbl-stack tbody th{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);column-gap:.7rem;align-items:baseline;border:0;padding:.2rem .8rem}
+@supports (grid-template-columns:subgrid){table.tbl-stack tbody{display:grid;grid-template-columns:.8rem minmax(auto,2fr) .7rem minmax(0,3fr) .8rem}table.tbl-stack tbody>tr,table.tbl-stack tbody>tr>td,table.tbl-stack tbody>tr>th{grid-column:1/-1;display:grid;grid-template-columns:subgrid;column-gap:0}table.tbl-stack tbody>tr>*{padding-left:0;padding-right:0}table.tbl-stack tbody .tbl-lab{grid-column:2}table.tbl-stack tbody .tbl-val{grid-column:4}}   /* the labels of one table share one column, 2/5 of the width as before but never narrower than its widest label that cannot wrap (a formula: "E_district heating (GWh)" was drawn over its value at 390 px, en/fy3-15, 2026-11-16), so the values stay in one column */
 table.tbl-stack .tbl-lab{display:block;font:600 var(--fs-small) var(--sans);color:var(--ink-2)}
 table.tbl-stack.tbl-blank tbody tr:not(:first-child){display:none}table.tbl-stack.tbl-blank .tbl-val{border-bottom:1px solid var(--line);min-height:1.5em}
 th{font:600 var(--fs-small) var(--sans);color:var(--ink-2);background:var(--bg-tint)}

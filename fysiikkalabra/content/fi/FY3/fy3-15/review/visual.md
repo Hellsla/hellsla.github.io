@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a3f92c1500c8a340
+CONTENT-HASH: 232613594d85c8f2
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- [Minor] lesson.md, paragraph after the CHP figure — "Laitoksen sähkö- ja lämpötehon suhde sekä käyttö riippuvat laitostyypistä ja energiantarpeesta" is vague ("käyttö" of what?). The old sentence tied the summer case to the figure. Suggest: "Laitoksen sähkö- ja lämpötehon suhde riippuu laitostyypistä ja siitä, paljonko lämpöä tarvitaan."
-- [Minor] "ja sitä voi siirtää" then "mutta sitä voidaan hyödyntää" in the next sentence: two "sitä" in a row refer to different things; consider "kaukolämpöä voidaan hyödyntää".
+- [Minor] Pohdinta "kertaus", feedback of the correct option and of the last wrong option: at 390 px the inline chain $Q_2 = Q_1 - W = 800\,\text{MJ} - 280\,\text{MJ} = 520\,\text{MJ}$ is clipped at the right edge ("280 M"); the result 520 MJ is lost there but stays in the option text and in the other feedbacks. Known entry in docs/clipped-formulas.tsv, unchanged from before this work; a display or two-row form would be better once the automated test allows it.
 
 ## Checked
-- theory-1280-1 (Ydinajatus with CHP graph beside text), theory-1280-2 (changed paragraph, Nesjavellir photo beside it, formulas), fig-6-390 (CHP graph, unchanged). The paragraph is about 70 words, the layout survived, no overflow. fi-easy and en were not opened as captures; the inquiry.json model-answer change is one verb phrase and has no layout effect.
+- Delta round 2: rendered preview (fi) at 390 and 1280 px with all four feedbacks of the "kertaus" choice shown. 1280 px: all formulas whole, inline form reads cleanly. 390 px: no page overflow (scrollWidth 390); the two inline chains clip as described; the other feedbacks (wrong first option, display form of the second) are intact. Rest of the lesson unchanged by this delta.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

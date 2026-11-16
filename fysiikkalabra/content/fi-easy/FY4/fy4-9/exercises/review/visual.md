@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 7de4344ab38e2aaf
+CONTENT-HASH: 40eb23c26e6a8220
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] solutions.md:176 (tile fy4-9 #13) — the leading sign in `&-1{,}50` is set with binary spacing ("− 1,50 m/s"); write `&{-}1{,}50`.
 
 ## Checked
-- Delta: 13-3 (volleyball) at 1280 px with solution open, fi-easy: new task text reads situation then question, layout intact. Captures were missing and were made with screenshot.py.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.

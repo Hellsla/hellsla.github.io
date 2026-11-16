@@ -246,7 +246,12 @@ The gas problems of the exam need two checks before the numbers. **The temperatu
   <foreignObject x="242" y="922" width="116" height="20" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:17px;color:#ffffff">$\eta = W/Q_1$</div></foreignObject>
 </svg>
 
-The opening question is answered with these two checks. In the warm garage ($+20\,{}^\circ\text{C}$) the gauge showed a gauge pressure of $230\,\text{kPa}$, so the total pressure was $101\,\text{kPa} + 230\,\text{kPa} = 331\,\text{kPa}$. When the volume of the tyre stays almost the same, the total pressure is proportional to the kelvin temperature: after a night of frost ($-20\,{}^\circ\text{C}$) it is $331\,\text{kPa} \cdot 253\,\text{K} : 293\,\text{K} \approx 286\,\text{kPa}$. The gauge now shows only about $185\,\text{kPa}$, even though no air has leaked.
+The opening question is answered with these two checks. In the warm garage ($+20\,{}^\circ\text{C}$) the gauge showed a gauge pressure of $230\,\text{kPa}$, so the total pressure was $101\,\text{kPa} + 230\,\text{kPa} = 331\,\text{kPa}$. When the volume of the tyre stays almost the same, the total pressure is proportional to the kelvin temperature: after a night of frost ($-20\,{}^\circ\text{C}$) it is $$
+\begin{aligned}
+&331\,\text{kPa} \cdot 253\,\text{K} : 293\,\text{K} \\
+&\approx 286\,\text{kPa}
+\end{aligned}
+$$. The gauge now shows only about $185\,\text{kPa}$, even though no air has leaked.
 
 <svg data-fig="rengas" viewBox="0 0 480 330" role="img" aria-label="Bar chart to scale: the total pressure of the air in a tyre at two temperatures. Each horizontal bar is divided into two parts: the air pressure 101 kPa and the gauge pressure shown by the gauge. In the warm garage, +20 °C, the gauge pressure is 230 kPa and the total pressure 331 kPa. After a night of frost, −20 °C, the total pressure is 286 kPa and the gauge pressure 185 kPa. The total pressure has decreased in the ratio of the kelvin temperatures, but the gauge reading has decreased by 45 kPa, that is, by about a fifth." style="max-width:100%;font-size:20px">
   <line x1="140" y1="40" x2="140" y2="268" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>

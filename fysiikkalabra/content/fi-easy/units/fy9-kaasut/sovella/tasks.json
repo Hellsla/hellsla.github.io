@@ -1,5 +1,5 @@
 {
-  "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin aiheet: paineen, kaasut ja lämpövoimakoneen. Ratkaise tehtävät samalla tavalla kuin kokeessa. Perustele, miksi valitset mallin. Tarkista, että lämpötila on kelvineinä ja paine on kokonaispaine. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "intro": "Seitsemän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin aiheet: paineen, kaasut ja lämpövoimakoneen. Viimeinen tehtävä on soveltava aineistotehtävä. Sen aineisto avautuu tehtävän linkistä. Ratkaise tehtävät samalla tavalla kuin kokeessa. Perustele, miksi valitset mallin. Tarkista, että lämpötila on kelvineinä ja paine on kokonaispaine. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
   "tasks": [
     {
       "id": "fy9-kaasut-s1",
@@ -32,7 +32,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "$A = \\pi r^2 = \\pi \\cdot (0{,}100\\,\\text{m})^2 \\approx 0{,}0314\\,\\text{m}^2$ ja $mg \\approx 17{,}7\\,\\text{kN}$, joten $\\Delta p \\approx 562\\,\\text{kPa}$."
+              "detail": "$$\n\\begin{aligned}\nA &= \\pi r^2 \\\\\n&= \\pi \\cdot (0{,}100\\,\\text{m})^2 \\\\\n&\\approx 0{,}0314\\,\\text{m}^2\n\\end{aligned}\n$$ ja $mg \\approx 17{,}7\\,\\text{kN}$, joten $\\Delta p \\approx 562\\,\\text{kPa}$."
             },
             {
               "key": "units_precision",
@@ -65,7 +65,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$W = 1800\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\cdot 1{,}20\\,\\text{m} \\approx 21{,}2\\,\\text{kJ}$ ja $562\\,\\text{kPa} \\cdot 37{,}7\\,\\textsf{l} \\approx 21{,}2\\,\\text{kJ}$."
+              "detail": "$$\n\\begin{aligned}\nW &= 1800\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\\n&\\cdot 1{,}20\\,\\text{m} \\\\\n&\\approx 21{,}2\\,\\text{kJ}\n\\end{aligned}\n$$ ja $562\\,\\text{kPa} \\cdot 37{,}7\\,\\textsf{l} \\approx 21{,}2\\,\\text{kJ}$."
             },
             {
               "text": "Selittää, että sylinterin ilma työntää mäntää kokonaispaineella $663\\,\\text{kPa}$ ja tekee työn $p\\,\\Delta V \\approx 25{,}0\\,\\text{kJ}$. Erotus $3{,}8\\,\\text{kJ}$ kuluu siihen, että mäntä työntää yläpuolellaan olevaa ulkoilmaa pois tieltä.",
@@ -98,7 +98,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$p_1 = 1001\\,\\text{kPa}$, joten $p_2 = 1001\\,\\text{kPa} - 663\\,\\text{kPa} \\cdot 0{,}377 \\approx 751\\,\\text{kPa}$ eli mittarissa noin $650\\,\\text{kPa}$."
+              "detail": "$p_1 = 1001\\,\\text{kPa}$, joten $$\n\\begin{aligned}\np_2 &= 1001\\,\\text{kPa} \\\\\n&- 663\\,\\text{kPa} \\cdot 0{,}377 \\\\\n&\\approx 751\\,\\text{kPa}\n\\end{aligned}\n$$ eli mittarissa noin $650\\,\\text{kPa}$."
             },
             {
               "text": "Perustelee, että ilma virtaa vain suuremmasta paineesta pienempään. Siksi säiliössä on oltava koko noston ajan vähintään $663\\,\\text{kPa}$. Toisen noston jälkeen paine olisi noin $501\\,\\text{kPa}$. Toinen nosto jää siis kesken, noin $0{,}4\\,\\text{m}$:n korkeudelle.",
@@ -160,7 +160,7 @@
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "Metaanin tiheys on $34{,}9\\,\\text{kg} : 52{,}0\\,\\text{m}^3 \\approx 0{,}67\\,\\text{kg/m}^3$. Se on pienempi kuin ilman tiheys, koska metaanin moolimassa on pienempi."
+              "detail": "Metaanin tiheys on $$\n\\begin{aligned}\n&34{,}9\\,\\text{kg} : 52{,}0\\,\\text{m}^3 \\\\\n&\\approx 0{,}67\\,\\text{kg/m}^3\n\\end{aligned}\n$$. Se on pienempi kuin ilman tiheys, koska metaanin moolimassa on pienempi."
             }
           ]
         },
@@ -216,7 +216,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "Luovutettu lämpöteho on $485\\,\\text{kW} - 175\\,\\text{kW} \\approx 310\\,\\text{kW}$, ja siitä saadaan talteen $0{,}75 \\cdot 310\\,\\text{kW} \\approx 233\\,\\text{kW}$. Siksi $\\eta_\\text{kok} = (175 + 233) : 485 \\approx 84\\,\\%$."
+              "detail": "Luovutettu lämpöteho on $485\\,\\text{kW} - 175\\,\\text{kW} \\approx 310\\,\\text{kW}$, ja siitä saadaan talteen $0{,}75 \\cdot 310\\,\\text{kW} \\approx 233\\,\\text{kW}$. Siksi $$\n\\begin{aligned}\n\\eta_\\text{kok} &= (175 + 233) : 485 \\\\\n&\\approx 84\\,\\%\n\\end{aligned}\n$$."
             },
             {
               "key": "conclusion",
@@ -291,7 +291,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\theta_0 = -\\dfrac{V_0}{k} = -\\dfrac{37{,}7\\,\\text{ml}}{0{,}135\\,\\text{ml}/{}^\\circ\\text{C}} \\approx -279\\,{}^\\circ\\text{C}$"
+              "detail": "$$\n\\begin{aligned}\n\\theta_0 &= -\\dfrac{V_0}{k} \\\\\n&= -\\dfrac{37{,}7\\,\\text{ml}}{0{,}135\\,\\text{ml}/{}^\\circ\\text{C}} \\\\\n&\\approx -279\\,{}^\\circ\\text{C}\n\\end{aligned}\n$$"
             },
             {
               "key": "uncertainty",
@@ -324,17 +324,17 @@
             {
               "key": "units_precision",
               "points": 2,
-              "detail": "$k = 0{,}135\\,\\text{ml/K} = 0{,}135 \\cdot 10^{-6}\\,\\text{m}^3/\\text{K}$ ja $p = 101\\,300\\,\\text{Pa}$; kolme merkitsevää numeroa."
+              "detail": "$$\n\\begin{aligned}\nk &= 0{,}135\\,\\text{ml/K} \\\\\n&= 0{,}135 \\cdot 10^{-6}\\,\\text{m}^3/\\text{K}\n\\end{aligned}\n$$ ja $p = 101\\,300\\,\\text{Pa}$; kolme merkitsevää numeroa."
             },
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$n \\approx 1{,}65 \\cdot 10^{-3}\\,\\text{mol} = 1{,}65\\,\\text{mmol}$"
+              "detail": "$$\n\\begin{aligned}\nn &\\approx 1{,}65 \\cdot 10^{-3}\\,\\text{mol} \\\\\n&= 1{,}65\\,\\text{mmol}\n\\end{aligned}\n$$"
             },
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "Yksi mittauspiste antaa melkein saman tuloksen: $n = \\dfrac{pV}{RT} = \\dfrac{101\\,300\\,\\text{Pa} \\cdot 41{,}1 \\cdot 10^{-6}\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 298{,}15\\,\\text{K}} \\approx 1{,}68\\,\\text{mmol}$."
+              "detail": "Yksi mittauspiste antaa melkein saman tuloksen: $$\n\\begin{aligned}\nn &= \\dfrac{pV}{RT} \\\\\n&= \\dfrac{101\\,300\\,\\text{Pa} \\cdot 41{,}1 \\cdot 10^{-6}\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 298{,}15\\,\\text{K}} \\\\\n&\\approx 1{,}68\\,\\text{mmol}\n\\end{aligned}\n$$."
             }
           ]
         },
@@ -423,7 +423,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\eta = 30\\,\\text{kW} : 500\\,\\text{kW} = 0{,}060 = 6{,}0\\,\\%$ ja $P_2 = 470\\,\\text{kW}$"
+              "detail": "$$\n\\begin{aligned}\n\\eta &= 30\\,\\text{kW} : 500\\,\\text{kW} \\\\\n&= 0{,}060 \\\\\n&= 6{,}0\\,\\%\n\\end{aligned}\n$$ ja $P_2 = 470\\,\\text{kW}$"
             },
             {
               "text": "Selittää, että kuuman lähteen ja kylmän ympäristön lämpötilaero $23\\,\\text{K}$ on pieni verrattuna kuuman lähteen lämpötilaan $276\\,\\text{K}$. Siksi vain pieni osa lämmöstä voi muuttua työksi.",
@@ -433,7 +433,7 @@
             {
               "key": "reasonableness",
               "points": 1,
-              "detail": "Energia säilyy: $30\\,\\text{kW} + 470\\,\\text{kW} = 500\\,\\text{kW}$. Kone luovuttaa kylmään melkein kaiken lämmön, jonka se ottaa."
+              "detail": "Energia säilyy: $$\n30\\,\\text{kW} + 470\\,\\text{kW} = 500\\,\\text{kW}\n$$. Kone luovuttaa kylmään melkein kaiken lämmön, jonka se ottaa."
             }
           ]
         },
@@ -674,6 +674,166 @@
         "concept": "fy4-5",
         "communication": "fy4-6",
         "transfer": "fy4-6"
+      }
+    },
+    {
+      "id": "fy9-kaasut-s7",
+      "title": "Mihin ydinvoimalan energia siirtyy?",
+      "source": "statistics",
+      "source_note": "TVO 2026, Olkiluoto 3: rakenne ja tekniset tiedot (https://www.tvo.fi/tuotanto/laitosyksikot/ol3/rakennejateknisettiedot.html). Tarkistettu 16.11.2026. Meriveden tiheys ja ominaislämpökapasiteetti ovat puhtaan veden arvoja. Meriveden lämpötila $10\\,{}^\\circ\\text{C}$ on oletus.",
+      "skills": [
+        "fy3-15",
+        "fy3-11",
+        "fy3-6",
+        "fy3-5"
+      ],
+      "text": "Olkiluoto 3 on Suomen suurin ydinvoimalaitosyksikkö. Sen reaktori on painevesireaktori. Reaktorissa uraaniytimet halkeavat eli tapahtuu fissioita, ja fissiot lämmittävät vettä. Vedestä tehdään höyryä, ja höyry pyörittää turbiinia ja generaattoria. Turbiinin jälkeen höyry tiivistyy eli muuttuu takaisin vedeksi lauhduttimessa. Lauhdutinta jäähdytetään merivedellä.\n\nAvaa Teollisuuden Voiman (TVO) sivu [Olkiluoto 3: rakenne ja tekniset tiedot](https://www.tvo.fi/tuotanto/laitosyksikot/ol3/rakennejateknisettiedot.html). Sivulle pääsee myös TVO:n Olkiluoto 3 ‑sivun kohdasta ”Rakenne ja tekniset tiedot”. Etsi sivulta taulukko ”OL3 tekniset tiedot”. Lue taulukosta neljä riviä: *Sähköteho, netto*, *Reaktorin lämpöteho*, *Tuotehöyryn lämpötila* ja *Merivesivirtaus*. Nettosähköteho on sähköteho, jonka laitos syöttää sähköverkkoon. Generaattorin tehosta on silloin vähennetty laitoksen oma kulutus. Mallivastaus käyttää arvoja, jotka olivat taulukossa 16.11.2026.\n\nKäytä näitä oletuksia:\n\n- Laitos toimii nimellistehollaan eli suurimmalla suunnitellulla tehollaan. Kaikki se reaktorin lämpöteho, jota ei saada sähkötehona verkkoon, siirtyy lauhduttimessa lämpönä meriveteen.\n- Meriveden tiheys on $1{,}00 \\cdot 10^{3}\\,\\tfrac{\\text{kg}}{\\text{m}^3}$ ja ominaislämpökapasiteetti $4{,}19\\,\\tfrac{\\text{kJ}}{\\text{kg}\\cdot\\text{K}}$ (puhtaan veden arvot).\n- Meriveden lämpötila ennen lauhdutinta on noin $10\\,{}^\\circ\\text{C}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 2,
+          "text": "Kuinka suuri on aineiston mukaan reaktorin lämpöteho? Kuinka suuri on laitoksen nettosähköteho? Laske näistä laitoksen hyötysuhde. Vertaa tulosta taulukon riviin *Kokonaishyötysuhde*.",
+          "answer": {
+            "value": 37.21,
+            "unit": "%",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Lukee aineistosta oikeat suureet: reaktorin lämpöteho on $4300\\,\\text{MW}$ ja nettosähköteho on noin $1600\\,\\text{MW}$ (arvot 16.11.2026).",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\n\\eta &= \\dfrac{P_\\text{s}}{P_1} = \\dfrac{1600\\,\\text{MW}}{4300\\,\\text{MW}} \\\\\n&\\approx 0{,}37 = 37\\,\\%\n\\end{aligned}\n$$ Tulos on sama kuin taulukon ”n. $37\\,\\%$”."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri lämpöteho siirtyy laitoksesta ympäristöön, kun laitos toimii nimellistehollaan? Kuinka suuri energia siirtyy ympäristöön lämpönä yhden vuorokauden aikana?",
+          "answer": [
+            {
+              "name": "P2",
+              "value": 2700,
+              "unit": "MW",
+              "tolerance": 0.02
+            },
+            {
+              "name": "Q2",
+              "value": 64.8,
+              "unit": "GWh",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Energia säilyy ja laitos toimii tasaisesti. Siksi $P_1 = P_\\text{s} + P_2$ eli $P_2 = P_1 - P_\\text{s}$, ja $Q_2 = P_2 t$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$P_2 = 2700\\,\\text{MW}$ ja $$\n\\begin{aligned}\nQ_2 &= 2700\\,\\text{MW} \\cdot 24\\,\\text{h} \\\\\n&= 64\\,800\\,\\text{MWh}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$Q_2 \\approx 65\\,\\text{GWh}$ tai $2{,}3 \\cdot 10^{14}\\,\\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, koska sähköteho on annettu likiarvona sadan megawatin tarkkuudella."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 4,
+          "text": "Lauhduttimen läpi virtaa merivettä. Veden määrä on aineiston rivillä *Merivesivirtaus*. Johda symbolein lauseke meriveden lämpötilan muutokselle. Tunnet lämmön, joka siirtyy veteen aikayksikössä, eli lämpötehon. Tunnet myös sekunnissa virtaavan veden tilavuuden. Kuinka paljon merivesi lämpenee lauhduttimessa? Arvioi lopuksi, onko todellinen lämpeneminen laskettua suurempi vai pienempi.",
+          "answer": {
+            "value": 11.31,
+            "unit": "K",
+            "tolerance": 0.03
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Ajassa $t$ virtaavan veden massa on $m = \\rho V$, ja veteen siirtyy lämpö $Q = P_2 t$. Siksi $P_2 t = c\\rho V \\Delta T$ ja $\\Delta T = \\dfrac{P_2 t}{c\\rho V}$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "Aineistosta $\\dfrac{V}{t} = 57\\,\\tfrac{\\text{m}^3}{\\text{s}}$ (16.11.2026); $\\Delta T = \\dfrac{2{,}7 \\cdot 10^{9}\\,\\text{W}}{2{,}388 \\cdot 10^{8}\\,\\tfrac{\\text{W}}{\\text{K}}} \\approx 11{,}3\\,\\text{K}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "Megawatit on muunnettu wateiksi ja kilojoulet jouleiksi. $\\Delta T \\approx 11\\,\\text{K}$ eli $11\\,{}^\\circ\\text{C}$, kaksi merkitsevää numeroa."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "Oletettiin, että kaikki luovutettu lämpö siirtyy meriveteen. Pieni osa lämmöstä siirtyy ympäristöön muuta kautta. Siksi todellinen lämpeneminen on hieman pienempi: tulos on yläraja-arvio eli suurin mahdollinen arvo."
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 3,
+          "text": "Laitoksen hyötysuhde on selvästi alle $100\\,\\%$. Selitä lämpövoimakoneen toimintaperiaatteen avulla, miksi kaikkea reaktorin lämpöä ei voi muuttaa sähköenergiaksi. Oleta, että turbiini ja generaattori toimivat ilman kitkaa ja muita häviöitä. Käytä perustelussa aineiston höyryn lämpötilaa ja meriveden lämpötilaa.",
+          "criteria": [
+            {
+              "text": "Kuvaa laitoksen lämpövoimakoneena. Laitos ottaa kuumasta lähteestä lämmön $Q_1$, tekee turbiinissa työn $W$ ja luovuttaa lämmön $Q_2$ kylmempään meriveteen. Energia säilyy, joten $W = Q_1 - Q_2$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Perustelee, että lämpö siirtyy itsestään vain kuumemmasta kylmempään. Kone voi tehdä työtä vain, kun osa lämmöstä luovutetaan kylmempään ympäristöön. Kitkan ja muiden häviöiden poistaminen ei poista lämpöä $Q_2$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Käyttää lämpötiloja: höyry on $290\\,{}^\\circ\\text{C} \\approx 563\\,\\text{K}$ (aineisto 16.11.2026) ja merivesi noin $283\\,\\text{K}$. Mitä pienempi lämpötilaero on verrattuna kuuman lähteen lämpötilaan, sitä pienempi osa lämmöstä voi muuttua työksi. Tässä ero $280\\,\\text{K}$ on vain noin puolet lämpötilasta $563\\,\\text{K}$.",
+              "tag": "concept",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 3,
+          "text": "Käytä b- ja c-kohdan tuloksia. Arvioi, miten mereen siirtyvä lämpö voi vaikuttaa ympäristöön laitoksen lähellä. Selitä myös, miksi tätä lämpöä on vaikea käyttää hyödyksi esimerkiksi kaukolämpönä eli rakennusten lämmitykseen, vaikka lämpöä on paljon.",
+          "criteria": [
+            {
+              "text": "Selittää ympäristövaikutuksen. Mereen siirtyvä lämpö kasvattaa meriveden sisäenergiaa. Siksi vesi lämpenee purkupaikan lähellä, enintään noin $11\\,\\text{K}$. Mainitsee seurauksen: esimerkiksi alue pysyy talvella sulana, tai lämpö vaikuttaa eliöiden kasvuun ja lajistoon.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Perustelee, että lämpö on matalassa lämpötilassa. Jäähdytysvesi on vain noin $11\\,\\text{K}$ merta lämpimämpää. Siksi lämpö ei siirry siitä itsestään lämmitysverkon veteen, joka on selvästi kuumempaa. Jos lämpö otettaisiin talteen kuumempana, lämpövoimakoneen kylmä lämpötila nousisi ja sähköä saataisiin vähemmän.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Lämpöä on paljon, noin $65\\,\\text{GWh}$ vuorokaudessa, mutta sitä on vaikea käyttää. Lisäksi suuret lämmön käyttäjät ovat kaukana, ja pitkässä siirrossa osa lämmöstä siirtyy ympäristöön."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "concept": "fy3-11",
+        "math": "fy3-6",
+        "transfer": "fy3-15",
+        "communication": "fy3-15"
       }
     }
   ]

@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 374c3306f4ac1a81
-SCOPE: delta added-exercise from 3e46100d85dbce5c base 8f23aa7ae3bd
+CONTENT-HASH: ff4878db594db81d
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md fy6-1-L2-08 Answer — "Two significant figures like the currents read and the voltage" reads awkwardly — "Two significant figures, as in the current readings and the voltage."
-- [Minor] fy6-1/lataus-kuvaaja — the line is in the momentum purple (#7048e8) although it shows current; harmless here, but a current graph elsewhere in the course may use another colour — keep one colour for current graphs across FY6.
+- [Minor] sheet 1 #4: the break falls inside a bracket (`… + 0.60` / `+ 0.50) A · 1.0 h`); readable.
 
 ## Checked
-- review/shots (en, regenerated): fy6-1-open-exercises-L2-1280-9 and -10 (task 1-17 with its graph, check box, full solution open). Graph: both axes titled with units, readable ticks and gridlines, the 0.50 A plateau and the fall to 0 at 100 s clear, answer not shown. Maths (chain starts with Q, aligned rows, units upright, \cdot) and the English read correctly; the set's other exercises unchanged and not re-reviewed.
+- round 3, delta review (reflow): proof sheets en-fy6-1-exercises-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

@@ -47,4 +47,8 @@ hv = h / e                                                 # slope of the E_k,ma
 a["fy8-1-L2-08"] = hv * 12e14 - 2.30                       # figure, metal A (W = 2,30 eV) at 12e14 Hz: E_k,max = 4,963 − 2,30 = 2,663 eV -> 2,66 eV
 f0B = 2.90 / hv                                            # figure, metal B: f0 = W/h = 7,012e14 Hz (read 7,0e14 Hz)
 a["fy8-1-L2-09"] = c / f0B * 1e9                           # λ0 = c/f0 = 427,5 nm -> 428 nm (read: 7,0e14 Hz gives 428 nm)
+# Added exercise (PhET aineisto task)
+lam0 = 539e-9                                              # example reading 16.11.2026: electrons still at 538 nm, none at 540 nm -> λ0 = 539 nm
+f0s = c / lam0                                             # f0 = c/λ0 = 5,562e14 Hz
+a["fy8-1-L2-10"] = h * f0s / e                             # threshold photon energy h f0 = 3,7e-19... = 2,3006 eV -> 2,3 eV (sodium W = 2,3 eV in the simulation)
 print(json.dumps({k: (round(v, 8) if abs(v) >= 1e-3 else float(f"{v:.6g}")) for k, v in a.items()}))

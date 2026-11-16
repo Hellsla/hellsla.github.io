@@ -172,7 +172,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Dieselmoottorin teho ja polttoaineen kulutus (esimerkkiaineisto)",
+        "caption": "Dieselmoottorin teho ja polttoaineen kulutus",
         "columns": [
           "$P\\,(\\text{kW})$",
           "$q_m\\,(\\text{kg/h})$"
@@ -240,7 +240,7 @@
       "unit": "kWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Lämpöpumpun mittaukset (esimerkkiaineisto)",
+        "caption": "Lämpöpumpun mittaukset",
         "columns": [
           "Vuorokausi",
           "$T_\\text{ulko}\\,({}^\\circ\\text{C})$",
@@ -330,6 +330,19 @@
       "answer": 0.6,
       "unit": "m",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-11-L2-10",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://www.motiva.fi/wp-content/uploads/sites/2/2026/01/Saatojen-ja-kayttotapojen-vaikutus-energiakulutukseen-–-Omakotitalot.pdf\" target=\"_blank\" rel=\"noopener\">Motiva – Säätöjen ja käyttötapojen vaikutus energiankulutukseen – Omakotitalot (PDF)</a> (luettu 16. marraskuuta 2026)\n\nMotivan aineisto kertoo, miten omakotitalon lämmityksen säädöt ja käyttötavat vaikuttavat energiankulutukseen. Lue aineistosta luvut Ilmalämpöpumppu ja Ilma-vesilämpöpumppu sekä sanaston kohdat Lämpökerroin ja COP. Sanaston mukaan lämpökerroin $3{,}0$ tarkoittaa, että ”hyötysuhde on $300$ prosenttia”. Aineiston COP on sama suure kuin tämän luvun lämpökerroin $\\varepsilon$.\n\na) Selitä aineiston avulla, mitä lämpöpumpun lämpökerroin tarkoittaa. Miten se eroaa tavallisen sähkölämmittimen energianmuunnon hyötysuhteesta, ja miksi sanaston ilmaus ”hyötysuhde on $300$ prosenttia” on fysiikan kannalta epätarkka?\n\nb) Lämpöpumpun lämpökerroin on $4{,}0$, ja pumppu kuluttaa $2{,}5\\,\\text{kWh}$ sähköenergiaa. Laske huoneeseen siirtyvä lämpö $Q_1$ ja ympäristöstä otettu lämpö $Q_2$.\n\nc) Selitä aineiston avulla, miten ulkolämpötila ja lämmitykseen tarvittava lämpötila (sisäilman tai lämmitysveden lämpötila) vaikuttavat lämpöpumpun lämpökertoimeen. Mitä tästä seuraa kovalla pakkasella?\n\nd) Arvioi väitettä: ”Lämpöpumppu rikkoo energian säilymislakia, koska se tuottaa enemmän lämpöenergiaa kuin kuluttaa sähköenergiaa.” Käytä perustelussa kohdan b) energiataseita.\n\nVastauskenttään tulee kohdan b) ympäristöstä otettu lämpö $Q_2$ kilowattitunteina.",
+      "kind": [
+        "data",
+        "error",
+        "concept"
+      ],
+      "answer": 7.5,
+      "unit": "kWh",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -369,7 +382,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Talon lämmöntarve ja lämpöpumpun lämpökerroin (esimerkkiaineisto)",
+        "caption": "Talon lämmöntarve ja lämpöpumpun lämpökerroin",
         "columns": [
           "Kuukausi",
           "$T_\\text{ulko}\\,({}^\\circ\\text{C})$",
@@ -422,7 +435,7 @@
       "unit": "kJ",
       "tolerance": 0.02,
       "data": {
-        "caption": "Männän korkeus lämmityksen aikana (esimerkkiaineisto)",
+        "caption": "Männän korkeus lämmityksen aikana",
         "columns": [
           "$t\\,(\\text{s})$",
           "$h\\,(\\text{cm})$"

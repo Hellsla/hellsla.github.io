@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: f5b8668b0e07b561
-SCOPE: delta added-exercise from c4c16865602712dd base 81db4a6fd727
+CONTENT-HASH: 6a0a33a715c949de
 
 ## Blocking
 - none
 
 ## Polish
-- fy1-7-L1-09 -- Same structure as fy1-7-L1-02 (aluminium plate, V given, m = rho V) with the density looked up and cm3 to m3 conversion; acceptable, but a different quantity (find V from m, or compare two metals from the table) would add more.
+- solutions.md fy1-7-L2-09 d) — Saturnus/Neptunus tiheys 687/1638 = 0,42, so "vain noin puolet sen tiheydestä" -> "alle puolet sen tiheydestä" (carried from round 1, still open).
 
 ## Checked
-- fy1-7-L1-09: arithmetic and solution steps verified; solution follows given, asked, principle, formula, conversion, substitution, answer, sanity check; tolerance 4 % consistent with the stated answer.
-- Placement at the end of level 1 and mix of kinds in the whole set: fits; one MAFY lookup task per lesson, hint names the table.
-- Delta scope: only the added exercise judged; other exercises not re-reviewed.
+- L2-09 c): the Earth sentence is now physically right: Earth is slightly flattened (about 1/298), which makes the equatorial-radius sphere about 0,3 % too large, matching the 0,4 % gap; "enimmäkseen" is fair.
+- The comparison "paljon vähemmän kuin Saturnus, koska pyörii hitaammin" explains the contrast without claiming more than the student can follow.
+- Saturn's 10 % gap and its explanation unchanged and correct; the rest of c) and d) untouched.

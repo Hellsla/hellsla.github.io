@@ -1,6 +1,7 @@
 VERDICT: DONE
 
-Fix round 1. `lint_lesson.py` and `check_solutions.py fy5-10` pass.
-
-- `solutions.md`: `1\,\tfrac{1}{\text{s}}` and `\tfrac{1}{\text{s}}` replaced by `\text{s}^{-1}` (L1-01, L1-02, L1-03, L2-02, L2-03, L2-04); `\dfrac` in L1-01 and L1-05 Järkevyys; L1-02 Järkevyys range "noin kahdesta senttimetristä yli kymmeneen metriin"; L2-02 natural Finnish "muutama metri sekunnissa" and a gloss that 18 is a counted number; L3-02 gets a one-line `Perustelu` model answer.
-- `exercises.json` L1-02 and `answers.py`: stored answer 0.78 (displayed 0,780 m).
+Work queue 18, proofreading (fi, en, fi-easy solutions.md), fy5-10-L3-04.
+- C_1 = (10,4)^2/5,0: 21,8 -> 21,6. The old values came from unrounded speeds, but answers.py computes C from the speeds rounded to one decimal, so the shown inputs were kept and the results corrected.
+- Same slip in the same block, also fixed: C_3 = (21,1)^2/20,0: 22,2 -> 22,3 and C_4 = (29,3)^2/40,0: 21,4 -> 21,5.
+- The sum 87,9, mean 22,0, v = 25,7 m/s and the answer 5,1 m are unchanged (21,6 + 22,5 + 22,3 + 21,5 = 87,9); answers.py and exercises.json untouched.
+Checks: lint 0 errors, check_solutions ok, answers.py runs, check_i18n 0 errors.

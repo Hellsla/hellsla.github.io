@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 916f3242261c9e98
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 135d726c8a361c0c
 
 ## Blocking
 - none
 
 ## Polish
-- lesson.md, 'In an ordinary short circuit the propagation delay...' — 'short circuit' is a defined term in fy6-2 (a bypass); say 'In an ordinary circuit of a few metres the propagation delay...'.
+- none
 
 ## Checked
-- Word-level diff since origin/main of the en fy6-1 lesson files and neighbouring text; decimal convention (point), number+unit in LaTeX, \cdot, no bold in task statements, no lesson ids; wording compared with the Finnish intent for the brief's items.
-- Round 2 (git diff HEAD~1): "In an ordinary circuit only a few metres long" resolves the short-circuit term clash (lesson and inquiry). No new issues.
+- round 3, delta review (reflow): proof sheets en-fy6-1-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+
+## Scores
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

@@ -144,13 +144,13 @@ p.write_text((SRC / "content/fi/FY3" / LESSON / "lesson.md").read_text())
 report(t, "science", part="exercises"); report(t, "pedagogy", part="exercises"); report(t, "visual", part="exercises")
 e = t / "content/fi/FY3" / LESSON / "exercises/exercises.json"; ex = json.loads(e.read_text()); ex["level1"][0]["answer"] += 1; e.write_text(json.dumps(ex, ensure_ascii=False, indent=2))
 code, out = run(t, "reviews.py", "scope", LESSON, "--exercises")
-expect("an answer changed: full science review of the exercises, pedagogy judges the diff", "science: full" in out and "pedagogy: delta" in out and "answer" in out, out)
+expect("an answer changed: science and pedagogy review the diff (delta, teacher 2026-11-16)", "science: delta" in out and "pedagogy: delta" in out and "answer" in out, out)
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("... and the lesson's reviewers see no change", "science: delta (0 changed" in out and "pedagogy: delta (0 changed" in out, out)
 e.write_text(json.dumps(json.loads((SRC / "content/fi/FY3" / LESSON / "exercises/exercises.json").read_text()), ensure_ascii=False, indent=2))
 p.write_text(p.read_text().replace("0{,}37", "0{,}38", 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("a number in a formula changed: full science review, pedagogy delta", "science: full" in out and "pedagogy: delta" in out and "number, formula" in out, out)
+expect("a number in a formula changed: science and pedagogy delta (teacher 2026-11-16)", "science: delta" in out and "pedagogy: delta" in out and "number, formula" in out and "categories=numbers" in out, out)
 p.write_text(p.read_text().replace("0{,}38", "0{,}37", 1)); s_ = t / "lessons/FY3" / LESSON / "sim.js"; s_.write_text(s_.read_text() + "\n// yksi rivi\n")
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("a comment line in sim.js: no review for any of the three, it is not content", "science: none" in out and "pedagogy: none" in out and "visual: none" in out and "comments" in out, out)
@@ -216,7 +216,7 @@ d = json.loads(i.read_text())
 exp = next(a for a in d["activities"] if a["type"] == "experiment"); k = next(iter(exp["initial"])); exp["initial"][k] = exp["initial"][k] + 1 if isinstance(exp["initial"][k], (int, float)) else exp["initial"][k]
 i.write_text(json.dumps(d, ensure_ascii=False, indent=2))
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("an experiment's initial value changed: full science review", "science: full" in out, out)
+expect("an experiment's initial value changed: the science reviewer looks (numbers: delta, teacher 2026-11-16)", "science: delta" in out and "numbers" in out, out)
 # 6. packets: what each role receives
 t = project(); git(t, "init", "-q"); git(t, "config", "user.email", "t@t"); git(t, "config", "user.name", "t"); git(t, "add", "."); git(t, "commit", "-qm", "v1")
 code, out = run(t, "review_packet.py", LESSON, "--role", "science"); ps = (t / "content/fi/FY3" / LESSON / "review/packet-science.md").read_text()
@@ -273,7 +273,7 @@ code, out = run(t, "reviews.py", "verify")
 expect("verify re-derives both carries from history", code == 0 and "ERROR" not in out, out)
 (A.parent / "lesson-answers.py").write_text((A.parent / "lesson-answers.py").read_text().replace("2.5 * 4.0", "2.5 * 4.1"))
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("a number changed on the way: not a split, the science reviewer looks", "science: full" in out and "answers" in out, out)
+expect("a number changed on the way: not a split, the science reviewer looks", "science: delta" in out and "answers" in out, out)
 rows = (L / "review/carry.tsv").read_text().splitlines()
 (L / "review/carry.tsv").write_text(rows[0] + "\n" + "\n".join("\t".join(r.split("\t")[:3] + [h(t)] + r.split("\t")[4:]) for r in rows[1:]) + "\n")   # forged
 code, out = run(t, "reviews.py", "verify")
@@ -365,7 +365,7 @@ code, out = run(t, "reviews.py", "scope", LESSON)
 expect("a formula re-set without a change of meaning: science and pedagogy none, visual delta", "science: none" in out and "pedagogy: none" in out and "visual: delta" in out and "typography" in out, out)
 p.write_text(src_md.replace(line, re.sub(r"(\$[^$]*?)(\d)", lambda m: m.group(1) + str((int(m.group(2)) + 1) % 10), line, count=1), 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
-expect("... but a changed number in a formula is not typography: science full", "science: full" in out and "typography" not in out, out)
+expect("... but a changed number in a formula is not typography: science delta", "science: delta" in out and "typography" not in out and "numbers" in out, out)
 p.write_text(src_md.replace(line, line + " Lisäsana.", 1))
 code, out = run(t, "reviews.py", "scope", LESSON)
 expect("... and a sentence added outside the maths is not typography", "typography" not in out and "science: none" not in out, out)
@@ -406,11 +406,11 @@ expect("a chain split into rows, nothing else: science and pedagogy none, visual
 for what, new_text in (("a number", ROWS.replace("3{,}0", "3{,}1")), ("a sign", ROWS.replace("\\cdot", "+")), ("a unit", ROWS.replace("m/s}^2", "m/s}^3")),
                        ("the order", "$F = m a$\n$= 3{,}0\\,\\text{m/s}^2 \\cdot 2{,}0\\,\\text{kg}$\n\n$= 6{,}0\\,\\text{N}$")):
     out = reflow(new_text)
-    expect(f"... but a changed {what} in the rows is not reflow: science is not none", "science: full" in out and "pedagogy: delta" in out, out)
+    expect(f"... but a changed {what} in the rows is not reflow: science is not none", "science: delta" in out and "pedagogy: delta" in out and "numbers" in out, out)
 out = reflow(ROWS + " Lisäsana.")
 expect("... a word added next to the re-broken chain is reviewed as usual: science is not none", "science: none" not in out, out)
 out = reflow(ROWS.replace("6{,}0", "6{,}1"))
-expect("... a number changed while the chain is also re-broken: science full", "science: full" in out, out)
+expect("... a number changed while the chain is also re-broken: science delta, not none", "science: delta" in out and "numbers" in out, out)
 p.write_text(src_md); code, out = run(t, "reviews.py", "carry", LESSON)
 expect("no carry is written when nothing changed", "carried over" not in out, out)
 reflow(ROWS); code, out = run(t, "reviews.py", "carry", LESSON)
@@ -439,7 +439,7 @@ expect("an inline formula lifted into an aligned display formula (fy2-3): scienc
 for what, new_text in (("a number", AL.replace("4500", "4501")), ("a sign", AL.replace("\\cdot", "+")), ("a unit", AL.replace("kWh} \\\\", "Wh} \\\\")),
                        ("the order", AL.replace("1500 \\cdot 3{,}0", "3{,}0 \\cdot 1500"))):
     out = lift(new_text)
-    expect(f"... but a changed {what} in the aligned rows is not reflow: science full", "science: full" in out and "pedagogy: delta" in out, out)
+    expect(f"... but a changed {what} in the aligned rows is not reflow: science delta", "science: delta" in out and "pedagogy: delta" in out and "numbers" in out, out)
 out = lift(AL.replace("ja hinnaksi", "ja lisäksi hinnaksi"))
 expect("... a word added next to the lifted formula is reviewed as usual", "science: none" not in out, out)
 p.write_text(src_md)
@@ -604,9 +604,9 @@ put(entries=(), sol="", ans="", edit=rewrite); S.write_text(ORIG[S].replace(sol5
 out = ex_scope()
 expect("an exercise rewritten as a whole under its own id: a replacement, delta", out.count(": delta") == 3 and "categories=added-exercise" in out, out)
 put(edit=lambda ex: ex["level1"][0].update(text=ex["level1"][0]["text"].replace("a", "e", 1))); out = ex_scope()
-expect("one added AND one character of another exercise changed: as before (full science review)", "science: full" in out and "added-exercise" not in out, out)
+expect("one added AND one character of another exercise changed: as before (not added-exercise; pedagogy full)", "pedagogy: full" in out and "added-exercise" not in out, out)
 put(sol=SOL, ans=f'a["{LESSON}-L2-90"] = 45 - 20\na["{LESSON}-L1-01"] = -1\n'); out = ex_scope()
-expect("one added and a surviving exercise's answer changed in answers.py: as before", "science: full" in out and "added-exercise" not in out, out)
+expect("one added and a surviving exercise's answer changed in answers.py: as before", "answers" in out and "added-exercise" not in out, out)
 VAR = ('\n\nFIGURES = {', '\n\ndef few_points():\n    f = Fig("fy33-few", 330, "Kolme mittauspistettä.")\n    return f.svg()\n\n\nFIGURES = {"few-points": few_points, ')
 put(entries=(dict(NEW, figure=f"{LESSON}/few-points"),), fig=VAR); out = ex_scope()
 expect("an added exercise that shows a new figure variant: delta for all three", out.count(": delta") == 3 and "categories=added-exercise" in out, out)
@@ -630,11 +630,60 @@ expect("an added exercise passed and then fixed: measured from the earlier PASS 
 put(edit=lambda ex: ex["level1"][0].update(text=ex["level1"][0]["text"].replace("a", "e", 1)))
 for n in ("science", "pedagogy", "visual"): scoped(n)
 code, out = run(t, "reviews.py", "verify")
-expect("verify rejects a delta PASS when another exercise changed too", code == 1 and "science's delta PASS covers changes that need its full review" in out, out[-600:])
+expect("verify rejects a delta PASS when another exercise changed too", code == 1 and "pedagogy's delta PASS covers changes that need its full review" in out, out[-600:])
 put()
 for n in ("science", "pedagogy", "visual"): scoped(n, frm="0" * 16)
 code, out = run(t, "reviews.py", "verify")
 expect("verify rejects a scope line whose base does not hold the hash it names", code == 1 and "does not hold hash" in out, out[-600:])
+# 8c. the marker "(esimerkkiaineisto)" taken out of table captions (teacher 2026-11-15): all three reviewers carry over; any
+# other change in the same file, a changed caption word included, is reviewed as usual
+t = project(); X = t / "content/fi/FY3" / LESSON / "exercises"; E = X / "exercises.json"
+E.write_text(re.sub(r'("caption": ")([^"]*)(")', r'\1\2 (esimerkkiaineisto)\3', E.read_text()))   # the passed version has the marker, whatever the real content has now
+init_git(t)
+for n in ("science", "pedagogy", "visual"): report(t, n, part="exercises")
+git(t, "add", "."); git(t, "commit", "-qm", "exercise reviews")
+E0 = E.read_text(); LAB = " (esimerkkiaineisto)"
+expect("the passed exercise set has captions with the marker", E0.count(LAB + '"') >= 2, E0.count(LAB))
+def cap(text): E.write_text(text); return run(t, "reviews.py", "scope", LESSON, "--exercises")[1]
+out = cap(E0.replace(LAB + '"', '"'))
+expect("the marker taken out of every caption: none for all three, category caption-label", out.count(": none") == 3 and "caption-label" in out, out)
+out = cap(E0.replace(LAB + '"', '"', 1))
+expect("... also out of one caption only", out.count(": none") == 3 and "caption-label" in out, out)
+out = cap(E0.replace("Lämpömittarin A kalibrointi (esimerkkiaineisto)", "Lämpömittarin A kalibrointi"))
+expect("... and the marker of a caption whose other words are kept", out.count(": none") == 3, out)
+out = cap(E0.replace(LAB + '"', '"').replace("Lämpömittarin A kalibrointi", "Lämpömittarin B kalibrointi"))
+expect("... but a changed caption word as well is reviewed as usual (not none)", "science: none" not in out and "caption-label" in out, out)
+first = json.loads(E0)["level1"][0]["text"]
+out = cap(E0.replace(LAB + '"', '"').replace(first[:12], first[:11] + "x", 1))
+expect("... or another character of the file (a task text): reviewed as usual", "science: none" not in out, out)
+out = cap(E0.replace('"unit": "K"', '"unit": "C"', 1) if '"unit": "K"' in E0 else E0.replace('"answer": ', '"answer": 1', 1))
+expect("... an answer changed alone has no caption-label", "caption-label" not in out and "science: none" not in out, out)
+_cj = lambda c: json.dumps({"data": {"caption": c}}, indent=1)
+expect("... a label added to a caption, or a word changed beside it, is not the category", rv.caption_removed(_cj("A"), _cj("A (esimerkkiaineisto)")) == _cj("A") and rv.caption_removed(_cj("A (esimerkkiaineisto)"), _cj("B")) == _cj("A (esimerkkiaineisto)") and rv.caption_removed(_cj("A (esimerkkiaineisto)"), _cj("A")) == _cj("A"))
+out = cap(E0.replace("(esimerkkiaineisto)", "(luonnos)"))
+expect("... another parenthesis in its place is a changed caption, not none", "science: none" not in out, out)
+cap(E0.replace(LAB + '"', '"')); code, out = run(t, "reviews.py", "carry", LESSON, "--exercises")
+expect("carry records caption-label for all three reviewers", sum(l.endswith("(the marker \"(esimerkkiaineisto)\" taken out of table captions, nothing else (teacher 2026-11-15))") for l in out.splitlines()) == 3, out)
+code, out = run(t, "reviews.py", "verify")
+expect("verify re-derives the caption-label carry in CI", code == 0 and "ERROR" not in out, out[-400:])
+cap(E0.replace(LAB + '"', '"').replace("Lämpömittarin A kalibrointi", "Lämpömittarin B kalibrointi"))
+code, out = run(t, "reviews.py", "verify")
+expect("... and the carry no longer holds once the same file also changed a caption word", "exercises: draft" in out, out[-400:])
+expect("the marker is a caption's alone: a text mention is no caption", rv.caption_free(json.dumps({"text": "Taulukko (esimerkkiaineisto)."})) == json.dumps({"text": "Taulukko (esimerkkiaineisto)."}, indent=1))
+for old, new in (("Taulukko (esimerkkiaineisto)", "Taulukko"), ("Table (example data)", "Table"), ("Table (example data set)", "Table"),
+                 ("Energiat (esimerkkiaineisto, NNDC NuDat 3)", "Energiat (NNDC NuDat 3)"), ("A (esimerkkiaineisto) B", "A B")):
+    expect(f"caption_free: {old!r} → {new!r}", json.loads(rv.caption_free(json.dumps({"data": [{"caption": old}]})))["data"][0]["caption"] == new)
+expect("caption-label: nobody needs to look", rv.RULES["caption-label"] == ("none", "none", "none"))
+# an item (koe, sovella, unit): its view leaves the marker out, so a carry-item over a pure marker removal is accepted
+class _Src:
+    def __init__(self, txt): self.txt = txt
+    def read(self, rel, binary=False): return self.txt if rel.endswith("tasks.json") else None
+_T = json.dumps({"tasks": [{"data": {"caption": "Mittaukset (esimerkkiaineisto)"}}]}); _T2 = json.dumps({"tasks": [{"data": {"caption": "Mittaukset"}}]})
+_T3 = json.dumps({"tasks": [{"data": {"caption": "Muut mittaukset"}}]})
+import practice as _pr
+_fk, _fl = None, None
+expect("item_view: a sovella set's tasks.json with and without the marker has one view; another caption has another",
+       rv.item_view("sovella", "FY3", "fi", _Src(_T)) == rv.item_view("sovella", "FY3", "fi", _Src(_T2)) != rv.item_view("sovella", "FY3", "fi", _Src(_T3)))
 # 9. a translated exercise set (teacher 2026-11-12): numerically equivalent to the Finnish set, whose science PASS is
 # current → the science review carries over; pedagogy and visual review the language; anything numeric differs → as before
 _p = []
@@ -686,6 +735,53 @@ expect("(c) the fi set changed after the carry (fi hash new, fi science stale): 
        "exercises: draft" in out and "science=missing" in out and "translation-of-passed" not in en("scope"), out)
 code, out = run(t, "reviews.py", "verify")
 expect("... verify: no error, the en exercise set is simply not reviewed", code == 0 and "ERROR" not in out, out[-600:])
+
+# 8n. an item's reflow carry (work queue 5f, teacher 2026-11-15): a unit's (or a Sovella set's or an example exam's)
+# calculation chain re-broken into an aligned display formula carries its science and pedagogy PASS, never the visual one;
+# a changed number, word or sign carries nothing, and verify re-derives the rows
+UNIT = "fy9-kokeellisuus"
+def unit_project():
+    tmp = pathlib.Path(tempfile.mkdtemp())
+    skip = lambda d, names: [n for n in names if n in ("__pycache__", "review")]
+    for d in ("scripts", "lang", "templates", "docs/fy9", f"content/fi/units/{UNIT}", f"lessons/units/{UNIT}"):
+        if (SRC / d).is_dir(): shutil.copytree(SRC / d, tmp / d, ignore=skip)
+    for f in ("local-courses.json", "curriculum.json", "glossary.json", "competencies.json", "CLAUDE.md", "NOTES.md",
+              "docs/teacher-figures.tsv", "docs/presentation-only.tsv"):
+        if (SRC / f).is_file(): (tmp / f).parent.mkdir(parents=True, exist_ok=True); shutil.copy(SRC / f, tmp / f)
+    return tmp
+t = unit_project(); init_git(t); U = t / "content/fi/units" / UNIT; um = U / "unit.md"
+CH3 = "$v = s : t = 12{,}0\\,\\text{m} : 4{,}0\\,\\text{s} = 3{,}0\\,\\text{m/s}$"
+src3 = um.read_text().rstrip("\n") + "\n\nEsimerkiksi " + CH3 + ", joten nopeus on pieni.\n"; um.write_text(src3)
+uh = lambda: run(t, "units.py", "hash", UNIT)[1].strip()
+def ureport(name, verdict="PASS"):
+    (U / "review").mkdir(exist_ok=True); (U / "review" / f"{name}.md").write_text(f"VERDICT: {verdict}\nCONTENT-HASH: {uh()}\n\n## Blocking\nnone\n")
+for n in ("science", "pedagogy", "visual"): ureport(n)
+git(t, "add", "."); git(t, "commit", "-qm", "unit reviewed")
+AL3 = "Esimerkiksi $$\n\\begin{aligned}\nv &= s : t \\\\\n&= 12{,}0\\,\\text{m} : 4{,}0\\,\\text{s} \\\\\n&= 3{,}0\\,\\text{m/s}\n\\end{aligned}\n$$, joten nopeus on pieni."
+def ulift(new_text):
+    um.write_text(src3.replace("Esimerkiksi " + CH3 + ", joten nopeus on pieni.", new_text, 1)); (U / "review/carry.tsv").unlink(missing_ok=True)
+    return run(t, "reviews.py", "carry-item", "unit", UNIT)[1]
+out = ulift(AL3)
+expect("a unit's inline chain lifted into an aligned display formula: science and pedagogy carried over (reflow), visual needed",
+       "science: carried over" in out and "pedagogy: carried over" in out and "visual: calculation chains re-broken into rows: delta review needed" in out
+       and "reflow" in (U / "review/carry.tsv").read_text() and "draft" in out, out)
+ureport("visual"); out = run(t, "reviews.py", "carry-item", "unit", UNIT)[1]
+expect("... and with the visual reviewer's PASS of the new hash the unit is reviewed", out.rstrip().endswith("reviewed"), out)
+git(t, "add", "."); git(t, "commit", "-qm", "reflow carried, visual passed")
+code, out = run(t, "reviews.py", "verify")
+expect("... verify re-derives the unit's reflow carry", not re.search(rf"ERROR \S*{UNIT}", out), out[-600:])
+for what, new_text in (("a number", AL3.replace("4{,}0", "4{,}1")), ("a sign", AL3.replace("s : t", "s \\cdot t")),
+                       ("a word", AL3.replace("nopeus on pieni", "nopeus on melko pieni"))):
+    git(t, "checkout", "-q", "HEAD~1", "--", "content"); (U / "review/visual.md").write_text((U / "review/visual.md").read_text())
+    out = ulift(new_text)
+    expect(f"... but a changed {what} with the re-break carries nothing", "science: carried over" not in out and "review needed" in out, out)
+git(t, "checkout", "-q", "HEAD", "--", "content")
+rows = (U / "review/carry.tsv").read_text().splitlines()
+(U / "review/carry.tsv").write_text("\n".join(rows + ["\t".join([rows[-1].split("\t")[0], "visual"] + rows[-1].split("\t")[2:])]) + "\n")   # forged
+(U / "review/visual.md").write_text((U / "review/visual.md").read_text().replace(uh(), rows[-1].split("\t")[2]))   # the visual PASS of the version before the re-break
+code, out = run(t, "reviews.py", "verify")
+expect("... and verify rejects a visual carry row over a reflow", code == 1 and "does not carry the visual review" in out, out[-600:])
+
 expect("real project untouched", snapshot() == REAL)
 print("\n" + ("all review tests passed" if not failures else f"{len(failures)} FAILED: " + ", ".join(failures)))
 sys.exit(1 if failures else 0)

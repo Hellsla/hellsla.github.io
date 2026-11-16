@@ -59,7 +59,7 @@
         },
         {
           "text": "All three in series, because then the current passes through every resistor.",
-          "feedback": "In a series connection the resistances add up: $100\\,\\Omega + 100\\,\\Omega + 100\\,\\Omega = 300\\,\\Omega$. That is the largest of the connections, not the smallest."
+          "feedback": "In a series connection the resistances add up: $$100\\,\\Omega + 100\\,\\Omega + 100\\,\\Omega = 300\\,\\Omega$$. That is the largest of the connections, not the smallest."
         },
         {
           "text": "Two in parallel and the third in series with them, because the connection has both ways.",
@@ -157,7 +157,7 @@
       "unit": "Ω",
       "tolerance": 0.02,
       "data": {
-        "caption": "Resistances measured with a multimeter (example data)",
+        "caption": "Resistances measured with a multimeter",
         "columns": [
           "Item measured",
           "$R\\,(\\Omega)$"
@@ -199,7 +199,7 @@
       "unit": "Ω",
       "tolerance": 0.03,
       "data": {
-        "caption": "Meter readings (example data)",
+        "caption": "Meter readings",
         "columns": [
           "Quantity measured",
           "Reading"
@@ -232,7 +232,7 @@
       "unit": "Ω",
       "tolerance": 0.03,
       "data": {
-        "caption": "Current of the parallel connection as a function of voltage (example data)",
+        "caption": "Current of the parallel connection as a function of voltage",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{mA})$"
@@ -340,7 +340,7 @@
       "unit": "mA",
       "tolerance": 0.03,
       "data": {
-        "caption": "Readings of the ammeters (example data)",
+        "caption": "Readings of the ammeters",
         "columns": [
           "Point of measurement",
           "$I\\,(\\text{mA})$"

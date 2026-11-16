@@ -139,7 +139,7 @@
       "unit": "eV",
       "tolerance": 0.03,
       "data": {
-        "caption": "Balmer lines of hydrogen (example data)",
+        "caption": "Balmer lines of hydrogen",
         "columns": [
           "$n$",
           "$\\lambda\\,(\\text{nm})$"
@@ -179,7 +179,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Photons sent to the atom (example data)",
+        "caption": "Photons sent to the atom",
         "columns": [
           "Photon",
           "$\\lambda\\,(\\text{nm})$"
@@ -249,6 +249,18 @@
           "feedback": "Here the ratio of the energies of the initial levels, $0.38\\,\\text{eV} : 0.85\\,\\text{eV}$, has been used. However, the photon carries the difference of the levels $E_\\text{u} - E_\\text{l}$, not the energy of one level, and the wavelength is inversely proportional to this difference."
         }
       ]
+    },
+    {
+      "id": "fy8-3-L2-09",
+      "level": 2,
+      "text": "Source: <a href=\"https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable2.htm\" target=\"_blank\" rel=\"noopener\">NIST – Strong Lines of Hydrogen (H)</a> (accessed 16 November 2026)\n\nThe table lists the strongest spectral lines of hydrogen. The wavelengths are given in ångströms ($\\text{Å}$), and $1\\,\\text{Å} = 10^{-10}\\,\\text{m} = 0.1\\,\\text{nm}$. For the visible lines the table gives the wavelength in air, and one line may have several values close to each other, of which you may use any. The energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$.\n\na) Choose two visible lines of hydrogen from the table, for example the red and the blue-green one, and convert their wavelengths to nanometres.\n\nb) Calculate the photon energies of these lines in electronvolts with $E = \\tfrac{hc}{\\lambda}$.\n\nc) Calculate from the energies of the levels the energy differences of the transitions $3 \\to 2$ and $4 \\to 2$ in electronvolts.\n\nd) Match the lines you chose to the transitions and explain why the spectrum of hydrogen is a line spectrum.\n\nEnter in the box the energy difference of the transition $3 \\to 2$ from part c) in electronvolts ($h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1.89,
+      "unit": "eV",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -289,7 +301,7 @@
       "unit": "THz",
       "tolerance": 0.02,
       "data": {
-        "caption": "Emission lines of the cloud (example data)",
+        "caption": "Emission lines of the cloud",
         "columns": [
           "Line",
           "$\\lambda\\,(\\text{nm})$"
@@ -323,7 +335,7 @@
       "unit": "nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Emission lines of the gas (example data)",
+        "caption": "Emission lines of the gas",
         "columns": [
           "Line",
           "$\\lambda\\,(\\text{nm})$"

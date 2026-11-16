@@ -39,7 +39,7 @@
             {
               "key": "fbd_forces",
               "points": 1,
-              "detail": "Paino, rinteen tukivoima ja liikekitka. Eteenpäin vievää voimaa ei ole."
+              "detail": "Paino, rinteen tukivoima ja liukukitka. Eteenpäin vievää voimaa ei ole."
             },
             {
               "key": "fbd_directions",
@@ -57,7 +57,7 @@
           "id": "c",
           "kind": "calc",
           "points": 5,
-          "text": "Laske liikekitkakerroin kummallekin voiteelle.",
+          "text": "Laske liukukitkakerroin kummallekin voiteelle.",
           "answer": [
             {
               "name": "A",
@@ -264,7 +264,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "Liike-energia jarrun alussa $E_\\text{k} \\approx 13{,}98\\,\\text{kJ} - 5{,}23\\,\\text{kJ} \\approx 8{,}74\\,\\text{kJ}$"
+              "detail": "Liike-energia jarrun alussa $$\\begin{aligned} &E_\\text{k} \\approx 13{,}98\\,\\text{kJ} - 5{,}23\\,\\text{kJ} \\\\ &\\approx 8{,}74\\,\\text{kJ} \\end{aligned}$$"
             },
             {
               "key": "units_precision",

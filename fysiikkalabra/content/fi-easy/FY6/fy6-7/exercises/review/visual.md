@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c394b79ded28d3d9
-SCOPE: delta added-exercise from 0a3ba204ab582e2e base 8f23aa7ae3bd
+CONTENT-HASH: 0b42b5134a5c6175
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy6-7-L1-10 Sijoitus — "E" stands alone on its first row and the second chain starts with a bare "3,0 kWh · 3,6 MJ/kWh" — start it "E = 3,0 kWh · 3,6 MJ/kWh = 10,8 MJ".
-- [Minor] fy6-7/dryer y axis — ticks "2" beside "2,4", "1,6" — write "2,0". The 0,2 kW level is at half a gridline, so "luetaan ruudukkoviivoilta" is slightly loose.
-- [Minor] fy6-7-L2-08 solution — ranges "0-0,5 h", "1,5-2,0 h" use a hyphen — use an en dash.
+- [Minor] fy6-7 all languages: the data-table caption wraps in a narrow table box; widen the table.
+- [Minor] fy6-7 solution: the Kaava stage mixes b) and c) in one paragraph and ends 'K = aE_n = naE' without a full stop; trailing comma/full stop varies between formula boxes (L3-02: comma in fi, full stop in fi-easy).
 
 ## Checked
-- fy6-7-L1-10 (task 7-10): open-exercises-1280-10, solution rows, Vastaus, Järkevyys.
-- fy6-7-L2-08 (task 7-18): open-exercises-L2-1280-10 and -11: task, dryer figure (axes, units, labels), solution rows, Vastaus, Järkevyys. The "jäähdytys" label now clears the t = 1,5 h line (earlier Major fixed).
-- Set still reads as one; nothing clipped.
+- Proof sheets fi-easy-fy6-7-exercises-* (all, every numbered formula, opened side by side with the other language).
+- New task: judged from its source text and solution text, and from the proof sheets; the L2 capture not opened (same template as the fi set I opened).
+- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
+- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 4b72cccf4ef872c5
-SCOPE: delta added-exercise from 5161df0334c5195f base 8f23aa7ae3bd
+CONTENT-HASH: 9c608f6808629688
 
 ## Blocking
 
 ## Polish
-- content/fi/FY6/fy6-7/exercises/solutions.md (fy6-7-L1-10, Vastaus) — "Vastaus kelpaa, kun se on noin ±4 % sisällä" is page mechanics, not part of a model solution; drop it.
-- content/fi/FY6/fy6-7/exercises/solutions.md (fy6-7-L2-08, Vastaus) — "arvot luetaan 0,4 kW:n ja 0,25 h:n ruudukkoviivoilta" is not quite true for the cooling stage: 0,2 kW lies halfway between gridlines. Say so; the result is insensitive to it.
+- solutions.md:260 (fy6-7-L2-09) — "tilavuusluokka 15–17,9 ft³" is a filter value that the task does not give and nobody re-checked. It is harmless, but it can be dropped, since the task only says "suodattimet Type ja Capacity".
+- solutions.md (fy6-7-L2-09, Kohta d) — "Jääkaapin kompressori ei käy koko ajan" fits these models. An inverter compressor runs most of the time at reduced speed, so "yleensä" or "tavallinen kompressori" would keep the claim exact without changing the point (C, not blocking).
 
 ## Checked
-- Hash 4b72cccf4ef872c5 at start and end; delta round 2: only fy6-7-L1-10 and fy6-7-L2-08 judged.
-- L1-10: E = Pt at constant power; 1,5 kW · 2,0 h = 3,0 kWh = 10,8 MJ with the exact MAFY factor 1 kWh = 3,6 MJ; rounded 11 MJ is 1,9 % off, inside 4 %. answers.py agrees.
-- L2-08 figure: 2,4 kW (0–0,5 h), 1,2 kW (0,5–1,5 h), 0,2 kW (1,5–2,0 h); alt text gives the same, no energy or cost.
-- L2-08 recomputed: E = 1,2 + 1,2 + 0,10 = 2,5 kWh; K = 0,18 €/kWh · 2,5 kWh = 0,45 €; answers.py agrees; tolerance 3 % fits; 2,5 kWh per programme is realistic.
-- Both solutions: principle with its reason, symbolic E and K = aE before numbers, conversions, rounding reason, real checks; notation as in the lesson.
+- One independent script recomputed all 22 numeric answers and compared them with exercises.json: all are inside tolerance. L2-07 as a least-squares fit gives 299,1 kWh, inside 5 % of 299,3.
+- L2-09 data matches the pair read on 15 Nov 2026: LG LT18S1100* 344 kWh/a and LT18S1200* 440 kWh/a, both Top Freezer, 17,5 ft³. The task says it is a standardised test result, not a home measurement.
+- L2-09 a) 96 kWh, 440/344 = 1,279 → 28 %. b) P_ka = E/t: 39,27 W and 50,23 W with t = 8760 h, solved symbolically first. c) K = naE: 688 € and 880 €, difference 192 €. The rounding to 690/880/190 € is justified by 0,20 €/kWh.
+- L2-09 d): the duty-cycle mechanism (thermostat, compressor power above the mean, P_ka ≈ kP_käy) is correct. The 100 W figure is marked as a general order of magnitude, not as source data. k ≈ 0,39 is consistent.
+- 1 ft³ ≈ 28,3 l is correct (28,32 l), so 17,5 ft³ ≈ 495 l. The answer 39,269 W with tolerance 0,02 suits three significant figures.
+- Nothing in the solution is attributed to the source beyond the table values and the field names (Type, Capacity, Annual Energy Use).
+- Reflowed chains (L2-08 and the rest): same numbers, signs and units in the same order.
+- The notation matches the brief (E = Pt, K = aE, kWh, snt → €). Everything is within FY6 scope (household energy).
+- Hash read at start and end: unchanged.

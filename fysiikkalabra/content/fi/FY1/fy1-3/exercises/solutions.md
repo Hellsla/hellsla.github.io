@@ -12,7 +12,7 @@
 **Annettu:** oikea arvo (vertailupituus) $x_\text{oikea} = 20{,}0\,\text{cm}$, mittaustulos $x = 20{,}3\,\text{cm}$
 **Kysytty:** mittausvirhe $x - x_\text{oikea}$ etumerkkeineen yksikössä $\text{cm}$
 **Periaate:** Mittausvirhe on mittaustuloksen ja oikean arvon erotus. Etumerkki kertoo suunnan: plus tarkoittaa, että tulos on liian suuri, ja miinus, että se on liian pieni.
-**Kaava:** Mittausvirhe on tuloksen ja oikean arvon erotus: $\text{mittausvirhe} = x - x_\text{oikea}$
+**Kaava:** Mittausvirhe on tuloksen ja oikean arvon erotus: $$\begin{aligned} &\text{mittausvirhe} \\ &= x - x_\text{oikea} \end{aligned}$$
 **Muunnokset:** Molemmat pituudet ovat senttimetreinä, joten muunnoksia ei tarvita.
 **Sijoitus:** $x - x_\text{oikea} = 20{,}3\,\text{cm} - 20{,}0\,\text{cm} = +0{,}3\,\text{cm}$
 **Vastaus:** $+0{,}3\,\text{cm}$ eli tulos on liian suuri. Erotus tunnetaan vain yhden desimaalin tarkkuudella, koska molemmat pituudet on annettu yhdellä desimaalilla.
@@ -65,7 +65,7 @@
 **Periaate:** Sauva on koko ajan yhtä pitkä, ja kulunut alkupää lisää jokaiseen lukemaan saman määrän: tämä on systemaattinen virhe. Lukemat vaihtelevat hieman satunnaisvirheen takia, joten virhe arvioidaan lukemien keskiarvon ja oikean arvon erotuksena.
 **Kaava:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$ ja $\Delta L_\text{sys} = \bar{L} - L_0$
 **Muunnokset:** Tulos tulee metreinä. Koska $1\,\text{m} = 1000\,\text{mm}$, metrin paikalle kirjoitetaan $1000\,\text{mm}$.
-**Sijoitus:** Summa on $1{,}012\,\text{m} + 1{,}009\,\text{m} + 1{,}011\,\text{m} = 3{,}032\,\text{m}$, joten $\bar{L} = \dfrac{3{,}032\,\text{m}}{3} = 1{,}01067\,\text{m}$ ja $\Delta L_\text{sys} = 1{,}01067\,\text{m} - 1{,}000\,\text{m} = 0{,}01067\,\text{m}$ eli $\Delta L_\text{sys} = 0{,}01067 \cdot 1000\,\text{mm} = 10{,}67\,\text{mm}$
+**Sijoitus:** Summa on $$\begin{aligned} &1{,}012\,\text{m} + 1{,}009\,\text{m} \\ &+ 1{,}011\,\text{m} \\ &= 3{,}032\,\text{m} \end{aligned}$$, joten $\bar{L} = \dfrac{3{,}032\,\text{m}}{3} = 1{,}01067\,\text{m}$ ja $\Delta L_\text{sys} = 1{,}01067\,\text{m} - 1{,}000\,\text{m} = 0{,}01067\,\text{m}$ eli $\Delta L_\text{sys} = 0{,}01067 \cdot 1000\,\text{mm} = 10{,}67\,\text{mm}$
 **Vastaus:** $10{,}7\,\text{mm}$ (laskimen arvo $10{,}67\,\text{mm}$). Lukemien vaihteluvälin puolikas on $1{,}5\,\text{mm}$; sen ensimmäinen numero on 1, joten se ilmoitetaan kahdella numerolla ja tulos millimetrin kymmenesosina: $10{,}7\,\text{mm} \pm 1{,}5\,\text{mm}$.
 **Järkevyys:** Jokainen lukema on $9\,\text{mm}$–$12\,\text{mm}$ liian suuri, joten tulos $10{,}7\,\text{mm}$ on näiden välissä. Nauha näyttää noin $1\,\%$ liikaa, ja virheen etumerkki on positiivinen, koska lukemat ylittävät oikean arvon.
 
@@ -75,7 +75,7 @@
 **Periaate:** Keskiarvon voi laskea vain samassa yksikössä olevista luvuista, koska eri yksiköissä olevia lukuja ei voi laskea yhteen. Muunnetaan siksi kaikki tulokset ensin senttimetreiksi.
 **Kaava:** $\bar{L} = \dfrac{L_1 + L_2 + L_3}{3}$
 **Muunnokset:** Metrin paikalle kirjoitetaan $100\,\text{cm}$ ja millimetrin paikalle $0{,}1\,\text{cm}$: $0{,}125 \cdot 100\,\text{cm} = 12{,}5\,\text{cm}$ ja $123 \cdot 0{,}1\,\text{cm} = 12{,}3\,\text{cm}$.
-**Sijoitus:** Summa on $12{,}4\,\text{cm} + 12{,}5\,\text{cm} + 12{,}3\,\text{cm} = 37{,}2\,\text{cm}$, joten $\bar{L} = \dfrac{37{,}2\,\text{cm}}{3} = 12{,}4\,\text{cm}$
+**Sijoitus:** Summa on $$\begin{aligned} &12{,}4\,\text{cm} + 12{,}5\,\text{cm} \\ &+ 12{,}3\,\text{cm} \\ &= 37{,}2\,\text{cm} \end{aligned}$$, joten $\bar{L} = \dfrac{37{,}2\,\text{cm}}{3} = 12{,}4\,\text{cm}$
 **Vastaus:** $12{,}4\,\text{cm}$, kolme merkitsevää numeroa kuten mittaustuloksissa.
 **Järkevyys:** Keskiarvo on pienimmän $12{,}3\,\text{cm}$ ja suurimman $12{,}5\,\text{cm}$ tuloksen välissä. Jos lukuja ei olisi muunnettu, summa $12{,}4 + 0{,}125 + 123$ antaisi järjettömän keskiarvon $45{,}2$, joten muunnos on välttämätön.
 
@@ -115,7 +115,7 @@
 **Periaate:** Lukemat ovat tiiviisti toistensa lähellä mutta kaikki selvästi oikean arvon yläpuolella. Keskiarvo pienentää satunnaisvirhettä, joten sen ero oikeaan arvoon kuvaa jäljelle jäänyttä systemaattista virhettä.
 **Kaava:** $\bar{x} = \dfrac{x_1 + \dots + x_5}{n}$ ja $\Delta x_\text{sys} = \bar{x} - x_\text{oikea}$
 **Muunnokset:** Kaikki pituudet ovat senttimetreinä, joten muunnoksia ei tarvita.
-**Sijoitus:** Summa on $8{,}04\,\text{cm} + 8{,}07\,\text{cm} + 8{,}05\,\text{cm} + 8{,}09\,\text{cm} + 8{,}05\,\text{cm} = 40{,}30\,\text{cm}$, joten $\bar{x} = \dfrac{40{,}30\,\text{cm}}{5} = 8{,}06\,\text{cm}$ ja $\Delta x_\text{sys} = 8{,}06\,\text{cm} - 8{,}00\,\text{cm} = 0{,}06\,\text{cm}$
+**Sijoitus:** Summa on $$\begin{aligned} &8{,}04\,\text{cm} + 8{,}07\,\text{cm} + 8{,}05\,\text{cm} \\ &+ 8{,}09\,\text{cm} + 8{,}05\,\text{cm} \\ &= 40{,}30\,\text{cm} \end{aligned}$$, joten $\bar{x} = \dfrac{40{,}30\,\text{cm}}{5} = 8{,}06\,\text{cm}$ ja $\Delta x_\text{sys} = 8{,}06\,\text{cm} - 8{,}00\,\text{cm} = 0{,}06\,\text{cm}$
 **Vastaus:** $0{,}06\,\text{cm}$, yksi merkitsevä numero; erotus on kahden desimaalin tarkkuudella.
 **Järkevyys:** Satunnaisvirheen arvio $\dfrac{8{,}09\,\text{cm} - 8{,}04\,\text{cm}}{2} = 0{,}025\,\text{cm} \approx 0{,}03\,\text{cm}$ on noin puolet systemaattisesta virheestä. Lukemat ovat silti kaikki oikean arvon yläpuolella, joten niissä on systemaattinen virhe, esimerkiksi työntömitan väärä nollakohta tai lika leukojen välissä. Sen suuruus $0{,}6\,\text{mm}$ on työntömitalle uskottava. Jos kaikista lukemista vähennetään $0{,}06\,\text{cm}$, ne ovat $7{,}98\,\text{cm}$–$8{,}03\,\text{cm}$ eli lähellä oikeaa arvoa.
 
@@ -130,7 +130,7 @@
 **Periaate:** Tulos ilmoitetaan muodossa $\bar{x} \pm \Delta x$. Virhearvio pyöristetään yhteen merkitsevään numeroon (kahteen, jos ensimmäinen numero on 1), ja keskiarvo pyöristetään samaan desimaaliin, koska numerot virhearvion desimaalin jälkeen ovat jo epävarmoja.
 **Kaava:** $\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{n}$ ja $\Delta x = \dfrac{x_\text{max} - x_\text{min}}{2}$
 **Muunnokset:** Kaikki pituudet ovat senttimetreinä, joten muunnoksia ei tarvita.
-**Sijoitus:** Tulosten summa on $5{,}41\,\text{cm} + 5{,}47\,\text{cm} + 5{,}39\,\text{cm} + 5{,}44\,\text{cm} + 5{,}43\,\text{cm} = 27{,}14\,\text{cm}$, joten $\bar{x} = \dfrac{27{,}14\,\text{cm}}{5} = 5{,}428\,\text{cm}$ ja $\Delta x = \dfrac{5{,}47\,\text{cm} - 5{,}39\,\text{cm}}{2} = 0{,}04\,\text{cm}$
+**Sijoitus:** Tulosten summa on $$\begin{aligned} &5{,}41\,\text{cm} + 5{,}47\,\text{cm} + 5{,}39\,\text{cm} \\ &+ 5{,}44\,\text{cm} + 5{,}43\,\text{cm} \\ &= 27{,}14\,\text{cm} \end{aligned}$$, joten $\bar{x} = \dfrac{27{,}14\,\text{cm}}{5} = 5{,}428\,\text{cm}$ ja $\Delta x = \dfrac{5{,}47\,\text{cm} - 5{,}39\,\text{cm}}{2} = 0{,}04\,\text{cm}$
 **Vastaus:** $5{,}43\,\text{cm}$, sillä virhearvio $0{,}04\,\text{cm}$ on yhden numeron luku sadasosien kohdalla (ensimmäinen numero ei ole 1). Tulos on $5{,}43\,\text{cm} \pm 0{,}04\,\text{cm}$.
 **Järkevyys:** Väli $5{,}43\,\text{cm} \pm 0{,}04\,\text{cm}$ eli $5{,}39\,\text{cm}$–$5{,}47\,\text{cm}$ kattaa kaikki viisi tulosta. Tulos $5{,}428\,\text{cm}$ olisi liian tarkka, koska se antaisi ymmärtää, että leveys tunnetaan senttimetrin tuhannesosan tarkkuudella, vaikka virhearvio on senttimetrin sadasosien suuruinen.
 
@@ -180,7 +180,7 @@
 **Periaate:** Selvästi poikkeava tulos tarkistetaan, mutta sitä ei poisteta pelkästään siksi, että se poikkeaa. Se saa jäädä pois vain, jos karkean virheen syy löytyy ja poisjättö perustellaan ja kirjataan. Tässä päiväkirjan merkintä kertoo syyn: kello pysäytettiin myöhässä. Jos syytä ei löydy, tulos pysyy aineistossa ja poikkeama kuvataan epävarmuudessa.
 **Kaava:** $\bar{t} = \dfrac{t_1 + \dots + t_n}{n}$, missä $n = 7$ jäljelle jäävää tulosta
 **Muunnokset:** Ei tarvita: kaikki ajat ovat sekunteina.
-**Sijoitus:** Tulosten summa on $2{,}41\,\text{s} + 2{,}38\,\text{s} + 2{,}44\,\text{s} + 2{,}40\,\text{s} + 2{,}43\,\text{s} + 2{,}39\,\text{s} + 2{,}42\,\text{s} = 16{,}87\,\text{s}$, joten $\bar{t} = \dfrac{16{,}87\,\text{s}}{7} = 2{,}41\,\text{s}$
+**Sijoitus:** Tulosten summa on $$\begin{aligned} &2{,}41\,\text{s} + 2{,}38\,\text{s} + 2{,}44\,\text{s} + 2{,}40\,\text{s} \\ &+ 2{,}43\,\text{s} + 2{,}39\,\text{s} + 2{,}42\,\text{s} \\ &= 16{,}87\,\text{s} \end{aligned}$$, joten $\bar{t} = \dfrac{16{,}87\,\text{s}}{7} = 2{,}41\,\text{s}$
 **Vastaus:** Tuloksen saa jättää pois, koska päiväkirjan merkintä antaa syyn ja poisjättö kirjataan; keskiarvo on $2{,}41\,\text{s}$, kolme merkitsevää numeroa kuten mittauksissa. Vaihteluvälin puolikas on $(2{,}44\,\text{s} - 2{,}38\,\text{s}) : 2 = 0{,}03\,\text{s}$. Jos syytä ei olisi löytynyt, tulos pysyisi aineistossa: keskiarvo olisi $19{,}84\,\text{s} : 8 = 2{,}48\,\text{s}$ ja vaihteluvälin puolikas $(2{,}97\,\text{s} - 2{,}38\,\text{s}) : 2 \approx 0{,}3\,\text{s}$, kymmenkertainen. Tulos olisi $t = 2{,}5\,\text{s} \pm 0{,}3\,\text{s}$, poikkeama mainittaisiin ja mittaus kannattaisi toistaa.
 **Järkevyys:** Poikkeavan tuloksen kanssa keskiarvo siirtyy $0{,}07\,\text{s}$ eli yli kaksi kertaa vaihteluvälin puolikkaan $0{,}03\,\text{s}$ verran. Poisjättö perustuu kirjattuun syyhyn eikä poikkeaman suuruuteen $2{,}97\,\text{s} - 2{,}41\,\text{s} = 0{,}56\,\text{s}$: päiväkirjan merkinnän perusteella tulos on karkea virhe.
 
@@ -190,7 +190,7 @@
 **Periaate:** Kahden tuloksen sopusointua arvioidaan tässä yksinkertaistetusti ilmoitettujen epävarmuusarvioiden väleillä, ei sillä, kuinka monta prosenttia tulokset eroavat. Jos välit $\rho \pm \Delta\rho$ menevät päällekkäin, eroa ei voida osoittaa; jos eivät, ero on suurempi kuin ilmoitetut epävarmuudet selittävät. Epävarmuudet ovat arvioita, eivät varmoja rajoja.
 **Kaava:** rako on tulosten eron ja epävarmuuksien summan erotus: $E = |\rho_\text{A} - \rho_\text{B}| - (\Delta\rho_\text{A} + \Delta\rho_\text{B})$
 **Muunnokset:** Ei tarvita: kaikki arvot ovat yksikössä $\text{g/cm}^3$.
-**Sijoitus:** $E = |2{,}74\,\text{g/cm}^3 - 2{,}60\,\text{g/cm}^3| - (0{,}05\,\text{g/cm}^3 + 0{,}05\,\text{g/cm}^3) = 0{,}14\,\text{g/cm}^3 - 0{,}10\,\text{g/cm}^3 = 0{,}04\,\text{g/cm}^3$
+**Sijoitus:** $$\begin{aligned} E &= |2{,}74\,\text{g/cm}^3 - 2{,}60\,\text{g/cm}^3| \\ &- (0{,}05\,\text{g/cm}^3 + 0{,}05\,\text{g/cm}^3) \\ &= 0{,}14\,\text{g/cm}^3 - 0{,}10\,\text{g/cm}^3 \\ &= 0{,}04\,\text{g/cm}^3 \end{aligned}$$
 **Vastaus:** $0{,}04\,\text{g/cm}^3$, kaksi desimaalia kuten tuloksissa. Oppilaan virhe on arvioida sopusointua prosenttierolla: välit $2{,}69$–$2{,}79\,\text{g/cm}^3$ ja $2{,}55$–$2{,}65\,\text{g/cm}^3$ eivät mene päällekkäin, vaan niiden väliin jää $0{,}04\,\text{g/cm}^3$. Koska annetut epävarmuusvälit eivät mene päällekkäin, mittaustulokset eivät ole sopusoinnussa näiden ilmoitettujen epävarmuusarvioiden perusteella. Epävarmuusarviot eivät kuitenkaan ole varmoja rajoja, eikä pelkkä välien erillisyys ratkaise eron tilastollista merkitsevyyttä. Eron syytä kannattaa etsiä esimerkiksi systemaattisesta virheestä. Ero ei silti todista kummankaan tuloksen vääräksi.
 **Järkevyys:** Epävarmuudet ovat noin $2\,\%$ tuloksista, joten $5\,\%$ ero on yli kaksinkertainen niihin verrattuna. Jos B olisi $2{,}66\,\text{g/cm}^3$, välit osuisivat päällekkäin, vaikka tulokset eroaisivat vielä $0{,}08\,\text{g/cm}^3$.
 
@@ -204,10 +204,59 @@
 **Annettu:** mittaukset $1{,}004$; $1{,}012$; $1{,}008$; $1{,}014$; $1{,}012$ (yksikössä $\text{g/cm}^3$); taulukosta (MAFY-taulukko, veden tiheys eri lämpötiloissa) $\rho_\text{taulukko} = 0{,}998206\,\text{g/cm}^3$ lämpötilassa $20\,{}^\circ\text{C}$
 **Kysytty:** keskiarvon $\bar{x}$ prosentuaalinen poikkeama taulukon arvosta
 **Periaate:** Mittaustulos on keskiarvo $\bar{x}$, ja sitä verrataan tunnettuun taulukon arvoon. Poikkeama suhteutetaan taulukon arvoon ja ilmoitetaan prosentteina.
-**Kaava:** $\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{5}$ ja $\text{poikkeama} = \dfrac{\bar{x} - \rho_\text{taulukko}}{\rho_\text{taulukko}}\cdot100\,\%$
+**Kaava:** $$\bar{x} = \dfrac{x_1 + x_2 + x_3 + x_4 + x_5}{5}$$ ja $\text{poikkeama} = \dfrac{\bar{x} - \rho_\text{taulukko}}{\rho_\text{taulukko}}\cdot100\,\%$
 **Muunnokset:** Kaikki tiheydet ovat yksikössä $\text{g/cm}^3$, joten muunnoksia ei tarvita; poikkeama on yksikötön suhde, joka kerrotaan sadalla prosenteiksi.
-**Sijoitus:** $\bar{x} = \dfrac{1{,}004 + 1{,}012 + 1{,}008 + 1{,}014 + 1{,}012}{5}\,\dfrac{\text{g}}{\text{cm}^3} = 1{,}010\,\dfrac{\text{g}}{\text{cm}^3}$ ja $\text{poikkeama} = \dfrac{1{,}010 - 0{,}998206}{0{,}998206}\cdot100\,\% = 1{,}18\,\%$
-**Vastaus:** $1{,}2\,\%$ (tarkemmin $1{,}18\,\%$), kaksi merkitsevää numeroa, koska erotuksella $1{,}010\,\text{g/cm}^3 - 0{,}998\,\text{g/cm}^3 = 0{,}012\,\text{g/cm}^3$ on kaksi merkitsevää numeroa. Taulukon arvo on MAFY-taulukosta (veden tiheys eri lämpötiloissa); vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Sijoitus:** $\bar{x} = \dfrac{1{,}004 + 1{,}012 + 1{,}008 + 1{,}014 + 1{,}012}{5}\,\dfrac{\text{g}}{\text{cm}^3} = 1{,}010\,\dfrac{\text{g}}{\text{cm}^3}$ ja $$\begin{aligned} &\text{poikkeama} \\ &= \dfrac{1{,}010 - 0{,}998206}{0{,}998206} \\ &\cdot100\,\% \\ &= 1{,}18\,\% \end{aligned}$$
+**Vastaus:** $1{,}2\,\%$ (tarkemmin $1{,}18\,\%$), kaksi merkitsevää numeroa, koska erotuksella $$\begin{aligned} &1{,}010\,\text{g/cm}^3 \\ &- 0{,}998\,\text{g/cm}^3 \\ &= 0{,}012\,\text{g/cm}^3 \end{aligned}$$ on kaksi merkitsevää numeroa. Taulukon arvo on MAFY-taulukosta (veden tiheys eri lämpötiloissa); vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 
-Lisäksi: virhearvio on $\Delta x = \tfrac{1{,}014 - 1{,}004}{2}\,\text{g/cm}^3 = 0{,}005\,\text{g/cm}^3$, joten väli $\bar{x} \pm \Delta x$ on $1{,}005\ldots1{,}015\,\text{g/cm}^3$ eikä sisällä taulukon arvoa: mittauksissa on todennäköisesti systemaattinen virhe.
+Lisäksi: virhearvio on $$\begin{aligned} \Delta x &= \tfrac{1{,}014 - 1{,}004}{2}\,\text{g/cm}^3 \\ &= 0{,}005\,\text{g/cm}^3 \end{aligned}$$, joten väli $\bar{x} \pm \Delta x$ on $1{,}005\ldots1{,}015\,\text{g/cm}^3$ eikä sisällä taulukon arvoa: mittauksissa on todennäköisesti systemaattinen virhe.
 **Järkevyys:** Kaikki mittaukset ovat taulukon arvoa suurempia, ja poikkeama on yli prosentin, mutta veden tiheys on likimain $1\,\text{g/cm}^3$, joten keskiarvo on oikean kokoinen ja poikkeama pieni.
+
+## fy1-3-L2-09
+**Annettu:** CERNin tiedote 23. syyskuuta 2011 ja sen päivitykset: lähteen ja ilmaisimen välinen matka noin $730\,\text{km}$, mitattu $20\,\text{cm}$:n epävarmuudella; neutriinojen kulkuaika mitattu alle $10\,\text{ns}$:n tarkkuudella; yli $15\,000$ havaittua neutriinoa. Valon nopeus tyhjiössä $c = 2{,}998\cdot10^{8}\,\text{m/s}$ ja poikkeama $\Delta t = 60\,\text{ns}$.
+
+**Kysytty:** a) mittaus ja sen tarkkuus, tuloksen yllättävyys; b) valon kulkuaika $t$, suhteellinen poikkeama $\dfrac{\Delta t}{t}$ prosentteina ja valon kulkema matka $\Delta s$ ajassa $\Delta t$; c) mitä myöhemmin havaittiin ja virheen laji; d) miksi yksi poikkeava tulos ei kumoa teoriaa
+
+**Periaate:** Nopeus saadaan mittaamalla matka ja kulkuaika. Jos neutriinot saapuvat aikaisemmin kuin valo ehtisi, niiden nopeus olisi suurempi kuin $c$. Poikkeaman merkitys arvioidaan suhteuttamalla se koko kulkuaikaan ja mittausten epävarmuuksiin.
+
+**Mallivastaus a):** Tutkijat mittasivat neutriinojen kulkuajan CERNistä Gran Sasson laboratorioon. Matka mitattiin $20\,\text{cm}$:n epävarmuudella ja aika alle $10\,\text{ns}$:n tarkkuudella GPS-järjestelmien ja atomikellojen avulla. Neutriinot näyttivät saapuvan noin $60\,\text{ns}$ aikaisemmin kuin valo olisi ehtinyt. Tulos oli yllättävä, koska Einsteinin suhteellisuusteorian mukaan mikään ei kulje valoa nopeammin, eikä lukuisissa aiemmissa kokeissa ollut löytynyt poikkeamia teoriasta.
+
+**Kaava:** Tasaisessa liikkeessä $s = ct$, joten $t = \dfrac{s}{c}$; suhteellinen poikkeama $\dfrac{\Delta t}{t}$ ja valon kulkema matka $\Delta s = c\,\Delta t$
+
+**Muunnokset:** $s = 730\,\text{km} = 7{,}30\cdot10^{5}\,\text{m}$ ja $\Delta t = 60\,\text{ns} = 60\cdot10^{-9}\,\text{s} = 6{,}0\cdot10^{-8}\,\text{s}$
+
+**Sijoitus:** Valon kulkuaika:
+
+$$\begin{aligned}
+t &= \dfrac{s}{c} \\
+&= \dfrac{7{,}30\cdot10^{5}\,\text{m}}{2{,}998\cdot10^{8}\,\text{m/s}} \\
+&\approx 2{,}435\cdot10^{-3}\,\text{s}
+\end{aligned}$$
+
+Suhteellinen poikkeama:
+
+$$\begin{aligned}
+\dfrac{\Delta t}{t} &= \dfrac{6{,}0\cdot10^{-8}\,\text{s}}{2{,}435\cdot10^{-3}\,\text{s}} \\
+&\approx 2{,}46\cdot10^{-5} \\
+&= 0{,}00246\,\%
+\end{aligned}$$
+
+Valon kulkema matka poikkeaman aikana:
+
+$$\begin{aligned}
+\Delta s &= c\,\Delta t \\
+&= 2{,}998\cdot10^{8}\,\text{m/s} \cdot 6{,}0\cdot10^{-8}\,\text{s} \\
+&\approx 18\,\text{m}
+\end{aligned}$$
+
+**Mallivastaus b):** Valolta kuluu matkaan noin $2{,}4\,\text{ms}$, ja poikkeama on siitä vain noin $0{,}0025\,\%$ eli noin $25$ miljoonasosaa. CERNin tiedote pyöristää saman tuloksen muotoon ”$20$ miljoonasosaa”. Poikkeama vastaa $18\,\text{m}$:n matkaa, mikä on lähes sata kertaa matkan epävarmuus $20\,\text{cm}$. Matkan mittaus ei siis voinut selittää tulosta, joten virhettä kannatti etsiä ajan mittauksesta.
+
+**Mallivastaus c):** Tutkijat löysivät mittausjärjestelmästä kaksi mahdollista virhelähdettä: GPS-synkronoinnin oskillaattorin ja valokuituliittimen, joka tuo GPS-signaalin kokeen pääkelloon. Myöhemmin alkuperäinen tulos selittyi viallisella osalla kokeen valokuituun perustuvassa ajoitusjärjestelmässä. Riippumaton ICARUS-koe mittasi neutriinojen kulkuajan sopivaksi valon nopeuteen, ja seuraavaksi neljä Gran Sasson koetta (Borexino, ICARUS, LVD ja OPERA) mittasi kaikki kulkuajan, joka sopii valon nopeuteen.
+
+Virhe oli systemaattinen. Viallinen ajoitusjärjestelmä siirsi jokaisen mittauksen samaan suuntaan, joten tulos pysyi samana, vaikka havaittuja neutriinoja oli yli $15\,000$. Satunnaisvirhe pienenee, kun mittauksia on paljon, mutta systemaattinen virhe ei pienene toistamalla mittausta samalla laitteistolla. Siksi tarvittiin riippumattomia mittauksia eri laitteistoilla.
+
+**Mallivastaus d):** Suhteellisuusteoriaa on testattu lukuisissa kokeissa, eikä poikkeamia ole löytynyt. Kun yksi mittaus on ristiriidassa niiden kaikkien kanssa, todennäköisempää on, että mittauksessa on huomaamaton systemaattinen virhe, kuin että kaikki aiemmat tulokset olisivat vääriä. Arkinen esimerkki: jos lämpömittari näyttää kiehuvan veden lämpötilaksi normaalipaineessa $80\,{}^\circ\text{C}$, epäilemme ensin mittaria emmekä veden kiehumispistettä. Poikkeava tulos voi kuitenkin olla merkki uudesta fysiikasta, joten sitä ei hylätä vaan se tarkistetaan. Teoria muuttuisi vasta, jos riippumattomat kokeet toistaisivat tuloksen. OPERA toimi oikein, kun se julkaisi tuloksen muiden arvioitavaksi.
+
+**Vastaus:** Suhteellinen poikkeama on $\dfrac{\Delta t}{t} \approx 0{,}0025\,\%$ eli $2{,}5\cdot10^{-5}$ (laskettu arvo $0{,}00246\,\%$), kaksi merkitsevää numeroa, koska poikkeama $60\,\text{ns}$ on annettu kahden numeron tarkkuudella.
+
+**Järkevyys:** Valo kulkee kilometrin noin $3{,}3\,\mu\text{s}$:ssa, joten $730\,\text{km}$:iin kuluu noin $730 \cdot 3{,}3\,\mu\text{s} \approx 2{,}4\,\text{ms}$. Poikkeama $60\,\text{ns}$ on noin $40\,000$ kertaa pienempi kuin kulkuaika, mikä vastaa suhdetta $2{,}5\cdot10^{-5}$. Siksi tulosta pidettiin uskottavana vasta, kun ajoituksen tarkkuus oli varmistettu.

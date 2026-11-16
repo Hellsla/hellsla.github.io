@@ -84,7 +84,7 @@
         {
           "text": "Tens, because only some of the segments pass through the tumour and the other segments intersect each other at random places.",
           "correct": true,
-          "feedback": "The values of the model support this: after $10$ coincidences the brightest spot was about $18\\,\\text{cm}$ from the tumour, after $20$ it was $4.0\\,\\text{cm}$, after $50$ only $1.4\\,\\text{cm}$ and after $200$ it was $0\\,\\text{cm}$ away. Only about a quarter of the segments passed through the tumour. With small values of $N$ the result varies by chance: with a different random order, the brightest spot could fall on the tumour already at $20$ or only at about $100$ coincidences."
+          "feedback": "The values of the model support this: after $10$ coincidences the brightest spot was about $18\\,\\text{cm}$ from the tumour, after $20$ it was $4.0\\,\\text{cm}$, after $50$ only $1.4\\,\\text{cm}$ and after $200$ it was $0\\,\\text{cm}$ away. Even with large values of $N$ only about a quarter of the segments passed through the tumour (when $N$ was $10$ and $20$, only $10\\,\\%$ and $5\\,\\%$). With small values of $N$ the result varies by chance: with a different random order, the brightest spot could fall on the tumour already at $20$ or only at about $100$ coincidences."
         },
         {
           "text": "Two are enough, because two segments intersect at one point.",
@@ -92,7 +92,7 @@
         },
         {
           "text": "One is enough, because a segment always passes through the place where the most tracer has accumulated.",
-          "feedback": "The values of the model refute this: only about a quarter of the segments passed through the tumour, and after $10$ coincidences the brightest spot was about $18\\,\\text{cm}$ from the tumour. A segment starts from the place where a single nucleus happened to decay, and that can be anywhere in the body."
+          "feedback": "The values of the model refute this: even with large values of $N$ only about a quarter of the segments passed through the tumour, and after $10$ coincidences the brightest spot was about $18\\,\\text{cm}$ from the tumour. A segment starts from the place where a single nucleus happened to decay, and that can be anywhere in the body."
         }
       ]
     },
@@ -346,7 +346,7 @@
       "tolerance": 0.02,
       "hints": [
         "Which equation connects the energy and the frequency of a photon (chapter *The photoelectric effect and the photon*)?",
-        "Convert the energy to joules: $511\\,\\text{keV} = 511 \\cdot 10^{3} \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "Convert the energy to joules: $$\n\\begin{aligned}\n511\\,\\text{keV} &= 511 \\cdot 10^{3} \\\\\n&\\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}\n\\end{aligned}\n$$.",
         "$E = 8.186 \\cdot 10^{-14}\\,\\text{J}$, and $f = \\tfrac{E}{h}$, where $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$."
       ],
       "mistakes": [

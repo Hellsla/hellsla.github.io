@@ -211,7 +211,7 @@
         {
           "text": "Massaa ei muutettu kilogrammoiksi: $3{,}0\\,\\text{t} = 3000\\,\\text{kg}$, joten oikea tulos on $78\\,000\\,\\text{MJ}$.",
           "correct": true,
-          "feedback": "Oikein. Lämpöarvo on energia yhtä kilogrammaa kohti, joten massa pitää sijoittaa kilogrammoina. $E = 26\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 3000\\,\\text{kg} = 78\\,000\\,\\text{MJ}$."
+          "feedback": "Oikein. Lämpöarvo on energia yhtä kilogrammaa kohti, joten massa pitää sijoittaa kilogrammoina. $$\n\\begin{aligned}\nE &= 26\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 3000\\,\\text{kg} \\\\\n&= 78\\,000\\,\\text{MJ}\n\\end{aligned}\n$$."
         },
         {
           "text": "Kivihiilen lämpöarvo on väärä, koska oikea arvo olisi $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, joten tulos on $129\\,\\text{MJ}$.",
@@ -302,8 +302,8 @@
     {
       "id": "fy2-5-L3-01",
       "level": 3,
-      "text": "Mökin lämmitykseen polttoaineesta pitää vapautua energiaa $120\\,\\text{MJ}$. Energian voi saada joko ilmakuivasta polttopuusta ($15\\,\\tfrac{\\text{MJ}}{\\text{kg}}$) tai kevyestä polttoöljystä ($43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$). Laske kummankin polttoaineen tarvittava massa. Kerro sitten, kuinka monta kilogrammaa enemmän puuta kuin öljyä tarvitaan. Selitä myös, miksi puuta tarvitaan enemmän. Anna vastaus kilogrammoina.",
-      "answer": 5.2,
+      "text": "Mökin lämmitykseen polttoaineesta pitää vapautua energiaa $120\\,\\text{MJ}$. Energian voi saada joko ilmakuivasta polttopuusta ($15\\,\\tfrac{\\text{MJ}}{\\text{kg}}$) tai kevyestä polttoöljystä ($40{,}6\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, MAFY-taulukko). Laske kummankin polttoaineen tarvittava massa. Kerro sitten, kuinka monta kilogrammaa enemmän puuta kuin öljyä tarvitaan. Selitä myös, miksi puuta tarvitaan enemmän. Anna vastaus kilogrammoina.",
+      "answer": 5.0,
       "unit": "kg",
       "tolerance": 0.02
     },
@@ -326,7 +326,7 @@
     {
       "id": "fy2-5-L3-04",
       "level": 3,
-      "text": "Taulukossa on esimerkkiaineisto omakotitalon lämmitykseen kuukausittain tarvittavasta hyötyenergiasta. Hyötyenergia on se energia, joka päätyy talon lämmitykseen. Talon voi lämmittää pellettikattilalla (pellettien lämpöarvo $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, hyötysuhde $85\\,\\%$) tai kevyellä polttoöljyllä (lämpöarvo $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, hyötysuhde $90\\,\\%$).\n\na) Laske vuoden lämmitysenergia kilowattitunteina ja megajouleina.\n\nb) Laske pellettikattilassa vuodessa poltettavien pellettien massa.\n\nc) Laske vuodessa kuluva öljyn massa ja vertaa sitä pellettien massaan. Selitä, miksi massojen suhde ei ole sama kuin lämpöarvojen suhde.\n\nd) Pellettikattilan hyötysuhde laskee huonon säädön takia arvoon $70\\,\\%$. Kuinka monta kilogrammaa pellettejä kuluu silloin vuodessa enemmän? Miksi?\n\nKirjoita vastauslaatikkoon kohdan b) tulos kilogrammoina.",
+      "text": "Taulukossa on esimerkkiaineisto omakotitalon lämmitykseen kuukausittain tarvittavasta hyötyenergiasta. Hyötyenergia on se energia, joka päätyy talon lämmitykseen. Talon voi lämmittää pellettikattilalla (pellettien lämpöarvo $17\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, hyötysuhde $85\\,\\%$) tai kevyellä polttoöljyllä (MAFY-taulukko; lämpöarvo $40{,}6\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, hyötysuhde $90\\,\\%$).\n\na) Laske vuoden lämmitysenergia kilowattitunteina ja megajouleina.\n\nb) Laske pellettikattilassa vuodessa poltettavien pellettien massa.\n\nc) Laske vuodessa kuluva öljyn massa ja vertaa sitä pellettien massaan. Selitä, miksi massojen suhde ei ole sama kuin lämpöarvojen suhde.\n\nd) Pellettikattilan hyötysuhde laskee huonon säädön takia arvoon $70\\,\\%$. Kuinka monta kilogrammaa pellettejä kuluu silloin vuodessa enemmän? Miksi?\n\nKirjoita vastauslaatikkoon kohdan b) tulos kilogrammoina.",
       "kind": [
         "data",
         "model",
@@ -424,8 +424,8 @@
             "85"
           ],
           [
-            "Öljykattila",
-            "43",
+            "Öljykattila (kevyt polttoöljy, MAFY-taulukko)",
+            "40.6",
             "90"
           ]
         ]

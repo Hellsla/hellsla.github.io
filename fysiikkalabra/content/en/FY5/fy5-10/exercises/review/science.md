@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a5be97017f850ea1
-SCOPE: delta added-exercise from d0e0aaa9ca173d93 base 81db4a6fd727
+CONTENT-HASH: 9fb56f569a24221e
 
 ## Blocking
-(none)
 
 ## Polish
 - none.
 
 ## Checked
-- fy5-10-L1-10: λ = v/f = 5120 m/s / 1000 Hz = 5.12 m; frequency set by the source, speed by the medium stated correctly; air comparison (0.34 m, factor ≈ 15) recomputed.
-- fy5-10-L2-08: crests at 0.5, 2.0, 3.5 m give λ = 1.5 m; T = λ/v = 1.5/3.0 = 0.50 s; f·λ = 3.0 m/s check right.
-- Figure fy5-10/valokuva: English axis labels x (m), y (cm) and the gridline values match what the solution reads; the wavelength is not marked.
-- Compared with the Finnish set by script: all numbers, answers, units and tolerances identical; answers.py agrees.
+- fy5-10 solutions C-values recomputed: 10.4²/5.0 = 21.63 → 21.6, 15.0²/10.0 = 22.5, 21.1²/20.0 = 22.26 → 22.3, 29.3²/40.0 = 21.46 → 21.5; the corrected roundings are right and the same as in the Finnish.
+- Script comparison of fi and en: every number of exercises.json and solutions.md is identical, apart from word order; answers, units and tolerances are identical.
+- Captions: only the "(example data)" marker was removed.
 - Hash unchanged at start and end.

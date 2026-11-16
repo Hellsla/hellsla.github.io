@@ -33,7 +33,7 @@
         {
           "text": "$\\rho \\approx 2.7\\,\\text{g/cm}^3$",
           "correct": true,
-          "feedback": "Correct. The volume is the difference of the readings, $12\\,\\text{ml} = 12\\,\\text{cm}^3$, which has two significant figures. The result of a division gets as many significant figures as the least precise starting value, so $32.46\\,\\text{g} : 12\\,\\text{cm}^3 = 2.705\\,\\text{g/cm}^3 \\approx 2.7\\,\\text{g/cm}^3$. The precision of a difference is discussed in the chapter *Density*."
+          "feedback": "Correct. The volume is the difference of the readings, $12\\,\\text{ml} = 12\\,\\text{cm}^3$, which has two significant figures. The result of a division gets as many significant figures as the least precise starting value, so $$\n\\begin{aligned}\n&32.46\\,\\text{g} : 12\\,\\text{cm}^3 \\\\\n&= 2.705\\,\\text{g/cm}^3 \\\\\n&\\approx 2.7\\,\\text{g/cm}^3\n\\end{aligned}\n$$. The precision of a difference is discussed in the chapter *Density*."
         },
         {
           "text": "$\\rho \\approx 2.71\\,\\text{g/cm}^3$",

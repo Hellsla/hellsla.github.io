@@ -311,14 +311,14 @@ Many people think that heat and temperature are the same thing, or that objects 
 &T = 35\,{}^\circ\text{C}
 \end{aligned}
 ```
-The hot water is on the left side, as in the general equation. On the first line of the last group the equation has been divided on both sides by a kilogram and the brackets have been multiplied out. So the final result is not $50\,{}^\circ\text{C}$ but $35\,{}^\circ\text{C}$, because there is three times as much cold water as hot. The same result comes from the weighted mean: $T = (3.0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1.0\,\text{kg} \cdot 80\,{}^\circ\text{C}) : 4.0\,\text{kg} = 35\,{}^\circ\text{C}$.
+The hot water is on the left side, as in the general equation. On the first line of the last group the equation has been divided on both sides by a kilogram and the brackets have been multiplied out. So the final result is not $50\,{}^\circ\text{C}$ but $35\,{}^\circ\text{C}$, because there is three times as much cold water as hot. The same result comes from the weighted mean: $$\begin{aligned} &T \\ &= (3.0\,\text{kg} \cdot 20\,{}^\circ\text{C} + 1.0\,\text{kg} \cdot 80\,{}^\circ\text{C}) \\ &: 4.0\,\text{kg} \\ &= 35\,{}^\circ\text{C} \end{aligned}$$.
 
 A third mistake is to convert $\Delta T$ to kelvins by adding 273: a change in temperature is the same on both scales.
 
 ## Summary
 - The quantity of heat is proportional to the mass and to the change in temperature: $Q = c m \Delta T$. The specific heat capacity $c$ depends on the substance, and for water it is large, $4190\,\text{J/(kg}\cdot\text{K)}$.
 - The heat capacity $C = cm$ tells how many joules it takes to heat the whole object by one kelvin.
-- In an insulated container the heat given out by the hot object is equal to the heat received by the cold one: $c_1 m_1 (T_1 - T) = c_2 m_2 (T - T_2)$. The equilibrium temperature $T$ is solved by collecting the terms with $T$ on the same side; it is a mean weighted by the heat capacities, and usually not the ordinary mean of the initial temperatures.
+- In an insulated container the heat given out by the hot object is equal to the heat received by the cold one: $$\begin{aligned} &c_1 m_1 (T_1 - T) \\ &= c_2 m_2 (T - T_2) \end{aligned}$$. The equilibrium temperature $T$ is solved by collecting the terms with $T$ on the same side; it is a mean weighted by the heat capacities, and usually not the ordinary mean of the initial temperatures.
 - A calorimetric measurement determines the specific heat capacity of an unknown substance with the help of water.
 
 <svg data-fig="scene" viewBox="0 0 600 360" role="img" aria-label="Illustration: a sauna stove. Water is thrown with a ladle onto the hot stones, and steam rises from the stones. Wooden benches are in the background." style="max-width:100%;font-size:24px">

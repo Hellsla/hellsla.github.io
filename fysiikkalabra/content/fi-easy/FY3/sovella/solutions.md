@@ -75,9 +75,9 @@
 **Kuvaajan lukeminen:** Käyrälle piirretään tangentti hetkellä $0\,\text{min}$. Tangentti kulkee pisteiden $(0\,\text{min};\ 20{,}0\,{}^\circ\text{C})$ ja $(10\,\text{min};\ 28{,}5\,{}^\circ\text{C})$ kautta, joten lämpenemisnopeus alussa on $\dfrac{\Delta T}{\Delta t} = \dfrac{8{,}5\,\text{K}}{10\,\text{min}} = 0{,}85\,\text{K/min}$.
 **Kaava:** $P = \dfrac{Q}{\Delta t} = cm \cdot \dfrac{\Delta T}{\Delta t}$
 **Muunnokset:** $0{,}85\,\text{K/min} = 0{,}85\,\text{K} : 60\,\text{s} = 0{,}014\,17\,\text{K/s}$. Lämpötilan muutos on sama celsiusasteina ja kelvineinä.
-**Sijoitus:** $P = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4{,}00\,\text{kg} \cdot 0{,}014\,17\,\text{K/s} = 237\,\text{W}$
+**Sijoitus:** $$\begin{aligned} P &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4{,}00\,\text{kg} \cdot 0{,}014\,17\,\text{K/s} \\ &= 237\,\text{W} \end{aligned}$$
 **Vastaus:** $P \approx 240\,\text{W}$. Vastauksessa on kaksi merkitsevää numeroa, koska tangentin kulmakerroin luetaan kuvaajalta noin kahden numeron tarkkuudella.
-**Järkevyys:** Keräimeen tulee säteilyä $800\,\text{W/m}^2 \cdot 0{,}50\,\text{m}^2 = 400\,\text{W}$, joten vesi saa siitä hieman yli puolet. Ensimmäisten viiden minuutin nousu on $4{,}1\,\text{K}$. Se antaa lähes saman tehon: $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4{,}00\,\text{kg} \cdot 4{,}1\,\text{K} : 300\,\text{s} \approx 230\,\text{W}$.
+**Järkevyys:** Keräimeen tulee säteilyä $$\begin{aligned} &800\,\text{W/m}^2 \cdot 0{,}50\,\text{m}^2 \\ &= 400\,\text{W} \end{aligned}$$, joten vesi saa siitä hieman yli puolet. Ensimmäisten viiden minuutin nousu on $4{,}1\,\text{K}$. Se antaa lähes saman tehon: $$\begin{aligned} &4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4{,}00\,\text{kg} \cdot 4{,}1\,\text{K} : 300\,\text{s} \\ &\approx 230\,\text{W} \end{aligned}$$.
 
 ### c)
 **Annettu:** veden saama teho $P \approx 237\,\text{W}$, säteilyn teho pinta-alaa kohti $800\,\text{W/m}^2$ ja pinta-ala $A = 0{,}50\,\text{m}^2$
@@ -96,7 +96,7 @@
 **Kuvaajan lukeminen:** Kulmakerroin hetkellä $50\,\text{min}$ luetaan suorasta, joka kulkee hetkien $40\,\text{min}$ ja $60\,\text{min}$ pisteiden kautta. Suora on lähes samansuuntainen kuin käyrän tangentti: $\dfrac{54{,}7\,{}^\circ\text{C} - 46{,}2\,{}^\circ\text{C}}{20\,\text{min}} = 0{,}425\,\text{K/min}$.
 **Kaava:** $P_\text{vesi} = cm \cdot \dfrac{\Delta T}{\Delta t}$ ja $P_\text{häviö} = P - P_\text{vesi}$
 **Muunnokset:** $0{,}425\,\text{K/min} = 0{,}425\,\text{K} : 60\,\text{s} = 0{,}007\,08\,\text{K/s}$
-**Sijoitus:** $P_\text{vesi} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4{,}00\,\text{kg} \cdot 0{,}007\,08\,\text{K/s} = 119\,\text{W}$ ja $P_\text{häviö} = 237\,\text{W} - 119\,\text{W} = 118\,\text{W}$
+**Sijoitus:** $$\begin{aligned} P_\text{vesi} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4{,}00\,\text{kg} \\ &\cdot 0{,}007\,08\,\text{K/s} \\ &= 119\,\text{W} \end{aligned}$$ ja $P_\text{häviö} = 237\,\text{W} - 119\,\text{W} = 118\,\text{W}$
 **Vastaus:** $P_\text{häviö} \approx 120\,\text{W}$. Vastauksessa on kaksi merkitsevää numeroa, koska molemmat kulmakertoimet on luettu kuvaajalta.
 **Järkevyys:** Hetkellä $50\,\text{min}$ vesi on noin $31\,\text{K}$ ilmaa lämpimämpää. Häviö on noin puolet auringosta saadusta tehosta. Jos häviö kasvaa samaa tahtia, se on yhtä suuri kuin saatu teho, kun lämpötilaero on noin $60\,\text{K}$. Silloin veden lämpötila lakkaa nousemasta noin $80\,{}^\circ\text{C}$:ssa. Tämä on uskottava tulos yksinkertaiselle keräimelle.
 
@@ -170,7 +170,7 @@ Ruoka kypsyy, kun sen sisäosat lämpenevät riittävästi. Vesi on $17\,{}^\cir
 **Periaate:** Kuplan ilmamäärä pysyy samana. Kupla on pieni, joten se on aina saman lämpöinen kuin ympäröivä vesi. Kuplan paine on veden paine kyseisessä syvyydessä, eli ilmanpaine ja hydrostaattinen paine yhteensä. Ideaalikaasun tilanyhtälöstä $pV = nRT$ seuraa: kun $n$ on vakio, $\dfrac{pV}{T}$ pysyy samana. Sekä paine että lämpötila muuttuvat. Siksi kumpaakaan ei voi jättää pois.
 **Kaava:** $p_1 = p_0 + \rho g h$ ja $\dfrac{p_1 V_1}{T_1} = \dfrac{p_2 V_2}{T_2}$, josta $V_2 = V_1 \cdot \dfrac{p_1}{p_2} \cdot \dfrac{T_2}{T_1}$, missä pinnalla $p_2 = p_0$
 **Muunnokset:** $p_0 = 101\,\text{kPa} = 101\,000\,\text{Pa}$, $T_1 = (6{,}0 + 273{,}15)\,\text{K} = 279{,}15\,\text{K}$ ja $T_2 = (20{,}0 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$. Tilavuus voi jäädä kuutiosenttimetreiksi, koska yhtälössä on tilavuuksien suhde.
-**Sijoitus:** $p_1 = 101\,000\,\text{Pa} + 1000\,\text{kg/m}^3 \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} = 248\,150\,\text{Pa}$ ja $V_2 = 4{,}0\,\text{cm}^3 \cdot \dfrac{248\,150\,\text{Pa}}{101\,000\,\text{Pa}} \cdot \dfrac{293{,}15\,\text{K}}{279{,}15\,\text{K}} = 10{,}3\,\text{cm}^3$
+**Sijoitus:** $$\begin{aligned} p_1 &= 101\,000\,\text{Pa} \\ &+ 1000\,\text{kg/m}^3 \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} \\ &= 248\,150\,\text{Pa} \end{aligned}$$ ja $$\begin{aligned} V_2 &= 4{,}0\,\text{cm}^3 \cdot \dfrac{248\,150\,\text{Pa}}{101\,000\,\text{Pa}} \cdot \dfrac{293{,}15\,\text{K}}{279{,}15\,\text{K}} \\ &= 10{,}3\,\text{cm}^3 \end{aligned}$$
 **Vastaus:** $V_2 \approx 10\,\text{cm}^3$. Vastauksessa on kaksi merkitsevää numeroa kuten tilavuudessa $4{,}0\,\text{cm}^3$.
 **Järkevyys:** Paine pienenee noustessa noin $2{,}5$-osaan. Siksi tilavuus kasvaa noin $2{,}5$-kertaiseksi. Lämpeneminen kasvattaa tilavuutta vielä noin $5\,\%$. Kuplien kasvu noustessa näkyy myös sukellusvideoissa.
 

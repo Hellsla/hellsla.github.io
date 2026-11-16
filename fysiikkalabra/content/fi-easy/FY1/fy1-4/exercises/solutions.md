@@ -53,7 +53,7 @@
 **Kysytty:** kulmakerroin $k$ yksikössä $\text{m/s}$
 **Periaate:** Matka-aikakuvaajan suoran kulmakerroin on matkan muutos jaettuna ajan muutoksella. Se on sama, mitkä tahansa kaksi suoran pistettä valitaan. Yksiköt pitää muuntaa SI-yksiköiksi ennen kuin ilmoittaa tuloksen.
 **Kaava:** $k = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
-**Muunnokset:** $\Delta s = 1{,}50\,\text{km} - 0{,}30\,\text{km} = 1{,}20\,\text{km} = 1200\,\text{m}$ ja $\Delta t = 10{,}0\,\text{min} - 2{,}0\,\text{min} = 8{,}0\,\text{min} = 480\,\text{s}$.
+**Muunnokset:** $\Delta s = 1{,}50\,\text{km} - 0{,}30\,\text{km} = 1{,}20\,\text{km} = 1200\,\text{m}$ ja $$\begin{aligned} \Delta t &= 10{,}0\,\text{min} - 2{,}0\,\text{min} \\ &= 8{,}0\,\text{min} \\ &= 480\,\text{s} \end{aligned}$$.
 **Sijoitus:** $k = \dfrac{1200\,\text{m}}{480\,\text{s}} = 2{,}5\,\text{m/s}$
 **Vastaus:** $2{,}5\,\text{m/s}$, kaksi merkitsevää numeroa. Syy on se, että aikaväli $8{,}0\,\text{min}$ on annettu kahden numeron tarkkuudella.
 **Järkevyys:** Tulos on noin $2{,}5\,\text{m/s} = 2{,}5 \cdot 3{,}6\,\text{km/h} = 9\,\text{km/h}$. Tarkistus kilometreillä ja minuuteilla: $1{,}20\,\text{km} : 8{,}0\,\text{min} = 0{,}15\,\text{km/min} = 9\,\text{km/h}$. Se on rauhallisen pyöräilyn vauhti.
@@ -159,7 +159,7 @@
 **Muunnokset:** Ei tarvita. Ajat ovat sekunteina ja paikat metreinä.
 **Sijoitus:** $v = \dfrac{3{,}07\,\text{m} - 0{,}83\,\text{m}}{5{,}0\,\text{s} - 0{,}0\,\text{s}} = 0{,}448\,\tfrac{\text{m}}{\text{s}}$ ja $b = 0{,}83\,\text{m} - 0{,}448\,\tfrac{\text{m}}{\text{s}} \cdot 0{,}0\,\text{s} = 0{,}83\,\text{m}$
 **Vastaus:** $0{,}83\,\text{m}$, kaksi desimaalia, kuten paikoissa. Silmämääräinen sovitus vaihtelee. Siksi noin $0{,}75\text{–}0{,}91\,\text{m}$ on hyvä vastaus. Suora ei kulje origon kautta, koska kärry oli kellon käynnistyessä jo $0{,}83\,\text{m}$:n päässä radan merkistä. Paikka mitataan tästä merkistä. Vakiotermi on siis kärryn paikka silloin, kun kello käynnistettiin. Origon kautta kulkeva suora ei sopisi tähän mittaukseen.
-**Järkevyys:** Nopeus $0{,}45\,\text{m/s}$ vie kärryn viidessä sekunnissa noin $2{,}2\,\text{m}$ eteenpäin: $0{,}83\,\text{m} + 2{,}2\,\text{m} \approx 3{,}1\,\text{m}$. Se vastaa viimeistä mittausta. Vakiotermi on positiivinen, koska kärry oli jo merkin edellä.
+**Järkevyys:** Nopeus $0{,}45\,\text{m/s}$ vie kärryn viidessä sekunnissa noin $2{,}2\,\text{m}$ eteenpäin: $0{,}83\,\text{m} + 2{,}2\,\text{m} \approx 3{,}0\,\text{m}$. Se vastaa viimeistä mittausta. Vakiotermi on positiivinen, koska kärry oli jo merkin edellä.
 
 ## fy1-4-L2-07
 **Annettu:** taulukon tilavuudet $V = 10{,}0\text{–}50{,}0\,\text{cm}^3$ sekä massat $m_\text{A}$: $27{,}4$, $53{,}8$, $82{,}1$, $108{,}9$ ja $135{,}2\,\text{g}$ ja $m_\text{B}$: $78{,}6$, $156{,}8$, $237{,}1$, $313{,}5$ ja $392{,}0\,\text{g}$
@@ -197,14 +197,47 @@
 ## fy1-4-L2-08
 **Kysytty:** millä rivillä kulmakertoimen laskussa on virhe.
 **Periaate:** Kulmakerroin on $k = \dfrac{\Delta y}{\Delta x}$. Se lasketaan sovitetulta suoralta valituista kahdesta pisteestä. Sekä osoittajan että nimittäjän muutos on saman pisteparin loppuarvo miinus alkuarvo. Kulmakertoimen yksikkö on $y$:n yksikkö jaettuna $x$:n yksiköllä, tässä $\tfrac{\textsf{l}}{\text{min}}$.
-**Mallivastaus:** Virhe on rivillä 3. Ajan muutos on $\Delta t = 10{,}0\,\text{min} - 2{,}0\,\text{min} = 8{,}0\,\text{min}$, ei $12{,}0\,\text{min}$. Luku $12{,}0$ syntyy, kun ajat lasketaan yhteen tai kun tilavuuden muutoksen luku kopioidaan nimittäjään. Rivit 1 ja 2 ovat oikein: pisteet luetaan sovitetulta suoralta kaukana toisistaan, ja $\Delta V = 17{,}0\,\textsf{l} - 5{,}0\,\textsf{l} = 12{,}0\,\textsf{l}$. Rivin 4 kaava ja jakolasku ovat oikein, mutta rivi käyttää rivin 3 väärää lukua. Oikea kulmakerroin on $k = \dfrac{12{,}0\,\textsf{l}}{8{,}0\,\text{min}} = 1{,}5\,\tfrac{\textsf{l}}{\text{min}}$. Tarkistus: $1{,}5\,\tfrac{\textsf{l}}{\text{min}} \cdot 8{,}0\,\text{min} = 12{,}0\,\textsf{l}$. Se vastaa tilavuuden muutosta. Sen sijaan $1{,}0\,\tfrac{\textsf{l}}{\text{min}} \cdot 8{,}0\,\text{min} = 8{,}0\,\textsf{l}$ ei vastaa.
+**Mallivastaus:** Virhe on rivillä 3. Ajan muutos on $$\begin{aligned} \Delta t &= 10{,}0\,\text{min} - 2{,}0\,\text{min} \\ &= 8{,}0\,\text{min} \end{aligned}$$, ei $12{,}0\,\text{min}$. Luku $12{,}0$ syntyy, kun ajat lasketaan yhteen tai kun tilavuuden muutoksen luku kopioidaan nimittäjään. Rivit 1 ja 2 ovat oikein: pisteet luetaan sovitetulta suoralta kaukana toisistaan, ja $\Delta V = 17{,}0\,\textsf{l} - 5{,}0\,\textsf{l} = 12{,}0\,\textsf{l}$. Rivin 4 kaava ja jakolasku ovat oikein, mutta rivi käyttää rivin 3 väärää lukua. Oikea kulmakerroin on $k = \dfrac{12{,}0\,\textsf{l}}{8{,}0\,\text{min}} = 1{,}5\,\tfrac{\textsf{l}}{\text{min}}$. Tarkistus: $1{,}5\,\tfrac{\textsf{l}}{\text{min}} \cdot 8{,}0\,\text{min} = 12{,}0\,\textsf{l}$. Se vastaa tilavuuden muutosta. Sen sijaan $1{,}0\,\tfrac{\textsf{l}}{\text{min}} \cdot 8{,}0\,\text{min} = 8{,}0\,\textsf{l}$ ei vastaa.
 
 ## fy1-4-L1-09
 **Annettu:** tilavuus $V = 45\,\text{cm}^3$; taulukosta (MAFY-taulukko, kiinteiden aineiden tiheyksiä, alumiini) $\rho = 2{,}70\cdot10^{3}\,\text{kg/m}^3$
 **Kysytty:** kappaleen massa $m$ yksikössä $\text{g}$
 **Periaate:** Massa–tilavuuskuvaajan suora kulkee origon kautta, joten $m = kV$. Kulmakerroin $k$ on aineen tiheys $\rho$. Alumiinin tiheys luetaan taulukosta ja käytetään kulmakertoimena.
 **Kaava:** $m = kV = \rho V$
-**Muunnokset:** $2{,}70\cdot10^{3}\,\text{kg/m}^3 = 2{,}70\,\text{g/cm}^3$, koska $1\,\text{kg} = 10^{3}\,\text{g}$ ja $1\,\text{m}^3 = 10^{6}\,\text{cm}^3$. Silloin tilavuus voidaan käyttää kuutiosenttimetreinä, ja massa tulee grammoina.
+**Muunnokset:** $$\begin{aligned} &2{,}70\cdot10^{3}\,\text{kg/m}^3 \\ &= 2{,}70\,\text{g/cm}^3 \end{aligned}$$, koska $1\,\text{kg} = 10^{3}\,\text{g}$ ja $1\,\text{m}^3 = 10^{6}\,\text{cm}^3$. Silloin tilavuus voidaan käyttää kuutiosenttimetreinä, ja massa tulee grammoina.
 **Sijoitus:** $m = 2{,}70\,\dfrac{\text{g}}{\text{cm}^3} \cdot 45\,\text{cm}^3 = 121{,}5\,\text{g}$
 **Vastaus:** $m \approx 1{,}2\cdot10^{2}\,\text{g}$ (laskettu arvo $121{,}5\,\text{g}$), kaksi merkitsevää numeroa kuten tilavuudessa $45\,\text{cm}^3$. Tiheys on MAFY-taulukosta (kiinteiden aineiden tiheyksiä). Vastaus hyväksytään, kun se on enintään noin $\pm 4\,\%$ oikeasta arvosta.
-**Järkevyys:** Alumiini on noin kolme kertaa vettä tiheämpää. Vettä $45\,\text{cm}^3$ painaisi noin $45\,\text{g}$. Tulos $121{,}5\,\text{g}$ on noin $2{,}7$-kertainen siihen nähden.
+**Järkevyys:** Alumiini on noin kolme kertaa vettä tiheämpää. Jos vettä olisi $45\,\text{cm}^3$, sen massa olisi noin $45\,\text{g}$. Tulos $121{,}5\,\text{g}$ on noin $2{,}7$-kertainen siihen nähden.
+
+## fy1-4-L2-09
+**Annettu:** ilman lämpötila $T$ kahden tunnin välein yhden vuorokauden ajan. Oma aineistosi riippuu asemasta ja päivästä, joten tässä on ratkaisutapa tehtävän taulukon esimerkkiaineistolla. Kohdan b) aikavälin alussa $t_1 = 6\,\text{h}$, $T_1 = 7{,}2\,{}^\circ\text{C}$ ja lopussa $t_2 = 12\,\text{h}$, $T_2 = 16{,}3\,{}^\circ\text{C}$.
+
+**Kysytty:** a) kuvaaja $T(t)$; b) keskimääräinen muutosnopeus $k = \dfrac{\Delta T}{\Delta t}$; c) lineaarinen malli ja sen vertailu mittauksiin; d) mallin pätevyysalue
+
+**Periaate:** Keskimääräinen muutosnopeus on lämpötilan muutos jaettuna sen vaatimalla ajalla, eli kuvaajalle aikavälin päätepisteiden kautta piirretyn suoran kulmakerroin. Lineaarinen malli kuvaa mittauksia vain sillä alueella, jolla pisteet ovat likimain suoralla.
+
+**Mallivastaus a):** Akselien nimet ja yksiköt: $t\,(\text{h})$ ja $T\,({}^\circ\text{C})$. Pisteet merkitään erillisinä, ja niiden kautta voi piirtää ohuen käyrän, koska lämpötila muuttuu jatkuvasti myös mittausten välillä.
+
+**Kuvaajan lukeminen:** Vaaka-akselille tulee aika $t$ tunteina ja pystyakselille lämpötila $T$ Celsius-asteina. Pisteet nousevat aamuyöstä iltapäivään ja laskevat sen jälkeen, joten kuvaaja on kaari eikä suora. Lämpötila on alimmillaan klo $4$. Lämpötila on korkeimmillaan klo $16$. Klo $6$–$12$ pisteet ovat likimain suoralla: kahden tunnin muutokset ovat $3{,}2$; $3{,}1$ ja $2{,}8\,{}^\circ\text{C}$.
+
+**Kaava:** $k = \dfrac{\Delta T}{\Delta t} = \dfrac{T_2 - T_1}{t_2 - t_1}$ ja lineaarinen malli $T(t) = T_1 + k(t - t_1)$
+
+**Muunnokset:** Ei tarvita: ajat ovat tunteina ja lämpötilat Celsius-asteina. Lämpötilan muutos on yhtä suuri Celsius-asteina ja kelvineinä, joten $1\,{}^\circ\text{C/h} = 1\,\text{K/h}$.
+
+**Sijoitus:** Kohta b):
+
+$$\begin{aligned}
+k &= \dfrac{T_2 - T_1}{t_2 - t_1} \\
+&= \dfrac{16{,}3\,{}^\circ\text{C} - 7{,}2\,{}^\circ\text{C}}{12\,\text{h} - 6\,\text{h}} \\
+&\approx 1{,}52\,{}^\circ\text{C/h}
+\end{aligned}$$
+
+**Mallivastaus c):** Malli on $T(t) = T_1 + k(t - t_1)$, missä $T_1 = 7{,}2\,{}^\circ\text{C}$, $k = 1{,}52\,{}^\circ\text{C/h}$ ja $t_1 = 6\,\text{h}$. Se antaa klo $8$ lämpötilan $10{,}2\,{}^\circ\text{C}$ (mitattu $10{,}4\,{}^\circ\text{C}$) ja klo $10$ lämpötilan $13{,}3\,{}^\circ\text{C}$ (mitattu $13{,}5\,{}^\circ\text{C}$). Aikavälillä ero on enintään $0{,}2\,{}^\circ\text{C}$, joten malli kuvaa mittauksia hyvin.
+
+Aikavälin ulkopuolella malli epäonnistuu. Klo $16$ se antaa $22{,}4\,{}^\circ\text{C}$, vaikka mitattu lämpötila on $18{,}1\,{}^\circ\text{C}$, ja klo $0$ se antaisi $-1{,}9\,{}^\circ\text{C}$, vaikka mitattu on $8{,}1\,{}^\circ\text{C}$. Malli on hyvä vain sillä alueella, jonka mittauksista se tehtiin.
+
+**Mallivastaus d):** Aamupäivän nousu johtuu siitä, että aurinko lämmittää maanpintaa ja ilmaa yhä tehokkaammin. Iltapäivällä lämmitys heikkenee ja yöllä ilma jäähtyy, joten lämpötila ei voi kasvaa tasaisesti koko vuorokautta. Seuraavan vuorokauden lämpötilaan vaikuttavat lisäksi pilvisyys ja tuuli. Myös se vaikuttaa, saapuuko alueelle lämmintä vai kylmää ilmaa. Yhden aamupäivän suora ei sisällä näistä mitään, joten sillä ei voi ennustaa toista vuorokautta. Siihen tarvitaan sääennuste, joka perustuu ilmakehän fysiikan malleihin ja laajaan havaintoaineistoon.
+
+**Vastaus:** Lämpötilan keskimääräinen muutosnopeus klo $6$–$12$ on $1{,}5\,{}^\circ\text{C/h}$ (laskettu arvo $1{,}517\,{}^\circ\text{C/h}$), kaksi merkitsevää numeroa, koska lämpötilan muutos $9{,}1\,{}^\circ\text{C}$ on kahden numeron tarkkuudella ja aikaväli $6\,\text{h}$ on tarkka. Omalla aineistollasi muutosnopeus ja aikaväli ovat toiset, mutta ratkaisutapa on sama.
+
+**Järkevyys:** Kuuden tunnin aikana lämpötila nousee $6\,\text{h} \cdot 1{,}52\,{}^\circ\text{C/h} \approx 9{,}1\,{}^\circ\text{C}$, mikä vastaa taulukon arvojen eroa. Kevätpäivänä noin $10\,{}^\circ\text{C}$:n vuorokausivaihtelu sisämaassa on tavallinen, joten nousunopeus noin $1$–$2\,{}^\circ\text{C}$ tunnissa on uskottava.

@@ -172,7 +172,7 @@
 ## Key idea
 
 ### Battery, power and charging time
-The battery of an electric car is a large lithium-ion battery (chapter *Batteries and the charging circuit*). This chapter uses an example car whose battery has a nominal voltage of $400\,\text{V}$ and a capacity of $160\,\text{Ah}$. The energy of the battery is then $W = UQ = 400\,\text{V} \cdot 160\,\text{Ah} = 64\,\text{kWh}$, and it is enough for about $350\,\text{km}$ of driving when the car uses $18\,\text{kWh}$ per hundred kilometres. So the battery holds as much energy as a $6\,\text{kW}$ sauna heater uses in over ten hours.
+The battery of an electric car is a large lithium-ion battery (chapter *Batteries and the charging circuit*). This chapter uses an example car whose battery has a nominal voltage of $400\,\text{V}$ and a capacity of $160\,\text{Ah}$. The energy of the battery is then $$\begin{aligned} W &= UQ \\ &= 400\,\text{V} \cdot 160\,\text{Ah} \\ &= 64\,\text{kWh} \end{aligned}$$, and it is enough for about $350\,\text{km}$ of driving when the car uses $18\,\text{kWh}$ per hundred kilometres. So the battery holds as much energy as a $6\,\text{kW}$ sauna heater uses in over ten hours.
 
 The charging time depends on how much energy has to be transferred to the battery and at what power this is done. In charging, part of the energy taken from the grid does not end up in the battery but turns into internal energy of the charger of the car, the cables and the battery, which is transferred to the surroundings as heat. The efficiency of home charging is typically about $80\text{–}95\,\%$, and it is always below $100\,\%$. More energy therefore has to be taken from the grid than is stored in the battery.
 
@@ -181,7 +181,7 @@ The charging time depends on how much energy has to be transferred to the batter
 ### One phase or three
 A Finnish detached house usually gets **three-phase** electricity: three phase conductors $\text{L}_1$, $\text{L}_2$ and $\text{L}_3$ and a neutral conductor $\text{N}$. Between each phase conductor and the neutral conductor there is a voltage of $230\,\text{V}$. An ordinary socket and a kettle use one phase, a sauna heater and a charging station usually all three. When a device draws the same current $I$ from each phase conductor, each phase transfers a power $UI$, and the total power is three times as great. The voltage between the phase conductors is $400\,\text{V}$, but it is not needed here.
 
-The current of a device is obtained from its power as in the chapter *Electrical energy at home*: in one phase $I = P : U$. When charging from an ordinary socket, the charging cable usually limits the current to about $8\,\text{A}$, and the power is then $230\,\text{V} \cdot 8\,\text{A} \approx 1.8\,\text{kW}$. A single-phase charging station with a current of $16\,\text{A}$ charges with a power of about $3.7\,\text{kW}$, and a three-phase one with the same current at three times the power, about $11\,\text{kW}$. The same $40\,\text{kWh}$ charge takes more than a day from a socket and about four hours with a three-phase station.
+The current of a device is obtained from its power as in the chapter *Electrical energy at home*: in one phase $I = P : U$. When charging from an ordinary socket, the charging cable usually limits the current to about $8\,\text{A}$, and the power is then $230\,\text{V} \cdot 8\,\text{A} \approx 1.8\,\text{kW}$. A single-phase charging station with a current of $16\,\text{A}$ charges with a power of about $3.7\,\text{kW}$, and a three-phase one with the same current at three times the power, about $11\,\text{kW}$. The same $40\,\text{kWh}$ charge takes more than a day from a socket, when the losses of charging are taken into account, and about four hours with a three-phase station.
 
 ### The home electrical system
 The cable coming from the electricity grid goes through the meter to the **consumer unit**. In the consumer unit come first the **main fuses**, one in each phase conductor, for example $3 \cdot 25\,\text{A}$. After them the current divides into **circuits**: each circuit has its own cable and its own fuse or miniature circuit breaker, for example $10\,\text{A}$ or $16\,\text{A}$. A fuse protects the cable: it cuts the current before the current heats the cable dangerously (chapter *Electrical safety at home and at work*). That is why the size of a fuse is chosen according to the cross-sectional area of the cable, and a larger one must not be put in its place.
@@ -455,7 +455,7 @@ The energy of the battery of the example car is $64\,\text{kWh}$. The battery is
 
 <!-- vaihe -->
 
-**Answer.** Charging takes about $3.9\,\text{h}$ and costs about $6.4\,\text{€}$. The energy taken from the grid is $38.4\,\text{kWh} : 0.90 \approx 42.7\,\text{kWh}$. The results are given with two significant figures like the efficiency $0.90$ and the price $15\,\text{c/kWh}$.
+**Answer.** Charging takes about $3.9\,\text{h}$ and costs about $6.4\,\text{€}$. The energy taken from the grid is $$\begin{aligned} &38.4\,\text{kWh} : 0.90 \\ &\approx 42.7\,\text{kWh} \end{aligned}$$. The results are given with two significant figures like the efficiency $0.90$ and the price $15\,\text{c/kWh}$.
 
 <!-- vaihe -->
 

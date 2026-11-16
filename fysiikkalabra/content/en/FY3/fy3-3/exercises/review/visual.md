@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e5a8473323aac32e
-Mode: delta, round 3
+CONTENT-HASH: a0117cc8ece79348
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] 3-18 graph — the points sit in the upper right of a -100 to 100 °C range, so they are small; the range is deliberate, only noted.
+- [Minor] units are written both as stacked `\tfrac{\text{kPa}}{{}^\circ\text{C}}` and inline `kPa/°C` in neighbouring chains; unify when next edited.
 
 ## Checked
-- fy3-3-open-exercises-L2-1280-12: end of the 3-18 solution. The Reasonableness line now reads "between 75 and 100 °C, nearer the upper end" followed by the Check chain, which is aligned and has units in LaTeX. It reads fluently and nothing is clipped.
-- The rest of the set is unchanged from the round-2 pass (3-18 task, graph and solution, seen then).
+- 390 px chain montage opened (all chains), fy3-3-open-exercises-L2-1280-5 (ratio of kelvin temperatures): fractions and rows fine.
+- Phone (390 px): the packet has no phone captures of the exercises, so I rendered every calculation chain of the opened solutions at 390 px myself (all `.eq-chain` blocks in the set; page scrollWidth 390, no overflow) and opened the montage. Wide: opened the 1280 px captures named below.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

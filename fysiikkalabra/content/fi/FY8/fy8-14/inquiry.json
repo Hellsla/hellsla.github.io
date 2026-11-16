@@ -84,7 +84,7 @@
         {
           "text": "Kymmeniä, koska vain osa janoista kulkee kasvaimen kautta ja muut janat leikkaavat toisiaan satunnaisissa kohdissa.",
           "correct": true,
-          "feedback": "Mallin arvot tukevat tätä: $10$ koinsidenssin jälkeen kirkkain kohta oli noin $18\\,\\text{cm}$:n ja $20$:n jälkeen $4{,}0\\,\\text{cm}$:n päässä kasvaimesta, $50$:n jälkeen enää $1{,}4\\,\\text{cm}$:n ja $200$:n jälkeen $0\\,\\text{cm}$:n päässä. Kasvaimen kautta kulki vain noin neljäsosa janoista. Pienillä $N$:n arvoilla tulos vaihtelee sattumalta: toisessa arvontajärjestyksessä kirkkain kohta voisi osua kasvaimeen jo $20$:llä tai vasta noin $100$:lla koinsidenssilla."
+          "feedback": "Mallin arvot tukevat tätä: $10$ koinsidenssin jälkeen kirkkain kohta oli noin $18\\,\\text{cm}$:n ja $20$:n jälkeen $4{,}0\\,\\text{cm}$:n päässä kasvaimesta, $50$:n jälkeen enää $1{,}4\\,\\text{cm}$:n ja $200$:n jälkeen $0\\,\\text{cm}$:n päässä. Suurillakin $N$:n arvoilla kasvaimen kautta kulki vain noin neljäsosa janoista (kun $N$ oli $10$ ja $20$, vain $10\\,\\%$ ja $5\\,\\%$). Pienillä $N$:n arvoilla tulos vaihtelee sattumalta: toisessa arvontajärjestyksessä kirkkain kohta voisi osua kasvaimeen jo $20$:llä tai vasta noin $100$:lla koinsidenssilla."
         },
         {
           "text": "Kaksi riittää, koska kaksi janaa leikkaa toisensa yhdessä pisteessä.",
@@ -92,7 +92,7 @@
         },
         {
           "text": "Yksi riittää, koska jana kulkee aina sen kohdan kautta, johon merkkiainetta on kertynyt eniten.",
-          "feedback": "Mallin arvot kumoavat tämän: kasvaimen kautta kulki vain noin neljäsosa janoista, ja $10$ koinsidenssin jälkeen kirkkain kohta oli noin $18\\,\\text{cm}$:n päässä kasvaimesta. Yksi jana alkaa siitä kohdasta, jossa yksittäinen ydin sattui hajoamaan, ja se voi olla missä tahansa kehossa."
+          "feedback": "Mallin arvot kumoavat tämän: kasvaimen kautta kulki suurillakin $N$:n arvoilla vain noin neljäsosa janoista, ja $10$ koinsidenssin jälkeen kirkkain kohta oli noin $18\\,\\text{cm}$:n päässä kasvaimesta. Yksi jana alkaa siitä kohdasta, jossa yksittäinen ydin sattui hajoamaan, ja se voi olla missä tahansa kehossa."
         }
       ]
     },
@@ -346,7 +346,7 @@
       "tolerance": 0.02,
       "hints": [
         "Mikä yhtälö yhdistää fotonin energian ja taajuuden (luku *Valosähköinen ilmiö ja fotoni*)?",
-        "Muuta energia jouleiksi: $511\\,\\text{keV} = 511 \\cdot 10^{3} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "Muuta energia jouleiksi: $$\n\\begin{aligned}\n511\\,\\text{keV} &= 511 \\cdot 10^{3} \\\\\n&\\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J}\n\\end{aligned}\n$$.",
         "$E = 8{,}186 \\cdot 10^{-14}\\,\\text{J}$, ja $f = \\tfrac{E}{h}$, missä $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$."
       ],
       "mistakes": [

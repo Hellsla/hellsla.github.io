@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9f0133e283d84987
+CONTENT-HASH: 16a4839bc698252a
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- [Minor] sheet 1 #3: `v` stands alone on its row before `= √…`; acceptable (long right side), could keep `v =` with the root.
 
 ## Checked
-- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.
+- round 3, delta review (reflow): proof sheets en-fy6-12-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+
+## Scores
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

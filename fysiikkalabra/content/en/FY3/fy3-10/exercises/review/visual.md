@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a1183f2bb759e378
+CONTENT-HASH: 5016f9e61a55760f
 
 ## Blocking
-
+None.
 
 ## Polish
-- [Minor] fy3-10-L2-09 Järkevyys/Reasonableness — refers to "the task where the difference is calculated in moles", but no such task is in the set, so the reference is unclear — drop the clause or say the amounts follow from n = pV/(RT) with the values read at 400 K.
-- [Minor] fy3-10-L2-09 graph pt-suorat — the solution says the lines go through the origin, but the drawn lines start at 100 K; a faint dashed extension to the origin would show it.
+None.
 
 ## Checked
-- Round 2, delta. Opened fy3-10-open-exercises-L2-1280-12 and -13 (12-18 task, ratio-of-slopes graph, whole solution) in this language. Graph: axes with units, A and B by colour and letter, marked points at 200 K and 400 K, readable; answer not given away. Typography: aligned rows, stacked fractions, answer box fine; unit now 'kertaa/times'.
-- Hash at start and end the same.
+- Own 390 px and 1280 px captures of the built page with every exercise solution open (the packet's shots hold 1280 px only): every display formula in text context (about 10 per set, stitched sheets) and a DOM check of clipping, horizontal overflow and lone punctuation after a display formula in all exercises; plus the packet captures open-exercises-L*-1280.
+- Changed formulas: equals signs in one column, continuation rows start with an operator, wide screens join the rows, no clipping at 390 or 1280 px, no row breaking inside a number or unit; trailing punctuation sits inside the formula in solutions.
+- Hash run at start and end: unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: fc081966801d027b
+CONTENT-HASH: 28f2d7de0e91fa4e
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md, Joulen koe paragraph — three sentences in a row lean on "tämä tulo / Tämä tulo / Tämä koetulos" — "…kasvoi samassa suhteessa kuin tämä tulo, joka on sama kuin voiman ja matkan tulo. Koetulos perustelee työn määritelmän $W = Fs$ (kaava alla)."
+- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
 
 ## Checked
-- delta review 2026-11-07 (teacher's proofread replacement texts): Ydinajatus rewrite (siirtymä, komponentti, mekaaninen työ) and the typeset $40\,\text{N}$/$20\,\text{cm}$ in lesson and inquiry choices/feedback/prompts; opened fy3-2-fi-easy-a-390 and -1280 (text, carry-lift figure and Joule figure unchanged and intact).
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy3-2.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.

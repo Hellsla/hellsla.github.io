@@ -76,7 +76,12 @@
 **Conversions:** Power to kilowatts: $60\,\text{W} = 60 \cdot 0.001\,\text{kW} = 0.060\,\text{kW}$. When the power is in kilowatts and the time in hours, the energy is obtained directly in kilowatt-hours. In addition, $5.0\,\% = 5.0 \cdot 0.01 = 0.050$.
 **Substitution:** $E_\text{o} = 0.060\,\text{kW} \cdot 4.0\,\text{h} = 0.24\,\text{kWh}$, so $E_\text{h} = (1 - 0.050) \cdot 0.24\,\text{kWh} = 0.228\,\text{kWh}$
 **Answer:** $0.23\,\text{kWh}$, two significant figures, as in the given values.
-**Reasonableness:** The lamp turns about $95\,\%$ of the energy taken into heat, so the loss energy is almost as large as the energy taken, $0.24\,\text{kWh}$, but slightly smaller. The useful energy is $0.012\,\text{kWh}$, and $0.228\,\text{kWh} + 0.012\,\text{kWh} = 0.24\,\text{kWh}$.
+**Reasonableness:** The lamp turns about $95\,\%$ of the energy taken into heat, so the loss energy is almost as large as the energy taken, $0.24\,\text{kWh}$, but slightly smaller. The useful energy is $0.012\,\text{kWh}$, and $$
+\begin{aligned}
+&0.228\,\text{kWh} + 0.012\,\text{kWh} \\
+&= 0.24\,\text{kWh}
+\end{aligned}
+$$.
 
 ## fy2-4-L2-04
 **Given:** efficiency $\eta = 25\,\%$ and useful power $P_\text{a} = 15\,\text{kW}$
@@ -173,9 +178,19 @@
 ## fy2-4-L3-04
 **Given:** electric car: energy taken from the battery $E_\text{e} = 17\,\text{kWh}$ per hundred kilometres and efficiency $\eta_\text{e} = 90\,\%$; petrol car: petrol $V = 6.0\,\textsf{l}$ per hundred kilometres, energy content $h = 32\,\text{MJ/l}$ and efficiency $\eta_\text{p} = 25\,\%$
 **Find:** how many times as large the energy $E_\text{p}$ that the petrol car takes from its tank is compared with the energy $E_\text{e}$ that the electric car takes from its battery; also the useful energy of each car and an explanation for the difference
-**Principle:** Cars can be compared only when the energies are in the same unit. The energy of petrol is calculated from the volume and the energy content, and it is converted to kilowatt-hours by substituting $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$. The useful energy is the efficiency multiplied by the energy taken. Energy is conserved: the energy taken is useful energy and losses (heat).
+**Principle:** Cars can be compared only when the energies are in the same unit. The energy of petrol is calculated from the volume and the energy content, and it is converted to kilowatt-hours by substituting $$
+\begin{aligned}
+1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\
+&= 3.6\,\text{MJ}
+\end{aligned}
+$$. The useful energy is the efficiency multiplied by the energy taken. Energy is conserved: the energy taken is useful energy and losses (heat).
 **Formula:** $E_\text{p} = V \cdot h$, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, so $E_\text{a} = \eta \cdot E_\text{o}$, and the comparison $\dfrac{E_\text{p}}{E_\text{e}}$
-**Conversions:** $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$, so $1\,\text{MJ} = \dfrac{1}{3.6}\,\text{kWh}$. Efficiencies: $90\,\% = 0.90$ and $25\,\% = 0.25$.
+**Conversions:** $$
+\begin{aligned}
+1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\
+&= 3.6\,\text{MJ}
+\end{aligned}
+$$, so $1\,\text{MJ} = \dfrac{1}{3.6}\,\text{kWh}$. Efficiencies: $90\,\% = 0.90$ and $25\,\% = 0.25$.
 **Substitution:** The energy of the petrol is $E_\text{p} = 6.0 \text{ litres} \cdot 32\,\text{MJ/l} = 192\,\text{MJ}$. In kilowatt-hours $E_\text{p} = \dfrac{192\,\text{MJ}}{3.6\,\text{MJ/kWh}} = 53.3\,\text{kWh}$. The ratio is $\dfrac{E_\text{p}}{E_\text{e}} = \dfrac{53.3\,\text{kWh}}{17\,\text{kWh}} = 3.1$. The useful energies are $E_\text{a,e} = 0.90 \cdot 17\,\text{kWh} = 15.3\,\text{kWh}$ for the electric car and $E_\text{a,p} = 0.25 \cdot 53.3\,\text{kWh} = 13.3\,\text{kWh}$ for the petrol car.
 **Answer:** The petrol car takes about $3.1$ times as much energy from its tank as the electric car takes from its battery, two significant figures. The useful energies of cars of similar size are almost equal, $15\,\text{kWh}$ and $13\,\text{kWh}$, because both have to drive the same distance. The difference in the energy taken is due to the efficiency: the electric car uses $90\,\%$ of the energy taken, the petrol car only $25\,\%$, and the remaining $75\,\%$, about $40\,\text{kWh}$, becomes heat.
 **Reasonableness:** The ratio of the efficiencies $0.90 : 0.25 = 3.6$ and the ratio of the useful energies $15.3 : 13.3 = 1.15$ give $3.6 : 1.15 = 3.1$, as they should. The examination covers only the cars' own use of energy, and the losses in the production of electricity and petrol are not included, so the result alone does not decide which is better for the environment.
@@ -188,9 +203,24 @@
 **Formula:** $E_\text{a} = E_\text{o} - E_\text{h}$, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, $P = \dfrac{E}{t}$, $E_\text{o,y} = P \cdot t_\text{y}$ and $E_\text{h,y} = \dfrac{E_\text{h}}{E_\text{o}} \cdot E_\text{o,y}$
 **Conversions:** The operating time in a year is $t_\text{y} = 3.0\,\text{h} \cdot 365 = 1095\,\text{h}$. The power is $9.0\,\text{W} = 0.0090\,\text{kW}$.
 **Substitution:** The student's error: they divided the loss energy by the energy taken, so $0.70$ is the share of the losses and not the efficiency. The light energy is $E_\text{a} = 2160\,\text{J} - 1510\,\text{J} = 650\,\text{J}$, and $\eta = \dfrac{650\,\text{J}}{2160\,\text{J}} = 0.301 = 30\,\%$.
-In a year the lamp takes the energy $E_\text{o,y} = 0.0090\,\text{kW} \cdot 1095\,\text{h} = 9.855\,\text{kWh}$. The share $\dfrac{1510}{2160} = 0.699$ of it becomes heat, that is, $E_\text{h,y} = 0.699 \cdot 9.855\,\text{kWh} = 6.89\,\text{kWh}$. The cost is $6.89\,\text{kWh} \cdot 0.20\,\text{€/kWh} = 1.38\,\text{€}$.
+In a year the lamp takes the energy $E_\text{o,y} = 0.0090\,\text{kW} \cdot 1095\,\text{h} = 9.855\,\text{kWh}$. The share $\dfrac{1510}{2160} = 0.699$ of it becomes heat, that is, $E_\text{h,y} = 0.699 \cdot 9.855\,\text{kWh} = 6.89\,\text{kWh}$. The cost is $$
+\begin{aligned}
+&6.89\,\text{kWh} \cdot 0.20\,\text{€/kWh} \\
+&= 1.38\,\text{€}
+\end{aligned}
+$$.
 **Answer:** The correct efficiency is $30\,\%$. The student's $70\,\%$ is the share of the losses, not the efficiency. Of the electricity taken by the lamp, about $6.9\,\text{kWh}$ becomes heat in a year, and its cost is about $1.4\,\text{€}$. The student's $70\,\%$ is the right number for this calculation, because the question is about the part that becomes heat: $30\,\% + 70\,\% = 100\,\%$.
-**Reasonableness:** Light takes $0.30 \cdot 9.855\,\text{kWh} = 2.96\,\text{kWh}$, and light and heat together are $2.96\,\text{kWh} + 6.89\,\text{kWh} = 9.85\,\text{kWh}$, as they should be. The typical efficiency of an LED lamp is about $30\,\%$. The electricity for the whole lamp costs only $1.97\,\text{€}$ a year, so $1.4\,\text{€}$ is reasonable.
+**Reasonableness:** Light takes $$
+\begin{aligned}
+&0.30 \cdot 9.855\,\text{kWh} \\
+&= 2.96\,\text{kWh}
+\end{aligned}
+$$, and light and heat together are $$
+\begin{aligned}
+&2.96\,\text{kWh} + 6.89\,\text{kWh} \\
+&= 9.85\,\text{kWh}
+\end{aligned}
+$$, as they should be. The typical efficiency of an LED lamp is about $30\,\%$. The electricity for the whole lamp costs only $1.97\,\text{€}$ a year, so $1.4\,\text{€}$ is reasonable.
 
 ## fy2-4-L2-08
 **Find:** which of the lines of the student's calculation is wrong.
@@ -198,7 +228,14 @@ In a year the lamp takes the energy $E_\text{o,y} = 0.0090\,\text{kW} \cdot 1095
 **Model answer:** Line 1: $2.5\,\text{kW} = 2500\,\text{W}$ and $4.0\,\text{min} = 240\,\text{s}$ are correct.
 Line 2: $E_\text{o} = 2500\,\text{W} \cdot 240\,\text{s}$, that is $E_\text{o} = 600\,000\,\text{J} = 600\,\text{kJ}$ is correct.
 Line 3: $E_\text{h} = 600\,\text{kJ} - 360\,\text{kJ} = 240\,\text{kJ}$ is correct.
-Line 4 is wrong, because the energies have been divided the wrong way round. The correct calculation is $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{360\,\text{kJ}}{600\,\text{kJ}} = 0.60 = 60\,\%$. Check: an efficiency of $167\,\%$ would be over $100\,\%$, and the correct result fits line 3, because $240\,\text{kJ} : 600\,\text{kJ} = 0.40$ and $60\,\% + 40\,\% = 100\,\%$. So the correct answer is line 4.
+Line 4 is wrong, because the energies have been divided the wrong way round. The correct calculation is $$
+\begin{aligned}
+\eta &= \dfrac{E_\text{a}}{E_\text{o}} \\
+&= \dfrac{360\,\text{kJ}}{600\,\text{kJ}} \\
+&= 0.60 \\
+&= 60\,\%
+\end{aligned}
+$$. Check: an efficiency of $167\,\%$ would be over $100\,\%$, and the correct result fits line 3, because $240\,\text{kJ} : 600\,\text{kJ} = 0.40$ and $60\,\% + 40\,\% = 100\,\%$. So the correct answer is line 4.
 
 ## fy2-4-L1-09
 **Given:** mass of oil $m = 2.5\,\text{kg}$ and useful energy $E_\text{a} = 80\,\text{MJ}$; from the table (MAFY table, heating values of fuels, fuel oil, light) $H = 40.6\,\text{MJ/kg}$
@@ -215,7 +252,7 @@ Line 4 is wrong, because the energies have been divided the wrong way round. The
 **Asked:** the efficiency $\eta$ of the motor as a percentage
 **Principle:** The thickness of an arrow is proportional to the energy on the scale of the figure, so the efficiency is the ratio of the thickness of the useful arrow to the thickness of the incoming arrow. The same ratio comes from the energies.
 **Reading the graph:** Here we read the energy-flow diagram: the incoming arrow covers $8$ squares and the green useful arrow $2$ squares. The thicknesses are read from the lines of the squared paper.
-**Formula:** $\eta = \dfrac{E_\text{a}}{E_\text{o}} = \dfrac{\text{thickness of the useful arrow}}{\text{thickness of the incoming arrow}}$
+**Formula:** $$ \begin{aligned} \eta &= \dfrac{E_\text{a}}{E_\text{o}} \\ &= \dfrac{\text{thickness of the useful arrow}}{\text{thickness of the incoming arrow}} \end{aligned} $$
 **Conversions:** The squares need not be converted to joules, because the ratio of the thicknesses is a pure number. As a percentage $\eta \cdot 100\,\%$.
 **Substitution:** $\eta = \dfrac{2}{8} = 0.25 = 25\,\%$
 **Answer:** The efficiency of the motor is $25\,\%$.

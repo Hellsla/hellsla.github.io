@@ -87,7 +87,7 @@
         },
         {
           "text": "By the product $F_\\text{res}\\,h_1$ of the resistive force and the starting height.",
-          "feedback": "The resistive force acts along every metre of the track, not only in the vertical direction. With the values of the model $F_\\text{res}\\,h_1 = 200\\,\\text{N} \\cdot 10\\,\\text{m} = 2.0\\,\\text{kJ}$, but the mechanical energy decreases by $9.19\\,\\text{kJ}$, because the car travels $45.9\\,\\text{m}$ along the track."
+          "feedback": "The resistive force acts along every metre of the track, not only in the vertical direction. With the values of the model $$\\begin{aligned} &F_\\text{res}\\,h_1 = 200\\,\\text{N} \\cdot 10\\,\\text{m} \\\\ &= 2.0\\,\\text{kJ} \\end{aligned}$$, but the mechanical energy decreases by $9.19\\,\\text{kJ}$, because the car travels $45.9\\,\\text{m}$ along the track."
         },
         {
           "text": "Not at all, because energy is always conserved.",
@@ -358,7 +358,7 @@
       "type": "choice",
       "title": "Find the error",
       "optional": true,
-      "prompt": "A box of mass $5.0\\,\\text{kg}$ slides from rest down a ramp $1.5\\,\\text{m}$ high. Friction does the work $-30\\,\\text{J}$ on the box. A student calculates the speed of the box at the bottom of the ramp like this: $E_\\text{k} = mgh + 30\\,\\text{J} = 73.6\\,\\text{J} + 30\\,\\text{J} = 103.6\\,\\text{J}$, so $v = \\sqrt{\\tfrac{2E_\\text{k}}{m}} \\approx 6.4\\,\\text{m/s}$. Where is the error?",
+      "prompt": "A box of mass $5.0\\,\\text{kg}$ slides from rest down a ramp $1.5\\,\\text{m}$ high. Friction does the work $-30\\,\\text{J}$ on the box. A student calculates the speed of the box at the bottom of the ramp like this: $$\\begin{aligned} &E_\\text{k} = mgh + 30\\,\\text{J} \\\\ &= 73.6\\,\\text{J} + 30\\,\\text{J} \\\\ &= 103.6\\,\\text{J} \\end{aligned}$$, so $v = \\sqrt{\\tfrac{2E_\\text{k}}{m}} \\approx 6.4\\,\\text{m/s}$. Where is the error?",
       "choices": [
         {
           "text": "The work done by friction is negative, so it decreases the kinetic energy: $E_\\text{k} = 73.6\\,\\text{J} - 30\\,\\text{J}$.",

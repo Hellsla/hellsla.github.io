@@ -5,7 +5,13 @@
 **Find:** the duration of the acceleration $t$ in seconds
 **Principle:** The acceleration is constant, so the $(t,v)$ graph is a straight line and the region under it is a trapezium. The displacement is the area of this region, so the average velocity is the mean of the initial and final velocities (chapter *Acceleration and uniformly accelerated motion*). The acceleration is not needed to calculate the time.
 **Formula:** $\Delta x = \dfrac{v_0 + v}{2}\,t$, so $t = \dfrac{2\,\Delta x}{v_0 + v}$
-**Conversions:** $54\,\text{km/h} = \dfrac{54 \cdot 1000\,\text{m}}{3600\,\text{s}} = 15\,\text{m/s}$ and $108\,\text{km/h} = \dfrac{108 \cdot 1000\,\text{m}}{3600\,\text{s}} = 30\,\text{m/s}$
+**Conversions:** $$
+\begin{aligned}
+&54\,\text{km/h} \\
+&= \dfrac{54 \cdot 1000\,\text{m}}{3600\,\text{s}} \\
+&= 15\,\text{m/s}
+\end{aligned}
+$$ and $108\,\text{km/h} = \dfrac{108 \cdot 1000\,\text{m}}{3600\,\text{s}} = 30\,\text{m/s}$
 **Substitution:** $t = \dfrac{2 \cdot 270\,\text{m}}{15\,\text{m/s} + 30\,\text{m/s}} = \dfrac{540\,\text{m}}{45\,\text{m/s}} = 12.0\,\text{s}$
 **Answer:** $t \approx 12\,\text{s}$, two significant figures like the velocities $54\,\text{km/h}$ and $108\,\text{km/h}$.
 **Reasonableness:** The average velocity is $22.5\,\text{m/s}$, and $22.5\,\text{m/s} \cdot 12.0\,\text{s} = 270\,\text{m}$, the length of the lane. An acceleration of about ten seconds to motorway speed is usual for a car.
@@ -18,7 +24,14 @@
 **Conversions:** The velocities were converted to $\text{m/s}$ in part a, and the time is in seconds.
 **Substitution:** $a = \dfrac{30\,\text{m/s} - 15\,\text{m/s}}{12.0\,\text{s}} = \dfrac{15\,\text{m/s}}{12.0\,\text{s}} = 1.25\,\text{m/s}^2$
 **Answer:** $a \approx 1.3\,\text{m/s}^2$, two significant figures like the velocities ($1.25\,\text{m/s}^2$ is also accepted).
-**Reasonableness:** The velocity grows by $1.25\,\text{m/s} = 4.5\,\text{km/h}$ every second, so in twelve seconds it grows by $54\,\text{km/h}$, as in the data. A check with the equation of position: $15\,\text{m/s} \cdot 12.0\,\text{s} + \tfrac{1}{2} \cdot 1.25\,\text{m/s}^2 \cdot (12.0\,\text{s})^2 = 180\,\text{m} + 90\,\text{m} = 270\,\text{m}$.
+**Reasonableness:** The velocity grows by $1.25\,\text{m/s} = 4.5\,\text{km/h}$ every second, so in twelve seconds it grows by $54\,\text{km/h}$, as in the data. A check with the equation of position: $$
+\begin{aligned}
+&15\,\text{m/s} \cdot 12.0\,\text{s} \\
+&+ \tfrac{1}{2} \cdot 1.25\,\text{m/s}^2 \cdot (12.0\,\text{s})^2 \\
+&= 180\,\text{m} + 90\,\text{m} \\
+&= 270\,\text{m}
+\end{aligned}
+$$.
 
 ### c)
 **Given:** origin at the beginning of the acceleration lane, positive direction the direction of driving; car: $x_{0\text{A}} = 0$, $v_0 = 15\,\text{m/s}$, $a = 1.25\,\text{m/s}^2$; lorry: $x_{0\text{L}} = -40\,\text{m}$, $v_\text{L} = 81\,\text{km/h}$ (constant)
@@ -26,14 +39,40 @@
 **Principle:** The positions are written in the same coordinate system (chapter *Comparing the motions of two bodies*). The lorry is faster at first and approaches the car. The distance decreases as long as the lorry is faster and starts to grow when the car is faster, so it is at its smallest when the velocities are equal. If the distance is then positive, the lorry does not draw level.
 **Formula:** $x_\text{A} = v_0\,t + \tfrac{1}{2}\,a\,t^2$ and $x_\text{L} = x_{0\text{L}} + v_\text{L}\,t$. Equal velocities: $v_0 + a\,t_1 = v_\text{L}$, so $t_1 = \dfrac{v_\text{L} - v_0}{a}$ and $d_\text{min} = x_\text{A}(t_1) - x_\text{L}(t_1)$
 **Conversions:** $81\,\text{km/h} = \dfrac{81 \cdot 1000\,\text{m}}{3600\,\text{s}} = 22.5\,\text{m/s}$
-**Substitution:** $t_1 = \dfrac{22.5\,\text{m/s} - 15\,\text{m/s}}{1.25\,\text{m/s}^2} = 6.0\,\text{s}$; $x_\text{A} = 15\,\text{m/s} \cdot 6.0\,\text{s} + \tfrac{1}{2} \cdot 1.25\,\text{m/s}^2 \cdot (6.0\,\text{s})^2 = 90\,\text{m} + 22.5\,\text{m} = 112.5\,\text{m}$; $x_\text{L} = -40\,\text{m} + 22.5\,\text{m/s} \cdot 6.0\,\text{s} = 95\,\text{m}$; $d_\text{min} = 112.5\,\text{m} - 95\,\text{m} = 17.5\,\text{m}$
+**Substitution:** $t_1 = \dfrac{22.5\,\text{m/s} - 15\,\text{m/s}}{1.25\,\text{m/s}^2} = 6.0\,\text{s}$; $$
+\begin{aligned}
+x_\text{A} &= 15\,\text{m/s} \cdot 6.0\,\text{s} \\
+&+ \tfrac{1}{2} \cdot 1.25\,\text{m/s}^2 \cdot (6.0\,\text{s})^2 \\
+&= 90\,\text{m} + 22.5\,\text{m} \\
+&= 112.5\,\text{m}
+\end{aligned}
+$$; $x_\text{L} = -40\,\text{m} + 22.5\,\text{m/s} \cdot 6.0\,\text{s} = 95\,\text{m}$; $d_\text{min} = 112.5\,\text{m} - 95\,\text{m} = 17.5\,\text{m}$
 **Answer:** The lorry does not draw level with the car. The distance is at its smallest, about $18\,\text{m}$, at $6.0\,\text{s}$, two significant figures like the distance $40\,\text{m}$ and the velocities.
-**Reasonableness:** At the end of the lane ($12.0\,\text{s}$) the lorry is at $-40\,\text{m} + 22.5\,\text{m/s} \cdot 12.0\,\text{s} = 230\,\text{m}$ and the car at $270\,\text{m}$, so the gap is $40\,\text{m}$ again, as it should be: the areas between the velocity graphs before and after $6.0\,\text{s}$ are equal. The meeting equation $\tfrac{1}{2}\,a\,t^2 + (v_0 - v_\text{L})\,t - x_{0\text{L}} = 0$ has no real solutions, because the discriminant $(-7.5)^2 - 4 \cdot 0.625 \cdot 40 < 0$.
+**Reasonableness:** At the end of the lane ($12.0\,\text{s}$) the lorry is at $$
+\begin{aligned}
+&-40\,\text{m} + 22.5\,\text{m/s} \cdot 12.0\,\text{s} \\
+&= 230\,\text{m}
+\end{aligned}
+$$ and the car at $270\,\text{m}$, so the gap is $40\,\text{m}$ again, as it should be: the areas between the velocity graphs before and after $6.0\,\text{s}$ are equal. The meeting equation $$
+\tfrac{1}{2}\,a\,t^2 + (v_0 - v_\text{L})\,t - x_{0\text{L}} = 0
+$$ has no real solutions, because the discriminant $$
+(-7.5)^2 - 4 \cdot 0.625 \cdot 40 < 0
+$$.
 
 ### d)
 **Find:** why the lorry catches up with a car that accelerates uniformly only to $72\,\text{km/h}$, and why it is worth accelerating to the speed of the traffic
 **Principle:** The displacement is the area of the $(t,v)$ graph, and the distance between two bodies changes by the area between their two graphs (chapter *Comparing the motions of two bodies*).
-**Model answer:** This car is slower than the lorry for the whole lane, because its greatest velocity $72\,\text{km/h} = 20\,\text{m/s}$ is smaller than the lorry's $22.5\,\text{m/s}$. In the $(t,v)$ graph the lorry's horizontal line is above the car's rising line all the time, so the lorry's displacement grows more than the car's at every moment and the gap of $40\,\text{m}$ shrinks all the time. When the gap has been closed, the lorry is level with the car and goes past. A calculation confirms this (the car accelerates uniformly over the whole length of the lane): the acceleration lasts $2 \cdot 270\,\text{m} : (15\,\text{m/s} + 20\,\text{m/s}) \approx 15.4\,\text{s}$ and the car's average velocity is $17.5\,\text{m/s}$, so the lorry travels on average $5\,\text{m/s}$ faster and makes up $5\,\text{m/s} \cdot 15.4\,\text{s} \approx 77\,\text{m}$, more than the gap of $40\,\text{m}$; and in that time the lorry gets to $-40\,\text{m} + 22.5\,\text{m/s} \cdot 15.4\,\text{s} \approx 307\,\text{m}$, past the car before the end of the lane ($270\,\text{m}$). The car must then slow down and merge behind the lorry. When the car accelerates to the speed of the traffic, it is faster than the lorry in the final stage, the distance grows again and the car can merge safely in front of the lorry.
+**Model answer:** This car is slower than the lorry for the whole lane, because its greatest velocity $72\,\text{km/h} = 20\,\text{m/s}$ is smaller than the lorry's $22.5\,\text{m/s}$. In the $(t,v)$ graph the lorry's horizontal line is above the car's rising line all the time, so the lorry's displacement grows more than the car's at every moment and the gap of $40\,\text{m}$ shrinks all the time. When the gap has been closed, the lorry is level with the car and goes past. A calculation confirms this (the car accelerates uniformly over the whole length of the lane): the acceleration lasts $$
+\begin{aligned}
+&2 \cdot 270\,\text{m} : (15\,\text{m/s} + 20\,\text{m/s}) \\
+&\approx 15.4\,\text{s}
+\end{aligned}
+$$ and the car's average velocity is $17.5\,\text{m/s}$, so the lorry travels on average $5\,\text{m/s}$ faster and makes up $5\,\text{m/s} \cdot 15.4\,\text{s} \approx 77\,\text{m}$, more than the gap of $40\,\text{m}$; and in that time the lorry gets to $$
+\begin{aligned}
+&-40\,\text{m} + 22.5\,\text{m/s} \cdot 15.4\,\text{s} \\
+&\approx 307\,\text{m}
+\end{aligned}
+$$, past the car before the end of the lane ($270\,\text{m}$). The car must then slow down and merge behind the lorry. When the car accelerates to the speed of the traffic, it is faster than the lorry in the final stage, the distance grows again and the car can merge safely in front of the lorry.
 
 ### Yleisiä virheitä
 - The velocities are not converted to $\text{m/s}$, and kilometres per hour are multiplied by seconds.
@@ -43,7 +82,13 @@
 
 ### Hyväksytään myös
 - In part a first solving $a = \dfrac{v^2 - v_0^2}{2\,\Delta x}$ and then $t = \dfrac{v - v_0}{a}$, or using the equation of position and the equation of velocity together.
-- In part c the distance $d(t) = x_\text{A} - x_\text{L} = 40\,\text{m} - 7.5\,\text{m/s} \cdot t + 0.625\,\text{m/s}^2 \cdot t^2$ and its smallest value from the vertex of the parabola.
+- In part c the distance $$
+\begin{aligned}
+d(t) &= x_\text{A} - x_\text{L} \\
+&= 40\,\text{m} - 7.5\,\text{m/s} \cdot t \\
+&+ 0.625\,\text{m/s}^2 \cdot t^2
+\end{aligned}
+$$ and its smallest value from the vertex of the parabola.
 
 ## fy9-liike-s2
 
@@ -53,7 +98,16 @@
 **Principle:** The ball's acceleration is $g$ downwards during the whole flight, so the motion is uniformly accelerated. At the highest point the ball's velocity is zero for an instant, although the acceleration is not (chapter *Acceleration and uniformly accelerated motion*).
 **Formula:** $v = v_0 - g\,t_\text{top} = 0$, so $t_\text{top} = \dfrac{v_0}{g}$, and $y_\text{top} = y_{0\text{A}} + v_0\,t_\text{top} - \tfrac{1}{2}\,g\,t_\text{top}^2 = y_{0\text{A}} + \dfrac{v_0^2}{2g}$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
-**Substitution:** $t_\text{top} = \dfrac{12.0\,\text{m/s}}{9.81\,\text{m/s}^2} = 1.223\,\text{s}$; $y_\text{top} = 1.5\,\text{m} + 12.0\,\text{m/s} \cdot 1.223\,\text{s} - \tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \cdot (1.223\,\text{s})^2 = 1.5\,\text{m} + 14.68\,\text{m} - 7.34\,\text{m} = 8.84\,\text{m}$
+**Substitution:** $t_\text{top} = \dfrac{12.0\,\text{m/s}}{9.81\,\text{m/s}^2} = 1.223\,\text{s}$; $$
+\begin{aligned}
+y_\text{top} &= 1.5\,\text{m} \\
+&+ 12.0\,\text{m/s} \cdot 1.223\,\text{s} \\
+&- \tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \cdot (1.223\,\text{s})^2 \\
+&= 1.5\,\text{m} + 14.68\,\text{m} \\
+&- 7.34\,\text{m} \\
+&= 8.84\,\text{m}
+\end{aligned}
+$$
 **Answer:** $y_\text{top} \approx 8.8\,\text{m}$, to a tenth of a metre, because the height of the throw $1.5\,\text{m}$ is known to a tenth of a metre.
 **Reasonableness:** The rise is $7.34\,\text{m}$; the ball's average velocity while rising is $6.0\,\text{m/s}$, and $6.0\,\text{m/s} \cdot 1.223\,\text{s} \approx 7.3\,\text{m}$. The ball does not rise as high as the railing of the third floor ($9.0\,\text{m}$), which suits a strong but ordinary throw.
 
@@ -63,9 +117,27 @@
 **Principle:** The balls pass each other when they are at the same height at the same moment: $y_\text{A}(t) = y_\text{B}(t)$ (chapter *Comparing the motions of two bodies*). The motion of each is uniformly accelerated with the same acceleration, so the terms $-\tfrac{1}{2}\,g\,t^2$ cancel.
 **Formula:** $y_{0\text{A}} + v_0\,t - \tfrac{1}{2}\,g\,t^2 = y_{0\text{B}} - \tfrac{1}{2}\,g\,t^2$, so $t = \dfrac{y_{0\text{B}} - y_{0\text{A}}}{v_0}$ and $y = y_{0\text{B}} - \tfrac{1}{2}\,g\,t^2$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
-**Substitution:** $t = \dfrac{9.0\,\text{m} - 1.5\,\text{m}}{12.0\,\text{m/s}} = \dfrac{7.5\,\text{m}}{12.0\,\text{m/s}} = 0.625\,\text{s}$; $y = 9.0\,\text{m} - \tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \cdot (0.625\,\text{s})^2 = 9.0\,\text{m} - 1.916\,\text{m} = 7.08\,\text{m}$
+**Substitution:** $t = \dfrac{9.0\,\text{m} - 1.5\,\text{m}}{12.0\,\text{m/s}} = \dfrac{7.5\,\text{m}}{12.0\,\text{m/s}} = 0.625\,\text{s}$; $$
+\begin{aligned}
+y &= 9.0\,\text{m} \\
+&- \tfrac{1}{2} \cdot 9.81\,\text{m/s}^2 \cdot (0.625\,\text{s})^2 \\
+&= 9.0\,\text{m} - 1.916\,\text{m} \\
+&= 7.08\,\text{m}
+\end{aligned}
+$$
 **Answer:** The balls pass each other at $t \approx 0.63\,\text{s}$ at the height $y \approx 7.1\,\text{m}$, two significant figures like the difference in height $7.5\,\text{m}$.
-**Reasonableness:** Ball A's position function gives the same height: $1.5\,\text{m} + 12.0\,\text{m/s} \cdot 0.625\,\text{s} - 1.916\,\text{m} = 7.08\,\text{m}$. The passing happens before A's highest point at $1.22\,\text{s}$ and before B hits the floor at $\sqrt{2 \cdot 9.0\,\text{m} : 9.81\,\text{m/s}^2} \approx 1.35\,\text{s}$.
+**Reasonableness:** Ball A's position function gives the same height: $$
+\begin{aligned}
+&1.5\,\text{m} + 12.0\,\text{m/s} \cdot 0.625\,\text{s} \\
+&- 1.916\,\text{m} \\
+&= 7.08\,\text{m}
+\end{aligned}
+$$. The passing happens before A's highest point at $1.22\,\text{s}$ and before B hits the floor at $$
+\begin{aligned}
+&\sqrt{2 \cdot 9.0\,\text{m} : 9.81\,\text{m/s}^2} \\
+&\approx 1.35\,\text{s}
+\end{aligned}
+$$.
 
 ### c)
 **Find:** why the moment of passing does not depend on the acceleration of free fall, and whether the balls would pass each other at the same moment on the Moon
@@ -78,9 +150,21 @@
 **Principle:** In uniformly accelerated motion the velocity changes by the acceleration every second. Up is positive, so the acceleration is $-g$, and the sign of the velocity gives the direction (chapter *Acceleration and uniformly accelerated motion*).
 **Formula:** $v_\text{A} = v_0 - g\,t$ and $v_\text{B} = -g\,t$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
-**Substitution:** $v_\text{A} = 12.0\,\text{m/s} - 9.81\,\text{m/s}^2 \cdot 0.625\,\text{s} = 12.0\,\text{m/s} - 6.131\,\text{m/s} = 5.869\,\text{m/s}$ and $v_\text{B} = -9.81\,\text{m/s}^2 \cdot 0.625\,\text{s} = -6.131\,\text{m/s}$
+**Substitution:** $$
+\begin{aligned}
+v_\text{A} &= 12.0\,\text{m/s} \\
+&- 9.81\,\text{m/s}^2 \cdot 0.625\,\text{s} \\
+&= 12.0\,\text{m/s} - 6.131\,\text{m/s} \\
+&= 5.869\,\text{m/s}
+\end{aligned}
+$$ and $v_\text{B} = -9.81\,\text{m/s}^2 \cdot 0.625\,\text{s} = -6.131\,\text{m/s}$
 **Answer:** $v_\text{A} \approx 5.9\,\text{m/s}$ upwards and $v_\text{B} \approx -6.1\,\text{m/s}$, that is, $6.1\,\text{m/s}$ downwards, two significant figures like the moment of passing.
-**Reasonableness:** The difference of the velocities is $5.869\,\text{m/s} - (-6.131\,\text{m/s}) = 12.0\,\text{m/s}$, as the reasoning of part c requires. Ball A is still rising, because its highest point is only at $1.22\,\text{s}$.
+**Reasonableness:** The difference of the velocities is $$
+\begin{aligned}
+&5.869\,\text{m/s} - (-6.131\,\text{m/s}) \\
+&= 12.0\,\text{m/s}
+\end{aligned}
+$$, as the reasoning of part c requires. Ball A is still rising, because its highest point is only at $1.22\,\text{s}$.
 
 ### Yleisiä virheitä
 - At the highest point the acceleration is assumed to be zero, or the height is calculated without the height of the throw $1.5\,\text{m}$.
@@ -249,7 +333,18 @@
 ### c)
 **Find:** the uncertainty of the average speed on a $3.0\,\text{km}$ and on a $100\,\text{m}$ section when the car is driving at $80\,\text{km/h}$, and whether the third opinion holds
 **Principle:** The average speed is calculated from the travel time, and the travel time is the difference of two records, so the $0.5\,\text{s}$ uncertainty of each record affects it: in total at most about $1\,\text{s}$. The shorter the travel time, the greater the relative effect of the same time error (chapter *Measuring and the reliability of a measurement*).
-**Model answer:** At $80\,\text{km/h} = \dfrac{80 \cdot 1000\,\text{m}}{3600\,\text{s}} = 22.2\,\text{m/s}$ the travel time of the long section is $3000\,\text{m} : 22.2\,\text{m/s} = 135\,\text{s}$. An error of one second is less than $1\,\%$ of it, so the uncertainty of the average speed is about $80\,\text{km/h} \cdot 1\,\text{s} : 135\,\text{s} \approx 0.6\,\text{km/h}$. On the short section the travel time is only $100\,\text{m} : 22.2\,\text{m/s} = 4.5\,\text{s}$, and an error of one second is over $20\,\%$ of it: the measured average speed could be about $65$–$100\,\text{km/h}$, so the uncertainty is about $18\,\text{km/h}$. The third opinion therefore does not hold. On a short section the system could not tell a driver at the speed limit from a speeding one, and the result could go either way. The enforcement section must be long, so that the uncertainty of the timing is small compared with the travel time.
+**Model answer:** At $$
+\begin{aligned}
+&80\,\text{km/h} \\
+&= \dfrac{80 \cdot 1000\,\text{m}}{3600\,\text{s}} \\
+&= 22.2\,\text{m/s}
+\end{aligned}
+$$ the travel time of the long section is $3000\,\text{m} : 22.2\,\text{m/s} = 135\,\text{s}$. An error of one second is less than $1\,\%$ of it, so the uncertainty of the average speed is about $$
+\begin{aligned}
+&80\,\text{km/h} \cdot 1\,\text{s} : 135\,\text{s} \\
+&\approx 0.6\,\text{km/h}
+\end{aligned}
+$$. On the short section the travel time is only $100\,\text{m} : 22.2\,\text{m/s} = 4.5\,\text{s}$, and an error of one second is over $20\,\%$ of it: the measured average speed could be about $65$–$100\,\text{km/h}$, so the uncertainty is about $18\,\text{km/h}$. The third opinion therefore does not hold. On a short section the system could not tell a driver at the speed limit from a speeding one, and the result could go either way. The enforcement section must be long, so that the uncertainty of the timing is small compared with the travel time.
 
 ### Yleisiä virheitä
 - In part b the mean of the velocities is calculated, or a mean weighted by the distances ($\tfrac{2}{3} \cdot 100 + \tfrac{1}{3} \cdot 60 \approx 87\,\text{km/h}$), or the distance is divided by the wrong velocity.
@@ -257,7 +352,13 @@
 - In part c the uncertainty of the timing is compared with the distance or the velocity instead of the travel time.
 
 ### Hyväksytään myös
-- Part b in seconds and metres: $3000\,\text{m} : 132\,\text{s} = 22.7\,\text{m/s} \approx 82\,\text{km/h}$.
+- Part b in seconds and metres: $$
+\begin{aligned}
+&3000\,\text{m} : 132\,\text{s} \\
+&= 22.7\,\text{m/s} \\
+&\approx 82\,\text{km/h}
+\end{aligned}
+$$.
 - In part c the uncertainty based on $0.5\,\text{s}$ ($0.3\,\text{km/h}$ and $9\,\text{km/h}$), when the conclusion is the same.
 
 ## fy9-liike-s5
@@ -269,7 +370,7 @@
 **Formula:** $x = \tfrac{1}{2}\,a\,t^2$, so $a = \dfrac{2x}{t^2}$; the extreme values from the timing uncertainty are $a_\text{min} = \dfrac{2x}{(t + \Delta t)^2}$ and $a_\text{max} = \dfrac{2x}{(t - \Delta t)^2}$
 **Conversions:** The distance is in metres and the time in seconds, so no conversions are needed.
 **Substitution:** $a = \dfrac{2 \cdot 1.20\,\text{m}}{(1.6\,\text{s})^2} = \dfrac{2.40\,\text{m}}{2.56\,\text{s}^2} = 0.9375\,\text{m/s}^2$; extreme values $\dfrac{2.40\,\text{m}}{(1.8\,\text{s})^2} = 0.741\,\text{m/s}^2$ and $\dfrac{2.40\,\text{m}}{(1.4\,\text{s})^2} = 1.224\,\text{m/s}^2$
-**Answer:** $a \approx 0.94\,\text{m/s}^2$, but because of the uncertainty the result lies between $0.74$…$1.22\,\text{m/s}^2$, that is, $a \approx (0.9 \pm 0.3)\,\text{m/s}^2$. The result should be given to one or two significant figures, because the uncertainty is large.
+**Answer:** $a \approx 0.94\,\text{m/s}^2$, but because of the uncertainty the result lies between $0.74$…$1.22\,\text{m/s}^2$, that is, $a \approx (0.9 \pm 0.3)\,\text{m/s}^2$. Half of the range is $0.24\,\text{m/s}^2$, but the range is asymmetric: the upper limit is $0.29\,\text{m/s}^2$ above the best estimate, so the uncertainty is rounded up. The result should be given to one or two significant figures, because the uncertainty is large.
 **Reasonableness:** The relative uncertainty of the time is $0.2\,\text{s} : 1.6\,\text{s} \approx 13\,\%$, and because the time is squared in the formula, the relative uncertainty of the acceleration is about twice that, $25\,\%$. This matches the calculated range. An acceleration below $1\,\text{m/s}^2$ suits a gently sloping track.
 
 ### b)
@@ -302,7 +403,9 @@
 **Conversions:** The coefficient is already in $\text{m/s}^2$, so no conversions are needed.
 **Substitution:** $a = 2 \cdot (-4.44\,\text{m/s}^2) = -8.88\,\text{m/s}^2$
 **Answer:** The measured acceleration of free fall is $8.88\,\text{m/s}^2$ downwards (minus sign, because $y$ grows upwards), three significant figures like the coefficient $A$.
-**Reasonableness:** A check from the table: when $t = 0.50\,\text{s}$, the ball has fallen $1.653\,\text{m} - 0.538\,\text{m} = 1.115\,\text{m}$, and $\tfrac{1}{2} \cdot 8.88\,\text{m/s}^2 \cdot (0.50\,\text{s})^2 = 1.11\,\text{m}$. The result is of the same order of magnitude as $9.81\,\text{m/s}^2$ but clearly smaller, so something affects the measurement.
+**Reasonableness:** A check from the table: when $t = 0.50\,\text{s}$, the ball has fallen $$
+1.653\,\text{m} - 0.538\,\text{m} = 1.115\,\text{m}
+$$, and $\tfrac{1}{2} \cdot 8.88\,\text{m/s}^2 \cdot (0.50\,\text{s})^2 = 1.11\,\text{m}$. The result is of the same order of magnitude as $9.81\,\text{m/s}^2$ but clearly smaller, so something affects the measurement.
 
 ### b)
 **Given:** $A = (-4.44 \pm 0.05)\,\text{m/s}^2$, from part a $a = 8.88\,\text{m/s}^2$; table value $g = 9.81\,\text{m/s}^2$
@@ -310,7 +413,17 @@
 **Principle:** When a quantity is multiplied by a constant, its uncertainty is multiplied by the same constant. A result agrees with a reference value if the difference is the size of the uncertainty or smaller (chapter *Measuring and the reliability of a measurement*).
 **Formula:** $a = 2A$, so $\Delta a = 2\,\Delta A$
 **Conversions:** None needed: the units are the same.
-**Substitution:** $\Delta a = 2 \cdot 0.05\,\text{m/s}^2 = 0.10\,\text{m/s}^2$; the difference from the table value $9.81\,\text{m/s}^2 - 8.88\,\text{m/s}^2 = 0.93\,\text{m/s}^2$
+**Substitution:** $$
+\begin{aligned}
+\Delta a &= 2 \cdot 0.05\,\text{m/s}^2 \\
+&= 0.10\,\text{m/s}^2
+\end{aligned}
+$$; the difference from the table value $$
+\begin{aligned}
+&9.81\,\text{m/s}^2 - 8.88\,\text{m/s}^2 \\
+&= 0.93\,\text{m/s}^2
+\end{aligned}
+$$
 **Answer:** $a = (8.88 \pm 0.10)\,\text{m/s}^2$. The difference from the table value, $0.93\,\text{m/s}^2$, is about nine times the uncertainty, so the result does not agree with the table value.
 **Reasonableness:** The relative uncertainty is $0.10 : 8.88 \approx 1.1\,\%$, which suits the small scatter of the points, a few millimetres. The uncertainty of the fit tells you only about the random scatter, not about a systematic error that shifts all the points in the same direction.
 
@@ -336,5 +449,10 @@
 - The uncertainty of the fit is taken as the whole uncertainty of the result, and the systematic error is ignored.
 
 ### Hyväksytään myös
-- In part c first correcting the coefficient $A$: $A_\text{c} = 1.10 \cdot (-4.44\,\text{m/s}^2) = -4.88\,\text{m/s}^2$ and then $a_\text{c} = 2A_\text{c}$.
+- In part c first correcting the coefficient $A$: $$
+\begin{aligned}
+A_\text{c} &= 1.10 \cdot (-4.44\,\text{m/s}^2) \\
+&= -4.88\,\text{m/s}^2
+\end{aligned}
+$$ and then $a_\text{c} = 2A_\text{c}$.
 - In part b the comparison as relative numbers: a difference of about $9.5\,\%$, an uncertainty of about $1\,\%$.

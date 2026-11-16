@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 16426b567c7be578
+CONTENT-HASH: 5bb30f3c070dbfcc
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] hint "Arvo on MAFY-taulukon taulukossa …" — "taulukon taulukossa" reads clumsily — write "Arvo löytyy MAFY-taulukosta, taulukosta …".
-- [Minor] fy1-4-L1-09 — "MAFY-taulukko" is not explained for S2 readers as fy1-5…8 do ("koulun fysiikan taulukkokirja") — add that sentence.
+- [Minor] fy1-4-L2-09 text — "Ne on keksitty esimerkiksi" can be read as "for example"; write "Ne on keksitty esimerkkiä varten."
+- [Minor] fy1-4-L2-09 data table — the 13-row table is narrow and its caption wraps to five short lines in a half-width box; widen the caption or set it above the table.
+- [Minor] solution Järkevyys — the formula chain sits mid-sentence between "nousee" and "mikä vastaa"; reads correctly.
 
 ## Checked
-- Delta (new MAFY task fy1-4-L1-09 and its solution; figure tasks with candle, spring-masses), captures rebuilt for this hash.
-- Opened at 1280 px: open-exercises-1280 part holding fy1-4-L1-09 (task, hint, lock, answer field, solution rows, Vastaus, Järkevyys): KaTeX renders, chains aligned, thin spaces, decimal commas, no clipping.
-- Figure tasks are teacher-approved drawings (layout only); the neighbouring tasks' captures showed no layout damage. Packet carries no SCOPE line, so none is written.
+- delta, round 1: fy1-4-L2-09 only. Opened open-exercises-L2-1280 parts 12, 13, 14 (task card with data table, Vastaus field, whole solution).
+- KaTeX clean, degrees/units upright with thin space, decimal comma, Kaava rows aligned, no clipping; set still reads as one.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -190,7 +190,7 @@
       "unit": "J",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pudotetun pallon korkeus $h$ ja nopeus $v$ ajan $t$ funktiona (esimerkkiaineisto)",
+        "caption": "Pudotetun pallon korkeus $h$ ja nopeus $v$ ajan $t$ funktiona",
         "columns": [
           "$t\\,(\\text{s})$",
           "$h\\,(\\text{m})$",
@@ -260,7 +260,7 @@
       "unit": "kg",
       "tolerance": 0.04,
       "data": {
-        "caption": "Kärryn nopeus $v$ ja liike-energia $E_\\text{k}$ (esimerkkiaineisto)",
+        "caption": "Kärryn nopeus $v$ ja liike-energia $E_\\text{k}$",
         "columns": [
           "$v\\,(\\text{m/s})$",
           "$E_\\text{k}\\,(\\text{J})$"
@@ -314,6 +314,48 @@
       "unit": "kg",
       "tolerance": 0.05,
       "figure": "fy4-7/ep-kuvaaja"
+    },
+    {
+      "id": "fy4-7-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "text": "Fintraffic mittaa ajoneuvojen nopeuksia pääteillä liikenteen automaattisilla mittausasemilla (LAM-asemilla). Raportti <a href=\"https://www.fintraffic.fi/sites/default/files/2026-05/Ajonopeudet_maanteilla_2025.pdf\" target=\"_blank\" rel=\"noopener\">Fintraffic: Ajonopeudet maanteillä 2025</a> (PDF, luettu 16. marraskuuta 2026) kokoaa kesäkauden 2025 mittaukset 268 asemalta. Taulukossa on raportin lukuja kolmelta tietyypiltä: kaikkien ajoneuvojen keskinopeus, nopeusrajoituksen ylittäneiden ajoneuvojen osuus ja niiden ajoneuvojen osuus, jotka ylittivät rajoituksen yli $10\\,\\text{km/h}$:lla.\n\na) Kuvaile taulukon avulla, miten ajonopeudet jakautuvat $80\\,\\text{km/h}$:n rajoituksen teillä. Kuinka suuri osa ajoneuvoista ajaa enintään rajoituksen mukaista nopeutta, kuinka suuri osa enintään $10\\,\\text{km/h}$ ylinopeutta ja kuinka suuri osa yli $10\\,\\text{km/h}$ ylinopeutta? Vertaa jakaumaa $100\\,\\text{km/h}$:n teiden jakaumaan.\n\nb) Auton massa on $1500\\,\\text{kg}$. Laske auton liike-energia nopeudella $80\\,\\text{km/h}$ ja nopeudella $92\\,\\text{km/h}$, joka on yli $10\\,\\text{km/h}$ ylinopeutta. Kuinka monta prosenttia suurempi liike-energia on suuremmalla nopeudella?\n\nc) Arvioi autojen pysähtymismatkojen ero, kun kuljettajan reaktioaika on $1{,}0\\,\\text{s}$ ja auto hidastuu jarrutuksessa tasaisesti hidastuvuudella $8{,}0\\,\\text{m/s}^2$ kummallakin nopeudella.\n\nd) Mitä tämän aineiston perusteella voi päätellä liikenneturvallisuudesta? Nimeä myös ainakin kolme turvallisuuteen vaikuttavaa tekijää, joista aineisto ei kerro mitään.\n\nKirjoita vastauslaatikkoon kohdan c) pysähtymismatkojen ero.",
+      "answer": 13.3,
+      "unit": "m",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Ajonopeudet pääteillä kesäkaudella 2025, kaikki ajoneuvot (Fintraffic: Ajonopeudet maanteillä 2025)",
+        "columns": [
+          "Tie ja nopeusrajoitus",
+          "Keskinopeus $(\\text{km/h})$",
+          "Rajoituksen ylittäneitä $(\\%)$",
+          "Yli $10\\,\\text{km/h}$ ylittäneitä $(\\%)$"
+        ],
+        "rows": [
+          [
+            "Yksiajoratainen päätie, $80\\,\\text{km/h}$",
+            "82.3",
+            "62.0",
+            "13.8"
+          ],
+          [
+            "Yksiajoratainen päätie, $100\\,\\text{km/h}$",
+            "96.3",
+            "39.8",
+            "8.1"
+          ],
+          [
+            "Moottoritie, $120\\,\\text{km/h}$",
+            "112.6",
+            "36.2",
+            "7.3"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -353,7 +395,7 @@
       "unit": "J",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pallon korkein kohta $h$ lattian yläpuolella (esimerkkiaineisto)",
+        "caption": "Pallon korkein kohta $h$ lattian yläpuolella",
         "columns": [
           "Pomppauksia",
           "$h\\,(\\text{m})$"
@@ -394,7 +436,7 @@
       "unit": "kJ",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pulkkailijan korkeus $h$ ja nopeus $v$ mittauspisteissä (esimerkkiaineisto)",
+        "caption": "Pulkkailijan korkeus $h$ ja nopeus $v$ mittauspisteissä",
         "columns": [
           "Piste",
           "$h\\,(\\text{m})$",

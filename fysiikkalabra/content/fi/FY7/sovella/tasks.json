@@ -332,13 +332,13 @@
       "title": "Kaivoksen sähköliittymä",
       "source": "example",
       "source_note": "Kaivos, johto ja tehot ovat keksittyjä. Alumiinin resistiivisyys ja tiheys ovat taulukkoarvoja.",
-      "text": "Kaivosyhtiö avaa uuden kaivoksen $25\\,\\text{km}$:n päähän lähimmältä sähköasemalta. Sähköasema syöttää kaivokselle johtoon jatkuvasti $6{,}0\\,\\text{MW}$:n sähkötehon. Osa tästä tehosta muuttuu siirtojohdossa lämmöksi, joten kaivoksen vastaanottama teho riippuu siirtohäviöstä. Sähköasemalta voidaan rakentaa joko $20\\,\\text{kV}$:n johto suoraan kaivokselle tai $110\\,\\text{kV}$:n johto, jonka päähän kaivokselle rakennetaan muuntaja. Muuntaja laskee jännitteen $20\\,\\text{kV}$:iin kaivoksen omaa verkkoa varten.\n\nKummassakin vaihtoehdossa johdossa on kaksi alumiinijohdinta, joiden poikkipinta-ala on $150\\,\\text{mm}^2$. Alumiinin resistiivisyys on $2{,}82 \\cdot 10^{-8}\\,\\Omega\\,\\text{m}$ ja tiheys $2700\\,\\text{kg/m}^3$.\n\nTodelliset voimajohdot ovat kolmivaiheisia, mutta tässä riittää yksinkertaistettu kaksijohtiminen malli: sähköasema lähettää tehon $6{,}0\\,\\text{MW}$ johtoon, teho lasketaan kaavalla $P = UI$ kuten tasavirralla, jännitteet ja virrat ovat tehollisia arvoja, ja muuntaja on ideaalinen.",
+      "text": "Kaivosyhtiö avaa uuden kaivoksen $25\\,\\text{km}$:n päähän lähimmältä sähköasemalta. Sähköasema syöttää kaivokselle johtoon jatkuvasti $6{,}0\\,\\text{MW}$:n sähkötehon. Osa tästä tehosta muuttuu siirtojohdossa sisäenergiaksi, joten kaivoksen vastaanottama teho riippuu siirtohäviöstä. Sähköasemalta voidaan rakentaa joko $20\\,\\text{kV}$:n johto suoraan kaivokselle tai $110\\,\\text{kV}$:n johto, jonka päähän kaivokselle rakennetaan muuntaja. Muuntaja laskee jännitteen $20\\,\\text{kV}$:iin kaivoksen omaa verkkoa varten.\n\nKummassakin vaihtoehdossa johdossa on kaksi alumiinijohdinta, joiden poikkipinta-ala on $150\\,\\text{mm}^2$. Alumiinin resistiivisyys on $2{,}82 \\cdot 10^{-8}\\,\\Omega\\,\\text{m}$ ja tiheys $2700\\,\\text{kg/m}^3$.\n\nTodelliset voimajohdot ovat kolmivaiheisia, mutta tässä riittää yksinkertaistettu kaksijohtiminen malli: sähköasema lähettää tehon $6{,}0\\,\\text{MW}$ johtoon, teho lasketaan kaavalla $P = UI$ kuten tasavirralla, jännitteet ja virrat ovat tehollisia arvoja, ja muuntaja on ideaalinen.",
       "parts": [
         {
           "id": "a",
           "kind": "calc",
           "points": 3,
-          "text": "Kuinka suuri teho johdossa muuttuu lämmöksi, jos käytetään $20\\,\\text{kV}$:n johtoa? Kuinka monta prosenttia se on johtoon syötetystä tehosta?",
+          "text": "Kuinka suuri teho johdossa muuttuu sisäenergiaksi, jos käytetään $20\\,\\text{kV}$:n johtoa? Kuinka monta prosenttia se on johtoon syötetystä tehosta?",
           "answer": [
             {
               "name": "Ph",

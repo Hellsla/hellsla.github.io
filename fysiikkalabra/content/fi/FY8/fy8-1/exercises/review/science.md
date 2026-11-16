@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 8dc2567292c69c38
-SCOPE: delta added-exercise from 5b627e2749906f73 base 5a45b28682e8
+CONTENT-HASH: c55461f4fa2a8ea8
+SCOPE: delta added-exercise from 08a5298251fe93cc base 415cbc7c6bc3
 
 ## Blocking
 
 ## Polish
-- lessons/FY8/fy8-1/answers.py:368 — the comment still says "387,6 nm -> 388 nm", but the line computes 387,50 nm, which matches the answer 387 and solutions.md. — Change the comment to "387,5 nm -> 387 nm".
-- solutions.md fy8-1-L2-08 Sijoitus — the chain uses f0 = 5,56 (·10^14 Hz), but the student can only read about 5,6 from the figure. With 5,6 the result is 2,65 eV, which is still inside the tolerance, so this is not an error. — Write "(12 − 5,6) ≈ 2,65 eV", or say that 5,56 is the exact value W/h behind the figure.
-- solutions.md fy8-1-L2-09 Vastaus — the "±1 %" claim is still loose. A reading of 7,0 ± 0,1 (·10^14 Hz) gives 422–434 nm, which is about ±1,5 % (±6 nm). — State the reading uncertainty and the ±6 nm it gives.
+- exercises/solutions.md:431 — Vastaus gives the reading accuracy as "noin $\pm 10\,\text{nm}$", but Annettu (line 408) says "muutaman nanometrin" and the example brackets the limit within $2\,\text{nm}$ (538/540). Use one figure in both places.
+- exercises/solutions.md:432 — "natriumin raja-aallonpituus $544\,\text{nm}$ teoriassa" does not say where 544 comes from. It is $hc/W$ with $W = 2{,}28\,\text{eV}$: name that value.
+- exercises/solutions.md:424 — $6{,}626 \cdot 10^{-34} \cdot 5{,}562 \cdot 10^{14} = 3{,}685 \cdot 10^{-19}\,\text{J}$, not $3{,}686$. The final $2{,}30\,\text{eV}$ is unchanged.
+- lessons/FY8/fy8-1/answers.py:238 — the comment "3,7e-19..." is garbled. Write $3{,}685 \cdot 10^{-19}\,\text{J}$.
 
 ## Checked
-- Delta scope: I judged the three added exercises (L1-10, L2-08, L2-09) and the round-2 change to L2-08's substitution chain and reasonableness check.
-- L1-10: λ0 = hc/W with W = 3,20 eV gives 387,50 nm, so the answer 387 and the 5 % tolerance are right. The UV-A remark is right ✓.
-- L2-08: the figure's line A (W = 2,30 eV) at 12·10^14 Hz gives 4,963 − 2,30 = 2,663 eV. The new chain 0,4136 · (12 − 5,56) = 2,664 eV is right. The check hf = 4,96 eV > E_k,max > 0 is a real check. The reading "0,3 below the 3 eV line" (≈2,7 eV) matches the figure ✓.
-- L2-09: line B (W = 2,90 eV) has f0 = 7,011·10^14 Hz, so c/f0 = 427,6 nm. The read value 7,0 gives 428,3 nm. Both are within 4 %. The remark that the vertical intercept is −W is correct ✓.
-- I recomputed all three answers in one independent script and they agree with the output of answers.py.
-- The hash was 8dc2567292c69c38 at the start and at the end.
+- Hash c55461f4fa2a8ea8 at the start and the end. Only fy8-1-L2-10 was judged.
+- Recomputed: $f_0 = c/539\,\text{nm} = 5{,}562 \cdot 10^{14}\,\text{Hz}$ and $hf_0 = 2{,}3006\,\text{eV}$. answers.py also gives 2,30055. The box value 2,3 eV is correct, and $hc/W = 539{,}1\,\text{nm}$ for $W = 2{,}3\,\text{eV}$.
+- Tolerance 0,05 (relative) accepts 2,185–2,415 eV. Readings of 530–550 nm give 2,254–2,340 eV, so they are all accepted, as the solution says.
+- Attribution matches the verified lines: the metal list, sodium 2,3 eV, zinc 4,3 eV and platinum 6,3 eV in the sim's model, the wavelength and intensity sliders, no frequency control, the energy graph, and that it runs in the browser. Nothing beyond those lines is attributed to PhET.
+- Physics: $hf_0 = W$ at the threshold. Intensity changes the current but not $E_\text{k,max}$, and $E_\text{k,max} = hf - W$ grows with frequency. The d) model answer contrasts the wave model with the photon model correctly. Scope is FY8 fy8-1.
+- Vastaus's first paragraph holds 2,3 eV. Two significant figures are justified by the slider reading.

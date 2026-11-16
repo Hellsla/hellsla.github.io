@@ -6,7 +6,13 @@
 **Periaate:** Kun käämi pyörii tasaisesti homogeenisessa kentässä, sen läpi kulkeva vuo vaihtelee jaksollisesti, ja induktiolain mukaan käämiin syntyy sinimuotoinen jännite. Jännite on huippuarvossaan, kun käämin taso on kentän suuntainen, koska vuo muuttuu silloin nopeimmin (luvut *Sähkömagneettinen induktio* ja *Generaattori ja vaihtovirta*). Tehollinen arvo on se tasajännite, joka antaisi vastukseen saman keskimääräisen tehon; sinimuotoisella jännitteellä se on huippuarvo jaettuna luvulla $\sqrt{2}$.
 **Kaava:** $e_0 = NBA \cdot 2\pi f$ ja $U = \dfrac{e_0}{\sqrt{2}}$
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $e_0 = 60 \cdot 0{,}50\,\text{T} \cdot 0{,}060\,\text{m}^2 \cdot 2\pi \cdot 50\,\tfrac{1}{\text{s}} = 565{,}5\,\text{V}$ ja $U = \dfrac{565{,}5\,\text{V}}{\sqrt{2}} = 399{,}9\,\text{V}$
+**Sijoitus:** $$
+\begin{aligned}
+e_0 &= 60 \cdot 0{,}50\,\text{T} \cdot 0{,}060\,\text{m}^2 \\
+&\cdot 2\pi \cdot 50\,\tfrac{1}{\text{s}} \\
+&= 565{,}5\,\text{V}
+\end{aligned}
+$$ ja $U = \dfrac{565{,}5\,\text{V}}{\sqrt{2}} = 399{,}9\,\text{V}$
 **Vastaus:** Huippuarvo on $e_0 \approx 570\,\text{V}$ ja tehollinen arvo $U \approx 400\,\text{V}$, kaksi merkitsevää numeroa kuten magneettivuon tiheys $0{,}50\,\text{T}$ ja pinta-ala $0{,}060\,\text{m}^2$.
 **Järkevyys:** Yksiköt sopivat: $\text{T} \cdot \text{m}^2 \cdot \tfrac{1}{\text{s}} = \tfrac{\text{Wb}}{\text{s}} = \text{V}$. Tehollinen arvo on huippuarvoa pienempi, kuten pitää, ja $400\,\text{V}$ on tavallinen teollisuuden jännite.
 
@@ -22,12 +28,12 @@
 
 ### c)
 **Annettu:** linjan virta $I_2 = 7{,}50\,\text{A}$ (b-kohta), resistanssi $R = 6{,}0\,\Omega$, linjan jännite $U_2 = 20{,}0\,\text{kV}$, teho $P = 150\,\text{kW}$; vertailuksi jännite $U_1 = 400\,\text{V}$
-**Kysytty:** lämmöksi muuttuvan tehon osuus $\tfrac{P_\text{h}}{P}$ ja mitä tapahtuisi jännitteellä $400\,\text{V}$
+**Kysytty:** linjan sisäenergiaksi muuttuvan tehon osuus $\tfrac{P_\text{h}}{P}$ ja mitä tapahtuisi jännitteellä $400\,\text{V}$
 **Periaate:** Linjan resistanssissa sähköenergiaa muuttuu sisäenergiaksi teholla $RI^2$. Siirtojännite $20\,\text{kV}$ ei ole linjan resistanssin yli, joten häviö lasketaan virrasta, joka saadaan siirrettävästä tehosta (luku *Muuntaja ja sähköenergian siirto*).
 **Kaava:** $I = \dfrac{P}{U}$ ja $P_\text{h} = RI^2$, joten $P_\text{h} = \dfrac{RP^2}{U^2}$ ja häviön osuus siirretystä tehosta $\dfrac{P_\text{h}}{P} = \dfrac{RP}{U^2}$
 **Muunnokset:** Lopuksi osuus prosentteina: kerrotaan luvulla $100\,\%$.
 **Sijoitus:** $P_\text{h} = 6{,}0\,\Omega \cdot (7{,}50\,\text{A})^2 = 337{,}5\,\text{W}$, joten $\dfrac{P_\text{h}}{P} = \dfrac{337{,}5\,\text{W}}{150\,000\,\text{W}} = 0{,}00225 = 0{,}225\,\%$. Jännitteellä $400\,\text{V}$: $I = 375\,\text{A}$ ja $RI^2 = 6{,}0\,\Omega \cdot (375\,\text{A})^2 = 843\,750\,\text{W} \approx 844\,\text{kW}$
-**Vastaus:** Linjassa muuttuu lämmöksi noin $0{,}23\,\%$ tehosta, kaksi merkitsevää numeroa kuten resistanssi $6{,}0\,\Omega$. Jännitteellä $400\,\text{V}$ lauseke $RI^2$ antaisi $844\,\text{kW}$, yli viisinkertaisen siirrettävään tehoon verrattuna. Se tarkoittaa, että siirto ei onnistuisi lainkaan: jo linjan jännitehäviö $RI = 6{,}0\,\Omega \cdot 375\,\text{A} = 2250\,\text{V}$ olisi suurempi kuin koko jännite.
+**Vastaus:** Linjassa muuttuu sisäenergiaksi noin $0{,}23\,\%$ tehosta, kaksi merkitsevää numeroa kuten resistanssi $6{,}0\,\Omega$. Jännitteellä $400\,\text{V}$ lauseke $RI^2$ antaisi $844\,\text{kW}$, yli viisinkertaisen siirrettävään tehoon verrattuna. Se tarkoittaa, että siirto ei onnistuisi lainkaan: jo linjan jännitehäviö $RI = 6{,}0\,\Omega \cdot 375\,\text{A} = 2250\,\text{V}$ olisi suurempi kuin koko jännite.
 **Järkevyys:** Häviö on verrannollinen virran neliöön, ja virta kääntäen verrannollinen jännitteeseen, joten $50$-kertainen jännite pienentää häviötä kertoimella $50^2 = 2500$: $844\,\text{kW} : 2500 \approx 340\,\text{W}$, sama tulos.
 
 ### d)
@@ -340,7 +346,14 @@
 ### b)
 **Kysytty:** ovatko ryhmän johtopäätökset perusteltuja
 **Periaate:** Pienen kulman oletus $\sin\theta \approx \tfrac{x}{L}$ pätee vain pienillä kulmilla. Tulosta verrataan valmistajan arvoon epävarmuuden avulla, ja maksimien määrää rajoittaa ehto $k\lambda < d$ (luvut *Valon interferenssi ja diffraktio* ja *Mittaaminen ja mittauksen luotettavuus*).
-**Mallivastaus:** Kumpikaan johtopäätös ei ole perusteltu. Virhe on laskutavassa, ei laserissa. Pienen kulman oletus antaa ensimmäisestä kertaluvusta $\tfrac{1{,}667\,\mu\text{m} \cdot 0{,}270\,\text{m}}{0{,}800\,\text{m}} \approx 562\,\text{nm}$, noin $6\,\%$ liikaa, ja toisesta $692\,\text{nm}$, noin $30\,\%$ liikaa, koska ero tangentin ja sinin välillä kasvaa kulman kasvaessa. Oikein laskettuna tulos on $532$–$533\,\text{nm}$. Jos etäisyydet tunnetaan noin $0{,}3\,\text{cm}$:n tarkkuudella, toisen kertaluvun ääriarvot antavat noin $530$–$535\,\text{nm}$, joten tulos on sopusoinnussa valmistajan arvon $532\,\text{nm}$ kanssa. Lisäksi laser näytti vihreältä, mikä jo sulkee pois punaisen valon. Kolmas kertaluku on olemassa, koska $3\lambda = 1{,}60\,\mu\text{m} < d = 1{,}667\,\mu\text{m}$, mutta $\sin\theta_3 = 0{,}958$, $\theta_3 \approx 73^\circ$ ja maksimi on $x_3 = 0{,}800\,\text{m} \cdot \tan 73{,}3^\circ \approx 2{,}7\,\text{m}$:n päässä keskimaksimista. Se on todennäköisesti seinän reunan ulkopuolella tai niin himmeä, ettei sitä huomattu. Hila ei siis ole viallinen.
+**Mallivastaus:** Kumpikaan johtopäätös ei ole perusteltu. Virhe on laskutavassa, ei laserissa. Pienen kulman oletus antaa ensimmäisestä kertaluvusta $\tfrac{1{,}667\,\mu\text{m} \cdot 0{,}270\,\text{m}}{0{,}800\,\text{m}} \approx 562\,\text{nm}$, noin $6\,\%$ liikaa, ja toisesta $692\,\text{nm}$, noin $30\,\%$ liikaa, koska ero tangentin ja sinin välillä kasvaa kulman kasvaessa. Oikein laskettuna tulos on $532$–$533\,\text{nm}$. Jos etäisyydet tunnetaan noin $0{,}3\,\text{cm}$:n tarkkuudella, toisen kertaluvun ääriarvot antavat noin $530$–$535\,\text{nm}$, joten tulos on sopusoinnussa valmistajan arvon $532\,\text{nm}$ kanssa. Lisäksi laser näytti vihreältä, mikä jo sulkee pois punaisen valon. Kolmas kertaluku on olemassa, koska $$
+\begin{aligned}
+&3\lambda \\
+&= 1{,}60\,\mu\text{m} \\
+&< d \\
+&= 1{,}667\,\mu\text{m}
+\end{aligned}
+$$, mutta $\sin\theta_3 = 0{,}958$, $\theta_3 \approx 73^\circ$ ja maksimi on $x_3 = 0{,}800\,\text{m} \cdot \tan 73{,}3^\circ \approx 2{,}7\,\text{m}$:n päässä keskimaksimista. Se on todennäköisesti seinän reunan ulkopuolella tai niin himmeä, ettei sitä huomattu. Hila ei siis ole viallinen.
 
 ### c)
 **Kysytty:** miten mittausta parannetaan
@@ -361,7 +374,12 @@
 **Periaate:** Magneettinen voima $qvB$ on kohtisuorassa nopeutta vastaan, joten protoni on elektrodin sisällä tasaisessa ympyräliikkeessä, ja voima on sen keskeisvoima (luvut *Varatun hiukkasen liike sähkö- ja magneettikentässä* ja *Normaalikiihtyvyys ja ympyräliikkeen liikeyhtälö*). Kierroksella protoni kulkee ympyrän kehän $2\pi r$ (luku *Ympyrärata: jaksonaika ja ratanopeus*). Jännitteen suunnan on vaihduttava joka puolikierroksella, kun protoni ylittää raon, joten jännitteen taajuus on sama kuin kierrostaajuus.
 **Kaava:** $qvB = \dfrac{mv^2}{r}$, joten $r = \dfrac{mv}{qB}$, ja $T = \dfrac{2\pi r}{v} = \dfrac{2\pi m}{qB}$; vauhti supistuu, ja $f = \dfrac{1}{T} = \dfrac{qB}{2\pi m}$
 **Muunnokset:** Suureet ovat perusyksiköissä; lopuksi $1\,\text{MHz} = 10^6\,\text{Hz}$.
-**Sijoitus:** $T = \dfrac{2\pi \cdot 1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}20\,\text{T}} = 5{,}468 \cdot 10^{-8}\,\text{s}$, joten $f = \dfrac{1}{5{,}468 \cdot 10^{-8}\,\text{s}} = 1{,}829 \cdot 10^{7}\,\text{Hz} = 18{,}29\,\text{MHz}$
+**Sijoitus:** $$
+\begin{aligned}
+T &= \dfrac{2\pi \cdot 1{,}673 \cdot 10^{-27}\,\text{kg}}{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1{,}20\,\text{T}} \\
+&= 5{,}468 \cdot 10^{-8}\,\text{s}
+\end{aligned}
+$$, joten $f = \dfrac{1}{5{,}468 \cdot 10^{-8}\,\text{s}} = 1{,}829 \cdot 10^{7}\,\text{Hz} = 18{,}29\,\text{MHz}$
 **Vastaus:** Kierrosaika $T = \tfrac{2\pi m}{qB}$ ei riipu vauhdista eikä säteestä: nopeampi protoni kulkee suuremman ympyrän samassa ajassa. Jännitteen on vaihdeltava taajuudella $f \approx 18{,}3\,\text{MHz}$, kolme merkitsevää numeroa kuten magneettivuon tiheys $1{,}20\,\text{T}$.
 **Järkevyys:** Yksiköt: $\tfrac{\text{kg}}{\text{C} \cdot \text{T}} = \tfrac{\text{kg}}{\text{C} \cdot \tfrac{\text{N}}{\text{A} \cdot \text{m}}} = \tfrac{\text{kg} \cdot \text{m}}{\text{N} \cdot \text{s}} = \text{s}$. Taajuus on radiotaajuusaluetta, kuten syklotronien kiihdytysjännitteillä.
 
@@ -393,7 +411,12 @@
 **Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a_\text{n} = \dfrac{(3{,}914 \cdot 10^{7}\,\text{m/s})^2}{0{,}3406\,\text{m}} = 4{,}498 \cdot 10^{15}\,\text{m/s}^2$
 **Vastaus:** Kiihtyvyys on $a \approx 4{,}5 \cdot 10^{15}\,\text{m/s}^2$ ja osoittaa radan keskipisteeseen, kaksi merkitsevää numeroa kuten b-kohdan tulokset.
-**Järkevyys:** $\tfrac{qvB}{m} = \tfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 3{,}914 \cdot 10^{7}\,\text{m/s} \cdot 1{,}20\,\text{T}}{1{,}673 \cdot 10^{-27}\,\text{kg}} \approx 4{,}5 \cdot 10^{15}\,\text{m/s}^2$, sama tulos. Kiihtyvyys on valtava, koska protonin massa on hyvin pieni ja voima noin $7{,}5 \cdot 10^{-12}\,\text{N}$.
+**Järkevyys:** $$
+\begin{aligned}
+\tfrac{qvB}{m} &= \tfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 3{,}914 \cdot 10^{7}\,\text{m/s} \cdot 1{,}20\,\text{T}}{1{,}673 \cdot 10^{-27}\,\text{kg}} \\
+&\approx 4{,}5 \cdot 10^{15}\,\text{m/s}^2
+\end{aligned}
+$$, sama tulos. Kiihtyvyys on valtava, koska protonin massa on hyvin pieni ja voima noin $7{,}5 \cdot 10^{-12}\,\text{N}$.
 
 ### Yleisiä virheitä
 - a-kohdassa kierrosaika lasketaan erikseen jollekin vauhdille, eikä todeta, että vauhti supistuu.
@@ -404,3 +427,102 @@
 ### Hyväksytään myös
 - a-kohdassa taajuuden laskeminen suoraan lausekkeesta $f = \tfrac{qB}{2\pi m}$.
 - c-kohdassa vastaus $n = 80$ ilman desimaaleja, koska kierrosten määrä on kokonaisluku.
+
+## fy9-magnetismi-valo-s7
+
+### a)
+**Annettu:** aineistosta (CERN, tarkistettu 16.11.2026) LHC:n kehän pituus $l = 26\,659\,\text{m}$ ja kierrosten määrä $N = 11\,245$ ajassa $t = 1\,\text{s}$; valon nopeus $c = 2{,}99792458 \cdot 10^8\,\text{m/s}$
+**Kysytty:** protonien vauhti $v$ ja sen vertailu valon nopeuteen
+**Periaate:** Kiihdytyksen jälkeen protonit kiertävät rengasta vakiovauhdilla, joten vauhti on kuljettu matka jaettuna siihen kuluneella ajalla (luku *Ympyrärata: jaksonaika ja ratanopeus*). Yhdellä kierroksella protoni kulkee kehän pituuden, joten sekunnissa se kulkee matkan $s = Nl$.
+**Kaava:** $v = \dfrac{s}{t} = \dfrac{Nl}{t}$
+**Muunnokset:** Suureet ovat perusyksiköissä, joten muunnoksia ei tarvita.
+**Sijoitus:** $$
+\begin{aligned}
+v &= \dfrac{11\,245 \cdot 26\,659\,\text{m}}{1\,\text{s}} \\
+&= 299\,780\,455\,\text{m/s} \\
+&\approx 2{,}9978 \cdot 10^{8}\,\text{m/s}
+\end{aligned}
+$$
+**Vastaus:** Protonien vauhti on $v \approx 2{,}9978 \cdot 10^8\,\text{m/s}$, viisi merkitsevää numeroa kuten aineiston luvuissa. Vertailu: $$
+\begin{aligned}
+\dfrac{v}{c} &= \dfrac{2{,}9978 \cdot 10^{8}\,\text{m/s}}{2{,}99792458 \cdot 10^{8}\,\text{m/s}} \\
+&\approx 0{,}99996
+\end{aligned}
+$$ eli vauhti on käytännössä valon nopeus. Laskettu ero, noin $12\,\text{km/s}$ eli $0{,}004\,\%$, ei kuitenkaan kerro, kuinka paljon protonit jäävät valon nopeudesta. Aineiston luvut on pyöristetty kokonaisiksi metreiksi ja kierroksiksi, ja jo tämä pyöristys sallii vauhdille välin $2{,}9976 \cdot 10^8\,\text{m/s}$ … $2{,}9980 \cdot 10^8\,\text{m/s}$, johon valon nopeus sisältyy. Aineistosta voi siis päätellä, että protonit kulkevat näiden lukujen tarkkuudella valon nopeudella, mutta todellista eroa siitä ei voi päätellä. Koska protonilla on massa, sen vauhti jää kuitenkin aina alle valon nopeuden.
+**Järkevyys:** Valo kulkee sekunnissa noin $300\,000\,\text{km}$, ja noin $27\,\text{km}$:n kehä mahtuu tähän matkaan noin $\tfrac{300\,000\,\text{km}}{27\,\text{km}} \approx 11\,000$ kertaa. Aineiston $11\,245$ kierrosta sekunnissa sopii tähän.
+
+### b)
+**Annettu:** yhden protonin energia $E_1 = 6{,}8\,\text{TeV}$ (aineisto, tarkistettu 16.11.2026), $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Kysytty:** energia $E_1$ jouleina
+**Periaate:** Elektronivoltti on energian yksikkö: se on energia, jonka alkeisvarauksen suuruinen varaus saa yhden voltin jännitteessä (luku *Potentiaalienergia ja potentiaali sähkökentässä*). Etuliite tera (T) tarkoittaa kerrointa $10^{12}$.
+**Kaava:** $E_1 = 6{,}8\,\text{TeV} = 6{,}8 \cdot 10^{12}\,\text{eV}$, ja yksikön $\text{eV}$ paikalle sijoitetaan $1{,}602 \cdot 10^{-19}\,\text{J}$
+**Muunnokset:** $1\,\text{TeV} = 10^{12}\,\text{eV}$ ja $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
+**Sijoitus:** $$
+\begin{aligned}
+E_1 &= 6{,}8 \cdot 10^{12} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} \\
+&= 1{,}0894 \cdot 10^{-6}\,\text{J}
+\end{aligned}
+$$
+**Vastaus:** Yhden protonin energia on $E_1 \approx 1{,}1 \cdot 10^{-6}\,\text{J}$ eli noin $1{,}1\,\mu\text{J}$, kaksi merkitsevää numeroa kuten energia $6{,}8\,\text{TeV}$.
+**Järkevyys:** Arkimittakaavassa energia on pieni: $2\,\text{mg}$:n hyttysellä on vauhdilla $1\,\text{m/s}$ liike-energia $\tfrac12 \cdot 2 \cdot 10^{-6}\,\text{kg} \cdot (1\,\text{m/s})^2 = 1 \cdot 10^{-6}\,\text{J}$. Yhdelle protonille se on valtava. Jos vauhti laskettaisiin klassisesta liike-energiasta $\tfrac12 mv^2$ protonin massalla $1{,}673 \cdot 10^{-27}\,\text{kg}$, saataisiin $$
+\begin{aligned}
+v &= \sqrt{\dfrac{2 \cdot 1{,}0894 \cdot 10^{-6}\,\text{J}}{1{,}673 \cdot 10^{-27}\,\text{kg}}} \\
+&\approx 3{,}6 \cdot 10^{10}\,\text{m/s}
+\end{aligned}
+$$ eli noin $120$ kertaa valon nopeus. Tulos on mahdoton ja ristiriidassa a-kohdan kanssa, joten klassinen liike-energian lauseke ei päde näin suurilla energioilla: energia kasvaa, vaikka vauhti pysyy alle valon nopeuden.
+
+### c)
+**Annettu:** yhdessä suihkussa noin $2500$ kimppua ja kimpussa $1{,}6 \cdot 10^{11}$ protonia (aineisto, tarkistettu 16.11.2026); yhden protonin energia $E_1 = 1{,}0894 \cdot 10^{-6}\,\text{J}$ (b-kohta)
+**Kysytty:** yhteen protonisuihkuun varastoitunut energia $E$
+**Periaate:** Suihkun energia on sen protonien energioiden summa. Kaikilla protoneilla on sama energia, joten summa on protonien lukumäärä $N$ kertaa yhden protonin energia. Renkaassa on kaksi suihkua; tässä lasketaan yhden suihkun energia.
+**Kaava:** $E = NE_1$, missä $N$ on kimppujen määrä kertaa protonien määrä kimpussa
+**Muunnokset:** $1\,\text{MJ} = 10^6\,\text{J}$
+**Sijoitus:** $N = 2500 \cdot 1{,}6 \cdot 10^{11}$ eli $N = 4{,}0 \cdot 10^{14}$, joten $$
+\begin{aligned}
+E &= 4{,}0 \cdot 10^{14} \cdot 1{,}0894 \cdot 10^{-6}\,\text{J} \\
+&= 4{,}357 \cdot 10^{8}\,\text{J} \\
+&= 435{,}7\,\text{MJ}
+\end{aligned}
+$$
+**Vastaus:** Yhteen protonisuihkuun on varastoitunut energia $E \approx 4{,}4 \cdot 10^8\,\text{J} = 4{,}4 \cdot 10^2\,\text{MJ}$, kaksi merkitsevää numeroa kuten energia $6{,}8\,\text{TeV}$ ja protonien määrä $1{,}6 \cdot 10^{11}$.
+**Järkevyys:** Suuruusluokka: $4 \cdot 10^{14}$ protonia, joilla kullakin on noin $10^{-6}\,\text{J}$, antaa $4 \cdot 10^{8}\,\text{J}$. Protonien yhteinen massa on vain $4{,}0 \cdot 10^{14} \cdot 1{,}673 \cdot 10^{-27}\,\text{kg} \approx 6{,}7 \cdot 10^{-13}\,\text{kg}$ eli alle nanogramman, joten suuri energia johtuu protonien energiasta eikä aineen määrästä.
+
+### d)
+**Annettu:** auton massa $m = 1500\,\text{kg}$ ja nopeus $v = 100\,\text{km/h}$; yhden suihkun energia $E = 4{,}357 \cdot 10^8\,\text{J}$ (c-kohta)
+**Kysytty:** auton liike-energia $E_\text{k}$ ja suhde $\tfrac{E}{E_\text{k}}$ eli kuinka monen auton liike-energiaa suihkun energia vastaa
+**Periaate:** Etenevän kappaleen liike-energia on $\tfrac12 mv^2$ (luku *Liike-energia, potentiaalienergia ja mekaaninen energia*). Auton vauhti on häviävän pieni valon nopeuteen verrattuna, joten klassinen lauseke sopii autolle, toisin kuin protonille b-kohdassa.
+**Kaava:** $E_\text{k} = \tfrac12 mv^2$, ja autojen lukumäärä on suhde $\dfrac{E}{E_\text{k}}$
+**Muunnokset:** $v = 100\,\text{km/h} = \dfrac{100 \cdot 1000\,\text{m}}{3600\,\text{s}} = 27{,}778\,\text{m/s}$
+**Sijoitus:** $$
+\begin{aligned}
+E_\text{k} &= \tfrac12 \cdot 1500\,\text{kg} \cdot (27{,}778\,\text{m/s})^2 \\
+&= 5{,}787 \cdot 10^{5}\,\text{J} \\
+&= 0{,}5787\,\text{MJ}
+\end{aligned}
+$$ ja $\dfrac{E}{E_\text{k}} = \dfrac{4{,}357 \cdot 10^{8}\,\text{J}}{5{,}787 \cdot 10^{5}\,\text{J}} = 753$
+**Vastaus:** Auton liike-energia on $E_\text{k} \approx 0{,}579\,\text{MJ}$, kolme merkitsevää numeroa kuten nopeus $100\,\text{km/h}$. Yhden protonisuihkun energia vastaa noin $750$ tällaisen auton liike-energiaa, kaksi merkitsevää numeroa kuten suihkun energia.
+**Järkevyys:** Yksiköt: $\text{kg} \cdot \left(\tfrac{\text{m}}{\text{s}}\right)^2 = \text{N} \cdot \text{m} = \text{J}$. Maantienopeudella kulkevan auton liike-energia on puolen megajoulen luokkaa, joten satojen megajoulien suihku vastaa satoja autoja. Näin suuri energia alle nanogrammassa ainetta selittää, miksi suihkua on ohjattava tarkasti: jos se osuisi laitteen rakenteisiin, energia muuttuisi hetkessä niiden sisäenergiaksi.
+
+### e)
+**Kysytty:** magneettikenttien ja suprajohtavuuden merkitys LHC:n toiminnassa
+**Periaate:** Magneettikentässä liikkuvaan varattuun hiukkaseen kohdistuu magneettinen voima, joka on kohtisuorassa hiukkasen nopeutta vastaan (luku *Varatun hiukkasen liike sähkö- ja magneettikentässä*). Liikesuuntaa vastaan kohtisuora voima ei tee työtä. Käämin magneettivuon tiheys on verrannollinen käämin virtaan (luku *Virtajohtimen ja käämin magneettikenttä*), ja johtimessa, jonka resistanssi on $R$, sähköenergiaa muuttuu sisäenergiaksi teholla $P = RI^2$ (luku *Sähköteho ja vastuksen lämpeneminen*).
+**Mallivastaus:** Aineiston mukaan (tarkistettu 16.11.2026) LHC:n $1232$ dipolimagneettia taivuttavat suihkujen rataa ja $392$ kvadrupolimagneettia kohdistavat suihkuja, magneetit jäähdytetään supranesteisellä heliumilla lämpötilaan $1{,}9\,\text{K}$, ja protonit kiihdytetään kiihdytysonteloissa.
+
+Magneettinen voima on kohtisuorassa protonin nopeutta vastaan, joten se muuttaa vain nopeuden suuntaa: dipolimagneettien kentässä suoraan pyrkivän protonin rata kaartuu ympyrän kaareksi, ja protoni pysyy renkaassa. Kvadrupolimagneettien kenttä ohjaa reunoille ajautuvia protoneja takaisin kohti suihkun keskustaa, joten suihku pysyy kapeana. Koska voima on kohtisuorassa liikesuuntaa vastaan, se ei tee työtä, eikä magneettikenttä siksi lisää protonin energiaa. Energia tulee kiihdytysonteloiden sähkökentästä, joka kohdistaa protoniin liikkeen suuntaisen voiman ja tekee työtä jokaisella kierroksella.
+
+Mitä suurempi protonin energia on, sitä vahvempi kenttä tarvitaan pitämään se samalla radalla, ja vahva kenttä vaatii käämiin hyvin suuren virran. Tavallisessa johtimessa sähköenergiaa muuttuisi sisäenergiaksi teholla $P = RI^2$, joka kasvaa virran neliössä: käämit kuumenisivat, ja sisäenergia olisi siirrettävä jatkuvasti pois jäähdyttämällä. Lämpötilassa $1{,}9\,\text{K}$ käämien johdin on suprajohtavassa tilassa, jossa sen resistanssi on nolla. Silloin $RI^2 = 0$, ja suuri virta kulkee käämissä ilman häviötehoa. Suprajohtavuus tekee siis vahvat kentät mahdollisiksi, ja sen hinta on jäähdytys lähelle absoluuttista nollapistettä.
+
+Radan sädettä ei voi laskea tällä kurssilla käytetystä lausekkeesta $r = \tfrac{mv}{qB}$ protonin massalla, koska protonit kulkevat lähes valon nopeudella eikä klassinen mekaniikka päde niille (b-kohta).
+
+### Yleisiä virheitä
+- a-kohdassa päätellään, että protonit kulkevat täsmälleen valon nopeudella tai sitä nopeammin, tai lasketusta $12\,\text{km/s}$:n erosta tehdään tarkka tulos, vaikka aineiston luvut on pyöristetty.
+- b-kohdassa etuliite tera unohdetaan tai korvataan megalla, tai jaetaan luvulla $1{,}602 \cdot 10^{-19}$.
+- c-kohdassa lasketaan vain yhden kimpun energia tai molempien suihkujen energia, noin $870\,\text{MJ}$, vaikka kysytään yhden suihkun energiaa.
+- d-kohdassa nopeutta ei muunneta yksikköön $\text{m/s}$, jolloin liike-energiaksi tulee $7{,}5\,\text{MJ}$ ja autoja vain $58$.
+- e-kohdassa sanotaan, että magneettikenttä kiihdyttää protoneja tai antaa niille energiaa, tai että suprajohde itsessään synnyttää kentän ilman virtaa.
+
+### Hyväksytään myös
+- a-kohdassa vertailu arvoon $c = 3{,}00 \cdot 10^8\,\text{m/s}$, kun todetaan, että luvut eivät riitä erottamaan vauhtia valon nopeudesta ja että massallinen protoni jää sen alle.
+- b-kohdassa vastaus $1{,}1\,\mu\text{J}$.
+- c-kohdassa lasku b-kohdan pyöristetyllä arvolla $1{,}1 \cdot 10^{-6}\,\text{J}$, joka antaa saman tuloksen $4{,}4 \cdot 10^8\,\text{J}$.
+- d-kohdassa lasku pyöristetyillä välituloksilla, $\tfrac{4{,}4 \cdot 10^8\,\text{J}}{5{,}79 \cdot 10^5\,\text{J}} \approx 760$ autoa.

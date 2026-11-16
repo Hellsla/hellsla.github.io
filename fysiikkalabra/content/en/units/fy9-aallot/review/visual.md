@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a96564c9f399ef68
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (01488dd1f9e29516).
+CONTENT-HASH: 54d3c9decc5534cb
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none)
+- (none)
 
 ## Checked
-- Opened fy9-aallot-en-360.png (chart unchanged); the diff is only teacher.md branch-to-row wording, which reads correctly.
+- Hunk: solutions.md, Common mistakes of the hearing-protection task ("the intensity is calculated as inversely proportional to the distance"): now consistent with the $3\,\text{dB}$ per doubling it describes; reads well.
+- Capture opened: `fy9-aallot-stage-exercises-390-31` (the list item wraps cleanly, units rendered in KaTeX, nothing clipped).

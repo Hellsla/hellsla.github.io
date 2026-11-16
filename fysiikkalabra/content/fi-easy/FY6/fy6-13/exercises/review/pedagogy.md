@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 6a392abb385170f5
-SCOPE: delta added-exercise from f05516e505a8af1a base 8f23aa7ae3bd
+CONTENT-HASH: 48f32a459da5ae07
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- exercises.json fy6-13-L2-08 — "toisen kondensaattorin" only makes sense next to L1-05; read alone it has no first capacitor — write "erään kondensaattorin" or "toisen, eri kondensaattorin kuvaajassa".
-- fy6-13-L1-10 — close to L1-04 (plate capacitance, area and gap given, air); it differs by the MAFY lookup of epsilon_r and two unit conversions, which is heavy but acceptable for level 1. Keep an eye on the L1 count (10).
+- fy6-13-L2-09: the answer box tests only b), which does not need the simulation; the simulation work (a, c) is unassessed by the box. Acceptable because the solution states what to observe.
+- a) asks for two data series plus a description: workload is on the upper side for level 2; fine for a lesson hour.
+- Solution a) uses an example calculation (0,44 pF) clearly marked as not a simulation reading: good.
 
 ## Checked
-- L1-10: formula and lookup are what the lesson teaches; hint names the MAFY table; 5,09 nF recomputed correctly; the air estimate in Järkevyys is a real check.
-- L2-08: level 2 fits (C from the graph, then W = 1/2 CU^2 at a voltage other than the end point, so the student cannot just read the end); 367,5 µJ recomputed.
-- Figure ex-qu2 gives (120 µC; 8 V), description matches and does not give C or W.
-- Solutions stepwise, unit conversions shown, the second route (1/2 QU) is a real check.
-- Not a repeat of the worked example; kinds mix unchanged.
+New task against section 6: simulation is the right tool (Q-U proportionality, C vs d), c) asks formula and check, d) compares with a battery from an earlier chapter; 72 mJ, 4x, 0,29 J, 9,6e5 ratio verified; Finnish terms explained; set mix unchanged.

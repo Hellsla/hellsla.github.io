@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5583281d5053c519
+CONTENT-HASH: 39da8dac762307ce
 
 ## Blocking
-None. Solutions use the new symbols consistently; steps and answers unchanged.
+None.
 
 ## Polish
 None.
 
 ## Checked
-Read the changed text and the surrounding formula section, worked example, solutions and inquiry for the MAFY symbols; grep found no leftover old symbol (F_parallel, W_kok, W_muut, E_k,1, E_mek,1) in this language.
+- Järkevyys row: (2124-687)/70,0 = 20,53, so 20,5 m/s2 is right and now matches the 20,5 used in the next step; the check stays a real sense-check.
+- Delta review of the changed lines only; the rest rests on the previous report.

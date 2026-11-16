@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1f98286bb0445e33
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 1a9d7eb4f629555e
 
 ## Blocking
 - none
@@ -9,5 +8,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Multimeter terminal sentences (meter-specific wording, check the meter's own markings), ammeter never across source terminals, school labs use safe low-voltage sources: fluent Finnish, consistent voice, units LaTeX.
-- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.
+- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-2-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
+
+## Scores
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

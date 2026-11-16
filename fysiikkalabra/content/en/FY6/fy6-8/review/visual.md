@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: bc2165b6ffaa8d3b
+CONTENT-HASH: dd065484b46319a0
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] Alt 'wooden table': the surface reads as grey wood grain; 'grey wood-grain table' is safer.
+- none
 
 ## Checked
-- batch delta review: opened the source image(s) and 1280/390 px renders of the photo(s): lithium-ion-cells.webp (labels INR21700 and INR18650 legible in the source; 390 capture fy6-8-fig-row seen at 390 and 1280; no clipping). Alt matches the visible content, captions physically correct and tied to the chapter, units in LaTeX, photo floats right at 1280 (no clipping, scrollWidth = viewport) and stacks above the caption at 390.
+- round 3, delta review (reflow): proof sheets en-fy6-8-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+
+## Scores
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

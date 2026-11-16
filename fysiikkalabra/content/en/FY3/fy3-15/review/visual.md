@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4813d28d443de144
+CONTENT-HASH: 9d6ae5c44634a68a
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] lesson.md combined-production paragraph — "…industrial heat processes. Its network reaches only a town." reads abruptly — join: "…industrial heat processes, but its network reaches only a town."
+- [Minor] Pohdinta "kertaus", feedback of the correct option and of the last wrong option: at 390 px the inline chain $Q_2 = Q_1 - W = 800\,\text{MJ} - 280\,\text{MJ} = 520\,\text{MJ}$ is clipped at the right edge ("280 M"); the result 520 MJ is lost there but stays in the option text and in the other feedbacks. Known entry in docs/clipped-formulas.tsv, unchanged from before this work; a display or two-row form would be better once the automated test allows it.
 
 ## Checked
-- batch delta review: opened fy3-15-fig-row-1280.png (Sankey figure unchanged, teacher-approved) and read the wording diff (lesson and inquiry model answer); no new plain-text quantities.
+- Delta round 2: rendered preview (en) at 390 and 1280 px with all four feedbacks of the "kertaus" choice shown. 1280 px: all formulas whole, inline form reads cleanly. 390 px: no page overflow (scrollWidth 390); the two inline chains clip as described; the other feedbacks (wrong first option, display form of the second) are intact. Rest of the lesson unchanged by this delta.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: dc433a75eb77d4f4
+CONTENT-HASH: 6bfe5ddbe100df3b
+SCOPE: delta answers,comments,numbers from 3a4b4be3804c64ec base 787e044ddd0c
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-09 task: "mafytaulukot.fi" is plain text (a site name; optional).
-- [Minor] L1-09 hint: the table name is Finnish and italic; the English gloss "(lower heating values of fuels)" used in the other chapters is missing here (consistency only).
-- [Minor] Solutions: the stacked fraction \tfrac{MJ}{kg} inside the chains is small at 1280 px (readable); unchanged house style.
+- [Minor] 5-23 table — the oil row label is now long ('Oil boiler (light heating oil, MAFY table)'); re-take the capture to see that it wraps neatly at 390 px.
 
 ## Checked
-- Opened fy2-5-open-exercises-1280-8 and -9.png and fy2-5-open-exercises-L2-1280-10 and -11.png (content/en/FY2/fy2-5/review/shots/): L1-09 (ethanol) card with task, "Hint" box under the question, answer row and full solution; L2-09 (heat-of-combustion bar chart) card with figure, answer row and full solution.
-- Figure fy2-5/lampoarvot: axis title $H\ (\text{MJ/kg})$ with arrowhead, ticks every 10, values printed at the bar ends, labels in LaTeX type, nothing clipped; the answer is not given away.
-- Maths clean: units upright with thin spaces, decimal point in English, aligned rows, no red KaTeX source; the set still reads as one. 390 px captures not opened.
+- Delta review. Opened fy2-5-open-exercises-L3-1280-1 (5-19), -5 (5-22), -6, -7 (5-23). Note: the shots predate the file's current hash; at the start the 5-23 table still said oil $43$ while the solution used $40.6\,\text{MJ/kg}$ and the hash then was d96d194c7aea923f. The cell now reads 40.6 (hash 6bfe5ddbe100df3b); I checked that cell in the source, not in a fresh capture. 5-19 and 5-22 render cleanly, oil value consistent with the MAFY note.
+- Hash at start and end: 6bfe5ddbe100df3b.
 
 ## Scores
-illustrations 5 · typography 4 · English 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

@@ -13,7 +13,7 @@
 **Kysytty:** johdinosaan kohdistuva voima $F$ newtoneina
 **Periaate:** Johdin on vinossa kenttään nähden. Siksi voimaa synnyttää vain se kentän osa, joka on kohtisuorassa johdinta vastaan, eli $B \sin\alpha$. Kenttä on homogeeninen, joten voima on $F = I l B \sin\alpha$.
 **Kaava:** $F = I l B \sin\alpha$
-**Muunnokset:** $l = 15\,\text{cm} = 15 \cdot 0{,}01\,\text{m} = 0{,}15\,\text{m}$
+**Muunnokset:** $$\begin{aligned} l &= 15\,\text{cm} \\ &= 15 \cdot 0{,}01\,\text{m} \\ &= 0{,}15\,\text{m} \end{aligned}$$
 **Sijoitus:** $F = 8{,}0\,\text{A} \cdot 0{,}15\,\text{m} \cdot 0{,}25\,\text{T} \cdot \sin 40^\circ = 0{,}30\,\text{N} \cdot 0{,}6428 = 0{,}1928\,\text{N}$
 **Vastaus:** $0{,}19\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska lähtöarvoissa on kaksi.
 **Järkevyys:** Kohtisuorassa johtimessa voima olisi $0{,}30\,\text{N}$. Vinossa johtimessa voiman täytyy olla pienempi. Koska $\sin 40^\circ \approx 0{,}64$, voima on noin kaksi kolmasosaa siitä. Jos käyttäisit virheellisesti kosinia, tulos olisi $0{,}23\,\text{N}$.
@@ -26,7 +26,7 @@
 **Muunnokset:** $l = 6{,}0\,\text{cm} = 6{,}0 \cdot 0{,}01\,\text{m} = 0{,}060\,\text{m}$ ja $F = 27\,\text{mN} = 27 \cdot 0{,}001\,\text{N} = 0{,}027\,\text{N}$
 **Sijoitus:** $B = \dfrac{0{,}027\,\text{N}}{4{,}5\,\text{A} \cdot 0{,}060\,\text{m}} = \dfrac{0{,}027\,\text{N}}{0{,}27\,\text{A}\cdot\text{m}} = 0{,}10\,\text{T}$
 **Vastaus:** $0{,}10\,\text{T}$. Vastauksessa on kaksi merkitsevää numeroa, koska lähtöarvoissa on kaksi.
-**Järkevyys:** Hevosenkenkämagneetin napojen välissä kenttä on tavallisesti sadasosista kymmenesosiin teslaa. Siksi $0{,}10\,\text{T}$ on uskottava. Tarkistus: $4{,}5\,\text{A} \cdot 0{,}060\,\text{m} \cdot 0{,}10\,\text{T} = 0{,}027\,\text{N}$.
+**Järkevyys:** Hevosenkenkämagneetin napojen välissä kenttä on tavallisesti sadasosista kymmenesosiin teslaa. Siksi $0{,}10\,\text{T}$ on uskottava. Tarkistus: $$\begin{aligned} &4{,}5\,\text{A} \cdot 0{,}060\,\text{m} \cdot 0{,}10\,\text{T} \\ &= 0{,}027\,\text{N} \end{aligned}$$.
 
 ## fy7-4-L1-04
 **Annettu:** $l = 100\,\text{m}$, $I = 200\,\text{A}$, Maan kenttä $B = 53\,\mu\text{T}$, johtimen ja kentän välinen kulma $\alpha = 74^\circ$
@@ -34,7 +34,7 @@
 **Periaate:** Maan magneettikenttä on johtimen pituisella alueella käytännössä homogeeninen. Siksi voima on $F = I l B \sin\alpha$. Johdin kulkee kompassin osoittamassa pohjois–eteläsuunnassa. Kenttä osoittaa magneettiseen pohjoiseen ja on $74^\circ$:n kulmassa vaakatasoon nähden. Siksi johtimen ja kentän välinen kulma on $74^\circ$.
 **Kaava:** $F = I l B \sin\alpha$
 **Muunnokset:** $B = 53\,\mu\text{T} = 53 \cdot 10^{-6}\,\text{T}$
-**Sijoitus:** $F = 200\,\text{A} \cdot 100\,\text{m} \cdot 53 \cdot 10^{-6}\,\text{T} \cdot \sin 74^\circ = 1{,}06\,\text{N} \cdot 0{,}9613 = 1{,}0189\,\text{N}$
+**Sijoitus:** $$\begin{aligned} F &= 200\,\text{A} \cdot 100\,\text{m} \cdot 53 \cdot 10^{-6}\,\text{T} \\ &\cdot \sin 74^\circ \\ &= 1{,}06\,\text{N} \cdot 0{,}9613 \\ &= 1{,}0189\,\text{N} \end{aligned}$$
 **Vastaus:** $1{,}0\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska magneettivuon tiheydessä $53\,\mu\text{T}$ on kaksi.
 **Järkevyys:** Voima on noin $100\,\text{g}$:n kappaleen painon suuruinen koko $100\,\text{m}$:n matkalla. Se on mitätön johtimen painoon verrattuna: $200\,\text{A}$:n voimajohdin painaa noin $1\,\text{kg}$ metriä kohti, joten $100\,\text{m}$:n johdinosan paino on noin $1000\,\text{N}$. Maan kenttä on heikko, joten tulos on odotettu.
 
@@ -71,7 +71,12 @@
 **Muunnokset:** Ei tarvita. Voima on newtoneina, ja kulmat annetaan asteina suoraan sinifunktiolle.
 **Sijoitus:** $F_2 = 0{,}050\,\text{N} \cdot \dfrac{\sin 40^\circ}{\sin 20^\circ} = 0{,}050\,\text{N} \cdot \dfrac{0{,}6428}{0{,}3420} = 0{,}09397\,\text{N}$
 **Vastaus:** $0{,}094\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, koska voimassa $0{,}050\,\text{N}$ on kaksi.
-**Järkevyys:** Voima kasvaa, kun kulma lähestyy $90^\circ$:ta. Se kasvaa kuitenkin vähemmän kuin kaksinkertaiseksi: $0{,}094\,\text{N} < 2 \cdot 0{,}050\,\text{N} = 0{,}100\,\text{N}$. Suurin mahdollinen voima olisi $0{,}050\,\text{N} : 0{,}3420 = 0{,}146\,\text{N}$, ja $0{,}094\,\text{N}$ jää sen alle.
+**Järkevyys:** Voima kasvaa, kun kulma lähestyy $90^\circ$:ta. Se kasvaa kuitenkin vähemmän kuin kaksinkertaiseksi: $0{,}094\,\text{N} < 2 \cdot 0{,}050\,\text{N} = 0{,}100\,\text{N}$. Suurin mahdollinen voima olisi $$
+\begin{aligned}
+&0{,}050\,\text{N} : 0{,}3420 \\
+&= 0{,}146\,\text{N}
+\end{aligned}
+$$, ja $0{,}094\,\text{N}$ jää sen alle.
 
 ## fy7-4-L2-01
 **Annettu:** johtimien virrat $I_1 = I_2 = 10\,\text{A}$ samaan suuntaan, etäisyys $r = 5{,}0\,\text{mm}$, rinnakkaisen osan pituus $l = 0{,}80\,\text{m}$, $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
@@ -92,7 +97,7 @@
 **Muunnokset:** $\Delta m = 1{,}50\,\text{g} = 1{,}50 \cdot 0{,}001\,\text{kg} = 0{,}00150\,\text{kg}$ ja $l = 4{,}0\,\text{cm} = 4{,}0 \cdot 0{,}01\,\text{m} = 0{,}040\,\text{m}$
 **Sijoitus:** $B = \dfrac{0{,}00150\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{5{,}0\,\text{A} \cdot 0{,}040\,\text{m}} = \dfrac{0{,}014715\,\text{N}}{0{,}20\,\text{A}\cdot\text{m}} = 0{,}0736\,\text{T}$
 **Vastaus:** $0{,}074\,\text{T}$. Vastauksessa on kaksi merkitsevää numeroa, koska pituudessa $4{,}0\,\text{cm}$ on kaksi.
-**Järkevyys:** Arvo on tyypillinen hevosenkenkämagneetille: se on noin kymmenesosa teslaa. Tarkistus suoran toisella pisteellä: virran $3{,}0\,\text{A}$ kohdalla suora antaa $0{,}90\,\text{g}$, ja $0{,}00090\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 : (3{,}0\,\text{A} \cdot 0{,}040\,\text{m}) = 0{,}074\,\text{T}$.
+**Järkevyys:** Arvo on tyypillinen hevosenkenkämagneetille: se on noin kymmenesosa teslaa. Tarkistus suoran toisella pisteellä: virran $3{,}0\,\text{A}$ kohdalla suora antaa $0{,}90\,\text{g}$, ja $$\begin{aligned} &0{,}00090\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &: (3{,}0\,\text{A} \cdot 0{,}040\,\text{m}) \\ &= 0{,}074\,\text{T} \end{aligned}$$.
 
 ## fy7-4-L2-03
 **Annettu:** $B = 0{,}40\,\text{T}$, $l = 0{,}50\,\text{m}$, $I = 5{,}0\,\text{A}$, $F = 0{,}50\,\text{N}$
@@ -120,7 +125,7 @@
 **Periaate:** Kun virta kulkee kentässä, johtimeen kohdistuu voima $F = I l B$. Vaaka mittaa voiman painon muutoksena $F = \Delta m \cdot g$. Jokainen mittaus antaa oman arvon suureelle $B$. Tulokset eivät yleensä ole täsmälleen samat, koska mittauksessa on aina epävarmuutta. Siksi lasketaan keskiarvo.
 **Kaava:** $\Delta m \cdot g = I l B$, josta $B = \dfrac{\Delta m \cdot g}{I l}$
 **Muunnokset:** Muutetaan $\Delta m$ grammoista kilogrammoiksi ja $l$ senttimetreistä metreiksi. Esimerkiksi $0{,}35\,\text{g} = 0{,}35 \cdot 10^{-3}\,\text{kg}$ ja $2{,}0\,\text{cm} = 0{,}020\,\text{m}$.
-**Sijoitus:** Ensimmäinen rivi: $B = \dfrac{0{,}35 \cdot 10^{-3}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{2{,}0\,\text{A} \cdot 0{,}020\,\text{m}} = 0{,}0858\,\text{T}$. Muut rivit antavat samalla tavalla $0{,}0834\,\text{T}$, $0{,}0871\,\text{T}$, $0{,}0844\,\text{T}$ ja $0{,}0850\,\text{T}$. Summa on $0{,}4257\,\text{T}$, joten $B_{\text{ka}} = 0{,}4257\,\text{T} : 5 = 0{,}08513\,\text{T}$. Hajonta on $(0{,}0871\,\text{T} - 0{,}0834\,\text{T}) : 2 = 0{,}0018\,\text{T}$.
+**Sijoitus:** Ensimmäinen rivi: $B = \dfrac{0{,}35 \cdot 10^{-3}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{2{,}0\,\text{A} \cdot 0{,}020\,\text{m}} = 0{,}0858\,\text{T}$. Muut rivit antavat samalla tavalla $0{,}0834\,\text{T}$, $0{,}0871\,\text{T}$, $0{,}0844\,\text{T}$ ja $0{,}0850\,\text{T}$. Summa on $0{,}4257\,\text{T}$, joten $B_{\text{ka}} = 0{,}4257\,\text{T} : 5 = 0{,}08513\,\text{T}$. Hajonta on $$\begin{aligned} &(0{,}0871\,\text{T} - 0{,}0834\,\text{T}) : 2 \\ &= 0{,}0018\,\text{T} \end{aligned}$$.
 **Vastaus:** $B_{\text{ka}} = 0{,}085\,\text{T}$. Vastauksessa on kaksi merkitsevää numeroa, koska virrassa ja pituuksissa on kaksi. Hajonta on noin $0{,}002\,\text{T}$, joten tulos on $(0{,}085 \pm 0{,}002)\,\text{T}$. Hajonta on yksinkertainen arvio mittausten vaihtelusta. Se ei ole keskiarvon epävarmuus.
 **Järkevyys:** Pituus kolminkertaistui ($2{,}0\,\text{cm} \to 6{,}0\,\text{cm}$). Lukeman muutos kasvoi $0{,}35\,\text{g} \to 1{,}04\,\text{g}$ eli noin kolminkertaiseksi, kuten kaava $F = I l B$ ennustaa. Kenttä on tyypillinen laboratoriomagneetille: noin kymmenesosa teslaa.
 
@@ -150,7 +155,7 @@
 **Kysytty:** virta $I$, jolla langat jäävät löysiksi
 **Periaate:** Langat ovat löysiä, kun niiden jännitysvoima on nolla. Silloin tankoon vaikuttavat vain paino alaspäin ja magneettinen voima. Tanko on levossa. Newtonin ensimmäisen lain mukaan voimien täytyy siis kumota toisensa. Magneettisen voiman täytyy osoittaa ylöspäin ja olla painon suuruinen. Kenttä on vaakasuora ja tanko kohtisuorassa sitä vastaan, joten voima $I l B$ on pystysuora. Virran suunta valitaan niin, että voima osoittaa ylöspäin.
 **Kaava:** $I l B = m g$, josta $I = \dfrac{m g}{l B}$
-**Muunnokset:** $m = 12\,\text{g} = 12 \cdot 0{,}001\,\text{kg} = 0{,}012\,\text{kg}$ ja $l = 20\,\text{cm} = 20 \cdot 0{,}01\,\text{m} = 0{,}20\,\text{m}$
+**Muunnokset:** $m = 12\,\text{g} = 12 \cdot 0{,}001\,\text{kg} = 0{,}012\,\text{kg}$ ja $$\begin{aligned} l &= 20\,\text{cm} \\ &= 20 \cdot 0{,}01\,\text{m} \\ &= 0{,}20\,\text{m} \end{aligned}$$
 **Sijoitus:** $I = \dfrac{0{,}012\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{0{,}20\,\text{m} \cdot 0{,}25\,\text{T}} = \dfrac{0{,}11772\,\text{N}}{0{,}050\,\text{T}\cdot\text{m}} = 2{,}354\,\text{A}$
 **Vastaus:** $2{,}4\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, koska lähtöarvoissa on kaksi.
 **Järkevyys:** Muutaman ampeerin virta riittää kannattelemaan kevyen tangon. Se sopii laboratoriokokeeseen. Jos virran suunta käännettäisiin, voima osoittaisi alaspäin ja langat kiristyisivät. Silloin langan jännitys olisi kaksinkertainen painoon verrattuna.
@@ -192,9 +197,9 @@
 **Periaate:** Ylempi johdin leijuu, kun siihen vaikuttavat voimat kumoavat toisensa. Paino osoittaa alas, joten alemman johtimen kentän voiman täytyy osoittaa ylös. Johtimien täytyy siis hylkiä toisiaan. Hylkimiseen tarvitaan vastakkaissuuntaiset virrat, koska samansuuntaiset virrat vetäisivät johtimia toisiaan kohti. Alemman johtimen kenttä on kohtisuorassa ylempää johdinta vastaan, joten voima on $F = I l B_1$, missä $B_1 = \dfrac{\mu_0 I}{2\pi r}$.
 **Kaava:** $I l B_1 = m g$, eli $\dfrac{\mu_0 I^2 l}{2\pi r} = m g$, josta $I = \sqrt{\dfrac{2\pi r m g}{\mu_0 l}}$
 **Muunnokset:** $m = 3{,}0\,\text{g} = 0{,}0030\,\text{kg}$ ja $r = 1{,}0\,\text{cm} = 0{,}010\,\text{m}$
-**Sijoitus:** Nimittäjä on $\mu_0 l = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 0{,}50\,\text{m} = 6{,}283 \cdot 10^{-7}\,\text{Vs/A}$. Osoittaja on $2\pi r m g = 2\pi \cdot 0{,}010\,\text{m} \cdot 0{,}0030\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 1{,}849 \cdot 10^{-3}\,\text{N}\cdot\text{m}$. Siis $I = \sqrt{\dfrac{1{,}849 \cdot 10^{-3}}{6{,}283 \cdot 10^{-7}}}\,\text{A} = \sqrt{2943}\,\text{A} = 54{,}25\,\text{A}$
+**Sijoitus:** Nimittäjä on $\mu_0 l = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 0{,}50\,\text{m} = 6{,}283 \cdot 10^{-7}\,\text{Vs/A}$. Osoittaja on $$\begin{aligned} 2\pi r m g &= 2\pi \cdot 0{,}010\,\text{m} \\ &\cdot 0{,}0030\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &= 1{,}849 \cdot 10^{-3}\,\text{N}\cdot\text{m} \end{aligned}$$. Siis $I = \sqrt{\dfrac{1{,}849 \cdot 10^{-3}}{6{,}283 \cdot 10^{-7}}}\,\text{A} = \sqrt{2943}\,\text{A} = 54{,}25\,\text{A}$
 **Vastaus:** a) Virrat kulkevat vastakkaisiin suuntiin, ja $I = 54\,\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, koska massassa ja etäisyydessä on kaksi. b) Leijuminen on vakaata pystysuunnassa. Jos ylempi johdin nousee, etäisyys $r$ kasvaa ja voima $F \propto 1 : r$ pienenee alle painon. Silloin paino vetää johtimen takaisin alas. Jos johdin laskee, etäisyys pienenee ja voima kasvaa yli painon. Silloin voima työntää johtimen takaisin ylös. Sivusuunnassa järjestely ei ole vakaa: sivuun siirtynyt johdin voisi kääntyä tai kaatua. Tulos koskee siis vain pystysuuntaa.
-**Järkevyys:** Kenttä ylemmän johtimen kohdalla on $B_1 = 1{,}085 \cdot 10^{-3}\,\text{T}$. Voima on $54{,}25\,\text{A} \cdot 0{,}50\,\text{m} \cdot 1{,}085 \cdot 10^{-3}\,\text{T} = 0{,}0294\,\text{N}$, mikä on sama kuin paino $0{,}0030\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 0{,}0294\,\text{N}$. Yli $50\,\text{A}$:n virta kuumentaa ohutta johdinta, joten virta kytketään vain lyhyeksi ajaksi.
+**Järkevyys:** Kenttä ylemmän johtimen kohdalla on $B_1 = 1{,}085 \cdot 10^{-3}\,\text{T}$. Voima on $$\begin{aligned} &54{,}25\,\text{A} \cdot 0{,}50\,\text{m} \\ &\cdot 1{,}085 \cdot 10^{-3}\,\text{T} \\ &= 0{,}0294\,\text{N} \end{aligned}$$, mikä on sama kuin paino $$\begin{aligned} &0{,}0030\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &= 0{,}0294\,\text{N} \end{aligned}$$. Yli $50\,\text{A}$:n virta kuumentaa ohutta johdinta, joten virta kytketään vain lyhyeksi ajaksi.
 
 ## fy7-4-L2-08
 **Kysytty:** mihin suuntaan hevosenkenkämagneetin napojen välissä roikkuva kuparijohdin heilahtaa, kun kenttä osoittaa vasemmalta oikealle ja virta kulkee johtimessa alaspäin, ja mikä perustelu selittää sen.
@@ -209,7 +214,7 @@ Perustelu: voima on kohtisuorassa virtaa ja kenttää vastaan, ja oikean käden 
 **Periaate:** Kenttä kohdistaa johtimeen voiman $F = I l B \sin\alpha$. Voima on suurin, kun johdin on kohtisuorassa kenttää vastaan ($\alpha = 90^\circ$, $\sin 90^\circ = 1$), joten silloin $F_{\max} = I l B$.
 **Kuvaajan lukeminen:** Mittauspisteet poikkeavat hieman käyrästä, koska mittauksessa on aina pieni epätarkkuus. Siksi luetaan arvo sovitetulta käyrältä, ei yksittäisestä pisteestä. Käyrän korkein kohta on kulmalla $\alpha = 90^\circ$, ja käyrä kulkee ruudukon pisteen ($90^\circ$; $0{,}45\,\text{N}$) kautta. Luetaan siis $F_{\max} = 0{,}45\,\text{N}$.
 **Kaava:** $F_{\max} = I l B$, josta $B = \dfrac{F_{\max}}{I l}$
-**Muunnokset:** $l = 25\,\text{cm} = 25 \cdot 0{,}01\,\text{m} = 0{,}25\,\text{m}$
+**Muunnokset:** $$\begin{aligned} l &= 25\,\text{cm} \\ &= 25 \cdot 0{,}01\,\text{m} \\ &= 0{,}25\,\text{m} \end{aligned}$$
 **Sijoitus:** $B = \dfrac{0{,}45\,\text{N}}{6{,}0\,\text{A} \cdot 0{,}25\,\text{m}} = \dfrac{0{,}45\,\text{N}}{1{,}5\,\text{A}\cdot\text{m}} = 0{,}30\,\text{T}$
 **Vastaus:** $0{,}30\,\text{T}$, kaksi merkitsevää numeroa kuten virrassa $6{,}0\,\text{A}$.
-**Järkevyys:** Tarkistus toisella pisteellä: kulmalla $30^\circ$ käyrä antaa noin $0{,}225\,\text{N}$, ja $0{,}225\,\text{N} : (6{,}0\,\text{A} \cdot 0{,}25\,\text{m} \cdot \sin 30^\circ) = 0{,}30\,\text{T}$. Arvo on tavallinen magneetin raossa.
+**Järkevyys:** Tarkistus toisella pisteellä: kulmalla $30^\circ$ käyrä antaa noin $0{,}225\,\text{N}$, ja $$\begin{aligned} &0{,}225\,\text{N} \\ &: (6{,}0\,\text{A} \cdot 0{,}25\,\text{m} \cdot \sin 30^\circ) \\ &= 0{,}30\,\text{T} \end{aligned}$$. Arvo on tavallinen magneetin raossa.

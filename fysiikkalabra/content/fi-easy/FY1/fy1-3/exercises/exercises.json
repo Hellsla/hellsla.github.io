@@ -321,6 +321,19 @@
           "feedback": "Tämä väite on liian tarkka. Keskiarvolla ei saa olla enempää merkitseviä numeroita kuin epävarmuus sallii. Laskimen antamat keskiarvot $14{,}30\\,\\text{s}$ ja $14{,}36\\,\\text{s}$ pidetään vertailussa täsmällisinä, mutta tulos ilmoitetaan pyöristettynä. Tulosten epävarmuus on $0{,}2\\,\\text{s}$, joten tulos voidaan ilmoittaa vain kymmenesosasekunnin tarkkuudella. Toistot pienentävät satunnaisvirhettä, mutta ne eivät tee tuloksesta tuhannesosasekunnin tarkkaa."
         }
       ]
+    },
+    {
+      "id": "fy1-3-L2-09",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://home.cern/opera-experiment-reports-anomaly-in-flight-time-of-neutrinos-from-cern-to-gran-sasso/\" target=\"_blank\" rel=\"noopener\">CERN – OPERA experiment reports anomaly in flight time of neutrinos from CERN to Gran Sasso</a> (luettu 16. marraskuuta 2026)\n\nKulkivatko neutriinot valoa nopeammin? Neutriino on hyvin pieni hiukkanen. CERN on eurooppalainen tutkimuskeskus. Vuonna 2011 OPERA-kokeen tutkijat kertoivat mittauksista. CERNistä lähetettiin neutriinoja Italiaan Gran Sasson laboratorioon. Mittausten mukaan neutriinot näyttivät kulkevan valoa nopeammin. CERNin sivulla on ensin myöhemmät päivitykset. Alkuperäinen tiedote on sivulla niiden alapuolella.\n\na) Mitä tutkijat mittasivat? Kuinka tarkasti he ilmoittivat matkan ja ajan? Miksi tulos oli yllättävä?\n\nb) Laske, kuinka kauan valolta kuluu $730\\,\\text{km}$:n matkaan tyhjiössä. Kuinka suuri on $60\\,\\text{ns}$:n poikkeaman suhteellinen osuus kulkuajasta prosentteina? Kuinka pitkän matkan valo kulkee $60\\,\\text{ns}$:ssa?\n\nc) Mitä mittauslaitteistosta löydettiin myöhemmin? Mitä muut kokeet mittasivat? Oliko alkuperäisen tuloksen virhe satunnaisvirhe vai systemaattinen virhe? Perustele.\n\nd) Fysiikan teoriaa on usein testattu monissa kokeissa. Selitä esimerkin avulla, miksi yksi poikkeava mittaustulos ei riitä osoittamaan, että tällainen teoria on väärä.\n\nVastauskenttään tulee kohdan b) suhteellinen poikkeama prosentteina.",
+      "kind": [
+        "data",
+        "error",
+        "reasoning"
+      ],
+      "answer": 0.002464,
+      "unit": "%",
+      "tolerance": 0.03
     }
   ],
   "level3": [

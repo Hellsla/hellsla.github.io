@@ -1,20 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 96380ddc9d785d43
+CONTENT-HASH: e83e577c133aa895
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] inquiry.json johtopaatos — "Write on the basis of your table" now sits directly under the phone-measurement card and its $E$ table; "Write on the basis of your table from Experiment 1" removes the doubt.
-- [Minor] optional boxes — summaries read "OPTIONAL · Extension: …" (two labels for one status), and the opened theory box repeats its title; harmless, could be trimmed at template level.
-- [Minor] inquiry.json virhe (untouched text, only the title changed) — the student's quoted chain is a `kx-wide` scroller at 360/390 px, cut mid-formula with no scroll cue; one line as required, a shorter quote would read better.
-- Tooling (not content): `scripts/screenshot.py fy7-15` crashes at `.worked .all-steps` because the worked example now sits in a closed optional box; captures were taken with an equivalent Playwright script.
+- [Minor] inquiry.json:411 — in the quoted chain the pieces after the first begin with `=` without its left relation space (`· 0.25= 50 W/m²` at 1280 px); readable, `${} = …$` would even it out.
 
 ## Checked
-- Hash at start 16cd6d2d00ffe824; lesson.md and inquiry.json were edited at 11:57 during the review (three-polariser experiment to core, misconception wording), so I rebuilt, re-captured and reviewed that edit too; end hash 96380ddc9d785d43, stable.
-- Captures of preview/en/fy7-15.html at 360, 390, 1280 px, every stage closed and with all boxes open: Investigate (phone measurement card with table and choice, Conclusion with the "Core" tag), Explain (Common misconception, new Summary bullets, scene, opened Extension boxes with theory, Experiment 1 task and fit task), Apply (3D cinema core task, three Extension boxes), Check (2. Explain with tag, Extension laser task), exit ticket with both answers open.
-- Programmatic check at 360/390/1280, closed and open: no inline KaTeX on two lines, no page-level horizontal overflow; only wide inline maths is the `kx-wide` scroller in #virhe.
-- Core tag and Extension boxes: clean spacing, titles wrap inside the box at 360 px, nothing clipped.
-- Changed English fluent and consistent (transmission axis, analyser, polarised), quantities in LaTeX with decimal point.
-
-## Scores
-illustrations 5 · typography 5 · English 4 · accessibility 4
+- batch delta review: queue 5d reflow, round 2. Page rebuilt (build.py fy7-15) and every changed formula of inquiry.json captured from preview/en/fy7-15.html at 360, 390 and 1280 px with every box, hint, solution and choice feedback forced open; the 390 and 1280 px sheets were read at full size. The quoted Malus chain is inline, three adjacent formulas that wrap at the relations at 360 and 390 px, quotation marks on the text lines; gradient and I2 blocks are two aligned rows. Measured at all three widths: no formula wider than its box, no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line (the closing full stop or comma is set inside the block). Source compared with main: the same tokens in the same order; every new row starts with a relation, a sign or between whole quantities. Hash identical at the end. Figures were not re-judged.

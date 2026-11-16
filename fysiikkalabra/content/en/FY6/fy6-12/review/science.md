@@ -1,16 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 9f0133e283d84987
+CONTENT-HASH: cc28d887684ce5bf
 
 ## Blocking
+(none)
 
 ## Polish
-- Formula: $\tfrac12 mv^2 = |q|U$ "after travelling through a potential difference $U$" — "in the direction its force pushes it" would make explicit what "starting from rest" already implies.
-- Aurora: the $5\,\text{keV}$ speed $4.19 \cdot 10^7\,\text{m/s}$ is 14 % of $c$; the classical value is about 1 % high, which "about $40\,000\,\text{km/s}$" absorbs. C, no change needed.
+- lesson.md:559 — "these radiate the energy as light": only part of the collision energy becomes light. Say "radiate part of it as light".
+- lesson.md:630 — "So $1\,\text{keV} = 1000\,\text{eV}$" does not follow from the line before. Write "and".
+- sim.js bars comment — says "E_p green", but the bar is drawn in ink. This is a code comment only.
 
 ## Checked
-- Full review (changed lines with symbols): $V = Ex$ now carries its condition (negative plate as zero, $x$ measured from it) in the Formula section, the Summary, the sim's calc box and lesson-answers.py; the slope reading $100\,\text{V} : 0.020\,\text{m} = 5000\,\text{V/m}$ matches the figures (4.0 cm, 200 V, 50 V per cm).
-- Sign conventions consistent throughout: $E_\text{p} = qV$ with $q = -e$ for the electron, $W_{AB} = q(V_A - V_B)$, each charge moves from rest toward lower $E_\text{p}$; proton $+150\,\text{eV}$, electron $-150\,\text{eV}$ at $150\,\text{V}$; energy bars right.
-- Recomputed in one script: worked example $4.806 \cdot 10^{-16}\,\text{J}$, $3.25 \cdot 10^7\,\text{m/s}$ (11 % of $c$); aurora $4.19 \cdot 10^7\,\text{m/s}$; experiments 1–2: $E$ 20 000/10 000/5000 V/m, $E_\text{k}$ 500 eV at every $d$, proton $309\,\text{km/s}$, electron $13\,262\,\text{km/s}$ (ratio 43), alpha 1000 eV; weight/electric ratio $4.9 \cdot 10^{10}$; sim $v_\text{max}$ 6.3 % of $c$; error item $-4.8 \cdot 10^{-17}\,\text{J}$; transfer $42.0\,\text{km/s}$ (mistakes 1.33, 29.7, 41 996); check 2 $300\,\text{eV}$ (mistakes 30 000, $4.8 \cdot 10^{-17}$); exit $-50\,\text{eV}$, $4.8 \cdot 10^{-16}\,\text{J}$. All agree with lesson-answers.py.
-- Photo captions: lightning potential differences (10⁷–10⁸ V), negative cloud base with electrons moving to higher potential, plasma ball: correct.
-- Every choice has exactly one correct option with right feedback; experiments lock all but the varied parameter; sim model (uniform field, $F = |q|E$, step integration, no use of $|q|U$) matches its boxes.
-- Hash at start and end: 9f0133e283d84987.
+- One script recomputed every number from the task text with my own formulas and matched lesson-answers.py: E = 5000 V/m, F/G = 4.9·10¹⁰, worked example 4.806·10⁻¹⁶ J and 3.248·10⁷ m/s, crossing times 161.6/323.2/646.3 ns, speeds 309/13 262/220 km/s (ratio 43), transfer 42.0 km/s and its mistakes, check 2 300 eV, exit −50 eV, aurora 4.2·10⁷ m/s.
+- Classical ½mv² is justified: at 3 keV the relativistic v/c is 0.1079 vs 0.1083, and the sim stays at or below 6.3 % of c.
+- Gravity neglect is stated with the right magnitudes (at least 4.9·10⁹ in the sim's weakest field).
+- Sign logic is the same in the theory, the energy bars, the error task, check 1, the predictions, the summary and the exit ticket: E_p = qV, the electron moves toward the higher potential, and E_p decreases.
+- The formula section names the right law (V = E_p/q with E_p = qV under it). The zero points are stated, and the vx-graph and equipotential figure are to scale.
+- Photo captions are correct: the cloud–ground potential difference, internal energy transferred as heat, a negative cloud base, the plasma ball's drive.
+- Each choice item has exactly one correct option, and the distractor feedback names the right mechanism.
+- Each experiment isolates its varied parameter. simState carries E, tns, EkeV, EpeV and vkms, and the adapter's reset matches.
+- sim.js integrates exactly at constant acceleration and gets E_k from v, not from |q|U, so the result emerges. The electron is shown 40× slower, as the howto says.
+- Scope is FY6 central content.

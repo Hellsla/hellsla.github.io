@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 660f444084d55575
-SCOPE: delta added-exercise from 5e7e04fa3110d92d base 5a45b28682e8
+CONTENT-HASH: 914daee64065bfde
+SCOPE: delta added-exercise from 689c71af3cad3c07 base 415cbc7c6bc3
 
 ## Blocking
-(none)
 
 ## Polish
-(none new; round-1 polish on L2-08 level and "Kaava" wording unchanged and optional)
+- solutions.md fy8-1-L2-10 Järkevyys — "Samoin on natriumin raja-aallonpituudella 544 nm teoriassa." is unclear; write "Teoriassa natriumin raja-aallonpituus on 544 nm, joten lukema on lähellä oikeaa."
+- exercises.json fy8-1-L2-10 text — "Se vastaa rajataajuutta." is vague; write "Se on fotonin energia rajataajuudella."
+- solutions.md Järkevyys — "1240 eV nm : 539 nm" uses a colon for division inside an aligned block; use a fraction.
 
 ## Checked
-- L2-08 solution diff: Muunnokset now states frequencies are used in units of 10^14 Hz so the slope 0.4136 eV gives eV directly; the old line mixed units (eV per 10^14 Hz times a unitless-looking factor) and is repaired.
-- Sijoitus 0.4136 * (12 - 5.56) = 2.66 eV is correct and consistent with the stated unit convention.
-- Järkevyys no longer uses the work function (not readable in the task); compares the graph reading 2.7 eV to hf = 4.96 eV and notes 2.66 agrees: clearer, reading stays the primary route.
-- Reading step, answer (2.7 eV, tolerance) and L1-10, L2-09 untouched; earlier PASS stands.
-- Method: text diff only.
+- L2-10 is a real investigation (student moves sliders, records, interprets); not a repeat of L2-05 to L2-09, which are given tables and graphs. Kinds data/experiment/model fit the slot goals (photon, threshold, why the wave model fails).
+- Variable control is explicit in c): intensity first, then wavelength; the answer in b) is a reading, tolerance 0,05 eV covers the stated ±10 nm reading (2,25–2,34 eV).
+- Arithmetic checked: 539 nm gives 5,562e14 Hz and 2,30 eV; sim values for zinc and platinum named.
+- Solution is followable step by step; the principle is explained before the formula; d) explains the wave-model prediction before the contradiction.
+- Situation first, question as its own sentence in each part; boxed question last; no trap beyond the lesson.
+- Selkeä suomi: short sentences, terms explained (irrotustyö, estojännite). Workload is high (four parts) but fits one level 2 task.
+- Method: delta text in packet; no captures needed.

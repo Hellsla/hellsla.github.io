@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c30cdbfb227c98e9
-SCOPE: delta added-exercise from cbbbb7286332c468 base 6792c2c543a7
+CONTENT-HASH: 04d9947faaf13eb6
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] L3-06 solution, SUBSTITUTION, 360 px — after the second display block a lone ". b)" starts a line (source: `$$. b) ...`), so a full stop leads the line; move the period inside the display (`\,.`) or drop it and start "b)" on its own line.
-- [Minor] figure, 360 px — scale numbers small (about 9 px) but readable; unchanged.
+- [Minor] L3-05 mallivastaus — says "lämpöliikkeen energiaksi" while task and solution now say sisäenergiaksi; harmonise if edited again.
 
 ## Checked
-- Round 4, 360 px, solutions open: own captures of L2-09 and L3-06 (fi), read in full in chunks; scrollWidth 360, no horizontal overflow.
-- L3-06 SUBSTITUTION a): both denominators now stack J over eV and sit inside the card with margin; nothing clipped. L2-09 conversion, E rows, answer, figure lamp-spectrum seen.
-- Delta covers only these two figure tasks.
+- Delta: lämpö -> sisäenergia in L3-03, L3-05 text and solutions, "elektronivolteiksi" typo fix, two significant-figure sentences. Opened open-exercises-L3-1280-8 (L3-05 solution): formulas, alignment, units and answer box fine.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

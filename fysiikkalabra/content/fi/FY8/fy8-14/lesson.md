@@ -55,7 +55,7 @@
 
 ### Röntgensäteily syntyy, kun nopeat elektronit osuvat anodiin
 
-**Röntgensäteily** on suurienergistä fotonisäteilyä, joka syntyy, kun nopeat elektronit jarruttavat aineessa (jarrutussäteily) tai kun ne irrottavat elektronin atomin sisimmältä kuorelta ja ulomman kuoren elektroni siirtyy sen paikalle (karakteristinen röntgensäteily). Röntgenputkessa hehkuvasta katodista irtoavia elektroneja kiihdytetään jännitteellä $U$ kohti volframista tehtyä anodia. Jokainen elektroni saa liike-energian $eU$, joten esimerkiksi jännitteellä $80\,\text{kV}$ syntyvän fotonin energia on enintään $80\,\text{keV}$. Valtaosa elektronien energiasta, noin $99\,\%$, muuttuu anodissa lämmöksi, ja vain pieni osa säteilee röntgenfotoneina. Jarrutussäteilyn spektri on jatkuva, ja sen päällä ovat anodin atomien karakteristiset terävät piikit; volframilla ne ovat noin $59\,\text{keV}$:n kohdalla. Röntgen- ja gammafotoni ovat samaa sähkömagneettista säteilyä: nimi kertoo, syntyikö fotoni elektronien jarrutuksessa tai atomin sisäkuoren siirtymässä vai ytimen siirtymässä. Molemmat ionisoivat ja vaimenevat aineessa samalla tavalla (luku *Ionisoiva säteily ja elimistö*).
+**Röntgensäteily** on suurienergistä fotonisäteilyä, joka syntyy, kun nopeat elektronit jarruttavat aineessa (jarrutussäteily) tai kun ne irrottavat elektronin atomin sisimmältä kuorelta ja ulomman kuoren elektroni siirtyy sen paikalle (karakteristinen röntgensäteily). Röntgenputkessa hehkuvasta katodista irtoavia elektroneja kiihdytetään jännitteellä $U$ kohti volframista tehtyä anodia. Jokainen elektroni saa liike-energian $eU$, joten esimerkiksi jännitteellä $80\,\text{kV}$ syntyvän fotonin energia on enintään $80\,\text{keV}$. Valtaosa elektronien energiasta, noin $99\,\%$, muuttuu anodin sisäenergiaksi, ja vain pieni osa säteilee röntgenfotoneina. Jarrutussäteilyn spektri on jatkuva, ja sen päällä ovat anodin atomien karakteristiset terävät piikit; volframilla ne ovat noin $59\,\text{keV}$:n kohdalla. Röntgen- ja gammafotoni ovat samaa sähkömagneettista säteilyä: nimi kertoo, syntyikö fotoni elektronien jarrutuksessa tai atomin sisäkuoren siirtymässä vai ytimen siirtymässä. Molemmat ionisoivat ja vaimenevat aineessa samalla tavalla (luku *Ionisoiva säteily ja elimistö*).
 
 <svg data-fig="rontgen" viewBox="0 0 600 380" role="img" aria-label="Kaavakuva, ei mittakaavassa: röntgenkuvaus. Ylhäällä lasinen röntgenputki: vasemmalla hehkuva katodi, josta elektronit kiihdytetään oikealle anodille. Anodista lähtee alaspäin viuhkana röntgenfotoneja aaltoviivoina. Niiden tiellä on kyynärvarren poikkileikkaus: pehmytkudos ja sen sisällä kaksi luuta. Luihin osuvat fotonit pysähtyvät, muut jatkavat kudoksen läpi alla olevaan ilmaisimeen. Ilmaisimeen piirtyy luiden kohdalle vaaleampi varjo, koska sinne osuu vähemmän säteilyä." style="max-width:100%;font-size:24px">
   <rect x="250" y="304" width="4" height="22" fill="#6c757d"/>
@@ -177,18 +177,18 @@
 
 Röntgenkuva on varjokuva. Säteily kulkee potilaan läpi ilmaisimeen, ja jokainen kudoskerros vaimentaa siitä osan. Luu vaimentaa röntgensäteilyä paljon enemmän kuin pehmytkudos, koska se on tiheämpää ja sisältää kalsiumia, jonka järjestysluku $20$ on paljon suurempi kuin pehmytkudoksen vedyn, hiilen ja hapen. Röntgenkuvauksen energioilla valosähköisen absorption todennäköisyys kasvaa voimakkaasti järjestysluvun mukana (luku *Ionisoiva säteily ja elimistö*), joten ero riippuu myös säteilyn energiasta: noin $60\,\text{keV}$:n säteilylle pehmytkudoksen puoliintumispaksuus on noin $3{,}4\,\text{cm}$, luun vain noin $1{,}1\,\text{cm}$. Luun taakse osuu siksi vähemmän säteilyä, ja luu näkyy kuvassa vaaleana. Keuhkojen ilma päästää säteilyn läpi lähes vaimentamatta, joten keuhkot näkyvät tummina. Kuvan **kontrasti** eli kirkkausero syntyy siis siitä, että eri kudokset vaimentavat säteilyä eri tavalla.
 
-Tietokonetomografiassa (TT) röntgenputki ja ilmaisimet kiertävät potilaan ympäri. Laite mittaa vaimenemisen tuhansista suunnista, ja tietokone laskee niistä, kuinka paljon kukin pieni tilavuusalkio vaimentaa. Tuloksena on poikkileikkauskuva, jossa näkyvät myös toistensa takana olevat elimet. TT-tutkimuksen annos on kuitenkin monikymmenkertainen tavalliseen röntgenkuvaan verrattuna.
+Tietokonetomografiassa (TT) röntgenputki ja ilmaisimet kiertävät potilaan ympäri. Laite mittaa vaimenemisen tuhansista suunnista, ja tietokone laskee niistä, kuinka paljon kukin pieni tilavuusalkio vaimentaa. Tuloksena on poikkileikkauskuva, jossa näkyvät myös toistensa takana olevat elimet. TT-tutkimuksen annos on kuitenkin kymmeniä kertoja suurempi kuin keuhkojen röntgenkuvan annos.
 
 | Tutkimus | Efektiivinen annos |
 | --- | --- |
 | hampaan röntgenkuva | $< 0{,}01\,\text{mSv}$ |
-| keuhkojen röntgenkuva | noin $0{,}02\,\text{mSv}$ |
+| keuhkojen röntgenkuva (etu- ja sivukuva) | noin $0{,}1\,\text{mSv}$ |
 | pään TT | noin $2\,\text{mSv}$ |
 | vartalon TT | noin $5$–$10\,\text{mSv}$ |
 | luuston isotooppikuvaus | noin $3\,\text{mSv}$ |
 | PET-kuvaus | noin $6\,\text{mSv}$ |
 
-Lähde: tyypilliset suuruusluokat STUKin terveydenhuollon säteilyaltistusta koskevista julkaisuista ja ICRP:n julkaisusta 128 (2015); yksittäisen tutkimuksen annos riippuu laitteesta, kuvausprotokollasta ja potilaasta. Vertailun vuoksi suomalainen saa luonnon säteilystä keskimäärin noin $5{,}1\,\text{mSv}$ vuodessa (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
+Lähde: tyypilliset suuruusluokat STUKin terveydenhuollon säteilyaltistusta koskevista julkaisuista ([STUK: Röntgentutkimuksen säteilyannokset vaihtelevat](https://www.julkari.fi/server/api/core/bitstreams/89234513-99f8-4ee2-a720-20bd04eb2cfb/content)) ja ICRP:n julkaisusta 128 (2015); yksittäisen tutkimuksen annos riippuu laitteesta, kuvausprotokollasta ja potilaasta. Vertailun vuoksi suomalainen saa luonnon säteilystä keskimäärin noin $5{,}1\,\text{mSv}$ vuodessa (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
 
 <figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="Sairaalan kuvaushuone: vaaleanvihreä rengasmainen laite, jonka aukkoa kohti osoittaa valkoisella liinalla peitetty potilaspöytä."><figcaption>PET-TT-laite Bronissa Ranskassa. Renkaan sisällä on PET-kuvauksen ilmaisinrengas ja tietokonetomografian röntgenputki ilmaisimineen. Potilas liukuu pöydän mukana renkaan läpi.</figcaption></figure>
 
@@ -313,7 +313,7 @@ Hoito jaetaan yleensä moneen osaan: tyypillisesti kasvain saa $2\,\text{Gy}$ ke
 
 ### Säteily teollisuudessa ja tutkimuksessa
 
-Lääkintätarvikkeet, kuten ruiskut ja leikkauskäsineet, **steriloidaan** valmiissa pakkauksissaan koboltti-60:n gammasäteilyllä tai elektronisuihkulla. Tavallinen annos $25\,\text{kGy}$ tappaa mikrobit, vaikka se lämmittäisi vettä vain noin $6\,\text{K}$: vaikutus perustuu ionisaatioon eikä lämpöön, eikä tuote muutu radioaktiiviseksi. Paperikoneen **paksuusmittarissa** beetasäteily kulkee paperiradan läpi ilmaisimeen. Mitä paksumpaa paperi on, sitä vähemmän säteilyä pääsee läpi, ja mittarin lukema ohjaa koneen säätöä jatkuvasti. Samaan tapaan gammasäteilyllä mitataan teräslevyjä, ja hitsaussaumoja kuvataan gammalähteellä.
+Lääkintätarvikkeet, kuten ruiskut ja leikkauskäsineet, **steriloidaan** valmiissa pakkauksissaan koboltti-60:n gammasäteilyllä tai elektronisuihkulla. Tavallinen annos $25\,\text{kGy}$ tappaa mikrobit, vaikka se lämmittäisi vettä vain noin $6\,\text{K}$: vaikutus perustuu ionisaatioon eikä lämpenemiseen, eikä tuote muutu radioaktiiviseksi. Paperikoneen **paksuusmittarissa** beetasäteily kulkee paperiradan läpi ilmaisimeen. Mitä paksumpaa paperi on, sitä vähemmän säteilyä pääsee läpi, ja mittarin lukema ohjaa koneen säätöä jatkuvasti. Samaan tapaan gammasäteilyllä mitataan teräslevyjä, ja hitsaussaumoja kuvataan gammalähteellä.
 
 <svg data-fig="mittari" viewBox="0 0 600 340" role="img" aria-label="Kaavakuva, ei mittakaavassa: paperikoneen paksuusmittari. Vaakasuora paperirata kulkee vasemmalta oikealle kahden telaparin välistä. Radan alapuolella on beetasäteilylähde, josta elektronit kulkevat sinisinä pisteinä ylöspäin paperin läpi. Osa pysähtyy paperiin, osa pääsee radan yläpuolella olevaan ilmaisimeen. Ilmaisimesta johto vie lukeman säätölaitteeseen, joka ohjaa telojen puristusta: mitä paksumpi paperi, sitä vähemmän säteilyä pääsee läpi." style="max-width:100%;font-size:24px">
   <circle cx="70" cy="150" r="24" fill="#c4ccd4" stroke="#1f2933" stroke-width="2.5"/>
@@ -445,7 +445,21 @@ Kun positroni ja elektroni annihiloituvat lähes levossa, niiden yhteinen massa 
 E_\gamma = m_e c^2
 ```
 
-missä $E_\gamma$ on yhden fotonin energia ($\text{J}$), $m_e = 9{,}109 \cdot 10^{-31}\,\text{kg}$ elektronin ja positronin massa ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ valon nopeus. Sijoittamalla saadaan $E_\gamma = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2 = 8{,}187 \cdot 10^{-14}\,\text{J}$. Kun sijoitetaan $1\,\text{J} = \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV}$, saadaan $E_\gamma = 8{,}187 \cdot 10^{-14} \cdot \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 5{,}11 \cdot 10^{5}\,\text{eV} = 511\,\text{keV}$. Energia on noin $150\,000$-kertainen näkyvän valon fotoniin verrattuna, ja jokaisessa annihilaatiossa se on sama, joten PET-laite voi hylätä fotonit, joiden energia poikkeaa siitä selvästi, koska ne ovat sironneet matkalla.
+missä $E_\gamma$ on yhden fotonin energia ($\text{J}$), $m_e = 9{,}109 \cdot 10^{-31}\,\text{kg}$ elektronin ja positronin massa ja $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ valon nopeus. Sijoittamalla saadaan $$
+\begin{aligned}
+&E_\gamma \\
+&= 9{,}109 \cdot 10^{-31}\,\text{kg} \\
+&\cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2 \\
+&= 8{,}187 \cdot 10^{-14}\,\text{J}
+\end{aligned}
+$$. Kun sijoitetaan $1\,\text{J} = \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV}$, saadaan $$
+\begin{aligned}
+E_\gamma &= 8{,}187 \cdot 10^{-14} \\
+&\cdot \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\
+&= 5{,}11 \cdot 10^{5}\,\text{eV} \\
+&= 511\,\text{keV}
+\end{aligned}
+$$. Energia on noin $150\,000$-kertainen näkyvän valon fotoniin verrattuna, ja jokaisessa annihilaatiossa se on sama, joten PET-laite voi hylätä fotonit, joiden energia poikkeaa siitä selvästi, koska ne ovat sironneet matkalla.
 
 ## Esimerkki
 

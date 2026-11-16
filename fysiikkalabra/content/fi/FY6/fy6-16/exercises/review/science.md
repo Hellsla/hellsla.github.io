@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a6262ad6a5a59e36
-SCOPE: delta added-exercise from 166963488269ae93 base 8f23aa7ae3bd
+CONTENT-HASH: 9dcbe1d153d30989
 
 ## Blocking
 
 ## Polish
-- solutions.md (fy6-16-L2-09, Järkevyys) — the second sentence recomputes the same product with rounded numbers, so it is not an independent check. A real check: about 4 kW is a plausible evening load for a house (sauna stove plus cooking), and 17 kWh in four hours is about 0,7 € per hour at 16 snt/kWh.
-- exercises.json (fy6-16-L2-09) — L2-05 also gives an evening load of a house "ennen latausasemaa", but for 17–22 h with different values (2,1 … 6,8 kW). If both tasks mean the same house, the data disagree. "Erään omakotitalon" makes clear that they are different houses.
 
 ## Checked
-- Hash a6262ad6a5a59e36 at start and end; I judged only fy6-16-L2-09 (delta added-exercise).
-- figures.py draws steps of 2, 5, 7 and 3 kW, one hour each from 18 to 22. All of them lie on 1 kW grid lines, and the alt text gives the same values and states neither the energy nor the cost.
-- Recomputed: W = ΣPΔt = (2 + 5 + 7 + 3) kW · 1,0 h = 17 kWh and K = aW = 0,16 €/kWh · 17 kWh = 2,72 €, the same as answers.py. The tolerance of 2 % covers the rounded answer 2,7 €.
-- Physics: the energy is the area under the (t, P) graph, and the power is constant on each step. The house's own consumption is paid by the energy taken from the grid, so no efficiency enters here, which is right. This agrees with the brief's K = aW_verkko.
-- The magnitudes are realistic: a peak of 7 kW stays under the 3 × 25 A limit of about 17 kW, as in this chapter's other tasks.
-- The solution is complete: given and asked, the principle (rectangles), how the graph is read, the formula before the numbers, snt → €, the substitution, and the rounding reason (the graph readings).
-- Scope: energy and cost in the household (FY6 sähköteho; FY2 kWh as prerequisite knowledge).
+- All 20 numeric answers recomputed with my own formulas in one script and compared with answers.py: every value agrees (L2-05 key 10,4 = 10,45 rounded down; L2-08 options 15,3 / 11,1 / 13,0 / 5,1 h).
+- L2-03 judged against the teacher's rule of 2026-11-15 (an answer check accepts a limit rounded either way; P7c applies only to the model solution): exact limit 25 A − 9000 W : (3 · 230 V) = 11,96 A; key 11,5 A with tolerance 0.05 accepts 10,93–12,08 A, so 11, 11,96 and 12 A pass, and 13 A (13 A + 13,04 A = 26,04 A > 25 A) fails. Correct.
+- L2-03 model solution: symbolic form I_a = I_p − P_k : (3U) first, 13,04 A and 11,96 A right, answer "11 A" rounded down with the right safety reason, check 13,0 A + 11 A = 24 A < 25 A and 7,6 kW. Unchanged and consistent with answers.py's comment.
+- Physics of P = UI and P = 3UI under the stated power factor ≈ 1 and equal phase currents; t = W_akku : (ηP); K = aW_verkko; P_johto = ρ·2l : A · I² with out-and-back copper (L2-04 0,408 Ω, 6,53 V; L3-05 23,6 W and 104 W).
+- L2-07 trapezoid sum 22,85 kWh and mean 7,62 kW; L3-04 distance 14 640 km, 390,4 € vs 1760,5 €, difference 1370,1 €, public charging 1171,2 € (saving 589 €, about 780 € less).
+- Limit roundings: L3-03 up (at least 7,16 A), L3-05 and L2-05 down (at most), each with its reason (P7c).
+- Exactly one correct option in L1-06 and L2-08, and the answer field equals that option; every distractor's feedback names the actual mistake.
+- Figures lataus-ex and talo-ex give the values L2-01 (27,5 kWh) and L2-09 (17 kWh, 2,72 €) need without giving the answer.
+- Scope inside FY6 (power, Joule's law, batteries and charging, fuses); notation matches the brief.
+- Hash the same at the start and the end.

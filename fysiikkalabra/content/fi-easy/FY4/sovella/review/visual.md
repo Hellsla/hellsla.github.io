@@ -1,8 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: f596af22d0620375
+CONTENT-HASH: 20973aa4145bec53
 
 ## Blocking
-None.
 
 ## Polish
-1. Delta: fy4-s2 b now writes $E_{\text{p}0}$ (was $E_\text{p}$); rendered line checked at 390 px, no KaTeX error, no overflow.
+
+## Checked
+- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.

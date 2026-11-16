@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c47f1ae7e8ee25d5
-Mode: delta, round 2
+CONTENT-HASH: e8e3197bc9764ad9
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] Suuruusluokka paragraph — "kerroin" and "$n$" are not tied to the form $a \cdot 10^{n}$ in the same sentence, so the new rule sentences are slightly abstract for S2 readers — start with "Kirjoita luku muotoon $a \cdot 10^{n}$. Jos kerroin $a$ on alle noin 3, ..."
+- [Minor] fy1-1 inquiry/solutions — in 'noin 4 valovuotta (' the opening parenthesis is left alone at the line end and the formula starts the next line — keep '(' with the formula (no break after it).
 
 ## Checked
-- fy1-1-theory-1280-1.png: the two new rule sentences render cleanly ($10^{n}$, $10^{n+1}$ upright, correct superscripts), the paragraph is still short and readable, the examples and the figure beside the previous section kept their layout.
+- delta review 5d reflow, round 1: opened the 360 px captures (inquiry 01, solutions 02, 05-13); nothing clipped or scrolling, rows break at sensible points, equals signs aligned
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

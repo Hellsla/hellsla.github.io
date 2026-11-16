@@ -10,7 +10,7 @@ written and reviewed with Claude Code agents, published from the committed `site
 ## Quick start
 ```bash
 cd fysiikkalabra
-pip install markdown playwright && playwright install chromium
+pip install -r requirements-ci.txt          # the versions CI uses (Playwright pinned)
 python scripts/check_lesson.py fy3-9     # lint, LaTeX, preview build, simulation and inquiry tests, answer positions, 360 px, review state
 python scripts/build.py fy3-9            # preview/fy3-9.html (git-ignored), any lesson
 python scripts/build.py --all            # preview/ with every lesson, drafts included (what CI tests)
@@ -21,7 +21,13 @@ python scripts/test_reviews.py           # tests of the publishing rule
 python scripts/test_courses.py           # a temporary FY4 course through the whole pipeline, nothing published
 python scripts/usage.py report FY3 --by agent   # tokens and cost per agent and model
 ```
-If the pip `playwright` version does not match the installed browser: `PW_CHROMIUM=/path/to/chrome python scripts/test_sims.py`.
+The browser checks give CI's verdict only in CI's browser: `python scripts/ci_env.py run <command>` runs a command in
+CI's image (`mcr.microsoft.com/playwright/python:v<version>-noble`, the version `requirements-ci.txt` pins: the same
+Chromium and fonts), e.g. `python scripts/ci_env.py run python scripts/check_layout.py fy3-9 --width 360`; it needs
+Docker (in a Claude Code cloud session it starts the installed daemon itself). `check_lesson.py` runs its layout checks
+there by itself when Docker is available. A session's own Chromium measured formulas 4-9 px narrower than CI's (fy2-3
+at 360 px: 3 clipped formulas locally, 13 in the image). Without Docker, if the pip `playwright` version does not match
+the installed browser: `PW_CHROMIUM=/path/to/chrome python scripts/test_sims.py`.
 
 Inside Claude Code, `/lesson fy3-9` runs one lesson through the pipeline (orchestrated on Sonnet): the **developer**
 (Sonnet; Opus only for demanding physics or a numerical model) writes or fixes, `check_lesson.py` must pass, the

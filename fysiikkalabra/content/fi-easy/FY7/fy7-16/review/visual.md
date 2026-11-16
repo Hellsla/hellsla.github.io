@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d2e65e166ed2dcc5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 6855dcf2d74fe9ee
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md — "Pohjaan ei kuitenkaan synny yhtä tavallisen käämin kierrosta" can be misread; e.g. "Pohja ei kuitenkaan ole yksi käämin kierros."
+- [Minor] inquiry.json, numeric task, Sijoitus — the row "· 2π · 1,40 · 10⁵ Hz)" starts left of the opening bracket of the row above; `\phantom{: (}` before it would show that it continues the divisor.
+- [Minor] inquiry.json, Koe hint and solution — "(21,01 Wh − 14,26 Wh) / : 14,26 Wh." has no left side, and "lisäys" stands as plain text before a block that begins with "=" (carried from round 1).
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Heading "kattilan pohja toisiopuolena / as the secondary"; many eddy-current paths; household hobs designed for ferromagnetic bases; 2020 device comparison framed with its dependence on devices and alignment; receiver-coil sentence without formula; numbers with units in LaTeX.
-- No paragraph changed in this round in fi-easy exceeds about 120 words
-- Hash identical at start and end.
+- batch delta review (fi-easy, 5d reflow, round 2): the round-1 blocker is gone: B₀ = 9,0 V / : (12 · 1,1 · 10⁻³ m² / · 2π · 1,40 · 10⁵ Hz) / = 7,751 · 10⁻⁴ T / = 0,7751 mT fits at 360 and 390 px, "Hz)" visible, the break is between whole quantities; one row at 1280 px. Hint and lisäys blocks fit. own captures of the rebuilt preview (preview/fi-easy, everything open; scratchpad vfe-r2/): contact sheets at 390 and 1280 px, the changed formulas at 360 px after real clicks; overflow scan of every formula at 360/390/1280 px: none wider than its box, no scrolling, no page overflow. Hash identical at start and end.

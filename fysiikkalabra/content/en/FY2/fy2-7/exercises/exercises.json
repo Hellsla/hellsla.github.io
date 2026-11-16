@@ -148,7 +148,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Thermal energy fed into the district heating network and thermal energy arrived (example data set)",
+        "caption": "Thermal energy fed into the district heating network and thermal energy arrived",
         "columns": [
           "Month",
           "$E_\\text{sent}\\,(\\text{MWh})$",
@@ -190,7 +190,7 @@
       "unit": "MW",
       "tolerance": 0.02,
       "data": {
-        "caption": "Loss power of a power line at different voltages, transmitted power $100\\,\\text{MW}$ (example data set)",
+        "caption": "Loss power of a power line at different voltages, transmitted power $100\\,\\text{MW}$",
         "columns": [
           "$U\\,(\\text{kV})$",
           "$P_\\text{loss}\\,(\\text{MW})$"
@@ -301,7 +301,72 @@
       "figure": "fy2-7/sankey",
       "answer": 12.5,
       "unit": "MWh",
-      "tolerance": 0.03
+      "tolerance": 0.05
+    },
+    {
+      "id": "fy2-7-L2-10",
+      "level": 2,
+      "text": "The page <a href=\"https://www.fingrid.fi/sahkomarkkinat/sahkojarjestelman-tila/\" target=\"_blank\" rel=\"noopener\">Fingrid: Sähköjärjestelmän tila (Power system status)</a> (read 16 November 2026) of Fingrid, the Finnish transmission system operator, shows the state of the Finnish electricity system in real time. The table gives the readings on the page on 16.11.2026 at 10.48. The task works with the table even though the readings on the page have changed since; you may also look at the current view of the page and compare it with the table. On the page, import is negative and export is positive. The production sources do not add up exactly to the total production, because real-time measurements have small differences.\n\na) Compare the consumption with the production. How large a part of the consumption was brought in from abroad, that is, what is the net import? Do consumption, production and import match each other?\n\nb) Calculate how much electrical energy would be consumed in Finland in one hour if the consumption power stayed at the level of the table. Give the answer in gigawatt-hours.\n\nc) Explain why Finland's electricity production does not need to match Finland's consumption exactly at every moment.\n\nd) Calculate the shares of wind power and nuclear power in the total production. Explain why the readings of one moment do not tell the annual structure of Finland's electricity production.\n\nThe answer field takes the energy of part b).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 11.6,
+      "unit": "GWh",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Fingrid: Sähköjärjestelmän tila (power system status), read 16.11.2026 at 10.48",
+        "columns": [
+          "Quantity",
+          "Power $P\\,(\\text{MW})$"
+        ],
+        "rows": [
+          [
+            "consumption",
+            "11603"
+          ],
+          [
+            "production, total",
+            "11341"
+          ],
+          [
+            "import − / export + (net)",
+            "-210"
+          ],
+          [
+            "nuclear power",
+            "2594"
+          ],
+          [
+            "wind power",
+            "5571"
+          ],
+          [
+            "hydropower",
+            "1823"
+          ],
+          [
+            "combined heat and power (industry)",
+            "853"
+          ],
+          [
+            "combined heat and power (district heating)",
+            "329"
+          ],
+          [
+            "solar power",
+            "56"
+          ],
+          [
+            "other production",
+            "73"
+          ],
+          [
+            "electricity storage",
+            "71"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -341,7 +406,7 @@
       "unit": "MWh",
       "tolerance": 0.02,
       "data": {
-        "caption": "Average power of the heat losses of the house during the heating season (example data set)",
+        "caption": "Average power of the heat losses of the house during the heating season",
         "columns": [
           "Building part",
           "$P_\\text{loss}\\,(\\text{kW})$"
@@ -382,7 +447,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Power fed into the electricity grid and the share lost in periods of the day (example data set)",
+        "caption": "Power fed into the electricity grid and the share lost in periods of the day",
         "columns": [
           "Period (time of day)",
           "$t\\,(\\text{h})$",

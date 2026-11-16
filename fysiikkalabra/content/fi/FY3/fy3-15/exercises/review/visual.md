@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 18715801cb2d4975
+CONTENT-HASH: a809fb317bf5eeb9
 
 ## Blocking
-None. The shots were stale for this exercise hash, so I re-ran screenshot.py; the new capture shows the changed sentence.
+(none)
 
 ## Polish
-none.
+(none)
 
 ## Checked
-- open-exercises-L3-1280-1 and -2 (task 14-19, solution open): the Järkevyys block now reads "…kaukolämpöä käytetään pääasiassa lämmitykseen; kannattavuus riippuu tarpeesta ja hinnoista." It wraps cleanly, formulas and units intact, no clipping or overflow.
+- Round 1, delta. Captured at 390 and 1280 px every re-set formula of the set (paragraphs with an aligned display, 20 blocks per width, in contact sheets) and read them: no clipping, equals signs in one column, continuation rows begin with an operator, no number or unit broken, the punctuation after a display stays on the last row, wide screens join rows that fit.
+- Captures made with a script from the current preview build (the stored shots hold no 390 px solutions); the stored 1280 px captures were not needed beyond fy3-9.
+- Hash same at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

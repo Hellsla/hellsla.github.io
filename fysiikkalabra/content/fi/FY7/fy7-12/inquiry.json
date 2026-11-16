@@ -28,7 +28,7 @@
         {
           "text": "Normaalista poispäin: taitekulma on suurempi kuin $30^\\circ$.",
           "correct": true,
-          "feedback": "Oikein. Taittumislaista $1{,}33 \\cdot \\sin 30^\\circ = 1{,}00 \\cdot \\sin\\alpha_2$, joten $\\alpha_2 \\approx 41{,}7^\\circ$ (luku *Valon heijastuminen ja taittuminen*). Tänään selvitetään, mitä tapahtuu, kun tulokulmaa kasvatetaan."
+          "feedback": "Oikein. Taittumislaista $$\\begin{aligned} &1{,}33 \\cdot \\sin 30^\\circ \\\\ &= 1{,}00 \\cdot \\sin\\alpha_2 \\end{aligned}$$, joten $\\alpha_2 \\approx 41{,}7^\\circ$ (luku *Valon heijastuminen ja taittuminen*). Tänään selvitetään, mitä tapahtuu, kun tulokulmaa kasvatetaan."
         },
         {
           "text": "Normaalia kohti: taitekulma on pienempi kuin $30^\\circ$.",
@@ -281,7 +281,7 @@
       "hints": [
         "Valo etenee lasissa hitaammin kuin tyhjiössä. Millä nopeudella?",
         "Nopeus lasissa on $v = c : n$, ja kulkuaika $t = s : v = n s : c$.",
-        "$t = 1{,}47 \\cdot 1\\,172\\,000\\,\\text{m} : (3{,}00 \\cdot 10^8\\,\\text{m/s})$. Muunna sekunnit millisekunneiksi."
+        "$$\\begin{aligned} t &= 1{,}47 \\cdot 1\\,172\\,000\\,\\text{m} \\\\ &: (3{,}00 \\cdot 10^8\\,\\text{m/s}) \\end{aligned}$$. Muunna sekunnit millisekunneiksi."
       ],
       "mistakes": [
         {

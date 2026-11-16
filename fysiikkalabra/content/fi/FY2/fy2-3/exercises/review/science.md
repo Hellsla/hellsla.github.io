@@ -1,20 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6a4b518eb95a91d8
-SCOPE: delta added-exercise from 2d22792f6d7cc426 base 611fb7d5c174
-Mode: delta
-Round: 2
+CONTENT-HASH: 633302ba5d59bc16
 
 ## Blocking
 
 ## Polish
-- exercises.json fy2-3-L1-09: the symbol "hp" usually stands for mechanical horsepower (745,7 W). The text now says "metristä hevosvoimaa", which settles the value; "hv" would be the symbol for the metric unit. Both values are inside the 4 % tolerance (6,71 against 6,62 MJ), so this is C.
+- solutions.md fy2-3-L2-09 a) — "Silloin sähköä tuottava joutuu maksamaan siitä, että sähkö otetaan verkosta" goes a step beyond the article (which says only that the price can fall below zero when production exceeds consumption). It is true for a seller at a negative price; "artikkelin mukaan" should not cover it (C).
+- Earlier item: L1-09 "hp" for metric horsepower (C) is still open.
 
 ## Checked
-- Hash 6a4b518eb95a91d8 at the start and the end. I judged only the added L1-09 and L1-10.
-- L1-09 recomputed in my own script: P = 5,0 · 735,5 W = 3677,5 W, Δt = 1800 s, ΔE = PΔt = 6,62 MJ, the same as answers.py and exercises.json (MJ, 0,04).
-- L1-09 text now asks for the motor's mechanical output power and mechanical energy, as I suggested in round 1. The task and the solution now agree, and the "tasaisesti" condition is stated.
-- L1-09 solution: ΔE = PΔt is solved before substitution, the hp → W, min → s and J → MJ conversions are shown, and the result has two significant figures. The checks (≈ 6,7 MJ, ≈ 1,8 kWh) are right.
-- L1-10 now asks for the power ratio. From the figure, A gives 60 000 J : 40 s = 1500 W and B gives 40 000 J : 80 s = 500 W, so P_A/P_B = 3,0. This matches answers.py and exercises.json (unit "", 0,02).
-- L1-10 figure: A runs to (80; 120) and B to (80; 40) on 10 s and 20 kJ gridlines, and the description agrees. No power is printed, so the answer is not given away.
-- L1-10 solution: it uses the slope as the power (the lesson's statement). The check 120 kJ : 40 kJ at the same 80 s is independent of the main calculation and gives the same ratio.
-- L1-10 differs from L1-04: L1-04 asks only P_A, and the ratio needs both lines.
+- Delta review: hash 633302ba5d59bc16 at the start and the end; I judged only the added L2-09 (exercises.json, solutions.md, answers.py).
+- Source values checked against docs/audits/2026-11-16-fy2-aineistot.md: Yle 74-20045312, 16.8.2023; Vaasan sähkö 0,41, Oomi 0,25, Vattenfall 0,50 snt/kWh; Vaasan sähkö treats a negative hour as zero, Oomi and Vattenfall credit it; Fingrid's area price excludes taxes and transmission. All agree.
+- Recomputed in my own script: E = 2,0 kW · 4 h = 8,0 kWh; C = −5,0 · 8,0 = −40 snt (answers.py −40, tolerance 0,02); +15 snt/kWh → 120 snt, difference 160 snt; margin 0,41 · 8,0 = 3,28 ≈ 3,3 snt.
+- C = hPΔt is solved in symbols before substitution; kW·h = kWh needs no conversion; two significant figures from 2,0 kW and −5,0 snt/kWh with the four hours exact (CLAUDE.md, 2026-11-16).
+- The packet shows the b) chain flattened onto one line ("8,0 kWh C = …"); on disk it is an aligned display block, so no error.
+- d): storage losses as internal energy transferred as heat is correct; the limits (capacity, hourly contract) are stated.
+- Stays inside FY2 (E = Pt, kWh, energy price; storage and timing as energy-system reasoning).

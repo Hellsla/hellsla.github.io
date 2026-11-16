@@ -139,7 +139,7 @@
       "unit": "eV",
       "tolerance": 0.03,
       "data": {
-        "caption": "Vedyn Balmerin viivat (esimerkkiaineisto)",
+        "caption": "Vedyn Balmerin viivat",
         "columns": [
           "$n$",
           "$\\lambda\\,(\\text{nm})$"
@@ -179,7 +179,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Atomiin lähetetyt fotonit (esimerkkiaineisto)",
+        "caption": "Atomiin lähetetyt fotonit",
         "columns": [
           "Fotoni",
           "$\\lambda\\,(\\text{nm})$"
@@ -249,6 +249,18 @@
           "feedback": "Tässä suhteeksi on otettu lähtötasojen energioiden suhde $0{,}38\\,\\text{eV} : 0{,}85\\,\\text{eV}$. Fotoni kantaa kuitenkin tasojen erotuksen $E_\\text{y} - E_\\text{a}$, ei yhden tason energiaa. Aallonpituus on kääntäen verrannollinen tähän erotukseen."
         }
       ]
+    },
+    {
+      "id": "fy8-3-L2-09",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://physics.nist.gov/PhysRefData/Handbook/Tables/hydrogentable2.htm\" target=\"_blank\" rel=\"noopener\">NIST – Strong Lines of Hydrogen (H)</a> (luettu 16. marraskuuta 2026)\n\nTaulukossa on vedyn voimakkaimmat spektriviivat. Spektriviiva on yksi tietty valon väri, jonka atomi lähettää. Aallonpituudet on annettu ångströmeinä ($\\text{Å}$), ja $1\\,\\text{Å} = 10^{-10}\\,\\text{m} = 0{,}1\\,\\text{nm}$. Näkyvän valon viivoille taulukko antaa aallonpituuden ilmassa. Yhdelle viivalle voi olla useita lähellä toisiaan olevia arvoja, ja voit käyttää mitä tahansa niistä. Vetyatomin energiatasot ovat $E_n = -\\tfrac{13{,}6\\,\\text{eV}}{n^2}$.\n\na) Valitse taulukosta kaksi vedyn näkyvän valon viivaa, esimerkiksi punainen ja sinivihreä. Muunna niiden aallonpituudet nanometreiksi.\n\nb) Laske näiden viivojen fotonien energiat elektronivoltteina kaavalla $E = \\tfrac{hc}{\\lambda}$.\n\nc) Laske tasojen energioista siirtymien $3 \\to 2$ ja $4 \\to 2$ energiaerot elektronivoltteina.\n\nd) Yhdistä valitsemasi viivat siirtymiin. Selitä, miksi vedyn spektri on viivaspektri.\n\nVastaa laatikkoon kohdan c) siirtymän $3 \\to 2$ energiaero elektronivoltteina ($h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^{8}\\,\\text{m/s}$, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 1.89,
+      "unit": "eV",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -289,7 +301,7 @@
       "unit": "THz",
       "tolerance": 0.02,
       "data": {
-        "caption": "Pilven emissioviivat (esimerkkiaineisto)",
+        "caption": "Pilven emissioviivat",
         "columns": [
           "Viiva",
           "$\\lambda\\,(\\text{nm})$"
@@ -323,7 +335,7 @@
       "unit": "nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kaasun emissioviivat (esimerkkiaineisto)",
+        "caption": "Kaasun emissioviivat",
         "columns": [
           "Viiva",
           "$\\lambda\\,(\\text{nm})$"

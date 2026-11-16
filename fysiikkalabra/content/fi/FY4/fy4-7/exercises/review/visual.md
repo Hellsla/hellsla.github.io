@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 736f5d8b8a59c6e2
-SCOPE: delta added-exercise from 36a9f0fc1bd88cd4 base 81db4a6fd727
+CONTENT-HASH: dc35c3a94a42dce0
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-7-L2-09 graph — x ticks "0,5, 1, 1,5, 2, 2,5": use one decimal form.
-- [Minor] fy4-7-L2-08 — E_k curve is drawn in orange, the project's acceleration colour; check the energy palette.
+None.
 
 ## Checked
-- open-exercises-L2-1280-10 (L2-08 graph and solution), -11, -12 (L2-09 graph and solution). Axes show quantity and unit, gridlines align with the read points (2,0 m / 39 J), curve vs straight line clear, solutions aligned and complete.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-08, fi-390-09 and fi-1280-06; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

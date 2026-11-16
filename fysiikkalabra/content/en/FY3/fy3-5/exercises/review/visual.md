@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8569da22151b127b
-Mode: delta, round 1 (added exercises fy3-5-L1-10, fy3-5-L2-08; shown as 6-10 and 6-18)
+CONTENT-HASH: 297386564f08d0ce
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] 6-18 figure — the F-s line is orange while force is red project-wide; teacher-approved figure, only noted. The task's "Read the values you need" is satisfied: end points sit on grid crossings.
-- [Minor] 6-10 solution — "Q = 2000 · 4.1868 J" drops the unit of the count; write "2000 · 4.1868 J" as "2000 cal ..." is clear already, so only a nicety.
-- [Minor] 6-10 and 6-18 — "(mafytaulukot.fi)" is plain text; a link would help.
+- [Minor] 6-13 and the 6-12-type Answer lines: the Answer text starts with `;` (`$800\,\text{J} = 0.8\,\text{kJ}$; the difference is known …`), so after the set-apart answer box a lone `;` opens the next line. Write the reason as a sentence ("Whole joules, because …") like the other answers.
 
 ## Checked
-- Opened at readable size: 6-10 (L1 shot 10: task end, closed-state hint box, answer, full solution; kcal to J conversion in separate rows), 6-18 (L2 shots 9 and 10: piston-force graph, F (N) and s (m) axes, two end markers, solution start), and 6-17 (shot 9) beside it for set consistency.
-- Units LaTeX with thin spaces, aligned substitution blocks, answer boxed, no overflow or clipping.
-- Other tasks unchanged, not repeated.
+- Hash changed during the review (ccdf85a87cd7a876 -> 297386564f08d0ce: the student's solution in 6-12 turned from display maths to an inline chain). Re-rendered that task at 390 and 1280 px: the chain fits on one row on a phone, closing quote attached, nothing clipped. 390 px chain montage (42 chains) opened; fy3-5-open-exercises-L2-1280-4.
+- Phone (390 px): the packet has no phone captures of the exercises, so I rendered every calculation chain of the opened solutions at 390 px myself (all `.eq-chain` blocks in the set; page scrollWidth 390, no overflow) and opened the montage. Wide: opened the 1280 px captures named below.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

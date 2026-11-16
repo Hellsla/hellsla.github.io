@@ -115,7 +115,7 @@ Mikromallin mukaan kaasun paine syntyy hiukkasten törmäyksistä astian seinäm
   <foreignObject x="358.5" y="289.5" width="103" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V/2\ \text{ja}\ 2p$</div></foreignObject>
 </svg>
 
-Isotermisessä tilanmuutoksessa paine on siis kääntäen verrannollinen tilavuuteen, ja paineen ja tilavuuden tulo pysyy vakiona. Tätä sanotaan Boylen laiksi. Se vastaa alun kysymykseen: lentokoneen matkustamossa ilmanpaine laskee noin 78 kPa:iin, joten pussin ilma laajenee, kunnes pussi on kireällä. Kireässä pussissa ilman paine pysyy hieman matkustamon painetta suurempana, ja siksi pussi tuntuu kovalta.
+Isotermisessä tilanmuutoksessa paine on siis kääntäen verrannollinen tilavuuteen, ja paineen ja tilavuuden tulo pysyy vakiona. Tätä sanotaan Boylen laiksi. Se vastaa alun kysymykseen: lentokoneen matkustamossa ilmanpaine laskee noin $78\,\text{kPa}$:iin, joten pussin ilma laajenee, kunnes pussi on kireällä. Kireässä pussissa ilman paine pysyy hieman matkustamon painetta suurempana, ja siksi pussi tuntuu kovalta.
 
 Boylen laki pätee hyvin ilmaan ja muihin kaasuihin tavallisissa paineissa ja lämpötiloissa. Kaasun määrän täytyy pysyä samana, eikä kaasua saa päästä vuotamaan pois tai tulemaan lisää. Paineena käytetään kaasun kokonaispainetta eikä mittarin näyttämää ylipainetta.
 
@@ -425,7 +425,7 @@ missä $\theta$ on lämpötila celsiusasteina lukuarvona; laskuissa riittää $2
 </svg>
 
 ## Esimerkki
-Sipsipussissa on lentokentällä $0{,}80\,\textsf{l}$ ilmaa 101 kPa:n paineessa. Lennon aikana matkustamon paine on 78 kPa. Kuinka suuri on pussissa olevan ilman tilavuus lennolla, kun lämpötila pysyy samana ja pussi pääsee laajenemaan vapaasti?
+Sipsipussissa on lentokentällä $0{,}80\,\textsf{l}$ ilmaa $101\,\text{kPa}$:n paineessa. Lennon aikana matkustamon paine on $78\,\text{kPa}$. Kuinka suuri on pussissa olevan ilman tilavuus lennolla, kun lämpötila pysyy samana ja pussi pääsee laajenemaan vapaasti?
 
 <!-- vaihe -->
 
@@ -472,7 +472,7 @@ V_2 &= \frac{p_1 V_1}{p_2} \\
 Kolme virhettä toistuu usein:
 
 - **Kääntäen verrannollisuus ei ole laskeva suora.** Kun tilavuus kaksinkertaistuu, paine puolittuu, joten $(V, p)$-kuvaaja on kaari, joka lähestyy akseleita mutta ei koskaan kohtaa niitä. Suora syntyy vasta, kun $p$ piirretään $1/V$:n funktiona.
-- **Celsiusasteet eivät kelpaa lämpötilojen suhteeseen.** Kun $1{,}00\,\textsf{l}$ ilmaa lämpenee vakiopaineessa $10\,{}^\circ\text{C}$:sta $20\,{}^\circ\text{C}$:seen, sen tilavuus ei kaksinkertaistu. Kelvineinä laskettuna $V_2 = V_1 T_2 / T_1 = 1{,}00\,\textsf{l} \cdot 293\,\text{K} / 283\,\text{K} \approx 1{,}04\,\textsf{l}$, joten tilavuus kasvaa vain noin $3{,}5\,\%$.
+- **Celsiusasteet eivät kelpaa lämpötilojen suhteeseen.** Kun $1{,}00\,\textsf{l}$ ilmaa lämpenee vakiopaineessa $10\,{}^\circ\text{C}$:sta $20\,{}^\circ\text{C}$:seen, sen tilavuus ei kaksinkertaistu. Kelvineinä laskettuna $$\begin{aligned} V_2 &= V_1 T_2 / T_1 \\ &= 1{,}00\,\textsf{l} \cdot 293\,\text{K} / 283\,\text{K} \\ &\approx 1{,}04\,\textsf{l} \end{aligned}$$, joten tilavuus kasvaa vain noin $3{,}5\,\%$.
 - **Suljetun astian kaasun paine ei johdu kaasun painosta.** Pienessä astiassa kaasun paino on mitätön, ja paine syntyy hiukkasten törmäyksistä, joten se on yhtä suuri kaikkialla astiassa.
 
 ## Tiivistelmä

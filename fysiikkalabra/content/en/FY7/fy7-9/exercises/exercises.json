@@ -148,7 +148,7 @@
       "unit": "K",
       "tolerance": 0.02,
       "data": {
-        "caption": "Peaks of the spectra of the sources (example data)",
+        "caption": "Peaks of the spectra of the sources",
         "columns": [
           "Source",
           "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"
@@ -172,7 +172,7 @@
     {
       "id": "fy7-9-L2-06",
       "level": 2,
-      "text": "In a foundry a steel ingot is heated to the temperature $1500\\,{}^\\circ\\text{C}$. A student calculated the wavelength of the peak of the black-body spectrum of the ingot like this:\n\n$\\lambda_\\text{max} = \\dfrac{b}{t} = \\dfrac{2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{1500} = 1.93\\,\\mu\\text{m}$\n\na) Explain what the error in the student's solution is.\n\nb) Calculate the wavelength of the peak correctly, in micrometres.\n\nWrite in the answer box the result of part b.",
+      "text": "In a foundry a steel ingot is heated to the temperature $1500\\,{}^\\circ\\text{C}$. A student calculated the wavelength of the peak of the black-body spectrum of the ingot like this:\n\n$$\\begin{aligned} \\lambda_\\text{max} &= \\dfrac{b}{t} \\\\ &= \\dfrac{2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}}{1500} \\\\ &= 1.93\\,\\mu\\text{m} \\end{aligned}$$\n\na) Explain what the error in the student's solution is.\n\nb) Calculate the wavelength of the peak correctly, in micrometres.\n\nWrite in the answer box the result of part b.",
       "kind": [
         "error"
       ],
@@ -192,7 +192,7 @@
       "unit": "10⁻³ m·K",
       "tolerance": 0.01,
       "data": {
-        "caption": "Temperature of the filament and peak of the spectrum (example data)",
+        "caption": "Temperature of the filament and peak of the spectrum",
         "columns": [
           "$T\\,(\\text{K})$",
           "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"
@@ -229,7 +229,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Spectral peak (example data)",
+        "caption": "Spectral peak",
         "columns": [
           "Power setting",
           "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"
@@ -281,6 +281,32 @@
       "unit": "µm",
       "tolerance": 0.02,
       "figure": "fy7-9/spectrum-task"
+    },
+    {
+      "id": "fy7-9-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning",
+        "concept"
+      ],
+      "text": "Source material: <a href=\"https://documentation.dataspace.copernicus.eu/Data/SentinelMissions/Sentinel2.html\" target=\"_blank\" rel=\"noopener\">Copernicus – Sentinel-2</a> (read 16 November 2026)\n\nHow does a satellite see invisible light? The Sentinel-2 satellites image the Earth's surface in $13$ wavelength bands. In the section <em>Sentinel-2 Level 3 Quarterly Mosaics</em> of the page there is a table <em>Spectral Bands</em>, whose column <em>Center Wavelength (μm)</em> gives the centre wavelength of a band in micrometres. The speed of light is $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$.\n\na) Find in the table the centre wavelengths of the blue band B02, the red band B04 and the near-infrared band B08 (NIR). Which of these bands are in the visible range ($0.38$–$0.75\\,\\mu\\text{m}$)?\n\nb) Calculate the frequencies of the radiation that correspond to the centre wavelengths of the bands.\n\nc) Healthy vegetation reflects near-infrared radiation strongly but red light weakly, and water absorbs near-infrared radiation almost completely. Use these facts and the source material to explain why a satellite can detect, in different wavelength ranges, properties of its targets that cannot be told apart in an ordinary colour photograph.\n\nd) Assess the claim: “The near-infrared band of the satellite measures the temperature of the ground directly, in the same way as a thermal camera.” Base your reasoning on Wien's displacement law ($b = 2.898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$) and assume that the temperature of the ground is $300\\,\\text{K}$.\n\nEnter in the box the frequency of band B08 of part b) in terahertz ($1\\,\\text{THz} = 10^{12}\\,\\text{Hz}$).",
+      "answer": 356.2945,
+      "unit": "THz",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-9-L2-11",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning",
+        "concept"
+      ],
+      "text": "Source material: <a href=\"https://yle.fi/a/20-302064\" target=\"_blank\" rel=\"noopener\">Yle – Valheenpaljastaja: Suomalainen yritys kauppaa 5G-säteilysuojavaatteita (A Finnish company sells 5G radiation protection clothing; the article is in Finnish)</a> (read 16 November 2026)\n\nDo special clothes protect against 5G radiation? In the article of the Finnish broadcasting company Yle, a professor of physics and an expert of the Radiation and Nuclear Safety Authority (STUK) assess the marketing of “radiation protection clothing” made of silver fabric. The professor says that silver fabric can in principle attenuate radiation, but only on the parts of the body it covers, and that a garment cannot be a Faraday cage, a continuous shell of conducting material that electromagnetic radiation does not pass through, when the head and the hands come out of it. The STUK expert says that, according to present knowledge, 5G networks cause no harm to health, because the exposure stays below the limit values.\n\na) Explain which physical phenomenon the working of a material that attenuates electromagnetic radiation, such as silver fabric, is based on. Why, according to the article, is a garment still not a Faraday cage?\n\nb) The centre frequency of one frequency band of the 5G network is $3.5\\,\\text{GHz}$. Calculate the wavelength of the radiation and the energy of a single photon in electronvolts. A photon is the smallest portion of energy of the radiation, and its energy is $E = hf$, where $h = 6.626 \\cdot 10^{-34}\\,\\text{J} \\cdot \\text{s}$ is the Planck constant and $f$ the frequency of the radiation. The photon is studied in more detail in the course <em>Matter, radiation and quantisation</em>. The speed of light is $c = 3.00 \\cdot 10^{8}\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.\n\nc) Radiation is ionising if one photon can remove an electron from an atom or a molecule. That takes about $10\\,\\text{eV}$ or more, and the photons of X-rays have energies of thousands of electronvolts. Compare the photon energy of part b) with these energies. What does the comparison tell about 5G radiation?\n\nd) Use the article and parts a)–c) to assess why the ability of a material to attenuate radiation does not alone show that the product has health benefits.\n\nEnter in the box the photon energy of part b) in microelectronvolts ($1\\,\\mu\\text{eV} = 10^{-6}\\,\\text{eV}$).",
+      "answer": 14.4763,
+      "unit": "µeV",
+      "tolerance": 0.04
     }
   ],
   "level3": [
@@ -320,7 +346,7 @@
       "unit": "times",
       "tolerance": 0.02,
       "data": {
-        "caption": "Peaks of the spectra and colours of the stars (example data)",
+        "caption": "Peaks of the spectra and colours of the stars",
         "columns": [
           "Star",
           "$\\lambda_\\text{max}\\,(\\text{nm})$",
@@ -357,7 +383,7 @@
       "unit": "min",
       "tolerance": 0.05,
       "data": {
-        "caption": "Peak of the spectrum of the cooling bar (example data)",
+        "caption": "Peak of the spectrum of the cooling bar",
         "columns": [
           "$t\\,(\\text{min})$",
           "$\\lambda_\\text{max}\\,(\\mu\\text{m})$"

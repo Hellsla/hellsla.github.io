@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f37b954eefe31cd0
+CONTENT-HASH: 27dde45fa6e89ceb
 
 ## Blocking
 None.
 
 ## Polish
-1. Scope: MAFY-form symbols ( = Fs$, {\text{k}0} + W = E_\text{k}$, {\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$) in the fy4-8 exercise set (fi). Rendered at 390 and 1280 px (solutions open): formula tables show the MAFY name over/beside the formula, subscripts k, p, 0 upright, no overflow (scrollWidth = viewport), the energy-bar figure and scale figure carry {\text{p}0}$, {\text{k}0}$, $, \text{k}$ without clipping, the simulation labels ({\text{mech}0}$, $) read well. No leftover old symbols (W_muut, F_parallel, index 1/2 on energies) found in source.
-2. Minor: the text keeps $ (weight's work) beside $ (other forces); it is explained in place, so acceptable.
+- [Minor] exercises.json task text, capture fi-390-09 #3 — the punctuation after the lifted student calculation is not drawn into the formula's last row: a lone "`.`" starts the next line alone (390 and 1280 px). Fix: let the build attach trailing punctuation in a task `text` as it already does in solutions and feedback, or put it inside the last row (`…\end{aligned}$$` → `… . \end{aligned}$$`). No new review round needed.
+
+## Checked
+- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-09, fi-390-10 (390 px only); rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

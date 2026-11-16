@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: edfdbc1e8340a554
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (8fd79cadff819b5c); earlier findings kept unless named fixed.
+CONTENT-HASH: b3f1ae734e0cf71d
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- B (kept): no row for weight and slope components.
+- C: inquiry.json Lähtötaso 6: the first distractor's feedback says "lepokitkan yläraja" for what the prompt now calls lähtökitka; it works as an explanation of the term, no change needed.
 
 ## Checked
-- Round-1 Polish B fixed: "putoaa, ilmanvastus, nopeus tasaantuu -> F_v = G" now states the vertical fall; "tanko tai vipu pysyy paikallaan -> myös momentit" states the equilibrium condition; both also in the aria-label.
-- 360 px PNG opened: nine rows; the long "putoaa…" sign fits its card.
-- The rest passes through the round-1 report.
+- inquiry.json Lähtötaso 6 prompt: read with all four options and feedbacks; the new term does not reveal the answer (the 90 N distractor is as tempting as before) and matches the unit's formula name "lähtökitka, eli täysin kehittynyt lepokitka" (unit.md formula table).
+- sovella/solutions.md boat-ramp b) Järkevyys: "luiska pienentää tarvittavaa voimaa, ei työtä, mutta kitka syö siitä hyödystä paljon" corrects the old "keventää työtä" and reads well (665 N and 666 N against 2,7 kN unchanged).
+- solutions.md rajakulma Periaate: lähtökitka wording, formula m·g·sin α0 = μ0·m·g·cos α0 unchanged.
+- Item 19: this unit's diff holds no added task.

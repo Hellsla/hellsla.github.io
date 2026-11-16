@@ -53,7 +53,7 @@
 **Find:** the slope $k$ in $\text{m/s}$
 **Principle:** The slope of the line in a distance–time graph is the change in distance divided by the change in time. It is the same for any two points on the line, and the units must be converted to SI units before the result is given.
 **Formula:** $k = \dfrac{\Delta s}{\Delta t} = \dfrac{s_2 - s_1}{t_2 - t_1}$
-**Conversions:** $\Delta s = 1.50\,\text{km} - 0.30\,\text{km} = 1.20\,\text{km} = 1200\,\text{m}$ and $\Delta t = 10.0\,\text{min} - 2.0\,\text{min} = 8.0\,\text{min} = 480\,\text{s}$.
+**Conversions:** $\Delta s = 1.50\,\text{km} - 0.30\,\text{km} = 1.20\,\text{km} = 1200\,\text{m}$ and $$\begin{aligned} \Delta t &= 10.0\,\text{min} - 2.0\,\text{min} \\ &= 8.0\,\text{min} \\ &= 480\,\text{s} \end{aligned}$$.
 **Substitution:** $k = \dfrac{1200\,\text{m}}{480\,\text{s}} = 2.5\,\text{m/s}$
 **Answer:** $2.5\,\text{m/s}$, two significant figures, because the time interval $8.0\,\text{min}$ is given to two figures.
 **Reasonableness:** The result is about $2.5\,\text{m/s} = 2.5 \cdot 3.6\,\text{km/h} = 9\,\text{km/h}$. Check with kilometres and minutes: $1.20\,\text{km} : 8.0\,\text{min} = 0.15\,\text{km/min} = 9\,\text{km/h}$, which is the speed of leisurely cycling.
@@ -159,7 +159,7 @@
 **Conversions:** None needed: the times are in seconds and the positions in metres.
 **Substitution:** $v = \dfrac{3.07\,\text{m} - 0.83\,\text{m}}{5.0\,\text{s} - 0.0\,\text{s}} = 0.448\,\tfrac{\text{m}}{\text{s}}$ and $b = 0.83\,\text{m} - 0.448\,\tfrac{\text{m}}{\text{s}} \cdot 0.0\,\text{s} = 0.83\,\text{m}$
 **Answer:** $0.83\,\text{m}$, two decimal places, like the positions. Fitting by eye varies, so about $0.75\text{–}0.91\,\text{m}$ is a good answer. The line does not pass through the origin, because when the clock was started the trolley was already $0.83\,\text{m}$ from the mark on the track from which the position is measured. The constant term is therefore the position of the trolley when the clock was started, and a line through the origin would not fit this measurement.
-**Reasonableness:** A speed of $0.45\,\text{m/s}$ takes the trolley about $2.2\,\text{m}$ further in five seconds: $0.83\,\text{m} + 2.2\,\text{m} \approx 3.1\,\text{m}$, which matches the last measurement. The constant term is positive, because the trolley was already ahead of the mark.
+**Reasonableness:** A speed of $0.45\,\text{m/s}$ takes the trolley about $2.2\,\text{m}$ further in five seconds: $0.83\,\text{m} + 2.2\,\text{m} \approx 3.0\,\text{m}$, which matches the last measurement. The constant term is positive, because the trolley was already ahead of the mark.
 
 ## fy1-4-L2-07
 **Given:** the volumes of the table $V = 10.0\text{–}50.0\,\text{cm}^3$ and the masses $m_\text{A}$: $27.4$, $53.8$, $82.1$, $108.9$ and $135.2\,\text{g}$ and $m_\text{B}$: $78.6$, $156.8$, $237.1$, $313.5$ and $392.0\,\text{g}$
@@ -197,14 +197,47 @@
 ## fy1-4-L2-08
 **Find:** on which line the calculation of the slope has an error.
 **Principle:** The slope is $k = \dfrac{\Delta y}{\Delta x}$, and it is calculated from two chosen points of the fitted line. The change in both the numerator and the denominator is the final value minus the initial value of the same pair of points. The unit of the slope is the unit of $y$ divided by the unit of $x$, here $\tfrac{\textsf{l}}{\text{min}}$.
-**Model answer:** The error is on line 3. The change in time is $\Delta t = 10.0\,\text{min} - 2.0\,\text{min} = 8.0\,\text{min}$, not $12.0\,\text{min}$. The number $12.0$ arises when the times are added or when the number of the change in volume is copied into the denominator. Lines 1 and 2 are correct: the points are read from the fitted line far apart, and $\Delta V = 17.0\,\textsf{l} - 5.0\,\textsf{l} = 12.0\,\textsf{l}$. The formula and the division on line 4 are correct, but it uses the wrong number from line 3. The correct slope is $k = \dfrac{12.0\,\textsf{l}}{8.0\,\text{min}} = 1.5\,\tfrac{\textsf{l}}{\text{min}}$. Check: $1.5\,\tfrac{\textsf{l}}{\text{min}} \cdot 8.0\,\text{min} = 12.0\,\textsf{l}$, which matches the change in volume, whereas $1.0\,\tfrac{\textsf{l}}{\text{min}} \cdot 8.0\,\text{min} = 8.0\,\textsf{l}$ does not.
+**Model answer:** The error is on line 3. The change in time is $$\begin{aligned} \Delta t &= 10.0\,\text{min} - 2.0\,\text{min} \\ &= 8.0\,\text{min} \end{aligned}$$, not $12.0\,\text{min}$. The number $12.0$ arises when the times are added or when the number of the change in volume is copied into the denominator. Lines 1 and 2 are correct: the points are read from the fitted line far apart, and $\Delta V = 17.0\,\textsf{l} - 5.0\,\textsf{l} = 12.0\,\textsf{l}$. The formula and the division on line 4 are correct, but it uses the wrong number from line 3. The correct slope is $k = \dfrac{12.0\,\textsf{l}}{8.0\,\text{min}} = 1.5\,\tfrac{\textsf{l}}{\text{min}}$. Check: $1.5\,\tfrac{\textsf{l}}{\text{min}} \cdot 8.0\,\text{min} = 12.0\,\textsf{l}$, which matches the change in volume, whereas $1.0\,\tfrac{\textsf{l}}{\text{min}} \cdot 8.0\,\text{min} = 8.0\,\textsf{l}$ does not.
 
 ## fy1-4-L1-09
 **Given:** volume $V = 45\,\text{cm}^3$; from the table (MAFY table, densities of solids, aluminium) $\rho = 2.70\cdot10^{3}\,\text{kg/m}^3$
 **Asked:** the mass $m$ of the object in $\text{g}$
 **Principle:** The line of a mass–volume graph passes through the origin, so $m = kV$, and the slope $k$ is the density $\rho$ of the material. The density of aluminium is read from the table and used as the slope.
 **Formula:** $m = kV = \rho V$
-**Conversions:** $2.70\cdot10^{3}\,\text{kg/m}^3 = 2.70\,\text{g/cm}^3$, because $1\,\text{kg} = 10^{3}\,\text{g}$ and $1\,\text{m}^3 = 10^{6}\,\text{cm}^3$. This way the volume can be used in cubic centimetres and the mass comes out in grams.
+**Conversions:** $$\begin{aligned} &2.70\cdot10^{3}\,\text{kg/m}^3 \\ &= 2.70\,\text{g/cm}^3 \end{aligned}$$, because $1\,\text{kg} = 10^{3}\,\text{g}$ and $1\,\text{m}^3 = 10^{6}\,\text{cm}^3$. This way the volume can be used in cubic centimetres and the mass comes out in grams.
 **Substitution:** $m = 2.70\,\dfrac{\text{g}}{\text{cm}^3} \cdot 45\,\text{cm}^3 = 121.5\,\text{g}$
 **Answer:** $m \approx 1.2\cdot10^{2}\,\text{g}$ (calculated value $121.5\,\text{g}$), two significant figures as in the volume $45\,\text{cm}^3$. The density is from the MAFY table (densities of solids); an answer within about $\pm 4\,\%$ is accepted.
 **Reasonableness:** Aluminium is about three times as dense as water, and $45\,\text{cm}^3$ of water would have a mass of about $45\,\text{g}$. The result $121.5\,\text{g}$ is about $2.7$ times that.
+
+## fy1-4-L2-09
+**Given:** the air temperature $T$ every two hours for one day. Your own data depends on the station and the day, so here is the method with the example table of the task. At the start of the interval of part b) $t_1 = 6\,\text{h}$, $T_1 = 7.2\,{}^\circ\text{C}$, and at its end $t_2 = 12\,\text{h}$, $T_2 = 16.3\,{}^\circ\text{C}$.
+
+**Find:** a) the graph $T(t)$; b) the mean rate of change $k = \dfrac{\Delta T}{\Delta t}$; c) a linear model and its comparison with the measurements; d) the range in which the model is valid
+
+**Principle:** The mean rate of change is the change in temperature divided by the time it takes, that is, the slope of the straight line drawn through the end points of the interval. A linear model describes the measurements only in the range where the points lie roughly on a line.
+
+**Model answer a):** Axis names and units: $t\,(\text{h})$ and $T\,({}^\circ\text{C})$. The points are marked separately, and a thin curve may be drawn through them, because the temperature changes continuously between the measurements too.
+
+**Reading the graph:** Time $t$ in hours goes on the horizontal axis and temperature $T$ in degrees Celsius on the vertical axis. The points rise from the early morning to the afternoon and fall after that, so the graph is an arc, not a line. The temperature is lowest at $4$ o'clock and highest at $16$ o'clock. From $6$ to $12$ o'clock the points lie roughly on a line: the two-hour changes are $3.2$, $3.1$ and $2.8\,{}^\circ\text{C}$.
+
+**Formula:** $k = \dfrac{\Delta T}{\Delta t} = \dfrac{T_2 - T_1}{t_2 - t_1}$ and the linear model $T(t) = T_1 + k(t - t_1)$
+
+**Conversions:** None: the times are in hours and the temperatures in degrees Celsius. A change in temperature is the same in degrees Celsius and in kelvins, so $1\,{}^\circ\text{C/h} = 1\,\text{K/h}$.
+
+**Substitution:** Part b):
+
+$$\begin{aligned}
+k &= \dfrac{T_2 - T_1}{t_2 - t_1} \\
+&= \dfrac{16.3\,{}^\circ\text{C} - 7.2\,{}^\circ\text{C}}{12\,\text{h} - 6\,\text{h}} \\
+&\approx 1.52\,{}^\circ\text{C/h}
+\end{aligned}$$
+
+**Model answer c):** The model is $T(t) = T_1 + k(t - t_1)$, where $T_1 = 7.2\,{}^\circ\text{C}$, $k = 1.52\,{}^\circ\text{C/h}$ and $t_1 = 6\,\text{h}$. It gives $10.2\,{}^\circ\text{C}$ at $8$ o'clock (measured $10.4\,{}^\circ\text{C}$) and $13.3\,{}^\circ\text{C}$ at $10$ o'clock (measured $13.5\,{}^\circ\text{C}$). Inside the interval the difference is at most $0.2\,{}^\circ\text{C}$, so the model describes the measurements well.
+
+Outside the interval the model fails. At $16$ o'clock it gives $22.4\,{}^\circ\text{C}$, although the measured temperature is $18.1\,{}^\circ\text{C}$, and at $0$ o'clock it would give $-1.9\,{}^\circ\text{C}$, although the measured one is $8.1\,{}^\circ\text{C}$. The model is good only in the range of the measurements it was made from.
+
+**Model answer d):** The morning rise happens because the Sun heats the ground and the air more and more effectively. In the afternoon the heating weakens and at night the air cools, so the temperature cannot rise evenly all day. The next day's temperature also depends on the cloud cover, the wind and the kind of air mass that arrives. One morning's straight line contains none of this, so it cannot forecast another day. That needs a weather forecast based on models of the physics of the atmosphere and on a large body of observations.
+
+**Answer:** The mean rate of change of the temperature between $6$ and $12$ o'clock is $1.5\,{}^\circ\text{C/h}$ (calculated value $1.517\,{}^\circ\text{C/h}$), two significant figures, because the change $9.1\,{}^\circ\text{C}$ has two and the interval $6\,\text{h}$ is exact. With your own data the rate and the interval are different, but the method is the same.
+
+**Reasonableness:** In six hours the temperature rises by $6\,\text{h} \cdot 1.52\,{}^\circ\text{C/h} \approx 9.1\,{}^\circ\text{C}$, which matches the difference in the table. A daily range of about $10\,{}^\circ\text{C}$ inland on a spring day is common, so a rise of about $1$–$2\,{}^\circ\text{C}$ per hour is plausible.

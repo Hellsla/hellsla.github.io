@@ -16,7 +16,7 @@
 **Conversions:** No conversions are needed: the extension comes out in the same unit as $x_1$ (centimetres), and the newtons cancel in the ratio $\dfrac{F}{F_1}$.
 **Substitution:** $x = \dfrac{2.0\,\text{cm} \cdot 12\,\text{N}}{4.0\,\text{N}} = 6.0\,\text{cm}$
 **Answer:** $6.0\,\text{cm}$, two significant figures like the given values.
-**Reasonableness:** The force is $\dfrac{12}{4.0} = 3$ times as great, so the extension must be $3 \cdot 2.0\,\text{cm} = 6.0\,\text{cm}$. The spring constant agrees too: $\dfrac{2.0\,\text{cm}}{4.0\,\text{N}} = 0.50\,\tfrac{\text{cm}}{\text{N}}$ and $0.50 \cdot 12 = 6.0$.
+**Reasonableness:** The force is $\dfrac{12}{4.0} = 3$ times as great, so the extension must be $3 \cdot 2.0\,\text{cm} = 6.0\,\text{cm}$. The extension per newton agrees too: $\dfrac{2.0\,\text{cm}}{4.0\,\text{N}} = 0.50\,\tfrac{\text{cm}}{\text{N}}$ and $0.50 \cdot 12 = 6.0$.
 
 ## fy3-1-L1-03
 **Given:** $m = 30\,\text{kg}$; from the table $g_\text{Moon} = 1.62\,\text{m/s}^2$
@@ -26,7 +26,7 @@
 **Conversions:** The mass is in kilograms and $g$ in $\text{m/s}^2$, so the result comes out directly in newtons.
 **Substitution:** $G = 30\,\text{kg} \cdot 1.62\,\text{m/s}^2 = 48.6\,\text{N}$
 **Answer:** $49\,\text{N}$, two significant figures like the mass $30\,\text{kg}$.
-**Reasonableness:** On Earth the instrument's weight would be $30\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 294.3\,\text{N}$. The Moon's $g$ is about one sixth of the Earth's value, and $\dfrac{294.3\,\text{N}}{6} \approx 49\,\text{N}$, so the result agrees.
+**Reasonableness:** On Earth the instrument's weight would be $$\begin{aligned} &30\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &= 294.3\,\text{N} \end{aligned}$$. The Moon's $g$ is about one sixth of the Earth's value, and $\dfrac{294.3\,\text{N}}{6} \approx 49\,\text{N}$, so the result agrees.
 
 ## fy3-1-L1-04
 **Given:** the measurement points of the graph at grid crossings; the extension of the spring with the object $x = 3.5\,\text{cm}$
@@ -47,7 +47,7 @@
 **Conversions:** The mass is in kilograms and $g$ in $\text{m/s}^2$, so the result comes out directly in newtons.
 **Substitution:** $G = 2.5\,\text{kg} \cdot 24.8\,\text{m/s}^2 = 62.0\,\text{N}$
 **Answer:** $62\,\text{N}$, two significant figures like the mass $2.5\,\text{kg}$.
-**Reasonableness:** On Earth the weight would be $2.5\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 24.5\,\text{N}$. Jupiter's $g$ is $\dfrac{24.8}{9.81} \approx 2.5$ times the Earth's value, and $2.5 \cdot 24.5\,\text{N} \approx 62\,\text{N}$, so $62\,\text{N}$ agrees.
+**Reasonableness:** On Earth the weight would be $$\begin{aligned} &2.5\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\approx 24.5\,\text{N} \end{aligned}$$. Jupiter's $g$ is $\dfrac{24.8}{9.81} \approx 2.5$ times the Earth's value, and $2.5 \cdot 24.5\,\text{N} \approx 61\,\text{N}$, so $62\,\text{N}$ agrees to within the rounding of the ratio $2.5$.
 
 ## fy3-1-L2-01
 **Given:** the force meter reading, that is, the weight $G = 49\,\text{N}$ on Earth; from the table $g = 9.81\,\text{m/s}^2$
@@ -75,7 +75,7 @@
 **Principle:** The mass is the same in both places, and the weight in each is $G = m g$ with the $g$ of that place. The difference is obtained by subtracting the weight on the Moon from the weight on Earth.
 **Formula:** $\Delta G = m g_\text{Earth} - m g_\text{Moon}$, so $\Delta G = m (g_\text{Earth} - g_\text{Moon})$
 **Conversions:** The mass is in kilograms and the $g$ values in $\text{m/s}^2$, so the result comes out in newtons and no conversions are needed.
-**Substitution:** $\Delta G = 145\,\text{kg} \cdot (9.81\,\text{m/s}^2 - 1.62\,\text{m/s}^2) = 145\,\text{kg} \cdot 8.19\,\text{m/s}^2 = 1187.55\,\text{N}$
+**Substitution:** $$\begin{aligned} \Delta G &= 145\,\text{kg} \\ &\cdot (9.81\,\text{m/s}^2 - 1.62\,\text{m/s}^2) \\ &= 145\,\text{kg} \cdot 8.19\,\text{m/s}^2 \\ &= 1187.55\,\text{N} \end{aligned}$$
 **Answer:** $1190\,\text{N}$, three significant figures like the mass $145\,\text{kg}$.
 **Reasonableness:** On Earth the weight is about $145 \cdot 9.81\,\text{N} \approx 1422\,\text{N}$ and on the Moon about $145 \cdot 1.62\,\text{N} \approx 235\,\text{N}$, and the difference is $1422\,\text{N} - 235\,\text{N} \approx 1187\,\text{N}$. On the Moon the weight is $\dfrac{1.62}{9.81} \approx \dfrac{1}{6}$ of the weight on Earth, so it decreases by about $\dfrac{5}{6}$, that is, $83\,\%$.
 
@@ -107,7 +107,7 @@
 **Conversions:** The mass is in kilograms and the $g$ values in $\text{m/s}^2$, so the force comes out in newtons and the mass in kilograms without conversions.
 **Substitution:** $m_\text{Moon} = \dfrac{22.0\,\text{kg} \cdot 9.81\,\text{m/s}^2}{1.62\,\text{m/s}^2} = \dfrac{215.82\,\text{N}}{1.62\,\text{m/s}^2} = 133.2\,\text{kg}$
 **Answer:** $133\,\text{kg}$, three significant figures like the mass $22.0\,\text{kg}$.
-**Reasonableness:** The Moon's $g$ is about one sixth of the Earth's value, so the mass must be about $6 \cdot 22.0\,\text{kg} = 132\,\text{kg}$. Check by calculating back: $133.2\,\text{kg} \cdot 1.62\,\text{m/s}^2 = 215.8\,\text{N}$, the same as the weight of $22.0\,\text{kg}$ on Earth.
+**Reasonableness:** The Moon's $g$ is about one sixth of the Earth's value, so the mass must be about $6 \cdot 22.0\,\text{kg} = 132\,\text{kg}$. Check by calculating back: $$\begin{aligned} &133.2\,\text{kg} \cdot 1.62\,\text{m/s}^2 \\ &= 215.8\,\text{N} \end{aligned}$$, the same as the weight of $22.0\,\text{kg}$ on Earth.
 
 ## fy3-1-L3-03
 **Given:** the meter reading $L = 26\,\text{kg}$ on Mars; from the table $g_\text{Mars} = 3.71\,\text{m/s}^2$; the scale shows the force divided by the Earth's value $g_\text{Earth} = 9.81\,\text{m/s}^2$
@@ -137,7 +137,7 @@
 **Conversions:** $1\,\text{t} = 1000\,\text{kg}$, so $m = 0.18\,\text{t} = 180\,\text{kg}$. Now the mass is in kilograms and $g$ in $\text{m/s}^2$, so the result comes out in newtons.
 **Substitution:** $G = 180\,\text{kg} \cdot 3.71\,\text{m/s}^2 = 667.8\,\text{N}$
 **Answer:** $670\,\text{N}$, two significant figures like the mass $0.18\,\text{t}$.
-**Reasonableness:** On Earth the weight of the rover would be $180\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 1766\,\text{N}$. The $g$ of Mars is about $0.38$ times the Earth's value, and $0.38 \cdot 1766\,\text{N} \approx 671\,\text{N}$, so $670\,\text{N}$ agrees.
+**Reasonableness:** On Earth the weight of the rover would be $$\begin{aligned} &180\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\approx 1766\,\text{N} \end{aligned}$$. The $g$ of Mars is about $0.38$ times the Earth's value, and $0.38 \cdot 1766\,\text{N} \approx 671\,\text{N}$, so $670\,\text{N}$ agrees.
 
 ## fy3-1-L2-05
 **Given:** the measurement points $(m;\ G)$: $(0.10\,\text{kg};\ 0.99\,\text{N})$, $(0.20;\ 1.95)$, $(0.30;\ 2.96)$, $(0.40;\ 3.92)$, $(0.50\,\text{kg};\ 4.89\,\text{N})$
@@ -158,7 +158,7 @@
 **Conversions:** No conversions are needed: the newtons cancel in the ratio $\dfrac{G_\text{Mars}}{G_\text{Earth}}$, and $g$ stays in $\text{m/s}^2$.
 **Substitution:** $m = \dfrac{7.4\,\text{N}}{9.81\,\text{m/s}^2} = 0.754\,\text{kg}$, so $g_\text{Mars} = \dfrac{2.8\,\text{N}}{0.754\,\text{kg}} = 3.71\,\text{m/s}^2$
 **Answer:** $g_\text{Mars} = 3.7\,\text{m/s}^2$, two significant figures like the weights.
-**Reasonableness:** On Mars the weight of the sample is $\dfrac{2.8}{7.4} \approx 0.38$ times that on Earth, and $0.38 \cdot 9.81\,\text{m/s}^2 \approx 3.7\,\text{m/s}^2$. The result is the same as the value of Mars in the table of the lesson, $3.71\,\text{m/s}^2$.
+**Reasonableness:** On Mars the weight of the sample is $\dfrac{2.8}{7.4} \approx 0.38$ times that on Earth, and $$\begin{aligned} &0.38 \cdot 9.81\,\text{m/s}^2 \\ &\approx 3.7\,\text{m/s}^2 \end{aligned}$$. The result is the same as the value of Mars in the table of the lesson, $3.71\,\text{m/s}^2$.
 
 ## fy3-1-L2-07
 **Given:** the force meter reading $4.9\,\text{N}$ on Earth; from the table $g = 9.81\,\text{m/s}^2$
@@ -169,18 +169,18 @@
 **Conversions:** No conversions are needed: $1\,\text{N} = 1\,\text{kg} \cdot \text{m/s}^2$, so $\dfrac{\text{N}}{\text{m/s}^2}$ is a kilogram.
 **Substitution:** $m = \dfrac{4.9\,\text{N}}{9.81\,\text{m/s}^2} = 0.4995\,\text{kg}$
 **Answer:** $0.50\,\text{kg}$, two significant figures like the weight $4.9\,\text{N}$.
-**Reasonableness:** The weight of a one-kilogram mass is about $10\,\text{N}$, so $4.9\,\text{N}$ corresponds to a mass of about $0.5\,\text{kg}$. Check by calculating back: $0.50\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 4.9\,\text{N}$. The student's value $4.9\,\text{kg}$ would weigh about $48\,\text{N}$ on Earth, which does not match the reading.
+**Reasonableness:** The weight of a one-kilogram mass is about $10\,\text{N}$, so $4.9\,\text{N}$ corresponds to a mass of about $0.5\,\text{kg}$. Check by calculating back: $$\begin{aligned} &0.50\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &= 4.9\,\text{N} \end{aligned}$$. The student's value $4.9\,\text{kg}$ would weigh about $48\,\text{N}$ on Earth, which does not match the reading.
 
 ## fy3-1-L3-04
 **Given:** on Earth $(m;\ x)$: $(0.10\,\text{kg};\ 1.1\,\text{cm})$, $(0.20;\ 2.1)$, $(0.30;\ 3.2)$, $(0.40;\ 4.1)$, $(0.50;\ 5.2)$, $(0.60\,\text{kg};\ 6.1\,\text{cm})$; on the unknown celestial body $m_\text{X} = 0.50\,\text{kg}$ and $x_\text{X} = 1.9\,\text{cm}$; $g_\text{Earth} = 9.81\,\text{m/s}^2$
 **Find:** a) $g_\text{X}$ of the celestial body; b) which celestial body it is
 **Principle:** The extension of the spring is directly proportional to the force, and the weight $G = m g$ is a force, so $x$ is directly proportional to the product $m g$. The extensions of the same spring with the same mass are therefore in the same ratio as the $g$ values. The measurements on Earth give the calibration of the spring, and with it the $g$ of the unknown place.
-**Reading the table:** The points $(m, x)$ lie on a line through the origin, so the ratio $x/m$ is almost the same at every point ($1.1/0.10 = 11$ and $6.1/0.60 \approx 10.2\,\text{cm/kg}$). To even out the scatter of the measurements, the ratio is calculated from all the points: the sum of the extensions is $1.1 + 2.1 + 3.2 + 4.1 + 5.2 + 6.1 = 21.8\,\text{cm}$ and the sum of the masses $0.10 + 0.20 + 0.30 + 0.40 + 0.50 + 0.60 = 2.10\,\text{kg}$.
+**Reading the table:** The points $(m, x)$ lie on a line through the origin, so the ratio $x/m$ is almost the same at every point ($1.1/0.10 = 11$ and $6.1/0.60 \approx 10.2\,\text{cm/kg}$). To even out the scatter of the measurements, the ratio is calculated from all the points: the sum of the extensions is $$\begin{aligned} &1.1 + 2.1 + 3.2 + 4.1 + 5.2 + 6.1 \\ &= 21.8\,\text{cm} \end{aligned}$$ and the sum of the masses $$\begin{aligned} &0.10 + 0.20 + 0.30 \\ &+ 0.40 + 0.50 + 0.60 \\ &= 2.10\,\text{kg} \end{aligned}$$.
 **Formula:** On Earth $\dfrac{x}{m} = c\, g_\text{Earth}$ and on the unknown celestial body $\dfrac{x_\text{X}}{m_\text{X}} = c\, g_\text{X}$, where $c$ is the constant of the spring. Dividing gives $g_\text{X} = g_\text{Earth} \dfrac{x_\text{X}/m_\text{X}}{(x/m)_\text{Earth}}$
 **Conversions:** No conversions are needed: the centimetres and the kilograms stay the same in both ratios and cancel. The ratio on Earth is $\dfrac{21.8\,\text{cm}}{2.10\,\text{kg}} = 10.38\,\text{cm/kg}$ and at the unknown place $\dfrac{1.9\,\text{cm}}{0.50\,\text{kg}} = 3.8\,\text{cm/kg}$.
 **Substitution:** $g_\text{X} = 9.81\,\text{m/s}^2 \cdot \dfrac{3.8\,\text{cm/kg}}{10.38\,\text{cm/kg}} = 9.81\,\text{m/s}^2 \cdot 0.366 = 3.59\,\text{m/s}^2$
 **Answer:** a) $g_\text{X} = 3.6\,\text{m/s}^2$, two significant figures like the extension $1.9\,\text{cm}$. b) The celestial body is Mars. The value of the Moon, $1.62\,\text{m/s}^2$, is less than half of the result, and the values of the Earth, $9.81\,\text{m/s}^2$, and Jupiter, $24.8\,\text{m/s}^2$, are several times as great. The value of Mars, $3.71\,\text{m/s}^2$, differs from the result by only about $3\,\%$, which is of the order of the scatter of the measurements.
-**Reasonableness:** The extension $1.9\,\text{cm}$ for a $0.50\,\text{kg}$ weight is much smaller than on Earth, where the same weight would stretch the spring about $0.50\,\text{kg} \cdot 10.38\,\text{cm/kg} = 5.2\,\text{cm}$. The extension is $\dfrac{1.9}{5.2} \approx 0.37$ times as great, and $g$ is smaller by the same factor: $0.37 \cdot 9.81 \approx 3.6\,\text{m/s}^2$.
+**Reasonableness:** The extension $1.9\,\text{cm}$ for a $0.50\,\text{kg}$ weight is much smaller than on Earth, where the same weight would stretch the spring about $$\begin{aligned} &0.50\,\text{kg} \cdot 10.38\,\text{cm/kg} \\ &= 5.2\,\text{cm} \end{aligned}$$. The extension is $\dfrac{1.9}{5.2} \approx 0.37$ times as great, and $g$ is smaller by the same factor: $0.37 \cdot 9.81 \approx 3.6\,\text{m/s}^2$.
 
 ## fy3-1-L3-05
 **Given:** the masses of the parts $520\,\text{kg}$, $180\,\text{kg}$, $95\,\text{kg}$ and $140\,\text{kg}$; the force the legs withstand $F_\text{max} = 6.00\,\text{kN}$; $g_\text{Earth} = 9.81\,\text{m/s}^2$, $g_\text{Mars} = 3.71\,\text{m/s}^2$
@@ -192,7 +192,7 @@
 
 $$\begin{aligned} m_\text{tot} &= 520\,\text{kg} + 180\,\text{kg} \\ &\quad + 95\,\text{kg} + 140\,\text{kg} \\ &= 935\,\text{kg} \\ G_\text{Earth} &= 935\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 9172\,\text{N} \\ G_\text{Mars} &= 935\,\text{kg} \cdot 3.71\,\text{m/s}^2 = 3469\,\text{N} \\ m_\text{max} &= \dfrac{6000\,\text{N}}{3.71\,\text{m/s}^2} = 1617\,\text{kg} \\ m_\text{extra} &= 1617\,\text{kg} - 935\,\text{kg} = 682\,\text{kg} \end{aligned}$$
 **Answer:** a) The total mass is $935\,\text{kg}$; the weight on Earth is $9.17\,\text{kN}$ and on Mars $3.47\,\text{kN}$. On Earth the weight exceeds the limit $6.00\,\text{kN}$, so the unit could not stand on its legs on Earth, but on Mars it can. b) The additional load can be at most $682\,\text{kg}$. A greater total mass can be taken to Mars ($1617\,\text{kg}$) than to Earth ($6000\,\text{N} : 9.81\,\text{m/s}^2 \approx 612\,\text{kg}$), because the same mass weighs only about $0.38$ times as much on Mars and a smaller force acts on the legs.
-**Reasonableness:** When the total mass is $1617\,\text{kg}$, the weight on Mars is $1617\,\text{kg} \cdot 3.71\,\text{m/s}^2 = 6000\,\text{N}$, exactly the limit of the legs. The allowed total mass on Mars is $\dfrac{9.81}{3.71} \approx 2.64$ times the mass allowed on Earth, and $2.64 \cdot 612\,\text{kg} \approx 1620\,\text{kg}$.
+**Reasonableness:** When the total mass is $1617\,\text{kg}$, the weight on Mars is $$\begin{aligned} &1617\,\text{kg} \cdot 3.71\,\text{m/s}^2 \\ &= 6000\,\text{N} \end{aligned}$$, exactly the limit of the legs. The allowed total mass on Mars is $\dfrac{9.81}{3.71} \approx 2.64$ times the mass allowed on Earth, and $2.64 \cdot 612\,\text{kg} \approx 1620\,\text{kg}$.
 
 ## fy3-1-L1-09
 **Find:** which of the four force diagrams shows correctly the forces that act on a body hanging at rest from a force meter, when the mass of the body is $0.50\,\text{kg}$ and the meter reads $4.9\,\text{N}$.
@@ -215,7 +215,7 @@ The force of the hook is the reading of the meter, $F = 4.9\,\text{N}$. The forc
 **Conversions:** The mass is in kilograms and $g$ in $\text{m/s}^2$, so the result comes out directly in newtons.
 **Substitution:** $G = 85.0\,\text{kg} \cdot 3.72\,\text{m/s}^2 = 316.2\,\text{N}$
 **Answer:** $316\,\text{N}$, three significant figures as in the mass and the table value. The value $g_\text{Mars} = 3.72\,\text{m/s}^2$ is from the MAFY table *Aurinkokunta*; tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
-**Reasonableness:** On Earth the weight would be $85.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 834\,\text{N}$. The $g$ of Mars is about $0.38$ times the value on Earth, and $0.38 \cdot 834\,\text{N} \approx 317\,\text{N}$, so the result fits.
+**Reasonableness:** On Earth the weight would be $$\begin{aligned} &85.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\approx 834\,\text{N} \end{aligned}$$. The $g$ of Mars is about $0.38$ times the value on Earth, and $0.38 \cdot 834\,\text{N} \approx 317\,\text{N}$, so the result fits.
 
 ## fy3-1-L2-08
 **Given:** the measurement points of the graph at grid crossings; the mass of the object $m = 12\,\text{kg}$

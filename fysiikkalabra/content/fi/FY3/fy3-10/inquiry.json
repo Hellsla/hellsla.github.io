@@ -27,12 +27,12 @@
         },
         {
           "text": "$100\\,\\text{kPa}$",
-          "feedback": "Ilman määrä pysyy samana, mutta paine ei. Boylen lain $p_1V_1 = p_2V_2$ mukaan $p_2 = p_1V_1/V_2 = 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} = 200\\,\\text{kPa}$."
+          "feedback": "Ilman määrä pysyy samana, mutta paine ei. Boylen lain $p_1V_1 = p_2V_2$ mukaan $$\\begin{aligned} p_2 &= p_1V_1/V_2 \\\\ &= 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} \\\\ &= 200\\,\\text{kPa} \\end{aligned}$$."
         },
         {
           "text": "$200\\,\\text{kPa}$",
           "correct": true,
-          "feedback": "Oikein: Boylen laki $p_1V_1 = p_2V_2$ antaa $p_2 = 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} = 200\\,\\text{kPa}$. Puolet pienempi tilavuus, kaksinkertainen paine."
+          "feedback": "Oikein: Boylen laki $p_1V_1 = p_2V_2$ antaa $$\\begin{aligned} p_2 &= 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} \\\\ &= 200\\,\\text{kPa} \\end{aligned}$$. Puolet pienempi tilavuus, kaksinkertainen paine."
         },
         {
           "text": "$400\\,\\text{kPa}$",
@@ -99,7 +99,7 @@
             "feedback": "Kerroit massan ja moolimassan. Osamäärä $m/M$ saadaan jakamalla massa moolimassalla."
           }
         ],
-        "solution": "**Annettu:** helium, taulukosta $m = 0{,}83\\,\\text{g}$ ja $M = 4{,}00\\,\\text{g/mol}$\n\n**Kysytty:** osamäärä $m/M$ yksikössä mol\n\n**Periaate:** Moolimassa on yhden moolin massa, joten kaasun massa jaettuna moolimassalla kertoo, kuinka monta moolia kaasua pallossa on. Laskuun ei tarvita painetta eikä lämpötilaa, koska massa ja moolimassa määräävät ainemäärän suoraan.\n\n**Kaava:** $M = \\dfrac{m}{n}$, josta $n = \\dfrac{m}{M}$\n\n**Muunnokset:** Muunnoksia ei tarvita, koska massa ja moolimassa ovat molemmat grammoina. Grammat supistuvat, ja jäljelle jää mooli.\n\n**Sijoitus:** $\\dfrac{m}{M} = \\dfrac{0{,}83\\,\\text{g}}{4{,}00\\,\\text{g/mol}} = 0{,}2075\\,\\text{mol}$\n\n**Vastaus:** $0{,}21\\,\\text{mol}$, kaksi merkitsevää numeroa. Rajoittava tieto on massa $0{,}83\\,\\text{g}$ (kaksi numeroa); moolimassa $4{,}00\\,\\text{g/mol}$ on kolmen numeron arvo. Sijoituksen välitulos $0{,}2075\\,\\text{mol}$ on pidetty neljällä numerolla seuraavaa laskua varten.\n\n**Järkevyys:** Samassa paineessa ja lämpötilassa $5{,}00\\,\\textsf{l}$ sisältää noin $5{,}00 \\cdot 0{,}041 \\approx 0{,}21\\,\\text{mol}$ mitä tahansa kaasua, joten tulos on uskottava. Tarkistus takaisin: $0{,}2075\\,\\text{mol} \\cdot 4{,}00\\,\\text{g/mol} = 0{,}83\\,\\text{g}$."
+        "solution": "**Annettu:** helium, taulukosta $m = 0{,}83\\,\\text{g}$ ja $M = 4{,}00\\,\\text{g/mol}$\n\n**Kysytty:** osamäärä $m/M$ yksikössä mol\n\n**Periaate:** Moolimassa on yhden moolin massa, joten kaasun massa jaettuna moolimassalla kertoo, kuinka monta moolia kaasua pallossa on. Laskuun ei tarvita painetta eikä lämpötilaa, koska massa ja moolimassa määräävät ainemäärän suoraan.\n\n**Kaava:** $M = \\dfrac{m}{n}$, josta $n = \\dfrac{m}{M}$\n\n**Muunnokset:** Muunnoksia ei tarvita, koska massa ja moolimassa ovat molemmat grammoina. Grammat supistuvat, ja jäljelle jää mooli.\n\n**Sijoitus:** $\\dfrac{m}{M} = \\dfrac{0{,}83\\,\\text{g}}{4{,}00\\,\\text{g/mol}} = 0{,}2075\\,\\text{mol}$\n\n**Vastaus:** $0{,}21\\,\\text{mol}$, kaksi merkitsevää numeroa. Rajoittava tieto on massa $0{,}83\\,\\text{g}$ (kaksi numeroa); moolimassa $4{,}00\\,\\text{g/mol}$ on kolmen numeron arvo. Sijoituksen välitulos $0{,}2075\\,\\text{mol}$ on pidetty neljällä numerolla seuraavaa laskua varten.\n\n**Järkevyys:** Samassa paineessa ja lämpötilassa $5{,}00\\,\\textsf{l}$ sisältää noin $5{,}00 \\cdot 0{,}041 \\approx 0{,}21\\,\\text{mol}$ mitä tahansa kaasua, joten tulos on uskottava. Tarkistus takaisin: $$\\begin{aligned} &0{,}2075\\,\\text{mol} \\cdot 4{,}00\\,\\text{g/mol} \\\\ &= 0{,}83\\,\\text{g} \\end{aligned}$$."
       },
       "source": "simulated",
       "source_note": "keksityt esimerkkiarvot, joihin on lisätty punnituksen tavallista hajontaa"
@@ -118,7 +118,7 @@
         },
         {
           "text": "$m/M$ on suurin heliumilla, koska kevyttä kaasua mahtuu palloon enemmän.",
-          "feedback": "Heliumin $m/M = 0{,}83\\,\\text{g} / 4{,}00\\,\\tfrac{\\text{g}}{\\text{mol}} = 0{,}2075\\,\\text{mol}$, ja muiden arvot ovat $0{,}2064$–$0{,}2076\\,\\text{mol}$. Ero on pienempi kuin punnituksen hajonta, joten mittaus ei osoita, että heliumia olisi enemmän: ainemäärät ovat samat mittaustarkkuuden rajoissa."
+          "feedback": "Heliumin $$\\begin{aligned} m/M &= 0{,}83\\,\\text{g} / 4{,}00\\,\\tfrac{\\text{g}}{\\text{mol}} \\\\ &= 0{,}2075\\,\\text{mol} \\end{aligned}$$, ja muiden arvot ovat $0{,}2064$–$0{,}2076\\,\\text{mol}$. Ero on pienempi kuin punnituksen hajonta, joten mittaus ei osoita, että heliumia olisi enemmän: ainemäärät ovat samat mittaustarkkuuden rajoissa."
         },
         {
           "text": "$m/M$ on suurin hiilidioksidilla, koska sen massa on suurin.",
@@ -382,7 +382,7 @@
         {
           "text": "Lämpötila on celsiusasteina. Kelvineinä $T = 293{,}15\\,\\text{K}$, ja $n \\approx 0{,}083\\,\\text{mol}$.",
           "correct": true,
-          "feedback": "Oikein. Tilanyhtälössä lämpötila on aina kelvineinä: $n = 101\\,000\\,\\text{Pa} \\cdot 0{,}0020\\,\\text{m}^3 / (8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 293{,}15\\,\\text{K}) \\approx 0{,}083\\,\\text{mol}$. Järkevyystarkistus: mooli vie huoneenlämmössä noin $24\\,\\textsf{l}$, joten 2,0 litrassa on noin $0{,}08\\,\\text{mol}$."
+          "feedback": "Oikein. Tilanyhtälössä lämpötila on aina kelvineinä: $$\\begin{aligned} n &= 101\\,000\\,\\text{Pa} \\cdot 0{,}0020\\,\\text{m}^3 \\\\ &/ (8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 293{,}15\\,\\text{K}) \\\\ &\\approx 0{,}083\\,\\text{mol} \\end{aligned}$$. Järkevyystarkistus: mooli vie huoneenlämmössä noin $24\\,\\textsf{l}$, joten 2,0 litrassa on noin $0{,}08\\,\\text{mol}$."
         },
         {
           "text": "Tilavuus pitäisi sijoittaa litroina, $2{,}0\\,\\textsf{l}$.",
@@ -419,7 +419,7 @@
           "feedback": "Sijoitit paineen kilopascaleina. $R$:n yksikkö on joule, ja $1\\,\\text{Pa}\\cdot\\text{m}^3 = 1\\,\\text{J}$, joten paine on pascaleina: $101\\,000\\,\\text{Pa}$."
         }
       ],
-      "solution": "**Annettu:** kuumailmapallon sisäilma, $V = 2{,}80 \\cdot 10^3\\,\\text{m}^3$, $p = 101\\,\\text{kPa}$, $\\theta = 100\\,{}^\\circ\\text{C}$, $M = 29{,}0\\,\\text{g/mol}$; $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$\n\n**Kysytty:** ilman massa $m$ kilogrammoina\n\n**Periaate:** Kuoren alaosa on auki, joten paine on sama kuin ulkoilmassa ja tilavuus on kuoren tilavuus. Tilanyhtälö ei anna massaa suoraan vaan ainemäärän, ja moolimassa muuttaa ainemäärän massaksi. Ilma käyttäytyy ideaalikaasuna.\n\n**Kaava:** $pV = nRT$ ja $m = nM$, joten $n = \\dfrac{pV}{RT}$ ja $m = \\dfrac{pVM}{RT}$\n\n**Muunnokset:** $p = 101\\,\\text{kPa} = 101\\,000\\,\\text{Pa}$, $T = (100 + 273{,}15)\\,\\text{K} = 373{,}15\\,\\text{K}$ ja $M = 29{,}0\\,\\text{g/mol} = 0{,}0290\\,\\text{kg/mol}$, jotta massa tulee kilogrammoina.\n\n**Sijoitus:**\n\n$$\\begin{aligned} n &= \\frac{101\\,000\\,\\text{Pa} \\cdot 2{,}80 \\cdot 10^3\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 373{,}15\\,\\text{K}} \\\\ &= 91\\,200\\,\\text{mol} \\\\ m &= 91\\,200\\,\\text{mol} \\cdot 0{,}0290\\,\\tfrac{\\text{kg}}{\\text{mol}} \\\\ &= 2644{,}8\\,\\text{kg} \\end{aligned}$$\n\n**Vastaus:** $2{,}64 \\cdot 10^3\\,\\text{kg}$, kolme merkitsevää numeroa. Rajoittavat tiedot ovat moolimassa $29{,}0\\,\\text{g/mol}$ ja tilavuus $2{,}80 \\cdot 10^3\\,\\text{m}^3$ (kolme numeroa); paine $101\\,\\text{kPa}$ ja lämpötila $373\\,\\text{K}$ (kokonaisasteesta $100\\,{}^\\circ\\text{C}$) ovat myös kolmen numeron arvoja.\n\n**Järkevyys:** Tavallinen ilma painaa noin $1{,}2\\,\\text{kg/m}^3$, joten $2{,}80 \\cdot 10^3\\,\\text{m}^3$ painaisi $20\\,{}^\\circ\\text{C}$:ssa noin $1{,}2 \\cdot 2800 = 3360\\,\\text{kg}$. Kuumassa ilmassa on samassa paineessa ja tilavuudessa vähemmän moolia, koska $T$ on suurempi: $3360\\,\\text{kg} \\cdot \\tfrac{293\\,\\text{K}}{373\\,\\text{K}} \\approx 2640\\,\\text{kg}$. Sisäilma on noin $3360\\,\\text{kg} - 2640\\,\\text{kg} \\approx 700\\,\\text{kg}$ kevyempää kuin syrjäyttämä ulkoilma, ja tämä ero kantaa pallon, korin ja matkustajat.",
+      "solution": "**Annettu:** kuumailmapallon sisäilma, $V = 2{,}80 \\cdot 10^3\\,\\text{m}^3$, $p = 101\\,\\text{kPa}$, $\\theta = 100\\,{}^\\circ\\text{C}$, $M = 29{,}0\\,\\text{g/mol}$; $R = 8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}}$\n\n**Kysytty:** ilman massa $m$ kilogrammoina\n\n**Periaate:** Kuoren alaosa on auki, joten paine on sama kuin ulkoilmassa ja tilavuus on kuoren tilavuus. Tilanyhtälö ei anna massaa suoraan vaan ainemäärän, ja moolimassa muuttaa ainemäärän massaksi. Ilma käyttäytyy ideaalikaasuna.\n\n**Kaava:** $pV = nRT$ ja $m = nM$, joten $n = \\dfrac{pV}{RT}$ ja $m = \\dfrac{pVM}{RT}$\n\n**Muunnokset:** $p = 101\\,\\text{kPa} = 101\\,000\\,\\text{Pa}$, $T = (100 + 273{,}15)\\,\\text{K} = 373{,}15\\,\\text{K}$ ja $M = 29{,}0\\,\\text{g/mol} = 0{,}0290\\,\\text{kg/mol}$, jotta massa tulee kilogrammoina.\n\n**Sijoitus:**\n\n$$\\begin{aligned} n &= \\frac{101\\,000\\,\\text{Pa} \\cdot 2{,}80 \\cdot 10^3\\,\\text{m}^3}{8{,}31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 373{,}15\\,\\text{K}} \\\\ &= 91\\,200\\,\\text{mol} \\\\ m &= 91\\,200\\,\\text{mol} \\cdot 0{,}0290\\,\\tfrac{\\text{kg}}{\\text{mol}} \\\\ &= 2644{,}8\\,\\text{kg} \\end{aligned}$$\n\n**Vastaus:** $2{,}64 \\cdot 10^3\\,\\text{kg}$, kolme merkitsevää numeroa. Rajoittavat tiedot ovat moolimassa $29{,}0\\,\\text{g/mol}$ ja tilavuus $2{,}80 \\cdot 10^3\\,\\text{m}^3$ (kolme numeroa); paine $101\\,\\text{kPa}$ ja lämpötila $373\\,\\text{K}$ (kokonaisasteesta $100\\,{}^\\circ\\text{C}$) ovat myös kolmen numeron arvoja.\n\n**Järkevyys:** Tavallinen ilma painaa noin $1{,}2\\,\\text{kg/m}^3$, joten $2{,}80 \\cdot 10^3\\,\\text{m}^3$ painaisi $20\\,{}^\\circ\\text{C}$:ssa noin $1{,}2 \\cdot 2800 = 3360\\,\\text{kg}$. Kuumassa ilmassa on samassa paineessa ja tilavuudessa vähemmän moolia, koska $T$ on suurempi: $3360\\,\\text{kg} \\cdot \\tfrac{293\\,\\text{K}}{373\\,\\text{K}} \\approx 2640\\,\\text{kg}$. Sisäilma on noin $3360\\,\\text{kg} - 2640\\,\\text{kg}$ eli $720\\,\\text{kg}$ kevyempää kuin syrjäyttämä ulkoilma, ja tämä ero kantaa pallon, korin ja matkustajat.",
       "optional": true
     },
     {
@@ -468,7 +468,7 @@
         {
           "text": "Paine kasvaa noin $7\\,\\%$, koska kelvinlämpötila kasvaa arvosta $293\\,\\text{K}$ arvoon $313\\,\\text{K}$.",
           "correct": true,
-          "feedback": "Oikein. Tilavuus ja ainemäärä pysyvät samoina, joten $p = nRT/V$ on verrannollinen kelvinlämpötilaan ja $p_2/p_1 = T_2/T_1 = 313{,}15\\,\\text{K} / 293{,}15\\,\\text{K} \\approx 1{,}07$. Lämpötilan on oltava kelvineinä, koska vain kelvinasteikon nollakohta on absoluuttinen nollapiste: kaasun paine on verrannollinen lämpötilaan vain, kun lämpötila mitataan siitä."
+          "feedback": "Oikein. Tilavuus ja ainemäärä pysyvät samoina, joten $p = nRT/V$ on verrannollinen kelvinlämpötilaan ja $$\\begin{aligned} p_2/p_1 &= T_2/T_1 \\\\ &= 313{,}15\\,\\text{K} / 293{,}15\\,\\text{K} \\\\ &\\approx 1{,}07 \\end{aligned}$$. Lämpötilan on oltava kelvineinä, koska vain kelvinasteikon nollakohta on absoluuttinen nollapiste: kaasun paine on verrannollinen lämpötilaan vain, kun lämpötila mitataan siitä."
         },
         {
           "text": "Paine ei muutu, koska astian tilavuus ja ilman määrä pysyvät samoina.",
@@ -476,7 +476,7 @@
         },
         {
           "text": "Paine kasvaa $20\\,\\%$, koska lämpötila nousee $20$ astetta.",
-          "feedback": "Lämpötilan nousu asteina ei ole prosentti. Paineen suhteellinen muutos on kelvinlämpötilojen suhde miinus yksi: $(313{,}15 - 293{,}15)\\,\\text{K} / 293{,}15\\,\\text{K} \\approx 0{,}068$ eli noin $7\\,\\%$."
+          "feedback": "Lämpötilan nousu asteina ei ole prosentti. Paineen suhteellinen muutos on kelvinlämpötilojen suhde miinus yksi: $$\\begin{aligned} &(313{,}15 - 293{,}15)\\,\\text{K} / 293{,}15\\,\\text{K} \\\\ &\\approx 0{,}068 \\end{aligned}$$ eli noin $7\\,\\%$."
         }
       ]
     },

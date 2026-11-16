@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 660f444084d55575
-SCOPE: delta added-exercise from 5e7e04fa3110d92d base 5a45b28682e8
+CONTENT-HASH: 914daee64065bfde
+SCOPE: delta added-exercise from 689c71af3cad3c07 base 415cbc7c6bc3
 
 ## Blocking
 (none)
 
 ## Polish
-(none new; the round-1 Minor on the small figure in the task card stands)
+- [Minor] fy8-1-L2-10 Sijoitus/Muunnokset — display rows use `\tfrac` (small fraction, tiny exponents at 1280 px, smaller on a phone) — use `\dfrac` in the display chains.
+- [Minor] fy8-1-L2-10 Järkevyys — "Samoin on natriumin raja-aallonpituudella $544\,\text{nm}$ teoriassa." is unclear — e.g. "Teoriassa natriumin raja-aallonpituus on $544\,\text{nm}$, joten tulos sopii siihen."
+- [Minor] for science/pedagogy: Annettu gives $539\,\text{nm}$ but Järkevyys cites a theory limit of $544\,\text{nm}$ and the answer text $540\,\text{nm}$; one value would read cleaner.
 
 ## Checked
-- Own scratch captures of the L2-08 card with every solution open at 360 and 390 px (fi-easy), read in full from the preview build; review/shots not used.
-- Substitution row now /bin/bash.4136 · (12 − 5.56) = 2.66$ and splits into two aligned rows; no formula in the card is wider than the card at 360 or 390 px (measured in the browser); the Conversions and Reasonableness lines read cleanly, the unseen 2.3 eV is gone.
-- Figure kuvaaja-ab seen in the card: axes, units, grid, A and B distinct.
-- L1-10 and L2-09 were passed in round 1 and are unchanged.
+- fy8-1-open-exercises-L2-1280-15, -16, -17 (fi-easy captures): task text, input row, Annettu to Järkevyys. Renders cleanly, units upright with thin spaces, decimal commas, aligned rows, no clipping; the set still reads as one.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

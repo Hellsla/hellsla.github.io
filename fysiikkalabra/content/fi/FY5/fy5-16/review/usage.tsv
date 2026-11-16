@@ -1,0 +1,4 @@
+date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache_read	cache_write	context	turns	seconds	calls	verdict	cost_usd	source	ref
+2026-11-16T06:54Z	fy5-16	FY5	developer	develop	claude-opus-5-5	medium	fix	2	1679082	44	18338	1564753	95947	97128	22	406	26		1.1596	transcript	3dde998f50df
+2026-11-16T06:54Z	fy5-16	FY5	developer	develop	claude-fable-5-2	medium	exercises	1	1724431	32	22195	1568659	133545	134119	16	483	18		3.1715	transcript	64cb97c3bf7c
+2026-11-16T06:54Z	fy5-16	FY5	orchestrator	orchestrate	claude-fable-5-2		session/12	2	6843235	44	13023	6769240	60928	45378	224	29849	212		3.5625	transcript	85cb62b6c410

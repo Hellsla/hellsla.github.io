@@ -59,7 +59,7 @@
         },
         {
           "text": "Kaikki kolme sarjaan, koska silloin virta kulkee jokaisen vastuksen läpi.",
-          "feedback": "Sarjaankytkennässä resistanssit lasketaan yhteen: $100\\,\\Omega + 100\\,\\Omega + 100\\,\\Omega = 300\\,\\Omega$. Se on kytkennöistä suurin, ei pienin."
+          "feedback": "Sarjaankytkennässä resistanssit lasketaan yhteen: $$100\\,\\Omega + 100\\,\\Omega + 100\\,\\Omega = 300\\,\\Omega$$. Se on kytkennöistä suurin, ei pienin."
         },
         {
           "text": "Kaksi rinnan ja kolmas niiden kanssa sarjaan, koska kytkennässä on kumpaakin tapaa.",
@@ -157,7 +157,7 @@
       "unit": "Ω",
       "tolerance": 0.02,
       "data": {
-        "caption": "Vastusten resistanssit yleismittarilla (esimerkkiaineisto)",
+        "caption": "Vastusten resistanssit yleismittarilla",
         "columns": [
           "Mitattu kohde",
           "$R\\,(\\Omega)$"
@@ -199,7 +199,7 @@
       "unit": "Ω",
       "tolerance": 0.03,
       "data": {
-        "caption": "Mittarilukemat (esimerkkiaineisto)",
+        "caption": "Mittarilukemat",
         "columns": [
           "Mitattu suure",
           "Lukema"
@@ -232,7 +232,7 @@
       "unit": "Ω",
       "tolerance": 0.03,
       "data": {
-        "caption": "Rinnankytkennän virta jännitteen funktiona (esimerkkiaineisto)",
+        "caption": "Rinnankytkennän virta jännitteen funktiona",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{mA})$"
@@ -340,7 +340,7 @@
       "unit": "mA",
       "tolerance": 0.03,
       "data": {
-        "caption": "Ampeerimittarien lukemat (esimerkkiaineisto)",
+        "caption": "Ampeerimittarien lukemat",
         "columns": [
           "Mittauskohta",
           "$I\\,(\\text{mA})$"

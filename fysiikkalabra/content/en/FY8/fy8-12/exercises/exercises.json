@@ -187,7 +187,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Pulse count of a GM counter in $10\\,\\text{s}$ periods (example data)",
+        "caption": "Pulse count of a GM counter in $10\\,\\text{s}$ periods",
         "columns": [
           "Period",
           "Pulses"
@@ -249,7 +249,7 @@
       "unit": "mm",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ behind lead (example data)",
+        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ behind lead",
         "columns": [
           "$d\\,(\\text{mm})$",
           "Pulses"
@@ -312,6 +312,19 @@
           "feedback": "The pulse of a GM tube is the same size in every case, because the electron avalanche does not depend on the type of radiation. The tube counts events but does not distinguish types of radiation."
         }
       ]
+    },
+    {
+      "id": "fy8-12-L2-08",
+      "level": 2,
+      "text": "Source material: <a href=\"https://english.autoriteitnvs.nl/latest/news/2021/12/16/do-you-have-a-quantum-pendant-anti%2D5g-pendant-or-a-negative-ion-jewellery-item-or-sleep-mask-if-so-store-it-away-safely\" target=\"_blank\" rel=\"noopener\">ANVS (Authority for Nuclear Safety and Radiation Protection, Netherlands): news item of 16 December 2021, “Do you have a ‘Quantum Pendant’ anti-5G pendant or a ‘negative ion’ jewellery item or sleep mask?”</a> (accessed 16 November 2026)\n\nThe Dutch authority announced ten products sold as jewellery or a sleep mask, for example a “Quantum Pendant” sold as anti-5G, and “negative ion” bracelets, necklaces and a sleep mask. The National Institute for Public Health and the Environment (RIVM) studied the products and found that they contain radioactive materials and emit ionizing radiation continuously. The measured radiation level was low and the risk of health problems low, but wearing one continuously for a long time (a year, $24\\,\\text{h}$ a day) could give the skin an exposure above the strict Dutch limit for skin exposure. The sale of the products is prohibited, and owners are told to stop wearing them, to store them sealed in a closed cabinet and not to throw them in household waste.\n\na) Judging by the names of the products, say what they claimed to do, and say what the authority found. Keep the claim inferred from the names apart from the authority's finding.\n\nb) The 5G signal of a mobile network is a radio wave. Assume that its frequency is $3.5\\,\\text{GHz}$. Calculate the energy of one radio-wave photon $E = hf$ in electronvolts and compare it with the energy needed to remove an electron from an atom, which is of the order of $10\\,\\text{eV}$, and with the energy of a gamma photon of a radioactive substance, which is of the order of $10^5$–$10^6\\,\\text{eV}$. Explain why one of these radiations ionizes and the other does not, however great the intensity of the radio waves.\n\nc) Describe how the radiation exposure of the skin from the product could be measured. Mention the type of instrument and the measuring distance, how the background is taken into account, what is needed of the measured pulse rate or dose rate, and how the type of radiation would be identified.\n\nd) What evidence would be needed for the claimed health effects of the product? Also explain why a pendant cannot protect against 5G radiation, and classify the claim as a physically false claim or a real effect.\n\nEnter in the box the photon energy of part b) in microelectronvolts ($1\\,\\mu\\text{eV} = 10^{-6}\\,\\text{eV}$).",
+      "kind": [
+        "data",
+        "model",
+        "concept"
+      ],
+      "answer": 14,
+      "unit": "µeV",
+      "tolerance": 0.04
     }
   ],
   "level3": [
@@ -352,7 +365,7 @@
       "unit": "mm",
       "tolerance": 0.04,
       "data": {
-        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ behind the plates (example data)",
+        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ behind the plates",
         "columns": [
           "$d\\,(\\text{mm})$",
           "Pulses"
@@ -398,7 +411,7 @@
       "unit": "kBq",
       "tolerance": 0.03,
       "data": {
-        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ periods (example data)",
+        "caption": "Pulses of a GM counter in $60\\,\\text{s}$ periods",
         "columns": [
           "Period",
           "Source",

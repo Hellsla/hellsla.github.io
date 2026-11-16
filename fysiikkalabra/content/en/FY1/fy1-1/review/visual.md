@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 089f17b519fe81f6
+CONTENT-HASH: 8713d70584c086ec
 
 ## Blocking
 - none
@@ -8,8 +8,7 @@ CONTENT-HASH: 089f17b519fe81f6
 - none
 
 ## Checked
-- Delta round 2: opened fy1-1-theory-1280-1.png: the added rule sentence reads cleanly, 10^n and 10^{n+1} set in KaTeX with correct superscripts, paragraph still short, figure beside the preceding paragraph and the next paragraph unaffected.
-- Surrounding layout intact, units and powers of ten are KaTeX, no clipping.
+delta review 5d reflow, round 1: opened the 360 px captures inquiry 01 (tiled into contact sheets, every capture of this part viewed); equals signs aligned, no row broken inside a number or unit, nothing clipped or scrolling, display formulas read naturally in their sentences.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 (English text reviewed) · accessibility 4
+illustrations 5 · typography 4 · English 4 · accessibility 4

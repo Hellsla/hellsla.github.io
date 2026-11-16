@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 70401639c33a7a24
-SCOPE: delta added-exercise from a1a0baded87547f2 base 8f23aa7ae3bd
+CONTENT-HASH: 5c922b90294f7d20
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- L2-08 says "a second capacitor", which refers to the graph of L1-05 (the numbering is a running one, so the student may meet it with no "first" in view). Say "the voltage of a capacitor" and the task stands alone.
-- L2-08 solution: the Answer line gives 370 microjoules while the stored answer is 367.5; the 2 % tolerance covers both, but "367.5, rounded 370" would match the answer box.
-- L1-10 asks for two conversions (cm^2 to m^2, mm to m), a lookup and a four-quantity formula; at the upper edge of level 1 but it is one formula, and the hint helps.
+- fy6-13-L2-09 — a strong task: it joins a simulation to a calculation and a comparison. Unlike fy6-3 there is no fallback data for part a, so a student without the simulation cannot do it; give a short table of example values (U, Q at a fixed separation), or say that parts b–d need no simulation.
+- Part a: the example calculation uses 0.44 pF, which is far from the simulation's own readings; label it as showing the method only (it already says it is not a reading).
+- Part d: the claim that a capacitor "holds little energy" is made before the comparison number; the 10⁶ ratio makes the point well. Say that supercapacitors narrow the gap, since the solution mentions them.
+- Workload: four parts, at least six recorded value pairs and a written comparison; ask for three pairs in total if time is short.
+- Solution blocks are very long; the part a paragraph could be split into the voltage and the separation.
 
 ## Checked
-- L1-10: level 1 (one formula, values given or looked up); the MAFY table is named in the hint; the solution shows all conversions and a check against air (2.2 nF times 2.3); arithmetic verified (5.09 nF).
-- L1-10 is distinct from L1-04 (air, given values) through the dielectric lookup.
-- L2-08: level 2 (capacitance from the slope of a Q-U line, then W = CU^2/2 at a voltage not on the graph); the situation is stated, the question comes last and the order of steps is given.
-- L2-08 figure gives the line from the origin to (120 uC; 8 V) on 20 uC and 1 V gridlines; description matches and gives neither C nor W.
-- L2-08 solution complete, with an independent check by QU/2; arithmetic verified (15 uF, 367.5 uJ).
-- Fit: the set gains a lookup task and a second graph-to-energy task that uses C rather than the area under the line, which L1-05 covers at level 1.
+- Set: 10 / 9 / 5, new task last in level 2; levels and mix fine.
+- Progression: investigate, calculate, predict a scaling, evaluate.
+- Solution: W = ½CU² = 72 mJ, 0.29 J at double voltage, 9.6·10⁵ ratio; correct, with the unit check.
+- Does not repeat the worked example; uses only earlier chapters.

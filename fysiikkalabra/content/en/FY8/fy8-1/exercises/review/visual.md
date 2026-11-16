@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f22ac3e71db8780e
-SCOPE: delta added-exercise from b4640f1fa75ce4b0 base 5a45b28682e8
+CONTENT-HASH: 9939aab4e79fce7e
+SCOPE: delta added-exercise from c6f2c3a890e2d599 base 96f3d46cabcf
 
 ## Blocking
 (none)
 
 ## Polish
-(none new; the round-1 Minor on the small figure in the task card stands)
+- [Minor] fy8-1-L2-10 solution, Reasonableness — "as the threshold wavelength of sodium, 544 nm, in the theory" reads clumsily — "like the threshold wavelength of sodium, $544\,\text{nm}$, given in the theory".
+- [Minor] fy8-1-L2-10 solution, "Reading the graph" — a long paragraph, the closing "however, taken straight from the slider" is awkward — start with the slider reading and then the graph remark.
 
 ## Checked
-- Own scratch captures of the L2-08 card with every solution open at 360 and 390 px (en), read in full from the preview build; review/shots not used.
-- Substitution row now /bin/bash.4136 · (12 − 5.56) = 2.66$ and splits into two aligned rows; no formula in the card is wider than the card at 360 or 390 px (measured in the browser); the Conversions and Reasonableness lines read cleanly, the unseen 2.3 eV is gone.
-- Figure kuvaaja-ab seen in the card: axes, units, grid, A and B distinct.
-- L1-10 and L2-09 were passed in round 1 and are unchanged.
+- Captures fy8-1-open-exercises-L2-1280-14, -15, -16, -17 (task 1-20 text, answer box, whole solution: given, principle, formula, conversions, substitution rows, model answers a–d, answer, reasonableness). KaTeX clean, units upright with thin space, decimal point, no clipping. Set still reads as one. Delta: only the added exercise judged; no 390 px capture of exercises exists.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

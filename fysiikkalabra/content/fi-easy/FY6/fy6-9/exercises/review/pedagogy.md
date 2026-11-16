@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: b6066e2dc31595c5
-SCOPE: delta added-exercise from 47c6ed01597a514a base 8f23aa7ae3bd
+CONTENT-HASH: 36c2c5b745ea76ef
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+- fy6-9-L2-09 d): the Tukes page could not be checked (known); the solution says to verify the wording, and any two instructions are accepted. Only a- and b) are fully material-independent, so the task is partly a standard calculation; acceptable at level 2.
+- The d) solution is very long (three examples); consider trimming the third (cold battery) which it says is out of scope.
+- c) solution first says 120 W goes into the battery, then that power is not constant: clear enough, but one sentence linking the two would help.
 
 ## Checked
-- L2-08: level 2 fits (three-part graph read, charge as area, then W = UQ); situation first, question last; answer 61,05 Wh within tolerance of the 61 Wh the solution states.
-- Figure ex-current2 gives all values (2,0/1,5/0,5 A, gridlines 0,5) and its description matches; charge is not given away.
-- Solution stepwise: durations derived, areas summed, unit shortcut explained, reasonableness check real.
-- Overlap with L1-05 (charge from graph) is only the first step; L2-08 adds the energy step. Kinds mix still fine.
-- Finnish reads clearly; case after number+unit correct.
+New task against section 6: 36 V x 14 Ah = 504 Wh = 1.8 MJ, 4.2 h verified; c) and d) reason with chapter physics (internal resistance, charger voltage); terms (kenno, oikosulku, häviö) explained; set mix unchanged.

@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: daa0330ac3b9a714
-SCOPE: delta added-exercise from e5c2c0ca37639b87 base 8f23aa7ae3bd
+CONTENT-HASH: 7a6a4a96cc364108
 
 ## Blocking
 
 ## Polish
-- solutions.md (fy6-9-L2-08) — "kaksi merkitsevää numeroa kuten virran lukemissa": the reading 0,5 A has one significant figure written, but it is read off grid lines, so it is known to about 0,05 A. Say that the readings are known to the grid's precision instead of counting written digits.
 
 ## Checked
-- Hash daa0330ac3b9a714 at start and end; only fy6-9-L2-08 was judged (delta added-exercise).
-- Figure fy6-9/ex-current2 (figures.py): the steps are 2,0 A for 0–1,0 h, 1,5 A for 1,0–3,0 h and 0,5 A for 3,0–4,0 h, then zero. They match the solution's readings and the alt text, and the alt text does not give the charge.
-- I recomputed it myself: Q = Σ I·Δt = 2,0 + 3,0 + 0,5 = 5,5 Ah, so W = 11,1 V · 5,5 Ah = 61,05 Wh. This equals answers.py and the json answer; unit Wh, tolerance 0,02.
-- The model W = UQ with the nominal voltage is the lesson's formula. The task states the assumption explicitly, so the energy lost in charging (η < 100 %) does not make the answer wrong (finding C).
-- Physics: the charge is the area under the I(t) graph and the current is constant on each piece. 61 Wh is realistic for a laptop battery.
-- The solution has all seven parts, the symbolic Q and W before the numbers, the conversion 1 V·Ah = 1 Wh, and a real check (the mean current 1,4 A lies between the extremes).
-- In scope: akut ja latauspiiri (capacity, energy).
+- Round-1 Blocking (fy6-9-L2-09 d) is fixed. The two instructions are now the student's own choice. The examples are presented as "tyypillisiä latausohjeita" with "tarkista sanamuoto aineistosta", and each reason is marked as the solution's own physics, not the source's. The cold-battery reason is no longer attributed to the source and is left outside the chapter's physics. Nothing specific is now said to be on the Tukes page.
+- The physics in d) is unchanged and correct. I = (U_lat − E)/(R + R_s) with a small R_s gives a large I. R_sI² quadruples when I doubles. An internal short turns the stored 1,8 MJ quickly into internal energy. The safety wording is not unsafe.
+- Round-1 Polish (c) is fixed. The 120 W is now named as the power into the battery, and the loss is R_sI² with only EI stored. The charger's own losses are a separate remark about the energy taken from the socket. The falling current through the rising E and the Li-ion charger's taper match the brief.
+- Answer recomputed: W = UQ = 504 Wh = 1,81 MJ and t = UQ/P = 4,2 h, matching answers.py and exercises.json (tolerance 0,02). The cross-check I = P/U → 4,2 h is a real check.
+- Annettu now names the source only as the place the student reads the instructions; no claims are attributed to it.
+- Reflowed chains in the older tasks: same numbers, signs and units in the same order.
+- Hash read at start and end: unchanged.

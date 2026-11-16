@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b5525ba7c53480e5
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: b393d5d4996c2cdf
 
 ## Blocking
 - none
@@ -9,4 +8,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Diff read: 2,70 g/cm3 consistent decimals, 'noin kolminkertainen', rubric detail wording; notation correct, no figure change.
+delta 5d reflow, round 1: opened koe capture 01 (360 px): aligned block fits, equals aligned, sentence reads naturally.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 76508de88ca598d0
+CONTENT-HASH: d028c62ac8ffd937
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- [Minor] solutions.md:168 (tile fy4-10 #22) — `(0,044 / + 0,162) kg·m/s` is broken inside a short parenthesis; keep it on one row.
 
 ## Checked
-- fy4-10-open-exercises-L2-1280-12 and -13 (fi-easy): tick numbers below the plot with decimal comma, nothing crossed; solution reads the figure's values correctly.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.

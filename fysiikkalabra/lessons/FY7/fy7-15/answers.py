@@ -47,4 +47,5 @@ _Y = [374, 354, 283, 197, 102, 40, 15]
 _mx, _my = sum(_X) / 7, sum(_Y) / 7
 _b = sum((u - _mx) * (v - _my) for u, v in zip(_X, _Y)) / sum((u - _mx) ** 2 for u in _X); _a0 = _my - _b * _mx
 a["fy7-15-L2-08"] = degrees(acos(sqrt((200 - _a0) / _b)))
+# L2-09 (words, core; teacher 2026-11-16): a polarising filter dims the partly polarised reflection from window glass; light from the goods is unpolarised, so about half passes in every position; a quarter turn lets the reflection through again
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

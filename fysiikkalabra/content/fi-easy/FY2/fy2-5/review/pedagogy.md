@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 34fe4a4dc1063d55
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 3
+CONTENT-HASH: 220e08dbe292bd1b
+Mode: delta
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- Kosteus-section: "kuivan puun lämpöarvo on 16,2 MJ/kg" sits beside the table's ilmakuiva 15; one clause "ilmakuiva puu on hieman kosteampaa kuin kuiva puu" would make the small gap obvious. Optional.
 
 ## Checked
-- git diff HEAD~1 (commit a84956a90) of the unit's files (fi-easy), judged in context.
-- The new second question is neutral: it asks whether the numbers can be compared as the same physical quantity without presupposing the answer. Options 2 ('larger, but they describe different things') and 3 ('same quantity, so chocolate would be a better fuel') are now two genuine answers the student must choose between, so my round-1 Polish is resolved.
-- The options and their feedback were unchanged and still fit the new prompt: each feedback answers the new question (nutrition label = energy the body can use, heating value = energy released in burning) and repairs the misconception. No answer is disclosed before the student commits.
-- S2: 'Voiko lukuja verrata keskenään niin kuin ne olisivat samaa suuretta?' is one plain, clear question (NOTES.md §12.6).
+- Delta review: the sentence "Kuivemmasta puusta saa enemmän energiaa: MAFY-taulukossa kuivan puun lämpöarvo on 16,2 MJ/kg" replaces the earlier 19 MJ/kg claim; direction right (16,2 > 15), source named, consistent with the fi lesson and the exercises.
+- Short S2 sentence, no new term; the moisture explanation (water does not burn, evaporating it uses energy) is intact.
+- Inquiry and figure/formula-name changes are teacher-approved or re-breaks only; not re-judged.

@@ -11,7 +11,7 @@
 ## fy3-15-L1-02
 **Annettu:** ilmavirran liike-energian teho $P_\text{tuuli} = 2{,}50\,\text{MW}$ ja sähköteho $P_\text{sähkö} = 1{,}05\,\text{MW}$
 **Kysytty:** voimalan hyötysuhde $\eta$ prosentteina
-**Periaate:** Hyötysuhde kertoo, kuinka suuri osa laitokseen tulevasta tehosta saadaan hyödyksi. Tässä tulotehona on roottorin läpi virtaavan ilman liike-energian teho. Hyötytehona on sähköverkkoon menevä teho. Loput energiasta jää ilman liikkeeseen tai muuttuu lämmöksi.
+**Periaate:** Hyötysuhde kertoo, kuinka suuri osa laitokseen tulevasta tehosta saadaan hyödyksi. Tässä tulotehona on roottorin läpi virtaavan ilman liike-energian teho. Hyötytehona on sähköverkkoon menevä teho. Loput energiasta jää ilman liikkeeseen tai muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön.
 **Kaava:** $\eta = \dfrac{P_\text{sähkö}}{P_\text{tuuli}}$
 **Muunnokset:** Molemmat tehot ovat megawatteina, joten yksiköt supistuvat. Tulos kerrotaan sadalla, jotta saadaan prosentit.
 **Sijoitus:** $\eta = \dfrac{1{,}05\,\text{MW}}{2{,}50\,\text{MW}} = 0{,}420 = 42{,}0\,\%$
@@ -21,12 +21,12 @@
 ## fy3-15-L1-03
 **Annettu:** pinta-ala $A = 20{,}0\,\text{m}^2$, säteilyn teho pinta-alaa kohti $I = 1{,}00\,\tfrac{\text{kW}}{\text{m}^2}$, hyötysuhde $\eta = 0{,}210$
 **Kysytty:** paneelin sähköteho $P$ kilowatteina
-**Periaate:** Paneeliin osuvan säteilyn teho on intensiteetti kertaa pinta-ala. Hyötysuhde kertoo, kuinka suuri osa siitä muuttuu sähköksi. Loput muuttuu lämmöksi tai heijastuu pois. Sähköteho on siis $\eta$-osa ottotehosta $P_\text{o} = IA$ eli paneeliin tulevan säteilyn tehosta.
+**Periaate:** Paneeliin osuvan säteilyn teho on intensiteetti kertaa pinta-ala. Hyötysuhde kertoo, kuinka suuri osa siitä muuttuu sähköksi. Loput heijastuu pois tai muuttuu paneelin sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Sähköteho on siis $\eta$-osa ottotehosta $P_\text{o} = IA$ eli paneeliin tulevan säteilyn tehosta.
 **Kaava:** $P = \eta P_\text{o} = \eta I A$
 **Muunnokset:** Yksiköt kulkevat mukana: $\tfrac{\text{kW}}{\text{m}^2} \cdot \text{m}^2 = \text{kW}$. Tulos tulee suoraan kilowatteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $P = 0{,}210 \cdot 1{,}00\,\tfrac{\text{kW}}{\text{m}^2} \cdot 20{,}0\,\text{m}^2 = 0{,}210 \cdot 20{,}0\,\text{kW} = 4{,}20\,\text{kW}$
 **Vastaus:** $4{,}20\,\text{kW}$, kolme merkitsevää numeroa. Pinta-ala $20{,}0\,\text{m}^2$, säteilyteho $1{,}00\,\tfrac{\text{kW}}{\text{m}^2}$ ja hyötysuhde $0{,}210$ ovat kaikki kolmella numerolla.
-**Järkevyys:** Paneeliin osuu säteilyä $20{,}0\,\text{kW}$. Siitä noin viidennes ($0{,}210 \approx 0{,}2$) on $\approx 4\,\text{kW}$. Loput $20{,}0\,\text{kW} - 4{,}20\,\text{kW} = 15{,}8\,\text{kW}$ lämmittää paneelia tai heijastuu pois. Pientalon katolla $4\,\text{kW}$ on tavallinen huipputeho kirkkaalla säällä.
+**Järkevyys:** Paneeliin osuu säteilyä $20{,}0\,\text{kW}$. Siitä noin viidennes ($0{,}210 \approx 0{,}2$) on $\approx 4\,\text{kW}$. Loput $$\begin{aligned} &20{,}0\,\text{kW} - 4{,}20\,\text{kW} \\ &= 15{,}8\,\text{kW} \end{aligned}$$ lämmittää paneelia tai heijastuu pois. Pientalon katolla $4\,\text{kW}$ on tavallinen huipputeho kirkkaalla säällä.
 
 ## fy3-15-L1-04
 **Annettu:** kuvan pylväistä luettuna $P_\text{o} = 400\,\text{MW}$, $P_1 = 350\,\text{MW}$, $P_2 = 150\,\text{MW}$ ja $P_3 = 140\,\text{MW}$
@@ -36,8 +36,8 @@
 **Kaava:** $P_\text{h} = P_\text{o} - P_\text{a}$. Tässä $P_\text{o}$ on vaiheeseen tuleva ottoteho ja $P_\text{a}$ vaiheesta lähtevä antoteho. Höyrykierrossa $P_\text{o} = P_1$ ja $P_\text{a} = P_2$, joten $P_\text{h} = P_1 - P_2$
 **Muunnokset:** Ei tarvita. Kaikki tehot ovat megawatteina.
 **Sijoitus:** $P_\text{h} = 350\,\text{MW} - 150\,\text{MW} = 200\,\text{MW}$
-**Vastaus:** Eniten teho pienenee höyrykierrossa. Siinä lämpönä ympäristöön siirtyy $200\,\text{MW}$. Arvot luetaan ruudukon viivoilta täysinä megawatteina. Tulos on siis kolmen numeron tarkkuudella $200\,\text{MW}$.
-**Järkevyys:** Vaiheiden häviöt ovat yhteensä $50 + 200 + 10 = 260\,\text{MW} = P_\text{o} - P_3 = 400\,\text{MW} - 140\,\text{MW}$. Tase siis täsmää. Höyrykierron hyötysuhde on $150 / 350 \approx 0{,}43$. Se sopii höyrykierrolle. Höyrykierron häviö on yli $75\,\%$ koko laitoksen hukkalämmöstä.
+**Vastaus:** Eniten teho pienenee höyrykierrossa. Siinä lämpönä ympäristöön siirtyy $200\,\text{MW}$. Pylväiden $P_1$ ja $P_2$ päät ovat tarkasti ruudukon viivoilla. Lukemat $350\,\text{MW}$ ja $150\,\text{MW}$ ovat siis täysiä megawatteja eli kolmen numeron arvoja. Tulos $200\,\text{MW}$ on kolmen merkitsevän numeron tarkkuudella.
+**Järkevyys:** Vaiheiden häviöt ovat yhteensä $$\begin{aligned} &50 + 200 + 10 \\ &= 260\,\text{MW} \\ &= P_\text{o} - P_3 \\ &= 400\,\text{MW} - 140\,\text{MW} \end{aligned}$$. Tase siis täsmää. Höyrykierron hyötysuhde on $150 / 350 \approx 0{,}43$. Se sopii höyrykierrolle. Höyrykierron häviö on yli $75\,\%$ koko laitoksen hukkalämmöstä.
 
 ## fy3-15-L1-05
 **Annettu:** polttoaineteho $P_\text{o} = 250\,\text{MW}$, sähköteho $P_\text{s} = 75{,}0\,\text{MW}$ ja kaukolämpöteho $P_\text{k} = 150\,\text{MW}$
@@ -47,7 +47,7 @@
 **Muunnokset:** Kaikki tehot ovat megawatteina ja yksiköt supistuvat. Tulos kerrotaan sadalla, jotta saadaan prosentit.
 **Sijoitus:** $\eta_\text{kok} = \dfrac{75{,}0\,\text{MW} + 150\,\text{MW}}{250\,\text{MW}} = \dfrac{225\,\text{MW}}{250\,\text{MW}} = 0{,}900 = 90{,}0\,\%$
 **Vastaus:** $90{,}0\,\%$, kolme merkitsevää numeroa. Kaikki tehot on annettu megawatin tarkkuudella. Summa $75{,}0 + 150 = 225\,\text{MW}$ säilyttää saman tarkkuuden. Osamäärässä $225/250$ on siis kolme numeroa.
-**Järkevyys:** Tulos on yhteistuotannon tavallisella välillä 85–$90\,\%$. Hukkalämmön teho on $250\,\text{MW} - 225\,\text{MW} = 25\,\text{MW}$, ja $225 + 25 = 250$. Tase siis täsmää. Sähkön osuus on vain $\dfrac{75{,}0\,\text{MW}}{250\,\text{MW}} = 30\,\%$. Sähköhyötysuhde on siis pienempi kuin lauhdevoimalaitoksessa.
+**Järkevyys:** Tulos on yhteistuotannon tavallisella välillä 85–$90\,\%$. Hukkalämmön teho on $$\begin{aligned} &250\,\text{MW} - 225\,\text{MW} \\ &= 25\,\text{MW} \end{aligned}$$, ja $225 + 25 = 250$. Tase siis täsmää. Sähkön osuus on vain $\dfrac{75{,}0\,\text{MW}}{250\,\text{MW}} = 30\,\%$. Sähköhyötysuhde on siis pienempi kuin lauhdevoimalaitoksessa.
 
 ## fy3-15-L1-06
 **Kysytty:** miksi yhteistuotantolaitoksen kokonaishyötysuhde on suurempi kuin lauhdevoimalaitoksen, kun polttoaine on sama
@@ -62,7 +62,7 @@
 **Muunnokset:** Molemmat tehot ovat megawatteina, joten yksiköt supistuvat. Tulos kerrotaan sadalla, jolloin saat prosentit.
 **Sijoitus:** $\eta = \dfrac{510\,\text{MW}}{1500\,\text{MW}} = 0{,}340 = 34{,}0\,\%$
 **Vastaus:** $34{,}0\,\%$, kolme merkitsevää numeroa kuten sähkötehossa $510\,\text{MW}$.
-**Järkevyys:** Arvio: $1500 : 3 = 500$. Teho $510\,\text{MW}$ on hieman enemmän, joten hyötysuhde on hieman yli kolmannes. Hukkalämpöä syntyy $1500\,\text{MW} - 510\,\text{MW} = 990\,\text{MW}$. Se on noin kaksi kolmasosaa. Lämpövoimalaitoksen sähköhyötysuhde on tavallisesti 30–$40\,\%$, ja tulos on sillä välillä.
+**Järkevyys:** Arvio: $1500 : 3 = 500$. Teho $510\,\text{MW}$ on hieman enemmän, joten hyötysuhde on hieman yli kolmannes. Hukkalämpöä syntyy $$\begin{aligned} &1500\,\text{MW} - 510\,\text{MW} \\ &= 990\,\text{MW} \end{aligned}$$. Se on noin kaksi kolmasosaa. Lämpövoimalaitoksen sähköhyötysuhde on tavallisesti 30–$40\,\%$, ja tulos on sillä välillä.
 
 ## fy3-15-L1-08
 **Annettu:** polttoaineteho $P_\text{o} = 500\,\text{MW}$ ja käyntiaika $t = 1\,\text{vrk} = 24\,\text{h}$
@@ -82,7 +82,7 @@
 **Muunnokset:** Hyötysuhteet ovat dimensiottomia ja teho on jo megawatteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $P_3 = 0{,}880 \cdot 0{,}420 \cdot 0{,}980 \cdot 300\,\text{MW} = 0{,}362208 \cdot 300\,\text{MW} = 108{,}6624\,\text{MW}$
 **Vastaus:** $109\,\text{MW}$, kolme merkitsevää numeroa. Hyötysuhteet $0{,}880$, $0{,}420$ ja $0{,}980$ ovat kolmella numerolla. Polttoaineteho $300\,\text{MW}$ on annettu megawatin tarkkuudella.
-**Järkevyys:** Arvio: $0{,}9 \cdot 0{,}4 \cdot 1{,}0 \cdot 300\,\text{MW} \approx 110\,\text{MW}$. Koko ketjun hyötysuhde on $0{,}362$ eli $36\,\%$. Se on vähemmän kuin heikoin vaihe ($0{,}420$) antaisi yksin. Kattilan ja höyrykierron häviöt vievät yhdessä $1 - 0{,}880 \cdot 0{,}420 = 0{,}630$. Se on lähes kaksi kolmasosaa (noin $63\,\%$) polttoaineen energiasta.
+**Järkevyys:** Arvio: $$\begin{aligned} &0{,}9 \cdot 0{,}4 \cdot 1{,}0 \cdot 300\,\text{MW} \\ &\approx 110\,\text{MW} \end{aligned}$$. Koko ketjun hyötysuhde on $0{,}362$ eli $36\,\%$. Se on vähemmän kuin heikoin vaihe ($0{,}420$) antaisi yksin. Kattilan ja höyrykierron häviöt vievät yhdessä $1 - 0{,}880 \cdot 0{,}420 = 0{,}630$. Se on lähes kaksi kolmasosaa (noin $63\,\%$) polttoaineen energiasta.
 
 ## fy3-15-L2-02
 **Annettu:** koko ketjun hyötysuhde $\eta = 0{,}380$, kattilan $\eta_1 = 0{,}900$ ja generaattorin $\eta_3 = 0{,}980$
@@ -92,7 +92,7 @@
 **Muunnokset:** Hyötysuhteet ovat dimensiottomia lukuja, joten yksikkömuunnoksia ei tarvita. Lopuksi tulos kerrotaan sadalla, jotta saadaan prosentit.
 **Sijoitus:** $\eta_2 = \dfrac{0{,}380}{0{,}900 \cdot 0{,}980} = \dfrac{0{,}380}{0{,}882} = 0{,}43084 = 43{,}08\,\%$
 **Vastaus:** $43{,}1\,\%$, kolme merkitsevää numeroa. Kaikki kolme hyötysuhdetta, $0{,}380$, $0{,}900$ ja $0{,}980$, ovat kolmella numerolla.
-**Järkevyys:** Tarkistus: $0{,}900 \cdot 0{,}4308 \cdot 0{,}980 = 0{,}380$. Höyrykierron hyötysuhde on suurempi kuin koko ketjun $0{,}380$. Niin pitääkin olla, koska muut vaiheet vain pienentävät sitä. Se on hieman suurempi kuin koko lauhdevoimalaitoksen tavallinen hyötysuhde (noin $40\,\%$, tyypillisesti $38$–$42\,\%$). Kattilan ja generaattorin häviöt eivät sisälly höyrykierron hyötysuhteeseen. Höyrykierto on ketjun heikoin lenkki.
+**Järkevyys:** Tarkistus: $$\begin{aligned} &0{,}900 \cdot 0{,}4308 \cdot 0{,}980 \\ &= 0{,}380 \end{aligned}$$. Höyrykierron hyötysuhde on suurempi kuin koko ketjun $0{,}380$. Niin pitääkin olla, koska muut vaiheet vain pienentävät sitä. Se on hieman suurempi kuin koko lauhdevoimalaitoksen tavallinen hyötysuhde (noin $40\,\%$, tyypillisesti $38$–$42\,\%$). Kattilan ja generaattorin häviöt eivät sisälly höyrykierron hyötysuhteeseen. Höyrykierto on ketjun heikoin lenkki.
 
 ## fy3-15-L2-03
 **Annettu:** sähköteho $P_\text{s} = 150\,\text{MW}$, hyötysuhde $\eta = 0{,}360$, lämpöarvo $H = 9{,}00\,\tfrac{\text{MJ}}{\text{kg}}$, aika $t = 1\,\text{h}$
@@ -112,7 +112,7 @@
 **Muunnokset:** $270\,\text{MW} = 270 \cdot 10^6\,\text{W}$ ja $1\,\text{W} = 1\,\tfrac{\text{J}}{\text{s}}$. Lämpötilan muutos $9{,}00\,\text{K}$ on sama kelvineinä ja celsiusasteina. Lopuksi $1\,\text{t} = 1000\,\text{kg}$.
 **Sijoitus:** $q_m = \dfrac{270 \cdot 10^6\,\text{W}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 9{,}00\,\text{K}} = 7159{,}9\,\tfrac{\text{kg}}{\text{s}} = 7{,}1599\,\tfrac{\text{t}}{\text{s}}$
 **Vastaus:** $7{,}16\,\tfrac{\text{t}}{\text{s}}$, kolme merkitsevää numeroa. Lämpötilan muutos $9{,}00\,\text{K}$ ja ominaislämpökapasiteetti $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ovat kolmella numerolla. Teho $270\,\text{MW}$ on annettu megawatin tarkkuudella.
-**Järkevyys:** Tarkistus: $4190 \cdot 7160 \cdot 9{,}00\,\text{W} = 2{,}70 \cdot 10^8\,\text{W}$. Vesivirta vastaa noin $7\,\tfrac{\text{m}^3}{\text{s}}$. Se on pienen joen virtaama. Lauhdevoimalaitos tarvitsee suuren määrän jäähdytysvettä. Siksi ne rakennetaan merenrannalle tai joen varteen.
+**Järkevyys:** Tarkistus: $$\begin{aligned} &4190 \cdot 7160 \cdot 9{,}00\,\text{W} \\ &= 2{,}70 \cdot 10^8\,\text{W} \end{aligned}$$. Vesivirta vastaa noin $7\,\tfrac{\text{m}^3}{\text{s}}$. Se on pienen joen virtaama. Lauhdevoimalaitos tarvitsee suuren määrän jäähdytysvettä. Siksi ne rakennetaan merenrannalle tai joen varteen.
 
 ## fy3-15-L2-05
 **Annettu:** taulukosta vuonna 2023 polttoaineen energia $E_\text{o} = 2450\,\text{GWh}$, sähkö $E_\text{s} = 735\,\text{GWh}$ ja kaukolämpö $E_\text{k} = 1470\,\text{GWh}$. Vuosien 2021 ja 2022 arvot ovat taulukossa.
@@ -120,9 +120,9 @@
 **Periaate:** Yhteistuotantolaitoksessa sekä sähkö että kaukolämpö ovat hyötyä. Kokonaishyötysuhteessa lasketaan siis molemmat. Suhde on sama energioilla kuin tehoilla, koska laitos toimii saman ajan.
 **Kaava:** $\eta_\text{s} = \dfrac{E_\text{s}}{E_\text{o}}$ ja $\eta_\text{kok} = \dfrac{E_\text{s} + E_\text{k}}{E_\text{o}}$
 **Muunnokset:** Kaikki energiat ovat gigawattitunteina, joten yksiköt supistuvat. Muunnoksia ei tarvita. Tulokset kerrotaan sadalla, jolloin saat prosentit.
-**Sijoitus:** Vuonna 2023 sähkön ja kaukolämmön summa on $735\,\text{GWh} + 1470\,\text{GWh} = 2205\,\text{GWh}$, joten $\eta_\text{kok} = \dfrac{2205\,\text{GWh}}{2450\,\text{GWh}} = 0{,}900 = 90{,}0\,\%$. Sähköhyötysuhteet ovat $\eta_\text{s} = \tfrac{840}{2400} = 35{,}0\,\%$ (2021), $\tfrac{800}{2500} = 32{,}0\,\%$ (2022) ja $\tfrac{735}{2450} = 30{,}0\,\%$ (2023). Kokonaishyötysuhteet ovat $\tfrac{2030}{2400} = 84{,}6\,\%$ (2021) ja $\tfrac{2210}{2500} = 88{,}4\,\%$ (2022).
+**Sijoitus:** Vuonna 2023 sähkön ja kaukolämmön summa on $$\begin{aligned} &735\,\text{GWh} + 1470\,\text{GWh} \\ &= 2205\,\text{GWh} \end{aligned}$$, joten $\eta_\text{kok} = \dfrac{2205\,\text{GWh}}{2450\,\text{GWh}} = 0{,}900 = 90{,}0\,\%$. Sähköhyötysuhteet ovat $\eta_\text{s} = \tfrac{840}{2400} = 35{,}0\,\%$ (2021), $\tfrac{800}{2500} = 32{,}0\,\%$ (2022) ja $\tfrac{735}{2450} = 30{,}0\,\%$ (2023). Kokonaishyötysuhteet ovat $\tfrac{2030}{2400} = 84{,}6\,\%$ (2021) ja $\tfrac{2210}{2500} = 88{,}4\,\%$ (2022).
 **Vastaus:** $90{,}0\,\%$, kolme merkitsevää numeroa kuten taulukon energioissa.
-**Järkevyys:** Kokonaishyötysuhde on enintään $100\,\%$ ja suurempi kuin sähköhyötysuhde, kuten pitääkin. Hukkalämpöä jää vuonna 2023 $2450\,\text{GWh} - 2205\,\text{GWh} = 245\,\text{GWh}$. Se on noin kymmenesosa. Kylmänä vuonna kaukolämpöä tarvitaan enemmän. Silloin suurempi osa lauhduttimen lämmöstä tulee hyötykäyttöön ja sähköä saadaan vähemmän. Sähköhyötysuhde pieneni arvosta $35{,}0\,\%$ arvoon $30{,}0\,\%$, mutta kokonaishyötysuhde kasvoi arvosta $84{,}6\,\%$ arvoon $90{,}0\,\%$. Sähkö ja lämpö eivät silti ole yhtä arvokkaita, vaikka ne lasketaan yhteen.
+**Järkevyys:** Kokonaishyötysuhde on enintään $100\,\%$ ja suurempi kuin sähköhyötysuhde, kuten pitääkin. Hukkalämpöä jää vuonna 2023 $$\begin{aligned} &2450\,\text{GWh} - 2205\,\text{GWh} \\ &= 245\,\text{GWh} \end{aligned}$$. Se on noin kymmenesosa. Kylmänä vuonna kaukolämpöä tarvitaan enemmän. Silloin suurempi osa lauhduttimen lämmöstä tulee hyötykäyttöön ja sähköä saadaan vähemmän. Sähköhyötysuhde pieneni arvosta $35{,}0\,\%$ arvoon $30{,}0\,\%$, mutta kokonaishyötysuhde kasvoi arvosta $84{,}6\,\%$ arvoon $90{,}0\,\%$. Sähkö ja lämpö eivät silti ole yhtä arvokkaita, vaikka ne lasketaan yhteen.
 
 ## fy3-15-L2-06
 **Annettu:** taulukosta ydinvoimala $P_\text{o} = 2400\,\text{MW}$ ja $P_\text{s} = 840\,\text{MW}$, kivihiilivoimala $1200\,\text{MW}$ ja $432\,\text{MW}$, biovoimala $350\,\text{MW}$ ja $112\,\text{MW}$
@@ -142,7 +142,7 @@
 **Muunnokset:** Hyötysuhteet ovat dimensiottomia lukuja, joten muunnoksia ei tarvita. Lopuksi tulos kerrotaan sadalla, jolloin saat prosentit.
 **Sijoitus:** $\eta = 0{,}920 \cdot 0{,}410 \cdot 0{,}970 = 0{,}3659 = 36{,}6\,\%$
 **Vastaus:** $36{,}6\,\%$, kolme merkitsevää numeroa kuten annetuissa hyötysuhteissa.
-**Järkevyys:** Oppilaan virhe: hyötysuhteiden summa $230\,\%$ olisi yli $100\,\%$. Se on mahdotonta, koska laitos ei voi tuottaa enemmän sähköä kuin polttoaineessa on energiaa. Jokainen vaihe pienentää jäljellä olevaa tehoa. Siksi hyötysuhteet kerrotaan eikä lasketa yhteen. Tulo $0{,}366$ on pienempi kuin heikoin vaihe $0{,}410$, kuten pitääkin, kun kaikki tekijät ovat alle 1. Arvio: $0{,}9 \cdot 0{,}4 \cdot 1{,}0 = 0{,}36$. Hukkalämpöä on $100\,\% - 36{,}6\,\% = 63{,}4\,\%$ polttoaineteosta.
+**Järkevyys:** Oppilaan virhe: hyötysuhteiden summa $230\,\%$ olisi yli $100\,\%$. Se on mahdotonta, koska laitos ei voi tuottaa enemmän sähköä kuin polttoaineessa on energiaa. Jokainen vaihe pienentää jäljellä olevaa tehoa. Siksi hyötysuhteet kerrotaan eikä lasketa yhteen. Tulo $0{,}366$ on pienempi kuin heikoin vaihe $0{,}410$, kuten pitääkin, kun kaikki tekijät ovat alle 1. Arvio: $0{,}9 \cdot 0{,}4 \cdot 1{,}0 = 0{,}36$. Hukkalämpöä on $100\,\% - 36{,}6\,\% = 63{,}4\,\%$ polttoainetehosta.
 
 ## fy3-15-L2-08
 **Annettu:** polttoaineteho $P_\text{o} = 1200\,\text{MW}$, vesivirta $12\,\tfrac{\text{m}^3}{\text{s}}$, veden lämpötila $8\,{}^\circ\text{C} \to 18\,{}^\circ\text{C}$, $\rho = 1000\,\tfrac{\text{kg}}{\text{m}^3}$ ja $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
@@ -152,7 +152,7 @@
 
 $q_m = \rho\,\dfrac{V}{t}$
 
-$q_m = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 12\,\tfrac{\text{m}^3}{\text{s}} = 12\,000\,\tfrac{\text{kg}}{\text{s}}$
+$$\begin{aligned} q_m &= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 12\,\tfrac{\text{m}^3}{\text{s}} \\ &= 12\,000\,\tfrac{\text{kg}}{\text{s}} \end{aligned}$$
 
 Lämpötilan nousu:
 
@@ -162,7 +162,7 @@ Lämpöteho:
 
 $P_\text{L} = c\,q_m\,\Delta T$
 
-$P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 12\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10\,\text{K}$
+$$P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 12\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10\,\text{K}$$
 
 $P_\text{L} \approx 5{,}0 \cdot 10^8\,\text{W} = 500\,\text{MW}$
 
@@ -181,12 +181,12 @@ Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ poltto
 ## fy3-15-L3-02
 **Annettu:** sähköenergia $E = 36{,}0\,\text{GWh}$, hyötysuhde $\eta = 0{,}380$ ja hiilen lämpöarvo $H = 25{,}0\,\tfrac{\text{MJ}}{\text{kg}}$. Annettu $1\,\text{GWh} = 3{,}60 \cdot 10^{12}\,\text{J}$
 **Kysytty:** vuodessa poltettavan hiilen massa $m$ kilotonneina
-**Periaate:** Energia säilyy. Hiilen kemiallinen energia $Q_1$ muuttuu sähköksi hyötysuhteella $\eta$. Loput muuttuu hukkalämmöksi. Hyötysuhteen nimittäjä on ostettu polttoaine. Polttoaineen energia on lämpöarvo kertaa massa.
+**Periaate:** Energia säilyy. Hiilen kemiallinen energia $Q_1$ muuttuu sähköksi hyötysuhteella $\eta$. Loput siirtyy hukkalämpönä ympäristöön. Hyötysuhteen nimittäjä on ostettu polttoaine. Polttoaineen energia on lämpöarvo kertaa massa.
 **Kaava:** $E = \eta Q_1$ ja $Q_1 = H m$, joten $m = \dfrac{E}{\eta H}$
 **Muunnokset:** $E = 36{,}0 \cdot 3{,}60 \cdot 10^{12}\,\text{J} = 1{,}296 \cdot 10^{14}\,\text{J}$ ja $H = 25{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. Lopuksi $1\,\text{kt} = 10^6\,\text{kg}$.
 **Sijoitus:** $m = \dfrac{1{,}296 \cdot 10^{14}\,\text{J}}{0{,}380 \cdot 25{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 1{,}3642 \cdot 10^7\,\text{kg} = 13{,}642\,\text{kt}$
 **Vastaus:** $13{,}6\,\text{kt}$, kolme merkitsevää numeroa. Sähköenergia $36{,}0\,\text{GWh}$, hyötysuhde $0{,}380$, lämpöarvo $25{,}0\,\tfrac{\text{MJ}}{\text{kg}}$ ja muuntokerroin $3{,}60 \cdot 10^{12}\,\text{J}/\text{GWh}$ ovat kaikki kolmella numerolla.
-**Järkevyys:** Arvio: $\tfrac{1{,}3 \cdot 10^{14}\,\text{J}}{0{,}4 \cdot 2{,}5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1{,}3 \cdot 10^7\,\text{kg}$. Määrä vastaa noin 270 junavaunullista hiiltä, kun vaunuun mahtuu $50\,\text{t}$. Hyötysuhteita ei voi verrata suoraan. Hiilivoimalassa nimittäjä on ostettu polttoaine, joka kuluu. Sen energiasta noin $38\,\%$ muuttuu sähköksi ja loput hukkalämmöksi. Palamisessa syntyy myös päästöjä. Tuulen energia ei ole varasto, jota kuluu. Tuulipuiston hyötysuhde kertoo vain, kuinka suuri osa roottorin läpi virtaavan ilman liike-energiasta saadaan sähköksi.
+**Järkevyys:** Arvio: $\tfrac{1{,}3 \cdot 10^{14}\,\text{J}}{0{,}4 \cdot 2{,}5 \cdot 10^7\,\tfrac{\text{J}}{\text{kg}}} \approx 1{,}3 \cdot 10^7\,\text{kg}$. Määrä vastaa noin 270 junavaunullista hiiltä, kun vaunuun mahtuu $50\,\text{t}$. Hyötysuhteita ei voi verrata suoraan. Hiilivoimalassa nimittäjä on ostettu polttoaine, joka kuluu. Sen energiasta noin $38\,\%$ muuttuu sähköksi ja loput siirtyy hukkalämpönä ympäristöön. Palamisessa syntyy myös päästöjä. Tuulen energia ei ole varasto, jota kuluu. Tuulipuiston hyötysuhde kertoo vain, kuinka suuri osa roottorin läpi virtaavan ilman liike-energiasta saadaan sähköksi.
 
 ## fy3-15-L3-03
 **Annettu:** lämmitystarve $Q_1 = 100\,\text{kWh}$, lämpökerroin $\varepsilon = 3{,}00$, voimalan hyötysuhde $\eta_\text{voimala} = 0{,}400$ ja siirron osuus $\eta_\text{siirto} = 0{,}950$
@@ -204,9 +204,9 @@ Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ poltto
 **Periaate:** Polttoaineteho saadaan jakamalla hyötyteho hyötysuhteella. Vaihtoehdossa A sähkö ja lämpö tuotetaan erikseen, joten polttoainetehot lasketaan yhteen. Vaihtoehdossa B laitos mitoitetaan sähkötarpeen mukaan. Laitoksen tuottama kaukolämpö vähennetään lämmöntarpeesta. Jäljelle jäävä lämpö tuotetaan kattilassa.
 **Kaava:** A: $P_{\text{o},\text{A}} = \dfrac{P_\text{s}}{\eta_\text{s,A}} + \dfrac{P_\text{k}}{\eta_\text{kat}}$. B: $P_{\text{o},\text{CHP}} = \dfrac{P_\text{s}}{\eta_\text{s,B}}$, $P_\text{k,CHP} = 0{,}560\,P_{\text{o},\text{CHP}}$ ja $P_{\text{o},\text{B}} = P_{\text{o},\text{CHP}} + \dfrac{P_\text{k} - P_\text{k,CHP}}{\eta_\text{kat}}$. Erotus on $P_{\text{o},\text{A}} - P_{\text{o},\text{B}}$.
 **Muunnokset:** Kaikki tehot ovat megawatteina ja hyötysuhteet dimensiottomia lukuja, joten muunnoksia ei tarvita.
-**Sijoitus:** A: $P_{\text{o},\text{A}} = \dfrac{100\,\text{MW}}{0{,}400} + \dfrac{200\,\text{MW}}{0{,}900} = 250\,\text{MW} + 222{,}22\,\text{MW} = 472{,}22\,\text{MW}$. B: $P_{\text{o},\text{CHP}} = \dfrac{100\,\text{MW}}{0{,}320} = 312{,}5\,\text{MW}$ ja $P_\text{k,CHP} = 0{,}560 \cdot 312{,}5\,\text{MW} = 175{,}0\,\text{MW}$. Kattilan on tuotettava $200\,\text{MW} - 175{,}0\,\text{MW} = 25{,}0\,\text{MW}$. Kattilan polttoaineteho on siis $\dfrac{25{,}0\,\text{MW}}{0{,}900} = 27{,}78\,\text{MW}$ ja $P_{\text{o},\text{B}} = 312{,}5\,\text{MW} + 27{,}78\,\text{MW} = 340{,}28\,\text{MW}$. Erotus on $472{,}22\,\text{MW} - 340{,}28\,\text{MW} = 131{,}94\,\text{MW}$.
+**Sijoitus:** A: $P_{\text{o},\text{A}} = \dfrac{100\,\text{MW}}{0{,}400} + \dfrac{200\,\text{MW}}{0{,}900} = 250\,\text{MW} + 222{,}22\,\text{MW} = 472{,}22\,\text{MW}$. B: $P_{\text{o},\text{CHP}} = \dfrac{100\,\text{MW}}{0{,}320} = 312{,}5\,\text{MW}$ ja $P_\text{k,CHP} = 0{,}560 \cdot 312{,}5\,\text{MW} = 175{,}0\,\text{MW}$. Kattilan on tuotettava $$\begin{aligned} &200\,\text{MW} - 175{,}0\,\text{MW} \\ &= 25{,}0\,\text{MW} \end{aligned}$$. Kattilan polttoaineteho on siis $\dfrac{25{,}0\,\text{MW}}{0{,}900} = 27{,}78\,\text{MW}$ ja $$\begin{aligned} P_{\text{o},\text{B}} &= 312{,}5\,\text{MW} + 27{,}78\,\text{MW} \\ &= 340{,}28\,\text{MW} \end{aligned}$$. Erotus on $$\begin{aligned} &472{,}22\,\text{MW} - 340{,}28\,\text{MW} \\ &= 131{,}94\,\text{MW} \end{aligned}$$.
 **Vastaus:** $132\,\text{MW}$, kolme merkitsevää numeroa kuten annetuissa hyötysuhteissa. Vaihtoehto B tarvitsee noin $28\,\%$ vähemmän polttoainetta.
-**Järkevyys:** Yhteistuotannon kokonaishyötysuhde on $0{,}320 + 0{,}560 = 0{,}880$. Luku $0{,}880 \cdot 312{,}5\,\text{MW} = 275\,\text{MW}$ on sähkön ja lämmön summa $100\,\text{MW} + 175\,\text{MW}$. Vaihtoehdon A kokonaishyötysuhde on vain $\dfrac{300\,\text{MW}}{472{,}22\,\text{MW}} = 0{,}635$. Säästö syntyy siitä, että yhteistuotannossa lauhduttimen lämpö lämmittää kaupunkia. Lauhdevoimalaitoksessa tämä lämpö menisi mereen.
+**Järkevyys:** Yhteistuotannon kokonaishyötysuhde on $0{,}320 + 0{,}560 = 0{,}880$. Luku $$\begin{aligned} &0{,}880 \cdot 312{,}5\,\text{MW} \\ &= 275\,\text{MW} \end{aligned}$$ on sähkön ja lämmön summa $100\,\text{MW} + 175\,\text{MW}$. Vaihtoehdon A kokonaishyötysuhde on vain $\dfrac{300\,\text{MW}}{472{,}22\,\text{MW}} = 0{,}635$. Säästö syntyy siitä, että yhteistuotannossa lauhduttimen lämpö lämmittää kaupunkia. Lauhdevoimalaitoksessa tämä lämpö menisi mereen.
 
 ## fy3-15-L3-05
 **Annettu:** $P_\text{o} = 2700\,\text{MW}$, $P_\text{s} = 900\,\text{MW}$, vesivirta $q_m = 38{,}0\,\text{t/s}$ ja $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$. Taulukosta lämpötilat sisään ja ulos: tammikuussa $1{,}2\,{}^\circ\text{C}$ ja $12{,}1\,{}^\circ\text{C}$, huhtikuussa $3{,}5\,{}^\circ\text{C}$ ja $14{,}2\,{}^\circ\text{C}$, heinäkuussa $17{,}8\,{}^\circ\text{C}$ ja $28{,}4\,{}^\circ\text{C}$ sekä syyskuussa $12{,}3\,{}^\circ\text{C}$ ja $23{,}2\,{}^\circ\text{C}$.
@@ -215,10 +215,10 @@ Lähin vaihtoehto on $500\,\text{MW}$. Järkevyys: tulos on noin $42\,\%$ poltto
 **Kuvaajan lukeminen:** Laske taulukosta nousu $\Delta T = T_\text{ulos} - T_\text{sisään}$ kunakin kuukautena: tammikuu $10{,}9\,\text{K}$, huhtikuu $10{,}7\,\text{K}$, heinäkuu $10{,}6\,\text{K}$ ja syyskuu $10{,}9\,\text{K}$. Lämpötilaero on sama celsius- ja kelvinasteikolla.
 **Kaava:** $\Delta T_\text{ka} = \dfrac{\Sigma\,\Delta T}{4}$ ja $P_\text{L} = c\,q_m\,\Delta T_\text{ka}$
 **Muunnokset:** $q_m = 38{,}0\,\text{t/s} = 38\,000\,\text{kg/s}$. Tulos muunnetaan wateista megawateiksi, $1\,\text{MW} = 10^6\,\text{W}$.
-**Sijoitus:** Nousujen summa on $10{,}9 + 10{,}7 + 10{,}6 + 10{,}9 = 43{,}1\,\text{K}$, joten $\Delta T_\text{ka} = 10{,}775\,\text{K}$. Silloin
-$P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10{,}775\,\text{K} = 1{,}7156 \cdot 10^{9}\,\text{W} = 1716\,\text{MW}$
+**Sijoitus:** Nousujen summa on $$\begin{aligned} &10{,}9 + 10{,}7 + 10{,}6 + 10{,}9 \\ &= 43{,}1\,\text{K} \end{aligned}$$, joten $\Delta T_\text{ka} = 10{,}775\,\text{K}$. Silloin
+$$\begin{aligned} P_\text{L} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10{,}775\,\text{K} \\ &= 1{,}7156 \cdot 10^{9}\,\text{W} \\ &= 1716\,\text{MW} \end{aligned}$$
 **Vastaus:** $1720\,\text{MW}$, kolme merkitsevää numeroa kuten vesivirrassa ja lämpötilan nousussa.
-**Järkevyys:** Arvio: $4000 \cdot 4 \cdot 10^4 \cdot 11\,\text{W} \approx 1{,}8 \cdot 10^9\,\text{W}$. Hukkalämmön teho on $P_\text{h} = 2700\,\text{MW} - 900\,\text{MW} = 1800\,\text{MW}$. Lauhduttimen osuus siitä on $\tfrac{1716}{1800} = 95\,\%$. Loput, noin $84\,\text{MW}$, menee esimerkiksi generaattorin ja muuntajan häviöinä ilmaan. Meriveteen siirtyy vähemmän lämpöä kuin hukkalämpöä, kuten pitääkin. Vesi on lauhduttimen jälkeen vain noin $11\,\text{K}$ ympäristöä lämpimämpää. Siksi sillä ei voi enää tuottaa sähköä. Energia ei kuitenkaan katoa, vaan se lämmittää merta. Heinäkuussa vesi lähtee lämpötilassa $28{,}4\,{}^\circ\text{C}$. Purkualueella meri on siis lämpimämpää kuin muualla, ja vesieliöiden olot voivat heiketä.
+**Järkevyys:** Arvio: $$\begin{aligned} &4000 \cdot 4 \cdot 10^4 \cdot 11\,\text{W} \\ &\approx 1{,}8 \cdot 10^9\,\text{W} \end{aligned}$$. Hukkalämmön teho on $P_\text{h} = 2700\,\text{MW} - 900\,\text{MW} = 1800\,\text{MW}$. Lauhduttimen osuus siitä on $\tfrac{1716}{1800} = 95\,\%$. Loput, noin $84\,\text{MW}$, menee esimerkiksi generaattorin ja muuntajan häviöinä ilmaan. Meriveteen siirtyy vähemmän lämpöä kuin hukkalämpöä, kuten pitääkin. Vesi on lauhduttimen jälkeen vain noin $11\,\text{K}$ ympäristöä lämpimämpää. Siksi sillä ei voi enää käytännössä tuottaa sähköä. Näin pienellä lämpötilaerolla suurin mahdollinen hyötysuhde olisi vain muutama prosentti. Energia ei kuitenkaan katoa, vaan se lämmittää merta. Heinäkuussa vesi lähtee lämpötilassa $28{,}4\,{}^\circ\text{C}$. Purkualueella meri on siis lämpimämpää kuin muualla, ja vesieliöiden olot voivat heiketä.
 
 ## fy3-15-L1-09
 **Annettu:** vesivirta $q_m = 80\,\text{kg/s}$ ja lämpötilan nousu $\Delta T = 40\,\text{K}$. Taulukosta (MAFY-taulukko, ominaislämpökapasiteetit, nesteet, vesi) $c = 4{,}182\,\text{kJ/(kg}\cdot\text{K)}$.
@@ -238,5 +238,5 @@ $P_\text{L} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfr
 **Kaava:** $P_2 = \eta_2 P_1$. Siis $\eta_2 = \dfrac{P_2}{P_1}$.
 **Muunnokset:** Molemmat tehot ovat yksikössä $\text{MW}$. Yksikkö supistuu pois. Hyötysuhde prosentteina saadaan kertomalla sadalla.
 **Sijoitus:** $\eta_2 = \dfrac{150\,\text{MW}}{350\,\text{MW}} = 0{,}4286 = 42{,}86\,\%$
-**Vastaus:** $\eta_2 \approx 43\,\%$. Vastaus annetaan kahdella merkitsevällä numerolla, koska arvot luetaan $50\,\text{MW}$:n ruudukolta.
+**Vastaus:** $\eta_2 \approx 42{,}9\,\%$. Vastaus annetaan kolmella merkitsevällä numerolla. Pylväiden $P_1$ ja $P_2$ päät ovat tarkasti ruudukon viivoilla, joten lukemat $350\,\text{MW}$ ja $150\,\text{MW}$ ovat täysiä megawatteja eli kolmen numeron arvoja.
 **Järkevyys:** Hyötysuhde on alle $100\,\%$ ja tyypillinen höyrykierrolle. Tehdään vielä riippumaton tarkistus. Kattilan hyötysuhde on $350/400 = 0{,}875$. Generaattorin ja muuntajan hyötysuhde on $140/150 = 0{,}933$. Koko ketjun hyötysuhde on $0{,}875 \cdot 0{,}4286 \cdot 0{,}933 = 0{,}350 = 140/400$. Se täsmää.

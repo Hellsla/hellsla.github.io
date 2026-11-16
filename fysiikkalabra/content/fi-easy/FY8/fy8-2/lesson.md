@@ -251,7 +251,14 @@ Neonvalomainoksen spektrissä on voimakas punaoranssi viiva aallonpituudella $64
 
 <!-- vaihe -->
 
-**Sijoitus.** Lasketaan ensin tulo $hc = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s} = 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}$. Sitten lasketaan energiaero:
+**Sijoitus.** Lasketaan ensin tulo $$
+\begin{aligned}
+&hc \\
+&= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2{,}998 \cdot 10^{8}\,\text{m/s} \\
+&= 1{,}9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$. Sitten lasketaan energiaero:
 ```latex
 \begin{aligned}
 \Delta E &= \frac{hc}{\lambda} \\
@@ -308,4 +315,4 @@ Lämmennyt maanpinta säteilee infrapunaa. Hiilidioksidi- ja vesihöyrymolekyyli
 - Kuuma kiinteä kappale antaa jatkuvan spektrin. Kuuma ohut kaasu antaa emissiospektrin, jossa on erillisiä kirkkaita viivoja. Kaasun läpi kulkenut valkoinen valo antaa absorptiospektrin. Sen tummat viivat ovat samoilla aallonpituuksilla kuin osa emissioviivoista.
 - Atomin elektroniverho voi olla vain tietyissä energiatiloissa. Siirtymässä syntyvän tai absorboituvan fotonin energia on tilojen erotus: $hf = E_\text{y} - E_\text{a}$ ja $\lambda = \tfrac{hc}{E_\text{y} - E_\text{a}}$.
 - Jokaisella alkuaineella on omat viivansa. Spektristä voi siis tunnistaa, mitä alkuaineita on valonlähteessä tai valon matkalla olevassa kaasussa.
-- Fluoresenssissa aine absorboi lyhytaaltoista valoa ja lähettää pidempiaaltoista valoa, koska osa energiasta muuttuu lämmöksi.
+- Fluoresenssissa aine absorboi lyhytaaltoista valoa ja lähettää pidempiaaltoista valoa, koska osa energiasta muuttuu sisäenergiaksi.

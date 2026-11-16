@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4af3dd4a3bd89dae
-SCOPE: delta added-exercise from 3b30a01720987360 base 8f23aa7ae3bd
+CONTENT-HASH: 99ab280aa2e4e2d7
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-14-L2-09 Järkevyys — "oikosulkuvirran ja tyhjäkäyntijännitteen tulo" is difficult for an S2 student and the words are not explained in the task; say "virran suurimman arvon ($200\,\text{mA}$) ja suurimman jännitteen ($6{,}0\,\text{V}$) tulo".
-- [Minor] fy6-14-L2-09 Kuvaajan lukeminen — "Mennään … ylös" is a passive instruction; "Mene vaaka-akselin kohdasta … ylös käyrälle" matches the other solutions' voice.
+- none
 
 ## Checked
-- fy6-14-open-exercises-L2-1280-9.png (task 14-17 and the start of its figure), -10 (rest of ex-kenno: $I\ (\text{mA})$ and $U\ (\text{V})$ axes, $1\,\text{V}$ and $50\,\text{mA}$ gridlines, curve ends at $6\,\text{V}$; solution rows, Vastaus, Järkevyys), -11.
-- Figure and description agree, give the values needed, mark no point and give no power. Nothing clipped.
+- All 1 proof sheet(s) of fi-easy-fy6-14-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

@@ -169,7 +169,7 @@
       "unit": "kg",
       "tolerance": 0.04,
       "data": {
-        "caption": "Acceleration of the cart with different pulling forces (example data)",
+        "caption": "Acceleration of the cart with different pulling forces",
         "columns": [
           "$F\\,(\\text{N})$",
           "$a\\,(\\text{m/s}^2)$"
@@ -211,7 +211,7 @@
       "unit": "N",
       "tolerance": 0.04,
       "data": {
-        "caption": "Acceleration of the cart with different masses (example data)",
+        "caption": "Acceleration of the cart with different masses",
         "columns": [
           "$m\\,(\\text{kg})$",
           "$a\\,(\\text{m/s}^2)$"
@@ -246,7 +246,7 @@
       "kind": [
         "error"
       ],
-      "text": "A crane lowers a concrete element of mass $820\\,\\text{kg}$ onto a quay. The element moves downward and slows down uniformly, and the magnitude of its acceleration is $1.20\\,\\text{m/s}^2$. Air resistance is ignored.\n\nA student calculated the tension in the rope like this: “The element moves downward, so the acceleration points down. Thus $mg - T = ma$, from which $T = m(g - a) = 820\\,\\text{kg}\\cdot(9.81\\,\\text{m/s}^2 - 1.20\\,\\text{m/s}^2) = 7.06\\,\\text{kN}$.”\n\nWhat is the error in the student's solution? Calculate the correct tension in the rope. Enter the magnitude of the tension in the rope in the answer box.",
+      "text": "A crane lowers a concrete element of mass $820\\,\\text{kg}$ onto a quay. The element moves downward and slows down uniformly, and the magnitude of its acceleration is $1.20\\,\\text{m/s}^2$. Air resistance is ignored.\n\nA student calculated the tension in the rope like this: “The element moves downward, so the acceleration points down. Thus $mg - T = ma$, from which $$\\begin{aligned} &T = m(g - a) \\\\ &= 820\\,\\text{kg}\\cdot(9.81\\,\\text{m/s}^2 \\\\ &- 1.20\\,\\text{m/s}^2) \\\\ &= 7.06\\,\\text{kN} \\end{aligned}$$.”\n\nWhat is the error in the student's solution? Calculate the correct tension in the rope. Enter the magnitude of the tension in the rope in the answer box.",
       "answer": 9028.2,
       "unit": "N",
       "tolerance": 0.02,
@@ -338,7 +338,7 @@
       "unit": "N",
       "tolerance": 0.05,
       "data": {
-        "caption": "Acceleration of the cart with different pulling forces (example data)",
+        "caption": "Acceleration of the cart with different pulling forces",
         "columns": [
           "$F\\,(\\text{N})$",
           "$a\\,(\\text{m/s}^2)$"
@@ -381,7 +381,7 @@
       "tolerance": 0.02,
       "fbd": "equations",
       "data": {
-        "caption": "Acceleration of the elevator in phases 1 and 2 (example data)",
+        "caption": "Acceleration of the elevator in phases 1 and 2",
         "columns": [
           "Phase",
           "$t_{\\text{start}}\\,(\\text{s})$",

@@ -206,7 +206,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Päästöt sektoreittain (esimerkkiaineisto)",
+        "caption": "Päästöt sektoreittain",
         "columns": [
           "Sektori",
           "$m_{2010}\\,(\\text{Mt})$",
@@ -283,7 +283,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Esimerkkivoimalan tuotanto ja päästö (esimerkkiaineisto)",
+        "caption": "Esimerkkivoimalan tuotanto ja päästö",
         "columns": [
           "$t\\,(\\text{a})$",
           "$E\\,(\\text{GWh})$",
@@ -349,6 +349,184 @@
       "answer": 6.6,
       "unit": "t",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy2-8-L2-10",
+      "level": 2,
+      "text": "Tarkastellaan, kuinka vähäpäästöistä eri maiden sähkö on. Sivun <a href=\"https://ourworldindata.org/grapher/electricity-mix?metric=carbon_intensity\" target=\"_blank\" rel=\"noopener\">Our World in Data: Electricity Mix</a> (luettu 16. marraskuuta 2026) kaavio esittää sähköntuotannon elinkaaren aikaisen päästökertoimen $e$ (sivulla ”lifecycle carbon intensity”, lähteenä Ember) ja tuotantomuotojen osuudet. Sivu <a href=\"https://www.fingrid.fi/sahkomarkkinat/sahkojarjestelman-tila/\" target=\"_blank\" rel=\"noopener\">Fingrid: Sähköjärjestelmän tila</a> (luettu 16. marraskuuta 2026) näyttää Suomen sähköjärjestelmän tilan reaaliajassa. Taulukossa ovat sivuilta luetut arvot, joten tehtävä toimii, vaikka sivujen tiedot ovat myöhemmin muuttuneet. Sivujen nykyistä näkymää voi verrata taulukkoon, mutta yksikään vastaus ei riipu siitä.\n\na) Vertaa Suomen, Ruotsin ja Puolan sähköntuotantoa vuonna $2025$. Mitkä kaksi tuotantomuotoa tuottavat kussakin maassa suurimmat osuudet?\n\nb) Laske suurimman ja pienimmän päästökertoimen $e$ suhde. Montako kertaa suurempi suurin arvo on?\n\nc) Sähkölaite kuluttaa $5{,}0\\,\\text{kWh}$ sähköenergiaa. Laske laitteen kulutusta vastaava laskennallinen päästö kussakin kolmessa maassa maan päästökertoimella. Anna vastaus kilogrammoina.\n\nd) Fingridin sivun mukaan 16. marraskuuta 2026 klo 10:48 tuotetun sähkön päästöarvio oli $16\\,\\text{g/kWh}$ ja kulutetun $15\\,\\text{g/kWh}$. Selitä, miksi tuotetun ja kulutetun sähkön arviot voivat erota ja miksi Fingridin luku poikkeaa niin paljon OWIDin Suomen vuoden $2025$ luvusta $57{,}47\\,\\text{g/kWh}$. Käytä apuna taulukon tuonti-, tuotanto-, kulutus- ja tuulivoimalukemia.\n\ne) Arvioi väitettä: ”Päästökertoimen perusteella voi suoraan päätellä, minkä maan sähköntuotanto on ympäristöystävällisintä.”\n\nVastauskenttään tulee kohdan c) Puolan sähkön päästö kilogrammoina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 2.9,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Sähköntuotannon elinkaaren aikainen päästökerroin ja tuotannon osuudet vuonna 2025 (Our World in Data / Ember) sekä Suomen sähköjärjestelmän tila 16. marraskuuta 2026 klo 10:48 (Fingrid), luettu 16. marraskuuta 2026",
+        "columns": [
+          "Suure",
+          "Suomi",
+          "Ruotsi",
+          "Puola"
+        ],
+        "rows": [
+          [
+            "$e\\,(\\text{g/kWh})$, OWID",
+            "57.47",
+            "35.26",
+            "588.6"
+          ],
+          [
+            "Hiili $(\\%)$",
+            "0.2",
+            "0",
+            "50.4"
+          ],
+          [
+            "Maakaasu $(\\%)$",
+            "1.2",
+            "0.1",
+            "14.3"
+          ],
+          [
+            "Öljy $(\\%)$",
+            "2.3",
+            "1.2",
+            "3.8"
+          ],
+          [
+            "Ydinvoima $(\\%)$",
+            "39.9",
+            "27.6",
+            "0"
+          ],
+          [
+            "Vesivoima $(\\%)$",
+            "15.1",
+            "40.0",
+            "1.0"
+          ],
+          [
+            "Tuulivoima $(\\%)$",
+            "27.4",
+            "22.8",
+            "14.2"
+          ],
+          [
+            "Aurinkovoima $(\\%)$",
+            "1.2",
+            "2.6",
+            "11.3"
+          ],
+          [
+            "Bio $(\\%)$",
+            "12.6",
+            "5.8",
+            "4.9"
+          ],
+          [
+            "Tuotettu, päästöarvio $(\\text{g/kWh})$, Fingrid",
+            "16",
+            "–",
+            "–"
+          ],
+          [
+            "Kulutettu, päästöarvio $(\\text{g/kWh})$, Fingrid",
+            "15",
+            "–",
+            "–"
+          ],
+          [
+            "Tuonti − / vienti + $(\\text{MW})$, Fingrid",
+            "−210",
+            "–",
+            "–"
+          ],
+          [
+            "Tuotanto $(\\text{MW})$, Fingrid",
+            "11 341",
+            "–",
+            "–"
+          ],
+          [
+            "Kulutus $(\\text{MW})$, Fingrid",
+            "11 603",
+            "–",
+            "–"
+          ],
+          [
+            "Tuulivoima $(\\text{MW})$, Fingrid",
+            "5571",
+            "–",
+            "–"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-8-L2-11",
+      "level": 2,
+      "text": "Tuulivoimalla tuotetun sähkön määrä vaihtelee sään mukaan. Sivu <a href=\"https://www.fingrid.fi/sahkomarkkinat/sahkojarjestelman-tila/\" target=\"_blank\" rel=\"noopener\">Fingrid: Sähköjärjestelmän tila</a> (luettu 16. marraskuuta 2026) näyttää Suomen sähköntuotannon, kulutuksen ja kulutetun sähkön hiilidioksidipäästön arvion yksikössä $\\text{g/kWh}$. Taulukossa ovat sivun ”Tänään”-näkymän tasatuntien lukemat 16. marraskuuta 2026 (Suomen aikaa). Sivu ilmoittaa arvion perustuvan tuotantomuotokohtaisiin päästökertoimiin. Sivun nykyistä näkymää voi verrata taulukkoon, mutta yksikään vastaus ei riipu siitä.\n\na) Laske tuulivoiman osuus Suomen sähköntuotannosta jokaisena kolmena ajankohtana. Vertaa osuuksia kulutetun sähkön päästöarvioon $e$.\n\nb) Laske $10\\,\\text{kWh}$:n sähkönkulutuksen laskennallinen päästö jokaisena ajankohtana. Anna vastaus grammoina.\n\nc) Laske, kuinka paljon tuulivoiman teho muuttui jaksoilla 01:00–08:00 ja 08:00–10:00 ja kuinka paljon $e$ muuttui kummallakin jaksolla tuulivoiman tehon $1000\\,\\text{MW}$:n muutosta kohti. Selitä, miksi tuulivoiman väheneminen ei nostanut $e$:tä kummallakin jaksolla yhtä paljon.\n\nd) Arvioi, mitä hyötyjä ja rajoituksia on sähköauton lataamisessa silloin, kun $e$ on pieni. Laske apuna, kuinka paljon pienempi $10\\,\\text{kWh}$:n päästö on klo 01:00 kuin klo 10:00.\n\nVastauskenttään tulee kohdan b) päästö klo 10:00 grammoina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 150,
+      "unit": "g",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Suomen sähköjärjestelmä tasatunteina 16. marraskuuta 2026 (Fingrid, Sähköjärjestelmän tila, näkymä Tänään), luettu 16. marraskuuta 2026",
+        "columns": [
+          "Suure",
+          "klo 01:00",
+          "klo 08:00",
+          "klo 10:00"
+        ],
+        "rows": [
+          [
+            "Tuulivoima $(\\text{MW})$",
+            "7639",
+            "6716",
+            "5885"
+          ],
+          [
+            "Vesivoima $(\\text{MW})$",
+            "1520",
+            "1920",
+            "1780"
+          ],
+          [
+            "Ydinvoima $(\\text{MW})$",
+            "noin 2590",
+            "noin 2590",
+            "noin 2590"
+          ],
+          [
+            "Tuotanto $(\\text{MW})$",
+            "12 791",
+            "12 570",
+            "11 610"
+          ],
+          [
+            "Kulutus $(\\text{MW})$",
+            "10 647",
+            "11 406",
+            "11 737"
+          ],
+          [
+            "Vienti + / tuonti − $(\\text{MW})$",
+            "+2142",
+            "+1124",
+            "−152"
+          ],
+          [
+            "Kulutetun sähkön päästöarvio $e\\,(\\text{g/kWh})$",
+            "9.8",
+            "13.7",
+            "15.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -427,7 +605,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Esimerkkikaupungin sähköntuotanto (esimerkkiaineisto)",
+        "caption": "Esimerkkikaupungin sähköntuotanto",
         "columns": [
           "Tuotantotapa",
           "$E\\,(\\text{GWh})$"
@@ -448,6 +626,72 @@
           [
             "Tuulivoima",
             "10"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-8-L3-06",
+      "level": 3,
+      "text": "Sähköntuotannon elinkaaren aikainen päästökerroin $e$ kertoo, kuinka paljon hiilidioksidiekvivalenttia syntyy tuotettua kilowattituntia kohti, kun mukaan lasketaan myös polttoaineketju ja voimaloiden rakentaminen. Sivu <a href=\"https://ourworldindata.org/grapher/electricity-mix?metric=carbon_intensity\" target=\"_blank\" rel=\"noopener\">Our World in Data: Electricity Mix</a> (luettu 16. marraskuuta 2026) näyttää arvon eri maille vuosina $1990$–$2025$ (lähde Ember). Taulukossa ovat sivulta luetut arvot kolmelle Euroopan maalle vuosille $2000$ ja $2025$ sekä kolmen tuotantomuodon osuus sähköstä. Kaasu, öljy, vesi, aurinko ja bio on jätetty pois, joten osuudet eivät summaudu sataan prosenttiin. Sivun nykyistä näkymää voi verrata taulukkoon ja valita muita maita, mutta yksikään vastaus ei riipu siitä.\n\na) Laske kunkin maan päästökertoimen muutos $\\Delta e$ vuodesta $2000$ vuoteen $2025$ yksikössä $\\text{g/kWh}$. Missä maassa muutos oli absoluuttisesti suurin?\n\nb) Laske kunkin maan päästökertoimen suhteellinen muutos prosentteina. Missä maassa suhteellinen muutos on suurin?\n\nc) Selitä taulukon tuotantoosuuksien avulla, miksi maiden päästökertoimet ja niiden muutokset eroavat toisistaan. Miksi Puolan päästökerroin on edelleen selvästi suurin?\n\nd) Selvitä, mitä elinkaaren aikaisilla päästöillä tarkoitetaan. Arvioi, miksi sähköntuotantomuotojen vertailu vain voimalaitoksella syntyvien päästöjen perusteella voi olla harhaanjohtavaa.\n\ne) Arvioi väitettä: ”Taulukon mukaan päästökerroin on pienentynyt Suomessa, Puolassa ja Tanskassa tasaisesti joka vuosi vuodesta $2000$ vuoteen $2025$.”\n\nVastauskenttään tulee kohdan b) Suomen suhteellinen muutos prosentteina (pieneneminen negatiivisena).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": -77,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Sähköntuotannon elinkaaren aikainen päästökerroin ja kolmen tuotantomuodon osuus (Our World in Data / Ember), luettu 16. marraskuuta 2026",
+        "columns": [
+          "Maa ja vuosi",
+          "$e\\,(\\text{g/kWh})$",
+          "Hiili $(\\%)$",
+          "Ydin $(\\%)$",
+          "Tuuli $(\\%)$"
+        ],
+        "rows": [
+          [
+            "Suomi 2000",
+            "246.82",
+            "12.1",
+            "32.1",
+            "0.1"
+          ],
+          [
+            "Suomi 2025",
+            "57.47",
+            "0.2",
+            "39.9",
+            "27.4"
+          ],
+          [
+            "Puola 2000",
+            "954.6",
+            "94.9",
+            "0",
+            "0"
+          ],
+          [
+            "Puola 2025",
+            "588.6",
+            "50.4",
+            "0",
+            "14.2"
+          ],
+          [
+            "Tanska 2000",
+            "627.89",
+            "46.5",
+            "0",
+            "11.8"
+          ],
+          [
+            "Tanska 2025",
+            "114.41",
+            "2.7",
+            "0",
+            "57.7"
           ]
         ]
       }

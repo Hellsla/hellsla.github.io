@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 68489463e63623ab
+CONTENT-HASH: f734cab4b65864ae
 
 ## Blocking
-
+(none)
 
 ## Polish
-- [Minor] fy3-10-L2-09 Järkevyys/Reasonableness — refers to "the task where the difference is calculated in moles", but no such task is in the set, so the reference is unclear — drop the clause or say the amounts follow from n = pV/(RT) with the values read at 400 K.
-- [Minor] fy3-10-L2-09 graph pt-suorat — the solution says the lines go through the origin, but the drawn lines start at 100 K; a faint dashed extension to the origin would show it.
+(none)
 
 ## Checked
-- Round 2, delta. Opened fy3-10-open-exercises-L2-1280-12 and -13 (12-18 task, ratio-of-slopes graph, whole solution) in this language. Graph: axes with units, A and B by colour and letter, marked points at 200 K and 400 K, readable; answer not given away. Typography: aligned rows, stacked fractions, answer box fine; unit now 'kertaa/times'.
-- Hash at start and end the same.
+- Round 1, delta. Captured at 390 and 1280 px every re-set formula of the set (paragraphs with an aligned display, 15 blocks per width, in contact sheets) and read them: no clipping, equals signs in one column, continuation rows begin with an operator, no number or unit broken, the punctuation after a display stays on the last row, wide screens join rows that fit.
+- Captures made with a script from the current preview build (the stored shots hold no 390 px solutions); the stored 1280 px captures were not needed beyond fy3-9.
+- Hash same at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 477077b5183102c2
+CONTENT-HASH: f18a34ab2b1a31dd
 
 ## Blocking
-- (none)
+- none
 
 ## Polish
-- [Minor] fy6-8 alt — pöytä on harmaa, puunsyykuvioinen (laminaatti), ei selvästi puuta — "harmaalla puunsyykuvioisella pöydällä".
+- none
 
 ## Checked
-batch delta review: photo file(s) opened and compared with alt text; rendered fy6-8 at 1280 px (float right, 320 px wide, no clipping, beside its paragraph) and 390 px (full-width block, no horizontal overflow); caption physics, Finnish and LaTeX units read; changed typography checked in the capture.
+- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-8-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
+
+## Scores
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

@@ -36,7 +36,7 @@
 **Conversions:** The given values are in SI units, and $\text{V}\cdot\text{s} = \text{Wb}$. The answer is converted to milliwebers: $1\,\text{Wb} = 1000\,\text{mWb}$.
 **Substitution:** $\Delta\Phi = \dfrac{0.45\,\text{V} \cdot 0.12\,\text{s}}{150} = \dfrac{0.054\,\text{V}\cdot\text{s}}{150} = 3.6 \cdot 10^{-4}\,\text{Wb} = 0.36\,\text{mWb}$
 **Answer:** $0.36\,\text{mWb}$, two significant figures like the voltage and the time.
-**Reasonableness:** Check: $150 \cdot 3.6 \cdot 10^{-4}\,\text{Wb} : 0.12\,\text{s} = 0.45\,\text{V}$. If the area of the coil is about $10\,\text{cm}^2$, the flux corresponds to a field of about $0.4\,\text{T}$ inside the coil, which suits a strong permanent magnet.
+**Reasonableness:** Check: $$\begin{aligned} &150 \cdot 3.6 \cdot 10^{-4}\,\text{Wb} : 0.12\,\text{s} \\ &= 0.45\,\text{V} \end{aligned}$$. If the area of the coil is about $10\,\text{cm}^2$, the flux corresponds to a field of about $0.4\,\text{T}$ inside the coil, which suits a strong permanent magnet.
 
 ## fy7-5-L1-05
 **Given:** induced voltage $e = 12\,\text{mV}$, length of the rod in the field $l = 0.30\,\text{m}$, magnetic flux density $B = 0.080\,\text{T}$, velocity perpendicular to the rod and the field
@@ -67,7 +67,7 @@
 **Conversions:** $\Delta\Phi = 4.0\,\text{mWb} = 4.0 \cdot 10^{-3}\,\text{Wb}$
 **Substitution:** $|e| = 50 \cdot \dfrac{4.0 \cdot 10^{-3}\,\text{Wb}}{0.10\,\text{s}} = 50 \cdot 0.040\,\text{V} = 2.0\,\text{V}$
 **Answer:** $2.0\,\text{V}$, two significant figures like the flux $4.0\,\text{mWb}$ read from the graph.
-**Reasonableness:** In the rising part the voltage is $50 \cdot 4.0 \cdot 10^{-3}\,\text{Wb} : 0.20\,\text{s} = 1.0\,\text{V}$, half of the greatest, because the same change in flux takes twice as long. In the falling part the sign of the voltage is opposite to that in the rising part, because the flux decreases.
+**Reasonableness:** In the rising part the voltage is $$\begin{aligned} &50 \cdot 4.0 \cdot 10^{-3}\,\text{Wb} : 0.20\,\text{s} \\ &= 1.0\,\text{V} \end{aligned}$$, half of the greatest, because the same change in flux takes twice as long. In the falling part the sign of the voltage is opposite to that in the rising part, because the flux decreases.
 
 ## fy7-5-L2-03
 **Given:** distance between the rails, that is, the length of the rod in the field, $l = 0.40\,\text{m}$, speed $v = 3.0\,\text{m/s}$, magnetic flux density $B = 0.50\,\text{T}$, resistance $R = 2.0\,\Omega$; the resistance of the rails and the rod is very small
@@ -87,7 +87,12 @@
 **Conversions:** $l = 5.0\,\text{cm} = 5.0 \cdot 0.01\,\text{m} = 0.050\,\text{m}$
 **Substitution:** $|e| = 20 \cdot 0.30\,\text{T} \cdot 0.050\,\text{m} \cdot 0.25\,\text{m/s} = 0.075\,\text{V} = 75\,\text{mV}$
 **Answer:** $75\,\text{mV}$, two significant figures like the given values.
-**Reasonableness:** Check using the whole entry: the flux grows from zero to $BA = 0.30\,\text{T} \cdot (0.050\,\text{m})^2 = 7.5 \cdot 10^{-4}\,\text{Wb}$ in the time $0.050\,\text{m} : 0.25\,\text{m/s} = 0.20\,\text{s}$, so $|e| = 20 \cdot 7.5 \cdot 10^{-4}\,\text{Wb} : 0.20\,\text{s} = 0.075\,\text{V}$.
+**Reasonableness:** Check using the whole entry: the flux grows from zero to $BA = 0.30\,\text{T} \cdot (0.050\,\text{m})^2 = 7.5 \cdot 10^{-4}\,\text{Wb}$ in the time $$
+\begin{aligned}
+&0.050\,\text{m} : 0.25\,\text{m/s} \\
+&= 0.20\,\text{s}
+\end{aligned}
+$$, so $|e| = 20 \cdot 7.5 \cdot 10^{-4}\,\text{Wb} : 0.20\,\text{s} = 0.075\,\text{V}$.
 
 ## fy7-5-L3-01
 **Given:** speed of the train $v = 200\,\text{km/h}$, length of the axle from rail to rail $l = 1524\,\text{mm}$, vertical component of the Earth's magnetic field $B_\text{v} = 50\,\mu\text{T}$
@@ -95,7 +100,14 @@
 **Principle:** The axle is a metal rod that moves horizontally, perpendicular to itself. The magnetic force on the electrons is perpendicular to the velocity and the field; a component along the axle arises only from the vertical component of the field, because the horizontal component is either parallel to the velocity or gives a vertical force. The voltage is therefore given by $e = vB_\text{v}l$.
 **Formula:** $e = vB_\text{v}l$
 **Conversions:** $v = 200\,\text{km/h} = 200 \cdot \dfrac{1000\,\text{m}}{3600\,\text{s}} = 55.56\,\text{m/s}$, $l = 1524\,\text{mm} = 1524 \cdot 0.001\,\text{m} = 1.524\,\text{m}$ and $B_\text{v} = 50\,\mu\text{T} = 50 \cdot 10^{-6}\,\text{T}$
-**Substitution:** $e = 55.56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \cdot 1.524\,\text{m} = 4.233 \cdot 10^{-3}\,\text{V} = 4.2\,\text{mV}$
+**Substitution:** $$
+\begin{aligned}
+e &= 55.56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \\
+&\cdot 1.524\,\text{m} \\
+&= 4.233 \cdot 10^{-3}\,\text{V} \\
+&= 4.2\,\text{mV}
+\end{aligned}
+$$
 **Answer:** $4.2\,\text{mV}$, two significant figures like the field $50\,\mu\text{T}$.
 **Reasonableness:** The Earth's field is about one ten-thousandth of the field of a laboratory magnet, so despite the high speed the voltage stays in the millivolt range. At a cyclist's speed of $20\,\text{km/h}$ the voltage would be a tenth of this, about $0.4\,\text{mV}$.
 
@@ -117,7 +129,7 @@
 **Conversions:** $\Delta t = 40\,\text{ms} = 40 \cdot 0.001\,\text{s} = 0.040\,\text{s}$; the answer is converted to milliwebers: $1\,\text{Wb} = 1000\,\text{mWb}$
 **Substitution:** $\Phi = \dfrac{0.90\,\text{V} \cdot 0.040\,\text{s}}{2 \cdot 300} = \dfrac{0.036\,\text{V}\cdot\text{s}}{600} = 6.0 \cdot 10^{-5}\,\text{Wb} = 0.060\,\text{mWb}$
 **Answer:** $0.060\,\text{mWb}$, two significant figures like the peak value $0.90\,\text{V}$ and the duration $40\,\text{ms}$.
-**Reasonableness:** If the cross-sectional area of the coil is about $2\,\text{cm}^2 = 2 \cdot 10^{-4}\,\text{m}^2$, the average field through a turn is $6.0 \cdot 10^{-5}\,\text{Wb} : 2 \cdot 10^{-4}\,\text{m}^2 = 0.3\,\text{T}$, which suits a small strong magnet. When the magnet leaves the coil, a pulse of opposite sign appears, with an equal area.
+**Reasonableness:** If the cross-sectional area of the coil is about $2\,\text{cm}^2 = 2 \cdot 10^{-4}\,\text{m}^2$, the average field through a turn is $$\begin{aligned} &6.0 \cdot 10^{-5}\,\text{Wb} : 2 \cdot 10^{-4}\,\text{m}^2 \\ &= 0.3\,\text{T} \end{aligned}$$, which suits a small strong magnet. When the magnet leaves the coil, a pulse of opposite sign appears, with an equal area.
 
 ## fy7-5-L1-06
 **Find:** why no induced voltage appears between a magnet at rest and a coil even though the flux is large
@@ -164,7 +176,7 @@
 **Conversions:** $k = 30\,\tfrac{\text{mV}}{\text{m/s}} = 30 \cdot 0.001\,\tfrac{\text{V}}{\text{m/s}} = 0.030\,\tfrac{\text{V}}{\text{m/s}}$
 **Substitution:** $B = \dfrac{0.030\,\text{V}\cdot\text{s/m}}{0.20\,\text{m}} = 0.15\,\text{T}$
 **Answer:** $0.15\,\text{T}$, two significant figures like the length $0.20\,\text{m}$ and the slope.
-**Reasonableness:** Check: $0.40\,\text{m/s} \cdot 0.15\,\text{T} \cdot 0.20\,\text{m} = 12\,\text{mV}$, which matches the value $11.9\,\text{mV}$ of the table. A calculation based on a single point would be less certain than fitting a line, because the error of a single point would affect the result directly.
+**Reasonableness:** Check: $$\begin{aligned} &0.40\,\text{m/s} \cdot 0.15\,\text{T} \cdot 0.20\,\text{m} \\ &= 12\,\text{mV} \end{aligned}$$, which matches the value $11.9\,\text{mV}$ of the table. A calculation based on a single point would be less certain than fitting a line, because the error of a single point would affect the result directly.
 
 ## fy7-5-L2-07
 **Find:** what is wrong in the student's calculation
@@ -186,7 +198,7 @@
 **Given:** number of turns $N = 250$; from the table $e(t)$ at the moments $0$–$48\,\text{ms}$ at intervals of $4\,\text{ms}$ (sample data); before the drop and after it the flux is zero; the voltage is zero at about the moment $24\,\text{ms}$, when the magnet is in the middle of the coil
 **Find:** a) the greatest magnetic flux $\Phi$ through one turn in milliwebers; b) the same from the second pulse and an explanation of the differences between the pulses
 **Principle:** It follows from the law of induction that the product $e\,\Delta t$ over a short interval is $-N\Delta\Phi$. When these products are added up over the whole pulse, the sum is the area between the voltage graph $(t, e)$ and the time axis, and it is $N$ times the total change in flux. During the first pulse the flux grows from zero to its greatest value, and at the end of the pulse the voltage is zero, because the flux no longer changes.
-**Reading the graph:** The area is estimated with the trapezoid rule: the area of each $4\,\text{ms}$ interval is the average of the voltages at the ends of the interval times $0.004\,\text{s}$. The voltages of the first pulse are $-0.02$, $0.09$, $0.63$, $1.77$, $1.77$, $0.60$ and $0.03\,\text{V}$. The sum gives the absolute value of the area $|A_\text{a}| = 0.004\,\text{s} \cdot (\tfrac{1}{2}(-0.02) + 0.09 + 0.63 + 1.77 + 1.77 + 0.60 + \tfrac{1}{2}\cdot 0.03)\,\text{V} = 0.004\,\text{s} \cdot 4.865\,\text{V} = 0.01946\,\text{V}\cdot\text{s}$.
+**Reading the graph:** The area is estimated with the trapezoid rule: the area of each $4\,\text{ms}$ interval is the average of the voltages at the ends of the interval times $0.004\,\text{s}$. The voltages of the first pulse are $-0.02$, $0.09$, $0.63$, $1.77$, $1.77$, $0.60$ and $0.03\,\text{V}$. The sum gives the absolute value of the area $$\begin{aligned} |A_\text{a}| &= 0.004\,\text{s} \cdot (\tfrac{1}{2}(-0.02) \\ &+ 0.09 + 0.63 + 1.77 + 1.77 \\ &+ 0.60 + \tfrac{1}{2}\cdot 0.03)\,\text{V} \\ &= 0.004\,\text{s} \cdot 4.865\,\text{V} \\ &= 0.01946\,\text{V}\cdot\text{s} \end{aligned}$$.
 **Formula:** $|A_\text{a}| = N\Phi$, so $\Phi = \dfrac{|A_\text{a}|}{N}$
 **Conversions:** $1\,\text{ms} = 0.001\,\text{s}$; the answer is converted to milliwebers: $1\,\text{Wb} = 1000\,\text{mWb}$; $\text{V}\cdot\text{s} = \text{Wb}$.
 **Substitution:** a) $\Phi = \dfrac{0.01946\,\text{V}\cdot\text{s}}{250} = 7.78 \cdot 10^{-5}\,\text{Wb} = 0.0778\,\text{mWb}$. b) Calculated in the same way, the area of the second pulse ($24$–$48\,\text{ms}$) is $-0.01968\,\text{V}\cdot\text{s}$, so $\Phi = 0.01968\,\text{V}\cdot\text{s} : 250 = 0.0787\,\text{mWb}$.
@@ -239,4 +251,9 @@ If the number of turns is forgotten, the voltages of situations A and B come out
 **Conversions:** $|\Delta\Phi| = 8.0\,\text{mWb} = 8.0 \cdot 10^{-3}\,\text{Wb}$
 **Substitution:** $|e_\text{ka}| = 200 \cdot \dfrac{8.0 \cdot 10^{-3}\,\text{Wb}}{0.40\,\text{s}} = 200 \cdot 0.020\,\text{V} = 4.0\,\text{V}$
 **Answer:** $4.0\,\text{V}$, two significant figures like the fluxes $5.0\,\text{mWb}$ and $-3.0\,\text{mWb}$ read from the graph.
-**Reasonableness:** Using only the final value $3.0\,\text{mWb}$ would give $200 \cdot 3.0 \cdot 10^{-3}\,\text{Wb} : 0.40\,\text{s} = 1.5\,\text{V}$, which is too small: the flux changes through zero, so the change is larger than either value alone. The slope of the graph, $-8.0\,\text{mWb} : 0.40\,\text{s} = -20\,\tfrac{\text{mWb}}{\text{s}}$, gives the same result: $200 \cdot 0.020\,\text{V} = 4.0\,\text{V}$.
+**Reasonableness:** Using only the final value $3.0\,\text{mWb}$ would give $$\begin{aligned} &200 \cdot 3.0 \cdot 10^{-3}\,\text{Wb} : 0.40\,\text{s} \\ &= 1.5\,\text{V} \end{aligned}$$, which is too small: the flux changes through zero, so the change is larger than either value alone. The slope of the graph, $$
+\begin{aligned}
+&-8.0\,\text{mWb} : 0.40\,\text{s} \\
+&= -20\,\tfrac{\text{mWb}}{\text{s}}
+\end{aligned}
+$$, gives the same result: $200 \cdot 0.020\,\text{V} = 4.0\,\text{V}$.

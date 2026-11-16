@@ -128,10 +128,10 @@
       "id": "fy3-16-L2-01",
       "level": 2,
       "core": true,
-      "text": "Kylmälaukun seinien yhteispinta-ala on $0{,}50\\,\\text{m}^2$ ja U-arvo $2{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. Ulkona on $25\\,{}^\\circ\\text{C}$, ja jääpussin lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa niin kauan kuin jäätä on. Kuinka suuri jääpussin massan pitää olla, jotta jäätä riittää 6,0 tunniksi? Oleta, että laukussa on vain jäätä.",
-      "answer": 1.6,
+      "text": "Kylmälaukun seinien yhteispinta-ala on $0{,}50\\,\\text{m}^2$ ja U-arvo $2{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. Ulkona on $25\\,{}^\\circ\\text{C}$, ja jääpussin lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa niin kauan kuin jäätä on. Kuinka suuri jääpussin massan pitää olla, jotta jäätä riittää 6,0 tunniksi? Oleta, että laukussa on vain jäätä. Pyöristä vastaus ylöspäin, jotta jää varmasti riittää.",
+      "answer": 1.7,
       "unit": "kg",
-      "tolerance": 0.02
+      "tolerance": 0.07
     },
     {
       "id": "fy3-16-L2-02",
@@ -169,7 +169,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kiuaskivien lämpötila lämmityksen aikana (esimerkkiaineisto)",
+        "caption": "Kiuaskivien lämpötila lämmityksen aikana",
         "columns": [
           "$t\\,(\\text{min})$",
           "$T\\,({}^\\circ\\text{C})$"
@@ -207,7 +207,7 @@
       "unit": "W/K",
       "tolerance": 0.05,
       "data": {
-        "caption": "Lämmitysenergia kuukaudessa (esimerkkiaineisto)",
+        "caption": "Lämmitysenergia kuukaudessa",
         "columns": [
           "$T_\\text{ulko}\\,({}^\\circ\\text{C})$",
           "$E\\,(\\text{kWh})$"
@@ -235,7 +235,7 @@
     {
       "id": "fy3-16-L2-07",
       "level": 2,
-      "text": "Oppilas laskee, kuinka kauan $0{,}80\\,\\text{kg}$ jäätä riittää kylmälaukussa. Laukun seinien yhteispinta-ala on $0{,}70\\,\\text{m}^2$ ja U-arvo $1{,}4\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$, jää on $0\\,{}^\\circ\\text{C}$:ssa ja ulkona on $26\\,{}^\\circ\\text{C}$. Laukussa on vain jäätä, ja jään sulamislämpö on $s = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}}$. Oppilaan ratkaisu on tämä:\n\n”Lämpötilat pitää muuttaa kelvineiksi, joten $\\Delta T = 26 + 273 = 299\\,\\text{K}$. Teho on $P = UA\\Delta T = 0{,}98 \\cdot 299\\,\\text{W} \\approx 293\\,\\text{W}$ ja aika $t = \\dfrac{s\\,m}{P} \\approx 910\\,\\text{s} \\approx 0{,}25\\,\\text{h}$.”\n\na) Mikä oppilaan ratkaisussa on virheellistä?\n\nb) Laske jään kestoaika oikein tunteina.\n\nAnna vastauslaatikkoon kohdan b) tulos.",
+      "text": "Oppilas laskee, kuinka kauan $0{,}80\\,\\text{kg}$ jäätä riittää kylmälaukussa. Laukun seinien yhteispinta-ala on $0{,}70\\,\\text{m}^2$ ja U-arvo $1{,}4\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$, jää on $0\\,{}^\\circ\\text{C}$:ssa ja ulkona on $26\\,{}^\\circ\\text{C}$. Laukussa on vain jäätä, ja jään sulamislämpö on $s = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}}$. Oppilaan ratkaisu on tämä:\n\n”Lämpötilat pitää muuttaa kelvineiksi, joten $\\Delta T = 26 + 273 = 299\\,\\text{K}$. Teho on $$\\begin{aligned} P &= UA\\Delta T \\\\ &= 0{,}98 \\cdot 299\\,\\text{W} \\\\ &\\approx 293\\,\\text{W} \\end{aligned}$$ ja aika $t = \\dfrac{s\\,m}{P} \\approx 910\\,\\text{s} \\approx 0{,}25\\,\\text{h}$.”\n\na) Mikä oppilaan ratkaisussa on virheellistä?\n\nb) Laske jään kestoaika oikein tunteina.\n\nAnna vastauslaatikkoon kohdan b) tulos.",
       "kind": [
         "error"
       ],
@@ -313,10 +313,10 @@
     {
       "id": "fy3-16-L3-03",
       "level": 3,
-      "text": "Kylmälaukun seinien yhteispinta-ala on $0{,}50\\,\\text{m}^2$ ja U-arvo $1{,}5\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$.\n\nLaukkuun pakataan $0{,}50\\,\\text{kg}$ juomia, joiden lämpötila on $24\\,{}^\\circ\\text{C}$ ja ominaislämpökapasiteetti veden arvo $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, sekä pakastimesta otettu jääpussi, jonka lämpötila on $-10\\,{}^\\circ\\text{C}$ ($c_\\text{jää} = 2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). Ulkona on $30\\,{}^\\circ\\text{C}$.\n\nJäätä pitää riittää 6,0 tunniksi.\n\nOleta, että juomat jäähtyvät heti $0\\,{}^\\circ\\text{C}$:seen, että jää lämpenee ensin $0\\,{}^\\circ\\text{C}$:seen ja sulaa sitten, ja että seinän läpi tulee sama teho koko ajan kuin sisällä olisi $0\\,{}^\\circ\\text{C}$.\n\nKuinka suuri jääpussin massan vähintään pitää olla? Anna vastaus kilogrammoina.",
-      "answer": 1.5,
+      "text": "Kylmälaukun seinien yhteispinta-ala on $0{,}50\\,\\text{m}^2$ ja U-arvo $1{,}5\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$.\n\nLaukkuun pakataan $0{,}50\\,\\text{kg}$ juomia, joiden lämpötila on $24\\,{}^\\circ\\text{C}$ ja ominaislämpökapasiteetti veden arvo $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, sekä pakastimesta otettu jääpussi, jonka lämpötila on $-10\\,{}^\\circ\\text{C}$ ($c_\\text{jää} = 2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). Ulkona on $30\\,{}^\\circ\\text{C}$.\n\nJäätä pitää riittää 6,0 tunniksi.\n\nOleta, että juomat jäähtyvät heti $0\\,{}^\\circ\\text{C}$:seen, että jää lämpenee ensin $0\\,{}^\\circ\\text{C}$:seen ja sulaa sitten, ja että seinän läpi tulee sama teho koko ajan kuin sisällä olisi $0\\,{}^\\circ\\text{C}$.\n\nKuinka suuri jääpussin massan vähintään pitää olla? Pyöristä vastaus ylöspäin, jotta jää varmasti riittää, ja anna se kilogrammoina.",
+      "answer": 1.6,
       "unit": "kg",
-      "tolerance": 0.02
+      "tolerance": 0.07
     },
     {
       "id": "fy3-16-L3-04",
@@ -331,7 +331,7 @@
       "unit": "€",
       "tolerance": 0.03,
       "data": {
-        "caption": "Kuukauden keskilämpötila ulkona (esimerkkiaineisto)",
+        "caption": "Kuukauden keskilämpötila ulkona",
         "columns": [
           "Kuukausi",
           "$T_\\text{ulko}\\,({}^\\circ\\text{C})$"

@@ -54,7 +54,7 @@
 **Periaate:** Vuo vaihtelee sinimuotoisesti, joten jokaiseen kierrokseen indusoituu sinimuotoinen jännite. Sen huippuarvo on vuon muutosnopeuden huippuarvo $2\pi f \cdot \Phi_0$, kuten generaattorissa. Kierrosten jännitteet summautuvat.
 **Kaava:** $e_0 = N \cdot 2\pi f \cdot \Phi_0$
 **Muunnokset:** $f = 140\,\text{kHz} = 140 \cdot 1000\,\text{Hz} = 1{,}40 \cdot 10^{5}\,\text{Hz}$ ja $\Phi_0 = 0{,}40\,\mu\text{Wb} = 0{,}40 \cdot 10^{-6}\,\text{Wb}$
-**Sijoitus:** $e_0 = 10 \cdot 2\pi \cdot 1{,}40 \cdot 10^{5}\,\text{Hz} \cdot 0{,}40 \cdot 10^{-6}\,\text{Wb} = 3{,}519\,\text{V}$
+**Sijoitus:** $$\begin{aligned} e_0 &= 10 \cdot 2\pi \cdot 1{,}40 \cdot 10^{5}\,\text{Hz} \\ &\cdot 0{,}40 \cdot 10^{-6}\,\text{Wb} \\ &= 3{,}519\,\text{V} \end{aligned}$$
 **Vastaus:** $3{,}5\,\text{V}$, kaksi merkitsevää numeroa kuten vuo $0{,}40\,\mu\text{Wb}$.
 **Järkevyys:** Yksiköt: $\text{Hz} \cdot \text{Wb} = \tfrac{1}{\text{s}} \cdot \text{V}\cdot\text{s} = \text{V}$. Muutaman voltin jännite riittää puhelimen elektroniikalle, joka tasasuuntaa sen eli muuttaa sen tasajännitteeksi akun lataamista varten.
 
@@ -84,7 +84,7 @@
 **Periaate:** Jokaisessa latauksessa alusta ottaa pistorasiasta $E_2 - E_1$ enemmän energiaa kuin johtolaturi. Oletuksen mukaan puhelin ladataan joka päivä samalla tavalla tyhjästä täyteen. Siksi vuoden lisäys on yhden latauksen lisäys kertaa latausten määrä.
 **Kaava:** $\Delta E = 365 \cdot (E_2 - E_1)$
 **Muunnokset:** Lopuksi $1\,\text{kWh} = 1000\,\text{Wh}$.
-**Sijoitus:** $\Delta E = 365 \cdot (21{,}01\,\text{Wh} - 14{,}26\,\text{Wh}) = 365 \cdot 6{,}75\,\text{Wh} = 2463{,}75\,\text{Wh} = 2{,}464\,\text{kWh}$
+**Sijoitus:** $$\begin{aligned} &\Delta E \\ &= 365 \cdot (21{,}01\,\text{Wh} - 14{,}26\,\text{Wh}) \\ &= 365 \cdot 6{,}75\,\text{Wh} \\ &= 2463{,}75\,\text{Wh} \\ &= 2{,}464\,\text{kWh} \end{aligned}$$
 **Vastaus:** $2{,}46\,\text{kWh}$, kolme merkitsevää numeroa kuten erotus $6{,}75\,\text{Wh}$.
 **Järkevyys:** Arvio: noin $7\,\text{Wh}$ päivässä on noin $2{,}5\,\text{kWh}$ vuodessa. Määrä on pieni yhdelle ihmiselle, suunnilleen saman verran kuin $1\,\text{kW}$:n vedenkeitin käyttää kahdessa ja puolessa tunnissa, mutta miljoonien puhelinten yhteinen hukka on suuri.
 
@@ -96,7 +96,7 @@
 **Muunnokset:** Ei tarvita: pituudet ovat kilometreinä ja vaimennukset desibeleinä.
 **Sijoitus:** $l_\text{max} = \dfrac{20\,\text{dB}}{0{,}18\,\text{dB/km}} = 111{,}1\,\text{km}$, joten $\dfrac{L}{l_\text{max}} = \dfrac{1172\,\text{km}}{111{,}1\,\text{km}} = 10{,}55$. Osuuksia tarvitaan siis $k = 11$, ja vahvistimia $11 - 1 = 10$.
 **Vastaus:** vähintään $10$ vahvistinta. Lukumäärä on kokonaisluku, ja se pyöristetään ylöspäin osuuksien määränä, koska $10$ osuutta olisi liian pitkiä.
-**Järkevyys:** Koko kaapelin vaimennus olisi ilman vahvistimia $0{,}18\,\text{dB/km} \cdot 1172\,\text{km} = 211\,\text{dB}$. Silloin osuuksia olisi $211\,\text{dB} : 20\,\text{dB} \approx 10{,}5$. Osuuden pituus $1172\,\text{km} : 11 = 107\,\text{km}$ on hieman yli todellisten yhteyksien tyypillisen $50$–$100\,\text{km}$:n vahvistinvälin.
+**Järkevyys:** Koko kaapelin vaimennus olisi ilman vahvistimia $$\begin{aligned} &0{,}18\,\text{dB/km} \cdot 1172\,\text{km} \\ &= 211\,\text{dB} \end{aligned}$$. Silloin osuuksia olisi $211\,\text{dB} : 20\,\text{dB} \approx 10{,}5$. Osuuden pituus $1172\,\text{km} : 11 = 107\,\text{km}$ on hieman yli todellisten yhteyksien tyypillisen $50$–$100\,\text{km}$:n vahvistinvälin.
 
 ## fy7-16-L3-02
 **Annettu:** taajuus $f = 25\,\text{kHz}$, magneettivuon tiheyden huippuarvo $B_0 = 4{,}0\,\text{mT}$, silmukan säde $r = 8{,}0\,\text{cm}$, silmukan resistanssi $R = 0{,}050\,\Omega$, kenttä homogeeninen ja kohtisuorassa pohjaa vastaan
@@ -104,7 +104,7 @@
 **Periaate:** Silmukan läpi kulkeva vuo $\Phi = BA$ vaihtelee sinimuotoisesti. Siksi silmukkaan indusoituu sinimuotoinen jännite, jonka huippuarvo on $e_0 = 2\pi f \cdot \Phi_0$ kuten yhden kierroksen generaattorissa (luku *Generaattori ja vaihtovirta*). Pyörrevirran sähköenergia muuttuu resistanssissa sisäenergiaksi. Keskimääräinen teho lasketaan tehollisesta jännitteestä $U = e_0 : \sqrt{2}$.
 **Kaava:** $\Phi_0 = B_0 \cdot \pi r^2$, $e_0 = 2\pi f \cdot \Phi_0$, $U = \dfrac{e_0}{\sqrt{2}}$ ja $P = \dfrac{U^2}{R}$, josta $P = \dfrac{(2\pi f \cdot B_0 \cdot \pi r^2)^2}{2R}$
 **Muunnokset:** $f = 25\,\text{kHz} = 25 \cdot 1000\,\text{Hz} = 2{,}5 \cdot 10^{4}\,\text{Hz}$, $B_0 = 4{,}0\,\text{mT} = 4{,}0 \cdot 10^{-3}\,\text{T}$ ja $r = 8{,}0\,\text{cm} = 8{,}0 \cdot 0{,}01\,\text{m} = 0{,}080\,\text{m}$. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
-**Sijoitus:** $e_0 = 2\pi \cdot 2{,}5 \cdot 10^{4}\,\text{Hz} \cdot 4{,}0 \cdot 10^{-3}\,\text{T} \cdot \pi \cdot (0{,}080\,\text{m})^2 = 12{,}63\,\text{V}$, joten $P = \dfrac{(12{,}63\,\text{V})^2}{2 \cdot 0{,}050\,\Omega} = 1596\,\text{W} = 1{,}596\,\text{kW}$
+**Sijoitus:** $$\begin{aligned} e_0 &= 2\pi \cdot 2{,}5 \cdot 10^{4}\,\text{Hz} \\ &\cdot 4{,}0 \cdot 10^{-3}\,\text{T} \cdot \pi \cdot (0{,}080\,\text{m})^2 \\ &= 12{,}63\,\text{V} \end{aligned}$$, joten $P = \dfrac{(12{,}63\,\text{V})^2}{2 \cdot 0{,}050\,\Omega} = 1596\,\text{W} = 1{,}596\,\text{kW}$
 **Vastaus:** $1{,}6\,\text{kW}$, kaksi merkitsevää numeroa kuten vuon tiheys $4{,}0\,\text{mT}$, säde $8{,}0\,\text{cm}$ ja resistanssi $0{,}050\,\Omega$.
 **Järkevyys:** Tehollinen jännite on $12{,}63\,\text{V} : \sqrt{2} = 8{,}93\,\text{V}$ ja tehollinen virta $8{,}93\,\text{V} : 0{,}050\,\Omega = 179\,\text{A}$; teho $8{,}93\,\text{V} \cdot 179\,\text{A} \approx 1600\,\text{W}$ täsmää. Tulos on keittoalueen tehon suuruusluokkaa. Pyörrevirran oma kenttä pienentää todellisuudessa virtaa, joten tulos on yläraja.
 
@@ -205,7 +205,7 @@ Väärät suuruusluokat syntyvät yksikkövirheistä. Jos pituus sijoitetaan kil
 **Kaava:** $\Phi_0 = \dfrac{e_0}{N \cdot 2\pi f}$, $\Phi_{\min} = \dfrac{1{,}0\,\text{V}}{N \cdot 2\pi f'}$ ja $d = d_1 + (d_2 - d_1) \cdot \dfrac{\Phi_1 - \Phi_{\min}}{\Phi_1 - \Phi_2}$
 **Muunnokset:** $f = 1{,}30 \cdot 10^{5}\,\text{Hz}$, $f' = 1{,}00 \cdot 10^{5}\,\text{Hz}$ ja $1\,\text{Wb} = 10^{6}\,\mu\text{Wb}$.
 **Sijoitus:** a) Jakajaksi tulee $15 \cdot 2\pi \cdot 1{,}30 \cdot 10^{5}\,\text{Hz} = 1{,}225 \cdot 10^{7}\,\text{Hz}$, joten vuot ovat $0{,}377;\ 0{,}221;\ 0{,}124;\ 0{,}0677;\ 0{,}0384\,\mu\text{Wb}$ etäisyyksillä $4;\ 8;\ 12;\ 16;\ 20\,\text{mm}$.
-b) $\Phi_{\min} = \dfrac{1{,}0\,\text{V}}{15 \cdot 2\pi \cdot 1{,}00 \cdot 10^{5}\,\text{Hz}} = 0{,}1061\,\mu\text{Wb}$ on vuoarvojen $0{,}1241\,\mu\text{Wb}$ ($12\,\text{mm}$) ja $0{,}0677\,\mu\text{Wb}$ ($16\,\text{mm}$) välissä: $d = 12\,\text{mm} + 4\,\text{mm} \cdot \dfrac{0{,}1241 - 0{,}1061}{0{,}1241 - 0{,}0677} = 13{,}28\,\text{mm}$
+b) $\Phi_{\min} = \dfrac{1{,}0\,\text{V}}{15 \cdot 2\pi \cdot 1{,}00 \cdot 10^{5}\,\text{Hz}} = 0{,}1061\,\mu\text{Wb}$ on vuoarvojen $0{,}1241\,\mu\text{Wb}$ ($12\,\text{mm}$) ja $0{,}0677\,\mu\text{Wb}$ ($16\,\text{mm}$) välissä: $$\begin{aligned} d &= 12\,\text{mm} \\ &+ 4\,\text{mm} \cdot \dfrac{0{,}1241 - 0{,}1061}{0{,}1241 - 0{,}0677} \\ &= 13{,}28\,\text{mm} \end{aligned}$$
 **Vastaus:** $13\,\text{mm}$, kaksi merkitsevää numeroa. Interpolointi on arvio, koska vuo ei pienene lineaarisesti. c) Sama vuo muuttuu taajuudella $100\,\text{kHz}$ hitaammin kuin taajuudella $130\,\text{kHz}$, joten indusoituva jännite on pienempi. Raja $1{,}0\,\text{V}$ ylittyy vain suuremmalla vuolla eli lähempänä laturia. Etäisyyden saisi takaisin lisäämällä vastaanotinkäämin kierroksia, koska jännite on suoraan verrannollinen kierrosten lukumäärään.
 **Järkevyys:** Raja-arvo $0{,}1061\,\mu\text{Wb}$ on pienempi kuin vuo etäisyydellä $12\,\text{mm}$ mutta suurempi kuin etäisyydellä $16\,\text{mm}$. Siksi $13{,}3\,\text{mm}$ on näiden välissä. Taajuudella $130\,\text{kHz}$ raja-arvo olisi $0{,}0816\,\mu\text{Wb}$ ja etäisyys noin $15{,}0\,\text{mm}$. Taajuuden lasku lyhentää siis toimintaetäisyyttä, kuten c-kohdassa. Kierrosten lisäys $15$:stä $20$:een kasvattaisi jännitettä kertoimella $1{,}33$ ja korvaisi taajuuden laskun kertoimella $1{,}30$.
 
@@ -215,7 +215,7 @@ b) $\Phi_{\min} = \dfrac{1{,}0\,\text{V}}{15 \cdot 2\pi \cdot 1{,}00 \cdot 10^{5
 **Periaate:** Silmukan vuo $\Phi = BA$ vaihtelee sinimuotoisesti, joten huippujännite on $e_0 = 2\pi f \cdot \Phi_0$. Teho on $P = U^2 : R$, kun $U = e_0 : \sqrt{2}$ on tehollinen jännite. Huippujännite on suoraan verrannollinen taajuuteen. Siksi teho on suoraan verrannollinen taajuuden neliöön ja kääntäen verrannollinen resistanssiin.
 **Kaava:** $\Phi_0 = B_0 \cdot \pi r^2$, $e_0 = 2\pi f \cdot \Phi_0$ ja $P = \dfrac{e_0^2}{2R} \sim \dfrac{f^2}{R}$. Yhtäsuuret tehot: $\dfrac{f_\text{C}^2}{R_\text{C}} = \dfrac{f^2}{R_\text{A}}$, josta $f_\text{C} = f \cdot \sqrt{\dfrac{R_\text{C}}{R_\text{A}}}$
 **Muunnokset:** $f = 3{,}0 \cdot 10^{4}\,\text{Hz}$, $B_0 = 3{,}0 \cdot 10^{-3}\,\text{T}$, $r = 0{,}090\,\text{m}$ ja $1\,\text{kW} = 1000\,\text{W}$.
-**Sijoitus:** a) $\Phi_0 = 3{,}0 \cdot 10^{-3}\,\text{T} \cdot \pi \cdot (0{,}090\,\text{m})^2 = 7{,}63 \cdot 10^{-5}\,\text{Wb}$ ja $e_0 = 2\pi \cdot 3{,}0 \cdot 10^{4}\,\text{Hz} \cdot 7{,}63 \cdot 10^{-5}\,\text{Wb} = 14{,}39\,\text{V}$. Tehot $P = \dfrac{(14{,}39\,\text{V})^2}{2R}$ ovat kattilalle A $2{,}59\,\text{kW}$, B $2{,}07\,\text{kW}$ ja C $1{,}29\,\text{kW}$.
+**Sijoitus:** a) $\Phi_0 = 3{,}0 \cdot 10^{-3}\,\text{T} \cdot \pi \cdot (0{,}090\,\text{m})^2 = 7{,}63 \cdot 10^{-5}\,\text{Wb}$ ja $$\begin{aligned} e_0 &= 2\pi \cdot 3{,}0 \cdot 10^{4}\,\text{Hz} \\ &\cdot 7{,}63 \cdot 10^{-5}\,\text{Wb} \\ &= 14{,}39\,\text{V} \end{aligned}$$. Tehot $P = \dfrac{(14{,}39\,\text{V})^2}{2R}$ ovat kattilalle A $2{,}59\,\text{kW}$, B $2{,}07\,\text{kW}$ ja C $1{,}29\,\text{kW}$.
 b) $f_\text{C} = 30\,\text{kHz} \cdot \sqrt{\dfrac{0{,}080\,\Omega}{0{,}040\,\Omega}} = 30\,\text{kHz} \cdot \sqrt{2} = 42{,}43\,\text{kHz}$
 **Vastaus:** $42\,\text{kHz}$, kaksi merkitsevää numeroa kuten lähtötiedot. Kattilan C resistanssi on kaksinkertainen, joten sen teho on puolet. Taajuuden nosto kasvattaa vuon muutosnopeutta ja jännitettä, ja teho kasvaa taajuuden neliössä. c) Pyörrevirran oma magneettikenttä jätettiin huomiotta. Lenzin lain mukaan se vastustaa vuon muutosta, joten todellinen virta ja teho ovat mallin antamaa pienemmät. Hyvin sähköä johtavassa pohjassa (alumiini, kupari) pyörrevirran oma kenttä kumoaa suuren osan vuosta, joten malli ei päde niille. Teräksen ferromagnetismi taas lisää lämpenemistä.
 **Järkevyys:** Tehojen suhde $2{,}59\,\text{kW} : 1{,}29\,\text{kW} = 2{,}0$ vastaa resistanssien suhdetta $0{,}080 : 0{,}040 = 2{,}0$. Taajuuden nosto kertoimella $\sqrt{2} = 1{,}414$ kasvattaa tehon kertoimella $1{,}414^2 = 2{,}0$, joten kattilan C teho taajuudella $42{,}4\,\text{kHz}$ on $1{,}29\,\text{kW} \cdot 2{,}0 = 2{,}59\,\text{kW}$.

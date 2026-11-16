@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f3f619028352a996
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: a70034889df70483
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md, misconception — "because the Earth's northern magnetic pole is called the magnetic north pole" is circular — e.g. "Many people conclude from the name *magnetic north pole* that the north pole of a magnet lies in the north and attracts the north end of the needle."
+- none
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Bar-magnet model vs geomagnetic naming: Why-question, theory, new naming paragraph, misconception, summary, inquiry check-1 feedbacks; terms consistent (sauvamagneettimalli / magneettinen pohjoisnapa).
-- No paragraph changed in this round in en exceeds about 120 words
-- Hash identical at start and end.
+- batch delta review: queue 5d reflow. The standard set has no phone captures of opened states, so every re-broken formula (5 rendered blocks) was captured from the built page (preview/en/fy7-1.html, the build of the shots stamp) at 390 px and 1280 px with every box, hint, solution and choice feedback forced open, and each capture was read; box overflow measured at 360, 375, 390, 412 and 1280 px: none clipped or scrolled. Row starts checked against the 5d rule; wide-screen joining (join_wide) seen at 1280 px. Figures and the formula-name / teacher-figure categories were not re-judged.

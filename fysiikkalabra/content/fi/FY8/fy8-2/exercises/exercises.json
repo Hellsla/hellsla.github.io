@@ -87,7 +87,7 @@
     {
       "id": "fy8-2-L1-08",
       "level": 1,
-      "text": "Oppilas ratkaisi tehtävän näin: ”Vetyatomi siirtyy tilasta $n = 2$, jonka energia on $E_2 = -3{,}40\\,\\text{eV}$, tilaan $n = 3$, jonka energia on $E_3 = -1{,}51\\,\\text{eV}$. Fotonin energia on tilojen erotus $E_3 - E_2 = -1{,}51\\,\\text{eV} - (-3{,}40\\,\\text{eV})$, eli $E_3 - E_2 = 1{,}89\\,\\text{eV}$, joten atomi lähettää fotonin, jonka energia on $1{,}89\\,\\text{eV}$.”\n\nLukuarvo on oikein, mutta johtopäätös ei ole. Mikä oppilaan päättelyssä on virhe?",
+      "text": "Oppilas ratkaisi tehtävän näin: ”Vetyatomi siirtyy tilasta $n = 2$, jonka energia on $E_2 = -3{,}40\\,\\text{eV}$, tilaan $n = 3$, jonka energia on $E_3 = -1{,}51\\,\\text{eV}$. Fotonin energia on tilojen erotus $$\n\\begin{aligned}\nE_3 - E_2 &= -1{,}51\\,\\text{eV} \\\\\n&- (-3{,}40\\,\\text{eV})\n\\end{aligned}\n$$, eli $E_3 - E_2 = 1{,}89\\,\\text{eV}$, joten atomi lähettää fotonin, jonka energia on $1{,}89\\,\\text{eV}$.”\n\nLukuarvo on oikein, mutta johtopäätös ei ole. Mikä oppilaan päättelyssä on virhe?",
       "kind": [
         "error",
         "concept"
@@ -360,7 +360,7 @@
     {
       "id": "fy8-2-L3-03",
       "level": 3,
-      "text": "Väriaineen molekyyli absorboi UV-fotonin, jonka aallonpituus on $365\\,\\text{nm}$. Molekyyli palaa perustilaan kahdessa vaiheessa: ensin se lähettää infrapunafotonin, jonka energia on $1{,}20\\,\\text{eV}$, ja sitten toisen fotonin, jolla se päätyy perustilaan. Oletetaan, ettei energiaa siirry lämmöksi. Mikä on toisen fotonin aallonpituus? Anna vastaus nanometreinä.",
+      "text": "Väriaineen molekyyli absorboi UV-fotonin, jonka aallonpituus on $365\\,\\text{nm}$. Molekyyli palaa perustilaan kahdessa vaiheessa: ensin se lähettää infrapunafotonin, jonka energia on $1{,}20\\,\\text{eV}$, ja sitten toisen fotonin, jolla se päätyy perustilaan. Oletetaan, ettei energiaa muutu sisäenergiaksi. Mikä on toisen fotonin aallonpituus? Anna vastaus nanometreinä.",
       "answer": 564,
       "unit": "nm",
       "tolerance": 0.02
@@ -410,7 +410,7 @@
     {
       "id": "fy8-2-L3-05",
       "level": 3,
-      "text": "Kolmea fluoresoivaa väriainetta valaistaan lyhytaaltoisella valolla, ja mitataan, minkä aallonpituuden valoa kukin väriaine säteilee (esimerkkiaineisto). Oletetaan, että jokaista absorboitua fotonia kohti väriaine lähettää yhden fluoresenssifotonin ja että energia, joka ei lähde fotonina, muuttuu lämmöksi.\n\na) Laske kunkin väriaineen absorboiman ja lähettämän fotonin energiat elektronivoltteina.\n\nb) Missä väriaineessa lämmöksi muuttuva osuus on suurin, ja kuinka monta prosenttia absorboidun fotonin energiasta se on?\n\nc) Selitä, miksi fluoresenssivalon aallonpituus on pidempi kuin absorboidun valon ja minne puuttuva energia joutuu.\n\nd) Neljäs väriaine D absorboi aallonpituuden $400\\,\\text{nm}$ valoa, ja jokaista absorboitua fotonia kohti $0{,}50\\,\\text{eV}$ muuttuu lämmöksi. Mikä on sen fluoresenssivalon aallonpituus nanometreinä?\n\nVastauslaatikkoon tulee kohdan b) osuus prosentteina.",
+      "text": "Kolmea fluoresoivaa väriainetta valaistaan lyhytaaltoisella valolla, ja mitataan, minkä aallonpituuden valoa kukin väriaine säteilee (esimerkkiaineisto). Oletetaan, että jokaista absorboitua fotonia kohti väriaine lähettää yhden fluoresenssifotonin ja että energia, joka ei lähde fotonina, muuttuu sisäenergiaksi.\n\na) Laske kunkin väriaineen absorboiman ja lähettämän fotonin energiat elektronivoltteina.\n\nb) Missä väriaineessa sisäenergiaksi muuttuva osuus on suurin, ja kuinka monta prosenttia absorboidun fotonin energiasta se on?\n\nc) Selitä, miksi fluoresenssivalon aallonpituus on pidempi kuin absorboidun valon ja minne puuttuva energia joutuu.\n\nd) Neljäs väriaine D absorboi aallonpituuden $400\\,\\text{nm}$ valoa, ja jokaista absorboitua fotonia kohti $0{,}50\\,\\text{eV}$ muuttuu sisäenergiaksi. Mikä on sen fluoresenssivalon aallonpituus nanometreinä?\n\nVastauslaatikkoon tulee kohdan b) osuus prosentteina.",
       "kind": [
         "data",
         "model",

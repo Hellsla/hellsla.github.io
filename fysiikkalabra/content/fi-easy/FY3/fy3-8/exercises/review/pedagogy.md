@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 65f7b748b1e5d4e4
-SCOPE: delta added-exercise from 3ce9e680342bf801 base 5453544b2abc
+CONTENT-HASH: 1e3321925072288a
+SCOPE: delta added-exercise from c8098ef2208d19ac base b2eac257e05e
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. exercises.json fy3-8-L1-09 — text says "pituuden lämpölaajenemiskerroin"; the glossary term is "pituuden lämpötilakerroin" — fix: "Hae teräksen pituuden lämpötilakerroin MAFY-taulukosta."
-2. fy3-8-L1-09 — rail, 25 m, steel is close to L2-03 (25 m rails) and the worked example's steel bridge; consider a different context (e.g. a steel pipe or a bridge cable) so the set does not repeat.
-3. fy3-8-L2-09 — the answer is read from two end points only; fine for level 2, but a short step in the solution on why a straight line justifies proportionality is already present, so no change needed beyond naming the variable k with its unit in the question if desired.
+- a) depends on a live page (91 vs 115.8 mm); the solution handles this well. Optional: tell the student which of the two values to prefer.
 
 ## Checked
-- L1-09: level 1 fits (one lookup, one formula, unit conversion to mm); the solution goes symbolically first, with units; tolerance 4 % is explained.
-- L1-09: the situation is first and the question is last; the hint names the exact MAFY table.
-- L2-09: level 2 fits (graph reading, slope, inverse use of the formula); the answer 53,3 matches the solution and the 3 % tolerance matches the stated range.
-- L2-09: the figure is needed; its description gives the same end points as the image and no answer; the grid step is given.
-- L2-09: adds a graph-reading kind the set lacked; it does not repeat L2-04 or L2-06.
-- Set progression within each level is kept; the new tasks are placed last at their levels.
-- Finnish and fi-easy reading level are fine in both tasks.
-- Phone captures were not needed: both tasks are short.
+- fy3-8-L2-10 is level 2: situation first, questions in parts a-d, a numeric answer field for one part, source given with a read date.
+- Fits the slot's goals and the set's mix (data/experiment/reasoning); it does not repeat the worked example or another exercise.
+- The solution is stepwise (given, find, principle, formula, conversions, substitution, reasonableness) and the open parts have model answers.
+- Source-based task fulfils the teacher's brief: the source is interpreted, the lesson's formula is applied, the model's limits are judged.
+- The language version matches the English/Finnish content; easy Finnish has short sentences and glossed terms (checked in the packet).
+- Phone: calculations are in short aligned lines; I did not open captures (the new exercise is not in them).

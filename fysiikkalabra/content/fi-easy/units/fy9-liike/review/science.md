@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 36b18b9f347ab559
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (7d1a4728dcea4f13).
+CONTENT-HASH: 3456a00fa850214b
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- C: "matka nopeuskuvaajasta → pinta-ala" is the displacement when v changes sign; "kiihtyvyys on vakio, matka?" gives position (round 1, stand).
+- (none)
 
 ## Checked
-- Round-1 Blocking fixed: row 4 is now "vakiokiihtyvyys, a ei tiedossa → keskinopeus, Δx = (v_0 + v)/2 · t" in the chart and the aria-label; the condition of the Kaava's derivation is stated.
-- aria-label: the broken "pinta- ala" is now "pinta-ala"; no physics change.
-- teacher.md: slope leads x → v → a, area v → x: correct.
-- Other rows unchanged and correct as in round 1.
-- Hash taken at the start and the end (36b18b9f347ab559).
+- solutions.md, Vastaus of the acceleration-uncertainty part: recomputed a = 2·1,20 m/(1,6 s)² = 0,9375 m/s²; extremes 0,741 and 1,224 m/s²; half-range (1,224 − 0,741)/2 = 0,242 → 0,24 m/s²; upper limit 1,224 − 0,9375 = 0,287 → 0,29 m/s² above the best estimate (lower side 0,20). All three new numbers are right, and rounding the uncertainty up to 0,3 is justified; (0,9 ± 0,3) m/s² covers the whole range.
+- Järkevyys (2 · 13 % ≈ 25 %, i.e. 0,23 m/s²) still agrees.
+- No added task (last is s6). practice.py check: OK, 6 tasks, 95 points.

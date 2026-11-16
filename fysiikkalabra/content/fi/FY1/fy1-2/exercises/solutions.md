@@ -97,7 +97,7 @@
 ## fy1-2-L2-03
 **Annettu:** pinta-ala $A = 2{,}4\,\text{km}^2$; $1\,\text{ha} = 10\,000\,\text{m}^2$
 **Kysytty:** pinta-ala $A$ hehtaareina
-**Periaate:** Yksikön paikalle kirjoitetaan sen arvo toisessa yksikössä. Pinta-alan yksikkö on kahden pituuden tulo, joten $1\,\text{km}^2 = 1000\,\text{m}\cdot1000\,\text{m} = 10^{6}\,\text{m}^2$, ei $1000\,\text{m}^2$. Sen jälkeen lasketaan, montako hehtaaria neliömetrimäärään mahtuu.
+**Periaate:** Yksikön paikalle kirjoitetaan sen arvo toisessa yksikössä. Pinta-alan yksikkö on kahden pituuden tulo, joten $$\begin{aligned} 1\,\text{km}^2 &= 1000\,\text{m}\cdot1000\,\text{m} \\ &= 10^{6}\,\text{m}^2 \end{aligned}$$, ei $1000\,\text{m}^2$. Sen jälkeen lasketaan, montako hehtaaria neliömetrimäärään mahtuu.
 **Kaava:** $1\,\text{km}^2 = 10^{6}\,\text{m}^2$ ja $1\,\text{ha} = 10^{4}\,\text{m}^2$, joten $1\,\text{km}^2 = (10^{6} : 10^{4})\,\text{ha} = 100\,\text{ha}$
 **Muunnokset:** Neliökilometrin paikalle kirjoitetaan $100\,\text{ha}$.
 **Sijoitus:** $A = 2{,}4\,\text{km}^2 = 2{,}4\cdot100\,\text{ha} = 240\,\text{ha}$
@@ -112,14 +112,14 @@
 **Muunnokset:** $1\,\text{vrk} = 24\cdot 3600\,\text{s} = 86\,400\,\text{s}$. Lopuksi $1\,\text{milj. km} = 10^{6}\,\text{km}$.
 **Sijoitus:** $s = 15{,}341\,\dfrac{\text{km}}{\text{s}}\cdot 86\,400\,\text{s} = 1\,325\,462\,\text{km} = 1{,}3255\cdot10^{6}\,\text{km}$
 **Vastaus:** $1{,}3255$ milj. km, viisi merkitsevää numeroa kuten nopeudessa $15{,}341\,\text{km/s}$; vuorokauden pituus on tarkka.
-**Järkevyys:** Pyöristetyillä luvuilla $15\,\text{km/s}\cdot 9\cdot10^{4}\,\text{s} = 1{,}35\cdot10^{6}\,\text{km}$. Vuorokaudessa luotain kulkee reilun miljoonan kilometrin, noin kolmen ja puolen Maa–Kuu-etäisyyden verran.
+**Järkevyys:** Pyöristetyillä luvuilla $$\begin{aligned} &15\,\text{km/s}\cdot 9\cdot10^{4}\,\text{s} \\ &= 1{,}35\cdot10^{6}\,\text{km} \end{aligned}$$. Vuorokaudessa luotain kulkee reilun miljoonan kilometrin, noin kolmen ja puolen Maa–Kuu-etäisyyden verran.
 
 ## fy1-2-L2-05
 **Annettu:** taulukosta nopeudet: pikalaiva $38{,}0$ solmua, juna $66{,}0\,\text{km/h}$, pyöräilijä $9{,}0\,\text{m/s}$ ja kalastusvene $12{,}0$ solmua; $1\,\text{solmu} = 1{,}852\,\text{km/h}$
 **Kysytty:** nopein kulkuneuvo ja sen nopeus $v$ yksikössä $\text{m/s}$
 **Periaate:** Lukuarvoja voi verrata vasta, kun ne on ilmoitettu samassa yksikössä. Siksi kaikki nopeudet muunnetaan yksikköön $\text{m/s}$, ja suurin valitaan. Taulukon suurin lukuarvo $66{,}0$ ei kerro mitään, koska se on eri yksikössä kuin muut.
 **Kaava:** $1\,\text{solmu} = 1{,}852\,\text{km/h}$ ja $1\,\text{km/h} = \dfrac{1000\,\text{m}}{3600\,\text{s}}$, joten $v = n\cdot 1{,}852\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}}$, kun solmuja on $n$
-**Muunnokset:** Pikalaiva $38{,}0\cdot1{,}852\,\text{km/h} = 70{,}38\,\text{km/h}$, kalastusvene $12{,}0\cdot1{,}852\,\text{km/h} = 22{,}22\,\text{km/h}$. Pyöräilijä on jo yksikössä $\text{m/s}$.
+**Muunnokset:** Pikalaiva $$\begin{aligned} &38{,}0\cdot1{,}852\,\text{km/h} \\ &= 70{,}38\,\text{km/h} \end{aligned}$$, kalastusvene $$\begin{aligned} &12{,}0\cdot1{,}852\,\text{km/h} \\ &= 22{,}22\,\text{km/h} \end{aligned}$$. Pyöräilijä on jo yksikössä $\text{m/s}$.
 **Sijoitus:** pikalaiva $70{,}38\,\text{km/h} = 70{,}38\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 19{,}55\,\text{m/s}$; juna $66{,}0\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 18{,}33\,\text{m/s}$; kalastusvene $22{,}22\cdot\dfrac{1000\,\text{m}}{3600\,\text{s}} = 6{,}17\,\text{m/s}$; pyöräilijä $9{,}0\,\text{m/s}$. Nopeusjärjestys on pikalaiva, juna, pyöräilijä, kalastusvene.
 **Vastaus:** nopein on pikalaiva, $19{,}5\,\text{m/s}$, kolme merkitsevää numeroa kuten lähtöarvossa $38{,}0$ solmua; muunnoskerroin $1{,}852$ on tarkka.
 **Järkevyys:** Pikalaiva kulkee tunnissa $70\,\text{km}$ ja juna $66\,\text{km}$, joten laiva on vähän nopeampi. Pyöräilijän $9{,}0\,\text{m/s}$ on noin $32\,\text{km/h}$, mikä on alle kummankin.
@@ -128,9 +128,9 @@
 **Annettu:** taulukosta viiden omenan massat $152{,}4$, $147{,}9$, $160{,}8$, $155{,}3$ ja $158{,}1$; sarakkeen otsikossa yksikkö $\text{kg}$
 **Kysytty:** virhe taulukossa ja omenan keskimassa $m_{\text{ka}}$ kilogrammoina
 **Periaate:** Mittaustulosta arvioidaan aina järkevyydellä. Omenan massa ei voi olla $150\,\text{kg}$, joten otsikon yksikkö on väärin: lukuarvot on mitattu grammoina. Keskiarvo on massojen summa jaettuna lukumäärällä, ja yksikkö korjataan sijoittamalla.
-**Kaava:** $m_{\text{ka}} = \dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$
+**Kaava:** $$m_{\text{ka}} = \dfrac{m_1 + m_2 + m_3 + m_4 + m_5}{5}$$
 **Muunnokset:** Oikea otsikko on $m\,(\text{g})$. Gramman paikalle kirjoitetaan sen arvo kilogrammoina, $1\,\text{g} = 10^{-3}\,\text{kg}$.
-**Sijoitus:** Massojen summa on $152{,}4\,\text{g} + 147{,}9\,\text{g} + 160{,}8\,\text{g} + 155{,}3\,\text{g} + 158{,}1\,\text{g} = 774{,}5\,\text{g}$, joten $m_{\text{ka}} = \dfrac{774{,}5\,\text{g}}{5} = 154{,}9\,\text{g} = 154{,}9\cdot10^{-3}\,\text{kg} = 0{,}1549\,\text{kg}$
+**Sijoitus:** Massojen summa on $$\begin{aligned} &152{,}4\,\text{g} + 147{,}9\,\text{g} + 160{,}8\,\text{g} + 155{,}3\,\text{g} \\ &+ 158{,}1\,\text{g} \\ &= 774{,}5\,\text{g} \end{aligned}$$, joten $m_{\text{ka}} = \dfrac{774{,}5\,\text{g}}{5} = 154{,}9\,\text{g} = 154{,}9\cdot10^{-3}\,\text{kg} = 0{,}1549\,\text{kg}$
 **Vastaus:** $0{,}1549\,\text{kg}$, neljä merkitsevää numeroa kuten punnituksissa, jotka on annettu kymmenesosagrammaan. Omenoiden lukumäärä on tarkka luku.
 **Järkevyys:** Omenan massa on tavallisesti noin $150\,\text{g}$ eli noin $0{,}15\,\text{kg}$, ja arvot ovat lähellä toisiaan. Keskiarvo $154{,}9\,\text{g}$ on lukujen $147{,}9$ ja $160{,}8$ välissä, kuten keskiarvon pitää.
 
@@ -150,7 +150,7 @@
 **Periaate:** Valovuosi on pituusyksikkö, ei aikayksikkö: se on matka, jonka valo kulkee tyhjiössä vuodessa. Valo etenee tasaisella nopeudella, joten annettu kaava $s = ct$ antaa matkan kilometreinä, ja sen jälkeen matka jaetaan AU:n pituudella.
 **Kaava:** $L = c\,t$
 **Muunnokset:** $t = 1\,\text{a} = 3{,}156\cdot10^{7}\,\text{s}$ on jo sekunteina. Astronomisina yksikköinä matka saadaan, kun lasketaan, montako AU:ta ($1{,}496\cdot10^{8}\,\text{km}$) siihen mahtuu.
-**Sijoitus:** $L = 2{,}998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3{,}156\cdot10^{7}\,\text{s} = 9{,}462\cdot10^{12}\,\text{km}$ ja $9{,}462\cdot10^{12}\,\text{km} : 1{,}496\cdot10^{8}\,\text{km} = 6{,}325\cdot10^{4}$, eli $L = 6{,}325\cdot10^{4}\,\text{AU}$
+**Sijoitus:** $$\begin{aligned} L &= 2{,}998\cdot10^{5}\,\dfrac{\text{km}}{\text{s}}\cdot 3{,}156\cdot10^{7}\,\text{s} \\ &= 9{,}462\cdot10^{12}\,\text{km} \end{aligned}$$ ja $9{,}462\cdot10^{12}\,\text{km} : 1{,}496\cdot10^{8}\,\text{km} = 6{,}325\cdot10^{4}$, eli $L = 6{,}325\cdot10^{4}\,\text{AU}$
 **Vastaus:** $63\,250\,\text{AU}$, kirjoitettuna $6{,}325\cdot10^{4}\,\text{AU}$, neljä merkitsevää numeroa kuten lähtöarvoissa.
 **Järkevyys:** Valo kulkee yhden AU:n 8,3 minuutissa, ja vuodessa on noin $525\,600$ minuuttia. Suhde $525\,600 : 8{,}3 \approx 63\,000$ vahvistaa tuloksen.
 
@@ -159,7 +159,7 @@
 **Kysytty:** kuinka moninkertainen matka on kuvassa yhden näytön leveyteen verrattuna, suhde $N$
 **Periaate:** Kuva on mittakaavassa, joten kilometrit muuttuvat kuvapisteiksi jakamalla Kuun halkaisijalla. Suhde $N$ on kuvapisteiden määrä jaettuna yhden näytön leveydellä.
 **Kaava:** $N = \dfrac{a}{D}\cdot\dfrac{1\,\text{px}}{W}$
-**Muunnokset:** Matka kilometreinä: $a = 30{,}07\,\text{AU} = 30{,}07\cdot 1{,}496\cdot10^{8}\,\text{km} = 4{,}498\cdot10^{9}\,\text{km}$. Jokainen $3474\,\text{km}$ on yksi kuvapiste, joten kuvapisteitä on $4{,}498\cdot10^{9}\,\text{km} : 3474\,\text{km} = 1{,}295\cdot10^{6}$.
+**Muunnokset:** Matka kilometreinä: $a = 30{,}07\,\text{AU} = 30{,}07\cdot 1{,}496\cdot10^{8}\,\text{km} = 4{,}498\cdot10^{9}\,\text{km}$. Jokainen $3474\,\text{km}$ on yksi kuvapiste, joten kuvapisteitä on $$\begin{aligned} &4{,}498\cdot10^{9}\,\text{km} : 3474\,\text{km} \\ &= 1{,}295\cdot10^{6} \end{aligned}$$.
 **Sijoitus:** $N = \dfrac{1{,}295\cdot10^{6}\,\text{px}}{1920\,\text{px}} = 674{,}4$
 **Vastaus:** noin $674{,}4$-kertainen eli $674{,}4$ näytön leveyttä, neljä merkitsevää numeroa kuten tiedoissa $30{,}07\,\text{AU}$, $1{,}496\cdot10^{8}\,\text{km}$ ja $3474\,\text{km}$; näytön leveys $1920\,\text{px}$ on tarkka luku eikä rajoita.
 **Järkevyys:** Neptunus on noin 1,3 miljoonan kuvapisteen päässä, ja 1,3 miljoonaa jaettuna kahdella tuhannella on noin 650. Tulos on samaa suuruusluokkaa. Matkaa ei siis näe kuvassa yhdellä vilkaisulla, vaan sitä on vieritettävä satojen näytönleveyksien verran.
@@ -203,3 +203,41 @@
 **Sijoitus:** $t = \dfrac{3{,}844\cdot10^{8}\,\text{m}}{2{,}998\cdot10^{8}\,\text{m/s}} = 1{,}282\,\text{s} \approx 1{,}28\,\text{s}$
 **Vastaus:** $t \approx 1{,}28\,\text{s}$ kolmella merkitsevällä numerolla. Kuun etäisyys MAFY-taulukossa (Aurinkokunta) on keskiarvo keskipisteestä keskipisteeseen, eikä signaalin kulkema matka ole tarkalleen se, joten kolme merkitsevää numeroa riittää. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Valo kulkee noin $3\cdot10^{8}\,\text{m}$ sekunnissa ja Kuun etäisyys on noin $4\cdot10^{8}\,\text{m}$, joten kulkuaika on hieman yli sekunnin. Tulos täsmää.
+
+## fy1-2-L2-08
+**Annettu:** BIPM:n sivut: vuodesta 1889 kilogramma oli platina-iridiumista valmistetun kansainvälisen vertailukappaleen massa; vuoden 2018 päätöksestä lähtien se määritellään Planckin vakion $h$ kiinnitetyn lukuarvon avulla. Kansallisten vertailukappaleiden massojen ero kansainväliseen oli vuosien 1989–1991 tarkistuksessa mediaaniltaan noin $25\,\mu\text{g}$. Kohdan b) muutos $\Delta m = 1\,\text{mg}$ ja massa $m = 1\,\text{kg}$.
+
+**Kysytty:** a) määritelmien vertailu ja muutoksen syy; b) suhteellinen muutos $\dfrac{\Delta m}{m}$ prosentteina ja vertailu havaittuun eroon; c) luonnonvakioon perustuvan määritelmän hyöty; d) onko mittaus virheetön
+
+**Periaate:** Yksikön määritelmä kertoo, mitä yksi kilogramma on. Suhteellinen muutos on muutos jaettuna alkuperäisellä arvolla, ja se voidaan laskea vasta, kun molemmat ovat samassa yksikössä.
+
+**Mallivastaus a):** Vanha kilogramma oli yhden esineen massa: Pariisin lähellä BIPM:ssä säilytettävän platina-iridiumkappaleen. Sitä varten valmistettiin myös kansallisia kopioita. Uudessa määritelmässä Planckin vakiolle on päätetty tarkka lukuarvo $h = 6{,}626\,070\,15\cdot10^{-34}\,\text{J}\,\text{s}$, ja kilogramma seuraa siitä yhdessä metrin ja sekunnin määritelmien kanssa. Kappaleeseen perustuvasta määritelmästä luovuttiin, koska vertailuissa kansallisten kopioiden massat erkanivat kansainvälisen kappaleen massasta. Kukaan ei voinut tietää, mikä kappaleista muuttui, sillä määritelmän mukaan kansainvälisen kappaleen massa oli aina tasan $1\,\text{kg}$.
+
+**Kaava:** suhteellinen muutos $\varepsilon = \dfrac{\Delta m}{m} \cdot 100\,\%$
+
+**Muunnokset:** $\Delta m = 1\,\text{mg} = 10^{-6}\,\text{kg}$ ja $25\,\mu\text{g} = 25\cdot10^{-9}\,\text{kg} = 2{,}5\cdot10^{-8}\,\text{kg}$
+
+**Sijoitus:** Yhden milligramman muutos:
+
+$$\begin{aligned}
+\dfrac{\Delta m}{m} &= \dfrac{10^{-6}\,\text{kg}}{1\,\text{kg}} \cdot 100\,\% \\
+&= 10^{-4}\,\% \\
+&= 0{,}0001\,\%
+\end{aligned}$$
+
+Havaittu ero:
+
+$$\begin{aligned}
+\dfrac{\Delta m_\text{BIPM}}{m} &= \dfrac{2{,}5\cdot10^{-8}\,\text{kg}}{1\,\text{kg}} \cdot 100\,\% \\
+&= 2{,}5\cdot10^{-6}\,\%
+\end{aligned}$$
+
+**Mallivastaus b):** Yhden milligramman muutos on $0{,}0001\,\%$ eli miljoonasosa massasta. Se on $40$ kertaa suurempi kuin vertailukappaleiden havaittu ero $25\,\mu\text{g}$, joka on vain $2{,}5\cdot10^{-6}\,\%$. Arkimittauksissa näin pienet erot eivät näy, mutta tarkimmissa mittauksissa ne ovat merkittäviä, ja ne ovat sitä suurempia, mitä kauemmin kappaleet muuttuvat.
+
+**Mallivastaus c):** Luonnonvakio on sama kaikkialla ja aina. Se ei voi kulua, likaantua, vahingoittua tai kadota kuten esine. Kun kilogramma perustuu Planckin vakioon, mikä tahansa riittävän hyvin varustettu laboratorio voi toteuttaa kilogramman itse, eikä sen tarvitse verrata punnuksiaan yhteen Ranskassa säilytettävään kappaleeseen. BIPM:n mukaan uusi määritelmä takaa massan yksikön pitkäaikaisen pysyvyyden ja on modernin tieteen kannalta hyödyllisempi.
+
+**Mallivastaus d):** Ei tarkoita. Määritelmä kertoo, mitä yksi kilogramma tarkalleen on, mutta jokaisessa mittauksessa on silti epävarmuutta. Vaa'an lukematarkkuus on rajallinen, vaaka on kalibroitu vain tietyllä tarkkuudella, ja mittaukseen vaikuttavat esimerkiksi lämpötila, ilmavirtaukset ja mittaajan tekemät valinnat. Täsmällinen määritelmä takaa, että eri maissa mitataan samaa suuretta samalla yksiköllä. Mittauksen tarkkuus riippuu kuitenkin mittalaitteesta ja mittaustavasta. Siksi tulokseen merkitään vain ne numerot, jotka mittaus oikeuttaa.
+
+**Vastaus:** Yhden milligramman muutos on $0{,}0001\,\%$ eli $10^{-4}\,\%$ massasta. Tulos on yhden merkitsevän numeron tarkkuudella, koska muutos $1\,\text{mg}$ on annettu yhdellä numerolla.
+
+**Järkevyys:** Kilogrammassa on miljoona milligrammaa, joten yksi milligramma on miljoonasosa. Prosentti on sadasosa, joten miljoonasosa on $\dfrac{100}{1\,000\,000}\,\% = 0{,}0001\,\%$.

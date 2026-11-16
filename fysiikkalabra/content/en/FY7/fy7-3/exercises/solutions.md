@@ -26,7 +26,7 @@
 **Conversions:** None needed: the current is in amperes and the distance in metres. Finally $1\,\mu\text{T} = 10^{-6}\,\text{T}$.
 **Substitution:** $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 800\,\text{A}}{2\pi \cdot 16\,\text{m}} = 1.0 \cdot 10^{-5}\,\text{T} = 10\,\mu\text{T}$
 **Answer:** $10\,\mu\text{T}$, two significant figures like the distance $16\,\text{m}$.
-**Reasonableness:** A large current but a large distance: $2 \cdot 10^{-7} \cdot 800 : 16\,\text{T} = 1 \cdot 10^{-5}\,\text{T}$. The field is about one fifth of the Earth's magnetic field of $50\,\mu\text{T}$.
+**Reasonableness:** A large current but a large distance: $$\begin{aligned} &2 \cdot 10^{-7} \cdot 800 : 16\,\text{T} \\ &= 1 \cdot 10^{-5}\,\text{T} \end{aligned}$$. The field is about one fifth of the Earth's magnetic field of $50\,\mu\text{T}$.
 
 ## fy7-3-L1-04
 **Given:** wire, current $I = 2.5\,\text{A}$, distance $r = 5.0\,\text{mm}$; the effect of the other wire is ignored; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
@@ -134,12 +134,12 @@
 **Substitution:** The current is $I = \dfrac{2\pi \cdot 1.61 \cdot 10^{-6}\,\text{T}\,\text{m}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}} = 8.05\,\text{A}$, and the field is $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 8.05\,\text{A}}{2\pi \cdot 0.030\,\text{m}} = 5.37 \cdot 10^{-5}\,\text{T}$
 **Answer:** $54\,\mu\text{T}$, two significant figures like the measurement results.
 **Reasonableness:** The distance $3.0\,\text{cm}$ is between the measured distances $2.0\,\text{cm}$ and $4.0\,\text{cm}$, and $54\,\mu\text{T}$ is between $79\,\mu\text{T}$ and $41\,\mu\text{T}$. Also $79\,\mu\text{T} \cdot 2.0 : 3.0 = 53\,\mu\text{T}$ gives the same order of magnitude.
-**Justification for part d):** The field is inversely proportional to the distance, so $B \cdot r = 161\,\mu\text{T}\,\text{cm}$ stays the same. At a distance of $0.50\,\text{cm}$ the field is $B = \dfrac{161\,\mu\text{T}\,\text{cm}}{0.50\,\text{cm}} = 322\,\mu\text{T} \approx 320\,\mu\text{T}$. The result is about twice as great as at a distance of $1.0\,\text{cm}$ ($161\,\mu\text{T}$), as it should be when the distance is halved.
+**Justification for part d):** The field is inversely proportional to the distance, so $B \cdot r = 161\,\mu\text{T}\,\text{cm}$ stays the same. At a distance of $0.50\,\text{cm}$ the field is $$\begin{aligned} B &= \dfrac{161\,\mu\text{T}\,\text{cm}}{0.50\,\text{cm}} \\ &= 322\,\mu\text{T} \\ &\approx 320\,\mu\text{T} \end{aligned}$$. The result is about twice as great as at a distance of $1.0\,\text{cm}$ ($161\,\mu\text{T}$), as it should be when the distance is halved.
 
 ## fy7-3-L2-07
-**Find:** how the $60\,{}^\circ$ tilt of the sensor relative to the axis affects the measurement of the field inside the coil.
+**Find:** how the $60^\circ$ tilt of the sensor relative to the axis affects the measurement of the field inside the coil.
 **Principle:** The sensor measures the component of the magnetic flux density in the direction of the sensor itself. Inside the coil the field is uniform and along the axis, so a sensor at an angle $\alpha$ to the axis shows the value $B \cos \alpha$. The field itself does not change, only the part of the field that the sensor sees.
-**Model answer:** The reading is too small, because the sensor measures only the component in its own direction. At an angle of $60\,{}^\circ$ the reading is $B \cos 60\,{}^\circ = 0.50\,B$, that is half of the true value. The uniformity of the field does not make the direction of the sensor unimportant, and the field does not become stronger or weaker because of the tilt. If all the measurements are made with the same tilt, the slope of the graph and the $\mu_0$ calculated from it come out too small. The Earth's field adds a constant term to the reading, which is removed by zeroing the sensor while the current is off; it does not change the slope. The error is avoided by setting the sensor along the axis and turning it until the reading is greatest.
+**Model answer:** The reading is too small, because the sensor measures only the component in its own direction. At an angle of $60^\circ$ the reading is $B \cos 60^\circ = 0.50\,B$, that is half of the true value. The uniformity of the field does not make the direction of the sensor unimportant, and the field does not become stronger or weaker because of the tilt. If all the measurements are made with the same tilt, the slope of the graph and the $\mu_0$ calculated from it come out too small. The Earth's field adds a constant term to the reading, which is removed by zeroing the sensor while the current is off; it does not change the slope. The error is avoided by setting the sensor along the axis and turning it until the reading is greatest.
 
 ## fy7-3-L3-01
 **Given:** wire at $r = 5.0\,\text{cm}$ above the compass, deflection of the needle $\alpha = 30^\circ$, horizontal component of the Earth's field $B_\text{h} = 14\,\mu\text{T}$; the field of the wire $B_\text{w}$ is perpendicular to $B_\text{h}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
@@ -172,7 +172,7 @@
 **Reasonableness:** The point is nearer the wire with the weaker current, as it should be. Check: $4.0\,\text{A} : 4.0\,\text{cm} = 1.0\,\tfrac{\text{A}}{\text{cm}}$ and $6.0\,\text{A} : 6.0\,\text{cm} = 1.0\,\tfrac{\text{A}}{\text{cm}}$, so the fields are equal.
 
 ## fy7-3-L3-04
-**Given:** height of the wire above the compass $h = 4.0\,\text{cm}$, points of the table $(I;\ \alpha)$: $(1.0\,\text{A};\ 17.5\,{}^\circ)$, $(2.0\,\text{A};\ 32.0\,{}^\circ)$, $(3.0\,\text{A};\ 43.5\,{}^\circ)$, $(4.0\,\text{A};\ 51.0\,{}^\circ)$ and $(5.0\,\text{A};\ 57.5\,{}^\circ)$; the field of the wire $B_\text{w}$ is perpendicular to the horizontal component $B_\text{h}$ of the Earth's field; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
+**Given:** height of the wire above the compass $h = 4.0\,\text{cm}$, points of the table $(I;\ \alpha)$: $(1.0\,\text{A};\ 17.5^\circ)$, $(2.0\,\text{A};\ 32.0^\circ)$, $(3.0\,\text{A};\ 43.5^\circ)$, $(4.0\,\text{A};\ 51.0^\circ)$ and $(5.0\,\text{A};\ 57.5^\circ)$; the field of the wire $B_\text{w}$ is perpendicular to the horizontal component $B_\text{h}$ of the Earth's field; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
 **Find:** horizontal component $B_\text{h}$ of the Earth's field in microtesla
 **Principle:** Linearisation: the angle $\alpha$ is not directly proportional to the current, but $\tan \alpha$ may be, so the graph chosen is $\tan \alpha$ as a function of the current. The needle turns to the direction of the total field. The fields $B_\text{h}$ and $B_\text{w}$ are perpendicular to each other, so $\tan \alpha = B_\text{w} : B_\text{h}$. The wire is long and straight, so $B_\text{w} = \tfrac{\mu_0 I}{2\pi h}$. Combining these gives $\tan \alpha = \tfrac{\mu_0}{2\pi h B_\text{h}} \cdot I = k I$, so $\tan \alpha$ is directly proportional to the current if $B_\text{w}$ is, and the slope $k$ of the line gives $B_\text{h}$.
 **Reading the graph:** The tangents are $0.315$, $0.625$, $0.949$, $1.235$ and $1.570$. The ratios $\tan \alpha : I$ are $0.315$, $0.312$, $0.316$, $0.309$ and $0.314\,\tfrac{1}{\text{A}}$, that is constant to within about $2\,\%$. The points lie on a line through the origin, so the field of the wire is directly proportional to the current. The slope of the line is $k = 0.313\,\tfrac{1}{\text{A}}$.
@@ -180,8 +180,8 @@
 **Conversions:** $h = 4.0 \cdot 0.01\,\text{m} = 0.040\,\text{m}$; finally $1\,\mu\text{T} = 10^{-6}\,\text{T}$.
 **Substitution:** $B_\text{h} = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}}{2\pi \cdot 0.040\,\text{m} \cdot 0.313\,\tfrac{1}{\text{A}}} = 1.60 \cdot 10^{-5}\,\text{T}$
 **Answer:** $16\,\mu\text{T}$, two significant figures like the height $4.0\,\text{cm}$ and the angles.
-**Reasonableness:** The horizontal component is smaller than the total Earth's field of about $50\,\mu\text{T}$, as it should be. At the current $3.0\,\text{A}$ the field of the wire is $2 \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 3.0\,\text{A} : 0.040\,\text{m} = 15\,\mu\text{T}$, almost as great as $B_\text{h}$, so the needle should turn almost $45\,{}^\circ$. In the table the angle is $43.5\,{}^\circ$.
-**Justification for part c):** The angle is $\alpha = \arctan (k I)$. The tangent is not directly proportional to the angle, so the angle is not directly proportional to the current. The growth of the angle slows down: when the current increases from $1.0\,\text{A}$ to $2.0\,\text{A}$ the angle grows by $14.5\,{}^\circ$, but from $4.0\,\text{A}$ to $5.0\,\text{A}$ only by $6.5\,{}^\circ$. When the current is large, the field of the wire is much greater than $B_\text{h}$, and the total field points almost in the direction of the field of the wire. That is perpendicular to the original north direction, so $\alpha$ approaches $90\,{}^\circ$ but never reaches it, because $B_\text{h}$ does not vanish.
+**Reasonableness:** The horizontal component is smaller than the total Earth's field of about $50\,\mu\text{T}$, as it should be. At the current $3.0\,\text{A}$ the field of the wire is $2 \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 3.0\,\text{A} : 0.040\,\text{m} = 15\,\mu\text{T}$, almost as great as $B_\text{h}$, so the needle should turn almost $45^\circ$. In the table the angle is $43.5^\circ$.
+**Justification for part c):** The angle is $\alpha = \arctan (k I)$. The tangent is not directly proportional to the angle, so the angle is not directly proportional to the current. The growth of the angle slows down: when the current increases from $1.0\,\text{A}$ to $2.0\,\text{A}$ the angle grows by $14.5^\circ$, but from $4.0\,\text{A}$ to $5.0\,\text{A}$ only by $6.5^\circ$. When the current is large, the field of the wire is much greater than $B_\text{h}$, and the total field points almost in the direction of the field of the wire. That is perpendicular to the original north direction, so $\alpha$ approaches $90^\circ$ but never reaches it, because $B_\text{h}$ does not vanish.
 
 ## fy7-3-L3-05
 **Given:** length of the wire $L = 30\,\text{m}$, diameter of the metal $0.50\,\text{mm}$, with insulation $d_\text{i} = 0.55\,\text{mm}$, $\rho = 1.7 \cdot 10^{-8}\,\Omega\,\text{m}$, diameter of the tube $d = 3.0\,\text{cm}$, voltage $U = 6.0\,\text{V}$; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$
@@ -191,7 +191,7 @@
 **Conversions:** $d = 0.030\,\text{m}$, $d_\text{i} = 0.55 \cdot 10^{-3}\,\text{m}$ and the diameter of the metal $d_\text{m} = 0.50 \cdot 10^{-3}\,\text{m}$; finally $1\,\text{mT} = 10^{-3}\,\text{T}$.
 **Substitution:** a) $N = \dfrac{30\,\text{m}}{\pi \cdot 0.030\,\text{m}} = 318$ and $l = 318.3 \cdot 0.55 \cdot 10^{-3}\,\text{m} = 0.175\,\text{m}$. The length is about $5.8$ times the diameter, so the coil is long enough. b) $A = \pi \cdot (0.25 \cdot 10^{-3}\,\text{m})^2 = 1.96 \cdot 10^{-7}\,\text{m}^2$, $R = \dfrac{1.7 \cdot 10^{-8}\,\Omega\,\text{m} \cdot 30\,\text{m}}{1.96 \cdot 10^{-7}\,\text{m}^2} = 2.60\,\Omega$ and $I = \dfrac{6.0\,\text{V}}{2.60\,\Omega} = 2.31\,\text{A}$. c) $B = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{318.3 \cdot 2.31\,\text{A}}{0.175\,\text{m}} = 5.28 \cdot 10^{-3}\,\text{T} = 5.28\,\text{mT}$
 **Answer:** $5.3\,\text{mT}$, two significant figures like the voltage $6.0\,\text{V}$ and the diameter $3.0\,\text{cm}$.
-**Reasonableness:** In a tight single-layer coil $N : l = 1 : d_\text{i}$, so $B = \mu_0 I : d_\text{i} = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 2.31\,\text{A} : 0.55 \cdot 10^{-3}\,\text{m} = 5.28\,\text{mT}$, the same result. The field is about $100$ times the Earth's field. The power is $U I = 6.0\,\text{V} \cdot 2.31\,\text{A} = 13.9\,\text{W}$, so the thin wire warms up and the electromagnet can be used only for short periods.
+**Reasonableness:** In a tight single-layer coil $N : l = 1 : d_\text{i}$, so $$\begin{aligned} B &= \mu_0 I : d_\text{i} \\ &= 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 2.31\,\text{A} \\ &: 0.55 \cdot 10^{-3}\,\text{m} \\ &= 5.28\,\text{mT} \end{aligned}$$, the same result. The field is about $100$ times the Earth's field. The power is $U I = 6.0\,\text{V} \cdot 2.31\,\text{A} = 13.9\,\text{W}$, so the thin wire warms up and the electromagnet can be used only for short periods.
 **Justification for part d):** When the wire is twice as long, the resistance $R = \rho L : A$ doubles and the current $I = U : R$ halves to $1.16\,\text{A}$. There are twice as many turns, but they are in a single layer, so the length $l$ of the coil doubles and the turn density $N : l$ stays the same. The field $B = \mu_0 \tfrac{N}{l} I$ therefore halves to $2.6\,\text{mT}$. If there were two layers, $l$ would stay the same and the field would stay the same, but in this problem the coil is a single layer.
 
 ## fy7-3-L2-08
@@ -211,11 +211,11 @@ $\dfrac{B_2}{B_1} = 3 \cdot \dfrac{1}{2} = 1.5$
 
 Check with numbers:
 
-$B_1 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{240 \cdot 0.60\,\text{A}}{0.12\,\text{m}}$
+$$\begin{aligned} &B_1 \\ &= 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{240 \cdot 0.60\,\text{A}}{0.12\,\text{m}} \end{aligned}$$
 
 $B_1 \approx 1.51 \cdot 10^{-3}\,\text{T}$
 
-$B_2 = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{240 \cdot 1.8\,\text{A}}{0.24\,\text{m}}$
+$$\begin{aligned} &B_2 \\ &= 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot \dfrac{240 \cdot 1.8\,\text{A}}{0.24\,\text{m}} \end{aligned}$$
 
 $B_2 \approx 2.26 \cdot 10^{-3}\,\text{T}$
 
@@ -230,7 +230,7 @@ So the field grows from about $1.5\,\text{mT}$ to about $2.3\,\text{mT}$. Tripli
 **Conversions:** $k = 2.5\,\tfrac{\text{mT}}{\text{A}} = 2.5 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}}$
 **Substitution:** $N = \dfrac{2.5 \cdot 10^{-3}\,\tfrac{\text{T}}{\text{A}} \cdot 0.250\,\text{m}}{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}} = 497$
 **Answer:** The coil has about $5.0 \cdot 10^2$ turns (calculated $497$), two significant figures like the slope that was read.
-**Reasonableness:** Check: $B = \mu_0 N I : l = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 497 \cdot 1.0\,\text{A} : 0.250\,\text{m} = 2.5\,\text{mT}$, which matches the line at $1.0\,\text{A}$. The number of turns is ordinary for a coil.
+**Reasonableness:** Check: $$\begin{aligned} B &= \mu_0 N I : l \\ &= 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 497 \cdot 1.0\,\text{A} \\ &: 0.250\,\text{m} \\ &= 2.5\,\text{mT} \end{aligned}$$, which matches the line at $1.0\,\text{A}$. The number of turns is ordinary for a coil.
 
 ## fy7-3-L2-10
 **Given:** graph $B(r)$ of a long straight wire; $\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$

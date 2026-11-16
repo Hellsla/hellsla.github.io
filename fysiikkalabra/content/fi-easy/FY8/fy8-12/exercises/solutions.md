@@ -44,9 +44,20 @@
 **Periaate:** Yksi fotoni voi ionisoida molekyylin vain, jos sen energia on vähintään ionisaatioenergia. Fotonin energia on $E = hf = \tfrac{hc}{\lambda}$, joten mitä pidempi aallonpituus, sitä pienempi energia. Pisin ionisoiva aallonpituus kuuluu fotonille, jonka energia on tasan ionisaatioenergia.
 **Kaava:** $E = \dfrac{hc}{\lambda}$, josta $\lambda = \dfrac{hc}{E}$
 **Muunnokset:** $12{,}6\,\text{eV} = 12{,}6 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 2{,}0185 \cdot 10^{-18}\,\text{J}$, ja lopuksi $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Sijoitus:** $\lambda = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{2{,}0185 \cdot 10^{-18}\,\text{J}} = 9{,}8412 \cdot 10^{-8}\,\text{m} = 98{,}412\,\text{nm}$
+**Sijoitus:** $$
+\begin{aligned}
+\lambda &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot \dfrac{2{,}998 \cdot 10^{8}\,\text{m/s}}{2{,}0185 \cdot 10^{-18}\,\text{J}} \\
+&= 9{,}8412 \cdot 10^{-8}\,\text{m} \\
+&= 98{,}412\,\text{nm}
+\end{aligned}
+$$
 **Vastaus:** $98{,}4\,\text{nm}$. Vastauksessa on kolme merkitsevää numeroa, koska ionisaatioenergiassa $12{,}6\,\text{eV}$ on kolme merkitsevää numeroa.
-**Järkevyys:** Aallonpituus on paljon lyhyempi kuin näkyvän valon aallonpituus $380$–$720\,\text{nm}$. Näkyvä valo ei siis ionisoi vettä, kuten pitää. Tarkistus: $1240\,\text{eV}\,\text{nm} : 12{,}6\,\text{eV} \approx 98\,\text{nm}$.
+**Järkevyys:** Aallonpituus on paljon lyhyempi kuin näkyvän valon aallonpituus $380$–$720\,\text{nm}$. Näkyvä valo ei siis ionisoi vettä, kuten pitää. Tarkistus: $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 12{,}6\,\text{eV} &\approx 98\,\text{nm}
+\end{aligned}
+$$.
 
 ## fy8-12-L2-01
 **Annettu:** pulssimäärä lähteen lähellä $N = 1260$, taustasäteilyn pulssimäärä $N_\text{t} = 72$, kumpikin ajassa $t = 3{,}00\,\text{min}$
@@ -96,7 +107,12 @@
 **Muunnokset:** $s_\beta = 3{,}6\,\text{m} = 360\,\text{cm}$, jotta radat ovat samassa yksikössä. Energiat ovat molemmat megaelektronivoltteina.
 **Sijoitus:** $\dfrac{E_\alpha s_\beta}{E_\beta s_\alpha} = \dfrac{5{,}49\,\text{MeV} \cdot 360\,\text{cm}}{1{,}0\,\text{MeV} \cdot 4{,}1\,\text{cm}} = \dfrac{1976{,}4}{4{,}1} = 482{,}05$
 **Vastaus:** noin $4{,}8 \cdot 10^{2}$ kertaa. Vastauksessa on kaksi merkitsevää numeroa, koska matkassa $4{,}1\,\text{cm}$ ja energiassa $1{,}0\,\text{MeV}$ on kaksi merkitsevää numeroa.
-**Järkevyys:** Alfahiukkanen muodostaa senttimetrillä noin $5{,}49 \cdot 10^{6} : 34 : 4{,}1 \approx 3{,}9 \cdot 10^{4}$ ioniparia. Beetahiukkanen muodostaa senttimetrillä noin $1{,}0 \cdot 10^{6} : 34 : 360 \approx 82$ ioniparia. Suhde on noin $480$. Siksi alfahiukkanen pysähtyy niin lyhyelle matkalle ja vaurioittaa soluja keskittyneesti.
+**Järkevyys:** Alfahiukkanen muodostaa senttimetrillä noin $$
+\begin{aligned}
+&5{,}49 \cdot 10^{6} : 34 : 4{,}1 \\
+&\approx 3{,}9 \cdot 10^{4}
+\end{aligned}
+$$ ioniparia. Beetahiukkanen muodostaa senttimetrillä noin $1{,}0 \cdot 10^{6} : 34 : 360 \approx 82$ ioniparia. Suhde on noin $480$. Siksi alfahiukkanen pysähtyy niin lyhyelle matkalle ja vaurioittaa soluja keskittyneesti.
 
 ## fy8-12-L3-02
 **Annettu:** pulssitaajuus ilman suojaa $R_0 = 2400\,\tfrac{1}{\text{min}}$, lyijyn $d_1 = 11{,}0\,\text{mm}$ takana $R_1 = 630\,\tfrac{1}{\text{min}}$, taustasäteily $R_\text{t} = 30\,\tfrac{1}{\text{min}}$
@@ -183,6 +199,38 @@ Lyijy ei ole tässä paras suoja, vaikka sen puoliintumispaksuus on pienin. Vesi
 **Periaate:** Beetahiukkasella on kantama, koska se luovuttaa energiansa ionisoimalla. Muutaman millimetrin alumiini pysäyttää sen. Gammasäteily vaimenee kerros kerrokselta. Esimerkiksi alumiinin puoliintumispaksuus on kymmeniä millimetrejä. GM-putki laskee tapahtumat mutta ei erota säteilylajeja.
 **Mallivastaus:** Lajit erottaa vertaamalla nettopulssimäärää ilman estettä ja ohuen alumiinilevyn takana. Jos nettopulssimäärä putoaa lähes nollaan, lähde on beetalähde, koska levy pysäyttää beetahiukkaset. Jos pulssimäärä pienenee vain vähän, lähde on gammalähde, koska ohut alumiinilevy päästää suurimman osan gammafotoneista läpi. Paperiarkki ei erota lajeja, koska se ei pysäytä beetahiukkasia. Lyijylevy ei erota niitä, koska se vaimentaa molempia. GM-putken pulssit ovat aina yhtä suuria, joten pulssin korkeudesta ei voi päätellä lajia.
 
+## fy8-12-L2-08
+**Annettu:** aineistosta: kymmenen tuotetta, joita myytiin koruina tai unimaskina (muun muassa ”Quantum Pendant” -riipus, joka oli nimetty 5G-vastaiseksi, sekä ”negative ion” -rannekoruja, kaulakoruja ja unimaski). RIVM tutki ne. Tuotteissa oli radioaktiivisia aineita, ja ne lähettivät koko ajan ionisoivaa säteilyä. Säteilytaso oli matala ja terveyshaitan riski pieni. Jos tuotetta kuitenkin käyttäisi vuoden ajan $24\,\text{h}$ vuorokaudessa, ihon altistus voisi ylittää Alankomaiden tiukan rajan. Myynti on kielletty. Oletus: 5G-signaalin taajuus $f = 3{,}5\,\text{GHz}$. Taulukosta $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
+**Kysytty:** a) tuotteiden väite nimistä päätellen ja viranomaisen havainto; b) radioaaltofotonin energia $E$ mikroelektronivoltteina ja vertailu; c) altistuksen mittaaminen; d) tarvittava näyttö ja väitteen luokittelu
+**Periaate:** Säteily ionisoi vain, jos yksi fotoni tai hiukkanen voi irrottaa elektronin atomista. Siksi ratkaisee yhden fotonin energia $E = hf$. Intensiteetti ei ratkaise. Suuri intensiteetti tarkoittaa vain, että fotoneja on paljon, ja jokaisella niistä on yhä sama pieni energia. Fotonin energia kasvaa taajuuden mukana. Radioaallon taajuus on paljon pienempi kuin gammasäteilyn.
+**Mallivastaus a):** Nimestä ”anti-5G” voi päätellä, että tuotteen väitettiin suojaavan 5G-verkon säteilyltä. Nimestä ”negative ion” (negatiivinen ioni) voi päätellä, että sen väitettiin tuottavan jonkinlaisen ionivaikutuksen. Tämä on päätelmä nimistä. Uutinen ei kerro, mitä myyjät tarkemmin väittivät. Viranomaisen havainto on eri asia: tuotteissa oli radioaktiivisia aineita, ja ne lähettivät koko ajan ionisoivaa säteilyä. Säteilytaso oli matala. Jatkuva käyttö vuoden ajan voisi kuitenkin ylittää ihoaltistuksen rajan, ja siksi myynti kiellettiin.
+**Kaava:** $E = hf$. Elektronivoltteina $E_\text{eV} = \dfrac{E}{1{,}602 \cdot 10^{-19}\,\text{J/eV}}$. Vertailussa ionisaatioenergia jaetaan fotonin energialla.
+**Muunnokset:** $f = 3{,}5\,\text{GHz} = 3{,}5 \cdot 10^{9}\,\text{Hz} = 3{,}5 \cdot 10^{9}\,\tfrac{1}{\text{s}}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$ ja $1\,\mu\text{eV} = 10^{-6}\,\text{eV}$.
+**Sijoitus:** Kohta b):
+
+$$\begin{aligned}
+E &= hf \\
+&= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 3{,}5 \cdot 10^{9}\,\tfrac{1}{\text{s}} \\
+&= 2{,}319 \cdot 10^{-24}\,\text{J} \\
+&= \dfrac{2{,}319 \cdot 10^{-24}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\text{J/eV}} \\
+&= 1{,}448 \cdot 10^{-5}\,\text{eV} \\
+&= 14{,}48\,\mu\text{eV}
+\end{aligned}$$
+
+Vertailu: elektronin irrottamiseen tarvittavan energian $10\,\text{eV}$ suhde fotonin energiaan on
+
+$$\dfrac{10\,\text{eV}}{1{,}448 \cdot 10^{-5}\,\text{eV}} = 6{,}9 \cdot 10^{5}$$
+
+ja gammafotonin energian $10^{5}\,\text{eV}$ suhde fotonin energiaan on
+
+$$\dfrac{10^{5}\,\text{eV}}{1{,}448 \cdot 10^{-5}\,\text{eV}} = 6{,}9 \cdot 10^{9}$$
+
+Suuremmilla gammaenergioilla suhde on vielä suurempi.
+**Mallivastaus c):** Altistus mitattaisiin annosnopeusmittarilla tai GM-putkella. Mittari asetetaan tuotteen lähelle samalle etäisyydelle kuin missä tuote on ihoon nähden. Etäisyys valitaan tarkoituksella, koska säteily heikkenee etäisyyden kasvaessa. Ensin mitataan taustasäteily samassa paikassa ilman tuotetta. Tausta vähennetään tuotteen kanssa mitatusta pulssi- tai annosnopeudesta, ja näin saadaan nettoarvo. Mittausajan pitää olla pitkä, jotta pulssien satunnaisvaihtelu jää pieneksi. Annos saadaan kertomalla annosnopeus käyttöajalla. Yksi vuosi vuorokauden ympäri on $8760\,\text{h}$. Säteilylaji tunnistetaan asettamalla tuotteen ja mittarin väliin paperi, ohut alumiinilevy ja lyijylevy. Paperi pysäyttää alfahiukkaset ja alumiini beetahiukkaset. Gammasäteilyä vaimentaa parhaiten lyijy. Uutinen ei kerro, miten RIVM mittasi tuotteet. Tämä on siis yleinen menetelmä eikä kuvaus heidän tutkimuksestaan.
+**Mallivastaus d):** Väitetyistä terveysvaikutuksista tarvittaisiin ensin mekanismi, joka sopii fysiikkaan: mikä tuotteessa vaikuttaa kehoon ja miten. Lisäksi tarvittaisiin kontrolloituja sokkotutkimuksia. Niissä on oikea tuote ja samannäköinen tuote, jolla ei ole vaikutusta. Tutkittavat ja tutkijat eivät tiedä, kumpi on kumpi. Tarvitaan myös riittävän suuri otos ja muiden tutkimusryhmien samat tulokset. ”Anti-5G”-väite on fysikaalisesti väärä. Pieni riipus ei voi pysäyttää radioaaltoja, jotka tulevat joka suunnasta koko kehoon. 5G-signaali ei myöskään ionisoi, koska sen fotonien energia on pieni. Riipus ei siis suojaa 5G:ltä, mutta se tuo ihon lähelle ionisoivaa säteilyä. Se on todellinen vaikutus, jonka viranomainen havaitsi. Luokittelu: suojaväite on fysikaalisesti väärä, ja todellinen vaikutus on tuotteen oma ionisoiva säteily.
+**Vastaus:** $14\,\mu\text{eV}$, kaksi merkitsevää numeroa. Taajuudessa $3{,}5\,\text{GHz}$ on kaksi merkitsevää numeroa. Laatikko hyväksyy myös arvon $14{,}5\,\mu\text{eV}$. Radioaaltofotonin energia on noin miljoona kertaa pienempi kuin elektronin irrottamiseen tarvittava energia. Siksi radioaallot eivät ionisoi, vaikka intensiteetti olisi suuri. Gammafotonit ionisoivat, koska niiden energia on yli $10^{5}\,\text{eV}$.
+**Järkevyys:** Suuruusluokka: $6 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 4 \cdot 10^{9}\,\tfrac{1}{\text{s}} \approx 2 \cdot 10^{-24}\,\text{J}$. Kun jaetaan luvulla $1{,}6 \cdot 10^{-19}$, saadaan noin $1{,}5 \cdot 10^{-5}\,\text{eV}$, kuten laskettiin. Radioaaltofotonin energia on miljoonasosia elektronivoltista. Ionisaatioon tarvitaan $10\,\text{eV}$ tai enemmän, joten ero on valtava.
+
 ## fy8-12-L3-04
 **Annettu:** lähde cesium-137 ($662\,\text{keV}$), paksuudet $d = 0$, $6$, $12$, $18$, $24$ ja $30\,\text{mm}$ ja pulssit $60\,\text{s}$:ssa $2640$, $1895$, $1330$, $950$, $685$ ja $495$; tausta $N_\text{t} = 40$; taulukon puoliintumispaksuudet lyijy $5{,}5\,\text{mm}$, rauta $12\,\text{mm}$, alumiini $34\,\text{mm}$, betoni $39\,\text{mm}$, vesi $81\,\text{mm}$
 **Kysytty:** puoliintumispaksuuden keskiarvo $d_{1/2}$ millimetreinä, levyjen aine, paksuus joka pudottaa nettopulssimäärän yhteen prosenttiin sekä miksi paksuin mittaus on epävarmin
@@ -196,13 +244,18 @@ Lyijy ei ole tässä paras suoja, vaikka sen puoliintumispaksuus on pienin. Vesi
 
 ## fy8-12-L3-05
 **Annettu:** lyijyseinän paksuus $d = 8{,}0\,\text{mm}$ ja puoliintumispaksuus $d_{1/2} = 5{,}5\,\text{mm}$, geometrinen hyötysuhde $\eta = 1{,}5\,\% = 0{,}015$, viiden $60\,\text{s}$:n jakson pulssit lähteen kanssa $1010$, $987$, $1032$, $1001$ ja $1020$ sekä ilman lähdettä $24$, $29$, $22$, $27$ ja $28$
-**Kysytty:** lähteen aktiivisuus $A$ kilobecquereleina
+**Kysytty:** lähteen aktiivisuus $A$ kilobecquereleinä
 **Periaate:** Tausta vähennetään ensin. Nettopulssitaajuus kertoo, kuinka monta fotonia sekunnissa osuu putkeen. Lähteen fotoneista vain osuus $\eta$ lähtee putken suuntaan, ja lyijyseinä vaimentaa fotoneja vaimenemislain mukaan. Aktiivisuus on hajoamisten määrä sekunnissa. Jokainen hajoaminen lähettää oletuksen mukaan yhden fotonin. Lähteen fotonit sekunnissa saa, kun jakaa pulssitaajuuden sillä osuudella, joka pääsee putkeen asti.
 **Kaava:** $R = \dfrac{N_\text{l,ka} - N_\text{t,ka}}{t}$, seinän läpäisevä osuus $T = \left(\tfrac{1}{2}\right)^{d/d_{1/2}}$ ja $R = A \cdot T \cdot \eta$, josta $A = \dfrac{R}{T \cdot \eta}$
 **Muunnokset:** $t = 60\,\text{s}$ ja $1{,}5\,\% = 0{,}015$. Lopuksi $1\,\text{kBq} = 1000\,\text{Bq}$ ja $1\,\text{Bq} = 1\,\tfrac{1}{\text{s}}$.
 **Sijoitus:** a) Lähteen kanssa pulsseja on yhteensä $5050$ ja ilman lähdettä $130$. Keskiarvot ovat $\dfrac{5050}{5} = 1010$ ja $\dfrac{130}{5} = 26$, ja $R = \dfrac{1010 - 26}{60\,\text{s}} = \dfrac{984}{60\,\text{s}} = 16{,}4\,\tfrac{1}{\text{s}}$. b) $T = \left(\tfrac{1}{2}\right)^{8{,}0\,\text{mm} / 5{,}5\,\text{mm}} = \left(\tfrac{1}{2}\right)^{1{,}4545} = 0{,}3649$. c) $A = \dfrac{16{,}4\,\tfrac{1}{\text{s}}}{0{,}3649 \cdot 0{,}015} = \dfrac{16{,}4\,\tfrac{1}{\text{s}}}{0{,}005473} = 2997\,\text{Bq} = 3{,}0\,\text{kBq}$
 **Vastaus:** $3{,}0\,\text{kBq}$. Vastauksessa on kaksi merkitsevää numeroa kuten paksuudessa $8{,}0\,\text{mm}$ ja hyötysuhteessa $1{,}5\,\%$. Nettopulssitaajuus on $16{,}4\,\tfrac{1}{\text{s}}$ (a), ja seinän läpäisee noin $36\,\%$ fotoneista (b). Kohdassa d) todellinen aktiivisuus on suurempi, koska putki ei laske jokaista fotonia ja jokaiseen hajoamiseen ei liity yhtä fotonia.
-**Järkevyys:** Seinässä on $1{,}45$ puoliintumispaksuutta. Läpäisevä osuus on siksi lukujen $\tfrac{1}{2}$ ja $\tfrac{1}{4}$ välissä, kuten $0{,}36$. Takaisinlasku: $3000\,\text{Bq} \cdot 0{,}365 \cdot 0{,}015 = 16{,}4\,\tfrac{1}{\text{s}}$, kuten mitattiin. Kohdan d) perustelu: GM-putki havaitsee gammafotoneista vain pienen osan. Kaikkien putkeen osuvien fotonien laskeminen pulsseiksi aliarvioi siksi hajoamiset. Lisäksi cesium-137:n hajoamisista vain noin $85\,\%$ lähettää gammafotonin. Kumpikin oletus tekee arviosta liian pienen.
+**Järkevyys:** Seinässä on $1{,}45$ puoliintumispaksuutta. Läpäisevä osuus on siksi lukujen $\tfrac{1}{2}$ ja $\tfrac{1}{4}$ välissä, kuten $0{,}36$. Takaisinlasku: $$
+\begin{aligned}
+&3000\,\text{Bq} \cdot 0{,}365 \cdot 0{,}015 \\
+&= 16{,}4\,\tfrac{1}{\text{s}}
+\end{aligned}
+$$, kuten mitattiin. Kohdan d) perustelu: GM-putki havaitsee gammafotoneista vain pienen osan. Kaikkien putkeen osuvien fotonien laskeminen pulsseiksi aliarvioi siksi hajoamiset. Lisäksi cesium-137:n hajoamisista vain noin $85\,\%$ lähettää gammafotonin. Kumpikin oletus tekee arviosta liian pienen.
 
 ## fy8-12-L3-06
 **Annettu:** taulukon osuudet vedessä ja lyijyssä energioilla $0{,}05$–$20\,\text{MeV}$; tilanteet (1) $50\,\text{keV}$ pehmytkudoksessa, (2) $50\,\text{keV}$ lyijyssä, (3) $662\,\text{keV}$ vedessä, (4) $20\,\text{MeV}$ lyijyssä; parinmuodostuksen fotonin energia $E_\gamma = 5{,}0\,\text{MeV}$ ja $m_ec^2 = 0{,}511\,\text{MeV}$

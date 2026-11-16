@@ -6,7 +6,7 @@
 **Conversions:** $480.0\,\text{kPa} = 480\,000\,\text{Pa}$. The volume is already in cubic metres, so $\text{Pa} \cdot \text{m}^3 = \text{J}$ without further conversion. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $W = 480\,000\,\text{Pa} \cdot 0.0250\,\text{m}^3 = 12\,000\,\text{J} = 12.0\,\text{kJ}$
 **Answer:** $12.0\,\text{kJ}$, three significant figures. Both values, the pressure $480.0\,\text{kPa}$ and the change in volume $0.0250\,\text{m}^3$, are given with at least three figures.
-**Reasonableness:** The unit is correct: $\text{Pa} \cdot \text{m}^3 = \tfrac{\text{N}}{\text{m}^2} \cdot \text{m}^3 = \text{N} \cdot \text{m} = \text{J}$. Estimate: $500\,\text{kPa} \cdot 0.025\,\text{m}^3 \approx 12\,\text{kJ}$. The work is positive because the steam expands and pushes the piston. It would be enough to lift a load of about 1.2 tonnes by a metre, and the pistons of a locomotive do this much work many times a second.
+**Reasonableness:** The unit is correct: $\text{Pa} \cdot \text{m}^3 = \tfrac{\text{N}}{\text{m}^2} \cdot \text{m}^3 = \text{N} \cdot \text{m} = \text{J}$. Estimate: $$\begin{aligned} &500\,\text{kPa} \cdot 0.025\,\text{m}^3 \\ &\approx 12\,\text{kJ} \end{aligned}$$. The work is positive because the steam expands and pushes the piston. It would be enough to lift a load of about 1.2 tonnes by a metre, and the pistons of a locomotive do this much work many times a second.
 
 ## fy3-11-L1-02
 **Given:** atmospheric pressure $p = 101\,\text{kPa}$, additional volume taken by the steam $\Delta V = 1.70\,\textsf{l}$
@@ -16,7 +16,7 @@
 **Conversions:** $101\,\text{kPa} = 101\,000\,\text{Pa}$ and $1\,\textsf{l} = 10^{-3}\,\text{m}^3$, so $1.70\,\textsf{l} = 0.00170\,\text{m}^3$. Then $\text{Pa} \cdot \text{m}^3 = \text{J}$.
 **Substitution:** $W = 101\,000\,\text{Pa} \cdot 0.00170\,\text{m}^3 = 171.7\,\text{J} \approx 172\,\text{J}$
 **Answer:** $172\,\text{J}$, three significant figures, like the values $101\,\text{kPa}$ and $1.70\,\textsf{l}$.
-**Reasonableness:** Estimate: $100\,\text{kPa} \cdot 0.0017\,\text{m}^3 = 170\,\text{J}$. Evaporating a gram takes about $2.3\,\text{kJ}$ of heat, so the share of the work is $\tfrac{172\,\text{J}}{2300\,\text{J}} \approx 7.5\,\%$, less than a tenth. The rest of the heat stays as internal energy of the steam. The puff of steam from the sauna stones is exactly this expansion.
+**Reasonableness:** Estimate: $$\begin{aligned} &100\,\text{kPa} \cdot 0.0017\,\text{m}^3 \\ &= 170\,\text{J} \end{aligned}$$. Evaporating a gram takes about $2.3\,\text{kJ}$ of heat, so the share of the work is $\tfrac{172\,\text{J}}{2300\,\text{J}} \approx 7.5\,\%$, less than a tenth. The rest of the heat stays as internal energy of the steam. The puff of steam from the sauna stones is exactly this expansion.
 
 ## fy3-11-L1-03
 **Given:** thermal power of the reactor $P_\text{heat} = 4.30 \cdot 10^3\,\text{MW}$, electric power $P_\text{el} = 1.60 \cdot 10^3\,\text{MW}$
@@ -26,7 +26,7 @@
 **Conversions:** Both powers are in megawatts, so the unit cancels and no conversion is needed. A decimal number is changed to a percentage by multiplying by one hundred.
 **Substitution:** $\eta = \dfrac{1.60 \cdot 10^3\,\text{MW}}{4.30 \cdot 10^3\,\text{MW}} = 0.3721 = 37.21\,\%$
 **Answer:** $37.2\,\%$, three significant figures. Both powers ($1.60 \cdot 10^3\,\text{MW}$ and $4.30 \cdot 10^3\,\text{MW}$) are given with three figures.
-**Reasonableness:** The efficiency is below $100\,\%$, as it should be for a heat engine, because part of the heat has to be given up to something colder, and the typical value for a nuclear power plant is about $35\,\%$. Energy balance: the seawater takes $4300\,\text{MW} - 1600\,\text{MW} = 2700\,\text{MW}$ from the condenser, more than the unit produces as electricity. Estimate: $\tfrac{1600}{4300} \approx \tfrac{1}{2.7} \approx 0.37$.
+**Reasonableness:** The efficiency is below $100\,\%$, as it should be for a heat engine, because part of the heat has to be given up to something colder, and the typical value for a nuclear power plant is about $35\,\%$. Energy balance: the seawater takes $$\begin{aligned} &4300\,\text{MW} - 1600\,\text{MW} \\ &= 2700\,\text{MW} \end{aligned}$$ from the condenser, more than the unit produces as electricity. Estimate: $\tfrac{1600}{4300} \approx \tfrac{1}{2.7} \approx 0.37$.
 
 ## fy3-11-L1-04
 **Given:** read from the graph, the pressure stays constant at $p = 250\,\text{kPa}$, and the volume grows from $V_1 = 1.0\,\textsf{l}$ to $V_2 = 4.0\,\textsf{l}$
@@ -47,7 +47,7 @@
 **Conversions:** Both energies are in kilowatt-hours, so the unit cancels and there is no need to convert to joules. A decimal number is changed to a percentage by multiplying by one hundred.
 **Substitution:** $\eta = \dfrac{2.60\,\text{kWh}}{12.0\,\text{kWh}} = 0.2167 = 21.67\,\%$
 **Answer:** $21.7\,\%$, three significant figures. Both energies ($2.60\,\text{kWh}$ and $12.0\,\text{kWh}$) are given with three figures.
-**Reasonableness:** The efficiency is below $100\,\%$, as it should be for a heat engine. A small engine falls short of the roughly $30\,\%$ of a car engine. Energy balance: the remaining $12.0\,\text{kWh} - 2.60\,\text{kWh} = 9.4\,\text{kWh}$ is transferred as heat to the surroundings, and $\tfrac{9.4}{12.0} \approx 78\,\%$ completes the efficiency to one hundred per cent.
+**Reasonableness:** The efficiency is below $100\,\%$, as it should be for a heat engine. A small engine falls short of the roughly $30\,\%$ of a car engine. Energy balance: the remaining $$\begin{aligned} &12.0\,\text{kWh} - 2.60\,\text{kWh} \\ &= 9.4\,\text{kWh} \end{aligned}$$ is transferred as heat to the surroundings, and $\tfrac{9.4}{12.0} \approx 78\,\%$ completes the efficiency to one hundred per cent.
 
 ## fy3-11-L2-01
 **Given:** electrical energy $W = 3830\,\text{MWh}$, energy of the fuel $Q_1 = 33.6\,\text{TJ} = 33.6 \cdot 10^{12}\,\text{J}$, in a day
@@ -75,7 +75,7 @@
 **Principle:** Energy is conserved, so the heat supplied to the air is divided into a change in internal energy and the work done by the air: the first law $\Delta U = Q + W$, where $W$ is the work done on the air. The piston moves lightly, so the pressure stays constant. The air expands and does the work $p\,\Delta V$, so the work done on it is $W = -p\,\Delta V$.
 **Formula:** $W = -p\,\Delta V$, so $\Delta U = Q + W = Q - p\,\Delta V$
 **Conversions:** $125\,\text{kPa} = 125\,000\,\text{Pa}$ and $1.60\,\textsf{l} = 0.00160\,\text{m}^3$, so $\text{Pa} \cdot \text{m}^3 = \text{J}$.
-**Substitution:** $\Delta U = 700.0\,\text{J} - 125\,000\,\text{Pa} \cdot 0.00160\,\text{m}^3 = 700.0\,\text{J} - 200\,\text{J} = 500\,\text{J}$
+**Substitution:** $$\begin{aligned} \Delta U &= 700.0\,\text{J} \\ &- 125\,000\,\text{Pa} \cdot 0.00160\,\text{m}^3 \\ &= 700.0\,\text{J} - 200\,\text{J} \\ &= 500\,\text{J} \end{aligned}$$
 **Answer:** $+500\,\text{J}$, that is, the internal energy grows, three significant figures. The limiting value is the work done by the air, $p\,\Delta V = 200\,\text{J}$, which has three figures and is known to the nearest joule, because the pressure $125\,\text{kPa}$ and the change in volume $1.60\,\textsf{l}$ are given with three figures. In the difference $700.0 - 200$ the less precise number decides the decimals, so the result is known to the nearest joule.
 **Reasonableness:** Of the heat, $200\,\text{J}$ is used in pushing the piston and the remaining $500\,\text{J}$ raises the temperature of the air, so $\Delta U > 0$ and $\Delta U < Q$. If the work were added to the heat, the result would be $900\,\text{J}$, more than the heat that entered the air, although the air gives up energy as it pushes the piston. So the sign is correct.
 
@@ -86,7 +86,7 @@
 **Formula:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, so $P_\text{o} = \dfrac{P_\text{a}}{\eta}$ and $P_\text{waste} = P_\text{o} - P_\text{a}$
 **Conversions:** Efficiency $40.0\,\% = \tfrac{40.0}{100} = 0.400$. The powers are already in kilowatts, so no other conversion is needed.
 **Substitution:** $P_\text{o} = \dfrac{480\,\text{kW}}{0.400} = 1200\,\text{kW}$, so $P_\text{waste} = 1200\,\text{kW} - 480\,\text{kW} = 720\,\text{kW}$
-**Answer:** $720\,\text{kW}$, two significant figures. The limiting value is the mechanical power $480\,\text{kW}$, whose first two figures are certain; the efficiency $40.0\,\%$ has three figures and does not limit the precision.
+**Answer:** $720\,\text{kW}$, three significant figures, because the mechanical power $480\,\text{kW}$ (the final zero is significant) and the efficiency $40.0\,\%$ both have three figures.
 **Reasonableness:** $60\,\%$ is wasted and $40\,\%$ is put to use, so there is $\tfrac{60}{40} = 1.5$ times as much waste heat as mechanical power: $1.5 \cdot 480\,\text{kW} = 720\,\text{kW}$. The fuel power is greater than the mechanical power, as it should be. Part of the waste heat can be used to heat the passenger cabin.
 
 ## fy3-11-L3-01
@@ -95,7 +95,7 @@
 **Principle:** The same electric and heating powers are produced in two separate plants, and the fuel power of each is obtained from the efficiency $\eta = \tfrac{P_\text{a}}{P_\text{o}}$, where $P_\text{a}$ is the useful power of the plant and $P_\text{o}$ its fuel power: $P_\text{o} = \tfrac{P_\text{a}}{\eta}$. The comparison is fair because the useful powers are the same in both cases.
 **Formula:** $P_\text{cond} = \dfrac{P_\text{e}}{\eta_\text{cond}}$ and $P_\text{hp} = \dfrac{P_\text{dh}}{\eta_\text{h}}$, so $\Delta P = \dfrac{P_\text{e}}{\eta_\text{cond}} + \dfrac{P_\text{dh}}{\eta_\text{h}} - P_\text{CHP}$
 **Conversions:** The efficiencies are $40.0\,\% = 0.400$ and $90.0\,\% = 0.900$. All powers are in megawatts, so no other conversion is needed.
-**Substitution:** $\Delta P = \dfrac{96\,\text{MW}}{0.400} + \dfrac{180\,\text{MW}}{0.900} - 320\,\text{MW} = 240\,\text{MW} + 200\,\text{MW} - 320\,\text{MW} = 120\,\text{MW}$
+**Substitution:** $$\begin{aligned} \Delta P &= \dfrac{96\,\text{MW}}{0.400} + \dfrac{180\,\text{MW}}{0.900} \\ &- 320\,\text{MW} \\ &= 240\,\text{MW} + 200\,\text{MW} \\ &- 320\,\text{MW} \\ &= 120\,\text{MW} \end{aligned}$$
 **Answer:** $120\,\text{MW}$, two significant figures. The limiting value is the electric power $96\,\text{MW}$ (two figures): it determines the fuel power of the condensing plant, $240\,\text{MW}$, to the nearest ten megawatts, and the difference $440\,\text{MW} - 320\,\text{MW}$ keeps this precision. The efficiencies $40.0\,\%$ and $90.0\,\%$ have three figures and do not limit the precision.
 **Reasonableness:** The overall efficiency is $\dfrac{96 + 180}{320} \approx 86\,\%$ in combined production and $\dfrac{276}{440} \approx 63\,\%$ in separate production, so separate production needs more fuel. A heating plant does not turn heat into work, so its losses are only in the flue gases. A condensing power plant turns heat into work, and then part of the heat must always be given up to a colder environment, usually the sea.
 
@@ -107,7 +107,7 @@
 **Conversions:** All energies are in megawatt-hours and the coefficient of performance has no unit, so no conversions are needed.
 **Substitution:** $W = \dfrac{16.0\,\text{MWh}}{2.50} = 6.40\,\text{MWh}$, so $\Delta E = Q_2 = 16.0\,\text{MWh} - 6.40\,\text{MWh} = 9.60\,\text{MWh}$, or directly $\Delta E = Q_1\left(1 - \dfrac{1}{\varepsilon}\right) = 16.0\,\text{MWh} \cdot 0.600 = 9.60\,\text{MWh}$
 **Answer:** $9.60\,\text{MWh}$ both as electricity saved and as heat taken from the outdoor air, three significant figures. The electricity of the pump, $6.40\,\text{MWh}$, is calculated from the heat demand $16.0\,\text{MWh}$ and is not a separate measurement, so the rule for differences is not used. The result is the product $Q_1\left(1 - \tfrac{1}{\varepsilon}\right)$, and its figures are limited by the heat demand $16.0\,\text{MWh}$ and the coefficient of performance $2.50$ (both three figures).
-**Reasonableness:** The electricity saved is exactly the heat brought in from the outdoor air, and the pump uses only $\tfrac{1}{2.50} = 40\,\%$ of the electricity. Checking the balance: the heat entering the house is $9.60\,\text{MWh} + 6.40\,\text{MWh} = 16.0\,\text{MWh}$. The pump is not a perpetual motion machine, because it does not create energy but uses electricity to transfer heat from cold to warm.
+**Reasonableness:** The electricity saved is exactly the heat brought in from the outdoor air, and the pump uses only $\tfrac{1}{2.50} = 40\,\%$ of the electricity. Checking the balance: the heat entering the house is $$\begin{aligned} &9.60\,\text{MWh} + 6.40\,\text{MWh} \\ &= 16.0\,\text{MWh} \end{aligned}$$. The pump is not a perpetual motion machine, because it does not create energy but uses electricity to transfer heat from cold to warm.
 
 ## fy3-11-L3-03
 **Given:** volume of fuel $V = 6.00\,\textsf{l}$ over a distance $s = 100\,\text{km}$ (the reference distance for consumption), speed $v = 80.0\,\tfrac{\text{km}}{\text{h}}$; density of petrol $\rho = 0.750\,\tfrac{\text{kg}}{\textsf{l}}$ and heat of combustion $H = 43.0\,\tfrac{\text{MJ}}{\text{kg}}$; efficiency $\eta = 28.0\,\% = 0.280$
@@ -115,7 +115,7 @@
 **Principle:** The engine is a heat engine: the energy $Q_1$ released when petrol burns is divided into work $W = \eta Q_1$ and waste heat. Power is work divided by the time taken for the distance, and the speed is steady, so the power is constant.
 **Formula:** $Q_1 = \rho V H$ and $t = \dfrac{s}{v}$, so $P = \dfrac{W}{t} = \dfrac{\eta \rho V H}{t}$
 **Conversions:** $t = \dfrac{100\,\text{km}}{80.0\,\text{km/h}} = 1.25\,\text{h} = 4500\,\text{s}$ and $43.0\,\tfrac{\text{MJ}}{\text{kg}} = 43.0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. Finally $1\,\text{kW} = 1000\,\text{W}$.
-**Substitution:** The work obtained from the energy of the fuel is $W = 0.280 \cdot 0.750\,\tfrac{\text{kg}}{\textsf{l}} \cdot 6.00\,\textsf{l} \cdot 43.0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} = 5.418 \cdot 10^7\,\text{J}$, so
+**Substitution:** The work obtained from the energy of the fuel is $$\begin{aligned} W &= 0.280 \cdot 0.750\,\tfrac{\text{kg}}{\textsf{l}} \\ &\cdot 6.00\,\textsf{l} \cdot 43.0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \\ &= 5.418 \cdot 10^7\,\text{J} \end{aligned}$$, so
 
 $$\begin{aligned} P &= \dfrac{5.418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &= 12\,040\,\text{W} \\ &= 12.04\,\text{kW} \end{aligned}$$
 
@@ -140,7 +140,7 @@ $$\begin{aligned} P &= \dfrac{5.418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &= 
 **Conversions:** Both powers are in kilowatts, so the unit cancels and no conversion is needed. The coefficient of performance has no unit.
 **Substitution:** $\varepsilon = \dfrac{3.90\,\text{kW}}{1.20\,\text{kW}} = 3.25$
 **Answer:** $\varepsilon = 3.25$, three significant figures, because both powers are given with three figures.
-**Reasonableness:** The coefficient of performance is over 1, as it can be for a heat pump. The power taken from the outdoor air is $3.90\,\text{kW} - 1.20\,\text{kW} = 2.70\,\text{kW}$, that is, $2.25$ times the electric power. Estimate: $\tfrac{3.9}{1.2} \approx \tfrac{4}{1.2} \approx 3.3$.
+**Reasonableness:** The coefficient of performance is over 1, as it can be for a heat pump. The power taken from the outdoor air is $$\begin{aligned} &3.90\,\text{kW} - 1.20\,\text{kW} \\ &= 2.70\,\text{kW} \end{aligned}$$, that is, $2.25$ times the electric power. Estimate: $\tfrac{3.9}{1.2} \approx \tfrac{4}{1.2} \approx 3.3$.
 
 ## fy3-11-L2-05
 **Given:** heat of combustion of the fuel $H = 43\,\text{MJ/kg}$. Power and consumption: $20.0\,\text{kW}$ and $7.9\,\text{kg/h}$; $40.0\,\text{kW}$ and $11.6\,\text{kg/h}$; $60.0\,\text{kW}$ and $16.0\,\text{kg/h}$; $80.0\,\text{kW}$ and $22.5\,\text{kg/h}$
@@ -180,7 +180,7 @@ Q_2 &= 33.8\,\text{kWh} - 12.9\,\text{kWh} \\
 \end{aligned}
 ```
 **Answer:** $20.9\,\text{kWh}$, three significant figures, because the energies are given to a tenth and the difference is known to that precision.
-**Reasonableness:** The heat taken from outdoors is less than the heat given out indoors, as it should be. Energy balance: $20.9\,\text{kWh} + 12.9\,\text{kWh} = 33.8\,\text{kWh}$. The outdoor temperatures $T_\text{outdoor}$ are not part of the calculation, because the energy balance does not need them. The coefficient of performance $Q_1/W$ of each day is over 1 ($3.05$; $2.70$; $2.38$; $2.58$) and decreases as the frost gets harder, which fits the fact that it is harder to transfer heat from cold air.
+**Reasonableness:** The heat taken from outdoors is less than the heat given out indoors, as it should be. Energy balance: $$\begin{aligned} &20.9\,\text{kWh} + 12.9\,\text{kWh} \\ &= 33.8\,\text{kWh} \end{aligned}$$. The outdoor temperatures $T_\text{outdoor}$ are not part of the calculation, because the energy balance does not need them. The coefficient of performance $Q_1/W$ of each day is over 1 ($3.05$; $2.70$; $2.38$; $2.58$) and decreases as the frost gets harder, which fits the fact that it is harder to transfer heat from cold air.
 
 ## fy3-11-L3-04
 **Given:** monthly heat demands $Q$ and coefficients of performance $\varepsilon$ from the table: November $1.8\,\text{MWh}$ and $3.4$; December $2.6\,\text{MWh}$ and $2.9$; January $4.0\,\text{MWh}$ and $2.4$; February $3.1\,\text{MWh}$ and $2.6$; March $2.2\,\text{MWh}$ and $3.1$
@@ -198,7 +198,7 @@ W_\text{Feb} &= \frac{3.1\,\text{MWh}}{2.6} = 1.192\,\text{MWh} \\
 W_\text{Mar} &= \frac{2.2\,\text{MWh}}{3.1} = 0.710\,\text{MWh}
 \end{aligned}
 ```
-The sum of the electrical energies is $4.995\,\text{MWh}$ and the sum of the heat demands $1.8 + 2.6 + 4.0 + 3.1 + 2.2 = 13.7\,\text{MWh}$.
+The sum of the electrical energies is $4.995\,\text{MWh}$ and the sum of the heat demands $$\begin{aligned} &1.8 + 2.6 + 4.0 + 3.1 + 2.2 \\ &= 13.7\,\text{MWh} \end{aligned}$$.
 
 b) The coefficient of performance of the season:
 ```latex
@@ -207,9 +207,9 @@ b) The coefficient of performance of the season:
 &= 2.74
 \end{aligned}
 ```
-c) Direct electric heating uses $13.7\,\text{MWh}$ of electricity, so the saving is $13.7\,\text{MWh} - 4.995\,\text{MWh} = 8.7\,\text{MWh}$.
+c) Direct electric heating uses $13.7\,\text{MWh}$ of electricity, so the saving is $$\begin{aligned} &13.7\,\text{MWh} - 4.995\,\text{MWh} \\ &= 8.7\,\text{MWh} \end{aligned}$$.
 **Answer:** b) $\varepsilon_\text{season} = 2.74$, three significant figures. The initial values are given with two figures, so the result is really known to two figures ($2.7$), and the third figure is given so that the rounding does not move the answer outside the accepted interval. This number goes in the answer box.
-**Reasonableness:** The coefficient of performance of the season, $2.74$, lies between the smallest ($2.4$) and the greatest ($3.4$) monthly coefficient of performance. The ordinary average of the monthly coefficients of performance would be: the sum of the coefficients is $14.4$, so the average is $\tfrac{14.4}{5} = 2.88$, about $5\,\%$ too high. Justification: the average would give every month the same weight, although in the coldest month the most heat is needed and the coefficient of performance is the smallest. Then most electricity is used at a small coefficient of performance, so the coefficient of performance of the whole season must be smaller than the average. Energy balance: $4.995\,\text{MWh} + 8.7\,\text{MWh} = 13.7\,\text{MWh}$, so the heat taken from the outdoor air covers about $64\,\%$ of the heat demand. The coefficient of performance is the smallest in the coldest month, because it is harder to transfer heat from the cold outdoor air to the warm inside when the temperature difference grows.
+**Reasonableness:** The coefficient of performance of the season, $2.74$, lies between the smallest ($2.4$) and the greatest ($3.4$) monthly coefficient of performance. The ordinary average of the monthly coefficients of performance would be: the sum of the coefficients is $14.4$, so the average is $\tfrac{14.4}{5} = 2.88$, about $5\,\%$ too high. Justification: the average would give every month the same weight, although in the coldest month the most heat is needed and the coefficient of performance is the smallest. Then most electricity is used at a small coefficient of performance, so the coefficient of performance of the whole season must be smaller than the average. Energy balance: $$\begin{aligned} &4.995\,\text{MWh} + 8.7\,\text{MWh} \\ &= 13.7\,\text{MWh} \end{aligned}$$, so the heat taken from the outdoor air covers about $64\,\%$ of the heat demand. The coefficient of performance is the smallest in the coldest month, because it is harder to transfer heat from the cold outdoor air to the warm inside when the temperature difference grows.
 
 ## fy3-11-L3-05
 **Given:** cross-sectional area $A = 200\,\text{cm}^2$, constant pressure $p = 125\,\text{kPa}$, power of the resistor $P = 260\,\text{W}$, time $t = 4.0\,\text{s}$, height of the piston $h_1 = 10.0\,\text{cm}$ at the start and $h_2 = 22.0\,\text{cm}$ at the end
@@ -261,7 +261,7 @@ The engines do the same work, but that does not make the efficiency the same: th
 **Conversions:** $p = 1\,\text{atm} = 101\,325\,\text{Pa}$ and $\Delta V = 2.0\,\textsf{l} = 2.0 \cdot 0.001\,\text{m}^3 = 0.0020\,\text{m}^3$. Then $1\,\text{Pa} \cdot 1\,\text{m}^3 = 1\,\text{J}$.
 **Substitution:** $W_\text{g} = 101\,325\,\text{Pa} \cdot 0.0020\,\text{m}^3 = 202.65\,\text{J}$
 **Answer:** $W_\text{g} \approx 2.0 \cdot 10^{2}\,\text{J}$, two significant figures, as in the volume $2.0\,\textsf{l}$. The conversion $1\,\text{atm} = 101\,325\,\text{Pa}$ is from the MAFY table (unit conversions); the answer is accepted within about $\pm 4\,\%$.
-**Reasonableness:** A rough estimate: $100\,000\,\text{Pa} \cdot 0.002\,\text{m}^3 = 200\,\text{J}$. In a $(V, p)$ graph the work of the gas is the area of a rectangle, and it is positive at constant pressure and expansion. About $200\,\text{J}$ is enough to lift a $2\,\text{kg}$ object about $10\,\text{m}$.
+**Reasonableness:** A rough estimate: $$\begin{aligned} &100\,000\,\text{Pa} \cdot 0.002\,\text{m}^3 \\ &= 200\,\text{J} \end{aligned}$$. In a $(V, p)$ graph the work of the gas is the area of a rectangle, and it is positive at constant pressure and expansion. About $200\,\text{J}$ is enough to lift a $2\,\text{kg}$ object about $10\,\text{m}$.
 
 ## fy3-11-L2-09
 **Given:** read from the graph, the initial volume $V_1 = 1.0\,\textsf{l}$ and the final volume $V_2 = 4.0\,\textsf{l}$; cross-sectional area $A = 50\,\text{cm}^2$
@@ -272,4 +272,34 @@ The engines do the same work, but that does not make the efficiency the same: th
 **Conversions:** $V_2 - V_1 = 4.0\,\textsf{l} - 1.0\,\textsf{l} = 3.0\,\textsf{l} = 3.0 \cdot 0.001\,\text{m}^3 = 0.0030\,\text{m}^3$ and $A = 50\,\text{cm}^2 = 50 \cdot 0.0001\,\text{m}^2 = 0.0050\,\text{m}^2$.
 **Substitution:** $\Delta s = \dfrac{0.0030\,\text{m}^3}{0.0050\,\text{m}^2} = 0.60\,\text{m}$
 **Answer:** $\Delta s \approx 0.60\,\text{m}$, two significant figures, as in the volumes read and the area.
-**Reasonableness:** At the start the length of the gas column is $0.0010\,\text{m}^3 : 0.0050\,\text{m}^2 = 0.20\,\text{m}$ and at the end $0.0040\,\text{m}^3 : 0.0050\,\text{m}^2 = 0.80\,\text{m}$. The difference is $0.60\,\text{m}$, as calculated.
+**Reasonableness:** At the start the length of the gas column is $$\begin{aligned} &0.0010\,\text{m}^3 : 0.0050\,\text{m}^2 \\ &= 0.20\,\text{m} \end{aligned}$$ and at the end $$\begin{aligned} &0.0040\,\text{m}^3 : 0.0050\,\text{m}^2 \\ &= 0.80\,\text{m} \end{aligned}$$. The difference is $0.60\,\text{m}$, as calculated.
+
+## fy3-11-L2-10
+**Given:** from the source (translated from Finnish): the COP “tells how much heat the pump produces at that moment and in those conditions in relation to the electrical energy it uses”; a heat pump “works the more efficiently, the smaller the temperature difference between the indoor and the outdoor air is”; in a frost of about $-25\,{}^\circ\text{C}$ the coefficient of performance of a fairly new air-source heat pump is only $1$–$2$; the coefficient of performance over the whole year of the air-to-water heat pumps of the houses studied was about $1.4$–$3$. From the task: coefficient of performance $\varepsilon = 4.0$ and the electrical energy used by the pump $W = 2.5\,\text{kWh}$
+**Find:** a) what the coefficient of performance means and how it differs from an efficiency, b) the heat $Q_1$ transferred to the room and the heat $Q_2$ taken from the surroundings in kilowatt-hours ($Q_2$ for the answer field), c) the effect of the temperatures on the coefficient of performance, d) an assessment of the claim
+**Principle:** Energy is conserved. A heat pump does not produce energy but transfers it: the heat given out to the room is the sum of the heat taken from the surroundings and the electrical energy used by the pump. The coefficient of performance tells how many times greater the heat given out to the room is than the electrical energy used by the pump. The task gives $\varepsilon$ and $W$, so these two equations are enough.
+**Formula:** $Q_1 = Q_2 + W$ and $\varepsilon = \dfrac{Q_1}{W}$, from which $Q_1 = \varepsilon W$ and $Q_2 = Q_1 - W = (\varepsilon - 1)\,W$
+**Conversions:** The electrical energy is given and the heats are asked for in kilowatt-hours, so no conversions are needed. The coefficient of performance has no unit.
+**Substitution:** a) According to the source, the coefficient of performance tells how much heat the pump produces in relation to the electrical energy it uses, that is, $\varepsilon = Q_1/W$. An efficiency, on the other hand, is the share of the useful energy in all the energy the device takes in. An efficiency is at most $100\,\%$. The only energy an electric heater takes in is electrical energy, and practically all of it is transferred to the room as heat, so the efficiency of an electric heater is practically $100\,\%$. A heat pump takes in energy along two routes: the electrical energy $W$ and the heat $Q_2$ from the surroundings. Of these, only the electrical energy is in the denominator of the coefficient of performance, so the coefficient of performance is not an energy-conversion efficiency and it can be greater than $1$. The expression “the efficiency is $300$ per cent” is therefore inexact: it means that the heat obtained is three times the electrical energy used, not that more energy would be created.
+
+b) The heat transferred to the room:
+```latex
+\begin{aligned}
+Q_1 &= \varepsilon W \\
+&= 4.0 \cdot 2.5\,\text{kWh} \\
+&= 10\,\text{kWh}
+\end{aligned}
+```
+The heat taken from the surroundings:
+```latex
+\begin{aligned}
+Q_2 &= (\varepsilon - 1)\,W \\
+&= (4.0 - 1) \cdot 2.5\,\text{kWh} \\
+&= 7.5\,\text{kWh}
+\end{aligned}
+```
+c) According to the source, a heat pump works the more efficiently, the smaller the temperature difference between the indoor and the outdoor air is. When it gets colder outdoors or a higher temperature is needed for the heating, the heat has to be transferred across a greater temperature difference. Then the pump needs more electrical energy to transfer the same heat, so $\varepsilon = Q_1/W$ decreases. In an air-to-water heat pump the effect is twofold, because according to the source warmer heating water is also needed in a frost. In a hard frost the coefficient of performance approaches the value $1$: according to the source it is only $1$–$2$ at about $-25\,{}^\circ\text{C}$. When $\varepsilon = 1$, then $Q_2 = (\varepsilon - 1)\,W = 0$, so the pump heats like an electric heater.
+
+d) The claim is wrong. The pump does not produce heat from nothing but transfers it from the surroundings to the room. The balance of part b): the pump takes in $2.5\,\text{kWh}$ of electrical energy and $7.5\,\text{kWh}$ of heat from the surroundings, $10\,\text{kWh}$ in total, and gives out $10\,\text{kWh}$ of heat to the room. The energy taken in and the energy given out are equal, so energy is conserved. The claim counts only the electrical energy as energy taken in and leaves out the heat taken from the surroundings. The only true part of the claim is that $Q_1 > W$.
+**Answer:** b) $Q_1 = 10\,\text{kWh}$ and $Q_2 = 7.5\,\text{kWh}$, two significant figures, as in the initial values $4.0$ and $2.5\,\text{kWh}$. The answer field takes $7.5\,\text{kWh}$. a) The coefficient of performance is the ratio of the heat given out to the room to the electrical energy, not an energy-conversion efficiency. c) The coefficient of performance decreases when the temperature difference grows. d) The claim is wrong, because the energy balance holds when the heat taken from the surroundings is counted.
+**Reasonableness:** Energy balance: $$\begin{aligned} &7.5\,\text{kWh} + 2.5\,\text{kWh} \\ &= 10\,\text{kWh} \end{aligned}$$, so $Q_2 + W = Q_1$. The heat taken from the surroundings is less than the heat given out to the room, as it should be, and its share is $\tfrac{7.5}{10} = 75\,\%$. An electric heater would give only $2.5\,\text{kWh}$ of heat with the same electrical energy. Limits of the model: the coefficient of performance $4.0$ describes one moment in good conditions. According to the source the coefficient of performance depends on the moment and the conditions, and the coefficient of performance over the whole year of the air-to-water heat pumps of the houses studied was only about $1.4$–$3$. The electricity use of a whole year therefore cannot be calculated from the coefficient of performance of one moment.

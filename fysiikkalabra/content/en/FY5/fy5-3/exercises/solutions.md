@@ -91,7 +91,7 @@
 ## fy5-3-L3-01
 **Given:** inner arc $r_1 = 36.5\,\text{m}$, speed of the inner runner $v_1 = 7.0\,\text{m/s}$, outer arc $r_2 = 40.2\,\text{m}$; the arcs are concentric semicircles
 **Find:** the speed $v_2$ of the outer runner in $\text{m/s}$
-**Principle:** Runners who run side by side are all the time on the same radius as seen from the common centre, so they run the semicircle in the same time $t$. Each is in uniform circular motion, and the distance of half a revolution is $\pi r$. When the time is the same, the speed is directly proportional to the radius.
+**Principle:** Runners who run side by side are all the time on the same straight line through the centre, so they run the semicircle in the same time $t$. Each is in uniform circular motion, and the distance of half a revolution is $\pi r$. When the time is the same, the speed is directly proportional to the radius.
 **Formula:** $t = \dfrac{\pi r_1}{v_1} = \dfrac{\pi r_2}{v_2}$, so $v_2 = \dfrac{r_2}{r_1}\, v_1$
 **Conversions:** None needed: the unit of the radii cancels.
 **Substitution:** $v_2 = \dfrac{40.2\,\text{m}}{36.5\,\text{m}} \cdot 7.0\,\text{m/s} = 1.1014 \cdot 7.0\,\text{m/s} = 7.710\,\text{m/s}$
@@ -282,7 +282,7 @@ t &= \frac{5378\,\text{m}}{1.2\,\text{m/s}} \\
 **Conversions:** The data is in SI units, so no conversions are needed.
 **Substitution:** $v = \dfrac{2\pi\cdot 1.80\,\text{m}}{5.0\,\text{s}} = 2.262\,\text{m/s}$
 **Answer:** $2.3\,\text{m/s}$, two significant figures like the period $5.0\,\text{s}$.
-**Reasonableness:** The point $B$ travels the circumference $2\pi\cdot 1.80\,\text{m} \approx 11\,\text{m}$ in $5\,\text{s}$, which is a brisk walking speed, as on the edge of a playground carousel.
+**Reasonableness:** The point $B$ travels the circumference $2\pi\cdot 1.80\,\text{m} \approx 11\,\text{m}$ in $5\,\text{s}$, which is a jogging pace and fits the edge of a playground carousel.
 
 ## fy5-3-L1-11
 **Given:** period $T = 365\,\text{d}$; from the table (MAFY table, Aurinkokunta, Earth) the mean distance from the Sun $r = 150\cdot 10^{6}\,\text{km}$
@@ -301,6 +301,8 @@ t &= \frac{5378\,\text{m}}{1.2\,\text{m/s}} \\
 **Reading the figure:** The dimension lines show $r_\text{A} = 0.60\,\text{m}$ and $r_\text{B} = 1.80\,\text{m}$, both measured from the centre.
 **Formula:** $\Delta v = v_\text{B} - v_\text{A} = 2\pi f\,(r_\text{B} - r_\text{A})$
 **Conversions:** $f = 20\,\tfrac{1}{\text{min}} = \dfrac{20}{60\,\text{s}} = 0.3333\,\tfrac{1}{\text{s}}$
-**Substitution:** $\Delta v = 2\pi\cdot 0.3333\,\tfrac{1}{\text{s}}\cdot(1.80\,\text{m} - 0.60\,\text{m}) = 2.513\,\text{m/s}$
+**Substitution:**
+
+$$\begin{aligned}\Delta v &= 2\pi\cdot 0.3333\,\tfrac{1}{\text{s}} \\ &\quad \cdot(1.80\,\text{m} - 0.60\,\text{m}) \\ &= 2.513\,\text{m/s}\end{aligned}$$
 **Answer:** $2.5\,\text{m/s}$, two significant figures like the frequency $20\,\tfrac{1}{\text{min}}$.
 **Reasonableness:** Separately $v_\text{B} = 3.77\,\text{m/s}$ and $v_\text{A} = 1.26\,\text{m/s}$, and the difference is $2.51\,\text{m/s}$. The point $B$ is three times as far from the centre, so its speed is three times as great.

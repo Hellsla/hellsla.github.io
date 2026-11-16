@@ -170,7 +170,7 @@
       "unit": "s",
       "tolerance": 0.06,
       "data": {
-        "caption": "Barium-$137\\text{m}$-näytteen pulssimäärä $10\\,\\text{s}$:n jaksossa (esimerkkiaineisto)",
+        "caption": "Barium-$137\\text{m}$-näytteen pulssimäärä $10\\,\\text{s}$:n jaksossa",
         "columns": [
           "$t\\,(\\text{s})$",
           "pulssia $10\\,\\text{s}$:ssa"
@@ -235,7 +235,7 @@
       "unit": "s",
       "tolerance": 0.05,
       "data": {
-        "caption": "Näytteen pulssimäärä $10\\,\\text{s}$:n jaksossa (esimerkkiaineisto)",
+        "caption": "Näytteen pulssimäärä $10\\,\\text{s}$:n jaksossa",
         "columns": [
           "$t\\,(\\text{s})$",
           "pulssia $10\\,\\text{s}$:ssa"
@@ -284,7 +284,7 @@
       "unit": "1/s",
       "tolerance": 0.02,
       "data": {
-        "caption": "Taustasäteilyn pulssimäärä $10\\,\\text{s}$:n jaksossa (esimerkkiaineisto)",
+        "caption": "Taustasäteilyn pulssimäärä $10\\,\\text{s}$:n jaksossa",
         "columns": [
           "jakso",
           "pulssia"
@@ -332,6 +332,43 @@
           ]
         ]
       }
+    },
+    {
+      "id": "fy8-9-L2-08",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Aineisto: <a href=\"https://www.julkari.fi/items/86968f39-ac37-47d6-90b7-068406ac016d\" target=\"_blank\" rel=\"noopener\">STUK – Ympäristön säteilyvalvonta Suomessa: Vuosiraportti 2024 (STUK-B 341, 2025)</a> (luettu 16. marraskuuta 2026)\n\nSuomalaisissa metsäsienissä on yhä radioaktiivista cesiumia. Tutustu STUKin vuosiraportin lukuun 9 ”Elintarvikkeiden radioaktiiviset aineet”, joka kertoo, mistä ympäristön keinotekoiset radioaktiiviset aineet ovat peräisin ja kuinka paljon cesium-$137$:ää kauppojen sienistä mitattiin vuonna 2024. Taulukko kokoaa raportin luvun 9 sieninäytteiden tulokset.\n\na) Kerro aineiston perusteella, mistä Suomen ympäristön cesium-$137$ on pääosin peräisin ja missä kahdessa tapahtumassa tai toiminnassa se syntyi.\n\nb) Cesium-$137$:n puoliintumisaika on noin $30\\,\\text{a}$. Laske, kuinka monta prosenttia vuonna 1986 laskeutuneesta cesium-$137$:stä on jäljellä vuonna 2026, kun fysikaalista hajoamista lukuun ottamatta aine ei häviä. Oletetaan, että puoliintumisaika on tarkalleen $30\\,\\text{a}$.\n\nc) Selitä oman fysiikan ja ekologian tietosi avulla, miksi cesiumin pitoisuus voi vaihdella paljon eri sienilajien ja eri paikkojen välillä, vaikka laskeuma on peräisin samasta onnettomuudesta. Aineisto kertoo vain sen, että Tampereen seutu kuuluu Suomen suurimman Tšernobylin laskeuman alueeseen.\n\nd) Taulukossa Tampereen sieninäytteiden pitoisuudet ovat välillä $3{,}5$–$670\\,\\text{Bq/kg}$. Selitä, miksi yhden näytteen tulosta ei voi yleistää koskemaan kaikkia sieniä tai koko aluetta.\n\nVastaa laatikkoon kohdan b) jäljellä oleva osuus prosentteina.",
+      "answer": 40,
+      "unit": "%",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Cesium-$137$ kauppojen sienissä vuonna 2024, tuorepaino (lähde: STUK-B 341, taulukko 9.2)",
+        "columns": [
+          "paikkakunta",
+          "näytteitä",
+          "$^{137}\\text{Cs}$ ($\\text{Bq/kg}$)"
+        ],
+        "rows": [
+          [
+            "Helsinki",
+            "12",
+            "14–413"
+          ],
+          [
+            "Tampere",
+            "13",
+            "3,5–670"
+          ],
+          [
+            "Rovaniemi",
+            "2",
+            "76"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -372,7 +409,7 @@
       "unit": "d",
       "tolerance": 0.05,
       "data": {
-        "caption": "Näytteen kokonaisaktiivisuus (esimerkkiaineisto)",
+        "caption": "Näytteen kokonaisaktiivisuus",
         "columns": [
           "$t\\,(\\text{h})$",
           "$A\\,(\\text{MBq})$"
@@ -426,7 +463,7 @@
       "unit": "d",
       "tolerance": 0.05,
       "data": {
-        "caption": "Potilaan kehon jodi-131-aktiivisuus (esimerkkiaineisto)",
+        "caption": "Potilaan kehon jodi-131-aktiivisuus",
         "columns": [
           "$t\\,(\\text{d})$",
           "$A\\,(\\text{MBq})$"

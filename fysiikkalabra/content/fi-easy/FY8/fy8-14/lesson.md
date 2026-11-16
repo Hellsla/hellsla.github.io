@@ -57,7 +57,7 @@
 
 **Röntgensäteily** on fotonisäteilyä, jonka fotoneilla on paljon energiaa. Fotoni on sähkömagneettisen säteilyn pieni energiapaketti. Röntgensäteilyä syntyy kahdella tavalla. Ensimmäisessä tavassa nopeat elektronit jarruttavat aineessa. Tätä säteilyä sanotaan jarrutussäteilyksi. Toisessa tavassa nopea elektroni irrottaa atomin sisimmältä kuorelta elektronin, ja ulomman kuoren elektroni siirtyy sen paikalle. Tätä säteilyä sanotaan karakteristiseksi röntgensäteilyksi.
 
-Röntgenputkessa hehkuva katodi lähettää elektroneja. Katodi on putken negatiivinen napa. Jännite $U$ kiihdyttää elektronit kohti volframista tehtyä anodia. Anodi on putken positiivinen napa. Jokainen elektroni saa liike-energian $eU$. Jos jännite on esimerkiksi $80\,\text{kV}$, syntyvän fotonin energia on enintään $80\,\text{keV}$. Noin $99\,\%$ elektronien energiasta muuttuu anodissa lämmöksi. Vain pieni osa säteilee röntgenfotoneina.
+Röntgenputkessa hehkuva katodi lähettää elektroneja. Katodi on putken negatiivinen napa. Jännite $U$ kiihdyttää elektronit kohti volframista tehtyä anodia. Anodi on putken positiivinen napa. Jokainen elektroni saa liike-energian $eU$. Jos jännite on esimerkiksi $80\,\text{kV}$, syntyvän fotonin energia on enintään $80\,\text{keV}$. Noin $99\,\%$ elektronien energiasta muuttuu anodin sisäenergiaksi. Vain pieni osa säteilee röntgenfotoneina.
 
 Jarrutussäteilyn spektri on jatkuva. Spektri kertoo, kuinka paljon säteilyä on kullakin energialla. Jatkuvan spektrin päällä näkyy anodin atomien karakteristiset terävät piikit. Volframilla piikit ovat noin $59\,\text{keV}$:n kohdalla. Röntgen- ja gammafotoni ovat samaa sähkömagneettista säteilyä. Nimi kertoo vain, mistä fotoni syntyi. Röntgenfotoni syntyy elektronien jarrutuksessa tai atomin sisäkuoren siirtymässä. Gammafotoni syntyy ytimen siirtymässä. Molemmat ionisoivat ja vaimenevat aineessa samalla tavalla (luku *Ionisoiva säteily ja elimistö*).
 
@@ -183,18 +183,18 @@ Röntgenkuva on varjokuva. Säteily kulkee potilaan läpi ilmaisimeen, ja jokain
 
 Luun taakse osuu siksi vähemmän säteilyä, ja luu näkyy kuvassa vaaleana. Keuhkojen ilma päästää säteilyn läpi lähes kokonaan, joten keuhkot näkyvät tummina. Kuvan **kontrasti** eli kirkkausero syntyy siitä, että eri kudokset vaimentavat säteilyä eri tavalla.
 
-Tietokonetomografiassa (TT) röntgenputki ja ilmaisimet kiertävät potilaan ympäri. Laite mittaa vaimenemisen tuhansista suunnista. Tietokone laskee mittauksista, kuinka paljon kukin pieni tilavuusalkio vaimentaa. Tuloksena on poikkileikkauskuva, jossa näkyvät myös toistensa takana olevat elimet. TT-tutkimuksen annos on kuitenkin monikymmenkertainen tavalliseen röntgenkuvaan verrattuna.
+Tietokonetomografiassa (TT) röntgenputki ja ilmaisimet kiertävät potilaan ympäri. Laite mittaa vaimenemisen tuhansista suunnista. Tietokone laskee mittauksista, kuinka paljon kukin pieni tilavuusalkio vaimentaa. Tuloksena on poikkileikkauskuva, jossa näkyvät myös toistensa takana olevat elimet. TT-tutkimuksen annos on kuitenkin kymmeniä kertoja suurempi kuin keuhkojen röntgenkuvan annos.
 
 | Tutkimus | Efektiivinen annos |
 | --- | --- |
 | hampaan röntgenkuva | $< 0{,}01\,\text{mSv}$ |
-| keuhkojen röntgenkuva | noin $0{,}02\,\text{mSv}$ |
+| keuhkojen röntgenkuva (etu- ja sivukuva) | noin $0{,}1\,\text{mSv}$ |
 | pään TT | noin $2\,\text{mSv}$ |
 | vartalon TT | noin $5$–$10\,\text{mSv}$ |
 | luuston isotooppikuvaus | noin $3\,\text{mSv}$ |
 | PET-kuvaus | noin $6\,\text{mSv}$ |
 
-Lähde: tyypilliset suuruusluokat STUKin terveydenhuollon säteilyaltistusta koskevista julkaisuista ja ICRP:n julkaisusta 128 (2015). Yksittäisen tutkimuksen annos riippuu laitteesta, kuvausprotokollasta ja potilaasta. Vertailun vuoksi suomalainen saa luonnon säteilystä keskimäärin noin $5{,}1\,\text{mSv}$ vuodessa (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
+Lähde: tyypilliset suuruusluokat STUKin terveydenhuollon säteilyaltistusta koskevista julkaisuista ([STUK: Röntgentutkimuksen säteilyannokset vaihtelevat](https://www.julkari.fi/server/api/core/bitstreams/89234513-99f8-4ee2-a720-20bd04eb2cfb/content)) ja ICRP:n julkaisusta 128 (2015). Yksittäisen tutkimuksen annos riippuu laitteesta, kuvausprotokollasta ja potilaasta. Vertailun vuoksi suomalainen saa luonnon säteilystä keskimäärin noin $5{,}1\,\text{mSv}$ vuodessa (luku *Säteilyannos ja säteilyturvallisuus Suomessa*).
 
 <figure class="unit-photo"><img src="pics/fy8/pet-ct-scanner.webp" alt="Sairaalan huone. Siinä on iso rengas ja potilaspöytä."><figcaption>PET-TT-laite. Renkaan sisällä on ilmaisimia, jotka havaitsevat fotoneja. Siellä on myös röntgenputki. Potilas liikkuu pöydän mukana renkaan läpi.</figcaption></figure>
 
@@ -327,7 +327,7 @@ Säteilylähde voidaan myös viedä kasvaimen sisään tai viereen. Toinen tapa 
 
 ### Säteily teollisuudessa ja tutkimuksessa
 
-Lääkintätarvikkeet, kuten ruiskut ja leikkauskäsineet, **steriloidaan** valmiissa pakkauksissaan. Sterilointi tarkoittaa, että mikrobit tapetaan. Siihen käytetään koboltti-60:n gammasäteilyä tai elektronisuihkua. Tavallinen annos on $25\,\text{kGy}$. Se tappaa mikrobit, vaikka se lämmittäisi vettä vain noin $6\,\text{K}$. Vaikutus perustuu siis ionisaatioon eikä lämpöön. Tuote ei myöskään muutu radioaktiiviseksi.
+Lääkintätarvikkeet, kuten ruiskut ja leikkauskäsineet, **steriloidaan** valmiissa pakkauksissaan. Sterilointi tarkoittaa, että mikrobit tapetaan. Siihen käytetään koboltti-60:n gammasäteilyä tai elektronisuihkua. Tavallinen annos on $25\,\text{kGy}$. Se tappaa mikrobit, vaikka se lämmittäisi vettä vain noin $6\,\text{K}$. Vaikutus perustuu siis ionisaatioon eikä lämpenemiseen. Tuote ei myöskään muutu radioaktiiviseksi.
 
 Paperikoneen **paksuusmittarissa** beetasäteily kulkee paperiradan läpi ilmaisimeen. Mitä paksumpaa paperi on, sitä vähemmän säteilyä pääsee läpi. Mittarin lukema ohjaa koneen säätöä jatkuvasti. Samaan tapaan gammasäteilyllä mitataan teräslevyjä. Hitsaussaumoja kuvataan gammalähteellä.
 
@@ -475,9 +475,23 @@ Positroni ja elektroni annihiloituvat lähes levossa. Niiden yhteinen massa $2m_
 E_\gamma = m_e c^2
 ```
 
-Tässä $E_\gamma$ on yhden fotonin energia ($\text{J}$). Massa $m_e = 9{,}109 \cdot 10^{-31}\,\text{kg}$ on elektronin ja positronin massa. Nopeus $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ on valon nopeus. Sijoittamalla saadaan $E_\gamma = 9{,}109 \cdot 10^{-31}\,\text{kg} \cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2 = 8{,}187 \cdot 10^{-14}\,\text{J}$.
+Tässä $E_\gamma$ on yhden fotonin energia ($\text{J}$). Massa $m_e = 9{,}109 \cdot 10^{-31}\,\text{kg}$ on elektronin ja positronin massa. Nopeus $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$ on valon nopeus. Sijoittamalla saadaan $$
+\begin{aligned}
+&E_\gamma \\
+&= 9{,}109 \cdot 10^{-31}\,\text{kg} \\
+&\cdot (2{,}998 \cdot 10^{8}\,\text{m/s})^2 \\
+&= 8{,}187 \cdot 10^{-14}\,\text{J}
+\end{aligned}
+$$.
 
-Kun sijoitetaan $1\,\text{J} = \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV}$, saadaan $E_\gamma = 8{,}187 \cdot 10^{-14} \cdot \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV} = 5{,}11 \cdot 10^{5}\,\text{eV} = 511\,\text{keV}$. Energia on noin $150\,000$-kertainen näkyvän valon fotoniin verrattuna. Energia on sama jokaisessa annihilaatiossa. PET-laite voi siksi hylätä fotonit, joiden energia poikkeaa siitä selvästi, koska ne ovat sironneet eli muuttaneet suuntaa matkalla.
+Kun sijoitetaan $1\,\text{J} = \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV}$, saadaan $$
+\begin{aligned}
+E_\gamma &= 8{,}187 \cdot 10^{-14} \\
+&\cdot \tfrac{1}{1{,}602 \cdot 10^{-19}}\,\text{eV} \\
+&= 5{,}11 \cdot 10^{5}\,\text{eV} \\
+&= 511\,\text{keV}
+\end{aligned}
+$$. Energia on noin $150\,000$-kertainen näkyvän valon fotoniin verrattuna. Energia on sama jokaisessa annihilaatiossa. PET-laite voi siksi hylätä fotonit, joiden energia poikkeaa siitä selvästi, koska ne ovat sironneet eli muuttaneet suuntaa matkalla.
 
 ## Esimerkki
 

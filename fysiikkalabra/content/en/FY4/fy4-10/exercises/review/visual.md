@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: fd054a287d5cf164
-SCOPE: delta added-exercise from 2040e0e2c0e5a3c7 base 81db4a6fd727
+CONTENT-HASH: 553277e5ecbd8b65
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- None.
 
 ## Checked
-- fy4-10-open-exercises-L2-1280-12 (en): ex-vt-kaarryt tick numbers now below the plot, clear of the step lines; 2 (collision moment) readable.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: opened contact sheets en-390-12, en-390-13, en-390-14, en-390-15, en-390-16, en-1280-10 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.

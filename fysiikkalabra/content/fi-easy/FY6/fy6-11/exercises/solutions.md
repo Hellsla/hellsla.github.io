@@ -14,8 +14,8 @@
 **Periaate:** Sähkökentän voimakkuus kertoo voiman yhtä coulombia kohti. Siksi varaukseen kohdistuva voima on varaus kertaa sähkökentän voimakkuus. Kenttä on homogeeninen eli sama joka kohdassa, joten voima on sama kaikkialla kentässä.
 **Kaava:** $F = qE$
 **Muunnokset:** $q = 5{,}0\,\text{nC} = 5{,}0 \cdot 10^{-9}\,\text{C}$; lopuksi $1\,\text{N} = 10^{6}\,\mu\text{N}$.
-**Sijoitus:** $F = 5{,}0 \cdot 10^{-9}\,\text{C} \cdot 2{,}0 \cdot 10^{4}\,\text{N/C} = 1{,}0 \cdot 10^{-4}\,\text{N} = 100\,\mu\text{N}$
-**Vastaus:** $1{,}0 \cdot 10^{2}\,\mu\text{N}$ eli $100\,\mu\text{N}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
+**Sijoitus:** $F = 5{,}0 \cdot 10^{-9}\,\text{C} \cdot 2{,}0 \cdot 10^{4}\,\text{N/C} = 1{,}0 \cdot 10^{-4}\,\text{N} = 1{,}0 \cdot 10^{2}\,\mu\text{N}$
+**Vastaus:** $1{,}0 \cdot 10^{2}\,\mu\text{N}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Voima on noin $0{,}1\,\text{mN}$, joka vastaa noin $10\,\text{mg}$:n kappaleen painoa. Se on pieni, mutta kevyt pallo liikkuu sen vaikutuksesta selvästi, kuten sähköstaattisissa kokeissa nähdään.
 
 ## fy6-11-L1-03
@@ -47,7 +47,7 @@
 **Muunnokset:** $120\,\mu\text{N} = 120 \cdot 10^{-6}\,\text{N}$ ja $4{,}0\,\text{nC} = 4{,}0 \cdot 10^{-9}\,\text{C}$.
 **Sijoitus:** $E = \dfrac{120 \cdot 10^{-6}\,\text{N}}{4{,}0 \cdot 10^{-9}\,\text{C}} = 3{,}0 \cdot 10^{4}\,\text{N/C}$
 **Vastaus:** $3{,}0 \cdot 10^{4}\,\text{N/C}$, kaksi merkitsevää numeroa, koska kuvaajasta luetaan ruudukon risteys, jossa voima on $120\,\mu\text{N}$ kahden merkitsevän numeron tarkkuudella.
-**Järkevyys:** Mittauspiste $(3{,}0\,\text{nC};\ 91\,\mu\text{N})$ antaa lähes saman arvon: $91\,\mu\text{N} : 3{,}0\,\text{nC} \approx 3{,}0 \cdot 10^{4}\,\text{N/C}$. Suora sovitettiin origon kautta. Mallin $F = qE$ mukaan varaukseton pallo ei tunne homogeenisessa kentässä sähköistä voimaa, vaikka kenttä on olemassa.
+**Järkevyys:** Mittauspiste $(3{,}0\,\text{nC};\ 91\,\mu\text{N})$ antaa lähes saman arvon: $$\begin{aligned} &91\,\mu\text{N} : 3{,}0\,\text{nC} \\ &\approx 3{,}0 \cdot 10^{4}\,\text{N/C} \end{aligned}$$. Suora sovitettiin origon kautta. Mallin $F = qE$ mukaan varaukseton pallo ei tunne homogeenisessa kentässä sähköistä voimaa, vaikka kenttä on olemassa.
 
 ## fy6-11-L1-09
 **Annettu:** levyjen etäisyys $d = 2{,}5\,\text{mm}$. Ilman läpilyöntikestävyys MAFY-taulukosta (Eristeiden läpilyöntikestävyyksiä, ilma) on $E = 3{,}0\,\text{kV/mm}$.
@@ -77,7 +77,7 @@
 **Muunnokset:** $F = 2{,}4\,\text{mN} = 2{,}4 \cdot 10^{-3}\,\text{N}$, $d = 5{,}0\,\text{cm} = 0{,}050\,\text{m}$, $q = 8{,}0 \cdot 10^{-9}\,\text{C}$; lopuksi $1\,\text{kV} = 1000\,\text{V}$.
 **Sijoitus:** $E = \dfrac{2{,}4 \cdot 10^{-3}\,\text{N}}{8{,}0 \cdot 10^{-9}\,\text{C}} = 3{,}0 \cdot 10^{5}\,\text{N/C}$ ja $U = Ed = 3{,}0 \cdot 10^{5}\,\text{N/C} \cdot 0{,}050\,\text{m} = 15\,000\,\text{V} = 15\,\text{kV}$
 **Vastaus:** $15\,\text{kV}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Tarkistus kertomalla: $8{,}0 \cdot 10^{-9}\,\text{C} \cdot 15\,000\,\text{V} : 0{,}050\,\text{m} = 2{,}4 \cdot 10^{-3}\,\text{N}$, joka on annettu voima. Yksiköt: $\text{N} \cdot \text{m} : \text{C} = \text{J/C} = \text{V}$.
+**Järkevyys:** Tarkistus kertomalla: $$\begin{aligned} &8{,}0 \cdot 10^{-9}\,\text{C} \cdot 15\,000\,\text{V} \\ &: 0{,}050\,\text{m} \\ &= 2{,}4 \cdot 10^{-3}\,\text{N} \end{aligned}$$, joka on annettu voima. Yksiköt: $\text{N} \cdot \text{m} : \text{C} = \text{J/C} = \text{V}$.
 
 ## fy6-11-L2-03
 **Annettu:** jännite $U = 3{,}0\,\text{kV}$, levyjen etäisyys $d = 6{,}0\,\text{mm}$, hiukkasen varaus $q = 1{,}6 \cdot 10^{-17}\,\text{C}$ ja massa $m = 4{,}0 \cdot 10^{-14}\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$
@@ -106,7 +106,7 @@
 **Kaava:** $\dfrac{q_1 U_1}{d} = mg = \dfrac{q_2 U_2}{d}$, josta $U_2 = U_1 \cdot \dfrac{q_1}{q_2}$
 **Muunnokset:** Ei tarvita: alkeisvaraus $e$ supistuu.
 **Sijoitus:** $U_2 = 450\,\text{V} \cdot \dfrac{3e}{4e} = 450\,\text{V} \cdot 0{,}75 = 337{,}5\,\text{V}$
-**Vastaus:** $3{,}4 \cdot 10^{2}\,\text{V}$ ($337{,}5\,\text{V}$), pyöristettynä kahteen merkitsevään numeroon jännitteen $450\,\text{V}$ tarkkuuden mukaan; alkeisvarausten lukumäärät ovat tarkkoja.
+**Vastaus:** $338\,\text{V}$ ($337{,}5\,\text{V}$), pyöristettynä kolmeen merkitsevään numeroon jännitteen $450\,\text{V}$ tarkkuuden mukaan; alkeisvarausten lukumäärät ovat tarkkoja.
 **Järkevyys:** Varaus kasvaa kolmanneksella, joten sama sähköinen voima saadaan heikommalla kentällä, ja jännite pienenee neljäsosalla. Jos jännite pidettäisiin $450\,\text{V}$:ssa, sähköinen voima olisi $\tfrac{4}{3}$ painosta, ja pisara lähtisi nousemaan kohti positiivista levyä.
 
 ## fy6-11-L3-02
@@ -115,8 +115,8 @@
 **Periaate:** Homogeenisessa kentässä elektroniin kohdistuu vakiovoima $eE$ kohti positiivista levyä. Levyt ovat tyhjiössä, joten muita voimia ei ole (paino on häviävän pieni). Newtonin toisen lain mukaan kiihtyvyys $a = eE : m$ on vakio. Liike on siis tasaisesti kiihtyvää. Levosta lähteneelle kappaleelle, joka on kulkenut matkan $d$, pätee $v^2 = 2ad$.
 **Kaava:** $a = \dfrac{eE}{m} = \dfrac{eU}{md}$ ja $v^2 = 2ad$, joten $v = \sqrt{2ad} = \sqrt{\dfrac{2eU}{m}}$
 **Muunnokset:** $d = 1{,}0\,\text{cm} = 0{,}010\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Sijoitus:** $E = \dfrac{50\,\text{V}}{0{,}010\,\text{m}} = 5000\,\text{V/m}$, $a = \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 5000\,\text{V/m}}{9{,}109 \cdot 10^{-31}\,\text{kg}} = 8{,}794 \cdot 10^{14}\,\text{m/s}^2$ ja $v = \sqrt{2 \cdot 8{,}794 \cdot 10^{14}\,\text{m/s}^2 \cdot 0{,}010\,\text{m}} = 4{,}19 \cdot 10^{6}\,\text{m/s}$
-**Vastaus:** noin $4200\,\text{km/s}$ eli $4{,}2 \cdot 10^{6}\,\text{m/s}$, kaksi merkitsevää numeroa kuten jännite ja etäisyys.
+**Sijoitus:** $E = \dfrac{50\,\text{V}}{0{,}010\,\text{m}} = 5000\,\text{V/m}$, $a = \dfrac{1{,}602 \cdot 10^{-19}\,\text{C} \cdot 5000\,\text{V/m}}{9{,}109 \cdot 10^{-31}\,\text{kg}} = 8{,}794 \cdot 10^{14}\,\text{m/s}^2$ ja $$\begin{aligned} v &= \sqrt{2 \cdot 8{,}794 \cdot 10^{14}\,\text{m/s}^2 \cdot 0{,}010\,\text{m}} \\ &= 4{,}19 \cdot 10^{6}\,\text{m/s} \end{aligned}$$
+**Vastaus:** noin $4{,}2 \cdot 10^{3}\,\text{km/s}$ eli $4{,}2 \cdot 10^{6}\,\text{m/s}$, kaksi merkitsevää numeroa kuten jännite ja etäisyys.
 **Järkevyys:** Nopeus on noin $1{,}4\,\%$ valon nopeudesta, joten klassinen mekaniikka riittää. Lopputulos $\sqrt{2eU : m}$ ei riipu levyjen etäisyydestä: lyhyempi matka kompensoituu voimakkaammalla kentällä.
 
 ## fy6-11-L3-03
@@ -125,9 +125,9 @@
 **Periaate:** Palloon vaikuttavat paino $mg$ alas, sähköinen voima $qE$ vaakasuoraan ja langan jännitysvoima langan suuntaan. Pallo on levossa, joten voimien summa on nolla. Pystysuunnassa jännitysvoiman pystykomponentti $T\cos\alpha$ kumoaa painon. Vaakasuunnassa jännitysvoiman vaakakomponentti $T\sin\alpha$ kumoaa sähköisen voiman.
 **Kaava:** $T\sin\alpha = qE$ ja $T\cos\alpha = mg$; jakamalla $\tan\alpha = \dfrac{qE}{mg}$, josta $q = \dfrac{mg\tan\alpha}{E}$
 **Muunnokset:** $m = 2{,}0\,\text{g} = 2{,}0 \cdot 10^{-3}\,\text{kg}$; lopuksi $1\,\text{C} = 10^{9}\,\text{nC}$.
-**Sijoitus:** $mg\tan\alpha = 2{,}0 \cdot 10^{-3}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot \tan 10^\circ = 3{,}459 \cdot 10^{-3}\,\text{N}$ ja $q = \dfrac{3{,}459 \cdot 10^{-3}\,\text{N}}{1{,}5 \cdot 10^{5}\,\text{N/C}} = 2{,}306 \cdot 10^{-8}\,\text{C} = 23\,\text{nC}$
+**Sijoitus:** $$\begin{aligned} mg\tan\alpha &= 2{,}0 \cdot 10^{-3}\,\text{kg} \\ &\cdot 9{,}81\,\text{m/s}^2 \cdot \tan 10^\circ \\ &= 3{,}459 \cdot 10^{-3}\,\text{N} \end{aligned}$$ ja $q = \dfrac{3{,}459 \cdot 10^{-3}\,\text{N}}{1{,}5 \cdot 10^{5}\,\text{N/C}} = 2{,}306 \cdot 10^{-8}\,\text{C} = 23\,\text{nC}$
 **Vastaus:** $23\,\text{nC}$, kaksi merkitsevää numeroa kuten massassa ja sähkökentän voimakkuudessa.
-**Järkevyys:** Sähköinen voima on $mg\tan 10^\circ \approx 0{,}18 \cdot 0{,}020\,\text{N} = 3{,}5\,\text{mN}$, noin viidesosa painosta, mikä sopii pieneen poikkeamaan. Kymmenien nanocoulombien varaus on tavallinen hangatulle muovipallolle.
+**Järkevyys:** Sähköinen voima on $mg\tan 10^\circ \approx 0{,}18 \cdot 0{,}020\,\text{N} = 3{,}6\,\text{mN}$, noin viidesosa painosta, mikä sopii pieneen poikkeamaan. Kymmenien nanocoulombien varaus on tavallinen hangatulle muovipallolle.
 
 ## fy6-11-L1-06
 **Kysytty:** mitä kenttäviivojen tiheys kertoo alueiden A ja B kentistä.
@@ -147,7 +147,7 @@
 **Muunnokset:** $U = 3{,}0\,\text{kV} = 3{,}0 \cdot 1000\,\text{V} = 3000\,\text{V}$; lopuksi $1\,\text{m} = 1000\,\text{mm}$.
 **Sijoitus:** $d = \dfrac{3000\,\text{V}}{4{,}0 \cdot 10^{5}\,\text{V/m}} = 7{,}5 \cdot 10^{-3}\,\text{m} = 7{,}5\,\text{mm}$
 **Vastaus:** $7{,}5\,\text{mm}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Tarkistus: $3000\,\text{V} : 0{,}0075\,\text{m} = 4{,}0 \cdot 10^{5}\,\text{V/m}$, joka on annettu kenttä. Voimakas kenttä saadaan siis pienellä jännitteellä vain, kun levyt ovat lähellä toisiaan. Etäisyys on alle senttimetri.
+**Järkevyys:** Tarkistus: $$\begin{aligned} &3000\,\text{V} : 0{,}0075\,\text{m} \\ &= 4{,}0 \cdot 10^{5}\,\text{V/m} \end{aligned}$$, joka on annettu kenttä. Voimakas kenttä saadaan siis pienellä jännitteellä vain, kun levyt ovat lähellä toisiaan. Etäisyys on alle senttimetri.
 
 ## fy6-11-L2-05
 **Annettu:** esimerkkiaineisto: testivaraus $q = 5{,}0\,\text{nC}$ ja voimat $F$ etäisyyksillä $d = 2{,}0\,\text{cm}$, $3{,}0\,\text{cm}$, $4{,}0\,\text{cm}$, $5{,}0\,\text{cm}$, $6{,}0\,\text{cm}$ ja $8{,}0\,\text{cm}$; jännite pidetään vakiona
@@ -157,7 +157,7 @@
 **Muunnokset:** $q = 5{,}0 \cdot 10^{-9}\,\text{C}$, $F = 102\,\mu\text{N} = 102 \cdot 10^{-6}\,\text{N}$ ja niin edelleen; $d = 2{,}0\,\text{cm} = 0{,}020\,\text{m}$ ja niin edelleen.
 **Sijoitus:** a) $E = F : q$ antaa etäisyyksillä $2{,}0$; $3{,}0$; $4{,}0$; $5{,}0$; $6{,}0$ ja $8{,}0\,\text{cm}$ kentät $2{,}04 \cdot 10^{4}$; $1{,}31 \cdot 10^{4}$; $1{,}02 \cdot 10^{4}$; $7{,}8 \cdot 10^{3}$; $6{,}8 \cdot 10^{3}$ ja $4{,}92 \cdot 10^{3}\,\text{N/C}$. b) Tulot $E \cdot d$ ovat samassa järjestyksessä $408\,\text{V}$, $393\,\text{V}$, $408\,\text{V}$, $390\,\text{V}$, $408\,\text{V}$ ja $394\,\text{V}$. Tulojen summa on $2401\,\text{V}$. Keskiarvo on siis $2401\,\text{V} : 6 = 400\,\text{V}$.
 **Vastaus:** $4{,}0 \cdot 10^{2}\,\text{V}$, kaksi merkitsevää numeroa kuten testivarauksessa. c) Kenttä pienenee, kun etäisyys kasvaa. Tulo $E \cdot d$ pysyy lähes vakiona (välillä $390\,\text{V}$ – $408\,\text{V}$), eikä sillä ole selvää suuntaa. Siksi $E$ on kääntäen verrannollinen etäisyyteen, $E = U : d$. Tulo on levyjen välinen jännite.
-**Järkevyys:** Etäisyys kasvaa nelinkertaiseksi ($2{,}0\,\text{cm} \to 8{,}0\,\text{cm}$). Kenttä pienenee noin neljäsosaan: $2{,}04 \cdot 10^{4}\,\text{N/C} : 4{,}92 \cdot 10^{3}\,\text{N/C} = 4{,}1$. Tulojen suurin poikkeama keskiarvosta on $400\,\text{V} - 390\,\text{V} = 10\,\text{V}$ eli noin $2{,}5\,\%$. Se sopii mittaustarkkuuteen.
+**Järkevyys:** Etäisyys kasvaa nelinkertaiseksi ($2{,}0\,\text{cm} \to 8{,}0\,\text{cm}$). Kenttä pienenee noin neljäsosaan: $$\begin{aligned} &2{,}04 \cdot 10^{4}\,\text{N/C} \\ &: 4{,}92 \cdot 10^{3}\,\text{N/C} \\ &= 4{,}1 \end{aligned}$$. Tulojen suurin poikkeama keskiarvosta on $400\,\text{V} - 390\,\text{V} = 10\,\text{V}$ eli noin $2{,}5\,\%$. Se sopii mittaustarkkuuteen.
 
 ## fy6-11-L2-06
 **Annettu:** levyjen etäisyys $d = 6{,}0\,\text{cm}$, jännite $U = 1{,}8\,\text{kV}$, pallon varaus $q = 4{,}0\,\text{nC}$, pallon etäisyys positiivisesta levystä $1{,}5\,\text{cm}$
@@ -175,7 +175,7 @@
 **Periaate:** Testivarauksen kokema voima on $F = qE$, joten $E = F : q$ kertoo kentän kussakin pisteessä. Kenttä on homogeeninen alueella, jossa $E$ on vakio. Levyjen reunoilla ja ulkopuolella kenttä heikkenee. Siksi homogeenisuus täytyy tarkistaa mittaamalla eri kohdissa.
 **Kaava:** $E = \dfrac{F}{q}$, poikkeama $= \dfrac{E_0 - E}{E_0}$ ja vertailuarvo $E = \dfrac{U}{d}$
 **Muunnokset:** $q = 2{,}0 \cdot 10^{-9}\,\text{C}$ ja $1\,\mu\text{N} = 10^{-6}\,\text{N}$; $d = 2{,}0\,\text{cm} = 0{,}020\,\text{m}$.
-**Sijoitus:** a) $E = F : q$ antaa pisteissä $x = 0$; $2{,}0$; $4{,}0$; $6{,}0$; $8{,}0$ ja $10{,}0\,\text{cm}$ arvot $3{,}01 \cdot 10^{4}$; $2{,}99 \cdot 10^{4}$; $2{,}98 \cdot 10^{4}$; $2{,}95 \cdot 10^{4}$; $2{,}90 \cdot 10^{4}$ ja $1{,}65 \cdot 10^{4}\,\text{V/m}$. b) Poikkeamat keskikohdan arvosta ovat $x = 2{,}0$; $4{,}0$; $6{,}0$; $8{,}0$ ja $10{,}0\,\text{cm}$ pisteissä $0{,}7\,\%$, $1{,}2\,\%$, $2{,}0\,\%$, $3{,}7\,\%$ ja $45{,}2\,\%$. Homogeenisia ovat pisteet $x = 0$ – $6{,}0\,\text{cm}$. Kenttä heikkenee selvästi, kun lähestytään levyn reunaa. c) Neljän homogeenisen pisteen voimien summa on $60{,}2\,\mu\text{N} + 59{,}8\,\mu\text{N} + 59{,}5\,\mu\text{N} + 59{,}0\,\mu\text{N} = 238{,}5\,\mu\text{N}$. Voiman keskiarvo on siis $238{,}5\,\mu\text{N} : 4 = 59{,}6\,\mu\text{N}$. Kentän keskiarvo on $E = \dfrac{59{,}6 \cdot 10^{-6}\,\text{N}}{2{,}0 \cdot 10^{-9}\,\text{C}} = 2{,}98 \cdot 10^{4}\,\text{V/m}$. Vertailuarvo on $U : d = 600\,\text{V} : 0{,}020\,\text{m} = 3{,}0 \cdot 10^{4}\,\text{V/m}$.
+**Sijoitus:** a) $E = F : q$ antaa pisteissä $x = 0$; $2{,}0$; $4{,}0$; $6{,}0$; $8{,}0$ ja $10{,}0\,\text{cm}$ arvot $3{,}01 \cdot 10^{4}$; $2{,}99 \cdot 10^{4}$; $2{,}98 \cdot 10^{4}$; $2{,}95 \cdot 10^{4}$; $2{,}90 \cdot 10^{4}$ ja $1{,}65 \cdot 10^{4}\,\text{V/m}$. b) Poikkeamat keskikohdan arvosta ovat $x = 2{,}0$; $4{,}0$; $6{,}0$; $8{,}0$ ja $10{,}0\,\text{cm}$ pisteissä $0{,}7\,\%$, $1{,}2\,\%$, $2{,}0\,\%$, $3{,}7\,\%$ ja $45{,}2\,\%$. Homogeenisia ovat pisteet $x = 0$ – $6{,}0\,\text{cm}$. Kenttä heikkenee selvästi, kun lähestytään levyn reunaa. c) Neljän homogeenisen pisteen voimien summa on $$\begin{aligned} &60{,}2\,\mu\text{N} + 59{,}8\,\mu\text{N} + 59{,}5\,\mu\text{N} \\ &+ 59{,}0\,\mu\text{N} \\ &= 238{,}5\,\mu\text{N} \end{aligned}$$. Voiman keskiarvo on siis $238{,}5\,\mu\text{N} : 4 = 59{,}6\,\mu\text{N}$. Kentän keskiarvo on $E = \dfrac{59{,}6 \cdot 10^{-6}\,\text{N}}{2{,}0 \cdot 10^{-9}\,\text{C}} = 2{,}98 \cdot 10^{4}\,\text{V/m}$. Vertailuarvo on $U : d = 600\,\text{V} : 0{,}020\,\text{m} = 3{,}0 \cdot 10^{4}\,\text{V/m}$.
 **Vastaus:** $3{,}0 \cdot 10^{4}\,\text{V/m}$ ($2{,}98 \cdot 10^{4}\,\text{V/m}$), kaksi merkitsevää numeroa kuten testivarauksessa. Tulos on sama kuin $U : d$. Kenttä on siis levyjen välissä homogeeninen noin $6\,\text{cm}$:n päähän keskikohdasta.
 **Järkevyys:** Keskiarvo $2{,}98 \cdot 10^{4}\,\text{V/m}$ poikkeaa arvosta $U : d$ vain $0{,}6\,\%$. Pisteessä $x = 8{,}0\,\text{cm}$ kenttä on jo $3{,}7\,\%$ heikompi kuin keskellä. Raja $3\,\%$ ylittyy siis ennen reunaa. Reunalla $x = 10{,}0\,\text{cm}$ kenttä on jo $45{,}2\,\%$ heikompi.
 
@@ -186,7 +186,7 @@
 
 $F_\text{s} = \lvert q \rvert E$
 
-$F_\text{s} = 2{,}0 \cdot 10^{-16}\,\text{C} \cdot 1{,}0 \cdot 10^{5}\,\text{N/C}$
+$$F_\text{s} = 2{,}0 \cdot 10^{-16}\,\text{C} \cdot 1{,}0 \cdot 10^{5}\,\text{N/C}$$
 
 $F_\text{s} = 2{,}0 \cdot 10^{-11}\,\text{N}$
 
@@ -208,7 +208,7 @@ Kumpikin voima osoittaa alas. Sähköisen voiman nuoli on noin kaksi kertaa niin
 **Vastaus:** c) Alkeisvarauksen arvio on $1{,}60 \cdot 10^{-19}\,\text{C}$. Se poikkeaa kirjallisuusarvosta $1{,}602 \cdot 10^{-19}\,\text{C}$ alle $1\,\%$, mittaustarkkuuden rajoissa. Pisaroiden varaukset ovat eri suuria, mutta ne ovat tarkasti samojen askelten monikertoja. Jos varaus voisi olla mikä tahansa, suhteet $q : n$ eivät olisi lähes vakioita. Siksi aineisto tukee sitä, että varaus esiintyy vain alkeisvarauksen monikertoina.
 
 d) Hiukkaset on varattu. Siksi levyjen kentässä niihin kohdistuu voima $F = qE$ kohti vastakkaismerkkistä levyä. Ne liikkuvat sinne ja tarttuvat siihen. Kun jännite kasvaa, kenttä $E = U : d$ kasvaa. Silloin voima ja kiihtyvyys kasvavat samassa suhteessa kuin jännite. Hiukkaset pääsevät levylle nopeammin. Myös raskaammat ja vähemmän varautuneet hiukkaset kerääntyvät.
-**Järkevyys:** Tarkistus pisaralle 3: $1{,}59 \cdot 10^{-19}\,\text{C} \cdot 1580\,\text{V} : 0{,}0080\,\text{m} = 3{,}14 \cdot 10^{-14}\,\text{N}$ ja paino $3{,}2 \cdot 10^{-15}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 3{,}14 \cdot 10^{-14}\,\text{N}$. Suhteiden $q : n$ hajonta on $1{,}61 - 1{,}59 = 0{,}02$ yksikössä $10^{-19}\,\text{C}$ eli noin $1{,}3\,\%$ arvosta $1{,}60 \cdot 10^{-19}\,\text{C}$. Se sopii aineiston mittaustarkkuuteen.
+**Järkevyys:** Tarkistus pisaralle 3: $$\begin{aligned} &1{,}59 \cdot 10^{-19}\,\text{C} \cdot 1580\,\text{V} \\ &: 0{,}0080\,\text{m} \\ &= 3{,}14 \cdot 10^{-14}\,\text{N} \end{aligned}$$ ja paino $3{,}2 \cdot 10^{-15}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 3{,}14 \cdot 10^{-14}\,\text{N}$. Suhteiden $q : n$ hajonta on $1{,}61 - 1{,}59 = 0{,}02$ yksikössä $10^{-19}\,\text{C}$ eli noin $1{,}3\,\%$ arvosta $1{,}60 \cdot 10^{-19}\,\text{C}$. Se sopii aineiston mittaustarkkuuteen.
 
 ## fy6-11-L3-05
 **Annettu:** esimerkkitilanne: pisaran massa $m = 3{,}0 \cdot 10^{-11}\,\text{kg}$, varaus $q = 1{,}0 \cdot 10^{-12}\,\text{C}$, alkunopeus levyjen suuntaan $v_0 = 20\,\text{m/s}$ levyjen puolivälistä, levyjen pituus $L = 10\,\text{mm}$, etäisyys $d = 5{,}0\,\text{mm}$, jännite $U = 2{,}0\,\text{kV}$, $g = 9{,}81\,\text{m/s}^2$
@@ -216,6 +216,6 @@ d) Hiukkaset on varattu. Siksi levyjen kentässä niihin kohdistuu voima $F = qE
 **Periaate:** Levyjen välissä kenttä on homogeeninen, $E = U : d$. Pisaraan kohdistuu vakiovoima $qE$ kohtisuoraan levyjä vastaan. Liike jaetaan kahteen osaan, kuten vaakasuoraan heitetyllä pallolla. Levyjen suunnassa ei ole voimaa, joten nopeus $v_0$ pysyy vakiona. Sivusuunnassa pisara kiihtyy levosta vakiokiihtyvyydellä $a = qE : m$. Näin poikkeama on $y = \tfrac{1}{2}at^2$, kun $t = L : v_0$. Paino jätetään huomiotta, jos se on paljon pienempi kuin sähköinen voima.
 **Kaava:** $E = \dfrac{U}{d}$, $F = qE$, $a = \dfrac{F}{m}$, $t = \dfrac{L}{v_0}$ ja $y = \dfrac{1}{2}at^2$
 **Muunnokset:** $U = 2{,}0\,\text{kV} = 2000\,\text{V}$, $d = 5{,}0 \cdot 10^{-3}\,\text{m}$, $L = 1{,}0 \cdot 10^{-2}\,\text{m}$; lopuksi $1\,\text{m} = 1000\,\text{mm}$.
-**Sijoitus:** a) $E = \dfrac{2000\,\text{V}}{5{,}0 \cdot 10^{-3}\,\text{m}} = 4{,}0 \cdot 10^{5}\,\text{V/m}$ ja $F = 1{,}0 \cdot 10^{-12}\,\text{C} \cdot 4{,}0 \cdot 10^{5}\,\text{V/m} = 4{,}0 \cdot 10^{-7}\,\text{N}$. Paino on $mg = 3{,}0 \cdot 10^{-11}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 2{,}9 \cdot 10^{-10}\,\text{N}$. Sähköinen voima on noin $1400$-kertainen painoon verrattuna, joten painon voi jättää huomiotta. b) $a = \dfrac{4{,}0 \cdot 10^{-7}\,\text{N}}{3{,}0 \cdot 10^{-11}\,\text{kg}} = 1{,}33 \cdot 10^{4}\,\text{m/s}^2$. c) $t = \dfrac{1{,}0 \cdot 10^{-2}\,\text{m}}{20\,\text{m/s}} = 5{,}0 \cdot 10^{-4}\,\text{s}$. d) $y = \dfrac{1}{2} \cdot 1{,}33 \cdot 10^{4}\,\text{m/s}^2 \cdot (5{,}0 \cdot 10^{-4}\,\text{s})^2 = 1{,}67 \cdot 10^{-3}\,\text{m} = 1{,}67\,\text{mm}$. e) Pisara tulee puolivälistä, joten se osuu levyyn, jos poikkeama on yli $d : 2 = 2{,}5\,\text{mm}$. Nyt $1{,}67\,\text{mm} < 2{,}5\,\text{mm}$, joten pisara ei osu levyyn. Kun jännite kaksinkertaistuu, myös $E$, $F$ ja $a$ kaksinkertaistuvat. Silloin $y = 3{,}33\,\text{mm} > 2{,}5\,\text{mm}$, joten pisara osuu levyyn. Se saavuttaa poikkeaman $2{,}5\,\text{mm}$ ajassa $t = \sqrt{2 \cdot 2{,}5 \cdot 10^{-3}\,\text{m} : 2{,}67 \cdot 10^{4}\,\text{m/s}^2} = 4{,}3 \cdot 10^{-4}\,\text{s}$. Silloin se on edennyt $20\,\text{m/s} \cdot 4{,}3 \cdot 10^{-4}\,\text{s} = 8{,}7\,\text{mm} < 10\,\text{mm}$. Osuma tapahtuu siis ennen levyjen päätä.
+**Sijoitus:** a) $E = \dfrac{2000\,\text{V}}{5{,}0 \cdot 10^{-3}\,\text{m}} = 4{,}0 \cdot 10^{5}\,\text{V/m}$ ja $F = 1{,}0 \cdot 10^{-12}\,\text{C} \cdot 4{,}0 \cdot 10^{5}\,\text{V/m} = 4{,}0 \cdot 10^{-7}\,\text{N}$. Paino on $mg = 3{,}0 \cdot 10^{-11}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 2{,}9 \cdot 10^{-10}\,\text{N}$. Sähköinen voima on noin $1400$-kertainen painoon verrattuna, joten painon voi jättää huomiotta. b) $a = \dfrac{4{,}0 \cdot 10^{-7}\,\text{N}}{3{,}0 \cdot 10^{-11}\,\text{kg}} = 1{,}33 \cdot 10^{4}\,\text{m/s}^2$. c) $t = \dfrac{1{,}0 \cdot 10^{-2}\,\text{m}}{20\,\text{m/s}} = 5{,}0 \cdot 10^{-4}\,\text{s}$. d) $$\begin{aligned} y &= \dfrac{1}{2} \cdot 1{,}33 \cdot 10^{4}\,\text{m/s}^2 \\ &\cdot (5{,}0 \cdot 10^{-4}\,\text{s})^2 \\ &= 1{,}67 \cdot 10^{-3}\,\text{m} \\ &= 1{,}67\,\text{mm} \end{aligned}$$. e) Pisara tulee puolivälistä, joten se osuu levyyn, jos poikkeama on yli $d : 2 = 2{,}5\,\text{mm}$. Nyt $1{,}67\,\text{mm} < 2{,}5\,\text{mm}$, joten pisara ei osu levyyn. Kun jännite kaksinkertaistuu, myös $E$, $F$ ja $a$ kaksinkertaistuvat. Silloin $y = 3{,}33\,\text{mm} > 2{,}5\,\text{mm}$, joten pisara osuu levyyn. Se saavuttaa poikkeaman $2{,}5\,\text{mm}$ ajassa $t = \sqrt{2 \cdot 2{,}5 \cdot 10^{-3}\,\text{m} : 2{,}67 \cdot 10^{4}\,\text{m/s}^2} = 4{,}3 \cdot 10^{-4}\,\text{s}$. Silloin se on edennyt $20\,\text{m/s} \cdot 4{,}3 \cdot 10^{-4}\,\text{s} = 8{,}7\,\text{mm} < 10\,\text{mm}$. Osuma tapahtuu siis ennen levyjen päätä.
 **Vastaus:** $1{,}7\,\text{mm}$, kaksi merkitsevää numeroa kuten lähtötiedoissa. Pisara ei osu levyyn, mutta kaksinkertaisella jännitteellä osuisi.
-**Järkevyys:** Poikkeama on pienempi kuin levyjen puoliväli $2{,}5\,\text{mm}$. Se sopii kirjoittimeen, jossa pisaran paikkaa säädetään jännitteellä. Pisara kulkee levyjen ohi vaakanopeudella $20\,\text{m/s}$ ajassa $0{,}5\,\text{ms}$. Sinä aikana sivuttaisnopeus kasvaa arvoon $a \cdot t = 1{,}33 \cdot 10^{4}\,\text{m/s}^2 \cdot 5{,}0 \cdot 10^{-4}\,\text{s} = 6{,}7\,\text{m/s}$. Se on selvästi pienempi kuin $20\,\text{m/s}$.
+**Järkevyys:** Poikkeama on pienempi kuin levyjen puoliväli $2{,}5\,\text{mm}$. Se sopii kirjoittimeen, jossa pisaran paikkaa säädetään jännitteellä. Pisara kulkee levyjen ohi vaakanopeudella $20\,\text{m/s}$ ajassa $0{,}5\,\text{ms}$. Sinä aikana sivuttaisnopeus kasvaa arvoon $$\begin{aligned} &a \cdot t \\ &= 1{,}33 \cdot 10^{4}\,\text{m/s}^2 \\ &\cdot 5{,}0 \cdot 10^{-4}\,\text{s} \\ &= 6{,}7\,\text{m/s} \end{aligned}$$. Se on selvästi pienempi kuin $20\,\text{m/s}$.

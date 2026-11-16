@@ -176,7 +176,7 @@
    "unit": "m/s²",
    "tolerance": 0.05,
    "data": {
-    "caption": "Braking distance of a car at different initial speeds (example data)",
+    "caption": "Braking distance of a car at different initial speeds",
     "columns": [
      "$v_0\\,(\\text{m/s})$",
      "$s_\\text{b}\\,(\\text{m})$"
@@ -213,7 +213,7 @@
    "unit": "km/h",
    "tolerance": 0.03,
    "data": {
-    "caption": "Stopping time and average force of the dummy (example data)",
+    "caption": "Stopping time and average force of the dummy",
     "columns": [
      "$\\Delta t\\,(\\text{s})$",
      "$F_\\text{avg}\\,(\\text{kN})$"
@@ -300,6 +300,20 @@
    "answer": 45.0,
    "unit": "m",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy4-11-L2-10",
+   "level": 2,
+   "text": "The stopping distance calculator of Liikenneturva (the Finnish Road Safety Council) shows the reaction distance (<em>Reaktiomatka</em>), the braking distance (<em>Jarrutusmatka</em>) and the stopping distance of a car at different speeds and on different road surfaces. Open the calculator: <a href=\"https://extrat.liikenneturva.fi/pysahtymismatka-auto/fi/\" target=\"_blank\" rel=\"noopener\">Liikenneturva: Pysähtymismatka</a> (read 16 November 2026; the page is in Finnish). Its section <em>Lisätietoa</em> (More information) tells with which reaction time and which decelerations the distances have been calculated.\n\na) Read from the calculator the reaction distance, the braking distance and the stopping distance at $40$, $60$, $80$ and $100\\,\\text{km/h}$ on a dry road surface (<em>kuiva</em>) and collect them in a table. Draw the braking distance as a function of the initial speed.\n\nb) Calculate the braking distances at the same speeds with the deceleration the calculator uses and compare the results with the calculator's values. Use your calculation to explain why the braking distance is not directly proportional to the initial speed.\n\nc) A driver notices an obstacle $50\\,\\text{m}$ ahead. Using the calculator's reaction time and deceleration, find out whether the car can stop on a dry road before the obstacle when the speed is $80\\,\\text{km/h}$, and when it is $100\\,\\text{km/h}$. Calculate the collision speed if the car cannot stop.\n\nd) Compare the stopping distances on a dry and on an icy road surface (<em>jäinen</em>) at $80\\,\\text{km/h}$. Explain the difference using the forces acting on the car.\n\ne) A motorist claims: “Thanks to modern ABS brakes, driving faster hardly increases the braking distance.” Evaluate the claim using physics and the calculator's values.\n\nThe answer box takes the collision speed of part c) when the initial speed of the car is $100\\,\\text{km/h}$. Answer in $\\text{km/h}$.",
+   "kind": [
+    "data",
+    "graph",
+    "model",
+    "reasoning"
+   ],
+   "answer": 69.3974062915899,
+   "unit": "km/h",
+   "tolerance": 0.03
   }
  ],
  "level3": [
@@ -340,7 +354,7 @@
    "unit": "km/h",
    "tolerance": 0.03,
    "data": {
-    "caption": "Stopping distance on wet asphalt (example data)",
+    "caption": "Stopping distance on wet asphalt",
     "columns": [
      "$v\\,(\\text{km/h})$",
      "$s_\\text{stop}\\,(\\text{m})$"
@@ -378,7 +392,7 @@
    "unit": "kN",
    "tolerance": 0.02,
    "data": {
-    "caption": "Speed of the dummy during the collision (example data)",
+    "caption": "Speed of the dummy during the collision",
     "columns": [
      "$t\\,(\\text{ms})$",
      "$v\\,(\\text{m/s})$"

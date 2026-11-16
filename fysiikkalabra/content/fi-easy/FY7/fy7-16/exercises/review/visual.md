@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 66110211ff5fce52
-SCOPE: delta added-exercise from 186e0da2b094809b base 8f23aa7ae3bd
+CONTENT-HASH: df62d128267c1f99
 
 ## Blocking
 
 ## Polish
-- [Minor] fy7-16/charger-points — the "receiver coil" leader in the right panel ends at the phone's upper edge, not at the coil in its base; extend it a little lower.
+
 
 ## Checked
-- Added 16-17 and 16-18 (fy7-16-open-exercises-L2-1280-11, -12, -14, full size). Redrawn charger-points: labels clear of the phone and the counted field lines (the earlier Major is resolved); P : P₀ graph with units, aligned chains, decimal comma, units upright; the set reads as one.
-- Rest not re-reviewed.
+- Packet captures have no phone-width opened solutions, so own Playwright captures of the current preview build (preview/fi-easy) at 390 px and 1280 px, every solution open; plus a scripted scan of every formula of the exercise set at 360 and 390 px: none wider than its box, none scrolling, no page overflow.
+- Delta: the 6 re-broken blocks (e_0 three times, ΔE, 211 dB check, interpolation of d) at 390 and 1280 px, full size. No break between a number and its power of ten or unit; fraction row of d fits the phone. Rest not re-reviewed.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -161,7 +161,7 @@
       "unit": "Ω",
       "tolerance": 0.02,
       "data": {
-        "caption": "LEDien jännitteet virralla $15\\,\\text{mA}$ (esimerkkiaineisto)",
+        "caption": "LEDien jännitteet virralla $15\\,\\text{mA}$",
         "columns": [
           "Väri",
           "$U_\\text{D}\\,(\\text{V})$"
@@ -194,7 +194,7 @@
       "unit": "mW",
       "tolerance": 0.02,
       "data": {
-        "caption": "Aurinkokennon mittaukset eri kuormilla (esimerkkiaineisto)",
+        "caption": "Aurinkokennon mittaukset eri kuormilla",
         "columns": [
           "$R\\,(\\Omega)$",
           "$U\\,(\\text{V})$",
@@ -247,7 +247,7 @@
     {
       "id": "fy6-14-L2-07",
       "level": 2,
-      "text": "Opiskelija mitoittaa sinisen LEDin etuvastuksen. Pariston jännite on $9{,}0\\,\\text{V}$ ja LEDin jännite $3{,}2\\,\\text{V}$. Virraksi halutaan $15\\,\\text{mA}$.\n\nOpiskelijan ratkaisu: ”Vastuksen yli on pariston jännite, joten $R = U : I = 9{,}0\\,\\text{V} : 0{,}015\\,\\text{A} = 600\\,\\Omega$.”\n\na) Mikä virhe opiskelijan ratkaisussa on?\n\nb) Laske etuvastus oikein. Vastaa kohdan b tulos ohmeina.",
+      "text": "Opiskelija mitoittaa sinisen LEDin etuvastuksen. Pariston jännite on $9{,}0\\,\\text{V}$ ja LEDin jännite $3{,}2\\,\\text{V}$. Virraksi halutaan $15\\,\\text{mA}$.\n\nOpiskelijan ratkaisu: ”Vastuksen yli on pariston jännite, joten $$\\begin{aligned} R &= U : I \\\\ &= 9{,}0\\,\\text{V} : 0{,}015\\,\\text{A} \\\\ &= 600\\,\\Omega \\end{aligned}$$.”\n\na) Mikä virhe opiskelijan ratkaisussa on?\n\nb) Laske etuvastus oikein. Vastaa kohdan b tulos ohmeina.",
       "kind": [
         "error"
       ],
@@ -354,7 +354,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Säteilyenergia ja sähkönkulutus kuukausittain (esimerkkiaineisto)",
+        "caption": "Säteilyenergia ja sähkönkulutus kuukausittain",
         "columns": [
           "Kuukausi",
           "$H\\,(\\text{kWh/m}^2)$",
@@ -437,7 +437,7 @@
       "unit": "mA",
       "tolerance": 0.05,
       "data": {
-        "caption": "Vihreän LEDin ominaiskäyrä (esimerkkiaineisto)",
+        "caption": "Vihreän LEDin ominaiskäyrä",
         "columns": [
           "$U_\\text{D}\\,(\\text{V})$",
           "$I\\,(\\text{mA})$"

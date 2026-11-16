@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6add813177ef7122
+CONTENT-HASH: e88862aa7f7e61f1
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+None.
 
 ## Checked
-- Light delta review: diff read; changed passages opened at 360-390 px (fy4-13-stage-selita-390-3): enlarged numbered step 2 and step 3 wrap cleanly, a and T inline maths on one line, figure and displays intact.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+- batch delta review: re-broken chains in lesson.md/inquiry.json (reflow only); opened fi-390-19, fi-390-20 and fi-1280-15; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

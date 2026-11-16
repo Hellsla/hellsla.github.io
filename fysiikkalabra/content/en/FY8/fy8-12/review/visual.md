@@ -1,11 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0a14917be2b6beb5
+CONTENT-HASH: 309758a906385bfb
+
+Round 2 (delta): judged whether a lone ", " or ". " still starts a line after a lifted display formula.
 
 ## Blocking
-- none
+- None.
 
 ## Polish
-- [Minor] lesson.md half-value thickness subsection — the first and third sentences both say the property depends on material and energy — merge them to avoid the repetition.
+- [Minor] fy8-12 stage-selita-390-3 (radiation table) — at 390 px the cells break into very narrow words ("he-lium nu-cleus", "me-tres"), rows tall and cramped; not part of the diff — let the table scroll sideways in its own container or shorten the cells.
 
 ## Checked
-- batch delta review: opened fy8-12-fig-row-1280.png (ionising-radiation figure unchanged, teacher-approved) and read the rewritten subsection; $662\,\text{keV}$ stays LaTeX, no plain-text quantities.
+- Opened (fy8-12): example-390-1, stage-selita-390-3. Lifted formulas in the staged example and open solutions show the sentence mark inside the formula's last row; no lone mark, no clipping, rows aligned.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 14555a0377ff79b2
-SCOPE: delta added-exercise from 8ae950d4924a8353 base 81db4a6fd727
+CONTENT-HASH: 5e71c2281827700a
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] exercises.json task text, capture fi-390-03 #4 and #13 — the punctuation after the lifted student calculation is not drawn into the formula's last row: "`. Syvyys on`" and "`, kun suunta ylöspäin on positiivinen.`" starts the next line alone (390 and 1280 px). Fix: let the build attach trailing punctuation in a task `text` as it already does in solutions and feedback, or put it inside the last row (`…\end{aligned}$$` → `… .` / `, \end{aligned}$$`). No new review round needed.
 
 ## Checked
-- Diff read: one answer paragraph reworded, no layout change. No capture opened for it.
-- Round 2 wording is clear and gives the reason for three significant figures.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-02, fi-390-03, fi-390-04 and fi-1280-02; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: b1a099f5521137fb
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 358a167f8ef9e1dd
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md — "ja silloin merkitään lyhyesti $e$" → "Silloin sitä merkitään lyhyesti $e$:llä."
+- [Minor] inquiry.json, Koe 1 model text — in "$-N\Delta\Phi = -10 \cdot 2{,}0\,\text{mWb}$ $= -20\,\text{mWb}$" the second formula starts with a bare relation, so on a wide screen the gap before "=" is narrower than the gap after it. Start the continuation with `{}=` if the spacing should be even.
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- $e_\text{ka}$ / $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$ / $e(t) = -N\,\tfrac{\mathrm{d}\Phi}{\mathrm{d}t}$ typography; inquiry magnet task now uses $|e_\text{ka}|$ in Kysytty, Kaava and Sijoitus consistently.
-- Hash identical at start and end of this round.
+- batch delta review (fi-easy, 5d reflow, round 2): the round-1 blocker is gone: the model-text chain is two inline formulas and wraps before "= −20 mWb" at 360 and 390 px, the unit is visible, the sentence stays whole. Feedback |e| = 200 · 0,30 T / · 6,0 · 10⁻⁴ m² : 0,050 s / = 0,72 V and the hint |e_ka| … : (15 · 10⁻³ s) fit at 360 and 390 px with the full stop inside; at 1280 px the rows join. own captures of the rebuilt preview (preview/fi-easy, everything open; scratchpad vfe-r2/): contact sheets at 390 and 1280 px, the changed formulas at 360 px after real clicks; overflow scan of every formula at 360/390/1280 px: none wider than its box, no scrolling, no page overflow. Hash identical at start and end.

@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 4a0ff6dc31b1442a
-SCOPE: delta added-exercise from b79a628ab354a3a9 base 81db4a6fd727
+CONTENT-HASH: 9446a1ba13882d4d
 
 ## Blocking
 - none
@@ -9,9 +8,11 @@ SCOPE: delta added-exercise from b79a628ab354a3a9 base 81db4a6fd727
 - none
 
 ## Checked
-- Added task fy1-4-L1-09 only; hash recomputed at start and end.
-- Table value: aluminium 2.70·10^3 kg/m^3; correct.
-- Linear model m = kV through the origin with k = ρ, matching the lesson's proportional model; conversion 2.70·10^3 kg/m^3 = 2.70 g/cm^3 right (10^3 g/kg, 10^6 cm^3/m^3).
-- Independent recompute 121.5 g = answers.py; the shown 1.2·10^2 g is 1.2 % below it, within 4 %.
-- Two significant figures from V = 45 cm^3; reasonableness check against water (45 g, ×2.7) is real.
-- en numbers identical to the Finnish original.
+- Hash (--exercises --lang en) 9446a1ba13882d4d at start and end.
+- Independent recompute: k = (16.3 − 7.2) °C / (12 − 6) h = 1.5167 °C/h = answers.py = exercises.json 1.517; unit °C/h, tolerance 0.03 covers 1.5.
+- Two-hour changes 3.2, 3.1, 2.8 °C; minimum 6.0 °C at 4 h, maximum 18.1 °C at 16 h: all match the table.
+- Model T(t) = T1 + k(t − t1): 10.2 °C at 8 h, 13.3 °C at 10 h (≤ 0.2 °C off), 22.4 °C at 16 h, −1.9 °C at 0 h: all recomputed.
+- Table labelled an invented example, not presented as measured; plausible for a clear inland May day.
+- Validity range of a linear model and no extrapolation to the next day: consistent with the fits guardrail; part d)'s causes (solar heating, night cooling, clouds, wind, air mass) correct.
+- °C/h = K/h for a temperature change: correct.
+- Two significant figures from the 9.1 °C change, 6 h interval treated as exact (teacher rule 2026-11-16).

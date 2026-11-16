@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4d8688e99d2ef3cb
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 3
+CONTENT-HASH: ebe800111c50a61e
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- lesson.md:235 — the old sentence also told the student that bone-dry wood reaches about 19 MJ/kg; MAFY's "puu, kuiva" 16,2 MJ/kg is not oven-dry wood. "Kuivemmasta puusta saa enemmän" is right as written; do not add "täysin kuiva" to the MAFY value (C).
 
 ## Checked
-- Round-3 diff `git diff HEAD~1` (commit a84956a90) of this unit's files (fi), judged in context; content hash recomputed and equal to the new hash.
-- inquiry.json ennuste-2: the second question is now "Voiko lukuja verrata keskenään samana fysikaalisena suureena?" and no longer gives the answer away. The options still fit it: the correct option (larger, but nutrition-label energy and heating value describe different things) answers no, and the distractor that treats them as the same quantity is still wrong for the stated reason. The numbers are unchanged: $2200\,\text{kJ} : 0{,}100\,\text{kg} = 22\,\text{MJ/kg} > 15\,\text{MJ/kg}$.
+- Delta review: hash ebe800111c50a61e at the start and the end; I judged the one changed line in lesson.md (Kosteus ja polttoaineen laatu); the other entries are re-broken chains, teacher-approved figures and formula names (carried).
+- 16,2 MJ/kg is MAFY *Polttoaineiden LHV-lämpöarvoja*, "puu, kuiva" (docs/mafy-arvot.tsv, VERIFIED), an LHV like the chapter's table, so the comparison is like for like.
+- Ordering consistent: air-dry firewood 15 MJ/kg (20–25 % moisture) < MAFY dry wood 16,2 MJ/kg, matching "kuivemmasta puusta saa enemmän".
+- The causal explanation (water does not burn; part of the energy vaporises the water) is unchanged and correct.
+- No other 19 MJ/kg remains in lesson.md, inquiry.json or exit-ticket.json, so nothing contradicts the new value; the exercise set uses the same 16,2 (fy2-1 L1-10).

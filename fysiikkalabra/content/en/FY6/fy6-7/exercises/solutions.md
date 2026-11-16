@@ -13,7 +13,7 @@
 **Find:** the energy in megajoules
 **Principle:** The kilowatt-hour and the joule are units of the same quantity, energy. The conversion is done by substituting for the kilowatt-hour what the unit means: kilowatt times hour.
 **Formula:** $E = Pt$: a kilowatt-hour is the power of a kilowatt for an hour, so to convert to joules we substitute watts for the kilowatt and seconds for the hour.
-**Conversions:** $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3\,600\,000\,\text{J} = 3.6\,\text{MJ}$
+**Conversions:** $$\begin{aligned} 1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\ &= 3\,600\,000\,\text{J} \\ &= 3.6\,\text{MJ} \end{aligned}$$
 **Substitution:** $E = 0.15 \cdot 3.6\,\text{MJ} = 0.54\,\text{MJ}$
 **Answer:** $0.54\,\text{MJ}$, two significant figures like the energy $0.15\,\text{kWh}$.
 **Reasonableness:** A kilowatt-hour is $3.6\,\text{MJ}$, so a little under a fifth of it is a little over half a megajoule. In joules the number is larger than in kilowatt-hours, because the joule is a much smaller unit.
@@ -25,7 +25,7 @@
 **Formula:** $P = UI$, so $I = \dfrac{P}{U}$
 **Conversions:** Not needed: $1\,\text{W} : 1\,\text{V} = 1\,\text{A}$.
 **Substitution:** $I = \dfrac{1200\,\text{W}}{230\,\text{V}} = 5.217\,\text{A}$
-**Answer:** $5.2\,\text{A}$, two significant figures like the voltage $230\,\text{V}$.
+**Answer:** $5.22\,\text{A}$, three significant figures like the voltage $230\,\text{V}$, which is a value with three significant figures.
 **Reasonableness:** The estimate $1200\,\text{W} : 200\,\text{V} = 6\,\text{A}$ is a little larger, because the divisor is smaller. The current is under $10\,\text{A}$, so the iron suits a circuit protected by a $10\,\text{A}$ or $16\,\text{A}$ fuse when no other high-power devices are on at the same time.
 
 ## fy6-7-L1-04
@@ -55,7 +55,7 @@
 **Reading the graph:** In the heating phase the power is $2.0\,\text{kW}$ between $0$ and $0.25\,\text{h}$, so the duration is $0.25\,\text{h}$. In the wash the power is $0.2\,\text{kW}$ between $0.25$ and $1.25\,\text{h}$, that is $1.0\,\text{h}$. In the spin the power is $0.4\,\text{kW}$ between $1.25$ and $1.5\,\text{h}$, that is $0.25\,\text{h}$.
 **Formula:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$
 **Conversions:** Not needed: the powers are read in kilowatts and the times in hours, so the energy comes out in kilowatt-hours.
-**Substitution:** $E = 2.0\,\text{kW} \cdot 0.25\,\text{h} + 0.2\,\text{kW} \cdot 1.0\,\text{h} + 0.4\,\text{kW} \cdot 0.25\,\text{h} = 0.80\,\text{kWh}$
+**Substitution:** $$\begin{aligned} E &= 2.0\,\text{kW} \cdot 0.25\,\text{h} \\ &+ 0.2\,\text{kW} \cdot 1.0\,\text{h} \\ &+ 0.4\,\text{kW} \cdot 0.25\,\text{h} \\ &= 0.80\,\text{kWh} \end{aligned}$$
 **Answer:** $0.80\,\text{kWh}$, two significant figures, because the values are read from the grid lines of $0.2\,\text{kW}$ and $0.25\,\text{h}$.
 **Reasonableness:** The heating is short but uses over half of the energy, $0.50\,\text{kWh}$, because its power is ten times that of the wash. A program of an hour and a half at an average power of about $0.5\,\text{kW}$ would give $0.8\,\text{kWh}$.
 
@@ -66,8 +66,8 @@
 **Formula:** $P = UI$ and $E = Pt$, so $E = UIt$
 **Conversions:** $t = 4.0\,\text{min} = 4.0 \cdot 60\,\text{s} = 240\,\text{s}$; finally $1\,\text{kJ} = 1000\,\text{J}$
 **Substitution:** $E = 230\,\text{V} \cdot 8.7\,\text{A} \cdot 240\,\text{s} = 480\,240\,\text{J} = 480.24\,\text{kJ}$
-**Answer:** $480\,\text{kJ}$, two significant figures like the current $8.7\,\text{A}$ and the time $4.0\,\text{min}$.
-**Reasonableness:** The power of the kettle is $230\,\text{V} \cdot 8.7\,\text{A} \approx 2000\,\text{W}$, that is $2\,\text{kJ}$ per second, and in $240$ seconds it is about $480\,\text{kJ}$. In kilowatt-hours this is $0.13\,\text{kWh}$, which fits an ordinary kettle boil.
+**Answer:** $4.8 \cdot 10^{2}\,\text{kJ}$, two significant figures like the current $8.7\,\text{A}$ and the time $4.0\,\text{min}$.
+**Reasonableness:** The power of the kettle is $230\,\text{V} \cdot 8.7\,\text{A} \approx 2000\,\text{W}$, that is $2\,\text{kJ}$ per second, and in $240$ seconds it is about $4.8 \cdot 10^{2}\,\text{kJ}$. In kilowatt-hours this is $0.13\,\text{kWh}$, which fits an ordinary kettle boil.
 
 ## fy6-7-L2-03
 **Given:** standby power $P = 4.5\,\text{W}$ all year, $365$ days, price $a = 17\,\text{c/kWh}$
@@ -87,7 +87,7 @@
 **Conversions:** $P_1 - P_2 = 60\,\text{W} - 8.0\,\text{W} = 52\,\text{W} = 0.052\,\text{kW}$; $t = 365 \cdot 4.0\,\text{h} = 1460\,\text{h}$
 **Substitution:** $\Delta E = 0.052\,\text{kW} \cdot 1460\,\text{h} = 75.92\,\text{kWh}$
 **Answer:** $76\,\text{kWh}$, two significant figures like the powers $60\,\text{W}$ and $8.0\,\text{W}$ and the burning time $4.0\,\text{h}$.
-**Reasonableness:** In a year the filament lamp uses $0.060\,\text{kW} \cdot 1460\,\text{h} \approx 88\,\text{kWh}$ and the LED lamp about $12\,\text{kWh}$; the difference is about $76\,\text{kWh}$. The saving is almost the whole consumption of the filament lamp, because the power of the LED lamp is only about a seventh of it.
+**Reasonableness:** In a year the filament lamp uses $$0.060\,\text{kW} \cdot 1460\,\text{h} \approx 88\,\text{kWh}$$ and the LED lamp about $12\,\text{kWh}$; the difference is about $76\,\text{kWh}$. The saving is almost the whole consumption of the filament lamp, because the power of the LED lamp is only about a seventh of it.
 
 ## fy6-7-L3-01
 **Given:** power of the kettle $P_1 = 2200\,\text{W}$, time $t_1 = 3.0\,\text{min}$, power of the lamp $P_2 = 15\,\text{W}$
@@ -107,7 +107,7 @@
 **Conversions:** $a = 15.0\,\text{c/kWh} = 0.150\,\text{€/kWh}$
 **Substitution:** $E = \dfrac{64.20\,\text{€} - 8.50\,\text{€}}{0.150\,\text{€/kWh}} = \dfrac{55.70\,\text{€}}{0.150\,\text{€/kWh}} = 371.3\,\text{kWh}$
 **Answer:** $371\,\text{kWh}$, three significant figures like the price $15.0\,\text{c/kWh}$.
-**Reasonableness:** Check: $371\,\text{kWh} \cdot 0.150\,\text{€/kWh} = 55.65\,\text{€}$, and with the basic charges the total is $64.15\,\text{€} \approx 64.20\,\text{€}$. The consumption suits an apartment in a block of flats without electric heating. If the basic charges had been forgotten, the energy would have come out too large, $428\,\text{kWh}$.
+**Reasonableness:** Check: $$\begin{aligned} &371\,\text{kWh} \cdot 0.150\,\text{€/kWh} \\ &= 55.65\,\text{€} \end{aligned}$$, and with the basic charges the total is $64.15\,\text{€} \approx 64.20\,\text{€}$. The consumption suits an apartment in a block of flats without electric heating. If the basic charges had been forgotten, the energy would have come out too large, $428\,\text{kWh}$.
 
 ## fy6-7-L3-03
 **Given:** resistance of the heating resistor $R = 26.5\,\Omega$, voltage $U = 230\,\text{V}$, time $t = 2.50\,\text{h}$
@@ -132,7 +132,7 @@
 **Conversions:** $t = 30 \cdot 15\,\text{min} = 450\,\text{min} = \tfrac{450}{60}\,\text{h} = 7.5\,\text{h}$; $a = 18\,\text{c/kWh} = 0.18\,\text{€/kWh}$
 **Substitution:** $E = 0.90\,\text{kW} \cdot 7.5\,\text{h} = 6.75\,\text{kWh}$ and $K = 0.18\,\tfrac{\text{€}}{\text{kWh}} \cdot 6.75\,\text{kWh} = 1.215\,\text{€}$
 **Answer:** $1.2\,\text{€}$, two significant figures like the power $0.90\,\text{kW}$ and the price $18\,\text{c/kWh}$.
-**Reasonableness:** In a day the coffee maker uses $0.90\,\text{kW} \cdot 0.25\,\text{h} = 0.225\,\text{kWh}$, which costs about $4\,\text{c}$. In thirty days this is about $30 \cdot 4\,\text{c} = 120\,\text{c} \approx 1.2\,\text{€}$.
+**Reasonableness:** In a day the coffee maker uses $$\begin{aligned} &0.90\,\text{kW} \cdot 0.25\,\text{h} \\ &= 0.225\,\text{kWh} \end{aligned}$$, which costs about $4\,\text{c}$. In thirty days this is about $30 \cdot 4\,\text{c} = 120\,\text{c} \approx 1.2\,\text{€}$.
 
 ## fy6-7-L1-08
 **Given:** energy $E = 1.0\,\text{kWh}$, power $P = 40\,\text{W}$
@@ -151,12 +151,12 @@
 **Formula:** $E_\text{day} = Pt$ for each appliance and $E_\text{year} = 365 \cdot E_\text{day,tot}$
 **Conversions:** $90\,\text{W} = 0.090\,\text{kW}$, $110\,\text{W} = 0.110\,\text{kW}$, $60\,\text{W} = 0.060\,\text{kW}$, $1200\,\text{W} = 1.200\,\text{kW}$ and $800\,\text{W} = 0.800\,\text{kW}$
 **Substitution:** Lighting $0.090\,\text{kW} \cdot 5.0\,\text{h} = 0.45\,\text{kWh}$; television $0.110\,\text{kW} \cdot 4.0\,\text{h} = 0.44\,\text{kWh}$; computer $0.060\,\text{kW} \cdot 6.0\,\text{h} = 0.36\,\text{kWh}$; vacuum cleaner $1.200\,\text{kW} \cdot 0.50\,\text{h} = 0.60\,\text{kWh}$; toaster $0.800\,\text{kW} \cdot 0.20\,\text{h} = 0.16\,\text{kWh}$. The sum is $2.01\,\text{kWh}$ per day, so $E_\text{year} = 365 \cdot 2.01\,\text{kWh} = 733.65\,\text{kWh}$.
-**Answer:** In the answer box: $730\,\text{kWh}$. a) The vacuum cleaner uses the most energy, even though it is on for only half an hour.
+**Answer:** In the answer box: $7.3 \cdot 10^{2}\,\text{kWh}$. a) The vacuum cleaner uses the most energy, even though it is on for only half an hour.
 
-b) $730\,\text{kWh}$, two significant figures like the powers and the times.
+b) $7.3 \cdot 10^{2}\,\text{kWh}$, two significant figures. The limiting data are the powers $90\,\text{W}$ and $60\,\text{W}$ and the usage times; the powers $110\,\text{W}$, $800\,\text{W}$ and $1200\,\text{W}$ have more figures.
 
 c) Lighting is a suitable target for saving, because it is the second largest item and its power can be reduced by changing the lamps to LED lamps, whereas the time of use of the vacuum cleaner cannot be shortened without the cleaning suffering.
-**Reasonableness:** With the energy of a day, $2.01\,\text{kWh}$, the average power is $2.01\,\text{kWh} : 24\,\text{h} = 0.084\,\text{kW} = 84\,\text{W}$, which is reasonable for the appliances of evenings at home. In a year $365 \cdot 2\,\text{kWh} = 730\,\text{kWh}$ agrees with the result. The vacuum cleaner uses more than the lighting, because its power is $13$ times as large ($1200\,\text{W} : 90\,\text{W}$) but its time is only a tenth.
+**Reasonableness:** With the energy of a day, $2.01\,\text{kWh}$, the average power is $2.01\,\text{kWh} : 24\,\text{h} = 0.084\,\text{kW} = 84\,\text{W}$, which is reasonable for the appliances of evenings at home. In a year $$\begin{aligned} &365 \cdot 2\,\text{kWh} \\ &= 7.3 \cdot 10^{2}\,\text{kWh} \end{aligned}$$ agrees with the result. The vacuum cleaner uses more than the lighting, because its power is $13$ times as large ($1200\,\text{W} : 90\,\text{W}$) but its time is only a tenth.
 
 ## fy6-7-L2-06
 **Given:** meter readings $12\,437.2\,\text{kWh}$ at the start and $12\,493.5\,\text{kWh}$ after seven days, price $a = 16\,\text{c/kWh}$
@@ -171,7 +171,7 @@ c) Lighting is a suitable target for saving, because it is the second largest it
 b) $335\,\text{W}$, three significant figures like the difference of the energies $56.3\,\text{kWh}$.
 
 c) $9.0\,\text{€}$.
-**Reasonableness:** Check: $0.335\,\text{kW} \cdot 168\,\text{h} = 56.3\,\text{kWh}$. The average power corresponds to about three $100\,\text{W}$ lamps burning all the time, which suits a home where heating is not electric. A price of about $9\,\text{€}$ a week is about $8\,\text{kWh} \cdot 0.16\,\text{€/kWh} \cdot 7 \approx 9\,\text{€}$.
+**Reasonableness:** Check: $$\begin{aligned} &0.335\,\text{kW} \cdot 168\,\text{h} \\ &= 56.3\,\text{kWh} \end{aligned}$$. The average power corresponds to about three $100\,\text{W}$ lamps burning all the time, which suits a home where heating is not electric. A price of about $9\,\text{€}$ a week is about $$\begin{aligned} &8\,\text{kWh} \cdot 0.16\,\text{€/kWh} \cdot 7 \\ &\approx 9\,\text{€} \end{aligned}$$.
 
 ## fy6-7-L2-07
 **Given:** energy meter readings $0.00$–$1.64\,\text{kWh}$ as a function of time $0$–$48\,\text{h}$, $365$ days
@@ -181,12 +181,12 @@ c) $9.0\,\text{€}$.
 **Formula:** $P_\text{avg} = \dfrac{E}{t}$ and $E_\text{year} = P_\text{avg} t_\text{year}$
 **Conversions:** $t_\text{year} = 365 \cdot 24\,\text{h} = 8760\,\text{h}$
 **Substitution:** $P_\text{avg} = \dfrac{1.64\,\text{kWh}}{48\,\text{h}} = 0.03417\,\text{kW}$ and $E_\text{year} = 0.03417\,\text{kW} \cdot 8760\,\text{h} = 299.3\,\text{kWh}$
-**Answer:** In the answer box: $300\,\text{kWh}$. a) The energy read from the line at $48\,\text{h}$ is $1.64\,\text{kWh}$.
+**Answer:** In the answer box: $3.0 \cdot 10^{2}\,\text{kWh}$. a) The energy read from the line at $48\,\text{h}$ is $1.64\,\text{kWh}$.
 
-b) $300\,\text{kWh}$, two significant figures, because fitting the line by eye limits the accuracy.
+b) $3.0 \cdot 10^{2}\,\text{kWh}$, two significant figures, because fitting the line by eye limits the accuracy.
 
 c) The room temperature during the measurement is different from the yearly average, and the opening of the door and the contents of the refrigerator vary, so the consumption is not the same all year. In addition, $48\,\text{h}$ is a short time, so the running periods of the compressor affect the result.
-**Reasonableness:** The average power $0.034\,\text{kW} = 34\,\text{W}$ is small, because the compressor is on only part of the time; for example a $100\,\text{W}$ compressor runs about a third of the time. Check: $299\,\text{kWh} : 8760\,\text{h} = 0.0341\,\text{kW}$, which agrees with the measurement.
+**Reasonableness:** The average power $0.034\,\text{kW} = 34\,\text{W}$ is small, because the compressor is on only part of the time; for example a $100\,\text{W}$ compressor runs about a third of the time. Check: $$\begin{aligned} &299\,\text{kWh} : 8760\,\text{h} \\ &= 0.0341\,\text{kW} \end{aligned}$$, which agrees with the measurement.
 
 ## fy6-7-L3-04
 **Given:** consumption $E$ and price $a$ in six four-hour periods from the table; power of the heater $P = 2.0\,\text{kW}$, time $t = 3.0\,\text{h}$ in the period from $16$ to $20$ o'clock
@@ -201,7 +201,7 @@ $$S = E_\text{heater}\,(a_\text{high} - a_\text{low}).$$
 b) $0.93\,\text{€}$ per day, two significant figures like the power of the heater $2.0\,\text{kW}$.
 
 c) The saving arises because the same energy $6.0\,\text{kWh}$ is bought at a lower price, not because less energy is used. The move does not necessarily succeed every day, because the prices change daily and the cheapest period is not always at night.
-**Reasonableness:** After the move the cost is $267.44\,\text{c} - 93.0\,\text{c} = 174.44\,\text{c}$, that is, $1.74\,\text{€}$. The average price $14\,\text{c/kWh}$ is between the prices of the cheapest and the most expensive period.
+**Reasonableness:** After the move the cost is $$\begin{aligned} &267.44\,\text{c} - 93.0\,\text{c} \\ &= 174.44\,\text{c} \end{aligned}$$, that is, $1.74\,\text{€}$. The average price $14\,\text{c/kWh}$ is between the prices of the cheapest and the most expensive period.
 
 ## fy6-7-L3-05
 **Given:** energy of the old appliance $E_\text{old} = 320\,\text{kWh}$ a year, of the new one $E_\text{new} = 98\,\text{kWh}$ a year, price of the new one $H = 489\,\text{€}$, price of electricity $a = 17\,\text{c/kWh}$, service life $15\,\text{a}$
@@ -252,6 +252,25 @@ The oven uses about $0.060\,\text{kWh}$, that is $60\,\text{Wh}$, of electrical 
 **Reading the graph:** In the heating the power is $2.4\,\text{kW}$ between $0$ and $0.5\,\text{h}$, so the duration is $0.5\,\text{h}$. In the drying the power is $1.2\,\text{kW}$ between $0.5$ and $1.5\,\text{h}$, that is $1.0\,\text{h}$. In the cooling the power is $0.2\,\text{kW}$ between $1.5$ and $2.0\,\text{h}$, that is $0.5\,\text{h}$.
 **Formula:** $E = P_1 t_1 + P_2 t_2 + P_3 t_3$ and $K = aE$
 **Conversions:** $a = 18\,\text{c/kWh} = 0.18\,\text{€/kWh}$
-**Substitution:** $E = 2.4\,\text{kW} \cdot 0.5\,\text{h} + 1.2\,\text{kW} \cdot 1.0\,\text{h} + 0.2\,\text{kW} \cdot 0.5\,\text{h} = 1.2\,\text{kWh} + 1.2\,\text{kWh} + 0.10\,\text{kWh} = 2.5\,\text{kWh}$ and $K = 0.18\,\tfrac{\text{€}}{\text{kWh}} \cdot 2.5\,\text{kWh} = 0.45\,\text{€}$
+**Substitution:** $$\begin{aligned} E &= 2.4\,\text{kW} \cdot 0.5\,\text{h} \\ &+ 1.2\,\text{kW} \cdot 1.0\,\text{h} \\ &+ 0.2\,\text{kW} \cdot 0.5\,\text{h} \\ &= 1.2\,\text{kWh} + 1.2\,\text{kWh} \\ &+ 0.10\,\text{kWh} \\ &= 2.5\,\text{kWh} \end{aligned}$$ and $K = 0.18\,\tfrac{\text{€}}{\text{kWh}} \cdot 2.5\,\text{kWh} = 0.45\,\text{€}$
 **Answer:** $0.45\,\text{€}$, two significant figures, because the values are read from the grid lines of $0.4\,\text{kW}$ and $0.25\,\text{h}$.
 **Reasonableness:** A two-hour program at an average power of about $1.25\,\text{kW}$ would give $2.5\,\text{kWh}$. This costs about $2.5 \cdot 18\,\text{c} = 45\,\text{c}$, less than a euro.
+
+## fy6-7-L2-09
+**Given:** from the source material ([ENERGY STAR – Certified Residential Refrigerators](https://www.energystar.gov/productfinder/product/certified-residential-refrigerators/results), searched on 15 November 2026, filters Type: Top Freezer and the volume class $15$–$17.9\,\text{ft}^3$): model A (LG LT18S1100*) $V = 17.5\,\text{ft}^3$ and $E_\text{A} = 344\,\text{kWh}$ a year; model B (LG LT18S1200*) $V = 17.5\,\text{ft}^3$ and $E_\text{B} = 440\,\text{kWh}$ a year; price of electricity $a = 0.20\,\text{€/kWh}$; number of years $n = 10$
+**Find:** a) a comparison of the annual energy uses; b) the average powers $P_\text{A}$ and $P_\text{B}$ in watts; c) the electricity costs $K_\text{A}$ and $K_\text{B}$ over ten years in euros and their difference; d) why the average power is not the same thing as the momentary input power of the compressor
+**Principle:** Power tells how fast an appliance uses energy, so the average power is the energy used divided by the whole time during which it was used. A refrigerator is connected to the mains all year, so the time is all the hours of the year. Electricity is paid for per kilowatt-hour, so the cost is price times energy; basic charges are not counted in the cost of one appliance. With your own models the numbers are different, but the method is the same. Below is an example solution with the pair in the table.
+**Reading the table:** Both models are of the same type and the same size: $$\begin{aligned} V &= 17.5\,\text{ft}^3 \\ &= 17.5 \cdot 28.3\,\textsf{l} \\ &\approx 495\,\textsf{l} \end{aligned}$$. So the difference in energy use does not come from the size or the type of the appliance. The value in column $E$ is the energy the appliance uses in one year in the standard test.
+**Part a):** Model B uses $$\begin{aligned} &E_\text{B} - E_\text{A} \\ &= 440\,\text{kWh} - 344\,\text{kWh} \\ &= 96\,\text{kWh} \end{aligned}$$ more in a year than model A. The ratio of the energy uses is $$\begin{aligned} &E_\text{B} : E_\text{A} \\ &= 440\,\text{kWh} : 344\,\text{kWh} \\ &\approx 1.28 \end{aligned}$$, so model B uses about $28\,\%$ more, although the appliances are of the same size and type.
+**Formula:** Part b): the energy is $E = P_\text{avg}t$, which gives the average power $P_\text{avg} = \dfrac{E}{t}$. Part c): the energy of $n$ years is $E_n = nE$ and its cost $K = aE_n = naE$
+**Conversions:** A year in hours: $t = 365 \cdot 24\,\text{h} = 8760\,\text{h}$. The power comes out in kilowatts, and $1\,\text{kW} = 1000\,\text{W}$. The price is already in euros per kilowatt-hour.
+**Substitution:** $P_\text{A} = \dfrac{344\,\text{kWh}}{8760\,\text{h}} = 0.03927\,\text{kW} = 39.27\,\text{W}$ and $P_\text{B} = \dfrac{440\,\text{kWh}}{8760\,\text{h}} = 0.05023\,\text{kW} = 50.23\,\text{W}$. The costs are $K_\text{A} = 10 \cdot 0.20\,\tfrac{\text{€}}{\text{kWh}} \cdot 344\,\text{kWh} = 688\,\text{€}$ and $K_\text{B} = 10 \cdot 0.20\,\tfrac{\text{€}}{\text{kWh}} \cdot 440\,\text{kWh} = 880\,\text{€}$. Their difference is $880\,\text{€} - 688\,\text{€} = 192\,\text{€}$.
+**Part d):** The compressor of a refrigerator does not run all the time. A thermostat starts it when the temperature inside rises and stops it when the refrigerator has cooled enough. While it runs, the compressor draws clearly more power from the mains than the average power, and between the running periods the refrigerator draws very little. The average power is the energy of the year divided by all the hours of the year, also those during which the compressor stands still, so it is smaller than the input power during running. If the compressor runs for the fraction $k$ of the time at the power $P_\text{run}$, the average power is approximately $P_\text{avg} = kP_\text{run}$. The input power of a household refrigerator's compressor is typically of the order of a hundred watts (a general order of magnitude, not a value from the source material). For example, with an input power of $100\,\text{W}$ the compressor of model A would run for the fraction $k = 39.27\,\text{W} : 100\,\text{W} \approx 0.39$, about $39\,\%$ of the time. So the average power does not show how much power the refrigerator draws at a moment when the compressor is running.
+**Answer:** In the answer box: $39.3\,\text{W}$. a) Model B uses $96\,\text{kWh}$, about $28\,\%$, more in a year than model A.
+
+b) $P_\text{A} = 39.3\,\text{W}$ and $P_\text{B} = 50.2\,\text{W}$, three significant figures like the annual energy uses $344\,\text{kWh}$ and $440\,\text{kWh}$.
+
+c) About $690\,\text{€}$ and $880\,\text{€}$, a difference of about $190\,\text{€}$; two significant figures like the price $0.20\,\text{€/kWh}$.
+
+d) The compressor runs in cycles, so its input power while running is larger than the average power. This is an example solution with the values taken on 15 November 2026; with your own pair the numbers are different.
+**Reasonableness:** Check: $$\begin{aligned} &0.0393\,\text{kW} \cdot 8760\,\text{h} \\ &\approx 344\,\text{kWh} \end{aligned}$$, which is the annual energy use of model A. An average power of a few tens of watts suits a refrigerator whose compressor runs only part of the time. The cost is about $$\begin{aligned} &350\,\text{kWh} \cdot 0.20\,\text{€/kWh} \\ &= 70\,\text{€} \end{aligned}$$ a year, about $700\,\text{€}$ in ten years, of the same size as the calculated values. The real cost differs from this, because the energy use in a home depends on the room temperature and on how often the door is opened, and the price of electricity does not stay the same for ten years.

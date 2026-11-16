@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 1ecf085acd3d008f
-
+CONTENT-HASH: 3cec58093328684c
 ## Blocking
-None.
-
+None. The round-1 blocker is fixed: the Vastaus/Answer step of fy4-11-L2-10 is now split by part (c with its significant figures and the 80 km/h margin first, then "Lisäksi: a)", then a, b, d, e each in its own short paragraph); the displayed calculations sit in their own blocks.
 ## Polish
-1. solutions.md fy4-11-L3-06 Vastaus - capital after the comma ('10,5 kN, Massa ...'); write '10,5 kN. Massa ...'. Optional.
-
+- L2-10 c: add a hint (reaction distance first; then the remaining distance needs v^2 = v0^2 - 2as, not stated in the chapter).
+- L2-10 b and e overlap on "braking distance grows with the square of speed"; b could only compare with the calculator.
+- solutions.md L2-10 Kaava/Formula: the sentence on mu = a/g sits between the derivation of v^2 and the collision-speed formula; the Kaava paragraph is about 150 words.
+- Round-1 Polish items otherwise stand; the date 16 November 2026 is accepted.
 ## Checked
-- Round 2, delta: the round-1 fixes judged in their context.
-- L1-09 now has a real paragraph break; the answer reads 31 m with the range 0,5 to 0,8 stated correctly (50 m at the other end); liukukitkakerroin kept as the teacher's choice.
-- L2-09 (45 m) and L3-06 (10,5 kN) unchanged and correct; two figure tasks, descriptions give no answers.
-- No new task, figure or level change; set mix and counts unchanged from the passed version.
-- Language and case endings in the changed text are correct.
+- Round 2, full. Only the L2-10 solution layout changed; no wording changed, so the round-1 findings on level fit, applied source use, progression a-e, FY4-only knowledge, "kitka" only, situation-first/question-last and counts 9+10+6 stand.
+- Long five-part solution accepted as expected for the brief; each part is now findable by a student who could not solve it.
+- Language (Selkeä suomi) reads as in round 1.

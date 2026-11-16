@@ -149,7 +149,7 @@
       "unit": "J/(kg·K)",
       "tolerance": 0.03,
       "data": {
-        "caption": "Temperature of the liquid during heating (example data)",
+        "caption": "Temperature of the liquid during heating",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T\\,({}^\\circ\\text{C})$"
@@ -194,7 +194,7 @@
       "unit": "J/(kg·K)",
       "tolerance": 0.03,
       "data": {
-        "caption": "Temperatures of the liquids during heating (example data)",
+        "caption": "Temperatures of the liquids during heating",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T_\\text{A}\\,({}^\\circ\\text{C})$",
@@ -283,6 +283,19 @@
       "answer": 69.3,
       "unit": "kJ",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-6-L2-10",
+      "level": 2,
+      "text": "Source material: <a href=\"https://yle.fi/a/3-5678966\" target=\"_blank\" rel=\"noopener\">Yle – Kuuma vesi jäätyy kylmää nopeammin</a> (read 16 November 2026)\n\nRead the article about the Mpemba effect. The article is in Finnish and was published in 2010; its headline says “Hot water freezes faster than cold”.\n\na) Describe the phenomenon presented in the article. Why can the observation seem to contradict everyday experience?\n\nb) Calculate how large a quantity of heat $0.50\\,\\text{kg}$ of water gives off when it cools from $80\\,{}^\\circ\\text{C}$ to $0\\,{}^\\circ\\text{C}$. Assume that no water evaporates. The specific heat capacity of water is $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$.\n\nc) The article explains the phenomenon with evaporation, among other things. Explain how evaporation, the properties of the container and the conditions of the experiment can affect the time the water takes to freeze.\n\nd) Design an experiment to study in what conditions hot water might freeze faster than cold water. Say which quantities should be measured and which factors should be kept constant.\n\nThe answer field takes the result of part b) in kilojoules as a positive number.",
+      "kind": [
+        "data",
+        "experiment",
+        "reasoning"
+      ],
+      "answer": 170,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -323,7 +336,7 @@
       "unit": "W",
       "tolerance": 0.04,
       "data": {
-        "caption": "Temperature of the water during heating (example data)",
+        "caption": "Temperature of the water during heating",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T\\,({}^\\circ\\text{C})$"
@@ -389,7 +402,7 @@
       "unit": "W/K",
       "tolerance": 0.03,
       "data": {
-        "caption": "Temperature of the water during cooling (example data)",
+        "caption": "Temperature of the water during cooling",
         "columns": [
           "$t\\,(\\text{min})$",
           "$T\\,({}^\\circ\\text{C})$"

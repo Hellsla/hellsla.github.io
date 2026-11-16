@@ -458,7 +458,7 @@ Moni ajattelee, että kompassin neulan pohjoispää hakeutuu sauvamagneetin pohj
 
 Toinen virhe on luulla, että magneetin navat voi erottaa katkaisemalla magneetin keskeltä. Katkaisukohtaan syntyy kaksi uutta napaa, ja kummastakin palasta tulee kokonainen dipoli. Kolmas virhe on ajatella, että magneetti vetää kaikkia metalleja. Alumiinitölkki tai kuparikolikko ei tartu magneettiin, koska ne eivät ole ferromagneettisia.
 
-Laskuissa yleisin virhe on laskea kohtisuorat kentät yhteen kuin lukuja. Kentät $14\,\mu\text{T}$ pohjoiseen ja $18\,\mu\text{T}$ itään antavat kokonaiskentän $\sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\text{T}$, ei $32\,\mu\text{T}$.
+Laskuissa yleisin virhe on laskea kohtisuorat kentät yhteen kuin lukuja. Kentät $14\,\mu\text{T}$ pohjoiseen ja $18\,\mu\text{T}$ itään antavat kokonaiskentän $$\begin{aligned} &\sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \\ &\approx 23\,\mu\text{T} \end{aligned}$$, ei $32\,\mu\text{T}$.
 
 ## Tiivistelmä
 - Magneetilla on aina kaksi napaa, pohjoisnapa $\text{N}$ ja etelänapa $\text{S}$: se on magneettinen dipoli. Samannimiset navat hylkivät ja erinimiset vetävät toisiaan, eikä yksittäistä napaa ole havaittu.

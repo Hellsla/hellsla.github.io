@@ -11,6 +11,7 @@
     {
       "id": "fy5-5-L1-02",
       "level": 1,
+      "core": true,
       "text": "Two cruise ships lie side by side in a harbour, with masses $5.0 \\cdot 10^{7}\\,\\text{kg}$ and $3.0 \\cdot 10^{7}\\,\\text{kg}$. The distance between the ships' centres of mass is $200\\,\\text{m}$. With what gravitational force do the ships attract each other? Treat the ships as point masses.",
       "answer": 2.5,
       "unit": "N",
@@ -19,8 +20,7 @@
     {
       "id": "fy5-5-L1-03",
       "level": 1,
-      "core": true,
-      "text": "The mass of the planet Mercury is $3.30 \\cdot 10^{23}\\,\\text{kg}$ and its radius is $2.44 \\cdot 10^{6}\\,\\text{m}$. How large is the gravitational field strength on the surface of Mercury?",
+      "text": "Extension task.\n\nThe mass of the planet Mercury is $3.30 \\cdot 10^{23}\\,\\text{kg}$ and its radius is $2.44 \\cdot 10^{6}\\,\\text{m}$. How large is the gravitational field strength on the surface of Mercury?",
       "answer": 3.7,
       "unit": "m/s²",
       "tolerance": 0.02
@@ -136,7 +136,7 @@
     {
       "id": "fy5-5-L1-09",
       "level": 1,
-      "text": "The figure shows the free-fall acceleration, that is, the strength of the gravitational field, on the surface of four celestial bodies. An astronaut with a mass of $85\\,\\text{kg}$ including equipment stands on the surface of Mars. Read the value for Mars from the figure. What is the gravitational force on the astronaut on the surface of Mars?",
+      "text": "Extension task.\n\nThe figure shows the free-fall acceleration, that is, the strength of the gravitational field, on the surface of four celestial bodies. An astronaut with a mass of $85\\,\\text{kg}$ including equipment stands on the surface of Mars. Read the value for Mars from the figure. What is the gravitational force on the astronaut on the surface of Mars?",
       "answer": 320,
       "unit": "N",
       "tolerance": 0.02,
@@ -156,7 +156,7 @@
     {
       "id": "fy5-5-L2-02",
       "level": 2,
-      "text": "On the surface of Venus the gravitational field strength is $8.87\\,\\text{m/s}^2$, and the radius of Venus is $6052\\,\\text{km}$. How many times as large is the mass of Venus as the mass of the Earth, $5.97 \\cdot 10^{24}\\,\\text{kg}$?",
+      "text": "Extension task.\n\nOn the surface of Venus the gravitational field strength is $8.87\\,\\text{m/s}^2$, and the radius of Venus is $6052\\,\\text{km}$. How many times as large is the mass of Venus as the mass of the Earth, $5.97 \\cdot 10^{24}\\,\\text{kg}$?",
       "answer": 0.815,
       "unit": "",
       "tolerance": 0.02
@@ -172,7 +172,7 @@
     {
       "id": "fy5-5-L2-04",
       "level": 2,
-      "text": "An airliner flies at a height of $11.0\\,\\text{km}$. By what percentage is the Earth's gravitational field strength smaller there than on the Earth's surface? The radius of the Earth is $6378\\,\\text{km}$.",
+      "text": "Extension task.\n\nAn airliner flies at a height of $11.0\\,\\text{km}$. By what percentage is the Earth's gravitational field strength smaller there than on the Earth's surface? The radius of the Earth is $6378\\,\\text{km}$.",
       "answer": 0.344,
       "unit": "%",
       "tolerance": 0.02
@@ -180,7 +180,7 @@
     {
       "id": "fy5-5-L2-05",
       "level": 2,
-      "text": "The table gives the masses and mean radii of three gas giant planets (source: NASA Planetary Fact Sheet). Interpret the radius as the surface of the planet and assume the planets are spherically symmetric.\n\na) Calculate the gravitational field strength on the surface of each planet.\n\nb) How many times as great is the surface field of Neptune as the surface field of Uranus?\n\nc) The mass of Saturn is more than five times the mass of Neptune, but its surface field is still almost the same. Explain why.\n\nWrite the result of part b in the answer box.",
+      "text": "Extension task.\n\nThe table gives the masses and mean radii of three gas giant planets (source: NASA Planetary Fact Sheet). Interpret the radius as the surface of the planet and assume the planets are spherically symmetric.\n\na) Calculate the gravitational field strength on the surface of each planet.\n\nb) How many times as great is the surface field of Neptune as the surface field of Uranus?\n\nc) The mass of Saturn is more than five times the mass of Neptune, but its surface field is still almost the same. Explain why.\n\nWrite the result of part b in the answer box.",
       "kind": [
         "data"
       ],
@@ -216,6 +216,7 @@
     {
       "id": "fy5-5-L2-06",
       "level": 2,
+      "core": true,
       "text": "In a Cavendish-type experiment, the gravitational force $F$ between a large sphere ($M = 1.50\\,\\text{kg}$) and a small sphere ($m = 20.0\\,\\text{g}$) is measured as a function of the distance $r$ between their centres. The table gives example data.\n\na) Calculate the value of the gravitational constant $\\gamma$ from each measurement and calculate the mean of the values.\n\nb) Compare the mean with the known value $6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$ and state what shape the graph of $F$ against $\\tfrac{1}{r^2}$ should have.\n\nWrite the mean of part a in the answer box in the unit $10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2}$.",
       "kind": [
         "data",
@@ -225,7 +226,7 @@
       "unit": "10⁻¹¹ N·m²/kg²",
       "tolerance": 0.02,
       "data": {
-        "caption": "Force (example data)",
+        "caption": "Force",
         "columns": [
           "$r\\,(\\text{cm})$",
           "$F\\,(\\text{nN})$"
@@ -253,8 +254,7 @@
     {
       "id": "fy5-5-L2-07",
       "level": 2,
-      "core": true,
-      "text": "The table gives the gravitational field strength $g$ of the Earth at different heights $h$ above the Earth's surface (example data). The radius of the Earth is $R = 6378\\,\\text{km}$.\n\na) For each row calculate the product $g\\,(R + h)^2$ in the unit $\\text{m}^3/\\text{s}^2$ and calculate the mean of the products.\n\nb) According to the law of gravitation, which quantity does the product correspond to, and what does its staying approximately constant show?\n\nWrite the mean of part a in the answer box in the unit $10^{14}\\,\\text{m}^3/\\text{s}^2$.",
+      "text": "Extension task.\n\nThe table gives the gravitational field strength $g$ of the Earth at different heights $h$ above the Earth's surface (example data). The radius of the Earth is $R = 6378\\,\\text{km}$.\n\na) For each row calculate the product $g\\,(R + h)^2$ in the unit $\\text{m}^3/\\text{s}^2$ and calculate the mean of the products.\n\nb) According to the law of gravitation, which quantity does the product correspond to, and what does its staying approximately constant show?\n\nWrite the mean of part a in the answer box in the unit $10^{14}\\,\\text{m}^3/\\text{s}^2$.",
       "kind": [
         "data"
       ],
@@ -262,7 +262,7 @@
       "unit": "10¹⁴ m³/s²",
       "tolerance": 0.02,
       "data": {
-        "caption": "Field (example data)",
+        "caption": "Field",
         "columns": [
           "$h\\,(\\text{km})$",
           "$g\\,(\\text{m/s}^2)$"
@@ -325,7 +325,7 @@
         },
         {
           "text": "All bodies fall in a gravitational field with the same acceleration regardless of their mass.",
-          "feedback": "This holds for bodies that are in the field of the same body, such as on the surface of the Earth. Here A is in the field of B and B is in the field of A. The field $g = \\gamma \\tfrac{M}{r^2}$ is smaller at A, because the mass of B is smaller."
+          "feedback": "This holds for bodies that are pulled by the same body, such as on the surface of the Earth. Here A is pulled only by B and B only by A. The force is equally great on both, but the mass of A is larger, so A accelerates less."
         },
         {
           "text": "An equal force acts on each asteroid, and the same force accelerates the lighter one more.",
@@ -341,7 +341,7 @@
     {
       "id": "fy5-5-L2-09",
       "level": 2,
-      "text": "The figure shows the free-fall acceleration on the surface of four celestial bodies. The equatorial radius of Jupiter is $7.15 \\cdot 10^{7}\\,\\text{m}$. A probe of mass $850\\,\\text{kg}$ is above the equator of Jupiter at the height $7.15 \\cdot 10^{7}\\,\\text{m}$ above the surface. Read the strength of the gravitational field on the surface of Jupiter from the figure. How large is the force with which Jupiter pulls the probe? Give the answer in kilonewtons.",
+      "text": "Extension task.\n\nThe figure shows the free-fall acceleration on the surface of four celestial bodies. The equatorial radius of Jupiter is $7.15 \\cdot 10^{7}\\,\\text{m}$. A probe of mass $850\\,\\text{kg}$ is above the equator of Jupiter at the height $7.15 \\cdot 10^{7}\\,\\text{m}$ above the surface. Read the strength of the gravitational field on the surface of Jupiter from the figure. How large is the force with which Jupiter pulls the probe? Give the answer in kilonewtons.",
       "answer": 5.27,
       "unit": "kN",
       "tolerance": 0.02,
@@ -360,7 +360,7 @@
     {
       "id": "fy5-5-L3-02",
       "level": 3,
-      "text": "A distant exoplanet has the same mean density as the Earth, but its radius is twice the radius of the Earth. How large is the gravitational field strength on the surface of the planet, when on the Earth's surface it is $9.81\\,\\text{m/s}^2$? Assume both planets to be spherically symmetric.",
+      "text": "Extension task.\n\nA distant exoplanet has the same mean density as the Earth, but its radius is twice the radius of the Earth. How large is the gravitational field strength on the surface of the planet, when on the Earth's surface it is $9.81\\,\\text{m/s}^2$? Assume both planets to be spherically symmetric.",
       "answer": 19.6,
       "unit": "m/s²",
       "tolerance": 0.02
@@ -376,7 +376,7 @@
     {
       "id": "fy5-5-L3-04",
       "level": 3,
-      "text": "In 1798 Henry Cavendish determined the mean density of the Earth from the gravitational interaction between lead spheres. Today the calculation can be done the other way round: when the gravitational constant is known, the mass and the mean density of the Earth follow from the acceleration due to gravity. Do this calculation with modern values. On the Earth's surface the gravitational field strength is $g = 9.81\\,\\text{m/s}^2$ and the mean radius of the Earth is $6371\\,\\text{km}$. Model the Earth as a spherically symmetric sphere and ignore its rotation.\n\na) Calculate the mass of the Earth.\n\nb) Calculate the mean density of the Earth.\n\nc) The table gives the densities of the most common rocks in the Earth's crust. Can the Earth consist entirely of such rocks? Justify your answer with the mean density you calculated and conclude what it tells about the interior of the Earth.\n\nWrite the result of part b in the answer box.",
+      "text": "Extension task.\n\nIn 1798 Henry Cavendish determined the mean density of the Earth from the gravitational interaction between lead spheres. Today the calculation can be done the other way round: when the gravitational constant is known, the mass and the mean density of the Earth follow from the acceleration due to gravity. Do this calculation with modern values. On the Earth's surface the gravitational field strength is $g = 9.81\\,\\text{m/s}^2$ and the mean radius of the Earth is $6371\\,\\text{km}$. Model the Earth as a spherically symmetric sphere and ignore its rotation.\n\na) Calculate the mass of the Earth.\n\nb) Calculate the mean density of the Earth.\n\nc) The table gives the densities of the most common rocks in the Earth's crust. Can the Earth consist entirely of such rocks? Justify your answer with the mean density you calculated and conclude what it tells about the interior of the Earth.\n\nWrite the result of part b in the answer box.",
       "kind": [
         "data",
         "reasoning",
@@ -386,7 +386,7 @@
       "unit": "kg/m³",
       "tolerance": 0.02,
       "data": {
-        "caption": "Densities (example data)",
+        "caption": "Densities",
         "columns": [
           "Rock",
           "$\\rho\\,(\\text{kg/m}^3)$"
@@ -410,7 +410,7 @@
     {
       "id": "fy5-5-L3-05",
       "level": 3,
-      "text": "The Earth rotates about its axis in the time $T = 24.0\\,\\text{h}$. A person standing at the equator then moves along a circular path whose radius is the radius of the Earth, $R = 6378\\,\\text{km}$. Model the person as a point mass and the Earth as a sphere. Assume that the gravitational field strength of the Earth is $g = 9.81\\,\\text{m/s}^2$ both at the equator and at the pole. The mass of the person is $62.0\\,\\text{kg}$, and the reading of the scale is the magnitude of the support force of the scale.\n\na) Calculate the person's centripetal acceleration due to the rotation and the reading of the scale in newtons at the equator.\n\nb) How large would the reading of the scale at the equator be if the Earth rotated about its axis once in $6.0\\,\\text{h}$? Give the answer in newtons.\n\nc) Explain in words why the scale shows less at the equator than at the pole, although the gravitational force is by assumption equally large.\n\nWrite the result of part b in the answer box.",
+      "text": "Extension task.\n\nThe Earth rotates about its axis in the time $T = 24.0\\,\\text{h}$. A person standing at the equator then moves along a circular path whose radius is the radius of the Earth, $R = 6378\\,\\text{km}$. Model the person as a point mass and the Earth as a sphere. Assume that the gravitational field strength of the Earth is $g = 9.81\\,\\text{m/s}^2$ both at the equator and at the pole. The mass of the person is $62.0\\,\\text{kg}$, and the reading of the scale is the magnitude of the support force of the scale.\n\na) Calculate the person's centripetal acceleration due to the rotation and the reading of the scale in newtons at the equator.\n\nb) How large would the reading of the scale at the equator be if the Earth rotated about its axis once in $6.0\\,\\text{h}$? Give the answer in newtons.\n\nc) Explain in words why the scale shows less at the equator than at the pole, although the gravitational force is by assumption equally large.\n\nWrite the result of part b in the answer box.",
       "kind": [
         "model",
         "reasoning"

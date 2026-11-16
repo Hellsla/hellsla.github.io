@@ -1,18 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 2d86ef406e58a1c7
-SCOPE: delta added-exercise from bf811b5954b48e62 base 89bcb63b7431
+CONTENT-HASH: 51751878d112a680
+SCOPE: delta added-exercise from f78288d523bda99b base b2eac257e05e
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (fy3-7-L2-09, Kuvaajan lukeminen) — "(alkupiste on origossa, $0\,\text{kJ}$)": the start point is $(0\,\text{kJ};\ -16\,{}^\circ\text{C})$, not the origin. Write "alkupisteessä $Q = 0\,\text{kJ}$".
-- exercises/solutions.md (fy3-7-L2-09, Vastaus) — the reason for "hyväksytään $2020\ldots2150$" is that the heat is read from a grid crossing, but an exact crossing gives no reading spread. The range is in fact the 3 % tolerance. Say so, or drop the range.
-- exercises/exercises.json (fy3-7-L1-09) — as in round 1: "sitoo ihosta" assumes that all the heat of evaporation comes from the skin. Optional: "Oleta, että kaikki lämpö tulee ihosta."
+- exercises/solutions.md (fy3-7-L2-10, Mallivastaus d) — "Siksi malli ei myöskään selitä … että jää on harvempaa kuin vesi" reads as if the small particle count and the 2D picture were the reason. Ice's low density comes from the directional hydrogen-bond structure, which the simple attraction model lacks. Optional: "Yksinkertainen vetovoima ei kuvaa veden vetysidosten suuntautunutta rakennetta, joten malli ei selitä …".
+- Same part d — optional: name the constant-temperature plateau as something the sim's thermometer does not show quantitatively. This is not required by the task.
 
 ## Checked
-- Round-1 blocker fixed: the start temperature $-16\,{}^\circ\text{C}$ is now in the task text, and the student reads only $Q = 20\,\text{kJ}$ at the crossing $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$ of the 20 kJ / 10 °C grid.
-- L2-09 recomputed: $c = Q/(m\Delta T) = 20\,000\,\text{J}/(0{,}60\,\text{kg} \cdot 16\,\text{K}) = 2083\,\text{J/(kg·K)}$, which matches answers.py. Tolerance 0,03 (2021–2146) accepts $2{,}1 \cdot 10^3$.
-- L2-09 physics: $Q = cm\Delta T$ is used only on the rising part, before any melting. The solution is complete (symbols first, kJ → J, two figures from 0,60 kg), and the check against $c_\text{vesi}$ and the energy balance is real.
-- L1-09 unchanged since round 1: $Q = rm = 840\,\text{kJ/kg} \cdot 0{,}0050\,\text{kg} = 4{,}2\,\text{kJ}$, MAFY value as verified then; the remark that the boiling-point value applies is right.
-- Figure description lists the same points; it does not name the parts or give $c$ or $s$.
-- In FY3 scope; rest of the set unchanged since PASS; hash same at start and end.
+- I recomputed Q = s m = 334 kJ/kg · 0,20 kg = 66,8 kJ → 67 kJ. The answer of 67 kJ (0,3 % off) is inside the 0,02 tolerance, and two figures follow from 0,20 kg. The value 334 kJ/kg is marked as given in the task (teacher's decision P9) and equals the brief's table.
+- Conditions: the ice is at 0 °C and the melt water stays at 0 °C, so no Q = cmΔT term is needed. The solution states that Q = sm applies to a pure substance at constant pressure.
+- b) uses the guardrail wording: interaction energy grows, chemical bonds inside the molecule do not break, the mean kinetic energy stays the same, and only for a pure substance at constant pressure. Correct (no A/B finding).
+- a) the micro description of the three states is right at this level.
+- The solution claims about the sim stay inside the verified facts (structure breaks up on heating; spheres, few particles, simple attraction). Nothing invented.
+- Reasonableness check recomputed: ΔT = 66 800 J / (4190 · 0,20) = 79,7 K ≈ 80 K, which matches the lesson's "melting equals warming 0 → 80 °C". It is one sixth of L1-01's 400,8 kJ.
+- Symbols s, Q, m as in the brief; within FY3 olomuodon muutokset.
+- Hash the same at start and end.

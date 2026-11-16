@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b1f9cda044de58c0
-Round: 2 (delta)
+CONTENT-HASH: 2f696bac3aa33109
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] solutions.md L2-08 — the rows "Z m_H = 79 · …" and "Z m_H = 79,618175 u" repeat the left side; fine, aligned and readable at 390 px.
+- [Minor] solutions.md fy8-10-L2-01, Sijoitus (untouched text, seen in L2-1280-1) — the Δm block has an "=" in the middle of two rows ("− 55,934936 u = 26,203450 u", then "+ 30,259950 u", "− 55,934936 u = 0,528464 u,"), so the equals signs are not in one column and the second sum reads as a continuation of the first — a shared-renderer matter (mathlayout): let every "=" start its own row.
 
 ## Checked
-- Own 390 px re-render of 10-16 with feedback and solution open: new options (0,002 / 8 / 1600 / 180 000 MeV), split mass lines, aligned blocks and the "lähin vaihtoehto" sentence render cleanly; measured: no overflowing KaTeX, no page scroll. The round 1 "suuruusluokka" wording is resolved.
+- Delta round 1 (wording): one hyphen, "rautaatomin" → "rauta-atomin", in the Periaate of fy8-10-L2-01. Hash 2f696bac3aa33109 at the start and at the end.
+- Opened fy8-10-open-exercises-L2-1280-1 (task 10-9 with its solution open): Periaate reads "jotta 26 elektronin massat kumoutuvat rauta-atomin elektronien kanssa"; the hyphen between the two a's is the correct spelling and matches "rauta-56-atomin" in the task and Annettu. The line breaks after "rauta-atomin" at the row end, not inside the word.
+- The card around it (Annettu, Kysytty, Kaava box, Muunnokset, Sijoitus blocks) is intact, nothing clipped.
+- No figure, formula, number or unit changed; nothing else judged in this delta.
 
 ## Scores
-illustrations n/a (5) · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

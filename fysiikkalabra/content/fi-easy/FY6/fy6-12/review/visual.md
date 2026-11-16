@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 92f0939fc12d8abd
+CONTENT-HASH: c4f6e75d48f72442
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- [Minor] sheet 1 item 3: the short left side "v" stands alone on a row, "= sqrt(...)" below it; readable, a little loose.
 
 ## Checked
-- batch delta review: opened the captures of the changed passages (theory-1280 / example-390), source diff read; no figure changed; text-only edits render cleanly, no clipping, no horizontal overflow, no inline formula wrapped.
+- All 1 proof sheet(s) of fi-easy-fy6-12-lesson (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+
+## Scores
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

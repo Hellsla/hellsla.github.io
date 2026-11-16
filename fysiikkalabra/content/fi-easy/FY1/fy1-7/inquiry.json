@@ -180,14 +180,14 @@
           {
             "text": "Kokonaismassa ei ole suoraan verrannollinen tilavuuteen. Massa kasvaa kuitenkin joka $20\\,\\text{cm}^3$:n välein lähes saman verran, noin $16\\,\\text{g}$. Tyhjän mittalasin massa on noin $42\\,\\text{g}$.",
             "correct": true,
-            "feedback": "Oikein. Lisäykset ovat $15{,}8$, $15{,}6$, $16{,}1$ ja $15{,}5\\,\\text{g}$. Tilavuus ja massa riippuvat toisistaan lineaarisesti: $m_\\text{yht} = \\rho V + m_0$. Suoran kulmakerroin $(105{,}1 - 42{,}1)\\,\\text{g} : 80\\,\\text{cm}^3 \\approx 0{,}79\\,\\text{g/cm}^3$ on nesteen tiheys. Suoran ja pystyakselin leikkauskohta $m_0 \\approx 42\\,\\text{g}$ on mittalasin massa."
+            "feedback": "Oikein. Lisäykset ovat $15{,}8$, $15{,}6$, $16{,}1$ ja $15{,}5\\,\\text{g}$. Tilavuus ja massa riippuvat toisistaan lineaarisesti: $m_\\text{yht} = \\rho V + m_0$. Suoran kulmakerroin $$\\begin{aligned} &(105{,}1 - 42{,}1)\\,\\text{g} \\\\ &: 80\\,\\text{cm}^3 \\\\ &\\approx 0{,}79\\,\\text{g/cm}^3 \\end{aligned}$$ on nesteen tiheys. Suoran ja pystyakselin leikkauskohta $m_0 \\approx 42\\,\\text{g}$ on mittalasin massa."
           },
           {
             "text": "Suoran kulmakerroin on tyhjän mittalasin massa, noin $42\\,\\text{g}$.",
             "feedback": "Tyhjän mittalasin massa on suoran ja pystyakselin leikkauskohta eli massa, kun $V = 0$. Kulmakerroin kertoo, kuinka paljon massa kasvaa tilavuusyksikköä kohti. Se on nesteen tiheys."
           },
           {
-            "text": "Nesteen tiheys saadaan viimeisestä rivistä: $105{,}1\\,\\text{g} : 80\\,\\text{cm}^3 \\approx 1{,}3\\,\\text{g/cm}^3$.",
+            "text": "Nesteen tiheys saadaan viimeisestä rivistä: $$\\begin{aligned} &105{,}1\\,\\text{g} : 80\\,\\text{cm}^3 \\\\ &\\approx 1{,}3\\,\\text{g/cm}^3 \\end{aligned}$$.",
             "feedback": "Viimeisen rivin massaan kuuluu myös mittalasi. Vähennä mittalasin massa $42{,}1\\,\\text{g}$. Silloin nesteen massa on $63{,}0\\,\\text{g}$ ja tiheys $63{,}0\\,\\text{g} : 80\\,\\text{cm}^3 \\approx 0{,}79\\,\\text{g/cm}^3$."
           }
         ]
@@ -199,7 +199,7 @@
       "type": "explain",
       "title": "Johtopäätös: miten massa ja tilavuus liittyvät?",
       "prompt": "Kirjoita kolmen taulukon perusteella vastaukset näihin kysymyksiin. Mistä tiedät, että alumiinipalojen massa on suoraan verrannollinen tilavuuteen? Miten tuntemattoman metallin tiheys saatiin? Kumpi suora olisi koordinaatistossa jyrkempi, alumiinin vai tuntemattoman metallin, ja miksi? Mitä pitää tehdä, jos nestettä mitataan astiassa? Miksi tulokset eivät osu täsmälleen samalle suoralle? Mitä Pohdinnan kuutioista siis kannattaa mitata?",
-      "model": "Alumiinipaloissa suhde $m : V$ oli joka rivillä noin $2{,}7\\,\\text{g/cm}^3$. Siksi massa on suoraan verrannollinen tilavuuteen, ja suhde on aineen tiheys. Tuntemattoman metallin tiheys saatiin kahden kaukana toisistaan olevan pisteen erotuksista: $\\rho = \\Delta m : \\Delta V = 179{,}2\\,\\text{g} : 20{,}0\\,\\text{cm}^3 = 8{,}96\\,\\text{g/cm}^3$. Se vastasi kuparia. Kuparin suora on alumiinin suoraa jyrkempi, koska kuparin tiheys eli kulmakerroin on suurempi. Nesteen kokonaismassa astian kanssa ei ole verrannollinen tilavuuteen, koska tyhjän astian massa on mukana. Siksi astian massa pitää vähentää kokonaismassasta. Tiheyden voi myös lukea suoran kulmakertoimesta, ja silloin astian massa on suoran ja pystyakselin leikkauskohta. Aineistot olivat esimerkkiarvoja, joissa oli pientä mittausvirhettä. Kuutioiden aineen voi siis päätellä näin: mitataan massa ja tilavuus ja lasketaan niistä tiheys.",
+      "model": "Alumiinipaloissa suhde $m : V$ oli joka rivillä noin $2{,}7\\,\\text{g/cm}^3$. Siksi massa on suoraan verrannollinen tilavuuteen, ja suhde on aineen tiheys. Tuntemattoman metallin tiheys saatiin kahden kaukana toisistaan olevan pisteen erotuksista: $$\\begin{aligned} \\rho &= \\Delta m : \\Delta V \\\\ &= 179{,}2\\,\\text{g} : 20{,}0\\,\\text{cm}^3 \\\\ &= 8{,}96\\,\\text{g/cm}^3 \\end{aligned}$$. Se vastasi kuparia. Kuparin suora on alumiinin suoraa jyrkempi, koska kuparin tiheys eli kulmakerroin on suurempi. Nesteen kokonaismassa astian kanssa ei ole verrannollinen tilavuuteen, koska tyhjän astian massa on mukana. Siksi astian massa pitää vähentää kokonaismassasta. Tiheyden voi myös lukea suoran kulmakertoimesta, ja silloin astian massa on suoran ja pystyakselin leikkauskohta. Aineistot olivat esimerkkiarvoja, joissa oli pientä mittausvirhettä. Kuutioiden aineen voi siis päätellä näin: mitataan massa ja tilavuus ja lasketaan niistä tiheys.",
       "criteria": [
         "Perustelin verrannollisuuden suhteella $m : V$, en pelkällä massan kasvulla.",
         "Laskin tiheyden kahden kaukana toisistaan olevan pisteen avulla tai suhteena $m : V$.",
@@ -231,12 +231,12 @@
       "type": "choice",
       "title": "Etsi virhe",
       "optional": true,
-      "prompt": "Opiskelija laskee $250\\,\\text{cm}^3$:n alumiinipalan massan: $m = \\rho V = 2700\\,\\text{kg/m}^3 \\cdot 250\\,\\text{cm}^3 = 675\\,000\\,\\text{kg}$. Tulos on paljon liian suuri. Missä on virhe?",
+      "prompt": "Opiskelija laskee $250\\,\\text{cm}^3$:n alumiinipalan massan: $$\\begin{aligned} m &= \\rho V \\\\ &= 2700\\,\\text{kg/m}^3 \\cdot 250\\,\\text{cm}^3 \\\\ &= 675\\,000\\,\\text{kg} \\end{aligned}$$. Tulos on paljon liian suuri. Missä on virhe?",
       "choices": [
         {
           "text": "Tilavuus on kuutiosenttimetreinä, vaikka tiheys on yksikössä $\\text{kg/m}^3$. Oikein: $250\\,\\text{cm}^3 = 2{,}5 \\cdot 10^{-4}\\,\\text{m}^3$ ja $m = 0{,}675\\,\\text{kg}$.",
           "correct": true,
-          "feedback": "Oikein. Yksiköt on muunnettava samaan järjestelmään: $250\\,\\text{cm}^3 = 250 \\cdot 10^{-6}\\,\\text{m}^3 = 2{,}5 \\cdot 10^{-4}\\,\\text{m}^3$ ja $2700\\,\\text{kg/m}^3 \\cdot 2{,}5 \\cdot 10^{-4}\\,\\text{m}^3 = 0{,}675\\,\\text{kg}$. Virheen olisi voinut huomata arviolla: neljänneslitran alumiinipalan massa ei voi olla satoja tonneja."
+          "feedback": "Oikein. Yksiköt on muunnettava samaan järjestelmään: $$\\begin{aligned} 250\\,\\text{cm}^3 &= 250 \\cdot 10^{-6}\\,\\text{m}^3 \\\\ &= 2{,}5 \\cdot 10^{-4}\\,\\text{m}^3 \\end{aligned}$$ ja $$\\begin{aligned} &2700\\,\\text{kg/m}^3 \\\\ &\\cdot 2{,}5 \\cdot 10^{-4}\\,\\text{m}^3 \\\\ &= 0{,}675\\,\\text{kg} \\end{aligned}$$. Virheen olisi voinut huomata arviolla: neljänneslitran alumiinipalan massa ei voi olla satoja tonneja."
         },
         {
           "text": "Kaava on väärä: massa pitäisi laskea jakamalla tilavuus tiheydellä, $m = V : \\rho$.",
@@ -248,7 +248,7 @@
         },
         {
           "text": "Laskussa ei ole virhettä. Palan massa on todella satoja tonneja.",
-          "feedback": "Arvioi tulos. Tilavuus $250\\,\\text{cm}^3$ on neljännes litraa, joten pala on kämmenen kokoinen. Vettä sen verran olisi $250\\,\\text{g}$. Alumiini on 2,7-kertaisen tiheää, joten massa on noin $0{,}7\\,\\text{kg}$."
+          "feedback": "Arvioi tulos. Tilavuus $250\\,\\text{cm}^3$ on neljännes litraa, joten pala on kämmenen kokoinen. Vettä sen verran olisi $250\\,\\text{g}$. Alumiini on noin 2,7 kertaa niin tiheää kuin vesi, joten massa on noin $0{,}7\\,\\text{kg}$."
         }
       ]
     },
@@ -298,7 +298,7 @@
         {
           "text": "Ruokaöljy, koska sen tiheys on pienempi. Sama massa vie siksi suuremman tilavuuden: $V = m : \\rho$.",
           "correct": true,
-          "feedback": "Oikein. Veden tilavuus on $0{,}50\\,\\text{kg} : 1000\\,\\text{kg/m}^3 = 5{,}0 \\cdot 10^{-4}\\,\\text{m}^3$. Öljyn tilavuus on $0{,}50\\,\\text{kg} : 920\\,\\text{kg/m}^3 = 5{,}4 \\cdot 10^{-4}\\,\\text{m}^3$. Mitä pienempi tiheys, sitä enemmän tilavuutta massayksikköä kohti."
+          "feedback": "Oikein. Veden tilavuus on $$\\begin{aligned} &0{,}50\\,\\text{kg} : 1000\\,\\text{kg/m}^3 \\\\ &= 5{,}0 \\cdot 10^{-4}\\,\\text{m}^3 \\end{aligned}$$. Öljyn tilavuus on $$\\begin{aligned} &0{,}50\\,\\text{kg} : 920\\,\\text{kg/m}^3 \\\\ &= 5{,}4 \\cdot 10^{-4}\\,\\text{m}^3 \\end{aligned}$$. Mitä pienempi tiheys, sitä enemmän tilavuutta massayksikköä kohti."
         },
         {
           "text": "Vesi, koska veden tiheys on suurempi ja tiheä aine vie enemmän tilaa.",

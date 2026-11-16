@@ -316,6 +316,18 @@
           "feedback": "Huojuntataajuus $8\\,\\text{Hz}$ syntyy, jos myös hiljaiset kohdat lasketaan voimakkaiksi hetkiksi, jolloin väliksi saadaan $0{,}125\\,\\text{s}$. Voimakkaita hetkiä on $0$, $0{,}25\\,\\text{s}$, $0{,}50\\,\\text{s}$, $\\ldots$, joten huojuntajakso on $0{,}25\\,\\text{s}$ ja huojuntataajuus $4\\,\\text{Hz}$. Lisäksi korkeampi taajuus ei sovi vahakokeeseen: vaha laskee taajuutta, ja jos tuntematon olisi ollut korkeampi, erotus olisi pienentynyt ja huojunta hidastunut. Huojunta kuitenkin nopeutui."
         }
       ]
+    },
+    {
+      "id": "fy5-14-L2-09",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://yle.fi/a/3-11158392\" target=\"_blank\" rel=\"noopener\">Yle – 440 vai 432 hertsiä?</a>\n\nOnko $432\\,\\text{Hz}$ luonnon parantava taajuus? Tutustu Ylen artikkeliin ja kuuntele sen ääninäytteet.\n\na) Laske taajuuksia $432\\,\\text{Hz}$ ja $440\\,\\text{Hz}$ vastaavat äänen aallonpituudet ilmassa. Käytä äänen nopeutena $343\\,\\text{m/s}$.\n\nb) Vertaa taajuuksia ja aallonpituuksia. Arvioi, mitä fysikaalista merkitystä tällä erolla on.\n\nc) Selvitä artikkelista, millaisia erityisiä vaikutuksia $432\\,\\text{Hz}$:n viritystasoon väitetään liittyvän. Luokittele väitteet kolmeen ryhmään: kuulijaan kohdistuva vaikutus, jonka voisi periaatteessa testata; fysiikkaa koskeva väite; lukumystiikka tai salaliittoteoria.\n\nd) Arvioi kunkin ryhmän väitteiden tieteellisiä perusteita. Millaisella tutkimuksella mahdollisia terveysvaikutuksia voitaisiin luotettavasti selvittää?\n\nVastaa laatikkoon kohdan a) aallonpituus taajuudella $432\\,\\text{Hz}$ metreinä.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 0.794,
+      "unit": "m",
+      "tolerance": 0.02
     }
   ],
   "level3": [

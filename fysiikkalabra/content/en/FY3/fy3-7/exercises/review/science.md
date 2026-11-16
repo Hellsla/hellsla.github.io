@@ -1,19 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a2fe8c09e666257c
-SCOPE: delta added-exercise from d87d16983757f141 base 89bcb63b7431
+CONTENT-HASH: 430bd768d08773f3
 Round: 1
 Mode: delta
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- fy3-7-L1-09: Q = r m, ethanol r = 840 kJ/kg (MAFY, at the boiling point) * 0.0050 kg = 4.2 kJ; the note that r at skin temperature is somewhat larger is correct physics.
-- fy3-7-L2-09: warming part (0 kJ; -16 °C) -> (20 kJ; 0 °C) of fy3-7/melting-curve; c = Q/(m Delta T) = 20 000/(0.60*16) = 2083 J/(kg K), realistic for ice; range 2020–2150 matches 3 %.
-- No change of state in the warming part, plateau correctly identified as melting.
-- Solutions complete, symbolic first, rounding reason right.
-- answers.py equal to my recomputation; numbers, unit, tolerance and figure identical to the passed Finnish.
+- New fy3-7-L2-10 (PhET States of Matter: Basics): Q = sm = 334 kJ/kg · 0.20 kg = 66.8 kJ, so 67 kJ, inside the 2 % tolerance. s = 334 kJ/kg is given in the task, as the teacher decided.
+- The condition "pure substance at constant pressure" is stated in task b) and in the solution.
+- Model answer b) uses the guardrail wording (interaction energy grows, mean kinetic energy constant, no intramolecular bonds break), and it explains "necessarily" correctly.
+- The reasonableness check holds: 66 800 J / (4190 · 0.20) = 79.7 K, about 80 K, and the result is 1/6 of 400.8 kJ, the ratio of the masses.
+- Model answer d) claims nothing about the simulation beyond the verified facts. Its limits are right: no energies or latent heat values, few particles in 2-D, a simple attraction, and the density anomaly of ice not explained.
+- A scripted comparison with the Finnish set found identical answer, unit, tolerance and kind, and the same numbers in the text and in all solution sections.
+- answers.py recomputed independently; it agrees.
 - Hash identical at start and end.

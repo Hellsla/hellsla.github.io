@@ -26,6 +26,10 @@ In each state it reports:
              and the worked example's problem are sticky beside their column and are not counted.
   small      reading text under 17 px (a phone never gets smaller text) or a control under 40 px tall
   heading    a stage heading hidden under the sticky navigation after following its link (closed state only)
+Each finding names where it is (work queue 5, 2026-11-16): the nearest block with an id (the task "#fy8-1-L2-08", the
+stage "#teoria"), the open box, the solution step and the element ("at #fy8-1-L2-08 > details.solution > step
+"Substitution" > div.eq-chain"); a page wider than the window names the deepest element past its edge. For CI's
+verdict run it in CI's browser image: python scripts/ci_env.py run python scripts/check_layout.py <id> --width 360.
 Exit status 1 on any finding."""
 import os, sys, pathlib
 from playwright.sync_api import sync_playwright
@@ -48,6 +52,29 @@ JS = """() => {
   if (window.flFitMath) window.flFitMath();   // lesson.js: a too-wide inline formula gets its own scrolling line (kx-wide)
   if (window.flFitTables) window.flFitTables();   // lesson.js: a table still too wide for its box is stacked
   const out = [], V = (e) => e.checkVisibility();
+  // where a finding is (work queue 5, QUALITY.md): the nearest block with an id (a task "#fy8-1-L2-08", a stage "#teoria"), the
+  // solution step it is in, and the element itself, so a failure names what to fix without a screenshot
+  const tag = (e) => e.tagName.toLowerCase() + (e.classList.length ? '.' + [...e.classList].slice(0, 2).join('.') : '');
+  const W = (e) => {
+    if (!e || !e.closest) return '';
+    const parts = [], id = e.parentElement && e.parentElement.closest('[id]:not(main, body, html, #sim-root)');
+    if (id) parts.push('#' + id.id);
+    const d = e.closest('details'); if (d && d !== id && (!id || id.contains(d))) parts.push(tag(d));
+    const st = e.closest('.sol-step'), lab = st && st.querySelector('.sol-label');
+    if (lab) parts.push('step "' + lab.textContent.trim().slice(0, 30) + '"');
+    const own = e.closest('.eq-chain, .kx-wide, .katex-display, table, svg, figure') || e;
+    parts.push(tag(own));
+    return parts.join(' > ');
+  };
+  // the page itself is wider than the window: name the deepest element that reaches past the window's right edge
+  const widest = () => {
+    let hit = null; const vw0 = document.documentElement.clientWidth;
+    for (const e of document.querySelectorAll('body *')) {
+      if (!e.checkVisibility() || e.closest('svg') && e.tagName.toLowerCase() !== 'svg') continue;
+      const r = e.getBoundingClientRect(); if (r.width && r.right > vw0 + 1) hit = e;   // document order: the last one is the deepest
+    }
+    return hit ? W(hit) : '';
+  };
   const el = document.scrollingElement, vw = document.documentElement.clientWidth;
   // From 1600 px the whole page is drawn larger (site.css, 2026-11-11: the root size grows to 117.65 % at 1920 px, every
   // size of the site is in rem). K is that enlargement, 1 under 1600 px. The limits below that are a length of the
@@ -55,21 +82,21 @@ JS = """() => {
   // counted in the page's own scale, so the
   // same layout passes or fails alike at 1280 px and enlarged at 1920 px; every other limit stays in real pixels.
   const K = Math.max(1, parseFloat(getComputedStyle(document.documentElement).fontSize) / 16);
-  if (el.scrollWidth > el.clientWidth + 1) out.push({what: 'page', over: el.scrollWidth - el.clientWidth, text: ''});
+  if (el.scrollWidth > el.clientWidth + 1) out.push({what: 'page', over: el.scrollWidth - el.clientWidth, text: '', at: widest()});
   for (const d of document.querySelectorAll('.katex-display')) {
     if (!d.checkVisibility()) continue;
     if (d.scrollWidth > d.clientWidth + 3) {   // KaTeX's struts (vlist-t2, margin -2px) may stick out 2 px without anything showing
       const ann = d.querySelector('annotation');
-      out.push({what: 'formula', over: d.scrollWidth - d.clientWidth, text: ann ? ann.textContent.slice(0, 90) : ''});
+      out.push({at: W(d), what: 'formula', over: d.scrollWidth - d.clientWidth, text: ann ? ann.textContent.slice(0, 90) : ''});
     }
   }
   for (const e of document.querySelectorAll('main .katex-error'))   // a formula KaTeX could not parse (as split into rows, too)
-    out.push({what: 'formula', over: 0, text: 'KaTeX error: ' + (e.getAttribute('title') || e.textContent).slice(0, 90)});
+    out.push({at: W(e), what: 'formula', over: 0, text: 'KaTeX error: ' + (e.getAttribute('title') || e.textContent).slice(0, 90)});
   for (const k of document.querySelectorAll('main .katex')) {
     if (!k.checkVisibility() || k.closest('.katex-display, .eq-chain, table, svg, #sim-root')) continue;   // a calculation in rows (.eq-chain) scrolls sideways as a whole
     const box = k.closest('p, li, .steps, .stage') || k.parentElement;
     const over = Math.round(k.getBoundingClientRect().right - (k.closest('.kc-card') ? box.getBoundingClientRect().right : Math.min(box.getBoundingClientRect().right, vw)));   // a concept card's own box is the limit
-    if (over > 1) { const ann = k.querySelector('annotation'); out.push({what: 'formula', over, text: 'inline, cannot wrap: ' + (ann ? ann.textContent.slice(0, 70) : '')}); }
+    if (over > 1) { const ann = k.querySelector('annotation'); out.push({at: W(k), what: 'formula', over, text: 'inline, cannot wrap: ' + (ann ? ann.textContent.slice(0, 70) : '')}); }
   }
   // clipped: a formula whose ink runs past the edge of what shows it (teacher 2026-11-15; fy8-1, fy8-2: "m/s" cut to "m/" in a
   // solution's calculation row, which scrolls sideways on its own, and a long inline formula, which scrolls on its own line).
@@ -85,7 +112,7 @@ JS = """() => {
       lim = Math.min(lim, a.getBoundingClientRect().left + a.clientLeft + a.clientWidth);
     }
     const hidden = Math.max(Math.round(ink(k) - lim), getComputedStyle(k).overflowX === 'visible' ? 0 : k.scrollWidth - k.clientWidth);
-    if (hidden > 3) { const ann = k.querySelector('annotation'); out.push({what: 'formula', over: hidden, text: 'clipped or scrolling, not fully shown: ' + (ann ? ann.textContent.slice(0, 70) : '')}); }
+    if (hidden > 3) { const ann = k.querySelector('annotation'); out.push({at: W(k), what: 'formula', over: hidden, text: 'clipped or scrolling, not fully shown: ' + (ann ? ann.textContent.slice(0, 70) : '')}); }
   }
   for (const c of document.querySelectorAll('main .eq-chain')) {   // a calculation set as rows (mathlayout.py): its left side must neither spill into the right one
     if (!V(c)) continue;                                          // nor wrap while the chain has room (teacher 2026-10-31, the visual reviewer's fy1-4 and fy3-7 findings)
@@ -94,45 +121,54 @@ JS = """() => {
       const k = l.querySelector('.katex'); if (!k) continue;
       const ann = k.querySelector('annotation'), txt = ann ? ann.textContent.slice(0, 70) : '';
       const kr = k.getBoundingClientRect(), lr = l.getBoundingClientRect();
-      if (kr.right > lr.right + 2) out.push({what: 'formula', over: Math.round(kr.right - lr.right), text: 'calculation row: left side runs into the right side: ' + txt});
+      if (kr.right > lr.right + 2) out.push({at: W(k), what: 'formula', over: Math.round(kr.right - lr.right), text: 'calculation row: left side runs into the right side: ' + txt});
       const bs = [...k.querySelectorAll('.base')].map((b) => b.getBoundingClientRect());   // KaTeX splits a formula into bases at its operators; a tall base (a fraction) starts higher on the same line,
       const wrapped = bs.some((b) => b.top > bs[0].bottom - 2);                           // so a row has wrapped only when a base starts below the first one's bottom
-      if (wrapped && room > 40) out.push({what: 'formula', over: Math.round(room), text: 'calculation row: left side wraps though the chain has room: ' + txt});
+      if (wrapped && room > 40) out.push({at: W(k), what: 'formula', over: Math.round(room), text: 'calculation row: left side wraps though the chain has room: ' + txt});
     }
   }
   for (const t of document.querySelectorAll('table')) {
     if (t.closest('#sim-root') || !t.checkVisibility()) continue;
     const box = t.parentElement, cs = getComputedStyle(box), room = box.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
     const over = Math.max(t.scrollWidth - t.clientWidth, Math.round(t.getBoundingClientRect().width - room));   // it would scroll, or it is wider than its box (no table scrolls, 2026-11-08)
-    if (over > 1) out.push({what: 'table', over, text: t.innerText.replace(/\\s+/g, ' ').slice(0, 60)});
+    if (over > 1) out.push({at: W(t), what: 'table', over, text: t.innerText.replace(/\\s+/g, ' ').slice(0, 60)});
+    if (!t.classList.contains('tbl-stack')) for (const k of t.querySelectorAll('th .katex, td .katex')) {   // a cell's formula that scrolls in its column: "E_distri" in a
+      if (k.scrollWidth > k.clientWidth + 3) { out.push({at: W(k), what: 'table', over: k.scrollWidth - k.clientWidth, text: 'formula in a cell scrolls, not fully shown: ' + ((k.querySelector('annotation') || {}).textContent || '').slice(0, 50)}); break; }   // heading (en/fy3-15, 2026-11-16)
+    }
+    if (t.classList.contains('tbl-stack')) for (const c of t.querySelectorAll('td, tbody th')) {   // a stacked table (lesson.js): its label must not run into its value
+      const l = c.querySelector(':scope > .tbl-lab'), v = c.querySelector(':scope > .tbl-val');   // ("E_district heating (GWh)" over 1190 at 390 px, en/fy3-15, 2026-11-16)
+      if (!l || !v || !v.textContent.trim()) continue;
+      const vr = v.getBoundingClientRect(), vl = vr.left, lr = Math.max(ink(l), l.getBoundingClientRect().left + l.scrollWidth);
+      if (lr > vl + 1 && l.getBoundingClientRect().bottom > vr.top + 2) { out.push({at: W(l), what: 'table', over: Math.round(lr - vl), text: 'stacked table: label runs into its value: ' + l.textContent.trim().slice(0, 50)}); break; }
+    }
   }
   for (const c of document.querySelectorAll('main .eq-chain')) {   // regression 2026-11-04: rows of a calculation collapsed to 0 px (kx-wide inside the grid)
     if (!c.checkVisibility()) continue;
-    for (const k of c.querySelectorAll('.katex')) if (k.getBoundingClientRect().width < 4) { out.push({what: 'formula', over: 0, text: 'calculation row collapsed: ' + ((k.querySelector('annotation') || {}).textContent || '').slice(0, 60)}); break; }
+    for (const k of c.querySelectorAll('.katex')) if (k.getBoundingClientRect().width < 4) { out.push({at: W(k), what: 'formula', over: 0, text: 'calculation row collapsed: ' + ((k.querySelector('annotation') || {}).textContent || '').slice(0, 60)}); break; }
   }
   for (const s of document.querySelectorAll('main svg')) {
     const r = s.getBoundingClientRect();
     if (!r.width || !V(s) || s.closest('.kx-wide, .eq-chain')) continue;   // a root sign inside a wide formula's own scrolling line (lesson.js kx-wide) scrolls with it; a picture in a closed <details> has a box but is not drawn (content-visibility), and the 'open' state measures it once it shows (2026-11-11: the root sign of a display formula in fy1-4's closed sim box, laid out at the closed box's width)
     const card = s.closest('.kc-card'), lim = card ? card.getBoundingClientRect().right : vw;   // a concept card's own box is the limit
-    if (r.right > lim + 1) out.push({what: 'svg', over: Math.round(r.right - lim), text: s.getAttribute('aria-label') || ''});
+    if (r.right > lim + 1) out.push({at: W(s), what: 'svg', over: Math.round(r.right - lim), text: s.getAttribute('aria-label') || ''});
     const T = [...s.querySelectorAll('text'), ...s.querySelectorAll('foreignObject')].map((t) => ({t: t.textContent.trim().slice(0, 40), b: (t.querySelector('.katex, div') || t).getBoundingClientRect()})).filter((x) => x.t);
     // the 1 px allowance in the page's own scale (K), like the overlap below; an enlarged drawing is also placed on whole
     // pixels again, which moved a label 0.09 px past K (FY4-sovella, 0.92 px at 1280 px, 1.27 px at 1920 px), so the
     // enlarged page gets a quarter pixel for that. Under 1600 px the allowance is 1 px as before.
     const E = K > 1 ? K + 0.25 : 1;
     for (const x of T) if (x.b.left < r.left - E || x.b.right > r.right + E || x.b.top < r.top - E || x.b.bottom > r.bottom + E)
-      out.push({what: 'svg-text', over: Math.round(Math.max(r.left - x.b.left, x.b.right - r.right, r.top - x.b.top, x.b.bottom - r.bottom)), text: `"${x.t}" leaves the figure`});
+      out.push({at: W(s), what: 'svg-text', over: Math.round(Math.max(r.left - x.b.left, x.b.right - r.right, r.top - x.b.top, x.b.bottom - r.bottom)), text: `"${x.t}" leaves the figure`});
     for (let i = 0; i < T.length; i++) for (let j = i + 1; j < T.length; j++) { const a = T[i].b, b = T[j].b;
       const ox = Math.min(a.right, b.right) - Math.max(a.left, b.left), oy = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
-      if (ox > K && oy > K) out.push({what: 'svg-text', over: Math.round(Math.min(ox, oy)), text: `"${T[i].t}" overlaps "${T[j].t}"`}); }
+      if (ox > K && oy > K) out.push({at: W(s), what: 'svg-text', over: Math.round(Math.min(ox, oy)), text: `"${T[i].t}" overlaps "${T[j].t}"`}); }
   }
   const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
   for (const c of document.querySelectorAll('.lab > *, .fig-row > *, .intro-row > *, .example > *'))
-    if (V(c) && c.scrollWidth > c.clientWidth + 3) out.push({what: 'column', over: c.scrollWidth - c.clientWidth, text: c.className});
+    if (V(c) && c.scrollWidth > c.clientWidth + 3) out.push({at: W(c), what: 'column', over: c.scrollWidth - c.clientWidth, text: c.className});
   for (const t of document.querySelectorAll('main p, main li')) {
     if (!V(t) || t.closest('#sim-root, .katex-display, table')) continue;
     const w = t.getBoundingClientRect().width;
-    if (w > 44 * rem + 1) { out.push({what: 'text', over: Math.round(w - 44 * rem), text: `line length: "${t.textContent.trim().slice(0, 50)}"`}); break; }
+    if (w > 44 * rem + 1) { out.push({at: W(t), what: 'text', over: Math.round(w - 44 * rem), text: `line length: "${t.textContent.trim().slice(0, 50)}"`}); break; }
   }
   const R = (e) => e.getBoundingClientRect();
   const name = (e) => (e.id ? '#' + e.id : '') + (e.className && typeof e.className === 'string' ? '.' + e.className.trim().split(/\\s+/).join('.') : e.tagName.toLowerCase());
@@ -144,14 +180,14 @@ JS = """() => {
     for (const b of a.parentElement.children) {
       if (b === a || !b.matches(g) || !V(b) || seen.has(b)) continue;
       const p = R(a), q = R(b), ox = Math.min(p.right, q.right) - Math.max(p.left, q.left), oy = Math.min(p.bottom, q.bottom) - Math.max(p.top, q.top);
-      if (ox > 2 && oy > 2) out.push({what: 'overlap', over: Math.round(Math.min(ox, oy)), text: `${name(a)} and ${name(b)}`});
+      if (ox > 2 && oy > 2) out.push({at: W(a), what: 'overlap', over: Math.round(Math.min(ox, oy)), text: `${name(a)} and ${name(b)}`});
     }
     seen.add(a);
   }
   // order: the task cards read from top to bottom in the order they are written
   const cards = [...document.querySelectorAll('main .activity, main details.opt')].filter((e) => V(e) && !e.closest('.lab-side, details.opt .activity') && !e.parentElement.closest('.activity'));
   for (let i = 1; i < cards.length; i++) if (R(cards[i]).top < R(cards[i - 1]).top - 1)
-    out.push({what: 'order', over: Math.round(R(cards[i - 1]).top - R(cards[i]).top), text: `${name(cards[i])} shows above ${name(cards[i - 1])}`});
+    out.push({at: W(cards[i]), what: 'order', over: Math.round(R(cards[i - 1]).top - R(cards[i]).top), text: `${name(cards[i])} shows above ${name(cards[i - 1])}`});
   // gap: a row of two columns where one is far taller than the other (the empty area beside a grown card)
   for (const g of document.querySelectorAll('main *')) {
     const cs = getComputedStyle(g);
@@ -161,18 +197,18 @@ JS = """() => {
     for (const c of g.children) { if (!V(c) || getComputedStyle(c).position === 'sticky') continue; const k = Math.round(R(c).top); (rows[k] = rows[k] || []).push(R(c).height); }
     for (const hs of Object.values(rows)) if (hs.length > 1) {
       const hi = Math.max(...hs), lo = Math.min(...hs);
-      if (hi - lo > 240 * K && lo < 0.55 * hi) out.push({what: 'gap', over: Math.round(hi - lo), text: `${name(g)}: ${Math.round(hi - lo)} px empty beside the shorter column`});
+      if (hi - lo > 240 * K && lo < 0.55 * hi) out.push({at: W(g), what: 'gap', over: Math.round(hi - lo), text: `${name(g)}: ${Math.round(hi - lo)} px empty beside the shorter column`});
     }
   }
   // small: reading text keeps its size on a phone, and every control is big enough to hit
   for (const t of document.querySelectorAll('.act-theory > p, .act-theory .fig-text > p, .act-theory li, p.task, fieldset.choice legend, ul.choices label, .hook p, .learn li, details.solution .steps p:not(.sol-label)')) {
     if (!V(t) || t.closest('#sim-root')) continue;
     const fs = parseFloat(getComputedStyle(t).fontSize);
-    if (fs < 16.5) { out.push({what: 'small', over: Math.round(17 - fs), text: `${fs} px text: "${t.textContent.trim().slice(0, 40)}"`}); break; }
+    if (fs < 16.5) { out.push({at: W(t), what: 'small', over: Math.round(17 - fs), text: `${fs} px text: "${t.textContent.trim().slice(0, 40)}"`}); break; }
   }
   for (const c of document.querySelectorAll('main button, main summary, ul.choices label, nav.toc a, form.check input')) {
     if (!V(c) || c.closest('#sim-root') || c.matches('.kc-term-btn')) continue;   // a concept term inside a sentence is an inline target (WCAG 2.5.8 exception)
-    if (R(c).height < 39.5) { out.push({what: 'small', over: Math.round(40 - R(c).height), text: `control ${Math.round(R(c).height)} px tall: "${c.textContent.trim().slice(0, 40)}"`}); break; }
+    if (R(c).height < 39.5) { out.push({at: W(c), what: 'small', over: Math.round(40 - R(c).height), text: `control ${Math.round(R(c).height)} px tall: "${c.textContent.trim().slice(0, 40)}"`}); break; }
   }
   return out;
 }"""
@@ -230,7 +266,7 @@ with sync_playwright() as pw:
             bad += 1
             print(f"FAIL {tag}")
             for f in uniq:
-                print(f"  {f['what']:8} {f['over']:4} px  [{f['state']}]  {f['text']}" )
+                print(f"  {f['what']:8} {f['over']:4} px  [{f['state']}]  {f['text']}" + (f"\n{'':26}at {f['at']}" if f.get('at') else ""))
         else:
             print(f"OK   {tag}" + (f" ({len(was)} known clipped formulas, docs/clipped-formulas.tsv)" if was else ""))
     b.close()

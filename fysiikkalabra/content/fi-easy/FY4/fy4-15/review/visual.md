@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 94988e3ebeb7dad6
+CONTENT-HASH: 863f9ed6ddb9267e
 
 ## Blocking
-None.
 
 ## Polish
-1. fy4-15: P_a label in the figure (fi, fi-easy, en) is legible and upright at 390 px; table η = W_a/W_o = P_a/P_o fits.
-2. Lesson text: 'ottotyö'/'antotyö' (input/output work) appear without a gloss; one short clause would help (fi-easy especially).
 
-Checked: preview at 390 and 1280 px, formula tables, opened solutions; no horizontal overflow, no KaTeX errors, old symbols gone.
+## Checked
+- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.

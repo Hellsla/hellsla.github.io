@@ -1,14 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 282eb61fc0b60703
+CONTENT-HASH: 28a3b421e466f8b3
+SCOPE: delta added-exercise from 9cc21f77dd6113db base 71f5784fca44
 
 ## Blocking
-- none
 
 ## Polish
-1. solutions.md L2-04: $P_\text{o}$ appears only in the Formula line; name it once ("polttoaineteho eli ottoteho $P_\text{o}$" / "fuel power, the input power $P_\text{o}$"). Note the fy3-11 chapter's worked example writes the fuel power $P_1$ ($\eta = P_\text{a}/P_1$), fy3-15 writes $P_\text{o}$; one symbol across both would be cleaner.
-2. answers.py docstring still says η = P_hyöty/P_in and comments use E_s, P_mek; align with P_a/P_o and W.
-3. L3-04 still names the monthly heat demand $Q$ while L3-02 now uses $Q_1$; consider $Q_1$ in the table and text.
-4. L2-09: a 0,60 m piston stroke is long for a "pieni kaasumoottori"; "sylinteri" alone or a larger area would be more realistic (numbers unchanged otherwise).
+- exercises/solutions.md (fy3-11-L2-10, c) — "Ilma-vesilämpöpumpussa vaikutus on kaksinkertainen" can be read as "twice as large". What is meant is that two causes act together: colder outdoor air and warmer heating water. Optional: "vaikuttaa kaksi tekijää yhtä aikaa".
+- Same c) — "Kovalla pakkasella lämpökerroin lähestyy arvoa 1": the source gives COP 1–2 at about −25 °C for a newish pump and the electric-heating level for older ones. Optional: "voi pudota lähelle arvoa 1" to keep it as the source says.
 
 ## Checked
-Hash at start and end. Full review (added L1-09, L2-09; L2-04 P_a/P_o; L3-02 Q₁). Own script recomputed every numeric answer from the task text: L1-01 12,0 kJ; L1-02 172 J; L1-03 37,2 %; L1-04 750 J; L1-05 21,7 %; L1-08 3,25; L1-09 101 325 Pa·0,0020 m³ = 203 J (200 J, 4 %); L2-01 41,0 %; L2-02 9,0 %; L2-03 ΔU = Q − pΔV = 500 J; L2-04 720 kW; L2-05 31,4 % (60 kW); L2-07 Q₂ = 20,9 kWh; L2-09 ΔV/A = 0,60 m; L3-01 120 MW; L3-02 9,60 MWh; L3-03 12,0 kW; L3-04 13,7/4,995 = 2,74; L3-05 0,74 kJ. All agree with exercises.json and answers.py in all three languages. ε = Q₁/W = Q₁/(Q₁ − Q₂) and η = P_a/P_o used correctly; heat pump has a lämpökerroin, not an efficiency. pv-isobaari generator: 250 kPa, 1,0->4,0 l on gridlines, as both tasks read. Gas work sign (W_k by the gas, W on the gas in ΔU = Q + W) consistent. MC: one correct option each.
+- b) recomputed: Q₁ = εW = 4,0 · 2,5 kWh = 10 kWh and Q₂ = Q₁ − W = (ε − 1)W = 7,5 kWh. Both are two figures; the answer is 7,5 kWh with tolerance 0,02. The chain starts from energy conservation Q₁ = Q₂ + W and ε = Q₁/W, then solves symbolically. Symbols Q₁, Q₂, W, ε as in the brief's heat-pump formula.
+- a) the lämpökerroin is not an efficiency, because Q₂ is not in the denominator. Efficiency ≤ 100 %, and a resistance heater's is practically 100 %. "hyötysuhde 300 prosenttia" is called imprecise for the right reason. This matches the guardrail and the glossary.
+- c) a larger temperature difference means more electrical work per unit of heat, so ε falls. Warmer heating water in frost, COP 1–2 at −25 °C, and ε = 1 → Q₂ = 0 like a resistance heater. All right and consistent with the source facts.
+- d) the claim is false: the balance closes (2,5 + 7,5 = 10 kWh), and the error is leaving out the outdoor heat. Right; no "energy created" picture.
+- Järkevyys: the 75 % share, the 2,5 kWh for a resistance heater, and the limit that one instantaneous COP does not give the yearly consumption (source: yearly COP 1,4–3). Correct and quoted within the facts.
+- Source quotations (COP definition, smaller temperature difference, −25 °C, 1,4–3) match the verified document text.
+- Inside FY3 (energy conservation, heat pump as in the lesson; no cycle analysis).
+- Hash the same at start and end.

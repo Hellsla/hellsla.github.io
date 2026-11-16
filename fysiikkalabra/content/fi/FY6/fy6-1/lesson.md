@@ -436,7 +436,7 @@ Q &= I t \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Joka sekunti lampun läpi kulkee neljäsosa coulombia, ja $720\,\text{s}$:ssa neljäsosa luvusta $720$ on $180$. Elektroneina varaus on $180\,\text{C} : (1{,}602 \cdot 10^{-19}\,\text{C}) \approx 1{,}1 \cdot 10^{21}$ elektronia, valtava määrä, mutta johdossa niitä on vielä paljon enemmän.
+**Järkevyys.** Joka sekunti lampun läpi kulkee neljäsosa coulombia, ja $720\,\text{s}$:ssa neljäsosa luvusta $720$ on $180$. Elektroneina varaus on $$180\,\text{C} : (1{,}602 \cdot 10^{-19}\,\text{C}) \approx 1{,}1 \cdot 10^{21}$$ elektronia, valtava määrä, mutta johdossa niitä on vielä paljon enemmän.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että lamppu kuluttaa sähkövirtaa, joten lampun jälkeen johdossa kulkisi vähemmän virtaa kuin ennen lamppua. Näin ei ole: sama varaus, joka tulee lamppuun, lähtee siitä ja palaa paristoon, joten virta on yhtä suuri lampun molemmin puolin. Lamppu muuttaa varauksen kuljettamaa sähköistä energiaa valoksi ja hehkulangan sisäenergiaksi. Toinen virhekäsitys on, että elektronit lähtevät paristosta ja kulkevat lamppuun asti ennen kuin lamppu syttyy. Johto on kuitenkin valmiiksi täynnä vapaita elektroneja, ja ne alkavat liikkua kaikkialla piirissä yhtä aikaa.

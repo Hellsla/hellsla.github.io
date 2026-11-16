@@ -1,7 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f92ba6741b53a98f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi"): the round-3 diff (git diff HEAD~1, commit a84956a90) only
-Round: 3
+CONTENT-HASH: 6b0c6d4f18f49f67
 
 ## Blocking
 - none
@@ -10,5 +8,7 @@ Round: 3
 - none
 
 ## Checked
-- tasks.json fy2-k5-d conclusion criterion: "Päättelee perustellusti, että väite on liioiteltu. Kumpi tahansa perustelu riittää: …, tai …" is grammatical and clear, and both accepted reasons are stated explicitly. The sentence is long but acceptable for a rubric.
-- Earlier rounds are not re-reviewed. No captures opened (diff judged from source).
+- Delta review of the changed fi lines only (fy2-k1 j) Perustelu): opened FY2-koe-page-1280-5.png (rewritten rationale: LaTeX values $-18\,{}^\circ\text{C}$ and $+15\,{}^\circ\text{C}$, fluent Finnish, nothing clipped) and -3.png, -4.png for the surrounding layout. Captures current for this hash (stamp.txt).
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

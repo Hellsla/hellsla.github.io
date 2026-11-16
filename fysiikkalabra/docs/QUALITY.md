@@ -7,7 +7,7 @@ A map, not new rules (teacher 2026-11-13). The rules are in `CLAUDE.md` (this fo
 ## The gates, in the order a change meets them
 | Gate | Who | Covers | Does not cover |
 |---|---|---|---|
-| 1. Deterministic checks | `python scripts/check_lesson.py <id>` (developer, before any review) | lint, complete solutions, notation, LaTeX, answers, build, simulation and inquiry tests, layout at 360 px | anything a script cannot judge |
+| 1. Deterministic checks | `python scripts/check_lesson.py <id>` (developer, before any review) | lint, complete solutions, notation, LaTeX, answers, build, simulation and inquiry tests, layout at 360, 390, 768 and 1280 px (CI's browser image when Docker is available) | anything a script cannot judge |
 | 2. Science review | science-reviewer (Opus) | physics and mathematics; the only judge of scientific correctness | readability, layout |
 | 3. Pedagogy review | pedagogy-reviewer | whether a 16–19-year-old can learn from it, on a phone and a laptop | physics |
 | 4. Visual and editorial review | visual-editorial-reviewer, from the captures | figures, graphs, mathematical typography, Finnish, presentation | physics (sent to the science reviewer) |
@@ -30,13 +30,18 @@ teacher's approval of a figure, of a plan, or of a material content change: the 
 | Ahjo, Kilparobotiikka, LUMA-tutor (`jaksot/`) | — | none | their own page tests |
 | Scripts, templates, CI | developer | none (no content hash) | unit tests; the SMOKE sample of pages |
 
-## Known gaps (2026-11-13)
+## Known gaps (2026-11-13; 1 and 2 narrowed 2026-11-16, work queue 5)
 1. **Browser checks are scoped.** A pull request tests the pages it can change, `main` the pages its push can change
    against the previous `main`; the two can differ. A page can be broken without any run testing it until the weekly
-   run (Sunday 21:00). After a merge, look at the run on `main`.
-2. **Local runs differ from CI.** CI runs the browser checks in `mcr.microsoft.com/playwright/python:v1.65.0-noble`; a
-   session's Chromium is another build, so a layout failure in CI may not reproduce locally (en/fy1-1, 2026-11-13).
-   Roadmap step 5.
+   run (Sunday 21:00). After a merge, look at the run on `main`. A page whose only change is its `?v=` cache tokens is
+   not counted as changed (`ci_scope.py`); a layout failure names its task, solution step and element, so a failure on
+   `main` can be fixed from the log.
+2. **Local runs differ from CI unless run in CI's image.** CI runs the browser checks in
+   `mcr.microsoft.com/playwright/python:v<version>-noble`, the version `requirements-ci.txt` pins (`ci_env.py check`
+   keeps the two equal). A session's own Chromium is another build with other fonts and measured formulas 4-9 px
+   narrower (en/fy1-1 2026-11-13; fy2-3 at 360 px: 3 clipped formulas locally, 13 in the image). `python
+   scripts/ci_env.py run <command>` runs a check in that image (Docker), and `check_lesson.py` does it for its layout
+   checks by itself; without Docker the gap remains.
 3. **Reviewers share a model family.** Three independent reviews are independent in their packets, not in their blind
    spots. The teacher's own reading is the check on that, above all for new physics.
 4. **Language versions.** en and fi-easy are judged by the same agents and `check_i18n.py`; no person checks them.
@@ -48,6 +53,6 @@ teacher's approval of a figure, of a plan, or of a material content change: the 
    backlog is reviewed (`ROADMAP.md`).
 
 ## Overlaps worth knowing
-- Layout is checked by `check_lesson.py` (360 px) and again by CI (eight widths): the local check is the quick filter,
+- Layout is checked by `check_lesson.py` (360, 390, 768, 1280 px) and again by CI (eight widths): the local check is the quick filter,
   CI the gate. Do not skip the local one to save time; a CI round costs more.
 - `reviews.py verify` in CI re-derives every carry; a carry written by hand fails there, so never write one.

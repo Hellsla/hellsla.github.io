@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 02b5aa9f39ab5ea1
-Mode: delta (new task fy5-8-L2-08), Round: 1
+CONTENT-HASH: 2394483ffa588457
 
 ## Blocking
-(none)
 
 ## Polish
-- None.
+- [Minor] fy5-8 Answer — "vibration and sound, and finally the internal energy … (which is transferred …)" is long; split after "sound". Also figures.json adds an English alt text for the model diagram: reads fine, not re-inspected visually.
 
 ## Checked
-- Own 390 px render of preview/en/fy5-8.html after the page scripts ran, task fy5-8-L2-08 with answer feedback and solution opened (scratch script shot_trv5.py): page scrollWidth 390, no element outside the viewport except inside a scroll box, no KaTeX error source, no raw $ left, no JS errors.
-- Opened the task captures in tiles: scenario text, table (caption, header with LaTeX, 5 rows; fits the card, no scroll), choice feedback, full worked solution; units, decimal marks and case endings render correctly. Table cells: decimal comma in fi-easy, point in en (converted correctly at render).
-- Task text and solution read as English; language matches the reviewed Finnish set.
+- Delta round 1: rendered the page at 360 px with solutions open (?ratkaisut=1); Answer row wraps cleanly with the parenthesis; the new alt-text translation was read as text.
+- Page scrollWidth 360, no overflow in the changed paragraphs; units and numbers unchanged and typeset upright with thin spaces.
+- Judged the language and typography of the changed sentences only.
 
 ## Scores
-illustrations 5 · typography 5 · language 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

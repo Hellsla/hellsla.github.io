@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8dc2567292c69c38
-SCOPE: delta added-exercise from 5b627e2749906f73 base 5a45b28682e8
+CONTENT-HASH: c55461f4fa2a8ea8
+SCOPE: delta added-exercise from 08a5298251fe93cc base 415cbc7c6bc3
 
 ## Blocking
 (none)
 
 ## Polish
-(none new; the round-1 Minor on the small figure in the task card stands)
+(none)
 
 ## Checked
-- Own scratch captures of the L2-08 card with every solution open at 360 and 390 px (fi), read in full from the preview build; review/shots not used.
-- Substitution row now /bin/bash.4136 · (12 − 5.56) = 2.66$ and splits into two aligned rows; no formula in the card is wider than the card at 360 or 390 px (measured in the browser); the Conversions and Reasonableness lines read cleanly, the unseen 2.3 eV is gone.
-- Figure kuvaaja-ab seen in the card: axes, units, grid, A and B distinct.
-- L1-10 and L2-09 were passed in round 1 and are unchanged.
+- Delta: added fy8-1-L2-10 (aineisto, PhET). Captures fy8-1-open-exercises-L2-1280-14, -15, -16: task text, link line, parts a)-d), answer box, every solution block (Annettu to Järkevyys).
+- KaTeX clean: units upright with thin space, decimal comma, `\cdot`, aligned rows with equals signs in one column, Vastaus set apart, Järkevyys chain on its own row. No clipping. Neighbouring L2-09 solution unchanged; set reads as one.
+- Finnish fluent; instruction order clear (situation, parts, question last).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

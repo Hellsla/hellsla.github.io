@@ -1,12 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9c8097af89e874dc
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 586285323faf3a8f
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] fy8-12-L2-08 solution, Reasonableness — the order-of-magnitude chain starts with a bare product — start it with $E \approx$.
+- [Minor] fy8-12-L2-08 — the prefix mu in "$\mu\text{eV}$" renders as italic mu next to upright eV — use an upright micro sign (\text{\textmu} or \mathrm{\mu}) everywhere in the set.
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Captures fy8-12-open-exercises-L2-1280-10 (task 12-17 text, source link, parts a–c), -11 (part d, answer box in µeV, given, principle, model answer a), -12 (conversions, substitution rows, comparison fractions, model answer c), -13 (model answer d, answer, reasonableness). Captures rebuilt for this hash.
+- Round-1 Major fixed: no decimal comma left (grep of exercises.json and solutions.md: 0), "J s" now thin-spaced. Layout clean, no clipping. Delta: caption wording ("example data" removed) not re-opened, text-only.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

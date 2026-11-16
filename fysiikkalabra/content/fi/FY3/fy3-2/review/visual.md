@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 65cdfb97a518befc
+CONTENT-HASH: f5e200691bd07b3c
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] Re-broken formulas (all lessons) — a lone "ja" or "joten" between two display formulas, and a parenthesis opened on one row and closed on the next (e.g. fy3-12 `P = (0,17 · 120 / + 1,0 · 20,0)`), read slightly broken — optional: join the short formulas or break outside the bracket.
+- [Minor] fy3-3 `− 195,75 + 273,15` — a leading minus on a row with no left side is set with binary spacing — write `{-}195{,}75` if the row stays.
 
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): Ydinajatus: comma restored before "mutta"; the sentence now reads correctly, nothing else changed (text-only, one punctuation mark).
-- delta review 2026-11-07 (teacher's proofread replacement texts): Ydinajatus rewrite (siirtymä, komponentti, mekaaninen työ) and the typeset $40\,\text{N}$/$20\,\text{cm}$ in lesson and inquiry choices/feedback/prompts; opened fy3-2-fi-a-390 and -1280 (text, carry-lift figure and Joule figure unchanged and intact).
-- batch delta review: opened fy3-2-1280-0.png and fy3-2-360-0.png (photo floated or inline in the column, no clipping or horizontal overflow, credit line present); alt text and caption read against the picture and the neighbouring paragraph; no number with a unit in the new caption or alt text.
+batch delta review: every changed chain rendered in a browser at 360, 390 and 1280 px with all hints, feedback, solutions and details open (no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator, no row breaks inside a number or unit); contact sheet of the changed blocks viewed at 390 px; existing captures sim/fig/example/tarkista of fy3-1 opened.

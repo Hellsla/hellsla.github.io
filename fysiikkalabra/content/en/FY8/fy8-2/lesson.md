@@ -249,7 +249,14 @@ The spectrum of a neon sign has a strong red-orange line at the wavelength $640\
 
 <!-- vaihe -->
 
-**Substitution.** First we calculate the product $hc = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s} = 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}$ and then the energy difference:
+**Substitution.** First we calculate the product $$
+\begin{aligned}
+&hc \\
+&= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot 2.998 \cdot 10^{8}\,\text{m/s} \\
+&= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
+\end{aligned}
+$$ and then the energy difference:
 ```latex
 \begin{aligned}
 \Delta E &= \frac{hc}{\lambda} \\
@@ -306,4 +313,4 @@ The warmed ground radiates infrared. Carbon dioxide and water vapour molecules a
 - A hot solid gives a continuous spectrum. A hot, thin gas gives an emission spectrum with separate bright lines, and white light that has passed through a gas gives an absorption spectrum whose dark lines are at the same wavelengths as some of the emission lines.
 - The electron shell of an atom can only be in certain energy states. The energy of the photon emitted or absorbed in a transition is the difference between the states: $hf = E_\text{u} - E_\text{l}$ and $\lambda = \tfrac{hc}{E_\text{u} - E_\text{l}}$.
 - Every element has its own lines, so the spectrum identifies which elements there are in a light source or in a gas on the path of the light.
-- In fluorescence, a substance absorbs short-wavelength light and emits longer-wavelength light, because part of the energy is turned into heat.
+- In fluorescence, a substance absorbs short-wavelength light and emits longer-wavelength light, because part of the energy is turned into internal energy.

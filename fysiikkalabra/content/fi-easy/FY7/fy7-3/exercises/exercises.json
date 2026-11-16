@@ -142,7 +142,7 @@
       "unit": "µVs/(Am)",
       "tolerance": 0.04,
       "data": {
-        "caption": "Käämin sisäkenttä virran funktiona (esimerkkiaineisto)",
+        "caption": "Käämin sisäkenttä virran funktiona",
         "columns": [
           "$I\\,(\\text{A})$",
           "$B\\,(\\text{mT})$"
@@ -191,7 +191,7 @@
       "unit": "µT",
       "tolerance": 0.03,
       "data": {
-        "caption": "Suoran johtimen kenttä etäisyyden funktiona (esimerkkiaineisto)",
+        "caption": "Suoran johtimen kenttä etäisyyden funktiona",
         "columns": [
           "$r\\,(\\text{cm})$",
           "$B\\,(\\mu\\text{T})$"
@@ -219,7 +219,7 @@
         "experiment",
         "error"
       ],
-      "text": "Opiskelija mittaa käämin sisäkenttää anturilla. Anturi mittaa magneettivuon tiheyden komponentin anturin omassa suunnassa.\n\nHän asettaa anturin käämin keskelle, mutta anturi on kääntynyt $60\\,{}^\\circ$ käämin akseliin nähden. Käämi on pitkä. Sen sisällä kenttä on homogeeninen ja akselin suuntainen.\n\nMikä seuraavista kuvaa oikein, miten tämä vaikuttaa mittaustulokseen?",
+      "text": "Opiskelija mittaa käämin sisäkenttää anturilla. Anturi mittaa magneettivuon tiheyden komponentin anturin omassa suunnassa.\n\nHän asettaa anturin käämin keskelle, mutta anturi on kääntynyt $60^\\circ$ käämin akseliin nähden. Käämi on pitkä. Sen sisällä kenttä on homogeeninen ja akselin suuntainen.\n\nMikä seuraavista kuvaa oikein, miten tämä vaikuttaa mittaustulokseen?",
       "answer": "Lukema on liian pieni, koska anturi mittaa vain oman suuntansa komponentin eikä koko kenttää.",
       "unit": "",
       "tolerance": 0.02,
@@ -238,7 +238,7 @@
         },
         {
           "text": "Lukema on liian pieni, koska anturi mittaa vain oman suuntansa komponentin eikä koko kenttää.",
-          "feedback": "Oikein. Anturi näyttää kentän komponentin omassa suunnassaan. Kun kulma akseliin on $60\\,{}^\\circ$, komponentti on $B \\cos 60\\,{}^\\circ = 0{,}50\\,B$. Lukema on siis vain puolet todellisesta. Kenttä itse ei muutu.",
+          "feedback": "Oikein. Anturi näyttää kentän komponentin omassa suunnassaan. Kun kulma akseliin on $60^\\circ$, komponentti on $B \\cos 60^\\circ = 0{,}50\\,B$. Lukema on siis vain puolet todellisesta. Kenttä itse ei muutu.",
           "correct": true
         }
       ]
@@ -332,12 +332,12 @@
         "graph",
         "reasoning"
       ],
-      "text": "Kompassi on pöydällä, ja sen neula osoittaa pohjoiseen. Suoraan kompassin yläpuolelle, $4{,}0\\,\\text{cm}$:n korkeudelle, viritetään pohjois–eteläsuuntainen pitkä johdin. Johtimen kenttä on kompassin kohdalla vaakasuora. Se on kohtisuorassa Maan kentän vaakakomponenttia $B_\\text{h}$ vastaan. Kun johtimeen kytketään virta $I$, neula kääntyy kulman $\\alpha$. Kokeessa virtaa muutetaan viidesti ja jokaisella virralla luetaan neulan kulma. Aineisto on esimerkkiaineisto.\n\na) Etsi suure, jonka kuvaaja virran funktiona on suora, ja perustele valintasi. Sovita pisteisiin suora.\n\nb) Määritä suoran kulmakertoimen avulla Maan magneettikentän vaakakomponentti $B_\\text{h}$ mikrotesloina.\n\nc) Perustele, miksi kulma $\\alpha$ itse ei ole suoraan verrannollinen virtaan. Perustele myös, miksi neulan kulma lähestyy kulmaa $90\\,{}^\\circ$, vaikka virtaa kasvatettaisiin paljon.\n\nAnna vastauskenttään kohdan b) tulos.",
+      "text": "Kompassi on pöydällä, ja sen neula osoittaa pohjoiseen. Suoraan kompassin yläpuolelle, $4{,}0\\,\\text{cm}$:n korkeudelle, viritetään pohjois–eteläsuuntainen pitkä johdin. Johtimen kenttä on kompassin kohdalla vaakasuora. Se on kohtisuorassa Maan kentän vaakakomponenttia $B_\\text{h}$ vastaan. Kun johtimeen kytketään virta $I$, neula kääntyy kulman $\\alpha$. Kokeessa virtaa muutetaan viidesti ja jokaisella virralla luetaan neulan kulma. Aineisto on esimerkkiaineisto.\n\na) Etsi suure, jonka kuvaaja virran funktiona on suora, ja perustele valintasi. Sovita pisteisiin suora.\n\nb) Määritä suoran kulmakertoimen avulla Maan magneettikentän vaakakomponentti $B_\\text{h}$ mikrotesloina.\n\nc) Perustele, miksi kulma $\\alpha$ itse ei ole suoraan verrannollinen virtaan. Perustele myös, miksi neulan kulma lähestyy kulmaa $90^\\circ$, vaikka virtaa kasvatettaisiin paljon.\n\nAnna vastauskenttään kohdan b) tulos.",
       "answer": 16,
       "unit": "µT",
       "tolerance": 0.03,
       "data": {
-        "caption": "Kompassin neulan kääntyminen virran funktiona (esimerkkiaineisto)",
+        "caption": "Kompassin neulan kääntyminen virran funktiona",
         "columns": [
           "$I\\,(\\text{A})$",
           "$\\alpha\\,({}^\\circ)$"

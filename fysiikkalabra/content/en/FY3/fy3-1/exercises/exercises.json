@@ -207,7 +207,7 @@
       "unit": "m/s²",
       "tolerance": 0.03,
       "data": {
-        "caption": "Mass of the weights and the reading of the force meter on Earth (example data)",
+        "caption": "Mass of the weights and the reading of the force meter on Earth",
         "columns": [
           "$m\\,(\\text{kg})$",
           "$G\\,(\\text{N})$"
@@ -248,7 +248,7 @@
       "unit": "m/s²",
       "tolerance": 0.03,
       "data": {
-        "caption": "Weight of the same sample on three celestial bodies (example data)",
+        "caption": "Weight of the same sample on three celestial bodies",
         "columns": [
           "Celestial body",
           "$G\\,(\\text{N})$"
@@ -327,7 +327,7 @@
       "unit": "m/s²",
       "tolerance": 0.04,
       "data": {
-        "caption": "Extension of the spring on Earth as a function of the mass of the weight (example data)",
+        "caption": "Extension of the spring on Earth as a function of the mass of the weight",
         "columns": [
           "$m\\,(\\text{kg})$",
           "$x\\,(\\text{cm})$"
@@ -373,7 +373,7 @@
       "unit": "kg",
       "tolerance": 0.02,
       "data": {
-        "caption": "Masses of the parts of the landing unit (example data)",
+        "caption": "Masses of the parts of the landing unit",
         "columns": [
           "Part",
           "$m\\,(\\text{kg})$"

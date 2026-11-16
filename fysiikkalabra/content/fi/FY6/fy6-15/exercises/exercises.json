@@ -184,7 +184,7 @@
       "unit": "kertaa",
       "tolerance": 0.02,
       "data": {
-        "caption": "Virtatien resistanssi $R$ eri tilanteissa (esimerkkiaineisto)",
+        "caption": "Virtatien resistanssi $R$ eri tilanteissa",
         "columns": [
           "Tilanne",
           "$R\\,(\\text{k}\\Omega)$"
@@ -221,7 +221,7 @@
       "unit": "A",
       "tolerance": 0.02,
       "data": {
-        "caption": "Laitteiden ottotehot $P$ (esimerkkiaineisto)",
+        "caption": "Laitteiden ottotehot $P$",
         "columns": [
           "Laite",
           "$P\\,(\\text{W})$"
@@ -270,6 +270,18 @@
       "answer": 17.3913,
       "unit": "A",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy6-15-L2-09",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "text": "Aineisto: <a href=\"https://tukes.fi/-/ala-kayta-pistorasiaan-kytkettavaa-aurinkopaneelia\" target=\"_blank\" rel=\"noopener\">Tukes – tiedote pistorasiaan kytkettävistä aurinkopaneeleista</a>\n\nOletetaan, että eräs verkkokauppa myy aurinkopaneeleja, joiden mukana on vaihtosuuntaaja eli laite, joka muuttaa paneelin tasajännitteen $230\\,\\text{V}$:n vaihtojännitteeksi. Paneeli kytketään pistotulpalla tavalliseen pistorasiaan, ja se syöttää sähköä pistorasian kautta kodin sähköverkkoon. Turvallisuus- ja kemikaalivirasto Tukes on julkaissut näistä paneeleista tiedotteen. Tutustu tiedotteeseen.\n\na) Millaisesta aurinkopaneelijärjestelmästä tiedote varoittaa, ja mitä vaaroja se nimeää? Vertaa lisäksi, mihin suuntaan energia siirtyy pistorasiassa, kun siihen on kytketty tällainen paneeli ja kun siihen on kytketty tavallinen sähkölaite.\n\nb) Erään paneelin vaihtosuuntaajan suurin teho on $800\\,\\text{W}$. Laske, kuinka suuri sähkövirta vastaa $800\\,\\text{W}$:n tehoa $230\\,\\text{V}$:n vaihtojännitteellä, kun tehokerroin oletetaan yhdeksi.\n\nc) Paneeli kytketään pistorasiaryhmään, jonka sulake on $16\\,\\text{A}$. Selitä luvun fysiikan avulla, miten kaksi vaaraa, sähköisku jännitteisistä pistotulpan nastoista ja ryhmäjohdon ylikuumeneminen, voivat syntyä, kun sähköä syötetään rakennuksen sähköjärjestelmään tavallisen pistorasian kautta. Laske perustelusi tueksi, kuinka suuri virta ryhmäjohdon osassa voi kulkea ilman, että sulakkeen nimellisvirta ylittyy.\n\nd) Arvioi tehtävän tilanteen ja tiedotteen otsikon avulla väitettä: ”Jos sähkölaite on myynnissä suomalaisessa verkkokaupassa, sen käyttäminen on varmasti turvallista ja sallittua.”\n\nKirjoita vastauslaatikkoon kohdan b) virta ampeereina.",
+      "answer": 3.478261,
+      "unit": "A",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -311,7 +323,7 @@
       "unit": "A",
       "tolerance": 0.05,
       "data": {
-        "caption": "Jatkojohdon kuoren lämpötilan nousu $\\Delta T$ virran $I$ funktiona (esimerkkiaineisto)",
+        "caption": "Jatkojohdon kuoren lämpötilan nousu $\\Delta T$ virran $I$ funktiona",
         "columns": [
           "$I\\,(\\text{A})$",
           "$\\Delta T\\,(\\text{K})$"
@@ -349,7 +361,7 @@
       "unit": "kΩ",
       "tolerance": 0.02,
       "data": {
-        "caption": "Lämmitysvastuksen eristysresistanssi $R_\\text{e}$ (esimerkkiaineisto)",
+        "caption": "Lämmitysvastuksen eristysresistanssi $R_\\text{e}$",
         "columns": [
           "Viikko",
           "$R_\\text{e}\\,(\\text{k}\\Omega)$"

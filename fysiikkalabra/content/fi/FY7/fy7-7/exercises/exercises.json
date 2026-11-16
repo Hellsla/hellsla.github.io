@@ -170,7 +170,7 @@
       "unit": "V",
       "tolerance": 0.03,
       "data": {
-        "caption": "Generaattorin jännite (esimerkkiaineisto)",
+        "caption": "Generaattorin jännite",
         "columns": [
           "$t\\,(\\text{ms})$",
           "$e\\,(\\text{V})$"
@@ -247,7 +247,7 @@
       "unit": "%",
       "tolerance": 0.05,
       "data": {
-        "caption": "Huippuarvo eri pyörimistaajuuksilla (esimerkkiaineisto)",
+        "caption": "Huippuarvo eri pyörimistaajuuksilla",
         "columns": [
           "$f\\,(\\text{Hz})$",
           "$e_0\\,(\\text{V})$"
@@ -268,12 +268,25 @@
       "id": "fy7-7-L2-07",
       "level": 2,
       "core": true,
-      "text": "Oppilas ratkaisi tehtävän seuraavasti: ”Hehkulampun teho on $60\\,\\text{W}$, ja se on kytketty verkkojännitteeseen $230\\,\\text{V}$. Jännite on huippuarvo, joten tehollinen arvo on $230\\,\\text{V} : \\sqrt{2} = 163\\,\\text{V}$. Virta on $I = P : U = 60\\,\\text{W} : 163\\,\\text{V} = 0{,}37\\,\\text{A}$.”\n\na) Etsi oppilaan ratkaisun virhe ja perustele, miksi se on virhe.\n\nb) Laske lampun virran tehollinen arvo oikein.\n\nVastauskenttään kirjataan b-kohdan tulos.",
+      "text": "Oppilas ratkaisi tehtävän seuraavasti: ”Hehkulampun teho on $60\\,\\text{W}$, ja se on kytketty verkkojännitteeseen $230\\,\\text{V}$. Jännite on huippuarvo, joten tehollinen arvo on $230\\,\\text{V} : \\sqrt{2} = 163\\,\\text{V}$. Virta on $I = P : U$ $= 60\\,\\text{W} : 163\\,\\text{V}$ $= 0{,}37\\,\\text{A}$.”\n\na) Etsi oppilaan ratkaisun virhe ja perustele, miksi se on virhe.\n\nb) Laske lampun virran tehollinen arvo oikein.\n\nVastauskenttään kirjataan b-kohdan tulos.",
       "kind": [
         "error"
       ],
       "answer": 0.26087,
       "unit": "A",
+      "tolerance": 0.02
+    },
+    {
+      "id": "fy7-7-L2-08",
+      "level": 2,
+      "kind": [
+        "data",
+        "experiment",
+        "reasoning"
+      ],
+      "text": "Aineisto: <a href=\"https://phet.colorado.edu/en/simulations/faradays-law\" target=\"_blank\" rel=\"noopener\">PhET – Faraday's Law</a> (luettu 16. marraskuuta 2026)\n\nMiten sähköä tuotetaan magneetin avulla? Avaa simulaatio ja ota käyttöön jännitemittari (Voltmeter). Simulaatiossa sauvamagneettia liikutetaan käämin suhteen. Käämiin on kytketty lamppu ja jännitemittari, jonka asteikolla on vain merkit $-$ ja $+$ eikä lukuarvoja.\n\na) Liikuta magneettia käämin suhteen ja pidä sitä välillä paikallaan, myös käämin sisällä. Kuvaile, millaisissa tilanteissa käämiin indusoituu jännite ja millaisissa ei.\n\nb) Tutki, miten magneetin liikenopeus ja liikesuunta (kohti käämiä tai käämistä poispäin) vaikuttavat mittarin neulan poikkeamaan ja lampun kirkkauteen. Kirjaa havaintosi.\n\nc) Selitä kohtien a) ja b) havainnot magneettivuon muutoksen ja induktiolain avulla. Koska mittarissa ei ole lukuarvoja, tarkastele lisäksi esimerkkiä: oletetaan, että käämissä on $4$ kierrosta ja että magneettia työnnettäessä yhden kierroksen läpi kulkeva magneettivuo kasvaa $0{,}25\\,\\text{mWb}$. Laske käämiin indusoituvan keskimääräisen jännitteen suuruus, kun työntö kestää $2{,}0\\,\\text{s}$ ja kun se kestää $0{,}50\\,\\text{s}$.\n\nd) Sovella havaintojasi generaattoriin, jossa käämi pyörii magneettikentässä. Selitä, miksi käämiin syntyy vaihtojännite ja miten generaattorissa mekaanista energiaa muunnetaan sähköenergiaksi.\n\nVastaa laatikkoon kohdan c) keskimääräisen jännitteen suuruus millivoltteina, kun työntö kestää $0{,}50\\,\\text{s}$.",
+      "answer": 2.0,
+      "unit": "mV",
       "tolerance": 0.02
     }
   ],
@@ -314,7 +327,7 @@
       "unit": "T",
       "tolerance": 0.04,
       "data": {
-        "caption": "Pullodynamon huippujännite (esimerkkiaineisto)",
+        "caption": "Pullodynamon huippujännite",
         "columns": [
           "$f\\,(\\text{Hz})$",
           "$e_0\\,(\\text{V})$"

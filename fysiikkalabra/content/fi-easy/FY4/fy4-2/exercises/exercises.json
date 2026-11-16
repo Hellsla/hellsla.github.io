@@ -89,7 +89,7 @@
     {
       "id": "fy4-2-L1-08",
       "level": 1,
-      "text": "Oppilas ratkaisee tehtävän: kivi pudotetaan levosta kaivoon ja se putoaa pohjaan $2{,}0\\,\\text{s}$:ssa. Kuinka syvä kaivo on?\n\nOppilaan ratkaisu: nopeus hetkellä $2{,}0\\,\\text{s}$ on $v = g\\,t = 9{,}81\\,\\text{m/s}^2 \\cdot 2{,}0\\,\\text{s} \\approx 19{,}6\\,\\text{m/s}$. Syvyys on $s = v\\,t = 19{,}6\\,\\text{m/s} \\cdot 2{,}0\\,\\text{s} \\approx 39\\,\\text{m}$.\n\nMikä oppilaan ratkaisussa on virheellistä?",
+      "text": "Oppilas ratkaisee tehtävän: kivi pudotetaan levosta kaivoon ja se putoaa pohjaan $2{,}0\\,\\text{s}$:ssa. Kuinka syvä kaivo on?\n\nOppilaan ratkaisu: nopeus hetkellä $2{,}0\\,\\text{s}$ on $$\\begin{aligned} &v = g\\,t \\\\ &= 9{,}81\\,\\text{m/s}^2 \\cdot 2{,}0\\,\\text{s} \\\\ &\\approx 19{,}6\\,\\text{m/s} \\end{aligned}$$. Syvyys on $s = v\\,t = 19{,}6\\,\\text{m/s} \\cdot 2{,}0\\,\\text{s} \\approx 39\\,\\text{m}$.\n\nMikä oppilaan ratkaisussa on virheellistä?",
       "kind": [
         "error"
       ],
@@ -341,7 +341,7 @@
     {
       "id": "fy4-2-L3-03",
       "level": 3,
-      "text": "Pallo heitetään suoraan ylöspäin, ja sen korkeus $y$ mitataan ajan funktiona videoanalyysilla. Mittauspisteisiin sovitettu toisen asteen polynomi on $y = -4{,}86\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot t^2 + 3{,}10\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 1{,}20\\,\\text{m}$, kun suunta ylöspäin on positiivinen.\n\nMikä on pallon nopeus hetkellä $t = 0{,}500\\,\\text{s}$? Anna vastaus etumerkkeineen.",
+      "text": "Pallo heitetään suoraan ylöspäin, ja sen korkeus $y$ mitataan ajan funktiona videoanalyysilla. Mittauspisteisiin sovitettu toisen asteen polynomi on $$\\begin{aligned} &y = -4{,}86\\,\\tfrac{\\text{m}}{\\text{s}^2} \\cdot t^2 \\\\ &+ 3{,}10\\,\\tfrac{\\text{m}}{\\text{s}} \\cdot t + 1{,}20\\,\\text{m} \\end{aligned}$$, kun suunta ylöspäin on positiivinen.\n\nMikä on pallon nopeus hetkellä $t = 0{,}500\\,\\text{s}$? Anna vastaus etumerkkeineen.",
       "answer": -1.7600000000000002,
       "unit": "m/s",
       "tolerance": 0.02

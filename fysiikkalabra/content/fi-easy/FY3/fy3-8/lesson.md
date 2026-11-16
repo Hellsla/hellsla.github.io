@@ -260,7 +260,7 @@ missä $V$ on tilavuus lämpötilan muutoksen jälkeen (m³), $V_0$ alkuperäine
 </svg>
 
 ## Esimerkki
-Teräksisen sillan kansi on $120\,\text{m}$ pitkä. Paikkakunnalla lämpötila vaihtelee vuoden aikana $-30\,{}^\circ\text{C}$:n pakkasesta +$30\,{}^\circ\text{C}$:n helteeseen, ja teräksen pituuden lämpötilakerroin on 12 · 10⁻⁶ 1/K. Kuinka paljon kannen pituus muuttuu, eli kuinka paljon liikuntasauman on vähintään annettava periksi?
+Teräksisen sillan kansi on $120\,\text{m}$ pitkä. Paikkakunnalla lämpötila vaihtelee vuoden aikana $-30\,{}^\circ\text{C}$:n pakkasesta $+30\,{}^\circ\text{C}$:n helteeseen, ja teräksen pituuden lämpötilakerroin on $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$. Kuinka paljon kannen pituus muuttuu, eli kuinka paljon liikuntasauman on vähintään annettava periksi?
 
 <!-- vaihe -->
 
@@ -282,7 +282,7 @@ Teräksisen sillan kansi on $120\,\text{m}$ pitkä. Paikkakunnalla lämpötila v
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Lämpötilan muutos on sama celsiusasteina ja kelvineinä. Siksi $\Delta T = 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) = 60\,\text{K}$. Pituudet ovat metreinä, joten $\Delta l$ tulee metreinä. Lopuksi muutetaan tulos millimetreiksi: $1\,\text{m} = 1000\,\text{mm}$.
+**Yksikkömuunnokset.** Lämpötilan muutos on sama celsiusasteina ja kelvineinä. Siksi $$\begin{aligned} &\Delta T \\ &= 30\,{}^\circ\text{C} - (-30\,{}^\circ\text{C}) \\ &= 60\,\text{K} \end{aligned}$$. Pituudet ovat metreinä, joten $\Delta l$ tulee metreinä. Lopuksi muutetaan tulos millimetreiksi: $1\,\text{m} = 1000\,\text{mm}$.
 
 <!-- vaihe -->
 

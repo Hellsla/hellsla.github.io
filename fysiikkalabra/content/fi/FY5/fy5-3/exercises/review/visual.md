@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f379aaf2fc31bb49
-SCOPE: delta added-exercise from 32e78172ab301d83 base 81db4a6fd727
+CONTENT-HASH: bada72c8a05e8dc1
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-3 — the label r_B = 1,80 m touches the carousel rim (its m sits on the edge); shift the label inward (optional, figure is teacher-approved, so only if redrawn).
+(none)
 
 ## Checked
-- Delta of the two or three added exercises (fi): 1280 px open-exercises 1/10 and 1/11 (L1-10, L1-11) and L2 part 9 (L2-08 with the carousel figure).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal comma consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- L3-04 solution open at 360 px (re-broken Sijoitus aligned, legible, no clipping); scan of all .eq-chain at 360/390/1280 with details open: no overflow. Wording changes read in the diff.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

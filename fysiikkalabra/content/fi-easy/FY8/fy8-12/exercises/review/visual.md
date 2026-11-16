@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 959b5037fa5f1543
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 0afbb0e960a7159d
+SCOPE: delta added-exercise from 14b54a6e061b7b91 base 415cbc7c6bc3
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] fy8-12-L2-08 task b) — one paragraph of about 90 words; split the comparison and the explanation into two paragraphs.
+- [Minor] Mallivastaus c) — one block of about 150 words; split at "Säteilylaji tunnistetaan…".
+- [Minor] Vastaus — "Laatikko hyväksyy myös arvon 14,5 µeV" is interface talk inside a model answer; consider dropping it.
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- fy8-12-open-exercises-L2-1280-11, -12, -13 (task end, Annettu to Muunnokset; Sijoitus, Mallivastaus c/d; Vastaus, Järkevyys), captures regenerated for the current hash.
+- Round 1 defects are fixed: $24\,\text{h}$ is LaTeX, the comparison sentences are no longer cut by display boxes (chain after the sentence), and $h$ is "J s" everywhere. The $\mu\text{eV}$ chain, fractions and units render cleanly.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

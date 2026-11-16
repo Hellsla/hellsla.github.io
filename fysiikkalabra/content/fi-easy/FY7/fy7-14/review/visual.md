@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b6357eb2bbe3a6b7
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: afede84f73ce93f5
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md — two consecutive sentences begin "Siksi"; e.g. "Tämän vuoksi saippuakuplan yläosaan …".
+- none
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Exit ticket answer now "heijastaa hyvin vähän valoa ja näyttää tummalta tai lähes mustalta" / "reflects very little light and looks dark or almost black", consistent with the theory and summary; optical path difference wording unchanged.
-- Hash identical at start and end of this round.
+- batch delta review (fi-easy, 5d reflow, round 1): every aligned formula of the lesson part cropped from the current preview at 390 px and 1280 px with hints, feedback and solutions open and viewed on contact sheets; overflow measured at 360, 390 and 1280 px after the page's own fitting.

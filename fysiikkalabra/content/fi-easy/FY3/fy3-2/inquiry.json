@@ -27,12 +27,12 @@
       "choices": [
         {
           "text": "$10\\,\\text{N}$",
-          "feedback": "Massa ja paino menivät sekaisin. Paino on voima: $G = mg = 10\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 98\\,\\text{N}$."
+          "feedback": "Massa ja paino menivät sekaisin. Paino on voima: $$\\begin{aligned} G &= mg \\\\ &= 10\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &\\approx 98\\,\\text{N} \\end{aligned}$$."
         },
         {
           "text": "$98\\,\\text{N}$",
           "correct": true,
-          "feedback": "Oikein: $G = mg = 10\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 98\\,\\text{N}$. Tätä voimaa tarvitset kannattelemaan reppua."
+          "feedback": "Oikein: $$\\begin{aligned} G &= mg \\\\ &= 10\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &\\approx 98\\,\\text{N} \\end{aligned}$$. Tätä voimaa tarvitset kannattelemaan reppua."
         },
         {
           "text": "$9{,}8\\,\\text{kg}$",
@@ -114,7 +114,7 @@
       "justify": true,
       "choices": [
         {
-          "text": "Aino: $W = Fs = 98\\,\\text{N} \\cdot 20\\,\\text{m} \\approx 2{,}0\\,\\text{kJ}$, koska voima vaikuttaa koko matkan.",
+          "text": "Aino: $$\\begin{aligned} W &= Fs \\\\ &= 98\\,\\text{N} \\cdot 20\\,\\text{m} \\\\ &\\approx 2{,}0\\,\\text{kJ} \\end{aligned}$$, koska voima vaikuttaa koko matkan.",
           "feedback": "Kaava $W = Fs$ pätee vain, kun voima on liikkeen suuntainen. Kannatteleva voima osoittaa ylös, mutta reppu liikkuu sivulle. Palaa tähän Teoriatiivistelmässä."
         },
         {
@@ -132,7 +132,7 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Simulaatiossa laatikkoa vedetään vakiovoimalla. Säädä voimaa, matkaa ja aikaa. Paina *Vedä* ja seuraa, miten $(s,F)$-kuvaajan pinta-ala täyttyy. Arvot $W$ ja $P$ ovat simulaation laskemia mallin arvoja. Ne eivät ole mittauksia oikeasta laatikosta.",
+      "text": "Simulaatiossa laatikkoa vedetään vakiovoimalla. Säädä voimaa, matkaa ja aikaa. Paina *Vedä* ja seuraa, miten $(s,F)$-kuvaajan pinta-ala täyttyy. Simulaatio laskee arvot $W$ ja $P$ mallista. Ne eivät ole mittauksia oikeasta laatikosta.",
       "howto": "*Nopeus* muuttaa vain animaation tahtia. Laatikko kulkee matkan $s$ simuloidussa ajassa $t$. Arvot $W$ ja $P$ pysyvät samoina.",
       "model": "Laatikko liikkuu vakiovauhdilla, joten kitkavoima on yhtä suuri kuin vetävä voima. Vetävän voiman tekemä työ kasvattaa laatikon ja lattian sisäenergiaa. Pinnat siis lämpenevät. Simulaatio laskee arvot kaavoista $W = Fs$ ja $P = W/t$. Se näyttää mallin seuraukset eikä mittaa niitä."
     },
@@ -283,7 +283,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Opiskelija laskee jousiesimerkin näin: $W = Fs = 40\\,\\text{N} \\cdot 0{,}20\\,\\text{m} = 8{,}0\\,\\text{J}$. Missä on virhe?",
+      "prompt": "Opiskelija laskee jousiesimerkin näin: $$\\begin{aligned} W &= Fs \\\\ &= 40\\,\\text{N} \\cdot 0{,}20\\,\\text{m} \\\\ &= 8{,}0\\,\\text{J} \\end{aligned}$$. Missä on virhe?",
       "choices": [
         {
           "text": "Yksikön pitäisi olla W, ei J.",
@@ -370,7 +370,7 @@
         {
           "text": "Noin $98\\,\\text{J}$.",
           "correct": true,
-          "feedback": "Oikein. Nostossa voima on ylöspäin ja liike on ylöspäin, joten $W = G h = 98{,}1\\,\\text{N} \\cdot 1{,}0\\,\\text{m} \\approx 98\\,\\text{J}$. Vaakasuoralla kantamisella kannatteleva voima on pystysuora ja liike on vaakasuora. Voima on siis kohtisuorassa liikettä vastaan, eikä se tee työtä."
+          "feedback": "Oikein. Nostossa voima on ylöspäin ja liike on ylöspäin, joten $$\\begin{aligned} W &= G h \\\\ &= 98{,}1\\,\\text{N} \\cdot 1{,}0\\,\\text{m} \\\\ &\\approx 98\\,\\text{J} \\end{aligned}$$. Vaakasuoralla kantamisella kannatteleva voima on pystysuora ja liike on vaakasuora. Voima on siis kohtisuorassa liikettä vastaan, eikä se tee työtä."
         },
         {
           "text": "Noin $590\\,\\text{J}$.",
@@ -398,7 +398,7 @@
       "hints": [
         "Hahmottele kuvaaja: suorakulmio ja sen perään kolmio. Työ on näiden pinta-alojen summa.",
         "$W = W_1 + W_2 = F s_1 + \\tfrac{1}{2} F s_2$.",
-        "$W = 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} + \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m}$."
+        "$$\\begin{aligned} W &= 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} \\\\ &+ \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -411,7 +411,7 @@
         }
       ],
       "optional": true,
-      "solution": "**Annettu:** voima $F = 30\\,\\text{N}$ (liikkeen suuntainen) vakiona matkalla $s_1 = 4{,}0\\,\\text{m}$ (0–$4{,}0\\,\\text{m}$); sitten voima laskee tasaisesti nollaan matkalla $s_2 = 4{,}0\\,\\text{m}$ (4,0–$8{,}0\\,\\text{m}$)\n\n**Kysytty:** koko $8{,}0\\,\\text{m}$:n matkalla tehty työ $W$ jouleina\n\n**Periaate:** Voima muuttuu, joten kaava $W = F s$ ei käy koko matkalle. Työ on $(s,F)$-kuvaajan pinta-ala. Sen voi laskea osissa. Vakiovoiman osa on suorakulmio. Tasaisesti nollaan laskevan voiman osa on kolmio.\n\n**Kuvaajan lukeminen:** Kuvaajassa on ensin vaakasuora jana korkeudella $30\\,\\text{N}$ välillä $0\\ldots 4{,}0\\,\\text{m}$. Sen jatkona on suora jana, joka laskee nollaan välillä $4{,}0\\ldots 8{,}0\\,\\text{m}$. Suorakulmion korkeus on $30\\,\\text{N}$ ja leveys $4{,}0\\,\\text{m}$. Kolmion korkeus on $30\\,\\text{N}$ ja kanta $4{,}0\\,\\text{m}$.\n\n**Kaava:** $W = A_\\text{suorakulmio} + A_\\text{kolmio}$, joten\n\n$$W = F s_1 + \\tfrac{1}{2} F s_2$$\n\n**Muunnokset:** Voima on newtoneina ja matkat metreinä. Muunnoksia ei siis tarvita: $\\text{N}\\cdot\\text{m} = \\text{J}$.\n\n**Sijoitus:** $W = 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} + \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} = 120\\,\\text{J} + 60\\,\\text{J} = 180\\,\\text{J}$\n\n**Vastaus:** $180\\,\\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, kuten annetuissa arvoissa $30\\,\\text{N}$ ja $4{,}0\\,\\text{m}$.\n\n**Järkevyys:** Keskimääräinen voima on $\\tfrac{180\\,\\text{J}}{8{,}0\\,\\text{m}} = 22{,}5\\,\\text{N}$. Se on huippuarvon $30\\,\\text{N}$ ja nollan välissä. Työ on pienempi kuin $30\\,\\text{N} \\cdot 8{,}0\\,\\text{m} = 240\\,\\text{J}$. Työ on suurempi kuin pelkkä suorakulmio $120\\,\\text{J}$, koska voima ei ole nolla jälkimmäisellä matkalla."
+      "solution": "**Annettu:** voima $F = 30\\,\\text{N}$ (liikkeen suuntainen) vakiona matkalla $s_1 = 4{,}0\\,\\text{m}$ (0–$4{,}0\\,\\text{m}$); sitten voima laskee tasaisesti nollaan matkalla $s_2 = 4{,}0\\,\\text{m}$ (4,0–$8{,}0\\,\\text{m}$)\n\n**Kysytty:** koko $8{,}0\\,\\text{m}$:n matkalla tehty työ $W$ jouleina\n\n**Periaate:** Voima muuttuu, joten kaava $W = F s$ ei käy koko matkalle. Työ on $(s,F)$-kuvaajan pinta-ala. Sen voi laskea osissa. Vakiovoiman osa on suorakulmio. Tasaisesti nollaan laskevan voiman osa on kolmio.\n\n**Kuvaajan lukeminen:** Kuvaajassa on ensin vaakasuora jana korkeudella $30\\,\\text{N}$ välillä $0\\ldots 4{,}0\\,\\text{m}$. Sen jatkona on suora jana, joka laskee nollaan välillä $4{,}0\\ldots 8{,}0\\,\\text{m}$. Suorakulmion korkeus on $30\\,\\text{N}$ ja leveys $4{,}0\\,\\text{m}$. Kolmion korkeus on $30\\,\\text{N}$ ja kanta $4{,}0\\,\\text{m}$.\n\n**Kaava:** $W = A_\\text{suorakulmio} + A_\\text{kolmio}$, joten\n\n$$W = F s_1 + \\tfrac{1}{2} F s_2$$\n\n**Muunnokset:** Voima on newtoneina ja matkat metreinä. Muunnoksia ei siis tarvita: $\\text{N}\\cdot\\text{m} = \\text{J}$.\n\n**Sijoitus:** $$\\begin{aligned} W &= 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} \\\\ &+ \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4{,}0\\,\\text{m} \\\\ &= 120\\,\\text{J} + 60\\,\\text{J} \\\\ &= 180\\,\\text{J} \\end{aligned}$$\n\n**Vastaus:** $180\\,\\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, kuten annetuissa arvoissa $30\\,\\text{N}$ ja $4{,}0\\,\\text{m}$.\n\n**Järkevyys:** Keskimääräinen voima on $\\tfrac{180\\,\\text{J}}{8{,}0\\,\\text{m}} = 22{,}5\\,\\text{N}$. Se on huippuarvon $30\\,\\text{N}$ ja nollan välissä. Työ on pienempi kuin $30\\,\\text{N} \\cdot 8{,}0\\,\\text{m} = 240\\,\\text{J}$. Työ on suurempi kuin pelkkä suorakulmio $120\\,\\text{J}$, koska voima ei ole nolla jälkimmäisellä matkalla."
     },
     {
       "id": "check-3",

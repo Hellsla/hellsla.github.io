@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: dea12362e4d16611
-Round 1
+CONTENT-HASH: a4254015fd08611c
+SCOPE: delta added-exercise from 2492493ba54a8626 base 415cbc7c6bc3
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy8-9-L1-09 — the four graph options are small at 390 px (about 200 px wide, tick numbers tiny); the aria-labels carry the values — if easy, give the option graphs more width on phones.
+- [Minor] fy8-9-L2-08 Vastaus — task and Annettu call 30 a "tarkka arvo", yet Vastaus gives two figures because it is "noin 30 a"; state one reason (for pedagogy: precision of the answer box).
+- [Minor] fy8-9-L2-08 task — the data table stands after "Vastaa laatikkoon…" and just before the answer box; place it before parts a)–d).
+- [Minor] Vastaus — straight quotes "noin 30 a" and the line starts "On jäljellä"; use ”…” and "Jäljellä on".
 
 ## Checked
-- Own scratch script (preview built with build.py, 390 px, task card opened with its answer and solution): opened /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/fi-easy-fy8-9-L1-09.png (graph choice, four (t, A) graphs as options; Graph D feedback open; Answer and solution open, all of it read) .
-- Changed older tasks (text split into paragraphs or re-set): fi-easy-fy8-9-L3-01.png (top, text paragraphs, solution); opened the top 760 px of each in the contact montages /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-all-k7q2/m-fi-easy-0.png and m-fi-easy-3.png (solution parts below not opened for these).
-- Same checks by script: no horizontal scroll at 390 px, no KaTeX error nodes. The packet's own screenshot list was empty and was not used; answers.py and solutions.md read as source only.
+- fy8-9-open-exercises-L2-1280-10 (end of 9-16, task 9-17 text, table start), -11 (table end, answer box, Annettu to Sijoitus), -12 (Kohta a) to Järkevyys), captures regenerated for the current hash.
+- Round 1 defect fixed: no literal asterisks, the chapter name is in quotation marks. Maths, units, the exponent chain and layout are clean.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

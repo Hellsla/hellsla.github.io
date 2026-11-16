@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ae045ef3e021670a
-SCOPE: delta added-exercise from 99bf518cf2d541bd base 8f23aa7ae3bd
+CONTENT-HASH: 9b386c8f277354d7
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-11-L1-09 Periaate — "Jännite on suurin mahdollinen, kun E on yhtä suuri kuin läpilyöntikestävyys" repeats the sentence before it; one of the two is enough.
+- none
 
 ## Checked
-- fy6-11-open-exercises-1280-9.png (L1-09, shown as 11-9: task text, hint, answer box, solution rows, $\dfrac{\text{kV}}{\text{mm}}$ substitution, answer, Järkevyys) and -8 (the neighbouring task, to see the set reads as one). No figure in the task; nothing clipped; units and decimal commas in LaTeX.
+- All 1 proof sheet(s) of fi-easy-fy6-11-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
 
 ## Scores
-illustrations n/a (4) · typography 5 · Finnish 4 · accessibility 4
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

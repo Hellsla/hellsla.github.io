@@ -149,7 +149,7 @@
       "unit": "J/(kg·K)",
       "tolerance": 0.03,
       "data": {
-        "caption": "Nesteen lämpötila lämmityksen aikana (esimerkkiaineisto)",
+        "caption": "Nesteen lämpötila lämmityksen aikana",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T\\,({}^\\circ\\text{C})$"
@@ -194,7 +194,7 @@
       "unit": "J/(kg·K)",
       "tolerance": 0.03,
       "data": {
-        "caption": "Nesteiden lämpötilat lämmityksen aikana (esimerkkiaineisto)",
+        "caption": "Nesteiden lämpötilat lämmityksen aikana",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T_\\text{A}\\,({}^\\circ\\text{C})$",
@@ -283,6 +283,19 @@
       "answer": 69.3,
       "unit": "kJ",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-6-L2-10",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://yle.fi/a/3-5678966\" target=\"_blank\" rel=\"noopener\">Yle – Kuuma vesi jäätyy kylmää nopeammin</a> (luettu 16. marraskuuta 2026)\n\nTutustu Mpemba-ilmiötä käsittelevään artikkeliin. Artikkeli on julkaistu vuonna 2010.\n\na) Kuvaile artikkelissa esitetty ilmiö. Miksi havainto voi vaikuttaa ristiriitaiselta arkikokemuksen kanssa?\n\nb) Laske, kuinka suuren lämpömäärän $0{,}50\\,\\text{kg}$ vettä luovuttaa jäähtyessään lämpötilasta $80\\,{}^\\circ\\text{C}$ lämpötilaan $0\\,{}^\\circ\\text{C}$. Oleta, ettei vettä haihdu. Veden ominaislämpökapasiteetti on $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$.\n\nc) Artikkelissa ilmiötä selitetään muun muassa haihtumisella. Selitä, miten haihtuminen, astian ominaisuudet ja koeolosuhteet voivat vaikuttaa veden jäätymisaikaan.\n\nd) Suunnittele koe, jolla voitaisiin tutkia, millaisissa olosuhteissa kuuma vesi mahdollisesti jäätyy kylmää nopeammin. Kerro, mitkä suureet olisi mitattava ja mitkä tekijät pitäisi vakioida.\n\nVastauskenttään tulee kohdan b) tulos kilojouleina positiivisena lukuna.",
+      "kind": [
+        "data",
+        "experiment",
+        "reasoning"
+      ],
+      "answer": 170,
+      "unit": "kJ",
+      "tolerance": 0.02
     }
   ],
   "level3": [
@@ -323,7 +336,7 @@
       "unit": "W",
       "tolerance": 0.04,
       "data": {
-        "caption": "Veden lämpötila lämmityksen aikana (esimerkkiaineisto)",
+        "caption": "Veden lämpötila lämmityksen aikana",
         "columns": [
           "$t\\,(\\text{s})$",
           "$T\\,({}^\\circ\\text{C})$"
@@ -389,7 +402,7 @@
       "unit": "W/K",
       "tolerance": 0.03,
       "data": {
-        "caption": "Veden lämpötila jäähtymisen aikana (esimerkkiaineisto)",
+        "caption": "Veden lämpötila jäähtymisen aikana",
         "columns": [
           "$t\\,(\\text{min})$",
           "$T\\,({}^\\circ\\text{C})$"

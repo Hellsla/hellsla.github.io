@@ -28,15 +28,15 @@
         {
           "text": "$50\\,\\text{N}$, because perpendicular forces are the legs of a right-angled triangle.",
           "correct": true,
-          "feedback": "Correct. Perpendicular vectors form the legs of a right-angled triangle, and the sum is the hypotenuse: $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$. Magnetic fields are added together in this chapter in the same way."
+          "feedback": "Correct. Perpendicular vectors form the legs of a right-angled triangle, and the sum is the hypotenuse: $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$. Magnetic fields are added together in this chapter in the same way."
         },
         {
           "text": "$70\\,\\text{N}$, because the magnitudes of the forces are added.",
-          "feedback": "Only vectors in the same direction can be added as plain numbers. Perpendicular vectors are the legs of a right-angled triangle, so the sum is $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$."
+          "feedback": "Only vectors in the same direction can be added as plain numbers. Perpendicular vectors are the legs of a right-angled triangle, so the sum is $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$."
         },
         {
           "text": "$10\\,\\text{N}$, because the smaller force is subtracted from the greater.",
-          "feedback": "A difference would come from vectors in opposite directions. Perpendicular vectors are added with the Pythagorean theorem: $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$."
+          "feedback": "A difference would come from vectors in opposite directions. Perpendicular vectors are added with the Pythagorean theorem: $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$."
         }
       ]
     },
@@ -303,21 +303,21 @@
       "prompt": "At the compass the horizontal component of the Earth's field is $14\\,\\mu\\text{T}$ towards the north and the field of a magnet is $18\\,\\mu\\text{T}$ towards the east. A student calculated the total field like this: $B = 14\\,\\mu\\text{T} + 18\\,\\mu\\text{T} = 32\\,\\mu\\text{T}$. What is wrong with the calculation?",
       "choices": [
         {
-          "text": "Perpendicular fields are added as vectors: $B = \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$.",
+          "text": "Perpendicular fields are added as vectors: $$\\begin{aligned} B &= \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\\\ &\\approx 23\\,\\mu\\text{T} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Correct. The fields are vectors and perpendicular to each other, so they form the legs of a right-angled triangle. The total field is the hypotenuse $22.8\\,\\mu\\text{T}$, and it is smaller than the sum of the numerical values of the fields."
         },
         {
           "text": "The fields must be subtracted: $B = 18\\,\\mu\\text{T} - 14\\,\\mu\\text{T} = 4\\,\\mu\\text{T}$.",
-          "feedback": "A difference would come only from fields in opposite directions. The fields pointing north and east are perpendicular, so $B = \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$."
+          "feedback": "A difference would come only from fields in opposite directions. The fields pointing north and east are perpendicular, so $$\\begin{aligned} B &= \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\\\ &\\approx 23\\,\\mu\\text{T} \\end{aligned}$$."
         },
         {
           "text": "A compass feels only the stronger field, so $B = 18\\,\\mu\\text{T}$.",
-          "feedback": "The needle turns to point along the sum of both fields: it does not point straight east but about $52^\\circ$ from north towards east. The total field is $\\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$."
+          "feedback": "The needle turns to point along the sum of both fields: it does not point straight east but about $52^\\circ$ from north towards east. The total field is $$\\begin{aligned} &\\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\\\ &\\approx 23\\,\\mu\\text{T} \\end{aligned}$$."
         },
         {
           "text": "There is no error in the calculation, because both fields are in microtesla.",
-          "feedback": "The same unit is not enough: only fields in the same direction can be added as plain numbers. For perpendicular fields $B = \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$."
+          "feedback": "The same unit is not enough: only fields in the same direction can be added as plain numbers. For perpendicular fields $$\\begin{aligned} B &= \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\\\ &\\approx 23\\,\\mu\\text{T} \\end{aligned}$$."
         }
       ]
     },

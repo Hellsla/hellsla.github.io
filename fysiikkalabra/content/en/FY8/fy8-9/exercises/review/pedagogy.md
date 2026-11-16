@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8f26b755fc382aac
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: c0842f06ba77912b
+SCOPE: delta added-exercise from 1931c445d9c3b481 base 14db61fd9550
 
 ## Blocking
+
 (none)
 
 ## Polish
+
 (none)
 
 ## Checked
-- fy8-9-L1-09: Level 1 graph choice: the four option figures are needed to answer, share axes and curve style, descriptions give the plotted data without saying which is right; each distractor represents a recognisable misconception and its feedback repairs it.
-- Level and kind identical to fi; a mixture of levels per the rubric remains.
-- English text matches fi in every number; decimal point used in en; wording natural.
-- Solution is followable step by step and mirrors fi.
+
+- Only change: the chapter title is now in quotation marks instead of markdown italics; wording and task demand unchanged, and the plain quotes read better on the page and for screen readers.
+- Method: delta, diff only.

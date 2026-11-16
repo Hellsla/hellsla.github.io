@@ -142,7 +142,7 @@
    "unit": "%",
    "tolerance": 0.03,
    "data": {
-    "caption": "Vaunujen nopeudet törmäyksen molemmin puolin (esimerkkiaineisto)",
+    "caption": "Vaunujen nopeudet törmäyksen molemmin puolin",
     "columns": [
      "Koe",
      "$v_\\text{A}\\,(\\text{m/s})$",
@@ -187,7 +187,7 @@
    "unit": "%",
    "tolerance": 0.05,
    "data": {
-    "caption": "Vaunujen paikat (esimerkkiaineisto)",
+    "caption": "Vaunujen paikat",
     "columns": [
      "$t\\,(\\text{s})$",
      "$x_\\text{A}\\,(\\text{m})$",
@@ -274,6 +274,19 @@
    "answer": 0.3,
    "unit": "kg",
    "tolerance": 0.02
+  },
+  {
+   "id": "fy4-10-L2-10",
+   "level": 2,
+   "text": "PhET-simulaatiossa Törmäyslaboratorio (Collision Lab) kaksi palloa törmää toisiinsa suoralla radalla. Simulaatio on tietokoneella tehty malli törmäyksestä. Avaa simulaatio <a href=\"https://phet.colorado.edu/fi/simulations/collision-lab\" target=\"_blank\" rel=\"noopener\">PhET: Törmäyslaboratorio (Collision Lab)</a> (luettu 16. marraskuuta 2026). Valitse näkymä Tutki 1D. Valitse näkyviin Arvot, Liike-energia ja Lisää tietoja. Poista valinta Seinä. Silloin pallot eivät kimpoa reunoista. Positiivinen suunta on oikealle.\n\na) Valitse palloille massat ja alkunopeudet. Voit käyttää simulaation oletusarvoja eli arvoja, jotka simulaatiossa on valmiina. Aseta elastisuus arvoon $100\\,\\%$. Kirjaa pallojen nopeudet etumerkkeineen ennen törmäystä ja sen jälkeen.\n\nb) Laske systeemin kokonaisliikemäärä ja kokonaisliike-energia ennen törmäystä ja sen jälkeen. Systeemi tarkoittaa tässä molempia palloja yhdessä. Vertaa tuloksia arvoihin, jotka simulaatio näyttää.\n\nc) Toista mittaus ja laskut samoilla alkuarvoilla, kun elastisuus on $50\\,\\%$ ja $0\\,\\%$. Miten elastisuus vaikuttaa liikemäärän ja liike-energian säilymiseen?\n\nd) Selitä tulostesi avulla, miksi systeemin liikemäärä säilyy, vaikka sen liike-energia pienenee.",
+   "kind": [
+    "data",
+    "model",
+    "reasoning"
+   ],
+   "answer": "Kokonaisliikemäärä on sama ennen törmäystä ja sen jälkeen jokaisella elastisuuden arvolla. Liike-energia säilyy vain, kun elastisuus on $100\\,\\%$ (kimmoisa törmäys). Mitä pienempi elastisuus on, sitä enemmän liike-energia pienenee. Oletusarvoilla liike-energia on törmäyksen jälkeen $0{,}44\\,\\text{J}$, $0{,}12\\,\\text{J}$ ja $0{,}02\\,\\text{J}$, kun elastisuus on $100\\,\\%$, $50\\,\\%$ ja $0\\,\\%$.",
+   "unit": "",
+   "tolerance": 0.02
   }
  ],
  "level3": [
@@ -325,7 +338,7 @@
    "unit": "N",
    "tolerance": 0.05,
    "data": {
-    "caption": "Yhdessä liukuvien vaunujen nopeus (esimerkkiaineisto)",
+    "caption": "Yhdessä liukuvien vaunujen nopeus",
     "columns": [
      "$t\\,(\\text{s})$",
      "$v\\,(\\text{m/s})$"

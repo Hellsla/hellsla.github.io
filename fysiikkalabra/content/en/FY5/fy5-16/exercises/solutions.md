@@ -260,3 +260,58 @@ Part c: the dose is $\dfrac{3.0\,\text{h}}{1.59\,\text{h}} = 1.89$, that is, $19
 **Substitution:** $L_\text{ear} = 105\,\text{dB} - 12\,\text{dB} = 93\,\text{dB}$, $n = \dfrac{93\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{8}{3}$, $t_\text{v} = \dfrac{480\,\text{min}}{2^{8/3}} = \dfrac{480\,\text{min}}{6.350} = 75.6\,\text{min}$
 **Answer:** $76\,\text{min}$. The level is read from the figure as a whole decibel and the rule is an estimate, so two significant figures are enough.
 **Reasonableness:** The level at the ear is $8\,\text{dB}$ above the reference, between $6\,\text{dB}$ ($120\,\text{min}$) and $9\,\text{dB}$ ($60\,\text{min}$), so about $76\,\text{min}$ is right. Without earplugs the time would be only $4.7\,\text{min}$, so the earplugs lengthen it about sixteenfold.
+
+## fy5-16-L2-10
+**Given:** levels $L_1 = 85\,\text{dB}$ and $L_2 = 94\,\text{dB}$, time $t_1 = 8\,\text{h}$; in part b) a change of level of $3\,\text{dB}$ or $10\,\text{dB}$.
+
+From the source (Työterveyslaitos, *Melu*, read on 15 November 2026): the lower action value $80\,\text{dB(A)}$, the upper action value $85\,\text{dB(A)}$ and the limit value $87\,\text{dB(A)}$ of the noise regulation, and the statement that the energy dose of noise is always determined for a calculated working day of eight hours. In the calculations the unit is written briefly as dB.
+**Find:** a) why the scale is logarithmic; b) the ratio of the intensities $\dfrac{I_2}{I_1}$ when the level rises by $3\,\text{dB}$ or $10\,\text{dB}$; c) a comparison of the levels and the time $t_2$ in hours at the level $L_2$; d) an evaluation of the claim
+**Principle:** The intensity level is defined with the logarithm of the intensity (chapter *Intensity and the decibel scale*), so the difference of two levels gives the ratio of the intensities. The intensity $I$ is power per area, so in a time $t$ the ear receives the energy $It$ per area. According to the source the exposure is assessed as an energy dose, so two exposures are equal when the product $It$ is the same.
+**Formula:** The definition of the level is $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$. In the difference the intensity of the threshold of hearing $I_0$ cancels:
+$$\begin{aligned}
+L_2 - L_1 &= 10\,\text{dB} \cdot \lg \frac{I_2}{I_1} \\
+\frac{I_2}{I_1} &= 10^{\,(L_2 - L_1)/(10\,\text{dB})}
+\end{aligned}$$
+The same energy dose: $I_1 t_1 = I_2 t_2$, from which
+$$\begin{aligned}
+t_2 &= t_1 \cdot \frac{I_1}{I_2} \\
+&= \frac{t_1}{10^{\,(L_2 - L_1)/(10\,\text{dB})}}
+\end{aligned}$$
+**Conversions:** Not needed: the decibels cancel in the exponent, and the time comes out in hours like $t_1$.
+**Substitution:**
+Part b, when the level rises by $3\,\text{dB}$:
+$$\begin{aligned}
+\frac{I_2}{I_1} &= 10^{\,3\,\text{dB}/(10\,\text{dB})} \\
+&= 10^{\,0.3} \\
+&\approx 1.995
+\end{aligned}$$
+When the level rises by $10\,\text{dB}$, the ratio is $\dfrac{I_2}{I_1} = 10^{\,1} = 10$.
+Part c:
+$$\begin{aligned}
+\frac{I_2}{I_1} &= 10^{\,(94\,\text{dB} - 85\,\text{dB})/(10\,\text{dB})} \\
+&= 10^{\,0.9} \\
+&\approx 7.943 \\
+t_2 &= \frac{8\,\text{h}}{7.943} \\
+&\approx 1.007\,\text{h}
+\end{aligned}$$
+**Answer:** $t_2 \approx 1.0\,\text{h}$ is the time of part c) with two significant figures, because the levels are given in whole decibels.
+
+a) The level is not proportional to the intensity $I$ but to its logarithm: an equal increase of the level always corresponds to an equal factor in the intensity. That is why the intensities of the range of hearing, which grow by a factor of about $10^{12}$ from the threshold of hearing to the threshold of pain, fit in the range $0$–$120\,\text{dB}$.
+
+b) An increase of $3\,\text{dB}$ about doubles the intensity (a factor of $2.0$), and an increase of $10\,\text{dB}$ makes it tenfold.
+
+c) At the level $85\,\text{dB}$ the employer must, according to the source, draw up a noise-control programme, hearing protectors must be used and the areas where such exposure can occur must be marked.
+
+The three values of the table are exposure levels of an eight-hour working day, because the energy dose of noise is always determined for a working day of eight hours. If the level $94\,\text{dB}$ lasts the whole working day, the daily exposure level is $94\,\text{dB(A)}$, that is $7\,\text{dB}$ above the limit value $87\,\text{dB(A)}$. The limit value is assessed inside the hearing protector, so the protectors would then have to reduce the level reaching the ear by at least $7\,\text{dB}$.
+
+At the level $94\,\text{dB}$ the intensity is about $7.9$ times as large, so the same energy dose as in eight hours at $85\,\text{dB}$ accumulates in only $t_2 \approx 1.0\,\text{h}$. If the rest of the working day is quiet, one hour at $94\,\text{dB}$ therefore corresponds to an eight-hour exposure level of $85\,\text{dB(A)}$. That equals the upper action value, so protectors are compulsory, but it stays below the limit value $87\,\text{dB(A)}$.
+
+d) The claim does not hold. On a logarithmic scale $3\,\text{dB}$ doubles the energy that reaches the ear and halves the time in which the same dose accumulates, and $9\,\text{dB}$ shortens the time from eight hours to one.
+
+The three reference values of the source lie within $7\,\text{dB}$, and still they separate informing the workers, compulsory hearing protectors and a level that must not be exceeded.
+
+The claim sounds plausible because a change of $3\,\text{dB}$ sounds small to the ear. The strain on hearing, however, depends on the energy and not on how the sound is perceived.
+
+**Reasonableness:** The rule of thumb of the chapter gives the same: $9\,\text{dB}$ is three steps of $3\,\text{dB}$, so the time is halved three times, $8\,\text{h} : 2^3 = 1\,\text{h}$. The small difference from the result $1.007\,\text{h}$ arises because $3\,\text{dB}$ corresponds to the factor $1.995$ and not exactly two.
+
+Limits of the model: the time $1.0\,\text{h}$ is a calculated reference value and not a safe time, because people's hearing withstands noise differently. The model does not cover impulsive noise either: according to the source, in impulsive noise even a single loud enough noise peak can be dangerous to hearing. An error of only $1\,\text{dB}$ in a level changes the intensity by about a quarter, so a more precise result would not be justified.

@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2a10dc3b6c3bbf38
+CONTENT-HASH: 39ffe49287bcd1f8
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- [Minor] exercises.json (tiles fy4-2 #4, #13) — the full stop / comma after the lifted formula starts the next line (". Syvyys on", ", kun suunta…"); put it inside the formula's last row.
+- [Minor] solutions.md — some rows start with a lone `·` factor (tiles #5, #6, #15); readable, but a break at + or = is cleaner.
 
 ## Checked
-- Selitys merkitsevistä numeroista on selkeä ja johdonmukainen. Text-only change in solutions.md/exercises.json judged from the diff in the packet; the changed line was not opened in a capture, and the layout was not re-inspected.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.

@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: cb845d98a8762a90
-SCOPE: delta added-exercise from 4161a9356eed0c2b base 8f23aa7ae3bd
-Round 1
-Mode: delta (added exercise fy6-11-L1-09, shown as 11-9)
+CONTENT-HASH: fc516aec97261574
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-11-L1-09 Given/Answer — the MAFY table name is given in Finnish in plain parentheses in the solution but in italics in the hint; use italics in both, and say once that the table's name is Finnish.
+- none
 
 ## Checked
-- fy6-11-open-exercises-1280-8.png (task 11-9 statement and open hint, flow after 11-8) and -9.png (full solution).
-- Typography: $E = U : d$, fraction, kV/mm units upright with thin space, decimal point in en, chains as aligned rows, answer chip, nothing clipped; no figure in this task.
+- round 3, delta review (reflow): proof sheets en-fy6-11-exercises-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
 
 ## Scores
-illustrations n/a (4) · typography 5 · English 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

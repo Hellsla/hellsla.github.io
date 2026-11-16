@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 282eb61fc0b60703
+CONTENT-HASH: 28a3b421e466f8b3
+SCOPE: delta added-exercise from 9cc21f77dd6113db base 71f5784fca44
 
 ## Blocking
 None.
 
 ## Polish
-- L1-09 and L2-09 are good level fits. Optional: L1-09 solution could say why 4 % tolerance (atm 101325 vs 1e5 rounding).
+- fy3-11-L2-10 d) — the claim to evaluate is good; the model answer could also name that Q2 comes from the environment at lower temperature (second law not in scope, so only a hint).
+- a) is long to answer: two sub-questions (meaning, difference from hyötysuhde, why "300 %" is imprecise); keep, but the solution paragraph is dense; split into three sentences with bullets.
+- The task text states the COP = ε identity and the 300 % quote itself, so the student does not need to find them; fine, but c) then relies wholly on the PDF (-25 °C value 1-2 only in the solution).
 
 ## Checked
-Changed symbols (P_a/P_o, Q1) and the added exercises read in full: solutions follow the staged format, symbols are defined where used, added L1-09 (lookup) and L2-09 (figure) match their levels and chapter.
+- Brief section 6 walked: source needed for a) and c), computation b), critical claim d) (energy conservation, with Q2 + W = Q1); progression logical.
+- Q1 = 4,0 · 2,5 = 10 kWh, Q2 = 7,5 kWh: correct; answer field 7,5 kWh.
+- Terms: lämpökerroin ε, hyötysuhde distinguished correctly; PDF link returns 200 and is dated 2026.
+- No unsupported prerequisites; L2 level; no repeat.

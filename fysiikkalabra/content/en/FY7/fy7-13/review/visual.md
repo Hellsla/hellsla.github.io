@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 629dab689ddd9d59
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: d3ec9ced68ab9e4a
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md — the laser-measurement paragraph is about 141 words; optionally make the safety sentences ("School experiments use a low-power laser …") a paragraph of their own.
+- [Minor] Example 2 task: the student's quotation opens with a lone `"` at the end of the line before the displayed `d = 1 mm : 600 …`; drop the quotation marks around displayed calculations ("A student calculates …:").
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Round-1 blocker fixed: opening paragraph split at "Light is electromagnetic wave motion"; both parts under the limit.
-- Hash identical at start and end of this round.
+- batch delta review: queue 5d reflow. The standard set has no phone captures of opened states, so every re-broken formula (18 rendered blocks) was captured from the built page (preview/en/fy7-13.html, the build of the shots stamp) at 390 px and 1280 px with every box, hint, solution and choice feedback forced open, and each capture was read; box overflow measured at 360, 375, 390, 412 and 1280 px: none clipped or scrolled. Row starts checked against the 5d rule; wide-screen joining (join_wide) seen at 1280 px. Figures and the formula-name / teacher-figure categories were not re-judged.

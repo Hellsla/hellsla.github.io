@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 30bb671b683987a1
-SCOPE: delta added-exercise from 51f6a10c66298771 base 8f23aa7ae3bd
+CONTENT-HASH: ccb98e9a17ea30ff
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Delta: only the added exercise fy6-9-L2-08 judged; the rest unchanged per `reviews.py added_exercises`.
-- Physics: charge as the area under a piecewise-constant I(t) graph, Q = sum I_i t_i; stored energy W = UQ with the nominal voltage, stated as the task's assumption (consistent with the glossary's battery capacity/energy definition).
-- Recomputed independently: Q = 2.0·1.0 + 1.5·2.0 + 0.5·1.0 = 5.5 Ah, W = 61.05 Wh; answers.py prints 61.05; a student's 61 Wh is 0.08 % off, inside tolerance 0.02.
-- Figure ex-current2 (figures.py): segments 2.0 A on 0–1.0 h, 1.5 A on 1.0–3.0 h, 0.5 A on 3.0–4.0 h, then zero; grid 0.5 h / 0.5 A; matches the solution's readings and the text description; the charge is not written in the figure.
-- Solution complete: given/asked, principle with reason, symbolic formula before numbers, conversion (V·Ah = Wh), substitution with units, rounding reason, reasonableness (mean current 1.4 A between extremes; 61 Wh realistic for a laptop battery).
-- Unit Wh and scope (FY6 batteries and charging circuit) correct.
+- The new task fy6-9-L2-09 translates the fixed Finnish version (round 2): W = UQ = 504 Wh = 1,8 MJ and t = UQ/P = 4,2 h. The answer is 4,2 with tolerance 0,02, and answers.py is shared.
+- Nothing specific is attributed to the unverified Tukes page. The instructions are the student's own choice, the examples are "typical charging instructions" with "check the wording in the source material", and each reason is marked as the solution's own physics. The cold-battery reason is explicitly not claimed as the source's.
+- c): 120 W is named as the power into the battery and the loss is R_sI², with only EI stored. The falling current through the rising E and the Li-ion charger taper are kept. The charger's own losses are a separate remark. This is consistent with b).
+- d) physics: a large I from a small R_s, R_sI² quadrupling when I doubles, and an internal short turning the stored 1,8 MJ into internal energy. All are correct, and the safety wording is not unsafe.
+- Notation U_ch, E, R, R_s matches the rest of the English set.
+- Reflowed chains: same numbers, signs and units in the same order.
+- Hash read at start and end: unchanged.

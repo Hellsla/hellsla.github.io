@@ -128,10 +128,10 @@
       "id": "fy3-16-L2-01",
       "level": 2,
       "core": true,
-      "text": "The total area of the walls of a cool bag is $0.50\\,\\text{m}^2$ and the U-value is $2.0\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. It is $25\\,{}^\\circ\\text{C}$ outside, and the temperature of the ice pack stays at $0\\,{}^\\circ\\text{C}$ as long as there is ice. How large must the mass of the ice pack be for the ice to last for 6.0 hours? Assume that the bag contains only ice.",
-      "answer": 1.6,
+      "text": "The total area of the walls of a cool bag is $0.50\\,\\text{m}^2$ and the U-value is $2.0\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. It is $25\\,{}^\\circ\\text{C}$ outside, and the temperature of the ice pack stays at $0\\,{}^\\circ\\text{C}$ as long as there is ice. How large must the mass of the ice pack be for the ice to last for 6.0 hours? Assume that the bag contains only ice. Round your answer up so that the ice is sure to last.",
+      "answer": 1.7,
       "unit": "kg",
-      "tolerance": 0.02
+      "tolerance": 0.07
     },
     {
       "id": "fy3-16-L2-02",
@@ -235,7 +235,7 @@
     {
       "id": "fy3-16-L2-07",
       "level": 2,
-      "text": "A student calculates how long $0.80\\,\\text{kg}$ of ice lasts in a cool bag. The total area of the walls of the bag is $0.70\\,\\text{m}^2$ and the U-value is $1.4\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$, the ice is at $0\\,{}^\\circ\\text{C}$, and it is $26\\,{}^\\circ\\text{C}$ outside. The bag contains only ice, and the latent heat of fusion of ice is $s = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}}$. The student's solution is this:\n\n“Temperatures must be converted to kelvins, so $\\Delta T = 26 + 273 = 299\\,\\text{K}$. The power is $P = UA\\Delta T = 0.98 \\cdot 299\\,\\text{W} \\approx 293\\,\\text{W}$ and the time is $t = \\dfrac{s\\,m}{P} \\approx 910\\,\\text{s} \\approx 0.25\\,\\text{h}$.”\n\na) What is wrong in the student's solution?\n\nb) Calculate correctly how long the ice lasts, in hours.\n\nGive the result of part b) in the answer box.",
+      "text": "A student calculates how long $0.80\\,\\text{kg}$ of ice lasts in a cool bag. The total area of the walls of the bag is $0.70\\,\\text{m}^2$ and the U-value is $1.4\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$, the ice is at $0\\,{}^\\circ\\text{C}$, and it is $26\\,{}^\\circ\\text{C}$ outside. The bag contains only ice, and the latent heat of fusion of ice is $s = 334\\,\\tfrac{\\text{kJ}}{\\text{kg}}$. The student's solution is this:\n\n“Temperatures must be converted to kelvins, so $\\Delta T = 26 + 273 = 299\\,\\text{K}$. The power is $$\\begin{aligned} P &= UA\\Delta T \\\\ &= 0.98 \\cdot 299\\,\\text{W} \\\\ &\\approx 293\\,\\text{W} \\end{aligned}$$ and the time is $t = \\dfrac{s\\,m}{P} \\approx 910\\,\\text{s} \\approx 0.25\\,\\text{h}$.”\n\na) What is wrong in the student's solution?\n\nb) Calculate correctly how long the ice lasts, in hours.\n\nGive the result of part b) in the answer box.",
       "kind": [
         "error"
       ],
@@ -313,10 +313,10 @@
     {
       "id": "fy3-16-L3-03",
       "level": 3,
-      "text": "The total area of the walls of a cool bag is $0.50\\,\\text{m}^2$ and the U-value is $1.5\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. $0.50\\,\\text{kg}$ of drinks at $24\\,{}^\\circ\\text{C}$, with a specific heat capacity equal to that of water, $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, is packed into the bag, along with an ice pack taken from the freezer at $-10\\,{}^\\circ\\text{C}$ ($c_\\text{ice} = 2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$).\n\nIt is $30\\,{}^\\circ\\text{C}$ outside.\n\nThe ice must last for 6.0 hours.\n\nAssume that the drinks cool to $0\\,{}^\\circ\\text{C}$ at once, that the ice first warms to $0\\,{}^\\circ\\text{C}$ and then melts, and that the same power comes through the wall all the time as if the inside were at $0\\,{}^\\circ\\text{C}$.\n\nWhat is the smallest mass the ice pack must have? Give your answer in kilograms.",
-      "answer": 1.5,
+      "text": "The total area of the walls of a cool bag is $0.50\\,\\text{m}^2$ and the U-value is $1.5\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. $0.50\\,\\text{kg}$ of drinks at $24\\,{}^\\circ\\text{C}$, with a specific heat capacity equal to that of water, $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$, is packed into the bag, along with an ice pack taken from the freezer at $-10\\,{}^\\circ\\text{C}$ ($c_\\text{ice} = 2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$).\n\nIt is $30\\,{}^\\circ\\text{C}$ outside.\n\nThe ice must last for 6.0 hours.\n\nAssume that the drinks cool to $0\\,{}^\\circ\\text{C}$ at once, that the ice first warms to $0\\,{}^\\circ\\text{C}$ and then melts, and that the same power comes through the wall all the time as if the inside were at $0\\,{}^\\circ\\text{C}$.\n\nWhat is the smallest mass the ice pack must have? Round your answer up so that the ice is sure to last, and give it in kilograms.",
+      "answer": 1.6,
       "unit": "kg",
-      "tolerance": 0.02
+      "tolerance": 0.07
     },
     {
       "id": "fy3-16-L3-04",

@@ -1,19 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 811adecc5e47049e
-Mode: delta
-Round: 1
+CONTENT-HASH: e622704b652606af
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy8-3-L2-08 — inline \tfrac fractions (13.6 eV over n^2, hc over E_u-E_l) are small at 390 px in the task and feedback — set them as \frac in display or keep as is.
+- [Minor] fy8-3-L2-09 solution, Formula — the rendered formula block starts with $\lambda = \lambda_\text{Å} \cdot 0.1\,\tfrac{\text{nm}}{\text{Å}}$, then a separate boxed pair; reads slightly fragmented — put the three formulas as one aligned group.
 
 ## Checked
-- Own scratch script, 390 px, every feedback and solution open: captures /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/en-fy8-3-fy8-3-L2-08-0.png, -1.png, -2.png (all three tiles, new task fy8-3-L2-08 read in full).
-- Changed existing tasks L3-01 and L3-02 at 390 px: /tmp/claude-0/-home-user/8428206f-ad40-5db7-ab2a-1cd2cf16a7b0/scratchpad/visual-fy8-ab12/oldsheet-en.png (task heads only: the new paragraph breaks read situation first, question last, units and decimal sign correct).
-- Standard captures review/shots/ were absent for this hash (packet: STALE or MISSING), so the scratch captures above are what I judged; not opened: any figure of the lesson itself (exercises-only review).
-- Text of the new task: situation first, question last, LaTeX units with thin space, decimal point correct; feedback and answer boxes open inside the card without horizontal overflow.
+- Captures fy8-3-open-exercises-L2-1280-12 (task 3-17 text with source link, parts a–d, answer box), -13 and -14 (whole solution). Fractions, Å, arrows 3 → 2, units, decimal point all render cleanly; no clipping. Removed "(example data)" in the captions of other exercises is wording only; checked that they read well. Delta: only the added exercise and caption wording; no 390 px capture of exercises exists.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

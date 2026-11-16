@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 734ea9a4523590e2
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: f447cdfb0ba35ecd
 
 ## Blocking
 - none
@@ -9,4 +8,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Diff only: figure label V = V_2 - V_1 (V_1, V_2 are labelled in the same figure; w widened, no overlap risk by source), 'lukemien erotus' in alt text, 'satoja tonneja' (675 000 kg = hundreds of tonnes, correct), worked-example reasonableness wording, third-mistake rewrite (single weighing vs graph slope, consistent in fi/en/fi-easy), iceberg alt text. Translations match the Finnish fixes.
+batch delta review: the single feedback change ("noin 2,7 kertaa niin tiheää kuin vesi") fixes an awkward genitive form and states the comparison base (water); the feedback still repairs the misconception with an order-of-magnitude estimate (250 cm3 of water = 250 g); consistent with the solution text.

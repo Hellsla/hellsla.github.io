@@ -264,5 +264,5 @@ Many people think that a high power means high energy consumption. Power only te
 ## Summary
 - Power tells how fast energy is transformed or transferred: $P = \tfrac{\Delta E}{\Delta t}$. The unit is the watt, $1\,\text{W} = 1\,\text{J/s}$.
 - At steady power $E = P\,t$ and $t = E : P$. In an energy–time graph the slope of the line is the power.
-- $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3.6\,\text{MJ}$. The kilowatt-hour is a unit of energy, and an electricity bill is the energy in kWh times the unit price.
+- $$ \begin{aligned} 1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\ &= 3.6\,\text{MJ} \end{aligned} $$. The kilowatt-hour is a unit of energy, and an electricity bill is the energy in kWh times the unit price.
 - A high power for a short time and a low power for a long time can use the same amount of energy; standby consumes energy all the time.

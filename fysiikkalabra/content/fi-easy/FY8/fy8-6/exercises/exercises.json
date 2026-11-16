@@ -118,7 +118,7 @@
     {
       "id": "fy8-6-L2-04",
       "level": 2,
-      "text": "Valkoisessa LEDissä on sininen LED, jonka fotonien aallonpituus on $450\\,\\text{nm}$. Sitä peittää loisteaine. Loisteaine absorboi sinisen fotonin ja säteilee fluoresenssina keltaisen fotonin, jonka aallonpituus on $560\\,\\text{nm}$.\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\nKuinka paljon energiaa loisteaineeseen jää lämmöksi yhtä fotonia kohti? Anna vastaus elektronivoltteina.",
+      "text": "Valkoisessa LEDissä on sininen LED, jonka fotonien aallonpituus on $450\\,\\text{nm}$. Sitä peittää loisteaine. Loisteaine absorboi sinisen fotonin ja säteilee fluoresenssina keltaisen fotonin, jonka aallonpituus on $560\\,\\text{nm}$.\n\nKäytä arvoja $h = 6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2{,}998 \\cdot 10^8\\,\\text{m/s}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.\n\nKuinka paljon energiaa loisteaineeseen jää sisäenergiaksi yhtä fotonia kohti? Anna vastaus elektronivoltteina.",
       "answer": 0.541,
       "unit": "eV",
       "tolerance": 0.02
@@ -136,7 +136,7 @@
       "unit": "V",
       "tolerance": 0.03,
       "data": {
-        "caption": "Punaisen LEDin virta jännitteen funktiona (esimerkkiaineisto)",
+        "caption": "Punaisen LEDin virta jännitteen funktiona",
         "columns": [
           "$U\\,(\\text{V})$",
           "$I\\,(\\text{mA})$"
@@ -197,7 +197,7 @@
       "unit": "%",
       "tolerance": 0.03,
       "data": {
-        "caption": "Kynnysjännite eri lukutavoilla (esimerkkiaineisto)",
+        "caption": "Kynnysjännite eri lukutavoilla",
         "columns": [
           "Opiskelija",
           "$U_\\text{k}\\,(\\text{V})$"
@@ -231,7 +231,7 @@
       "unit": "eV",
       "tolerance": 0.03,
       "data": {
-        "caption": "Punaisen LEDin spektri (esimerkkiaineisto)",
+        "caption": "Punaisen LEDin spektri",
         "columns": [
           "$\\lambda\\,(\\text{nm})$",
           "$I_\\text{rel}$"
@@ -297,7 +297,7 @@
       "unit": "",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kynnysjännitteet (esimerkkiaineisto)",
+        "caption": "Kynnysjännitteet",
         "columns": [
           "LED",
           "$f\\,(10^{14}\\,\\text{Hz})$",
@@ -391,7 +391,7 @@
       "unit": "J s",
       "tolerance": 0.03,
       "data": {
-        "caption": "LEDien kynnysjännitteet, kun mittarin nollapiste on pielessä (esimerkkiaineisto)",
+        "caption": "LEDien kynnysjännitteet, kun mittarin nollapiste on pielessä",
         "columns": [
           "Väri",
           "$\\lambda\\,(\\text{nm})$",

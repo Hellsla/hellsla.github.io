@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a3e2059181de8338
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (7bbe7f3465dd6d42).
+CONTENT-HASH: 7ca3c185282b2261
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none)
+- (none)
 
 ## Checked
-- Opened fy9-aallot-fi-360.png (chart unchanged); the diff is only teacher.md branch-to-row wording, which reads correctly.
+- Hunk `sovella/solutions.md` Yleisiä virheitä, a-kohta (taso → intensiteetti): the sentence reads correctly and now names the quantity that the mistaken proportionality concerns; $3\,\text{dB}$ in LaTeX.
+- Captures opened: `fy9-aallot-stage-exercises-390-30.png`, `fy9-aallot-stage-exercises-1280-23.png`: the list item wraps cleanly, nothing clipped, the rubric under it unchanged.
+- The changed places were found in the built `fi` page by their position in each stage; the contact sheets were not used for triage. No figure and no added task in this unit's diff; the rest stands under the previous PASS.

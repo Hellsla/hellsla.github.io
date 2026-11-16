@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: e8571d0ddd50133c
-SCOPE: delta added-exercise from 717b427c7d574c97 base 81db4a6fd727
+CONTENT-HASH: 5f49adfd0e5ee772
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (fy3-16-L1-09, Periaate) — "Lämpö otetaan keittolevyltä, joten energia säilyy" draws the wrong conclusion from the right fact. Better: "Energia säilyy: höyrystymiseen sitoutuva lämpö tulee keittolevyltä."
-- exercises/solutions.md (fy3-16-L2-09, Järkevyys) — "Oletus häviöttömyydestä tekee todellisesta arvosta hieman pienemmän" is still ambiguous (carried over). Meant: with losses, less than $Pt$ reaches the block, so the true $c$ is a little below the computed 900 J/(kg·K). Say that.
+- exercises.json fy3-16-L2-01, fy3-16-L3-03 — with tolerance 0.07 the check accepts 1.58–1.82 kg (key 1.7) and 1.49–1.71 kg (key 1.6), so the value one step above the key (1.8 kg; 1.7 kg) also passes — follows from the teacher's both-directions decision; no change needed.
 
 ## Checked
-- L1-09 (new situation, boiling pan): water already at 100 °C, so $Q = rm$ alone applies; $2260 \cdot 0{,}30 = 678\,\text{kJ} \approx 680\,\text{kJ}$; MAFY 2260 kJ/kg as in docs/mafy-arvot.tsv (VERIFIED); answers.py agrees. The check against heating the same water 0→100 °C (126 kJ, ratio 5,4) is right.
-- L2-09: $c = Pt/(m\Delta T) = 400 \cdot 180/(2{,}0 \cdot 40) = 900\,\text{J/(kg·K)}$; the lossless assumption is stated in the task; both end points are on grid crossings of `fy3-6/heating-line`.
-- The same figure in the chapter *Aineen lämpeneminen ja jäähtyminen* (0,50 kg, 100 W) also gives 900 J/(kg·K), so the two chapters do not contradict each other.
-- L2-10: $t = Q/P = 220\,000/25 = 8800\,\text{s} = 2{,}44\,\text{h}$; answers.py gives 2,444. The figure's data agree with the task: $2100 \cdot 0{,}60 \cdot 16 + 334\,000 \cdot 0{,}60 = 20{,}2 + 200{,}4 = 220{,}6\,\text{kJ}$ (2,45 h, inside tolerance 0,03), and the solution's independent check says so.
-- L2-10: constant 25 W through the walls is stated as a task condition; the read point (220 kJ; 0 °C) is a grid crossing; the J and h conversions are shown; two figures from 25 W.
-- All three solutions are complete, solved in symbols first, with units carried; inside FY3 (lämpeneminen, olomuodon muutokset).
-- Rest of the set unchanged since PASS; hash same at start and end.
+- Round 4, full: all 21 numeric answers recomputed in one script from the task texts with my own formulas; all agree with exercises.json and answers.py.
+- Limit-value tasks L2-01 and L3-03: key and model answer round up (1.617→1.7; 1.511→1.6), answers.py uses ceil; tolerance 0.07 accepts the rounded-down 1.6 (5.9 %) and 1.5 (6.3 %) as the teacher decided; the unrounded values pass too.
+- Every other tolerance lets a student who rounds to the data's figures pass (680 vs 678, 2.4 vs 2.444, 140 vs 139, 480 vs 480.6, 590 vs 592).
+- Laws and conditions: Q = cmΔT only without a change of state (said in each Periaate), sm and rm at constant temperature, P = UAΔT with the inside at 0 °C stated in the task, mixing task checks 251 400 J > 167 000 J first and states the "not enough" case correctly.
+- Multiple choice L1-06, L1-07, L2-08: exactly one correct option; each distractor is wrong and its feedback gives the right physics (net transfer wording, no "cold flows", t ∝ m/(UΔT) ratio = 2).
+- Intermediate numbers of the solutions recomputed (period efficiencies, break-even price 0.44 €/kg, stage energies, fitted line, axis crossing ≈ +20 °C): all right.
+- Figures fy3-6/heating-line and fy3-7/melting-curve give the needed readings (180 s, 40 K; 220 kJ), agree with c_ice·m·ΔT + sm = 20.2 + 200 kJ, and do not show the answer.
+- Scope: FY3 central contents only (heat, changes of state, U-value from the lesson); symbols as in the brief (s, r, c, m/t, UA).
+- Guardrails: melting explained by interaction energy, heater efficiency "käytännössä 100 %", example data called esimerkkiaineisto, slope read from the fitted line.

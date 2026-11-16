@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 4a0d8e1f5459c529
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (67d7b7f5a224ebfb).
+CONTENT-HASH: 0b2eec764f9785fd
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- Round-1 Polish items stand as written there (C, not blocking).
+- (none)
 
 ## Checked
-- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
-- The chart, its aria-label and every other file are unchanged since round 1; the round-1 Checked list holds.
-- Hash taken at the start and the end (4a0d8e1f5459c529).
+- sovella/solutions.md, Yleisiä virheitä (a): the corrected sentence now names the right quantity. I ∝ 1/r gives 10 dB·lg 2 = 3,0 dB per doubling, against the model answer's 10 dB·lg 4 = 6 dB (I ∝ 1/r²). Consistent with the a-part solution.
+- No added task in this unit (last task is s6). practice.py check: OK, 6 tasks, 95 points.

@@ -209,7 +209,7 @@
    "unit": "Ω",
    "tolerance": 0.03,
    "data": {
-    "caption": "Vastuksen jännite ja virta (esimerkkiaineisto)",
+    "caption": "Vastuksen jännite ja virta",
     "columns": [
      "$U\\,(\\text{V})$",
      "$I\\,(\\text{mA})$"
@@ -262,7 +262,7 @@
    "unit": "kertaa",
    "tolerance": 0.05,
    "data": {
-    "caption": "Hehkulampun jännite ja virta (esimerkkiaineisto)",
+    "caption": "Hehkulampun jännite ja virta",
     "columns": [
      "$U\\,(\\text{V})$",
      "$I\\,(\\text{A})$"
@@ -303,7 +303,7 @@
    "unit": "Ω",
    "tolerance": 0.03,
    "data": {
-    "caption": "Vastuksen jännite ja virta (esimerkkiaineisto)",
+    "caption": "Vastuksen jännite ja virta",
     "columns": [
      "$U\\,(\\text{V})$",
      "$I\\,(\\text{A})$"
@@ -328,6 +328,48 @@
      [
       "4.0",
       "0.81"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "fy6-3-L2-08",
+   "level": 2,
+   "kind": [
+    "data",
+    "graph",
+    "experiment"
+   ],
+   "text": "Aineisto: <a href=\"https://phet.colorado.edu/fi/simulations/circuit-construction-kit-dc\" target=\"_blank\" rel=\"noopener\">PhET – Circuit Construction Kit: DC</a>\n\nNoudattaako vastus Ohmin lakia? Tutki asiaa simulaatiolla, joka toimii selaimessa ilman asennusta. Rakenna simulaatiossa virtapiiri, jossa on paristo ja vastus. Kytke virtamittari sarjaan vastuksen kanssa ja jännitemittari vastuksen napojen välille. Pariston jännitettä voi muuttaa napauttamalla paristoa.\n\na) Mittaa vastuksen läpi kulkeva sähkövirta vähintään viidellä eri jännitteen arvolla. Kirjaa jokaisesta mittauksesta taulukkoon vastuksen jännite $U$ ja virta $I$.\n\nb) Piirrä mittauksistasi sähkövirran kuvaaja jännitteen funktiona: jännite $U$ on vaaka-akselilla ja virta $I$ pystyakselilla. Määritä vastuksen resistanssi kuvaajan avulla ja päättele, noudattaako vastus Ohmin lakia.\n\nc) Laske teho, jolla sähköenergiaa muuttuu vastuksessa sisäenergiaksi, kahdella eri jännitteellä. Sähköteho on jännitteen ja virran tulo, $P = UI$.\n\nd) Selitä, miksi todellisen hehkulampun sähkövirran ja jännitteen välinen riippuvuus voi poiketa ideaalisen vastuksen mallista.\n\nKohdat a)–c) tehdään omilla simulaatiomittauksilla, joten tuloksesi riippuvat vastuksesta, jonka valitsit. Taulukossa on samalla kytkennällä tehty esimerkkimittaus toisesta vastuksesta (esimerkkiaineisto). Käytä sitä, jos simulaatio ei ole käytettävissä, ja tarkista sillä menetelmäsi. Piirrä taulukon pisteistä sama kuvaaja ja vastaa laatikkoon taulukon vastuksen resistanssi ohmeina.",
+   "answer": 40,
+   "unit": "Ω",
+   "tolerance": 0.02,
+   "data": {
+    "caption": "Esimerkkimittaus: vastuksen jännite ja virta",
+    "columns": [
+     "$U\\,(\\text{V})$",
+     "$I\\,(\\text{A})$"
+    ],
+    "rows": [
+     [
+      "3.0",
+      "0.075"
+     ],
+     [
+      "6.0",
+      "0.150"
+     ],
+     [
+      "9.0",
+      "0.225"
+     ],
+     [
+      "12.0",
+      "0.300"
+     ],
+     [
+      "15.0",
+      "0.375"
      ]
     ]
    }
@@ -371,7 +413,7 @@
    "unit": "Ω",
    "tolerance": 0.03,
    "data": {
-    "caption": "Komponenttien virrat jännitteen funktiona (esimerkkiaineisto)",
+    "caption": "Komponenttien virrat jännitteen funktiona",
     "columns": [
      "$U\\,(\\text{V})$",
      "$I_\\text{A}\\,(\\text{mA})$",
@@ -425,7 +467,7 @@
    "unit": "%",
    "tolerance": 0.05,
    "data": {
-    "caption": "Rautalangan virta eri lämpötiloissa, $U = 1{,}00\\,\\text{V}$ (esimerkkiaineisto)",
+    "caption": "Rautalangan virta eri lämpötiloissa, $U = 1{,}00\\,\\text{V}$",
     "columns": [
      "$T\\,({}^\\circ\\text{C})$",
      "$I\\,(\\text{A})$"

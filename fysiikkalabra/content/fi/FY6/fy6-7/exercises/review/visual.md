@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4b72cccf4ef872c5
-SCOPE: delta added-exercise from 5161df0334c5195f base 8f23aa7ae3bd
+CONTENT-HASH: a29457d3e5db6182
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy6-7/dryer — y tick "2" should read "2,0" to match 2,4 / 1,6; "jäähdytys" now clears the 1,5 h drop but sits close to it and its baseline touches the 0,4 kW gridline.
-- [Minor] fy6-7-L2-08 Vastaus — the last step /bin/bash{,}2\,\text{kW}$ lies between gridlines, so "ruudukkoviivoilta" is slightly off; say "puolen ruudun tarkkuudella".
-- [Minor] fy6-7-L1-10 Vastaus — "Vastaus kelpaa, kun se on noin ±4 % sisällä" speaks of the checker, not the physics; Sijoitus leaves a lone E on its first row.
+- [Minor] fy6-7 all languages: the data-table caption wraps in a narrow table box; widen the table.
+- [Minor] fy6-7 solution: the Kaava stage mixes b) and c) in one paragraph and ends 'K = aE_n = naE' without a full stop; trailing comma/full stop varies between formula boxes (L3-02: comma in fi, full stop in fi-easy).
 
 ## Checked
-- open-exercises-L2-1280-10 and -11 (task 7-18, dryer graph and solution): round-1 overlap fixed, the label is right of the 1,5 h line; maths, units, case endings clean.
-- open-exercises-1280-10 (task 7-10, solution): typography and Finnish clean.
+- Proof sheets fi-fy6-7-exercises-* (all, every numbered formula); captures open-exercises-L2 of the new task with solutions open (source link, table or sub-questions, solution stages, units), opened for fi.
+- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
+- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: e70f007904e06fa7
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 789c0cff3856d511
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md — "Pohjaan ei kuitenkaan muodostu yhtä tavallisen käämin kierrosta" can be misread ("yhtä tavallisen" = equally ordinary); e.g. "Pohja ei kuitenkaan ole yksi käämin kierros, vaan muuttuva magneettikenttä synnyttää siihen monia pyörrevirtojen reittejä."
+
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Heading "kattilan pohja toisiopuolena / as the secondary"; many eddy-current paths; household hobs designed for ferromagnetic bases; 2020 device comparison framed with its dependence on devices and alignment; receiver-coil sentence without formula; numbers with units in LaTeX.
-- No paragraph changed in this round in fi exceeds about 120 words
-- Hash identical at start and end.
+- batch delta review, round 2: fresh preview/fy7-16.html at this hash, every box, feedback and model answer open; own captures of every aligned block and split inline chain at 360 and 1280 px (/tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/fi-r2-visual/shots/fy7-16-lesson-360-s*.png, fy7-16-lesson-1280-s1.png), formula overflow measured at 352, 360, 390 and 1280 px; `siirto` Sijoitus is now "B₀ = 9,0 V / : (12 · 1,1 · 10⁻³ m² / · 2π · 1,40 · 10⁵ Hz) / = … / = 0,7751 mT": the divisor breaks between whole quantities and fits its box at 352, 360 and 390 px (no scrolling), one row at 1280 px; `mittaus-lataus` hint and Sijoitus read correctly. Hash the same at the start and the end.

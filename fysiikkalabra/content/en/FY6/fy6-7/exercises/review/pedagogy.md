@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 3ddcea2954d318b6
-SCOPE: delta added-exercise from f6987a85f62564f9 base 8f23aa7ae3bd
+CONTENT-HASH: df6cf372cf645c1d
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- fy6-7-L1-10 solutions.md: Answer line says 11 MJ while Substitution and the stored answer say 10.8 MJ; write "10.8 MJ, rounded 11 MJ" so the two agree.
-- fy6-7-L2-08 uses a step graph like L2-01; the added price and cent-to-euro conversion justify it.
+- fy6-7-L2-09 — good authentic task: the data is needed, the date is stated, and a table keeps it working later. The ENERGY STAR data is American, in ft³; the conversion is given and is correct (17.5 ft³ ≈ 495 l).
+- Part c: "the total price of electricity" is fine, but say once that basic charges are left out (the solution does).
+- Part d asks for the compressor's input power without a value in the task; the solution's "about a hundred watts" is flagged as an order of magnitude, which is honest. A student could be asked to name the thermostat cycle as the key word.
+- Answer rounding: the box takes 39.3 W, while costs are given as about 690 € and 190 €, which is two figures against 688 € and 192 € exactly. Explained in the solution, but a short note that the exact 688 € is also accepted would help.
+- Solution displays an aligned block in the middle of a sentence ("$$...$$. So the difference"); the visual reviewer should check the layout.
 
 ## Checked
-- L1-10 is level 1: E = Pt, one MAFY lookup and a conversion; situation first, question last, hint names the table section. 3.0 kWh * 3.6 = 10.8 MJ is correct.
-- L1-10 solution is complete (given with the looked-up factor, principle, conversion, reasonableness).
-- L2-08 is level 2: three constant steps read from the graph, summed, then priced. Figure gives 2.4, 1.2 and 0.2 kW on stated gridlines; the description matches and gives neither energy nor cost.
-- L2-08 arithmetic is correct: 1.2 + 1.2 + 0.10 = 2.5 kWh; 0.18 * 2.5 = 0.45 EUR; the solution reads the graph before the formula.
-- The set gains a lookup task at level 1 and a cost-from-graph task at level 2; neither repeats the worked example.
+- Whole set: levels 1–3 filled, new task last among level 2.
+- Four sub-questions that rise from compare to calculate, cost and explain a model limit.
+- Solution: E = Pt, 8760 h, 39.3 W and 50.2 W, 688 € and 880 €, all correct; reasonableness check present.
+- Does not repeat the worked example.

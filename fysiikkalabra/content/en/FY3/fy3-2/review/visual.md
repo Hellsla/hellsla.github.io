@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 240d5ff14a5bd144
+CONTENT-HASH: 934f85563a66ee3d
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): Ydinajatus: comma restored before "but"; the sentence now reads correctly, nothing else changed (text-only, one punctuation mark).
-- delta review 2026-11-07 (teacher's proofread replacement texts): Ydinajatus rewrite (siirtymä, komponentti, mekaaninen työ) and the typeset $40\,\text{N}$/$20\,\text{cm}$ in lesson and inquiry choices/feedback/prompts; opened fy3-2-en-a-390 and -1280 (text, carry-lift figure and Joule figure unchanged and intact).
-- batch delta review: opened fy3-2-1280-0, fy3-2-360-0; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text.
+- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.

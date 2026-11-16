@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f3eacd571505584e
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 854e8be06f58e991
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] `mittaus` solution, the unchanged chain "4π · 10⁻⁷ Vs/Am = 1,257 · 10⁻⁶ Vs/Am" — at 352 px its row is 3 px wider than its box (232 in 229); fits at 360 px and wider — not part of this reflow, note for the clipped-formulas work.
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Every μ0 occurrence in the diff changed from = to \approx, typography intact ($\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$); no remaining "μ0 = 4π" or "exact" wording in student text.
-- No paragraph changed in this round in fi exceeds about 120 words
-- Hash identical at start and end.
+- batch delta review, round 2: fresh preview/fy7-3.html at this hash, every box, feedback and model answer open; own captures of every aligned block and split inline chain at 360 and 1280 px (/tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/fi-r2-visual/shots/fy7-3-lesson-360-s*.png, fy7-3-lesson-1280-s1.png), formula overflow measured at 352, 360, 390 and 1280 px; Laskennan selitys is three definitions again ($B$, $k_1$, $k_2$) on their own rows; the μ₀ hint (": 320." row), the Δμ₀ block and the student's chain in `virhe` read correctly, joined on one row at 1280 px where they fit; nothing clipped in the changed blocks. Hash the same at the start and the end.

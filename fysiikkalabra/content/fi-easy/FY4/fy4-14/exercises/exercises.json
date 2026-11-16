@@ -149,7 +149,7 @@
         {
           "text": "Rajanopeudella ilmanvastus on suurempi kuin $2{,}65\\,\\text{N}$.",
           "true": false,
-          "feedback": "Epätosi: paino on $0{,}270\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 2{,}65\\,\\text{N}$. Rajanopeudella kokonaisvoima on nolla, joten ilmanvastus on yhtä suuri kuin paino. Se ei ole suurempi."
+          "feedback": "Epätosi: paino on $$\\begin{aligned} &0{,}270\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &\\approx 2{,}65\\,\\text{N} \\end{aligned}$$. Rajanopeudella kokonaisvoima on nolla, joten ilmanvastus on yhtä suuri kuin paino. Se ei ole suurempi."
         },
         {
           "text": "Samankokoinen ja samanmuotoinen mutta kevyempi pallo saavuttaa saman rajanopeuden.",
@@ -210,7 +210,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Pudotetun vaahtomuovipallon nopeus (esimerkkiaineisto)",
+        "caption": "Pudotetun vaahtomuovipallon nopeus",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -264,7 +264,7 @@
       "tolerance": 0.02,
       "fbd": "equations",
       "data": {
-        "caption": "Paperikartioiden rajanopeudet (esimerkkiaineisto)",
+        "caption": "Paperikartioiden rajanopeudet",
         "columns": [
           "Kartio",
           "$m\\,(\\text{g})$",
@@ -325,7 +325,7 @@
         }
       ],
       "data": {
-        "caption": "Hyppääjän nopeus varjon auettua (esimerkkiaineisto)",
+        "caption": "Hyppääjän nopeus varjon auettua",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"
@@ -421,7 +421,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Hyppääjän nopeus varjon avautumisen jälkeen (esimerkkiaineisto)",
+        "caption": "Hyppääjän nopeus varjon avautumisen jälkeen",
         "columns": [
           "$t\\,(\\text{s})$",
           "$v\\,(\\text{m/s})$"

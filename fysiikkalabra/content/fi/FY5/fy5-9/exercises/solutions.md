@@ -94,7 +94,13 @@
 **Periaate:** Kitkattomassa värähtelyssä mekaaninen energia säilyy. Jokaisessa kohdassa liike-energian ja jousen potentiaalienergian summa on yhtä suuri kuin energia ääriasennossa, jossa nopeus on nolla. Kohdassa $x$ osa energiasta on vielä jousessa, joten nopeus on pienempi kuin tasapainoasemassa.
 **Kaava:** $\dfrac{1}{2}mv^2 + \dfrac{1}{2}kx^2 = \dfrac{1}{2}kA^2$, josta $v^2 = \dfrac{k}{m}(A^2 - x^2)$ ja $v = \sqrt{\dfrac{k}{m}(A^2 - x^2)}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** Ensin $\dfrac{k}{m} = \dfrac{200\,\text{N/m}}{0{,}50\,\text{kg}} = 400\,\tfrac{1}{\text{s}^2}$ ja $A^2 - x^2 = (0{,}100\,\text{m})^2 - (0{,}0500\,\text{m})^2 = 0{,}00750\,\text{m}^2$, joten $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0{,}00750\,\text{m}^2} = \sqrt{3{,}00\,\tfrac{\text{m}^2}{\text{s}^2}} = 1{,}732\,\text{m/s}$
+**Sijoitus:** Ensin $\dfrac{k}{m} = \dfrac{200\,\text{N/m}}{0{,}50\,\text{kg}} = 400\,\tfrac{1}{\text{s}^2}$ ja $$
+\begin{aligned}
+A^2 - x^2 &= (0{,}100\,\text{m})^2 \\
+&- (0{,}0500\,\text{m})^2 \\
+&= 0{,}00750\,\text{m}^2
+\end{aligned}
+$$, joten $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0{,}00750\,\text{m}^2} = \sqrt{3{,}00\,\tfrac{\text{m}^2}{\text{s}^2}} = 1{,}732\,\text{m/s}$
 **Vastaus:** $1{,}7\,\text{m/s}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$.
 **Järkevyys:** Tasapainoasemassa nopeus olisi $A\sqrt{\tfrac{k}{m}} = 0{,}100\,\text{m} \cdot 20\,\tfrac{1}{\text{s}} = 2{,}0\,\text{m/s}$. Puolessa amplitudissa jousessa on vasta neljäsosa energiasta, koska $\left(\tfrac{1}{2}\right)^2 = \tfrac{1}{4}$, joten liike-energiaa on kolme neljäsosaa ja nopeus on $\sqrt{0{,}75} \approx 0{,}87$-kertainen eli $1{,}7\,\text{m/s}$. Nopeus ei siis ole puolet suurimmasta.
 
@@ -141,7 +147,7 @@
 **Kaava:** $a = \dfrac{T^2}{l} = \dfrac{4\pi^2}{g}$, joten $g = \dfrac{4\pi^2}{a}$
 **Muunnokset:** Ei tarvita: pituus on metreinä ja aika sekunteina.
 **Sijoitus:** $a = \dfrac{4{,}04\,\text{s}^2}{1{,}00\,\text{m}} = 4{,}04\,\tfrac{\text{s}^2}{\text{m}}$ ja $g = \dfrac{4\pi^2}{4{,}04\,\text{s}^2/\text{m}} = 9{,}772\,\text{m/s}^2$
-**Vastaus:** $9{,}77\,\text{m/s}^2$, kolme merkitsevää numeroa kuten jaksonajoissa ja pituuksissa. Silmämääräinen sovitus antaa hieman erilaisia tuloksia, joten pieni vaihtelu on odotettua.
+**Vastaus:** $9{,}77\,\text{m/s}^2$, kolme merkitsevää numeroa, koska sovituksen lukema perustuu pisteeseen $(1{,}00\,\text{m};\ 2{,}01\,\text{s})$, jonka arvoissa on kolme numeroa. Lyhimmän heilurin arvoissa ($0{,}20\,\text{m}$ ja $0{,}90\,\text{s}$) on vain kaksi, mutta ne eivät rajoita luettua kulmakerrointa. Silmämääräinen sovitus antaa hieman erilaisia tuloksia, joten pieni vaihtelu on odotettua.
 **Järkevyys:** Putoamiskiihtyvyys $9{,}81\,\text{m/s}^2$ antaisi kulmakertoimeksi $\tfrac{4\pi^2}{9{,}81} = 4{,}02\,\text{s}^2/\text{m}$, joka on lähellä luettua $4{,}04\,\text{s}^2/\text{m}$. Tulos poikkeaa taulukkoarvosta noin $0{,}4\,\%$. Kun tulos sijoitetaan jaksonaikakaavaan, pituudella $0{,}60\,\text{m}$ saadaan $T = 2\pi\sqrt{0{,}60 : 9{,}772}\,\text{s} = 1{,}56\,\text{s}$, kuten taulukossa $1{,}55\,\text{s}$.
 
 ## fy5-9-L2-06
@@ -162,7 +168,7 @@
 **Kaava:** $T = \dfrac{t_{10}}{10}$ ja $p = \dfrac{T - T_0}{T_0} \cdot 100\,\%$
 **Muunnokset:** Kymmenen jakson aika jaetaan kymmenellä: $T = 21{,}5\,\text{s} : 10 = 2{,}15\,\text{s}$.
 **Sijoitus:** $T_0 = 2\pi\sqrt{\dfrac{1{,}000\,\text{m}}{9{,}81\,\text{m/s}^2}} = 2{,}006\,\text{s}$ ja $p = \dfrac{2{,}15\,\text{s} - 2{,}006\,\text{s}}{2{,}006\,\text{s}} \cdot 100\,\% = 7{,}17\,\%$. Kohta b): kaavan antama kymmenen jakson aika on $10\,T_0 = 20{,}06\,\text{s}$, joten mitatut erot ovat $0{,}04\,\text{s}$ ($10\,{}^\circ$), $0{,}14\,\text{s}$ ($20\,{}^\circ$), $0{,}64\,\text{s}$ ($40\,{}^\circ$) ja $1{,}44\,\text{s}$ ($60\,{}^\circ$). Ajanoton epävarmuus $0{,}2\,\text{s}$ on suurempi kuin erot lähtökulmilla $10\,{}^\circ$ ja $20\,{}^\circ$, mutta pienempi kuin erot lähtökulmilla $40\,{}^\circ$ ja $60\,{}^\circ$.
-**Vastaus:** $7{,}2\,\%$, kaksi merkitsevää numeroa, koska erotus $0{,}14\,\text{s}$ on kahden numeron tarkkuudella. Kohta b): lähtökulmilla $40\,{}^\circ$ ja $60\,{}^\circ$ ero on selvästi suurempi kuin ajanoton epävarmuus; pienillä lähtökulmilla $10\,{}^\circ$ ja $20\,{}^\circ$ eroa ei voi osoittaa tällä ajanotolla.
+**Vastaus:** $7{,}2\,\%$, kaksi merkitsevää numeroa, koska jaksonaikojen erotus $T - T_0 \approx 0{,}14\,\text{s}$ on kahden numeron tarkkuudella. Kohta b): lähtökulmilla $40\,{}^\circ$ ja $60\,{}^\circ$ ero on selvästi suurempi kuin ajanoton epävarmuus; pienillä lähtökulmilla $10\,{}^\circ$ ja $20\,{}^\circ$ eroa ei voi osoittaa tällä ajanotolla.
 **Järkevyys:** Oppitunnin taulukon mukaan $60\,{}^\circ$ lähtökulmalla jaksonaika on $1{,}073$-kertainen eli $7{,}3\,\%$ pidempi, mikä on lähellä mitattua $7{,}2\,\%$:a. Pienen lähtökulman erot ovat taulukossa alle $1\,\%$, eli pienemmät kuin käsin ajanoton epävarmuus noin $0{,}2\,\text{s} : 20\,\text{s} = 1\,\%$.
 
 ## fy5-9-L3-04
@@ -174,7 +180,12 @@
 **Muunnokset:** Ei tarvita: massat ovat kilogrammoina ja ajat sekunteina.
 **Sijoitus:** $a = \dfrac{0{,}504\,\text{s}^2 - 0{,}033\,\text{s}^2}{0{,}300\,\text{kg} - 0\,\text{kg}} = 1{,}570\,\tfrac{\text{s}^2}{\text{kg}}$ ja $k = \dfrac{4\pi^2}{1{,}570\,\text{s}^2/\text{kg}} = 25{,}14\,\text{N/m}$. Lisämassa on $m_0 = \dfrac{0{,}033\,\text{s}^2}{1{,}570\,\text{s}^2/\text{kg}} = 0{,}0210\,\text{kg}$. Kevyimmästä mittauksesta saadaan $k_1 = \dfrac{4\pi^2 \cdot 0{,}050\,\text{kg}}{(0{,}334\,\text{s})^2} = 17{,}69\,\text{N/m}$, ja virhe on $\dfrac{17{,}69 - 25{,}14}{25{,}14} \cdot 100\,\% = -29{,}6\,\%$.
 **Vastaus:** $25{,}1\,\text{N/m}$, kolme merkitsevää numeroa kuten jaksonajoissa. Lisämassa on noin $21\,\text{g}$, ja kevyimmästä mittauksesta laskettu jousivakio olisi noin $30\,\%$ liian pieni.
-**Järkevyys:** Malli ennustaa, että yksittäisestä mittauksesta laskettu jousivakio on $k \cdot \tfrac{m}{m + m_0}$. Kevyimmällä punnuksella $50\,\text{g}$ se on $25{,}1\,\text{N/m} \cdot \tfrac{50}{71} = 17{,}7\,\text{N/m}$, kuten laskettiin. Raskaimmasta mittauksesta laskettu jousivakio olisi $\tfrac{4\pi^2 \cdot 0{,}300}{0{,}501} = 23{,}6\,\text{N/m}$, vain noin $6\,\%$ liian pieni ja malli ennustaa saman ($25{,}1\,\text{N/m} \cdot \tfrac{300}{321} = 23{,}5\,\text{N/m}$), koska jousen massan osuus pienenee punnuksen kasvaessa. Siksi kulmakerroin antaa luotettavamman tuloksen kuin yksittäinen mittaus.
+**Järkevyys:** Malli ennustaa, että yksittäisestä mittauksesta laskettu jousivakio on $k \cdot \tfrac{m}{m + m_0}$. Kevyimmällä punnuksella $50\,\text{g}$ se on $25{,}1\,\text{N/m} \cdot \tfrac{50}{71} = 17{,}7\,\text{N/m}$, kuten laskettiin. Raskaimmasta mittauksesta laskettu jousivakio olisi $\tfrac{4\pi^2 \cdot 0{,}300}{0{,}501} = 23{,}6\,\text{N/m}$, vain noin $6\,\%$ liian pieni ja malli ennustaa saman ($$
+\begin{aligned}
+&25{,}1\,\text{N/m} \cdot \tfrac{300}{321} \\
+&= 23{,}5\,\text{N/m}
+\end{aligned}
+$$), koska jousen massan osuus pienenee punnuksen kasvaessa. Siksi kulmakerroin antaa luotettavamman tuloksen kuin yksittäinen mittaus.
 
 ## fy5-9-L3-05
 **Annettu:** heilurin pituus $l = 1{,}20\,\text{m}$, lähtökulma $\alpha_0 = 10{,}0\,{}^\circ$, lähtö levosta, $g = 9{,}81\,\text{m/s}^2$; pistemäinen kuula, langan massa ja ilmanvastus jätetään huomiotta
@@ -182,8 +193,8 @@
 **Periaate:** Kolme ideaa. Pienellä lähtökulmalla jaksonaika on $T = 2\pi\sqrt{\tfrac{l}{g}}$, ja ääriasennosta alimpaan kohtaan kuluu neljäsosa jaksosta. Energia säilyy, koska vain paino tekee työtä ja lanka on aina kohtisuorassa liikettä vastaan, joten ääriasennon potentiaalienergia muuttuu liike-energiaksi alimmassa kohdassa. Harmonisessa mallissa $\tfrac{1}{2}\tfrac{mg}{l}A^2 = \tfrac{1}{2}mv^2$, ja se on likiarvo, koska siinä $\sin\alpha \approx \alpha$.
 **Kaava:** $t = \dfrac{T}{4}$; $h = l(1 - \cos\alpha_0)$ ja $mgh = \dfrac{1}{2}mv^2$, joten $v = \sqrt{2gh}$; harmonisella mallilla $A = l\alpha_0$ ja $v_\text{h} = A\sqrt{\dfrac{g}{l}}$
 **Muunnokset:** Kulma radiaaneina: $\alpha_0 = 10{,}0\,{}^\circ = 10{,}0 \cdot \dfrac{\pi}{180} = 0{,}17453$.
-**Sijoitus:** Kohta a): $T = 2\pi\sqrt{\dfrac{1{,}20\,\text{m}}{9{,}81\,\text{m/s}^2}} = 2{,}198\,\text{s}$, joten $t = \dfrac{2{,}198\,\text{s}}{4} = 0{,}549\,\text{s}$. Kohta b): $h = 1{,}20\,\text{m} \cdot (1 - \cos 10{,}0\,{}^\circ) = 0{,}01823\,\text{m}$ ja $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}01823\,\text{m}} = 0{,}5981\,\text{m/s}$. Kohta c): $A = 1{,}20\,\text{m} \cdot 0{,}17453 = 0{,}2094\,\text{m}$ ja $v_\text{h} = 0{,}2094\,\text{m} \cdot \sqrt{\dfrac{9{,}81}{1{,}20}}\,\dfrac{1}{\text{s}} = 0{,}5988\,\text{m/s}$, joten ero on $\dfrac{0{,}5988 - 0{,}5981}{0{,}5981} \cdot 100\,\% = 0{,}13\,\%$ ja harmoninen malli antaa suuremman nopeuden.
-**Vastaus:** $0{,}598\,\text{m/s}$, kolme merkitsevää numeroa kuten pituudessa $1{,}20\,\text{m}$ ja kulmassa $10{,}0\,{}^\circ$.
+**Sijoitus:** Kohta a): $T = 2\pi\sqrt{\dfrac{1{,}20\,\text{m}}{9{,}81\,\text{m/s}^2}} = 2{,}198\,\text{s}$, joten $t = \dfrac{2{,}198\,\text{s}}{4} = 0{,}549\,\text{s}$. Kohta b): $h = 1{,}20\,\text{m} \cdot (1 - \cos 10{,}0\,{}^\circ) = 0{,}01823\,\text{m}$ ja $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}01823\,\text{m}} = 0{,}5981\,\text{m/s}$. Kohta c): $A = 1{,}20\,\text{m} \cdot 0{,}17453 = 0{,}2094\,\text{m}$ ja $v_\text{h} = 0{,}2094\,\text{m} \cdot \sqrt{\dfrac{9{,}81}{1{,}20}}\,\dfrac{1}{\text{s}} = 0{,}5988\,\text{m/s}$, joten ero on $\dfrac{0{,}59883 - 0{,}59807}{0{,}59807} \cdot 100\,\% = 0{,}13\,\%$ ja harmoninen malli antaa suuremman nopeuden.
+**Vastaus:** a) $0{,}549\,\text{s}$. b) $0{,}598\,\text{m/s}$, ja ääriasennon korkeus on noin $1{,}82\,\text{cm}$. c) $0{,}599\,\text{m/s}$, ja harmoninen malli antaa noin $0{,}13\,\%$ suuremman nopeuden. Ajassa ja nopeuksissa on kolme merkitsevää numeroa kuten pituudessa $1{,}20\,\text{m}$ ja kulmassa $10{,}0\,{}^\circ$.
 **Järkevyys:** Liike-energia massayksikköä kohti on $\tfrac{1}{2}v^2 = 0{,}1788\,\text{J/kg}$ ja potentiaalienergian vähennys $gh = 9{,}81 \cdot 0{,}01823 = 0{,}1788\,\text{J/kg}$, eli energia säilyy. Harmoninen malli antaa tuloksen, joka eroaa vain $0{,}13\,\%$, koska pienellä kulmalla $\sin\alpha$ on lähes sama kuin $\alpha$ radiaaneina. Ero on positiivinen, koska malli käyttää palauttavana voimana arvoa $mg\alpha$, joka on suurempi kuin todellinen $mg\sin\alpha$: malli tekee hieman enemmän työtä, joten nopeus on hieman suurempi ($0{,}5988\,\text{m/s} > 0{,}5981\,\text{m/s}$). Sama suuruusluokka näkyy oppitunnin taulukossa: lähtökulmalla $10\,{}^\circ$ jaksonaika poikkeaa kaavasta vain $0{,}2\,\%$.
 
 ## fy5-9-L2-08

@@ -44,9 +44,20 @@
 **Principle:** A single photon can ionise a molecule only if its energy is at least the ionisation energy. The energy of a photon is $E = hf = \tfrac{hc}{\lambda}$, so the longer the wavelength, the smaller the energy. The longest ionising wavelength corresponds to a photon whose energy is exactly the ionisation energy.
 **Formula:** $E = \dfrac{hc}{\lambda}$, from which $\lambda = \dfrac{hc}{E}$
 **Conversions:** $12.6\,\text{eV} = 12.6 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 2.0185 \cdot 10^{-18}\,\text{J}$, and finally $1\,\text{m} = 10^{9}\,\text{nm}$.
-**Substitution:** $\lambda = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{2.0185 \cdot 10^{-18}\,\text{J}} = 9.8412 \cdot 10^{-8}\,\text{m} = 98.412\,\text{nm}$
+**Substitution:** $$
+\begin{aligned}
+\lambda &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
+&\cdot \dfrac{2.998 \cdot 10^{8}\,\text{m/s}}{2.0185 \cdot 10^{-18}\,\text{J}} \\
+&= 9.8412 \cdot 10^{-8}\,\text{m} \\
+&= 98.412\,\text{nm}
+\end{aligned}
+$$
 **Answer:** $98.4\,\text{nm}$, three significant figures like the ionisation energy $12.6\,\text{eV}$.
-**Reasonableness:** The wavelength is much shorter than the $380$–$720\,\text{nm}$ of visible light, so visible light does not ionise water, as it should. Check: $1240\,\text{eV}\,\text{nm} : 12.6\,\text{eV} \approx 98\,\text{nm}$.
+**Reasonableness:** The wavelength is much shorter than the $380$–$720\,\text{nm}$ of visible light, so visible light does not ionise water, as it should. Check: $$
+\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 12.6\,\text{eV} &\approx 98\,\text{nm}
+\end{aligned}
+$$.
 
 ## fy8-12-L2-01
 **Given:** pulse count near the source $N = 1260$, pulse count of the background radiation $N_\text{t} = 72$, both in the time $t = 3.00\,\text{min}$
@@ -96,7 +107,12 @@
 **Conversions:** $s_\beta = 3.6\,\text{m} = 360\,\text{cm}$, so that the tracks are in the same unit. Both energies are in megaelectronvolts.
 **Substitution:** $\dfrac{E_\alpha s_\beta}{E_\beta s_\alpha} = \dfrac{5.49\,\text{MeV} \cdot 360\,\text{cm}}{1.0\,\text{MeV} \cdot 4.1\,\text{cm}} = \dfrac{1976.4}{4.1} = 482.05$
 **Answer:** about $4.8 \cdot 10^{2}$ times, two significant figures like the distance $4.1\,\text{cm}$ and the energy $1.0\,\text{MeV}$.
-**Reasonableness:** Per centimetre the alpha particle produces about $5.49 \cdot 10^{6} : 34 : 4.1 \approx 3.9 \cdot 10^{4}$ and the beta particle about $1.0 \cdot 10^{6} : 34 : 360 \approx 82$ ion pairs; the ratio is about $480$. This is why an alpha particle stops within such a short distance and damages cells in a concentrated way.
+**Reasonableness:** Per centimetre the alpha particle produces about $$
+\begin{aligned}
+&5.49 \cdot 10^{6} : 34 : 4.1 \\
+&\approx 3.9 \cdot 10^{4}
+\end{aligned}
+$$ and the beta particle about $1.0 \cdot 10^{6} : 34 : 360 \approx 82$ ion pairs; the ratio is about $480$. This is why an alpha particle stops within such a short distance and damages cells in a concentrated way.
 
 ## fy8-12-L3-02
 **Given:** pulse rate without a shield $R_0 = 2400\,\tfrac{1}{\text{min}}$, behind $d_1 = 11.0\,\text{mm}$ of lead $R_1 = 630\,\tfrac{1}{\text{min}}$, background radiation $R_\text{t} = 30\,\tfrac{1}{\text{min}}$
@@ -183,6 +199,30 @@ Lead is not the best shield here, although its half-value thickness is the small
 **Principle:** A beta particle has a range because it gives up its energy by ionising, and a few millimetres of aluminium stops it. Gamma radiation is attenuated layer by layer, and for example the half-value thickness of aluminium is tens of millimetres. A GM tube counts events but does not distinguish types of radiation.
 **Model answer:** The types are told apart by comparing the net pulse count without a barrier and behind a thin aluminium plate. If the net pulse count drops almost to zero, the source is a beta source, because the plate stops beta particles. If the pulse count decreases only a little, the source is a gamma source, because a thin aluminium plate lets most of the gamma photons through. A sheet of paper does not distinguish the types, because it does not stop beta particles. A lead plate does not distinguish them, because it attenuates both, and the pulses of a GM tube are always the same size, so the type cannot be deduced from the height of the pulse.
 
+## fy8-12-L2-08
+**Given:** from the source: ten products sold as jewellery or a sleep mask (among them a “Quantum Pendant” sold as anti-5G and “negative ion” bracelets, necklaces and a sleep mask); in the RIVM study they contained radioactive materials and emitted ionizing radiation continuously; the radiation level was low and the risk of health problems low, but continuous wearing for a year, $24\,\text{h}$ a day, could exceed the strict Dutch limit for skin exposure; the sale is prohibited. Assumption: the frequency of the 5G signal is $f = 3.5\,\text{GHz}$. From the table $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ and $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
+**Asked:** a) the claim judging by the names and the finding of the authority; b) the energy $E$ of a radio-wave photon in microelectronvolts and the comparison; c) measuring the exposure; d) the evidence needed and the classification of the claim
+**Principle:** Radiation ionizes only if the energy of a single photon or particle is enough to remove an electron from an atom. What matters is the energy of one photon, $E = hf$, not the intensity: a great intensity only means that there are many photons, and each of them still has the same small energy. The energy of a photon is proportional to its frequency, and the frequency of a radio wave is far lower than that of gamma radiation.
+**Model answer a):** From the name “anti-5G” one can infer that the product was claimed to protect against the radiation of the 5G network, and from “negative ion” that it was claimed to produce some kind of ion effect. This is an inference from the names: the news item does not say what the sellers claimed in more detail. The finding of the authority is a different matter: the products contained radioactive materials and emitted ionizing radiation continuously. The radiation level was low, but continuous wearing for a year could exceed the skin exposure limit, and the sale was prohibited.
+**Formula:** $E = hf$, and in electronvolts $E_\text{eV} = \dfrac{E}{1.602 \cdot 10^{-19}\,\text{J/eV}}$. The comparison is made by dividing the ionization energy by the photon energy.
+**Conversions:** $f = 3.5\,\text{GHz} = 3.5 \cdot 10^{9}\,\text{Hz} = 3.5 \cdot 10^{9}\,\tfrac{1}{\text{s}}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$ and $1\,\mu\text{eV} = 10^{-6}\,\text{eV}$.
+**Substitution:** Part b):
+
+$$\begin{aligned}
+E &= hf \\
+&= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 3.5 \cdot 10^{9}\,\tfrac{1}{\text{s}} \\
+&= 2.319 \cdot 10^{-24}\,\text{J} \\
+&= \dfrac{2.319 \cdot 10^{-24}\,\text{J}}{1.602 \cdot 10^{-19}\,\text{J/eV}} \\
+&= 1.448 \cdot 10^{-5}\,\text{eV} \\
+&= 14.48\,\mu\text{eV}
+\end{aligned}$$
+
+Compared with this, the energy needed to remove an electron, $10\,\text{eV}$, is $\dfrac{10\,\text{eV}}{1.448 \cdot 10^{-5}\,\text{eV}} = 6.9 \cdot 10^{5}$ times as great. The energy of a gamma photon, $10^{5}\,\text{eV}$, is $\dfrac{10^{5}\,\text{eV}}{1.448 \cdot 10^{-5}\,\text{eV}} = 6.9 \cdot 10^{9}$ times as great, and at higher gamma energies the ratio is greater still.
+**Model answer c):** The exposure would be measured with a dose-rate meter or a GM tube placed near the product at the same distance as the product has from the skin. The distance has to be chosen deliberately, because the strength of the radiation decreases as the distance grows. First the background is measured in the same place without the product, and it is subtracted from the pulse rate or dose rate measured with the product, which gives the net value. The measuring time has to be long enough for the random variation of the pulses to stay small. The dose is obtained by multiplying the dose rate by the time of wearing: one year round the clock is $8760\,\text{h}$. The type of radiation is identified by placing a sheet of paper, a thin aluminium plate and a lead plate between the product and the meter: paper stops alpha particles, aluminium beta particles, and lead attenuates gamma radiation best. The news item does not say how RIVM measured the products, so this is a general method and not a description of their study.
+**Model answer d):** For the claimed health effects one would first need a mechanism that agrees with physics: what in the product interacts with the body, and how. One would also need controlled blinded studies with a real product and an identical product with no effect, where neither the subjects nor the researchers know which is which, a large enough sample, and results repeated by other research groups. The “anti-5G” claim is physically false: a small pendant cannot stop radio waves that arrive from every direction on the whole body, and a 5G signal does not ionize, because the energy of its photons is small. So the pendant does not protect against 5G, but it brings ionizing radiation close to the skin, and that is a real effect, which the authority found. Classification: the claim of protection is physically false, and the real effect is the ionizing radiation of the product itself.
+**Answer:** $14\,\mu\text{eV}$, two significant figures. The frequency $3.5\,\text{GHz}$ has two significant figures, and the box also accepts $14.5\,\mu\text{eV}$. The energy of a radio-wave photon is about a million times smaller than the energy needed to remove an electron, so radio waves do not ionize however great the intensity. Gamma photons ionize, because their energy is over $10^{5}\,\text{eV}$.
+**Reasonableness:** Order of magnitude: $6 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 4 \cdot 10^{9}\,\tfrac{1}{\text{s}} \approx 2 \cdot 10^{-24}\,\text{J}$, and dividing by $1.6 \cdot 10^{-19}$ gives about $1.5 \cdot 10^{-5}\,\text{eV}$, as calculated. The energy of a radio-frequency photon is millionths of an electronvolt, nowhere near the $10\,\text{eV}$ or more that ionization needs.
+
 ## fy8-12-L3-04
 **Given:** source caesium-137 ($662\,\text{keV}$), thicknesses $d = 0$, $6$, $12$, $18$, $24$ and $30\,\text{mm}$ and pulses in $60\,\text{s}$ $2640$, $1895$, $1330$, $950$, $685$ and $495$; background $N_\text{t} = 40$; half-value thicknesses of the table: lead $5.5\,\text{mm}$, iron $12\,\text{mm}$, aluminium $34\,\text{mm}$, concrete $39\,\text{mm}$, water $81\,\text{mm}$
 **Asked:** the mean half-value thickness $d_{1/2}$ in millimetres, the material of the plates, the thickness that drops the net pulse count to one per cent, and why the thickest measurement is the most uncertain
@@ -202,7 +242,12 @@ Lead is not the best shield here, although its half-value thickness is the small
 **Conversions:** $t = 60\,\text{s}$ and $1.5\,\% = 0.015$. Finally $1\,\text{kBq} = 1000\,\text{Bq}$ and $1\,\text{Bq} = 1\,\tfrac{1}{\text{s}}$.
 **Substitution:** a) With the source there are $5050$ pulses in total and without the source $130$, so the means are $\dfrac{5050}{5} = 1010$ and $\dfrac{130}{5} = 26$, and $R = \dfrac{1010 - 26}{60\,\text{s}} = \dfrac{984}{60\,\text{s}} = 16.4\,\tfrac{1}{\text{s}}$. b) $T = \left(\tfrac{1}{2}\right)^{8.0\,\text{mm} / 5.5\,\text{mm}} = \left(\tfrac{1}{2}\right)^{1.4545} = 0.3649$. c) $A = \dfrac{16.4\,\tfrac{1}{\text{s}}}{0.3649 \cdot 0.015} = \dfrac{16.4\,\tfrac{1}{\text{s}}}{0.005473} = 2997\,\text{Bq} = 3.0\,\text{kBq}$
 **Answer:** $3.0\,\text{kBq}$, two significant figures like the thickness $8.0\,\text{mm}$ and the efficiency $1.5\,\%$. The net pulse rate is $16.4\,\tfrac{1}{\text{s}}$ (a), and about $36\,\%$ of the photons pass through the wall (b). In part d) the true activity is greater, because the tube does not count every photon and not every decay is accompanied by one photon.
-**Reasonableness:** The wall contains $1.45$ half-value thicknesses, so the fraction passing through is between $\tfrac{1}{2}$ and $\tfrac{1}{4}$, like $0.36$. Calculating back: $3000\,\text{Bq} \cdot 0.365 \cdot 0.015 = 16.4\,\tfrac{1}{\text{s}}$, as measured. Justification of part d): a GM tube detects only a small fraction of gamma photons, so counting all the photons hitting the tube as pulses underestimates the decays; in addition, only about $85\,\%$ of the decays of caesium-137 emit a gamma photon. Both assumptions make the estimate too small.
+**Reasonableness:** The wall contains $1.45$ half-value thicknesses, so the fraction passing through is between $\tfrac{1}{2}$ and $\tfrac{1}{4}$, like $0.36$. Calculating back: $$
+\begin{aligned}
+&3000\,\text{Bq} \cdot 0.365 \cdot 0.015 \\
+&= 16.4\,\tfrac{1}{\text{s}}
+\end{aligned}
+$$, as measured. Justification of part d): a GM tube detects only a small fraction of gamma photons, so counting all the photons hitting the tube as pulses underestimates the decays; in addition, only about $85\,\%$ of the decays of caesium-137 emit a gamma photon. Both assumptions make the estimate too small.
 
 ## fy8-12-L3-06
 **Given:** the shares in the table in water and lead at the energies $0.05$–$20\,\text{MeV}$; situations (1) $50\,\text{keV}$ in soft tissue, (2) $50\,\text{keV}$ in lead, (3) $662\,\text{keV}$ in water, (4) $20\,\text{MeV}$ in lead; photon energy in pair production $E_\gamma = 5.0\,\text{MeV}$ and $m_ec^2 = 0.511\,\text{MeV}$

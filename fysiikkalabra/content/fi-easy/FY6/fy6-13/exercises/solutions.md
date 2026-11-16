@@ -37,7 +37,7 @@
 **Muunnokset:** $d = 1{,}0\,\text{mm} = 1{,}0 \cdot 10^{-3}\,\text{m}$
 **Sijoitus:** $C = \dfrac{8{,}854 \cdot 10^{-12}\,\text{F/m} \cdot 0{,}025\,\text{m}^2}{1{,}0 \cdot 10^{-3}\,\text{m}} = 221 \cdot 10^{-12}\,\text{F} = 221\,\text{pF}$
 **Vastaus:** $2{,}2 \cdot 10^{2}\,\text{pF} = 220\,\text{pF}$. Laskettu arvo $221\,\text{pF}$ pyöristetään kahteen merkitsevään numeroon, kuten pinta-ala ja etäisyys.
-**Järkevyys:** Suhde $A : d = 0{,}025\,\text{m}^2 : 0{,}0010\,\text{m} = 25\,\text{m}$, ja $25\,\text{m} \cdot 8{,}854\,\text{pF/m} \approx 220\,\text{pF}$. Ilmaeristeisen levykondensaattorin kapasitanssi on tavallisesti satoja pikofaradeja.
+**Järkevyys:** Suhde $A : d = 0{,}025\,\text{m}^2 : 0{,}0010\,\text{m} = 25\,\text{m}$, ja $$25\,\text{m} \cdot 8{,}854\,\text{pF/m} \approx 220\,\text{pF}$$. Ilmaeristeisen levykondensaattorin kapasitanssi on tavallisesti satoja pikofaradeja.
 
 ## fy6-13-L1-05
 **Annettu:** kuvaajan jännite varauksen funktiona, jännite $U = 12\,\text{V}$
@@ -46,9 +46,9 @@
 **Kuvaajan lukeminen:** Jännitteen $12\,\text{V}$ ruudukkoviiva kohtaa suoran kohdassa, jossa varaus on $60\,\mu\text{C}$. Kolmion kanta on siis $60\,\mu\text{C}$ ja korkeus on $12\,\text{V}$.
 **Kaava:** $W = \tfrac{1}{2} Q U$
 **Muunnokset:** Ei tarvita: $\mu\text{C} \cdot \text{V} = \mu\text{J}$, koska $1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$.
-**Sijoitus:** $W = \tfrac{1}{2} \cdot 60\,\mu\text{C} \cdot 12\,\text{V} = 360\,\mu\text{J}$
-**Vastaus:** $360\,\mu\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, koska arvot luetaan ruudukkoviivoilta. Viivojen väli on $10\,\mu\text{C}$ ja $2\,\text{V}$.
-**Järkevyys:** Kapasitanssi on $60\,\mu\text{C} : 12\,\text{V} = 5{,}0\,\mu\text{F}$, ja $\tfrac{1}{2} \cdot 5{,}0\,\mu\text{F} \cdot (12\,\text{V})^2 = 360\,\mu\text{J}$, sama tulos. Suorakulmion $60\,\mu\text{C} \cdot 12\,\text{V} = 720\,\mu\text{J}$ puolikas on kolmio, kuten pitääkin.
+**Sijoitus:** $W = \tfrac{1}{2} \cdot 60\,\mu\text{C} \cdot 12\,\text{V} = 3{,}6 \cdot 10^{2}\,\mu\text{J}$
+**Vastaus:** $3{,}6 \cdot 10^{2}\,\mu\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, koska arvot luetaan ruudukkoviivoilta. Viivojen väli on $10\,\mu\text{C}$ ja $2\,\text{V}$.
+**Järkevyys:** Kapasitanssi on $60\,\mu\text{C} : 12\,\text{V} = 5{,}0\,\mu\text{F}$, ja $\tfrac{1}{2} \cdot 5{,}0\,\mu\text{F} \cdot (12\,\text{V})^2 = 3{,}6 \cdot 10^{2}\,\mu\text{J}$, sama tulos. Suorakulmion $60\,\mu\text{C} \cdot 12\,\text{V} = 720\,\mu\text{J}$ puolikas on kolmio, kuten pitääkin.
 
 ## fy6-13-L2-01
 **Annettu:** paperikerroksen paksuus $d = 0{,}020\,\text{mm}$, läpilyöntilujuus $E_\text{max} = 16\,\text{MV/m}$
@@ -56,9 +56,9 @@
 **Periaate:** Levyjen välissä on homogeeninen kenttä $E = \tfrac{U}{d}$. Läpilyönti tapahtuu, kun kenttä ylittää eristeen läpilyöntilujuuden. Suurin sallittu jännite saadaan, kun kenttä on täsmälleen yhtä suuri kuin läpilyöntilujuus.
 **Kaava:** $E_\text{max} = \dfrac{U_\text{max}}{d}$, josta $U_\text{max} = E_\text{max} d$
 **Muunnokset:** $E_\text{max} = 16\,\text{MV/m} = 16 \cdot 10^{6}\,\text{V/m}$ ja $d = 0{,}020\,\text{mm} = 0{,}020 \cdot 10^{-3}\,\text{m}$
-**Sijoitus:** $U_\text{max} = 16 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 0{,}020 \cdot 10^{-3}\,\text{m} = 320\,\text{V}$
-**Vastaus:** $320\,\text{V}$ eli $3{,}2 \cdot 10^{2}\,\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, kuten paksuudessa ja läpilyöntilujuudessa.
-**Järkevyys:** Yksi millimetri paperia kestäisi $16\,\text{kV}$. Paksuus $0{,}020\,\text{mm}$ on siitä viideskymmenesosa: $16\,000\,\text{V} : 50 = 320\,\text{V}$. Ohut eriste antaa suuren kapasitanssin, mutta se kestää vain pienen jännitteen.
+**Sijoitus:** $U_\text{max} = 16 \cdot 10^{6}\,\tfrac{\text{V}}{\text{m}} \cdot 0{,}020 \cdot 10^{-3}\,\text{m} = 3{,}2 \cdot 10^{2}\,\text{V}$
+**Vastaus:** $3{,}2 \cdot 10^{2}\,\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, kuten paksuudessa ja läpilyöntilujuudessa.
+**Järkevyys:** Yksi millimetri paperia kestäisi $16\,\text{kV}$. Paksuus $0{,}020\,\text{mm}$ on siitä viideskymmenesosa: $16\,000\,\text{V} : 50 = 3{,}2 \cdot 10^{2}\,\text{V}$. Ohut eriste antaa suuren kapasitanssin, mutta se kestää vain pienen jännitteen.
 
 ## fy6-13-L2-02
 **Annettu:** levyn pinta-ala $A = 100\,\text{cm}^2$, eristekerroksen paksuus $d = 0{,}10\,\text{mm}$, kapasitanssi $C = 3{,}3\,\text{nF}$, sähkövakio $\varepsilon_0 = 8{,}854 \cdot 10^{-12}\,\text{F/m}$
@@ -96,9 +96,9 @@
 **Periaate:** Irrotetun kondensaattorin varaus ei voi muuttua, koska varauksella ei ole reittiä levyltä toiselle. Levykondensaattorin kapasitanssi on kääntäen verrannollinen levyjen etäisyyteen. Kun etäisyys kaksinkertaistuu, kapasitanssi puolittuu. Silloin jännite $U = \tfrac{Q}{C}$ kaksinkertaistuu. Energian lisäys on levyjen erilleen vetämiseen tehty työ.
 **Kaava:** $Q = C_1 U_1$, $C_2 = \tfrac{1}{2} C_1$, $U_2 = \dfrac{Q}{C_2}$ ja $\Delta W = \tfrac{1}{2} Q U_2 - \tfrac{1}{2} Q U_1$, josta $\Delta W = \tfrac{1}{2} Q (U_2 - U_1)$
 **Muunnokset:** $C_1 = 120\,\text{pF} = 120 \cdot 10^{-12}\,\text{F}$
-**Sijoitus:** $Q = 120 \cdot 10^{-12}\,\text{F} \cdot 500\,\text{V} = 60 \cdot 10^{-9}\,\text{C}$, $U_2 = \dfrac{60 \cdot 10^{-9}\,\text{C}}{60 \cdot 10^{-12}\,\text{F}} = 1000\,\text{V}$ ja $\Delta W = \tfrac{1}{2} \cdot 60 \cdot 10^{-9}\,\text{C} \cdot 500\,\text{V} = 15 \cdot 10^{-6}\,\text{J}$
-**Vastaus:** $15\,\mu\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kapasitanssissa $120\,\text{pF}$.
-**Järkevyys:** Energia kasvaa $15\,\mu\text{J}$:sta $30\,\mu\text{J}$:iin eli kaksinkertaistuu. Syy on se, että varaus pysyy samana ja jännite kaksinkertaistuu. Energia ei synny tyhjästä: levyt vetävät toisiaan puoleensa, ja niiden erottaminen vaatii työn $15\,\mu\text{J}$.
+**Sijoitus:** $Q = 120 \cdot 10^{-12}\,\text{F} \cdot 500\,\text{V} = 60 \cdot 10^{-9}\,\text{C}$, $U_2 = \dfrac{60 \cdot 10^{-9}\,\text{C}}{60 \cdot 10^{-12}\,\text{F}} = 1000\,\text{V}$ ja $\Delta W = \tfrac{1}{2} \cdot 60 \cdot 10^{-9}\,\text{C} \cdot 500\,\text{V} = 15{,}0 \cdot 10^{-6}\,\text{J}$
+**Vastaus:** $15{,}0\,\mu\text{J}$. Vastauksessa on kolme merkitsevää numeroa, kuten kapasitanssissa $120\,\text{pF}$ ja jännitteessä $500\,\text{V}$.
+**Järkevyys:** Energia kasvaa $15{,}0\,\mu\text{J}$:sta $30{,}0\,\mu\text{J}$:iin eli kaksinkertaistuu. Syy on se, että varaus pysyy samana ja jännite kaksinkertaistuu. Energia ei synny tyhjästä: levyt vetävät toisiaan puoleensa, ja niiden erottaminen vaatii työn $15{,}0\,\mu\text{J}$.
 
 ## fy6-13-L3-02
 **Annettu:** kapasitanssi ilmaeristeisenä $C_1 = 220\,\text{pF}$, jännite $U = 1{,}5\,\text{kV}$, lasin $\varepsilon_\text{r} = 5{,}6$, lähde pysyy kytkettynä
@@ -106,7 +106,7 @@
 **Periaate:** Lähde pitää jännitteen samana koko ajan. Eriste kasvattaa kapasitanssin $\varepsilon_\text{r}$-kertaiseksi. Siksi samalla jännitteellä levyillä on $\varepsilon_\text{r}$-kertainen varaus. Erotuksen tuo lähde.
 **Kaava:** $Q_1 = C_1 U$ ja $Q_2 = \varepsilon_\text{r} C_1 U$, josta $\Delta Q = Q_2 - Q_1 = (\varepsilon_\text{r} - 1) C_1 U$
 **Muunnokset:** $C_1 = 220\,\text{pF} = 220 \cdot 10^{-12}\,\text{F}$ ja $U = 1{,}5\,\text{kV} = 1{,}5 \cdot 1000\,\text{V} = 1500\,\text{V}$
-**Sijoitus:** $\Delta Q = (5{,}6 - 1) \cdot 220 \cdot 10^{-12}\,\text{F} \cdot 1500\,\text{V} = 1{,}518 \cdot 10^{-6}\,\text{C}$
+**Sijoitus:** $$\begin{aligned} \Delta Q &= (5{,}6 - 1) \cdot 220 \cdot 10^{-12}\,\text{F} \\ &\cdot 1500\,\text{V} \\ &= 1{,}518 \cdot 10^{-6}\,\text{C} \end{aligned}$$
 **Vastaus:** $1{,}5\,\mu\text{C}$. Vastauksessa on kaksi merkitsevää numeroa, kuten jännitteessä $1{,}5\,\text{kV}$ ja suhteellisessa permittiivisyydessä $5{,}6$.
 **Järkevyys:** Alussa varaus on $220\,\text{pF} \cdot 1500\,\text{V} = 0{,}33\,\mu\text{C}$. Lasin kanssa varaus on $5{,}6$ kertaa niin suuri eli $1{,}85\,\mu\text{C}$. Lisäys $1{,}5\,\mu\text{C}$ on näiden erotus. Jos lähde olisi irrotettu, varaus ei olisi muuttunut lainkaan.
 
@@ -118,7 +118,7 @@
 **Muunnokset:** $U = 6{,}0\,\text{kV} = 6000\,\text{V}$, $E_\text{max} = 24 \cdot 10^{6}\,\text{V/m}$, $C = 1{,}0 \cdot 10^{-9}\,\text{F}$ ja lopuksi $1\,\text{m}^2 = 100\,\text{cm} \cdot 100\,\text{cm} = 10\,000\,\text{cm}^2$
 **Sijoitus:** $d = \dfrac{2 \cdot 6000\,\text{V}}{24 \cdot 10^{6}\,\text{V/m}} = 5{,}0 \cdot 10^{-4}\,\text{m}$ ja $A = \dfrac{1{,}0 \cdot 10^{-9}\,\text{F} \cdot 5{,}0 \cdot 10^{-4}\,\text{m}}{8{,}854 \cdot 10^{-12}\,\text{F/m} \cdot 2{,}6} \approx 0{,}0217\,\text{m}^2 = 217\,\text{cm}^2$
 **Vastaus:** $220\,\text{cm}^2$ eli $2{,}2 \cdot 10^{2}\,\text{cm}^2$. Vastauksessa on kaksi merkitsevää numeroa, kuten kapasitanssissa ja jännitteessä.
-**Järkevyys:** Eriste on $0{,}50\,\text{mm}$ paksu. Kenttä on siinä $6000\,\text{V} : 0{,}50\,\text{mm} = 12\,\text{MV/m}$, eli puolet läpilyöntilujuudesta. Neliön sivu olisi noin $15\,\text{cm}$. Ohuempi eriste pienentäisi levyjä. Silloin kondensaattori ei kuitenkaan kestäisi jännitettä enää varmasti.
+**Järkevyys:** Eriste on $0{,}50\,\text{mm}$ paksu. Kenttä on siinä $$\begin{aligned} &6000\,\text{V} : 0{,}50\,\text{mm} \\ &= 12\,\text{MV/m} \end{aligned}$$, eli puolet läpilyöntilujuudesta. Neliön sivu olisi noin $15\,\text{cm}$. Ohuempi eriste pienentäisi levyjä. Silloin kondensaattori ei kuitenkaan kestäisi jännitettä enää varmasti.
 
 ## fy6-13-L1-06
 **Kysytty:** mitä kapasitanssille tapahtuu, kun jännite kaksinkertaistuu.
@@ -137,7 +137,7 @@
 **Kaava:** $W = \tfrac{1}{2} C U^2$ ja $\Delta W = W_2 - W_1 = \tfrac{1}{2} C (U_2^2 - U_1^2)$
 **Muunnokset:** $C = 1000\,\mu\text{F} = 1000 \cdot 10^{-6}\,\text{F} = 1{,}0 \cdot 10^{-3}\,\text{F}$
 **Sijoitus:** $W_1 = \tfrac{1}{2} \cdot 1{,}0 \cdot 10^{-3}\,\text{F} \cdot (6{,}0\,\text{V})^2 = 0{,}018\,\text{J}$, $W_2 = \tfrac{1}{2} \cdot 1{,}0 \cdot 10^{-3}\,\text{F} \cdot (18\,\text{V})^2 = 0{,}162\,\text{J}$ ja $\Delta W = 0{,}162\,\text{J} - 0{,}018\,\text{J} = 0{,}144\,\text{J} = 144\,\text{mJ}$
-**Vastaus:** $144\,\text{mJ}$. Vastauksessa on kolme merkitsevää numeroa. Kapasitanssi $1000\,\mu\text{F}$ ja jännite $18\,\text{V}$ antavat tuloksen riittävän tarkasti.
+**Vastaus:** $1{,}4 \cdot 10^{2}\,\text{mJ}$ eli $0{,}14\,\text{J}$. Laskimen arvo on $144\,\text{mJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten jännitteissä $6{,}0\,\text{V}$ ja $18\,\text{V}$.
 **Järkevyys:** Jännite kolminkertaistuu, joten energia kasvaa $3^2 = 9$-kertaiseksi: $W_2 : W_1 = 162\,\text{mJ} : 18\,\text{mJ} = 9$. Kasvu on $9W_1 - W_1 = 8W_1 = 8 \cdot 18\,\text{mJ} = 144\,\text{mJ}$.
 
 ## fy6-13-L1-09
@@ -193,9 +193,9 @@ $W = 7{,}2 \cdot 10^{-3}\,\text{J} = 7{,}2\,\text{mJ}$
 **Kaava:** $W = \tfrac{1}{2} C U^2$
 **Muunnokset:** $C = 220\,\mu\text{F} = 220 \cdot 10^{-6}\,\text{F}$
 **Sijoitus:** $W = \tfrac{1}{2} \cdot 220 \cdot 10^{-6}\,\text{F} \cdot (24\,\text{V})^2 = 0{,}0634\,\text{J} = 63{,}4\,\text{mJ}$
-**Vastaus:** $63\,\text{mJ}$. Vastauksessa on kaksi merkitsevää numeroa, kuten kapasitanssissa ja jännitteessä.
+**Vastaus:** $63\,\text{mJ}$. Vastauksessa on kaksi merkitsevää numeroa. Rajoittava tieto on jännite $24\,\text{V}$. Kapasitanssissa $220\,\mu\text{F}$ on kolme.
 **Mallivastaus virheestä:** Oppilaan laskema $QU = 127\,\text{mJ}$ on lähteen antama energia. Kondensaattoriin varastoituu siitä vain puolet. Latauksen aikana kondensaattorin jännite on aluksi nolla. Se kasvaa vasta vähitellen arvoon $24\,\text{V}$. Varaus ei siis siirry koko ajan täyden jännitteen yli. Toinen puoli, noin $63\,\text{mJ}$, muuttuu johtimien ja vastusten sisäenergiaksi. Se siirtyy lämpönä ympäristöön.
-**Järkevyys:** Varastoitunut energia on $\tfrac{1}{2} \cdot 5{,}28\,\text{mC} \cdot 24\,\text{V} = 63{,}4\,\text{mJ}$, sama tulos. Se on tasan puolet oppilaan luvusta $127\,\text{mJ}$.
+**Järkevyys:** Varastoitunut energia on $$\begin{aligned} &\tfrac{1}{2} \cdot 5{,}28\,\text{mC} \cdot 24\,\text{V} \\ &= 63{,}4\,\text{mJ} \end{aligned}$$, sama tulos. Se on tasan puolet oppilaan luvusta $127\,\text{mJ}$.
 
 ## fy6-13-L3-04
 **Annettu:** latausvirta $I = 15\,\text{mA}$, taulukon pisteet $(t;\ U)$: $(0\,\text{s};\ 0\,\text{V})$, $(2\,\text{s};\ 203\,\text{V})$, $(4\,\text{s};\ 396\,\text{V})$, $(6\,\text{s};\ 607\,\text{V})$, $(8\,\text{s};\ 805\,\text{V})$, $(10\,\text{s};\ 992\,\text{V})$ ja $(12\,\text{s};\ 1201\,\text{V})$, iskun jännite $1{,}8\,\text{kV}$, purkautumisaika $5{,}0\,\text{ms}$
@@ -238,5 +238,18 @@ $W = 7{,}2 \cdot 10^{-3}\,\text{J} = 7{,}2\,\text{mJ}$
 **Kaava:** $C = \dfrac{Q}{U}$ ja $W = \tfrac{1}{2} C U^2$
 **Muunnokset:** $Q = 120\,\mu\text{C} = 120 \cdot 10^{-6}\,\text{C}$ ja lopuksi $1\,\mu\text{J} = 10^{-6}\,\text{J}$
 **Sijoitus:** $C = \dfrac{120 \cdot 10^{-6}\,\text{C}}{8\,\text{V}} = 15 \cdot 10^{-6}\,\text{F}$ ja $W = \tfrac{1}{2} \cdot 15 \cdot 10^{-6}\,\text{F} \cdot (7{,}0\,\text{V})^2 = 3{,}675 \cdot 10^{-4}\,\text{J} = 367{,}5\,\mu\text{J}$
-**Vastaus:** $W \approx 370\,\mu\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteessä $7{,}0\,\text{V}$ on kaksi.
+**Vastaus:** $W \approx 3{,}7 \cdot 10^{2}\,\mu\text{J}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteessä $7{,}0\,\text{V}$ on kaksi.
 **Järkevyys:** Varaus on $Q = CU = 15\,\mu\text{F} \cdot 7{,}0\,\text{V} = 105\,\mu\text{C}$. Energia on $\tfrac{1}{2} QU = \tfrac{1}{2} \cdot 105\,\mu\text{C} \cdot 7{,}0\,\text{V} = 367{,}5\,\mu\text{J}$, sama tulos. Se on pienempi kuin $QU \approx 735\,\mu\text{J}$, kuten pitääkin.
+
+## fy6-13-L2-09
+**Annettu:** aineistosta (PhET-simulaatio *Capacitor Lab: Basics*, suomeksi *Kondensaattorilaboratorio: Perusteet*): paristoon kytketty levykondensaattori. Sen jännitettä, levyjen välimatkaa ja pinta-alaa voi muuttaa. Kohdassa b) kapasitanssi on $C = 1000\,\mu\text{F}$ ja jännite $U = 12\,\text{V}$. Kohdan d) vertailussa on luvun *Akut ja latauspiiri* puhelimen akku: nimellisjännite $3{,}85\,\text{V}$ ja kapasiteetti $5{,}0\,\text{Ah}$.
+**Kysytty:** a) miten varaus riippuu jännitteestä ja miten levyjen välimatka vaikuttaa kapasitanssiin; b) varastoitunut energia $W$ millijouleina; c) energian muutos, kun jännite kasvaa kaksinkertaiseksi; d) kondensaattorin ja akun vertailu energian varastoina ja kummankin käyttökohteet
+**Periaate:** Kapasitanssi on varauksen ja jännitteen suhde. Se riippuu vain kondensaattorin rakenteesta. Ladattaessa jännite kasvaa samassa suhteessa kuin varaus. Varaus siirtyy siksi keskimäärin jännitteen $\tfrac{U}{2}$ yli. Energia on puolet varauksen ja jännitteen tulosta. Kohdan b) kondensaattorista tunnetaan kapasitanssi ja jännite, joten energia saadaan niistä.
+**Kohta a):** Levyjen välimatka ja pinta-ala pysyvät samoina, joten kapasitanssi $C$ ei muutu. Arvopareistasi pitäisi näkyä, että varaus kasvaa samassa suhteessa kuin jännite. Kun jännite kasvaa kaksinkertaiseksi, varaus kasvaa kaksinkertaiseksi. Varaus on siis suoraan verrannollinen jännitteeseen, $Q = CU$. Suhde $\tfrac{Q}{U}$ on jokaisessa arvoparissa sama. Se on kapasitanssi. Kun levyt siirretään kauemmas toisistaan, kapasitanssi pienenee. Kun välimatka kasvaa kaksinkertaiseksi, kapasitanssi pienenee puoleen. Kapasitanssi on kääntäen verrannollinen välimatkaan. Saman sanoo kaava $C = \dfrac{\varepsilon_0 \varepsilon_\text{r} A}{d}$. Paristo pitää jännitteen samana, joten myös varaus $Q = CU$ pienenee. Omat lukemasi riippuvat asetuksista, jotka valitsit. Seuraava on esimerkkilasku. Se ei ole simulaation lukema. Levyjen välissä on ilmaa ($\varepsilon_\text{r} \approx 1{,}0$). Kerroin $\varepsilon_\text{r}$ jää siksi pois. Levyn pinta-ala on $A = 2{,}0\,\text{cm}^2 = 2{,}0 \cdot 10^{-4}\,\text{m}^2$ ja välimatka $d = 4{,}0\,\text{mm}$. Silloin $$\begin{aligned} C &= \dfrac{\varepsilon_0 A}{d} \\ &= \dfrac{8{,}854 \cdot 10^{-12}\,\tfrac{\text{F}}{\text{m}} \cdot 2{,}0 \cdot 10^{-4}\,\text{m}^2}{4{,}0 \cdot 10^{-3}\,\text{m}} \\ &\approx 0{,}44\,\text{pF} \end{aligned}$$. Välimatkalla $8{,}0\,\text{mm}$ sama lasku antaa $0{,}22\,\text{pF}$. Se on puolet. Jännitteellä $1{,}5\,\text{V}$ ensimmäisen kondensaattorin varaus on $$\begin{aligned} Q &= CU \\ &= 0{,}44\,\text{pF} \cdot 1{,}5\,\text{V} \\ &\approx 0{,}66\,\text{pC} \end{aligned}$$.
+**Kaava:** Kohta b): $W = \tfrac{1}{2} Q U$ ja $Q = CU$, joten $W = \tfrac{1}{2} C U^2$
+**Muunnokset:** $C = 1000\,\mu\text{F} = 1000 \cdot 10^{-6}\,\text{F}$, lopuksi $1\,\text{mJ} = 10^{-3}\,\text{J}$ ja kohdan d) vertailussa $1\,\text{Wh} = 3600\,\text{J}$
+**Sijoitus:** $W = \tfrac{1}{2} \cdot 1000 \cdot 10^{-6}\,\text{F} \cdot (12\,\text{V})^2 = 0{,}072\,\text{J} = 72\,\text{mJ}$
+**Kohta c):** Jännite on nyt $2U$, ja kapasitanssi on sama. Energia on $$\begin{aligned} W_2 &= \tfrac{1}{2} C (2U)^2 \\ &= 4 \cdot \tfrac{1}{2} C U^2 \\ &= 4W \end{aligned}$$. Energia kasvaa nelinkertaiseksi, koska se on verrannollinen jännitteen neliöön. Varaus $Q = CU$ kasvaa kaksinkertaiseksi, ja se siirtyy keskimäärin kaksinkertaisen jännitteen yli. Kohdan b) kondensaattorille $$\begin{aligned} W_2 &= 4 \cdot 0{,}072\,\text{J} \\ &= 0{,}288\,\text{J} \\ &\approx 0{,}29\,\text{J} \end{aligned}$$. Voit tarkistaa saman simulaatiossa. Kasvata pariston jännite kaksinkertaiseksi, mutta älä muuta levyjä. Energian lukeman pitäisi kasvaa nelinkertaiseksi.
+**Kohta d):** Kondensaattorissa energia on levyjen välisessä sähkökentässä. Latauksessa ja purkautumisessa ei tapahdu kemiallista reaktiota. Siksi kondensaattori voi ottaa ja luovuttaa energiansa hyvin nopeasti. Se kestää myös hyvin monta lataus- ja purkukertaa. Energiaa siihen mahtuu kuitenkin vähän. Akussa energia on varastoitunut kemiallisena energiana. Sitä mahtuu samankokoiseen laitteeseen paljon enemmän. Akku luovuttaa energiansa pitkän ajan kuluessa. Akun sisäinen resistanssi rajoittaa virtaa (luku *Lähdejännite ja sisäinen resistanssi*). Esimerkki: luvun *Akut ja latauspiiri* puhelimen akun energia on $$\begin{aligned} W_\text{akku} &= UQ \\ &= 3{,}85\,\text{V} \cdot 5{,}0\,\text{Ah} \\ &= 19{,}25\,\text{Wh} \\ &= 69\,300\,\text{J} \end{aligned}$$. Se on $69\,300\,\text{J} : 0{,}072\,\text{J} \approx 9{,}6 \cdot 10^{5}$ eli noin miljoona kertaa niin suuri kuin kohdan b) kondensaattorin energia. Kondensaattori sopii käyttöön, jossa tarvitaan lyhyen aikaa suuri teho tai nopea lataus. Esimerkkejä ovat kameran salama, jännitteen tasaaminen elektroniikassa ja lyhyet tehohuiput. Superkondensaattorilla eli kondensaattorilla, jonka kapasitanssi on hyvin suuri, voidaan ottaa talteen jarrutusenergiaa. Akku sopii käyttöön, jossa energiaa tarvitaan paljon ja pitkään. Esimerkkejä ovat puhelin, sähköpyörä ja sähköauto.
+**Vastaus:** $72\,\text{mJ}$ eli $0{,}072\,\text{J}$. Vastauksessa on kaksi merkitsevää numeroa kuten jännitteessä $12\,\text{V}$. Kapasitanssi $1000\,\mu\text{F}$ on nolliin päättyvä kokonaisluku, ja se tulkitaan tarkaksi. Kun jännite kasvaa kaksinkertaiseksi, energia kasvaa nelinkertaiseksi, noin $0{,}29\,\text{J}$:een.
+**Järkevyys:** Varaus on $Q = CU = 1000 \cdot 10^{-6}\,\text{F} \cdot 12\,\text{V} = 0{,}012\,\text{C}$, ja $\tfrac{1}{2} QU = \tfrac{1}{2} \cdot 0{,}012\,\text{C} \cdot 12\,\text{V} = 0{,}072\,\text{J}$. Tulos on sama. Yksikkö on oikea: $1\,\text{F} \cdot 1\,\text{V}^2 = 1\,\tfrac{\text{C}}{\text{V}} \cdot 1\,\text{V}^2 = 1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$. Energia on pieni akun energiaan verrattuna. Kohdan d) vertailu näyttää sen.

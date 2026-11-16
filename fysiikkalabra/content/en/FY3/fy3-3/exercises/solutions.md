@@ -26,7 +26,7 @@
 **Conversions:** The temperature in kelvins is converted to degrees Celsius with this formula; no other unit conversions are needed.
 **Substitution:** $\theta = (77.4 - 273.15)\,{}^\circ\text{C} = -195.75\,{}^\circ\text{C}$
 **Answer:** $-196\,{}^\circ\text{C}$, three significant figures like the value $77.4\,\text{K}$ (the exact constant $273.15$ does not limit the result; to one decimal place the result would be $-195.8\,{}^\circ\text{C}$).
-**Reasonableness:** Nitrogen is the main component of air and liquefies only at very low temperatures: the result is clearly below the freezing point of water, $0\,{}^\circ\text{C}$, but above absolute zero, $-273.15\,{}^\circ\text{C}$. Check by converting back: $-195.75 + 273.15 = 77.4\,\text{K}$. Estimate: $77 - 273 \approx -196$.
+**Reasonableness:** Nitrogen is the main component of air and liquefies only at very low temperatures: the result is clearly below the freezing point of water, $0\,{}^\circ\text{C}$, but above absolute zero, $-273.15\,{}^\circ\text{C}$. Check by converting back: $$\begin{aligned} &-195.75 + 273.15 \\ &= 77.4\,\text{K} \end{aligned}$$. Estimate: $77 - 273 \approx -196$.
 
 ## fy3-3-L1-04
 **Given:** $\theta_1 = 20\,{}^\circ\text{C}$, $\theta_2 = 45\,{}^\circ\text{C}$
@@ -51,7 +51,7 @@
 ## fy3-3-L1-06
 **Find:** whether the gas in a sealed cylinder is a closed or an open system.
 **Principle:** A system is closed if no matter can leave it and none can enter. Energy can still cross the boundary. The piston is part of the boundary of the system: when it moves, the volume changes, but no matter crosses the boundary.
-**Model answer:** The gas is a closed system, because no matter crosses its boundary, even though energy can be transferred and the volume can change. A system would become open only if matter could get out or in, for example if the cylinder leaked. Heating and compression change the state variables, that is, the temperature, the pressure and the volume, but they do not make the system open. The temperature of a closed system is not constant either.
+**Model answer:** The gas is a closed system, because no matter crosses its boundary, even though energy can be transferred and the volume can change. A system would become open only if matter could get out or in, for example if the cylinder leaked. Heating and compression change the state variables, that is, the temperature, the pressure and the volume, but they do not make the system open. The temperature of a closed system is not necessarily constant either.
 
 ## fy3-3-L1-07
 **Given:** $\theta = -18\,{}^\circ\text{C}$
@@ -86,7 +86,7 @@
 **Conversions:** No conversions are needed: the pressures are in the same unit, and the temperature difference $\theta_2 - \theta_1$ is the same in degrees Celsius and in kelvins. The unit of the slope is $\tfrac{\text{kPa}}{{}^\circ\text{C}}$.
 **Substitution:** $k = \dfrac{(123 - 90.0)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0.33\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, and $p = 90.0\,\text{kPa} + 0.33\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot 35\,{}^\circ\text{C} = 101.55\,\text{kPa}$
 **Answer:** $102\,\text{kPa}$. The pressure difference $\Delta p = 123 - 90.0 = 33\,\text{kPa}$ has two figures, so $k = 0.33\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ and $k\theta \approx 12\,\text{kPa}$; the sum $90.0 + 12 = 102\,\text{kPa}$ is rounded to whole kilopascals.
-**Reasonableness:** The temperature $35\,{}^\circ\text{C}$ is $35\,\%$ of the way from $0\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$, so the pressure must be $35\,\%$ of the way through the range $90.0\ldots123\,\text{kPa}$: $90.0 + 0.35 \cdot 33 = 101.55\,\text{kPa}$. The result is between the pressures of the points and below the mean of the range, $106.5\,\text{kPa}$.
+**Reasonableness:** The temperature $35\,{}^\circ\text{C}$ is $35\,\%$ of the way from $0\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$, so the pressure must be $35\,\%$ of the way through the range $90.0\ldots123\,\text{kPa}$: $$\begin{aligned} &90.0 + 0.35 \cdot 33 \\ &= 101.55\,\text{kPa} \end{aligned}$$. The result is between the pressures of the points and below the mean of the range, $106.5\,\text{kPa}$.
 
 ## fy3-3-L2-03
 **Given:** reading from the graph, the points $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ and $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$; the pressure depends linearly on the temperature, also outside the measured range
@@ -95,7 +95,7 @@
 **Reading the graph:** The data points are at temperatures $0\ldots 100\,{}^\circ\text{C}$. The first point is at a crossing of the grid, $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$, and the last point is slightly above the $100\,\text{kPa}$ line, at $102.5\,\text{kPa}$. From these two points the slope of the line is calculated, and the line is continued to the left to the temperature $-100\,{}^\circ\text{C}$. If you draw the line by eye, you get a value of $45$–$50\,\text{kPa}$, which is accepted.
 **Formula:** $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and $p = p_1 + k(\theta - \theta_1)$
 **Conversions:** No conversions are needed: the pressures are in kilopascals, and the temperature differences are the same in degrees Celsius and in kelvins.
-**Substitution:** $k = \dfrac{(102.5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, and $p = 75\,\text{kPa} + 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-100 - 0)\,{}^\circ\text{C} = 75\,\text{kPa} - 27.5\,\text{kPa} = 47.5\,\text{kPa}$
+**Substitution:** $k = \dfrac{(102.5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, and $$\begin{aligned} p &= 75\,\text{kPa} \\ &+ 0.275\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot (-100 - 0)\,{}^\circ\text{C} \\ &= 75\,\text{kPa} - 27.5\,\text{kPa} \\ &= 47.5\,\text{kPa} \end{aligned}$$
 **Answer:** $p \approx 48\,\text{kPa}$, two significant figures, because the pressure difference $27.5\,\text{kPa}$ read from the graph is a three-figure value but the reading accuracy is about $1\,\text{kPa}$.
 **Reasonableness:** The temperature is below the measured range, so the pressure must be lower than the lowest measured value, $75\,\text{kPa}$, but clearly above zero. An independent check: if the pressure is proportional to the temperature in kelvins, $p \approx 75\,\text{kPa} \cdot \dfrac{173.15\,\text{K}}{273.15\,\text{K}} = 47.5\,\text{kPa}$, which is the same.
 
@@ -233,7 +233,7 @@ T_3 &= 293.15\,\text{K} \cdot \frac{1001\,\text{kPa}}{701\,\text{kPa}} \\
 \end{aligned}$$
 So the kinetic energy increases by $13.6\,\%$.
 **Answer:** $145\,{}^\circ\text{C}$ (exactly $145.46\,{}^\circ\text{C}$), three significant figures like the atmospheric pressure $101\,\text{kPa}$. Other results: the total pressure is $797\,\text{kPa}$ and the gauge pressure $696\,\text{kPa}$ at $60.0\,{}^\circ\text{C}$ (the valve does not open), and the kinetic energy increases by $13.6\,\%$. The total pressure increases by a factor of $796.7 : 701 = 1.136$, or $13.6\,\%$, the same as the kinetic energy, but the gauge pressure increases by a factor of $695.7 : 600 = 1.16$, or $16\,\%$. The total pressure is proportional to the temperature in kelvins, because it arises from the collisions of the particles; the gauge pressure is the difference between the total pressure and the atmospheric pressure.
-**Reasonableness:** When the valve opens, the total pressure increases by the ratio $1001 : 701 = 1.43$, so the temperature in kelvins must increase by the same factor: $293 \cdot 1.43 \approx 419\,\text{K}$, which matches the order of magnitude of the result $418.61\,\text{K} - 273.15 = 145.46\,{}^\circ\text{C} \approx 145\,{}^\circ\text{C}$. The $60\,{}^\circ\text{C}$ inside a car is clearly below $145\,{}^\circ\text{C}$, so the valve does not open. If the gauge pressure were taken as proportional, the wrong result would be $293.15 \cdot 1.5 - 273.15 \approx 167\,{}^\circ\text{C}$.
+**Reasonableness:** When the valve opens, the total pressure increases by the ratio $1001 : 701 = 1.43$, so the temperature in kelvins must increase by the same factor: $293 \cdot 1.43 \approx 419\,\text{K}$, which matches the order of magnitude of the result $418.61\,\text{K} - 273.15 = 145.46\,{}^\circ\text{C} \approx 145\,{}^\circ\text{C}$. The $60\,{}^\circ\text{C}$ inside a car is clearly below $145\,{}^\circ\text{C}$, so the valve does not open. If the gauge pressure were taken as proportional, the wrong result would be $$\begin{aligned} &293.15 \cdot 1.5 - 273.15 \\ &\approx 167\,{}^\circ\text{C} \end{aligned}$$.
 
 ## fy3-3-L1-09
 **Find:** the unit of the constant $c$ when $p = c\,T$, the pressure is in the unit $\text{kPa}$ and the temperature in the unit $\text{K}$
@@ -246,7 +246,7 @@ Substitute the units:
 
 $[c] = \dfrac{\text{kPa}}{\text{K}}$
 
-Check: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, so $c\,T$ is a pressure. The answer is therefore $\tfrac{\text{kPa}}{\text{K}}$. The option $\text{kPa} \cdot \text{K}$ multiplies the units although $c$ is obtained by dividing. The option $\tfrac{\text{K}}{\text{kPa}}$ is the division upside down, and the option $\text{kPa}$ forgets the unit of temperature. With the example values $p = 120\,\text{kPa}$ and $T = 300\,\text{K}$ we get $c = 120\,\text{kPa} : 300\,\text{K} = 0.40\,\tfrac{\text{kPa}}{\text{K}}$.
+Check: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, so $c\,T$ is a pressure. The answer is therefore $\tfrac{\text{kPa}}{\text{K}}$. The option $\text{kPa} \cdot \text{K}$ multiplies the units although $c$ is obtained by dividing. The option $\tfrac{\text{K}}{\text{kPa}}$ is the division upside down, and the option $\text{kPa}$ forgets the unit of temperature. With the example values $p = 120\,\text{kPa}$ and $T = 300\,\text{K}$ we get $$\begin{aligned} c &= 120\,\text{kPa} : 300\,\text{K} \\ &= 0.40\,\tfrac{\text{kPa}}{\text{K}} \end{aligned}$$.
 
 ## fy3-3-L1-10
 **Given:** from the table (MAFY table *Aineiden olomuodon muutokset: Kaasut*, nitrogen, boiling point) $\theta = -196\,{}^\circ\text{C}$
@@ -256,7 +256,7 @@ Check: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, so $c\,T$ is 
 **Conversions:** The Celsius reading is substituted as a number: $\theta = -196$, and the result is in kelvins.
 **Substitution:** $T = (-196 + 273.15)\,\text{K} = 77.15\,\text{K}$
 **Answer:** $T \approx 77\,\text{K}$, two significant figures, because the table value $-196\,{}^\circ\text{C}$ is given in whole degrees. The value $-196\,{}^\circ\text{C}$ is from the MAFY table *Aineiden olomuodon muutokset: Kaasut*; tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
-**Reasonableness:** The kelvin reading is positive, as it must be: the kelvin scale has no negative readings. The temperature is close to absolute zero, only about $77\,\text{K}$ above it, so the nitrogen is really cold. Check: $77.15\,\text{K} - 273.15\,\text{K} = -196\,{}^\circ\text{C}$.
+**Reasonableness:** The kelvin reading is positive, as it must be: the kelvin scale has no negative readings. The temperature is close to absolute zero, only about $77\,\text{K}$ above it, so the nitrogen is really cold. Check: $$\begin{aligned} &77.15\,\text{K} - 273.15\,\text{K} \\ &= -196\,{}^\circ\text{C} \end{aligned}$$.
 
 ## fy3-3-L2-08
 **Given:** points read from the graph: the first point $(0\,{}^\circ\text{C};\ 75\,\text{kPa})$ is at a grid crossing, and the last point, at $100\,{}^\circ\text{C}$, is a little above the grid line $100\,\text{kPa}$, about $102.5\,\text{kPa}$. The pressure is $p = 100\,\text{kPa}$.
@@ -267,4 +267,4 @@ Check: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, so $c\,T$ is 
 **Conversions:** No conversions are needed: the pressure is in kilopascals and the temperature in degrees Celsius.
 **Substitution:** $\theta = \dfrac{(100 - 75)\,\text{kPa}}{0.275\,\text{kPa}/{}^\circ\text{C}} = 90.9\,{}^\circ\text{C}$
 **Answer:** $\theta \approx 91\,{}^\circ\text{C}$, two significant figures, because the pressure can be read from the graph to about one kilopascal. Because of the reading error, a value within $8\,\%$, $84$ to $98\,{}^\circ\text{C}$, is accepted.
-**Reasonableness:** The pressure $100\,\text{kPa}$ lies between the points $(75\,{}^\circ\text{C};\ 96\,\text{kPa})$ and $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$, closer to the latter, so the temperature must be between $75$ and $100\,{}^\circ\text{C}$, nearer the upper end. Check: $75\,\text{kPa} + 0.275\,\text{kPa}/{}^\circ\text{C} \cdot 90.9\,{}^\circ\text{C} = 100\,\text{kPa}$.
+**Reasonableness:** The pressure $100\,\text{kPa}$ lies between the points $(75\,{}^\circ\text{C};\ 96\,\text{kPa})$ and $(100\,{}^\circ\text{C};\ 102.5\,\text{kPa})$, closer to the latter, so the temperature must be between $75$ and $100\,{}^\circ\text{C}$, nearer the upper end. Check: $$\begin{aligned} &75\,\text{kPa} + 0.275\,\text{kPa}/{}^\circ\text{C} \cdot 90.9\,{}^\circ\text{C} \\ &= 100\,\text{kPa} \end{aligned}$$.

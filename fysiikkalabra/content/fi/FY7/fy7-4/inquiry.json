@@ -210,7 +210,7 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella: miten lukeman muutos riippuu virrasta ja sen suunnasta, ja miten johtimen kulmasta? Laske kokeen 1 luvuista voima, jonka kenttä kohdistaa johtimeen virralla $6{,}0\\,\\text{A}$, ja määritä magneetin A magneettivuon tiheys, kun kentässä on $5{,}0\\,\\text{cm}$ johdinta.",
-      "model": "Ilman virtaa lukema on $245{,}30\\,\\text{g}$. Virralla $3{,}0\\,\\text{A}$ muutos on $1{,}22\\,\\text{g}$ ja virralla $6{,}0\\,\\text{A}$ $2{,}45\\,\\text{g}$, joten muutos on verrannollinen virtaan; negatiivisilla virroilla lukema pienenee yhtä paljon. Virralla $6{,}0\\,\\text{A}$ voima on $F = \\Delta m \\cdot g = 0{,}00245\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 = 0{,}0240\\,\\text{N}$, joten $B = F : (I l) = 0{,}0240\\,\\text{N} : (6{,}0\\,\\text{A} \\cdot 0{,}050\\,\\text{m}) = 0{,}080\\,\\text{T}$. Kokeessa 2 muutos pieneni kulmassa $30^\\circ$ puoleen, $1{,}22\\,\\text{g}$:aan, ja kulmassa $0^\\circ$ nollaan, joten voima on verrannollinen kulman siniin: $F = I l B \\sin\\alpha$. Arvot ovat mallin laskemia; oikeassa virtavaa'assa lukemat vaihtelisivat hieman.",
+      "model": "Ilman virtaa lukema on $245{,}30\\,\\text{g}$. Virralla $3{,}0\\,\\text{A}$ muutos on $1{,}22\\,\\text{g}$ ja virralla $6{,}0\\,\\text{A}$ $2{,}45\\,\\text{g}$, joten muutos on verrannollinen virtaan; negatiivisilla virroilla lukema pienenee yhtä paljon. Virralla $6{,}0\\,\\text{A}$ voima on $$\\begin{aligned} F &= \\Delta m \\cdot g \\\\ &= 0{,}00245\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &= 0{,}0240\\,\\text{N} \\end{aligned}$$, joten $$\\begin{aligned} B &= F : (I l) \\\\ &= 0{,}0240\\,\\text{N} : (6{,}0\\,\\text{A} \\cdot 0{,}050\\,\\text{m}) \\\\ &= 0{,}080\\,\\text{T} \\end{aligned}$$. Kokeessa 2 muutos pieneni kulmassa $30^\\circ$ puoleen, $1{,}22\\,\\text{g}$:aan, ja kulmassa $0^\\circ$ nollaan, joten voima on verrannollinen kulman siniin: $F = I l B \\sin\\alpha$. Arvot ovat mallin laskemia; oikeassa virtavaa'assa lukemat vaihtelisivat hieman.",
       "criteria": [
         "Kerroin, että lukeman muutos on verrannollinen virtaan ja vaihtaa merkkiä, kun virran suunta kääntyy.",
         "Laskin voiman lukeman muutoksesta yhtälöllä $F = \\Delta m \\cdot g$ ja muunsin grammat kilogrammoiksi.",
@@ -257,11 +257,11 @@
         {
           "text": "Kaavassa pitää olla $\\sin\\alpha$, koska voimaa synnyttää kentän johtimeen kohtisuora komponentti. Oikea tulos on $0{,}15\\,\\text{N}$.",
           "correct": true,
-          "feedback": "Oikein. Kulma on johtimen ja kentän välinen, ja kentän johtimeen kohtisuora komponentti on $B \\sin\\alpha$. Siksi $F = 5{,}0\\,\\text{A} \\cdot 0{,}20\\,\\text{m} \\cdot 0{,}30\\,\\text{T} \\cdot 0{,}5 = 0{,}15\\,\\text{N}$. Tarkistus rajatapauksella: kentän suuntaisessa johtimessa ($\\alpha = 0^\\circ$) voiman on oltava nolla, mutta kosini antaisi suurimman voiman."
+          "feedback": "Oikein. Kulma on johtimen ja kentän välinen, ja kentän johtimeen kohtisuora komponentti on $B \\sin\\alpha$. Siksi $$\\begin{aligned} F &= 5{,}0\\,\\text{A} \\cdot 0{,}20\\,\\text{m} \\cdot 0{,}30\\,\\text{T} \\cdot 0{,}5 \\\\ &= 0{,}15\\,\\text{N} \\end{aligned}$$. Tarkistus rajatapauksella: kentän suuntaisessa johtimessa ($\\alpha = 0^\\circ$) voiman on oltava nolla, mutta kosini antaisi suurimman voiman."
         },
         {
           "text": "Johtimen pituus olisi pitänyt sijoittaa senttimetreinä, $20\\,\\text{cm}$.",
-          "feedback": "Pituus on oikein muunnettu metreiksi: $20\\,\\text{cm} = 20 \\cdot 0{,}01\\,\\text{m} = 0{,}20\\,\\text{m}$. Kun $\\text{T} = \\tfrac{\\text{N}}{\\text{A}\\cdot\\text{m}}$, tulos on newtoneina vain, jos pituus on metreinä. Virhe on kulman funktiossa."
+          "feedback": "Pituus on oikein muunnettu metreiksi: $$\\begin{aligned} 20\\,\\text{cm} &= 20 \\cdot 0{,}01\\,\\text{m} \\\\ &= 0{,}20\\,\\text{m} \\end{aligned}$$. Kun $\\text{T} = \\tfrac{\\text{N}}{\\text{A}\\cdot\\text{m}}$, tulos on newtoneina vain, jos pituus on metreinä. Virhe on kulman funktiossa."
         },
         {
           "text": "Kulmaa ei pidä ottaa huomioon lainkaan, koska kulma vaikuttaa vain voiman suuntaan: $F = I l B = 0{,}30\\,\\text{N}$.",
@@ -340,7 +340,7 @@
       "hints": [
         "Mikä kentän komponentti synnyttää voiman: johtimen suuntainen vai johdinta vastaan kohtisuora?",
         "$F = I l B \\sin\\alpha$, missä $\\alpha$ on johtimen ja kentän välinen kulma.",
-        "$F = 4{,}0\\,\\text{A} \\cdot 0{,}50\\,\\text{m} \\cdot 0{,}20\\,\\text{T} \\cdot \\sin 30^\\circ$."
+        "$$\\begin{aligned} &F \\\\ &= 4{,}0\\,\\text{A} \\cdot 0{,}50\\,\\text{m} \\cdot 0{,}20\\,\\text{T} \\cdot \\sin 30^\\circ \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -352,7 +352,7 @@
           "feedback": "Tämä on voima kohtisuorassa johtimessa. Kulmassa $30^\\circ$ voima on $\\sin 30^\\circ = 0{,}5$ kertaa tämä."
         }
       ],
-      "solution": "**Annettu:** $B = 0{,}20\\,\\text{T}$, $l = 0{,}50\\,\\text{m}$, $I = 4{,}0\\,\\text{A}$, johtimen ja kentän välinen kulma $\\alpha = 30^\\circ$\n\n**Kysytty:** johtimeen kohdistuva voima $F$ newtoneina\n\n**Periaate:** Kenttä on homogeeninen ja johdin suora, joten voima on $F = I l B \\sin\\alpha$. Johdin on vinossa, joten voimaa synnyttää vain kentän johtimeen kohtisuora komponentti $B \\sin\\alpha$.\n\n**Kaava:** $F = I l B \\sin\\alpha$\n\n**Muunnokset:** Ei tarvita: suureet ovat SI-yksiköissä, ja $\\text{A} \\cdot \\text{m} \\cdot \\text{T} = \\text{N}$.\n\n**Sijoitus:** $F = 4{,}0\\,\\text{A} \\cdot 0{,}50\\,\\text{m} \\cdot 0{,}20\\,\\text{T} \\cdot \\sin 30^\\circ = 0{,}40\\,\\text{N} \\cdot 0{,}5 = 0{,}20\\,\\text{N}$\n\n**Vastaus:** $0{,}20\\,\\text{N}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.\n\n**Järkevyys:** Kohtisuorassa johtimessa voima olisi $0{,}40\\,\\text{N}$. Vinossa johtimessa sen on oltava pienempi, ja kulmassa $30^\\circ$ se on täsmälleen puolet, koska $\\sin 30^\\circ = 0{,}5$."
+      "solution": "**Annettu:** $B = 0{,}20\\,\\text{T}$, $l = 0{,}50\\,\\text{m}$, $I = 4{,}0\\,\\text{A}$, johtimen ja kentän välinen kulma $\\alpha = 30^\\circ$\n\n**Kysytty:** johtimeen kohdistuva voima $F$ newtoneina\n\n**Periaate:** Kenttä on homogeeninen ja johdin suora, joten voima on $F = I l B \\sin\\alpha$. Johdin on vinossa, joten voimaa synnyttää vain kentän johtimeen kohtisuora komponentti $B \\sin\\alpha$.\n\n**Kaava:** $F = I l B \\sin\\alpha$\n\n**Muunnokset:** Ei tarvita: suureet ovat SI-yksiköissä, ja $\\text{A} \\cdot \\text{m} \\cdot \\text{T} = \\text{N}$.\n\n**Sijoitus:** $$\\begin{aligned} &F \\\\ &= 4{,}0\\,\\text{A} \\cdot 0{,}50\\,\\text{m} \\cdot 0{,}20\\,\\text{T} \\cdot \\sin 30^\\circ \\\\ &= 0{,}40\\,\\text{N} \\cdot 0{,}5 \\\\ &= 0{,}20\\,\\text{N} \\end{aligned}$$\n\n**Vastaus:** $0{,}20\\,\\text{N}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.\n\n**Järkevyys:** Kohtisuorassa johtimessa voima olisi $0{,}40\\,\\text{N}$. Vinossa johtimessa sen on oltava pienempi, ja kulmassa $30^\\circ$ se on täsmälleen puolet, koska $\\sin 30^\\circ = 0{,}5$."
     },
     {
       "id": "tarkistus-3",

@@ -43,4 +43,20 @@ a["fy4-9-L3-05"] = 0.60 * g + 0.60 * (v_out - v_in) / 0.012   # N_ka = m g + m �
 # Level 2 addition (figure task)
 Fm, T = 900.0, 0.012                                 # kick graph: triangle, peak 900 N, contact 12 ms
 a["fy4-9-L2-08"] = (0.5 * Fm * T) / T               # F_ka = I / Δt = 5,4 N·s / 0,012 s = 450 N
+# Level 2 addition L2-09 (teacher's brief FY4-A3, data task on NASA's video of the mass measurement device SLAMMD):
+# a written task, its answer is a string, so no number in a; every number of its model solution is computed here.
+# The values are example values of the student's own method in part c), not measured data and not from the source.
+F9, dt9, dv9 = 20.0, 0.50, 0.125                     # method 1: known constant push 20,0 N for 0,50 s, velocity change 0,125 m/s
+I9 = F9 * dt9                                        # impulse I = F Δt = 10 N·s
+m9 = I9 / dv9                                        # I = Δp = m Δv, so m = F Δt / Δv = 80 kg (two figures as 0,50 s)
+a9 = dv9 / dt9                                       # the same with Newton II: a = Δv / Δt = 0,25 m/s², m = F / a = 80 kg
+assert abs(m9 - 80) < 1e-9 and abs(F9 / a9 - m9) < 1e-9
+m1, u1, u2 = 10.0, 0.40, 0.050                       # method 2: known 10,0 kg leaves at 0,40 m/s, the unknown body at 0,050 m/s
+p1 = m1 * u1                                         # momentum of the known body: p1 = m1 v1 = 4,0 kg·m/s
+m2 = p1 / u2                                         # equal and opposite impulses from rest: m1 v1 = m2 v2, m2 = 80 kg
+assert abs(p1 - 4.0) < 1e-9 and abs(m2 - 80) < 1e-9
+dv_err = 0.130                                       # part d): Δv read 0,130 m/s instead of 0,125 m/s (4 % too large)
+m_err = I9 / dv_err                                  # m = 76,9 kg ≈ 77 kg
+rel_dv, rel_m = dv_err / dv9 - 1, m_err / m9 - 1     # +4,0 % in Δv gives −3,8 % in m: about the same relative error
+assert round(m_err) == 77 and round(rel_dv * 100) == 4 and round(rel_m * 100) == -4
 print(json.dumps(a))

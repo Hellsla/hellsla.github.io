@@ -162,7 +162,7 @@
       "unit": "g",
       "tolerance": 0.05,
       "data": {
-        "caption": "Narun voima (esimerkkiaineisto)",
+        "caption": "Narun voima",
         "columns": [
           "$v\\,(\\text{m/s})$",
           "$F\\,(\\text{N})$"
@@ -203,7 +203,7 @@
       "tolerance": 0.03,
       "fbd": "equations",
       "data": {
-        "caption": "Liukumaton ajo (esimerkkiaineisto)",
+        "caption": "Liukumaton ajo",
         "columns": [
           "$r\\,(\\text{m})$",
           "$v\\,(\\text{m/s})$"
@@ -328,7 +328,7 @@
       "tolerance": 0.02,
       "fbd": "equations",
       "data": {
-        "caption": "Silmukan mittaukset (esimerkkiaineisto)",
+        "caption": "Silmukan mittaukset",
         "columns": [
           "Kohta",
           "$v\\,(\\text{m/s})$",
@@ -364,7 +364,7 @@
     {
       "id": "fy5-4-L3-06",
       "level": 3,
-      "text": "Auton massa on $1200\\,\\text{kg}$. Auto ajaa vaakasuoran, pyöreän kaarteen tasaisella nopeudella. Kuvaaja näyttää kitkavoiman $F$, jota auto tarvitsee kaarteessa. Voima on ratanopeuden $v$ funktio. Auto ajaa kaarteen nopeudella $20\\,\\text{m/s}$. Lue kuvaajasta tarvittava kitkavoima. Laske sitten, kuinka suuri lepokitkakertoimen $\\mu_0$ on vähintään oltava, jotta auto pysyy tiellä. Kitka on ainoa vaakasuuntainen voima. Suurin lepokitka on $\\mu_0 N$. Vastauslaatikkoon tulee kitkakertoimen arvo.",
+      "text": "Auton massa on $1200\\,\\text{kg}$. Auto ajaa vaakasuoran, pyöreän kaarteen tasaisella nopeudella. Kuvaaja näyttää kitkavoiman $F$, jota auto tarvitsee kaarteessa. Voima on ratanopeuden $v$ funktio. Auto ajaa kaarteen nopeudella $20\\,\\text{m/s}$. Lue kuvaajasta tarvittava kitkavoima. Laske sitten, kuinka suuri lepokitkakertoimen $\\mu_0$ on vähintään oltava, jotta auto pysyy tiellä. Kitka on ainoa vaakasuuntainen voima. Täysin kehittynyt lepokitka eli lähtökitka (lepokitkan suurin arvo) on $\\mu_0 N$. Vastauslaatikkoon tulee kitkakertoimen arvo.",
       "figure": "fy5-4/kuvaaja-b",
       "answer": 0.68,
       "unit": "",

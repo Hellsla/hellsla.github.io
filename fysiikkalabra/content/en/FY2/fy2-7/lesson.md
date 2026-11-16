@@ -519,7 +519,12 @@ E_\text{loss} &= E_\text{sent} - E_\text{arrived} \\
 
 <!-- vaihe -->
 
-**Reasonableness.** Ten per cent of $245\,\text{MWh}$ would be $24.5\,\text{MWh}$, and $9.0\,\%$ is slightly less, so a loss of $22\,\text{MWh}$ is of the right size. Also $222.95\,\text{MWh} + 22.05\,\text{MWh} = 245\,\text{MWh}$, so the energy is conserved.
+**Reasonableness.** Ten per cent of $245\,\text{MWh}$ would be $24.5\,\text{MWh}$, and $9.0\,\%$ is slightly less, so a loss of $22\,\text{MWh}$ is of the right size. Also $$
+\begin{aligned}
+&222.95\,\text{MWh} + 22.05\,\text{MWh} \\
+&= 245\,\text{MWh}
+\end{aligned}
+$$, so the energy is conserved.
 
 ## Common misconception
 

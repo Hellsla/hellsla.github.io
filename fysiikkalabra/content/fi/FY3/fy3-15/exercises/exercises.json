@@ -60,7 +60,7 @@
         },
         {
           "text": "Turbiini muuttaa yhteistuotannossa suuremman osan lämmöstä sähköksi, joten hukkalämpöä jää vähemmän.",
-          "feedback": "Yhteistuotannossa sähköä saadaan yleensä vähemmän kuin lauhdevoimalaitoksessa, koska osa höyryn energiasta jää lämmöksi. Kokonaishyötysuhde on suurempi, koska myös tämä lämpö hyödynnetään."
+          "feedback": "Yhteistuotannossa sähköä saadaan yleensä vähemmän kuin lauhdevoimalaitoksessa, koska osa höyryn energiasta siirtyy lämpönä kaukolämpöveteen eikä muutu sähköksi. Kokonaishyötysuhde on suurempi, koska myös tämä lämpö hyödynnetään."
         },
         {
           "text": "Kaukolämpöverkko lisää energiaa, kun vesi kiertää putkissa, joten ulos saadaan enemmän kuin sisään.",
@@ -154,7 +154,7 @@
       "unit": "%",
       "tolerance": 0.02,
       "data": {
-        "caption": "Yhteistuotantolaitoksen vuosienergiat (esimerkkiaineisto)",
+        "caption": "Yhteistuotantolaitoksen vuosienergiat",
         "columns": [
           "Vuosi",
           "$E_\\text{polttoaine}\\,(\\text{GWh})$",
@@ -196,7 +196,7 @@
       "unit": "MW",
       "tolerance": 0.02,
       "data": {
-        "caption": "Kolmen lauhdevoimalaitoksen tehot (esimerkkiaineisto)",
+        "caption": "Kolmen lauhdevoimalaitoksen tehot",
         "columns": [
           "Laitos",
           "$P_\\text{o}\\,(\\text{MW})$",
@@ -313,7 +313,7 @@
     {
       "id": "fy3-15-L3-05",
       "level": 3,
-      "text": "Ydinvoimalan reaktorin lämpöteho on $2700\\,\\text{MW}$ ja sähköteho $900\\,\\text{MW}$. Lauhdutinta jäähdyttävän meriveden virtaama on vakio $38{,}0\\,\\text{t/s}$. Veden lämpötilat lauhduttimeen tullessa ja sieltä lähtiessä on mitattu neljänä kuukautena (taulukko, esimerkkiaineisto). Veden ominaislämpökapasiteetti on $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Laske veden lämpötilan nousu $\\Delta T$ kunakin kuukautena ja sen keskiarvo $\\Delta T_\\text{ka}$.\n\nb) Laske lauhduttimeen siirtyvä lämpöteho $P_\\text{L}$ käyttäen keskiarvoa $\\Delta T_\\text{ka}$.\n\nc) Vertaa tulosta laitoksen hukkalämmön tehoon $P_\\text{h} = P_\\text{o} - P_\\text{s}$. Mihin loppu hukkalämmöstä siirtyy?\n\nd) Miksi merivettä lämmittävästä lauhduttimen lämmöstä ei voi enää tuottaa sähköä, ja mikä vaikutus lämmöllä on lähiveteen heinäkuussa?\n\nAnna b)-kohdan tulos vastauslaatikkoon megawatteina.",
+      "text": "Ydinvoimalan reaktorin lämpöteho on $2700\\,\\text{MW}$ ja sähköteho $900\\,\\text{MW}$. Lauhdutinta jäähdyttävän meriveden virtaama on vakio $38{,}0\\,\\text{t/s}$. Veden lämpötilat lauhduttimeen tullessa ja sieltä lähtiessä on mitattu neljänä kuukautena (taulukko, esimerkkiaineisto). Veden ominaislämpökapasiteetti on $4190\\,\\text{J/(kg}\\cdot\\text{K)}$.\n\na) Laske veden lämpötilan nousu $\\Delta T$ kunakin kuukautena ja sen keskiarvo $\\Delta T_\\text{ka}$.\n\nb) Laske lauhduttimeen siirtyvä lämpöteho $P_\\text{L}$ käyttäen keskiarvoa $\\Delta T_\\text{ka}$.\n\nc) Vertaa tulosta laitoksen hukkalämmön tehoon $P_\\text{h} = P_\\text{o} - P_\\text{s}$. Mihin loppu hukkalämmöstä siirtyy?\n\nd) Miksi merivettä lämmittävästä lauhduttimen lämmöstä ei voi enää käytännössä tuottaa sähköä, ja mikä vaikutus lämmöllä on lähiveteen heinäkuussa?\n\nAnna b)-kohdan tulos vastauslaatikkoon megawatteina.",
       "kind": [
         "data",
         "reasoning"
@@ -322,7 +322,7 @@
       "unit": "MW",
       "tolerance": 0.02,
       "data": {
-        "caption": "Lauhdeveden lämpötilat (esimerkkiaineisto)",
+        "caption": "Lauhdeveden lämpötilat",
         "columns": [
           "Kuukausi",
           "$T_\\text{sisään}\\,({}^\\circ\\text{C})$",

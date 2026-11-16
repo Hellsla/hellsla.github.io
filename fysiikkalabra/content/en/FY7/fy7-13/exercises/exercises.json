@@ -155,7 +155,7 @@
       "unit": "nm",
       "tolerance": 0.03,
       "data": {
-        "caption": "Positions of the maxima on the screen (example data)",
+        "caption": "Positions of the maxima on the screen",
         "columns": [
           "$k$",
           "$x_k\\,(\\text{cm})$"
@@ -199,7 +199,7 @@
     {
       "id": "fy7-13-L2-06",
       "level": 2,
-      "text": "A student uses a grating with $600$ lines per millimetre to measure the first-order maximum of a green laser. The screen is $L = 1.00\\,\\text{m}$ from the grating, perpendicular to the beam, and the maximum is $x = 33.7\\,\\text{cm}$ from the central maximum.\n\nThe student solves for the wavelength like this: “The angle is small, so $\\sin\\theta \\approx x : L = 0.337$. From the grating equation $\\lambda = d\\sin\\theta = 1.667\\,\\mu\\text{m} \\cdot 0.337 = 562\\,\\text{nm}$.”\n\na) What is wrong in the student's reasoning?\n\nb) Calculate the wavelength correctly.\n\nc) By how many percent does the student's result differ from the correct result? Put the correct result in the denominator.\n\nThe result of part c) in percent is written in the answer box.",
+      "text": "A student uses a grating with $600$ lines per millimetre to measure the first-order maximum of a green laser. The screen is $L = 1.00\\,\\text{m}$ from the grating, perpendicular to the beam, and the maximum is $x = 33.7\\,\\text{cm}$ from the central maximum.\n\nThe student solves for the wavelength like this: “The angle is small, so $\\sin\\theta \\approx x : L = 0.337$. From the grating equation $\\lambda = d\\sin\\theta$ $= 1.667\\,\\mu\\text{m} \\cdot 0.337$ $= 562\\,\\text{nm}$.”\n\na) What is wrong in the student's reasoning?\n\nb) Calculate the wavelength correctly.\n\nc) By how many percent does the student's result differ from the correct result? Put the correct result in the denominator.\n\nThe result of part c) in percent is written in the answer box.",
       "kind": [
         "error"
       ],
@@ -210,18 +210,18 @@
     {
       "id": "fy7-13-L2-07",
       "level": 2,
-      "text": "A student determines the wavelength of a laser with a grating and measures with a tape measure the distance $x$ of a maximum from the central maximum. The reading error is always about $\\Delta x = 2\\,\\text{mm}$. Which change reduces the relative error of the wavelength?",
+      "text": "A student determines the wavelength of a laser with a grating and measures with a tape measure the distance $x$ of a maximum from the central maximum. The reading uncertainty is always about $\\Delta x = 2\\,\\text{mm}$. Which change reduces the relative uncertainty of the wavelength?",
       "kind": [
         "experiment",
         "concept"
       ],
-      "answer": "Measure a more distant maximum, because the same reading error is a smaller part of a larger distance.",
+      "answer": "Measure a more distant maximum, because the same reading uncertainty is a smaller part of a larger distance.",
       "unit": "",
       "tolerance": 0.02,
       "choices": [
         {
           "text": "Move the screen closer to the grating, because a shorter distance reduces the measurement error.",
-          "feedback": "Wrong: when $L$ decreases, $x$ also decreases. The same $\\Delta x$ is then a larger part of the distance, so the relative error grows."
+          "feedback": "Wrong: when $L$ decreases, $x$ also decreases. The same $\\Delta x$ is then a larger part of the distance, so the relative uncertainty grows."
         },
         {
           "text": "Use a sparser grating, because then the maxima are closer together and the error is shared among more of them.",
@@ -232,8 +232,8 @@
           "feedback": "Wrong: the brightness of the laser does not affect the positions of the maxima. The positions are determined by the wavelength, the grating spacing and the distance $L$, not by the intensity of the light."
         },
         {
-          "text": "Measure a more distant maximum, because the same reading error is a smaller part of a larger distance.",
-          "feedback": "Correct: when the maximum of a higher order is measured, $x$ is larger but the reading error $\\Delta x$ stays the same. The relative error $\\Delta x : x$ becomes smaller, and the same holds for the wavelength.",
+          "text": "Measure a more distant maximum, because the same reading uncertainty is a smaller part of a larger distance.",
+          "feedback": "Correct: when the maximum of a higher order is measured, $x$ is larger but the reading uncertainty $\\Delta x$ stays the same. The relative uncertainty $\\Delta x : x$ becomes smaller, and the same holds for the wavelength.",
           "correct": true
         }
       ]
@@ -338,7 +338,7 @@
       "unit": "nm",
       "tolerance": 0.02,
       "data": {
-        "caption": "Intensity of the double-slit pattern (example data)",
+        "caption": "Intensity of the double-slit pattern",
         "columns": [
           "$x\\,(\\text{mm})$",
           "$I$ (relative)"
@@ -428,7 +428,7 @@
       "unit": "µm",
       "tolerance": 0.03,
       "data": {
-        "caption": "Distance between the maxima $\\pm 1$ (example data)",
+        "caption": "Distance between the maxima $\\pm 1$",
         "columns": [
           "$L\\,(\\text{cm})$",
           "$2x\\,(\\text{cm})$"

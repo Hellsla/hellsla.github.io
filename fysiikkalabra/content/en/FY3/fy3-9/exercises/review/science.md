@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: cd00dff614aca012
-SCOPE: delta added-exercise from 63d133ef967c9f45 base 89bcb63b7431
+CONTENT-HASH: f4b33f0f26651d8a
+Round: 1
+Mode: delta
 
 ## Blocking
-(none)
 
 ## Polish
-- None.
 
 ## Checked
-- fy3-9-L1-09: Boyle (T constant, sealed bag stated); MAFY 3000 m p = 70.1 kPa (standard atmosphere 70.12 kPa); V2 = p1V1/p2 = 2.88 l -> 2.9 l; solution notes the real temperature drop as an assumption.
-- fy3-9-L2-09: isochoric p/T = 0.40 kPa/K read from grid points (description lists them, no ratio given away); 120 kPa * 373.15/300 = 149.3 kPa; kelvin conversion explicit; check against 350 K point sound.
-- en vs fi: answer, unit, tolerance, figure, lookup, kind and every number of task text and solution identical (script comparison).
-- Recomputed in one independent script; answers.py lines agree; tolerances fit the data's significant figures and graph reading.
+- New fy3-9-L2-10 (PhET Gas Properties): the setup isolates T, because "Hold Constant: Volume (V)" keeps V fixed and no pumping keeps N fixed. The task tells the student to choose kPa and K and to read the fluctuating gauge several times, as the source facts require.
+- I recomputed the seven-point fit independently. The line through the origin has k = Σ(pT)/Σ(T²) = 3.924 kPa/K. The free fit has a slope of 3.84 kPa/K and an intercept of 32 kPa. The residuals are +51, −3, −7, −18, −8, −16 and +19 kPa, and the ratios p/T are 4.18 … 3.96 kPa/K. All match the solution.
+- The prediction is 3.924 · 601 = 2358 kPa, against the 2346 kPa read: a difference of 12 kPa (0.53 %), inside ±30 kPa. The extrapolation of 90 K beyond the measured range is stated.
+- The answer field is p₂/p₁ = T₂/T₁ = 450/300 = 1.50, the same for every k. The key is 1.5 with a 2 % tolerance. In the reasonableness check, the model gives 1177 and 1766 kPa, and the measured ratio 1766/1170 is 1.51.
+- The outlier wording follows the guardrail (the point is checked, not removed). The condition "thin gas far from condensing" is stated. The particle explanation (faster particles, more frequent and harder hits, the same number density) is right.
+- A scripted comparison with the Finnish set (passed today) found identical answer, unit, tolerance and kind, and the same numbers in the text and in every solution section.
+- Captions: only "(example data)" removed.
+- Hash identical at start and end.

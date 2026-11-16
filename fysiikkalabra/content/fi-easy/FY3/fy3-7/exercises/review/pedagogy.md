@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 9c1b044a71f0ab6e
-SCOPE: delta added-exercise from 60c23477f4ffc71d base 81db4a6fd727
+CONTENT-HASH: 1bd40b6aab18a0cb
+SCOPE: delta added-exercise from 94d3ec592415aaf0 base b2eac257e05e
 
 ## Blocking
 (none)
 
 ## Polish
-- fy3-7-L2-09 uses the same figure and almost the same task text as L1-05 (the other part of the curve). Reading the flat part first and the sloped part second is a good pair, but the text reads like a copy. Reword the opening.
-- fy3-7-L1-09 solution — the table value is at the boiling point; the note says so. Good; add "iho viilenee" link already present, no change needed.
+- Model answer b) uses "interaction energy" of the particles; FY3 scope may not teach this term explicitly. Optional: one sentence tying it to the lesson wording.
+- d) rewards "two things of each kind"; the model answer lists more, which is fine.
 
 ## Checked
-- L1-09: r defined in the text, mass in g to kg conversion, MAFY table named; level 1 fits.
-- L2-09: the task says which part of the graph to use and states the start temperature, so the figure alone does not give the answer; the description lists the end points of the flat part, not c.
-- Solution gives Q, ΔT, c with units and a balance check.
-- Tolerance 3 % matches the stated range 2020–2150.
-- Finnish clear.
+- fy3-7-L2-10 is level 2: situation first, questions in parts a-d, a numeric answer field for one part, source given with a read date.
+- Fits the slot's goals and the set's mix (data/experiment/reasoning); it does not repeat the worked example or another exercise.
+- The solution is stepwise (given, find, principle, formula, conversions, substitution, reasonableness) and the open parts have model answers.
+- Source-based task fulfils the teacher's brief: the source is interpreted, the lesson's formula is applied, the model's limits are judged.
+- The language version matches the English/Finnish content; easy Finnish has short sentences and glossed terms (checked in the packet).
+- Phone: calculations are in short aligned lines; I did not open captures (the new exercise is not in them).

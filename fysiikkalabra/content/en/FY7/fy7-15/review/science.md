@@ -1,20 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 96380ddc9d785d43
-
-Scope: a re-review of the diff `git diff cc317598e -- content/en/FY7/fy7-15` (lesson.md and inquiry.json). The rest of the lesson was reviewed in full at 16cd6d2d00ffe824 and found PASS.
+CONTENT-HASH: d08bd86faa0d8205
 
 ## Blocking
 
 ## Polish
-- content/en/FY7/fy7-15/inquiry.json:18 (hook) — "the sparkle almost disappears" holds only near Brewster's angle. This is a C simplification and can stay.
-- Scope: the course note still says "qualitative with Brewster's law". It should record the teacher's decision that Brewster's law is now an Extension.
+- lesson.md:401 — The extension note says the section's calculations, the worked example "and so are the tasks marked as extension tasks" are extension material. Only six tasks carry the mark (L2-04…L2-08, L3-05). Many unmarked tasks also use Malus's or Brewster's law (L1-02…L1-05, L1-07, L1-08, L1-10, L1-11, L2-01…L2-03, L3-01…L3-04), so the note can be read as saying those are core. The Finnish version is the same and the core path (L1-01, L1-06) is qualitative, so this is not blocking. — Either mark every quantitative polarisation task, or write "the calculations with these laws are extension material".
 
 ## Checked
-- Key idea, Two polarisers: the new sentence about a slanted third film is correct. It says the light after the middle film has a component along the last film's axis.
-- ennuste-kolme correct feedback: 12.5 % is called "an eighth", which is right, and it is labelled as a model value. The component explanation is correct, and the distractors are unchanged.
-- ennuste-kolme and koe-2 are now core. koe-2 locks n, θ₁ = 0° and θ₃ = 90° and varies only θ₂. pohdi now includes ennuste-kolme.
-- Common misconception: "the angle does not matter at the first polariser" is correct for unpolarised light. The earlier mention of Malus's law in this sentence is gone.
-- mittaus distractor feedback: "a film crossed with its polarisation lets through only very little of the display's light" is correct.
-- Exercises intro: Core-tagged exercises first, and most of the others are Malus and Brewster calculations. This agrees with the exercise set.
-- The changes match fi in meaning.
-- Hash is the same at the start and the end of the review.
+- batch delta review: the extension note and the "Extension example." label agree with the scope notes (polarisation qualitative on the core path; Malus and Brewster extension, teacher 2026-11-05). The Brewster figure's description is unchanged. The new graph-task description matches the cos²θ curve (I : I₀ is 1 at 0° and 180°, 0 at 90°, grid 15° and 0.1) and gives no value away.

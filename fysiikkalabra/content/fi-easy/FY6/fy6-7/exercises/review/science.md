@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c394b79ded28d3d9
-SCOPE: delta added-exercise from 0a3ba204ab582e2e base 8f23aa7ae3bd
+CONTENT-HASH: 0b42b5134a5c6175
 
 ## Blocking
-- none
 
 ## Polish
-- solutions.md fy6-7-L2-08 Vastaus — "arvot luetaan 0,4 kW:n ruudukkoviivoilta": 0,2 kW lies halfway between gridlines (2,4 and 1,2 kW are on them) — say "0,2 kW on kahden viivan puolivälissä"; the effect on the cost is about ±1 %, inside the tolerance.
+- exercises.json (fy6-7-L2-09 d) — "Kompressori on jääkaapin osa, joka jäähdyttää kaappia" simplifies things: the compressor drives the cooling circuit. A fair simplification for S2 (C), not blocking.
 
 ## Checked
-- fy6-7-L1-10 recomputed: E = 1,5 kW · 2,0 h = 3,0 kWh = 3,0 · 3,6 MJ = 10,8 MJ; matches answers.py and exercises.json; rounded 11 MJ is +1,9 %, inside tolerance 0,04. The MAFY conversion 1 kWh = 3,6 MJ is exact and agrees with the brief.
-- fy6-7-L2-08 recomputed: E = 2,4 · 0,5 + 1,2 · 1,0 + 0,2 · 0,5 = 2,5 kWh, K = 0,18 €/kWh · 2,5 kWh = 0,45 €; matches; unit €, tolerance 0,03.
-- Figure fy6-7/dryer (figures.py): steps 2,4 / 1,2 / 0,2 kW on 0–0,5 / 0,5–1,5 / 1,5–2,0 h, gridlines 0,4 kW and 0,25 h; alt text gives the same; no energy or cost shown.
-- Model: constant power per stage, E = Pt summed, K = aE without fixed fees (one appliance), as in the brief's worked example.
-- Both solutions complete (principle, symbolic formula, conversions, substitution, rounding reason, check).
-- Content hash checked at start and end.
+- The new task fy6-7-L2-09 says the same physics and numbers as the standard-Finnish task passed earlier: 344 and 440 kWh/a, 17,5 ft³, Top Freezer, 15 Nov 2026.
+- a) 96 kWh, about 28 %.
+- b) 39,27 W and 50,23 W with t = 8760 h.
+- c) 688 € and 880 €, a difference of 192 €.
+- d) P_ka ≈ kP_käy with k ≈ 0,39 at 100 W.
+- The answer is 39,269 W with tolerance 0,02, and answers.py is shared.
+- The clarifications added for S2 (tietokanta, standardoitu testi, termostaatti) are correct and drop no step or justification. The 100 W is still marked as a general order of magnitude, not as source data.
+- Reflowed chains: same numbers, signs and units in the same order.
+- Hash read at start and end: unchanged.

@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6c19f9aefbc31fb5
+CONTENT-HASH: b8ba260488bd61fc
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
 
 ## Checked
-- Delta: L3-03 solution at 1280 px (open-exercises-L3-1280-4), fi-easy: Principle sentence and rainbow-width substitution blocks render and align; the Reasonableness sentence is just below the capture's edge and was not opened. figures.json change is approval metadata only.
+- Packet captures have no phone-width opened solutions, so own Playwright captures of the current preview build (preview/fi-easy) at 390 px and 1280 px, every solution open; plus a scripted scan of every formula of the exercise set at 360 and 390 px: none wider than its box, none scrolling, no page overflow.
+- Delta: the 2 re-broken blocks (Δt difference chain; rainbow deviation 137,7°) at 390 and 1280 px, full size. Minus row under the equals sign reads clearly; wide form joins to one row. Rest not re-reviewed.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

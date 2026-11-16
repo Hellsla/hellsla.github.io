@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: faab494363192733
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: 88947e71f82d60a3
 
 ## Blocking
 - none
@@ -9,4 +8,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Rendered the displacement figure (fi/en/fi-easy share figures.py): new label V = V_2 - V_1 (w=130) with separate '= 30 ml' line fits, no overlap with bracket or cylinder, KaTeX renders; text diff (V = V_2 - V_1 consistent with V_1/V_2 labels, $g\,t$, Kármán wording, iceberg alt) read for notation and language.
+- delta review 5d reflow, round 1: opened the 360 px captures (inquiry 01-06, 12-13, solutions 07-11); nothing clipped or scrolling, rows break at sensible points, equals signs aligned
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

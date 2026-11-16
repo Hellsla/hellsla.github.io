@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6c0936636b690650
-SCOPE: delta added-exercise from 5e217585a15dde17 base 8f23aa7ae3bd
+CONTENT-HASH: 7d3f48717b41dc70
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] fy6-11-L1-09 Kaava — the symbol E is the field strength and also stands for the breakdown strength in Annettu; fine as is, but "läpilyöntikestävyys" could carry its own symbol $E_\text{max}$ so the Periaate line reads "kun $E = E_\text{max}$".
+- none
 
 ## Checked
-- review/shots/fy6-11-open-exercises-1280-9.png (and -8.png for the neighbouring task 11-8, stamp hash 6c0936636b690650): task 11-9 (L1-09) with hint, answer row and the open solution, Annettu to Järkevyys.
-- Typography: fraction, unit conversion by words, units upright, colon for division, case ending after the maths ($2{,}5\,\text{mm}$:n); the task is situation first, question last; the set still reads as one.
+- Delta (reflow, 5d), round 3. Opened all 1 proof sheet(s) fi-fy6-11-exercises-* and every numbered formula; all `fits`, breaks sensible.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

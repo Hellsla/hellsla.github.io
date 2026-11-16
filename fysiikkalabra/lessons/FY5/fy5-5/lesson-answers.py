@@ -50,7 +50,7 @@ a["kuu-an-mm"] = 4 * math.pi ** 2 * d_EM / T_M ** 2 * 1e3   # 2,72 mm/s²
 a["kuu-g-mm"] = gamma * M_E / d_EM ** 2 * 1e3            # 2,70 mm/s²
 a["kuu-suhde"] = a["g-maa"] / (a["kuu-an-mm"] / 1e3)     # about 3600 = 60²
 a["kuu-etaisyys-R"] = d_EM / R_E                         # 60,3 Earth radii
-# Transfer task: height above the surface where g is half its surface value, R = 6378 km: h = R(√2 − 1)
+# Transfer task: height above the surface where the gravitational force (equally g) is half its surface value, R = 6378 km: h = R(√2 − 1)
 a["siirto-h-km"] = R_E * (math.sqrt(2) - 1) / 1e3        # 2642 km -> 2640 km
 a["siirto-virhe-R"] = R_E / 1e3                          # mistake: halving 1/r² by doubling r -> h = R
 a["siirto-virhe-r"] = R_E * math.sqrt(2) / 1e3           # mistake: r instead of the height, 9020 km

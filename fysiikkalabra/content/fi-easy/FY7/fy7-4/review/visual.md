@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b72feb4f29c1d660
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: bd8611e1cfd5ec3c
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] 390 px, Laskutehtävä Vihje 3 and the "Oikein" feedback of Koe 2 — the rows "= 4,0 A · 0,50 m · 0,20 T · sin 30°." and "F = 5,0 A · 0,20 m · 0,30 T · 0,5" are fitted flush against the box edge (readable, nothing cut) — a break before the last factor would give them room.
+- [Minor] 1280 px, Vihje 3 — an empty band under the formula box.
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Every μ0 occurrence in the diff changed from = to \approx, typography intact ($\mu_0 \approx 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}}$); no remaining "μ0 = 4π" or "exact" wording in student text.
-- No paragraph changed in this round in fi-easy exceeds about 120 words
-- Hash identical at start and end.
+- batch delta review (fi-easy, 5d reflow, round 1): every aligned formula of the lesson part cropped from the current preview at 390 px and 1280 px with hints, feedback and solutions open and viewed on contact sheets; overflow measured at 360, 390 and 1280 px after the page's own fitting.

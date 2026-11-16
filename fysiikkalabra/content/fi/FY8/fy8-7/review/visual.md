@@ -1,12 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6891020fc2d233f2
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 70c44750233f7ee3
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] inquiry.json, Esimerkki 3 (stage-sovella-390-2) — for science: the situation now says the energy difference "jää kuituun sisäenergiaksi", while the question and the solution still say "Kuinka paljon lämpöä kuituun syntyy" and "lämpöteho $P_\text{lämpö}$"; the two wordings sit in adjacent sentences. Decide whether the question should follow the new term.
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Round 1, delta: energiarako → energia-aukko (lesson, inquiry, exit ticket) and lämmöksi → sisäenergiaksi (Esimerkki 3). Hash the same at start and end.
+- contact-3 for triage; opened stage-selita-390-3 and -4 (Kvanttirakenteet section, qdots figure and photo under it), stage-selita-390-7 (Tiivistelmä), stage-tutki-390-3 (Kvanttipisteiden värit, table and choices), stage-sovella-390-2 (Esimerkki 3 prompt), open-exit-1280 (answer 2), open-tarkista-1280-4.
+- "energia-aukko" is used in every changed place and inflects correctly (energia-aukosta, energia-aukkoa, energia-aukon); no "energiarako" left in the captures opened. The bold definition and the hyphenated line breaks ("energia-/aukko") read naturally at 390 px.
+- Quantities in the edited sentences stay LaTeX ($1{,}74\,\text{eV}$, $713\,\text{nm}$, $1{,}0\,\text{kW}$); the table, the figure beside its paragraph and the cards kept their layout; nothing clipped.
+- The selitys task's opened model answer (tarkista 3) was judged from the diff text, not from a capture of its own.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 84cdf45ac45c57f4
+CONTENT-HASH: 22b817faad474e15
 Mode: delta
-Round: 2
+Round: 1
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy3-3-L2-08 Annettu — begins with a lowercase "kuvaajasta"; matches the other Annettu lines, so no change needed unless the set is normalised.
+- [Minor] Only shared captures examined; no per-exercise check of fy3-3.
 
 ## Checked
-- fy3-3-open-exercises-L2-1280-10 (L2-08 task with graph, grid note, answer row) and -11 (full solution: Kuvaajan lukeminen, k fraction, Sijoitus, Vastaus 91 °C, Järkevyys). Maths, units, thin spaces fine.
+- Delta formulas by their rendering in the shared component, seen in the fy3-1, fy3-2 and fy3-5 captures; no fy3-3-specific capture opened (Polish: not opened one by one).
+- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

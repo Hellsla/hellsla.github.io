@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b042fabb2e261987
-Delta review (reworded extra-answers sentence, fi, 2026-11-14) of the version passed at 1c760d7d1d71cc80.
+CONTENT-HASH: 22126cca58c08cf9
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-- none
+- (none)
 
 ## Polish
-- [Minor] "ne vastaukset, joiden pistesumma on pienin" is slightly clumsy; "pienimmän pistemäärän saaneet vastaukset" reads more naturally.
+- C `sovella/tasks.json` c and d: "teho muuttuu sisäenergiaksi" is loose (energy changes form, power is its rate); it was as loose before the change. For science: consider "Kuinka suurella teholla sähköenergiaa muuttuu jatkojohdossa sisäenergiaksi?" at a later edit.
 
 ## Checked
-- Source-level read of the changed sentence in the scoring paragraph: clear, $120$ p in LaTeX, repetition of "ne ... joiden pistesumma on pienin" aside fluent; no layout effect. The figure did not change in this unit; no captures needed.
+- Hunks: solutions.md d) Periaate (lähtökitka eli täysin kehittynyt lepokitka), c) Kysytty (johdon sisäenergiaksi muuttuva teho); tasks.json criterion of d and the questions c and d of Jatkojohto kelalla. Grammar and terms correct; the model answer's "suurin mahdollinen lepokitka" stays consistent with the new term.
+- Captures opened: `fy9-harjoituskoe-stage-exercises-390-13.png`, `-390-16.png`, `-390-25.png`, `-390-28.png`, `-1280-10.png`, `-1280-19.png`: inline formulas whole at 390 px, the longer question d wraps in two lines beside its points, nothing clipped.
+- The first `screenshot.py --if-stale` run failed once with a UnicodeDecodeError (a preview being rebuilt at the same time); the rerun wrote 179 captures for this hash.
+- The changed places were found in the built `fi` page by their position in each stage; the contact sheets were not used for triage. No figure and no added task in this unit's diff; the rest stands under the previous PASS.

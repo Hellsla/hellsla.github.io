@@ -1,10 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0bd8eebc4458e20c
+CONTENT-HASH: 77b7bf73e98ebfd1
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] inquiry.json kuukoe, feedback for $0{,}00272$ — add "joko": "Lukusi on joko oikea kiihtyvyys yksikössä $\text{m/s}^2$, tai etäisyys on jäänyt kilometreiksi."
+- [Minor] exit ticket answer 1 at 360 px — inline \tfrac fractions inside the display rows are small; \dfrac in display would read better.
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: both rewritten kuukoe mistake feedbacks rendered (injected into the task card as the page would show them) at 390 and 1280: $\text{m/s}^2$, $r = 3{,}844 \cdot 10^{8}\,\text{m}$, $\text{mm/s}^2$ all LaTeX, none wraps; captures fy5-5-fi-easy-390-fb1/fb2.png, -1280-fb1/fb2.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.
+- Rendered preview/fi-easy/fy5-5.html?ratkaisut=1 at 360 and 1280 px (DOM checks: red KaTeX, clipped or off-screen formulas, overflow, asterisks, plain quantities): clean.
+- Opened the 360 px Pohdintatehtävä answers (re-broken aligned F chain, rows aligned, no clipping).
+- Delta text (Syventävä osio note, goals/deepen split, Syventävä: Etsi virhe, task wording gravitaatiovoima) read; fluent and consistent.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

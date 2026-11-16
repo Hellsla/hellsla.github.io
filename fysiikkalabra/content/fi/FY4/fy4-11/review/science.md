@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 0a2a30dd5eee9d4f
+CONTENT-HASH: 68d093bc02cbe850
 ## Blocking
 
 ## Polish
-- inquiry.json:122 — correct-option feedback says the momentum changes from $mv$ to zero "in any case"; the theory now adds the caveat (same initial and final velocity; an unbelted passenger may keep moving). The feedback itself sets the dashboard scenario, so this is C; optionally add "when the passenger stops".
+- The ABS sentence could say why the static friction "voi olla suurempi": its greatest value, lähtökitka $\mu_0 N$, is larger than the sliding friction $\mu N$ because $\mu_0 > \mu$ for rubber on asphalt. The present "voi olla" is a fair simplification (C), and it is correct because static friction is only as large as the situation needs.
 
 ## Checked
-- New heading and paragraph: same mass, same initial and final velocity ⇒ same $\Delta p$ — correct, condition now stated (B from earlier wording resolved).
-- Windscreen caveat is physically correct and does not contradict the figure (unbelted passenger stops at 0,090–0,100 s on the interior).
-- Misconception paragraph and summary carry the same condition in the same words.
-- Numbers unchanged: $75\,\text{kg} \cdot 13{,}9\,\text{m/s} \approx 1040\,\text{kg·m/s}$; $\approx 10\,\text{kN}$ over 0,10 s, $\approx 100\,\text{kN}$ over 0,010 s.
-- Inquiry options/feedback (ball catch, belt prediction, explain model answer at 611) consistent with the qualified claim.
+batch delta review: lesson.md line 166 changes "liikekitka" to "liukukitka" (guardrail Friction, checker rule liikekitka). The physics is unchanged and correct: a rolling tyre's contact patch does not slide, so static friction acts on it, and it can exceed a locked tyre's sliding friction, which keeps the car steerable. The term now matches the glossary and the exercise set (solutions.md, exercises.json, answers.py use liukukitka). No "liikekitka" is left in the lesson's files. No numbers, symbols or choices changed. The hash was the same at the start and the end.

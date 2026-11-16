@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d536560ed0a159b7
-SCOPE: delta added-exercise from 99b43d4ac55dcc70 base 8f23aa7ae3bd
+CONTENT-HASH: 8901ef7af333f1fa
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-2-L2-10 Järkevyys — range "1,34 V-1,40 V" written with a hyphen — use an en dash inside the maths, "1{,}34\,\text{V} - 1{,}40\,\text{V}" or "…–…".
-- [Minor] fy6-2-L2-09/10 solutions — the step label "Kuvaajan lukeminen" is used for a multimeter drawing, not a graph — "Kuvan lukeminen" would fit better.
+- none
 
 ## Checked
-- fy6-2-L2-09 (2-17) and fy6-2-L2-10 (2-18) in open-exercises-L2-1280 parts 11, 12 and 13: task texts, figure multimeter-task (display 1,37 V, selector on 20 V highlighted, labels legible, error limit not shown), solutions with aligned Sijoitus rows, Vastaus, Järkevyys. No clipping; the set reads as one.
+- All 1 proof sheet(s) of fi-easy-fy6-2-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

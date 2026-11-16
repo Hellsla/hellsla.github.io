@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8d8c30e2342bffae
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 016d0a52584ddcac
 
 ## Blocking
 - none
@@ -9,4 +8,10 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Delta: coal heating value 24 → 29 MJ/kg and the numbers that follow from it (Miksi 3,4 → 2,8 t; hook 14 000 → 12 000 t; the closing paragraph of Reaktioenergia with the new MAFY range).
+- Opened: top-390 (Miksi line with $2{,}8$, hero intact), intro-1280 (Miksi on two lines, illustration beside Tällä tunnilla opit), stage-herata-390 (hook, $12\,000$ with thin space, no overflow), stage-selita-390-5 and theory-1280-3 (the edited paragraph: $29\,\tfrac{\text{MJ}}{\text{kg}}$ and $25$–$32\,\tfrac{\text{MJ}}{\text{kg}}$ render upright with the stacked unit, the range dash reads, the parenthesis closes after the unit, line height survives the inline fractions; the balance figure above and the heading below keep their spacing), contact-4 for the surroundings.
+- Finnish: the inserted parenthesis reads naturally; "tonnia" stays a word after the number as in the untouched text beside it.
+- lesson-answers.py is not rendered; not judged.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

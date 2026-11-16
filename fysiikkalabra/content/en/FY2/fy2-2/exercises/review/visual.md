@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7f05bc17f75b75b4
+CONTENT-HASH: 095d05500287de55
+SCOPE: delta numbers from 4a74fe7df6fd97df base 6ecef1197865
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-11 figure: the label "boiling tea water" still crosses the lightning guide line.
-- [Minor] mafytaulukot.fi is plain text in the MAFY tasks (site name; optional).
+(none)
 
 ## Checked
-- Opened review/shots/fy2-2-open-exercises-1280-10.png and -11.png (content/en/FY2/fy2-2/review/shots/): the L1-11 card with the reworded task (situation then question), the scale figure and the full solution; layout intact, maths clean.
-- Delta round 2 at 1280 px only; 390 px captures not opened. Hash unchanged at the end.
+- Delta review. Opened fy2-2-open-exercises-L3-1280-5.png: the changed value $\approx 46\,000$ in its display box (and 2-23 below) renders cleanly; consistent with the $49\,000$ above.
+- Hash at start and end: 095d05500287de55.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4
