@@ -14,5 +14,4 @@ CONTENT-HASH: 21a7e8ebe0232319
 - Recomputed: 10^0,3 = 1,995 and 10^1 = 10. 10^0,9 = 7,943, so t₂ = 8 h/7,943 = 1,007 h, which is 1,0 h (tolerance 3 %). The 3-dB rule gives 1 h exactly, and the solution explains the difference.
 - The dose model I₁t₁ = I₂t₂ follows from "energia-annos … kahdeksan tunnin laskennalliselle työpäivälle", which the page says. The solution does not claim that the page states the 3-dB rule or a time for 94 dB.
 - The source values (80, 85, 87 dB(A); the limit assessed with protectors; protectors compulsory and a noise-control programme at 85) agree with the fetched notes.
-- In a), the level is proportional to lg I, and 10¹² fits into 0–120 dB. In d), the claim is refuted with numbers. "1 dB ≈ +26 %" is right.
 - The time is called a reference value and not a safe time, as the guardrails and the brief require.
