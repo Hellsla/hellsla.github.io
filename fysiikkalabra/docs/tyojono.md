@@ -245,7 +245,7 @@ Toteutetaan kohdan 11 osana U3 (opettaja 2026-11-14).
 
 ## 8f. Animoitu kuva: hiukkasten värähtely ja lämpölaajeneminen (opettaja 2026-11-13, pilotti fy3-8)
 
-Varattu: claude/fy3-8-animaatio-pilotti (pilotti fy3-8)
+Pilotti fy3-8 tehty (PR #649, yhteinen komponentti figlib `Fig(anim=True)` / `vibrate()`, site.css "Animated figures", lesson.js osa 7b); odottaa opettajan hyväksyntää (`reviews.py approve-figures fy3-8` vasta sen jälkeen). Muut luvut hyväksynnän jälkeen omina kohtinaan.
 
 Opettaja kysyi, sopisiko looppaava animaatio fy3-8:n kuvan "kylmä / lämmin, d₀ / d > d₀" tilalle. Sopii, kun se
 näyttää ilmiön, jota still-kuva ei näytä: lämpimässä hiukkaset värähtelevät laajemmin ja niiden keskimääräinen väli
