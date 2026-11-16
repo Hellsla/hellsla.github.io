@@ -1,20 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 10d591ce090a7302
+CONTENT-HASH: 3cc88e83d448f783
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] Worked example, step 6 — the line "v_2 = ... ≈ 8.694 m/s" shows four figures before the three-figure result 8.69 m/s in step 7; acceptable as an intermediate value, but a note "(intermediate value)" would be tidier.
-- [Minor] fig "kolme" at 390 px — the labels are small (about 10 px equivalent) in the lift and parachute diagrams; legible, but at the limit. The figure is teacher-approved, so no change is asked.
+- [Minor] inquiry.json:266 and :282 (mgh and |ΔE_mech| = 78.0 kg · 9.81 m/s² · 125 m; en-390-24 tiles #2, #3) — the row ends on a hanging `\cdot` and `125 m` stands alone without its operator — start the row with `\cdot 125\,\text{m}` as elsewhere.
+- [Minor] inquiry.json:329 (N = 55.0 kg · (9.81 − 1.20) m/s², tiles #19, #20) — the break falls inside the parentheses; readable, but a break before `\cdot (` would keep the bracket whole where the width allows.
 
 ## Checked
-- Delta: "kinetic" to "sliding friction" wording, the Think about it text, the new closing bullet on the normal force in a lift, the exit ticket, and the changed figure descriptions (alt text).
-- Opened fy4-16-fig-9-390 (three situations: lift, parachute, sledding hill; colours and vectors consistent, nothing clipped).
-- Opened fy4-16-example-390-1 and -2 (worked example stages 1–8, formula rows aligned, no overflow, the example figure begins correctly).
-- Opened fy4-16-stage-herata-390 (new hook text reads fluently, no layout problem).
-- Opened fy4-16-theory-1280-4 (the new summary bullet reads well).
-- The terminology "sliding friction" is now consistent in the places the diff touches.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- batch delta review: opened contact sheets en-390-24, en-390-25, en-390-26, en-1280-19 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.

@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 8adfe08694ac5522
+CONTENT-HASH: c95e679af0540a3e
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] fy4-13 theory — the inline fraction $\tfrac{m_1}{m_1+m_2} < 1$ is very small at 1280 px (untouched text); use \\dfrac-free wording or "the ratio of $m_1$ to $m_1 + m_2$".
+- None.
 
 ## Checked
-- Opened fy4-13-theory-1280-2 (method step 2 extended, two-body figure): natural English, layout intact, no clipping; the free-body figure keeps force red, acceleration orange. The new graph description in figures.json (cart speed, five points) is a text-only translation, not rendered in this lesson's captures, and reads correctly in English with decimal points and units. Packet gives no SCOPE line.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: opened contact sheets en-390-19, en-390-20 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.
