@@ -1,9 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 075bf558b791a2a9
+CONTENT-HASH: e0441f2e5cde3648
 
 ## Blocking
 None.
 
 ## Polish
-1. Scope: MAFY-form symbols ( = Fs$, {\text{k}0} + W = E_\text{k}$, {\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$) in the fy4-8 exercise set (fi-easy). Rendered at 390 and 1280 px (solutions open): formula tables show the MAFY name over/beside the formula, subscripts k, p, 0 upright, no overflow (scrollWidth = viewport), the energy-bar figure and scale figure carry {\text{p}0}$, {\text{k}0}$, $, \text{k}$ without clipping, the simulation labels ({\text{mech}0}$, $) read well. No leftover old symbols (W_muut, F_parallel, index 1/2 on energies) found in source.
-2. Minor: the text keeps $ (weight's work) beside $ (other forces); it is explained in place, so acceptable.
+- [Minor] fy4-8-L2-10 Vastaus/Answer — the d)-first order reads naturally; "Lisäksi: a)" is a clear bridge. No change needed.
+- [Minor] fy4-8-L2-10 — "3 000 kg" in the source quote vs "3000 kg" in formulas: one form (carried over).
+- [Minor] fy4-8-L2-10 e) — long paragraph (~150 words); split before "Vammat/The injuries/Vammat riippuvat" (carried over).
+
+## Checked
+- Delta: only the order of the Vastaus/Answer paragraphs. Opened fy4-8-open-exercises-L2-1280-14 (Fi) and -15 (all three languages): d) first with the answer value, then "Lisäksi/In addition: a)", b), c), e), Järkevyys. No clipping, KaTeX renders, units upright with thin space, spacing and aligned rows intact. Only 1280 px captures of level 2 exist; phone width rests on the layout check.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

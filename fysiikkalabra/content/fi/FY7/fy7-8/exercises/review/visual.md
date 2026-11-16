@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 216bb34ce703f90c
-SCOPE: delta added-exercise from fb4a6839555b1dd9 base 8f23aa7ae3bd
+CONTENT-HASH: 4acb5a451b8a0761
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 8-17 (fy7-8/loss-graph-curve) — dense 1 % ticks and only 5 % numbers make reading 3,0 % at 200 kV fiddly; label every 2 %.
+- none
 
 ## Checked
-- fy7-8 L2 captures 11-12 (8-17 graph, solution).
-- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
+- Delta: the L2-04 solution, rendered from the preview at 390 px with the solution opened. The formula is now a display aligned block of two rows (0,80 Ω · (2,5 A)² on the first, = 5,0 W on the second); numbers, signs and units unchanged and in the same order. Block width equals its scroll width (no clipping, no page overflow at 390 px). A capture image of the block itself was not obtained (measured by script instead).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

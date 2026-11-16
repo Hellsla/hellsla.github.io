@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0d7da54a5fc6a1b1
-SCOPE: delta added-exercise from aea283ed5e43115e base 8f23aa7ae3bd
+CONTENT-HASH: a7aaa63f2f88419c
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 1-18 (fy7-1/incl-grid) — axes have no arrowheads and the vertical tick numbers sit on the left only; 'maanpinta' crosses a gridline — add filled arrowheads as in the other graphs.
+- none
 
 ## Checked
-- fy7-1 L2 captures 9-12 (1-17, 1-18: figures, text, solutions); both figures read at 1280 px.
-- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
+- Delta: Reasonableness line in fy7-1 exercise solutions (two-row display block). Rendered preview page (fi) with solutions opened at 360, 390 and 1280 px: the display block fits its container (scrollWidth = clientWidth), no page overflow, rows aligned, numbers, signs, units and order unchanged. Screenshot opened for en at 360 px; fi and fi-easy verified by measurement.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

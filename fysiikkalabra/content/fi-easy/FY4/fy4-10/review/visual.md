@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1720ae48d5d04d50
+CONTENT-HASH: 4bf9d326d2301a78
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+- [Minor] fy4-10 key_concepts, "kimmoton törmäys" — "sisäenergia" may be new to an S2 reader here; the Pohjatiedot already use it, so acceptable.
+- [Minor] no capture of the "Luvun tärkeät käsitteet" panel exists in the packet's shots; the panel's markup in the current preview (kc-term / kc-explain list) carries the new sentence unchanged in structure, and the previous review opened the panel's layout.
 
 ## Checked
-- batch delta review: "Luvun tärkeät käsitteet" panel captured from preview/fi-easy/fy4-10.html at 390 and 1280 px (the review/shots set has no capture of it) and opened — between the opening and stage 1, term bold over its explanation at 390 px, two-column at 1280 px, no clipping, no horizontal overflow, no KaTeX error; the edited lesson.md/inquiry.json sentences read in their diff (prose only, no new maths); top-390 opened in a montage (read-aloud "Kuuntele" button under the title, layout intact).
+- fy4-10-intro-1280 (opening, Tällä tunnilla opit, Pohjatiedot: layout intact, no clipping). Changed line (one word in a concept explanation) read in the diff and in the built preview markup; no maths involved.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

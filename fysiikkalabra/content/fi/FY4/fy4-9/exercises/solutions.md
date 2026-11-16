@@ -221,3 +221,44 @@ Lähin vaihtoehto on $400\,\text{N}$. Järkevyys: raekiven paino on $0{,}020\,\t
 **Sijoitus:** $I = \tfrac{1}{2} \cdot 900\,\text{N} \cdot 0{,}012\,\text{s} = 5{,}4\,\text{N}\cdot\text{s}$ ja $F_\text{ka} = \dfrac{5{,}4\,\text{N}\cdot\text{s}}{0{,}012\,\text{s}} = 450\,\text{N}$
 **Vastaus:** $450\,\text{N}$, kaksi merkitsevää numeroa ($4{,}5\cdot 10^2\,\text{N}$), koska huippuarvo $900\,\text{N}$ ja kesto $12\,\text{ms}$ luetaan kuvaajasta kahden numeron tarkkuudella.
 **Järkevyys:** Keskiarvo on puolet huippuarvosta, kuten tasaisesti nousevalla ja laskevalla voimalla pitääkin. Se on pienempi kuin $900\,\text{N}$ ja suurempi kuin nolla.
+
+## fy4-9-L2-09
+**Kysytty:** a) miksi henkilövaaka ei sovellu massan määrittämiseen avaruusasemalla, b) videon massanmittausmenetelmä ja sen toimintaperiaate, c) oma menetelmä massan $m$ määrittämiseksi painottomuudessa ja yhtälö, josta massa ratkeaa, d) oman menetelmän virhelähteet ja niiden vaikutuksen pienentäminen
+**Periaate:** Massa kuvaa kappaleen hitautta eli sitä, kuinka vaikea kappaleen liikettä on muuttaa. Hitaus ei riipu siitä, onko kappale tuettu vai vapaassa pudotuksessa. Siksi massa voidaan määrittää tunnetun voiman ja mitatun liikkeen muutoksen avulla. Newtonin toinen laki $\Sigma\overline{F} = m\overline{a}$ ja impulssiperiaate $\overline{I} = \Delta\overline{p}$ sopivat, kun työntävä voima on ainoa merkittävä voima liikkeen suunnassa: silloin se on kokonaisvoima. Lähteestä (NASA, luettu 16. marraskuuta 2026) on otettu nämä tiedot: laite on SLAMMD, se kohdistaa laitteen varteen kiinnittyneeseen astronauttiin tunnetun voiman, ja massa lasketaan syntyvästä kiihtyvyydestä Newtonin toisen lain avulla. Muu on fysiikan päättelyä.
+**Mallivastaus:** a) Henkilövaaka ei mittaa massaa vaan tukivoimaa, jolla vaaka työntää ihmistä. Maan pinnalla levossa tukivoima on yhtä suuri kuin paino $mg$, ja vaaka näyttää siitä lasketun massan. Avaruusasema ja astronautti ovat molemmat vapaassa pudotuksessa Maan ympäri samalla kiihtyvyydellä. Astronautti ei siksi paina vaakaa, eikä vaaka tue häntä: lukema on nolla. Massa ei silti ole muuttunut, ja painovoima vaikuttaa astronauttiin yhä, sillä juuri se pitää aseman ja astronautin kiertoradalla. Massa on siis mitattava hitauden kautta.
+
+b) NASAn kuvauksen mukaan SLAMMD kohdistaa laitteen varteen kiinnittyneeseen astronauttiin tunnetun voiman $F$, ja laite mittaa syntyvän liikkeen. Vertaa kuvausta siihen, mitä näit videolla. Muut voimat liikkeen suunnassa ovat pieniä, joten tämä voima on kokonaisvoima. Newtonin toisesta laista $\Sigma F = ma$ saadaan
+
+$m = \dfrac{F}{a}$
+
+Impulssiperiaatteella sama mittaus luetaan näin: tunnettu voima vaikuttaa ajan $\Delta t$ ja muuttaa nopeutta määrän $\Delta v$. Silloin $I = \Delta p$ eli $F\,\Delta t = m\,\Delta v$, joten
+
+$m = \dfrac{F\,\Delta t}{\Delta v}$
+
+Yhtälöt ovat sama laki, koska $a = \dfrac{\Delta v}{\Delta t}$. Sama voima antaa suuremmalle massalle pienemmän kiihtyvyyden. Astronautin on pidettävä kehonsa jäykkänä ja kiinni varressa, jotta koko keho liikkuu yhtenä kappaleena.
+
+c) Tehtävällä on monta oikeaa ratkaisua, ja tämä on yksi esimerkki. Sen luvut ovat esimerkkiarvoja, eivät mittaustuloksia. Jousella toimiva työnnin työntää kappaletta tunnetulla vakiovoimalla $F = 20{,}0\,\text{N}$ ajan $\Delta t = 0{,}50\,\text{s}$. Liikeanturi tai videoanalyysi antaa nopeuden muutoksen $\Delta v = 0{,}125\,\text{m/s}$. Mitattavat suureet ovat voima, sen vaikutusaika ja nopeuden muutos (videolta matka ja aika). Impulssiperiaatteesta $F\,\Delta t = m\,\Delta v$, joten
+
+$m = \dfrac{F\,\Delta t}{\Delta v}$
+
+$$\begin{aligned} m &= \dfrac{20{,}0\,\text{N} \cdot 0{,}50\,\text{s}}{0{,}125\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
+
+Tuloksessa on kaksi merkitsevää numeroa, kuten ajassa $0{,}50\,\text{s}$. Yksikkö on oikea, koska $1\,\text{N}\cdot\text{s} = 1\,\text{kg}\cdot\text{m/s}$.
+
+Toinen mahdollinen menetelmä: tunnettu kappale, jonka massa on $m_1 = 10{,}0\,\text{kg}$, ja tuntematon kappale työnnetään levosta erilleen. Newtonin kolmannen lain mukaan ne työntävät toisiaan yhtä suurilla ja vastakkaissuuntaisilla voimilla yhtä kauan. Impulssit ja liikemäärän muutokset ovat siksi yhtä suuret, $m_1 v_1 = m_2 v_2$, missä $v_1$ ja $v_2$ ovat videolta mitatut vauhdit. Kun esimerkiksi $v_1 = 0{,}40\,\text{m/s}$ ja $v_2 = 0{,}050\,\text{m/s}$, saadaan
+
+$m_2 = \dfrac{m_1 v_1}{v_2}$
+
+Tunnetun kappaleen liikemäärän suuruus on
+
+$$\begin{aligned} p_1 &= m_1 v_1 \\ &= 10{,}0\,\text{kg} \cdot 0{,}40\,\text{m/s} \\ &= 4{,}0\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+ja tuntemattoman kappaleen massa on
+
+$$\begin{aligned} m_2 &= \dfrac{4{,}0\,\text{kg}\cdot\text{m/s}}{0{,}050\,\text{m/s}} \\ &= 80\,\text{kg} \end{aligned}$$
+
+d) Esimerkkimenetelmän virhelähteitä ovat nämä: jousen voima ei pysy vakiona työnnön aikana; lyhyen työnnön kestoa on vaikea mitata; videolta luettu nopeus riippuu mittakaavasta ja kuvataajuudesta; kappale ei ole jäykkä, jos raajat tai irtotavarat liikkuvat; ilmavirrat sekä seinien tai kaapelien kosketus lisäävät voimia; työntimen omilla liikkuvilla osilla on massaa. Toistot ja keskiarvo pienentävät satunnaisvirheen vaikutusta. Systemaattista virhettä pienennetään kalibroimalla laite tunnetuilla massoilla. Lisäksi kappale pidetään jäykkänä ja kiinni varressa, työnnöstä tehdään pidempi ja aika mitataan anturilla eikä sekuntikellolla.
+
+Massa on yhtälössä $m = \dfrac{F\,\Delta t}{\Delta v}$ tulo ja osamäärä. Siksi suhteellinen virhe suureessa $F$, $\Delta t$ tai $\Delta v$ aiheuttaa likimain yhtä suuren suhteellisen virheen massaan. Jos nopeuden muutokseksi luetaan $0{,}130\,\text{m/s}$, joka on $4\,\%$ liian suuri, massaksi tulee $77\,\text{kg}$ eli noin $4\,\%$ liian pieni.
+
+Järkevyys: $80\,\text{kg}$ on aikuisen ihmisen massan suuruusluokkaa, ja molemmat menetelmät antavat esimerkkiarvoilla saman tuloksen.

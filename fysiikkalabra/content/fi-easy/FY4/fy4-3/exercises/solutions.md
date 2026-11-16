@@ -286,13 +286,13 @@ $F_\text{t} = 450\,\text{N} + 30\,\text{N} = 480\,\text{N}$.
 ## fy4-3-L3-05
 **Annettu:** taulukosta nopeus ja köyden voima; hetkillä $t = 4{,}0\,\text{s}$, $5{,}0\,\text{s}$ ja $6{,}0\,\text{s}$ nopeudet $0{,}70$; $0{,}71$ ja $0{,}70\,\text{m/s}$ sekä voimat $3{,}4$; $3{,}5$ ja $3{,}3\,\text{N}$; alussa $F = 5{,}1\,\text{N}$ ja $v = 0$ (esimerkkiaineisto)
 **Kysytty:** a) milloin kokonaisvoima on nolla; b) kitkavoima $F_\text{k}$ yksikössä $\text{N}$; c) miksi alussa $F > F_\text{k}$
-**Periaate:** Kun kärryn nopeus on vakio, ensimmäisen lain mukaan kokonaisvoima on nolla. Silloin köyden voima ja kitka ovat yhtä suuret. Jos nopeus muuttuu, kokonaisvoima ei ole nolla. Kolmannen lain mukaan kärry vetää köyttä ja oppilasta yhtä suurella voimalla kuin köysi kärryä.
+**Periaate:** Kun kärryn nopeus on vakio, ensimmäisen lain mukaan kokonaisvoima on nolla. Silloin köyden voima ja kitka ovat yhtä suuret. Jos nopeus muuttuu, kokonaisvoima ei ole nolla. Kolmannen lain mukaan kärry vetää köyttä yhtä suurella voimalla kuin köysi kärryä. Oppilasta ei vedä kärry vaan köysi.
 **Kuvaajan lukeminen:** Nopeus kasvaa hetkestä $t = 0$ alkaen arvosta $0$ arvoon $0{,}69\,\text{m/s}$. Hetkestä $t = 4{,}0\,\text{s}$ alkaen se pysyy lähes samana, noin $0{,}70\,\text{m/s}$. Kokonaisvoima on nolla hetkestä $t = 4{,}0\,\text{s}$ alkaen. Näiden kolmen hetken anturilukemat ovat $3{,}4\,\text{N}$, $3{,}5\,\text{N}$ ja $3{,}3\,\text{N}$.
 **Kaava:** $F_\text{k} = F_\text{ka}$ ja $F_\text{ka} = \dfrac{\Sigma F}{n}$
 **Muunnokset:** Voimat ovat newtoneina ja nopeus yksikössä $\text{m/s}$, joten muunnoksia ei tarvita.
 **Sijoitus:** Voimien summa on $10{,}2\,\text{N}$, ja lukemia on $3$. Siis
 $F_\text{k} = \dfrac{10{,}2\,\text{N}}{3} = 3{,}40\,\text{N}$.
-**Vastaus:** b) $3{,}4\,\text{N}$, kaksi merkitsevää numeroa kuten anturin lukemissa. a) Kokonaisvoima on nolla siitä alkaen, kun nopeus on vakio, eli neljännestä sekunnista alkaen. c) Alussa nopeus kasvaa, joten kokonaisvoima ei ole nolla: köysi vetää kärryä eteenpäin enemmän kuin kitka vastustaa. Alussa köysi vetää kärryä $5{,}1\,\text{N}$:n voimalla. Kolmannen lain mukaan kärry vetää köyttä ja oppilasta samalla $5{,}1\,\text{N}$:n voimalla taaksepäin, vaikka kärry kiihtyy.
+**Vastaus:** b) $3{,}4\,\text{N}$, kaksi merkitsevää numeroa kuten anturin lukemissa. a) Kokonaisvoima on nolla siitä alkaen, kun nopeus on vakio, eli neljännestä sekunnista alkaen. c) Alussa nopeus kasvaa, joten kokonaisvoima ei ole nolla: köysi vetää kärryä eteenpäin enemmän kuin kitka vastustaa. Alussa köysi vetää kärryä $5{,}1\,\text{N}$:n voimalla. Kolmannen lain mukaan kärry vetää köyttä samalla $5{,}1\,\text{N}$:n voimalla taaksepäin, vaikka kärry kiihtyy. Köysi puolestaan vetää oppilaan kättä taaksepäin, ja käsi vetää köyttä yhtä suurella voimalla eteenpäin.
 **Järkevyys:** Voima pienenee $5{,}1\,\text{N}$:sta kohti $3{,}4\,\text{N}$:a, kun kiihtyminen loppuu. Kitka $3{,}4\,\text{N}$ on pienempi kuin alun voima, joten kärry on kiihtynyt. Se on yhtä suuri kuin tasaisen nopeuden voima, joten nopeus ei enää muutu.
 
 ## fy4-3-L2-08

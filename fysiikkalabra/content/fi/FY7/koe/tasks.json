@@ -428,7 +428,7 @@
        "points": 1
       },
       {
-       "text": "Toteaa, että sähköteho $eI = 0{,}15\\,\\text{W}$ muuttuu vastuksessa sisäenergiaksi eli lämmöksi, ja tämä on sama kuin vetoteho.",
+       "text": "Toteaa, että sähköteho $eI = 0{,}15\\,\\text{W}$ muuttuu vastuksessa sisäenergiaksi, joka siirtyy lämpönä ympäristöön, ja tämä on sama kuin vetoteho.",
        "tag": "communication",
        "points": 1
       }
@@ -734,7 +734,7 @@
      "id": "a",
      "kind": "calc",
      "points": 8,
-     "text": "Vertaa vaihtoehtoja A ja B siirtohäviöiden kannalta: selvitä, kuinka suuri osa tuotetusta tehosta muuttuu lämmöksi kaapelissa kummassakin vaihtoehdossa. Valitse itse laskettavat suureet ja perustele, miksi tulokset eroavat.",
+     "text": "Vertaa vaihtoehtoja A ja B siirtohäviöiden kannalta: selvitä, kuinka suuri osa tuotetusta tehosta muuttuu sisäenergiaksi kaapelissa kummassakin vaihtoehdossa. Valitse itse laskettavat suureet ja perustele, miksi tulokset eroavat.",
      "answer": [
       {
        "name": "IA",

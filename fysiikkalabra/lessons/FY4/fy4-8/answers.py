@@ -48,4 +48,23 @@ a["fy4-8-L3-05"] = 100 * sum(H[i + 1] / H[i] for i in range(4)) / 4   # E = mgh 
 m_ball = 2 * 4.0 / 4.0 ** 2                                        # pallo-ek: (4,0 m/s; 4,0 J) → m = 2E_k/v² = 0,50 kg
 a["fy4-8-L2-08"] = float(f"{(9.0 - 4.0) / (m_ball * g):.1e}")              # E_k1 = 9,0 J (6,0 m/s), E_k2 = 4,0 J (4,0 m/s): h = ΔE_k/(mg) = 1,02 m
 a["fy4-8-L2-09"] = (40 - 25) / 6.0                                 # palkit-asteikko: W_muut = 25 − 40 = −15 J = −F s → F = 2,5 N
+# Added data task (teacher's brief FY4-A5): collision energy, source Liikenneturva "Turvallinen ajonopeus" (read 16.11.2026)
+m_car = 1500                                              # car of the task, kg
+v_kmh = [30, 50, 90]                                      # comparison speeds of the task, km/h (exact)
+v_ms = [v / 3.6 for v in v_kmh]                           # a) 8,333; 13,889; 25,000 m/s
+Ek_car = [0.5 * m_car * v ** 2 for v in v_ms]             # a) E_k = ½mv²: 52 083 J; 144 676 J; 468 750 J = 52,1; 145; 469 kJ
+ratio_2v = (0.5 * m_car * (2 * v_ms[0]) ** 2) / Ek_car[0] # b) doubling the speed: ½m(2v)² : ½mv² = 4
+ratio_90_30 = Ek_car[2] / Ek_car[0]                       # b) 90 km/h against 30 km/h: 3² = 9,00
+m_F, m_p = 3000, 80                                       # d) the source: "törmäysvoima on 3 000 kg" on a person of 80 kg at 50 km/h
+F_d = m_F * g                                             # d) read as the weight of 3000 kg: F = m_F g = 29 430 N ≈ 29 kN
+Ek_p = 0.5 * m_p * v_ms[1] ** 2                           # d) the person's kinetic energy ½mv² = 7716 J
+s_d = Ek_p / F_d                                          # d) E_k0 + W = E_k, W = −F s, E_k = 0 → s = mv²/(2F) = 0,2622 m
+a_d = F_d / m_p                                           # d) check: a = F/m = 367,9 m/s² = 37,5 g (F is the weight of 37,5 times the person's mass)
+a_d_g = a_d / g                                           # d) check: 37,5
+s_kin = v_ms[1] ** 2 / (2 * a_d)                          # d) check with the equations of motion: s = v²/(2a) = 0,2622 m
+F_100 = 0.5 * m_p * (100 / 3.6) ** 2 / s_d                # d) check: the same distance at 100 km/h → 117 720 N = weight of 12 000 kg, as the source says
+m_100 = F_100 / g                                         # d) check: 12 000 kg (four-fold)
+F_long = Ek_p / 1.0                                       # e) the same energy taken away over 1,0 m: 7716 N ≈ 7,7 kN
+F_short = Ek_p / 0.05                                     # e) over 0,05 m: 154 321 N ≈ 150 kN (about twenty-fold)
+a["fy4-8-L2-10"] = s_d                                    # answer field: part d, the stopping distance 0,26 m
 print(json.dumps(a))

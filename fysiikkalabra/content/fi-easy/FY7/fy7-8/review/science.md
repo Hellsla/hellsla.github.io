@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 29511f4151251bcf
+CONTENT-HASH: 66f0f815e545d511
 
 ## Blocking
+- none
 
 ## Polish
-- lesson.md:160, 224, 235 (aria); inquiry.json:76, 106, 107, 109, 227, 250; exit-ticket.json:7 — "muuttuu lämmöksi" / "lämmöksi muuttuva teho" breaks the guardrail "Energy into heat" (P1). It is not blocking here: these are the same sentences as in the version that passed before, and docs/tyojono.md item 18 already schedules them, FY7's translations included (docs/audits/2026-11-15-oikoluku.md §4, §11 FY7 fy7-8). The FY7 round is PR #617. — Fix in item 18: "johdossa sisäenergiaksi muuttuva teho", the same wording everywhere.
-- lesson.md:209 — the photo caption writes $P = RI^2$ for the loss, but the lesson's symbol is $P_\text{h}$ ($P$ is the transmitted power). Use $P_\text{h} = RI^2$.
-- lesson.md:361 — the summary's "Kaksinkertainen siirtojännite pienentää häviöt neljäsosaan" should say "kun teho ja johto pysyvät samoina" (line 231 says so).
-- inquiry.json siirto mistakes — add the value 2400 for $RI$ given in volts without converting. Only 2,4 is caught now.
-- lesson.md:302 (three-phase) — "noin 1,73-kertaisen tehon" assumes the same $\cos\varphi$ in both models. The two-wire $P = UI$ implies $\cos\varphi = 1$.
+- lesson.md:209 — photo caption writes the loss as $P = RI^2$, elsewhere $P_\text{h}$ — write $P_\text{h} = RI^2$.
+- lesson.md:376 — summary "Kaksinkertainen siirtojännite pienentää häviöt neljäsosaan" drops the condition "sama teho, sama johto" stated in Kaava — add it.
+- lesson.md:360 — the rounding reason cites $20\,\text{kV}$ as two significant figures; under NOTES §2 a nominal 20 kV is ambiguous — say the distribution voltage 20 kV is a nominal value read with two figures, or give 81,8 A.
 
 ## Checked
-- One `python3 -I` run against lesson-answers.py: every number matches my own formulas. Worked example $N_1 = 1980$, $I_1 = 81{,}82 \to 82\,\text{A}$, $9{,}0\,\text{MW}$ both sides. The sim table at 50, 100, 200 and 400 kV. The virhe numbers. Siirto 720 kW with its three mistakes. Check 2 gives 0,26 A, with 5,0 A and 95,8 A as mistakes. Exit ticket 11,5 V and 1/9.
-- The loss-graph is to scale: the polyline is within 0,9 px of $100\,\% \cdot RP/U^2$ over 70–400 kV, and the 12 / 3,0 / 0,75 % markers are right.
-- Sim: $I = P/U$, $P_\text{h} = RI^2$, $R = 0{,}040\,\Omega/\text{km} \cdot l$. "Mahdoton" when $RI \ge U$ is the same as $P_\text{h} \ge P$ (30 kV and below at 200 MW, 150 km). simState gives I, Ph, osuus. Koe-1's initial values can be reached on the sliders, and locking P and l isolates U.
-- Predictions: one right option each (0 V; neljäsosaan), and every feedback's numbers are right. The kertaus, virhe and check-1 distractors are really wrong, and their feedback is right.
-- Transformer figure: closed core, $N_1 > N_2$ for a step-down, the flux arrows go one way round.
-- Grid values (400/220/110 kV, 20 kV, 400/230 V, efficiency over 99 %) are right, the Fingrid 2 % is sourced, and scope stays inside FY7.
+- Recomputed (own script, = lesson-answers.py): worked example N1 = 1980, I1 = 81,8 A → 82 A, both sides 9,0 MW; sim/koe-1 at 150 km (R = 6,0 Ω), 200 MW: 50/100/200/400 kV → I 4000/2000/1000/500 A, P_h 96/24/6,0/1,5 MW, 48/12/3,0/0,75 %; virhe 2,67·10^10 W vs 1,5 MW, RI = 3,0 kV; siirto 300 A, 720 kW (2,2 %), mistakes 1 512 500 / 2,4 / 0,72; tarkistus-2 0,261 A, mistakes 5,0 and 95,8 A; exit 11,5 V and 1/9. All agree.
+- Loss graph to scale: x 0–400 kV at 96–470 px, y 0–25 % at 290–60 px; points (100 kV, 12 %), (200 kV, 3,0 %), (400 kV, 0,75 %) and curve start (70 kV, 24,5 %) sit exactly on R P/U².
+- sim.js implements I = P/U, P_h = R I², R = 0,040 Ω/km · l, N2:N1 = U/20 kV; "mahdoton" when RI ≥ U is exactly P_h ≥ P in the two-wire model; simState gives I, Ph (MW), osuus (%) for koe-1; P and l locked isolate U; 50–400 kV reachable with the 10 kV step.; limits stated in Mallin oletukset.
+- Transformer mechanism (changing flux through every turn, U ∝ N, DC gives only a switching pulse), power conservation for an ideal transformer, real losses (winding resistance, eddy currents, laminated core), U²/R misconception and its correction (RI is the drop across the line), three-phase note: correct, conditions stated.
+- Predictions: exactly one correct option each (0 V; a quarter); each distractor wrong and its feedback right. check-1, virhe: one correct option, feedback right. explain model answers and criteria agree with the theory.
+- fi-easy compared with fi: inquiry.json has the same structure, options, correct flags and every number; exit ticket, sim and lesson-answers identical; reworded text keeps every physical step. Note: the packet says check_lesson.py was not run for fi-easy.
+- Hash identical at start and end.

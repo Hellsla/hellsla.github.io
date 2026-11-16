@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: bb4b6b5b410a9a8f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 54842d33d9ea0258
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md — "ja silloin merkitään lyhyesti $e$" → "ja silloin sitä merkitään lyhyesti $e$:llä"; inquiry model "…koska vuo muuttui tasaisesti: sama vuon muutos…" — the colon explains the wrong clause; use a full stop.
+- [Minor] inquiry.json tarkistus-2 hint and solution — e = vBl is broken by hand into e = ... / · 0,50 m / = 0,50 V; reads correctly with the operator leading the row, but a hand-split chain is against NOTES §1.
+- [Minor] docs/clipped-formulas.tsv — fy7-5 keeps formulas that were already clipped before this change (outside this change, work queue 5d; Major outside this change, not blocking): six formulas (e = vBl chain with the other data, 200 · 0,30 T …) remain in the list.
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- $e_\text{ka}$ / $|e_\text{ka}| = N \cdot |\Delta\Phi| : \Delta t$ / $e(t) = -N\,\tfrac{\mathrm{d}\Phi}{\mathrm{d}t}$ typography; inquiry magnet task now uses $|e_\text{ka}|$ in Kysytty, Kaava and Sijoitus consistently.
-- Hash identical at start and end of this round.
+- Delta: only inquiry.json re-breaks. Rendered the changed items myself from the built page (preview/fy7-5.html) at 390 px with hints and solutions open; the Tarkista "liikkuva tanko" hint 3 and solution Sijoitus: rows aligned, operator leads, readable. 
+- Opened the lesson's existing 390 px stage captures (herata, sovella, tarkista) and contact sheet; the stages around the changes keep their layout, no horizontal overflow.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

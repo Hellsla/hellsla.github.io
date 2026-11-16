@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 66b641106a3af95a
+CONTENT-HASH: 8adfe08694ac5522
 
 ## Blocking
+(none)
 
 ## Polish
-- 'kunhan kappaleiden suunnat sopivat yhteen langan kanssa' on abstrakti; esimerkki (toinen nousee, toinen laskee) selkeyttäisi.
+(none)
 
 ## Checked
-- Light delta review (teacher 2026-11-07): judged `git diff origin/main` of fy4-13 en (English text matches the Finnish change).
-- Oletetun positiivisen suunnan sääntö, negatiivinen ratkaisu ja kitkavaroitus ovat ymmärrettäviä ja yhdenmukaisia tiivistelmän kanssa; tukee itsenäistä voimakuvioiden käyttöä.
-- Consistency with summary, goals and inquiry feedback: no contradictions; untouched content passed earlier reviews.
-- Hash at start and end 66b641106a3af95a.
+- Delta: the diff judged in its context; hash 8adfe08694ac5522 at start and end.
+- lesson.md:218: "the tension in the string is an internal force" is the correct term (the string is not a force); the step of adding the equations reads as before.
+- figures.json: the added English description of the cart's (t, v) points gives the five points and the grid without a slope or an acceleration, so it gives no answer away.
+- Nothing else changed; the force-diagram plan is untouched.

@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: d854aa8f386f0906
-Mode: full (translation review against the reviewed Finnish set)
-Round 2
+CONTENT-HASH: 4d73a243c59b4c6d
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- solutions.md:763 (fy7-15-L2-09 Principle) — "Light reflected from … glass is partly polarised" holds for an oblique view; at perpendicular viewing the reflection is not polarised. The task's observation implies the oblique view, so this is a fair simplification (C) — optionally add "when the window is viewed at an angle".
+- solutions.md:764 (fy7-15-L2-09) — light from the goods also crosses the glass obliquely and becomes slightly polarised (Fresnel, n = 1.5: at about 56° the two components pass 73 % and 100 %), which is why the task rightly says "hardly changes"; the model answer could say "almost unpolarised". Not required at this level.
+- exercises.json:439 (fy7-15-L3-04) — still says "The data is example data." although the sentence was removed from L2-05 and L2-06 — remove here too for consistency, if the teacher's decision covers it.
+- lessons/FY7/fy7-15/answers.py:818 — comment dates the teacher's decision 2026-11-16 — check the date.
 
 ## Checked
-- Delta: L1-09 solutions.md line 162 now 500 W/m² · (cos² 45°)²; equals cos²45° · cos²45° = 0.25 so I_E = 125 W/m² unchanged; only the layout (345 px) changed.
-- New task fy7-15-L1-09 (an ordering task, D, E, A, B, C) compared with content/fi: id, level, kind, answer, unit, tolerance, correct flag and every number in text, choices, feedback and solution identical (decimal point in en).
-- Answer recomputed independently: an ordering task, D, E, A, B, C; equals the json and the solution; exactly one correct choice or the correct order, as in fi.
-- Every wrong option's feedback states a real misconception and its physics is right, as in fi.
-- All other exercises: structure and all numbers equal to fi by script (reordered sentences only); no English decimal commas in en.
-- Natural English; terms as in the earlier en exercises.
-- check_i18n.py: nothing for fy7-15; build.py fy7-15 succeeds.
+- All 22 numeric answers recomputed independently from the task texts (Malus, halving, Brewster, Snell for L2-04, least-squares fits for L2-05 and L2-08, maximum search for L3-04): all agree with exercises.json and answers.py.
+- L2-09: reflection from an insulator partly polarised parallel to the surface, filter crossed to it absorbs most of it, unpolarised light halved in every position, quarter turn passes the reflection, partial polarisation explains why it does not vanish: correct, qualitative, on the core path (LOPS "polarisaatio kvalitatiivisesti"), consistent with the glossary and with L1-06.
+- L2-09 answer field, model answer and answers.py comment say the same thing; no Malus or Brewster needed, so "core": true is right.
+- L2-05 without the example-data sentence: fit slope 313.9 lx, intercept 6.9 lx; background subtracted correctly; 322 lx (no subtraction) falls outside the tolerance.
+- L2-06 without the sentence: table values scatter around cos² θ within ±0.02; curve reading about 51–52°, inside the 3 % tolerance of 50.8°.
+- L3-02 and L2-07: index order for light inside the denser medium right; 36.9° is below the critical angle 48.8°.
+- L3-05: Sun's height 36.9°, glare 40 · cos² 65° = 7.14 W/m², threshold tilt 33.2° right.
+- Figures graph-task and fit: generators give the values the solutions read (0.67 at 35°; 15 lx and 375 lx); neither gives the answer away.

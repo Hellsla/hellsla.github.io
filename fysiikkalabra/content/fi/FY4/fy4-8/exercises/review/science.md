@@ -1,15 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: f37b954eefe31cd0
+CONTENT-HASH: 3adcc392f3bc2b66
 
 ## Blocking
-None.
 
 ## Polish
-1. solutions.md L1-05, L2-06: E_mek0 is used but the lesson defines only E_k0, E_p0; the index rule covers it, but "E_mek0 = E_p0 + E_k0" once in the solution would help.
-2. solutions.md L2-05 Vastaus: the two-significant-figure reason cites h = 0,05 m (one figure); cite 0,30 m or the speeds instead.
-3. answers.py comments still use W_kok, W_muut, E_mek,2 (not student-facing).
+- content/fi/FY4/fy4-8/exercises/solutions.md:276 (L2-10 a) — exact speeds and $1500\,\text{kg}$ (four significant figures, trailing zeros count) would allow four figures; "kolme numeroa ei lupaa liikaa" is true but not the usual rule — give $52{,}08$, $144{,}7$, $468{,}8\,\text{kJ}$ or say plainly that three are enough for the comparison.
+- solutions.md:248 — $30 : 3{,}6\,\text{m/s} = 8{,}333\,\text{m/s}$ and $13{,}889\,\text{m/s}$ are rounded: "≈", not "=".
+- solutions.md (L2-10 e) — $7716\,\text{J} : 0{,}05\,\text{m} = 154\,\text{kN}$ shown as "noin $150\,\text{kN}$"; fine with the one-figure distance, could say so.
 
 ## Checked
-- Every answer recomputed from the task text (own script, LSQ fits through origin for L2-05 and L2-07): L1-01…L1-07, L2-01…L2-09, L3-01…L3-05 all agree with exercises.json and answers.py (e.g. L2-05 g = 9,77, L2-06 −19,93 kJ and 94/107/157 N, L2-07 1,14 N, L2-08 1,02 m, L3-04 54,9 N and 6,87 m/s, L3-05 63,9 %).
-- Added exercises (L1-07…L1-09, L2-05…L2-09, L3-04, L3-05): physics, conditions (constant friction, no air drag, tension does no work), exactly one correct option / correct true-false key, every distractor's feedback right.
-- Each solution names which work W is (total in the work principle, other forces' in the energy principle); no leftover old symbol; fi, fi-easy and en answers, tolerances and keys identical.
+- Hash the same at the start and the end (3adcc392f3bc2b66).
+- git diff since the version passed: solutions.md L2-10 Vastaus only; the d) paragraph moved first, a) now starts "Lisäksi:"; no number, formula or word otherwise changed. exercises.json and answers.py unchanged.
+- The answer-box value ($s \approx 0{,}26\,\text{m}$) now on the first line of the answer step matches `answer` 0.26 (tolerance 0.05); parts a–c, e read in order after it with every part's result still present.
+- All 21 numeric answers recomputed in one script with my own formulas (least-squares fits through the origin for L2-05, L2-07): equal to answers.py and inside every tolerance.
+- L2-10: $E_\text{k} = 52\,083$; $144\,676$; $468\,750\,\text{J}$; ratio $9{,}00$; $F = 29\,430\,\text{N}$, $E_{\text{k}0} = 7716\,\text{J}$, $s = 0{,}2622\,\text{m}$; $a = 37{,}5\,g$; same distance at $100\,\text{km/h}$ gives exactly the weight of $12\,000\,\text{kg}$; $7{,}7\,\text{kN}$ over $1{,}0\,\text{m}$, $154\,\text{kN}$ over $0{,}05\,\text{m}$.
+- L2-10 source values and quotation agree with the coordinator's verified record (read 16.11.2026); kg-as-force interpretation and constant force stated in the task; mean-force limit said.
+- L2-10 c: energy to deformation and internal energy, then to the surroundings as heat; never "muuttuu lämmöksi".
+- Significant figures: $80\,\text{kg}$ two (trailing zero counts) → $0{,}26\,\text{m}$, reason true.
+- Multiple choice L1-06, L1-08 and statements L1-09: one correct option each, distractors wrong, feedback physics right.
+- Notation ($E_{\text{k}0} + W = E_\text{k}$, $W = Fs$) as in the brief; scope FY4.

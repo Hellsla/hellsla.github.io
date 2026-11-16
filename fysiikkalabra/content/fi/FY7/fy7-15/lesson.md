@@ -398,6 +398,8 @@ Nestekidenäytön jokaisen kuvapisteen takana ja edessä on polarisaattorikalvo.
 
 ## Kaava: Malusin laki ja Brewsterin laki
 
+**Syventävä osio.** Malusin ja Brewsterin lait syventävät luvun aihetta. Ydinpolulla riittää ymmärtää edellä kuvattu laadullinen malli: miten polarisaattori ja heijastus polarisoivat valoa. Tämän osion laskut ja luvun esimerkki ovat syventäviä, samoin tehtävät, jotka on merkitty syventäviksi.
+
 ### Malusin laki
 Polarisoitunut valo, jonka sähkökentän amplitudi on $E_0$, tulee analysaattoriin, jonka läpäisysuunta on kulmassa $\theta$ valon polarisaatiosuuntaan nähden. Sähkökentän läpäisysuuntainen komponentti $E_0 \cos\theta$ pääsee läpi, ja kohtisuora komponentti $E_0 \sin\theta$ absorboituu. Aallon intensiteetti on verrannollinen amplitudin neliöön, joten intensiteetti pienenee kertoimella $\cos^2\theta$.
 
@@ -533,7 +535,7 @@ missä $\alpha_\text{B}$ on Brewsterin kulma pinnan normaalista mitattuna, $n_1$
 </svg>
 
 ## Esimerkki
-Polarisoimattoman valon intensiteetti on $840\,\text{W/m}^2$. Valo kulkee kahden ihanteellisen polarisaattorin läpi, ja polarisaattorien läpäisysuuntien välinen kulma on $35^\circ$. Kuinka suuri on valon intensiteetti toisen polarisaattorin jälkeen?
+Syventävä esimerkki. Polarisoimattoman valon intensiteetti on $840\,\text{W/m}^2$. Valo kulkee kahden ihanteellisen polarisaattorin läpi, ja polarisaattorien läpäisysuuntien välinen kulma on $35^\circ$. Kuinka suuri on valon intensiteetti toisen polarisaattorin jälkeen?
 
 <!-- vaihe -->
 

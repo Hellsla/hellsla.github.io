@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c282aa48e9d21cc9
-SCOPE: delta added-exercise from 8f2bdb276d7840aa base 8f23aa7ae3bd
+CONTENT-HASH: 170abd26da60b9ca
 
 ## Blocking
 - none
@@ -9,6 +8,5 @@ SCOPE: delta added-exercise from 8f2bdb276d7840aa base 8f23aa7ae3bd
 - none
 
 ## Checked
-- L1-09 Järkevyys: 7,6 mm x (2 / (0,80/1,5)) = 3,75 x 7,6 = 28 mm, consistent with 2,84 cm; no longer says "noin kaksi kertaa heikompi" with a loose factor 4.
-- Reference "Tehtävän 2-2" matches the L1-02 value 7,6 mm.
-- Language checked: fi. Hash c282aa48e9d21cc9 at start and end.
+- L3-05: significant figures made consistent (60,0 kV, 0,200 m) in text and solution. Recomputed: v = 1,92e7 m/s, E_k = 3,07e-13 J, qU = 9,61e-15 J, n = 32, 16 turns, T = 65,6 ns, t = 1,05 µs; answer field unchanged and the solution's own check agrees.
+- Figures pick-* and r-points: untouched by the diff.

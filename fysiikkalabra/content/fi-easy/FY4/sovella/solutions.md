@@ -283,7 +283,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri. Virhe on noin viides
 **Muunnokset:** Laskussa ei tarvita. Vertailua varten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** Nopeus on $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m}} = \sqrt{294{,}3}\,\text{m/s} = 17{,}2\,\text{m/s}$. Kilometreinä tunnissa $17{,}2 \cdot 3{,}6\,\text{km/h} = 61{,}8\,\text{km/h}$
 **Vastaus:** $v \approx 17{,}2\,\text{m/s} \approx 62\,\text{km/h}$, vastauksessa on kolme merkitsevää numeroa kuten korkeudessa $15{,}0\,\text{m}$. Ohjaajan väite perustuu siis malliin, jossa mekaaninen energia säilyy.
-**Järkevyys:** Sama nopeus tulisi, jos laskija putoaisi vapaasti $15\,\text{m}$. Se on suurin mahdollinen nopeus, koska todellisuudessa osa energiasta muuttuu lämmöksi.
+**Järkevyys:** Sama nopeus tulisi, jos laskija putoaisi vapaasti $15\,\text{m}$. Se on suurin mahdollinen nopeus, koska todellisuudessa osa energiasta muuttuu sisäenergiaksi.
 
 ### b)
 **Annettu:** $m = 62\,\text{kg}$, $h = 15{,}0\,\text{m}$, matka vaijeria pitkin lähtölavalta jarrun alkuun $s = 180\,\text{m}$ ja jarrun alussa mitattu nopeus $v = 11{,}2\,\text{m/s}$
@@ -293,7 +293,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri. Virhe on noin viides
 **Muunnokset:** Ei tarvita. Kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** Potentiaalienergia on $E_{\text{p}0} = 62\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} = 9123\,\text{J}$. Liike-energia on $E_\text{k} = \tfrac{1}{2} \cdot 62\,\text{kg} \cdot (11{,}2\,\text{m/s})^2 = 3889\,\text{J}$. Voima on $F_\text{vast} = \dfrac{9123\,\text{J} - 3889\,\text{J}}{180\,\text{m}} = \dfrac{5234\,\text{J}}{180\,\text{m}} = 29{,}1\,\text{N}$
 **Vastaus:** $F_\text{vast} \approx 29\,\text{N}$. Vastauksessa on kaksi merkitsevää numeroa kuten massassa $62\,\text{kg}$.
-**Järkevyys:** Voima on noin $5\,\%$ laskijan painosta $608\,\text{N}$. Se sopii pyörien kitkalle ja ilmanvastukselle. Matka on kuitenkin pitkä, joten yli puolet energiasta muuttuu lämmöksi: $5234\,\text{J} : 9123\,\text{J} \approx 0{,}57$.
+**Järkevyys:** Voima on noin $5\,\%$ laskijan painosta $608\,\text{N}$. Se sopii pyörien kitkalle ja ilmanvastukselle. Matka on kuitenkin pitkä, joten yli puolet energiasta muuttuu sisäenergiaksi: $5234\,\text{J} : 9123\,\text{J} \approx 0{,}57$.
 
 ### c)
 **Annettu:** $m = 95\,\text{kg}$, $h = 15{,}0\,\text{m}$, $s = 180\,\text{m}$ ja vastusvoiman työ b-kohdasta $F_\text{vast}\,s = 5234\,\text{J}$ ($F_\text{vast} \approx 29\,\text{N}$)

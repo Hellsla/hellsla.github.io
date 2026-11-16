@@ -251,3 +251,46 @@ c) The momentum before the collision is $0.40 \cdot 1.50\,\text{kg}\cdot\text{m/
 **Substitution:** $m_\text{B} = 0.30\,\text{kg} \cdot \left(\dfrac{0.60}{0.20} - 1\right) = 0.60\,\text{kg}$ and $\Delta E_\text{k} = \tfrac{1}{2} \cdot 0.30\,\text{kg} \cdot (0.60\,\text{m/s})^2 - \tfrac{1}{2} \cdot 0.90\,\text{kg} \cdot (0.20\,\text{m/s})^2 = 0.054\,\text{J} - 0.018\,\text{J} = 0.036\,\text{J}$
 **Answer:** $0.036\,\text{J}$, two significant figures like the mass $0.30\,\text{kg}$.
 **Reasonableness:** Of the kinetic energy $0.054\,\text{J}$, $0.036\,\text{J}$ is changed, two thirds, which fits a perfectly inelastic collision (bodies that stick together lose the fraction $m_\text{B}/(m_\text{A} + m_\text{B}) = 0.60/0.90$ of the kinetic energy). Energy cannot increase, and the result is positive, as it should be.
+
+## fy4-10-L2-10
+**Find:** a) the velocities of the balls with their signs before and after the collision, b) the total momentum $p$ and the total kinetic energy $E_\text{k}$ of the system before and after, c) how the elasticity affects their conservation and d) an explanation of why momentum is conserved although kinetic energy decreases
+**Principle:** Choose both balls as the system and right as the positive direction. The simulation has no friction, and with Reflecting Border unticked no external force acts on the balls along the track. The forces of the collision are internal forces of the system, so the total momentum is conserved. Kinetic energy is conserved only in an elastic collision. The velocities are signed: the velocity of a ball moving to the left is negative.
+**Model answer:** The results depend on the masses and initial velocities you chose, so there is no single correct number. The method is always the same: read the mass and the signed velocity of each ball from the More Data table before and after the collision, calculate the momenta and the kinetic energies and compare the sums.
+
+Example solution with the default values of the simulation (read 16 November 2026, simulation version 1.1.25). The masses, the velocities and the kinetic energy the simulation shows were read from the simulation. Everything else was calculated from them.
+
+a) Before the collision: $m_1 = 0.50\,\text{kg}$ and $v_1 = 1.00\,\text{m/s}$, and $m_2 = 1.50\,\text{kg}$ and $v_2 = -0.50\,\text{m/s}$. Ball 2 moves to the left, so its velocity is negative. When the elasticity is $100\,\%$, after the collision $v_1' = -1.25\,\text{m/s}$ and $v_2' = 0.25\,\text{m/s}$: each ball reverses its direction.
+
+b) The momentum of a body is $p = mv$ and its kinetic energy is $E_\text{k} = \tfrac12 mv^2$. The total momentum and the total kinetic energy of the system are the sums of the values of the balls. The units are $\text{kg}$ and $\text{m/s}$, so no conversions are needed. Before the collision:
+
+$$\begin{aligned} p &= m_1 v_1 + m_2 v_2 \\ &= 0.50\,\text{kg} \cdot 1.00\,\text{m/s} \\ &\quad + 1.50\,\text{kg} \cdot (-0.50\,\text{m/s}) \\ &= -0.25\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+$$\begin{aligned} E_{\text{k},1} &= \tfrac12 m_1 v_1^2 \\ &= \tfrac12 \cdot 0.50\,\text{kg} \cdot (1.00\,\text{m/s})^2 \\ &= 0.25\,\text{J} \\[6pt] E_{\text{k},2} &= \tfrac12 m_2 v_2^2 \\ &= \tfrac12 \cdot 1.50\,\text{kg} \cdot (-0.50\,\text{m/s})^2 \\ &= 0.1875\,\text{J} \\[6pt] E_\text{k} &= E_{\text{k},1} + E_{\text{k},2} \\ &= 0.25\,\text{J} + 0.1875\,\text{J} \\ &= 0.4375\,\text{J} \\ &\approx 0.44\,\text{J} \end{aligned}$$
+
+After the collision, when the elasticity is $100\,\%$:
+
+$$\begin{aligned} p' &= m_1 v_1' + m_2 v_2' \\ &= 0.50\,\text{kg} \cdot (-1.25\,\text{m/s}) \\ &\quad + 1.50\,\text{kg} \cdot 0.25\,\text{m/s} \\ &= -0.25\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+$$\begin{aligned} E_{\text{k},1}' &= \tfrac12 m_1 v_1'^2 \\ &= \tfrac12 \cdot 0.50\,\text{kg} \cdot (-1.25\,\text{m/s})^2 \\ &= 0.3906\,\text{J} \\[6pt] E_{\text{k},2}' &= \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 1.50\,\text{kg} \cdot (0.25\,\text{m/s})^2 \\ &= 0.0469\,\text{J} \\[6pt] E_\text{k}' &= E_{\text{k},1}' + E_{\text{k},2}' \\ &= 0.3906\,\text{J} + 0.0469\,\text{J} \\ &= 0.4375\,\text{J} \\ &\approx 0.44\,\text{J} \end{aligned}$$
+
+The momentum and the kinetic energy are the same before and after, so both are conserved. The simulation shows the same kinetic energy, $0.44\,\text{J}$, before the collision and after it. The results are given to two decimals, because the simulation shows its values to two decimals.
+
+c) When the elasticity is $50\,\%$, the simulation shows the velocities $v_1' = -0.69\,\text{m/s}$ and $v_2' = 0.06\,\text{m/s}$ after the collision:
+
+$$\begin{aligned} p' &= m_1 v_1' + m_2 v_2' \\ &= 0.50\,\text{kg} \cdot (-0.69\,\text{m/s}) \\ &\quad + 1.50\,\text{kg} \cdot 0.06\,\text{m/s} \\ &= -0.255\,\text{kg}\cdot\text{m/s} \\ &\approx -0.26\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+$$\begin{aligned} E_{\text{k},1}' &= \tfrac12 m_1 v_1'^2 \\ &= \tfrac12 \cdot 0.50\,\text{kg} \cdot (-0.69\,\text{m/s})^2 \\ &= 0.1190\,\text{J} \\[6pt] E_{\text{k},2}' &= \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 1.50\,\text{kg} \cdot (0.06\,\text{m/s})^2 \\ &= 0.0027\,\text{J} \\[6pt] E_\text{k}' &= E_{\text{k},1}' + E_{\text{k},2}' \\ &= 0.1190\,\text{J} + 0.0027\,\text{J} \\ &= 0.1217\,\text{J} \\ &\approx 0.12\,\text{J} \end{aligned}$$
+
+When the elasticity is $0\,\%$, the balls stick together and move with the common velocity $v' = -0.13\,\text{m/s}$. The combined mass is $m_1 + m_2 = 2.00\,\text{kg}$:
+
+$$\begin{aligned} p' &= (m_1 + m_2)\,v' \\ &= 2.00\,\text{kg} \cdot (-0.13\,\text{m/s}) \\ &= -0.26\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+$$\begin{aligned} E_\text{k}' &= \tfrac12 (m_1 + m_2)\,v'^2 \\ &= \tfrac12 \cdot 2.00\,\text{kg} \cdot (-0.13\,\text{m/s})^2 \\ &= 0.0169\,\text{J} \\ &\approx 0.02\,\text{J} \end{aligned}$$
+
+In every case the momentum is the same $-0.25\,\text{kg}\cdot\text{m/s}$ within the rounding of the display. The value $-0.26\,\text{kg}\cdot\text{m/s}$ comes from the velocities rounded to two decimals: the exact common velocity is $-0.125\,\text{m/s}$, and it gives $2.00\,\text{kg} \cdot (-0.125\,\text{m/s})$, that is $-0.25\,\text{kg}\cdot\text{m/s}$. The kinetic energy, however, decreases: of $0.44\,\text{J}$, $0.12\,\text{J}$ is left when the elasticity is $50\,\%$ (about $72\,\%$ of the kinetic energy is changed into other forms of energy), and $0.02\,\text{J}$ when the elasticity is $0\,\%$ (about $96\,\%$). So momentum is conserved at every value of the elasticity, but kinetic energy is conserved only when the elasticity is $100\,\%$, and the smaller the elasticity, the more kinetic energy is lost. An elasticity of $100\,\%$ is an elastic collision and $0\,\%$ a perfectly inelastic collision.
+
+d) During the collision the balls exert on each other forces that are equal in size and opposite in direction for the same time (Newton's third law). Therefore the impulses on the balls and the changes of their momenta are equal and opposite and cancel each other. In the example the momentum of ball 1 changes by $-1.125\,\text{kg}\cdot\text{m/s}$ and that of ball 2 by $+1.125\,\text{kg}\cdot\text{m/s}$, when the elasticity is $100\,\%$. The total momentum cannot change when no external force acts along the track. Momentum is a vector quantity, so opposite momenta can cancel each other.
+
+Kinetic energy is a scalar quantity that is never negative, and no law requires it to be conserved. When the collision is not elastic, the internal forces do work that deforms the bodies permanently and warms them: kinetic energy is changed into internal energy and sound. The total energy is conserved, the mechanical energy is not.
+
+Check and limitations: in a perfectly inelastic collision the conservation law gives $v' = \dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$, that is $-0.125\,\text{m/s}$, which agrees with the value $-0.13\,\text{m/s}$ the simulation shows. The simulation is a model: the balls are ideal, there is no friction and the values are shown rounded. In a real experiment friction and measurement uncertainty would cause small deviations.

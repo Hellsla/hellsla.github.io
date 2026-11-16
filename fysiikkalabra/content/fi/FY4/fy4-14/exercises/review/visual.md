@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2ec9267f358ff7ed
-SCOPE: delta added-exercise from 5ffc229e2dbf46e5 base 81db4a6fd727
+CONTENT-HASH: 7fdde13b611ba03f
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-14-L2-08 — the intermediate values 623,25 N and 735,75 N carry more digits than the 3-figure answer; round to 623 N and 736 N in the chain.
-- [Minor] fy4-14-L2-08 force diagram — G and F_v arrows stand close together beside the body; a slightly larger gap would read better.
+- [Minor] fy4-14-L2-08 Järkevyys, last sentence — heavy: "jonka luvun kuvaajan malli antaisi samalle massalle". Suggest: "Rajanopeus $48\,\text{m/s}$ on pienempi kuin luvun mallin antama noin $53\,\text{m/s}$ samalle massalle, koska tämä hyppääjä putoaa leveämmässä asennossa (suurempi poikkipinta-ala, esimerkiksi väljä puku) kuin kuvaajan hyppääjät."
+- [Minor] fy4-14-L2-08 — the Järkevyys block now holds four ideas; acceptable, but the model comparison could be its own paragraph.
 
 ## Checked
-- open-exercises-L2-1280-10, -11, -12: v(t) data-point graph (units, readable ticks, markers only), force diagram (G red, F_v red, v blue, a orange), two-part solution and its Vastaus/Järkevyys. Layout and Finnish good.
+- open-exercises-L2-1280-12 (L2-08 Vastaus and extended Järkevyys), open-exercises-1280-3 (L1-03 with the corrected Järkevyys, force diagram, Kaava).
+- The $3{,}3\,\text{m/s}^2$ fix renders cleanly; units upright, decimal comma; no clipping at 1280. Captions' marker removal is text only.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

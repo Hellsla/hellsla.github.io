@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f37b954eefe31cd0
-
+CONTENT-HASH: 3adcc392f3bc2b66
 ## Blocking
-None. Exercises, including the added ones, use the same symbols; each solution names which work W is; answers unchanged.
-
+(none)
 ## Polish
-2. Solutions use E_mek0 (e.g. exercise on friction and air drag) but the lesson never says E_mek0 = E_p0 + E_k0; add it beside the E_mek definition.
-
+- solutions.md fy4-8-L2-10 (Vastaus/Answer) — part d now comes first and a, b, c, e follow after a lead-in ("Lisäksi: a)" / "In addition: a)"); a student reading in order meets d before a. Acceptable given the CI constraint; the earlier polish items (c and e under the answer step, wording) stand unchanged.
 ## Checked
-Read the changed text and the surrounding formula section, worked example, solutions and inquiry for the MAFY symbols; grep found no leftover old symbol (F_parallel, W_kok, W_muut, E_k,1, E_mek,1) in this language.
+- Delta: only the order of paragraphs in the answer step of fy4-8-L2-10 changed; no wording, number or unit changed, and part d keeps its value (s ≈ 0,26 m, about 29 kN).
+- The lead-in leaves no part missing or duplicated (a, b, c, d, e all present); the worked Sijoitus sequence before it is untouched.
+- No task text, level, figure or exit-ticket change; the earlier pass stands.
+- Hash the same at start and end.

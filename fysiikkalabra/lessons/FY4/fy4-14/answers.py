@@ -31,5 +31,6 @@ a["fy4-14-L3-04"] = 82.0 * (g - a_j)                # mg − F_v = ma → F_v = 
 a["fy4-14-L3-05"] = (2 * g * 1500) ** 0.5           # raindrop without air resistance: v² = 2gh → v = √(2 · 9,81 · 1500) = 171,55 m/s (a: F_v = mg = 1,373·10⁻⁴ N)
 # Figure task (skydiver's (t, v) points, down positive: (6 s; 40,4 m/s) and (10 s; 46,4 m/s))
 a_h = (46.4 - 40.4) / (10.0 - 6.0)                  # average acceleration over 6,0–10,0 s, about the acceleration at 8,0 s: 1,50 m/s²
+vT_model_75 = (75.0 * g / 0.26) ** 0.5              # Järkevyys: the chapter's model (lesson-answers.py, F_v = k v², k = 0,26 kg/m belly down) gives 53,2 m/s for 75,0 kg; the points level off near 48 m/s (k = mg/v² = 0,32 kg/m: a wider posture)
 a["fy4-14-L2-08"] = 75.0 * (9.81 - a_h)             # mg − F_v = ma → F_v = m(g − a) = 75,0 · 8,31 = 623,25 N (mg = 735,75 N, F_v/G = 0,847)
 print(json.dumps(a))

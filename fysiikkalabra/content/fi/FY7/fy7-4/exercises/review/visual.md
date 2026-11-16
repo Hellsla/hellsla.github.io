@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f44c17044fad7b3b
-SCOPE: delta added-exercise from eb78314c0c339d07 base 8f23aa7ae3bd
+CONTENT-HASH: 450df139daa9e063
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 4-17 (fy7-4/force-angle) — data points are drawn in the momentum purple; use ink/neutral markers so the FY4 colour code is not diluted (the red curve is right for force).
+- [Minor] 4-8 Järkevyys — display formula mid-sentence ("Suurin mahdollinen voima olisi" / formula / "ja 0,094 N jää sen alle") reads in three blocks; acceptable, comma after the formula sensible.
 
 ## Checked
-- fy7-4 L2 captures 11-13 (4-17 graph and solution).
-- Delta only: the added exercises, their figures and solutions; the rest of the set not re-reviewed. Hash identical at start and end.
+- fy7-4-open-exercises-1280-8 and -9 (4-8 solution and the re-broken Järkevyys: 0,050 N : 0,3420 = 0,146 N, on one row at 1280 px).
+- Delta (reflow only): changed solutions read in fy7-4-open-exercises captures at 1280 px; the 390 px layout was judged from the source rows (short aligned rows, nothing wider than the 1280 px rows). Layout survived: no overflow, units upright, signs and numbers unchanged. Hash identical at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

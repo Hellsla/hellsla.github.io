@@ -314,6 +314,48 @@
       "unit": "kg",
       "tolerance": 0.05,
       "figure": "fy4-7/ep-kuvaaja"
+    },
+    {
+      "id": "fy4-7-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "text": "Fintraffic measures the speeds of vehicles on Finland's main roads with automatic traffic measuring stations (LAM stations). The report <a href=\"https://www.fintraffic.fi/sites/default/files/2026-05/Ajonopeudet_maanteilla_2025.pdf\" target=\"_blank\" rel=\"noopener\">Fintraffic: Ajonopeudet maanteillä 2025</a> (Driving speeds on highways 2025; PDF in Finnish, read 16 November 2026) gathers the measurements of the summer season 2025 from 268 stations. The table gives figures of the report for three types of road: the mean speed of all vehicles, the share of vehicles that exceeded the speed limit, and the share that exceeded it by more than $10\\,\\text{km/h}$.\n\na) Use the table to describe how the driving speeds are distributed on the roads with a limit of $80\\,\\text{km/h}$. What share of the vehicles drive at the limit or below it, what share exceed it by at most $10\\,\\text{km/h}$, and what share exceed it by more than $10\\,\\text{km/h}$? Compare the distribution with that of the $100\\,\\text{km/h}$ roads.\n\nb) The mass of a car is $1500\\,\\text{kg}$. Calculate the kinetic energy of the car at a speed of $80\\,\\text{km/h}$ and at $92\\,\\text{km/h}$, which is more than $10\\,\\text{km/h}$ over the limit. By how many per cent is the kinetic energy larger at the higher speed?\n\nc) Estimate the difference between the stopping distances of the cars, when the driver's reaction time is $1.0\\,\\text{s}$ and in braking the car slows down uniformly with a deceleration of $8.0\\,\\text{m/s}^2$ at both speeds.\n\nd) What can be concluded about road safety from this data? Also name at least three factors that affect safety and that the data says nothing about.\n\nWrite the difference between the stopping distances of part c) in the answer box.",
+      "answer": 13.3,
+      "unit": "m",
+      "tolerance": 0.05,
+      "data": {
+        "caption": "Driving speeds on main roads in the summer season 2025, all vehicles (Fintraffic: Ajonopeudet maanteillä 2025)",
+        "columns": [
+          "Road and speed limit",
+          "Mean speed $(\\text{km/h})$",
+          "Exceeded the limit $(\\%)$",
+          "Exceeded it by more than $10\\,\\text{km/h}$ $(\\%)$"
+        ],
+        "rows": [
+          [
+            "Single-carriageway main road, $80\\,\\text{km/h}$",
+            "82.3",
+            "62.0",
+            "13.8"
+          ],
+          [
+            "Single-carriageway main road, $100\\,\\text{km/h}$",
+            "96.3",
+            "39.8",
+            "8.1"
+          ],
+          [
+            "Motorway, $120\\,\\text{km/h}$",
+            "112.6",
+            "36.2",
+            "7.3"
+          ]
+        ]
+      }
     }
   ],
   "level3": [

@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 67c503700e6c133e
-SCOPE: delta added-exercise from 99e5a8438eb68251 base 8f23aa7ae3bd
+CONTENT-HASH: cb76d2c58d1c9cb6
 
 ## Blocking
-- none
+- (none)
 
 ## Polish
-- none
+- (none)
 
 ## Checked
-- Added exercises L2-09, L2-10 (fi-easy, FY7 fy7-3): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-3.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
-- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
-- Hash identical at start and end.
+delta: exercise captures; degree signs and the example-data wording fine.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4
