@@ -39,23 +39,7 @@ FY5-sovella	m g r_\text{max} + m_\text{p} g r_\text{p} - m_\text{v} g r_\text{v}
 FY5-sovella	r \approx 1{,}6 \cdot 10^{8}\,\text{m} = 160\,000\,\text{km}
 FY5-sovella	v = \dfrac{2\pi \cdot 421{,}8 \cdot 10^{6}\,\text{m}}{1{,}769 \cdot 86
 FY5-sovella	v' = 343\,\text{m/s} - 12 \cdot 0{,}6\,\text{m/s} = 335{,}8\,\text{m/s
-<<<<<<< HEAD
-=======
-FY6-koe	= 1{,}10 \cdot 10^{19} \cdot 1{,}76 \cdot 10^{-16}\,\text{J/s}
-FY6-koe	R_\text{s} = -\tfrac{\Delta U}{\Delta I} = \tfrac{1{,}60\,\text{V} - 1
-FY6-sovella	16{,}7\,\text{W} + 8{,}3\,\text{W} + 5{,}0\,\text{W} = 30\,\text{W}
-FY6-sovella	3{,}0 \cdot 10^{5}\,\text{V/m} = 0{,}30\,\text{MV/m}
-FY6-sovella	3{,}6 \cdot 10^{-8}\,\text{J} - 5{,}0 \cdot 10^{-9}\,\text{J} = 3{,}1 
-FY6-sovella	= 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} \c
 FY6-sovella	E - R_\text{s} I = 4{,}60\,\text{V} - 0{,}60\,\text{V}
-FY6-sovella	E_2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text
-FY6-sovella	F = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} 
-FY6-sovella	R_\text{k} I^2 = 0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 \approx 2{,
-FY6-sovella	U_\text{L} = 12{,}0\,\text{V} - 0{,}80\,\Omega \cdot 2{,}5\,\text{A} =
-FY6-sovella	\Delta Q = 330 \cdot 10^{-6}\,\text{F} \cdot 80\,\text{V} = 0{,}0264\,
-FY6-sovella	\dfrac{1}{2} m v^2 = \dfrac{1}{2} \cdot 4{,}0 \cdot 10^{-10}\,\text{kg
-FY6-sovella	qU = 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 6{,}0 \cdot 10^{4}\,\text{V}
->>>>>>> origin/main
 FY7-koe	0{,}0571\,\text{MW} \cdot 4000\,\text{h} = 228{,}5\,\text{MWh}
 FY7-koe	1{,}728\,\text{MW} \cdot 4000\,\text{h} = 6912\,\text{MWh}
 FY7-koe	= (6912\,\text{MWh} - 228{,}5\,\text{MWh}) \cdot 50\,\text{€/MWh} = 33
@@ -902,21 +886,7 @@ fi-easy/FY5-sovella	m g r_\text{max} + m_\text{p} g r_\text{p} - m_\text{v} g r_
 fi-easy/FY5-sovella	r \approx 1{,}6 \cdot 10^{8}\,\text{m} = 160\,000\,\text{km}
 fi-easy/FY5-sovella	v = \dfrac{2\pi \cdot 421{,}8 \cdot 10^{6}\,\text{m}}{1{,}769 \cdot 86
 fi-easy/FY5-sovella	v' = 343\,\text{m/s} - 12 \cdot 0{,}6\,\text{m/s} = 335{,}8\,\text{m/s
-<<<<<<< HEAD
-=======
-fi-easy/FY6-sovella	16{,}7\,\text{W} + 8{,}3\,\text{W} + 5{,}0\,\text{W} = 30\,\text{W}
-fi-easy/FY6-sovella	3{,}0 \cdot 10^{5}\,\text{V/m} = 0{,}30\,\text{MV/m}
-fi-easy/FY6-sovella	3{,}6 \cdot 10^{-8}\,\text{J} - 5{,}0 \cdot 10^{-9}\,\text{J} = 3{,}1 
-fi-easy/FY6-sovella	= 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} \c
 fi-easy/FY6-sovella	E - R_\text{s} I = 4{,}60\,\text{V} - 0{,}60\,\text{V}
-fi-easy/FY6-sovella	E_2 = \dfrac{1}{2} \cdot 330 \cdot 10^{-6}\,\text{F} \cdot (220\,\text
-fi-easy/FY6-sovella	F = 8{,}988 \cdot 10^{9}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{C}^2} 
-fi-easy/FY6-sovella	R_\text{k} I^2 = 0{,}80\,\Omega \cdot (1{,}76\,\text{A})^2 \approx 2{,
-fi-easy/FY6-sovella	U_\text{L} = 12{,}0\,\text{V} - 0{,}80\,\Omega \cdot 2{,}5\,\text{A} =
-fi-easy/FY6-sovella	\Delta Q = 330 \cdot 10^{-6}\,\text{F} \cdot 80\,\text{V} = 0{,}0264\,
-fi-easy/FY6-sovella	\dfrac{1}{2} m v^2 = \dfrac{1}{2} \cdot 4{,}0 \cdot 10^{-10}\,\text{kg
-fi-easy/FY6-sovella	qU = 6{,}0 \cdot 10^{-13}\,\text{C} \cdot 6{,}0 \cdot 10^{4}\,\text{V}
->>>>>>> origin/main
 fi-easy/FY7-sovella	0{,}012\,\text{N/m} \cdot (8000 : 300)^2 \approx 8{,}5\,\text{N/m}
 fi-easy/FY7-sovella	0{,}780 : 1300\,\text{nm} = 6{,}00 \cdot 10^{-4}\,\tfrac{1}{\text{nm}}
 fi-easy/FY7-sovella	1667\,\text{nm} \cdot \sin 20{,}6^\circ \approx 586{,}5\,\text{nm}
@@ -1638,80 +1608,8 @@ fi-easy/fy6-2	2{,}29\,\Omega : 117{,}71\,\Omega = 1{,}95\,\%
 fi-easy/fy6-2	\pm(0{,}5\,\% + 2\ \text{numeroa})
 fi-easy/fy6-2	\pm(1{,}0\,\% + 2\ \text{numeroa})
 fi-easy/fy6-2	\pm(2{,}0\,\% + 3\ \text{numeroa})
-<<<<<<< HEAD
-=======
-fi-easy/fy6-3	1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot 50\,\text{m} : (1{,}7 \
-fi-easy/fy6-3	5{,}0 \cdot 10^{-7}\,\Omega\cdot\text{m} \cdot 1{,}0\,\text{m} : (0{,}
-fi-easy/fy6-3	600\,\Omega \cdot 2{,}5 \cdot 10^{-3}\,\text{A} = 1{,}5\,\text{V}
-fi-easy/fy6-4	0{,}2\,\text{A} + 0{,}5\,\text{A} + 0{,}8\,\text{A} = 1{,}5\,\text{A}
-fi-easy/fy6-4	100\,\Omega + 100\,\Omega + 100\,\Omega = 300\,\Omega
-fi-easy/fy6-4	60{,}0\,\text{mA} + 30{,}0\,\text{mA} = 90{,}0\,\text{mA}
-fi-easy/fy6-4	= 62\,500\,\Omega^2 - 60\,000\,\Omega^2
-fi-easy/fy6-4	I = U : R = 6{,}0\,\text{V} : 100\,\Omega = 0{,}060\,\text{A} = 60\,\t
 fi-easy/fy6-5	-3{,}0\,\text{V} - (-9{,}0\,\text{V}) = 6{,}0\,\text{V}
-fi-easy/fy6-5	0{,}20\,\text{A} + 0{,}15\,\text{A} + 0{,}24\,\text{A} = 0{,}59\,\text
-fi-easy/fy6-5	12\,\text{V} - 30\,\Omega \cdot 0{,}20\,\text{A} = 6{,}0\,\text{V}
-fi-easy/fy6-5	12\,\text{V} : (100\,\Omega + 71{,}4\,\Omega) = 0{,}070\,\text{A}
-fi-easy/fy6-5	30\,\Omega \cdot (0{,}20\,\text{A})^2 + 20\,\Omega \cdot (0{,}30\,\tex
-fi-easy/fy6-5	9{,}0\,\text{V} - 2{,}0\,\text{V} - 3{,}5\,\text{V} = 3{,}5\,\text{V}
-fi-easy/fy6-5	9{,}0\,\text{V} - 30\,\Omega \cdot 0{,}10\,\text{A} = 6{,}0\,\text{V}
-fi-easy/fy6-5	= 9{,}0\,\text{V} - 60\,\Omega \cdot 0{,}040\,\text{A} - 90\,\Omega \c
-fi-easy/fy6-6	(11{,}5\,\text{V})^2 : 287{,}5\,\Omega = 0{,}46\,\text{W}
-fi-easy/fy6-6	(15{,}8\,\text{V})^2 : 1000\,\Omega = 0{,}25\,\text{W}
-fi-easy/fy6-6	(230\,\text{V})^2 : 77{,}86\,\Omega = 679\,\text{W}
-fi-easy/fy6-6	1681\,\text{W} + 152{,}5\,\text{W} = 1834\,\text{W}
-fi-easy/fy6-6	26{,}45\,\Omega \cdot (7{,}97\,\text{A})^2 = 1681\,\text{W}
-fi-easy/fy6-6	529\,\Omega \cdot (0{,}1242\,\text{A})^2 \approx 8{,}2\,\text{W}
-fi-easy/fy6-6	= 2000\,\text{W} \cdot 180\,\text{s} + 1000\,\text{W} \cdot 300\,\text
-fi-easy/fy6-6	I = U : R = 6{,}0\,\text{V} : 30\,\Omega = 0{,}20\,\text{A}
-fi-easy/fy6-7	0{,}0030\,\text{kW} \cdot 7665\,\text{h} \approx 23\,\text{kWh}
-fi-easy/fy6-7	0{,}060\,\text{kW} \cdot 1460\,\text{h} \approx 88\,\text{kWh}
-fi-easy/fy6-7	0{,}10\,\text{kW} \cdot 8{,}0\,\text{h} = 0{,}80\,\text{kWh}
-fi-easy/fy6-7	0{,}2\,\text{kW} \cdot 1000\,\text{h} = 200\,\text{kWh}
-fi-easy/fy6-7	0{,}335\,\text{kW} \cdot 168\,\text{h} = 56{,}3\,\text{kWh}
-fi-easy/fy6-7	0{,}90\,\text{kW} \cdot 0{,}25\,\text{h} = 0{,}225\,\text{kWh}
-fi-easy/fy6-7	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3\,600\,000\,\te
-fi-easy/fy6-7	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
-fi-easy/fy6-7	1\,\text{kWh} = 1000\,\text{W} \cdot 60\,\text{min} = 60\,000\,\text{W
-fi-easy/fy6-7	230\,\text{kWh} \cdot 0{,}2\,\text{€/kWh} \approx 46\,\text{€}
-fi-easy/fy6-7	267{,}44\,\text{snt} - 93{,}0\,\text{snt} = 174{,}44\,\text{snt}
-fi-easy/fy6-7	299\,\text{kWh} : 8760\,\text{h} = 0{,}0341\,\text{kW}
-fi-easy/fy6-7	371\,\text{kWh} \cdot 0{,}150\,\text{€/kWh} = 55{,}65\,\text{€}
-fi-easy/fy6-7	8\,\text{kWh} \cdot 0{,}16\,\text{€/kWh} \cdot 7 \approx 9\,\text{€}
-fi-easy/fy6-7	= 1{,}2\,\text{kWh} + 1{,}2\,\text{kWh} + 0{,}10\,\text{kWh}
-fi-easy/fy6-7	= 2{,}0\,\text{kW} \cdot 0{,}25\,\text{h} + 0{,}2\,\text{kW} \cdot 1{,
-fi-easy/fy6-7	= 2{,}4\,\text{kW} \cdot 0{,}5\,\text{h} + 1{,}2\,\text{kW} \cdot 1{,}
-fi-easy/fy6-7	P = UI = 230\,\text{V} \cdot 0{,}26\,\text{A} \approx 60\,\text{W}
-fi-easy/fy6-8	1{,}49\,\text{V} - 0{,}22\,\Omega \cdot 0{,}40\,\text{A} = 1{,}40\,\te
-fi-easy/fy6-8	1{,}54\,\text{V} - 0{,}56\,\Omega \cdot 0{,}60\,\text{A} = 1{,}20\,\te
-fi-easy/fy6-8	1{,}5\,\text{V} - 0{,}40\,\Omega \cdot 0{,}75\,\text{A} = 1{,}2\,\text
-fi-easy/fy6-8	1{,}60\,\text{V} - 0{,}50\,\Omega \cdot 0{,}40\,\text{A} = 1{,}40\,\te
-fi-easy/fy6-8	3{,}70\,\text{V} + 1{,}0\,\Omega \cdot 0{,}80\,\text{A} = 4{,}50\,\tex
-fi-easy/fy6-8	4{,}51\,\text{V} - 0{,}30\,\Omega \cdot 2{,}00\,\text{A} = 3{,}91\,\te
-fi-easy/fy6-8	6{,}11\,\text{V} - 0{,}80\,\Omega \cdot 2{,}00\,\text{A} = 4{,}51\,\te
-fi-easy/fy6-8	9{,}0\,\text{V} - 2{,}0\,\Omega \cdot 1{,}00\,\text{A} = 7{,}0\,\text{
-fi-easy/fy6-8	= 11\,\text{V} + 0{,}020\,\Omega \cdot 50\,\text{A}
-fi-easy/fy6-8	I = E : (R + R_\text{s}) = 9{,}0\,\text{V} : 13{,}5\,\Omega = 0{,}67\,
-fi-easy/fy6-8	U = E - R_\text{s} I - R_\text{j} I = E - (R_\text{s} + R_\text{j}) I
-fi-easy/fy6-9	(13{,}8\,\text{V} - 12{,}4\,\text{V}) : 0{,}40\,\Omega = 3{,}5\,\text{
-fi-easy/fy6-9	(14{,}0\,\text{V} - 12{,}60\,\text{V}) : 0{,}40\,\Omega = 3{,}5\,\text
-fi-easy/fy6-9	12{,}4\,\text{V} + 0{,}040\,\Omega \cdot 5{,}0\,\text{A} = 12{,}6\,\te
-fi-easy/fy6-9	12{,}6\,\text{V} + 0{,}050\,\Omega \cdot 6{,}0\,\text{A} = 12{,}9\,\te
-fi-easy/fy6-9	13{,}0\,\text{V} - 1{,}5\,\text{A} \cdot 0{,}40\,\Omega = 12{,}4\,\tex
-fi-easy/fy6-9	14{,}0\,\text{V} - 0{,}40\,\Omega \cdot I - 12{,}4\,\text{V} = 0
-fi-easy/fy6-9	14{,}4\,\text{V} - 0{,}25\,\Omega \cdot 6{,}0\,\text{A} = 12{,}9\,\tex
-fi-easy/fy6-9	14{,}4\,\text{V} - 0{,}36\,\Omega \cdot 5{,}0\,\text{A} = 12{,}6\,\tex
-fi-easy/fy6-9	1{,}2\,\text{A} \cdot (0{,}80\,\Omega + 0{,}20\,\Omega) = 1{,}2\,\text
-fi-easy/fy6-9	3{,}55\,\text{V} + 0{,}10\,\Omega \cdot 2{,}0\,\text{A} = 3{,}75\,\tex
-fi-easy/fy6-9	3{,}70\,\text{V} + 0{,}10\,\Omega \cdot 0{,}50\,\text{A} = 3{,}75\,\te
-fi-easy/fy6-9	9{,}3225\,\text{Wh} : 2{,}5\,\text{Ah} \approx 3{,}73\,\text{V}
-fi-easy/fy6-9	9{,}62\,\text{Wh} : 11{,}0\,\text{Wh} \approx 87{,}5\,\%
-fi-easy/fy6-9	= (14{,}4\,\text{V} - 12{,}6\,\text{V}) : (0{,}25\,\Omega + 0{,}050\,\
-fi-easy/fy6-9	= 2{,}0\,\text{A} \cdot 1{,}0\,\text{h} + 1{,}5\,\text{A} \cdot 2{,}0\
-fi-easy/fy6-9	= I\,\Delta t\,(U_{1,\text{ka}} + U_{2,\text{ka}} + \dots + U_{5,\text
-fi-easy/fy6-9	I = (14{,}0\,\text{V} - 12{,}4\,\text{V}) : 0{,}40\,\Omega = 4{,}0\,\t
 fi-easy/fy7-1	14\,\mu\text{T} \cdot \tan 60{,}75^\circ = 25\,\mu\text{T}
->>>>>>> origin/main
 fi-easy/fy7-1	= (12\,\mu\text{T})^2 + (-5{,}0\,\mu\text{T})^2 + (-48\,\mu\text{T})^2
 fi-easy/fy7-1	B = \sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\t
 fi-easy/fy7-1	\sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\text{
@@ -2599,81 +2497,9 @@ fy6-2	2{,}29\,\Omega : 117{,}71\,\Omega = 1{,}95\,\%
 fy6-2	\pm(0{,}5\,\% + 2\ \text{numeroa})
 fy6-2	\pm(1{,}0\,\% + 2\ \text{numeroa})
 fy6-2	\pm(2{,}0\,\% + 3\ \text{numeroa})
-<<<<<<< HEAD
-=======
-fy6-3	1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot 50\,\text{m} : (1{,}7 \
-fy6-3	5{,}0 \cdot 10^{-7}\,\Omega\cdot\text{m} \cdot 1{,}0\,\text{m} : (0{,}
-fy6-3	600\,\Omega \cdot 2{,}5 \cdot 10^{-3}\,\text{A} = 1{,}5\,\text{V}
-fy6-4	0{,}2\,\text{A} + 0{,}5\,\text{A} + 0{,}8\,\text{A} = 1{,}5\,\text{A}
-fy6-4	100\,\Omega + 100\,\Omega + 100\,\Omega = 300\,\Omega
-fy6-4	60{,}0\,\text{mA} + 30{,}0\,\text{mA} = 90{,}0\,\text{mA}
-fy6-4	= 62\,500\,\Omega^2 - 60\,000\,\Omega^2
-fy6-4	I = U : R = 6{,}0\,\text{V} : 100\,\Omega = 0{,}060\,\text{A} = 60\,\t
 fy6-5	-3{,}0\,\text{V} - (-9{,}0\,\text{V}) = 6{,}0\,\text{V}
-fy6-5	0{,}20\,\text{A} + 0{,}15\,\text{A} + 0{,}24\,\text{A} = 0{,}59\,\text
-fy6-5	12\,\text{V} - 30\,\Omega \cdot 0{,}20\,\text{A} = 6{,}0\,\text{V}
-fy6-5	12\,\text{V} : (100\,\Omega + 71{,}4\,\Omega) = 0{,}070\,\text{A}
-fy6-5	30\,\Omega \cdot (0{,}20\,\text{A})^2 + 20\,\Omega \cdot (0{,}30\,\tex
-fy6-5	9{,}0\,\text{V} - 2{,}0\,\text{V} - 3{,}5\,\text{V} = 3{,}5\,\text{V}
-fy6-5	9{,}0\,\text{V} - 30\,\Omega \cdot 0{,}10\,\text{A} = 6{,}0\,\text{V}
-fy6-5	= 9{,}0\,\text{V} - 60\,\Omega \cdot 0{,}040\,\text{A} - 90\,\Omega \c
-fy6-6	(11{,}5\,\text{V})^2 : 287{,}5\,\Omega = 0{,}46\,\text{W}
-fy6-6	(15{,}8\,\text{V})^2 : 1000\,\Omega = 0{,}25\,\text{W}
-fy6-6	(230\,\text{V})^2 : 77{,}86\,\Omega = 679\,\text{W}
-fy6-6	1681\,\text{W} + 152{,}5\,\text{W} = 1834\,\text{W}
-fy6-6	26{,}45\,\Omega \cdot (7{,}97\,\text{A})^2 = 1681\,\text{W}
-fy6-6	529\,\Omega \cdot (0{,}1242\,\text{A})^2 \approx 8{,}2\,\text{W}
-fy6-6	= 2000\,\text{W} \cdot 180\,\text{s} + 1000\,\text{W} \cdot 300\,\text
-fy6-6	I = U : R = 6{,}0\,\text{V} : 30\,\Omega = 0{,}20\,\text{A}
-fy6-7	0{,}0030\,\text{kW} \cdot 7665\,\text{h} \approx 23\,\text{kWh}
-fy6-7	0{,}060\,\text{kW} \cdot 1460\,\text{h} \approx 88\,\text{kWh}
-fy6-7	0{,}10\,\text{kW} \cdot 8{,}0\,\text{h} = 0{,}80\,\text{kWh}
-fy6-7	0{,}2\,\text{kW} \cdot 1000\,\text{h} = 200\,\text{kWh}
-fy6-7	0{,}335\,\text{kW} \cdot 168\,\text{h} = 56{,}3\,\text{kWh}
-fy6-7	0{,}90\,\text{kW} \cdot 0{,}25\,\text{h} = 0{,}225\,\text{kWh}
-fy6-7	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3\,600\,000\,\te
-fy6-7	1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}
-fy6-7	1\,\text{kWh} = 1000\,\text{W} \cdot 60\,\text{min} = 60\,000\,\text{W
-fy6-7	230\,\text{kWh} \cdot 0{,}2\,\text{€/kWh} \approx 46\,\text{€}
-fy6-7	267{,}44\,\text{snt} - 93{,}0\,\text{snt} = 174{,}44\,\text{snt}
-fy6-7	299\,\text{kWh} : 8760\,\text{h} = 0{,}0341\,\text{kW}
-fy6-7	371\,\text{kWh} \cdot 0{,}150\,\text{€/kWh} = 55{,}65\,\text{€}
-fy6-7	8\,\text{kWh} \cdot 0{,}16\,\text{€/kWh} \cdot 7 \approx 9\,\text{€}
-fy6-7	= 1{,}2\,\text{kWh} + 1{,}2\,\text{kWh} + 0{,}10\,\text{kWh}
-fy6-7	= 2{,}0\,\text{kW} \cdot 0{,}25\,\text{h} + 0{,}2\,\text{kW} \cdot 1{,
-fy6-7	= 2{,}4\,\text{kW} \cdot 0{,}5\,\text{h} + 1{,}2\,\text{kW} \cdot 1{,}
-fy6-7	P = UI = 230\,\text{V} \cdot 0{,}26\,\text{A} \approx 60\,\text{W}
-fy6-8	1{,}49\,\text{V} - 0{,}22\,\Omega \cdot 0{,}40\,\text{A} = 1{,}40\,\te
-fy6-8	1{,}54\,\text{V} - 0{,}56\,\Omega \cdot 0{,}60\,\text{A} = 1{,}20\,\te
-fy6-8	1{,}5\,\text{V} - 0{,}40\,\Omega \cdot 0{,}75\,\text{A} = 1{,}2\,\text
-fy6-8	1{,}60\,\text{V} - 0{,}50\,\Omega \cdot 0{,}40\,\text{A} = 1{,}40\,\te
-fy6-8	3{,}70\,\text{V} + 1{,}0\,\Omega \cdot 0{,}80\,\text{A} = 4{,}50\,\tex
-fy6-8	4{,}51\,\text{V} - 0{,}30\,\Omega \cdot 2{,}00\,\text{A} = 3{,}91\,\te
-fy6-8	6{,}11\,\text{V} - 0{,}80\,\Omega \cdot 2{,}00\,\text{A} = 4{,}51\,\te
-fy6-8	9{,}0\,\text{V} - 2{,}0\,\Omega \cdot 1{,}00\,\text{A} = 7{,}0\,\text{
-fy6-8	= 11\,\text{V} + 0{,}020\,\Omega \cdot 50\,\text{A}
-fy6-8	I = E : (R + R_\text{s}) = 9{,}0\,\text{V} : 13{,}5\,\Omega = 0{,}67\,
-fy6-8	U = E - R_\text{s} I - R_\text{j} I = E - (R_\text{s} + R_\text{j}) I
-fy6-9	(13{,}8\,\text{V} - 12{,}4\,\text{V}) : 0{,}40\,\Omega = 3{,}5\,\text{
-fy6-9	(14{,}0\,\text{V} - 12{,}60\,\text{V}) : 0{,}40\,\Omega = 3{,}5\,\text
-fy6-9	12{,}4\,\text{V} + 0{,}040\,\Omega \cdot 5{,}0\,\text{A} = 12{,}6\,\te
-fy6-9	12{,}6\,\text{V} + 0{,}050\,\Omega \cdot 6{,}0\,\text{A} = 12{,}9\,\te
-fy6-9	13{,}0\,\text{V} - 1{,}5\,\text{A} \cdot 0{,}40\,\Omega = 12{,}4\,\tex
-fy6-9	14{,}0\,\text{V} - 0{,}40\,\Omega \cdot I - 12{,}4\,\text{V} = 0
-fy6-9	14{,}4\,\text{V} - 0{,}25\,\Omega \cdot 6{,}0\,\text{A} = 12{,}9\,\tex
-fy6-9	14{,}4\,\text{V} - 0{,}36\,\Omega \cdot 5{,}0\,\text{A} = 12{,}6\,\tex
-fy6-9	1{,}2\,\text{A} \cdot (0{,}80\,\Omega + 0{,}20\,\Omega) = 1{,}2\,\text
-fy6-9	3{,}55\,\text{V} + 0{,}10\,\Omega \cdot 2{,}0\,\text{A} = 3{,}75\,\tex
-fy6-9	3{,}70\,\text{V} + 0{,}10\,\Omega \cdot 0{,}50\,\text{A} = 3{,}75\,\te
-fy6-9	9{,}3225\,\text{Wh} : 2{,}5\,\text{Ah} \approx 3{,}73\,\text{V}
-fy6-9	9{,}62\,\text{Wh} : 11{,}0\,\text{Wh} \approx 87{,}5\,\%
-fy6-9	= (14{,}4\,\text{V} - 12{,}6\,\text{V}) : (0{,}25\,\Omega + 0{,}050\,\
-fy6-9	= 2{,}0\,\text{A} \cdot 1{,}0\,\text{h} + 1{,}5\,\text{A} \cdot 2{,}0\
-fy6-9	= I\,\Delta t\,(U_{1,\text{ka}} + U_{2,\text{ka}} + \dots + U_{5,\text
-fy6-9	I = (14{,}0\,\text{V} - 12{,}4\,\text{V}) : 0{,}40\,\Omega = 4{,}0\,\t
 fy7-1	14\,\mu\text{T} \cdot \tan 60{,}75^\circ = 25\,\mu\text{T}
 fy7-1	15\,\mu\text{T} \cdot \tan 53{,}13^\circ = 20\,\mu\text{T}
->>>>>>> origin/main
 fy7-1	= (12\,\mu\text{T})^2 + (-5{,}0\,\mu\text{T})^2 + (-48\,\mu\text{T})^2
 fy7-1	B = \sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\t
 fy7-1	\sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\text{
