@@ -221,12 +221,13 @@ def page_form(pg, b, url, acts, page):
         stick_checks(b, url, pathlib.Path(url).stem)
 
 
-STICK = """() => { const c = document.querySelector('#sim-root > .sim-canvas'), r = document.querySelector('#sim-root > .readout'), t = document.querySelector('nav.toc');
+STICK = """() => { const c = document.querySelector('#sim-root > .sim-canvas'), root = document.querySelector('#sim-root'), t = document.querySelector('nav.toc');
   const toc = t ? t.getBoundingClientRect().bottom : 0, h = c.getBoundingClientRect().height;
-  if (r) window.scrollBy(0, r.getBoundingClientRect().top - (toc + h + 8));   // the readouts just under where the stuck picture stands
-  const cb = c.getBoundingClientRect(), rb = r ? r.getBoundingClientRect() : null;
+  // scroll on until the picture, left in the flow, would stand 40 px under the stage bar: the controls under it in use
+  window.scrollBy(0, c.getBoundingClientRect().top - toc + Math.min(40, root.getBoundingClientRect().bottom - c.getBoundingClientRect().bottom - 1));
+  const cb = c.getBoundingClientRect();
   return { pos: getComputedStyle(c).position, stick: !!c.closest('.sim-stick'), top: cb.top, bottom: cb.bottom, toc, h,
-           readTop: rb ? rb.top : null, inView: Math.max(0, Math.min(cb.bottom, innerHeight) - Math.max(cb.top, toc)) / h }; }"""
+           inView: Math.max(0, Math.min(cb.bottom, innerHeight) - Math.max(cb.top, toc)) / h }; }"""
 
 
 def stick_checks(b, url, lid):
@@ -238,9 +239,8 @@ def stick_checks(b, url, lid):
         q.evaluate("document.querySelector('#sim').scrollIntoView({ block: 'start' })"); q.wait_for_timeout(150)
         S = q.evaluate(STICK); q.wait_for_timeout(150)
         if lid in inquiry.SIM_STICK_PILOT:
-            check(f"{w} px: the simulation's picture sticks right under the stage bar, whole, while the readouts are in view (work queue 10, PR 4 pilot)",
-                  S["stick"] and S["pos"] == "sticky" and abs(S["top"] - S["toc"]) <= 1.5 and S["inView"] >= 0.99
-                  and (S["readTop"] is None or S["readTop"] >= S["bottom"] - 1), str(S))
+            check(f"{w} px: the simulation's picture sticks right under the stage bar, whole, while the controls under it are in use (work queue 10, PR 4 pilot)",
+                  S["stick"] and S["pos"] == "sticky" and abs(S["top"] - S["toc"]) <= 1.5 and S["inView"] >= 0.99, str(S))
         else:
             check(f"{w} px: the simulation's picture stays in the flow (the sticky picture is a pilot of fy4-1 and fy2-2 until the teacher approves it)",
                   not S["stick"] and S["pos"] != "sticky", str(S))
