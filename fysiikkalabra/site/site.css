@@ -985,6 +985,13 @@ details.level>ol>li:last-child{border-bottom:0}
   .lab-side.sim-card2 #sim-root .controls>.sim-speed>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap!important}   /* named by the select's aria-label; no row of its own */
   .lab-side.sim-card2 .sim-lead{display:none}   /* on a short laptop screen the picture shrinks so the controls stay in view */
 }
+/* a phone (work queue 10, PR 4, pilot fy4-1 and fy2-2: inquiry.py SIM_STICK_PILOT): the simulation's picture sticks under
+   the stage bar while the student scrolls through its controls and readouts, so a change shows as it is made. It stops
+   at the end of the card (#sim-root is its containing block). Only a window tall enough to keep room for the controls
+   under the picture (a phone held upright); never in the enlarged view. lesson.js sets --toc-h to the bar's height. */
+@media (max-width:37.5rem) and (min-height:34rem){
+  .sim-stick #sim:not(.sim-expanded) #sim-root>.sim-canvas{position:sticky;top:var(--toc-h,3.6rem);z-index:4;background:var(--surface);padding-bottom:.35rem;margin-bottom:-.35rem;box-shadow:0 .5rem .45rem -.45rem rgba(20,23,30,.18)}
+}
 @container content (min-width:62.5rem){
   /* a figure beside the paragraph it explains, when the two are about as tall (build.py fig_side); the text after the
      unit runs on in the reading column */
