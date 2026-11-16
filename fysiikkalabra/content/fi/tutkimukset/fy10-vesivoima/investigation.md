@@ -145,7 +145,7 @@ missä $P_\text{s}$ on tässä työssä generaattorin kuormalle antama sähköte
 P_\text{s} = UI
 ```
 
-missä $U$ on kuorman napojen välinen jännite (yksikkö voltti, $\text{V}$) ja $I$ kuorman läpi kulkeva sähkövirta (yksikkö ampeeri, $\text{A}$). Teho saadaan watteina, koska $1\ \text{V} \cdot 1\ \text{A} = 1\ \text{W}$. Jännite mitataan jännitemittarilla, joka kytketään kuorman rinnalle, ja sähkövirta virtamittarilla, joka kytketään sarjaan kuorman kanssa, niin että sama virta kulkee molempien läpi. Sähkötehoa käsitellään tarkemmin moduulissa FY6.
+missä $U$ on kuorman napojen välinen jännite (yksikkö voltti, $\text{V}$) ja $I$ kuorman läpi kulkeva sähkövirta (yksikkö ampeeri, $\text{A}$). Teho saadaan watteina, koska $1\,\text{V} \cdot 1\,\text{A} = 1\,\text{W}$. Jännite mitataan jännitemittarilla, joka kytketään kuorman rinnalle, ja sähkövirta virtamittarilla, joka kytketään sarjaan kuorman kanssa, niin että sama virta kulkee molempien läpi. Sähkötehoa käsitellään tarkemmin moduulissa FY6.
 
 Kysy opettajalta, antaako pienoismallin generaattori tasa- vai vaihtojännitettä, ja aseta molemmat mittarit sen mukaan. Vaihtojännitteellä $P_\text{s} = UI$ lasketaan mittarien näyttämistä tehollisarvoista, ja se pätee, kun kuormana on vastus.
 

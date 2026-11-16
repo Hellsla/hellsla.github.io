@@ -141,7 +141,7 @@ Kun malli tunnetaan, putoamiskiihtyvyys voidaan päätellä mittaamalla jaksonai
 Ennen mittaamista päätä ja kirjaa ylös, mitä muutat, mitä mittaat ja mitä pidät vakiona. Suunnittele myös tarkistusmittaus, jolla testaat ennusteesi 1: vaikuttavatko kuulan massa ja heilahduskulma jaksonaikaan?
 
 ::: tuki O
-**Ohjattu.** Muutat heilurin pituutta $l$ ja mittaat jokaisella pituudella jaksonajan $T$. Vakiona pidät kuulan, langan ja pienen heilahduskulman: vedä kuula sivuun enintään noin kymmenesosa heilurin pituudesta. Käytä ainakin kuutta pituutta mahdollisimman tasaisin välein, lyhimmästä noin $0{,}20\ \text{m}$:stä niin pitkään kuin statiivi sallii. Mittaa jokaisella pituudella kymmenen kokonaisen heilahduksen aika kolme kertaa.
+**Ohjattu.** Muutat heilurin pituutta $l$ ja mittaat jokaisella pituudella jaksonajan $T$. Vakiona pidät kuulan, langan ja pienen heilahduskulman: vedä kuula sivuun enintään noin kymmenesosa heilurin pituudesta. Käytä ainakin kuutta pituutta mahdollisimman tasaisin välein, lyhimmästä noin $0{,}20\,\text{m}$:stä niin pitkään kuin statiivi sallii. Mittaa jokaisella pituudella kymmenen kokonaisen heilahduksen aika kolme kertaa.
 :::
 
 ::: tuki OO
@@ -168,7 +168,7 @@ Kirjaa alkuperäiset mittaustulokset taulukkoon heti mittauksen aikana: jokainen
 ::: tuki O
 Voit käyttää esimerkiksi tällaista taulukkoa. Siinä $t_{10}$ on kymmenen heilahduksen aika.
 
-| $l\ (\text{m})$ | $t_{10}\ (\text{s})$, 1. | $t_{10}\ (\text{s})$, 2. | $t_{10}\ (\text{s})$, 3. | $\bar{t}_{10}\ (\text{s})$ | $T = \dfrac{\bar{t}_{10}}{10}\ (\text{s})$ | $T^2\ (\text{s}^2)$ |
+| $l\,(\text{m})$ | $t_{10}\,(\text{s})$, mittaus 1 | $t_{10}\,(\text{s})$, mittaus 2 | $t_{10}\,(\text{s})$, mittaus 3 | $\bar{t}_{10}\,(\text{s})$ | $T = \dfrac{\bar{t}_{10}}{10}\,(\text{s})$ | $T^2\,(\text{s}^2)$ |
 |---|---|---|---|---|---|---|
 | | | | | | | |
 | | | | | | | |
@@ -180,7 +180,7 @@ Mittaa pituus ripustuskohdasta kuulan keskipisteeseen. Keskipistettä on vaikea 
 **Tarkistusmittaus.** Mittaa yhdellä pituudella jaksonaika myös kuulalla, jonka massa on selvästi erilainen, ja tavallista suuremmalla heilahduskulmalla, joka on kuitenkin vielä pienten kulmien alueella. Kirjaa nämäkin tulokset toistoineen.
 
 ::: tuki O
-Tee tarkistusmittaus päämittauksesi pisimmällä pituudella, jolta sinulla on jo tulos tavallisella kuulalla ja pienellä kulmalla. Mittaa samalla pituudella kymmenen heilahduksen aika kolme kertaa
+Tee tarkistusmittaus päämittauksesi pisimmällä pituudella, jolta sinulla on jo tulos tavallisella kuulalla ja pienellä kulmalla. Mittaa samalla pituudella kymmenen heilahduksen aika kolme kertaa:
 
 - toisella kuulalla, jonka massa on selvästi erilainen, kun vedät sen sivuun enintään noin kymmenesosan heilurin pituudesta
 - tavallisella kuulalla, kun vedät sen sivuun noin kuudesosan heilurin pituudesta, jolloin kulma on noin kymmenen astetta.
@@ -236,7 +236,7 @@ Kuvaajan sovitukseen ja jaksonajan neliön laskemiseen käytä Graphical Analysi
 
 ## Epävarmuus ja luotettavuus
 
-Ilmoita putoamiskiihtyvyys muodossa $g = (g \pm \Delta g)\ \text{m/s}^2$ ja perustele, miten arvioit epävarmuuden $\Delta g$. Kerro myös, kuinka suuri ajanoton epävarmuus oli ja miten se vaikutti jaksonajan epävarmuuteen.
+Ilmoita putoamiskiihtyvyys muodossa $g = (g \pm \Delta g)\,\text{m/s}^2$ ja perustele, miten arvioit epävarmuuden $\Delta g$. Kerro myös, kuinka suuri ajanoton epävarmuus oli ja miten se vaikutti jaksonajan epävarmuuteen.
 
 ::: tuki O OO
 **Jaksonajan epävarmuus.** Jos mittaat $N$ heilahduksen ajan ja ajanoton epävarmuus on $\Delta t$, jaksonajan epävarmuus on $\Delta T = \dfrac{\Delta t}{N}$: lähtö- ja pysäytyshetken epävarmuus jakautuu kaikille heilahduksille. Ajanoton epävarmuuden voit arvioida toistojen hajonnasta, esimerkiksi suurimpana poikkeamana keskiarvosta. Kun jaksonaika korotetaan toiseen, suhteellinen epävarmuus kaksinkertaistuu: $\dfrac{\Delta (T^2)}{T^2} = 2\cdot\dfrac{\Delta T}{T}$.
@@ -264,7 +264,7 @@ Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kai
 - **Tausta ja teoria:** heilurin jaksonajan malli ehtoineen ja miksi valitsemillasi akseleilla kuvaaja on suora.
 - **Koejärjestely ja menetelmä:** mitä muutit, mitä mittasit ja mitä pidit vakiona, miten mittasit pituuden ja miten jaksonajan sekä miten testasit massan ja heilahduskulman vaikutuksen.
 - **Mittaustulokset:** jokainen toisto omassa sarakkeessaan ja lasketut suureet niiden oikealla puolella.
-- **Tulos:** $g = (g \pm \Delta g)\ \text{m/s}^2$ oikein pyöristettynä ja vertailu taulukkoarvoon.
+- **Tulos:** $g = (g \pm \Delta g)\,\text{m/s}^2$ oikein pyöristettynä ja vertailu taulukkoarvoon.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet, niiden vaikutuksen suunta ja mallin ehtojen toteutuminen.
 
 ## Laajennus: suuret heilahduskulmat

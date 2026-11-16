@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 14aa4c1c63c79a34
+CONTENT-HASH: 345f81b9645c72ee
 
 ## Blocking
 
@@ -9,6 +9,7 @@ None.
 
 None.
 
-## Checked (delta 2026-11-13)
+## Checked (delta 2026-11-16)
 
-Diff read and capture fy10-induktio-fig-3-390.png opened: the field lines now start from the red half and fan toward the coil, the coil label sits above the coil with no overlap; legible at 390 px, still shows no answer. Figure only, no text meaning changed.
+- Read the diff against origin/main in context. Finnish quotation marks and the line on the meter's high resistance reworded ("mittari näyttää käytännössä indusoituneen jännitteen"): same reasoning, one reason kept (small current, little braking).
+- Nothing a student needs was lost and no instruction became unclear; no figure changed.

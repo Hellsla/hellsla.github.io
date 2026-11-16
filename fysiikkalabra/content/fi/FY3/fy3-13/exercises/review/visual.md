@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 02c5d58adaf5116a
+CONTENT-HASH: 6b72ecc43124ac3e
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Round 1, delta. Captured at 390 and 1280 px every re-set formula of the set (paragraphs with an aligned display, 17 blocks per width, in contact sheets) and read them: no clipping, equals signs in one column, continuation rows begin with an operator, no number or unit broken, the punctuation after a display stays on the last row, wide screens join rows that fit.
-- Captures made with a script from the current preview build (the stored shots hold no 390 px solutions); the stored 1280 px captures were not needed beyond fy3-9.
-- Hash same at start and end.
+- Delta round 1 (md-paragraphs): model answers of L2-06, L2-07, L3-04 and L3-05 and the Järkevyys of the data task, now split into short paragraphs. Opened the 1280 px captures L2-1280-7, L2-1280-14 and L3-1280-9. The L3-05 model answer (c) renders as three short paragraphs followed by Järkevyys. The paragraph breaks sit inside the solution cards, nothing is clipped, and the maths is intact.
+- I did not open the captures with L2-06, L2-07 and L3-04 themselves. The layout is the same shared component, and the change is plain paragraph breaks.
+- Hash unchanged at the end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

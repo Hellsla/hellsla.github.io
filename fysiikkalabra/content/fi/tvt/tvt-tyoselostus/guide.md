@@ -6,15 +6,15 @@ Kaikista FY10:n tutkimuksista kirjoitetaan työselostus työselostuspohjalla. Es
 
 ## Työvaiheet
 
-1. **Kokoa mittaustaulukko osaan Mittaustulokset.** Jokaisen sarakkeen otsikossa on suure ja yksikkö, esimerkiksi $l\ (\text{m})$. Alkuperäiset mittaukset ovat vasemmalla, ja niistä johdetut suureet, kuten $T^2\ (\text{s}^2)$, ovat omissa sarakkeissaan oikealla. Numeroi taulukko ja kirjoita sen yläpuolelle otsikko, esimerkiksi "Taulukko 1. Heilurin pituus ja jaksonaika".
+1. **Kokoa mittaustaulukko osaan Mittaustulokset.** Jokaisen sarakkeen otsikossa on suure ja yksikkö, esimerkiksi $l\ (\text{m})$. Alkuperäiset mittaukset ovat vasemmalla, ja niistä johdetut suureet, kuten $T^2\ (\text{s}^2)$, ovat omissa sarakkeissaan oikealla. Numeroi taulukko ja kirjoita sen yläpuolelle otsikko, esimerkiksi ”Taulukko 1. Heilurin pituus ja jaksonaika”.
 
 2. **Ilmoita lukuarvot johdonmukaisesti.** Kirjoita saman sarakkeen luvut samalla tarkkuudella, joka vastaa mittauksen tarkkuutta. Jos luit pituuden millimetrin tarkkuudella, kirjoita $0{,}450\,\text{m}$ eikä $0{,}45\,\text{m}$. Johdettuihin suureisiin voit jättää yhden numeron enemmän kuin lopputulokseen ja pyöristää vasta lopussa.
 
 3. **Tee kuvaaja osaan Tulosten käsittely ja graafinen analyysi.** Piirrä kuvaaja ja sovita suora Graphical Analysis Prossa ([[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]], [[ohje:tvt-suoran-sovitus|Suoran sovittaminen mittauspisteisiin]]). Tarkista ennen vientiä, että kuvaajassa ovat otsikko, akselien suureet ja yksiköt, mittauspisteet, tarvittaessa epävarmuusjanat sekä sovitettu suora ja sen tulosruutu. Vie kuvaaja kuvaksi ohjelman vientitoiminnolla (englanninkielisessä versiossa **Export graph as png**) ja liitä kuva selostukseen.
 
-4. **Kirjoita suoran yhtälö suureilla ja yksiköillä.** Sovituksen tulosruudun yhtälö $y = mx + b$ ei kerro suureita, ja ohjelma kirjoittaa kertoimet desimaalipisteellä. Ohjelman $m$ on kulmakerroin ja $b$ vakiotermi. Jos keksityillä esimerkkiarvoilla tulosruudussa lukee $m = 4.05$ ja $b = 0.02$, eli $y = 4{,}05x + 0{,}02$, kirjoita yhtälö muotoon $T^2 = 4{,}05\,\text{s}^2/\text{m} \cdot l + 0{,}02\,\text{s}^2$, desimaalipilkuin.
+4. **Kirjoita suoran yhtälö suureilla ja yksiköillä.** Sovituksen tulosruudun yhtälö $y = mx + b$ ei kerro suureita, ja ohjelma kirjoittaa kertoimet desimaalipisteellä. Ohjelman $m$ on kulmakerroin ja $b$ vakiotermi. Esimerkiksi keksityssä aineistossa tulosruudussa lukee $m = 4.05$ ja $b = 0.02$, eli $y = 4{,}05x + 0{,}02$. Kirjoita yhtälö silloin muotoon $T^2 = 4{,}05\,\text{s}^2/\text{m} \cdot l + 0{,}02\,\text{s}^2$, desimaalipilkuin.
 
-5. **Lisää kuvateksti ja viittaa kuvaan.** Numeroi kuva ja kirjoita sen alle kuvateksti, esimerkiksi "Kuva 1. Heilurin jaksonajan neliö pituuden funktiona ja mittauspisteisiin sovitettu suora." Viittaa kuvaan tekstissä: "Kuvasta 1 nähdään, että pisteet asettuvat suoralle, joka kulkee lähes origon kautta." Lukijan ei pidä joutua arvaamaan, miksi kuva on mukana.
+5. **Lisää kuvateksti ja viittaa kuvaan.** Numeroi kuva ja kirjoita sen alle kuvateksti, esimerkiksi ”Kuva 1. Heilurin jaksonajan neliö pituuden funktiona ja mittauspisteisiin sovitettu suora.” Viittaa kuvaan tekstissä: ”Kuvasta 1 nähdään, että pisteet asettuvat suoralle, joka kulkee lähes origon kautta.” Lukijan ei pidä joutua arvaamaan, miksi kuva on mukana.
 
 6. **Näytä mallilasku.** Kirjoita, miten tulos saadaan kulmakertoimesta, ensin kirjaimin ja sitten lukuarvoin yksiköineen, esimerkiksi $g = \tfrac{4\pi^2}{k}$. Jos laskit saman kaavan monelle riville, näytä yksi rivi esimerkkinä.
 
@@ -76,7 +76,7 @@ Kaikista FY10:n tutkimuksista kirjoitetaan työselostus työselostuspohjalla. Es
   <foreignObject x="326" y="659.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$)\,\text{m/s}^2$</div></foreignObject>
 </svg>
 
-8. **Tarkista, että kuva on luettava.** Kuvatiedosto on yleensä siistimpi kuin kuvakaappaus, koska siinä ei ole valikoita. Tarkista, että akselien tekstit ja luvut erottuvat selostuksessa, ja lisää puuttuvat akselien otsikot ja yksiköt ohjelmassa ennen vientiä. Mittaustaulukon voit kirjoittaa selostukseen taulukkona kopioimalla arvot ohjelman taulukosta, ja koko datan voit liittää CSV-tiedostona (englanninkielisessä versiossa **Export data as csv**).
+8. **Tarkista, että kuva on luettava.** Kuvatiedosto on yleensä siistimpi kuin kuvakaappaus, koska siinä ei ole valikoita. Tarkista, että akselien tekstit ja luvut erottuvat selostuksessa, ja lisää puuttuvat akselien otsikot ja yksiköt ohjelmassa ennen vientiä. Mittaustaulukon voit kirjoittaa selostukseen taulukkona kopioimalla arvot ohjelman taulukosta. Koko datan voit liittää CSV-tiedostona (englanninkielisessä versiossa **Export data as csv**).
 
 ## Tavallisimmat virheet
 

@@ -1,20 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 838b54016eb02f9d
+CONTENT-HASH: 2623602cde9da6c2
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- Line 219 still sends the student to "kohdan Suunnittele turvallisuusohjeita", which now only points back to the page-top list; point line 219 straight to the Turvallisuus list.
 
-## Checked (delta 2026-10-31)
-- `topic` "aallot" fits the physics area.
-- TVT `guides` (kuvaaja, suoran sovitus, kulmakerroin, epävarmuus) match the prerequisite: a linear fit whose slope and its uncertainty give the result; inline links agree.
-- Report link `[[ohje:tvt-tyoselostus|Kuvaajat ja tulokset työselostukseen]]` fits the report task; no physics changed.
-
-## Delta 2 (2026-10-31)
-- Raportoi: the tvt-tyoselostus link moved to its own sentence; wording only, no physics changed.
-
-## Delta 4 (2026-10-31)
-
-- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+## Checked (delta 2026-11-16)
+- Earlier passes (2026-10-31) stand; only the diff against origin/main was judged, each changed line in context.
+- Suunnittele safety paragraph shortened to a pointer to the page-top Turvallisuus list: that list (investigation.json `safety`, rendered in Tarvitset before the body) holds every removed rule (supervision, casing and interlock, never empty with the water cup, no metal, turntable by the teacher, burns and superheated water, smoke, no eating) plus a damaged-door rule; nothing lost. Raportoi's safety bullet still matches.
+- Thin spaces in $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$, $c = 2{,}998\cdot10^8\,\text{m/s}$ and the result format; values and units unchanged.

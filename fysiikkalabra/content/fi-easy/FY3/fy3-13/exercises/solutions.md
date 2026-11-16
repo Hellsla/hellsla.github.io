@@ -164,7 +164,11 @@ $$\begin{aligned} \theta_0 &= 50\,{}^\circ\text{C} - \dfrac{117{,}78\,\text{kPa}
 $$\begin{aligned} k &= \dfrac{(112{,}4 - 107{,}4)\,\text{kPa}}{(35 - 20)\,{}^\circ\text{C}} \\ &= \dfrac{5{,}0\,\text{kPa}}{15\,{}^\circ\text{C}} \\ &= 0{,}3333\,\text{kPa}/{}^\circ\text{C} \\ \theta_0 &= 20\,{}^\circ\text{C} - \dfrac{107{,}4\,\text{kPa}}{0{,}3333\,\text{kPa}/{}^\circ\text{C}} \\ &= 20\,{}^\circ\text{C} - 322{,}2\,{}^\circ\text{C} \\ &= -302{,}2\,{}^\circ\text{C} \end{aligned}$$
 
 **Vastaus:** $-302\,{}^\circ\text{C}$, mutta vain noin kahden numeron tarkkuudella ($-3{,}0 \cdot 10^{2}\,{}^\circ\text{C}$). Kulmakerroin $0{,}33\,\text{kPa}/{}^\circ\text{C}$ tunnetaan vain kahdella numerolla.
-**Mallivastaus (b):** Ryhmä B laskee kulmakertoimen vain $15\,{}^\circ\text{C}$:n väliltä. Sillä välillä paine kasvaa $5{,}0\,\text{kPa}$. Kummankin paineen epävarmuus $1{,}0\,\text{kPa}$ voi muuttaa paine-eroa jopa $2{,}0\,\text{kPa}$. Siksi kulmakerroin on epävarma noin $2{,}0 : 15 = 0{,}13\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$. Se on noin $40\,\%$ itse arvosta. Suoraa jatketaan yli $300\,{}^\circ\text{C}$, joten pieni virhe kulmakertoimessa kasvaa suureksi. Ryhmä A käyttää kuutta pistettä $75\,{}^\circ\text{C}$:n levyiseltä väliltä. Silloin hajonta tasoittuu, ja kulmakerroin $0{,}370\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ on luotettavampi.
+**Mallivastaus (b):** Ryhmä B laskee kulmakertoimen vain $15\,{}^\circ\text{C}$:n väliltä. Sillä välillä paine kasvaa $5{,}0\,\text{kPa}$.
+
+Kummankin paineen epävarmuus $1{,}0\,\text{kPa}$ voi muuttaa paine-eroa jopa $2{,}0\,\text{kPa}$. Siksi kulmakerroin on epävarma noin $2{,}0 : 15 = 0{,}13\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$. Se on noin $40\,\%$ itse arvosta. Suoraa jatketaan yli $300\,{}^\circ\text{C}$, joten pieni virhe kulmakertoimessa kasvaa suureksi.
+
+Ryhmä A käyttää kuutta pistettä $75\,{}^\circ\text{C}$:n levyiseltä väliltä. Silloin hajonta tasoittuu, ja kulmakerroin $0{,}370\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ on luotettavampi.
 **Järkevyys:** Ryhmän B suora antaisi lämpötilassa $95\,{}^\circ\text{C}$ paineen $$\begin{aligned} &107{,}4\,\text{kPa} + 0{,}3333\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot 75\,{}^\circ\text{C} \\ &= 132{,}4\,\text{kPa} \end{aligned}$$. Mitattu paine on kuitenkin $135{,}0\,\text{kPa}$. Ero $2{,}6\,\text{kPa}$ on suurempi kuin epävarmuus $1{,}0\,\text{kPa}$. Ryhmän B suora ei siis sovi muihin pisteisiin. Ryhmän A suoran ero mitatusta olisi alle $0{,}2\,\text{kPa}$.
 
 ## fy3-13-L2-07
@@ -179,7 +183,13 @@ $$\begin{aligned} k &= \dfrac{(112{,}4 - 107{,}4)\,\text{kPa}}{(35 - 20)\,{}^\ci
 $$\begin{aligned} k &= \dfrac{(120{,}0 - 104{,}0)\,\text{kPa}}{(80 - 20)\,{}^\circ\text{C}} \\ &= \dfrac{16{,}0\,\text{kPa}}{60\,{}^\circ\text{C}} \\ &= 0{,}2667\,\text{kPa}/{}^\circ\text{C} \\ \theta_0 &= 20\,{}^\circ\text{C} - \dfrac{104{,}0\,\text{kPa}}{0{,}2667\,\text{kPa}/{}^\circ\text{C}} \\ &= 20\,{}^\circ\text{C} - 390\,{}^\circ\text{C} \\ &= -370\,{}^\circ\text{C} \end{aligned}$$
 
 **Vastaus:** $-370\,{}^\circ\text{C}$. Vastauksessa on kolme merkitsevää numeroa, kuten paineissa. Tulos on selvästi alle $-273{,}15\,{}^\circ\text{C}$.
-**Mallivastaus (b):** Taulukko tukee epäilyä. Paine kasvaa jokaisella $20\,{}^\circ\text{C}$:n välillä vähemmän: $6{,}6\,\text{kPa}$, $5{,}4\,\text{kPa}$ ja $4{,}0\,\text{kPa}$. Kulmakerroin pienenee siis arvoista $0{,}33$ ja $0{,}27$ arvoon $0{,}20\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$. Erot ovat paljon suurempia kuin epävarmuus $\pm 0{,}5\,\text{kPa}$. Kyse ei ole hajonnasta vaan siitä, että malli ei päde: pisteet eivät ole suoralla. Vuodossa kuumasta pullosta pääsee pois kaasua. Ainemäärä pienenee, ja paine kasvaa vähemmän kuin pullossa, joka ei vuoda. Päätepisteiden suoran kulmakerroin $0{,}267\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ on liian pieni. Pieni kulmakerroin vie nollapaineen liian kauas, kohtaan $-370\,{}^\circ\text{C}$.
+**Mallivastaus (b):** Taulukko tukee epäilyä. Paine kasvaa jokaisella $20\,{}^\circ\text{C}$:n välillä vähemmän: $6{,}6\,\text{kPa}$, $5{,}4\,\text{kPa}$ ja $4{,}0\,\text{kPa}$. Kulmakerroin pienenee siis arvoista $0{,}33$ ja $0{,}27$ arvoon $0{,}20\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$.
+
+Erot ovat paljon suurempia kuin epävarmuus $\pm 0{,}5\,\text{kPa}$. Kyse ei ole hajonnasta vaan siitä, että malli ei päde: pisteet eivät ole suoralla.
+
+Vuodossa kuumasta pullosta pääsee pois kaasua. Ainemäärä pienenee, ja paine kasvaa vähemmän kuin pullossa, joka ei vuoda.
+
+Päätepisteiden suoran kulmakerroin $0{,}267\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ on liian pieni. Pieni kulmakerroin vie nollapaineen liian kauas, kohtaan $-370\,{}^\circ\text{C}$.
 **Järkevyys:** Kahden ensimmäisen pisteen kulmakerroin $0{,}33\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ antaisi $20\,{}^\circ\text{C} - 104{,}0\,\text{kPa} : 0{,}33\,\tfrac{\text{kPa}}{{}^\circ\text{C}} = -295\,{}^\circ\text{C}$. Se on lähempänä oikeaa arvoa, koska vuotoa on ehtinyt tapahtua vähemmän. Tulos $-370\,{}^\circ\text{C}$ poikkeaa hyväksytystä arvosta $-273{,}15\,{}^\circ\text{C}$ lähes sadalla asteella. Se on liikaa pelkäksi mittausepävarmuudeksi.
 
 ## fy3-13-L3-04
@@ -212,7 +222,11 @@ $$\begin{aligned} k &= \dfrac{(180{,}5 - 109{,}0)\,\text{kPa}}{(225 - 25)\,{}^\c
 $$\begin{aligned} \Delta\theta_{0,\text{B}} &= \dfrac{(-258{,}44 + 279{,}90)\,{}^\circ\text{C}}{2} \\ &= 10{,}73\,{}^\circ\text{C} \end{aligned}$$
 
 **Vastaus:** Sarjan B epävarmuus on $10{,}7\,{}^\circ\text{C}$. Vastauksessa on kolme merkitsevää numeroa, koska paineet on annettu neljällä numerolla ja ääriarvojen erotus $21{,}46\,{}^\circ\text{C}$ tunnetaan kolmella. Sarjan A epävarmuus on noin $30\,{}^\circ\text{C}$. Tulokset ovat $\theta_{0,\text{A}} = -272 \pm 30\,{}^\circ\text{C}$ ja $\theta_{0,\text{B}} = -269 \pm 11\,{}^\circ\text{C}$.
-**Mallivastaus (b):** Sarjan B mittausalue on $200\,{}^\circ\text{C}$ leveä ja sarjan A $60\,{}^\circ\text{C}$. Sarjan B epävarmuus on vain noin kolmasosa sarjan A epävarmuudesta. Sama paineen epävarmuus $\pm 1{,}0\,\text{kPa}$ vaikuttaa kulmakertoimeen sitä vähemmän, mitä pidemmältä väliltä kulmakerroin lasketaan. Pieni virhe kulmakertoimessa kasvaa ekstrapoloitaessa. Leveämpi mittausalue siis pienentää epävarmuutta. Kummankin sarjan väli sisältää arvon $-273{,}15\,{}^\circ\text{C}$ (A: $-302\ldots -243\,{}^\circ\text{C}$, B: $-280\ldots -258\,{}^\circ\text{C}$). Tulokset sopivat siis yhteen hyväksytyn arvon kanssa. Väli on arvio, ja se olettaa, että paine pysyy lineaarisena myös mitatun alueen ulkopuolella.
+**Mallivastaus (b):** Sarjan B mittausalue on $200\,{}^\circ\text{C}$ leveä ja sarjan A $60\,{}^\circ\text{C}$. Sarjan B epävarmuus on vain noin kolmasosa sarjan A epävarmuudesta.
+
+Sama paineen epävarmuus $\pm 1{,}0\,\text{kPa}$ vaikuttaa kulmakertoimeen sitä vähemmän, mitä pidemmältä väliltä kulmakerroin lasketaan. Pieni virhe kulmakertoimessa kasvaa ekstrapoloitaessa. Leveämpi mittausalue siis pienentää epävarmuutta.
+
+Kummankin sarjan väli sisältää arvon $-273{,}15\,{}^\circ\text{C}$ (A: $-302\ldots -243\,{}^\circ\text{C}$, B: $-280\ldots -258\,{}^\circ\text{C}$). Tulokset sopivat siis yhteen hyväksytyn arvon kanssa. Väli on arvio, ja se olettaa, että paine pysyy lineaarisena myös mitatun alueen ulkopuolella.
 **Järkevyys:** Alueiden leveyksien suhde on $200:60 \approx 3{,}3$ ja epävarmuuksien suhde $29{,}75:10{,}73 \approx 2{,}8$. Epävarmuus pienenee siis suunnilleen leveyden kasvun mukana. Sarjojen välien keskikohdat $-272\,{}^\circ\text{C}$ ja $-269\,{}^\circ\text{C}$ ovat lähellä toisiaan ja lähellä arvoa $-273{,}15\,{}^\circ\text{C}$.
 
 ## fy3-13-L3-05
@@ -235,7 +249,11 @@ b)
 $$\begin{aligned} \Delta\theta &= \dfrac{1{,}0\,\text{kPa}}{0{,}3660\,\text{kPa}/{}^\circ\text{C}} \\ &= 2{,}73\,{}^\circ\text{C} \end{aligned}$$
 
 **Vastaus:** $-17{,}5\,{}^\circ\text{C}$, ja epävarmuus on noin $2{,}7\,{}^\circ\text{C}$. Tulos on siis $-17{,}5 \pm 2{,}7\,{}^\circ\text{C}$. Rajoittava tieto on paine-ero $94{,}0 - 100{,}4 = -6{,}4\,\text{kPa}$ (kaksi numeroa). Yksinkertaisimmillaan tulos on siis $-17 \pm 3\,{}^\circ\text{C}$. Desimaali annetaan, jotta tulos vastaa vastauskentän arvoa.
-**Mallivastaus (c):** Pakastimen lämpötila on kalibroidun alueen $0\ldots 100\,{}^\circ\text{C}$ ulkopuolella. Suoraa jatketaan siis mitatun alueen yli, ja tulos on ekstrapolointia. Se olettaa, että paine pysyy lineaarisena. Jatke on kuitenkin vain noin $17{,}5\,{}^\circ\text{C}$ pitkä. Nollapisteen määrityksessä suoraa jatketaan yli $270\,{}^\circ\text{C}$. Kalibrointisuoran kulmakertoimen epävarmuus vaikuttaa tulokseen vain jatkeen pituudelta, joten vaikutus on muutama aste. Lisäksi lämpötila $-17{,}5\,{}^\circ\text{C}$ on kaukana lämpötilasta, jossa ilma alkaisi muuttua nesteeksi. Lineaarinen malli on siksi järkevä.
+**Mallivastaus (c):** Pakastimen lämpötila on kalibroidun alueen $0\ldots 100\,{}^\circ\text{C}$ ulkopuolella. Suoraa jatketaan siis mitatun alueen yli, ja tulos on ekstrapolointia. Se olettaa, että paine pysyy lineaarisena.
+
+Jatke on kuitenkin vain noin $17{,}5\,{}^\circ\text{C}$ pitkä. Nollapisteen määrityksessä suoraa jatketaan yli $270\,{}^\circ\text{C}$. Kalibrointisuoran kulmakertoimen epävarmuus vaikuttaa tulokseen vain jatkeen pituudelta, joten vaikutus on muutama aste.
+
+Lisäksi lämpötila $-17{,}5\,{}^\circ\text{C}$ on kaukana lämpötilasta, jossa ilma alkaisi muuttua nesteeksi. Lineaarinen malli on siksi järkevä.
 **Järkevyys:** Tulos on tyypillinen pakastimen lämpötila. Välipiste tarkistaa suoran: $$\begin{aligned} &100{,}4\,\text{kPa} + 0{,}3660\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot 50\,{}^\circ\text{C} \\ &= 118{,}7\,\text{kPa} \end{aligned}$$, kun mitattu on $118{,}6\,\text{kPa}$. Kelvineinä lämpötila on $T = 273{,}15\,\text{K} - 17{,}49\,\text{K} = 255{,}66\,\text{K}$. Paineiden suhde $94{,}0:100{,}4 = 0{,}936$ on sama kuin lämpötilojen suhde $255{,}66:273{,}15 = 0{,}936$.
 
 ## fy3-13-L2-08
@@ -245,7 +263,13 @@ $$\begin{aligned} \Delta\theta &= \dfrac{1{,}0\,\text{kPa}}{0{,}3660\,\text{kPa}
 
 $$\begin{aligned} &115{,}5\,\text{kPa} - 102{,}0\,\text{kPa} \\ &= 13{,}5\,\text{kPa} \end{aligned}$$
 
-Ero on yli kymmenkertainen epävarmuuteen $1{,}0\,\text{kPa}$ verrattuna. Epävarmuusvälit $101{,}0$–$103{,}0\,\text{kPa}$ ja $114{,}5$–$116{,}5\,\text{kPa}$ ovat erillään, joten paine kasvoi lämpötilasta $20{,}0\,{}^\circ\text{C}$ lämpötilaan $60{,}0\,{}^\circ\text{C}$. Muut päätelmät eivät kestä. Lämpötilojen $20{,}0\,{}^\circ\text{C}$ ja $22{,}0\,{}^\circ\text{C}$ lukemien ero $0{,}8\,\text{kPa}$ jää epävarmuuden $1{,}0\,\text{kPa}$ sisään, joten tästä parista ei voi osoittaa kasvua. Sama ero ei kuitenkaan todista, ettei paine muutu. Pieni muutos voi hukkua epävarmuuteen, ja koko aineistossa kasvu näkyy selvästi. Pisteisiin sovitettu suora antaisi lämpötilassa $-100\,{}^\circ\text{C}$ arvion noin $62\,\text{kPa}$. Piste on kuitenkin $120\,{}^\circ\text{C}$ mittausalueen alapuolella, joten arvo on epävarma arvio eikä varma tulos. Tulos on järkevä: paineen kasvu lämpötilan mukana sopii suljettuun jäykkään pulloon, jossa kaasun paine kasvaa lämpötilan noustessa.
+Ero on yli kymmenkertainen epävarmuuteen $1{,}0\,\text{kPa}$ verrattuna. Epävarmuusvälit $101{,}0$–$103{,}0\,\text{kPa}$ ja $114{,}5$–$116{,}5\,\text{kPa}$ ovat erillään, joten paine kasvoi lämpötilasta $20{,}0\,{}^\circ\text{C}$ lämpötilaan $60{,}0\,{}^\circ\text{C}$.
+
+Muut päätelmät eivät kestä. Lämpötilojen $20{,}0\,{}^\circ\text{C}$ ja $22{,}0\,{}^\circ\text{C}$ lukemien ero $0{,}8\,\text{kPa}$ jää epävarmuuden $1{,}0\,\text{kPa}$ sisään, joten tästä parista ei voi osoittaa kasvua. Sama ero ei kuitenkaan todista, ettei paine muutu. Pieni muutos voi hukkua epävarmuuteen, ja koko aineistossa kasvu näkyy selvästi.
+
+Pisteisiin sovitettu suora antaisi lämpötilassa $-100\,{}^\circ\text{C}$ arvion noin $62\,\text{kPa}$. Piste on kuitenkin $120\,{}^\circ\text{C}$ mittausalueen alapuolella, joten arvo on epävarma arvio eikä varma tulos.
+
+Tulos on järkevä: paineen kasvu lämpötilan mukana sopii suljettuun jäykkään pulloon, jossa kaasun paine kasvaa lämpötilan noustessa.
 
 ## fy3-13-L1-09
 **Annettu:** kelvinlämpötila nollapisteessä $T = 0\,\text{K}$. Taulukosta (MAFY-taulukko, yksikkömuunnoksia) $0\,{}^\circ\text{C} = 273{,}15\,\text{K}$. Siis $T_0 = 273{,}15\,\text{K}$.

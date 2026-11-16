@@ -157,6 +157,14 @@ course's `scope_notes` in `curriculum.json`, not here. Lines without a date pred
   **Yksikkömuunnokset.** · **Sijoitus.** · **Tulos.** · **Järkevyys.** (teacher 2026-10-27; `check_solutions.py`).
   One bold lead-in and at most one display block per stage. The page shows stage 1 and reveals the rest; without
   JavaScript and in print all stages show.
+- **Paragraphs in stages and steps** (teacher 2026-11-13, work queue 8c: "näissä teksteissä saisi kappalejakoa olla").
+  One thing per paragraph in a worked-example stage and in a solution step: the given values as a list (`- ` items) or
+  a paragraph of their own, each remark (a value read off an extension, a note on the data) its own paragraph, and in
+  **Tunnetut ja kysytty.** the asked quantity last, on a line of its own ("Kysytään …"). A paragraph of more than about
+  60 words is cut where its subject changes; in `solutions.md` a blank line inside a step keeps it one step. Only the
+  breaks change: the same words, numbers, signs and units in the same order (`reviews.py` category `md-paragraphs`:
+  science and pedagogy carry over, the visual reviewer looks). `lint_lesson.py` warns about a longer paragraph and an
+  asked quantity in the middle of one. Model: fy3-13's worked example.
 - **Complete solutions** (teacher 2026-10-27; CLAUDE.md "Lesson form" 7). Every exercise in `exercises.json` has its
   `## <id>` block in `solutions.md`, and every `numeric` task in `inquiry.json` (the transfer task, the checks, an
   experiment's question) has a `solution`, with these bold steps in this order, each on its own line (in JSON a

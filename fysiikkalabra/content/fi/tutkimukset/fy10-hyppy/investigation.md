@@ -45,7 +45,7 @@ Voimalevy näyttää lattialla vain vaa'alta, mutta se mittaa jalkojen ja levyn 
 
 **Selvitettävä:** mitä voima–aika-kuvaajan eri osat kertovat hypyn vaiheista, sekä ponnistuksen aikana tapahtuva liikemäärän muutos, lähtönopeus ja hypyn korkeus. Määritä hypyn korkeus myös toisella menetelmällä ja vertaa tuloksia epävarmuuksineen.
 
-Hyppääjän paino ja massa ovat henkilökohtaisia tietoja. Tarvitset painoa laskuissa, mutta sitä ja massaa ei tarvitse kirjata raporttiin: voit ilmoittaa voimat painon monikertoina $\dfrac{N}{G}$. Kukaan ei ole velvollinen hyppäämään, ja ryhmä voi käyttää yhtä vapaaehtoista hyppääjää.
+Tarvitset painoa laskuissa, mutta voimat voi ilmoittaa painon monikertoina $\dfrac{N}{G}$. Kukaan ei ole velvollinen hyppäämään, ja ryhmä voi käyttää yhtä vapaaehtoista hyppääjää.
 
 **Päätät itse:** hyppytavan ja sen, miten pidät sen samana hypystä toiseen, hyppyjen määrän ja sen, millä perusteella hylkäät epäonnistuneen hypyn, sen, miten luet kuvaajasta hyppääjän painon sekä irtoamis- ja alastulohetken, mistä mihin lasket pinta-alan, toisen menetelmän sekä tavan, jolla arvioit tulosten epävarmuuden. Ohjatussa ja osittain ohjatussa työtavassa sivu antaa näihin tukea, itsenäisessä työtavassa perustelet valintasi itse.
 
@@ -208,13 +208,13 @@ Tallenna jokaisen hypyn alkuperäinen mittausdata omaksi tiedostokseen tai omaks
 ::: tuki O
 Voit käyttää esimerkiksi tällaisia taulukoita. Ensimmäiseen kirjaat kuvaajasta luetut suureet, toiseen niistä lasketut.
 
-| hyppy | $\dfrac{I}{G}\ (\text{s})$ | $t_\text{lento}\ (\text{s})$ |
+| Hyppy | $\dfrac{I}{G}\ (\text{s})$ | $t_\text{lento}\ (\text{s})$ |
 |---|---|---|
 | 1. | | |
 | 2. | | |
 | 3. | | |
 
-| hyppy | $v_0\ (\text{m/s})$ | $h\ (\text{m})$, impulssista | $h\ (\text{m})$, lentoajasta |
+| Hyppy | $v_0\ (\text{m/s})$ | $h\ (\text{m})$, impulssista | $h\ (\text{m})$, lentoajasta |
 |---|---|---|---|
 | 1. | | | |
 | 2. | | | |

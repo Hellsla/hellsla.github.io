@@ -157,7 +157,7 @@
 </svg></p></div>
 </section><section class="inv-section" id="suunnittele"><h2 id="h-suunnittele">Suunnittele</h2>
 <p>Ennen mittaamista päätä ja kirjaa ylös, mitä mittaat, miten ja kuinka pitkään, ja mitä pidät vakiona.</p>
-<div class="inv-tuki" data-modes="O"><p><strong>Ohjattu.</strong> Mittaat veden lämpötilaa $T$ ajan $t$ funktiona ja huoneen lämpötilaa $T_\text{huone}$ mittauksen alussa ja lopussa. Käytä noin $1\ \text{dl}$ vettä lasiastiassa, jonka alla on eristävä alusta, ja aloita, kun veden lämpötila on noin $60\ {}^\circ\text{C}$. Tallenna lämpötila anturilla esimerkiksi $10\ \text{s}$ välein ja jatka mittausta, kunnes veden ja huoneen lämpötilaero on pudonnut noin neljäsosaan alkuperäisestä. Jos käytät lämpömittaria ja kelloa, lue lämpötila minuutin välein. Pidä astia, vesimäärä ja paikka samoina koko mittauksen ajan, äläkä siirrä astiaa.</p></div>
+<div class="inv-tuki" data-modes="O"><p><strong>Ohjattu.</strong> Mittaat veden lämpötilaa $T$ ajan $t$ funktiona ja huoneen lämpötilaa $T_\text{huone}$ mittauksen alussa ja lopussa. Käytä noin $1\,\text{dl}$ vettä lasiastiassa, jonka alla on eristävä alusta, ja aloita, kun veden lämpötila on noin $60\,{}^\circ\text{C}$. Tallenna lämpötila anturilla esimerkiksi $10\,\text{s}$ välein ja jatka mittausta, kunnes veden ja huoneen lämpötilaero on pudonnut noin neljäsosaan alkuperäisestä. Jos käytät lämpömittaria ja kelloa, lue lämpötila minuutin välein. Pidä astia, vesimäärä ja paikka samoina koko mittauksen ajan, äläkä siirrä astiaa.</p></div>
 <div class="inv-tuki" data-modes="OO"><p><strong>Osittain ohjattu.</strong> Mitattavat suureet ovat veden lämpötila ajan funktiona ja huoneen lämpötila. Päätä itse astia, vesimäärä, alkulämpötila, mittauksen kesto ja mittausväli. Kirjaa päätöksesi perusteluineen.</p></div>
 <div class="inv-tuki" data-modes="O OO"><p><svg width="600" data-fig="setup" viewBox="0 0 600 380" role="img" aria-label="Kaaviokuva. Lasiastiassa on kuumaa vettä eristävän alustan päällä. Lämpötila-anturin kärki on veden keskellä, irti astian pohjasta ja seinistä, ja se mittaa veden lämpötilan T. Anturin johto kulkee mittauslaitteeseen. Sivussa, irti astiasta, on toinen lämpömittari, joka mittaa huoneen lämpötilan T huone." style="max-width:100%;font-size:24px">
   <line x1="20" y1="330" x2="580" y2="330" stroke="#1f2933" stroke-width="3" stroke-linecap="butt"/>
@@ -204,9 +204,9 @@
 <table>
 <thead>
 <tr>
-<th>$t\ (\text{min})$</th>
-<th>$T\ ({}^\circ\text{C})$</th>
-<th>$T - T_\text{huone}\ ({}^\circ\text{C})$</th>
+<th>$t\,(\text{min})$</th>
+<th>$T\,({}^\circ\text{C})$</th>
+<th>$T - T_\text{huone}\,({}^\circ\text{C})$</th>
 <th>$\ln(T - T_\text{huone})$</th>
 </tr>
 </thead>
@@ -246,7 +246,7 @@
 <ul>
 <li><strong>Puoliintumisaika.</strong> Lue lämpötilan kuvaajasta, kuinka kauan lämpötilaeron puolittuminen kestää, eri aloituskohdista. Jos ajat ovat mittausepävarmuuden rajoissa samat, malli on sopusoinnussa mittausten kanssa.</li>
 <li><strong>Linearisointi.</strong> Kuvaaja $\ln(T - T_\text{huone})$ ajan funktiona on mallin mukaan suora. Suoruuden näkee silmällä helpommin kuin sen, onko käyrä juuri eksponenttifunktio. Kulmakertoimesta saat vakion $k$.</li>
-<li><strong>Eksponenttisovitus.</strong> Monilla ohjelmilla voi sovittaa mittauspisteisiin suoraan eksponenttifunktion. Sovita lämpötilaan $T$ funktio, jossa on vakiotermi, muotoa $A\cdot e^{-Bt} + C$, tai sovita funktio $A\cdot e^{-Bt}$ lämpötilaeroon $T - T_\text{huone}$. Pelkkä $A\cdot e^{-Bt}$ lämpötilaan $T$ sovitettuna antaa väärän vakion, koska sen käyrä lähestyy lämpötilaa $0\ {}^\circ\text{C}$ eikä huoneen lämpötilaa. Selvitä, mitä sovitettavan funktion vakiot tarkoittavat, ja vertaa niitä mallin yhtälön suureisiin. Tarkista, osuvatko pisteet käyrälle koko alueella vai poikkeavatko ne järjestelmällisesti jossain kohdassa.</li>
+<li><strong>Eksponenttisovitus.</strong> Monilla ohjelmilla voi sovittaa mittauspisteisiin suoraan eksponenttifunktion. Sovita lämpötilaan $T$ funktio, jossa on vakiotermi, muotoa $A\cdot e^{-Bt} + C$, tai sovita funktio $A\cdot e^{-Bt}$ lämpötilaeroon $T - T_\text{huone}$. Pelkkä $A\cdot e^{-Bt}$ lämpötilaan $T$ sovitettuna antaa väärän vakion, koska sen käyrä lähestyy lämpötilaa $0\,{}^\circ\text{C}$ eikä huoneen lämpötilaa. Selvitä, mitä sovitettavan funktion vakiot tarkoittavat, ja vertaa niitä mallin yhtälön suureisiin. Tarkista, osuvatko pisteet käyrälle koko alueella vai poikkeavatko ne järjestelmällisesti jossain kohdassa.</li>
 </ul>
 <p>Jos $\ln$-kuvaaja on alussa suora mutta kaartuu lopussa, tarkista ensin huoneen lämpötila: pienikin virhe lukemassa $T_\text{huone}$ muuttaa lämpötilaeroa suhteellisesti eniten silloin, kun ero on pieni. Pisteet, joissa lämpötilaero on mittausepävarmuuden suuruinen, eivät kerro mallista enää mitään: jätä ne pois sovituksesta ja kerro se raportissa.</p></div>
 <p>Kuvaajan sovitukseen käytä Graphical Analysis Pro -ohjelmaa. Ruukkilabran ohjeet: <a class="tvt-link" href="tvt-suoran-sovitus.html">Suoran sovittaminen</a>, <a class="tvt-link" href="tvt-kulmakerroin.html">Kulmakertoimen tulkinta</a> ja <a class="tvt-link" href="tvt-taulukkolaskenta.html">Taulukko ja lasketut sarakkeet</a>.</p>
@@ -286,7 +286,7 @@
 <li>Lämpötilan kuvaajaan sovitetaan suora tai murtoviiva, eikä huomata, että jäähtyminen hidastuu lämpötilaeron pienentyessä.</li>
 <li>Logaritmi otetaan lämpötilasta $T$ eikä lämpötilaerosta $T - T_\text{huone}$, tai lämpötila muutetaan kelvineiksi ennen logaritmia. Lämpötilaero on sama kummassakin yksikössä, mutta lämpötila itse ei.</li>
 <li>Huoneen lämpötila jätetään mittaamatta tai mitataan kuuman astian vierestä. Systemaattinen virhe lukemassa $T_\text{huone}$ taivuttaa logaritmikuvaajaa juuri mittauksen lopussa, mikä tulkitaan helposti mallin pettämiseksi.</li>
-<li>Lämpötilaan $T$ sovitetaan eksponenttifunktio $A\cdot e^{-Bt}$ ilman vakiotermiä. Käyrä lähestyy silloin lämpötilaa $0\ {}^\circ\text{C}$ eikä huoneen lämpötilaa, ja vakio $B$ on väärä. Oikein sovitetaan $A\cdot e^{-Bt} + C$ lämpötilaan tai $A\cdot e^{-Bt}$ lämpötilaeroon $T - T_\text{huone}$.</li>
+<li>Lämpötilaan $T$ sovitetaan eksponenttifunktio $A\cdot e^{-Bt}$ ilman vakiotermiä. Käyrä lähestyy silloin lämpötilaa $0\,{}^\circ\text{C}$ eikä huoneen lämpötilaa, ja vakio $B$ on väärä. Oikein sovitetaan $A\cdot e^{-Bt} + C$ lämpötilaan tai $A\cdot e^{-Bt}$ lämpötilaeroon $T - T_\text{huone}$.</li>
 <li>Mittaus lopetetaan liian aikaisin, jolloin kaareva alku näyttää lähes suoralta eikä mallia voi testata.</li>
 <li>Alun nopea lämpötilan lasku, kun vesi lämmittää astiaa ja anturia, otetaan mukaan sovitukseen.</li>
 <li>Anturi koskettaa astian pohjaa tai seinää tai on aivan vedenpinnassa, jolloin se ei mittaa veden keskimääräistä lämpötilaa.</li>

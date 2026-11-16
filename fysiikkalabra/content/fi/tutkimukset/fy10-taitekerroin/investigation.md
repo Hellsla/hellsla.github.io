@@ -127,7 +127,7 @@ Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.
 
 ## Teoriaa lyhyesti
 
-Kirjaa ennusteesi ennen kuin luet tätä osaa. Valon taittumista käsitellään tarkemmin moduulissa FY7. Tässä on se, mitä tarvitset tähän työhön.
+Valon taittumista käsitellään tarkemmin moduulissa FY7. Tässä on se, mitä tarvitset tähän työhön.
 
 Valo etenee eri aineissa eri nopeuksilla. Aineen **taitekerroin** $n$ kertoo, kuinka monta kertaa suurempi valon nopeus $c$ tyhjiössä on kuin valon nopeus $v$ aineessa: $n = \dfrac{c}{v}$. Taitekerroin on yksikötön luku. Ilman taitekerroin on niin lähellä yhtä, noin $1{,}0003$, että tässä työssä sen voi merkitä ykköseksi.
 

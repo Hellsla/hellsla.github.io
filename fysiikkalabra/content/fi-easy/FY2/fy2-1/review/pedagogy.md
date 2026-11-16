@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ff2b7bfcae9a405e
+CONTENT-HASH: 62f0884522375ce2
 
 ## Blocking
 (none)
 
 ## Polish
-- meta.json key_concepts "energia" — word order heavy — "Suure, joka kertoo, kuinka paljon muutosta jokin voi saada aikaan, esimerkiksi liikettä tai lämpenemistä. Yksikkö on joule."
+- lesson.md (hydropower caption) — the caption names turbine and generator, which the alt text says are not clearly visible (river, electrical equipment) — add "Kuvassa näkyy vain osa laitoksesta." or say what the student sees in the picture.
+- lesson.md (energy-form table) — "Mihin liittyy" cells for potential and kinetic energy hold two or three sentences, long for a phone cell — move the "mitä korkeammalla ... sitä enemmän" sentences below the table.
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+- Photo sits at the start of "Seitsemän energialajia" and links to the paragraph before it; it is decorative and illustrative only, and no answer to a task is disclosed.
+- Bullets to a three-column table (energy form, what it relates to, example): easier to compare, same content, no glossary term changed.
+- The lämpö/lämpöenergia distinction is kept intact in the paragraph after the table, with no loss of meaning.
+- Examples in the table (rolling ball, hot cup, food, sun, grid, nuclear plant) are recognisable to a 17-year-old.
+- sim.js tick-label change is a legibility fix on phones only; the physics and the adapter are untouched.
+- Slot goals (mechanical, radiant, chemical, nuclear; conservation) are still covered; nothing beyond FY2 scope was added.
