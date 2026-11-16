@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: edbc5d57c6709a2b
+CONTENT-HASH: 844ef976147dad75
+SCOPE: delta added-exercise from edbc5d57c6709a2b base 415cbc7c6bc3
 
 ## Blocking
 
@@ -7,11 +8,12 @@ CONTENT-HASH: edbc5d57c6709a2b
 
 ## Polish
 
-- exercises.json:391 (fy8-12-L3-05 text) — the marker was taken out of the captions, but the task text still says "(taulukko, esimerkkiaineisto)"; by the teacher's rule of 2026-11-13 (no provenance badge on example data) write "(taulukko)".
+- The three round-1 length polishes (c five asks, d three asks, stem length) are not addressed in this diff; still optional.
 
 ## Checked
 
-- Delta only: "kilobecquereleina" corrected to "kilobecquereleinä" twice in the text of fy8-12-L3-05 and once in its solution's Kysytty line; the front-vowel ending is right (the word is pronounced with front vowels) and matches "megabecquereleinä" and "kilobecquereleinä" used elsewhere in the module.
-- No number, symbol, question or step changed; the task still ends with its question and the instruction which part goes in the answer box.
-- Removing the caption marker takes nothing the task needs: the table is still referred to in the text.
-- Judged from the diff and the packet text; no capture opened.
+- Box answer 14 with tolerance 0.04 accepts 14.48 (exact) and 14.5, so both the rounded two-figure value and the earlier value pass; answers.py comment matches the 2-significant-figure answer.
+- Solution Vastaus/Answer now states two significant figures (matches the 3,5 GHz data) and says the box also accepts 14,5.
+- Comparison ratios split into two displayed lines: clearer, same numbers (6,9e5, 6,9e9).
+- Units J s and 24 h typeset consistently in task and solution; no pedagogical change.
+- Method: delta, diff only.

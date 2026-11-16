@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: edbc5d57c6709a2b
+CONTENT-HASH: 844ef976147dad75
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] exercises.json fy8-12-L3-05, first paragraph — the caption's marker is gone but the sentence still ends "(taulukko, esimerkkiaineisto)"; if the teacher's rule (no provenance marker on example data) is meant for the running text too, write "(taulukko)". Not a language error, so it does not block.
+- [Minor] fy8-12-L2-08 solution (Annettu, Mallivastaus a) ja d)) — suorat lainausmerkit "anti-5G", "Quantum Pendant", "negative ion" renderöityvät suorina — käytä ”…”, kuten tehtävätekstissä.
 
 ## Checked
-- Delta round 1 (wording, caption-label): "kilobecquereleina" → "kilobecquereleinä" twice in the task text and once in the solution's Kysytty. Hash edbc5d57c6709a2b at the start and at the end.
-- Opened fy8-12-open-exercises-L3-1280-7 (task 12-21 with its table): part c) and the last instruction both read "kilobecquereleinä"; the front-vowel ending is right for a word pronounced with front vowels only, and the answer box's unit kBq agrees. Situation first, question parts on their own rows, the instruction last.
-- Same capture: the table's caption is "GM-mittarin pulssit 60 s:n jaksoissa", no marker or stray bracket left; the table sits inside the card.
-- Opened fy8-12-open-exercises-L3-1280-8 (the solution): Kysytty reads "lähteen aktiivisuus A kilobecquereleinä"; Periaate, Kaava, Muunnokset and the aligned Sijoitus blocks are intact.
-- No figure, formula, number or unit changed.
+- Delta: fy8-12-L2-08, captures fy8-12-open-exercises-L2-1280-11, -12, -13 (Annettu to Järkevyys).
+- Round-1 Major fixed: both comparisons are now their own display rows with the sentence intact ("…suhde fotonin energiaan on [rivi]"); $\text{J}\,\text{s}$ and $24\,\text{h}$ now correct.
+- Chain rows aligned, µeV upright, decimal comma right, no clipping; Finnish fluent, claim and observation separated.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

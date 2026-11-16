@@ -486,6 +486,7 @@ Toimeksianto sanatarkasti: `docs/audits/2026-11-16-aineistotehtavat.md` (viisi t
 FY9-A5, lähdelinkit tarkistetaan, malliratkaisut, kolme kieltä). Tehtävät lisätään nykyiseen tehtävärakenteeseen sopivan
 luvun soveltaviksi (taso 2–3, `kind` aineisto), FY9:ssä kertauskokonaisuuteen tai yksiköihin. Lähteiden palvelimet ovat
 ympäristön sallituissa (16.11).
+FY8 tehty: FY8-A1…A5 (PR #635, oma PR): fy8-3-L2-09, fy8-13-L2-09, fy8-12-L2-08, fy8-9-L2-08, fy8-1-L2-10. PhET Photoelectric (A5) toimii selaimessa CheerpJ:llä; sen arvot luettiin simulaation omasta ohjelmasta (photoelectric_all.jar), koska CheerpJ:n palvelin ei ole ympäristön sallituissa.
 PR:ien yhdistäminen (opettaja 2026-11-16: "jos saat yhdisteltyä PR niin tee, jos vaarana että homma sotkeutuu älä tee"):
 kohta 19 tehdään samassa PR:ssä saman kurssin vielä aloittamattoman työn kanssa (FY4, FY5, FY9 ja FY2: kohta 18; FY3, FY6
 ja FY7: kohta 5d), ei koskaan jo katselmoitavana olevaan PR:ään; FY1 ja FY8 omana PR:nään kurssin nykyisen PR:n jälkeen.
@@ -495,6 +496,7 @@ FY6 tehty: FY6-A1…A5 (PR #627, kohdan 5d FY6:n kanssa): fy6-3-L2-08, fy6-7-L2-
 FY4 tehty: FY4-A1…A5 (PR #625, kohdan 18 FY4:n kanssa): fy4-11-L2-10, fy4-7-L2-10, fy4-9-L2-09, fy4-10-L2-10, fy4-8-L2-10.
 FY2 tehty: FY2-A1…A5 (PR #632, kohdan 18 FY2:n kanssa): fy2-8-L2-10 (A1), fy2-7-L2-10 (A2), fy2-8-L3-06 (A3), fy2-3-L2-09 (A4), fy2-8-L2-11 (A5). Electricity Maps korvattu OWID:lla ja Fingridillä (`docs/audits/2026-11-16-fy2-aineistot.md`).
 FY3 tehty: FY3-A1…A5 (PR #628, kohdan 5d FY3:n kanssa): fy3-9-L2-10, fy3-8-L2-10, fy3-11-L2-10, fy3-6-L2-10, fy3-7-L2-10.
+FY1 tehty: FY1-A1…A5 (PR #634, oma PR): fy1-7-L2-09, fy1-4-L2-09, fy1-3-L2-09, fy1-2-L2-08, fy1-7-L2-10. A2:n Ilmatieteen laitoksen avoin rajapinta (opendata.fmi.fi) ei ole ympäristön sallituissa: tehtävä ohjaa hakemaan oman aineiston, ja varalla on merkitty keksitty esimerkkitaulukko.
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 

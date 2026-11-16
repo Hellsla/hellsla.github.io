@@ -285,6 +285,37 @@
       "answer": "Kappale B ($0{,}90\\,\\text{g/cm}^3$), kappale D ($1{,}2\\,\\text{g/cm}^3$), kappale A ($2{,}7\\,\\text{g/cm}^3$), kappale C ($9{,}0\\,\\text{g/cm}^3$).",
       "unit": "",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-7-L2-09",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://nssdc.gsfc.nasa.gov/planetary/factsheet/\" target=\"_blank\" rel=\"noopener\">NASA – Planetary Fact Sheet</a> (luettu 16. marraskuuta 2026)\n\nVoiko planeetan koosta päätellä sen tiheyden? NASAn taulukossa on jokaisesta aurinkokunnan planeetasta muun muassa massa (Mass, yksikkönä $10^{24}\\,\\text{kg}$), halkaisija (Diameter, $\\text{km}$) ja keskitiheys (Density, $\\text{kg/m}^3$). Sivun <a href=\"https://nssdc.gsfc.nasa.gov/planetary/factsheet/planetfact_notes.html\" target=\"_blank\" rel=\"noopener\">taulukon selitykset (Notes on the Fact Sheets)</a> kertovat, että halkaisija on mitattu päiväntasaajalta. Pallon tilavuus on $V = \\dfrac{\\pi d^3}{6}$, missä $d$ on pallon halkaisija.\n\na) Valitse neljä planeettaa, joista yksi on Maa ja yksi Saturnus. Kokoa niiden massat, halkaisijat ja keskitiheydet taulukoksi.\n\nb) Piirrä kaikkien kahdeksan planeetan keskitiheys halkaisijan funktiona. Kuvaile, millainen riippuvuus kuvaajassa näkyy.\n\nc) Laske Maan ja Saturnuksen keskitiheys niiden massasta ja halkaisijasta. Vertaa tuloksia NASAn ilmoittamiin keskitiheyksiin. Miksi Saturnuksen ero on paljon suurempi kuin Maan?\n\nd) Eräs opiskelija väittää: ”Mitä suurempi planeetta on, sitä suurempi on sen tiheys.” Arvioi väitettä aineiston avulla.\n\nVastauskenttään tulee kohdan c) Maan keskitiheys yksikössä $\\text{kg/m}^3$.",
+      "kind": [
+        "data",
+        "graph",
+        "model",
+        "reasoning"
+      ],
+      "answer": 5493,
+      "unit": "kg/m³",
+      "tolerance": 0.02,
+      "hints": [
+        "Kohta c): Saturnus pyörähtää akselinsa ympäri noin $11$ tunnissa (taulukon rivi Rotation Period). Mieti, millainen nopeasti pyörivän kaasupallon muoto on ja mitä se tekee tilavuudelle, joka lasketaan päiväntasaajan halkaisijasta."
+      ]
+    },
+    {
+      "id": "fy1-7-L2-10",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://phet.colorado.edu/en/simulations/density\" target=\"_blank\" rel=\"noopener\">PhET – Density (Tiheys)</a> (luettu 16. marraskuuta 2026)\n\nVoiko materiaalin tunnistaa tiheyden perusteella? Tutki simulaatiolla saman materiaalin eri kokoisia kappaleita. Avaa näkymä Intro ja valitse kappaleen materiaaliksi alumiini (Aluminum). Pienennä yläreunan tiheysmittari (Density) sen miinusnapista, jotta määrität tiheyden itse.\n\na) Muuta kappaleen massaa liukusäätimellä (Mass) ja lue kappaleen massa ja tilavuus (Volume) ohjauspaneelista vähintään viidellä eri massalla. Kirjaa tulokset taulukkoon ja esitä massa tilavuuden funktiona.\n\nb) Sovita pisteisiin suora ja kirjoita malli yhtälönä. Määritä mallin avulla alumiinin tiheys yksikössä $\\text{kg/m}^3$.\n\nc) Aseta tilavuudeksi arvo, jota et mitannut, esimerkiksi noin $9\\,\\textsf{l}$. Ennusta mallillasi kappaleen massa ja tarkista ennuste simulaatiosta.\n\nd) Avaa tiheysmittari uudelleen ja katso, mitä materiaaleja sen asteikolle on merkitty. Arvioi, voiko tuntemattoman kappaleen materiaalin tunnistaa yksikäsitteisesti pelkän tiheyden perusteella.\n\nVastauskenttään tulee kohdan b) alumiinin tiheys yksikössä $\\text{kg/m}^3$.",
+      "kind": [
+        "data",
+        "graph",
+        "experiment",
+        "model"
+      ],
+      "answer": 2700,
+      "unit": "kg/m³",
+      "tolerance": 0.02
     }
   ],
   "level3": [

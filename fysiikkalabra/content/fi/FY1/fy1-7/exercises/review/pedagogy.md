@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: ad080d2165d3e71d
+CONTENT-HASH: 6a0a33a715c949de
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- solutions.md fy1-7-L2-09 d) — Saturnus/Neptunus tiheys 687/1638 = 0,42, so "vain noin puolet sen tiheydestä" -> "alle puolet sen tiheydestä" (carried from round 1, still open).
 
 ## Checked
-batch delta review (exercises): 'noin 2,7 kertaa niin tiheää kuin vesi' and 'noin 19 kertaa niin tiheää kuin vesi' replace the awkward '-kertaisen tiheää'; '50 cm3:n veden massa' has correct case; reasonableness estimates unchanged.
+- L2-09 c): the Earth sentence is now physically right: Earth is slightly flattened (about 1/298), which makes the equatorial-radius sphere about 0,3 % too large, matching the 0,4 % gap; "enimmäkseen" is fair.
+- The comparison "paljon vähemmän kuin Saturnus, koska pyörii hitaammin" explains the contrast without claiming more than the student can follow.
+- Saturn's 10 % gap and its explanation unchanged and correct; the rest of c) and d) untouched.

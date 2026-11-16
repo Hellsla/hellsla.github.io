@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c2b8dff4a81964ef
+CONTENT-HASH: b2d6a4985ac2c285
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-7 solutions 08-09 — 08 keeps the left side on the first row and aligns at the equals sign, 09 puts the left side on a row of its own; both read well, a small inconsistency between neighbours.
+- [Minor] fy1-7-L2-09 Mallivastaus c) — "vähän lytyssä" is colloquial and obscure for an S2 reader; "litistynyt eli vähän litteämpi" is clearer.
+- [Minor] fy1-7-L2-09 Muunnokset — the conversion is split into two small cards with "Saturnukselle" running between them; one combined block or one card per planet would read calmer.
+- [Minor] fy1-7-L2-10 Mallivastaus c) — "osui kolmen merkitsevän numeron tarkkuudella" could say how far apart the values are (25,0 kg and 25,00 kg).
 
 ## Checked
-- delta review 5d reflow, round 3: only the one re-broken solution formula changed (`git diff HEAD~1`, numbers, units and words unchanged).
-- opened the 360 px capture 08 (fi-easy), with 07 and 09-11 tiled beside it at readable resolution: two rows aligned at the equals sign, nothing clipped or scrolling; compared with the neighbouring captures 07 and 09-11 (same type size, same card, same break style).
-- not re-opened this round: the other captures of this set (unchanged since round 1).
+- delta, round 1: fy1-7-L2-09 and L2-10. Opened open-exercises-L2-1280 parts 12, 13, 14, 15, 16 (task cards, solution tables, formula cards, answers, Järkevyys).
+- Tables fit their box, $\textsf{l}$ and $\tfrac{\text{kg}}{\textsf{l}}$ render, units upright, decimal comma, no clipping; the tasks give the situation first, the question last.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

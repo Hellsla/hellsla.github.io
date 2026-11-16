@@ -212,3 +212,52 @@
 
 Additionally: the error estimate is $$\begin{aligned} \Delta x &= \tfrac{1.014 - 1.004}{2}\,\text{g/cm}^3 \\ &= 0.005\,\text{g/cm}^3 \end{aligned}$$, so the interval $\bar{x} \pm \Delta x$ is $1.005\ldots1.015\,\text{g/cm}^3$ and does not contain the table value: the measurements probably have a systematic error.
 **Reasonableness:** All measurements are above the table value and the deviation is over one percent, but the density of water is about $1\,\text{g/cm}^3$, so the mean is of the right size and the deviation is small.
+
+## fy1-3-L2-09
+**Given:** CERN's press release of 23 September 2011 and its updates: a distance of about $730\,\text{km}$ between the source and the detector, measured with an uncertainty of $20\,\text{cm}$; the neutrinos' time of flight measured to better than $10\,\text{ns}$; over $15\,000$ neutrino events. The speed of light in a vacuum $c = 2.998\cdot10^{8}\,\text{m/s}$ and the deviation $\Delta t = 60\,\text{ns}$.
+
+**Find:** a) the measurement and its accuracy, why the result was surprising; b) the light travel time $t$, the relative deviation $\dfrac{\Delta t}{t}$ as a percentage and the distance $\Delta s$ light travels in the time $\Delta t$; c) what was found later and the kind of error; d) why one deviating result does not overturn a theory
+
+**Principle:** A speed is found by measuring a distance and a travel time. If the neutrinos arrive sooner than light could, their speed would be greater than $c$. The size of the deviation is judged by comparing it with the whole travel time and with the uncertainties of the measurements.
+
+**Model answer a):** The researchers measured the time the neutrinos took from CERN to the Gran Sasso laboratory. The distance was measured with an uncertainty of $20\,\text{cm}$ and the time to better than $10\,\text{ns}$, with GPS systems and atomic clocks. The neutrinos seemed to arrive about $60\,\text{ns}$ sooner than light could have. The result was surprising because by Einstein's theory of relativity nothing travels faster than light, and many earlier experiments had found no deviation from the theory.
+
+**Formula:** In uniform motion $s = ct$, so $t = \dfrac{s}{c}$; the relative deviation $\dfrac{\Delta t}{t}$ and the distance light travels $\Delta s = c\,\Delta t$
+
+**Conversions:** $s = 730\,\text{km} = 7.30\cdot10^{5}\,\text{m}$ and $\Delta t = 60\,\text{ns} = 60\cdot10^{-9}\,\text{s} = 6.0\cdot10^{-8}\,\text{s}$
+
+**Substitution:** The light travel time:
+
+$$\begin{aligned}
+t &= \dfrac{s}{c} \\
+&= \dfrac{7.30\cdot10^{5}\,\text{m}}{2.998\cdot10^{8}\,\text{m/s}} \\
+&\approx 2.435\cdot10^{-3}\,\text{s}
+\end{aligned}$$
+
+The relative deviation:
+
+$$\begin{aligned}
+\dfrac{\Delta t}{t} &= \dfrac{6.0\cdot10^{-8}\,\text{s}}{2.435\cdot10^{-3}\,\text{s}} \\
+&\approx 2.46\cdot10^{-5} \\
+&= 0.00246\,\%
+\end{aligned}$$
+
+The distance light travels during the deviation:
+
+$$\begin{aligned}
+\Delta s &= c\,\Delta t \\
+&= 2.998\cdot10^{8}\,\text{m/s} \cdot 6.0\cdot10^{-8}\,\text{s} \\
+&\approx 18\,\text{m}
+\end{aligned}$$
+
+**Model answer b):** Light takes about $2.4\,\text{ms}$ for the distance, and the deviation is only about $0.0025\,\%$ of it, about $25$ parts per million. CERN's press release rounds the same result to “$20$ parts per million”. The deviation corresponds to $18\,\text{m}$ of distance, almost a hundred times the distance uncertainty $20\,\text{cm}$. The distance measurement could not explain the result, so the error was worth looking for in the timing.
+
+**Model answer c):** The researchers found two possible sources of error in the measuring system: the oscillator of the GPS synchronization and the optical fibre connector that brings the GPS signal to the experiment's master clock. Later the original result was attributed to a faulty element of the experiment's fibre optic timing system. The independent ICARUS experiment measured a neutrino time of flight consistent with the speed of light, and next four experiments at Gran Sasso (Borexino, ICARUS, LVD and OPERA) all measured a time of flight consistent with the speed of light.
+
+The error was systematic. The faulty timing system shifted every measurement in the same direction, so the result stayed the same although more than $15\,000$ neutrinos were observed. A random error shrinks when there are many measurements, but a systematic error does not shrink when the measurement is repeated with the same equipment. That is why independent measurements with different equipment were needed.
+
+**Model answer d):** The theory of relativity has been tested in many experiments, and no deviations have been found. When one measurement contradicts all of them, it is more likely that the measurement has an unnoticed systematic error than that all the earlier results are wrong. An everyday example: if a thermometer shows boiling water at normal pressure to be at $80\,{}^\circ\text{C}$, we first suspect the thermometer, not the boiling point of water. A deviating result can still be a sign of new physics, so it is not dismissed but checked. The theory would change only if independent experiments repeated the result. OPERA acted correctly when it published its result for others to examine.
+
+**Answer:** The relative deviation is $\dfrac{\Delta t}{t} \approx 0.0025\,\%$, or $2.5\cdot10^{-5}$ (calculated value $0.00246\,\%$), two significant figures, because the deviation $60\,\text{ns}$ is given to two figures.
+
+**Reasonableness:** Light travels a kilometre in about $3.3\,\mu\text{s}$, so $730\,\text{km}$ takes about $730 \cdot 3.3\,\mu\text{s} \approx 2.4\,\text{ms}$. The deviation $60\,\text{ns}$ is about $40\,000$ times smaller than the travel time, which matches the ratio $2.5\cdot10^{-5}$. That is why the result was taken seriously only once the accuracy of the timing had been checked.
