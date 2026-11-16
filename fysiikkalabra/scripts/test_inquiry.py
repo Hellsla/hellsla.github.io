@@ -222,28 +222,30 @@ def page_form(pg, b, url, acts, page):
 
 
 STICK = """() => { const c = document.querySelector('#sim-root > .sim-canvas'), root = document.querySelector('#sim-root'), t = document.querySelector('nav.toc');
-  const toc = t ? t.getBoundingClientRect().bottom : 0, h = c.getBoundingClientRect().height;
+  const toc = t ? t.getBoundingClientRect().bottom : 0, h = (c.querySelector('canvas') || c).offsetHeight, sim = document.getElementById('sim');
   // scroll on until the picture, left in the flow, would stand 40 px under the stage bar: the controls under it in use
   window.scrollBy(0, c.getBoundingClientRect().top - toc + Math.min(40, root.getBoundingClientRect().bottom - c.getBoundingClientRect().bottom - 1));
   const cb = c.getBoundingClientRect();
-  return { pos: getComputedStyle(c).position, stick: !!c.closest('.sim-stick'), top: cb.top, bottom: cb.bottom, toc, h,
-           inView: Math.max(0, Math.min(cb.bottom, innerHeight) - Math.max(cb.top, toc)) / h }; }"""
+  return { pos: getComputedStyle(c).position, stick: !!c.closest('.sim-stick'), fits: sim.classList.contains('sim-fits'), top: cb.top, bottom: cb.bottom, toc, h,
+           room: innerHeight - toc, inView: Math.max(0, Math.min(cb.bottom, innerHeight) - Math.max(cb.top, toc)) / cb.height }; }"""
 
 
 def stick_checks(b, url, lid):
-    """Work queue 10, PR 4 (pilot, inquiry.SIM_STICK_PILOT): on a phone the simulation's picture sticks under the stage
-    bar while the student uses its controls and reads its readouts; every other chapter keeps the picture in the flow
-    until the teacher approves the pilot."""
+    """Work queue 10, PR 4 and 4b: on a phone the simulation's picture sticks under the stage bar while the student uses
+    its controls and reads its readouts, when it takes at most inquiry.SIM_STICK_SHARE of the window under the bar; a
+    taller picture stays in the flow, so it never covers the controls."""
     for w, h in ((390, 844), (360, 740)):
         q = b.new_page(viewport={"width": w, "height": h}); q.goto(url); q.wait_for_timeout(800)
         q.evaluate("document.querySelector('#sim').scrollIntoView({ block: 'start' })"); q.wait_for_timeout(150)
         S = q.evaluate(STICK); q.wait_for_timeout(150)
-        if lid in inquiry.SIM_STICK_PILOT:
-            check(f"{w} px: the simulation's picture sticks right under the stage bar, whole, while the controls under it are in use (work queue 10, PR 4 pilot)",
-                  S["stick"] and S["pos"] == "sticky" and abs(S["top"] - S["toc"]) <= 1.5 and S["inView"] >= 0.99, str(S))
-        else:
-            check(f"{w} px: the simulation's picture stays in the flow (the sticky picture is a pilot of fy4-1 and fy2-2 until the teacher approves it)",
-                  not S["stick"] and S["pos"] != "sticky", str(S))
+        if lid in inquiry.SIM_STICK_OFF:
+            check(f"{w} px: the simulation's picture stays in the flow ({inquiry.SIM_STICK_OFF[lid]})", not S["stick"] and S["pos"] != "sticky", str(S))
+        elif S["h"] <= inquiry.SIM_STICK_SHARE * S["room"] - 1:
+            check(f"{w} px: the simulation's picture ({S['h']} px) sticks right under the stage bar, whole, while the controls under it are in use (work queue 10, PR 4b)",
+                  S["stick"] and S["fits"] and S["pos"] == "sticky" and abs(S["top"] - S["toc"]) <= 1.5 and S["inView"] >= 0.99, str(S))
+        elif S["h"] > inquiry.SIM_STICK_SHARE * S["room"] + 1:
+            check(f"{w} px: the simulation's tall picture ({S['h']} px, over {inquiry.SIM_STICK_SHARE:.0%} of the window) stays in the flow, so it never covers the controls",
+                  S["stick"] and not S["fits"] and S["pos"] != "sticky", str(S))
         q.close()
 
 

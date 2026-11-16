@@ -723,10 +723,12 @@ SIM_CARD_OLD = {
     "fy3-2": "the readout is already before the controls", "fy3-3": "the readout is already before the controls",
     "fy3-4": "the readout is already before the controls", "fy3-9": "a table in the card",
 }
-# The pilot of work queue 10, PR 4 (teacher's approval pending): on a phone the simulation's picture sticks under the stage
-# bar while the student scrolls through its controls and readouts (class sim-stick, site.css). fy4-1 is the time-driven
-# pilot, fy2-2 a static one (sim-embed.js STATIC). Every other chapter is unchanged until the teacher approves.
-SIM_STICK_PILOT = {"fy4-1", "fy2-2"}
+# On a phone every simulation's picture sticks under the stage bar while the student scrolls through its controls and
+# readouts (class sim-stick; work queue 10, PR 4: pilot fy4-1 and fy2-2 approved by the teacher 2026-11-16, PR 4b all).
+# lesson.js lets it stick only when it leaves room for the controls (SIM_STICK_SHARE of the window under the bar); a
+# taller picture stays in the flow. A chapter listed here never sticks (with the reason).
+SIM_STICK_OFF = {}
+SIM_STICK_SHARE = 0.55                                 # lesson.js STICK_SHARE, test_inquiry.py stick_checks
 TUTKI_FOLD_COURSES = {f"FY{i}" for i in range(1, 10)}   # the modules whose Tutki shows one investigation at first
 TUTKI_VISIBLE = 2                                  # at most this many tasks of Tutki in view (teacher 2026-11-06)
 
@@ -945,7 +947,7 @@ def render(folder, inquiry, parts, md):
                         f'<span class="more-count" data-one="{esc(T("inquiry.more_count_one"))}" data-many="{esc(T("inquiry.more_count_many"))}">{T("inquiry.more_count_one" if k == 1 else "inquiry.more_count_many", n=k)}</span></summary>'
                         f'<div class="fold-body">{flow(rest)}</div></details>')
         if si is not None and (si < len(items) - 1 or more):   # the sim beside the activities that use it
-            inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side{"" if lid in SIM_CARD_OLD else " sim-card2"}{" sim-stick" if lid in SIM_STICK_PILOT else ""}">{act(items[si])}</div>'
+            inner = (flow(items[:si]) + f'<div class="lab"><div class="lab-side{"" if lid in SIM_CARD_OLD else " sim-card2"}{"" if lid in SIM_STICK_OFF else " sim-stick"}">{act(items[si])}</div>'
                      f'<div class="lab-main">{flow(items[si + 1:])}{more}</div></div>')
         else: inner = flow(items) + more
         if sid == "tarkista" and parts.get("selfassess"):   # Testaa ja arvioi (teacher 2026-11-10): the tasks first, then the goals' self-assessment, so the student assesses with the tasks' feedback in hand (the goals first until then, 2026-11-06)
