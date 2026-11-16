@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9a398310c855a2de
+CONTENT-HASH: a7aaa63f2f88419c
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 1-7 true/false item 4 — "kohti Maan sauvamagneettimallin etelänapaa" reads heavy but is correct; optional lighter wording.
+- none
 
 ## Checked
-- Diff read in full: `{}^\circ` -> `^\circ` in 1-8, 2-7 and their solutions; item 4 wording of the N-pää statement; 3-2 steel-clip answer and solution wording.
-- Captures opened: open-exercises-1280-2 (1-2, degree rendering), open-exercises-1280-8 (true/false set, item 4 and its model answer), open-exercises-L2-1280-4 (1-13, degrees), open-exercises-L2-1280-8 (the student-solution task with 25° and 65°, 2-7), open-exercises-L3-1280-2 (task with the steel clip, answer and solution).
-- Not opened as such: task 1-8 (Oulu 76°); same notation seen rendering correctly in 1-2 and 1-13.
-- Degrees upright and tight, no red KaTeX source, blocks inside their cards, layout intact.
-- Hash identical at start and end.
+- Delta: Reasonableness line in fy7-1 exercise solutions (two-row display block). Rendered preview page (fi) with solutions opened at 360, 390 and 1280 px: the display block fits its container (scrollWidth = clientWidth), no page overflow, rows aligned, numbers, signs, units and order unchanged. Screenshot opened for en at 360 px; fi and fi-easy verified by measurement.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
