@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 58c332c166e98345
+CONTENT-HASH: 5bb30f3c070dbfcc
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-4 solutions 03 — the display block now sits in the middle of a sentence, right after the bold lead-in; reads correctly, but a sentence that ends before the formula would be calmer. Optional.
+- [Minor] fy1-4-L2-09 text — "Ne on keksitty esimerkiksi" can be read as "for example"; write "Ne on keksitty esimerkkiä varten."
+- [Minor] fy1-4-L2-09 data table — the 13-row table is narrow and its caption wraps to five short lines in a half-width box; widen the caption or set it above the table.
+- [Minor] solution Järkevyys — the formula chain sits mid-sentence between "nousee" and "mikä vastaa"; reads correctly.
 
 ## Checked
-- delta review 5d reflow, round 3: only the one re-broken solution formula changed (`git diff HEAD~1`, numbers, units and words unchanged).
-- opened the 360 px capture 03 (fi-easy) at readable resolution: two rows inside the formula card, both left-aligned, break before the equals sign and outside numbers and units, decimal separator and thin space before the unit correct, nothing clipped or scrolling; the sentence's comma sits after the block and the clause continues naturally below it.
-- not re-opened this round: the other captures of this set (unchanged since round 1).
+- delta, round 1: fy1-4-L2-09 only. Opened open-exercises-L2-1280 parts 12, 13, 14 (task card with data table, Vastaus field, whole solution).
+- KaTeX clean, degrees/units upright with thin space, decimal comma, Kaava rows aligned, no clipping; set still reads as one.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4
