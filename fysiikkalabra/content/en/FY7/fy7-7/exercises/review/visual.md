@@ -1,19 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 20765954e1e52615
+VERDICT: PASS
+CONTENT-HASH: bc8bf714e0733a08
 
 ## Blocking
-- [Major] content/en/FY7/fy7-7/exercises/exercises.json:271 (fy7-7-L2-07, both widths) — the quotation now ends on a display block, so the closing `.”` is left alone on a line of its own under the formula — a stray punctuation line in a task statement that was clean before the reflow — let words follow the block, e.g. “… The current is $$…$$ in the bulb.”
-- [Major] content/en/FY7/fy7-7/exercises/solutions.md:113 and :134 (390 px) — the row `&\cdot 100\,\% = 26.97\,\%` (and `= 2.44\,\%`) carries the relation in mid-row; the page aligns its `=`, so `·100 %` hangs left of the equals column and the row reads as an equation of its own, `·100 % = 26.97 %` — the relation must start a row — `&= \dfrac{…}{…} \cdot 100\,\% \\ &= 26.97\,\%` (the first row fits a phone card).
+- none
 
 ## Polish
-- [Minor] solutions.md:132 — the same formula: `· 100 %` on its own row, left of the `=`, also at 1280 px; keep `\cdot 100\,\%` on the fraction row.
-- [Minor] solutions.md:228 — “$2.0\,\text{mV}$ in the fast push …” reads as a fragment after the boxed value; acceptable.
+- [Minor] solutions.md:132 — `· 100 %` still stands on a row of its own under the fraction, at 1280 px too (recorded in round 1); keeping it on the fraction row would read better.
+- [Minor] exercises.json:271 — in the quoted chain the pieces that begin with `=` lack the relation space on their left (`P : U= 60 W : 163 V= 0.37 A`); `${} = …$` would even it out.
+- [Minor] solutions.md:228 — the sentence after the boxed value reads as a fragment (recorded in round 1).
 
 ## Checked
-- Delta (reflow). The packet's inventory has no phone-width capture of the opened exercise solutions, so own captures were made from preview/en/fy7-7.html (built after the content) with every exercise solution open at 390 and 1280 px: every solution step holding a display formula, opened at full size (sheets S7-390-1.png, S7-1280-1.png in the session scratchpad).
-- Measured at both widths: no formula wider than its card, no page overflow, no KaTeX error, no raw LaTeX; no row starts inside a number, a power of ten or a unit. One punctuation orphan found by scanning the built page: fy7-7-L2-07.
-- Reflow: L1-01, L2-01, L2-02, L2-04, L2-06 and the task text of L2-07 at both widths.
-- New exercise fy7-7-L2-08 in full at 390 px (N7-390-1/2.png) and 1280 px (N7-1280-1.png): source line (PhET link, reading date), parts a)–d), answer box, every solution step. Typography and English are sound; $e_\text{ka}$ follows the chapter's own notation.
+- Delta (queue 5d reflow), round 2. The packet's inventory has no phone capture of the opened solutions, so own captures were made from preview/en/fy7-7.html (rebuilt with build.py) with every solution open at 360, 390 and 1280 px; the 390 and 1280 px sheets of every solution step and task text the diff touches were read at full size (S-Efy7-7-390-*.png, S-Efy7-7-1280-*.png in the session scratchpad).
+- Measured at all three widths over the whole exercise section: no formula wider than its card or scrolling in its box (so nothing of docs/clipped-formulas.tsv clips on this page in these captures), no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line.
+- Source against main: the same tokens in the same order outside any new exercise; every new row starts with a relation, a sign or between whole quantities; the older aligned blocks are unchanged.
+- Round-1 findings resolved: the quotation of fy7-7-L2-07 is inline again and closes with `.”` on the text line at 360, 390 and 1280 px; `= 2.254 · 10⁹ W / 8358 · 10⁶ W · 100 %` / `= 26.97 %` and the deviation `= … · 100 %` / `= 2.44 %` now start every row with the relation.
+- 390 and 1280 px: L1-01, L2-01, L2-02, L2-04, L2-06, L2-07. New exercise fy7-7-L2-08 in full at 390 px (N-fy7-7-390-1/2.png): source line with the PhET link and reading date, parts a)–d), answer box, every solution step; typography and English sound.
+- Hash identical at the end.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

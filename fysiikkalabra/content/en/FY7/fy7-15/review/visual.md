@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e0999b4870d002c8
+CONTENT-HASH: e83e577c133aa895
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] inquiry.json:411 — in the quoted chain the pieces after the first begin with `=` without its left relation space (`· 0.25= 50 W/m²` at 1280 px); readable, `${} = …$` would even it out.
 
 ## Checked
-- batch delta review: queue 5d reflow. The content changed during the review (commit 7e4ba8466f); this report judges the new hash: the page was rebuilt (build.py) and recaptured. review/shots is stale for this hash and has no phone captures of opened states, so every aligned formula of inquiry.json and exit-ticket.json (2 rendered blocks) was captured from preview/en/fy7-15.html at 390 px and 1280 px with every box, hint, solution and choice feedback forced open, and each capture was read; box overflow measured at 390 and 1280 px. The find-the-error task's chain went back inline, identical to the version passed before 5d (compared in git; its pieces measured inside the card at 360 and 390 px). Figures and the formula-name / teacher-figure categories were not re-judged.
+- batch delta review: queue 5d reflow, round 2. Page rebuilt (build.py fy7-15) and every changed formula of inquiry.json captured from preview/en/fy7-15.html at 360, 390 and 1280 px with every box, hint, solution and choice feedback forced open; the 390 and 1280 px sheets were read at full size. The quoted Malus chain is inline, three adjacent formulas that wrap at the relations at 360 and 390 px, quotation marks on the text lines; gradient and I2 blocks are two aligned rows. Measured at all three widths: no formula wider than its box, no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line (the closing full stop or comma is set inside the block). Source compared with main: the same tokens in the same order; every new row starts with a relation, a sign or between whole quantities. Hash identical at the end. Figures were not re-judged.

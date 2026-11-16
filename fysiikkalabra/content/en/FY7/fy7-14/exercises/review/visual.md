@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 5455ffb1558123e0
+CONTENT-HASH: ea275bd02e53abc0
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] solutions.md:64 fy7-14-L1-07 Reasonableness — the opening bracket is left alone at the end of a line ("for the same wavelength (" and the formula on the next line), at 390 and at 1280 px, because the inline formula does not wrap — drop the brackets: "... for the same wavelength, $570\,\text{nm} : (4 \cdot 1.33) = 107\,\text{nm}$, because ...".
+- none
 
 ## Checked
-- Delta (queue 5d reflow). Hash identical at the end.
-- Method: the packet's inventory has no phone capture of the exercises, so the reviewer captured each changed solution step from the current preview page (preview/en) at 390 px and at 1280 px, every solution open, and opened them at full size. check_layout.py at 360 and 390 px (open state): no clipped formula on this page.
-- The content changed during the review (hash b90956e74ff40fe4 at the start; commit 7e4ba8466f put the bracketed formula of line 64 back inline); captures retaken, review redone for the hash above.
-- 390 and 1280 px: 14-L1-07 (64), L2-02 (108), L2-03 (118), L2-07 (160), L3-01 (181). Two rows on a phone, one row wide; colon division with its bracket whole; nothing clipped.
+- Delta (queue 5d reflow), round 2. The packet's inventory has no phone capture of the opened solutions, so own captures were made from preview/en/fy7-14.html (rebuilt with build.py) with every solution open at 360, 390 and 1280 px; the 390 and 1280 px sheets of every solution step and task text the diff touches were read at full size (S-Efy7-14-390-*.png, S-Efy7-14-1280-*.png in the session scratchpad).
+- Measured at all three widths over the whole exercise section: no formula wider than its card or scrolling in its box (so nothing of docs/clipped-formulas.tsv clips on this page in these captures), no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line.
+- Source against main: the same tokens in the same order outside any new exercise; every new row starts with a relation, a sign or between whole quantities; the older aligned blocks are unchanged.
+- Round-1 Polish resolved: in fy7-14-L1-07 the bracketed formula is inline and the opening bracket stays with it at 390 and 1280 px.
+- 390 and 1280 px: L1-07, L2-02, L2-03, L2-07, L3-01: two rows on a phone, one at 1280 px; the colon division keeps its bracket whole.
+- Hash identical at the end.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

@@ -1,11 +1,12 @@
-VERDICT: FAIL
-CONTENT-HASH: d01fdd009e97a42c
+VERDICT: PASS
+CONTENT-HASH: e4e94f09bf8bc686
 
 ## Blocking
-- [Critical] inquiry.json, Example 2 "Find the error" task (She writes …) — the follow-up re-break merged three separate equations into one chain: the page shows `qU = mv²v` / `= √(qU/m)` / `= 4.38 · 10⁵ m/sr` / `= mv/(qB)` / `= 4.57 cm` at 390 and 1280 px. The symbols `v` and `r` that start the second and third equations are glued to the end of the previous rows ("mv²v", "m/sr"), so the notation is broken and the student's three steps read as one false equality. Fix: one equation per group, e.g. `\begin{aligned} qU &= mv^2 \\[6pt] v &= \sqrt{\frac{qU}{m}} \\ &= 4.38 \cdot 10^{5}\,\text{m/s} \\[6pt] r &= \frac{mv}{qB} \\ &= 4.57\,\text{cm} \end{aligned}` (or the version before 7e4ba8466f). Check fi and fi-easy for the same merge.
+- none
 
 ## Polish
-- [Minor] solution, `v = √(…)` (untouched): the numerator breaks before `· 20 000 V`, right-aligned under the radical.
+- [Minor] inquiry.json:362 — on a phone `B` stands alone on the first row above `= fraction`; correct and readable, the wide fraction leaves no room beside it.
+- [Minor] inquiry.json:362 (untouched) — the numerator under the root still breaks before `· 20 000 V`.
 
 ## Checked
-- batch delta review: queue 5d reflow. The content changed during the review (commit 7e4ba8466f); this report judges the new hash: the page was rebuilt (build.py) and recaptured. review/shots is stale for this hash and has no phone captures of opened states, so every aligned formula of inquiry.json and exit-ticket.json (3 rendered blocks) was captured from preview/en/fy7-2.html at 390 px and 1280 px with every box, hint, solution and choice feedback forced open, and each capture was read; box overflow measured at 390 and 1280 px. Figures and the formula-name / teacher-figure categories were not re-judged.
+- batch delta review: queue 5d reflow, round 2. Page rebuilt (build.py fy7-2) and every changed formula of inquiry.json captured from preview/en/fy7-2.html at 360, 390 and 1280 px with every box, hint, solution and choice feedback forced open; the 390 and 1280 px sheets were read at full size. Round-1 Critical resolved: the "She writes" block of Example 2 is again three separate equations (qU, v, r), each with its own left side, identical to main; seen at 390 and 1280 px. Measured at all three widths: no formula wider than its box, no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line (the closing full stop or comma is set inside the block). Source compared with main: the same tokens in the same order; every new row starts with a relation, a sign or between whole quantities. Hash identical at the end. Figures were not re-judged.
