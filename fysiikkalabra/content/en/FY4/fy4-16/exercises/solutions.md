@@ -215,7 +215,7 @@ v alas
 **Conversions:** We calculate in newtons and finally change to kilonewtons: $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $E_{\text{k}0} = \tfrac12\cdot 70.0\,\text{kg}\cdot(50.0\,\text{m/s})^2 = 87\,500\,\text{J}$ and $E_\text{k} = \tfrac12\cdot 70.0\,\text{kg}\cdot(6.0\,\text{m/s})^2 = 1260\,\text{J}$, so $F_\text{d} = 70.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 + \dfrac{87\,500\,\text{J} - 1260\,\text{J}}{60.0\,\text{m}} = 686.7\,\text{N} + 1437.3\,\text{N} = 2124\,\text{N} \approx 2.12\,\text{kN}$
 **Answer:** $2.12\,\text{kN}$ upwards, three significant figures like the mass $70.0\,\text{kg}$, the speed $50.0\,\text{m/s}$ and the distance $60.0\,\text{m}$.
-**Reasonableness:** The air resistance is about three times the weight $687\,\text{N}$, so the net force points up and the skydiver slows down, as it should. From the equation of motion the deceleration is $(2124 - 687)\,\text{N} : 70.0\,\text{kg} \approx 20.5\,\text{m/s}^2$, and then $\tfrac12(v_1^2 - v_2^2) : a \approx 1232 : 20.5 \approx 60\,\text{m}$, as in the problem.
+**Reasonableness:** The air resistance is about three times the weight $687\,\text{N}$, so the net force points up and the skydiver slows down, as it should. From the equation of motion the deceleration is $$\begin{aligned}&(2124 - 687)\,\text{N} : 70.0\,\text{kg} \\ &\approx 20.5\,\text{m/s}^2\end{aligned}$$, and then $\tfrac12(v_1^2 - v_2^2) : a \approx 1232 : 20.5 \approx 60\,\text{m}$, as in the problem.
 
 ## fy4-16-L1-06
 **Find:** how the reading of the scale compares with the reading when a lift moving upwards slows down to stop.
