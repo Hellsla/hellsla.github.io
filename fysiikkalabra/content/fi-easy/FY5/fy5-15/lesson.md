@@ -424,7 +424,9 @@ Ulkoilmakonsertissa desibelimittari näyttää $96\,\text{dB}$, kun se on $10\,\
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Mittarin lukema eli intensiteettitaso on $L = 96\,\text{dB}$, etäisyys $r = 10\,\text{m}$ ja kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$. Kysytään intensiteettiä $I$ ja lähteen äänitehoa $P$.
+**Tunnetut ja kysytty.** Mittarin lukema eli intensiteettitaso on $L = 96\,\text{dB}$, etäisyys $r = 10\,\text{m}$ ja kuulokynnys $I_0 = 1{,}0 \cdot 10^{-12}\,\text{W/m}^2$.
+
+Kysytään intensiteettiä $I$ ja lähteen äänitehoa $P$.
 
 <!-- vaihe -->
 

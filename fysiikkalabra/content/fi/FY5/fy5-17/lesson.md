@@ -378,7 +378,9 @@ Seismografiasema rekisteröi maanjäristyksen. Aseman kello näytti P-aallon saa
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $v_\text{P} = 6{,}0\,\text{km/s}$, $v_\text{S} = 3{,}5\,\text{km/s}$, saapumisajat $12\,\text{h}\ 04\,\text{min}\ 18\,\text{s}$ ja $12\,\text{h}\ 04\,\text{min}\ 43\,\text{s}$. Kysytään etäisyyttä $d$ järistyksen alkukohtaan.
+**Tunnetut ja kysytty.** $v_\text{P} = 6{,}0\,\text{km/s}$, $v_\text{S} = 3{,}5\,\text{km/s}$, saapumisajat $12\,\text{h}\ 04\,\text{min}\ 18\,\text{s}$ ja $12\,\text{h}\ 04\,\text{min}\ 43\,\text{s}$.
+
+Kysytään etäisyyttä $d$ järistyksen alkukohtaan.
 
 <!-- vaihe -->
 
