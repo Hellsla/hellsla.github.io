@@ -8,7 +8,7 @@ None.
 None.
 
 ## Checked
-- Delta (md-paragraphs in solutions.md): opened fi fy4-5 open-exercises-1280 parts 8 and 9 (the L1-07 and L1-08 solutions that were split) and read the diff. Each new paragraph holds one thought (answer, then the remark, then the limiting case); spacing is even and matches other solution blocks; nothing clipped; formulas and figure around intact. Words unchanged. Hash re-run: unchanged.
+- Delta (md-paragraphs): opened shots/sol-fy4-5-L1-06-390.png and sol-fy4-5-L1-08-390.png in full. L1-06: Mallivastaus splits into "three forces, weight and normal force equal, friction slows" and "no motion force, velocity not a force, normal force stays", two separate things. L1-08: the answer, the general "N is not always G" with the horizontal/downward cases, and the zero-normal-force limit each get a paragraph. Spacing even, nothing clipped, formulas intact. Words unchanged. Hash re-run before writing: unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
