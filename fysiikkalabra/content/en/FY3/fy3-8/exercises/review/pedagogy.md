@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cd25322f12bff34e
+CONTENT-HASH: e280ca9270616f82
 SCOPE: delta added-exercise from c8fd8fdeae438699 base 5453544b2abc
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. fy3-8-L1-09 sits close to L1-01 (steel gutter, same formula); it adds the MAFY lookup, which is the point, so it is acceptable. Its hint names the table, good.
-2. Earlier polish still open: no task uses l = l0(1 + alpha dT) for the length after heating or cooling.
+- a) depends on a live page (91 vs 115.8 mm); the solution handles this well. Optional: tell the student which of the two values to prefer.
 
 ## Checked
-- L1-09: level 1 (one formula, one lookup); situation then question; solution symbolic first, units, reasonableness check; +-4 % tolerance explained.
-- L2-09: graph reading plus slope plus rearrangement is level 2; the figure gives start and end points, no alpha or material; description equals the picture; the solution says how the graph is read; tolerance matches grid reading.
-- Set mix: graph/data task fits the data-task goal; no repeat of the worked example.
+- fy3-8-L2-10 is level 2: situation first, questions in parts a-d, a numeric answer field for one part, source given with a read date.
+- Fits the slot's goals and the set's mix (data/experiment/reasoning); it does not repeat the worked example or another exercise.
+- The solution is stepwise (given, find, principle, formula, conversions, substitution, reasonableness) and the open parts have model answers.
+- Source-based task fulfils the teacher's brief: the source is interpreted, the lesson's formula is applied, the model's limits are judged.
+- The language version matches the English/Finnish content; easy Finnish has short sentences and glossed terms (checked in the packet).
+- Phone: calculations are in short aligned lines; I did not open captures (the new exercise is not in them).
