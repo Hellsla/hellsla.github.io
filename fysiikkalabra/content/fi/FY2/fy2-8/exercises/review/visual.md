@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 848b37994704cca1
+CONTENT-HASH: cef163f17e81a48e
+SCOPE: delta, solutions.md only, L2-11 (export values now three separate "±N MW" items instead of the arrow chain)
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy2-8-L2-10/L2-11 Johtopäätös — a), d), e) run together in one block; separate paragraphs would read better.
-- [Minor] fy2-8-L2-11 table — 'noin 2590' wraps to two lines in a narrow cell; write 'ca 2590' or widen.
-- [Minor] fy2-8-L2-11 text — straight quotes around Tänään; use Finnish quotes ”Tänään”.
+- none
 
 ## Checked
-Delta: opened fy2-8-open-exercises-L2-1280-12.png, -14.png, -15.png (L2-10 table, L2-11 table and solution, Johtopäätös). Links target=_blank rel=noopener with read dates; decimal commas, units upright, nothing clipped. L3-06 read in the diff only.
+Delta: diff read in source (each unit keeps number, sign and unit; every number is LaTeX with \,\text{MW}); the formula is now short enough to wrap at 360 px as the CI finding required (check_layout 360 px was run by the developer; I did not re-measure). Opened content/fi/FY2/fy2-7/review/shots/fy2-7-open-exercises-L2-1280-14.png and fy2-8-open-exercises-L2-1280-16.png (1280 px) to see the layout survived: solutions render, KaTeX fine, no clipping. Hash re-run at the end: cef163f17e81a48e (now cef163f17e81a48e).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

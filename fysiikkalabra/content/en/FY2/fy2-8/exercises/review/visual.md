@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 568196a36e79ad97
-SCOPE: delta answers,comments,levels,numbers,structure,typography,wording from c58324be388ede19 base 432a19368f4c
+CONTENT-HASH: 09e49c1d1adb4b79
+SCOPE: delta, solutions.md only, L2-11 (export values now three separate "±N MW" items instead of the arrow chain)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] 8-19 / 8-20 — the quotation marks open with a closing mark (”lifecycle carbon intensity”, ”Today”) — use “…”.
-- [Minor] 8-19 answer lists c) before b) — order b, c.
+- none
 
 ## Checked
-- Delta review. Opened fy2-8-open-exercises-L2-1280-11 to -18: new 8-19 (OWID + Fingrid links visible, target=_blank, accessed 16 November 2026 in words; wide 17-row table fits) and 8-20 (Fingrid link, date in words); solutions rows aligned, fractions and subscripts legible.
-- Hash at start and end: 568196a36e79ad97.
+Delta: diff read in source (each unit keeps number, sign and unit; every number is LaTeX with \,\text{MW}); the formula is now short enough to wrap at 360 px as the CI finding required (check_layout 360 px was run by the developer; I did not re-measure). Opened content/fi/FY2/fy2-7/review/shots/fy2-7-open-exercises-L2-1280-14.png and fy2-8-open-exercises-L2-1280-16.png (1280 px) to see the layout survived: solutions render, KaTeX fine, no clipping. Hash re-run at the end: 09e49c1d1adb4b79 (now 09e49c1d1adb4b79).
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
