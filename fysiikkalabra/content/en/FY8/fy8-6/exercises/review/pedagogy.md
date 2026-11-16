@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d3400f5728b0c96a
-Mode: delta (round 1)
+CONTENT-HASH: 73724f23756ef0b4
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- exercises.json:121 fy8-6-L2-04 question "left in the phosphor as internal energy": question last and unambiguous, level-2 demand unchanged.
-- solutions.md:83-89 Asked, Principle and Reasonableness use the task's term; the principle (energy conservation, difference of photon energies) is still explained, no step dropped.
-- No leftover "as heat" in exercises.json or solutions.md; numbers, answer and tolerance untouched.
-- English of the changed sentences is correct.
-- Hash identical at start and end.
+- L1 and L2 Vastaus: "usually about 0,1 V smaller" now "slightly smaller; in this chapter's data about 0,1 V": the claim matches what the data show and no longer overgeneralises; the student's reasoning about Salla's cancelling offset still follows.
+- Method: diff in context.

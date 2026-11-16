@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8c105b85746eef7d
-Mode: delta (round 1)
+CONTENT-HASH: ac413b952791b551
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- exercises.json:121 fy8-6-L2-04 question "jää sisäenergiaksi yhtä fotonia kohti": the question is still its own last sentence, unambiguous, same level-2 demand (two photon energies, a difference, a unit conversion).
-- solutions.md:83–89 Kysytty, Periaate and Järkevyys use the same term as the task; the principle (energy conservation, difference of the photon energies stays in the phosphor) is still explained, no step dropped.
-- No leftover "lämmöksi" in exercises.json or solutions.md; numbers, answer and tolerance untouched.
-- Finnish of the changed sentences is correct.
-- Hash identical at start and end.
+- L1 and L2 Vastaus: "usually about 0,1 V smaller" now "slightly smaller; in this chapter's data about 0,1 V": the claim matches what the data show and no longer overgeneralises; the student's reasoning about Salla's cancelling offset still follows.
+- Method: diff in context.
