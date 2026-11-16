@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 77d121218078612f
-SCOPE: delta added-exercise from aa0d1a01b2d22233 base 8f23aa7ae3bd
+CONTENT-HASH: 47fefe6e403c8a87
 
 ## Blocking
 - none
@@ -9,9 +8,7 @@ SCOPE: delta added-exercise from aa0d1a01b2d22233 base 8f23aa7ae3bd
 - none
 
 ## Checked
-- Added exercises L2-09 (fi-easy, FY7 fy7-8): task and solution cards at 390 px with solutions open (rendered from preview/fi-easy/fy7-8.html), long Sijoitus chains and aligned rows, decimal comma, units, no red KaTeX, no overflow.
-- The figure(s) these tasks show, at 390 px (readable crop, enlarged where a label was in doubt): axes, units, ticks, data points versus line, label placement, alt text against the image.
-- Hash identical at start and end.
+- Delta: the L2-04 solution, rendered from the preview at 390 px with the solution opened. The formula is now a display aligned block of two rows (0,80 Ω · (2,5 A)² on the first, = 5,0 W on the second); numbers, signs and units unchanged and in the same order. Block width equals its scroll width (no clipping, no page overflow at 390 px). A capture image of the block itself was not obtained (measured by script instead).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

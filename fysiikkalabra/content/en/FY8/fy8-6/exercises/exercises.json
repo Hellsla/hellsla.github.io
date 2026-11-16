@@ -118,7 +118,7 @@
     {
       "id": "fy8-6-L2-04",
       "level": 2,
-      "text": "A white LED contains a blue LED whose photons have the wavelength $450\\,\\text{nm}$. It is covered by a phosphor that absorbs a blue photon and emits by fluorescence a yellow photon whose wavelength is $560\\,\\text{nm}$.\n\nUse the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.\n\nHow much energy per photon is left in the phosphor as heat? Give the answer in electronvolts.",
+      "text": "A white LED contains a blue LED whose photons have the wavelength $450\\,\\text{nm}$. It is covered by a phosphor that absorbs a blue photon and emits by fluorescence a yellow photon whose wavelength is $560\\,\\text{nm}$.\n\nUse the values $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, $c = 2.998 \\cdot 10^8\\,\\text{m/s}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$.\n\nHow much energy per photon is left in the phosphor as internal energy? Give the answer in electronvolts.",
       "answer": 0.541,
       "unit": "eV",
       "tolerance": 0.02

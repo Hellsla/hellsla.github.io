@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: eba9924ba952e4f3
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 90f7ef37fb4a112f
 
 ## Blocking
 - none
@@ -9,4 +8,5 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+- Diff since round 2: only the unit in the solutions.md fy8-s3 a) table header, now a fraction (cm^2 over min); same unit, no other change.
+- The fraction renders as a unit header like the neighbouring columns; solution steps, answers and rubric unchanged, so the earlier PASS stands.

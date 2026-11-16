@@ -315,4 +315,4 @@ Lämmennyt maanpinta säteilee infrapunaa. Hiilidioksidi- ja vesihöyrymolekyyli
 - Kuuma kiinteä kappale antaa jatkuvan spektrin. Kuuma ohut kaasu antaa emissiospektrin, jossa on erillisiä kirkkaita viivoja. Kaasun läpi kulkenut valkoinen valo antaa absorptiospektrin. Sen tummat viivat ovat samoilla aallonpituuksilla kuin osa emissioviivoista.
 - Atomin elektroniverho voi olla vain tietyissä energiatiloissa. Siirtymässä syntyvän tai absorboituvan fotonin energia on tilojen erotus: $hf = E_\text{y} - E_\text{a}$ ja $\lambda = \tfrac{hc}{E_\text{y} - E_\text{a}}$.
 - Jokaisella alkuaineella on omat viivansa. Spektristä voi siis tunnistaa, mitä alkuaineita on valonlähteessä tai valon matkalla olevassa kaasussa.
-- Fluoresenssissa aine absorboi lyhytaaltoista valoa ja lähettää pidempiaaltoista valoa, koska osa energiasta muuttuu lämmöksi.
+- Fluoresenssissa aine absorboi lyhytaaltoista valoa ja lähettää pidempiaaltoista valoa, koska osa energiasta muuttuu sisäenergiaksi.

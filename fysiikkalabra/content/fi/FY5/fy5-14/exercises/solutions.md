@@ -36,7 +36,7 @@
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja taajuus hertseinä.
 **Sijoitus:** $f = 415\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{340\,\text{m/s} + 15{,}0\,\text{m/s}} = 415\,\text{Hz} \cdot \dfrac{340}{355} = 397{,}46\,\text{Hz}$
 **Vastaus:** $397\,\text{Hz}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
-**Järkevyys:** Taajuus laskee, koska lähde loittonee. Auton nopeus on noin $4{,}4\,\%$ äänen nopeudesta, ja taajuus laskee noin $\tfrac{415 - 397}{415} \approx 4{,}2\,\%$, eli muutos on samaa kokoluokkaa kuin nopeuksien suhde.
+**Järkevyys:** Taajuus laskee, koska lähde loittonee. Auton nopeus on noin $4{,}4\,\%$ äänen nopeudesta, ja taajuus laskee noin $\tfrac{415 - 397}{415} \approx 4{,}3\,\%$, eli muutos on samaa kokoluokkaa kuin nopeuksien suhde.
 
 ## fy5-14-L1-05
 **Kysytty:** kunkin äänen luokka: infraääni, kuultava ääni tai ultraääni
@@ -75,7 +75,7 @@ Väite 5 on tosi. Ohitushetkellä taajuus laskee. Loittonevan auton takana aallo
 **Kaava:** $f = \dfrac{v_\text{i}}{\lambda_\text{i}}$ ja $\lambda_\text{v} = \dfrac{v_\text{v}}{f}$
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja aallonpituus metreinä.
 **Sijoitus:** $f = \dfrac{340\,\text{m/s}}{0{,}850\,\text{m}} = 400\,\text{Hz}$ ja $\lambda_\text{v} = \dfrac{1480\,\text{m/s}}{400\,\text{Hz}} = 3{,}70\,\text{m}$
-**Vastaus:** $3{,}70\,\text{m}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
+**Vastaus:** $3{,}70\,\text{m}$, kolme merkitsevää numeroa kuten lähtötiedoissa. Laatikkoon kelpaa $3{,}70$ tai $3{,}7$, koska ne ovat sama luku.
 **Järkevyys:** Ääni kulkee vedessä $\tfrac{1480}{340} \approx 4{,}4$ kertaa nopeammin kuin ilmassa, ja samalla taajuudella aallonpituus kasvaa samassa suhteessa: $0{,}850\,\text{m} \cdot 4{,}35 \approx 3{,}7\,\text{m}$.
 
 ## fy5-14-L2-03
@@ -183,7 +183,13 @@ $\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30{,}0
 **Aineiston käsittely:** Taulukon suurin muutos on $\Delta f = 2{,}47\,\text{kHz}$ hetkellä $t = 0{,}20\,\text{s}$.
 **Kaava:** $f = f_0 \cdot \dfrac{v + v_\text{v}}{v - v_\text{v}}$, josta $\Delta f = f - f_0 = f_0 \cdot \dfrac{2 v_\text{v}}{v - v_\text{v}}$ ja $v_\text{v} = \dfrac{v \, \Delta f}{2 f_0 + \Delta f}$
 **Muunnokset:** $\Delta f = 2{,}47\,\text{kHz} = 2470\,\text{Hz}$ ja $f_0 = 4{,}00\,\text{MHz} = 4\,000\,000\,\text{Hz}$.
-**Sijoitus:** Nimittäjä on $2 f_0 + \Delta f = 8\,000\,000\,\text{Hz} + 2470\,\text{Hz} = 8\,002\,470\,\text{Hz}$.
+**Sijoitus:** Nimittäjä on $$
+\begin{aligned}
+2 f_0 + \Delta f &= 8\,000\,000\,\text{Hz} \\
+&+ 2470\,\text{Hz} \\
+&= 8\,002\,470\,\text{Hz}
+\end{aligned}
+$$.
 $\begin{aligned} v_\text{v} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\,002\,470\,\text{Hz}} \\ &= 0{,}4753\,\text{m/s} \end{aligned}$
 **Vastaus:** $0{,}475\,\text{m/s}$, kolme merkitsevää numeroa kuten taajuuden muutoksessa.
 **Järkevyys:** Nopeus on paljon pienempi kuin äänen nopeus, joten $v_\text{v} \approx \tfrac{v \, \Delta f}{2 f_0} = 0{,}4755\,\text{m/s}$, mikä poikkeaa tuloksesta alle $0{,}1\,\%$. Yhden siirtymän tulos olisi $\tfrac{v \, \Delta f}{f_0} \approx 0{,}95\,\text{m/s}$, kaksinkertainen. Alle metrin sekunnissa oleva huippunopeus on uskottava verisuonessa.
@@ -208,7 +214,7 @@ $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,
 **Kaava:** $f_n = n f_1$
 **Muunnokset:** Ei tarvita: taajuudet luetaan hertseinä.
 **Sijoitus:** $f_7 = 7 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$
-**Vastaus:** $1400\,\text{Hz}$, kolme merkitsevää numeroa kuten kuvaajasta luettu perustaajuus.
+**Vastaus:** $1400\,\text{Hz}$ eli $1{,}40 \cdot 10^{3}\,\text{Hz}$, kolme merkitsevää numeroa kuten kuvaajasta luetussa perustaajuudessa $200\,\text{Hz}$.
 **Järkevyys:** Seitsemäs harmoninen on viidettä piikkiä $1000\,\text{Hz}$ korkeammalla: $1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$, koska piikkien väli on $200\,\text{Hz}$.
 
 ## fy5-14-L2-08
@@ -217,3 +223,56 @@ $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,
 **Periaate:** Huojuntataajuus on taajuuksien erotus, $f_\text{H} = |f_x - 523\,\text{Hz}|$, ja se on huojuntajakson käänteisluku. Erotus ei kerro, kumpi taajuus on suurempi, joten puoli päätellään vahasta: se laskee $f_x$:ää. Jos erotus kasvaa, $f_x$ on jo alempana kuin $523\,\text{Hz}$. Jos erotus pienenee, $f_x$ on ylempänä.
 **Kuvaajan lukeminen:** Äänen voimakkuus on suurimmillaan hetkillä $0$, $0{,}25\,\text{s}$, $0{,}50\,\text{s}$, $0{,}75\,\text{s}$ ja $1{,}00\,\text{s}$. Huojuntajakso on $T_\text{H} = 0{,}25\,\text{s}$.
 **Mallivastaus:** Huojuntataajuus on $f_\text{H} = \dfrac{1}{0{,}25\,\text{s}} = 4\,\text{Hz}$, joten $f_x = 523\,\text{Hz} \pm 4\,\text{Hz}$ eli $519\,\text{Hz}$ tai $527\,\text{Hz}$. Vaha laski taajuutta $f_x$ ja huojunta nopeutui eli erotus kasvoi. Se on mahdollista vain, jos $f_x$ oli alle $523\,\text{Hz}$. Vastaus on $519\,\text{Hz}$. Tarkistus: jos $f_x$ olisi ollut $527\,\text{Hz}$, vaha olisi tuonut sen lähemmäs $523\,\text{Hz}$:ää ja huojunta olisi hidastunut.
+
+## fy5-14-L2-09
+**Annettu:** taajuudet $f_1 = 432\,\text{Hz}$ ja $f_2 = 440\,\text{Hz}$, äänen nopeus ilmassa $v = 343\,\text{m/s}$. Kohtien b)–d) tiedot ja väitteet otetaan aineistosta (Yle, julkaistu 25. tammikuuta 2020, luettu 15. marraskuuta 2026).
+**Kysytty:** a) aallonpituudet $\lambda_1$ ja $\lambda_2$ metreinä, b) taajuuksien ja aallonpituuksien vertailu ja eron fysikaalinen merkitys, c) artikkelin kertomat väitteet, d) väitteiden perusteiden arviointi ja luotettava tutkimus
+**Periaate:** Ääni on ilmassa etenevä aalto, joten sille pätee aaltoliikkeen perusyhtälö $v = f\lambda$. Äänen nopeus riippuu väliaineesta eikä taajuudesta. Molemmat äänet etenevät siksi samalla nopeudella, ja suurempaa taajuutta vastaa lyhyempi aallonpituus.
+**Kaava:** $v = f\lambda$, josta $\lambda = \dfrac{v}{f}$
+**Muunnokset:** Ei tarvita: $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$, joten nopeuden ja taajuuden osamäärän yksikkö on metri.
+**Sijoitus:** $\lambda_1 = \dfrac{343\,\text{m/s}}{432\,\text{Hz}} = 0{,}79398\,\text{m}$ ja $\lambda_2 = \dfrac{343\,\text{m/s}}{440\,\text{Hz}} = 0{,}77955\,\text{m}$
+**Vastaus:** $0{,}794\,\text{m}$ taajuudella $432\,\text{Hz}$ ja $0{,}780\,\text{m}$ taajuudella $440\,\text{Hz}$, kolme merkitsevää numeroa kuten lähtötiedoissa.
+**Järkevyys:** Takaisin laskettuna $$
+\begin{aligned}
+&0{,}794\,\text{m} \cdot 432\,\text{Hz} \\
+&\approx 343\,\text{m/s}
+\end{aligned}
+$$. Matalamman äänen aalto on pidempi, kuten perusyhtälö vaatii, ja vajaan metrin aallonpituus sopii kuuloalueen keskivaiheen äänelle.
+**Kohta b):** Taajuuksien ero on $$
+\begin{aligned}
+\Delta f &= 440\,\text{Hz} - 432\,\text{Hz} \\
+&= 8\,\text{Hz}
+\end{aligned}
+$$, eli $432\,\text{Hz}$ on noin $1{,}8\,\%$ matalampi kuin $440\,\text{Hz}$. Aallonpituuksien ero on $$
+\begin{aligned}
+\Delta\lambda &= 0{,}79398\,\text{m} - 0{,}77955\,\text{m} \\
+&\approx 0{,}014\,\text{m}
+\end{aligned}
+$$ eli $1{,}4\,\text{cm}$: matalamman äänen aalto on noin $1{,}9\,\%$ pidempi. Muutokset ovat vastakkaissuuntaiset, koska tulo $f\lambda = v$ pysyy samana.
+
+Eron kuulee: artikkelin mukaan harjaantunut korva erottaa jo $2\,\text{Hz}$:n eron, ja yhtä aikaa soidessaan äänet huojuisivat taajuudella $f_\text{H} = |f_1 - f_2| = 8\,\text{Hz}$. Musiikissa ero on silti pieni. Artikkelin mukaan $415\,\text{Hz}$ on lähes tasan puolisävelaskeleen verran alle $440\,\text{Hz}$:n, joten $8\,\text{Hz}$ on noin kolmannes puolisävelaskeleesta.
+
+Fysikaalisesti kumpikin on samanlainen tavallinen ääniaalto: sama väliaine, sama nopeus ja sama malli. Taajuudella $432\,\text{Hz}$ ei tapahdu mitään laadullista muutosta.
+
+Lisäksi hertsi perustuu sekuntiin, joka on ihmisten sopima yksikkö. Luku $432$ ei siksi ole luonnon ominaisuus: toisella ajan yksiköllä sama ääni saisi toisen lukuarvon.
+**Kohta c):** Artikkelin mukaan väitetään seuraavaa (omin sanoin tiivistettynä). Väitteet on jaettu kolmeen ryhmään.
+
+*Testattava vaikutus kuulijaan.* Monilla verkkosivuilla $432\,\text{Hz}$:n viritystasoa kuvataan rauhoittavaksi ja jopa parantavaksi.
+
+*Väite fysiikasta.* Viritystasoa kutsutaan luonnon omaksi taajuudeksi. Princen linkkaaman sivuston mukaan se on yhteydessä värispektriin ja chakroihin eli hindulaisen perinteen energiakenttiin, ja siihen viritetty musiikki olisi valon, ajan, aineen ja tietoisuuden jatke.
+
+*Lukumystiikka ja salaliittoteoria.* Väitteitä tuetaan lukuleikeillä: $103 + 107 + 109 + 113 = 432$ on neljän peräkkäisen alkuluvun summa, ja $432 \cdot 2 = 864$, kun vuorokaudessa on $86\,400\,\text{s}$. Taajuutta $440\,\text{Hz}$ sanotaan vastaavasti aivojen, ajatusten ja manipuloinnin taajuudeksi. Lukuisista viritystasojen salaliittoteorioista tunnetuin lienee natsiteoria, jonka mukaan $440\,\text{Hz}$ on natsien propagandaa, joka levittää pelkoa ja aggressiota.
+
+Artikkelin oma arvio on, ettei väitteille ole tieteellisiä perusteita.
+**Kohta d):** Arvioidaan jokainen kohdan c) ryhmä erikseen.
+
+Fysiikkaa koskeva väite on fysikaalisesti virheellinen. Ääni on väliaineen mekaaninen paineaalto ja valo sähkömagneettinen aalto, jonka taajuus on noin $10^{12}$-kertainen. Siksi $432\,\text{Hz}$:n ääni ei ole valon tai värien jatke, eikä fysiikka tunne mitattavia energiakenttiä, joihin se kytkeytyisi.
+
+Kuulijaan kohdistuva vaikutus on mahdollinen mutta osoittamaton. Musiikki voi rauhoittaa kuulijaa, mutta siitä ei seuraa, että juuri viritystaso vaikuttaisi. Se pitäisi näyttää mittauksilla.
+
+Lukumystiikka on liian pitkälle viety päätelmä: lukujen kauniista ominaisuuksista ei seuraa mitään terveydestä, ja kohdan b) mukaan lukuarvo riippuu yksikön valinnasta. Natsiteoria ei ole fysikaalinen väite lainkaan. Se on salaliittoteoria, jolle ei ole esitetty mitattavaa näyttöä, joten se kuuluu samaan ryhmään kuin lukumystiikka. Lisäksi viritystaso on artikkelin mukaan sopimus, joka on vaihdellut historiassa noin välillä $390\,\text{Hz}$–$460\,\text{Hz}$.
+
+Luotettavassa tutkimuksessa sama kappale soitetaan samalla voimakkuudella kummallakin viritystasolla, ja kuulijat arvotaan ryhmiin. Kuulija ja mittaaja eivät tiedä, kumpaa viritystä kuunnellaan. Mitattava suure, esimerkiksi syke, verenpaine tai stressikyselyn pistemäärä, päätetään etukäteen.
+
+Koehenkilöitä on niin paljon, että ero erottuu satunnaisvaihtelusta tilastollisesti, ja tulos vertaisarvioidaan ja toistetaan riippumattomissa ryhmissä.
+**Mallin ja aineiston rajat:** Äänen nopeus riippuu ilman lämpötilasta, joten aallonpituudet muuttuvat hieman lämpötilan mukana, taajuudet eivät. Aineisto on lehtiartikkeli, joka kuvaa väitteitä ja haastattelee muusikkoa. Se ei ole tutkimus, joten se ei yksin todista väitteitä oikeiksi eikä vääriksi.

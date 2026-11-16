@@ -45,4 +45,9 @@ M_sun = 1.99e30                                                    # mass of the
 a["fy5-6-L1-10"] = gam * M_sun / (0.5 * (147.1e9 + 152.1e9)) ** 2 * 1e3   # figure: r = 1,496·10¹¹ m: a = γM/r² = 5,934e-3 m/s² -> 5,93 mm/s²
 a["fy5-6-L1-11"] = gam * 7.346e22 / (1.840e6) ** 2   # MAFY: Moon M = 7,346·10²² kg, r = 1840 km: g = γM/r² = 1,448 m/s² -> 1,45
 a["fy5-6-L2-08"] = round(math.sqrt(5250 / 88), 1)                           # figure: Halley r_min = 88, r_max = 5250 milj. km: v1/v2 = sqrt(r2/r1) = 7,724 -> 7,7 (88 milj. km has two sig. figs; unrounded 7,724)
+# Queue 19 (teacher 2026-11-15), FY5-A1: NASA Planetary Fact Sheet, values read 15.11.2026 (a in 10⁶ km, T in d)
+nasa = {"Mercury": (57.9, 88.0), "Venus": (108.2, 224.7), "Earth": (149.6, 365.2), "Mars": (228.0, 687.0), "Jupiter": (778.5, 4331)}
+kep = {n: (T / 1e3) ** 2 / (a_ / 1e2) ** 3 for n, (a_, T) in nasa.items()}   # T²/a³ in (10³ d)²/(10⁸ km)³: 0,0399 0,0399 0,0398 0,0398 0,0398 (solution's table; a³ 0,194 … 471,8, T² 0,00774 … 18,76)
+M_kep = 4 * math.pi ** 2 / (gam * 0.0398 * (8.64e7) ** 2 / (1e11) ** 3)      # slope 0,0398 -> 2,97·10⁻¹⁹ s²/m³ -> M_sun = 1,99·10³⁰ kg (reasonableness check)
+a["fy5-6-L2-09"] = nasa["Earth"][1] * (nasa["Mars"][0] / nasa["Earth"][0]) ** 1.5   # d): T_Mars = T_E (a_M/a_E)^(3/2) = 365,2 d · 1,52406^1,5 = 687,12 d -> 687,1 d (NASA 687,0; with a_M = 227,9: 686,67 d)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

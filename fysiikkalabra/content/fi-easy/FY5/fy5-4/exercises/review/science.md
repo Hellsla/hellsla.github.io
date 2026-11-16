@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 77ea855d8210779a
+CONTENT-HASH: 652ff21dcc7142f6
 
 ## Blocking
 
 ## Polish
-- content/fi-easy/FY5/fy5-4/exercises/solutions.md:201, :285 — "Lähtökitka" is used alone in solutions that each open on their own button, so a student who opens only this solution never sees the term defined; the guardrail's "name it so where introduced, then lähtökitka" is met for the set as a whole (L2 solution at :113, L3-06 task text) — optionally write "lähtökitka (lepokitkan suurin arvo)" once in each.
 
 ## Checked
-- Diff only: "suurin lepokitka" replaced by "täysin kehittynyt lepokitka eli lähtökitka (lepokitkan suurin arvo)" or "lähtökitka" in the L3-06 task text and four solutions; no number, symbol, answer, unit or tolerance changed.
-- Terms match docs/physics-guardrails.md Friction (P8): lepokitka ≤ μ0 N kept in the principles ("Lepokitka on enintään μ0 N"), its greatest value μ0 N named lähtökitka, no liikekitka in the set.
-- Physics of each touched sentence still right: level curve, the limiting static friction toward the centre at the largest speed (:113, :201); banked curve, the limiting friction down the slope at the largest speed (:285); L3-06 condition "required friction not larger than lähtökitka μ0 N", limiting case F = μ0 N (:317).
-- Force-diagram descriptions unchanged apart from the name: the arrow lengths (one tenth of G for μ0 = 0,10; a little over half of G for μ0 ≈ 0,5) still fit the data.
-- Previous recomputations stand (L2-09 r = 75 m; L3-06 μ0 = 8000/(1200 · 9,81) = 0,68); the figures kuvaaja-a and kuvaaja-b are unchanged.
-- Hash 77ea855d8210779a (with --lang fi-easy) the same at start and end, equal to the packet's.
+- The hash was 652ff21dcc7142f6 at the start and at the end. I judged only the diff (solutions.md, the L2-07 Järkevyys and the L3-05 Mallivastaus perustelusta).
+- L2-07: I recomputed the numbers. a = 4,32 m/s² = 0,440 g, mg = 8,34 kN, and 7344 N / 8,34 kN = 0,881. No number changed.
+- L2-07: "Se vaatisi jo erittäin hyvän pidon" is correct for 0,88. It agrees with line 184 (0,92) and line 323 (dry asphalt 0,7–0,9).
+- L3-05: "Kitkan ei siis tarvitse antaa koko keskipisteeseen osoittavaa kokonaisvoimaa" is correct (N sin α + F cos α). The reference to work is gone.
+- Both sentences say the same as the Finnish version.

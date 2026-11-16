@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 013e48d43da3b877
-SCOPE: delta reflow from c04fbb632f3f8048 base d4ee68c800
+CONTENT-HASH: f8c07e8ba0e19ff7
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- delta reflow, en: no solution capture of this set opened; the reflowed blocks judged from the source diff only (rows broken at whole terms). Layout of the card around the blocks intact; no 390 px open-solution capture exists, so phone wrapping is judged by the build's rule only. Hash re-run at the end: unchanged.
+- Delta (en): coal heating value 24 → 29 MJ/kg in task L3-05 (shown as 11-21) and its solution, and in the Reasonableness of L2-02 (shown as 11-10).
+- Opened (the English lesson's review/shots): open-exercises-L2-1280-3 (11-10: Reasonableness with $2.9 \cdot 10^{7}\,\tfrac{\text{J}}{\text{kg}}$ inside its panel), open-exercises-L3-1280-7 (11-21 task text, part c with $29\,\tfrac{\text{MJ}}{\text{kg}}$; Given), -8 (Conversions $29\,\tfrac{\text{MJ}}{\text{kg}} = 29 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}$; part c chain aligned at the equals signs, $1.537 \cdot 10^{9}\,\text{kg} = 1.54 \cdot 10^{6}\,\text{t}$; answer box) and -9 (end of Answer with $1.5$ and $2.8$ million, Reasonableness).
+- Decimal points throughout, `\cdot`, upright stacked units; rounding 1.537 → 1.54 → 1.5 shown consistently; nothing clipped, the cards keep their order and spacing.
+- English unchanged apart from the numbers.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · English 4 · accessibility 4

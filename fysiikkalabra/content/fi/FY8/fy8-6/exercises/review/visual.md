@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 26b9b21509391153
-SCOPE: delta reflow from 29e493b0c24a1745 base cf5f907
+CONTENT-HASH: ac413b952791b551
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Delta round 4, calculation chains re-broken into aligned rows. Opened fy8-6 open-exercises-1280-1 (solution blocks, one-row and wrapped chains read cleanly, = aligned).
-- Kaava lines keep the equals sign in the first row; sentence marks sit inside the last row.
+- Delta: lämmöksi -> sisäenergiaksi, softened 0,1 V remark, Planck-constant answer. Captures opened (open-exercises-L2 parts, 1280 px): formulas render, no clipping or red KaTeX, text reads naturally.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

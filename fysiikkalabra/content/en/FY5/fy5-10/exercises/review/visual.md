@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a5be97017f850ea1
-SCOPE: delta added-exercise from d0e0aaa9ca173d93 base 81db4a6fd727
+CONTENT-HASH: 9fb56f569a24221e
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-10 — L2-08 solution's heading Kuvaajan lukeminen is right for a graph; no issue found beyond polish below.
+- [Minor] L1-06 solution has a 151-word paragraph (untouched; split it when next edited).
+- [Minor] L2-03 eq-chain 460 px against 272 px scrolls at 360 px; known/untouched.
 
 ## Checked
-- Delta of the two or three added exercises (en): 1280 px open-exercises 1/11 (L1-10 reasonableness) and L2 part 10 (L2-08 with the rope snapshot, solution open).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal point consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- own Playwright render of preview/en/fy5-10.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L3-04 at 360 and 1280 px opened where noted. Opened 10-3-04 at 360 and 1280.
+- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

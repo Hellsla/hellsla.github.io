@@ -253,7 +253,7 @@ E_\text{k} &= \tfrac{1}{2}\cdot 0.025\,\text{kg}\cdot(47.0\,\text{m/s})^2 \\
 \eta &= \frac{27.61\,\text{J}}{37.75\,\text{J}} = 0.731
 \end{aligned}
 ```
-**Answer:** $73\,\%$ of the stored energy changed into the kinetic energy of the arrow, two significant figures like the mass of the arrow $25\,\text{g}$. The rest, about $27\,\%$ or about $10\,\text{J}$, probably went into the kinetic energy of the spring and the string, vibration, sound and heat: the spring and the string move themselves and finally stop. The answer is based on the assumption that the graph is a line over the whole draw distance.
+**Answer:** $73\,\%$ of the stored energy changed into the kinetic energy of the arrow, two significant figures like the mass of the arrow $25\,\text{g}$. The rest, about $27\,\%$ or about $10\,\text{J}$, probably went into the kinetic energy of the spring and the string, vibration and sound, and finally the internal energy of the spring, the string and the air (which is transferred to the surroundings as heat): the spring and the string move themselves and finally stop. The answer is based on the assumption that the graph is a line over the whole draw distance.
 **Reasonableness:** The efficiency is below $100\,\%$, as it must be, and an efficiency above $70\,\%$ is usual for real crossbows. The speed is checked the other way round: if all of the $37.75\,\text{J}$ went to the arrow, its speed would be
 ```latex
 v = \sqrt{\dfrac{2\cdot 37.75\,\text{J}}{0.025\,\text{kg}}} = 55.0\,\text{m/s}

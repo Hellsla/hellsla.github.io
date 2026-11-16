@@ -145,7 +145,7 @@ In graph A the activity decreases steadily and is zero at the time $4.0\,\text{h
 **Formula:** $\dfrac{R}{R_0} = \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$, so $T_{1/2} = \dfrac{t \ln 2}{\ln (R_0 / R)}$, where $R_0$ and $R$ are the net pulse counts
 **Conversions:** a) The net pulse counts are $291 - 8 = 283$, $250 - 8 = 242$, $204 - 8 = 196$, $178 - 8 = 170$, $143 - 8 = 135$, $126 - 8 = 118$, $103 - 8 = 95$, $90 - 8 = 82$, $72 - 8 = 64$, $66 - 8 = 58$ and $51 - 8 = 43$ ($t = 0, 40, \ldots, 400\,\text{s}$). The unit of time is the second, like in the answer, so no other conversions are needed.
 **Substitution:** b) At the start $R_0 = 283$ and at $t = 320\,\text{s}$ $R = 64$. The ratio is $\tfrac{283}{64} = 4.42$, that is, slightly over two half-lives ($2^2 = 4$), and $64$ is about $23\,\%$ of $283$. Thus $T_{1/2} = \dfrac{320\,\text{s} \cdot 0.69315}{\ln 4.42} = \dfrac{221.8\,\text{s}}{1.4865} = 149.2\,\text{s}$
-**Answer:** $149\,\text{s}$, that is, about $150\,\text{s}$. The accuracy of an estimate from two points is about $\pm 8\,\%$, because the scatter of the net count $64$ is about $\sqrt{64} = 8$.
+**Answer:** $149\,\text{s}$, that is, about $150\,\text{s}$. The accuracy of an estimate from two points is about $\pm 8\,\%$: the scatter of the net count $64$ is about $\sqrt{64} = 8$, that is, relatively $\tfrac{8}{64} \approx 13\,\%$, and its effect on the half-life is this divided by $\ln 4.42 \approx 1.5$.
 **Reasonableness:** Half of the initial value is $\tfrac{283}{2} = 141.5$. In the table the net pulse count is $170$ at $120\,\text{s}$ and $135$ at $160\,\text{s}$, so the halving happens at about $150\,\text{s}$. This fits the result. The points are not exactly on the curve, because the pulse counts vary at random.
 
 ## fy8-9-L2-06

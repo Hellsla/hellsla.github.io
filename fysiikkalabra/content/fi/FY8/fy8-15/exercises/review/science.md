@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9174b3ccf25469b8
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: b01d8774ea628a16
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Word-level diff since origin/main of this part checked for physics: values, units and significant figures, definitions (gamma decay, beta atomic masses, Hubble time, w_R and effective dose scope, conservation of B and L, photon interactions, ITER and Onkalo facts), worked solutions recomputed where numbers changed; formulas identical across languages (check_i18n).
+- Delta only: solutions.md line 158 (Järkevyys), "leptolukua" → "leptonilukua" and "baryolukua" → "baryonilukua". No number, symbol, unit or formula changed.
+- The new forms are the lesson's and the glossary's terms (leptoniluku, baryoniluku); the old short forms appear nowhere else in the exercise set, so the set now uses one name for each quantity.
+- The sentence agrees with the Sijoitus line above it: reaction 3 fails on L (0 ≠ 0 + 1), reaction 5 on q (1 ≠ 2), reaction 7 on B (2 ≠ 0); three forbidden, 7 − 3 = 4 allowed by the conservation laws.
+- The condition is still stated: the conservation laws are necessary conditions, and the reaction must also be possible by energy.
+- exercises.json: only the marker "(esimerkkiaineisto)" left the captions; no data value changed.
+- Hash the same at the start and the end.

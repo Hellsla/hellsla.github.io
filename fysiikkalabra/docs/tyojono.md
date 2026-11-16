@@ -455,7 +455,7 @@ Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitte
 
 ## 18. Oikoluvun korjaukset FY1–FY9 (opettaja 2026-11-15)
 
-Tehty: FY6 (PR #615). FY3 tehty: claude/oikoluku-fy3 (PR #613).
+Tehty: FY6 (PR #615). FY3 tehty: claude/oikoluku-fy3 (PR #613). FY7 tehty (PR #617, claude/fy7-oikoluku). P6 (fy7-8:n kaavanimi) ja fy7-8:n simulaation selite (lang/fi.json, lang/fi-easy.json "lämmöksi") tehdään kohdassa 8m.
 
 Ohjeet ja päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md` kohdat 4–11 ja 13. Kaikki luvut, kurssi kerrallaan,
 ilman pilottipysähdystä (opettaja: "kaikki luvut vaan, ei ongelma jos tokeneita menee"); kulutus raportoidaan, mutta
@@ -468,6 +468,8 @@ muuteta. Yksi kurssi = yksi haara ja yksi PR; rinnakkaisuus kuten jonon alussa (
 Päätös (opettaja 2026-11-15): raja-arvotehtävien tarkistus hyväksyy jatkossakin poikkeaman molempiin suuntiin
 (esim. fy6-16 L2-05: 10,4 ja 10,5 kW), eikä yksipuolista tarkistusta tehdä. P7c koskee vain mallivastauksen pyöristystä.
 FY1 tehty: claude/fy1-oikoluku (PR #614).
+FY5 tehty: claude/fy5-oikoluku-aineisto (PR #624); samassa PR:ssä kohdan 19 aineistotehtävät FY5-A1…A5.
+FY8 tehty: claude/fy8-oikoluku (PR #621); samalla kokeen ja Sovellan leikkautuvat kaavat (5d).
 Kohta 8m (#618) lisäsi `physics_phrases.py`:hen säännöt heat-into (P1) ja liikekitka: kurssin "lämmöksi"-virkkeet ovat
 `docs/physics-phrases-known.tsv`:ssä (vain fi; samat virkkeet fi-easy- ja en-versioissa korjataan samalla), ja korjaus poistaa
 kurssin rivit. FY9:n lepokitkan nimitykset ("suurin lepokitka") yhtenäistetään 9c:ssä (#602).
@@ -484,6 +486,7 @@ ympäristön sallituissa (16.11).
 PR:ien yhdistäminen (opettaja 2026-11-16: "jos saat yhdisteltyä PR niin tee, jos vaarana että homma sotkeutuu älä tee"):
 kohta 19 tehdään samassa PR:ssä saman kurssin vielä aloittamattoman työn kanssa (FY4, FY5, FY9 ja FY2: kohta 18; FY3, FY6
 ja FY7: kohta 5d), ei koskaan jo katselmoitavana olevaan PR:ään; FY1 ja FY8 omana PR:nään kurssin nykyisen PR:n jälkeen.
+FY5 tehty: FY5-A1…A5 (PR #624, kohdan 18 FY5:n kanssa): fy5-6-L2-09, fy5-12-L2-10, fy5-14-L2-09, fy5-17-L2-10, fy5-16-L2-10.
 FY9 tehty: FY9-A1…A5 (PR #626, kohdan 18 FY9:n kanssa).
 FY6 tehty: FY6-A1…A5 (PR #627, kohdan 5d FY6:n kanssa): fy6-3-L2-08, fy6-7-L2-09, fy6-15-L2-09, fy6-9-L2-09, fy6-13-L2-09. Opettaja avaa Tukesin kaksi linkkiä (A3, A4) selaimessa ennen yhdistämistä: sivusto ei vastaa automaattisiin hakuihin.
 FY4 tehty: FY4-A1…A5 (PR #625, kohdan 18 FY4:n kanssa): fy4-11-L2-10, fy4-7-L2-10, fy4-9-L2-09, fy4-10-L2-10, fy4-8-L2-10.

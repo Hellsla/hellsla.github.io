@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e85d23c8af85e2db
+CONTENT-HASH: def38e3f4133d801
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] lesson.md, Summary — "with nothing to support you" switches to the second person, unlike the rest of the summary — "…falling freely together with the surroundings with nothing supporting the body".
+- [Minor] known clipped formulas at 360 px in fy5-6 (docs/clipped-formulas.tsv), untouched.
 
 ## Checked
-light delta review (teacher 2026-11-07): changed passages only (weightlessness definition, new real-orbits paragraph, summary bullet); own 390 px element captures of the current built page preview/en/fy5-6.html (hash unchanged since the stamped review/shots), inline KaTeX wrap scan of the whole page: none wraps; nothing clipped.
+- Delta is reflow of inquiry chains and teacher-approved figures only. Rendered the Examples stage at 360 px (stage capture, all boxes open; ISS error task chain aligned at =, no KaTeX errors, doc width 360) and opened fy5-6-stage-tarkista-390-1.png; figures untouched (approved).
+
+## Scores
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

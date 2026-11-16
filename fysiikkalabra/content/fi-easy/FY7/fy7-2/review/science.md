@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 36f1e76b61ba6c02
+CONTENT-HASH: 0cd8a55bb646cb06
 
-Delta re-review. Only figures.json gained four entries (descriptions of the exercise option figures `fy7-2/pick-*`, force diagram of the electron, field into the page); lesson.md, inquiry.json and exit-ticket.json are unchanged since the earlier PASS.
+Delta re-review. The diff holds three changes, none of them a number or a symbol:
+- inquiry.json `siirto`: "teslaina" is now "tesloina" in the prompt and in the solution's Kysytty line.
+- figures.json: the description of the exercise figure `fy7-2/r-points` is reworded, and the `pick-ulos` entry got a trailing comma.
+- lesson.md: only teacher-approved figures and formula names changed.
 
 ## Blocking
 
-None.
-
 ## Polish
-- lesson.md:275 — "Säde on kääntäen verrannollinen varaukseen ja kenttään" → "varauksen suuruuteen $|q|$ ja kenttään", to match $r = mv/(|q|B)$.
-- inquiry.json `pohdi`, `tarkistus-4`, `siirto` keep $r = mv:(qB)$ and $qvB$ for positive ions only (correct); "(positiivinen ioni, $|q| = q$)" would match the lesson's convention.
+- lesson.md:275: "Säde on kääntäen verrannollinen varaukseen ja kenttään" should say "varauksen suuruuteen $|q|$ ja kenttään", to match $r = mv/(|q|B)$. Carried over from the last report.
 
 ## Checked
-- Diff read: the 18 earlier figures.json entries are byte-identical; the four new keys are used only by exercises/exercises.json (grep: no `pick-` in lesson.md, inquiry.json or exit-ticket.json), so the lesson's text and figures are unaffected.
-- Rendered the lesson (fi-easy, `screenshot.py fy7-2 --lang fi-easy --if-stale`): the formula diagrams (force on positive/negative particle, circular path with tangent velocity and central force, r(v) graph 10.4/20.9 cm, mass spectrometer with selector, direction-of-force check) show the same physics as before and as the descriptions say; the three photos are unchanged.
-- Earlier recomputations (proton 3.2e-14 N, 5.2 cm, example 3.00e5 m/s, 20.0 u, Ne-22 27.4 cm, koe-2 24/48 fN, transfer 0.225 T, exit 3.0e5 m/s) carry over: no number or symbol changed.
-- The new exercise descriptions themselves belong to the exercise-set review, not to this lesson review.
-- Hash at start and end: 36f1e76b61ba6c02.
+- inquiry.json `siirto`: I recomputed the answer: $m = 1{,}829 \cdot 10^{-26}\,\text{kg}$, $v = \sqrt{2qU/m} = 5{,}919 \cdot 10^{5}\,\text{m/s}$, $B = mv/(qr) = 0{,}2252\,\text{T}$. This matches `answer` 0.225 and the solution. The physics, the unit (T) and the significant figures are unchanged.
+- figures.json `r-points`: the new description carries the same facts as the old one and as figures.py: the field is 0,20 T, there are four points at 0,5 to 2,0 · 10⁶ m/s, and the line goes through the origin. It still does not reveal the mass. The figure is used only by exercise fy7-2-L2-09.
+- figures.json `pick-*`: the text of these entries is unchanged; only the JSON comma changed.
+- lesson.md: the teacher-approved figures and formula names fall outside science (categories `teacher-figure` and `formula-names`).
+- The rest of the lesson is as I passed it at 36f1e76b61ba6c02, and my earlier recomputations carry over.
+- Hash at start and end: 0cd8a55bb646cb06.

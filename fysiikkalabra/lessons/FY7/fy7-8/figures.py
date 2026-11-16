@@ -112,7 +112,7 @@ def grid():
 
 
 def loss_graph():
-    f = Fig("fy78-loss-graph", 340, "Kuvaaja mittakaavassa: siirtojohdossa lämmöksi muuttuvan tehon osuus siirretystä "
+    f = Fig("fy78-loss-graph", 340, "Kuvaaja mittakaavassa: siirtojohdossa sisäenergiaksi muuttuvan tehon osuus siirretystä "
             "tehosta prosentteina siirtojännitteen funktiona kilovoltteina, kun siirretty teho on 200 MW ja johdon "
             "resistanssi 6,0 ohmia yksinkertaistetussa kaksijohtimisessa mallissa. Käyrä laskee jyrkästi: 100 kV:lla osuus on 12 %, 200 kV:lla 3,0 % ja 400 kV:lla "
             "0,75 %. Kun jännite kaksinkertaistuu, osuus pienenee neljäsosaan.")
@@ -135,7 +135,7 @@ def loss_graph():
 def loss_current():
     """Task figure: a model line (resistance wire) in the lab, heating power P_h against the current I: five measured
     points and the fitted curve P_h = k I² through the grid point (5,0 A; 20 W), dashed beyond 5 A. No R written."""
-    f = Fig("fy78-loss-current", 340, "Kuvaaja mittakaavassa: pienoismallin siirtojohdossa lämmöksi muuttuva teho "
+    f = Fig("fy78-loss-current", 340, "Kuvaaja mittakaavassa: pienoismallin siirtojohdossa sisäenergiaksi muuttuva teho "
             "P_h watteina virran I funktiona ampeereina. Viisi mittauspistettä virroilla 1,0; 2,0; 3,0; 4,0 ja 5,0 A, "
             "tehot 0,9; 3,1; 7,4; 12,6 ja 20,1 W, sekä pisteisiin sovitettu paraabeli, joka alkaa origosta, kulkee "
             "ruudukon pisteen (5,0 A; 20 W) kautta ja jatkuu katkoviivana viimeisen mittauspisteen jälkeen. Ruudukon "
@@ -207,7 +207,7 @@ def scene():
 def loss_graph_curve():
     """Task figure: the loss share of a 200 MW line against the transmission voltage, the curve only (no marked points,
     no values, no R), a fine grid of 25 kV and 1 %. The curve passes the grid point (200 kV; 3,0 %)."""
-    f = Fig("fy78-loss-graph-curve", 340, "Kuvaaja mittakaavassa: siirtojohdossa lämmöksi muuttuvan tehon osuus siirretystä "
+    f = Fig("fy78-loss-graph-curve", 340, "Kuvaaja mittakaavassa: siirtojohdossa sisäenergiaksi muuttuvan tehon osuus siirretystä "
             "tehosta prosentteina siirtojännitteen funktiona kilovoltteina, kun siirretty teho on 200 MW "
             "yksinkertaistetussa kaksijohtimisessa mallissa. Laskeva käyrä alkaa jännitteestä 70 kV ja päättyy "
             "jännitteeseen 400 kV, ja se kulkee ruudukon pisteen (200 kV; 3,0 %) kautta. Ruudukon väli on 25 kV ja 1 %.")

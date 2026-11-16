@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 040c97f3f731fe50
-SCOPE: delta reflow from cac0fd5db47fb84c base cf5f907
+CONTENT-HASH: 010cc9be0b649006
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Sijoitus blocks with a \cdot continuation: the block shows a mid-row "=" (e.g. fy8-6 "hc = 6,626·10^-34 J s / · 2,998·10^8 m/s = 1,9865·10^-25 J m,", fy8-10-11 "E_B = a / · (c)² = a / · 8,98800·10^16 m²/s² = 2,04479·10^-11 J"). The "=" is not in the aligned column and a continuation row such as "· (2,998·10^8 m/s)² = 2,27502·10^-28 kg" reads like an equation of its own. Fix: put each "=" on its own row (the source already does); if the build merges rows, adjust mathlayout so a "=" row stays a row of its own. Readable, so it does not block.
-- [Minor] The comma after a block ("... J m,") is inside the last row as agreed, and the answer lines read cleanly.
+- [Minor] solutions.md fy8-9-L2-05 Vastaus — "ja puoliintumisaikaan se vaikuttaa jaettuna luvulla" is compressed; clearer: "Puoliintumisajan suhteellinen epätarkkuus saadaan jakamalla tämä luvulla $\ln 4{,}42 \approx 1{,}5$, eli se on noin $8\,\%$." Understandable as it is.
+- [Minor] for science: the $\pm 8\,\%$ estimate uses only the spread of the count $64$ (not that of $R_0 = 283$ or the background); confirm the simplification is acceptable.
 
 ## Checked
-- No capture of this lesson opened; judged by the same shared component as fy8-1, 2, 6, 10 and 16, whose captures I opened (see the other lessons' reports). Source of the aligned blocks read only. If its blocks differ in kind, ask again.
-- Across the opened captures: blocks sit inside the card, no clipping, equals signs aligned in ordinary chains, fractions and units upright with a thin space, decimal comma, sentence marks inside the last row, words and numbers unchanged.
+- Hash at start and end 010cc9be0b649006; the captures' stamp shows the same hash.
+- fy8-9-open-exercises-L2-1280-6 (content/fi/FY8/fy8-9/review/shots/): task 9-14 (fy8-9-L2-05) solution open. The Vastaus sentence renders: answer box "149 s" set apart, "±8 %", "√64 = 8", 8/64 ≈ 13 %, "ln 4,42 ≈ 1,5" in KaTeX, decimal comma, nothing clipped; Sijoitus chain aligned, Järkevyys block intact.
+- Delta: the packet diff is empty; only this capture judged. No 390 px capture of the opened exercises exists; the 360 px layout check is the developer's.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

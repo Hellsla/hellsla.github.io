@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 3c3c923a87da0322
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: f042f38356a8f6fc
+Mode: delta (coal heating value 24 -> 29 MJ/kg and the figures that follow from it)
 
 ## Blocking
 - none
@@ -9,4 +9,10 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+- Why question ($2.8$ tonnes) and its answer in the reaction-energy section ($29\,\tfrac{\text{MJ}}{\text{kg}}$, $2.8$ tonnes) agree; the opening question is still answered by the same chain (nuclei, energy, heating value, mass of coal).
+- Hook ($12\,000$ tonnes of coal per day) is consistent with the same heating value; no old value (3.4 tonnes, 24 MJ/kg, 14 000 tonnes) remains in lesson.md or inquiry.json.
+- The parenthesis "the MAFY tables give $25$–$32\,\tfrac{\text{MJ}}{\text{kg}}$" tells the student the source and that the value is approximate; the paragraph stays well under 120 words.
+- English of the changed sentences is correct; decimal point, numbers with units in LaTeX.
+- The hook discloses nothing new; predictions, experiments and checks are untouched by the diff.
+- Same change as the Finnish version, whose Pohdinta capture renders the new number without clipping.
+- Hash unchanged at the end of the review.

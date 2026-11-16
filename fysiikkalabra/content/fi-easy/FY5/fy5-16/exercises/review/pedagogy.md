@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 45d97ca78bde885a
-SCOPE: delta added-exercise from d2b1980c7da012c4 base 81db4a6fd727
+CONTENT-HASH: a138b3319b58764e
+SCOPE: delta added-exercise from e8fa4352e893527d base abdc9e095e4f
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-16-L1-09 uses 2^(5/3), a fractional exponent, for level 1; the solution explains it, but a level that is a multiple of 3 dB would be easier. Acceptable.
-- fy5-16-L2-09 has the same method as L1-09 but adds the earplug step and the min conversion; good, no repeat.
+- fy5-16-L2-10: "toiminta-arvot ja raja-arvo" are the page's terms and are not explained; add "(rajat, joissa työnantajan pitää toimia)" once.
+- fy5-16-L2-10 b): "Äänitaso kasvaa 3 dB tai 10 dB" reads as one case; write "Laske kahdessa tapauksessa: taso kasvaa 3 dB tai 10 dB."
+- fy5-16-L2-10 c) packs four questions into one paragraph; give the dose question its own sentence or part.
 
 ## Checked
-- L1-09: figure needed (90 dB lawn mower), t = 8 h / 2^(5/3) = 2,52 h; the check between 88 dB (4 h) and 91 dB (2 h) is correct.
-- L2-09: 105 dB - 12 dB = 93 dB, n = 8/3, t = 75,6 min; check with 100-fold intensity (4,8 min without plugs, 16-fold longer) consistent; 2 % tolerance covers the exact 76,1 min.
-- The earlier blocking (tolerance on 4,7 min) no longer applies: the task now asks the time with earplugs.
-- Figure description lists all markers without the answer; Finnish clear.
+- Facts match the source notes: 80/85/87 dB(A) rows, 8-hour dose, protectors inside (raja-arvo), impulse noise; the 3 dB rule is taken from the lesson, not attributed to TTL.
+- The task tells the S2 reader what to find (the three reference values, the table) and scaffolds c) with the 8-hour assumption.
+- Calculation: 10^0,9 = 7,94, t = 1,007 h; answer 1,0 h, tolerance 0,03; nyrkkisääntö check agrees.
+- Solution c) and d) are staged and answer the question (94 dB for 8 h exceeds the limit by 7 dB; 1 h gives 85 dB(A)).
+- Non-repeat of L1-09 / L2-09: new is source reading plus dose reasoning.
