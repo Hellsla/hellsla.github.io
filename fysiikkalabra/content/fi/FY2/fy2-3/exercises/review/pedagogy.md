@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6a4b518eb95a91d8
-
-Round: 2
+CONTENT-HASH: 633302ba5d59bc16
+SCOPE: delta added-exercise from 75aa6a48bc6fe02f base 07af77a4596f
 
 ## Blocking
+- none
 
 ## Polish
-- solutions.md L1-09 Järkevyys — "vähän vedenkeittimen tehoa suurempi": 3,7 kW is nearly double a kettle; write "noin kaksi kertaa vedenkeittimen teho".
-- exercises.json fy2-3-L1-10 — reading four points and two slopes before a ratio is the upper edge of level 1; acceptable.
+- fy2-3/exercises/solutions.md L2-09 d) — "muuttuu ... sisäenergiaksi, joka siirtyy lämpönä" is FY3 vocabulary (FY2 has no internal energy); write "osa energiasta muuttuu lämmöksi (lämpöenergiaksi)".
+- exercises.json L2-09 — four parts with a long source paragraph is at the upper end for level 2; part d) is general reasoning that does not need the article (b is arithmetic only). Consider keeping d) short or dropping it; the source is genuinely needed for a) and c).
+- solutions.md L2-09 c) — the Oomi and Vattenfall fees are in the solution but not in the task text; say "artikkelin mukaan" and that the student need only use the Vaasan sähkö fee.
 
 ## Checked
-- L1-09: "mekaaninen teho" and "metristä hevosvoimaa" make the 735,5 W lookup and the mechanical output unambiguous; the numbers are unchanged (6,6195 MJ), the hint names only the table, and the solution is consistent.
-- L1-10 now asks the power ratio A : B and no longer repeats L1-04. The figure is needed; its description gives both points of each line without the ratio; the 3,0 answer (1500 W : 500 W) agrees with answers.py, unit empty, tolerance 2 % fine.
-- L1-10 solution reads each line step by step, converts kJ to J, and checks the ratio at 80 s (120 : 40).
-- Question is last as its own sentence; "anna vastaus lukuna (suhde ilman yksikköä)" is clear.
-- Hash identical at start and end (6a4b518eb95a91d8).
+- Delta review of the added data task fy2-3-L2-09 (brief sections 2, 5, 6) in context of the whole set.
+- Source needed: a) and c) (negative price, fee, zero treatment, price without taxes) depend on the article and Fingrid page; progression is interpret (a), compute (b), compare and read critically (c), evaluate (d), no duplicate of L2-01 or L3-04.
+- Solution: principle, symbolic formula, units, check and the article's age caveat; sign of the answer explained. Answer -40 snt correct (2,0 kW · 4 h · -5,0).
