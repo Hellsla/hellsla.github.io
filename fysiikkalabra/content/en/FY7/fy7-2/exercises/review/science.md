@@ -1,22 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6f158dcc37c616a5
+CONTENT-HASH: 7bb6d77c69feb453
 
 ## Blocking
 
 ## Polish
-- solutions.md fy7-2-L2-05, L2-06 — the stage is headed "Reading the graph" but the task gives a table — "Reading the table".
-- exercises.json fy7-2-L1-09 — `answer` 2.84 (three figures) while the data has two and the solution answers $2.8\,\text{cm}$; 2.8 is within the tolerance, so this is consistency only — 2.8 with tolerance 0.03 would match the solution.
-- exercises.json fy7-2-L2-09 — `answer` 3.35 against the solution's $3.4 \cdot 10^{-27}\,\text{kg}$; both are within the tolerance — keep it, or align it with the solution.
-- packet — the exercise brief's lesson excerpt is empty, so the notation could not be checked against the lesson's Kaava and Esimerkki. The set's notation ($F_\text{m}$, $\overline{F}_\text{m}$, $r = mv : (qB)$, $T = 2\pi m : (qB)$) matches the glossary and the scope notes.
+- solutions.md:253 (L2-10 Part c) — "the same particles produce northern lights" is a simplification (C): the ground disturbance comes from currents in the upper atmosphere that strengthen when particles precipitate — "the particles that rush into the upper atmosphere at the same time produce northern lights" would be exact (same remark as on the Finnish set).
+- solutions.md:256 (L2-10 Reasonableness) — "changes in a minute by at most $36\,\text{nT}$" holds because R sums absolute changes of the three components; one clause could say so.
 
 ## Checked
-- All 18 numeric answers recomputed in one script from the task text with my own formulas. Each agrees with answers.py and exercises.json within tolerance.
-- L3-05 (the proofreading fix): the data $0.200\,\text{m}$, $60.0\,\text{kV}$ and $1.00\,\text{T}$ now carry three figures, matching the answer $1.05\,\mu\text{s}$. I recomputed $v = 1.92 \cdot 10^{7}\,\text{m/s}$, $E_\text{k} = 3.07 \cdot 10^{-13}\,\text{J} = 1.92\,\text{MeV}$, $n = 31.9 \approx 32$ and $T = 65.6\,\text{ns}$. Using the unrounded $n$ also gives $1.05\,\mu\text{s}$. $v/c = 0.064$. The relativistic estimate $\tfrac34\beta^2 \approx 0.3\,\%$ is correct, as is the remark that the period grows at higher energy (only mentioned in passing, as the plan asks).
-- L3-04: a least-squares fit through the origin gives $22.8\,\text{u}$ and a free fit gives $22.7\,\text{u}$ (intercept $0.5\,\text{cm}^2$), so a line fitted by hand stays within the 4 % tolerance. Sodium-23 at $400\,\text{V}$ gives $r = 6.9\,\text{cm}$. The slopes quoted for Li-7 and K-39 are correct. The reason the line passes through the origin is physical.
-- Directions: L2-05 has $\overline{v}$ to the right and $\overline{B}$ into the page, so the force on a positive ion is up. L2-08 has the electron moving up with $\overline{B}$ out of the page, so the force is to the left (diagram C). $F_\text{m} = 2.4 \cdot 10^{-16}\,\text{N}$ and $mg = 8.9 \cdot 10^{-30}\,\text{N}$. Each wrong diagram (A, B, D) has exactly the one error its feedback names.
-- L1-06 and L2-07: exactly one option is correct in each, and every distractor's feedback gives the right physics.
-- L2-06: $d \propto m$ holds because the velocity selector gives every ion the same speed. The masses $25.1\,\text{u}$ and $25.9\,\text{u}$ and the share 78.9 % are correct, and the data resemble the natural abundances of magnesium.
-- L3-01 and L3-03: $r \propto \sqrt{m/q}$ at the same $U$, giving $4.0\,\text{cm}$ and $1.41$.
-- Figure r-points: the line is generated from the deuteron's mass. At $1.5 \cdot 10^{6}\,\text{m/s}$ it gives $r = 15.65\,\text{cm}$ (the solution reads it as 15.7), and the figure does not give the mass away.
-- Magnitudes in the reasonableness checks: L1-01 $r \approx 1.25\,\text{cm}$, L1-02 a proton circle of about $14\,\text{m}$, L2-04 a magnetic force of about $10^{8}$–$10^{9}$ times the weight at $10^{6}\,\text{m/s}$, L2-05 about $210\,\text{eV}$.
-- Scope: everything is inside FY7's charged-particle contents and the scope notes. Each solution derives symbolically before substituting, states its conversions, and justifies its rounding by the limiting datum.
+- Delta round 1: only fy7-2-L2-10 (FY7-A5) judged; hash identical at start and end.
+- Recomputed from the task text with my own formulas: $r = mv/(|q|B) = 83.55\,\text{m} \to 84\,\text{m}$ (two figures from 4.0 and 50; tolerance 2 % covers it), $r/R_\text{E} = 1.3 \cdot 10^{-5}$, hundredfold weaker field 8.4 km, $810/1350 = 0.60\,\text{nT/s}$, 36 nT per minute = 0.072 % of 50 000 nT. answers.py agrees.
+- English against Finnish by script: answer 84, unit m, tolerance 0.02, kind, the eight table rows and every number of the task text and the solution are the same (the only extra number is "24 hours" for "vuorokausi").
+- Example table: lower threshold 200 exceeded 20–0 (five hours), upper 400 exceeded 21–23 (three), maximum 810 at 22. Marked invented.
+- Both source pages fetched 16 Nov 2026 (HTTP 200). The aurora page has the chart title "Magneettinen aktiivisuus kuluneen vuorokauden aikana", station-specific thresholds, the link to the guide and the review of 16.11. 9.23 (quiet weekend, solar wind strengthening Monday and Tuesday). The guide has: R describes the speed of field variations; divide by 1350 for nT/s; both thresholds about 50 % (faint; bright or extensive); statistical link, never a sure sign, short exceedances without auroras, several consecutive bars a better sign; cloudiness not included; probability grows northwards; auroral zone a ring round the magnetic pole, Lapland in it; solar wind a particle stream that produces auroras, 300–400 km/s. Every claim the English task and solution attribute to the source is there; the solution's own additions are marked as its own.
+- Physics of b): force perpendicular to $\overline{v}$ and $\overline{B}$, no work, motion along the field unaffected, helical path; uniform-field assumption and the magnetosphere simplification stated.
+- Scope: charged particle in a magnetic field (FY7).
