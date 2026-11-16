@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 282eb61fc0b60703
-
+CONTENT-HASH: 5cb4d86d56728236
 ## Blocking
-None.
-
+(none)
 ## Polish
-- L1-09 and L2-09 are good level fits. Optional: L1-09 solution could say why 4 % tolerance (atm 101325 vs 1e5 rounding).
-
+- solutions.md:~85 — task gives '480 kW' without a decimal, so claiming the trailing zero is significant is an assumption the student cannot see; write 'oletetaan, että loppunolla on merkitsevä' or give the task 480 kW as 4,80·10^2 kW.
 ## Checked
-Changed symbols (P_a/P_o, Q1) and the added exercises read in full: solutions follow the staged format, symbols are defined where used, added L1-09 (lookup) and L2-09 (figure) match their levels and chapter.
+- Delta: 'hukkalämpöön, joka siirtyy ympäristöön' corrects a heat-as-stored wording; polttoainetehon typo fixed. Sig figs now three for 720 kW.
+- Judged from the diff text; captures not opened.

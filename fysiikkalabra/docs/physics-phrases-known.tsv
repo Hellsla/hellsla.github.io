@@ -1,11 +1,4 @@
 folder	file	rule	sentence (physics_phrases.py; work queue 18 deletes a row when it corrects the sentence)
-FY3/fy3-11	inquiry.json	heat-into	Kitka ja häviöt muuttavat osan sähköstä lämmöksi, mutta se on osa sähköenergiaa $1{,}0\,\text{kWh}$, eikä se voi selittää kahta lisäkilowattituntia.
-FY3/fy3-11	inquiry.json	heat-into	Sähkövastus muuttaisi $1{,}0\,\text{kWh}$ sähköä täsmälleen $1{,}0\,\text{kWh}$ lämmöksi.
-FY3/fy3-15	exercises/exercises.json	heat-into	Yhteistuotannossa sähköä saadaan yleensä vähemmän kuin lauhdevoimalaitoksessa, koska osa höyryn energiasta jää lämmöksi.
-FY3/fy3-15	exercises/solutions.md	heat-into	Loput muuttuu lämmöksi tai heijastuu, joten sähköteho on ottotehon $P_\text{o} = IA$ eli paneeliin tulevan säteilyn tehon $\eta$-osa.
-FY3/fy3-15	exercises/solutions.md	heat-into	Tässä tulotehona on roottorin läpi virtaavan ilman liike-energian teho ja hyötytehona sähköverkkoon menevä teho; loput energiasta jää ilman liikkeeseen tai muut
-FY3/fy3-16	exercises/solutions.md	heat-into	Vastukset muuttavat sähköenergian lämmöksi teholla $P$, joten käytetty energia on $P\,t$.
-FY3/koe	solutions.md	heat-into	Sähkövastus muuttaa sähköenergian kokonaan lämmöksi.
 FY4/sovella	solutions.md	heat-into	Matka on kuitenkin pitkä, joten energiasta muuttuu lämmöksi yli puolet: $5234\,\text{J} : 9123\,\text{J} \approx 0{,}57$.
 FY4/sovella	solutions.md	heat-into	Se on suurin mahdollinen nopeus, koska todellisuudessa osa energiasta muuttuu lämmöksi.
 FY5/fy5-12	exercises/solutions.md	heat-into	Energia ei muutu lämmöksi solmuviivoilla eikä siirry takaisin kaiuttimiin, koska aallot kulkevat toistensa läpi ja kaiuttimien tuottama teho pysyy samana.

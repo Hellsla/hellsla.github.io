@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: d64c69c82972df02
+CONTENT-HASH: a2e76a1a16d904ec
 
 ## Blocking
-None. Built preview/fy3-10.html and looked at 390 and 1280 px: formula tables (named rows, upright subscripts a, o, h, A), changed figures, opened solutions; no horizontal overflow; no leftover old symbols (L, P_0, P_hyöty, Q_sisälle, E_s, W_k) in the lesson, inquiry, exit ticket or exercises of this part.
+- none
 
 ## Polish
-none.
+- none
 
-(Captures: /tmp/claude-0/-home-user-hellsla-github-io/729392a7-96f2-578c-8869-36f18714a66f/scratchpad/review-fy3/)
+## Checked
+- delta: optional Sovella task solution (sig-fig justification reworded, 7,5 m³ check, 1,7 ratio, 720 kg); opened fy3-10-stage-sovella-390-2 and fy3-10-open-ennusta-1280 (formula rows, units LaTeX, no clipping); all changed numbers in the diff are LaTeX with units.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 240d5ff14a5bd144
+CONTENT-HASH: 2606efea8263d215
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] theory-1280-2 — "where $G$ is the weight (N) … (kg) … (m)" plain units in untouched text; typeset when next edited.
 
 ## Checked
-- delta review 2026-11-07 round 4 (three small fixes): Ydinajatus: comma restored before "but"; the sentence now reads correctly, nothing else changed (text-only, one punctuation mark).
-- delta review 2026-11-07 (teacher's proofread replacement texts): Ydinajatus rewrite (siirtymä, komponentti, mekaaninen työ) and the typeset $40\,\text{N}$/$20\,\text{cm}$ in lesson and inquiry choices/feedback/prompts; opened fy3-2-en-a-390 and -1280 (text, carry-lift figure and Joule figure unchanged and intact).
-- batch delta review: opened fy3-2-1280-0, fy3-2-360-0; photo loads, no clipping or horizontal overflow, credit line under the caption, alt text and caption natural English and consistent with the picture and the paragraph, no number with a unit in the new text.
+- Diff: Joule figure label "work → internal energy" and aria-label. Opened fy3-2-fig-10-390 (label fits, box widened, centred over the pulley belt, nothing clipped) and fy3-2-theory-1280-2 (layout around the Joule and lifting figures intact).
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

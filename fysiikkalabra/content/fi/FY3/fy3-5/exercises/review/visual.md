@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: eb87ee7962362258
-ROUND: 1
+CONTENT-HASH: b84b000bd30022fa
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy3-5/piston-force (reused, teacher-approved) — force graph drawn in orange (the acceleration colour); no change requested of an approved figure.
-- [Minor] fy3-5-L1-10 task — "Anna vastaus kilojouleina." after the question is fine; the page shows the answer as 11 kJ while the solution carries 4 digits: OK.
-- [Minor] fy3-5-L2-08 Vastaus — "58{,}2\ldots61{,}8" shows false precision for a graph reading; "58…62" would match the other graph tasks.
+(none)
 
 ## Checked
-- Delta: opened fy3-5-open-exercises-1280-10 (L1-10 solution), fy3-5-open-exercises-L2-1280-10 (L2-08 with piston-force graph, solution start) and -11 (solution end).
-- Graph: single straight line with end markers, axes F (N) and s (m), grid 0,05 m / 50 N, description matches; the question text is split situation / question into two paragraphs as the house rule asks.
-- Solutions: trapezoid formula as a fraction in display, units upright.
+- Round 1, delta. Opened fy3-5-open-exercises-L2-1280-8: task 6-17 (table, answer box 50 J, solution start). Its changed Vastaus ("50 J (laskettu 50,4 J), kaksi merkitsevää numeroa, koska ...") lies below the capture and was read from the diff: LaTeX quantities, sentence fluent.
+- The "Syventävä tehtävä." prefix (L2-05) and the L1-06 "Kupin sisäenergia" fix were read from the diff only (plain words).
+- Hash same at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
