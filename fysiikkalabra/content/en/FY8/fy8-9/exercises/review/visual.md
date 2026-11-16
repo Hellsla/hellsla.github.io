@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a16b33ae92104265
-SCOPE: delta reflow from dfc10b3bfa8ebcba base 56362aafa0
+CONTENT-HASH: 1931c445d9c3b481
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] solutions.md fy8-9-L2-05 Substitution (untouched) — "at $t = 320\,\text{s}$ $R = 64$" sets two formulas side by side; write "and at $t = 320\,\text{s}$ the count is $R = 64$".
+- [Minor] for science: the $\pm 8\,\%$ estimate uses only the spread of the count $64$ (not that of $R_0 = 283$ or the background); confirm the simplification is acceptable.
 
 ## Checked
-- delta reflow, en: no solution capture of this set opened; the reflowed blocks judged from the source diff only (rows broken at whole terms). Layout of the card around the blocks intact; no 390 px open-solution capture exists, so phone wrapping is judged by the build's rule only. Hash re-run at the end: unchanged.
+- Hash at start and end 1931c445d9c3b481; the captures' stamp shows the same hash.
+- fy8-9-open-exercises-L2-1280-6 (content/en/FY8/fy8-9/review/shots/): task 9-14 (fy8-9-L2-05) solution open. The Answer sentence renders: answer box "149 s" set apart, "±8 %", "√64 = 8", 8/64 ≈ 13 %, "ln 4.42 ≈ 1.5" in KaTeX with decimal point, nothing clipped; substitution chain aligned, Reasonableness block intact.
+- Delta: the packet diff is empty; only this capture judged. No 390 px capture of the opened exercises exists; the 360 px layout check is the developer's.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

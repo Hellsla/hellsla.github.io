@@ -56,12 +56,12 @@ a["per-nucleon-fission"] = 200 / 236            # 0,847 MeV
 a["per-nucleon-dt"] = dt_dm * U_MEV / 5         # 3,52 MeV
 a["per-nucleon-ratio"] = (dt_dm * U_MEV / 5) / (200 / 236)   # 4,2
 
-# ---------------------------------------------------------------- Miksi: 1,00 g of U-235 fissioned (200 MeV each) vs coal 24 MJ/kg
+# ---------------------------------------------------------------- Miksi: 1,00 g of U-235 fissioned (200 MeV each) vs coal 29 MJ/kg (MAFY 25–32 MJ/kg)
 N_g = 1.00e-3 / (M["U-235"] * U_KG)             # 2,562e21 nuclei
 E_g = N_g * 200e6 * EV                          # 8,21e10 J
 a["miksi-N"] = N_g
 a["miksi-E-GJ"] = E_g / 1e9                     # 82,1 GJ
-a["miksi-coal-t"] = E_g / 24e6 / 1000           # 3,42 t of coal (lämpöarvo 24 MJ/kg)
+a["miksi-coal-t"] = E_g / 29e6 / 1000           # 2,83 t of coal (lämpöarvo 29 MJ/kg)
 
 # ---------------------------------------------------------------- chain reaction: N_g = N_0 k^g
 a["k12-g10"] = 1000 * 1.2 ** 10                 # 6192
@@ -97,7 +97,7 @@ a["siirto-check"] = 5e8 / 3e-12 / 1e20          # 1,67 with round numbers
 a["siirto-mass-per-s"] = 500e6 / Q_given * 5.0301511 * U_KG * 1e6   # mg of D-T fuel per second: 1,48 mg/s
 
 # ---------------------------------------------------------------- inquiry: hook, predictions, Etsi virhe, keskustelu, tarkistus 3
-a["hook-coal-t-per-day"] = 1600e6 / 0.40 * 86400 / 24e6 / 1000   # 1600 MW electric from coal at 40 %: 14 400 t/day
+a["hook-coal-t-per-day"] = 1600e6 / 0.40 * 86400 / 29e6 / 1000   # 1600 MW electric from coal at 40 %: 11 900 t/day
 a["enn2-gens-to-million"] = math.log(1000) / math.log(1.04)       # 176 generations from 1000 to 10^6
 a["enn2-add-at-20"] = 0.04 * 1987                                 # about 80 neutrons added per generation after g = 20
 a["enn2-factor"] = 1.04 ** 30                                     # 3,24

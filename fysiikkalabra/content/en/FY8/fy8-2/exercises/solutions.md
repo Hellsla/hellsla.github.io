@@ -167,7 +167,7 @@ $$ and $\Delta E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{15.0 \cdot 
 ## fy8-2-L3-03
 **Given:** wavelength of the absorbed UV photon $\lambda_\text{UV} = 365\,\text{nm}$, energy of the first emitted photon $E_1 = 1.20\,\text{eV}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Find:** the wavelength $\lambda_2$ of the second emitted photon in nanometres
-**Principle:** The molecule returns to the same ground state and no energy is transferred to heat, so by conservation of energy the sum of the energies of the two emitted photons is the energy of the absorbed photon.
+**Principle:** The molecule returns to the same ground state and no energy is converted to internal energy, so by conservation of energy the sum of the energies of the two emitted photons is the energy of the absorbed photon.
 **Formula:** $E_\text{UV} = \dfrac{hc}{\lambda_\text{UV}} = E_1 + \dfrac{hc}{\lambda_2}$, so $\lambda_2 = \dfrac{hc}{\tfrac{hc}{\lambda_\text{UV}} - E_1}$
 **Conversions:** $365\,\text{nm} = 365 \cdot 10^{-9}\,\text{m}$; electronvolts and joules are converted by substituting $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
 **Substitution:** $$
@@ -208,7 +208,7 @@ hc &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \\
 &= 1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}
 \end{aligned}
 $$ and $E = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{546.3 \cdot 10^{-9}\,\text{m}} = 3.6362 \cdot 10^{-19}\,\text{J} = \dfrac{3.6362 \cdot 10^{-19}}{1.602 \cdot 10^{-19}}\,\text{eV} = 2.2698\,\text{eV}$
-**Answer:** a) the lamp contains mercury, because all three lines match its table values; b) $2.27\,\text{eV}$, three significant figures like the wavelength $546.3\,\text{nm}$.
+**Answer:** a) the lamp contains mercury, because all three lines match its table values; b) $2.270\,\text{eV}$, four significant figures like the wavelength $546.3\,\text{nm}$ and the constants.
 **Reasonableness:** With the estimate, $\tfrac{1240\,\text{eV}\,\text{nm}}{546.3\,\text{nm}} \approx 2.27\,\text{eV}$. The energy of a photon of green light is between those of red ($1.9\,\text{eV}$) and violet ($3.0\,\text{eV}$), as it should be.
 
 ## fy8-2-L2-06
@@ -236,7 +236,7 @@ $$ and $E_\text{u} = -3.40\,\text{eV} + 2.5514\,\text{eV} = -0.8486\,\text{eV}$
 **Formula:** $\lambda = kx + b$
 **Conversions:** None are needed: the reading is in millimetres and the slope is in the unit $\tfrac{\text{nm}}{\text{mm}}$, so the result comes directly in nanometres.
 **Substitution:** $\lambda = 12.01\,\tfrac{\text{nm}}{\text{mm}} \cdot 16.4\,\text{mm} + 299.6\,\text{nm} = 496.6\,\text{nm}$
-**Answer:** a) the incandescent lamp gives a continuous spectrum and the mercury tube a line spectrum; b) $497\,\text{nm}$, three significant figures like the reading $16.4\,\text{mm}$ and the wavelengths.
+**Answer:** a) the incandescent lamp gives a continuous spectrum and the mercury tube a line spectrum; b) $497\,\text{nm}$, three significant figures like the reading $16.4\,\text{mm}$, which is the least precise of the data.
 **Reasonableness:** The value is between the lines of mercury $435.8\,\text{nm}$ and $546.1\,\text{nm}$, and the reading $16.4\,\text{mm}$ is between their readings $11.4\,\text{mm}$ and $20.5\,\text{mm}$. Interpolation using only these two points gives $435.8\,\text{nm} + 12.1\,\tfrac{\text{nm}}{\text{mm}} \cdot 5.0\,\text{mm} = 496.3\,\text{nm}$, the same result. The wavelength is blue-green light, as in the problem.
 
 ## fy8-2-L2-08
@@ -282,8 +282,8 @@ The line $282\,\text{nm}$ is ultraviolet and is not visible in the range examine
 
 ## fy8-2-L3-05
 **Given:** absorbed light $\lambda_\text{abs}$ and fluorescent light $\lambda_\text{fl}$: A $365\,\text{nm}$ and $450\,\text{nm}$, B $405\,\text{nm}$ and $520\,\text{nm}$, C $450\,\text{nm}$ and $530\,\text{nm}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
-**Find:** the share $p$ of the energy converted to heat of the energy of the absorbed photon, in per cent, the greatest of the three
-**Principle:** The dye absorbs a photon and emits one fluorescence photon. Energy is conserved, so the energy of the absorbed photon is the sum of the energy of the emitted photon and the energy $Q$ converted to heat. The fluorescence photon has a longer wavelength, so its energy is smaller.
+**Find:** the share $p$ of the energy converted to internal energy of the energy of the absorbed photon, in per cent, the greatest of the three
+**Principle:** The dye absorbs a photon and emits one fluorescence photon. Energy is conserved, so the energy of the absorbed photon is the sum of the energy of the emitted photon and the energy $Q$ converted to internal energy. The fluorescence photon has a longer wavelength, so its energy is smaller.
 **Formula:** $E = \dfrac{hc}{\lambda}$, $Q = E_\text{abs} - E_\text{fl}$ and $p = \dfrac{Q}{E_\text{abs}} = 1 - \dfrac{\lambda_\text{abs}}{\lambda_\text{fl}}$
 **Conversions:** $1\,\text{nm} = 10^{-9}\,\text{m}$; joules are converted to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\tfrac{\text{J}}{\text{eV}}$. In the share $p$ the constants $h$ and $c$ cancel.
 **Substitution:** The energies of dye B are $E_\text{abs} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{405 \cdot 10^{-9}\,\text{m}} = 3.0617\,\text{eV}$ and $E_\text{fl} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{520 \cdot 10^{-9}\,\text{m}} = 2.3846\,\text{eV}$, so $Q = 0.6771\,\text{eV}$ and $p = \dfrac{0.6771\,\text{eV}}{3.0617\,\text{eV}} = 0.2211 = 22.11\,\%$. In part d) $E_\text{abs} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{400 \cdot 10^{-9}\,\text{m}} = 3.1000\,\text{eV}$, $E_\text{fl} = 3.1000\,\text{eV} - 0.50\,\text{eV} = 2.6000\,\text{eV}$ and $\lambda_\text{fl} = \dfrac{1.9865 \cdot 10^{-25}\,\text{J}\,\text{m}}{2.6000 \cdot 1.602 \cdot 10^{-19}\,\text{J}} = 4.769 \cdot 10^{-7}\,\text{m} = 477\,\text{nm}$. For dyes A and C the corresponding energies are $3.397\,\text{eV}$ and $2.756\,\text{eV}$, and $2.756\,\text{eV}$ and $2.340\,\text{eV}$, and the shares are $1 - \tfrac{365}{450} = 0.189$ and $1 - \tfrac{450}{530} = 0.151$.

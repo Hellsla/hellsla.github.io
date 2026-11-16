@@ -1,12 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1cb309cfd128f002
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 56f61bb434bbcc6b
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- content/fi/FY8/fy8-5/exercises/solutions.md:223 (unchanged line beside the diff) — "kuten kuvun lukumäärän mukaan pitääkin" should be plural — "kuten kupujen lukumäärän mukaan pitääkin".
+- content/fi/FY8/fy8-5/exercises/solutions.md:101 — "(UVA)"; the chapter *Valosähköinen ilmiö ja fotoni* writes "UV-A" — use one spelling in the module: "ultraviolettialueella (UV-A)".
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+- solutions.md:101 Järkevyys: "juuri näkyvän alueen alapuolella, lähellä ultraviolettia" → "juuri näkyvän alueen ulkopuolella, ultraviolettialueella (UVA)". The old wording was ambiguous ("alapuolella" in wavelength or in energy?) and said "near ultraviolet" of a wavelength, $365\,\text{nm}$, that is ultraviolet. The new sentence agrees with the answer and with the next sentence (longer-wavelength visible light does not ionise from $n = 2$).
+- The check still reasons from the photon energy $3{,}4\,\text{eV}$ compared with violet light, so a student can follow why the result is plausible.
+- solutions.md:222 (fy8-5-L3-01 c): "kuvuja" → "kupuja" is the correct plural partitive (kupu : kuvun : kupuja) and matches "kupua" in the figure description.
+- No number, symbol or step changed in either hunk; exercises.json only re-broken chains.
+- Figure `fy8-5/string` and its description untouched; the task still needs it and it does not give the frequencies away.
+- Method: text diff in context; captures not needed for wording corrections.

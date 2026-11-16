@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 7346d9cf9e68d361
-Mode: light (teacher 2026-11-10, "kevyt katselmointi": the FY8 error-check fix diff since origin/main only)
+CONTENT-HASH: 82fca11c683128df
 
 ## Blocking
-- none
 
 ## Polish
-- none
 
 ## Checked
-- Exit ticket Q2 diff: the question is now limited to ordinary (Stokes) fluorescence, one photon in and one out, with no extra energy. E = hc/λ gives 2,76 eV (450 nm) < 3,10 eV (400 nm), so "cannot" is the one correct answer. The exception (extra energy from elsewhere, e.g. two absorbed photons) is stated correctly and matches the question's condition; nothing says shorter-wavelength emission is never possible.
+- Delta: siirto hint 3 now "Sisäenergiaksi jää niiden erotus": right (3,062 − 2,340 = 0,722 eV; recomputed hc/λ for 405 and 530 nm), consistent with the prompt, the 3,06 mistake feedback and the solution's E_sis. My earlier Polish item is resolved.
+- No remaining "lämmöksi" for the stored energy; the solution's "luovuttaa osan energiasta lämpönä" is heat as energy in transfer, correct.
+- No number, symbol or option changed; the rest stands as passed.
+- Hash 82fca11c683128df at start and end.

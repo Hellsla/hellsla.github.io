@@ -218,7 +218,7 @@ $$, and all the measured wavelengths, $365$–$505\,\text{nm}$, are shorter than
 **Given:** table $E_\text{k,A}$ and $E_\text{k,B}$ at the frequencies $8.0$–$11.0 \cdot 10^{14}\,\text{Hz}$
 **Find:** the difference of the work functions $W_\text{B} - W_\text{A}$ in electronvolts and which metal has the greater work function
 **Principle:** According to the photoelectric equation $E_\text{k,max} = hf - W$ for both metals. At the same frequency the photon energy $hf$ is the same, so the difference of the kinetic energies is the difference of the work functions. The slope of both lines is $h$.
-**Reading the graph:** In the graph drawn on paper the line of A runs above the line of B. The vertical gap between the lines is about $0.9\,\text{eV}$ at every frequency, so they are parallel. The slopes are $\tfrac{2.26\,\text{eV} - 1.01\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.2 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$ and $\tfrac{1.35\,\text{eV} - 0.12\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.1 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, that is both are approximately $\tfrac{h}{e} = 4.14 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$.
+**Reading the graph:** In the graph drawn on paper the line of A runs above the line of B. The vertical gap between the lines is about $0.9\,\text{eV}$ at every frequency, so they are parallel. The slopes are $\tfrac{2.26\,\text{eV} - 1.01\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.2 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$ and $\tfrac{1.35\,\text{eV} - 0.12\,\text{eV}}{3.0 \cdot 10^{14}\,\text{Hz}} = 4.1 \cdot 10^{-15}\,\tfrac{\text{eV}}{\text{Hz}}$, that is both are approximately $h = 4.14 \cdot 10^{-15}\,\text{eV}\,\text{s}$.
 **Formula:** $$\begin{aligned} E_\text{k,A} - E_\text{k,B} &= (hf - W_\text{A}) \\
 &- (hf - W_\text{B}) \\
 &= W_\text{B} - W_\text{A}
@@ -256,7 +256,7 @@ $$
 &\cdot 6.5 \cdot 10^{14}\,\text{Hz} \\
 &= -2.137\,\text{eV}
 \end{aligned}
-$$, so its absolute value is the same as $W$, and the student's reading $-2.1\,\text{eV}$ agrees with this. The slope $4.133 \cdot 10^{-15}\,\text{eV/Hz}$ is the Planck constant $\tfrac{h}{e}$, as it should be, and the threshold frequency $5.17 \cdot 10^{14}\,\text{Hz}$ is smaller than the smallest measured frequency $6.5 \cdot 10^{14}\,\text{Hz}$, because electrons were already released at that frequency.
+$$, so its absolute value is the same as $W$, and the student's reading $-2.1\,\text{eV}$ agrees with this. The slope $4.133 \cdot 10^{-15}\,\text{eV/Hz}$ is the Planck constant $h$ in the unit $\text{eV}\,\text{s}$, as it should be, and the threshold frequency $5.17 \cdot 10^{14}\,\text{Hz}$ is smaller than the smallest measured frequency $6.5 \cdot 10^{14}\,\text{Hz}$, because electrons were already released at that frequency.
 
 ## fy8-1-L3-01
 **Given:** work function of sodium $W = 2.28\,\text{eV}$, wavelength $\lambda = 350\,\text{nm}$, mass of the electron $m = 9.109 \cdot 10^{-31}\,\text{kg}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^8\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
@@ -383,7 +383,7 @@ $$. The threshold wavelength is just below the violet edge of visible light, abo
 **Asked:** the greatest kinetic energy $E_\text{k,max}$ of the electrons released from metal A, in electronvolts
 **Principle:** The line of the graph shows the photoelectric equation $E_\text{k,max} = hf - W$. When the frequency is known, the greatest kinetic energy is read from the line directly on the vertical axis.
 **Reading the graph:** Find the frequency $12 \cdot 10^{14}\,\text{Hz}$ on the horizontal axis and go straight up to the line of metal A. The line meets this vertical line between the grid lines $2\,\text{eV}$ and $3\,\text{eV}$, three tenths below $3\,\text{eV}$, so the reading is about $2.7\,\text{eV}$.
-**Formula:** The check is calculated: $E_\text{k,max} = hf - W = \dfrac{h}{e}\,(f - f_0)$, where the slope of the line is $\dfrac{h}{e} = 0.4136\,\text{eV}$ for every $10^{14}\,\text{Hz}$ and the line of metal A starts on the horizontal axis at the threshold frequency $f_0 \approx 5.6 \cdot 10^{14}\,\text{Hz}$.
+**Formula:** The check is calculated: $E_\text{k,max} = hf - W = h\,(f - f_0)$, where the slope of the line is $h = 4.136 \cdot 10^{-15}\,\text{eV}\,\text{s}$, that is $0.4136\,\text{eV}$ for every $10^{14}\,\text{Hz}$ and the line of metal A starts on the horizontal axis at the threshold frequency $f_0 \approx 5.6 \cdot 10^{14}\,\text{Hz}$.
 **Conversions:** The frequencies are used in units of $10^{14}\,\text{Hz}$, so the slope is $0.4136\,\text{eV}$ and the result comes out directly in electronvolts.
 **Substitution:** $E_\text{k,max} = 0.4136\,\text{eV} \cdot (12 - 5.56) = 2.66\,\text{eV}$
 **Answer:** $E_\text{k,max} \approx 2.7\,\text{eV}$ (calculated $2.66\,\text{eV}$); the graph can be read to about $0.1\,\text{eV}$, so two significant figures are enough.
@@ -397,7 +397,7 @@ $$. The threshold wavelength is just below the violet edge of visible light, abo
 **Formula:** $c = f_0 \lambda_0$, so $\lambda_0 = \dfrac{c}{f_0}$
 **Conversions:** $f_0 = 7.0 \cdot 10^{14}\,\text{Hz}$ is already in hertz; the result in metres is converted to nanometres: $1\,\text{m} = 10^{9}\,\text{nm}$.
 **Substitution:** $\lambda_0 = \dfrac{2.998 \cdot 10^8\,\tfrac{\text{m}}{\text{s}}}{7.0 \cdot 10^{14}\,\tfrac{1}{\text{s}}} = 4.283 \cdot 10^{-7}\,\text{m} = 428\,\text{nm}$
-**Answer:** $\lambda_0 \approx 428\,\text{nm}$, three significant figures; the frequency was read to two, so the result is accurate to about $\pm 1\,\%$.
+**Answer:** $\lambda_0 \approx 4.3 \cdot 10^{2}\,\text{nm}$ (calculated value $428\,\text{nm}$). Two significant figures, because the frequency $7.0 \cdot 10^{14}\,\text{Hz}$ read from the graph has two.
 **Reasonableness:** The threshold wavelength is in the violet region, and the photon energy there is $$
 \begin{aligned}
 1240\,\text{eV}\,\text{nm} : 428\,\text{nm} &\approx 2.9\,\text{eV}

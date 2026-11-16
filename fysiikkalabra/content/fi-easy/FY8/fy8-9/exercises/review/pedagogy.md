@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: dea12362e4d16611
-Mode: full (translation review against the reviewed Finnish set)
-Round 1
+CONTENT-HASH: 2492493ba54a8626
 
 ## Blocking
+
 (none)
 
 ## Polish
-(none)
+
+- solutions.md:137 — "Puoliintumisaikaan se vaikuttaa jaettuna luvulla $\ln 4{,}42 \approx 1{,}5$." is hard for an S2 reader and gives no result; clearer: "Puoliintumisajassa virhe on pienempi: $13\,\% : 1{,}5 \approx 8\,\%$."
 
 ## Checked
-- fy8-9-L1-09: Level 1 graph choice: the four option figures are needed to answer, share axes and curve style, descriptions give the plotted data without saying which is right; each distractor represents a recognisable misconception and its feedback repairs it.
-- Level and kind identical to fi; a mixture of levels per the rubric remains.
-- fi-easy keeps the same numbers and physics as fi; sentences shorter and plainer (NOTES.md §12).
-- Solution is followable step by step and mirrors fi.
+
+- Delta only: solutions.md line 137 and the caption marker removed from exercises.json.
+- The remark is now three short sentences (selkeä suomi) and shows the steps $\sqrt{64} = 8$ and $\tfrac{8}{64} \approx 13\,\%$ that the earlier version skipped; same numbers as the Finnish version, no step dropped.
+- The answer $149\,\text{s}$ and the task's demand are unchanged.
+- Finnish correct; "vaihtelu" used consistently for hajonta as in the rest of this version's solution.
+- Removing the caption marker takes nothing a task needs.
+- Judged from the diff and the packet text; no capture opened.

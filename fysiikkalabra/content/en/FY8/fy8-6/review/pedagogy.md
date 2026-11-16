@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 37514d449f22d53d
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 7dd44adfc8bab573
+Mode: delta (round 1)
 
 ## Blocking
 - none
@@ -9,4 +9,9 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Word-level diff since origin/main checked for clarity, paragraph length, core vs extension marking (core flag and "Syventävä"/"Extension"/"Lisätieto" prefixes), feedback and model answers consistent with the new wording, no bold in task statements, decimal convention, plain-language register in fi-easy.
+- inquiry.json:359 feedback "turns into internal energy in the LED": still repairs the misconception (the energy gap fixes the photon energy, the colour stays red).
+- lesson.md:54 (rendered :204) "internal energy in the LED, which is transferred to the surroundings as heat": one added clause, paragraph short, causal chain intact; matches the feedback.
+- lesson.md:452 "The extra energy heats the LED" is consistent with the new wording; no leftover "turns into heat".
+- exit-ticket.json: chains only re-broken into rows; same numbers and order as the Finnish version, whose capture reads cleanly.
+- English of both changed sentences is correct and at the reader's level.
+- Hash identical at start and end.

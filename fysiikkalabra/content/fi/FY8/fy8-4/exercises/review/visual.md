@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 471c785af1e56195
+CONTENT-HASH: df0225f5b9796ad4
 
 ## Blocking
 
 ## Polish
-- [Minor] solutions L3-05, b): '+ 9,319' then '· 8,863) · 10^-48 ...' still splits a term although it would fit one row at 1280 px; acceptable as the block is fixed for 390 px.
 
 ## Checked
-- delta: fi L3-1280-8 and -9 opened; p_e^2 block renders cleanly, terms mostly whole.
+- Delta round 1 (wording): one comma added to the Kysytty line of fy8-4-L3-04. Hash df0225f5b9796ad4 at the start and at the end.
+- Opened fy8-4-open-exercises-L3-1280-5 (task 4-20 with its solution open): Kysytty now reads "osumien keräämiseen kuluva aika t sekunteina, fotonien keskimääräinen väli d sekä perustelu sille, miksi reitin tunteminen tuhoaisi raitakuvion"; the list of three asked things is now separated correctly (before, "sekunteina fotonien" ran together). Two lines, inside the card, symbols t and d in maths.
+- Opened fy8-4-open-exercises-L3-1280-6 (the rest of the same solution): Muunnokset, Sijoitus rows and Vastaus unchanged and intact; the layout survived.
+- No figure, formula, number or unit changed; nothing else judged in this delta.
+
+## Scores
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4

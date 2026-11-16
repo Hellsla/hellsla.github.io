@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 20a822f7aa26530b
+CONTENT-HASH: d9f79207147a8ef9
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] re-broken aligned rows (delta round 3) — in fy8-15 L2-01 the row "· c^2 = 37,841 MeV" begins with a break before · inside the product (the bracket term is too long for one row, so the rule allows it); readable, no change needed.
 
 ## Checked
-Delta, reflow only. Opened at 1280 px: fy8-13 open-exercises-1280-7 (task 13-7 Sijoitus), fy8-10 open-exercises-1280-1 (Δm chain: terms "6·1,007825 u" / "+ 6·1,008665 u" / "− 12,000000 u = …" whole, = and + aligned), fy8-15 open-exercises-L2-1280-2 and L3-1280-8; at 390 px: fy8-11 example-390-2 (m_loppu rows: each + term whole). No term is cut, no clipping, no overflow, operators aligned, spacing even. Other sets' changed blocks use the same re-break pattern (term per row) and were judged by this sample.
+- Delta round 1 (wording, caption-label), fi-easy: "leptolukua" → "leptonilukua" and "baryolukua" → "baryonilukua" in the Järkevyys of fy8-15-L2-06. Hash d9f79207147a8ef9 at the start and at the end.
+- Opened fy8-15-open-exercises-L2-1280-8 (end of task 15-15's solution, then task 15-16): Järkevyys reads "reaktio 3 leptonilukua, reaktio 5 varausta ja reaktio 7 baryonilukua"; the terms now match "baryoniluku ja leptoniluku" in the next solution's Periaate. The short Selkeä suomi sentences ("Ne tunnetaan.") are kept; five lines inside the tinted block. The card of task 15-16 below it is intact.
+- Caption change (the marker "esimerkkiaineisto" removed, teacher-approved): this version's table captures were not opened; the four captions were read in the source (Kvarkkiyhdistelmiä, Reaktioita, and two with their real sources), no marker or stray bracket left. The same caption component was seen rendered in the Finnish set's capture L2-1280-7.
+- No figure, formula, number or unit changed; nothing else judged in this delta.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 5 · accessibility 4
