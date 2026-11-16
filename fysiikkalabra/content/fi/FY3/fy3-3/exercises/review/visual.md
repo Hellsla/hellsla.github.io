@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2ecc36052596caa4
+CONTENT-HASH: fb52a24fb4f6c71f
 
 ## Blocking
 (none)
@@ -8,8 +8,9 @@ CONTENT-HASH: 2ecc36052596caa4
 (none)
 
 ## Checked
-- Round 1, delta. Opened fy3-3-open-exercises-1280-6: the end of 3-6's Mallivastaus with "Suljetun systeemin lämpötila ei myöskään välttämättä ole vakio." reads naturally; next task 3-7 layout intact.
-- Hash same at start and end.
+- Round 1, delta (reflow into display/aligned rows). Opened at 1280 px: fy3-3 L2 capture 3 (L2-02 Järkevyys display row, 3-13 graph and Annettu).
+- Equals signs in one column, no row breaks inside a number or unit, closing punctuation stays inside the box (no orphan comma or period), nothing clipped. No 390 px exercise captures exist (only the closed Tehtävät stage); the 360 px layout check is clean.
+- Hash unchanged at the end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4
