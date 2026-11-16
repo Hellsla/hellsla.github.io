@@ -1,9 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: dae6c1b01b660955
+CONTENT-HASH: 66d5ebc227c0907c
 
 ## Blocking
 
 ## Polish
+- [Minor] fig-9 (particles) — the cold row's arrows are blue and the warm row's red (fits the palette's temperature colours, but blue is also the velocity colour); the labels and arrow lengths carry the meaning — optionally say in the aria-label that the arrows only show the size of the vibration.
 
 ## Checked
-- batch delta review: the changed display formulas of this lesson rendered at 390 px (all aligned displays opened with hints, feedback and solutions revealed, cropped with their paragraph; fy3-1, 4, 10, 11, 14, 15 read in full sheets, fy3-6, 11, 15 also at 1280 px); programmatic check over all displays at 390 and 1280 px: no clipping or overflow, no stray punctuation line (the page puts it inside the formula), no row break inside a number or unit, continuation rows start with an operator, equals signs in one column. The default stage captures do not show the changed formulas (they sit in closed hints and feedback), so they were not used.
+- Delta: the particles figure now animated (`fa-vib`, 6 px cold, 18 px warm) and the Result stage with the "at least 87 mm" rounding.
+- Opened `fy3-8-fig-9-390.png`: still frame intact, labels d₀ and d > d₀, brackets, equal-size particles and the "gaps exaggerated" caption readable, nothing clipped.
+- Opened `fy3-8-example-390-2.png`: Result and Reasonableness stages, "86 mm → at least 87 mm" and units render correctly as KaTeX, aligned chain, short paragraphs.
+- Opened `fy3-8-theory-1280-1.png`: the figure sits beside its paragraph with a visible Pause the animation control.
+- Other captures not opened (delta; the diff does not touch them).
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -412,6 +412,8 @@
     "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}",
     "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)",
     "zoom_open": "Suurenna kuva",
+    "anim_play": "Käynnistä animaatio",
+    "anim_pause": "Pysäytä animaatio",
     "zoom_close": "Sulje",
     "zoom_dialog": "Suurennettu kuva",
     "sim_expand_aria": "Suurenna simulaatio",
