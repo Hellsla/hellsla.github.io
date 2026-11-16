@@ -57,7 +57,7 @@
 **Conversions:** The speed is in $\text{m/s}$ and $g$ in $\text{m/s}^2$, so the unit of the quotient is $\dfrac{\text{m/s}}{\text{m/s}^2} = \text{s}$. No conversions are needed.
 **Substitution:** $t = \dfrac{12.0\,\text{m/s}}{9.81\,\text{m/s}^2} = 1.223\,\text{s}$
 **Answer:** $1.22\,\text{s}$, three significant figures as in the speed $12.0\,\text{m/s}$.
-**Reasonableness:** The speed increases by about $10\,\text{m/s}$ every second, so reaching $12\,\text{m/s}$ takes a little over a second. Back-calculation: $9.81\,\text{m/s}^2 \cdot 1.22\,\text{s} = 12.0\,\text{m/s}$.
+**Reasonableness:** The speed increases by about $10\,\text{m/s}$ every second, so reaching $12\,\text{m/s}$ takes a little over a second. Back-calculation: $$\begin{aligned} &9.81\,\text{m/s}^2 \cdot 1.22\,\text{s} \\ &= 12.0\,\text{m/s} \end{aligned}$$.
 
 ## fy1-6-L2-02
 **Given:** graphs of bodies dropped from rest on two planets without an atmosphere, A and B; the time for the body on planet A $t_\text{A} = 5.0\,\text{s}$
@@ -180,7 +180,7 @@
 **Reading the graph:** At the moment $0.05\,\text{s}$ the point of the paper is on the line of the ball, but at the moment $0.10\,\text{s}$ the speed of the paper $0.93\,\text{m/s}$ is already $\dfrac{0.98 - 0.93}{0.98} \approx 5\,\%$ below the value of the model $0.98\,\text{m/s}$. The criterion is taken to be a deviation of more than $5\,\%$. After the moment $0.30\,\text{s}$ the speed of the paper hardly increases any more, although the speed of the ball keeps increasing.
 **Formula:** $v_\text{model} = g\,t$ and shortfall $= \dfrac{v_\text{model} - v_\text{paper}}{v_\text{model}} \cdot 100\,\%$
 **Conversions:** Not needed: the speeds are in $\text{m/s}$ and the times in $\text{s}$.
-**Substitution:** $v_\text{model} = 9.81\,\text{m/s}^2 \cdot 0.40\,\text{s} = 3.924\,\text{m/s}$. The difference is $3.924\,\text{m/s} - 1.49\,\text{m/s} = 2.434\,\text{m/s}$, so
+**Substitution:** $v_\text{model} = 9.81\,\text{m/s}^2 \cdot 0.40\,\text{s} = 3.924\,\text{m/s}$. The difference is $$\begin{aligned} &3.924\,\text{m/s} - 1.49\,\text{m/s} \\ &= 2.434\,\text{m/s} \end{aligned}$$, so
 $$\begin{aligned} \text{shortfall} &= \dfrac{2.434\,\text{m/s}}{3.924\,\text{m/s}} \cdot 100\,\% \\ &= 62.0\,\% \end{aligned}$$
 **Answer:** At the moment $0.40\,\text{s}$ the speed of the filter paper is about $62\,\%$ smaller than the one given by the model. The model stops being valid for the paper at about the moment $0.10\,\text{s}$, when the deviation exceeds $5\,\%$ and grows from there on, because air resistance grows as the speed grows. Air resistance affects the ball little, so the model is valid for it over the whole measured interval.
 **Reasonableness:** The speed of the ball $3.93\,\text{m/s}$ matches the model $3.924\,\text{m/s}$. The smaller speed of the paper fits a light and wide object in air.
@@ -198,7 +198,7 @@ $$\begin{aligned} \text{shortfall} &= \dfrac{2.434\,\text{m/s}}{3.924\,\text{m/s
 ## fy1-6-L2-08
 **Find:** the speed $v$ of the lighter ball at the moment $2.0\,\text{s}$ and the reason why it is what it is.
 **Principle:** There is no air resistance in a vacuum, so both balls are in free fall and start from rest. Then the speed is $v = g\,t$, and the acceleration of free fall $g = 9.81\,\text{m/s}^2$ is the same for all objects regardless of mass.
-**Model answer:** The speed of the lighter ball is the same as that of the heavier one, $19.6\,\text{m/s}$, because $v = g\,t = 9.81\,\text{m/s}^2 \cdot 2.0\,\text{s} = 19.62\,\text{m/s}$ does not contain the mass. The reason is that $g$ is the same for all objects without air resistance. Increasing the mass increases both the pull towards the Earth and the difficulty of setting the object in motion, and these cancel each other. The result is the same as the speed of the heavier ball given in the task, $19.6\,\text{m/s}$.
+**Model answer:** The speed of the lighter ball is the same as that of the heavier one, $19.6\,\text{m/s}$, because $$\begin{aligned} v &= g\,t \\ &= 9.81\,\text{m/s}^2 \cdot 2.0\,\text{s} \\ &= 19.62\,\text{m/s} \end{aligned}$$ does not contain the mass. The reason is that $g$ is the same for all objects without air resistance. Increasing the mass increases both the pull towards the Earth and the difficulty of setting the object in motion, and these cancel each other. The result is the same as the speed of the heavier ball given in the task, $19.6\,\text{m/s}$.
 
 ## fy1-6-L1-09
 **Given:** time $t = 3.0\,\text{s}$, initial speed $0$; from the table (MAFY table, Aurinkokunta, Moon) free-fall acceleration $g = 1.622\,\text{m/s}^2$
@@ -208,4 +208,4 @@ $$\begin{aligned} \text{shortfall} &= \dfrac{2.434\,\text{m/s}}{3.924\,\text{m/s
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $v = 1.622\,\tfrac{\text{m}}{\text{s}^2} \cdot 3.0\,\text{s} = 4.866\,\tfrac{\text{m}}{\text{s}}$
 **Answer:** $4.9\,\text{m/s}$, two significant figures as in the time $3.0\,\text{s}$. The answer is accepted within about $\pm 4\,\%$.
-**Reasonableness:** On Earth the speed would be $9.81\,\text{m/s}^2 \cdot 3.0\,\text{s} = 29.4\,\text{m/s}$. The Moon's free-fall acceleration is about one sixth of Earth's, so the speed is about one sixth too: $29.4\,\text{m/s} : 6 \approx 4.9\,\text{m/s}$.
+**Reasonableness:** On Earth the speed would be $$\begin{aligned} &9.81\,\text{m/s}^2 \cdot 3.0\,\text{s} \\ &= 29.4\,\text{m/s} \end{aligned}$$. The Moon's free-fall acceleration is about one sixth of Earth's, so the speed is about one sixth too: $29.4\,\text{m/s} : 6 \approx 4.9\,\text{m/s}$.

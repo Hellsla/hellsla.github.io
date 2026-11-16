@@ -151,7 +151,13 @@ $E_\text{televisio} = 80\,\text{W} \cdot 3{,}5\,\text{h} = 280\,\text{Wh}$
 $E_\text{tietokone} = 50\,\text{W} \cdot 6{,}0\,\text{h} = 300\,\text{Wh}$
 $E_\text{keitin} = 2000\,\text{W} \cdot 0{,}20\,\text{h} = 400\,\text{Wh}$
 $E_\text{kuivain} = 1800\,\text{W} \cdot 0{,}10\,\text{h} = 180\,\text{Wh}$
-Summa on $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, joten $E_\text{yht} = 1960 \cdot 10^{-3}\,\text{kWh} = 1{,}96\,\text{kWh}$.
+Summa on $$
+\begin{aligned}
+&800 + 280 + 300 + 400 \\
+&+ 180 \\
+&= 1960\,\text{Wh}
+\end{aligned}
+$$, joten $E_\text{yht} = 1960 \cdot 10^{-3}\,\text{kWh} = 1{,}96\,\text{kWh}$.
 **Vastaus:** $1{,}96\,\text{kWh}$ eli noin $2{,}0\,\text{kWh}$. Eniten energiaa kuluttaa jääkaappi, $0{,}80\,\text{kWh}$, vaikka sen teho $100\,\text{W}$ on pienempi kuin keittimen ja kuivaimen. Syy on pitkä käyntiaika.
 **Järkevyys:** Keitin ja kuivain ovat tehokkaimmat, mutta ne käyvät vain lyhyen aikaa: yhteensä $0{,}58\,\text{kWh}$. Vuorokauden kulutus on muutaman kilowattitunnin luokkaa, mikä sopii kotitaloudelle, jonka vuosikulutus on tuhansia kilowattitunteja.
 
@@ -174,7 +180,9 @@ Summa on $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, joten $E_\text{yht} = 
 **Muunnokset:** $50\,\text{min} = 50 \cdot (1\,\text{h} : 60) = \tfrac{5}{6}\,\text{h}$, joten $\Delta t = 0{,}833\,\text{h}$. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $P = \dfrac{1{,}50\,\text{kWh} - 0{,}00\,\text{kWh}}{0{,}833\,\text{h}} = 1{,}80\,\text{kW} = 1{,}80 \cdot 1000\,\text{W} = 1800\,\text{W}$
 **Vastaus:** $1800\,\text{W}$ eli $1{,}8\,\text{kW}$, kaksi merkitsevää numeroa. Silmämääräinen sovitus vaihtelee, joten noin $1710\text{–}1890\,\text{W}$ on hyvä vastaus. Suora kulkee origon kautta, koska mittari nollattiin alussa: kun aikaa ei ole kulunut, energiaa ei ole muuntunut. Jyrkkyys on teho, koska se kertoo energian lisäyksen aikayksikköä kohti.
-**Järkevyys:** Teho $1{,}8\,\text{kW}$ on tyypillinen lämmittimelle tai hiustenkuivaimelle. Kymmenessä minuutissa kuluu $1{,}8\,\text{kW} \cdot (1\,\text{h} : 6) = 0{,}30\,\text{kWh}$, mikä vastaa taulukon ensimmäistä lukemaa $0{,}31\,\text{kWh}$.
+**Järkevyys:** Teho $1{,}8\,\text{kW}$ on tyypillinen lämmittimelle tai hiustenkuivaimelle. Kymmenessä minuutissa kuluu $$
+1{,}8\,\text{kW} \cdot (1\,\text{h} : 6) = 0{,}30\,\text{kWh}
+$$, mikä vastaa taulukon ensimmäistä lukemaa $0{,}31\,\text{kWh}$.
 
 ## fy2-3-L3-04
 **Annettu:** taulukon tunnit ja keskitehot (kulutus $P_\text{k}$, tuotanto $P_\text{t}$ megawatteina): klo 05–06 $8400$ ja $8900$, 06–07 $9100$ ja $8900$, 07–08 $9900$ ja $9300$, 08–09 $10\,400$ ja $9600$, 09–10 $10\,600$ ja $9800$, 10–11 $10\,300$ ja $9900$, 11–12 $9800$ ja $9900$, 12–13 $9600$ ja $9800$
@@ -182,7 +190,13 @@ Summa on $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, joten $E_\text{yht} = 
 **Periaate:** Kunkin tunnin teho on keskiteho, joten tunnin energia on $E = P\,\Delta t$ ja $\Delta t = 1\,\text{h}$. Puuttuva teho on erotus $\Delta P = P_\text{k} - P_\text{t}$, kun se on positiivinen. Puuttuvat energiat lasketaan tunneittain ja summataan.
 **Kaava:** $\Delta P = P_\text{k} - P_\text{t}$ ja $E = \Delta P\,\Delta t$
 **Muunnokset:** $1\,\text{MWh} = 10^{-3}\,\text{GWh}$, koska $1\,\text{MW} = 10^{-3}\,\text{GW}$.
-**Sijoitus:** Erotukset tunneittain: klo 05–06 $-500\,\text{MW}$ (tuotantoa yli), 06–07 $200\,\text{MW}$, 07–08 $600\,\text{MW}$, 08–09 $800\,\text{MW}$, 09–10 $800\,\text{MW}$, 10–11 $400\,\text{MW}$, 11–12 $-100\,\text{MW}$ ja 12–13 $-200\,\text{MW}$. Kulutus ylittää tuotannon tunteina 06–11. Summa on $200 + 600 + 800 + 800 + 400 = 2800$, joten $E = 2800\,\text{MW} \cdot 1\,\text{h} = 2800\,\text{MWh} = 2800 \cdot 10^{-3}\,\text{GWh} = 2{,}8\,\text{GWh}$.
+**Sijoitus:** Erotukset tunneittain: klo 05–06 $-500\,\text{MW}$ (tuotantoa yli), 06–07 $200\,\text{MW}$, 07–08 $600\,\text{MW}$, 08–09 $800\,\text{MW}$, 09–10 $800\,\text{MW}$, 10–11 $400\,\text{MW}$, 11–12 $-100\,\text{MW}$ ja 12–13 $-200\,\text{MW}$. Kulutus ylittää tuotannon tunteina 06–11. Summa on $$
+\begin{aligned}
+&200 + 600 + 800 + 800 \\
+&+ 400 \\
+&= 2800
+\end{aligned}
+$$, joten $E = 2800\,\text{MW} \cdot 1\,\text{h} = 2800\,\text{MWh} = 2800 \cdot 10^{-3}\,\text{GWh} = 2{,}8\,\text{GWh}$.
 **Vastaus:** Puuttuva energia on $2{,}8\,\text{GWh}$, kaksi merkitsevää numeroa. Kulutus on suurimmillaan klo 09–10, $10\,600\,\text{MW}$. Suurin vaje on $800\,\text{MW}$ tunteina 08–09 ja 09–10, joten säätövoimaa ja tuontia tarvitaan vähintään $800\,\text{MW}$. Vaje kasvaa nopeasti aamulla ja pienenee puolenpäivän aikaan, joten tehtävään sopii nopeasti säädettävä voimalaitos, kuten vesivoimala. Tuulivoima ei sovi, koska se riippuu säästä, eikä ydinvoimala, koska se on tasaista perusvoimaa.
 **Järkevyys:** Vesivoimalan teho on satoja megawatteja, joten $800\,\text{MW}$ on useiden laitosten yhteisteho, mikä on uskottava Suomen kokoiselle järjestelmälle. Energia $2{,}8\,\text{GWh}$ on huipputunnin vajeen $0{,}8\,\text{GWh}$ kolme–neljä kertaa, mikä sopii viiden tunnin vajeeseen, joka on suurimmillaan kahtena tuntina.
 
@@ -190,9 +204,31 @@ Summa on $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, joten $E_\text{yht} = 
 **Annettu:** taulukon jaksot, joissa kompressori käy $11{,}5$, $12{,}0$, $11{,}5$ ja $12{,}0\,\text{min}$ ja on seis $18{,}0$, $18{,}5$, $17{,}5$ ja $18{,}0\,\text{min}$; käyntiteho $P = 100\,\text{W}$; uuden jääkaapin vuosikulutus $130\,\text{kWh}$; hinta $0{,}20\,\text{€/kWh}$; vuosi $8760\,\text{h}$
 **Kysytty:** vanhan jääkaapin keskiteho ja vuosikulutus sekä uuteen vaihtamalla säästyvä hinta euroina; kannattavuuden arvio
 **Periaate:** Kompressori käy teholla $100\,\text{W}$ vain osan ajasta, joten keskiteho on käyntiteho kerrottuna käyntiajan osuudella kokonaisajasta. Vuosikulutus on keskiteho kertaa vuoden aika, ja säästö on kulutusten erotus kertaa hinta. Malli olettaa, että mitatut jaksot kuvaavat koko vuotta.
-**Kaava:** $\text{osuus} = \dfrac{t_\text{käy}}{t_\text{käy} + t_\text{seis}}$, $P_\text{ka} = \text{osuus} \cdot P$, $E = P_\text{ka}\,t$ ja $\text{säästö} = (E - E_\text{uusi}) \cdot \text{yksikköhinta}$
+**Kaava:** $\text{osuus} = \dfrac{t_\text{käy}}{t_\text{käy} + t_\text{seis}}$, $P_\text{ka} = \text{osuus} \cdot P$, $E = P_\text{ka}\,t$ ja $$ \begin{aligned} \text{säästö} &= (E - E_\text{uusi}) \\ &\cdot \text{yksikköhinta} \end{aligned} $$
 **Muunnokset:** Keskiteho muunnetaan kilowateiksi sijoittamalla $1\,\text{W} = 10^{-3}\,\text{kW}$.
-**Sijoitus:** Käyntiaikojen summa on $11{,}5 + 12{,}0 + 11{,}5 + 12{,}0 = 47{,}0\,\text{min}$ ja seisonta-aikojen summa $18{,}0 + 18{,}5 + 17{,}5 + 18{,}0 = 72{,}0\,\text{min}$. Kokonaisaika on $47{,}0\,\text{min} + 72{,}0\,\text{min} = 119{,}0\,\text{min}$, joten osuus on $\dfrac{47{,}0}{119{,}0} = 0{,}395$. Keskiteho on $P_\text{ka} = 0{,}395 \cdot 100\,\text{W} = 39{,}5\,\text{W} = 0{,}0395\,\text{kW}$. Vuosikulutus on $E = 0{,}0395\,\text{kW} \cdot 8760\,\text{h} = 346\,\text{kWh}$. Säästö on $(346\,\text{kWh} - 130\,\text{kWh}) \cdot 0{,}20\,\text{€/kWh} = 216\,\text{kWh} \cdot 0{,}20\,\text{€/kWh} = 43{,}2\,\text{€}$.
+**Sijoitus:** Käyntiaikojen summa on $$
+\begin{aligned}
+&11{,}5 + 12{,}0 + 11{,}5 + 12{,}0 \\
+&= 47{,}0\,\text{min}
+\end{aligned}
+$$ ja seisonta-aikojen summa $$
+\begin{aligned}
+&18{,}0 + 18{,}5 + 17{,}5 + 18{,}0 \\
+&= 72{,}0\,\text{min}
+\end{aligned}
+$$. Kokonaisaika on $$
+\begin{aligned}
+&47{,}0\,\text{min} + 72{,}0\,\text{min} \\
+&= 119{,}0\,\text{min}
+\end{aligned}
+$$, joten osuus on $\dfrac{47{,}0}{119{,}0} = 0{,}395$. Keskiteho on $P_\text{ka} = 0{,}395 \cdot 100\,\text{W} = 39{,}5\,\text{W} = 0{,}0395\,\text{kW}$. Vuosikulutus on $E = 0{,}0395\,\text{kW} \cdot 8760\,\text{h} = 346\,\text{kWh}$. Säästö on $$
+\begin{aligned}
+&(346\,\text{kWh} - 130\,\text{kWh}) \\
+&\cdot 0{,}20\,\text{€/kWh} \\
+&= 216\,\text{kWh} \cdot 0{,}20\,\text{€/kWh} \\
+&= 43{,}2\,\text{€}
+\end{aligned}
+$$.
 **Vastaus:** Keskiteho on noin $40\,\text{W}$, vuosikulutus noin $350\,\text{kWh}$ ja säästö noin $43\,\text{€}$ vuodessa, kaksi merkitsevää numeroa. Uusi $600\,\text{€}$ jääkaappi maksaisi itsensä takaisin vasta ajassa $600\,\text{€} : 43\,\text{€/a} \approx 14\,\text{a}$, joten pelkän sähkön säästön vuoksi hankinta ei kannata, jos vanha jääkaappi toimii. Tulokseen vaikuttavat oletukset: mitattu neljä jaksoa on edustava, eikä huoneen lämpötila, oven avaaminen tai jään kertyminen muuta käyntiaikaa vuoden mittaan, ja muut kulutukset kuten valo ja sulatus jätetään huomiotta.
 **Järkevyys:** Keskiteho $40\,\text{W}$ on alle puolet käyntitehosta, koska kompressori käy noin kaksi viidesosaa ajasta. Jääkaapin vuosikulutus muutamia satoja kilowattitunteja on tyypillinen vanhalle laitteelle, ja sähkön hinta $0{,}20\,\text{€/kWh}$ antaa muutaman kymmenen euron vuosikustannuksen.
 
@@ -203,7 +239,12 @@ Summa on $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, joten $E_\text{yht} = 
 
 Toisella kerralla $P_2 = 6{,}0\,\text{kWh} : 1{,}5\,\text{h} = 4{,}0\,\text{kW}$.
 
-Teho on siis kaksinkertainen: $P_2 : P_1 = 4{,}0\,\text{kW} : 2{,}0\,\text{kW} = 2{,}0$. Kun aika puolittuu ja energia pysyy samana, teho kasvaa kaksinkertaiseksi. Teho ei puolitu, koska aika on nimittäjässä eikä kertoimena. Se ei pysy samana, koska teho kuvaa muuntumisen vauhtia eikä pelkkää energiaa. Se ei nelinkertaistu, koska aika puolittui vain kerran.
+Teho on siis kaksinkertainen: $$
+\begin{aligned}
+P_2 : P_1 &= 4{,}0\,\text{kW} : 2{,}0\,\text{kW} \\
+&= 2{,}0
+\end{aligned}
+$$. Kun aika puolittuu ja energia pysyy samana, teho kasvaa kaksinkertaiseksi. Teho ei puolitu, koska aika on nimittäjässä eikä kertoimena. Se ei pysy samana, koska teho kuvaa muuntumisen vauhtia eikä pelkkää energiaa. Se ei nelinkertaistu, koska aika puolittui vain kerran.
 
 ## fy2-3-L1-09
 **Annettu:** teho $P = 5{,}0\,\text{hp}$ ja aika $\Delta t = 30\,\text{min}$; taulukosta (MAFY-taulukko, yksikkömuunnoksia, teho, hevosvoima) $1\,\text{hp} = 735{,}5\,\text{W}$ (metrinen hevosvoima)

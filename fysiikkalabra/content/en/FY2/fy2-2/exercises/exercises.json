@@ -68,7 +68,7 @@
         },
         {
           "text": "$0.0033\\,\\text{GJ}$",
-          "feedback": "Correct: $0.0033\\,\\text{GJ} = 0.0033 \\cdot 1000\\,\\text{MJ} = 3.3\\,\\text{MJ}$, which is greater than $2.9\\,\\text{MJ}$, $3.1\\,\\text{MJ}$ and $3.0\\,\\text{MJ}$.",
+          "feedback": "Correct: $$\n\\begin{aligned}\n0.0033\\,\\text{GJ} &= 0.0033 \\\\\n&\\cdot 1000\\,\\text{MJ} \\\\\n&= 3.3\\,\\text{MJ}\n\\end{aligned}\n$$, which is greater than $2.9\\,\\text{MJ}$, $3.1\\,\\text{MJ}$ and $3.0\\,\\text{MJ}$.",
           "correct": true
         }
       ]

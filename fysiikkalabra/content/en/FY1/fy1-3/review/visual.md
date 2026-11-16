@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f5d92ee6b70e1813
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff since origin/main only)
+CONTENT-HASH: f0c25c98f87c1ab7
 
 ## Blocking
 - none
@@ -9,5 +8,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": style-suggestion diff sin
 - none
 
 ## Checked
-- Word-diff of lesson, inquiry, exit ticket: wording, \tfrac{s}{c}, units on s values; no figures.py change in this part, no figure label moved, so no render.
-- Notation in changed passages is LaTeX with thin-space units; decimal comma/point correct for the language.
+delta review 5d reflow, round 1: opened the 360 px captures lesson 01, inquiry 02-04 (tiled into contact sheets, every capture of this part viewed); equals signs aligned, no row broken inside a number or unit, nothing clipped or scrolling, display formulas read naturally in their sentences.
+
+## Scores
+illustrations 5 · typography 4 · English 4 · accessibility 4

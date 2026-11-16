@@ -57,7 +57,7 @@
 **Muunnokset:** Nopeus on yksikössä $\text{m/s}$ ja $g$ yksikössä $\text{m/s}^2$, joten osamäärän yksikkö on $\dfrac{\text{m/s}}{\text{m/s}^2} = \text{s}$. Muunnoksia ei tarvita.
 **Sijoitus:** $t = \dfrac{12{,}0\,\text{m/s}}{9{,}81\,\text{m/s}^2} = 1{,}223\,\text{s}$
 **Vastaus:** $1{,}22\,\text{s}$, kolme merkitsevää numeroa kuten nopeudessa $12{,}0\,\text{m/s}$.
-**Järkevyys:** Nopeus kasvaa noin $10\,\text{m/s}$ sekunnissa, joten nopeuteen $12\,\text{m/s}$ pääsemiseen menee hieman yli sekunti. Takaisinlasku: $9{,}81\,\text{m/s}^2 \cdot 1{,}22\,\text{s} = 12{,}0\,\text{m/s}$.
+**Järkevyys:** Nopeus kasvaa noin $10\,\text{m/s}$ sekunnissa, joten nopeuteen $12\,\text{m/s}$ pääsemiseen menee hieman yli sekunti. Takaisinlasku: $$\begin{aligned} &9{,}81\,\text{m/s}^2 \cdot 1{,}22\,\text{s} \\ &= 12{,}0\,\text{m/s} \end{aligned}$$.
 
 ## fy1-6-L2-02
 **Annettu:** kuvaajat, joissa kappaleet on pudotettu levosta kahdella ilmattomalla planeetalla A ja B; planeetan A kappaleen aika $t_\text{A} = 5{,}0\,\text{s}$
@@ -180,7 +180,7 @@
 **Kuvaajan lukeminen:** Hetkellä $0{,}05\,\text{s}$ paperin piste on pallon suoralla, mutta hetkellä $0{,}10\,\text{s}$ paperin nopeus $0{,}93\,\text{m/s}$ jää mallin arvosta $0{,}98\,\text{m/s}$ jo $\dfrac{0{,}98 - 0{,}93}{0{,}98} \approx 5\,\%$. Kriteeriksi otetaan, että poikkeama on yli $5\,\%$. Hetken $0{,}30\,\text{s}$ jälkeen paperin nopeus ei enää juuri kasva, vaikka pallon nopeus kasvaa edelleen.
 **Kaava:** $v_\text{malli} = g\,t$ ja vaje $= \dfrac{v_\text{malli} - v_\text{paperi}}{v_\text{malli}} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja ajat yksikössä $\text{s}$.
-**Sijoitus:** $v_\text{malli} = 9{,}81\,\text{m/s}^2 \cdot 0{,}40\,\text{s} = 3{,}924\,\text{m/s}$. Erotus on $3{,}924\,\text{m/s} - 1{,}49\,\text{m/s} = 2{,}434\,\text{m/s}$, joten
+**Sijoitus:** $v_\text{malli} = 9{,}81\,\text{m/s}^2 \cdot 0{,}40\,\text{s} = 3{,}924\,\text{m/s}$. Erotus on $$\begin{aligned} &3{,}924\,\text{m/s} - 1{,}49\,\text{m/s} \\ &= 2{,}434\,\text{m/s} \end{aligned}$$, joten
 $$\begin{aligned} \text{vaje} &= \dfrac{2{,}434\,\text{m/s}}{3{,}924\,\text{m/s}} \cdot 100\,\% \\ &= 62{,}0\,\% \end{aligned}$$
 **Vastaus:** Suodatinpaperin nopeus on hetkellä $0{,}40\,\text{s}$ noin $62\,\%$ pienempi kuin mallin antama. Malli lakkaa pätemästä paperille noin hetkellä $0{,}10\,\text{s}$, jolloin poikkeama ylittää $5\,\%$ ja kasvaa siitä eteenpäin, koska ilmanvastus kasvaa nopeuden kasvaessa. Palloon ilmanvastus vaikuttaa vähän, joten malli pätee sille koko mitatulla välillä.
 **Järkevyys:** Pallon nopeus $3{,}93\,\text{m/s}$ vastaa mallia $3{,}924\,\text{m/s}$. Paperin pienempi nopeus sopii kevyelle ja leveälle kappaleelle ilmassa.
@@ -198,7 +198,7 @@ $$\begin{aligned} \text{vaje} &= \dfrac{2{,}434\,\text{m/s}}{3{,}924\,\text{m/s}
 ## fy1-6-L2-08
 **Kysytty:** kevyemmän pallon nopeus $v$ hetkellä $2{,}0\,\text{s}$ ja syy, miksi se on sellainen.
 **Periaate:** Tyhjiössä ei ole ilmanvastusta, joten molemmat pallot ovat vapaassa pudotuksessa ja lähtevät levosta. Silloin nopeus on $v = g\,t$, ja putoamiskiihtyvyys $g = 9{,}81\,\text{m/s}^2$ on sama kaikille kappaleille massasta riippumatta.
-**Mallivastaus:** Kevyemmän pallon nopeus on sama kuin raskaamman eli $19{,}6\,\text{m/s}$, koska $v = g\,t = 9{,}81\,\text{m/s}^2 \cdot 2{,}0\,\text{s} = 19{,}62\,\text{m/s}$ ei sisällä massaa. Perustelu on, että $g$ on sama kaikille kappaleille ilman ilmanvastusta. Massan kasvattaminen lisää sekä Maan vetoa palloon että liikkeelle saamisen vaikeutta, ja nämä kumoavat toisensa. Tulos on sama kuin tehtävässä annettu raskaamman pallon nopeus $19{,}6\,\text{m/s}$.
+**Mallivastaus:** Kevyemmän pallon nopeus on sama kuin raskaamman eli $19{,}6\,\text{m/s}$, koska $$\begin{aligned} v &= g\,t \\ &= 9{,}81\,\text{m/s}^2 \cdot 2{,}0\,\text{s} \\ &= 19{,}62\,\text{m/s} \end{aligned}$$ ei sisällä massaa. Perustelu on, että $g$ on sama kaikille kappaleille ilman ilmanvastusta. Massan kasvattaminen lisää sekä Maan vetoa palloon että liikkeelle saamisen vaikeutta, ja nämä kumoavat toisensa. Tulos on sama kuin tehtävässä annettu raskaamman pallon nopeus $19{,}6\,\text{m/s}$.
 
 ## fy1-6-L1-09
 **Annettu:** aika $t = 3{,}0\,\text{s}$, alkunopeus $0$; taulukosta (MAFY-taulukko, Aurinkokunta, Kuu) putoamiskiihtyvyys $g = 1{,}622\,\text{m/s}^2$
@@ -208,4 +208,4 @@ $$\begin{aligned} \text{vaje} &= \dfrac{2{,}434\,\text{m/s}}{3{,}924\,\text{m/s}
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $v = 1{,}622\,\tfrac{\text{m}}{\text{s}^2} \cdot 3{,}0\,\text{s} = 4{,}866\,\tfrac{\text{m}}{\text{s}}$
 **Vastaus:** $4{,}9\,\text{m/s}$, kaksi merkitsevää numeroa kuten ajassa $3{,}0\,\text{s}$. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Maassa nopeus olisi $9{,}81\,\text{m/s}^2 \cdot 3{,}0\,\text{s} = 29{,}4\,\text{m/s}$. Kuun putoamiskiihtyvyys on noin kuudesosa Maan arvosta, joten myös nopeus on noin kuudesosa: $29{,}4\,\text{m/s} : 6 \approx 4{,}9\,\text{m/s}$.
+**Järkevyys:** Maassa nopeus olisi $$\begin{aligned} &9{,}81\,\text{m/s}^2 \cdot 3{,}0\,\text{s} \\ &= 29{,}4\,\text{m/s} \end{aligned}$$. Kuun putoamiskiihtyvyys on noin kuudesosa Maan arvosta, joten myös nopeus on noin kuudesosa: $29{,}4\,\text{m/s} : 6 \approx 4{,}9\,\text{m/s}$.

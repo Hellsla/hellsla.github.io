@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: b8187c70d80f7adc
+CONTENT-HASH: 557619839d72af4d
+SCOPE: delta reflow from b8187c70d80f7adc base b5600a63ddae
 
 ## Blocking
 - none
@@ -8,10 +9,7 @@ CONTENT-HASH: b8187c70d80f7adc
 - none
 
 ## Checked
-- fy2-5-open-exercises-1280-9: L1-09 solution end (Sijoitus, Vastaus, Järkevyys with a framed rough estimate); units upright, decimal comma, nothing clipped. The L1-09 task text and Vihje box I judged from source only.
-- fy2-5-open-exercises-L2-1280-10: L2-09 (5-18) task, bar chart (H (MJ/kg) axis with unit, ticks, values at bar ends, fuel names), answer row, solution start.
-- fy2-5-open-exercises-L2-1280-11: L2-09 Muunnokset, Sijoitus, Vastaus, Järkevyys.
-- 360 px from the packet's layout check only.
+- Delta (calculation chains re-broken into aligned rows): opened reflow-exercises-1.png at readable size, every re-broken block at 390 px: rows legible, nothing clipped, relation signs aligned, sentence around each block still reads. Contact sheets and other captures not opened; 360 px from the packet's layout check only.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

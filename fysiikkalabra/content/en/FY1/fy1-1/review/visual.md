@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: edd1918d89b51a14
+CONTENT-HASH: 8713d70584c086ec
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: edd1918d89b51a14
 - none
 
 ## Checked
-- batch delta review (en): diff is one wording sentence ('Nebulae, neutron stars and black holes are types of objects found inside galaxies'), reads naturally; fi capture fy1-1-fig-20-390 opened for the shared figure, en captures regenerated, not separately opened.
+delta review 5d reflow, round 1: opened the 360 px captures inquiry 01 (tiled into contact sheets, every capture of this part viewed); equals signs aligned, no row broken inside a number or unit, nothing clipped or scrolling, display formulas read naturally in their sentences.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · English 4 · accessibility 4
