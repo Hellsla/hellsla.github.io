@@ -485,7 +485,7 @@ Toimeksianto sanatarkasti: `docs/audits/2026-11-16-aineistotehtavat.md` (viisi t
 FY9-A5, lähdelinkit tarkistetaan, malliratkaisut, kolme kieltä). Tehtävät lisätään nykyiseen tehtävärakenteeseen sopivan
 luvun soveltaviksi (taso 2–3, `kind` aineisto), FY9:ssä kertauskokonaisuuteen tai yksiköihin. Lähteiden palvelimet ovat
 ympäristön sallituissa (16.11).
-Varattu: claude/fy8-aineisto (FY8)
+FY8 tehty: FY8-A1…A5 (PR #635, oma PR): fy8-3-L2-09, fy8-13-L2-09, fy8-12-L2-08, fy8-9-L2-08, fy8-1-L2-10. PhET Photoelectric (A5) toimii selaimessa CheerpJ:llä; sen arvot luettiin simulaation omasta ohjelmasta (photoelectric_all.jar), koska CheerpJ:n palvelin ei ole ympäristön sallituissa.
 PR:ien yhdistäminen (opettaja 2026-11-16: "jos saat yhdisteltyä PR niin tee, jos vaarana että homma sotkeutuu älä tee"):
 kohta 19 tehdään samassa PR:ssä saman kurssin vielä aloittamattoman työn kanssa (FY4, FY5, FY9 ja FY2: kohta 18; FY3, FY6
 ja FY7: kohta 5d), ei koskaan jo katselmoitavana olevaan PR:ään; FY1 ja FY8 omana PR:nään kurssin nykyisen PR:n jälkeen.
