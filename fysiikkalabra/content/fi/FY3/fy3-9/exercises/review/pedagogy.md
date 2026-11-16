@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 07b8fc3a7879dabc
-SCOPE: delta added-exercise from fb4c9e7694ba0259 base 81db4a6fd727
+CONTENT-HASH: 2c6d0cf2ab541ab3
+SCOPE: delta added-exercise from 9d2994a56073576c base 71f5784fca44
 
 ## Blocking
 None.
 
 ## Polish
-1. fy3-9-L2-09 — tehtävä käyttää isokoorista tilanmuutosta ja kelvinmuunnosta; varmista, että luvun tiivistelmä esittää p/T-vakion, sillä pääotsikko on Boylen laki. Muuten ei muutosta.
-2. fy3-9-L1-09 — ratkaisun "Todellisuudessa lämpötila laskee korkeuden mukana" on hyvä; harkitse tästä lisää vain jos tilaa on, ei tarpeen.
+- fy3-9-L2-10 — workload is at the upper end for one L2 task (6 measurements, graph, fit, prediction, explanation); acceptable as the experimental task, but say it takes a lesson-length slot or lower the minimum to five points.
+- Solution a) uncertainty ±30 kPa vs the first point 51 kPa from the line: the text explains it as one reading, but then "mahtuu heilahtelun rajoihin" in c) is the right comparison; make the ±30 estimate from the spread more explicit.
+- Phone: operating the PhET sim and a graph on a 360 px screen is awkward; note that a computer is recommended.
 
 ## Checked
-- L1-09: taso 1, Boylen laki suoraan, MAFY-haku (vihje vain taulukon nimi); 101·2,0/70,1 = 2,88 l, vastaus 2,9 l.
-- Konteksti (ilmapussi vuorella) tuttu, oletukset (vakiolämpötila, suljettu) sanottu; ei ansaa.
-- Ratkaisussa periaate, muunnos Pa kPa, järkevyys (pV vakio) seurattavissa.
-- L2-09: kuvaaja tarvitaan (piste 300 K; 120 kPa), kuvaus antaa samat pisteet eikä paljasta vastausta; 100 °C tulee muuntaa kelvineiksi, taso 2 sopii.
-- 120·373,15/300 = 149,3 kPa; toleranssi 2 % kattaa lukuvirheet.
-- Ei toista L1-04/L2-02:ta, koska tieto luetaan kuvaajasta ja kuvaaja on isokoorinen.
+- Brief section 6 walked: real investigation, student acts on own data; method solution with dated example data, not a single answer.
+- Ratio 450/300 = 1,50 independent of k; answer field 1,5 with 2 % tolerance correct. Example fit and residuals recomputed: consistent.
+- Variable control (V, N fixed, one variable changed), repeated readings, prediction test outside the range: strong.
+- Uses only lesson content (isokoorinen, kelvin); PhET link returns 200; no repeat of earlier exercises.
+- The answer field cannot check the measurement itself; acceptable.
