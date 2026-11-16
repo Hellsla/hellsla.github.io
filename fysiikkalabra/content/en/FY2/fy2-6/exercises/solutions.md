@@ -228,11 +228,7 @@ P_\text{C} &= 35\,000\,\text{MWh} : 8760\,\text{h} \\
 o_\text{C} &= 4.0\,\text{MW} : 12\,\text{MW} = 0.33
 \end{aligned}
 ```
-**Answer:** The student is not right. Farm B produces the most energy because its rated power is the greatest, but it makes the poorest use of its rated power ($29\,\%$).
-
-The error is to mix up the annual energy and the use of the rated power: the energy grows with the rated power, so the share must be calculated by dividing the average power by the rated power.
-
-The best is farm C, whose average power is $33\,\%$ of the rated power, two significant figures like the rated powers.
+**Answer:** The student is not right. Farm B produces the most energy because its rated power is the greatest, but it makes the poorest use of its rated power ($29\,\%$). The error is to mix up the annual energy and the use of the rated power: the energy grows with the rated power, so the share must be calculated by dividing the average power by the rated power. The best is farm C, whose average power is $33\,\%$ of the rated power, two significant figures like the rated powers.
 **Reasonableness:** If farm B ran at its rated power the whole year, it would produce $60\,\text{MW} \cdot 8760\,\text{h} = 525\,600\,\text{MWh} \approx 526\,\text{GWh}$, and $150 : 526 = 0.29$. All the shares are below one and of the order of a third, as is typical for wind power, because the wind varies.
 
 ## fy2-6-L2-07
@@ -340,17 +336,7 @@ P_\text{Sa} &= 8.7 - 3.5 - 4.2 = 1.0 \\
 P_\text{Su} &= 8.4 - 3.5 - 5.4 = -0.5
 \end{aligned}
 ```
-**Answer:** a) $490\,\text{GWh}$ and $32\,\%$ of the rated power.
-
-b) The greatest need is on Thursday, $6.7\,\text{GW}$, two significant figures like the rated power of wind power $9.0\,\text{GW}$.
-
-c) The power of the rest of the system must vary a great deal: the need was $6.7\,\text{GW}$ on Thursday and only $1.0\,\text{GW}$ on Saturday, so between the weekdays and Saturday the variation is $5.7\,\text{GW}$, and including Sunday ($-0.5\,\text{GW}$) as much as $7.2\,\text{GW}$ in a few days.
-
-From Wednesday to Thursday the wind produced only about $0.4$–$0.6\,\text{GW}$ although the rated power is $9.0\,\text{GW}$, so the rated power does not guarantee production.
-
-Controllable production (for example hydropower), imports or energy storage are needed for days of weak wind.
-
-On Sunday production exceeds consumption by $0.5\,\text{GW}$, so the surplus electricity must be exported, stored, or production must be reduced.
+**Answer:** a) $490\,\text{GWh}$ and $32\,\%$ of the rated power. b) The greatest need is on Thursday, $6.7\,\text{GW}$, two significant figures like the rated power of wind power $9.0\,\text{GW}$. c) The power of the rest of the system must vary a great deal: the need was $6.7\,\text{GW}$ on Thursday and only $1.0\,\text{GW}$ on Saturday, so between the weekdays and Saturday the variation is $5.7\,\text{GW}$, and including Sunday ($-0.5\,\text{GW}$) as much as $7.2\,\text{GW}$ in a few days. From Wednesday to Thursday the wind produced only about $0.4$–$0.6\,\text{GW}$ although the rated power is $9.0\,\text{GW}$, so the rated power does not guarantee production. Controllable production (for example hydropower), imports or energy storage are needed for days of weak wind. On Sunday production exceeds consumption by $0.5\,\text{GW}$, so the surplus electricity must be exported, stored, or production must be reduced.
 **Reasonableness:** The sum of the daily consumption powers $$
 \begin{aligned}
 &9.5 + 9.8 + 10.2 + 10.6 \\

@@ -228,11 +228,7 @@ P_\text{C} &= 35\,000\,\text{MWh} : 8760\,\text{h} \\
 o_\text{C} &= 4{,}0\,\text{MW} : 12\,\text{MW} = 0{,}33
 \end{aligned}
 ```
-**Vastaus:** Oppilas ei ole oikeassa. Puisto B tuottaa eniten energiaa, koska sen nimellisteho on suurin, mutta se hyödyntää nimellistehoaan huonoiten ($29\,\%$).
-
-Virhe on sekoittaa vuosienergia ja nimellistehon hyödyntäminen: energia kasvaa nimellistehon mukana, joten osuus on laskettava jakamalla keskiteho nimellisteholla.
-
-Paras on puisto C, jonka keskiteho on $33\,\%$ nimellistehosta, kaksi merkitsevää numeroa kuten nimellistehoissa.
+**Vastaus:** Oppilas ei ole oikeassa. Puisto B tuottaa eniten energiaa, koska sen nimellisteho on suurin, mutta se hyödyntää nimellistehoaan huonoiten ($29\,\%$). Virhe on sekoittaa vuosienergia ja nimellistehon hyödyntäminen: energia kasvaa nimellistehon mukana, joten osuus on laskettava jakamalla keskiteho nimellisteholla. Paras on puisto C, jonka keskiteho on $33\,\%$ nimellistehosta, kaksi merkitsevää numeroa kuten nimellistehoissa.
 **Järkevyys:** Jos puisto B toimisi koko vuoden nimellisteholla, se tuottaisi $60\,\text{MW} \cdot 8760\,\text{h} = 525\,600\,\text{MWh} \approx 526\,\text{GWh}$, ja $150 : 526 = 0{,}29$. Kaikki osuudet ovat alle yksi ja noin kolmasosan luokkaa, kuten tuulivoimalle on tyypillistä, koska tuuli vaihtelee.
 
 ## fy2-6-L2-07
@@ -340,17 +336,7 @@ P_\text{la} &= 8{,}7 - 3{,}5 - 4{,}2 = 1{,}0 \\
 P_\text{su} &= 8{,}4 - 3{,}5 - 5{,}4 = -0{,}5
 \end{aligned}
 ```
-**Vastaus:** a) $490\,\text{GWh}$ ja $32\,\%$ nimellistehosta.
-
-b) Suurin tarve on torstaina, $6{,}7\,\text{GW}$, kaksi merkitsevää numeroa kuten tuulivoiman nimellistehossa $9{,}0\,\text{GW}$.
-
-c) Muun järjestelmän tehon on vaihdeltava suuresti: tarve oli $6{,}7\,\text{GW}$ torstaina ja vain $1{,}0\,\text{GW}$ lauantaina, eli arkipäivien ja lauantain välillä vaihtelu on $5{,}7\,\text{GW}$, ja sunnuntai mukaan lukien ($-0{,}5\,\text{GW}$) peräti $7{,}2\,\text{GW}$ muutamassa päivässä.
-
-Keskiviikosta torstaihin tuuli tuotti vain noin $0{,}4$–$0{,}6\,\text{GW}$, vaikka nimellisteho on $9{,}0\,\text{GW}$, joten nimellisteho ei takaa tuotantoa.
-
-Tarvitaan säädettävää tuotantoa (esimerkiksi vesivoimaa), tuontia tai energiavarastoja heikon tuulen päiviksi.
-
-Sunnuntaina tuotanto ylittää kulutuksen $0{,}5\,\text{GW}$:lla, joten ylimääräinen sähkö on vietävä, varastoitava tai tuotantoa on vähennettävä.
+**Vastaus:** a) $490\,\text{GWh}$ ja $32\,\%$ nimellistehosta. b) Suurin tarve on torstaina, $6{,}7\,\text{GW}$, kaksi merkitsevää numeroa kuten tuulivoiman nimellistehossa $9{,}0\,\text{GW}$. c) Muun järjestelmän tehon on vaihdeltava suuresti: tarve oli $6{,}7\,\text{GW}$ torstaina ja vain $1{,}0\,\text{GW}$ lauantaina, eli arkipäivien ja lauantain välillä vaihtelu on $5{,}7\,\text{GW}$, ja sunnuntai mukaan lukien ($-0{,}5\,\text{GW}$) peräti $7{,}2\,\text{GW}$ muutamassa päivässä. Keskiviikosta torstaihin tuuli tuotti vain noin $0{,}4$–$0{,}6\,\text{GW}$, vaikka nimellisteho on $9{,}0\,\text{GW}$, joten nimellisteho ei takaa tuotantoa. Tarvitaan säädettävää tuotantoa (esimerkiksi vesivoimaa), tuontia tai energiavarastoja heikon tuulen päiviksi. Sunnuntaina tuotanto ylittää kulutuksen $0{,}5\,\text{GW}$:lla, joten ylimääräinen sähkö on vietävä, varastoitava tai tuotantoa on vähennettävä.
 **Järkevyys:** Päiväkohtaisten kulutustehojen summa $$
 \begin{aligned}
 &9{,}5 + 9{,}8 + 10{,}2 + 10{,}6 \\

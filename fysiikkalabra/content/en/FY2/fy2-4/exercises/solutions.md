@@ -227,11 +227,7 @@ In a year the lamp takes the energy $E_\text{o,y} = 0.0090\,\text{kW} \cdot 1095
 &= 1.38\,\text{€}
 \end{aligned}
 $$.
-**Answer:** The correct efficiency is $30\,\%$. The student's $70\,\%$ is the share of the losses, not the efficiency.
-
-Of the electricity taken by the lamp, about $6.9\,\text{kWh}$ becomes heat in a year, and its cost is about $1.4\,\text{€}$.
-
-The student's $70\,\%$ is the right number for this calculation, because the question is about the part that becomes heat: $30\,\% + 70\,\% = 100\,\%$.
+**Answer:** The correct efficiency is $30\,\%$. The student's $70\,\%$ is the share of the losses, not the efficiency. Of the electricity taken by the lamp, about $6.9\,\text{kWh}$ becomes heat in a year, and its cost is about $1.4\,\text{€}$. The student's $70\,\%$ is the right number for this calculation, because the question is about the part that becomes heat: $30\,\% + 70\,\% = 100\,\%$.
 **Reasonableness:** Light takes $$
 \begin{aligned}
 &0.30 \cdot 9.855\,\text{kWh} \\

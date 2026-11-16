@@ -227,11 +227,7 @@ Vuodessa lamppu ottaa energian $E_\text{o,v} = 0{,}0090\,\text{kW} \cdot 1095\,\
 &= 1{,}38\,\text{€}
 \end{aligned}
 $$.
-**Vastaus:** Oikea hyötysuhde on $30\,\%$. Oppilaan $70\,\%$ on häviöiden osuus, ei hyötysuhde.
-
-Lampun ottamasta sähköstä muuttuu vuodessa lämmöksi noin $6{,}9\,\text{kWh}$, ja sen hinta on noin $1{,}4\,\text{€}$.
-
-Oppilaan $70\,\%$ on tähän laskuun oikea luku, koska kysytään lämmöksi muuttuvaa osaa: $30\,\% + 70\,\% = 100\,\%$.
+**Vastaus:** Oikea hyötysuhde on $30\,\%$. Oppilaan $70\,\%$ on häviöiden osuus, ei hyötysuhde. Lampun ottamasta sähköstä muuttuu vuodessa lämmöksi noin $6{,}9\,\text{kWh}$, ja sen hinta on noin $1{,}4\,\text{€}$. Oppilaan $70\,\%$ on tähän laskuun oikea luku, koska kysytään lämmöksi muuttuvaa osaa: $30\,\% + 70\,\% = 100\,\%$.
 **Järkevyys:** Valoksi menee $$
 \begin{aligned}
 &0{,}30 \cdot 9{,}855\,\text{kWh} \\
