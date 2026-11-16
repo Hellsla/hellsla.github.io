@@ -485,11 +485,8 @@ PR:ien yhdistäminen (opettaja 2026-11-16: "jos saat yhdisteltyä PR niin tee, j
 kohta 19 tehdään samassa PR:ssä saman kurssin vielä aloittamattoman työn kanssa (FY4, FY5, FY9 ja FY2: kohta 18; FY3, FY6
 ja FY7: kohta 5d), ei koskaan jo katselmoitavana olevaan PR:ään; FY1 ja FY8 omana PR:nään kurssin nykyisen PR:n jälkeen.
 FY9 tehty: FY9-A1…A5 (PR #626, kohdan 18 FY9:n kanssa).
-<<<<<<< HEAD
 FY6 tehty: FY6-A1…A5 (PR #627, kohdan 5d FY6:n kanssa): fy6-3-L2-08, fy6-7-L2-09, fy6-15-L2-09, fy6-9-L2-09, fy6-13-L2-09. Opettaja avaa Tukesin kaksi linkkiä (A3, A4) selaimessa ennen yhdistämistä: sivusto ei vastaa automaattisiin hakuihin.
-=======
 FY4 tehty: FY4-A1…A5 (PR #625, kohdan 18 FY4:n kanssa): fy4-11-L2-10, fy4-7-L2-10, fy4-9-L2-09, fy4-10-L2-10, fy4-8-L2-10.
->>>>>>> origin/main
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
