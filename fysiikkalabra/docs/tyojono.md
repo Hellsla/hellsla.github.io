@@ -196,6 +196,8 @@ järjestyksessä, tiede ja pedagogiikka carry, visual delta). Sääntö on NOTES
 steps") ja `lint_lesson.py` varoittaa (2026-11-16: 512 pitkää kappaletta ja 112 kesken kappaleen olevaa kysyttyä
 muissa luvuissa). Jatko kurssi kerrallaan (`/quality-audit --fix`), kaikki kielet, fy3-13:n mallin mukaan.
 
+Varattu: claude/fy2-kappalejako (FY2)
+
 Esimerkkien vaiheet (esim. fy3-13, vaihe 1/7 "Tunnetut ja kysytty") ovat yksi tiivis kappale, jossa on luettuja
 pisteitä, huomautus ja kysymys peräkkäin: vaikea lukea. Opettaja: "näissä teksteissä saisi kappalejakoa olla …
 esim. 'Lämpötila'-alkuinen virke voisi olla jo omalla rivillään." Sääntö: yksi asia per kappale; tunnetut (lista tai
