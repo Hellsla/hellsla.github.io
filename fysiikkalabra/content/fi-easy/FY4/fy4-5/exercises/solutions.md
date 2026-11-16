@@ -212,7 +212,9 @@ a 0
 ## fy4-5-L1-06
 **Kysytty:** mitkä voimat piirretään voimakuvioon, kun laatikko liukuu vaakasuoralla lattialla ja kitka hidastaa sitä.
 **Periaate:** Voimakuvioon piirretään vain ne voimat, jotka vaikuttavat valittuun kappaleeseen. Jokaisella voimalla on aiheuttaja: Maa, pinta, naru tai työntäjä. Nopeus ja kiihtyvyys eivät ole voimia. Newtonin toisen lain mukaan kappale voi liikkua, vaikka liikkeen suuntaista voimaa ei ole.
-**Mallivastaus:** Laatikkoon vaikuttaa kolme voimaa. Maa vetää laatikkoa alas (paino). Lattia tukee laatikkoa ylös (tukivoima). Lattia vastustaa liukumista vasemmalle (kitka). Paino ja tukivoima ovat yhtä pitkät, koska laatikko ei liiku pystysuunnassa. Kitka on ainoa vaakasuora voima, joten se hidastaa laatikkoa. Oikealle osoittavaa liikevoimaa ei ole, koska mikään kappale ei aiheuta sitä. Nopeutta ei piirretä voimaksi. Tarvittaessa se piirretään erikseen voimakuvion viereen. Tukivoimaa ei saa jättää pois, vaikka se kumoaa painon.
+**Mallivastaus:** Laatikkoon vaikuttaa kolme voimaa. Maa vetää laatikkoa alas (paino). Lattia tukee laatikkoa ylös (tukivoima). Lattia vastustaa liukumista vasemmalle (kitka). Paino ja tukivoima ovat yhtä pitkät, koska laatikko ei liiku pystysuunnassa. Kitka on ainoa vaakasuora voima, joten se hidastaa laatikkoa.
+
+Oikealle osoittavaa liikevoimaa ei ole, koska mikään kappale ei aiheuta sitä. Nopeutta ei piirretä voimaksi. Tarvittaessa se piirretään erikseen voimakuvion viereen. Tukivoimaa ei saa jättää pois, vaikka se kumoaa painon.
 
 ## fy4-5-L1-07
 **Annettu:** työntövoimat $F_1 = 120\,\text{N}$ ja $F_2 = 85\,\text{N}$ samaan suuntaan, kitkavoima $F_\mu = 150\,\text{N}$ vastakkaiseen suuntaan; paino ja tukivoima kumoavat toisensa
@@ -238,13 +240,17 @@ akselit 0
 ## fy4-5-L1-08
 **Kysytty:** miten lattian tukivoima $N$ suhtautuu laatikon painoon $G$, kun laatikkoa vedetään narulla vinosti ylöspäin eikä se liiku.
 **Periaate:** Laatikko on levossa. Newtonin toisen lain mukaan voimien summa on nolla myös pystysuunnassa. Pystysuunnassa on kolme voimaa. Paino osoittaa alas. Tukivoima ja narun jännitysvoiman pystykomponentti osoittavat ylös.
-**Mallivastaus:** Pystysuunnan yhtälö on $N + T\sin\alpha - G = 0$, joten $N = G - T\sin\alpha$. Narun pystykomponentti kannattelee osan painosta. Lattian tarvitsee tukea vain loppuosa. Siksi tukivoima on painoa pienempi. Tukivoima ei siis ole aina yhtä suuri kuin paino. Se on juuri niin suuri kuin pystysuunnan tasapaino vaatii. Jos naru vetäisi vaakasuoraan, tukivoima olisi painon suuruinen. Jos naru vetäisi laatikkoa vinosti alaspäin, tukivoima olisi painoa suurempi. Tukivoima olisi nolla vasta, kun narun pystykomponentti olisi yhtä suuri kuin koko paino. Silloin laatikko olisi irtoamaisillaan lattiasta.
+**Mallivastaus:** Pystysuunnan yhtälö on $N + T\sin\alpha - G = 0$, joten $N = G - T\sin\alpha$. Narun pystykomponentti kannattelee osan painosta. Lattian tarvitsee tukea vain loppuosa. Siksi tukivoima on painoa pienempi. Tukivoima ei siis ole aina yhtä suuri kuin paino.
+
+Se on juuri niin suuri kuin pystysuunnan tasapaino vaatii. Jos naru vetäisi vaakasuoraan, tukivoima olisi painon suuruinen. Jos naru vetäisi laatikkoa vinosti alaspäin, tukivoima olisi painoa suurempi. Tukivoima olisi nolla vasta, kun narun pystykomponentti olisi yhtä suuri kuin koko paino. Silloin laatikko olisi irtoamaisillaan lattiasta.
 
 ## fy4-5-L2-05
 **Annettu:** rengas on paikallaan; mittaukset $(F_\text{A}, F_\text{C}, F_\text{B})$: $(3{,}0;\ 2{,}5;\ 3{,}9)\,\text{N}$, $(4{,}5;\ 3{,}8;\ 5{,}9)\,\text{N}$ ja $(6{,}0;\ 5{,}1;\ 7{,}9)\,\text{N}$
 **Kysytty:** kulman $\alpha$ keskiarvo $\alpha_\text{ka}$ yksikössä $^\circ$
 **Periaate:** Rengas on levossa. Newtonin toisen lain mukaan siihen vaikuttavien voimien summa on nolla sekä vaaka- että pystysuunnassa. Köysi B on vino. Siksi sen voima jaetaan komponentteihin.
-**Voimakuvio:** Rengas on piirretty suorakulmiona. Akseli $x$ osoittaa oikealle ja $y$ ylös. Köyden A jännitysvoima $\overline{F}_\text{A}$ osoittaa vasemmalle. Köyden C jännitysvoima $\overline{F}_\text{C}$ osoittaa alas. Köyden B voima $\overline{F}_\text{B}$ lähtee vinosti ylös oikealle kulmassa $\alpha$. Sen komponentit $F_\text{B}\cos\alpha$ ja $F_\text{B}\sin\alpha$ piirretään katkoviivoin. Komponentit ovat yhtä pitkät kuin $F_\text{A}$ ja $F_\text{C}$. Renkaan painoa ei piirretä, koska tehtävässä sitä ei oteta huomioon.
+**Voimakuvio:** Rengas on piirretty suorakulmiona. Akseli $x$ osoittaa oikealle ja $y$ ylös. Köyden A jännitysvoima $\overline{F}_\text{A}$ osoittaa vasemmalle. Köyden C jännitysvoima $\overline{F}_\text{C}$ osoittaa alas. Köyden B voima $\overline{F}_\text{B}$ lähtee vinosti ylös oikealle kulmassa $\alpha$. Sen komponentit $F_\text{B}\cos\alpha$ ja $F_\text{B}\sin\alpha$ piirretään katkoviivoin.
+
+Komponentit ovat yhtä pitkät kuin $F_\text{A}$ ja $F_\text{C}$. Renkaan painoa ei piirretä, koska tehtävässä sitä ei oteta huomioon.
 ```voimakuvio
 F_A 3,0 vasen
 F_C 2,5 alas
