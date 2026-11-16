@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: a4254015fd08611c
-SCOPE: delta round 2, fy8-9 mushroom/STUK task after fix
+SCOPE: delta added-exercise from 2492493ba54a8626 base 415cbc7c6bc3
 
 ## Blocking
 

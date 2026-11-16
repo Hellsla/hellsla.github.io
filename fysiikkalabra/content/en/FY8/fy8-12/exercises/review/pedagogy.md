@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 586285323faf3a8f
-SCOPE: delta round 2, fy8-12-L2-08 after fix
+SCOPE: delta added-exercise from 3b6e4ed2ca62a096 base 30d3eedf0dcc
 
 ## Blocking
 
