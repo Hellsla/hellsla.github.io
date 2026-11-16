@@ -99,7 +99,11 @@ $$
 **Conversions:** The unit $\text{MJ}$ cancels: $\text{g/MJ} \cdot \text{MJ/kWh} = \text{g/kWh}$.
 **Substitution:** $e_\text{kWh} = 69\,\text{g/MJ} \cdot 3.6\,\text{MJ/kWh} = 248.4\,\text{g/kWh}$
 **Answer:** $250\,\text{g/kWh}$, two significant figures like the factor $69\,\text{g/MJ}$.
-**Reasonableness:** With rounded numbers $70 \cdot 3.6 = 252$, close to the result. The number is the emission per energy of the fuel, not the whole life cycle, so it is not the same thing as the emission factor of electricity in the table: the $\text{g/kWh}$ in the table means electricity produced, this one means fuel burnt. Per unit of electricity the emission would be larger, because in a power plant only part of the fuel energy becomes electricity and the rest is waste heat.
+**Reasonableness:** With rounded numbers $70 \cdot 3.6 = 252$, close to the result.
+
+The number is the emission per energy of the fuel, not the whole life cycle, so it is not the same thing as the emission factor of electricity in the table: the $\text{g/kWh}$ in the table means electricity produced, this one means fuel burnt.
+
+Per unit of electricity the emission would be larger, because in a power plant only part of the fuel energy becomes electricity and the rest is waste heat.
 
 ## fy2-8-L3-01
 **Given:** petrol car $V = 6.0\,\textsf{l}$ per hundred kilometres, $32\,\text{MJ/}\textsf{l}$, $69\,\text{g/MJ}$; electric car $E = 18\,\text{kWh}$ per hundred kilometres
@@ -115,7 +119,11 @@ $$
 &\approx 720\,\text{g/kWh}
 \end{aligned}
 $$.
-**Conclusion:** The factor of coal electricity $820\,\text{g/kWh}$ is only about $10\,\%$ larger than the limit $740\,\text{g/kWh}$. The difference is smaller than the uncertainty of the comparison, because for petrol only burning has been counted and not, for example, the emissions from producing, refining and transporting the oil. With coal electricity the emission reduction of an electric car is therefore small or nonexistent, within the accuracy of the comparison. With low-emission electricity, such as wind or hydropower, the electric car is clearly better.
+**Conclusion:** The factor of coal electricity $820\,\text{g/kWh}$ is only about $10\,\%$ larger than the limit $740\,\text{g/kWh}$.
+
+The difference is smaller than the uncertainty of the comparison, because for petrol only burning has been counted and not, for example, the emissions from producing, refining and transporting the oil.
+
+With coal electricity the emission reduction of an electric car is therefore small or nonexistent, within the accuracy of the comparison. With low-emission electricity, such as wind or hydropower, the electric car is clearly better.
 
 ## fy2-8-L3-02
 **Given:** energy $E = 100\,\text{GWh}$ per year; yield of the solar park $q_\text{a} = 0.50\,\text{GWh/ha}$ and yield of the energy field $q_\text{b} = 0.010\,\text{GWh/ha}$ per year; $1\,\text{ha} = 0.01\,\text{km}^2$
@@ -126,7 +134,10 @@ $$.
 **Substitution:** $A_\text{b} = 100\,\text{GWh} : 0.010\,\text{GWh/ha} = 10\,000\,\text{ha} = 10\,000 \cdot 0.01\,\text{km}^2 = 100\,\text{km}^2$, and $A_\text{a} = 100\,\text{GWh} : 0.50\,\text{GWh/ha} = 200\,\text{ha} = 200 \cdot 0.01\,\text{km}^2 = 2.0\,\text{km}^2$, so $A_\text{b} : A_\text{a} = 100\,\text{km}^2 : 2.0\,\text{km}^2 = 50$
 **Answer:** the field area needed is $50$ times the area of the solar park ($100\,\text{km}^2$ and $2.0\,\text{km}^2$), two significant figures like the yields $0.50\,\text{GWh/ha}$ and $0.010\,\text{GWh/ha}$.
 **Reasonableness:** $100\,\text{km}^2$ is a square with a side of $10\,\text{km}$. The ratio of the areas $100 : 2.0 = 50$ is the same as the ratio of the yields $0.50 : 0.010 = 50$, as it should be, because the energy is the same.
-**Conclusion:** Biomass electricity needs about $50$ times the area of a solar park, a square of field with a side of ten kilometres, which could otherwise grow food or forest. The emission factor tells only the greenhouse gases per kilowatt-hour; it does not tell how much land a way of producing energy takes from food production, nature and the landscape. That is why land use must be weighed separately.
+**Conclusion:** Biomass electricity needs about $50$ times the area of a solar park, a square of field with a side of ten kilometres, which could otherwise grow food or forest.
+
+The emission factor tells only the greenhouse gases per kilowatt-hour; it does not tell how much land a way of producing energy takes from food production, nature and the landscape. That is why land use must be weighed separately.
+
 ## fy2-8-L3-03
 **Given:** bus $30\,\textsf{l}$ per hundred kilometres, $36\,\text{MJ/}\textsf{l}$, $74\,\text{g/MJ}$, $25$ passengers; car $6.0\,\textsf{l}$ per hundred kilometres, $32\,\text{MJ/}\textsf{l}$, $69\,\text{g/MJ}$, one passenger
 **Find:** ratio of the emission of the car to the emission of the bus per passenger
@@ -140,7 +151,12 @@ $$.
 ## fy2-8-L1-06
 **Find:** which statement describes the natural greenhouse effect.
 **Principle:** Most of the Sun's radiation passes through the atmosphere and warms the ground. The warm ground emits thermal radiation, and greenhouse gases slow down its escape into space. The atmosphere does not produce energy itself, does not absorb all of the Sun's radiation, and does not reflect most of it away.
-**Model answer:** The correct option is the one according to which greenhouse gases let the Sun's radiation through but slow down the escape of the ground's thermal radiation. The mean surface temperature is about $+15\,{}^\circ\text{C}$, while a simple radiative balance model gives the Earth an effective radiating temperature of about $-18\,{}^\circ\text{C}$. The difference, about $33\,\text{K}$, illustrates why the phenomenon is essential for life. The problem is the strengthening of the phenomenon when carbon dioxide and methane are added to the atmosphere.
+**Model answer:** The correct option is the one according to which greenhouse gases let the Sun's radiation through but slow down the escape of the ground's thermal radiation.
+
+The mean surface temperature is about $+15\,{}^\circ\text{C}$, while a simple radiative balance model gives the Earth an effective radiating temperature of about $-18\,{}^\circ\text{C}$. The difference, about $33\,\text{K}$, illustrates why the phenomenon is essential for life.
+
+The problem is the strengthening of the phenomenon when carbon dioxide and methane are added to the atmosphere.
+
 ## fy2-8-L1-07
 **Find:** which statement concerns climate and not weather.
 **Principle:** Weather is the state of the atmosphere in a given place at a given moment or over a short period. Climate is the long-term average and variation of weather in an area, typically over at least thirty years.
@@ -158,7 +174,10 @@ $$.
 ## fy2-8-L2-05
 **Given:** the concentration in $2005$ is $c_1 = 380\,\text{ppm}$ and in $2020$ $c_2 = 414\,\text{ppm}$; the model is a straight line over the period $2005$–$2020$ (source: NOAA, Mauna Loa yearly averages, rounded)
 **Find:** average rate of growth of the concentration $k$ in the unit $\text{ppm/a}$
-**Principle:** If the concentration grows steadily, the rate of growth is the slope of the line, that is, the change in the concentration divided by the change in time. The intermediate years of the table ($2010$, $2015$) do not change the result if the points lie nearly on the same line. For the slope, the end points far apart from each other are used.
+**Principle:** If the concentration grows steadily, the rate of growth is the slope of the line, that is, the change in the concentration divided by the change in time.
+
+The intermediate years of the table ($2010$, $2015$) do not change the result if the points lie nearly on the same line. For the slope, the end points far apart from each other are used.
+
 **Formula:** $k = \dfrac{\Delta c}{\Delta t} = \dfrac{c_2 - c_1}{t_2 - t_1}$
 **Conversions:** Not needed: the concentration is in ppm and the time in years.
 **Substitution:** $\Delta c = 414\,\text{ppm} - 380\,\text{ppm} = 34\,\text{ppm}$ and $\Delta t = 2020\,\text{a} - 2005\,\text{a} = 15\,\text{a}$, so $k = 34\,\text{ppm} : 15\,\text{a} = 2.27\,\text{ppm/a}$
@@ -189,11 +208,17 @@ b) The change is $61\,\text{Mt} - 45\,\text{Mt} = 16\,\text{Mt}$, and $\dfrac{16
 1640\,\text{g} &= 1640 \cdot 0.001\,\text{kg} \\
 &= 1.64\,\text{kg}
 \end{aligned}
-$$, that is, about $1.6\,\text{kg}$. The result is also reasonable by estimation: two kilowatt-hours with coal produce less than two kilograms, not one and a half tonnes.
+$$, that is, about $1.6\,\text{kg}$.
+
+The result is also reasonable by estimation: two kilowatt-hours with coal produce less than two kilograms, not one and a half tonnes.
+
 ## fy2-8-L3-04
 **Given:** concentrations $c_{1960} = 317\,\text{ppm}$, $c_{1980} = 339\,\text{ppm}$, $c_{2000} = 370\,\text{ppm}$ and $c_{2020} = 414\,\text{ppm}$ (source: NOAA, Mauna Loa yearly averages, rounded)
 **Find:** a) rate of growth in each $20$-year period; b) prediction for $2040$ with the rate of growth of the last period; c) comparison with the rate of growth of the whole data and justification
-**Principle:** The rate of growth is the change in the concentration divided by the change in time, that is, the slope of the line. The straight-line prediction continues the rate of growth from the point $2020$. If the rate of growth changes from one period to another, one line does not describe the whole data, and the credibility of the prediction depends on how well the rate of growth stays the same.
+**Principle:** The rate of growth is the change in the concentration divided by the change in time, that is, the slope of the line. The straight-line prediction continues the rate of growth from the point $2020$.
+
+If the rate of growth changes from one period to another, one line does not describe the whole data, and the credibility of the prediction depends on how well the rate of growth stays the same.
+
 **Formula:** $k = \dfrac{\Delta c}{\Delta t}$ and the prediction $c(2040) = c_{2020} + k \cdot \Delta t$
 **Conversions:** Not needed: the concentration is in ppm and the time in years.
 **Substitution:**
@@ -212,7 +237,12 @@ $$
 c) The rate of growth of the whole data is $k = (414 - 317)\,\text{ppm} : 60\,\text{a} = 97\,\text{ppm} : 60\,\text{a} \approx 1.6\,\text{ppm/a}$, and the prediction is $414\,\text{ppm} + 1.6\,\text{ppm/a} \cdot 20\,\text{a} \approx 414\,\text{ppm} + 32\,\text{ppm} = 446\,\text{ppm}$.
 **Answer:** b) The prediction for $2040$ is about $458\,\text{ppm}$, three significant figures. c) The line of the whole data would give about $446\,\text{ppm}$, that is, $12\,\text{ppm}$ less.
 **Reasonableness:** The change of the last period $44\,\text{ppm}$ is twice the change of the first period $22\,\text{ppm}$. The prediction $458\,\text{ppm}$ is larger than the present $414\,\text{ppm}$, as it should be for a growing concentration.
-**Conclusion:** The points of the table are not on the same line; the rate of growth has increased in every period ($1.1$, $1.6$ and $2.2\,\text{ppm/a}$), so the growth is accelerating. That is why the average rate of growth of the whole data underestimates the present growth, and the line of the last period is the more credible prediction. Even that may underestimate if the growth keeps accelerating, and overestimate if emissions begin to decrease. A straight line is a model that can be trusted only near the end of the data, that is, for the next decade or so. For predictions far ahead one has to know what happens to the emissions, not just continue the line.
+**Conclusion:** The points of the table are not on the same line; the rate of growth has increased in every period ($1.1$, $1.6$ and $2.2\,\text{ppm/a}$), so the growth is accelerating.
+
+That is why the average rate of growth of the whole data underestimates the present growth, and the line of the last period is the more credible prediction. Even that may underestimate if the growth keeps accelerating, and overestimate if emissions begin to decrease.
+
+A straight line is a model that can be trusted only near the end of the data, that is, for the next decade or so. For predictions far ahead one has to know what happens to the emissions, not just continue the line.
+
 ## fy2-8-L3-05
 **Given:** production $E_\text{coal} = 40\,\text{GWh}$, $E_\text{gas} = 30\,\text{GWh}$, $E_\text{bio} = 20\,\text{GWh}$ and $E_\text{wind} = 10\,\text{GWh}$ per year; emission factors $820$, $490$, $230$ and $12\,\text{g/kWh}$ (table of the lesson); in the plan the $40\,\text{GWh}$ of coal is replaced with $30\,\text{GWh}$ of wind power and $10\,\text{GWh}$ of natural gas
 **Find:** a) present total emission in tonnes; b) decrease of the emission in per cent in the plan; c) difference in percentage points compared with full replacement with wind; d) justification of why the concentration can still grow after emissions have decreased, and one thing the emission factor does not tell
@@ -220,10 +250,15 @@ c) The rate of growth of the whole data is $k = (414 - 317)\,\text{ppm} : 60\,\t
 **Formula:** $m = e \cdot E$, $m_\text{tot} = m_1 + m_2 + \dots$ and the decrease in per cent is $\dfrac{m_\text{now} - m_\text{new}}{m_\text{now}} \cdot 100\,\%$
 **Conversions:** $1\,\text{GWh} = 10^6\,\text{kWh}$, so $40\,\text{GWh} = 40 \cdot 10^6\,\text{kWh}$. Grams are converted into tonnes: $1\,\text{g} = 10^{-6}\,\text{t}$.
 **Substitution:**
+
 a) Coal: $820\,\text{g/kWh} \cdot 40 \cdot 10^6\,\text{kWh} = 32.8 \cdot 10^9\,\text{g} = 32\,800\,\text{t}$
+
 a) Natural gas: $490 \cdot 30 \cdot 10^6\,\text{g} = 14\,700\,\text{t}$
+
 a) Biomass: $230 \cdot 20 \cdot 10^6\,\text{g} = 4600\,\text{t}$
+
 a) Wind power: $12 \cdot 10 \cdot 10^6\,\text{g} = 120\,\text{t}$
+
 a) Sum: $$
 \begin{aligned}
 &32\,800\,\text{t} + 14\,700\,\text{t} \\
@@ -231,25 +266,42 @@ a) Sum: $$
 &= 52\,220\,\text{t}
 \end{aligned}
 $$
+
 b) Natural gas $30 + 10 = 40\,\text{GWh}$: $490 \cdot 40 \cdot 10^6\,\text{g} = 19\,600\,\text{t}$
+
 b) Biomass: $4600\,\text{t}$
+
 b) Wind power $10 + 30 = 40\,\text{GWh}$: $12 \cdot 40 \cdot 10^6\,\text{g} = 480\,\text{t}$
+
 b) New sum: $$
 \begin{aligned}
 &19\,600\,\text{t} + 4600\,\text{t} + 480\,\text{t} \\
 &= 24\,680\,\text{t}
 \end{aligned}
 $$
+
 b) Decrease: $52\,220\,\text{t} - 24\,680\,\text{t} = 27\,540\,\text{t}$, and $\dfrac{27\,540}{52\,220} \cdot 100\,\% = 52.7\,\%$
+
 c) If all the coal electricity were replaced with wind, the new sum would be $14\,700\,\text{t} + 4600\,\text{t} + 12 \cdot 50 \cdot 10^6\,\text{g} = 14\,700\,\text{t} + 4600\,\text{t} + 600\,\text{t} = 19\,900\,\text{t}$, the decrease $\dfrac{32\,320}{52\,220} \cdot 100\,\% = 61.9\,\%$, and the difference is $61.9 - 52.7 = 9.2$ percentage points.
+
 **Answer:** a) about $52\,000\,\text{t}$ per year. b) The emissions decrease by about $53\,\%$, two significant figures. c) The reduction is about $9\,$ percentage points smaller.
 **Reasonableness:** The share of coal in the present emission is $32\,800 : 52\,220 = 0.63$. If $10\,\text{GWh}$ is still produced with natural gas, about $10 \cdot 490 \cdot 10^6\,\text{g} = 4900\,\text{t}$ is left unremoved, that is, about $9\,\%$ of the present emission ($4900 : 52\,220 \approx 0.094$), which fits the difference $9.2$ percentage points. Coal produces $40\,\%$ of the energy but $63\,\%$ of the emission.
-**Conclusion:** d) Carbon dioxide stays in the atmosphere for tens and hundreds of years, because natural sinks (the seas and vegetation) absorb only a part of the emissions. The concentration grows as long as the emissions are larger than the amount absorbed by the sinks. A decrease in emissions slows down the growth but does not turn the concentration downward at once, and climate warming continues with a delay. The emission factor does not tell, for example, that wind electricity depends on the weather and balancing power or storage is needed when the wind does not blow. Land use, landscape effects and the availability of electricity are also weighed separately.
+**Conclusion:** d) Carbon dioxide stays in the atmosphere for tens and hundreds of years, because natural sinks (the seas and vegetation) absorb only a part of the emissions. The concentration grows as long as the emissions are larger than the amount absorbed by the sinks.
+
+A decrease in emissions slows down the growth but does not turn the concentration downward at once, and climate warming continues with a delay.
+
+The emission factor does not tell, for example, that wind electricity depends on the weather and balancing power or storage is needed when the wind does not blow. Land use, landscape effects and the availability of electricity are also weighed separately.
 
 ## fy2-8-L2-08
 **Find:** which conclusion is the one that the data in the table and the given uncertainty $\Delta m = 10\,\text{kt}$ support.
 **Principle:** The difference of two measured values can be considered real only when it is clearly larger than the uncertainty of the values. The data show only what is in them: they do not tell the cause, and predicting outside them is uncertain. The conclusion must read the right column.
-**Model answer:** The emission is in the column $m$. The difference between the years $2020$ and $2024$ is $520\,\text{kt} - 420\,\text{kt} = 100\,\text{kt}$, which is ten times the uncertainty $10\,\text{kt}$, so the decrease is probably real. The uncertainty ranges $510$–$530\,\text{kt}$ and $410$–$430\,\text{kt}$ are also separate and do not overlap. The other conclusions do not hold. The difference $520\,\text{kt} - 515\,\text{kt} = 5\,\text{kt}$ stays within the uncertainty $10\,\text{kt}$, so a decrease between the years $2020$ and $2021$ cannot be shown. The table has no information about the fuel, so the cause cannot be concluded. A prediction for the year $2034$ would continue the line $10$ years beyond the data of five years. The production $1000\,\text{GWh}$ is in a different column from the emission, and the emission changed although the production did not.
+**Model answer:** The emission is in the column $m$. The difference between the years $2020$ and $2024$ is $520\,\text{kt} - 420\,\text{kt} = 100\,\text{kt}$, which is ten times the uncertainty $10\,\text{kt}$, so the decrease is probably real.
+
+The uncertainty ranges $510$–$530\,\text{kt}$ and $410$–$430\,\text{kt}$ are also separate and do not overlap. The other conclusions do not hold. The difference $520\,\text{kt} - 515\,\text{kt} = 5\,\text{kt}$ stays within the uncertainty $10\,\text{kt}$, so a decrease between the years $2020$ and $2021$ cannot be shown.
+
+The table has no information about the fuel, so the cause cannot be concluded. A prediction for the year $2034$ would continue the line $10$ years beyond the data of five years.
+
+The production $1000\,\text{GWh}$ is in a different column from the emission, and the emission changed although the production did not.
 
 ## fy2-8-L1-09
 **Given:** mass of natural gas $m = 2.0\,\text{kg}$; heat of combustion from the MAFY table (Polttoaineiden LHV-lämpöarvoja, maakaasu) $H = 47\,\tfrac{\text{MJ}}{\text{kg}}$; emission factor $e = 55\,\tfrac{\text{g}}{\text{MJ}}$
@@ -281,6 +333,7 @@ $$
 
 ## fy2-8-L2-10
 **Given:** emission factors $e_\text{Finland} = 57.47\,\text{g/kWh}$, $e_\text{Sweden} = 35.26\,\text{g/kWh}$ and $e_\text{Poland} = 588.6\,\text{g/kWh}$ and the shares of the production methods (from the table, Our World in Data / Ember, year $2025$, read 16 November 2026); electrical energy $E = 5.0\,\text{kWh}$; Fingrid's readings at 10:48 on 16 November 2026 from the table: estimate for produced electricity $16\,\text{g/kWh}$, for consumed $15\,\text{g/kWh}$, import −/export + $-210\,\text{MW}$, production $11\,341\,\text{MW}$, consumption $11\,603\,\text{MW}$ and wind $5571\,\text{MW}$
+
 **Find:** a) the two largest production methods of each country; b) the ratio of the largest to the smallest emission factor; c) the emission $m$ in each country in $\text{kg}$ (Poland into the answer box); d) why the estimates for produced and consumed electricity and Fingrid's and OWID's figures differ; e) evaluation of the claim
 **Principle:** The emission factor gives the emission per unit of produced energy, so the emission is the factor times the energy, $m = eE$. The same energy $5.0\,\text{kWh}$ in every country makes the ratio of the emissions equal to the ratio of the emission factors. The calculation is a model: it assumes that the appliance uses exactly the country's average electricity.
 **Formula:** $m = eE$ and the ratio $\dfrac{e_\text{largest}}{e_\text{smallest}}$
@@ -293,31 +346,72 @@ c) Sweden: $m = 35.26\,\text{g/kWh} \cdot 5.0\,\text{kWh} = 176.3\,\text{g} = 0.
 d) Share of import in consumption: $\dfrac{210\,\text{MW}}{11\,603\,\text{MW}} = 0.018 = 1.8\,\%$. Share of wind in production: $\dfrac{5571\,\text{MW}}{11\,341\,\text{MW}} = 0.491 = 49.1\,\%$. The figures $57.47\,\text{g/kWh}$ and $16\,\text{g/kWh}$: $57.47 : 16 = 3.6$.
 **Answer:** c) Poland $m \approx 2.9\,\text{kg}$, two significant figures as in the energy $5.0\,\text{kWh}$. Finland about $0.29\,\text{kg}$ and Sweden about $0.18\,\text{kg}$. b) The ratio is about $16.7$, so Poland's value is about $17$ times Sweden's.
 **Reasonableness:** With round numbers $600 \cdot 5 = 3000\,\text{g}$ is close to the result $2943\,\text{g}$. The ratio of the emissions $2943 : 176.3 = 16.7$ equals the ratio of the emission factors, as it should. The unit $\text{g/kWh} \cdot \text{kWh} = \text{g}$ is right.
-**Conclusion:** a) In Finland the largest shares are nuclear $39.9\,\%$ and wind $27.4\,\%$. In Sweden hydro $40.0\,\%$ and nuclear $27.6\,\%$. In Poland coal gives $50.4\,\%$ and the next largest are natural gas $14.3\,\%$ and wind $14.2\,\%$, which are practically equal. Poland's large factor comes from coal, whose emission factor in the lesson's table is $820\,\text{g/kWh}$, while the electricity of Finland and Sweden is mostly nuclear, hydro and wind.
-d) The difference between the produced and consumed estimates is only $16 - 15 = 1\,\text{g/kWh}$. The consumed electricity is the electricity produced in Finland plus import minus export. The import is only $1.8\,\%$ of consumption, so even if the import were free of emissions, the estimate for consumed electricity would fall by less than $0.3\,\text{g/kWh}$. The figures are given as whole numbers, so the difference is almost the size of the rounding, and the page does not describe the calculation in more detail. Fingrid's $16\,\text{g/kWh}$ is about $3.6$ times smaller than OWID's $57.47\,\text{g/kWh}$ because the figures describe different things. Fingrid describes one moment, when wind power produced $49.1\,\%$ of the electricity, while in OWID's average for the year $2025$ the share of wind is $27.4\,\%$. Also, OWID's figure is a lifecycle emission that includes all greenhouse gases as carbon dioxide equivalents, also the fuel chain and the building. Fingrid's page states that it calculates with emission factors of the production methods and does not call the estimate a lifecycle estimate. A windy November morning is therefore lower in emissions than the year on average.
-e) The claim does not hold. The emission factor tells only the greenhouse gas emission per produced electrical energy, and it is an average of one moment or one year. Environmental friendliness also includes, among other things, land use, effects on nature, waste and safety, which the number does not show: for example, the greenhouse gas emissions of nuclear power are small, but it produces spent nuclear fuel. Also, the figures from different sources (OWID's lifecycle emission and Fingrid's estimate by production method) are not directly comparable.
+**Conclusion:** a) In Finland the largest shares are nuclear $39.9\,\%$ and wind $27.4\,\%$. In Sweden hydro $40.0\,\%$ and nuclear $27.6\,\%$. In Poland coal gives $50.4\,\%$ and the next largest are natural gas $14.3\,\%$ and wind $14.2\,\%$, which are practically equal.
+
+Poland's large factor comes from coal, whose emission factor in the lesson's table is $820\,\text{g/kWh}$, while the electricity of Finland and Sweden is mostly nuclear, hydro and wind.
+
+d) The difference between the produced and consumed estimates is only $16 - 15 = 1\,\text{g/kWh}$. The consumed electricity is the electricity produced in Finland plus import minus export.
+
+The import is only $1.8\,\%$ of consumption, so even if the import were free of emissions, the estimate for consumed electricity would fall by less than $0.3\,\text{g/kWh}$.
+
+The figures are given as whole numbers, so the difference is almost the size of the rounding, and the page does not describe the calculation in more detail. Fingrid's $16\,\text{g/kWh}$ is about $3.6$ times smaller than OWID's $57.47\,\text{g/kWh}$ because the figures describe different things.
+
+Fingrid describes one moment, when wind power produced $49.1\,\%$ of the electricity, while in OWID's average for the year $2025$ the share of wind is $27.4\,\%$.
+
+Also, OWID's figure is a lifecycle emission that includes all greenhouse gases as carbon dioxide equivalents, also the fuel chain and the building. Fingrid's page states that it calculates with emission factors of the production methods and does not call the estimate a lifecycle estimate.
+
+A windy November morning is therefore lower in emissions than the year on average.
+
+e) The claim does not hold. The emission factor tells only the greenhouse gas emission per produced electrical energy, and it is an average of one moment or one year.
+
+Environmental friendliness also includes, among other things, land use, effects on nature, waste and safety, which the number does not show: for example, the greenhouse gas emissions of nuclear power are small, but it produces spent nuclear fuel.
+
+Also, the figures from different sources (OWID's lifecycle emission and Fingrid's estimate by production method) are not directly comparable.
 
 ## fy2-8-L2-11
 **Given:** from the table wind power $P_\text{w}$, production $P$ and the emission estimate $e$ of the electricity consumed at three times (Fingrid, Sähköjärjestelmän tila, view Today, read 16 November 2026), and the energy $E = 10\,\text{kWh}$
 **Find:** a) the share of wind in production as a percentage; b) the emission $m$ in $\text{g}$ at each time (the answer box takes 10:00); c) the changes of wind power and of $e$ in the periods and the change of $e$ per $1000\,\text{MW}$ change of wind power, and an explanation; d) the benefits and limits of timing the charging of an electric car
+
 **Principle:** The share is the wind power divided by the total production power. The emission is the emission factor times the energy, $m = eE$, because $e$ gives the emission per consumed kilowatt-hour. We compare three times with the same energy $10\,\text{kWh}$, so the difference in the emission comes only from $e$.
 **Formula:** share $= \dfrac{P_\text{w}}{P} \cdot 100\,\%$, $m = eE$ and the ratio of the changes $\dfrac{\Delta e}{\Delta P_\text{w}}$
 **Conversions:** In the share the unit $\text{MW}$ cancels. The emission comes directly in grams because $\text{g/kWh} \cdot \text{kWh} = \text{g}$. The change in power is divided by $1000$ to get the change per $1000\,\text{MW}$.
 **Substitution:**
+
 a) At 01:00: $\dfrac{7639}{12\,791} \cdot 100\,\% = 59.7\,\%$
+
 a) At 08:00: $\dfrac{6716}{12\,570} \cdot 100\,\% = 53.4\,\%$
+
 a) At 10:00: $\dfrac{5885}{11\,610} \cdot 100\,\% = 50.7\,\%$
+
 b) At 01:00: $m = 9.8\,\text{g/kWh} \cdot 10\,\text{kWh} = 98\,\text{g}$
+
 b) At 08:00: $m = 13.7\,\text{g/kWh} \cdot 10\,\text{kWh} = 137\,\text{g}$
+
 b) At 10:00: $m = 15.0\,\text{g/kWh} \cdot 10\,\text{kWh} = 150\,\text{g}$
+
 c) Period 01:00–08:00: $\Delta P_\text{w} = 6716\,\text{MW} - 7639\,\text{MW} = -923\,\text{MW}$ and $\Delta e = 13.7 - 9.8 = 3.9\,\text{g/kWh}$, so $3.9 : 0.923 = 4.2\,\text{g/kWh}$ per $1000\,\text{MW}$ decrease of wind power.
+
 c) Period 08:00–10:00: $\Delta P_\text{w} = 5885\,\text{MW} - 6716\,\text{MW} = -831\,\text{MW}$ and $\Delta e = 15.0 - 13.7 = 1.3\,\text{g/kWh}$, so $1.3 : 0.831 = 1.6\,\text{g/kWh}$ per $1000\,\text{MW}$ decrease of wind power.
+
 d) Difference of the emissions: $150\,\text{g} - 98\,\text{g} = 52\,\text{g}$, and $\dfrac{52\,\text{g}}{150\,\text{g}} = 0.35 = 35\,\%$.
+
 **Answer:** b) At 10:00 the emission is $m = 150\,\text{g}$, three significant figures as in the estimate $15.0\,\text{g/kWh}$ ($10\,\text{kWh}$ is an exact value set by the task). At 01:00 the emission is $98\,\text{g}$ and at 08:00 $137\,\text{g}$. a) The share of wind power is $59.7\,\%$, $53.4\,\%$ and $50.7\,\%$.
 **Reasonableness:** With round numbers $15 \cdot 10 = 150\,\text{g}$. For comparison, coal electricity ($820\,\text{g/kWh}$, the lesson's table) would give $8200\,\text{g}$, about $55$ times more, so Finnish electricity is very low in emissions at these moments. The direction is right: when the share of wind power decreases, $e$ grows.
 **Conclusion:** a) When the share of wind power is largest ($59.7\,\%$), the emission estimate of consumed electricity is smallest ($9.8\,\text{g/kWh}$), and when the share is smallest ($50.7\,\%$), the estimate is largest ($15.0\,\text{g/kWh}$). From three moments we see a connection, but not a cause.
-c) The change of $e$ per $1000\,\text{MW}$ decrease of wind power is $4.2$ in the first period and $1.6\,\text{g/kWh}$ in the second, about $2.7$ times as much. The $e$ of consumed electricity is an average of the whole production and import, and the missing wind power is replaced by other sources with different emission factors. According to the table hydro power grew in 01:00–08:00 by $400\,\text{MW}$ ($1520 \to 1920\,\text{MW}$) and fell in 08:00–10:00 by $140\,\text{MW}$ ($1920 \to 1780\,\text{MW}$), and nuclear power stayed almost the same. Export also changed: $+2142\,\text{MW}$, $+1124\,\text{MW}$ and $-152\,\text{MW}$. So the decrease of wind was replaced in different ways in different periods, which may partly explain the difference. Three moments cannot separate all the causes.
-d) Benefits: if $10\,\text{kWh}$ is charged at 01:00 instead of 10:00, the calculated emission is $52\,\text{g}$, about $35\,\%$ smaller. Charging can often be moved to the night, and the consumption evens out the load of the electricity system. Limits: three moments are not statistics, and one day does not tell when it will be windy on the coming days. The emission estimate is an average and does not tell which power plant produces the extra consumption. The car must also be charged when it is needed, and the charging must not cost more than the benefit. The emission difference is small compared with what the choice of car or the distance driven changes.
+
+c) The change of $e$ per $1000\,\text{MW}$ decrease of wind power is $4.2$ in the first period and $1.6\,\text{g/kWh}$ in the second, about $2.7$ times as much.
+
+The $e$ of consumed electricity is an average of the whole production and import, and the missing wind power is replaced by other sources with different emission factors.
+
+According to the table hydro power grew in 01:00–08:00 by $400\,\text{MW}$ ($1520 \to 1920\,\text{MW}$) and fell in 08:00–10:00 by $140\,\text{MW}$ ($1920 \to 1780\,\text{MW}$), and nuclear power stayed almost the same. Export also changed: $+2142\,\text{MW}$, $+1124\,\text{MW}$ and $-152\,\text{MW}$.
+
+So the decrease of wind was replaced in different ways in different periods, which may partly explain the difference. Three moments cannot separate all the causes.
+
+d) Benefits: if $10\,\text{kWh}$ is charged at 01:00 instead of 10:00, the calculated emission is $52\,\text{g}$, about $35\,\%$ smaller. Charging can often be moved to the night, and the consumption evens out the load of the electricity system.
+
+Limits: three moments are not statistics, and one day does not tell when it will be windy on the coming days. The emission estimate is an average and does not tell which power plant produces the extra consumption.
+
+The car must also be charged when it is needed, and the charging must not cost more than the benefit. The emission difference is small compared with what the choice of car or the distance driven changes.
 
 ## fy2-8-L3-06
 **Given:** emission factors $e$ in $2000$ and $2025$: Finland $246.82$ and $57.47\,\text{g/kWh}$, Poland $954.6$ and $588.6\,\text{g/kWh}$, Denmark $627.89$ and $114.41\,\text{g/kWh}$, and the shares of coal, nuclear and wind (from the table, Our World in Data / Ember, read 16 November 2026)
@@ -332,9 +426,30 @@ a) Denmark: $\Delta e = 114.41 - 627.89 = -513.48\,\text{g/kWh}$
 b) Finland: $\dfrac{-189.35}{246.82} \cdot 100\,\% = -76.72\,\%$
 b) Poland: $\dfrac{-366.0}{954.6} \cdot 100\,\% = -38.34\,\%$
 b) Denmark: $\dfrac{-513.48}{627.89} \cdot 100\,\% = -81.78\,\%$
-**Answer:** b) Finland's emission factor decreased by about $77\,\%$, so the relative change is $-77\,\%$. We give two significant figures because the lifecycle estimate is uncertain by more than $1\,\%$, so more digits would add no information. In Poland the change is $-38\,\%$ and in Denmark $-82\,\%$. a) The changes are about $-189\,\text{g/kWh}$, $-366\,\text{g/kWh}$ and $-513\,\text{g/kWh}$, so the largest absolute change is in Denmark.
+**Answer:** b) Finland's emission factor decreased by about $77\,\%$, so the relative change is $-77\,\%$. We give two significant figures because the lifecycle estimate is uncertain by more than $1\,\%$, so more digits would add no information.
+
+In Poland the change is $-38\,\%$ and in Denmark $-82\,\%$. a) The changes are about $-189\,\text{g/kWh}$, $-366\,\text{g/kWh}$ and $-513\,\text{g/kWh}$, so the largest absolute change is in Denmark.
+
 **Reasonableness:** Finland's value for $2025$ is $57.47 : 246.82 = 0.233$ or $23\,\%$ of the value for $2000$, so the decrease is $100\,\% - 23\,\% = 77\,\%$. With round numbers $(60 - 250) : 250 = -0.76$. Denmark's final value is less than a fifth of the initial value ($114.41 : 627.89 = 0.18$), so about $-82\,\%$ is believable. The sign is negative because the emission factor decreased.
 **Conclusion:** a), b) In Denmark the change is largest both in absolute and in relative terms. In Poland the absolute change $366\,\text{g/kWh}$ is larger than in Finland $189\,\text{g/kWh}$, but the relative change is smaller ($38\,\%$ and $77\,\%$), because Poland's starting level was much higher.
-c) The production structure explains the differences. In Denmark the share of coal fell from $46.5\,\%$ to $2.7\,\%$ and that of wind grew from $11.8\,\%$ to $57.7\,\%$, so the emission factor collapsed. In Finland the share of coal fell from $12.1\,\%$ to $0.2\,\%$, that of wind grew from $0.1\,\%$ to $27.4\,\%$ and that of nuclear from $32.1\,\%$ to $39.9\,\%$. In Poland coal still produced half of the electricity in $2025$ ($50.4\,\%$) and the share of wind was only $14.2\,\%$, so the emission factor $588.6\,\text{g/kWh}$ is about $10$ times Finland's value ($588.6 : 57.47 = 10.2$). The table does not show the shares of natural gas, oil, hydro, solar and bio, so the explanation is not complete.
-d) Lifecycle emissions mean all the greenhouse gas emissions of electricity production over the whole chain: obtaining and transporting the fuel, manufacturing and building the power plant and equipment, operation and dismantling. They are given as carbon dioxide equivalents. If the comparison is made with the emissions produced at the power plant only, wind power, solar power and nuclear power look emission-free, although emissions are produced also in building them and in their materials: in the lesson's table the lifecycle emission factor of wind power is $12\,\text{g/kWh}$, although there is no burning. The emission of the power plant alone would therefore underestimate the emissions of clean production methods and ignore, for example, the emissions of the fuel chain.
-e) The claim does not hold. The table has only two years, $2000$ and $2025$, so it shows the total change but not what happened in the years between. The development may have been steady, but also sudden, for example with a new power plant or the weather (wind, water), and the emission factor may have grown in some years. To show steadiness every year would be needed, which the page shows. The number also concerns only electricity, not all energy use, for example transport and heating.
+
+c) The production structure explains the differences. In Denmark the share of coal fell from $46.5\,\%$ to $2.7\,\%$ and that of wind grew from $11.8\,\%$ to $57.7\,\%$, so the emission factor collapsed.
+
+In Finland the share of coal fell from $12.1\,\%$ to $0.2\,\%$, that of wind grew from $0.1\,\%$ to $27.4\,\%$ and that of nuclear from $32.1\,\%$ to $39.9\,\%$.
+
+In Poland coal still produced half of the electricity in $2025$ ($50.4\,\%$) and the share of wind was only $14.2\,\%$, so the emission factor $588.6\,\text{g/kWh}$ is about $10$ times Finland's value ($588.6 : 57.47 = 10.2$).
+
+The table does not show the shares of natural gas, oil, hydro, solar and bio, so the explanation is not complete.
+
+d) Lifecycle emissions mean all the greenhouse gas emissions of electricity production over the whole chain: obtaining and transporting the fuel, manufacturing and building the power plant and equipment, operation and dismantling. They are given as carbon dioxide equivalents.
+
+If the comparison is made with the emissions produced at the power plant only, wind power, solar power and nuclear power look emission-free, although emissions are produced also in building them and in their materials: in the lesson's table the lifecycle emission factor of wind power is $12\,\text{g/kWh}$, although there is no burning.
+
+The emission of the power plant alone would therefore underestimate the emissions of clean production methods and ignore, for example, the emissions of the fuel chain.
+
+e) The claim does not hold. The table has only two years, $2000$ and $2025$, so it shows the total change but not what happened in the years between.
+
+The development may have been steady, but also sudden, for example with a new power plant or the weather (wind, water), and the emission factor may have grown in some years. To show steadiness every year would be needed, which the page shows.
+
+The number also concerns only electricity, not all energy use, for example transport and heating.
+

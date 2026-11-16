@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: a72da2feb382aa9f
-SCOPE: delta numbers from e70ffa37157788e4 base 6ecef1197865
+CONTENT-HASH: e48a6ccc4ae0efce
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] fy2-6-L3-04 answer step — one long paragraph (about 110 words, a), b) and c) run together); it reads its number, as before the paragraph work. Splitting would be nicer but may wait.
 
 ## Checked
-- Delta review. Changed line is the single ratio $4.7 : 1.7 \approx 2.8$ in 6-L3-02; judged from the source and the fy2-6-open-exercises-L3-1280-4.png context (display boxes in this exercise render cleanly). I did not locate the exact changed line in a capture.
-- Hash at start and end: a72da2feb382aa9f.
+- Delta round 2, only the answer steps of fy2-6-L2-06 and fy2-6-L3-04 changed (solutions.md).
+- Captures opened (content/en/FY2/fy2-6/review/shots/, 1280 open-exercises): en: L2-7, L3-6 (the L2-06 answer continues past L2-7's bottom edge; its first paragraph and the L3-04 answer read as one paragraph each).
+- L2-06 (6-16): the answer step is one paragraph beginning with the verdict and the number (29 %, 33 %); the check box 33 % and Annettu → Sijoitus layout intact.
+- L3-04 (6-22): the answer step is one paragraph starting "a) 490 GWh ja 32 %"; numbers, units in LaTeX, Järkevyys block intact; no clipping.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

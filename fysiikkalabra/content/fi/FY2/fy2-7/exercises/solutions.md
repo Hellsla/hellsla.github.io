@@ -221,7 +221,10 @@ $$.
 **Kaava:** $E_\text{häviö} = E_\text{lähtö} - E_\text{perille}$ ja $p = \dfrac{E_\text{häviö}}{E_\text{lähtö}}$
 **Muunnokset:** Osamäärä muutetaan prosentiksi kertomalla sadalla. Energiat ovat samassa yksikössä, megawattitunneissa.
 **Sijoitus:** Lähtevien energioiden summa on $2650\,\text{MWh}$ ja perille tulleiden $2395\,\text{MWh}$. Siten $E_\text{häviö} = 2650\,\text{MWh} - 2395\,\text{MWh} = 255\,\text{MWh}$ ja $p = \dfrac{255\,\text{MWh}}{2650\,\text{MWh}} = 0{,}0962 = 9{,}62\,\%$
-**Vastaus:** $9{,}62\,\%$, kolme merkitsevää numeroa, koska energiat on annettu kolmella numerolla (esimerkkiaineisto). Kuukausittain häviön osuus on tammikuussa $9{,}1\,\%$, helmikuussa $8{,}9\,\%$, maaliskuussa $9{,}8\,\%$ ja huhtikuussa $11\,\%$, joten se on suurin huhtikuussa. Selitys: lämmön tarve pienenee keväällä, mutta häviö pienenee ($75 \to 49\,\text{MWh}$) paljon vähemmän kuin syötetty energia ($820 \to 430\,\text{MWh}$), koska putket ovat kuumia ja maa kylmää myös keväällä, joten häviö on suurempi osuus pienemmästä energiasta.
+**Vastaus:** $9{,}62\,\%$, kolme merkitsevää numeroa, koska energiat on annettu kolmella numerolla (esimerkkiaineisto). Kuukausittain häviön osuus on tammikuussa $9{,}1\,\%$, helmikuussa $8{,}9\,\%$, maaliskuussa $9{,}8\,\%$ ja huhtikuussa $11\,\%$, joten se on suurin huhtikuussa.
+
+Selitys: lämmön tarve pienenee keväällä, mutta häviö pienenee ($75 \to 49\,\text{MWh}$) paljon vähemmän kuin syötetty energia ($820 \to 430\,\text{MWh}$), koska putket ovat kuumia ja maa kylmää myös keväällä, joten häviö on suurempi osuus pienemmästä energiasta.
+
 **Järkevyys:** Kuukausien osuudet ovat $8{,}9\,\%$ ja $11\,\%$ välillä, joten koko jakson $9{,}62\,\%$ on niiden välissä. Lisäksi $$
 \begin{aligned}
 &2395\,\text{MWh} + 255\,\text{MWh} \\
@@ -261,7 +264,10 @@ $$. C: $$
 &= 4500\,\text{kWh}
 \end{aligned}
 $$. Eniten säästää A, ja $\Delta E_\text{laitos} = \dfrac{6{,}0\,\text{MWh}}{0{,}910} = 6{,}593\,\text{MWh}$
-**Vastaus:** $6{,}6\,\text{MWh}$, kaksi merkitsevää numeroa kuten häviötehossa $2{,}4\,\text{kW}$. Valinta: ulkoseinien eristys, koska seinien häviöteho on suurin ja sen vähennys $50\,\%$ on suuri, joten säästö $6000\,\text{kWh}$ ohittaa parannukset B ($3600\,\text{kWh}$) ja C ($4500\,\text{kWh}$). Laitoksen säästö on suurempi kuin talon säästö, koska talon tarvitsema lämpö kulkee verkon läpi: kun talo tarvitsee $6{,}0\,\text{MWh}$ vähemmän, laitos säästää myös sen matkalla häviävän osan. Parannus kannattaa kohdistaa suurimpaan häviöön, ja päätökseen vaikuttavat todellisuudessa myös hinta ja vaikutus asumiseen.
+**Vastaus:** $6{,}6\,\text{MWh}$, kaksi merkitsevää numeroa kuten häviötehossa $2{,}4\,\text{kW}$. Valinta: ulkoseinien eristys, koska seinien häviöteho on suurin ja sen vähennys $50\,\%$ on suuri, joten säästö $6000\,\text{kWh}$ ohittaa parannukset B ($3600\,\text{kWh}$) ja C ($4500\,\text{kWh}$).
+
+Laitoksen säästö on suurempi kuin talon säästö, koska talon tarvitsema lämpö kulkee verkon läpi: kun talo tarvitsee $6{,}0\,\text{MWh}$ vähemmän, laitos säästää myös sen matkalla häviävän osan. Parannus kannattaa kohdistaa suurimpaan häviöön, ja päätökseen vaikuttavat todellisuudessa myös hinta ja vaikutus asumiseen.
+
 **Järkevyys:** Verkon häviön osuus säästöstä on $$
 \begin{aligned}
 &6{,}593\,\text{MWh} - 6{,}0\,\text{MWh} \\
@@ -289,7 +295,10 @@ H_4 &= 0{,}055 \cdot 330 = 18{,}15\,\text{MWh}
 \end{aligned}
 ```
 Syötettyjen energioiden summa on $1016\,\text{MWh}$ ja häviöiden summa $42{,}09\,\text{MWh}$. Siten $p = \dfrac{42{,}09\,\text{MWh}}{1016\,\text{MWh}} = 0{,}0414 = 4{,}1\,\%$
-**Vastaus:** $4{,}1\,\%$, kaksi merkitsevää numeroa kuten häviöosuuksissa (esimerkkiaineisto). Tulos on lähellä Suomen sähköverkon noin $4\,\%$:n häviötä (Energiateollisuus, 2024), eli samaa suuruusluokkaa. Häviävä energia on suurin jaksolla klo 19–24, jolloin häviää $18{,}15\,\text{MWh}$ eli noin $43\,\%$ koko vuorokauden häviöstä. Suurempi teho vaatii suuremman virran, ja häviö kasvaa virtaa nopeammin (kaksinkertainen virta antaa noin nelinkertaisen häviön), joten häviö kasvaa nopeammin kuin syötetty teho ja sen osuus kasvaa.
+**Vastaus:** $4{,}1\,\%$, kaksi merkitsevää numeroa kuten häviöosuuksissa (esimerkkiaineisto). Tulos on lähellä Suomen sähköverkon noin $4\,\%$:n häviötä (Energiateollisuus, 2024), eli samaa suuruusluokkaa. Häviävä energia on suurin jaksolla klo 19–24, jolloin häviää $18{,}15\,\text{MWh}$ eli noin $43\,\%$ koko vuorokauden häviöstä.
+
+Suurempi teho vaatii suuremman virran, ja häviö kasvaa virtaa nopeammin (kaksinkertainen virta antaa noin nelinkertaisen häviön), joten häviö kasvaa nopeammin kuin syötetty teho ja sen osuus kasvaa.
+
 **Järkevyys:** Jaksojen häviöosuuksien tavallinen keskiarvo olisi $3{,}7\,\%$, mikä on liian pieni, koska illalla syötetään paljon energiaa ja osuus on silloin suurin. Tulos $4{,}1\,\%$ on osuuksien $1{,}5\,\%$ ja $5{,}5\,\%$ välissä, ja $$
 \begin{aligned}
 &0{,}041 \cdot 1016\,\text{MWh} \\
@@ -332,7 +341,12 @@ a) $\Delta P = 11\,603\,\text{MW} - 11\,341\,\text{MW} = 262\,\text{MW}$ ja nett
 
 Lisäksi: a) Kulutus on $262\,\text{MW}$ eli noin $2{,}3\,\%$ tuotantoa suurempi, ja puute katettiin nettotuonnilla $210\,\text{MW}$. Luvut eivät täsmää aivan: erotus $262\,\text{MW} - 210\,\text{MW}$ on $52\,\text{MW}$, joka on vain noin $0{,}45\,\%$ kulutuksesta. Ero johtuu reaaliaikaisten mittausten pienistä eroista, eikä sitä tarvitse selittää muulla.
 
-c) Sähköverkko on yhdistetty naapurimaiden verkkoihin. Kun Suomessa tuotetaan vähemmän kuin kulutetaan, erotus tuodaan ulkomailta, kuten taulukossa ($210\,\text{MW}$). Kun tuotantoa on kulutusta enemmän, ylimääräinen sähkö viedään. Fingridin saman päivän näkymässä tuulivoimaa oli klo 1:00 $7639\,\text{MW}$, tuotanto $12\,791\,\text{MW}$ ja kulutus $10\,647\,\text{MW}$, joten tuotantoa oli kulutusta enemmän ja nettovienti oli $2142\,\text{MW}$. Lisäksi sähkövarastot ja tuotannon säätö tasapainottavat hetkittäisiä eroja; summassa tuotannon, tuonnin ja viennin on pysyttävä tasapainossa kulutuksen kanssa.
+c) Sähköverkko on yhdistetty naapurimaiden verkkoihin. Kun Suomessa tuotetaan vähemmän kuin kulutetaan, erotus tuodaan ulkomailta, kuten taulukossa ($210\,\text{MW}$). Kun tuotantoa on kulutusta enemmän, ylimääräinen sähkö viedään.
+
+Fingridin saman päivän näkymässä tuulivoimaa oli klo 1:00 $7639\,\text{MW}$, tuotanto $12\,791\,\text{MW}$ ja kulutus $10\,647\,\text{MW}$, joten tuotantoa oli kulutusta enemmän ja nettovienti oli $2142\,\text{MW}$. Lisäksi sähkövarastot ja tuotannon säätö tasapainottavat hetkittäisiä eroja; summassa tuotannon, tuonnin ja viennin on pysyttävä tasapainossa kulutuksen kanssa.
 
 d) Tuulivoiman osuus oli noin $49\,\%$ ja ydinvoiman noin $23\,\%$ tuotannosta. Tuulivoiman määrä riippuu säästä: samana päivänä se oli klo 1:00 $7639\,\text{MW}$ ja klo 10:00 $5885\,\text{MW}$. Yhden hetken osuudet muuttuvat tunneittain ja vuodenajoittain, joten ne eivät kerro keskiarvoa. Vuoden rakenteeseen tarvitaan tuotanto koko vuodelta (esimerkiksi tilastosta, jossa energia on laskettu vuoden yli); yksi hetki antaa vain tehon sillä hetkellä.
-**Järkevyys:** Tulos on $11\,603\,\text{MWh}$, ja $1\,\text{GWh} = 1000\,\text{MWh}$, joten yksikkömuunnos on oikein. Kulutusteho on noin $7{,}3$ kertaa Olkiluoto 3:n teho, sillä $11\,603 : 1600 = 7{,}25$, mikä on uskottava suuruusluokka koko maan kulutukselle. Osuuksien $0{,}491$ ja $0{,}229$ summa on alle $1$, kuten pitää, koska muita tuotantomuotoja on lisäksi. Malli olettaa, että teho pysyy tunnin ajan samana, mutta kulutus muuttuu koko ajan, joten tulos on arvio.
+**Järkevyys:** Tulos on $11\,603\,\text{MWh}$, ja $1\,\text{GWh} = 1000\,\text{MWh}$, joten yksikkömuunnos on oikein. Kulutusteho on noin $7{,}3$ kertaa Olkiluoto 3:n teho, sillä $11\,603 : 1600 = 7{,}25$, mikä on uskottava suuruusluokka koko maan kulutukselle.
+
+Osuuksien $0{,}491$ ja $0{,}229$ summa on alle $1$, kuten pitää, koska muita tuotantomuotoja on lisäksi. Malli olettaa, että teho pysyy tunnin ajan samana, mutta kulutus muuttuu koko ajan, joten tulos on arvio.
+

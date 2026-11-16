@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ce74d837245be4b5
+CONTENT-HASH: b21c87a6b10d8595
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] reflow-lesson-1/2 — a row breaks inside a product (`100` / `\cdot 10^{6}\,\text{kWh}`); terms are not kept whole. Acceptable at 360 px, optional.
+- none
 
 ## Checked
-batch delta review: reflow captures at 390 px opened (rows legible, nothing clipped, equals signs aligned, punctuation inside the last row, sentences read naturally); teacher-approved figures not re-judged.
+Delta (md-paragraphs): opened en fy2-8-example-390-1.png (stage 1 now a two-item list plus the question line: bullets aligned, spacing even, formulas intact, order unchanged) and the rest of the example page for layout. Hash re-run at the end: b21c87a6b10d8595.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

@@ -107,7 +107,9 @@
 **Muunnokset:** Kilowattitunnit ja tunnit antavat tehon kilowatteina. Lopuksi käytetään $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $P = \dfrac{3{,}0 \cdot 10^{3}\,\text{kWh}}{8760\,\text{h}} = 0{,}3425\,\text{kW} = 0{,}3425 \cdot 1000\,\text{W} = 342{,}5\,\text{W}$
 **Vastaus:** $340\,\text{W}$ (eli $3{,}4 \cdot 10^{2}\,\text{W}$). Siinä on kaksi merkitsevää numeroa, kuten energiassa.
-**Järkevyys:** Ajatellaan vedenkeitintä ($2000\,\text{W}$), joka olisi päällä koko ajan. Sen keskiteho olisi $2000\,\text{W}$. Kotitalouden $340\,\text{W}$ vastaa noin neljää televisiota ($4 \cdot 80\,\text{W} = 320\,\text{W}$), jotka ovat päällä koko ajan. Kulutus kertyy lyhyistä hetkistä, joissa teho on suuri, ja pitkistä hetkistä, joissa teho on pieni. Siksi keskiteho on pieni verrattuna laitteiden nimellistehojen summaan.
+**Järkevyys:** Ajatellaan vedenkeitintä ($2000\,\text{W}$), joka olisi päällä koko ajan. Sen keskiteho olisi $2000\,\text{W}$. Kotitalouden $340\,\text{W}$ vastaa noin neljää televisiota ($4 \cdot 80\,\text{W} = 320\,\text{W}$), jotka ovat päällä koko ajan.
+
+Kulutus kertyy lyhyistä hetkistä, joissa teho on suuri, ja pitkistä hetkistä, joissa teho on pieni. Siksi keskiteho on pieni verrattuna laitteiden nimellistehojen summaan.
 
 ## fy2-3-L3-03
 **Annettu:** kulutus $18\,\text{kWh}$ sadalla kilometrillä, lataus teholla $2{,}3\,\text{kW}$ ajan $8{,}0\,\text{h}$, häviöt jätetään huomiotta
@@ -122,12 +124,18 @@
 ## fy2-3-L1-06
 **Kysytty:** mikä väite kahden eri tehoisen laitteen vertailusta on oikein.
 **Periaate:** Teho on muuntuneen energian ja ajan osamäärä, $P = \Delta E : \Delta t$. Siksi $1\,\text{W} = 1\,\text{J/s}$. Teho kertoo, paljonko energiaa muuntuu tietyssä ajassa. Kulutettu energia riippuu myös ajasta: $E = P\,t$.
-**Mallivastaus:** Laite B muuntaa energiaa joka sekunti kaksi kertaa niin paljon kuin laite A, koska $2{,}0\,\text{kW} = 2 \cdot 1{,}0\,\text{kW}$. B ei kuitenkaan kuluta aina enemmän energiaa. Energia on teho kertaa aika, ja pidempään käynyt A voi ehtiä kuluttaa enemmän. Kilowatti on tehon yksikkö. Energian yksikkö on esimerkiksi kilowattitunti, joten A kuluttaa tunnissa $1{,}0\,\text{kWh}$. Teho ei kerro kulutettua kokonaisenergiaa.
+**Mallivastaus:** Laite B muuntaa energiaa joka sekunti kaksi kertaa niin paljon kuin laite A, koska $2{,}0\,\text{kW} = 2 \cdot 1{,}0\,\text{kW}$.
+
+B ei kuitenkaan kuluta aina enemmän energiaa. Energia on teho kertaa aika, ja pidempään käynyt A voi ehtiä kuluttaa enemmän.
+
+Kilowatti on tehon yksikkö. Energian yksikkö on esimerkiksi kilowattitunti, joten A kuluttaa tunnissa $1{,}0\,\text{kWh}$. Teho ei kerro kulutettua kokonaisenergiaa.
 
 ## fy2-3-L1-07
 **Kysytty:** mitä origosta lähtevän energia–aika-suoran jyrkkyys kertoo.
 **Periaate:** Suoran jyrkkyys eli kulmakerroin on $\Delta E : \Delta t$, ja tämä osamäärä on teho. Laite muuntaa energiaa tasaisesti. Siksi energia on suoraan verrannollinen aikaan, ja suoran jyrkkyys on sama joka kohdassa.
-**Mallivastaus:** Jyrkkyys kertoo laitteen tehon. Mitä jyrkemmin suora nousee, sitä enemmän energiaa muuntuu sekunnissa. Jyrkkyys ei ole kokonaisenergia, koska kokonaisenergia luetaan suoran korkeudesta tietyllä hetkellä. Se ei ole myöskään aika, koska aika on vaaka-akselilla. Kuvaajasta ei voi päätellä laitteen painoa.
+**Mallivastaus:** Jyrkkyys kertoo laitteen tehon. Mitä jyrkemmin suora nousee, sitä enemmän energiaa muuntuu sekunnissa.
+
+Jyrkkyys ei ole kokonaisenergia, koska kokonaisenergia luetaan suoran korkeudesta tietyllä hetkellä. Se ei ole myöskään aika, koska aika on vaaka-akselilla. Kuvaajasta ei voi päätellä laitteen painoa.
 
 ## fy2-3-L1-08
 **Annettu:** energia $E = 3{,}6\,\text{MJ}$, aika $t = 2{,}0\,\text{min}$
@@ -179,7 +187,11 @@ $$. Siis $E_\text{yht} = 1960 \cdot 10^{-3}\,\text{kWh} = 1{,}96\,\text{kWh}$.
 **Kaava:** $P = \dfrac{\Delta E}{\Delta t}$
 **Muunnokset:** $50\,\text{min} = 50 \cdot (1\,\text{h} : 60) = \tfrac{5}{6}\,\text{h}$, joten $\Delta t = 0{,}833\,\text{h}$. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** $P = \dfrac{1{,}50\,\text{kWh} - 0{,}00\,\text{kWh}}{0{,}833\,\text{h}} = 1{,}80\,\text{kW} = 1{,}80 \cdot 1000\,\text{W} = 1800\,\text{W}$
-**Vastaus:** $1800\,\text{W}$ eli $1{,}8\,\text{kW}$. Siinä on kaksi merkitsevää numeroa. Silmällä tehty sovitus vaihtelee, joten noin $1710\text{–}1890\,\text{W}$ on hyvä vastaus. Suora kulkee origon kautta, koska mittari nollattiin alussa. Kun aikaa ei ole kulunut, energiaa ei ole muuntunut. Jyrkkyys on teho, koska se kertoo energian lisäyksen aikayksikköä kohti.
+**Vastaus:** $1800\,\text{W}$ eli $1{,}8\,\text{kW}$. Siinä on kaksi merkitsevää numeroa.
+
+Silmällä tehty sovitus vaihtelee, joten noin $1710\text{–}1890\,\text{W}$ on hyvä vastaus.
+
+Suora kulkee origon kautta, koska mittari nollattiin alussa. Kun aikaa ei ole kulunut, energiaa ei ole muuntunut. Jyrkkyys on teho, koska se kertoo energian lisäyksen aikayksikköä kohti.
 **Järkevyys:** Teho $1{,}8\,\text{kW}$ on tavallinen lämmittimelle tai hiustenkuivaimelle. Kymmenessä minuutissa kuluu $$
 1{,}8\,\text{kW} \cdot (1\,\text{h} : 6) = 0{,}30\,\text{kWh}
 $$. Se vastaa taulukon ensimmäistä lukemaa $0{,}31\,\text{kWh}$.
@@ -197,13 +209,19 @@ $$. Se vastaa taulukon ensimmäistä lukemaa $0{,}31\,\text{kWh}$.
 &= 2800
 \end{aligned}
 $$, joten $E = 2800\,\text{MW} \cdot 1\,\text{h} = 2800\,\text{MWh} = 2800 \cdot 10^{-3}\,\text{GWh} = 2{,}8\,\text{GWh}$.
-**Vastaus:** Puuttuva energia on $2{,}8\,\text{GWh}$. Siinä on kaksi merkitsevää numeroa. Kulutus on suurimmillaan klo 09–10, $10\,600\,\text{MW}$. Suurin vaje on $800\,\text{MW}$ tunteina 08–09 ja 09–10. Säätövoimaa ja tuontia tarvitaan siis vähintään $800\,\text{MW}$. Vaje kasvaa nopeasti aamulla ja pienenee puolenpäivän aikaan. Tehtävään sopii siksi voimalaitos, jonka tehoa voi säätää nopeasti, esimerkiksi vesivoimala. Tuulivoima ei sovi, koska se riippuu säästä. Ydinvoimala ei sovi, koska se on tasaista perusvoimaa.
+**Vastaus:** Puuttuva energia on $2{,}8\,\text{GWh}$. Siinä on kaksi merkitsevää numeroa. Kulutus on suurimmillaan klo 09–10, $10\,600\,\text{MW}$. Suurin vaje on $800\,\text{MW}$ tunteina 08–09 ja 09–10. Säätövoimaa ja tuontia tarvitaan siis vähintään $800\,\text{MW}$.
+
+Vaje kasvaa nopeasti aamulla ja pienenee puolenpäivän aikaan. Tehtävään sopii siksi voimalaitos, jonka tehoa voi säätää nopeasti, esimerkiksi vesivoimala.
+
+Tuulivoima ei sovi, koska se riippuu säästä. Ydinvoimala ei sovi, koska se on tasaista perusvoimaa.
 **Järkevyys:** Vesivoimalan teho on satoja megawatteja. Teho $800\,\text{MW}$ on siis useiden laitosten yhteisteho. Se on uskottava Suomen kokoiselle sähköjärjestelmälle. Energia $2{,}8\,\text{GWh}$ on kolme–neljä kertaa huipputunnin vaje $0{,}8\,\text{GWh}$. Se sopii viiden tunnin vajeeseen, joka on suurimmillaan kaksi tuntia.
 
 ## fy2-3-L3-05
 **Annettu:** taulukon jaksot, joissa kompressori käy $11{,}5$, $12{,}0$, $11{,}5$ ja $12{,}0\,\text{min}$ ja on seis $18{,}0$, $18{,}5$, $17{,}5$ ja $18{,}0\,\text{min}$; käyntiteho $P = 100\,\text{W}$; uuden jääkaapin vuosikulutus $130\,\text{kWh}$; hinta $0{,}20\,\text{€/kWh}$; vuosi $8760\,\text{h}$
 **Kysytty:** vanhan jääkaapin keskiteho ja vuosikulutus sekä uuteen vaihtamalla säästyvä hinta euroina; arvio, kannattaako vaihto
-**Periaate:** Kompressori käy teholla $100\,\text{W}$ vain osan ajasta. Keskiteho on siksi käyntiteho kerrottuna käyntiajan osuudella kokonaisajasta. Vuosikulutus on keskiteho kertaa vuoden aika. Säästö on kulutusten erotus kertaa hinta. Malli olettaa, että mitatut jaksot kuvaavat koko vuotta.
+**Periaate:** Kompressori käy teholla $100\,\text{W}$ vain osan ajasta. Keskiteho on siksi käyntiteho kerrottuna käyntiajan osuudella kokonaisajasta.
+
+Vuosikulutus on keskiteho kertaa vuoden aika. Säästö on kulutusten erotus kertaa hinta. Malli olettaa, että mitatut jaksot kuvaavat koko vuotta.
 **Kaava:** $\text{osuus} = \dfrac{t_\text{käy}}{t_\text{käy} + t_\text{seis}}$, $P_\text{ka} = \text{osuus} \cdot P$, $E = P_\text{ka}\,t$ ja $$ \begin{aligned} \text{säästö} &= (E - E_\text{uusi}) \\ &\cdot \text{yksikköhinta} \end{aligned} $$
 **Muunnokset:** Keskiteho muutetaan kilowateiksi sijoittamalla $1\,\text{W} = 10^{-3}\,\text{kW}$.
 **Sijoitus:** Käyntiaikojen summa on $$
@@ -229,7 +247,11 @@ $$, joten osuus on $\dfrac{47{,}0}{119{,}0} = 0{,}395$. Keskiteho on $P_\text{ka
 &= 43{,}2\,\text{€}
 \end{aligned}
 $$.
-**Vastaus:** Keskiteho on noin $40\,\text{W}$, vuosikulutus noin $350\,\text{kWh}$ ja säästö noin $43\,\text{€}$ vuodessa. Luvuissa on kaksi merkitsevää numeroa. Uusi $600\,\text{€}$ maksava jääkaappi maksaisi itsensä takaisin vasta ajassa $600\,\text{€} : 43\,\text{€/a} \approx 14\,\text{a}$. Pelkän sähkön säästön vuoksi ostaminen ei siis kannata, jos vanha jääkaappi toimii. Tulokseen vaikuttavat oletukset: mitatut neljä jaksoa kuvaavat tavallista käyntiä. Huoneen lämpötila, oven avaaminen tai jään kertyminen ei muuta käyntiaikaa vuoden aikana. Muut kulutukset, kuten valo ja sulatus, jätetään huomiotta.
+**Vastaus:** Keskiteho on noin $40\,\text{W}$, vuosikulutus noin $350\,\text{kWh}$ ja säästö noin $43\,\text{€}$ vuodessa. Luvuissa on kaksi merkitsevää numeroa.
+
+Uusi $600\,\text{€}$ maksava jääkaappi maksaisi itsensä takaisin vasta ajassa $600\,\text{€} : 43\,\text{€/a} \approx 14\,\text{a}$. Pelkän sähkön säästön vuoksi ostaminen ei siis kannata, jos vanha jääkaappi toimii.
+
+Tulokseen vaikuttavat oletukset: mitatut neljä jaksoa kuvaavat tavallista käyntiä. Huoneen lämpötila, oven avaaminen tai jään kertyminen ei muuta käyntiaikaa vuoden aikana. Muut kulutukset, kuten valo ja sulatus, jätetään huomiotta.
 **Järkevyys:** Keskiteho $40\,\text{W}$ on alle puolet käyntitehosta, koska kompressori käy noin kaksi viidesosaa ajasta. Vuosikulutus, joka on muutamia satoja kilowattitunteja, on tavallinen vanhalle laitteelle. Sähkön hinta $0{,}20\,\text{€/kWh}$ antaa muutaman kymmenen euron vuosikustannuksen.
 
 ## fy2-3-L2-08
@@ -244,7 +266,9 @@ Teho on siis kaksinkertainen: $$
 P_2 : P_1 &= 4{,}0\,\text{kW} : 2{,}0\,\text{kW} \\
 &= 2{,}0
 \end{aligned}
-$$. Kun aika puolittuu ja energia pysyy samana, teho kasvaa kaksinkertaiseksi. Teho ei puolitu, koska aika on jakajana eikä kertoimena. Teho ei myöskään pysy samana, koska teho kertoo muuntumisen vauhdin eikä vain energiaa. Teho ei nelinkertaistu, koska aika puolittui vain yhden kerran.
+$$.
+
+Kun aika puolittuu ja energia pysyy samana, teho kasvaa kaksinkertaiseksi. Teho ei puolitu, koska aika on jakajana eikä kertoimena. Teho ei myöskään pysy samana, koska teho kertoo muuntumisen vauhdin eikä vain energiaa. Teho ei nelinkertaistu, koska aika puolittui vain yhden kerran.
 
 ## fy2-3-L1-09
 **Annettu:** teho $P = 5{,}0\,\text{hp}$ ja aika $\Delta t = 30\,\text{min}$. Taulukosta (MAFY-taulukko, yksikkömuunnoksia, teho, hevosvoima): $1\,\text{hp} = 735{,}5\,\text{W}$ (metrinen hevosvoima)
@@ -267,7 +291,9 @@ $$. Kun aika puolittuu ja energia pysyy samana, teho kasvaa kaksinkertaiseksi. T
 **Vastaus:** Laitteen A teho on $3{,}0$ kertaa laitteen B teho.
 **Järkevyys:** Suhde on suurempi kuin yksi, koska A nousee jyrkemmin. Hetkellä $80\,\text{s}$ A on muuntanut $120\,\text{kJ}$ ja B $40\,\text{kJ}$, ja $120 : 40 = 3$, sama suhde.
 ## fy2-3-L2-09
-**Annettu:** teho $P = 2{,}0\,\text{kW}$ ja aika $\Delta t = 4\,\text{h}$ (aika on tehtävän antama ja tarkka), markkinahinta $h = -5{,}0\,\text{snt/kWh}$ ja vertailuhinta $+15\,\text{snt/kWh}$. Artikkelista (Yle, 16. elokuuta 2023, luettu 16. marraskuuta 2026): hinta voi mennä miinukselle, jos tuotantoa on enemmän kuin kulutusta. Välityspalkkio on esimerkiksi Vaasan sähköllä $0{,}41\,\text{snt/kWh}$. Vaasan sähkö laskee negatiivisen tuntihinnan nollaksi.
+**Annettu:** teho $P = 2{,}0\,\text{kW}$ ja aika $\Delta t = 4\,\text{h}$ (aika on tehtävän antama ja tarkka), markkinahinta $h = -5{,}0\,\text{snt/kWh}$ ja vertailuhinta $+15\,\text{snt/kWh}$.
+
+Artikkelista (Yle, 16. elokuuta 2023, luettu 16. marraskuuta 2026): hinta voi mennä miinukselle, jos tuotantoa on enemmän kuin kulutusta. Välityspalkkio on esimerkiksi Vaasan sähköllä $0{,}41\,\text{snt/kWh}$. Vaasan sähkö laskee negatiivisen tuntihinnan nollaksi.
 **Kysytty:** a) milloin hinta voi olla negatiivinen; b) energia $E$ ja kustannus $C$ yksikössä $\text{snt}$; c) vertailu hintaan $+15\,\text{snt/kWh}$ ja miksi negatiivinen hinta ei ole ilmaista sähköä; d) varastoinnin ja kulutuksen ajoittamisen vaikutus
 **Periaate:** Kun teho pysyy samana, laite käyttää energiaa $E = P\,\Delta t$. Kustannus on energia kerrottuna hinnalla yhtä energiayksikköä kohti: $C = h E$. Hinta on annettu yhtä kilowattituntia kohti, joten energia lasketaan kilowattitunteina.
 **Kaava:** $E = P\,\Delta t$ ja $C = h E$, joten $C = h\,P\,\Delta t$.
@@ -289,7 +315,27 @@ $$\begin{aligned} C_\text{väl} &= 0{,}41\,\text{snt/kWh} \cdot 8{,}0\,\text{kWh
 
 Lisäksi: a) Artikkelin mukaan pörssisähkön hinta voi mennä miinukselle, kun sähköä tuotetaan enemmän kuin sitä kulutetaan. Näin voi käydä esimerkiksi silloin, kun sähköä on paljon tarjolla ja kulutus on pientä. Silloin sähkön tuottaja joutuu maksamaan siitä, että sähkö otetaan verkosta.
 
-c) Kustannus $-40\,\text{snt}$ on hyvitys. Hinnalla $+15\,\text{snt/kWh}$ maksettaisiin $120\,\text{snt} = 1{,}20\,€$. Ero on $160\,\text{snt}$. Negatiivinen markkinahinta ei silti tee sähköstä ilmaista. Kuluttaja ostaa sähkön myyjältä, ja myyjä ottaa välityspalkkion. Artikkelin mukaan se on esimerkiksi Vaasan sähköllä $0{,}41\,\text{snt/kWh}$, Oomilla $0{,}25\,\text{snt/kWh}$ ja Vattenfallilla $0{,}50\,\text{snt/kWh}$. Osa myyjistä hyvittää negatiivisen tunnin. Vaasan sähkö laskee sen nollaksi. Silloin kuluttaja maksaa $8{,}0\,\text{kWh}$:sta noin $3{,}3\,\text{snt}$ eikä saa hyvitystä. Markkinahinta on myös vain osa laskusta. Fingridin sivulla aluehinta on ilman veroja ja sähkön siirtokustannuksia, ja kuluttaja maksaa niistäkin. Artikkeli on vuodelta 2023, joten nykyiset sopimukset voivat olla erilaisia. Tässä artikkelia käytetään hinnan syntymisen periaatteen lähteenä.
+c) Kustannus $-40\,\text{snt}$ on hyvitys. Hinnalla $+15\,\text{snt/kWh}$ maksettaisiin $120\,\text{snt} = 1{,}20\,€$. Ero on $160\,\text{snt}$.
 
-d) Varastointi siirtää energiaa toiseen aikaan. Varasto ladataan, kun sähköä on liikaa ja hinta on matala tai negatiivinen. Varasto puretaan, kun sähköä tarvitaan. Myös kulutuksen ajoittaminen auttaa. Esimerkiksi sähköauton voi ladata halvan tunnin aikaan. Silloin kulutus kasvaa, kun tuotantoa on liikaa, ja pienenee, kun sähköstä on pula. Molemmat pienentävät tuotannon ja kulutuksen eroa. Rajoituksiakin on. Varastoon ladattu energia ei tule kaikki takaisin, koska osa muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Varastot ovat kooltaan rajallisia. Ajoittamisesta hyötyy vain, jos sähkösopimus seuraa tuntihintaa.
-**Järkevyys:** Arvio pyöreillä luvuilla: $2\,\text{kW} \cdot 4\,\text{h} = 8\,\text{kWh}$ ja $8 \cdot (-5) = -40$. Merkki on oikein, koska hinta on negatiivinen ja energia on positiivinen. Hyvitys $40\,\text{snt}$ on vain kolmannes kustannuksesta $120\,\text{snt}$, koska hinnan $-5{,}0\,\text{snt/kWh}$ suuruus on kolmannes hinnasta $+15\,\text{snt/kWh}$. Yksikkö on oikea: $\text{kWh} \cdot \text{snt/kWh} = \text{snt}$. Malli olettaa saman tehon ja saman hinnan koko neljän tunnin ajan. Todellinen tuntihinta kuitenkin vaihtelee.
+Negatiivinen markkinahinta ei silti tee sähköstä ilmaista.
+
+Kuluttaja ostaa sähkön myyjältä, ja myyjä ottaa välityspalkkion. Artikkelin mukaan se on esimerkiksi Vaasan sähköllä $0{,}41\,\text{snt/kWh}$, Oomilla $0{,}25\,\text{snt/kWh}$ ja Vattenfallilla $0{,}50\,\text{snt/kWh}$.
+
+Osa myyjistä hyvittää negatiivisen tunnin. Vaasan sähkö laskee sen nollaksi. Silloin kuluttaja maksaa $8{,}0\,\text{kWh}$:sta noin $3{,}3\,\text{snt}$ eikä saa hyvitystä.
+
+Markkinahinta on myös vain osa laskusta. Fingridin sivulla aluehinta on ilman veroja ja sähkön siirtokustannuksia, ja kuluttaja maksaa niistäkin.
+
+Artikkeli on vuodelta 2023, joten nykyiset sopimukset voivat olla erilaisia. Tässä artikkelia käytetään hinnan syntymisen periaatteen lähteenä.
+
+d) Varastointi siirtää energiaa toiseen aikaan. Varasto ladataan, kun sähköä on liikaa ja hinta on matala tai negatiivinen. Varasto puretaan, kun sähköä tarvitaan.
+
+Myös kulutuksen ajoittaminen auttaa. Esimerkiksi sähköauton voi ladata halvan tunnin aikaan. Silloin kulutus kasvaa, kun tuotantoa on liikaa, ja pienenee, kun sähköstä on pula.
+
+Molemmat pienentävät tuotannon ja kulutuksen eroa.
+
+Rajoituksiakin on. Varastoon ladattu energia ei tule kaikki takaisin, koska osa muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön. Varastot ovat kooltaan rajallisia. Ajoittamisesta hyötyy vain, jos sähkösopimus seuraa tuntihintaa.
+**Järkevyys:** Arvio pyöreillä luvuilla: $2\,\text{kW} \cdot 4\,\text{h} = 8\,\text{kWh}$ ja $8 \cdot (-5) = -40$. Merkki on oikein, koska hinta on negatiivinen ja energia on positiivinen.
+
+Hyvitys $40\,\text{snt}$ on vain kolmannes kustannuksesta $120\,\text{snt}$, koska hinnan $-5{,}0\,\text{snt/kWh}$ suuruus on kolmannes hinnasta $+15\,\text{snt/kWh}$. Yksikkö on oikea: $\text{kWh} \cdot \text{snt/kWh} = \text{snt}$.
+
+Malli olettaa saman tehon ja saman hinnan koko neljän tunnin ajan. Todellinen tuntihinta kuitenkin vaihtelee.

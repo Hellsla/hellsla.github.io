@@ -58,12 +58,20 @@ $$, and $2880 : 3 = 960$.
 ## fy2-6-L1-06
 **Find:** which of the listed energy sources is renewable
 **Principle:** A renewable energy source does not run out when it is used, because the Sun and the water cycle keep replenishing it. A non-renewable source formed over a very long time, and no more of it forms at the rate at which it is used.
-**Model answer:** Wind. The Sun keeps the atmosphere moving all the time, so the energy of the wind does not run out when it is used. Uranium, coal and natural gas are non-renewable: coal and natural gas are fossil fuels that formed over millions of years, and there is a limited amount of uranium. Wind is renewable but weather-dependent, so renewable does not always mean available.
+**Model answer:** Wind. The Sun keeps the atmosphere moving all the time, so the energy of the wind does not run out when it is used.
+
+Uranium, coal and natural gas are non-renewable: coal and natural gas are fossil fuels that formed over millions of years, and there is a limited amount of uranium.
+
+Wind is renewable but weather-dependent, so renewable does not always mean available.
 
 ## fy2-6-L1-07
 **Find:** what is meant by regulating power
 **Principle:** In an electricity grid, production must at every moment be equal to consumption. Regulating power is production whose power can be raised and lowered as needed. Base load power produces steadily, and the power of weather-dependent production varies without anyone being able to decide it.
-**Model answer:** Regulating power is a power plant whose power can be changed quickly to follow consumption, such as a hydropower plant. A nuclear power plant that produces steadily all year is base load power, not regulating power. The power of a wind turbine varies with the weather, but it cannot be regulated as needed, so it is weather-dependent production. That is why regulating power is needed alongside wind power.
+**Model answer:** Regulating power is a power plant whose power can be changed quickly to follow consumption, such as a hydropower plant.
+
+A nuclear power plant that produces steadily all year is base load power, not regulating power.
+
+The power of a wind turbine varies with the weather, but it cannot be regulated as needed, so it is weather-dependent production. That is why regulating power is needed alongside wind power.
 
 ## fy2-6-L1-08
 **Given:** rated power $P_\text{rated} = 4.0\,\text{MW}$, annual energy $E = 11\,\text{GWh}$
@@ -95,7 +103,11 @@ Estimate with round numbers: the average power is about $1\,\text{MW}$, so the a
 \end{aligned}
 $$, and $9 \cdot 10^{6} : 5000 \approx 2000$.
 
-Other options: $2$ houses results when megawatt-hours and kilowatt-hours are divided by each other without converting (a thousand times too small). $200$ houses results when the share $33\,\%$ is misread as a tenth. $5000$ houses results when the rated power is used instead of the average power: $3.0\,\text{MW} \cdot 8760\,\text{h} : 5000\,\text{kWh}$, which is about $5300$. This is wrong because the wind does not blow all the time, so the energy is calculated with the average power.
+Other options: $2$ houses results when megawatt-hours and kilowatt-hours are divided by each other without converting (a thousand times too small). $200$ houses results when the share $33\,\%$ is misread as a tenth.
+
+$5000$ houses results when the rated power is used instead of the average power: $3.0\,\text{MW} \cdot 8760\,\text{h} : 5000\,\text{kWh}$, which is about $5300$.
+
+This is wrong because the wind does not blow all the time, so the energy is calculated with the average power.
 
 ## fy2-6-L2-01
 **Given:** rated power $P_\text{nom} = 25\,\text{MW}$, average power $32\,\%$ of the rated power, time $t = 8760\,\text{h}$
@@ -176,12 +188,16 @@ o_2 &= 20.0 : 80.0 \\
 &= 25\,\%
 \end{aligned}
 $$. The change is $\Delta o = 25.0\,\% - 2.2\,\% = 22.8$ percentage points.
-**Answer:** The share of wind power grew by $23$ percentage points (calculated value $22.8$; from $2.2\,\%$ to $25\,\%$), two significant figures like the energy of wind power $1.5\,\text{TWh}$. The energy of thermal power using fuels decreased the most: $$
+**Answer:** The share of wind power grew by $23$ percentage points (calculated value $22.8$; from $2.2\,\%$ to $25\,\%$), two significant figures like the energy of wind power $1.5\,\text{TWh}$.
+
+The energy of thermal power using fuels decreased the most: $$
 \begin{aligned}
 &28.5\,\text{TWh} - 14.0\,\text{TWh} \\
 &= 14.5\,\text{TWh}
 \end{aligned}
-$$. The production structure shifted from fuels to wind and nuclear power, so the share of production that causes emissions became smaller. At the same time the share of weather-dependent production grew, so the need for regulating power grew.
+$$.
+
+The production structure shifted from fuels to wind and nuclear power, so the share of production that causes emissions became smaller. At the same time the share of weather-dependent production grew, so the need for regulating power grew.
 **Reasonableness:** The shares must add up to one hundred percent: in the second year $$
 \begin{aligned}
 &32.0 : 80.0 + 14.0 : 80.0 \\
@@ -231,7 +247,11 @@ o_\text{C} &= 4.0\,\text{MW} : 12\,\text{MW} = 0.33
 &= 1.616 \cdot 10^{6}\,\text{t}
 \end{aligned}
 $$
-**Answer:** About $1.6$ million tonnes of carbon dioxide equivalent per year, two significant figures like the energy $2.0\,\text{TWh}$. On the basis of emissions and lifetime the best choice is nuclear power: its emission factor $12\,\text{g/kWh}$ is the smallest (as small as that of wind power) and its lifetime $60\,\text{a}$ is the longest. The table does not tell the controllability of power, the costs, the weather dependence, the land use or the waste, all of which affect the choice. For example, wind power and solar power are weather-dependent and need regulating power.
+**Answer:** About $1.6$ million tonnes of carbon dioxide equivalent per year, two significant figures like the energy $2.0\,\text{TWh}$.
+
+On the basis of emissions and lifetime the best choice is nuclear power: its emission factor $12\,\text{g/kWh}$ is the smallest (as small as that of wind power) and its lifetime $60\,\text{a}$ is the longest.
+
+The table does not tell the controllability of power, the costs, the weather dependence, the land use or the waste, all of which affect the choice. For example, wind power and solar power are weather-dependent and need regulating power.
 **Reasonableness:** The emissions of coal are $820 : 12 \approx 68$ times the emissions of wind power, so almost the whole emission of coal, $820\,\text{g/kWh} \cdot 2.0 \cdot 10^{9}\,\text{kWh} = 1.64 \cdot 10^{6}\,\text{t}$, is saved, and $1.616 : 1.64 = 0.99$.
 
 ## fy2-6-L3-01
@@ -280,7 +300,11 @@ $$, and $4.7 : 1.7 \approx 2.8$. The same rated power does not mean the same ann
 **Conversions:** $o_\text{O} = 90\,\% = 0.90$ and $o_\text{a} = 11\,\% = 0.11$. Finally megawatts to gigawatts: $13\,091\,\text{MW} = 13.091 \cdot 1000\,\text{MW} = 13.1\,\text{GW}$.
 **Substitution:** $P_\text{a} = 0.90 \cdot 1600\,\text{MW} : 0.11 = 1440\,\text{MW} : 0.11 = 13\,091\,\text{MW} = 13.1\,\text{GW}$
 **Answer:** $13\,\text{GW}$, two significant figures like the shares $11\,\%$ and $90\,\%$.
-**Reasonableness:** Estimate: $90 : 11 \approx 8$, so about eight times as much rated power is needed, $8 \cdot 1.6\,\text{GW} \approx 13\,\text{GW}$. On a January evening the Sun has set, so the park produces nothing at all, even if its annual energy were the same as that of Olkiluoto 3. Then controllable production, such as hydropower and fuel-fired power plants, or imported electricity and energy storage, would be needed in place of Olkiluoto 3. The same annual energy therefore does not mean that one power plant replaces another at every moment.
+**Reasonableness:** Estimate: $90 : 11 \approx 8$, so about eight times as much rated power is needed, $8 \cdot 1.6\,\text{GW} \approx 13\,\text{GW}$.
+
+On a January evening the Sun has set, so the park produces nothing at all, even if its annual energy were the same as that of Olkiluoto 3. Then controllable production, such as hydropower and fuel-fired power plants, or imported electricity and energy storage, would be needed in place of Olkiluoto 3.
+
+The same annual energy therefore does not mean that one power plant replaces another at every moment.
 
 ## fy2-6-L3-04
 **Given:** rated power of wind power $P_\text{rated} = 9.0\,\text{GW}$, nuclear power $P_\text{nuclear} = 3.5\,\text{GW}$ for the whole week, the daily $P_\text{wind}$ and $P_\text{consumption}$ from the table, week $168\,\text{h}$
@@ -319,24 +343,32 @@ P_\text{Su} &= 8.4 - 3.5 - 5.4 = -0.5
 &+ 10.1 + 8.7 + 8.4 \\
 &= 67.3\,\text{GW}
 \end{aligned}
-$$ times $24\,\text{h}$ is the weekly consumption $1615\,\text{GWh}$. Nuclear power produces $3.5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}$ and wind power $489.6\,\text{GWh}$, so the energy of the others is $$
+$$ times $24\,\text{h}$ is the weekly consumption $1615\,\text{GWh}$.
+
+Nuclear power produces $3.5\,\text{GW} \cdot 168\,\text{h} = 588\,\text{GWh}$ and wind power $489.6\,\text{GWh}$, so the energy of the others is $$
 \begin{aligned}
 &1615 - 588 - 490 \\
 &= 537\,\text{GWh}
 \end{aligned}
-$$. The sum of the daily powers of the others $$
+$$.
+
+The sum of the daily powers of the others $$
 \begin{aligned}
 \Sigma P_\text{other} &= 1.2 + 3.2 + 6.1 \\
 &+ 6.7 + 4.7 + 1.0 \\
 &- 0.5 \\
 &= 22.4\,\text{GW}
 \end{aligned}
-$$ times $24\,\text{h}$ is $538\,\text{GWh}$, so the calculations agree. Wind power covers only $490 : 1615 = 0.30$, that is, $30\,\%$ of the weekly consumption, although its rated power is almost as great as the consumption.
+$$ times $24\,\text{h}$ is $538\,\text{GWh}$, so the calculations agree.
+
+Wind power covers only $490 : 1615 = 0.30$, that is, $30\,\%$ of the weekly consumption, although its rated power is almost as great as the consumption.
 
 ## fy2-6-L3-05
 **Given:** wind farm $P_\text{rated} = 100\,\text{MW}$, average power $33\,\%$, $K = 120$ million euros, lifetime $25\,\text{a}$, $12\,\text{g/kWh}$; nuclear power plant $1200\,\text{MW}$, $90\,\%$, $K = 6000$ million euros, $60\,\text{a}$, $12\,\text{g/kWh}$; year $8760\,\text{h}$
 **Find:** a) the annual energies; b) the construction cost per megawatt-hour produced, the wind farm in the box; c) the emission in carbon dioxide equivalent from the life-cycle emissions that belongs to one year's production; d) a justified comparison
-**Principle:** The annual energy is the average power multiplied by the length of a year, and the average power is a share of the rated power. The energy over the lifetime is the annual energy multiplied by the lifetime. The cost per energy is the construction cost divided by the energy over the lifetime. The emission is the emission factor multiplied by the energy.
+**Principle:** The annual energy is the average power multiplied by the length of a year, and the average power is a share of the rated power. The energy over the lifetime is the annual energy multiplied by the lifetime.
+
+The cost per energy is the construction cost divided by the energy over the lifetime. The emission is the emission factor multiplied by the energy.
 **Formula:** $E_\text{y} = o\, P_\text{rated}\, t$, $E_\text{tot} = E_\text{y} \cdot a$ and $k = \dfrac{K}{E_\text{tot}}$
 **Conversions:** $$
 \begin{aligned}
@@ -364,7 +396,17 @@ k &= 6000 \cdot 10^{6}\,\text{euros} \\
 \end{aligned}
 $$.
 c) Wind farm: $289\,080\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 3.469 \cdot 10^{9}\,\text{g} = 3469\,\text{t}$. Nuclear power plant: $9\,460\,800\,000\,\text{kWh} \cdot 12\,\text{g/kWh} = 1.135 \cdot 10^{11}\,\text{g} = 113\,500\,\text{t}$.
-**Answer:** The construction cost of the wind farm is $17\,\text{euros/MWh}$ (calculated value $16.6$; two significant figures like the share $33\,\%$) and that of the nuclear power plant $11\,\text{euros/MWh}$. The annual energies are $2.9 \cdot 10^{5}\,\text{MWh}$ and $9.5 \cdot 10^{6}\,\text{MWh}$, and the life-cycle emissions that belong to one year's production are about $3500\,\text{t}$ and $114\,000\,\text{t}$. The emissions per energy are the same ($12\,\text{g/kWh}$), so the large annual emissions of the nuclear power plant are due only to its large production. In this data set the construction cost per energy is smaller for nuclear power, because it produces at a greater share of its rated power and for longer. Nuclear power is steady base load power, but it cannot be regulated quickly, and it involves nuclear waste. Wind power is weather-dependent, so it needs regulating power or storage alongside it. A justified recommendation is a combination: on the basis of emissions either is suitable, and on the basis of cost nuclear power is cheaper, but weather-dependent wind power suits complementing it when there is enough regulating power. The recommendation, however, rests only on this example data set and on the construction cost alone.
+**Answer:** The construction cost of the wind farm is $17\,\text{euros/MWh}$ (calculated value $16.6$; two significant figures like the share $33\,\%$) and that of the nuclear power plant $11\,\text{euros/MWh}$.
+
+The annual energies are $2.9 \cdot 10^{5}\,\text{MWh}$ and $9.5 \cdot 10^{6}\,\text{MWh}$, and the life-cycle emissions that belong to one year's production are about $3500\,\text{t}$ and $114\,000\,\text{t}$. The emissions per energy are the same ($12\,\text{g/kWh}$), so the large annual emissions of the nuclear power plant are due only to its large production.
+
+In this data set the construction cost per energy is smaller for nuclear power, because it produces at a greater share of its rated power and for longer.
+
+Nuclear power is steady base load power, but it cannot be regulated quickly, and it involves nuclear waste. Wind power is weather-dependent, so it needs regulating power or storage alongside it.
+
+A justified recommendation is a combination: on the basis of emissions either is suitable, and on the basis of cost nuclear power is cheaper, but weather-dependent wind power suits complementing it when there is enough regulating power.
+
+The recommendation, however, rests only on this example data set and on the construction cost alone.
 **Reasonableness:** The nuclear power plant produces $9\,460\,800 : 289\,080 \approx 33$ times as much per year as the wind farm, and the emissions are $113\,500 : 3469 \approx 33$ times as large, which matches the ratio of production, because the emission factor is the same $12\,\text{g/kWh}$ for both. At full power for the whole year the wind farm would produce $$
 \begin{aligned}
 &100\,\text{MW} \cdot 8760\,\text{h} \\
