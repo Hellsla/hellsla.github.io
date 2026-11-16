@@ -1,10 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: a6c04be5fc42821b
+CONTENT-HASH: 6397f4498ac98552
 
 ## Blocking
-None.
 
 ## Polish
-1. solutions.md: P_a used consistently with the lesson; numbers unchanged; solutions render without errors.
 
-Checked: opened solutions in the preview at 390 and 1280 px.
+## Checked
+- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.

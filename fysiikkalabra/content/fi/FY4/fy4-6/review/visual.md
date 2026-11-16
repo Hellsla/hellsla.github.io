@@ -1,19 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8b0962f5cbc82d0f
+CONTENT-HASH: 245e52b58746439a
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] inquiry.json solution (`N = 20 kg · 9,81 m/s² · cos 20°`), capture fi-1280-06 #10 — the row ends with a dangling `\cdot` and the continuation `9{,}81\,\text{m/s}^2` starts without an operator, left of the `=` column; at 1280 px the rows are joined into a stepped two-row formula. Every other chain in FY4 starts the row with the operator. Fix: `… \\ &\cdot 9{,}81\,\text{m/s}^2` (as fy4-7 `E_p`). No new review round needed.
 
 ## Checked
-- Delta: liikekitka changed to liukukitka everywhere (lesson, inquiry, meta, sim-spec, malli-veto description); "täysin kehittynyt lepokitka eli lähtökitka" wording in theory and in Käsite task 1.
-- Opened fy4-6-fig-10-390.png (kitka graph): the label now reads "liukukitka", blue, not clipped, axes and units intact.
-- Opened fy4-6-example-390-1.png: worked example and the force diagram, with the changed wording; layout intact, KaTeX fine.
-- Opened fy4-6-theory-1280-3.png: formula paragraph, figure and the Kitkakertoimen määrittäminen paragraph with liukukitkakerroin; reads fluently, no layout damage.
-- Opened fy4-6-open-exercises-1280-10.png: solution with liukukitka and its figure; fine. The malli-veto change is only its description text (Liukukitka), and its drawing is unchanged.
-- Content hash was the same at the start and the end.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: re-broken chains in lesson.md/inquiry.json (reflow only); opened fi-390-07, fi-390-08 and fi-1280-05, fi-1280-06; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

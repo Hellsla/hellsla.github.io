@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 68d093bc02cbe850
+CONTENT-HASH: 8809976e59378036
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+None.
 
 ## Checked
-- Light delta review: diff read (one word, "liikekitka" -> "liukukitka", in the friction paragraph before "Nopeus kasvattaa jarrutusmatkaa jyrkästi"). Opened fy4-11-stage-selita-390-2 (changed sentence, "lepokitka ... liukuvan renkaan liukukitka", reads well, no wrap or layout damage; the figure below it is intact), plus -3, -4 and -5 for surrounding layout. The term matches the project rule (liukukitka, never liikekitka).
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: re-broken chains in lesson.md/inquiry.json (reflow only); opened fi-390-16, fi-390-17 (390 px only); rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

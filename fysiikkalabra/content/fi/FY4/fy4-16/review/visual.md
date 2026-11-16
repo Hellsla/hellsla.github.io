@@ -1,18 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 51160e871e00687e
+CONTENT-HASH: 5274dfc8bb22bb00
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] lesson.md, Kitkan työ -kohta — "liukukitkakerroin" and "kitkakerroin" alternate (e.g. "sama kitkakerroin koko matkalla"); acceptable, but one form per paragraph would read more evenly.
+- [Minor] inquiry.json hint and solution (`mgh`, `|ΔE_mek|`), capture fi-390-24 / fi-1280-18 #2, #3 — the row ends with a dangling `\cdot` and the continuation `125\,\text{m}` starts without an operator, left of the `=` column; at 1280 px the rows are joined into a stepped two-row formula. Every other chain in FY4 starts the row with the operator. Fix: `… \\ &\cdot 125\,\text{m}` (as fy4-7 `E_p`). No new review round needed.
 
 ## Checked
-- Delta (wording: liikekitka -> liukukitka in lesson.md, inquiry.json and exit-ticket.json; new hook sentence; extended summary bullet; figure aria-labels).
-- Opened contact-1.png, fy4-16-example-390-1.png (worked example, stages 1-3, with the "esimerkki" figure) and fy4-16-fig-9-390.png (the "kolme" figure).
-- Contact sheet 1 also shows the opening picture, the lift graph and the "kitkatyo" figure; they are unchanged and the layout is intact.
-- grep found no remaining "liikekitka" in lesson, inquiry, exit ticket or exercises sources.
-- Not opened separately: the other captures, since the diff changes no drawing, only text and aria-label wording.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: re-broken chains in lesson.md/inquiry.json (reflow only); opened fi-390-24, fi-390-25, fi-390-26 and fi-1280-18, fi-1280-20; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

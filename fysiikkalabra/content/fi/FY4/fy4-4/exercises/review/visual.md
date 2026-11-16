@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0e1ca561eb3c7a3f
-SCOPE: delta added-exercise from 2af3ee47b4394d1d base 81db4a6fd727
+CONTENT-HASH: 1ba083bb55718bc3
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] exercises.json task text, capture fi-390-05 #5 — the punctuation after the lifted student calculation is not drawn into the formula's last row: "`.”`" starts the next line alone (390 and 1280 px). Fix: let the build attach trailing punctuation in a task `text` as it already does in solutions and feedback, or put it inside the last row (`…\end{aligned}$$` → `… . \end{aligned}$$`). No new review round needed. The closing quotation mark then follows the formula on its own line; acceptable, or move the quote end into running text.
 
 ## Checked
-- fy4-4-L2-09 task, graph and solution (open-exercises-L2-1280-11 and -12): A steeper dark-grey, B copper, axes with quantity and unit, ticks readable, task and solution agree (4,8 m/s²), the figure does not give the answer away.
-- Round 2: L2-09 now asks for cart A; text, graph reading, substitution and Järkevyys all consistent.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-04, fi-390-05, fi-390-06 and fi-1280-04; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
