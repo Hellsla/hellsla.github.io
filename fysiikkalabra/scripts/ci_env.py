@@ -11,7 +11,11 @@ image, installs requirements-ci.txt there and runs the command in fysiikkalabra/
 check gives CI's verdict before the push:
 
   python scripts/ci_env.py run python scripts/check_layout.py fy8-1 --width 360
-  python scripts/ci_env.py run python scripts/check_lesson.py fy8-1
+  python scripts/ci_env.py run python scripts/test_inquiry.py fy8-1
+
+Run check_lesson.py itself in the session, not through `run`: it sends its layout checks to this image by itself, and
+its KaTeX check needs Node, which the image does not have (CI installs it with setup-node), so inside `run` the latex
+line always fails (FY1, 2026-11-16).
 
 It needs Docker. In a Claude Code cloud session the daemon is installed but not started: `run` starts it (dockerd) when
 it can; the image (about 2 GB) is pulled once per session. The session's HTTPS proxy and its CA bundle are passed in."""
