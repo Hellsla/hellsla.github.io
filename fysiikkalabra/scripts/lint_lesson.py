@@ -235,12 +235,37 @@ def check_lesson_form(L, text):
         if not 3 <= stages <= most:
             L.form("lesson.md", line, f"worked example has {stages} stages; write the {most} stages of check_solutions.py separated by `<!-- vaihe -->` lines (human rule 4)")
         start = text.find(body)
+        for i, st in enumerate(body.split("<!-- vaihe -->")[1:]):
+            check_step_paragraphs(L, "lesson.md", text, start + body.find(st), st, asked=i == 0)
         for m in re.finditer(r"```latex\n(.*?)```|\$\$(.*?)\$\$", body, flags=re.S):
             frag = m.group(1) or m.group(2)
             if first_row_has_numbers(frag):
                 L.form("lesson.md", text.count("\n", 0, start + m.start()) + 1,
                       "worked example substitutes before solving: the first row of a calculation must be the formula solved for the unknown in symbols, numbers with units come on the next row (human rule 2): " + frag.strip()[:60])
 
+
+
+STEP_WORDS = 60
+ASKED = re.compile(r"(?<=[.!?:;]\s)(?:Kysytään|Kysytty|You are asked|We are asked|Asked)\b")
+
+
+def check_step_paragraphs(L, name, text, start, body, asked=False):
+    """One thing per paragraph in a worked-example stage or a solution step (work queue 8c, teacher 2026-11-13; NOTES.md
+    §3 "Paragraphs in stages and steps"): a warning for a paragraph of more than about 60 words, formulas counted as one
+    word, and (`asked`: the stage Tunnetut ja kysytty) for the asked quantity in the middle of a paragraph instead of last on
+    its own line."""
+    pos = start
+    for para in re.split(r"\n[ \t]*\n", body):
+        at = text.find(para, pos); pos = at + len(para) if at >= 0 else pos
+        line = text.count("\n", 0, max(at, start)) + 1
+        p = para.strip()
+        if not p or p.startswith(("```", "<", "|", "#", "- ", "$$")): continue
+        prose = re.sub(r"```.*?```|\$\$.*?\$\$", " ", p, flags=re.S)
+        words = len(re.sub(r"\$[^$]*\$", " X ", prose).split())
+        if words > STEP_WORDS:
+            L.warn(name, line, f"a paragraph of {words} words in a stage or solution step; one thing per paragraph (about {STEP_WORDS} words at most): the given values as a list or a paragraph of their own, each remark its own paragraph, the asked quantity last on its own line (NOTES 3, work queue 8c)")
+        if asked and ASKED.search(re.sub(r"\$[^$]*\$", "X", prose)):
+            L.warn(name, line, "the asked quantity is in the middle of a paragraph; put it last on a line of its own (NOTES 3, work queue 8c)")
 
 
 def check_lesson_md(L, folder):
@@ -457,6 +482,8 @@ def check_solutions(L, folder, answers):
         start = text.find(f"## {eid}")
         line = text.count("\n", 0, start) + 1
         seen[eid] = body
+        for st in re.finditer(r"^\*\*[^*\n]+:\*\*.*?(?=^\*\*[^*\n]+:\*\*|\Z)", body, flags=re.S | re.M):
+            check_step_paragraphs(L, "solutions.md", text, start + len(head) + 1 + st.start(), st.group(0))
         for lab in ("Kaava", "Sijoitus"):
             k = re.search(rf"\*\*{lab}:?\*\*:?(.*?)(?=\n\*\*|\Z)", body, re.S)   # the step runs to the next label: a display $$ block on the next line counts
             if k and "$" not in k.group(1):

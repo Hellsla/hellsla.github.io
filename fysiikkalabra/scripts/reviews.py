@@ -158,7 +158,8 @@ RULES = {                       # category: (science, pedagogy, visual)
     "photo":          ("none",  "none", "delta"),    # a licensed photograph beside the text (figure.unit-photo, assets/pics/<course>/photos.json): illustration only, never a task (teacher 2026-11-01 FY14, 2026-11-03 FY1–FY3)
     "illustration":   ("none",  "delta", "delta"),   # an illustration (data-fig="hero" or "scene"): no text, no physics claim (teacher 2026-10-26)
     "core-mark":      ("none",  "none", "none"),    # an exercise or lesson activity marked core (`"core": true`) or unmarked, nothing else: the module's core path as a whole is reviewed in docs/core-path/ (teacher 2026-11-05)
-    "paragraphs":     ("none",  "none", "none"),    # a task text cut into paragraphs (a blank line, "\\n\\n" in the JSON string), its words unchanged: build.exercise_text renders them, check_layout checks them (teacher 2026-11-04)
+    "paragraphs":     ("none",  "none", "none"),
+    "md-paragraphs":  ("none",  "none", "delta"),   # a lesson or solution text cut into paragraphs or a list (blank lines, "- " markers), its words in the same order unchanged: the visual reviewer looks (work queue 8c, teacher 2026-11-13)    # a task text cut into paragraphs (a blank line, "\\n\\n" in the JSON string), its words unchanged: build.exercise_text renders them, check_layout checks them (teacher 2026-11-04)
     "presentation-only": ("none", "none", "delta"),  # a simulation's code changed only in where or how it draws (an axis name, a label's place), the exact change approved in docs/presentation-only.tsv: the visual reviewer looks, test_sims.py runs
     "formula-names": ("none",  "none", "none"),    # formulas given the names of a docs/*/kaavanimet.tsv (```kaavat; FY9 units, FY1–FY8 lessons), nothing else changed (teacher 2026-11-12)
     "caption-label":  ("none",  "none", "none"),    # the marker "(esimerkkiaineisto)" / "(example data)" taken out of table captions, every other character as it was (teacher 2026-11-15, "Voisiko taulukoista ottaa pois tuon (esimerkkiaineisto)")
@@ -169,7 +170,7 @@ RULES = {                       # category: (science, pedagogy, visual)
     "reflow":         ("none",  "none", "delta"),    # a calculation chain only re-broken into rows (same numbers, signs and units in the same order; line breaks or =-rows differ): the visual reviewer always looks again (teacher 2026-11-15)
     "added-exercise": ("delta", "delta", "delta"),   # whole exercises added or replaced, every other exercise of the set as it was passed (added_exercises; teacher 2026-11-12)
 }
-WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing else", "paragraphs": "a task text cut into paragraphs, its words unchanged", "photo": "a licensed illustration photograph added, moved or recaptioned", "typography": "formulas re-set (spacing, fraction style, decimal comma) or a symbol set as maths, or blank lines, without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
+WHY = {"core-mark": "exercises or activities marked core or unmarked, nothing else", "paragraphs": "a task text cut into paragraphs, its words unchanged", "md-paragraphs": "a text cut into paragraphs or a list, its words in the same order unchanged", "photo": "a licensed illustration photograph added, moved or recaptioned", "typography": "formulas re-set (spacing, fraction style, decimal comma) or a symbol set as maths, or blank lines, without a change of meaning", "tests": "simulation tests added or tightened", "comments": "comments only", "style": "figure or sim styling only",
        "label-position": "a figure label nudged, text unchanged", "wording": "wording without numbers or symbols",
        "relocated": "the sim's text moved word for word into its lead and boxes",
        "chapter-ref": "a chapter reference follows that chapter's new title",
@@ -685,6 +686,25 @@ def _paragraph_pair(old, new):
     return o is not None and n is not None and ko == kn and "\n" in n and flat(o) == flat(n)
 
 
+def _md_paragraphs(rem, add):
+    """True when removed .md lines come back as more lines with the same words in the same order: one paragraph cut into
+    several or into a list (work queue 8c). Only `- ` list markers may be added; a stage marker `<!-- vaihe -->` may stand
+    between the paragraphs when both sides have it in the same place; headings, tables, code and other HTML are left to
+    the other rules."""
+    keep = lambda ls: [l for l in ls if l.strip()]
+    if not rem or len(keep(add)) <= len(keep(rem)): return False
+    def segs(ls):
+        out = [[]]
+        for l in ls:
+            if l.strip() == "<!-- vaihe -->": out.append([])
+            else: out[-1].append(l)
+        return out
+    flat = lambda ls: " ".join(" ".join(re.sub(r"^\s*- ", "", l) for l in ls).split())
+    sr, sa = segs(rem), segs(add)
+    if len(sr) != len(sa) or any(l.lstrip().startswith(("#", "```", "<", "|")) for seg in sr + sa for l in seg): return False
+    return all(flat(r) == flat(a) for r, a in zip(sr, sa))
+
+
 def _chapter_refs_renamed(old, new):
     """True when two lines differ only in the titles of chapter references and every new one is a current title."""
     blank = lambda l: CHAPTER_REF.sub(lambda m: m.group(1) + "*…*", l)
@@ -713,6 +733,8 @@ def classify(path, diff_lines, lid):
         if name.endswith(".md"):                       # a blank line added or removed (a list now builds as a list, visual audit 2026-10-31): only how the text is set
             for l in [l for l in rem + add if not l.strip()]:
                 cats.add("typography"); (rem if l in rem else add).remove(l)
+            if _md_paragraphs(rem, add):               # a stage or step cut into paragraphs or a list, word for word the same
+                cats.add("md-paragraphs"); rem.clear(); add.clear()
         if not (code or py):                           # "(luku *Tasainen liike: s = vt*)" → the chapter's current title
             for o in list(rem):
                 n = next((l for l in add if l != o and _chapter_refs_renamed(o, l)), None)
