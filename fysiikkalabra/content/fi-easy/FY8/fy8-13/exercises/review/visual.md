@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 23bf9b5906840889
-SCOPE: delta reflow from d30c62fd51a73d33 base 56362aafa0
+CONTENT-HASH: ee80f33d60f803a1
 
 ## Blocking
+(none)
 
 ## Polish
+- [Minor] fy8-13-L2-09 Mallivastaus d) — one block of about 140 words; split before "Radonia hengitetään." (radon and other doses).
+- [Minor] fy8-13-L2-09 Sijoitus — b) and c) are labelled on their own lines, good; but "Annettu" mixes the reader's own reading with the example reading in one paragraph; start the example values on a new sentence "Esimerkkilukema…" (already so; consider a line break).
 
 ## Checked
-- No fy8-13 capture opened; judged from source, the same block type seen aligned in fy8-1 and fy8-6 captures.
-- Delta judged: long solution formulas lifted into aligned rows, each + or - term whole, first row the left-hand side alone; words, numbers and units unchanged.
+- fy8-13-open-exercises-L2-1280-11 (end of 13-16, task 13-17 start), -12 (task end, Annettu to Muunnokset), -13 (Sijoitus, Mallivastaus d, Vastaus, Järkevyys). Fractions, $\mu\text{Sv/h}$, $\dot{H}t$, rows aligned, no clipping. The removed "(esimerkkiaineisto)" captions are seen only in the diff, not captured separately (tables of other tasks not opened).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

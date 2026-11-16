@@ -1,17 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: 14b54a6e061b7b91
+VERDICT: FAIL
+CONTENT-HASH: c4bd55738e579a78
 
 ## Blocking
+- [Major] fy8-12-L2-08 task text and Annettu — "(vuoden, 24 tuntia vuorokaudessa)" and "24 tuntia vuorokaudessa" are numbers with units in plain text in new text (teacher 2026-11-01 standing rule) — fix: "$24\,\text{h}$ vuorokaudessa" or "koko vuorokauden ajan".
+- [Major] fy8-12-L2-08 solution, Sijoitus after kohta b) — the comparison sentences are cut by display boxes, so the page shows "…on tähän verrattuna [box] -kertainen. Gammafotonin energia … on [box] -kertainen.": the suffix "-kertainen" starts a line alone, hard to read — fix: "Suhde on [chain] $6{,}9 \cdot 10^{5}$. Elektronin irrotukseen tarvittava energia on siis noin $7 \cdot 10^{5}$-kertainen." (chain first, sentence after, no sentence interrupted).
 
 ## Polish
-- [Minor] exercises.json fy8-12-L3-05, first paragraph — the caption's marker is gone but the sentence still ends "(taulukko, esimerkkiaineisto)"; "esimerkkiaineisto" is also an unexplained long word for an S2 reader. If the teacher's rule covers the running text, write "(taulukko)". Does not block.
+- [Minor] fy8-12-L2-08 — $h$ is written `\text{Js}` (rendered "Js") in Annettu, Sijoitus and Järkevyys; the set uses `\text{J}\,\text{s}`.
+- [Minor] fy8-12-L2-08 task b) — about 90 words in one paragraph with four sentences of comparison; split the comparison and the explanation into two paragraphs.
+- [Minor] Mallivastaus c) is one block of about 150 words; split at "Säteilylaji tunnistetaan…".
 
 ## Checked
-- Delta round 1 (wording, caption-label), fi-easy: "kilobecquereleina" → "kilobecquereleinä" twice in the task text and once in the solution's Kysytty. Hash 14b54a6e061b7b91 at the start and at the end.
-- Opened fy8-12-open-exercises-L3-1280-7 (task 12-21 with its table): part c) and the last instruction both read "kilobecquereleinä", the correct front-vowel ending; the answer box's unit kBq agrees. The short Selkeä suomi sentences of the situation are unchanged; question parts on their own rows, the instruction last.
-- Same capture: the table's caption is "GM-mittarin pulssit 60 s:n jaksoissa", no marker or stray bracket left; the table sits inside the card.
-- Opened fy8-12-open-exercises-L3-1280-8 (the solution): Kysytty reads "lähteen aktiivisuus A kilobecquereleinä"; Periaate, Kaava, Muunnokset and the aligned Sijoitus blocks are intact, nothing clipped.
-- No figure, formula, number or unit changed.
+- fy8-12-open-exercises-L2-1280-11 (task, Annettu to Muunnokset), -12 (Sijoitus, Mallivastaus c/d), -13 (Vastaus, Järkevyys). The $\mu\text{eV}$ chain, units and fractions render well; the two defects above are blocking.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 3 · Finnish 4 · accessibility 5
