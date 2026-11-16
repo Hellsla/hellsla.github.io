@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f6d4777566df2cb3
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 025607c98b842ee3
 
 ## Blocking
 - none
@@ -9,7 +8,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correct
 - none
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Round-1 blocker fixed: the definition "Tämä on **kokonaisheijastuminen**." / "Tätä sanotaan **kokonaisheijastumiseksi**." / "This is **total internal reflection**." now follows "…heijastumislain mukaan." directly; the lossless-boundary and evanescent-field sentences follow it, so the antecedent is unambiguous. Added "eikä energiaa siirry toiseen aineeseen" / "and no energy passes into the second substance" reads naturally.
-- Endoscope paragraph unchanged since round 1.
-- Hash identical at start and end of this round.
+- batch delta review (fi-easy, 5d reflow, round 1): every aligned formula of the lesson part cropped from the current preview at 390 px and 1280 px with hints, feedback and solutions open and viewed on contact sheets; overflow measured at 360, 390 and 1280 px after the page's own fitting.

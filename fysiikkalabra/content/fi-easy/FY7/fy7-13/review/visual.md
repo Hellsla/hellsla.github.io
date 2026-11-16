@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f9f01cda79f0e568
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 60756ad2689b1f38
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md — the opening paragraph is now about 122 words; optionally break before "Valo on sähkömagneettista aaltoliikettä".
+- [Minor] Esimerkit "Etsi virhe" prompt — the opening quotation mark is left at the end of the text row before the display block; the same pattern without quotation marks ("Opiskelija kirjoittaa" + block) reads cleaner.
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- Fringe-spacing sentences (geometry, not only wavelength), laser-safety paragraph; decimal separators and nm range in LaTeX.
-- Paragraph lengths of every changed paragraph counted against origin/main.
-- Hash identical at start and end.
+- batch delta review (fi-easy, 5d reflow, round 1): every aligned formula of the lesson part cropped from the current preview at 390 px and 1280 px with hints, feedback and solutions open and viewed on contact sheets; overflow measured at 360, 390 and 1280 px after the page's own fitting.

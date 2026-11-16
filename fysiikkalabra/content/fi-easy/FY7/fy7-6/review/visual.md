@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6821ce58a46d27ce
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 7bec62175be920fd
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md — "Silloin merkitään lyhyesti $e$." → "Silloin sitä merkitään lyhyesti $e$:llä."
+- none
 
 ## Checked
-- Source diff since origin/main of lesson.md, inquiry.json, exit-ticket.json, meta.json, figures.json (and figures.py for fy7-8); no screenshots in light mode (parent runs the layout checks).
-- $e_\text{ka}$ formula and "average … in the time interval Δt" wording; steady-change sentence.
-- No paragraph changed in this round in fi-easy exceeds about 120 words
-- Hash identical at start and end.
+- batch delta review (fi-easy, 5d reflow, round 1): every aligned formula of the lesson part cropped from the current preview at 390 px and 1280 px with hints, feedback and solutions open and viewed on contact sheets; overflow measured at 360, 390 and 1280 px after the page's own fitting.

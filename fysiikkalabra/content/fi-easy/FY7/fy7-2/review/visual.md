@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 33c43cdf57901cd4
+CONTENT-HASH: 90c7493d449543aa
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] inquiry.json, transfer task solution, Sijoitus — the hand-split chain: a fraction whose numerator is a two-row aligned block (second row "·20 000 V" right-aligned, dot hanging), then "= 5,919 · 10^5 m/s" as a separate inline formula that starts at the left margin and runs into "ja" (reads almost "m/sja"); the B chain below is aligned, this one is not — fix: put v in an eq-chain like B (v = sqrt(...) row, = … row), words outside the maths.
-- [Minor] same at 1280 px: the numerator is broken though it would fit on one row.
+- [Minor] inquiry.json, Esimerkit solution Sijoitus (untouched text) — the inline $v = \sqrt{…}$ has its numerator split by hand into two rows ("· 20 000 V" alone) at every width — write it as its own aligned chain like the $B$ chain after it.
+- [Minor] 390 px — "B" stands alone on the first row of the B chain; unavoidable with the long fraction.
 
 ## Checked
-- Delta: the changed Sijoitus step rendered from the built page at 390 and 1280 px (f2 captures); readable, nothing clipped.
-- Opened fy7-2-stage-herata-390 / layout around it via the built page; wording change teslaina → tesloina fine.
-- Hash identical at start and end.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+- batch delta review (fi-easy, 5d reflow, round 1): every aligned formula of the lesson part cropped from the current preview at 390 px and 1280 px with hints, feedback and solutions open and viewed on contact sheets; overflow measured at 360, 390 and 1280 px after the page's own fitting. The content changed twice during the review and is back at the hash first reviewed; captures refreshed.
