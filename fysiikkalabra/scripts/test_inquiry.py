@@ -40,7 +40,9 @@ def check(name, cond, detail=""):
 
 def _letters(s, n=40):
     """The first n letters of a text with markup, maths and punctuation removed: enough to tell two options apart."""
-    s = re.sub(r"<[^>]+>", " ", re.sub(r"\$[^$]*\$", " ", _h.unescape(s)))   # maths first: "$W < 0$" is not a tag
+    # maths first ("$W < 0$" is not a tag), display maths before inline: "$$a = b$$." is built as "$$a = b\text{.}$$"
+    # (mathlayout.with_punct), and "$$" read as an empty inline formula left the display formula's TeX as letters (2026-11-16)
+    s = re.sub(r"<[^>]+>", " ", re.sub(r"\$[^$]*\$", " ", re.sub(r"\$\$.*?\$\$", " ", _h.unescape(s), flags=re.S)))
     return "".join(ch for ch in s.lower() if ch.isalpha())[:n]
 
 
@@ -442,6 +444,11 @@ def errs_of(mutate):
     d = copy.deepcopy(good); mutate(d); return inquiry.validate(folder, d, lesson_md)
 def act(d, aid): return next(a for a in d["activities"] if a["id"] == aid)   # by id: inserting an activity must not shift the tests
 
+# _letters compares an option's text and feedback as built with its source: maths, markup and punctuation out
+check("_letters: display maths and the mark moved into it are left out",
+      _letters("$$Q = cm\\Delta T\\text{.}$$ Siksi lämpenee.") == _letters("$$Q = cm\\Delta T$$. Siksi lämpenee.") == "siksilämpenee"
+      and _letters('<span class="mj-wide">$$a = b\\text{,}$$</span><span class="mj-narrow">$$a\n= b\\text{,}$$</span> joten') == _letters("$$a = b$$, joten") == "joten"
+      and _letters("Kun $W < 0$, <b>työ</b> on negatiivinen.") == "kuntyöonnegatiivinen", _letters("$$Q = cm\\Delta T\\text{.}$$ Siksi lämpenee."))
 e = errs_of(lambda d: d.__setitem__("version", 2)); check("wrong version named", any("version" in x and x.startswith("fy3-2 inquiry.json") for x in e), str(e))
 # the source line (teacher 2026-11-13): no pill; a short "Lähde: …" for measured and statistics (a link when the note names an address),
 # "Esimerkkiaineisto." for example and simulated, nothing for a model; the long method note only in the title

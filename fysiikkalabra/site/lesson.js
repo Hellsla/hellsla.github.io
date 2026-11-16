@@ -1079,7 +1079,8 @@
     if (!t.checkVisibility()) return;
     t.classList.remove('tbl-stack');
     const p = t.parentElement, cs = getComputedStyle(p), room = p.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
-    if (t.scrollWidth > t.clientWidth + 1 || t.getBoundingClientRect().width > room + 1) {   // wider than itself (it would scroll) or than its box
+    const scrolls = [...t.querySelectorAll('th, td, th .katex, td .katex')].some((c) => c.scrollWidth > c.clientWidth + 3);   // a cell or a formula in it that would scroll (a heading's formula
+    if (scrolls || t.scrollWidth > t.clientWidth + 1 || t.getBoundingClientRect().width > room + 1) {   // given its own scrolling line, kx-wide, en/fy3-15 2026-11-16), or wider than itself or than its box
       labels(t); t.classList.add('tbl-stack');
     }
   };
@@ -1093,4 +1094,9 @@
   }
   window.addEventListener('load', fitAll);
   if (document.fonts) document.fonts.ready.then(fitAll);
+  // A box opened later is measured as it opens, before its maths is typeset (lesson.html typesets it on the toggle event)
+  // and before KaTeX's fonts for it have loaded: the raw TeX made a table that fits look too wide, and it stayed stacked
+  // (en/fy3-15 at 390 px, 2026-11-16). So it is measured again after the box's maths and once a font has loaded.
+  let again; document.addEventListener('toggle', (e) => { if (e.target.open) { clearTimeout(again); again = setTimeout(fitAll, 150); } }, true);
+  if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', fitAll);
 })();
