@@ -1,15 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 0d2c2958632d46fc
+VERDICT: PASS
+CONTENT-HASH: 586285323faf3a8f
 
 ## Blocking
-- [Major] fy8-12-L2-08 text and solution (captures fy8-12-open-exercises-L2-1280-11, -12, -13) — the English exercise uses the Finnish decimal comma everywhere: "$3{,}5\,\text{GHz}$", "$6{,}626 \cdot 10^{-34}$", "$1{,}602 \cdot 10^{-19}$", "$14{,}5\,\mu\text{eV}$", "$6{,}9 \cdot 10^{5}$", "$1{,}5 \cdot 10^{-5}\,\text{eV}$" — English uses the decimal point and the rest of this set and of fy8-1, 3, 9 and 13 does, so the new task reads as inconsistent and a student may copy the comma into the answer box — replace every `{,}` with `.` in the task text, the solution and the answer line.
+(none)
 
 ## Polish
-- [Minor] fy8-12-L2-08 solution — $h$ is written "$\text{Js}$" without the thin space (render "Js"); the rest of the set uses "J s" — write `\,\text{J}\,\text{s}`.
-- [Minor] fy8-12-L2-08 solution, Reasonableness — a bare product without a leading quantity — start the chain with $E \approx$.
+- [Minor] fy8-12-L2-08 solution, Reasonableness — the order-of-magnitude chain starts with a bare product — start it with $E \approx$.
+- [Minor] fy8-12-L2-08 — the prefix mu in "$\mu\text{eV}$" renders as italic mu next to upright eV — use an upright micro sign (\text{\textmu} or \mathrm{\mu}) everywhere in the set.
 
 ## Checked
-- Captures fy8-12-open-exercises-L2-1280-11, -12, -13 (task 2-8 parts a–d, answer box in µeV, whole solution: given, principle, model answers a, c, d, formula, conversions, substitution rows, comparison fractions, answer, reasonableness). Layout is clean, no clipping; model answers read well; only the decimal comma blocks. Delta: added exercise and caption wording of other tasks; no 390 px capture of exercises exists.
+- Captures fy8-12-open-exercises-L2-1280-10 (task 12-17 text, source link, parts a–c), -11 (part d, answer box in µeV, given, principle, model answer a), -12 (conversions, substitution rows, comparison fractions, model answer c), -13 (model answer d, answer, reasonableness). Captures rebuilt for this hash.
+- Round-1 Major fixed: no decimal comma left (grep of exercises.json and solutions.md: 0), "J s" now thin-spaced. Layout clean, no clipping. Delta: caption wording ("example data" removed) not re-opened, text-only.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

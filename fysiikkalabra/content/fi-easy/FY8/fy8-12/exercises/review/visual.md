@@ -1,17 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: c4bd55738e579a78
+VERDICT: PASS
+CONTENT-HASH: 0afbb0e960a7159d
+SCOPE: delta added-exercise from 14b54a6e061b7b91 base 415cbc7c6bc3
 
 ## Blocking
-- [Major] fy8-12-L2-08 task text and Annettu — "(vuoden, 24 tuntia vuorokaudessa)" and "24 tuntia vuorokaudessa" are numbers with units in plain text in new text (teacher 2026-11-01 standing rule) — fix: "$24\,\text{h}$ vuorokaudessa" or "koko vuorokauden ajan".
-- [Major] fy8-12-L2-08 solution, Sijoitus after kohta b) — the comparison sentences are cut by display boxes, so the page shows "…on tähän verrattuna [box] -kertainen. Gammafotonin energia … on [box] -kertainen.": the suffix "-kertainen" starts a line alone, hard to read — fix: "Suhde on [chain] $6{,}9 \cdot 10^{5}$. Elektronin irrotukseen tarvittava energia on siis noin $7 \cdot 10^{5}$-kertainen." (chain first, sentence after, no sentence interrupted).
 
 ## Polish
-- [Minor] fy8-12-L2-08 — $h$ is written `\text{Js}` (rendered "Js") in Annettu, Sijoitus and Järkevyys; the set uses `\text{J}\,\text{s}`.
-- [Minor] fy8-12-L2-08 task b) — about 90 words in one paragraph with four sentences of comparison; split the comparison and the explanation into two paragraphs.
-- [Minor] Mallivastaus c) is one block of about 150 words; split at "Säteilylaji tunnistetaan…".
+- [Minor] fy8-12-L2-08 task b) — one paragraph of about 90 words; split the comparison and the explanation into two paragraphs.
+- [Minor] Mallivastaus c) — one block of about 150 words; split at "Säteilylaji tunnistetaan…".
+- [Minor] Vastaus — "Laatikko hyväksyy myös arvon 14,5 µeV" is interface talk inside a model answer; consider dropping it.
 
 ## Checked
-- fy8-12-open-exercises-L2-1280-11 (task, Annettu to Muunnokset), -12 (Sijoitus, Mallivastaus c/d), -13 (Vastaus, Järkevyys). The $\mu\text{eV}$ chain, units and fractions render well; the two defects above are blocking.
+- fy8-12-open-exercises-L2-1280-11, -12, -13 (task end, Annettu to Muunnokset; Sijoitus, Mallivastaus c/d; Vastaus, Järkevyys), captures regenerated for the current hash.
+- Round 1 defects are fixed: $24\,\text{h}$ is LaTeX, the comparison sentences are no longer cut by display boxes (chain after the sentence), and $h$ is "J s" everywhere. The $\mu\text{eV}$ chain, fractions and units render cleanly.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
