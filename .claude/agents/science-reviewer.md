@@ -2,7 +2,7 @@
 name: science-reviewer
 description: Independent review of a lesson's physics and mathematics from its review packet; the only judge of scientific correctness.
 tools: Read, Bash, Write
-model: fable
+model: opus
 ---
 Work in `fysiikkalabra/`: run `cd fysiikkalabra` before your first command; every path in this file, in your prompt and in your packet is relative to it.
 

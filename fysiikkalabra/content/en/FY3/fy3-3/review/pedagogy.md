@@ -1,18 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 52d033ece91afb31
+CONTENT-HASH: 166934baf35a42f6
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- delta review 2026-11-10 (measurement window reset, teacher's FY3 brief): T or V change empties the 1,5 s window, readout says 'mittaus tasaantuu' with theory still shown (not the answer, it is the lesson's model line); 'odota pari sekuntia' consistent with the 1,5 s settling; piston fix removes the compression pressure burst, so the V experiment no longer shows a false spike; measurements 0,93-1,05 of theory after settling. No blocking findings.
-- delta review 2026-11-07 round 2 (follow-up consistency edits): the summary bullet and the kelvin-scale figure label now give the numerical-value equation T/K = θ/°C + 273.15, matching the lesson's Kaava; in the 390 px captures the small unit fractions in the summary stay legible and the widened label fits between the scale lines without covering a mark.
-- delta review 2026-11-07 (teacher's proofread replacement texts): the Celsius-kelvin relation is now written for numerical values ($T/\text{K} = \theta/{}^\circ\text{C} + 273.15$) with a 20 °C example and the 10 K temperature-difference example, which prepares the inquiry's 20→40 °C misconception task; the inquiry edits are unit typesetting only. en: the translation keeps the meaning.
-- delta review 2026-11-06 (teacher's correction): Ennuste 3 title and the hook question now name the target concept, pressure, instead of the ambiguous "painaa enemmän" that suggests weight; the prediction prompt, choices and return task already speak of pressure, so the activity reads consistently. No objectives, structure or correct options changed.
-- Teaching sequence, levels, step order (given, principle, symbolic, substitution, answer, reasonableness) and activities identical to the reviewed Finnish; nothing added or removed in translation.
-- English: natural, no Finnish words left, units and symbols (F_avg, A_rectangle, etc.) translated.
-- Latest change: inquiry transfer-task solution substitution re-typeset (100·3 °C); matches the Finnish exactly.
-- Task wording keeps what the student must work out undisclosed; hints and feedback repair the same misconceptions as the Finnish.
+- Delta: the siirto solution's reasonableness line now gives the fraction as 60/293 ≈ 0.205 (about 20 %) and uses 0.205 · 101 kPa ≈ 21 kPa; arithmetic checked (0.2048; 20.7 kPa; 101 + 21 ≈ 122 kPa), the sequence of stages and answer 122 kPa unchanged.
+- The Celsius-ratio check (404 kPa) still repairs the misconception; nothing in the task text, hints or feedback changed.
+- Figures changed only as teacher-approved.

@@ -82,11 +82,11 @@
 ## fy3-11-L2-04
 **Annettu:** mekaaninen teho $P_\text{a} = 480\,\text{kW}$, hyötysuhde $\eta = 40{,}0\,\% = 0{,}400$
 **Kysytty:** hukkalämmön teho $P_\text{hukka}$ kilowatteina
-**Periaate:** Moottori on lämpövoimakone. Energia säilyy: polttoaineen teho jakautuu mekaaniseksi tehoksi ja hukkalämmöksi. Hyötysuhde yhdistää mekaanisen tehon polttoaineen tehoon. Siksi polttoaineteho lasketaan ensin.
+**Periaate:** Moottori on lämpövoimakone. Energia säilyy: polttoaineen teho jakautuu mekaaniseen tehoon ja hukkalämpöön, joka siirtyy ympäristöön. Hyötysuhde yhdistää mekaanisen tehon polttoaineen tehoon. Siksi polttoaineteho lasketaan ensin.
 **Kaava:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, joten $P_\text{o} = \dfrac{P_\text{a}}{\eta}$ ja $P_\text{hukka} = P_\text{o} - P_\text{a}$
 **Muunnokset:** Hyötysuhde $40{,}0\,\% = \tfrac{40{,}0}{100} = 0{,}400$. Tehot ovat jo kilowatteina. Muuta muunnosta ei tarvita.
 **Sijoitus:** $P_\text{o} = \dfrac{480\,\text{kW}}{0{,}400} = 1200\,\text{kW}$, joten $P_\text{hukka} = 1200\,\text{kW} - 480\,\text{kW} = 720\,\text{kW}$
-**Vastaus:** $720\,\text{kW}$, kaksi merkitsevää numeroa. Rajoittava tieto on mekaaninen teho $480\,\text{kW}$. Sen kaksi ensimmäistä numeroa ovat varmoja. Hyötysuhde $40{,}0\,\%$ on kolmen numeron arvo eikä rajoita.
+**Vastaus:** $720\,\text{kW}$, kolme merkitsevää numeroa. Mekaaninen teho $480\,\text{kW}$ on kolmen numeron arvo, koska loppunolla on merkitsevä. Myös hyötysuhde $40{,}0\,\%$ on kolmen numeron arvo.
 **Järkevyys:** Hukkaan menee $60\,\%$ ja hyödyksi $40\,\%$. Hukkalämpöä on siis $\tfrac{60}{40} = 1{,}5$ kertaa niin paljon kuin mekaanista tehoa: $1{,}5 \cdot 480\,\text{kW} = 720\,\text{kW}$. Polttoaineteho on suurempi kuin mekaaninen teho, kuten pitääkin. Osa hukkalämmöstä voidaan käyttää matkustamon lämmittämiseen.
 
 ## fy3-11-L3-01
@@ -96,7 +96,7 @@
 **Kaava:** $P_\text{lauh} = \dfrac{P_\text{s}}{\eta_\text{lauh}}$ ja $P_\text{lk} = \dfrac{P_\text{kl}}{\eta_\text{k}}$, joten $\Delta P = \dfrac{P_\text{s}}{\eta_\text{lauh}} + \dfrac{P_\text{kl}}{\eta_\text{k}} - P_\text{pa}$
 **Muunnokset:** Hyötysuhteet $40{,}0\,\% = 0{,}400$ ja $90{,}0\,\% = 0{,}900$. Kaikki tehot ovat megawatteina. Muuta muunnosta ei tarvita.
 **Sijoitus:** $\Delta P = \dfrac{96\,\text{MW}}{0{,}400} + \dfrac{180\,\text{MW}}{0{,}900} - 320\,\text{MW} = 240\,\text{MW} + 200\,\text{MW} - 320\,\text{MW} = 120\,\text{MW}$
-**Vastaus:** $120\,\text{MW}$, kaksi merkitsevää numeroa. Rajoittava tieto on sähköteho $96\,\text{MW}$ (kaksi numeroa). Se määrää lauhdevoimalan polttoatehon $240\,\text{MW}$ kymmenien megawattien tarkkuudelle. Erotus $440\,\text{MW} - 320\,\text{MW}$ säilyttää tämän tarkkuuden. Hyötysuhteet $40{,}0\,\%$ ja $90{,}0\,\%$ ovat kolmen numeron arvoja eivätkä rajoita.
+**Vastaus:** $120\,\text{MW}$, kaksi merkitsevää numeroa. Rajoittava tieto on sähköteho $96\,\text{MW}$ (kaksi numeroa). Se määrää lauhdevoimalan polttoainetehon $240\,\text{MW}$ kymmenien megawattien tarkkuudelle. Erotus $440\,\text{MW} - 320\,\text{MW}$ säilyttää tämän tarkkuuden. Hyötysuhteet $40{,}0\,\%$ ja $90{,}0\,\%$ ovat kolmen numeron arvoja eivätkä rajoita.
 **Järkevyys:** Kokonaishyötysuhde on yhteistuotannossa $\dfrac{96 + 180}{320} \approx 86\,\%$ ja erillistuotannossa $\dfrac{276}{440} \approx 63\,\%$. Erillinen tuotanto tarvitsee siis enemmän polttoainetta. Lämpökeskus ei muuta lämpöä työksi, joten sen häviöt ovat vain savukaasuissa. Lauhdevoimalaitos muuttaa lämpöä työksi. Silloin osa lämmöstä on aina luovutettava kylmempään ympäristöön, tavallisesti mereen.
 
 ## fy3-11-L3-02
@@ -112,7 +112,7 @@
 ## fy3-11-L3-03
 **Annettu:** polttoaineen tilavuus $V = 6{,}00\,\textsf{l}$ matkalla $s = 100\,\text{km}$ (kulutuksen vertailumatka), nopeus $v = 80{,}0\,\tfrac{\text{km}}{\text{h}}$; bensiinin tiheys $\rho = 0{,}750\,\tfrac{\text{kg}}{\textsf{l}}$ ja lämpöarvo $H = 43{,}0\,\tfrac{\text{MJ}}{\text{kg}}$; hyötysuhde $\eta = 28{,}0\,\% = 0{,}280$
 **Kysytty:** moottorin keskimääräinen mekaaninen teho $P$ kilowatteina sekä perustelut energian kulkeutumiselle ja sähköauton pienemmälle tarpeelle
-**Periaate:** Moottori on lämpövoimakone. Bensiinin palaessa vapautuva energia $Q_1$ jakautuu työksi $W = \eta Q_1$ ja hukkalämmöksi. Teho on työ jaettuna matkaan kuluneella ajalla. Nopeus on tasainen, joten teho on vakio.
+**Periaate:** Moottori on lämpövoimakone. Bensiinin palaessa vapautuva energia $Q_1$ jakautuu työhön $W = \eta Q_1$ ja hukkalämpöön, joka siirtyy ympäristöön. Teho on työ jaettuna matkaan kuluneella ajalla. Nopeus on tasainen, joten teho on vakio.
 **Kaava:** $Q_1 = \rho V H$ ja $t = \dfrac{s}{v}$, joten $P = \dfrac{W}{t} = \dfrac{\eta \rho V H}{t}$
 **Muunnokset:** $t = \dfrac{100\,\text{km}}{80{,}0\,\text{km/h}} = 1{,}25\,\text{h} = 4500\,\text{s}$ ja $43{,}0\,\tfrac{\text{MJ}}{\text{kg}} = 43{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** Polttoaineen energiasta saatava työ on $W = 0{,}280 \cdot 0{,}750\,\tfrac{\text{kg}}{\textsf{l}} \cdot 6{,}00\,\textsf{l} \cdot 43{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} = 5{,}418 \cdot 10^7\,\text{J}$, joten

@@ -86,7 +86,7 @@
 **Formula:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, so $P_\text{o} = \dfrac{P_\text{a}}{\eta}$ and $P_\text{waste} = P_\text{o} - P_\text{a}$
 **Conversions:** Efficiency $40.0\,\% = \tfrac{40.0}{100} = 0.400$. The powers are already in kilowatts, so no other conversion is needed.
 **Substitution:** $P_\text{o} = \dfrac{480\,\text{kW}}{0.400} = 1200\,\text{kW}$, so $P_\text{waste} = 1200\,\text{kW} - 480\,\text{kW} = 720\,\text{kW}$
-**Answer:** $720\,\text{kW}$, two significant figures. The limiting value is the mechanical power $480\,\text{kW}$, whose first two figures are certain; the efficiency $40.0\,\%$ has three figures and does not limit the precision.
+**Answer:** $720\,\text{kW}$, three significant figures, because the mechanical power $480\,\text{kW}$ (the final zero is significant) and the efficiency $40.0\,\%$ both have three figures.
 **Reasonableness:** $60\,\%$ is wasted and $40\,\%$ is put to use, so there is $\tfrac{60}{40} = 1.5$ times as much waste heat as mechanical power: $1.5 \cdot 480\,\text{kW} = 720\,\text{kW}$. The fuel power is greater than the mechanical power, as it should be. Part of the waste heat can be used to heat the passenger cabin.
 
 ## fy3-11-L3-01

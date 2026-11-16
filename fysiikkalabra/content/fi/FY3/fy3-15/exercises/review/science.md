@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 18715801cb2d4975
+CONTENT-HASH: 3982956434865159
 
 ## Blocking
-- none
 
 ## Polish
-1. answers.py docstring and comments still write P₀ and P_hyöty; use P_o and P_a as the chapter does (carried from the previous report).
-2. L1-09: Answer gives c at 20 °C for hot district-heating water; one clause that c of 60-100 °C water is about 4,19-4,22 kJ/(kg·K) (still inside 4 %) would make the lookup honest (carried from the previous report).
 
 ## Checked
-- Hash 18715801cb2d4975 at start and end, unchanged.
-- Delta: L3-01 Järkevyys, fi solutions.md:179. "kaukolämpö vain lämmitykseen" is now "kaukolämpöä käytetään pääasiassa lämmitykseen". This fixes a claim that was too absolute (category A: district heat also serves domestic hot water, some industrial process heat and absorption cooling). The new wording matches the lesson's Yleinen virhekäsitys ("kaukolämpöä pääasiassa lämmitykseen") and the guardrail on CHP (keep the value of electricity and heat apart).
-- en solutions.md:179 ("district heat is mainly used for heating") and fi-easy solutions.md:179 (the same claim split into short sentences) say the same thing as fi. No "vain lämmitykseen" or "only for heating" is left in any language's exercise files.
-- The numbers in the context are unchanged, and I recomputed them: k = 60/348 = 0,17241, P_s = 205,5 MW, which rounds to 206 MW, and η_kok = 67,6 %. They agree with the solution.
-- The conclusion still holds: an added total efficiency does not decide profitability, which depends on demand and prices.
+- The hash was 3982956434865159 at the start and the end.
+- Delta (fy3-15-L3-05): in d) of the exercises.json text, "ei voi enää tuottaa sähköä" became "ei voi enää käytännössä tuottaa sähköä". The Järkevyys line of solutions.md now adds that at so small a temperature difference the largest possible efficiency is only a few percent.
+- "käytännössä" is the correct qualifier. Low-grade heat is not unusable in principle; it is only uneconomic, and the round-1 wording claimed too much. The added limit names the real reason, which agrees with the guardrail that a heat engine cannot turn all of its heat into work.
+- I recomputed the bound from the task's own data in one script. The monthly outlet temperatures 12,1 / 14,2 / 28,4 / 23,2 °C and rises of 10,9 / 10,7 / 10,6 / 10,9 K give 1 − T_c/T_h = 3,5–3,8 %. For a stream that cools as it gives off heat the bound is about half that. "muutama prosentti" is therefore right as an upper limit.
+- The same script gives the unchanged numbers again: ΔT_ka = 10,775 K, P_L = 4190 · 38 000 · 10,775 W = 1716 MW (answer 1720 MW, answers.py 1716, tolerance 2 %), P_h = 1800 MW, share 95 %, remainder 84 MW.
+- The sentence keeps energy conservation explicit: the energy "ei ole kadonnut vaan lämmittää merta". No number, symbol or answer changed.
+- Scope: the limit is stated as a fact in the reasonableness check. The student is not asked to compute it, so the task stays within FY3 and its prerequisite chapter on the heat engine.

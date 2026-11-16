@@ -115,7 +115,7 @@ According to the micro model, the pressure of a gas comes from particles collidi
   <foreignObject x="352.5" y="289.5" width="115" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$V/2\ \text{and}\ 2p$</div></foreignObject>
 </svg>
 
-So in an isothermal change the pressure is inversely proportional to the volume, and the product of pressure and volume stays constant. This is called Boyle's law. It answers the opening question: the air pressure in the aeroplane cabin drops to about 78 kPa, so the air in the bag expands until the bag is tight. In a tight bag the pressure of the air stays slightly higher than the cabin pressure, and that is why the bag feels hard.
+So in an isothermal change the pressure is inversely proportional to the volume, and the product of pressure and volume stays constant. This is called Boyle's law. It answers the opening question: the air pressure in the aeroplane cabin drops to about $78\,\text{kPa}$, so the air in the bag expands until the bag is tight. In a tight bag the pressure of the air stays slightly higher than the cabin pressure, and that is why the bag feels hard.
 
 Boyle's law works well for air and other gases at ordinary pressures and temperatures. The amount of gas must stay the same, so no gas may leak out or come in. The pressure used is the total pressure of the gas, not the gauge pressure shown by a meter.
 
@@ -425,7 +425,7 @@ where $\theta$ is the temperature in degrees Celsius as a number; in calculation
 </svg>
 
 ## Worked example
-At the airport, a bag of crisps contains $0.80\,\textsf{l}$ of air at a pressure of 101 kPa. During the flight the cabin pressure is 78 kPa. What is the volume of the air in the bag during the flight, if the temperature stays the same and the bag can expand freely?
+At the airport, a bag of crisps contains $0.80\,\textsf{l}$ of air at a pressure of $101\,\text{kPa}$. During the flight the cabin pressure is $78\,\text{kPa}$. What is the volume of the air in the bag during the flight, if the temperature stays the same and the bag can expand freely?
 
 <!-- vaihe -->
 

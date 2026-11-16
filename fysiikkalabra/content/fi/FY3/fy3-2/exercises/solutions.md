@@ -47,7 +47,7 @@
 **Muunnokset:** Voima on newtoneina ja nopeus metreinä sekunnissa, joten tulo tulee suoraan watteina: $1\,\text{N}\cdot\tfrac{\text{m}}{\text{s}} = 1\,\text{W}$.
 **Sijoitus:** $P = 20\,\text{N} \cdot 3{,}0\,\tfrac{\text{m}}{\text{s}} = 60\,\text{W}$
 **Vastaus:** $60\,\text{W}$, kaksi merkitsevää numeroa kuten nopeudessa $3{,}0\,\text{m/s}$.
-**Järkevyys:** Tarkistus ajan kautta: yhdessä sekunnissa pulkka kulkee $3{,}0\,\text{m}$, jolloin työ on $20\,\text{N} \cdot 3{,}0\,\text{m} = 60\,\text{J}$ ja teho $\tfrac{60\,\text{J}}{1\,\text{s}} = 60\,\text{W}$. Muutaman kymmenen watin teho on tavallinen reippaan kävelyvauhdin vetoteho.
+**Järkevyys:** Tarkistus ajan kautta: yhdessä sekunnissa pulkka kulkee $3{,}0\,\text{m}$, jolloin työ on $20\,\text{N} \cdot 3{,}0\,\text{m} = 60\,\text{J}$ ja teho $\tfrac{60\,\text{J}}{1\,\text{s}} = 60\,\text{W}$. Muutaman kymmenen watin teho on tavallinen vetoteho, kun pulkkaa vedetään vauhdilla $3{,}0\,\text{m/s}$ eli noin $11\,\text{km/h}$, hiihtäjän vauhdilla.
 
 ## fy3-2-L2-01
 **Annettu:** työ $W = 45\,\text{kJ}$, voima $F = 1{,}5\,\text{kN}$ (liikkeen suuntainen)
