@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 86443b9d00efeb67
-SCOPE: delta added-exercise from aa0d1a01b2d22233 base 8f23aa7ae3bd
+CONTENT-HASH: 47fefe6e403c8a87
 
 ## Blocking
-
-## Outside this change (queue item 5d)
-- [Major] docs/clipped-formulas.tsv lists 12 formulas of fi-easy/fy7-8 that are clipped at 360/390 px with solutions open. These are old, outside this change, and belong to queue item 5d; not a blocker for this delta.
+- none
 
 ## Polish
-- [Minor] The caption marker (esimerkkiaineisto) is gone with the teacher's approval; the graphs are still labelled as models and measurement points, so nothing is passed off as real data.
+- none
 
 ## Checked
-- Delta: task 8-12 (L2-1280-4, graph loss-graph-curve: P_h (W) and I (A) axes, markers vs fitted line, dashed extrapolation, no marker text in the caption) and 8-17 (L2-1280-11, loss-current style graph P_h:P (%) against U (kV), labelled P = 200 MW). Also the added transformer task's solution in text ('8,00 V', 1150 kierrosta, three significant figures consistent). 'lämmöksi' -> 'sisäenergiaksi' consistent in the stems and solutions.
+- Delta: the L2-04 solution, rendered from the preview at 390 px with the solution opened. The formula is now a display aligned block of two rows (0,80 Ω · (2,5 A)² on the first, = 5,0 W on the second); numbers, signs and units unchanged and in the same order. Block width equals its scroll width (no clipping, no page overflow at 390 px). A capture image of the block itself was not obtained (measured by script instead).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

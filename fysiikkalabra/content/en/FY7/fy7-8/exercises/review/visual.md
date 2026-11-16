@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3c82ce2ff300ff5d
+CONTENT-HASH: 9b540f1b32367e6c
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy7-8 8-16 solution — the whole calculation is one long block of prose lines; split into rows when next edited.
-
-## Outside this change (queue 5d, not blocking here)
-- [Major] fy7-8 solutions at 360 px — clipped formulas listed in docs/clipped-formulas.tsv (queue 5d) — outside this change; fix under 5d.
+- none
 
 ## Checked
-- Delta: 8-1, 8-2 (8.00 V, three-figure answer and reasonableness read well), 8-12 (loss-current graph: points distinct from the dashed fitted curve, units on axes), 8-15, 8-17 (loss-graph-curve, labelled axes and units) at 1280 px.
+- Delta: the L2-04 solution, rendered from the preview at 390 px with the solution opened. The formula is now a display aligned block of two rows (0,80 Ω · (2,5 A)² on the first, = 5,0 W on the second); numbers, signs and units unchanged and in the same order. Block width equals its scroll width (no clipping, no page overflow at 390 px). A capture image of the block itself was not obtained (measured by script instead).
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
