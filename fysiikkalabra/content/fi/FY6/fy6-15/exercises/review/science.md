@@ -1,17 +1,19 @@
-VERDICT: PASS
-CONTENT-HASH: 88b30325b9aedc30
-SCOPE: delta added-exercise from c650c557cc001a60 base 8f23aa7ae3bd
+VERDICT: FAIL
+CONTENT-HASH: 32be6506db09e991
 
 ## Blocking
+- solutions.md:180 (fy6-15-L2-09, Kohta d) — "Tiedotteen mukaan Tukes ei ole tutkinut näiden tuotteiden vaatimustenmukaisuutta, koska niitä ei saa käyttää Suomessa" attributes a specific statement, and its reason, to the notice, and nobody has checked it against the notice (the page could not be opened). Class A: a claim with no checked basis is presented as the source's words. — Fix: check it on the notice or remove it. The d) argument stands without it: being on sale proves neither safety nor permission, and CE marking is the maker's declaration.
+- solutions.md:175 and 180 (fy6-15-L2-09, Kohta a, d) — "Tukes pyytää, ettei niitä osteta, vaikka niitä myydään suomalaisissa ja ulkomaisissa verkkokaupoissa" is another unchecked specific attribution, and the d) model answer rests on it ("tiedote on siitä vastaesimerkki"). Class A as above. — Fix: check the notice's wording. Otherwise keep only the general points the title supports (sähköisku, tulipalo, ei saa käyttää Suomessa) and base d) on the task's own premise ("Verkkokaupoissa myydään…").
 
 ## Polish
-- content/fi/FY6/fy6-15/exercises/solutions.md (fy6-15-L2-08, Vastaus) — "kaksi merkitsevää numeroa kuten sulakkeen nimellisvirrassa" names a value that does not enter the calculation; the limiting data are the graph reading 4000 W (on a 1000 W gridline) and U = 230 V.
+- exercises.json (fy6-15-L2-09 a) — "mitkä kaksi vaaraa se nimeää" assumes the notice names exactly two hazards. Check this together with the items above.
 
 ## Checked
-- Hash 88b30325b9aedc30 at start and end; delta round 2: only fy6-15-L2-08 judged.
-- Round-1 blocking item resolved: the task and the figure's alt text now say "esimerkkiaineisto", not "mitattu aineisto".
-- Figure generator: steps 1000 / 3000 / 4000 / 2000 / 3500 W at 0–4 / 4–10 / 10–16 / 16–24 / 24–30 min, as the alt text and the solution's reading; maximum 4000 W on a gridline; no current or fuse limit drawn.
-- Physics: the group's loads are in parallel at 230 V, so I = P : U (power factor about 1 as in the brief, C).
-- Recomputed: I = 4000 W : 230 V = 17,39 A; answers.py agrees; tolerance 3 % covers the rounded 17 A (2,2 % off).
-- Fuse statement right: P_max = 230 V · 16 A = 3680 W; only the 4000 W step exceeds it; "ei välttämättä laukea heti" agrees with the lesson's slow-overload remark.
-- Solution complete: principle and reason, graph reading, formula before numbers, units, real check against 3680 W. Scope: FY6 sähköturvallisuus (sulake).
+- One independent script recomputed all 20 numeric answers and compared them with exercises.json: all are inside tolerance.
+- L2-09 b): I = P/U = 800 W : 230 V = 3,48 A. The task states the effective-value and power-factor-one conditions, as the brief's Kaava requires. The rounding is justified.
+- L2-09 c): the fuse sees only the current from the board. The stated assumption puts the panel's socket between the board and the loads. Then 16 A + 3,48 A ≈ 19,5 A flows in that part of the cable, and RI² gives about 1,48 times the heating, which recomputes. This is a correct mechanism, offered as the chapter's physics and not as the source's words.
+- L2-09 c), shock: live plug pins if the inverter keeps feeding, and a group that stays live with its fuse removed. Both are correct physics reasoning. The safety statements are not unsafe, and fixed installation is left to a professional, consistent with the brief.
+- L2-09 a): energy direction (a load takes energy from the board, the inverter feeds the group, giving two supplies) is correct.
+- CE marking described as the manufacturer's declaration is correct general fact, not attributed to the source.
+- Reflowed chains (L3-04 and others): same numbers, signs and units in the same order.
+- Hash read at start and end: unchanged.

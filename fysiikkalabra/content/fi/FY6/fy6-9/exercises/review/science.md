@@ -1,19 +1,17 @@
-VERDICT: PASS
-CONTENT-HASH: cf9236e40e5a36de
+VERDICT: FAIL
+CONTENT-HASH: 448904a798abd326
 
 ## Blocking
+- solutions.md:208–209 (fy6-9-L2-09, Kohta d) — the model answer attributes specific claims to the Tukes page, and nobody has checked them against it (the page could not be opened). The claims are: "Ohjeiden mukaan akku ladataan vain sen omalla tai laitteelle varmasti sopivalla laturilla"; "ohjeiden mukaan akkua ei pidä ladata yöllä eikä silloin, kun kotona ei ole ketään, ja akku ladataan palamattomalla alustalla"; "Ohjeiden mukaan viallinen laturi tai akku voi aiheuttaa palon … paloa on hyvin vaikea sammuttaa"; "Muita ohjeita ovat, että kylmää akkua ei ladata, koska se vaurioittaa akkua, ja että akkua ei pidetä jatkuvasti latauksessa". The last one also gives the source as the cause ("koska se vaurioittaa"). Class A: a claim with no checked basis is presented as the source's words. — Fix: check each instruction on the page and keep only those it states. Otherwise reword them as examples of typical instructions the student may find ("esimerkiksi ohje ladata akku vain sille tarkoitetulla laturilla…"), with the physics kept as the solution's own reasoning. Drop the unchecked reason "koska se vaurioittaa akkua", or explain it as physics.
 
 ## Polish
-- solutions.md L1-08 Muunnokset — under P7 (b), $2600\,\text{mAh}$ has four figures, so you could write $2{,}600\,\text{Ah}$. The result $5{,}2\,\text{h}$ ("kuten virrassa $0{,}50\,\text{A}$") is right.
+- solutions.md:207 (fy6-9-L2-09, Kohta c) — the task says the charger delivers 120 W *into the battery*, so the losses that lengthen the charge are those in R_s (and the drop in power). The charger's and wires' R lie before that point. Naming R_s alone, or saying "laturin ottama teho", would keep the two consistent.
 
 ## Checked
-- I re-reviewed after the hash changed mid-review: d7c2734da8dd122f became cf9236e40e5a36de with commit 068cd7beb, which edits four answer lines of solutions.md and nothing in exercises.json or answers.py.
-- The fixed lines are now right. L1-02: $1{,}080 \cdot 10^{4}\,\text{C}$ with four figures from $3000\,\text{mAh}$, under P7 (b). L1-03: $4{,}7 \cdot 10^{2}\,\text{Wh}$. L2-02: $0{,}2\,\Omega$, limited by $(U_\text{lat} - E) : I = 1{,}0\,\Omega$. L2-06: the precision is justified from $12{,}6\,\text{Wh} - 11{,}1\,\text{Wh}$.
-- I recomputed all 19 numeric answers in one script with my own formulas (Q = It, W = UQ, I = (U_lat − E)/(R + R_s), R_s I² t, a trapezoid sum, a least-squares slope, staged charging). All agree with answers.py and exercises.json; L2-07's fit gives $R_\text{kok} = 0{,}40\,\Omega$ and $E = 12{,}39\,\text{V}$.
-- L3-04: the source voltage is the same at both currents, $3{,}75\,\text{V}$; $R_\text{s} = 0{,}10\,\Omega$; the efficiencies are $77\,\%$ and $87\,\%$, both below $100\,\%$.
-- L3-05: the stage currents are $4{,}75$, $4{,}25$ and $3{,}75\,\text{A}$, giving $7{,}12\,\text{h}$; the bounds $6{,}0\,\text{h}$ and $8{,}6\,\text{h}$ are right.
-- The charging-circuit physics follows the brief: current through the battery from + to −, $U = E + R_\text{s}I$, losses become internal energy, and the battery stores chemical energy, not charge.
-- P7 (b): 40 mΩ, 60 Ah and 80 % have two figures, 600 Wh and 3000 mAh their full figures. The limiting data are named correctly in L2-03, L2-04, L3-01, L3-04 and L3-05. No limits are rounded and no 230 V appears.
-- L1-06, L1-07, L1-09: exactly one correct option. Every distractor's feedback is right, including the unit analysis Wh, W and Wh·h.
-- Figures ex-current (4,0 Ah) and ex-current2 (5,5 Ah, 61 Wh) are drawn to scale with 0,5 grid steps; they give every value needed and do not reveal the answers.
-- Scope and notation ($U_\text{lat}$, $E$, $R_\text{s}$, $W$) match the brief.
+- One independent script recomputed all 19 numeric answers and compared them with exercises.json (L1-05 is read from the figure, 4,0 Ah, as answers.py has it): all are inside tolerance.
+- L2-09: W = UQ = 36 V · 14 Ah = 504 Wh = 1,81 MJ; t = UQ/P = 4,2 h, solved symbolically. The cross-check through I = P/U is a real check. Two significant figures are justified.
+- L2-09 c): the mechanisms match the brief. They are RI² losses with only EI stored, and E rising so that I = (U_lat − E)/(R + R_s) falls, plus the Li-ion charger's voltage limit and taper (the brief's Tiivistelmä).
+- L2-09 d), physics: a slightly high charger voltage gives a large I because R_s is small; R_sI² quadruples when I doubles; an internal short releases the stored energy as internal energy. All of this is correct and presented as physics, not as the source's words. The safety wording ("jos se onnistuu turvallisesti") is not unsafe.
+- Reflowed chains (L2-08, L3-04, L3-05): same numbers, signs and units in the same order.
+- Notation (W, E as source voltage, R_s, U_lat) matches the brief. Everything is within FY6 scope (akut ja latauspiiri).
+- Hash read at start and end: unchanged.

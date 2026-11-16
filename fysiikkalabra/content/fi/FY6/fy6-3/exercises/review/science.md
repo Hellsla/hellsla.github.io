@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b00b18d0b241bb39
-SCOPE: delta added-exercise from 593f504a543bc1e6 base 8f23aa7ae3bd
+CONTENT-HASH: 2eb18a63c0e1ad44
 
 ## Blocking
 
 ## Polish
-- content/fi/FY6/fy6-3/exercises/solutions.md (fy6-3-L1-10, Järkevyys) — "40 · 0,0112 Ω = 0,45 Ω" repeats the substitution in two steps rather than checking it; a comparison with the lesson's L1-04 cable (25 m, 2,5 mm², 0,17 Ω) or the remark that the lesson table's 1,7·10⁻⁸ Ω·m gives the same 0,45 Ω would be a real check.
+- exercises.json:343 (fy6-3-L2-08) — "Taulukossa on samalla kytkennällä tehty esimerkkimittaus" reads as if the table was actually measured in the simulation, while answers.py says it is example data and was not read from it — write "laadittu esimerkkiaineisto" or similar (the label esimerkkiaineisto already stops this being blocking).
+- exercises.json:343 (fy6-3-L2-08) — the task asks for I(U) with U on the horizontal axis, but the chapter's ominaiskäyrä has I horizontal (slope R). The solution explains that the slope here is 1/R, so nothing is wrong. Using the chapter's axes would make it simpler and match L2-05 and L1-09.
 
 ## Checked
-- Hash b00b18d0b241bb39 at start and end; delta: only fy6-3-L1-10 judged.
-- Law and conditions: R = ρl/A for a uniform copper wire, the lesson's formula and notation; 20 °C table value, nothing heats the wire in the task.
-- MAFY value: copper 1,678·10⁻⁸ Ω·m is the VERIFIED row of docs/mafy-arvot.tsv (Virtapiirit > Resistiivisyyksiä, Johteet), and the hint names that table.
-- Recomputed: A = 1,5 mm² = 1,5·10⁻⁶ m²; R = 1,678·10⁻⁸ Ω·m · 40 m : 1,5·10⁻⁶ m² = 0,4475 Ω ≈ 0,45 Ω; answers.py agrees. With the lesson table's 1,7·10⁻⁸ Ω·m: 0,453 Ω, still inside tolerance 3 %, so either source is accepted.
-- Magnitude realistic (a 40 m run of 1,5 mm² installation cable, about 0,45 Ω); two significant figures follow from l and A; unit Ω and tolerance fit.
-- Solution complete: given, principle and why, symbolic formula, mm² → m² conversion, substitution with units, rounding reason, unit check.
+- One independent script recomputed all 20 numeric answers (L2-05 and L3-02 as least-squares lines through the origin) and compared them with exercises.json: every one is inside its tolerance.
+- L2-08: R = ΔU/ΔI = 15,0 V : 0,375 A = 40,0 Ω; every point gives U : I = 40 Ω. Tolerance 0,02 fits three significant figures.
+- L2-08 c): P = UI is given in the task (FY6 content, sähköteho). 0,90 W at 6,0 V and 3,60 W at 12,0 V; the ratio of 4 is used as a real check.
+- L2-08 b)/d): the line through the origin has a physical reason (no voltage, no current), and the fit sentence is the guardrail's ("yleensä"). The lamp's curve bending below the line is right for these axes. The mechanism (metal resistivity rises with temperature, so the Ohm's-law condition fails) matches the glossary and the brief.
+- L2-08 a): the meter placement (ammeter in series, voltmeter across the resistor, read U from the meter) is correct. The simulation's resistor is said to be an ideal constant-R model.
+- Reflowed chains (L2-03 and the rest): same numbers, signs and units in the same order; no physics change.
+- The other 19 tasks were already passed; they still give the same answers, symbols and conditions as the brief (R = U : I, R = ρl : A, the constant-temperature condition).
+- Hash read at start and end: unchanged.
