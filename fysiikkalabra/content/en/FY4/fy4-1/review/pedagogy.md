@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7161903ee08adbff
+CONTENT-HASH: 05e43588749f3641
 
 ## Blocking
-None.
+- none
 
 ## Polish
-1. lesson.md Kaava: v_k is now named keskinopeus; the text still says 'keskinopeus' in prose, consistent. No change needed beyond keeping v_k (not v_ka) in fy4-3 only where an arithmetic mean is meant.
+- none
 
 ## Checked
-Whole chapter text for the new symbols, formula sections, inquiry, exit ticket, solutions; numbers unchanged; fi-easy and en match fi.
+batch delta review: retrieval task now belongs to the chapter's phenomenon, numbers, options and misconception feedback consistent, distractors plausible, correct option reasoned, no answer disclosed before action; figures and photos judged from the diff.

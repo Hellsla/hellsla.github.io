@@ -8,8 +8,10 @@ a = {}
 # Hook: a stone dropped from a bridge, fall distance s = ½ g t²
 a["hook-s05"] = 0.5 * g * 0.5 ** 2                       # first half second: 1,23 m
 a["hook-s10-s05"] = 0.5 * g * 1.0 ** 2 - a["hook-s05"]   # second half second: 4,91 m − 1,23 m = 3,68 m
-# Retrieval: slope of a (t,x) line through (0 s; 2,0 m) and (4,0 s; 14 m)
-a["pr-v"] = (14 - 2.0) / (4.0 - 0)                       # 3,0 m/s
+# Retrieval: the stone's average velocity over the first 0,50 s, Δx/Δt = 1,2 m / 0,50 s
+a["pr-v"] = 1.2 / 0.50                                   # 2,4 m/s
+a["pr-mult"] = 1.2 * 0.50                                # mistake: product 0,60
+a["pr-inv"] = 0.50 / 1.2                                 # mistake: Δt/Δx 0,42
 # Experiment 1 (sim, v0 = 0, a = 2,0 m/s²): x(t) = ½ a t²
 x1 = lambda t: 0.5 * 2.0 * t ** 2
 a["exp1-x1"], a["exp1-x2"], a["exp1-x3"] = x1(1), x1(2), x1(3)          # 1,0 m, 4,0 m, 9,0 m

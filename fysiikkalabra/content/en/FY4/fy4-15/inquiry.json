@@ -25,7 +25,7 @@
       "type": "choice",
       "title": "Review: kinetic energy",
       "optional": true,
-      "prompt": "A cyclist's speed increases from $5\\,\\text{m/s}$ to $10\\,\\text{m/s}$. How many times as large is the kinetic energy at the end as at the start?",
+      "prompt": "The wind speed rises from $5\\,\\text{m/s}$ to $10\\,\\text{m/s}$. How many times larger is the kinetic energy of one cubic metre of air in the stronger wind?",
       "choices": [
         {
           "text": "Four times as large, because kinetic energy depends on the square of the speed.",

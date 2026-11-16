@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 16469b344a7bcbfd
-
-Light delta review (teacher 2026-11-07): diff origin/main..f9cecc6 and what it touches.
+CONTENT-HASH: 8ad4e5fd446f25bd
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- None.
 
 ## Checked
-- lesson.md:438 Tulos: a = (T cos α − F_μ)/m from exact values only, given to 3 s.f.; g limits only N (3 s.f.): earlier Blocking item resolved
-- Recomputed T_x = 65,53 N, T_y = 45,89 N, a = 2,961 m/s², N = 71,83 N
-- Järkevyys 71,8 + 45,9 ≈ 118 N, frictionless 5,5 m/s²: consistent; no stale 3,0 m/s² / 72 N in inquiry.json or exit ticket
+batch delta review: the sledge recast of the retrieval question: Earth and ice only, no forward force after the release, N = G on level ice; exactly one option is correct. Also the new top-view figure text: (5, 6) and (−2, −2) squares at 2.0 N give F1 = 15.6 N at 50.2°, F2 = 5.66 N at 225°, ΣF = 10 N at 53.1° and a = 4.0 m/s², which agrees with solutions.md and its force-diagram block.

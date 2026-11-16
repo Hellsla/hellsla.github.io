@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 2f28bfa475b316df
+CONTENT-HASH: 684c7b9edf3e473d
 
 ## Blocking
-- none
 
 ## Polish
-- none
+
 
 ## Checked
-- Delta review (editorial correction round, light, teacher 2026-11-07). lesson.md diff read (Tulos, Järkevyys): quantities in LaTeX, colon/\cdot conventions kept. Text-only edit, captures current.
-- Plain Finnish: new sentences short and concrete, terms as in the glossary; mathematical typography: \cdot, colon for division, decimal comma, units upright in inline LaTeX; no plain-text quantity in the changed text.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+batch delta review: diff read (Kertaa-kysymys / kuvaus text, lukuyksiköt LaTeXina, päätteet, selkeä suomi); sim, figure row captures not re-opened as the diff does not change them. Plain quantities none found in the diff.

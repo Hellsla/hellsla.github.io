@@ -25,7 +25,7 @@
       "type": "choice",
       "title": "Kertaa: liike-energia",
       "optional": true,
-      "prompt": "Pyöräilijän nopeus kasvaa $5\\,\\text{m/s}$:sta $10\\,\\text{m/s}$:iin. Kuinka monta kertaa suurempi on hänen liike-energiansa lopussa kuin alussa?",
+      "prompt": "Tuulen nopeus kasvaa $5\\,\\text{m/s}$:sta $10\\,\\text{m/s}$:iin. Kuinka monta kertaa suurempi on yhden ilmakuution liike-energia kovemmalla tuulella?",
       "choices": [
         {
           "text": "Neljä kertaa suurempi, koska liike-energia riippuu nopeuden neliöstä.",
@@ -34,11 +34,11 @@
         },
         {
           "text": "Kaksi kertaa suurempi, koska nopeus kaksinkertaistuu.",
-          "feedback": "Liike-energia ei ole verrannollinen nopeuteen vaan sen neliöön: $E_\\text{k} = \\tfrac{1}{2}mv^2$. Kaksinkertainen nopeus antaa $2^2 = 4$ kertaa suuremman liike-energian."
+          "feedback": "Liike-energia ei ole verrannollinen nopeuteen. Se on verrannollinen nopeuden neliöön: $E_\\text{k} = \\tfrac{1}{2}mv^2$. Kaksinkertainen nopeus antaa $2^2 = 4$ kertaa suuremman liike-energian."
         },
         {
           "text": "Kahdeksan kertaa suurempi, koska nopeus on kaavassa kolmannessa potenssissa.",
-          "feedback": "Liike-energian kaavassa nopeus on toisessa potenssissa, $E_\\text{k} = \\tfrac{1}{2}mv^2$, joten kerroin on $2^2 = 4$. Kolmas potenssi tulee vastaan vasta tuulivoimalan tehossa. Siinä mukana on myös sekunnissa virtaavan ilman määrä."
+          "feedback": "Liike-energian kaavassa nopeus on toisessa potenssissa, $E_\\text{k} = \\tfrac{1}{2}mv^2$. Siksi kerroin on $2^2 = 4$. Kolmas potenssi tulee vastaan vasta tuulivoimalan tehossa. Silloin mukaan tulee myös se, kuinka paljon ilmaa virtaa sekunnissa."
         }
       ]
     },

@@ -145,7 +145,7 @@ Kaikki erotukset ovat lähellä odotettua $6{,}0\,\text{dB}$:ä. Suurin poikkeam
 **Annettu:** ennen levyjä taso laskee $90{,}3\,\text{dB}$:stä $74{,}4\,\text{dB}$:iin. Levyjen jälkeen se laskee $90{,}2\,\text{dB}$:stä $50{,}1\,\text{dB}$:iin. Aika on $\Delta t = 0{,}40\,\text{s}$. Lasku on tasainen.
 **Kysytty:** jälkikaiunta-ajan lyhenemä prosentteina
 **Periaate:** Kun taso laskee tasaisesti, jälkikaiunta-aika on aika, jossa lasku on $60\,\text{dB}$. Lasketaan se kummallekin mittaukselle mitatun pudotuksen ja ajan avulla. Sitten verrataan aikoja.
-**Taulukon lukeminen:** Pudotus ennen levyjä on $\Delta L_1 = 90{,}3\,\text{dB} - 74{,}4\,\text{dB} = 15{,}9\,\text{dB}$. Levyjen jälkeen pudotus on $\Delta L_2 = 90{,}2\,\text{dB} - 50{,}1\,\text{dB} = 40{,}1\,\text{dB}$.
+**Taulukon lukeminen:** Pudotus ennen levyjä on $$\begin{aligned} \Delta L_1 &= 90{,}3\,\text{dB} - 74{,}4\,\text{dB} \\ &= 15{,}9\,\text{dB} \end{aligned}$$. Levyjen jälkeen pudotus on $$\begin{aligned} \Delta L_2 &= 90{,}2\,\text{dB} - 50{,}1\,\text{dB} \\ &= 40{,}1\,\text{dB} \end{aligned}$$.
 **Kaava:** $T = \dfrac{60\,\text{dB}}{\Delta L} \cdot \Delta t$ ja lyhenemä $= \dfrac{T_1 - T_2}{T_1} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:**
@@ -216,7 +216,7 @@ $$\begin{aligned}
 &= 3\,\text{dB} \cdot 1{,}755 \\
 &= 5{,}26\,\text{dB}
 \end{aligned}$$
-Kohta c: kotelo laskee sahauksen tason arvoon $87\,\text{dB}$. Silloin $n_1 = \dfrac{2}{3}$ ja $t_{\text{v},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5{,}04\,\text{h}$. Osuus on $1{,}0 : 5{,}04 = 0{,}198$. Uusi annos on $D = 0{,}198 + 1{,}0 + 0{,}375 = 1{,}57$.
+Kohta c: kotelo laskee sahauksen tason arvoon $87\,\text{dB}$. Silloin $n_1 = \dfrac{2}{3}$ ja $t_{\text{v},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5{,}04\,\text{h}$. Osuus on $1{,}0 : 5{,}04 = 0{,}198$. Uusi annos on $$\begin{aligned} D &= 0{,}198 + 1{,}0 + 0{,}375 \\ &= 1{,}57 \end{aligned}$$.
 **Vastaus:** a) noin $340\,\%$. b) vähintään $5{,}3\,\text{dB}$. c) Kotelo ei riitä yksin, koska annos on edelleen noin $160\,\%$ vertailuannoksesta. Kotelon lisäksi tarvitaan esimerkiksi kuulonsuojaimet, joiden vaimennus on vähintään $\dfrac{3\,\text{dB} \cdot \lg 1{,}57}{\lg 2} = 2{,}0\,\text{dB}$. Toinen keino on sijoittaa höyläyskone erilleen työpisteestä.
 **Järkevyys:** Sahaus ja höyläys ovat yli toiminta-arvon. Annoksen täytyy siis olla yli $100\,\%$. Tavalliset suojaimet vaimentavat $20$–$30\,\text{dB}$, joten $5{,}3\,\text{dB}$ täyttyy helposti.
 

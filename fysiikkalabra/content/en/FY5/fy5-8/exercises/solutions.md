@@ -88,7 +88,7 @@
 **Conversions:** The values of the graph are in newtons and metres, so no conversions are needed.
 **Substitution:** $E_\text{p} = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot(0.080\,\text{m})^2 = \tfrac{1}{2}\cdot 60\,\tfrac{\text{N}}{\text{m}}\cdot 0.0064\,\text{m}^2 = 0.192\,\text{J}$
 **Answer:** $0.19\,\text{J}$, two significant figures, to which the values of the graph can be read.
-**Reasonableness:** As the area of a triangle: at extension $0.080\,\text{m}$ the force of spring A is $60\,\tfrac{\text{N}}{\text{m}}\cdot 0.080\,\text{m} = 4.8\,\text{N}$, and $\tfrac{1}{2}\cdot 4.8\,\text{N}\cdot 0.080\,\text{m} = 0.19\,\text{J}$. The gentler spring B would have less energy at the same extension, because its triangle is lower.
+**Reasonableness:** As the area of a triangle: at extension $0.080\,\text{m}$ the force of spring A is $60\,\tfrac{\text{N}}{\text{m}}\cdot 0.080\,\text{m} = 4.8\,\text{N}$, and $$\tfrac{1}{2}\cdot 4.8\,\text{N}\cdot 0.080\,\text{m} = 0.19\,\text{J}$$. The gentler spring B would have less energy at the same extension, because its triangle is lower.
 
 ## fy5-8-L3-01
 **Given:** mass of the passengers $\Delta m = 300\,\text{kg}$, extra compression of the springs $\Delta x = 3.0\,\text{cm}$, four identical springs; $g = 9.81\,\text{m/s}^2$

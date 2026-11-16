@@ -22,22 +22,22 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Recall: uniform motion",
+      "title": "Recall: the forces on a body at rest",
       "fbd": "identify",
-      "prompt": "A puck slides straight ahead at constant velocity on horizontal ice. Friction and air resistance are so small that they are ignored. Which forces act on the puck?",
+      "prompt": "The loaded timber lorry stands still at the red light on a level road. Which forces act on the lorry?",
       "choices": [
         {
-          "text": "The weight and the normal force from the ice. They cancel each other, so the net force is zero.",
+          "text": "Its weight and the normal force of the road. They cancel, so the net force is zero.",
           "correct": true,
-          "feedback": "Correct. Only the Earth and the ice act on the puck. In the chapter *Interaction and force: Newton's first and third laws* you learned that uniform motion needs no forward force: when the net force is zero, the velocity stays the same."
+          "feedback": "Correct. The Earth and the road act on the lorry. The lorry is at rest, so its velocity does not change, and in the chapter *Interaction and force: Newton's first and third laws* you learned that the net force is then zero. In this chapter you find out what decides the change in velocity when the net force is not zero."
         },
         {
-          "text": "The weight, the normal force from the ice and a forward force that keeps the puck moving.",
-          "feedback": "Nothing pushes the puck while it slides, so there is no forward force. The puck keeps moving without a force, because the velocity changes only when the net force is not zero."
+          "text": "Only its weight. The road does not act on a lorry that is at rest.",
+          "feedback": "The lorry does not sink into the road, so the road supports it upwards. If nothing cancelled the weight, the lorry would accelerate downwards."
         },
         {
-          "text": "Only the weight. The ice does not act on a moving puck.",
-          "feedback": "The puck does not sink through the ice, so the ice supports it upward. If nothing cancelled the weight, the puck would accelerate downward."
+          "text": "Its weight and the normal force of the road. The normal force is larger than the weight, so that the heavy lorry stays on the surface of the road.",
+          "feedback": "If the normal force were larger than the weight, the net force would point upwards and the lorry would start to accelerate upwards. The lorry is at rest, so the normal force equals the weight. The loaded lorry's weight is larger than the empty one's, so its normal force is larger too."
         }
       ],
       "optional": true

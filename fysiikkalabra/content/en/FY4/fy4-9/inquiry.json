@@ -24,20 +24,20 @@
       "type": "choice",
       "title": "Review: Newton's second law",
       "optional": true,
-      "prompt": "A net force of $6.0\\,\\text{N}$ acts on a cart of mass $2.0\\,\\text{kg}$ in the direction of motion for $0.50\\,\\text{s}$. By how much does the cart's velocity increase?",
+      "prompt": "The jumper's mass is $60\\,\\text{kg}$. While the jumper sinks into the mat, the net force on the jumper is on average $1.2\\,\\text{kN}$ upwards for $0.30\\,\\text{s}$. By how much does the jumper's velocity change during this time?",
       "choices": [
         {
-          "text": "$1.5\\,\\text{m/s}$",
-          "correct": true,
-          "feedback": "Correct. The acceleration is $a = \\tfrac{\\Sigma F}{m} = 3.0\\,\\text{m/s}^2$, and the velocity increases by $$\\begin{aligned} &a\\,\\Delta t = 3.0\\,\\text{m/s}^2 \\cdot 0.50\\,\\text{s} \\\\ &= 1.5\\,\\text{m/s} \\end{aligned}$$ (chapter *Newton's second law*). Note that the result depends on both the force and the time."
-        },
-        {
-          "text": "$3.0\\,\\text{m/s}$",
-          "feedback": "$3.0\\,\\text{m/s}^2$ is the acceleration, the change in velocity per second. The force acts for only $0.50\\,\\text{s}$, so the velocity increases by $3.0\\,\\text{m/s}^2 \\cdot 0.50\\,\\text{s} = 1.5\\,\\text{m/s}$."
-        },
-        {
           "text": "$6.0\\,\\text{m/s}$",
-          "feedback": "A force is not a velocity. The net force gives the acceleration $a = \\tfrac{\\Sigma F}{m} = 3.0\\,\\text{m/s}^2$, and the change in velocity is the acceleration times the time, $1.5\\,\\text{m/s}$."
+          "correct": true,
+          "feedback": "Correct. The acceleration is $a = \\tfrac{\\Sigma F}{m} = \\tfrac{1200\\,\\text{N}}{60\\,\\text{kg}} = 20\\,\\text{m/s}^2$, and the velocity changes by $$\\begin{aligned} &a\\,\\Delta t = 20\\,\\text{m/s}^2 \\cdot 0.30\\,\\text{s} \\\\ &= 6.0\\,\\text{m/s} \\end{aligned}$$ (chapter *Newton's second law*). Note that the result depends on both the force and the time."
+        },
+        {
+          "text": "$20\\,\\text{m/s}$",
+          "feedback": "$20\\,\\text{m/s}^2$ is the acceleration, the change in velocity per second. The force acts only for $0.30\\,\\text{s}$, so the velocity changes by $20\\,\\text{m/s}^2 \\cdot 0.30\\,\\text{s} = 6.0\\,\\text{m/s}$."
+        },
+        {
+          "text": "$360\\,\\text{m/s}$",
+          "feedback": "You multiplied the force by the time but did not divide by the mass. The net force gives the acceleration $a = \\tfrac{\\Sigma F}{m} = 20\\,\\text{m/s}^2$, and the change in velocity is the acceleration times the time, $6.0\\,\\text{m/s}$."
         }
       ]
     },

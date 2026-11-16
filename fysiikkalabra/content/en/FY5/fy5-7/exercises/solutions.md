@@ -27,7 +27,7 @@
 **Conversions:** None needed: the values of the vertical axis are in centimetres.
 **Substitution:** $A = 2.5\,\text{cm} - 0\,\text{cm} = 2.5\,\text{cm}$
 **Answer:** $2.5\,\text{cm}$, two significant figures, because the value is read from a half-centimetre grid line.
-**Reasonableness:** Another route: the distance between a peak and a trough is $2.5\,\text{cm} - (-2.5\,\text{cm}) = 5.0\,\text{cm}$, and the amplitude is half of it, $2.5\,\text{cm}$. The value $5.0\,\text{cm}$ would be the distance $2A$ between the extreme positions.
+**Reasonableness:** Another route: the distance between a peak and a trough is $$2.5\,\text{cm} - (-2.5\,\text{cm}) = 5.0\,\text{cm}$$, and the amplitude is half of it, $2.5\,\text{cm}$. The value $5.0\,\text{cm}$ would be the distance $2A$ between the extreme positions.
 
 ## fy5-7-L1-04
 **Given:** number of full swings $n = 20$, their duration $t_n = 36\,\text{s}$
@@ -108,7 +108,7 @@
 **Conversions:** None needed: both distances are in centimetres.
 **Substitution:** $A = \dfrac{47.0\,\text{cm} - 32.0\,\text{cm}}{2} = \dfrac{15.0\,\text{cm}}{2} = 7.50\,\text{cm}$
 **Answer:** $7.50\,\text{cm}$, three significant figures as in the difference of the distances $15.0\,\text{cm}$.
-**Reasonableness:** The equilibrium position is at the distance $\tfrac{32.0\,\text{cm} + 47.0\,\text{cm}}{2} = 39.5\,\text{cm}$. From it to each extreme position is $7.50\,\text{cm}$: $39.5\,\text{cm} - 7.50\,\text{cm} = 32.0\,\text{cm}$ and $39.5\,\text{cm} + 7.50\,\text{cm} = 47.0\,\text{cm}$, as measured.
+**Reasonableness:** The equilibrium position is at the distance $\tfrac{32.0\,\text{cm} + 47.0\,\text{cm}}{2} = 39.5\,\text{cm}$. From it to each extreme position is $7.50\,\text{cm}$: $$39.5\,\text{cm} - 7.50\,\text{cm} = 32.0\,\text{cm}$$ and $$39.5\,\text{cm} + 7.50\,\text{cm} = 47.0\,\text{cm}$$, as measured.
 
 ## fy5-7-L2-05
 **Given:** times of six successive peaks in the table: the first $t_1 = 0.42\,\text{s}$ and the sixth $t_6 = 3.47\,\text{s}$

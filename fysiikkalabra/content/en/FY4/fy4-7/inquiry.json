@@ -24,24 +24,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Review from the chapter Acceleration and uniformly accelerated motion",
-      "prompt": "A ball is thrown straight up at a speed of $10\\,\\text{m/s}$, and air resistance is small. The acceleration of the ball is $g = 9.81\\,\\text{m/s}^2$ downward all the time. How high above the throwing point does the ball rise?",
+      "prompt": "From the vertical lip of a halfpipe the skateboarder leaves straight upwards at $3.0\\,\\text{m/s}$. Air resistance is small, and her acceleration is $g = 9.81\\,\\text{m/s}^2$ downwards all the time. How high above the lip does she rise?",
       "choices": [
         {
-          "text": "$5.1\\,\\text{m}$",
+          "text": "$0.46\\,\\text{m}$",
           "correct": true,
-          "feedback": "Correct. The time of rise is $t = \\tfrac{v}{g} \\approx 1.02\\,\\text{s}$, and the average speed during the rise is half the initial speed, so $$\\begin{aligned} &h = \\tfrac{v}{2} \\cdot \\tfrac{v}{g} \\\\ &= \\tfrac{v^2}{2g} \\\\ &= \\tfrac{(10\\,\\text{m/s})^2}{2 \\cdot 9.81\\,\\text{m/s}^2} \\\\ &\\approx 5.1\\,\\text{m} \\end{aligned}$$."
+          "feedback": "Correct. The time of rise is $t = \\tfrac{v}{g} \\approx 0.31\\,\\text{s}$, and the average velocity during the rise is half the initial velocity, so $$\\begin{aligned} &h = \\tfrac{v}{2} \\cdot \\tfrac{v}{g} \\\\ &= \\tfrac{v^2}{2g} \\\\ &= \\tfrac{(3.0\\,\\text{m/s})^2}{2 \\cdot 9.81\\,\\text{m/s}^2} \\\\ &\\approx 0.46\\,\\text{m} \\end{aligned}$$. The result is the same as on the ramp. In this chapter you find out why the height of the rise depends on the square of the speed."
         },
         {
-          "text": "$10\\,\\text{m}$",
-          "feedback": "You calculated $\\tfrac{v^2}{g}$, that is, you multiplied the initial speed by the time of rise. The ball slows down all the way up, so its average speed is only half the initial speed: $h = \\tfrac{v^2}{2g}$."
+          "text": "$0.92\\,\\text{m}$",
+          "feedback": "You computed $\\tfrac{v^2}{g}$, that is, the initial velocity times the time of rise. The skateboarder slows down all the way up, so her average velocity is only half the initial velocity: $h = \\tfrac{v^2}{2g}$."
         },
         {
-          "text": "$1.0\\,\\text{m}$",
-          "feedback": "The number $\\tfrac{v}{g} \\approx 1.0$ is the time of rise in seconds, not a height. The height is the average speed times the time of rise: $\\tfrac{v}{2} \\cdot \\tfrac{v}{g} = \\tfrac{v^2}{2g}$."
+          "text": "$0.31\\,\\text{m}$",
+          "feedback": "The number $\\tfrac{v}{g} \\approx 0.31$ is the time of rise in seconds, not the height. The height is the average velocity times the time of rise: $\\tfrac{v}{2} \\cdot \\tfrac{v}{g} = \\tfrac{v^2}{2g}$."
         },
         {
-          "text": "$0.51\\,\\text{m}$",
-          "feedback": "You calculated $\\tfrac{v}{2g}$, whose unit is the second, not the metre. The speed appears in the rise height to the second power: $h = \\tfrac{v^2}{2g}$."
+          "text": "$0.15\\,\\text{m}$",
+          "feedback": "You computed $\\tfrac{v}{2g}$, whose unit is the second, not the metre. The velocity appears squared in the height of the rise: $h = \\tfrac{v^2}{2g}$."
         }
       ]
     },

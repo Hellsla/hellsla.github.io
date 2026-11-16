@@ -1,6 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: aef6370e24e7fdba
+CONTENT-HASH: f423b35a43a32521
+
 ## Blocking
+- none
+
 ## Polish
+- none
+
 ## Checked
-batch delta review: "kinetic friction" became "sliding friction" in the simulation model box (approved name); clear, no other text or figure affected, consistent with the lesson's other uses.
+batch delta review: retrieval task now belongs to the chapter's phenomenon, numbers, options and misconception feedback consistent, distractors plausible, correct option reasoned, no answer disclosed before action; figures and photos judged from the diff.

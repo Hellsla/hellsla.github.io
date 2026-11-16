@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 95dcb8b70d26daad
+CONTENT-HASH: 46a0fec8cdaade4c
 
 ## Blocking
-(none) The round-1 Major is fixed: the Sijoitus chains of L1-02, L1-03, L1-04, L2-02, L2-03, L3-03 and the Järkevyys chains now sit in aligned rows; scan of every .eq-chain with all details open at 360, 390 and 1280 px: none scrolls, page width = viewport (only the known find-the-error formula of the lesson overflows).
+(none)
 
 ## Polish
-- [Minor] L2-02 Sijoitus — the chain is correct but long (10 rows at 360 px); acceptable.
-- [Minor] Gravitaatiolaki-chains: the \cdot continuation row is indented with \quad; fine, only note the fraction font is small at 360 px.
+- [Minor] solutions.md:7 (L1-01 Sijoitus) — the calculation runs as text on the page background, while the same calculation in L1-02, L1-04 and L2-08 is an aligned block in a formula box; at 390 px its first row ends with "·" and the fraction starts the next row. Whole and readable; an aligned block would match the neighbours when the file is next edited.
+- [Minor] solutions.md:7 — at the joins of the inline pieces the space before "=" is narrower than after it ("F= 6,674", "N= 0,4015 µN"); known.
 
 ## Checked
-- Own captures at 360 px of solutions L1-02, L1-04, L2-02, L2-03, L3-03 (opened and read); scan at 360/390/1280 of all .eq-chain; changed Järkevyys (L2-03 21 700 km, L3-01 F_0 row) legible.
+- Round 3b, delta: the one re-set chain, solutions.md:7, now five consecutive inline formulas starting with "F" alone.
+- Own captures from preview/fy5-5.html?ratkaisut=1 (rebuilt after the edit), levels and solutions opened, at double scale, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-1: fy5-5-ex-L1-01-r3b-390-0.png, fy5-5-ex-L1-01-r3b-1280-0.png.
+- Round 3's blocking item is fixed: no piece is lifted into a box of its own; the equation reads as one. 1280 px: one line, "F = 6,674 · 10⁻¹¹ N·m²/kg² · [fraction] = 4,015 · 10⁻⁷ N = 0,4015 µN". 390 px: three rows, breaking after "·" and before the last "=", mantissa and power together, the fraction whole.
+- Units upright, decimal commas, µ upright; nothing clipped.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

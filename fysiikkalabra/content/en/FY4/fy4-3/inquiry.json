@@ -23,20 +23,20 @@
       "type": "choice",
       "title": "Recall: uniform motion",
       "optional": true,
-      "prompt": "The $(t, x)$ graph of an object is a rising straight line. What does it tell about the velocity of the object?",
+      "prompt": "After the release the curling stone is filmed for a few seconds. Over this interval the stone's $(t, x)$ graph is a rising straight line. What does it tell about the stone's velocity?",
       "choices": [
         {
           "text": "The velocity is constant: the object travels the same distance every second.",
           "correct": true,
-          "feedback": "Correct. The slope of the line is the velocity, and on a straight line it is the same everywhere. This chapter shows what uniform motion tells about the forces acting on an object."
+          "feedback": "Correct. The slope of the line is the velocity, and on a straight line it is the same everywhere. In this chapter you find out what this tells about the forces on the stone."
         },
         {
-          "text": "The velocity increases steadily, because the position keeps increasing.",
+          "text": "The velocity increases steadily, because the position increases all the time.",
           "feedback": "The position increases, but by the same amount every second, so the velocity stays the same. An increasing velocity would show in the $(t, x)$ graph as a curve bending upwards (chapter *Position, velocity and uniform motion as graphs*)."
         },
         {
-          "text": "The object is at rest, because the graph is straight and not curved.",
-          "feedback": "The position of an object at rest does not change, so its $(t, x)$ graph is a horizontal line. A rising line means motion at constant velocity (chapter *Position, velocity and uniform motion as graphs*)."
+          "text": "The stone is at rest, because the graph is straight and not curved.",
+          "feedback": "The position of a stone at rest would not change, so its $(t, x)$ graph would be a horizontal line. A rising straight line means motion at a constant velocity (chapter *Position, velocity and uniform motion as graphs*)."
         }
       ]
     },

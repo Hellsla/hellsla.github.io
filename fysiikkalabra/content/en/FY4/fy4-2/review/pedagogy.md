@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2cc369b826f5268d
+CONTENT-HASH: edf1d7cb11644c3b
 
 ## Blocking
-None. Re-review: Tiivistelmä now uses a_k, a = a_k, matching the formula section.
+- none
 
 ## Polish
-None.
+- Retrieval prompt refers to "the video" the student has just seen in Pohdinta; fine, but check it is the same stone video.
 
 ## Checked
-Diff of the Tiivistelmä fix; chapter symbols consistent in fi, fi-easy, en.
+batch delta review: retrieval task now belongs to the chapter's phenomenon, numbers, options and misconception feedback consistent, distractors plausible, correct option reasoned, no answer disclosed before action; figures and photos judged from the diff.

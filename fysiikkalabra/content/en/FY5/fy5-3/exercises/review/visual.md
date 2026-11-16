@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 557c1c077663a50d
+CONTENT-HASH: 17d4c856490dca65
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] eq-chain rows in L2-03, L3-02, L3-03 wider than the 360 px card scroll inside it; known clipped formulas in docs/clipped-formulas.tsv, text untouched.
+- [Minor] exercises/solutions.md:163 — `v_1 = … ≈ 2.0 m/s` and `v_2 = …` keep two rows at 1280 px although one row fits — optional.
 
 ## Checked
-- own Playwright render of preview/en/fy5-3.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L1-10, L2-08, L3-01 at 360 and 1280 px opened where noted.
-- Calculation rows re-broken: aligned at =, one step per row, nothing clipped in the opened captures.
-- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
+- Round 3 delta (re-broken calculations only). Own Playwright captures of preview/en/fy5-3.html?ratkaisut=1, every details box open, at 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-1/r3/: sheet-fy5-3-ex-390-0.png, sheet-fy5-3-ex-1280-0.png (opened as combo-fy5-3-0.png).
+- Every formula the branch changed in exercises/solutions.md was located on the page and opened in the sheets; page scrollWidth equals the viewport with the boxes open, no KaTeX error, no script error.
+- Six lifted formulas (clock hand, carousel speeds, satellite circumference, Plesetsk speed): powers of ten stay with their mantissa, breaks only before = or ≈, punctuation on the last row, nothing clipped.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

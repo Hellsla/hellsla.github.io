@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f368ccd18e65ea2e
+CONTENT-HASH: baabbbe06b8b0856
+ROUND: 3
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] figures.json — it holds translation entries for two "Kuvaaja mittakaavassa …" variants (a_n up to 12, F up to 25 m/s). No figure in the current lesson uses them. They are harmless, but remove them if they are orphans.
 
-## Checked (delta 2026-11-15, work queue 8m)
-- Delta review of the diff: the sim readout and its text changed from "suurin lepokitka" to "lähtökitka", the Koe 1 intro and its minimum measurement count (4 → 6), the table header "lähtökitka (N)", and the feedback, hints and model texts.
-- Opened fy5-4-sim-390.png and fy5-4-sim-1280.png (fy5-4-lab-1280.png at 1280 px): the readout "tarvittava kitka …, lähtökitka …" reads cleanly in KaTeX and wraps without clipping at 390 px.
-- Opened fy5-4-exp-exp-1-390-1.png and -2.png, and lab-1280: the new intro text reads cleanly in KaTeX. The table header "lähtö-kitka (N)" breaks at the syllable, and the table is not clipped at 390 or 1280 px.
-- Opened fy5-4-fig-15-390.png (the graph): the live aria-label matches the drawing (values 2, 8, 18; both radii; points at 10 and 20).
-- Not opened: the other figures, whose diff was a description string only, and the exercise captures.
-
-(Report text of the visual-editorial-reviewer run, saved by the orchestrator because the agent's report did not reach the file.)
+## Checked
+- Method: preview/fi-easy/fy5-4.html?ratkaisut=1 loaded at 390 and 1280 px, every details box opened and the lazy maths rendered, hidden feedback and model answers revealed; every formula the diff against main changes was located by its TeX and captured in its own block (compact sheets, the rest of the page hidden). No KaTeX error, document scrollWidth equals the viewport at both widths, no changed formula outside its box.
+- Opened z-4-390.png and z-4-1280.png in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-easy-1 (model answer of the force-diagram task revealed): "N = 0,17 kg · 9,81 m/s² ≈ 1,7 N." and "T = m v²/r = 0,17 kg · (1,5 m/s)²/0,50 m ≈ 0,77 N." as aligned rows with display fractions, same rows at both widths, inside the green box; the sentences around them ("… joten [formula] Suunnassa x saadaan [formula] Jännitysvoima on vajaa puolet painosta.") read correctly.
+- Simulation, figures and unchanged text not re-opened.
+- Hash run at the start and at the end: unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

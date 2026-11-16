@@ -1,7 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a3452fa2bbc2dd2e
+CONTENT-HASH: 01635b27a06d9246
+
 ## Blocking
+- none
+
 ## Polish
-- "the sliding friction of a sliding tyre" is repetitive; "than the friction of a sliding tyre" would read better.
+- none
+
 ## Checked
-batch delta review: kinetic friction renamed sliding friction (approved formula name); consistent with the rest of the lesson, meaning unchanged.
+batch delta review: retrieval task now belongs to the chapter's phenomenon, numbers, options and misconception feedback consistent, distractors plausible, correct option reasoned, no answer disclosed before action; figures and photos judged from the diff.

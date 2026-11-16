@@ -1,10 +1,17 @@
 VERDICT: PASS
 CONTENT-HASH: 54084e2f5c5c5fad
+ROUND: 3
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] lesson.md Miksi — "näppätty kitaran kieli" → "kitaran näppätty kieli".
+- [Minor] lesson.md Miksi — "näppätty kitaran kieli" → "kitaran näppätty kieli" (carried from the earlier report; untouched text).
 
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: rewritten Miksi question (blockquote) and the new tube-displacement model sentence; no wrap at 390; captures fy5-13-fi-easy-390-miksi.png, -1280-miksi.png, -390-model.png, -1280-model.png. Built preview, own Playwright captures (deviceScaleFactor 1) under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; inline-KaTeX wrap/overflow check on every changed passage at 390 px: none.
+- Own Playwright captures of preview/fi-easy/fy5-13.html?ratkaisut=1 (every details box opened) at 390 px (2x) and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-easy-13/
+- Delta round 3: the diff is empty and the hash is the one already passed; nothing new to judge.
+- Opened les13-390.png and les13-1280.png (theory, the two display blocks L = n·λ_n/2 and f_n): centred, aligned, nothing clipped; page-wide DOM check at 390 and 1280 px: no formula outside the viewport, no KaTeX error.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

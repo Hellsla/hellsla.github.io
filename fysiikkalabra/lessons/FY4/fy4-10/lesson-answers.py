@@ -66,8 +66,9 @@ a["ex-Ek1"] = 0.5 * (mA + mB) * a["ex-v"] ** 2              # 32 490 J
 a["ex-dEk"] = a["ex-Ek0"] - a["ex-Ek1"]                     # 5760 J
 a["ex-dEk-pct"] = 100 * a["ex-dEk"] / a["ex-Ek0"]           # 15 %
 # Ydinajatus: billiards, equal masses, v = 2,0 m/s (illustration only): v1' + v2' = v and v1'^2 + v2'^2 = v^2
-# Retrieval (kertaus): impulse 3,0 N for 0,10 s
-a["kertaus"] = 3.0 * 0.10                                   # Δp = F Δt = 0,30 kg·m/s
+# Retrieval (kertaus): the cue's impulse 60 N for 0,0050 s
+a["kertaus"] = 60 * 0.0050                                  # Δp = F Δt = 0,30 kg·m/s
+a["kertaus-quot"] = 60 / 0.0050                             # mistake: F/Δt = 12 000
 # Error-spotting: gliders 0,50 kg at +0,40 m/s and 0,30 kg at −0,60 m/s stick together
 a["virhe-right"] = (0.50 * 0.40 + 0.30 * -0.60) / 0.80      # +0,025 m/s
 a["virhe-wrong"] = (0.50 * 0.40 + 0.30 * 0.60) / 0.80       # 0,475 m/s without the sign

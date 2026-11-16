@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b8fc622146b746b9
-SCOPE: delta added-exercise from a7e8c805b6c08c2c base b5600a63ddae
+CONTENT-HASH: 299136c0bb4aa0fe
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L2-10 Substitution rows are separate blocks, not one column of equals signs.
-- [Minor] other chains scroll slightly at 360 px; known/untouched.
+(none)
 
 ## Checked
-- Round 2: re-rendered preview/en/fy5-12.html?ratkaisut=1 at 360 px, every solution open; paragraph scan of all task cards, overflow, KaTeX errors: the split solutions (L2-10 Part d), 2 paragraphs) now read as short paragraphs, nothing clipped, no new overflow beyond the known clipped formulas. Earlier round-1 captures of the new task stand (text unchanged apart from breaks).
+- Delta, round 3 (English): solutions.md:157, the sum of the maxima now an `aligned` block.
+- Opened fy5-12-ex-sum-0-390.png and fy5-12-ex-sum-0-1280.png: at 390 px `7.9 mm + 8.1 mm + 7.8 mm` | `= 23.8 mm,` (the result row indented under the sum), at 1280 px joined into one row; comma inside, `so their average is` and the next block follow; nothing clipped, no stray column.
+- - Own Playwright captures from the current preview/en pages (?ratkaisut=1, every details box open, hidden feedback and model boxes revealed) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-7/; measured in the same run: page scrollWidth equals the viewport, no KaTeX error, no formula past its box.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

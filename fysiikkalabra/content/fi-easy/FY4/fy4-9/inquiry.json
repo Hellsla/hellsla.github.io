@@ -24,20 +24,20 @@
       "type": "choice",
       "title": "Kertaa: Newtonin toinen laki",
       "optional": true,
-      "prompt": "Kärryn massa on $2{,}0\\,\\text{kg}$. Kärryyn vaikuttaa liikkeen suuntaan kokonaisvoima $6{,}0\\,\\text{N}$ ajan $0{,}50\\,\\text{s}$. Kuinka paljon kärryn nopeus kasvaa?",
+      "prompt": "Hyppääjän massa on $60\\,\\text{kg}$. Hän painuu patjaan. Silloin häneen vaikuttava kokonaisvoima on keskimäärin $1{,}2\\,\\text{kN}$ ylöspäin ajan $0{,}30\\,\\text{s}$. Kuinka paljon hyppääjän nopeus muuttuu tänä aikana?",
       "choices": [
         {
-          "text": "$1{,}5\\,\\text{m/s}$",
-          "correct": true,
-          "feedback": "Oikein. Kiihtyvyys on $a = \\tfrac{\\Sigma F}{m} = 3{,}0\\,\\text{m/s}^2$. Nopeus kasvaa $$\\begin{aligned} &a\\,\\Delta t = 3{,}0\\,\\text{m/s}^2 \\cdot 0{,}50\\,\\text{s} \\\\ &= 1{,}5\\,\\text{m/s} \\end{aligned}$$ (luku *Newtonin toinen laki*). Huomaa, että tulos riippuu sekä voimasta että ajasta."
-        },
-        {
-          "text": "$3{,}0\\,\\text{m/s}$",
-          "feedback": "$3{,}0\\,\\text{m/s}^2$ on kiihtyvyys. Se kertoo, kuinka paljon nopeus muuttuu sekunnissa. Voima vaikuttaa vain $0{,}50\\,\\text{s}$. Siksi nopeus kasvaa $3{,}0\\,\\text{m/s}^2 \\cdot 0{,}50\\,\\text{s} = 1{,}5\\,\\text{m/s}$."
-        },
-        {
           "text": "$6{,}0\\,\\text{m/s}$",
-          "feedback": "Voima ei ole nopeus. Kokonaisvoima antaa kiihtyvyyden $a = \\tfrac{\\Sigma F}{m} = 3{,}0\\,\\text{m/s}^2$. Nopeuden muutos on kiihtyvyys kertaa aika, eli $1{,}5\\,\\text{m/s}$."
+          "correct": true,
+          "feedback": "Oikein. Kiihtyvyys on $a = \\tfrac{\\Sigma F}{m} = \\tfrac{1200\\,\\text{N}}{60\\,\\text{kg}} = 20\\,\\text{m/s}^2$. Nopeus muuttuu $$\\begin{aligned} &a\\,\\Delta t = 20\\,\\text{m/s}^2 \\cdot 0{,}30\\,\\text{s} \\\\ &= 6{,}0\\,\\text{m/s} \\end{aligned}$$ (luku *Newtonin toinen laki*). Huomaa: tulos riippuu sekä voimasta että ajasta."
+        },
+        {
+          "text": "$20\\,\\text{m/s}$",
+          "feedback": "$20\\,\\text{m/s}^2$ on kiihtyvyys. Se on nopeuden muutos sekunnissa. Voima vaikuttaa vain $0{,}30\\,\\text{s}$. Siksi nopeus muuttuu $20\\,\\text{m/s}^2 \\cdot 0{,}30\\,\\text{s} = 6{,}0\\,\\text{m/s}$."
+        },
+        {
+          "text": "$360\\,\\text{m/s}$",
+          "feedback": "Kertoit voiman ja ajan, mutta et jakanut massalla. Kokonaisvoima antaa kiihtyvyyden $a = \\tfrac{\\Sigma F}{m} = 20\\,\\text{m/s}^2$. Nopeuden muutos on kiihtyvyys kertaa aika, $6{,}0\\,\\text{m/s}$."
         }
       ]
     },

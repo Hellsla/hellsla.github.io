@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 027e7ffb30f8599b
+CONTENT-HASH: bf68596d32fdd81a
+
 ## Blocking
 
 ## Polish
+- None.
 
 ## Checked
-- Summary now $\overline{I} = \Delta\overline{p}$, the same as the formula table; no $\Delta\overline{p} = \overline{I}$ left in the chapter.
-- Formula table: $\overline{p} = m\overline{v}$, $\overline{I} = \overline{F}\,\Delta t$ (constant force), $\overline{I} = \Delta\overline{p}$ ($\overline{I}$ the impulse of the net force), units N·s and kg·m/s; inquiry $-2{,}00$ and $-4{,}00\,\text{N·s}$ and the $2{,}0\,\text{N·s}$ example unchanged; languages agree.
+batch delta review: the jumper retrieval question: a = 1200 N / 60 kg = 20 m/s², Δv = 6.0 m/s, and the distractors 20 and 360 have the right feedback. Exactly one option is correct and answers.py agrees.

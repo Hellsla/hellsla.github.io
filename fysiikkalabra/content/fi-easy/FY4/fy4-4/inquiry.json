@@ -22,22 +22,22 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: tasainen liike",
+      "title": "Kertaa: voimat paikallaan olevaan kappaleeseen",
       "fbd": "identify",
-      "prompt": "Kiekko liukuu vaakasuoralla jäällä suoraan eteenpäin tasaisella nopeudella. Kitka ja ilmanvastus ovat niin pieniä, että ne jätetään huomiotta. Mitkä voimat vaikuttavat kiekkoon?",
+      "prompt": "Täysi puutavara-auto seisoo punaisissa valoissa. Tie on vaakasuora. Mitkä voimat autoon vaikuttavat? (Tukivoima on voima, jolla alusta työntää kappaletta.)",
       "choices": [
         {
-          "text": "Paino ja jään tukivoima. Ne kumoavat toisensa, joten kokonaisvoima on nolla.",
+          "text": "Paino ja tien tukivoima. Ne kumoavat toisensa, joten kokonaisvoima on nolla.",
           "correct": true,
-          "feedback": "Oikein. Kiekkoon vaikuttavat vain Maa ja jää. Luvussa *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki* opit, että tasainen liike ei tarvitse eteenpäin vievää voimaa. Kun kokonaisvoima on nolla, nopeus pysyy samana."
+          "feedback": "Oikein. Autoon vaikuttavat Maa ja tie. Auto on paikallaan, joten sen nopeus ei muutu. Luvussa *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki* opit, että silloin kokonaisvoima on nolla. Tässä luvussa opit, mikä määrää nopeuden muutoksen, kun kokonaisvoima ei ole nolla."
         },
         {
-          "text": "Paino, jään tukivoima ja eteenpäin vievä voima, joka pitää kiekon liikkeessä.",
-          "feedback": "Mikään ei työnnä kiekkoa liukumisen aikana, joten eteenpäin vievää voimaa ei ole. Kiekko jatkaa liikettään ilman voimaa, koska nopeus muuttuu vain silloin, kun kokonaisvoima ei ole nolla."
+          "text": "Vain paino. Tie ei vaikuta paikallaan olevaan autoon.",
+          "feedback": "Auto ei vajoa tiehen. Siksi tie tukee autoa ylöspäin. Jos mikään ei kumoaisi painoa, auto kiihtyisi alaspäin."
         },
         {
-          "text": "Vain paino. Jää ei vaikuta liikkuvaan kiekkoon.",
-          "feedback": "Kiekko ei vajoa jään läpi, joten jää tukee sitä ylöspäin. Jos mikään ei kumoaisi painoa, kiekko kiihtyisi alaspäin."
+          "text": "Paino ja tien tukivoima. Tukivoima on painoa suurempi, jotta raskas auto pysyy tien pinnalla.",
+          "feedback": "Jos tukivoima olisi painoa suurempi, kokonaisvoima osoittaisi ylöspäin. Silloin auto alkaisi kiihtyä ylöspäin. Auto on paikallaan, joten tukivoima on yhtä suuri kuin paino. Täyden auton paino on suurempi kuin tyhjän. Siksi myös sen tukivoima on suurempi."
         }
       ],
       "optional": true

@@ -253,7 +253,7 @@
     {
       "id": "fy5-17-L2-07",
       "level": 2,
-      "text": "A student solves the exercise: “At a seismograph station the S wave arrived $16.0\\,\\text{s}$ after the P wave. The speed of the P wave is $6.0\\,\\text{km/s}$ and that of the S wave $3.5\\,\\text{km/s}$. How far away did the earthquake occur?”\n\nThe student’s solution: $d = v_\\text{P}\\,\\Delta t = 6.0\\,\\text{km/s} \\cdot 16.0\\,\\text{s} = 96\\,\\text{km}$.\n\nThe result is wrong. What is the error in the solution?",
+      "text": "A student solves the exercise: “At a seismograph station the S wave arrived $16.0\\,\\text{s}$ after the P wave. The speed of the P wave is $6.0\\,\\text{km/s}$ and that of the S wave $3.5\\,\\text{km/s}$. How far away did the earthquake occur?”\n\nThe student’s solution: $d = v_\\text{P}\\,\\Delta t$ $= 6.0\\,\\text{km/s} \\cdot 16.0\\,\\text{s}$ $= 96\\,\\text{km}$.\n\nThe result is wrong. What is the error in the solution?",
       "kind": [
         "error",
         "concept"

@@ -339,7 +339,7 @@
       "id": "fy5-15-L3-03",
       "level": 3,
       "text": "Akustiikkalaboratorion kaiuttomassa huoneessa mitataan hyvin hiljaisen tuulettimen intensiteettitasoksi $-5\\,\\text{dB}$. Opiskelija sanoo: ”Mittaus on varmasti väärä, koska negatiivinen intensiteettitaso tarkoittaisi negatiivista intensiteettiä.” Onko hän oikeassa? Selitä, mitä negatiivinen intensiteettitaso tarkoittaa. Selitä myös, voiko tuulettimen kuulla. Muista, että kuulokynnys $I_0$ on määritelty noin $1000\\,\\text{Hz}$:n taajuudelle.",
-      "answer": "Ei ole. Negatiivinen taso tarkoittaa, että intensiteetti on positiivinen mutta pienempi kuin kuulokynnys, $I = 10^{-0{,}5} I_0 \\approx 3{,}2 \\cdot 10^{-13}\\,\\text{W/m}^2$. Keskimääräinen kuulija ei kuule tuuletinta. Herkimmät kuulijat voivat kuulla sen herkimmillä taajuuksilla.",
+      "answer": "Ei ole. Negatiivinen taso tarkoittaa, että intensiteetti on positiivinen mutta pienempi kuin kuulokynnys, $I = 10^{-0{,}5} I_0$ $\\approx 3{,}2 \\cdot 10^{-13}\\,\\text{W/m}^2$. Keskimääräinen kuulija ei kuule tuuletinta. Herkimmät kuulijat voivat kuulla sen herkimmillä taajuuksilla.",
       "unit": "",
       "tolerance": 0.02
     },
