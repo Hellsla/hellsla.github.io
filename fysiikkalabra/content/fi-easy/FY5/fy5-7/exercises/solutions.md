@@ -52,7 +52,9 @@
 ## fy5-7-L1-06
 **Kysytty:** kumpi punnus tekee enemmän värähdyksiä sekunnissa. Toisesta tunnetaan jaksonaika ja toisesta taajuus.
 **Periaate:** Värähdysten määrä sekunnissa on taajuus. Jaksonaika ja taajuus ovat toistensa käänteislukuja: $f = \tfrac{1}{T}$. Ne ovat eri suureita ja niillä on eri yksiköt, joten lukuja ei voi verrata suoraan. Laske vertailua varten kummallekin taajuus.
-**Mallivastaus:** Punnuksen, jonka jaksonaika on $0{,}25\,\text{s}$, taajuus on $\tfrac{1}{0{,}25\,\text{s}} = 4{,}0\,\text{Hz}$. Se on suurempi kuin toisen punnuksen taajuus $3{,}0\,\text{Hz}$. Punnus A tekee siis neljä värähdystä sekunnissa ja punnus B kolme. Lukujen suora vertaaminen ($3{,}0$ on suurempi kuin $0{,}25$) on virhe, koska ne ovat eri suureita. Myös päätelmä "pidempi jaksonaika tarkoittaa nopeampaa värähtelyä" on väärä. Pidempi jakso tarkoittaa harvempia värähdyksiä. Jaksonaikoina vertailu olisi $0{,}25\,\text{s}$ ja $\tfrac{1}{3{,}0}\,\text{s} = 0{,}33\,\text{s}$. Lyhyempi jakso kuuluu nopeammalle värähtelijälle.
+**Mallivastaus:** Punnuksen, jonka jaksonaika on $0{,}25\,\text{s}$, taajuus on $\tfrac{1}{0{,}25\,\text{s}} = 4{,}0\,\text{Hz}$. Se on suurempi kuin toisen punnuksen taajuus $3{,}0\,\text{Hz}$. Punnus A tekee siis neljä värähdystä sekunnissa ja punnus B kolme.
+
+Lukujen suora vertaaminen ($3{,}0$ on suurempi kuin $0{,}25$) on virhe, koska ne ovat eri suureita. Myös päätelmä "pidempi jaksonaika tarkoittaa nopeampaa värähtelyä" on väärä. Pidempi jakso tarkoittaa harvempia värähdyksiä. Jaksonaikoina vertailu olisi $0{,}25\,\text{s}$ ja $\tfrac{1}{3{,}0}\,\text{s} = 0{,}33\,\text{s}$. Lyhyempi jakso kuuluu nopeammalle värähtelijälle.
 
 ## fy5-7-L1-07
 **Annettu:** taajuus $f = 1{,}6\,\text{Hz}$, värähdysten määrä $n = 40$
@@ -67,7 +69,9 @@
 ## fy5-7-L1-08
 **Kysytty:** miten jaksonaika muuttuu, kun taajuus kaksinkertaistuu, ja missä oppilaan väite on väärin.
 **Periaate:** Taajuus ja jaksonaika ovat toistensa käänteislukuja: $f = \tfrac{1}{T}$. Kun taajuus kasvaa, yhtä värähdystä kohti jää vähemmän aikaa. Jaksonaika pienenee siis samassa suhteessa. Oppilas luuli suureita verrannollisiksi, vaikka toinen on toisen käänteisluku.
-**Mallivastaus:** Jos taajuus kaksinkertaistuu, esimerkiksi $2{,}0\,\text{Hz}$:stä $4{,}0\,\text{Hz}$:iin, jaksonaika puolittuu $0{,}50\,\text{s}$:sta $0{,}25\,\text{s}$:iin, koska $T = \tfrac{1}{f}$. Oppilaan väite on väärä. Nopeampi värähtely tarkoittaa suurempaa taajuutta mutta lyhyempää jaksonaikaa. Jaksonaika ei ole kiinteä ominaisuus, koska se muuttuu taajuuden mukana. Se ei myöskään kasva sen takia, että värähdyksiä on enemmän. Jaksonaika on yhden värähdyksen kesto eikä kaikkien värähdysten yhteinen aika.
+**Mallivastaus:** Jos taajuus kaksinkertaistuu, esimerkiksi $2{,}0\,\text{Hz}$:stä $4{,}0\,\text{Hz}$:iin, jaksonaika puolittuu $0{,}50\,\text{s}$:sta $0{,}25\,\text{s}$:iin, koska $T = \tfrac{1}{f}$. Oppilaan väite on väärä. Nopeampi värähtely tarkoittaa suurempaa taajuutta mutta lyhyempää jaksonaikaa.
+
+Jaksonaika ei ole kiinteä ominaisuus, koska se muuttuu taajuuden mukana. Se ei myöskään kasva sen takia, että värähdyksiä on enemmän. Jaksonaika on yhden värähdyksen kesto eikä kaikkien värähdysten yhteinen aika.
 
 ## fy5-7-L2-01
 **Annettu:** kuvaaja vaunun poikkeamasta $x$ ajan $t$ funktiona sinimallin mukaan, aika $t = 0{,}10\,\text{s}$
@@ -128,7 +132,9 @@
 **Kaava:** $t_{\text{ka}} = \dfrac{\text{aikojen summa}}{5}$ ja $T = \dfrac{t_{\text{ka}}}{10}$
 **Muunnokset:** Ei tarvita. Kaikki ajat ovat sekunteina.
 **Sijoitus:** Aikojen summa on $75{,}5\,\text{s}$, joten $t_{\text{ka}} = \dfrac{75{,}5\,\text{s}}{5} = 15{,}1\,\text{s}$ ja $T = \dfrac{15{,}1\,\text{s}}{10} = 1{,}51\,\text{s}$
-**Vastaus:** a) $1{,}51\,\text{s}$, kolme merkitsevää numeroa kuten mittausajoissa. Kohta b): mittausten vaihteluväli on $15{,}4\,\text{s} - 14{,}8\,\text{s} = 0{,}6\,\text{s}$. Hajonnan arvio on sen puolikas, $0{,}3\,\text{s}$ kymmenelle heilahdukselle. Jaksonajalle se on $\tfrac{0{,}3\,\text{s}}{10} = 0{,}03\,\text{s}$, eli $T \approx 1{,}51\,\text{s} \pm 0{,}03\,\text{s}$. Käsin ajanotossa virhe on samaa suuruusluokkaa riippumatta heilahdusten määrästä. Kymmenen heilahduksen aika jaetaan kuitenkin kymmenellä, joten virhe jaksonajassa pienenee kymmenesosaan. Yhden heilahduksen ajanotossa sama $0{,}3\,\text{s}$ olisi lähes viidesosa jaksonajasta.
+**Vastaus:** a) $1{,}51\,\text{s}$, kolme merkitsevää numeroa kuten mittausajoissa. Kohta b): mittausten vaihteluväli on $15{,}4\,\text{s} - 14{,}8\,\text{s} = 0{,}6\,\text{s}$. Hajonnan arvio on sen puolikas, $0{,}3\,\text{s}$ kymmenelle heilahdukselle. Jaksonajalle se on $\tfrac{0{,}3\,\text{s}}{10} = 0{,}03\,\text{s}$, eli $T \approx 1{,}51\,\text{s} \pm 0{,}03\,\text{s}$.
+
+Käsin ajanotossa virhe on samaa suuruusluokkaa riippumatta heilahdusten määrästä. Kymmenen heilahduksen aika jaetaan kuitenkin kymmenellä, joten virhe jaksonajassa pienenee kymmenesosaan. Yhden heilahduksen ajanotossa sama $0{,}3\,\text{s}$ olisi lähes viidesosa jaksonajasta.
 **Järkevyys:** Jaksonaika $1{,}51\,\text{s}$ on lähellä jokaista yksittäistä mittausta jaettuna kymmenellä ($1{,}48\,\text{s}$ … $1{,}54\,\text{s}$). Heilurin tavallinen jaksonaika on muutama sekunti tai alle, joten tulos on uskottava.
 
 ## fy5-7-L2-07
@@ -145,7 +151,9 @@
 ## fy5-7-L3-01
 **Annettu:** jaksonaika $T = 1{,}2\,\text{s}$, ajanotto alkaa tasapainoaseman ohituksesta ylöspäin, kysytty korkeus $x = \tfrac{A}{2}$
 **Kysytty:** aika $t$, jonka kuluttua punnus on ensimmäisen kerran korkeudella $\tfrac{A}{2}$
-**Periaate:** Värähtely on sinimuotoista, ja ajanotto alkaa tasapainoaseman ohituksesta positiiviseen suuntaan. Siksi $x = A \sin\left(\tfrac{2\pi t}{T}\right)$. Kun $x = \tfrac{A}{2}$, sinin arvo on $\tfrac{1}{2}$. Ensimmäinen kerta vastaa pienintä positiivista kulmaa, jolla sini on $\tfrac{1}{2}$. Suorakulmaisessa kolmiossa, jonka kulma on $30^\circ$, vastainen kateetti on puolet hypotenuusasta. Siis $\sin 30^\circ = \tfrac{1}{2}$. Koska $180^\circ = \pi$, kulma on $30^\circ = \tfrac{\pi}{6}$. Seuraava kulma $150^\circ$ osuisi vasta laskuvaiheeseen. Amplitudi supistuu pois, joten sitä ei tarvita.
+**Periaate:** Värähtely on sinimuotoista, ja ajanotto alkaa tasapainoaseman ohituksesta positiiviseen suuntaan. Siksi $x = A \sin\left(\tfrac{2\pi t}{T}\right)$. Kun $x = \tfrac{A}{2}$, sinin arvo on $\tfrac{1}{2}$. Ensimmäinen kerta vastaa pienintä positiivista kulmaa, jolla sini on $\tfrac{1}{2}$.
+
+Suorakulmaisessa kolmiossa, jonka kulma on $30^\circ$, vastainen kateetti on puolet hypotenuusasta. Siis $\sin 30^\circ = \tfrac{1}{2}$. Koska $180^\circ = \pi$, kulma on $30^\circ = \tfrac{\pi}{6}$. Seuraava kulma $150^\circ$ osuisi vasta laskuvaiheeseen. Amplitudi supistuu pois, joten sitä ei tarvita.
 **Kaava:** $\dfrac{A}{2} = A \sin\left(\dfrac{2\pi t}{T}\right)$, josta $\dfrac{2\pi t}{T} = \dfrac{\pi}{6}$, joten $t = \dfrac{T}{12}$
 **Muunnokset:** Ei tarvita. Jaksonaika on sekunteina, ja kulma on radiaaneina.
 **Sijoitus:** $t = \dfrac{1{,}2\,\text{s}}{12} = 0{,}10\,\text{s}$

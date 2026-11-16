@@ -684,7 +684,9 @@ Kansainvälinen avaruusasema ISS kiertää Maata lähes ympyrärataa noin $420\,
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Korkeus $h = 420\,\text{km}$, Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$ ja säde $R = 6371\,\text{km}$, gravitaatiovakio $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$. Kysytään ratanopeutta $v$ ja kiertoaikaa $T$.
+**Tunnetut ja kysytty.** Korkeus $h = 420\,\text{km}$, Maan massa $M = 5{,}97 \cdot 10^{24}\,\text{kg}$ ja säde $R = 6371\,\text{km}$, gravitaatiovakio $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$.
+
+Kysytään ratanopeutta $v$ ja kiertoaikaa $T$.
 
 <!-- vaihe -->
 

@@ -121,7 +121,9 @@
 ## fy5-6-L1-06
 **Kysytty:** miksi astronautti leijuu avaruusasemalla, vaikka Maan gravitaatio vaikuttaa häneen.
 **Periaate:** Aseman korkeudella etäisyys Maan keskipisteestä on noin $6\,\%$ suurempi kuin maanpinnalla. Siksi gravitaatiovoima on yhä noin $88\,\%$ maanpinnan arvosta. Asema ja astronautti liikkuvat vain gravitaation vaikutuksesta samalla kiihtyvyydellä. Ne siis putoavat vapaasti. Painottomuus tarkoittaa, että tukivoimaa ei ole. Se ei tarkoita, että gravitaatiota ei ole.
-**Mallivastaus:** Astronautti ja asema putoavat vapaasti samalla kiihtyvyydellä. Siksi asema ei työnnä astronauttia tukivoimalla. Hän leijuu aseman sisällä, vaikka gravitaatiovoima vaikuttaa häneen. Vaihtoehto, jonka mukaan gravitaatio on korkeudella lähes olematon, on väärä. Voima on yhä noin $88\,\%$ maanpinnan arvosta. Keskipakovoima ei vaikuta astronauttiin, kun tarkastellaan liikettä paikallaan olevasta koordinaatistosta. Sitä ei siis tarvita selitykseen. Gravitaatio on ainoa voima ja ympyräliikkeen kokonaisvoima, joten voimat eivät kumoa toisiaan. Vaihtoehto, jonka mukaan vauhti poistaa gravitaation vaikutuksen, on väärä. Suuri sivuttainen vauhti ei poista gravitaatiota. Se saa aseman putoamaan koko ajan Maan ohi.
+**Mallivastaus:** Astronautti ja asema putoavat vapaasti samalla kiihtyvyydellä. Siksi asema ei työnnä astronauttia tukivoimalla. Hän leijuu aseman sisällä, vaikka gravitaatiovoima vaikuttaa häneen. Vaihtoehto, jonka mukaan gravitaatio on korkeudella lähes olematon, on väärä. Voima on yhä noin $88\,\%$ maanpinnan arvosta. Keskipakovoima ei vaikuta astronauttiin, kun tarkastellaan liikettä paikallaan olevasta koordinaatistosta.
+
+Sitä ei siis tarvita selitykseen. Gravitaatio on ainoa voima ja ympyräliikkeen kokonaisvoima, joten voimat eivät kumoa toisiaan. Vaihtoehto, jonka mukaan vauhti poistaa gravitaation vaikutuksen, on väärä. Suuri sivuttainen vauhti ei poista gravitaatiota. Se saa aseman putoamaan koko ajan Maan ohi.
 
 ## fy5-6-L1-07
 **Annettu:** radan säde $r = 4{,}22 \cdot 10^{5}\,\text{km}$, Jupiterin massa $M = 1{,}90 \cdot 10^{27}\,\text{kg}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
@@ -216,7 +218,9 @@ $$\begin{aligned}
 &\phantom{T} \approx 2{,}76 \cdot 10^{4}\,\text{s}
 \end{aligned}$$
 
-Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \approx 7{,}7\,\text{h}$. Kiertoaika on siis noin $7{,}7\,\text{h}$ eli muutama tunti. Muut vaihtoehdot syntyvät tyypillisistä virheistä. Neliöjuuren unohtaminen antaa noin $0{,}0036\,\text{h}$. Säteen jättäminen kilometreiksi neliöjuuren alle antaa noin $0{,}24\,\text{h}$. Sekuntien jakaminen luvulla $60$ antaa noin $460\,\text{h}$. Tulos on järkevä: ratanopeus $2{,}1\,\text{km/s}$ on pienempi kuin Maan lähellä kiertävän satelliitin. Syy on se, että Marsin massa on noin kymmenesosa Maan massasta.
+Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} \approx 7{,}7\,\text{h}$. Kiertoaika on siis noin $7{,}7\,\text{h}$ eli muutama tunti. Muut vaihtoehdot syntyvät tyypillisistä virheistä. Neliöjuuren unohtaminen antaa noin $0{,}0036\,\text{h}$. Säteen jättäminen kilometreiksi neliöjuuren alle antaa noin $0{,}24\,\text{h}$.
+
+Sekuntien jakaminen luvulla $60$ antaa noin $460\,\text{h}$. Tulos on järkevä: ratanopeus $2{,}1\,\text{km/s}$ on pienempi kuin Maan lähellä kiertävän satelliitin. Syy on se, että Marsin massa on noin kymmenesosa Maan massasta.
 
 ## fy5-6-L1-10
 **Annettu:** kuvasta Maan rata: pienin etäisyys Auringosta $147{,}1\,\text{milj. km}$ ja suurin $152{,}1\,\text{milj. km}$; Auringon massa $M = 1{,}99 \cdot 10^{30}\,\text{kg}$, $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$
@@ -262,7 +266,9 @@ Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}
 | Jupiter | $778{,}5$ | $4331$ |
 
 **Kysytty:** a) taulukko viiden planeetan arvoista $a$ ja $T$, b) pisteiden $(a^3, T^2)$ kuvaaja, c) miten aineisto tukee Keplerin kolmatta lakia, d) Marsin kiertoaika $T_\text{Mars}$ vuorokausina Maan ratatiedoista ja vertailu NASAn arvoon
-**Periaate:** Planeettaan vaikuttaa käytännössä vain Auringon gravitaatiovoima. Se on ympyräliikkeen kokonaisvoima. Tämän luvun ympyräratamallista seuraa, että $T^2$ on suoraan verrannollinen suureeseen $r^3$. Verrannollisuuskerroin riippuu vain Auringon massasta $M$, ei planeetasta. Malli siis ennustaa Keplerin kolmannen lain, kun radan säde $r$ on isoakselin puolikas $a$: pisteet $(a^3, T^2)$ ovat samalla suoralla. Suora kulkee origon kautta, koska yhtälössä ei ole vakiotermiä eli lukua, joka lisätään erikseen.
+**Periaate:** Planeettaan vaikuttaa käytännössä vain Auringon gravitaatiovoima. Se on ympyräliikkeen kokonaisvoima. Tämän luvun ympyräratamallista seuraa, että $T^2$ on suoraan verrannollinen suureeseen $r^3$. Verrannollisuuskerroin riippuu vain Auringon massasta $M$, ei planeetasta.
+
+Malli siis ennustaa Keplerin kolmannen lain, kun radan säde $r$ on isoakselin puolikas $a$: pisteet $(a^3, T^2)$ ovat samalla suoralla. Suora kulkee origon kautta, koska yhtälössä ei ole vakiotermiä eli lukua, joka lisätään erikseen.
 **Kuvaajan lukeminen:** Kohta b): jokaiselle planeetalle lasketaan $a^3$ ja $T^2$. Pisteet piirretään koordinaatistoon. Vaaka-akselilla on $a^3$ ja pystyakselilla $T^2$.
 
 | Planeetta | $a^3\,\left((10^{8}\,\text{km})^3\right)$ | $T^2\,\left((10^{3}\,\text{d})^2\right)$ | $\dfrac{T^2}{a^3}$ |
@@ -292,7 +298,9 @@ T_\text{Mars} &= 365{,}2\,\text{d} \\
 $$
 **Vastaus:** $687{,}1\,\text{d}$, neljä merkitsevää numeroa kuten lähtöarvoissa $365{,}2\,\text{d}$, $228{,}0 \cdot 10^{6}\,\text{km}$ ja $149{,}6 \cdot 10^{6}\,\text{km}$.
 
-Kohta c): aineisto tukee lakia. Viiden planeetan pisteet ovat samalla origon kautta kulkevalla suoralla, vaikka $a^3$ kasvaa Merkuriuksesta Jupiteriin yli $2000$-kertaiseksi. Viisi planeettaa ei silti todista lakia yleisesti. NASAn arvoilla suhde $\tfrac{T^2}{a^3}$ pysyy samana noin $0{,}2\,\%$:n tarkkuudella Merkuriuksesta Marsiin ja Jupiteriin. Viiden planeetan taulukossa suhteet eroavat toisistaan alle $0{,}4\,\%$. Uloimmilla planeetoilla poikkeama on suurempi: Uranuksen suhde on noin $0{,}3\,\%$, Saturnuksen noin $1{,}3\,\%$ ja Neptunuksen noin $2{,}5\,\%$ Maan arvoa pienempi.
+Kohta c): aineisto tukee lakia. Viiden planeetan pisteet ovat samalla origon kautta kulkevalla suoralla, vaikka $a^3$ kasvaa Merkuriuksesta Jupiteriin yli $2000$-kertaiseksi. Viisi planeettaa ei silti todista lakia yleisesti.
+
+NASAn arvoilla suhde $\tfrac{T^2}{a^3}$ pysyy samana noin $0{,}2\,\%$:n tarkkuudella Merkuriuksesta Marsiin ja Jupiteriin. Viiden planeetan taulukossa suhteet eroavat toisistaan alle $0{,}4\,\%$. Uloimmilla planeetoilla poikkeama on suurempi: Uranuksen suhde on noin $0{,}3\,\%$, Saturnuksen noin $1{,}3\,\%$ ja Neptunuksen noin $2{,}5\,\%$ Maan arvoa pienempi.
 
 Kohta d): NASAn arvo on $687{,}0\,\text{d}$, joten ero on $0{,}1\,\text{d}$ eli noin $0{,}02\,\%$.
 
