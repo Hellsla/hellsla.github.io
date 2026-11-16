@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c85d130d8268574e
+CONTENT-HASH: 7d2542dd563a3195
 
 ## Blocking
 (none)
@@ -15,3 +15,4 @@ CONTENT-HASH: c85d130d8268574e
 - Recomputed: T²/a³ 0,0399 to 0,0398; Mars 687,1 d; 227,9 gives 686,7 d; Uranus/Saturn/Neptune deviations 0,3/1,3/2,5 %. Solution is staged, the graph reading explained.
 - Set has 11/9/5 tasks at levels 1/2/3, above the minimum; the new task does not repeat the example.
 - Figure fy5-6/radat description gives the data without the answer.
+- L3-04 Vastaus split into five paragraphs (answer, justification, exclusion, correct period, explanation): no word, number or formula changed; the reasoning order is clearer.
