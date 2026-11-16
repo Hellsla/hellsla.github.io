@@ -46,7 +46,7 @@
 **Formula:** $Q = sm$, from which $s = \dfrac{Q}{m}$
 **Conversions:** None needed: the energy is read in kilojoules, and the answer is requested in the unit $\tfrac{\text{kJ}}{\text{kg}}$.
 **Substitution:** $s = \dfrac{200\,\text{kJ}}{0.60\,\text{kg}} = 333\,\tfrac{\text{kJ}}{\text{kg}}$
-**Answer:** $333\,\tfrac{\text{kJ}}{\text{kg}}$, three significant figures. The values are read exactly from the grid, so $323\ldots343\,\tfrac{\text{kJ}}{\text{kg}}$ is accepted.
+**Answer:** $3.3 \cdot 10^{2}\,\tfrac{\text{kJ}}{\text{kg}}$, two significant figures as in the mass $0.60\,\text{kg}$ (calculated $333\,\tfrac{\text{kJ}}{\text{kg}}$). The values are read exactly from the grid, so $323\ldots343\,\tfrac{\text{kJ}}{\text{kg}}$ is accepted.
 **Reasonableness:** The result is close to the table value $334\,\tfrac{\text{kJ}}{\text{kg}}$. Melting takes $200\,\text{kJ}$, whereas warming the ice before melting took only $20\,\text{kJ}$, so the horizontal part is long, and the temperature rises more gently after melting because the specific heat capacity of water is greater than that of ice.
 
 ## fy3-7-L2-01

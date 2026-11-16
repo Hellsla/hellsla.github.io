@@ -166,7 +166,7 @@ Different substances expand differently. A bimetallic strip, in which two differ
 
 Liquids usually expand clearly more than solids, and gases much more still. The particles of a liquid do not stay in place, and the interactions between them are weaker than in a solid, so a rise in temperature moves them farther apart. The particles of a gas are far apart and almost free, so at constant pressure the volume of a gas grows much more. The volume of a gas also depends on pressure, and we return to this in the chapter *Changes of state of a gas and Boyle's law*. A liquid thermometer is based on the expansion of a liquid: when the temperature rises, the liquid column rises in a thin tube.
 
-Water is an exception: between $0\,{}^\circ\text{C}$ and $4\,{}^\circ\text{C}$ it contracts when it warms up, so its density is greatest at about $4\,{}^\circ\text{C}$. The densest, 4-degree water sinks to the bottom, and colder water stays at the surface and freezes. That is why a lake freezes from the surface, and even in winter there is water at about 4 °C at the bottom, where fish survive.
+Water is an exception: between $0\,{}^\circ\text{C}$ and $4\,{}^\circ\text{C}$ it contracts when it warms up, so its density is greatest at about $4\,{}^\circ\text{C}$. The densest, 4-degree water sinks to the bottom, and colder water stays at the surface and freezes. That is why a lake freezes from the surface, and even in winter there is water of about four degrees at the bottom, where fish survive.
 
 ## Formula: Thermal expansion of length and volume
 When the temperature of an object changes by $\Delta T$, its length is
@@ -262,7 +262,7 @@ For a solid $\gamma \approx 3\alpha$, because an object expands in all three dir
 </svg>
 
 ## Worked example
-The deck of a steel bridge is $120\,\text{m}$ long. At the location the temperature varies during the year from a frost of $-30\,{}^\circ\text{C}$ to a heatwave of +$30\,{}^\circ\text{C}$, and the coefficient of linear expansion of steel is 12 · 10⁻⁶ 1/K. By how much does the length of the deck change, that is, how much must the expansion joint give at least?
+The deck of a steel bridge is $120\,\text{m}$ long. At the location the temperature varies during the year from a frost of $-30\,{}^\circ\text{C}$ to a heatwave of $+30\,{}^\circ\text{C}$, and the coefficient of linear expansion of steel is $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$. By how much does the length of the deck change, that is, how much must the expansion joint give at least?
 
 <!-- vaihe -->
 

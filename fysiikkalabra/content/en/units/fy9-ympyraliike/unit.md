@@ -390,7 +390,9 @@ The mass cancels, so the greatest speed does not depend on the mass of the car.
 Newton's law of gravitation :: F_\text{g} = \gamma\frac{m_1 m_2}{r^2}
 ```
 
-where $\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ is the gravitational constant, $F_\text{g}$ the magnitude of the gravitational force ($\text{N}$), $m_1$ and $m_2$ the masses of the bodies ($\text{kg}$) and $r$ the distance between the centres ($\text{m}$). The law holds for point-like and spherically symmetric bodies. The gravitational field strength $g$ ($\text{N/kg}$, that is $\text{m/s}^2$) of a central body of mass $M$ ($\text{kg}$) is the gravitational force per unit mass of a body; at the Earth's surface it is the acceleration due to gravity.
+where $$
+\gamma = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
+$$ is the gravitational constant, $F_\text{g}$ the magnitude of the gravitational force ($\text{N}$), $m_1$ and $m_2$ the masses of the bodies ($\text{kg}$) and $r$ the distance between the centres ($\text{m}$). The law holds for point-like and spherically symmetric bodies. The gravitational field strength $g$ ($\text{N/kg}$, that is $\text{m/s}^2$) of a central body of mass $M$ ($\text{kg}$) is the gravitational force per unit mass of a body; at the Earth's surface it is the acceleration due to gravity.
 
 ```johda
 A body of mass $m$ is at the distance $r$ from the centre of a central body of mass $M$. Derive the gravitational field strength $g$, that is the acceleration due to gravity, at this distance.

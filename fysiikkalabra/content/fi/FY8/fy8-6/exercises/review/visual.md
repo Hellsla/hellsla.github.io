@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 29e493b0c24a1745
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correction diff since origin/main only)
+CONTENT-HASH: 26b9b21509391153
+SCOPE: delta reflow from 29e493b0c24a1745 base cf5f907
 
 ## Blocking
 - none
@@ -9,4 +9,8 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY8 editorial-correct
 - none
 
 ## Checked
-- Rendered preview built with scripts/build.py and opened at 390 px and 1280 px in Chromium: no horizontal page overflow, no inline formula wrapping onto two lines, no KaTeX errors; new tables (photon interactions, fy8-12-L3-06 data) scroll inside their own box on a phone; new subsections and extension headings render in place.
+- Delta round 4, calculation chains re-broken into aligned rows. Opened fy8-6 open-exercises-1280-1 (solution blocks, one-row and wrapped chains read cleanly, = aligned).
+- Kaava lines keep the equals sign in the first row; sentence marks sit inside the last row.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

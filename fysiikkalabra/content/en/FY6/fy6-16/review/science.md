@@ -1,14 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: db324a986b213d71
-
+CONTENT-HASH: b64fcfc3e328592d
 ## Blocking
-- none
-
 ## Polish
-- content/en/FY6/fy6-16/lesson.md:473 (summary) — "its own residual current device: charging is a long, large load, and outdoors the insulation of a cable can be damaged" still reads as if the RCD were justified by outdoor use, while tarkistus-1 now says, correctly, that it is required indoors and outdoors (and lesson.md:269 says the standard requires it for every charging point) — e.g. "every charging point needs its own residual current protection, indoors and outdoors; outdoors damage to the insulation is also more likely".
-
+- At the upper end of the 80–95 % efficiency range the lesson states, the socket time is 22,9 h (40 kWh : (0,95 · 1,84 kW)). "more than a day" holds at the lesson's own η = 0,85 (25,6 h, lesson-answers.py `t-socket-h`), so this is not an error. If wanted, name the 85 % in the sentence.
 ## Checked
-- tarkistus-1 (inquiry.json:269): the correct option is right. Charging is a long, high-power load, so it needs its own sized circuit, and residual current protection is required for every charging point whatever its location (SFS 6000-7-722). The feedback says how an RCD works (leakage to earth, for example through a damaged cable and a person) the same way as the lesson and the fy6-15 chapter.
-- Exactly one option is correct. "Own circuit speeds up charging" and "RCD prevents the main fuse from blowing" are still wrong, and their feedback is correct: an RCD responds to the difference current (30 mA), not to the load, and load management protects the main fuse.
-- No numbers changed. The 30 mA tripping limit is the same as in fy6-15.
-- Rest of the lesson unchanged since the last PASS (git diff); content hash the same at start and end.
+- batch delta review: lesson.md:184 round-2 change (the socket charging time with charging losses counted). Recomputed: P = 230 V · 8 A = 1,84 kW; t = 40 kWh : (0,85 · 1,84 kW) = 25,6 h > 24 h, and without losses 21,7 h. So the added condition is the one the claim needs. Also recomputed 3,68 kW and 11,04 kW, and the three-phase t = 4,03 h (η = 0,90). The sentence now agrees with the inquiry "tavat" solution, its hint, its no-losses mistake feedback (21,7 h) and the "yli vuorokauden" reasonableness line. Both times in the sentence now use the same model, losses included. Hash was the same at start and end.

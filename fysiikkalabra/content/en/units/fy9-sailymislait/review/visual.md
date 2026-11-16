@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 14b317dac8dafa44
-Review of the recognition chart (queue 9c) and the term change against the version passed at 0775225e55ef25bc; full on the chart, delta on the rest.
+CONTENT-HASH: 7c339f0388ea3836
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [C] The chart title and subtitle begin with a lowercase letter ("how do I tell the law?", "free-body diagram first, ..."); capitalise the title in figures.json (sentence case) if the Finnish title is capitalised.
+- none
 
 ## Checked
-- Chart PNGs at 360 and 1280 px: 8 rows (mechanical energy ... efficiency); \overline p and \overline I upright-vector correct. No clipped, overlapping or cramped label; white on #1a4d2e is clearly legible; pill, card, spine and start-box style match the other units.
-- Typography: KaTeX, italic variables, upright names and units, subscripts and \overline vectors as in MAFY; decimal point in English.
-- aria-label in figures.json is in English, complete, and matches the rows in order and meaning (see Polish for any wording difference).
-- Diff: figures.json term and label translations (all present), teacher.md "concept map" -> "recognition chart", other changed lines; terms consistent (sliding friction).
+batch delta review 5d round 2: reflow-1.png reflow-2.png reflow-3.png  (360 px, everything open); lifted formulas fully visible, relations aligned, no bracket, quote or case ending left around a lifted formula, no lone punctuation, operators stay with their terms.

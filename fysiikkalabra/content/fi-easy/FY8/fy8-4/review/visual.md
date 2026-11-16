@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 02c70831736aa52c
+CONTENT-HASH: 6e18483831d8ad47
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy8-4-theory-1280-2: the electron-microscope photo is cut by the capture boundary but sits whole in the page. It is not centred on the dualism text above it. Acceptable.
+- [Minor] stage rows with a lone unit continuation row (e.g. "· 2,998 · 10^8 m/s" in fy8-4) could join the "=" column; existing layout, not a regression.
 
 ## Checked
-batch delta review: opened fy8-4-theory-1280 captures holding the new unit-photo (floats right, 20 rem wide, no clipping or overflow, figure beside it intact, credit line present, alt text and caption natural Finnish, any quantity in the caption set as LaTeX with its unit) plus the surrounding figures and formulas.
+- batch delta review, round 2: opened example-390-1 and stage-sovella-390-2 (lifted formulas with a following sentence, unit rows); the lifted formulas carry their closing mark inside the last row, no lone mark, rows aligned and unclipped. Not every capture of this lesson was opened; the rest is judged from the same shared build (mathlayout.with_punct).

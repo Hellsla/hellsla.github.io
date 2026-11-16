@@ -166,7 +166,7 @@
 **Formula:** $F_\text{mean} = \dfrac{\text{sum of the measurements}}{5}$, the work of one pull $W_1 = F_\text{mean}\, s$ and for all the pulls $\Delta U = nW_1$
 **Conversions:** None needed: the force is in newtons and the distance in metres, so the product is in joules.
 **Substitution:** The sum of the measurements is $4.1\,\text{N} + 4.3\,\text{N} + 4.2\,\text{N} + 4.0\,\text{N} + 4.4\,\text{N} = 21.0\,\text{N}$, so $F_\text{mean} = \dfrac{21.0\,\text{N}}{5} = 4.20\,\text{N}$. The work of one pull is $W_1 = 4.20\,\text{N} \cdot 0.600\,\text{m} = 2.52\,\text{J}$, so $\Delta U = 20 \cdot 2.52\,\text{J} = 50.4\,\text{J}$
-**Answer:** $50.4\,\text{J}$, that is, about $50\,\text{J}$: the measurements are given to two significant figures and they vary by about $\pm 0.2\,\text{N}$ ($\approx 5\,\%$), so a result with two significant figures is honest. The real increase is probably slightly smaller, because the warmed block and table transfer some heat to the air, so $Q < 0$ and $\Delta U = Q + W < W$.
+**Answer:** $50\,\text{J}$ (calculated $50.4\,\text{J}$), two significant figures, because the force measurements are given to two significant figures and they vary by about $\pm 0.2\,\text{N}$ ($\approx 5\,\%$). The real increase is probably slightly smaller, because the warmed block and table transfer some heat to the air, so $Q < 0$ and $\Delta U = Q + W < W$.
 **Reasonableness:** The $2.52\,\text{J}$ of one pull is small, which is why the warming caused by friction is hard to notice in everyday life, but the $50.4\,\text{J}$ of $20$ pulls is already clearly measurable. Check: $20 \cdot 0.600\,\text{m} = 12.0\,\text{m}$ of pulling distance multiplied by the force $4.20\,\text{N}$ gives $50.4\,\text{J}$.
 
 ## fy3-5-L3-04

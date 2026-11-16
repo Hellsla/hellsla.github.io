@@ -1,16 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 65ae78ca19f3d63b
+CONTENT-HASH: cc0c6be54948b8a2
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] A few words stay close to the source ("ideaalinen jännitelähde", "elektrolyytti", "häviävän pieni"). They are chapter terms and explained by context; no change needed.
+- inquiry.json koe-1 question — the student must find R_s from two table rows during Tutki, before Teoria has shown slope = -R_s; hint 3 gives the numbers almost entirely — fix: hint 3 could state only the method and leave the subtraction to the student, or the question could ask first for E (the extrapolated value) as a smaller step.
+- inquiry.json ennuste-2 — the correct option names its own reason ("sisäiset resistanssit rinnan"), so the reason is visible before the evidence; the three wrong options give no comparable reason of that kind — fix: give every option a physical reason of the same kind so the choice cannot be made from wording.
+- inquiry.json hook/pohdi — the opening question is answered only in the optional "Palaa ennusteisiisi" and in the theory section "Auton akku käynnistettäessä" — fix: say in the exit ticket or a check that the headlight question is asked again (a third exit question would do).
+- inquiry.json workload — two predictions, three experiments (one optional), explain, example, error-spotting, transfer, three checks and a long exercise set make the lesson heavy for one hour — fix: mark Etsi virhe optional, or leave Koe 3 where it is and keep the rest.
+- lesson.md "Paristojen sarjaan- ja rinnankytkentä" — the paragraph on a battery inserted the wrong way round is dense and hard for an S2 reader ("kaksinkertaisen verran pienempi") — fix: add a small example: $1{,}5\,\text{V}+1{,}5\,\text{V}-1{,}5\,\text{V}=1{,}5\,\text{V}$ instead of $4{,}5\,\text{V}$.
 
 ## Checked
-- Genuinely plain Finnish, not a copy: the Finnish compound sentences are split into short ones ("Paristossa kemialliset reaktiot erottavat varauksia toisistaan. Siksi napojen välillä on jännite."), connectives added, the energy argument introduced with "Katso asiaa energian kannalta."; same 429-line structure, nothing dropped.
-- Key terms explained where they appear (lähdejännite, sisäinen resistanssi, napajännite, oikosulku in bold with a plain sentence); key_concepts give a short reminder for each.
-- Inquiry: hook, review, two predictions, sim, three experiments, conclusion, find-the-error, transfer, three checks; feedback texts split into short sentences with the same logic; hints and mistakes intact.
-- Learning goals start with the verbs laskemaan, selvittämään, vertailemaan ja selittämään after the heading "Tällä tunnilla opit".
-- Exit ticket and worked example keep all steps.
-- Re-review after the concept-review commit: ex L1-05 points relabelled as model points (text, solution, figure description), napajännite explanation conditioned on current being drawn, matching the Finnish; no numbers changed; captures retaken.
+- Path: a student with fy6-5 follows; the model is built from Kirchhoff's law, and the slot's goals (terminal voltage, internal resistance experiment, short circuit, series and parallel) are all covered, nothing extra.
+- Predictions: both can be refuted by the experiments (koe-1, koe-2 locked and varied parameters are right); each wrong option's feedback repairs its misconception.
+- The simulation (390 px capture) is readable: the model in the dashed box, the meters, the (I, U) graph, controls on one block, explanations behind boxes.
+- The experiment is data the student acts on (the graph, the line, the intercept), not a formula check; model values are called model values.
+- The worked example has seven stages with one step each; the answer is checked by substitution; it does not repeat the transfer task.
+- Check 2 (graph reading): the figure is needed, legible at 360 px, hints are progressive, the common mistakes are real (U:I and E:I).
+- Etsi virhe and the transfer task (car battery, 180 A) tie back to the opening phenomenon; distractors are misconception-based.
+- Exit ticket tests the core idea (why U < E, short-circuit current) and does not repeat the checks.
+- Finnish: terms agree with the glossary, case after numbers and units is right; no spelling errors found.
+- Exercise set not judged (reviewed separately).

@@ -331,11 +331,13 @@
 </section><section class="inv-section" id="epavarmuus-ja-luotettavuus"><h2 id="h-epavarmuus-ja-luotettavuus">Epävarmuus ja luotettavuus</h2>
 <p>Ilmoita hyötysuhde epävarmuuksineen ainakin yhdessä käyttötilanteessa ja perustele, miten arvioit epävarmuuden. Pohdi myös, mitkä mitatuista suureista vaikuttavat tulokseen eniten.</p>
 <div class="inv-tuki" data-modes="OO"><p>Hyötysuhde lasketaan viiden mitatun suureen tuloista ja osamääristä. Silloin tuloksen suhteellinen epävarmuus on likimain mitattujen suureiden suhteellisten epävarmuuksien summa:</p>
-<p>$$\begin{aligned}
+<p><span class="mj-wide">$$\begin{aligned}
+\frac{\Delta \eta}{\eta} \approx {} & \frac{\Delta U}{U} + \frac{\Delta I}{I} + \frac{\Delta (\Delta m)}{\Delta m} + \frac{\Delta (\Delta t)}{\Delta t} + \frac{\Delta h}{h} 
+\end{aligned}$$</span><span class="mj-narrow">$$\begin{aligned}
 \frac{\Delta \eta}{\eta} \approx {} & \frac{\Delta U}{U} + \frac{\Delta I}{I} \\
 & + \frac{\Delta (\Delta m)}{\Delta m} + \frac{\Delta (\Delta t)}{\Delta t} \\
 & + \frac{\Delta h}{h}
-\end{aligned}$$</p>
+\end{aligned}$$</span></p>
 <p>Jos $\Delta m$ on kahden punnituksen erotus, sen epävarmuus on punnitusten epävarmuuksien summa. Jos jännite ja virta heilahtelevat, käytä epävarmuutena heilahtelun puolikasta. Jos vedenpinta laskee mittauksen aikana, käytä putouskorkeutena keskiarvoa ja epävarmuutena puolta pinnan laskusta. Laske jokaisen termin osuus erikseen: suurin termi kertoo, mitä mittausta kannattaa parantaa ensimmäisenä.</p>
 <p>Pyöristä $\Delta \eta$ yhteen merkitsevään numeroon ja $\eta$ samaan tarkkuuteen.</p></div>
 <p>Pohdi sitten luotettavuutta konkreettisesti: mitkä olivat suurimmat epävarmuuden lähteet, olivatko ne satunnaisia vai systemaattisia, ja mihin suuntaan ne olisivat muuttaneet hyötysuhdetta? Muuttaisiko toisenlainen järjestelmän rajaus tulosta?</p>

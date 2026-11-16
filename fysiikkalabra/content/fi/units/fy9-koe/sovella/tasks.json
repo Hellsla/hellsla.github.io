@@ -454,7 +454,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$E = 0{,}054 \\cdot 3{,}6 \\cdot 10^{6}\\,\\text{J} = 194\\,400\\,\\text{J}$"
+       "detail": "$$\n\\begin{aligned}\nE &= 0{,}054 \\cdot 3{,}6 \\cdot 10^{6}\\,\\text{J} \\\\\n&= 194\\,400\\,\\text{J}\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",

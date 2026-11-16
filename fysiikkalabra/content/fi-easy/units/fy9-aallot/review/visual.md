@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 4a0d8e1f5459c529
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (67d7b7f5a224ebfb).
+CONTENT-HASH: 608f06e8c6424132
 
 ## Blocking
-(none)
+- none. Lifted formulas legible and fully visible at 360 px; relations aligned, operators lead continuation rows, no lone bracket, quote or case ending around a lifted formula.
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Opened fy9-aallot-fi-easy-360.png (chart unchanged); the diff is only teacher.md branch-to-row wording, which reads correctly.
+- batch delta review 5d round 2: reflow-1.png reflow-2.png 

@@ -346,7 +346,7 @@
       "tolerance": 0.02,
       "hints": [
         "Which equation connects the energy and the frequency of a photon (chapter *The photoelectric effect and the photon*)?",
-        "Convert the energy to joules: $511\\,\\text{keV} = 511 \\cdot 10^{3} \\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}$.",
+        "Convert the energy to joules: $$\n\\begin{aligned}\n511\\,\\text{keV} &= 511 \\cdot 10^{3} \\\\\n&\\cdot 1.602 \\cdot 10^{-19}\\,\\text{J}\n\\end{aligned}\n$$.",
         "$E = 8.186 \\cdot 10^{-14}\\,\\text{J}$, and $f = \\tfrac{E}{h}$, where $h = 6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$."
       ],
       "mistakes": [

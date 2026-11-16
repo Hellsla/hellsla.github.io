@@ -200,7 +200,7 @@
     {
       "id": "fy3-5-L2-05",
       "level": 2,
-      "text": "A gas in a closed cylinder goes through a cycle of four steps and returns after the fourth step exactly to its initial state: the amount of gas, the temperature and the other state variables are the same as at the start.\n\nThe table gives, as sample data, the quantity of heat $Q$ transferred to the gas and the work $W$ done on the gas in each step; the work in step 4 is not known.\n\nHow large is the work $W$ in step 4? Give the answer with its sign: a negative $W$ means that the gas does work on the surroundings.",
+      "text": "Extension task. A gas in a closed cylinder goes through a cycle of four steps and returns after the fourth step exactly to its initial state: the amount of gas, the temperature and the other state variables are the same as at the start.\n\nThe table gives, as sample data, the quantity of heat $Q$ transferred to the gas and the work $W$ done on the gas in each step; the work in step 4 is not known.\n\nHow large is the work $W$ in step 4? Give the answer with its sign: a negative $W$ means that the gas does work on the surroundings.",
       "kind": [
         "data",
         "reasoning"

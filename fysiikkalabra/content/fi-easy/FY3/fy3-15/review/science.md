@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 534f119cf21d1296
+CONTENT-HASH: cd1a10f1eb4be45c
 
 ## Blocking
 
 ## Polish
-- None.
 
 ## Checked
-batch delta review: district heat "kelpaa vain lämmitykseen" -> "pääasiassa" in theory, misconception and explain model answer; no remaining "vain lämmitykseen"; the removed claim (summer = almost only electricity) was questionable, the new sentence (demand lower in summer, ratio depends on plant type and demand) is correct; electricity vs heat value argument and 0,88/0,30/0,40 unchanged.
+- Delta: inquiry.json hint and Periaate ("jakautuu sähköön, kaukolämpöön ja hukkalämpöön") and lesson.md misconception sentence ("siirtyisi hukkalämpönä ympäristöön"); teacher-approved figures not judged.
+- Energy balance and the waste heat as energy transferred to the surroundings: right, per the guardrails.
+- Recomputed: P_h = 400 − 120 − 232 = 48 MW, η_tot = 0,88; unchanged.
+- Same physics as fi and en; no number or symbol changed; hash the same at start and end.

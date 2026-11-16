@@ -6,7 +6,17 @@
 **Periaate:** Jokainen laite muuntaa energiaa omalla tehollaan, joten sen energia on teho kertaa käyttöaika (luku *Teho*). Jääkaapin teho on keskiteho, joten sekin kerrotaan koko vuorokaudella. Energiat lasketaan yhteen samassa yksikössä.
 **Kaava:** $E = P\,t$ jokaiselle laitteelle, joten $E_\text{tarve} = P_1 t_1 + 6\,P_2 t_2 + P_3 t_3$
 **Muunnokset:** Kilowattitunteja varten tehot kilowateiksi ja ajat tunneiksi: $45\,\text{W} = 45 \cdot 0{,}001\,\text{kW} = 0{,}045\,\text{kW}$, $7{,}0\,\text{W} = 0{,}0070\,\text{kW}$ ja $15\,\text{min} = 15 \cdot \tfrac{1}{60}\,\text{h} = 0{,}25\,\text{h}$.
-**Sijoitus:** $E_\text{tarve} = 0{,}045\,\text{kW} \cdot 24\,\text{h} + 6 \cdot 0{,}0070\,\text{kW} \cdot 5{,}0\,\text{h} + 1{,}0\,\text{kW} \cdot 0{,}25\,\text{h} = 1{,}08\,\text{kWh} + 0{,}21\,\text{kWh} + 0{,}25\,\text{kWh} = 1{,}54\,\text{kWh}$
+**Sijoitus:** $$
+\begin{aligned}
+E_\text{tarve} &= 0{,}045\,\text{kW} \cdot 24\,\text{h} \\
+&+ 6 \cdot 0{,}0070\,\text{kW} \cdot 5{,}0\,\text{h} \\
+&+ 1{,}0\,\text{kW} \cdot 0{,}25\,\text{h} \\
+&= 1{,}08\,\text{kWh} \\
+&+ 0{,}21\,\text{kWh} \\
+&+ 0{,}25\,\text{kWh} \\
+&= 1{,}54\,\text{kWh}
+\end{aligned}
+$$
 **Vastaus:** $E_\text{tarve} \approx 1{,}5\,\text{kWh}$ eli $1{,}54 \cdot 3{,}6\,\text{MJ} \approx 5{,}5\,\text{MJ}$, kaksi merkitsevää numeroa kuten jääkaapin teho $45\,\text{W}$ ja kahvinkeittimen teho $1{,}0\,\text{kW}$.
 **Järkevyys:** Jääkaappi käyttää lähes kaksi kolmasosaa energiasta, vaikka sen teho on laitteista toiseksi pienin: se on päällä koko ajan. Kahvinkeittimen suuri teho vaikuttaa vähän, koska se on päällä vain neljännestunnin. Puolitoista kilowattituntia vuorokaudessa on pienen kesämökin tavallinen kulutus.
 
@@ -18,7 +28,9 @@
 **Muunnokset:** $90\,\% = 0{,}90$ ja $93\,\% = 0{,}93$. Energiat pysyvät kilowattitunteina.
 **Sijoitus:** $E_\text{paneelit} = \dfrac{1{,}54\,\text{kWh}}{0{,}90 \cdot 0{,}93} = \dfrac{1{,}54\,\text{kWh}}{0{,}837} = 1{,}84\,\text{kWh}$. Pilvisenä päivänä laitteisiin asti tulee $0{,}837 \cdot 1{,}5\,\text{kWh} = 1{,}26\,\text{kWh}$.
 **Vastaus:** Paneelien on tuotettava noin $1{,}8\,\text{kWh}$ vuorokaudessa (kaksi merkitsevää numeroa kuten a-kohdan tarve). Pilvisen päivän $1{,}5\,\text{kWh}$ ei riitä: siitä tulee laitteisiin vain noin $1{,}3\,\text{kWh}$, joten puuttuva osa otetaan akusta, jos siellä on aurinkoisen päivän ylijäämää.
-**Järkevyys:** Ketjun hyötysuhde $0{,}84$ on pienempi kuin kummankaan vaiheen, kuten kertolaskussa pitää, ja tarve kasvaa noin viidenneksen. Aurinkoisena päivänä laitteisiin tulee $0{,}837 \cdot 5{,}4\,\text{kWh} \approx 4{,}5\,\text{kWh}$, mikä riittää lähes kolmeksi päiväksi.
+**Järkevyys:** Ketjun hyötysuhde $0{,}84$ on pienempi kuin kummankaan vaiheen, kuten kertolaskussa pitää, ja tarve kasvaa noin viidenneksen. Aurinkoisena päivänä laitteisiin tulee $$
+0{,}837 \cdot 5{,}4\,\text{kWh} \approx 4{,}5\,\text{kWh}
+$$, mikä riittää lähes kolmeksi päiväksi.
 
 ### c)
 **Kysytty:** onko naapurin päätelmä paneelien vuorokauden energiasta oikea
@@ -32,7 +44,12 @@
 - Hyötysuhteiden häviöt lasketaan yhteen ($10\,\% + 7\,\% = 17\,\%$); tulos on tässä lähellä oikeaa, mutta periaate on väärä.
 
 ### Hyväksytään myös
-- a-kohdan energia jouleina: $E_\text{tarve} = 1{,}54 \cdot 3{,}6\,\text{MJ} \approx 5{,}5\,\text{MJ}$.
+- a-kohdan energia jouleina: $$
+\begin{aligned}
+E_\text{tarve} &= 1{,}54 \cdot 3{,}6\,\text{MJ} \\
+&\approx 5{,}5\,\text{MJ}
+\end{aligned}
+$$.
 
 ## fy9-energia-s2
 
@@ -169,7 +186,17 @@ Kuvaajassa ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista b-kohdan ku
 **Muunnokset:** $1\,\text{kWh} : 1\,\text{h} = 1\,\text{kW} = 1000\,\text{W}$, joten $\text{kWh}$ jaettuna tunneilla antaa kilowatteja. $1\,{}^\circ\text{C}$:n muutos on $1\,\text{K}$.
 **Sijoitus:** $k = \dfrac{93\,\text{kWh} - 191\,\text{kWh}}{0\,{}^\circ\text{C} - (-20\,{}^\circ\text{C})} = \dfrac{-98\,\text{kWh}}{20\,{}^\circ\text{C}} = -4{,}9\,\text{kWh}/{}^\circ\text{C}$ ja $\dfrac{\Delta P}{\Delta T} = \dfrac{4{,}9\,\text{kWh}}{24\,\text{h} \cdot 1\,\text{K}} = 0{,}204\,\text{kW}/\text{K} = 204\,\text{W}/\text{K}$
 **Vastaus:** Kulmakerroin on noin $-4{,}9\,\text{kWh}$ asteelta vuorokaudessa, eli lämmitysteho kasvaa noin $200\,\text{W}$ jokaista kelviniä kohti, jonka ulkolämpötila laskee. Kaksi merkitsevää numeroa, koska kuvaajalta luettu kulmakerroin on noin $\pm 0{,}2\,\text{kWh}$ asteelta tarkka.
-**Järkevyys:** Mallin mukaan lämmitystä tarvitaan alle noin $17\,{}^\circ\text{C}$:n ulkolämpötilassa (d-kohta). Kun ulkona on $-20\,{}^\circ\text{C}$, lämmitysteho on noin $36{,}5\,\text{K} \cdot 0{,}204\,\text{kW}/\text{K} \approx 7{,}5\,\text{kW}$, sama kuin $(191 - 12)\,\text{kWh} : 24\,\text{h} \approx 7{,}5\,\text{kW}$, mikä sopii omakotitalon sähkölämmitykseen. Pienimmän neliösumman suora antaa saman: $-4{,}89\,\text{kWh}$ asteelta eli $204\,\text{W/K}$.
+**Järkevyys:** Mallin mukaan lämmitystä tarvitaan alle noin $17\,{}^\circ\text{C}$:n ulkolämpötilassa (d-kohta). Kun ulkona on $-20\,{}^\circ\text{C}$, lämmitysteho on noin $$
+\begin{aligned}
+&36{,}5\,\text{K} \cdot 0{,}204\,\text{kW}/\text{K} \\
+&\approx 7{,}5\,\text{kW}
+\end{aligned}
+$$, sama kuin $$
+\begin{aligned}
+&(191 - 12)\,\text{kWh} : 24\,\text{h} \\
+&\approx 7{,}5\,\text{kW}
+\end{aligned}
+$$, mikä sopii omakotitalon sähkölämmitykseen. Pienimmän neliösumman suora antaa saman: $-4{,}89\,\text{kWh}$ asteelta eli $204\,\text{W/K}$.
 
 ### c)
 **Annettu:** a-kohdan suora, b-kohdan kulmakerroin $k = -4{,}9\,\text{kWh}$ asteelta ja suoran piste $(T_0;\ E_0) = (0\,{}^\circ\text{C};\ 93\,\text{kWh})$; arvioitava lämpötila $T = -28\,{}^\circ\text{C}$
@@ -178,7 +205,15 @@ Kuvaajassa ympyröidyt kohdat ovat ne kaksi suoran pistettä, joista b-kohdan ku
 **Kuvaajan lukeminen:** Katkoviivana jatketulta suoralta luetaan lämpötilan $-28\,{}^\circ\text{C}$ kohdalta noin $230\,\text{kWh}$.
 **Kaava:** $E = E_0 + k\,(T - T_0)$, missä $(T_0;\ E_0)$ on suoran tunnettu piste ja $k$ sen kulmakerroin
 **Muunnokset:** Ei tarvita: lämpötila ja kulmakerroin ovat samoissa yksiköissä kuin kuvaajassa.
-**Sijoitus:** $E = 93\,\text{kWh} + (-4{,}9\,\text{kWh}/{}^\circ\text{C}) \cdot (-28\,{}^\circ\text{C} - 0\,{}^\circ\text{C}) = 93\,\text{kWh} + 137{,}2\,\text{kWh} = 230{,}2\,\text{kWh}$
+**Sijoitus:** $$
+\begin{aligned}
+E &= 93\,\text{kWh} \\
+&+ (-4{,}9\,\text{kWh}/{}^\circ\text{C}) \\
+&\cdot (-28\,{}^\circ\text{C} - 0\,{}^\circ\text{C}) \\
+&= 93\,\text{kWh} + 137{,}2\,\text{kWh} \\
+&= 230{,}2\,\text{kWh}
+\end{aligned}
+$$
 **Vastaus:** noin $230\,\text{kWh}$ vuorokaudessa, kaksi merkitsevää numeroa kuten kulmakerroin. Arvio on ekstrapolointi $9\,\text{K}$ kylmimmän mittauksen $-19\,{}^\circ\text{C}$ ulkopuolelle. Se pätee, jos lämpöhäviöt kasvavat edelleen suoraan lämpötilaeron mukana; kova tuuli suurentaa kulutusta, ja jos lämmittimien yhteenlaskettu teho on alle noin $9\,\text{kW}$, ne eivät riitä ja sisälämpötila laskee.
 **Järkevyys:** Kulutus on suunnilleen kaksi ja puoli kertaa nollan asteen kulutus, ja keskiteho $230\,\text{kWh} : 24\,\text{h} \approx 9{,}6\,\text{kW}$ on omakotitalon sähkölämmityksen yläpäässä. Esimerkkihinnalla $0{,}20\,\text{€/kWh}$ päivä maksaisi noin $46\,\text{€}$.
 
@@ -218,7 +253,14 @@ Suositus: merikaapeli ja tuulivoimalat yhdessä. Kaapeli takaa sähkön tyynell�
 ### c)
 **Kysytty:** dieselvoimalan vuotuinen hiilidioksidipäästö ja arvio väitteestä ”tuulivoima on täysin päästötöntä”
 **Periaate:** Päästö on energia kertaa päästökerroin, $m = e \cdot E$. Tuotantotapoja verrataan elinkaaren päästöillä, joihin kuuluvat myös rakentaminen, kuljetukset ja purku (luku *Energiantuotanto, ympäristö ja ilmastonmuutos*).
-**Mallivastaus:** Kulutus kilowattitunteina on $3{,}0\,\text{GWh} = 3{,}0 \cdot 10^{6}\,\text{kWh}$, joten dieselvoimalan päästö on $m = e \cdot E = 700\,\text{g}/\text{kWh} \cdot 3{,}0 \cdot 10^{6}\,\text{kWh} = 2{,}1 \cdot 10^{9}\,\text{g}$. Sijoitetaan $1\,\text{g} = 10^{-6}\,\text{t}$: päästö on noin $2100\,\text{t}$ hiilidioksidia vuodessa. Tuulivoimala ei käytössä polta mitään, mutta sen teräksen ja betonin valmistus, kuljetus, rakentaminen ja purku aiheuttavat päästöjä. Elinkaaren päästökerroin on siksi muutamia kymmeniä grammoja kilowattituntia kohti tai vähemmän, ei nolla. Väite on siis epätarkka: tuulivoima on vähäpäästöistä, ja sen päästöt ovat vain murto-osa dieselin päästöistä, mutta täysin päästötöntä se ei ole.
+**Mallivastaus:** Kulutus kilowattitunteina on $3{,}0\,\text{GWh} = 3{,}0 \cdot 10^{6}\,\text{kWh}$, joten dieselvoimalan päästö on $$
+\begin{aligned}
+m &= e \cdot E \\
+&= 700\,\text{g}/\text{kWh} \cdot 3{,}0 \\
+&\cdot 10^{6}\,\text{kWh} \\
+&= 2{,}1 \cdot 10^{9}\,\text{g}
+\end{aligned}
+$$. Sijoitetaan $1\,\text{g} = 10^{-6}\,\text{t}$: päästö on noin $2100\,\text{t}$ hiilidioksidia vuodessa. Tuulivoimala ei käytössä polta mitään, mutta sen teräksen ja betonin valmistus, kuljetus, rakentaminen ja purku aiheuttavat päästöjä. Elinkaaren päästökerroin on siksi muutamia kymmeniä grammoja kilowattituntia kohti tai vähemmän, ei nolla. Väite on siis epätarkka: tuulivoima on vähäpäästöistä, ja sen päästöt ovat vain murto-osa dieselin päästöistä, mutta täysin päästötöntä se ei ole.
 
 ### Yleisiä virheitä
 - a-kohdassa tuulivoimaloiden vuoden energia lasketaan nimellisteholla ($2{,}0\,\text{MW} \cdot 8760\,\text{h} = 17{,}5\,\text{GWh}$), jolloin keskitehoa ei oteta huomioon.
@@ -276,7 +318,16 @@ Jos hyötysuhde kasvaa vesimäärän kasvaessa, syy on todennäköisesti kannun 
 **Periaate:** Kun ala-allas valitaan nollatasoksi, korkeudella $h$ olevan veden potentiaalienergia on yhtä suuri kuin työ, joka tarvitaan sen nostamiseen tasaisesti ylös, $mgh$ (luvut *Työ ja energia* ja *Liike-energia, potentiaalienergia ja mekaaninen energia*). Altaan korkeus on pieni korkeuseroon verrattuna, joten kaikki vesi on noin korkeudella $h$.
 **Kaava:** $m = \rho V$ ja $E_\text{p} = mgh$, joten $E_\text{p} = \rho V g h$
 **Muunnokset:** $1{,}20\,\text{km} = 1{,}20 \cdot 1000\,\text{m} = 1200\,\text{m}$. Megawattitunti sijoittamalla: $1\,\text{MWh} = 10^{6}\,\text{W} \cdot 3600\,\text{s} = 3{,}6 \cdot 10^{9}\,\text{J}$.
-**Sijoitus:** $E_\text{p} = 1000\,\text{kg}/\text{m}^3 \cdot 7{,}50 \cdot 10^{4}\,\text{m}^3 \cdot 9{,}81\,\text{m}/\text{s}^2 \cdot 1200\,\text{m} = 8{,}829 \cdot 10^{11}\,\text{J} = \dfrac{8{,}829 \cdot 10^{11}}{3{,}6 \cdot 10^{9}}\,\text{MWh} = 245{,}3\,\text{MWh}$
+**Sijoitus:** $$
+\begin{aligned}
+E_\text{p} &= 1000\,\text{kg}/\text{m}^3 \cdot 7{,}50 \\
+&\cdot 10^{4}\,\text{m}^3 \cdot 9{,}81\,\text{m}/\text{s}^2 \\
+&\cdot 1200\,\text{m} \\
+&= 8{,}829 \cdot 10^{11}\,\text{J} \\
+&= \dfrac{8{,}829 \cdot 10^{11}}{3{,}6 \cdot 10^{9}}\,\text{MWh} \\
+&= 245{,}3\,\text{MWh}
+\end{aligned}
+$$
 **Vastaus:** $E_\text{p} \approx 245\,\text{MWh}$, kolme merkitsevää numeroa kuten tilavuus $7{,}50 \cdot 10^{4}\,\text{m}^3$ ja korkeusero $1{,}20\,\text{km}$.
 **Järkevyys:** Kilogramma vettä saa $1200\,\text{m}$:n pudotuksesta noin $12\,\text{kJ}$, eli yksi kuutio noin $12\,\text{MJ} \approx 3{,}3\,\text{kWh}$. $75\,000$ kuutiota antaa siis noin $250\,\text{MWh}$, sama suuruusluokka.
 
@@ -298,7 +349,13 @@ Jos hyötysuhde kasvaa vesimäärän kasvaessa, syy on todennäköisesti kannun 
 **Muunnokset:** $85\,\% = 0{,}85$ ja $88\,\% = 0{,}88$; energiat pysyvät megawattitunteina.
 **Sijoitus:** $E_\text{verkko} = \dfrac{245{,}3\,\text{MWh}}{0{,}85} = 288{,}5\,\text{MWh}$ ja $\eta = 0{,}85 \cdot 0{,}88 = 0{,}748 = 74{,}8\,\%$
 **Vastaus:** Verkosta otetaan noin $290\,\text{MWh}$ (kaksi merkitsevää numeroa kuten hyötysuhde $85\,\%$; tarkemmin $289\,\text{MWh}$), ja kokonaishyötysuhde on noin $75\,\%$.
-**Järkevyys:** Tarkistus energioista: $E_\text{s} : E_\text{verkko} = 215{,}8\,\text{MWh} : 288{,}5\,\text{MWh} = 0{,}748$, sama kuin hyötysuhteiden tulo. Noin neljännes energiasta muuttuu putkissa, pumpussa, turbiinissa ja generaattoreissa lämmöksi, mikä on pumppuvoimaloille tyypillistä.
+**Järkevyys:** Tarkistus energioista: $$
+\begin{aligned}
+&E_\text{s} : E_\text{verkko} \\
+&= 215{,}8\,\text{MWh} : 288{,}5\,\text{MWh} \\
+&= 0{,}748
+\end{aligned}
+$$, sama kuin hyötysuhteiden tulo. Noin neljännes energiasta muuttuu putkissa, pumpussa, turbiinissa ja generaattoreissa lämmöksi, mikä on pumppuvoimaloille tyypillistä.
 
 ### d)
 **Kysytty:** pitääkö väite ”voimala tuottaa joka päivä $216\,\text{MWh}$ sähköä”, ja miksi voimala silti voi olla hyödyllinen

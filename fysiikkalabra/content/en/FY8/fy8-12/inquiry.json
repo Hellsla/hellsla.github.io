@@ -317,7 +317,7 @@
         },
         {
           "text": "The calculation should have used centimetres instead of millimetres.",
-          "feedback": "The unit does not matter as long as the thickness and the half-value thickness are in the same unit: $11\\,\\text{mm} : 5.5\\,\\text{mm} = 1.1\\,\\text{cm} : 0.55\\,\\text{cm} = 2$. The mistake is in the reasoning: the second layer halves only what got through the first."
+          "feedback": "The unit does not matter as long as the thickness and the half-value thickness are in the same unit: $$\n\\begin{aligned}\n11\\,\\text{mm} : 5.5\\,\\text{mm} &= 1.1\\,\\text{cm} \\\\\n&: 0.55\\,\\text{cm} \\\\\n&= 2\n\\end{aligned}\n$$. The mistake is in the reasoning: the second layer halves only what got through the first."
         }
       ]
     },

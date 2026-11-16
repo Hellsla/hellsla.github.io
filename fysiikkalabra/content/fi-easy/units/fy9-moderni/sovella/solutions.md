@@ -5,7 +5,13 @@
 **Kysytty:** hajoamisen ja purkautumisen yhtälöt sekä gammafotonin aallonpituus $\lambda$
 **Periaate:** Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi. Siksi järjestysluku kasvaa yhdellä, ja massaluku säilyy. Ydin lähettää elektronin ja antineutriinon. Virittyneellä ytimellä on ylimääräistä energiaa. Se purkautuu ja lähettää gammafotonin. Silloin järjestysluku ja massaluku eivät muutu (luku *Atomiydin ja radioaktiivinen hajoaminen*). Gammafotoni on fotoni kuten valo. Sen energia ja aallonpituus liittyvät toisiinsa (luku *Valosähköinen ilmiö ja fotoni*).
 **Kaava:** ${}^{137}_{55}\text{Cs} \to {}^{137}_{56}\text{Ba}^{\ast} + {}^{0}_{-1}\text{e} + \bar{\nu}$ ja ${}^{137}_{56}\text{Ba}^{\ast} \to {}^{137}_{56}\text{Ba} + \gamma$; $E = \dfrac{hc}{\lambda}$, joten $\lambda = \dfrac{hc}{E}$
-**Muunnokset:** $662\,\text{keV} = 662 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 1{,}0605 \cdot 10^{-13}\,\text{J}$ ja lopuksi $1\,\text{pm} = 10^{-12}\,\text{m}$
+**Muunnokset:** $$
+\begin{aligned}
+&662\,\text{keV} \\
+&= 662 \cdot 1000 \cdot 1{,}602 \cdot 10^{-19}\,\text{J} \\
+&= 1{,}0605 \cdot 10^{-13}\,\text{J}
+\end{aligned}
+$$ ja lopuksi $1\,\text{pm} = 10^{-12}\,\text{m}$
 **Sijoitus:** $\lambda = \dfrac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{1{,}0605 \cdot 10^{-13}\,\text{J}} = 1{,}873 \cdot 10^{-12}\,\text{m} = 1{,}873\,\text{pm}$
 **Vastaus:** Yhtälöt ovat yllä. Gammafotonin aallonpituus on $\lambda \approx 1{,}87\,\text{pm}$. Vastauksessa on kolme merkitsevää numeroa kuten energiassa $662\,\text{keV}$.
 **Järkevyys:** Molemmissa yhtälöissä massaluvut ($137 = 137 + 0$) ja varausluvut ($55 = 56 - 1$) säilyvät. Aallonpituus on noin sata kertaa pienempi kuin atomin halkaisija. Näin pitää olla gammasäteilyllä. Näkyvän valon fotoni on noin $2\,\text{eV}$, ja sen aallonpituus on noin $600\,\text{nm}$. Energia $662\,000\,\text{eV}$ on noin $330\,000$-kertainen.
@@ -17,7 +23,9 @@
 **Kaava:** $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$
 **Muunnokset:** Ajat ovat samassa yksikössä, joten muunnoksia ei tarvita.
 **Sijoitus:** $\dfrac{t}{T_{1/2}} = \dfrac{36\,\text{a}}{30{,}1\,\text{a}} = 1{,}196$, joten $A = 2400\,\tfrac{\text{Bq}}{\text{kg}} \cdot 0{,}5^{1{,}196} = 1047{,}6\,\tfrac{\text{Bq}}{\text{kg}}$
-**Vastaus:** $A \approx 1050\,\tfrac{\text{Bq}}{\text{kg}} = 1{,}05 \cdot 10^{3}\,\tfrac{\text{Bq}}{\text{kg}}$. Vastauksessa on kolme merkitsevää numeroa kuten puoliintumisajassa.
+**Vastaus:** $$
+A \approx 1050\,\tfrac{\text{Bq}}{\text{kg}} = 1{,}05 \cdot 10^{3}\,\tfrac{\text{Bq}}{\text{kg}}
+$$. Vastauksessa on kolme merkitsevää numeroa kuten puoliintumisajassa.
 **Järkevyys:** Aikaa on kulunut vähän yli yksi puoliintumisaika. Siksi pitoisuuden on oltava vähän alle puolet alkuperäisestä eli vähän alle $1200\,\tfrac{\text{Bq}}{\text{kg}}$. Tulos sopii tähän.
 
 ### c)
@@ -65,7 +73,13 @@
 **Periaate:** Avaruus laajenee, ja kaukaiset galaksit etääntyvät eli loittonevat meistä. Siksi niiden valon aallonpituus on venynyt. Punasiirtymä $z$ kertoo, kuinka paljon aallonpituus on venynyt. Kun $z$ on pieni, etääntymisnopeus on $v = cz$. Hubblen lain mukaan nopeus on suoraan verrannollinen etäisyyteen (luku *Maailmankaikkeuden kehitys*).
 **Kaava:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$, $v = cz$ ja $v = H_0 d$, joten $d = \dfrac{v}{H_0}$
 **Muunnokset:** Aallonpituudet ovat samassa yksikössä. Nopeudet ovat yksikössä $\tfrac{\text{km}}{\text{s}}$. Siksi muunnoksia ei tarvita.
-**Sijoitus:** $z = \dfrac{671{,}8\,\text{nm} - 656{,}3\,\text{nm}}{656{,}3\,\text{nm}} = \dfrac{15{,}5\,\text{nm}}{656{,}3\,\text{nm}} = 0{,}02362$, $v = 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}02362 = 7080\,\text{km/s}$ ja $d = \dfrac{7080\,\text{km/s}}{70\,\tfrac{\text{km/s}}{\text{Mpc}}} = 101{,}1\,\text{Mpc}$
+**Sijoitus:** $$
+\begin{aligned}
+z &= \dfrac{671{,}8\,\text{nm} - 656{,}3\,\text{nm}}{656{,}3\,\text{nm}} \\
+&= \dfrac{15{,}5\,\text{nm}}{656{,}3\,\text{nm}} \\
+&= 0{,}02362
+\end{aligned}
+$$, $v = 2{,}998 \cdot 10^{5}\,\text{km/s} \cdot 0{,}02362 = 7080\,\text{km/s}$ ja $d = \dfrac{7080\,\text{km/s}}{70\,\tfrac{\text{km/s}}{\text{Mpc}}} = 101{,}1\,\text{Mpc}$
 **Vastaus:** Galaksi etääntyy nopeudella $v \approx 7080\,\text{km/s}$. Vastauksessa on kolme merkitsevää numeroa kuten aallonpituuksien erotuksessa $15{,}5\,\text{nm}$. Galaksi on noin $1{,}0 \cdot 10^{2}\,\text{Mpc}$:n etäisyydellä. Tässä on kaksi merkitsevää numeroa kuten Hubblen vakiossa.
 **Järkevyys:** Nopeus on noin $2\,\%$ valon nopeudesta, joten $v = cz$ pätee. $100\,\text{Mpc}$ on noin $330$ miljoonaa valovuotta. Se on kauempana kuin lähigalaksien joukot. Etäisyys on kuitenkin sellainen, että galaksin voi havaita helposti kaukoputkella.
 
@@ -93,7 +107,12 @@
 - d-kohdassa sanotaan, että viivat ovat tummia, koska galaksi on kaukana tai koska punasiirtymä tummentaa ne.
 
 ### Hyväksytään myös
-- c-kohdassa suhteella $\lambda = 486{,}1\,\text{nm} \cdot \dfrac{671{,}8}{656{,}3} = 497{,}6\,\text{nm}$, koska $1 + z$ on havaitun arvon ja laboratorioarvon suhde.
+- c-kohdassa suhteella $$
+\begin{aligned}
+\lambda &= 486{,}1\,\text{nm} \cdot \dfrac{671{,}8}{656{,}3} \\
+&= 497{,}6\,\text{nm}
+\end{aligned}
+$$, koska $1 + z$ on havaitun arvon ja laboratorioarvon suhde.
 
 ## fy9-moderni-s3
 
@@ -231,7 +250,13 @@
 **Kuvaajan lukeminen:** Suoralta luetaan pisteet $(0;\ -2{,}24\,\text{V})$ ja $(8{,}0 \cdot 10^{14}\,\text{Hz};\ 1{,}06\,\text{V})$.
 **Kaava:** $k = \dfrac{\Delta U}{\Delta f}$ ja $k = \dfrac{h}{e}$, joten $h = ek$
 **Muunnokset:** $1\,\text{C} \cdot 1\,\text{V} \cdot 1\,\text{s} = 1\,\text{J}\,\text{s}$, koska $1\,\text{V} = 1\,\tfrac{\text{J}}{\text{C}}$ ja $\tfrac{1}{\text{Hz}} = 1\,\text{s}$.
-**Sijoitus:** $k = \dfrac{1{,}06\,\text{V} - (-2{,}24\,\text{V})}{8{,}0 \cdot 10^{14}\,\text{Hz} - 0} = \dfrac{3{,}30\,\text{V}}{8{,}0 \cdot 10^{14}\,\tfrac{1}{\text{s}}} = 4{,}125 \cdot 10^{-15}\,\text{V}\,\text{s}$, joten $h = 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}125 \cdot 10^{-15}\,\text{V}\,\text{s} = 6{,}608 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Sijoitus:** $k = \dfrac{1{,}06\,\text{V} - (-2{,}24\,\text{V})}{8{,}0 \cdot 10^{14}\,\text{Hz} - 0} = \dfrac{3{,}30\,\text{V}}{8{,}0 \cdot 10^{14}\,\tfrac{1}{\text{s}}} = 4{,}125 \cdot 10^{-15}\,\text{V}\,\text{s}$, joten $$
+\begin{aligned}
+h &= 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 4{,}125 \\
+&\cdot 10^{-15}\,\text{V}\,\text{s} \\
+&= 6{,}608 \cdot 10^{-34}\,\text{J}\,\text{s}
+\end{aligned}
+$$
 **Vastaus:** $h \approx 6{,}61 \cdot 10^{-34}\,\text{J}\,\text{s}$. Vastauksessa on kolme merkitsevää numeroa, koska jännitteet luetaan kuvaajalta noin sadasosavoltin tarkkuudella. Tulos on $0{,}3\,\%$ pienempi kuin taulukkoarvo $6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$.
 **Järkevyys:** Ero on paljon pienempi kuin lukemisen epävarmuus, joka on noin $1\,\%$. Mittaus siis tukee mallia. Kulmakerroin ei riipu siitä, mitä ainetta katodi on. Siksi mikä tahansa metalli antaisi saman $h$:n.
 
@@ -321,7 +346,13 @@
 **Kysytty:** hyötysuhde $\eta$ ja fissioiden määrä sekunnissa $n$
 **Periaate:** Hyötysuhde on hyödyllisen tehon ja käytetyn tehon suhde (luku *Energiantuotanto ja voimalaitosten hyötysuhde*). Reaktorin lämpöteho on yhden fission energia kertaa fissioiden määrä sekunnissa (luku *Fissio, fuusio ja ydinvoima*).
 **Kaava:** $\eta = \dfrac{P_\text{s}}{P_\text{l}}$ ja $P_\text{l} = nE_\text{f}$, joten $n = \dfrac{P_\text{l}}{E_\text{f}}$
-**Muunnokset:** $200\,\text{MeV} = 200 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} = 3{,}204 \cdot 10^{-11}\,\text{J}$ ja $4300\,\text{MW} = 4300 \cdot 10^{6}\,\text{W}$
+**Muunnokset:** $$
+\begin{aligned}
+&200\,\text{MeV} \\
+&= 200 \cdot 10^{6} \cdot 1{,}602 \cdot 10^{-19}\,\text{J} \\
+&= 3{,}204 \cdot 10^{-11}\,\text{J}
+\end{aligned}
+$$ ja $4300\,\text{MW} = 4300 \cdot 10^{6}\,\text{W}$
 **Sijoitus:** $\eta = \dfrac{1600\,\text{MW}}{4300\,\text{MW}} = 0{,}3721 = 37{,}21\,\%$ ja $n = \dfrac{4300 \cdot 10^{6}\,\tfrac{\text{J}}{\text{s}}}{3{,}204 \cdot 10^{-11}\,\text{J}} = 1{,}342 \cdot 10^{20}\,\tfrac{1}{\text{s}}$
 **Vastaus:** Hyötysuhde on $\eta \approx 37{,}2\,\%$. Reaktorissa tapahtuu noin $1{,}34 \cdot 10^{20}$ fissiota sekunnissa. Vastauksissa on kolme merkitsevää numeroa kuten tehoissa.
 **Järkevyys:** Kun lämpövoimala toimii höyryturbiinilla, sen hyötysuhde on yleensä $30$–$40\,\%$. Fissioita on valtavasti, koska yksi fissio vapauttaa vain noin $3 \cdot 10^{-11}\,\text{J}$.
