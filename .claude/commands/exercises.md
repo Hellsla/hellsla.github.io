@@ -1,12 +1,12 @@
 ---
 description: Add, rewrite or fix one lesson's exercises without the lesson text (exercise packets, the exercise set's own reviews) and open a draft pull request
 argument-hint: <lesson-id> <what to do, e.g. "3 more level-2 tasks on mixing water"> [--warn 150000] [--limit 250000]
-model: fable
+model: sonnet
 effort: medium
 ---
 Work on the exercises of lesson $ARGUMENTS. Work in `fysiikkalabra/` (`cd fysiikkalabra` first): every path below is relative to it. The exercise set (`content/fi/<course>/<id>/exercises/`: `exercises.json`, `solutions.md`, and `lessons/<course>/<id>/answers.py`) has its own hash and its own three reviews (`exercises/review/`, README "Exercises", teacher 2026-10-28; visual & editorial since 2026-10-31), so this run never touches the lesson's files or reviews, and the lesson stays on the site while the new exercises wait for review: the page keeps the exercises last reviewed. You coordinate; the agents work from packets. Read only the scripts' output and the agents' reports; never open a packet, the lesson text or an exercise file yourself.
 
-**Routing** as in `/lesson` (`.claude/commands/lesson.md`): every agent Fable medium (teacher 2026-11-15): the developer (Fable high only after a Fable medium attempt failed the checks twice or a science review found physics errors in its work), the science reviewer, the pedagogy reviewer and the visual-editorial-reviewer; pass `model` and `effort` on every Agent call and say in the PR which model ran each step and why. An agent's prompt is one line naming its packet: `Read <path printed by review_packet.py> and follow it. Lesson: <id>. Exercises: <the task in the teacher's words>. Mode: <mode>. Round: <n>.` For a fix, add `Polish to fix: <ids, or none>.` and, after a failed check, the failing lines.
+**Routing** as in `/lesson` (`.claude/commands/lesson.md`): the developer Sonnet medium (Opus medium only for physics the course has not used before, or after a Sonnet attempt failed the checks twice or a science review found physics errors in its work), the science reviewer Opus medium, the pedagogy reviewer Sonnet medium, the visual-editorial-reviewer Sonnet medium; pass `model` and `effort` on every Agent call and say in the PR which model ran each step and why. An agent's prompt is one line naming its packet: `Read <path printed by review_packet.py> and follow it. Lesson: <id>. Exercises: <the task in the teacher's words>. Mode: <mode>. Round: <n>.` For a fix, add `Polish to fix: <ids, or none>.` and, after a failed check, the failing lines.
 
 **Budget.** Warning 150 000 and hard limit 250 000 unless `--warn`/`--limit` say otherwise, counted like `/lesson` (the sum of the agents' final context sizes). Past the hard limit, stop safely: commit what exists and open the draft PR with a "Kesken" section.
 
