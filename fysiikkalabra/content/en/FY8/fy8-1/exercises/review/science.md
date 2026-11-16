@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: c6f2c3a890e2d599
+CONTENT-HASH: 9939aab4e79fce7e
+Mode: delta (added aineisto task fy8-1-L2-10)
 
 ## Blocking
+(none)
 
 ## Polish
-- exercises/solutions.md:227 — L2-07 b) still gives "three significant figures like the energies in the data" for $W = 2.14\,\text{eV}$, but $0.55\,\text{eV}$ has two — give the reason that $W$ is known to the hundredth of an eV.
+- exercises/solutions.md:431 — the Answer says the slider is read "to about $\pm 10\,\text{nm}$", while Given (line 408) says a reading "can differ by a few nanometres" — use one statement (the 530–550 nm range is the honest one).
+- exercises/solutions.md:412 — "Other metals need a shorter wavelength" holds for the five named metals (W 2.9–6.3 eV) but the unknown "?" metal's work function is not verified — say "the other named metals".
 
 ## Checked
-- L2-06 Reading the graph (line 221): the slopes are now called $h = 4.14 \cdot 10^{-15}\,\text{eV}\,\text{s}$, which is correct ($6.626 \cdot 10^{-34} / 1.602 \cdot 10^{-19} = 4.136 \cdot 10^{-15}$). The read slopes are 4.2 and 4.1 ($\cdot 10^{-15}\,\text{eV/Hz}$). Round-2 blocking item closed.
-- L2-07 Reasonableness: $k = 4.133 \cdot 10^{-15}$, $f_0 = 5.169 \cdot 10^{14}\,\text{Hz}$, $W = 2.137\,\text{eV}$, intercept $-2.137\,\text{eV}$; $h$ in eV s is correct.
-- L2-08: $h(f - f_0)$ with $0.4136\,\text{eV}$ per $10^{14}\,\text{Hz}$ gives $2.66\,\text{eV}$, correct.
-- L2-09: $4.3 \cdot 10^2\,\text{nm}$ with two significant figures is justified.
-- The remaining $\tfrac{h}{e}$ (L2-05, lines 199 and 201) is the slope of $U_\text{s}(f)$, which is correct.
-- Captions and chain re-breaks change no number.
-- Hash identical at start and end.
+- Recomputed: f0 = c/539 nm = 5.562e14 Hz, hf0 = 3.686e-19 J = 2.30 eV; answers.py 2.3006; box 2.3 eV with relative tolerance 0.05 (2.19–2.42 eV) covers readings 513–567 nm, so 530–550 nm (2.25–2.34 eV) is inside.
+- Sodium W = 2.3 eV in the PhET model gives λ0 = 539 nm, consistent with the example reading; the lesson's 2.28 eV gives 544 nm as the Reasonableness says.
+- Source claims (metals, work functions of zinc 4.3 eV and platinum 6.3 eV, wavelength and intensity sliders, current and energy graphs) are within the verified list; the 538/540 nm reading is labelled as a dated example.
+- Principle hf0 = W and the threshold condition hf ≥ W stated correctly; symbolic f0 = c/λ0, E = hf0 before substitution.
+- Part c): intensity changes the current, not E_k,max; frequency raises E_k,max = hf − W; stopping-voltage method correct.
+- Part d): wave-model predictions (threshold-free emission, intensity-dependent energy) correctly contrasted with observations.
+- Two significant figures justified by the slider reading.
+- Hash 9939aab4e79fce7e at start and end.
