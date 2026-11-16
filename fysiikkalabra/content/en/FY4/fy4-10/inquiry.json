@@ -24,20 +24,20 @@
       "type": "choice",
       "title": "Review: impulse",
       "optional": true,
-      "prompt": "A constant net force of $3.0\\,\\text{N}$ acts on a cart in the direction of its motion for $0.10\\,\\text{s}$. By how much does the momentum of the cart change?",
+      "prompt": "In the shot the cue pushes the cue ball in its direction of motion with an average force of $60\\,\\text{N}$ for $0.0050\\,\\text{s}$. The other horizontal forces are small. By how much does the momentum of the cue ball change?",
       "choices": [
         {
           "text": "$0.30\\,\\text{kg}\\cdot\\text{m/s}$",
           "correct": true,
-          "feedback": "Correct. The change in momentum is equal to the impulse: $$\\begin{aligned} &\\Delta p = F\\,\\Delta t \\\\ &= 3.0\\,\\text{N} \\cdot 0.10\\,\\text{s} \\\\ &= 0.30\\,\\text{N}\\cdot\\text{s} \\end{aligned}$$, and $1\\,\\text{N}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\text{m/s}$ (chapter *Momentum and impulse*)."
+          "feedback": "Correct. The change in momentum equals the impulse: $$\\begin{aligned} &\\Delta p = F\\,\\Delta t \\\\ &= 60\\,\\text{N} \\cdot 0.0050\\,\\text{s} \\\\ &= 0.30\\,\\text{N}\\cdot\\text{s} \\end{aligned}$$, and $1\\,\\text{N}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\text{m/s}$ (chapter *Momentum and impulse*). In this chapter you find out how this momentum is shared in the collision."
         },
         {
-          "text": "$30\\,\\text{kg}\\cdot\\text{m/s}$",
-          "feedback": "You calculated the quotient $F : \\Delta t$. Impulse is the product of force and time: $$\\begin{aligned} &\\Delta p = F\\,\\Delta t \\\\ &= 3.0\\,\\text{N} \\cdot 0.10\\,\\text{s} \\\\ &= 0.30\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$."
+          "text": "$12\\,000\\,\\text{kg}\\cdot\\text{m/s}$",
+          "feedback": "You computed the quotient $F : \\Delta t$. The impulse is the product of the force and the time: $$\\begin{aligned} &\\Delta p = F\\,\\Delta t \\\\ &= 60\\,\\text{N} \\cdot 0.0050\\,\\text{s} \\\\ &= 0.30\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$."
         },
         {
-          "text": "It cannot be calculated, because the mass of the cart is not known.",
-          "feedback": "The mass is needed for calculating the change in velocity, but not the change in momentum. The change in momentum is the impulse $F\\,\\Delta t = 0.30\\,\\text{kg}\\cdot\\text{m/s}$ regardless of the mass."
+          "text": "It cannot be computed, because the mass of the ball is not known.",
+          "feedback": "The mass is needed for the change in velocity, but not for the change in momentum. The change in momentum is the impulse $F\\,\\Delta t = 0.30\\,\\text{kg}\\cdot\\text{m/s}$ whatever the mass."
         }
       ]
     },

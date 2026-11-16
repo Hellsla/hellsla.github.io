@@ -23,20 +23,20 @@
       "type": "choice",
       "title": "Kertaa: tasainen liike",
       "optional": true,
-      "prompt": "Kappaleen $(t, x)$-kuvaaja on nouseva suora. Mitä se kertoo kappaleen nopeudesta?",
+      "prompt": "Heittäjä päästää curlingkivestä irti. Kiveä kuvataan videolle muutaman sekunnin ajan. Tällä välillä kiven $(t, x)$-kuvaaja on melkein nouseva suora. Mitä kuvaaja kertoo kiven nopeudesta?",
       "choices": [
         {
-          "text": "Nopeus on vakio: kappale kulkee yhtä pitkän matkan joka sekunti.",
+          "text": "Nopeus on melkein vakio: kivi kulkee yhtä pitkän matkan joka sekunti.",
           "correct": true,
-          "feedback": "Oikein. Suoran kulmakerroin on nopeus, ja suoralla se on joka kohdassa sama. Tässä luvussa opit, mitä tasainen liike kertoo kappaleeseen vaikuttavista voimista."
+          "feedback": "Oikein. Suoran kulmakerroin on nopeus. Suoralla kulmakerroin on joka kohdassa sama. Tässä luvussa opit, mitä tämä kertoo kiveen vaikuttavista voimista."
         },
         {
           "text": "Nopeus kasvaa tasaisesti, koska paikka kasvaa koko ajan.",
-          "feedback": "Paikka kasvaa, mutta yhtä paljon joka sekunti. Siksi nopeus pysyy samana. Jos nopeus kasvaisi, $(t, x)$-kuvaaja kaartuisi ylöspäin (luku *Paikka, nopeus ja tasainen liike kuvaajina*)."
+          "feedback": "Paikka kasvaa, mutta yhtä paljon joka sekunti. Siksi nopeus pysyy samana. Kasvava nopeus näkyisi $(t, x)$-kuvaajassa käyränä, joka kaartuu ylöspäin (luku *Paikka, nopeus ja tasainen liike kuvaajina*)."
         },
         {
-          "text": "Kappale on levossa, koska kuvaaja on suora eikä kaareva.",
-          "feedback": "Levossa olevan kappaleen paikka ei muutu, joten sen $(t, x)$-kuvaaja on vaakasuora suora. Nouseva suora tarkoittaa liikettä vakionopeudella (luku *Paikka, nopeus ja tasainen liike kuvaajina*)."
+          "text": "Kivi on levossa, koska kuvaaja on suora eikä kaareva.",
+          "feedback": "Jos kivi olisi levossa, sen paikka ei muuttuisi. Silloin $(t, x)$-kuvaaja olisi vaakasuora suora. Nouseva suora tarkoittaa liikettä vakionopeudella (luku *Paikka, nopeus ja tasainen liike kuvaajina*)."
         }
       ]
     },

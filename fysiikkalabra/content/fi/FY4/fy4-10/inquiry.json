@@ -24,21 +24,21 @@
    "type": "choice",
    "title": "Kertaa: impulssi",
    "optional": true,
-   "prompt": "Vaunuun vaikuttaa liikkeen suuntainen vakiosuuruinen kokonaisvoima $3{,}0\\,\\text{N}$ ajan $0{,}10\\,\\text{s}$. Kuinka paljon vaunun liikemäärä muuttuu?",
+   "prompt": "Lyönnissä biljardikeppi työntää lyöntipalloa liikkeen suuntaan keskimäärin voimalla $60\\,\\text{N}$ ajan $0{,}0050\\,\\text{s}$. Muut vaakasuorat voimat ovat pieniä. Kuinka paljon lyöntipallon liikemäärä muuttuu?",
    "choices": [
-    {
-     "text": "$0{,}30\\,\\text{kg}\\cdot\\text{m/s}$",
-     "correct": true,
-     "feedback": "Oikein. Liikemäärän muutos on yhtä suuri kuin impulssi: $$\\begin{aligned} &\\Delta p = F\\,\\Delta t \\\\ &= 3{,}0\\,\\text{N} \\cdot 0{,}10\\,\\text{s} \\\\ &= 0{,}30\\,\\text{N}\\cdot\\text{s} \\end{aligned}$$, ja $1\\,\\text{N}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\text{m/s}$ (luku *Liikemäärä ja impulssi*)."
-    },
-    {
-     "text": "$30\\,\\text{kg}\\cdot\\text{m/s}$",
-     "feedback": "Laskit osamäärän $F : \\Delta t$. Impulssi on voiman ja ajan tulo: $$\\begin{aligned} &\\Delta p = F\\,\\Delta t \\\\ &= 3{,}0\\,\\text{N} \\cdot 0{,}10\\,\\text{s} \\\\ &= 0{,}30\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$."
-    },
-    {
-     "text": "Sitä ei voi laskea, koska vaunun massaa ei tunneta.",
-     "feedback": "Massaa tarvitaan nopeuden muutoksen laskemiseen, mutta ei liikemäärän muutoksen. Liikemäärän muutos on impulssi $F\\,\\Delta t = 0{,}30\\,\\text{kg}\\cdot\\text{m/s}$ massasta riippumatta."
-    }
+     {
+       "text": "$0{,}30\\,\\text{kg}\\cdot\\text{m/s}$",
+       "correct": true,
+       "feedback": "Oikein. Liikemäärän muutos on yhtä suuri kuin impulssi: $$\\begin{aligned} &\\Delta p = F\\,\\Delta t \\\\ &= 60\\,\\text{N} \\cdot 0{,}0050\\,\\text{s} \\\\ &= 0{,}30\\,\\text{N}\\cdot\\text{s} \\end{aligned}$$, ja $1\\,\\text{N}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\text{m/s}$ (luku *Liikemäärä ja impulssi*). Tässä luvussa selviää, miten tämä liikemäärä jakautuu törmäyksessä."
+     },
+     {
+       "text": "$12\\,000\\,\\text{kg}\\cdot\\text{m/s}$",
+       "feedback": "Laskit osamäärän $F : \\Delta t$. Impulssi on voiman ja ajan tulo: $$\\begin{aligned} &\\Delta p = F\\,\\Delta t \\\\ &= 60\\,\\text{N} \\cdot 0{,}0050\\,\\text{s} \\\\ &= 0{,}30\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$."
+     },
+     {
+       "text": "Sitä ei voi laskea, koska pallon massaa ei tunneta.",
+       "feedback": "Massaa tarvitaan nopeuden muutoksen laskemiseen, mutta ei liikemäärän muutoksen. Liikemäärän muutos on impulssi $F\\,\\Delta t = 0{,}30\\,\\text{kg}\\cdot\\text{m/s}$ massasta riippumatta."
+     }
    ]
   },
   {
