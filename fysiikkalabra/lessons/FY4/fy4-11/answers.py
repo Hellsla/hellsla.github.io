@@ -51,4 +51,27 @@ a["fy4-11-L1-09"] = (80 / 3.6) ** 2 / (2 * mu_mafy * 9.81)   # a = μg = 7,85 m/
 # Figure tasks (L2-09 reads fy4-11/ex-tv-jarrutus, L3-06 reads fy4-11/ex-tv-tyyny)
 a["fy4-11-L2-09"] = 20.0 * 1.0 + 0.5 * 20.0 * (3.5 - 1.0)    # rectangle 20 m + triangle 25 m = 45 m
 a["fy4-11-L3-06"] = (70 * 15 / 0.060 - 70 * 15 / 0.150) / 1000   # 17 500 N - 7000 N = 10,5 kN
+# Data task from a real source (teacher's brief FY4-A1): Liikenneturva's stopping distance calculator,
+# https://extrat.liikenneturva.fi/pysahtymismatka-auto/fi/ (read 16.11.2026). Its "Lisätietoa": reaction time 1 s, mean
+# deceleration 9 m/s² dry and 1,5 m/s² icy; distances rounded to the nearest metre (Math.round).
+tr_app, a_dry, a_ice = 1.0, 9.0, 1.5
+app_dry = {40: (11, 7, 18), 60: (17, 15, 32), 80: (22, 27, 50), 100: (28, 43, 71)}   # app: reaction, braking, stopping (m)
+A1 = {}
+for v_kmh, shown in app_dry.items():
+    v = kmh(v_kmh)                                       # 11,11; 16,67; 22,22; 27,78 m/s
+    sr, sj = v * tr_app, v * v / (2 * a_dry)             # s_r = v0 t_r: 11,11; 16,67; 22,22; 27,78 m. s_j = v0²/(2a): 6,86; 15,43; 27,43; 42,87 m
+    A1[v_kmh] = (sr, sj, sr + sj)                        # s_p: 17,97; 32,10; 49,66; 70,64 m
+    assert (round(sr), round(sj), round(sr + sj)) == shown   # b) the model reproduces the app's rounded values
+assert abs(A1[80][1] / A1[40][1] - 4.0) < 1e-9           # b) speed doubled (40 → 80 km/h): braking distance fourfold, 6,86 → 27,43 m
+margin80 = 50.0 - A1[80][2]                              # c) 80 km/h: 50 m − 49,66 m = 0,34 m left: the model car just stops
+left100 = 50.0 - A1[100][0]                              # c) 100 km/h: 50 m − 27,78 m = 22,22 m left for braking
+v2 = kmh(100) ** 2 - 2 * a_dry * left100                 # v² = v0² − 2as = 771,6 − 400,0 = 371,6 m²/s²
+a["fy4-11-L2-10"] = math.sqrt(v2) * 3.6                  # v = 19,28 m/s = 69,4 km/h → about 69 km/h
+v_app = math.sqrt(kmh(100) ** 2 - 2 * a_dry * (50 - 28)) * 3.6   # with the app's rounded 28 m: 69,8 km/h, inside the tolerance 0,03
+assert abs(v_app / a["fy4-11-L2-10"] - 1) < 0.03
+check100 = left100 + (a["fy4-11-L2-10"] / 3.6) ** 2 / (2 * a_dry)    # check: 22,22 m + 20,65 m = 42,87 m = s_j from 100 km/h
+sj_ice = kmh(80) ** 2 / (2 * a_ice); sp_ice = kmh(80) * tr_app + sj_ice   # d) ice, 80 km/h: 164,61 m and 186,83 m (app 165 and 187)
+assert (round(sj_ice), round(sp_ice)) == (165, 187) and abs(sj_ice / A1[80][1] - 6.0) < 1e-9   # sixfold, as 9 : 1,5 = 6
+mu_dry, mu_ice = a_dry / g, a_ice / g                    # d) a = μg → μ = 0,917 ≈ 0,92 (dry) and 0,153 ≈ 0,15 (ice)
+ratio_model, ratio_app = 1.25 ** 2, 43 / 27              # e) 80 → 100 km/h (+25 %): s_j · 1,5625 (+56 %); app 43 : 27 = 1,59
 print(json.dumps(a))

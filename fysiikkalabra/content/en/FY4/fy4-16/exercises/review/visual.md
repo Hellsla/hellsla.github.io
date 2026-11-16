@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ce62540bde4a3a8a
+CONTENT-HASH: 01f6ccf131c53a56
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] fy4-16-open-exercises-1280-4 (16-4 solution) — "sliding distance" is now beside "sliding friction"; clear in context, no change needed.
+- none
 
 ## Checked
-- Delta: wording kinetic friction → sliding friction (exercises.json, solutions.md) and the figures.json alt texts. No "kinetic friction" remains in the files.
-- Opened contact-7, fy4-16-open-exercises-1280-2 and -4 (16-2 and 16-4 with open solutions), fy4-16-fig-9-390 (free-body diagram with sliding friction F_mu).
-- Captures are in content/en/FY4/fy4-16/review/shots/ (stamp matches exercises hash ce62540bde4a3a8a); the exercises/review/shots folder does not exist, so I regenerated them with --exercises.
-- Layout intact: formulas, tables and diagrams unclipped; F_mu label and alt text agree.
+- Delta: the Järkevyys/Reasonableness step of the parachute exercise (16-20), en L3 open-solutions capture (fy4-16-open-exercises-L3-1280-5): the formula stands on its own display row between the sentence halves, not clipped, comma and unit intact, consistent with the neighbouring display blocks. At 1280 px the two aligned rows fit on one row; the 360/390 px layout check passes (no phone capture opened). Numbers, signs and units unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish n/a (English) 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

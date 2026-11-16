@@ -283,7 +283,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri, eli virhe on noin vi
 **Muunnokset:** Ei tarvita laskussa. Vertailua varten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m}} = \sqrt{294{,}3}\,\text{m/s} = 17{,}2\,\text{m/s}$ ja $17{,}2 \cdot 3{,}6\,\text{km/h} = 61{,}8\,\text{km/h}$
 **Vastaus:** $v \approx 17{,}2\,\text{m/s} \approx 62\,\text{km/h}$, kolme merkitsevää numeroa kuten korkeudessa $15{,}0\,\text{m}$. Ohjaajan väite perustuu siis malliin, jossa mekaaninen energia säilyy.
-**Järkevyys:** Sama nopeus saavutettaisiin, jos laskija putoaisi vapaasti $15\,\text{m}$. Se on suurin mahdollinen nopeus, koska todellisuudessa osa energiasta muuttuu lämmöksi.
+**Järkevyys:** Sama nopeus saavutettaisiin, jos laskija putoaisi vapaasti $15\,\text{m}$. Se on suurin mahdollinen nopeus, koska todellisuudessa osa energiasta muuttuu sisäenergiaksi.
 
 ### b)
 **Annettu:** $m = 62\,\text{kg}$, $h = 15{,}0\,\text{m}$, vaijerin pituus lähtölavalta jarrun alkuun $s = 180\,\text{m}$ ja mitattu nopeus $v = 11{,}2\,\text{m/s}$
@@ -293,7 +293,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri, eli virhe on noin vi
 **Muunnokset:** Ei tarvita, kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $E_{\text{p}0} = 62\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} = 9123\,\text{J}$ ja $E_\text{k} = \tfrac{1}{2} \cdot 62\,\text{kg} \cdot (11{,}2\,\text{m/s})^2 = 3889\,\text{J}$. $F_\text{vast} = \dfrac{9123\,\text{J} - 3889\,\text{J}}{180\,\text{m}} = \dfrac{5234\,\text{J}}{180\,\text{m}} = 29{,}1\,\text{N}$
 **Vastaus:** $F_\text{vast} \approx 29\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $62\,\text{kg}$.
-**Järkevyys:** Voima on noin $5\,\%$ laskijan painosta $608\,\text{N}$, mikä sopii pyörien kitkalle ja ilmanvastukselle. Matka on kuitenkin pitkä, joten energiasta muuttuu lämmöksi yli puolet: $5234\,\text{J} : 9123\,\text{J} \approx 0{,}57$.
+**Järkevyys:** Voima on noin $5\,\%$ laskijan painosta $608\,\text{N}$, mikä sopii pyörien kitkalle ja ilmanvastukselle. Matka on kuitenkin pitkä, joten energiasta muuttuu sisäenergiaksi yli puolet: $5234\,\text{J} : 9123\,\text{J} \approx 0{,}57$.
 
 ### c)
 **Annettu:** $m = 95\,\text{kg}$, $h = 15{,}0\,\text{m}$, $s = 180\,\text{m}$ ja b-kohdan vastusvoiman työ $F_\text{vast}\,s = 5234\,\text{J}$ ($F_\text{vast} \approx 29\,\text{N}$)

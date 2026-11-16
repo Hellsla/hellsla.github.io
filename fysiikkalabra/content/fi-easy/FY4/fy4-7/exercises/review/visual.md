@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 6cf55c759d13b049
+CONTENT-HASH: 55470c96d0b29545
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-7-L2-08 solution, Järkevyys — "Kasvu on siis kahdeksankertainen alkuarvoon nähden" is slightly confusing; say "Energia kasvaa $9{,}0\,\text{J} - 1{,}0\,\text{J} = 8{,}0\,\text{J}$, mikä on kahdeksankertainen alkuarvoon verrattuna."
-- [Minor] fy4-7/ep-kuvaaja — minor ticks every $5\,\text{J}$ are unlabelled, so reading $39\,\text{J}$ off the line is by eye; label every tick or mark the dashed reading lines.
-- [Minor] fy4-7/pallo-ek — the curve is orange, the project's acceleration colour; fine as energy only if the lesson already uses it for $E_\text{k}$.
+- [Minor] fy4-7-L2-10 task text — "Mittaukset tekevät liikenteen automaattiset mittausasemat (LAM-asemat)" is clumsy; "Mittaukset tehdään liikenteen automaattisilla mittausasemilla (LAM-asemilla)."
+- [Minor] fy4-7-L2-10 solution, Sijoitus — the long a)-paragraph and the d)-block are dense for S2 readers; a blank line between the 80 km/h and 100 km/h sentences already helps, parts could also start on their own line.
+- [Minor] no phone-width (390 px) capture of the open exercises exists in this packet; layout judged at 1280 px (664 px column).
 
 ## Checked
-- fy4-7-open-exercises-L2-1280-10 (10-17 task, E_k(v) graph, solution), -11 (end of its solution; 10-18 task, E_p(h) graph with two marked points, solution start), -12 (rest of solution with the check chains). Axes carry quantity and unit, ticks readable, LaTeX labels, solution order principle to substitution to answer to check clean, units upright. Old tasks not re-reviewed.
+- fy4-7-open-exercises-L2-1280-12 to -16: new task 10-19 with source link (underlined, readable), 4-column data table (fits, headers wrap, units upright), parts a)-c)/d)-e) separated, whole model solution (formula cards, Muunnokset, Sijoitus rows aligned, Vastaus, Järkevyys). Changed captions of old tasks (no "esimerkkiaineisto") only via source. No clipped formula, no red KaTeX, decimal comma and thin spaces consistent, "kitka" only.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

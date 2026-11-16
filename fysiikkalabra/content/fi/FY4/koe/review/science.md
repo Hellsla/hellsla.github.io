@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 570b93738d02c5c4
-Mode: delta (round 2, commit ccaa3b7: fy4-k3 c Vastaus and d Järkevyys)
+CONTENT-HASH: 9cc11d9de8effe6c
 
 ## Blocking
 
 ## Polish
-- fy4-k6 b Mallivastaus says the curve drops under the weight line "noin hetkestä $0{,}33\,\text{s}$". Linear interpolation of the table gives $0{,}34\,\text{s}$, and both fit "noin". Optional.
+- solutions.md (fy4-k7 b Järkevyys) — The figure draws a half sine (figures.py: `950 * sin(pi t / 9.0)`), so the exact area factor is $2/\pi = 0{,}637$. The area is then $5{,}44\,\text{m/s}$, which agrees with part a's $5{,}42\,\text{m/s}$. The rounded 0,64 gives 5,47, so "≈ 5,5, lähes sama" is honest as written. Optional fix: "noin $0{,}64$ (puolisinikaarelle $2/\pi$)".
 
 ## Checked
-- The round-1 Blocking item is fixed. fy4-k3 c now compares two decelerations: $5{,}0\,\text{m/s}^2$ is more than "suurin hidastuvuus $3{,}9\,\text{m/s}^2$, jonka lähtökitka voi laatikolle antaa" ($\mu_0 g$). The units now agree, and the term rule is followed.
-- fy4-k3 d Järkevyys now says "Liukukitka on pienempi kuin lähtökitka". This is a correct force comparison ($\mu N < \mu_0 N$), and it follows that the sliding crate's deceleration is smaller than $3{,}9\,\text{m/s}^2$.
-- The diff touches only these two lines in the exam files. tasks.json, answers.py and figures.py are unchanged, so every number recomputed in round 1 still holds. The rubrics and the points are unchanged.
-- No "liikekitka" is left in the exam. Lähtökitka is introduced in k1 f as "täysin kehittynyt lepokitka eli lähtökitka" and later called "lähtökitka".
-- The hash was identical at the start and the end.
+- Delta review (teacher 2026-11-16, economical): only the fy4-k7 b Järkevyys row was judged; the rest rests on my previous report (hash 570b93738d02c5c4, reflow carried in carry.tsv).
+- I recomputed it: $0{,}64 \cdot 950\,\text{m/s}^2 \cdot 0{,}0090\,\text{s} = 5{,}47\,\text{m/s} \approx 5{,}5\,\text{m/s}$. Part a: $\sqrt{2 \cdot 9{,}81 \cdot 1{,}50} = 5{,}42\,\text{m/s}$. "lähes sama" is now correct, where the old "≈ 5,4, sama" misreported the product.
+- The physics of the check is right: the area under the $(t, a)$ curve is the change in speed, and the head form stops without bouncing.
+- No answer, rubric criterion or point changed.
+- Content hash was the same at the start and at the end.
