@@ -307,6 +307,19 @@
       "answer": 53.3,
       "unit": "°C",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy3-8-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "text": "Aineisto: <a href=\"https://science.nasa.gov/earth/explore/earth-indicators/sea-leve/\" target=\"_blank\" rel=\"noopener\">NASA – Sea Level (Earth Indicator)</a> (luettu 16. marraskuuta 2026)\n\nSivun kuvaaja esittää satelliiteilla mitatun maailman merenpinnan keskimääräisen korkeuden muutoksen vuodesta 1993 alkaen. Sivu päivittyy jatkuvasti, joten kirjaa vastaukseesi päivä, jona luit kuvaajan, ja kuvaajasta lukemasi arvot.\n\na) Kuvaile merenpinnan keskimääräisen korkeuden muutosta mittausjakson aikana. Lue kuvaajasta ensimmäinen ja viimeisin mittauspiste (ajankohta ja korkeuden muutos) ja määritä niiden avulla keskimääräinen nousunopeus millimetreinä vuodessa.\n\nb) Selitä lämpölaajenemisen avulla, miksi meriveden lämpeneminen voi nostaa merenpintaa.\n\nc) Tarkastellaan yksinkertaistettua mallia, jossa $1000\\,\\text{m}$ korkea vesipatsas lämpenee tasaisesti $0{,}30\\,{}^\\circ\\text{C}$. Tilavuuden lämpötilakerroin on $\\gamma = 2{,}0 \\cdot 10^{-4}\\,\\tfrac{1}{\\text{K}}$, ja vesipatsaan poikkipinta-ala oletetaan vakioksi. Laske vesipatsaan korkeuden muutos.\n\nd) Arvioi, miksi tämän mallin avulla ei voida yksin selittää tai ennustaa koko maailman merenpinnan nousua. Käytä perusteluissa myös sitä, mitä lähde kertoo nousun syistä.\n\nVastauskenttään tulee kohdan c) tulos millimetreinä.",
+      "answer": 60,
+      "unit": "mm",
+      "tolerance": 0.03
     }
   ],
   "level3": [
