@@ -1,6 +1,11 @@
 ## Lesson plan (75 min)
 
-- **0–5 min, Think about it.** The tyre in a warm garage and after a night of frost. Pairs first estimate in words whether the gauge reading rises or falls and by how much. The answer is not given yet: it is at the end of the Key idea part of the Theory summary (total pressure $331\,\text{kPa} \cdot 253\,\text{K} : 293\,\text{K} \approx 286\,\text{kPa}$, gauge about $185\,\text{kPa}$). Ask who calculated with degrees Celsius or with the gauge reading alone: these are the two most important mistakes of the lesson.
+- **0–5 min, Think about it.** The tyre in a warm garage and after a night of frost. Pairs first estimate in words whether the gauge reading rises or falls and by how much. The answer is not given yet: it is at the end of the Key idea part of the Theory summary (total pressure $$
+\begin{aligned}
+&331\,\text{kPa} \cdot 253\,\text{K} : 293\,\text{K} \\
+&\approx 286\,\text{kPa}
+\end{aligned}
+$$, gauge about $185\,\text{kPa}$). Ask who calculated with degrees Celsius or with the gauge reading alone: these are the two most important mistakes of the lesson.
 - **5–15 min, Predict (diagnostic test).** Six questions alone, without notes. The students write the numbers of the questions they got wrong in their notebooks.
 - **15–25 min, Investigate.** The $(T, p)$ graph of the two containers in pairs: one reads a point and says it aloud, the other does the unit conversions. Discuss together: why the line of gas A is steeper and why the extensions pass through the origin.
 - **25–35 min, Theory summary.** Go through the recognition chart and ask for one example for each row. Return to Think about it with the tyre chart: the total pressure decreases by $14\,\%$, the gauge reading by $20\,\%$.

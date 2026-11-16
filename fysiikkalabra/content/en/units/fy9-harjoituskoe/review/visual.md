@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2cd498b57a53898c
-Delta review (reworded extra-answers sentence, en, 2026-11-14) of the version passed at 8781f82cc4cc2034.
+CONTENT-HASH: 1337704d94e9742e
 
 ## Blocking
-- none
+- None.
 
 ## Polish
-- none
+- None. Every lifted formula is fully visible at 360 px, relations aligned in one column, operators lead continuation rows, no lone symbol or unit, and the surrounding sentences read naturally.
 
 ## Checked
-- Source-level read of the changed sentence in the scoring paragraph: clear, natural English, $120$ p in LaTeX, no layout effect. The figure did not change in this unit; no captures needed.
+- batch delta review 5d: opened all 1 sheet(s) (reflow-1.png) at 360 px.

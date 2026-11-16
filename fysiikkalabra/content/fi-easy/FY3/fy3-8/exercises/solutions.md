@@ -87,7 +87,7 @@
 **Muunnokset:** $\Delta l = 3{,}0\,\text{mm} = 0{,}0030\,\text{m}$, jotta yksiköt supistuvat. Lämpötilan muutos on sama celsiusasteina ja kelvineinä. Tulos ilmoitetaan yksikössä $10^{-6}\,\tfrac{1}{\text{K}}$. Siksi kerroin $10^{-6}$ jätetään yksikköön.
 **Sijoitus:** $\alpha = \dfrac{0{,}0030\,\text{m}}{5{,}00\,\text{m} \cdot 50\,\text{K}} = \dfrac{0{,}0030}{250}\,\tfrac{1}{\text{K}} = 0{,}000012\,\tfrac{1}{\text{K}} = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$
 **Vastaus:** $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, joten palkki on terästä. Tuloksessa on kaksi merkitsevää numeroa, koska pituuden muutos $3{,}0\,\text{mm}$ on luettu kahdella numerolla. Arvot luetaan tarkasti ruudukosta, joten hyväksytään $11{,}6\ldots12{,}4$.
-**Järkevyys:** Yksiköt: $\dfrac{\text{m}}{\text{m} \cdot \text{K}} = \tfrac{1}{\text{K}}$. Vertailu taulukkoon: alumiinipalkki pitenisi $23 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 5{,}00\,\text{m} \cdot 50\,\text{K} = 5{,}75\,\text{mm}$. Kuparipalkki pitenisi $4{,}25\,\text{mm}$. Vain teräs antaa luetun arvon $3{,}0\,\text{mm}$. Millimetrin murto-osa metrien pituudella on tyypillistä metalleille.
+**Järkevyys:** Yksiköt: $\dfrac{\text{m}}{\text{m} \cdot \text{K}} = \tfrac{1}{\text{K}}$. Vertailu taulukkoon: alumiinipalkki pitenisi $23 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 5{,}00\,\text{m} \cdot 50\,\text{K} = 5{,}75\,\text{mm}$. Kuparipalkki pitenisi $4{,}25\,\text{mm}$. Vain teräs antaa luetun arvon $3{,}0\,\text{mm}$. Millimetrin murto-osa metriä kohti on tyypillistä metalleille.
 
 ## fy3-8-L2-08
 **Kysytty:** miten pituuden muutos $\Delta l$ muuttuu sauvasta A sauvaan B siirryttäessä

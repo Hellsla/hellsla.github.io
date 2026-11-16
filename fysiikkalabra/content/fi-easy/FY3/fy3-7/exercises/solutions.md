@@ -46,7 +46,7 @@
 **Kaava:** $Q = sm$, josta $s = \dfrac{Q}{m}$
 **Muunnokset:** Ei tarvita. Energia luetaan kilojouleina, ja vastaus pyydetään yksikössä $\tfrac{\text{kJ}}{\text{kg}}$.
 **Sijoitus:** $s = \dfrac{200\,\text{kJ}}{0{,}60\,\text{kg}} = 333\,\tfrac{\text{kJ}}{\text{kg}}$
-**Vastaus:** $333\,\tfrac{\text{kJ}}{\text{kg}}$, kolme merkitsevää numeroa. Arvot luetaan tarkasti ruudukosta, joten hyväksytään $323\ldots343\,\tfrac{\text{kJ}}{\text{kg}}$.
+**Vastaus:** $3{,}3 \cdot 10^{2}\,\tfrac{\text{kJ}}{\text{kg}}$, kaksi merkitsevää numeroa kuten massassa $0{,}60\,\text{kg}$ (laskettu $333\,\tfrac{\text{kJ}}{\text{kg}}$). Arvot luetaan tarkasti ruudukosta, joten hyväksytään $323\ldots343\,\tfrac{\text{kJ}}{\text{kg}}$.
 **Järkevyys:** Tulos on lähellä taulukon arvoa $334\,\tfrac{\text{kJ}}{\text{kg}}$. Sulamiseen kuluu $200\,\text{kJ}$. Jään lämmittämiseen ennen sulamista kului vain $20\,\text{kJ}$. Siksi vaakasuora osa on pitkä. Sulamisen jälkeen lämpötila nousee loivemmin, koska veden ominaislämpökapasiteetti on suurempi kuin jään.
 
 ## fy3-7-L2-01

@@ -51,7 +51,12 @@ The zero of the spring balance is also checked before the measurement, with the 
 ### b)
 **Find:** how the specific heat capacity is obtained from the $(t, T)$ graph
 **Principle:** When the losses are small, $P\,\Delta t = cm\,\Delta T$, so the temperature rises steadily and the $(t, T)$ graph is a straight line whose slope is $k = \tfrac{\Delta T}{\Delta t} = \tfrac{P}{cm}$.
-**Model answer:** I draw the $(t, T)$ graph: time on the horizontal axis and temperature on the vertical axis. At the beginning the points lie on a line, and I fit a straight line to them. I read the slope from two points of the line far apart. Then $c = \tfrac{P}{mk}$. For example, a slope of $0.125\,\text{K/s}$ would give $c = \tfrac{50\,\text{W}}{0.200\,\text{kg} \cdot 0.125\,\text{K/s}} = 2.0\,\text{kJ/(kg}\cdot\text{K)}$.
+**Model answer:** I draw the $(t, T)$ graph: time on the horizontal axis and temperature on the vertical axis. At the beginning the points lie on a line, and I fit a straight line to them. I read the slope from two points of the line far apart. Then $c = \tfrac{P}{mk}$. For example, a slope of $0.125\,\text{K/s}$ would give $$
+\begin{aligned}
+c &= \tfrac{50\,\text{W}}{0.200\,\text{kg} \cdot 0.125\,\text{K/s}} \\
+&= 2.0\,\text{kJ/(kg}\cdot\text{K)}
+\end{aligned}
+$$.
 
 I use the initial part of the graph, because when the oil becomes warmer than its surroundings, more and more heat is transferred to the surroundings and the graph curves and becomes less steep. Using the slope is better than a single initial and final reading, because all the points affect the result.
 
@@ -196,7 +201,9 @@ I drop the ball from, for example, five heights $0.5\text{–}3.0\,\text{m}$, th
 **Conversions:** None needed: the length is in metres and $T^2$ in $\text{s}^2$.
 **Substitution:** $k = \dfrac{4.12\,\text{s}^2 - 0.91\,\text{s}^2}{1.000\,\text{m} - 0.200\,\text{m}} = \dfrac{3.21\,\text{s}^2}{0.800\,\text{m}} = 4.013\,\text{s}^2/\text{m}$ and $g = \dfrac{4\pi^2}{4.013\,\text{s}^2/\text{m}} = 9.839\,\text{m/s}^2$
 **Answer:** $g \approx 9.8\,\text{m/s}^2$. Two significant figures, because the slope is read from the drawn line to a precision of about $\pm 0.1\,\text{s}^2/\text{m}$ (part d).
-**Reasonableness:** The result is close to the table value $9.81\,\text{m/s}^2$. Check: the period of a one-metre pendulum would be $2\pi\sqrt{1.0\,\text{m} : 9.8\,\text{m/s}^2} \approx 2.0\,\text{s}$, and the measured $T$ at $1.000\,\text{m}$ is $2.03\,\text{s}$, which fits, because the true length is slightly larger than the measured one.
+**Reasonableness:** The result is close to the table value $9.81\,\text{m/s}^2$. Check: the period of a one-metre pendulum would be $$
+2\pi\sqrt{1.0\,\text{m} : 9.8\,\text{m/s}^2} \approx 2.0\,\text{s}
+$$, and the measured $T$ at $1.000\,\text{m}$ is $2.03\,\text{s}$, which fits, because the true length is slightly larger than the measured one.
 
 ### c)
 **Given:** the line of part a, the slope $k = 4.013\,\text{s}^2/\text{m}$ of part b; the length was measured to the top of the ball
@@ -274,7 +281,12 @@ The uncertainty of the volume is reduced with a narrower measuring cylinder whos
 
 ### Hyväksytään myös
 - As the answer to part a, $2.7 \cdot 10^3\,\text{kg/m}^3$ or $2.68\,\text{g/cm}^3$, when the unit is correct.
-- In part b, the uncertainty can also be calculated from the relative uncertainties: $\tfrac{\Delta\rho}{\rho} \approx 0.05\,\% + 2.9\,\% \approx 2.9\,\%$, giving $\Delta\rho \approx 80\,\text{kg/m}^3$.
+- In part b, the uncertainty can also be calculated from the relative uncertainties: $$
+\begin{aligned}
+\tfrac{\Delta\rho}{\rho} &\approx 0.05\,\% + 2.9\,\% \\
+&\approx 2.9\,\%
+\end{aligned}
+$$, giving $\Delta\rho \approx 80\,\text{kg/m}^3$.
 
 ## fy9-kokeellisuus-s6
 
@@ -347,7 +359,14 @@ The assumption can be tested by drawing the $(v^2, s)$ graph. If the assumption 
 
 **Model answer:** The points are close to a straight line through the origin, so the assumption of constant deceleration is supported. The line is drawn through the origin, because at zero speed the braking distance is zero. The distant point $(60\,\text{m}^2/\text{s}^2;\ 7.2\,\text{m})$ is read from the line, so the slope is $k = \tfrac{7.2\,\text{m}}{60\,\text{m}^2/\text{s}^2} = 0.12\,\text{s}^2/\text{m}$. Since $s = \tfrac{1}{2a}\, v^2$, the slope is $k = \tfrac{1}{2a}$ and the deceleration is
 
-$a = \tfrac{1}{2k} = \tfrac{1}{2 \cdot 0.12\,\text{s}^2/\text{m}} = 4.167\,\text{m/s}^2 \approx 4.2\,\text{m/s}^2$,
+$$
+\begin{aligned}
+a &= \tfrac{1}{2k} \\
+&= \tfrac{1}{2 \cdot 0.12\,\text{s}^2/\text{m}} \\
+&= 4.167\,\text{m/s}^2 \\
+&\approx 4.2\,\text{m/s}^2
+\end{aligned}
+$$,
 
 two significant figures as in the braking distances and the slope.
 

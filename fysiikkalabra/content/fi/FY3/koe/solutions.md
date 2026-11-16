@@ -113,7 +113,7 @@ $\theta_0 = -\dfrac{58{,}0\,\text{mm}}{0{,}2125\,\tfrac{\text{mm}}{{}^\circ\text
 ### d)
 **Annettu:** jokainen lukema $2{,}0\,\text{mm}$ todellista suurempi; a-kohdan suoran kulmakerroin $k = 0{,}2125\,\tfrac{\text{mm}}{{}^\circ\text{C}}$
 **Kysytty:** toisen ryhmän tulos $\theta_0'$ ja virheen laji
-**Periaate:** Kun kaikkiin lukemiin lisätään sama $2{,}0\,\text{mm}$, suora siirtyy ylöspäin mutta sen kulmakerroin ei muutu. Pituus lämpötilassa $0\,{}^\circ\text{C}$ on silloin $58{,}0\,\text{mm} + 2{,}0\,\text{mm} = 60{,}0\,\text{mm}$.
+**Periaate:** Kun kaikkiin lukemiin lisätään sama $2{,}0\,\text{mm}$, suora siirtyy ylöspäin mutta sen kulmakerroin ei muutu. Pituus lämpötilassa $0\,{}^\circ\text{C}$ on silloin $$\begin{aligned} &58{,}0\,\text{mm} + 2{,}0\,\text{mm} \\ &= 60{,}0\,\text{mm} \end{aligned}$$.
 **Kaava:** $\theta_0' = -\dfrac{L_0'}{k}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $\theta_0' = -\dfrac{60{,}0\,\text{mm}}{0{,}2125\,\tfrac{\text{mm}}{{}^\circ\text{C}}} \approx -282\,{}^\circ\text{C}$
@@ -234,16 +234,16 @@ $\eta_\text{min} = \dfrac{922\,\text{kJ}}{0{,}044\,\text{kg} \cdot 46\,000\,\tfr
 **Periaate:** Syöty lumi lämpenee ja sulaa elimistön lämmöllä samoin kuin kattilassa, ja suurin energia kuluu sulamiseen.
 **Mallivastaus:** Kun lunta syödään, elimistö joutuu antamaan energian, joka lämmittää lumen nollaan asteeseen, sulattaa sen ja lämmittää syntyneen veden ruumiinlämpöön $37\,{}^\circ\text{C}$. Sulaminen vaatii näistä eniten energiaa, vaikka lumen lämpötila ei sulamisen aikana muutu. Puolen kilogramman lumimäärään kuluu energiaa kolmessa vaiheessa (jään ominaislämpökapasiteetti $2{,}09\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$, ominaissulamislämpö $333\,\tfrac{\text{kJ}}{\text{kg}}$, veden ominaislämpökapasiteetti $4{,}19\,\tfrac{\text{kJ}}{\text{kg} \cdot \text{K}}$):
 
-$Q_1 = 2{,}09 \cdot 0{,}50 \cdot 8{,}0\,\text{kJ} \approx 8\,\text{kJ}$
+$$\begin{aligned} Q_1 &= 2{,}09 \cdot 0{,}50 \cdot 8{,}0\,\text{kJ} \\ &\approx 8\,\text{kJ} \end{aligned}$$
 
 $Q_2 = 333 \cdot 0{,}50\,\text{kJ} \approx 167\,\text{kJ}$
 
-$Q_3 = 4{,}19 \cdot 0{,}50 \cdot 37\,\text{kJ} \approx 78\,\text{kJ}$
+$$\begin{aligned} Q_3 &= 4{,}19 \cdot 0{,}50 \cdot 37\,\text{kJ} \\ &\approx 78\,\text{kJ} \end{aligned}$$
 
 Yhteensä noin $250\,\text{kJ}$, eli noin puolet banaanin ravintoenergiasta. Pakkasessa keho tarvitsee energiansa pysyäkseen lämpimänä, joten lumen syöminen jäähdyttää kehoa ja altistaa paleltumiselle. Siksi lumi sulatetaan keittimellä.
 
 ### Yleisiä virheitä
-- Sulamislämpö unohdetaan, jolloin energia jää alle puoleen.
+- Kohdassa d sulamislämpö unohdetaan, jolloin energia jää noin kolmasosaan.
 - Lumen ja veden lämpeneminen lasketaan samalla ominaislämpökapasiteetilla.
 - Hyötysuhde lasketaan säiliön koko massasta eikä palaneesta kaasusta.
 - Kohdassa c erotuksen epävarmuudeksi otetaan vain yhden lukeman epävarmuus $1\,\text{g}$.
@@ -440,7 +440,7 @@ $P = (56 + 25 + 40)\,\tfrac{\text{W}}{\text{K}} \cdot 20\,\text{K} = 121\,\tfrac
 ### b)
 **Annettu:** $P = 2420\,\text{W}$, $t = 5100\,\text{h}$, ilmanvaihto ja käyttövesi $8{,}0\,\text{MWh}$, lämpökerroin $\varepsilon = 3{,}0$
 **Kysytty:** vuotuinen lämmöntarve $Q_1$ ja lämmityksen sähkönkulutus $W$ kahdella tavalla
-**Periaate:** Keskimääräinen teho kerrottuna ajalla on energia. Lämpöpumpun lämpökerroin on taloon annetun lämmön ja pumpun käyttämän sähköenergian osamäärä. Sähkövastus muuttaa sähköenergian kokonaan lämmöksi.
+**Periaate:** Keskimääräinen teho kerrottuna ajalla on energia. Lämpöpumpun lämpökerroin on taloon annetun lämmön ja pumpun käyttämän sähköenergian osamäärä. Sähkövastuksessa koko sähköenergia muuttuu vastuksen sisäenergiaksi, joka siirtyy lämpönä taloon.
 **Kaava:** $Q_1 = Pt + Q_\text{iv}$ ja $\varepsilon = \dfrac{Q_1}{W}$, joten $W = \dfrac{Q_1}{\varepsilon}$
 **Muunnokset:** $2420\,\text{W} \cdot 5100\,\text{h} = 12\,342\,000\,\text{Wh} \approx 12{,}3\,\text{MWh}$
 **Sijoitus:** $Q_1 = 12{,}3\,\text{MWh} + 8{,}0\,\text{MWh} \approx 20{,}3\,\text{MWh}$

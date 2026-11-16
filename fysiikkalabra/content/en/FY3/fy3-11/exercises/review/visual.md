@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 68419fe71066d43a
+CONTENT-HASH: ef7b4644ff709336
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy3-11 page, section #sovella (not an exercise): at 390 px a KaTeX span reaches x=431, so the page scrolls horizontally; fy3-15 has an SVG over 390 px wide. Neither is in the changed exercises; check separately.
+- none
 
 ## Checked
-fy3-11 L1-09, L2-09 (pv-isobaari figure), L2-04, L3-02 opened with solutions at 390 and 1280 px (en). P_a/P_o and Q_1 render cleanly; the graph is legible with axes and units.
+- Diff: one answer justification (three figures, final zero significant). Opened fy3-11-open-exercises-L2-1280-5 (the opened solution): reads clearly.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -75,6 +75,8 @@ jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md
 
 Varattu: claude/fy8-clipped-formulas (FY8)
 
+FY9 tehty (PR #611): 1001 riviä pois listalta; 84 jää (16 liian leveää yksittäistä `\dfrac`- tai `\sqrt`-kaavaa ja 12 sulkeiden, lainausmerkkien tai sijapäätteen sisällä olevaa kaavaa, jotka jäävät tekstin sisään).
+
 Kohdan 5b tarkistus löysi mainista noin 4 800 kaavaa, jotka leikkautuvat puhelimella (`docs/clipped-formulas.tsv`).
 Esimerkki: fy2-3, Esimerkki 2, jossa tekstin sisällä oleva $E = 1500 \cdot 3{,}0\,\text{kWh} = 4500\,\text{kWh}$
 näkyy 360 px:llä muodossa "4500 kW". Opettaja 2026-11-15:
@@ -302,6 +304,14 @@ Lisäksi 8m:ään (FY7-työntekijä #617, 15.11): P6:n nimi pois `docs/fy7/kaava
 fy7-8:n tekstin (test_kaavat.py vaatii täsmäävän tekstin); P1 jaetuissa käännöksissä: `lang/fi.json` ja `lang/fi-easy.json`
 fy7-8:n simulaation selite "johdossa lämmöksi muuttuva teho" → "johdossa sisäenergiaksi muuttuva teho" (en vastaavasti).
 
+## 8l-b. "Esimerkkiaineisto" myös ilman sulkeita pois otsikoista (opettaja 2026-11-16)
+
+Opettaja 16.11: "joo poistetaan". Kohta 8l (#607) poisti vain sulkeissa olevan merkinnän; noin 110 otsikkoa on muotoa
+"…, esimerkkiaineisto" tai "Esimerkkiaineisto: …" (fi, en "example data", fi-easy). Jaettu: `reviews.py`:n
+`caption-label`-luokka laajennetaan tunnistamaan nämäkin muodot (testit `test_reviews.py`:hin), ja merkintä poistetaan
+kaikista `exercises.json`-otsikoista. Tehdään kohdan 8m jälkeen, kun kohdan 18/19 kurssi-PR:t eivät ole kesken samoissa
+tiedostoissa, tai kurssi kerrallaan niiden mukana, jos luokka on jo mainissa.
+
 ## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
 
 FY7:n esimerkkikoe on valmis (#586); sen katselmointien Minor-huomioita ei korjattu siinä, ettei katselmoinnit vanhene.
@@ -462,6 +472,8 @@ Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitte
 
 ## 18. Oikoluvun korjaukset FY1–FY9 (opettaja 2026-11-15)
 
+Tehty: FY6 (PR #615). FY3 tehty: claude/oikoluku-fy3 (PR #613).
+
 Ohjeet ja päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md` kohdat 4–11 ja 13. Kaikki luvut, kurssi kerrallaan,
 ilman pilottipysähdystä (opettaja: "kaikki luvut vaan, ei ongelma jos tokeneita menee"); kulutus raportoidaan, mutta
 budjetti ei pysäytä työtä. Katselmointi on delta-katselmointi vain muuttuneista kohdista; jos `reviews.py scope` vaatii
@@ -474,6 +486,16 @@ Päätös (opettaja 2026-11-15): raja-arvotehtävien tarkistus hyväksyy jatkoss
 (esim. fy6-16 L2-05: 10,4 ja 10,5 kW), eikä yksipuolista tarkistusta tehdä. P7c koskee vain mallivastauksen pyöristystä.
 FY1 tehty: claude/fy1-oikoluku (PR #614).
 Varattu: claude/fy4-oikoluku-aineisto (FY4; samassa PR:ssä kohdan 19 tehtävät FY4-A1…A5, opettaja 16.11: PR:t yhdistetään).
+
+## 19. 45 soveltavaa aineistotehtävää FY1–FY9 (opettaja 2026-11-16)
+
+Toimeksianto sanatarkasti: `docs/audits/2026-11-16-aineistotehtavat.md` (viisi tehtävää per kurssi, tunnisteet FY1-A1 …
+FY9-A5, lähdelinkit tarkistetaan, malliratkaisut, kolme kieltä). Tehtävät lisätään nykyiseen tehtävärakenteeseen sopivan
+luvun soveltaviksi (taso 2–3, `kind` aineisto), FY9:ssä kertauskokonaisuuteen tai yksiköihin. Lähteiden palvelimet ovat
+ympäristön sallituissa (16.11).
+PR:ien yhdistäminen (opettaja 2026-11-16: "jos saat yhdisteltyä PR niin tee, jos vaarana että homma sotkeutuu älä tee"):
+kohta 19 tehdään samassa PR:ssä saman kurssin vielä aloittamattoman työn kanssa (FY4, FY5, FY9 ja FY2: kohta 18; FY3, FY6
+ja FY7: kohta 5d), ei koskaan jo katselmoitavana olevaan PR:ään; FY1 ja FY8 omana PR:nään kurssin nykyisen PR:n jälkeen.
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 

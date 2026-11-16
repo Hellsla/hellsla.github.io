@@ -1,19 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: eb87ee7962362258
-SCOPE: delta added-exercise from 23beb0210afaa772 base 89bcb63b7431
+CONTENT-HASH: b84b000bd30022fa
 
 ## Blocking
 
 ## Polish
-- exercises/exercises.json (fy3-5-L2-08) — uses the same figure `fy3-5/piston-force` as L2-01, whose first step is exactly this work (60 J); physically right, but L2-08 repeats half of L2-01. Optional: place it before L2-01 as its lead-in, or use different end points.
-- exercises/solutions.md (fy3-5-L1-10, Vastaus) — $8{,}37 + 3{,}0 = 11{,}4\,\text{kJ}$; by the addition rule one decimal would be kept, and 11 kJ lies 3,3 % from the stored 11,37 (inside tolerance 0,04, so not blocking). Optional: answer $11\,\text{kJ}$ with "kahden merkitsevän numeron tarkkuudella" or $11{,}4\,\text{kJ}$.
+- exercises.json:157 (fy3-5-L1-10) — the stored answer is 11,3736 kJ (five figures), but the solution's Vastaus is $11\,\text{kJ}$ (2 s.f.). Consider storing 11.4 or 11. The ±4 % tolerance still holds around either.
+- exercises.json:262 (fy3-5-L2-07) — the stored answer is 50,4 J, but the Vastaus says $50\,\text{J}$ with two significant figures. Make them agree. The mean 4,20 N arguably carries three figures, so 50,4 J with that reason is also defensible.
 
 ## Checked
-- MAFY value verified on mafytaulukot.fi (*Yksikkömuunnoksia*): $1\,\text{cal} = 4{,}1868\,\text{J}$, as the solution uses.
-- L1-10 recomputed: $Q = 2000 \cdot 4{,}1868\,\text{J} = 8{,}374\,\text{kJ}$, $\Delta U = Q + W = 11{,}37\,\text{kJ}$; answers.py agrees; with 4,184 J/cal 11,37 kJ too.
-- L1-10 signs: heat into the system and work done on it, both positive, as the brief's convention; conversion kcal → cal → J shown; check (1 kcal ≈ 4,2 kJ) real.
-- L2-08 recomputed from the figure code: line (0; 200 N) → (0,20 m; 400 N), on grid crossings (0,05 m, 50 N); trapezoid area $W = 60\,\text{J}$; $Q = 0$ stated in the task ("niin nopeasti, ettei lämpöä ehdi siirtyä"), so $\Delta U = W = 60\,\text{J}$; answers.py agrees.
-- L2-08 sign: piston (surroundings) does work on the air, $W > 0$; solution states why; symbolic $W = \frac{F_1+F_2}{2}s$ before numbers.
-- Figure description gives end points only, no area or work.
-- Both within FY3 (first law, work as (s,F) area); no second law or $pV$ work needed.
-- Rest of the set unchanged since PASS; hash same at start and end.
+- I recomputed all 20 numeric answers in one script, and every one matches. ΔU = Q + W with the lesson's signs (W > 0 for work done on the system) is applied consistently in every task, answers.py and every solution.
+- Guardrails:
+  - "Same temperature, same internal energy" is used only where the task states an ideal gas (L3-01, L3-03, L3-04 c).
+  - Heat is never "in" a body: L1-06 option 4 and L1-09 statement 5 are wrong on purpose, and their feedback is right.
+  - L2-07 adds the reason that heat flows to the air, so Q < 0.
+- L3-04 data is plausible. An adiabatic fit gives F(0,20 m) = 160 N with a gas column of about 0,35 m, and the isothermal work over the same stroke is about 14,7 J, consistent with the given 14,0 J.
+- L3-04 trapezoid rule: 0,04 m · 468 N = 18,72 J. L3-05 losses: 8,1 / 16,3 / 26,1 / 34,8 kJ, so 14,5 % and 2,00 kW.
+- L2-05 cycle: ΣQ = 130 J and ΣW = −40 J, so W₄ = −90 J. The reasoning that "the state returns, so ΔU = 0" is right.
+- The figure piston-force has both end points on grid crossings, and its description gives them without the work. L2-01 and L2-08 both get W = 60 J from it.
+- L1-06, L1-07 (one correct option each) and the true/false statements of L1-09 are right, and so is their feedback.
+- L2-03 explains why the answer has one significant figure. L2-02 and L2-04 justify their rounding from the subtraction.
+- Every solution is symbolic first, then substituted with units, with real balance checks.

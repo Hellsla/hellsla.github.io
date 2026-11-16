@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9abc5f49d6a2185e
-Mode: delta
-Round: 2
+CONTENT-HASH: 6afbe5a6243e4487
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+- [Minor] exercises.json L3-03 and L2-05 — the changed texts were read in the diff; captures of L3-03 and L2-05 were not opened.
 
 ## Checked
-- fy3-16-open-exercises-1280-9 (L1-09 task: situation then question, Vihje, answer row, solution top) and -10 (Periaate/Järkevyys with keittolevy wording, KaTeX chain). Rewording reads fluently and consistently.
+- Delta (L2-01 and L3-03 "Pyöristä vastaus ylöspäin", answer 1,7 / 1,6 with tolerance 0,06, rounding explanations, sisäenergia wording): open-exercises-L2-1280-1 and -2 (task 16-10: new sentence, answer 1,7 kg, explanation of rounding up, järkevyys; layout intact).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

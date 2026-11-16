@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cd1b14955e148aa1
-Review of the recognition chart (queue 9c) and the term change against the version passed at da59d2b57a4936df; full on the chart, delta on the rest.
+CONTENT-HASH: 4c76165121cfa165
 
 ## Blocking
-(none)
+- none. Lifted formulas legible and fully visible at 360 px; relations aligned, operators lead continuation rows, no lone bracket, quote or case ending around a lifted formula.
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Chart at 360 px (fy9-tunnistus/fy9-magnetismi-valo-fi-easy-360.png): every row's sign, arrow label and pill read in full, no clipped or overlapping label, white on #1a4d2e legible, pill style matches the other units, KaTeX subscripts and \overline vectors render.
-- ARIA_KARTTA/figures.json aria-label is Finnish and lists every row of the chart.
-- Friction terms: no liikekitka left in the unit's fi-easy texts.
+- batch delta review 5d round 2: reflow-1.png 

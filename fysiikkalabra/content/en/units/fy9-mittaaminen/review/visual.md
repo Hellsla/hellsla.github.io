@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 0515c57783055e3f
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (0d1a744ac444e23f).
+CONTENT-HASH: cfbe0b4488ab5bfc
 
 ## Blocking
-(none)
+- None.
 
 ## Polish
-(none)
+- None. Every lifted formula is fully visible at 360 px, relations aligned in one column, operators lead continuation rows, no lone symbol or unit, and the surrounding sentences read naturally.
 
 ## Checked
-- Opened fy9-mittaaminen-en-360.png (every row, pill and header read; no overlap except as noted), and read the changed aria-label/figures.json entry and the diff against the chart; the diff's other lines (teacher.md rows wording, unit.md sign wording, line break fix) read in full.
-- Round-1 finding(s) of my role re-checked: unchanged rest holds.
+- batch delta review 5d: opened all 2 sheet(s) (reflow-1.png, reflow-2.png) at 360 px.

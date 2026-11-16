@@ -456,7 +456,13 @@ Mittauspisteisiin sovitetaan suora tai toisen asteen polynomi $x = A\,t^2 + B\,t
 - **Negatiivinen kiihtyvyys luetaan aina hidastumiseksi.** Vauhti pienenee vain silloin, kun kiihtyvyys ja nopeus ovat vastakkaissuuntaiset.
 - **Lakipisteessä kiihtyvyys on nolla.** Lakipiste on radan korkein kohta. Siinä nopeus on hetken nolla, mutta kiihtyvyys on yhä $g$ alaspäin.
 - **$(t,v)$-kuvaajien leikkauspiste luetaan kohtaamiseksi.** Leikkauspisteessä nopeudet ovat yhtä suuret. Kohtaamisessa paikat ovat yhtä suuret.
-- **Yksiköt sekaisin.** Muunna yksiköt ennen sijoitusta. Sijoita myös yksiköt: $72\,\text{km/h} = \dfrac{72 \cdot 1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$.
+- **Yksiköt sekaisin.** Muunna yksiköt ennen sijoitusta. Sijoita myös yksiköt: $$
+\begin{aligned}
+&72\,\text{km/h} \\
+&= \dfrac{72 \cdot 1000\,\text{m}}{3600\,\text{s}} \\
+&= 20\,\text{m/s}
+\end{aligned}
+$$.
 
 ## Kertaa tarvittaessa {Kertaa}
 

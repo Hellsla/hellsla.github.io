@@ -213,7 +213,7 @@
         },
         {
           "text": "The transmission voltage is not across the line; first calculate the current $I = \\tfrac{P}{U}$.",
-          "feedback": "Correct. $I = \\tfrac{50 \\cdot 10^6\\,\\text{W}}{110 \\cdot 10^3\\,\\text{V}} \\approx 455\\,\\text{A}$ and $P_\\text{h} = RI^2 = 4.0\\,\\Omega \\cdot (455\\,\\text{A})^2 \\approx 830\\,\\text{kW}$, about $1.7\\,\\%$ of the transmitted power.",
+          "feedback": "Correct. $I = \\tfrac{50 \\cdot 10^6\\,\\text{W}}{110 \\cdot 10^3\\,\\text{V}} \\approx 455\\,\\text{A}$ and $$\n\\begin{aligned}\nP_\\text{h} &= RI^2 \\\\\n&= 4.0\\,\\Omega \\cdot (455\\,\\text{A})^2 \\\\\n&\\approx 830\\,\\text{kW}\n\\end{aligned}\n$$, about $1.7\\,\\%$ of the transmitted power.",
           "correct": true
         },
         {
