@@ -256,7 +256,7 @@
         "error",
         "concept"
       ],
-      "text": "A student solves a problem: “A metal rod of length $0.30\\,\\text{m}$ moves at a speed of $2.0\\,\\text{m/s}$ in a uniform magnetic field of $0.50\\,\\text{T}$. The rod is perpendicular to the field but moves in the direction of the field.”\n\nThe student calculates $$\\begin{aligned} e &= vBl \\\\ &= 2.0\\,\\text{m/s} \\cdot 0.50\\,\\text{T} \\cdot 0.30\\,\\text{m} \\\\ &= 0.30\\,\\text{V} \\end{aligned}$$ and states that a voltage of $0.30\\,\\text{V}$ appears between the ends of the rod.\n\nWhat is wrong in the calculation?",
+      "text": "A student solves a problem: “A metal rod of length $0.30\\,\\text{m}$ moves at a speed of $2.0\\,\\text{m/s}$ in a uniform magnetic field of $0.50\\,\\text{T}$. The rod is perpendicular to the field but moves in the direction of the field.”\n\nThe student calculates $e = vBl = 2.0\\,\\text{m/s} \\cdot 0.50\\,\\text{T} \\cdot 0.30\\,\\text{m} = 0.30\\,\\text{V}$ and states that a voltage of $0.30\\,\\text{V}$ appears between the ends of the rod.\n\nWhat is wrong in the calculation?",
       "answer": "The velocity is in the direction of the field, so the magnetic force on the electrons is zero.",
       "unit": "",
       "tolerance": 0.02,

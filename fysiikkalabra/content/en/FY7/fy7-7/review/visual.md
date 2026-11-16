@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 06e94ded07fe1195
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: b632dc17661a8ebd
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] 1280 px, conclusion in the lab column (358 px box): `NBA · 2π = 500 · 0.20 T · 0.0020 m² · 2π` ends 3 px from the border; keep the left side on its own row there as on the phone.
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Round-1 blocker fixed: paragraph split at "The $230\,\text{V}$ of a wall socket is an rms value"; both halves under the limit; resistive-load wording unchanged.
-- Hash identical at start and end of this round.
+- batch delta review: queue 5d reflow. The standard set has no phone captures of opened states, so every re-broken formula (5 rendered blocks) was captured from the built page (preview/en/fy7-7.html, the build of the shots stamp) at 390 px and 1280 px with every box, hint, solution and choice feedback forced open, and each capture was read; box overflow measured at 360, 375, 390, 412 and 1280 px: none clipped or scrolled. Row starts checked against the 5d rule; wide-screen joining (join_wide) seen at 1280 px. Figures and the formula-name / teacher-figure categories were not re-judged.

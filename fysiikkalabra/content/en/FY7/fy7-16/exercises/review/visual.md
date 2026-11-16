@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9c560683833c7d8b
+CONTENT-HASH: dc104577ff4758ad
 
 ## Blocking
 
 ## Polish
-- [Minor] fy7-16/charger-points — the "receiver coil" leader in the right panel ends at the phone's upper edge, not at the coil in its base; extend it a little lower.
 
 ## Checked
-- Delta: redrawn fy7-16/charger-points in task 16-17 (fy7-16-open-exercises-L2-1280-11, -12, full size): labels sit outside the phone and the counted lines (6 and 4 are readable), no white box over the receiver coil; solution chain and the added current condition clean.
-- Changed task 16-18 with graph and solution (L2-1280-12, -13, -14): $70\,\text{km}$ beyond the graph's end is said so in the solution; 0.78 % consistent in chip, substitution and Reasonableness. Rest not re-reviewed.
+- Delta (queue 5d reflow). Hash identical at the end.
+- Method: the packet's inventory has no phone capture of the exercises, so the reviewer captured each changed solution step from the current preview page (preview/en) at 390 px and at 1280 px, every solution open, and opened them at full size. check_layout.py at 360 and 390 px (open state): no clipped formula on this page.
+- 390 and 1280 px: 16-L2-01 (57), L2-04 (87), L3-01 (99), L3-02 (107), L3-05 (218), and the whole solution of 16-L3-04 (208: the interpolation, + row with its fraction). The e_0 products break before a whole quantity (never between a number and its power of ten or unit) and join to one row wide; nothing clipped.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4

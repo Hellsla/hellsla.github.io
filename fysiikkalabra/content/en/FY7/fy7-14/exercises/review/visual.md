@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9868eb67be62fa26
+CONTENT-HASH: 5455ffb1558123e0
 
 ## Blocking
 
-## Outside this change (queue item 5d, not blocking here)
-- [Major] docs/clipped-formulas.tsv lists 1 of this set's solution formulas as clipped at 360 px with the solutions open — old, untouched by this change; fix under queue item 5d.
-
 ## Polish
-- [Minor] 14-20 Answer (L3-1280-6) — the c) reasoning sits in one long paragraph after the precision remark (untouched text) — start c) as its own paragraph.
+- [Minor] solutions.md:64 fy7-14-L1-07 Reasonableness — the opening bracket is left alone at the end of a line ("for the same wavelength (" and the formula on the next line), at 390 and at 1280 px, because the inline formula does not wrap — drop the brackets: "... for the same wavelength, $570\,\text{nm} : (4 \cdot 1.33) = 107\,\text{nm}$, because ...".
 
 ## Checked
-- Delta: task 14-22 (fy7-14-L3-05), the marker for example data removed from the task text.
-- fy7-14-open-exercises-L3-1280-6 (14-22 heading row, situation paragraphs and the changed sentence: it reads as a complete sentence, inline maths on one line, no orphaned parenthesis or double space; the end of the 14-20 solution above it intact).
-- fy7-14-open-exercises-L3-1280-7 (parts b and c, the data table with its caption, answer row, opened answer and the start of the solution: inside the card, no overflow or clipping, the layout unchanged).
-- Not opened: other captures (outside the delta).
+- Delta (queue 5d reflow). Hash identical at the end.
+- Method: the packet's inventory has no phone capture of the exercises, so the reviewer captured each changed solution step from the current preview page (preview/en) at 390 px and at 1280 px, every solution open, and opened them at full size. check_layout.py at 360 and 390 px (open state): no clipped formula on this page.
+- The content changed during the review (hash b90956e74ff40fe4 at the start; commit 7e4ba8466f put the bracketed formula of line 64 back inline); captures retaken, review redone for the hash above.
+- 390 and 1280 px: 14-L1-07 (64), L2-02 (108), L2-03 (118), L2-07 (160), L3-01 (181). Two rows on a phone, one row wide; colon division with its bracket whole; nothing clipped.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 4 · Finnish 5 · accessibility 4

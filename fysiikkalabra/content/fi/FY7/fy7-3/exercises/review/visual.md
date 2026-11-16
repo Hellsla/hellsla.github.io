@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 74e9158eec247049
-SCOPE: delta added-exercise from 604fb8a46a880f01 base 8f23aa7ae3bd
+CONTENT-HASH: cf2338df95a049df
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 3-18 (fy7-3/wire-graph-task) — dashed guides still drawn to all three points though only r = 2,0 cm is asked (earlier note stands).
+- [Minor] 3-18 (fy7-3/wire-graph-task) — dashed guides to all three points (earlier note stands).
 
 ## Checked
-- Delta (degree sign {}^\circ to ^\circ in the probe-angle choice task and the compass task and solutions): fy7-3-open-exercises-L2-1280 parts 12 and 13 (3-17 end, 3-18 graph and solution, full size). The compass and probe-tilt tasks themselves were read from the source diff; the new degree form is plain KaTeX ^\circ with no stray spacing risk.
+- Delta (reflow): Järkevyys of the 800 A line task, Perustelu kohtaan d) (322 µT ≈ 320 µT), the tight single-layer coil check (B = µ0 I : d_e, four rows), the stretched coil B1 and B2 blocks, and the Tarkistus of the N = 497 coil.
+- Own captures of these opened solutions from the current preview at 390 px, read at full size; formula overflow measured at 360, 390 and 1280 px: none.
+- Rows start with a relation or a colon between whole quantities; no number parted from its power of ten or unit. Hash identical at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

@@ -1,23 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 4d73a243c59b4c6d
+CONTENT-HASH: 11a4ad33d8e17ede
 
 ## Blocking
 
-## Outside this change (queue item 5d, not blocking here)
-- [Major] fy7-15 solutions at 360 px — the clipped formulas listed for this language in docs/clipped-formulas.tsv — old, outside this change; fix under 5d.
-
 ## Polish
-- [Minor] exercises.json / solutions.md fy7-15-L2-09 — "transmission direction" here, "transmission axis" in 15-16 and 15-17 — use one term ("transmission axis").
-- [Minor] solutions.md fy7-15-L2-09 — "the reflection passes again" is terse — "the reflection passes through the filter again".
-- [Minor] 15-17 at 1280 px — the data table is narrow and its caption wraps to four rows (old, not part of this change).
+- [Minor] solutions.md:153–157 fy7-15-L1-09 Model answer — $I_\text{A}$ and $I_\text{C}$ are inline and $I_\text{B}$, $I_\text{D}$ display blocks in one list of five; correct, a little uneven.
 
 ## Checked
-- Delta review. Hash identical at start and end.
-- open-exercises-L2-1280-11: the new core task 15-20 (fy7-15-L2-09) with answer and solution open at 1280 px: Core badge, text, green answer panel and Kysytty/Periaate/Mallivastaus panels inside the card, nothing clipped, no empty column.
-- The same card at 390 px, closed and with the solution open, captured by the reviewer from the preview page (the packet's inventory has no phone capture of the exercises): heading row wraps cleanly, locked solution in view, no horizontal overflow (page width 390 px).
-- L2-05 and L2-06 after the "example data" sentence was removed (15-17 at 1280 px; 15-16 read in the diff only): text, table and answer row intact.
-- "Extension task." starts: 15-17 at 1280 px (reviewer's capture): shown as the badge only, the text starts with the situation, no duplicate.
-- Task 15-20 and its model answer read: clear English, situation first and the question as its own paragraph, $90^\circ$ in LaTeX, no plain quantities.
+- Delta (queue 5d reflow). Hash identical at the end.
+- Method: the packet's inventory has no phone capture of the exercises, so the reviewer captured each changed solution step from the current preview page (preview/en) at 390 px and at 1280 px, every solution open, and opened them at full size. check_layout.py at 360 and 390 px (open state): no clipped formula on this page.
+- 390 and 1280 px: 15-L3-01 Substitution and Reasonableness (97, 99), L3-03 (117), L3-04 (210), L1-10 (235), and the whole solution of 15-L1-09 (153, 157). Rows start with a relation, + or a \cdot between whole quantities; W/m² and lx whole; one row wide where it fits.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4
