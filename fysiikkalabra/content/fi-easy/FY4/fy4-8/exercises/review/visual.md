@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 48755276a8bb5c0f
+CONTENT-HASH: 9eaa6f05c461b162
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] exercises.json (tile fy4-8 #3) — a lone full stop on its own line after the lifted formula; move it into the formula's last row.
+None.
 
 ## Checked
-- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.
+- Delta (md-paragraphs in solutions.md): read the diff and judged from fi-easy fy4-7 open-exercises-1280 part 8 (same layout). Breaks fall between complete thoughts, spacing even, nothing clipped. Words unchanged. Hash re-run: unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

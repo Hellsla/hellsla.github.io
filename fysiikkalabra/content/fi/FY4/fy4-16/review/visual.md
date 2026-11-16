@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2523f6bbafb83cbf
+CONTENT-HASH: ec0ed11f20549bca
 
 ## Blocking
+(none)
 
 ## Polish
-- none
+- [Minor] worked example stage 8: last paragraph is dense and breaks as "x-/suunnassa" before a display; a paragraph break before "Sama tulos saadaan liikeyhtälöllä" would read better.
 
 ## Checked
-batch delta review: inquiry.json retrieval question (prompt, options, feedback) and lesson-answers.py read from the diff; LaTeX units, decimal commas and Finnish checked; no figure or layout change in the diff.
+- batch delta review: opened example-390 captures (fi, fy4-16); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

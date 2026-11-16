@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6bcc38cd66cd1680
+CONTENT-HASH: 5c5b0067f55400de
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] inquiry.json Kertaa yläkoulusta, option $0\,\text{km/h}$ feedback: "sovelluksen lukemaa" refers to the tracking app of the Pohdinta text, not named in the question; say "seurantasovelluksen lukemaa".
+(none)
 
 ## Checked
-batch delta review: fy4-1-sim-390.png opened (layout intact); retrieval question diff read.
+- batch delta review: opened example-390 captures (fi, fy4-1); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

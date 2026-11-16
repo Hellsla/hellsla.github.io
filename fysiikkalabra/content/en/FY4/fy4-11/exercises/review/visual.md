@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 99586a00d29216c5
+CONTENT-HASH: d0c156727d09b659
 
 ## Blocking
+None.
 
 ## Polish
-- None.
+None.
 
 ## Checked
-- batch delta review: opened contact sheets en-390-16 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.
+- open-exercises captures of fy4-9 (fi) at 1280 px as the common layout sample; this part's 156 diff lines read in full: every new break falls at a sentence or step boundary, one thing per paragraph, no formula or list cut apart. Blocks reflow in the same card style as the sampled captures (even spacing, no clipping).
+- Delta only (md-paragraphs in solutions.md); hash unchanged at start and end.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

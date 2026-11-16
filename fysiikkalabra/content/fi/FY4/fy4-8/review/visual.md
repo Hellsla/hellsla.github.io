@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e9917b100af9ca15
+CONTENT-HASH: c920adc7df5c85a6
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+(none)
 
 ## Checked
-- batch delta review: re-broken chains in lesson.md/inquiry.json (reflow only); opened fi-390-09, fi-390-10 (390 px only); rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
+- batch delta review: opened example-390 captures (fi, fy4-8); paragraph breaks in the stages read well, asked quantity on its own line, nothing clipped, spacing even.

@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 40eb23c26e6a8220
+CONTENT-HASH: 958a1f411d53a767
 
 ## Blocking
+None.
 
 ## Polish
-- [Minor] solutions.md:176 (tile fy4-9 #13) — the leading sign in `&-1{,}50` is set with binary spacing ("− 1,50 m/s"); write `&{-}1{,}50`.
+None.
 
 ## Checked
-- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.
+- open-exercises captures of fy4-9 (fi) at 1280 px as the common layout sample; this part's 57 diff lines read in full: every new break falls at a sentence or step boundary, one thing per paragraph, no formula or list cut apart. Blocks reflow in the same card style as the sampled captures (even spacing, no clipping).
+- Delta only (md-paragraphs in solutions.md); hash unchanged at start and end.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

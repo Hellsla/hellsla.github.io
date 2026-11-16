@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6883832d77a3c13b
+CONTENT-HASH: c4260198e2153c66
 
 ## Blocking
 None.
@@ -8,4 +8,8 @@ None.
 None.
 
 ## Checked
-- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-17, fi-390-18, fi-390-19 (390 px only); rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
+- open-exercises captures of fy4-9 (fi) at 1280 px as the common layout sample; this part's 33 diff lines read in full: every new break falls at a sentence or step boundary, one thing per paragraph, no formula or list cut apart. Blocks reflow in the same card style as the sampled captures (even spacing, no clipping).
+- Delta only (md-paragraphs in solutions.md); hash unchanged at start and end.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

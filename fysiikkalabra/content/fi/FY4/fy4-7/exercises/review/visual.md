@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: dc35c3a94a42dce0
+CONTENT-HASH: dcfcf10f1aae9990
 
 ## Blocking
 None.
@@ -8,4 +8,7 @@ None.
 None.
 
 ## Checked
-- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-08, fi-390-09 and fi-1280-06; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
+- Delta (md-paragraphs in solutions.md): read the diff (L1-08, L1-09, L2-09, L2-10 splits) and judged from the open-exercises-1280 captures of the same layout (fi fy4-5 parts 8-9). One thought per paragraph, even spacing, nothing clipped. Words unchanged. Hash re-run: unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

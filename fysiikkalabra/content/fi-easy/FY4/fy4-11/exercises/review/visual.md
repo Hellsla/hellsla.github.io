@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d10be0270f6e0a88
+CONTENT-HASH: 771c38ec8f26c28d
 
 ## Blocking
+None.
 
 ## Polish
+None.
 
 ## Checked
-- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.
+- open-exercises captures of fy4-9 (fi) at 1280 px as the common layout sample; this part's 71 diff lines read in full: every new break falls at a sentence or step boundary, one thing per paragraph, no formula or list cut apart. Blocks reflow in the same card style as the sampled captures (even spacing, no clipping).
+- Delta only (md-paragraphs in solutions.md); hash unchanged at start and end.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

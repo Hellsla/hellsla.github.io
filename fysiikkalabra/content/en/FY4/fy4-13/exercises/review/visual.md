@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0c45fa0eea2ab7a0
+CONTENT-HASH: c019e4c04f7d624a
 
 ## Blocking
+None.
 
 ## Polish
-- None.
+None.
 
 ## Checked
-- batch delta review: opened contact sheets en-390-19, en-390-20 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.
+- Delta (md-paragraphs, solutions.md, six hunks). Judged from the diff and from the shared rendering opened for fi fy4-13 and en fy4-16 (paragraph breaks inside Model answer and Reasonableness read cleanly, even spacing, nothing clipped). The en fy4-13 captures themselves were not opened.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

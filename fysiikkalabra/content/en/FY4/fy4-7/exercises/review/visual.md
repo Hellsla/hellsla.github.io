@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 904c4d5b55a00de2
+CONTENT-HASH: 7757653e106c92be
 
 ## Blocking
+None.
 
 ## Polish
-- None.
+None.
 
 ## Checked
-- batch delta review: opened contact sheets en-390-08, en-390-09 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.
+- Delta (md-paragraphs in solutions.md): read the diff and judged from en open-exercises-1280 captures of the same layout (en fy4-5 part 8, en fy4-6 L3 part 2). Breaks fall between complete thoughts, spacing even, nothing clipped. Words unchanged. Hash re-run: unchanged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 (English) · accessibility 5
