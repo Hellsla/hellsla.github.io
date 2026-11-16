@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e85cee056b40ed1a
+CONTENT-HASH: 93df1d1ca5a6e03f
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
+- [Minor] Pohdinta "kertaus", feedback of the correct option and of the last wrong option: at 390 px the inline chain $Q_2 = Q_1 - W = 800\,\text{MJ} - 280\,\text{MJ} = 520\,\text{MJ}$ is clipped at the right edge ("280 M"); the result 520 MJ is lost there but stays in the option text and in the other feedbacks. Known entry in docs/clipped-formulas.tsv, unchanged from before this work; a display or two-row form would be better once the automated test allows it.
 
 ## Checked
-- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.
+- Delta round 2: rendered preview (fi-easy) at 390 and 1280 px with all four feedbacks of the "kertaus" choice shown. 1280 px: all formulas whole, inline form reads cleanly. 390 px: no page overflow (scrollWidth 390); the two inline chains clip as described; the other feedbacks (wrong first option, display form of the second) are intact. Rest of the lesson unchanged by this delta.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4
