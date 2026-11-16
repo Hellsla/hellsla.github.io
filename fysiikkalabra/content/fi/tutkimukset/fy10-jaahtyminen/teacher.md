@@ -5,7 +5,7 @@
 - Lämpötilan kuvaajaan sovitetaan suora tai murtoviiva, eikä huomata, että jäähtyminen hidastuu lämpötilaeron pienentyessä.
 - Logaritmi otetaan lämpötilasta $T$ eikä lämpötilaerosta $T - T_\text{huone}$, tai lämpötila muutetaan kelvineiksi ennen logaritmia. Lämpötilaero on sama kummassakin yksikössä, mutta lämpötila itse ei.
 - Huoneen lämpötila jätetään mittaamatta tai mitataan kuuman astian vierestä. Systemaattinen virhe lukemassa $T_\text{huone}$ taivuttaa logaritmikuvaajaa juuri mittauksen lopussa, mikä tulkitaan helposti mallin pettämiseksi.
-- Lämpötilaan $T$ sovitetaan eksponenttifunktio $A\cdot e^{-Bt}$ ilman vakiotermiä. Käyrä lähestyy silloin lämpötilaa $0\ {}^\circ\text{C}$ eikä huoneen lämpötilaa, ja vakio $B$ on väärä. Oikein sovitetaan $A\cdot e^{-Bt} + C$ lämpötilaan tai $A\cdot e^{-Bt}$ lämpötilaeroon $T - T_\text{huone}$.
+- Lämpötilaan $T$ sovitetaan eksponenttifunktio $A\cdot e^{-Bt}$ ilman vakiotermiä. Käyrä lähestyy silloin lämpötilaa $0\,{}^\circ\text{C}$ eikä huoneen lämpötilaa, ja vakio $B$ on väärä. Oikein sovitetaan $A\cdot e^{-Bt} + C$ lämpötilaan tai $A\cdot e^{-Bt}$ lämpötilaeroon $T - T_\text{huone}$.
 - Mittaus lopetetaan liian aikaisin, jolloin kaareva alku näyttää lähes suoralta eikä mallia voi testata.
 - Alun nopea lämpötilan lasku, kun vesi lämmittää astiaa ja anturia, otetaan mukaan sovitukseen.
 - Anturi koskettaa astian pohjaa tai seinää tai on aivan vedenpinnassa, jolloin se ei mittaa veden keskimääräistä lämpötilaa.

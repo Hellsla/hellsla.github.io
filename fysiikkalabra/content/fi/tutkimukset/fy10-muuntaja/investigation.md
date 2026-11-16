@@ -165,7 +165,7 @@ Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.
 
 **Muuntajan rakenne.** Muuntajassa on kaksi käämiä yhteisen rautasydämen ympärillä. **Ensiökäämi** kytketään vaihtojännitelähteeseen ja **toisiokäämi** kuormaan, esimerkiksi vastukseen. Käämit eivät ole sähköisesti yhteydessä toisiinsa: energia siirtyy niiden välillä magneettikentän välityksellä. Käämin kierrosluku $N$ kertoo, kuinka monta kertaa johdin kiertää sydämen ympäri.
 
-**Induktio lyhyesti.** Kun ensiökäämissä kulkee vaihtovirta, se synnyttää rautasydämeen magneettikentän, jonka suuruus ja suunta muuttuvat jatkuvasti. Rautasydän ohjaa kentän kulkemaan myös toisiokäämin läpi. Kierroksen läpi kulkevaa magneettikentän "määrää" kutsutaan **magneettivuoksi**. Kun magneettivuo muuttuu, johdinkierrokseen syntyy eli **indusoituu** jännite, joka on sitä suurempi, mitä nopeammin vuo muuttuu. Käämin kierrokset ovat peräkkäin eli sarjassa, joten niiden jännitteet laskevat yhteen. Sama tapahtuu myös ensiökäämissä itsessään: sen omiin kierroksiin indusoituva jännite vastustaa sähkövirran muutosta. Tasajännitteellä muuntaja ei toimi, koska muuttumaton magneettikenttä ei indusoi jännitettä. Induktiota ja muuntajaa käsitellään tarkemmin moduulissa FY7.
+**Induktio lyhyesti.** Kun ensiökäämissä kulkee vaihtovirta, se synnyttää rautasydämeen magneettikentän, jonka suuruus ja suunta muuttuvat jatkuvasti. Rautasydän ohjaa kentän kulkemaan myös toisiokäämin läpi. Kierroksen läpi kulkevaa magneettikentän ”määrää” kutsutaan **magneettivuoksi**. Kun magneettivuo muuttuu, johdinkierrokseen syntyy eli **indusoituu** jännite, joka on sitä suurempi, mitä nopeammin vuo muuttuu. Käämin kierrokset ovat peräkkäin eli sarjassa, joten niiden jännitteet laskevat yhteen. Sama tapahtuu myös ensiökäämissä itsessään: sen omiin kierroksiin indusoituva jännite vastustaa sähkövirran muutosta. Tasajännitteellä muuntaja ei toimi, koska muuttumaton magneettikenttä ei indusoi jännitettä. Induktiota ja muuntajaa käsitellään tarkemmin moduulissa FY7.
 
 **Ideaalinen muuntaja** on malli, jossa
 
@@ -177,7 +177,7 @@ Todellinen muuntaja ei täytä näitä ehtoja täsmälleen. Tässä työssä sel
 
 **Vaihtojännite ja tehollinen arvo.** Vaihtojännite ja vaihtovirta muuttavat suuntaansa ja suuruuttaan jatkuvasti. Vaihtosuureiden mittari näyttää **tehollisen arvon**: se on valittu niin, että vastuksen keskimääräinen teho on $P = UI$, kun $U$ ja $I$ ovat tehollisia arvoja. Kytke siis yleismittari vaihtojännitteen ja vaihtovirran asetukselle.
 
-**Sähköteho ja hyötysuhde.** Vastuksen teho on sen napojen välisen jännitteen ja vastuksen läpi kulkevan sähkövirran tulo, $P = UI$. Sama pätee muihinkin laitteisiin silloin, kun jännite ja sähkövirta vaihtelevat samassa tahdissa. Jännitteen yksikkö on voltti ($\text{V}$), sähkövirran ampeeri ($\text{A}$) ja tehon watti: $1\ \text{V} \cdot 1\ \text{A} = 1\ \text{W}$. Sähkötehoa käsitellään tarkemmin moduulissa FY6. [[apua:fy2-3|Teho]] Muuntajan **hyötysuhde** on toisiopuolelta saatavan tehon $P_2$ ja ensiöpuolelle tuodun tehon $P_1$ suhde:
+**Sähköteho ja hyötysuhde.** Vastuksen teho on sen napojen välisen jännitteen ja vastuksen läpi kulkevan sähkövirran tulo, $P = UI$. Sama pätee muihinkin laitteisiin silloin, kun jännite ja sähkövirta vaihtelevat samassa tahdissa. Jännitteen yksikkö on voltti ($\text{V}$), sähkövirran ampeeri ($\text{A}$) ja tehon watti: $1\,\text{V} \cdot 1\,\text{A} = 1\,\text{W}$. Sähkötehoa käsitellään tarkemmin moduulissa FY6. [[apua:fy2-3|Teho]] Muuntajan **hyötysuhde** on toisiopuolelta saatavan tehon $P_2$ ja ensiöpuolelle tuodun tehon $P_1$ suhde:
 
 ```latex
 \eta = \frac{P_2}{P_1}
@@ -403,7 +403,7 @@ Pohdi sitten luotettavuutta konkreettisesti: mitkä olivat suurimmat epävarmuud
 
 ## Johtopäätökset
 
-Vastaa tutkimuskysymykseen mittaustesi perusteella. Viittaa kuvaajaan, esimerkiksi "kuvaajasta 1 nähdään, että …", ja vastaa ainakin näihin:
+Vastaa tutkimuskysymykseen mittaustesi perusteella. Viittaa kuvaajaan, esimerkiksi ”kuvaajasta 1 nähdään, että …”, ja vastaa ainakin näihin:
 
 - Kuinka hyvin ideaalisen muuntajan malli kuvaa mittauksiasi? Mikä mallin ehdoista täyttyi todennäköisesti huonoiten, ja mihin mittaustulokseen perustat päätelmäsi?
 - Mistä muuntajan energiahäviöt johtuvat? Perustele sillä, mitä mittasit, esimerkiksi hyötysuhteella ja toisiojännitteen muutoksella kuormitettaessa.

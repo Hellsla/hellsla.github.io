@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8f2df44039f25f3e
+CONTENT-HASH: ae3715dbf7697f9f
 
 ## Blocking
 
@@ -9,6 +9,7 @@ None.
 
 None.
 
-## Checked (delta 2026-11-13)
+## Checked (delta 2026-11-16)
 
-Diff read: the "vakiotermi" label is off the line, a dot marks the intercept on the T^2 axis, a leader joins it to the label; the figure now says what the term is, no answer disclosed. Text unchanged.
+- Read the diff against origin/main in context. The "Miksi juuri nämä akselit?" box is split into three paragraphs (axes choice, alternative axes, close-coiled spring offset). All content kept; the box is easier to read.
+- Nothing a student needs was lost and no instruction became unclear; no figure changed.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 14aa4c1c63c79a34
+CONTENT-HASH: 345f81b9645c72ee
 
 ## Blocking
 (none)
@@ -11,11 +11,9 @@ CONTENT-HASH: 14aa4c1c63c79a34
 - [Minor] fig pulse (fig-9-390) — the second pulse is deeper and narrower, and the figure does not say it is schematic — add "kaavakuva" to the aria-label or a caption; for science: confirm the areas of the two pulses are drawn as the text claims.
 - [Minor] fig-1/top-390 — the hero shows the laptop screen blank and the coil leads cross the second coil; harmless, optional.
 
-## Checked
-- contact-1.png (the whole page at 390 px) for triage.
-- fig-1-390 (hero), fig-3-390 (flux), fig-6-390 (setup), fig-9-390 (pulse), opened at readable size; the stray 28 px and 57 px captures are KaTeX fragments, not figures.
-- page-390-9 (Mittaa/Käsittele, tuki boxes, inline maths) and page-1280-4 (theory, flux figure, display formula).
-- Not opened separately: open-ennusta-1280 and the tables at 390 px (seen only on the contact sheet, wrapping without overflow).
+## Checked (delta 2026-11-16)
+- Changed: Finnish quotes ”…”, 'mittari näyttää käytännössä indusoituneen jännitteen'. Opened page-1280-4 (the reworded paragraph reads fluently, nothing clipped). Quotes in the quote passages are in the same text parts; typographic quotes render.
+- Delta of text and typography only; no figure changed (figure findings above are the teacher's redraw queue, not Blocking).
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

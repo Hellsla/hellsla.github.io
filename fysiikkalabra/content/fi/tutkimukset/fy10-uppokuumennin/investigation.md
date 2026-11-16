@@ -117,7 +117,7 @@ missä $Q$ on veden saama lämpö ja $E$ kuumentimeen tuotu sähköenergia. Hyö
 P = UI
 ```
 
-Jännitteen yksikkö on voltti ($\text{V}$), sähkövirran ampeeri ($\text{A}$) ja tehon watti: $1\ \text{V} \cdot 1\ \text{A} = 1\ \text{W} = 1\ \text{J/s}$. Sähkötehoa käsitellään tarkemmin moduulissa FY6. Teho kertoo, kuinka paljon energiaa siirtyy sekunnissa, joten kun jännite ja sähkövirta pysyvät vakioina, ajassa $t$ kuumentimeen tuotu sähköenergia on
+Jännitteen yksikkö on voltti ($\text{V}$), sähkövirran ampeeri ($\text{A}$) ja tehon watti: $1\,\text{V} \cdot 1\,\text{A} = 1\,\text{W} = 1\,\text{J/s}$. Sähkötehoa käsitellään tarkemmin moduulissa FY6. Teho kertoo, kuinka paljon energiaa siirtyy sekunnissa, joten kun jännite ja sähkövirta pysyvät vakioina, ajassa $t$ kuumentimeen tuotu sähköenergia on
 
 ```latex
 E = Pt = UIt
@@ -237,7 +237,7 @@ Kummankin mallin ehto on, että hyötysuhde pysyy vakiona. Se ei ole itsestään
 Ennen mittaamista päätä ja kirjaa ylös, mitä mittaat, kuinka usein, mitä pidät vakiona ja kuinka pitkään lämmität.
 
 ::: tuki O
-**Ohjattu.** Punnitse kalorimetrin sisäastia tyhjänä ja vedellä täytettynä: erotus on veden massa $m$. Veden on peitettävä kuumentimen kierukka kokonaan. Mittaa veden alkulämpötila $T_0$, kytke virta ja käynnistä ajanotto samalla hetkellä. Kirjaa jännite $U$, sähkövirta $I$ ja veden lämpötila $T$ esimerkiksi puolen minuutin välein, ja sekoita vettä koko ajan. Lämmitä, kunnes lämpötila on noussut noin $15\ ^\circ\text{C}$, ja katkaise sitten virta. Pidä sähkövirta opettajan ilmoittaman rajan alapuolella.
+**Ohjattu.** Punnitse kalorimetrin sisäastia tyhjänä ja vedellä täytettynä: erotus on veden massa $m$. Veden on peitettävä kuumentimen kierukka kokonaan. Mittaa veden alkulämpötila $T_0$, kytke virta ja käynnistä ajanotto samalla hetkellä. Kirjaa jännite $U$, sähkövirta $I$ ja veden lämpötila $T$ esimerkiksi puolen minuutin välein, ja sekoita vettä koko ajan. Lämmitä, kunnes lämpötila on noussut noin $15\,{}^\circ\text{C}$, ja katkaise sitten virta. Pidä sähkövirta opettajan ilmoittaman rajan alapuolella.
 :::
 
 ::: tuki OO

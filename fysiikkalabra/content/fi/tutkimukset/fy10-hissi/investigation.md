@@ -151,7 +151,7 @@ Ennen mittaamista päätä ja kirjaa ylös, miten mittaat kiihtyvyyden, miten m�
 Tallenna jokaisesta hissimatkasta kiihtyvyysdata CSV-tiedostoksi, jonka voit avata Graphical Analysis Prossa. Kirjaa jokaisesta matkasta ylös lähtö- ja tulokerros, suunta ja puhelimen asento. Mittaa todellinen matka ja kirjaa myös, kuinka tarkasti sen sait selville. [[apua:fy1-3|Mittausepävarmuuden arvioiminen]]
 
 ::: tuki OO
-**Vihjeitä mittaukseen.** Selvitä ennen hissimatkaa, kumpaan suuntaan anturin pystysuora akseli osoittaa: nosta puhelinta pöydältä nopeasti ylöspäin ja katso, kasvaako vai pieneneekö pystyakselin etumerkillinen lukema (ei pelkkä lukeman suuruus). Tarkista myös lukemien yksikkö: jos lukema on levossa noin $1{,}00$, sovellus näyttää kiihtyvyyden putoamiskiihtyvyyden $g$ kerrannaisina, ja lukemat muutetaan yksikköön $\text{m/s}^2$ kertomalla ne luvulla $9{,}81\ \text{m/s}^2$. Pidä puhelin koko mittauksen ajan samassa asennossa, koska kallistuminen muuttaa lukemaa. Seiso paikallasi, äläkä koske puhelimeen matkan aikana. Jos sovellus antaa valita, mittaa kaikki akselit: pystyakselin lisäksi niistä näkee, onko puhelin kallistunut.
+**Vihjeitä mittaukseen.** Selvitä ennen hissimatkaa, kumpaan suuntaan anturin pystysuora akseli osoittaa: nosta puhelinta pöydältä nopeasti ylöspäin ja katso, kasvaako vai pieneneekö pystyakselin etumerkillinen lukema (ei pelkkä lukeman suuruus). Tarkista myös lukemien yksikkö: jos lukema on levossa noin $1{,}00$ ilman yksikköä, sovellus näyttää kiihtyvyyden putoamiskiihtyvyyden $g$ kerrannaisina, ja lukemat muutetaan yksikköön $\text{m/s}^2$ kertomalla ne luvulla $9{,}81\,\text{m/s}^2$. Pidä puhelin koko mittauksen ajan samassa asennossa, koska kallistuminen muuttaa lukemaa. Seiso paikallasi, äläkä koske puhelimeen matkan aikana. Jos sovellus antaa valita, mittaa kaikki akselit: pystyakselin lisäksi niistä näkee, onko puhelin kallistunut.
 :::
 
 ## Käsittele tulokset
@@ -271,7 +271,7 @@ Tee laskenta Graphical Analysis Pro -ohjelmassa laskettuina sarakkeina. Ruukkila
 
 ## Epävarmuus ja luotettavuus
 
-Ilmoita hissin kulkema matka muodossa $s = (s \pm \Delta s)\ \text{m}$ ja perustele, miten arvioit epävarmuuden $\Delta s$. Ilmoita myös todellinen matka epävarmuuksineen ja vertaa tuloksia: mahtuvatko ne toistensa epävarmuusväleihin?
+Ilmoita hissin kulkema matka muodossa $s = (s \pm \Delta s)\,\text{m}$ ja perustele, miten arvioit epävarmuuden $\Delta s$. Ilmoita myös todellinen matka epävarmuuksineen ja vertaa tuloksia: mahtuvatko ne toistensa epävarmuusväleihin?
 
 Pohdi lisäksi, miksi pieni virhe kiihtyvyydessä voi kasvaa suureksi virheeksi matkassa.
 
@@ -325,7 +325,7 @@ Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kai
 - **Tausta ja teoria:** miten nopeus ja matka saadaan kuvaajien pinta-aloina ja mitä anturi näyttää levossa.
 - **Koejärjestely ja menetelmä:** puhelimen asento ja akseli, miten määritit anturin nollakohdan ja miten selvitit todellisen matkan.
 - **Mittaustulokset ja käsittely:** kiihtyvyys, nopeus ja matka allekkain samalla aika-akselilla ja liikkeen vaiheet merkittyinä, sekä laskennan periaate.
-- **Tulos:** $s = (s \pm \Delta s)\ \text{m}$ oikein pyöristettynä ja vertailu todelliseen matkaan.
+- **Tulos:** $s = (s \pm \Delta s)\,\text{m}$ oikein pyöristettynä ja vertailu todelliseen matkaan.
 - **Luotettavuus:** konkreettiset epävarmuuden lähteet, loppunopeuden merkitys ja virheiden vaikutuksen suunta.
 
 ## Laajennus: nollakohdan virheen korjaus
