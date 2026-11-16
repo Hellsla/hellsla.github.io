@@ -61,7 +61,7 @@
 **Muunnokset:** Ei tarvita: aallonpituus ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $d = \dfrac{570\,\text{nm}}{4 \cdot 1{,}47} = 96{,}94\,\text{nm}$
 **Vastaus:** $96{,}9\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}47$ ja aallonpituus $570\,\text{nm}$.
-**Järkevyys:** Tarkistus: matkaero on $2 \cdot 1{,}47 \cdot 96{,}94\,\text{nm} = 285\,\text{nm} = \tfrac{1}{2} \cdot 570\,\text{nm}$. Kalvo on ohuempi kuin saippuakalvo samalle aallonpituudelle ($570\,\text{nm} : (4 \cdot 1{,}33) = 107\,\text{nm}$), koska öljyn taitekerroin on suurempi ja aallonpituus öljyssä siksi lyhyempi.
+**Järkevyys:** Tarkistus: matkaero on $2 \cdot 1{,}47 \cdot 96{,}94\,\text{nm} = 285\,\text{nm} = \tfrac{1}{2} \cdot 570\,\text{nm}$. Kalvo on ohuempi kuin saippuakalvo samalle aallonpituudelle ($570\,\text{nm} : (4 \cdot 1{,}33)$ $= 107\,\text{nm}$), koska öljyn taitekerroin on suurempi ja aallonpituus öljyssä siksi lyhyempi.
 
 ## fy7-14-L1-08
 **Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, paksuus $d = 300\,\text{nm}$, aallonpituus ilmassa $\lambda = 532\,\text{nm}$, kohtisuora tulo

@@ -268,7 +268,7 @@
       "id": "fy7-7-L2-07",
       "level": 2,
       "core": true,
-      "text": "Oppilas ratkaisi tehtävän seuraavasti: ”Hehkulampun teho on $60\\,\\text{W}$, ja se on kytketty verkkojännitteeseen $230\\,\\text{V}$. Jännite on huippuarvo, joten tehollinen arvo on $230\\,\\text{V} : \\sqrt{2} = 163\\,\\text{V}$. Virta on $I = P : U = 60\\,\\text{W} : 163\\,\\text{V} = 0{,}37\\,\\text{A}$.”\n\na) Etsi oppilaan ratkaisun virhe ja perustele, miksi se on virhe.\n\nb) Laske lampun virran tehollinen arvo oikein.\n\nVastauskenttään kirjataan b-kohdan tulos.",
+      "text": "Oppilas ratkaisi tehtävän seuraavasti: ”Hehkulampun teho on $60\\,\\text{W}$, ja se on kytketty verkkojännitteeseen $230\\,\\text{V}$. Jännite on huippuarvo, joten tehollinen arvo on $230\\,\\text{V} : \\sqrt{2} = 163\\,\\text{V}$. Virta on $I = P : U$ $= 60\\,\\text{W} : 163\\,\\text{V}$ $= 0{,}37\\,\\text{A}$.”\n\na) Etsi oppilaan ratkaisun virhe ja perustele, miksi se on virhe.\n\nb) Laske lampun virran tehollinen arvo oikein.\n\nVastauskenttään kirjataan b-kohdan tulos.",
       "kind": [
         "error"
       ],
