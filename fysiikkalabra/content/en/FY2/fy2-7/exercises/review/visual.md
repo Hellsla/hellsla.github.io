@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 0860705a0ff03a76
-SCOPE: delta reflow from f1594abe34d25f92 base b5600a63ddae
+CONTENT-HASH: 6b068c241229c40a
+SCOPE: delta answers,levels,numbers,structure,typography,wording from 0860705a0ff03a76 base 5c8385912ba3
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] 7-L2-10 solution — the substitution shows b) first, then a) and d) in one running paragraph with boxes between; order the parts a, b, d.
 
 ## Checked
-- Opened reflow-exercises-1 to -3.png (390 px, solutions open) of fy2-7: every re-broken block.
-- Rows legible, equals signs in one column, nothing clipped, units upright with thin spaces, decimal point, no red KaTeX source; the text before and after each display reads naturally. Other captures not opened (the diff touches only chains).
+- Delta review. Opened fy2-7-open-exercises-L2-1280-13, -14, -15: new exercise 7-L2-10 table (11 rows, no clipping), solution rows aligned, answer box. Fingrid link visible with target=_blank rel=noopener and the access date in words; the table caption gives the reading time. Removed '(example data set)' captions checked in source.
+- Hash at start and end: 6b068c241229c40a.
 
 ## Scores
-illustrations n/a · typography 4 · English 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

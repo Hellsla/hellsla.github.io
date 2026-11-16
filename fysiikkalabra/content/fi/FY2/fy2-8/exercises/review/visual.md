@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 07cb2e86c0676217
-SCOPE: delta reflow from 8b6a553933284aed base b5600a63ddae
+CONTENT-HASH: 848b37994704cca1
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] reflow-exercises-1, fy2-8: the m_1 − m_2 chain takes seven rows (unit factors on their own rows); legible, optional tightening.
+- [Minor] fy2-8-L2-10/L2-11 Johtopäätös — a), d), e) run together in one block; separate paragraphs would read better.
+- [Minor] fy2-8-L2-11 table — 'noin 2590' wraps to two lines in a narrow cell; write 'ca 2590' or widen.
+- [Minor] fy2-8-L2-11 text — straight quotes around Tänään; use Finnish quotes ”Tänään”.
 
 ## Checked
-- Delta: opened reflow-exercises-1.png and reflow-exercises-2.png (390 px, solutions open), every re-broken block and its surrounding sentence.
-- Rows legible, nothing clipped, equals signs in one column, units upright with thin spaces, no red KaTeX source; the round-1 stray punctuation is gone (the student's quoted calculation is inline again, as on main). Figures, simulation and other captures not re-judged (unchanged); 360 px from the packet's check only.
+Delta: opened fy2-8-open-exercises-L2-1280-12.png, -14.png, -15.png (L2-10 table, L2-11 table and solution, Johtopäätös). Links target=_blank rel=noopener with read dates; decimal commas, units upright, nothing clipped. L3-06 read in the diff only.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

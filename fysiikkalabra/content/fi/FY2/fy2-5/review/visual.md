@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 0fd4ff2d9a758eb1
+CONTENT-HASH: ebe800111c50a61e
 
 ## Blocking
+- none
 
 ## Polish
-
+- none
 
 ## Checked
-batch delta review: opened the reflow captures (rows legible, no clipping, equals signs aligned, punctuation inside the last row) and the changed figure captures where the diff touches figures; no problem blocking publication.
+Delta: lesson.md Kosteus-paragraph (16{,}2 MJ/kg, MAFY source; LaTeX, fluent). Opened fy2-5-fig-row-1280.png to see the layout around the unchanged figure. Teacher-approved figures not re-judged.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
