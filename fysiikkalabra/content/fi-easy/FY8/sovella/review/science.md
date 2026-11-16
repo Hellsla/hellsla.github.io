@@ -1,22 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: cf73b6eb91e31ba3
+CONTENT-HASH: fdfef8c5d164e6f2
 
 ## Blocking
 None.
 
 ## Polish
-- fy8-s2 d: $1790\,\text{W}$ has three figures, while b) says the power has two and $t = 14\,\text{a}$ has two. Justify three or give $1800\,\text{W}$ (inside the tolerance).
-- fy8-s2 b, Vastaus: the figures are justified by the fuel mass, which is not used for $m$; the limiting datum is the power.
-- fy8-s3 d: the "valmistajan mukaan" dose rate $3{,}0\,\mu\text{Sv/h}$ is not covered by the source note (only the pulse counts are). Realistic magnitude (about 0,4 MBq Cs-137); name it an example value in the note.
-- fy8-s3 a, criterion `conclusion`: "Todennäköisin syy on …" asks more than the task; the solution says "Esimerkiksi". Accept any justified cause.
-- fy8-s5 text: "loput $99{,}274\,\%$": the shares sum to 99,994 % (U-234).
-- fy8-s4 text states "suhde muuttui vain, kun vapaat neutronit hajosivat" as fact; d) expects it named as an assumption.
+- fy8-s3 d (rubric `conclusion`, solution): "the tube can no longer distinguish it from the variation of the background" is borderline at $36\,\text{cm}$ (net $22 \pm 8\,\tfrac{1}{\text{min}}$ in one minute, about $2.7\sigma$); "hard to distinguish with a short count" would be safer (carried from round 1).
+- fy8-s3 d: $36\,\text{cm}$ is an extrapolation beyond the measured $2$–$20\,\text{cm}$; one clause would say so (round 1).
+- fy8-s3 d (rubric `calculation`): the dose scaling uses $r$, not $r + d$ ($0.23$ versus $0.27\,\mu\text{Sv/h}$); both round to "about $0.2$–$0.3$", so accept either.
 
 ## Checked
-- Hash identical at start and end. Every number recomputed from the task data in my own script: all agree with solutions.md, answers.py, rubric details and tasks.json answers within tolerance.
-- s1: 2,223 and 1,968 eV match level differences; third line 295,9 nm (UV); 1193 excitations; Si limit 1107 nm; 1500 nm is 0,827 eV. Collisional quenching against lifetimes is the real mechanism; intensity versus photon energy correct.
-- s2: Δm 0,006005 u, Q 5,594 MeV; A 2,232·10^15 Bq, m 3,52 kg, share 83 %; Po-210 0,160; U-238 ratio 5,1·10^7; 1791 W, 98,5 W; dose chain to 0,566 mSv, alternative 0,56 mSv.
-- s3: background 22,4 1/min, all net rates, $Rr^2$, $R^{-1/2}$; least-squares d 1,31 cm, read line k 5,63·10^-3, K 3,15·10^4; uncertainties 14 %, 1,8 %, 6 %; r 36,2 cm, 0,23 µSv/h (dose rightly uses r; alternative 0,27). Figures' data and marked points agree; data declared model-made.
-- s4: 0,782 MeV; decay equation, d → u, weak interaction; p/n 7,16; 135 s + 1 s; 1 : 5 gives 271 s; T½ 608,9 s from 878,4 s.
-- s5: factors 7,165 and 1,364, share 3,67 %; moderator and void feedback correct; 3,49 a; 4,73·10^17 J, 5,8 t; 82 988 half-lives; Pu-239 → U-235.
-- Scope inside FY8 central contents, no later-course physics. Points add up (15, 20, 17, 16, 16); criteria match tasks and solutions; "Hyväksytään myös" lists valid alternatives; level figure to scale.
+- Hash fdfef8c5d164e6f2 at start and end; `practice.py check` OK (5 tasks, 84 points).
+- Round-2 diff against the version passed in round 1, normalised (aligned rows, `\\`, `&`, `$$` removed): the seven re-broken chains in solutions.md (s1 a, s2, s3, s5 and others) carry the same numbers, signs and units in the same order (category reflow). Content changes are four, all in tasks.json: s2 text constants split into two formulas ($1\,\text{u} = 931.5\,\text{MeV}/c^2$ and $1\,\text{u} = 1.66054 \cdot 10^{-27}\,\text{kg}$), values unchanged; s3 d criterion "$\approx$" reworded; s4 a criterion 4 now asks only "the weak interaction", which is exactly what the task asks (the $W^-$ mediator, not asked, stays in the solution only, correctly); s5 d criterion 4 now asks a justified evaluation (what Oklo supports, what it does not show, that Onkalo's safety rests on studies of its own conditions and barriers), which matches the task's "evaluate the claim" and the solution's *Evaluation* and *What safety is based on* paragraphs. Points per part unchanged.
+- One own script recomputed every answer from the task data: s1 ($2.22$, $1.97\,\text{eV}$, $296\,\text{nm}$, $1193$, $1107\,\text{nm}$, $0.83\,\text{eV}$), s2 ($0.006005\,\text{u}$, $5.59\,\text{MeV}$, $2.23 \cdot 10^{15}\,\text{Bq}$, $3.52\,\text{kg}$, $83\,\%$, $1790\,\text{W}$, $98\,\text{W}$, $0.16$, $5 \cdot 10^{7}$, $0.566\,\text{mSv}$), s3 (own fit $d = 1.31\,\text{cm}$, $36.3\,\text{cm}$, $14\,\%$, $2\,\%$, $6\,\%$), s4 ($0.782\,\text{MeV}$, $7.16$, $0.8575$, $135\,\text{s}$), s5 ($3.67\,\%$, $83\,000$ half-lives). All agree with solutions, rubrics and answers.py.
+- Physics, scope and guardrails as in round 1; nothing new outside FY8.
