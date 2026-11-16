@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 88cc39fef4d4cd2a
+CONTENT-HASH: 0dd97b80b772b1e9
 SCOPE: delta answers,levels,numbers,reflow,structure,typography,wording from 69af52f6f77a83ff base bf67392
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Delta: added fy8-13-L2-09 (two STUK reports) and removal of "(esimerkkiaineisto)" from four table captions (judged from the diff; the captions read cleanly without it).
-- Captures fy8-13-open-exercises-L2-1280-12 and -13: Annettu to Järkevyys. Labelled b)/c) chains aligned, `\dot{H}` and units render well, percentage and answer box clean, no clipping; Finnish clear, reading of the report kept apart from the model's own reasoning.
+- Delta (round 3): only the Mallivastaus d) line of fy8-13-L2-09 (inline chain split into two adjacent formulas) in solutions.md. Opened the 1280 px level-2 open-solution captures (parts 11-13, fi) around 13-17, the 0,88 mSv chain at the end.
+- The two formulas read as one continuous line with a normal space, same weight and spacing as neighbouring maths, equals sign intact, numbers, signs and units unchanged; surrounding layout (Vastaus, Järkevyys boxes) survived. 360 px clipping: the packet's layout 360 px check is ok; no 360 px capture of this line exists, so wrapping is taken from that check.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5b4cdf65b9dd2961
+CONTENT-HASH: 75be1fcbd4cc4475
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy8-13-L2-09 solution, Given — begins "your own reading from the reports." in lower case after the label; the sentence continues the label oddly — "Your own reading from the reports: according to …".
-- [Minor] fy8-13-L2-09 solution, Substitution — parts b) and c) are separated only by "b)" and "c)" labels, with "c)" falling at the top of a new card; use "Part b):" and "Part c):" like the other solutions.
+- none
 
 ## Checked
-- Captures fy8-13-open-exercises-L2-1280-12 and -13 (end of task 13-… text d), answer box in mSv, whole solution incl. $\dot{H}$ rows, conversions, shares, model answers a and d, answer, reasonableness). Units upright with thin space, decimal point, no clipping. Delta: added exercise and caption wording only; no 390 px capture of exercises exists.
+- Delta (round 3): only the Mallivastaus d) line of fy8-13-L2-09 (inline chain split into two adjacent formulas) in solutions.md. Opened the 1280 px level-2 open-solution captures (parts 11-13, en) around 13-17, the 0,88 mSv chain at the end.
+- The two formulas read as one continuous line with a normal space, same weight and spacing as neighbouring maths, equals sign intact, numbers, signs and units unchanged; surrounding layout (Vastaus, Järkevyys boxes) survived. 360 px clipping: the packet's layout 360 px check is ok; no 360 px capture of this line exists, so wrapping is taken from that check.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
