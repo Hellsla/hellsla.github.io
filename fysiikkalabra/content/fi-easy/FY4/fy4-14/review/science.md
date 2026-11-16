@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 2fd86b4d3019398a
+CONTENT-HASH: 35b940b761644836
 
 ## Blocking
-(none)
 
 ## Polish
-- none
+- None.
 
 ## Checked
-- batch delta review, round 2 (diff cc7b2aeb..debc61a4): rajanopeus 'nopeus ei enää muutu' also fits the parachute slowing to a new terminal speed; no other content changed.
+batch delta review: Parachute just opened, moving down and slowing: acceleration and net force point up (N2L), the one correct option; distractors' feedback correct; photo caption agrees with fi (NASA test, drone drop, no person); the new parachutist alt-text entry's data matches v_t·tanh(gt/v_t) with v_t = 48 m/s and is not used in the fi-easy lesson page.

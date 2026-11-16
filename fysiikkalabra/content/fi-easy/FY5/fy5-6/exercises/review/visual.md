@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 7d2542dd563a3195
+CONTENT-HASH: 3fcc58b956fe9a7f
+ROUND: 3
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy5-6-L2-09 solution, Annettu — 'Kohta a), esimerkki, aineisto luettu 15. marraskuuta 2026.' reads like a fragment; write 'Kohdan a) esimerkkitaulukko, aineisto luettu 15. marraskuuta 2026.'
-- [Minor] fy5-6-L2-09 at 360 px — in the stacked a³/T² table the label '(10^8 km)^3)' touches the value ('0,194'); add a gap.
+- [Minor] solutions.md, Mars synchronous orbit, Sijoitus (γMT² = … = 3,3650 · 10²³ m³) — set as four inline pieces while every other γM step on the page is a display block; the joins before `=` are tight — known spacing of the inline split; use an `aligned` block if the line is touched again.
 
 ## Checked
-- Rendered preview/fi-easy/fy5-6.html?ratkaisut=1 at 360 and 1280 px with every solution open: no red KaTeX, no clipped formula, no paragraph over 110 words in any task, no asterisks.
-- Reopened after the fix: opened the 360 px render of the fy5-6-L3-04 solution; Vastaus is now five short paragraphs (answer with significant figures; outlier reasoning; correct period; explanation), each under 55 words, nothing lost. The earlier Major is resolved.
-- Earlier: full 360 px render of the new task fy5-6-L2-09, no clipping, units in LaTeX.
-- Note: with the details opened the page measures 7 px wider than the viewport, caused by an SVG circle in the lesson's Teoria figure area, not by this change.
+- Method: preview/fi-easy/fy5-6.html?ratkaisut=1 loaded at 390 and 1280 px, every details box opened and the lazy maths rendered, hidden feedback and model answers revealed; every formula the diff against main changes was located by its TeX and captured in its own block (compact sheets, the rest of the page hidden). No KaTeX error, document scrollWidth equals the viewport at both widths, no changed formula outside its box.
+- Opened tile-fy5-6-390-0.png and tile-fy5-6-1280-0.png in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-easy-1: the ten γM blocks (Earth, Moon, Mars, Jupiter, Sun), all three rows at 390 px with the indented "· m · 10ⁿ kg" continuation and two rows at 1280 px; 42 164 km · ∛0,107 ≈ 20 000 km; 7,66 km/s · √(318/62) ≈ 17 km/s; 1,588 · 10³⁰ kg : 1,99 · 10³⁰ kg ≈ 0,80; 1,62 m/s² · 0,891 = 1,44 m/s².
+- The inline γMT² line: at 390 px three lines, the `·` ends the first line, "6,42 · 10²³ kg · (88 620 s)²" stays whole on the second, "= 3,3650 · 10²³ m³, joten" on the third; no line starts with a bare dot.
+- Sentences continue correctly after each block ("joten", "mikä vastaa …", "eli sama pyöristyksen tarkkuudella.").
+- Hash run at the start and at the end: unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

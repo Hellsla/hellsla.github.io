@@ -302,7 +302,7 @@
       "type": "choice",
       "title": "Syventävä: Etsi virhe",
       "optional": true,
-      "prompt": "Opiskelija laski gravitaatiokentän voimakkuuden $300\\,\\text{km}$:n korkeudella Maan pinnasta näin: $g = \\gamma \\tfrac{M}{r^2} = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot \\tfrac{5{,}97 \\cdot 10^{24}\\,\\text{kg}}{(3{,}0 \\cdot 10^{5}\\,\\text{m})^2} \\approx 4400\\,\\text{m/s}^2$. Mikä ratkaisussa on vialla?",
+      "prompt": "Opiskelija laski gravitaatiokentän voimakkuuden $300\\,\\text{km}$:n korkeudella Maan pinnasta näin: $g = \\gamma \\tfrac{M}{r^2}$ $= 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot$ $\\tfrac{5{,}97 \\cdot 10^{24}\\,\\text{kg}}{(3{,}0 \\cdot 10^{5}\\,\\text{m})^2}$ $\\approx 4400\\,\\text{m/s}^2$. Mikä ratkaisussa on vialla?",
       "choices": [
         {
           "text": "Etäisyys mitataan Maan keskipisteestä, joten $r = 6378\\,\\text{km} + 300\\,\\text{km}$.",

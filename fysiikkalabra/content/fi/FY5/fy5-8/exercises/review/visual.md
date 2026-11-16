@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 40ee95a03e748bec
+CONTENT-HASH: b8f12f8d90d365f4
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy5-8 Vastaus — "värähtelyyn ja ääneen ja lopulta … sisäenergiaan" has a double "ja" and "lopulta" before "pysähtyvät lopuksi"; e.g. "värähtelyyn ja ääneen sekä lopulta …". Also the known old clipping formulas are not part of this change.
+(none)
 
 ## Checked
-- Delta round 1: rendered the page at 360 px with solutions open (?ratkaisut=1); Vastaus row with the parenthesis wraps cleanly.
-- Page scrollWidth 360, no overflow in the changed paragraphs; units and numbers unchanged and typeset upright with thin spaces.
-- Judged the language and typography of the changed sentences only.
+- Delta, round 3: no content change since round 2 (hash unchanged). Looked again at solutions.md:91 (Järkevyys).
+- Opened fy5-8-ex-kolmio-0-390.png and sheet-ex-1280.png (kolmio at 1280): `½ · 4,8 N · 0,080 m = 0,19 J.` on one row in its box at both widths, the inline step before it unbroken, the paragraph continues after the box. Nothing clipped.
+- Own Playwright captures from the current preview/ pages (?ratkaisut=1, every details box open, hidden feedback/model boxes revealed) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-7/; measured in the same run: page scrollWidth equals the viewport, no formula past its box.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

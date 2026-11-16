@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f0c25c98f87c1ab7
+CONTENT-HASH: 25cd63a870aefc73
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] stage 5 first sum row runs flush to the card edge at 390 px (wraps after +, nothing clipped); check at 360 px.
 
 ## Checked
-delta review 5d reflow, round 1: opened the 360 px captures lesson 01, inquiry 02-04 (tiled into contact sheets, every capture of this part viewed); equals signs aligned, no row broken inside a number or unit, nothing clipped or scrolling, display formulas read naturally in their sentences.
-
-## Scores
-illustrations 5 · typography 4 · English 4 · accessibility 4
+batch delta review: opened fy1-3-example-390-1 and -2 (stages 1-7); paragraph breaks and list markers read well (bold lead-ins, knowns in list or own paragraph, question last), formulas aligned, no clipping or overflow.

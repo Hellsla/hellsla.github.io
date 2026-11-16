@@ -19,24 +19,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa yläkoulusta",
-      "prompt": "Juoksija kulkee tasaisesti $150\\,\\text{m}$ ajassa $20\\,\\text{s}$. Mikä on hänen nopeutensa?",
+      "prompt": "Pyöräilijän ajamiseen kotoa kaupalle ja takaisin kuluu yhteensä $16\\,\\text{min}$, ja matkamittari näyttää $4{,}0\\,\\text{km}$. Mikä on hänen keskivauhtinsa eli kuljettu matka jaettuna ajalla?",
       "choices": [
         {
-          "text": "$3000\\,\\text{m/s}$",
-          "feedback": "Kerroit matkan ja ajan. Nopeus kertoo, kuinka paljon matkaa kuljetaan sekunnissa, joten matka jaetaan ajalla: $v = \\dfrac{150\\,\\text{m}}{20\\,\\text{s}}$."
-        },
-        {
-          "text": "$7{,}5\\,\\text{m/s}$",
+          "text": "$15\\,\\text{km/h}$",
           "correct": true,
-          "feedback": "Oikein: $v = \\dfrac{150\\,\\text{m}}{20\\,\\text{s}} = 7{,}5\\,\\text{m/s}$. Tässä tunnilla sama ajatus saa tarkemman muodon: matkan tilalle tulee paikan muutos ja nopeudelle etumerkki."
+          "feedback": "Oikein: $16\\,\\text{min} = \\tfrac{16}{60}\\,\\text{h}$, joten $v = \\dfrac{s}{t} = \\dfrac{4{,}0\\,\\text{km}}{\\tfrac{16}{60}\\,\\text{h}} = 15\\,\\text{km/h}$. Tässä luvussa matkan rinnalle tulee paikan muutos eli siirtymä, joka on tällä lenkillä $0\\,\\text{m}$."
         },
         {
-          "text": "$0{,}13\\,\\text{m/s}$",
-          "feedback": "Jaoit ajan matkalla. Tulos $0{,}13\\,\\text{s/m}$ on sekuntia metriä kohti, ei metriä sekunnissa. Nopeus on matka jaettuna ajalla."
+          "text": "$7{,}5\\,\\text{km/h}$",
+          "feedback": "Käytit vain menomatkan $2{,}0\\,\\text{km}$. Aika $16\\,\\text{min}$ kuluu koko lenkkiin, joten matka on matkamittarin koko lukema $4{,}0\\,\\text{km}$."
         },
         {
-          "text": "$130\\,\\text{m/s}$",
-          "feedback": "Vähensit ajan matkasta, mutta eri suureita ei voi vähentää toisistaan: metrit ja sekunnit eivät ole sama yksikkö. Nopeus on suhde $v = \\dfrac{s}{t}$."
+          "text": "$0\\,\\text{km/h}$",
+          "feedback": "Käytit sovelluksen lukemaa $0\\,\\text{m}$. Se on loppupaikka kotoa mitattuna, ei kuljettu matka. Pyöräilijä liikkui koko ajan, joten hänen keskivauhtinsa ei ole nolla: se lasketaan kuljetusta matkasta $4{,}0\\,\\text{km}$."
+        },
+        {
+          "text": "$0{,}25\\,\\text{km/h}$",
+          "feedback": "Jaoit kilometrit minuuteilla: $\\tfrac{4{,}0\\,\\text{km}}{16\\,\\text{min}} = 0{,}25\\,\\text{km/min}$. Yksikkö on kilometriä minuutissa, ei tunnissa. Muunna aika ensin tunneiksi: $16\\,\\text{min} = \\tfrac{16}{60}\\,\\text{h}$."
         }
       ]
     },

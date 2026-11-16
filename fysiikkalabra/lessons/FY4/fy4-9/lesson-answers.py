@@ -76,8 +76,10 @@ a["ex-ratio"] = a["ex-F"] / a["ex-G"]    # 1529
 a["ex-wrong"] = m * (35.0 - 25.0) / dt   # the sign error: 145 N
 a["ex-Gimp"] = m * 9.81 * dt             # the weight's impulse during the contact 0,0023 N·s ≪ 3,48 N·s
 
-# Retrieval: 2,0 kg cart, net force 6,0 N for 0,50 s: a = 3,0 m/s², Δv = a Δt = 1,5 m/s
-a["kertaus-dv"] = 6.0 / 2.0 * 0.50
+# Retrieval: 60 kg jumper, net force 1,2 kN up for 0,30 s on the mat: a = 20 m/s², Δv = a Δt = 6,0 m/s
+a["kertaus-a"] = 1200 / 60
+a["kertaus-dv"] = 1200 / 60 * 0.30
+a["kertaus-noMass"] = 1200 * 0.30                         # mistake: F Δt as a speed, 360
 # Etsi virhe: a 0,40 kg ball hits a wall at 5,0 m/s and bounces back at 5,0 m/s
 a["virhe-oikea"] = 0.40 * (-5.0) - 0.40 * 5.0   # Δp = −4,0 kg·m/s; the student's 0 is the sign error
 # Transfer (siirto): a pesäpallo of 0,16 kg at 25 m/s stopped in the glove in 0,050 s

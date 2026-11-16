@@ -63,7 +63,7 @@ akselit 0
 ```
 **Formula:** $y$: $N - mg = m\dfrac{v^2}{r}$, so $N = m\left(g + \dfrac{v^2}{r}\right)$
 **Conversions:** The quantities are in SI units; the result is finally converted to kilonewtons, $1\,\text{kN} = 1000\,\text{N}$.
-**Substitution:** $N = 80\,\text{kg}\cdot\left(9.81\,\text{m/s}^2 + \dfrac{(8.0\,\text{m/s})^2}{16\,\text{m}}\right) = 80\,\text{kg}\cdot 13.81\,\text{m/s}^2 = 1104.8\,\text{N} = 1.1048\,\text{kN}$
+**Substitution:** $$\begin{aligned} &N \\ &= 80\,\text{kg}\cdot\left(9.81\,\text{m/s}^2 + \dfrac{(8.0\,\text{m/s})^2}{16\,\text{m}}\right) \\ &= 80\,\text{kg}\cdot 13.81\,\text{m/s}^2 \\ &= 1104.8\,\text{N} \\ &= 1.1048\,\text{kN} \end{aligned}$$
 **Answer:** $1.1\,\text{kN}$ upwards, two significant figures like the speed $8.0\,\text{m/s}$ and the radius $16\,\text{m}$.
 **Reasonableness:** The weight is $80\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 785\,\text{N}$, and the support force is about $1.4$ times it, because $\tfrac{v^2}{r} = 4.0\,\text{m/s}^2$ is about $0.4$ times $g$. The cyclist feels pressed into the saddle. At the top of a hill at the same speed the support force would correspondingly be smaller than the weight.
 

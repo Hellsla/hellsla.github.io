@@ -1,9 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 674824e6d1854147
+CONTENT-HASH: 21b5ea330280d9a9
 
 ## Blocking
 
 ## Polish
 
+
 ## Checked
-- light delta review (teacher 2026-11-07), 2026-11-09 editorial round: solutions of L2-03 ($66{,}7\,\text{ms}$; reworded: exact count $900$ per minute, usual three significant figures) and L3-04 ($79{,}1\,\%$ with $4{,}96\,\text{s}$, $2{,}77\,\text{s}$) opened with ?ratkaisut=1; units LaTeX, decimal comma, no wrap at 390; captures fy5-7-fi-easy-390/1280-sol-a.png, -sol-b.png. Built preview, own Playwright captures under /tmp/claude-0/-home-user/61da6444-3d3b-5f0d-8dfa-1c431aff38b7/scratchpad/visual/; no inline formula wraps at 390 px.
+- Delta review, round 3: solutions.md lines 30 and 111 (Järkevyys checks lifted to display formulas). The caption-label change in exercises.json is already on main and outside this diff.
+- Opened fy5-7-exa-390-0.png, fy5-7-exb-390-0.png and, in sheet-1280-a.png, fy5-7-exa-1280-0.png, fy5-7-exb-1280-0.png: `2,5 cm − (−2,5 cm) = 5,0 cm,` and the two `39,5 cm ∓ 7,50 cm` rows each fit one row at 390 px, the sentence continues below (`ja amplitudi…`, `ja`, `kuten mitattiin.`); units upright, decimal comma, minus signs clear.
+- Own Playwright captures (deviceScaleFactor 2) of preview/fi-easy/fy5-7.html?ratkaisut=1, every details box opened, at 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-easy-7/.
+- Page at both widths: scrollWidth = clientWidth, no KaTeX error nodes, no page errors.
+- Punctuation after a display formula sits inside the formula box; no line starts with a bare comma, full stop or dot.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

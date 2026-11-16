@@ -87,7 +87,9 @@
 **Conversions:** The diameters are in the same unit, so the ratio is just a number. The answer is given in millions: $1\text{ million} = 10^{6}$.
 **Substitution:** $\dfrac{d_\text{S}}{d_\text{E}} = \dfrac{1.39\cdot10^{9}}{1.27\cdot10^{7}} = 109.4$ and $\left(109.4\right)^{3} = 1.31\cdot10^{6} = 1.31$ million
 **Answer:** $1.31$ million, that is $1.31\cdot10^{6}$, three significant figures like the diameters. So the volume of the Sun is about 1.3 million Earth volumes.
-**Reasonableness:** The ratio of the diameters is about $10^{2}$, so the ratio of the volumes is about $\left(10^{2}\right)^{3} = 10^{6}$. The result $1.3\cdot10^{6}$ is of this order. As solid spheres, fewer Earths would fit, because there would be empty space between the spheres; the ratio of the volumes tells how many Earth volumes the volume of the Sun is enough for.
+**Reasonableness:** The ratio of the diameters is about $10^{2}$, so the ratio of the volumes is about $\left(10^{2}\right)^{3} = 10^{6}$. The result $1.3\cdot10^{6}$ is of this order.
+
+As solid spheres, fewer Earths would fit, because there would be empty space between the spheres; the ratio of the volumes tells how many Earth volumes the volume of the Sun is enough for.
 
 ## fy1-1-L3-01
 **Given:** the diameter of Earth in the scale model $d_\text{model} = 1.0\,\text{cm}$; the real diameter $d_\text{E} = 1.27\cdot10^{7}\,\text{m}$ and the distance from the Sun $r = 1.50\cdot10^{11}\,\text{m}$
@@ -121,8 +123,14 @@
 
 ## fy1-1-L1-06
 **Find:** what separates a physical model from a mere observation.
-**Principle:** An observation tells what happened in a single situation. A model is a simplified description of a phenomenon, and predictions can be deduced from it even for situations that have not been studied yet. Because physics relies on experiments, a prediction is tested with a measurement, and the reliability of a model has been confirmed in the conditions in which it has been tested. In new conditions the reliability of a prediction has to be assessed.
-**Model answer:** A prediction for a new situation can be deduced from a model, and the prediction can be tested by a measurement. A model is a simplified description, and an experiment or measurement decides whether it holds. The fall of a stone and a feather is an observation. A model in which air resistance is left out predicts the fall of objects, and it holds only when air resistance is small. A model is not a repeated observation, an unchangeable theory or the whole truth: if a careful measurement differs from the prediction, the model is corrected or its range of validity is limited.
+**Principle:** An observation tells what happened in a single situation. A model is a simplified description of a phenomenon, and predictions can be deduced from it even for situations that have not been studied yet.
+
+Because physics relies on experiments, a prediction is tested with a measurement, and the reliability of a model has been confirmed in the conditions in which it has been tested. In new conditions the reliability of a prediction has to be assessed.
+**Model answer:** A prediction for a new situation can be deduced from a model, and the prediction can be tested by a measurement. A model is a simplified description, and an experiment or measurement decides whether it holds.
+
+The fall of a stone and a feather is an observation. A model in which air resistance is left out predicts the fall of objects, and it holds only when air resistance is small.
+
+A model is not a repeated observation, an unchangeable theory or the whole truth: if a careful measurement differs from the prediction, the model is corrected or its range of validity is limited.
 
 ## fy1-1-L1-07
 **Given:** distance $s = 3.84\cdot10^{8}\,\text{m}$ and speed of light $c = 2.998\cdot10^{8}\,\text{m/s}$
@@ -141,7 +149,9 @@
 **Formula:** $k = \dfrac{10^{n_\text{sand}}}{10^{n_\text{virus}}} = 10^{\,n_\text{sand} - n_\text{virus}}$
 **Conversions:** Not needed: the sizes are in the same unit, so the ratio is a pure number.
 **Substitution:** $k = \dfrac{10^{-3}\,\text{m}}{10^{-7}\,\text{m}} = 10^{-3-(-7)} = 10^{4} = 10\,000$
-**Answer:** $10\,000$, that is $10^{4}$; based on the orders of magnitude, the diameter of the grain of sand is about ten thousand times the diameter of the virus. The ratio of the given orders of magnitude is exactly $10^{4}$, but it does not determine the ratio of the real diameters exactly. The difference in orders of magnitude is four steps, but the difference in size is a factor of ten thousand, not four.
+**Answer:** $10\,000$, that is $10^{4}$; based on the orders of magnitude, the diameter of the grain of sand is about ten thousand times the diameter of the virus.
+
+The ratio of the given orders of magnitude is exactly $10^{4}$, but it does not determine the ratio of the real diameters exactly. The difference in orders of magnitude is four steps, but the difference in size is a factor of ten thousand, not four.
 **Reasonableness:** If the virus were enlarged to the size of a millimetre, the grain of sand would be $10^{4}\cdot1\,\text{mm} = 10\,000\,\text{mm} = 10\,\text{m}$, the size of a house. The grain of sand is clearly much larger than the virus.
 
 ## fy1-1-L2-05
@@ -168,12 +178,20 @@
 **Given:** the points of the table $(N;\ h)$: $(50;\ 5.0\,\text{mm})$, $(100;\ 10.5\,\text{mm})$, $(150;\ 15.0\,\text{mm})$, $(200;\ 20.5\,\text{mm})$, $(250;\ 25.5\,\text{mm})$ and $(300;\ 30.5\,\text{mm})$; the ruler is read to half a millimetre
 **Find:** the thickness $d$ of one sheet in millimetres
 **Principle:** The height of the stack is the number of sheets times the thickness of one sheet, $h = dN$, so the points lie on a line, and the slope of the line is the thickness of a sheet. The line passes through the origin because a stack of zero sheets has zero height.
-**Reading the graph:** The points lie on a rising line with points on both sides of it. The fitted line passes through the origin. The height of the stack is read from the fitted line at $N = 300$, not directly from the table: from the line we get $h \approx 30.6\,\text{mm}$, and the measured point $30.5\,\text{mm}$ of the table is slightly below the line.
+**Reading the graph:** The points lie on a rising line with points on both sides of it. The fitted line passes through the origin.
+
+The height of the stack is read from the fitted line at $N = 300$, not directly from the table: from the line we get $h \approx 30.6\,\text{mm}$, and the measured point $30.5\,\text{mm}$ of the table is slightly below the line.
 **Formula:** $h = dN$, so the slope of the line is $d = \dfrac{h}{N}$
 **Conversions:** Not needed: the height is already in millimetres, and the number of sheets is a pure number.
 **Substitution:** $d = \dfrac{30.6\,\text{mm}}{300} = 0.102\,\text{mm}$
 **Answer:** $0.10\,\text{mm}$, two significant figures, because the line is fitted by eye and the height of the stack has other sources of error besides reading the ruler. A fit by eye varies, so about $0.097\text{–}0.107\,\text{mm}$ is a good answer.
-**Model answer on the advantage of a stack:** The thickness of one sheet is about $0.1\,\text{mm}$, much smaller than the scale division of the ruler, $1\,\text{mm}$, so nothing could be read from a single sheet. When a value is read from the scale of an instrument, the uncertainty of the reading can in a simple case be estimated as half of the smallest reading interval, here about $0.25\,\text{mm}$. The height of the stack, $30.6\,\text{mm}$, is large compared with that, and the share of the reading is divided among $300$ sheets: $0.25\,\text{mm} : 300 \approx 0.001\,\text{mm}$ per sheet. This is only the share of the reading. The total uncertainty of the measurement is also affected by other sources of error, such as the stack pressed by hand and the scatter of the points of about $\pm0.3\,\text{mm}$, so the total uncertainty is larger and the answer is given with two significant figures.
+**Model answer on the advantage of a stack:** The thickness of one sheet is about $0.1\,\text{mm}$, much smaller than the scale division of the ruler, $1\,\text{mm}$, so nothing could be read from a single sheet.
+
+When a value is read from the scale of an instrument, the uncertainty of the reading can in a simple case be estimated as half of the smallest reading interval, here about $0.25\,\text{mm}$.
+
+The height of the stack, $30.6\,\text{mm}$, is large compared with that, and the share of the reading is divided among $300$ sheets: $0.25\,\text{mm} : 300 \approx 0.001\,\text{mm}$ per sheet. This is only the share of the reading.
+
+The total uncertainty of the measurement is also affected by other sources of error, such as the stack pressed by hand and the scatter of the points of about $\pm0.3\,\text{mm}$, so the total uncertainty is larger and the answer is given with two significant figures.
 **Reasonableness:** A sheet of copy paper is, as is familiar, about $0.1\,\text{mm}$ thick, and a ream of $500$ sheets is $500\cdot0.10\,\text{mm} = 50\,\text{mm}$, about five centimetres thick.
 
 ## fy1-1-L3-04
@@ -194,7 +212,9 @@
 **Conversions:** $t = 7.25\,\text{a} = 7.25\cdot3.156\cdot10^{7}\,\text{s} = 2.288\cdot10^{8}\,\text{s}$.
 **Substitution:** $s = 15.341\,\text{km/s}\cdot2.288\cdot10^{8}\,\text{s} = 3.510\cdot10^{9}\,\text{km} = \dfrac{3.510\cdot10^{9}\,\text{km}}{1.496\cdot10^{8}\,\text{km/AU}} = 23.46\,\text{AU}$ and $d = 119.0\,\text{AU} + 23.46\,\text{AU} = 142.46\,\text{AU}$
 **Answer:** $142.5\,\text{AU}$, one decimal like the initial distance $119.0\,\text{AU}$, which is the least precise number in the sum. The student multiplied the speed in $\text{km/s}$ by years instead of seconds, so the result was not a distance, and in addition added kilometres and astronomical units. The model was not wrong.
-**Model answer on the measurement:** The prediction $142.5\,\text{AU}$ is the distance from the Sun, the observation $143.05\,\text{AU}$ that from the Earth. The difference, about $0.6\,\text{AU}$, is below the roughly $1\,\text{AU}$ by which these distances can differ because of the Earth's orbital motion. So the model and the observation agree as closely as the comparison allows, and the observation supports the model. It does not, however, prove the model for all situations: the speed may change slowly, and the model holds only near the interval considered.
+**Model answer on the measurement:** The prediction $142.5\,\text{AU}$ is the distance from the Sun, the observation $143.05\,\text{AU}$ that from the Earth. The difference, about $0.6\,\text{AU}$, is below the roughly $1\,\text{AU}$ by which these distances can differ because of the Earth's orbital motion.
+
+So the model and the observation agree as closely as the comparison allows, and the observation supports the model. It does not, however, prove the model for all situations: the speed may change slowly, and the model holds only near the interval considered.
 **Reasonableness:** In a year Voyager travels $15.341\,\text{km/s}\cdot3.156\cdot10^{7}\,\text{s} = 4.84\cdot10^{8}\,\text{km} = 3.2\,\text{AU}$, and in seven and a quarter years about $23\,\text{AU}$. The result agrees.
 
 ## fy1-1-L1-09

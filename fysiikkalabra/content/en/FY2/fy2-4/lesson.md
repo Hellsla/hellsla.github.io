@@ -158,7 +158,13 @@ A kettle has an efficiency of $90\,\%$ and takes a power of $2.0\,\text{kW}$ fro
 
 <!-- vaihe -->
 
-**Known and unknown.** Efficiency $\eta = 90\,\%$, power taken $P_\text{o} = 2.0\,\text{kW}$ and running time $t = 3.0\,\text{min}$. We want the loss energy $E_\text{h}$.
+**Known and unknown.**
+
+- Efficiency $\eta = 90\,\%$,
+- power taken $P_\text{o} = 2.0\,\text{kW}$ and
+- running time $t = 3.0\,\text{min}$.
+
+We want the loss energy $E_\text{h}$.
 
 <!-- vaihe -->
 
@@ -198,7 +204,9 @@ E_\text{h} &= E_\text{o} - E_\text{a} \\
 
 <!-- vaihe -->
 
-**Result.** The energy that becomes losses is $36\,000\,\text{J} = 36 \cdot 1000\,\text{J} = 36\,\text{kJ}$. The result is given with two significant figures, because the initial values $90\,\%$, $2.0\,\text{kW}$ and $3.0\,\text{min}$ are given to two figures.
+**Result.** The energy that becomes losses is $36\,000\,\text{J} = 36 \cdot 1000\,\text{J} = 36\,\text{kJ}$.
+
+The result is given with two significant figures, because the initial values $90\,\%$, $2.0\,\text{kW}$ and $3.0\,\text{min}$ are given to two figures.
 
 <!-- vaihe -->
 

@@ -22,23 +22,23 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: kitka ja kokonaisvoima",
+      "title": "Kertaa: kokonaisvoima ja hidastuminen",
       "fbd": "identify",
       "optional": true,
-      "prompt": "Laatikko liukuu vaakasuoralla lattialla oikealle ja hidastuu. Kukaan ei työnnä eikä vedä sitä. Mihin suuntaan laatikkoon vaikuttava kokonaisvoima osoittaa?",
+      "prompt": "Varjo on juuri auennut. Hyppääjä liikkuu yhä alaspäin, mutta hänen nopeutensa pienenee. Mihin suuntaan hyppääjään vaikuttava kokonaisvoima osoittaa?",
       "choices": [
         {
-          "text": "Vasemmalle, koska kitka vastustaa liukumista.",
+          "text": "Ylöspäin, koska nopeus alaspäin pienenee.",
           "correct": true,
-          "feedback": "Oikein. Luvussa *Paino, kitka ja kalteva taso* opit, että liukukitka osoittaa liukumista vastaan. Se on ainoa vaakasuora voima, joten kokonaisvoima ja kiihtyvyys osoittavat vasemmalle, ja laatikko hidastuu. Tässä luvussa ilma tekee saman: se vastustaa liikettä."
+          "feedback": "Oikein. Luvussa *Newtonin toinen laki* opit, että kokonaisvoima ja kiihtyvyys osoittavat samaan suuntaan. Hyppääjä hidastuu, joten kiihtyvyys osoittaa liikettä vastaan eli ylöspäin. Tässä luvussa selviää, mikä voima on silloin painoa suurempi."
         },
         {
-          "text": "Oikealle, liikkeen suuntaan, koska laatikko liikkuu yhä oikealle.",
-          "feedback": "Liike ei aiheuta voimaa. Laatikkoa ei työnnä mikään, joten oikealle osoittavaa voimaa ei ole. Laatikko hidastuu, joten kiihtyvyys ja kokonaisvoima osoittavat vasemmalle, liikettä vastaan."
+          "text": "Alaspäin, liikkeen suuntaan, koska hyppääjä liikkuu yhä alaspäin.",
+          "feedback": "Liike ei aiheuta voimaa, eikä kokonaisvoima osoita aina liikkeen suuntaan. Jos kokonaisvoima osoittaisi alaspäin, nopeus alaspäin kasvaisi. Nopeus pienenee, joten kokonaisvoima osoittaa ylöspäin, liikettä vastaan."
         },
         {
-          "text": "Kokonaisvoima on nolla, koska laatikko liikkuu.",
-          "feedback": "Jos kokonaisvoima olisi nolla, laatikon nopeus ei muuttuisi. Laatikko hidastuu, joten kokonaisvoima ei ole nolla: kitka osoittaa vasemmalle."
+          "text": "Kokonaisvoima on nolla, koska hyppääjä liikkuu yhä.",
+          "feedback": "Jos kokonaisvoima olisi nolla, hyppääjän nopeus ei muuttuisi. Nopeus pienenee, joten kokonaisvoima ei ole nolla vaan osoittaa ylöspäin."
         }
       ]
     },

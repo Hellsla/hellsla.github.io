@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 093745b877297051
+CONTENT-HASH: 58a26a2ea89e8d64
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy5-4-exp-exp-1-390-2 — the readout wraps "lähtökitka 11,77 kN" onto its own line on a phone; harmless, no fix needed.
+- [Minor] inquiry.json:490 (voimakuvion mallivastaus) — the axis label "x:" stands alone on its own line between the two display formulas; "x-suunnassa" would read better. Optional.
 
 ## Checked
-- delta review: the term change "suurin lepokitka" to "lähtökitka" (readout, table column, sim text, howto, calc, hints, feedback) and the experiment 1 text (six measurements, min 6).
-- Opened fy5-4-lab-1280, fy5-4-exp-exp-1-390-1 and -2, fy5-4-open-ennusta-1280.
-- The readout, table header "lähtö-kitka (N)", intro and Käyttöohje lead read naturally, and the term is the same everywhere in the captures.
-- The experiment 1 intro lists 5, 10, 15, 20, 25 and 30 m/s with units in LaTeX, and the layout is intact.
-- Hyphenation of "lähtö-kitka" in the table follows the syllable rule; no clipping or overflow seen.
-- The figures themselves did not change.
+- Round 3, delta: nothing changed since the version passed in round 2 (same hash); the one re-broken text, inquiry.json:490, was looked at again.
+- Own captures from preview/fy5-4.html?ratkaisut=1, all boxes and hidden answers opened, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-1: fy5-4-les-390-1.png, fy5-4-les-1280-1.png.
+- N and T chains aligned at "=" and "≈", the fraction whole, full stops attached; nothing clipped, scrollWidth 390 and 1280.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

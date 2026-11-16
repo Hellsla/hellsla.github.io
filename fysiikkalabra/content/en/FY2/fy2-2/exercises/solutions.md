@@ -112,7 +112,11 @@ $$. The energy of lightning is large, but it is released in an instant; the same
 **Conversions:** Replace the prefix tera with its value: $230\,\text{TJ} = 230 \cdot 1000\,\text{GJ} = 230\,000\,\text{GJ}$
 **Substitution:** $E_\text{sea} = 370\,\text{TJ} - 140\,\text{TJ} = 230\,\text{TJ} = 230\,000\,\text{GJ}$, and $N = 230\,000\,\text{GJ} : 72\,\text{GJ} = 3194$
 **Answer:** About $3200$ detached houses, two significant figures as in the data $72\,\text{GJ}$, $140\,\text{TJ}$ and $370\,\text{TJ}$.
-**Reasonableness:** More energy goes to the sea than into electricity, as is usual in power plants that run on heat: $140\,\text{TJ} + 230\,\text{TJ} = 370\,\text{TJ}$. Estimate: $200\,000 : 70 \approx 3000$, so thousands of houses is the right order of magnitude. This amount of energy therefore corresponds to heating a small town for a year, but the heat going to the sea is too cool for district heating; in combined heat and power production the steam is condensed at a higher temperature, so the heat can be recovered and slightly less electricity is produced.
+**Reasonableness:** More energy goes to the sea than into electricity, as is usual in power plants that run on heat: $140\,\text{TJ} + 230\,\text{TJ} = 370\,\text{TJ}$.
+
+Estimate: $200\,000 : 70 \approx 3000$, so thousands of houses is the right order of magnitude.
+
+This amount of energy therefore corresponds to heating a small town for a year, but the heat going to the sea is too cool for district heating; in combined heat and power production the steam is condensed at a higher temperature, so the heat can be recovered and slightly less electricity is produced.
 
 ## fy2-2-L3-03
 **Given:** energy of the reactor per day $E = 370\,\text{TJ}$, $4.5\,\text{kg}$ of uranium-235 and the energy of petrol per litre $E_\text{litre} = 32\,\text{MJ}/\textsf{l}$
@@ -212,7 +216,9 @@ $$.
 &= 3\,200\,000\,\text{GJ}
 \end{aligned}
 $$. Order from smallest to greatest: detached house, farm, hydropower plant, district heating. The ratio is $N = 3\,200\,000\,\text{GJ} : 65\,\text{GJ} = 49\,000$.
-**Answer:** The greatest energy is about $49\,000$ times the smallest (two significant figures as in the data). The numbers of the table give a misleading picture because the units are of different sizes: $\text{PJ}$ is a million gigajoules, $\text{toe}$ is $42\,\text{GJ}$ and $\text{MWh}$ is only $3.6\,\text{GJ}$. That is why the smallest number of the table, the $3.2$ of district heating, is the greatest in energy, and the number $1200$ of the hydropower plant does not make it the greatest.
+**Answer:** The greatest energy is about $49\,000$ times the smallest (two significant figures as in the data). The numbers of the table give a misleading picture because the units are of different sizes: $\text{PJ}$ is a million gigajoules, $\text{toe}$ is $42\,\text{GJ}$ and $\text{MWh}$ is only $3.6\,\text{GJ}$.
+
+That is why the smallest number of the table, the $3.2$ of district heating, is the greatest in energy, and the number $1200$ of the hydropower plant does not make it the greatest.
 **Reasonableness:** Estimate: $3\,000\,000 : 60 = 50\,000$, so a ratio of about $50\,000$ is the right order of magnitude. A city's district heating is a year's heating for tens of thousands of houses (about $$
 \begin{aligned}
 &3\,200\,000\,\text{GJ} : 70\,\text{GJ} \\

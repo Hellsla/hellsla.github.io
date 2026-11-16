@@ -24,23 +24,23 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa luvusta Kiihtyvyys ja tasaisesti kiihtyvä liike",
-      "prompt": "Pallo heitetään suoraan ylöspäin nopeudella $10\\,\\text{m/s}$, ja ilmanvastus on pieni. Pallon kiihtyvyys on koko ajan $g = 9{,}81\\,\\text{m/s}^2$ alaspäin. Kuinka korkealle heittokohdasta pallo nousee?",
+      "prompt": "U-rampin pystysuoralta reunalta lautailija lähtee suoraan ylöspäin nopeudella $3{,}0\\,\\text{m/s}$. Ilmanvastus on pieni, ja hänen kiihtyvyytensä on koko ajan $g = 9{,}81\\,\\text{m/s}^2$ alaspäin. Kuinka korkealle reunan yläpuolelle hän nousee?",
       "choices": [
         {
-          "text": "$5{,}1\\,\\text{m}$",
+          "text": "$0{,}46\\,\\text{m}$",
           "correct": true,
-          "feedback": "Oikein. Nousuaika on $t = \\tfrac{v}{g} \\approx 1{,}02\\,\\text{s}$, ja keskinopeus on nousun aikana puolet alkunopeudesta, joten $$\\begin{aligned} &h = \\tfrac{v}{2} \\cdot \\tfrac{v}{g} \\\\ &= \\tfrac{v^2}{2g} \\\\ &= \\tfrac{(10\\,\\text{m/s})^2}{2 \\cdot 9{,}81\\,\\text{m/s}^2} \\\\ &\\approx 5{,}1\\,\\text{m} \\end{aligned}$$."
+          "feedback": "Oikein. Nousuaika on $t = \\tfrac{v}{g} \\approx 0{,}31\\,\\text{s}$, ja keskinopeus on nousun aikana puolet alkunopeudesta, joten $$\\begin{aligned} &h = \\tfrac{v}{2} \\cdot \\tfrac{v}{g} \\\\ &= \\tfrac{v^2}{2g} \\\\ &= \\tfrac{(3{,}0\\,\\text{m/s})^2}{2 \\cdot 9{,}81\\,\\text{m/s}^2} \\\\ &\\approx 0{,}46\\,\\text{m} \\end{aligned}$$. Tulos on sama kuin rampilla. Tässä luvussa selviää, miksi nousukorkeus riippuu nopeuden neliöstä."
         },
         {
-          "text": "$10\\,\\text{m}$",
-          "feedback": "Laskit $\\tfrac{v^2}{g}$, eli kertoit alkunopeuden nousuajalla. Pallo hidastuu koko nousun ajan, joten sen keskinopeus on vain puolet alkunopeudesta: $h = \\tfrac{v^2}{2g}$."
+          "text": "$0{,}92\\,\\text{m}$",
+          "feedback": "Laskit $\\tfrac{v^2}{g}$, eli kertoit alkunopeuden nousuajalla. Lautailija hidastuu koko nousun ajan, joten hänen keskinopeutensa on vain puolet alkunopeudesta: $h = \\tfrac{v^2}{2g}$."
         },
         {
-          "text": "$1{,}0\\,\\text{m}$",
-          "feedback": "Luku $\\tfrac{v}{g} \\approx 1{,}0$ on nousuaika sekunteina, ei korkeus. Korkeus on keskinopeus kertaa nousuaika: $\\tfrac{v}{2} \\cdot \\tfrac{v}{g} = \\tfrac{v^2}{2g}$."
+          "text": "$0{,}31\\,\\text{m}$",
+          "feedback": "Luku $\\tfrac{v}{g} \\approx 0{,}31$ on nousuaika sekunteina, ei korkeus. Korkeus on keskinopeus kertaa nousuaika: $\\tfrac{v}{2} \\cdot \\tfrac{v}{g} = \\tfrac{v^2}{2g}$."
         },
         {
-          "text": "$0{,}51\\,\\text{m}$",
+          "text": "$0{,}15\\,\\text{m}$",
           "feedback": "Laskit $\\tfrac{v}{2g}$, jonka yksikkö on sekunti eikä metri. Nopeus esiintyy nousukorkeudessa toisessa potenssissa: $h = \\tfrac{v^2}{2g}$."
         }
       ]

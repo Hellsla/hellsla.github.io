@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 3dbd4a28b1f97ddd
+CONTENT-HASH: 6bcc38cd66cd1680
+
 ## Blocking
 
 ## Polish
+- Feedback for 0 km/h cites the tracking app's 0 m; that reading is in the hook, not in this prompt. A student who skipped the hook may not know it. Optional: name it as 'seurantasovelluksen lukema' or repeat it in the prompt.
 
 ## Checked
-- Formula table: keskinopeus / average velocity $v_\text{k} = \Delta x/\Delta t = (x_2-x_1)/(t_2-t_1)$ equals MAFY; symbols and units defined right under it.
-- No $v_\text{ka}$/$v_\text{avg}$ left in lesson, inquiry (round-trip feedbacks: $\Delta x = 0$, $v_\text{k} = 0$; $16\,\text{m}/10\,\text{s} = 1{,}6\,\text{m/s}$ keskivauhti) or exit ticket ($200\,\text{m}$, displacement 0, $v_\text{k}=0$); concept card uses $v_\text{k}$.
-- lesson-answers.py unchanged and reproduces the inquiry numbers; fi, fi-easy, en say the same.
+batch delta review: pr-nopeus recomputed: 4,0 km/(16/60 h) = 15 km/h; distractors 7,5 km/h (2,0 km only), 0 (displacement), 0,25 (km/min) each wrong with right feedback; one correct option; answers.py runs.

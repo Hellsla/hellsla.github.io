@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: a0a9a188acdab68e
+CONTENT-HASH: 3a8f9887abba8d2c
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] inquiry.json:389 — at the inline joins the multiplication dot sits tight against the unit (`4.0 cm·` at the row end) and `= 3.804 cm` follows `0.9511` with uneven space — known join spacing; collect with the PR's Polish.
 
 ## Checked
-- delta review (English, fy5-7): only figures.json changed (new entries for option figures used in the exercise sets, which already passed); lesson text unchanged (git tree clean for the lesson files).
-- Rebuilt with `python scripts/build.py fy5-7`; page opened at 390 px after its own scripts ran: scrollWidth = clientWidth = 390 (no horizontal overflow), no KaTeX error nodes, no page errors.
-- Opened a 390 px contact sheet of every visible lesson figure (hero illustration, vector/path figure, road-bend diagrams, graphs, force diagrams for fy5-4; swing hero, spring/pendulum diagram, reference-circle, sine graphs and simulated-data graph for fy5-7): all render complete, unclipped, labels in KaTeX, colours per convention, in the language of the page (aria-labels in English, decimal comma in Finnish axes, decimal point in English).
-- The lesson's own figures are unchanged in this language; the new figure texts only add entries and replace none that the lesson shows.
-- The screenshot script (scripts/screenshot.py) crashes on a stage heading in this lesson page, so captures were made with a separate script; review/shots not refreshed.
+- Delta, round 3 (English): the substitution of the sine example, inquiry.json:389, now consecutive inline formulas.
+- Opened fy5-7-les-sin-0-390.png and fy5-7-les-sin-0-1280.png: at 390 px the rows read `x = 4.0 cm·` | `sin(2π · 0.50 Hz · 0.40 s)` | `= 4.0 cm · sin 1.257` | `= 4.0 cm · 0.9511 = 3.804 cm`; the dot ends the first piece, no row starts with a bare dot, every break is between whole quantities; at 1280 px two rows, nothing clipped. Answer box below intact.
+- - Own Playwright captures from the current preview/en pages (?ratkaisut=1, every details box open, hidden feedback and model boxes revealed) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-7/; measured in the same run: page scrollWidth equals the viewport, no KaTeX error, no formula past its box.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

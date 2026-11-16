@@ -127,7 +127,9 @@
 ## fy1-4-L1-07
 **Kysytty:** mitä saman metallin kappaleiden massa-tilavuuskuvaajan suoran kulmakerroin $7{,}9$ kertoo.
 **Periaate:** Kulmakerroin on $k = \Delta y : \Delta x$, joten sen yksikkö on $y$:n yksikkö jaettuna $x$:n yksiköllä. Tässä $y$ on massa grammoina ja $x$ tilavuus kuutiosenttimetreinä, joten yksikkö on $\text{g/cm}^3$. Suora kulkee origon kautta, joten vakiotermi on $b = 0$ ja massa on suoraan verrannollinen tilavuuteen.
-**Mallivastaus:** Kulmakerroin on $7{,}9\,\text{g/cm}^3$. Jokaista lisättyä kuutiosenttimetriä kohti massa kasvaa $7{,}9$ grammaa, eli kulmakerroin on tämän metallin tiheys. Kulmakerroin on tiheys vain, koska kaikki kappaleet ovat samaa ainetta; eri aineista tehtyihin kappaleisiin ei sovitettaisi yhtä suoraa. Se ei ole massa tilavuudella nolla (se olisi vakiotermi), eikä se ole yksikötön luku eikä käänteinen $\text{cm}^3/\text{g}$.
+**Mallivastaus:** Kulmakerroin on $7{,}9\,\text{g/cm}^3$. Jokaista lisättyä kuutiosenttimetriä kohti massa kasvaa $7{,}9$ grammaa, eli kulmakerroin on tämän metallin tiheys. Kulmakerroin on tiheys vain, koska kaikki kappaleet ovat samaa ainetta; eri aineista tehtyihin kappaleisiin ei sovitettaisi yhtä suoraa.
+
+Se ei ole massa tilavuudella nolla (se olisi vakiotermi), eikä se ole yksikötön luku eikä käänteinen $\text{cm}^3/\text{g}$.
 
 ## fy1-4-L1-08
 **Annettu:** suoran piste $(m_1;\ l_1) = (3{,}0\,\text{kg};\ 7{,}0\,\text{cm})$ ja kulmakerroin $k = 1{,}5\,\tfrac{\text{cm}}{\text{kg}}$
@@ -176,11 +178,15 @@
 **Annettu:** taulukon mittauspisteet $(m;\ x)$ välillä $100\text{–}700\,\text{g}$; venymät $8{,}1$, $16{,}3$, $24{,}2$, $32{,}5$, $40{,}1$, $51{,}8$ ja $68{,}9\,\text{mm}$
 **Kysytty:** kuormien väli, jolla lineaarinen malli pätee, sen suoran kulmakerroin $k$ yksikössä $\text{mm/g}$ ja perustelu, miksi malli ei päde koko alueella
 **Periaate:** Lineaarinen malli sopii sille kuormien alueelle, jolla pisteet asettuvat suoralle. Sovitetaan suora pisteisiin, jotka ovat suoralla, ja tarkistetaan, mihin kohtaan muut pisteet eivät enää sovi. Mitatuista pisteistä alueella $100\text{–}500\,\text{g}$ venymä kasvaa tasaisesti, mutta suuremmilla kuormilla jousi venyy enemmän kuin suora ennustaa.
-**Kuvaajan lukeminen:** Viisi ensimmäistä pistettä asettuvat suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee likimain pisteiden $(0\,\text{g};\ 0{,}2\,\text{mm})$ ja $(500\,\text{g};\ 40{,}3\,\text{mm})$ kautta. Pisteet $600\,\text{g}$ ja $700\,\text{g}$ ovat suoran yläpuolella, ja ero kasvaa: suora antaisi $48{,}3\,\text{mm}$ ja $56{,}3\,\text{mm}$, mutta mitattu on $51{,}8\,\text{mm}$ ja $68{,}9\,\text{mm}$. Poikkeama on $3{,}5\,\text{mm}$ ja $12{,}6\,\text{mm}$, kun alueen sisällä poikkeama on enintään $0{,}3\,\text{mm}$.
+**Kuvaajan lukeminen:** Viisi ensimmäistä pistettä asettuvat suoralle, jonka molemmille puolille jää pisteitä. Sovitettu suora kulkee likimain pisteiden $(0\,\text{g};\ 0{,}2\,\text{mm})$ ja $(500\,\text{g};\ 40{,}3\,\text{mm})$ kautta. Pisteet $600\,\text{g}$ ja $700\,\text{g}$ ovat suoran yläpuolella, ja ero kasvaa: suora antaisi $48{,}3\,\text{mm}$ ja $56{,}3\,\text{mm}$, mutta mitattu on $51{,}8\,\text{mm}$ ja $68{,}9\,\text{mm}$.
+
+Poikkeama on $3{,}5\,\text{mm}$ ja $12{,}6\,\text{mm}$, kun alueen sisällä poikkeama on enintään $0{,}3\,\text{mm}$.
 **Kaava:** $k = \dfrac{\Delta x}{\Delta m} = \dfrac{x_2 - x_1}{m_2 - m_1}$
 **Muunnokset:** Ei tarvita: venymä on millimetreinä ja massa grammoina.
 **Sijoitus:** $k = \dfrac{40{,}3\,\text{mm} - 0{,}2\,\text{mm}}{500\,\text{g} - 0\,\text{g}} = \dfrac{40{,}1\,\text{mm}}{500\,\text{g}} = 0{,}0802\,\tfrac{\text{mm}}{\text{g}}$
-**Vastaus:** $0{,}080\,\text{mm/g}$, kaksi merkitsevää numeroa, koska suora sovitetaan silmämääräisesti. Lineaarinen malli pätee mitatuista pisteistä välillä $100\text{–}500\,\text{g}$, ja ekstrapoloiden sen voi olettaa pätevän myös pienemmille kuormille aina kuormattomaan jouseen asti, koska suora kulkee likimain origon kautta ja kuormaton jousi ei veny. Kuormat $600\,\text{g}$ ja $700\,\text{g}$ poikkeavat suorasta selvästi enemmän kuin mittaushajonta selittää: jousi ylikuormittuu eli venyy kimmoisen alueensa yli, jolloin venymä ei ole enää suoraan verrannollinen kuormaan ja jousi voi jäädä pysyvästi venyneeksi. Suoraa ei saa jatkaa tälle kuormien alueelle.
+**Vastaus:** $0{,}080\,\text{mm/g}$, kaksi merkitsevää numeroa, koska suora sovitetaan silmämääräisesti. Lineaarinen malli pätee mitatuista pisteistä välillä $100\text{–}500\,\text{g}$, ja ekstrapoloiden sen voi olettaa pätevän myös pienemmille kuormille aina kuormattomaan jouseen asti, koska suora kulkee likimain origon kautta ja kuormaton jousi ei veny.
+
+Kuormat $600\,\text{g}$ ja $700\,\text{g}$ poikkeavat suorasta selvästi enemmän kuin mittaushajonta selittää: jousi ylikuormittuu eli venyy kimmoisen alueensa yli, jolloin venymä ei ole enää suoraan verrannollinen kuormaan ja jousi voi jäädä pysyvästi venyneeksi. Suoraa ei saa jatkaa tälle kuormien alueelle.
 **Järkevyys:** Alkuosan kulmakerroin $0{,}080\,\text{mm/g}$ vastaa pienen kuorman jousta (vrt. $8\,\text{mm}$ kuormalla $100\,\text{g}$). Jos suora sovitettaisiin kaikkiin seitsemään pisteeseen, kulmakerroin kasvaisi ja väli $100\text{–}500\,\text{g}$ kuvautuisi huonommin.
 
 ## fy1-4-L3-05
@@ -191,13 +197,17 @@
 **Kaava:** $k = \dfrac{\Delta s}{\Delta t}$, $\;k = \dfrac{k_\text{max} + k_\text{min}}{2}$, $\;\Delta k = \dfrac{k_\text{max} - k_\text{min}}{2}$ ja suhteellinen epävarmuus $\dfrac{\Delta k}{k} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita: kulmakertoimet saadaan yksikössä $\text{m/s}$, ja prosenttiosuus on yksikötön suhde kerrottuna luvulla $100$.
 **Sijoitus:** $k_\text{max} = \dfrac{2{,}75\,\text{m}}{5{,}0\,\text{s}} = 0{,}55\,\tfrac{\text{m}}{\text{s}}$ ja $k_\text{min} = \dfrac{1{,}20\,\text{m}}{3{,}0\,\text{s}} = 0{,}40\,\tfrac{\text{m}}{\text{s}}$. Keskiarvo $k = \dfrac{0{,}55 + 0{,}40}{2}\,\tfrac{\text{m}}{\text{s}} = 0{,}475\,\tfrac{\text{m}}{\text{s}}$ ja $\Delta k = \dfrac{0{,}55 - 0{,}40}{2}\,\tfrac{\text{m}}{\text{s}} = 0{,}075\,\tfrac{\text{m}}{\text{s}}$, joten $\dfrac{\Delta k}{k} \cdot 100\,\% = \dfrac{0{,}075}{0{,}475} \cdot 100\,\% = 15{,}8\,\%$
-**Vastaus:** Oppilas käytti epävarmuutena koko kulmakertoimien erotusta $0{,}15\,\tfrac{\text{m}}{\text{s}}$ eikä sen puolikasta; oikea epävarmuus on $16\,\%$, kaksi merkitsevää numeroa kuten pisteiden koordinaateissa (esimerkiksi $0{,}75\,\text{m}$). Kulmakerroin on siis noin $(0{,}48 \pm 0{,}08)\,\tfrac{\text{m}}{\text{s}}$. Arvio kertoo, kuinka paljon kulmakerroin voi hajonnan vuoksi vaihdella, mutta se ei takaa, että todellinen nopeus on tällä välillä: väli on arvioitu rajaus eikä varma raja.
+**Vastaus:** Oppilas käytti epävarmuutena koko kulmakertoimien erotusta $0{,}15\,\tfrac{\text{m}}{\text{s}}$ eikä sen puolikasta; oikea epävarmuus on $16\,\%$, kaksi merkitsevää numeroa kuten pisteiden koordinaateissa (esimerkiksi $0{,}75\,\text{m}$). Kulmakerroin on siis noin $(0{,}48 \pm 0{,}08)\,\tfrac{\text{m}}{\text{s}}$.
+
+Arvio kertoo, kuinka paljon kulmakerroin voi hajonnan vuoksi vaihdella, mutta se ei takaa, että todellinen nopeus on tällä välillä: väli on arvioitu rajaus eikä varma raja.
 **Järkevyys:** Oikea väli $(0{,}475 \pm 0{,}075)\,\tfrac{\text{m}}{\text{s}}$ on $0{,}40\text{–}0{,}55\,\tfrac{\text{m}}{\text{s}}$, eli täsmälleen loivin ja jyrkin suora. Oppilaan väli $(0{,}475 \pm 0{,}15)\,\tfrac{\text{m}}{\text{s}}$ olisi $0{,}33\text{–}0{,}63\,\tfrac{\text{m}}{\text{s}}$, joka ulottuu selvästi yli kummankin suoran, joten $32\,\%$ on kaksinkertainen. Kaikkiin kuuteen pisteeseen sovitetun parhaan suoran kulmakerroin, noin $0{,}51\,\tfrac{\text{m}}{\text{s}}$, on välin sisällä.
 
 ## fy1-4-L2-08
 **Kysytty:** millä rivillä kulmakertoimen laskussa on virhe.
 **Periaate:** Kulmakerroin on $k = \dfrac{\Delta y}{\Delta x}$, ja se lasketaan sovitetulta suoralta valituista kahdesta pisteestä. Sekä osoittajan että nimittäjän muutos on saman pisteparin loppuarvo miinus alkuarvo. Kulmakertoimen yksikkö on $y$:n yksikkö jaettuna $x$:n yksiköllä, tässä $\tfrac{\textsf{l}}{\text{min}}$.
-**Mallivastaus:** Virhe on rivillä 3. Ajan muutos on $$\begin{aligned} \Delta t &= 10{,}0\,\text{min} - 2{,}0\,\text{min} \\ &= 8{,}0\,\text{min} \end{aligned}$$, ei $12{,}0\,\text{min}$. Luku $12{,}0$ syntyy, kun ajat lasketaan yhteen tai kun tilavuuden muutoksen luku kopioidaan nimittäjään. Rivit 1 ja 2 ovat oikein: pisteet luetaan sovitetulta suoralta kaukana toisistaan, ja $\Delta V = 17{,}0\,\textsf{l} - 5{,}0\,\textsf{l} = 12{,}0\,\textsf{l}$. Rivin 4 kaava ja jakolasku ovat oikein, mutta se käyttää rivin 3 väärää lukua. Oikea kulmakerroin on $k = \dfrac{12{,}0\,\textsf{l}}{8{,}0\,\text{min}} = 1{,}5\,\tfrac{\textsf{l}}{\text{min}}$. Tarkistus: $1{,}5\,\tfrac{\textsf{l}}{\text{min}} \cdot 8{,}0\,\text{min} = 12{,}0\,\textsf{l}$, mikä vastaa tilavuuden muutosta, kun taas $1{,}0\,\tfrac{\textsf{l}}{\text{min}} \cdot 8{,}0\,\text{min} = 8{,}0\,\textsf{l}$ ei vastaa.
+**Mallivastaus:** Virhe on rivillä 3. Ajan muutos on $$\begin{aligned} \Delta t &= 10{,}0\,\text{min} - 2{,}0\,\text{min} \\ &= 8{,}0\,\text{min} \end{aligned}$$, ei $12{,}0\,\text{min}$. Luku $12{,}0$ syntyy, kun ajat lasketaan yhteen tai kun tilavuuden muutoksen luku kopioidaan nimittäjään.
+
+Rivit 1 ja 2 ovat oikein: pisteet luetaan sovitetulta suoralta kaukana toisistaan, ja $\Delta V = 17{,}0\,\textsf{l} - 5{,}0\,\textsf{l} = 12{,}0\,\textsf{l}$. Rivin 4 kaava ja jakolasku ovat oikein, mutta se käyttää rivin 3 väärää lukua. Oikea kulmakerroin on $k = \dfrac{12{,}0\,\textsf{l}}{8{,}0\,\text{min}} = 1{,}5\,\tfrac{\textsf{l}}{\text{min}}$. Tarkistus: $1{,}5\,\tfrac{\textsf{l}}{\text{min}} \cdot 8{,}0\,\text{min} = 12{,}0\,\textsf{l}$, mikä vastaa tilavuuden muutosta, kun taas $1{,}0\,\tfrac{\textsf{l}}{\text{min}} \cdot 8{,}0\,\text{min} = 8{,}0\,\textsf{l}$ ei vastaa.
 
 ## fy1-4-L1-09
 **Annettu:** tilavuus $V = 45\,\text{cm}^3$; taulukosta (MAFY-taulukko, kiinteiden aineiden tiheyksiä, alumiini) $\rho = 2{,}70\cdot10^{3}\,\text{kg/m}^3$
@@ -218,7 +228,9 @@
 
 **Mallivastaus a):** Akselien nimet ja yksiköt: $t\,(\text{h})$ ja $T\,({}^\circ\text{C})$. Pisteet merkitään erillisinä, ja niiden kautta voi piirtää ohuen käyrän, koska lämpötila muuttuu jatkuvasti myös mittausten välillä.
 
-**Kuvaajan lukeminen:** Vaaka-akselille tulee aika $t$ tunteina ja pystyakselille lämpötila $T$ Celsius-asteina. Pisteet nousevat aamuyöstä iltapäivään ja laskevat sen jälkeen, joten kuvaaja on kaari eikä suora. Lämpötila on alimmillaan klo $4$ ja korkeimmillaan klo $16$. Klo $6$–$12$ pisteet ovat likimain suoralla: kahden tunnin muutokset ovat $3{,}2$; $3{,}1$ ja $2{,}8\,{}^\circ\text{C}$.
+**Kuvaajan lukeminen:** Vaaka-akselille tulee aika $t$ tunteina ja pystyakselille lämpötila $T$ Celsius-asteina. Pisteet nousevat aamuyöstä iltapäivään ja laskevat sen jälkeen, joten kuvaaja on kaari eikä suora. Lämpötila on alimmillaan klo $4$ ja korkeimmillaan klo $16$.
+
+Klo $6$–$12$ pisteet ovat likimain suoralla: kahden tunnin muutokset ovat $3{,}2$; $3{,}1$ ja $2{,}8\,{}^\circ\text{C}$.
 
 **Kaava:** $k = \dfrac{\Delta T}{\Delta t} = \dfrac{T_2 - T_1}{t_2 - t_1}$ ja lineaarinen malli $T(t) = T_1 + k(t - t_1)$
 
@@ -236,7 +248,9 @@ k &= \dfrac{T_2 - T_1}{t_2 - t_1} \\
 
 Aikavälin ulkopuolella malli epäonnistuu. Klo $16$ se antaa $22{,}4\,{}^\circ\text{C}$, vaikka mitattu lämpötila on $18{,}1\,{}^\circ\text{C}$, ja klo $0$ se antaisi $-1{,}9\,{}^\circ\text{C}$, vaikka mitattu on $8{,}1\,{}^\circ\text{C}$. Malli on hyvä vain sillä alueella, jonka mittauksista se tehtiin.
 
-**Mallivastaus d):** Aamupäivän nousu johtuu siitä, että aurinko lämmittää maanpintaa ja ilmaa yhä tehokkaammin. Iltapäivällä lämmitys heikkenee ja yöllä ilma jäähtyy, joten lämpötila ei voi kasvaa tasaisesti koko vuorokautta. Seuraavan vuorokauden lämpötilaan vaikuttavat lisäksi pilvisyys, tuuli ja se, millainen ilmamassa alueelle saapuu. Yhden aamupäivän suora ei sisällä näistä mitään, joten sillä ei voi ennustaa toista vuorokautta. Siihen tarvitaan sääennuste, joka perustuu ilmakehän fysiikan malleihin ja laajaan havaintoaineistoon.
+**Mallivastaus d):** Aamupäivän nousu johtuu siitä, että aurinko lämmittää maanpintaa ja ilmaa yhä tehokkaammin. Iltapäivällä lämmitys heikkenee ja yöllä ilma jäähtyy, joten lämpötila ei voi kasvaa tasaisesti koko vuorokautta. Seuraavan vuorokauden lämpötilaan vaikuttavat lisäksi pilvisyys, tuuli ja se, millainen ilmamassa alueelle saapuu.
+
+Yhden aamupäivän suora ei sisällä näistä mitään, joten sillä ei voi ennustaa toista vuorokautta. Siihen tarvitaan sääennuste, joka perustuu ilmakehän fysiikan malleihin ja laajaan havaintoaineistoon.
 
 **Vastaus:** Lämpötilan keskimääräinen muutosnopeus klo $6$–$12$ on $1{,}5\,{}^\circ\text{C/h}$ (laskettu arvo $1{,}517\,{}^\circ\text{C/h}$), kaksi merkitsevää numeroa, koska lämpötilan muutos $9{,}1\,{}^\circ\text{C}$ on kahden numeron tarkkuudella ja aikaväli $6\,\text{h}$ on tarkka. Omalla aineistollasi muutosnopeus ja aikaväli ovat toiset, mutta ratkaisutapa on sama.
 

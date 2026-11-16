@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 96142a8465153f10
-
-Light delta review (teacher 2026-11-07): diff origin/main..f9cecc6 and what it touches.
+CONTENT-HASH: 5681f9ac9d57c298
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- None.
 
 ## Checked
-- lesson.md:440 Tulos: a = (T cos α − F_μ)/m from exact values only, given to 3 s.f.; g limits only N (3 s.f.): earlier Blocking item resolved
-- Recomputed T_x = 65,53 N, T_y = 45,89 N, a = 2,961 m/s², N = 71,83 N
-- Järkevyys 71,8 + 45,9 ≈ 118 N, frictionless 5,5 m/s²: consistent; no stale 3,0 m/s² / 72 N in inquiry.json or exit ticket
+batch delta review: Sled sliding alone on level ice after release: weight, normal force, small friction is the one correct option; distractor feedback (rope force ends at release; N = G on level ice, now stated) correct; new alt-text entry for the top-view grid figure agrees with the fi text (1 ruutu = 2,0 N, F1 5 right 6 up, F2 2 left 2 down).

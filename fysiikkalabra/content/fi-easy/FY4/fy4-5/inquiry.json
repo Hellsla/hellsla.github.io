@@ -22,23 +22,23 @@
       "id": "kertaus",
       "stage": "herata",
       "type": "choice",
-      "title": "Kertaa: liukuva kiekko",
+      "title": "Kertaa: liukuva pulkka",
       "optional": true,
       "fbd": "identify",
-      "prompt": "Jääkiekkoa on lyöty. Nyt se liukuu yksin jäällä kohti maalia. Mitkä voimat vaikuttavat kiekkoon liukumisen aikana? Ilmanvastus jätetään huomiotta.",
+      "prompt": "Lapsi päästää narusta irti. Pulkka liukuu hetken yksin vaakasuoralla jäällä. Mitkä voimat pulkkaan vaikuttavat liukumisen aikana? Ilmanvastusta ei oteta huomioon.",
       "choices": [
         {
           "text": "Paino, jään tukivoima ja jään pieni kitkavoima.",
           "correct": true,
-          "feedback": "Oikein. Kiekkoon vaikuttavat vain kappaleet, jotka koskettavat sitä tai vetävät sitä. Ne ovat Maa ja jää. Maila ei enää koske kiekkoon. Siksi mailan voima loppui, kun lyönti päättyi. Luvussa *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki* opit, että liike jatkuu ilman eteenpäin vetävää voimaa."
+          "feedback": "Oikein. Pulkkaan vaikuttavat vain kappaleet, jotka koskettavat sitä tai vetävät sitä. Ne ovat Maa ja jää. Lapsi ei enää vedä narusta. Siksi narun voima loppui, kun lapsi päästi irti. Luvussa *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki* opit, että liike jatkuu ilman eteenpäin vetävää voimaa."
         },
         {
-          "text": "Paino, jään tukivoima, kitkavoima ja eteenpäin vievä lyönnin voima.",
-          "feedback": "Lyönnin voima vaikutti vain silloin, kun maila kosketti kiekkoa. Liukuvaan kiekkoon ei vaikuta mikään kappale eteenpäin. Kiekko liikkuu, koska sillä on nopeus. Mikään ei työnnä sitä."
+          "text": "Paino, jään tukivoima, kitkavoima ja eteenpäin vievä narun voima.",
+          "feedback": "Narun voima vaikutti vain silloin, kun lapsi veti narusta. Mikään kappale ei vaikuta liukuvaan pulkkaan eteenpäin. Pulkka liikkuu, koska sillä on nopeus. Mikään ei vedä sitä."
         },
         {
-          "text": "Vain paino ja eteenpäin vievä voima, koska jää ei vaikuta liukuvaan kiekkoon.",
-          "feedback": "Kiekko ei vajoa jään läpi, joten jää tukee sitä. Tukivoima on yhtä suuri kuin paino. Eteenpäin vievää voimaa ei ole, koska mikään kappale ei työnnä kiekkoa liukumisen aikana."
+          "text": "Vain paino ja eteenpäin vievä voima, koska jää ei vaikuta liukuvaan pulkkaan.",
+          "feedback": "Pulkka ei vajoa jään läpi. Siksi jää tukee sitä. Vaakasuoralla jäällä tukivoima on yhtä suuri kuin paino. Eteenpäin vievää voimaa ei ole, koska mikään kappale ei vedä eikä työnnä pulkkaa liukumisen aikana."
         }
       ]
     },

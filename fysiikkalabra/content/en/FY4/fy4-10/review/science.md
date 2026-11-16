@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 0bfb415053657560
+CONTENT-HASH: dfdef7affccf750c
 
 ## Blocking
 
 ## Polish
+- None.
 
 ## Checked
-Delta review: the three experiment "names" values for the situation selector changed from Finnish "tilanne" to "situation" (git diff HEAD~1). Correct English, no Finnish left in the experiment names; keys, options, numbers and physics untouched and as in content/fi. check_i18n 0 errors.
+batch delta review: the cue-ball retrieval question: Δp = 60 N · 0.0050 s = 0.30 kg·m/s, and the quotient is 12 000. The statement that the mass is not needed is right, the stated small other horizontal forces make FΔt the net impulse, and the Newton's cradle caption is right.

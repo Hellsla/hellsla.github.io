@@ -181,7 +181,13 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Kaava:** $V' = V_2 - V_1$, $V = V' - V_\text{k}$, $\rho = \dfrac{m}{V}$ ja $\rho' = \dfrac{m}{V'}$; prosenttivirhe on $\dfrac{\rho' - \rho}{\rho} \cdot 100\,\%$
 **Muunnokset:** $1\,\text{ml} = 1\,\text{cm}^3$, joten $V' = 12{,}0\,\text{cm}^3$ ja $V_\text{k} = 2{,}0\,\text{cm}^3$.
 **Sijoitus:** $V' = 62{,}0\,\text{ml} - 50{,}0\,\text{ml} = 12{,}0\,\text{ml}$ ja $V = 12{,}0\,\text{cm}^3 - 2{,}0\,\text{cm}^3 = 10{,}0\,\text{cm}^3$. Todellinen tiheys on $\rho = \dfrac{113\,\text{g}}{10{,}0\,\text{cm}^3} = 11{,}3\,\tfrac{\text{g}}{\text{cm}^3}$ ja oppilaan tulos $\rho' = \dfrac{113\,\text{g}}{12{,}0\,\text{cm}^3} = 9{,}42\,\tfrac{\text{g}}{\text{cm}^3}$. Virhe on $\dfrac{9{,}42 - 11{,}3}{11{,}3} \cdot 100\,\% = -16{,}7\,\%$.
-**Vastaus:** Todellinen tiheys on $11{,}3\,\tfrac{\text{g}}{\text{cm}^3}$, kolme merkitsevää numeroa, koska massa ja lukemat on annettu kolmella numerolla. Oppilaan tulos $9{,}42\,\tfrac{\text{g}}{\text{cm}^3}$ on noin $17\,\%$ liian pieni, koska mitattu tilavuus oli liian suuri. Todellinen tiheys vastaa lyijyä ($11{,}3\,\tfrac{\text{g}}{\text{cm}^3}$), mutta virheellinen tulos on lähempänä kuparia ($8{,}96\,\tfrac{\text{g}}{\text{cm}^3}$), joten kupla voi johtaa väärään metalliin. Kuplan voi poistaa napauttamalla kappaletta ja sen havaitsee lasin sivusta katsomalla.
+**Vastaus:** Todellinen tiheys on $11{,}3\,\tfrac{\text{g}}{\text{cm}^3}$, kolme merkitsevää numeroa, koska massa ja lukemat on annettu kolmella numerolla.
+
+Oppilaan tulos $9{,}42\,\tfrac{\text{g}}{\text{cm}^3}$ on noin $17\,\%$ liian pieni, koska mitattu tilavuus oli liian suuri.
+
+Todellinen tiheys vastaa lyijyä ($11{,}3\,\tfrac{\text{g}}{\text{cm}^3}$), mutta virheellinen tulos on lähempänä kuparia ($8{,}96\,\tfrac{\text{g}}{\text{cm}^3}$), joten kupla voi johtaa väärään metalliin.
+
+Kuplan voi poistaa napauttamalla kappaletta ja sen havaitsee lasin sivusta katsomalla.
 **Järkevyys:** Massa on oikein ja tilavuus liian suuri, joten tiheyden on pakko tulla liian pieneksi, ja niin kävi: $9{,}42 < 11{,}3$. Tarkistus: $0{,}83 \cdot 11{,}3 \approx 9{,}4$.
 
 ## fy1-7-L3-05
@@ -192,7 +198,13 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Muunnokset:** Ei tarvita: massat ovat grammoina, tilavuudet kuutiosenttimetreinä ja tiheydet yksikössä $\text{g/cm}^3$.
 **Sijoitus:** $V_\text{Cu} = \dfrac{520\,\text{g} - 2{,}70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3}{8{,}96\,\tfrac{\text{g}}{\text{cm}^3} - 2{,}70\,\tfrac{\text{g}}{\text{cm}^3}} = \dfrac{250\,\text{g}}{6{,}26\,\tfrac{\text{g}}{\text{cm}^3}} = 39{,}9\,\text{cm}^3$
 **Vastaus:** $39{,}9\,\text{cm}^3$, kolme merkitsevää numeroa, koska taulukon tiheydet on annettu kolmella numerolla. Tilavuus $100\,\text{cm}^3$ ja massa $520\,\text{g}$ ovat tarkkoja arvoja, joten ne eivät rajoita tarkkuutta. Alumiinia on $$\begin{aligned} V_\text{Al} &= 100\,\text{cm}^3 - 39{,}9\,\text{cm}^3 \\ &= 60{,}1\,\text{cm}^3 \end{aligned}$$.
-**Järkevyys:** Jos kappale olisi pelkkää alumiinia, sen massa olisi $270\,\text{g}$, ja pelkkää kuparia $896\,\text{g}$. Todellinen massa $520\,\text{g}$ on näiden välissä ja lähempänä alumiinia, joten kuparia on alle puolet tilavuudesta, kuten $39{,}9\,\text{cm}^3$. Alumiinia on enemmän tilavuuden mukaan ($60{,}1\,\text{cm}^3$), mutta kuparia on enemmän massan mukaan: kuparin massa on noin $357{,}5\,\text{g}$ ja alumiinin noin $162{,}3\,\text{g}$, koska kuparin tiheys on moninkertainen. Tarkistus: $8{,}96 \cdot 39{,}9\,\text{g} + 2{,}70 \cdot 60{,}1\,\text{g} = 357{,}5\,\text{g} + 162{,}3\,\text{g} = 519{,}8\,\text{g} \approx 520\,\text{g}$.
+**Järkevyys:** Jos kappale olisi pelkkää alumiinia, sen massa olisi $270\,\text{g}$, ja pelkkää kuparia $896\,\text{g}$.
+
+Todellinen massa $520\,\text{g}$ on näiden välissä ja lähempänä alumiinia, joten kuparia on alle puolet tilavuudesta, kuten $39{,}9\,\text{cm}^3$.
+
+Alumiinia on enemmän tilavuuden mukaan ($60{,}1\,\text{cm}^3$), mutta kuparia on enemmän massan mukaan: kuparin massa on noin $357{,}5\,\text{g}$ ja alumiinin noin $162{,}3\,\text{g}$, koska kuparin tiheys on moninkertainen.
+
+Tarkistus: $8{,}96 \cdot 39{,}9\,\text{g} + 2{,}70 \cdot 60{,}1\,\text{g} = 357{,}5\,\text{g} + 162{,}3\,\text{g} = 519{,}8\,\text{g} \approx 520\,\text{g}$.
 
 ## fy1-7-L2-08
 **Annettu:** kappale A: $m_\text{A} = 135\,\text{g}$, $V_\text{A} = 50\,\text{cm}^3$; kappale B: $m_\text{B} = 0{,}36\,\text{kg}$, $V_\text{B} = 0{,}40\,\text{dm}^3$; kappale C: $m_\text{C} = 4{,}5\,\text{kg}$, $V_\text{C} = 500\,\text{cm}^3$; kappale D: $m_\text{D} = 120\,\text{g}$, $V_\text{D} = 100\,\text{ml}$
@@ -257,7 +269,11 @@ Kappale B kelluisi vedessä ja muut uppoaisivat. Massan mukaan järjestys olisi 
 
 **Kuvaajan lukeminen:** Vaaka-akselille tulee halkaisija $d$ kilometreinä ja pystyakselille keskitiheys $\rho$ yksikössä $\text{kg/m}^3$. Pisteitä ei yhdistetä toisiinsa, koska ne ovat eri planeettoja eivätkä saman suureen peräkkäisiä mittauksia.
 
-**Mallivastaus b):** Pisteet jakautuvat kahteen ryhmään. Pienet kiviplaneetat ($d < 13\,000\,\text{km}$) ovat tiheitä, $\rho \approx 3900$–$5500\,\text{kg/m}^3$. Suuret kaasu- ja jääjättiläiset ($d > 49\,000\,\text{km}$) ovat paljon harvempia, $\rho \approx 690$–$1640\,\text{kg/m}^3$. Kuvaajassa ei ole yhtä nousevaa tai laskevaa käyrää, jolle pisteet asettuisivat. Ryhmien sisälläkään järjestys ei seuraa kokoa: Merkurius on pienin mutta lähes yhtä tiheä kuin Maa, ja jättiläisistä pienin, Neptunus, on tihein.
+**Mallivastaus b):** Pisteet jakautuvat kahteen ryhmään. Pienet kiviplaneetat ($d < 13\,000\,\text{km}$) ovat tiheitä, $\rho \approx 3900$–$5500\,\text{kg/m}^3$.
+
+Suuret kaasu- ja jääjättiläiset ($d > 49\,000\,\text{km}$) ovat paljon harvempia, $\rho \approx 690$–$1640\,\text{kg/m}^3$.
+
+Kuvaajassa ei ole yhtä nousevaa tai laskevaa käyrää, jolle pisteet asettuisivat. Ryhmien sisälläkään järjestys ei seuraa kokoa: Merkurius on pienin mutta lähes yhtä tiheä kuin Maa, ja jättiläisistä pienin, Neptunus, on tihein.
 
 **Kaava:** $V = \dfrac{\pi d^3}{6}$, joten $\rho = \dfrac{m}{V} = \dfrac{6m}{\pi d^3}$
 
@@ -279,9 +295,25 @@ $$\begin{aligned}
 &\approx 619\,\text{kg/m}^3
 \end{aligned}$$
 
-**Mallivastaus c):** Maan laskettu keskitiheys poikkeaa NASAn arvosta $5514\,\text{kg/m}^3$ vain noin $0{,}4\,\%$. Saturnuksen laskettu arvo on noin $10\,\%$ pienempi kuin NASAn arvo $687\,\text{kg/m}^3$. Ero johtuu mallista, ei laskuvirheestä. Saturnus pyörähtää akselinsa ympäri noin $11$ tunnissa, ja nopeasti pyörivä kaasupallo on litistynyt: navalta navalle se on selvästi kapeampi kuin päiväntasaajalta. Päiväntasaajan halkaisijasta laskettu pallo on siksi liian suuri, ja kun tilavuus on liian suuri, laskettu tiheys jää liian pieneksi. NASA jakaa massan planeetan todellisella tilavuudella. Myös Maa on pyörimisensä vuoksi hieman litistynyt, mutta paljon vähemmän kuin Saturnus, koska se pyörii hitaammin. Maan pieni ero johtuu enimmäkseen tästä litistymisestä.
+**Mallivastaus c):** Maan laskettu keskitiheys poikkeaa NASAn arvosta $5514\,\text{kg/m}^3$ vain noin $0{,}4\,\%$.
 
-**Mallivastaus d):** Väite ei pidä paikkaansa. Neljä suurinta planeettaa ovat aineiston harvimmat, ja suurin planeetta Jupiter on noin neljä kertaa harvempi kuin Maa. Väite ei päde ryhmien sisälläkään: Saturnus on Neptunusta suurempi mutta vain noin puolet sen tiheydestä, ja pieni Merkurius on tiheämpi kuin suurempi Mars. Tiheys riippuu ennen kaikkea siitä, mistä aineista planeetta koostuu. Kiviplaneetat ovat kiveä ja metallia, jättiläiset suurimmaksi osaksi kevyitä aineita, kuten vetyä ja heliumia. Aineistosta ei siis voi päätellä tiheyttä koosta. Kahdeksan planeetan aineisto ei myöskään riitä yleiseksi laiksi, vaikka siinä näkyisi jokin suuntaus.
+Saturnuksen laskettu arvo on noin $10\,\%$ pienempi kuin NASAn arvo $687\,\text{kg/m}^3$.
+
+Ero johtuu mallista, ei laskuvirheestä.
+
+Saturnus pyörähtää akselinsa ympäri noin $11$ tunnissa, ja nopeasti pyörivä kaasupallo on litistynyt: navalta navalle se on selvästi kapeampi kuin päiväntasaajalta. Päiväntasaajan halkaisijasta laskettu pallo on siksi liian suuri, ja kun tilavuus on liian suuri, laskettu tiheys jää liian pieneksi. NASA jakaa massan planeetan todellisella tilavuudella.
+
+Myös Maa on pyörimisensä vuoksi hieman litistynyt, mutta paljon vähemmän kuin Saturnus, koska se pyörii hitaammin. Maan pieni ero johtuu enimmäkseen tästä litistymisestä.
+
+**Mallivastaus d):** Väite ei pidä paikkaansa.
+
+Neljä suurinta planeettaa ovat aineiston harvimmat, ja suurin planeetta Jupiter on noin neljä kertaa harvempi kuin Maa.
+
+Väite ei päde ryhmien sisälläkään: Saturnus on Neptunusta suurempi mutta vain noin puolet sen tiheydestä, ja pieni Merkurius on tiheämpi kuin suurempi Mars.
+
+Tiheys riippuu ennen kaikkea siitä, mistä aineista planeetta koostuu. Kiviplaneetat ovat kiveä ja metallia, jättiläiset suurimmaksi osaksi kevyitä aineita, kuten vetyä ja heliumia.
+
+Aineistosta ei siis voi päätellä tiheyttä koosta. Kahdeksan planeetan aineisto ei myöskään riitä yleiseksi laiksi, vaikka siinä näkyisi jokin suuntaus.
 
 **Vastaus:** Maan keskitiheys on $\rho_\text{Maa} \approx 5{,}49\cdot10^{3}\,\text{kg/m}^3$, kolme merkitsevää numeroa kuten massassa $5{,}97\cdot10^{24}\,\text{kg}$. Saturnuksen keskitiheys on $619\,\text{kg/m}^3$.
 
@@ -330,7 +362,13 @@ m_\text{enn} &= \rho V_\text{enn} \\
 
 **Mallivastaus c):** Simulaatio näytti massan $25{,}00\,\text{kg}$, joten ennuste osui kolmen merkitsevän numeron tarkkuudella. Malli toimii myös mitatun alueen ulkopuolella, koska massan ja tilavuuden suhde on aineelle ominainen vakio.
 
-**Mallivastaus d):** Ei voi. Tiheysmittarin asteikolla lasi (Glass) on samassa kohdassa kuin alumiini, $2{,}70\,\tfrac{\text{kg}}{\textsf{l}}$, joten näillä kahdella aineella on simulaatiossa sama tiheys. Tiheys kertoo siis, mitkä aineet ovat mahdollisia, mutta ei aina yksikäsitteisesti, mikä aine on kyseessä. Todellisessa mittauksessa tiheydellä on lisäksi epävarmuus, jonka sisään voi mahtua useita aineita. Myös ontto kappale tai kahden aineen seos voi antaa saman keskitiheyden kuin jokin puhdas aine. Varmaan tunnistamiseen tarvitaan muita ominaisuuksia, kuten väri, läpinäkyvyys, kovuus tai sähkönjohtavuus.
+**Mallivastaus d):** Ei voi. Tiheysmittarin asteikolla lasi (Glass) on samassa kohdassa kuin alumiini, $2{,}70\,\tfrac{\text{kg}}{\textsf{l}}$, joten näillä kahdella aineella on simulaatiossa sama tiheys.
+
+Tiheys kertoo siis, mitkä aineet ovat mahdollisia, mutta ei aina yksikäsitteisesti, mikä aine on kyseessä.
+
+Todellisessa mittauksessa tiheydellä on lisäksi epävarmuus, jonka sisään voi mahtua useita aineita. Myös ontto kappale tai kahden aineen seos voi antaa saman keskitiheyden kuin jokin puhdas aine.
+
+Varmaan tunnistamiseen tarvitaan muita ominaisuuksia, kuten väri, läpinäkyvyys, kovuus tai sähkönjohtavuus.
 
 **Vastaus:** Alumiinin tiheys on $\rho \approx 2{,}70\cdot10^{3}\,\text{kg/m}^3$, kolme merkitsevää numeroa kuten tilavuuden lukemissa.
 

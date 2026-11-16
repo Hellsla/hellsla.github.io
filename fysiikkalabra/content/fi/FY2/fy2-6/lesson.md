@@ -371,7 +371,9 @@ Esimerkkinä oleva tuulivoimala on nimellisteholtaan $5{,}0\,\text{MW}$ ja tuott
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Energia $E = 14\,\text{GWh}$, aika $t = 8760\,\text{h}$ ja nimellisteho $P_\text{nim} = 5{,}0\,\text{MW}$. Kysytään keskiteho $P_\text{ka}$ ja sen osuus nimellistehosta.
+**Tunnetut ja kysytty.** Energia $E = 14\,\text{GWh}$, aika $t = 8760\,\text{h}$ ja nimellisteho $P_\text{nim} = 5{,}0\,\text{MW}$.
+
+Kysytään keskiteho $P_\text{ka}$ ja sen osuus nimellistehosta.
 
 <!-- vaihe -->
 
@@ -411,7 +413,9 @@ P_\text{ka} &= E : t \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Jos voimala toimisi koko vuoden nimellisteholla, se tuottaisi $5000\,\text{kW} \cdot 8760\,\text{h} = 43\,800\,000\,\text{kWh} = 43{,}8 \cdot 10^{6}\,\text{kWh} = 43{,}8\,\text{GWh}$, ja $14 : 43{,}8 = 0{,}32$. Osuus on alle yksi, koska tuuli ei puhalla aina.
+**Järkevyys.** Jos voimala toimisi koko vuoden nimellisteholla, se tuottaisi $5000\,\text{kW} \cdot 8760\,\text{h} = 43\,800\,000\,\text{kWh} = 43{,}8 \cdot 10^{6}\,\text{kWh} = 43{,}8\,\text{GWh}$, ja $14 : 43{,}8 = 0{,}32$.
+
+Osuus on alle yksi, koska tuuli ei puhalla aina.
 
 ## Yleinen virhekäsitys
 Nimellisteho ei kerro, kuinka paljon sähköä voimala todella tuottaa. Tuulivoimala, jonka nimellisteho on $5\,\text{MW}$, tuottaa vuodessa vain noin kolmanneksen siitä, mitä tuottaisi, jos tuuli puhaltaisi aina oikealla nopeudella. Uusiutuva ei myöskään tarkoita jatkuvasti saatavaa: tuuli ja aurinko ovat uusiutuvia mutta sääriippuvaisia.

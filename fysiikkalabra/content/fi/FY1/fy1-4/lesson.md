@@ -358,7 +358,9 @@ Sovita mittauspisteisiin suora, määritä sen yhtälö $T = kt + b$ ja päätte
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kuvaajassa on kuusi mittauspistettä, ja sovitettu suora on piirretty niiden joukon keskeltä. Suoralta luetaan kaksi kaukana toisistaan olevaa pistettä: $A = (t_1;\ T_1) = (0\,\text{min};\ 20\,{}^\circ\text{C})$ ja $B = (t_2;\ T_2) = (5{,}0\,\text{min};\ 60\,{}^\circ\text{C})$. Kysytään kulmakerrointa $k$, vakiotermiä $b$ ja aikaa $t$, jolla $T = 40\,{}^\circ\text{C}$.
+**Tunnetut ja kysytty.** Kuvaajassa on kuusi mittauspistettä, ja sovitettu suora on piirretty niiden joukon keskeltä. Suoralta luetaan kaksi kaukana toisistaan olevaa pistettä: $A = (t_1;\ T_1) = (0\,\text{min};\ 20\,{}^\circ\text{C})$ ja $B = (t_2;\ T_2) = (5{,}0\,\text{min};\ 60\,{}^\circ\text{C})$.
+
+Kysytään kulmakerrointa $k$, vakiotermiä $b$ ja aikaa $t$, jolla $T = 40\,{}^\circ\text{C}$.
 
 <!-- vaihe -->
 

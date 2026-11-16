@@ -268,7 +268,9 @@ In a fireplace, $6.0\,\text{kg}$ of air-dried firewood with a heat of combustion
 
 <!-- vaihe -->
 
-**Given and find.** The mass of the firewood is $m = 6.0\,\text{kg}$ and from the table the heat of combustion is $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$. We want the energy released, $E$.
+**Given and find.** The mass of the firewood is $m = 6.0\,\text{kg}$ and from the table the heat of combustion is $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$.
+
+We want the energy released, $E$.
 
 <!-- vaihe -->
 
@@ -299,11 +301,17 @@ In kilowatt-hours $E = 90\,\text{MJ} = 90 \cdot (1\,\text{kWh} : 3.6) = 25\,\tex
 
 <!-- vaihe -->
 
-**Result.** The wood releases $90\,\text{MJ}$ of energy, which is $25\,\text{kWh}$. The answer is given to two significant figures, because both the mass $6.0\,\text{kg}$ and the heat of combustion $15\,\tfrac{\text{MJ}}{\text{kg}}$ are known to two figures.
+**Result.** The wood releases $90\,\text{MJ}$ of energy, which is $25\,\text{kWh}$.
+
+The answer is given to two significant figures, because both the mass $6.0\,\text{kg}$ and the heat of combustion $15\,\tfrac{\text{MJ}}{\text{kg}}$ are known to two figures.
 
 <!-- vaihe -->
 
-**Reasonableness.** One kilogram of wood gives $15\,\text{MJ}$, which is about $4\,\text{kWh}$, so six kilograms give about six times as much: $6 \cdot 4\,\text{kWh} = 24\,\text{kWh}$, which matches the result. The energy equals that of a one-kilowatt ($1\,\text{kW}$) heater switched on for $25\,\text{h}$. However, you do not get all of it as heat for the room, because some of the heat leaves with the flue gases (chapter *Efficiency*).
+**Reasonableness.** One kilogram of wood gives $15\,\text{MJ}$, which is about $4\,\text{kWh}$, so six kilograms give about six times as much: $6 \cdot 4\,\text{kWh} = 24\,\text{kWh}$, which matches the result.
+
+The energy equals that of a one-kilowatt ($1\,\text{kW}$) heater switched on for $25\,\text{h}$.
+
+However, you do not get all of it as heat for the room, because some of the heat leaves with the flue gases (chapter *Efficiency*).
 
 ## Common misconception
 - **Heat of combustion is not temperature.** Many people think the heat of combustion tells you how hot the fuel burns. It is actually energy per unit of mass.

@@ -166,7 +166,13 @@
 ## fy1-6-L2-07
 **Annettu:** kappaleen pituus $L = 5{,}0\,\text{cm}$; portti 1: $\Delta t_\text{valo,1} = 25{,}0\,\text{ms}$ ja valokatkoksen puolivälin hetki $t_1 = 0{,}320\,\text{s}$; portti 2: $\Delta t_\text{valo,2} = 11{,}1\,\text{ms}$ ja valokatkoksen puolivälin hetki $t_2 = 0{,}575\,\text{s}$
 **Kysytty:** putoamiskiihtyvyys $g$ yksikössä $\text{m/s}^2$
-**Periaate:** Kappaleen nopeus portissa on kappaleen pituus jaettuna ajalla, jonka valo on katkennut: $v = \dfrac{L}{\Delta t_\text{valo}}$. Tämä on keskinopeus katkoksen aikana, ja tasaisesti kiihtyvällä liikkeellä se on yhtä suuri kuin nopeus katkoksen puolivälissä, joten kello merkitsee hetken, jolloin katkos on puolivälissä. Nopeus kasvaa tasaisesti, joten kiihtyvyys on nopeuden muutos jaettuna ajan muutoksella: $g = \dfrac{\Delta v}{\Delta t}$. Pudotushetkeä ei tarvita, koska vain aikaero $t_2 - t_1$ ja nopeuksien erotus vaikuttavat tulokseen. Jos pudotushetken kellon lukema on väärä, se siirtää molempia aikoja yhtä paljon ja kumoutuu erotuksessa.
+**Periaate:** Kappaleen nopeus portissa on kappaleen pituus jaettuna ajalla, jonka valo on katkennut: $v = \dfrac{L}{\Delta t_\text{valo}}$.
+
+Tämä on keskinopeus katkoksen aikana, ja tasaisesti kiihtyvällä liikkeellä se on yhtä suuri kuin nopeus katkoksen puolivälissä, joten kello merkitsee hetken, jolloin katkos on puolivälissä.
+
+Nopeus kasvaa tasaisesti, joten kiihtyvyys on nopeuden muutos jaettuna ajan muutoksella: $g = \dfrac{\Delta v}{\Delta t}$.
+
+Pudotushetkeä ei tarvita, koska vain aikaero $t_2 - t_1$ ja nopeuksien erotus vaikuttavat tulokseen. Jos pudotushetken kellon lukema on väärä, se siirtää molempia aikoja yhtä paljon ja kumoutuu erotuksessa.
 **Kaava:** $v = \dfrac{L}{\Delta t_\text{valo}}$ ja $g = \dfrac{v_2 - v_1}{t_2 - t_1}$
 **Muunnokset:** $L = 5{,}0\,\text{cm} = 0{,}050\,\text{m}$, koska $1\,\text{cm} = 0{,}01\,\text{m}$. $\Delta t_\text{valo,1} = 25{,}0\,\text{ms} = 0{,}0250\,\text{s}$ ja $\Delta t_\text{valo,2} = 11{,}1\,\text{ms} = 0{,}0111\,\text{s}$, koska $1\,\text{ms} = 0{,}001\,\text{s}$.
 **Sijoitus:** $v_1 = \dfrac{0{,}050\,\text{m}}{0{,}0250\,\text{s}} = 2{,}00\,\text{m/s}$ ja $v_2 = \dfrac{0{,}050\,\text{m}}{0{,}0111\,\text{s}} = 4{,}50\,\text{m/s}$. Sitten $g = \dfrac{4{,}50\,\text{m/s} - 2{,}00\,\text{m/s}}{0{,}575\,\text{s} - 0{,}320\,\text{s}} = \dfrac{2{,}50\,\text{m/s}}{0{,}255\,\text{s}} = 9{,}8\,\text{m/s}^2$
@@ -176,7 +182,9 @@
 ## fy1-6-L3-04
 **Annettu:** pallon ja suodatinpaperin nopeudet taulukossa hetkinä $0{,}05\,\text{s}$–$0{,}60\,\text{s}$, paperin nopeus hetkellä $0{,}40\,\text{s}$ on $1{,}49\,\text{m/s}$, $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** kohta, jossa malli $v = g\,t$ lakkaa pätemästä suodatinpaperille, ja suodatinpaperin nopeuden vaje mallista hetkellä $t = 0{,}40\,\text{s}$ prosentteina
-**Periaate:** Malli $v = g\,t$ pätee, kun ilmanvastusta ei ole. Pallon mittauspisteet asettuvat origon kautta kulkevalle suoralle, jonka kulmakerroin on noin $9{,}8\,\text{m/s}^2$, joten pallolle ilmanvastus on tässä pieni. Suodatinpaperi on kevyt ja leveä, joten ilma hidastaa sitä: sen kuvaaja on aluksi samalla suoralla mutta kaartuu siitä alaspäin ja tasoittuu lähes vakionopeuteen $1{,}5\,\text{m/s}$, koska ilmanvastus kasvaa nopeuden kasvaessa ja lopulta melkein kumoaa nopeuden kasvun.
+**Periaate:** Malli $v = g\,t$ pätee, kun ilmanvastusta ei ole. Pallon mittauspisteet asettuvat origon kautta kulkevalle suoralle, jonka kulmakerroin on noin $9{,}8\,\text{m/s}^2$, joten pallolle ilmanvastus on tässä pieni.
+
+Suodatinpaperi on kevyt ja leveä, joten ilma hidastaa sitä: sen kuvaaja on aluksi samalla suoralla mutta kaartuu siitä alaspäin ja tasoittuu lähes vakionopeuteen $1{,}5\,\text{m/s}$, koska ilmanvastus kasvaa nopeuden kasvaessa ja lopulta melkein kumoaa nopeuden kasvun.
 **Kuvaajan lukeminen:** Hetkellä $0{,}05\,\text{s}$ paperin piste on pallon suoralla, mutta hetkellä $0{,}10\,\text{s}$ paperin nopeus $0{,}93\,\text{m/s}$ jää mallin arvosta $0{,}98\,\text{m/s}$ jo $\dfrac{0{,}98 - 0{,}93}{0{,}98} \approx 5\,\%$. Kriteeriksi otetaan, että poikkeama on yli $5\,\%$. Hetken $0{,}30\,\text{s}$ jälkeen paperin nopeus ei enää juuri kasva, vaikka pallon nopeus kasvaa edelleen.
 **Kaava:** $v_\text{malli} = g\,t$ ja vaje $= \dfrac{v_\text{malli} - v_\text{paperi}}{v_\text{malli}} \cdot 100\,\%$
 **Muunnokset:** Ei tarvita: nopeudet ovat yksikössä $\text{m/s}$ ja ajat yksikössä $\text{s}$.

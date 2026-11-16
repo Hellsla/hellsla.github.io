@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f5dce1f1613dcb7b
-SCOPE: delta reflow from 290ca9ff5936acc5 base b5600a63ddae
+CONTENT-HASH: 4a547e015d90efbb
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Delta: opened reflow-exercises-1.png and -2.png (390 px, solutions open): every re-broken block and the text around it.
-- Rows legible, no clipping, equals signs in one column, units and signs unchanged, sentences around the display formulas read naturally. Not re-judged: figures, simulation, other captures (unchanged).
+- Round 2 delta (fi-easy): fy2-4-L3-05 (4-23) Vastaus step, now one paragraph again, in content/fi-easy/FY2/fy2-4/review/shots/fy2-4-open-exercises-L3-1280-8.png: it reads 30 %, 6,9 kWh, 1,4 € and 30 % + 70 % = 100 % as LaTeX with units; no clipping, overflow or gap; Järkevyys block intact.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

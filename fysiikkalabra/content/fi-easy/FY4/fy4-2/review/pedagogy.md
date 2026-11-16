@@ -1,11 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 5133d82b246d965e
-
+CONTENT-HASH: eee552233cd72c1e
 ## Blocking
-None. Re-review: Tiivistelmä now uses a_k, a = a_k, matching the formula section.
 
 ## Polish
-None.
 
 ## Checked
-Diff of the Tiivistelmä fix; chapter symbols consistent in fi, fi-easy, en.
+batch delta review: changed retrieval prompts, option feedback and answers are clear, consistent with the lesson and correct in numbers; selkeä suomi, terms explained, no answer disclosed before acting.

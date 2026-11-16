@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: e603919a2eee171f
-SCOPE: delta added-exercise from fa419009145ea186 base 07af77a4596f
+CONTENT-HASH: b255aaee9ce05540
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Järkevyys: "hinnan −5,0 snt/kWh suuruus on kolmannes hinnasta +15 snt/kWh" is slightly clumsy; optional: "hinnan itseisarvo on kolmannes".
 
 ## Checked
-- Opened fy2-3-open-exercises-L2-1280-10.png and -11.png (full 8-19 style solution, Vastaus, Järkevyys): formulas render, units upright with thin space, signs and decimal commas right, nothing clipped, hash unchanged.
+- Delta (md-paragraphs): solutions split into short paragraphs. Opened fi-easy captures fy2-3-open-exercises-L3-1280-2 (household, Järkevyys), -4 (grid table task), -6 (fridge task), -7 (fridge Vastaus/Järkevyys) and L2-1280-11, -12 (negative-price task, Vastaus parts c and d, Järkevyys): each paragraph stands alone, formulas and aligned rows intact, nothing clipped.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

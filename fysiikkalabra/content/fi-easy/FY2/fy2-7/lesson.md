@@ -476,7 +476,12 @@ Kaukolämpöverkko siirtää lämpölaitokselta kaupunginosaan $245\,\text{MWh}$
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $E_\text{lähtö} = 245\,\text{MWh}$ ja häviö on $9{,}0\,\%$ lähtevästä energiasta. Kysytään perille tulevaa energiaa $E_\text{perille}$ ja häviötä $E_\text{häviö}$.
+**Tunnetut ja kysytty.**
+
+- $E_\text{lähtö} = 245\,\text{MWh}$ ja
+- häviö on $9{,}0\,\%$ lähtevästä energiasta.
+
+Kysytään perille tulevaa energiaa $E_\text{perille}$ ja häviötä $E_\text{häviö}$.
 
 <!-- vaihe -->
 

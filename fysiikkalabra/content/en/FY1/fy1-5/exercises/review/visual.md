@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e98ca885d926d976
+CONTENT-HASH: 20e288cb40842ef4
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: e98ca885d926d976
 - none
 
 ## Checked
-delta review 5d reflow, round 1: opened the 360 px captures 04-06 (tiled into contact sheets, every capture of this part viewed); equals signs aligned, no row broken inside a number or unit, nothing clipped or scrolling, display formulas read naturally in their sentences.
+Delta (md-paragraphs, solutions.md only). Captures (current for this hash, in content/en/FY1/fy1-5/review/shots/): open-exercises L2-5, L2-6 (5-14), L2-9 (L2-08 graph choice, Principle/Model answer/Reading split), L3-1, L3-2 (5-19 Principle with split), L3-4, L3-5, L3-6 (5-21 Principle, Answer), plus surrounding cards. Paragraph breaks render as separate paragraphs inside the solution step; labels, formulas and equals alignment unchanged; no gaps, clipping or overflow.
 
 ## Scores
 illustrations 5 · typography 4 · English 4 · accessibility 4

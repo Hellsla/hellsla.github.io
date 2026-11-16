@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: d8df456f5c06de62
+CONTENT-HASH: 6b9dd01c8f2c35d6
 
 ## Blocking
 - none
@@ -8,7 +8,7 @@ CONTENT-HASH: d8df456f5c06de62
 - none
 
 ## Checked
-delta review 5d reflow, round 1: opened the 360 px captures 03-06 (tiled into contact sheets, every capture of this part viewed); equals signs aligned, no row broken inside a number or unit, nothing clipped or scrolling, display formulas read naturally in their sentences.
+Delta (md-paragraphs, solutions.md only; captures current for this hash, content/en/FY1/fy1-6/review/shots/). Opened open-exercises L3-2 (6-19), L3-4 (6-21 filter-paper Principle split), L3-6 (clock-zero task, Principle split around a display formula). Paragraph breaks render as separate paragraphs inside each solution step; step labels, equals alignment and formulas unchanged; no gaps, clipping or overflow. The other split steps (two-gate, fit-by-eye, offset line) use the same component and were not individually opened.
 
 ## Scores
 illustrations 5 · typography 4 · English 4 · accessibility 4

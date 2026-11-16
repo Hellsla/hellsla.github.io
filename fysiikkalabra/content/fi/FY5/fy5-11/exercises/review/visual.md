@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b12c411f043ca675
-SCOPE: delta added-exercise from 19c4b1112a3292c3 base 81db4a6fd727
+CONTENT-HASH: ce204d9a4ffdecc6
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-11 — in the L2-10 task the wall is two small grey stubs labelled seinä; legible, but a stub is easy to read as a box (optional).
+(none)
 
 ## Checked
-- Delta of the two or three added exercises (fi): 1280 px open-exercises L2 parts 11, 12, 13 (L2-09 and L2-10 with the ripple-tank grid figure, solutions open).
-- Added tasks read in full in the packet (exercise text, MAFY hint, solution); figures read from the captures; figure ids and labels match the solutions' reading steps. Other exercises unchanged, not re-reviewed.
-- Quantities with units in LaTeX, case endings after maths, aligned chains, decimal comma consistent; no overflow or clipping at the 1280 px captures; MAFY hint sits in a closed Vihje/Hint box with the table section named.
-- Not opened: the 390 px phone captures of the exercises (the packet has no exercise captures at 390); layout checks cover 360 px.
+- Delta, round 3: no content change since round 2 (hash unchanged). Looked again at solutions.md:29 (Järkevyys).
+- Opened fy5-11-ex-allas-0-390.png and sheet-ex-1280.png (allas at 1280): `8,0 Hz · 0,030 m = 0,24 m/s,` on one row in its box, comma inside, the sentence continues "ja yksikkö (m/s)/(1/s) = m." Nothing clipped.
+- Own Playwright captures from the current preview/ pages (?ratkaisut=1, every details box open, hidden feedback/model boxes revealed) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-7/; measured in the same run: page scrollWidth equals the viewport, no formula past its box.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

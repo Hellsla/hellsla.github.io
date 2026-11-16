@@ -646,7 +646,13 @@ Kivi pudotetaan levosta sillalta. Se osuu veteen $1{,}5\,\text{s}$ myöhemmin. M
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Pudotus kestää $t = 1{,}5\,\text{s}$. Kivi lähtee levosta. Putoamiskiihtyvyys on $g = 9{,}81\,\text{m/s}^2$. Kysytään nopeutta $v$ sillä hetkellä, kun kivi osuu veteen. Nopeus lasketaan ensin yksikössä $\text{m/s}$ ja sitten yksikössä $\text{km/h}$.
+**Tunnetut ja kysytty.**
+
+- Pudotus kestää $t = 1{,}5\,\text{s}$.
+- Kivi lähtee levosta.
+- Putoamiskiihtyvyys on $g = 9{,}81\,\text{m/s}^2$.
+
+Kysytään nopeutta $v$ sillä hetkellä, kun kivi osuu veteen. Nopeus lasketaan ensin yksikössä $\text{m/s}$ ja sitten yksikössä $\text{km/h}$.
 
 <!-- vaihe -->
 

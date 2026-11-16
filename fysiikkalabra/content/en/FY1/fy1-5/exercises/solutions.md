@@ -102,7 +102,9 @@
 ## fy1-5-L3-02
 **Given:** distance $d = 150\,\text{AU}$, speed of the signal $c = 299\,792\,458\,\text{m/s}$, $1\,\text{AU} = 149\,597\,870.7\,\text{km}$
 **Find:** round-trip travel time $t$ in hours
-**Principle:** A radio signal travels in vacuum at constant speed, so the distance it travels is $s = ct$. The command and the reply each travel the distance $d$, so the total distance is $2d$. During this time the probe moves about $$\begin{aligned} &15\,\text{km/s} \cdot 1.5 \cdot 10^{5}\,\text{s} \\ &\approx 2.3 \cdot 10^{6}\,\text{km} \\ &\approx 0.015\,\text{AU} \end{aligned}$$, which is only $0.01\,\%$ of the distance $150\,\text{AU}$. In the same time the Earth moves about $$\begin{aligned} &30\,\text{km/s} \cdot 1.5 \cdot 10^{5}\,\text{s} \\ &\approx 0.03\,\text{AU} \end{aligned}$$, only about $0.02\,\%$, so neither motion needs to be taken into account.
+**Principle:** A radio signal travels in vacuum at constant speed, so the distance it travels is $s = ct$. The command and the reply each travel the distance $d$, so the total distance is $2d$.
+
+During this time the probe moves about $$\begin{aligned} &15\,\text{km/s} \cdot 1.5 \cdot 10^{5}\,\text{s} \\ &\approx 2.3 \cdot 10^{6}\,\text{km} \\ &\approx 0.015\,\text{AU} \end{aligned}$$, which is only $0.01\,\%$ of the distance $150\,\text{AU}$. In the same time the Earth moves about $$\begin{aligned} &30\,\text{km/s} \cdot 1.5 \cdot 10^{5}\,\text{s} \\ &\approx 0.03\,\text{AU} \end{aligned}$$, only about $0.02\,\%$, so neither motion needs to be taken into account.
 **Formula:** $2d = ct$, so $t = \dfrac{2d}{c}$
 **Conversions:** $d = 150 \cdot 149\,597\,870.7\,\text{km} = 2.2440 \cdot 10^{10}\,\text{km} = 2.2440 \cdot 10^{13}\,\text{m}$. Finally $1\,\text{h} = 3600\,\text{s}$.
 **Substitution:** $t = \dfrac{2 \cdot 2.2440 \cdot 10^{13}\,\text{m}}{299\,792\,458\,\text{m/s}} = 1.497 \cdot 10^{5}\,\text{s} = \dfrac{1.497 \cdot 10^{5}\,\text{s}}{3600\,\text{s/h}} = 41.58\,\text{h}$
@@ -153,7 +155,9 @@
 **Formula:** $v = \dfrac{\Delta s}{\Delta t}$ and $s = s_0 + vt$
 **Conversions:** None needed: the positions are in metres and the times in seconds.
 **Substitution:** $v = \dfrac{8.2\,\text{m} - 1.2\,\text{m}}{5.0\,\text{s} - 0\,\text{s}} = 1.4\,\tfrac{\text{m}}{\text{s}}$ and $s = 1.2\,\text{m} + 1.4\,\tfrac{\text{m}}{\text{s}} \cdot 12\,\text{s} = 1.2\,\text{m} + 16.8\,\text{m} = 18\,\text{m}$
-**Answer:** about $18\,\text{m}$, two significant figures. A fit by eye varies, so about $17.3\text{–}18.7\,\text{m}$ is a good answer. The prediction is a model value, not a measurement: the moment $12\,\text{s}$ is outside the measured range $0\text{–}5\,\text{s}$, and it is correct only if the walker continues at the same speed. This is an assumption that the measurement has not checked.
+**Answer:** about $18\,\text{m}$, two significant figures. A fit by eye varies, so about $17.3\text{–}18.7\,\text{m}$ is a good answer.
+
+The prediction is a model value, not a measurement: the moment $12\,\text{s}$ is outside the measured range $0\text{–}5\,\text{s}$, and it is correct only if the walker continues at the same speed. This is an assumption that the measurement has not checked.
 **Reasonableness:** The speed $1.4\,\text{m/s}$ is about $5\,\text{km/h}$, an ordinary walking pace. The prediction clearly exceeds the last measurement $8.3\,\text{m}$, as it should, because $12\,\text{s}$ is more than twice as long as the measured range.
 
 ## fy1-5-L2-06
@@ -179,7 +183,9 @@
 ## fy1-5-L3-04
 **Given:** measurement points of the table $(t;\ s)$: $(0\,\text{s};\ 0\,\text{m})$, $(5.0\,\text{s};\ 15\,\text{m})$, $(10\,\text{s};\ 30\,\text{m})$, $(15\,\text{s};\ 35\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$, $(30\,\text{s};\ 50\,\text{m})$ and $(40\,\text{s};\ 60\,\text{m})$
 **Find:** average speed $v_\text{avg}$ in the interval $5.0\text{–}35\,\text{s}$ and the reason why it is not the mean of the speeds of the parts
-**Principle:** In the graph, the points lie on two straight parts with different slopes, so a single line does not fit the whole motion. The motion is modelled piecewise: each part has its own uniform speed, and the position at the moment $35\,\text{s}$ is calculated from the model of the latter part. The average speed is the change in position divided by the length of the interval.
+**Principle:** In the graph, the points lie on two straight parts with different slopes, so a single line does not fit the whole motion. The motion is modelled piecewise: each part has its own uniform speed, and the position at the moment $35\,\text{s}$ is calculated from the model of the latter part.
+
+The average speed is the change in position divided by the length of the interval.
 **Reading the graph:** The points in the interval $0\text{–}10\,\text{s}$ are on the same steep line. From the moment $10\,\text{s}$ on, the line is gentler, and the points $(10\,\text{s};\ 30\,\text{m})$, $(20\,\text{s};\ 40\,\text{m})$ and $(40\,\text{s};\ 60\,\text{m})$ are on the same gentle line. So the speed changes at the moment $t = 10\,\text{s}$.
 **Formula:** speed of a part $v = \dfrac{\Delta s}{\Delta t}$, position on the gentle part $s = s_{10} + v_2 (t - 10\,\text{s})$ and average speed $v_\text{avg} = \dfrac{s(35\,\text{s}) - s(5.0\,\text{s})}{35\,\text{s} - 5.0\,\text{s}}$
 **Conversions:** None needed: the positions are in metres and the times in seconds.
@@ -190,19 +196,33 @@
 ## fy1-5-L3-05
 **Given:** imaging interval $\Delta t = 0.010\,\text{s}$, positions of the bullet $s = 2.0\,\text{m}$, $5.0\,\text{m}$, $8.0\,\text{m}$ and $11.0\,\text{m}$ at the moments $0.000\,\text{s}$, $0.010\,\text{s}$, $0.020\,\text{s}$ and $0.030\,\text{s}$; scale of the drawing: $1.0\,\text{s}$ is $10\,\text{cm}$ and $1.0\,\text{m}$ is $1.0\,\text{cm}$
 **Find:** speed $v$ of the bullet in m/s, and the rise of the graph and the length of the imaging interval in centimetres
-**Principle:** The position grows by the same amount in every imaging interval ($3.0\,\text{m}$), so the motion is uniform and the speed is the slope of the graph, $\Delta s : \Delta t$. An object has only one position at every moment, so every value of time corresponds to one value of position. A vertical line would have $\Delta t = 0$ and $\Delta s \neq 0$, and then the quotient would not be any number.
+**Principle:** The position grows by the same amount in every imaging interval ($3.0\,\text{m}$), so the motion is uniform and the speed is the slope of the graph, $\Delta s : \Delta t$.
+
+An object has only one position at every moment, so every value of time corresponds to one value of position. A vertical line would have $\Delta t = 0$ and $\Delta s \neq 0$, and then the quotient would not be any number.
 **Reading the graph:** The points of the table lie on the same straight line, and between two consecutive points the position changes by $\Delta s = 5.0\,\text{m} - 2.0\,\text{m} = 3.0\,\text{m}$ in the time $\Delta t = 0.010\,\text{s}$.
 **Formula:** $v = \dfrac{\Delta s}{\Delta t}$; in the drawing, the length is the value times the scale
 **Conversions:** Not needed for calculating the speed. In the drawing, $\Delta s = 3.0 \cdot 1.0\,\text{cm} = 3.0\,\text{cm}$ and $\Delta t = 0.010 \cdot 10\,\text{cm} = 0.10\,\text{cm}$.
 **Substitution:** $v = \dfrac{3.0\,\text{m}}{0.010\,\text{s}} = 300\,\tfrac{\text{m}}{\text{s}}$. In one imaging interval the line rises $3.0\,\text{cm}$ and advances horizontally only $0.10\,\text{cm}$, that is, $1.0\,\text{mm}$.
-**Answer:** $300\,\text{m/s}$, two significant figures as in the difference of positions $3.0\,\text{m}$. The line rises $3.0\,\text{cm}$ and advances $0.10\,\text{cm}$, so it rises about $30$ times as much as it advances horizontally and looks almost vertical. It is still not vertical: the imaging interval always takes a time $\Delta t > 0$, and the bullet is at exactly one position at every moment. A vertical line would require the bullet to be at two positions at the same moment, that is, the speed would be infinite.
+**Answer:** $300\,\text{m/s}$, two significant figures as in the difference of positions $3.0\,\text{m}$. The line rises $3.0\,\text{cm}$ and advances $0.10\,\text{cm}$, so it rises about $30$ times as much as it advances horizontally and looks almost vertical.
+
+It is still not vertical: the imaging interval always takes a time $\Delta t > 0$, and the bullet is at exactly one position at every moment. A vertical line would require the bullet to be at two positions at the same moment, that is, the speed would be infinite.
 **Reasonableness:** The speed $300\,\text{m/s}$ is of the same order of magnitude as the speed of sound $343\,\text{m/s}$ and suits a fast bullet. Check: $300\,\text{m/s} \cdot 0.010\,\text{s} = 3.0\,\text{m}$, the same as in the table. A stopped object would be drawn as a horizontal line, because $\Delta s = 0$.
 
 ## fy1-5-L2-08
 **Find:** which of the four graphs shows the position $s$ of the walker as a function of time $t$, when she first stands at $6.0\,\text{m}$ and then walks steadily at a speed of $1.0\,\text{m/s}$ back to the starting point.
-**Principle:** The height of a $(t, s)$ graph is the position, and the slope $\Delta s : \Delta t$ is the speed. When an object is at rest, $\Delta s = 0$ and the line is horizontal. In uniform motion the line is straight; if the position increases, the line goes up, and if the position decreases, the line goes down. The steepness of the line gives the speed, the magnitude of the velocity. When the position decreases, the slope, that is the velocity, is negative.
-**Model answer:** The correct one is graph C. At first the position is $s = 6.0\,\text{m}$ all the time, so the line is horizontal at this height. The way back of $6.0\,\text{m}$ takes $\Delta t = 6.0\,\text{m} : 1.0\,\text{m/s} = 6.0\,\text{s}$, so the walker is at the starting point at the time $4.0\,\text{s} + 6.0\,\text{s} = 10\,\text{s}$. The position decreases, so the line goes down, and its steepness matches the speed $6.0\,\text{m} : 6.0\,\text{s} = 1.0\,\text{m/s}$. In graph A the line goes up, so the position would increase and the walker would move away. Graph B is a $(t, v)$ graph, which shows the speed and not the position. Graph D shows the distance walked $\Delta s$, which starts from zero although the position of the walker is $6.0\,\text{m}$ at the start.
-**Reading the graph:** From the graphs we read where the line starts at the time $t = 0$, whether it is horizontal in the interval $0\text{–}4.0\,\text{s}$ and whether it then goes up or down. We also check the quantity on the vertical axis: in graph B it is the speed $v$. Only in graph C does the line start from $6.0\,\text{m}$, stay there until $4.0\,\text{s}$ and then go down to the point $(10\,\text{s};\ 0\,\text{m})$.
+**Principle:** The height of a $(t, s)$ graph is the position, and the slope $\Delta s : \Delta t$ is the speed. When an object is at rest, $\Delta s = 0$ and the line is horizontal.
+
+In uniform motion the line is straight; if the position increases, the line goes up, and if the position decreases, the line goes down. The steepness of the line gives the speed, the magnitude of the velocity.
+
+When the position decreases, the slope, that is the velocity, is negative.
+**Model answer:** The correct one is graph C. At first the position is $s = 6.0\,\text{m}$ all the time, so the line is horizontal at this height. The way back of $6.0\,\text{m}$ takes $\Delta t = 6.0\,\text{m} : 1.0\,\text{m/s} = 6.0\,\text{s}$, so the walker is at the starting point at the time $4.0\,\text{s} + 6.0\,\text{s} = 10\,\text{s}$.
+
+The position decreases, so the line goes down, and its steepness matches the speed $6.0\,\text{m} : 6.0\,\text{s} = 1.0\,\text{m/s}$. In graph A the line goes up, so the position would increase and the walker would move away.
+
+Graph B is a $(t, v)$ graph, which shows the speed and not the position. Graph D shows the distance walked $\Delta s$, which starts from zero although the position of the walker is $6.0\,\text{m}$ at the start.
+**Reading the graph:** From the graphs we read where the line starts at the time $t = 0$, whether it is horizontal in the interval $0\text{–}4.0\,\text{s}$ and whether it then goes up or down.
+
+We also check the quantity on the vertical axis: in graph B it is the speed $v$. Only in graph C does the line start from $6.0\,\text{m}$, stay there until $4.0\,\text{s}$ and then go down to the point $(10\,\text{s};\ 0\,\text{m})$.
 
 ## fy1-5-L1-09
 **Given:** time $t = 2.0\,\text{s}$; from the table (MAFY table, Äänen nopeuksia eri väliaineissa, liquids, water $20\,{}^\circ\text{C}$) the speed of sound $v = 1482.3\,\text{m/s}$
