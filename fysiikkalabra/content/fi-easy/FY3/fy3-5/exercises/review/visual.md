@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ca4ef34598fc3202
-Mode: delta
-Round: 1
+CONTENT-HASH: 7f0a6c75997f050d
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- [Minor] Short connecting words ("joten", "Siis") stand alone before a display; acceptable.
+- [Minor] the one inline formula inside the quoted student calculation (fy3-5 6-12 / fy3-12-L2-06) still exceeds the phone width by a few px (listed in docs/clipped-formulas.tsv, accepted inside quotation marks; scrolls inside its box).
 
 ## Checked
-- fy3-5-open-exercises-L3-1280-5 (table task, summed Sijoitus rows, aligned =, punctuation inside displays).
-- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
+- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Closing punctuation stays inside the display boxes; surrounding layout survived.
+- Hash unchanged at the end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

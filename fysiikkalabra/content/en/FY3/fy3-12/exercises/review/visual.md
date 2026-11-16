@@ -1,16 +1,15 @@
-VERDICT: FAIL
-CONTENT-HASH: 0db84c5b62470dbd
+VERDICT: PASS
+CONTENT-HASH: 72730a1a2c9928de
 
 ## Blocking
-- [Major] fy3-12-L2-06 (task text, 390 and 1280 px) — the display formula of the student's solution (P = UAΔT, three rows) is followed by `.”`, which stands alone on the next row, left of an empty line — the very defect of the reflow rule (punctuation alone after a display formula) and it looks like a stray mark — move the closing into the formula (`= 9.6\,\text{W}\,.”` inside the aligned block) or set the student's chain inline: `$P = UA\Delta T = 1.0 \cdot 1.6 \cdot 6\,\text{W} = 9.6\,\text{W}$.”`.
+(none)
 
 ## Polish
-None.
+- [Minor] the one inline formula inside the quoted student calculation (fy3-5 6-12 / fy3-12-L2-06) still exceeds the phone width by a few px (listed in docs/clipped-formulas.tsv, accepted inside quotation marks; scrolls inside its box).
 
 ## Checked
-- Own 390 px and 1280 px captures of the built page with every exercise solution open (the packet's shots hold 1280 px only): every display formula in text context (about 10 per set, stitched sheets) and a DOM check of clipping, horizontal overflow and lone punctuation after a display formula in all exercises; plus the packet captures open-exercises-L*-1280.
-- Changed formulas: equals signs in one column, continuation rows start with an operator, wide screens join the rows, no clipping at 390 or 1280 px, no row breaking inside a number or unit; trailing punctuation sits inside the formula in solutions.
-- Hash run at start and end: unchanged.
+- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Closing punctuation stays inside the display boxes; surrounding layout survived.
+- Hash unchanged at the end.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

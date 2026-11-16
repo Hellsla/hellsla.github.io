@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5927c0582992dff8
+CONTENT-HASH: 3b2aa1884cd1cbf4
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+- [Minor] L3-04 Kaava / L3-05 Järkevyys: the two numerator rows are centred/right-aligned against each other (second row starts with a minus); readable, left-aligning the rows would be tidier.
+- [Minor] L3-05 Järkevyys: the chain T = ... = ... is split into two display boxes; one aligned block would read as one equation.
 
 ## Checked
-- Own 390 px and 1280 px captures of the built page with every exercise solution open (the packet's shots hold 1280 px only): every display formula in text context (about 10 per set, stitched sheets) and a DOM check of clipping, horizontal overflow and lone punctuation after a display formula in all exercises; plus the packet captures open-exercises-L*-1280.
-- Changed formulas: equals signs in one column, continuation rows start with an operator, wide screens join the rows, no clipping at 390 or 1280 px, no row breaking inside a number or unit; trailing punctuation sits inside the formula in solutions.
-- Hash run at start and end: unchanged.
+- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Opened L3-04 (Kaava, Sijoitus, Järkevyys) and L3-05 (Sijoitus, Vastaus, Järkevyys) at 360 px (fi) and 1280 px (en, fi-easy): the two-row-numerator fractions fit, equals signs aligned, nothing clipped.
+- Hash unchanged at the end.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

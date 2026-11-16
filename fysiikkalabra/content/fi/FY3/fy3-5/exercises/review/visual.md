@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d6d6fb5f0997d7e1
+CONTENT-HASH: 409422339b85dd02
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] the one inline formula inside the quoted student calculation (fy3-5 6-12 / fy3-12-L2-06) still exceeds the phone width by a few px (listed in docs/clipped-formulas.tsv, accepted inside quotation marks; scrolls inside its box).
 
 ## Checked
-- Round 1, delta (reflow into display/aligned rows). Opened at 1280 px: fy3-5 L2 capture 5 (L2-05 Kaava t = W/P rows, Sijoitus, Järkevyys).
-- Equals signs in one column, no row breaks inside a number or unit, closing punctuation stays inside the box (no orphan comma or period), nothing clipped. No 390 px exercise captures exist (only the closed Tehtävät stage); the 360 px layout check is clean.
+- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Closing punctuation stays inside the display boxes; surrounding layout survived.
 - Hash unchanged at the end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4
