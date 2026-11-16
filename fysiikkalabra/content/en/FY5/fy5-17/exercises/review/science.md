@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8f16389ec9a01707
+CONTENT-HASH: 002346b367555fd9
 
 ## Blocking
 
@@ -12,4 +12,5 @@ CONTENT-HASH: 8f16389ec9a01707
 - The source facts agree with the verified page: Orivesi row 149 on 10.11.2026 at 01:34 UTC, 61.754°N 24.361°E, depth 18.3 km, M 1.0; M 0–4; over 40 stations; 0.2–2 km uncertainty; preliminary values (FENCAT); natural events only.
 - fy5-17-L2-07: 6.0·3.5/2.5·16.0 = 134.4 km, 22.4 s and 38.4 s recomputed; the units are now in the chain.
 - Captions: only the "(example data)" marker was removed. The numbers are identical to the Finnish (word order only).
-- Hash unchanged at start and end.
+- Paragraph split (7e7a8777a9) verified text-identical: whitespace-normalised text equal, word diff shows no changed word, number or formula.
+- Hash unchanged at start and end of the re-check.

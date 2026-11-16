@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fe263fb6e230fa23
+CONTENT-HASH: ab789090f76dd85a
 
 ## Blocking
 
@@ -12,4 +12,5 @@ CONTENT-HASH: fe263fb6e230fa23
 - 315 m → 3.2·10² m and 44.6 m → 45 m: both are rounded up to the safe side of a limit value, the same reason the Finnish gives; the ±0.5 dB range 297–334 m still stands.
 - 74.0 dB: I = 10^7.40·10⁻¹² W/m² = 2.51·10⁻⁵ W/m²; ±0.1 dB is ±2.3 %, so two significant figures is justified.
 - Script comparison of fi and en: every number is identical, apart from word order.
-- Hash unchanged at start and end.
+- Paragraph split (7e7a8777a9) verified text-identical: whitespace-normalised text equal, word diff shows no changed word, number or formula.
+- Hash unchanged at start and end of the re-check.

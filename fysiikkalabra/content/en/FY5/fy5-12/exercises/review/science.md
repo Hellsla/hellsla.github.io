@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 97e669270a808dfc
-SCOPE: delta added-exercise from a7e8c805b6c08c2c base b5600a63ddae
+CONTENT-HASH: b8fc622146b746b9
 
 ## Blocking
 
@@ -13,4 +12,5 @@ SCOPE: delta added-exercise from a7e8c805b6c08c2c base b5600a63ddae
 - Part d's limits of the model are physically right: reflections, many frequencies, sources that are not point sources, unequal amplitudes so no complete cancellation, and Δs ≤ the source separation.
 - PhET facts (Interference screen, sound wave type, in-phase sources, an English version exists) agree with the verified sources.
 - The text says the same as the Finnish; the numbers are identical (word order only).
-- Hash unchanged at start and end.
+- Paragraph split (7e7a8777a9) verified text-identical: whitespace-normalised text equal, word diff shows no changed word, number or formula.
+- Hash unchanged at start and end of the re-check.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c06a00dcc4be71b7
+CONTENT-HASH: 0fd9280d139201ab
 
 ## Blocking
 
@@ -12,4 +12,5 @@ CONTENT-HASH: c06a00dcc4be71b7
 - Physics: T² = 4π²r³/(γM) is derived from the chapter's circular-orbit model, and its conditions are stated (planet mass negligible, other planets ignored). Kepler III for ellipses is right with a in place of r. Marked "Extension task." as in the Finnish.
 - The changed sig-fig reasons (L2-01 9.57·10³ km, Δv 1.13 m/s with altitudes taken as exact, Jupiter 1.90·10²⁷ kg, satellite B, 3.87/15.5 kN, star 1.59·10³⁰ kg, Moon probe 1.45 m/s²) are right and say the same as the Finnish.
 - Script comparison of fi and en: every number is identical (word order only).
-- Hash unchanged at start and end.
+- Paragraph split (7e7a8777a9) verified text-identical: whitespace-normalised text equal, word diff shows no changed word, number or formula.
+- Hash unchanged at start and end of the re-check.

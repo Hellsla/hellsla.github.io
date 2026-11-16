@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3738e31f67d62cf9
+CONTENT-HASH: d25467943c300cb9
 
 ## Blocking
 
@@ -13,4 +13,5 @@ CONTENT-HASH: 3738e31f67d62cf9
 - The source facts (80/85/87 dB(A), the duties at each value, the 8-hour energy dose, impulsive noise) agree with the verified TTL page; the 3 dB rule is attributed to the chapter, not to the source.
 - The limits are stated: a calculated reference and not a safe time; impulsive noise not covered.
 - Captions: only the "(example data)" marker was removed. The numbers are identical to the Finnish (word order only).
-- Hash unchanged at start and end.
+- Paragraph split (7e7a8777a9) verified text-identical: whitespace-normalised text equal, word diff shows no changed word, number or formula.
+- Hash unchanged at start and end of the re-check.
