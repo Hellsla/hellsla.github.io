@@ -1,7 +1,7 @@
 ok   lint
 ok   latex
-FAIL build
-FAIL inquiry
+ok   build
+ok   inquiry (50 passed, 0 failed)
 ok   answer positions
 ok   layout 360 px
 ok   layout 390 px
