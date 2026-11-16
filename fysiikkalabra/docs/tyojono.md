@@ -16,6 +16,8 @@ kaikkialla $v_\text{k}$, ei $v_\text{ka}$ (opettaja 2026-11-13). Kohta 3 on valm
 
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
 
+Varattu: claude/fy10-minor-sisalto (vain sisältöosa: tutkimusten ja TVT-ohjeiden omat Minor-löydökset ja fy10-induktion kenttäviivat; jaetut komponentit eivät kuulu siihen).
+
 Tehty (#549, erät 2–4): fy10-liukukitka, fy10-jousivakio, fy10-induktio (kuva osin, ks. PR), tvt-kuvaaja ja tvt-tyoselostus; fy10-hiuksen-paksuuden löydös ei pitänyt kuvasta (ei muutettu). Jäljellä: erä 1 (jaetut komponentit), Minor-erä ja yhteinen kuvasääntö.
 
 Auditointi on tehty (#536: 28 PASS, 8 FAIL, ei Critical-löydöksiä, 159 Minor). Korjataan `/quality-audit <id> --fix`
