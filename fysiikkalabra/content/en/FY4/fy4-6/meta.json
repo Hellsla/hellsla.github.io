@@ -6,7 +6,7 @@
     "LOPS FY4: weight and friction",
     "Experimental: determining the coefficient of friction",
     "Clarification: other forces such as buoyancy and the drag of the medium can also be treated",
-    "Free-body diagram: weight straight down, normal force perpendicular to the surface, static and kinetic friction parallel to the surface, components of the weight dashed, signs in the equations (example D); friction does not always oppose the motion of the object (example J, qualitatively)."
+    "Free-body diagram: weight straight down, normal force perpendicular to the surface, static and sliding friction parallel to the surface, components of the weight dashed, signs in the equations (example D); friction does not always oppose the motion of the object (example J, qualitatively)."
   ],
   "prerequisites": [
     "fy4-5"
@@ -15,7 +15,7 @@
     "paino",
     "kitka",
     "lepokitka",
-    "liikekitka",
+    "liukukitka",
     "kitkakerroin",
     "kalteva taso"
   ],

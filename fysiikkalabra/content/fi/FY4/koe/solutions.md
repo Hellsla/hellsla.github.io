@@ -13,16 +13,16 @@
 **Perustelu:** Ylöspäin liikkuva hissi hidastuu, joten sen ja henkilön kiihtyvyys osoittaa alaspäin. Henkilöön vaikuttavat vain paino alas ja tukivoima ylös. Newtonin II lain mukaan kokonaisvoima osoittaa kiihtyvyyden suuntaan eli alas, joten $G - N = ma$ ja $N < G$. Liikkeen suunta ei ratkaise, vaan kiihtyvyyden suunta. Tukivoima ja paino eivät ole voima ja vastavoima, koska ne kohdistuvat samaan kappaleeseen; painon vastavoima on henkilön Maahan kohdistama vetovoima.
 
 ### e)
-**Perustelu:** Palikkaan vaikuttavat Maa (paino suoraan alas), lauta (tukivoima kohtisuoraan pinnasta ulos) ja laudan liikekitka. Palikka liukuu ylös, joten liikekitka osoittaa liukumista vastaan eli rinnettä alas, kuten kuviossa A. Kuviossa B on keksitty voima $\overline{F}$ liikkeen suuntaan, vaikka mikään ei enää työnnä palikkaa: liike jatkuu ilman voimaa, ja voimat hidastavat sitä. Kuviossa C kitka osoittaa väärään suuntaan, ja kuviossa D tukivoima ei ole kohtisuorassa pintaa vastaan.
+**Perustelu:** Palikkaan vaikuttavat Maa (paino suoraan alas), lauta (tukivoima kohtisuoraan pinnasta ulos) ja laudan liukukitka. Palikka liukuu ylös, joten liukukitka osoittaa liukumista vastaan eli rinnettä alas, kuten kuviossa A. Kuviossa B on keksitty voima $\overline{F}$ liikkeen suuntaan, vaikka mikään ei enää työnnä palikkaa: liike jatkuu ilman voimaa, ja voimat hidastavat sitä. Kuviossa C kitka osoittaa väärään suuntaan, ja kuviossa D tukivoima ei ole kohtisuorassa pintaa vastaan.
 
 ### f)
-**Perustelu:** Laatikko pysyy paikallaan, joten siihen vaikuttavien vaakasuorien voimien summa on nolla: lepokitka on yhtä suuri kuin työntövoima eli $120\,\text{N}$ ja vastakkaissuuntainen. Lauseke $\mu_0 N = 0{,}50 \cdot 40\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 196\,\text{N}$ on lepokitkan suurin mahdollinen arvo, ei sen arvo tässä tilanteessa. $392\,\text{N}$ on laatikon paino, ja $0\,\text{N}$ olisi oikein vain, jos laatikkoa ei työnnettäisi.
+**Perustelu:** Laatikko pysyy paikallaan, joten siihen vaikuttavien vaakasuorien voimien summa on nolla: lepokitka on yhtä suuri kuin työntövoima eli $120\,\text{N}$ ja vastakkaissuuntainen. Lauseke $$\begin{aligned} \mu_0 N &= 0{,}50 \cdot 40\,\text{kg} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \\ &\approx 196\,\text{N} \end{aligned}$$ on täysin kehittynyt lepokitka eli lähtökitka, ei lepokitkan arvo tässä tilanteessa. $392\,\text{N}$ on laatikon paino, ja $0\,\text{N}$ olisi oikein vain, jos laatikkoa ei työnnettäisi.
 
 ### g)
 **Perustelu:** Mekaanisen energian säilymisestä $mgh = \tfrac{1}{2}mv^2$, joten $v = \sqrt{2gh}$. Nopeus on verrannollinen korkeuden neliöjuureen: nelinkertainen korkeus antaa $\sqrt{4} = 2$ kertaa suuremman nopeuden eli $2v$. Vastaus $4v$ syntyy, jos nopeuden luullaan olevan verrannollinen korkeuteen; nelinkertainen on liike-energia, ei nopeus. Nopeus $\sqrt{2}\,v$ vastaisi kaksinkertaista korkeutta.
 
 ### h)
-**Perustelu:** Voiman impulssi on $(t, F)$-kuvaajan alle jäävä pinta-ala eli kolmion ala $\tfrac{1}{2} \cdot 1500\,\text{N} \cdot 0{,}0080\,\text{s} = 6{,}0\,\text{N}\cdot\text{s}$. Impulssi on pallon liikemäärän muutos, joten $v = \dfrac{6{,}0\,\text{N}\cdot\text{s}}{0{,}43\,\text{kg}} \approx 14\,\text{m/s}$. Vastaus $28\,\text{m/s}$ syntyy, jos impulssiksi otetaan huippuvoiman ja keston tulo ilman kerrointa $\tfrac{1}{2}$, ja $14\,000\,\text{m/s}$, jos millisekunteja ei muunneta sekunneiksi. Vastaus $2{,}6\,\text{m/s}$ syntyy, jos impulssi kerrotaan massalla eikä jaeta sillä.
+**Perustelu:** Voiman impulssi on $(t, F)$-kuvaajan alle jäävä pinta-ala eli kolmion ala $$\begin{aligned} &\tfrac{1}{2} \cdot 1500\,\text{N} \cdot 0{,}0080\,\text{s} \\ &= 6{,}0\,\text{N}\cdot\text{s} \end{aligned}$$. Impulssi on pallon liikemäärän muutos, joten $v = \dfrac{6{,}0\,\text{N}\cdot\text{s}}{0{,}43\,\text{kg}} \approx 14\,\text{m/s}$. Vastaus $28\,\text{m/s}$ syntyy, jos impulssiksi otetaan huippuvoiman ja keston tulo ilman kerrointa $\tfrac{1}{2}$, ja $14\,000\,\text{m/s}$, jos millisekunteja ei muunneta sekunneiksi. Vastaus $2{,}6\,\text{m/s}$ syntyy, jos impulssi kerrotaan massalla eikä jaeta sillä.
 
 ### i)
 **Perustelu:** Liikemäärä säilyy: $2{,}0\,\text{kg} \cdot 3{,}0\,\tfrac{\text{m}}{\text{s}} = 3{,}0\,\text{kg} \cdot u$, joten $u = 2{,}0\,\text{m/s}$. Liike-energia on ennen $\tfrac{1}{2} \cdot 2{,}0\,\text{kg} \cdot \left(3{,}0\,\tfrac{\text{m}}{\text{s}}\right)^2 = 9{,}0\,\text{J}$ ja jälkeen $\tfrac{1}{2} \cdot 3{,}0\,\text{kg} \cdot \left(2{,}0\,\tfrac{\text{m}}{\text{s}}\right)^2 = 6{,}0\,\text{J}$. Osuus on $6{,}0\,\text{J} : 9{,}0\,\text{J} \approx 67\,\%$. Vaihtoehto $100\,\%$ olettaa liike-energian säilyvän, vaikka yhteen tarttuvissa törmäyksissä sitä muuttuu muodonmuutokseksi ja sisäenergiaksi. $44\,\%$ on nopeuksien suhteen $\tfrac{2}{3}$ neliö, josta puuttuu massan kasvu, ja $33\,\%$ on hävinnyt osuus.
@@ -192,18 +192,18 @@
 **Kaava:** $a = \dfrac{\Delta v}{\Delta t}$
 **Muunnokset:** $54\,\text{km/h} = \dfrac{54}{3{,}6}\,\text{m/s} = 15\,\text{m/s}$
 **Sijoitus:** $a = \dfrac{15\,\tfrac{\text{m}}{\text{s}}}{3{,}0\,\text{s}} = 5{,}0\,\tfrac{\text{m}}{\text{s}^2}$
-**Vastaus:** Auton hidastuvuus on $5{,}0\,\text{m/s}^2$, enemmän kuin lepokitkan enimmäisarvo $3{,}9\,\text{m/s}^2$. Laatikko liukuu siis lavalla eteenpäin eli kohti ohjaamoa.
+**Vastaus:** Auton hidastuvuus on $5{,}0\,\text{m/s}^2$, enemmän kuin suurin hidastuvuus $3{,}9\,\text{m/s}^2$, jonka lähtökitka voi laatikolle antaa. Laatikko liukuu siis lavalla eteenpäin eli kohti ohjaamoa.
 **Järkevyys:** $5\,\text{m/s}^2$ on jyrkkä mutta tavallinen jarrutus; kuivalla asfaltilla auto pystyy noin $8$–$9\,\text{m/s}^2$:n hidastuvuuteen. Sitomaton kuorma liukuu siis jo tavallisessa äkkijarrutuksessa.
 
 ### d)
 **Annettu:** $\mu = 0{,}30$, auton hidastuvuus $5{,}0\,\text{m/s}^2$ (c-kohta)
 **Kysytty:** laatikkoon vaikuttavat voimat, laatikon hidastuvuus tien suhteen ja laatikon liike lavan suhteen
-**Periaate:** Laatikkoon vaikuttavat paino, tukivoima ja liikekitka. Laatikko liukuu lavan suhteen eteenpäin, joten liikekitka osoittaa taaksepäin. Pystysuunnassa $N = mg$, ja vaakasuunnassa Newtonin II lain mukaan $\mu mg = ma$.
+**Periaate:** Laatikkoon vaikuttavat paino, tukivoima ja liukukitka. Laatikko liukuu lavan suhteen eteenpäin, joten liukukitka osoittaa taaksepäin. Pystysuunnassa $N = mg$, ja vaakasuunnassa Newtonin II lain mukaan $\mu mg = ma$.
 **Kaava:** $a = \mu g$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $a = 0{,}30 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \approx 2{,}9\,\tfrac{\text{m}}{\text{s}^2}$
-**Vastaus:** Laatikkoon vaikuttavat paino alas, tukivoima ylös ja liikekitka taaksepäin; eteenpäin osoittavaa voimaa ei ole. Laatikko hidastuu tien suhteen noin $2{,}9\,\text{m/s}^2$, vähemmän kuin auto. Newtonin I lain mukaan laatikko jatkaisi liikettään ennallaan ilman voimia, ja kitka hidastaa sitä vain osittain. Auto hidastuu laatikon alta nopeammin, joten lavan suhteen laatikko liikkuu eteenpäin, vaikka mikään ei työnnä sitä.
-**Järkevyys:** Liikekitka on pienempi kuin lepokitkan enimmäisarvo, joten liukuvan laatikon hidastuvuus on pienempi kuin b-kohdan $3{,}9\,\text{m/s}^2$, kuten pitääkin.
+**Vastaus:** Laatikkoon vaikuttavat paino alas, tukivoima ylös ja liukukitka taaksepäin; eteenpäin osoittavaa voimaa ei ole. Laatikko hidastuu tien suhteen noin $2{,}9\,\text{m/s}^2$, vähemmän kuin auto. Newtonin I lain mukaan laatikko jatkaisi liikettään ennallaan ilman voimia, ja kitka hidastaa sitä vain osittain. Auto hidastuu laatikon alta nopeammin, joten lavan suhteen laatikko liikkuu eteenpäin, vaikka mikään ei työnnä sitä.
+**Järkevyys:** Liukukitka on pienempi kuin lähtökitka, joten liukuvan laatikon hidastuvuus on pienempi kuin b-kohdan $3{,}9\,\text{m/s}^2$, kuten pitääkin.
 
 ### Yleisiä virheitä
 - Voimakuvioon piirretään eteenpäin osoittava ”liikevoima” tai kitka taaksepäin kiihdytyksen aikana.
@@ -219,13 +219,13 @@
 
 ### a)
 **Annettu:** $v = 1{,}50\,\text{m/s}$, $s = 0{,}46\,\text{m}$, $m = 0{,}20\,\text{kg}$, $g = 9{,}81\,\text{m/s}^2$
-**Kysytty:** liikekitkakerroin $\mu$
-**Periaate:** Mekaniikan energiaperiaate: pöytä on vaakasuora, joten potentiaalienergia ei muutu, ja liukumisen aikana ainoa työtä tekevä voima on liikekitka. Sen työ on negatiivinen ja kuluttaa koko liike-energian. Vaakasuoralla pinnalla tukivoima on painon suuruinen, $N = mg$, joten kitka on $F_\mu = \mu mg$.
+**Kysytty:** liukukitkakerroin $\mu$
+**Periaate:** Mekaniikan energiaperiaate: pöytä on vaakasuora, joten potentiaalienergia ei muutu, ja liukumisen aikana ainoa työtä tekevä voima on liukukitka. Sen työ on negatiivinen ja kuluttaa koko liike-energian. Vaakasuoralla pinnalla tukivoima on painon suuruinen, $N = mg$, joten kitka on $F_\mu = \mu mg$.
 **Kaava:** $\tfrac{1}{2}mv^2 - \mu mg\,s = 0 \quad\Rightarrow\quad \mu = \dfrac{v^2}{2gs}$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $\mu = \dfrac{\left(1{,}50\,\tfrac{\text{m}}{\text{s}}\right)^2}{2 \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}46\,\text{m}} = \dfrac{2{,}25\,\tfrac{\text{m}^2}{\text{s}^2}}{9{,}03\,\tfrac{\text{m}^2}{\text{s}^2}} \approx 0{,}249$
-**Vastaus:** Liikekitkakerroin on $\mu \approx 0{,}25$. Kertoimella ei ole yksikköä. Massa supistuu pois, joten sitä ei tarvita.
-**Järkevyys:** Puun liikekitkakerroin puuta tai lakattua pintaa vastaan on tyypillisesti $0{,}2$–$0{,}5$, joten tulos on uskottava.
+**Vastaus:** Liukukitkakerroin on $\mu \approx 0{,}25$. Kertoimella ei ole yksikköä. Massa supistuu pois, joten sitä ei tarvita.
+**Järkevyys:** Puun liukukitkakerroin puuta tai lakattua pintaa vastaan on tyypillisesti $0{,}2$–$0{,}5$, joten tulos on uskottava.
 
 ### b)
 **Annettu:** $v = (1{,}50 \pm 0{,}03)\,\text{m/s}$ ja $s = (0{,}46 \pm 0{,}01)\,\text{m}$
@@ -301,7 +301,7 @@
 - Tonneja ei muunneta kilogrammoiksi energian laskussa.
 
 ### Hyväksytään myös
-- Kohdassa c vaunuun A kohdistuvan voiman laskeminen: $24\,000\,\text{kg} \cdot 0{,}90\,\tfrac{\text{m}}{\text{s}} : 0{,}80\,\text{s} = 27\,\text{kN}$, kun todetaan voimien olevan yhtä suuret.
+- Kohdassa c vaunuun A kohdistuvan voiman laskeminen: $$\begin{aligned} &24\,000\,\text{kg} \cdot 0{,}90\,\tfrac{\text{m}}{\text{s}} : 0{,}80\,\text{s} \\ &= 27\,\text{kN} \end{aligned}$$, kun todetaan voimien olevan yhtä suuret.
 
 ## fy4-k6
 

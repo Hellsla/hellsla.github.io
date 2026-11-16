@@ -29,7 +29,7 @@ RULES = [
     ("never-on-line", re.compile(r"\b(?:eivät|ei) (?:koskaan|ikinä) (?:osu|ole|kulje|sijaitse)[^.;]{0,40}\bsuora", I), None,
      "points scatter around a fitted line, but nothing forbids one lying exactly on it: 'yleensä'"),
     ("outlier-drop", re.compile(r"poikkea\w*[^.;]{0,90}\b(?:jätetään pois|jättää (?:sen )?pois|poistetaan|hylätään)", I),
-     re.compile(r"\bsyy|perustel|vain jos|vain,? jos|ei poisteta|ei saa|pelkästään|kirja|dokumentoi|ei pidä", I),
+     re.compile(r"\bsyy|perustel|vain jos|vain,? jos|ei poisteta|ei saa|pelkästään|kirja|dokumentoi|ei pidä|hiljaa|tarkistetaan ennen", I),
      "a deviant result is checked and the measurement repeated if needed; it is dropped only for a found, documented cause"),
     ("half-range-mean", re.compile(r"keskiarvon (?:epävarmuus|virhe)\w*[^.;]{0,60}(?:vaihteluvälin puol|puolet vaihteluvälistä|puolikas)|(?:vaihteluvälin puol\w*|puolet vaihteluvälistä)[^.;]{0,60}keskiarvon (?:epävarmuus|virhe)", I),
      re.compile(r"yksinkertai|arvio|likim|tässä (?:tehtävässä|harjoituksessa|kurssissa)", I),
@@ -60,6 +60,12 @@ RULES = [
     ("higher-line-ahead", re.compile(r"(?:edellä|johdossa)[^.;]{0,60}(?:viiva|suora|kuvaaja)\w* (?:on |kulkee )?(?:ylempänä|ylempi|korkeammalla)|(?:ylempänä|ylempi|korkeammalla)[^.;]{0,40}(?:viiva|suora|kuvaaja)\w*[^.;]{0,40}(?:on |kuuluu )?(?:edellä|johdossa)|x_\\text\{\w+\} - x_\\text\{\w+\}\$? on [\w:]+ etumatka|(?:positiivinen|negatiivinen)[^.;]{0,20}\bkun \w+ on (?:edellä|takana)", I),
      re.compile(r"positiivise\w* suuntaan|riippuu\w*[^.;]{0,30}suun", I),
      "a higher line in a (t, x) graph means a larger position coordinate; which body is ahead depends on the direction of motion (teacher 2026-10-30, fy4-12)"),
+    ("heat-into", re.compile(r"\b(?:muuttu\w*|muutu\w*|muutt(?:aa|avat|i|ivat|aisi|aisivat)|muunt\w*|jää|jäävät|jäisi|jäi|häviä\w*|kuluu|päätyy|menee|siirty\w*|siirry\w*)\b[^.;:]{0,60}?\blämmöksi\b"
+                            r"|\blämmöksi (?:ja \w+ )?(?:muuttu\w*|muunt\w*|jää\w*|häviä\w*)|\b(?:ääne\w*|valo\w*) ja lämpöön\b|\blämpöön ja (?:ääne\w*|valo\w*)|\bjakautuu\b[^.;:]{0,60}\blämpöön\b", I),
+     re.compile(r"\bsanota\w*|\bkutsu\w*|\bnimitet\w*", I),
+     "energy becomes internal energy, which is transferred to the surroundings as heat: 'muuttuu sisäenergiaksi, joka siirtyy lämpönä ympäristöön', never 'muuttuu / jää lämmöksi' (teacher 2026-11-15, P1; FY3–FY9, FY2 keeps lämpöenergia)"),
+    ("liikekitka", re.compile(r"\bliikekitk\w*", I), re.compile(r"\baiemmin\b", I),
+     "the term is liukukitka (liukukitkakerroin), never liikekitka; the greatest static friction is 'täysin kehittynyt lepokitka eli lähtökitka' (teacher 2026-11-15, P8)"),
     ("dive-exhale", re.compile(r"hengitettävä (?:koko (?:ajan|nousun ajan) )?ulos|on puhallettava (?:koko ajan )?ulos|puhalla\w* (?:koko ajan )?ulos (?:noust|koko nousun)", I), None,
      "the diving rule is: never hold your breath while ascending, breathe normally"),
 ]
@@ -87,8 +93,12 @@ def taught(obj, wrong=False):
         for v in obj: yield from taught(v, wrong)
 
 
-def problems_in(name, text):
-    """(file, line, rule id, message, sentence) for every flagged sentence of one file's text."""
+COURSE_RULES = {"heat-into": re.compile(r"FY[3-9]$|units$")}   # a rule for some courses only: FY1 and FY2 say lämpöenergia (P1)
+
+
+def problems_in(name, text, course=None):
+    """(file, line, rule id, message, sentence) for every flagged sentence of one file's text; `course` (FY4, units, …)
+    leaves out a rule of COURSE_RULES that is not for it (None: every rule)."""
     if name.endswith(".json"):
         try: units = [(1, s) for t, ok in taught(json.loads(text)) if ok for _, s in sentences(t)]
         except json.JSONDecodeError: units = sentences(text)
@@ -97,21 +107,38 @@ def problems_in(name, text):
     for line, s in units:
         if REFUTES.search(s): continue
         for rid, pat, ok, msg in RULES:
+            if course is not None and rid in COURSE_RULES and not COURSE_RULES[rid].search(course): continue
             if pat.search(s) and not (ok and ok.search(s)):
                 out.append((name, line, rid, msg, " ".join(s.split())[:160]))
     return out
 
 
-FILES = ("lesson.md", "inquiry.json", "exit-ticket.json", "exercises/exercises.json", "exercises/solutions.md",
-         "tasks.json", "solutions.md")
+FILES = ("lesson.md", "unit.md", "inquiry.json", "exit-ticket.json", "exercises/exercises.json", "exercises/solutions.md",
+         "tasks.json", "solutions.md", "sovella/tasks.json", "sovella/solutions.md")
+KNOWN = ROOT / "docs/physics-phrases-known.tsv"   # sentences already in the texts when a rule came, until their course is corrected
+
+
+def course_of(folder):
+    """The course folder a lesson, unit, Sovella set or exam lies in (FY4, units, tutkimukset), or None."""
+    parts = pathlib.Path(folder).resolve().parts
+    return parts[parts.index("content") + 2] if "content" in parts and len(parts) > parts.index("content") + 2 else None
 
 
 def problems(folder):
     folder = pathlib.Path(folder); out = []
     for n in FILES:
         p = folder / n
-        if p.exists(): out += problems_in(n, p.read_text())
+        if p.exists(): out += problems_in(n, p.read_text(), course_of(folder))
     return out
+
+
+def known():
+    """{(folder relative to content/fi, file, rule id, sentence)} of docs/physics-phrases-known.tsv: a rule's hits that
+    were in the texts when the rule came (heat-into, 2026-11-15: work queue 18 corrects them course by course). CI
+    lets them pass and fails on any other; delete a row when its sentence is corrected."""
+    if not KNOWN.exists(): return set()
+    rows = [l.split("\t") for l in KNOWN.read_text().splitlines()[1:] if l.strip()]
+    return {tuple(r[:4]) for r in rows}
 
 
 def finnish_units():
