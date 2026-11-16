@@ -54,7 +54,7 @@
 **Principle:** The ingot is gold all the way through, so the mass is density times volume. The volume of a rectangular block is the product of the three dimensions.
 **Formula:** $V = a\,b\,c$ and $m = \rho V = \rho\,a\,b\,c$
 **Conversions:** The density is in $\text{kg/m}^3$, so the dimensions are converted to metres: $10.0\,\text{cm} = 10.0 \cdot 0.01\,\text{m} = 0.100\,\text{m}$, $5.0\,\text{cm} = 5.0 \cdot 0.01\,\text{m} = 0.050\,\text{m}$ and $2.0\,\text{cm} = 2.0 \cdot 0.01\,\text{m} = 0.020\,\text{m}$.
-**Substitution:** $m = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0.100\,\text{m} \cdot 0.050\,\text{m} \cdot 0.020\,\text{m} = 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1.0 \cdot 10^{-4}\,\text{m}^3 = 1.93\,\text{kg}$
+**Substitution:** $$\begin{aligned} m &= 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0.100\,\text{m} \\ &\cdot 0.050\,\text{m} \cdot 0.020\,\text{m} \\ &= 19\,300\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1.0 \cdot 10^{-4}\,\text{m}^3 \\ &= 1.93\,\text{kg} \end{aligned}$$
 **Answer:** $1.9\,\text{kg}$, two significant figures, because the dimensions $5.0\,\text{cm}$ and $2.0\,\text{cm}$ are known to two figures.
 **Reasonableness:** The volume of the ingot is $100\,\text{cm}^3$, and the same volume of water would have a mass of $100\,\text{g}$. Gold is about 19 times as dense, so $19 \cdot 100\,\text{g} \approx 1.9\,\text{kg}$.
 
@@ -192,7 +192,7 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 **Formula:** For the volumes $V_\text{Cu} + V_\text{Al} = V$ and for the masses $\rho_\text{Cu} V_\text{Cu} + \rho_\text{Al} V_\text{Al} = m$. Substituting $V_\text{Al} = V - V_\text{Cu}$ into the second equation gives $V_\text{Cu} = \dfrac{m - \rho_\text{Al} V}{\rho_\text{Cu} - \rho_\text{Al}}$
 **Conversions:** Not needed: the masses are in grams, the volumes in cubic centimetres and the densities in $\text{g/cm}^3$.
 **Substitution:** $V_\text{Cu} = \dfrac{520\,\text{g} - 2.70\,\tfrac{\text{g}}{\text{cm}^3} \cdot 100\,\text{cm}^3}{8.96\,\tfrac{\text{g}}{\text{cm}^3} - 2.70\,\tfrac{\text{g}}{\text{cm}^3}} = \dfrac{250\,\text{g}}{6.26\,\tfrac{\text{g}}{\text{cm}^3}} = 39.9\,\text{cm}^3$
-**Answer:** $39.9\,\text{cm}^3$, three significant figures, because the densities in the table have three figures. The volume $100\,\text{cm}^3$ and the mass $520\,\text{g}$ are exact values, so they do not limit the precision. The volume of aluminium is $V_\text{Al} = 100\,\text{cm}^3 - 39.9\,\text{cm}^3 = 60.1\,\text{cm}^3$.
+**Answer:** $39.9\,\text{cm}^3$, three significant figures, because the densities in the table have three figures. The volume $100\,\text{cm}^3$ and the mass $520\,\text{g}$ are exact values, so they do not limit the precision. The volume of aluminium is $$\begin{aligned} V_\text{Al} &= 100\,\text{cm}^3 - 39.9\,\text{cm}^3 \\ &= 60.1\,\text{cm}^3 \end{aligned}$$.
 **Reasonableness:** If the object were pure aluminium, its mass would be $270\,\text{g}$, and if it were pure copper, $896\,\text{g}$. The actual mass $520\,\text{g}$ is between these and closer to aluminium, so less than half of the volume is copper, like $39.9\,\text{cm}^3$. There is more aluminium by volume ($60.1\,\text{cm}^3$), but more copper by mass: the mass of the copper is about $357.5\,\text{g}$ and that of the aluminium about $162.3\,\text{g}$, because the density of copper is several times as great. Check: $8.96 \cdot 39.9\,\text{g} + 2.70 \cdot 60.1\,\text{g} = 357.5\,\text{g} + 162.3\,\text{g} = 519.8\,\text{g} \approx 520\,\text{g}$.
 
 ## fy1-7-L2-08
@@ -204,9 +204,9 @@ $$L = \frac{V}{A} = \frac{m}{\rho\,\pi r^2}$$
 
 **Model answer:** Conversions:
 
-$0.36\,\text{kg} = 0.36 \cdot 1000\,\text{g} = 360\,\text{g}$
+$$\begin{aligned} 0.36\,\text{kg} &= 0.36 \cdot 1000\,\text{g} \\ &= 360\,\text{g} \end{aligned}$$
 
-$0.40\,\text{dm}^3 = 0.40 \cdot 1000\,\text{cm}^3 = 400\,\text{cm}^3$
+$$\begin{aligned} &0.40\,\text{dm}^3 \\ &= 0.40 \cdot 1000\,\text{cm}^3 \\ &= 400\,\text{cm}^3 \end{aligned}$$
 
 $4.5\,\text{kg} = 4.5 \cdot 1000\,\text{g} = 4500\,\text{g}$
 
@@ -216,9 +216,9 @@ Densities:
 
 $\rho_\text{A} = 135\,\text{g} : 50\,\text{cm}^3 = 2.7\,\tfrac{\text{g}}{\text{cm}^3}$
 
-$\rho_\text{B} = 360\,\text{g} : 400\,\text{cm}^3 = 0.90\,\tfrac{\text{g}}{\text{cm}^3}$
+$$\begin{aligned} \rho_\text{B} &= 360\,\text{g} : 400\,\text{cm}^3 \\ &= 0.90\,\tfrac{\text{g}}{\text{cm}^3} \end{aligned}$$
 
-$\rho_\text{C} = 4500\,\text{g} : 500\,\text{cm}^3 = 9.0\,\tfrac{\text{g}}{\text{cm}^3}$
+$$\begin{aligned} \rho_\text{C} &= 4500\,\text{g} : 500\,\text{cm}^3 \\ &= 9.0\,\tfrac{\text{g}}{\text{cm}^3} \end{aligned}$$
 
 $\rho_\text{D} = 120\,\text{g} : 100\,\text{cm}^3 = 1.2\,\tfrac{\text{g}}{\text{cm}^3}$
 

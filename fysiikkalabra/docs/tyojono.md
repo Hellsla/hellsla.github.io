@@ -73,11 +73,11 @@ jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen ja align-muotoon (opettaja 2026-11-15)
 
-Varattu: claude/fy8-clipped-formulas (FY8)
-
 FY6 tehty (PR #627): 568 riviä pois listalta; 22 jää (sulkeiden tai lainausmerkkien sisällä olevat kaavat, liian leveät yksittäiset `\dfrac`- ja `\sqrt`-kaavat ja fy6-2:n taulukon mittarin tarkkuusmerkinnät). Rivi alkaa vain relaatiosta, plus- tai miinusmerkistä tai kokonaisten suureiden välistä.
 
 FY9 tehty (PR #611): 1001 riviä pois listalta; 84 jää (16 liian leveää yksittäistä `\dfrac`- tai `\sqrt`-kaavaa ja 12 sulkeiden, lainausmerkkien tai sijapäätteen sisällä olevaa kaavaa, jotka jäävät tekstin sisään).
+
+FY1 tehty (PR #619): 199 riviä pois listalta; 3 jää (fy1-3:n keskiarvon `\dfrac`, jonka osoittajan summa on yksinään ruutua leveämpi).
 
 Kohdan 5b tarkistus löysi mainista noin 4 800 kaavaa, jotka leikkautuvat puhelimella (`docs/clipped-formulas.tsv`).
 Esimerkki: fy2-3, Esimerkki 2, jossa tekstin sisällä oleva $E = 1500 \cdot 3{,}0\,\text{kWh} = 4500\,\text{kWh}$

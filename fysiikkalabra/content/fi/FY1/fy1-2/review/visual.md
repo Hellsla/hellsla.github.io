@@ -1,17 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 8d3fea90beacd643
-
-Mode: delta (table heading "Koko tai etäisyys")
+CONTENT-HASH: 275e32c951dc2421
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-2 capture 16 — capture shows a sticky header over the box; formula itself unclipped.
 
 ## Checked
-- fy1-2-theory-1280-2.png: the four-column table, the new heading fits on one line, columns aligned, LaTeX units intact.
-- fy1-2-stage-selita-390-3.png: the table as labelled cards at 390 px, the longer label fits, no clipping or overflow.
+delta 5d reflow, round 1: opened contact sheet of all fi/fy1-2 captures at 360 px (captures 02,03,04,06,07,16); no clipping, equals signs aligned, rows break outside numbers and units.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5
