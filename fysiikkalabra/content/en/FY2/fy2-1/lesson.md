@@ -98,13 +98,17 @@ Energy comes in many forms, and each form is called a **form of energy**. The fo
 <figure class="unit-photo"><img src="pics/fy2/hydropower-plant-aerial.webp" alt="A hydroelectric power plant seen from above: a river flows on the left, a car park is in the middle and transformers and power line towers are at the bottom."><figcaption>The site of a hydroelectric power plant seen from above. In a hydroelectric plant the potential energy of water turns into kinetic energy in the turbine and into electrical energy in the generator.</figcaption></figure>
 
 ### Seven forms of energy
-- **Potential energy** $E_\text{p}$ is energy that depends on the position of an object, here gravitational potential energy. The higher an object is and the greater its mass, the more potential energy it has. A ball at the edge of a shelf can pick up speed as it falls.
-- **Kinetic energy** $E_\text{k}$ is the energy of a moving object. The faster an object moves and the greater its mass, the more kinetic energy it has. An object at rest has none.
-- **Thermal energy** $E_\text{thermal}$ is energy linked to the motion of the particles of a substance and to the interactions between them. When an object warms up, its particles move more and its thermal energy increases. Thermal energy also depends on the amount of substance, so it is not the same thing as temperature. The word **heat**, on the other hand, means in physics energy that is *transferred* because of a temperature difference: the net transfer of energy is from the warmer object to the colder one. An object has thermal energy, and energy is transferred from one object to another as heat.
-- **Chemical energy** is energy stored in the chemical bonds of substances. It is found in food, fuels and batteries, and it is released in, for example, combustion and metabolism.
-- **Radiant energy** is energy carried by radiation, for example sunlight. It also travels through a vacuum.
-- **Electrical energy** is energy transferred by an electric current, for example in the electricity grid.
-- **Nuclear energy** is energy stored in atomic nuclei. It is released in nuclear reactions, which take place in a nuclear power plant and in the Sun.
+| Form of energy | What it is linked to | Example |
+|---|---|---|
+| **Potential energy** $E_\text{p}$ | The position of an object, here gravitational potential energy. The higher an object is and the greater its mass, the more potential energy it has. | A ball at the edge of a shelf can pick up speed as it falls. |
+| **Kinetic energy** $E_\text{k}$ | The motion of an object. The faster an object moves and the greater its mass, the more kinetic energy it has. An object at rest has none. | A rolling ball |
+| **Thermal energy** $E_\text{thermal}$ | The motion of the particles of a substance and the interactions between them. When an object warms up, its particles move more and its thermal energy increases. | A hot cup of coffee |
+| **Chemical energy** | The chemical bonds of substances. The energy is released in, for example, combustion and metabolism. | Food, fuels and batteries |
+| **Radiant energy** | Radiation: the energy is carried by radiation, also through a vacuum. | Sunlight |
+| **Electrical energy** | Electric current: the energy is transferred by the current. | The electricity grid |
+| **Nuclear energy** | Atomic nuclei. The energy is released in nuclear reactions. | A nuclear power plant and the Sun |
+
+Thermal energy also depends on the amount of substance, so it is not the same thing as temperature. The word **heat**, on the other hand, means in physics energy that is *transferred* because of a temperature difference: the net transfer of energy is from the warmer object to the colder one. An object has thermal energy, and energy is transferred from one object to another as heat.
 
 Potential energy and kinetic energy together make up **mechanical energy**, $E_\text{mech} = E_\text{p} + E_\text{k}$.
 
