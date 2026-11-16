@@ -1,18 +1,8 @@
 VERDICT: DONE
 
-Work queue 18, teacher's decision P3: gravitational field strength marked as extension. `lesson.md` in fi, en, fi-easy, nothing else.
-
-- `### Gravitaatiokentän voimakkuus` (under `## Painovoima ja gravitaatiokenttä`): new first paragraph "**Syventävä osio.** …" (en "**Extension section.**"). It says that this subsection and the next, *Kenttä eri taivaankappaleilla* (also field strength), are extension, and that the core path needs Newton's law of gravitation and weight as the gravitational force at the Earth's surface. The section's first paragraph ($G = mg$, $g = \gamma M/R^2$ at the surface) is left unmarked.
-- Tiivistelmä: the field-strength item starts "Syventävä: " (en "Extension: ").
-
-**Ei muutettu, opettajan päätettäväksi**
-- inquiry.json `learn`, goal 1: "laskemaan gravitaatiovoiman ja gravitaatiokentän voimakkuuden …" requires field strength.
-- inquiry.json Etsi virhe (field strength at $300\,\text{km}$): requires it.
-- inquiry.json transfer task (height where the field is half): requires it.
-- inquiry.json check on mass and weight on the Moon: uses $G = mg$ with the Moon's $g$; feedback names field strength.
-- inquiry.json exercises lead: "… gravitaatiolakia tai kentän voimakkuuden kaavaa suoraan".
-- Yleinen virhekäsitys: mentions the field strength at $300\,\text{km}$.
-- Tiivistelmä item also holds the core fact $G = mg$.
-- Worked example: does not need field strength.
-
-Checks: lint 0 errors, check_i18n: no line about fy5-5.
+Round 2, lesson part (fi, en, fi-easy):
+- inquiry.json: learn goal 2 now speaks of the gravitational force only; the field-strength skill moved to new `deepen` ("laskemalla gravitaatiokentän voimakkuuden Maan ja muiden taivaankappaleiden pinnalla"). Etsi virhe title prefixed "Syventävä: " (en "Extension: "), still optional. Transfer task `siirto` reworded to the gravitational force on a probe (half of the surface value): prompt, hints, mistake feedback and solution (F = γMm/r², M and m cancel); numbers, answer 2640 km unchanged (recomputed with lesson-answers.py: 2641,85 km).
+- lesson.md: Tiivistelmä split: weight G = mg is a core item, only the field-strength item starts "Syventävä:" (en "Extension:"). In the note "moduulin" became "kurssin" (en "course"). The misconception box is unchanged (allowed).
+- exit-ticket.json: first answer's chain re-broken in 5d style (aligned, break before the second \cdot), same numbers and units.
+- lesson-answers.py: comment on the transfer task.
+Checks: build, objectives.py 0 errors, test_inquiry 109 passed, lint 0 errors, check_i18n ok, check_layout 360/352 ok.

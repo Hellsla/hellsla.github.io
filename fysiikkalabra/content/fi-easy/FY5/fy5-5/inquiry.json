@@ -3,8 +3,11 @@
   "contribution": "Gravitaatio on tässä luvussa vuorovaikutus kaikkien kappaleiden välillä. Paino on vain yksi esimerkki siitä. Luvussa opitaan Newtonin gravitaatiolaki $F = \\gamma \\tfrac{m_1 m_2}{r^2}$. Opitaan myös, että voimat ovat yhtä suuret mutta kiihtyvyydet erilaiset. Lisäksi opitaan gravitaatiokentän voimakkuus $g = \\gamma \\tfrac{M}{r^2}$, joka on putoamiskiihtyvyys taivaankappaleilla. Lopuksi katsotaan, miten gravitaatio synnyttää maailmankaikkeuden rakenteita. Ratanopeudet käsitellään vasta seuraavassa luvussa.",
   "learn": [
     "vertailemaan kahden toisiaan vetävän kappaleen voimia ja kiihtyvyyksiä.",
-    "laskemaan gravitaatiovoiman ja gravitaatiokentän voimakkuuden Newtonin gravitaatiolain avulla.",
+    "laskemaan gravitaatiovoiman Newtonin gravitaatiolain avulla.",
     "selittämään, miten gravitaatio kokoaa ainetta tähdiksi, planeetoiksi ja galakseiksi."
+  ],
+  "deepen": [
+    "laskemalla gravitaatiokentän voimakkuuden Maan ja muiden taivaankappaleiden pinnalla."
   ],
   "prior": [
     "Vuorovaikutuksessa kappaleet vaikuttavat toisiinsa yhtä suurilla ja vastakkaissuuntaisilla voimilla (luku *Vuorovaikutus ja voima: Newtonin ensimmäinen ja kolmas laki*)",
@@ -297,7 +300,7 @@
       "id": "etsi-virhe",
       "stage": "sovella",
       "type": "choice",
-      "title": "Etsi virhe",
+      "title": "Syventävä: Etsi virhe",
       "optional": true,
       "prompt": "Opiskelija laski gravitaatiokentän voimakkuuden $300\\,\\text{km}$:n korkeudella Maan pinnasta näin: $g = \\gamma \\tfrac{M}{r^2} = 6{,}674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot \\tfrac{5{,}97 \\cdot 10^{24}\\,\\text{kg}}{(3{,}0 \\cdot 10^{5}\\,\\text{m})^2} \\approx 4400\\,\\text{m/s}^2$. Mikä ratkaisussa on vialla?",
       "choices": [
@@ -325,26 +328,26 @@
       "stage": "sovella",
       "type": "numeric",
       "title": "Sovella uuteen tilanteeseen",
-      "prompt": "Avaruusluotain nousee suoraan ylöspäin Maan pinnalta. Kuinka korkealla Maan pinnan yläpuolella Maan gravitaatiokentän voimakkuus on puolet sen arvosta Maan pinnalla? Maan säde on $6378\\,\\text{km}$. Anna vastaus kilometreinä.",
+      "prompt": "Avaruusluotain, jonka massa on $m$, nousee suoraan ylöspäin Maan pinnalta. Kuinka korkealla Maan pinnan yläpuolella Maan luotaimeen kohdistama gravitaatiovoima on puolet sen arvosta Maan pinnalla? Maan säde on $6378\\,\\text{km}$. Anna vastaus kilometreinä.",
       "answer": 2640,
       "unit": "km",
       "tolerance": 0.02,
       "hints": [
-        "Miten kentän voimakkuus riippuu etäisyydestä $r$ Maan keskipisteestä? Kirjoita ehto $g(r) = \\tfrac{1}{2} g(R)$ kaavan $g = \\gamma \\tfrac{M}{r^2}$ avulla.",
-        "$\\gamma \\tfrac{M}{r^2} = \\tfrac{1}{2} \\gamma \\tfrac{M}{R^2}$, josta $r^2 = 2R^2$ eli $r = \\sqrt{2}\\,R$. Korkeus pinnasta on $h = r - R$.",
+        "Miten gravitaatiovoima riippuu etäisyydestä $r$ Maan keskipisteestä? Kirjoita ehto $F(r) = \\tfrac{1}{2} F(R)$ gravitaatiolain $F = \\gamma \\tfrac{M m}{r^2}$ avulla.",
+        "$\\gamma \\tfrac{M m}{r^2} = \\tfrac{1}{2} \\gamma \\tfrac{M m}{R^2}$, josta $r^2 = 2R^2$ eli $r = \\sqrt{2}\\,R$. Korkeus pinnasta on $h = r - R$.",
         "$h = (\\sqrt{2} - 1) R = 0{,}4142 \\cdot 6378\\,\\text{km}$."
       ],
       "mistakes": [
         {
           "value": 6378,
-          "feedback": "Kaksinkertainen etäisyys keskipisteestä, $r = 2R$, pienentäisi kentän neljäsosaan, koska $g \\propto \\tfrac{1}{r^2}$. Puolet saadaan, kun $r^2 = 2R^2$."
+          "feedback": "Kaksinkertainen etäisyys keskipisteestä, $r = 2R$, pienentäisi voiman neljäsosaan, koska $g \\propto \\tfrac{1}{r^2}$. Puolet saadaan, kun $r^2 = 2R^2$."
         },
         {
           "value": 9020,
           "feedback": "Laskit etäisyyden $r = \\sqrt{2}\\,R$ Maan keskipisteestä. Kysytään korkeutta pinnan yläpuolella. Vähennä siis Maan säde."
         }
       ],
-      "solution": "**Annettu:** Maan säde $R = 6378\\,\\text{km}$. Kentän voimakkuus korkeudella $h$ on puolet pinnan arvosta.\n\n**Kysytty:** korkeus $h$ Maan pinnasta kilometreinä\n\n**Periaate:** Maan gravitaatiokentän voimakkuus on $g = \\gamma \\tfrac{M}{r^2}$. Tässä $r$ on etäisyys Maan keskipisteestä, koska Maa vetää kuin sen massa olisi keskipisteessä. Pinnalla $r = R$. Korkeudella $h$ taas $r = R + h$. Maan massaa ei tarvita, koska se supistuu pois.\n\n**Kaava:** $\\gamma \\dfrac{M}{(R + h)^2} = \\dfrac{1}{2} \\gamma \\dfrac{M}{R^2}$, josta $(R + h)^2 = 2R^2$ ja $h = (\\sqrt{2} - 1) R$\n\n**Muunnokset:** Ei tarvita. Säde on kilometreinä, ja vastaus pyydetään kilometreinä.\n\n**Sijoitus:** $h = (\\sqrt{2} - 1) \\cdot 6378\\,\\text{km} = 0{,}41421 \\cdot 6378\\,\\text{km} = 2641{,}9\\,\\text{km}$\n\n**Vastaus:** $2640\\,\\text{km}$ kolmen merkitsevän numeron tarkkuudella. Jos säteessä on neljä numeroa, tulos on $2642\\,\\text{km}$.\n\n**Järkevyys:** Tarkistus: $\\left(\\tfrac{6378}{6378 + 2642}\\right)^2 = \\left(\\tfrac{6378}{9020}\\right)^2 = 0{,}500$. Korkeus on pienempi kuin Maan säde. Se sopii siihen, että kaksinkertainen etäisyys keskipisteestä pienentäisi kentän jo neljäsosaan."
+      "solution": "**Annettu:** Maan säde $R = 6378\\,\\text{km}$. Maan luotaimeen kohdistama gravitaatiovoima korkeudella $h$ on puolet pinnan arvosta.\n\n**Kysytty:** korkeus $h$ Maan pinnasta kilometreinä\n\n**Periaate:** Gravitaatiolain mukaan luotaimeen kohdistuva voima on $F = \\gamma \\tfrac{M m}{r^2}$. Tässä $r$ on etäisyys Maan keskipisteestä, koska Maa vetää kuin sen massa olisi keskipisteessä. Pinnalla $r = R$. Korkeudella $h$ taas $r = R + h$. Maan massaa ja luotaimen massaa ei tarvita, koska ne supistuvat pois.\n\n**Kaava:** $\\gamma \\dfrac{M m}{(R + h)^2} = \\dfrac{1}{2} \\gamma \\dfrac{M m}{R^2}$, josta $(R + h)^2 = 2R^2$ ja $h = (\\sqrt{2} - 1) R$\n\n**Muunnokset:** Ei tarvita. Säde on kilometreinä, ja vastaus pyydetään kilometreinä.\n\n**Sijoitus:** $h = (\\sqrt{2} - 1) \\cdot 6378\\,\\text{km} = 0{,}41421 \\cdot 6378\\,\\text{km} = 2641{,}9\\,\\text{km}$\n\n**Vastaus:** $2640\\,\\text{km}$ kolmen merkitsevän numeron tarkkuudella. Jos säteessä on neljä numeroa, tulos on $2642\\,\\text{km}$.\n\n**Järkevyys:** Tarkistus: $\\left(\\tfrac{6378}{6378 + 2642}\\right)^2 = \\left(\\tfrac{6378}{9020}\\right)^2 = 0{,}500$. Korkeus on pienempi kuin Maan säde. Se sopii siihen, että kaksinkertainen etäisyys keskipisteestä pienentäisi voiman jo neljäsosaan."
     },
     {
       "id": "harjoitukset",

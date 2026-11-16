@@ -248,7 +248,31 @@ $$, eli $432\,\text{Hz}$ on noin $1{,}8\,\%$ matalampi kuin $440\,\text{Hz}$. Aa
 \Delta\lambda &= 0{,}79398\,\text{m} - 0{,}77955\,\text{m} \\
 &\approx 0{,}014\,\text{m}
 \end{aligned}
-$$ eli $1{,}4\,\text{cm}$: matalamman äänen aalto on noin $1{,}9\,\%$ pidempi. Muutokset ovat vastakkaissuuntaiset, koska tulo $f\lambda = v$ pysyy samana. Eron kuulee: artikkelin mukaan harjaantunut korva erottaa jo $2\,\text{Hz}$:n eron, ja yhtä aikaa soidessaan äänet huojuisivat taajuudella $f_\text{H} = |f_1 - f_2| = 8\,\text{Hz}$. Musiikissa ero on silti pieni. Artikkelin mukaan $415\,\text{Hz}$ on lähes tasan puolisävelaskeleen verran alle $440\,\text{Hz}$:n, joten $8\,\text{Hz}$ on noin kolmannes puolisävelaskeleesta. Fysikaalisesti kumpikin on samanlainen tavallinen ääniaalto: sama väliaine, sama nopeus ja sama malli. Taajuudella $432\,\text{Hz}$ ei tapahdu mitään laadullista muutosta. Lisäksi hertsi perustuu sekuntiin, joka on ihmisten sopima yksikkö. Luku $432$ ei siksi ole luonnon ominaisuus: toisella ajan yksiköllä sama ääni saisi toisen lukuarvon.
-**Kohta c):** Artikkeli kertoo omin sanoin tiivistettynä seuraavat väitteet. Monilla verkkosivuilla $432\,\text{Hz}$:n viritystasoa kuvataan rauhoittavaksi ja jopa parantavaksi, ja sitä kutsutaan luonnon omaksi taajuudeksi. Erään sivuston mukaan se liittyy värien spektriin ja chakroihin eli hindulaisen perinteen energiakenttiin, ja siihen viritetty musiikki olisi valon, ajan, aineen ja tietoisuuden jatke. Väitteitä tuetaan lukuleikeillä: $103 + 107 + 109 + 113 = 432$ on neljän peräkkäisen alkuluvun summa, ja $432 \cdot 2 = 864$, kun vuorokaudessa on $86\,400\,\text{s}$. Taajuutta $440\,\text{Hz}$ sanotaan vastaavasti aivojen, ajatusten ja manipuloinnin taajuudeksi, ja tunnetuimman salaliittoteorian mukaan se on natsien propagandaa, joka levittää pelkoa ja aggressiota. Artikkelin oma arvio on, ettei väitteille ole tieteellisiä perusteita.
-**Kohta d):** Väitteet ovat kolmea eri lajia. Ensimmäinen on fysikaalisesti virheellinen: ääni on väliaineen mekaaninen paineaalto ja valo sähkömagneettinen aalto, jonka taajuus on noin $10^{12}$-kertainen, joten $432\,\text{Hz}$:n ääni ei ole valon tai värien jatke, eikä fysiikka tunne mitattavia energiakenttiä, joihin se kytkeytyisi. Toinen on mahdollinen mutta osoittamaton: musiikki voi rauhoittaa kuulijaa, mutta siitä ei seuraa, että juuri viritystaso vaikuttaisi. Se pitäisi näyttää mittauksilla. Kolmas on liian pitkälle viety päätelmä: lukujen kauniista ominaisuuksista ei seuraa mitään terveydestä, ja kohdan b) mukaan lukuarvo riippuu yksikön valinnasta. Lisäksi viritystaso on artikkelin mukaan sopimus, joka on vaihdellut historiassa noin välillä $390\,\text{Hz}$–$460\,\text{Hz}$. Luotettavassa tutkimuksessa sama kappale soitetaan samalla voimakkuudella kummallakin viritystasolla, ja kuulijat arvotaan ryhmiin. Kuulija ja mittaaja eivät tiedä, kumpaa viritystä kuunnellaan. Mitattava suure, esimerkiksi syke, verenpaine tai stressikyselyn pistemäärä, päätetään etukäteen. Koehenkilöitä on niin paljon, että ero erottuu satunnaisvaihtelusta tilastollisesti, ja tulos vertaisarvioidaan ja toistetaan riippumattomissa ryhmissä.
+$$ eli $1{,}4\,\text{cm}$: matalamman äänen aalto on noin $1{,}9\,\%$ pidempi. Muutokset ovat vastakkaissuuntaiset, koska tulo $f\lambda = v$ pysyy samana.
+
+Eron kuulee: artikkelin mukaan harjaantunut korva erottaa jo $2\,\text{Hz}$:n eron, ja yhtä aikaa soidessaan äänet huojuisivat taajuudella $f_\text{H} = |f_1 - f_2| = 8\,\text{Hz}$. Musiikissa ero on silti pieni. Artikkelin mukaan $415\,\text{Hz}$ on lähes tasan puolisävelaskeleen verran alle $440\,\text{Hz}$:n, joten $8\,\text{Hz}$ on noin kolmannes puolisävelaskeleesta.
+
+Fysikaalisesti kumpikin on samanlainen tavallinen ääniaalto: sama väliaine, sama nopeus ja sama malli. Taajuudella $432\,\text{Hz}$ ei tapahdu mitään laadullista muutosta.
+
+Lisäksi hertsi perustuu sekuntiin, joka on ihmisten sopima yksikkö. Luku $432$ ei siksi ole luonnon ominaisuus: toisella ajan yksiköllä sama ääni saisi toisen lukuarvon.
+**Kohta c):** Artikkelin mukaan väitetään seuraavaa (omin sanoin tiivistettynä). Väitteet on jaettu kolmeen ryhmään.
+
+*Testattava vaikutus kuulijaan.* Monilla verkkosivuilla $432\,\text{Hz}$:n viritystasoa kuvataan rauhoittavaksi ja jopa parantavaksi.
+
+*Väite fysiikasta.* Viritystasoa kutsutaan luonnon omaksi taajuudeksi. Princen linkkaaman sivuston mukaan se on yhteydessä värispektriin ja chakroihin eli hindulaisen perinteen energiakenttiin, ja siihen viritetty musiikki olisi valon, ajan, aineen ja tietoisuuden jatke.
+
+*Lukumystiikka ja salaliittoteoria.* Väitteitä tuetaan lukuleikeillä: $103 + 107 + 109 + 113 = 432$ on neljän peräkkäisen alkuluvun summa, ja $432 \cdot 2 = 864$, kun vuorokaudessa on $86\,400\,\text{s}$. Taajuutta $440\,\text{Hz}$ sanotaan vastaavasti aivojen, ajatusten ja manipuloinnin taajuudeksi. Lukuisista viritystasojen salaliittoteorioista tunnetuin lienee natsiteoria, jonka mukaan $440\,\text{Hz}$ on natsien propagandaa, joka levittää pelkoa ja aggressiota.
+
+Artikkelin oma arvio on, ettei väitteille ole tieteellisiä perusteita.
+**Kohta d):** Arvioidaan jokainen kohdan c) ryhmä erikseen.
+
+Fysiikkaa koskeva väite on fysikaalisesti virheellinen. Ääni on väliaineen mekaaninen paineaalto ja valo sähkömagneettinen aalto, jonka taajuus on noin $10^{12}$-kertainen. Siksi $432\,\text{Hz}$:n ääni ei ole valon tai värien jatke, eikä fysiikka tunne mitattavia energiakenttiä, joihin se kytkeytyisi.
+
+Kuulijaan kohdistuva vaikutus on mahdollinen mutta osoittamaton. Musiikki voi rauhoittaa kuulijaa, mutta siitä ei seuraa, että juuri viritystaso vaikuttaisi. Se pitäisi näyttää mittauksilla.
+
+Lukumystiikka on liian pitkälle viety päätelmä: lukujen kauniista ominaisuuksista ei seuraa mitään terveydestä, ja kohdan b) mukaan lukuarvo riippuu yksikön valinnasta. Natsiteoria ei ole fysikaalinen väite lainkaan. Se on salaliittoteoria, jolle ei ole esitetty mitattavaa näyttöä, joten se kuuluu samaan ryhmään kuin lukumystiikka. Lisäksi viritystaso on artikkelin mukaan sopimus, joka on vaihdellut historiassa noin välillä $390\,\text{Hz}$–$460\,\text{Hz}$.
+
+Luotettavassa tutkimuksessa sama kappale soitetaan samalla voimakkuudella kummallakin viritystasolla, ja kuulijat arvotaan ryhmiin. Kuulija ja mittaaja eivät tiedä, kumpaa viritystä kuunnellaan. Mitattava suure, esimerkiksi syke, verenpaine tai stressikyselyn pistemäärä, päätetään etukäteen.
+
+Koehenkilöitä on niin paljon, että ero erottuu satunnaisvaihtelusta tilastollisesti, ja tulos vertaisarvioidaan ja toistetaan riippumattomissa ryhmissä.
 **Mallin ja aineiston rajat:** Äänen nopeus riippuu ilman lämpötilasta, joten aallonpituudet muuttuvat hieman lämpötilan mukana, taajuudet eivät. Aineisto on lehtiartikkeli, joka kuvaa väitteitä ja haastattelee muusikkoa. Se ei ole tutkimus, joten se ei yksin todista väitteitä oikeiksi eikä vääriksi.
