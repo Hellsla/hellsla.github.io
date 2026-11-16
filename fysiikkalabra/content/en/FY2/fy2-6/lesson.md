@@ -373,7 +373,9 @@ A wind turbine has a rated power of $5.0\,\text{MW}$ and produces $14\,\text{GWh
 
 <!-- vaihe -->
 
-**Given and find.** Energy $E = 14\,\text{GWh}$, time $t = 8760\,\text{h}$ and rated power $P_\text{nom} = 5.0\,\text{MW}$. We want the average power $P_\text{avg}$ and its share of the rated power.
+**Given and find.** Energy $E = 14\,\text{GWh}$, time $t = 8760\,\text{h}$ and rated power $P_\text{nom} = 5.0\,\text{MW}$.
+
+We want the average power $P_\text{avg}$ and its share of the rated power.
 
 <!-- vaihe -->
 
@@ -413,7 +415,9 @@ P_\text{avg} &= E : t \\
 
 <!-- vaihe -->
 
-**Reasonableness.** If the turbine ran at rated power all year, it would produce $5000\,\text{kW} \cdot 8760\,\text{h} = 43\,800\,000\,\text{kWh} = 43.8 \cdot 10^{6}\,\text{kWh} = 43.8\,\text{GWh}$, and $14 : 43.8 = 0.32$. The share is less than one, because the wind does not always blow.
+**Reasonableness.** If the turbine ran at rated power all year, it would produce $5000\,\text{kW} \cdot 8760\,\text{h} = 43\,800\,000\,\text{kWh} = 43.8 \cdot 10^{6}\,\text{kWh} = 43.8\,\text{GWh}$, and $14 : 43.8 = 0.32$.
+
+The share is less than one, because the wind does not always blow.
 
 ## Common misconception
 Rated power does not tell you how much electricity a power plant actually produces. A wind turbine with a rated power of $5\,\text{MW}$ produces in a year only about a third of what it would produce if the wind always blew at the right speed. Renewable also does not mean available all the time: wind and sun are renewable but weather-dependent.

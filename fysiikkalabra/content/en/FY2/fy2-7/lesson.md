@@ -477,7 +477,12 @@ A district heating network transfers $245\,\text{MWh}$ of thermal energy per wee
 
 <!-- vaihe -->
 
-**Given and find.** $E_\text{sent} = 245\,\text{MWh}$ and the loss is $9.0\,\%$ of the sent energy. We want the energy that arrives, $E_\text{arrived}$, and the loss $E_\text{loss}$.
+**Given and find.**
+
+- $E_\text{sent} = 245\,\text{MWh}$ and
+- the loss is $9.0\,\%$ of the sent energy.
+
+We want the energy that arrives, $E_\text{arrived}$, and the loss $E_\text{loss}$.
 
 <!-- vaihe -->
 

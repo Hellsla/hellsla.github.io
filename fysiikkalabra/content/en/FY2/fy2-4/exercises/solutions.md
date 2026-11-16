@@ -128,7 +128,9 @@ $$.
 ## fy2-4-L1-06
 **Find:** whether the efficiency of a device can be $120\,\%$.
 **Principle:** Efficiency is the share of useful energy in the energy taken by the device: $\eta = \dfrac{E_\text{a}}{E_\text{o}}$. Energy is conserved, and the energy taken is divided into useful energy and losses, $E_\text{o} = E_\text{a} + E_\text{h}$. Losses are not negative, so the useful energy is at most as large as the energy taken.
-**Model answer:** The claim is impossible. An efficiency of $120\,\%$ would mean that $E_\text{a} = 1.2 \cdot E_\text{o}$, that is, the device would give more useful energy than is put into it, and the extra energy would appear out of nothing. Efficiency is at most $100\,\%$. In real devices it is usually below $100\,\%$, because part of the energy taken does not end up as useful energy. Careful building or a long running time does not change this.
+**Model answer:** The claim is impossible. An efficiency of $120\,\%$ would mean that $E_\text{a} = 1.2 \cdot E_\text{o}$, that is, the device would give more useful energy than is put into it, and the extra energy would appear out of nothing.
+
+Efficiency is at most $100\,\%$. In real devices it is usually below $100\,\%$, because part of the energy taken does not end up as useful energy. Careful building or a long running time does not change this.
 
 ## fy2-4-L1-07
 **Given:** energy taken $E_\text{o} = 36\,\text{kJ}$ and useful energy (kinetic energy) $E_\text{a} = 27\,\text{kJ}$
@@ -158,12 +160,18 @@ $$.
 **Conversions:** Not needed: all powers are in watts, so the units cancel. The efficiencies are calculated as ratios, and they are converted to percentages by substituting $1 = 100\,\%$.
 **Substitution:** Incandescent lamp $\eta = \dfrac{3.0\,\text{W}}{60\,\text{W}} = 0.050 = 5.0\,\%$, halogen lamp $\eta = \dfrac{2.8\,\text{W}}{40\,\text{W}} = 0.070 = 7.0\,\%$, fluorescent lamp $\eta = \dfrac{3.6\,\text{W}}{18\,\text{W}} = 0.20 = 20\,\%$ and LED lamp $\eta = \dfrac{2.7\,\text{W}}{9.0\,\text{W}} = 0.30 = 30\,\%$. The ratio of the LED to the halogen lamp is $\dfrac{0.30}{0.070} = 4.3$.
 **Answer:** The efficiency of the LED lamp is about $4.3$ times the efficiency of the halogen lamp. The result is given to two significant figures, as the values in the table.
-**Reasonableness:** The efficiencies grow in the order incandescent lamp, halogen, fluorescent lamp, LED, and all are below $100\,\%$. For the light power $2.7\,\text{W}$ the LED needs only $9.0\,\text{W}$, while a halogen lamp would need $2.7\,\text{W} : 0.070 = 39\,\text{W}$ to give the same light power, and $39 : 9.0 = 4.3$. Note that the fluorescent lamp gives the most light ($3.6\,\text{W}$), but it does not have the best efficiency: a large useful power does not mean a high efficiency.
+**Reasonableness:** The efficiencies grow in the order incandescent lamp, halogen, fluorescent lamp, LED, and all are below $100\,\%$.
+
+For the light power $2.7\,\text{W}$ the LED needs only $9.0\,\text{W}$, while a halogen lamp would need $2.7\,\text{W} : 0.070 = 39\,\text{W}$ to give the same light power, and $39 : 9.0 = 4.3$.
+
+Note that the fluorescent lamp gives the most light ($3.6\,\text{W}$), but it does not have the best efficiency: a large useful power does not mean a high efficiency.
 
 ## fy2-4-L2-06
 **Given:** from the table, the electrical energy $E_\text{o}$ taken by the motor and the kinetic energy $E_\text{a}$ given by the motor as a function of time $t$; on the last row $t = 40\,\text{s}$, $E_\text{o} = 120\,\text{kJ}$ and $E_\text{a} = 95\,\text{kJ}$
 **Find:** the efficiency $\eta$ of the motor as a percentage
-**Principle:** Efficiency is the share of the useful energy in the energy taken. The energies have been measured from the start (at $t = 0$ both are zero), so the efficiency is obtained directly from each row. The efficiency of a steadily running motor does not depend on how long a period is examined, so the values of the rows are the same within the accuracy of the measurement, and the row of the whole period gives the result.
+**Principle:** Efficiency is the share of the useful energy in the energy taken. The energies have been measured from the start (at $t = 0$ both are zero), so the efficiency is obtained directly from each row.
+
+The efficiency of a steadily running motor does not depend on how long a period is examined, so the values of the rows are the same within the accuracy of the measurement, and the row of the whole period gives the result.
 **Formula:** $\eta = \dfrac{E_\text{a}}{E_\text{o}}$
 **Conversions:** Not needed: both energies are in kilojoules, so the units cancel. The result is converted to a percentage by substituting $1 = 100\,\%$.
 **Substitution:** The rows: $\dfrac{24\,\text{kJ}}{30\,\text{kJ}} = 0.80$, $\dfrac{48\,\text{kJ}}{61\,\text{kJ}} = 0.79$, $\dfrac{71\,\text{kJ}}{89\,\text{kJ}} = 0.80$ and $\dfrac{95\,\text{kJ}}{120\,\text{kJ}} = 0.792$. All are about $0.79$–$0.80$, and from the row of the whole period $\eta = 0.792 \cdot 100\,\% = 79\,\%$.
@@ -173,7 +181,11 @@ $$.
 ## fy2-4-L2-07
 **Find:** which motor has the greater efficiency.
 **Principle:** Efficiency is the share of the useful power in the power taken, $\eta = \dfrac{P_\text{a}}{P_\text{o}}$. It is a ratio, so it can be used to compare devices of different sizes. The size of the useful power or of the loss power alone does not decide the comparison.
-**Model answer:** The efficiency of motor A is $\eta_\text{A} = \dfrac{1.5\,\text{kW}}{2.0\,\text{kW}} = 0.75 = 75\,\%$ and that of motor B is $\eta_\text{B} = \dfrac{400\,\text{W}}{500\,\text{W}} = 0.80 = 80\,\%$. So the efficiency of motor B is greater, even though A gives the greater useful power. The loss power of A is $2.0\,\text{kW} - 1.5\,\text{kW} = 0.5\,\text{kW}$ and that of B is $500\,\text{W} - 400\,\text{W} = 100\,\text{W}$, but what matters is the share of the loss in the power taken: $25\,\%$ for A and $20\,\%$ for B.
+**Model answer:** The efficiency of motor A is $\eta_\text{A} = \dfrac{1.5\,\text{kW}}{2.0\,\text{kW}} = 0.75 = 75\,\%$ and that of motor B is $\eta_\text{B} = \dfrac{400\,\text{W}}{500\,\text{W}} = 0.80 = 80\,\%$.
+
+So the efficiency of motor B is greater, even though A gives the greater useful power.
+
+The loss power of A is $2.0\,\text{kW} - 1.5\,\text{kW} = 0.5\,\text{kW}$ and that of B is $500\,\text{W} - 400\,\text{W} = 100\,\text{W}$, but what matters is the share of the loss in the power taken: $25\,\%$ for A and $20\,\%$ for B.
 
 ## fy2-4-L3-04
 **Given:** electric car: energy taken from the battery $E_\text{e} = 17\,\text{kWh}$ per hundred kilometres and efficiency $\eta_\text{e} = 90\,\%$; petrol car: petrol $V = 6.0\,\textsf{l}$ per hundred kilometres, energy content $h = 32\,\text{MJ/l}$ and efficiency $\eta_\text{p} = 25\,\%$
@@ -192,13 +204,19 @@ $$. The useful energy is the efficiency multiplied by the energy taken. Energy i
 \end{aligned}
 $$, so $1\,\text{MJ} = \dfrac{1}{3.6}\,\text{kWh}$. Efficiencies: $90\,\% = 0.90$ and $25\,\% = 0.25$.
 **Substitution:** The energy of the petrol is $E_\text{p} = 6.0 \text{ litres} \cdot 32\,\text{MJ/l} = 192\,\text{MJ}$. In kilowatt-hours $E_\text{p} = \dfrac{192\,\text{MJ}}{3.6\,\text{MJ/kWh}} = 53.3\,\text{kWh}$. The ratio is $\dfrac{E_\text{p}}{E_\text{e}} = \dfrac{53.3\,\text{kWh}}{17\,\text{kWh}} = 3.1$. The useful energies are $E_\text{a,e} = 0.90 \cdot 17\,\text{kWh} = 15.3\,\text{kWh}$ for the electric car and $E_\text{a,p} = 0.25 \cdot 53.3\,\text{kWh} = 13.3\,\text{kWh}$ for the petrol car.
-**Answer:** The petrol car takes about $3.1$ times as much energy from its tank as the electric car takes from its battery, two significant figures. The useful energies of cars of similar size are almost equal, $15\,\text{kWh}$ and $13\,\text{kWh}$, because both have to drive the same distance. The difference in the energy taken is due to the efficiency: the electric car uses $90\,\%$ of the energy taken, the petrol car only $25\,\%$, and the remaining $75\,\%$, about $40\,\text{kWh}$, becomes heat.
+**Answer:** The petrol car takes about $3.1$ times as much energy from its tank as the electric car takes from its battery, two significant figures.
+
+The useful energies of cars of similar size are almost equal, $15\,\text{kWh}$ and $13\,\text{kWh}$, because both have to drive the same distance.
+
+The difference in the energy taken is due to the efficiency: the electric car uses $90\,\%$ of the energy taken, the petrol car only $25\,\%$, and the remaining $75\,\%$, about $40\,\text{kWh}$, becomes heat.
 **Reasonableness:** The ratio of the efficiencies $0.90 : 0.25 = 3.6$ and the ratio of the useful energies $15.3 : 13.3 = 1.15$ give $3.6 : 1.15 = 3.1$, as they should. The examination covers only the cars' own use of energy, and the losses in the production of electricity and petrol are not included, so the result alone does not decide which is better for the environment.
 
 ## fy2-4-L3-05
 **Given:** from the table, the electrical energy $E_\text{o}$ taken by the LED lamp and the energy $E_\text{h}$ that became heat; on the last row $t = 240\,\text{s}$, $E_\text{o} = 2160\,\text{J}$ and $E_\text{h} = 1510\,\text{J}$; the student's result $\eta = 70\,\%$; operating time $3.0\,\text{h}$ a day, $365$ days; price $0.20\,\text{€/kWh}$
 **Find:** the student's error, the correct efficiency $\eta$ of the lamp, the electrical energy $E_\text{h,y}$ that becomes heat in a year in kilowatt-hours, and its cost
-**Principle:** Efficiency is the share of the useful energy in the energy taken. The measured heat is loss energy, not useful energy: the useful output of an LED lamp is light. Energy is conserved, so $E_\text{o} = E_\text{a} + E_\text{h}$. Power is $P = E : t$, the energy in a year is the power multiplied by the operating time, and the share of heat in it is the share of the losses in the energy taken.
+**Principle:** Efficiency is the share of the useful energy in the energy taken. The measured heat is loss energy, not useful energy: the useful output of an LED lamp is light.
+
+Energy is conserved, so $E_\text{o} = E_\text{a} + E_\text{h}$. Power is $P = E : t$, the energy in a year is the power multiplied by the operating time, and the share of heat in it is the share of the losses in the energy taken.
 **Reading the graph:** The ratio $E_\text{o} : t$ is the same on every row, $540\,\text{J} : 60\,\text{s} = 9.0\,\text{W}$, so the power taken is $9.0\,\text{W}$. The share of the loss is about $0.70$ on every row.
 **Formula:** $E_\text{a} = E_\text{o} - E_\text{h}$, $\eta = \dfrac{E_\text{a}}{E_\text{o}}$, $P = \dfrac{E}{t}$, $E_\text{o,y} = P \cdot t_\text{y}$ and $E_\text{h,y} = \dfrac{E_\text{h}}{E_\text{o}} \cdot E_\text{o,y}$
 **Conversions:** The operating time in a year is $t_\text{y} = 3.0\,\text{h} \cdot 365 = 1095\,\text{h}$. The power is $9.0\,\text{W} = 0.0090\,\text{kW}$.
@@ -209,7 +227,11 @@ In a year the lamp takes the energy $E_\text{o,y} = 0.0090\,\text{kW} \cdot 1095
 &= 1.38\,\text{€}
 \end{aligned}
 $$.
-**Answer:** The correct efficiency is $30\,\%$. The student's $70\,\%$ is the share of the losses, not the efficiency. Of the electricity taken by the lamp, about $6.9\,\text{kWh}$ becomes heat in a year, and its cost is about $1.4\,\text{€}$. The student's $70\,\%$ is the right number for this calculation, because the question is about the part that becomes heat: $30\,\% + 70\,\% = 100\,\%$.
+**Answer:** The correct efficiency is $30\,\%$. The student's $70\,\%$ is the share of the losses, not the efficiency.
+
+Of the electricity taken by the lamp, about $6.9\,\text{kWh}$ becomes heat in a year, and its cost is about $1.4\,\text{€}$.
+
+The student's $70\,\%$ is the right number for this calculation, because the question is about the part that becomes heat: $30\,\% + 70\,\% = 100\,\%$.
 **Reasonableness:** Light takes $$
 \begin{aligned}
 &0.30 \cdot 9.855\,\text{kWh} \\
@@ -235,7 +257,9 @@ Line 4 is wrong, because the energies have been divided the wrong way round. The
 &= 0.60 \\
 &= 60\,\%
 \end{aligned}
-$$. Check: an efficiency of $167\,\%$ would be over $100\,\%$, and the correct result fits line 3, because $240\,\text{kJ} : 600\,\text{kJ} = 0.40$ and $60\,\% + 40\,\% = 100\,\%$. So the correct answer is line 4.
+$$.
+
+Check: an efficiency of $167\,\%$ would be over $100\,\%$, and the correct result fits line 3, because $240\,\text{kJ} : 600\,\text{kJ} = 0.40$ and $60\,\% + 40\,\% = 100\,\%$. So the correct answer is line 4.
 
 ## fy2-4-L1-09
 **Given:** mass of oil $m = 2.5\,\text{kg}$ and useful energy $E_\text{a} = 80\,\text{MJ}$; from the table (MAFY table, heating values of fuels, fuel oil, light) $H = 40.6\,\text{MJ/kg}$

@@ -268,7 +268,9 @@ Takassa poltetaan $6{,}0\,\text{kg}$ ilmakuivaa polttopuuta, jonka lämpöarvo o
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Polttopuun massa on $m = 6{,}0\,\text{kg}$. Taulukosta saadaan lämpöarvo $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$. Kysytään vapautuvaa energiaa $E$.
+**Tunnetut ja kysytty.** Polttopuun massa on $m = 6{,}0\,\text{kg}$. Taulukosta saadaan lämpöarvo $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$.
+
+Kysytään vapautuvaa energiaa $E$.
 
 <!-- vaihe -->
 
@@ -299,11 +301,17 @@ Kilowattitunteina $E = 90\,\text{MJ} = 90 \cdot (1\,\text{kWh} : 3{,}6) = 25\,\t
 
 <!-- vaihe -->
 
-**Tulos.** Puusta vapautuu energiaa $90\,\text{MJ}$ eli $25\,\text{kWh}$. Vastaus on annettu kahdella merkitsevällä numerolla. Syy on se, että sekä massa $6{,}0\,\text{kg}$ että lämpöarvo $15\,\tfrac{\text{MJ}}{\text{kg}}$ tunnetaan kahden numeron tarkkuudella.
+**Tulos.** Puusta vapautuu energiaa $90\,\text{MJ}$ eli $25\,\text{kWh}$.
+
+Vastaus on annettu kahdella merkitsevällä numerolla. Syy on se, että sekä massa $6{,}0\,\text{kg}$ että lämpöarvo $15\,\tfrac{\text{MJ}}{\text{kg}}$ tunnetaan kahden numeron tarkkuudella.
 
 <!-- vaihe -->
 
-**Järkevyys.** Yksi kilogramma puuta antaa $15\,\text{MJ}$ eli noin $4\,\text{kWh}$. Kuusi kilogrammaa antaa noin kuusi kertaa niin paljon: $6 \cdot 4\,\text{kWh} = 24\,\text{kWh}$. Tämä sopii tulokseen. Energia vastaa yhden kilowatin ($1\,\text{kW}$) lämmitintä, joka on päällä $25\,\text{h}$. Takasta ei kuitenkaan saada koko määrää huoneen lämmöksi. Osa lämmöstä poistuu savukaasujen mukana (luku *Hyötysuhde*).
+**Järkevyys.** Yksi kilogramma puuta antaa $15\,\text{MJ}$ eli noin $4\,\text{kWh}$. Kuusi kilogrammaa antaa noin kuusi kertaa niin paljon: $6 \cdot 4\,\text{kWh} = 24\,\text{kWh}$. Tämä sopii tulokseen.
+
+Energia vastaa yhden kilowatin ($1\,\text{kW}$) lämmitintä, joka on päällä $25\,\text{h}$.
+
+Takasta ei kuitenkaan saada koko määrää huoneen lämmöksi. Osa lämmöstä poistuu savukaasujen mukana (luku *Hyötysuhde*).
 
 ## Yleinen virhekäsitys
 - **Lämpöarvo ei ole lämpötila.** Moni luulee, että lämpöarvo kertoo, kuinka kuumana polttoaine palaa. Lämpöarvo on kuitenkin energia massayksikköä kohti.

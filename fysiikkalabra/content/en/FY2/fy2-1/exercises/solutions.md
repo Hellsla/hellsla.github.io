@@ -22,7 +22,11 @@
 **Given:** energies read from the figure at points A and C: $E_\text{p,A} = 700\,\text{J}$, $E_\text{k,A} = 0\,\text{J}$, $E_\text{p,C} = 0\,\text{J}$ and $E_\text{k,C} = 500\,\text{J}$
 **Find:** energy changed into thermal energy $E_\text{thermal}$ between points A and C in $\text{J}$
 **Principle:** The skater, the half-pipe and the air form an isolated system, so energy is conserved: $E_\text{initial} = E_\text{final}$. Friction changes part of the mechanical energy into thermal energy, so at the end the energy is mechanical energy and thermal energy.
-**Reading the graph:** At point A there is only the blue potential-energy bar, and its top is at the gridline $700\,\text{J}$; there is no kinetic energy because the skater is at rest. At point C there is only the orange kinetic-energy bar, and its top is at the line $500\,\text{J}$; there is no potential energy because the bottom is the zero level. The bars of point B are not needed.
+**Reading the graph:** At point A there is only the blue potential-energy bar, and its top is at the gridline $700\,\text{J}$; there is no kinetic energy because the skater is at rest.
+
+At point C there is only the orange kinetic-energy bar, and its top is at the line $500\,\text{J}$; there is no potential energy because the bottom is the zero level.
+
+The bars of point B are not needed.
 **Formula:** $$ \begin{aligned} E_\text{p,A} + E_\text{k,A} &= E_\text{p,C} + E_\text{k,C} \\ &+ E_\text{thermal} \end{aligned} $$, so $$ \begin{aligned} E_\text{thermal} &= (E_\text{p,A} + E_\text{k,A}) \\ &- (E_\text{p,C} + E_\text{k,C}) \end{aligned} $$
 **Conversions:** All energies are in joules, so no conversions are needed.
 **Substitution:** $$
@@ -37,8 +41,16 @@ $$
 
 ## fy2-1-L1-04
 **Find:** in each situation, the form of energy at the start and the useful form of energy into which the energy changes
-**Principle:** The form of energy tells you where the energy is stored or how it shows itself. In fuels the energy is in chemical bonds, sunlight is radiation, and water high up has potential energy because of its position. Energy does not come from nothing, so the useful energy always comes from the form of energy at the start, and in every change part of it also changes into thermal energy.
-**Model answer:** a) The chemical energy of the wood changes in combustion into thermal energy (and a little light), which warms the room. b) The radiant energy of the Sun changes in the panel into electrical energy; however, most of it changes into thermal energy in the panel. c) The potential energy of the water in the reservoir changes into the kinetic energy of the flowing water, the turbine and generator change it into electrical energy, and a little changes into thermal energy. So the forms of energy at the start are a) chemical energy, b) radiant energy and c) potential energy, and the useful forms of energy at the end are a) thermal energy, b) electrical energy and c) electrical energy.
+**Principle:** The form of energy tells you where the energy is stored or how it shows itself. In fuels the energy is in chemical bonds, sunlight is radiation, and water high up has potential energy because of its position.
+
+Energy does not come from nothing, so the useful energy always comes from the form of energy at the start, and in every change part of it also changes into thermal energy.
+**Model answer:** a) The chemical energy of the wood changes in combustion into thermal energy (and a little light), which warms the room.
+
+b) The radiant energy of the Sun changes in the panel into electrical energy; however, most of it changes into thermal energy in the panel.
+
+c) The potential energy of the water in the reservoir changes into the kinetic energy of the flowing water, the turbine and generator change it into electrical energy, and a little changes into thermal energy.
+
+So the forms of energy at the start are a) chemical energy, b) radiant energy and c) potential energy, and the useful forms of energy at the end are a) thermal energy, b) electrical energy and c) electrical energy.
 
 ## fy2-1-L1-05
 **Given:** potential energy of the sledge at the top $E_\text{p} = 600\,\text{J}$, energy changed into thermal energy by friction $E_\text{thermal} = 90\,\text{J}$, potential energy at the bottom of the hill $0\,\text{J}$
@@ -52,23 +64,41 @@ $$
 
 ## fy2-1-L1-06
 **Find:** the form of energy of the energy stored in the battery
-**Principle:** The form of energy tells you in what form the energy is. A battery is a device in which energy is stored in the bonds of chemical substances, and it is released as electrical energy when the device is put to use. Kinetic energy belongs to a moving object, potential energy depends on the height of an object, and radiant energy is light and other radiation.
-**Model answer:** Chemical energy. A phone at rest does not move (no kinetic energy), its energy does not depend on height (no potential energy) and it does not emit light (no radiant energy). The energy is in the substances of the battery as chemical energy, and when the phone is used it changes into electrical energy and from that into light, sound and thermal energy.
+**Principle:** The form of energy tells you in what form the energy is. A battery is a device in which energy is stored in the bonds of chemical substances, and it is released as electrical energy when the device is put to use.
+
+Kinetic energy belongs to a moving object, potential energy depends on the height of an object, and radiant energy is light and other radiation.
+**Model answer:** Chemical energy. A phone at rest does not move (no kinetic energy), its energy does not depend on height (no potential energy) and it does not emit light (no radiant energy).
+
+The energy is in the substances of the battery as chemical energy, and when the phone is used it changes into electrical energy and from that into light, sound and thermal energy.
 
 ## fy2-1-L1-07
 **Find:** what happens to the kinetic energy of the car in braking
 **Principle:** Energy is neither created nor destroyed but changes form: in an isolated system $E_\text{initial} = E_\text{final}$. In braking, friction changes kinetic energy into thermal energy. In everyday language "energy is used up" means in physics that the energy has changed into a form that is hard to use.
-**Model answer:** The correct answer is the first one: the kinetic energy changes into thermal energy in the brakes, the tyres and the road, and the total amount of energy stays the same. When the car has stopped it no longer has kinetic energy, but the same energy is thermal energy in the brake discs, the tyres and the road, which have warmed up a little. The claim that energy disappears or decreases breaks the law of conservation of energy.
+**Model answer:** The correct answer is the first one: the kinetic energy changes into thermal energy in the brakes, the tyres and the road, and the total amount of energy stays the same.
+
+When the car has stopped it no longer has kinetic energy, but the same energy is thermal energy in the brake discs, the tyres and the road, which have warmed up a little.
+
+The claim that energy disappears or decreases breaks the law of conservation of energy.
 
 ## fy2-1-L1-08
 **Find:** the change of energy as a chain from the charger to the battery, and why the charger warms up
 **Principle:** Energy is neither created nor destroyed but changes form: $E_\text{initial} = E_\text{final}$. In every change part of the energy changes into thermal energy, which is transferred as heat to the surroundings.
-**Model answer:** Electrical energy comes from the wall socket. The charger changes it into electrical energy suitable for the battery of the phone, and in the battery the electrical energy is stored as chemical energy. So the chain is electrical energy → electrical energy → chemical energy. The change is not perfect: part of the electrical energy from the wall socket changes into thermal energy in the charger, and that is why the charger warms up and heat is transferred to the surroundings. By the law of conservation of energy, the energy taken from the wall socket equals the chemical energy stored in the battery and the thermal energy together, so no energy has been lost. However, the thermal energy can no longer be used to charge the phone.
+**Model answer:** Electrical energy comes from the wall socket. The charger changes it into electrical energy suitable for the battery of the phone, and in the battery the electrical energy is stored as chemical energy. So the chain is electrical energy → electrical energy → chemical energy.
+
+The change is not perfect: part of the electrical energy from the wall socket changes into thermal energy in the charger, and that is why the charger warms up and heat is transferred to the surroundings.
+
+By the law of conservation of energy, the energy taken from the wall socket equals the chemical energy stored in the battery and the thermal energy together, so no energy has been lost.
+
+However, the thermal energy can no longer be used to charge the phone.
 
 ## fy2-1-L1-09
 **Find:** which statements about the energy of a bouncing ball are true and which are false
 **Principle:** Energy is neither created nor destroyed but changes form: in an isolated system $E_\text{initial} = E_\text{final}$. The sum includes all forms of energy, also thermal energy. In the collision and because of air resistance, mechanical energy changes into thermal energy.
-**Model answer:** Statements 1, 3 and 5 are true. The mechanical energy $E_\text{p} + E_\text{k}$ decreases in every bounce, but the total energy of the ball, the floor and the air stays the same. At the end the ball has no kinetic energy and no potential energy gained from being above the floor, and the same energy is thermal energy in the ball, the floor and the air. Statements 2 and 4 are false: energy is not used up, and thermal energy is part of the total energy, so the total energy does not decrease.
+**Model answer:** Statements 1, 3 and 5 are true. The mechanical energy $E_\text{p} + E_\text{k}$ decreases in every bounce, but the total energy of the ball, the floor and the air stays the same.
+
+At the end the ball has no kinetic energy and no potential energy gained from being above the floor, and the same energy is thermal energy in the ball, the floor and the air.
+
+Statements 2 and 4 are false: energy is not used up, and thermal energy is part of the total energy, so the total energy does not decrease.
 
 ## fy2-1-L1-10
 **Given:** mass of fuel $m = 2.0\,\text{kg}$ (petrol); from the table (MAFY table, heating values of fuels, petrol) $H = 43.4\,\text{MJ/kg}$
@@ -149,7 +179,11 @@ $$, so the share is $\dfrac{36.0\,\text{GJ}}{60.0\,\text{GJ}} = 0.600 = 60.0\,\%
 **Conversions:** All energies are in joules, so no conversions are needed.
 **Substitution:** $E_\text{created} = E_\text{lamp} = 100\,\text{J} - 80\,\text{J} = 20\,\text{J}$
 **Answer:** $20\,\text{J}$ per cycle, two significant figures as in the data. The claim breaks the law of conservation of energy, because energy cannot be created from nothing: the device would have to create $20\,\text{J}$ more energy in every cycle.
-**Reasonableness:** The pump should lift the water back up, and that needs at least as much energy as the water loses in falling, that is $100\,\text{J}$. However, the pump gets only $80\,\text{J}$, so the claim requires $20\,\text{J}$ of energy from nothing. In a real device friction and electricity also change part of the energy into thermal energy, so nothing would be left for the lamp and the device would stop. A perpetual motion machine is not possible.
+**Reasonableness:** The pump should lift the water back up, and that needs at least as much energy as the water loses in falling, that is $100\,\text{J}$.
+
+However, the pump gets only $80\,\text{J}$, so the claim requires $20\,\text{J}$ of energy from nothing.
+
+In a real device friction and electricity also change part of the energy into thermal energy, so nothing would be left for the lamp and the device would stop. A perpetual motion machine is not possible.
 
 ## fy2-1-L2-07
 **Given:** electrical energy of each lamp $E_\text{elec} = 216\,\text{kJ}$; energy that changes into light $11\,\text{kJ}$ for the incandescent lamp, $16\,\text{kJ}$ for the halogen lamp and $54\,\text{kJ}$ for the LED lamp (example figures)
@@ -159,7 +193,11 @@ $$, so the share is $\dfrac{36.0\,\text{GJ}}{60.0\,\text{GJ}} = 0.600 = 60.0\,\%
 **Conversions:** All energies are in kilojoules, so no conversions are needed.
 **Substitution:** $E_\text{thermal,incand} = 216\,\text{kJ} - 11\,\text{kJ} = 205\,\text{kJ}$ and $E_\text{thermal,LED} = 216\,\text{kJ} - 54\,\text{kJ} = 162\,\text{kJ}$, so $\Delta E_\text{thermal} = 205\,\text{kJ} - 162\,\text{kJ} = 43\,\text{kJ}$
 **Answer:** The incandescent lamp produces $43\,\text{kJ}$ more thermal energy. Two significant figures match the accuracy of the energy of light $11\,\text{kJ}$.
-**Reasonableness:** The thermal energy of the incandescent lamp is greater because its share of light is smaller ($11\,\text{kJ}$ is only $5\,\%$ of the electrical energy, while the $54\,\text{kJ}$ of the LED is $25\,\%$). Checking backwards: LED $54\,\text{kJ} + 162\,\text{kJ} = 216\,\text{kJ}$. Justification: when the same amount of light is wanted, the LED lamp needs less electrical energy, and less energy changes into useless thermal energy, so the LED is the wiser choice in terms of energy.
+**Reasonableness:** The thermal energy of the incandescent lamp is greater because its share of light is smaller ($11\,\text{kJ}$ is only $5\,\%$ of the electrical energy, while the $54\,\text{kJ}$ of the LED is $25\,\%$).
+
+Checking backwards: LED $54\,\text{kJ} + 162\,\text{kJ} = 216\,\text{kJ}$.
+
+Justification: when the same amount of light is wanted, the LED lamp needs less electrical energy, and less energy changes into useless thermal energy, so the LED is the wiser choice in terms of energy.
 
 ## fy2-1-L2-08
 **Given:** energies read from the figure: at A $E_\text{p,A} = 700\,\text{J}$ and $E_\text{k,A} = 0\,\text{J}$, at B $E_\text{p,B} = 300\,\text{J}$ and $E_\text{k,B} = 300\,\text{J}$
@@ -196,7 +234,9 @@ $$, and $p = \dfrac{100\,\text{J}}{700\,\text{J}} \cdot 100\,\% = 14.3\,\%$
 **Conversions:** All energies are in joules, so no conversions are needed.
 **Substitution:** $E_\text{thermal,1} = 5.00\,\text{J} - 4.00\,\text{J} = 1.00\,\text{J}$ and $E_\text{thermal,2} = 4.00\,\text{J} - 3.20\,\text{J} = 0.80\,\text{J}$, so $\Delta E = 1.00\,\text{J} - 0.80\,\text{J} = 0.20\,\text{J}$
 **Answer:** $0.20\,\text{J}$, to two decimal places like the energies in the table.
-**Reasonableness:** In each bounce a fifth of the ball's energy at that moment changes into thermal energy ($1.00\,\text{J}$ is a fifth of $5.00\,\text{J}$ and $0.80\,\text{J}$ is a fifth of $4.00\,\text{J}$). In the second bounce the ball has less energy, so less energy changes into thermal energy, and so the bounces get lower and lower but the decrease slows down. Checking backwards: $$
+**Reasonableness:** In each bounce a fifth of the ball's energy at that moment changes into thermal energy ($1.00\,\text{J}$ is a fifth of $5.00\,\text{J}$ and $0.80\,\text{J}$ is a fifth of $4.00\,\text{J}$).
+
+In the second bounce the ball has less energy, so less energy changes into thermal energy, and so the bounces get lower and lower but the decrease slows down. Checking backwards: $$
 \begin{aligned}
 &3.20\,\text{J} + 0.80\,\text{J} + 1.00\,\text{J} \\
 &= 5.00\,\text{J}
@@ -206,12 +246,24 @@ $$.
 ## fy2-1-L3-03
 **Find:** a) the forms of energy at each stage of the nuclear power plant chain; b) where about two thirds of the nuclear energy goes and why the energy has not been lost
 **Principle:** Energy changes form and moves, but is neither created nor destroyed: in the system formed by the power plant, the cooling water and the surroundings $E_\text{initial} = E_\text{final}$. In every change part of the energy changes into thermal energy, which spreads into the surroundings and is hard to use.
-**Model answer:** a) The nuclear energy stored in the atomic nuclei of uranium is released in the reactor and changes into the thermal energy of water and steam. The steam flows into the turbine and turns it, so the energy is kinetic energy. The generator changes the kinetic energy of the turning turbine into electrical energy. b) Only about a third becomes electricity, because the steam leaving the turbine is still warm: energy is transferred from it as heat to the cooling water, which carries it to the sea. In addition, in the turbine, the generator and the pipes part of the energy changes into thermal energy, which is transferred as heat into the surroundings. The energy has not been lost: the electrical energy and the thermal energy transferred to the sea and the surroundings together equal the nuclear energy released. So about two thirds ends up as thermal energy that has spread widely and can no longer easily be used.
+**Model answer:** a) The nuclear energy stored in the atomic nuclei of uranium is released in the reactor and changes into the thermal energy of water and steam. The steam flows into the turbine and turns it, so the energy is kinetic energy. The generator changes the kinetic energy of the turning turbine into electrical energy.
+
+b) Only about a third becomes electricity, because the steam leaving the turbine is still warm: energy is transferred from it as heat to the cooling water, which carries it to the sea.
+
+In addition, in the turbine, the generator and the pipes part of the energy changes into thermal energy, which is transferred as heat into the surroundings.
+
+The energy has not been lost: the electrical energy and the thermal energy transferred to the sea and the surroundings together equal the nuclear energy released.
+
+So about two thirds ends up as thermal energy that has spread widely and can no longer easily be used.
 
 ## fy2-1-L3-04
 **Given:** consumption by source: bioenergy $380\,\text{PJ}$, oil $290\,\text{PJ}$, nuclear energy $230\,\text{PJ}$, hydro and wind power $120\,\text{PJ}$, coal $100\,\text{PJ}$, natural gas $80\,\text{PJ}$; inhabitants $N = 5.5 \cdot 10^{6}$; $1\,\text{PJ} = 10^{15}\,\text{J}$ and $1\,\text{GJ} = 10^{9}\,\text{J}$
 **Find:** a) the share of fossil fuels in the total consumption as a percentage; b) the total consumption per inhabitant in $\text{GJ}$; c) the minimum replacement of fossil energy in petajoules so that the share of fossil fuels stays below a third
-**Principle:** The total consumption is the sum of the energies of all the sources, and a share is the ratio of a part to the whole. The amount per inhabitant is obtained by dividing the total energy by the number of inhabitants. Energy is conserved, so when fossil energy is replaced with hydro and wind power, the energy needed for the same use does not change, only its source does.
+**Principle:** The total consumption is the sum of the energies of all the sources, and a share is the ratio of a part to the whole.
+
+The amount per inhabitant is obtained by dividing the total energy by the number of inhabitants.
+
+Energy is conserved, so when fossil energy is replaced with hydro and wind power, the energy needed for the same use does not change, only its source does.
 **Formula:** $E_\text{tot} = \sum E$, share $= \dfrac{E_\text{fossil}}{E_\text{tot}}$ and $E_\text{person} = \dfrac{E_\text{tot}}{N}$; condition c): $E_\text{fossil} - E_\text{replaced} < \dfrac{E_\text{tot}}{3}$
 **Conversions:** Prefixes: $1\,\text{PJ} = 10^{15}\,\text{J}$ and $1\,\text{GJ} = 10^{9}\,\text{J}$, so $1\,\text{PJ} = 10^{15} : 10^{9}\,\text{GJ} = 10^{6}\,\text{GJ}$.
 **Substitution:** The total consumption is $$
@@ -222,7 +274,13 @@ E_\text{tot} &= 380\,\text{PJ} + 290\,\text{PJ} \\
 &= 1200\,\text{PJ}
 \end{aligned}
 $$. The sum of the fossil fuels is $E_\text{fossil} = 290\,\text{PJ} + 100\,\text{PJ} + 80\,\text{PJ} = 470\,\text{PJ}$, so the share is $\dfrac{470\,\text{PJ}}{1200\,\text{PJ}} = 0.392 = 39.2\,\%$. In gigajoules the total consumption is $1200\,\text{PJ} = 1200 \cdot 10^{6}\,\text{GJ} = 1.2 \cdot 10^{9}\,\text{GJ}$, and per inhabitant $E_\text{person} = \dfrac{1.2 \cdot 10^{9}\,\text{GJ}}{5.5 \cdot 10^{6}} = 218\,\text{GJ}$. A third of the total consumption is $1200\,\text{PJ} : 3 = 400\,\text{PJ}$, so the amount to be replaced is $E_\text{replaced} > 470\,\text{PJ} - 400\,\text{PJ} = 70\,\text{PJ}$.
-**Answer:** a) The share of fossil fuels is about $39\,\%$. b) The consumption is about $2.2 \cdot 10^{2}\,\text{GJ}$, that is $220\,\text{GJ}$ per inhabitant per year (two significant figures as in the number of inhabitants). c) More than $70\,\text{PJ}$ of fossil energy must be replaced (two significant figures as in the data), for example $71\,\text{PJ}$, which leaves $399\,\text{PJ}$ of fossil energy, that is $33.25\,\%$, and the share is below a third. The total consumption can stay the same because energy is neither created nor destroyed: the same energy needed for use is simply produced from another source, so the replacing hydro and wind power adds as much energy as the fossil energy decreases.
+**Answer:** a) The share of fossil fuels is about $39\,\%$.
+
+b) The consumption is about $2.2 \cdot 10^{2}\,\text{GJ}$, that is $220\,\text{GJ}$ per inhabitant per year (two significant figures as in the number of inhabitants).
+
+c) More than $70\,\text{PJ}$ of fossil energy must be replaced (two significant figures as in the data), for example $71\,\text{PJ}$, which leaves $399\,\text{PJ}$ of fossil energy, that is $33.25\,\%$, and the share is below a third.
+
+The total consumption can stay the same because energy is neither created nor destroyed: the same energy needed for use is simply produced from another source, so the replacing hydro and wind power adds as much energy as the fossil energy decreases.
 **Reasonableness:** The share is below $100\,\%$. Checking backwards: $$
 \begin{aligned}
 &218\,\text{GJ} \cdot 5.5 \cdot 10^{6} \\
@@ -245,5 +303,13 @@ E_\text{thermal,tot} &= 4.20\,\text{MJ} \\
 &= 4.86\,\text{MJ}
 \end{aligned}
 $$. The most is produced in the panel, and its share is $\dfrac{4.20\,\text{MJ}}{4.86\,\text{MJ}} = 0.864 = 86\,\%$.
-**Answer:** a) In total $4.86\,\text{MJ}$ changes into thermal energy (three significant figures as in the table). b) The most thermal energy is produced in the solar panel, about $86\,\%$ of all of it. c) Check: $0.14\,\text{MJ} + 4.86\,\text{MJ} = 5.00\,\text{MJ}$, which equals the radiant energy that arrived at the panel. The energy has not been used up: it has changed into light and thermal energy, which is transferred to the surroundings. The light is only $2.8\,\%$ of the initial energy, because at every stage part of it changes into thermal energy, which cannot be turned back into a useful form.
+**Answer:** a) In total $4.86\,\text{MJ}$ changes into thermal energy (three significant figures as in the table).
+
+b) The most thermal energy is produced in the solar panel, about $86\,\%$ of all of it.
+
+c) Check: $0.14\,\text{MJ} + 4.86\,\text{MJ} = 5.00\,\text{MJ}$, which equals the radiant energy that arrived at the panel.
+
+The energy has not been used up: it has changed into light and thermal energy, which is transferred to the surroundings.
+
+The light is only $2.8\,\%$ of the initial energy, because at every stage part of it changes into thermal energy, which cannot be turned back into a useful form.
 **Reasonableness:** The output energy of each stage is smaller than its input energy, for example $0.80 < 5.00$ and $0.14 < 0.56$, as it should be. The light of the lamp is $0.14\,\text{MJ} : 5.00\,\text{MJ} = 0.028$, that is $2.8\,\%$ of what arrived at the panel. The large thermal share of the solar panel is believable, because most of the sunlight does not change into electricity.
