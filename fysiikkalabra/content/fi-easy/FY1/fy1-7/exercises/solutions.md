@@ -235,3 +235,104 @@ Kappale B kelluisi vedessä ja muut uppoaisivat. Massan mukaan järjestys olisi 
 **Sijoitus:** $m = 8{,}96 \cdot 10^3\,\tfrac{\text{kg}}{\text{m}^3} \cdot 5{,}0 \cdot 10^{-5}\,\text{m}^3 = 0{,}448\,\text{kg}$
 **Vastaus:** $0{,}45\,\text{kg}$ (tarkemmin $0{,}448\,\text{kg}$). Tilavuus $50\,\text{cm}^3$ on annettu kahdella merkitsevällä numerolla, joten vastauskin on. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Kupari on noin $9$ kertaa vettä tiheämpää. Jos vettä on $50\,\text{cm}^3$, sen massa on $50\,\text{g}$. Kuparia on siis noin $9 \cdot 50\,\text{g} = 450\,\text{g} = 0{,}45\,\text{kg}$.
+
+## fy1-7-L2-09
+**Annettu:** NASAn *Planetary Fact Sheet* -taulukon rivit *Mass* ($10^{24}\,\text{kg}$), *Diameter* ($\text{km}$, mitattu päiväntasaajalta) ja *Density* ($\text{kg/m}^3$), luettu 16. marraskuuta 2026. Pallon tilavuus $V = \dfrac{\pi d^3}{6}$.
+
+| Planeetta | $m\,(10^{24}\,\text{kg})$ | $d\,(\text{km})$ | $\rho\,(\text{kg/m}^3)$ |
+|---|---|---|---|
+| Merkurius | $0{,}330$ | $4879$ | $5429$ |
+| Venus | $4{,}87$ | $12\,104$ | $5243$ |
+| Maa | $5{,}97$ | $12\,756$ | $5514$ |
+| Mars | $0{,}642$ | $6792$ | $3934$ |
+| Jupiter | $1898$ | $142\,984$ | $1326$ |
+| Saturnus | $568$ | $120\,536$ | $687$ |
+| Uranus | $86{,}8$ | $51\,118$ | $1270$ |
+| Neptunus | $102$ | $49\,528$ | $1638$ |
+
+**Kysytty:** a) neljän planeetan taulukko; b) kuvaaja $\rho(d)$ ja sen riippuvuus; c) Maan ja Saturnuksen keskitiheys $\rho = \dfrac{m}{V}$ ja vertailu NASAn arvoihin; d) väitteen arvio
+
+**Periaate:** Keskitiheys on koko planeetan massa jaettuna sen tilavuudella. Kun planeetta oletetaan palloksi, tilavuus saadaan halkaisijasta. Kuvaaja näyttää, riippuuko tiheys koosta. Väite koskee kaikkia planeettoja, joten yksikin selvä poikkeus kumoaa sen yleisenä sääntönä.
+
+**Mallivastaus a):** Esimerkiksi Maa, Mars, Saturnus ja Neptunus: niiden rivit ovat yllä olevassa taulukossa. Muiden planeettojen valinta on yhtä hyvä, kunhan mukana ovat Maa ja Saturnus.
+
+**Kuvaajan lukeminen:** Vaaka-akselille tulee halkaisija $d$ kilometreinä ja pystyakselille keskitiheys $\rho$ yksikössä $\text{kg/m}^3$. Pisteitä ei yhdistetä toisiinsa, koska ne ovat eri planeettoja eivätkä saman suureen peräkkäisiä mittauksia.
+
+**Mallivastaus b):** Pisteet jakautuvat kahteen ryhmään. Pienet kiviplaneetat ($d < 13\,000\,\text{km}$) ovat tiheitä, $\rho \approx 3900$–$5500\,\text{kg/m}^3$. Suuret kaasu- ja jääjättiläiset ($d > 49\,000\,\text{km}$) ovat paljon harvempia, $\rho \approx 690$–$1640\,\text{kg/m}^3$. Kuvaajassa ei ole yhtä nousevaa tai laskevaa käyrää, jolle pisteet asettuisivat. Ryhmien sisälläkään järjestys ei seuraa kokoa: Merkurius on pienin mutta lähes yhtä tiheä kuin Maa, ja jättiläisistä pienin, Neptunus, on tihein.
+
+**Kaava:** $V = \dfrac{\pi d^3}{6}$, joten $\rho = \dfrac{m}{V} = \dfrac{6m}{\pi d^3}$
+
+**Muunnokset:** Halkaisija muutetaan metreiksi ja massa kilogrammoiksi: Maalle $d = 12\,756\,\text{km} = 1{,}2756\cdot10^{7}\,\text{m}$ ja $m = 5{,}97\cdot10^{24}\,\text{kg}$, Saturnukselle $d = 120\,536\,\text{km} = 1{,}20536\cdot10^{8}\,\text{m}$ ja $m = 568\cdot10^{24}\,\text{kg} = 5{,}68\cdot10^{26}\,\text{kg}$.
+
+**Sijoitus:** Maa:
+
+$$\begin{aligned}
+\rho_\text{Maa} &= \dfrac{6m}{\pi d^3} \\
+&= \dfrac{6 \cdot 5{,}97\cdot10^{24}\,\text{kg}}{\pi \cdot (1{,}2756\cdot10^{7}\,\text{m})^3} \\
+&\approx 5{,}49\cdot10^{3}\,\text{kg/m}^3
+\end{aligned}$$
+
+Saturnus:
+
+$$\begin{aligned}
+\rho_\text{Saturnus} &= \dfrac{6m}{\pi d^3} \\
+&= \dfrac{6 \cdot 5{,}68\cdot10^{26}\,\text{kg}}{\pi \cdot (1{,}20536\cdot10^{8}\,\text{m})^3} \\
+&\approx 619\,\text{kg/m}^3
+\end{aligned}$$
+
+**Mallivastaus c):** Maan laskettu keskitiheys poikkeaa NASAn arvosta $5514\,\text{kg/m}^3$ vain noin $0{,}4\,\%$. Saturnuksen laskettu arvo on noin $10\,\%$ pienempi kuin NASAn arvo $687\,\text{kg/m}^3$. Ero johtuu mallista, ei laskuvirheestä. Malli olettaa, että planeetta on pallo. Saturnus pyörähtää akselinsa ympäri noin $11$ tunnissa. Nopeasti pyörivä kaasupallo on litistynyt eli vähän lytyssä. Navalta navalle se on selvästi kapeampi kuin päiväntasaajalta. Päiväntasaajan halkaisijasta laskettu pallo on siksi liian suuri, ja kun tilavuus on liian suuri, laskettu tiheys jää liian pieneksi. NASA jakaa massan planeetan todellisella tilavuudella. Maa pyörii hitaammin ja on jäykkä kivipallo. Siksi Maa on vain hieman litistynyt. Maan pieni ero on samaa suuruusluokkaa kuin lähtöarvojen pyöristys.
+
+**Mallivastaus d):** Väite ei pidä paikkaansa. Neljä suurinta planeettaa ovat aineiston harvimmat, ja suurin planeetta Jupiter on noin neljä kertaa harvempi kuin Maa. Väite ei päde ryhmien sisälläkään: Saturnus on Neptunusta suurempi mutta vain noin puolet sen tiheydestä, ja pieni Merkurius on tiheämpi kuin suurempi Mars. Tiheys riippuu ennen kaikkea siitä, mistä aineista planeetta koostuu. Kiviplaneetat ovat kiveä ja metallia. Jättiläisplaneetat ovat suurimmaksi osaksi kevyitä aineita, kuten vetyä ja heliumia. Aineistosta ei siis voi päätellä tiheyttä koosta. Kahdeksan planeetan aineisto ei myöskään riitä yleiseksi laiksi, vaikka siinä näkyisi jokin suuntaus.
+
+**Vastaus:** Maan keskitiheys on $\rho_\text{Maa} \approx 5{,}49\cdot10^{3}\,\text{kg/m}^3$, kolme merkitsevää numeroa kuten massassa $5{,}97\cdot10^{24}\,\text{kg}$. Saturnuksen keskitiheys on $619\,\text{kg/m}^3$.
+
+**Järkevyys:** Maan keskitiheys on suurempi kuin pintakivien tiheys, noin $3000\,\text{kg/m}^3$, koska Maan sisällä on tiheä rautaydin. Saturnuksen keskitiheys on pienempi kuin veden $1000\,\text{kg/m}^3$, mikä sopii planeettaan, joka on suurimmaksi osaksi vetyä ja heliumia.
+
+## fy1-7-L2-10
+**Annettu:** simulaatiosta luetut alumiinikappaleen massat ja tilavuudet. Esimerkkimittaus 16. marraskuuta 2026; omat lukusi riippuvat valitsemistasi massoista.
+
+| $m\,(\text{kg})$ | $V\,(\textsf{l})$ | $\dfrac{m}{V}\,\left(\tfrac{\text{kg}}{\textsf{l}}\right)$ |
+|---|---|---|
+| $4{,}00$ | $1{,}48$ | $2{,}70$ |
+| $8{,}00$ | $2{,}96$ | $2{,}70$ |
+| $12{,}00$ | $4{,}44$ | $2{,}70$ |
+| $16{,}00$ | $5{,}93$ | $2{,}70$ |
+| $20{,}00$ | $7{,}41$ | $2{,}70$ |
+
+Tarkistuspiste, jota ei käytetty mallin muodostamiseen: tilavuudella $V_\text{enn} = 9{,}26\,\textsf{l}$ simulaatio näytti massan $25{,}00\,\text{kg}$.
+
+**Kysytty:** a) mittaustaulukko ja kuvaaja $m(V)$; b) malli ja alumiinin tiheys $\rho$ yksikössä $\text{kg/m}^3$; c) ennuste $m_\text{enn}$ ja sen tarkistus; d) voiko materiaalin tunnistaa pelkästä tiheydestä
+
+**Periaate:** Saman aineen kappaleille massa on suoraan verrannollinen tilavuuteen, $m = \rho V$. Massa–tilavuuskuvaajan pisteet asettuvat silloin origon kautta kulkevalle suoralle, jonka kulmakerroin on aineen tiheys.
+
+**Mallivastaus a):** Massa luetaan ohjauspaneelin kentästä Mass ja tilavuus kentästä Volume. Altaan vedenpinnan lukemaa ei käytetä. Kelluva kappale ei ole kokonaan veden alla, joten vedenpinnan nousu ei silloin ole kappaleen tilavuus. Alumiini uppoaa, joten sille vedenpinnan nousu olisi sama kuin kappaleen tilavuus.
+
+**Kuvaajan lukeminen:** Vaaka-akselille tulee tilavuus $V$ litroina ja pystyakselille massa $m$ kilogrammoina, ja molemmat akselit alkavat nollasta. Pisteet ovat origon kautta kulkevalla suoralla. Kulmakerroin luetaan suoralta kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi origosta ja pisteestä $(7{,}41\,\textsf{l};\ 20{,}00\,\text{kg})$, tai se saadaan sovituksesta: $k = 2{,}70\,\tfrac{\text{kg}}{\textsf{l}}$.
+
+**Mallivastaus b):** Malli on $m = kV$, missä $k = 2{,}70\,\tfrac{\text{kg}}{\textsf{l}}$. Kulmakerroin on alumiinin tiheys, $\rho = k$. Suhteet $\dfrac{m}{V}$ ovat kaikilla riveillä samat kolmen numeron tarkkuudella, joten tiheys ei riipu kappaleen koosta. Neljännessä numerossa näkyvä pieni vaihtelu johtuu tilavuuden lukeman pyöristyksestä $0{,}01\,\textsf{l}$:n tarkkuuteen.
+
+**Kaava:** $\rho = \dfrac{m}{V}$ eli $m = \rho V$; ennuste $m_\text{enn} = \rho V_\text{enn}$
+
+**Muunnokset:** $1\,\textsf{l} = 1\,\text{dm}^3 = 10^{-3}\,\text{m}^3$, joten
+
+$$\begin{aligned}
+\rho &= 2{,}70\,\dfrac{\text{kg}}{\textsf{l}} \\
+&= \dfrac{2{,}70\,\text{kg}}{10^{-3}\,\text{m}^3} \\
+&= 2{,}70\cdot10^{3}\,\dfrac{\text{kg}}{\text{m}^3}
+\end{aligned}$$
+
+**Sijoitus:** Kohdan c) ennuste:
+
+$$\begin{aligned}
+m_\text{enn} &= \rho V_\text{enn} \\
+&= 2{,}70\,\dfrac{\text{kg}}{\textsf{l}} \cdot 9{,}26\,\textsf{l} \\
+&\approx 25{,}0\,\text{kg}
+\end{aligned}$$
+
+**Mallivastaus c):** Simulaatio näytti massan $25{,}00\,\text{kg}$, joten ennuste osui kolmen merkitsevän numeron tarkkuudella. Malli toimii myös mitatun alueen ulkopuolella, koska massan ja tilavuuden suhde on aineelle ominainen vakio.
+
+**Mallivastaus d):** Ei voi. Tiheysmittarin asteikolla lasi (Glass) on samassa kohdassa kuin alumiini, $2{,}70\,\tfrac{\text{kg}}{\textsf{l}}$, joten näillä kahdella aineella on simulaatiossa sama tiheys. Tiheys kertoo siis, mitkä aineet ovat mahdollisia. Se ei kuitenkaan aina kerro varmasti, mikä aine on kyseessä. Todellisessa mittauksessa tiheydellä on lisäksi epävarmuus, jonka sisään voi mahtua useita aineita. Myös ontto kappale tai kahden aineen seos voi antaa saman keskitiheyden kuin jokin puhdas aine. Varmaan tunnistamiseen tarvitaan muita ominaisuuksia, kuten väri, läpinäkyvyys, kovuus tai sähkönjohtavuus.
+
+**Vastaus:** Alumiinin tiheys on $\rho \approx 2{,}70\cdot10^{3}\,\text{kg/m}^3$, kolme merkitsevää numeroa kuten tilavuuden lukemissa.
+
+**Järkevyys:** Alumiini on noin $2{,}7$ kertaa vettä tiheämpää, ja alumiinikappale uppoaa simulaation altaassa. Tulos on sama kuin luvun tiheystaulukon arvo $2700\,\text{kg/m}^3$.

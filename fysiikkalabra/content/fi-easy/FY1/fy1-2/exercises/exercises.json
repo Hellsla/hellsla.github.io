@@ -290,6 +290,19 @@
       "answer": 1.0,
       "unit": "min",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L2-08",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://www.bipm.org/en/si-base-units/kilogram\" target=\"_blank\" rel=\"noopener\">BIPM – The kilogram</a> ja <a href=\"https://www.bipm.org/en/history-si/kilogram\" target=\"_blank\" rel=\"noopener\">BIPM – Kilogrammen historia (History of the SI: kilogram)</a> (luettu 16. marraskuuta 2026)\n\nMiksi kilogramman määritelmä muutettiin? Määritelmä kertoo tarkasti, mitä yksi kilogramma on. BIPM on kansainvälinen paino- ja mittatoimisto. Sen ensimmäinen sivu kertoo kilogramman nykyisen määritelmän. Toinen sivu kertoo, miten kilogramma määriteltiin ennen.\n\na) Vertaile kilogramman vanhaa ja nykyistä määritelmää. Vanha määritelmä perustui yhteen esineeseen. Miksi siitä luovuttiin?\n\nb) Vertailukappale on esine, jonka massa on tarkasti yksi kilogramma. Oletetaan, että vertailukappaleen massa muuttuu yhden milligramman. Laske massan suhteellinen muutos prosentteina. Monilla mailla on oma kansallinen vertailukappale. BIPM kertoo, kuinka paljon niiden massat olivat eronneet kansainvälisen vertailukappaleen massasta. Vertaa laskemaasi tulosta tähän eroon.\n\nc) Nykyinen määritelmä perustuu luonnonvakioon. Luonnonvakio on luku, joka on luonnossa aina sama. Selitä, miksi tällainen määritelmä on hyödyllinen, kun eri maissa mitataan.\n\nd) Mittayksikkö on nyt määritelty hyvin tarkasti. Tarkoittaako se, että kaikki tällä yksiköllä tehdyt mittaukset ovat ilman virheitä? Perustele.\n\nVastauskenttään tulee kohdan b) yhden milligramman muutos prosentteina.",
+      "kind": [
+        "data",
+        "concept",
+        "reasoning"
+      ],
+      "answer": 0.0001,
+      "unit": "%",
+      "tolerance": 0.02
     }
   ],
   "level3": [

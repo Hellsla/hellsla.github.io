@@ -208,3 +208,36 @@
 **Sijoitus:** $m = 2{,}70\,\dfrac{\text{g}}{\text{cm}^3} \cdot 45\,\text{cm}^3 = 121{,}5\,\text{g}$
 **Vastaus:** $m \approx 1{,}2\cdot10^{2}\,\text{g}$ (laskettu arvo $121{,}5\,\text{g}$), kaksi merkitsevää numeroa kuten tilavuudessa $45\,\text{cm}^3$. Tiheys on MAFY-taulukosta (kiinteiden aineiden tiheyksiä); vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Alumiini on noin kolme kertaa vettä tiheämpää, ja $45\,\text{cm}^3$:n veden massa olisi noin $45\,\text{g}$. Tulos $121{,}5\,\text{g}$ on noin $2{,}7$-kertainen siihen nähden.
+
+## fy1-4-L2-09
+**Annettu:** ilman lämpötila $T$ kahden tunnin välein yhden vuorokauden ajan. Oma aineistosi riippuu asemasta ja päivästä, joten tässä on ratkaisutapa tehtävän taulukon esimerkkiaineistolla. Kohdan b) aikavälin alussa $t_1 = 6\,\text{h}$, $T_1 = 7{,}2\,{}^\circ\text{C}$ ja lopussa $t_2 = 12\,\text{h}$, $T_2 = 16{,}3\,{}^\circ\text{C}$.
+
+**Kysytty:** a) kuvaaja $T(t)$; b) keskimääräinen muutosnopeus $k = \dfrac{\Delta T}{\Delta t}$; c) lineaarinen malli ja sen vertailu mittauksiin; d) mallin pätevyysalue
+
+**Periaate:** Keskimääräinen muutosnopeus on lämpötilan muutos jaettuna sen vaatimalla ajalla, eli kuvaajalle aikavälin päätepisteiden kautta piirretyn suoran kulmakerroin. Lineaarinen malli kuvaa mittauksia vain sillä alueella, jolla pisteet ovat likimain suoralla.
+
+**Mallivastaus a):** Akselien nimet ja yksiköt: $t\,(\text{h})$ ja $T\,({}^\circ\text{C})$. Pisteet merkitään erillisinä, ja niiden kautta voi piirtää ohuen käyrän, koska lämpötila muuttuu jatkuvasti myös mittausten välillä.
+
+**Kuvaajan lukeminen:** Vaaka-akselille tulee aika $t$ tunteina ja pystyakselille lämpötila $T$ Celsius-asteina. Pisteet nousevat aamuyöstä iltapäivään ja laskevat sen jälkeen, joten kuvaaja on kaari eikä suora. Lämpötila on alimmillaan klo $4$ ja korkeimmillaan klo $16$. Klo $6$–$12$ pisteet ovat likimain suoralla: kahden tunnin muutokset ovat $3{,}2$; $3{,}1$ ja $2{,}8\,{}^\circ\text{C}$.
+
+**Kaava:** $k = \dfrac{\Delta T}{\Delta t} = \dfrac{T_2 - T_1}{t_2 - t_1}$ ja lineaarinen malli $T(t) = T_1 + k(t - t_1)$
+
+**Muunnokset:** Ei tarvita: ajat ovat tunteina ja lämpötilat Celsius-asteina. Lämpötilan muutos on yhtä suuri Celsius-asteina ja kelvineinä, joten $1\,{}^\circ\text{C/h} = 1\,\text{K/h}$.
+
+**Sijoitus:** Kohta b):
+
+$$\begin{aligned}
+k &= \dfrac{T_2 - T_1}{t_2 - t_1} \\
+&= \dfrac{16{,}3\,{}^\circ\text{C} - 7{,}2\,{}^\circ\text{C}}{12\,\text{h} - 6\,\text{h}} \\
+&\approx 1{,}52\,{}^\circ\text{C/h}
+\end{aligned}$$
+
+**Mallivastaus c):** Malli on $T(t) = 7{,}2\,{}^\circ\text{C} + 1{,}52\,{}^\circ\text{C/h} \cdot (t - 6\,\text{h})$. Se antaa klo $8$ lämpötilan $10{,}2\,{}^\circ\text{C}$ (mitattu $10{,}4\,{}^\circ\text{C}$) ja klo $10$ lämpötilan $13{,}3\,{}^\circ\text{C}$ (mitattu $13{,}5\,{}^\circ\text{C}$). Aikavälillä ero on enintään $0{,}2\,{}^\circ\text{C}$, joten malli kuvaa mittauksia hyvin.
+
+Aikavälin ulkopuolella malli epäonnistuu. Klo $16$ se antaa $22{,}3\,{}^\circ\text{C}$, vaikka mitattu lämpötila on $18{,}1\,{}^\circ\text{C}$, ja klo $0$ se antaisi $-1{,}9\,{}^\circ\text{C}$, vaikka mitattu on $8{,}1\,{}^\circ\text{C}$. Malli on hyvä vain sillä alueella, jonka mittauksista se tehtiin.
+
+**Mallivastaus d):** Aamupäivän nousu johtuu siitä, että aurinko lämmittää maanpintaa ja ilmaa yhä tehokkaammin. Iltapäivällä lämmitys heikkenee ja yöllä ilma jäähtyy, joten lämpötila ei voi kasvaa tasaisesti koko vuorokautta. Seuraavan vuorokauden lämpötilaan vaikuttavat lisäksi pilvisyys, tuuli ja se, millainen ilmamassa alueelle saapuu. Yhden aamupäivän suora ei sisällä näistä mitään, joten sillä ei voi ennustaa toista vuorokautta. Siihen tarvitaan sääennuste, joka perustuu ilmakehän fysiikan malleihin ja laajaan havaintoaineistoon.
+
+**Vastaus:** Lämpötilan keskimääräinen muutosnopeus klo $6$–$12$ on $1{,}5\,{}^\circ\text{C/h}$ (laskettu arvo $1{,}517\,{}^\circ\text{C/h}$), kaksi merkitsevää numeroa, koska lämpötilan muutos $9{,}1\,{}^\circ\text{C}$ on kahden numeron tarkkuudella ja aikaväli $6\,\text{h}$ on tarkka. Omalla aineistollasi muutosnopeus ja aikaväli ovat toiset, mutta ratkaisutapa on sama.
+
+**Järkevyys:** Kuuden tunnin aikana lämpötila nousee $6\,\text{h} \cdot 1{,}52\,{}^\circ\text{C/h} \approx 9{,}1\,{}^\circ\text{C}$, mikä vastaa taulukon arvojen eroa. Kevätpäivänä noin $10\,{}^\circ\text{C}$:n vuorokausivaihtelu sisämaassa on tavallinen, joten nousunopeus noin $1$–$2\,{}^\circ\text{C}$ tunnissa on uskottava.
