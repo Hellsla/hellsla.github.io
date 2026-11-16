@@ -1,14 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c160fa756692271a
+CONTENT-HASH: 8b0863e6ddb36e3d
+SCOPE: delta added-exercise from c160fa756692271a base cabadc3e6179
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] re-broken aligned rows (delta round 3) — in fy8-15 L2-01 the row "· c^2 = 37,841 MeV" begins with a break before · inside the product (the bracket term is too long for one row, so the rule allows it); readable, no change needed.
+- [Minor] fy8-3/levels-task and fy8-2/lamp-spectrum (L1-09, L2-09) — the lamp figure draws the yellow pair 577/579 nm as one thick line, while the description and solution speak of two lines — acceptable at this scale; optionally say "kaksi lähekkäistä viivaa, jotka näkyvät yhtenä" in the solution's reading step.
 
 ## Checked
-Delta, reflow only. Opened at 1280 px: fy8-13 open-exercises-1280-7 (task 13-7 Sijoitus), fy8-10 open-exercises-1280-1 (Δm chain: terms "6·1,007825 u" / "+ 6·1,008665 u" / "− 12,000000 u = …" whole, = and + aligned), fy8-15 open-exercises-L2-1280-2 and L3-1280-8; at 390 px: fy8-11 example-390-2 (m_loppu rows: each + term whole). No term is cut, no clipping, no overflow, operators aligned, spacing even. Other sets' changed blocks use the same re-break pattern (term per row) and were judged by this sample.
+- Opened (1280 px, solutions open, language fi-easy): the L1 parts holding tasks 4-9 and 4-10 (spectrum figure, Annettu to Vastaus, Järkevyys) and the L2 parts holding task 4-19 (energy-level figure, solution rows, Vastaus, Järkevyys wavelength block).
+- Figure for 4-9: dark spectrum strip, ticks every 10 nm, numbers every 50 nm, axis "λ (nm)" in LaTeX, green line clearly just left of 550; gives the value needed, does not give the answer away.
+- Figure for 4-19: grid 1 eV, E axis in eV, levels E1 to E4 labelled in LaTeX; E3 and E1 readable.
+- Formula rows: aligned, no clipping, decimal comma/point right, units upright with thin space, fractions in display, MAFY hint in a closed Vihje; the set reads as one with the neighbouring tasks.
+- Hash 8b0863e6ddb36e3d at the start and at the end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4
