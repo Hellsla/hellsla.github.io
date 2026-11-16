@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 14555a0377ff79b2
-SCOPE: delta added-exercise from 8ae950d4924a8353 base 81db4a6fd727
+CONTENT-HASH: fd25c4dd05e39506
 
 ## Blocking
 None.
 
 ## Polish
-None.
+- [Minor] fy4-2-L3-02 (task 2-19) — the change is one word ("kilometreinä"), which reads correctly. Nothing else found.
 
 ## Checked
-- Diff read: one answer paragraph reworded, no layout change. No capture opened for it.
-- Round 2 wording is clear and gives the reason for three significant figures.
+- open-exercises-L3-1280-2 (task 2-19 whole solution: Annettu to Sijoitus; Vastaus lies below the capture edge and was read in source only).
+- Aligned rows, units upright with thin space, decimal comma and \tfrac in the formula fine; no clipping at 1280.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

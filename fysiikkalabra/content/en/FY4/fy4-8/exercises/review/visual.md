@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f7a673e91042d426
+CONTENT-HASH: 9b5039b129802c7f
 
 ## Blocking
 None.
 
 ## Polish
-1. Scope: MAFY-form symbols ( = Fs$, {\text{k}0} + W = E_\text{k}$, {\text{p}0} + E_{\text{k}0} + W = E_\text{p} + E_\text{k}$) in the fy4-8 exercise set (en). Rendered at 390 and 1280 px (solutions open): formula tables show the MAFY name over/beside the formula, subscripts k, p, 0 upright, no overflow (scrollWidth = viewport), the energy-bar figure and scale figure carry {\text{p}0}$, {\text{k}0}$, $, \text{k}$ without clipping, the simulation labels ({\text{mech}0}$, $) read well. No leftover old symbols (W_muut, F_parallel, index 1/2 on energies) found in source.
-2. Minor: the text keeps $ (weight's work) beside $ (other forces); it is explained in place, so acceptable.
+- [Minor] fy4-8-L2-10 — the source quote is written $3\,000\,\text{kg}$ in the task but $3000\,\text{kg}$ in the solution; use one form.
+- [Minor] fy4-8-L2-10 text — the Finnish quotations use the ”…” mark and are followed by an English gloss, which is right; consider also marking the title of the page as Finnish in the link line (it is, in the sentence).
+
+## Checked
+- Opened fy4-8-open-exercises-L2-1280-13 (task, link, Given/Find), -14 (Principle to part d), -15 (answer, e), -16 (reasonableness). Task text parts a)–e) clearly separated, link visible, all formulas and units render, no clipping; the Finnish quotations are marked and translated. fy4-7/pallo-ek figure change (teacher-approved) not re-judged.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

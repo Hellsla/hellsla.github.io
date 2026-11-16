@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: ba2e7818bfdd7810
+CONTENT-HASH: 43ecc7d869e0221e
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-7-L2-09 solution — the reading "about $39\,\text{J}$" is justified in words; since the figure marks the point with a dot at $(2.0\,\text{m};\,39\,\text{J})$ and the $40\,\text{J}$ line is unlabelled, number the $5\,\text{J}$ gridlines or say "one grid step below $40\,\text{J}$".
-- [Minor] fy4-7-L2-09 Reasonableness — "$\approx 19.5\,\text{N}$ is the weight" breaks the sentence around a display fraction; keep it in one line: "The slope $39\,\text{J} : 2.0\,\text{m} \approx 19.5\,\text{N}$ is the weight of the crate."
-- [Minor] fy4-7-L2-08 solution — the reasonableness line explains $9 \cdot 1.0\,\text{J}$ well; add that the curve is a parabola so a straight-line read-off would be wrong.
+- [Minor] fy4-7-L2-10 solution, Given/Find — the entries after the bold lead-in begin in lower case ("the figures of the table…"); a style shared with the other solutions, so leave it unless the template changes.
+- [Minor] fy4-7-L2-10 solution, Answer line — "13 m" is boxed but the full $13.3\,\text{m}$ is the stored answer; fine, only note the two roundings are both explained.
+- [Minor] fy4-7-L2-10 text — the Finnish source title is marked "(in Finnish)" and the report's English title given in brackets; good. Optionally say "parts a)–d)" nowhere else needed.
 
 ## Checked
-- fy4-7-open-exercises-L2-1280-10 (L2-08 task, $E_\text{k}(v)$ figure, solution to the substitution), -11 (answer, reasonableness; L2-09 task, $E_\text{p}(h)$ figure, start of solution), -12 (formula to reasonableness).
-- Both figures: axes with quantity and unit, ticks and gridlines readable, orange kinetic-energy curve and green potential-energy line distinct from the dots that mark the read points, nothing hidden by labels, mass not marked. Solutions quote $E_\text{k}$, $E_\text{p}$, $h$, $v$ as the figures label them. Fractions, units and rows render correctly.
+- Opened (phone-width 664 px level-2 captures, lesson's review/shots): fy4-7-open-exercises-L2-1280-12 (task text, link), -13 (table, Given to Formula), -14 (conversions, part a-b), -15 (part c chains), -16 (part d, answer, reasonableness).
+- Table fits without clipping, link is green and underlined, parts a)–d) separate paragraphs, all numbers with units are inline maths with decimal point, chains aligned. The caption-only changes and the small fixes were judged from source.
+- Packet gives no SCOPE line.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
