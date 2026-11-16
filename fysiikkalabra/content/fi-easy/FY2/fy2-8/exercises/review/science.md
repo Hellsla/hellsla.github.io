@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 5adb89f5eac07ee8
-SCOPE: delta added-exercise from 753ff998604d8f0a base 611fb7d5c174
+CONTENT-HASH: 37d1260fef635745
 
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json fy2-8-L2-09 — the S2 version adds a definition that the Finnish lacks: "Elinkaaren päästö tarkoittaa kaikkia päästöjä rakentamisesta polttoon asti". The same set defines it in L2-08 as "polttoaineen hankinnasta sähköntuotantoon asti". A life-cycle factor also includes fuel extraction and decommissioning. — Fix: use one wording in both tasks, e.g. "kaikki päästöt voimalan rakentamisesta ja polttoaineen hankinnasta sähköntuotantoon ja purkamiseen asti".
+- content/fi-easy/FY2/fy2-8/exercises/exercises.json fy2-8-L2-10 — "kuinka monta grammaa hiilidioksidia (ja muita kasvihuonekaasuja)" — tarkemmin "hiilidioksidiekvivalenttia", kuten L3-06.
+- content/fi-easy/FY2/fy2-8/exercises/exercises.json fy2-8-L3-06 — "hiilidioksidiksi muutettuina" voi kuulostaa kemialliselta muutokselta — "ilmastovaikutukseltaan vastaavaksi hiilidioksidimääräksi muunnettuina".
 
 ## Checked
-- Hash taken at the start and at the end with `--lang fi-easy`; it did not change.
-- fy2-8-L1-09: E = Hm = 47 MJ/kg × 2,0 kg = 94 MJ, and m = eE = 55 g/MJ × 94 MJ = 5170 g = 5,17 kg. My recomputation, answers.py and exercises.json agree. The answer is given to two significant figures, as the data allow. The check of about 2,6 kg CO₂ per kg of gas is consistent: pure methane gives 44/16 = 2,75. The cause given (the carbon in the fuel combines with oxygen) is right. The unnamed source of the emission factor is not reported (teacher's decision 2026-11-12).
-- fy2-8-L2-09: `fy2-8/emissions` prints 820 for coal and 490 for gas (g CO₂-ekv./kWh). (820 − 490) × 20 000 kWh = 6,6 × 10⁶ g = 6,6 t. The intermediate values (16,4 t and 9,8 t) are right. The solution forms Δm = (e₁ − e₂)E symbolically first. The 3 % tolerance fits.
-- Compared with the reviewed Finnish: answer, unit, tolerance, figure, lookup, level and every number in the task text and the solution are identical. The added explanations of "päästökerroin" and "elinkaaren päästö" keep the physics; see Polish.
+- L2-10: Puola 588,6 · 5,0 = 2943 g → 2,9 kg, Suomi 287 g, Ruotsi 176 g; 588,6 : 35,26 = 16,7; tuonti 1,8 %, vaikutus < 0,3 g/kWh; tuuli 49,1 %; 57,47 : 16 = 3,6.
+- L2-11: tuulen osuudet 59,7, 53,4, 50,7 %; 98, 137, 150 g; Δe/1000 MW 4,2 ja 1,6 (2,7-kertainen); vesivoima +400/−140 MW; 52 g = 35 %.
+- L3-06: −189,35, −366,0, −513,48 g/kWh; −76,7, −38,3, −81,8 %; 588,6 : 57,47 = 10,2.
+- Taulukot = docs/audits/2026-11-16-fy2-aineistot.md.
+- Fysiikka: elinkaaren CO2e ja Fingridin arvio erotettu; korrelaatio ei syy; kolme hetkeä ei tilasto.
+- answers.py ja exercises.json samat; merkitsevät numerot perusteltu.
+- Jokainen luku kolmessa tehtävässä ja ratkaisussa identtinen suomenkielisen kanssa.

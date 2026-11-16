@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: dc433a75eb77d4f4
-SCOPE: delta added-exercise from 4ac0dae73e3c9ad3 base 611fb7d5c174
+CONTENT-HASH: 6bfe5ddbe100df3b
 
 ## Blocking
 (none)
@@ -9,8 +8,9 @@ SCOPE: delta added-exercise from 4ac0dae73e3c9ad3 base 611fb7d5c174
 (none)
 
 ## Checked
-- L1-09: E = Hm = 26.7 x 0.50 = 13.35 MJ -> 13 MJ; ratio to petrol (0.62) check right.
-- L2-09: from fy2-5/lampoarvot petrol 43, firewood 15 MJ/kg; m_w = H_p m_p / H_w = 34.4 kg solved symbolically; 34 kg within 2 %.
-- check script (one run): every added answer recomputed from the task text with my own formulas, equal to answers.py and exercises.json; answer, unit, tolerance, figure and lookup identical to the reviewed Finnish; every number of the task texts and solutions identical en/fi.
-- MAFY lookup values agree with docs/mafy-arvot.tsv (VERIFIED 2026-11-12).
-- No scope breach, no guardrail break (A or B) found.
+- Light heating oil now 40.6 MJ/kg, the MAFY value (docs/mafy-arvot.tsv, VERIFIED).
+- L3-01: 120/15 - 120/40.6 = 8.0 - 2.96 = 5.04 → 5.0 kg (answer 5.0); ratio 40.6:15 = 2.71, check 1.71 · 2.96 ≈ 5.0 right.
+- L3-04: oil 47 880 : 0.90 : 40.6 = 1310 kg → 1300 kg; mass ratio 3313:1310 = 2.53, H ratio 2.39 → 2.4, 2.4 · 0.90/0.85 = 2.5 consistent; pellet answer unchanged 3313 kg.
+- L3-05: oil 36 000 : (0.90 · 40.6) = 985 kg → 990 kg; 40.6:15 = 2.7 and "more than twice" still true for pellets (2.39); boxed answer 940 kg unaffected.
+- answers.py comments updated to 40.6; every answer of the set within tolerance of answers.py.
+- Every number of the three tasks and solutions identical en/fi. No guardrail break.
