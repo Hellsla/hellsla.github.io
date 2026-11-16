@@ -392,7 +392,7 @@ Exam questions are studied for patterns only (§7); every task is original, with
   (CI) keeps the corrected ones from coming back; `scripts/concepts.py <concept>` gathers a concept's passages from
   every chapter for a cross-chapter review (README "Physics consistency"). A new recurring error: add a line to the
   guardrails, and a rule with right and wrong example sentences when it can be matched with high precision. A rule
-  that finds sentences already in the texts lists them in `docs/physics-phrases-known.tsv` (folder, file, rule,
+  that finds sentences already in the texts lists them in `docs/physics-phrases-known/<course>.tsv` (folder, file, rule,
   sentence), which CI lets pass until their correction deletes the row; any other hit fails (2026-11-15: heat-into,
   P1; liikekitka, P8).
 

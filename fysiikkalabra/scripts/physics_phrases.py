@@ -115,7 +115,9 @@ def problems_in(name, text, course=None):
 
 FILES = ("lesson.md", "unit.md", "inquiry.json", "exit-ticket.json", "exercises/exercises.json", "exercises/solutions.md",
          "tasks.json", "solutions.md", "sovella/tasks.json", "sovella/solutions.md")
-KNOWN = ROOT / "docs/physics-phrases-known.tsv"   # sentences already in the texts when a rule came, until their course is corrected
+KNOWN = ROOT / "docs/physics-phrases-known"   # <course>.tsv: sentences already in the texts when a rule came, until their course is corrected
+# One file per course (work queue 5, 2026-11-16), so two courses' pull requests never touch the same file. The header row:
+KNOWN_HEADER = "folder\tfile\trule\tsentence (physics_phrases.py; work queue 18 deletes a row when it corrects the sentence)"
 
 
 def course_of(folder):
@@ -133,12 +135,16 @@ def problems(folder):
 
 
 def known():
-    """{(folder relative to content/fi, file, rule id, sentence)} of docs/physics-phrases-known.tsv: a rule's hits that
-    were in the texts when the rule came (heat-into, 2026-11-15: work queue 18 corrects them course by course). CI
-    lets them pass and fails on any other; delete a row when its sentence is corrected."""
-    if not KNOWN.exists(): return set()
-    rows = [l.split("\t") for l in KNOWN.read_text().splitlines()[1:] if l.strip()]
-    return {tuple(r[:4]) for r in rows}
+    """{(folder relative to content/fi, file, rule id, sentence)} of docs/physics-phrases-known/<course>.tsv: a rule's
+    hits that were in the texts when the rule came (heat-into, 2026-11-15: work queue 18 corrects them course by course).
+    CI lets them pass and fails on any other; delete a row when its sentence is corrected (and the file with its last row)."""
+    out = set()
+    for f in sorted(KNOWN.glob("*.tsv")):
+        rows = [l.split("\t") for l in f.read_text().splitlines()[1:] if l.strip()]
+        bad = [r[0] for r in rows if r[0].split("/")[0] != f.stem]
+        if bad: raise SystemExit(f"{f.relative_to(ROOT)}: rows of another course ({bad[0]}); each row lives in its course's file")
+        out |= {tuple(r[:4]) for r in rows}
+    return out
 
 
 def finnish_units():

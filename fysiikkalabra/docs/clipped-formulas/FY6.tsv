@@ -1,0 +1,32 @@
+# Formulas that were clipped on a phone (360 or 390 px, solutions open) when check_layout.py learned to see them (teacher 2026-11-15, work queue 5b).
+# page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed
+# (fix the formula and delete its row; the file with its last row); written by `check_layout.py --write-known`, never by hand.
+FY6-sovella	E - R_\text{s} I = 4{,}60\,\text{V} - 0{,}60\,\text{V}
+en/fy6-11	66.7 \cdot 10^{-6}\,\text{N} \cdot 0.060\,\text{m} : (2.0 \cdot 10^{-9
+en/fy6-11	= \sqrt{2 \cdot 2.5 \cdot 10^{-3}\,\text{m} : 2.67 \cdot 10^{4}\,\text
+en/fy6-12	= \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 1200\,\tex
+en/fy6-13	= \dfrac{8.854 \cdot 10^{-12}\,\text{F/m} \cdot 2.3 \cdot 0.025\,\text
+en/fy6-16	17.8\,\text{kWh} \cdot 0.15\,\text{€/kWh} \approx 2.7\,\text{€}
+fi-easy/FY6-sovella	E - R_\text{s} I = 4{,}60\,\text{V} - 0{,}60\,\text{V}
+fi-easy/fy6-11	66{,}7 \cdot 10^{-6}\,\text{N} \cdot 0{,}060\,\text{m} : (2{,}0 \cdot 
+fi-easy/fy6-11	= \sqrt{2 \cdot 2{,}5 \cdot 10^{-3}\,\text{m} : 2{,}67 \cdot 10^{4}\,\
+fi-easy/fy6-12	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1200\,\t
+fi-easy/fy6-12	\approx \sqrt{2 \cdot 2 \cdot 10^{-16}\,\text{J} : 2 \cdot 10^{-25}\,\
+fi-easy/fy6-13	= \dfrac{8{,}854 \cdot 10^{-12}\,\text{F/m} \cdot 2{,}3 \cdot 0{,}025\
+fi-easy/fy6-16	17{,}8\,\text{kWh} \cdot 0{,}15\,\text{€/kWh} \approx 2{,}7\,\text{€}
+fi-easy/fy6-2	2{,}29\,\Omega : 117{,}71\,\Omega = 1{,}95\,\%
+fi-easy/fy6-2	\pm(0{,}5\,\% + 2\ \text{numeroa})
+fi-easy/fy6-2	\pm(1{,}0\,\% + 2\ \text{numeroa})
+fi-easy/fy6-2	\pm(2{,}0\,\% + 3\ \text{numeroa})
+fi-easy/fy6-5	-3{,}0\,\text{V} - (-9{,}0\,\text{V}) = 6{,}0\,\text{V}
+fy6-11	66{,}7 \cdot 10^{-6}\,\text{N} \cdot 0{,}060\,\text{m} : (2{,}0 \cdot 
+fy6-11	= \sqrt{2 \cdot 2{,}5 \cdot 10^{-3}\,\text{m} : 2{,}67 \cdot 10^{4}\,\
+fy6-12	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1200\,\t
+fy6-12	\approx \sqrt{2 \cdot 2 \cdot 10^{-16}\,\text{J} : 2 \cdot 10^{-25}\,\
+fy6-13	= \dfrac{8{,}854 \cdot 10^{-12}\,\text{F/m} \cdot 2{,}3 \cdot 0{,}025\
+fy6-16	17{,}8\,\text{kWh} \cdot 0{,}15\,\text{€/kWh} \approx 2{,}7\,\text{€}
+fy6-2	2{,}29\,\Omega : 117{,}71\,\Omega = 1{,}95\,\%
+fy6-2	\pm(0{,}5\,\% + 2\ \text{numeroa})
+fy6-2	\pm(1{,}0\,\% + 2\ \text{numeroa})
+fy6-2	\pm(2{,}0\,\% + 3\ \text{numeroa})
+fy6-5	-3{,}0\,\text{V} - (-9{,}0\,\text{V}) = 6{,}0\,\text{V}
