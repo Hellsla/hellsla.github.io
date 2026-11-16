@@ -324,6 +324,38 @@
       "answer": 0.45,
       "unit": "€",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy6-7-L2-09",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://www.energystar.gov/productfinder/product/certified-residential-refrigerators/results\" target=\"_blank\" rel=\"noopener\">ENERGY STAR – Certified Residential Refrigerators</a> (Yhdysvaltain ympäristönsuojeluviraston ENERGY STAR -ohjelman tuotehaku, englanninkielinen)\n\nKuinka paljon jääkaappi kuluttaa sähköä? Tietokannan tuotekortissa on jääkaapin tyyppi (Type), tilavuus kuutiojalkoina (Capacity (Total Volume)) ja vuotuinen sähköenergian kulutus kilowattitunteina (Annual Energy Use). Yksi kuutiojalka on $1\\,\\text{ft}^3 \\approx 28{,}3\\,\\textsf{l}$. Ilmoitettu kulutus on standardoidun testin tulos, ei kotona mitattu arvo.\n\nValitse tietokannasta kaksi mahdollisimman samankokoista ja samantyyppistä jääkaappia, joiden vuotuinen sähkönkulutus eroaa toisistaan. Vasemman reunan suodattimet Type ja Capacity auttavat rajauksessa. Tietokanta päivittyy, joten kirjaa muistiin valitsemasi mallit ja hakupäivä. Taulukossa on esimerkkipari, joka poimittiin tietokannasta 15. marraskuuta 2026. Molemmat ovat jääkaappipakastimia, joissa pakastin on ylhäällä (Top Freezer). Jos tietokanta ei ole käytettävissä, tee kohdat a)–c) taulukon parilla.\n\na) Vertaa laitteiden ilmoitettuja vuotuisia sähkönkulutuksia: kuinka monta kilowattituntia ja kuinka monta prosenttia enemmän toinen laite kuluttaa vuodessa?\n\nb) Laske kummankin jääkaapin keskimääräinen sähköteho watteina.\n\nc) Laske laitteiden sähkökustannukset kymmenen vuoden aikana, kun sähkön kokonaishinta on $0{,}20\\,\\text{€/kWh}$. Kuinka suuri kustannusten ero on?\n\nd) Selitä, miksi laskettu keskimääräinen sähköteho ei ole sama asia kuin kompressorin hetkellinen ottoteho eli teho, jonka kompressori ottaa sähköverkosta käydessään.\n\nVastaa laatikkoon taulukon mallin A keskimääräinen sähköteho watteina.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 39.269,
+      "unit": "W",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Esimerkkipari ENERGY STAR -tietokannasta 15. marraskuuta 2026",
+        "columns": [
+          "Malli",
+          "$V\\,(\\text{ft}^3)$",
+          "$E\\,(\\text{kWh/a})$"
+        ],
+        "rows": [
+          [
+            "A: LG LT18S1100*",
+            "17.5",
+            "344"
+          ],
+          [
+            "B: LG LT18S1200*",
+            "17.5",
+            "440"
+          ]
+        ]
+      }
     }
   ],
   "level3": [

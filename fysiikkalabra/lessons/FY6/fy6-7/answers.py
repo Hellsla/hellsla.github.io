@@ -43,4 +43,12 @@ a["fy6-7-L3-05"] = 489 / ((320 - 98) * 0.17)              # payback 489 : 37,74 
 a["fy6-7-L1-10"] = 1.5 * 2.0 * 3.6                        # 10,8 MJ
 # figure fy6-7/dryer: 2,4 kW for 0,5 h, 1,2 kW for 1,0 h, 0,2 kW for 0,5 h; price 0,18 EUR/kWh
 a["fy6-7-L2-08"] = (2.4 * 0.5 + 1.2 * 1.0 + 0.2 * 0.5) * 0.18   # 2,5 kWh -> 0,45 EUR
+# ENERGY STAR product finder, 15 November 2026 (Top Freezer, 17,5 ft3): model A 344 kWh/a, model B 440 kWh/a
+E_A, E_B = 344, 440
+V_l = 17.5 * 28.3                                         # 17,5 ft3 · 28,3 l/ft3 = 495,25 l
+dE, ratio = E_B - E_A, E_B / E_A                          # a) 96 kWh more, ratio 1,279: about 28 % more
+P_B = E_B / (365 * 24) * 1000                             # b) 440 kWh : 8760 h = 0,05023 kW = 50,23 W
+K_A, K_B = 10 * 0.20 * E_A, 10 * 0.20 * E_B               # c) ten years at 0,20 EUR/kWh: 688 EUR and 880 EUR, difference 192 EUR
+a["fy6-7-L2-09"] = E_A / (365 * 24) * 1000                # b) 344 kWh : 8760 h = 0,03927 kW = 39,27 W
+k_A = a["fy6-7-L2-09"] / 100                              # d) a 100 W compressor would run 0,39 of the time
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
