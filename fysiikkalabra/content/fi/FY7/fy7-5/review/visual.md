@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9156a50e302c58c1
+CONTENT-HASH: 54842d33d9ea0258
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] inquiry.json tarkistus-2 hint and solution — e = vBl is broken by hand into e = ... / · 0,50 m / = 0,50 V; reads correctly with the operator leading the row, but a hand-split chain is against NOTES §1.
+- [Minor] docs/clipped-formulas.tsv — fy7-5 keeps formulas that were already clipped before this change (outside this change, work queue 5d; Major outside this change, not blocking): six formulas (e = vBl chain with the other data, 200 · 0,30 T …) remain in the list.
 
 ## Checked
-- Capture fy7-5-stage-herata-390 (Pohdinta at 390 px): the shortened hook sentence ("Vuonna 1831 Michael Faraday tutki laboratoriossaan, synnyttääkö magneetti käämiin virran: magneetti käämin vieressä ei tuottanut virtaa.") reads as fluent Finnish, no clipping, layout and question block intact.
-- Delta only (inquiry.json hook text); rest not re-reviewed. Hash identical at start and end.
+- Delta: only inquiry.json re-breaks. Rendered the changed items myself from the built page (preview/fy7-5.html) at 390 px with hints and solutions open; the Tarkista "liikkuva tanko" hint 3 and solution Sijoitus: rows aligned, operator leads, readable. 
+- Opened the lesson's existing 390 px stage captures (herata, sovella, tarkista) and contact sheet; the stages around the changes keep their layout, no horizontal overflow.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4
