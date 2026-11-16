@@ -162,7 +162,7 @@ joten kuvaaja, jonka pystyakselilla on $\ln(T - T_\text{huone})$ ja vaaka-akseli
 Ennen mittaamista päätä ja kirjaa ylös, mitä mittaat, miten ja kuinka pitkään, ja mitä pidät vakiona.
 
 ::: tuki O
-**Ohjattu.** Mittaat veden lämpötilaa $T$ ajan $t$ funktiona ja huoneen lämpötilaa $T_\text{huone}$ mittauksen alussa ja lopussa. Käytä noin $1\ \text{dl}$ vettä lasiastiassa, jonka alla on eristävä alusta, ja aloita, kun veden lämpötila on noin $60\ {}^\circ\text{C}$. Tallenna lämpötila anturilla esimerkiksi $10\ \text{s}$ välein ja jatka mittausta, kunnes veden ja huoneen lämpötilaero on pudonnut noin neljäsosaan alkuperäisestä. Jos käytät lämpömittaria ja kelloa, lue lämpötila minuutin välein. Pidä astia, vesimäärä ja paikka samoina koko mittauksen ajan, äläkä siirrä astiaa.
+**Ohjattu.** Mittaat veden lämpötilaa $T$ ajan $t$ funktiona ja huoneen lämpötilaa $T_\text{huone}$ mittauksen alussa ja lopussa. Käytä noin $1\,\text{dl}$ vettä lasiastiassa, jonka alla on eristävä alusta, ja aloita, kun veden lämpötila on noin $60\,{}^\circ\text{C}$. Tallenna lämpötila anturilla esimerkiksi $10\,\text{s}$ välein ja jatka mittausta, kunnes veden ja huoneen lämpötilaero on pudonnut noin neljäsosaan alkuperäisestä. Jos käytät lämpömittaria ja kelloa, lue lämpötila minuutin välein. Pidä astia, vesimäärä ja paikka samoina koko mittauksen ajan, äläkä siirrä astiaa.
 :::
 
 ::: tuki OO
@@ -221,7 +221,7 @@ Kirjaa alkuperäiset mittaustulokset taulukkoon tai tallenna ne ohjelmaan heti m
 ::: tuki O
 Voit käyttää esimerkiksi tällaista taulukkoa. Jos anturi tallentaa satoja lukemia, tee lasketut sarakkeet ohjelmassa ja liitä raporttiin taulukosta ote.
 
-| $t\ (\text{min})$ | $T\ ({}^\circ\text{C})$ | $T - T_\text{huone}\ ({}^\circ\text{C})$ | $\ln(T - T_\text{huone})$ |
+| $t\,(\text{min})$ | $T\,({}^\circ\text{C})$ | $T - T_\text{huone}\,({}^\circ\text{C})$ | $\ln(T - T_\text{huone})$ |
 |---|---|---|---|
 | | | | |
 | | | | |
@@ -251,7 +251,7 @@ Vastaa:
 
 - **Puoliintumisaika.** Lue lämpötilan kuvaajasta, kuinka kauan lämpötilaeron puolittuminen kestää, eri aloituskohdista. Jos ajat ovat mittausepävarmuuden rajoissa samat, malli on sopusoinnussa mittausten kanssa.
 - **Linearisointi.** Kuvaaja $\ln(T - T_\text{huone})$ ajan funktiona on mallin mukaan suora. Suoruuden näkee silmällä helpommin kuin sen, onko käyrä juuri eksponenttifunktio. Kulmakertoimesta saat vakion $k$.
-- **Eksponenttisovitus.** Monilla ohjelmilla voi sovittaa mittauspisteisiin suoraan eksponenttifunktion. Sovita lämpötilaan $T$ funktio, jossa on vakiotermi, muotoa $A\cdot e^{-Bt} + C$, tai sovita funktio $A\cdot e^{-Bt}$ lämpötilaeroon $T - T_\text{huone}$. Pelkkä $A\cdot e^{-Bt}$ lämpötilaan $T$ sovitettuna antaa väärän vakion, koska sen käyrä lähestyy lämpötilaa $0\ {}^\circ\text{C}$ eikä huoneen lämpötilaa. Selvitä, mitä sovitettavan funktion vakiot tarkoittavat, ja vertaa niitä mallin yhtälön suureisiin. Tarkista, osuvatko pisteet käyrälle koko alueella vai poikkeavatko ne järjestelmällisesti jossain kohdassa.
+- **Eksponenttisovitus.** Monilla ohjelmilla voi sovittaa mittauspisteisiin suoraan eksponenttifunktion. Sovita lämpötilaan $T$ funktio, jossa on vakiotermi, muotoa $A\cdot e^{-Bt} + C$, tai sovita funktio $A\cdot e^{-Bt}$ lämpötilaeroon $T - T_\text{huone}$. Pelkkä $A\cdot e^{-Bt}$ lämpötilaan $T$ sovitettuna antaa väärän vakion, koska sen käyrä lähestyy lämpötilaa $0\,{}^\circ\text{C}$ eikä huoneen lämpötilaa. Selvitä, mitä sovitettavan funktion vakiot tarkoittavat, ja vertaa niitä mallin yhtälön suureisiin. Tarkista, osuvatko pisteet käyrälle koko alueella vai poikkeavatko ne järjestelmällisesti jossain kohdassa.
 
 Jos $\ln$-kuvaaja on alussa suora mutta kaartuu lopussa, tarkista ensin huoneen lämpötila: pienikin virhe lukemassa $T_\text{huone}$ muuttaa lämpötilaeroa suhteellisesti eniten silloin, kun ero on pieni. Pisteet, joissa lämpötilaero on mittausepävarmuuden suuruinen, eivät kerro mallista enää mitään: jätä ne pois sovituksesta ja kerro se raportissa.
 :::

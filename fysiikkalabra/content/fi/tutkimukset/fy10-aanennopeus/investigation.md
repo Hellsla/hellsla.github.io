@@ -179,7 +179,7 @@ Mittaa kulkuaika jokaisella valitsemallasi matkalla ja toista mittaukset. Kirjaa
 ::: tuki OO
 Voit käyttää esimerkiksi tällaista taulukkoa. Lisää sarakkeita, jos teet enemmän toistoja.
 
-| $d\ (\text{m})$ | $t_2 - t_1\ (\text{ms})$, 1. | $t_2 - t_1\ (\text{ms})$, 2. | $t_2 - t_1\ (\text{ms})$, 3. | keskiarvo $(\text{ms})$ |
+| $d\,(\text{m})$ | $t_2 - t_1\,(\text{ms})$, mittaus 1 | $t_2 - t_1\,(\text{ms})$, mittaus 2 | $t_2 - t_1\,(\text{ms})$, mittaus 3 | keskiarvo $(\text{ms})$ |
 |---|---|---|---|---|
 | | | | | |
 | | | | | |
@@ -274,7 +274,7 @@ Jos taulukossa ei ole arvoa juuri sinun lämpötilassasi, voit laskea kirjallisu
 v = v_0 \sqrt{\frac{T}{T_0}}
 ```
 
-missä $v_0 \approx 331\ \text{m/s}$ on äänen nopeus kuivassa ilmassa lämpötilassa $T_0 = 273{,}15\ \text{K}$ eli $0\ ^\circ\text{C}$ ja $T$ on ilman lämpötila kelvineinä. Ilman kosteus kasvattaa nopeutta hieman.
+missä $v_0 \approx 331\,\text{m/s}$ on äänen nopeus kuivassa ilmassa lämpötilassa $T_0 = 273{,}15\,\text{K}$ eli $0\,^\circ\text{C}$ ja $T$ on ilman lämpötila kelvineinä. Ilman kosteus kasvattaa nopeutta hieman.
 :::
 
 ## Raportoi

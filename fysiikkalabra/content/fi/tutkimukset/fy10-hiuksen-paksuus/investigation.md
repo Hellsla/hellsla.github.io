@@ -58,7 +58,13 @@ Hius on niin ohut, ettei sen paksuutta voi mitata viivaimella. Valo tarjoaa tois
 
 **Selvitettävä:** hiuksen paksuus epävarmuuksineen hiuksen taakse syntyvän diffraktiokuvion avulla. Käytä tuloksen määrittämiseen useita kuvion tummia kohtia yhden sijaan, ja vertaa tulosta hiuksen paksuuden tyypilliseen suuruusluokkaan.
 
-**Päätät itse** (osittain ohjattu ja itsenäinen työtapa): hiuksen ja varjostimen välisen etäisyyden sekä sen, mitkä ja kuinka monta kuvion kohtaa mittaat ja millä tavalla. Itsenäisessä työtavassa päätät lisäksi, miten lasket paksuuden mittauksistasi, esimerkiksi kuvaajan akselit perusteluineen, ja millä tavalla arvioit tuloksen epävarmuuden. Ohjatussa työtavassa sivu kiinnittää kaikki nämä valinnat puolestasi. Osittain ohjatussa työtavassa saat tueksi kysymyksiä, laskemiseen tarvittavan mallin ja epävarmuuden arviointitavat. Itsenäisessä työtavassa perustelet kaikki valintasi itse.
+**Päätät itse** (osittain ohjattu ja itsenäinen työtapa): hiuksen ja varjostimen välisen etäisyyden sekä sen, mitkä ja kuinka monta kuvion kohtaa mittaat ja millä tavalla.
+
+**Itsenäinen työtapa.** Päätät lisäksi, miten lasket paksuuden mittauksistasi, esimerkiksi kuvaajan akselit perusteluineen, ja millä tavalla arvioit tuloksen epävarmuuden. Perustelet kaikki valintasi itse.
+
+**Ohjattu työtapa.** Sivu kiinnittää kaikki nämä valinnat puolestasi.
+
+**Osittain ohjattu työtapa.** Saat tueksi kysymyksiä, laskemiseen tarvittavan mallin ja epävarmuuden arviointitavat.
 
 ::: tuki I
 **Itsenäinen työtapa.** Laajennus, menetelmän testaaminen langalla, jonka paksuus tunnetaan, kuuluu työhösi.

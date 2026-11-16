@@ -237,7 +237,7 @@ Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.
 v = f\lambda
 ```
 
-Taajuuden yksikkö on hertsi, $1\ \text{Hz} = 1\ \tfrac{1}{\text{s}}$. Aaltoliikettä käsitellään tarkemmin moduulissa FY5.
+Taajuuden yksikkö on hertsi, $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$. Aaltoliikettä käsitellään tarkemmin moduulissa FY5.
 
 **Mikroaallot.** Mikroaaltouunin mikroaallot ovat sähkömagneettista säteilyä, samaa ilmiötä kuin valo ja radioaallot, mutta niiden aallonpituus on paljon suurempi kuin valon. Kaikki sähkömagneettinen säteily etenee tyhjiössä samalla nopeudella, valonnopeudella $c$, ja ilmassa käytännössä yhtä nopeasti. Siksi mikroaaltojen etenemisnopeus on valonnopeus: $c = f\lambda$. Sähkömagneettista säteilyä käsitellään moduulissa FY7. Mikroaaltojen taajuus on uunin ominaisuus, ja se on merkitty uunin arvokilpeen tai käyttöohjeeseen.
 
@@ -291,7 +291,7 @@ Taajuuden yksikkö on hertsi, $1\ \text{Hz} = 1\ \tfrac{1}{\text{s}}$. Aaltoliik
 
 Ennen mittaamista päätä ja kirjaa ylös, miten saat juustoon selvästi erottuvat sulaneet kohdat, mitä mittaat ja miten luet uunin taajuuden.
 
-**Turvallisuus.** Uunia käytetään vain opettajan luvalla ja valvonnassa, käyttöohjeen mukaisesti. Älä koskaan avaa uunin kuorta tai muuta, ohita tai peitä luukkua tai sen turvalukitusta. Opettaja poistaa pyörivän alustan käytöstä vain uunin käyttöohjeen sallimalla tavalla. Uunia ei koskaan käynnistetä tyhjänä: kuppi vettä on uunissa koko ajan, myös juustolautasen lisäksi. Uuniin ei laiteta metallia, ei edes mittaa. Kuuma juusto, lautanen ja vesi voivat polttaa, ja mikroaaltouunissa kuumennettu vesi voi kiehahtaa äkillisesti: käytä patalappua ja vaihda kuppiin viileää vettä, jos se on lämmennyt. Lopeta kuumennus heti, jos juusto alkaa savuta. Työssä käytettyä juustoa ei syödä.
+**Turvallisuus.** Noudata sivun alun turvallisuusohjeita (Turvallisuus-lista) koko työn ajan. Uunin käyttö ja alustan poisto kuuluvat opettajalle.
 
 **Taajuus.** Lue mikroaaltojen taajuus uunin arvokilvestä ja kirjaa se yksikköineen. Arvokilvessä on yleensä myös sähköverkon taajuus, joka on eri asia kuin mikroaaltojen taajuus. Jos et löydä mikroaaltojen taajuutta, kysy opettajalta: se on uunin käyttöohjeessa. [[apua:fy1-2|Kerrannaisyksiköt]]
 
@@ -530,7 +530,7 @@ missä $f$ on mikroaaltojen taajuus ja $d$ vierekkäisten sulaneiden kohtien vä
 
 ## Epävarmuus ja luotettavuus
 
-Ilmoita valonnopeus muodossa $c = (c \pm \Delta c)\ \text{m/s}$ ja perustele, miten arvioit epävarmuuden $\Delta c$.
+Ilmoita valonnopeus muodossa $c = (c \pm \Delta c)\,\text{m/s}$ ja perustele, miten arvioit epävarmuuden $\Delta c$.
 
 ::: tuki O
 **Epävarmuus vaihe vaiheelta.**
@@ -551,7 +551,7 @@ Pohdi sitten luotettavuutta konkreettisesti: mitkä olivat suurimmat epävarmuud
 
 ## Johtopäätökset
 
-Vastaa tutkimuskysymykseen mittaustesi perusteella. Vertaa tulostasi valonnopeuden tunnettuun arvoon $c = 2{,}998 \cdot 10^8\ \text{m/s}$: onko tunnettu arvo epävarmuusvälisi sisällä? Jos on, tulos on sopusoinnussa tunnetun arvon kanssa, mutta se ei todista mallia oikeaksi. Jos ei ole, mikä systemaattinen virhe tai mallin oletus voisi selittää eron? Vertaa tulosta ennusteisiisi: mikä osui oikeaan ja mikä ei?
+Vastaa tutkimuskysymykseen mittaustesi perusteella. Vertaa tulostasi valonnopeuden tunnettuun arvoon $c = 2{,}998 \cdot 10^8\,\text{m/s}$: onko tunnettu arvo epävarmuusvälisi sisällä? Jos on, tulos on sopusoinnussa tunnetun arvon kanssa, mutta se ei todista mallia oikeaksi. Jos ei ole, mikä systemaattinen virhe tai mallin oletus voisi selittää eron? Vertaa tulosta ennusteisiisi: mikä osui oikeaan ja mikä ei?
 
 ## Raportoi
 
@@ -560,7 +560,7 @@ Kirjoita työstä työselostus FY10:n työselostuspohjalla ja käy läpi sen kai
 - **Tausta ja teoria:** seisova aalto, miksi juusto sulaa kupukohdissa ja miten lauseke valonnopeudelle saadaan.
 - **Koejärjestely ja menetelmä:** kuva järjestelystä, miten kuumensit juuston ja mittasit kohtien välit sekä työturvallisuus (vesikuppi, ei metallia, alusta ei pyöri: poistettu käyttöohjeen mukaan).
 - **Mittaustulokset:** alkuperäiset etäisyydet ja välien määrät omissa sarakkeissaan, uunin taajuus ja sen lähde.
-- **Tulos:** $c = (c \pm \Delta c)\ \text{m/s}$ oikein pyöristettynä.
+- **Tulos:** $c = (c \pm \Delta c)\,\text{m/s}$ oikein pyöristettynä.
 - **Luotettavuus:** kohtien paikantamisen epätarkkuus, taajuuden epävarmuus ja mallin rajat sekä niiden vaikutuksen suunta.
 
 ## Laajennus: kohtien paikat kuvaajana kahdessa suunnassa
