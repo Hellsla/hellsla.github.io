@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8b4a577f5841d27a
-SCOPE: delta reflow from 4f14228b78fa5222 base b5600a63ddae
+CONTENT-HASH: 846c5c9ad97c0f28
 
 ## Blocking
 (none)
@@ -9,8 +8,8 @@ SCOPE: delta reflow from 4f14228b78fa5222 base b5600a63ddae
 (none)
 
 ## Checked
-- Delta: opened reflow-exercises-1.png to -3.png (390 px, solutions open): every re-broken block and the text around it.
-- Rows legible, no clipping, equals signs in one column, units and signs unchanged, sentences around the display formulas read naturally. Not re-judged: figures, simulation, other captures (unchanged).
+- Opened fy2-7-open-exercises-L2-1280-12, -13, -14 (new fy2-7-L2-10: task, data table, answer, solution): table readable, units LaTeX, rows aligned, nothing clipped.
+- Source link clickable (target="_blank" rel="noopener"), read date in words; table caption names source and time. Other changes: two caption words removed, a tolerance.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4
