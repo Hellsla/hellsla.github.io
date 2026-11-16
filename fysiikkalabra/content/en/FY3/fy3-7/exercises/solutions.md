@@ -286,3 +286,30 @@ $$m_\text{w} = \dfrac{0.300 \cdot 45.0}{35.0}\,\text{kg} = 0.386\,\text{kg}$$
 **Substitution:** $c = \dfrac{20\,000\,\text{J}}{0.60\,\text{kg} \cdot 16\,\text{K}} = 2083\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 2.1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Answer:** $2.1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, two significant figures, like the datum $0.60\,\text{kg}$. The heat is read from a grid intersection, so $2020\ldots2150\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$ is accepted.
 **Reasonableness:** The result is about half the value for water, $4190\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, which is the familiar ratio for ice and water. Check: $2083 \cdot 0.60 \cdot 16\,\text{J} \approx 20\,000\,\text{J} = 20\,\text{kJ}$.
+
+## fy3-7-L2-10
+**Given:** from the source (the PhET simulation) the motion and arrangement of the particles in the solid, the liquid and the gas, and how the structure changes on heating; from the task the mass of the ice $m = 0.20\,\text{kg}$, the ice at the melting point $0\,{}^\circ\text{C}$ and the specific latent heat of fusion given in the task, $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
+**Find:** a) a comparison of the motion and arrangement of the particles in the three states; b) why the temperature does not rise during a change of state; c) the energy $Q$ needed for melting, in kilojoules; d) what the simple particle model describes well and what it does not
+**Principle:** In the particle model, temperature describes the mean kinetic energy of the particles’ thermal motion, and the interactions between the particles carry interaction energy. When a pure substance melts at constant pressure, its temperature stays at the melting point, so there is no temperature change and the heat needed is $Q = sm$.
+**Model answer a):** In the solid the particles are close together in a regular arrangement and vibrate in place. In the liquid the particles are still close together, but they move past one another and there is no lasting arrangement. In the gas the particles are far apart, move fast and freely, and fill the whole container. So the order decreases and the motion becomes freer in the order solid, liquid, gas.
+**Model answer b):** During melting and vaporisation, the energy transferred to the substance changes the interactions between the particles and increases the interaction energy between them. In the simulation this shows as the regular structure of the solid breaking up on heating. The mean kinetic energy of the particles does not increase during this time, so the temperature stays at the melting point until all of the substance has melted. The chemical bonds inside the molecules do not break. The word “necessarily” is in place: before and after the change of state the same energy increases the kinetic energy of the particles and the temperature rises, and the temperature stays constant only for a pure substance at constant pressure.
+**Formula:** $Q = sm$, and the asked $Q$ is already solved.
+**Conversions:** None needed: the mass is in kilograms and $s$ in kilojoules per kilogram, so the result comes in kilojoules. For the check, $66.8\,\text{kJ} = 66\,800\,\text{J}$.
+**Substitution:**
+
+$$\begin{aligned}
+Q &= 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0.20\,\text{kg} \\
+&= 66.8\,\text{kJ}
+\end{aligned}$$
+
+**Answer:** c) $67\,\text{kJ}$, two significant figures like the mass $0.20\,\text{kg}$.
+**Model answer d):** The model describes well what differs in kind between the states: the arrangement, motion and spacing of the particles, the fact that a gas fills the whole container, and the fact that heating makes the motion stronger and breaks up the structure. The model leaves out the amounts: it gives no energy in joules and no value for the specific latent heat of fusion, so the value $334\,\tfrac{\text{kJ}}{\text{kg}}$ of part c) is measured from real ice, not read from the simulation. The model has only a small number of particles in a flat picture and a simple attraction between them, whereas a real block of ice has an enormous number of particles in three dimensions. For the same reason the model does not explain the special features of water, such as ice being less dense than water. So the model suits explaining the phenomenon but not predicting numerical values.
+**Reasonableness:** The same energy would raise the temperature of the melted $0.20\,\text{kg}$ of water ($c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$) by
+
+$$\begin{aligned}
+\Delta T &= \dfrac{Q}{cm} \\
+&= \dfrac{66\,800\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.20\,\text{kg}} \\
+&\approx 80\,\text{K}
+\end{aligned}$$
+
+This agrees with the chapter’s statement that melting ice takes as much energy as heating the same water from $0\,{}^\circ\text{C}$ to $80\,{}^\circ\text{C}$. The result is also one sixth of the energy $401\,\text{kJ}$ of the $1.20\,\text{kg}$ of ice in the chapter’s basic exercise, as the ratio of the masses requires.

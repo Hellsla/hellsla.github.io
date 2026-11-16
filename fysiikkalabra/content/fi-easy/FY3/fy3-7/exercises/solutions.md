@@ -286,3 +286,30 @@ $$m_\text{v} = \dfrac{0{,}300 \cdot 45{,}0}{35{,}0}\,\text{kg} = 0{,}386\,\text{
 **Sijoitus:** $c = \dfrac{20\,000\,\text{J}}{0{,}60\,\text{kg} \cdot 16\,\text{K}} = 2083\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 2{,}1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Vastaus:** $2{,}1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kaksi merkitsevää numeroa kuten tiedossa $0{,}60\,\text{kg}$. Lämpömäärä luetaan ruudukon risteyksestä. Siksi hyväksytään $2020\ldots2150\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
 **Järkevyys:** Tulos on noin puolet veden arvosta $4190\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$. Jään ja veden suhde on tällainen. Tase: $2083 \cdot 0{,}60 \cdot 16\,\text{J} \approx 20\,000\,\text{J} = 20\,\text{kJ}$.
+
+## fy3-7-L2-10
+**Annettu:** aineistosta (PhET-simulaatio) hiukkasten liike ja järjestys kiinteässä aineessa, nesteessä ja kaasussa sekä rakenteen muuttuminen lämmitettäessä; tehtävästä jään massa $m = 0{,}20\,\text{kg}$, jää on sulamispisteessä $0\,{}^\circ\text{C}$, ja tehtävässä annettu ominaissulamislämpö on $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
+**Kysytty:** a) hiukkasten liikkeen ja järjestyksen vertailu kolmessa olomuodossa; b) miksi lämpötila ei nouse olomuodon muutoksen aikana; c) sulattamiseen tarvittava energia $Q$ kilojouleina; d) mitä yksinkertainen hiukkasmalli kuvaa hyvin ja mitä ei
+**Periaate:** Hiukkasmallissa lämpötila kuvaa hiukkasten lämpöliikkeen keskimääräistä liike-energiaa. Hiukkasten välisiin vuorovaikutuksiin liittyy vuorovaikutusenergiaa. Kun puhdas aine sulaa vakiopaineessa, sen lämpötila pysyy sulamispisteessä. Lämpötilan muutosta ei siis ole, ja tarvittava lämpömäärä on $Q = sm$.
+**Mallivastaus a):** Kiinteässä aineessa hiukkaset ovat lähellä toisiaan säännöllisessä järjestyksessä. Ne värähtelevät paikoillaan. Nesteessä hiukkaset ovat yhä lähellä toisiaan, mutta ne liikkuvat toistensa ohi. Pysyvää järjestystä ei ole. Kaasussa hiukkaset ovat kaukana toisistaan. Ne liikkuvat nopeasti ja vapaasti ja täyttävät koko säiliön. Järjestys siis vähenee ja liike vapautuu järjestyksessä kiinteä, neste, kaasu.
+**Mallivastaus b):** Sulamisen ja höyrystymisen aikana aineeseen siirtyvä energia muuttaa hiukkasten keskinäisiä vuorovaikutuksia ja kasvattaa niiden välistä vuorovaikutusenergiaa. Simulaatiossa tämä näkyy näin: kun kiinteää ainetta lämmitetään, sen säännöllinen rakenne hajoaa. Hiukkasten keskimääräinen liike-energia ei tänä aikana kasva. Siksi lämpötila pysyy sulamispisteessä, kunnes kaikki aine on sulanut. Molekyylien sisäiset kemialliset sidokset eivät katkea. Sana ”välttämättä” on paikallaan. Ennen olomuodon muutosta ja sen jälkeen sama energia kasvattaa hiukkasten liike-energiaa, ja lämpötila nousee. Lämpötila pysyy vakiona vain, kun aine on puhdasta ja paine on vakio.
+**Kaava:** $Q = sm$, ja kysytty $Q$ on jo ratkaistu.
+**Muunnokset:** Ei tarvita. Massa on kilogrammoina ja $s$ kilojouleina kilogrammaa kohti, joten tulos tulee kilojouleina. Tarkistusta varten $66{,}8\,\text{kJ} = 66\,800\,\text{J}$.
+**Sijoitus:**
+
+$$\begin{aligned}
+Q &= 334\,\tfrac{\text{kJ}}{\text{kg}} \cdot 0{,}20\,\text{kg} \\
+&= 66{,}8\,\text{kJ}
+\end{aligned}$$
+
+**Vastaus:** c) $67\,\text{kJ}$, kaksi merkitsevää numeroa kuten massassa $0{,}20\,\text{kg}$.
+**Mallivastaus d):** Malli kuvaa hyvin sen, mikä olomuodoissa on laadullisesti erilaista (eli millaisia ne ovat, ei kuinka paljon): hiukkasten järjestyksen, liikkeen ja etäisyydet. Se näyttää myös, että kaasu täyttää koko säiliön ja että lämmittäminen voimistaa liikettä ja hajottaa rakenteen. Malli jättää kuvaamatta määrät. Siitä ei saa energiaa jouleina eikä ominaissulamislämmön arvoa. Kohdan c) arvo $334\,\tfrac{\text{kJ}}{\text{kg}}$ on mitattu oikeasta jäästä, sitä ei ole luettu simulaatiosta. Mallissa on vain pieni määrä hiukkasia tasokuvassa ja yksinkertainen vetovoima niiden välillä. Oikeassa jääpalassa hiukkasia on valtavan paljon kolmessa ulottuvuudessa. Siksi malli ei myöskään selitä veden erityispiirteitä, esimerkiksi sitä, että jää on harvempaa kuin vesi. Malli sopii siis ilmiön selittämiseen, mutta ei lukuarvojen ennustamiseen.
+**Järkevyys:** Sama energia lämmittäisi sulaneen $0{,}20\,\text{kg}$:n vesimäärän lämpötilaa ($c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$) määrän
+
+$$\begin{aligned}
+\Delta T &= \dfrac{Q}{cm} \\
+&= \dfrac{66\,800\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}20\,\text{kg}} \\
+&\approx 80\,\text{K}
+\end{aligned}$$
+
+Tämä sopii luvun tietoon: jään sulattaminen vaatii yhtä paljon energiaa kuin saman veden lämmittäminen $0\,{}^\circ\text{C}$:sta $80\,{}^\circ\text{C}$:seen. Tulos on myös kuudesosa luvun perustehtävän $1{,}20\,\text{kg}$:n jäämäärän energiasta $401\,\text{kJ}$. Niin pitääkin olla, koska massa on kuudesosa.
