@@ -283,7 +283,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 **Conversions:** Not needed in the calculation. For comparison $1\,\text{m/s} = 3.6\,\text{km/h}$.
 **Substitution:** $v = \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 15.0\,\text{m}} = \sqrt{294.3}\,\text{m/s} = 17.2\,\text{m/s}$ and $17.2 \cdot 3.6\,\text{km/h} = 61.8\,\text{km/h}$
 **Answer:** $v \approx 17.2\,\text{m/s} \approx 62\,\text{km/h}$, three significant figures like the height $15.0\,\text{m}$. The instructor's claim is thus based on a model in which mechanical energy is conserved.
-**Reasonableness:** The same speed would be reached if the rider fell freely $15\,\text{m}$. It is the greatest possible speed, because in reality part of the energy changes into heat.
+**Reasonableness:** The same speed would be reached if the rider fell freely $15\,\text{m}$. It is the greatest possible speed, because in reality part of the energy changes into internal energy.
 
 ### b)
 **Given:** $m = 62\,\text{kg}$, $h = 15.0\,\text{m}$, the length of the cable from the starting platform to the beginning of the brake $s = 180\,\text{m}$ and the measured speed $v = 11.2\,\text{m/s}$
@@ -293,7 +293,7 @@ The value $0.030$ of part c is therefore about $0.006$ too large, an error of ab
 **Conversions:** Not needed, all quantities are in base units.
 **Substitution:** $E_{\text{p}0} = 62\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 15.0\,\text{m} = 9123\,\text{J}$ and $E_\text{k} = \tfrac{1}{2} \cdot 62\,\text{kg} \cdot (11.2\,\text{m/s})^2 = 3889\,\text{J}$. $F_\text{res} = \dfrac{9123\,\text{J} - 3889\,\text{J}}{180\,\text{m}} = \dfrac{5234\,\text{J}}{180\,\text{m}} = 29.1\,\text{N}$
 **Answer:** $F_\text{res} \approx 29\,\text{N}$, two significant figures like the mass $62\,\text{kg}$.
-**Reasonableness:** The force is about $5\,\%$ of the rider's weight $608\,\text{N}$, which fits the friction of the wheels and air resistance. However, the distance is long, so more than half of the energy changes into heat: $5234\,\text{J} : 9123\,\text{J} \approx 0.57$.
+**Reasonableness:** The force is about $5\,\%$ of the rider's weight $608\,\text{N}$, which fits the friction of the wheels and air resistance. However, the distance is long, so more than half of the energy changes into internal energy: $5234\,\text{J} : 9123\,\text{J} \approx 0.57$.
 
 ### c)
 **Given:** $m = 95\,\text{kg}$, $h = 15.0\,\text{m}$, $s = 180\,\text{m}$ and the work of the resisting force from part b, $F_\text{res}\,s = 5234\,\text{J}$ ($F_\text{res} \approx 29\,\text{N}$)

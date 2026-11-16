@@ -215,7 +215,7 @@ v alas
 **Muunnokset:** Lasketaan newtoneina. Lopuksi tulos muutetaan kilonewtoneiksi: $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $E_{\text{k}0} = \tfrac12\cdot 70{,}0\,\text{kg}\cdot(50{,}0\,\text{m/s})^2 = 87\,500\,\text{J}$ ja $E_\text{k} = \tfrac12\cdot 70{,}0\,\text{kg}\cdot(6{,}0\,\text{m/s})^2 = 1260\,\text{J}$, joten $F_\text{v} = 70{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + \dfrac{87\,500\,\text{J} - 1260\,\text{J}}{60{,}0\,\text{m}} = 686{,}7\,\text{N} + 1437{,}3\,\text{N} = 2124\,\text{N} \approx 2{,}12\,\text{kN}$
 **Vastaus:** $2{,}12\,\text{kN}$ ylöspäin. Vastauksessa on kolme merkitsevää numeroa, kuten lähtöarvoissa (massassa $70{,}0\,\text{kg}$, nopeudessa $50{,}0\,\text{m/s}$ ja matkassa $60{,}0\,\text{m}$).
-**Järkevyys:** Ilmanvastus on noin kolme kertaa paino $687\,\text{N}$. Kokonaisvoima osoittaa siis ylös, ja hyppääjä hidastuu, kuten pitää. Liikeyhtälöstä hidastuvuus on $(2124 - 687)\,\text{N} : 70{,}0\,\text{kg} \approx 20\,\text{m/s}^2$. Silloin $\tfrac12(v_1^2 - v_2^2) : a \approx 1232 : 20{,}5 \approx 60\,\text{m}$, kuten tehtävässä.
+**Järkevyys:** Ilmanvastus on noin kolme kertaa paino $687\,\text{N}$. Kokonaisvoima osoittaa siis ylös, ja hyppääjä hidastuu, kuten pitää. Liikeyhtälöstä hidastuvuus on $(2124 - 687)\,\text{N} : 70{,}0\,\text{kg} \approx 20{,}5\,\text{m/s}^2$. Silloin $\tfrac12(v_1^2 - v_2^2) : a \approx 1232 : 20{,}5 \approx 60\,\text{m}$, kuten tehtävässä.
 
 ## fy4-16-L1-06
 **Kysytty:** miten vaa'an lukema on verrattuna lukemaan, kun ylöspäin liikkuva hissi hidastaa pysähtyäkseen.
