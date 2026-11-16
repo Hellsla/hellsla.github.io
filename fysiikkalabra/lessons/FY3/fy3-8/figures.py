@@ -5,9 +5,14 @@ import herolib as H
 
 
 def particles():
+    """Animated (work queue 8f): every particle vibrates about its equilibrium position, neighbours in opposite phase,
+    the warm row three times as far (amp) at the same frequency. The equilibrium positions are as far apart as the
+    bracket says, d₀ and d: the closest approach is about the same in both rows (70 − 2·6 = 58, 90 − 2·18 = 54), the
+    farthest much larger (82, 126), the asymmetric potential of the text. Paused, under prefers-reduced-motion and in
+    print the still: the particles at their equilibrium positions."""
     f = Fig("fy38-particles", 316, "Sama hiukkasrivi kylmänä ja lämpimänä. Lämpimänä hiukkaset värähtelevät voimakkaammin "
             "ja niiden keskimääräinen etäisyys d on suurempi kuin kylmän rivin etäisyys d₀, mutta hiukkaset ovat yhtä "
-            "suuria. Etäisyyden muutos on piirretty liioiteltuna.")
+            "suuria. Etäisyyden muutos on piirretty liioiteltuna.", anim=True)
     for y0, gap, amp, fill, col, name in ((100, 70, 6, COLD_LIGHT, COLD, r"\text{kylmä}"),
                                           (222, 90, 18, HOT_LIGHT, HOT, r"\text{lämmin}")):
         f.tex(20, y0, name, "start")
@@ -19,7 +24,9 @@ def particles():
         f.tex(bx + gap / 2, by - 24, r"d_0" if gap == 70 else r"d > d_0", "middle")
         for i in range(4):
             cx = bx + gap * i
+            f.vibrate(amp, 0.5 * (i % 2))
             f.circle(cx, y0, 16, fill, INK, 2)
+            f.end()
             f.arrow(cx, y0 + 32, cx - amp - 8, y0 + 32, col, 2, 11)
             f.arrow(cx, y0 + 32, cx + amp + 8, y0 + 32, col, 2, 11)
     f.tex(588, 296, r"\text{hiukkaset yhtä suuria, välit liioiteltu}", "end", MUTED)

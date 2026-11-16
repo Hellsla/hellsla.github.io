@@ -78,9 +78,12 @@ def visible_len(tex):
 
 
 class Fig:
-    def __init__(self, fid, height, label, width=600, size=24, hero=False):
-        """hero: the chapter's opening illustration, 1200 wide, full column width under the Miksi question (site.css .fig-hero)."""
+    def __init__(self, fid, height, label, width=600, size=24, hero=False, anim=False):
+        """hero: the chapter's opening illustration, 1200 wide, full column width under the Miksi question (site.css .fig-hero).
+        anim: an animated figure (work queue 8f, pilot fy3-8): the drawing is the still, and the groups that vibrate()
+        opens move only by the CSS of site.css "Animated figures", which runs while lesson.js part 7b plays it."""
         self.fid, self.w, self.h, self.label, self.size, self.hero = fid, width, height, translate(label, tex=False), size, hero
+        self.anim = anim
         self.defs, self.body = [], []
 
     # drawing
@@ -123,6 +126,14 @@ class Fig:
                (x2, y2), (bx - px * head / 2, by - py * head / 2), (bx - px * shaft / 2, by - py * shaft / 2), (x1 - px * shaft / 2, y1 - py * shaft / 2)]
         return self.path("M" + " L".join(f"{n(a)},{n(b)}" for a, b in pts) + " Z", fill=fill)
 
+    def vibrate(self, amp, phase=0.0, period=2.0):
+        """Open a group that vibrates horizontally about where it is drawn, ±amp figure units, one cycle in `period`
+        seconds, `phase` a fraction of the cycle (0.5: the opposite way); close it with end(). Still unless played."""
+        assert self.anim, "vibrate() needs Fig(..., anim=True)"
+        return self.add(f'<g class="fa-vib" style="--fa-a:{amp:g}px;--fa-t:{period:g}s;--fa-d:{-phase * period:g}s">')
+
+    def end(self): return self.add("</g>")
+
     def tex(self, x, y, tex, anchor="start", color=INK, size=None, w=None, bg=False):
         """A LaTeX label centred vertically on y; x is its left edge, centre or right edge (anchor). bg puts the
         figure's white under the label, for a label that sits on gridlines."""
@@ -136,7 +147,8 @@ class Fig:
         return self.add(f'<foreignObject x="{n(x0)}" y="{n(y - h / 2)}" width="{n(w)}" height="{h}" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="{style}">{f'<span style="background:{WHITE};padding:0 5px;border-radius:3px">${tex}$</span>' if bg else f'${tex}$'}</div></foreignObject>')
 
     def svg(self, name=None):
-        attrs = (f' data-fig="{name}"' if name else "") + (' class="fig-hero"' if self.hero else "")
+        cls = " ".join(c for c, on in (("fig-hero", self.hero), ("fig-anim", self.anim)) if on)
+        attrs = (f' data-fig="{name}"' if name else "") + (f' class="{cls}"' if cls else "")
         defs = f"\n  <defs>{''.join(self.defs)}</defs>" if self.defs else ""
         body = "\n  ".join(self.body)
         return (f'<svg viewBox="0 0 {self.w} {self.h}" role="img" aria-label="{html.escape(self.label, quote=True)}"{attrs} '

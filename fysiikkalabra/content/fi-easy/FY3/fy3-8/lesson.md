@@ -102,28 +102,36 @@ Mikromalli (hiukkasmalli) selittää lämpölaajenemisen. Kiinteässä aineessa 
 
 Hiukkasten on helpompi loitota toisistaan kuin puristua lähemmäs toisiaan. Lähekkäin puristuvat hiukkaset hylkivät toisiaan voimakkaasti. Loittonevien hiukkasten välinen veto taas heikkenee vähitellen. Siksi hiukkanen heilahtaa kauemmas naapuristaan kuin lähemmäs sitä. Voimakkaammin värähtelevien hiukkasten **keskimääräinen etäisyys kasvaa**. Kun kaikki hiukkasvälit kasvavat, koko kappale laajenee.
 
-<svg data-fig="particles" viewBox="0 0 600 316" role="img" aria-label="Sama hiukkasrivi kylmänä ja lämpimänä. Lämpimänä hiukkaset värähtelevät voimakkaammin. Niiden keskimääräinen etäisyys d on suurempi kuin kylmän rivin etäisyys d₀. Hiukkaset ovat silti yhtä suuria. Etäisyyden muutos on piirretty liioiteltuna." style="max-width:100%;font-size:24px">
+<svg data-fig="particles" viewBox="0 0 600 316" role="img" aria-label="Sama hiukkasrivi kylmänä ja lämpimänä. Lämpimänä hiukkaset värähtelevät voimakkaammin. Niiden keskimääräinen etäisyys d on suurempi kuin kylmän rivin etäisyys d₀. Hiukkaset ovat silti yhtä suuria. Etäisyyden muutos on piirretty liioiteltuna." class="fig-anim" style="max-width:100%;font-size:24px">
   <foreignObject x="20" y="85.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$\text{kylmä}$</div></foreignObject>
   <line x1="180" y1="72" x2="250" y2="72" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="180" y1="64" x2="180" y2="80" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="250" y1="64" x2="250" y2="80" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="198.5" y="33.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$d_0$</div></foreignObject>
+  <g class="fa-vib" style="--fa-a:6px;--fa-t:2s;--fa-d:-0s">
   <circle cx="180" cy="100" r="16" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
+  </g>
   <line x1="180" y1="132" x2="176" y2="132" stroke="#1971c2" stroke-width="2" stroke-linecap="butt"/>
   <path d="M166,132 L177,127 L177,137 Z" fill="#1971c2" stroke-linejoin="round"/>
   <line x1="180" y1="132" x2="184" y2="132" stroke="#1971c2" stroke-width="2" stroke-linecap="butt"/>
   <path d="M194,132 L183,137 L183,127 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <g class="fa-vib" style="--fa-a:6px;--fa-t:2s;--fa-d:-1s">
   <circle cx="250" cy="100" r="16" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
+  </g>
   <line x1="250" y1="132" x2="246" y2="132" stroke="#1971c2" stroke-width="2" stroke-linecap="butt"/>
   <path d="M236,132 L247,127 L247,137 Z" fill="#1971c2" stroke-linejoin="round"/>
   <line x1="250" y1="132" x2="254" y2="132" stroke="#1971c2" stroke-width="2" stroke-linecap="butt"/>
   <path d="M264,132 L253,137 L253,127 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <g class="fa-vib" style="--fa-a:6px;--fa-t:2s;--fa-d:-0s">
   <circle cx="320" cy="100" r="16" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
+  </g>
   <line x1="320" y1="132" x2="316" y2="132" stroke="#1971c2" stroke-width="2" stroke-linecap="butt"/>
   <path d="M306,132 L317,127 L317,137 Z" fill="#1971c2" stroke-linejoin="round"/>
   <line x1="320" y1="132" x2="324" y2="132" stroke="#1971c2" stroke-width="2" stroke-linecap="butt"/>
   <path d="M334,132 L323,137 L323,127 Z" fill="#1971c2" stroke-linejoin="round"/>
+  <g class="fa-vib" style="--fa-a:6px;--fa-t:2s;--fa-d:-1s">
   <circle cx="390" cy="100" r="16" fill="#d0e6fb" stroke="#1f2933" stroke-width="2"/>
+  </g>
   <line x1="390" y1="132" x2="386" y2="132" stroke="#1971c2" stroke-width="2" stroke-linecap="butt"/>
   <path d="M376,132 L387,127 L387,137 Z" fill="#1971c2" stroke-linejoin="round"/>
   <line x1="390" y1="132" x2="394" y2="132" stroke="#1971c2" stroke-width="2" stroke-linecap="butt"/>
@@ -133,22 +141,30 @@ Hiukkasten on helpompi loitota toisistaan kuin puristua lähemmäs toisiaan. Lä
   <line x1="180" y1="186" x2="180" y2="202" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <line x1="270" y1="186" x2="270" y2="202" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <foreignObject x="196" y="155.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$d > d_0$</div></foreignObject>
+  <g class="fa-vib" style="--fa-a:18px;--fa-t:2s;--fa-d:-0s">
   <circle cx="180" cy="222" r="16" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
+  </g>
   <line x1="180" y1="254" x2="164" y2="254" stroke="#c92a2a" stroke-width="2" stroke-linecap="butt"/>
   <path d="M154,254 L165,249 L165,259 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <line x1="180" y1="254" x2="196" y2="254" stroke="#c92a2a" stroke-width="2" stroke-linecap="butt"/>
   <path d="M206,254 L195,259 L195,249 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <g class="fa-vib" style="--fa-a:18px;--fa-t:2s;--fa-d:-1s">
   <circle cx="270" cy="222" r="16" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
+  </g>
   <line x1="270" y1="254" x2="254" y2="254" stroke="#c92a2a" stroke-width="2" stroke-linecap="butt"/>
   <path d="M244,254 L255,249 L255,259 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <line x1="270" y1="254" x2="286" y2="254" stroke="#c92a2a" stroke-width="2" stroke-linecap="butt"/>
   <path d="M296,254 L285,259 L285,249 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <g class="fa-vib" style="--fa-a:18px;--fa-t:2s;--fa-d:-0s">
   <circle cx="360" cy="222" r="16" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
+  </g>
   <line x1="360" y1="254" x2="344" y2="254" stroke="#c92a2a" stroke-width="2" stroke-linecap="butt"/>
   <path d="M334,254 L345,249 L345,259 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <line x1="360" y1="254" x2="376" y2="254" stroke="#c92a2a" stroke-width="2" stroke-linecap="butt"/>
   <path d="M386,254 L375,259 L375,249 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <g class="fa-vib" style="--fa-a:18px;--fa-t:2s;--fa-d:-1s">
   <circle cx="450" cy="222" r="16" fill="#f2a69c" stroke="#1f2933" stroke-width="2"/>
+  </g>
   <line x1="450" y1="254" x2="434" y2="254" stroke="#c92a2a" stroke-width="2" stroke-linecap="butt"/>
   <path d="M424,254 L435,249 L435,259 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <line x1="450" y1="254" x2="466" y2="254" stroke="#c92a2a" stroke-width="2" stroke-linecap="butt"/>
