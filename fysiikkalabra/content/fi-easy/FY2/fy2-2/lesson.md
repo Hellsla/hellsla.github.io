@@ -504,7 +504,9 @@ Pyöräilijä syö banaanin. Banaanin kemiallinen energia on $0{,}45\,\text{MJ}$
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kemiallinen energia alussa on $E_\text{alussa} = 0{,}45\,\text{MJ}$. Liikkeeksi muuttunut energia on $E_\text{liike} = 110\,\text{kJ}$. Kysytään lämpöenergiaa $E_\text{lämpö}$ kilojouleina.
+**Tunnetut ja kysytty.** Kemiallinen energia alussa on $E_\text{alussa} = 0{,}45\,\text{MJ}$. Liikkeeksi muuttunut energia on $E_\text{liike} = 110\,\text{kJ}$.
+
+Kysytään lämpöenergiaa $E_\text{lämpö}$ kilojouleina.
 
 <!-- vaihe -->
 

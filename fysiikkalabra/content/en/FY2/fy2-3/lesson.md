@@ -214,7 +214,13 @@ The power of a television is $80\,\text{W}$, and it is on for $4.0\,\text{h}$ a 
 
 <!-- vaihe -->
 
-**Given and find.** Power $P = 80\,\text{W}$, usage time $4.0\,\text{h}$ a day for $30\,\text{days}$ and price $20\,\text{c/kWh}$. We want the cost of electricity for the month.
+**Given and find.**
+
+- Power $P = 80\,\text{W}$,
+- usage time $4.0\,\text{h}$ a day for $30\,\text{days}$ and
+- price $20\,\text{c/kWh}$.
+
+We want the cost of electricity for the month.
 
 <!-- vaihe -->
 
@@ -252,7 +258,9 @@ E &= P\,t \\
 
 <!-- vaihe -->
 
-**Result.** Watching television costs about $1.9\,\text{€}$ a month. The result is given with two significant figures because the power and the daily usage time are given with two figures.
+**Result.** Watching television costs about $1.9\,\text{€}$ a month.
+
+The result is given with two significant figures because the power and the daily usage time are given with two figures.
 
 <!-- vaihe -->
 
