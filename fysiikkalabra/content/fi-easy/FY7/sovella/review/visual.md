@@ -1,24 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 7627be825e67e9d3
-
-No fi-easy captures exist; judged from the Finnish captures (current for the shared figures and layout) and the fi-easy source text.
+CONTENT-HASH: f219d2ebec5f6010
 
 ## Blocking
 (none)
 
+## Outside this change (docs/clipped-formulas.tsv, work queue 5d)
+- [Major, outside this change] solutions.md s3 d, "Alumiinin määrä" / aluminium mass: `2700 kg/m^3 · 5,0·10^4 m · 150 · 10^-` still runs past the 390 px edge (cut at `10^{-`); also the tsv rows for the s3 d Järkevyys `6,0 MW − 0,85 MW` line and the s5 `0,780 : 1300 nm` row. Not touched by the reflow; fix in 5d.
+
 ## Polish
-- [Major, outside this change, work queue 5d, own PR] solutions (Sijoitus/Vastaus rows at 390 px) — 7 clipped formulas listed in docs/clipped-formulas.tsv for fi-easy/FY7-sovella (e.g. `6{,}0\,\text{MW} - 0{,}85\,\text{MW} \approx 5{,}2\,\text{MW}` cut at "MW", `0{,}012\,\text{N/m} \cdot (8000 : 300)^2 \approx 8{,}5\,\text{N/m}` cut at "N", the 2700 kg/m³ mass row, the B_s and v rows in s1) — shared reflow fix, not a content edit.
-- [Minor] fy7-s1-implanter (fig 1) — labels (piikiekko, U, d, r, \overline{B}) are about 12 px at 390 px; legible but small — optionally enlarge the labels.
-- [Minor] s5 graph aria-label (solutions.md:338) — "(1300 nm; 0,780)" and "6,00 kertaa 10 potenssiin miinus 4" are plain text; allowed in an aria-label, so only a note.
-- [Minor] s1 d) Vastaus — "Kentässä on kolme merkitsevää numeroa" is slightly stiff for Selkeä suomi; "Magneettikentän arvossa on kolme merkitsevää numeroa" is clearer.
-- for science: none.
+- [Minor] s5 d Mallivastaus — the two re-broken rows start with a bare expression (`1667 nm · sin 20,6° ≈ 586,5 nm`); begin the row with the quantity, e.g. `\lambda_{20{,}6^\circ} = `, as the "every chain shows what it computes" rule asks.
+- [Minor] s3 a Järkevyys — `6,0 MW − 0,85 MW` and `≈ 5,2 MW` are two inline formulas on two lines; one chain would read better once 5d reaches it.
+- [Minor] s1 d Annettu — a list of four values runs on as comma-separated rows; acceptable, but a short list would scan faster.
 
 ## Checked
-- contact-1 to contact-4 (the whole page flow, tasks, opened solutions at 390 px)
-- top-390, top-1280, page-1280-3 (force figure and solution b at laptop width)
-- stage-fy7-s1/s2/s4/s5-390-1 (task texts, the s2 voltage graph, the s4 spectrum graph, the s5 data table)
-- fig-1, fig-3, fig-22 (fibre), fig-25 (sin θ against kλ graph); the other fig-N captures are icons or inline fragments, not figures
-- fi-easy source of tasks.json and solutions.md read in full for language and notation
+- Selkeä suomi captures do not exist; judged from the fi-easy solutions.md source (same row structure and $$ count as fi, decimal comma, units in LaTeX) against the Finnish captures s1 #5, #6, s3 #3, #4, #8, s5 #6.
+- Re-broken formulas judged: s1 b, c, d (Kaava, Muunnokset, Sijoitus rows), s2 a, b, e, s3 a (aligned R row, separate I and P_h chains, Osuus), s3 b, c, e (B, F/l, G/l aligned rows), s4 c, s5 d (two rows). Numbers, signs and units match the earlier chains; = signs sit in one column, nothing else clipped; decimal marks, \cdot and colon division correct.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
