@@ -77,7 +77,7 @@ FY9 tehty (PR #611): 1001 riviä pois listalta; 84 jää (16 liian leveää yksi
 
 FY1 tehty (PR #619): 199 riviä pois listalta; 3 jää (fy1-3:n keskiarvon `\dfrac`, jonka osoittajan summa on yksinään ruutua leveämpi).
 
-FY3 tehty (PR #628): 879 riviä pois listalta; 20 jää (fy3-10:n vihjeen liian leveä `\dfrac`, fy3-4:n sulkeissa oleva kaava, fy3-5:n ja fy3-12:n lainattu opiskelijan lasku sekä fy3-5:n kolme inquiry-kaavaa, joiden rivitys olisi vaatinut täyden tiedekatselmoinnin).
+FY3 tehty (PR #628): 876 riviä pois listalta; 23 jää (fy3-10:n vihjeen liian leveä `\dfrac`, fy3-4:n sulkeissa oleva kaava, fy3-5:n ja fy3-12:n lainattu opiskelijan lasku, fy3-5:n kolme inquiry-kaavaa, joiden rivitys olisi vaatinut täyden tiedekatselmoinnin, sekä fy3-15:n kertausvalinnan palautteen kaava: `test_inquiry.py` vertaa palautteen alkua lähteeseen eikä tunnista näyttökaavaan siirtyvää välimerkkiä).
 
 Kohdan 5b tarkistus löysi mainista noin 4 800 kaavaa, jotka leikkautuvat puhelimella (`docs/clipped-formulas.tsv`).
 Esimerkki: fy2-3, Esimerkki 2, jossa tekstin sisällä oleva $E = 1500 \cdot 3{,}0\,\text{kWh} = 4500\,\text{kWh}$
