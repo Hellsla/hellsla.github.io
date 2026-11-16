@@ -478,6 +478,7 @@ kurssin rivit. FY9:n lepokitkan nimitykset ("suurin lepokitka") yhtenäistetää
 Kitkan ja energian konseptikatselmoinnin löydökset (8m:ää vanhempia): `docs/audits/2026-11-15-kitka-konseptikatselmointi.md`.
 FY9 tehty: claude/fy9-oikoluku-aineisto (PR #626); samassa PR:ssä kohdan 19 aineistotehtävät FY9-A1…A5 (fy9-ympyraliike-s7, fy9-magnetismi-valo-s7, fy9-moderni-s7, fy9-energia-s7, fy9-kaasut-s7).
 FY4 tehty: claude/fy4-oikoluku-aineisto (PR #625); samassa PR:ssä kohdan 19 aineistotehtävät FY4-A1…A5. Lähteestä tarkistamatta: fy4-5 les:316 (YTL) ja fy4-11 les:290 (OTI).
+FY2 tehty: claude/fy2-oikoluku-aineisto (PR #632); samassa PR:ssä kohdan 19 aineistotehtävät FY2-A1…A5. Kaikki kurssit tehty; jäljellä vain `docs/physics-phrases-known.tsv`:n rivit (FY5, FY6, FY9).
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9 (opettaja 2026-11-16)
 
@@ -493,6 +494,7 @@ FY5 tehty: FY5-A1…A5 (PR #624, kohdan 18 FY5:n kanssa): fy5-6-L2-09, fy5-12-L2
 FY9 tehty: FY9-A1…A5 (PR #626, kohdan 18 FY9:n kanssa).
 FY6 tehty: FY6-A1…A5 (PR #627, kohdan 5d FY6:n kanssa): fy6-3-L2-08, fy6-7-L2-09, fy6-15-L2-09, fy6-9-L2-09, fy6-13-L2-09. Opettaja avaa Tukesin kaksi linkkiä (A3, A4) selaimessa ennen yhdistämistä: sivusto ei vastaa automaattisiin hakuihin.
 FY4 tehty: FY4-A1…A5 (PR #625, kohdan 18 FY4:n kanssa): fy4-11-L2-10, fy4-7-L2-10, fy4-9-L2-09, fy4-10-L2-10, fy4-8-L2-10.
+FY2 tehty: FY2-A1…A5 (PR #632, kohdan 18 FY2:n kanssa): fy2-8-L2-10 (A1), fy2-7-L2-10 (A2), fy2-8-L3-06 (A3), fy2-3-L2-09 (A4), fy2-8-L2-11 (A5). Electricity Maps korvattu OWID:lla ja Fingridillä (`docs/audits/2026-11-16-fy2-aineistot.md`).
 FY3 tehty: FY3-A1…A5 (PR #628, kohdan 5d FY3:n kanssa): fy3-9-L2-10, fy3-8-L2-10, fy3-11-L2-10, fy3-6-L2-10, fy3-7-L2-10.
 FY1 tehty: FY1-A1…A5 (PR #634, oma PR): fy1-7-L2-09, fy1-4-L2-09, fy1-3-L2-09, fy1-2-L2-08, fy1-7-L2-10. A2:n Ilmatieteen laitoksen avoin rajapinta (opendata.fmi.fi) ei ole ympäristön sallituissa: tehtävä ohjaa hakemaan oman aineiston, ja varalla on merkitty keksitty esimerkkitaulukko.
 

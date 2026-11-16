@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 25f374d3f5a1a919
-SCOPE: delta reflow from d142b1dc9f41c8e8 base b5600a63ddae
+CONTENT-HASH: d678f4eb5ef3254a
+
 
 ## Blocking
 - none
@@ -9,7 +9,7 @@ SCOPE: delta reflow from d142b1dc9f41c8e8 base b5600a63ddae
 - none
 
 ## Checked
-- Delta (calculation chains re-broken into aligned rows): opened reflow-exercises-1.png, reflow-exercises-2.png, reflow-exercises-3.png at readable size, every re-broken block at 390 px: rows legible, nothing clipped, relation signs aligned, sentence around each block still reads. Contact sheets and other captures not opened; 360 px from the packet's layout check only.
+Delta: diff read in source (each unit keeps number, sign and unit; every number is LaTeX with \,\text{MW}); the formula is now short enough to wrap at 360 px as the CI finding required (check_layout 360 px was run by the developer; I did not re-measure). Opened content/fi/FY2/fy2-7/review/shots/fy2-7-open-exercises-L2-1280-14.png and fy2-8-open-exercises-L2-1280-16.png (1280 px) to see the layout survived: solutions render, KaTeX fine, no clipping. Hash re-run at the end: d678f4eb5ef3254a (now d678f4eb5ef3254a).
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4

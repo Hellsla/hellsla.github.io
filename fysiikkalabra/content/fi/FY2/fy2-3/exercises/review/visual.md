@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 75aa6a48bc6fe02f
-SCOPE: delta reflow from 6a4b518eb95a91d8 base b5600a63ddae
+CONTENT-HASH: 633302ba5d59bc16
+SCOPE: delta added-exercise from 75aa6a48bc6fe02f base 07af77a4596f
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] reflow-exercises-1, fy2-3: short displays leave a little extra space under the block; fine, optional tightening.
+- [Minor] fy2-3-L2-09 Vastaus — a), c) and d) answers sit as run-on paragraphs under 'Lisäksi:'; fine but long (c is about 120 words); optional split.
 
 ## Checked
-- Delta: opened reflow-exercises-1.png and reflow-exercises-2.png (390 px, solutions open), every re-broken block and its surrounding sentence.
-- Rows legible, nothing clipped, equals signs in one column, units upright with thin spaces, no red KaTeX source; the round-1 stray punctuation is gone (the student's quoted calculation is inline again, as on main). Figures, simulation and other captures not re-judged (unchanged); 360 px from the packet's check only.
+Delta (added fy2-3-L2-09): opened fy2-3-open-exercises-L2-1280-10.png (task end, link, answer, Annettu–Sijoitus). Link has target=_blank rel=noopener and the read date in words; formulas, units, decimal commas correct; displays aligned. Other captures unchanged, not re-judged.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

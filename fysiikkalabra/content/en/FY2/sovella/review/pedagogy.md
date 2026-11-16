@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3f36e52638fd2f55
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 2
+CONTENT-HASH: 66d2635ac1dd2950
+Mode: delta
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- git diff HEAD~1 (commit 29f864da6) of the unit's files (en), judged in context; round-1 findings for this unit.
-- tasks.json fy2-s1: paragraph break inserted before the biomass-factor note; content unchanged, easier to read.
+- Delta review of the en line of the one-sentence correction in solutions.md ("Other arguments"): the biomass plant needs "about a sixth of what it would need at the table's typical capacity factor, 0.70".
+- Consistent with the solution: the plant's factor is about 0.11 (line 66), and 0.11 / 0.70 = 0.16, about a sixth. The earlier phrase "full capacity factor" was wrong (full would be 1); the new one names the value the student can find in the table.
+- Nothing else in the en text changed.

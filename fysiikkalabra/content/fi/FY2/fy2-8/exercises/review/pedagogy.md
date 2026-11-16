@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 8b6a553933284aed
-
-Round: 2
+CONTENT-HASH: cef163f17e81a48e
+SCOPE: delta added-exercise from 3fd6b99e7d223fc3 base 07af77a4596f
 
 ## Blocking
+- none
 
 ## Polish
-- solutions.md fy2-8-L1-09 — still no note that 55 g/MJ is a rounded typical value, not a statistic; one clause would do.
+- Earlier Polish remains recorded; the change adds none.
 
 ## Checked
-- "noin 2,6 kertaa suuremman massan" is correct Finnish and clearer than "2,6-kertaisen"; no numbers changed.
-- L1-09 gives the emission factor without a source, as the teacher decided; the 5,2 kg answer agrees with the solution.
-- Hash identical at start and end (8b6a553933284aed).
+- Delta: one solution (L2-11 c) now writes the three export values as separate inline formulas; numbers unchanged (+2142, +1124, -152 MW).
+- Pure layout edit for 360 px; the pedagogy of the tasks is unchanged from the earlier PASS.

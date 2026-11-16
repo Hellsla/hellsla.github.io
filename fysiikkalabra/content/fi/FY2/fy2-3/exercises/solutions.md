@@ -266,3 +266,30 @@ $$. Kun aika puolittuu ja energia pysyy samana, teho kasvaa kaksinkertaiseksi. T
 **Sijoitus:** $P_\text{A} = \dfrac{60\,000\,\text{J}}{40\,\text{s}} = 1500\,\text{W}$ ja $P_\text{B} = \dfrac{40\,000\,\text{J}}{80\,\text{s}} = 500\,\text{W}$, joten $\dfrac{P_\text{A}}{P_\text{B}} = \dfrac{1500\,\text{W}}{500\,\text{W}} = 3{,}0$
 **Vastaus:** Laitteen A teho on $3{,}0$ kertaa laitteen B teho.
 **Järkevyys:** Suhde on suurempi kuin yksi, koska A nousee jyrkemmin. Hetkellä $80\,\text{s}$ A on muuntanut $120\,\text{kJ}$ ja B $40\,\text{kJ}$, ja $120 : 40 = 3$, sama suhde.
+## fy2-3-L2-09
+**Annettu:** teho $P = 2{,}0\,\text{kW}$ ja aika $\Delta t = 4\,\text{h}$ (aika on tehtävän asettama ja tarkka), markkinahinta $h = -5{,}0\,\text{snt/kWh}$ ja vertailuhinta $+15\,\text{snt/kWh}$. Artikkelista (Yle, 16. elokuuta 2023, luettu 16. marraskuuta 2026): hinta voi painua miinukselle, jos tuotantoa on kulutusta enemmän; välityspalkkio on esimerkiksi Vaasan sähköllä $0{,}41\,\text{snt/kWh}$ ja Vaasan sähkö käsittelee negatiivisen tuntihinnan nollana.
+**Kysytty:** a) milloin hinta voi olla negatiivinen; b) energia $E$ ja kustannus $C$ yksikössä $\text{snt}$; c) vertailu hintaan $+15\,\text{snt/kWh}$ ja miksi negatiivinen hinta ei ole ilmaista sähköä; d) varastoinnin ja kulutuksen ajoittamisen vaikutus
+**Periaate:** Laite käyttää tasaisella teholla energiaa $E = P\,\Delta t$, ja kustannus on energia kertaa hinta energiayksikköä kohti, $C = h E$. Hinta on annettu kilowattituntia kohti, joten energia lasketaan kilowattitunteina.
+**Kaava:** $E = P\,\Delta t$ ja $C = h E$, joten $C = h\,P\,\Delta t$.
+**Muunnokset:** Yksikköä ei tarvitse muuttaa: $\text{kW} \cdot \text{h} = \text{kWh}$ ja hinta on yksikössä $\text{snt/kWh}$. Euroina $100\,\text{snt} = 1\,€$.
+**Sijoitus:** b)
+
+$$\begin{aligned} E &= 2{,}0\,\text{kW} \cdot 4\,\text{h} \\ &= 8{,}0\,\text{kWh} \end{aligned}$$
+
+$$\begin{aligned} C &= -5{,}0\,\text{snt/kWh} \cdot 8{,}0\,\text{kWh} \\ &= -40\,\text{snt} \end{aligned}$$
+
+c) Hinnalla $+15\,\text{snt/kWh}$:
+
+$$\begin{aligned} C &= 15\,\text{snt/kWh} \cdot 8{,}0\,\text{kWh} \\ &= 120\,\text{snt} \end{aligned}$$
+
+Vaasan sähkön tapauksessa energiaosa on nolla, ja välityspalkkio on:
+
+$$\begin{aligned} C_\text{väl} &= 0{,}41\,\text{snt/kWh} \cdot 8{,}0\,\text{kWh} \\ &= 3{,}28\,\text{snt} \end{aligned}$$
+**Vastaus:** b) $E = 8{,}0\,\text{kWh}$ ja $C = -40\,\text{snt} = -0{,}40\,€$, kaksi merkitsevää numeroa kuten tehossa $2{,}0\,\text{kW}$ ja hinnassa $-5{,}0\,\text{snt/kWh}$; neljä tuntia on tarkka. Miinus tarkoittaa, että laskulle tulee hyvitys.
+
+Lisäksi: a) Artikkelin mukaan pörssisähkön hinta voi painua miinukselle, kun sähköä tuotetaan enemmän kuin sitä kulutetaan, esimerkiksi kun sähköä on paljon tarjolla ja kulutus on pientä. Silloin sähköä tuottava joutuu maksamaan siitä, että sähkö otetaan verkosta.
+
+c) Kustannus $-40\,\text{snt}$ on hyvitys, kun taas hinnalla $+15\,\text{snt/kWh}$ maksettaisiin $120\,\text{snt} = 1{,}20\,€$; ero on $160\,\text{snt}$. Negatiivinen markkinahinta ei silti tee sähköstä ilmaista. Kuluttaja ostaa sähköä myyjältä, ja myyjä perii välityspalkkion: artikkelin mukaan esimerkiksi Vaasan sähkö $0{,}41\,\text{snt/kWh}$, Oomi $0{,}25\,\text{snt/kWh}$ ja Vattenfall $0{,}50\,\text{snt/kWh}$. Osa myyjistä hyvittää negatiivisen tunnin, mutta Vaasan sähkö laskee sen nollaksi, jolloin kuluttaja maksaa $8{,}0\,\text{kWh}$:sta noin $3{,}3\,\text{snt}$ eikä saa hyvitystä. Lisäksi markkinahinta on vain osa laskusta: Fingridin sivun aluehinta on ilman veroja ja sähkön siirtokustannuksia, ja kuluttaja maksaa niistäkin. Artikkeli on vuodelta 2023, joten nykyiset sopimukset voivat poiketa; tässä käytetään sitä hinnanmuodostuksen periaatteena.
+
+d) Varastointi siirtää energiaa ajassa: varasto ladataan, kun sähköä on yli tarpeen ja hinta on matala tai negatiivinen, ja puretaan, kun sähköä tarvitaan. Myös kulutuksen ajoittaminen (esimerkiksi sähköauton lataus tai lämminvesivaraaja halvan tunnin aikaan) lisää kulutusta silloin, kun tuotantoa on liikaa, ja vähentää sitä pulan aikana. Molemmat tasaavat tuotannon ja kulutuksen eroa. Rajoja on: varastoon ladattu energia ei tule kokonaan takaisin, koska osa muuttuu varastossa ja siirrossa sisäenergiaksi, joka siirtyy lämpönä ympäristöön; varastot ovat kapasiteetiltaan rajallisia, ja ajoittamisesta hyötyy vain, jos sopimus seuraa tuntihintaa.
+**Järkevyys:** Arvio pyöreillä luvuilla: $2\,\text{kW} \cdot 4\,\text{h} = 8\,\text{kWh}$ ja $8 \cdot (-5) = -40$. Merkki on oikein, koska hinta on negatiivinen ja energia positiivinen. Hinta $-5{,}0\,\text{snt/kWh}$ on pieni verrattuna lukuun $+15\,\text{snt/kWh}$, joten hyvitys $40\,\text{snt}$ on vain kolmannes tavallisen hinnan kustannuksesta $120\,\text{snt}$. Yksikkö on oikea: $\text{kWh} \cdot \text{snt/kWh} = \text{snt}$. Malli olettaa tasaisen tehon koko neljän tunnin ajan ja saman markkinahinnan jokaisella tunnilla, mutta todellinen tuntihinta vaihtelee.

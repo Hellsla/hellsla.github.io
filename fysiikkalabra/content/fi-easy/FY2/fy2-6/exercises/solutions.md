@@ -270,7 +270,7 @@ $$ ja tuulipuisto $$
 &0{,}33 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \\
 &\approx 1{,}7\,\text{TWh}
 \end{aligned}
-$$, ja $4{,}7 : 1{,}7 \approx 2{,}7$. Sama nimellisteho ei siis tarkoita samaa vuosienergiaa.
+$$, ja $4{,}7 : 1{,}7 \approx 2{,}8$. Sama nimellisteho ei siis tarkoita samaa vuosienergiaa.
 
 ## fy2-6-L3-03
 **Annettu:** Olkiluoto 3:n nimellisteho $P_\text{O} = 1600\,\text{MW}$ ja keskiteho $90\,\%$ siitä, aurinkopuiston keskiteho $11\,\%$ nimellistehosta, molemmille sama aika $t$ (vuosi)

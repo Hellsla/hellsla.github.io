@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: eb49af87d3a81c59
-SCOPE: delta added-exercise from ab3a7a9c0b52be41 base 611fb7d5c174
-Mode: delta
-Round: 2
+CONTENT-HASH: 09e49c1d1adb4b79
+SCOPE: delta added-exercise from 6448ead13918f143 base 6ecef1197865
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- Earlier Polish remains recorded; the change adds none.
 
 ## Checked
-- L1-09 reasonableness: 'about 2.6 times as large as its mass' is correct English; numbers unchanged (5.17 kg).
+- Delta: one solution (L2-11 c) now writes the three export values as separate inline formulas; numbers unchanged (+2142, +1124, -152 MW).
+- Pure layout edit for 360 px; the pedagogy of the tasks is unchanged from the earlier PASS.

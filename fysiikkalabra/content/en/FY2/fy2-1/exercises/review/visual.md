@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 9b0c475077d8b946
-SCOPE: delta reflow from 73f9da6470edf29f base b5600a63ddae
+CONTENT-HASH: 5b31514997a4592b
+SCOPE: delta numbers from 9b0c475077d8b946 base 6ecef1197865
 
 ## Blocking
 (none)
@@ -9,8 +9,8 @@ SCOPE: delta reflow from 73f9da6470edf29f base b5600a63ddae
 (none)
 
 ## Checked
-- Opened reflow-exercises-1.png and -2.png (390 px, solutions open) of fy2-1: every re-broken block.
-- Rows legible, equals signs in one column, a +/- row leading each continuation, no clipping or overflow, units upright with thin spaces, decimal point, no red KaTeX source; the sentences around the displays still read naturally. Other captures not opened (the diff touches only chains).
+- Delta review. Opened fy2-1-open-exercises-1280-10.png (lesson shots folder; exercise 1-10 solution open): the changed Reasonableness sentence (dry wood, MAFY $16.2\,\text{MJ/kg}$) renders whole; units upright, thin spaces, nothing clipped.
+- Hash at start and end: 5b31514997a4592b.
 
 ## Scores
-illustrations n/a · typography 4 · English 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

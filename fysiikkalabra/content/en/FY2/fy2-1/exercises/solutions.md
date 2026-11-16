@@ -78,7 +78,7 @@ $$
 **Conversions:** The heating value is already in $\text{MJ/kg}$ and the mass in kilograms, so the answer comes out directly in megajoules and no conversions are needed.
 **Substitution:** $E = 43.4\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2.0\,\text{kg} = 86.8\,\text{MJ}$
 **Answer:** $E \approx 87\,\text{MJ}$, two significant figures as in the mass $2.0\,\text{kg}$. The heating value $H = 43.4\,\text{MJ/kg}$ is from the MAFY table (heating values of fuels, petrol); tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
-**Reasonableness:** A rough estimate: $40\,\text{MJ/kg} \cdot 2\,\text{kg} = 80\,\text{MJ}$, so the result is of the right order of magnitude. Since $1\,\text{kWh} = 3.6\,\text{MJ}$, $87\,\text{MJ}$ is about $24\,\text{kWh}$, and petrol holds much more energy per kilogram than wood, whose heating value is about $16\,\text{MJ/kg}$.
+**Reasonableness:** A rough estimate: $40\,\text{MJ/kg} \cdot 2\,\text{kg} = 80\,\text{MJ}$, so the result is of the right order of magnitude. Since $1\,\text{kWh} = 3.6\,\text{MJ}$, $87\,\text{MJ}$ is about $24\,\text{kWh}$, and petrol holds much more energy per kilogram than dry wood, whose heating value in the MAFY tables is $16.2\,\text{MJ/kg}$.
 
 ## fy2-1-L2-01
 **Given:** chemical energy released from the battery $E_\text{chem} = 3.00\,\text{kJ}$, kinetic energy of the scooter and rider $E_\text{k} = 2150\,\text{J}$

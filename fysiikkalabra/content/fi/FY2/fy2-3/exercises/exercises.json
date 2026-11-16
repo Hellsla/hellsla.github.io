@@ -305,6 +305,18 @@
           "feedback": "Aika puolittuu vain kerran, ja teho riippuu ajasta suoraan käänteisesti, ei neliönä. Ajan puolittuminen kaksinkertaistaa tehon, ei nelinkertaista sitä."
         }
       ]
+    },
+    {
+      "id": "fy2-3-L2-09",
+      "level": 2,
+      "text": "Yle kertoi artikkelissa <a href=\"https://yle.fi/a/74-20045312\" target=\"_blank\" rel=\"noopener\">Yle: Vaasan sähkö ei hyvitä miinukselle painuvaa pörssisähkön hintaa asiakkailleen</a> (julkaistu 16. elokuuta 2023, luettu 16. marraskuuta 2026) siitä, miksi pörssisähkön hinta voi painua miinukselle ja miten sähkönmyyjät kohtelevat negatiivisia tunteja. Artikkeli on yli kolme vuotta vanha, joten sen yksityiskohdat voivat olla vanhentuneet, mutta hinnanmuodostuksen periaate ei ole. Artikkelin mukaan välityspalkkio on esimerkiksi Vaasan sähköllä $0{,}41\\,\\text{snt/kWh}$, ja Vaasan sähkö käsittelee negatiivisen tuntihinnan nollana.\n\na) Selitä artikkelin avulla, missä tilanteessa sähkön markkinahinta voi muuttua negatiiviseksi.\n\nb) Sähkölaite käyttää tasaisesti tehoa $2{,}0\\,\\text{kW}$ neljän tunnin ajan. Laske kulutettu sähköenergia ja sen kustannus markkinahinnalla $-5{,}0\\,\\text{snt/kWh}$. Negatiivinen kustannus tarkoittaa hyvitystä. Anna kustannus sentteinä.\n\nc) Vertaa kohdan b) tulosta tilanteeseen, jossa markkinahinta on $+15\\,\\text{snt/kWh}$. Selitä, miksi negatiivinen markkinahinta ei välttämättä tarkoita kuluttajalle ilmaista sähköä. Voit käyttää artikkelin välityspalkkiota ja sitä, että Fingridin sivulla <a href=\"https://www.fingrid.fi/sahkomarkkinat/sahkojarjestelman-tila/\" target=\"_blank\" rel=\"noopener\">Fingrid: Sähköjärjestelmän tila</a> (luettu 16. marraskuuta 2026) aluehinta ilmoitetaan ilman veroja ja sähkön siirtokustannuksia.\n\nd) Arvioi, miten sähkön varastointi ja kulutuksen ajoittaminen voivat vaikuttaa sähköjärjestelmän toimintaan.\n\nVastauskenttään tulee kohdan b) kustannus.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": -40,
+      "unit": "snt",
+      "tolerance": 0.02
     }
   ],
   "level3": [

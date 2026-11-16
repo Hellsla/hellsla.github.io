@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7f22e6beefbf3238
-SCOPE: delta reflow from 1b1e4f5288cc758f base b5600a63ddae
+CONTENT-HASH: 575f3df5f4e893ad
 
 ## Blocking
 - none
@@ -9,7 +8,7 @@ SCOPE: delta reflow from 1b1e4f5288cc758f base b5600a63ddae
 - none
 
 ## Checked
-- Delta (calculation chains re-broken into aligned rows): opened reflow-exercises-1.png, reflow-exercises-2.png at readable size, every re-broken block at 390 px: rows legible, nothing clipped, relation signs aligned, sentence around each block still reads. Contact sheets and other captures not opened; 360 px from the packet's layout check only.
+Delta review: changed Järkevyys sentence read in the diff ($16{,}2\,\text{MJ/kg}$ with MAFY source, LaTeX units, Finnish fluent). Captures not opened.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 5 · accessibility 4
