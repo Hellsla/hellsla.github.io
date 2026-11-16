@@ -25,7 +25,8 @@ docs/teacher-figures.tsv) change no page: their unit tests and `reviews.py verif
   lang/<lang>.json                                             only its "sims" block changed: the lessons of those
                                                                sims; any other text -> full
   site/<id>.html, site/<lang>/<id>.html, site/<id>-sim.js      that page (a lesson that publishes or unpublishes, a
-                                                               neighbour whose Edellinen / Seuraava luku changed)
+                                                               neighbour whose Edellinen / Seuraava luku changed); a page whose
+                                                               only change is ?v= cache tokens: nothing (2026-11-16)
   site/sims/**, site/pics/**                                   nothing of its own (copies of assets/, mapped above)
   site/index.html, site/<COURSE>.html                          nothing (the course pages are not in the browser
                                                                steps; test_home.py checks them on every run)
@@ -107,8 +108,33 @@ def scope(base):
     if shared:                                          # the sample, and the pages the change names by their own sources
         for q in SMOKE: add(q, f"smoke sample ({shared[0]})")
     else:
-        for q, why in rendered.items(): pages.setdefault(q, []).extend(why)
+        only_v = version_only(base, [n for why in rendered.values() for n in why if n.endswith(".html")])
+        for q, why in rendered.items():
+            why = [n for n in why if n not in only_v]
+            if why: pages.setdefault(q, []).extend(why)
     return "pages", pages
+
+
+VER = re.compile(r"\?v=[0-9a-f]*")
+
+
+def version_only(base, names):
+    """The pages among names whose diff against base changes nothing but ?v= cache tokens (build.py: a shared file's
+    hash in its URL). Such a page looks the same: the file it points at has not changed in this diff, or that change
+    is shared and the smoke sample tests it (work queue 5, 2026-11-16)."""
+    if not names: return set()
+    out, cur, minus, plus = set(), None, [], []
+    def done():
+        if cur and minus and sorted(VER.sub("", l) for l in minus) == sorted(VER.sub("", l) for l in plus): out.add(cur)
+    for line in git("diff", "-U0", "--relative", "--no-color", f"{base}...HEAD", "--", *names).splitlines():
+        if line.startswith("diff --git"):
+            done(); cur, minus, plus = None, [], []
+        elif line.startswith("+++ "):
+            cur = line[6:] if line.startswith("+++ b/") else None   # /dev/null: a new page is a change
+        elif line.startswith("-") and not line.startswith("--- "): minus.append(line[1:])
+        elif line.startswith("+"): plus.append(line[1:])
+    done()
+    return out
 
 
 if __name__ == "__main__":
