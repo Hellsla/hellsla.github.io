@@ -190,6 +190,11 @@ että käsitekorttien alleviivaus ja sirut Tiivistelmän perässä toimivat laat
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 
+Varattu: claude/fy1-kappalejako (FY1)
+
+Opettaja 2026-11-16: laajennetaan myös FY9:ään ja FY10:een. Järjestys FY1 → FY2 → FY4 → FY5 → FY6 → FY7 → FY8 →
+FY3 loput → FY9 → FY10.
+
 Pilotti fy3-13 tehty (#643; koordinaattorin välittämänä opettaja hyväksyi 2026-11-16 sekä pilotin, "huomattavasti
 parempi luettavuus", että uuden katselmointiluokan `md-paragraphs`: kappalejako ja listamerkit, sanat samat ja samassa
 järjestyksessä, tiede ja pedagogiikka carry, visual delta). Sääntö on NOTES.md §3:ssa ("Paragraphs in stages and
