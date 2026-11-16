@@ -374,8 +374,8 @@
 </ul></div></section>
 <section class="stage" id="sovella" data-stage="sovella"><h2><span class="stage-no" aria-hidden="true">5</span>Examples</h2><div class="activity act-choice task-card" id="virhe-rinne" data-type="choice"><h3>Find the mistake: a sledge on a slope</h3><fieldset class="choice list"><legend><span class="scenario">A sledge ($25\,\text{kg}$ with the child) slides down a slope, the angle of inclination of the slope is $20^\circ$ and the coefficient of sliding friction $0.10$.</span><span class="ask">A student calculated the friction: "$F_\mu = \mu m g = 0.10 \cdot 25\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 25\,\text{N}$." What is wrong in the solution?</span></legend><ul class="choices"><li><label><input type="radio" name="virhe-rinne" value="0" data-correct="0"><span>There is no mistake in the solution, because the mass and $g$ are the same on a slope too.</span></label><div class="feedback" data-for="0" hidden><p>The mass and $g$ are the same, but the normal force is not as large as the weight: on a slope only the perpendicular component of the weight presses the sledge against the snow.</p></div></li><li><label><input type="radio" name="virhe-rinne" value="1" data-correct="0"><span>The friction should be $\mu mg\sin\alpha \approx 8.4\,\text{N}$, because the motion is along the slope.</span></label><div class="feedback" data-for="1" hidden><p>Friction is along the slope, but its magnitude depends on the normal force, which is perpendicular to the slope: $N = mg\cos\alpha$. The component $mg\sin\alpha$ takes the sledge down the slope.</p></div></li><li><label><input type="radio" name="virhe-rinne" value="2" data-correct="1"><span>The normal force is not $mg$: on a slope $N = mg\cos\alpha$, so $F_\mu \approx 23\,\text{N}$.</span></label><div class="feedback" data-for="2" hidden><p>Correct. Only the weight and the normal force act perpendicular to the surface, so $N = mg\cos 20^\circ$ and <span class="mj-wide">$$
 \begin{aligned}
-F_\mu &= 0.10 \cdot 25\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
-&\cdot \cos 20^\circ \approx 23\,\text{N}\text{.} 
+F_\mu &= 0.10 \cdot 25\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot \cos 20^\circ \\
+&\approx 23\,\text{N}\text{.}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -457,8 +457,8 @@ $$</span></p></div></li><li><label><input type="radio" name="virhe-rinne" value=
   <foreignObject x="144" y="114.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg></div></div><div class="sol-step" data-step="formula"><p class="sol-label">Formula</p><p>$T - mg = ma$, so $T = m(g + a)$</p></div><div class="sol-step" data-step="conversions"><p class="sol-label">Conversions</p><p>The acceleration points upwards, so $a = +0.60\,\text{m/s}^2$. Finally $1\,\text{N} = 0.001\,\text{kN}$.</p></div><div class="sol-step" data-step="substitution"><p class="sol-label">Substitution</p><p><span class="mj-wide">$$
 \begin{aligned}
-T &= 650\,\text{kg} \\
-&\cdot (9.81\,\text{m/s}^2 + 0.60\,\text{m/s}^2) = 650\,\text{kg} \cdot 10.41\,\text{m/s}^2 \\
+T &= 650\,\text{kg} \cdot (9.81\,\text{m/s}^2 + 0.60\,\text{m/s}^2) \\
+&= 650\,\text{kg} \cdot 10.41\,\text{m/s}^2 \\
 &= 6766.5\,\text{N} \\
 &= 6.7665\,\text{kN}
 \end{aligned}
@@ -509,8 +509,8 @@ $$</span></p></div><div class="sol-step" data-step="answer"><p class="sol-label"
 
 <p><span class="mj-wide">$$
 \begin{aligned}
-N &= 18\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
-&- 60\,\text{N} \cdot \sin 25^\circ = 176.58\,\text{N} - 25.36\,\text{N} \\
+N &= 18\,\text{kg} \cdot 9.81\,\text{m/s}^2 - 60\,\text{N} \cdot \sin 25^\circ \\
+&= 176.58\,\text{N} - 25.36\,\text{N} \\
 &= 151.22\,\text{N}\text{,}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
@@ -561,9 +561,9 @@ $$</span> so </p>
   <foreignObject x="324" y="136" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg></div></div><div class="sol-step" data-step="formula"><p class="sol-label">Formula</p><p>$y$: $N - mg\cos\alpha = 0$ and $x$: $mg\sin\alpha - \mu N = ma$, so $a = g(\sin\alpha - \mu\cos\alpha)$</p></div><div class="sol-step" data-step="conversions"><p class="sol-label">Conversions</p><p>None needed. The mass is not needed, because it cancels.</p></div><div class="sol-step" data-step="substitution"><p class="sol-label">Substitution</p><p><span class="mj-wide">$$
 \begin{aligned}
-a &= 9.81\,\text{m/s}^2 \\
-&\cdot (\sin 28^\circ - 0.15 \cdot \cos 28^\circ) = 9.81\,\text{m/s}^2 \\
-&\cdot (0.4695 - 0.1324) = 3.306\,\text{m/s}^2 
+a &= 9.81\,\text{m/s}^2 \cdot (\sin 28^\circ - 0.15 \cdot \cos 28^\circ) \\
+&= 9.81\,\text{m/s}^2 \cdot (0.4695 - 0.1324) \\
+&= 3.306\,\text{m/s}^2
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -676,9 +676,9 @@ $$</span></p></div><div class="sol-step" data-step="answer"><p class="sol-label"
   <foreignObject x="326" y="372" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_{y}$</div></foreignObject>
 </svg></div></div><div class="sol-step" data-step="formula"><p class="sol-label">Formula</p><p>$y$: $N - mg\cos\alpha = 0$ and $x$: $T - mg\sin\alpha - \mu N = 0$, so $T = mg(\sin\alpha + \mu\cos\alpha)$</p></div><div class="sol-step" data-step="conversions"><p class="sol-label">Conversions</p><p>None needed, the quantities are in base units.</p></div><div class="sol-step" data-step="substitution"><p class="sol-label">Substitution</p><p><span class="mj-wide">$$
 \begin{aligned}
-T &= 280\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
-&\cdot (\sin 14^\circ + 0.25 \cdot \cos 14^\circ) = 2746.8\,\text{N} \\
-&\cdot (0.2419 + 0.2426) = 1330.8\,\text{N} 
+T &= 280\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot (\sin 14^\circ + 0.25 \cdot \cos 14^\circ) \\
+&= 2746.8\,\text{N} \cdot (0.2419 + 0.2426) \\
+&= 1330.8\,\text{N}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -720,8 +720,8 @@ $$</span></p></div><div class="sol-step" data-step="answer"><p class="sol-label"
 
 <p>and the upper limit <span class="mj-wide">$$
 \begin{aligned}
-\mu_0 mg\cos\alpha &= 0.35 \cdot 2746.8\,\text{N} \\
-&\cdot \cos 14^\circ = 932.8\,\text{N}\text{;} 
+\mu_0 mg\cos\alpha &= 0.35 \cdot 2746.8\,\text{N} \cdot \cos 14^\circ \\
+&= 932.8\,\text{N}\text{;}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -827,8 +827,8 @@ $$</span> the limiting angle $\alpha_0 = \arctan 0.35 = 19.29^\circ$</p></div><d
   <foreignObject x="437.5" y="159" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg></div></div></div><h4 class="sol-part">b)</h4><div class="steps"><div class="sol-step" data-step="given"><p class="sol-label">Given</p><p>$m_\text{B} = 80\,\text{kg}$, coefficient of sliding friction $\mu = 0.10$, acceleration $a = 0.50\,\text{m/s}^2$, $g = 9.81\,\text{m/s}^2$</p></div><div class="sol-step" data-step="find"><p class="sol-label">Find</p><p>the tension $T_2$ in rope 2</p></div><div class="sol-step" data-step="principle"><p class="sol-label">Principle</p><p>The horizontal forces on sledge B are the pull of rope 2 forwards and friction backwards. By Newton's second law their sum is $m_\text{B} a$. There is no vertical acceleration, so $N_\text{B} = m_\text{B} g$ and the friction is $\mu m_\text{B} g$ (chapter <em>Equation of motion for connected bodies</em>).</p></div><div class="sol-step" data-step="formula"><p class="sol-label">Formula</p><p>$T_2 - \mu m_\text{B} g = m_\text{B} a$, so $T_2 = m_\text{B}(a + \mu g)$</p></div><div class="sol-step" data-step="conversions"><p class="sol-label">Conversions</p><p>None needed, the quantities are in base units.</p></div><div class="sol-step" data-step="substitution"><p class="sol-label">Substitution</p><p><span class="mj-wide">$$
 \begin{aligned}
-T_2 &= 80\,\text{kg} \cdot (0.50\,\text{m/s}^2 \\
-&+ 0.10 \cdot 9.81\,\text{m/s}^2) = 80\,\text{kg} \cdot 1.481\,\text{m/s}^2 \\
+T_2 &= 80\,\text{kg} \cdot (0.50\,\text{m/s}^2 + 0.10 \cdot 9.81\,\text{m/s}^2) \\
+&= 80\,\text{kg} \cdot 1.481\,\text{m/s}^2 \\
 &= 118.48\,\text{N}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
@@ -850,8 +850,8 @@ $$</span><span class="mj-narrow">$$
 $$</span> and accelerating it takes $80\,\text{kg} \cdot 0.50\,\text{m/s}^2 = 40\,\text{N}$; together about $118\,\text{N}$, as it should be.</p></div></div><h4 class="sol-part">c)</h4><div class="steps"><div class="sol-step" data-step="given"><p class="sol-label">Given</p><p>$m_\text{A} = 120\,\text{kg}$, $m_\text{B} = 80\,\text{kg}$, $\mu = 0.10$, $a = 0.50\,\text{m/s}^2$, from part b $T_2 = 118.48\,\text{N}$, $g = 9.81\,\text{m/s}^2$</p></div><div class="sol-step" data-step="find"><p class="sol-label">Find</p><p>the tension $T_1$ in rope 1</p></div><div class="sol-step" data-step="principle"><p class="sol-label">Principle</p><p>The horizontal forces on sledge A are the pull of rope 1 forwards and the pull of rope 2 and friction backwards, and their sum is $m_\text{A} a$. The same result comes from the system of both sledges, in which the forces of rope 2 are internal and cancel each other.</p></div><div class="sol-step" data-step="formula"><p class="sol-label">Formula</p><p>$T_1 - T_2 - \mu m_\text{A} g = m_\text{A} a$, so </p>
 <div class="eq-chain"><div class="eq-row"><span class="eq-l">$T_1$</span><span class="eq-r">$= T_2 + m_\text{A}(a + \mu g)$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= (m_\text{A} + m_\text{B})(a + \mu g)$</span></div></div></div><div class="sol-step" data-step="conversions"><p class="sol-label">Conversions</p><p>None needed, the quantities are in base units.</p></div><div class="sol-step" data-step="substitution"><p class="sol-label">Substitution</p><p><span class="mj-wide">$$
 \begin{aligned}
-T_1 &= 118.48\,\text{N} \\
-&+ 120\,\text{kg} \cdot 1.481\,\text{m/s}^2 = 118.48\,\text{N} + 177.72\,\text{N} \\
+T_1 &= 118.48\,\text{N} + 120\,\text{kg} \cdot 1.481\,\text{m/s}^2 \\
+&= 118.48\,\text{N} + 177.72\,\text{N} \\
 &= 296.2\,\text{N}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
@@ -1192,9 +1192,9 @@ $$ and on ice $0.1 \cdot 9.81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, when the r
   <foreignObject x="304" y="175.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg></div></div><div class="sol-step" data-step="formula"><p class="sol-label">Formula</p><p>$y$: $N = mg\cos\alpha$; $x$: $mg\sin\alpha - \mu mg\cos\alpha = ma_1$, so $a_1 = g(\sin\alpha - \mu\cos\alpha)$. Starting from rest, $v^2 = 2a_1 L$, so $v = \sqrt{2gL(\sin\alpha - \mu\cos\alpha)}$</p></div><div class="sol-step" data-step="conversions"><p class="sol-label">Conversions</p><p>None needed, the quantities are in base units.</p></div><div class="sol-step" data-step="substitution"><p class="sol-label">Substitution</p><p><span class="mj-wide">$$
 \begin{aligned}
-a_1 &= 9.81\,\text{m/s}^2 \\
-&\cdot (\sin 12^\circ - 0.080 \cdot \cos 12^\circ) = 9.81\,\text{m/s}^2 \\
-&\cdot (0.2079 - 0.0783) = 1.272\,\text{m/s}^2 
+a_1 &= 9.81\,\text{m/s}^2 \cdot (\sin 12^\circ - 0.080 \cdot \cos 12^\circ) \\
+&= 9.81\,\text{m/s}^2 \cdot (0.2079 - 0.0783) \\
+&= 1.272\,\text{m/s}^2
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -1253,8 +1253,8 @@ $$</span> and </p>
 <section class="stage" id="tarkista" data-stage="tarkista"><h2><span class="stage-no" aria-hidden="true">7</span>Test and assess</h2><div class="activity act-exit task-card" id="lahtolippu" data-type="exit"><div id="exit"><h3>1. Reflection task</h3><p>Answer on your own first and only then open the answer.</p><ol><li>A book is at rest on a table. Which force is the counterforce of the book's weight according to Newton's third law? Is it the normal force of the table?<details class="answer"><summary>Answer</summary><div class="answer-body"><p>The counterforce of the weight is the force with which the book pulls the Earth upwards: the weight is an interaction between the Earth and the book, so the counterforce acts on the Earth. The normal force of the table is not the counterforce, although it is equal and opposite: it acts on the same object, the book, and is equal only because the book is at rest (first law). The counterforce of the normal force is the force of the book on the table, downwards.</p></div></details></li><li>A box ($10.0\,\text{kg}$) is at rest on a slope whose angle of inclination is $30^\circ$. How large is the normal force of the slope?<details class="answer"><summary>Answer</summary><div class="answer-body"><p>Only the weight and the normal force act perpendicular to the surface, so <span class="mj-wide">$$
 \begin{aligned}
 N &= mg\cos\alpha \\
-&= 10.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\
-&\cdot \cos 30^\circ \approx 85.0\,\text{N}\text{,} 
+&= 10.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot \cos 30^\circ \\
+&\approx 85.0\,\text{N}\text{,}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -1316,8 +1316,8 @@ $$</span> so </p>
 
 <p><span class="mj-wide">$$
 \begin{aligned}
-P &= 20\,\text{kg} \cdot (0.9285\,\text{m/s}^2 \\
-&+ 1.4715\,\text{m/s}^2) = 48.0\,\text{N} 
+P &= 20\,\text{kg} \cdot (0.9285\,\text{m/s}^2 + 1.4715\,\text{m/s}^2) \\
+&= 48.0\,\text{N}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
