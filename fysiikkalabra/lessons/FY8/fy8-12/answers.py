@@ -39,5 +39,5 @@ R = (sum(src) - sum(bkg)) / 5 / 60                  # net count rate 16,4 1/s
 T = 0.5 ** (8.0 / 5.5)                              # lead wall 8,0 mm, d½ 5,5 mm: 0,3649
 a["fy8-12-L3-05"] = R / (T * 0.015) / 1000          # A = R / (T eta) = 2997 Bq -> 3,0 kBq
 a["fy8-12-L3-06"] = 5.0 - 2 * 0.511                # pair production by a 5,0 MeV photon: kinetic energy 3,978 MeV -> 4,0 MeV
-a["fy8-12-L2-08"] = h * 3.5e9 / e * 1e6            # 5G photon, f = 3,5 GHz: E = hf = 2,319e-24 J = 1,4476e-5 eV = 14,48 µeV -> 14,5 µeV
+a["fy8-12-L2-08"] = h * 3.5e9 / e * 1e6            # 5G photon, f = 3,5 GHz: E = hf = 2,319e-24 J = 1,4476e-5 eV = 14,48 µeV -> 14 µeV (two figures)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))
