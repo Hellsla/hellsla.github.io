@@ -151,7 +151,13 @@ $E_\text{TV} = 80\,\text{W} \cdot 3.5\,\text{h} = 280\,\text{Wh}$
 $E_\text{laptop} = 50\,\text{W} \cdot 6.0\,\text{h} = 300\,\text{Wh}$
 $E_\text{kettle} = 2000\,\text{W} \cdot 0.20\,\text{h} = 400\,\text{Wh}$
 $E_\text{dryer} = 1800\,\text{W} \cdot 0.10\,\text{h} = 180\,\text{Wh}$
-The sum is $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, so $E_\text{tot} = 1960 \cdot 10^{-3}\,\text{kWh} = 1.96\,\text{kWh}$.
+The sum is $$
+\begin{aligned}
+&800 + 280 + 300 + 400 \\
+&+ 180 \\
+&= 1960\,\text{Wh}
+\end{aligned}
+$$, so $E_\text{tot} = 1960 \cdot 10^{-3}\,\text{kWh} = 1.96\,\text{kWh}$.
 **Answer:** $1.96\,\text{kWh}$, that is about $2.0\,\text{kWh}$. The fridge consumes the most energy, $0.80\,\text{kWh}$, although its power of $100\,\text{W}$ is smaller than that of the kettle and the hair dryer. The reason is the long running time.
 **Reasonableness:** The kettle and the hair dryer have the greatest power, but they run only for a short time: $0.58\,\text{kWh}$ together. The consumption in a day is of the order of a few kilowatt-hours, which suits a household whose annual consumption is thousands of kilowatt-hours.
 
@@ -174,7 +180,9 @@ The sum is $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, so $E_\text{tot} = 1
 **Conversions:** $50\,\text{min} = 50 \cdot (1\,\text{h} : 60) = \tfrac{5}{6}\,\text{h}$, so $\Delta t = 0.833\,\text{h}$. Finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** $P = \dfrac{1.50\,\text{kWh} - 0.00\,\text{kWh}}{0.833\,\text{h}} = 1.80\,\text{kW} = 1.80 \cdot 1000\,\text{W} = 1800\,\text{W}$
 **Answer:** $1800\,\text{W}$, that is $1.8\,\text{kW}$, two significant figures. A fit by eye varies, so about $1710\text{–}1890\,\text{W}$ is a good answer. The line passes through the origin because the meter was zeroed at the start: when no time has passed, no energy has been transformed. The slope is the power, because it tells the increase in energy per unit of time.
-**Reasonableness:** A power of $1.8\,\text{kW}$ is typical of a heater or a hair dryer. In ten minutes the heater consumes $1.8\,\text{kW} \cdot (1\,\text{h} : 6) = 0.30\,\text{kWh}$, which corresponds to the first reading in the table, $0.31\,\text{kWh}$.
+**Reasonableness:** A power of $1.8\,\text{kW}$ is typical of a heater or a hair dryer. In ten minutes the heater consumes $$
+1.8\,\text{kW} \cdot (1\,\text{h} : 6) = 0.30\,\text{kWh}
+$$, which corresponds to the first reading in the table, $0.31\,\text{kWh}$.
 
 ## fy2-3-L3-04
 **Given:** the hours and average powers in the table (consumption $P_\text{c}$, production $P_\text{p}$ in megawatts): 05–06 $8400$ and $8900$, 06–07 $9100$ and $8900$, 07–08 $9900$ and $9300$, 08–09 $10\,400$ and $9600$, 09–10 $10\,600$ and $9800$, 10–11 $10\,300$ and $9900$, 11–12 $9800$ and $9900$, 12–13 $9600$ and $9800$
@@ -182,7 +190,13 @@ The sum is $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, so $E_\text{tot} = 1
 **Principle:** The power in each hour is an average power, so the energy of an hour is $E = P\,\Delta t$ with $\Delta t = 1\,\text{h}$. The missing power is the difference $\Delta P = P_\text{c} - P_\text{p}$ when it is positive. The missing energies are calculated hour by hour and summed.
 **Formula:** $\Delta P = P_\text{c} - P_\text{p}$ and $E = \Delta P\,\Delta t$
 **Conversions:** $1\,\text{MWh} = 10^{-3}\,\text{GWh}$, because $1\,\text{MW} = 10^{-3}\,\text{GW}$.
-**Substitution:** Differences hour by hour: 05–06 $-500\,\text{MW}$ (surplus production), 06–07 $200\,\text{MW}$, 07–08 $600\,\text{MW}$, 08–09 $800\,\text{MW}$, 09–10 $800\,\text{MW}$, 10–11 $400\,\text{MW}$, 11–12 $-100\,\text{MW}$ and 12–13 $-200\,\text{MW}$. Consumption exceeds production in the hours 06–11. The sum is $200 + 600 + 800 + 800 + 400 = 2800$, so $E = 2800\,\text{MW} \cdot 1\,\text{h} = 2800\,\text{MWh} = 2800 \cdot 10^{-3}\,\text{GWh} = 2.8\,\text{GWh}$.
+**Substitution:** Differences hour by hour: 05–06 $-500\,\text{MW}$ (surplus production), 06–07 $200\,\text{MW}$, 07–08 $600\,\text{MW}$, 08–09 $800\,\text{MW}$, 09–10 $800\,\text{MW}$, 10–11 $400\,\text{MW}$, 11–12 $-100\,\text{MW}$ and 12–13 $-200\,\text{MW}$. Consumption exceeds production in the hours 06–11. The sum is $$
+\begin{aligned}
+&200 + 600 + 800 + 800 \\
+&+ 400 \\
+&= 2800
+\end{aligned}
+$$, so $E = 2800\,\text{MW} \cdot 1\,\text{h} = 2800\,\text{MWh} = 2800 \cdot 10^{-3}\,\text{GWh} = 2.8\,\text{GWh}$.
 **Answer:** The missing energy is $2.8\,\text{GWh}$, two significant figures. Consumption is at its highest at 09–10, $10\,600\,\text{MW}$. The greatest shortfall is $800\,\text{MW}$ in the hours 08–09 and 09–10, so at least $800\,\text{MW}$ of balancing power and imports is needed. The shortfall grows quickly in the morning and shrinks around noon, so a power plant whose output can be adjusted quickly, such as a hydropower plant, is suitable for the task. Wind power is not suitable because it depends on the weather, and neither is a nuclear power plant because it is steady base load power.
 **Reasonableness:** The power of a hydropower plant is hundreds of megawatts, so $800\,\text{MW}$ is the combined power of several plants, which is believable for a system the size of Finland. The energy $2.8\,\text{GWh}$ is three to four times the shortfall of the peak hour, $0.8\,\text{GWh}$, which fits a five-hour shortfall that is at its largest for two hours.
 
@@ -190,9 +204,31 @@ The sum is $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, so $E_\text{tot} = 1
 **Given:** the periods in the table, in which the compressor runs for $11.5$, $12.0$, $11.5$ and $12.0\,\text{min}$ and is off for $18.0$, $18.5$, $17.5$ and $18.0\,\text{min}$; power when running $P = 100\,\text{W}$; annual consumption of the new fridge $130\,\text{kWh}$; price $0.20\,\text{€/kWh}$; year $8760\,\text{h}$
 **Find:** the average power and annual consumption of the old fridge and the saving in euros from changing to a new one; an assessment of whether it is worth it
 **Principle:** The compressor runs at $100\,\text{W}$ for only part of the time, so the average power is the running power multiplied by the fraction of the total time spent running. The annual consumption is the average power times the time in a year, and the saving is the difference in consumption times the price. The model assumes that the measured periods describe the whole year.
-**Formula:** $\text{fraction} = \dfrac{t_\text{on}}{t_\text{on} + t_\text{off}}$, $P_\text{avg} = \text{fraction} \cdot P$, $E = P_\text{avg}\,t$ and $\text{saving} = (E - E_\text{new}) \cdot \text{unit price}$
+**Formula:** $\text{fraction} = \dfrac{t_\text{on}}{t_\text{on} + t_\text{off}}$, $P_\text{avg} = \text{fraction} \cdot P$, $E = P_\text{avg}\,t$ and $$ \begin{aligned} \text{saving} &= (E - E_\text{new}) \\ &\cdot \text{unit price} \end{aligned} $$
 **Conversions:** The average power is converted to kilowatts by substituting $1\,\text{W} = 10^{-3}\,\text{kW}$.
-**Substitution:** The sum of the running times is $11.5 + 12.0 + 11.5 + 12.0 = 47.0\,\text{min}$ and the sum of the off times $18.0 + 18.5 + 17.5 + 18.0 = 72.0\,\text{min}$. The total time is $47.0\,\text{min} + 72.0\,\text{min} = 119.0\,\text{min}$, so the fraction is $\dfrac{47.0}{119.0} = 0.395$. The average power is $P_\text{avg} = 0.395 \cdot 100\,\text{W} = 39.5\,\text{W} = 0.0395\,\text{kW}$. The annual consumption is $E = 0.0395\,\text{kW} \cdot 8760\,\text{h} = 346\,\text{kWh}$. The saving is $(346\,\text{kWh} - 130\,\text{kWh}) \cdot 0.20\,\text{€/kWh} = 216\,\text{kWh} \cdot 0.20\,\text{€/kWh} = 43.2\,\text{€}$.
+**Substitution:** The sum of the running times is $$
+\begin{aligned}
+&11.5 + 12.0 + 11.5 + 12.0 \\
+&= 47.0\,\text{min}
+\end{aligned}
+$$ and the sum of the off times $$
+\begin{aligned}
+&18.0 + 18.5 + 17.5 + 18.0 \\
+&= 72.0\,\text{min}
+\end{aligned}
+$$. The total time is $$
+\begin{aligned}
+&47.0\,\text{min} + 72.0\,\text{min} \\
+&= 119.0\,\text{min}
+\end{aligned}
+$$, so the fraction is $\dfrac{47.0}{119.0} = 0.395$. The average power is $P_\text{avg} = 0.395 \cdot 100\,\text{W} = 39.5\,\text{W} = 0.0395\,\text{kW}$. The annual consumption is $E = 0.0395\,\text{kW} \cdot 8760\,\text{h} = 346\,\text{kWh}$. The saving is $$
+\begin{aligned}
+&(346\,\text{kWh} - 130\,\text{kWh}) \\
+&\cdot 0.20\,\text{€/kWh} \\
+&= 216\,\text{kWh} \cdot 0.20\,\text{€/kWh} \\
+&= 43.2\,\text{€}
+\end{aligned}
+$$.
 **Answer:** The average power is about $40\,\text{W}$, the annual consumption about $350\,\text{kWh}$ and the saving about $43\,\text{€}$ a year, two significant figures. A new fridge costing $600\,\text{€}$ would pay for itself only in a time of $600\,\text{€} : 43\,\text{€/a} \approx 14\,\text{a}$, so buying it for the saving in electricity alone is not worth it if the old fridge works. The assumptions that affect the result: the four measured periods are representative, and the room temperature, opening the door or the build-up of ice do not change the running time over the year, and other consumption such as the light and defrosting is ignored.
 **Reasonableness:** The average power of $40\,\text{W}$ is less than half of the running power, because the compressor runs about two fifths of the time. An annual consumption of a few hundred kilowatt-hours is typical of an old appliance, and the electricity price of $0.20\,\text{€/kWh}$ gives an annual cost of a few tens of euros.
 
@@ -203,7 +239,12 @@ The sum is $800 + 280 + 300 + 400 + 180 = 1960\,\text{Wh}$, so $E_\text{tot} = 1
 
 The second time $P_2 = 6.0\,\text{kWh} : 1.5\,\text{h} = 4.0\,\text{kW}$.
 
-So the power doubles: $P_2 : P_1 = 4.0\,\text{kW} : 2.0\,\text{kW} = 2.0$. When the time is halved and the energy stays the same, the power doubles. The power is not halved, because the time is in the denominator and not a factor. It does not stay the same, because power describes the rate of the transformation and not the energy alone. It does not quadruple, because the time was halved only once.
+So the power doubles: $$
+\begin{aligned}
+P_2 : P_1 &= 4.0\,\text{kW} : 2.0\,\text{kW} \\
+&= 2.0
+\end{aligned}
+$$. When the time is halved and the energy stays the same, the power doubles. The power is not halved, because the time is in the denominator and not a factor. It does not stay the same, because power describes the rate of the transformation and not the energy alone. It does not quadruple, because the time was halved only once.
 
 ## fy2-3-L1-09
 **Given:** power $P = 5.0\,\text{hp}$ and time $\Delta t = 30\,\text{min}$; from the table (MAFY table, unit conversions, power, horsepower) $1\,\text{hp} = 735.5\,\text{W}$ (metric horsepower)

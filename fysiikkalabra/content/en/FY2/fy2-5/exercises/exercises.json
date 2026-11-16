@@ -211,7 +211,7 @@
         {
           "text": "The mass was not converted to kilograms: $3.0\\,\\text{t} = 3000\\,\\text{kg}$, so the correct result is $78\\,000\\,\\text{MJ}$.",
           "correct": true,
-          "feedback": "Correct: the heat of combustion is energy per kilogram, so the mass must be substituted in kilograms. $E = 26\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 3000\\,\\text{kg} = 78\\,000\\,\\text{MJ}$."
+          "feedback": "Correct: the heat of combustion is energy per kilogram, so the mass must be substituted in kilograms. $$\n\\begin{aligned}\nE &= 26\\,\\tfrac{\\text{MJ}}{\\text{kg}} \\cdot 3000\\,\\text{kg} \\\\\n&= 78\\,000\\,\\text{MJ}\n\\end{aligned}\n$$."
         },
         {
           "text": "The heat of combustion of coal is wrong, because the correct value would be $43\\,\\tfrac{\\text{MJ}}{\\text{kg}}$, so the result is $129\\,\\text{MJ}$.",

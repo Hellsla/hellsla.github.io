@@ -117,12 +117,23 @@
 **Muunnokset:** $36\,\text{t} = 36 \cdot 1000\,\text{kg} = 36\,000\,\text{kg}$ ja $1\,\text{h} = 3600\,\text{s}$. Koska $1\,\text{MJ/s} = 1\,\text{MW}$, tehon yksikkö tulee suoraan megawatteina.
 **Sijoitus:** $E_\text{sisään} = 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 36\,000\,\text{kg} = 360\,000\,\text{MJ}$, $E_\text{hyöty} = 0{,}35 \cdot 360\,000\,\text{MJ} = 126\,000\,\text{MJ}$ ja $P = 126\,000\,\text{MJ} : 3600\,\text{s} = 35\,\text{MJ/s} = 35\,\text{MW}$
 **Vastaus:** $35\,\text{MW}$, kaksi merkitsevää numeroa kuten tiedoissa $10\,\tfrac{\text{MJ}}{\text{kg}}$ ja $35\,\%$.
-**Järkevyys:** Jos kaikki turpeen energia muuttuisi sähköksi, teho olisi $360\,000\,\text{MJ} : 3600\,\text{s} = 100\,\text{MW}$. Hyötysuhteella $35\,\%$ saadaan $35\,\%$ siitä eli $35\,\text{MW}$, mikä on tyypillinen pienen voimalaitoksen teho.
+**Järkevyys:** Jos kaikki turpeen energia muuttuisi sähköksi, teho olisi $$
+\begin{aligned}
+&360\,000\,\text{MJ} : 3600\,\text{s} \\
+&= 100\,\text{MW}
+\end{aligned}
+$$. Hyötysuhteella $35\,\%$ saadaan $35\,\%$ siitä eli $35\,\text{MW}$, mikä on tyypillinen pienen voimalaitoksen teho.
 
 ## fy2-5-L1-06
 **Kysytty:** mitä bensiinin lämpöarvo $H = 43\,\tfrac{\text{MJ}}{\text{kg}}$ kertoo
 **Periaate:** Lämpöarvo on polttoaineen palaessa vapautuva energia massayksikköä kohti, joten sen yksikkö $\text{MJ/kg}$ on energia jaettuna massalla. Se ei ole lämpötila, eikä energiaa synny tyhjästä: kemiallinen energia muuntuu lämmöksi ja valoksi.
-**Mallivastaus:** Yhdestä kilogrammasta bensiiniä vapautuu palaessa energiaa $43\,\text{MJ}$. Kahdesta kilogrammasta vapautuu kaksinkertainen määrä, $E = Hm = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 86\,\text{MJ}$. Lämpöarvo ei kerro liekin lämpötilaa, eikä se tarkoita, että energiaa syntyisi uutena.
+**Mallivastaus:** Yhdestä kilogrammasta bensiiniä vapautuu palaessa energiaa $43\,\text{MJ}$. Kahdesta kilogrammasta vapautuu kaksinkertainen määrä, $$
+\begin{aligned}
+E &= Hm \\
+&= 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} \\
+&= 86\,\text{MJ}
+\end{aligned}
+$$. Lämpöarvo ei kerro liekin lämpötilaa, eikä se tarkoita, että energiaa syntyisi uutena.
 
 ## fy2-5-L1-07
 **Annettu:** vapautuvan energian pitää olla $E = 255\,\text{MJ}$ ja pellettien lämpöarvo $H = 17\,\tfrac{\text{MJ}}{\text{kg}}$
@@ -157,7 +168,13 @@
 ## fy2-5-L2-06
 **Kysytty:** missä oppilaan laskussa on virhe ja mikä on oikea tulos
 **Periaate:** Lämpöarvo on energia kilogrammaa kohti, joten kaavassa $E = Hm$ massa pitää sijoittaa kilogrammoina. Tonni ei ole kilogramma, vaan $1\,\text{t} = 1000\,\text{kg}$.
-**Mallivastaus:** Oppilas sijoitti massan tonneina, vaikka lämpöarvo on yksikössä $\text{MJ/kg}$. Oikein $3{,}0\,\text{t} = 3{,}0 \cdot 1000\,\text{kg} = 3000\,\text{kg}$ ja $E = Hm = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} = 78\,000\,\text{MJ}$. Oppilaan tulos $78\,\text{MJ}$ on tuhat kertaa liian pieni. Kaava, kivihiilen lämpöarvo ja vastauksen yksikkö $\text{MJ}$ olivat oikein. Tuhatkertainen virhe näkyy myös arviosta: yksi kilogramma kivihiiltä antaa jo $26\,\text{MJ}$, joten kolme tonnia antaa paljon enemmän kuin $78\,\text{MJ}$.
+**Mallivastaus:** Oppilas sijoitti massan tonneina, vaikka lämpöarvo on yksikössä $\text{MJ/kg}$. Oikein $3{,}0\,\text{t} = 3{,}0 \cdot 1000\,\text{kg} = 3000\,\text{kg}$ ja $$
+\begin{aligned}
+E &= Hm \\
+&= 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} \\
+&= 78\,000\,\text{MJ}
+\end{aligned}
+$$. Oppilaan tulos $78\,\text{MJ}$ on tuhat kertaa liian pieni. Kaava, kivihiilen lämpöarvo ja vastauksen yksikkö $\text{MJ}$ olivat oikein. Tuhatkertainen virhe näkyy myös arviosta: yksi kilogramma kivihiiltä antaa jo $26\,\text{MJ}$, joten kolme tonnia antaa paljon enemmän kuin $78\,\text{MJ}$.
 
 ## fy2-5-L2-07
 **Annettu:** taulukko $(t, m)$, pellettien lämpöarvo $H = 17\,\tfrac{\text{MJ}}{\text{kg}}$; poltin palaa tasaisesti

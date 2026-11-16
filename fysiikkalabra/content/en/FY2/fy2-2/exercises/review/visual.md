@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7f05bc17f75b75b4
+CONTENT-HASH: 4a74fe7df6fd97df
+SCOPE: delta reflow from 7f05bc17f75b75b4 base b5600a63ddae
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] L1-11 figure: the label "boiling tea water" still crosses the lightning guide line.
-- [Minor] mafytaulukot.fi is plain text in the MAFY tasks (site name; optional).
+- [Minor] solutions.md, "0.0033 GJ = 0.0033 / · 1000 MJ" — this display is centred while neighbouring chains are left-aligned; optional: align like the others.
 
 ## Checked
-- Opened review/shots/fy2-2-open-exercises-1280-10.png and -11.png (content/en/FY2/fy2-2/review/shots/): the L1-11 card with the reworded task (situation then question), the scale figure and the full solution; layout intact, maths clean.
-- Delta round 2 at 1280 px only; 390 px captures not opened. Hash unchanged at the end.
+- Opened reflow-exercises-1.png and -2.png (390 px, solutions open) of fy2-2: every re-broken block.
+- Rows legible, equals signs in one column, nothing clipped, units upright with thin spaces, decimal point, no red KaTeX source; surrounding sentences read naturally. Other captures not opened (the diff touches only chains).
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations n/a · typography 4 · English 4 · accessibility 4

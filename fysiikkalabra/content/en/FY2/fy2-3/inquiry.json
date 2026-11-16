@@ -64,7 +64,7 @@
         },
         {
           "text": "About $150\\,\\text{h}$.",
-          "feedback": "In that time the lamp would transform $10\\,\\text{J/s} \\cdot 540\\,000\\,\\text{s} = 5\\,400\\,000\\,\\text{J}$, ten times the energy of the dryer. The time needed is a tenth of this."
+          "feedback": "In that time the lamp would transform $$\n\\begin{aligned}\n&10\\,\\text{J/s} \\cdot 540\\,000\\,\\text{s} \\\\\n&= 5\\,400\\,000\\,\\text{J}\n\\end{aligned}\n$$, ten times the energy of the dryer. The time needed is a tenth of this."
         }
       ],
       "reveal": {
@@ -306,7 +306,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A student calculates what a $1500\\,\\text{W}$ heater costs when it is on for $3.0\\,\\text{h}$ and the price is $20\\,\\text{c/kWh}$. They write $E = 1500 \\cdot 3.0\\,\\text{kWh} = 4500\\,\\text{kWh}$ and the cost $4500 \\cdot 0.20\\,\\text{€} = 900\\,\\text{€}$. Where is the error?",
+      "prompt": "A student calculates what a $1500\\,\\text{W}$ heater costs when it is on for $3.0\\,\\text{h}$ and the price is $20\\,\\text{c/kWh}$. They write $$\n\\begin{aligned}\nE &= 1500 \\cdot 3.0\\,\\text{kWh} \\\\\n&= 4500\\,\\text{kWh}\n\\end{aligned}\n$$ and the cost $4500 \\cdot 0.20\\,\\text{€} = 900\\,\\text{€}$. Where is the error?",
       "choices": [
         {
           "text": "The power was not converted to kilowatts: $1.5\\,\\text{kW} \\cdot 3.0\\,\\text{h} = 4.5\\,\\text{kWh}$ and the cost is $0.90\\,\\text{€}$.",
@@ -418,7 +418,7 @@
         {
           "text": "How much electrical energy the family used during the month.",
           "correct": true,
-          "feedback": "Correct. The kilowatt-hour is a unit of energy, power times time: $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3\\,600\\,000\\,\\text{J}$. The electricity bill is based on the energy used."
+          "feedback": "Correct. The kilowatt-hour is a unit of energy, power times time: $$\n\\begin{aligned}\n1\\,\\text{kWh} &= 1000\\,\\text{W} \\cdot 3600\\,\\text{s} \\\\\n&= 3\\,600\\,000\\,\\text{J}\n\\end{aligned}\n$$. The electricity bill is based on the energy used."
         },
         {
           "text": "How great the total power of the family's devices was.",

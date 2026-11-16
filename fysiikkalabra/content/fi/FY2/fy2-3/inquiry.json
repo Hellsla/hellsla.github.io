@@ -64,7 +64,7 @@
         },
         {
           "text": "Noin $150\\,\\text{h}$.",
-          "feedback": "Niin kauan lamppu muuntaisi $10\\,\\text{J/s} \\cdot 540\\,000\\,\\text{s} = 5\\,400\\,000\\,\\text{J}$, kymmenkertaisesti kuivaimen energian. Tarvittava aika on kymmenesosa tästä."
+          "feedback": "Niin kauan lamppu muuntaisi $$\n\\begin{aligned}\n&10\\,\\text{J/s} \\cdot 540\\,000\\,\\text{s} \\\\\n&= 5\\,400\\,000\\,\\text{J}\n\\end{aligned}\n$$, kymmenkertaisesti kuivaimen energian. Tarvittava aika on kymmenesosa tästä."
         }
       ],
       "reveal": {
@@ -306,7 +306,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Opiskelija laskee, mitä $1500\\,\\text{W}$:n lämmitin maksaa, kun se on päällä $3{,}0\\,\\text{h}$ ja hinta on $20\\,\\text{snt/kWh}$. Hän kirjoittaa $E = 1500 \\cdot 3{,}0\\,\\text{kWh} = 4500\\,\\text{kWh}$ ja hinnaksi $4500 \\cdot 0{,}20\\,\\text{€} = 900\\,\\text{€}$. Missä on virhe?",
+      "prompt": "Opiskelija laskee, mitä $1500\\,\\text{W}$:n lämmitin maksaa, kun se on päällä $3{,}0\\,\\text{h}$ ja hinta on $20\\,\\text{snt/kWh}$. Hän kirjoittaa $$\n\\begin{aligned}\nE &= 1500 \\cdot 3{,}0\\,\\text{kWh} \\\\\n&= 4500\\,\\text{kWh}\n\\end{aligned}\n$$ ja hinnaksi $4500 \\cdot 0{,}20\\,\\text{€} = 900\\,\\text{€}$. Missä on virhe?",
       "choices": [
         {
           "text": "Tehoa ei muutettu kilowateiksi: $1{,}5\\,\\text{kW} \\cdot 3{,}0\\,\\text{h} = 4{,}5\\,\\text{kWh}$ ja hinta $0{,}90\\,\\text{€}$.",
@@ -418,7 +418,7 @@
         {
           "text": "Kuinka paljon sähköenergiaa perhe käytti kuukauden aikana.",
           "correct": true,
-          "feedback": "Oikein. Kilowattitunti on energian yksikkö, teho kertaa aika: $1\\,\\text{kWh} = 1000\\,\\text{W} \\cdot 3600\\,\\text{s} = 3\\,600\\,000\\,\\text{J}$. Sähkölasku perustuu käytettyyn energiaan."
+          "feedback": "Oikein. Kilowattitunti on energian yksikkö, teho kertaa aika: $$\n\\begin{aligned}\n1\\,\\text{kWh} &= 1000\\,\\text{W} \\cdot 3600\\,\\text{s} \\\\\n&= 3\\,600\\,000\\,\\text{J}\n\\end{aligned}\n$$. Sähkölasku perustuu käytettyyn energiaan."
         },
         {
           "text": "Kuinka suuri oli perheen laitteiden yhteenlaskettu teho.",
