@@ -216,7 +216,7 @@ $$\begin{aligned}
 &= 3\,\text{dB} \cdot 1.755 \\
 &= 5.26\,\text{dB}
 \end{aligned}$$
-Part c: the enclosure lowers the level of sawing to $87\,\text{dB}$, whereby $n_1 = \dfrac{2}{3}$ and $t_{\text{ref},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5.04\,\text{h}$, and the share is $1.0 : 5.04 = 0.198$. The new dose is $D = 0.198 + 1.0 + 0.375 = 1.57$.
+Part c: the enclosure lowers the level of sawing to $87\,\text{dB}$, whereby $n_1 = \dfrac{2}{3}$ and $t_{\text{ref},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5.04\,\text{h}$, and the share is $1.0 : 5.04 = 0.198$. The new dose is $$\begin{aligned} D &= 0.198 + 1.0 + 0.375 \\ &= 1.57 \end{aligned}$$.
 **Answer:** a) about $340\,\%$. b) at least $5.3\,\text{dB}$. c) It is not enough alone, because the dose is still about $160\,\%$ of the reference dose. In addition to the enclosure, for example hearing protectors with an attenuation of at least $\dfrac{3\,\text{dB} \cdot \lg 1.57}{\lg 2} = 2.0\,\text{dB}$ are needed, or the planer could be placed away from the workstation.
 **Reasonableness:** Sawing and planing are above the action value, so the dose must be over $100\,\%$. Ordinary protectors attenuate $20$–$30\,\text{dB}$, so $5.3\,\text{dB}$ is easily met.
 

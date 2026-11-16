@@ -36,7 +36,7 @@
 **Conversions:** Not needed: the power is in watts and the distance in metres.
 **Substitution:** $I = \dfrac{2.0\,\text{W}}{4\pi \cdot (25\,\text{m})^2} = \dfrac{2.0\,\text{W}}{7854\,\text{m}^2} = 2.55 \cdot 10^{-4}\,\text{W/m}^2 = 0.000255\,\text{W/m}^2$
 **Answer:** $0.00025\,\text{W/m}^2$, two significant figures like the power $2.0\,\text{W}$ and the distance $25\,\text{m}$.
-**Reasonableness:** The area of the sphere is about $8000\,\text{m}^2$, and $2\,\text{W} : 8000\,\text{m}^2 = 0.00025\,\text{W/m}^2$. As a level this is about $84\,\text{dB}$, which is believable for a siren at $25\,\text{m}$.
+**Reasonableness:** The area of the sphere is about $8000\,\text{m}^2$, and $$\begin{aligned} &2\,\text{W} : 8000\,\text{m}^2 \\ &= 0.00025\,\text{W/m}^2 \end{aligned}$$. As a level this is about $84\,\text{dB}$, which is believable for a siren at $25\,\text{m}$.
 
 ## fy5-15-L1-05
 **Given:** ratio of the intensities $\dfrac{I_2}{I_1} = 100$
@@ -83,7 +83,7 @@
 **Conversions:** Not needed: both distances are in metres, and the units cancel.
 **Substitution:** $\dfrac{r_1^2}{r_2^2} = \dfrac{(3.0\,\text{m})^2}{(12\,\text{m})^2} = \dfrac{1}{16}$, so $L_2 = 85\,\text{dB} + 10\,\text{dB} \cdot \lg \dfrac{1}{16} = 85\,\text{dB} - 12.04\,\text{dB} = 72.96\,\text{dB}$
 **Answer:** $73\,\text{dB}$, in whole decibels like the initial level $85\,\text{dB}$.
-**Reasonableness:** The distance doubles twice ($3\,\text{m} \to 6\,\text{m} \to 12\,\text{m}$), and each doubling lowers the level by about $6\,\text{dB}$: $85\,\text{dB} - 6\,\text{dB} - 6\,\text{dB} = 73\,\text{dB}$. The level decreases, as it should farther from the source.
+**Reasonableness:** The distance doubles twice ($3\,\text{m} \to 6\,\text{m} \to 12\,\text{m}$), and each doubling lowers the level by about $6\,\text{dB}$: $$85\,\text{dB} - 6\,\text{dB} - 6\,\text{dB} = 73\,\text{dB}$$. The level decreases, as it should farther from the source.
 
 ## fy5-15-L2-04
 **Given:** one saw $L_1 = 85\,\text{dB}$, all saws together $L = 91\,\text{dB}$, the saws are identical and equally far from the meter

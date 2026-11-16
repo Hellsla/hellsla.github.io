@@ -36,7 +36,7 @@
 **Muunnokset:** Ei tarvita: teho on watteina ja etäisyys metreinä.
 **Sijoitus:** $I = \dfrac{2{,}0\,\text{W}}{4\pi \cdot (25\,\text{m})^2} = \dfrac{2{,}0\,\text{W}}{7854\,\text{m}^2} = 2{,}55 \cdot 10^{-4}\,\text{W/m}^2 = 0{,}000255\,\text{W/m}^2$
 **Vastaus:** $0{,}00025\,\text{W/m}^2$, kaksi merkitsevää numeroa kuten teho $2{,}0\,\text{W}$ ja etäisyys $25\,\text{m}$.
-**Järkevyys:** Pallon pinta-ala on noin $8000\,\text{m}^2$, ja $2\,\text{W} : 8000\,\text{m}^2 = 0{,}00025\,\text{W/m}^2$. Tasona tämä on noin $84\,\text{dB}$, mikä on sireenille $25\,\text{m}$:n päässä uskottava.
+**Järkevyys:** Pallon pinta-ala on noin $8000\,\text{m}^2$, ja $$\begin{aligned} &2\,\text{W} : 8000\,\text{m}^2 \\ &= 0{,}00025\,\text{W/m}^2 \end{aligned}$$. Tasona tämä on noin $84\,\text{dB}$, mikä on sireenille $25\,\text{m}$:n päässä uskottava.
 
 ## fy5-15-L1-05
 **Annettu:** intensiteettien suhde $\dfrac{I_2}{I_1} = 100$
@@ -83,7 +83,7 @@
 **Muunnokset:** Ei tarvita: kumpikin etäisyys on metreinä, ja yksiköt supistuvat.
 **Sijoitus:** $\dfrac{r_1^2}{r_2^2} = \dfrac{(3{,}0\,\text{m})^2}{(12\,\text{m})^2} = \dfrac{1}{16}$, joten $L_2 = 85\,\text{dB} + 10\,\text{dB} \cdot \lg \dfrac{1}{16} = 85\,\text{dB} - 12{,}04\,\text{dB} = 72{,}96\,\text{dB}$
 **Vastaus:** $73\,\text{dB}$, kokonaisina desibeleinä kuten lähtötaso $85\,\text{dB}$.
-**Järkevyys:** Etäisyys kaksinkertaistuu kahdesti ($3\,\text{m} \to 6\,\text{m} \to 12\,\text{m}$), ja kumpikin kaksinkertaistus pienentää tasoa noin $6\,\text{dB}$: $85\,\text{dB} - 6\,\text{dB} - 6\,\text{dB} = 73\,\text{dB}$. Taso pienenee, kuten pitää kauempana lähteestä.
+**Järkevyys:** Etäisyys kaksinkertaistuu kahdesti ($3\,\text{m} \to 6\,\text{m} \to 12\,\text{m}$), ja kumpikin kaksinkertaistus pienentää tasoa noin $6\,\text{dB}$: $$85\,\text{dB} - 6\,\text{dB} - 6\,\text{dB} = 73\,\text{dB}$$. Taso pienenee, kuten pitää kauempana lähteestä.
 
 ## fy5-15-L2-04
 **Annettu:** yksi saha $L_1 = 85\,\text{dB}$, kaikki sahat yhdessä $L = 91\,\text{dB}$, sahat ovat samanlaisia ja yhtä kaukana mittarista

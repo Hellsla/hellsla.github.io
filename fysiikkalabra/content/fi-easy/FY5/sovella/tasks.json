@@ -252,7 +252,7 @@
             {
               "key": "units_precision",
               "points": 1,
-              "detail": "$r \\approx 1{,}6 \\cdot 10^{8}\\,\\text{m} = 160\\,000\\,\\text{km}$"
+              "detail": "$$\\begin{aligned} r &\\approx 1{,}6 \\cdot 10^{8}\\,\\text{m} \\\\ &= 160\\,000\\,\\text{km} \\end{aligned}$$"
             }
           ]
         },

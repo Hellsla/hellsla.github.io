@@ -216,7 +216,7 @@ $$\begin{aligned}
 &= 3\,\text{dB} \cdot 1{,}755 \\
 &= 5{,}26\,\text{dB}
 \end{aligned}$$
-Kohta c: kotelo laskee sahauksen tason arvoon $87\,\text{dB}$, jolloin $n_1 = \dfrac{2}{3}$ ja $t_{\text{v},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5{,}04\,\text{h}$, osuus $1{,}0 : 5{,}04 = 0{,}198$. Uusi annos on $D = 0{,}198 + 1{,}0 + 0{,}375 = 1{,}57$.
+Kohta c: kotelo laskee sahauksen tason arvoon $87\,\text{dB}$, jolloin $n_1 = \dfrac{2}{3}$ ja $t_{\text{v},1} = \dfrac{8\,\text{h}}{2^{2/3}} = 5{,}04\,\text{h}$, osuus $1{,}0 : 5{,}04 = 0{,}198$. Uusi annos on $$\begin{aligned} D &= 0{,}198 + 1{,}0 + 0{,}375 \\ &= 1{,}57 \end{aligned}$$.
 **Vastaus:** a) noin $340\,\%$. b) vähintään $5{,}3\,\text{dB}$. c) Ei riitä yksin, koska annos on edelleen noin $160\,\%$ vertailuannoksesta. Kotelon lisäksi tarvitaan esimerkiksi kuulonsuojaimet, joiden vaimennus on vähintään $\dfrac{3\,\text{dB} \cdot \lg 1{,}57}{\lg 2} = 2{,}0\,\text{dB}$, tai höyläyskoneen sijoittaminen erilleen työpisteestä.
 **Järkevyys:** Sahaus ja höyläys ovat yli toiminta-arvon, joten annoksen täytyy olla yli $100\,\%$. Tavalliset suojaimet vaimentavat $20$–$30\,\text{dB}$, joten $5{,}3\,\text{dB}$ täyttyy helposti.
 

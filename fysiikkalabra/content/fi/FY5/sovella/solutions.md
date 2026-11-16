@@ -27,7 +27,7 @@
 
 *Tyhjä nosturi.* Ilman kuormaa kokonaismomentti osoittaa vastapainon suuntaan: nyt se on $412\,\text{kNm}$. Kahden tonnin lisäys kasvattaa sitä $$\begin{aligned} &2000\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 10\,\text{m} \\ &= 196{,}2\,\text{kNm} \end{aligned}$$, jolloin kokonaismomentti on $608\,\text{kNm}$. Se ylittää rajan $600\,\text{kNm}$, ja torni kuormittuu liikaa vastapainon puolelle aina, kun koukussa ei ole kuormaa.
 
-*Kuinka paljon voisi lisätä.* Tyhjällä nosturilla rajaan on varaa $600\,\text{kNm} - 412\,\text{kNm} = 188\,\text{kNm}$, joten vastapainoa voi lisätä enintään $$\begin{aligned} &188\,000\,\text{Nm} : (9{,}81\,\text{m/s}^2 \cdot 10\,\text{m}) \\ &\approx 1{,}9\,\text{t} \end{aligned}$$. Silloin kärjen suurin kuorma olisi $1200\,\text{kNm} : 392{,}4\,\text{m}^2/\text{s}^2 \approx 3{,}1\,\text{t}$.
+*Kuinka paljon voisi lisätä.* Tyhjällä nosturilla rajaan on varaa $$600\,\text{kNm} - 412\,\text{kNm} = 188\,\text{kNm}$$, joten vastapainoa voi lisätä enintään $$\begin{aligned} &188\,000\,\text{Nm} : (9{,}81\,\text{m/s}^2 \cdot 10\,\text{m}) \\ &\approx 1{,}9\,\text{t} \end{aligned}$$. Silloin kärjen suurin kuorma olisi $$1200\,\text{kNm} : 392{,}4\,\text{m}^2/\text{s}^2 \approx 3{,}1\,\text{t}$$.
 
 *Johtopäätös.* Ehdotus ei käy sellaisenaan. Tehtävän mallissa vastapaino mitoitetaan niin, että raja ei ylity tyhjällä eikä täysin kuormatulla nosturilla. Kahden tonnin sijaan vastapainoa voisi lisätä enintään noin $1{,}9\,\text{t}$, eikä nostokykyä voi kasvattaa siitä enempää ilman tukevampaa tornia. Oikeassa nosturissa yksi momenttiehto ei riitä: vastapainoa saa muuttaa vain valmistajan ohjeiden mukaan, koska turvallisuus riippuu myös esimerkiksi tuulesta, rakenteiden lujuudesta ja perustuksesta.
 
@@ -198,7 +198,7 @@ Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
 **Kaava:** $\dfrac{4\pi^2 r^2}{T^2} = \dfrac{\gamma M}{r}$, josta $r^3 = \dfrac{\gamma M T^2}{4\pi^2}$ ja $r = \sqrt[3]{\dfrac{\gamma M T^2}{4\pi^2}}$
 **Muunnokset:** $T = 9{,}93 \cdot 3600\,\text{s} = 35\,748\,\text{s}$
 **Sijoitus:** $r^3 = \dfrac{1{,}27 \cdot 10^{17}\,\text{m}^3/\text{s}^2 \cdot (35\,748\,\text{s})^2}{4\pi^2} = 4{,}11 \cdot 10^{24}\,\text{m}^3$, joten $r = 1{,}60 \cdot 10^{8}\,\text{m}$
-**Vastaus:** $r \approx 1{,}6 \cdot 10^{8}\,\text{m} = 160\,000\,\text{km}$ Jupiterin keskipisteestä. Kaksi merkitsevää numeroa kuten b-kohdan tuloksessa.
+**Vastaus:** $$\begin{aligned} r &\approx 1{,}6 \cdot 10^{8}\,\text{m} \\ &= 160\,000\,\text{km} \end{aligned}$$ Jupiterin keskipisteestä. Kaksi merkitsevää numeroa kuten b-kohdan tuloksessa.
 **Järkevyys:** Kiertoaika $9{,}93\,\text{h}$ on lyhyempi kuin Amalthean $0{,}4982\,\text{d} \approx 12\,\text{h}$, joten radan on oltava Amalthean radan ($181\,400\,\text{km}$) sisäpuolella, kuten se on. Jupiterin säde on noin $71\,500\,\text{km}$, joten luotain kiertäisi noin $89\,000\,\text{km}$:n korkeudella pilvien yläpuolella.
 
 ### d)
@@ -318,7 +318,7 @@ Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
 **Periaate:** Satunnainen virhe hajottaa pisteitä suoran molemmin puolin. Systemaattinen virhe tai mallin puute siirtää tuloksia samaan suuntaan. Tulos on luotettava, kun eri menetelmät antavat saman arvon epävarmuuksien rajoissa.
 **Mallivastaus:** *Epävarmuus.* Käsiajanotossa reaktioajan epävarmuus on noin $0{,}2\,\text{s}$. Kymmenen jakson ajasta se on jaksonajassa vain $0{,}02\,\text{s}$, mikä on syy mitata kymmenen jaksoa. Pisteet poikkeavat suorasta enintään noin $0{,}005\,\text{s}^2$, joten satunnainen vaihtelu on pieni eikä selitä pystyakselin leikkauskohtaa $0{,}028\,\text{s}^2$.
 
-*Poikkeaman syy.* Mallissa $T = 2\pi\sqrt{\tfrac{m}{k}}$ värähtelee vain punnus, ja jousi on massaton. Jousen oma massa $45\,\text{g}$ liikkuu kuitenkin mukana: sen alapää liikkuu punnuksen mukana ja yläpää on paikallaan. Värähtelevä massa on siksi punnuksen massaa suurempi, mikä siirtää koko suoraa ylöspäin mutta ei muuta sen kulmakerrointa. Leikkauskohdasta saadaan lisämassa $0{,}028\,\text{s}^2 : 1{,}984\,\text{s}^2/\text{kg} \approx 0{,}014\,\text{kg}$, noin kolmasosa jousen massasta. Tulos on järkevä, koska jousen alaosa liikkuu lähes yhtä paljon kuin punnus ja yläosa tuskin lainkaan.
+*Poikkeaman syy.* Mallissa $T = 2\pi\sqrt{\tfrac{m}{k}}$ värähtelee vain punnus, ja jousi on massaton. Jousen oma massa $45\,\text{g}$ liikkuu kuitenkin mukana: sen alapää liikkuu punnuksen mukana ja yläpää on paikallaan. Värähtelevä massa on siksi punnuksen massaa suurempi, mikä siirtää koko suoraa ylöspäin mutta ei muuta sen kulmakerrointa. Leikkauskohdasta saadaan lisämassa $$0{,}028\,\text{s}^2 : 1{,}984\,\text{s}^2/\text{kg} \approx 0{,}014\,\text{kg}$$, noin kolmasosa jousen massasta. Tulos on järkevä, koska jousen alaosa liikkuu lähes yhtä paljon kuin punnus ja yläosa tuskin lainkaan.
 
 *Vertailu.* Lepomittauksesta $$\begin{aligned} k &= \dfrac{mg}{x} \\ &= \dfrac{0{,}200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{0{,}098\,\text{m}} \\ &\approx 20{,}0\,\text{N/m} \end{aligned}$$. Se eroaa b-kohdan tuloksesta $19{,}9\,\text{N/m}$ alle prosentin, joten kaksi toisistaan riippumatonta menetelmää tukevat toisiaan.
 
@@ -332,7 +332,7 @@ Vaaka-akselille valitaan $\tfrac{1}{r}$ ja pystyakselille $v^2$.
 **Muunnokset:** $A = 5{,}0\,\text{cm} = 0{,}050\,\text{m}$ ja $m_\text{j} = 45\,\text{g} = 0{,}045\,\text{kg}$
 **Sijoitus:** $m_\text{eff} = 0{,}250\,\text{kg} + 0{,}045\,\text{kg} : 3 = 0{,}265\,\text{kg}$ ja $v_\text{max} = 0{,}050\,\text{m} \cdot \sqrt{\dfrac{19{,}9\,\text{N/m}}{0{,}265\,\text{kg}}} = 0{,}050\,\text{m} \cdot 8{,}67\,\tfrac{1}{\text{s}} = 0{,}433\,\text{m/s}$
 **Vastaus:** $v_\text{max} \approx 0{,}43\,\text{m/s}$, kaksi merkitsevää numeroa kuten amplitudissa $5{,}0\,\text{cm}$.
-**Järkevyys:** Jaksonaika on noin $2\pi\sqrt{0{,}265\,\text{kg} : 19{,}9\,\text{N/m}} \approx 0{,}73\,\text{s}$, ja punnus kulkee jakson aikana $4A = 20\,\text{cm}$, joten sen keskimääräinen vauhti on noin $0{,}28\,\text{m/s}$. Suurin nopeus on tätä suurempi, kuten pitää. Massattoman jousen mallilla saataisiin hieman suurempi nopeus, noin $0{,}45\,\text{m/s}$, koska silloin sama energia ei jakaudu lainkaan jouselle.
+**Järkevyys:** Jaksonaika on noin $$\begin{aligned} &2\pi\sqrt{0{,}265\,\text{kg} : 19{,}9\,\text{N/m}} \\ &\approx 0{,}73\,\text{s} \end{aligned}$$, ja punnus kulkee jakson aikana $4A = 20\,\text{cm}$, joten sen keskimääräinen vauhti on noin $0{,}28\,\text{m/s}$. Suurin nopeus on tätä suurempi, kuten pitää. Massattoman jousen mallilla saataisiin hieman suurempi nopeus, noin $0{,}45\,\text{m/s}$, koska silloin sama energia ei jakaudu lainkaan jouselle.
 
 ### Hyväksytään myös
 - b-kohdassa kulmakertoimet $1{,}95\text{–}2{,}02\,\text{s}^2/\text{kg}$ ja niistä lasketut jousivakiot $19{,}5\text{–}20{,}2\,\text{N/m}$ hyväksytään, samoin laskimen tai taulukkolaskennan suoran sovitus ($19{,}9\,\text{N/m}$).

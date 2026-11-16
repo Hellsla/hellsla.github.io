@@ -73,7 +73,7 @@ jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen ja align-muotoon (opettaja 2026-11-15)
 
-Varattu: claude/fy5-clipped-formulas (FY5)
+FY5 tehty (PR #638): 344 riviä pois listalta (luvut, tehtävät, Sovella ja Esimerkkikoe kolmella kielellä); 9 jää: fy5-1:n momenttisumma $\Sigma M = g\,(m_A r_A + \ldots)$ ja fy5-4:n ketju $1200\,\text{kg}\cdot\left(\ldots\right)$ (sulkeiden sisältö on yksinään ruutua leveämpi, eikä rivi saa alkaa sulkeiden sisältä) sekä fy5-12:n Tutki-vaiheen summa $3{,}20\,\text{m} + 2{,}40\,\text{m} = 5{,}60\,\text{m}$ (sen luvun tiedekatselmointi on vanhemmasta versiosta, ja reviews.py luokittelee rivityksen yhdessä välillä tehtyjen muutosten kanssa lukumuutokseksi: rivitys vaatisi täyden tiedekatselmoinnin), kukin kolmella kielellä. Lisäksi fy5-15:n tehtävän ```latex-lohkon rivi ylittää 352 px:llä 6 px (360 px:llä mahtuu; lohko ei ole reflow-luokan piirissä, joten sitä ei rivitetty).
 
 Varattu: claude/fy8-clipped-formulas (FY8)
 

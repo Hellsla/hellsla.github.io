@@ -87,7 +87,7 @@
 **Muunnokset:** Nopeudet ovat yksikössä km/s ja aika sekunteina, joten etäisyys tulee kilometreinä ja kulkuaika sekunteina.
 **Sijoitus:** $d = \dfrac{6{,}0\,\text{km/s} \cdot 3{,}5\,\text{km/s}}{2{,}5\,\text{km/s}} \cdot 14{,}0\,\text{s} = 117{,}6\,\text{km}$ ja $t_\text{P} = \dfrac{117{,}6\,\text{km}}{6{,}0\,\text{km/s}} = 19{,}6\,\text{s}$
 **Vastaus:** noin $20\,\text{s}$, kaksi merkitsevää numeroa kuten nopeuksissa $6{,}0\,\text{km/s}$ ja $3{,}5\,\text{km/s}$.
-**Järkevyys:** S-aallon kulkuaika on $117{,}6\,\text{km} : 3{,}5\,\text{km/s} = 33{,}6\,\text{s}$, ja $33{,}6\,\text{s} - 19{,}6\,\text{s} = 14{,}0\,\text{s}$, kuten mitattiin. P-aallon kulkuaika on suurempi kuin aikaero, koska P-aaltokin tarvitsee aikaa koko matkaan.
+**Järkevyys:** S-aallon kulkuaika on $$117{,}6\,\text{km} : 3{,}5\,\text{km/s} = 33{,}6\,\text{s}$$, ja $33{,}6\,\text{s} - 19{,}6\,\text{s} = 14{,}0\,\text{s}$, kuten mitattiin. P-aallon kulkuaika on suurempi kuin aikaero, koska P-aaltokin tarvitsee aikaa koko matkaan.
 
 ## fy5-17-L2-08
 **Kysytty:** miten asemien A ja B etäisyydet järistyksen alkukohdasta suhtautuvat toisiinsa, kun S-aallon viive P-aaltoon nähden on asemalla A $8{,}0\,\text{s}$ ja asemalla B $24{,}0\,\text{s}$, ja mikä perustelu selittää sen
@@ -118,7 +118,7 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Muunnokset:** $40\,\text{ms} = 40 \cdot 10^{-3}\,\text{s} = 0{,}040\,\text{s}$
 **Sijoitus:** $d = \dfrac{(343\,\text{m/s} + 10\,\text{m/s}) \cdot 0{,}040\,\text{s}}{2} = \dfrac{14{,}12\,\text{m}}{2} = 7{,}06\,\text{m}$
 **Vastaus:** $7{,}06\,\text{m}$ (lähtötiedot kahdella merkitsevällä numerolla antaisivat $7{,}1\,\text{m}$; kolmas numero näytetään, jotta ero paikallaan olevan lepakon tulokseen $6{,}86\,\text{m}$ erottuu).
-**Järkevyys:** Jos lepakko olisi paikallaan, etäisyys olisi $343\,\text{m/s} \cdot 0{,}040\,\text{s} : 2 = 6{,}86\,\text{m}$. Lepakon liike lyhentää paluumatkaa, joten seinä oli kauempana, $20\,\text{cm}$ eli puolet lepakon lentämästä matkasta $10\,\text{m/s} \cdot 0{,}040\,\text{s} = 0{,}40\,\text{m}$.
+**Järkevyys:** Jos lepakko olisi paikallaan, etäisyys olisi $$343\,\text{m/s} \cdot 0{,}040\,\text{s} : 2 = 6{,}86\,\text{m}$$. Lepakon liike lyhentää paluumatkaa, joten seinä oli kauempana, $20\,\text{cm}$ eli puolet lepakon lentämästä matkasta $10\,\text{m/s} \cdot 0{,}040\,\text{s} = 0{,}40\,\text{m}$.
 
 ## fy5-17-L3-02
 **Annettu:** rasvan paksuus $d_\text{ras} = 4{,}0\,\text{cm}$, $v_\text{ras} = 1450\,\text{m/s}$, lihaksen $v_\text{lih} = 1580\,\text{m/s}$, kaiun kulkuaika $t = 80{,}0\,\mu\text{s}$ lihaskerroksen alapinnalta
@@ -128,7 +128,7 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Muunnokset:** $d_\text{ras} = 4{,}0\,\text{cm} = 0{,}040\,\text{m}$, $t = 80{,}0 \cdot 10^{-6}\,\text{s}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $t_\text{ras} = \dfrac{2 \cdot 0{,}040\,\text{m}}{1450\,\text{m/s}} = 55{,}17 \cdot 10^{-6}\,\text{s}$, $d_\text{lih} = \dfrac{1580\,\text{m/s} \cdot 24{,}83 \cdot 10^{-6}\,\text{s}}{2} = 0{,}019\,62\,\text{m}$ ja $d = 0{,}040\,\text{m} + 0{,}019\,62\,\text{m} = 0{,}059\,62\,\text{m} = 5{,}96\,\text{cm}$
 **Vastaus:** $5{,}96\,\text{cm}$ (rasvan paksuus $4{,}0\,\text{cm}$ rajoittaisi kahteen merkitsevään numeroon, $6{,}0\,\text{cm}$; kolme numeroa näytetään, jotta ero yhden nopeuden tulokseen erottuu).
-**Järkevyys:** Laite, joka olettaa nopeudeksi $1540\,\text{m/s}$, näyttäisi syvyydeksi $1540\,\text{m/s} \cdot 80{,}0\,\mu\text{s} : 2 = 6{,}16\,\text{cm}$, eli $2\,\text{mm}$ liikaa. Jos koko matka olisi lihasta, tulos olisi $1580\,\text{m/s} \cdot 80{,}0\,\mu\text{s} : 2 = 6{,}32\,\text{cm}$. Todellinen syvyys on näiden alapuolella, koska rasvassa ääni etenee hitaammin. Ero on silti vain muutaman prosentin, joten yksi oletusnopeus riittää useimpiin mittauksiin.
+**Järkevyys:** Laite, joka olettaa nopeudeksi $1540\,\text{m/s}$, näyttäisi syvyydeksi $$\begin{aligned} &1540\,\text{m/s} \cdot 80{,}0\,\mu\text{s} : 2 \\ &= 6{,}16\,\text{cm} \end{aligned}$$, eli $2\,\text{mm}$ liikaa. Jos koko matka olisi lihasta, tulos olisi $$\begin{aligned} &1580\,\text{m/s} \cdot 80{,}0\,\mu\text{s} : 2 \\ &= 6{,}32\,\text{cm} \end{aligned}$$. Todellinen syvyys on näiden alapuolella, koska rasvassa ääni etenee hitaammin. Ero on silti vain muutaman prosentin, joten yksi oletusnopeus riittää useimpiin mittauksiin.
 
 ## fy5-17-L3-03
 **Annettu:** syvyydet $h_1 = 4000\,\text{m}$ ja $h_2 = 10\,\text{m}$, aallonpituus $\lambda_1 = 200\,\text{km}$; jaksonaika $T$ sama
@@ -138,7 +138,7 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Muunnokset:** Syvyydet ovat samassa yksikössä, joten niiden suhde on yksikötön; aallonpituus voidaan pitää kilometreinä.
 **Sijoitus:** $\lambda_2 = 200\,\text{km} \cdot \sqrt{\dfrac{10\,\text{m}}{4000\,\text{m}}} = 200\,\text{km} \cdot 0{,}050 = 10{,}0\,\text{km}$
 **Vastaus:** $10\,\text{km}$, kaksi merkitsevää numeroa kuten syvyydessä $10\,\text{m}$.
-**Järkevyys:** Valtamerellä nopeus on $\sqrt{9{,}81 \cdot 4000}\,\text{m/s} = 198\,\text{m/s}$, joten jaksonaika on $200\,000\,\text{m} : 198\,\text{m/s} \approx 1010\,\text{s}$ eli noin $17\,\text{min}$. Rannikolla nopeus on $9{,}9\,\text{m/s}$, ja $9{,}9\,\text{m/s} \cdot 1010\,\text{s} \approx 10\,\text{km}$. Aallonpituus on yhä paljon suurempi kuin syvyys, joten kaava pätee.
+**Järkevyys:** Valtamerellä nopeus on $$\sqrt{9{,}81 \cdot 4000}\,\text{m/s} = 198\,\text{m/s}$$, joten jaksonaika on $$200\,000\,\text{m} : 198\,\text{m/s} \approx 1010\,\text{s}$$ eli noin $17\,\text{min}$. Rannikolla nopeus on $9{,}9\,\text{m/s}$, ja $9{,}9\,\text{m/s} \cdot 1010\,\text{s} \approx 10\,\text{km}$. Aallonpituus on yhä paljon suurempi kuin syvyys, joten kaava pätee.
 
 
 ## fy5-17-L1-06
@@ -165,7 +165,7 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Muunnokset:** $50{,}3\,\mu\text{s} = 50{,}3 \cdot 10^{-6}\,\text{s}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** a) $d_1 = 1540\,\text{m/s} \cdot 21{,}4 \cdot 10^{-6}\,\text{s} : 2 = 1{,}65\,\text{cm}$, $d_2 = 4{,}54\,\text{cm}$ ja $d_3 = 8{,}41\,\text{cm}$. b) $\Delta d = \dfrac{1540\,\text{m/s} \cdot 50{,}3 \cdot 10^{-6}\,\text{s}}{2} = 0{,}038\,73\,\text{m} = 3{,}873\,\text{cm}$
 **Vastaus:** $3{,}87\,\text{cm}$, kolme merkitsevää numeroa kuten piikkien hetkissä.
-**Järkevyys:** Syvyyksien erotus $8{,}41\,\text{cm} - 4{,}54\,\text{cm} = 3{,}87\,\text{cm}$ on sama kuin suoraan aikaerosta laskettu paksuus. Kerroksessa kaiku kulkee edestakaisin $2 \cdot 3{,}87\,\text{cm} = 7{,}7\,\text{cm}$, ja $7{,}7\,\text{cm} : 1540\,\text{m/s} \approx 50\,\mu\text{s}$, kuten mitattiin.
+**Järkevyys:** Syvyyksien erotus $$8{,}41\,\text{cm} - 4{,}54\,\text{cm} = 3{,}87\,\text{cm}$$ on sama kuin suoraan aikaerosta laskettu paksuus. Kerroksessa kaiku kulkee edestakaisin $2 \cdot 3{,}87\,\text{cm} = 7{,}7\,\text{cm}$, ja $7{,}7\,\text{cm} : 1540\,\text{m/s} \approx 50\,\mu\text{s}$, kuten mitattiin.
 
 ## fy5-17-L2-06
 **Annettu:** etäisyydet $L = 20{,}0$; $30{,}0$; $40{,}0$ ja $50{,}0\,\text{cm}$ sekä kaiun paluuajat $t = 270$; $407$; $540$ ja $677\,\mu\text{s}$
@@ -180,17 +180,17 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 ## fy5-17-L2-07
 **Kysytty:** mikä virhe opiskelijan ratkaisussa on
 **Periaate:** Kumpikin aalto kulkee saman matkan $d$ tasaisella nopeudella, ja saapumisaikojen ero on S- ja P-aallon kulkuaikojen erotus: $\Delta t = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$. Pelkkä tulo $v_\text{P}\,\Delta t$ olisi matka, jonka P-aalto kulkisi ajassa $\Delta t$, eikä se ole järistyksen etäisyys.
-**Mallivastaus:** Aikaero $\Delta t$ ei ole P-aallon kulkuaika vaan kulkuaikojen erotus, joten $d \neq v_\text{P}\,\Delta t$. P-aalto on ehtinyt kulkea koko matkan ennen kuin $\Delta t$ alkaa. Oikea tulos on $d = \dfrac{6{,}0 \cdot 3{,}5}{6{,}0 - 3{,}5} \cdot 16{,}0\,\text{km} = 134\,\text{km}$. Tarkistus: P-aallon kulkuaika on $134\,\text{km} : 6{,}0\,\text{km/s} = 22{,}4\,\text{s}$, S-aallon $134\,\text{km} : 3{,}5\,\text{km/s} = 38{,}4\,\text{s}$ ja erotus $16{,}0\,\text{s}$. Kahdella jakaminen kuuluisi kaikuun eikä yksisuuntaiseen aaltoon, S-aallon nopeuden käyttö antaisi yhtä väärän tuloksen $56\,\text{km}$, ja yksiköt ovat ratkaisussa kunnossa.
+**Mallivastaus:** Aikaero $\Delta t$ ei ole P-aallon kulkuaika vaan kulkuaikojen erotus, joten $d \neq v_\text{P}\,\Delta t$. P-aalto on ehtinyt kulkea koko matkan ennen kuin $\Delta t$ alkaa. Oikea tulos on $$\begin{aligned} d &= \dfrac{6{,}0 \cdot 3{,}5}{6{,}0 - 3{,}5} \cdot 16{,}0\,\text{km} \\ &= 134\,\text{km} \end{aligned}$$. Tarkistus: P-aallon kulkuaika on $134\,\text{km} : 6{,}0\,\text{km/s} = 22{,}4\,\text{s}$, S-aallon $134\,\text{km} : 3{,}5\,\text{km/s} = 38{,}4\,\text{s}$ ja erotus $16{,}0\,\text{s}$. Kahdella jakaminen kuuluisi kaikuun eikä yksisuuntaiseen aaltoon, S-aallon nopeuden käyttö antaisi yhtä väärän tuloksen $56\,\text{km}$, ja yksiköt ovat ratkaisussa kunnossa.
 
 ## fy5-17-L3-04
 **Annettu:** asemat A$(0, 0)$, B$(120, 0)$ ja C$(60, 90)$ kilometreinä; $\Delta t_\text{A} = 10{,}0\,\text{s}$, $\Delta t_\text{B} = 7{,}5\,\text{s}$, $\Delta t_\text{C} = 5{,}9\,\text{s}$; $v_\text{P} = 6{,}0\,\text{km/s}$, $v_\text{S} = 3{,}5\,\text{km/s}$
 **Kysytty:** järistyksen $y$-koordinaatti kilometreinä
 **Periaate:** Jokaisen aseman aikaerosta saadaan etäisyys järistykseen, joten järistys on ympyrällä, jonka keskipiste on asema. Kahden ympyrän leikkauspisteitä on kaksi, ja kolmannen aseman ympyrä valitsee niistä oikean.
-**Kaava:** $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$. Asemien A ja B ympyröiden yhtälöt ovat $x^2 + y^2 = d_\text{A}^2$ ja $(x - 120)^2 + y^2 = d_\text{B}^2$. Avataan toinen yhtälö: $(x - 120)^2 = x^2 - 240x + 14\,400$. Kun ensimmäinen yhtälö vähennetään toisesta, $x^2$ ja $y^2$ supistuvat ja jää $240x = d_\text{A}^2 - d_\text{B}^2 + 120^2$, joten $x = \dfrac{d_\text{A}^2 - d_\text{B}^2 + 120^2}{240}$ ja $y = \pm\sqrt{d_\text{A}^2 - x^2}$.
+**Kaava:** $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$. Asemien A ja B ympyröiden yhtälöt ovat $x^2 + y^2 = d_\text{A}^2$ ja $(x - 120)^2 + y^2 = d_\text{B}^2$. Avataan toinen yhtälö: $$(x - 120)^2 = x^2 - 240x + 14\,400$$. Kun ensimmäinen yhtälö vähennetään toisesta, $x^2$ ja $y^2$ supistuvat ja jää $240x = d_\text{A}^2 - d_\text{B}^2 + 120^2$, joten $x = \dfrac{d_\text{A}^2 - d_\text{B}^2 + 120^2}{240}$ ja $y = \pm\sqrt{d_\text{A}^2 - x^2}$.
 **Muunnokset:** Nopeudet ovat yksikössä km/s ja ajat sekunteina, joten etäisyydet tulevat kilometreinä. Kerroin on $\dfrac{6{,}0 \cdot 3{,}5}{2{,}5}\,\text{km/s} = 8{,}4\,\text{km/s}$.
-**Sijoitus:** a) $d_\text{A} = 8{,}4\,\text{km/s} \cdot 10{,}0\,\text{s} = 84{,}0\,\text{km}$, $d_\text{B} = 8{,}4\,\text{km/s} \cdot 7{,}5\,\text{s} = 63{,}0\,\text{km}$ ja $d_\text{C} = 8{,}4\,\text{km/s} \cdot 5{,}9\,\text{s} = 49{,}6\,\text{km}$. b) $x = \dfrac{7056 - 3969 + 14\,400}{240}\,\text{km} = 72{,}9\,\text{km}$ ja $y = \pm\sqrt{7056 - 5309}\,\text{km} = \pm 41{,}8\,\text{km}$. Mahdolliset paikat ovat $(72{,}9;\ 41{,}8)$ ja $(72{,}9;\ -41{,}8)$. Etäisyys asemalle C on ensimmäisestä $$\begin{aligned} &\sqrt{(72{,}9 - 60)^2 + (41{,}8 - 90)^2}\,\text{km} \\ &= 49{,}9\,\text{km} \end{aligned}$$ ja toisesta $\sqrt{12{,}9^2 + 131{,}8^2}\,\text{km} = 132{,}4\,\text{km}$. Mitattu $49{,}6\,\text{km}$ sopii ensimmäiseen.
+**Sijoitus:** a) $d_\text{A} = 8{,}4\,\text{km/s} \cdot 10{,}0\,\text{s} = 84{,}0\,\text{km}$, $d_\text{B} = 8{,}4\,\text{km/s} \cdot 7{,}5\,\text{s} = 63{,}0\,\text{km}$ ja $d_\text{C} = 8{,}4\,\text{km/s} \cdot 5{,}9\,\text{s} = 49{,}6\,\text{km}$. b) $x = \dfrac{7056 - 3969 + 14\,400}{240}\,\text{km} = 72{,}9\,\text{km}$ ja $y = \pm\sqrt{7056 - 5309}\,\text{km} = \pm 41{,}8\,\text{km}$. Mahdolliset paikat ovat $(72{,}9;\ 41{,}8)$ ja $(72{,}9;\ -41{,}8)$. Etäisyys asemalle C on ensimmäisestä $$\begin{aligned} &\sqrt{(72{,}9 - 60)^2 + (41{,}8 - 90)^2}\,\text{km} \\ &= 49{,}9\,\text{km} \end{aligned}$$ ja toisesta $$\sqrt{12{,}9^2 + 131{,}8^2}\,\text{km} = 132{,}4\,\text{km}$$. Mitattu $49{,}6\,\text{km}$ sopii ensimmäiseen.
 **Vastaus:** $y = 42\,\text{km}$ (pohjoiseen asemista A ja B), kaksi merkitsevää numeroa kuten nopeuksissa $6{,}0\,\text{km/s}$ ja $3{,}5\,\text{km/s}$. Järistys on pisteessä $(73;\ 42)\,\text{km}$.
-**Järkevyys:** Tarkistetaan etäisyys asemalle A: $\sqrt{72{,}9^2 + 41{,}8^2}\,\text{km} = 84{,}0\,\text{km}$ ja asemalle B: $\sqrt{47{,}1^2 + 41{,}8^2}\,\text{km} = 63{,}0\,\text{km}$, kuten mitattiin. Asemalta C ennustettu aikaero olisi $49{,}9\,\text{km} : 8{,}4\,\text{km/s} = 5{,}9\,\text{s}$ eli sama kuin mitattu. Toisessa paikassa se olisi $132{,}4\,\text{km} : 8{,}4\,\text{km/s} = 15{,}8\,\text{s}$.
+**Järkevyys:** Tarkistetaan etäisyys asemalle A: $$\begin{aligned} &\sqrt{72{,}9^2 + 41{,}8^2}\,\text{km} \\ &= 84{,}0\,\text{km} \end{aligned}$$ ja asemalle B: $$\begin{aligned} &\sqrt{47{,}1^2 + 41{,}8^2}\,\text{km} \\ &= 63{,}0\,\text{km} \end{aligned}$$, kuten mitattiin. Asemalta C ennustettu aikaero olisi $49{,}9\,\text{km} : 8{,}4\,\text{km/s} = 5{,}9\,\text{s}$ eli sama kuin mitattu. Toisessa paikassa se olisi $$132{,}4\,\text{km} : 8{,}4\,\text{km/s} = 15{,}8\,\text{s}$$.
 **Perustelu c-kohtaan:** Yhden aseman aikaero kertoo vain etäisyyden, joten järistys voi olla missä tahansa pisteessä aseman ympärillä olevalla ympyrällä. Kaksi ympyrää leikkaa yleensä kahdessa pisteessä, jotka ovat peilikuvia asemia yhdistävän suoran suhteen, eikä kahden aseman tiedoilla voi valita niiden välillä. Kolmannen aseman ympyrä kulkee vain toisen pisteen kautta, joten kolme asemaa riittää.
 
 ## fy5-17-L3-05
@@ -202,7 +202,7 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Muunnokset:** $s_1 = 300\,000\,\text{m}$, $s_2 = 100\,000\,\text{m}$ ja $s_3 = 20\,000\,\text{m}$; lopuksi $1\,\text{min} = 60\,\text{s}$.
 **Sijoitus:** Nopeudet ovat $v_1 = \sqrt{9{,}81 \cdot 4000}\,\text{m/s} = 198{,}1\,\text{m/s}$, $v_2 = 99{,}05\,\text{m/s}$ ja $v_3 = 22{,}15\,\text{m/s}$. Kulkuajat ovat $t_1 = 300\,000\,\text{m} : 198{,}1\,\text{m/s} = 1514\,\text{s}$, $t_2 = 1010\,\text{s}$ ja $t_3 = 903\,\text{s}$. Summa on $3427\,\text{s}$, joten $t = 3427\,\text{s} : 60\,\text{s/min} = 57{,}1\,\text{min}$.
 **Vastaus:** $57\,\text{min}$, kaksi merkitsevää numeroa kuten syvyyksissä ja osuuksien pituuksissa.
-**Järkevyys:** Koko matka on $420\,\text{km}$, joten keskinopeus on $420\,000\,\text{m} : 3427\,\text{s} = 123\,\text{m/s}$. Se on pienemmän ($22\,\text{m/s}$) ja suurimman ($198\,\text{m/s}$) nopeuden välissä ja lähempänä suuria nopeuksia, koska pisin osuus on syvää vettä.
+**Järkevyys:** Koko matka on $420\,\text{km}$, joten keskinopeus on $$420\,000\,\text{m} : 3427\,\text{s} = 123\,\text{m/s}$$. Se on pienemmän ($22\,\text{m/s}$) ja suurimman ($198\,\text{m/s}$) nopeuden välissä ja lähempänä suuria nopeuksia, koska pisin osuus on syvää vettä.
 **Perustelu b-kohtaan:** Osuus 3 on $15$ kertaa lyhyempi kuin osuus 1, mutta nopeus siellä on vain $22{,}15\,\text{m/s}$ eli noin $9$ kertaa pienempi kuin $198{,}1\,\text{m/s}$. Kulkuaika $903\,\text{s}$ on siksi $903\,\text{s} : 1514\,\text{s} = 0{,}60$ eli yli puolet osuuden 1 ajasta. Kaava käy viimeisellä osuudella, koska aallonpituus on yli $10\,\text{km}$ eli paljon suurempi kuin syvyys $50\,\text{m}$.
 
 ## fy5-17-L1-09
@@ -213,7 +213,7 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Muunnokset:** $20\,\text{ms} = 20 \cdot 10^{-3}\,\text{s} = 0{,}020\,\text{s}$.
 **Sijoitus:** $d = \dfrac{1402{,}4\,\text{m/s} \cdot 0{,}020\,\text{s}}{2} = 14{,}024\,\text{m}$
 **Vastaus:** $14\,\text{m}$, tarkemmin $14{,}0\,\text{m}$. Aika $20\,\text{ms}$ on sovittu tarkaksi, ja taulukon arvo antaa kolme merkitsevää numeroa; eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Kaiun kulkema matka on $1402{,}4\,\text{m/s} \cdot 0{,}020\,\text{s} = 28\,\text{m}$, josta puolet on $14\,\text{m}$. Kudoksen arvolla $1540\,\text{m/s}$ tulos olisi $15{,}4\,\text{m}$, noin $10\,\%$ liikaa, joten väliaineen arvon käyttö on tärkeää.
+**Järkevyys:** Kaiun kulkema matka on $$1402{,}4\,\text{m/s} \cdot 0{,}020\,\text{s} = 28\,\text{m}$$, josta puolet on $14\,\text{m}$. Kudoksen arvolla $1540\,\text{m/s}$ tulos olisi $15{,}4\,\text{m}$, noin $10\,\%$ liikaa, joten väliaineen arvon käyttö on tärkeää.
 
 ## fy5-17-L2-09
 **Annettu:** kuvasta kaiun C hetki, äänen nopeus kudoksessa $v = 1540\,\text{m/s}$
@@ -224,4 +224,4 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Muunnokset:** $90\,\mu\text{s} = 90 \cdot 10^{-6}\,\text{s}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $d = \dfrac{1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s}}{2} = 0{,}0693\,\text{m} = 6{,}93\,\text{cm}$
 **Vastaus:** $6{,}93\,\text{cm}$, kolme merkitsevää numeroa kuten nopeudessa $1540\,\text{m/s}$.
-**Järkevyys:** Kaiun kulkema matka on $1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s} = 13{,}9\,\text{cm}$, josta puolet on $6{,}9\,\text{cm}$. Reisiluun pinta noin seitsemän senttimetrin syvyydessä on järkevä, ja se on syvemmällä kuin kaikuja A ja B vastaavat rajapinnat.
+**Järkevyys:** Kaiun kulkema matka on $$\begin{aligned} &1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s} \\ &= 13{,}9\,\text{cm} \end{aligned}$$, josta puolet on $6{,}9\,\text{cm}$. Reisiluun pinta noin seitsemän senttimetrin syvyydessä on järkevä, ja se on syvemmällä kuin kaikuja A ja B vastaavat rajapinnat.

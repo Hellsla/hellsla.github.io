@@ -209,7 +209,7 @@ $\begin{aligned} v &= 2 \cdot 0{,}650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254{,
 **Muunnokset:** Niitä ei tarvita. Taajuudet luetaan hertseinä.
 **Sijoitus:** $f_7 = 7 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$
 **Vastaus:** $1400\,\text{Hz}$, kolme merkitsevää numeroa kuten luettu perustaajuus.
-**Järkevyys:** Viides piikki on $1000\,\text{Hz}$. Seitsemäs harmoninen on kaksi piikkiväliä ylempänä: $1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$. Piikkien väli on $200\,\text{Hz}$.
+**Järkevyys:** Viides piikki on $1000\,\text{Hz}$. Seitsemäs harmoninen on kaksi piikkiväliä ylempänä: $$\begin{aligned} &1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} \\ &= 1400\,\text{Hz} \end{aligned}$$. Piikkien väli on $200\,\text{Hz}$.
 
 ## fy5-14-L2-08
 **Annettu:** kahden yhtä aikaa soivan ääniraudan yhteinen ääni kuvassa. Toinen äänirauta on $523\,\text{Hz}$. Vaha laskee tuntemattoman ääniraudan taajuutta, ja huojunta nopeutuu.

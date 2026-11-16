@@ -29,7 +29,7 @@
         {
           "text": "Vasemmalle, kohti tasapainoasemaa, $2{,}0\\,\\text{N}$.",
           "correct": true,
-          "feedback": "Oikein. Harmoninen voima on $F = -kx$: sen suuruus on $kx = 40\\,\\text{N/m} \\cdot 0{,}050\\,\\text{m} = 2{,}0\\,\\text{N}$, ja miinusmerkki kertoo, että se osoittaa poikkeamaa vastaan eli kohti tasapainoasemaa (luku *Jousivoima ja jousen energia*). Tänään selvitetään, millaisen liikkeen tämä voima saa aikaan, kun kappale päästetään irti."
+          "feedback": "Oikein. Harmoninen voima on $F = -kx$: sen suuruus on $$\\begin{aligned} kx &= 40\\,\\text{N/m} \\cdot 0{,}050\\,\\text{m} \\\\ &= 2{,}0\\,\\text{N} \\end{aligned}$$, ja miinusmerkki kertoo, että se osoittaa poikkeamaa vastaan eli kohti tasapainoasemaa (luku *Jousivoima ja jousen energia*). Tänään selvitetään, millaisen liikkeen tämä voima saa aikaan, kun kappale päästetään irti."
         },
         {
           "text": "Oikealle, poikkeaman suuntaan, $2{,}0\\,\\text{N}$.",

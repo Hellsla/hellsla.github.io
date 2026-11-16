@@ -76,7 +76,7 @@
 **Muunnokset:** $F = 1{,}00\,\text{kN} = 1000\,\text{N}$; $R = 6378\,\text{km} = 6{,}378 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km} = 1000\,\text{m}$
 **Sijoitus:** Osoittaja on $$\begin{aligned} \gamma M m &= 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 5{,}97 \\ &\cdot 10^{24}\,\text{kg} \cdot 1200\,\text{kg} \\ &= 4{,}7812 \cdot 10^{17}\,\text{N}\cdot\text{m}^2 \end{aligned}$$, joten $r = \sqrt{\dfrac{4{,}7812 \cdot 10^{17}\,\text{N}\cdot\text{m}^2}{1000\,\text{N}}} = 2{,}1866 \cdot 10^{7}\,\text{m}$ ja $h = 2{,}1866 \cdot 10^{7}\,\text{m} - 6{,}378 \cdot 10^{6}\,\text{m} = 1{,}5488 \cdot 10^{7}\,\text{m} = 15\,488\,\text{km}$
 **Vastaus:** $15\,500\,\text{km}$, kolme merkitsevää numeroa kuten voimassa $1{,}00\,\text{kN}$.
-**Järkevyys:** Maan pinnalla luotaimen paino on $1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 11{,}8\,\text{kN}$. Voima $1{,}00\,\text{kN}$ on noin $\tfrac{1}{11{,}8}$ siitä, joten etäisyyden keskipisteestä pitää olla $\sqrt{11{,}8} \approx 3{,}4$ Maan sädettä: $3{,}4 \cdot 6378\,\text{km} \approx 21\,900\,\text{km}$, mikä vastaa arvoa $r$.
+**Järkevyys:** Maan pinnalla luotaimen paino on $$1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 11{,}8\,\text{kN}$$. Voima $1{,}00\,\text{kN}$ on noin $\tfrac{1}{11{,}8}$ siitä, joten etäisyyden keskipisteestä pitää olla $\sqrt{11{,}8} \approx 3{,}4$ Maan sädettä: $3{,}4 \cdot 6378\,\text{km} \approx 21\,900\,\text{km}$, mikä vastaa arvoa $r$.
 
 ## fy5-5-L2-04
 **Annettu:** lentokorkeus $h = 11{,}0\,\text{km}$, Maan säde $R = 6378\,\text{km}$
@@ -257,7 +257,7 @@ N_\text{b} &= 62{,}0\,\text{kg} \cdot (9{,}81 - 0{,}5397)\,\tfrac{\text{m}}{\tex
 \end{aligned}
 ```
 **Vastaus:** Vaa'an lukema olisi päiväntasaajalla $575\,\text{N}$; jakson $6{,}0\,\text{h}$ kaksi merkitsevää numeroa rajoittaa tarkkuutta, joten myös $570\,\text{N}$ kelpaa. Kohta a: $a_\text{n} = 0{,}0337\,\text{m/s}^2$ ja vaa'an lukema on $606\,\text{N}$, kun navalla se olisi $mg = 608\,\text{N}$. Kohta c: päiväntasaajalla kokonaisvoiman $mg - N$ on oltava $m a_\text{n}$ kohti keskipistettä ($m a_\text{n} = 2{,}09\,\text{N}$), joten $N = mg - m a_\text{n}$ on pienempi kuin $mg$. Navalla ihminen ei kierrä ympyrärataa, $a_\text{n} = 0$ ja $N = mg$. Vaaka näyttää siis vähemmän, vaikka gravitaatiovoima on oletuksen mukaan yhtä suuri.
-**Järkevyys:** Jakso on neljäsosa vuorokaudesta, joten nopeus on nelinkertainen ja $a_\text{n}$ kasvaa $4^2 = 16$-kertaiseksi: $16 \cdot 0{,}0337\,\text{m/s}^2 \approx 0{,}54\,\text{m/s}^2$. Lukema pienenee tällöin $62{,}0\,\text{kg} \cdot 0{,}54\,\text{m/s}^2 \approx 33\,\text{N}$ eli noin $5{,}5\,\%$ arvosta $mg = 608\,\text{N}$, ja $608\,\text{N} - 33\,\text{N} \approx 575\,\text{N}$. Lukema on siis pienempi kuin kohdassa a ($606\,\text{N}$) mutta selvästi positiivinen.
+**Järkevyys:** Jakso on neljäsosa vuorokaudesta, joten nopeus on nelinkertainen ja $a_\text{n}$ kasvaa $4^2 = 16$-kertaiseksi: $$16 \cdot 0{,}0337\,\text{m/s}^2 \approx 0{,}54\,\text{m/s}^2$$. Lukema pienenee tällöin $62{,}0\,\text{kg} \cdot 0{,}54\,\text{m/s}^2 \approx 33\,\text{N}$ eli noin $5{,}5\,\%$ arvosta $mg = 608\,\text{N}$, ja $608\,\text{N} - 33\,\text{N} \approx 575\,\text{N}$. Lukema on siis pienempi kuin kohdassa a ($606\,\text{N}$) mutta selvästi positiivinen.
 
 ## fy5-5-L2-08
 **Kysytty:** miten asteroidien kiihtyvyyksien suuruudet $a_{\text{A}}$ ja $a_{\text{B}}$ suhtautuvat toisiinsa liikkeen alussa, ja mikä perustelu selittää sen.
@@ -301,4 +301,4 @@ Kiihtyvyyksien suhde on $\tfrac{a_{\text{B}}}{a_{\text{A}}} = \tfrac{m_{\text{A}
 **Muunnokset:** $r = R + h = 7{,}15 \cdot 10^{7}\,\text{m} + 7{,}15 \cdot 10^{7}\,\text{m} = 1{,}430 \cdot 10^{8}\,\text{m} = 2R$; lopuksi $1\,\text{kN} = 1000\,\text{N}$.
 **Sijoitus:** $g = 24{,}8\,\text{m/s}^2\cdot\left(\dfrac{7{,}15 \cdot 10^{7}\,\text{m}}{1{,}430 \cdot 10^{8}\,\text{m}}\right)^2 = 24{,}8\,\text{m/s}^2\cdot\dfrac{1}{4} = 6{,}20\,\text{m/s}^2$ ja $F = 850\,\text{kg}\cdot 6{,}20\,\text{m/s}^2 = 5270\,\text{N} = 5{,}27\,\text{kN}$
 **Vastaus:** $5{,}27\,\text{kN}$, kolme merkitsevää numeroa kuten kuvan arvossa $24{,}8\,\text{m/s}^2$ ja säteessä. Kuvan arvo pätee päiväntasaajan säteellä, joten käytetään samaa sädettä.
-**Järkevyys:** Etäisyys keskipisteestä kaksinkertaistuu, joten kentän voimakkuus ja voima ovat neljäsosa pinnan arvosta. Pinnalla voima olisi $850\,\text{kg}\cdot 24{,}8\,\text{m/s}^2 = 21{,}1\,\text{kN}$ ja $21{,}1\,\text{kN} : 4 = 5{,}27\,\text{kN}$.
+**Järkevyys:** Etäisyys keskipisteestä kaksinkertaistuu, joten kentän voimakkuus ja voima ovat neljäsosa pinnan arvosta. Pinnalla voima olisi $$850\,\text{kg}\cdot 24{,}8\,\text{m/s}^2 = 21{,}1\,\text{kN}$$ ja $21{,}1\,\text{kN} : 4 = 5{,}27\,\text{kN}$.

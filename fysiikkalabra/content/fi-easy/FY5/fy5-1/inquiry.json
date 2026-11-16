@@ -29,7 +29,7 @@
         {
           "text": "$100\\,\\text{N}$, koska pystykomponentti on $F\\sin 30^\\circ$.",
           "correct": true,
-          "feedback": "Oikein. Kulman $30^\\circ$ vastainen kateetti on $F\\sin 30^\\circ = 200\\,\\text{N}\\cdot 0{,}5 = 100\\,\\text{N}$. Tässä luvussa tarvitaan samaa suorakulmaisen kolmion sääntöä, kun lasketaan vinon voiman vartta."
+          "feedback": "Oikein. Kulman $30^\\circ$ vastainen kateetti on $$\\begin{aligned} F\\sin 30^\\circ &= 200\\,\\text{N}\\cdot 0{,}5 \\\\ &= 100\\,\\text{N} \\end{aligned}$$. Tässä luvussa tarvitaan samaa suorakulmaisen kolmion sääntöä, kun lasketaan vinon voiman vartta."
         },
         {
           "text": "$173\\,\\text{N}$, koska pystykomponentti on $F\\cos 30^\\circ$.",

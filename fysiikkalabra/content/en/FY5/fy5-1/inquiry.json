@@ -29,7 +29,7 @@
         {
           "text": "$100\\,\\text{N}$, because the vertical component is $F\\sin 30^\\circ$.",
           "correct": true,
-          "feedback": "Correct. The side opposite the angle $30^\\circ$ is $F\\sin 30^\\circ = 200\\,\\text{N}\\cdot 0.5 = 100\\,\\text{N}$. The same rule of the right-angled triangle is needed in this chapter when calculating the lever arm of an oblique force."
+          "feedback": "Correct. The side opposite the angle $30^\\circ$ is $$\\begin{aligned} F\\sin 30^\\circ &= 200\\,\\text{N}\\cdot 0.5 \\\\ &= 100\\,\\text{N} \\end{aligned}$$. The same rule of the right-angled triangle is needed in this chapter when calculating the lever arm of an oblique force."
         },
         {
           "text": "$173\\,\\text{N}$, because the vertical component is $F\\cos 30^\\circ$.",

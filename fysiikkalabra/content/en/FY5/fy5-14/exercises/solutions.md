@@ -209,7 +209,7 @@ $\begin{aligned} v &= 2 \cdot 0.650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254.8\,
 **Conversions:** None are needed: the frequencies are read in hertz.
 **Substitution:** $f_7 = 7 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$
 **Answer:** $1400\,\text{Hz}$, three significant figures like the fundamental read from the graph.
-**Reasonableness:** The seventh harmonic lies above the fifth peak $1000\,\text{Hz}$ by two spacings: $1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$, since the spacing of the peaks is $200\,\text{Hz}$.
+**Reasonableness:** The seventh harmonic lies above the fifth peak $1000\,\text{Hz}$ by two spacings: $$\begin{aligned} &1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} \\ &= 1400\,\text{Hz} \end{aligned}$$, since the spacing of the peaks is $200\,\text{Hz}$.
 
 ## fy5-14-L2-08
 **Given:** the combined sound of two tuning forks sounding at the same time, in the figure; one fork $523\,\text{Hz}$; wax lowers the frequency of the unknown fork and the beats get faster

@@ -63,7 +63,7 @@ akselit 0
 ```
 **Kaava:** $y$: $N - mg = m\dfrac{v^2}{r}$, joten $N = m\left(g + \dfrac{v^2}{r}\right)$
 **Muunnokset:** Suureet ovat SI-yksiköissä. Tulos muutetaan lopuksi kilonewtoneiksi, $1\,\text{kN} = 1000\,\text{N}$.
-**Sijoitus:** $N = 80\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 + \dfrac{(8{,}0\,\text{m/s})^2}{16\,\text{m}}\right) = 80\,\text{kg}\cdot 13{,}81\,\text{m/s}^2 = 1104{,}8\,\text{N} = 1{,}1048\,\text{kN}$
+**Sijoitus:** $$\begin{aligned} &N \\ &= 80\,\text{kg}\cdot\left(9{,}81\,\text{m/s}^2 + \dfrac{(8{,}0\,\text{m/s})^2}{16\,\text{m}}\right) \\ &= 80\,\text{kg}\cdot 13{,}81\,\text{m/s}^2 \\ &= 1104{,}8\,\text{N} \\ &= 1{,}1048\,\text{kN} \end{aligned}$$
 **Vastaus:** $1{,}1\,\text{kN}$ ylöspäin. Vastauksessa on kaksi merkitsevää numeroa, kuten nopeudessa $8{,}0\,\text{m/s}$ ja säteessä $16\,\text{m}$.
 **Järkevyys:** Paino on $80\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 785\,\text{N}$. Tukivoima on siitä noin $1{,}4$-kertainen, koska $\tfrac{v^2}{r} = 4{,}0\,\text{m/s}^2$ on noin $0{,}4$ kertaa $g$. Pyöräilijä tuntee painuvansa satulaa vasten. Nyppylän huipulla samalla nopeudella tukivoima olisi vastaavasti painoa pienempi.
 
