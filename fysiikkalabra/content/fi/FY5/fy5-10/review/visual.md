@@ -1,17 +1,21 @@
-VERDICT: FAIL
-CONTENT-HASH: 4abdffd582dd2934
+VERDICT: PASS
+CONTENT-HASH: 50bc0cf584ffc7a4
+ROUND: 3
 
 ## Blocking
-- [Major] content/fi/FY5/fy5-10/inquiry.json:333 (Esimerkki 2: Etsi virhe, prompt; fy5-10-inq-virhe-0-390.png and -1280.png) — after the display block the student's quotation ends on a new line that begins with `.”`: the page shows `.” Missä on virhe?`. — A line starting with a full stop and a closing quotation mark is a visible typesetting error in a task text, at both widths; before the change the sentence ended inline (`… = 1,0 m/s.” Missä on virhe?`). — Take the full stop and the closing quotation mark into the last row, as the build does with a comma elsewhere: `… \\\\ &= 1{,}0\\,\\text{m/s}\\text{.”} \\end{aligned}$$ Missä on virhe?` (tested in the page's KaTeX: renders `= 1,0 m/s.”`, capture kt-quote.png). Numbers, signs and units stay as they are.
+(none)
 
 ## Polish
-- [Minor] same prompt (as on main, untouched) — the page starts the emphasised question part at "Koska taajuus on…", in the middle of the student's quotation, so the real question "Missä on virhe?" is not what stands out.
+- [Minor] inquiry.json:333 (prompt) — where the three inline formulas meet, the equals sign has its space only on the right (`fλ= 2,0 Hz`, `0,50 m= 1,0 m/s`), because each piece begins with `=`; readable, but slightly uneven. A leading `{}` in the second and third formula (`$ {}= 2{,}0…$`) restores the relation spacing without touching a number, sign or unit.
+- [Minor] same prompt (as on main, untouched) — the emphasised question part starts at "Koska taajuus on…", in the middle of the student's quotation, so "Missä on virhe?" is not what stands out.
 
 ## Checked
-- Delta, round 2: the prompt of Esimerkki 2 (inquiry.json:333). Opened fy5-10-inq-virhe-0-390.png and fy5-10-inq-virhe-0-1280.png: the block `v = fλ = 2,0 Hz · 0,50 m = 1,0 m/s` itself is clean (three rows, equals signs in a column, no clipping), the choices below are intact.
-- Compared with the markup built on main for the same prompt.
+- Delta, round 3: the prompt of Esimerkki 2: Etsi virhe (inquiry.json:333), now three consecutive inline formulas instead of a display block. Round 2's blocking item (a line beginning with `.”`) is gone.
+- Opened r3/fy5-10-inq-virhe-0-390.png: the chain wraps inside the sentence as `v = fλ = 2,0 Hz · 0,50 m` | `= 1,0 m/s.” Missä on virhe?`; the break falls before a relation, no quantity is split, the full stop and closing quotation mark follow the unit directly.
+- Opened r3/fy5-10-inq-virhe-0-1280.png: the whole chain on one line, `… = 1,0 m/s.”` then "Missä on virhe?"; choices and the Vastaa button unchanged.
+- Measured in the same run: page scrollWidth equals the viewport at both widths, no formula past its box.
+- Own Playwright captures from the rebuilt preview/fy5-10.html (?ratkaisut=1, details open) in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis2-fi-7/r3/.
 - Not re-judged: the formula names in lesson.md (teacher-approved, not in this branch's diff).
-- Own Playwright captures from preview/ (?ratkaisut=1, every details box open) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis2-fi-7/; measured there: page scrollWidth equals the viewport, no formula past its box.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5
