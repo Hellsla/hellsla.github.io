@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f7d8fb2fa02b0994
+CONTENT-HASH: 17ddc62cea349c77
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-2 metro task, Vastaus — "luvun lopun nolla ei ole merkitsevä" is abstract for S2 readers; add "eli $1160\,\text{m}$ on kolmella numerolla $1{,}16\,\text{km}$".
-- [Minor] no phone-width capture of the open exercises in the packet; judged at 1280 px.
+- [Minor] None. The two lifted rows (9,72 m/s² · 0,18 s ≈ 1,8 m/s and √(2 · 20 m : 9,81 m/s²) ≈ 2,02 s) sit in a Järkevyys panel as boxed display rows, the sentence continuing after them; not clipped, the trailing full stop is inside the formula.
 
 ## Checked
-- fy4-2-open-exercises-L3-1280-2 (the metro task 2-19: Annettu to Sijoitus rows, layout intact around the one-word fix "kilometreinä" in Vastaus, which is correct Finnish; the Vastaus line itself continues on the next capture and was read in the diff). Only that single word changed.
+- fy4-2-open-exercises-L3-1280-4 (the 9,72 row), fy4-2-open-exercises-1280-10 (the 2,02 row), L3-1280-3 and L2-1280-9/10 for surrounding layout (fi captures; en and fi-easy share the same layout and the same lifted rows, judged from source and the passing 352/360 px checks).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

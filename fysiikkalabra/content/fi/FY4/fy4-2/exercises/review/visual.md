@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: fd25c4dd05e39506
+CONTENT-HASH: fa896eb8e6db4d5e
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-2-L3-02 (task 2-19) — the change is one word ("kilometreinä"), which reads correctly. Nothing else found.
+- [Minor] None. The two lifted rows (9,72 m/s² · 0,18 s ≈ 1,8 m/s and √(2 · 20 m : 9,81 m/s²) ≈ 2,02 s) sit in a Järkevyys panel as boxed display rows, the sentence continuing after them; not clipped, the trailing full stop is inside the formula.
 
 ## Checked
-- open-exercises-L3-1280-2 (task 2-19 whole solution: Annettu to Sijoitus; Vastaus lies below the capture edge and was read in source only).
-- Aligned rows, units upright with thin space, decimal comma and \tfrac in the formula fine; no clipping at 1280.
+- fy4-2-open-exercises-L3-1280-4 (the 9,72 row), fy4-2-open-exercises-1280-10 (the 2,02 row), L3-1280-3 and L2-1280-9/10 for surrounding layout (fi captures; en and fi-easy share the same layout and the same lifted rows, judged from source and the passing 352/360 px checks).
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
