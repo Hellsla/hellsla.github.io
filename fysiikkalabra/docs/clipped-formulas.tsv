@@ -397,6 +397,7 @@ en/fy7-10	= 6.0\,\text{mm} \cdot \tan 32.61^\circ + 20.0\,\text{mm} \cdot \tan 3
 en/fy7-10	n_1 \sin\alpha_1 = n_2 \sin\alpha_2 = n_3 \sin\alpha_3
 en/fy7-12	41.8^\circ + 42.6^\circ + 41.5^\circ + 42.3^\circ + 42.0^\circ
 en/fy7-12	= \dfrac{1.480 \cdot 1000\,\text{m}}{3.00 \cdot 10^8\,\text{m/s}} \cdo
+en/fy7-14	2nd = 2 \cdot 1.33 \cdot 250\,\text{nm} = 665\,\text{nm}
 en/fy7-16	0.18\,\text{dB/km} \cdot 1172\,\text{km} = 211\,\text{dB}
 en/fy7-16	= 10 \cdot 2\pi \cdot 1.40 \cdot 10^{5}\,\text{Hz} \cdot 0.40 \cdot 10
 en/fy7-16	= 12\,\text{mm} + 4\,\text{mm} \cdot \dfrac{0.1241 - 0.1061}{0.1241 - 
@@ -858,6 +859,8 @@ fi-easy/fy6-2	\pm(2{,}0\,\% + 3\ \text{numeroa})
 fi-easy/fy6-5	-3{,}0\,\text{V} - (-9{,}0\,\text{V}) = 6{,}0\,\text{V}
 fi-easy/fy7-12	41{,}8^\circ + 42{,}6^\circ + 41{,}5^\circ + 42{,}3^\circ + 42{,}0^\ci
 fi-easy/fy7-12	= \dfrac{1{,}480 \cdot 1000\,\text{m}}{3{,}00 \cdot 10^8\,\text{m/s}} 
+fi-easy/fy7-14	1{,}38 \cdot 458{,}70\,\text{nm} = 633\,\text{nm}
+fi-easy/fy7-14	2nd = 2 \cdot 1{,}33 \cdot 250\,\text{nm} = 665\,\text{nm}
 fi-easy/fy7-2	= \dfrac{9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 3{,}0 \cdot 10^{6}\,\
 fi-easy/fy7-6	0{,}25\,\text{N} \cdot 0{,}3\,\text{m/s} \approx 0{,}075\,\text{W}
 fi-easy/fy7-6	= 0{,}020\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}1366\,\text{
@@ -1281,6 +1284,8 @@ fy6-2	\pm(0{,}5\,\% + 2\ \text{numeroa})
 fy6-2	\pm(1{,}0\,\% + 2\ \text{numeroa})
 fy6-2	\pm(2{,}0\,\% + 3\ \text{numeroa})
 fy6-5	-3{,}0\,\text{V} - (-9{,}0\,\text{V}) = 6{,}0\,\text{V}
+fy7-14	1{,}38 \cdot 458{,}70\,\text{nm} = 633\,\text{nm}
+fy7-14	2nd = 2 \cdot 1{,}33 \cdot 250\,\text{nm} = 665\,\text{nm}
 fy7-2	= \dfrac{9{,}109 \cdot 10^{-31}\,\text{kg} \cdot 3{,}0 \cdot 10^{6}\,\
 fy9-aallot	d = vt = 1480\,\tfrac{\text{m}}{\text{s}} \cdot 0{,}024\,\text{s} = 35
 fy9-energia	2{,}0\,\text{MW} \cdot 8760\,\text{h} = 17{,}5\,\text{GWh}
