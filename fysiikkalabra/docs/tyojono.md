@@ -34,7 +34,7 @@ tyhjät 28×28 px kaappaukset) tehdään yksin. Voi kulkea rinnakkain kohdan 2 k
 
 ## 5. CI:n toistettavuus (2026-11-13)
 
-Varattu: claude/ci-reproducibility
+Varattu: claude/known-lists-per-course
 
 Osa A tehty (PR #640, 2026-11-16): `requirements-ci.txt` kertoo Playwright-version ja `ci_env.py check` pitää CI:n kontin
 samana; `ci_env.py run <komento>` ajaa tarkistuksen CI:n kontissa paikallisesti, ja `check_lesson.py` ajaa layoutin siellä
