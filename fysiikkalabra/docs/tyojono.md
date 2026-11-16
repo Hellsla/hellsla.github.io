@@ -316,7 +316,7 @@ lang-tekstejä tai fysiikkaa.
   varaus pienemmäksi, kuvausteksti pois kokeiden vierestä.
 - **PR 3: Varattu: claude/sim-ui-pr3-asettelu** sama asettelu tyypeille A–C (aikaohjatut, jatkuvat, staattiset); tyyppi D, fy1-2, fy1-4 ja poikkeavat
   jäävät nykyiselleen.
-- **PR 4:** tarttuva kuva puhelimella, pilotti fy4-1 ja yksi staattinen simulaatio.
+- **PR 4: Varattu: claude/sim-ui-pr4-tarttuva-pilotti (pilotti)** tarttuva kuva puhelimella, pilotti fy4-1 ja yksi staattinen simulaatio.
 - **PR 5:** canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus.
 
 Myöhemmin kurssi kerrallaan, kunkin luvun seuraavan sisältömuutoksen yhteydessä katselmointeineen: tyyppi D (fy6-5,
