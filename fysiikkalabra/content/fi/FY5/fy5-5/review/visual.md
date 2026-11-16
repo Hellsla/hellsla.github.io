@@ -1,16 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: c4409c2610f0920b
+VERDICT: PASS
+CONTENT-HASH: 40c0dd60d2ed95b0
 
 ## Blocking
-- [Major] inquiry.json:305 (etsi-virhe prompt; captures fy5-5-les-390-1, fy5-5-les-1280-1) — the sentence's full stop floats far to the right of the last row: "≈ 4400 m/s²          ." (about 80 px at 390 px, 180 px at 1280 px). The last row ends with the trailing `&` and the mark after `$$` is set behind it in a third alignment column — a lone dot in the box of the very formula the student must inspect for an error looks like part of the puzzle — put the mark before the `&` (`&\approx 4400\,\text{m/s}^2\text{.} & \end{aligned}$$ Mikä…`, or fix mathlayout.with_punct for every such block).
+(none)
 
 ## Polish
-- [Minor] inquiry.json:305 — the `\tfrac` mass-over-distance fraction is small at 390 px but legible (carried from the previous round).
+- [Minor] inquiry.json:305 — the `\tfrac` mass-over-distance fraction is small at 390 px but legible (carried from earlier rounds).
+- [Minor] inquiry.json:305 — at the join of the inline pieces the space around "·" before the fraction is narrower than inside a formula; known.
 
 ## Checked
-- Delta: the one re-broken chain, inquiry.json:305.
-- Own captures from preview/fy5-5.html?ratkaisut=1, all boxes opened, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis2-fi-1: fy5-5-les-390-1.png, fy5-5-les-1280-1.png.
-- The chain now fits at 390 px (right edge 302 of 349 px, earlier it overflowed); rows start at a relation or at "·" before a whole quantity; at 1280 px the constant and the fraction are joined on one row. scrollWidth 390 and 1280.
+- Round 3, delta: the one re-set chain, inquiry.json:305 (etsi-virhe prompt), now consecutive inline formulas. The content hash changed while I worked (934341be3d066f13 → 40c0dd60d2ed95b0, the "·" moved to the end of the piece before the fraction); every capture named here was taken after that edit, from the rebuilt preview.
+- Own captures from preview/fy5-5.html?ratkaisut=1, all boxes opened, at double scale, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-1: fy5-5-les-virhe-390-crop.png, fy5-5-les-virhe-1280-crop.png.
+- Round 2's blocking item is fixed: the full stop sits on "≈ 4400 m/s²." and the question follows on the same line.
+- 390 px: the calculation wraps inside the sentence at "=" and "≈" ("näin: g = γ M/r²" / "= 6,674 · 10⁻¹¹ N·m²/kg² · [fraction]" / "≈ 4400 m/s². Mikä…"); 1280 px: one line and the result. Mantissa and power together, units upright.
+- Nothing clipped, scrollWidth 390 and 1280.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

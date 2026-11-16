@@ -1,16 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: cbbe539866c1e960
+VERDICT: PASS
+CONTENT-HASH: 7b29aab8984e04ae
 
 ## Blocking
-- [Major] inquiry.json:210 (koe 1 solution), :406 (siirto solution), :460 (tarkistus 2 solution) — the comma after each γM / γT² block floats away from the result: "= 3,984 · 10¹⁴ m³/s²    ," and "= 5,0619 · 10⁻² m³/kg    ," (captures fy5-6-les-390-1, fy5-6-les-1280-1: about 20 px at 390 px, about 150 px at 1280 px). The last row ends with the trailing `&` and the mark after `$$` is set behind it in a third alignment column — a lone comma in the box, beside decimal commas, reads as a typesetting error and repeats in every solution — put the mark before the `&` (`…\text{m}^3/\text{s}^2\text{,} & \end{aligned}$$ joten`, or fix mathlayout.with_punct once for all such blocks). Line 210 sits in a hidden experiment answer: judged from the rendered TeX in the preview (same `&\text{,}`), not from a capture.
+(none)
 
 ## Polish
-- [Minor] The continuation row starts with "·" here; fy5-1 ends the row with it.
+- [Minor] The continuation row starts with "·" here; fy5-1 ends the row before with it.
+- [Minor] inquiry.json:365 (etsi-virhe prompt, outside this delta, listed in docs/clipped-formulas.tsv) — with the box open at 390 px the inline "γM = 6,674 · 10⁻¹¹ · 5,97 · 10²⁴ m³/s² = …" still runs to 549 px (capture fy5-6-overflow-390); not judged here.
 
 ## Checked
-- Delta: the re-broken chains of inquiry.json (lines 210, 406, 460).
-- Own captures from preview/fy5-6.html?ratkaisut=1, all boxes opened, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis2-fi-1: fy5-6-les-390-1.png, fy5-6-les-1280-1.png (the sheets also hold the exercise blocks with the same opening).
-- Apart from the comma: constant with unit, "· 5,97 · 10²⁴ kg" whole on its row, result row aligned at "="; at 1280 px the product is joined on one row. Nothing clipped, scrollWidth 390 and 1280.
+- Round 3, delta: the re-broken chains of inquiry.json (lines 210, 406, 460).
+- Own captures from preview/fy5-6.html?ratkaisut=1, all boxes opened, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-1: fy5-6-les-390-1.png, fy5-6-les-1280-1.png, fy5-6-spot-390.png, fy5-6-spot-1280.png (the γT² block of line 460).
+- Round 2's blocking item is fixed: the comma sits on the result ("= 3,984 · 10¹⁴ m³/s²," and "= 5,0619 · 10⁻² m³/kg,") at both widths, no third column.
+- 390 px: constant with its unit on the first row, "· 5,97 · 10²⁴ kg" and "· (27 540 s)²" indented under it, result aligned at "="; 1280 px: the product joined on one row. Mantissa and power never parted.
+- Line 210 sits in an experiment answer; seen in the opened state among the γM blocks of the sheets.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -4,7 +4,7 @@
 **Principle:** All bodies attract each other according to Newton's law of gravitation. When the students are treated as point masses, the distance is measured between their centres of mass, and the same force acts on each of them.
 **Formula:** $F = \gamma \dfrac{m_1 m_2}{r^2}$
 **Conversions:** The masses and the distance are in SI units. Finally $1\,\mu\text{N} = 10^{-6}\,\text{N}$.
-**Substitution:** $F = 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot$ $\dfrac{70\,\text{kg} \cdot 55\,\text{kg}}{(0.80\,\text{m})^2}$ $= 4.015 \cdot 10^{-7}\,\text{N}$ $= 0.4015\,\mu\text{N}$
+**Substitution:** $F$ $= 6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot$ $\dfrac{70\,\text{kg} \cdot 55\,\text{kg}}{(0.80\,\text{m})^2}$ $= 4.015 \cdot 10^{-7}\,\text{N}$ $= 0.4015\,\mu\text{N}$
 **Answer:** $0.40\,\mu\text{N}$, two significant figures as in the masses and in the distance $0.80\,\text{m}$.
 **Reasonableness:** The force corresponds to the weight of a particle of mass about $0.04\,\text{mg}$, so it is not noticed in everyday life. The order of magnitude is the same as in the example of the chapter, where the force between two people one metre apart was about $0.28\,\mu\text{N}$; here the distance is smaller, so the force is slightly greater.
 

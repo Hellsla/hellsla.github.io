@@ -1,17 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 8b70def838f7d770
+VERDICT: PASS
+CONTENT-HASH: d2b9fc13125edef4
 
 ## Blocking
-- [Major] solutions.md:7, 27, 47, 57, 67, 87, 97, 117, 132, 220, 230 (Sijoitus of L1-01 … L3-03) — the comma after each γM block floats away from the result: "= 3,984 · 10¹⁴ m³/s²    ," (captures fy5-6-les-390-1, fy5-6-les-1280-1, fy5-6-ex-390-1, fy5-6-ex-1280-1: about 20 px at 390 px, about 150 px at 1280 px; L3-01 "= 3,3650 · 10²³ m³      ," about 70 px at 390 px). The last row ends with the trailing `&` and the mark after `$$` is set behind it in a third alignment column — eleven solutions show a lone comma in the box, beside decimal commas — put the mark before the `&` (`…\text{m}^3/\text{s}^2\text{,} & \end{aligned}$$ joten`, or fix mathlayout.with_punct once for all such blocks).
+(none)
 
 ## Polish
-- [Minor] solutions.md:97 (L3-01) — at 1280 px the block keeps its phone rows, every row flush left ("γMT² = …" / "· 6,42 · 10²³ kg · (88 620 s)²" / "= …"); known join_wide limitation.
+- [Minor] solutions.md:97 (L3-01 Sijoitus) — the first calculation ("γMT² = 6,674 · 10⁻¹¹ N·m²/kg² ·" / "6,42 · 10²³ kg · (88 620 s)²" / "= 3,3650 · 10²³ m³, joten") now runs as text on the page background, while the r and h chains after it are in formula boxes; at 390 px its first row ends with "·". Readable as a sentence; an aligned block like the γM blocks of the other solutions would match them.
 - [Minor] solutions.md:184 (L3-04) — "Tähden massa on [formula ≈ 0,80] aurinkomassaa": the unit word is parted from its number by the display box; readable.
 
 ## Checked
-- Delta: the re-broken chains of solutions.md (lines 7–232).
-- Own captures from preview/fy5-6.html?ratkaisut=1, every level and solution opened, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis2-fi-1: fy5-6-les-390-1.png, fy5-6-les-1280-1.png (γM blocks), fy5-6-ex-390-1.png, fy5-6-ex-1280-1.png (L1-07, L1-11, L3-01, L3-04).
-- Apart from the comma: mantissa and power of ten never parted, "·" only between whole quantities, Järkevyys formulas whole with marks attached. Nothing clipped, scrollWidth 390 and 1280.
+- Round 3, delta: the re-broken chains of solutions.md (lines 7–230). The content hash changed while I worked (c2a866de1e1b8eea → d2b9fc13125edef4, line 97); every capture named here was taken after that edit, from the rebuilt preview.
+- Own captures from preview/fy5-6.html?ratkaisut=1, every level and solution opened, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-1: fy5-6-ex-390-4.png, fy5-6-ex-1280-5.png (γM blocks), fy5-6-ex-L2-03-390-0.png, fy5-6-ex-L2-03-1280-0.png (line 97, double scale), fy5-6-spot-390.png, fy5-6-spot-1280.png (lines 99, 184, 230).
+- Round 2's blocking item is fixed: the comma sits on the result ("= 3,984 · 10¹⁴ m³/s²,", "= 4,9027 · 10¹² m³/s²,") in every γM block seen, at both widths.
+- 390 px: "· M" rows indented under the constant, results aligned at "="; 1280 px: joined on one row. Lines 99 and 184 break before "≈" on a phone and are one row on a wide screen; colon for the division.
+- Nothing in the changed blocks is clipped; scrollWidth 1280 at 1280 px. At 390 px the page is 555 px wide only through the lesson's listed inquiry.json:365 formula.
 
 ## Scores
-illustrations 5 · typography 3 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

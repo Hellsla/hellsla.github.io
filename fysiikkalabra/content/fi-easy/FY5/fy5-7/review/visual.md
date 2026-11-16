@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 6cdd4bfd4ae18092
+CONTENT-HASH: da0056510d600e1c
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] inquiry.json:389 (Sijoitus, $x = 4{,}0\,\text{cm}\cdot$ | $\sin(\dots)$) — the trailing `·` sits tight against `cm` with no space before it, and the joins `0,9511= 3,804 cm` have uneven spacing around `=` (known join spacing) — collect with the PR's Polish.
 
 ## Checked
-- delta review (Selkeä suomi, fy5-7): only figures.json changed (new entries for option figures used in the exercise sets, which already passed); lesson text unchanged (git tree clean for the lesson files).
-- Rebuilt with `python scripts/build.py fy5-7`; page opened at 390 px after its own scripts ran: scrollWidth = clientWidth = 390 (no horizontal overflow), no KaTeX error nodes, no page errors.
-- Opened a 390 px contact sheet of every visible lesson figure (hero illustration, vector/path figure, road-bend diagrams, graphs, force diagrams for fy5-4; swing hero, spring/pendulum diagram, reference-circle, sine graphs and simulated-data graph for fy5-7): all render complete, unclipped, labels in KaTeX, colours per convention, in the language of the page (aria-labels in Selkeä suomi, decimal comma in Finnish axes, decimal point in English).
-- The lesson's own figures are unchanged in this language; the new figure texts only add entries and replace none that the lesson shows.
-- The screenshot script (scripts/screenshot.py) crashes on a stage heading in this lesson page, so captures were made with a separate script; review/shots not refreshed.
+- Delta review, round 3 (Selkeä suomi): inquiry.json line 389, the worked solution's Sijoitus chain as consecutive inline formulas. lesson.md does not differ from main in this branch (formula names and figures approved by the teacher are already on main; not judged again).
+- Opened fy5-7-inq-390-0.png: four rows, breaks only between whole quantities (`4,0 cm·` | `sin(2π · 0,50 Hz · 0,40 s)` | `= 4,0 cm · sin 1,257` | `= 4,0 cm · 0,9511 = 3,804 cm`); the `·` ends the first row, no row starts with a dot; nothing clipped.
+- Opened fy5-7-inq-1280-0.png (in sheet-1280-a.png): two rows, break before `=`.
+- Own Playwright captures (deviceScaleFactor 2) of preview/fi-easy/fy5-7.html?ratkaisut=1, every details box opened, at 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-easy-7/.
+- Page at both widths: scrollWidth = clientWidth, no KaTeX error nodes, no page errors.
+- Punctuation after a display formula sits inside the formula box; no line starts with a bare comma, full stop or dot.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5
