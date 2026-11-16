@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 82660ddf9fbdfd9d
+CONTENT-HASH: f18a34ab2b1a31dd
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md Kaava paragraph — "lähdejännitteen kaksinkertaisen verran pienempi" is clumsy Finnish — write "Ryhmän lähdejännite on siis kaksi kertaa väärin päin olevan pariston lähdejännitteen verran pienempi kuin silloin, kun kaikki paristot ovat oikein päin."
+- none
 
 ## Checked
-- batch delta review: added sentences read in theory-1280-3 (series/parallel formulas and figure intact, no clipping); opened fig-row-1280.
+- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-8-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
+
+## Scores
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

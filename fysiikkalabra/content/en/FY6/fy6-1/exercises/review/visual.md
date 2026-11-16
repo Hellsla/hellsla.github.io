@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6a32e9655e538bee
+CONTENT-HASH: ff4878db594db81d
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md fy6-1-L3-04 Answer — the long Answer paragraph packs the figure-count reasoning, b) and c) into one block — start parts b) and c) on their own lines as in other sets.
+- [Minor] sheet 1 #4: the break falls inside a bracket (`… + 0.60` / `+ 0.50) A · 1.0 h`); readable.
 
 ## Checked
-- Opened content/en/FY6/fy6-1/review/shots/fy6-1-open-exercises-L3-1280-5, -6, -7, -8 (battery task 1-21: full solution, rewritten Answer and Reasonableness; task 1-22 for the layout around it). Units upright with thin space, \cdot, rows aligned, nothing clipped; the new answer text reads correctly. The set's other tasks not re-reviewed.
+- round 3, delta review (reflow): proof sheets en-fy6-1-exercises-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

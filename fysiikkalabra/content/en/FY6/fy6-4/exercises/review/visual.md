@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 39cdae8624fc0e8c
-SCOPE: delta added-exercise from 44f907a0c5ed6d70 base 8f23aa7ae3bd
+CONTENT-HASH: 11b20da3afa8eb74
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy6-4/task-parallel — the + and − signs stand a little away from the battery plates, and the − sign is small; place them next to the plates.
+- none
 
 ## Checked
-- en captures fy6-4-open-exercises-L2-1280-12 and -13 (task with the parallel-circuit figure, answer box, full solution). Circuit: battery 9.0 V with polarity, R1 and R2 in parallel with junction dots, all labels LaTeX and readable, nothing given away; fractions and aligned rows in Formula and Substitution read well, units upright, colon for division; the other exercises unchanged and not re-reviewed.
+- round 3, delta review (reflow): proof sheets en-fy6-4-exercises-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

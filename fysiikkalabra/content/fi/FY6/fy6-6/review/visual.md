@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 6f026bb8de9505e1
+CONTENT-HASH: 536eb0b58e5699c5
 
 ## Blocking
-- (none)
+- none
 
 ## Polish
-- [Minor] fy6-6 alt/kuvateksti — kuvassa näkyy leipä ja oranssi hehku, yksittäisiä vastuslankoja ei erota — alt: "hehkuvat oranssit vastuslangat" -> "leivän ympärillä ja alla hehkuu oranssina paahtimen vastuslangoista tuleva valo".
+- none
 
 ## Checked
-batch delta review: photo file(s) opened and compared with alt text; rendered fy6-6 at 1280 px (float right, 320 px wide, no clipping, beside its paragraph) and 390 px (full-width block, no horizontal overflow); caption physics, Finnish and LaTeX units read; changed typography checked in the capture.
+- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-6-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
+
+## Scores
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 551446ad3bd6f294
+CONTENT-HASH: 0430ad5e28d785ff
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- delta (figures.json only, 384fe88c6..HEAD): lesson.md unchanged; the new fy6-11/pick-* descriptions and, in en, the label mapping "s": "e" belong to exercise force-diagram options; the lesson itself has no figure label "s" and no F_s or F_e (it uses only \overline{F} = q\overline{E}), so the mapping cannot reach it and no en text/figure mismatch exists.
-- Re-ran screenshot.py for this hash and opened the captures of the lesson's theory pages at 1280 px (figures, labels, units, captions): all labels render, nothing clipped, no overflow, no figure label changed.
-- No lesson figure shows F_s or F_e, so the en label mapping "s" to "e" has no effect on the lesson's figures.
+- All 1 proof sheet(s) of fi-easy-fy6-11-lesson (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: df631311125c85b1
+CONTENT-HASH: c4f6e75d48f72442
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
-
-## Polish
 - none
 
+## Polish
+- [Minor] sheet 1 item 3: the short left side "v" stands alone on a row, "= sqrt(...)" below it; readable, a little loose.
+
 ## Checked
-- batch delta review: opened stage-selita-390-3..7 and theory-1280-4: new kaavat block (named V = E_p/q, then unnamed E_p = qV) renders cleanly, lightning/plasma photo captions fit, new caption sentence reads naturally, no clipping or overflow at 390 px.
+- All 1 proof sheet(s) of fi-easy-fy6-12-lesson (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+
+## Scores
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

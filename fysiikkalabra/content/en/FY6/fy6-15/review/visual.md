@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 54bf1031ed79eec6
+CONTENT-HASH: 4c8de26566c1ac0d
 
 ## Blocking
+- none
 
 ## Polish
+- none
 
 ## Checked
-- batch delta review: bird sentences reworded (text only, no new maths); opened the Teoria paragraph at 390 px in the fi preview: reads naturally, maths unchanged, no overflow. Wording judged in en.
+- round 3, delta review (reflow): proof sheets en-fy6-15-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
+
+## Scores
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

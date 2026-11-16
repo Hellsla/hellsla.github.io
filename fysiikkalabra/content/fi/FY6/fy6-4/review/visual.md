@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9cc05aa0e9ac599c
+CONTENT-HASH: b1cfc49714e8d83d
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] Photo (a house with lights) does not show the series-string wiring the caption mentions; it illustrates context only (acceptable).
+- none
 
 ## Checked
-batch delta review: rendered the new figure.unit-photo at 390 px and 1280 px from the built page (own captures, plus fig-row-1280 to confirm the existing figures survived); photo loads, no horizontal overflow, caption and credit line legible, alt text matches the image, LaTeX in captions renders ($6{,}3\,\text{V}$, $656\,\text{nm}$, $n = 3$) with units upright; no clipping.
+- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-4-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
+
+## Scores
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

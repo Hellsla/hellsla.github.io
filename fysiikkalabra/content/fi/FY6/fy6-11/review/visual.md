@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a71b156bfd3b2778
+CONTENT-HASH: 47fdafac7fc9162a
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Delta: koe-2 solution Periaate, 'jokaisella taulukon rivillä'. The solution is not captured open; read from the diff: grammatical, one sentence, maths untouched.
-- Opened fy6-11-open-exercises-1280-6 (fi) and the lab layout (en, same structure): layout unchanged, units upright, decimal comma kept.
-- Hash at start and end: a71b156bfd3b2778. Captures re-made for this hash (screenshot.py --if-stale); no layout change around the edited sentence.
+- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-11-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5
