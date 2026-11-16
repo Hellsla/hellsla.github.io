@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 282eb61fc0b60703
+CONTENT-HASH: 5cb4d86d56728236
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] fy3-11 page, section #sovella (not an exercise): at 390 px a KaTeX span reaches x=431, so the page scrolls horizontally; fy3-15 has an SVG over 390 px wide. Neither is in the changed exercises; check separately.
+(none)
 
 ## Checked
-fy3-11 L1-09, L2-09 (pv-isobaari figure), L2-04, L3-02 opened with solutions at 390 and 1280 px (fi). P_a/P_o and Q_1 render cleanly; the graph is legible with axes and units.
+- Round 1, delta. Opened fy3-11-open-exercises-L2-1280-5 (the 480 kW engine solution, changed Vastaus "kolme merkitsevää numeroa, koska ... (loppunolla on merkitsevä) ... " and Järkevyys; aligned rows, answer box 720 kW, nothing clipped) and the task 13-14 start below it.
+- The other changed Periaate sentences ("hukkalämpöön, joka siirtyy ympäristöön", "polttoainetehon") read from the diff: grammar correct, no plain quantities.
+- Hash same at start and end.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

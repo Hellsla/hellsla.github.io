@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5d46ccf73881879d
+CONTENT-HASH: c7c5f8bd95a111bf
 
 ## Blocking
 
-None. W = pΔV is now the magnitude of compression work and P_a is defined in the worked example; notation is followable.
-
 ## Polish
-
-None.
+- none
 
 ## Checked
-
-Diff since previous PASS and the MAFY notation in lesson/solutions; symbols defined where first used; numbers and levels unchanged.
+- Delta: two distractor feedbacks (sähkövastus, kitka) now say the electricity raises internal energy that is transferred as heat; this repairs the heat-as-substance wording and still rebuts the option (COP 3,0 is not an efficiency; most heat is moved from outside).
+- Numbers, options and correct answer unchanged; Finnish correct. Previous PASS stands.

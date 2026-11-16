@@ -1,20 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2aec8d743992d33c
-Mode: delta
-Round: 1
+CONTENT-HASH: 657e6587380e3a35
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] exercises.json fy3-5-L1-10 — the sentence "Kcal tarkoittaa kilokaloria." starts with a capital, so the symbol reads wrongly — "Merkintä $\text{kcal}$ tarkoittaa kilokaloria." and set the first "kaloreina ($\text{cal}$)" the same way.
-- [Minor] exercises.json fy3-5-L1-10 — the task has five short sentences before the question; the order could be units first, data second ("Systeemiin siirtyy lämpömäärä $2{,}0\,\text{kcal}$ ja siihen tehdään työ $3{,}0\,\text{kJ}$.").
-- [Minor] fy3-5/piston-force — the x axis runs to $0{,}25\,\text{m}$ while the line ends at $0{,}20\,\text{m}$; fine, but the unit-less tick numbers share one line with the "(m)" title only at the arrow end; no change needed.
+- [Minor] solutions.md L2-07 — "Vastaus: $50\,\text{J}$ (laskettu $50{,}4\,\text{J}$)" reads well; consider the same "laskettu" pattern in other rounded answers for consistency.
 
 ## Checked
-- fy3-5-open-exercises-1280-9 and -10 (L1-10: task text, Vihje box, answer row, solution with unit conversion, Sijoitus rows, Järkevyys).
-- fy3-5-open-exercises-L2-1280-10 and -11 (L2-08: piston-force graph with axis titles and units, ticks, end points marked, description matches, no work value given; solution with trapezoid fraction, Kuvaajan lukeminen).
-- Captures are the lesson's review/shots (current for this hash).
+- Delta (L2-05 label "Syventävä tehtävä", L2-07 answer rounding 50 J): open-exercises-L2-1280-5 (6-15 with its badge; the prefix is not duplicated on the page), -6 (W4 solution) and -9 (6-17 chain, rounded answer and explanation): layout and formulas fine.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4

@@ -39,10 +39,10 @@ def carry_lift():
 def joule():
     f = Fig("fy32-joule", 340, "Kaavakuva Joulen kokeesta. Putoava paino vetää narua, joka kulkee väkipyörän yli ja pyörittää "
             "vesiastiassa olevaa siipipyörää. Painon voima tekee työn pudotusmatkalla h, ja siipipyörä lämmittää vettä: työ "
-            "muuttuu lämmöksi.")
+            "kasvattaa veden sisäenergiaa.")
     f.defs_add('<linearGradient id="fy32-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/>'
                '<stop offset="1" stop-color="#2f74b5"/></linearGradient>')
-    f.tex(250, 30, r"\text{työ} \to \text{lämpö}", "middle")
+    f.tex(250, 30, r"\text{työ} \to \text{sisäenergia}", "middle")
     # water vessel with a paddle wheel
     f.rect(62, 170, 196, 100, "url(#fy32-water)")
     f.line(62, 170, 258, 170, WATER, 2)

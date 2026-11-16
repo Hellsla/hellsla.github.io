@@ -1,17 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 2aec8d743992d33c
-SCOPE: delta added-exercise from b9b137c60b60a64a base 81db4a6fd727
+CONTENT-HASH: 657e6587380e3a35
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- fy3-5-L2-08 uses the same figure and the same area reading (60 J) as L2-01; only Q = 0 versus ΔU given differs. Consider a different line in the figure for one of them, so that the reading is not repeated.
-- fy3-5-L1-10 — "Kcal tarkoittaa kilokaloria" sentence is useful; add that the food-label "kalori" is kcal if the lesson mentions it.
+- fy3-5-L2-05 — the new opening "Syventävä tehtävä." is a fourth level name beside perus, soveltava and haastava; the task is a level-2 first-law cycle (ΔU = 0 over a cycle), so drop the label or move the task to level 3 if it is meant to stretch.
 
 ## Checked
-- L1-10: needs a unit conversion and ΔU = Q + W with two positive terms; level 1 fits; MAFY table named.
-- L1-10: the 4 % tolerance accepts 4,19 and 4,1868 J/cal; solution converts before adding.
-- L2-08: adiabatic case reasoned (Q = 0) before reading the area; trapezoid steps shown.
-- Figure description gives end points, not the work; good for a reader who cannot see it.
-- Finnish clear.
+- Delta 2026-11-15: friction-block solution answer now "50 J (laskettu 50,4 J), kaksi merkitsevää numeroa" with the measurement spread (±0,2 N, about 5 %) as the reason; consistent with the data, and the Q < 0 remark now says energy leaves "lämpönä", which is the right word.
+- L2-05 task text otherwise unchanged: data table, cycle closes, sign convention for W stated.

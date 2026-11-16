@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4813d28d443de144
+CONTENT-HASH: 8ca245f89f4d92ad
 
 ## Blocking
+(none)
 
 ## Polish
-- The 'in summer the need is usually smaller' sentence no longer links explicitly to the plant's electric-to-heat ratio; fine, but a short link back to the opening question would help.
+(none)
 
 ## Checked
-batch delta review: reworded district-heating passages clear and consistent with the inquiry model answer and the misconception paragraph; no task contradicts them.
+- Delta: the misconception paragraph now says that waste heat is energy 'transferred to the surroundings', consistent with the course's heat-as-transfer wording; meaning of the combined heat and power sentence unchanged and no number or task affected.
+- Does not contradict the inquiry's model answer or the other misconceptions (product of efficiencies, value of electricity versus district heat).

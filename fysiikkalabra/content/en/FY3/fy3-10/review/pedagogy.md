@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 43e6c2262b5d5366
+CONTENT-HASH: 17e2a10800bbe32f
 
 ## Blocking
-None. Read the whole chapter (lesson, inquiry, exit ticket); the new notation can be followed by a first-time student, the inquiry, worked example and exit ticket use the same symbols, and no number or answer changed.
+(none)
 
 ## Polish
-1. lesson.md, Kaava: n = N/N_A and n = m/M as two named rows is clearer than the old chain; the symbols N, m, M are defined right under the table and the mole-mass figure shows n = m/M. No inquiry or exercise breakage found.
-2. Optional: one sentence that the two rows are combined when N is wanted from m (N = N_A m/M), as exercises with both steps need it.
+(none)
 
-en: says the same as fi.
+## Checked
+- Delta: in the balloon task's reasonableness stage the difference 3360 kg - 2640 kg is now stated as 720 kg instead of the loose 'about 700 kg'; subtraction verified, and it matches the given masses.
+- Rest of the solution (n = pV/RT, m = nM, conversions, substitution) unchanged; the symbolic-first order holds.
+- No task, hint or answer changed.

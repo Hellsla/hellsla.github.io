@@ -374,8 +374,8 @@
 </ul></div></section>
 <section class="stage" id="sovella" data-stage="sovella"><h2><span class="stage-no" aria-hidden="true">5</span>Esimerkit</h2><div class="activity act-choice task-card" id="virhe-rinne" data-type="choice"><h3>Etsi virhe: pulkka rinteessä</h3><fieldset class="choice list"><legend>Pulkka ($25\,\text{kg}$ lapsineen) liukuu rinnettä alas, rinteen kaltevuuskulma on $20^\circ$ ja liukukitkakerroin $0{,}10$. Opiskelija laski kitkan: ”$F_\mu = \mu m g = 0{,}10 \cdot 25\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 25\,\text{N}$.” Mikä ratkaisussa on väärin?</legend><ul class="choices"><li><label><input type="radio" name="virhe-rinne" value="0" data-correct="0"><span>Ratkaisussa ei ole virhettä, koska massa ja $g$ ovat rinteessäkin samat.</span></label><div class="feedback" data-for="0" hidden><p>Massa ja $g$ ovat samat, mutta tukivoima ei ole painon suuruinen: rinteessä vain painon kohtisuora komponentti painaa pulkkaa lunta vasten.</p></div></li><li><label><input type="radio" name="virhe-rinne" value="1" data-correct="0"><span>Kitkan pitäisi olla $\mu mg\sin\alpha \approx 8{,}4\,\text{N}$, koska liike on rinteen suuntaista.</span></label><div class="feedback" data-for="1" hidden><p>Kitka on rinteen suuntainen, mutta sen suuruus riippuu tukivoimasta, joka on kohtisuorassa rinnettä vastaan: $N = mg\cos\alpha$. Komponentti $mg\sin\alpha$ vie pulkkaa rinnettä alas.</p></div></li><li><label><input type="radio" name="virhe-rinne" value="2" data-correct="1"><span>Tukivoima ei ole $mg$: rinteessä $N = mg\cos\alpha$, joten $F_\mu \approx 23\,\text{N}$.</span></label><div class="feedback" data-for="2" hidden><p>Oikein. Pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima, joten $N = mg\cos 20^\circ$ ja <span class="mj-wide">$$
 \begin{aligned}
-F_\mu &= 0{,}10 \cdot 25\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
-&\cdot \cos 20^\circ \approx 23\,\text{N}\text{.} 
+F_\mu &= 0{,}10 \cdot 25\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot \cos 20^\circ \\
+&\approx 23\,\text{N}\text{.}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -457,8 +457,8 @@ $$</span></p></div></li><li><label><input type="radio" name="virhe-rinne" value=
   <foreignObject x="144" y="114.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg></div></div><div class="sol-step" data-step="kaava"><p class="sol-label">Kaava</p><p>$T - mg = ma$, joten $T = m(g + a)$</p></div><div class="sol-step" data-step="muunnokset"><p class="sol-label">Muunnokset</p><p>Kiihtyvyys osoittaa ylös, joten $a = +0{,}60\,\text{m/s}^2$. Lopuksi $1\,\text{N} = 0{,}001\,\text{kN}$.</p></div><div class="sol-step" data-step="sijoitus"><p class="sol-label">Sijoitus</p><p><span class="mj-wide">$$
 \begin{aligned}
-T &= 650\,\text{kg} \\
-&\cdot (9{,}81\,\text{m/s}^2 + 0{,}60\,\text{m/s}^2) = 650\,\text{kg} \cdot 10{,}41\,\text{m/s}^2 \\
+T &= 650\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 + 0{,}60\,\text{m/s}^2) \\
+&= 650\,\text{kg} \cdot 10{,}41\,\text{m/s}^2 \\
 &= 6766{,}5\,\text{N} \\
 &= 6{,}7665\,\text{kN}
 \end{aligned}
@@ -509,8 +509,8 @@ $$</span></p></div><div class="sol-step" data-step="vastaus"><p class="sol-label
 
 <p><span class="mj-wide">$$
 \begin{aligned}
-N &= 18\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
-&- 60\,\text{N} \cdot \sin 25^\circ = 176{,}58\,\text{N} - 25{,}36\,\text{N} \\
+N &= 18\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 - 60\,\text{N} \cdot \sin 25^\circ \\
+&= 176{,}58\,\text{N} - 25{,}36\,\text{N} \\
 &= 151{,}22\,\text{N}\text{,}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
@@ -561,9 +561,9 @@ $$</span> joten </p>
   <foreignObject x="324" y="136" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg></div></div><div class="sol-step" data-step="kaava"><p class="sol-label">Kaava</p><p>$y$: $N - mg\cos\alpha = 0$ ja $x$: $mg\sin\alpha - \mu N = ma$, joten $a = g(\sin\alpha - \mu\cos\alpha)$</p></div><div class="sol-step" data-step="muunnokset"><p class="sol-label">Muunnokset</p><p>Ei tarvita. Massaa ei tarvita, koska se supistuu.</p></div><div class="sol-step" data-step="sijoitus"><p class="sol-label">Sijoitus</p><p><span class="mj-wide">$$
 \begin{aligned}
-a &= 9{,}81\,\text{m/s}^2 \\
-&\cdot (\sin 28^\circ - 0{,}15 \cdot \cos 28^\circ) = 9{,}81\,\text{m/s}^2 \\
-&\cdot (0{,}4695 - 0{,}1324) = 3{,}306\,\text{m/s}^2 
+a &= 9{,}81\,\text{m/s}^2 \cdot (\sin 28^\circ - 0{,}15 \cdot \cos 28^\circ) \\
+&= 9{,}81\,\text{m/s}^2 \cdot (0{,}4695 - 0{,}1324) \\
+&= 3{,}306\,\text{m/s}^2
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -676,9 +676,9 @@ $$</span></p></div><div class="sol-step" data-step="vastaus"><p class="sol-label
   <foreignObject x="326" y="372" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_{y}$</div></foreignObject>
 </svg></div></div><div class="sol-step" data-step="kaava"><p class="sol-label">Kaava</p><p>$y$: $N - mg\cos\alpha = 0$ ja $x$: $T - mg\sin\alpha - \mu N = 0$, joten $T = mg(\sin\alpha + \mu\cos\alpha)$</p></div><div class="sol-step" data-step="muunnokset"><p class="sol-label">Muunnokset</p><p>Ei tarvita, suureet ovat perusyksiköissä.</p></div><div class="sol-step" data-step="sijoitus"><p class="sol-label">Sijoitus</p><p><span class="mj-wide">$$
 \begin{aligned}
-T &= 280\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
-&\cdot (\sin 14^\circ + 0{,}25 \cdot \cos 14^\circ) = 2746{,}8\,\text{N} \\
-&\cdot (0{,}2419 + 0{,}2426) = 1330{,}8\,\text{N} 
+T &= 280\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot (\sin 14^\circ + 0{,}25 \cdot \cos 14^\circ) \\
+&= 2746{,}8\,\text{N} \cdot (0{,}2419 + 0{,}2426) \\
+&= 1330{,}8\,\text{N}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -720,8 +720,8 @@ $$</span></p></div><div class="sol-step" data-step="vastaus"><p class="sol-label
 
 <p>ja yläraja <span class="mj-wide">$$
 \begin{aligned}
-\mu_0 mg\cos\alpha &= 0{,}35 \cdot 2746{,}8\,\text{N} \\
-&\cdot \cos 14^\circ = 932{,}8\,\text{N}\text{;} 
+\mu_0 mg\cos\alpha &= 0{,}35 \cdot 2746{,}8\,\text{N} \cdot \cos 14^\circ \\
+&= 932{,}8\,\text{N}\text{;}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -828,8 +828,8 @@ $$</span> rajakulma </p>
   <foreignObject x="437.5" y="159" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg></div></div></div><h4 class="sol-part">b)</h4><div class="steps"><div class="sol-step" data-step="annettu"><p class="sol-label">Annettu</p><p>$m_\text{B} = 80\,\text{kg}$, liukukitkakerroin $\mu = 0{,}10$, kiihtyvyys $a = 0{,}50\,\text{m/s}^2$, $g = 9{,}81\,\text{m/s}^2$</p></div><div class="sol-step" data-step="kysytty"><p class="sol-label">Kysytty</p><p>köyden 2 jännitysvoima $T_2$</p></div><div class="sol-step" data-step="periaate"><p class="sol-label">Periaate</p><p>Reen B vaakasuorat voimat ovat köyden 2 veto eteenpäin ja kitka taaksepäin. Newtonin toisen lain mukaan niiden summa on $m_\text{B} a$. Pystysuunnassa ei ole kiihtyvyyttä, joten $N_\text{B} = m_\text{B} g$ ja kitka on $\mu m_\text{B} g$ (luku <em>Liikeyhtälö kytketyille kappaleille</em>).</p></div><div class="sol-step" data-step="kaava"><p class="sol-label">Kaava</p><p>$T_2 - \mu m_\text{B} g = m_\text{B} a$, joten $T_2 = m_\text{B}(a + \mu g)$</p></div><div class="sol-step" data-step="muunnokset"><p class="sol-label">Muunnokset</p><p>Ei tarvita, suureet ovat perusyksiköissä.</p></div><div class="sol-step" data-step="sijoitus"><p class="sol-label">Sijoitus</p><p><span class="mj-wide">$$
 \begin{aligned}
-T_2 &= 80\,\text{kg} \cdot (0{,}50\,\text{m/s}^2 \\
-&+ 0{,}10 \cdot 9{,}81\,\text{m/s}^2) = 80\,\text{kg} \cdot 1{,}481\,\text{m/s}^2 \\
+T_2 &= 80\,\text{kg} \cdot (0{,}50\,\text{m/s}^2 + 0{,}10 \cdot 9{,}81\,\text{m/s}^2) \\
+&= 80\,\text{kg} \cdot 1{,}481\,\text{m/s}^2 \\
 &= 118{,}48\,\text{N}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
@@ -851,8 +851,8 @@ $$</span><span class="mj-narrow">$$
 $$</span> ja kiihdyttämiseen tarvitaan $80\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 40\,\text{N}$; yhteensä noin $118\,\text{N}$, kuten pitää.</p></div></div><h4 class="sol-part">c)</h4><div class="steps"><div class="sol-step" data-step="annettu"><p class="sol-label">Annettu</p><p>$m_\text{A} = 120\,\text{kg}$, $m_\text{B} = 80\,\text{kg}$, $\mu = 0{,}10$, $a = 0{,}50\,\text{m/s}^2$, b-kohdasta $T_2 = 118{,}48\,\text{N}$, $g = 9{,}81\,\text{m/s}^2$</p></div><div class="sol-step" data-step="kysytty"><p class="sol-label">Kysytty</p><p>köyden 1 jännitysvoima $T_1$</p></div><div class="sol-step" data-step="periaate"><p class="sol-label">Periaate</p><p>Reen A vaakasuorat voimat ovat köyden 1 veto eteenpäin sekä köyden 2 veto ja kitka taaksepäin, ja niiden summa on $m_\text{A} a$. Saman tuloksen antaa molempien rekien systeemi, jossa köyden 2 voimat ovat sisäisiä ja kumoavat toisensa.</p></div><div class="sol-step" data-step="kaava"><p class="sol-label">Kaava</p><p>$T_1 - T_2 - \mu m_\text{A} g = m_\text{A} a$, joten </p>
 <div class="eq-chain"><div class="eq-row"><span class="eq-l">$T_1$</span><span class="eq-r">$= T_2 + m_\text{A}(a + \mu g)$</span></div><div class="eq-row"><span class="eq-l"></span><span class="eq-r">$= (m_\text{A} + m_\text{B})(a + \mu g)$</span></div></div></div><div class="sol-step" data-step="muunnokset"><p class="sol-label">Muunnokset</p><p>Ei tarvita, suureet ovat perusyksiköissä.</p></div><div class="sol-step" data-step="sijoitus"><p class="sol-label">Sijoitus</p><p><span class="mj-wide">$$
 \begin{aligned}
-T_1 &= 118{,}48\,\text{N} \\
-&+ 120\,\text{kg} \cdot 1{,}481\,\text{m/s}^2 = 118{,}48\,\text{N} + 177{,}72\,\text{N} \\
+T_1 &= 118{,}48\,\text{N} + 120\,\text{kg} \cdot 1{,}481\,\text{m/s}^2 \\
+&= 118{,}48\,\text{N} + 177{,}72\,\text{N} \\
 &= 296{,}2\,\text{N}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
@@ -1193,9 +1193,9 @@ $$ ja jäällä $0{,}1 \cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, kun 
   <foreignObject x="304" y="175.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#e8590c">$\overline{a}$</div></foreignObject>
 </svg></div></div><div class="sol-step" data-step="kaava"><p class="sol-label">Kaava</p><p>$y$: $N = mg\cos\alpha$; $x$: $mg\sin\alpha - \mu mg\cos\alpha = ma_1$, joten $a_1 = g(\sin\alpha - \mu\cos\alpha)$. Levosta lähtevälle $v^2 = 2a_1 L$, joten $v = \sqrt{2gL(\sin\alpha - \mu\cos\alpha)}$</p></div><div class="sol-step" data-step="muunnokset"><p class="sol-label">Muunnokset</p><p>Ei tarvita, suureet ovat perusyksiköissä.</p></div><div class="sol-step" data-step="sijoitus"><p class="sol-label">Sijoitus</p><p><span class="mj-wide">$$
 \begin{aligned}
-a_1 &= 9{,}81\,\text{m/s}^2 \\
-&\cdot (\sin 12^\circ - 0{,}080 \cdot \cos 12^\circ) = 9{,}81\,\text{m/s}^2 \\
-&\cdot (0{,}2079 - 0{,}0783) = 1{,}272\,\text{m/s}^2 
+a_1 &= 9{,}81\,\text{m/s}^2 \cdot (\sin 12^\circ - 0{,}080 \cdot \cos 12^\circ) \\
+&= 9{,}81\,\text{m/s}^2 \cdot (0{,}2079 - 0{,}0783) \\
+&= 1{,}272\,\text{m/s}^2
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -1254,8 +1254,8 @@ $$</span> ja </p>
 <section class="stage" id="tarkista" data-stage="tarkista"><h2><span class="stage-no" aria-hidden="true">7</span>Testaa ja arvioi</h2><div class="activity act-exit task-card" id="lahtolippu" data-type="exit"><div id="exit"><h3>1. Pohdintatehtävä</h3><p>Vastaa ensin itse ja avaa vastaus vasta sitten.</p><ol><li>Kirja on levossa pöydällä. Mikä voima on kirjan painon vastavoima Newtonin kolmannen lain mukaan? Onko se pöydän tukivoima?<details class="answer"><summary>Vastaus</summary><div class="answer-body"><p>Painon vastavoima on voima, jolla kirja vetää Maata ylöspäin: paino on Maan ja kirjan vuorovaikutus, joten vastavoima vaikuttaa Maahan. Pöydän tukivoima ei ole vastavoima, vaikka se on yhtä suuri ja vastakkainen: se vaikuttaa samaan kappaleeseen, kirjaan, ja on yhtä suuri vain siksi, että kirja on levossa (ensimmäinen laki). Tukivoiman vastavoima on kirjan voima pöytään alaspäin.</p></div></details></li><li>Laatikko ($10{,}0\,\text{kg}$) on levossa rinteellä, jonka kaltevuuskulma on $30^\circ$. Kuinka suuri on rinteen tukivoima?<details class="answer"><summary>Vastaus</summary><div class="answer-body"><p>Pintaa vastaan kohtisuorassa vaikuttavat vain paino ja tukivoima, joten <span class="mj-wide">$$
 \begin{aligned}
 N &= mg\cos\alpha \\
-&= 10{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
-&\cdot \cos 30^\circ \approx 85{,}0\,\text{N}\text{,} 
+&= 10{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot \cos 30^\circ \\
+&\approx 85{,}0\,\text{N}\text{,}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}
@@ -1317,8 +1317,8 @@ $$</span> joten </p>
 
 <p><span class="mj-wide">$$
 \begin{aligned}
-P &= 20\,\text{kg} \cdot (0{,}9285\,\text{m/s}^2 \\
-&+ 1{,}4715\,\text{m/s}^2) = 48{,}0\,\text{N} 
+P &= 20\,\text{kg} \cdot (0{,}9285\,\text{m/s}^2 + 1{,}4715\,\text{m/s}^2) \\
+&= 48{,}0\,\text{N}
 \end{aligned}
 $$</span><span class="mj-narrow">$$
 \begin{aligned}

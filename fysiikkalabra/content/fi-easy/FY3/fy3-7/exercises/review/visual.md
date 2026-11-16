@@ -1,21 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 9c1b044a71f0ab6e
-Mode: delta
-Round: 1
+CONTENT-HASH: 9a88d35a19ddea79
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] fy3-7/melting-curve (fy3-7-L2-09) — the x tick numbers $40, 80, \ldots, 320$ sit close together at 1280 px and will be tighter on a phone; label every 80 kJ or widen the plot if the figure is redrawn (figure is teacher-approved, so not blocking).
-- [Minor] solutions.md fy3-7-L2-09 Järkevyys — "Jään ja veden suhde on tällainen. Tase:" is unclear — "Jään $c$ on noin puolet veden arvosta. Tarkistus takaisin:".
-- [Minor] solutions.md fy3-7-L2-09 Vastaus — the stacked $\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$ opens the line spacing of the sentence after it; use $\text{J/(kg}\cdot\text{K)}$ in running text.
-- [Minor] fy3-7-L1-09 — "haihtuu iholta" but the table value is at the boiling point; the Vastaus already says so, nothing to change.
+- [Minor] solutions.md 8-5 — the accepted range is typeset "323 . . . 343"; use \ldots spacing or an en dash, e.g. $323\text{–}343$.
 
 ## Checked
-- fy3-7-open-exercises-1280-9 and -10 (L1-09: task split into situation and question, Vihje box, answer row, solution with unit conversion, Järkevyys).
-- fy3-7-open-exercises-L2-1280-12 and -13 (L2-09: heating-curve graph with axis titles and units, marked end points, horizontal plateau, nothing clipped; description matches and gives no answer; solution with Kuvaajan lukeminen, fractions, Järkevyys).
-- Captures are the lesson's review/shots (current for this hash).
+- Delta (8-5 answer $3{,}3 \cdot 10^{2}\,\text{kJ/kg}$ with computed 333): open-exercises-1280-5 and -6 (graph with data points and solution, units upright), -1 and -4 for surrounding layout.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

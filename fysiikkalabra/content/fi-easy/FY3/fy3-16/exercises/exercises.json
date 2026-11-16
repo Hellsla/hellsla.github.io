@@ -128,10 +128,10 @@
       "id": "fy3-16-L2-01",
       "level": 2,
       "core": true,
-      "text": "Kylmälaukun seinien yhteispinta-ala on $0{,}50\\,\\text{m}^2$ ja U-arvo $2{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. Ulkona on $25\\,{}^\\circ\\text{C}$. Jääpussin lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa niin kauan kuin jäätä on. Kuinka suuri jääpussin massan pitää olla, jotta jäätä riittää 6,0 tunniksi? Oleta, että laukussa on vain jäätä.",
-      "answer": 1.6,
+      "text": "Kylmälaukun seinien yhteispinta-ala on $0{,}50\\,\\text{m}^2$ ja U-arvo $2{,}0\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$. Ulkona on $25\\,{}^\\circ\\text{C}$. Jääpussin lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa niin kauan kuin jäätä on. Kuinka suuri jääpussin massan pitää olla, jotta jäätä riittää 6,0 tunniksi? Oleta, että laukussa on vain jäätä. Pyöristä vastaus ylöspäin, jotta jää varmasti riittää.",
+      "answer": 1.7,
       "unit": "kg",
-      "tolerance": 0.02
+      "tolerance": 0.07
     },
     {
       "id": "fy3-16-L2-02",
@@ -313,10 +313,10 @@
     {
       "id": "fy3-16-L3-03",
       "level": 3,
-      "text": "Kylmälaukun seinien yhteispinta-ala on $0{,}50\\,\\text{m}^2$ ja U-arvo $1{,}5\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$.\n\nLaukkuun pakataan $0{,}50\\,\\text{kg}$ juomia. Juomien lämpötila on $24\\,{}^\\circ\\text{C}$ ja ominaislämpökapasiteetti veden arvo $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Laukkuun pakataan myös pakastimesta otettu jääpussi, jonka lämpötila on $-10\\,{}^\\circ\\text{C}$ ($c_\\text{jää} = 2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). Ulkona on $30\\,{}^\\circ\\text{C}$.\n\nJäätä pitää riittää 6,0 tunniksi.\n\nTee kolme oletusta. Juomat jäähtyvät heti $0\\,{}^\\circ\\text{C}$:seen. Jää lämpenee ensin $0\\,{}^\\circ\\text{C}$:seen ja sulaa sitten. Seinän läpi tulee sama teho koko ajan, kuin sisällä olisi $0\\,{}^\\circ\\text{C}$.\n\nKuinka suuri jääpussin massan vähintään pitää olla? Anna vastaus kilogrammoina.",
-      "answer": 1.5,
+      "text": "Kylmälaukun seinien yhteispinta-ala on $0{,}50\\,\\text{m}^2$ ja U-arvo $1{,}5\\,\\tfrac{\\text{W}}{\\text{m}^2\\cdot\\text{K}}$.\n\nLaukkuun pakataan $0{,}50\\,\\text{kg}$ juomia. Juomien lämpötila on $24\\,{}^\\circ\\text{C}$ ja ominaislämpökapasiteetti veden arvo $4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Laukkuun pakataan myös pakastimesta otettu jääpussi, jonka lämpötila on $-10\\,{}^\\circ\\text{C}$ ($c_\\text{jää} = 2100\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$). Ulkona on $30\\,{}^\\circ\\text{C}$.\n\nJäätä pitää riittää 6,0 tunniksi.\n\nTee kolme oletusta. Juomat jäähtyvät heti $0\\,{}^\\circ\\text{C}$:seen. Jää lämpenee ensin $0\\,{}^\\circ\\text{C}$:seen ja sulaa sitten. Seinän läpi tulee sama teho koko ajan, kuin sisällä olisi $0\\,{}^\\circ\\text{C}$.\n\nKuinka suuri jääpussin massan vähintään pitää olla? Pyöristä vastaus ylöspäin, jotta jää varmasti riittää, ja anna se kilogrammoina.",
+      "answer": 1.6,
       "unit": "kg",
-      "tolerance": 0.02
+      "tolerance": 0.07
     },
     {
       "id": "fy3-16-L3-04",

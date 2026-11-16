@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 9abc5f49d6a2185e
-SCOPE: delta added-exercise from 814ed3c8b96c2177 base 81db4a6fd727
+CONTENT-HASH: c5435cd354b04553
 
 ## Blocking
-- none
 
 ## Polish
-1. content/fi-easy/FY3/fy3-16/exercises/solutions.md (fy3-16-L2-09, Kuvaajan lukeminen): "Teho on vakio. Siksi kuvaaja on suora." For the full reason, add "ja kaikki teho lämmittää kappaletta", the task's own assumption.
+- exercises.json fy3-16-L2-01, fy3-16-L3-03 — with tolerance 0.07 the check accepts 1.58–1.82 kg (key 1.7) and 1.49–1.71 kg (key 1.6), so the value one step above the key (1.8 kg; 1.7 kg) also passes — follows from the teacher's both-directions decision; no change needed.
 
 ## Checked
-- L1-09 (new situation: water boiling in a pan on a hot plate) recomputed. The water is at 100 °C, so Q = rm = 2260 kJ/kg · 0,30 kg = 678 kJ, so 680 kJ.
-- The L1-09 comparison is right: heating the water 0 → 100 °C takes 126 kJ, and 678/126 = 5,4, so "yli viisi kertaa" holds.
-- L2-09: Pt = cmΔT gives c = 400 · 180 / (2,0 · 40) = 900 J/(kg·K). The no-loss assumption is in the task.
-- L2-09: "losses would make the true value smaller" is correct, because with losses less heat than Pt reaches the block.
-- L2-10: Q = 220 kJ is read off melting-curve, and 220 000 J / 25 W = 8800 s = 2,44 h.
-- The L2-10 independent check is right: 2100 · 0,60 · 16 = 20,2 kJ, plus 334 · 0,60 = 200,4 kJ, gives 220,6 kJ. The curve's later slope fits water too (80 kJ / 2,514 kJ/K = 31,8 K).
-- The script compared fi-easy with the Finnish: answers, units, tolerances, figure ids and all numbers are identical.
-- Hash the same at start and end.
+- Round 4, full: all 21 numeric answers recomputed in one script from the task texts with my own formulas; all agree with exercises.json and answers.py.
+- Limit-value tasks L2-01 and L3-03: key and model answer round up (1.617→1.7; 1.511→1.6), answers.py uses ceil; tolerance 0.07 accepts the rounded-down 1.6 (5.9 %) and 1.5 (6.3 %) as the teacher decided; the unrounded values pass too.
+- Every other tolerance lets a student who rounds to the data's figures pass (680 vs 678, 2.4 vs 2.444, 140 vs 139, 480 vs 480.6, 590 vs 592).
+- Laws and conditions: Q = cmΔT only without a change of state (said in each Periaate), sm and rm at constant temperature, P = UAΔT with the inside at 0 °C stated in the task, mixing task checks 251 400 J > 167 000 J first and states the "not enough" case correctly.
+- Multiple choice L1-06, L1-07, L2-08: exactly one correct option; each distractor is wrong and its feedback gives the right physics (net transfer wording, no "cold flows", t ∝ m/(UΔT) ratio = 2).
+- Intermediate numbers of the solutions recomputed (period efficiencies, break-even price 0.44 €/kg, stage energies, fitted line, axis crossing ≈ +20 °C): all right.
+- Figures fy3-6/heating-line and fy3-7/melting-curve give the needed readings (180 s, 40 K; 220 kJ), agree with c_ice·m·ΔT + sm = 20.2 + 200 kJ, and do not show the answer.
+- Scope: FY3 central contents only (heat, changes of state, U-value from the lesson); symbols as in the brief (s, r, c, m/t, UA).
+- Guardrails: melting explained by interaction energy, heater efficiency "käytännössä 100 %", example data called esimerkkiaineisto, slope read from the fitted line.
+- fi-easy: answers, units, tolerances, data rows and correct options identical to fi; every number in every solution matches the fi solution (compared mechanically); no step or justification dropped.

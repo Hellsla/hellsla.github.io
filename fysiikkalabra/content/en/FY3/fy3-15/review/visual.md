@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4813d28d443de144
+CONTENT-HASH: 8ca245f89f4d92ad
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md combined-production paragraph — "…industrial heat processes. Its network reaches only a town." reads abruptly — join: "…industrial heat processes, but its network reaches only a town."
+- [Minor] theory-1280-3 — "(W)", "(K)", "(kg/s)" after the symbols are plain units in untouched text.
 
 ## Checked
-- batch delta review: opened fy3-15-fig-row-1280.png (Sankey figure unchanged, teacher-approved) and read the wording diff (lesson and inquiry model answer); no new plain-text quantities.
+- Diff: one wording change (waste heat transferred to the surroundings). Opened fy3-15-theory-1280-3 (Sankey bars, condenser figure, misconception paragraph with the new sentence): reads well, figures intact.
+
+## Scores
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

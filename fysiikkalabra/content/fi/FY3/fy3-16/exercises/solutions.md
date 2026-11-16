@@ -55,7 +55,7 @@
 **Kaava:** $U A\,\Delta T\,t = s\,m$, joten $m = \dfrac{U A\,\Delta T\,t}{s}$
 **Muunnokset:** $t = 6{,}0\,\text{h} = 6{,}0 \cdot 3600\,\text{s} = 21\,600\,\text{s}$ ja $s = 334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$, jotta watti kertaa sekunti on joule.
 **Sijoitus:** $P = 2{,}0 \cdot 0{,}50 \cdot 25\,\text{W} = 25\,\text{W}$ ja $m = \dfrac{25\,\text{W} \cdot 21\,600\,\text{s}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = \dfrac{540\,000\,\text{J}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = 1{,}617\,\text{kg}$
-**Vastaus:** $1{,}6\,\text{kg}$, kaksi merkitsevää numeroa, koska U-arvo $2{,}0$, pinta-ala $0{,}50\,\text{m}^2$, lämpötilaero $25\,\text{K}$ ja aika $6{,}0\,\text{h}$ ovat kaikki kahdella numerolla.
+**Vastaus:** $1{,}7\,\text{kg}$, kaksi merkitsevää numeroa, koska U-arvo $2{,}0$, pinta-ala $0{,}50\,\text{m}^2$, lämpötilaero $25\,\text{K}$ ja aika $6{,}0\,\text{h}$ ovat kaikki kahdella numerolla. Laskettu $1{,}617\,\text{kg}$ on pienin riittävä massa, joten se pyöristetään ylöspäin: $1{,}6\,\text{kg}$ ei riittäisi koko kuudeksi tunniksi.
 **Järkevyys:** Teho on $25\,\text{W}$, joten kuudessa tunnissa laukkuun tulee $540\,\text{kJ}$. Palautus: $1{,}617\,\text{kg} \cdot 334\,\tfrac{\text{kJ}}{\text{kg}} = 540\,\text{kJ}$. Vähän yli puolentoista kilon jääpussi on tavallinen koko, ja kaksinkertainen aika vaatisi kaksinkertaisen massan.
 
 ## fy3-16-L2-02
@@ -122,8 +122,8 @@ Seinän energia: $U A\,\Delta T\,t = 1{,}5 \cdot 0{,}50 \cdot 30 \cdot 21\,600\,
 Juomien energia: $c\,m_\text{j}\,\Delta T_\text{j} = 4190 \cdot 0{,}50 \cdot 24\,\text{J} = 50\,280\,\text{J}$
 Jään energia kilogrammaa kohti: $c_\text{jää}\,\Delta T_\text{jää} + s = 21\,000 + 334\,000 = 355\,000\,\tfrac{\text{J}}{\text{kg}}$
 Pienin massa: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfrac{\text{J}}{\text{kg}}} = 1{,}511\,\text{kg}$
-**Vastaus:** $1{,}5\,\text{kg}$, kaksi merkitsevää numeroa, koska U-arvo $1{,}5$, pinta-ala $0{,}50\,\text{m}^2$, juomien massa $0{,}50\,\text{kg}$ ja aika $6{,}0\,\text{h}$ ovat kaikki kahdella numerolla.
-**Järkevyys:** Seinä tuo $486\,\text{kJ}$ ja juomat $50\,\text{kJ}$, yhteensä noin $536\,\text{kJ}$. Jos jää olisi jo $0\,{}^\circ\text{C}$:ssa, tarvittaisiin $\tfrac{536\,\text{kJ}}{334\,\text{kJ/kg}} \approx 1{,}6\,\text{kg}$. Pakastinjään lämmittäminen vie noin $\tfrac{21}{334} \approx 6\,\%$ enemmän energiaa kilogrammaa kohti, joten tarvittava massa on hieman pienempi, $1{,}51\,\text{kg}$ eli kahdella numerolla pienin sopiva massa $1{,}5\,\text{kg}$.
+**Vastaus:** $1{,}6\,\text{kg}$, kaksi merkitsevää numeroa, koska U-arvo $1{,}5$, pinta-ala $0{,}50\,\text{m}^2$, juomien massa $0{,}50\,\text{kg}$ ja aika $6{,}0\,\text{h}$ ovat kaikki kahdella numerolla. Laskettu $1{,}511\,\text{kg}$ on pienin riittävä massa, joten se pyöristetään ylöspäin: $1{,}5\,\text{kg}$ ei riittäisi.
+**Järkevyys:** Seinä tuo $486\,\text{kJ}$ ja juomat $50\,\text{kJ}$, yhteensä noin $536\,\text{kJ}$. Jos jää olisi jo $0\,{}^\circ\text{C}$:ssa, tarvittaisiin $\tfrac{536\,\text{kJ}}{334\,\text{kJ/kg}} \approx 1{,}6\,\text{kg}$. Pakastinjään lämmittäminen vie noin $\tfrac{21}{334} \approx 6\,\%$ enemmän energiaa kilogrammaa kohti, joten tarvittava massa on hieman pienempi, $1{,}51\,\text{kg}$, ja kahdella numerolla ylöspäin pyöristettynä pienin riittävä massa on $1{,}6\,\text{kg}$.
 
 ## fy3-16-L1-06
 **Kysytty:** miksi metallikahva tuntuu kylmemmältä kuin puukahva, vaikka molemmat ovat huoneen lämpötilassa.
@@ -140,7 +140,7 @@ Pienin massa: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfr
 **Kysytty:** lämmitysaika $t$ sekunteina
 **Periaate:** Oletuksen mukaan koko sähköenergia $P\,t$ menee veden lämmittämiseen. Vesi ei kiehu eikä höyrysty, joten olomuoto ei muutu ja riittää $Q = c\,m\,\Delta T$. Energiataseesta $P\,t = c\,m\,\Delta T$.
 **Kaava:** $P\,t = c\,m\,\Delta T$, josta $t = \dfrac{c\,m\,\Delta T}{P}$
-**Muunnokset:** Lämpötilan muutos on sama kelvineinä: $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$. Teho on $P = 2{,}0\,\text{kW} = 2000\,\text{W}$, jotta energia on joulejaan ja aika sekunteina.
+**Muunnokset:** Lämpötilan muutos on sama kelvineinä: $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$. Teho on $P = 2{,}0\,\text{kW} = 2000\,\text{W}$, jotta energia on jouleina ja aika sekunteina.
 **Sijoitus:** $t = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1{,}5\,\text{kg} \cdot 80\,\text{K}}{2000\,\text{W}} = \dfrac{502\,800\,\text{J}}{2000\,\text{W}} = 251{,}4\,\text{s}$
 **Vastaus:** $250\,\text{s}$, kaksi merkitsevää numeroa kuten massassa $1{,}5\,\text{kg}$ ja tehossa $2{,}0\,\text{kW}$.
 **Järkevyys:** Arvio: $4000 \cdot 1{,}5 \cdot 80\,\text{J} \approx 480\,\text{kJ}$, ja $480\,\text{kJ} : 2\,\text{kW} = 240\,\text{s}$, eli noin neljä minuuttia, mikä on tavallisen keittimen kokoluokkaa. Energiataseen tarkistus: $2000\,\text{W} \cdot 251{,}4\,\text{s} \approx 503\,\text{kJ}$ on sama kuin veden saama $503\,\text{kJ}$. Todellinen aika olisi hieman pidempi, koska osa energiasta lämmittää keitintä ja ilmaa.
@@ -148,7 +148,7 @@ Pienin massa: $m = \dfrac{486\,000\,\text{J} + 50\,280\,\text{J}}{355\,000\,\tfr
 ## fy3-16-L2-05
 **Annettu:** teho $P = 6{,}0\,\text{kW}$, kivet $m = 40\,\text{kg}$ ja $c = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; taulukosta $T = 20\,{}^\circ\text{C}$ hetkellä $0\,\text{min}$ ja $T = 275\,{}^\circ\text{C}$ hetkellä $30\,\text{min}$ (väliarvot $112\,{}^\circ\text{C}$ ja $196\,{}^\circ\text{C}$)
 **Kysytty:** lämmityksen hyötysuhde $\eta$ prosentteina
-**Periaate:** Kivet pysyvät kiinteinä, joten niihin siirtynyt energia on $Q = c\,m\,\Delta T$. Vastukset muuttavat sähköenergian lämmöksi teholla $P$, joten käytetty energia on $P\,t$. Hyötysuhde on hyödyksi päätyvän energian suhde käytettyyn energiaan.
+**Periaate:** Kivet pysyvät kiinteinä, joten niihin siirtynyt energia on $Q = c\,m\,\Delta T$. Vastukset muuttavat sähköenergiaa sisäenergiaksi teholla $P$, ja se siirtyy lämpönä kiviin, joten käytetty energia on $P\,t$. Hyötysuhde on hyödyksi päätyvän energian suhde käytettyyn energiaan.
 **Kaava:** $\eta = \dfrac{Q}{P\,t} = \dfrac{c\,m\,\Delta T}{P\,t}$
 **Muunnokset:** Lämpötilan muutos on sama kelvineinä: $\Delta T = 275\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 255\,\text{K}$. Aika $t = 30\,\text{min} = 1800\,\text{s}$ ja teho $P = 6{,}0\,\text{kW} = 6000\,\text{W}$.
 **Sijoitus:** $\eta = \dfrac{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 40\,\text{kg} \cdot 255\,\text{K}}{6000\,\text{W} \cdot 1800\,\text{s}} = \dfrac{8{,}16 \cdot 10^{6}\,\text{J}}{10{,}8 \cdot 10^{6}\,\text{J}} = 0{,}756 = 75{,}6\,\%$
