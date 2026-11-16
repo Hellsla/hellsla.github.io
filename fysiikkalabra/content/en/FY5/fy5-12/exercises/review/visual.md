@@ -1,16 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 97e669270a808dfc
+VERDICT: PASS
+CONTENT-HASH: b8fc622146b746b9
+SCOPE: delta added-exercise from a7e8c805b6c08c2c base b5600a63ddae
 
 ## Blocking
-- [Major] fy5-12-L2-10 solution, Part d) — one paragraph of about 136–142 words in new text (listener's position, model assumptions, real room, music, loudspeakers); a text wall on a phone, the Finnish version was split at 120 words — split into two paragraphs (path difference and loudness / why a real room is more complicated).
+(none)
 
 ## Polish
-- [Minor] L2-10 Substitution rows (Δs_c, Δs_d, Δs_d2) are separate blocks, not one column of equals signs; acceptable.
-- [Minor] L2-07 and L3-02..L3-06 chains scroll slightly at 360 px; known/untouched.
+- [Minor] L2-10 Substitution rows are separate blocks, not one column of equals signs.
+- [Minor] other chains scroll slightly at 360 px; known/untouched.
 
 ## Checked
-- own Playwright render of preview/en/fy5-12.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L2-10 (new) at 360 and 1280 px opened where noted. Opened 12-18 (L2-10) at 360 (cropped top and solution) and 1280.
-- Task opens with "Source material: PhET – Wave Interference" link, parts a)–d), answer box in m. English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
+- Round 2: re-rendered preview/en/fy5-12.html?ratkaisut=1 at 360 px, every solution open; paragraph scan of all task cards, overflow, KaTeX errors: the split solutions (L2-10 Part d), 2 paragraphs) now read as short paragraphs, nothing clipped, no new overflow beyond the known clipped formulas. Earlier round-1 captures of the new task stand (text unchanged apart from breaks).
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

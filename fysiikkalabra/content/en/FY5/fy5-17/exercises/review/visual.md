@@ -1,16 +1,14 @@
 VERDICT: FAIL
-CONTENT-HASH: 8f16389ec9a01707
+CONTENT-HASH: 002346b367555fd9
 
 ## Blocking
-- [Major] fy5-17-L2-10 solution (new task) — paragraphs of about 150 and 184 words (Part a) alone about 186 with maths), text walls on a phone; the Finnish version was split at 120 words — split each part into short paragraphs.
-- [Major] fy5-17-L2-07 solution (edited) — one paragraph of about 146 words — split at the significant-figures justification.
+- [Major] fy5-17-L2-10 solution, Given — one paragraph of about 150 words (the other 184-word paragraph is split) in new text; a text wall at 360 px — split it after the data of the table and after the wave speeds, as the Part paragraphs are.
 
 ## Polish
-- [Minor] L3-02 and L3-03 eq-chain rows scroll slightly at 360 px; known/untouched.
+- [Minor] L3-02 and L3-03 chains scroll slightly at 360 px; known.
 
 ## Checked
-- own Playwright render of preview/en/fy5-17.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L2-05, L2-06, L2-07, L2-09, L2-10 (new), L3-04, L3-05 at 360 and 1280 px opened where noted.
-- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
+- Round 2: re-rendered preview/en/fy5-17.html?ratkaisut=1 at 360 px, every solution open; paragraph scan of all task cards, overflow, KaTeX errors: the split solutions (L2-07 model answer (3 paragraphs), L2-10 Part a) (4 paragraphs)) now read as short paragraphs, nothing clipped, no new overflow beyond the known clipped formulas. Earlier round-1 captures of the new task stand (text unchanged apart from breaks).
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 3 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4
