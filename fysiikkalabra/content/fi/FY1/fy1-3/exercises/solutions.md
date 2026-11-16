@@ -211,3 +211,52 @@
 
 Lisäksi: virhearvio on $$\begin{aligned} \Delta x &= \tfrac{1{,}014 - 1{,}004}{2}\,\text{g/cm}^3 \\ &= 0{,}005\,\text{g/cm}^3 \end{aligned}$$, joten väli $\bar{x} \pm \Delta x$ on $1{,}005\ldots1{,}015\,\text{g/cm}^3$ eikä sisällä taulukon arvoa: mittauksissa on todennäköisesti systemaattinen virhe.
 **Järkevyys:** Kaikki mittaukset ovat taulukon arvoa suurempia, ja poikkeama on yli prosentin, mutta veden tiheys on likimain $1\,\text{g/cm}^3$, joten keskiarvo on oikean kokoinen ja poikkeama pieni.
+
+## fy1-3-L2-09
+**Annettu:** CERNin tiedote 23. syyskuuta 2011 ja sen päivitykset: lähteen ja ilmaisimen välinen matka noin $730\,\text{km}$, mitattu $20\,\text{cm}$:n epävarmuudella; neutriinojen kulkuaika mitattu alle $10\,\text{ns}$:n tarkkuudella; yli $15\,000$ havaittua neutriinoa. Valon nopeus tyhjiössä $c = 2{,}998\cdot10^{8}\,\text{m/s}$ ja poikkeama $\Delta t = 60\,\text{ns}$.
+
+**Kysytty:** a) mittaus ja sen tarkkuus, tuloksen yllättävyys; b) valon kulkuaika $t$, suhteellinen poikkeama $\dfrac{\Delta t}{t}$ prosentteina ja valon kulkema matka $\Delta s$ ajassa $\Delta t$; c) mitä myöhemmin havaittiin ja virheen laji; d) miksi yksi poikkeava tulos ei kumoa teoriaa
+
+**Periaate:** Nopeus saadaan mittaamalla matka ja kulkuaika. Jos neutriinot saapuvat aikaisemmin kuin valo ehtisi, niiden nopeus olisi suurempi kuin $c$. Poikkeaman merkitys arvioidaan suhteuttamalla se koko kulkuaikaan ja mittausten epävarmuuksiin.
+
+**Mallivastaus a):** Tutkijat mittasivat neutriinojen kulkuajan CERNistä Gran Sasson laboratorioon. Matka mitattiin $20\,\text{cm}$:n epävarmuudella ja aika alle $10\,\text{ns}$:n tarkkuudella GPS-järjestelmien ja atomikellojen avulla. Neutriinot näyttivät saapuvan noin $60\,\text{ns}$ aikaisemmin kuin valo olisi ehtinyt. Tulos oli yllättävä, koska Einsteinin suhteellisuusteorian mukaan mikään ei kulje valoa nopeammin, eikä lukuisissa aiemmissa kokeissa ollut löytynyt poikkeamia teoriasta.
+
+**Kaava:** Tasaisessa liikkeessä $s = ct$, joten $t = \dfrac{s}{c}$; suhteellinen poikkeama $\dfrac{\Delta t}{t}$ ja valon kulkema matka $\Delta s = c\,\Delta t$
+
+**Muunnokset:** $s = 730\,\text{km} = 7{,}30\cdot10^{5}\,\text{m}$ ja $\Delta t = 60\,\text{ns} = 60\cdot10^{-9}\,\text{s} = 6{,}0\cdot10^{-8}\,\text{s}$
+
+**Sijoitus:** Valon kulkuaika:
+
+$$\begin{aligned}
+t &= \dfrac{s}{c} \\
+&= \dfrac{7{,}30\cdot10^{5}\,\text{m}}{2{,}998\cdot10^{8}\,\text{m/s}} \\
+&\approx 2{,}435\cdot10^{-3}\,\text{s}
+\end{aligned}$$
+
+Suhteellinen poikkeama:
+
+$$\begin{aligned}
+\dfrac{\Delta t}{t} &= \dfrac{6{,}0\cdot10^{-8}\,\text{s}}{2{,}435\cdot10^{-3}\,\text{s}} \\
+&\approx 2{,}46\cdot10^{-5} \\
+&= 0{,}00246\,\%
+\end{aligned}$$
+
+Valon kulkema matka poikkeaman aikana:
+
+$$\begin{aligned}
+\Delta s &= c\,\Delta t \\
+&= 2{,}998\cdot10^{8}\,\text{m/s} \cdot 6{,}0\cdot10^{-8}\,\text{s} \\
+&\approx 18\,\text{m}
+\end{aligned}$$
+
+**Mallivastaus b):** Valolta kuluu matkaan noin $2{,}4\,\text{ms}$, ja poikkeama on siitä vain noin $0{,}0025\,\%$ eli noin $25$ miljoonasosaa. CERNin tiedote pyöristää saman tuloksen muotoon ”$20$ miljoonasosaa”. Poikkeama vastaa $18\,\text{m}$:n matkaa, mikä on lähes sata kertaa matkan epävarmuus $20\,\text{cm}$. Matkan mittaus ei siis voinut selittää tulosta, joten virhettä kannatti etsiä ajan mittauksesta.
+
+**Mallivastaus c):** Tutkijat löysivät mittausjärjestelmästä kaksi mahdollista virhelähdettä: GPS-synkronoinnin oskillaattorin ja valokuituliittimen, joka tuo GPS-signaalin kokeen pääkelloon. Myöhemmin alkuperäinen tulos selittyi viallisella osalla kokeen valokuituun perustuvassa ajoitusjärjestelmässä. Riippumaton ICARUS-koe mittasi neutriinojen kulkuajan sopivaksi valon nopeuteen, ja seuraavaksi neljä Gran Sasson koetta (Borexino, ICARUS, LVD ja OPERA) mittasi kaikki kulkuajan, joka sopii valon nopeuteen.
+
+Virhe oli systemaattinen. Viallinen ajoitusjärjestelmä siirsi jokaisen mittauksen samaan suuntaan, joten tulos pysyi samana, vaikka havaittuja neutriinoja oli yli $15\,000$. Satunnaisvirhe pienenee, kun mittauksia on paljon, mutta systemaattinen virhe ei pienene toistamalla mittausta samalla laitteistolla. Siksi tarvittiin riippumattomia mittauksia eri laitteistoilla.
+
+**Mallivastaus d):** Suhteellisuusteoriaa on testattu lukuisissa kokeissa, eikä poikkeamia ole löytynyt. Kun yksi mittaus on ristiriidassa niiden kaikkien kanssa, todennäköisempää on, että mittauksessa on huomaamaton systemaattinen virhe, kuin että kaikki aiemmat tulokset olisivat vääriä. Arkinen esimerkki: jos lämpömittari näyttää kiehuvan veden lämpötilaksi normaalipaineessa $80\,{}^\circ\text{C}$, epäilemme ensin mittaria emmekä veden kiehumispistettä. Poikkeava tulos voi kuitenkin olla merkki uudesta fysiikasta, joten sitä ei hylätä vaan se tarkistetaan. Teoria muuttuisi vasta, jos riippumattomat kokeet toistaisivat tuloksen. OPERA toimi oikein, kun se julkaisi tuloksen muiden arvioitavaksi.
+
+**Vastaus:** Suhteellinen poikkeama on $\dfrac{\Delta t}{t} \approx 0{,}0025\,\%$ eli $2{,}5\cdot10^{-5}$ (laskettu arvo $0{,}00246\,\%$), kaksi merkitsevää numeroa, koska poikkeama $60\,\text{ns}$ on annettu kahden numeron tarkkuudella.
+
+**Järkevyys:** Valo kulkee kilometrin noin $3{,}3\,\mu\text{s}$:ssa, joten $730\,\text{km}$:iin kuluu noin $730 \cdot 3{,}3\,\mu\text{s} \approx 2{,}4\,\text{ms}$. Poikkeama $60\,\text{ns}$ on noin $40\,000$ kertaa pienempi kuin kulkuaika, mikä vastaa suhdetta $2{,}5\cdot10^{-5}$. Siksi tulosta pidettiin uskottavana vasta, kun ajoituksen tarkkuus oli varmistettu.

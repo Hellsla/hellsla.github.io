@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5adb89f5eac07ee8
+CONTENT-HASH: 08eba19797a49a39
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- solutions.md fy2-8-L1-09, Muunnokset: "5170 g = 5,17 kg" is used before the 5170 g is calculated; write "Lopuksi 1000 g = 1 kg" there.
+- Earlier Polish remains recorded; the change adds none.
 
 ## Checked
-- The new Järkevyys sentence "2,6 kertaa niin paljon kuin kaasua on" is clearer than "2,6-kertainen massa" and correct (5,17 kg / 2,0 kg).
-- Emission factor given without a source, per the teacher's decision of 2026-11-12; key and staged solution unchanged.
-- Diff is wording only; the earlier PASS stands.
-- Hash is the same at the start and the end (5adb89f5eac07ee8).
+- Delta: L2-11 c) changes 4,2 / 1,6 g/kWh written with one unit after the pair (readable, correct); 4,2/1,6 = 2,6-2,7 ok; no numbers changed.
+- Pedagogy of the tasks unchanged from the earlier PASS.

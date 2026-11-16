@@ -28,11 +28,11 @@
         {
           "text": "$60\\,\\text{K}$",
           "correct": true,
-          "feedback": "Oikein. Kelvin- ja celsiusasteikon asteet ovat yhtä suuria, joten muutos on sama luku: $\\Delta T = 30\\,{}^\\circ\\text{C} - (-30\\,{}^\\circ\\text{C}) = 60\\,\\text{K}$. Muunnos $+273{,}15$ kumoutuu erotuksessa."
+          "feedback": "Oikein. Kelvin- ja celsiusasteikon asteet ovat yhtä suuria, joten muutos on sama luku: $$\\begin{aligned} \\Delta T &= 30\\,{}^\\circ\\text{C} - (-30\\,{}^\\circ\\text{C}) \\\\ &= 60\\,\\text{K} \\end{aligned}$$. Muunnos $+273{,}15$ kumoutuu erotuksessa."
         },
         {
           "text": "$333\\,\\text{K}$",
-          "feedback": "Lisäsit 273 lämpötilan *muutokseen*. Muunnos $T = \\theta + 273{,}15$ koskee yksittäistä lämpötilaa. Erotuksessa se kumoutuu: $(303{,}15 - 243{,}15)\\,\\text{K} = 60\\,\\text{K}$."
+          "feedback": "Lisäsit 273 lämpötilan *muutokseen*. Muunnos $T = \\theta + 273{,}15$ koskee yksittäistä lämpötilaa. Erotuksessa se kumoutuu: $$\\begin{aligned} &(303{,}15 - 243{,}15)\\,\\text{K} \\\\ &= 60\\,\\text{K} \\end{aligned}$$."
         },
         {
           "text": "$0\\,\\text{K}$",
@@ -308,12 +308,12 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Alumiiniset tikkaat ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) ovat $4{,}0\\,\\text{m}$ pitkät. Opiskelija laskee, kuinka paljon ne pitenevät, kun lämpötila nousee $10\\,{}^\\circ\\text{C}$:sta $30\\,{}^\\circ\\text{C}$:seen:\n\n$\\Delta T = 30 + 273 = 303\\,\\text{K}$, joten $\\Delta l = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4{,}0\\,\\text{m} \\cdot 303\\,\\text{K} \\approx 0{,}028\\,\\text{m} = 28\\,\\text{mm}$.\n\nMissä on virhe?",
+      "prompt": "Alumiiniset tikkaat ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) ovat $4{,}0\\,\\text{m}$ pitkät. Opiskelija laskee, kuinka paljon ne pitenevät, kun lämpötila nousee $10\\,{}^\\circ\\text{C}$:sta $30\\,{}^\\circ\\text{C}$:seen:\n\n$\\Delta T = 30 + 273 = 303\\,\\text{K}$, joten $$\\begin{aligned} \\Delta l &= 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4{,}0\\,\\text{m} \\cdot 303\\,\\text{K} \\\\ &\\approx 0{,}028\\,\\text{m} \\\\ &= 28\\,\\text{mm} \\end{aligned}$$.\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Kaavaan kuuluu lämpötilan muutos, ei loppulämpötila kelvineinä: $\\Delta T = 30\\,{}^\\circ\\text{C} - 10\\,{}^\\circ\\text{C} = 20\\,\\text{K}$, ja $\\Delta l \\approx 1{,}8\\,\\text{mm}$.",
+          "text": "Kaavaan kuuluu lämpötilan muutos, ei loppulämpötila kelvineinä: $$\\begin{aligned} \\Delta T &= 30\\,{}^\\circ\\text{C} - 10\\,{}^\\circ\\text{C} \\\\ &= 20\\,\\text{K} \\end{aligned}$$, ja $\\Delta l \\approx 1{,}8\\,\\text{mm}$.",
           "correct": true,
-          "feedback": "Oikein. Opiskelija sijoitti loppulämpötilan kelvineinä lämpötilan muutoksen paikalle. Oikein $\\Delta l = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 4{,}0\\,\\text{m} \\cdot 20\\,\\text{K} \\approx 1{,}8\\,\\text{mm}$. Järkevyystarkistus: $28\\,\\text{mm}$ olisi $0{,}7\\,\\%$ tikkaiden pituudesta. Se on lämpölaajenemiselle aivan liikaa."
+          "feedback": "Oikein. Opiskelija sijoitti loppulämpötilan kelvineinä lämpötilan muutoksen paikalle. Oikein $$\\begin{aligned} \\Delta l &= 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\\\ &\\cdot 4{,}0\\,\\text{m} \\cdot 20\\,\\text{K} \\\\ &\\approx 1{,}8\\,\\text{mm} \\end{aligned}$$. Järkevyystarkistus: $28\\,\\text{mm}$ olisi $0{,}7\\,\\%$ tikkaiden pituudesta. Se on lämpölaajenemiselle aivan liikaa."
         },
         {
           "text": "Kerroin $\\alpha$ pitää muuntaa yksikköön 1/°C ennen sijoittamista.",
@@ -342,7 +342,7 @@
       "hints": [
         "Mihin säiliön etanolin tilavuuden kasvu menee? Ajattele putkessa nousevaa nestepatsasta lieriönä.",
         "Tilavuuden muutos on $\\Delta V = \\gamma V_0 \\Delta T$, ja putkessa se muodostaa lieriön $\\Delta V = A h$, joten $h = \\dfrac{\\gamma V_0 \\Delta T}{A}$.",
-        "Muunna ensin $V_0 = 0{,}20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$. Sitten $\\Delta V = 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K}$."
+        "Muunna ensin $V_0 = 0{,}20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$. Sitten $$\\begin{aligned} \\Delta V &= 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\\\ &\\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K} \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -354,7 +354,7 @@
           "feedback": "Käytit loppulämpötilaa $25\\,{}^\\circ\\text{C}$ lämpötilan muutoksen paikalla. Lämpötila nousee $15\\,{}^\\circ\\text{C}$:sta $25\\,{}^\\circ\\text{C}$:seen eli $\\Delta T = 10\\,\\text{K}$."
         }
       ],
-      "solution": "**Annettu:** etanoli, $V_0 = 0{,}20\\,\\text{cm}^3$, $\\gamma = 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ (tehtävässä annettu), putken poikkipinta-ala $A = 0{,}050\\,\\text{mm}^2$, $T_0 = 15\\,{}^\\circ\\text{C}$, $T = 25\\,{}^\\circ\\text{C}$\n\n**Kysytty:** nestepatsaan nousu $h$ millimetreinä\n\n**Periaate:** Etanoli on nestettä ja laajenee lämmetessään. Sen tilavuuden muutos on verrannollinen alkutilavuuteen ja lämpötilan muutokseen: $\\Delta V = \\gamma V_0 \\Delta T$. Lasin laajeneminen on noin neljäkymmentä kertaa pienempi, joten se jätetään huomiotta. Silloin koko tilavuuden kasvu menee ohueen putkeen. Putkessa nousevan patsaan tilavuus on lieriön tilavuus $\\Delta V = A h$.\n\n**Kaava:** $\\Delta V = \\gamma V_0 \\Delta T$ ja $\\Delta V = A h$, joten $\\gamma V_0 \\Delta T = A h$, josta\n\n$$h = \\frac{\\gamma V_0 \\Delta T}{A}$$\n\n**Muunnokset:** Pinta-ala on neliömillimetreinä, joten tilavuus muunnetaan: $V_0 = 0{,}20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$, koska $1\\,\\text{cm}^3 = 1000\\,\\text{mm}^3$. Lämpötilan muutos on sama kelvineinä: $\\Delta T = 25\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 10\\,\\text{K}$.\n\n**Sijoitus:**\n\n$$\\begin{aligned} \\Delta V &= 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K} \\\\ &= 2{,}2\\,\\text{mm}^3 \\end{aligned}$$\n\n$$h = \\frac{2{,}2\\,\\text{mm}^3}{0{,}050\\,\\text{mm}^2} = 44\\,\\text{mm}$$\n\n**Vastaus:** $h = 44\\,\\text{mm}$, kaksi merkitsevää numeroa. Tulosta rajoittavia tietoja on neljä: $\\gamma = 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$, $V_0 = 0{,}20\\,\\text{cm}^3$, $A = 0{,}050\\,\\text{mm}^2$ ja kokonaisasteiden erotus $\\Delta T = 10\\,\\text{K}$. Kaikissa on kaksi numeroa.\n\n**Järkevyys:** Etanolin tilavuus kasvaa vain $\\gamma \\Delta T = 1{,}1\\,\\%$. Ohuessa putkessa pienikin tilavuus on kuitenkin pitkä patsas: $44\\,\\text{mm} / 10\\,\\text{K} \\approx 4\\,\\text{mm}$ kelviniä kohti. Se on tavallisen lämpömittarin asteikon suuruusluokkaa. Patsas nousee, koska neste lämpenee. Jos lasin laajeneminen otetaan huomioon, patsas nousee noin $43\\,\\text{mm}$.",
+      "solution": "**Annettu:** etanoli, $V_0 = 0{,}20\\,\\text{cm}^3$, $\\gamma = 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$ (tehtävässä annettu), putken poikkipinta-ala $A = 0{,}050\\,\\text{mm}^2$, $T_0 = 15\\,{}^\\circ\\text{C}$, $T = 25\\,{}^\\circ\\text{C}$\n\n**Kysytty:** nestepatsaan nousu $h$ millimetreinä\n\n**Periaate:** Etanoli on nestettä ja laajenee lämmetessään. Sen tilavuuden muutos on verrannollinen alkutilavuuteen ja lämpötilan muutokseen: $\\Delta V = \\gamma V_0 \\Delta T$. Lasin laajeneminen on noin neljäkymmentä kertaa pienempi, joten se jätetään huomiotta. Silloin koko tilavuuden kasvu menee ohueen putkeen. Putkessa nousevan patsaan tilavuus on lieriön tilavuus $\\Delta V = A h$.\n\n**Kaava:** $\\Delta V = \\gamma V_0 \\Delta T$ ja $\\Delta V = A h$, joten $\\gamma V_0 \\Delta T = A h$, josta\n\n$$h = \\frac{\\gamma V_0 \\Delta T}{A}$$\n\n**Muunnokset:** Pinta-ala on neliömillimetreinä, joten tilavuus muunnetaan: $V_0 = 0{,}20\\,\\text{cm}^3 = 200\\,\\text{mm}^3$, koska $1\\,\\text{cm}^3 = 1000\\,\\text{mm}^3$. Lämpötilan muutos on sama kelvineinä: $\\Delta T = 25\\,{}^\\circ\\text{C} - 15\\,{}^\\circ\\text{C} = 10\\,\\text{K}$.\n\n**Sijoitus:**\n\n$$\\begin{aligned} \\Delta V &= 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}} \\\\ &\\cdot 200\\,\\text{mm}^3 \\cdot 10\\,\\text{K} \\\\ &= 2{,}2\\,\\text{mm}^3 \\end{aligned}$$\n\n$$h = \\frac{2{,}2\\,\\text{mm}^3}{0{,}050\\,\\text{mm}^2} = 44\\,\\text{mm}$$\n\n**Vastaus:** $h = 44\\,\\text{mm}$, kaksi merkitsevää numeroa. Tulosta rajoittavia tietoja on neljä: $\\gamma = 1{,}1 \\cdot 10^{-3}\\,\\tfrac{1}{\\text{K}}$, $V_0 = 0{,}20\\,\\text{cm}^3$, $A = 0{,}050\\,\\text{mm}^2$ ja kokonaisasteiden erotus $\\Delta T = 10\\,\\text{K}$. Kaikissa on kaksi numeroa.\n\n**Järkevyys:** Etanolin tilavuus kasvaa vain $\\gamma \\Delta T = 1{,}1\\,\\%$. Ohuessa putkessa pienikin tilavuus on kuitenkin pitkä patsas: $44\\,\\text{mm} / 10\\,\\text{K} \\approx 4\\,\\text{mm}$ kelviniä kohti. Se on tavallisen lämpömittarin asteikon suuruusluokkaa. Patsas nousee, koska neste lämpenee. Jos lasin laajeneminen otetaan huomioon, patsas nousee noin $43\\,\\text{mm}$.",
       "optional": true
     },
     {

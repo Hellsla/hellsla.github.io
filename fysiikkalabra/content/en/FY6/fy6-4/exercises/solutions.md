@@ -26,7 +26,7 @@
 **Conversions:** Not needed, all the currents are in amperes.
 **Substitution:** $I = 0.20\,\text{A} + 0.45\,\text{A} + 0.85\,\text{A} = 1.50\,\text{A}$
 **Answer:** $1.50\,\text{A}$, to the nearest hundredth of an ampere like all the terms.
-**Reasonableness:** The current leaving the battery is greater than any of the branch currents, because each lamp is a route of its own. With rounded numbers $0.2\,\text{A} + 0.5\,\text{A} + 0.8\,\text{A} = 1.5\,\text{A}$.
+**Reasonableness:** The current leaving the battery is greater than any of the branch currents, because each lamp is a route of its own. With rounded numbers $$\begin{aligned} &0.2\,\text{A} + 0.5\,\text{A} + 0.8\,\text{A} \\ &= 1.5\,\text{A} \end{aligned}$$.
 
 ## fy6-4-L1-04
 **Given:** lamps in series, battery voltage $U = 4.5\,\text{V}$, voltage of the first lamp $U_1 = 1.8\,\text{V}$
@@ -115,7 +115,7 @@
 **Principle:** In a series connection the resistances add up, and the total resistance of a parallel connection is the product of the resistances divided by their sum. The two equations give the sum and the product of the resistances, and these determine the resistors.
 **Formula:** $R_1 + R_2 = R_\text{s}$ and $R_1 R_2 = R_\text{r} R_\text{s}$ (from the formula of the parallel connection). Substituting $R_2 = R_\text{s} - R_1$ gives $R_1^2 - R_\text{s} R_1 + R_\text{r} R_\text{s} = 0$, so $R_1 = \dfrac{R_\text{s} \pm \sqrt{R_\text{s}^2 - 4 R_\text{r} R_\text{s}}}{2}$
 **Conversions:** Not needed, both resistances are in ohms.
-**Substitution:** $R_\text{r} R_\text{s} = 60\,\Omega \cdot 250\,\Omega = 15\,000\,\Omega^2$ and $R_\text{s}^2 - 4 R_\text{r} R_\text{s} = 62\,500\,\Omega^2 - 60\,000\,\Omega^2 = 2500\,\Omega^2$, whose square root is $50\,\Omega$. So $R_1 = \dfrac{250\,\Omega \pm 50\,\Omega}{2}$, so $R_1 = 150\,\Omega$ or $R_1 = 100\,\Omega$
+**Substitution:** $R_\text{r} R_\text{s} = 60\,\Omega \cdot 250\,\Omega = 15\,000\,\Omega^2$ and $$\begin{aligned} &R_\text{s}^2 - 4 R_\text{r} R_\text{s} \\ &= 62\,500\,\Omega^2 - 60\,000\,\Omega^2 \\ &= 2500\,\Omega^2 \end{aligned}$$, whose square root is $50\,\Omega$. So $R_1 = \dfrac{250\,\Omega \pm 50\,\Omega}{2}$, so $R_1 = 150\,\Omega$ or $R_1 = 100\,\Omega$
 **Answer:** $150\,\Omega$; the other resistor is $100\,\Omega$. Two significant figures like the value $60\,\Omega$; the data are taken as exact, because the difference $62\,500 - 60\,000$ under the root is small and the result is sensitive to the last digit of the data.
 **Reasonableness:** Check: $150\,\Omega + 100\,\Omega = 250\,\Omega$ and $\dfrac{150\,\Omega \cdot 100\,\Omega}{250\,\Omega} = 60\,\Omega$. The result of the parallel connection is smaller than the smaller resistor, $100\,\Omega$, as it should be.
 

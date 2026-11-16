@@ -1,13 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1938cbb208369bd3
+CONTENT-HASH: 7c2aa13d1d7ffa53
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] none.
+- none
 
 ## Checked
-- Delta review, round 2: only the Ydinajatus socket-charging sentence changed. Opened review/shots/fy6-16-theory-1280-1.png (shows the sentence in the "Yksi vaihe vai kolme" paragraph, KaTeX numbers/units intact, no clipping, layout beside the photo unchanged). Layout around it survived.
+- All 1 proof sheet(s) of fi-easy-fy6-16-lesson (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 1931c445d9c3b481
+CONTENT-HASH: c0842f06ba77912b
+SCOPE: delta added-exercise from 1931c445d9c3b481 base 14db61fd9550
 
 ## Blocking
 
@@ -7,14 +8,9 @@ CONTENT-HASH: 1931c445d9c3b481
 
 ## Polish
 
-- solutions.md:137 — "its effect on the half-life is this divided by $\ln 4.42 \approx 1.5$" gives no reason; optional: "because $T_{1/2}$ depends on the logarithm of the ratio, the effect on the half-life is this divided by $\ln 4.42 \approx 1.5$".
-- solutions.md:136 (unchanged context line) — "at $t = 320\,\text{s} R = 64$" runs two quantities together; "at $t = 320\,\text{s}$, $R = 64$".
+(none)
 
 ## Checked
 
-- Delta only: solutions.md line 137 and the caption marker removed from exercises.json.
-- The sentence now shows where ±8 % comes from ($\sqrt{64} = 8$, $\tfrac{8}{64} \approx 13\,\%$, divided by 1.5), which the earlier version skipped; the numbers agree and match the Finnish version.
-- The answer $149\,\text{s}$ and the task's demand are unchanged; the remark stays a comment on accuracy.
-- English is natural, decimal points used, units in LaTeX.
-- Removing the caption marker takes nothing a task needs.
-- Judged from the diff and the packet text; no capture opened.
+- Only change: the chapter title is now in quotation marks instead of markdown italics; wording and task demand unchanged, and the plain quotes read better on the page and for screen readers.
+- Method: delta, diff only.

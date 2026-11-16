@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b83788b327405fee
-SCOPE: delta reflow from 3fc56c61e25476d8 base b5600a63ddae
+CONTENT-HASH: 9a921f891663b4d8
 
 ## Blocking
 (none)
@@ -9,8 +8,7 @@ SCOPE: delta reflow from 3fc56c61e25476d8 base b5600a63ddae
 (none)
 
 ## Checked
-- Delta: opened reflow-exercises-1.png and -2.png (390 px, solutions open): every re-broken block and the text around it.
-- Rows legible, no clipping, equals signs in one column, units and signs unchanged, sentences around the display formulas read naturally. Not re-judged: figures, simulation, other captures (unchanged).
+- Delta (source): one number in an aligned solution row (46 000); row structure unchanged. Captures not re-opened.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

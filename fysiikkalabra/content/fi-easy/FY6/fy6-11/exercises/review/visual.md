@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ac7857fc2f3cb2c0
+CONTENT-HASH: 9b386c8f277354d7
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
 - none
@@ -8,9 +9,7 @@ CONTENT-HASH: ac7857fc2f3cb2c0
 - none
 
 ## Checked
-- Delta (calculation chains re-broken into inline aligned blocks, same numbers, signs and units). Opened content/fi-easy/FY6/fy6-11/review/shots/fy6-11-open-exercises-1280-5.png (L1-05 Järkevyys "91 µN : 3,0 nC ≈ 3,0·10⁴ N/C", plus its fraction Sijoitus) and fy6-11-open-exercises-L3-1280-3.png (L3-02 v = √(2 · 8,794·10¹⁴ m/s² · 0,010 m) = 4,19·10⁶ m/s).
-- The root sign spans the whole radicand, `=` rows aligned, nothing clipped, units upright with thin space; the plain-Finnish sentences around are clear.
-- No 360/390 px capture shows an opened solution, so phone wrapping rests on the passing check_layout 360 px result in the packet.
+- All 1 proof sheet(s) of fi-easy-fy6-11-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

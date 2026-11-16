@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b64fcfc3e328592d
+CONTENT-HASH: 085d875b1dc0ca42
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] none.
+- none
 
 ## Checked
-- Delta review, round 2: only the Ydinajatus socket-charging sentence changed. Opened review/shots/fy6-16-theory-1280-1.png (shows the sentence in the "Yksi vaihe vai kolme" paragraph, KaTeX numbers/units intact, no clipping, layout beside the photo unchanged). Layout around it survived.
+- round 3, delta review (reflow): proof sheets en-fy6-16-lesson-1, every numbered formula; each is labelled `fits`, rows break at relations, + or − or between whole quantities, relation signs aligned, no break inside a power of ten.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish n/a · accessibility 4

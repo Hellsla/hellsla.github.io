@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 604ed8c23072c5a2
+CONTENT-HASH: 88cc39fef4d4cd2a
+SCOPE: delta added-exercise from d3a203d5ab60251f base e238aa983a09
 
 ## Blocking
 
@@ -7,12 +8,14 @@ CONTENT-HASH: 604ed8c23072c5a2
 
 ## Polish
 
-- fy8-13-L2-08 options — spacing 0,03 to 0,2 mSv is a factor 7, below the 10-100 rule; leave as is or move 0,03 to 0,02.
-- The task practises unit handling (uSv to mSv) rather than the chapter's own warned mistakes (natural radiation, inverse square); state that in a sentence or accept as intended.
+- fy8-13-L2-09 b) and c) — b) repeats L2-05 (share of a source from a dose table) and c) repeats L2-08 (rate times hours); the new part is d). Drop b) and let a) feed d) directly.
+- fy8-13-L2-09 d) — the model answer cites 0,45 and 0,33 mSv that the student may not have read in a); ask in a) for the external sources too, or soften the answer.
+- fy8-13-L2-09 box — the box (c) does not need the reports; consider boxing the share of radon that rate-measurement cannot see (needs a), or accept.
 
 ## Checked
 
-- New task L2-08 (magnitude, type 5): H = rate x time is taught; the distractors are real: one flight, one month, micro/milli by 10^6, no conversion (2000 mSv). Each feedback names the slip and its remedy.
-- Correct option (4th of 5) not identifiable by form; its feedback shows the arithmetic only, no reason stage.
-- Plausibility: 2 mSv is checked against the Finnish 5,9 mSv average in the solution; stem marks the numbers as examples.
-- Solution step by step with aligned block; no chain wider than the line. Checked from text only (JSON, solutions.md, packet brief); no renders or screenshots were available in the packet, so the 390 px fit of the new task and the formula-chain width were judged from the line lengths of the aligned blocks.
+- Both links answer 200; two sources, 5,9 mSv total and radon about two thirds match the solution's example reading.
+- 0,10 µSv/h x 8760 h = 0,876 mSv; unit conversion shown; sanity check present.
+- d) asks why an external dose-rate meter misses radon, a real and prepared misconception (internal vs external).
+- Fits level 2, four parts.
+- Method: delta, added exercise only.

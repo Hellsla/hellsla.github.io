@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: b1ec7b6c20b84876
-SCOPE: delta added-exercise from 2652c350745c0908 base 89bcb63b7431
-Mode: delta (added exercises fy3-9-L1-09, fy3-9-L2-09)
+CONTENT-HASH: dac5583058c958e9
 Round: 1
+Mode: delta
 
 ## Blocking
-(none)
 
 ## Polish
-- None.
+- exercises/solutions.md:300 (fy3-9-L2-10 b) — "Vakiotermi on yhtä suuri kuin painelukeman heilahtelu" makes the Finnish "samaa suuruusluokkaa" stronger than it is: 32 kPa against about ±30 kPa is only an order-of-magnitude agreement. Fix: "Vakiotermi on suunnilleen yhtä suuri kuin painelukeman heilahtelu".
 
 ## Checked
-- L1-09: Boyle's law fits (closed bag, temperature held constant as the task states; the solution notes the real cooling). MAFY 3000 m p = 70,1 kPa (standard atmosphere 70,1 kPa); recomputed V₂ = 101 · 2,0 / 70,1 = 2,882 l, so 2,9 l; tolerance 4 % fits two significant figures.
-- L2-09: rigid closed vessel, so isochoric p/T constant. The figure points lie on p = 0,40 kPa/K · T (200/80, 250/100, 300/120, 350/140), on grid crossings, to scale; the description gives the same points and not the answer. Recomputed p₂ = 120 · 373,15/300 = 149,3 kPa, so 149 kPa; T in kelvins; tolerance 2 %.
-- Both solutions complete (given, principle with its reason, symbolic first, conversions, substitution, rounding, a real check). The notation is the brief's.
-- answers.py lines match my own recomputation (2,881598; 149,26).
-- Scripted comparison with the Finnish set: answer, unit, tolerance, figure, lookup and every number in the text and solution are identical.
-- Hash the same at start and end.
+- New fy3-9-L2-10: V and N are held constant ("pidä vakiona: tilavuus (V)", no pumping), the units are K and kPa, and the gauge is read several times, as in the source facts.
+- The fit was recomputed independently. The line through the origin has k = 3.924 kPa/K. The free fit has a slope of 3.84 kPa/K and an intercept of 32 kPa. The residuals are +51 … +19 kPa, and the ratios p/T are 4.18 … 3.96. The prediction is 2358 kPa against 2346 kPa (12 kPa, 0.5 %). The ratio 450/300 = 1.50 matches the key (2 %).
+- The guardrail wording on the outlier, the condition "harva kaasu, kaukana tiivistymisestä" and the particle model (etenemisliikkeen keskimääräinen liike-energia) are correct.
+- A scripted comparison with the Finnish set (passed today) found the same answer, unit, tolerance and kind, and identical numbers in the text and in every solution section.
+- Caption edits: "(esimerkkiaineisto)" removed only.
+- Hash identical at start and end.

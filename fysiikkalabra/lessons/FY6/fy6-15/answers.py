@@ -46,4 +46,8 @@ a["fy6-15-L3-04"] = (50.0 / (k_cord * 0.40)) ** 0.5        # dT = k R I^2 = 50 K
 a["fy6-15-L3-05"] = (U / 30e-3 - 1.5e3) / 1e3              # RCD trips above 30 mA: R_e + R_k = U : 30 mA, R_e = 7667 - 1500 = 6167 Ohm = 6,167 kOhm
 # figure fy6-15/ex-kuorma: highest step of the group's load P(t) reads 4000 W on a gridline
 a["fy6-15-L2-08"] = 4000 / U                                # I = P : U = 4000 W : 230 V = 17,39 A (> 16 A)
+# Aineistotehtävä FY6-A3 (teacher 2026-11-16): a plug-in solar panel's inverter, 800 W at 230 V, power factor one
+a["fy6-15-L2-09"] = 800 / U                                # I = P : U = 3,478 A
+I_cable = 16 + a["fy6-15-L2-09"]                           # c) 16 A through the fuse + the panel past it: 19,478 A in a part of the cable
+heat_ratio = (I_cable / 16) ** 2                           # c) P = R I^2: (19,478 : 16)^2 = 1,482 times the heating at 16 A
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

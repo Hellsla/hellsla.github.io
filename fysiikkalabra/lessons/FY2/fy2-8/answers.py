@@ -37,4 +37,8 @@ m_uusi = (490 * 40 + 230 * 20 + 12 * 40) * 1e6 / 1e6            # coal -> 30 GWh
 a["fy2-8-L3-05"] = (m_nyt - m_uusi) / m_nyt * 100       # reduction 27 540 / 52 220 = 52,7 % -> 53 %
 a["fy2-8-L1-09"] = 47 * 2.0 * 55 / 1000                  # MAFY (Polttoaineiden LHV-lämpöarvoja) maakaasu H = 47 MJ/kg: E = 94 MJ; e = 55 g/MJ (given, Tilastokeskus 2024): 5170 g = 5,17 kg
 a["fy2-8-L2-09"] = (820 - 490) * 20000 / 1e6              # read off fy2-8/emissions: coal 820, gas 490 g/kWh; 330 g/kWh · 20 000 kWh = 6,6 t
+# Teacher's brief, work queue 19 (aineistotehtävät FY2-A1, A5, A3): values read 16.11.2026 (docs/audits/2026-11-16-fy2-aineistot.md)
+a["fy2-8-L2-10"] = 5.0 * 588.6 / 1e3                      # OWID/Ember 2025, Poland 588,6 g/kWh: m = e · E = 588,6 · 5,0 kWh = 2943 g -> 2,9 kg (Finland 287 g, Sweden 176 g; max : min = 588,6 : 35,26 = 16,7)
+a["fy2-8-L2-11"] = 10 * 15.0                              # Fingrid 16.11.2026 klo 10.00, consumed-electricity estimate 15,0 g/kWh: m = 15,0 · 10 kWh = 150 g (1.00: 98 g, 8.00: 137 g)
+a["fy2-8-L3-06"] = (57.47 - 246.82) / 246.82 * 100        # OWID/Ember, Finland lifecycle e 2000 -> 2025: (57,47 − 246,82) : 246,82 = −76,7 % -> −77 % (Poland −38 %, Denmark −82 %)
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ed38907bd588db84
-SCOPE: delta reflow from fc5b9f4f217ef683 base 56362aafa0
+CONTENT-HASH: 586285323faf3a8f
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] fy8-12-L2-08 solution, Reasonableness — the order-of-magnitude chain starts with a bare product — start it with $E \approx$.
+- [Minor] fy8-12-L2-08 — the prefix mu in "$\mu\text{eV}$" renders as italic mu next to upright eV — use an upright micro sign (\text{\textmu} or \mathrm{\mu}) everywhere in the set.
 
 ## Checked
-- delta reflow, en: opened open-exercises-1280-5 (12-5 solution): aligned blocks, equals signs aligned, sentence marks inside the last row, no clipping. Layout of the card around the blocks intact; no 390 px open-solution capture exists, so phone wrapping is judged by the build's rule only. Hash re-run at the end: unchanged.
+- Captures fy8-12-open-exercises-L2-1280-10 (task 12-17 text, source link, parts a–c), -11 (part d, answer box in µeV, given, principle, model answer a), -12 (conversions, substitution rows, comparison fractions, model answer c), -13 (model answer d, answer, reasonableness). Captures rebuilt for this hash.
+- Round-1 Major fixed: no decimal comma left (grep of exercises.json and solutions.md: 0), "J s" now thin-spaced. Layout clean, no clipping. Delta: caption wording ("example data" removed) not re-opened, text-only.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

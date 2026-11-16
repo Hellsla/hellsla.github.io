@@ -216,7 +216,7 @@ $$. Order from smallest to greatest: detached house, farm, hydropower plant, dis
 **Reasonableness:** Estimate: $3\,000\,000 : 60 = 50\,000$, so a ratio of about $50\,000$ is the right order of magnitude. A city's district heating is a year's heating for tens of thousands of houses (about $$
 \begin{aligned}
 &3\,200\,000\,\text{GJ} : 70\,\text{GJ} \\
-&\approx 45\,000
+&\approx 46\,000
 \end{aligned}
 $$ houses), and energies are not compared by their numbers; the units must be converted.
 

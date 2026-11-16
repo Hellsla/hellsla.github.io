@@ -26,7 +26,7 @@
 **Muunnokset:** Ei tarvita, kaikki virrat ovat ampeereina.
 **Sijoitus:** $I = 0{,}20\,\text{A} + 0{,}45\,\text{A} + 0{,}85\,\text{A} = 1{,}50\,\text{A}$
 **Vastaus:** $1{,}50\,\text{A}$, sadasosa-ampeerin tarkkuudella kuten kaikki yhteenlaskettavat.
-**Järkevyys:** Akusta lähtevä virta on suurempi kuin yksikään haaravirroista, koska jokainen valaisin on oma kulkureittinsä. Pyöristetyillä luvuilla $0{,}2\,\text{A} + 0{,}5\,\text{A} + 0{,}8\,\text{A} = 1{,}5\,\text{A}$.
+**Järkevyys:** Akusta lähtevä virta on suurempi kuin yksikään haaravirroista, koska jokainen valaisin on oma kulkureittinsä. Pyöristetyillä luvuilla $$\begin{aligned} &0{,}2\,\text{A} + 0{,}5\,\text{A} + 0{,}8\,\text{A} \\ &= 1{,}5\,\text{A} \end{aligned}$$.
 
 ## fy6-4-L1-04
 **Annettu:** sarjaan kytketyt lamput, pariston jännite $U = 4{,}5\,\text{V}$, ensimmäisen lampun jännite $U_1 = 1{,}8\,\text{V}$
@@ -115,7 +115,7 @@
 **Periaate:** Sarjaankytkennässä resistanssit lasketaan yhteen. Rinnankytkennän kokonaisresistanssi on resistanssien tulo jaettuna niiden summalla. Kahdesta yhtälöstä saadaan vastusten summa ja tulo, ja ne määräävät vastukset.
 **Kaava:** $R_1 + R_2 = R_\text{s}$ ja $R_1 R_2 = R_\text{r} R_\text{s}$ (rinnankytkennän kaavasta). Sijoitetaan $R_2 = R_\text{s} - R_1$, jolloin $R_1^2 - R_\text{s} R_1 + R_\text{r} R_\text{s} = 0$, josta $R_1 = \dfrac{R_\text{s} \pm \sqrt{R_\text{s}^2 - 4 R_\text{r} R_\text{s}}}{2}$
 **Muunnokset:** Ei tarvita, molemmat resistanssit ovat ohmeina.
-**Sijoitus:** $R_\text{r} R_\text{s} = 60\,\Omega \cdot 250\,\Omega = 15\,000\,\Omega^2$ ja $R_\text{s}^2 - 4 R_\text{r} R_\text{s} = 62\,500\,\Omega^2 - 60\,000\,\Omega^2 = 2500\,\Omega^2$, jonka neliöjuuri on $50\,\Omega$. Siis $R_1 = \dfrac{250\,\Omega \pm 50\,\Omega}{2}$, joten $R_1 = 150\,\Omega$ tai $R_1 = 100\,\Omega$
+**Sijoitus:** $R_\text{r} R_\text{s} = 60\,\Omega \cdot 250\,\Omega = 15\,000\,\Omega^2$ ja $$\begin{aligned} &R_\text{s}^2 - 4 R_\text{r} R_\text{s} \\ &= 62\,500\,\Omega^2 - 60\,000\,\Omega^2 \\ &= 2500\,\Omega^2 \end{aligned}$$, jonka neliöjuuri on $50\,\Omega$. Siis $R_1 = \dfrac{250\,\Omega \pm 50\,\Omega}{2}$, joten $R_1 = 150\,\Omega$ tai $R_1 = 100\,\Omega$
 **Vastaus:** $150\,\Omega$; toinen vastus on $100\,\Omega$. Kaksi merkitsevää numeroa kuten arvossa $60\,\Omega$; data otetaan tarkkoina, sillä juuren alla oleva ero $62\,500 - 60\,000$ on pieni ja tulos herkkä datan viimeiselle numerolle.
 **Järkevyys:** Tarkistus: $150\,\Omega + 100\,\Omega = 250\,\Omega$ ja $\dfrac{150\,\Omega \cdot 100\,\Omega}{250\,\Omega} = 60\,\Omega$. Rinnankytkennän tulos on pienempi kuin pienempi vastus $100\,\Omega$, kuten pitää.
 

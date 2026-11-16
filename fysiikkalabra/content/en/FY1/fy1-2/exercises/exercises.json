@@ -290,6 +290,19 @@
       "answer": 1.0,
       "unit": "min",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy1-2-L2-08",
+      "level": 2,
+      "text": "Source material: <a href=\"https://www.bipm.org/en/si-base-units/kilogram\" target=\"_blank\" rel=\"noopener\">BIPM – The kilogram</a> and <a href=\"https://www.bipm.org/en/history-si/kilogram\" target=\"_blank\" rel=\"noopener\">BIPM – History of the SI: kilogram</a> (read 16 November 2026)\n\nWhy was the definition of the kilogram changed? The International Bureau of Weights and Measures, BIPM, gives the present definition of the kilogram on the first page and tells on the second how the kilogram was defined before.\n\na) Compare the old and the present definition of the kilogram. Why was a definition based on an object given up?\n\nb) Suppose the mass of a one-kilogram reference object changes by one milligram. Calculate the relative change in mass as a percentage. Compare the result with how much, according to BIPM, the masses of the national prototypes had drifted from the mass of the international prototype.\n\nc) Explain why a definition based on a constant of nature is useful for international measurement.\n\nd) Does a precisely defined unit mean that every measurement made with that unit is free of error? Evaluate.\n\nEnter in the answer box the change of one milligram from part b) as a percentage.",
+      "kind": [
+        "data",
+        "concept",
+        "reasoning"
+      ],
+      "answer": 0.0001,
+      "unit": "%",
+      "tolerance": 0.02
     }
   ],
   "level3": [

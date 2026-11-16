@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 657e6587380e3a35
+CONTENT-HASH: 7f0a6c75997f050d
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- [Minor] solutions.md L2-07 — "Vastaus: $50\,\text{J}$ (laskettu $50{,}4\,\text{J}$)" reads well; consider the same "laskettu" pattern in other rounded answers for consistency.
+- [Minor] the one inline formula inside the quoted student calculation (fy3-5 6-12 / fy3-12-L2-06) still exceeds the phone width by a few px (listed in docs/clipped-formulas.tsv, accepted inside quotation marks; scrolls inside its box).
 
 ## Checked
-- Delta (L2-05 label "Syventävä tehtävä", L2-07 answer rounding 50 J): open-exercises-L2-1280-5 (6-15 with its badge; the prefix is not duplicated on the page), -6 (W4 solution) and -9 (6-17 chain, rounded answer and explanation): layout and formulas fine.
+- Mode delta. Rendered preview pages at 360, 390 and 1280 px with every solution open; measured every display and inline formula for clipping (none clipped, no page-level horizontal scroll). Closing punctuation stays inside the display boxes; surrounding layout survived.
+- Hash unchanged at the end.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

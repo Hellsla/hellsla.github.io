@@ -325,6 +325,20 @@
       "answer": 149,
       "unit": "kPa",
       "tolerance": 0.02
+    },
+    {
+      "id": "fy3-9-L2-10",
+      "level": 2,
+      "text": "Source material: <a href=\"https://phet.colorado.edu/en/simulations/gas-properties\" target=\"_blank\" rel=\"noopener\">PhET – Gas Properties</a> (read 16 November 2026)\n\nIn the simulation gas particles are pumped into a container that has a heater and a cooler under it. A thermometer and a pressure gauge show the temperature and the pressure of the gas. Use the simulation to study how the pressure of a gas depends on its temperature. Open the screen “Ideal”, choose the kelvin ($\\text{K}$) as the unit of the thermometer and the kilopascal ($\\text{kPa}$) as the unit of the pressure gauge, and pump about 100 heavy particles into the container.\n\na) Keep the volume of the gas and the number of particles constant: under “Hold Constant” choose Volume (V), and do not pump in more particles during the measurements. Heat and cool the gas and measure the pressure at six or more different temperatures between $200\\,\\text{K}$ and $500\\,\\text{K}$. The reading of the pressure gauge fluctuates, so read it a few times at every temperature, record the middle reading in a table and estimate how much a single reading can differ from it.\n\nb) Plot the pressure as a function of the absolute temperature, that is, the temperature in kelvins, so that both axes start from zero. Fit a straight line to the points and determine how the quantities depend on each other: write the model as an equation and determine its constant with its unit.\n\nc) Use your model to predict the pressure at a temperature that you did not use in forming the model, for example at $600\\,\\text{K}$. Check the prediction with the simulation and decide whether the difference fits within the fluctuation of the pressure gauge. In addition, calculate from your model by what factor the pressure increases when the temperature rises from $300\\,\\text{K}$ to $450\\,\\text{K}$.\n\nd) Explain the observed dependence using the particle model of a gas.\n\nThe answer field takes the last result of part c): the factor by which the pressure increases (a plain number without a unit).",
+      "kind": [
+        "data",
+        "graph",
+        "experiment",
+        "model"
+      ],
+      "answer": 1.5,
+      "unit": "",
+      "tolerance": 0.02
     }
   ],
   "level3": [

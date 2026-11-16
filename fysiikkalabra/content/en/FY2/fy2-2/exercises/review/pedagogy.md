@@ -1,8 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 7f05bc17f75b75b4
-SCOPE: delta added-exercise from cd0c4b4ece89b6db base 611fb7d5c174
+CONTENT-HASH: 095d05500287de55
 Mode: delta
-Round: 2
 
 ## Blocking
 (none)
@@ -11,4 +9,5 @@ Round: 2
 (none)
 
 ## Checked
-- L1-11 reworded: still situation, figure reading, question last; no numbers changed; the description still gives the marks without the answer (100 kJ).
+- Delta: L3-04 Reasonableness 45 000 houses changed to 46 000. 3.2e6 / 70 = 45 714, so 46 000 is the correct rounding; the answer (49 000) is untouched.
+- Calculation chains only re-broken into rows in exercises.json: no number changed.

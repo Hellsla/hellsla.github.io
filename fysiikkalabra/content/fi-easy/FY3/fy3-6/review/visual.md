@@ -1,20 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 706354a0b2bb0af8
+CONTENT-HASH: 97bab66f5441e66d
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md, Yleinen virhekäsitys, text after the aligned block — "Viimeisen ryhmän ensimmäisellä rivillä yhtälö on jaettu puolittain kilogrammalla" is hard to follow: the block now has three row groups, and the division by kg is the step from the second group to "80 °C − T = 3T − 60 °C". Fix: "Kolmannen rivin ryhmässä yhtälö on jaettu puolittain kilogrammalla ja sulut on kerrottu auki."
-- [Minor] lesson.md, Yleinen virhekäsitys, same block — the step where c cancels has no cue of its own on the page. Fix: add "ja c supistuu pois" to the sentence above.
+- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
 
 ## Checked
-- Delta only: lesson.md (Kaava section, worked-example steps 3 and 7, Yleinen virhekäsitys) and one feedback line in inquiry.json.
-- theory-1280-2: new Q_luovutettu = Q_vastaanotettu display and "Kummallekin kappaleelle pätee Q = cmΔT. Siksi yhtälö on …"; principle → combined form reads well, KaTeX clean, no overflow.
-- theory-1280-3: misconception block's aligned rows, equals signs in one column, units upright, not cramped.
-- example-390-1 and example-390-2: step 3 opens with Q_m = Q_v; step 7 shows C_v = m_v c_v = … and C_m = m_m c_m … as chains that start with the quantity; nothing clipped at 390 px.
-- inquiry.json wording change is text only; Finnish ("nettomääräisesti") reads fine; no opened-feedback capture opened.
-- Figures unchanged and teacher-approved; not reopened.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.

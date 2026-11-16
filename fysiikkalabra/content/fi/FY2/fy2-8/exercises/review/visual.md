@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 07cb2e86c0676217
-SCOPE: delta reflow from 8b6a553933284aed base b5600a63ddae
+CONTENT-HASH: cef163f17e81a48e
+
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] reflow-exercises-1, fy2-8: the m_1 − m_2 chain takes seven rows (unit factors on their own rows); legible, optional tightening.
+- none
 
 ## Checked
-- Delta: opened reflow-exercises-1.png and reflow-exercises-2.png (390 px, solutions open), every re-broken block and its surrounding sentence.
-- Rows legible, nothing clipped, equals signs in one column, units upright with thin spaces, no red KaTeX source; the round-1 stray punctuation is gone (the student's quoted calculation is inline again, as on main). Figures, simulation and other captures not re-judged (unchanged); 360 px from the packet's check only.
+Delta: diff read in source (each unit keeps number, sign and unit; every number is LaTeX with \,\text{MW}); the formula is now short enough to wrap at 360 px as the CI finding required (check_layout 360 px was run by the developer; I did not re-measure). Opened content/fi/FY2/fy2-7/review/shots/fy2-7-open-exercises-L2-1280-14.png and fy2-8-open-exercises-L2-1280-16.png (1280 px) to see the layout survived: solutions render, KaTeX fine, no clipping. Hash re-run at the end: cef163f17e81a48e (now cef163f17e81a48e).
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

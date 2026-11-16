@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 14ecee1f947f5685
-SCOPE: delta reflow from 5adb89f5eac07ee8 base b5600a63ddae
+CONTENT-HASH: 08eba19797a49a39
+
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] reflow-exercises-1, fy2-8: the m_1 − m_2 chain takes seven rows; legible, optional tightening.
+- [Minor] c): "e kasvoi ensimmäisellä jaksolla 4,2 ja toisella 1,6 g/kWh": the first number lacks its unit; write "4,2 g/kWh ja toisella 1,6 g/kWh" in LaTeX.
+- [Minor] c): paragraph is long (about 110 words, one idea chain); optional split before "Myös vienti muuttui".
 
 ## Checked
-- Delta: opened reflow-exercises-1.png and reflow-exercises-2.png (390 px, solutions open), every re-broken block and its surrounding sentence.
-- Rows legible, nothing clipped, equals signs in one column, units upright with thin spaces, no red KaTeX source; the round-1 stray punctuation is gone (the student's quoted calculation is inline again, as on main). Figures, simulation and other captures not re-judged (unchanged); 360 px from the packet's check only.
+- Opened fy2-8-open-exercises-L2-1280-11, -12, -13, -14, -16: calculation rows and Johtopäätös render without clipping; the c) Vastaus text itself I judged from the packet diff (LaTeX units, $\to$ and signs in LaTeX), not from a capture; hash unchanged.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

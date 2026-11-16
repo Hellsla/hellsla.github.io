@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 6c50bc2e4f8eeeb4
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: 9816ea982e4489ee
 
 ## Blocking
 - none
@@ -9,6 +8,7 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction 
 - none
 
 ## Checked
-- Diff of lesson.md (current-flow section, switching sentence and the drift-speed paragraph) read in Finnish; consistent with the brief (finite speed, free electrons already in the wire, small drift speed); no maths changed.
-- Source-only delta review (no screenshots needed: figure changes are aria-label texts only); Finnish language, maths typography (LaTeX, \cdot, decimal comma, number+unit LaTeX) and no lesson ids shown to students.
-- Round 2: lesson.md:83 now reads "Tavallisessa lyhyessä virtapiirissä"; grammar fixed, rest of sentence unchanged.
+- Delta (reflow, 5d), round 3. Opened proof sheet(s) fi-fy6-1-lesson-1: every numbered formula of the changed list, each in its real box at 352 px, every label `fits`; breaks at relations/+/−/between whole quantities, = signs aligned, trailing punctuation reads in the sentence.
+
+## Scores
+illustrations n/a · typography 5 · Finnish 4 · accessibility 5

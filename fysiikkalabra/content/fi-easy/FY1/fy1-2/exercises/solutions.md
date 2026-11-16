@@ -203,3 +203,41 @@
 **Sijoitus:** $t = \dfrac{3{,}844\cdot10^{8}\,\text{m}}{2{,}998\cdot10^{8}\,\text{m/s}} = 1{,}282\,\text{s} \approx 1{,}28\,\text{s}$
 **Vastaus:** $t \approx 1{,}28\,\text{s}$ kolmella merkitsevällä numerolla. Kuun etäisyys MAFY-taulukossa (Aurinkokunta) on keskiarvo keskipisteestä keskipisteeseen. Signaalin matka ei ole tarkalleen se, joten kolme merkitsevää numeroa riittää. Vastaus hyväksytään, kun se on enintään noin $\pm 4\,\%$ oikeasta arvosta.
 **Järkevyys:** Valo kulkee noin $3\cdot10^{8}\,\text{m}$ sekunnissa. Kuun etäisyys on noin $4\cdot10^{8}\,\text{m}$. Siksi kulkuaika on vähän yli sekunnin. Tulos sopii siihen.
+
+## fy1-2-L2-08
+**Annettu:** BIPM:n sivut: vuodesta 1889 kilogramma oli platina-iridiumista valmistetun kansainvälisen vertailukappaleen massa; vuoden 2018 päätöksestä lähtien se määritellään Planckin vakion $h$ kiinnitetyn lukuarvon avulla. Kansallisten vertailukappaleiden massojen ero kansainväliseen oli vuosien 1989–1991 tarkistuksessa mediaaniltaan noin $25\,\mu\text{g}$. Kohdan b) muutos $\Delta m = 1\,\text{mg}$ ja massa $m = 1\,\text{kg}$.
+
+**Kysytty:** a) määritelmien vertailu ja muutoksen syy; b) suhteellinen muutos $\dfrac{\Delta m}{m}$ prosentteina ja vertailu havaittuun eroon; c) luonnonvakioon perustuvan määritelmän hyöty; d) onko mittaus virheetön
+
+**Periaate:** Yksikön määritelmä kertoo, mitä yksi kilogramma on. Suhteellinen muutos on muutos jaettuna alkuperäisellä arvolla, ja se voidaan laskea vasta, kun molemmat ovat samassa yksikössä.
+
+**Mallivastaus a):** Vanha kilogramma oli yhden esineen massa: Pariisin lähellä BIPM:ssä säilytettävän platina-iridiumkappaleen. Sitä varten valmistettiin myös kansallisia kopioita. Uudessa määritelmässä Planckin vakiolle on päätetty tarkka lukuarvo $h = 6{,}626\,070\,15\cdot10^{-34}\,\text{J}\,\text{s}$, ja kilogramma seuraa siitä yhdessä metrin ja sekunnin määritelmien kanssa. Kappaleeseen perustuvasta määritelmästä luovuttiin, koska vertailuissa kansallisten kopioiden massat erkanivat kansainvälisen kappaleen massasta. Kukaan ei voinut tietää, mikä kappaleista muuttui. Määritelmän mukaan kansainvälisen kappaleen massa oli nimittäin aina tasan $1\,\text{kg}$.
+
+**Kaava:** suhteellinen muutos $\varepsilon = \dfrac{\Delta m}{m} \cdot 100\,\%$
+
+**Muunnokset:** $\Delta m = 1\,\text{mg} = 10^{-6}\,\text{kg}$ ja $25\,\mu\text{g} = 25\cdot10^{-9}\,\text{kg} = 2{,}5\cdot10^{-8}\,\text{kg}$
+
+**Sijoitus:** Yhden milligramman muutos:
+
+$$\begin{aligned}
+\dfrac{\Delta m}{m} &= \dfrac{10^{-6}\,\text{kg}}{1\,\text{kg}} \cdot 100\,\% \\
+&= 10^{-4}\,\% \\
+&= 0{,}0001\,\%
+\end{aligned}$$
+
+Havaittu ero:
+
+$$\begin{aligned}
+\dfrac{\Delta m_\text{BIPM}}{m} &= \dfrac{2{,}5\cdot10^{-8}\,\text{kg}}{1\,\text{kg}} \cdot 100\,\% \\
+&= 2{,}5\cdot10^{-6}\,\%
+\end{aligned}$$
+
+**Mallivastaus b):** Yhden milligramman muutos on $0{,}0001\,\%$ eli miljoonasosa massasta. Se on $40$ kertaa suurempi kuin vertailukappaleiden havaittu ero $25\,\mu\text{g}$, joka on vain $2{,}5\cdot10^{-6}\,\%$. Arkimittauksissa näin pienet erot eivät näy, mutta tarkimmissa mittauksissa ne ovat merkittäviä, ja ne ovat sitä suurempia, mitä kauemmin kappaleet muuttuvat.
+
+**Mallivastaus c):** Luonnonvakio on sama kaikkialla ja aina. Se ei voi kulua, likaantua, vahingoittua tai kadota kuten esine. Kun kilogramma perustuu Planckin vakioon, mikä tahansa riittävän hyvin varustettu laboratorio voi toteuttaa kilogramman itse, eikä sen tarvitse verrata punnuksiaan yhteen Ranskassa säilytettävään kappaleeseen. BIPM:n mukaan uusi määritelmä takaa massan yksikön pitkäaikaisen pysyvyyden ja on modernin tieteen kannalta hyödyllisempi.
+
+**Mallivastaus d):** Ei tarkoita. Määritelmä kertoo, mitä yksi kilogramma tarkalleen on, mutta jokaisessa mittauksessa on silti epävarmuutta. Vaa'an lukemaa voi lukea vain tietyllä tarkkuudella. Vaaka on kalibroitu eli tarkistettu vain tietyllä tarkkuudella. Mittaukseen vaikuttavat myös esimerkiksi lämpötila, ilmavirtaukset ja mittaajan tekemät valinnat. Täsmällinen määritelmä takaa, että eri maissa mitataan samaa suuretta samalla yksiköllä. Mittauksen tarkkuus riippuu kuitenkin mittalaitteesta ja mittaustavasta. Siksi tulokseen merkitään vain ne numerot, jotka mittaus oikeuttaa.
+
+**Vastaus:** Yhden milligramman muutos on $0{,}0001\,\%$ eli $10^{-4}\,\%$ massasta. Tulos on yhden merkitsevän numeron tarkkuudella, koska muutos $1\,\text{mg}$ on annettu yhdellä numerolla.
+
+**Järkevyys:** Kilogrammassa on miljoona milligrammaa, joten yksi milligramma on miljoonasosa. Prosentti on sadasosa, joten miljoonasosa on $\dfrac{100}{1\,000\,000}\,\% = 0{,}0001\,\%$.

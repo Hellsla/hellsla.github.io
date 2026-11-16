@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: f3c6399e3049def6
+CONTENT-HASH: 8901ef7af333f1fa
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
 - none
@@ -8,8 +9,7 @@ CONTENT-HASH: f3c6399e3049def6
 - none
 
 ## Checked
-- Delta, round 1 (exercises.json tolerance, solutions.md wording).
-- open-exercises-1280-1 (task 2-1): "virhearvio" spelling, solution rows aligned, Vastaus and Järkevyys intact, nothing clipped. The tolerance change has no visual effect.
+- All 1 proof sheet(s) of fi-easy-fy6-2-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

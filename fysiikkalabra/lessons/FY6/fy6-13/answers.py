@@ -52,4 +52,15 @@ c_ex2 = 120e-6 / 8                                              # 15 µF
 a["fy6-13-L2-08"] = 0.5 * c_ex2 * 7.0 ** 2 * 1e6                # W = 1/2 · 15 µF · (7,0 V)^2 = 367,5 µJ
 # L1-10 MAFY: polyethylene eps_r = 2,3; A = 250 cm^2, d = 0,10 mm
 a["fy6-13-L1-10"] = EPS0 * 2.3 * 250e-4 / 0.10e-3 * 1e9         # C = eps0 eps_r A : d = 5,09 nF
+# Source-material task (teacher 2026-11-16, FY6-A5): L2-09, PhET Capacitor Lab: Basics; 1000 µF is exact, 12 V has two figures
+w_a5 = 0.5 * 1000e-6 * 12 ** 2                                  # b) W = 1/2 C U^2 = 1/2 · 1000 µF · (12 V)^2 = 0,072 J
+a["fy6-13-L2-09"] = w_a5 * 1e3                                  # 72 mJ
+w_a5_2 = 0.5 * 1000e-6 * (2 * 12) ** 2                          # c) U doubled: 0,288 J = 4 · 0,072 J
+q_a5 = 1000e-6 * 12                                             # check: Q = C U = 12 mC, 1/2 Q U = 0,072 J
+c_a5_4 = EPS0 * 1.0 * 2.0e-4 / 4.0e-3 * 1e12                    # a) example only (air, A = 2,0 cm^2, d = 4,0 mm): C = 0,443 pF
+c_a5_8 = EPS0 * 1.0 * 2.0e-4 / 8.0e-3 * 1e12                    # d = 8,0 mm: C = 0,221 pF, half
+q_a5_ex = c_a5_4 * 1.5                                          # at 1,5 V: Q = C U = 0,664 pC
+w_phone = 3.85 * 5.0 * 3600                                     # d) phone battery 3,85 V · 5,0 Ah = 19,25 Wh = 69 300 J
+ratio_a5 = w_phone / w_a5                                       # 69 300 J : 0,072 J = 9,6 · 10^5, about a million
+assert abs(w_a5_2 / w_a5 - 4) < 1e-9 and abs(0.5 * q_a5 * 12 - w_a5) < 1e-12
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

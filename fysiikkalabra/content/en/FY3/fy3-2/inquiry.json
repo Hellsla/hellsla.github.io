@@ -27,12 +27,12 @@
       "choices": [
         {
           "text": "$10\\,\\text{N}$",
-          "feedback": "You mixed up mass and weight. Weight is a force: $G = mg = 10\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 98\\,\\text{N}$."
+          "feedback": "You mixed up mass and weight. Weight is a force: $$\\begin{aligned} G &= mg \\\\ &= 10\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\ &\\approx 98\\,\\text{N} \\end{aligned}$$."
         },
         {
           "text": "$98\\,\\text{N}$",
           "correct": true,
-          "feedback": "Correct: $G = mg = 10\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\approx 98\\,\\text{N}$. This is the force you need to hold the backpack up."
+          "feedback": "Correct: $$\\begin{aligned} G &= mg \\\\ &= 10\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\ &\\approx 98\\,\\text{N} \\end{aligned}$$. This is the force you need to hold the backpack up."
         },
         {
           "text": "$9.8\\,\\text{kg}$",
@@ -114,7 +114,7 @@
       "justify": true,
       "choices": [
         {
-          "text": "Aino: $W = Fs = 98\\,\\text{N} \\cdot 20\\,\\text{m} \\approx 2.0\\,\\text{kJ}$, because the force acts over the whole distance.",
+          "text": "Aino: $$\\begin{aligned} W &= Fs \\\\ &= 98\\,\\text{N} \\cdot 20\\,\\text{m} \\\\ &\\approx 2.0\\,\\text{kJ} \\end{aligned}$$, because the force acts over the whole distance.",
           "feedback": "The formula $W = Fs$ holds only when the force is in the direction of motion. The supporting force points up, but the backpack moves sideways. Come back to this in the Theory summary."
         },
         {
@@ -283,7 +283,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Find the error",
-      "prompt": "A student calculates the spring example like this: $W = Fs = 40\\,\\text{N} \\cdot 0.20\\,\\text{m} = 8.0\\,\\text{J}$. Where is the error?",
+      "prompt": "A student calculates the spring example like this: $$\\begin{aligned} W &= Fs \\\\ &= 40\\,\\text{N} \\cdot 0.20\\,\\text{m} \\\\ &= 8.0\\,\\text{J} \\end{aligned}$$. Where is the error?",
       "choices": [
         {
           "text": "The unit should be W, not J.",
@@ -370,7 +370,7 @@
         {
           "text": "About $98\\,\\text{J}$.",
           "correct": true,
-          "feedback": "Correct. In the lift the force is upwards and the motion is upwards, so $W = G h = 98.1\\,\\text{N} \\cdot 1.0\\,\\text{m} \\approx 98\\,\\text{J}$. When carrying horizontally, the supporting force is vertical and the motion is horizontal, so the force is perpendicular to the motion and does no work."
+          "feedback": "Correct. In the lift the force is upwards and the motion is upwards, so $$\\begin{aligned} W &= G h \\\\ &= 98.1\\,\\text{N} \\cdot 1.0\\,\\text{m} \\\\ &\\approx 98\\,\\text{J} \\end{aligned}$$. When carrying horizontally, the supporting force is vertical and the motion is horizontal, so the force is perpendicular to the motion and does no work."
         },
         {
           "text": "About $590\\,\\text{J}$.",
@@ -398,7 +398,7 @@
       "hints": [
         "Sketch the graph: a rectangle followed by a triangle. The work is the sum of these areas.",
         "$W = W_1 + W_2 = F s_1 + \\tfrac{1}{2} F s_2$.",
-        "$W = 30\\,\\text{N} \\cdot 4.0\\,\\text{m} + \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4.0\\,\\text{m}$."
+        "$$\\begin{aligned} W &= 30\\,\\text{N} \\cdot 4.0\\,\\text{m} \\\\ &+ \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4.0\\,\\text{m} \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -411,7 +411,7 @@
         }
       ],
       "optional": true,
-      "solution": "**Given:** force $F = 30\\,\\text{N}$ (in the direction of motion) constant over the distance $s_1 = 4.0\\,\\text{m}$ (0–$4.0\\,\\text{m}$); then the force falls steadily to zero over the distance $s_2 = 4.0\\,\\text{m}$ (4.0–$8.0\\,\\text{m}$)\n\n**Find:** work $W$ done over the whole $8.0\\,\\text{m}$ in joules\n\n**Principle:** The force changes, so the formula $W = F s$ does not apply to the whole distance. The work is the area under the $(s,F)$ graph, and it can be calculated in parts: the constant-force part is a rectangle and the part falling steadily to zero is a triangle.\n\n**Reading the graph:** The graph has a horizontal segment at the height $30\\,\\text{N}$ from $0\\ldots 4.0\\,\\text{m}$ and, continuing from it, a straight segment down to zero from $4.0\\ldots 8.0\\,\\text{m}$. The rectangle has height $30\\,\\text{N}$ and width $4.0\\,\\text{m}$. The triangle has height $30\\,\\text{N}$ and base $4.0\\,\\text{m}$.\n\n**Formula:** $W = A_\\text{rectangle} + A_\\text{triangle}$, so\n\n$$W = F s_1 + \\tfrac{1}{2} F s_2$$\n\n**Conversions:** The force is in newtons and the distances in metres, so no conversions are needed: $\\text{N}\\cdot\\text{m} = \\text{J}$.\n\n**Substitution:** $W = 30\\,\\text{N} \\cdot 4.0\\,\\text{m} + \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4.0\\,\\text{m} = 120\\,\\text{J} + 60\\,\\text{J} = 180\\,\\text{J}$\n\n**Answer:** $180\\,\\text{J}$, two significant figures like the given values $30\\,\\text{N}$ and $4.0\\,\\text{m}$.\n\n**Reasonableness:** The average force is $\\tfrac{180\\,\\text{J}}{8.0\\,\\text{m}} = 22.5\\,\\text{N}$, which lies between the peak value $30\\,\\text{N}$ and zero. The work is less than $30\\,\\text{N} \\cdot 8.0\\,\\text{m} = 240\\,\\text{J}$ and greater than the rectangle alone, $120\\,\\text{J}$, because the force is not zero over the latter distance."
+      "solution": "**Given:** force $F = 30\\,\\text{N}$ (in the direction of motion) constant over the distance $s_1 = 4.0\\,\\text{m}$ (0–$4.0\\,\\text{m}$); then the force falls steadily to zero over the distance $s_2 = 4.0\\,\\text{m}$ (4.0–$8.0\\,\\text{m}$)\n\n**Find:** work $W$ done over the whole $8.0\\,\\text{m}$ in joules\n\n**Principle:** The force changes, so the formula $W = F s$ does not apply to the whole distance. The work is the area under the $(s,F)$ graph, and it can be calculated in parts: the constant-force part is a rectangle and the part falling steadily to zero is a triangle.\n\n**Reading the graph:** The graph has a horizontal segment at the height $30\\,\\text{N}$ from $0\\ldots 4.0\\,\\text{m}$ and, continuing from it, a straight segment down to zero from $4.0\\ldots 8.0\\,\\text{m}$. The rectangle has height $30\\,\\text{N}$ and width $4.0\\,\\text{m}$. The triangle has height $30\\,\\text{N}$ and base $4.0\\,\\text{m}$.\n\n**Formula:** $W = A_\\text{rectangle} + A_\\text{triangle}$, so\n\n$$W = F s_1 + \\tfrac{1}{2} F s_2$$\n\n**Conversions:** The force is in newtons and the distances in metres, so no conversions are needed: $\\text{N}\\cdot\\text{m} = \\text{J}$.\n\n**Substitution:** $$\\begin{aligned} W &= 30\\,\\text{N} \\cdot 4.0\\,\\text{m} \\\\ &+ \\tfrac{1}{2} \\cdot 30\\,\\text{N} \\cdot 4.0\\,\\text{m} \\\\ &= 120\\,\\text{J} + 60\\,\\text{J} \\\\ &= 180\\,\\text{J} \\end{aligned}$$\n\n**Answer:** $180\\,\\text{J}$, two significant figures like the given values $30\\,\\text{N}$ and $4.0\\,\\text{m}$.\n\n**Reasonableness:** The average force is $\\tfrac{180\\,\\text{J}}{8.0\\,\\text{m}} = 22.5\\,\\text{N}$, which lies between the peak value $30\\,\\text{N}$ and zero. The work is less than $30\\,\\text{N} \\cdot 8.0\\,\\text{m} = 240\\,\\text{J}$ and greater than the rectangle alone, $120\\,\\text{J}$, because the force is not zero over the latter distance."
     },
     {
       "id": "check-3",

@@ -208,3 +208,36 @@
 **Substitution:** $m = 2.70\,\dfrac{\text{g}}{\text{cm}^3} \cdot 45\,\text{cm}^3 = 121.5\,\text{g}$
 **Answer:** $m \approx 1.2\cdot10^{2}\,\text{g}$ (calculated value $121.5\,\text{g}$), two significant figures as in the volume $45\,\text{cm}^3$. The density is from the MAFY table (densities of solids); an answer within about $\pm 4\,\%$ is accepted.
 **Reasonableness:** Aluminium is about three times as dense as water, and $45\,\text{cm}^3$ of water would have a mass of about $45\,\text{g}$. The result $121.5\,\text{g}$ is about $2.7$ times that.
+
+## fy1-4-L2-09
+**Given:** the air temperature $T$ every two hours for one day. Your own data depends on the station and the day, so here is the method with the example table of the task. At the start of the interval of part b) $t_1 = 6\,\text{h}$, $T_1 = 7.2\,{}^\circ\text{C}$, and at its end $t_2 = 12\,\text{h}$, $T_2 = 16.3\,{}^\circ\text{C}$.
+
+**Find:** a) the graph $T(t)$; b) the mean rate of change $k = \dfrac{\Delta T}{\Delta t}$; c) a linear model and its comparison with the measurements; d) the range in which the model is valid
+
+**Principle:** The mean rate of change is the change in temperature divided by the time it takes, that is, the slope of the straight line drawn through the end points of the interval. A linear model describes the measurements only in the range where the points lie roughly on a line.
+
+**Model answer a):** Axis names and units: $t\,(\text{h})$ and $T\,({}^\circ\text{C})$. The points are marked separately, and a thin curve may be drawn through them, because the temperature changes continuously between the measurements too.
+
+**Reading the graph:** Time $t$ in hours goes on the horizontal axis and temperature $T$ in degrees Celsius on the vertical axis. The points rise from the early morning to the afternoon and fall after that, so the graph is an arc, not a line. The temperature is lowest at $4$ o'clock and highest at $16$ o'clock. From $6$ to $12$ o'clock the points lie roughly on a line: the two-hour changes are $3.2$, $3.1$ and $2.8\,{}^\circ\text{C}$.
+
+**Formula:** $k = \dfrac{\Delta T}{\Delta t} = \dfrac{T_2 - T_1}{t_2 - t_1}$ and the linear model $T(t) = T_1 + k(t - t_1)$
+
+**Conversions:** None: the times are in hours and the temperatures in degrees Celsius. A change in temperature is the same in degrees Celsius and in kelvins, so $1\,{}^\circ\text{C/h} = 1\,\text{K/h}$.
+
+**Substitution:** Part b):
+
+$$\begin{aligned}
+k &= \dfrac{T_2 - T_1}{t_2 - t_1} \\
+&= \dfrac{16.3\,{}^\circ\text{C} - 7.2\,{}^\circ\text{C}}{12\,\text{h} - 6\,\text{h}} \\
+&\approx 1.52\,{}^\circ\text{C/h}
+\end{aligned}$$
+
+**Model answer c):** The model is $T(t) = T_1 + k(t - t_1)$, where $T_1 = 7.2\,{}^\circ\text{C}$, $k = 1.52\,{}^\circ\text{C/h}$ and $t_1 = 6\,\text{h}$. It gives $10.2\,{}^\circ\text{C}$ at $8$ o'clock (measured $10.4\,{}^\circ\text{C}$) and $13.3\,{}^\circ\text{C}$ at $10$ o'clock (measured $13.5\,{}^\circ\text{C}$). Inside the interval the difference is at most $0.2\,{}^\circ\text{C}$, so the model describes the measurements well.
+
+Outside the interval the model fails. At $16$ o'clock it gives $22.4\,{}^\circ\text{C}$, although the measured temperature is $18.1\,{}^\circ\text{C}$, and at $0$ o'clock it would give $-1.9\,{}^\circ\text{C}$, although the measured one is $8.1\,{}^\circ\text{C}$. The model is good only in the range of the measurements it was made from.
+
+**Model answer d):** The morning rise happens because the Sun heats the ground and the air more and more effectively. In the afternoon the heating weakens and at night the air cools, so the temperature cannot rise evenly all day. The next day's temperature also depends on the cloud cover, the wind and the kind of air mass that arrives. One morning's straight line contains none of this, so it cannot forecast another day. That needs a weather forecast based on models of the physics of the atmosphere and on a large body of observations.
+
+**Answer:** The mean rate of change of the temperature between $6$ and $12$ o'clock is $1.5\,{}^\circ\text{C/h}$ (calculated value $1.517\,{}^\circ\text{C/h}$), two significant figures, because the change $9.1\,{}^\circ\text{C}$ has two and the interval $6\,\text{h}$ is exact. With your own data the rate and the interval are different, but the method is the same.
+
+**Reasonableness:** In six hours the temperature rises by $6\,\text{h} \cdot 1.52\,{}^\circ\text{C/h} \approx 9.1\,{}^\circ\text{C}$, which matches the difference in the table. A daily range of about $10\,{}^\circ\text{C}$ inland on a spring day is common, so a rise of about $1$–$2\,{}^\circ\text{C}$ per hour is plausible.

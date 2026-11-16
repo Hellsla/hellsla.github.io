@@ -38,4 +38,5 @@ a["fy8-13-L3-04"] = 2.0 / (4.0 * 0.80) * 94            # target 2,0 mSv: c = 2,0
 # fy8-13-L2-08 is a multiple-choice task (no number): 12 · 6 · 9,0 h = 648 h; 3,0 µSv/h · 648 h = 1944 µSv ≈ 2 mSv
 Hd5 = 240 * (1.0 / 2.0) ** 2 * 0.5 ** (10 / 4.0)       # 240 µSv/h at 1,0 m, 2,0 m, 10 cm concrete d½ 4,0 cm: 10,61 µSv/h
 a["fy8-13-L3-05"] = 25 / Hd5                           # t = 25 µSv : 10,61 µSv/h = 2,357 h -> 2,4 h
+a["fy8-13-L2-09"] = 0.10 * 8760 / 1000             # aineisto STUK-A263 (2020): 0,10 µSv/h · 8760 h = 876 µSv = 0,876 mSv -> 0,88 mSv; radon 4 / 5,9 = 67,8 %
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

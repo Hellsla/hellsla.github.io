@@ -31,12 +31,12 @@
         },
         {
           "text": "$100\\,\\text{kPa}$",
-          "feedback": "The amount of air stays the same, but the pressure does not. By Boyle's law $p_1V_1 = p_2V_2$, $p_2 = p_1V_1/V_2 = 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} = 200\\,\\text{kPa}$."
+          "feedback": "The amount of air stays the same, but the pressure does not. By Boyle's law $p_1V_1 = p_2V_2$, $$\\begin{aligned} p_2 &= p_1V_1/V_2 \\\\ &= 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} \\\\ &= 200\\,\\text{kPa} \\end{aligned}$$."
         },
         {
           "text": "$200\\,\\text{kPa}$",
           "correct": true,
-          "feedback": "Correct: Boyle's law $p_1V_1 = p_2V_2$ gives $p_2 = 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} = 200\\,\\text{kPa}$. Half the volume, twice the pressure."
+          "feedback": "Correct: Boyle's law $p_1V_1 = p_2V_2$ gives $$\\begin{aligned} p_2 &= 100\\,\\text{kPa} \\cdot 60\\,\\text{ml} / 30\\,\\text{ml} \\\\ &= 200\\,\\text{kPa} \\end{aligned}$$. Half the volume, twice the pressure."
         },
         {
           "text": "$400\\,\\text{kPa}$",
@@ -103,7 +103,7 @@
             "feedback": "You multiplied the mass and the molar mass. The quotient $m/M$ is obtained by dividing the mass by the molar mass."
           }
         ],
-        "solution": "**Given:** helium, from the table $m = 0.83\\,\\text{g}$ and $M = 4.00\\,\\text{g/mol}$\n\n**Find:** the quotient $m/M$ in mol\n\n**Principle:** The molar mass is the mass of one mole, so the mass of the gas divided by the molar mass tells how many moles of gas are in the flask. The calculation needs neither pressure nor temperature, because the mass and the molar mass determine the amount of substance directly.\n\n**Formula:** $M = \\dfrac{m}{n}$, so $n = \\dfrac{m}{M}$\n\n**Conversions:** No conversions are needed, because the mass and the molar mass are both in grams. The grams cancel, and the mole is left.\n\n**Substitution:** $\\dfrac{m}{M} = \\dfrac{0.83\\,\\text{g}}{4.00\\,\\text{g/mol}} = 0.2075\\,\\text{mol}$\n\n**Answer:** $0.21\\,\\text{mol}$, two significant figures. The limiting datum is the mass $0.83\\,\\text{g}$ (two digits); the molar mass $4.00\\,\\text{g/mol}$ has three digits. The intermediate result $0.2075\\,\\text{mol}$ of the substitution is kept with four digits for the next calculation.\n\n**Reasonableness:** At the same pressure and temperature, $5.00\\,\\textsf{l}$ contains about $5.00 \\cdot 0.041 \\approx 0.21\\,\\text{mol}$ of any gas, so the result is believable. Checking backwards: $0.2075\\,\\text{mol} \\cdot 4.00\\,\\text{g/mol} = 0.83\\,\\text{g}$."
+        "solution": "**Given:** helium, from the table $m = 0.83\\,\\text{g}$ and $M = 4.00\\,\\text{g/mol}$\n\n**Find:** the quotient $m/M$ in mol\n\n**Principle:** The molar mass is the mass of one mole, so the mass of the gas divided by the molar mass tells how many moles of gas are in the flask. The calculation needs neither pressure nor temperature, because the mass and the molar mass determine the amount of substance directly.\n\n**Formula:** $M = \\dfrac{m}{n}$, so $n = \\dfrac{m}{M}$\n\n**Conversions:** No conversions are needed, because the mass and the molar mass are both in grams. The grams cancel, and the mole is left.\n\n**Substitution:** $\\dfrac{m}{M} = \\dfrac{0.83\\,\\text{g}}{4.00\\,\\text{g/mol}} = 0.2075\\,\\text{mol}$\n\n**Answer:** $0.21\\,\\text{mol}$, two significant figures. The limiting datum is the mass $0.83\\,\\text{g}$ (two digits); the molar mass $4.00\\,\\text{g/mol}$ has three digits. The intermediate result $0.2075\\,\\text{mol}$ of the substitution is kept with four digits for the next calculation.\n\n**Reasonableness:** At the same pressure and temperature, $5.00\\,\\textsf{l}$ contains about $5.00 \\cdot 0.041 \\approx 0.21\\,\\text{mol}$ of any gas, so the result is believable. Checking backwards: $$\\begin{aligned} &0.2075\\,\\text{mol} \\cdot 4.00\\,\\text{g/mol} \\\\ &= 0.83\\,\\text{g} \\end{aligned}$$."
       },
       "source": "simulated",
       "source_note": "invented example values to which the usual spread of weighing has been added"
@@ -122,7 +122,7 @@
         },
         {
           "text": "$m/M$ is greatest for helium, because more of a light gas fits into the flask.",
-          "feedback": "For helium $m/M = 0.83\\,\\text{g} / 4.00\\,\\tfrac{\\text{g}}{\\text{mol}} = 0.2075\\,\\text{mol}$, and the values for the others are $0.2064$–$0.2076\\,\\text{mol}$. The difference is smaller than the scatter of weighing, so the measurement does not show that there is more helium: the amounts of substance are the same within the measurement accuracy."
+          "feedback": "For helium $$\\begin{aligned} m/M &= 0.83\\,\\text{g} / 4.00\\,\\tfrac{\\text{g}}{\\text{mol}} \\\\ &= 0.2075\\,\\text{mol} \\end{aligned}$$, and the values for the others are $0.2064$–$0.2076\\,\\text{mol}$. The difference is smaller than the scatter of weighing, so the measurement does not show that there is more helium: the amounts of substance are the same within the measurement accuracy."
         },
         {
           "text": "$m/M$ is greatest for carbon dioxide, because its mass is the greatest.",
@@ -386,7 +386,7 @@
         {
           "text": "The temperature is in degrees Celsius. In kelvins $T = 293.15\\,\\text{K}$, and $n \\approx 0.083\\,\\text{mol}$.",
           "correct": true,
-          "feedback": "Correct. In the equation of state the temperature is always in kelvins: $n = 101\\,000\\,\\text{Pa} \\cdot 0.0020\\,\\text{m}^3 / (8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 293.15\\,\\text{K}) \\approx 0.083\\,\\text{mol}$. Reasonableness check: a mole takes up about $24\\,\\textsf{l}$ at room temperature, so 2.0 litres contain about $0.08\\,\\text{mol}$."
+          "feedback": "Correct. In the equation of state the temperature is always in kelvins: $$\\begin{aligned} n &= 101\\,000\\,\\text{Pa} \\cdot 0.0020\\,\\text{m}^3 \\\\ &/ (8.31\\,\\tfrac{\\text{J}}{\\text{mol}\\cdot\\text{K}} \\cdot 293.15\\,\\text{K}) \\\\ &\\approx 0.083\\,\\text{mol} \\end{aligned}$$. Reasonableness check: a mole takes up about $24\\,\\textsf{l}$ at room temperature, so 2.0 litres contain about $0.08\\,\\text{mol}$."
         },
         {
           "text": "The volume should be substituted in litres, $2.0\\,\\textsf{l}$.",
@@ -472,7 +472,7 @@
         {
           "text": "The pressure grows by about $7\\,\\%$, because the temperature in kelvins grows from $293\\,\\text{K}$ to $313\\,\\text{K}$.",
           "correct": true,
-          "feedback": "Correct. The volume and the amount of substance stay the same, so $p = nRT/V$ is proportional to the temperature in kelvins and $p_2/p_1 = T_2/T_1 = 313.15\\,\\text{K} / 293.15\\,\\text{K} \\approx 1.07$. The temperature must be in kelvins, because only the zero point of the kelvin scale is the absolute zero: the pressure of a gas is proportional to the temperature only when the temperature is measured from that point."
+          "feedback": "Correct. The volume and the amount of substance stay the same, so $p = nRT/V$ is proportional to the temperature in kelvins and $$\\begin{aligned} p_2/p_1 &= T_2/T_1 \\\\ &= 313.15\\,\\text{K} / 293.15\\,\\text{K} \\\\ &\\approx 1.07 \\end{aligned}$$. The temperature must be in kelvins, because only the zero point of the kelvin scale is the absolute zero: the pressure of a gas is proportional to the temperature only when the temperature is measured from that point."
         },
         {
           "text": "The pressure does not change, because the volume of the container and the amount of air stay the same.",
@@ -480,7 +480,7 @@
         },
         {
           "text": "The pressure grows by $20\\,\\%$, because the temperature rises by $20$ degrees.",
-          "feedback": "A rise of temperature in degrees is not a percentage. The relative change of the pressure is the ratio of the temperatures in kelvins minus one: $(313.15 - 293.15)\\,\\text{K} / 293.15\\,\\text{K} \\approx 0.068$, that is, about $7\\,\\%$."
+          "feedback": "A rise of temperature in degrees is not a percentage. The relative change of the pressure is the ratio of the temperatures in kelvins minus one: $$\\begin{aligned} &(313.15 - 293.15)\\,\\text{K} / 293.15\\,\\text{K} \\\\ &\\approx 0.068 \\end{aligned}$$, that is, about $7\\,\\%$."
         }
       ]
     },

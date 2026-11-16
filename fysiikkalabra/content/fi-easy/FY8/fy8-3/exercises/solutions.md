@@ -280,6 +280,36 @@ $\lambda_2 \approx 1094\,\text{nm}$
 
 Molemmat ovat Paschenin sarjan infrapunaa. Kasvu $1{,}7$-kertaiseksi syntyisi, jos riippuvuus luettaisiin väärin päin. Pieneneminen noin $0{,}44$-kertaiseksi syntyisi, jos suhteeksi otettaisiin lähtötasojen energioiden suhde $0{,}38 : 0{,}85$ eikä energiaerojen suhde. Sama päätetaso ei tee aallonpituuksista samoja, koska fotonin energia riippuu myös lähtötasosta.
 
+## fy8-3-L2-09
+**Annettu:** NIST:n taulukon vedyn viivoja; $1\,\text{Å} = 0{,}1\,\text{nm}$; $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$; $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$. Valinta on sinun: esimerkkinä taulukon näkyvän valon viivat, joiden ilma-aallonpituudet 16. marraskuuta 2026 olivat $6562{,}8518\,\text{Å}$ (punainen) ja $4861{,}3615\,\text{Å}$ (sinivihreä).
+**Kysytty:** a) aallonpituudet $\lambda$ nanometreinä, b) fotonien energiat $E$ elektronivoltteina, c) energiaerot $\Delta E_{3 \to 2}$ ja $\Delta E_{4 \to 2}$ elektronivoltteina, d) viivojen ja siirtymien yhdistäminen sekä viivaspektrin selitys. Laatikkoon tulee $\Delta E_{3 \to 2}$ yksikössä $\text{eV}$.
+**Periaate:** Atomin energia on kvantittunut. Se tarkoittaa, että atomilla on vain tiettyjä sallittuja energioita eli tasoja. Fotoni syntyy, kun elektroni siirtyy ylemmältä tasolta alemmalle. Energia säilyy, joten fotonin energia on tasojen erotus, $E = E_\text{y} - E_\text{a}$. Fotonin energia on myös $E = \tfrac{hc}{\lambda}$. Näin voidaan verrata mitattua aallonpituutta ja tasomallia samalla energialla.
+**Kaava:** $\lambda = \lambda_\text{Å} \cdot 0{,}1\,\tfrac{\text{nm}}{\text{Å}}$, $E = \dfrac{hc}{\lambda}$ ja $\Delta E = E_\text{y} - E_\text{a} = 13{,}6\,\text{eV} \cdot \left(\dfrac{1}{n_\text{a}^2} - \dfrac{1}{n_\text{y}^2}\right)$
+**Muunnokset:** $6562{,}8518\,\text{Å} = 6562{,}8518 \cdot 0{,}1\,\text{nm} = 656{,}3\,\text{nm}$ ja $4861{,}3615\,\text{Å} = 486{,}1\,\text{nm}$. Fotonin energia muunnetaan jouleista elektronivoltteihin jakamalla luvulla $1{,}602 \cdot 10^{-19}\,\text{J/eV}$.
+**Sijoitus:** Kohta a) on muunnoksissa. Kohta b), punainen viiva:
+
+$$\begin{aligned}
+E &= \frac{hc}{\lambda} \\
+&= \frac{6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2{,}998 \cdot 10^{8}\,\text{m/s}}{656{,}3 \cdot 10^{-9}\,\text{m}} \\
+&= 3{,}027 \cdot 10^{-19}\,\text{J} = 1{,}889\,\text{eV}
+\end{aligned}$$
+
+Sinivihreä viiva: $E = \dfrac{hc}{486{,}1\,\text{nm}} = 4{,}087 \cdot 10^{-19}\,\text{J} = 2{,}551\,\text{eV}$. Kohta c):
+
+$$\begin{aligned}
+\Delta E_{3 \to 2} &= 13{,}6\,\text{eV} \cdot \left(\frac{1}{2^2} - \frac{1}{3^2}\right) \\
+&= 13{,}6\,\text{eV} \cdot \frac{5}{36} = 1{,}889\,\text{eV}
+\end{aligned}$$
+
+$$\begin{aligned}
+\Delta E_{4 \to 2} &= 13{,}6\,\text{eV} \cdot \left(\frac{1}{2^2} - \frac{1}{4^2}\right) \\
+&= 13{,}6\,\text{eV} \cdot \frac{3}{16} = 2{,}550\,\text{eV}
+\end{aligned}$$
+
+**Kohta d):** Punaisen viivan fotonin energia $1{,}889\,\text{eV}$ vastaa siirtymää $3 \to 2$ ja sinivihreän viivan $2{,}551\,\text{eV}$ siirtymää $4 \to 2$. Mallin mukaan aallonpituudet olisivat $656{,}5\,\text{nm}$ ja $486{,}3\,\text{nm}$, ja ne poikkeavat taulukon arvoista alle $0{,}1\,\%$ ($656{,}3\,\text{nm}$ on ilma-aallonpituus, ja yksinkertainen malli arvolla $13{,}6\,\text{eV}$ ei ole aivan tarkka). Yhteensopivuus pitää siis paikkansa. Viivaspektri syntyy, koska atomin energiatasot ovat kvantittuneet. Elektroni voi siirtyä vain tasolta toiselle. Siksi fotonin energia on aina jonkin tasoparin erotus. Vain tietyt energiat ja siis tietyt aallonpituudet ovat mahdollisia. Spektri ei ole jatkuva, vaan siinä on erillisiä viivoja. Jos valitset muut taulukon viivat, esimerkiksi $434{,}0\,\text{nm}$, ne vastaavat siirtymiä $5 \to 2$ ja $6 \to 2$ samalla tavalla.
+**Vastaus:** $\Delta E_{3 \to 2} = 1{,}89\,\text{eV}$, kolme merkitsevää numeroa kuten vakiossa $13{,}6\,\text{eV}$. Mittausviivan energia $1{,}889\,\text{eV}$ on sama, joten vastaus ei riipu siitä, minkä taulukon rinnakkaisarvon valitset.
+**Järkevyys:** Punainen valo on näkyvän alueen pienienergisin pää, ja $1{,}9\,\text{eV}$ on sille oikea suuruusluokka. Arvio pyöreillä luvuilla: $\tfrac{1240\,\text{eV nm}}{656\,\text{nm}} \approx 1{,}89\,\text{eV}$. Energiaero on pienempi kuin ionisaatioenergia $13{,}6\,\text{eV}$, kuten sidottujen tasojen välillä pitää olla, ja siirtymä $4 \to 2$ antaa suuremman energian eli lyhyemmän aallonpituuden kuin $3 \to 2$.
+
 ## fy8-3-L3-04
 **Annettu:** emissioviivat $\lambda = 1876$; $1282$ ja $1094\,\text{nm}$ ($\pm 1\,\text{nm}$), $E_n = -\tfrac{13{,}6\,\text{eV}}{n^2}$, kaikki viivat päättyvät samalle tasolle, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2{,}998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$
 **Kysytty:** vähimmäistaajuus $f_\text{ion}$ terahertseinä, jolla fotoni ionisoi atomin siitä tasosta, jolle siirtymät päättyvät

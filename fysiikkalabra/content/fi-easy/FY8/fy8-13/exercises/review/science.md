@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c46d79db763e3164
-Mode: translation
+CONTENT-HASH: ee80f33d60f803a1
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- fy8-13-L2-08 (fi-easy) compared with reviewed fi: same data, same options, same correct option, same answer.
-- Recomputed independently: order-of-magnitude choice: 12*6*9.0 h = 648 h, 3.0 uSv/h * 648 h = 1944 uSv = 1.9 mSv -> about 2 mSv; distractors 0.002 (/10^6), 0.03 (27 uSv, one flight), 0.2 (162 uSv, one month), 2000 (unit not converted) all recomputed.
-- solutions.md L2-08: principle, symbolic step, substitution, rounding and reasonableness agree with fi; answers.py note agrees.
-- fi-easy follows NOTES.md section 12 (shorter sentences, terms explained, same physics and numbers as fi).
-- check_i18n shows nothing for fy8-13; build.py fy8-13 succeeds. No translation edit was needed.
-- Hash c46d79db763e3164 at start and end.
+- Diff: the new exercise fy8-13-L2-09 and its answers.py line, plus "(esimerkkiaineisto)" removed from four table captions (work queue 8l). No data value changed, and each of those tasks' texts still calls its data esimerkkiaineisto, so no invented data is presented as measured.
+- Recomputed L2-09 c): H = Ḣt = 0,10 µSv/h · 8760 h = 876 µSv = 0,876 mSv → 0,88 mSv; answers.py gives 0,876 ✓. Relative tolerance 0,02 accepts 0,862–0,898 ✓. Two significant figures follow from 0,10 µSv/h; the 8760 h is exact ✓.
+- b): 4/5,9 = 67,8 % → 68 % ✓. d): 0,88/5,9 = 15 % ✓, 5,9 − 0,88 = 5,0 mSv ✓, external 0,45 + cosmic 0,33 = 0,78 mSv ✓.
+- Source facts against the verified list: 5,9 mSv, radon 4 mSv ("kaksi kolmasosaa"), other natural 1,1 mSv, medical 0,76 mSv, external 0,45 and cosmic 0,33 mSv, all ✓. Nothing else is attributed to the reports.
+- Physics of d): the meter sees external radiation; radon's alpha-emitting decay products irradiate the lungs from inside; K-40 and medical doses are internal or separate; dose rates differ between indoors, outdoors and places — right mechanisms.
+- Consistent with L2-05 (example data based on the same 5,9 mSv; medical rounded to 0,8 there).
+- Hash ee80f33d60f803a1 at the start and the end.

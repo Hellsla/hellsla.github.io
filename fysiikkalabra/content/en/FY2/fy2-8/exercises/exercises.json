@@ -349,6 +349,184 @@
       "answer": 6.6,
       "unit": "t",
       "tolerance": 0.03
+    },
+    {
+      "id": "fy2-8-L2-10",
+      "level": 2,
+      "text": "We look at how low-emission the electricity of different countries is. The chart of <a href=\"https://ourworldindata.org/grapher/electricity-mix?metric=carbon_intensity\" target=\"_blank\" rel=\"noopener\">Our World in Data: Electricity Mix</a> (accessed 16 November 2026) shows the lifecycle emission factor $e$ of electricity production (on the page ”lifecycle carbon intensity”, source Ember) and the shares of the production methods. The page <a href=\"https://www.fingrid.fi/sahkomarkkinat/sahkojarjestelman-tila/\" target=\"_blank\" rel=\"noopener\">Fingrid: Sähköjärjestelmän tila</a> (accessed 16 November 2026) shows the state of the Finnish electricity system in real time. The table holds the values read from the pages, so the task works even after the data on the pages has changed. You may compare the table with the pages' current view, but no answer depends on it.\n\na) Compare the electricity production of Finland, Sweden and Poland in $2025$. Which two production methods give the largest shares in each country?\n\nb) Calculate the ratio of the largest to the smallest emission factor $e$. How many times larger is the largest value?\n\nc) An appliance uses $5.0\\,\\text{kWh}$ of electrical energy. Calculate the calculated emission of this use in each of the three countries with the country's emission factor. Give the answer in kilograms.\n\nd) According to the Fingrid page, at 10:48 on 16 November 2026 the emission estimate of the electricity produced was $16\\,\\text{g/kWh}$ and that of the electricity consumed $15\\,\\text{g/kWh}$. Explain why the estimates for produced and consumed electricity can differ, and why Fingrid's figure differs so much from OWID's figure $57.47\\,\\text{g/kWh}$ for Finland in $2025$. Use the import, production, consumption and wind power readings of the table.\n\ne) Evaluate the claim: ”From the emission factor you can directly conclude which country's electricity production is the most environmentally friendly.”\n\nEnter in the answer box the emission of Poland's electricity from part c) in kilograms.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 2.9,
+      "unit": "kg",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Lifecycle emission factor of electricity production and the shares of production methods in 2025 (Our World in Data / Ember) and the state of the Finnish electricity system at 10:48 on 16 November 2026 (Fingrid), read 16 November 2026",
+        "columns": [
+          "Quantity",
+          "Finland",
+          "Sweden",
+          "Poland"
+        ],
+        "rows": [
+          [
+            "$e\\,(\\text{g/kWh})$, OWID",
+            "57.47",
+            "35.26",
+            "588.6"
+          ],
+          [
+            "Coal $(\\%)$",
+            "0.2",
+            "0",
+            "50.4"
+          ],
+          [
+            "Natural gas $(\\%)$",
+            "1.2",
+            "0.1",
+            "14.3"
+          ],
+          [
+            "Oil $(\\%)$",
+            "2.3",
+            "1.2",
+            "3.8"
+          ],
+          [
+            "Nuclear $(\\%)$",
+            "39.9",
+            "27.6",
+            "0"
+          ],
+          [
+            "Hydro $(\\%)$",
+            "15.1",
+            "40.0",
+            "1.0"
+          ],
+          [
+            "Wind $(\\%)$",
+            "27.4",
+            "22.8",
+            "14.2"
+          ],
+          [
+            "Solar $(\\%)$",
+            "1.2",
+            "2.6",
+            "11.3"
+          ],
+          [
+            "Bio $(\\%)$",
+            "12.6",
+            "5.8",
+            "4.9"
+          ],
+          [
+            "Produced, emission estimate $(\\text{g/kWh})$, Fingrid",
+            "16",
+            "–",
+            "–"
+          ],
+          [
+            "Consumed, emission estimate $(\\text{g/kWh})$, Fingrid",
+            "15",
+            "–",
+            "–"
+          ],
+          [
+            "Import − / export + $(\\text{MW})$, Fingrid",
+            "−210",
+            "–",
+            "–"
+          ],
+          [
+            "Production $(\\text{MW})$, Fingrid",
+            "11 341",
+            "–",
+            "–"
+          ],
+          [
+            "Consumption $(\\text{MW})$, Fingrid",
+            "11 603",
+            "–",
+            "–"
+          ],
+          [
+            "Wind $(\\text{MW})$, Fingrid",
+            "5571",
+            "–",
+            "–"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-8-L2-11",
+      "level": 2,
+      "text": "The amount of electricity produced by wind power varies with the weather. The page <a href=\"https://www.fingrid.fi/sahkomarkkinat/sahkojarjestelman-tila/\" target=\"_blank\" rel=\"noopener\">Fingrid: Sähköjärjestelmän tila</a> (accessed 16 November 2026) shows Finland's electricity production, consumption and the estimate of the carbon dioxide emission of the electricity consumed in $\\text{g/kWh}$. The table holds the readings at whole hours from the page's ”Today” view on 16 November 2026 (Finnish time). The page states that the estimate is based on emission factors of the production methods. You may compare the table with the page's current view, but no answer depends on it.\n\na) Calculate the share of wind power in Finland's electricity production at each of the three times. Compare the shares with the emission estimate $e$ of the electricity consumed.\n\nb) Calculate the calculated emission of consuming $10\\,\\text{kWh}$ of electricity at each time. Give the answer in grams.\n\nc) Calculate how much the wind power changed during the periods 01:00–08:00 and 08:00–10:00, and how much $e$ changed in each period per $1000\\,\\text{MW}$ change of wind power. Explain why the decrease of wind power did not raise $e$ equally in the two periods.\n\nd) Evaluate the benefits and limits of charging an electric car when $e$ is small. As a help, calculate how much smaller the emission of $10\\,\\text{kWh}$ is at 01:00 than at 10:00.\n\nEnter in the answer box the emission at 10:00 in grams from part b).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 150,
+      "unit": "g",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Finland's electricity system at whole hours on 16 November 2026 (Fingrid, Sähköjärjestelmän tila, view Today), read 16 November 2026",
+        "columns": [
+          "Quantity",
+          "at 01:00",
+          "at 08:00",
+          "at 10:00"
+        ],
+        "rows": [
+          [
+            "Wind $(\\text{MW})$",
+            "7639",
+            "6716",
+            "5885"
+          ],
+          [
+            "Hydro $(\\text{MW})$",
+            "1520",
+            "1920",
+            "1780"
+          ],
+          [
+            "Nuclear $(\\text{MW})$",
+            "about 2590",
+            "about 2590",
+            "about 2590"
+          ],
+          [
+            "Production $(\\text{MW})$",
+            "12 791",
+            "12 570",
+            "11 610"
+          ],
+          [
+            "Consumption $(\\text{MW})$",
+            "10 647",
+            "11 406",
+            "11 737"
+          ],
+          [
+            "Export + / import − $(\\text{MW})$",
+            "+2142",
+            "+1124",
+            "−152"
+          ],
+          [
+            "Emission estimate of the electricity consumed $e\\,(\\text{g/kWh})$",
+            "9.8",
+            "13.7",
+            "15.0"
+          ]
+        ]
+      }
     }
   ],
   "level3": [
@@ -448,6 +626,72 @@
           [
             "Wind power",
             "10"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fy2-8-L3-06",
+      "level": 3,
+      "text": "The lifecycle emission factor $e$ of electricity production tells how much carbon dioxide equivalent is produced per produced kilowatt-hour, when the fuel chain and the building of the power plants are included. The page <a href=\"https://ourworldindata.org/grapher/electricity-mix?metric=carbon_intensity\" target=\"_blank\" rel=\"noopener\">Our World in Data: Electricity Mix</a> (accessed 16 November 2026) shows the value for different countries in the years $1990$–$2025$ (source Ember). The table holds the values read from the page for three European countries in the years $2000$ and $2025$ and the shares of three production methods. Natural gas, oil, hydro, solar and bio are left out, so the shares do not add up to one hundred per cent. You may compare the table with the page's current view and choose other countries, but no answer depends on it.\n\na) Calculate the change $\\Delta e$ of each country's emission factor from $2000$ to $2025$ in $\\text{g/kWh}$. In which country was the change largest in absolute terms?\n\nb) Calculate the relative change of each country's emission factor as a percentage. In which country is the relative change largest?\n\nc) Use the production shares of the table to explain why the countries' emission factors and their changes differ. Why is Poland's emission factor still clearly the largest?\n\nd) Explain what lifecycle emissions mean. Evaluate why comparing electricity production methods only by the emissions produced at the power plant can be misleading.\n\ne) Evaluate the claim: ”According to the table, the emission factor has decreased steadily every year from $2000$ to $2025$ in Finland, Poland and Denmark.”\n\nEnter in the answer box the relative change of Finland in part b) as a percentage (a decrease as a negative number).",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": -77,
+      "unit": "%",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "Lifecycle emission factor of electricity production and the shares of three production methods (Our World in Data / Ember), read 16 November 2026",
+        "columns": [
+          "Country and year",
+          "$e\\,(\\text{g/kWh})$",
+          "Coal $(\\%)$",
+          "Nuclear $(\\%)$",
+          "Wind $(\\%)$"
+        ],
+        "rows": [
+          [
+            "Finland 2000",
+            "246.82",
+            "12.1",
+            "32.1",
+            "0.1"
+          ],
+          [
+            "Finland 2025",
+            "57.47",
+            "0.2",
+            "39.9",
+            "27.4"
+          ],
+          [
+            "Poland 2000",
+            "954.6",
+            "94.9",
+            "0",
+            "0"
+          ],
+          [
+            "Poland 2025",
+            "588.6",
+            "50.4",
+            "0",
+            "14.2"
+          ],
+          [
+            "Denmark 2000",
+            "627.89",
+            "46.5",
+            "0",
+            "11.8"
+          ],
+          [
+            "Denmark 2025",
+            "114.41",
+            "2.7",
+            "0",
+            "57.7"
           ]
         ]
       }

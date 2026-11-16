@@ -627,7 +627,7 @@ where $m$ is the mass of the particle ($\text{kg}$), $v$ its speed ($\text{m/s}$
 ```latex
 1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}
 ```
-because $1.602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} = 1.602 \cdot 10^{-19}\,\text{J}$. So $1\,\text{keV} = 1000\,\text{eV}$.
+because $$1.602 \cdot 10^{-19}\,\text{C} \cdot 1\,\text{V} = 1.602 \cdot 10^{-19}\,\text{J}$$. So $1\,\text{keV} = 1000\,\text{eV}$.
 
 ## Worked example
 An aurora electron starts almost from rest and travels toward a higher potential through a potential difference of $3.0\,\text{kV}$. What are the kinetic energy of the electron in electronvolts and in joules, and its speed? The charge of the electron is $-e$, where $e = 1.602 \cdot 10^{-19}\,\text{C}$, and its mass is $m = 9.109 \cdot 10^{-31}\,\text{kg}$. Forces other than the electric force are ignored.

@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1d9f83f79f46c28f
+CONTENT-HASH: 919dc85630902c80
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-6 toaster alt: 'hehkuvia vastuslankoja' — the wires are hard to see, the orange glow around the bread is what shows. Fix: 'Leivän ympärillä hehkuu oranssia valoa.'
+- none
 
 ## Checked
-batch delta review: opened the image file(s) and rendered preview/fi-easy/fy6-6.html at 1280 px (photo floats right, 320 px wide, credit line shown, no clipping) and 390 px (full column width, no horizontal overflow); Photo toaster-glowing: alt and caption match; glow visible, wires themselves barely visible.
+- All 1 proof sheet(s) of fi-easy-fy6-6-lesson (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
+
+## Scores
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4

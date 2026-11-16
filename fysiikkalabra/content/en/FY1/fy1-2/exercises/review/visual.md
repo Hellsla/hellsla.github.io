@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 59276c46695c8bf1
+CONTENT-HASH: 0d4d9d3c45daf76b
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] fy1-2-L2-08 model answer c) — "assures the long-term stability ... is of more use to modern science" reads as a close quotation without quotation marks — put it in quotation marks or paraphrase ("makes the unit stable in the long term and serves modern science better").
 
 ## Checked
-delta review 5d reflow, round 1: opened the 360 px captures 01, 05, 08-15 (10-14 on a fresh rebuild) (tiled into contact sheets, every capture of this part viewed); equals signs aligned, no row broken inside a number or unit, nothing clipped or scrolling, display formulas read naturally in their sentences. Captures 10-14 were cut by the sticky bar, so I rebuilt the page and viewed the sum and mean (774.5 g) and 4.498e9 blocks directly; all fit.
+- delta, round 1: L2-08 task and solution at 1280 px (open-exercises-L2 parts 9-11: task, links, answer row, every solution block). check_layout at 360 px for fy1-2 en: OK. No capture at 1024/1920 was made by me (check_layout covers them); no figures in the task.
+- Display chains aligned at "=", units upright, \cdot, decimal point in English, every quantity in LaTeX, links readable; set still reads as one.
 
 ## Scores
-illustrations 5 · typography 4 · English 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

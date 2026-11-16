@@ -336,6 +336,80 @@
           "feedback": "Virhe on rivillä 3. Ajan muutos on $8{,}0\\,\\text{min}$, ei $12{,}0\\,\\text{min}$. Siksi oikea kulmakerroin on $12{,}0\\,\\textsf{l} : 8{,}0\\,\\text{min} = 1{,}5\\,\\tfrac{\\textsf{l}}{\\text{min}}$. Rivin 4 tulos $1{,}0\\,\\tfrac{\\textsf{l}}{\\text{min}}$ on liian pieni, joten laskussa on virhe."
         }
       ]
+    },
+    {
+      "id": "fy1-4-L2-09",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://www.ilmatieteenlaitos.fi/havaintojen-lataus\" target=\"_blank\" rel=\"noopener\">Ilmatieteen laitos – Havaintojen lataus</a> (luettu 16. marraskuuta 2026)\n\nMiten ilman lämpötila muuttuu vuorokauden aikana? Ilmatieteen laitoksen sivulta voi ladata sääasemien havaintoja. Valitse yksi suomalainen sääasema. Hae sen ilman lämpötila yhden vuorokauden ajalta tunnin välein. Kirjoita muistiin sääaseman nimi ja päivämäärä. Jos et voi hakea havaintoja, käytä alla olevaa taulukkoa. Taulukon luvut eivät ole oikeita mittauksia. Ne on keksitty esimerkiksi, ja ne muistuttavat selkeää toukokuun vuorokautta sisämaassa.\n\na) Piirrä kuvaaja. Vaaka-akselille tulee aika ja pystyakselille lämpötila. Kirjoita akseleille suureet ja yksiköt.\n\nb) Etsi kuvaajasta aikaväli, jolla lämpötila muuttuu melkein tasaisesti. Silloin pisteet ovat melkein suoralla. Laske lämpötilan keskimääräinen muutosnopeus tällä aikavälillä. Muutosnopeus kertoo, kuinka monta astetta lämpötila muuttuu tunnissa.\n\nc) Tee valitulle aikavälille lineaarinen malli eli suoran yhtälö. Laske mallilla lämpötiloja ja vertaa niitä mittaustuloksiin. Tee vertailu valitulla aikavälillä ja sen ulkopuolella.\n\nd) Miksi mallilla ei voi ennustaa seuraavan vuorokauden lämpötilaa? Perustele.\n\nVastauskenttään tulee taulukon aineiston lämpötilan keskimääräinen muutosnopeus aikavälillä klo 6–12 yksikössä ${}^\\circ\\text{C/h}$.",
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "answer": 1.517,
+      "unit": "°C/h",
+      "tolerance": 0.03,
+      "data": {
+        "caption": "Ilman lämpötila vuorokauden aikana (keksitty esimerkkiaineisto)",
+        "columns": [
+          "$t\\,(\\text{h})$",
+          "$T\\,({}^\\circ\\text{C})$"
+        ],
+        "rows": [
+          [
+            "0",
+            "8.1"
+          ],
+          [
+            "2",
+            "6.9"
+          ],
+          [
+            "4",
+            "6.0"
+          ],
+          [
+            "6",
+            "7.2"
+          ],
+          [
+            "8",
+            "10.4"
+          ],
+          [
+            "10",
+            "13.5"
+          ],
+          [
+            "12",
+            "16.3"
+          ],
+          [
+            "14",
+            "17.8"
+          ],
+          [
+            "16",
+            "18.1"
+          ],
+          [
+            "18",
+            "16.4"
+          ],
+          [
+            "20",
+            "13.2"
+          ],
+          [
+            "22",
+            "10.6"
+          ],
+          [
+            "24",
+            "9.3"
+          ]
+        ]
+      }
     }
   ],
   "level3": [

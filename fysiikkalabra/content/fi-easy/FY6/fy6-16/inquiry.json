@@ -30,15 +30,15 @@
         {
           "text": "Noin $60\\,\\text{kWh}$, koska energia on jännite kertaa varaus.",
           "correct": true,
-          "feedback": "Oikein. $W = UQ = 400\\,\\text{V} \\cdot 150\\,\\text{Ah} = 60\\,000\\,\\text{Wh} = 60\\,\\text{kWh}$ (luku *Akut ja latauspiiri*). Tänään lasketaan, kuinka kauan tällaisen akun lataaminen kestää kotona. Lasketaan myös, mitä lataus vaatii kodin sähköjärjestelmältä."
+          "feedback": "Oikein. $$\\begin{aligned} W &= UQ \\\\ &= 400\\,\\text{V} \\cdot 150\\,\\text{Ah} \\\\ &= 60\\,000\\,\\text{Wh} \\\\ &= 60\\,\\text{kWh} \\end{aligned}$$ (luku *Akut ja latauspiiri*). Tänään lasketaan, kuinka kauan tällaisen akun lataaminen kestää kotona. Lasketaan myös, mitä lataus vaatii kodin sähköjärjestelmältä."
         },
         {
           "text": "Noin $150\\,\\text{kWh}$, koska kapasiteetti kertoo akun energian.",
-          "feedback": "Kapasiteetti on varaus, ei energia. Ampeeritunti on virta kertaa aika. Energia saadaan, kun varaus kerrotaan jännitteellä: $W = UQ = 400\\,\\text{V} \\cdot 150\\,\\text{Ah} = 60\\,\\text{kWh}$ (luku *Akut ja latauspiiri*)."
+          "feedback": "Kapasiteetti on varaus, ei energia. Ampeeritunti on virta kertaa aika. Energia saadaan, kun varaus kerrotaan jännitteellä: $$\\begin{aligned} W &= UQ \\\\ &= 400\\,\\text{V} \\cdot 150\\,\\text{Ah} \\\\ &= 60\\,\\text{kWh} \\end{aligned}$$ (luku *Akut ja latauspiiri*)."
         },
         {
           "text": "Noin $2{,}7\\,\\text{kWh}$, koska energia on jännite jaettuna varauksella.",
-          "feedback": "Jännite kertoo energian yhtä varausyksikköä kohti. Siksi energia saadaan kertomalla, ei jakamalla: $W = UQ = 400\\,\\text{V} \\cdot 150\\,\\text{Ah} = 60\\,\\text{kWh}$ (luku *Akut ja latauspiiri*)."
+          "feedback": "Jännite kertoo energian yhtä varausyksikköä kohti. Siksi energia saadaan kertomalla, ei jakamalla: $$\\begin{aligned} W &= UQ \\\\ &= 400\\,\\text{V} \\cdot 150\\,\\text{Ah} \\\\ &= 60\\,\\text{kWh} \\end{aligned}$$ (luku *Akut ja latauspiiri*)."
         }
       ]
     },
@@ -87,7 +87,7 @@
       "choices": [
         {
           "text": "Ei mitään, koska jokainen laite on kytketty omaan ryhmäänsä ja omalle sulakkeelleen.",
-          "feedback": "Ryhmäsulakkeet suojaavat kukin oman ryhmänsä johtoa. Kaikkien ryhmien virrat kulkevat kuitenkin samojen pääsulakkeiden kautta. Taulukon mukaan vaiheessa $\\text{L}_1$ kulkee $13{,}0\\,\\text{A} + 16\\,\\text{A} + 8{,}7\\,\\text{A} \\approx 37{,}7\\,\\text{A}$. Se on paljon yli $25\\,\\text{A}$."
+          "feedback": "Ryhmäsulakkeet suojaavat kukin oman ryhmänsä johtoa. Kaikkien ryhmien virrat kulkevat kuitenkin samojen pääsulakkeiden kautta. Taulukon mukaan vaiheessa $\\text{L}_1$ kulkee $$\\begin{aligned} &13{,}0\\,\\text{A} + 16\\,\\text{A} + 8{,}7\\,\\text{A} \\\\ &\\approx 37{,}7\\,\\text{A} \\end{aligned}$$. Se on paljon yli $25\\,\\text{A}$."
         },
         {
           "text": "Virta ylittää $25\\,\\text{A}$ jokaisessa vaiheessa, joten pääsulake voi palaa, jos kuormanhallintaa ei ole.",
@@ -165,7 +165,7 @@
             "feedback": "Laskit kaikkien laitteiden tehon yhden $230\\,\\text{V}$:n vaiheen kautta. Kolmivaiheiset laitteet jakavat tehonsa kolmeen vaihejohtimeen. Niiden virta yhdessä vaiheessa on siis $P : (3U)$."
           }
         ],
-        "solution": "**Annettu:** kiuas $P_\\text{k} = 9{,}0\\,\\text{kW}$ ja latausasema $P_\\text{a} = 11\\,\\text{kW}$ kolmessa vaiheessa, vedenkeitin $P_\\text{v} = 2{,}0\\,\\text{kW}$ vaiheessa $\\text{L}_1$, $U = 230\\,\\text{V}$\n\n**Kysytty:** vaihejohtimen $\\text{L}_1$ virta $I_1$ ampeereina\n\n**Periaate:** Kolmivaiheinen laite ottaa jokaisesta vaiheesta saman virran, joten sen teho on $P = 3UI$. Yksivaiheisen laitteen teho on $P = UI$. Laitteet saavat virtansa saman vaihejohtimen kautta, joten virrat lasketaan yhteen (luku *Kirchhoffin lait ja potentiaali virtapiirissä*).\n\n**Kaava:** $I_1 = \\dfrac{P_\\text{k}}{3U} + \\dfrac{P_\\text{a}}{3U} + \\dfrac{P_\\text{v}}{U}$\n\n**Muunnokset:** $P_\\text{k} = 9000\\,\\text{W}$, $P_\\text{a} = 11\\,000\\,\\text{W}$ ja $P_\\text{v} = 2000\\,\\text{W}$; $3U = 690\\,\\text{V}$\n\n**Sijoitus:** $I_1 = \\dfrac{9000\\,\\text{W}}{690\\,\\text{V}} + \\dfrac{11\\,000\\,\\text{W}}{690\\,\\text{V}} + \\dfrac{2000\\,\\text{W}}{230\\,\\text{V}} = 13{,}04\\,\\text{A} + 15{,}94\\,\\text{A} + 8{,}70\\,\\text{A} = 37{,}7\\,\\text{A}$\n\n**Vastaus:** $38\\,\\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tehoissa $9{,}0\\,\\text{kW}$ ja $11\\,\\text{kW}$.\n\n**Järkevyys:** Kiuas ja asema ottavat yhdessä $20\\,\\text{kW}$ kolmesta vaiheesta. Se on noin $6{,}7\\,\\text{kW}$ vaihetta kohti eli noin $29\\,\\text{A}$. Keitin lisää noin $9\\,\\text{A}$. Virta on noin puolitoistakertainen pääsulakkeen $25\\,\\text{A}$:iin verrattuna. Ilman kuormanhallintaa sulake voisi siis palaa."
+        "solution": "**Annettu:** kiuas $P_\\text{k} = 9{,}0\\,\\text{kW}$ ja latausasema $P_\\text{a} = 11\\,\\text{kW}$ kolmessa vaiheessa, vedenkeitin $P_\\text{v} = 2{,}0\\,\\text{kW}$ vaiheessa $\\text{L}_1$, $U = 230\\,\\text{V}$\n\n**Kysytty:** vaihejohtimen $\\text{L}_1$ virta $I_1$ ampeereina\n\n**Periaate:** Kolmivaiheinen laite ottaa jokaisesta vaiheesta saman virran, joten sen teho on $P = 3UI$. Yksivaiheisen laitteen teho on $P = UI$. Laitteet saavat virtansa saman vaihejohtimen kautta, joten virrat lasketaan yhteen (luku *Kirchhoffin lait ja potentiaali virtapiirissä*).\n\n**Kaava:** $I_1 = \\dfrac{P_\\text{k}}{3U} + \\dfrac{P_\\text{a}}{3U} + \\dfrac{P_\\text{v}}{U}$\n\n**Muunnokset:** $P_\\text{k} = 9000\\,\\text{W}$, $P_\\text{a} = 11\\,000\\,\\text{W}$ ja $P_\\text{v} = 2000\\,\\text{W}$; $3U = 690\\,\\text{V}$\n\n**Sijoitus:** $$\\begin{aligned} I_1 &= \\dfrac{9000\\,\\text{W}}{690\\,\\text{V}} + \\dfrac{11\\,000\\,\\text{W}}{690\\,\\text{V}} \\\\ &+ \\dfrac{2000\\,\\text{W}}{230\\,\\text{V}} \\\\ &= 13{,}04\\,\\text{A} + 15{,}94\\,\\text{A} + 8{,}70\\,\\text{A} \\\\ &= 37{,}7\\,\\text{A} \\end{aligned}$$\n\n**Vastaus:** $38\\,\\text{A}$. Vastauksessa on kaksi merkitsevää numeroa, kuten tehoissa $9{,}0\\,\\text{kW}$ ja $11\\,\\text{kW}$.\n\n**Järkevyys:** Kiuas ja asema ottavat yhdessä $20\\,\\text{kW}$ kolmesta vaiheesta. Se on noin $6{,}7\\,\\text{kW}$ vaihetta kohti eli noin $29\\,\\text{A}$. Keitin lisää noin $9\\,\\text{A}$. Virta on noin puolitoistakertainen pääsulakkeen $25\\,\\text{A}$:iin verrattuna. Ilman kuormanhallintaa sulake voisi siis palaa."
       }
     },
     {
@@ -219,17 +219,17 @@
       "prompt": "Opiskelija laskee, kuinka paljon energiaa verkosta otetaan. Akkuun pitää varastoida $38{,}4\\,\\text{kWh}$, ja latauksen hyötysuhde on $90\\,\\%$:\n\n$$\\begin{aligned} W_\\text{verkko} &= \\eta W_\\text{akku} \\\\ &= 0{,}90 \\cdot 38{,}4\\,\\text{kWh} \\\\ &\\approx 34{,}6\\,\\text{kWh} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Hyötysuhteella pitää jakaa: $38{,}4\\,\\text{kWh} : 0{,}90 \\approx 42{,}7\\,\\text{kWh}$.",
+          "text": "Hyötysuhteella pitää jakaa: $$\\begin{aligned} &38{,}4\\,\\text{kWh} : 0{,}90 \\\\ &\\approx 42{,}7\\,\\text{kWh} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Oikein. Hyötysuhde on $\\eta = W_\\text{akku} : W_\\text{verkko}$, joten $W_\\text{verkko} = W_\\text{akku} : \\eta$. Virheen olisi voinut huomata siitä, että tulos oli pienempi kuin akkuun menevä energia. Häviöiden vuoksi verkosta pitää kuitenkin ottaa enemmän."
         },
         {
           "text": "Hyötysuhde pitää ensin muuntaa: $90\\,\\%$ on $90$, ei $0{,}90$.",
-          "feedback": "Prosentti tarkoittaa sadasosaa, joten $90\\,\\% = 0{,}90$ on oikein. Kertominen luvulla $90$ antaisi yli $3000\\,\\text{kWh}$, mikä on mahdotonta. Virhe on siinä, että hyötysuhteella kerrottiin. Oikein on $W_\\text{verkko} = 38{,}4\\,\\text{kWh} : 0{,}90 \\approx 42{,}7\\,\\text{kWh}$."
+          "feedback": "Prosentti tarkoittaa sadasosaa, joten $90\\,\\% = 0{,}90$ on oikein. Kertominen luvulla $90$ antaisi yli $3000\\,\\text{kWh}$, mikä on mahdotonta. Virhe on siinä, että hyötysuhteella kerrottiin. Oikein on $$\\begin{aligned} W_\\text{verkko} &= 38{,}4\\,\\text{kWh} : 0{,}90 \\\\ &\\approx 42{,}7\\,\\text{kWh} \\end{aligned}$$."
         },
         {
           "text": "Laskussa ei ole virhettä, koska häviöt pienentävät energiaa.",
-          "feedback": "Häviöt pienentävät akkuun päätyvää energiaa, eivät verkosta otettua energiaa. Verkosta otetaan akkuun menevä energia ja häviöt yhteensä. Siksi $W_\\text{verkko} = W_\\text{akku} : \\eta \\approx 42{,}7\\,\\text{kWh}$."
+          "feedback": "Häviöt pienentävät akkuun päätyvää energiaa, eivät verkosta otettua energiaa. Verkosta otetaan akkuun menevä energia ja häviöt yhteensä. Siksi $$\\begin{aligned} W_\\text{verkko} &= W_\\text{akku} : \\eta \\\\ &\\approx 42{,}7\\,\\text{kWh} \\end{aligned}$$."
         }
       ]
     },
@@ -257,7 +257,7 @@
           "feedback": "Kerroit resistanssin virralla, jolloin sait jännitteen $RI$ voltteina. Teho lasketaan Joulen lain mukaan: $P = RI^2 = 0{,}34\\,\\Omega \\cdot (16\\,\\text{A})^2 \\approx 87\\,\\text{W}$."
         }
       ],
-      "solution": "**Annettu:** kaapelin pituus $l = 25\\,\\text{m}$, poikkipinta-ala $A = 2{,}5\\,\\text{mm}^2$, virta $I = 16\\,\\text{A}$, kuparin resistiivisyys $\\rho = 1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$\n\n**Kysytty:** kaapeliin tuleva lämpenemisteho $P_\\text{johto}$ watteina\n\n**Periaate:** Kaapelin kuparijohtimet ovat vastus, jonka läpi kulkee latausvirta. Virta kulkee meno- ja paluujohtimessa, joten kuparin pituus on $2l$. Joulen lain mukaan vastukseen tuleva teho on $RI^2$. Teho muuttuu kaapelin sisäenergiaksi, joka siirtyy lämpönä ympäristöön.\n\n**Kaava:** $P_\\text{johto} = RI^2$ ja $R = \\rho \\dfrac{2l}{A}$, joten $P_\\text{johto} = \\rho \\dfrac{2l}{A} I^2$\n\n**Muunnokset:** $A = 2{,}5\\,\\text{mm}^2 = 2{,}5 \\cdot (10^{-3}\\,\\text{m})^2 = 2{,}5 \\cdot 10^{-6}\\,\\text{m}^2$\n\n**Sijoitus:** $R = 1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m} \\cdot \\dfrac{2 \\cdot 25\\,\\text{m}}{2{,}5 \\cdot 10^{-6}\\,\\text{m}^2} = 0{,}34\\,\\Omega$ ja $P_\\text{johto} = 0{,}34\\,\\Omega \\cdot (16\\,\\text{A})^2 = 0{,}34\\,\\Omega \\cdot 256\\,\\text{A}^2 = 87{,}0\\,\\text{W}$\n\n**Vastaus:** $87\\,\\text{W}$. Vastauksessa on kaksi merkitsevää numeroa, kuten resistiivisyydessä $1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$ ja poikkipinta-alassa $2{,}5\\,\\text{mm}^2$.\n\n**Järkevyys:** Teho on $87\\,\\text{W} : 3680\\,\\text{W} \\approx 2{,}4\\,\\%$ latausaseman tehosta. Se jakautuu $25\\,\\text{m}$:n matkalle, noin $3{,}5\\,\\text{W}$ metriä kohti. Kiinteä kaapeli lämpenee siis vain vähän. Puolella virralla teho olisi neljäsosa, noin $22\\,\\text{W}$."
+      "solution": "**Annettu:** kaapelin pituus $l = 25\\,\\text{m}$, poikkipinta-ala $A = 2{,}5\\,\\text{mm}^2$, virta $I = 16\\,\\text{A}$, kuparin resistiivisyys $\\rho = 1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$\n\n**Kysytty:** kaapeliin tuleva lämpenemisteho $P_\\text{johto}$ watteina\n\n**Periaate:** Kaapelin kuparijohtimet ovat vastus, jonka läpi kulkee latausvirta. Virta kulkee meno- ja paluujohtimessa, joten kuparin pituus on $2l$. Joulen lain mukaan vastukseen tuleva teho on $RI^2$. Teho muuttuu kaapelin sisäenergiaksi, joka siirtyy lämpönä ympäristöön.\n\n**Kaava:** $P_\\text{johto} = RI^2$ ja $R = \\rho \\dfrac{2l}{A}$, joten $P_\\text{johto} = \\rho \\dfrac{2l}{A} I^2$\n\n**Muunnokset:** $A = 2{,}5\\,\\text{mm}^2 = 2{,}5 \\cdot (10^{-3}\\,\\text{m})^2 = 2{,}5 \\cdot 10^{-6}\\,\\text{m}^2$\n\n**Sijoitus:** $$\\begin{aligned} R &= 1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m} \\\\ &\\cdot \\dfrac{2 \\cdot 25\\,\\text{m}}{2{,}5 \\cdot 10^{-6}\\,\\text{m}^2} \\\\ &= 0{,}34\\,\\Omega \\end{aligned}$$ ja $P_\\text{johto} = 0{,}34\\,\\Omega \\cdot (16\\,\\text{A})^2 = 0{,}34\\,\\Omega \\cdot 256\\,\\text{A}^2 = 87{,}0\\,\\text{W}$\n\n**Vastaus:** $87\\,\\text{W}$. Vastauksessa on kaksi merkitsevää numeroa, kuten resistiivisyydessä $1{,}7 \\cdot 10^{-8}\\,\\Omega\\cdot\\text{m}$ ja poikkipinta-alassa $2{,}5\\,\\text{mm}^2$.\n\n**Järkevyys:** Teho on $87\\,\\text{W} : 3680\\,\\text{W} \\approx 2{,}4\\,\\%$ latausaseman tehosta. Se jakautuu $25\\,\\text{m}$:n matkalle, noin $3{,}5\\,\\text{W}$ metriä kohti. Kiinteä kaapeli lämpenee siis vain vähän. Puolella virralla teho olisi neljäsosa, noin $22\\,\\text{W}$."
     },
     {
       "id": "harjoitukset",

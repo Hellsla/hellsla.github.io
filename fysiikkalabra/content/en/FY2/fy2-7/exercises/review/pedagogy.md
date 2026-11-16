@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: f1594abe34d25f92
-SCOPE: delta added-exercise from 308374a464834f8a base 611fb7d5c174
-Mode: delta
-Round: 2
+CONTENT-HASH: 0f91b2baf35388df
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- Earlier Polish remains recorded; the change adds none.
 
 ## Checked
-- L1-09 solution: the note that 1 kWh = 3.6 MJ is exact is correct and consistent with the 4 % tolerance; no numbers changed (72 MJ).
+- Delta: one solution (L2-10 Lisäksi a) now states the difference as a words-plus-formula split; numbers unchanged (262 - 210 = 52 MW, 0,45 %).
+- Pure layout edit for 360 px; the pedagogy of the tasks is unchanged from the earlier PASS.

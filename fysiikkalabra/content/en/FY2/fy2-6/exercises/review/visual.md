@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e70ffa37157788e4
-SCOPE: delta reflow from ff05584a8eb5bd9a base b5600a63ddae
+CONTENT-HASH: a72da2feb382aa9f
+SCOPE: delta numbers from e70ffa37157788e4 base 6ecef1197865
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md, the Δm chain (820 g/kWh − 12 g/kWh) · 2.0 · 10^9 kWh — the number in powers of ten is split across two rows ("· 2.0" / "· 10^9 kWh"); keep the term whole as the approved form asks.
-- [Minor] solutions.md, N = 1.6 · 10^6 kW · 8760 h : 5000 kWh — rows beginning ": 5000 kWh" read as fragments but are legible and aligned; acceptable.
+(none)
 
 ## Checked
-- Opened reflow-exercises-1 to -4.png (390 px, solutions open) of fy2-6: every re-broken block.
-- Rows legible, equals signs in one column, nothing clipped, units upright with thin spaces, decimal point, no red KaTeX source; surrounding sentences read naturally. Other captures not opened (the diff touches only chains).
+- Delta review. Changed line is the single ratio $4.7 : 1.7 \approx 2.8$ in 6-L3-02; judged from the source and the fy2-6-open-exercises-L3-1280-4.png context (display boxes in this exercise render cleanly). I did not locate the exact changed line in a capture.
+- Hash at start and end: a72da2feb382aa9f.
 
 ## Scores
-illustrations n/a · typography 4 · English 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

@@ -73,6 +73,8 @@ jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen ja align-muotoon (opettaja 2026-11-15)
 
+FY6 tehty (PR #627): 565 riviä pois listalta; 29 jää (sulkeiden tai lainausmerkkien sisällä olevat kaavat, liian leveät yksittäiset `\dfrac`- ja `\sqrt`-kaavat ja fy6-2:n taulukon mittarin tarkkuusmerkinnät). Rivi alkaa vain relaatiosta, plus- tai miinusmerkistä tai kokonaisten suureiden välistä.
+
 FY9 tehty (PR #611): 1001 riviä pois listalta; 84 jää (16 liian leveää yksittäistä `\dfrac`- tai `\sqrt`-kaavaa ja 12 sulkeiden, lainausmerkkien tai sijapäätteen sisällä olevaa kaavaa, jotka jäävät tekstin sisään).
 
 FY1 tehty (PR #619): 199 riviä pois listalta; 3 jää (fy1-3:n keskiarvon `\dfrac`, jonka osoittajan summa on yksinään ruutua leveämpi).
@@ -80,6 +82,8 @@ FY1 tehty (PR #619): 199 riviä pois listalta; 3 jää (fy1-3:n keskiarvon `\dfr
 FY7 tehty (PR #633, kohdan 19 FY7:n kanssa): luvut 1–16 ja esimerkkikoe kolmella kielellä; 444 riviä pois listalta (tarkistettu site/:stä 352, 360 ja 390 px:llä); 51 jää (Sovella-sarjan 18 riviä: sarja palautettiin mainin muotoon, koska sen juurikaava `\sqrt{\dfrac{…}{…}}` ei jakaudu riveiksi ilman sisältömuutosta; fy7-2:n leveä `\dfrac`; sekä ne en- ja fi-easy-tehtäväsarjojen rivit, joiden sivulla näkyy yhä vanhempi katselmoitu versio, koska niiden tiedekatselmointi oli vanhentunut jo mainissa: en fy7-4, fy7-6, fy7-10, fy7-12, fy7-16, fi-easy fy7-6, fy7-12). Uudet huomiot: tehtävätekstissä (`p.task`) display-kaavan perässä oleva välimerkki ei siirry kaavaan, joten lainauksen tai sulkeiden sisäinen ketju jaetaan relaation kohdalta peräkkäisiksi tekstin sisäisiksi kaavoiksi (`$a = b$ $= c$`, reflow); jo mainissa `aligned`-muotoisia monen yhtälön lohkoja ei saa yhdistää.
 
 FY2 tehty (PR #610): 399 riviä pois listalta (luvut, Sovella ja Esimerkkikoe kolmella kielellä); 53 jää (47 vanhaa inline-kaavaa, jotka CI löysi 360 px:llä, ja kahden tehtävätekstin opiskelijan laskun 6 riviä, koska tehtävätekstissä välimerkki jäisi display-kaavan jälkeen yksin).
+
+FY3 tehty (PR #628): 876 riviä pois listalta; 23 jää (fy3-10:n vihjeen liian leveä `\dfrac`, fy3-4:n sulkeissa oleva kaava, fy3-5:n ja fy3-12:n lainattu opiskelijan lasku, fy3-5:n kolme inquiry-kaavaa, joiden rivitys olisi vaatinut täyden tiedekatselmoinnin, sekä fy3-15:n kertausvalinnan palautteen kaava: `test_inquiry.py` vertaa palautteen alkua lähteeseen eikä tunnista näyttökaavaan siirtyvää välimerkkiä).
 
 Kohdan 5b tarkistus löysi mainista noin 4 800 kaavaa, jotka leikkautuvat puhelimella (`docs/clipped-formulas.tsv`).
 Esimerkki: fy2-3, Esimerkki 2, jossa tekstin sisällä oleva $E = 1500 \cdot 3{,}0\,\text{kWh} = 4500\,\text{kWh}$
@@ -476,6 +480,7 @@ kurssin rivit. FY9:n lepokitkan nimitykset ("suurin lepokitka") yhtenäistetää
 Kitkan ja energian konseptikatselmoinnin löydökset (8m:ää vanhempia): `docs/audits/2026-11-15-kitka-konseptikatselmointi.md`.
 FY9 tehty: claude/fy9-oikoluku-aineisto (PR #626); samassa PR:ssä kohdan 19 aineistotehtävät FY9-A1…A5 (fy9-ympyraliike-s7, fy9-magnetismi-valo-s7, fy9-moderni-s7, fy9-energia-s7, fy9-kaasut-s7).
 FY4 tehty: claude/fy4-oikoluku-aineisto (PR #625); samassa PR:ssä kohdan 19 aineistotehtävät FY4-A1…A5. Lähteestä tarkistamatta: fy4-5 les:316 (YTL) ja fy4-11 les:290 (OTI).
+FY2 tehty: claude/fy2-oikoluku-aineisto (PR #632); samassa PR:ssä kohdan 19 aineistotehtävät FY2-A1…A5. Kaikki kurssit tehty; jäljellä vain `docs/physics-phrases-known.tsv`:n rivit (FY5, FY6, FY9).
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9 (opettaja 2026-11-16)
 
@@ -483,12 +488,17 @@ Toimeksianto sanatarkasti: `docs/audits/2026-11-16-aineistotehtavat.md` (viisi t
 FY9-A5, lähdelinkit tarkistetaan, malliratkaisut, kolme kieltä). Tehtävät lisätään nykyiseen tehtävärakenteeseen sopivan
 luvun soveltaviksi (taso 2–3, `kind` aineisto), FY9:ssä kertauskokonaisuuteen tai yksiköihin. Lähteiden palvelimet ovat
 ympäristön sallituissa (16.11).
+FY8 tehty: FY8-A1…A5 (PR #635, oma PR): fy8-3-L2-09, fy8-13-L2-09, fy8-12-L2-08, fy8-9-L2-08, fy8-1-L2-10. PhET Photoelectric (A5) toimii selaimessa CheerpJ:llä; sen arvot luettiin simulaation omasta ohjelmasta (photoelectric_all.jar), koska CheerpJ:n palvelin ei ole ympäristön sallituissa.
 PR:ien yhdistäminen (opettaja 2026-11-16: "jos saat yhdisteltyä PR niin tee, jos vaarana että homma sotkeutuu älä tee"):
 kohta 19 tehdään samassa PR:ssä saman kurssin vielä aloittamattoman työn kanssa (FY4, FY5, FY9 ja FY2: kohta 18; FY3, FY6
 ja FY7: kohta 5d), ei koskaan jo katselmoitavana olevaan PR:ään; FY1 ja FY8 omana PR:nään kurssin nykyisen PR:n jälkeen.
 FY5 tehty: FY5-A1…A5 (PR #624, kohdan 18 FY5:n kanssa): fy5-6-L2-09, fy5-12-L2-10, fy5-14-L2-09, fy5-17-L2-10, fy5-16-L2-10.
 FY9 tehty: FY9-A1…A5 (PR #626, kohdan 18 FY9:n kanssa).
+FY6 tehty: FY6-A1…A5 (PR #627, kohdan 5d FY6:n kanssa): fy6-3-L2-08, fy6-7-L2-09, fy6-15-L2-09, fy6-9-L2-09, fy6-13-L2-09. Opettaja avaa Tukesin kaksi linkkiä (A3, A4) selaimessa ennen yhdistämistä: sivusto ei vastaa automaattisiin hakuihin.
 FY4 tehty: FY4-A1…A5 (PR #625, kohdan 18 FY4:n kanssa): fy4-11-L2-10, fy4-7-L2-10, fy4-9-L2-09, fy4-10-L2-10, fy4-8-L2-10.
+FY2 tehty: FY2-A1…A5 (PR #632, kohdan 18 FY2:n kanssa): fy2-8-L2-10 (A1), fy2-7-L2-10 (A2), fy2-8-L3-06 (A3), fy2-3-L2-09 (A4), fy2-8-L2-11 (A5). Electricity Maps korvattu OWID:lla ja Fingridillä (`docs/audits/2026-11-16-fy2-aineistot.md`).
+FY3 tehty: FY3-A1…A5 (PR #628, kohdan 5d FY3:n kanssa): fy3-9-L2-10, fy3-8-L2-10, fy3-11-L2-10, fy3-6-L2-10, fy3-7-L2-10.
+FY1 tehty: FY1-A1…A5 (PR #634, oma PR): fy1-7-L2-09, fy1-4-L2-09, fy1-3-L2-09, fy1-2-L2-08, fy1-7-L2-10. A2:n Ilmatieteen laitoksen avoin rajapinta (opendata.fmi.fi) ei ole ympäristön sallituissa: tehtävä ohjaa hakemaan oman aineiston, ja varalla on merkitty keksitty esimerkkitaulukko.
 FY7 tehty: FY7-A1…A5 (PR #633, kohdan 5d FY7:n kanssa): fy7-8-L2-10 (A1), fy7-9-L2-10 (A2), fy7-9-L2-11 (A3), fy7-7-L2-08 (A4), fy7-2-L2-10 (A5). Lähteet tarkistettu 16.11.; A5:n avaruussäädiagrammi piirretään JavaScriptillä eikä sen arvoja voinut lukea, joten tehtävässä on merkitty esimerkkitaulukko; A1:n aineisto ei kerro, miksi jännitteet ovat korkeita, joten a) kysyy vain sen, mitä sivulla on.
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)

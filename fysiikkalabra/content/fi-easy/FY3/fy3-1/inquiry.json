@@ -276,16 +276,16 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Opiskelija laskee $500\\,\\text{g}$:n jauhopussin painon Maassa näin: $G = mg = 500 \\cdot 9{,}81\\,\\text{m/s}^2 = 4905\\,\\text{N}$. Missä on virhe?",
+      "prompt": "Opiskelija laskee $500\\,\\text{g}$:n jauhopussin painon Maassa näin: $$\\begin{aligned} G &= mg \\\\ &= 500 \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &= 4905\\,\\text{N} \\end{aligned}$$. Missä on virhe?",
       "choices": [
         {
-          "text": "Massa pitää muuttaa kilogrammoiksi: $G = 0{,}500\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 4{,}91\\,\\text{N}$.",
+          "text": "Massa pitää muuttaa kilogrammoiksi: $$\\begin{aligned} G &= 0{,}500\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &\\approx 4{,}91\\,\\text{N} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Oikein. Paino tulee newtoneina vain, kun massa on kilogrammoina, sillä $1\\,\\text{N} = 1\\,\\text{kg}\\cdot\\text{m/s}^2$. Järkevyystarkistus kertoo saman: puolen kilon pussin paino on noin $5\\,\\text{N}$, ei lähes $5000\\,\\text{N}$."
         },
         {
           "text": "Paino pitäisi ilmoittaa kilogrammoina, eli vastaus on $500\\,\\text{g}$.",
-          "feedback": "Paino on voima, ja voiman yksikkö on newton. Kilogramma on massan yksikkö. Pussin massa on $500\\,\\text{g}$, mutta sen paino on $0{,}500\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 4{,}91\\,\\text{N}$."
+          "feedback": "Paino on voima, ja voiman yksikkö on newton. Kilogramma on massan yksikkö. Pussin massa on $500\\,\\text{g}$, mutta sen paino on $$\\begin{aligned} &0{,}500\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &\\approx 4{,}91\\,\\text{N} \\end{aligned}$$."
         },
         {
           "text": "Putoamiskiihtyvyyden pitäisi olla $1{,}62\\,\\text{m/s}^2$.",
@@ -310,7 +310,7 @@
       "hints": [
         "Mikä laatikosta pysyy samana, kun se tuodaan Kuusta Maahan? Voitko laskea sen Kuun lukemasta?",
         "Massa saadaan Kuun painosta, $m = \\dfrac{G_\\text{Kuu}}{g_\\text{Kuu}}$, ja Maan paino samalla massalla, $G_\\text{Maa} = m g_\\text{Maa}$.",
-        "$m = \\dfrac{12\\,\\text{N}}{1{,}62\\,\\text{m/s}^2} \\approx 7{,}41\\,\\text{kg}$, joten $G_\\text{Maa} = 7{,}41\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2$."
+        "$m = \\dfrac{12\\,\\text{N}}{1{,}62\\,\\text{m/s}^2} \\approx 7{,}41\\,\\text{kg}$, joten $$\\begin{aligned} G_\\text{Maa} &= 7{,}41\\,\\text{kg} \\\\ &\\cdot 9{,}81\\,\\text{m/s}^2 \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -323,7 +323,7 @@
         },
         {
           "value": 7.41,
-          "feedback": "Tämä on laatikon massa kilogrammoina, ei sen paino. Kerro vielä Maan putoamiskiihtyvyydellä: $G_\\text{Maa} = 7{,}41\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2$."
+          "feedback": "Tämä on laatikon massa kilogrammoina, ei sen paino. Kerro vielä Maan putoamiskiihtyvyydellä: $$\\begin{aligned} G_\\text{Maa} &= 7{,}41\\,\\text{kg} \\\\ &\\cdot 9{,}81\\,\\text{m/s}^2 \\end{aligned}$$."
         }
       ],
       "solution": "**Annettu:** Kuun lukema eli paino $G_\\text{Kuu} = 12\\,\\text{N}$; taulukosta $g_\\text{Kuu} = 1{,}62\\,\\text{m/s}^2$ ja $g_\\text{Maa} = 9{,}81\\,\\text{m/s}^2$\n\n**Kysytty:** laatikon paino Maassa $G_\\text{Maa}$ newtoneina\n\n**Periaate:** Voimamittari näyttää painon. Paino on suoraan verrannollinen massaan: $G = m g$. Laatikko tuodaan sellaisenaan. Siksi sen massa pysyy samana ja vain $g$ vaihtuu. Massa yhdistää Kuun lukeman Maan painoon.\n\n**Kaava:** $G_\\text{Kuu} = m g_\\text{Kuu}$ ja $G_\\text{Maa} = m g_\\text{Maa}$, joten $m = \\dfrac{G_\\text{Kuu}}{g_\\text{Kuu}}$ ja\n\n$$G_\\text{Maa} = m g_\\text{Maa} = G_\\text{Kuu} \\frac{g_\\text{Maa}}{g_\\text{Kuu}}$$\n\n**Muunnokset:** Muunnoksia ei tarvita. Paino on newtoneina ja $g$ yksikössä $\\text{m/s}^2$. Siksi massa tulee kilogrammoina ja Maan paino newtoneina.\n\n**Sijoitus:** $m = \\dfrac{12\\,\\text{N}}{1{,}62\\,\\text{m/s}^2} = 7{,}407\\,\\text{kg}$, joten $G_\\text{Maa} = 7{,}407\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 = 72{,}67\\,\\text{N}$\n\n**Vastaus:** $73\\,\\text{N}$, kaksi merkitsevää numeroa kuten Kuun lukemassa $12\\,\\text{N}$.\n\n**Järkevyys:** Maan $g$ on noin kuusinkertainen Kuun arvoon verrattuna. Siksi paino on noin $6 \\cdot 12\\,\\text{N} = 72\\,\\text{N}$. Paino kasvaa, kun laatikko tuodaan Kuusta Maahan. Niin pitääkin olla. Palautuslasku: $\\dfrac{72{,}67\\,\\text{N}}{9{,}81\\,\\text{m/s}^2} = 7{,}41\\,\\text{kg}$. Massa on sama kuin Kuussa.",
@@ -375,7 +375,7 @@
         {
           "text": "Veden massa on $1{,}5\\,\\text{kg}$ ja paino Maassa noin $15\\,\\text{N}$.",
           "correct": true,
-          "feedback": "Oikein. Massa on $1{,}5\\,\\text{kg}$. Paino on voima: $G = mg = 1{,}5\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\approx 15\\,\\text{N}$. Vaaka näyttää kilogrammoja, koska sen asteikko on tehty Maassa. Asteikossa voima jaetaan arvolla $9{,}81\\,\\text{m/s}^2$."
+          "feedback": "Oikein. Massa on $1{,}5\\,\\text{kg}$. Paino on voima: $$\\begin{aligned} G &= mg \\\\ &= 1{,}5\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &\\approx 15\\,\\text{N} \\end{aligned}$$. Vaaka näyttää kilogrammoja, koska sen asteikko on tehty Maassa. Asteikossa voima jaetaan arvolla $9{,}81\\,\\text{m/s}^2$."
         },
         {
           "text": "Veden massa on $1{,}5\\,\\text{kg}$ ja paino $1{,}5\\,\\text{N}$, koska sama luku kertoo molemmat.",

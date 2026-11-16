@@ -270,7 +270,7 @@ $$ and the wind farm $$
 &0.33 \cdot 600\,\text{MW} \cdot 8760\,\text{h} \\
 &\approx 1.7\,\text{TWh}
 \end{aligned}
-$$, and $4.7 : 1.7 \approx 2.7$. The same rated power does not mean the same annual energy.
+$$, and $4.7 : 1.7 \approx 2.8$. The same rated power does not mean the same annual energy.
 
 ## fy2-6-L3-03
 **Given:** rated power of Olkiluoto 3 $P_\text{O} = 1600\,\text{MW}$ and average power $90\,\%$ of it, average power of the solar park $11\,\%$ of its rated power, the same time $t$ (a year) for both

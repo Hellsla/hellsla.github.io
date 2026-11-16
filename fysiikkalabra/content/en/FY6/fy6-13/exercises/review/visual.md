@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5404e1fb42f97550
+CONTENT-HASH: 5c922b90294f7d20
 
 ## Blocking
-None.
+- none
 
 ## Polish
-None.
+- [Minor] No Minors beyond the shared ones.
 
 ## Checked
-- The packet's captures were missing; regenerated with scripts/screenshot.py fy6-13 --lang en (current).
-- fy6-13-open-exercises-1280-5 (3.6·10^2 µJ graph task), -L2-1280-1 (13-11, 3.2·10^2 V), -L3-1280-2 (15.0 µJ, three sf, 13-20 start), -L2-1280-10 (3.7·10^2 µJ): chip, Substitution, Answer box and justification consistent; rows aligned; nothing clipped.
+- Proof sheets en-fy6-13-exercises-* (all, every numbered formula, opened side by side with the other language).
+- New task: judged from its source text and solution text, and from the proof sheets; the L2 capture not opened (same template as the fi set I opened).
+- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
+- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

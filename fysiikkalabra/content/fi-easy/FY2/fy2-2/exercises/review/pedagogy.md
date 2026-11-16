@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 3fc56c61e25476d8
+CONTENT-HASH: 9a921f891663b4d8
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- solutions.md fy2-2-L1-10, Järkevyys: the reason is that a calorie is a larger unit than a joule; better "Kalori on suurempi yksikkö kuin joule, joten lukuarvo kasvaa noin 4,2-kertaiseksi."
-- exercises.json fy2-2-L1-11: "Siihen on merkitty kolme energiaa" — "Siihen" refers back to "asteikolla"; "Asteikolle on merkitty kolme energiaa." is clearer.
+- none
 
 ## Checked
-- L1-11 new text: the figure is still needed, the question is last, the answer 100 kJ is not given; the description gives the position without the value.
-- "Joulet ovat pieniä" is the correct plural form; the sense check still agrees with the key (753,6 kJ).
-- Diff is wording only; the staged solutions and levels from the earlier PASS stand.
-- Hash is the same at the start and the end (3fc56c61e25476d8).
+- Delta review: L3-04 sense check 3 200 000 GJ : 70 GJ = 45 714, now "noin 46 000 taloa"; correct rounding.
+- exercises.json only re-broken calculation rows (no content change).
+- Answer 49 000 and solution stages unchanged.

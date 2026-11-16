@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 88b30325b9aedc30
-SCOPE: delta added-exercise from c650c557cc001a60 base 8f23aa7ae3bd
+CONTENT-HASH: 46bbe628c686170c
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy6-15/ex-kuorma — the steps change at 4, 10, 16 and 24 min but the gridlines are every 5 min, so "välillä $10$–$16\,\text{min}$" cannot be read off the grid; say "noin".
-- [Minor] fy6-15-L2-08 Järkevyys — one long sentence carries four steps; split it after "alapuolella".
+- [Minor] fy6-15: quotation marks are mixed (task text uses ”…”, Annettu stage uses straight "…"); use ”…” in both.
 
 ## Checked
-- open-exercises-L2-1280-9, -10 and -11 (task 15-17): the task text now has $30\,\text{min}$:n as maths like the other data (round-1 Major fixed); the step graph has quantity and unit on both axes and no fuse limit drawn; the whole solution (aligned chains, upright units, colon division, set apart answer, Järkevyys) is clean and the set reads as one.
+- Proof sheets fi-fy6-15-exercises-* (all, every numbered formula); captures open-exercises-L2 of the new task with solutions open (source link, table or sub-questions, solution stages, units), opened for fi.
+- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
+- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

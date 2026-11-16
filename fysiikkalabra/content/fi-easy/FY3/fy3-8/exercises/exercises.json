@@ -108,7 +108,7 @@
       "kind": [
         "error"
       ],
-      "text": "Oppilas laski, kuinka paljon $2{,}0\\,\\text{m}$ pitkä alumiinitanko ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) pitenee. Tangon lämpötila nousee $15\\,{}^\\circ\\text{C}$:sta $65\\,{}^\\circ\\text{C}$:seen. Oppilas kirjoitti $\\Delta l = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2{,}0\\,\\text{m} \\cdot 65 = 3{,}0\\,\\text{mm}$ (yksiköt jätetty pois).\n\nLaskussa on virhe. Laske tangon pituuden muutos oikein. Anna vastaus millimetreinä.",
+      "text": "Oppilas laski, kuinka paljon $2{,}0\\,\\text{m}$ pitkä alumiinitanko ($\\alpha = 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}}$) pitenee. Tangon lämpötila nousee $15\\,{}^\\circ\\text{C}$:sta $65\\,{}^\\circ\\text{C}$:seen. Oppilas kirjoitti $$\\begin{aligned} \\Delta l &= 23 \\cdot 10^{-6}\\,\\tfrac{1}{\\text{K}} \\cdot 2{,}0\\,\\text{m} \\cdot 65 \\\\ &= 3{,}0\\,\\text{mm} \\end{aligned}$$ (yksiköt jätetty pois).\n\nLaskussa on virhe. Laske tangon pituuden muutos oikein. Anna vastaus millimetreinä.",
       "answer": 2.3,
       "unit": "mm",
       "tolerance": 0.02
@@ -306,6 +306,19 @@
       "figure": "fy3-8/length-graph",
       "answer": 53.3,
       "unit": "°C",
+      "tolerance": 0.03
+    },
+    {
+      "id": "fy3-8-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "graph",
+        "model"
+      ],
+      "text": "Aineisto: <a href=\"https://science.nasa.gov/earth/explore/earth-indicators/sea-leve/\" target=\"_blank\" rel=\"noopener\">NASA – Sea Level (Earth Indicator)</a> (luettu 16. marraskuuta 2026)\n\nSivulla on kuvaaja. Se näyttää, kuinka paljon maailman merenpinnan keskimääräinen korkeus on muuttunut vuodesta 1993 alkaen. Korkeus on mitattu satelliiteilla. Sivu päivittyy jatkuvasti. Kirjoita siksi vastaukseesi päivä, jona luit kuvaajan, ja arvot, jotka luit kuvaajasta.\n\na) Kuvaile, miten merenpinnan keskimääräinen korkeus on muuttunut mittausjakson aikana. Lue kuvaajasta ensimmäinen ja viimeisin mittauspiste (ajankohta ja korkeuden muutos). Määritä niiden avulla keskimääräinen nousunopeus millimetreinä vuodessa.\n\nb) Selitä lämpölaajenemisen avulla, miksi meriveden lämpeneminen voi nostaa merenpintaa.\n\nc) Tarkastellaan yksinkertaistettua mallia. Siinä $1000\\,\\text{m}$ korkea vesipatsas lämpenee tasaisesti $0{,}30\\,{}^\\circ\\text{C}$. Tilavuuden lämpötilakerroin on $\\gamma = 2{,}0 \\cdot 10^{-4}\\,\\tfrac{1}{\\text{K}}$. Vesipatsaan poikkipinta-ala oletetaan vakioksi eli se ei muutu. Laske vesipatsaan korkeuden muutos.\n\nd) Arvioi, miksi tämä malli ei yksin riitä selittämään tai ennustamaan koko maailman merenpinnan nousua. Käytä perusteluissa myös sitä, mitä lähde kertoo nousun syistä.\n\nVastauskenttään tulee kohdan c) tulos millimetreinä.",
+      "answer": 60,
+      "unit": "mm",
       "tolerance": 0.03
     }
   ],

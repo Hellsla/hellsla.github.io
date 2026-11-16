@@ -1,17 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: fe8bebd525a0b695
+CONTENT-HASH: b611049cf9b8ec67
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
 
 ## Checked
-- delta review round 2 (captures current for this hash): opened fy3-7-example-390-1.png and -2.png, which show the changed worked-example stages 3 (Kaava ratkaistuna) and 7 (Järkevyys) at 390 px.
-- Stage 3: the new lead sentence with $Q_\text{kuum}$ and $Q_\text{h}$ renders cleanly. The three rows (Q_kuum = Q_h, Pt = rΔm, r = Pt/Δm) are aligned and the principle comes before the combined form.
-- Stage 7: the chain "Δm = Q/r = Pt/r = 300 kJ / 2260 kJ/kg = 0,133 kg" starts with the quantity and has its equals signs aligned. No clipping or overflow, and the fractions are readable.
-- The inquiry.json wording changes (the prediction option and the Q = sm feedback) are text only and have no layout effect. I read them in the diff and did not open a separate capture.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.

@@ -84,9 +84,9 @@
 **Find:** the total work $W$ in joules
 **Principle:** The force changes, so the formula $W = F s$ does not work for the whole distance. The work is the area under the $(s,F)$ graph, and it can be calculated in parts: the constant-force part is a rectangle and the steadily increasing part is a trapezium.
 **Reading the graph:** The graph has a horizontal segment at the height $10\,\text{N}$ from $0\ldots 2.0\,\text{m}$ and, continuing from it, a straight segment from the height $10\,\text{N}$ to the height $30\,\text{N}$ from $2.0\ldots 6.0\,\text{m}$. The rectangle has height $10\,\text{N}$ and width $2.0\,\text{m}$. The parallel sides of the trapezium are $10\,\text{N}$ and $30\,\text{N}$, and its height (the width along the $s$-axis) is $4.0\,\text{m}$.
-**Formula:** $W = A_\text{rectangle} + A_\text{trapezium}$, so $W = F_1 s_1 + 0.5 \cdot (F_1 + F_2)\, s_2$
+**Formula:** $$W = A_\text{rectangle} + A_\text{trapezium}$$, so $W = F_1 s_1 + 0.5 \cdot (F_1 + F_2)\, s_2$
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
-**Substitution:** $W = 10\,\text{N} \cdot 2.0\,\text{m} + \tfrac{1}{2} \cdot (10\,\text{N} + 30\,\text{N}) \cdot 4.0\,\text{m} = 20\,\text{J} + 80\,\text{J} = 100\,\text{J}$
+**Substitution:** $$\begin{aligned} W &= 10\,\text{N} \cdot 2.0\,\text{m} \\ &+ \tfrac{1}{2} \cdot (10\,\text{N} + 30\,\text{N}) \cdot 4.0\,\text{m} \\ &= 20\,\text{J} + 80\,\text{J} \\ &= 100\,\text{J} \end{aligned}$$
 **Answer:** $100\,\text{J}$, two significant figures like the given values (for example $2.0\,\text{m}$).
 **Reasonableness:** The average force over the whole $6.0\,\text{m}$ is $\dfrac{100\,\text{J}}{6.0\,\text{m}} \approx 17\,\text{N}$, which lies between the smallest ($10\,\text{N}$) and greatest ($30\,\text{N}$) values of the force. Rough bounds: at least $10\,\text{N} \cdot 6.0\,\text{m} = 60\,\text{J}$ and at most $30\,\text{N} \cdot 6.0\,\text{m} = 180\,\text{J}$, and the result lies between them.
 
@@ -97,9 +97,9 @@
 **Reading the graph:** The graph is a trapezium: a rising triangle ($0\ldots 0.50\,\text{m}$, height $40\,\text{N}$), a horizontal part as a rectangle ($0.50\ldots 1.5\,\text{m}$, height $40\,\text{N}$) and a falling triangle ($1.5\ldots 2.0\,\text{m}$, height $40\,\text{N}$). The work is the sum of these three areas.
 **Formula:** $W = \tfrac{1}{2} F s_1 + F s_2 + \tfrac{1}{2} F s_3$ and $W = F_\text{avg}\, s$, so $F_\text{avg} = \dfrac{W}{s}$
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
-**Substitution:** $W = \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0.50\,\text{m} + 40\,\text{N} \cdot 1.0\,\text{m} + \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0.50\,\text{m} = 10\,\text{J} + 40\,\text{J} + 10\,\text{J} = 60\,\text{J}$; $F_\text{avg} = \dfrac{60\,\text{J}}{2.0\,\text{m}} = 30\,\text{N}$
+**Substitution:** $$\begin{aligned} W &= \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0.50\,\text{m} + 40\,\text{N} \cdot 1.0\,\text{m} \\ &+ \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0.50\,\text{m} \\ &= 10\,\text{J} + 40\,\text{J} + 10\,\text{J} \\ &= 60\,\text{J} \end{aligned}$$; $F_\text{avg} = \dfrac{60\,\text{J}}{2.0\,\text{m}} = 30\,\text{N}$
 **Answer:** $30\,\text{N}$, two significant figures like the distance $2.0\,\text{m}$.
-**Reasonableness:** The average is smaller than the peak value $40\,\text{N}$, because the force is small at the beginning and at the end, but greater than half of the peak, because the force is at its peak for half of the distance. The trapezium formula gives the same work: $0.5 \cdot (2.0\,\text{m} + 1.0\,\text{m}) \cdot 40\,\text{N} = 60\,\text{J}$. The average of a force increasing steadily from zero would be $20\,\text{N}$.
+**Reasonableness:** The average is smaller than the peak value $40\,\text{N}$, because the force is small at the beginning and at the end, but greater than half of the peak, because the force is at its peak for half of the distance. The trapezium formula gives the same work: $$\begin{aligned} &0.5 \cdot (2.0\,\text{m} + 1.0\,\text{m}) \cdot 40\,\text{N} \\ &= 60\,\text{J} \end{aligned}$$. The average of a force increasing steadily from zero would be $20\,\text{N}$.
 
 ## fy3-2-L3-02
 **Given:** mass $m = 2.0\,\text{kg}$, falling height $h = 1.5\,\text{m}$, number of drops $n = 20$, $g = 9.81\,\text{m/s}^2$
@@ -146,7 +146,7 @@
 **Find:** the work $W$ done by the force in joules over the distance $0\ldots 4.0\,\text{m}$
 **Principle:** The force changes along the way, so the work is the area under the $(s,F)$ graph. For each one-metre part the area is a trapezium whose height is the average of the force at the ends of the part, and the parts are added together.
 **Reading the graph:** The points of the table are thought of as joined by straight segments in the $(s,F)$ coordinate system. At the ends of the part $0\ldots 1.0\,\text{m}$ the force is $18.0\,\text{N}$ and $17.2\,\text{N}$, of the part $1.0\ldots 2.0\,\text{m}$ $17.2\,\text{N}$ and $15.1\,\text{N}$, of the part $2.0\ldots 3.0\,\text{m}$ $15.1\,\text{N}$ and $11.0\,\text{N}$, and of the part $3.0\ldots 4.0\,\text{m}$ $11.0\,\text{N}$ and $6.0\,\text{N}$. The width of each part is $\Delta s = 1.0\,\text{m}$.
-**Formula:** $W = \sum 0.5 \cdot (F_\text{start} + F_\text{end})\,\Delta s$, so $W = W_1 + W_2 + W_3 + W_4$
+**Formula:** $$W = \sum 0.5 \cdot (F_\text{start} + F_\text{end})\,\Delta s$$, so $W = W_1 + W_2 + W_3 + W_4$
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:**
 

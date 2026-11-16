@@ -1,21 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 9ff2b23aaedfa400
+CONTENT-HASH: 48f32a459da5ae07
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] L2-08 (13-18) text — the earlier "toisen kondensaattorin" is still unclear which is the first; "erään kondensaattorin" reads clearer for an S2 student.
-- [Minor] L1-10 Järkevyys — inline fraction set small; a colon chain like the sibling tasks would read better.
+- [Minor] No Minors beyond the shared ones.
 
 ## Checked
-- content/fi-easy/FY6/fy6-13/review/shots/fy6-13-open-exercises-1280-5.png: 13-5 (L1-05), Sijoitus and Vastaus 3,6 \cdot 10^2 \mu J, graph with units.
-- fy6-13-open-exercises-1280-8.png: L1-08, Vastaus "1,4 \cdot 10^2 mJ. Eli 0,14 J. Laskimen arvo on 144 mJ." in short sentences, suits S2.
-- fy6-13-open-exercises-L2-1280-1.png: 13-11 (L2-01), 3,2 \cdot 10^2 V consistent in chip, Sijoitus, Vastaus.
-- fy6-13-open-exercises-L2-1280-9.png: 13-17 (L2-07) Vastaus 63 mJ, limiting-datum sentences; also 13-18 task and figure (axes with units, gridlines).
-- fy6-13-open-exercises-L2-1280-10.png: 13-18 (L2-08) solution, Vastaus 3,7 \cdot 10^2 \mu J, Järkevyys.
-- fy6-13-open-exercises-L3-1280-1.png: 13-19 (L3-01) 15,0 \mu J.
-- Decimal commas, upright units, no clipping or red KaTeX.
+- Proof sheets fi-easy-fy6-13-exercises-* (all, every numbered formula, opened side by side with the other language).
+- New task: judged from its source text and solution text, and from the proof sheets; the L2 capture not opened (same template as the fi set I opened).
+- 5d reflow: rows break at relations, + or −, or between whole quantities; relation signs align; every box fits at 352 px; decimal point or comma consistent with the language.
+- New level-2 task: source link line, a)–d) layout, answer box, solution typography and language, formulas with upright units: no blocking finding.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

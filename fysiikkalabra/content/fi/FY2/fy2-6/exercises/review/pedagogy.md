@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 70d00e3dd2da41b6
-
-Round: 2
+CONTENT-HASH: 5dde134fb0a96ca3
 
 ## Blocking
+- none
 
 ## Polish
-- solutions.md L2-08 Järkevyys — "Luvun mallin mukaan" relies on a rule the task does not state; say "kun keskiteho on noin kolmasosa nimellistehosta" so a student without the chapter at hand can follow. Also "1400 voimalaa" is "yli tuhat", not "tuhansien" in order of magnitude; write "yli tuhannen voimalan".
+- solutions.md L2 ydin/tuuli — the check now ends "4,7 : 1,7 ≈ 2,8" while the answer is 2,7 (exact 0,90 : 0,33 = 2,73). Rounded inputs give 2,76; say "≈ 2,7 (tarkemmin 4,73 : 1,73)" so the check does not appear to contradict the answer.
 
 ## Checked
-- L1-10 new wording ("palamisessa vapautuu energiaa teholla 2,0 MW") removes the efficiency ambiguity; situation, lookup, then the question last; answer 720 kg unchanged, hint names only the table.
-- L1-10 solution Periaate now states that P is the release power, then E = Pt and E = Hm; the steps stay followable.
-- L2-08 check: 3 x 2,30 GW = 6,9 GW, about 1400 turbines of 5 MW, consistent; it fixes the earlier wrong "satoja".
-- Hash identical at start and end (70d00e3dd2da41b6).
+- Delta review of one sentence in the reasonableness check; 0,90 · 600 MW · 8760 h ≈ 4,7 TWh and 0,33 · … ≈ 1,7 TWh are correct, and the idea (same rated power, different annual energy) is clear.
+- Answer, unit and tolerance unchanged.

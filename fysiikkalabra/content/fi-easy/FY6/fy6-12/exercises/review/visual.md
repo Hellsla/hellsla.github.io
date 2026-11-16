@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: d29240691e2c2f1f
-SCOPE: delta added-exercise from 5d9a1e2a7804d5aa base 8f23aa7ae3bd
+CONTENT-HASH: 64bf1de25ccb0bb0
+Mode: delta (reflow: calculation chains re-broken into rows, work queue 5d)
 
 ## Blocking
+- none
 
 ## Polish
-- [Minor] fy6-12-L2-09 Muunnokset — "$\sqrt{1\,\text{C} \cdot 1\,\text{V} : 1\,\text{kg}}$" renders with the root bar crowding the units; for an S2 student a plain sentence ("$1\,\text{C} \cdot 1\,\text{V} = 1\,\text{J}$ ja $\text{J/kg} = \text{m}^2/\text{s}^2$") is easier.
-- [Minor] fy6-12-L2-09 Kuvaajan lukeminen — "Positiivinen levy on kohdassa x = 5,0 cm": the figure marks no plate, so say the line ends at the positive plate.
+- none
 
 ## Checked
-- fy6-12-L2-09 (task 12-17): open-exercises-L2-1280-11 and -12: task text (situation then question), figure ex-vgraph (axes with units, readable ticks, gridlines at 50 V and 1 cm, line without answer), solution rows, aligned Sijoitus with root fraction, Vastaus, Järkevyys. Nothing clipped; set reads as one.
+- All 2 proof sheet(s) of fi-easy-fy6-12-exercises (review-batch/proof), every numbered formula: every box labelled "fits", none "OVERFLOWS"; rows start at a relation sign, at + or -, or between whole quantities of a product; no break between a number and its power of ten; relation signs line up; the sentence around each formula unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4
