@@ -118,7 +118,7 @@
 **Conversions:** The coefficients are in SI units and the time in seconds. No conversions are needed.
 **Substitution:** $v = 3.10\,\text{m/s} + 2 \cdot (-4.86\,\text{m/s}^2) \cdot 0.500\,\text{s} = 3.10\,\text{m/s} - 4.86\,\text{m/s} = -1.76\,\text{m/s}$
 **Answer:** $-1.76\,\text{m/s}$, three significant figures, because the coefficients of the polynomial and the moment $0.500\,\text{s}$ are given to three significant figures. The negative sign means that the ball is already moving downwards.
-**Reasonableness:** The acceleration obtained from the measurement, $-9.72\,\text{m/s}^2$, is close to $-g$, as it should be. The ball is at its highest point at the time $3.10\,\text{m/s} : 9.72\,\text{m/s}^2 \approx 0.32\,\text{s}$, so at $0.500\,\text{s}$ it is already descending and the velocity must be negative. The descent has lasted $0.18\,\text{s}$, and $9.72\,\text{m/s}^2 \cdot 0.18\,\text{s} \approx 1.8\,\text{m/s}$.
+**Reasonableness:** The acceleration obtained from the measurement, $-9.72\,\text{m/s}^2$, is close to $-g$, as it should be. The ball is at its highest point at the time $3.10\,\text{m/s} : 9.72\,\text{m/s}^2 \approx 0.32\,\text{s}$, so at $0.500\,\text{s}$ it is already descending and the velocity must be negative. The descent has lasted $0.18\,\text{s}$, and $$9.72\,\text{m/s}^2 \cdot 0.18\,\text{s} \approx 1.8\,\text{m/s}$$.
 
 ## fy4-2-L1-06
 **Find:** in which direction the acceleration of a car driving east and braking points.
@@ -227,4 +227,4 @@ $s_2 = 32\,\text{m} - 16\,\text{m}$, that is $s_2 = 16\,\text{m}$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:** $t = \sqrt{\dfrac{2 \cdot 20\,\text{m}}{24.79\,\text{m/s}^2}} = \sqrt{1.613\,\text{s}^2} \approx 1.270\,\text{s}$
 **Answer:** $1.27\,\text{s}$. The height $20\,\text{m}$ is taken as exact, and the table value $24.79\,\text{m/s}^2$ has four significant figures. The result is still given with three, because different tables differ already in the fourth figure, and the answer is accepted within about $\pm 4\,\%$.
-**Reasonableness:** On Earth the same drop would take $\sqrt{2 \cdot 20\,\text{m} : 9.81\,\text{m/s}^2} \approx 2.02\,\text{s}$. Jupiter's free-fall acceleration is about $2.5$ times as large, and the time is $\sqrt{2.5} \approx 1.6$ times shorter: $2.02\,\text{s} : 1.6 \approx 1.27\,\text{s}$.
+**Reasonableness:** On Earth the same drop would take $$\sqrt{2 \cdot 20\,\text{m} : 9.81\,\text{m/s}^2} \approx 2.02\,\text{s}$$. Jupiter's free-fall acceleration is about $2.5$ times as large, and the time is $\sqrt{2.5} \approx 1.6$ times shorter: $2.02\,\text{s} : 1.6 \approx 1.27\,\text{s}$.

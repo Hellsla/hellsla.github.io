@@ -118,7 +118,7 @@
 **Muunnokset:** Kertoimet ovat SI-yksiköissä ja aika sekunteina. Muunnoksia ei tarvita.
 **Sijoitus:** $v = 3{,}10\,\text{m/s} + 2 \cdot (-4{,}86\,\text{m/s}^2) \cdot 0{,}500\,\text{s} = 3{,}10\,\text{m/s} - 4{,}86\,\text{m/s} = -1{,}76\,\text{m/s}$
 **Vastaus:** $-1{,}76\,\text{m/s}$, kolme merkitsevää numeroa, koska polynomin kertoimet ja hetki $0{,}500\,\text{s}$ on annettu kolmella merkitsevällä numerolla. Negatiivinen etumerkki tarkoittaa, että pallo liikkuu jo alaspäin.
-**Järkevyys:** Mittauksesta saatu kiihtyvyys $-9{,}72\,\text{m/s}^2$ on lähellä arvoa $-g$, kuten pitääkin. Pallo on lakipisteessä hetkellä $3{,}10\,\text{m/s} : 9{,}72\,\text{m/s}^2 \approx 0{,}32\,\text{s}$, joten hetkellä $0{,}500\,\text{s}$ se on jo laskeutumassa ja nopeuden täytyy olla negatiivinen. Laskeutumista on kulunut $0{,}18\,\text{s}$, ja $9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}$.
+**Järkevyys:** Mittauksesta saatu kiihtyvyys $-9{,}72\,\text{m/s}^2$ on lähellä arvoa $-g$, kuten pitääkin. Pallo on lakipisteessä hetkellä $3{,}10\,\text{m/s} : 9{,}72\,\text{m/s}^2 \approx 0{,}32\,\text{s}$, joten hetkellä $0{,}500\,\text{s}$ se on jo laskeutumassa ja nopeuden täytyy olla negatiivinen. Laskeutumista on kulunut $0{,}18\,\text{s}$, ja $$9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}$$.
 
 ## fy4-2-L1-06
 **Kysytty:** mihin suuntaan itään ajavan ja jarruttavan auton kiihtyvyys osoittaa.
@@ -227,4 +227,4 @@ $s_2 = 32\,\text{m} - 16\,\text{m}$, eli $s_2 = 16\,\text{m}$
 **Muunnokset:** Kaikki suureet ovat jo SI-yksiköissä. Muunnoksia ei tarvita.
 **Sijoitus:** $t = \sqrt{\dfrac{2 \cdot 20\,\text{m}}{24{,}79\,\text{m/s}^2}} = \sqrt{1{,}613\,\text{s}^2} \approx 1{,}270\,\text{s}$
 **Vastaus:** $1{,}27\,\text{s}$. Korkeus $20\,\text{m}$ on tarkka arvo, ja taulukon arvossa $24{,}79\,\text{m/s}^2$ on neljä merkitsevää numeroa. Vastaus annetaan silti kolmella numerolla, koska eri taulukoiden arvot eroavat jo neljännessä numerossa, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Maassa sama pudotus kestäisi $\sqrt{2 \cdot 20\,\text{m} : 9{,}81\,\text{m/s}^2} \approx 2{,}02\,\text{s}$. Jupiterin putoamiskiihtyvyys on noin $2{,}5$-kertainen, joten aika on $\sqrt{2{,}5} \approx 1{,}6$ kertaa lyhyempi: $2{,}02\,\text{s} : 1{,}6 \approx 1{,}27\,\text{s}$.
+**Järkevyys:** Maassa sama pudotus kestäisi $$\sqrt{2 \cdot 20\,\text{m} : 9{,}81\,\text{m/s}^2} \approx 2{,}02\,\text{s}$$. Jupiterin putoamiskiihtyvyys on noin $2{,}5$-kertainen, joten aika on $\sqrt{2{,}5} \approx 1{,}6$ kertaa lyhyempi: $2{,}02\,\text{s} : 1{,}6 \approx 1{,}27\,\text{s}$.
