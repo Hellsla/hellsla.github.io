@@ -1,21 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 9b97de86157d65a5
+CONTENT-HASH: 3adcc392f3bc2b66
 
 ## Blocking
 
 ## Polish
-- content/fi/FY4/fy4-8/exercises/solutions.md:274 (fy4-8-L2-10 a) — exact speeds and a mass of $1500\,\text{kg}$ (four significant figures, trailing zeros count) would give four figures; "kolme numeroa ei lupaa liikaa" is true but not the usual rule — either give $52{,}08\,\text{kJ}$, $144{,}7\,\text{kJ}$, $468{,}8\,\text{kJ}$ or keep three and say plainly that three are enough for the comparison.
-- solutions.md:248 — $30 : 3{,}6\,\text{m/s} = 8{,}333\,\text{m/s}$ and $13{,}889\,\text{m/s}$ are rounded values: "≈", not "=".
-- solutions.md (L2-10 e) — $7716\,\text{J} : 0{,}05\,\text{m} = 154\,\text{kN}$ is shown as "noin $150\,\text{kN}$"; fine with one-figure distance $0{,}05\,\text{m}$, could say so.
+- content/fi/FY4/fy4-8/exercises/solutions.md:276 (L2-10 a) — exact speeds and $1500\,\text{kg}$ (four significant figures, trailing zeros count) would allow four figures; "kolme numeroa ei lupaa liikaa" is true but not the usual rule — give $52{,}08$, $144{,}7$, $468{,}8\,\text{kJ}$ or say plainly that three are enough for the comparison.
+- solutions.md:248 — $30 : 3{,}6\,\text{m/s} = 8{,}333\,\text{m/s}$ and $13{,}889\,\text{m/s}$ are rounded: "≈", not "=".
+- solutions.md (L2-10 e) — $7716\,\text{J} : 0{,}05\,\text{m} = 154\,\text{kN}$ shown as "noin $150\,\text{kN}$"; fine with the one-figure distance, could say so.
 
 ## Checked
-- All 21 numeric answers recomputed with my own formulas (least-squares fits included): agree with exercises.json and answers.py inside each tolerance.
-- L2-10 quotation ("Ajoneuvon törmäysenergia nelinkertaistuu, kun törmäysnopeus kaksinkertaistuu."), $80\,\text{kg}$, $50\,\text{km/h}$, "$3\,000\,\text{kg}$", $12\,000\,\text{kg}$ at $100\,\text{km/h}$ and the pedestrian risk above $60\,\text{km/h}$: the same as the coordinator's record of the Liikenneturva page; dated 16.11.2026; every number needed is quoted in the task, so the task does not depend on a moving value.
-- L2-10 a: $52\,083\,\text{J}$, $144\,676\,\text{J}$, $468\,750\,\text{J}$; b: factor 4 for $2v$, $9{,}00$ for 90 against 30 km/h.
-- L2-10 c: negative work of the obstacle's force, energy to deformation and internal energy, then to the surroundings as heat; never "muuttuu lämmöksi".
-- L2-10 d: "kg" read as the weight of $3000\,\text{kg}$ is said in the task; $F = 29\,430\,\text{N}$, $E_{\text{k}0} = 7716\,\text{J}$, $s = m_\text{i}v^2/(2F) = 0{,}2622\,\text{m}$; work principle of this chapter, constant force stated, symbolic first; answer 0.26, two figures from $80\,\text{kg}$ and $50\,\text{km/h}$.
-- L2-10 checks: $a = 368\,\text{m/s}^2 = 37{,}5\,g$; same distance at $100\,\text{km/h}$ gives exactly the weight of $12\,000\,\text{kg}$; $7{,}7\,\text{kN}$ over $1{,}0\,\text{m}$, twenty-fold over $0{,}05\,\text{m}$.
-- L2-10 e: energy fixes only $Fs$; the constant force is a mean value (model limit stated).
-- L2-05 proofreading fix: $0{,}10\,\text{m}$ is in the data and has two significant figures.
+- Hash the same at the start and the end (3adcc392f3bc2b66).
+- git diff since the version passed: solutions.md L2-10 Vastaus only; the d) paragraph moved first, a) now starts "Lisäksi:"; no number, formula or word otherwise changed. exercises.json and answers.py unchanged.
+- The answer-box value ($s \approx 0{,}26\,\text{m}$) now on the first line of the answer step matches `answer` 0.26 (tolerance 0.05); parts a–c, e read in order after it with every part's result still present.
+- All 21 numeric answers recomputed in one script with my own formulas (least-squares fits through the origin for L2-05, L2-07): equal to answers.py and inside every tolerance.
+- L2-10: $E_\text{k} = 52\,083$; $144\,676$; $468\,750\,\text{J}$; ratio $9{,}00$; $F = 29\,430\,\text{N}$, $E_{\text{k}0} = 7716\,\text{J}$, $s = 0{,}2622\,\text{m}$; $a = 37{,}5\,g$; same distance at $100\,\text{km/h}$ gives exactly the weight of $12\,000\,\text{kg}$; $7{,}7\,\text{kN}$ over $1{,}0\,\text{m}$, $154\,\text{kN}$ over $0{,}05\,\text{m}$.
+- L2-10 source values and quotation agree with the coordinator's verified record (read 16.11.2026); kg-as-force interpretation and constant force stated in the task; mean-force limit said.
+- L2-10 c: energy to deformation and internal energy, then to the surroundings as heat; never "muuttuu lämmöksi".
+- Significant figures: $80\,\text{kg}$ two (trailing zero counts) → $0{,}26\,\text{m}$, reason true.
+- Multiple choice L1-06, L1-08 and statements L1-09: one correct option each, distractors wrong, feedback physics right.
 - Notation ($E_{\text{k}0} + W = E_\text{k}$, $W = Fs$) as in the brief; scope FY4.
-- Hash the same at the start and the end.
