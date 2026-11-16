@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 993c31a99be16483
+CONTENT-HASH: e101598a2d01fac6
 
 ## Blocking
 - none
@@ -8,10 +8,11 @@ CONTENT-HASH: 993c31a99be16483
 - none
 
 ## Checked
-- Delta round 2: the Testaa ja arvioi choice task "virhe", correct option's display formula now broken after "40 °C" (rows: θ₀ = 40 °C / − fraction / ≈ −276 °C).
-- Rendered preview page myself with all details open: 360, 390 and 1280 px.
-- Formula wraps inside the option card, nothing clipped, no horizontal overflow (scrollWidth = viewport width in every capture).
-- Hash re-checked at the end: unchanged.
+- Delta round 1: md-paragraphs and typography split of lesson.md and inquiry.json (worked-example stages, reasonableness and reading-the-graph solution texts).
+- Opened example-390-1, -2, -3: bullet lists and split paragraphs read well, step spacing even, display formulas aligned, no clipping at 390 px.
+- Opened open-tarkista-1280-2 and -3: layout survived; choice feedback and assessment chips intact.
+- Figures untouched by the diff.
+- Hash re-run at the end with --lang en: unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
