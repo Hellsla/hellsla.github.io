@@ -280,6 +280,36 @@ $\lambda_2 \approx 1094\,\text{nm}$
 
 Both are infrared of the Paschen series. An increase to $1.7$ times would be obtained if the dependence were read the wrong way round. A decrease to about $0.44$ times would be obtained if the ratio of the energies of the initial levels, $0.38 : 0.85$, were taken instead of the ratio of the energy differences. The same final level does not make the wavelengths the same, because the photon energy also depends on the initial level.
 
+## fy8-3-L2-09
+**Given:** a table of lines of hydrogen from NIST; $1\,\text{Å} = 0.1\,\text{nm}$; $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$; $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$. The choice is yours; as an example, the visible lines whose air wavelengths on 16 November 2026 were $6562.8518\,\text{Å}$ (red) and $4861.3615\,\text{Å}$ (blue-green).
+**Asked:** a) the wavelengths $\lambda$ in nanometres, b) the photon energies $E$ in electronvolts, c) the energy differences $\Delta E_{3 \to 2}$ and $\Delta E_{4 \to 2}$ in electronvolts, d) matching the lines to transitions and explaining the line spectrum. The box takes $\Delta E_{3 \to 2}$ in $\text{eV}$.
+**Principle:** The energy of an atom is quantised, and a photon is created when an electron moves from a higher level to a lower one. Energy is conserved, so the photon's energy is the difference of the levels, $E = E_\text{u} - E_\text{l}$, and also $E = \tfrac{hc}{\lambda}$. So the measured wavelength and the level model can be compared through the same energy.
+**Formula:** $\lambda = \lambda_\text{Å} \cdot 0.1\,\tfrac{\text{nm}}{\text{Å}}$, $E = \dfrac{hc}{\lambda}$ and $\Delta E = E_\text{u} - E_\text{l} = 13.6\,\text{eV} \cdot \left(\dfrac{1}{n_\text{l}^2} - \dfrac{1}{n_\text{u}^2}\right)$
+**Conversions:** $6562.8518\,\text{Å} = 6562.8518 \cdot 0.1\,\text{nm} = 656.3\,\text{nm}$ and $4861.3615\,\text{Å} = 486.1\,\text{nm}$. The photon energy is converted from joules to electronvolts by dividing by $1.602 \cdot 10^{-19}\,\text{J/eV}$.
+**Substitution:** Part a) is in the conversions. Part b), the red line:
+
+$$\begin{aligned}
+E &= \frac{hc}{\lambda} \\
+&= \frac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{656.3 \cdot 10^{-9}\,\text{m}} \\
+&= 3.027 \cdot 10^{-19}\,\text{J} = 1.889\,\text{eV}
+\end{aligned}$$
+
+The blue-green line: $E = \dfrac{hc}{486.1\,\text{nm}} = 4.087 \cdot 10^{-19}\,\text{J} = 2.551\,\text{eV}$. Part c):
+
+$$\begin{aligned}
+\Delta E_{3 \to 2} &= 13.6\,\text{eV} \cdot \left(\frac{1}{2^2} - \frac{1}{3^2}\right) \\
+&= 13.6\,\text{eV} \cdot \frac{5}{36} = 1.889\,\text{eV}
+\end{aligned}$$
+
+$$\begin{aligned}
+\Delta E_{4 \to 2} &= 13.6\,\text{eV} \cdot \left(\frac{1}{2^2} - \frac{1}{4^2}\right) \\
+&= 13.6\,\text{eV} \cdot \frac{3}{16} = 2.550\,\text{eV}
+\end{aligned}$$
+
+**Part d):** The photon energy $1.889\,\text{eV}$ of the red line matches the transition $3 \to 2$, and $2.551\,\text{eV}$ of the blue-green line matches $4 \to 2$. The model gives the wavelengths $656.5\,\text{nm}$ and $486.3\,\text{nm}$, which differ from the table by less than $0.1\,\%$ ($656.3\,\text{nm}$ is an air wavelength, and the simple model with $13.6\,\text{eV}$ is not exact), so the match holds. A line spectrum arises because the energy levels of the atom are quantised: the electron can only move from one level to another, so the photon's energy is always the difference of some pair of levels. Only certain energies, and so certain wavelengths, are possible, and the spectrum is not continuous. If you choose other lines of the table, for example $434.0\,\text{nm}$, they match the transitions $5 \to 2$ and $6 \to 2$ in the same way.
+**Answer:** $\Delta E_{3 \to 2} = 1.89\,\text{eV}$, three significant figures like the constant $13.6\,\text{eV}$. The measured line's energy $1.889\,\text{eV}$ is the same, so the answer does not depend on which of the table's parallel values you chose.
+**Reasonableness:** Red light is the low-energy end of the visible range, and $1.9\,\text{eV}$ is the right order of magnitude. A round-number estimate: $\tfrac{1240\,\text{eV nm}}{656\,\text{nm}} \approx 1.89\,\text{eV}$. The difference is smaller than the ionisation energy $13.6\,\text{eV}$, as it must be between bound levels, and the transition $4 \to 2$ gives a larger energy, that is a shorter wavelength, than $3 \to 2$.
+
 ## fy8-3-L3-04
 **Given:** emission lines $\lambda = 1876$; $1282$ and $1094\,\text{nm}$ ($\pm 1\,\text{nm}$), $E_n = -\tfrac{13.6\,\text{eV}}{n^2}$, all lines end on the same level, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$, $c = 2.998 \cdot 10^{8}\,\text{m/s}$, $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$
 **Asked:** the minimum frequency $f_\text{ion}$ in terahertz at which a photon ionises the atom from the level on which the transitions end

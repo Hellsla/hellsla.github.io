@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 08a5298251fe93cc
+CONTENT-HASH: c55461f4fa2a8ea8
+SCOPE: delta added-exercise from 08a5298251fe93cc base 415cbc7c6bc3
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md:227 — L2-07 b) still gives "kolme merkitsevää numeroa kuten datan energioissa" for $W = 2{,}14\,\text{eV}$, but $0{,}55\,\text{eV}$ has two — give the reason that $W$ is known to the hundredth of an eV.
+- exercises/solutions.md:431 — Vastaus gives the reading accuracy as "noin $\pm 10\,\text{nm}$", but Annettu (line 408) says "muutaman nanometrin" and the example brackets the limit within $2\,\text{nm}$ (538/540). Use one figure in both places.
+- exercises/solutions.md:432 — "natriumin raja-aallonpituus $544\,\text{nm}$ teoriassa" does not say where 544 comes from. It is $hc/W$ with $W = 2{,}28\,\text{eV}$: name that value.
+- exercises/solutions.md:424 — $6{,}626 \cdot 10^{-34} \cdot 5{,}562 \cdot 10^{14} = 3{,}685 \cdot 10^{-19}\,\text{J}$, not $3{,}686$. The final $2{,}30\,\text{eV}$ is unchanged.
+- lessons/FY8/fy8-1/answers.py:238 — the comment "3,7e-19..." is garbled. Write $3{,}685 \cdot 10^{-19}\,\text{J}$.
 
 ## Checked
-- L2-06 Kuvaajan lukeminen (line 221): the slopes are now called $h = 4{,}14 \cdot 10^{-15}\,\text{eV}\,\text{s}$, which is correct ($6{,}626 \cdot 10^{-34} / 1{,}602 \cdot 10^{-19} = 4{,}136 \cdot 10^{-15}$). The read slopes are $1{,}25/3{,}0 = 4{,}2$ and $1{,}23/3{,}0 = 4{,}1$ ($\cdot 10^{-15}\,\text{eV/Hz}$). Round-2 blocking item closed.
-- L2-07 Järkevyys: $k = 4{,}133 \cdot 10^{-15}$, $f_0 = 5{,}169 \cdot 10^{14}\,\text{Hz}$, $W = 2{,}137\,\text{eV}$, intercept $-2{,}137\,\text{eV}$; $h$ in eV s is correct.
-- L2-08: $h(f - f_0)$ with $0{,}4136\,\text{eV}$ per $10^{14}\,\text{Hz}$ gives $2{,}66\,\text{eV}$, correct.
-- L2-09: $4{,}3 \cdot 10^2\,\text{nm}$ with two significant figures is justified.
-- The remaining $\tfrac{h}{e}$ (L2-05, lines 199 and 201) is the slope of $U_\text{s}(f)$, which is correct.
-- Captions, chain re-breaks and "Pika-arvio" change no number.
-- Hash identical at start and end.
+- Hash c55461f4fa2a8ea8 at the start and the end. Only fy8-1-L2-10 was judged.
+- Recomputed: $f_0 = c/539\,\text{nm} = 5{,}562 \cdot 10^{14}\,\text{Hz}$ and $hf_0 = 2{,}3006\,\text{eV}$. answers.py also gives 2,30055. The box value 2,3 eV is correct, and $hc/W = 539{,}1\,\text{nm}$ for $W = 2{,}3\,\text{eV}$.
+- Tolerance 0,05 (relative) accepts 2,185–2,415 eV. Readings of 530–550 nm give 2,254–2,340 eV, so they are all accepted, as the solution says.
+- Attribution matches the verified lines: the metal list, sodium 2,3 eV, zinc 4,3 eV and platinum 6,3 eV in the sim's model, the wavelength and intensity sliders, no frequency control, the energy graph, and that it runs in the browser. Nothing beyond those lines is attributed to PhET.
+- Physics: $hf_0 = W$ at the threshold. Intensity changes the current but not $E_\text{k,max}$, and $E_\text{k,max} = hf - W$ grows with frequency. The d) model answer contrasts the wave model with the photon model correctly. Scope is FY8 fy8-1.
+- Vastaus's first paragraph holds 2,3 eV. Two significant figures are justified by the slider reading.

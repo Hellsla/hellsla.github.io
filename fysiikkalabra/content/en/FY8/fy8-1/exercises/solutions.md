@@ -403,3 +403,32 @@ $$. The threshold wavelength is just below the violet edge of visible light, abo
 1240\,\text{eV}\,\text{nm} : 428\,\text{nm} &\approx 2.9\,\text{eV}
 \end{aligned}
 $$. It is larger than the work function of metal A, $2.3\,\text{eV}$, and the line of B indeed starts to the right of the line of A.
+
+## fy8-1-L2-10
+**Given:** a reading made by yourself in the simulation, so here are the method and an example reading of 16 November 2026: for sodium, electrons are still released at the wavelength $538\,\text{nm}$ but no longer at $540\,\text{nm}$, so $\lambda_0 \approx 539\,\text{nm}$. A reading made with the slider can differ by a few nanometres. Constants $c = 2.998 \cdot 10^8\,\text{m/s}$, $h = 6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$ and $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
+**Asked:** a) at which wavelengths electrons are released; b) the threshold frequency $f_0$ and the photon energy $hf_0$ in $\text{eV}$; c) the effect of intensity and frequency on the current and on the greatest kinetic energy; d) why the classical wave model is not enough
+**Principle:** In the photoelectric effect one photon gives all its energy $hf$ to one electron, and the electron is released only if $hf \geq W$. At the threshold frequency $hf_0 = W$, so the photon energy that corresponds to the threshold frequency is the work function of the metal.
+**Reading the graph:** In the current–voltage graph of the simulation the stopping voltage is the battery voltage at which the current becomes zero, and in the energy graph the greatest kinetic energy of the electrons is read from the vertical axis at the chosen wavelength or frequency. At the threshold the line of the energy graph starts from the horizontal axis: the greatest kinetic energy is zero at the frequency $f_0$. The reading of part b) is, however, taken straight from the slider: the longest wavelength at which the current is still larger than zero.
+**Model answer a):** For sodium, electrons are released when the wavelength is shorter than about $540\,\text{nm}$: with green, blue and violet light and with ultraviolet radiation. At longer wavelengths (yellow, orange, red) the current is zero even at the greatest intensity. Other metals need a shorter wavelength: in the model of the simulation the work function is $4.3\,\text{eV}$ for zinc and $6.3\,\text{eV}$ for platinum.
+**Formula:** $c = f_0\lambda_0$, so $f_0 = \dfrac{c}{\lambda_0}$, and the photon energy that corresponds to the threshold frequency is $E = hf_0$. In electronvolts $E = \dfrac{hf_0}{1\,\text{eV}}$.
+**Conversions:** $\lambda_0 = 539\,\text{nm} = 539 \cdot 10^{-9}\,\text{m}$ and $1\,\text{eV} = 1.602 \cdot 10^{-19}\,\text{J}$.
+**Substitution:**
+
+$$\begin{aligned}
+f_0 &= \tfrac{2.998 \cdot 10^8\,\text{m/s}}{539 \cdot 10^{-9}\,\text{m}} \\
+&= 5.562 \cdot 10^{14}\,\text{Hz}
+\end{aligned}$$
+
+$$\begin{aligned}
+hf_0 &= 6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5.562 \cdot 10^{14}\,\text{Hz} \\
+&= 3.686 \cdot 10^{-19}\,\text{J} \\
+&= \tfrac{3.686 \cdot 10^{-19}\,\text{J}}{1.602 \cdot 10^{-19}\,\text{J/eV}} \\
+&= 2.30\,\text{eV}
+\end{aligned}$$
+
+**Model answer c):** When the intensity is increased and the wavelength stays the same, the current grows, because more photons arrive and more electrons are released. The greatest kinetic energy of the electrons does not change: the stopping voltage stays the same. When the wavelength is made shorter, that is, the frequency is raised, the photon energy $hf$ grows and the greatest kinetic energy $E_\text{k,max} = hf - W$ grows. The intensity does not appear in the equation at all.
+**Model answer d):** By the classical wave model the energy of the light would arrive at the surface evenly, and brighter light would give the electrons more energy. Then light that is bright enough would release electrons at any wavelength, and raising the intensity would raise the kinetic energy. The observations are different: long-wavelength light releases no electrons at any intensity, and the intensity changes only the current, not the greatest kinetic energy. In the photon model energy comes in portions of size $hf$, and one portion is given to one electron. The threshold $hf \geq W$ and the dependence of the kinetic energy on the frequency follow from this.
+**Answer:** $hf_0 \approx 2.3\,\text{eV}$, two significant figures, because the wavelength is read from the slider to about $\pm 10\,\text{nm}$. Readings of $530\,\text{nm}$–$550\,\text{nm}$ give $2.25\,\text{eV}$–$2.34\,\text{eV}$.
+**Reasonableness:** A quick calculation gives $$\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 539\,\text{nm} &\approx 2.3\,\text{eV}
+\end{aligned}$$. The result equals the work function of sodium, $2.3\,\text{eV}$, in the model of the simulation, as it should, because the threshold is the frequency at which $hf = W$. The threshold is in the green region of light, as the threshold wavelength of sodium, $544\,\text{nm}$, in the theory.

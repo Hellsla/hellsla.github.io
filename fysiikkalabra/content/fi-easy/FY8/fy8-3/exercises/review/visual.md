@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: aa0f837dfa88aba8
+CONTENT-HASH: dcbb4a54776d9f88
+SCOPE: delta added-exercise from aa0f837dfa88aba8 base 415cbc7c6bc3
 
 ## Blocking
+(none)
 
 ## Polish
+- [Minor] fy8-3-L2-09 Annettu — "NIST:n taulukon vedyn viivoja" is a fragment; write "NIST:n taulukon vedyn viivat".
+- [Minor] fy8-3-L2-09 Järkevyys — `\text{eV nm}` has no thin space (rendered "eV nm" cramped); use `\text{eV}\,\text{nm}` as in the other FY8 sets.
+- [Minor] fy8-3-L2-09 task — the line "Vastaa laatikkoon … elektronivoltteina (" breaks before the constants; put the constants in a sentence of their own.
 
 ## Checked
-- Delta round 1 (wording, caption-label), fi-easy. Hash aa0f837dfa88aba8 at the start and at the end.
-- Opened fy8-3-open-exercises-L3-1280-5 (task 3-20, solution open): Muunnokset reads "Fotonien energiat lasketaan jouleina. Ne muunnetaan elektronivolteiksi jakamalla luvulla …"; "jouleina" is the correct form, the short Selkeä suomi sentences are kept, the block wraps cleanly and the Kaava boxes, the Sijoitus list and the aligned rows around it are intact.
-- Caption change (the marker "esimerkkiaineisto" removed, teacher-approved): the task's table is in the same capture only from its second row down; its caption was read in the source ("Pilven emissioviivat", no leftover bracket), the identical component was seen rendered in the Finnish set's capture L3-1280-4. The table sits inside the card.
-- No figure, formula, number or unit changed; nothing else judged in this delta.
+- fy8-3-open-exercises-L2-1280-12 (task 3-17 text, Annettu), -13 (Periaate to Kohta c), -14 (Kohta d, Vastaus, Järkevyys). Aligned rows, fractions and arrows $3 \to 2$ read cleanly; no clipping; numbering and style match the set.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

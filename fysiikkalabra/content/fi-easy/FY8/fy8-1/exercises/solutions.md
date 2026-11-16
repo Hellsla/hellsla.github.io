@@ -403,3 +403,32 @@ $$. Raja-aallonpituus on juuri violetin näkyvän valon rajan, noin $400\,\text{
 1240\,\text{eV}\,\text{nm} : 428\,\text{nm} &\approx 2{,}9\,\text{eV}
 \end{aligned}
 $$. Se on suurempi kuin metallin A irrotustyö $2{,}3\,\text{eV}$, ja B:n suora alkaakin A:n suoran oikealta puolelta.
+
+## fy8-1-L2-10
+**Annettu:** simulaatiosta itse tehty lukema. Tässä on siksi ratkaisutapa ja esimerkkilukema 16. marraskuuta 2026: natriumilla elektroneja irtoaa vielä aallonpituudella $538\,\text{nm}$, mutta ei enää aallonpituudella $540\,\text{nm}$. Siis $\lambda_0 \approx 539\,\text{nm}$. Liukusäätimellä tehty lukema voi poiketa muutaman nanometrin. Vakiot $c = 2{,}998 \cdot 10^8\,\text{m/s}$, $h = 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s}$ ja $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
+**Kysytty:** a) millä aallonpituuksilla elektroneja irtoaa; b) rajataajuus $f_0$ ja fotonin energia $hf_0$ yksikössä $\text{eV}$; c) mitä intensiteetti ja taajuus muuttavat virrassa ja suurimmassa liike-energiassa; d) miksi klassinen aaltomalli ei riitä
+**Periaate:** Valosähköisessä ilmiössä yksi fotoni antaa koko energiansa $hf$ yhdelle elektronille. Elektroni irtoaa vain, jos $hf \geq W$. Irrotustyö $W$ on pienin energia, joka tarvitaan elektronin irrottamiseen. Rajataajuudella $hf_0 = W$. Rajataajuutta vastaava fotonin energia on siis metallin irrotustyö.
+**Kuvaajan lukeminen:** Simulaation virta–jännite-kuvaajassa estojännite on se akun jännite, jolla virta tulee nollaksi. Energiakuvaajassa elektronien suurin liike-energia luetaan pystyakselilta valitulla aallonpituudella tai taajuudella. Rajalla energiakuvaajan suora alkaa vaaka-akselilta: suurin liike-energia on nolla taajuudella $f_0$. Kohdan b) lukema otetaan kuitenkin suoraan liukusäätimestä: pisin aallonpituus, jolla virta on vielä suurempi kuin nolla.
+**Mallivastaus a):** Natriumilla elektroneja irtoaa, kun aallonpituus on lyhyempi kuin noin $540\,\text{nm}$. Näin on vihreällä, sinisellä ja violetilla valolla sekä ultraviolettisäteilyllä. Pidemmillä aallonpituuksilla (keltainen, oranssi, punainen) virta on nolla. Näin on, vaikka intensiteetti olisi suurin. Muut metallit tarvitsevat lyhyemmän aallonpituuden. Simulaation mallissa irrotustyö on sinkillä $4{,}3\,\text{eV}$ ja platinalla $6{,}3\,\text{eV}$.
+**Kaava:** $c = f_0\lambda_0$, joten $f_0 = \dfrac{c}{\lambda_0}$. Rajataajuutta vastaava fotonin energia on $E = hf_0$. Elektronivoltteina $E = \dfrac{hf_0}{1\,\text{eV}}$.
+**Muunnokset:** $\lambda_0 = 539\,\text{nm} = 539 \cdot 10^{-9}\,\text{m}$ ja $1\,\text{eV} = 1{,}602 \cdot 10^{-19}\,\text{J}$.
+**Sijoitus:**
+
+$$\begin{aligned}
+f_0 &= \tfrac{2{,}998 \cdot 10^8\,\text{m/s}}{539 \cdot 10^{-9}\,\text{m}} \\
+&= 5{,}562 \cdot 10^{14}\,\text{Hz}
+\end{aligned}$$
+
+$$\begin{aligned}
+hf_0 &= 6{,}626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 5{,}562 \cdot 10^{14}\,\text{Hz} \\
+&= 3{,}686 \cdot 10^{-19}\,\text{J} \\
+&= \tfrac{3{,}686 \cdot 10^{-19}\,\text{J}}{1{,}602 \cdot 10^{-19}\,\text{J/eV}} \\
+&= 2{,}30\,\text{eV}
+\end{aligned}$$
+
+**Mallivastaus c):** Kun intensiteettia kasvatetaan ja aallonpituus pysyy samana, virta kasvaa. Fotoneja tulee enemmän, ja useampi elektroni irtoaa. Elektronien suurin liike-energia ei muutu: estojännite pysyy samana. Kun aallonpituutta lyhennetään eli taajuutta kasvatetaan, fotonin energia $hf$ kasvaa. Silloin myös suurin liike-energia $E_\text{k,max} = hf - W$ kasvaa. Intensiteetti ei ole yhtälössä lainkaan.
+**Mallivastaus d):** Klassisen aaltomallin mukaan valon energia tulisi pinnalle tasaisesti. Kirkkaampi valo antaisi elektroneille enemmän energiaa. Silloin riittävän kirkas valo irrottaisi elektroneja millä tahansa aallonpituudella. Intensiteetin kasvattaminen kasvattaisi myös liike-energiaa. Havainnot ovat toiset: pitkäaaltoinen valo ei irrota elektroneja millään intensiteetillä. Intensiteetti muuttaa vain virtaa, ei suurinta liike-energiaa. Fotonimallissa energia tulee $hf$:n kokoisina annoksina, ja yksi annos menee yhdelle elektronille. Tästä seuraavat raja $hf \geq W$ ja liike-energian riippuvuus taajuudesta.
+**Vastaus:** $hf_0 \approx 2{,}3\,\text{eV}$. Vastauksessa on kaksi merkitsevää numeroa, koska aallonpituus luetaan liukusäätimestä noin $\pm 10\,\text{nm}$ tarkkuudella. Lukemat $530\,\text{nm}$–$550\,\text{nm}$ antavat $2{,}25\,\text{eV}$–$2{,}34\,\text{eV}$.
+**Järkevyys:** Pikalasku antaa $$\begin{aligned}
+1240\,\text{eV}\,\text{nm} : 539\,\text{nm} &\approx 2{,}3\,\text{eV}
+\end{aligned}$$. Tulos on sama kuin natriumin irrotustyö $2{,}3\,\text{eV}$ simulaation mallissa. Niin pitää olla, koska raja on se taajuus, jolla $hf = W$. Raja on vihreän valon alueella. Samoin on natriumin raja-aallonpituudella $544\,\text{nm}$ teoriassa.

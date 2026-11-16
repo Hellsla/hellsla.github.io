@@ -237,6 +237,18 @@
           "feedback": "Here the result $1944\\,\\mu\\text{Sv}$ was marked as millisieverts without converting the unit. Microsieverts are converted to millisieverts by dividing by $1000$, because $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$."
         }
       ]
+    },
+    {
+      "id": "fy8-13-L2-09",
+      "level": 2,
+      "text": "Source: <a href=\"https://www.julkari.fi/items/8f76b41d-b3d6-4470-a97a-992347ab547f\" target=\"_blank\" rel=\"noopener\">STUK – Suomalaisten keskimääräinen efektiivinen annos vuonna 2018 (STUK-A263, 2020)</a> and <a href=\"https://www.julkari.fi/items/86968f39-ac37-47d6-90b7-068406ac016d\" target=\"_blank\" rel=\"noopener\">STUK – Ympäristön säteilyvalvonta Suomessa: Vuosiraportti 2024 (STUK-B 341, 2025)</a> (accessed 16 November 2026)\n\nThe reports divide the average annual effective dose of a person in Finland by source. In this task it is compared with the dose that the ambient dose rate alone would give.\n\na) Read from the report the average annual effective dose of a person in Finland and its three largest sources with their doses. Write the sources and doses down.\n\nb) Calculate the share of radon in the total dose as a percentage, using the values from part a).\n\nc) Assume that a radiation meter shows the dose rate $0.10\\,\\mu\\text{Sv/h}$ all year round. Calculate the dose this gives in a year, when a year has $8760\\,\\text{h}$. Give the result in millisieverts.\n\nd) Compare the result with the average annual dose and explain why an estimate based on the dose rate alone is so much smaller.\n\nEnter the result of part c) in millisieverts in the answer box.",
+      "kind": [
+        "data",
+        "reasoning"
+      ],
+      "answer": 0.88,
+      "unit": "mSv",
+      "tolerance": 0.02
     }
   ],
   "level3": [

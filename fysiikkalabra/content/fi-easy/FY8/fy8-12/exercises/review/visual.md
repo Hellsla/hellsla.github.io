@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 14b54a6e061b7b91
+CONTENT-HASH: 0afbb0e960a7159d
+SCOPE: delta added-exercise from 14b54a6e061b7b91 base 415cbc7c6bc3
 
 ## Blocking
 
 ## Polish
-- [Minor] exercises.json fy8-12-L3-05, first paragraph — the caption's marker is gone but the sentence still ends "(taulukko, esimerkkiaineisto)"; "esimerkkiaineisto" is also an unexplained long word for an S2 reader. If the teacher's rule covers the running text, write "(taulukko)". Does not block.
+- [Minor] fy8-12-L2-08 task b) — one paragraph of about 90 words; split the comparison and the explanation into two paragraphs.
+- [Minor] Mallivastaus c) — one block of about 150 words; split at "Säteilylaji tunnistetaan…".
+- [Minor] Vastaus — "Laatikko hyväksyy myös arvon 14,5 µeV" is interface talk inside a model answer; consider dropping it.
 
 ## Checked
-- Delta round 1 (wording, caption-label), fi-easy: "kilobecquereleina" → "kilobecquereleinä" twice in the task text and once in the solution's Kysytty. Hash 14b54a6e061b7b91 at the start and at the end.
-- Opened fy8-12-open-exercises-L3-1280-7 (task 12-21 with its table): part c) and the last instruction both read "kilobecquereleinä", the correct front-vowel ending; the answer box's unit kBq agrees. The short Selkeä suomi sentences of the situation are unchanged; question parts on their own rows, the instruction last.
-- Same capture: the table's caption is "GM-mittarin pulssit 60 s:n jaksoissa", no marker or stray bracket left; the table sits inside the card.
-- Opened fy8-12-open-exercises-L3-1280-8 (the solution): Kysytty reads "lähteen aktiivisuus A kilobecquereleinä"; Periaate, Kaava, Muunnokset and the aligned Sijoitus blocks are intact, nothing clipped.
-- No figure, formula, number or unit changed.
+- fy8-12-open-exercises-L2-1280-11, -12, -13 (task end, Annettu to Muunnokset; Sijoitus, Mallivastaus c/d; Vastaus, Järkevyys), captures regenerated for the current hash.
+- Round 1 defects are fixed: $24\,\text{h}$ is LaTeX, the comparison sentences are no longer cut by display boxes (chain after the sentence), and $h$ is "J s" everywhere. The $\mu\text{eV}$ chain, fractions and units render cleanly.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
