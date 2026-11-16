@@ -125,7 +125,7 @@ Ylempi viritystila purkautuu jo noin $0{,}7\,\text{s}$:ssa, joten moni atomi lä
 **Kysytty:** kuvaaja, jonka pisteiden pitäisi oletuksen mukaan olla origon kautta kulkevalla suoralla, ja päätelmä siitä
 **Kuvaaja:** Taustan pulssitaajuus on $R_\text{t} = \dfrac{112}{5{,}0\,\text{min}} = 22{,}4\,\tfrac{1}{\text{min}}$. Se vähennetään jokaisesta lukemasta, jolloin saadaan lähteen nettopulssitaajuus $R$. Jos lähde on pistemäinen ja säteily leviää tasaisesti kaikkiin suuntiin, etäisyydellä $r$ fotonit jakautuvat pallon pinnalle, jonka ala on $4\pi r^2$. Putken ikkunaan osuu silloin osuus, joka on verrannollinen suureeseen $\tfrac{1}{r^2}$, joten oletuksen mukaan $R = \dfrac{K}{r^2}$. Vaaka-akselille valitaan $\tfrac{1}{r^2}$ ja pystyakselille $R$.
 
-| $r\ (\text{cm})$ | $1/r^2\ (1/\text{cm}^2)$ | $R\ (1/\text{min})$ | $Rr^2\ (10^{3}\,\text{cm}^2/\text{min})$ |
+| $r\ (\text{cm})$ | $1/r^2\ (1/\text{cm}^2)$ | $R\ (1/\text{min})$ | $Rr^2\ (10^{3}\,\tfrac{\text{cm}^2}{\text{min}})$ |
 |---|---|---|---|
 | $2{,}0$ | $0{,}250$ | $3026$ | $12{,}1$ |
 | $3{,}0$ | $0{,}111$ | $1784$ | $16{,}1$ |

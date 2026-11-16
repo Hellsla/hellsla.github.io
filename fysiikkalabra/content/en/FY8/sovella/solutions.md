@@ -125,7 +125,7 @@ The second excited state decays in only about $0.7\,\text{s}$, so many atoms emi
 **Find:** a graph whose points should lie on a straight line through the origin according to the assumption, and the conclusion from it
 **Graph:** The count rate of the background is $R_\text{t} = \dfrac{112}{5.0\,\text{min}} = 22.4\,\tfrac{1}{\text{min}}$. It is subtracted from every reading, which gives the net count rate $R$ of the source. If the source is a point source and the radiation spreads evenly in all directions, at the distance $r$ the photons are spread over the surface of a sphere whose area is $4\pi r^2$. The fraction that hits the window of the tube is then proportional to $\tfrac{1}{r^2}$, so according to the assumption $R = \dfrac{K}{r^2}$. We choose $\tfrac{1}{r^2}$ for the horizontal axis and $R$ for the vertical axis.
 
-| $r\ (\text{cm})$ | $1/r^2\ (1/\text{cm}^2)$ | $R\ (1/\text{min})$ | $Rr^2\ (10^{3}\,\text{cm}^2/\text{min})$ |
+| $r\ (\text{cm})$ | $1/r^2\ (1/\text{cm}^2)$ | $R\ (1/\text{min})$ | $Rr^2\ (10^{3}\,\tfrac{\text{cm}^2}{\text{min}})$ |
 |---|---|---|---|
 | $2.0$ | $0.250$ | $3026$ | $12.1$ |
 | $3.0$ | $0.111$ | $1784$ | $16.1$ |
