@@ -304,9 +304,7 @@ t &= \frac{5378\,\text{m}}{1.2\,\text{m/s}} \\
 &= 4482\,\text{s} = 74.7\,\text{min}
 \end{aligned}
 ```
-**Answer:** a) The rotation frequency is about $460\,\tfrac{1}{\text{min}}$ at the start of the groove and about $200\,\tfrac{1}{\text{min}}$ at the end.
-
-b) There are about $2.1 \cdot 10^{4}$ turns of the groove, the length of the groove is about $5.4\,\text{km}$ and the playing time is about $75\,\text{min}$, two significant figures like the spacing of the turns $1.6\,\mu\text{m}$.
+**Answer:** a) The rotation frequency is about $460\,\tfrac{1}{\text{min}}$ at the start of the groove and about $200\,\tfrac{1}{\text{min}}$ at the end. b) There are about $2.1 \cdot 10^{4}$ turns of the groove, the length of the groove is about $5.4\,\text{km}$ and the playing time is about $75\,\text{min}$, two significant figures like the spacing of the turns $1.6\,\mu\text{m}$.
 
 c) The laser follows the groove at a constant speed, and farther out the groove goes round a larger circle.
 
