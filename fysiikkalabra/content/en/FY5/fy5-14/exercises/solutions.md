@@ -75,7 +75,7 @@ Statement 5 is true. At the moment of passing, the frequency drops. Behind a car
 **Formula:** $f = \dfrac{v_\text{a}}{\lambda_\text{a}}$ and $\lambda_\text{w} = \dfrac{v_\text{w}}{f}$
 **Conversions:** None needed: the speeds are in $\text{m/s}$ and the wavelength in metres.
 **Substitution:** $f = \dfrac{340\,\text{m/s}}{0.850\,\text{m}} = 400\,\text{Hz}$ and $\lambda_\text{w} = \dfrac{1480\,\text{m/s}}{400\,\text{Hz}} = 3.70\,\text{m}$
-**Answer:** $3.70\,\text{m}$, three significant figures like the given data.
+**Answer:** $3.70\,\text{m}$, three significant figures like the given data. The box accepts $3.70$ or $3.7$, because they are the same number.
 **Reasonableness:** Sound travels $\tfrac{1480}{340} \approx 4.4$ times as fast in water as in air, and at the same frequency the wavelength grows in the same ratio: $0.850\,\text{m} \cdot 4.35 \approx 3.7\,\text{m}$.
 
 ## fy5-14-L2-03
