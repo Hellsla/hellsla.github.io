@@ -453,8 +453,6 @@ Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitte
 
 ## 18. Oikoluvun korjaukset FY1–FY9 (opettaja 2026-11-15)
 
-Varattu: claude/fy2-oikoluku-aineisto (FY2)
-
 Tehty: FY6 (PR #615). FY3 tehty: claude/oikoluku-fy3 (PR #613). FY7 tehty (PR #617, claude/fy7-oikoluku). P6 (fy7-8:n kaavanimi) ja fy7-8:n simulaation selite (lang/fi.json, lang/fi-easy.json "lämmöksi") tehdään kohdassa 8m.
 
 Ohjeet ja päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md` kohdat 4–11 ja 13. Kaikki luvut, kurssi kerrallaan,
@@ -476,10 +474,9 @@ kurssin rivit. FY9:n lepokitkan nimitykset ("suurin lepokitka") yhtenäistetää
 Kitkan ja energian konseptikatselmoinnin löydökset (8m:ää vanhempia): `docs/audits/2026-11-15-kitka-konseptikatselmointi.md`.
 FY9 tehty: claude/fy9-oikoluku-aineisto (PR #626); samassa PR:ssä kohdan 19 aineistotehtävät FY9-A1…A5 (fy9-ympyraliike-s7, fy9-magnetismi-valo-s7, fy9-moderni-s7, fy9-energia-s7, fy9-kaasut-s7).
 FY4 tehty: claude/fy4-oikoluku-aineisto (PR #625); samassa PR:ssä kohdan 19 aineistotehtävät FY4-A1…A5. Lähteestä tarkistamatta: fy4-5 les:316 (YTL) ja fy4-11 les:290 (OTI).
+FY2 tehty: claude/fy2-oikoluku-aineisto (PR #632); samassa PR:ssä kohdan 19 aineistotehtävät FY2-A1…A5. Kaikki kurssit tehty; jäljellä vain `docs/physics-phrases-known.tsv`:n rivit (FY5, FY6, FY9).
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9 (opettaja 2026-11-16)
-
-Varattu: claude/fy2-oikoluku-aineisto (FY2)
 
 Toimeksianto sanatarkasti: `docs/audits/2026-11-16-aineistotehtavat.md` (viisi tehtävää per kurssi, tunnisteet FY1-A1 …
 FY9-A5, lähdelinkit tarkistetaan, malliratkaisut, kolme kieltä). Tehtävät lisätään nykyiseen tehtävärakenteeseen sopivan
@@ -491,6 +488,7 @@ ja FY7: kohta 5d), ei koskaan jo katselmoitavana olevaan PR:ään; FY1 ja FY8 om
 FY5 tehty: FY5-A1…A5 (PR #624, kohdan 18 FY5:n kanssa): fy5-6-L2-09, fy5-12-L2-10, fy5-14-L2-09, fy5-17-L2-10, fy5-16-L2-10.
 FY9 tehty: FY9-A1…A5 (PR #626, kohdan 18 FY9:n kanssa).
 FY4 tehty: FY4-A1…A5 (PR #625, kohdan 18 FY4:n kanssa): fy4-11-L2-10, fy4-7-L2-10, fy4-9-L2-09, fy4-10-L2-10, fy4-8-L2-10.
+FY2 tehty: FY2-A1…A5 (PR #632, kohdan 18 FY2:n kanssa): fy2-8-L2-10 (A1), fy2-7-L2-10 (A2), fy2-8-L3-06 (A3), fy2-3-L2-09 (A4), fy2-8-L2-11 (A5). Electricity Maps korvattu OWID:lla ja Fingridillä (`docs/audits/2026-11-16-fy2-aineistot.md`).
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
