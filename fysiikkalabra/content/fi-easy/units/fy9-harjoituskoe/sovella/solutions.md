@@ -130,7 +130,7 @@ $$
 
 ### d)
 **Kysytty:** auttaako laatikon massan kasvattaminen pitämään laatikon paikallaan
-**Periaate:** Suurin lepokitka on $\mu_0 N = \mu_0 mg$. Laatikon hidastamiseen tarvitaan voima $ma$. Molemmat ovat verrannollisia massaan.
+**Periaate:** Lähtökitka eli täysin kehittynyt lepokitka on $\mu_0 N = \mu_0 mg$. Laatikon hidastamiseen tarvitaan voima $ma$. Molemmat ovat verrannollisia massaan.
 **Mallivastaus:** Raskaampi laatikko painaa lavaa enemmän. Siksi suurin mahdollinen lepokitka $\mu_0 mg$ kasvaa. Raskaamman laatikon hidastamiseen tarvitaan kuitenkin myös suurempi voima $ma$. Tämä voima kasvaa samassa suhteessa. Massa supistuu eli häviää ehdosta $ma \le \mu_0 mg$. Siksi suurin sallittu hidastuvuus $a_\text{max} = \mu_0 g$ ei riipu massasta. Ehdotus ei siis auta. Toimivia keinoja ovat nämä: laatikko sidotaan lavaan liinoilla, tai kitkakerrointa suurennetaan, esimerkiksi laatikon alle laitetaan kuminen liukueste.
 
 ### Yleisiä virheitä
@@ -229,7 +229,7 @@ $$
 
 ### c)
 **Annettu:** $R_\text{j} = 0{,}560\,\Omega$, $I = 14{,}27\,\text{A}$ (a- ja b-kohdat)
-**Kysytty:** teho $P_\text{j}$, joka muuttuu johdossa lämmöksi
+**Kysytty:** teho $P_\text{j}$, joka muuttuu johdon sisäenergiaksi
 **Periaate:** Virta kulkee johdon resistanssin läpi. Silloin sähköenergiaa muuttuu johtimen sisäenergiaksi. Johdon teho saadaan johdon omasta resistanssista ja virrasta, joka kulkee johdon läpi.
 **Kaava:** $P_\text{j} = U_\text{j} I$ ja $U_\text{j} = R_\text{j} I$ (Ohmin laki), joten $P_\text{j} = R_\text{j} I^2$
 **Muunnokset:** Ei tarvita.

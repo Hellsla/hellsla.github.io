@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 36b18b9f347ab559
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (7d1a4728dcea4f13); earlier findings kept unless named fixed.
+CONTENT-HASH: 3456a00fa850214b
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none new; round-1 findings stand)
+- C: solutions.md Vastaus: after "Siksi epävarmuus pyöristetään ylöspäin" the value could be repeated ("arvoon 0,3 m/s²") so the reader need not look back.
 
 ## Checked
-- Sign "vakiokiihtyvyys, a ei tiedossa" in the chart and the aria-label (the round-1 misleading-rule point is fixed).
-- teacher.md "Näytä kaavion rivit: kulmakerroin vie alaspäin (x→v→a) ja pinta-ala ylöspäin (v→x)" matches the three graph rows (fi PNG opened: seven rows, nothing clipped).
+- sovella/solutions.md Vastaus, the added rounding explanation. Recomputed: 2,40/1,6² = 0,9375; 2,40/1,8² = 0,741; 2,40/1,4² = 1,224; half range (1,224 − 0,741)/2 = 0,24; upper deviation 1,224 − 0,9375 = 0,29; rounding up to 0,3 is justified. Short sentences, followable for the level.
+- No task added in fi-easy.

@@ -72,34 +72,4 @@ FY8/sovella	solutions.md	heat-into	Plutonium-238:n alfahiukkaset taas pysähtyv�
 FY8/sovella	tasks.json	heat-into	Hajoamisen energia muuttuu generaattorissa lämmöksi, ja lämpösähköparit muuttavat osan lämmöstä sähköksi.
 FY8/sovella	tasks.json	heat-into	Koboltti-60: läpitunkeva gammasäteily vaatisi raskaan suojan ja vaurioittaisi elektroniikkaa, kun taas alfahiukkaset pysähtyvät jo polttoaineeseen ja niiden ene
 FY8/sovella	tasks.json	heat-into	Oletetaan, että hajoamisen koko energia muuttuu generaattorissa lämmöksi.
-units/fy9-energia	inquiry.json	heat-into	Energia säilyy, ja loput muuttuu laturissa ja akussa lämmöksi, joten verkosta otetaan enemmän kuin akkuun mahtuu.
-units/fy9-energia	inquiry.json	heat-into	Lämmöksi muuttuu $67{,}5\,\text{kJ} - 54\,\text{kJ} = 13{,}5\,\text{kJ}$, mikä tuntuu laturin lämpenemisenä.
-units/fy9-energia	inquiry.json	heat-into	Moottori ottaa enemmän, koska osa tehosta muuttuu lämmöksi: $P_\text{o} = P_\text{a} : \eta$.
-units/fy9-energia	inquiry.json	heat-into	Verkosta otetaan enemmän, koska latauksessa osa energiasta muuttuu lämmöksi: jaa hyötysuhteella.
-units/fy9-energia	sovella/solutions.md	heat-into	Energia säilyy: kaikki sisällä käytetty sähköenergia muuttuu lopulta lämmöksi, ja myös ihmiset ja auringonsäteily tuovat taloon energiaa (luku *Energialajit ja 
-units/fy9-energia	sovella/solutions.md	heat-into	Lämpötila on noin $4\,\text{K}$ sisälämpötilaa $21\,{}^\circ\text{C}$ alempi, koska valaistuksen, ruoanlaiton ja laitteiden sähköenergia muuttuu sisällä lämmöks
-units/fy9-energia	sovella/solutions.md	heat-into	Noin neljännes energiasta muuttuu putkissa, pumpussa, turbiinissa ja generaattoreissa lämmöksi, mikä on pumppuvoimaloille tyypillistä.
-units/fy9-energia	sovella/solutions.md	heat-into	Pumppuvoimala ei tuota energiaa vaan varastoi sitä: jokaisella täytöllä ja tyhjennyksellä se ottaa verkosta noin $289\,\text{MWh}$ ja antaa takaisin noin $216\,
-units/fy9-energia	sovella/tasks.json	heat-into	Selittää energian säilymisellä: laitteiden sähköenergia, ihmisten lämpö ja auringonsäteily muuttuvat sisällä lämmöksi, joten ne korvaavat osan lämpöhäviöistä.
-units/fy9-harjoituskoe	sovella/solutions.md	heat-into	### c) **Annettu:** $R_\text{j} = 0{,}560\,\Omega$, $I = 14{,}27\,\text{A}$ (a- ja b-kohdat) **Kysytty:** johdossa lämmöksi muuttuva teho $P_\text{j}$ **Periaat
-units/fy9-harjoituskoe	sovella/tasks.json	heat-into	Kuinka suuri lämmöksi muuttuva teho olisi, jos jatkojohdon johtimien poikkipinta-ala olisi $2{,}5\,\text{mm}^2$?
-units/fy9-harjoituskoe	sovella/tasks.json	heat-into	Kuinka suuri teho muuttuu jatkojohdossa lämmöksi?
-units/fy9-koe	inquiry.json	heat-into	Hyötysuhde alle sata prosenttia tarkoittaa, että osa energiasta muuttuu muuhun kuin hyötymuotoon, tässä lämmöksi.
-units/fy9-koe	inquiry.json	heat-into	Se energia, joka ei muutu valoksi, muuttuu saman tien lämmöksi lampussa ja ympäristössä.
-units/fy9-koe	inquiry.json	heat-into	Se muuttuu lämmöksi lampussa ja ympäristössä; energiaa ei katoa.
-units/fy9-koe	inquiry.json	heat-into	Sen ottama sähköenergia muuttuu valoksi ja lämmöksi, ja niiden summa on yhtä suuri kuin otettu energia.
-units/fy9-koe	sovella/solutions.md	heat-into	### c) **Annettu:** $\Delta E_\text{p} = 36\,198{,}9\,\text{J}$, vastusvoima $F_\text{v} = 18\,\text{N}$, tien pituus $s = 1{,}20\,\text{km}$, $t = 270\,\text{s
-units/fy9-koe	sovella/solutions.md	heat-into	Loput muuttuu lihaksissa lämmöksi.
 units/fy9-lampo	sovella/solutions.md	heat-into	### d) **Kysytty:** miksi yhden mittauksen tulos $2{,}54\,\text{MJ/kg}$ on liian suuri ja kumpi tulos on luotettavampi **Periaate:** Energia säilyy: kuumentimen
-units/fy9-lampo	sovella/solutions.md	heat-into	- d-kohdassa väitetään, että moottorijarrutuksessa energia ei muutu lämmöksi lainkaan.
-units/fy9-magnetismi-valo	inquiry.json	heat-into	Kuinka suuri virta kaapelissa kulkisi kummallakin jännitteellä, ja kuinka suuri osa tehosta muuttuisi kaapelissa lämmöksi?
-units/fy9-magnetismi-valo	sovella/solutions.md	heat-into	### c) **Annettu:** linjan virta $I_2 = 7{,}50\,\text{A}$ (b-kohta), resistanssi $R = 6{,}0\,\Omega$, linjan jännite $U_2 = 20{,}0\,\text{kV}$, teho $P = 150\,\
-units/fy9-magnetismi-valo	sovella/solutions.md	heat-into	Jännitteellä $400\,\text{V}$: $I = 375\,\text{A}$ ja $RI^2 = 6{,}0\,\Omega \cdot (375\,\text{A})^2 = 843\,750\,\text{W} \approx 844\,\text{kW}$ **Vastaus:** Lin
-units/fy9-magnetismi-valo	sovella/tasks.json	heat-into	Kuinka suuri osa siirrettävästä tehosta muuttuu linjassa lämmöksi?
-units/fy9-magnetismi-valo	unit.md	heat-into	Johdon päiden välinen jännite on jännitehäviö johtimessa $RI$, ja johdossa lämmöksi muuttuva teho on tämän jännitteen ja virran tulo:
-units/fy9-magnetismi-valo	unit.md	heat-into	Jännitteellä $230\,\text{V}$ kaapelissa kulkisi virta $I = \tfrac{P}{U} \approx 174\,\text{A}$, ja kaapelin resistanssissa lämmöksi muuttuisi noin $15\,\text{kW
-units/fy9-magnetismi-valo	unit.md	heat-into	Osa tehosta muuttuu johdossa lämmöksi, ja tämä häviöteho $P_\text{h}$ ($\text{W}$) riippuu johdossa kulkevasta virrasta.
-units/fy9-sailymislait	sovella/solutions.md	heat-into	Liikemäärä ei ole energian laji, eikä se voi muuttua lämmöksi.
-units/fy9-sailymislait	sovella/solutions.md	heat-into	Lämmöksi ja ääneksi muuttuu kimmottomassa törmäyksessä liike-energiaa: tässäkin liike-energiasta katosi kokeessa 2 noin puolet.
-units/fy9-sailymislait	sovella/tasks.json	heat-into	Toteaa, että lämmöksi ja ääneksi muuttuu liike-energiaa, ei liikemäärää: liikemäärä ei ole energian laji.
-units/fy9-sailymislait	unit.md	heat-into	Liikemäärä ei muutu lämmöksi: lämmöksi muuttuu energiaa.

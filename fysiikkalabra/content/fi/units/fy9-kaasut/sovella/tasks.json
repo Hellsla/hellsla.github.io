@@ -1,5 +1,5 @@
 {
- "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin paineen, kaasut ja lämpövoimakoneen. Ratkaise ne kuten kokeessa: perustele mallin valinta, tarkista lämpötila kelvineinä ja paine kokonaispaineena, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+ "intro": "Seitsemän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin paineen, kaasut ja lämpövoimakoneen. Viimeinen tehtävä on soveltava aineistotehtävä, jonka aineisto avautuu tehtävän linkistä. Ratkaise ne kuten kokeessa: perustele mallin valinta, tarkista lämpötila kelvineinä ja paine kokonaispaineena, ratkaise kysytty suure ennen lukujen sijoittamista ja arvioi tuloksen järkevyys. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
  "tasks": [
   {
    "id": "fy9-kaasut-s1",
@@ -674,6 +674,166 @@
     "concept": "fy4-5",
     "communication": "fy4-6",
     "transfer": "fy4-6"
+   }
+  },
+  {
+   "id": "fy9-kaasut-s7",
+   "title": "Mihin ydinvoimalan energia siirtyy?",
+   "source": "statistics",
+   "source_note": "TVO 2026, Olkiluoto 3: rakenne ja tekniset tiedot (https://www.tvo.fi/tuotanto/laitosyksikot/ol3/rakennejateknisettiedot.html). Tarkistettu 16.11.2026. Meriveden tiheys ja ominaislämpökapasiteetti ovat puhtaan veden arvoja, ja meriveden lämpötila $10\\,{}^\\circ\\text{C}$ on oletus.",
+   "skills": [
+    "fy3-15",
+    "fy3-11",
+    "fy3-6",
+    "fy3-5"
+   ],
+   "text": "Olkiluoto 3 on Suomen suurin ydinvoimalaitosyksikkö. Sen painevesireaktorissa uraaniytimien fissiot lämmittävät vettä, ja vedestä tehdään höyryä, joka pyörittää turbiinia ja generaattoria. Turbiinin jälkeen höyry tiivistyy vedeksi lauhduttimessa, jota jäähdytetään merivedellä.\n\nAvaa Teollisuuden Voiman (TVO) sivu [Olkiluoto 3: rakenne ja tekniset tiedot](https://www.tvo.fi/tuotanto/laitosyksikot/ol3/rakennejateknisettiedot.html). Sivulle pääsee myös TVO:n Olkiluoto 3 ‑sivun kohdasta ”Rakenne ja tekniset tiedot”. Lue taulukosta ”OL3 tekniset tiedot” rivit *Sähköteho, netto*, *Reaktorin lämpöteho*, *Tuotehöyryn lämpötila* ja *Merivesivirtaus*. Nettosähköteho on verkkoon syötetty sähköteho: generaattorin tehosta on vähennetty laitoksen oma kulutus. Mallivastaus käyttää arvoja, jotka taulukossa olivat 16.11.2026.\n\nKäytä näitä oletuksia:\n\n- laitos toimii nimellistehollaan, ja kaikki se reaktorin lämpöteho, jota ei saada sähkötehona verkkoon, siirtyy lauhduttimessa lämpönä meriveteen\n- meriveden tiheys on $1{,}00 \\cdot 10^{3}\\,\\tfrac{\\text{kg}}{\\text{m}^3}$ ja ominaislämpökapasiteetti $4{,}19\\,\\tfrac{\\text{kJ}}{\\text{kg}\\cdot\\text{K}}$ (puhtaan veden arvot)\n- meriveden lämpötila ennen lauhdutinta on noin $10\\,{}^\\circ\\text{C}$",
+   "parts": [
+    {
+     "id": "a",
+     "kind": "calc",
+     "points": 2,
+     "text": "Kuinka suuri on aineiston mukaan reaktorin lämpöteho ja kuinka suuri laitoksen nettosähköteho? Laske niistä laitoksen hyötysuhde, ja vertaa tulosta taulukon riviin *Kokonaishyötysuhde*.",
+     "answer": {
+      "value": 37.21,
+      "unit": "%",
+      "tolerance": 0.02
+     },
+     "criteria": [
+      {
+       "text": "Lukee aineistosta oikeat suureet: reaktorin lämpöteho $4300\\,\\text{MW}$ ja nettosähköteho noin $1600\\,\\text{MW}$ (arvot 16.11.2026).",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$$\n\\begin{aligned}\n\\eta &= \\dfrac{P_\\text{s}}{P_1} = \\dfrac{1600\\,\\text{MW}}{4300\\,\\text{MW}} \\\\\n&\\approx 0{,}37 = 37\\,\\%\n\\end{aligned}\n$$ Tulos on sama kuin taulukon ”n. $37\\,\\%$”."
+      }
+     ]
+    },
+    {
+     "id": "b",
+     "kind": "calc",
+     "points": 3,
+     "text": "Kuinka suuri lämpöteho siirtyy laitoksesta ympäristöön, kun laitos toimii nimellistehollaan? Kuinka suuri energia siirtyy ympäristöön lämpönä yhden vuorokauden aikana?",
+     "answer": [
+      {
+       "name": "P2",
+       "value": 2700,
+       "unit": "MW",
+       "tolerance": 0.02
+      },
+      {
+       "name": "Q2",
+       "value": 64.8,
+       "unit": "GWh",
+       "tolerance": 0.02
+      }
+     ],
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Energia säilyy ja laitos toimii tasaisesti, joten $P_1 = P_\\text{s} + P_2$ eli $P_2 = P_1 - P_\\text{s}$, ja $Q_2 = P_2 t$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "$P_2 = 2700\\,\\text{MW}$ ja $$\n\\begin{aligned}\nQ_2 &= 2700\\,\\text{MW} \\cdot 24\\,\\text{h} \\\\\n&= 64\\,800\\,\\text{MWh}\n\\end{aligned}\n$$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "$Q_2 \\approx 65\\,\\text{GWh}$ tai $2{,}3 \\cdot 10^{14}\\,\\text{J}$; kaksi merkitsevää numeroa, koska sähköteho on annettu likiarvona sadan megawatin tarkkuudella."
+      }
+     ]
+    },
+    {
+     "id": "c",
+     "kind": "calc",
+     "points": 4,
+     "text": "Lauhduttimen läpi virtaa merivettä aineiston rivin *Merivesivirtaus* verran. Johda symbolein lauseke meriveden lämpötilan muutokselle, kun tunnetaan veteen aikayksikössä siirtyvä lämpö eli lämpöteho ja sekunnissa virtaavan veden tilavuus. Kuinka paljon merivesi lämpenee lauhduttimessa? Arvioi, onko todellinen lämpeneminen laskettua suurempi vai pienempi.",
+     "answer": {
+      "value": 11.31,
+      "unit": "K",
+      "tolerance": 0.03
+     },
+     "criteria": [
+      {
+       "key": "equation",
+       "points": 1,
+       "detail": "Ajassa $t$ virtaavan veden massa on $m = \\rho V$ ja siihen siirtyy lämpö $Q = P_2 t$, joten $P_2 t = c\\rho V \\Delta T$ ja $\\Delta T = \\dfrac{P_2 t}{c\\rho V}$."
+      },
+      {
+       "key": "calculation",
+       "points": 1,
+       "detail": "Aineistosta $\\dfrac{V}{t} = 57\\,\\tfrac{\\text{m}^3}{\\text{s}}$ (16.11.2026); $\\Delta T = \\dfrac{2{,}7 \\cdot 10^{9}\\,\\text{W}}{2{,}388 \\cdot 10^{8}\\,\\tfrac{\\text{W}}{\\text{K}}} \\approx 11{,}3\\,\\text{K}$"
+      },
+      {
+       "key": "units_precision",
+       "points": 1,
+       "detail": "Megawatit wateiksi ja kilojoulet jouleiksi; $\\Delta T \\approx 11\\,\\text{K}$ eli $11\\,{}^\\circ\\text{C}$, kaksi merkitsevää numeroa."
+      },
+      {
+       "key": "assumptions",
+       "points": 1,
+       "detail": "Oletettiin, että kaikki luovutettu lämpö siirtyy meriveteen. Pieni osa siirtyy muuta kautta ympäristöön, joten todellinen lämpeneminen on hieman pienempi: tulos on yläraja-arvio."
+      }
+     ]
+    },
+    {
+     "id": "d",
+     "kind": "word",
+     "points": 3,
+     "text": "Laitoksen hyötysuhde jää selvästi alle $100\\,\\%$:n. Selitä lämpövoimakoneen toimintaperiaatteen avulla, miksi kaikkea reaktorin lämpöä ei voi muuttaa sähköenergiaksi, vaikka turbiini ja generaattori toimisivat ilman kitkaa ja muita häviöitä. Käytä perustelussa aineiston höyryn lämpötilaa ja meriveden lämpötilaa.",
+     "criteria": [
+      {
+       "text": "Kuvaa laitoksen lämpövoimakoneena: se ottaa kuumasta lähteestä lämmön $Q_1$, tekee turbiinissa työn $W$ ja luovuttaa lämmön $Q_2$ kylmempään meriveteen, ja energian säilymisen mukaan $W = Q_1 - Q_2$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Perustelee, että lämpö siirtyy itsestään vain kuumemmasta kylmempään ja kone voi tehdä työtä vain, kun osa lämmöstä luovutetaan kylmempään ympäristöön; kitkan ja muiden häviöiden poistaminen ei poista lämpöä $Q_2$.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Käyttää lämpötiloja: höyry $290\\,{}^\\circ\\text{C} \\approx 563\\,\\text{K}$ (aineisto 16.11.2026) ja merivesi noin $283\\,\\text{K}$. Mitä pienempi lämpötilaero on kuuman lähteen lämpötilaan nähden, sitä pienempi osa lämmöstä voi muuttua työksi; tässä ero $280\\,\\text{K}$ on vain noin puolet lämpötilasta $563\\,\\text{K}$.",
+       "tag": "concept",
+       "points": 1
+      }
+     ]
+    },
+    {
+     "id": "e",
+     "kind": "word",
+     "points": 3,
+     "text": "Arvioi b- ja c-kohdan tulosten avulla, miten mereen siirtyvä lämpö voi vaikuttaa ympäristöön laitoksen lähellä. Selitä myös, miksi tätä lämpöä on vaikea käyttää hyödyksi esimerkiksi kaukolämpönä, vaikka sitä on paljon.",
+     "criteria": [
+      {
+       "text": "Selittää ympäristövaikutuksen: mereen siirtyvä lämpö kasvattaa meriveden sisäenergiaa, joten vesi lämpenee purkupaikan lähellä, enintään noin $11\\,\\text{K}$. Mainitsee seurauksen, esimerkiksi talvella sulana pysyvän alueen tai vaikutuksen eliöiden kasvuun ja lajistoon.",
+       "tag": "concept",
+       "points": 1
+      },
+      {
+       "text": "Perustelee, että lämpö on matalassa lämpötilassa: jäähdytysvesi on vain noin $11\\,\\text{K}$ merta lämpimämpää, joten lämpö ei siirry siitä itsestään lämmitysverkon selvästi kuumempaan veteen. Jos lämpö otettaisiin talteen kuumempana, lämpövoimakoneen kylmä lämpötila nousisi ja sähköä saataisiin vähemmän.",
+       "tag": "transfer",
+       "points": 1
+      },
+      {
+       "key": "conclusion",
+       "points": 1,
+       "detail": "Lämpöä on paljon, noin $65\\,\\text{GWh}$ vuorokaudessa, mutta sen käyttökelpoisuus on huono; lisäksi suuret lämmön käyttäjät ovat kaukana ja pitkässä siirrossa osa lämmöstä siirtyy ympäristöön."
+      }
+     ]
+    }
+   ],
+   "links": {
+    "concept": "fy3-11",
+    "math": "fy3-6",
+    "transfer": "fy3-15",
+    "communication": "fy3-15"
    }
   }
  ]

@@ -105,9 +105,9 @@ $$, smaller than the about $1.2\,\text{kg/m}^3$ of air, as the ratio of the mola
 **Reasonableness:** What goes to waste is $$
 \begin{aligned}
 &485\,\text{kW} - 175\,\text{kW} - 233\,\text{kW} \\
-&\approx 78\,\text{kW}
+&\approx 77\,\text{kW}
 \end{aligned}
-$$, that is, $16\,\%$, the same as $25\,\%$ of the heat power. The result is of the same order of magnitude as the $85$–$90\,\%$ of combined heat and power plants.
+$$, that is, $16\,\%$, the same as $25\,\%$ of the heat power. The result is of the same order of magnitude as the $85$–$90\,\%$ of combined heat and power plants. The difference above is calculated from the rounded powers; with the unrounded values it is $77.6\,\text{kW}$.
 
 ### Yleisiä virheitä
 - In part a the temperature is substituted in degrees Celsius, so the amount of substance comes out over ten times too large, $26\,000\,\text{mol}$.
@@ -388,7 +388,7 @@ The resolution of the scale, $0.01\,\text{g}$, is less than $1\,\%$ of the incre
 If the points lie on a straight line but the line does not pass through the origin, this reveals a systematic error, for example air escaping every time on detaching.
 
 ### Yleisiä virheitä
-- In part a the amount of substance is calculated with the total pressure $311\,\text{kPa}$ and not with the increase in pressure, so the result is a third.
+- In part a the amount of substance is calculated with the total pressure $311\,\text{kPa}$ and not with the increase in pressure, so the molar mass comes out at about two thirds of the correct one.
 - In part b it is only stated that “there were measurement errors” without naming the source of error or the direction of its effect.
 - In part b the bulging of the bottle is named as the cause of the result being too small, although it acts the opposite way.
 - In part c only “more precise instruments” are proposed without telling what is measured and how.
@@ -491,3 +491,109 @@ $$, $\Delta p_\text{w} = \dfrac{792.7\,\text{N}}{0.30 \cdot 0.070\,69\,\text{m}^
 
 ### Hyväksytään myös
 - In parts a and b the normal force from the rim of the pad may also be drawn in the force diagram, when the answer says that it is zero at the minimum partial vacuum (a) or equal to the force of the pressure difference (b).
+
+## fy9-kaasut-s7
+
+### a)
+**Given:** from the table “OL3 tekniset tiedot” of the source (values on 16 Nov 2026): thermal power of the reactor $P_1 = 4300\,\text{MW}$ and net electrical power $P_\text{s} \approx 1600\,\text{MW}$
+**Find:** the efficiency $\eta$ of the plant
+**Principle:** A nuclear power plant is a heat engine: it takes the heat $Q_1$ from the reactor and does the work $W$, which is obtained from the generator as electrical energy. The efficiency is the share of work in the heat taken (chapter *Work done by a gas and the heat engine*). In the same time $t$, $W = P_\text{s} t$ and $Q_1 = P_1 t$, so the efficiency can be calculated from the powers (chapter *Energy production and the efficiency of power plants*).
+**Formula:** $\eta = \dfrac{W}{Q_1} = \dfrac{P_\text{s} t}{P_1 t} = \dfrac{P_\text{s}}{P_1}$
+**Conversions:** Not needed: both powers are in megawatts.
+**Substitution:** $\eta = \dfrac{1600\,\text{MW}}{4300\,\text{MW}} = 0.372$
+**Answer:** $\eta \approx 37\,\%$. The answer has two significant figures, because the source gives the electrical power as an approximate value, “n. $1600\,\text{MW}$” (n. = about), that is to the nearest hundred megawatts.
+**Reasonableness:** The result is the same as in the row *Kokonaishyötysuhde* of the table, “n. $37\,\%$”. It is of the same order as the efficiency of other steam power plants, about $40\,\%$.
+
+### b)
+**Given:** $P_1 = 4300\,\text{MW}$, $P_\text{s} \approx 1600\,\text{MW}$, time $t = 1\,\text{d}$
+**Find:** the heat power $P_2$ transferred to the environment and the energy $Q_2$ transferred as heat in one day
+**Principle:** Energy is conserved. When the plant runs steadily at its rated power, its internal energy does not change, so energy leaves the plant at the same rate as the reactor releases it. The power that leaves is the electrical power and the heat power transferred to the environment (chapter *Internal energy, heat and conservation of energy*). Power is energy per time.
+**Formula:** $P_1 = P_\text{s} + P_2$, so $P_2 = P_1 - P_\text{s}$. From the definition of power, $P_2 = \dfrac{Q_2}{t}$, we get $Q_2 = P_2 t$.
+**Conversions:** $t = 1\,\text{d} = 24\,\text{h}$ and for joules $t = 24 \cdot 3600\,\text{s} = 86\,400\,\text{s}$; $2700\,\text{MW} = 2.7 \cdot 10^{9}\,\text{W}$ and $1\,\text{GWh} = 1000\,\text{MWh}$
+**Substitution:** $P_2 = 4300\,\text{MW} - 1600\,\text{MW} = 2700\,\text{MW}$ and $$
+\begin{aligned}
+Q_2 &= 2700\,\text{MW} \cdot 24\,\text{h} \\
+&= 64\,800\,\text{MWh} \\
+&= 64.8\,\text{GWh}
+\end{aligned}
+$$ In joules $$
+\begin{aligned}
+Q_2 &= 2.7 \cdot 10^{9}\,\text{W} \cdot 86\,400\,\text{s} \\
+&= 2.333 \cdot 10^{14}\,\text{J}
+\end{aligned}
+$$
+**Answer:** $P_2 \approx 2700\,\text{MW} = 2.7\,\text{GW}$ and $Q_2 \approx 65\,\text{GWh} \approx 2.3 \cdot 10^{14}\,\text{J}$. The answers have two significant figures, because the electrical power is given to the nearest hundred megawatts and the difference therefore has the same precision.
+**Reasonableness:** The share of the heat power is $2700 : 4300 \approx 63\,\%$, and $63\,\% + 37\,\% = 100\,\%$. The electrical energy obtained in one day is $$
+\begin{aligned}
+&1600\,\text{MW} \cdot 24\,\text{h} \\
+&= 38.4\,\text{GWh}
+\end{aligned}
+$$ and the sum $$
+\begin{aligned}
+&64.8\,\text{GWh} + 38.4\,\text{GWh} \\
+&= 103.2\,\text{GWh}
+\end{aligned}
+$$ is the same as the energy the reactor releases in one day, $4300\,\text{MW} \cdot 24\,\text{h}$. The order of magnitude can be checked from the source: at rated power for the whole year ($8760\,\text{h}$) the electricity would be $$
+\begin{aligned}
+&1600\,\text{MW} \cdot 8760\,\text{h} \\
+&\approx 14\,\text{TWh}
+\end{aligned}
+$$ The yearly production in the table is “n. $13\,\text{TWh}$”, because the plant does not run at full power all year.
+
+### c)
+**Given:** heat power transferred to the seawater $P_2 = 2700\,\text{MW}$ (part b); from the source (16 Nov 2026) the seawater flow, that is the volume of water flowing per second, $\dfrac{V}{t} = 57\,\tfrac{\text{m}^3}{\text{s}}$; $\rho = 1.00 \cdot 10^{3}\,\tfrac{\text{kg}}{\text{m}^3}$ and $c = 4.19\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}}$
+**Find:** the change $\Delta T$ in the temperature of the seawater in the condenser
+**Principle:** The state of the seawater does not change, so the heat transferred to the water raises its temperature according to the equation $Q = cm\Delta T$ (chapter *Heating and cooling of matter*). Consider the time $t$: in that time an amount of water with the volume $V$ and the mass $m = \rho V$ flows through the condenser, and the heat $Q = P_2 t$ is transferred to it. By the assumption, all the heat given off is transferred to the seawater.
+**Formula:** $$
+\begin{aligned}
+Q &= cm\Delta T \\
+P_2 t &= c\rho V \Delta T \\
+\Delta T &= \dfrac{P_2 t}{c\rho V} = \dfrac{P_2}{c\rho \cdot \dfrac{V}{t}}
+\end{aligned}
+$$
+**Conversions:** $P_2 = 2700 \cdot 10^{6}\,\text{W} = 2.7 \cdot 10^{9}\,\text{W}$ and $c = 4.19 \cdot 1000\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
+**Substitution:** The denominator is $$
+\begin{aligned}
+c\rho \cdot \dfrac{V}{t} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1.00 \cdot 10^{3}\,\tfrac{\text{kg}}{\text{m}^3} \\
+&\quad \cdot 57\,\tfrac{\text{m}^3}{\text{s}} \\
+&= 2.388 \cdot 10^{8}\,\tfrac{\text{W}}{\text{K}}
+\end{aligned}
+$$ so $$
+\begin{aligned}
+\Delta T &= \dfrac{2.7 \cdot 10^{9}\,\text{W}}{2.388 \cdot 10^{8}\,\tfrac{\text{W}}{\text{K}}} \\
+&= 11.3\,\text{K}
+\end{aligned}
+$$
+**Answer:** $\Delta T \approx 11\,\text{K}$, that is, the seawater warms by about $11\,{}^\circ\text{C}$. The answer has two significant figures like the heat power and the seawater flow $57\,\tfrac{\text{m}^3}{\text{s}}$. The real warming is slightly smaller, because a small part of the heat goes to the environment by other routes than the condenser: the result is an upper estimate. The salt of the seawater changes the result only a little, since the density of salty water is slightly larger and its specific heat capacity slightly smaller than those of pure water.
+**Reasonableness:** The unit is right, since $\text{W} : \tfrac{\text{W}}{\text{K}} = \text{K}$. In one second $57\,000\,\text{kg}$ of water flows, so the heat transferred per kilogram is $$
+\begin{aligned}
+&2.7 \cdot 10^{9}\,\text{J} : 57\,000\,\text{kg} \\
+&\approx 47\,\text{kJ}
+\end{aligned}
+$$ and $47\,\text{kJ} : 4.19\,\text{kJ/K} \approx 11\,\text{K}$. A warming of about ten degrees is believable: seawater at $10\,{}^\circ\text{C}$ returns to the sea at about $21\,{}^\circ\text{C}$, clearly warmer but not hot.
+
+### d)
+**Find:** why not all the heat of the reactor can be turned into electrical energy
+**Principle:** A heat engine takes the heat $Q_1$ from a hot source, does the work $W$ and gives the heat $Q_2$ to a colder environment, and by the conservation of energy $W = Q_1 - Q_2$. The smaller the temperature difference $T_1 - T_2$ is compared with the temperature $T_1$ of the hot source, the smaller the share of the heat the engine can turn into work (chapter *Work done by a gas and the heat engine*).
+**Model answer:** A nuclear power plant is a heat engine. The heat of the reactor is used to make steam whose temperature is, according to the source (16 Nov 2026), $290\,{}^\circ\text{C}$. The steam does work in the turbine, and the generator turns the work into electrical energy. The steam does work only when it expands through the turbine towards a lower pressure and temperature. That is why the steam must give heat to something colder after the turbine: in the condenser the heat $Q_2$ is transferred to the seawater, whose temperature is about $10\,{}^\circ\text{C}$. Heat flows by itself only from hotter to colder, and the heat $Q_2$ cannot be returned to the hot steam without doing work. So the work obtained is at most $W = Q_1 - Q_2$, and $Q_2$ is always larger than zero. Removing friction and other losses does not change this, because $Q_2$ is not a loss but a condition for the engine to work.
+
+The temperatures tell why $Q_2$ is large. In kelvins the steam is at $T_1 = (290 + 273)\,\text{K} = 563\,\text{K}$ and the seawater at $T_2 \approx 283\,\text{K}$. The temperature difference of $280\,\text{K}$ is only about half of the temperature of the hot source, so a large part of the heat must be given to the sea. The friction, flow losses and own electricity consumption of the real plant reduce the share of electricity still further, to $37\,\%$. The efficiency would improve if the steam were hotter, but in a pressurised water reactor the steam temperature is limited by the pressure of the water and the strength of the materials.
+
+### e)
+**Find:** the effect of the heat transferred to the sea on the environment, and the reasons that limit the use of the heat
+**Principle:** Energy transferred as heat increases the internal energy of the substance that receives it, and its temperature rises (chapter *Internal energy, heat and conservation of energy*). Heat flows by itself only from hotter to colder, and the work of a heat engine decreases when the temperature of its cold side rises (chapter *Work done by a gas and the heat engine*).
+**Model answer:** Heat is transferred to the sea at a rate of $2700\,\text{MW}$, about $65\,\text{GWh}$ a day. The energy does not disappear: it increases the internal energy of the seawater. The cooling water returns to the sea about $11\,\text{K}$ warmer and mixes with the surrounding water, so the sea warms clearly only near the outlet. There the sea can stay free of ice in winter, the ice is weak and the growing season becomes longer. Warmer water changes the living conditions of organisms: some species benefit and some suffer, and the growth of algae can increase. The effect on the temperature of the whole sea area is small, because the heat spreads into a large amount of water and is transferred from it on to the air.
+
+There is a lot of heat, but it is at a low temperature. The cooling water is only about $11\,\text{K}$ warmer than the sea, that is about $21\,{}^\circ\text{C}$. Heat flows by itself only to something colder, so this water cannot heat the water of a district heating network, which must be clearly hotter in order to heat buildings and domestic water. If the heat were taken out hotter, the steam would have to be taken from the turbine earlier. Then the temperature of the cold side of the heat engine would rise, the temperature difference would decrease and the plant would produce less electricity. In addition, the large users of heat are far from the plant: a long transfer pipe is expensive, and on the way part of the heat goes to the environment. That is why most of the heat is led to the sea, although the amount of energy is large.
+
+### Yleisiä virheitä
+- In part a the efficiency is calculated the wrong way round, $4300 : 1600$, or the electrical power is divided by the heat power transferred to the sea, $2700\,\text{MW}$.
+- In part b megawatt-hours are converted to joules by multiplying only by $3600$ without the factor $10^{6}$, or $24\,\text{s}$ is substituted for a day.
+- In part c the temperature change is calculated from the whole thermal power $4300\,\text{MW}$, which gives $18\,\text{K}$, or kilojoules are not converted to joules.
+- In part d the answer is that no more electricity is obtained “because of friction and losses”. Even a lossless heat engine gives heat to something colder.
+- In part e the answer says that the energy “disappears into the sea” or “turns into heat”. The energy is transferred to the sea as heat and increases the internal energy of the seawater.
+
+### Hyväksytään myös
+- In part b the energy may be given in megawatt-hours, gigawatt-hours or joules.
+- In part c one second may be considered: $57\,\text{m}^3$ of water, that is $57\,000\,\text{kg}$, receives the heat $2.7 \cdot 10^{9}\,\text{J}$, and $\Delta T = \dfrac{Q}{cm} \approx 11\,\text{K}$.
+- In part c the warming may be given in kelvins or in degrees Celsius, because the temperature change is the same number in both.

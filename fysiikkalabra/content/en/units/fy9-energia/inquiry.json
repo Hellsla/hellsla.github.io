@@ -29,17 +29,17 @@
       "prompt": "A sledge slides down a hill and stops on level snow. What has finally happened to the sledge's potential energy?",
       "choices": [
         {
-          "text": "It has become thermal energy of the snow, the runners and the air.",
-          "feedback": "Correct. Friction and air resistance transform mechanical energy into thermal energy, and the total energy is conserved. Review if needed in the chapter *Forms of energy and conservation of energy*.",
+          "text": "It has become internal energy of the snow, the runners and the air.",
+          "feedback": "Correct. Friction and air resistance transform mechanical energy into internal energy, and the total energy is conserved. Review if needed in the chapter *Forms of energy and conservation of energy*.",
           "correct": true
         },
         {
           "text": "It has been used up, because the sledge no longer moves.",
-          "feedback": "Energy is not used up and does not disappear. The kinetic energy has been transformed by friction into thermal energy, which spreads into the snow and the air. Review the chapter *Forms of energy and conservation of energy*."
+          "feedback": "Energy is not used up and does not disappear. The kinetic energy has been transformed by friction into internal energy, which spreads into the snow and the air. Review the chapter *Forms of energy and conservation of energy*."
         },
         {
           "text": "It is still in the sledge as potential energy.",
-          "feedback": "The sledge is now lower than at the start, so its potential energy is smaller. The difference has become thermal energy by way of the motion. Review the chapter *Forms of energy and conservation of energy*."
+          "feedback": "The sledge is now lower than at the start, so its potential energy is smaller. The difference has become internal energy by way of the motion. Review the chapter *Forms of energy and conservation of energy*."
         }
       ]
     },
@@ -403,7 +403,7 @@
       "mistakes": [
         {
           "value": 6.278,
-          "feedback": "This is the useful power that goes into lifting. The motor takes more, because part of the power becomes heat: $P_\\text{o} = P_\\text{a} : \\eta$."
+          "feedback": "This is the useful power that goes into lifting. The motor takes more, because part of the energy becomes internal energy: $P_\\text{o} = P_\\text{a} : \\eta$."
         },
         {
           "value": 4.709,
@@ -462,7 +462,7 @@
       "mistakes": [
         {
           "value": 54,
-          "feedback": "This is the energy going into the battery in kilojoules. More is taken from the grid, because in charging part of the energy becomes heat: divide by the efficiency."
+          "feedback": "This is the energy going into the battery in kilojoules. More is taken from the grid, because in charging part of the energy becomes internal energy: divide by the efficiency."
         },
         {
           "value": 43.2,
@@ -474,7 +474,7 @@
         }
       ],
       "practice": "Review converting the watt-hour in the chapter [*Power*](fy2-3.html) and the energy taken in in the chapter [*Efficiency*](fy2-4.html).",
-      "solution": "**Given:** energy going into the battery $W_\\text{a} = 15\\,\\text{Wh}$, efficiency $\\eta = 80\\,\\%$\n\n**Find:** the energy $W_\\text{o}$ taken from the grid, in kilojoules\n\n**Principle:** The efficiency is the fraction of the energy taken from the grid that is stored in the battery. Energy is conserved, and the rest becomes heat in the charger and the battery, so more is taken from the grid than the battery holds.\n\n**Formula:** $\\eta = \\dfrac{W_\\text{a}}{W_\\text{o}}$, so $W_\\text{o} = \\dfrac{W_\\text{a}}{\\eta}$\n\n**Conversions:** $15\\,\\text{Wh} = 15 \\cdot 1\\,\\text{W} \\cdot 3600\\,\\text{s} = 54\\,000\\,\\text{J}$ and $80\\,\\% = 0.80$; finally $1\\,\\text{J} = 0.001\\,\\text{kJ}$.\n\n**Substitution:** $W_\\text{o} = \\dfrac{54\\,000\\,\\text{J}}{0.80} = 67\\,500\\,\\text{J} = 67.5\\,\\text{kJ}$\n\n**Answer:** $68\\,\\text{kJ}$, two significant figures like the energy $15\\,\\text{Wh}$ and the efficiency $80\\,\\%$.\n\n**Reasonableness:** The energy taken in is a quarter greater than the energy going into the battery, $1 : 0.80 = 1.25$. The part that becomes heat is $67.5\\,\\text{kJ} - 54\\,\\text{kJ} = 13.5\\,\\text{kJ}$, which is felt as the charger warming up. The amount is small: less than $0.02\\,\\text{kWh}$."
+      "solution": "**Given:** energy going into the battery $W_\\text{a} = 15\\,\\text{Wh}$, efficiency $\\eta = 80\\,\\%$\n\n**Find:** the energy $W_\\text{o}$ taken from the grid, in kilojoules\n\n**Principle:** The efficiency is the fraction of the energy taken from the grid that is stored in the battery. Energy is conserved, and the rest becomes internal energy in the charger and the battery, so more is taken from the grid than the battery holds.\n\n**Formula:** $\\eta = \\dfrac{W_\\text{a}}{W_\\text{o}}$, so $W_\\text{o} = \\dfrac{W_\\text{a}}{\\eta}$\n\n**Conversions:** $15\\,\\text{Wh} = 15 \\cdot 1\\,\\text{W} \\cdot 3600\\,\\text{s} = 54\\,000\\,\\text{J}$ and $80\\,\\% = 0.80$; finally $1\\,\\text{J} = 0.001\\,\\text{kJ}$.\n\n**Substitution:** $W_\\text{o} = \\dfrac{54\\,000\\,\\text{J}}{0.80} = 67\\,500\\,\\text{J} = 67.5\\,\\text{kJ}$\n\n**Answer:** $68\\,\\text{kJ}$, two significant figures like the energy $15\\,\\text{Wh}$ and the efficiency $80\\,\\%$.\n\n**Reasonableness:** The energy taken in is a quarter greater than the energy going into the battery, $1 : 0.80 = 1.25$. The part that becomes internal energy is $67.5\\,\\text{kJ} - 54\\,\\text{kJ} = 13.5\\,\\text{kJ}$, which is felt as the charger warming up. The amount is small: less than $0.02\\,\\text{kWh}$."
     },
     {
       "id": "tarkistus-3",

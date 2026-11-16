@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7350c01843e2bbee
-Round 3 delta against a5cfa11854335811.
+CONTENT-HASH: 15f19034f31ca8a5
+Round 2: delta against the version round 1 reviewed (fix round 1).
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- C (round 2, stands): the chart writes F = mv²/r for the bend, the Kaava F_μ = mv²/r; same force, both correct.
+- C: s7 b reasonableness: the 0.9 % difference comes almost wholly from the period (a 400 km orbit has T = 92.4 min, and (92.4 : 92)^2 = 1.009); "and by the height chosen for the model together" is harmless, since the two given values are simply not an exactly matching pair.
 
 ## Checked
-- Diff: the label "static friction turns the car" shortened to "→ static friction" before the pill F = mv²/r; physics unchanged (tyres do not slip, static friction is the only horizontal force and supplies the centripetal force; worked example line 380 agrees).
-- aria-label ("A bend on a level road: static friction turns the car, and the friction force equals m v squared per r") states the same physics.
-- Hash at start and end: 7350c01843e2bbee.
+- s7 a: the new sentence says correctly that 370-460 km is the range in which the altitude is kept over time and not a variation within one orbit; 90 km : 6771 km = 1.3 %, and the conclusion (circular orbit is a good model) still follows.
+- s7 b: recomputed a_n = 4 pi^2 r : T^2 = 8.773 m/s^2, field strength 8.69 m/s^2, difference 0.9 %; the corrected explanation is consistent with these.
+- s7 e: the angle is now defined (at the centre of the Earth, from the direction pointing straight away from the Sun). For a cylindrical shadow the station is at its edge when r sin(theta) = R, so the statement is right; theta = 70.2 degrees, 2 theta : 360 = 39 %, 35.9 min, 84 kW : 0.61 = 138 kW, all as in the text.
+- practice.py check OK (7 tasks, 110 points). Hash the same at the start and the end.

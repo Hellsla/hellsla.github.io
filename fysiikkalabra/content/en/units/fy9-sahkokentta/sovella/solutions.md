@@ -323,7 +323,7 @@ b &= 93\,\text{pF} \\
 &= 22.2\,\text{pF}
 \end{aligned}
 $$
-**Answer:** $b \approx 22\,\text{pF}$, two significant figures, because it is the difference of two almost equal numbers.
+**Answer:** $b \approx 22\,\text{pF}$, two significant figures, because the difference of two numbers of similar size has a larger relative uncertainty than either number.
 **Reasonableness:** The constant term is the capacitance of the leads and the meter themselves: the leads are close to each other and to the terminals of the meter, and the meter measures their capacitance in addition to the capacitance of the plates. Tens of picofarads is the usual order of magnitude for test leads. The model works in the measured range, because even the largest distance, $6.0\,\text{mm}$, is only $3\,\%$ of the side of the plate, $200\,\text{mm}$. If the distance were centimetres, the curving field at the edges would increase the capacitance above the value of the model. At the smallest distances, on the other hand, the uncertainty of the thickness of the spacers and the bending of the plates, for example $\pm 0.1\,\text{mm}$, is $10\,\%$ of the distance $1.0\,\text{mm}$. That is why the slope is best determined from the whole line and not from a single point.
 
 ### Yleisiä virheitä
@@ -424,7 +424,7 @@ v &= \sqrt{\dfrac{2 \cdot 1.602 \cdot 10^{-19}\,\text{C} \cdot 1100\,\text{V}}{2
 \end{aligned}
 $$ and $E = \dfrac{1100\,\text{V}}{0.0010\,\text{m}} = 1.1 \cdot 10^{6}\,\text{V/m}$
 **Answer:** $v \approx 40.2\,\text{km/s}$, three significant figures, as in the voltage $1.10\,\text{kV}$, and $E \approx 1.1\,\text{MV/m}$, two significant figures, as in the distance $1.0\,\text{mm}$.
-**Reasonableness:** The kinetic energy of the ion is $1100\,\text{eV}$. An electron would get the same energy, but a xenon ion is about $2.4 \cdot 10^{5}$ times heavier, so its speed is $\sqrt{2.4 \cdot 10^{5}} \approx 490$ times smaller. Still, the speed is about ten times the exhaust speed of a chemical rocket engine, about $3\text{–}4\,\text{km/s}$. In air the field $1.1\,\text{MV/m}$ would come close to breakdown, but in a vacuum there is no gas that could conduct.
+**Reasonableness:** The kinetic energy of the ion is $1100\,\text{eV}$. An electron would get the same energy, but a xenon ion is about $2.4 \cdot 10^{5}$ times heavier, so its speed is $\sqrt{2.4 \cdot 10^{5}} \approx 490$ times smaller. Still, the speed is about ten times the exhaust speed of a chemical rocket engine, about $3\text{–}4\,\text{km/s}$. The field $1.1\,\text{MV/m}$ is only about a third of the dielectric strength of air, $3\,\text{MV/m}$, and in a vacuum there is no gas that could conduct.
 
 ### b)
 **Given:** the current of the ion beam $I = 1.60\,\text{A}$; from part a $v = 4.021 \cdot 10^{4}\,\text{m/s}$; $m = 2.180 \cdot 10^{-25}\,\text{kg}$; $e = 1.602 \cdot 10^{-19}\,\text{C}$

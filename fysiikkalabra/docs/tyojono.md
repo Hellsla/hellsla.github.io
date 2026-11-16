@@ -468,6 +468,7 @@ Kohta 8m (#618) lisäsi `physics_phrases.py`:hen säännöt heat-into (P1) ja li
 `docs/physics-phrases-known.tsv`:ssä (vain fi; samat virkkeet fi-easy- ja en-versioissa korjataan samalla), ja korjaus poistaa
 kurssin rivit. FY9:n lepokitkan nimitykset ("suurin lepokitka") yhtenäistetään 9c:ssä (#602).
 Kitkan ja energian konseptikatselmoinnin löydökset (8m:ää vanhempia): `docs/audits/2026-11-15-kitka-konseptikatselmointi.md`.
+FY9 tehty: claude/fy9-oikoluku-aineisto (PR #626); samassa PR:ssä kohdan 19 aineistotehtävät FY9-A1…A5 (fy9-ympyraliike-s7, fy9-magnetismi-valo-s7, fy9-moderni-s7, fy9-energia-s7, fy9-kaasut-s7).
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9 (opettaja 2026-11-16)
 
@@ -478,6 +479,7 @@ ympäristön sallituissa (16.11).
 PR:ien yhdistäminen (opettaja 2026-11-16: "jos saat yhdisteltyä PR niin tee, jos vaarana että homma sotkeutuu älä tee"):
 kohta 19 tehdään samassa PR:ssä saman kurssin vielä aloittamattoman työn kanssa (FY4, FY5, FY9 ja FY2: kohta 18; FY3, FY6
 ja FY7: kohta 5d), ei koskaan jo katselmoitavana olevaan PR:ään; FY1 ja FY8 omana PR:nään kurssin nykyisen PR:n jälkeen.
+FY9 tehty: FY9-A1…A5 (PR #626, kohdan 18 FY9:n kanssa).
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 

@@ -318,7 +318,7 @@ $$, the level of a busy street. The model is a rough estimate: the air and the t
 $$. "Only $15\,\text{dB}$" means $10^{1.5} \approx 32$ times the intensity, so a dose harmful to hearing builds up in about $\tfrac{1}{32}$ of the time. A four-hour concert without protectors is therefore many times the dose. With well-fitted $20\,\text{dB}$ protectors the level at the ear is about $80\,\text{dB}$, below $85\,\text{dB}$, so four hours is within the rule of thumb when the protectors are worn the whole time. The rule of thumb is an estimate, not a guarantee: different people's hearing tolerates noise differently.
 
 ### Yleisiä virheitä
-- In part a the level is calculated as inversely proportional to the distance, so that the drop is $3\,\text{dB}$ per doubling, or the decibels are divided like intensities.
+- In part a the intensity is calculated as inversely proportional to the distance, so that the drop is $3\,\text{dB}$ per doubling, or the decibels are divided like intensities.
 - In part b the explanation is that low sounds travel faster; in air the speed does not depend on the frequency.
 - In part c $15\,\text{dB}$ is interpreted as an increase of $15\,\%$, or the time is halved every $15\,\text{dB}$.
 
