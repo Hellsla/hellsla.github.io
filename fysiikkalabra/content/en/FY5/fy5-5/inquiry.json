@@ -302,7 +302,7 @@
       "type": "choice",
       "title": "Extension: Find the error",
       "optional": true,
-      "prompt": "A student calculated the gravitational field strength at a height of $300\\,\\text{km}$ above the Earth's surface like this: $g = \\gamma \\tfrac{M}{r^2} = 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\cdot \\tfrac{5.97 \\cdot 10^{24}\\,\\text{kg}}{(3.0 \\cdot 10^{5}\\,\\text{m})^2} \\approx 4400\\,\\text{m/s}^2$. What is wrong with the solution?",
+      "prompt": "A student calculated the gravitational field strength at a height of $300\\,\\text{km}$ above the Earth's surface like this: $$\\begin{aligned} g &= \\gamma \\tfrac{M}{r^2} \\\\ &= 6.674 \\cdot 10^{-11}\\,\\tfrac{\\text{N}\\cdot\\text{m}^2}{\\text{kg}^2} \\\\ &\\cdot \\tfrac{5.97 \\cdot 10^{24}\\,\\text{kg}}{(3.0 \\cdot 10^{5}\\,\\text{m})^2} \\\\ &\\approx 4400\\,\\text{m/s}^2 & \\end{aligned}$$. What is wrong with the solution?",
       "choices": [
         {
           "text": "The distance is measured from the Earth's centre, so $r = 6378\\,\\text{km} + 300\\,\\text{km}$.",

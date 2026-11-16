@@ -254,7 +254,7 @@
       {
        "key": "equation",
        "points": 2,
-       "detail": "Momenttiehto tuen B suhteen: $F_\\text{A} \\cdot 1{,}2\\,\\text{m} = G \\cdot 0{,}8\\,\\text{m} + F_\\text{h} \\cdot 2{,}8\\,\\text{m}$, missä laudan paino vaikuttaa sen keskeltä."
+       "detail": "Momenttiehto tuen B suhteen: $$\\begin{aligned} F_\\text{A} \\cdot 1{,}2\\,\\text{m} &= G \\cdot 0{,}8\\,\\text{m} \\\\ &+ F_\\text{h} \\cdot 2{,}8\\,\\text{m} \\end{aligned}$$, missä laudan paino vaikuttaa sen keskeltä."
       },
       {
        "key": "fbd_equations",
@@ -884,7 +884,7 @@
        "detail": "$v \\approx 336\\,\\text{m/s}$."
       },
       {
-       "text": "Laskee nopeuden lämpötilassa $8{,}0\\,{}^\\circ\\text{C}$: $331\\,\\text{m/s} + 8{,}0 \\cdot 0{,}6\\,\\text{m/s} \\approx 336\\,\\text{m/s}$.",
+       "text": "Laskee nopeuden lämpötilassa $8{,}0\\,{}^\\circ\\text{C}$: $$\\begin{aligned} &331\\,\\text{m/s} + 8{,}0 \\cdot 0{,}6\\,\\text{m/s} \\\\ &\\approx 336\\,\\text{m/s} \\end{aligned}$$.",
        "tag": "math",
        "points": 1
       },
@@ -1050,7 +1050,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$t = 8\\,\\text{h} : 2^6 = 0{,}125\\,\\text{h} = 7{,}5\\,\\text{min}$."
+       "detail": "$$\\begin{aligned} t &= 8\\,\\text{h} : 2^6 \\\\ &= 0{,}125\\,\\text{h} \\\\ &= 7{,}5\\,\\text{min} \\end{aligned}$$."
       },
       {
        "text": "Todellinen vaimennus $12\\,\\text{dB}$ antaa korvalle tason $91\\,\\text{dB}$, jolla vertailuaika on $2{,}0\\,\\text{h}$.",
