@@ -87,7 +87,12 @@
 **Muunnokset:** $l = 5{,}0\,\text{cm} = 5{,}0 \cdot 0{,}01\,\text{m} = 0{,}050\,\text{m}$
 **Sijoitus:** $|e| = 20 \cdot 0{,}30\,\text{T} \cdot 0{,}050\,\text{m} \cdot 0{,}25\,\text{m/s} = 0{,}075\,\text{V} = 75\,\text{mV}$
 **Vastaus:** $75\,\text{mV}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
-**Järkevyys:** Tarkistus koko sisääntulolla: vuo kasvaa nollasta arvoon $BA = 0{,}30\,\text{T} \cdot (0{,}050\,\text{m})^2 = 7{,}5 \cdot 10^{-4}\,\text{Wb}$ ajassa $0{,}050\,\text{m} : 0{,}25\,\text{m/s} = 0{,}20\,\text{s}$, joten $|e| = 20 \cdot 7{,}5 \cdot 10^{-4}\,\text{Wb} : 0{,}20\,\text{s} = 0{,}075\,\text{V}$.
+**Järkevyys:** Tarkistus koko sisääntulolla: vuo kasvaa nollasta arvoon $BA = 0{,}30\,\text{T} \cdot (0{,}050\,\text{m})^2 = 7{,}5 \cdot 10^{-4}\,\text{Wb}$ ajassa $$
+\begin{aligned}
+&0{,}050\,\text{m} : 0{,}25\,\text{m/s} \\
+&= 0{,}20\,\text{s}
+\end{aligned}
+$$, joten $|e| = 20 \cdot 7{,}5 \cdot 10^{-4}\,\text{Wb} : 0{,}20\,\text{s} = 0{,}075\,\text{V}$.
 
 ## fy7-5-L3-01
 **Annettu:** junan vauhti $v = 200\,\text{km/h}$, akselin pituus kiskosta kiskoon $l = 1524\,\text{mm}$, Maan magneettikentän pystykomponentti $B_\text{v} = 50\,\mu\text{T}$
@@ -95,7 +100,14 @@
 **Periaate:** Akseli on metallitanko, joka liikkuu vaakasuoraan kohtisuoraan itseään vastaan. Elektroneihin kohdistuva magneettinen voima on kohtisuorassa nopeutta ja kenttää vastaan; akselin suuntainen komponentti syntyy vain kentän pystykomponentista, sillä vaakakomponentti joko on nopeuden suuntainen tai antaa pystysuoran voiman. Siksi jännitteen antaa $e = vB_\text{v}l$.
 **Kaava:** $e = vB_\text{v}l$
 **Muunnokset:** $v = 200\,\text{km/h} = 200 \cdot \dfrac{1000\,\text{m}}{3600\,\text{s}} = 55{,}56\,\text{m/s}$, $l = 1524\,\text{mm} = 1524 \cdot 0{,}001\,\text{m} = 1{,}524\,\text{m}$ ja $B_\text{v} = 50\,\mu\text{T} = 50 \cdot 10^{-6}\,\text{T}$
-**Sijoitus:** $e = 55{,}56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \cdot 1{,}524\,\text{m} = 4{,}233 \cdot 10^{-3}\,\text{V} = 4{,}2\,\text{mV}$
+**Sijoitus:** $$
+\begin{aligned}
+e &= 55{,}56\,\text{m/s} \cdot 50 \cdot 10^{-6}\,\text{T} \\
+&\cdot 1{,}524\,\text{m} \\
+&= 4{,}233 \cdot 10^{-3}\,\text{V} \\
+&= 4{,}2\,\text{mV}
+\end{aligned}
+$$
 **Vastaus:** $4{,}2\,\text{mV}$, kaksi merkitsevää numeroa kuten kentässä $50\,\mu\text{T}$.
 **Järkevyys:** Maan kenttä on noin kymmenentuhannesosa laboratoriomagneetin kentästä, joten suuresta vauhdista huolimatta jännite jää millivolttien luokkaan. Pyöräilijän vauhdilla $20\,\text{km/h}$ jännite olisi kymmenesosa tästä, noin $0{,}4\,\text{mV}$.
 
@@ -239,4 +251,9 @@ Jos kierrosten lukumäärän unohtaa, tilanteiden A ja B jännitteiksi tulee vai
 **Muunnokset:** $|\Delta\Phi| = 8{,}0\,\text{mWb} = 8{,}0 \cdot 10^{-3}\,\text{Wb}$
 **Sijoitus:** $|e_\text{ka}| = 200 \cdot \dfrac{8{,}0 \cdot 10^{-3}\,\text{Wb}}{0{,}40\,\text{s}} = 200 \cdot 0{,}020\,\text{V} = 4{,}0\,\text{V}$
 **Vastaus:** $4{,}0\,\text{V}$, kaksi merkitsevää numeroa kuten kuvaajasta luetut vuot $5{,}0\,\text{mWb}$ ja $-3{,}0\,\text{mWb}$.
-**Järkevyys:** Jos erehtyisi laskemaan vain loppuarvon $3{,}0\,\text{mWb}$, tulokseksi tulisi $200 \cdot 3{,}0 \cdot 10^{-3}\,\text{Wb} : 0{,}40\,\text{s} = 1{,}5\,\text{V}$, mikä on liian pieni: vuo ehtii muuttua nollan kautta, joten muutos on suurempi kuin kumpikaan arvo yksin. Kuvaajan kulmakerroin $-8{,}0\,\text{mWb} : 0{,}40\,\text{s} = -20\,\tfrac{\text{mWb}}{\text{s}}$ antaa saman tuloksen: $200 \cdot 0{,}020\,\text{V} = 4{,}0\,\text{V}$.
+**Järkevyys:** Jos erehtyisi laskemaan vain loppuarvon $3{,}0\,\text{mWb}$, tulokseksi tulisi $200 \cdot 3{,}0 \cdot 10^{-3}\,\text{Wb} : 0{,}40\,\text{s} = 1{,}5\,\text{V}$, mikä on liian pieni: vuo ehtii muuttua nollan kautta, joten muutos on suurempi kuin kumpikaan arvo yksin. Kuvaajan kulmakerroin $$
+\begin{aligned}
+&-8{,}0\,\text{mWb} : 0{,}40\,\text{s} \\
+&= -20\,\tfrac{\text{mWb}}{\text{s}}
+\end{aligned}
+$$ antaa saman tuloksen: $200 \cdot 0{,}020\,\text{V} = 4{,}0\,\text{V}$.

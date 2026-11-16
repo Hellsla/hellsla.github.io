@@ -245,4 +245,10 @@ For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. T
 **Conversions:** $x = 17.8\,\text{cm} = 0.178\,\text{m}$, $700\,\text{nm} = 7.00 \cdot 10^{-7}\,\text{m}$ and $1\,\text{mm} = 1 \cdot 10^{-3}\,\text{m}$.
 **Substitution:** $\theta = \tan^{-1}\dfrac{0.178\,\text{m}}{1.00\,\text{m}} = 10.09^\circ$, $d = \dfrac{7.00 \cdot 10^{-7}\,\text{m}}{\sin 10.09^\circ} = \dfrac{7.00 \cdot 10^{-7}\,\text{m}}{0.1752} = 3.99 \cdot 10^{-6}\,\text{m}$ and $N = \dfrac{1 \cdot 10^{-3}\,\text{m}}{3.99 \cdot 10^{-6}\,\text{m}} = 250$ lines per millimetre
 **Answer:** $250$ lines per millimetre, three significant figures like the distance $L$ and the read position.
-**Reasonableness:** Check with violet ($400\,\text{nm}$): $x = 1.00\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{400\,\text{nm}}{4.00\,\mu\text{m}}\bigr) = 10.1\,\text{cm}$, and in the figure the inner edge is at about $10\,\text{cm}$. A grating with $250$ lines per millimetre is a common school grating.
+**Reasonableness:** Check with violet ($400\,\text{nm}$): $$
+\begin{aligned}
+x &= 1.00\,\text{m} \\
+&\cdot \tan\bigl(\sin^{-1}\dfrac{400\,\text{nm}}{4.00\,\mu\text{m}}\bigr) \\
+&= 10.1\,\text{cm}
+\end{aligned}
+$$, and in the figure the inner edge is at about $10\,\text{cm}$. A grating with $250$ lines per millimetre is a common school grating.

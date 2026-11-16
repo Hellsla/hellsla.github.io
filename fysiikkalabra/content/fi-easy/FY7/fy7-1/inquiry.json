@@ -28,15 +28,15 @@
         {
           "text": "$50\\,\\text{N}$, koska kohtisuorat voimat ovat kateetteja.",
           "correct": true,
-          "feedback": "Oikein. Kohtisuorat vektorit ovat suorakulmaisen kolmion kateetit, ja summa on hypotenuusa: $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$. Samalla tavalla tässä luvussa lasketaan yhteen magneettikenttiä."
+          "feedback": "Oikein. Kohtisuorat vektorit ovat suorakulmaisen kolmion kateetit, ja summa on hypotenuusa: $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$. Samalla tavalla tässä luvussa lasketaan yhteen magneettikenttiä."
         },
         {
           "text": "$70\\,\\text{N}$, koska voimien suuruudet lasketaan yhteen.",
-          "feedback": "Lukuina voi laskea yhteen vain samansuuntaiset vektorit. Kohtisuorat vektorit ovat suorakulmaisen kolmion kateetit. Siksi summa on $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$."
+          "feedback": "Lukuina voi laskea yhteen vain samansuuntaiset vektorit. Kohtisuorat vektorit ovat suorakulmaisen kolmion kateetit. Siksi summa on $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$."
         },
         {
           "text": "$10\\,\\text{N}$, koska suuremmasta voimasta vähennetään pienempi.",
-          "feedback": "Erotus saadaan vain vastakkaissuuntaisista vektoreista. Kohtisuorat vektorit lasketaan yhteen Pythagoraan lauseella: $\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} = 50\\,\\text{N}$."
+          "feedback": "Erotus saadaan vain vastakkaissuuntaisista vektoreista. Kohtisuorat vektorit lasketaan yhteen Pythagoraan lauseella: $$\n\\begin{aligned}\n&\\sqrt{(30\\,\\text{N})^2 + (40\\,\\text{N})^2} \\\\\n&= 50\\,\\text{N}\n\\end{aligned}\n$$."
         }
       ]
     },

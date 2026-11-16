@@ -90,7 +90,7 @@ $$\begin{aligned} r &= \dfrac{1.673 \cdot 10^{-27}\,\text{kg}}{1.602 \cdot 10^{-
 **Principle:** The deuteron goes round a circle because the magnetic force $qvB$ is perpendicular to the velocity and acts as the centripetal force.
 **Formula:** $qvB = \dfrac{mv^2}{r}$, so $v = \dfrac{qBr}{m}$
 **Conversions:** $r = 12\,\text{cm} = 12 \cdot 0.01\,\text{m} = 0.12\,\text{m}$; finally $1\,\text{km/s} = 1000\,\text{m/s}$.
-**Substitution:** $v = \dfrac{1.602 \cdot 10^{-19}\,\text{C} \cdot 0.60\,\text{T} \cdot 0.12\,\text{m}}{3.344 \cdot 10^{-27}\,\text{kg}} = 3.449 \cdot 10^{6}\,\text{m/s} = 3449\,\text{km/s}$
+**Substitution:** $v = \dfrac{\begin{aligned}1.602 \cdot 10^{-19}\,\text{C} \cdot 0.60\,\text{T} \\ \cdot 0.12\,\text{m}\end{aligned}}{3.344 \cdot 10^{-27}\,\text{kg}} = 3.449 \cdot 10^{6}\,\text{m/s} = 3449\,\text{km/s}$
 **Answer:** $3.4 \cdot 10^{3}\,\text{km/s}$, two significant figures like the radius $12\,\text{cm}$ and the field $0.60\,\text{T}$.
 **Reasonableness:** The speed is about $1\,\%$ of the speed of light, so the classical formula still holds. Calculating back, $r = mv : (qB) = 3.344 \cdot 10^{-27} \cdot 3.449 \cdot 10^{6} : (1.602 \cdot 10^{-19} \cdot 0.60)\,\text{m} = 0.12\,\text{m}$.
 
@@ -207,7 +207,12 @@ F_\text{m} &= 1.602 \cdot 10^{-19}\,\text{C} \cdot 3.0 \cdot 10^{6}\,\tfrac{\tex
 
 $G = mg$
 
-$G = 9.109 \cdot 10^{-31}\,\text{kg} \cdot 9.81\,\text{m/s}^2$
+$$
+\begin{aligned}
+G &= 9.109 \cdot 10^{-31}\,\text{kg} \\
+&\cdot 9.81\,\text{m/s}^2
+\end{aligned}
+$$
 
 $G \approx 8.9 \cdot 10^{-30}\,\text{N}$
 

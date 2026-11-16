@@ -245,4 +245,10 @@ Pienillä kulmilla $\tan\theta \approx \sin\theta$, joten $x \approx L\lambda : 
 **Muunnokset:** $x = 17{,}8\,\text{cm} = 0{,}178\,\text{m}$, $700\,\text{nm} = 7{,}00 \cdot 10^{-7}\,\text{m}$ ja $1\,\text{mm} = 1 \cdot 10^{-3}\,\text{m}$.
 **Sijoitus:** $\theta = \tan^{-1}\dfrac{0{,}178\,\text{m}}{1{,}00\,\text{m}} = 10{,}09^\circ$, $d = \dfrac{7{,}00 \cdot 10^{-7}\,\text{m}}{\sin 10{,}09^\circ} = \dfrac{7{,}00 \cdot 10^{-7}\,\text{m}}{0{,}1752} = 3{,}99 \cdot 10^{-6}\,\text{m}$ ja $N = \dfrac{1 \cdot 10^{-3}\,\text{m}}{3{,}99 \cdot 10^{-6}\,\text{m}} = 250$ viivaa millimetrillä
 **Vastaus:** $250$ viivaa millimetrillä, kolme merkitsevää numeroa kuten etäisyys $L$ ja luettu paikka.
-**Järkevyys:** Tarkistus violetilla ($400\,\text{nm}$): $x = 1{,}00\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{400\,\text{nm}}{4{,}00\,\mu\text{m}}\bigr) = 10{,}1\,\text{cm}$, ja kuvassa sisäreuna on noin $10\,\text{cm}$:n kohdalla. Hila, jossa on $250$ viivaa millimetrillä, on tavallinen koulun hila.
+**Järkevyys:** Tarkistus violetilla ($400\,\text{nm}$): $$
+\begin{aligned}
+x &= 1{,}00\,\text{m} \\
+&\cdot \tan\bigl(\sin^{-1}\dfrac{400\,\text{nm}}{4{,}00\,\mu\text{m}}\bigr) \\
+&= 10{,}1\,\text{cm}
+\end{aligned}
+$$, ja kuvassa sisäreuna on noin $10\,\text{cm}$:n kohdalla. Hila, jossa on $250$ viivaa millimetrillä, on tavallinen koulun hila.

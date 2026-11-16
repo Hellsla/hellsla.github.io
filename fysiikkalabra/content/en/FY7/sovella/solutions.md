@@ -168,9 +168,20 @@ The electric force on a positive ion is in the direction of the electric field, 
 **Principle:** The current flows to the mine along one conductor and returns along the other, so in the simplified two-wire model the length of the conductors in the circuit is $2 \cdot 25\,\text{km}$. The resistance is obtained from the resistivity, the length and the cross-sectional area. The transmitted power is the product of the voltage and the current, so the current is the power divided by the voltage. The power converted into heat in the resistance of the line is the product of the resistance and the square of the current.
 **Formula:** $R = \rho \dfrac{l}{A}$, $I = \dfrac{P}{U}$ and $P_\text{h} = R I^2$
 **Conversions:** $l = 2 \cdot 25\,\text{km} = 5.0 \cdot 10^{4}\,\text{m}$, $A = 150\,\text{mm}^2 = 150 \cdot 10^{-6}\,\text{m}^2$, $P = 6.0 \cdot 10^{6}\,\text{W}$ and $U = 20 \cdot 10^{3}\,\text{V}$
-**Substitution:** $R = 2.82 \cdot 10^{-8}\,\Omega\,\text{m} \cdot \dfrac{5.0 \cdot 10^{4}\,\text{m}}{150 \cdot 10^{-6}\,\text{m}^2} = 9.40\,\Omega$, $I = \dfrac{6.0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 300\,\text{A}$ and $P_\text{h} = 9.40\,\Omega \cdot (300\,\text{A})^2 = 846\,000\,\text{W}$. The share is $846\,\text{kW} : 6000\,\text{kW} = 0.141 = 14.1\,\%$.
+**Substitution:** $$
+\begin{aligned}
+R &= 2.82 \cdot 10^{-8}\,\Omega\,\text{m} \\
+&\cdot \dfrac{5.0 \cdot 10^{4}\,\text{m}}{150 \cdot 10^{-6}\,\text{m}^2} \\
+&= 9.40\,\Omega
+\end{aligned}
+$$, $I = \dfrac{6.0 \cdot 10^{6}\,\text{W}}{20 \cdot 10^{3}\,\text{V}} = 300\,\text{A}$ and $P_\text{h} = 9.40\,\Omega \cdot (300\,\text{A})^2 = 846\,000\,\text{W}$. The share is $846\,\text{kW} : 6000\,\text{kW} = 0.141 = 14.1\,\%$.
 **Answer:** $P_\text{h} \approx 850\,\text{kW}$, that is, about $14\,\%$ of the power fed into the line, two significant figures like the power and the voltage.
-**Reasonableness:** The losses of the whole electricity grid in Finland are only a few per cent in total, so a loss of $14\,\%$ in a single line is far too large. At a low voltage a large current is needed, and the loss grows as the square of the current. Only about $6.0\,\text{MW} - 0.85\,\text{MW} \approx 5.2\,\text{MW}$ is left for the mine.
+**Reasonableness:** The losses of the whole electricity grid in Finland are only a few per cent in total, so a loss of $14\,\%$ in a single line is far too large. At a low voltage a large current is needed, and the loss grows as the square of the current. Only about $$
+\begin{aligned}
+&6.0\,\text{MW} - 0.85\,\text{MW} \\
+&\approx 5.2\,\text{MW}
+\end{aligned}
+$$ is left for the mine.
 
 ### b)
 **Given:** the data of part a and the resistance $R = 9.40\,\Omega$, transmission voltage $U = 110\,\text{kV}$
@@ -209,7 +220,14 @@ The electric force on a positive ion is in the direction of the electric field, 
 **Principle:** The current flows to the mine along one conductor and returns along the other, so currents of equal magnitude flow in the conductors in opposite directions. Each conductor is a long straight conductor, and its magnetic field at the other conductor is obtained from the formula for the field of a straight conductor, because the conductors are much longer than the distance between them. The field is perpendicular to the other conductor, so a force $F = IlB$ acts on it. By the right-hand rule, currents in opposite directions repel each other. With alternating current the currents change direction at the same time, so they are always in opposite directions and the conductors repel each other all the time. The weight of a metre of conductor is obtained from its mass, which is the product of the density and the volume.
 **Formula:** $B = \dfrac{\mu_0 I}{2\pi r}$ and $F = IlB$, so $\dfrac{F}{l} = \dfrac{\mu_0 I^2}{2\pi r}$. For the weight, $\dfrac{G}{l} = \rho_\text{Al} A g$.
 **Conversions:** $I_\text{sc} = 8.0\,\text{kA} = 8.0 \cdot 10^{3}\,\text{A}$ and $A = 150\,\text{mm}^2 = 150 \cdot 10^{-6}\,\text{m}^2$
-**Substitution:** In normal operation $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 300\,\text{A}}{2\pi \cdot 1.5\,\text{m}} = 4.0 \cdot 10^{-5}\,\text{T}$ and $\dfrac{F}{l} = 300\,\text{A} \cdot 4.0 \cdot 10^{-5}\,\text{T} = 0.012\,\text{N/m}$. In a short circuit $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 8.0 \cdot 10^{3}\,\text{A}}{2\pi \cdot 1.5\,\text{m}} = 1.067 \cdot 10^{-3}\,\text{T}$ and $\dfrac{F}{l} = 8.0 \cdot 10^{3}\,\text{A} \cdot 1.067 \cdot 10^{-3}\,\text{T} = 8.53\,\text{N/m}$. The weight of the conductor per metre is $\dfrac{G}{l} = 2700\,\tfrac{\text{kg}}{\text{m}^3} \cdot 150 \cdot 10^{-6}\,\text{m}^2 \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} = 3.97\,\text{N/m}$.
+**Substitution:** In normal operation $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 300\,\text{A}}{2\pi \cdot 1.5\,\text{m}} = 4.0 \cdot 10^{-5}\,\text{T}$ and $\dfrac{F}{l} = 300\,\text{A} \cdot 4.0 \cdot 10^{-5}\,\text{T} = 0.012\,\text{N/m}$. In a short circuit $B = \dfrac{4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 8.0 \cdot 10^{3}\,\text{A}}{2\pi \cdot 1.5\,\text{m}} = 1.067 \cdot 10^{-3}\,\text{T}$ and $\dfrac{F}{l} = 8.0 \cdot 10^{3}\,\text{A} \cdot 1.067 \cdot 10^{-3}\,\text{T} = 8.53\,\text{N/m}$. The weight of the conductor per metre is $$
+\begin{aligned}
+\dfrac{G}{l} &= 2700\,\tfrac{\text{kg}}{\text{m}^3} \\
+&\cdot 150 \cdot 10^{-6}\,\text{m}^2 \\
+&\cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \\
+&= 3.97\,\text{N/m}
+\end{aligned}
+$$.
 **Answer:** The conductors repel each other. The force is about $0.012\,\text{N}$ in normal operation and about $8.5\,\text{N}$ in a short circuit for each metre of conductor, two significant figures like the distance and the short-circuit current. In normal operation the force does not matter, but in a short circuit it is about twice the weight of the conductor.
 **Reasonableness:** In normal operation the force is only about $0.3\,\%$ of the weight of the conductor, about $4.0\,\text{N}$ per metre. In a short circuit the current is about $27$ times as large and the force grows as the square of the current, so it is about $710$ times as large: $8.53 : 3.97 \approx 2.1$ times the weight of the conductor. Conductors hanging between poles then swing apart and may swing back and slap together. That is why the spacing of the conductors is designed for a short circuit and the short circuit is interrupted in a fraction of a second. A current this large is possible only near the substation, where the resistance of the line up to the fault is small.
 
@@ -435,7 +453,17 @@ For example, for the second-order red line $k\lambda = 2 \cdot 656.28\,\text{nm}
 ### d)
 **Find:** whether the conclusion about sodium is justified and how the measurement could be improved
 **Principle:** Two alternatives can be told apart by a measurement only if the difference between them is greater than the uncertainty of the measurement. The uncertainty of the angle is carried over to the wavelength through the grating equation.
-**Model answer:** *Uncertainty.* The reading accuracy of the angle is $0.1^\circ$. We calculate the wavelengths from the angles $20.6^\circ$ and $20.8^\circ$: $1667\,\text{nm} \cdot \sin 20.6^\circ \approx 586.5\,\text{nm}$ and $1667\,\text{nm} \cdot \sin 20.8^\circ \approx 592.0\,\text{nm}$. The uncertainty of the wavelength is therefore about $\pm 3\,\text{nm}$, that is, $\lambda = (589 \pm 3)\,\text{nm}$. The grating spacing also has a small uncertainty, which only adds to this.
+**Model answer:** *Uncertainty.* The reading accuracy of the angle is $0.1^\circ$. We calculate the wavelengths from the angles $20.6^\circ$ and $20.8^\circ$: $$
+\begin{aligned}
+&1667\,\text{nm} \cdot \sin 20.6^\circ \\
+&\approx 586.5\,\text{nm}
+\end{aligned}
+$$ and $$
+\begin{aligned}
+&1667\,\text{nm} \cdot \sin 20.8^\circ \\
+&\approx 592.0\,\text{nm}
+\end{aligned}
+$$. The uncertainty of the wavelength is therefore about $\pm 3\,\text{nm}$, that is, $\lambda = (589 \pm 3)\,\text{nm}$. The grating spacing also has a small uncertainty, which only adds to this.
 
 *Evaluating the conclusion.* The helium line $587.56\,\text{nm}$ and the sodium lines $588.99\,\text{nm}$ and $589.59\,\text{nm}$ all lie between $586$ and $592\,\text{nm}$. The difference between helium and sodium, about $1.4\,\text{nm}$, is smaller than the uncertainty. In terms of angles the difference is only $20.64^\circ$ against $20.70^\circ$, that is, about $0.05^\circ$, which is below the reading accuracy of the goniometer. The measurement therefore does not distinguish sodium from helium, and the group's conclusion is not justified by this measurement. The lamp may contain sodium, but that does not follow from this measurement.
 
