@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5cd62b0183fa3d77
-SCOPE: delta added-exercise from fd4eb60f56237477 base 8f23aa7ae3bd
+CONTENT-HASH: 00856eb754865b33
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] 5-17 (fy7-5/flux-task-2) — time ticks sit below the plot away from the zero axis (earlier note stands); optional faint tick marks.
+- [Minor] 5-13 Järkevyys — one-word paragraphs "ajassa" and "joten" between three display blocks make the check choppy; optional: one sentence with the two formulas inline or a single aligned block.
 
 ## Checked
-- Delta (Työjono 18: millivebereinä to milliwebereinä, teslaina to tesloina, webereiden; alt text of flux-task and flux-task-2): fy7-5-open-exercises-1280 part 1 (5-1 task and solution, full size) and fy7-5-open-exercises-L2-1280 part 10 (5-17 graph and solution start). Figures themselves unchanged visually; only alt text changed. Finnish forms correct and consistent with the glossary (weber).
+- fy7-5-open-exercises-L2-1280-4, -5 (5-13 solution and Järkevyys), -8 (5-17 neighbour), L3-1280-1 (5-18 Sijoitus rows, 4,2 mV).
+- Delta (reflow only): changed solutions read in fy7-5-open-exercises captures at 1280 px; the 390 px layout was judged from the source rows (short aligned rows, nothing wider than the 1280 px rows). Layout survived: no overflow, units upright, signs and numbers unchanged. Hash identical at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5
