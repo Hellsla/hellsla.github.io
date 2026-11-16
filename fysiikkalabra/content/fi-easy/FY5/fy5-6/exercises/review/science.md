@@ -6,7 +6,7 @@ CONTENT-HASH: c85d130d8268574e
 ## Polish
 
 ## Checked
-- Hash same at start and end. Delta, round 1 (fi-easy): queue 18 rounding reasons (L1-?? 9,57·10³ km, 1,13 m/s, Jupiter mass, satellite B, 3,87/15,5 kN, exoplanet star, L1-11), L1-11 marked "Syventävä tehtävä", new data task L2-09 (Kepler III, NASA Fact Sheet).
+- Hash same at start and end. Delta, round 1 (fi-easy): queue 18 rounding reasons (L2-01 9,57·10³ km, 1,13 m/s, Jupiter mass, satellite B, 3,87/15,5 kN, exoplanet star, L1-11), L1-11 marked "Syventävä tehtävä", new data task L2-09 (Kepler III, NASA Fact Sheet).
 - Script comparison with content/fi/FY5/fy5-6: same ids, answer, unit, tolerance, level, kind; every number in each task text and solution identical in fi and fi-easy (no step or justification dropped).
 - L2-09 data equal to sources.md (Mercury–Jupiter a and T); Moon column excluded correctly; the task marked Syventävä per the teacher's decision of 16.11, and the law is derived from the chapter's circular-orbit model.
 - Recomputed: T_Mars = 365,2 · (228,0/149,6)^1,5 = 687,12 d -> 687,1 (tol 2 %); with 227,9: 686,67 d; T²/a³ = 0,0399, 0,0399, 0,0398, 0,0398, 0,0398, spread 0,35 % (< 0,4 %); Jupiter −0,2 %, Uranus −0,33 %, Saturn −1,26 %, Neptune −2,46 % vs Earth, as stated; a³ ratio 2432 (> 2000).
