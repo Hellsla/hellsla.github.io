@@ -147,7 +147,7 @@ $$, so $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0.00750\,\text{m}^2} = \sqrt{
 **Formula:** $a = \dfrac{T^2}{l} = \dfrac{4\pi^2}{g}$, so $g = \dfrac{4\pi^2}{a}$
 **Conversions:** Not needed: the length is in metres and the time in seconds.
 **Substitution:** $a = \dfrac{4.04\,\text{s}^2}{1.00\,\text{m}} = 4.04\,\tfrac{\text{s}^2}{\text{m}}$ and $g = \dfrac{4\pi^2}{4.04\,\text{s}^2/\text{m}} = 9.772\,\text{m/s}^2$
-**Answer:** $9.77\,\text{m/s}^2$, three significant figures as in the periods and the lengths. Fitting by eye gives slightly different results, so a small variation is expected.
+**Answer:** $9.77\,\text{m/s}^2$, three significant figures, because the reading of the fit rests on the point $(1.00\,\text{m};\ 2.01\,\text{s})$, whose values have three figures. The values of the shortest pendulum ($0.20\,\text{m}$ and $0.90\,\text{s}$) have only two, but they do not limit the slope that was read. Fitting by eye gives slightly different results, so a small variation is expected.
 **Reasonableness:** An acceleration of free fall of $9.81\,\text{m/s}^2$ would give the slope $\tfrac{4\pi^2}{9.81} = 4.02\,\text{s}^2/\text{m}$, which is close to the value read, $4.04\,\text{s}^2/\text{m}$. The result differs from the table value by about $0.4\,\%$. When the result is substituted into the formula for the period, a length of $0.60\,\text{m}$ gives $T = 2\pi\sqrt{0.60 : 9.772}\,\text{s} = 1.56\,\text{s}$, as in the table, $1.55\,\text{s}$.
 
 ## fy5-9-L2-06
@@ -168,7 +168,7 @@ $$, so $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0.00750\,\text{m}^2} = \sqrt{
 **Formula:** $T = \dfrac{t_{10}}{10}$ and $p = \dfrac{T - T_0}{T_0} \cdot 100\,\%$
 **Conversions:** The time of ten cycles is divided by ten: $T = 21.5\,\text{s} : 10 = 2.15\,\text{s}$.
 **Substitution:** $T_0 = 2\pi\sqrt{\dfrac{1.000\,\text{m}}{9.81\,\text{m/s}^2}} = 2.006\,\text{s}$ and $p = \dfrac{2.15\,\text{s} - 2.006\,\text{s}}{2.006\,\text{s}} \cdot 100\,\% = 7.17\,\%$. Part b): the time of ten cycles given by the formula is $10\,T_0 = 20.06\,\text{s}$, so the measured differences are $0.04\,\text{s}$ ($10\,{}^\circ$), $0.14\,\text{s}$ ($20\,{}^\circ$), $0.64\,\text{s}$ ($40\,{}^\circ$) and $1.44\,\text{s}$ ($60\,{}^\circ$). The uncertainty of the timing, $0.2\,\text{s}$, is greater than the differences at the starting angles $10\,{}^\circ$ and $20\,{}^\circ$, but smaller than the differences at the starting angles $40\,{}^\circ$ and $60\,{}^\circ$.
-**Answer:** $7.2\,\%$, two significant figures, because the difference $0.14\,\text{s}$ is given to two figures. Part b): at the starting angles $40\,{}^\circ$ and $60\,{}^\circ$ the difference is clearly greater than the uncertainty of the timing; at the small starting angles $10\,{}^\circ$ and $20\,{}^\circ$ no difference can be demonstrated with this timing.
+**Answer:** $7.2\,\%$, two significant figures, because the difference of the periods $T - T_0 \approx 0.14\,\text{s}$ is given to two figures. Part b): at the starting angles $40\,{}^\circ$ and $60\,{}^\circ$ the difference is clearly greater than the uncertainty of the timing; at the small starting angles $10\,{}^\circ$ and $20\,{}^\circ$ no difference can be demonstrated with this timing.
 **Reasonableness:** According to the table of the lesson, at the starting angle $60\,{}^\circ$ the period is $1.073$ times as long, that is $7.3\,\%$ longer, which is close to the measured $7.2\,\%$. The differences at a small starting angle are in the table less than $1\,\%$, that is, smaller than the uncertainty of timing by hand, about $0.2\,\text{s} : 20\,\text{s} = 1\,\%$.
 
 ## fy5-9-L3-04
@@ -194,7 +194,13 @@ $$), because the share of the mass of the spring decreases as the weight increas
 **Formula:** $t = \dfrac{T}{4}$; $h = l(1 - \cos\alpha_0)$ and $mgh = \dfrac{1}{2}mv^2$, so $v = \sqrt{2gh}$; with the harmonic model $A = l\alpha_0$ and $v_\text{h} = A\sqrt{\dfrac{g}{l}}$
 **Conversions:** The angle in radians: $\alpha_0 = 10.0\,{}^\circ = 10.0 \cdot \dfrac{\pi}{180} = 0.17453$.
 **Substitution:** Part a): $T = 2\pi\sqrt{\dfrac{1.20\,\text{m}}{9.81\,\text{m/s}^2}} = 2.198\,\text{s}$, so $t = \dfrac{2.198\,\text{s}}{4} = 0.549\,\text{s}$. Part b): $h = 1.20\,\text{m} \cdot (1 - \cos 10.0\,{}^\circ) = 0.01823\,\text{m}$ and $v = \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot 0.01823\,\text{m}} = 0.5981\,\text{m/s}$. Part c): $A = 1.20\,\text{m} \cdot 0.17453 = 0.2094\,\text{m}$ and $v_\text{h} = 0.2094\,\text{m} \cdot \sqrt{\dfrac{9.81}{1.20}}\,\dfrac{1}{\text{s}} = 0.5988\,\text{m/s}$, so the difference is $\dfrac{0.59883 - 0.59807}{0.59807} \cdot 100\,\% = 0.13\,\%$ and the harmonic model gives the greater speed.
-**Answer:** a) $0.549\,\text{s}$, b) $0.598\,\text{m/s}$, and the height of the extreme position is about $1.82\,\text{cm}$, c) $0.599\,\text{m/s}$, and the harmonic model gives a speed about $0.13\,\%$ greater. The time and the speeds have three significant figures as in the length $1.20\,\text{m}$ and the angle $10.0\,{}^\circ$.
+**Answer:** a) $0.549\,\text{s}$.
+
+b) $0.598\,\text{m/s}$, and the height of the extreme position is about $1.82\,\text{cm}$.
+
+c) $0.599\,\text{m/s}$, and the harmonic model gives a speed about $0.13\,\%$ greater.
+
+The time and the speeds have three significant figures as in the length $1.20\,\text{m}$ and the angle $10.0\,{}^\circ$.
 **Reasonableness:** The kinetic energy per unit mass is $\tfrac{1}{2}v^2 = 0.1788\,\text{J/kg}$ and the decrease in potential energy is $gh = 9.81 \cdot 0.01823 = 0.1788\,\text{J/kg}$, so energy is conserved. The harmonic model gives a result that differs by only $0.13\,\%$, because at a small angle $\sin\alpha$ is almost the same as $\alpha$ in radians. The difference is positive, because the model uses $mg\alpha$ as the restoring force, which is greater than the real $mg\sin\alpha$: the model does slightly more work, so the speed is slightly greater ($0.5988\,\text{m/s} > 0.5981\,\text{m/s}$). The same order of magnitude can be seen in the table of the lesson: at the starting angle $10\,{}^\circ$ the period differs from the formula by only $0.2\,\%$.
 
 ## fy5-9-L2-08
