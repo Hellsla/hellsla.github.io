@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4a74fe7df6fd97df
-SCOPE: delta reflow from 7f05bc17f75b75b4 base b5600a63ddae
+CONTENT-HASH: 095d05500287de55
+SCOPE: delta numbers from 4a74fe7df6fd97df base 6ecef1197865
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md, "0.0033 GJ = 0.0033 / · 1000 MJ" — this display is centred while neighbouring chains are left-aligned; optional: align like the others.
+(none)
 
 ## Checked
-- Opened reflow-exercises-1.png and -2.png (390 px, solutions open) of fy2-2: every re-broken block.
-- Rows legible, equals signs in one column, nothing clipped, units upright with thin spaces, decimal point, no red KaTeX source; surrounding sentences read naturally. Other captures not opened (the diff touches only chains).
+- Delta review. Opened fy2-2-open-exercises-L3-1280-5.png: the changed value $\approx 46\,000$ in its display box (and 2-23 below) renders cleanly; consistent with the $49\,000$ above.
+- Hash at start and end: 095d05500287de55.
 
 ## Scores
-illustrations n/a · typography 4 · English 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

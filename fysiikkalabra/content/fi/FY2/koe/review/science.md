@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f92ba6741b53a98f
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
-Round: 3
+CONTENT-HASH: 6b0c6d4f18f49f67
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- solutions.md (koe j Perustelu) — the −18 °C comes from the radiation balance with today's albedo (about 0,3); "nykyisellä heijastuskyvyllä" would state the model's one condition (C, not needed at FY2 level).
 
 ## Checked
-- Round-3 diff `git diff HEAD~1` (commit a84956a90) of this unit's files (fi FY2 koe), judged in context; content hash recomputed and equal to the new hash.
-- tasks.json k5-d conclusion criterion: a justified "the claim is exaggerated" now earns the point with either reason: (1) the electricity used causes emissions unless it is emission-free, or (2) heat recovery lowers heating emissions but life-cycle emissions are not necessarily zero even with very low-emission electricity. Both reasons are physically correct for the claim "Koska hukkalämpö käytetään, datakeskus ei aiheuta lainkaan päästöjä", and both appear in the model answer. Criterion points total $3$, equal to the part's $3$ points; `practice.py check FY2/koe` OK (7 tasks, 120 points).
+- Delta review (teacher 2026-11-16, economical): only the changed j) Perustelu row was judged; the rest rests on my previous report (hash f92ba6741b53a98f).
+- Physics: the simple radiation-balance model gives Earth's effective radiating temperature ≈ 255 K ≈ −18 °C; the mean surface temperature is ≈ +15 °C; the ≈ 33 K difference is the natural greenhouse effect. All three statements are correct.
+- The fix removes the old claim "ilman luonnollista kasvihuoneilmiötä Maan pinta olisi noin −18 °C", which tacitly held albedo and everything else fixed (B); the new wording names the model instead.
+- Mechanism unchanged and correct: greenhouse gases pass visible light, absorb the surface's thermal (infrared) radiation and slow its escape; ozone depletion named as a different phenomenon.
+- No option, correct answer, rubric criterion or point changed.
+- Content hash the same at the start and at the end.
