@@ -323,7 +323,7 @@ b &= 93\,\text{pF} \\
 &= 22{,}2\,\text{pF}
 \end{aligned}
 $$
-**Vastaus:** $b \approx 22\,\text{pF}$, kaksi merkitsevää numeroa, koska se on kahden lähes yhtä suuren luvun erotus.
+**Vastaus:** $b \approx 22\,\text{pF}$, kaksi merkitsevää numeroa, koska kahden samaa suuruusluokkaa olevan luvun erotuksen suhteellinen epävarmuus on suurempi kuin kummankaan luvun.
 **Järkevyys:** Vakiotermi on johtojen ja mittarin oma kapasitanssi: johdot ovat lähellä toisiaan ja mittarin liittimiä, ja mittari mittaa niiden kapasitanssin levyjen kapasitanssin lisäksi. Kymmenet pikofaradit ovat mittajohtojen tavallinen suuruusluokka. Malli toimii mitatulla alueella, koska suurinkin etäisyys $6{,}0\,\text{mm}$ on vain $3\,\%$ levyn sivusta $200\,\text{mm}$. Jos etäisyys olisi senttimetrejä, reunojen kaartuva kenttä kasvattaisi kapasitanssia mallin arvon yli. Pienimmillä etäisyyksillä taas välikappaleiden paksuuden ja levyjen taipumisen epävarmuus, esimerkiksi $\pm 0{,}1\,\text{mm}$, on $10\,\%$ etäisyydestä $1{,}0\,\text{mm}$. Siksi kulmakerroin kannattaa määrittää koko suoralta eikä yhdestä pisteestä.
 
 ### Yleisiä virheitä
@@ -424,7 +424,7 @@ v &= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 1100\,\text{V}}
 \end{aligned}
 $$ ja $E = \dfrac{1100\,\text{V}}{0{,}0010\,\text{m}} = 1{,}1 \cdot 10^{6}\,\text{V/m}$
 **Vastaus:** $v \approx 40{,}2\,\text{km/s}$, kolme merkitsevää numeroa kuten jännitteessä $1{,}10\,\text{kV}$, ja $E \approx 1{,}1\,\text{MV/m}$, kaksi merkitsevää numeroa kuten etäisyydessä $1{,}0\,\text{mm}$.
-**Järkevyys:** Ionin liike-energia on $1100\,\text{eV}$. Elektroni saisi saman energian, mutta ksenonioni on noin $2{,}4 \cdot 10^{5}$ kertaa raskaampi, joten sen nopeus on $\sqrt{2{,}4 \cdot 10^{5}} \approx 490$ kertaa pienempi. Silti nopeus on noin kymmenkertainen kemiallisen rakettimoottorin pakokaasujen noin $3\text{–}4\,\text{km/s}$:iin verrattuna. Kenttä $1{,}1\,\text{MV/m}$ lyisi ilmassa lähelle läpi, mutta tyhjiössä ei ole kaasua, joka voisi johtaa.
+**Järkevyys:** Ionin liike-energia on $1100\,\text{eV}$. Elektroni saisi saman energian, mutta ksenonioni on noin $2{,}4 \cdot 10^{5}$ kertaa raskaampi, joten sen nopeus on $\sqrt{2{,}4 \cdot 10^{5}} \approx 490$ kertaa pienempi. Silti nopeus on noin kymmenkertainen kemiallisen rakettimoottorin pakokaasujen noin $3\text{–}4\,\text{km/s}$:iin verrattuna. Kenttä $1{,}1\,\text{MV/m}$ on vain noin kolmasosa ilman läpilyöntilujuudesta $3\,\text{MV/m}$, eikä tyhjiössä ole kaasua, joka voisi johtaa.
 
 ### b)
 **Annettu:** ionisuihkun virta $I = 1{,}60\,\text{A}$; a-kohdasta $v = 4{,}021 \cdot 10^{4}\,\text{m/s}$; $m = 2{,}180 \cdot 10^{-25}\,\text{kg}$; $e = 1{,}602 \cdot 10^{-19}\,\text{C}$

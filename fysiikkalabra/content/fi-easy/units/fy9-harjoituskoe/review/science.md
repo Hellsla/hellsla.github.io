@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 060191698eb68ae9
-Delta review (rule for extra answers, 2026-11-14) of the version passed at 889350cdbeb1cd52.
+CONTENT-HASH: b20798f10602ca62
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-None.
+- (none)
 
 ## Polish
-None.
+- A: 'teho muuttuu sisäenergiaksi' is loose (energy is converted, power is the rate); e.g. 'Kuinka suurella teholla sähköenergiaa muuttuu jatkojohdossa sisäenergiaksi?'. Not misleading.
 
 ## Checked
-- The one changed paragraph: when more answers are given in Part II or III than allowed, the real exam counts the allowed number of answers with the lowest combined score, and the student is told to assess the practice exam the same way. This matches YTL Reaaliaineiden kokeiden määräykset 2.5 (fetched 2026-11-14): "katsotaan kokeen kyseisen osan kokonaispistemäärän muodostuvan siitä sallitusta määrästä vastauksia, joiden pistesumma on pienin", and the English page ("only the permitted number of answers with the lowest combined score are counted"). The rule is stated per part, as in the regulation. The second-stage rule (7 answers for the whole exam) is left out, which is fine: Parts I to III have fixed counts that add up to 7.
-- The old rule (count the ones chosen before opening the model answers) is gone in all three languages; no other place in the unit states a rule for extra answers (grep).
-- "The page does not add up the points for you": the developer log says no scoring code exists and no code was changed; the sentence matches that.
-- 120 p maximum unchanged. fi, en and fi-easy say the same thing.
-- Hash checked at the start and the end with `python3 scripts/units.py hash fy9-harjoituskoe --lang fi-easy`.
+- solutions.md d) Periaate and tasks.json criterion: 'Lähtökitka eli täysin kehittynyt lepokitka' = μ0N = μ0mg on the horizontal platform; agrees with the model answer's 'suurin mahdollinen lepokitka' and a_max = μ0 g.
+- Extension cord c) question, Kysytty and the 2,5 mm² part: 'muuttuu sisäenergiaksi' agrees with the Periaate. Recomputed P_j = R_j I² = 0,560 Ω · (14,27 A)² = 114,0 W = tasks.json answer 114.0; answers unchanged (70.4 untouched).
+- No added task (last is s10). practice.py check: OK, 10 tasks, 165 points.

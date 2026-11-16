@@ -318,7 +318,7 @@ $$. Se on yhtä kova kuin vilkkaalla kadulla. Malli on karkea arvio. Ilma ja maa
 $$. ”Vain $15\,\text{dB}$” tarkoittaa, että intensiteetti on $10^{1{,}5} \approx 32$-kertainen. Siksi kuulolle haitallinen annos kertyy noin $\tfrac{1}{32}$-osassa ajasta. Neljän tunnin konsertti ilman suojaimia on siis moninkertainen annos. Hyvin asetetuilla $20\,\text{dB}$:n suojaimilla taso korvalla on noin $80\,\text{dB}$. Se on alle $85\,\text{dB}$:n. Siksi neljä tuntia on nyrkkisäännön rajoissa, kun suojaimia pidetään koko ajan. Nyrkkisääntö on arvio, ei takuu. Eri ihmisten kuulo kestää melua eri tavoin.
 
 ### Yleisiä virheitä
-- a-kohdassa taso lasketaan kääntäen verrannolliseksi etäisyyteen. Silloin pudotus on $3\,\text{dB}$ jokaista kaksinkertaistumista kohti. Tai desibelit jaetaan samalla tavalla kuin intensiteetit.
+- a-kohdassa intensiteetti lasketaan kääntäen verrannolliseksi etäisyyteen. Silloin pudotus on $3\,\text{dB}$ jokaista kaksinkertaistumista kohti. Tai desibelit jaetaan samalla tavalla kuin intensiteetit.
 - b-kohdassa selitetään, että matalat äänet etenevät nopeammin. Ilmassa nopeus ei kuitenkaan riipu taajuudesta.
 - c-kohdassa $15\,\text{dB}$ tulkitaan $15\,\%$:n lisäykseksi, tai aika puolitetaan $15\,\text{dB}$:n välein.
 

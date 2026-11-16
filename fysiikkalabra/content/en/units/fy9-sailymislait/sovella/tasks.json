@@ -572,7 +572,7 @@
           "text": "Assess the group's conclusion. What is the difference between the measurements most likely due to?",
           "criteria": [
             {
-              "text": "States that kinetic energy, not momentum, is turned into heat and sound: momentum is not a form of energy.",
+              "text": "States that kinetic energy, not momentum, is converted into internal energy and sound: momentum is not a form of energy.",
               "tag": "concept",
               "points": 1
             },

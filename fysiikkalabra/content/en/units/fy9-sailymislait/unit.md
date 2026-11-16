@@ -490,7 +490,7 @@ The speed is cubed because a faster wind carries both more air through the rotor
 
 ## Common mistakes {Virheet}
 
-- **Kinetic energy and momentum mixed up.** In a collision momentum is conserved, kinetic energy only in an elastic collision. Momentum is not turned into heat: what is turned into heat is energy.
+- **Kinetic energy and momentum mixed up.** In a collision momentum is conserved, kinetic energy only in an elastic collision. Momentum is not converted into internal energy: what is converted into internal energy is kinetic energy.
 - **Signs forgotten.** A ball that bounces back changes its momentum more than one that stops: for a ball bouncing back at the same speed $\Delta p = -mv - mv = -2mv$.
 - **Friction disappears from the work–energy principle.** The work done by friction is negative, and it transforms mechanical energy into internal energy; it neither creates nor destroys energy.
 - **Kilometres per hour substituted directly.** $72\,\text{km/h} = 72 \cdot \tfrac{1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$, before the speed is squared.

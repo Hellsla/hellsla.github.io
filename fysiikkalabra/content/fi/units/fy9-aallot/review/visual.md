@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 910044dbfbe1390a
+CONTENT-HASH: 7ca3c185282b2261
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
+- (none)
 
 ## Polish
-- [Minor] Lifted formulas that sit between words keep a short "ja" or "joten" on a line of their own after them; reads naturally, no change needed.
+- (none)
 
 ## Checked
-batch delta review 5d (round 2): reflow-1..2 at 360 px opened; every lifted formula fully visible, relations aligned, continuation rows start with an operator, no bracket, quote or case ending left around a lifted formula.
+- Hunk `sovella/solutions.md` Yleisiä virheitä, a-kohta (taso → intensiteetti): the sentence reads correctly and now names the quantity that the mistaken proportionality concerns; $3\,\text{dB}$ in LaTeX.
+- Captures opened: `fy9-aallot-stage-exercises-390-30.png`, `fy9-aallot-stage-exercises-1280-23.png`: the list item wraps cleanly, nothing clipped, the rubric under it unchanged.
+- The changed places were found in the built `fi` page by their position in each stage; the contact sheets were not used for triage. No figure and no added task in this unit's diff; the rest stands under the previous PASS.

@@ -182,7 +182,7 @@ $$, $g = 9.81\,\text{m/s}^2$
   <foreignObject x="294.5" y="129" width="133" height="36" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:30px;color:#6b7480">$\text{not a line}$</div></foreignObject>
 </svg>
 
-**Model answer:** The points lie on a downward-curving curve that levels off as the period grows. When the period halves from $1.20\,\text{s}$ to $0.60\,\text{s}$, the force does not double but becomes about four times as large, so the dependence is not linear. Physics explains this: the cart moves in a circle, and the force of the string is the net force $m\tfrac{v^2}{r}$ pointing to its centre. A shorter period means a larger orbital speed, and the force needed grows with the square of the speed.
+**Model answer:** The points lie on a falling curve that becomes less steep as the period grows. When the period halves from $1.20\,\text{s}$ to $0.60\,\text{s}$, the force does not double but becomes about four times as large, so the dependence is not linear. Physics explains this: the cart moves in a circle, and the force of the string is the net force $m\tfrac{v^2}{r}$ pointing to its centre. A shorter period means a larger orbital speed, and the force needed grows with the square of the speed.
 
 ### b)
 **Find:** a quantity against which the graph of the force is a straight line, the justification, the graph and the fitted line
@@ -433,3 +433,73 @@ $$
 &= 0.88 \cdot mgh - mg \cdot 2r
 \end{aligned}
 $$, the same result.
+
+## fy9-ympyraliike-s7
+
+### a)
+**Given:** from the source (NASA, checked 16 Nov 2026) the altitude of the station $370$–$460\,\text{km}$; in the model the height of the orbit $h = 400\,\text{km}$, the period $T = 92\,\text{min}$ and the radius of the Earth $R = 6371\,\text{km}$
+**Find:** whether the height of the model fits the source; the orbital speed $v$
+**Principle:** According to the source the station orbits the Earth at an altitude of $370$–$460\,\text{km}$. The $400\,\text{km}$ of the model lies in this range, so the model fits the source. The range is the one in which the altitude of the station is kept over time, not a variation within one orbit. Its width of $90\,\text{km}$ is only about $1.3\,\%$ of the radius of the orbit, so a circular orbit is a good model. In uniform circular motion the station travels the circumference $2\pi r$ of the orbit in the period $T$ (chapter *Moving in a circle: period and speed*). The radius of the orbit is measured from the centre of the Earth, so $r = R + h$.
+**Formula:** $v = \dfrac{2\pi r}{T} = \dfrac{2\pi(R + h)}{T}$
+**Conversions:** $r = 6371\,\text{km} + 400\,\text{km} = 6771\,\text{km} = 6.771 \cdot 10^{6}\,\text{m}$ and $T = 92\,\text{min} = 92 \cdot 60\,\text{s} = 5520\,\text{s}$
+**Substitution:** $$
+\begin{aligned}
+v &= \dfrac{2\pi \cdot 6.771 \cdot 10^{6}\,\text{m}}{5520\,\text{s}} \\
+&= 7707\,\text{m/s}
+\end{aligned}
+$$
+**Answer:** The height of the model fits the source, and $v \approx 7.7\,\text{km/s}$. The result has two significant figures like the period $92\,\text{min}$.
+**Reasonableness:** The speed is about $28\,000\,\text{km/h}$, which is usual for a satellite in a low orbit. The speed in a circular orbit from the law of gravitation, $\sqrt{\tfrac{\gamma M}{r}} \approx 7.67\,\text{km/s}$, is the same to two figures (chapter *Satellites and planets in circular orbits*), so the given period and height agree with each other.
+
+### b)
+**Given:** $r = 6.771 \cdot 10^{6}\,\text{m}$, $T = 5520\,\text{s}$, $g = 9.81\,\text{m/s}^2$
+**Find:** the centripetal acceleration $a_\text{n}$ and its share of the free-fall acceleration $g$
+**Principle:** The speed of the station is constant, but the direction of its velocity changes all the time. So the station has a centripetal acceleration that points to the centre of the orbit, which is the centre of the Earth (chapter *Centripetal acceleration and the equation of motion in a circle*).
+**Formula:** $a_\text{n} = \dfrac{v^2}{r}$. Substituting $v = \dfrac{2\pi r}{T}$ gives $a_\text{n} = \dfrac{4\pi^2 r}{T^2}$. In this way the rounding of part a does not affect the result.
+**Conversions:** None needed: the radius and the period were converted in part a.
+**Substitution:** $$
+\begin{aligned}
+a_\text{n} &= \dfrac{4\pi^2 \cdot 6.771 \cdot 10^{6}\,\text{m}}{(5520\,\text{s})^2} \\
+&= 8.773\,\text{m/s}^2
+\end{aligned}
+$$ and $\dfrac{a_\text{n}}{g} = \dfrac{8.773\,\text{m/s}^2}{9.81\,\text{m/s}^2} = 0.894$
+**Answer:** $a_\text{n} \approx 8.8\,\text{m/s}^2$, two significant figures like the period. It is about $89\,\%$, almost nine tenths, of the free-fall acceleration at the surface of the Earth.
+**Reasonableness:** By the law of gravitation the field strength in the orbit is $\gamma\tfrac{M}{r^2} \approx 8.69\,\text{m/s}^2$. The difference is about $1\,\%$, and it is explained by the period being rounded to two figures and by the height chosen for the model together. The results must agree, because gravitation is the only force on the station and gives it its centripetal acceleration.
+
+### c)
+**Find:** which force gives the astronaut the centripetal acceleration and why they are weightless although gravitation acts
+**Principle:** By Newton's second law, in a circular orbit $\Sigma F = ma_\text{n}$, and the net force points to the centre of the orbit (chapter *Centripetal acceleration and the equation of motion in a circle*). Weightlessness is free fall: only gravitation acts on the body, and the normal force is zero (chapter *Satellites and planets in circular orbits*).
+**Model answer:** The astronaut orbits the Earth along the same orbit and at the same speed as the station, so they have the same centripetal acceleration $a_\text{n} \approx 8.8\,\text{m/s}^2$ towards the centre of the Earth. Nothing touches the astronaut, so the only force on them is the gravitational force $\overline{G}$ of the Earth. It gives the centripetal acceleration: $G = ma_\text{n}$. If the floor supported the astronaut with a force $\overline{N}$, the equation of motion would be $G - N = ma_\text{n}$. But gravitation alone gives exactly this acceleration to both the astronaut and the station, because the acceleration given by gravitation does not depend on mass. So $N = 0$: the station and the astronaut fall freely together, and the floor does not press on the astronaut. A person feels their weight as the normal force, so without a normal force they feel weightless. Gravitation has not disappeared: by part b it is almost as strong in the orbit as at the surface. So weightlessness means that there is no normal force, not that there is no gravitation.
+
+### d)
+**Given:** from the source (NASA, checked 16 Nov 2026) the electrical energy generated by the solar arrays in a year $E = 735\,000\,\text{kWh}$; time $t = 365\,\text{d}$
+**Find:** the mean electrical power $P$
+**Principle:** Power tells how much energy is converted per unit of time. The mean power is the energy divided by the time in which it was generated (chapter *Electrical energy at home*).
+**Formula:** $P = \dfrac{E}{t}$
+**Conversions:** $t = 365\,\text{d} = 365 \cdot 24\,\text{h} = 8760\,\text{h}$. Because $1\,\text{kWh} = 1\,\text{kW} \cdot 1\,\text{h}$, the unit becomes $\tfrac{\text{kWh}}{\text{h}} = \text{kW}$.
+**Substitution:** $$
+\begin{aligned}
+P &= \dfrac{735\,000\,\text{kWh}}{8760\,\text{h}} \\
+&= 83.9\,\text{kW}
+\end{aligned}
+$$
+**Answer:** $P \approx 84\,\text{kW}$. Two significant figures are enough, because the value in the source is a rounded yearly output. A leap year of $366\,\text{d}$ would give $83.7\,\text{kW}$, so the third figure is not certain.
+**Reasonableness:** The power equals that of about $42$ electric kettles of $2.0\,\text{kW}$ each. The order of magnitude is believable for a station whose equipment runs all the time. The value is a mean over the whole year, so it does not tell how the output varies during an orbit.
+
+### e)
+**Find:** why the station needs batteries and why the mean power alone does not tell whether there is enough electricity at every moment
+**Principle:** A solar array generates electricity only when sunlight falls on it. The mean power $P = \tfrac{E}{t}$ does not tell how the power varies during the time $t$ (chapter *Electrical energy at home*).
+**Model answer:** The station goes round the Earth in $92\,\text{min}$, almost $16$ times a day. On almost every orbit it passes through the shadow of the Earth, because the Earth comes between the Sun and the station. In a low orbit the shadow covers a large part of the orbit. When the Sun is in the plane of the orbit, the station is at the edge of the shadow when its direction, seen from the centre of the Earth, differs from the direction pointing straight away from the Sun by the angle $\theta$ for which $\sin\theta = \tfrac{R}{r}$, so $\theta \approx 70.2^\circ$. The share $\tfrac{2\theta}{360^\circ} \approx 39\,\%$ of the orbit, about $36\,\text{min}$, is then in the shadow. In the shadow the arrays generate no electricity, but the equipment of the station needs it all the time. So the batteries are charged in sunlight, and in the shadow they feed the equipment. The $84\,\text{kW}$ of part d is a mean that hides this variation: the output is zero in the shadow and above the mean in sunlight. If the station is in the shadow $39\,\%$ of the time, the arrays must generate on average $\tfrac{84\,\text{kW}}{0.61} \approx 140\,\text{kW}$ in sunlight. Without energy storage the electricity would be cut off about every $92\,\text{min}$.
+
+### Yleisiä virheitä
+- In part a the height $400\,\text{km}$ is taken as the radius of the orbit instead of $R + h$, or the period is not converted into seconds.
+- In part b the centripetal acceleration is calculated with the radius $R$ of the Earth instead of the radius $r$ of the orbit.
+- In part c weightlessness is explained by there being no gravitation, or by a centrifugal force cancelling the weight. If the forces cancelled, the station would carry straight on and would not orbit the Earth.
+- In part d the energy is divided by the number of days $365$ instead of the hours, or the kilowatt-hour is taken as a unit of power.
+- In part e it is assumed that the station has a night once a day as on the ground. The shadow comes again about every $92\,\text{min}$.
+
+### Hyväksytään myös
+- In part a the orbital speed with the angular velocity: $\omega = \tfrac{2\pi}{T}$ and $v = \omega r$, the same result.
+- In part b $a_\text{n} = \tfrac{v^2}{r}$ with the unrounded speed $7707\,\text{m/s}$ of part a, the same result.
+- In part d the calculation in SI units: $E = 2.646 \cdot 10^{12}\,\text{J}$ and $t = 3.1536 \cdot 10^{7}\,\text{s}$, the same result. A year of $365.25\,\text{d}$ is also accepted.
+- If the values in the source have changed after the check date 16 Nov 2026, a result calculated correctly with the values the student read is accepted.

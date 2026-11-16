@@ -1,7 +1,7 @@
 ---
 description: Audit existing published content against the editorial quality standard (all three reviewers, visual & editorial first), and with --fix correct what the audit found, through the normal review gate
 argument-hint: <lesson-id | lesson-id --exercises | investigation-id | tvt-guide-id | COURSE-sovella> --audit-only | --fix [--deep] [--lang en] [--warn 200000] [--limit 350000]
-model: fable
+model: sonnet
 effort: medium
 ---
 Audit $ARGUMENTS against `docs/EDITORIAL_QUALITY_STANDARD.md`. Work in `fysiikkalabra/` (`cd fysiikkalabra` first): every path below is relative to it. You coordinate; the agents work from packets. Read only the scripts' output and the agents' reports; never open a packet, a lesson file or a capture yourself.
@@ -17,7 +17,7 @@ Audit $ARGUMENTS against `docs/EDITORIAL_QUALITY_STANDARD.md`. Work in `fysiikka
 
 Anything else: stop and say which types exist. `--lang en` / `fi-easy` audits a translation (every script takes `--lang`); `fi-easy` is also audited against NOTES.md §12 (S2).
 
-**Routing of agents** (as `/lesson`; `.claude/agents/`): every agent Fable medium (teacher 2026-11-15): visual-editorial-reviewer, pedagogy-reviewer, science-reviewer and developer (Fable high only on `/lesson`'s conditions). Pass `model` and `effort` on every Agent call. If the agent types are not registered in this session, run a general-purpose agent with the same model and the first line `Read .claude/agents/<name>.md and follow it as your instructions.` The prompt is one line naming the packet: `Read <packet path> and follow it. Lesson: <id>. Mode: <mode>. Round: <n>.` (an audit says `Mode: audit (<mode>)`).
+**Routing of agents** (as `/lesson`; `.claude/agents/`): visual-editorial-reviewer Sonnet medium; pedagogy-reviewer Sonnet medium; science-reviewer Opus medium; developer Sonnet medium (Opus medium only on `/lesson`'s conditions). Pass `model` and `effort` on every Agent call. If the agent types are not registered in this session, run a general-purpose agent with the same model and the first line `Read .claude/agents/<name>.md and follow it as your instructions.` The prompt is one line naming the packet: `Read <packet path> and follow it. Lesson: <id>. Mode: <mode>. Round: <n>.` (an audit says `Mode: audit (<mode>)`).
 
 **Budget.** Warning 200 000 and hard limit 350 000 per audited id unless `--warn`/`--limit` say otherwise, counted like `/lesson` (the sum of the agents' final context sizes). Past the hard limit, stop safely and report what remains. Never skip a needed review to stay under a number.
 
