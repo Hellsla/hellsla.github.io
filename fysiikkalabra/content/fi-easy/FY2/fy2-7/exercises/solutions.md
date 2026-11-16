@@ -329,7 +329,7 @@ $$\begin{aligned} E &= 11\,603\,\text{MW} \cdot 1\,\text{h} \\ &= 11\,603\,\text
 a) $\Delta P = 11\,603\,\text{MW} - 11\,341\,\text{MW} = 262\,\text{MW}$. Nettotuonti on $210\,\text{MW}$. d) Tuulivoima: $p = 5571\,\text{MW} : 11\,341\,\text{MW} = 0{,}491$. Ydinvoima: $p = 2594\,\text{MW} : 11\,341\,\text{MW} = 0{,}229$.
 **Vastaus:** b) $E \approx 11{,}6\,\text{GWh}$, kolme merkitsevää numeroa. Aika $1\,\text{h}$ on tarkka. Mittausten pieni epätarkkuus näkyy kohdan a) erona $52\,\text{MW}$ eli noin $0{,}45\,\%$ kulutuksesta. Siksi useampaan numeroon ei kannata luottaa.
 
-Lisäksi: a) Kulutus on $262\,\text{MW}$ suurempi kuin tuotanto. Puute katettiin tuonnilla $210\,\text{MW}$. Luvut eivät täsmää aivan: $262\,\text{MW} - 210\,\text{MW} = 52\,\text{MW}$. Se on vain noin $0{,}45\,\%$ kulutuksesta. Syy on reaaliaikaisten mittausten pieni epätarkkuus.
+Lisäksi: a) Kulutus on $262\,\text{MW}$ suurempi kuin tuotanto. Puute katettiin tuonnilla $210\,\text{MW}$. Luvut eivät täsmää aivan: erotus $262\,\text{MW} - 210\,\text{MW}$ on $52\,\text{MW}$. Se on vain noin $0{,}45\,\%$ kulutuksesta. Syy on reaaliaikaisten mittausten pieni epätarkkuus.
 
 c) Suomen sähköverkko on yhdistetty naapurimaiden verkkoihin. Jos Suomessa tuotetaan vähemmän kuin kulutetaan, erotus tuodaan ulkomailta. Taulukossa se on $210\,\text{MW}$. Jos tuotantoa on enemmän kuin kulutusta, ylimääräinen sähkö viedään ulkomaille. Fingridin saman päivän näkymässä klo 1:00 tuotanto oli $12\,791\,\text{MW}$ ja kulutus $10\,647\,\text{MW}$, joten nettovienti oli $2142\,\text{MW}$. Myös sähkövarastot ja tuotannon säätö tasoittavat eroja.
 
