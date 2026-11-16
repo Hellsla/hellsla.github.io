@@ -264,7 +264,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$E_\\text{k} \\approx 13{,}98\\,\\text{kJ} - 5{,}23\\,\\text{kJ} \\approx 8{,}74\\,\\text{kJ}$"
+              "detail": "$$\\begin{aligned} &E_\\text{k} \\approx 13{,}98\\,\\text{kJ} - 5{,}23\\,\\text{kJ} \\\\ &\\approx 8{,}74\\,\\text{kJ} \\end{aligned}$$"
             },
             {
               "key": "units_precision",

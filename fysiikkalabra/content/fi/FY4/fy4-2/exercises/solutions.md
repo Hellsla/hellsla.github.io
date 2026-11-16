@@ -26,7 +26,7 @@
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, ja $\text{m/s}^2 \cdot \text{s}^2 = \text{m}$. Muunnoksia ei tarvita.
 **Sijoitus:** $s = \tfrac{1}{2} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}50\,\text{s})^2 = \tfrac{1}{2} \cdot 9{,}81\,\text{m/s}^2 \cdot 2{,}25\,\text{s}^2 \approx 11{,}04\,\text{m}$
 **Vastaus:** $11{,}0\,\text{m}$, kolme merkitsevää numeroa kuten ajassa $1{,}50\,\text{s}$.
-**Järkevyys:** Loppunopeus on $9{,}81\,\text{m/s}^2 \cdot 1{,}50\,\text{s} \approx 14{,}7\,\text{m/s}$, joten keskinopeus on noin $7{,}4\,\text{m/s}$ ja $7{,}4\,\text{m/s} \cdot 1{,}50\,\text{s} \approx 11\,\text{m}$. Ensimmäisessä sekunnissa kivi putoaa noin $5\,\text{m}$, joten puolessatoista sekunnissa reilut $10\,\text{m}$ on uskottavaa.
+**Järkevyys:** Loppunopeus on $$\begin{aligned} &9{,}81\,\text{m/s}^2 \cdot 1{,}50\,\text{s} \\ &\approx 14{,}7\,\text{m/s} \end{aligned}$$, joten keskinopeus on noin $7{,}4\,\text{m/s}$ ja $7{,}4\,\text{m/s} \cdot 1{,}50\,\text{s} \approx 11\,\text{m}$. Ensimmäisessä sekunnissa kivi putoaa noin $5\,\text{m}$, joten puolessatoista sekunnissa reilut $10\,\text{m}$ on uskottavaa.
 
 ## fy4-2-L1-04
 **Annettu:** kuvaajasta nopeus $v_1 = 2{,}0\,\text{m/s}$ hetkellä $t_1 = 0$ ja $v_2 = 7{,}0\,\text{m/s}$ hetkellä $t_2 = 5{,}0\,\text{s}$; kuvaaja on suora
@@ -55,7 +55,7 @@
 **Periaate:** Jarrutus on tasaista, joten kiihtyvyys on vakio. Kiihtyvyys saadaan nopeuden muutoksesta ja ajasta, ja sen jälkeen matka saadaan paikan yhtälöstä. Auto ei käänny, joten matka on sama kuin siirtymä.
 **Kaava:** $a = \dfrac{v - v_0}{t}$ ja $\Delta x = v_0\,t + \tfrac{1}{2}\,a\,t^2$
 **Muunnokset:** Nopeus muunnetaan sijoittamalla yksiköt: $72\,\text{km/h} = 72 \cdot \tfrac{1000\,\text{m}}{3600\,\text{s}} = 20\,\text{m/s}$.
-**Sijoitus:** $a = \dfrac{0 - 20\,\text{m/s}}{4{,}0\,\text{s}} = -5{,}0\,\text{m/s}^2$ ja $\Delta x = 20\,\text{m/s} \cdot 4{,}0\,\text{s} + \tfrac{1}{2} \cdot (-5{,}0\,\text{m/s}^2) \cdot (4{,}0\,\text{s})^2 = 80\,\text{m} - 40\,\text{m} = 40\,\text{m}$
+**Sijoitus:** $a = \dfrac{0 - 20\,\text{m/s}}{4{,}0\,\text{s}} = -5{,}0\,\text{m/s}^2$ ja $$\begin{aligned} &\Delta x = 20\,\text{m/s} \cdot 4{,}0\,\text{s} \\ &+ \tfrac{1}{2} \cdot (-5{,}0\,\text{m/s}^2) \\ &\cdot (4{,}0\,\text{s})^2 \\ &= 80\,\text{m} - 40\,\text{m} \\ &= 40\,\text{m} \end{aligned}$$
 **Vastaus:** $40\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $72\,\text{km/h}$ ja ajassa $4{,}0\,\text{s}$.
 **Järkevyys:** Nopeus pienenee tasaisesti $20\,\text{m/s}$:sta nollaan, joten keskinopeus on $10\,\text{m/s}$ ja $10\,\text{m/s} \cdot 4{,}0\,\text{s} = 40\,\text{m}$, sama tulos. Kiihtyvyyden suuruus $5\,\text{m/s}^2$ on noin puolet $g$:stä, mikä on tavallinen voimakas jarrutus kuivalla tiellä.
 
@@ -76,7 +76,7 @@
 **Periaate:** Valitaan ylöspäin positiiviseksi suunnaksi, jolloin kiihtyvyys on $-g$ koko lennon ajan. Lakipisteessä nopeus on hetken nolla. Ensin ratkaistaan nousuaika ehdosta $v = 0$, sitten korkeus paikan yhtälöstä.
 **Kaava:** $v = v_0 - g\,t = 0$, joten $t = \dfrac{v_0}{g}$, ja korkeus on $h = v_0\,t - \dfrac{g\,t^2}{2}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei tarvita.
-**Sijoitus:** $t = \dfrac{15{,}0\,\text{m/s}}{9{,}81\,\text{m/s}^2} \approx 1{,}529\,\text{s}$ ja $h = 15{,}0\,\text{m/s} \cdot 1{,}529\,\text{s} - \tfrac{1}{2} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}529\,\text{s})^2 \approx 22{,}94\,\text{m} - 11{,}47\,\text{m} \approx 11{,}47\,\text{m}$
+**Sijoitus:** $t = \dfrac{15{,}0\,\text{m/s}}{9{,}81\,\text{m/s}^2} \approx 1{,}529\,\text{s}$ ja $$\begin{aligned} &h = 15{,}0\,\text{m/s} \cdot 1{,}529\,\text{s} \\ &- \tfrac{1}{2} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot (1{,}529\,\text{s})^2 \\ &\approx 22{,}94\,\text{m} - 11{,}47\,\text{m} \\ &\approx 11{,}47\,\text{m} \end{aligned}$$
 **Vastaus:** $11{,}5\,\text{m}$, kolme merkitsevää numeroa kuten alkunopeudessa $15{,}0\,\text{m/s}$.
 **Järkevyys:** Nousun aikana nopeus pienenee tasaisesti $15{,}0\,\text{m/s}$:sta nollaan, joten keskinopeus on $7{,}5\,\text{m/s}$ ja $7{,}5\,\text{m/s} \cdot 1{,}529\,\text{s} \approx 11{,}5\,\text{m}$. Noin kolmen kerroksen korkeus on uskottava kovalle heitolle.
 
@@ -88,7 +88,7 @@
 **Muunnokset:** Korkeus on metreinä ja aika sekunteina, joten tulos tulee yksikössä $\text{m/s}^2$. Muunnoksia ei tarvita.
 **Sijoitus:** $g_\text{K} = \dfrac{2 \cdot 1{,}60\,\text{m}}{(1{,}41\,\text{s})^2} = \dfrac{3{,}20\,\text{m}}{1{,}9881\,\text{s}^2} \approx 1{,}610\,\text{m/s}^2$
 **Vastaus:** $1{,}61\,\text{m/s}^2$, kolme merkitsevää numeroa kuten korkeudessa $1{,}60\,\text{m}$ ja ajassa $1{,}41\,\text{s}$.
-**Järkevyys:** Taulukkoarvo Kuun putoamiskiihtyvyydelle on $1{,}62\,\text{m/s}^2$, noin kuudesosa Maan arvosta, joten tulos on lähellä sitä. Maassa sama pudotus kestäisi vain $\sqrt{2 \cdot 1{,}60\,\text{m} : 9{,}81\,\text{m/s}^2} \approx 0{,}57\,\text{s}$; Kuussa hitaampi putoaminen vastaa pienempää kiihtyvyyttä.
+**Järkevyys:** Taulukkoarvo Kuun putoamiskiihtyvyydelle on $1{,}62\,\text{m/s}^2$, noin kuudesosa Maan arvosta, joten tulos on lähellä sitä. Maassa sama pudotus kestäisi vain $$\begin{aligned} &\sqrt{2 \cdot 1{,}60\,\text{m} : 9{,}81\,\text{m/s}^2} \\ &\approx 0{,}57\,\text{s} \end{aligned}$$; Kuussa hitaampi putoaminen vastaa pienempää kiihtyvyyttä.
 
 ## fy4-2-L3-01
 **Annettu:** alkunopeus $v_0 = 8{,}00\,\text{m/s}$ ylöspäin, heittokohta $6{,}00\,\text{m}$ maan yläpuolella, putoamiskiihtyvyys taulukosta $g = 9{,}81\,\text{m/s}^2$; ilmanvastus on pieni
@@ -96,9 +96,9 @@
 **Periaate:** Pallon kiihtyvyys on koko lennon ajan $g$ alaspäin, myös lakipisteessä, joten koko lento on yksi tasaisesti kiihtyvä liike. Valitaan origo heittokohtaan ja ylöspäin positiiviseksi. Maa on silloin paikassa $y = -6{,}00\,\text{m}$, ja aika saadaan toisen asteen yhtälöstä.
 **Kaava:** $y = v_0\,t - \tfrac{1}{2}\,g\,t^2$. Kun $y = -h$: $\tfrac{1}{2}\,g\,t^2 - v_0\,t - h = 0$, jonka positiivinen ratkaisu on $t = \dfrac{v_0 + \sqrt{v_0^2 + 2gh}}{g}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei tarvita.
-**Sijoitus:** Juuren alla $v_0^2 + 2gh = (8{,}00\,\text{m/s})^2 + 2 \cdot 9{,}81\,\text{m/s}^2 \cdot 6{,}00\,\text{m} = 181{,}72\,\text{m}^2/\text{s}^2$, ja $\sqrt{181{,}72\,\text{m}^2/\text{s}^2} \approx 13{,}48\,\text{m/s}$. Siis $t = \dfrac{8{,}00\,\text{m/s} + 13{,}48\,\text{m/s}}{9{,}81\,\text{m/s}^2} \approx 2{,}19\,\text{s}$
+**Sijoitus:** Juuren alla $$\begin{aligned} &v_0^2 + 2gh = (8{,}00\,\text{m/s})^2 \\ &+ 2 \cdot 9{,}81\,\text{m/s}^2 \cdot 6{,}00\,\text{m} \\ &= 181{,}72\,\text{m}^2/\text{s}^2 \end{aligned}$$, ja $\sqrt{181{,}72\,\text{m}^2/\text{s}^2} \approx 13{,}48\,\text{m/s}$. Siis $t = \dfrac{8{,}00\,\text{m/s} + 13{,}48\,\text{m/s}}{9{,}81\,\text{m/s}^2} \approx 2{,}19\,\text{s}$
 **Vastaus:** $2{,}19\,\text{s}$, kolme merkitsevää numeroa kuten alkunopeudessa ja korkeudessa. Toinen ratkaisu $t \approx -0{,}56\,\text{s}$ hylätään, koska se on ennen heittoa.
-**Järkevyys:** Nousu kestää $8{,}00\,\text{m/s} : 9{,}81\,\text{m/s}^2 \approx 0{,}82\,\text{s}$ ja nostaa palloa $3{,}26\,\text{m}$, joten lakipisteestä maahan on $9{,}26\,\text{m}$. Putoaminen levosta kestää $\sqrt{2 \cdot 9{,}26\,\text{m} : 9{,}81\,\text{m/s}^2} \approx 1{,}37\,\text{s}$, ja $0{,}82\,\text{s} + 1{,}37\,\text{s} = 2{,}19\,\text{s}$, sama tulos.
+**Järkevyys:** Nousu kestää $$\begin{aligned} &8{,}00\,\text{m/s} : 9{,}81\,\text{m/s}^2 \\ &\approx 0{,}82\,\text{s} \end{aligned}$$ ja nostaa palloa $3{,}26\,\text{m}$, joten lakipisteestä maahan on $9{,}26\,\text{m}$. Putoaminen levosta kestää $$\begin{aligned} &\sqrt{2 \cdot 9{,}26\,\text{m} : 9{,}81\,\text{m/s}^2} \\ &\approx 1{,}37\,\text{s} \end{aligned}$$, ja $0{,}82\,\text{s} + 1{,}37\,\text{s} = 2{,}19\,\text{s}$, sama tulos.
 
 ## fy4-2-L3-02
 **Annettu:** kiihdytys $0 \to 15{,}0\,\text{m/s}$ ajassa $t_1 = 20{,}0\,\text{s}$, tasainen nopeus $v = 15{,}0\,\text{m/s}$ ajan $t_2 = 60{,}0\,\text{s}$, jarrutus nollaan ajassa $t_3 = 15{,}0\,\text{s}$
@@ -106,19 +106,19 @@
 **Periaate:** Juna liikkuu koko ajan samaan suuntaan, joten matka on $(t,v)$-kuvaajan alle jäävä pinta-ala. Kuvaaja on kolmio (kiihdytys), suorakulmio (tasainen nopeus) ja kolmio (jarrutus). Kiihtyvyyksiä ei tarvitse laskea, koska pinta-alat saadaan suoraan nopeudesta ja ajoista.
 **Kaava:** $s = \tfrac{1}{2}\,v\,t_1 + v\,t_2 + \tfrac{1}{2}\,v\,t_3$
 **Muunnokset:** Nopeus on yksikössä $\text{m/s}$ ja ajat sekunteina, joten tulos tulee metreinä. Muunnoksia ei tarvita.
-**Sijoitus:** $s = \tfrac{1}{2} \cdot 15{,}0\,\text{m/s} \cdot 20{,}0\,\text{s} + 15{,}0\,\text{m/s} \cdot 60{,}0\,\text{s} + \tfrac{1}{2} \cdot 15{,}0\,\text{m/s} \cdot 15{,}0\,\text{s} = 150\,\text{m} + 900\,\text{m} + 112{,}5\,\text{m} = 1162{,}5\,\text{m}$
+**Sijoitus:** $$\begin{aligned} &s = \tfrac{1}{2} \cdot 15{,}0\,\text{m/s} \cdot 20{,}0\,\text{s} \\ &+ 15{,}0\,\text{m/s} \cdot 60{,}0\,\text{s} \\ &+ \tfrac{1}{2} \cdot 15{,}0\,\text{m/s} \cdot 15{,}0\,\text{s} \\ &= 150\,\text{m} + 900\,\text{m} \\ &+ 112{,}5\,\text{m} \\ &= 1162{,}5\,\text{m} \end{aligned}$$
 **Vastaus:** $1160\,\text{m}$ eli $1{,}16\,\text{km}$, kolme merkitsevää numeroa kuten nopeudessa ja ajoissa. Tulos $1162{,}5\,\text{m}$ pyöristetään kolmeen merkitsevään numeroon, joten luvun lopun nolla ei ole merkitsevä; kilometreina asia näkyy selvemmin.
-**Järkevyys:** Jos juna kulkisi koko ajan $95\,\text{s}$ nopeudella $15{,}0\,\text{m/s}$, matka olisi $1425\,\text{m}$; kiihdytys ja jarrutus vievät tästä puolet omista osuuksistaan, $150\,\text{m} + 112{,}5\,\text{m}$, joten $1425\,\text{m} - 262{,}5\,\text{m} = 1162{,}5\,\text{m}$. Reilun kilometrin asemaväli on metrolle tavallinen.
+**Järkevyys:** Jos juna kulkisi koko ajan $95\,\text{s}$ nopeudella $15{,}0\,\text{m/s}$, matka olisi $1425\,\text{m}$; kiihdytys ja jarrutus vievät tästä puolet omista osuuksistaan, $150\,\text{m} + 112{,}5\,\text{m}$, joten $$\begin{aligned} &1425\,\text{m} - 262{,}5\,\text{m} \\ &= 1162{,}5\,\text{m} \end{aligned}$$. Reilun kilometrin asemaväli on metrolle tavallinen.
 
 ## fy4-2-L3-03
-**Annettu:** sovitettu polynomi $y = -4{,}86\,\tfrac{\text{m}}{\text{s}^2} \cdot t^2 + 3{,}10\,\tfrac{\text{m}}{\text{s}} \cdot t + 1{,}20\,\text{m}$, ylöspäin positiivinen; hetki $t = 0{,}500\,\text{s}$
+**Annettu:** sovitettu polynomi $$\begin{aligned} &y = -4{,}86\,\tfrac{\text{m}}{\text{s}^2} \cdot t^2 \\ &+ 3{,}10\,\tfrac{\text{m}}{\text{s}} \cdot t + 1{,}20\,\text{m} \end{aligned}$$, ylöspäin positiivinen; hetki $t = 0{,}500\,\text{s}$
 **Kysytty:** pallon nopeus $v$ etumerkkeineen yksikössä $\text{m/s}$ hetkellä $0{,}500\,\text{s}$
 **Periaate:** Polynomia verrataan tasaisesti kiihtyvän liikkeen paikan yhtälöön $y = y_0 + v_0\,t + \tfrac{1}{2}\,a\,t^2$. Kertoimista luetaan alkunopeus $v_0 = 3{,}10\,\text{m/s}$ ja $\tfrac{1}{2}\,a = -4{,}86\,\text{m/s}^2$, joten $a = -9{,}72\,\text{m/s}^2$. Nopeus saadaan sitten yhtälöstä $v = v_0 + a\,t$.
 **Kaava:** Polynomin $y = A\,t^2 + B\,t + C$ kertoimista $v_0 = B$ ja $a = 2A$, joten $v = B + 2A\,t$
 **Muunnokset:** Kertoimet ovat SI-yksiköissä ja aika sekunteina. Muunnoksia ei tarvita.
-**Sijoitus:** $v = 3{,}10\,\text{m/s} + 2 \cdot (-4{,}86\,\text{m/s}^2) \cdot 0{,}500\,\text{s} = 3{,}10\,\text{m/s} - 4{,}86\,\text{m/s} = -1{,}76\,\text{m/s}$
+**Sijoitus:** $$\begin{aligned} &v = 3{,}10\,\text{m/s} \\ &+ 2 \cdot (-4{,}86\,\text{m/s}^2) \\ &\cdot 0{,}500\,\text{s} \\ &= 3{,}10\,\text{m/s} - 4{,}86\,\text{m/s} \\ &= -1{,}76\,\text{m/s} \end{aligned}$$
 **Vastaus:** $-1{,}76\,\text{m/s}$, kolme merkitsevää numeroa, koska polynomin kertoimet ja hetki $0{,}500\,\text{s}$ on annettu kolmella merkitsevällä numerolla. Negatiivinen etumerkki tarkoittaa, että pallo liikkuu jo alaspäin.
-**Järkevyys:** Mittauksesta saatu kiihtyvyys $-9{,}72\,\text{m/s}^2$ on lähellä arvoa $-g$, kuten pitääkin. Pallo on lakipisteessä hetkellä $3{,}10\,\text{m/s} : 9{,}72\,\text{m/s}^2 \approx 0{,}32\,\text{s}$, joten hetkellä $0{,}500\,\text{s}$ se on jo laskeutumassa ja nopeuden täytyy olla negatiivinen. Laskeutumista on kulunut $0{,}18\,\text{s}$, ja $9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}$.
+**Järkevyys:** Mittauksesta saatu kiihtyvyys $-9{,}72\,\text{m/s}^2$ on lähellä arvoa $-g$, kuten pitääkin. Pallo on lakipisteessä hetkellä $$\begin{aligned} &3{,}10\,\text{m/s} : 9{,}72\,\text{m/s}^2 \\ &\approx 0{,}32\,\text{s} \end{aligned}$$, joten hetkellä $0{,}500\,\text{s}$ se on jo laskeutumassa ja nopeuden täytyy olla negatiivinen. Laskeutumista on kulunut $0{,}18\,\text{s}$, ja $$\begin{aligned} &9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \\ &\approx 1{,}8\,\text{m/s} \end{aligned}$$.
 
 ## fy4-2-L1-06
 **Kysytty:** mihin suuntaan itään ajavan ja jarruttavan auton kiihtyvyys osoittaa.
@@ -132,9 +132,9 @@
 **Kuvaajan lukeminen:** Suoran päätepisteet ovat ruudukon viivojen risteyksissä: alkupiste $(0;\, 2{,}0\,\text{m/s})$ ja loppupiste $(5{,}0\,\text{s};\, 7{,}0\,\text{m/s})$.
 **Kaava:** $\Delta x = v_1\,t + \tfrac{1}{2}\,(v_2 - v_1)\,t$, eli nopeuksien keskiarvo kertaa aika
 **Muunnokset:** Nopeudet ovat yksikössä $\text{m/s}$ ja aika sekunteina, joten tulos tulee metreinä. Muunnoksia ei tarvita.
-**Sijoitus:** $\Delta x = 2{,}0\,\text{m/s} \cdot 5{,}0\,\text{s} + \tfrac{1}{2} \cdot 5{,}0\,\text{m/s} \cdot 5{,}0\,\text{s} = 10\,\text{m} + 12{,}5\,\text{m} = 22{,}5\,\text{m}$
+**Sijoitus:** $$\begin{aligned} &\Delta x = 2{,}0\,\text{m/s} \cdot 5{,}0\,\text{s} \\ &+ \tfrac{1}{2} \cdot 5{,}0\,\text{m/s} \cdot 5{,}0\,\text{s} \\ &= 10\,\text{m} + 12{,}5\,\text{m} \\ &= 22{,}5\,\text{m} \end{aligned}$$
 **Vastaus:** $22{,}5\,\text{m}$, kolme merkitsevää numeroa, koska luetut arvot ovat tarkasti ruudukon viivoilla.
-**Järkevyys:** Keskinopeus on $(2{,}0\,\text{m/s} + 7{,}0\,\text{m/s}) : 2 = 4{,}5\,\text{m/s}$, ja $4{,}5\,\text{m/s} \cdot 5{,}0\,\text{s} = 22{,}5\,\text{m}$. Matka on suurempi kuin alkunopeudella kuljettu $10\,\text{m}$ ja pienempi kuin loppunopeudella kuljettu $35\,\text{m}$, kuten pitääkin.
+**Järkevyys:** Keskinopeus on $$\begin{aligned} &(2{,}0\,\text{m/s} + 7{,}0\,\text{m/s}) : 2 \\ &= 4{,}5\,\text{m/s} \end{aligned}$$, ja $4{,}5\,\text{m/s} \cdot 5{,}0\,\text{s} = 22{,}5\,\text{m}$. Matka on suurempi kuin alkunopeudella kuljettu $10\,\text{m}$ ja pienempi kuin loppunopeudella kuljettu $35\,\text{m}$, kuten pitääkin.
 
 ## fy4-2-L1-08
 **Kysytty:** mikä oppilaan ratkaisussa on virheellistä.
@@ -188,7 +188,7 @@
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä. Muunnoksia ei tarvita.
 **Sijoitus:** $t_k = \dfrac{2{,}42\,\text{m/s}}{0{,}81\,\text{m/s}^2} \approx 2{,}99\,\text{s}$. Etäisyys on $s = \dfrac{(2{,}42\,\text{m/s})^2}{2 \cdot 0{,}81\,\text{m/s}^2} = \dfrac{5{,}86\,\text{m}^2/\text{s}^2}{1{,}62\,\text{m/s}^2} \approx 3{,}61\,\text{m}$. c) Kuvaajia ei piirretä vastauslaatikkoon, vaan ne kuvataan sanoin alla.
 **Vastaus:** Kärry ehtii noin $3{,}6\,\text{m}$ lähtöpisteestä ylöspäin, kaksi merkitsevää numeroa, koska kiihtyvyys ja alkunopeus on sovitettu hajonneesta aineistosta. c) $(t,a)$-kuvaaja on vaakasuora suora arvossa $a \approx -0{,}81\,\text{m/s}^2$ koko aikavälin ajan, koska kiihtyvyys on vakio ja osoittaa alas radalla myös käännöshetkellä. $(t,x)$-kuvaaja on alaspäin aukeava paraabeli, joka lähtee origosta, nousee aluksi jyrkästi ja loivenee, saa huippunsa $x \approx 3{,}6\,\text{m}$ hetkellä $t \approx 3{,}0\,\text{s}$ (tangentti vaakasuora, koska $v = 0$) ja laskee sen jälkeen; kärry palaa lähtöpisteeseen hetkellä $2\,t_k \approx 6{,}0\,\text{s}$, joten välillä $0 \ldots 5{,}0\,\text{s}$ kuvaaja on vielä positiivinen.
-**Järkevyys:** Nousun keskinopeus on $2{,}42\,\text{m/s} : 2 = 1{,}21\,\text{m/s}$, ja $1{,}21\,\text{m/s} \cdot 2{,}99\,\text{s} \approx 3{,}6\,\text{m}$. Aineiston viimeinen nopeus $-0{,}83\,\text{m/s}$ on lähellä sovituksen arvoa $2{,}42 - 0{,}81 \cdot 4{,}0 \approx -0{,}82\,\text{m/s}$, ja aineisto sisältää käännöshetken $t \approx 3{,}0\,\text{s}$ ($v \approx 0$). Kiihtyvyys $0{,}81\,\text{m/s}^2$ on loivalle kaltevuudelle uskottava: se vastaa kaltevuuskulmaa, jossa $g \sin\alpha \approx 0{,}81\,\text{m/s}^2$, eli $\alpha \approx 5\,{}^\circ$.
+**Järkevyys:** Nousun keskinopeus on $2{,}42\,\text{m/s} : 2 = 1{,}21\,\text{m/s}$, ja $1{,}21\,\text{m/s} \cdot 2{,}99\,\text{s} \approx 3{,}6\,\text{m}$. Aineiston viimeinen nopeus $-0{,}83\,\text{m/s}$ on lähellä sovituksen arvoa $$\begin{aligned} &2{,}42 - 0{,}81 \cdot 4{,}0 \\ &\approx -0{,}82\,\text{m/s} \end{aligned}$$, ja aineisto sisältää käännöshetken $t \approx 3{,}0\,\text{s}$ ($v \approx 0$). Kiihtyvyys $0{,}81\,\text{m/s}^2$ on loivalle kaltevuudelle uskottava: se vastaa kaltevuuskulmaa, jossa $g \sin\alpha \approx 0{,}81\,\text{m/s}^2$, eli $\alpha \approx 5\,{}^\circ$.
 
 ## fy4-2-L2-08
 **Kysytty:** miten pyöräilijän jarrutusmatka $s$ muuttuu, kun alkunopeus on sama $8{,}0\,\text{m/s}$ mutta kiihtyvyyden suuruus pienenee arvosta $4{,}0\,\text{m/s}^2$ arvoon $2{,}0\,\text{m/s}^2$.
@@ -227,4 +227,4 @@ $s_2 = 32\,\text{m} - 16\,\text{m}$, eli $s_2 = 16\,\text{m}$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $t = \sqrt{\dfrac{2 \cdot 20\,\text{m}}{24{,}79\,\text{m/s}^2}} = \sqrt{1{,}613\,\text{s}^2} \approx 1{,}270\,\text{s}$
 **Vastaus:** $1{,}27\,\text{s}$. Korkeus $20\,\text{m}$ tulkitaan tarkaksi arvoksi, ja taulukon arvossa $24{,}79\,\text{m/s}^2$ on neljä merkitsevää numeroa. Tulos annetaan silti kolmella, koska eri taulukoiden arvot poikkeavat toisistaan jo neljännessä numerossa, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Maassa sama pudotus kestäisi $\sqrt{2 \cdot 20\,\text{m} : 9{,}81\,\text{m/s}^2} \approx 2{,}02\,\text{s}$. Jupiterin putoamiskiihtyvyys on noin $2{,}5$-kertainen, ja aika on $\sqrt{2{,}5} \approx 1{,}6$ kertaa lyhyempi: $2{,}02\,\text{s} : 1{,}6 \approx 1{,}27\,\text{s}$.
+**Järkevyys:** Maassa sama pudotus kestäisi $$\begin{aligned} &\sqrt{2 \cdot 20\,\text{m} : 9{,}81\,\text{m/s}^2} \\ &\approx 2{,}02\,\text{s} \end{aligned}$$. Jupiterin putoamiskiihtyvyys on noin $2{,}5$-kertainen, ja aika on $\sqrt{2{,}5} \approx 1{,}6$ kertaa lyhyempi: $2{,}02\,\text{s} : 1{,}6 \approx 1{,}27\,\text{s}$.

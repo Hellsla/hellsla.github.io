@@ -16,7 +16,7 @@
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, ja $\text{kg} \cdot \text{m/s}^2 \cdot \text{m} = \text{J}$. Muunnoksia ei tarvita.
 **Sijoitus:** $E_\text{p} = 2{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 8{,}00\,\text{m} = 196{,}2\,\text{J}$
 **Vastaus:** $196\,\text{J}$. Vastauksessa on kolme merkitsevää numeroa kuten massassa ja korkeudessa.
-**Järkevyys:** Lasketaan pyöristetyillä luvuilla: $2{,}5\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 8\,\text{m} = 200\,\text{J}$. Ruukun paino on noin $25\,\text{N}$, ja sen nostaminen kahdeksaan metriin vaatii muutaman sadan joulen energian. Tulos on positiivinen, koska ruukku on nollatason yläpuolella.
+**Järkevyys:** Lasketaan pyöristetyillä luvuilla: $$\begin{aligned} &2{,}5\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 8\,\text{m} \\ &= 200\,\text{J} \end{aligned}$$. Ruukun paino on noin $25\,\text{N}$, ja sen nostaminen kahdeksaan metriin vaatii muutaman sadan joulen energian. Tulos on positiivinen, koska ruukku on nollatason yläpuolella.
 
 ## fy4-7-L1-03
 **Annettu:** massa $m = 1{,}20\,\text{kg}$, nopeus $v = 10{,}0\,\text{m/s}$, korkeus $h = 20{,}0\,\text{m}$ nollatason eli merenpinnan yläpuolella, $g = 9{,}81\,\text{m/s}^2$
@@ -24,7 +24,7 @@
 **Periaate:** Mekaaninen energia on liike-energian ja potentiaalienergian summa. Liike-energia lasketaan nopeudesta. Potentiaalienergia lasketaan korkeudesta merenpinnan yläpuolella.
 **Kaava:** $E_\text{mek} = E_\text{k} + E_\text{p}$, joten $E_\text{mek} = \tfrac{1}{2}\,mv^2 + m g h$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten molemmat termit tulevat jouleina. Muunnoksia ei tarvita.
-**Sijoitus:** $E_\text{mek} = \tfrac{1}{2} \cdot 1{,}20\,\text{kg} \cdot (10{,}0\,\text{m/s})^2 + 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 20{,}0\,\text{m} = 60{,}0\,\text{J} + 235{,}4\,\text{J} \approx 295\,\text{J}$
+**Sijoitus:** $$\begin{aligned} &E_\text{mek} \\ &= \tfrac{1}{2} \cdot 1{,}20\,\text{kg} \\ &\cdot (10{,}0\,\text{m/s})^2 \\ &+ 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 20{,}0\,\text{m} \\ &= 60{,}0\,\text{J} + 235{,}4\,\text{J} \\ &\approx 295\,\text{J} \end{aligned}$$
 **Vastaus:** $295\,\text{J}$. Vastauksessa on kolme merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Lasketaan pyöristetyillä luvuilla: $60\,\text{J} + 1{,}2\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 20\,\text{m} = 60\,\text{J} + 240\,\text{J} = 300\,\text{J}$. Potentiaalienergia on suurempi kuin liike-energia, mikä sopii lokkiin, joka lentää korkealla mutta hitaasti.
 
@@ -74,7 +74,7 @@
 **Periaate:** Potentiaalienergiassa korkeus mitataan valitusta nollatasosta. Nollataso on pöydän pinta. Siksi korkeus on hyllyn ja pöydän korkeuksien erotus, ei hyllyn korkeus lattiasta.
 **Kaava:** $E_\text{p} = m g h$, missä $h = h_\text{hylly} - h_\text{pöytä}$. Siis $E_\text{p} = m g\,(h_\text{hylly} - h_\text{pöytä})$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $E_\text{p} = 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}90 - 0{,}75)\,\text{m} = 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}15\,\text{m} \approx 13{,}5\,\text{J}$
+**Sijoitus:** $$\begin{aligned} &E_\text{p} \\ &= 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot (1{,}90 - 0{,}75)\,\text{m} \\ &= 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 1{,}15\,\text{m} \\ &\approx 13{,}5\,\text{J} \end{aligned}$$
 **Vastaus:** $13{,}5\,\text{J}$. Vastauksessa on kolme merkitsevää numeroa kuten massassa ja korkeuserossa $1{,}15\,\text{m}$.
 **Järkevyys:** Lattian suhteen potentiaalienergia olisi $1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}90\,\text{m} \approx 22{,}4\,\text{J}$. Pöydän suhteen se on pienempi, koska kirja on pöydän pinnasta matalammalla kuin lattiasta. Ero $8{,}8\,\text{J}$ on juuri pöydän korkeuden $0{,}75\,\text{m}$ osuus.
 
@@ -104,7 +104,7 @@
 **Periaate:** Potentiaalienergiaa varten tarvitaan punnuksen korkeus alimman kohdan yläpuolella. Punnus liikkuu ympyrän kaarella, jonka säde on langan pituus. Ripustuspisteestä mitattuna punnus on alimmillaan matkan $L$ alempana. Sivuun vedettynä se on matkan $L\cos\alpha$ alempana. Korkeus on näiden erotus.
 **Kaava:** $h = L - L\cos\alpha = L\,(1 - \cos\alpha)$ ja $E_\text{p} = m g h$, joten $E_\text{p} = m g L\,(1 - \cos\alpha)$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Laskimen on oltava asteissa.
-**Sijoitus:** $h = 1{,}20\,\text{m} \cdot (1 - \cos 40^\circ) \approx 1{,}20\,\text{m} \cdot 0{,}2340 \approx 0{,}2808\,\text{m}$, joten $E_\text{p} = 0{,}500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}2808\,\text{m} \approx 1{,}377\,\text{J}$
+**Sijoitus:** $h = 1{,}20\,\text{m} \cdot (1 - \cos 40^\circ) \approx 1{,}20\,\text{m} \cdot 0{,}2340 \approx 0{,}2808\,\text{m}$, joten $$\begin{aligned} &E_\text{p} \\ &= 0{,}500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 0{,}2808\,\text{m} \\ &\approx 1{,}377\,\text{J} \end{aligned}$$
 **Vastaus:** $1{,}38\,\text{J}$. Vastauksessa on kolme merkitsevää numeroa kuten massassa $0{,}500\,\text{kg}$ ja langan pituudessa $1{,}20\,\text{m}$.
 **Järkevyys:** Korkeus $0{,}28\,\text{m}$ on selvästi langan pituutta pienempi, kuten pitää, kun kulma on alle $90^\circ$; kulmalla $90^\circ$ korkeus olisi koko $1{,}20\,\text{m}$. Lasketaan pyöristetyillä luvuilla: $5\,\text{N} \cdot 0{,}28\,\text{m} \approx 1{,}4\,\text{J}$.
 
@@ -114,7 +114,7 @@
 **Periaate:** Ilman kitkaa ja ilmanvastusta mekaaninen energia pysyisi samana. Kitka ja ilmanvastus eivät ole konservatiivisia, ja ne muuttavat osan mekaanisesta energiasta sisäenergiaksi. Muuttunut määrä on mekaanisen energian väheneminen juurelta ylimpään kohtaan. Juurella on vain liike-energiaa ($h = 0$). Ylimmässä kohdassa on vain potentiaalienergiaa ($v = 0$).
 **Kaava:** $E_\text{muu} = E_\text{mek,1} - E_\text{mek,2}$, missä $E_\text{mek,1} = \tfrac{1}{2}\,mv^2$ ja $E_\text{mek,2} = m g h$. Siis $E_\text{muu} = \tfrac{1}{2}\,mv^2 - m g h$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $\tfrac{1}{2}\,m v^2 = \tfrac{1}{2} \cdot 55{,}0\,\text{kg} \cdot (7{,}00\,\text{m/s})^2 = 1347{,}5\,\text{J}$ ja $m g h = 55{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 2{,}10\,\text{m} \approx 1133{,}1\,\text{J}$, joten $E_\text{muu} = 1347{,}5\,\text{J} - 1133{,}1\,\text{J} \approx 214\,\text{J}$
+**Sijoitus:** $\tfrac{1}{2}\,m v^2 = \tfrac{1}{2} \cdot 55{,}0\,\text{kg} \cdot (7{,}00\,\text{m/s})^2 = 1347{,}5\,\text{J}$ ja $$\begin{aligned} &m g h \\ &= 55{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 2{,}10\,\text{m} \\ &\approx 1133{,}1\,\text{J} \end{aligned}$$, joten $E_\text{muu} = 1347{,}5\,\text{J} - 1133{,}1\,\text{J} \approx 214\,\text{J}$
 **Vastaus:** $214\,\text{J}$. Vastauksessa on kolme merkitsevää numeroa kuten lähtötiedoissa.
 **Järkevyys:** Ilman kitkaa luistelija nousisi korkeudelle $\tfrac{v^2}{2g} = \tfrac{49\,\text{m}^2/\text{s}^2}{19{,}62\,\text{m/s}^2} \approx 2{,}50\,\text{m}$. Hän nousee $2{,}10\,\text{m}$ eli noin $16\,\%$ vähemmän, ja muuttunut energia $214\,\text{J}$ on noin $16\,\%$ alkuperäisestä $1347{,}5\,\text{J}$:sta. Tulos on positiivinen, koska kitka vain vähentää mekaanista energiaa.
 
@@ -171,7 +171,7 @@ t\,(\text{s}) & E_\text{k} & E_\text{p} & E_\text{mek} \\ \hline
 Kohta b): liike-energia kasvaa melkein nollasta noin yhteen jouleen. Potentiaalienergia pienenee yhtä paljon. Niiden summa eli mekaaninen energia pysyy lähes samana. Se vaihtelee alle $1{,}5\,\%$ keskiarvosta. Se on mittausvirheen suuruinen.
 Kohta c): mekaanisten energioiden summa on $7{,}061\,\text{J}$, joten $E_{\text{mek,ka}} = 7{,}061\,\text{J} : 7 \approx 1{,}009\,\text{J}$.
 **Vastaus:** $1{,}0\,\text{J}$. Vastauksessa on kaksi merkitsevää numeroa kuten massassa $0{,}057\,\text{kg}$.
-**Järkevyys:** Alussa pallo on levossa korkeudella $1{,}80\,\text{m}$. Silloin $E_\text{mek} = m g h = 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}80\,\text{m} \approx 1{,}01\,\text{J}$. Se on sama kuin keskiarvo. Viimeisellä hetkellä pallo on melkein lattiassa, ja lähes kaikki energia on liike-energiaa.
+**Järkevyys:** Alussa pallo on levossa korkeudella $1{,}80\,\text{m}$. Silloin $$\begin{aligned} &E_\text{mek} = m g h \\ &= 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\cdot 1{,}80\,\text{m} \\ &\approx 1{,}01\,\text{J} \end{aligned}$$. Se on sama kuin keskiarvo. Viimeisellä hetkellä pallo on melkein lattiassa, ja lähes kaikki energia on liike-energiaa.
 
 ## fy4-7-L2-06
 **Annettu:** massa $m = 70\,\text{kg}$, syvyys $1{,}5\,\text{m}$ nollatason eli vedenpinnan alapuolella, nopeus $v = 4{,}0\,\text{m/s}$, $g = 9{,}81\,\text{m/s}^2$

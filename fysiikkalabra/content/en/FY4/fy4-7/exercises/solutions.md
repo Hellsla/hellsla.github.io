@@ -16,7 +16,7 @@
 **Conversions:** All quantities are in SI units, and $\text{kg} \cdot \text{m/s}^2 \cdot \text{m} = \text{J}$. No conversions are needed.
 **Substitution:** $E_\text{p} = 2.50\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 8.00\,\text{m} = 196.2\,\text{J}$
 **Answer:** $196\,\text{J}$, three significant figures like the mass and the height.
-**Reasonableness:** With rounded numbers $2.5\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 8\,\text{m} = 200\,\text{J}$. The weight of the pot is about $25\,\text{N}$, and lifting it to eight metres takes an energy of a few hundred joules. The result is positive, because the pot is above the zero level.
+**Reasonableness:** With rounded numbers $$\begin{aligned} &2.5\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 8\,\text{m} \\ &= 200\,\text{J} \end{aligned}$$. The weight of the pot is about $25\,\text{N}$, and lifting it to eight metres takes an energy of a few hundred joules. The result is positive, because the pot is above the zero level.
 
 ## fy4-7-L1-03
 **Given:** mass $m = 1.20\,\text{kg}$, speed $v = 10.0\,\text{m/s}$, height $h = 20.0\,\text{m}$ above the zero level, that is, sea level, $g = 9.81\,\text{m/s}^2$
@@ -24,7 +24,7 @@
 **Principle:** Mechanical energy is the sum of kinetic energy and potential energy. Kinetic energy is obtained from the speed and potential energy from the height above sea level.
 **Formula:** $E_\text{mech} = E_\text{k} + E_\text{p}$, so $E_\text{mech} = \tfrac{1}{2}\,mv^2 + m g h$
 **Conversions:** All quantities are in SI units, so both terms come in joules. No conversions are needed.
-**Substitution:** $E_\text{mech} = \tfrac{1}{2} \cdot 1.20\,\text{kg} \cdot (10.0\,\text{m/s})^2 + 1.20\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 20.0\,\text{m} = 60.0\,\text{J} + 235.4\,\text{J} \approx 295\,\text{J}$
+**Substitution:** $$\begin{aligned} &E_\text{mech} \\ &= \tfrac{1}{2} \cdot 1.20\,\text{kg} \\ &\cdot (10.0\,\text{m/s})^2 \\ &+ 1.20\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 20.0\,\text{m} \\ &= 60.0\,\text{J} + 235.4\,\text{J} \\ &\approx 295\,\text{J} \end{aligned}$$
 **Answer:** $295\,\text{J}$, three significant figures like the initial data.
 **Reasonableness:** With rounded numbers $60\,\text{J} + 1.2\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 20\,\text{m} = 60\,\text{J} + 240\,\text{J} = 300\,\text{J}$. The potential energy is greater than the kinetic energy, which suits a gull flying high but slowly.
 
@@ -74,7 +74,7 @@
 **Principle:** In potential energy the height is measured from the chosen zero level. The zero level is the surface of the table, so the height is the difference between the heights of the shelf and the table, not the height of the shelf from the floor.
 **Formula:** $E_\text{p} = m g h$, where $h = h_\text{shelf} - h_\text{table}$. So $E_\text{p} = m g\,(h_\text{shelf} - h_\text{table})$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
-**Substitution:** $E_\text{p} = 1.20\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot (1.90 - 0.75)\,\text{m} = 1.20\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.15\,\text{m} \approx 13.5\,\text{J}$
+**Substitution:** $$\begin{aligned} &E_\text{p} \\ &= 1.20\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot (1.90 - 0.75)\,\text{m} \\ &= 1.20\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 1.15\,\text{m} \\ &\approx 13.5\,\text{J} \end{aligned}$$
 **Answer:** $13.5\,\text{J}$, three significant figures like the mass and the difference in height $1.15\,\text{m}$.
 **Reasonableness:** Relative to the floor the potential energy would be $1.20\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.90\,\text{m} \approx 22.4\,\text{J}$. Relative to the table it is smaller, because the book is lower relative to the surface of the table than relative to the floor. The difference $8.8\,\text{J}$ is exactly the share of the height of the table, $0.75\,\text{m}$.
 
@@ -104,7 +104,7 @@
 **Principle:** For potential energy we need the height of the bob above its lowest point. The bob moves along a circular arc whose radius is the length of the string. Measured from the point of suspension, the bob is at its lowest a distance $L$ below it, and when pulled aside a distance $L\cos\alpha$ below it, so the height is the difference of these.
 **Formula:** $h = L - L\cos\alpha = L\,(1 - \cos\alpha)$ and $E_\text{p} = m g h$, so $E_\text{p} = m g L\,(1 - \cos\alpha)$
 **Conversions:** All quantities are in SI units, so no conversions are needed. The calculator must be in degrees.
-**Substitution:** $h = 1.20\,\text{m} \cdot (1 - \cos 40^\circ) \approx 1.20\,\text{m} \cdot 0.2340 \approx 0.2808\,\text{m}$, so $E_\text{p} = 0.500\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 0.2808\,\text{m} \approx 1.377\,\text{J}$
+**Substitution:** $h = 1.20\,\text{m} \cdot (1 - \cos 40^\circ) \approx 1.20\,\text{m} \cdot 0.2340 \approx 0.2808\,\text{m}$, so $$\begin{aligned} &E_\text{p} \\ &= 0.500\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 0.2808\,\text{m} \\ &\approx 1.377\,\text{J} \end{aligned}$$
 **Answer:** $1.38\,\text{J}$, three significant figures like the mass $0.500\,\text{kg}$ and the length of the string $1.20\,\text{m}$.
 **Reasonableness:** The height $0.28\,\text{m}$ is clearly smaller than the length of the string, as it should be when the angle is under $90^\circ$; at the angle $90^\circ$ the height would be the whole $1.20\,\text{m}$. With rounded numbers $5\,\text{N} \cdot 0.28\,\text{m} \approx 1.4\,\text{J}$.
 
@@ -114,7 +114,7 @@
 **Principle:** Without friction and air resistance the mechanical energy would stay the same. Friction and air resistance are not conservative, and they change part of the mechanical energy into internal energy. The amount changed is the decrease in mechanical energy from the foot to the highest point. At the foot there is only kinetic energy ($h = 0$), at the highest point only potential energy ($v = 0$).
 **Formula:** $E_\text{other} = E_\text{mech,1} - E_\text{mech,2}$, where $E_\text{mech,1} = \tfrac{1}{2}\,mv^2$ and $E_\text{mech,2} = m g h$. So $E_\text{other} = \tfrac{1}{2}\,mv^2 - m g h$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
-**Substitution:** $\tfrac{1}{2}\,m v^2 = \tfrac{1}{2} \cdot 55.0\,\text{kg} \cdot (7.00\,\text{m/s})^2 = 1347.5\,\text{J}$ and $m g h = 55.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 2.10\,\text{m} \approx 1133.1\,\text{J}$, so $E_\text{other} = 1347.5\,\text{J} - 1133.1\,\text{J} \approx 214\,\text{J}$
+**Substitution:** $\tfrac{1}{2}\,m v^2 = \tfrac{1}{2} \cdot 55.0\,\text{kg} \cdot (7.00\,\text{m/s})^2 = 1347.5\,\text{J}$ and $$\begin{aligned} &m g h \\ &= 55.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 2.10\,\text{m} \\ &\approx 1133.1\,\text{J} \end{aligned}$$, so $E_\text{other} = 1347.5\,\text{J} - 1133.1\,\text{J} \approx 214\,\text{J}$
 **Answer:** $214\,\text{J}$, three significant figures like the initial data.
 **Reasonableness:** Without friction the skater would rise to the height $\tfrac{v^2}{2g} = \tfrac{49\,\text{m}^2/\text{s}^2}{19.62\,\text{m/s}^2} \approx 2.50\,\text{m}$. She rises $2.10\,\text{m}$, about $16\,\%$ less, and the changed energy $214\,\text{J}$ is about $16\,\%$ of the original $1347.5\,\text{J}$. The result is positive, because friction only decreases the mechanical energy.
 
@@ -171,7 +171,7 @@ t\,(\text{s}) & E_\text{k} & E_\text{p} & E_\text{mech} \\ \hline
 Part b): the kinetic energy grows from almost zero to about one joule, the potential energy decreases by the same amount, and their sum, the mechanical energy, stays almost the same. It varies by less than $1.5\,\%$ of the mean, which is of the order of the measurement error.
 Part c): the sum of the mechanical energies is $7.061\,\text{J}$, so $E_{\text{mech,av}} = 7.061\,\text{J} : 7 \approx 1.009\,\text{J}$.
 **Answer:** $1.0\,\text{J}$, two significant figures like the mass $0.057\,\text{kg}$.
-**Reasonableness:** At the start the ball is at rest at a height of $1.80\,\text{m}$, so $E_\text{mech} = m g h = 0.057\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.80\,\text{m} \approx 1.01\,\text{J}$, the same as the mean. At the last moment the ball is almost at the floor, and almost all the energy is kinetic energy.
+**Reasonableness:** At the start the ball is at rest at a height of $1.80\,\text{m}$, so $$\begin{aligned} &E_\text{mech} = m g h \\ &= 0.057\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot 1.80\,\text{m} \\ &\approx 1.01\,\text{J} \end{aligned}$$, the same as the mean. At the last moment the ball is almost at the floor, and almost all the energy is kinetic energy.
 
 ## fy4-7-L2-06
 **Given:** mass $m = 70\,\text{kg}$, depth $1.5\,\text{m}$ below the zero level, that is, the water surface, speed $v = 4.0\,\text{m/s}$, $g = 9.81\,\text{m/s}^2$

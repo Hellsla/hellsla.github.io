@@ -141,7 +141,7 @@ v_0 &= \frac{1250\,\text{kg}\cdot\text{m/s}}{75.0\,\text{kg}} \\
 \end{aligned}
 ```
 **Answer:** $60\,\text{km/h}$, two significant figures, because the slope of the line is read approximately from the graph.
-**Reasonableness:** The product $F_\text{avg}\,\Delta t$ is almost the same in every measurement: $24.8\,\text{kN} \cdot 0.050\,\text{s} = 1.24\,\text{kN}\cdot\text{s}$ and $6.3\,\text{kN} \cdot 0.200\,\text{s} = 1.26\,\text{kN}\cdot\text{s}$, as it should be when the change in momentum is constant. The longest stopping time gives the smallest force, so the data show the effect of the elasticity of the belt.
+**Reasonableness:** The product $F_\text{avg}\,\Delta t$ is almost the same in every measurement: $$\begin{aligned} &24.8\,\text{kN} \cdot 0.050\,\text{s} \\ &= 1.24\,\text{kN}\cdot\text{s} \end{aligned}$$ and $$\begin{aligned} &6.3\,\text{kN} \cdot 0.200\,\text{s} \\ &= 1.26\,\text{kN}\cdot\text{s} \end{aligned}$$, as it should be when the change in momentum is constant. The longest stopping time gives the smallest force, so the data show the effect of the elasticity of the belt.
 
 ## fy4-11-L2-07
 **Given:** the braking distance from $50\,\text{km/h}$ is $12.0\,\text{m}$, the braking distance from $90\,\text{km/h}$ is asked; deceleration constant and the same in both
@@ -181,7 +181,7 @@ Reasonableness: for example, for a $75\,\text{kg}$ dummy in test A $\Delta v = 2
 **Principle:** First the distance $d$ is calculated from the formula for the stopping distance. At $40\,\text{km/h}$ the car travels the reaction distance at constant speed and brakes for the rest of the distance. If the speed at the child is $v$, stopping would still need the distance $\tfrac{v^2}{2a}$, so the whole braking distance is the distance braked up to the child plus this.
 **Formula:** $d = u\,t_\text{r} + \dfrac{u^2}{2a}$, where $u = 30\,\text{km/h}$, and $\dfrac{v_0^2}{2a} = (d - v_0\,t_\text{r}) + \dfrac{v^2}{2a}$, so $v = \sqrt{v_0^2 - 2a\,(d - v_0\,t_\text{r})}$
 **Conversions:** $u = 30\,\text{km/h} \approx 8.333\,\text{m/s}$ and $v_0 = 40\,\text{km/h} \approx 11.11\,\text{m/s}$; the answer is finally multiplied by $3.6$.
-**Substitution:** $d = 8.333\,\text{m/s} \cdot 1.0\,\text{s} + \dfrac{(8.333\,\text{m/s})^2}{2 \cdot 9.0\,\text{m/s}^2} = 8.333\,\text{m} + 3.858\,\text{m} = 12.19\,\text{m}$; $d - v_0\,t_\text{r} = 12.19\,\text{m} - 11.11\,\text{m} = 1.080\,\text{m}$; $v^2 = (11.11\,\text{m/s})^2 - 2 \cdot 9.0\,\text{m/s}^2 \cdot 1.080\,\text{m} = 104.0\,\text{m}^2/\text{s}^2$, so $v = \sqrt{104.0}\,\text{m/s} = 10.20\,\text{m/s} = 36.7\,\text{km/h}$
+**Substitution:** $$\begin{aligned} &d = 8.333\,\text{m/s} \cdot 1.0\,\text{s} \\ &+ \dfrac{(8.333\,\text{m/s})^2}{2 \cdot 9.0\,\text{m/s}^2} \\ &= 8.333\,\text{m} + 3.858\,\text{m} \\ &= 12.19\,\text{m} \end{aligned}$$; $d - v_0\,t_\text{r} = 12.19\,\text{m} - 11.11\,\text{m} = 1.080\,\text{m}$; $$\begin{aligned} &v^2 = (11.11\,\text{m/s})^2 \\ &- 2 \cdot 9.0\,\text{m/s}^2 \cdot 1.080\,\text{m} \\ &= 104.0\,\text{m}^2/\text{s}^2 \end{aligned}$$, so $v = \sqrt{104.0}\,\text{m/s} = 10.20\,\text{m/s} = 36.7\,\text{km/h}$
 **Answer:** $37\,\text{km/h}$, two significant figures like the reaction time $1.0\,\text{s}$ and the deceleration $9.0\,\text{m/s}^2$.
 **Reasonableness:** At $40\,\text{km/h}$ the reaction distance alone, $11.1\,\text{m}$, takes almost the whole $12.2\,\text{m}$, so only about a metre is left for braking, and the speed has time to fall only a little. The car would therefore hit the child at almost its original speed, even though the speed exceeds the limit by only $10\,\text{km/h}$.
 
@@ -201,7 +201,7 @@ Reasonableness: for example, for a $75\,\text{kg}$ dummy in test A $\Delta v = 2
 **Principle:** The car in front starts to brake at once and stops after its braking distance. The car behind first travels the reaction distance and then a longer braking distance, because its deceleration is smaller. The car in front is all the time moving more slowly than the car behind, so the gap shrinks until the car behind stops. There is no collision if the gap is at least the difference between the distances the cars travel.
 **Formula:** $d + \dfrac{v_0^2}{2a_1} = v_0\,t_\text{r} + \dfrac{v_0^2}{2a_2}$, so $d = v_0\,t_\text{r} + \dfrac{v_0^2}{2a_2} - \dfrac{v_0^2}{2a_1}$
 **Conversions:** $80\,\text{km/h} = \dfrac{80 \cdot 1000\,\text{m}}{3600\,\text{s}} \approx 22.22\,\text{m/s}$
-**Substitution:** $d = 22.22\,\text{m/s} \cdot 1.0\,\text{s} + \dfrac{(22.22\,\text{m/s})^2}{2 \cdot 6.0\,\text{m/s}^2} - \dfrac{(22.22\,\text{m/s})^2}{2 \cdot 9.0\,\text{m/s}^2} = 22.22\,\text{m} + 41.15\,\text{m} - 27.43\,\text{m} = 35.94\,\text{m}$
+**Substitution:** $$\begin{aligned} &d = 22.22\,\text{m/s} \cdot 1.0\,\text{s} \\ &+ \dfrac{(22.22\,\text{m/s})^2}{2 \cdot 6.0\,\text{m/s}^2} \\ &- \dfrac{(22.22\,\text{m/s})^2}{2 \cdot 9.0\,\text{m/s}^2} \\ &= 22.22\,\text{m} + 41.15\,\text{m} \\ &- 27.43\,\text{m} \\ &= 35.94\,\text{m} \end{aligned}$$
 **Answer:** $36\,\text{m}$, two significant figures like the reaction time $1.0\,\text{s}$ and the decelerations.
 **Reasonableness:** If the decelerations of the cars were the same, the reaction distance $22\,\text{m}$ would be enough for the gap. The worn tyres add about $14\,\text{m}$ to the gap needed. A gap of $36\,\text{m}$ corresponds to a driving time of about $1.6\,\text{s}$ at $22\,\text{m/s}$.
 
@@ -243,7 +243,7 @@ s_\text{stop} &= 22.22\,\text{m/s} \cdot 1.2\,\text{s} \\
 **Reading the graph:** The changes in speed over the intervals are $1.6$; $3.3$; $4.5$; $3.4$; $1.5$ and $0.7\,\text{m/s}$. The speed changes the most in the interval $40$–$60\,\text{ms}$, where it decreases by $4.5\,\text{m/s}$. The stopping time of the dummy is $120\,\text{ms}$, because the speed is then zero.
 **Formula:** $s = \sum \tfrac{v_\text{start} + v_\text{end}}{2}\,\Delta t$, $F_\text{avg} = \dfrac{m\,\Delta v}{\Delta t}$ and in each interval $F = \dfrac{m\,\Delta v_\text{interval}}{\Delta t_\text{interval}}$
 **Conversions:** $20\,\text{ms} = 0.020\,\text{s}$ and $120\,\text{ms} = 0.120\,\text{s}$.
-**Substitution:** a) The sum of the average speeds is $14.2 + 11.75 + 7.85 + 3.9 + 1.45 + 0.35 = 39.5\,\text{m/s}$, so
+**Substitution:** a) The sum of the average speeds is $$\begin{aligned} &14.2 + 11.75 + 7.85 \\ &+ 3.9 + 1.45 + 0.35 \\ &= 39.5\,\text{m/s} \end{aligned}$$, so
 ```latex
 \begin{aligned}
 s &= 39.5\,\text{m/s} \cdot 0.020\,\text{s} \\
@@ -267,7 +267,7 @@ F_\text{max} &= \frac{80.0\,\text{kg} \cdot 4.5\,\text{m/s}}{0.020\,\text{s}} \\
 ```
 d) The change in momentum is $m\,\Delta v = 80.0\,\text{kg} \cdot 15.0\,\text{m/s} = 1200\,\text{kg}\cdot\text{m/s}$ regardless of whether the dummy is protected by a belt and an airbag. If the dummy stopped in $0.010\,\text{s}$, the average force would be $F_\text{avg} = \dfrac{1200\,\text{kg}\cdot\text{m/s}}{0.010\,\text{s}} = 120\,000\,\text{N}$, that is, $120\,\text{kN}$.
 **Answer:** c) The greatest force is $18.0\,\text{kN}$, three significant figures like the change in speed $4.5\,\text{m/s}$ and the mass $80.0\,\text{kg}$. In addition, a) the stopping distance is $0.79\,\text{m}$ and b) the average force is $10\,\text{kN}$. d) The belt and the airbag lengthen the stopping time to about $0.12\,\text{s}$, whereas on hitting a rigid surface the time would be about $0.010\,\text{s}$ and the average force would be $120\,\text{kN}$, that is, $12$ times as large. The change in momentum and the impulse are the same, so a longer time means a smaller force, $F_\text{avg} = \tfrac{m\,\Delta v}{\Delta t}$. The belt keeps the dummy with the car and lets it slow down together with the car, and the airbag spreads the force over a large area; they work together, not instead of each other. The force varies during the collision, so the greatest force $18.0\,\text{kN}$ is greater than the average.
-**Reasonableness:** The weight of the dummy is $80.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 785\,\text{N}$, so the greatest force is about $23$ times and the average force about $13$ times the weight. The greatest force is $1.8$ times the average. The distance can be checked with the average speed: over the whole time the average speed is about $0.79\,\text{m} : 0.120\,\text{s} = 6.6\,\text{m/s}$, which is less than half of the initial speed $15.0\,\text{m/s}$, because the speed has decreased faster in the middle than in uniform slowing down.
+**Reasonableness:** The weight of the dummy is $$\begin{aligned} &80.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &= 785\,\text{N} \end{aligned}$$, so the greatest force is about $23$ times and the average force about $13$ times the weight. The greatest force is $1.8$ times the average. The distance can be checked with the average speed: over the whole time the average speed is about $0.79\,\text{m} : 0.120\,\text{s} = 6.6\,\text{m/s}$, which is less than half of the initial speed $15.0\,\text{m/s}$, because the speed has decreased faster in the middle than in uniform slowing down.
 
 ## fy4-11-L1-09
 **Given:** $v_0 = 80\,\text{km/h}$, finally $v = 0$; coefficient of sliding friction between rubber and asphalt from the MAFY table (table *Kitkakertoimia*, rubber–asphalt, sliding friction): the range $0.5$–$0.8$, the greatest value $\mu = 0.8$ is used; $g = 9.81\,\text{m/s}^2$
@@ -286,7 +286,7 @@ d) The change in momentum is $m\,\Delta v = 80.0\,\text{kg} \cdot 15.0\,\text{m/
 **Reading the graph:** The rectangle has height $20\,\text{m/s}$ and width $1.0\,\text{s}$. The triangle has height $20\,\text{m/s}$ and base $3.5\,\text{s} - 1.0\,\text{s} = 2.5\,\text{s}$.
 **Formula:** $s = s_\text{r} + s_\text{j} = v_0 t_\text{r} + \tfrac{1}{2} v_0 t_\text{j}$
 **Conversions:** None needed: the quantities are in SI units.
-**Substitution:** $s = 20\,\text{m/s} \cdot 1.0\,\text{s} + \tfrac{1}{2} \cdot 20\,\text{m/s} \cdot 2.5\,\text{s} = 20\,\text{m} + 25\,\text{m} = 45\,\text{m}$
+**Substitution:** $$\begin{aligned} &s = 20\,\text{m/s} \cdot 1.0\,\text{s} \\ &+ \tfrac{1}{2} \cdot 20\,\text{m/s} \cdot 2.5\,\text{s} \\ &= 20\,\text{m} + 25\,\text{m} \\ &= 45\,\text{m} \end{aligned}$$
 **Answer:** $45\,\text{m}$, two significant figures, the precision of the values read from the graph.
 **Reasonableness:** The speed $20\,\text{m/s}$ is $72\,\text{km/h}$, and a stopping distance of $45\,\text{m}$ is typical. The deceleration is the magnitude of the slope, $\dfrac{20\,\text{m/s}}{2.5\,\text{s}} = 8.0\,\text{m/s}^2$, which fits a dry road. The distance is smaller than the $70\,\text{m}$ that a car moving at $20\,\text{m/s}$ the whole $3.5\,\text{s}$ would cover, as it should be.
 

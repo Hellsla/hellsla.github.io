@@ -29,7 +29,7 @@
         {
           "text": "$5.1\\,\\text{m}$",
           "correct": true,
-          "feedback": "Correct. The time of rise is $t = \\tfrac{v}{g} \\approx 1.02\\,\\text{s}$, and the average speed during the rise is half the initial speed, so $h = \\tfrac{v}{2} \\cdot \\tfrac{v}{g} = \\tfrac{v^2}{2g} = \\tfrac{(10\\,\\text{m/s})^2}{2 \\cdot 9.81\\,\\text{m/s}^2} \\approx 5.1\\,\\text{m}$."
+          "feedback": "Correct. The time of rise is $t = \\tfrac{v}{g} \\approx 1.02\\,\\text{s}$, and the average speed during the rise is half the initial speed, so $$\\begin{aligned} &h = \\tfrac{v}{2} \\cdot \\tfrac{v}{g} \\\\ &= \\tfrac{v^2}{2g} \\\\ &= \\tfrac{(10\\,\\text{m/s})^2}{2 \\cdot 9.81\\,\\text{m/s}^2} \\\\ &\\approx 5.1\\,\\text{m} \\end{aligned}$$."
         },
         {
           "text": "$10\\,\\text{m}$",
@@ -447,7 +447,7 @@
         {
           "text": "The speed must be converted first: $36\\,\\text{km/h} = 10\\,\\text{m/s}$, which gives $E_\\text{k} = 50\\,\\text{kJ}$.",
           "correct": true,
-          "feedback": "Correct. $36\\,\\text{km/h} = \\tfrac{36 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 10\\,\\text{m/s}$, and $E_\\text{k} = \\tfrac{1}{2} \\cdot 1000\\,\\text{kg} \\cdot (10\\,\\text{m/s})^2 = 50\\,000\\,\\text{J}$. The joule is $\\text{kg} \\cdot \\text{m}^2/\\text{s}^2$, so the speed must be in the unit $\\text{m/s}$."
+          "feedback": "Correct. $36\\,\\text{km/h} = \\tfrac{36 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} = 10\\,\\text{m/s}$, and $$\\begin{aligned} &E_\\text{k} \\\\ &= \\tfrac{1}{2} \\cdot 1000\\,\\text{kg} \\\\ &\\cdot (10\\,\\text{m/s})^2 \\\\ &= 50\\,000\\,\\text{J} \\end{aligned}$$. The joule is $\\text{kg} \\cdot \\text{m}^2/\\text{s}^2$, so the speed must be in the unit $\\text{m/s}$."
         },
         {
           "text": "The factor $\\tfrac{1}{2}$ does not belong, which gives the result $1\\,296\\,000\\,\\text{J}$.",

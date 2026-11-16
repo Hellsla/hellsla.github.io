@@ -13,7 +13,7 @@ a 0
 **Conversions:** The mass is in kilograms and the acceleration in $\text{m/s}^2$, so no conversions are needed.
 **Substitution:** $G = 160\,\text{kg}\cdot 1.62\,\text{m/s}^2 = 259.2\,\text{N}$
 **Answer:** $259\,\text{N}$, three significant figures like the acceleration of free fall $1.62\,\text{m/s}^2$.
-**Reasonableness:** On Earth the weight would be $160\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 1570\,\text{N}$. The acceleration of free fall on the Moon is about a sixth of the value on Earth, and $1570\,\text{N} : 6 \approx 260\,\text{N}$, the same result.
+**Reasonableness:** On Earth the weight would be $$\begin{aligned} &160\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\ &\approx 1570\,\text{N} \end{aligned}$$. The acceleration of free fall on the Moon is about a sixth of the value on Earth, and $1570\,\text{N} : 6 \approx 260\,\text{N}$, the same result.
 
 ## fy4-6-L1-02
 **Given:** $m = 30\,\text{kg}$, $\mu = 0.12$, the sled slides on horizontal snow; $g = 9.81\,\text{m/s}^2$
@@ -164,7 +164,7 @@ komponentit G
 ```
 **Formula:** $y$: $N - mg\cos\alpha = 0$, so the greatest static friction is $F_\text{max} = \mu_0 mg\cos\alpha$, and it is compared with the component $G_x = mg\sin\alpha$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
-**Substitution:** $F_\text{max} = 0.60\cdot 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\cos 35^\circ = 48.2\,\text{N}$ and $G_x = 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\sin 35^\circ = 56.3\,\text{N}$, so $G_x - F_\text{max} = 8.1\,\text{N}$
+**Substitution:** $$\begin{aligned} &F_\text{max} \\ &= 0.60\cdot 10\,\text{kg}\cdot \\ &9.81\,\text{m/s}^2\cdot\cos 35^\circ \\ &= 48.2\,\text{N} \end{aligned}$$ and $G_x = 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\sin 35^\circ = 56.3\,\text{N}$, so $G_x - F_\text{max} = 8.1\,\text{N}$
 **Answer:** the component exceeds the greatest static friction by $56.3\,\text{N} - 48.2\,\text{N} = 8.1\,\text{N}$, two significant figures like the coefficient of friction $0.60$. The greatest static friction $48\,\text{N}$ is smaller than the component $56\,\text{N}$, so the box does not stay in place but starts to slide. The difference is positive, so the friction is not enough.
 **Reasonableness:** The same conclusion follows from the angle: $\tan 35^\circ = 0.70$ is greater than $\mu_0 = 0.60$, so the plank is steeper than the limiting angle $\tan^{-1} 0.60 \approx 31^\circ$.
 
@@ -204,7 +204,7 @@ komponentit G
 ```
 **Formula:** $y$: $N = mg\cos\alpha$ and $x$: $mg\sin\alpha + \mu mg\cos\alpha = ma$, so $a = g(\sin\alpha + \mu\cos\alpha)$. From the equation of motion $v^2 = v_0^2 - 2as$ and the condition $v = 0$ we get $s = \dfrac{v_0^2}{2a}$, where $a = g(\sin\alpha + \mu\cos\alpha)$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
-**Substitution:** $a = 9.81\,\text{m/s}^2\cdot(\sin 20^\circ + 0.25\cdot\cos 20^\circ) = 5.660\,\text{m/s}^2$ and $s = \dfrac{(3.0\,\text{m/s})^2}{2\cdot 5.660\,\text{m/s}^2} = 0.795\,\text{m}$
+**Substitution:** $$\begin{aligned} &a \\ &= 9.81\,\text{m/s}^2\cdot(\sin 20^\circ \\ &+ 0.25\cdot\cos 20^\circ) \\ &= 5.660\,\text{m/s}^2 \end{aligned}$$ and $s = \dfrac{(3.0\,\text{m/s})^2}{2\cdot 5.660\,\text{m/s}^2} = 0.795\,\text{m}$
 **Answer:** $0.80\,\text{m}$, two significant figures like the velocity $3.0\,\text{m/s}$ and the coefficient of friction $0.25$.
 **Reasonableness:** Without friction the deceleration would be $g\sin 20^\circ \approx 3.4\,\text{m/s}^2$ and the distance about $1.3\,\text{m}$; friction shortens the distance. After stopping, the puck stays on the slope only if the coefficient of static friction is at least $\tan 20^\circ \approx 0.36$; otherwise it starts to slide back down.
 
@@ -224,7 +224,7 @@ komponentit G
 ```
 **Formula:** $y$: $N - mg\cos\alpha = 0$ and $x$: $mg\sin\alpha - \mu N = ma$, so $a = g(\sin\alpha - \mu\cos\alpha)$ and $\mu = \tan\alpha - \dfrac{a_\text{Earth}}{g\cos\alpha}$. Because the expression in the parentheses is the same in both places, $a_\text{Moon} = a_\text{Earth}\cdot\dfrac{g_\text{Moon}}{g}$
 **Conversions:** All quantities are in SI units, so no conversions are needed, and the mass cancels.
-**Substitution:** $\mu = \tan 30^\circ - \dfrac{2.0\,\text{m/s}^2}{9.81\,\text{m/s}^2\cdot\cos 30^\circ} = 0.577 - 0.235 = 0.342$, and $a_\text{Moon} = 1.62\,\text{m/s}^2\cdot(\sin 30^\circ - 0.342\cdot\cos 30^\circ) = 0.330\,\text{m/s}^2$. Directly from the ratio: $2.0\,\text{m/s}^2\cdot\dfrac{1.62}{9.81} = 0.330\,\text{m/s}^2$
+**Substitution:** $\mu = \tan 30^\circ - \dfrac{2.0\,\text{m/s}^2}{9.81\,\text{m/s}^2\cdot\cos 30^\circ} = 0.577 - 0.235 = 0.342$, and $$\begin{aligned} &a_\text{Moon} \\ &= 1.62\,\text{m/s}^2\cdot(\sin 30^\circ \\ &- 0.342\cdot\cos 30^\circ) \\ &= 0.330\,\text{m/s}^2 \end{aligned}$$. Directly from the ratio: $2.0\,\text{m/s}^2\cdot\dfrac{1.62}{9.81} = 0.330\,\text{m/s}^2$
 **Answer:** $0.33\,\text{m/s}^2$, two significant figures like the acceleration on Earth $2.0\,\text{m/s}^2$.
 **Reasonableness:** On the Moon both the weight and the friction are about a sixth of the values on Earth, so the acceleration is also about a sixth. The box slides on the Moon too, because the condition $\tan\alpha > \mu$ does not depend on the acceleration of free fall.
 
@@ -286,7 +286,7 @@ akselit 0
 **Principle:** As the board tilts, the component of the weight along the slope $G_x = mg\sin\alpha$ increases, and the static friction increases with it. The block starts to slide when the component exceeds the maximum value of static friction $\mu_0 N$. In the perpendicular direction the block does not accelerate, so $N = mg\cos\alpha$. At the limiting angle $\alpha_0$, $mg\sin\alpha_0 = \mu_0\,mg\cos\alpha_0$. The mass cancels, and dividing both sides gives $\mu_0 = \tan\alpha_0$.
 **Formula:** $\mu_0 = \tan\alpha_0$, where $\alpha_0$ is the mean of the measurements
 **Conversions:** The angles are in degrees, so no conversions are needed. The calculator must be in degree mode.
-**Substitution:** The sum of the angles is $24^\circ + 26^\circ + 25^\circ + 27^\circ + 25^\circ = 127^\circ$, so the mean is $\alpha_{0,\text{mean}} = 127^\circ : 5 = 25.4^\circ$ and $\mu_0 = \tan 25.4^\circ = 0.4748$
+**Substitution:** The sum of the angles is $$\begin{aligned} &24^\circ + 26^\circ \\ &+ 25^\circ + 27^\circ + 25^\circ \\ &= 127^\circ \end{aligned}$$, so the mean is $\alpha_{0,\text{mean}} = 127^\circ : 5 = 25.4^\circ$ and $\mu_0 = \tan 25.4^\circ = 0.4748$
 **Answer:** $0.47$, two significant figures, as the precision of the mean of the angles gives.
 **Reasonableness:** The individual angles give $\tan 24^\circ = 0.45$ and $\tan 27^\circ = 0.51$, so the mean $0.47$ lies between them. The mass of the block is not needed in the experiment, because it cancels. The result is of the usual order of magnitude for the coefficient of static friction between wood and wood.
 
@@ -337,7 +337,7 @@ komponentit G
 ```
 **Formula:** $y$: $N - mg\cos\alpha = 0$ and $x$: $mg\sin\alpha - \mu N = ma$, so $a = g(\sin\alpha - \mu\cos\alpha)$. The distance is $s = \tfrac{1}{2}at^2$, because the initial velocity is zero
 **Conversions:** All quantities are in SI units, so no conversions are needed, and the mass cancels.
-**Substitution:** $a = 9.81\,\text{m/s}^2\cdot(\sin 30^\circ - 0.35\cdot\cos 30^\circ) = 1.931\,\text{m/s}^2$ and
+**Substitution:** $$\begin{aligned} &a \\ &= 9.81\,\text{m/s}^2\cdot(\sin 30^\circ \\ &- 0.35\cdot\cos 30^\circ) \\ &= 1.931\,\text{m/s}^2 \end{aligned}$$ and
 ```latex
 \begin{aligned}
 s &= \tfrac{1}{2} \cdot 1.931\,\text{m/s}^2 \cdot (3.0\,\text{s})^2 \\
@@ -372,7 +372,7 @@ Box D is at rest on a slope, so along the slope static friction cancels the comp
 
 $F_{\mu\text{D}} = m_\text{D} g \sin\alpha$
 
-$F_{\mu\text{D}} = 25\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot \sin 30^\circ$
+$$\begin{aligned} &F_{\mu\text{D}} \\ &= 25\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot \sin 30^\circ \end{aligned}$$
 
 $F_{\mu\text{D}} \approx 123\,\text{N}$
 

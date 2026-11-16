@@ -71,7 +71,7 @@ a 0
 **Conversions:** $90\,\text{km/h} = 90 : 3.6\,\text{m/s} = 25\,\text{m/s}$
 **Substitution:** $\Sigma F = \dfrac{1200\,\text{kg}\cdot(25\,\text{m/s} - 0)}{10\,\text{s}} = 1200\,\text{kg}\cdot 2.5\,\text{m/s}^2 = 3000\,\text{N}$
 **Answer:** $3000\,\text{N}$ or $3.0\,\text{kN}$ in the direction of motion, two significant figures like the time $10\,\text{s}$ and the velocity $90\,\text{km/h}$.
-**Reasonableness:** An acceleration of $2.5\,\text{m/s}^2$ is a brisk acceleration for an ordinary passenger car. The net force is about a quarter of the weight of the car, $1200\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 12\,\text{kN}$, just as the acceleration is about a quarter of the free-fall acceleration.
+**Reasonableness:** An acceleration of $2.5\,\text{m/s}^2$ is a brisk acceleration for an ordinary passenger car. The net force is about a quarter of the weight of the car, $$\begin{aligned} &1200\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\ &\approx 12\,\text{kN} \end{aligned}$$, just as the acceleration is about a quarter of the free-fall acceleration.
 
 ## fy4-4-L2-02
 **Given:** $m = 900\,\text{kg}$, downward acceleration $a = 1.5\,\text{m/s}^2$; $g = 9.81\,\text{m/s}^2$
@@ -87,7 +87,7 @@ a alas
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $T = 900\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 1.5\,\text{m/s}^2) = 900\,\text{kg}\cdot 8.31\,\text{m/s}^2 = 7479\,\text{N}$
 **Answer:** $7500\,\text{N}$ or $7.5\,\text{kN}$, two significant figures like the acceleration $1.5\,\text{m/s}^2$.
-**Reasonableness:** The weight of the elevator is $900\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 8.8\,\text{kN}$. The force of the rope is $ma = 1.35\,\text{kN}$ smaller than this, so that the net force points down. When an elevator starts to go down, a passenger feels lighter for a moment.
+**Reasonableness:** The weight of the elevator is $$\begin{aligned} &900\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\ &\approx 8.8\,\text{kN} \end{aligned}$$. The force of the rope is $ma = 1.35\,\text{kN}$ smaller than this, so that the net force points down. When an elevator starts to go down, a passenger feels lighter for a moment.
 
 ## fy4-4-L2-03
 **Given:** $m = 120\,\text{kg}$, downward velocity $v_0 = 2.0\,\text{m/s}$, final velocity $v = 0$, time $\Delta t = 2.0\,\text{s}$, uniform slowing down; $g = 9.81\,\text{m/s}^2$
@@ -104,7 +104,7 @@ v alas
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $a = \dfrac{2.0\,\text{m/s}}{2.0\,\text{s}} = 1.0\,\text{m/s}^2$ and $T = 120\,\text{kg}\cdot(9.81\,\text{m/s}^2 + 1.0\,\text{m/s}^2) = 120\,\text{kg}\cdot 10.81\,\text{m/s}^2 = 1297.2\,\text{N}$
 **Answer:** $1300\,\text{N}$ or $1.3\,\text{kN}$, two significant figures like the velocity $2.0\,\text{m/s}$ and the time $2.0\,\text{s}$.
-**Reasonableness:** The weight of the load is $120\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 1.18\,\text{kN}$. The force of the rope is $ma = 120\,\text{N}$ greater than this, so that the net force points up and stops the downward-moving load. If the rope held up only the weight, the load would keep going down at constant velocity.
+**Reasonableness:** The weight of the load is $$\begin{aligned} &120\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\ &\approx 1.18\,\text{kN} \end{aligned}$$. The force of the rope is $ma = 120\,\text{N}$ greater than this, so that the net force points up and stops the downward-moving load. If the rope held up only the weight, the load would keep going down at constant velocity.
 
 ## fy4-4-L2-04
 **Given:** $m = 30\,\text{kg}$, forces $F_\text{a} = 60\,\text{N}$ and $F_\text{b} = 45\,\text{N}$ horizontally in opposite directions, no friction
@@ -230,9 +230,9 @@ v alas
 ```
 **Formula:** $T - mg = ma$, so $T = m(g + a)$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
-**Substitution:** $T = 820\,\text{kg}\cdot(9.81\,\text{m/s}^2 + 1.20\,\text{m/s}^2) = 820\,\text{kg}\cdot 11.01\,\text{m/s}^2 = 9028.2\,\text{N}$
+**Substitution:** $$\begin{aligned} &T \\ &= 820\,\text{kg}\cdot(9.81\,\text{m/s}^2 \\ &+ 1.20\,\text{m/s}^2) \\ &= 820\,\text{kg}\cdot 11.01\,\text{m/s}^2 \\ &= 9028.2\,\text{N} \end{aligned}$$
 **Answer:** $9030\,\text{N}$ or $9.03\,\text{kN}$, three significant figures like the acceleration $1.20\,\text{m/s}^2$. The student's error was to take the direction of motion, down, as the direction of the acceleration: the acceleration points up, because the element slows down.
-**Reasonableness:** The weight is $820\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 8044.2\,\text{N}$. For the slowing acceleration an additional $820\,\text{kg}\cdot 1.20\,\text{m/s}^2 = 984\,\text{N}$ is needed, and the sum is $9028.2\,\text{N}$. The student's result $7.06\,\text{kN}$ would be smaller than the weight, and then the element would accelerate down instead of slowing down.
+**Reasonableness:** The weight is $$\begin{aligned} &820\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\ &= 8044.2\,\text{N} \end{aligned}$$. For the slowing acceleration an additional $820\,\text{kg}\cdot 1.20\,\text{m/s}^2 = 984\,\text{N}$ is needed, and the sum is $9028.2\,\text{N}$. The student's result $7.06\,\text{kN}$ would be smaller than the weight, and then the element would accelerate down instead of slowing down.
 
 ## fy4-4-L3-04
 **Given:** the points $(F, a)$ of the table for $F = 2.0 \ldots 6.0\,\text{N}$; the mass is constant, the friction force is constant
@@ -243,7 +243,7 @@ v alas
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $k = \dfrac{2.40\,\text{m/s}^2 - 0.41\,\text{m/s}^2}{6.0\,\text{N} - 2.0\,\text{N}} = 0.4975\,\tfrac{1}{\text{kg}}$, $m = \dfrac{1}{0.4975\,\tfrac{1}{\text{kg}}} = 2.01\,\text{kg}$ and $F_\mu = 2.0\,\text{N} - \dfrac{0.41\,\text{m/s}^2}{0.4975\,\tfrac{1}{\text{kg}}} = 1.18\,\text{N}$
 **Answer:** $1.2\,\text{N}$ ($1.18\,\text{N}$ before rounding), two significant figures. The mass of the cart is about $2.0\,\text{kg}$. The points are not exactly on the line because of the random variation of the measurement, so the result is an estimate.
-**Reasonableness:** When $F = 4.0\,\text{N}$, the net force is $4.0\,\text{N} - 1.18\,\text{N} = 2.82\,\text{N}$ and $a = 2.82\,\text{N} : 2.01\,\text{kg} = 1.40\,\text{m/s}^2$, which matches the value $1.42\,\text{m/s}^2$ of the table. Friction is small compared with the weight $2.01\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 19.7\,\text{N}$, about $6\,\%$ of it, which fits a smooth surface.
+**Reasonableness:** When $F = 4.0\,\text{N}$, the net force is $4.0\,\text{N} - 1.18\,\text{N} = 2.82\,\text{N}$ and $$\begin{aligned} &a = 2.82\,\text{N} : 2.01\,\text{kg} \\ &= 1.40\,\text{m/s}^2 \end{aligned}$$, which matches the value $1.42\,\text{m/s}^2$ of the table. Friction is small compared with the weight $$\begin{aligned} &2.01\,\text{kg}\cdot 9.81\,\text{m/s}^2 \\ &\approx 19.7\,\text{N} \end{aligned}$$, about $6\,\%$ of it, which fits a smooth surface.
 
 ## fy4-4-L3-05
 **Given:** $m = 70\,\text{kg}$, phase 1: $0 \ldots 3.0\,\text{s}$, $a_1 = 1.0\,\text{m/s}^2$; phase 2: $3.0 \ldots 9.0\,\text{s}$, $a_2 = 0$; phase 3: $9.0 \ldots 13.0\,\text{s}$, uniform slowing down to a stop; initial velocity $0$; $g = 9.81\,\text{m/s}^2$
@@ -259,9 +259,9 @@ v ylös
 ```
 **Formula:** $v_{\max} = a_1\Delta t_1$, $a_3 = \dfrac{0 - v_{\max}}{\Delta t_3}$ and $N - mg = ma_3$, so $N = m(g + a_3)$
 **Conversions:** The quantities are in SI units, so no conversions are needed. The duration of phase 3 is $\Delta t_3 = 13.0\,\text{s} - 9.0\,\text{s} = 4.0\,\text{s}$.
-**Substitution:** $v_{\max} = 1.0\,\text{m/s}^2 \cdot 3.0\,\text{s} = 3.0\,\text{m/s}$ and $a_3 = \dfrac{0 - 3.0\,\text{m/s}}{4.0\,\text{s}} = -0.75\,\text{m/s}^2$. The normal force is $N = 70\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 0.75\,\text{m/s}^2) = 70\,\text{kg}\cdot 9.06\,\text{m/s}^2 = 634.2\,\text{N}$
+**Substitution:** $v_{\max} = 1.0\,\text{m/s}^2 \cdot 3.0\,\text{s} = 3.0\,\text{m/s}$ and $a_3 = \dfrac{0 - 3.0\,\text{m/s}}{4.0\,\text{s}} = -0.75\,\text{m/s}^2$. The normal force is $$\begin{aligned} &N \\ &= 70\,\text{kg}\cdot(9.81\,\text{m/s}^2 \\ &- 0.75\,\text{m/s}^2) \\ &= 70\,\text{kg}\cdot 9.06\,\text{m/s}^2 \\ &= 634.2\,\text{N} \end{aligned}$$
 **Answer:** $630\,\text{N}$ ($634\,\text{N}$ before rounding), two significant figures like the mass $70\,\text{kg}$ and the acceleration. The greatest velocity is $3.0\,\text{m/s}$ and the acceleration in phase 3 is $0.75\,\text{m/s}^2$ downward. The normal force is smaller than the weight $mg = 686.7\,\text{N}$, because the net force and the acceleration point down.
-**Reasonableness:** The elevator stops: $3.0\,\text{m/s} - 0.75\,\text{m/s}^2 \cdot 4.0\,\text{s} = 0$. The difference between the weight and the normal force is $686.7\,\text{N} - 634.2\,\text{N} = 52.5\,\text{N} = 70\,\text{kg}\cdot 0.75\,\text{m/s}^2$, so the forces agree with the equation of motion. In phase 1 the normal force would correspondingly be greater than the weight, $70\,\text{kg}\cdot 10.81\,\text{m/s}^2 = 756.7\,\text{N}$, and in the steady phase 2 equal to the weight.
+**Reasonableness:** The elevator stops: $$\begin{aligned} &3.0\,\text{m/s} \\ &- 0.75\,\text{m/s}^2 \cdot 4.0\,\text{s} \\ &= 0 \end{aligned}$$. The difference between the weight and the normal force is $686.7\,\text{N} - 634.2\,\text{N} = 52.5\,\text{N} = 70\,\text{kg}\cdot 0.75\,\text{m/s}^2$, so the forces agree with the equation of motion. In phase 1 the normal force would correspondingly be greater than the weight, $$\begin{aligned} &70\,\text{kg}\cdot 10.81\,\text{m/s}^2 \\ &= 756.7\,\text{N} \end{aligned}$$, and in the steady phase 2 equal to the weight.
 
 ## fy4-4-L2-08
 **Find:** whether there is an error in the student's calculation and on which line, when the acceleration $a$ of a horizontally pushed shopping trolley is calculated.
@@ -286,9 +286,9 @@ The acceleration is $2.0\,\text{m/s}^2$ in the direction of the pushing force, t
 **Principle:** The force diagram has two forces: the thrust $\overline{F}$ up and the weight $\overline{G}$ down. By Newton's second law the net force is $\Sigma F = ma$. Upward is chosen as positive because the acceleration points up.
 **Formula:** $\Sigma F = ma$, so $F - G = ma$. The weight is $G = mg$, which gives $F = m(g + a)$
 **Conversions:** The quantities are in SI units. The result comes out in newtons, and $1\,\text{kN} = 1000\,\text{N}$, so $31\,830\,\text{N} = 31.83\,\text{kN}$.
-**Substitution:** $F = 15\,000\,\text{kg} \cdot (1.622\,\text{m/s}^2 + 0.50\,\text{m/s}^2) = 31\,830\,\text{N} = 31.83\,\text{kN}$
+**Substitution:** $$\begin{aligned} &F \\ &= 15\,000\,\text{kg} \\ &\cdot (1.622\,\text{m/s}^2 \\ &+ 0.50\,\text{m/s}^2) \\ &= 31\,830\,\text{N} \\ &= 31.83\,\text{kN} \end{aligned}$$
 **Answer:** $32\,\text{kN}$, two significant figures like the acceleration $0.50\,\text{m/s}^2$. The table value $g = 1.622\,\text{m/s}^2$ is more precise than the acceleration; different tables give slightly different values, and the answer is accepted within about $\pm 4\,\%$.
-**Reasonableness:** When hovering ($a = 0$) the thrust would equal the spacecraft's weight on the Moon, $15\,000\,\text{kg} \cdot 1.622\,\text{m/s}^2 \approx 24\,\text{kN}$. Slowing down needs $ma = 7.5\,\text{kN}$ more, $31.8\,\text{kN}$ in all. The thrust is greater than the weight because the net force points up.
+**Reasonableness:** When hovering ($a = 0$) the thrust would equal the spacecraft's weight on the Moon, $$\begin{aligned} &15\,000\,\text{kg} \cdot 1.622\,\text{m/s}^2 \\ &\approx 24\,\text{kN} \end{aligned}$$. Slowing down needs $ma = 7.5\,\text{kN}$ more, $31.8\,\text{kN}$ in all. The thrust is greater than the weight because the net force points up.
 
 ## fy4-4-L1-10
 **Given:** from the graph a point on cart A's line with net force $\Sigma F = 3.0\,\text{N}$ and acceleration $a = 6.0\,\text{m/s}^2$

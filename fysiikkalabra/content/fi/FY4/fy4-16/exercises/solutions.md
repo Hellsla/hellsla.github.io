@@ -13,7 +13,7 @@ a ylös
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $N = 70{,}0\,\text{kg}\cdot(9{,}81 + 0{,}80)\,\text{m/s}^2 = 70{,}0\,\text{kg}\cdot 10{,}61\,\text{m/s}^2 = 742{,}7\,\text{N}$
 **Vastaus:** $743\,\text{N}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $70{,}0\,\text{kg}$.
-**Järkevyys:** Paino on $70{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 687\,\text{N}$, ja tukivoima on siitä $ma = 56\,\text{N}$ suurempi, noin $8\,\%$. Kiihtyvyys on noin $8\,\%$ putoamiskiihtyvyydestä, joten osuus täsmää.
+**Järkevyys:** Paino on $$\begin{aligned} &70{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &\approx 687\,\text{N} \end{aligned}$$, ja tukivoima on siitä $ma = 56\,\text{N}$ suurempi, noin $8\,\%$. Kiihtyvyys on noin $8\,\%$ putoamiskiihtyvyydestä, joten osuus täsmää.
 
 ## fy4-16-L1-02
 **Annettu:** $m = 90{,}0\,\text{kg}$, ilmanvastus $F_\text{v} = 2{,}10\,\text{kN}$, hyppääjä liikkuu alas; $g = 9{,}81\,\text{m/s}^2$
@@ -118,11 +118,11 @@ a alas
 akselit -12
 komponentit G
 ```
-**Kaava:** Nollataso juurelle: $mgL\sin\alpha - \mu mg\cos\alpha\cdot L = \tfrac12 mv_2^2$, joten $\mu = \dfrac{gL\sin\alpha - \tfrac12 v_2^2}{gL\cos\alpha}$
+**Kaava:** Nollataso juurelle: $$\begin{aligned} &mgL\sin\alpha \\ &- \mu mg\cos\alpha\cdot L \\ &= \tfrac12 mv_2^2 \end{aligned}$$, joten $\mu = \dfrac{gL\sin\alpha - \tfrac12 v_2^2}{gL\cos\alpha}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Massa supistuu pois.
-**Sijoitus:** Osoittaja on $9{,}81\cdot 18{,}0\cdot\sin 12{,}0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} - \tfrac12\cdot 5{,}10^2\,\tfrac{\text{m}^2}{\text{s}^2} = 36{,}71\,\tfrac{\text{m}^2}{\text{s}^2} - 13{,}01\,\tfrac{\text{m}^2}{\text{s}^2} = 23{,}71\,\tfrac{\text{m}^2}{\text{s}^2}$ ja nimittäjä $9{,}81\cdot 18{,}0\cdot\cos 12{,}0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} = 172{,}72\,\tfrac{\text{m}^2}{\text{s}^2}$, joten $\mu = \dfrac{23{,}71}{172{,}72} = 0{,}1373$
+**Sijoitus:** Osoittaja on $$\begin{aligned} &9{,}81\cdot 18{,}0\cdot\sin 12{,}0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} \\ &- \tfrac12\cdot 5{,}10^2\,\tfrac{\text{m}^2}{\text{s}^2} \\ &= 36{,}71\,\tfrac{\text{m}^2}{\text{s}^2} - 13{,}01\,\tfrac{\text{m}^2}{\text{s}^2} \\ &= 23{,}71\,\tfrac{\text{m}^2}{\text{s}^2} \end{aligned}$$ ja nimittäjä $9{,}81\cdot 18{,}0\cdot\cos 12{,}0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} = 172{,}72\,\tfrac{\text{m}^2}{\text{s}^2}$, joten $\mu = \dfrac{23{,}71}{172{,}72} = 0{,}1373$
 **Vastaus:** $0{,}137$, kolme merkitsevää numeroa kuten rinteen pituudessa $18{,}0\,\text{m}$, kulmassa $12{,}0^\circ$ ja nopeudessa $5{,}10\,\text{m/s}$.
-**Järkevyys:** Ilman kitkaa nopeus olisi pudotuskorkeudesta $h = 18{,}0\,\text{m}\cdot\sin 12{,}0^\circ \approx 3{,}74\,\text{m}$ laskettu $\sqrt{2\cdot 9{,}81\cdot 3{,}74}\,\text{m/s} \approx 8{,}6\,\text{m/s}$, joten kitka vie noin kaksi kolmasosaa energiasta. Kerroin on pienempi kuin $\tan 12{,}0^\circ \approx 0{,}21$, kuten pitää, koska pulkka kiihtyy.
+**Järkevyys:** Ilman kitkaa nopeus olisi pudotuskorkeudesta $h = 18{,}0\,\text{m}\cdot\sin 12{,}0^\circ \approx 3{,}74\,\text{m}$ laskettu $$\begin{aligned} &\sqrt{2\cdot 9{,}81\cdot 3{,}74}\,\text{m/s} \\ &\approx 8{,}6\,\text{m/s} \end{aligned}$$, joten kitka vie noin kaksi kolmasosaa energiasta. Kerroin on pienempi kuin $\tan 12{,}0^\circ \approx 0{,}21$, kuten pitää, koska pulkka kiihtyy.
 
 ## fy4-16-L2-03
 **Annettu:** $m = 80{,}0\,\text{kg}$, $v_1 = 52{,}0\,\text{m/s}$, $v_2 = 6{,}0\,\text{m/s}$, pudotus $h = 145\,\text{m}$; $g = 9{,}81\,\text{m/s}^2$
@@ -135,7 +135,7 @@ a ylös
 v alas
 ```
 **Periaate:** Energiaperiaatteen mukaan mekaanisen energian muutos on muiden voimien kuin painon tekemä työ, tässä ilmanvastuksen negatiivinen työ. Sekä liike-energia että potentiaalienergia pienenevät, ja molempien muutos lasketaan mukaan.
-**Kaava:** Nollataso lopputilanteen korkeudelle: $\Delta E_\text{mek} = \left(\tfrac12 mv_2^2 - \tfrac12 mv_1^2\right) - mgh$, ja $|\Delta E_\text{mek}| = \dfrac{m\left(v_1^2 - v_2^2\right)}{2} + mgh$
+**Kaava:** Nollataso lopputilanteen korkeudelle: $$\begin{aligned} &\Delta E_\text{mek} \\ &= \left(\tfrac12 mv_2^2 - \tfrac12 mv_1^2\right) \\ &- mgh \end{aligned}$$, ja $|\Delta E_\text{mek}| = \dfrac{m\left(v_1^2 - v_2^2\right)}{2} + mgh$
 **Muunnokset:** Lasketaan jouleina ja muutetaan lopuksi kilojouleiksi: $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $|\Delta E_\text{mek}| = \tfrac12\cdot 80{,}0\,\text{kg}\cdot\left(52{,}0^2 - 6{,}0^2\right)\,\text{m}^2/\text{s}^2 + 80{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot 145\,\text{m} = 106\,720\,\text{J} + 113\,796\,\text{J} = 220\,516\,\text{J} \approx 221\,\text{kJ}$
 **Vastaus:** $221\,\text{kJ}$, kolme merkitsevää numeroa kuten massassa $80{,}0\,\text{kg}$ ja nopeudessa $52{,}0\,\text{m/s}$.
@@ -176,7 +176,7 @@ N 100
 F_mu 12 vasen
 a vasen
 ```
-**Kaava:** Osien vaakamatkat $x_\text{a}$, $x_\text{b}$ ja $x_\text{c}$: $mgh - \mu mg(x_\text{a} + x_\text{b} + x_\text{c}) = 0$, joten $x = x_\text{a} + x_\text{b} + x_\text{c} = \dfrac{h}{\mu}$
+**Kaava:** Osien vaakamatkat $x_\text{a}$, $x_\text{b}$ ja $x_\text{c}$: $$\begin{aligned} &mgh \\ &- \mu mg(x_\text{a} + x_\text{b} + x_\text{c}) \\ &= 0 \end{aligned}$$, joten $x = x_\text{a} + x_\text{b} + x_\text{c} = \dfrac{h}{\mu}$
 **Muunnokset:** Suureet ovat SI-yksiköissä, ja kitkakerroin on yksikötön, joten muunnoksia ei tarvita.
 **Sijoitus:** $x = \dfrac{4{,}50\,\text{m}}{0{,}120} = 37{,}5\,\text{m}$
 **Vastaus:** $37{,}5\,\text{m}$, kolme merkitsevää numeroa kuten korkeudessa $4{,}50\,\text{m}$ ja kitkakertoimessa $0{,}120$.
@@ -198,7 +198,7 @@ a alas
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $v = \left(9{,}81\,\text{m/s}^2 - \dfrac{650\,\text{N}}{75{,}0\,\text{kg}}\right)\cdot 2{,}0\,\text{s} = 1{,}1433\,\text{m/s}^2\cdot 2{,}0\,\text{s} = 2{,}287\,\text{m/s}$
 **Vastaus:** $2{,}3\,\text{m/s}$ alaspäin, kaksi merkitsevää numeroa kuten kuvaajasta luetussa ajassa $2{,}0\,\text{s}$.
-**Järkevyys:** Hidastusvaiheessa lukema on $800\,\text{N}$, joten hidastuvuus on $(800 - 735{,}75)\,\text{N} : 75{,}0\,\text{kg} \approx 0{,}86\,\text{m/s}^2$, ja nopeus $2{,}3\,\text{m/s}$ häviää noin $2{,}7\,\text{s}$:ssa, mikä vastaa kuvaajan hidastusvaihetta noin hetkestä $6{,}0\,\text{s}$ hetkeen $8{,}7\,\text{s}$. Tavallisen hissin nopeus on $1$–$3\,\text{m/s}$.
+**Järkevyys:** Hidastusvaiheessa lukema on $800\,\text{N}$, joten hidastuvuus on $$\begin{aligned} &(800 - 735{,}75)\,\text{N} \\ &: 75{,}0\,\text{kg} \\ &\approx 0{,}86\,\text{m/s}^2 \end{aligned}$$, ja nopeus $2{,}3\,\text{m/s}$ häviää noin $2{,}7\,\text{s}$:ssa, mikä vastaa kuvaajan hidastusvaihetta noin hetkestä $6{,}0\,\text{s}$ hetkeen $8{,}7\,\text{s}$. Tavallisen hissin nopeus on $1$–$3\,\text{m/s}$.
 
 ## fy4-16-L3-03
 **Annettu:** $m = 70{,}0\,\text{kg}$, $v_1 = 50{,}0\,\text{m/s}$, $v_2 = 6{,}0\,\text{m/s}$, pudotus $h = 60{,}0\,\text{m}$, ilmanvastus oletetaan vakioksi; $g = 9{,}81\,\text{m/s}^2$
@@ -213,9 +213,9 @@ v alas
 ```
 **Kaava:** Liike-energiat ovat $E_{\text{k}0} = \tfrac12 mv_1^2$ ja $E_\text{k} = \tfrac12 mv_2^2$. Nollataso lopputilanteen korkeudelle: $E_{\text{k}0} + mgh - F_\text{v} h = E_\text{k}$, joten $F_\text{v} = mg + \dfrac{E_{\text{k}0} - E_\text{k}}{h}$
 **Muunnokset:** Lasketaan newtoneina ja muutetaan lopuksi kilonewtoneiksi: $1\,\text{kN} = 1000\,\text{N}$.
-**Sijoitus:** $E_{\text{k}0} = \tfrac12\cdot 70{,}0\,\text{kg}\cdot(50{,}0\,\text{m/s})^2 = 87\,500\,\text{J}$ ja $E_\text{k} = \tfrac12\cdot 70{,}0\,\text{kg}\cdot(6{,}0\,\text{m/s})^2 = 1260\,\text{J}$, joten $F_\text{v} = 70{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + \dfrac{87\,500\,\text{J} - 1260\,\text{J}}{60{,}0\,\text{m}} = 686{,}7\,\text{N} + 1437{,}3\,\text{N} = 2124\,\text{N} \approx 2{,}12\,\text{kN}$
+**Sijoitus:** $E_{\text{k}0} = \tfrac12\cdot 70{,}0\,\text{kg}\cdot(50{,}0\,\text{m/s})^2 = 87\,500\,\text{J}$ ja $E_\text{k} = \tfrac12\cdot 70{,}0\,\text{kg}\cdot(6{,}0\,\text{m/s})^2 = 1260\,\text{J}$, joten $$\begin{aligned} &F_\text{v} = 70{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &+ \dfrac{87\,500\,\text{J} - 1260\,\text{J}}{60{,}0\,\text{m}} \\ &= 686{,}7\,\text{N} + 1437{,}3\,\text{N} \\ &= 2124\,\text{N} \\ &\approx 2{,}12\,\text{kN} \end{aligned}$$
 **Vastaus:** $2{,}12\,\text{kN}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $70{,}0\,\text{kg}$, nopeudessa $50{,}0\,\text{m/s}$ ja matkassa $60{,}0\,\text{m}$.
-**Järkevyys:** Ilmanvastus on noin kolme kertaa paino $687\,\text{N}$, joten kokonaisvoima osoittaa ylös ja hyppääjä hidastuu, kuten pitää. Liikeyhtälöstä hidastuvuus on $(2124 - 687)\,\text{N} : 70{,}0\,\text{kg} \approx 20\,\text{m/s}^2$, ja silloin $\tfrac12(v_1^2 - v_2^2) : a \approx 1232 : 20{,}5 \approx 60\,\text{m}$, kuten tehtävässä.
+**Järkevyys:** Ilmanvastus on noin kolme kertaa paino $687\,\text{N}$, joten kokonaisvoima osoittaa ylös ja hyppääjä hidastuu, kuten pitää. Liikeyhtälöstä hidastuvuus on $$\begin{aligned} &(2124 - 687)\,\text{N} : 70{,}0\,\text{kg} \\ &\approx 20\,\text{m/s}^2 \end{aligned}$$, ja silloin $\tfrac12(v_1^2 - v_2^2) : a \approx 1232 : 20{,}5 \approx 60\,\text{m}$, kuten tehtävässä.
 
 
 ## fy4-16-L1-06
@@ -264,7 +264,7 @@ a ylös
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{1{,}20\,\text{m/s} - 0}{3{,}0\,\text{s} - 0} = 0{,}400\,\text{m/s}^2$ ja $N = 62{,}0\,\text{kg}\cdot(9{,}81 + 0{,}400)\,\text{m/s}^2 = 62{,}0\,\text{kg}\cdot 10{,}21\,\text{m/s}^2 = 633{,}0\,\text{N}$
 **Vastaus:** $633\,\text{N}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $62{,}0\,\text{kg}$.
-**Järkevyys:** Paino on $62{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 608\,\text{N}$, ja tukivoima on siitä $ma \approx 25\,\text{N}$ suurempi, noin $4\,\%$. Kiihtyvyys on noin $4\,\%$ putoamiskiihtyvyydestä, joten osuus täsmää. Taulukon keskiosasta, pisteistä $t = 1{,}0\,\text{s}$ ja $t = 2{,}0\,\text{s}$, saadaan $a = 0{,}38\,\text{m/s}^2$, joten kiihtyvyys on lähes sama koko ajan.
+**Järkevyys:** Paino on $$\begin{aligned} &62{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &\approx 608\,\text{N} \end{aligned}$$, ja tukivoima on siitä $ma \approx 25\,\text{N}$ suurempi, noin $4\,\%$. Kiihtyvyys on noin $4\,\%$ putoamiskiihtyvyydestä, joten osuus täsmää. Taulukon keskiosasta, pisteistä $t = 1{,}0\,\text{s}$ ja $t = 2{,}0\,\text{s}$, saadaan $a = 0{,}38\,\text{m/s}^2$, joten kiihtyvyys on lähes sama koko ajan.
 
 ## fy4-16-L2-06
 **Annettu:** taulukosta paikat $x$ hetkillä $t = 0$, $1{,}0\,\text{s}$, $4{,}0\,\text{s}$ ja $5{,}0\,\text{s}$; vaakasuora pinta, ilmanvastus jätetään huomiotta; $g = 9{,}81\,\text{m/s}^2$
@@ -301,7 +301,7 @@ komponentit G
 ```
 **Kaava:** $y$: $N = mg\cos\alpha$; $x$: $mg\sin\alpha - \mu N = 0$, joten $\mu = \tan\alpha$. Keskiarvo $\alpha_{\text{ka}} = \dfrac{\text{summa}}{5}$
 **Muunnokset:** Kulma on asteina, ja laskimen asteasetus on päällä. Kitkakerroin on yksikötön.
-**Sijoitus:** a) Kulmien summa on $17{,}5\,{}^\circ + 18{,}0\,{}^\circ + 18{,}5\,{}^\circ + 17{,}0\,{}^\circ + 18{,}0\,{}^\circ = 89{,}0\,{}^\circ$, joten $\alpha_{\text{ka}} = \dfrac{89{,}0\,{}^\circ}{5} = 17{,}8\,{}^\circ$ ja $\mu = \tan 17{,}8\,{}^\circ = 0{,}321$. b) Pienimmästä kulmasta $\tan 17{,}0\,{}^\circ = 0{,}306$ ja suurimmasta $\tan 18{,}5\,{}^\circ = 0{,}335$, joten vaihteluvälin puolikas on $\dfrac{0{,}335 - 0{,}306}{2} \approx 0{,}015$
+**Sijoitus:** a) Kulmien summa on $$\begin{aligned} &17{,}5\,{}^\circ + 18{,}0\,{}^\circ + 18{,}5\,{}^\circ \\ &+ 17{,}0\,{}^\circ + 18{,}0\,{}^\circ \\ &= 89{,}0\,{}^\circ \end{aligned}$$, joten $\alpha_{\text{ka}} = \dfrac{89{,}0\,{}^\circ}{5} = 17{,}8\,{}^\circ$ ja $\mu = \tan 17{,}8\,{}^\circ = 0{,}321$. b) Pienimmästä kulmasta $\tan 17{,}0\,{}^\circ = 0{,}306$ ja suurimmasta $\tan 18{,}5\,{}^\circ = 0{,}335$, joten vaihteluvälin puolikas on $\dfrac{0{,}335 - 0{,}306}{2} \approx 0{,}015$
 **Vastaus:** a) $\mu = 0{,}321$, kolmen merkitsevän numeron tarkkuudella kuten keskiarvokulma $17{,}8\,{}^\circ$. b) Kerroin vaihtelee välillä $0{,}306 \ldots 0{,}335$, eli $\mu \approx 0{,}32 \pm 0{,}02$. Vaihtelu on noin $5\,\%$ kertoimesta; se on yksinkertainen arvio mittausten hajonnasta.
 **Järkevyys:** Kerroin $0{,}32$ on pienempi kuin $1$ ja suuruusluokaltaan sellainen kuin arkisilla kuivilla pinnoilla. Kulmien vaihtelu on vain $\pm 0{,}75\,{}^\circ$, mutta se vaikuttaa kertoimeen noin $5\,\%$, joten yksittäinen mittaus ei riitä. Vaihteluväli kuvaa vain satunnaisvaihtelua, ei laudan karheuden tai kosteuden aiheuttamaa järjestelmällistä virhettä.
 
@@ -323,11 +323,11 @@ N 100
 F_mu 15 vasen
 a vasen
 ```
-**Kaava:** Rinteen korkeus on $h = L\sin\alpha$. Nollataso tasaiselle: $mgL\sin\alpha - \mu_1 mg\cos\alpha\cdot L - \mu_2 mgd = 0$, joten $L = \dfrac{\mu_2 d}{\sin\alpha - \mu_1\cos\alpha}$. Rinteen juurella $mgL\sin\alpha - \mu_1 mg\cos\alpha\cdot L = \tfrac12 mv^2$
+**Kaava:** Rinteen korkeus on $h = L\sin\alpha$. Nollataso tasaiselle: $$\begin{aligned} &mgL\sin\alpha \\ &- \mu_1 mg\cos\alpha\cdot L \\ &- \mu_2 mgd \\ &= 0 \end{aligned}$$, joten $L = \dfrac{\mu_2 d}{\sin\alpha - \mu_1\cos\alpha}$. Rinteen juurella $$\begin{aligned} &mgL\sin\alpha \\ &- \mu_1 mg\cos\alpha\cdot L \\ &= \tfrac12 mv^2 \end{aligned}$$
 **Muunnokset:** Suureet ovat SI-yksiköissä, ja kitkakertoimet ovat yksikköttömiä. Massa supistuu pois molemmista yhtälöistä.
 **Sijoitus:** Sulkulauseke on $\sin 14{,}0\,{}^\circ - 0{,}060\cdot\cos 14{,}0\,{}^\circ = 0{,}2419 - 0{,}0582 = 0{,}1837$, joten $L = \dfrac{0{,}150\cdot 20{,}0\,\text{m}}{0{,}1837} = 16{,}33\,\text{m}$. Juurella $v = \sqrt{2gL\left(\sin\alpha - \mu_1\cos\alpha\right)} = \sqrt{2\cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2}\cdot 16{,}33\,\text{m}\cdot 0{,}1837} = 7{,}67\,\text{m/s}$
 **Vastaus:** b) $16\,\text{m}$, kaksi merkitsevää numeroa kuten kitkakertoimessa $0{,}060$; c) $7{,}7\,\text{m/s}$. Massa supistuu pois, koska sekä paino että kitka ovat verrannollisia massaan: raskaampi lapsi saa suuremman liike-energian mutta myös suuremman kitkavoiman, ja nopeus on sama.
-**Järkevyys:** Rinteen korkeus on $h = 16{,}33\,\text{m}\cdot\sin 14{,}0\,{}^\circ = 3{,}95\,\text{m}$ ja vaakamatka $16{,}33\,\text{m}\cdot\cos 14{,}0\,{}^\circ = 15{,}85\,\text{m}$. Kitka kuluttaa rinteessä korkeuden verran $0{,}060\cdot 15{,}85\,\text{m} = 0{,}95\,\text{m}$ ja tasaisella $0{,}150\cdot 20{,}0\,\text{m} = 3{,}00\,\text{m}$, yhteensä $3{,}95\,\text{m}$ kuten pitää. Tasaisella pysähtymismatka on $\dfrac{v^2}{2\mu_2 g} = \dfrac{(7{,}67\,\text{m/s})^2}{2\cdot 0{,}150\cdot 9{,}81\,\text{m/s}^2} = 20{,}0\,\text{m}$. Rinne liukuu, koska $\tan 14{,}0\,{}^\circ = 0{,}249 > \mu_1$. Laskettu suurin pituus $16{,}3\,\text{m}$ pätee vain tehtävän oletuksilla. Lumen todellinen kitkakerroin vaihtelee esimerkiksi lämpötilan, jään, lumen laadun ja pulkan pohjan mukaan, ja jo hieman pienempi kitkakerroin pidentäisi liukumatkaa. Siksi mallia ei voi käyttää suoraan todellisen pulkkamäen turvallisuussuunnitteluun.
+**Järkevyys:** Rinteen korkeus on $h = 16{,}33\,\text{m}\cdot\sin 14{,}0\,{}^\circ = 3{,}95\,\text{m}$ ja vaakamatka $$\begin{aligned} &16{,}33\,\text{m}\cdot\cos 14{,}0\,{}^\circ \\ &= 15{,}85\,\text{m} \end{aligned}$$. Kitka kuluttaa rinteessä korkeuden verran $0{,}060\cdot 15{,}85\,\text{m} = 0{,}95\,\text{m}$ ja tasaisella $0{,}150\cdot 20{,}0\,\text{m} = 3{,}00\,\text{m}$, yhteensä $3{,}95\,\text{m}$ kuten pitää. Tasaisella pysähtymismatka on $\dfrac{v^2}{2\mu_2 g} = \dfrac{(7{,}67\,\text{m/s})^2}{2\cdot 0{,}150\cdot 9{,}81\,\text{m/s}^2} = 20{,}0\,\text{m}$. Rinne liukuu, koska $\tan 14{,}0\,{}^\circ = 0{,}249 > \mu_1$. Laskettu suurin pituus $16{,}3\,\text{m}$ pätee vain tehtävän oletuksilla. Lumen todellinen kitkakerroin vaihtelee esimerkiksi lämpötilan, jään, lumen laadun ja pulkan pohjan mukaan, ja jo hieman pienempi kitkakerroin pidentäisi liukumatkaa. Siksi mallia ei voi käyttää suoraan todellisen pulkkamäen turvallisuussuunnitteluun.
 
 ## fy4-16-L3-05
 **Annettu:** $m = 78{,}0\,\text{kg}$; taulukosta nopeudet alaspäin hetkillä $0$ – $3{,}0\,\text{s}$ ja $4{,}0\,\text{s}$; $g = 9{,}81\,\text{m/s}^2$; positiivinen suunta alas
@@ -343,9 +343,9 @@ v alas
 **Kuvaajan lukeminen:** Keskinopeudet ovat välin päätepisteiden nopeuksien keskiarvoja, ja kukin väli on $0{,}5\,\text{s}$. Suurin nopeus on alussa, $46{,}0\,\text{m/s}$, ja nopeus pienenee ensin jyrkästi: ensimmäisellä välillä nopeus pienenee $16{,}2\,\text{m/s}$, viimeisellä puolen sekunnin välillä enää $1{,}1\,\text{m/s}$. Hyppääjä liikkuu koko ajan alas, joten matkaa kertyy koko ajan.
 **Kaava:** $h = \sum \dfrac{v_i + v_{i+1}}{2}\,\Delta t$. Nollataso lopputilanteen korkeudelle: $E_{\text{k}0} + mgh - F_\text{v} h = E_\text{k}$, joten $F_\text{v} = mg + \dfrac{E_{\text{k}0} - E_\text{k}}{h}$. Kohdassa c) $mg - F_\text{v} = ma$, joten $F_\text{v} = m(g - a)$
 **Muunnokset:** Lasketaan newtoneina ja muutetaan lopuksi kilonewtoneiksi: $1\,\text{kN} = 1000\,\text{N}$.
-**Sijoitus:** a) Välien matkat ovat $18{,}95\,\text{m}$, $12{,}475\,\text{m}$, $8{,}625\,\text{m}$, $6{,}35\,\text{m}$, $5{,}00\,\text{m}$ ja $4{,}225\,\text{m}$. Summa on $h = 55{,}625\,\text{m}$. b) Liike-energiat ovat $E_{\text{k}0} = \tfrac12\cdot 78{,}0\,\text{kg}\cdot(46{,}0\,\text{m/s})^2 = 82\,524\,\text{J}$ ja $E_\text{k} = \tfrac12\cdot 78{,}0\,\text{kg}\cdot(7{,}9\,\text{m/s})^2 = 2434\,\text{J}$, joten $F_\text{v} = 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + \dfrac{82\,524\,\text{J} - 2434\,\text{J}}{55{,}625\,\text{m}} = 765{,}2\,\text{N} + 1439{,}8\,\text{N} = 2205\,\text{N}$. c) Välillä $3{,}0$–$4{,}0\,\text{s}$ nopeus pienenee $7{,}9\,\text{m/s}$:sta $6{,}8\,\text{m/s}$:iin, joten $a = \dfrac{6{,}8 - 7{,}9}{1{,}0}\,\text{m/s}^2 = -1{,}1\,\text{m/s}^2$ eli kiihtyvyys osoittaa ylös ja $F_\text{v} = 78{,}0\,\text{kg}\cdot(9{,}81 + 1{,}1)\,\text{m/s}^2 = 851\,\text{N}$
+**Sijoitus:** a) Välien matkat ovat $18{,}95\,\text{m}$, $12{,}475\,\text{m}$, $8{,}625\,\text{m}$, $6{,}35\,\text{m}$, $5{,}00\,\text{m}$ ja $4{,}225\,\text{m}$. Summa on $h = 55{,}625\,\text{m}$. b) Liike-energiat ovat $E_{\text{k}0} = \tfrac12\cdot 78{,}0\,\text{kg}\cdot(46{,}0\,\text{m/s})^2 = 82\,524\,\text{J}$ ja $E_\text{k} = \tfrac12\cdot 78{,}0\,\text{kg}\cdot(7{,}9\,\text{m/s})^2 = 2434\,\text{J}$, joten $$\begin{aligned} &F_\text{v} = 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &+ \dfrac{82\,524\,\text{J} - 2434\,\text{J}}{55{,}625\,\text{m}} \\ &= 765{,}2\,\text{N} + 1439{,}8\,\text{N} \\ &= 2205\,\text{N} \end{aligned}$$. c) Välillä $3{,}0$–$4{,}0\,\text{s}$ nopeus pienenee $7{,}9\,\text{m/s}$:sta $6{,}8\,\text{m/s}$:iin, joten $a = \dfrac{6{,}8 - 7{,}9}{1{,}0}\,\text{m/s}^2 = -1{,}1\,\text{m/s}^2$ eli kiihtyvyys osoittaa ylös ja $F_\text{v} = 78{,}0\,\text{kg}\cdot(9{,}81 + 1{,}1)\,\text{m/s}^2 = 851\,\text{N}$
 **Vastaus:** b) $2{,}21\,\text{kN}$ ylöspäin, kolme merkitsevää numeroa kuten massassa $78{,}0\,\text{kg}$ ja nopeuksissa; a) $h = 55{,}6\,\text{m}$; c) ilmanvastus on painoa suurempi, koska nopeus pienenee ja kiihtyvyys osoittaa ylös.
-**Järkevyys:** Keskimääräinen ilmanvastus on noin $2{,}9$ kertaa paino $765\,\text{N}$, joten kokonaisvoima osoittaa ylös ja hyppääjä hidastuu. Aikakeskiarvo liikeyhtälöstä on pienempi: keskikiihtyvyys on $\dfrac{46{,}0 - 7{,}9}{3{,}0}\,\text{m/s}^2 = 12{,}7\,\text{m/s}^2$, jolloin $F_\text{v} \approx 78{,}0\,\text{kg}\cdot(9{,}81 + 12{,}7)\,\text{m/s}^2 \approx 1{,}76\,\text{kN}$. Ero on oikea: ilmanvastus on suurimmillaan heti avautumisen jälkeen, kun nopeus on suuri, ja hyppääjä kulkee silloin pitkän matkan lyhyessä ajassa, joten matkakeskiarvo painottuu alkuun. Lopussa ilmanvastus lähestyy painoa $765\,\text{N}$ ($851\,\text{N}$ on jo lähellä sitä).
+**Järkevyys:** Keskimääräinen ilmanvastus on noin $2{,}9$ kertaa paino $765\,\text{N}$, joten kokonaisvoima osoittaa ylös ja hyppääjä hidastuu. Aikakeskiarvo liikeyhtälöstä on pienempi: keskikiihtyvyys on $\dfrac{46{,}0 - 7{,}9}{3{,}0}\,\text{m/s}^2 = 12{,}7\,\text{m/s}^2$, jolloin $$\begin{aligned} &F_\text{v} \\ &\approx 78{,}0\,\text{kg}\cdot(9{,}81 \\ &+ 12{,}7)\,\text{m/s}^2 \\ &\approx 1{,}76\,\text{kN} \end{aligned}$$. Ero on oikea: ilmanvastus on suurimmillaan heti avautumisen jälkeen, kun nopeus on suuri, ja hyppääjä kulkee silloin pitkän matkan lyhyessä ajassa, joten matkakeskiarvo painottuu alkuun. Lopussa ilmanvastus lähestyy painoa $765\,\text{N}$ ($851\,\text{N}$ on jo lähellä sitä).
 
 ## fy4-16-L2-08
 **Kysytty:** mikä päätelmä voidaan tehdä pelkän taulukon perusteella, kun lukeman epävarmuus on $\Delta x = 1{,}0\,\text{m}$.

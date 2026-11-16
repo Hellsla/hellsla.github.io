@@ -84,7 +84,7 @@
     {
       "id": "fy4-8-L1-08",
       "level": 1,
-      "text": "Oppilas ratkaisee tehtävän: ”Laatikko liukuu kaltevaa lankkua alas $5{,}0\\,\\text{m}$:n matkan. Lankun päiden korkeusero on $1{,}5\\,\\text{m}$. Liikettä vastustava kitkavoima on $8{,}0\\,\\text{N}$. Kuinka suuren työn kitka tekee laatikkoon?”\n\nOppilaan ratkaisu: $W = -F_\\mu h = -8{,}0\\,\\text{N} \\cdot 1{,}5\\,\\text{m} = -12\\,\\text{J}$.\n\nMikä oppilaan ratkaisussa on virheellistä?",
+      "text": "Oppilas ratkaisee tehtävän: ”Laatikko liukuu kaltevaa lankkua alas $5{,}0\\,\\text{m}$:n matkan. Lankun päiden korkeusero on $1{,}5\\,\\text{m}$. Liikettä vastustava kitkavoima on $8{,}0\\,\\text{N}$. Kuinka suuren työn kitka tekee laatikkoon?”\n\nOppilaan ratkaisu: $$\\begin{aligned} &W = -F_\\mu h \\\\ &= -8{,}0\\,\\text{N} \\cdot 1{,}5\\,\\text{m} \\\\ &= -12\\,\\text{J} \\end{aligned}$$.\n\nMikä oppilaan ratkaisussa on virheellistä?",
       "kind": [
         "error",
         "concept"

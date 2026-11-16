@@ -153,7 +153,7 @@
           {
             "text": "The horizontal distance is $60.0\\,\\text{m}$ in every row, although the sled from the steep slope is faster at the foot.",
             "correct": true,
-            "feedback": "Correct. $10.4 + 49.6 = 16.5 + 43.5 = 34.0 + 26.0 = 60.0$ metres, and $\\tfrac{h}{\\mu} = \\tfrac{6.0\\,\\text{m}}{0.10} = 60\\,\\text{m}$. The sled from the steep slope is faster at the foot and slides farther on the flat, but its horizontal distance on the slope is shorter."
+            "feedback": "Correct. $$\\begin{aligned} &10.4 + 49.6 = 16.5 \\\\ &+ 43.5 \\\\ &= 34.0 + 26.0 \\\\ &= 60.0 \\end{aligned}$$ metres, and $\\tfrac{h}{\\mu} = \\tfrac{6.0\\,\\text{m}}{0.10} = 60\\,\\text{m}$. The sled from the steep slope is faster at the foot and slides farther on the flat, but its horizontal distance on the slope is shorter."
           },
           {
             "text": "The steeper the slope, the longer the horizontal distance, because the sled from the steep slope is faster at the foot.",
@@ -248,7 +248,7 @@
           "detail": "$mg - T = ma$, so $T = m(g - a) < mg$: the scale shows less than at rest."
         }
       ],
-      "model": "Only the Earth (the weight $\\overline{G}$) and the scale, whose hook holds the suitcase (the tension $\\overline{T}$), act on the suitcase. The lift and the ceiling act on the suitcase only through the scale, so they get no forces of their own. The lift moves down and accelerates, so the velocity and the acceleration point down. The net force must point down, so the tension is smaller than the weight. When the positive direction is down, the equation of motion is $mg - T = ma$, from which $T = m(g - a)$. The scale shows less than at rest. For example, when $a = 1.5\\,\\text{m/s}^2$, $T = 18.0\\,\\text{kg}\\cdot 8.31\\,\\text{m/s}^2 \\approx 150\\,\\text{N}$, when the weight is $177\\,\\text{N}$."
+      "model": "Only the Earth (the weight $\\overline{G}$) and the scale, whose hook holds the suitcase (the tension $\\overline{T}$), act on the suitcase. The lift and the ceiling act on the suitcase only through the scale, so they get no forces of their own. The lift moves down and accelerates, so the velocity and the acceleration point down. The net force must point down, so the tension is smaller than the weight. When the positive direction is down, the equation of motion is $mg - T = ma$, from which $T = m(g - a)$. The scale shows less than at rest. For example, when $a = 1.5\\,\\text{m/s}^2$, $$\\begin{aligned} &T = 18.0\\,\\text{kg}\\cdot 8.31\\,\\text{m/s}^2 \\\\ &\\approx 150\\,\\text{N} \\end{aligned}$$, when the weight is $177\\,\\text{N}$."
     },
     {
       "id": "siirto",
@@ -263,7 +263,7 @@
       "hints": [
         "What happens to the kinetic energy and the potential energy of the skydiver when the speed is constant?",
         "The speed is constant, so $F_\\text{d} = mg$. The work done by air resistance is $W_\\text{d} = -F_\\text{d} h$, and it is the change in mechanical energy.",
-        "$mgh = 78.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot 125\\,\\text{m}$. Change the joules into kilojoules."
+        "$$\\begin{aligned} &mgh \\\\ &= 78.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot \\\\ &125\\,\\text{m} \\end{aligned}$$. Change the joules into kilojoules."
       ],
       "mistakes": [
         {
@@ -279,7 +279,7 @@
           "feedback": "The result is in joules. Change it into kilojoules: $1\\,\\text{kJ} = 1000\\,\\text{J}$."
         }
       ],
-      "solution": "**Given:** $m = 78.0\\,\\text{kg}$, the speed is constant $v = 5.0\\,\\text{m/s}$, the change in height $h = 125\\,\\text{m}$; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the mechanical energy changed into other forms of energy $|\\Delta E_\\text{mech}|$ in $\\text{kJ}$\n\n**Principle:** By the work–energy principle the change in mechanical energy is the work done by forces other than the weight, here the work $W_\\text{d}$ done by air resistance. The magnitude of the air resistance comes from the equation of motion: the speed is constant, so the net force is zero.\n\n**Free-body diagram:** The skydiver with the parachute as a rectangle, positive direction down. The weight $\\overline{G}$ from the centre down and the air resistance $\\overline{F}_\\text{d}$ from the top surface up, equally long. The velocity down is marked separately and not as a force.\n```voimakuvio\nG 765,2\nF_v 765,2 ylös\na 0\nv alas\n```\n\n**Formula:** $mg - F_\\text{d} = 0$, so $F_\\text{d} = mg$. The air resistance points against the motion, so $W_\\text{d} = -F_\\text{d} h = -mgh$, and $|\\Delta E_\\text{mech}| = mgh$\n\n**Conversions:** We calculate in joules and finally change to kilojoules: $1\\,\\text{kJ} = 1000\\,\\text{J}$. The speed is not needed, because the kinetic energy does not change.\n\n**Substitution:** $|\\Delta E_\\text{mech}| = 78.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot 125\\,\\text{m} = 95\\,647.5\\,\\text{J} \\approx 95.6\\,\\text{kJ}$\n\n**Answer:** $95.6\\,\\text{kJ}$, three significant figures like the mass $78.0\\,\\text{kg}$ and the height $125\\,\\text{m}$.\n\n**Reasonableness:** The weight of one kilogram is about $10\\,\\text{N}$, so $80\\,\\text{kg}$ and $125\\,\\text{m}$ give the estimate $800\\,\\text{N}\\cdot 125\\,\\text{m} = 100\\,\\text{kJ}$. The kinetic energy $\\tfrac12 mv^2 \\approx 1\\,\\text{kJ}$ stays the same, so the whole change in potential energy is changed into other forms of energy. Without air resistance this energy would turn into kinetic energy."
+      "solution": "**Given:** $m = 78.0\\,\\text{kg}$, the speed is constant $v = 5.0\\,\\text{m/s}$, the change in height $h = 125\\,\\text{m}$; $g = 9.81\\,\\text{m/s}^2$\n\n**Find:** the mechanical energy changed into other forms of energy $|\\Delta E_\\text{mech}|$ in $\\text{kJ}$\n\n**Principle:** By the work–energy principle the change in mechanical energy is the work done by forces other than the weight, here the work $W_\\text{d}$ done by air resistance. The magnitude of the air resistance comes from the equation of motion: the speed is constant, so the net force is zero.\n\n**Free-body diagram:** The skydiver with the parachute as a rectangle, positive direction down. The weight $\\overline{G}$ from the centre down and the air resistance $\\overline{F}_\\text{d}$ from the top surface up, equally long. The velocity down is marked separately and not as a force.\n```voimakuvio\nG 765,2\nF_v 765,2 ylös\na 0\nv alas\n```\n\n**Formula:** $mg - F_\\text{d} = 0$, so $F_\\text{d} = mg$. The air resistance points against the motion, so $W_\\text{d} = -F_\\text{d} h = -mgh$, and $|\\Delta E_\\text{mech}| = mgh$\n\n**Conversions:** We calculate in joules and finally change to kilojoules: $1\\,\\text{kJ} = 1000\\,\\text{J}$. The speed is not needed, because the kinetic energy does not change.\n\n**Substitution:** $$\\begin{aligned} &|\\Delta E_\\text{mech}| \\\\ &= 78.0\\,\\text{kg}\\cdot 9.81\\,\\text{m/s}^2\\cdot \\\\ &125\\,\\text{m} \\\\ &= 95\\,647.5\\,\\text{J} \\\\ &\\approx 95.6\\,\\text{kJ} \\end{aligned}$$\n\n**Answer:** $95.6\\,\\text{kJ}$, three significant figures like the mass $78.0\\,\\text{kg}$ and the height $125\\,\\text{m}$.\n\n**Reasonableness:** The weight of one kilogram is about $10\\,\\text{N}$, so $80\\,\\text{kg}$ and $125\\,\\text{m}$ give the estimate $800\\,\\text{N}\\cdot 125\\,\\text{m} = 100\\,\\text{kJ}$. The kinetic energy $\\tfrac12 mv^2 \\approx 1\\,\\text{kJ}$ stays the same, so the whole change in potential energy is changed into other forms of energy. Without air resistance this energy would turn into kinetic energy."
     },
     {
       "id": "tehtavat",
@@ -326,7 +326,7 @@
       "hints": [
         "Which is larger, the weight or the normal force, when the acceleration points down?",
         "Choose up as the positive direction: $N - mg = ma$, where $a = -1.20\\,\\text{m/s}^2$.",
-        "$N = 55.0\\,\\text{kg}\\cdot(9.81 - 1.20)\\,\\text{m/s}^2$. Finally divide by $9.81\\,\\text{m/s}^2$."
+        "$$\\begin{aligned} &N \\\\ &= 55.0\\,\\text{kg}\\cdot(9.81 \\\\ &- 1.20)\\,\\text{m/s}^2 \\end{aligned}$$. Finally divide by $9.81\\,\\text{m/s}^2$."
       ],
       "mistakes": [
         {

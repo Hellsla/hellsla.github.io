@@ -6,7 +6,7 @@
 **Muunnokset:** Massa ja nopeus ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $p = 0{,}17\,\text{kg} \cdot 30\,\text{m/s} = 5{,}1\,\text{kg}\cdot\text{m/s}$
 **Vastaus:** $5{,}1\,\text{kg}\cdot\text{m/s}$, kaksi merkitsevää numeroa kuten massassa $0{,}17\,\text{kg}$ ja nopeudessa $30\,\text{m/s}$.
-**Järkevyys:** Arvio pyöreillä luvuilla: $0{,}2\,\text{kg} \cdot 30\,\text{m/s} = 6\,\text{kg}\cdot\text{m/s}$, joten tulos on oikeaa suuruusluokkaa. Kevyen kiekon liikemäärä on pieni, vaikka nopeus on suuri: kävelevän ihmisen liikemäärä on noin $100\,\text{kg}\cdot\text{m/s}$.
+**Järkevyys:** Arvio pyöreillä luvuilla: $$\begin{aligned} &0{,}2\,\text{kg} \cdot 30\,\text{m/s} \\ &= 6\,\text{kg}\cdot\text{m/s} \end{aligned}$$, joten tulos on oikeaa suuruusluokkaa. Kevyen kiekon liikemäärä on pieni, vaikka nopeus on suuri: kävelevän ihmisen liikemäärä on noin $100\,\text{kg}\cdot\text{m/s}$.
 
 ## fy4-9-L1-02
 **Annettu:** työntövoima $F = 12\,\text{N}$, vaikutusaika $\Delta t = 0{,}50\,\text{s}$
@@ -26,7 +26,7 @@
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $I = 0{,}27\,\text{kg} \cdot 18\,\text{m/s} = 4{,}86\,\text{N}\cdot\text{s}$
 **Vastaus:** $4{,}9\,\text{N}\cdot\text{s}$, kaksi merkitsevää numeroa kuten massassa $0{,}27\,\text{kg}$ ja nopeudessa $18\,\text{m/s}$.
-**Järkevyys:** Arvio: $0{,}3\,\text{kg} \cdot 20\,\text{m/s} = 6\,\text{kg}\cdot\text{m/s}$, ja molemmat luvut pyöristettiin ylöspäin, joten tulos $4{,}9$ on sopiva. Impulssi on pallon lähtösuuntaan, koska pallo lähti levosta siihen suuntaan.
+**Järkevyys:** Arvio: $$\begin{aligned} &0{,}3\,\text{kg} \cdot 20\,\text{m/s} \\ &= 6\,\text{kg}\cdot\text{m/s} \end{aligned}$$, ja molemmat luvut pyöristettiin ylöspäin, joten tulos $4{,}9$ on sopiva. Impulssi on pallon lähtösuuntaan, koska pallo lähti levosta siihen suuntaan.
 
 ## fy4-9-L1-04
 **Annettu:** hiihtäjän massa $m = 70\,\text{kg}$, liikemäärä $p = 420\,\text{kg}\cdot\text{m/s}$
@@ -36,7 +36,7 @@
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita; $\tfrac{\text{kg}\cdot\text{m/s}}{\text{kg}} = \text{m/s}$.
 **Sijoitus:** $v = \dfrac{420\,\text{kg}\cdot\text{m/s}}{70\,\text{kg}} = 6{,}0\,\text{m/s}$
 **Vastaus:** $6{,}0\,\text{m/s}$, kaksi merkitsevää numeroa kuten massassa $70\,\text{kg}$.
-**Järkevyys:** $70\,\text{kg} \cdot 6{,}0\,\text{m/s} = 420\,\text{kg}\cdot\text{m/s}$, joten lasku toimii takaperin. Nopeus on noin $22\,\text{km/h}$, mikä sopii hiihtäjälle.
+**Järkevyys:** $$\begin{aligned} &70\,\text{kg} \cdot 6{,}0\,\text{m/s} \\ &= 420\,\text{kg}\cdot\text{m/s} \end{aligned}$$, joten lasku toimii takaperin. Nopeus on noin $22\,\text{km/h}$, mikä sopii hiihtäjälle.
 
 ## fy4-9-L1-05
 **Annettu:** impulssi $I = 0{,}15\,\text{N}\cdot\text{s}$, kosketusaika $\Delta t = 0{,}0010\,\text{s}$
@@ -56,7 +56,7 @@
 **Muunnokset:** $v_0 = 54\,\text{km/h} = \dfrac{54\,\text{m}}{3{,}6\,\text{s}} = 15\,\text{m/s}$
 **Sijoitus:** $F_\text{ka} = \dfrac{1200\,\text{kg} \cdot 15\,\text{m/s}}{3{,}0\,\text{s}} = \dfrac{18\,000\,\text{kg}\cdot\text{m/s}}{3{,}0\,\text{s}} = 6000\,\text{N}$
 **Vastaus:** $6{,}0\,\text{kN}$, kaksi merkitsevää numeroa kuten nopeudessa $54\,\text{km/h}$ ja ajassa $3{,}0\,\text{s}$.
-**Järkevyys:** Voiman etumerkki on negatiivinen eli se osoittaa liikettä vastaan, kuten jarrutusvoiman pitää. Voima on noin puolet auton painosta $1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 12\,\text{kN}$, mikä vastaa tavallista jarrutusta kuivalla tiellä.
+**Järkevyys:** Voiman etumerkki on negatiivinen eli se osoittaa liikettä vastaan, kuten jarrutusvoiman pitää. Voima on noin puolet auton painosta $$\begin{aligned} &1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\approx 12\,\text{kN} \end{aligned}$$, mikä vastaa tavallista jarrutusta kuivalla tiellä.
 
 ## fy4-9-L2-02
 **Annettu:** pallon massa $m = 46\,\text{g}$, alkunopeus $v_0 = 0$, loppunopeus $v = 70\,\text{m/s}$, kosketusaika $\Delta t = 0{,}50\,\text{ms}$; painon vaikutus jätetään huomiotta
@@ -66,17 +66,17 @@
 **Muunnokset:** $m = 46\,\text{g} = 0{,}046\,\text{kg}$ ja $\Delta t = 0{,}50\,\text{ms} = 0{,}00050\,\text{s}$
 **Sijoitus:** $F_\text{ka} = \dfrac{0{,}046\,\text{kg} \cdot 70\,\text{m/s}}{0{,}00050\,\text{s}} = \dfrac{3{,}22\,\text{kg}\cdot\text{m/s}}{0{,}00050\,\text{s}} = 6440\,\text{N}$
 **Vastaus:** $6{,}4\,\text{kN}$, kaksi merkitsevää numeroa kuten massassa $46\,\text{g}$, nopeudessa $70\,\text{m/s}$ ja ajassa $0{,}50\,\text{ms}$.
-**Järkevyys:** Pallon paino on vain $0{,}046\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 0{,}45\,\text{N}$, joten mailan voima on yli $10\,000$ kertaa suurempi ja painon jättäminen huomiotta oli perusteltua. Suuri voima on mahdollinen, koska se vaikuttaa vain puoli millisekuntia.
+**Järkevyys:** Pallon paino on vain $$\begin{aligned} &0{,}046\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &\approx 0{,}45\,\text{N} \end{aligned}$$, joten mailan voima on yli $10\,000$ kertaa suurempi ja painon jättäminen huomiotta oli perusteltua. Suuri voima on mahdollinen, koska se vaikuttaa vain puoli millisekuntia.
 
 ## fy4-9-L2-03
 **Annettu:** pallon massa $m = 60\,\text{g}$, tulonopeus $14\,\text{m/s}$ kohti seinää, lähtönopeus $11\,\text{m/s}$ poispäin seinästä
 **Kysytty:** seinän palloon antaman impulssin suuruus $|I|$ yksikössä $\text{N}\cdot\text{s}$
 **Periaate:** Seinän voima muuttaa pallon liikemäärää, ja impulssiperiaatteen mukaan impulssi on yhtä suuri kuin liikemäärän muutos. Pallo kimpoaa vastakkaiseen suuntaan, joten nopeuksille tarvitaan etumerkit. Positiivinen suunta valitaan kohti seinää: $v_0 = +14\,\text{m/s}$ ja $v = -11\,\text{m/s}$.
-**Kaava:** $I = \Delta p = mv - mv_0 = m(v - v_0)$
+**Kaava:** $$\begin{aligned} &I = \Delta p \\ &= mv - mv_0 \\ &= m(v - v_0) \end{aligned}$$
 **Muunnokset:** $m = 60\,\text{g} = 0{,}060\,\text{kg}$
 **Sijoitus:** $I = 0{,}060\,\text{kg} \cdot (-11 - 14)\,\text{m/s} = 0{,}060\,\text{kg} \cdot (-25\,\text{m/s}) = -1{,}5\,\text{N}\cdot\text{s}$
 **Vastaus:** $1{,}5\,\text{N}\cdot\text{s}$, kaksi merkitsevää numeroa kuten massassa $60\,\text{g}$ ja nopeuksissa; impulssi osoittaa poispäin seinästä.
-**Järkevyys:** Impulssi on suurempi kuin pysäyttämiseen tarvittava $0{,}060\,\text{kg} \cdot 14\,\text{m/s} = 0{,}84\,\text{N}\cdot\text{s}$, koska seinä myös kiihdyttää pallon takaisin. Jos nopeudet vähennettäisiin ilman etumerkkejä, tulos olisi vain $0{,}18\,\text{N}\cdot\text{s}$, mikä on liian pieni edes pysäyttämään palloa.
+**Järkevyys:** Impulssi on suurempi kuin pysäyttämiseen tarvittava $$\begin{aligned} &0{,}060\,\text{kg} \cdot 14\,\text{m/s} \\ &= 0{,}84\,\text{N}\cdot\text{s} \end{aligned}$$, koska seinä myös kiihdyttää pallon takaisin. Jos nopeudet vähennettäisiin ilman etumerkkejä, tulos olisi vain $0{,}18\,\text{N}\cdot\text{s}$, mikä on liian pieni edes pysäyttämään palloa.
 
 ## fy4-9-L2-04
 **Annettu:** kiekon massa $m = 0{,}17\,\text{kg}$, alkunopeus $v_0 = 8{,}0\,\text{m/s}$, mailan keskimääräinen voima $F = 120\,\text{N}$ liikkeen suuntaan, kosketusaika $\Delta t = 0{,}025\,\text{s}$; jään kitka jätetään huomiotta
@@ -132,7 +132,7 @@
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita; $\tfrac{\text{N}\cdot\text{s}}{\text{kg}} = \text{m/s}$.
 **Sijoitus:** $v = \dfrac{36\,\text{N}\cdot\text{s}}{20\,\text{kg}} = 1{,}8\,\text{m/s}$
 **Vastaus:** $1{,}8\,\text{m/s}$, kaksi merkitsevää numeroa kuten massassa $20\,\text{kg}$ ja impulssissa $36\,\text{N}\cdot\text{s}$.
-**Järkevyys:** Takaperin $20\,\text{kg} \cdot 1{,}8\,\text{m/s} = 36\,\text{kg}\cdot\text{m/s}$, joten lasku täsmää. Raskas kivi lähtee liikkeelle hitaasti: nopeus $1{,}8\,\text{m/s}$ on nopean kävelyn vauhti.
+**Järkevyys:** Takaperin $$\begin{aligned} &20\,\text{kg} \cdot 1{,}8\,\text{m/s} \\ &= 36\,\text{kg}\cdot\text{m/s} \end{aligned}$$, joten lasku täsmää. Raskas kivi lähtee liikkeelle hitaasti: nopeus $1{,}8\,\text{m/s}$ on nopean kävelyn vauhti.
 
 ## fy4-9-L1-08
 **Annettu:** auton massa $m = 1800\,\text{kg}$, nopeus $v = 36\,\text{km/h}$; opiskelijan tulos $64\,800$
@@ -173,7 +173,7 @@
 **Muunnokset:** $\Delta t = 10\,\text{ms} = 0{,}010\,\text{s}$
 **Sijoitus:** $I = 0{,}010\,\text{s} \cdot 144{,}0\,\text{N} = 1{,}44\,\text{N}\cdot\text{s}$ ja $\Delta v = \dfrac{1{,}44\,\text{N}\cdot\text{s}}{0{,}50\,\text{kg}} = 2{,}88\,\text{m/s}$
 **Vastaus:** $2{,}9\,\text{m/s}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$ ja nopeudessa $1{,}50\,\text{m/s}$ pyöristettynä.
-**Järkevyys:** Kärryn nopeus on ennen törmäystä $-1{,}50\,\text{m/s}$ ja sen jälkeen $-1{,}50\,\text{m/s} + 2{,}88\,\text{m/s} = +1{,}38\,\text{m/s}$, joten kärry kimpoaa takaisin hieman hitaammin kuin tuli. Se sopii kimmoisaan puskuriin, joka ei lisää kärryn nopeutta. Huippuvoima $36{,}5\,\text{N}$ on suurempi kuin keskimääräinen voima $\dfrac{1{,}44\,\text{N}\cdot\text{s}}{0{,}070\,\text{s}} \approx 21\,\text{N}$, kuten pitääkin.
+**Järkevyys:** Kärryn nopeus on ennen törmäystä $-1{,}50\,\text{m/s}$ ja sen jälkeen $$\begin{aligned} &-1{,}50\,\text{m/s} + 2{,}88\,\text{m/s} \\ &= +1{,}38\,\text{m/s} \end{aligned}$$, joten kärry kimpoaa takaisin hieman hitaammin kuin tuli. Se sopii kimmoisaan puskuriin, joka ei lisää kärryn nopeutta. Huippuvoima $36{,}5\,\text{N}$ on suurempi kuin keskimääräinen voima $\dfrac{1{,}44\,\text{N}\cdot\text{s}}{0{,}070\,\text{s}} \approx 21\,\text{N}$, kuten pitääkin.
 
 ## fy4-9-L3-04
 **Annettu:** nuken massa $m = 70\,\text{kg}$, pysähtymisaika turvatyynyssä $100\,\text{ms}$, loppunopeus $v = 0$; voima $F$ ajan funktiona taulukossa (esimerkkiaineisto); vaakasuunnassa vaikuttaa vain turvatyynyn voima
@@ -192,7 +192,7 @@
 **Periaate:** Ilmassa pallon kiihtyvyys on $g$ alaspäin, joten nopeus ennen osumaa saadaan putoamisajasta ja nopeus kimpoamisen jälkeen nousuajasta, koska pallo on ylimmässä kohdassa levossa. Positiivinen suunta on ylös. Kosketuksen aikana palloon vaikuttavat lattian voima $N$ ylös ja paino $G = mg$ alas, joten kokonaisvoima on $N - G$. Impulssiperiaatteen mukaan sen impulssi on yhtä suuri kuin pallon liikemäärän muutos.
 **Kaava:** $v_1 = -g\,t_\text{putoaminen}$ ja $v_2 = g\,t_\text{nousu}$; $(N_\text{ka} - mg)\,\Delta t = mv_2 - mv_1$, joten $N_\text{ka} = mg + \dfrac{m(v_2 - v_1)}{\Delta t}$
 **Muunnokset:** Putoamisaika on $0{,}500\,\text{s}$, kosketusaika $\Delta t = 0{,}512\,\text{s} - 0{,}500\,\text{s} = 0{,}012\,\text{s}$ ja nousuaika $0{,}912\,\text{s} - 0{,}512\,\text{s} = 0{,}400\,\text{s}$.
-**Sijoitus:** a) $v_1 = -9{,}81\,\text{m/s}^2 \cdot 0{,}500\,\text{s} = -4{,}905\,\text{m/s}$ ja $v_2 = 9{,}81\,\text{m/s}^2 \cdot 0{,}400\,\text{s} = 3{,}924\,\text{m/s}$. b) Liikemäärän muutos on $m(v_2 - v_1) = 0{,}60\,\text{kg} \cdot (3{,}924 + 4{,}905)\,\text{m/s} = 5{,}297\,\text{kg}\cdot\text{m/s}$, ja paino on $mg = 0{,}60\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 5{,}886\,\text{N}$. Siis $N_\text{ka} = 5{,}886\,\text{N} + \dfrac{5{,}297\,\text{N}\cdot\text{s}}{0{,}012\,\text{s}} = 5{,}886\,\text{N} + 441{,}5\,\text{N} = 447{,}3\,\text{N}$. c) Savipallolle $v_2 = 0$, joten $N_\text{ka} = 5{,}886\,\text{N} + \dfrac{0{,}60\,\text{kg} \cdot 4{,}905\,\text{m/s}}{0{,}012\,\text{s}} = 5{,}886\,\text{N} + 245{,}3\,\text{N} = 251{,}1\,\text{N}$.
+**Sijoitus:** a) $v_1 = -9{,}81\,\text{m/s}^2 \cdot 0{,}500\,\text{s} = -4{,}905\,\text{m/s}$ ja $v_2 = 9{,}81\,\text{m/s}^2 \cdot 0{,}400\,\text{s} = 3{,}924\,\text{m/s}$. b) Liikemäärän muutos on $$\begin{aligned} &m(v_2 - v_1) \\ &= 0{,}60\,\text{kg} \\ &\cdot (3{,}924 + 4{,}905)\,\text{m/s} \\ &= 5{,}297\,\text{kg}\cdot\text{m/s} \end{aligned}$$, ja paino on $mg = 0{,}60\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 5{,}886\,\text{N}$. Siis $N_\text{ka} = 5{,}886\,\text{N} + \dfrac{5{,}297\,\text{N}\cdot\text{s}}{0{,}012\,\text{s}} = 5{,}886\,\text{N} + 441{,}5\,\text{N} = 447{,}3\,\text{N}$. c) Savipallolle $v_2 = 0$, joten $$\begin{aligned} &N_\text{ka} = 5{,}886\,\text{N} \\ &+ \dfrac{0{,}60\,\text{kg} \cdot 4{,}905\,\text{m/s}}{0{,}012\,\text{s}} \\ &= 5{,}886\,\text{N} + 245{,}3\,\text{N} \\ &= 251{,}1\,\text{N} \end{aligned}$$.
 **Vastaus:** b) $4{,}5 \cdot 10^2\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $0{,}60\,\text{kg}$ ja kosketusajassa $0{,}012\,\text{s}$. Nopeudet ovat a-kohdassa $-4{,}9\,\text{m/s}$ ja $+3{,}9\,\text{m/s}$, ja c-kohdan savipallolle voima on $2{,}5 \cdot 10^2\,\text{N}$.
 **Järkevyys:** Paino $5{,}9\,\text{N}$ on vain noin $1{,}3\,\%$ lattian voimasta. Pallo putosi noin $1{,}2\,\text{m}$ ja nousi noin $0{,}78\,\text{m}$, mikä sopii koripallolle. Selitys c): savipallon liikemäärän muutos on $2{,}9\,\text{kg}\cdot\text{m/s}$, mutta kimpoavan pallon liikemäärä muuttuu lisäksi ylöspäin arvoon $+2{,}4\,\text{kg}\cdot\text{m/s}$, joten sen muutos $5{,}3\,\text{kg}\cdot\text{m/s}$ on suurempi ja samassa ajassa tarvitaan suurempi voima.
 
