@@ -216,7 +216,7 @@ $$. Järjestys pienimmästä suurimpaan: omakotitalo, maatila, vesivoimala, kauk
 **Järkevyys:** Tee arvio: $3\,000\,000 : 60 = 50\,000$. Suhde noin $50\,000$ on siis oikea suuruusluokka. Kaupungin kaukolämpö on kymmenien tuhansien talojen vuoden lämmitys (noin $$
 \begin{aligned}
 &3\,200\,000\,\text{GJ} : 70\,\text{GJ} \\
-&\approx 45\,000
+&\approx 46\,000
 \end{aligned}
 $$ taloa). Energioita ei vertailla lukuarvoista. Yksiköt on muunnettava.
 

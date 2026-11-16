@@ -78,7 +78,7 @@ $$ per year. That is about $95\,\%$ less than with coal ($3.1 \cdot 10^{5}\,\tex
 
 *Peak.* On a calm, frosty evening the biomass plant ($40\,\text{MW}$), hydropower ($20\,\text{MW}$) and the wind turbines (below $0.05 \cdot 90\,\text{MW} \approx 4.5\,\text{MW}$) give about $65\,\text{MW}$ in total. The remaining $15\,\text{MW}$ or so is bought from the grid, or part of the consumption, such as electric heating, is shifted a few hours later.
 
-*Other arguments.* The combination does not depend on a single fuel or a single kind of weather: wind power has no fuel, and the power of hydropower and biomass can be adjusted. The wind turbines take up land and change the landscape. The biomass plant needs wood chips, but only about a sixth of what it would need at full capacity factor.
+*Other arguments.* The combination does not depend on a single fuel or a single kind of weather: wind power has no fuel, and the power of hydropower and biomass can be adjusted. The wind turbines take up land and change the landscape. The biomass plant needs wood chips, but only about a sixth of what it would need at the table's typical capacity factor, $0.70$.
 
 *The strongest counterargument* is that the biomass plant stands idle for much of the year, so building it is expensive per unit of energy produced, and the carbon dioxide from burning biomass is bound back only over decades, so the real emission can be larger than the assumed $230\,\text{g/kWh}$. My answer is that the plant is needed precisely because of its controllability: without it, more than $50\,\text{MW}$ would be needed from the grid on the peak evening, when the consumption of the whole country is at its highest. The share of biomass in the energy is only about $11\,\%$.
 

@@ -78,7 +78,7 @@ $$
 **Muunnokset:** Lämpöarvo on jo yksikössä $\text{MJ/kg}$ ja massa kilogrammoina, joten vastaus tulee suoraan megajouleina eikä muunnoksia tarvita.
 **Sijoitus:** $E = 43{,}4\,\dfrac{\text{MJ}}{\text{kg}} \cdot 2{,}0\,\text{kg} = 86{,}8\,\text{MJ}$
 **Vastaus:** $E \approx 87\,\text{MJ}$, kaksi merkitsevää numeroa kuten massassa $2{,}0\,\text{kg}$. Lämpöarvo $H = 43{,}4\,\text{MJ/kg}$ on MAFY-taulukosta (polttoaineiden lämpöarvot, bensiini); eri taulukoiden arvot poikkeavat hieman toisistaan, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Karkea arvio: $40\,\text{MJ/kg} \cdot 2\,\text{kg} = 80\,\text{MJ}$, joten tulos on oikean kokoluokan. Koska $1\,\text{kWh} = 3{,}6\,\text{MJ}$, $87\,\text{MJ}$ on noin $24\,\text{kWh}$, ja bensiinin energiatiheys on suuri verrattuna esimerkiksi puuhun, jonka lämpöarvo on noin $16\,\text{MJ/kg}$.
+**Järkevyys:** Karkea arvio: $40\,\text{MJ/kg} \cdot 2\,\text{kg} = 80\,\text{MJ}$, joten tulos on oikean kokoluokan. Koska $1\,\text{kWh} = 3{,}6\,\text{MJ}$, $87\,\text{MJ}$ on noin $24\,\text{kWh}$, ja bensiinin energiatiheys on suuri verrattuna esimerkiksi kuivaan puuhun, jonka lämpöarvo on MAFY-taulukon mukaan $16{,}2\,\text{MJ/kg}$.
 
 ## fy2-1-L2-01
 **Annettu:** akusta vapautuva kemiallinen energia $E_\text{kem} = 3{,}00\,\text{kJ}$, potkulaudan ja kuljettajan liike-energia $E_\text{k} = 2150\,\text{J}$

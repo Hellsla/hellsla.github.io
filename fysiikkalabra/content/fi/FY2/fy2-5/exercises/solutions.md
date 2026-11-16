@@ -219,7 +219,7 @@ Bensiini: $E = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 1{,}5\,\text{kg} = 64{,}5\
 Polttopuu: $E = 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 5{,}0\,\text{kg} = 75\,\text{MJ}$
 Kivihiili: $E = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 4{,}0\,\text{kg} = 104\,\text{MJ}$
 Jyrsinturve: $E = 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,\text{kg} = 120\,\text{MJ}$
-Pienimmästä suurimpaan: bensiini, polttopuu, kivihiili, jyrsinturve. Massan mukaan järjestys olisi bensiini ($1{,}5\,\text{kg}$), kivihiili ($4{,}0\,\text{kg}$), polttopuu ($5{,}0\,\text{kg}$), jyrsinturve ($12\,\text{kg}$), joten polttopuu ja kivihiili vaihtavat paikkaa: kivihiilen suurempi lämpöarvo korvaa pienemmän massan. Arvio: bensiini on lähes $40\,\text{MJ}$ kilogrammaa kohti mutta vain pieni määrä, joten sen energia jää pienimmäksi, mikä sopii.
+Pienimmästä suurimpaan: bensiini, polttopuu, kivihiili, jyrsinturve. Massan mukaan järjestys olisi bensiini ($1{,}5\,\text{kg}$), kivihiili ($4{,}0\,\text{kg}$), polttopuu ($5{,}0\,\text{kg}$), jyrsinturve ($12\,\text{kg}$), joten polttopuu ja kivihiili vaihtavat paikkaa: kivihiilen suurempi lämpöarvo korvaa pienemmän massan. Arvio: bensiinissä on yli $40\,\text{MJ}$ kilogrammaa kohti mutta vain pieni määrä, joten sen energia jää pienimmäksi, mikä sopii.
 
 ## fy2-5-L1-09
 **Annettu:** etanolin massa $m = 0{,}50\,\text{kg}$; lämpöarvo MAFY-taulukosta (Polttoaineiden LHV-lämpöarvoja, etanoli) $H = 26{,}7\,\tfrac{\text{MJ}}{\text{kg}}$

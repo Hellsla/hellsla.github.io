@@ -315,5 +315,5 @@ $$ vastaa summaa $42{,}09\,\text{MWh}$.
 **Kaava:** $E_\text{häviö} = p \cdot E_\text{lähtö}$ ja $\Delta E = E_\text{häviö,kl} - E_\text{häviö,s}$
 **Muunnokset:** $9\,\% = 0{,}09$ ja $4\,\% = 0{,}04$.
 **Sijoitus:** $E_\text{häviö,kl} = 0{,}09 \cdot 250\,\text{MWh} = 22{,}5\,\text{MWh}$ ja $E_\text{häviö,s} = 0{,}04 \cdot 250\,\text{MWh} = 10{,}0\,\text{MWh}$, joten $\Delta E = 22{,}5\,\text{MWh} - 10{,}0\,\text{MWh} = 12{,}5\,\text{MWh}$
-**Vastaus:** $\Delta E \approx 12{,}5\,\text{MWh}$, kolme merkitsevää numeroa kuten lähtevässä energiassa $250\,\text{MWh}$.
+**Vastaus:** $\Delta E \approx 13\,\text{MWh}$ (laskettu $12{,}5\,\text{MWh}$), kaksi merkitsevää numeroa, koska kuvan prosenttiluvut $9\,\%$ ja $4\,\%$ on pyöristetty täysiin prosentteihin.
 **Järkevyys:** Osuuksien erotus on $9\,\% - 4\,\% = 5\,\%$, ja $5\,\%$ luvusta $250\,\text{MWh}$ on $12{,}5\,\text{MWh}$. Kaukolämpöverkossa häviää enemmän, kuten kuvan leveämpi häviövirta näyttää.

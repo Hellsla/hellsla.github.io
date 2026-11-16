@@ -301,7 +301,7 @@
       "figure": "fy2-7/sankey",
       "answer": 12.5,
       "unit": "MWh",
-      "tolerance": 0.03
+      "tolerance": 0.05
     }
   ],
   "level3": [

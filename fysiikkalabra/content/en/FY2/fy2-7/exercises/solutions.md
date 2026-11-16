@@ -314,5 +314,5 @@ $$ matches the sum $42.09\,\text{MWh}$.
 **Formula:** $E_\text{loss} = p \cdot E_\text{in}$ and $\Delta E = E_\text{loss,dh} - E_\text{loss,el}$
 **Conversions:** $9\,\% = 0.09$ and $4\,\% = 0.04$.
 **Substitution:** $E_\text{loss,dh} = 0.09 \cdot 250\,\text{MWh} = 22.5\,\text{MWh}$ and $E_\text{loss,el} = 0.04 \cdot 250\,\text{MWh} = 10.0\,\text{MWh}$, so $\Delta E = 22.5\,\text{MWh} - 10.0\,\text{MWh} = 12.5\,\text{MWh}$
-**Answer:** $\Delta E \approx 12.5\,\text{MWh}$, three significant figures like the energy fed in, $250\,\text{MWh}$.
+**Answer:** $\Delta E \approx 13\,\text{MWh}$ (calculated $12.5\,\text{MWh}$), two significant figures, because the percentages in the figure, $9\,\%$ and $4\,\%$, are rounded to whole percent.
 **Reasonableness:** The difference of the shares is $9\,\% - 4\,\% = 5\,\%$, and $5\,\%$ of $250\,\text{MWh}$ is $12.5\,\text{MWh}$. More is lost in the district heating network, as the wider loss flow in the figure shows.
