@@ -1,21 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 55d454ed07d07adc
+CONTENT-HASH: cd9b243866124293
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- inquiry.json olomuodot — the correct option is the longest and the only one with a full explanation, so it can be picked by length — shorten it or lengthen the two distractors to similar size.
-- lesson.md Esimerkki stage 6 — the significant-figure justification (three sentences about what limits the result) is heavy for the easy-language version — keep one sentence: "Kaksi merkitsevää numeroa, koska $\alpha$ ja $\Delta T$ on annettu kahdella."
-- lesson.md Esimerkki stage 7 — "Kansi pitenee kesään mennessä lähes yhdeksän senttimetriä, koska lämpötila nousee" — say "Kansi on helteellä noin $86\,\text{mm}$ pidempi kuin pakkasella", which matches the question.
-- The form l = l_0(1 + αΔT) is in the Kaava but no task asks for the new length l — add a hint or part asking for l (the earlier review noted the same).
+- lesson.md (rod-expansion figure) — the sauva figure sits after the two coefficient tables, away from the paragraph on Δl = αl₀ΔT it explains — move it directly after that paragraph (before "Nesteiden … tilavuus").
+- inquiry.json pred-1 / exp-1 intro — the intro names 70 °C and 120 °C, the very values the prediction asks about, and the experiment "Lisätutkimus" (exp-2) and pred-2 are both optional, so the core path never tests proportionality to l₀ — acceptable, but consider "esimerkiksi kahdessa lämpötilassa" in the intro so the student chooses the points.
+- lesson.md worked example stage "Tulos" — one paragraph carries rounding up, significant figures and the limiting data (about 110 words); for fi-easy split the significant-figure explanation into its own paragraph.
+- inquiry.json "olomuodot" feedback — "Taulukossa järjestys on sama: 0,36, 2,1 ja 11, 34" reads as a list of four numbers; write "0,36 → 2,1 → 11 → 34 cm³".
+- lesson.md Ydinajatus (fi-easy) — "mikromalli", "tasapainoasema", "liikuntasauma" are explained in context only partly; add a short gloss at first use of tasapainoasema ("paikka, jonka ympärillä hiukkanen heiluu").
 
 ## Checked
-- Full review (no earlier version in git). Hero (comb joint), particle, rod, volume and rail figures: recognisable, labelled, exaggeration stated; sim at 390 px shows micromodel, rod and (T, Δl) graph, readout fits.
-- Path: comb-joint hook -> retrieval of ΔT in kelvins -> predictions (2x for ΔT, 2x for l_0, which mechanism) -> experiments vary one quantity with material and the other locked -> theory -> example.
-- Pred-1 can be refuted by the table (6,00 mm then 12,0 mm); the option "ratio of Celsius readings" targets the ΔT-versus-T misconception; feedback repairs it.
-- Pred-3 distractors name real misconceptions (particles grow, heat is a substance, symmetric vibration); the sim's limits (symmetric drawing, exaggeration x100) are stated.
-- Worked example staged in seven steps, symbolic first, ΔT = 60 K converted, order-of-magnitude check.
-- Etsi virhe (T instead of ΔT), transfer (thermometer, cm³ -> mm³ with mistake feedback), concept checks (water 4 °C, hole in plate) and the exit ticket test the core ideas.
-- Goals met: micromodel, solids, liquids, gases; no scope creep. Finnish and cases after number+unit correct.
-- Workload: optional items marked; one lesson.
+- Path: phenomenon (bridge joint) → temperature-change retrieval → predictions → sim experiment → theory → staged example → transfer; the slot goals (microscopic model; solids, liquids, gases) are covered and the opening question is answered only after commitment.
+- Predictions can be refuted: exp-1 gives Δl at 70 and 120 °C and −30 °C, locks aine and l₀, varies only T; pred-3 (models) revealed after theory with each wrong option repairing its misconception (hiukkaset kasvavat, symmetrinen värähtely, lämpö on ainetta).
+- Sim (390 and 1280 px captures): rod, particle lattice and (T, Δl) graph legible, exaggeration ×100 stated, model values called model values, model/howto behind closed boxes; its limitation (symmetric vibration) is stated honestly.
+- olomuodot interpret task: data table with source "model", distractors target real misconceptions (particles grow, more particles in gas).
+- Etsi virhe and siirto (thermometer) are real transfer; hints are progressive; mistakes feedback names the slip.
+- Checks: concept (water anomaly), concept (hole), calculation from a table, explanation with observable criteria; exit ticket tests Δl = αl₀ΔT with a new case.
+- Worked example has seven stages, one step each, symbolic before numeric, sensible estimate.
+- Workload: one lesson; extras (exp-2, reflect, virhe, siirto, check-3) are optional.
+- Finnish grammar and case after number+unit fine; fi-easy reading level adequate.
