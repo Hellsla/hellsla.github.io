@@ -124,7 +124,7 @@ Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.
 
 ## Tutkimuskysymyksestä mitattaviksi suureiksi
 
-Magneetin liikkuessa jännite muuttuu koko ajan, joten "jännitteen suuruus" täytyy ensin muuttaa mitattaviksi luvuiksi. Ennen kuin luet eteenpäin, kirjaa:
+Magneetin liikkuessa jännite muuttuu koko ajan, joten ”jännitteen suuruus” täytyy ensin muuttaa mitattaviksi luvuiksi. Ennen kuin luet eteenpäin, kirjaa:
 
 1. Miten luet yhden kokeen jännitekuvaajasta huippuarvon $U_\text{max}$ ja pinta-alan $S$, ja millä laitteella jännite kannattaa mitata, jotta lyhyt pulssi näkyy kokonaan?
 2. Mitä muutat, mitä mittaat ja mitkä tekijät pidät vakioina?
@@ -208,7 +208,7 @@ e = -N\frac{\Delta\Phi}{\Delta t}
 
 missä $e$ on indusoitunut jännite, $N$ käämin kierrosluku ja $\dfrac{\Delta\Phi}{\Delta t}$ yhden kierroksen läpi kulkevan vuon muutosnopeus. Jos vuo ei muutu, jännitettä ei synny, vaikka magneetti olisi käämin sisällä. Kun vuo kasvaa, $\Delta\Phi$ on positiivinen, ja kun vuo pienenee, negatiivinen. Siksi jännitteen etumerkki on eri silloin, kun vuo kasvaa, kuin silloin, kun se pienenee. Miinusmerkki kertoo jännitteen suunnan **Lenzin lain** mukaan: indusoitunut jännite pyrkii synnyttämään virran, joka vastustaa vuon muutosta.
 
-Jännitemittarin ja jänniteanturin resistanssi on hyvin suuri, tyypillisesti megaohmeja, eli paljon suurempi kuin käämin resistanssi. Siksi ne ottavat piiristä hyvin pientä virtaa. Silloin mitattu jännite on käytännössä sama kuin indusoitunut jännite, ja käämin virta ei juuri jarruta magneettia.
+Jännitemittarin ja jänniteanturin resistanssi on hyvin suuri, tyypillisesti megaohmeja, eli paljon suurempi kuin käämin resistanssi. Siksi ne ottavat piiristä hyvin pientä virtaa. Silloin mittari näyttää käytännössä indusoituneen jännitteen, ja käämin virta ei juuri jarruta magneettia.
 
 ::: tuki O OO
 Tarkista kirjauksesi tästä. Jännitepulssin **huippuarvo** $U_\text{max}$ on ensimmäisen pulssin eli magneetin käämiin tulon aikaisen jännitteen suurin itseisarvo. Lue se aina ensimmäisestä pulssista, oli se positiivinen tai negatiivinen. Ensimmäisen pulssin **pinta-ala** $S$ on jännitteen ja ajan kuvaajan ja aika-akselin väliin jäävä pinta-ala ensimmäisen pulssin alusta siihen hetkeen, jolloin jännite on taas nolla. Sen yksikkö on $\text{V} \cdot \text{s}$. Lyhyen pulssin mittaamiseen tarvitaan anturi ja tiedonkeruuohjelma, joka tallentaa jännitteen tiheästi. Tavallinen yleismittari päivittää lukemaansa liian harvoin.
@@ -371,7 +371,7 @@ Pohdi sitten luotettavuutta konkreettisesti: mitkä olivat suurimmat epävarmuud
 
 ## Johtopäätökset
 
-Vastaa tutkimuskysymykseen mittaustesi perusteella: miten huippuarvo ja pinta-ala riippuvat tutkimastasi tekijästä? Viittaa kuvaajiin, esimerkiksi "kuvaajasta 1 nähdään, että …". Perustele induktiolain avulla, miksi huippuarvo ja pinta-ala käyttäytyvät niin kuin mittasit. Vertaa tuloksia ennusteisiisi: mikä osui oikeaan ja mikä ei?
+Vastaa tutkimuskysymykseen mittaustesi perusteella: miten huippuarvo ja pinta-ala riippuvat tutkimastasi tekijästä? Viittaa kuvaajiin, esimerkiksi ”kuvaajasta 1 nähdään, että …”. Perustele induktiolain avulla, miksi huippuarvo ja pinta-ala käyttäytyvät niin kuin mittasit. Vertaa tuloksia ennusteisiisi: mikä osui oikeaan ja mikä ei?
 
 ## Raportoi
 

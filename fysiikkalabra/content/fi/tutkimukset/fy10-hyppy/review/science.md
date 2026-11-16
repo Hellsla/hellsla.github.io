@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9528e36baf6540d8
+CONTENT-HASH: 5247ff9a7086f94a
 
 ## Blocking
 None.
@@ -7,17 +7,7 @@ None.
 ## Polish
 None.
 
-## Checked (delta 2026-10-31)
-- `topic` "liike" fits the physics area.
-- "Pinta-ala lasketaan mittauspisteistä summana" with $I \approx \sum (N_i - G)\Delta t$ is correct and no longer claims the software does it.
-- Guides mittausohjelma, kuvaaja, nopeus-datasta (force plate, impulse to $v_0$) and videoanalyysi (video method) fit.
-- Report bullets renamed to the template's section names (Koejärjestely ja menetelmä); content unchanged.
-
-## Delta 2 (2026-10-31)
-- Raportoi: the tvt-tyoselostus link moved to its own sentence; wording only, no physics changed.
-- The tvt-nopeus-datasta link dropped from the area sentence; the impulse-from-area method is unchanged.
-
-## Delta 4 (2026-10-31)
-
-- Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
-- Area of $N$ over the selected interval minus $G\cdot T$, or the area of the calculated column $N - G$, is the net impulse; consistent with teacher.md.
+## Checked (delta 2026-11-16, round 2)
+Diff `git diff origin/main` of investigation.md read with surrounding context; teacher.md unchanged. Typography/wording branch; no figure changed.
+- Tutkimustehtävä now reads *Tarvitset painoa laskuissa, mutta voimat voi ilmoittaa painon monikertoina N/G. Kukaan ei ole velvollinen hyppäämään, ja ryhmä voi käyttää yhtä vapaaehtoista hyppääjää.* Physics correct: $G$ is read from the graph as a divisor and $v_0 = g\cdot I/G$, so mass is not needed. The note that weight and mass need not be reported stays at line 132, in Raportoi (line 273) and in teacher.md; the voluntary-jumping sentence is restored.
+- Table headers *hyppy* -> *Hyppy* only.

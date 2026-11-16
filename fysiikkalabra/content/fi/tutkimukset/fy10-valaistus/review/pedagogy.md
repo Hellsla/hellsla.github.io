@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c7ca97a24c6c510c
+CONTENT-HASH: 0c6fc092a617add8
 
 ## Blocking
 
@@ -23,3 +23,7 @@ None.
 ## Delta 4 (2026-10-31)
 
 - Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+
+## Checked (delta 2026-11-16)
+
+- Text/typography diff read in context: the long paragraph split before the task 'Päättele tästä…'; the thinking prompt and the hypothesis task are now separate paragraphs, which helps. No blocking finding.

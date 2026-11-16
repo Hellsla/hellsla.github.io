@@ -179,7 +179,7 @@ missä $a$ on pompussa säilyvän energian osuus, ja kuvaaja $h_1$ pudotuskorkeu
 Ennen mittaamista päätä ja kirjaa ylös, mitä muutat, mitä mittaat ja mitä pidät vakiona.
 
 ::: tuki O
-**Ohjattu.** Muutat pudotuskorkeutta $h_0$ ja mittaat jokaisella pudotuskorkeudella pomppukorkeuden $h_1$. Vakiona pidät pallon, alustan ja tavan, jolla pudotat pallon. Käytä ainakin kuutta pudotuskorkeutta tasaisin välein, esimerkiksi välillä $0{,}30\ \text{m}$ – $1{,}80\ \text{m}$, ja pudota pallo jokaiselta korkeudelta ainakin kolme kertaa.
+**Ohjattu.** Muutat pudotuskorkeutta $h_0$ ja mittaat jokaisella pudotuskorkeudella pomppukorkeuden $h_1$. Vakiona pidät pallon, alustan ja tavan, jolla pudotat pallon. Käytä ainakin kuutta pudotuskorkeutta tasaisin välein, esimerkiksi välillä $0{,}30\,\text{m}$–$1{,}80\,\text{m}$, ja pudota pallo jokaiselta korkeudelta ainakin kolme kertaa.
 :::
 
 ::: tuki OO

@@ -412,6 +412,8 @@
     "criteria_all": "Vastauksessasi on kaikki mallivastauksen tärkeät kohdat.",
     "criteria_missing": "Lisää vastaukseesi nämä asiat. Vertaa sitten uudelleen:",
     "zoom_open": "Näytä kuva isona",
+    "anim_play": "Käynnistä animaatio",
+    "anim_pause": "Pysäytä animaatio",
     "zoom_close": "Sulje",
     "zoom_dialog": "Iso kuva",
     "sim_expand_aria": "Näytä simulaatio isona",

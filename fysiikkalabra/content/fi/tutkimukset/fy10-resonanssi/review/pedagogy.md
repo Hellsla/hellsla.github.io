@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: bfdd5fb8b804d49d
+CONTENT-HASH: c4292566409af6a0
 
 ## Blocking
 
@@ -27,3 +27,7 @@ None.
 ## Delta 5 (2026-10-31)
 
 - Extension experiment level E3→E2 (teacher's decision): fair — *Toista mittaus usealla eri taajuudella* repeats the basic E2 measurement and adds one λ vs 1/f fit; now consistent with the basic variant (F2/E2). Text unchanged.
+
+## Checked (delta 2026-11-16)
+
+- Text/typography diff read in context: heading 'tuloksia' (plural, fine), \pm in text, thin spaces in formula; unchanged meaning. No blocking finding.

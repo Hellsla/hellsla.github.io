@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 277d004830da58fc
+CONTENT-HASH: 26292e2aed4f183d
 
 ## Blocking
 
 ## Polish
-- [Minor] Re-broken formulas (all lessons) — a lone "ja" or "joten" between two display formulas, and a parenthesis opened on one row and closed on the next (e.g. fy3-12 `P = (0,17 · 120 / + 1,0 · 20,0)`), read slightly broken — optional: join the short formulas or break outside the bracket.
-- [Minor] fy3-3 `− 195,75 + 273,15` — a leading minus on a row with no left side is set with binary spacing — write `{-}195{,}75` if the row stays.
+- [Minor] stage 6/7 Tulos — the result paragraph now holds four sentences (result, rounding, sig. figures, limiting data); optional: put the significant-figure remark in its own paragraph as the one-thing-per-paragraph rule suggests.
 
 ## Checked
-batch delta review: every changed chain rendered in a browser at 360, 390 and 1280 px with all hints, feedback, solutions and details open (no clipped or off-screen display formula, no horizontal scroll, punctuation attached to the last row, equals signs in one column, continuation rows start with the operator, no row breaks inside a number or unit); contact sheet of the changed blocks viewed at 390 px; existing captures sim/fig/example/tarkista of fy3-1 opened.
+- Delta: only the stage 6/7 "Tulos" text changed. Opened fy3-8-example-390-2.png: "86 mm, joten liikuntasauman on annettava periksi vähintään 87 mm", "86,4 mm → 87 mm" with decimal comma, thin spaces, upright units, arrow rendered; nothing clipped; the calculation block above (= 86,4 mm) and stage 7 are intact and consistent.
+- Rounding up to the safe side matches the project rule for an "at least" value.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

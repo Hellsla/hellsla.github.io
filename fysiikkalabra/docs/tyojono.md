@@ -16,6 +16,12 @@ kaikkialla $v_\text{k}$, ei $v_\text{ka}$ (opettaja 2026-11-13). Kohta 3 on valm
 
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
 
+Varattu: claude/fy10-minor-sisalto (vain sisältöosa: tutkimusten ja TVT-ohjeiden omat Minor-löydökset ja fy10-induktion kenttäviivat; jaetut komponentit eivät kuulu siihen).
+
+Sisältöosa (PR #645): tekstin ja LaTeXin Minorit korjataan. Kuviin ei kosketa (opettaja 16.11: "älä tee näille kuville mitään, piirrän ne uudelleen ChatGPT:llä"); jokainen kuvalöydös, myös fy10-induktion kenttäviivat, on PR #645:n avoimissa kohdissa opettajan piirtämistä varten.
+
+Ehdotus yhteiseksi kuvasäännöksi (koordinaattori 16.11; opettajan päätettäväksi): toistuvat kuvalöydökset kirjataan yhtenä sääntönä, ei kuva kerrallaan: (1) nimikkeet luettavia 390 px:ssä (vähintään noin 12 px, ei vaaleanharmaata ohutta tekstiä); (2) mallikuvaajan akseleilla suure ja yksikkö, tai kuvaus sanoo, että kuva on kaavio ilman mittakaavaa; (3) kaaviokuvan aria-label tai kuvateksti sanoo sen kaaviokuvaksi ("ei mittakaavassa", "havainnollistava, ei mitattu"); (4) malli- tai luonnoskuvaaja merkitsee itsensä malliksi kuvan sisällä. Jaettu osa (taulukoiden otsakkeet ja tyhjät rivit 390 px:ssä, listojen numerointi, laskurivit listoissa, apulinkit, tyhjät 28×28 px:n kaappaukset) kuuluu erään 1.
+
 Tehty (#549, erät 2–4): fy10-liukukitka, fy10-jousivakio, fy10-induktio (kuva osin, ks. PR), tvt-kuvaaja ja tvt-tyoselostus; fy10-hiuksen-paksuuden löydös ei pitänyt kuvasta (ei muutettu). Jäljellä: erä 1 (jaetut komponentit), Minor-erä ja yhteinen kuvasääntö.
 
 Auditointi on tehty (#536: 28 PASS, 8 FAIL, ei Critical-löydöksiä, 159 Minor). Korjataan `/quality-audit <id> --fix`
@@ -184,6 +190,12 @@ että käsitekorttien alleviivaus ja sirut Tiivistelmän perässä toimivat laat
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 
+Pilotti fy3-13 tehty (#643; koordinaattorin välittämänä opettaja hyväksyi 2026-11-16 sekä pilotin, "huomattavasti
+parempi luettavuus", että uuden katselmointiluokan `md-paragraphs`: kappalejako ja listamerkit, sanat samat ja samassa
+järjestyksessä, tiede ja pedagogiikka carry, visual delta). Sääntö on NOTES.md §3:ssa ("Paragraphs in stages and
+steps") ja `lint_lesson.py` varoittaa (2026-11-16: 512 pitkää kappaletta ja 112 kesken kappaleen olevaa kysyttyä
+muissa luvuissa). Jatko kurssi kerrallaan (`/quality-audit --fix`), kaikki kielet, fy3-13:n mallin mukaan.
+
 Esimerkkien vaiheet (esim. fy3-13, vaihe 1/7 "Tunnetut ja kysytty") ovat yksi tiivis kappale, jossa on luettuja
 pisteitä, huomautus ja kysymys peräkkäin: vaikea lukea. Opettaja: "näissä teksteissä saisi kappalejakoa olla …
 esim. 'Lämpötila'-alkuinen virke voisi olla jo omalla rivillään." Sääntö: yksi asia per kappale; tunnetut (lista tai
@@ -238,6 +250,8 @@ ylä- ja alapuolella).
 Toteutetaan kohdan 11 osana U3 (opettaja 2026-11-14).
 
 ## 8f. Animoitu kuva: hiukkasten värähtely ja lämpölaajeneminen (opettaja 2026-11-13, pilotti fy3-8)
+
+Pilotti fy3-8 tehty (PR #649, yhteinen komponentti figlib `Fig(anim=True)` / `vibrate()`, site.css "Animated figures", lesson.js osa 7b); odottaa opettajan hyväksyntää (`reviews.py approve-figures fy3-8` vasta sen jälkeen). Muut luvut hyväksynnän jälkeen omina kohtinaan.
 
 Opettaja kysyi, sopisiko looppaava animaatio fy3-8:n kuvan "kylmä / lämmin, d₀ / d > d₀" tilalle. Sopii, kun se
 näyttää ilmiön, jota still-kuva ei näytä: lämpimässä hiukkaset värähtelevät laajemmin ja niiden keskimääräinen väli
@@ -306,11 +320,15 @@ lang-tekstejä tai fysiikkaa.
 
 - **PR 1 (tehty, #563)** kuvan todellinen leveys tekstikoon perustaksi (`sim-embed.js`) ja selaintesti 1366×650 (kuvan tekstit
   vähintään 10 px) omina CI-jobeinaan.
-- **PR 2: Varattu: claude/sim-ui-pr2-pilotti-fy4-1** pilotti fy4-1: lukemat kuvan alle, toistorivi yhdelle riville, `.lab-side .sim-canvas`-säännön 25 rem:n
+- **PR 2 (tehty, #588)** pilotti fy4-1: lukemat kuvan alle, toistorivi yhdelle riville, `.lab-side .sim-canvas`-säännön 25 rem:n
   varaus pienemmäksi, kuvausteksti pois kokeiden vierestä.
-- **PR 3: Varattu: claude/sim-ui-pr3-asettelu** sama asettelu tyypeille A–C (aikaohjatut, jatkuvat, staattiset); tyyppi D, fy1-2, fy1-4 ja poikkeavat
+- **PR 3 (tehty, #591)** sama asettelu tyypeille A–C (aikaohjatut, jatkuvat, staattiset); tyyppi D, fy1-2, fy1-4 ja poikkeavat
   jäävät nykyiselleen.
-- **PR 4:** tarttuva kuva puhelimella, pilotti fy4-1 ja yksi staattinen simulaatio.
+- **PR 4 (pilotti tehty, #648; opettaja hyväksyi 2026-11-16 "Hyväksyn" ennen/jälkeen-kuvista 390 px:llä)** tarttuva kuva
+  puhelimella, pilotit fy4-1 ja fy2-2 (`inquiry.SIM_STICK_PILOT`, `docs/audits/2026-11-16-sim-pr4-tarttuva-kuvat/`).
+- **PR 4b: yleistys** tarttuva kuva kaikille `sim-card2`-korteille omana pull requestinaan (jaettu muutos); korkeille
+  kuville raja (esimerkiksi fy7-4:n kuva on puhelimella 551 px: tarttuu vain, jos kuva vie enintään noin puolet
+  ikkunasta, tai jää pois).
 - **PR 5:** canvasin nimi ja kuvaus, valintaruudut 40 px:n kohteiksi, näkyvä kohdistus.
 
 Myöhemmin kurssi kerrallaan, kunkin luvun seuraavan sisältömuutoksen yhteydessä katselmointeineen: tyyppi D (fy6-5,

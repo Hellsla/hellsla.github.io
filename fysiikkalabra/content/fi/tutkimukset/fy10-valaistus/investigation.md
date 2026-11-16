@@ -122,7 +122,9 @@ Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.
 
 **Valaistusvoimakkuus** $E$ kertoo, kuinka paljon valoa osuu pinnalle pinta-alayksikköä kohti. Sen yksikkö on luksi, $\text{lx}$. Valaistusvoimakkuusanturi mittaa sitä valoa, joka osuu sen herkälle pinnalle.
 
-Pienestä valonlähteestä valo etenee suoraviivaisesti joka suuntaan. Kun valo etenee kauemmas, sama valo leviää yhä suuremmalle alalle, eikä sitä katoa matkalla eikä tule lisää. Tarkastellaan kapeaa, lampusta lähtevää valokeilaa: etäisyydellä $r$ se valaisee pinnan, jonka ala on $A$. Mieti, kuinka suuren alan sama keila valaisee kaksinkertaisella etäisyydellä, kun keilan reunat ovat suoria. Päättele tästä, miten valaistusvoimakkuuden pitäisi riippua etäisyydestä, ja kirjaa malli työselostukseen hypoteesiksi.
+Pienestä valonlähteestä valo etenee suoraviivaisesti joka suuntaan. Kun valo etenee kauemmas, sama valo leviää yhä suuremmalle alalle, eikä sitä katoa matkalla eikä tule lisää. Tarkastellaan kapeaa, lampusta lähtevää valokeilaa: etäisyydellä $r$ se valaisee pinnan, jonka ala on $A$. Mieti, kuinka suuren alan sama keila valaisee kaksinkertaisella etäisyydellä, kun keilan reunat ovat suoria.
+
+Päättele tästä, miten valaistusvoimakkuuden pitäisi riippua etäisyydestä, ja kirjaa malli työselostukseen hypoteesiksi.
 
 Periaate pätee, kun nämä ehdot ovat voimassa:
 
