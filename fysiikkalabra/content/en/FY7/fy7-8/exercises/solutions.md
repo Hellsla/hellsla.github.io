@@ -87,7 +87,12 @@
 **Conversions:** Not needed: the power is in watts and the current in amperes, and $\tfrac{\text{W}}{\text{A}^2} = \tfrac{\text{V}}{\text{A}} = \Omega$.
 **Substitution:** $R = \dfrac{20\,\text{W}}{(5.0\,\text{A})^2} = \dfrac{20\,\text{W}}{25\,\text{A}^2} = 0.80\,\Omega$
 **Answer:** $0.80\,\Omega$, two significant figures like the current $5.0\,\text{A}$ read from the graph.
-**Reasonableness:** A check with another point of the curve: at the current $2.5\,\text{A}$ the curve gives $0.80\,\Omega \cdot (2.5\,\text{A})^2 = 5.0\,\text{W}$, which fits between the measurement points $3.1\,\text{W}$ ($2.0\,\text{A}$) and $7.4\,\text{W}$ ($3.0\,\text{A}$). A resistance of less than an ohm is plausible for a few metres of resistance wire.
+**Reasonableness:** A check with another point of the curve: at the current $2.5\,\text{A}$ the curve gives $$
+\begin{aligned}
+&0.80\,\Omega \cdot (2.5\,\text{A})^2 \\
+&= 5.0\,\text{W}
+\end{aligned}
+$$, which fits between the measurement points $3.1\,\text{W}$ ($2.0\,\text{A}$) and $7.4\,\text{W}$ ($3.0\,\text{A}$). A resistance of less than an ohm is plausible for a few metres of resistance wire.
 
 ## fy7-8-L3-01
 **Given:** power of the generator $P = 150\,\text{MW}$ and voltage $20\,\text{kV}$, an ideal transformer raises the voltage to $U = 400\,\text{kV}$, resistance of the conductors $R = 8.0\,\Omega$

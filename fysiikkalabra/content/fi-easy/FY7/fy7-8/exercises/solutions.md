@@ -87,7 +87,12 @@
 **Muunnokset:** Niitä ei tarvita. Teho on watteina ja virta ampeereina, ja $\tfrac{\text{W}}{\text{A}^2} = \tfrac{\text{V}}{\text{A}} = \Omega$.
 **Sijoitus:** $R = \dfrac{20\,\text{W}}{(5{,}0\,\text{A})^2} = \dfrac{20\,\text{W}}{25\,\text{A}^2} = 0{,}80\,\Omega$
 **Vastaus:** $0{,}80\,\Omega$, kaksi merkitsevää numeroa kuten kuvaajalta luettu virta $5{,}0\,\text{A}$.
-**Järkevyys:** Tarkistus toisella käyrän pisteellä: virralla $2{,}5\,\text{A}$ käyrä antaa $0{,}80\,\Omega \cdot (2{,}5\,\text{A})^2 = 5{,}0\,\text{W}$, mikä sopii mittauspisteiden $3{,}1\,\text{W}$ ($2{,}0\,\text{A}$) ja $7{,}4\,\text{W}$ ($3{,}0\,\text{A}$) väliin. Alle ohmin resistanssi on uskottava muutaman metrin vastuslangalle.
+**Järkevyys:** Tarkistus toisella käyrän pisteellä: virralla $2{,}5\,\text{A}$ käyrä antaa $$
+\begin{aligned}
+&0{,}80\,\Omega \cdot (2{,}5\,\text{A})^2 \\
+&= 5{,}0\,\text{W}
+\end{aligned}
+$$, mikä sopii mittauspisteiden $3{,}1\,\text{W}$ ($2{,}0\,\text{A}$) ja $7{,}4\,\text{W}$ ($3{,}0\,\text{A}$) väliin. Alle ohmin resistanssi on uskottava muutaman metrin vastuslangalle.
 
 ## fy7-8-L3-01
 **Annettu:** generaattorin teho $P = 150\,\text{MW}$ ja jännite $20\,\text{kV}$, ideaalinen muuntaja nostaa jännitteen arvoon $U = 400\,\text{kV}$, johtimien resistanssi $R = 8{,}0\,\Omega$
