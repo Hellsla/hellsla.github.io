@@ -12,6 +12,7 @@ CONTENT-HASH: e70af49046f71fd6
 ## Checked (delta 2026-11-16)
 - Changes: unit spacing `1\,\text{F}`, `1\,\mu\text{F}` and `(C \pm \Delta C)\,\mu\text{F}`. Opened page-1280-3 and page-1280-4 (Teoria): thin spaces render, no raw LaTeX, nothing clipped.
 - Figures untouched by this branch (not judged now); no overflow or clipping seen in the opened captures.
+- Phone (390 px): page-390-5 (Teoria: thin spaces in 1 F, 1 µF, split paragraphs, formulas) renders, no overflow.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

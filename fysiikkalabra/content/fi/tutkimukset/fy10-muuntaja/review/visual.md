@@ -12,6 +12,7 @@ CONTENT-HASH: d58d45b9716a4b7f
 ## Checked (delta 2026-11-16)
 - Changes: Finnish quotes ”määrää”, ”kuvaajasta 1 nähdään …” and `1\,\text{V} \cdot 1\,\text{A} = 1\,\text{W}`. Opened page-1280-4: quotes and the unit chain render correctly.
 - Figures untouched by this branch (not judged now); no overflow or clipping seen in the opened captures.
+- Phone (390 px): page-390-6 (”määrää” quotes, split Induktio/Sähköteho paragraphs, 1 V · 1 A = 1 W): fine, no overflow.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

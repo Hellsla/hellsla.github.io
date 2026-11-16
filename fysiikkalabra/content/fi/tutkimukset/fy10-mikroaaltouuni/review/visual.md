@@ -13,6 +13,7 @@ CONTENT-HASH: 2623602cde9da6c2
 ## Checked (delta 2026-11-16)
 - Changes: thin spaces in Hz, m/s and c; the shortened Suunnittele safety paragraph (now refers to the Turvallisuus list). Opened page-1280-1, -2 (Turvallisuus list), -4 (Hz), -5 (new Turvallisuus paragraph, reads well) and -8.
 - Figures untouched by this branch (not judged now); no overflow or clipping seen in the opened captures.
+- Phone (390 px): page-390-4 (Tutkimustehtävä, new safety sentence in Ennusta area), page-390-8 (c = (c ± Δc) m/s, Hz/m/s spacing): fine, no overflow.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4

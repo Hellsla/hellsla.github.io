@@ -12,6 +12,7 @@ CONTENT-HASH: 7e8a14b874716819
 ## Checked (delta 2026-11-16)
 - Changes: removed sentence ”Kirjaa ennusteesi…” from the start of Teoria. Opened page-1280-3: Teoria opens cleanly, Ennusta ends with the prediction instruction, no repetition.
 - Figures untouched by this branch (not judged now); no overflow or clipping seen in the opened captures.
+- Phone (390 px): page-390-4 and -5 (Teoria opening after the removed sentence): fine.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

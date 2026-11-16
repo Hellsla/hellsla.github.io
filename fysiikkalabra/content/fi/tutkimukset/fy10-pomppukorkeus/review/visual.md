@@ -12,6 +12,7 @@ CONTENT-HASH: d10e2cce31f37468
 ## Checked (delta 2026-11-16)
 - Changes: range `0{,}30\,\text{m}`–`1{,}80\,\text{m}` (en dash, no spaces). Opened page-1280-3 for the surrounding layout; the changed paragraph sits in the guided box above it and the source change is a plain typographic one.
 - Figures untouched by this branch (not judged now); no overflow or clipping seen in the opened captures.
+- Phone (390 px): page-390-6 (guided box with 0,30 m–1,80 m: en dash holds, no bad wrap) and page-390-3: fine.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 5 · accessibility 4
