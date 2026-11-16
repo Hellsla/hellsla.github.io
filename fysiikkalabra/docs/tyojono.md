@@ -28,13 +28,15 @@ tyhjät 28×28 px kaappaukset) tehdään yksin. Voi kulkea rinnakkain kohdan 2 k
 
 ## 5. CI:n toistettavuus (2026-11-13)
 
-Tapa ajaa selaintarkistukset CI:n kontissa (`mcr.microsoft.com/playwright/python:v1.65.0-noble`) paikallisesti, ja
-layout-testien virheilmoitukset nimeämään ylivuotava elementti (`docs/QUALITY.md` aukot 1–2). Jaettuja tiedostoja:
-tehdään yksin ja yhdistetään ennen muita.
-Löydös (2026-11-15, #590): `check_lesson.py` layout-tarkistus (360 px, ratkaisu auki) ei havainnut fy8-1-L2-08:n
-sijoitusketjun ylivuotoa en-versiossa (oikea reuna 372 px vs. laatikko 330 px, yksikkö Hz leikkautui; ulkoasukatselmoija
-löysi sen); lisää `check_layout.py`:hin tarkistus, joka mittaa ratkaisun kaavaketjun ylivuodon avoimessa tilassa
-kaikilla kielillä 360 ja 390 px:llä.
+Varattu: claude/ci-reproducibility
+
+Osa A tehty (PR #640, 2026-11-16): `requirements-ci.txt` kertoo Playwright-version ja `ci_env.py check` pitää CI:n kontin
+samana; `ci_env.py run <komento>` ajaa tarkistuksen CI:n kontissa paikallisesti, ja `check_lesson.py` ajaa layoutin siellä
+(360, 390, 768, 1280 px) itse, kun Docker on käytettävissä; layout-virhe nimeää tehtävän, ratkaisun vaiheen ja elementin;
+`ci_scope.py` ei laske sivua muuttuneeksi, jos sen ainoa ero on `?v=`-tunnisteet.
+Jäljellä osa B (koordinaattorin luvalla, kun FY4:n, FY5:n ja FY7:n kaava-PR:t ovat mainissa): `docs/clipped-formulas.tsv`
+ja `docs/physics-phrases-known.tsv` kurssikohtaisiksi tiedostoiksi (esim. `docs/clipped-formulas/FY4.tsv`), jotta kaksi
+kurssi-PR:ää ei koske samaan tiedostoon. Jaettu muutos: tehdään yksin.
 
 ## 5b. Leikkautuva kaava: tarkistus ja rivijako-carry: tehty (PR #594, opettaja 2026-11-15)
 
@@ -268,6 +270,15 @@ käsitekorttien alleviivaukset säilyvät. Lämpöenergian kohdan selitys lämm�
 se jää taulukon alle omaksi kappaleekseen. Kaikki kielet (fi, en, fi-easy). Sisältömuutos: katselmoinnit
 `reviews.py scope fy2-1` mukaan (opettaja pyysi muutosta itse). Pieni oma PR.
 
+## 8i-b. Taulukon solujen yhdyssanat tavutetaan liitoksesta (koordinaattori 2026-11-16)
+
+Varattu: claude/tablefit-yhdyssanat
+
+`scripts/tablefit.py` tavutti taulukon solut pelkällä tavusäännöllä (`hyphenate_fi`), joka katkaisee vokaalialkuisen
+yhdyssanan väärin: "Lämpöe-nergia", "Ydine-nergia" (8i:n energialajitaulukko, site/:ssa jo valmiiksi monella sivulla).
+Korjaus: `_cell()` käyttää korttiotsikoiden `hyphenate_card`-funktiota (liitokset energia, aalto, aika, …), testi
+`test_chapter_nav.py`:ssä. Jaettu muutos: ajetaan yksin, kohdan 5 (#640) jälkeen ja ennen 8i:tä (#642).
+
 ## 8j. Pohdinnan kertaustehtävä liittyy pohdinnan ilmiöön (opettaja 2026-11-13)
 
 fy4-1:n Pohdinnassa ilmiö on pyöräilijän matka kauppaan ja takaisin (matkamittari 4,0 km, siirtymä 0 m) ja kysymys
@@ -302,12 +313,6 @@ Opettaja 16.11: "joo poistetaan". Kohta 8l (#607) poisti vain sulkeissa olevan m
 `caption-label`-luokka laajennetaan tunnistamaan nämäkin muodot (testit `test_reviews.py`:hin), ja merkintä poistetaan
 kaikista `exercises.json`-otsikoista. Tehdään kohdan 8m jälkeen, kun kohdan 18/19 kurssi-PR:t eivät ole kesken samoissa
 tiedostoissa, tai kurssi kerrallaan niiden mukana, jos luokka on jo mainissa.
-
-## 9b. FY7:n kokeen jälkityöt (PR #586, koordinaattori 2026-11-14)
-
-FY7:n esimerkkikoe on valmis (#586); sen katselmointien Minor-huomioita ei korjattu siinä, ettei katselmoinnit vanhene.
-1. Tehty (#639): pistemerkinnät (`exam.*`, `practice.points`, `js.mc_score`, `js.exam_total`) sitovalla välilyönnillä kaikissa kielissä.
-2. FY7-kokeen Minor-korjaukset (uusi katselmointi tai kevyt kuljetus): k7 c:n Sijoitukseen yksikkö luvulle 50 (`· 50 €/MWh`) ja tulos; k4 c:ssä 2789 (ei 2788) tai 12,374 V ketjussa; k5 b:n keskiarvomurtoluku isompana (`\tfrac` tai oma rivi); k6 d:n "noin yhdeksässä vuodessa" → "noin 9–10 vuodessa"; k2 c:n rivi B²k tiukka 390 px:llä; k7 b nimeää Wienin vakion, harkitse. Pedagogiikan huomio: k3 ja k4 valittaessa ei kuvaaja- tai epävarmuusosaa, harkitse lyhyttä osaa toiseen.
 
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 

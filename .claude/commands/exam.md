@@ -16,7 +16,7 @@ the key `<COURSE>/koe` and the page id `<COURSE>-koe`:
 1. `python scripts/practice.py packet <COURSE>/koe --role developer`, then the developer (Sonnet medium; Opus for a
    demanding course) writes the four files.
 2. `python scripts/practice.py figures <COURSE>/koe`, `python scripts/practice.py check <COURSE>/koe`,
-   `python scripts/build.py <COURSE>-koe`, `python scripts/check_layout.py <COURSE>-koe --width 360` (768, 1280).
+   `python scripts/build.py <COURSE>-koe`, `python scripts/ci_env.py run python scripts/check_layout.py <COURSE>-koe --width 360` (390, 768, 1280; CI's browser image, `scripts/ci_env.py`).
 3. `python scripts/screenshot.py <COURSE>-koe --if-stale`, then the packets `--role science` (Opus), `--role pedagogy`
    and `--role visual` (Sonnet), the reviewers in parallel; at most three rounds of fixes.
 4. Before committing: list the staged files and read the staged diff; confirm no reference exam, extract or paraphrase

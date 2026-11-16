@@ -3,7 +3,8 @@
 The cells of a table wrap their words at every width (site.css). A long Finnish word in a header ("satunnaisvirhe",
 "vaihteluvälin") does not break by itself, because browsers hyphenate Finnish unevenly (Chromium has no Finnish
 dictionary), so the build puts soft hyphens (U+00AD, shown only at a line break) at the syllable boundaries of every
-long word in a table cell of a Finnish page; a heading written as one formula of words ($\\text{...}$) gets its
+long word in a table cell of a Finnish page (and at the joint of a compound whose later part begins with a vowel,
+hyphenate_card: "Läm-pö-ener-gia", never "Lämpöe-nergia", work queue 8i-b); a heading written as one formula of words ($\\text{...}$) gets its
 words out of the formula, since a formula never wraps. Other formulas ($...$) and tags are left alone. check_layout.py fails a page
 whose table is wider than its box.
 
@@ -42,7 +43,7 @@ def _cell(text, finnish):
     text = HOIST.sub(_hoist, text)
     if not finnish: return text
     parts = SKIP.split(text)
-    return "".join(p if i % 2 else WORD.sub(lambda m: hyphenate_fi(m.group(0)), p) for i, p in enumerate(parts))
+    return "".join(p if i % 2 else WORD.sub(lambda m: hyphenate_card(m.group(0)), p) for i, p in enumerate(parts))
 
 
 def fit(html, finnish):
