@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1bd412beb5abc8e6
-SCOPE: delta added-exercise from e43942314a516939 base 8f23aa7ae3bd
+CONTENT-HASH: eb2ecaef729f003c
 
 ## Blocking
-
-## Outside this change (queue item 5d)
-- [Major] docs/clipped-formulas.tsv lists 21 formulas of fi-easy/fy7-13 that are clipped at 360/390 px with solutions open. These are old, outside this change, and belong to queue item 5d; not a blocker for this delta.
+- none
 
 ## Polish
-- [Minor] The Mallivastaus states the reason for each wrong option; the instructions are clear. Observation, assumption and conclusion are kept apart.
+- none
 
 ## Checked
-- Delta: the new choice task on measurement uncertainty (L2-1280-9: options, feedback box and Mallivastaus; Δx : x with a colon, LaTeX units) and its solution lines. 13-L1 answer line read in source.
+- Delta: Järkevyys of the violet-light check (x = 1,00 m · tan(sin⁻¹ …) = 10,1 cm.) rendered at 390 and 1280 px: aligned rows, the nested fraction inside tan readable, nothing clipped.
+- Reworded unsure-ness text (epävarmuus) and the 2-sig-fig answer read fluently.
+- Hash identical at start and end.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
