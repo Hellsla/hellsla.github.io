@@ -530,11 +530,15 @@ Matkustajakone lentää vaakasuoraan suoraan eteenpäin tasaisella nopeudella $8
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Yhden moottorin voima kaasuihin $F_1 = 48\,\text{kN}$ taaksepäin, moottoreita on kaksi, ja nopeus $850\,\text{km/h}$ pysyy samana suuruudeltaan ja suunnaltaan. Kysytään ilmanvastusta $F_\text{v}$.
+**Tunnetut ja kysytty.** Yhden moottorin voima kaasuihin $F_1 = 48\,\text{kN}$ taaksepäin, moottoreita on kaksi, ja nopeus $850\,\text{km/h}$ pysyy samana suuruudeltaan ja suunnaltaan.
+
+Kysytään ilmanvastusta $F_\text{v}$.
 
 <!-- vaihe -->
 
-**Periaate.** Newtonin kolmannen lain mukaan kaasut työntävät kutakin moottoria eteenpäin yhtä suurella voimalla $F_1$; se on moottorin työntövoima. Kone lentää suoraan tasaisella nopeudella, joten Newtonin ensimmäisen lain mukaan sen kokonaisvoima on nolla. Vaakasuunnassa koneeseen vaikuttavat vain kaksi työntövoimaa $\overline{F}_1$ ja $\overline{F}_2$ eteenpäin (molemmat $48\,\text{kN}$) ja ilmanvastus $\overline{F}_\text{v}$ taaksepäin, joten ne kumoavat toisensa. Pystysuunnassa siipien nostovoima ja paino kumoavat toisensa. Voimakuviossa kone on suorakulmio ja siihen vaikuttavat voimat ovat nuolia:
+**Periaate.** Newtonin kolmannen lain mukaan kaasut työntävät kutakin moottoria eteenpäin yhtä suurella voimalla $F_1$; se on moottorin työntövoima. Kone lentää suoraan tasaisella nopeudella, joten Newtonin ensimmäisen lain mukaan sen kokonaisvoima on nolla.
+
+Vaakasuunnassa koneeseen vaikuttavat vain kaksi työntövoimaa $\overline{F}_1$ ja $\overline{F}_2$ eteenpäin (molemmat $48\,\text{kN}$) ja ilmanvastus $\overline{F}_\text{v}$ taaksepäin, joten ne kumoavat toisensa. Pystysuunnassa siipien nostovoima ja paino kumoavat toisensa. Voimakuviossa kone on suorakulmio ja siihen vaikuttavat voimat ovat nuolia:
 
 <svg data-fig="kone" viewBox="0 0 600 330" role="img" aria-label="Kaksi kuvaa matkustajakoneesta, joka lentää vaakasuoraan tasaisella nopeudella. Vasemmalla tilannekuva: kone ja sen yllä ohut sininen nuoli v oikealle. Oikealla koneen voimakuvio, kone suorakulmiona. Paino G keskipisteestä alas ja siipien nostovoima F nosto ylös, yhtä pitkinä. Kahden moottorin työntövoimat F 1 ja F 2 lähtevät rungon etureunasta eteenpäin ja ovat yhtä pitkät. Ilmanvastus F v on työntö taaksepäin: nuoli tulee edestä, sen kärki on etureunassa, johon ilma painaa, ja se on yhtä pitkä kuin työntövoimat yhteensä. Vaakasuorat voimat kumoavat toisensa, ja pystysuorat voimat kumoavat toisensa." style="max-width:100%;font-size:24px">
   <defs><linearGradient id="fy43k-body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
@@ -603,7 +607,9 @@ F_\text{v} &= 2F_1 \\
 
 <!-- vaihe -->
 
-**Järkevyys.** Jos ilmanvastus olisi työntövoimia pienempi, kokonaisvoima osoittaisi eteenpäin ja kone kiihtyisi; jos suurempi, kone hidastuisi. Tasainen nopeus on mahdollinen vain, kun ilmanvastus on yhtä suuri kuin työntövoimien summa $2\cdot 48\,\text{kN}$. Sama päättely pätee kaikilla tasaisilla nopeuksilla: työntövoiman ja ilmanvastuksen summa on aina nolla. Voimien suuruudet voivat silti olla eri nopeuksilla erilaiset, sillä ilmanvastus kasvaa nopeuden kasvaessa, joten suuremmalla tasaisella nopeudella tarvitaan myös suurempi työntövoima.
+**Järkevyys.** Jos ilmanvastus olisi työntövoimia pienempi, kokonaisvoima osoittaisi eteenpäin ja kone kiihtyisi; jos suurempi, kone hidastuisi. Tasainen nopeus on mahdollinen vain, kun ilmanvastus on yhtä suuri kuin työntövoimien summa $2\cdot 48\,\text{kN}$. Sama päättely pätee kaikilla tasaisilla nopeuksilla: työntövoiman ja ilmanvastuksen summa on aina nolla.
+
+Voimien suuruudet voivat silti olla eri nopeuksilla erilaiset, sillä ilmanvastus kasvaa nopeuden kasvaessa, joten suuremmalla tasaisella nopeudella tarvitaan myös suurempi työntövoima.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että liikkuvaan kappaleeseen täytyy vaikuttaa voima liikkeen suuntaan ja että liike loppuu, kun tämä voima "kuluu loppuun". Ensimmäisen lain mukaan näin ei ole: liukuvaan curlingkiveen ei vaikuta mikään eteenpäin, ja se hidastuu vain kitkan takia. Toinen yleinen virhe on luulla, että voima ja vastavoima kumoavat toisensa. Ne vaikuttavat eri kappaleisiin: hevonen vetää kärryä ja kärry hevosta, mutta kärryn liikkeen ratkaisevat vain kärryyn vaikuttavat voimat. Kolmas virhe on pitää pöydällä lepäävän kirjan painoa ja pöydän tukivoimaa voimana ja vastavoimana. Ne ovat yhtä suuret ensimmäisen lain takia. Tukivoiman vastavoima on kirjan voima pöytään ja painon vastavoima kirjan vetovoima Maahan.

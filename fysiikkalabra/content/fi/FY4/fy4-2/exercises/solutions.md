@@ -166,7 +166,9 @@
 ## fy4-2-L2-07
 **Kysytty:** kummalla mittaustavalla voidaan parhaiten tutkia, onko kärryn kiihtyvyys koko matkan ajan vakio.
 **Periaate:** Kiihtyvyys on vakio, jos $(t,v)$-kuvaaja on suora. Sen toteaminen vaatii monta mittauspistettä eri hetkiltä, jotta nähdään, pysyykö kulmakerroin samana. Mittauksen tarkkuus on toinen asia kuin mittauspisteiden määrä: tarkkakaan yksittäinen aika ei kerro, miten nopeus muuttuu matkan varrella.
-**Mallivastaus:** Parempi vastaus saadaan videoanalyysillä. Sen jokaisesta kuvasta saadaan kärryn paikka ja siitä nopeus, joten $(t,v)$-kuvaajaan tulee monta pistettä, ja nähdään, onko kuvaaja suora. Kaksi valoporttia antaa vain yhden keskimääräisen kiihtyvyyden, vaikka aika mitataan tarkasti, joten niillä ei voi päätellä muuttuuko kiihtyvyys. Kiihtyvyyttä ei voi myöskään olettaa vakioksi, koska juuri se tutkitaan. Valoportit sopivat paremmin tilanteeseen, jossa vakiokiihtyvyys jo tiedetään ja halutaan tarkka yksittäinen arvo.
+**Mallivastaus:** Parempi vastaus saadaan videoanalyysillä. Sen jokaisesta kuvasta saadaan kärryn paikka ja siitä nopeus, joten $(t,v)$-kuvaajaan tulee monta pistettä, ja nähdään, onko kuvaaja suora. Kaksi valoporttia antaa vain yhden keskimääräisen kiihtyvyyden, vaikka aika mitataan tarkasti, joten niillä ei voi päätellä muuttuuko kiihtyvyys.
+
+Kiihtyvyyttä ei voi myöskään olettaa vakioksi, koska juuri se tutkitaan. Valoportit sopivat paremmin tilanteeseen, jossa vakiokiihtyvyys jo tiedetään ja halutaan tarkka yksittäinen arvo.
 
 ## fy4-2-L3-04
 **Annettu:** auto lähtee levosta; nopeus $v$ hetkillä $t = 0$, $2{,}0$, $4{,}0$, $6{,}0$ ja $8{,}0\,\text{s}$ on $0$, $36$, $62$, $83$ ja $100\,\text{km/h}$
@@ -192,7 +194,9 @@
 
 ## fy4-2-L2-08
 **Kysytty:** miten pyöräilijän jarrutusmatka $s$ muuttuu, kun alkunopeus on sama $8{,}0\,\text{m/s}$ mutta kiihtyvyyden suuruus pienenee arvosta $4{,}0\,\text{m/s}^2$ arvoon $2{,}0\,\text{m/s}^2$.
-**Periaate:** Jarrutus on tasaista, joten kiihtyvyys on vakio ja nopeus pienenee joka sekunti saman verran, $v = v_0 + a\,t$. Valitaan liikkeen suunta positiiviseksi, jolloin jarrutuksen kiihtyvyys on negatiivinen. Jarrutusmatka on $(t, v)$-kuvaajan ja aika-akselin väliin jäävä pinta-ala, koska nopeus on koko ajan positiivinen: kolmio, jonka korkeus on alkunopeus $v_0$ ja leveys jarrutusaika $t$, eli $s = \tfrac{1}{2}\,v_0\,t$. Matka riippuu siis sekä alkunopeudesta että siitä, kuinka kauan pysähtyminen kestää.
+**Periaate:** Jarrutus on tasaista, joten kiihtyvyys on vakio ja nopeus pienenee joka sekunti saman verran, $v = v_0 + a\,t$. Valitaan liikkeen suunta positiiviseksi, jolloin jarrutuksen kiihtyvyys on negatiivinen.
+
+Jarrutusmatka on $(t, v)$-kuvaajan ja aika-akselin väliin jäävä pinta-ala, koska nopeus on koko ajan positiivinen: kolmio, jonka korkeus on alkunopeus $v_0$ ja leveys jarrutusaika $t$, eli $s = \tfrac{1}{2}\,v_0\,t$. Matka riippuu siis sekä alkunopeudesta että siitä, kuinka kauan pysähtyminen kestää.
 **Mallivastaus:** Jarrutusmatka kasvaa kaksinkertaiseksi. Pysähtyessä $v = 0$, joten jarrutusaika on $t = \dfrac{0 - v_0}{a}$.
 
 Kuiva tie: $t_1 = \dfrac{0 - 8{,}0\,\text{m/s}}{-4{,}0\,\text{m/s}^2}$, eli $t_1 = 2{,}0\,\text{s}$

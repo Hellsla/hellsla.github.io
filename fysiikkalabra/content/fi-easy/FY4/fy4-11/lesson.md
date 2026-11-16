@@ -410,7 +410,9 @@ Auto ajaa kuivalla asfaltilla nopeudella $80\,\text{km/h}$. Kuljettaja vilkaisee
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** $v_0 = 80\,\text{km/h}$, $t_\text{r} = 2{,}0\,\text{s}$ ja $a = 9{,}0\,\text{m/s}^2$. Kysytään pysähtymismatkaa $s_\text{p}$.
+**Tunnetut ja kysytty.** $v_0 = 80\,\text{km/h}$, $t_\text{r} = 2{,}0\,\text{s}$ ja $a = 9{,}0\,\text{m/s}^2$.
+
+Kysytään pysähtymismatkaa $s_\text{p}$.
 
 <!-- vaihe -->
 

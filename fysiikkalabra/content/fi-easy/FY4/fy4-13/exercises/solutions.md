@@ -249,7 +249,9 @@ a alas
 ## fy4-13-L1-06
 **Kysytty:** miten langan jännitysvoima $T$ ja punnuksen paino $G_2$ vertautuvat toisiinsa, kun punnus laskee ja kiihtyy.
 **Periaate:** Newtonin toisen lain mukaan kokonaisvoima osoittaa kiihtyvyyden suuntaan. Punnus kiihtyy alas, joten sen kokonaisvoima osoittaa alas. Punnukseen vaikuttavat vain paino alas ja langan jännitysvoima ylös.
-**Mallivastaus:** Punnukselle pätee $G_2 - T = m_2 a$. Punnus kiihtyy alas, joten $a > 0$ ja $G_2 - T > 0$. Jännitysvoima on siis pienempi kuin punnuksen paino. Lanka ei kannattele koko painoa, koska punnus kiihtyy alas eikä ole levossa. Lanka ei voi vetää myöskään painoa kovemmin. Silloin kokonaisvoima osoittaisi ylös, eikä punnus laskisi. Lanka vetää kärryä ja punnusta samalla voimalla $T$. Se ei jaa voimaansa puoliksi. Voimien erotus on aina $m_2 a$.
+**Mallivastaus:** Punnukselle pätee $G_2 - T = m_2 a$. Punnus kiihtyy alas, joten $a > 0$ ja $G_2 - T > 0$. Jännitysvoima on siis pienempi kuin punnuksen paino. Lanka ei kannattele koko painoa, koska punnus kiihtyy alas eikä ole levossa. Lanka ei voi vetää myöskään painoa kovemmin. Silloin kokonaisvoima osoittaisi ylös, eikä punnus laskisi.
+
+Lanka vetää kärryä ja punnusta samalla voimalla $T$. Se ei jaa voimaansa puoliksi. Voimien erotus on aina $m_2 a$.
 
 ## fy4-13-L1-07
 **Annettu:** $m_1 = 0{,}30\,\text{kg}$ ja $m_2 = 0{,}70\,\text{kg}$ langan päissä ja $g = 9{,}81\,\text{m/s}^2$. Lanka on kevyt ja venymätön. Väkipyörä on kevyt ja kitkaton. Ilmanvastus jätetään huomiotta.
@@ -337,7 +339,9 @@ a alas
 **Kysytty:** a) junan kiihtyvyys $a$; b) vaunujen 1 ja 2 välisen kytkimen voima $K_{12}$ yksikössä $\text{kN}$; c) kytkimen voima, kun vaunut ovat järjestyksessä $12\,\text{t}$, $18\,\text{t}$, $24\,\text{t}$, ja kestääkö kytkin
 **Periaate:** Vaunut on kytketty toisiinsa, joten ne liikkuvat yhdessä samalla kiihtyvyydellä $a$. Kirjoita kullekin vaunulle oma liikeyhtälö. Vaunujen 1 ja 2 välinen kytkin vetää vaunua 2 eteenpäin. Sen takana olevat vaunut 2 ja 3 vastustavat tätä. Siksi kytkimen voima kiihdyttää kaikkia vaunuja, jotka ovat sen takana. Kolmannen lain mukaan vaunu 2 vetää vaunua 1 taaksepäin yhtä suurella voimalla.
 **Kuvaajan lukeminen:** Nopeus kasvaa tasaisesti noin $2{,}5\,\text{m/s}$ jokaisella viiden sekunnin välillä ($2{,}46$; $2{,}57$; $2{,}45$; $2{,}54\,\text{m/s}$). Siksi $(t, v)$-kuvaaja on lähes suora ja kiihtyvyys on vakio. Kulmakerroin päätepisteistä on $a = \dfrac{10{,}02\,\text{m/s} - 0}{20{,}0\,\text{s} - 0} = 0{,}50\,\text{m/s}^2$.
-**Voimakuvio:** Veturin voima on merkitty $\overline{F}$. Piirrä vaunu 3 suorakulmioksi. Positiivinen suunta on junan liikkeen suuntaan. Vaakasuunnassa vaikuttaa vain kytkimen voima $\overline{K}_{23}$ eteenpäin. Vaunu 2: $\overline{K}_{12}$ eteenpäin ja $\overline{K}_{23}$ taaksepäin. Vaunu 1: veturin voima eteenpäin ja $\overline{K}_{12}$ taaksepäin. Jokaisessa vaunussa paino ja tukivoima kumoavat toisensa (kuvassa pystynuolet on piirretty lyhyinä). Nuolet $\overline{K}_{12}$ ovat yhtä pitkät vaunuissa 1 ja 2. Nuolet $\overline{K}_{23}$ ovat yhtä pitkät vaunuissa 2 ja 3 (kolmas laki). Nuoli $\overline{K}_{12}$ on pidempi kuin $\overline{K}_{23}$.
+**Voimakuvio:** Veturin voima on merkitty $\overline{F}$. Piirrä vaunu 3 suorakulmioksi. Positiivinen suunta on junan liikkeen suuntaan. Vaakasuunnassa vaikuttaa vain kytkimen voima $\overline{K}_{23}$ eteenpäin. Vaunu 2: $\overline{K}_{12}$ eteenpäin ja $\overline{K}_{23}$ taaksepäin. Vaunu 1: veturin voima eteenpäin ja $\overline{K}_{12}$ taaksepäin.
+
+Jokaisessa vaunussa paino ja tukivoima kumoavat toisensa (kuvassa pystynuolet on piirretty lyhyinä). Nuolet $\overline{K}_{12}$ ovat yhtä pitkät vaunuissa 1 ja 2. Nuolet $\overline{K}_{23}$ ovat yhtä pitkät vaunuissa 2 ja 3 (kolmas laki). Nuoli $\overline{K}_{12}$ on pidempi kuin $\overline{K}_{23}$.
 ```voimakuvio
 pinta 0
 G_1 30

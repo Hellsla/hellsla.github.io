@@ -99,7 +99,11 @@ a oikea
 ## fy4-13-L2-01
 **Given:** upper crate $m_1 = 50\,\text{kg}$, lower crate $m_2 = 30\,\text{kg}$, upward acceleration $a = 1.2\,\text{m/s}^2$, $g = 9.81\,\text{m/s}^2$; the ropes are light and inextensible, air resistance is neglected
 **Find:** the tension $T_1$ in the crane's rope in $\text{N}$
-**Principle:** The crates are two bodies, and each gets its own equation of motion. The lower crate hangs from the upper one, so they have the same acceleration $a$. The force of a light rope is the same at both ends of the rope, so the lower rope pulls the upper crate down with the same force $T_2$ with which it pulls the lower crate up.
+**Principle:** The crates are two bodies, and each gets its own equation of motion.
+
+The lower crate hangs from the upper one, so they have the same acceleration $a$.
+
+The force of a light rope is the same at both ends of the rope, so the lower rope pulls the upper crate down with the same force $T_2$ with which it pulls the lower crate up.
 **Free-body diagram:** The upper crate as a rectangle, positive direction up: the crane rope's $\overline{T}_1$ up from the top surface, weight $\overline{G}_1$ down from the centre and the lower rope's $\overline{T}_2$ down from the bottom surface. The lower crate as a rectangle: $\overline{T}_2$ up from the top surface and weight $\overline{G}_2$ down. The arrow $\overline{T}_1$ is the longest.
 ```voimakuvio
 T_1 880,8 ylös
@@ -249,7 +253,13 @@ a alas
 ## fy4-13-L1-06
 **Find:** how the tension $T$ in the string and the weight $G_2$ of the hanging mass are related when the mass descends with an acceleration.
 **Principle:** By Newton's second law the net force on a body points in the direction of its acceleration. The hanging mass accelerates downward, so its net force points down. Only the weight, down, and the tension in the string, up, act on the hanging mass.
-**Model answer:** For the hanging mass, $G_2 - T = m_2 a$, and because $a > 0$ downward, $G_2 - T > 0$. So the tension is smaller than the weight of the hanging mass. The string does not support the whole weight, because the mass accelerates downward and is not at rest. The string cannot pull harder than the weight either, because then the net force on the hanging mass would point up and the mass would not descend. The string pulls the cart and the hanging mass with the same force $T$, so it does not share its force in halves: the difference from the weight is always $m_2 a$.
+**Model answer:** For the hanging mass, $G_2 - T = m_2 a$, and because $a > 0$ downward, $G_2 - T > 0$. So the tension is smaller than the weight of the hanging mass.
+
+The string does not support the whole weight, because the mass accelerates downward and is not at rest.
+
+The string cannot pull harder than the weight either, because then the net force on the hanging mass would point up and the mass would not descend.
+
+The string pulls the cart and the hanging mass with the same force $T$, so it does not share its force in halves: the difference from the weight is always $m_2 a$.
 
 ## fy4-13-L1-07
 **Given:** $m_1 = 0.30\,\text{kg}$ and $m_2 = 0.70\,\text{kg}$ at the ends of the string, $g = 9.81\,\text{m/s}^2$; the string is light and inextensible, the pulley is light and frictionless, air resistance is neglected
@@ -274,7 +284,13 @@ a alas
 ## fy4-13-L1-08
 **Find:** which forces act on the cart in the direction of the table when the hanging mass descends on the string.
 **Principle:** The free-body diagram of a body includes only the forces that act on that very body. Every force arises from an interaction: in the direction of the table only the string touches the cart. The weight of the cart and the normal force from the table are vertical.
-**Model answer:** The weight of the hanging mass is the force of the Earth on the hanging mass, and it belongs in the free-body diagram of the hanging mass. The string transmits the effect of the hanging mass to the cart as the tension $T$, and that is the only force on the cart along the table. The equation of motion of the cart along the table is therefore $T = m_1 a$. The cart moves forward, but motion is not a force, and kinetic energy is not drawn in a free-body diagram. Because the hanging mass accelerates downward, the tension is smaller than the weight of the hanging mass: $T < m_2 g$.
+**Model answer:** The weight of the hanging mass is the force of the Earth on the hanging mass, and it belongs in the free-body diagram of the hanging mass.
+
+The string transmits the effect of the hanging mass to the cart as the tension $T$, and that is the only force on the cart along the table. The equation of motion of the cart along the table is therefore $T = m_1 a$.
+
+The cart moves forward, but motion is not a force, and kinetic energy is not drawn in a free-body diagram.
+
+Because the hanging mass accelerates downward, the tension is smaller than the weight of the hanging mass: $T < m_2 g$.
 
 ## fy4-13-L2-05
 **Given:** total mass of the masses $M = 0.500\,\text{kg}$; from the table $\Delta m = 50$; $100$; $150$; $200$ and $250\,\text{g}$ and $a = 0.96$; $2.02$; $2.88$; $3.97$ and $4.84\,\text{m/s}^2$ (example data)
@@ -335,9 +351,19 @@ a alas
 ## fy4-13-L3-04
 **Given:** masses of the cars $m_1 = 24\,\text{t}$, $m_2 = 18\,\text{t}$ and $m_3 = 12\,\text{t}$; from the table the speed $v = 0$ at $t = 0$ and $v = 10.02\,\text{m/s}$ at $t = 20.0\,\text{s}$ (example data); greatest permitted force of the coupling $20\,\text{kN}$; resistive forces are neglected
 **Find:** a) the acceleration $a$ of the train; b) the force $K_{12}$ of the coupling between cars 1 and 2 in $\text{kN}$; c) the force of the coupling when the cars are in the order $12\,\text{t}$, $18\,\text{t}$, $24\,\text{t}$, and whether the coupling holds
-**Principle:** The cars are coupled, so they move together with the same acceleration $a$. Each car gets its own equation of motion. The coupling between cars 1 and 2 pulls car 2 forward, and the cars 2 and 3 behind it resist it, so the force of the coupling accelerates all the cars behind it. By the third law, car 2 pulls car 1 backward with an equally large force.
+**Principle:** The cars are coupled, so they move together with the same acceleration $a$. Each car gets its own equation of motion.
+
+The coupling between cars 1 and 2 pulls car 2 forward, and the cars 2 and 3 behind it resist it, so the force of the coupling accelerates all the cars behind it.
+
+By the third law, car 2 pulls car 1 backward with an equally large force.
 **Reading the graph:** The speed grows steadily by about $2.5\,\text{m/s}$ in each five-second interval ($2.46$; $2.57$; $2.45$; $2.54\,\text{m/s}$), so the $(t, v)$ graph is almost a straight line and the acceleration is constant. The slope from the end points is $a = \dfrac{10.02\,\text{m/s} - 0}{20.0\,\text{s} - 0} = 0.50\,\text{m/s}^2$.
-**Free-body diagram:** The force of the locomotive is marked $\overline{F}$. Car 3 as a rectangle, positive direction in the direction of motion of the train: horizontally only the coupling force $\overline{K}_{23}$ forward. Car 2: $\overline{K}_{12}$ forward and $\overline{K}_{23}$ backward. Car 1: the force of the locomotive forward and $\overline{K}_{12}$ backward. In each car the weight and the normal force cancel (in the figure the vertical arrows are drawn shortened). The arrows $\overline{K}_{12}$ are equally long in cars 1 and 2, and the arrows $\overline{K}_{23}$ are equally long in cars 2 and 3 (third law), and $\overline{K}_{12}$ is longer than $\overline{K}_{23}$.
+**Free-body diagram:** The force of the locomotive is marked $\overline{F}$.
+
+Car 3 as a rectangle, positive direction in the direction of motion of the train: horizontally only the coupling force $\overline{K}_{23}$ forward. Car 2: $\overline{K}_{12}$ forward and $\overline{K}_{23}$ backward. Car 1: the force of the locomotive forward and $\overline{K}_{12}$ backward.
+
+In each car the weight and the normal force cancel (in the figure the vertical arrows are drawn shortened).
+
+The arrows $\overline{K}_{12}$ are equally long in cars 1 and 2, and the arrows $\overline{K}_{23}$ are equally long in cars 2 and 3 (third law), and $\overline{K}_{12}$ is longer than $\overline{K}_{23}$.
 ```voimakuvio
 pinta 0
 G_1 30
@@ -371,7 +397,11 @@ c) The new order is $12\,\text{t}$, $18\,\text{t}$, $24\,\text{t}$, and behind t
 ## fy4-13-L3-05
 **Given:** distance $s = 0.80\,\text{m}$ from rest; from the table $m_2 = 0.100$; $0.200$; $0.300$ and $0.400\,\text{kg}$ and times $t = 1.29$; $0.96$; $0.80$ and $0.73\,\text{s}$ (example data); $g = 9.81\,\text{m/s}^2$; friction is neglected, the string and the pulley are light
 **Find:** a) the accelerations and a formula for $m_1$; b) the mean of the mass $m_1$ of the cart in $\text{kg}$; c) the motion of the cart after the hanging mass hits the floor and its speed
-**Principle:** The bodies start from rest and the acceleration is constant, so $s = \tfrac{1}{2}at^2$ gives $a$ from the time. Each body gets its own equation of motion, and from them $m_1$ can be solved when $a$ and $m_2$ are known. When the string slackens, no force acts on the cart in the horizontal direction any more, so the first law solves part c).
+**Principle:** The bodies start from rest and the acceleration is constant, so $s = \tfrac{1}{2}at^2$ gives $a$ from the time.
+
+Each body gets its own equation of motion, and from them $m_1$ can be solved when $a$ and $m_2$ are known.
+
+When the string slackens, no force acts on the cart in the horizontal direction any more, so the first law solves part c).
 **Reading the graph:** Four measurements $(m_2, t)$ are read from the table. The time gets shorter as the hanging mass grows, which makes sense, because the acceleration grows.
 **Free-body diagram:** The measurement $m_2 = 0.200\,\text{kg}$, $a = 1.74\,\text{m/s}^2$. The cart as a rectangle, positive direction to the right (along the string): $\overline{G}_1$ and $\overline{N}$ cancel, and in the horizontal direction only $\overline{T}_1$ acts to the right. The hanging mass as a rectangle, positive direction down: $\overline{G}_2$ down and $\overline{T}_2$ up.
 ```voimakuvio
@@ -419,7 +449,13 @@ $$\begin{aligned}
 &\phantom{T} \approx 3.14\,\text{N}
 \end{aligned}$$
 
-So the tension stays the same, about $3.1\,\text{N}$. Reason: in the formula $T = \tfrac{m_1 m_2}{m_1 + m_2}\,g$ the product and the sum of the masses do not change when the masses swap places. The acceleration becomes four times as large, because the weight of the hanging mass, which accelerates the system, becomes four times as large, so $T = m_1 a$ does not decrease although the mass of the trolley becomes a quarter. In both experiments $T$ is smaller than the weight of the hanging mass ($3.9\,\text{N}$ and $15.7\,\text{N}$), as it must be for an accelerating hanging mass.
+So the tension stays the same, about $3.1\,\text{N}$.
+
+Reason: in the formula $T = \tfrac{m_1 m_2}{m_1 + m_2}\,g$ the product and the sum of the masses do not change when the masses swap places.
+
+The acceleration becomes four times as large, because the weight of the hanging mass, which accelerates the system, becomes four times as large, so $T = m_1 a$ does not decrease although the mass of the trolley becomes a quarter.
+
+In both experiments $T$ is smaller than the weight of the hanging mass ($3.9\,\text{N}$ and $15.7\,\text{N}$), as it must be for an accelerating hanging mass.
 
 ## fy4-13-L2-09
 **Given:** mass of the cart $m_1 = 0.80\,\text{kg}$ and the measured points of the graph for a cart starting from rest; friction and air resistance are neglected, the string and the pulley are light

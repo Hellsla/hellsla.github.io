@@ -434,7 +434,9 @@ Hölkkääjän liike on tasaista. Kuvaajasta luetaan, että hän on hetkellä $t
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Kuvaajasta luetaan kaksi pistettä: $(t_1;\, x_1) = (0\,\text{s};\, 20\,\text{m})$ ja $(t_2;\, x_2) = (40\,\text{s};\, 120\,\text{m})$. Kysytään nopeutta $v$ ja paikkaa $x$ hetkellä $t = 60\,\text{s}$.
+**Tunnetut ja kysytty.** Kuvaajasta luetaan kaksi pistettä: $(t_1;\, x_1) = (0\,\text{s};\, 20\,\text{m})$ ja $(t_2;\, x_2) = (40\,\text{s};\, 120\,\text{m})$.
+
+Kysytään nopeutta $v$ ja paikkaa $x$ hetkellä $t = 60\,\text{s}$.
 
 <!-- vaihe -->
 

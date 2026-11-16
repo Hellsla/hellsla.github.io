@@ -122,8 +122,12 @@
 
 ## fy4-2-L1-06
 **Find:** in which direction the acceleration of a car driving east and braking points.
-**Principle:** Acceleration is the change in velocity divided by time, $a = \Delta v : \Delta t$, so it points in the direction of the change in velocity. In braking the speed decreases: the final velocity is smaller than the initial velocity, and the change $\Delta v = v_2 - v_1$ points in the opposite direction to the motion. When the motion is eastwards, the acceleration points west. On a straight line this shows as a sign: if east is positive, the acceleration is negative.
-**Model answer:** The acceleration points west, because the speed decreases and the acceleration points in the direction of the change in velocity. It does not point in the direction of motion, because then the car would speed up. It is not zero, because the velocity changes, and it has no vertical component, because the velocity changes only in the horizontal direction.
+**Principle:** Acceleration is the change in velocity divided by time, $a = \Delta v : \Delta t$, so it points in the direction of the change in velocity. In braking the speed decreases: the final velocity is smaller than the initial velocity, and the change $\Delta v = v_2 - v_1$ points in the opposite direction to the motion.
+
+When the motion is eastwards, the acceleration points west. On a straight line this shows as a sign: if east is positive, the acceleration is negative.
+**Model answer:** The acceleration points west, because the speed decreases and the acceleration points in the direction of the change in velocity. It does not point in the direction of motion, because then the car would speed up.
+
+It is not zero, because the velocity changes, and it has no vertical component, because the velocity changes only in the horizontal direction.
 
 ## fy4-2-L1-07
 **Given:** from the graph the velocity $v_1 = 2.0\,\text{m/s}$ at $t = 0$ and $v_2 = 7.0\,\text{m/s}$ at $t = 5.0\,\text{s}$; the graph is a straight line and the velocity stays positive
@@ -138,8 +142,12 @@
 
 ## fy4-2-L1-08
 **Find:** what is wrong in the student's solution.
-**Principle:** The stone falls with constant acceleration $g$, so the velocity $v = g\,t$ grows uniformly from zero to $19.6\,\text{m/s}$. The distance $v\,t$ holds only if the velocity is the same the whole time. Here the velocity changes the whole time, so the distance is the area of the triangle under the $(t,v)$ graph, that is, the average velocity times the time.
-**Model answer:** The error is that the distance was calculated with the final velocity, although the stone's velocity increases during the whole fall. The calculation of the velocity was correct. The correct distance comes from the average velocity: $\tfrac{1}{2} \cdot 19.6\,\text{m/s} \cdot 2.0\,\text{s} \approx 20\,\text{m}$, which is half of the student's result. The depth of the well is therefore about $20\,\text{m}$. The mass is not needed, because the acceleration of free fall is the same for all bodies when air resistance is small.
+**Principle:** The stone falls with constant acceleration $g$, so the velocity $v = g\,t$ grows uniformly from zero to $19.6\,\text{m/s}$. The distance $v\,t$ holds only if the velocity is the same the whole time.
+
+Here the velocity changes the whole time, so the distance is the area of the triangle under the $(t,v)$ graph, that is, the average velocity times the time.
+**Model answer:** The error is that the distance was calculated with the final velocity, although the stone's velocity increases during the whole fall. The calculation of the velocity was correct. The correct distance comes from the average velocity: $\tfrac{1}{2} \cdot 19.6\,\text{m/s} \cdot 2.0\,\text{s} \approx 20\,\text{m}$, which is half of the student's result.
+
+The depth of the well is therefore about $20\,\text{m}$. The mass is not needed, because the acceleration of free fall is the same for all bodies when air resistance is small.
 
 ## fy4-2-L2-05
 **Given:** the $(t,v)$ points of the table, seven measurements in the range $0 \ldots 3.0\,\text{s}$; the cart accelerates uniformly
@@ -165,34 +173,54 @@
 
 ## fy4-2-L2-07
 **Find:** which way of measuring is best for investigating whether the cart's acceleration is constant during the whole trip.
-**Principle:** The acceleration is constant if the $(t,v)$ graph is a straight line. To establish this we need many data points from different moments, so that we can see whether the slope stays the same. The accuracy of a measurement is a different matter from the number of data points: even an accurate single time does not tell how the velocity changes along the way.
-**Model answer:** A better answer is obtained with video analysis. From each frame we get the cart's position and from it the velocity, so the $(t,v)$ graph gets many points, and we can see whether the graph is a straight line. Two light gates give only one average acceleration, even though the time is measured accurately, so they cannot show whether the acceleration changes. Nor can the acceleration be assumed constant, because that is exactly what is being investigated. Light gates are better suited to a situation where constant acceleration is already known and an accurate single value is wanted.
+**Principle:** The acceleration is constant if the $(t,v)$ graph is a straight line. To establish this we need many data points from different moments, so that we can see whether the slope stays the same.
+
+The accuracy of a measurement is a different matter from the number of data points: even an accurate single time does not tell how the velocity changes along the way.
+**Model answer:** A better answer is obtained with video analysis. From each frame we get the cart's position and from it the velocity, so the $(t,v)$ graph gets many points, and we can see whether the graph is a straight line.
+
+Two light gates give only one average acceleration, even though the time is measured accurately, so they cannot show whether the acceleration changes. Nor can the acceleration be assumed constant, because that is exactly what is being investigated.
+
+Light gates are better suited to a situation where constant acceleration is already known and an accurate single value is wanted.
 
 ## fy4-2-L3-04
 **Given:** the car starts from rest; the velocity $v$ at the moments $t = 0$, $2.0$, $4.0$, $6.0$ and $8.0\,\text{s}$ is $0$, $36$, $62$, $83$ and $100\,\text{km/h}$
 **Find:** a) the acceleration in each two-second interval and whether it is constant; b) the distance $s$ travelled in $8.0\,\text{s}$ in metres
-**Principle:** The car moves in the same direction the whole time. The acceleration in an interval is the change in velocity divided by time, $a = \Delta v : \Delta t$. If the acceleration were constant, the velocity would grow by the same amount in every interval. The distance is the area under the $(t,v)$ graph, and when the velocity is assumed to change uniformly within each interval, the area of each interval is a trapezoid: the average of the velocities times $2.0\,\text{s}$.
+**Principle:** The car moves in the same direction the whole time. The acceleration in an interval is the change in velocity divided by time, $a = \Delta v : \Delta t$. If the acceleration were constant, the velocity would grow by the same amount in every interval.
+
+The distance is the area under the $(t,v)$ graph, and when the velocity is assumed to change uniformly within each interval, the area of each interval is a trapezoid: the average of the velocities times $2.0\,\text{s}$.
 **Reading the graph:** The velocities of the table are read as $(t,v)$ points: $(0;\, 0)$, $(2.0\,\text{s};\, 36\,\text{km/h})$, $(4.0\,\text{s};\, 62\,\text{km/h})$, $(6.0\,\text{s};\, 83\,\text{km/h})$ and $(8.0\,\text{s};\, 100\,\text{km/h})$. The graph rises but curves towards a gentler slope.
 **Formula:** $a = \dfrac{v_2 - v_1}{t_2 - t_1}$ and $\Delta s = \dfrac{v_1 + v_2}{2} \cdot \Delta t$; the total distance is the sum of the distances of the intervals
 **Conversions:** Convert the velocities to $\text{m/s}$: $v = \dfrac{v_{\text{km/h}}}{3.6}$. The values are $0$, $10.0$, $17.2$, $23.1$ and $27.8\,\text{m/s}$.
 **Substitution:** a) The accelerations are ($\text{m/s}^2$) $\dfrac{10.0 - 0}{2.0} = 5.0$, $\dfrac{17.2 - 10.0}{2.0} = 3.6$, $\dfrac{23.1 - 17.2}{2.0} \approx 2.9$ and $\dfrac{27.8 - 23.1}{2.0} \approx 2.4$. b) The distances of the intervals are $10.0\,\text{m}$, $27.2\,\text{m}$, $40.3\,\text{m}$ and $50.8\,\text{m}$. Their sum is $128.3\,\text{m}$.
 **Answer:** a) The acceleration is not constant: it decreases in every interval from $5.0\,\text{m/s}^2$ to $2.4\,\text{m/s}^2$, so the $(t,v)$ graph curves towards a gentler slope and is not a straight line. The change is much larger than the inaccuracy of the reading. b) The distance is about $128\,\text{m}$, three significant figures like the conversion of the velocities. The graph is convex upwards, so the straight chord of each interval runs below the curve and the real distance is slightly greater than the calculated one.
-**Reasonableness:** If the acceleration were on average $27.8\,\text{m/s} : 8.0\,\text{s} \approx 3.5\,\text{m/s}^2$ the whole time, the distance would be $\tfrac{1}{2} \cdot 27.8\,\text{m/s} \cdot 8.0\,\text{s} \approx 111\,\text{m}$. The calculated distance is greater, because the car reaches a high speed early. The result is below the $222\,\text{m}$ that would be travelled at the final velocity $27.8\,\text{m/s}$ the whole time, as it should be, and an acceleration of $5\,\text{m/s}^2$ is about half of $g$, which is a usual initial acceleration for a car.
+**Reasonableness:** If the acceleration were on average $27.8\,\text{m/s} : 8.0\,\text{s} \approx 3.5\,\text{m/s}^2$ the whole time, the distance would be $\tfrac{1}{2} \cdot 27.8\,\text{m/s} \cdot 8.0\,\text{s} \approx 111\,\text{m}$. The calculated distance is greater, because the car reaches a high speed early.
+
+The result is below the $222\,\text{m}$ that would be travelled at the final velocity $27.8\,\text{m/s}$ the whole time, as it should be, and an acceleration of $5\,\text{m/s}^2$ is about half of $g$, which is a usual initial acceleration for a car.
 
 ## fy4-2-L3-05
 **Given:** the $(t,v)$ points of the table in the range $0 \ldots 4.0\,\text{s}$, up the track is the positive direction; friction is small
 **Find:** a) the acceleration $a$, the initial velocity $v_0$ and the justification for constant acceleration; b) the greatest distance $s$ upwards from the starting point in metres; c) the shapes of the $(t,a)$ and $(t,x)$ graphs
-**Principle:** If the $(t,v)$ points are on a line, the acceleration is constant and the motion is uniformly accelerated: $v = v_0 + a\,t$, where the slope is $a$ and the intercept on the vertical axis is $v_0$. The cart turns when $v = 0$. After that it comes back down, because the acceleration still points down the track. The greatest distance is obtained from the equation of position or from the area of the triangle under the $(t,v)$ graph up to the moment $v = 0$.
-**Reading the graph:** The points are approximately on a line, and the velocity decreases by about $0.8\,\text{m/s}$ for every second. The fit gives $v \approx -0.81\,\text{m/s}^2 \cdot t + 2.42\,\text{m/s}$, so $a \approx -0.81\,\text{m/s}^2$ and $v_0 \approx 2.42\,\text{m/s}$. The position of the line among the points shows constant acceleration: the points are on both sides of the line without curvature, and the velocity decreases by about the same amount in every $0.5\,\text{s}$ interval ($0.37 \ldots 0.44\,\text{m/s}$).
+**Principle:** If the $(t,v)$ points are on a line, the acceleration is constant and the motion is uniformly accelerated: $v = v_0 + a\,t$, where the slope is $a$ and the intercept on the vertical axis is $v_0$. The cart turns when $v = 0$.
+
+After that it comes back down, because the acceleration still points down the track. The greatest distance is obtained from the equation of position or from the area of the triangle under the $(t,v)$ graph up to the moment $v = 0$.
+**Reading the graph:** The points are approximately on a line, and the velocity decreases by about $0.8\,\text{m/s}$ for every second. The fit gives $v \approx -0.81\,\text{m/s}^2 \cdot t + 2.42\,\text{m/s}$, so $a \approx -0.81\,\text{m/s}^2$ and $v_0 \approx 2.42\,\text{m/s}$.
+
+The position of the line among the points shows constant acceleration: the points are on both sides of the line without curvature, and the velocity decreases by about the same amount in every $0.5\,\text{s}$ interval ($0.37 \ldots 0.44\,\text{m/s}$).
 **Formula:** The turning moment from the condition $v = v_0 + a\,t_k = 0$ is $t_k = -\dfrac{v_0}{a}$, and the distance is $s = v_0\,t_k + \tfrac{1}{2}\,a\,t_k^2$, which simplifies to $s = \dfrac{v_0^2}{2\,|a|}$
 **Conversions:** All quantities are in SI units. No conversions are needed.
 **Substitution:** $t_k = \dfrac{2.42\,\text{m/s}}{0.81\,\text{m/s}^2} \approx 2.99\,\text{s}$. The distance is $s = \dfrac{(2.42\,\text{m/s})^2}{2 \cdot 0.81\,\text{m/s}^2} = \dfrac{5.86\,\text{m}^2/\text{s}^2}{1.62\,\text{m/s}^2} \approx 3.61\,\text{m}$. c) The graphs are not drawn in the answer box but described in words below.
 **Answer:** The cart gets about $3.6\,\text{m}$ upwards from the starting point, two significant figures, because the acceleration and the initial velocity have been fitted from scattered data. c) The $(t,a)$ graph is a horizontal line at $a \approx -0.81\,\text{m/s}^2$ for the whole interval, because the acceleration is constant and points down the track also at the turning moment. The $(t,x)$ graph is a downward-opening parabola that starts from the origin, rises steeply at first and flattens, has its peak at $x \approx 3.6\,\text{m}$ at $t \approx 3.0\,\text{s}$ (the tangent is horizontal, because $v = 0$) and falls after that; the cart returns to the starting point at $2\,t_k \approx 6.0\,\text{s}$, so in the range $0 \ldots 5.0\,\text{s}$ the graph is still positive.
-**Reasonableness:** The average velocity of the ascent is $2.42\,\text{m/s} : 2 = 1.21\,\text{m/s}$, and $1.21\,\text{m/s} \cdot 2.99\,\text{s} \approx 3.6\,\text{m}$. The last velocity of the data, $-0.83\,\text{m/s}$, is close to the value of the fit, $$\begin{aligned} &2.42 - 0.81 \cdot 4.0 \\ &\approx -0.82\,\text{m/s} \end{aligned}$$, and the data includes the turning moment $t \approx 3.0\,\text{s}$ ($v \approx 0$). The acceleration $0.81\,\text{m/s}^2$ is plausible for a gentle slope: it corresponds to an angle of inclination where $g \sin\alpha \approx 0.81\,\text{m/s}^2$, that is, $\alpha \approx 5\,{}^\circ$.
+**Reasonableness:** The average velocity of the ascent is $2.42\,\text{m/s} : 2 = 1.21\,\text{m/s}$, and $1.21\,\text{m/s} \cdot 2.99\,\text{s} \approx 3.6\,\text{m}$. The last velocity of the data, $-0.83\,\text{m/s}$, is close to the value of the fit, $$\begin{aligned} &2.42 - 0.81 \cdot 4.0 \\ &\approx -0.82\,\text{m/s} \end{aligned}$$, and the data includes the turning moment $t \approx 3.0\,\text{s}$ ($v \approx 0$).
+
+The acceleration $0.81\,\text{m/s}^2$ is plausible for a gentle slope: it corresponds to an angle of inclination where $g \sin\alpha \approx 0.81\,\text{m/s}^2$, that is, $\alpha \approx 5\,{}^\circ$.
 
 ## fy4-2-L2-08
 **Find:** how the braking distance $s$ of the cyclist changes when the initial speed is the same $8.0\,\text{m/s}$ but the magnitude of the acceleration decreases from $4.0\,\text{m/s}^2$ to $2.0\,\text{m/s}^2$.
-**Principle:** The braking is uniform, so the acceleration is constant and the speed decreases by the same amount every second, $v = v_0 + a\,t$. The direction of motion is chosen as positive, so the acceleration in braking is negative. The braking distance is the area between the $(t, v)$ graph and the time axis, because the speed is positive all the time: a triangle whose height is the initial speed $v_0$ and whose width is the braking time $t$, that is $s = \tfrac{1}{2}\,v_0\,t$. So the distance depends both on the initial speed and on how long stopping takes.
+**Principle:** The braking is uniform, so the acceleration is constant and the speed decreases by the same amount every second, $v = v_0 + a\,t$. The direction of motion is chosen as positive, so the acceleration in braking is negative.
+
+The braking distance is the area between the $(t, v)$ graph and the time axis, because the speed is positive all the time: a triangle whose height is the initial speed $v_0$ and whose width is the braking time $t$, that is $s = \tfrac{1}{2}\,v_0\,t$.
+
+So the distance depends both on the initial speed and on how long stopping takes.
 **Model answer:** The braking distance becomes twice as long. When the cyclist stops, $v = 0$, so the braking time is $t = \dfrac{0 - v_0}{a}$.
 
 Dry road: $t_1 = \dfrac{0 - 8.0\,\text{m/s}}{-4.0\,\text{m/s}^2}$, that is $t_1 = 2.0\,\text{s}$
@@ -207,7 +235,9 @@ $s_2 = \tfrac{1}{2} \cdot 8.0\,\text{m/s} \cdot 4.0\,\text{s}$, that is $s_2 = 1
 
 The ratio is $16\,\text{m} : 8.0\,\text{m} = 2.0$. An acceleration half as large doubles the braking time, and when the height $v_0$ of the triangle stays the same, the area also doubles.
 
-The answer "stays the same" forgets that the distance also depends on the braking time. The answer "is halved" reads the dependence the wrong way round: a smaller acceleration makes stopping last longer. The answer "becomes 4 times as long" makes the distance grow with the square of the time but forgets that the acceleration is halved at the same time.
+The answer "stays the same" forgets that the distance also depends on the braking time. The answer "is halved" reads the dependence the wrong way round: a smaller acceleration makes stopping last longer.
+
+The answer "becomes 4 times as long" makes the distance grow with the square of the time but forgets that the acceleration is halved at the same time.
 
 Check with the formula $x - x_0 = v_0\,t + \tfrac{1}{2}\,a\,t^2$, term by term:
 
