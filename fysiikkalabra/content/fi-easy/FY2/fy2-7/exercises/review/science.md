@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 846c5c9ad97c0f28
+CONTENT-HASH: a1cac1a76ad996ac
 
 ## Blocking
 (none)
 
 ## Polish
-- content/fi-easy/FY2/fy2-7/exercises/solutions.md fy2-7-L2-10 a) — suomenkielisen "noin 2,3 % enemmän kuin tuotanto" puuttuu; ei virhe — voi lisätä.
+- content/fi-easy/FY2/fy2-7/exercises/solutions.md fy2-7-L2-10 c) — 12 791 − 10 647 = 2144 MW, while "joten nettovienti oli 2142 MW" reads as derived; 2142 MW is Fingrid's own net-export reading (same 2 MW measurement mismatch as the 52 MW in a), and the Finnish says the same) — optionally "Fingridin mukaan nettovienti oli 2142 MW"; not an error, same in fi/en.
 
 ## Checked
-- L2-09: vastaus 13 MWh (prosentit täysinä), laatikko 12,5 toleranssilla 0,05 hyväksyy 13; sama kuin suomenkielisessä.
-- L2-10: E = 11 603 MWh = 11,6 GWh; ΔP = 262 MW, 52 MW = 0,45 %; tuuli 0,491, ydin 0,229; 11 603 : 1600 = 7,25; klo 1:00 nettovienti 2142 MW. Laskettu itse; answers.py ja exercises.json samat.
-- Taulukon arvot = Fingridin lukemat lähdeaineistossa; merkkisääntö (tuonti −) selitetty.
-- Fysiikka: tasaisen tehon oletus, yhteenliitetty verkko, varastot ja yhden hetken rajoitus oikein.
-- Taulukoiden "(esimerkkiaineisto)" poistettu otsikoista, tehtävätekstit sanovat yhä esimerkkiaineisto.
-- Luvut samat kuin suomenkielisessä (paitsi Polishin puuttuva 2,3 % ja c-kohdan klo 1:00 tuulivoima, joka on d-kohdassa).
+- Delta: Periaate adds P = ΔE : Δt before E = PΔt, as in the Finnish and the lesson's notation; correct under the steady-power assumption that is stated.
+- a) 2,3 %: 262/11 341 = 2,31 %; 262 = 11 603 − 11 341; 52 MW = 0,45 % of 11 603 MW; split "erotus 262 MW − 210 MW on 52 MW" same numbers.
+- c) adds wind 7639 MW at 1:00, same value as d) and the Finnish line 335; 12 791 MW, 10 647 MW, 2142 MW unchanged.
+- Every number in the changed lines equals the Finnish; earlier Polish (missing 2,3 %) resolved.
+- Hash identical at start and end.

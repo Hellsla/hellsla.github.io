@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f4ea27bc3ec64cf5
+CONTENT-HASH: a1cac1a76ad996ac
 
 ## Blocking
 - none
@@ -8,5 +8,5 @@ CONTENT-HASH: f4ea27bc3ec64cf5
 - Earlier Polish remains recorded; the change adds none.
 
 ## Checked
-- Delta: one solution (L2-10 Lisäksi a) now states the difference as a words-plus-formula split; numbers unchanged (262 - 210 = 52 MW, 0,45 %).
-- Pure layout edit for 360 px; the pedagogy of the tasks is unchanged from the earlier PASS.
+- Delta: L2-10 Periaate adds P = ΔE : Δt before E = PΔt (principle explained); a) 262/11603 = 2,3 % correct; c) wind 7639 MW at 01:00 matches d); numbers consistent.
+- Pedagogy of the tasks unchanged from the earlier PASS.
