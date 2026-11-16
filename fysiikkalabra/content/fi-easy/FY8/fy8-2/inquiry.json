@@ -319,7 +319,7 @@
       "hints": [
         "Energia säilyy: absorboidun fotonin energia jakautuu lähetetyn fotonin energiaksi ja väriaineen sisäenergiaksi. Laske ensin kummankin fotonin energia.",
         "Fotonin energia on $E = \\tfrac{hc}{\\lambda}$. Muuta aallonpituudet metreiksi. Muuta tulos elektronivolteiksi sijoittamalla $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$.",
-        "Violetin fotonin energia on $3{,}062\\,\\text{eV}$ ja vihreän $2{,}340\\,\\text{eV}$. Lämmöksi jää niiden erotus."
+        "Violetin fotonin energia on $3{,}062\\,\\text{eV}$ ja vihreän $2{,}340\\,\\text{eV}$. Sisäenergiaksi jää niiden erotus."
       ],
       "mistakes": [
         {
@@ -328,7 +328,7 @@
         },
         {
           "value": 3.06,
-          "feedback": "Tämä on absorboidun violetin fotonin koko energia. Siitä osa lähtee vihreänä fotonina. Lämmöksi jää vain erotus $E_1 - E_2$."
+          "feedback": "Tämä on absorboidun violetin fotonin koko energia. Siitä osa lähtee vihreänä fotonina. Sisäenergiaksi jää vain erotus $E_1 - E_2$."
         },
         {
           "value": 2.34,
