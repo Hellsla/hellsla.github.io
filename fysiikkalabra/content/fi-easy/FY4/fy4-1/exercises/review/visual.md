@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: bf3a4ac783331157
+CONTENT-HASH: c9019484172a60c3
 
 ## Blocking
-None.
 
 ## Polish
-None.
 
 ## Checked
-- v_kv and the added reason read fluently; units LaTeX, decimal comma. Text-only change in solutions.md/exercises.json judged from the diff in the packet; the changed line was not opened in a capture, and the layout was not re-inspected.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.

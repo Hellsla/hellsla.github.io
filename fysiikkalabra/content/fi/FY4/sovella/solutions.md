@@ -256,7 +256,7 @@ komponentit G
 
 **Mallivastaus:** Kiihtyvyys pienenee nopeuden kasvaessa yhä jyrkemmin, joten pisteisiin ei sovi suora vaan kaareva käyrä. Kitkavoima ei riipu nopeudesta, mutta ilmanvastus kasvaa nopeuden mukana, joten kiihtyvyyden pieneneminen johtuu ilmanvastuksesta. Hyvin pienellä nopeudella ilmanvastus on lähes nolla. Kun käyrää jatketaan nopeuteen $v = 0$, saadaan kiihtyvyys ilman ilmanvastusta: $a_0 \approx 0{,}45\,\text{m/s}^2$.
 
-Sijoitetaan $a_0$ c-kohdan yhtälöön: $\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} = \dfrac{(0{,}684 - 0{,}45)\,\text{m/s}^2}{9{,}786\,\text{m/s}^2} \approx 0{,}024$.
+Sijoitetaan $a_0$ c-kohdan yhtälöön: $$\begin{aligned} &\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} \\ &= \dfrac{(0{,}684 - 0{,}45)\,\text{m/s}^2}{9{,}786\,\text{m/s}^2} \\ &\approx 0{,}024 \end{aligned}$$.
 
 c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri, eli virhe on noin viidesosa c-kohdan arvosta, koska siinä ilmanvastuksen hidastava vaikutus laskettiin kitkan ansioksi. Kyse on systemaattisesta virheestä: se muuttaa tulosta aina samaan suuntaan, eikä laskujen toistaminen poista sitä. Virhe on noin kolme kertaa niin suuri kuin kulmakertoimen lukemisen epävarmuus $0{,}002$, mutta pienempi kuin voiteiden ero $0{,}015$. Hitaammassa laskussa B ilmanvastus vaikuttaa vähemmän, joten voide A liukuu paremmin myös korjauksen jälkeen.
 
@@ -323,7 +323,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri, eli virhe on noin vi
 - d-kohdassa todetaan vain, että "raskas menee nopeammin" tai "massa ei vaikuta", vertaamatta kumpaakaan väitettä vastusvoimiin.
 
 ### Hyväksytään myös
-- b- ja c-kohdassa voi käyttää pyöristettyä vastusvoimaa $F_\text{vast} = 29\,\text{N}$: silloin $F_\text{vast}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}$, ja c-kohdan nopeudeksi tulee taas $13{,}6\,\text{m/s} \approx 14\,\text{m/s}$. c-kohdassa hyväksytään $13{,}6\,\text{m/s}$ ja $14\,\text{m/s}$.
+- b- ja c-kohdassa voi käyttää pyöristettyä vastusvoimaa $F_\text{vast} = 29\,\text{N}$: silloin $$\begin{aligned} &F_\text{vast}\,s = 29\,\text{N} \cdot 180\,\text{m} \\ &= 5220\,\text{J} \end{aligned}$$, ja c-kohdan nopeudeksi tulee taas $13{,}6\,\text{m/s} \approx 14\,\text{m/s}$. c-kohdassa hyväksytään $13{,}6\,\text{m/s}$ ja $14\,\text{m/s}$.
 - d-kohdassa johtopäätöksen saa perustella c-kohdan arviolla $14\,\text{m/s}$ tai kitkattoman mallin vertailuarvolla $17{,}2\,\text{m/s}$. Kumpikin perusteltu valinta saa johtopäätöksen pisteen.
 
 ## fy4-s3
@@ -473,7 +473,7 @@ c-kohdan arvo $0{,}030$ on siis noin $0{,}006$ liian suuri, eli virhe on noin vi
   <foreignObject x="574" y="235.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#6b7480">$+$</div></foreignObject>
 </svg>
 
-**Kaava:** $m_\text{B}v_\text{B} + m_\text{A} \cdot 0 = (m_\text{A} + m_\text{B})\,v'$, josta $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
+**Kaava:** $$\begin{aligned} &m_\text{B}v_\text{B} + m_\text{A} \cdot 0 \\ &= (m_\text{A} + m_\text{B})\,v' \end{aligned}$$, josta $v_\text{B} = \dfrac{(m_\text{A} + m_\text{B})\,v'}{m_\text{B}}$
 **Muunnokset:** Vertailua varten $1\,\text{m/s} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** $v_\text{B} = \dfrac{2950\,\text{kg} \cdot 7{,}86\,\text{m/s}}{1700\,\text{kg}} = 13{,}6\,\text{m/s}$ ja $13{,}6 \cdot 3{,}6\,\text{km/h} = 49\,\text{km/h}$
 **Vastaus:** $v_\text{B} \approx 14\,\text{m/s}$ (tarkemmin $13{,}6\,\text{m/s} \approx 49\,\text{km/h}$). Kaksi merkitsevää numeroa, koska liukumamatka $4{,}2\,\text{m}$ ja kitkakerroin $0{,}75$ tunnetaan kahden numeron tarkkuudella. Kertomus ei pidä paikkaansa: mallin mukaan auton B nopeus oli juuri ennen törmäystä noin $49\,\text{km/h}$ eli noin $9\,\text{km/h}$ yli rajoituksen.

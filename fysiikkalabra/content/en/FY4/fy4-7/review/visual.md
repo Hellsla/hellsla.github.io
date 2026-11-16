@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c5b65b949f4ba3eb
+CONTENT-HASH: 6185ec08d4826272
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Photo is a narrow portrait crop (about 8 rem wide at 1280 px) and the loop is cut off at the left edge; legible, acceptable.
+- None.
 
 ## Checked
-batch delta review: opened en/fy4-7 captures at 360 and 1280 px and the photo file; photo loads, sits in the theory column (floated right or unfloated by layout rule at 1280, full column at 360), no clipping or overflow from the photo, alt and caption natural English and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.
+- batch delta review: opened contact sheets en-390-08, en-390-09 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.

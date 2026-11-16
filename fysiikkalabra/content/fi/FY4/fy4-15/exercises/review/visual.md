@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cede2e1f33731164
+CONTENT-HASH: 1d9b0a37df671039
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy4-15-L2-09 Järkevyys — correct and fluent; "keskinopeudesta luettu teho" is slightly compressed but clear. No change required.
+None.
 
 ## Checked
-- open-exercises-L2-1280-11 (L2-09 whole solution, including the rewritten Järkevyys, the power-curve graph's edge, the answer box).
-- Units, decimal comma, aligned rows fine; no clipping at 1280. Caption-marker removal is text only.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-22, fi-390-23, fi-390-24 and fi-1280-17, fi-1280-18; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

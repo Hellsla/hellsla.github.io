@@ -37,7 +37,7 @@
 **Conversions:** The positions are in metres and the times in seconds, so no conversions are needed. The starting position $4.0\,\text{m}$ is not zero, but it cancels in the difference.
 **Substitution:** $v = \dfrac{24\,\text{m} - 4.0\,\text{m}}{10\,\text{s} - 0\,\text{s}} = \dfrac{20\,\text{m}}{10\,\text{s}} = 2.0\,\text{m/s}$
 **Answer:** $2.0\,\text{m/s}$, two significant figures, because the position $24\,\text{m}$ is given to the accuracy of a metre ($4.0\,\text{m}$ to a decimetre), so the difference $20\,\text{m}$ has two figures; the time $10\,\text{s}$ also has two.
-**Reasonableness:** The graph rises, so the velocity is positive. Check: $4.0\,\text{m} + 2.0\,\text{m/s} \cdot 10\,\text{s} = 24\,\text{m}$, which is the other point of the line. If the velocity were calculated as $\dfrac{24\,\text{m}}{10\,\text{s}} = 2.4\,\text{m/s}$, the starting position would be forgotten.
+**Reasonableness:** The graph rises, so the velocity is positive. Check: $$\begin{aligned} &4.0\,\text{m} + 2.0\,\text{m/s} \cdot 10\,\text{s} \\ &= 24\,\text{m} \end{aligned}$$, which is the other point of the line. If the velocity were calculated as $\dfrac{24\,\text{m}}{10\,\text{s}} = 2.4\,\text{m/s}$, the starting position would be forgotten.
 
 ## fy4-1-L1-05
 **Given:** $x_0 = 15\,\text{m}$ at the moment $t = 0\,\text{s}$, $v = 1.5\,\text{m/s}$, the moment asked for $t = 20\,\text{s}$
@@ -77,7 +77,7 @@
 **Conversions:** The positions are in metres and the times in seconds, so no conversions are needed. The differences are always calculated as final minus initial.
 **Substitution:** $v = \dfrac{3.0\,\text{m} - 18\,\text{m}}{7.0\,\text{s} - 2.0\,\text{s}} = \dfrac{-15\,\text{m}}{5.0\,\text{s}} = -3.0\,\text{m/s}$
 **Answer:** $-3.0\,\text{m/s}$, two significant figures, because the difference of the positions $3.0\,\text{m} - 18\,\text{m} = -15\,\text{m}$ is to the accuracy of a metre (two figures) and the change in time $5.0\,\text{s}$ also has two.
-**Reasonableness:** The position decreases, so the velocity must be negative: the cart moves towards the origin. Check backwards: $18\,\text{m} + (-3.0\,\text{m/s}) \cdot 5.0\,\text{s} = 3.0\,\text{m}$, which is the other given position. The speed is $3.0\,\text{m/s}$.
+**Reasonableness:** The position decreases, so the velocity must be negative: the cart moves towards the origin. Check backwards: $$\begin{aligned} &18\,\text{m} \\ &+ (-3.0\,\text{m/s}) \cdot 5.0\,\text{s} \\ &= 3.0\,\text{m} \end{aligned}$$, which is the other given position. The speed is $3.0\,\text{m/s}$.
 
 ## fy4-1-L2-04
 **Given:** $x_0 = -24\,\text{m}$ at the moment $t = 0\,\text{s}$, $v = 1.5\,\text{m/s}$, the position asked for $x = 0$
@@ -142,7 +142,7 @@ $$\begin{aligned} x &= 0 + 1.5\,\text{m/s} \cdot 33.33\ldots\,\text{s} \\ &= 50\
 ## fy4-1-L1-08
 **Find:** what the error is in the student's calculation of the velocity.
 **Principle:** The slope of a line is the change in position divided by the change in time, $v = \dfrac{x_2 - x_1}{t_2 - t_1}$. A change is always a difference, final minus initial, so the position of the second point alone is not valid as the numerator and the time of the second point alone is not valid as the denominator.
-**Model answer:** The student divided the position of the second point, $13\,\text{m}$, by its time, $6.0\,\text{s}$, and did not calculate the differences. Correctly: $v = \dfrac{13\,\text{m} - 5.0\,\text{m}}{6.0\,\text{s} - 2.0\,\text{s}} = \dfrac{8.0\,\text{m}}{4.0\,\text{s}} = 2.0\,\text{m/s}$. The student's method would work only if the line started from the origin at the moment zero, but here the starting point is $(2.0\,\text{s};\, 5.0\,\text{m})$. The sign is not wrong, because the position increases and the velocity is positive. The velocity is not the sum of the positions divided by the sum of the times, because a sum does not describe a change.
+**Model answer:** The student divided the position of the second point, $13\,\text{m}$, by its time, $6.0\,\text{s}$, and did not calculate the differences. Correctly: $$\begin{aligned} &v = \dfrac{13\,\text{m} - 5.0\,\text{m}}{6.0\,\text{s} - 2.0\,\text{s}} \\ &= \dfrac{8.0\,\text{m}}{4.0\,\text{s}} \\ &= 2.0\,\text{m/s} \end{aligned}$$. The student's method would work only if the line started from the origin at the moment zero, but here the starting point is $(2.0\,\text{s};\, 5.0\,\text{m})$. The sign is not wrong, because the position increases and the velocity is positive. The velocity is not the sum of the positions divided by the sum of the times, because a sum does not describe a change.
 **Reading the graph:** Two points are read from the line: $(t_1;\, x_1) = (2.0\,\text{s};\, 5.0\,\text{m})$ and $(t_2;\, x_2) = (6.0\,\text{s};\, 13\,\text{m})$. The rise is $x_2 - x_1$ and the run is $t_2 - t_1$.
 
 ## fy4-1-L2-05
@@ -158,7 +158,7 @@ $$\begin{aligned} v &= \dfrac{3.54\,\text{m} - 0.49\,\text{m}}{5.0\,\text{s} - 0
 
 The initial position is read from the intercept of the line: $x_0 \approx 0.49\,\text{m}$. So the position is $x = 0.49\,\text{m} + 0.61\,\text{m/s} \cdot t$.
 **Answer:** $0.61\,\text{m/s}$, two significant figures, because the positions of the table are given to two decimals and the fitting of the line limits the accuracy. The reading of the line can vary by a few per cent.
-**Reasonableness:** Check with the middle point: $0.49\,\text{m} + 0.61\,\text{m/s} \cdot 2.0\,\text{s} = 1.71\,\text{m}$, while the table has $1.67\,\text{m}$, so the difference is small. The position increases, so the velocity is positive. The velocity $0.61\,\text{m/s}$ suits a small cart.
+**Reasonableness:** Check with the middle point: $$\begin{aligned} &0.49\,\text{m} + 0.61\,\text{m/s} \cdot 2.0\,\text{s} \\ &= 1.71\,\text{m} \end{aligned}$$, while the table has $1.67\,\text{m}$, so the difference is small. The position increases, so the velocity is positive. The velocity $0.61\,\text{m/s}$ suits a small cart.
 
 ## fy4-1-L2-06
 **Given:** the positions in the table for carts A and B at the moments $0.0\,\text{s} \ldots 8.0\,\text{s}$; the motions are uniform
@@ -172,7 +172,7 @@ $$t = \dfrac{x_{0\text{B}} - x_{0\text{A}}}{v_\text{A} - v_\text{B}}$$
 
 $$\begin{aligned} t &= \dfrac{20.0\,\text{m} - 1.0\,\text{m}}{1.5\,\text{m/s} - (-1.8\,\text{m/s})} \\ &= \dfrac{19.0\,\text{m}}{3.3\,\text{m/s}} \\ &= 5.8\,\text{s} \end{aligned}$$
 **Answer:** $5.8\,\text{s}$, two significant figures, because the velocities $1.5\,\text{m/s}$ and $1.8\,\text{m/s}$ have two figures.
-**Reasonableness:** At the moment $5.8\,\text{s}$ cart A is at the position $1.0\,\text{m} + 1.5\,\text{m/s} \cdot 5.8\,\text{s} = 9.7\,\text{m}$ and cart B at the position $20.0\,\text{m} - 1.8\,\text{m/s} \cdot 5.8\,\text{s} = 9.6\,\text{m}$, so the positions are equal to within the rounding accuracy. The moment is inside the measurement interval $0.0\ldots 8.0\,\text{s}$, and in the table the order of the carts changes between the moments $4.0\,\text{s}$ and $6.0\,\text{s}$, as it should.
+**Reasonableness:** At the moment $5.8\,\text{s}$ cart A is at the position $$\begin{aligned} &1.0\,\text{m} + 1.5\,\text{m/s} \cdot 5.8\,\text{s} \\ &= 9.7\,\text{m} \end{aligned}$$ and cart B at the position $$\begin{aligned} &20.0\,\text{m} - 1.8\,\text{m/s} \cdot 5.8\,\text{s} \\ &= 9.6\,\text{m} \end{aligned}$$, so the positions are equal to within the rounding accuracy. The moment is inside the measurement interval $0.0\ldots 8.0\,\text{s}$, and in the table the order of the carts changes between the moments $4.0\,\text{s}$ and $6.0\,\text{s}$, as it should.
 
 ## fy4-1-L2-07
 **Given:** the points $(t;\, x)$ of the robot: $(0\,\text{s};\, 2.0\,\text{m})$, $(4.0\,\text{s};\, 14\,\text{m})$, $(10\,\text{s};\, 14\,\text{m})$, $(16\,\text{s};\, 5.0\,\text{m})$ and $(20\,\text{s};\, 5.0\,\text{m})$; between the points the motion is uniform
@@ -185,7 +185,7 @@ $$\begin{aligned} t &= \dfrac{20.0\,\text{m} - 1.0\,\text{m}}{1.5\,\text{m/s} - 
 
 $$\begin{aligned} v &= \dfrac{5.0\,\text{m} - 14\,\text{m}}{16\,\text{s} - 10\,\text{s}} \\ &= \dfrac{-9.0\,\text{m}}{6.0\,\text{s}} \\ &= -1.5\,\text{m/s} \end{aligned}$$
 **Answer:** $-1.5\,\text{m/s}$ during $10\ldots16\,\text{s}$, two significant figures like the difference of the positions, $9.0\,\text{m}$.
-**Reasonableness:** The position of the robot decreases during $10\ldots16\,\text{s}$, so the velocity must be negative. Checking backwards: $14\,\text{m} + (-1.5\,\text{m/s}) \cdot 6.0\,\text{s} = 5.0\,\text{m}$, which is the position of the table at the moment $16\,\text{s}$. In the horizontal parts the velocity is zero, because the position does not change.
+**Reasonableness:** The position of the robot decreases during $10\ldots16\,\text{s}$, so the velocity must be negative. Checking backwards: $$\begin{aligned} &14\,\text{m} \\ &+ (-1.5\,\text{m/s}) \cdot 6.0\,\text{s} \\ &= 5.0\,\text{m} \end{aligned}$$, which is the position of the table at the moment $16\,\text{s}$. In the horizontal parts the velocity is zero, because the position does not change.
 
 ## fy4-1-L3-04
 **Given:** the positions of the program $x_\text{prog}$ at the moments $0.0\ldots5.0\,\text{s}$ (e.g. $(0.0\,\text{s};\, 0.30\,\text{m})$ and $(5.0\,\text{s};\, 3.52\,\text{m})$); the true length of the measuring tape $2.00\,\text{m}$, the length given by the program $1.60\,\text{m}$; the motion is uniform
@@ -267,4 +267,4 @@ $$\begin{aligned} x_\text{B} &= 20\,\text{m} + (-2.0\,\text{m/s}) \cdot 6.0\,\te
 
 $$\begin{aligned} d &= |16\,\text{m} - 8\,\text{m}| \\ &= 8.0\,\text{m} \end{aligned}$$
 **Answer:** $8.0\,\text{m}$, two significant figures, because the velocities $2.0\,\text{m/s}$ and the time $6.0\,\text{s}$ are read from the graph and have two figures.
-**Reasonableness:** After the crossing the distance grows by the difference of the velocities, $2.0\,\text{m/s} - (-2.0\,\text{m/s}) = 4.0\,\text{m/s}$. $2.0\,\text{s}$ have passed since $4.0\,\text{s}$, so the distance is $4.0\,\text{m/s} \cdot 2.0\,\text{s} = 8\,\text{m}$, the same as above. In the graph the vertical gap between the lines at $6\,\text{s}$ is $8\,\text{m}$.
+**Reasonableness:** After the crossing the distance grows by the difference of the velocities, $$\begin{aligned} &2.0\,\text{m/s} - (-2.0\,\text{m/s}) \\ &= 4.0\,\text{m/s} \end{aligned}$$. $2.0\,\text{s}$ have passed since $4.0\,\text{s}$, so the distance is $4.0\,\text{m/s} \cdot 2.0\,\text{s} = 8\,\text{m}$, the same as above. In the graph the vertical gap between the lines at $6\,\text{s}$ is $8\,\text{m}$.

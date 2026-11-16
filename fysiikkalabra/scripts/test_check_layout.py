@@ -6,7 +6,8 @@ fixture pages from a real built page and the formulas of those findings (fy8-2 L
 opened as a solution at 360 px, and checks that
   - each clipped formula fails, in a calculation row and as an inline formula;
   - the same calculations broken into rows, and short formulas, pass (no false alarm);
-  - the check is not tied to a language (the same formula with a decimal comma and a decimal point).
+  - the check is not tied to a language (the same formula with a decimal comma and a decimal point);
+  - a failure names where the formula is: the task's id, the solution step and the element (work queue 5).
 Usage: python scripts/test_check_layout.py"""
 import pathlib, re, shutil, subprocess, sys, tempfile
 HERE = pathlib.Path(__file__).resolve().parent
@@ -25,7 +26,7 @@ def chain(*rows):
 
 
 def solution(*blocks):
-    return ('<details class="level"><summary>Taso 2</summary><ol><li><div class="numeric"><details class="solution"><summary>Näytä ratkaisu</summary><div class="steps"><div class="sol-step"><p class="sol-label">Substitution</p>'
+    return ('<details class="level"><summary>Taso 2</summary><ol><li id="fx-task-07"><div class="numeric"><details class="solution"><summary>Näytä ratkaisu</summary><div class="steps"><div class="sol-step"><p class="sol-label">Substitution</p>'
             + "".join(blocks) + "</div></div></details></div></li></ol></details>")
 
 
@@ -61,6 +62,7 @@ def main():
                 out = r.stdout + r.stderr
                 if name.startswith("fx-bad"):
                     expect(f"{name} at {width} px: a clipped formula fails the layout check", r.returncode == 1 and "clipped" in out, out)
+                    expect(f"{name} at {width} px: the failure names the task, the step and the element", "at #fx-task-07 > details.solution" in out and 'step "Substitution"' in out, out)
                 else:
                     expect(f"{name} at {width} px: formulas that fit give no alarm", r.returncode == 0 and "clipped" not in out, out)
     finally:

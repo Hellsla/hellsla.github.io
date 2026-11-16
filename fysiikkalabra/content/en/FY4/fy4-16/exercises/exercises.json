@@ -109,7 +109,7 @@
     {
       "id": "fy4-16-L1-08",
       "level": 1,
-      "text": "A student calculates the sliding friction force on a sled on a straight slope. The mass of the sled with the child is $20.0\\,\\text{kg}$, the angle of inclination of the slope is $30.0\\,{}^\\circ$ and the coefficient of sliding friction is $0.200$. The sled slides down the slope.\n\nThe student's solution: “The normal force is equal to the weight, $N = mg$, so the friction force is $F_\\mu = \\mu mg = 0.200 \\cdot 20.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 = 39.2\\,\\text{N}$.”\n\nDraw the free-body diagram of the sled and find the error in the student's solution. How large is the sliding friction force really? The answer box takes the correct sliding friction force.",
+      "text": "A student calculates the sliding friction force on a sled on a straight slope. The mass of the sled with the child is $20.0\\,\\text{kg}$, the angle of inclination of the slope is $30.0\\,{}^\\circ$ and the coefficient of sliding friction is $0.200$. The sled slides down the slope.\n\nThe student's solution: “The normal force is equal to the weight, $N = mg$, so the friction force is $$\\begin{aligned} &F_\\mu = \\mu mg \\\\ &= 0.200 \\cdot 20.0\\,\\text{kg} \\\\ &\\cdot 9.81\\,\\text{m/s}^2 \\\\ &= 39.2\\,\\text{N} \\end{aligned}$$.”\n\nDraw the free-body diagram of the sled and find the error in the student's solution. How large is the sliding friction force really? The answer box takes the correct sliding friction force.",
       "kind": [
         "error"
       ],

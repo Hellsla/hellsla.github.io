@@ -1,20 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 10d591ce090a7302
+CONTENT-HASH: 157ba72a70aa58b3
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] Worked example, step 6 — the line "v_2 = ... ≈ 8.694 m/s" shows four figures before the three-figure result 8.69 m/s in step 7; acceptable as an intermediate value, but a note "(intermediate value)" would be tidier.
-- [Minor] fig "kolme" at 390 px — the labels are small (about 10 px equivalent) in the lift and parachute diagrams; legible, but at the limit. The figure is teacher-approved, so no change is asked.
+- [Minor] inquiry.json (tile fy4-16 #18, 390 px) — the row is broken inside a short bracket (`(9,81 / − 1,20) m/s²`) — break before `\cdot` instead so the bracket stays whole.
+- [Minor] inquiry.json (tile #0) — `10,4 + 49,6 = 16,5 / + 43,5` splits a two-term sum at 390 px — keep `= 16,5 + 43,5` on one row.
+- [Minor] inquiry.json:266 and :282 — the two restored inline formulas (`mgh = … · 125 m`, `|ΔE_mek| = …`) stay over-wide on a phone as on main — keep on the clipped-formula list; break before the operator when redone.
 
 ## Checked
-- Delta: "kinetic" to "sliding friction" wording, the Think about it text, the new closing bullet on the normal force in a lift, the exit ticket, and the changed figure descriptions (alt text).
-- Opened fy4-16-fig-9-390 (three situations: lift, parachute, sledding hill; colours and vectors consistent, nothing clipped).
-- Opened fy4-16-example-390-1 and -2 (worked example stages 1–8, formula rows aligned, no overflow, the example figure begins correctly).
-- Opened fy4-16-stage-herata-390 (new hook text reads fluently, no layout problem).
-- Opened fy4-16-theory-1280-4 (the new summary bullet reads well).
-- The terminology "sliding friction" is now consistent in the places the diff touches.
-
-## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+- delta round 2: opened en-390-02, en-390-03, en-390-04, en-1280-01, en-1280-02, en-1280-03 (all tiles of this part at 390 and 1280 px); no row ends in an operator, every continuation row starts with its operator or relation, chains aligned, nothing new clipped; the restored formula(s) confirmed identical to origin/main (inline, on the known clipped-formula list); hash unchanged from start to end.

@@ -109,7 +109,7 @@
     {
       "id": "fy4-16-L1-08",
       "level": 1,
-      "text": "Oppilas laskee pulkan liukukitkavoiman suoralla rinteellä. Pulkan massa lapsineen on $20{,}0\\,\\text{kg}$, rinteen kaltevuuskulma on $30{,}0\\,{}^\\circ$ ja liukukitkakerroin on $0{,}200$. Pulkka liukuu rinnettä alas.\n\nOppilaan ratkaisu: ”Tukivoima on yhtä suuri kuin paino, $N = mg$. Siksi kitkavoima on $F_\\mu = \\mu mg = 0{,}200 \\cdot 20{,}0\\,\\text{kg} \\cdot 9{,}81\\,\\text{m/s}^2 = 39{,}2\\,\\text{N}$.”\n\nPiirrä pulkan voimakuvio ja etsi oppilaan ratkaisun virhe. Kuinka suuri liukukitkavoima on oikeasti? Vastauslaatikkoon tulee oikea liukukitkavoima.",
+      "text": "Oppilas laskee pulkan liukukitkavoiman suoralla rinteellä. Pulkan massa lapsineen on $20{,}0\\,\\text{kg}$, rinteen kaltevuuskulma on $30{,}0\\,{}^\\circ$ ja liukukitkakerroin on $0{,}200$. Pulkka liukuu rinnettä alas.\n\nOppilaan ratkaisu: ”Tukivoima on yhtä suuri kuin paino, $N = mg$. Siksi kitkavoima on $$\\begin{aligned} &F_\\mu = \\mu mg \\\\ &= 0{,}200 \\cdot 20{,}0\\,\\text{kg} \\\\ &\\cdot 9{,}81\\,\\text{m/s}^2 \\\\ &= 39{,}2\\,\\text{N} \\end{aligned}$$.”\n\nPiirrä pulkan voimakuvio ja etsi oppilaan ratkaisun virhe. Kuinka suuri liukukitkavoima on oikeasti? Vastauslaatikkoon tulee oikea liukukitkavoima.",
       "kind": [
         "error"
       ],

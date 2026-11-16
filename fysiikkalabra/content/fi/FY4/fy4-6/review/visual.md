@@ -1,19 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8b0962f5cbc82d0f
+CONTENT-HASH: 92b3cd17a26857e0
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- [Minor] inquiry.json:479 (tile fy4-6 #8, 390 px) — the restored inline `N = 20 kg · 9,81 m/s² · cos 20° ≈ 184 N` is cut at the right edge on a phone exactly as on main (`≈ 184 N` lost) — keep it on the clipped-formula list; when re-broken, break before the operator (`\\ &\quad\cdot\cos 20^\circ`).
+- [Minor] inquiry.json (tile #0, 390 px) — the mean is broken inside the bracket (`(0,347 + 0,357 / + 0,347 + 0,352) : 4`) with the continuation flush left — indent the continuation row with `\quad`.
 
 ## Checked
-- Delta: liikekitka changed to liukukitka everywhere (lesson, inquiry, meta, sim-spec, malli-veto description); "täysin kehittynyt lepokitka eli lähtökitka" wording in theory and in Käsite task 1.
-- Opened fy4-6-fig-10-390.png (kitka graph): the label now reads "liukukitka", blue, not clipped, axes and units intact.
-- Opened fy4-6-example-390-1.png: worked example and the force diagram, with the changed wording; layout intact, KaTeX fine.
-- Opened fy4-6-theory-1280-3.png: formula paragraph, figure and the Kitkakertoimen määrittäminen paragraph with liukukitkakerroin; reads fluently, no layout damage.
-- Opened fy4-6-open-exercises-1280-10.png: solution with liukukitka and its figure; fine. The malli-veto change is only its description text (Liukukitka), and its drawing is unchanged.
-- Content hash was the same at the start and the end.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- delta round 2: opened fi-390-01, fi-1280-01 (all tiles of this part at 390 and 1280 px); no row ends in an operator, every continuation row starts with its operator or relation, chains aligned, nothing new clipped; the restored formula(s) confirmed identical to origin/main (inline, on the known clipped-formula list); hash unchanged from start to end.

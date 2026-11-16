@@ -29,11 +29,11 @@
         {
           "text": "$0.30\\,\\text{kg}\\cdot\\text{m/s}$",
           "correct": true,
-          "feedback": "Correct. The change in momentum is equal to the impulse: $\\Delta p = F\\,\\Delta t = 3.0\\,\\text{N} \\cdot 0.10\\,\\text{s} = 0.30\\,\\text{N}\\cdot\\text{s}$, and $1\\,\\text{N}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\text{m/s}$ (chapter *Momentum and impulse*)."
+          "feedback": "Correct. The change in momentum is equal to the impulse: $$\\begin{aligned} &\\Delta p = F\\,\\Delta t \\\\ &= 3.0\\,\\text{N} \\cdot 0.10\\,\\text{s} \\\\ &= 0.30\\,\\text{N}\\cdot\\text{s} \\end{aligned}$$, and $1\\,\\text{N}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\text{m/s}$ (chapter *Momentum and impulse*)."
         },
         {
           "text": "$30\\,\\text{kg}\\cdot\\text{m/s}$",
-          "feedback": "You calculated the quotient $F : \\Delta t$. Impulse is the product of force and time: $\\Delta p = F\\,\\Delta t = 3.0\\,\\text{N} \\cdot 0.10\\,\\text{s} = 0.30\\,\\text{kg}\\cdot\\text{m/s}$."
+          "feedback": "You calculated the quotient $F : \\Delta t$. Impulse is the product of force and time: $$\\begin{aligned} &\\Delta p = F\\,\\Delta t \\\\ &= 3.0\\,\\text{N} \\cdot 0.10\\,\\text{s} \\\\ &= 0.30\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$."
         },
         {
           "text": "It cannot be calculated, because the mass of the cart is not known.",
@@ -293,7 +293,7 @@
           },
           {
             "text": "The total momentum is smaller on the rows where cart 1 bounces back.",
-            "feedback": "When cart 1 bounces back, its momentum is negative, but cart 2 then gets a greater momentum. In the model's values $0.40 \\cdot (-0.12) + 0.60 \\cdot 0.48 = 0.240$, so the total momentum is conserved."
+            "feedback": "When cart 1 bounces back, its momentum is negative, but cart 2 then gets a greater momentum. In the model's values $$\\begin{aligned} &0.40 \\cdot (-0.12) \\\\ &+ 0.60 \\cdot 0.48 \\\\ &= 0.240 \\end{aligned}$$, so the total momentum is conserved."
           }
         ]
       }
@@ -412,7 +412,7 @@
         {
           "text": "The velocity and momentum of the cart moving to the left are negative: $0.30 \\cdot (-0.60)$.",
           "correct": true,
-          "feedback": "Correct. When right is the positive direction, $v' = \\dfrac{0.20 - 0.18}{0.80}\\,\\text{m/s} = 0.025\\,\\text{m/s}$ to the right. The carts almost stop, because their momenta are nearly equal and opposite. The student's result is greater than the initial velocity of the cart moving to the right, $0.40\\,\\text{m/s}$, which is impossible when the cart moving to the left slows it down."
+          "feedback": "Correct. When right is the positive direction, $$\\begin{aligned} &v' = \\dfrac{0.20 - 0.18}{0.80}\\,\\text{m/s} \\\\ &= 0.025\\,\\text{m/s} \\end{aligned}$$ to the right. The carts almost stop, because their momenta are nearly equal and opposite. The student's result is greater than the initial velocity of the cart moving to the right, $0.40\\,\\text{m/s}$, which is impossible when the cart moving to the left slows it down."
         },
         {
           "text": "The velocity must be calculated from conservation of kinetic energy, because the carts move together.",
@@ -435,7 +435,7 @@
       "tolerance": 0.02,
       "hints": [
         "Choose the boy and the boat as the system. What is the total momentum of the system before the jump?",
-        "In the push-off the boy and the boat push each other, so this is an explosion: $0 = m_\\text{boy} v_\\text{boy} + m_\\text{boat} v_\\text{boat}$.",
+        "In the push-off the boy and the boat push each other, so this is an explosion: $$\\begin{aligned} &0 = m_\\text{boy} v_\\text{boy} \\\\ &+ m_\\text{boat} v_\\text{boat} \\end{aligned}$$.",
         "Solve $v_\\text{boat} = -\\dfrac{m_\\text{boy} v_\\text{boy}}{m_\\text{boat}}$. The minus sign shows that the boat moves in the opposite direction."
       ],
       "mistakes": [
@@ -493,7 +493,7 @@
       "tolerance": 0.02,
       "hints": [
         "Choose right as the positive direction. What is the sign of the velocity of the cart moving to the left?",
-        "In a perfectly inelastic collision $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\\,v'$.",
+        "In a perfectly inelastic collision $$\\begin{aligned} &m_1 v_1 + m_2 v_2 \\\\ &= (m_1 + m_2)\\,v' \\end{aligned}$$.",
         "The momentum before is $0.60 \\cdot 0.50 + 0.20 \\cdot (-0.90)$ in $\\text{kg}\\cdot\\text{m/s}$."
       ],
       "mistakes": [
@@ -506,7 +506,7 @@
           "feedback": "You divided the total momentum by the mass of the heavier cart only. The carts move together, so the denominator contains the mass of both, $0.80\\,\\text{kg}$."
         }
       ],
-      "solution": "**Given:** $m_1 = 0.60\\,\\text{kg}$, $v_1 = +0.50\\,\\text{m/s}$ (to the right), $m_2 = 0.20\\,\\text{kg}$, $v_2 = -0.90\\,\\text{m/s}$ (to the left); the carts stick together\n\n**Find:** the common velocity $v'$ in $\\text{m/s}$\n\n**Principle:** We choose both carts as the system and the right as the positive direction. On a horizontal track the weight and the normal force cancel each other and friction is neglected, so the total momentum is conserved. The carts stick together, so the collision is perfectly inelastic and the carts finally have a common velocity.\n\n**Formula:** $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\\,v'$, so $v' = \\dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$\n\n**Conversions:** The masses are in kilograms and the velocities in $\\text{m/s}$, so no conversions are needed.\n\n**Substitution:** $v' = \\dfrac{0.60 \\cdot 0.50 + 0.20 \\cdot (-0.90)}{0.60 + 0.20}\\,\\text{m/s} = \\dfrac{0.30 - 0.18}{0.80}\\,\\text{m/s} = 0.15\\,\\text{m/s}$\n\n**Answer:** $0.15\\,\\text{m/s}$ to the right, two significant figures like the data.\n\n**Reasonableness:** The velocity is positive, because the momentum of the cart moving to the right, $0.30\\,\\text{kg}\\cdot\\text{m/s}$, is greater than that of the cart moving to the left, $0.18\\,\\text{kg}\\cdot\\text{m/s}$. The common velocity is smaller than the initial velocity of either cart, as it should be when the momenta partly cancel each other."
+      "solution": "**Given:** $m_1 = 0.60\\,\\text{kg}$, $v_1 = +0.50\\,\\text{m/s}$ (to the right), $m_2 = 0.20\\,\\text{kg}$, $v_2 = -0.90\\,\\text{m/s}$ (to the left); the carts stick together\n\n**Find:** the common velocity $v'$ in $\\text{m/s}$\n\n**Principle:** We choose both carts as the system and the right as the positive direction. On a horizontal track the weight and the normal force cancel each other and friction is neglected, so the total momentum is conserved. The carts stick together, so the collision is perfectly inelastic and the carts finally have a common velocity.\n\n**Formula:** $$\\begin{aligned} &m_1 v_1 + m_2 v_2 \\\\ &= (m_1 + m_2)\\,v' \\end{aligned}$$, so $v' = \\dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$\n\n**Conversions:** The masses are in kilograms and the velocities in $\\text{m/s}$, so no conversions are needed.\n\n**Substitution:** $v' = \\dfrac{0.60 \\cdot 0.50 + 0.20 \\cdot (-0.90)}{0.60 + 0.20}\\,\\text{m/s} = \\dfrac{0.30 - 0.18}{0.80}\\,\\text{m/s} = 0.15\\,\\text{m/s}$\n\n**Answer:** $0.15\\,\\text{m/s}$ to the right, two significant figures like the data.\n\n**Reasonableness:** The velocity is positive, because the momentum of the cart moving to the right, $0.30\\,\\text{kg}\\cdot\\text{m/s}$, is greater than that of the cart moving to the left, $0.18\\,\\text{kg}\\cdot\\text{m/s}$. The common velocity is smaller than the initial velocity of either cart, as it should be when the momenta partly cancel each other."
     },
     {
       "id": "check-3",

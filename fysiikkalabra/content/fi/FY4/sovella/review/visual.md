@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7a83c16bbde5a61b
+CONTENT-HASH: 774de98de66e0a8f
 
 ## Blocking
 None.
@@ -8,8 +8,4 @@ None.
 None.
 
 ## Checked
-- Economical review (teacher 2026-11-16): only the changed line judged, from the packet diff and source; no capture opened (text-only change, previous pass relied on for the rest).
-- Two Järkevyys sentences (solutions.md L286, L296): "muuttuu sisäenergiaksi" is correct, inflected and glossary-consistent.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- batch delta review: four lifted formulas in tasks.json/solutions.md (reflow only); opened fi-390-26, fi-390-27 and fi-1280-20; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

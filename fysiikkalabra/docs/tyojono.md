@@ -28,13 +28,15 @@ tyhjät 28×28 px kaappaukset) tehdään yksin. Voi kulkea rinnakkain kohdan 2 k
 
 ## 5. CI:n toistettavuus (2026-11-13)
 
-Tapa ajaa selaintarkistukset CI:n kontissa (`mcr.microsoft.com/playwright/python:v1.65.0-noble`) paikallisesti, ja
-layout-testien virheilmoitukset nimeämään ylivuotava elementti (`docs/QUALITY.md` aukot 1–2). Jaettuja tiedostoja:
-tehdään yksin ja yhdistetään ennen muita.
-Löydös (2026-11-15, #590): `check_lesson.py` layout-tarkistus (360 px, ratkaisu auki) ei havainnut fy8-1-L2-08:n
-sijoitusketjun ylivuotoa en-versiossa (oikea reuna 372 px vs. laatikko 330 px, yksikkö Hz leikkautui; ulkoasukatselmoija
-löysi sen); lisää `check_layout.py`:hin tarkistus, joka mittaa ratkaisun kaavaketjun ylivuodon avoimessa tilassa
-kaikilla kielillä 360 ja 390 px:llä.
+Varattu: claude/ci-reproducibility
+
+Osa A tehty (PR #640, 2026-11-16): `requirements-ci.txt` kertoo Playwright-version ja `ci_env.py check` pitää CI:n kontin
+samana; `ci_env.py run <komento>` ajaa tarkistuksen CI:n kontissa paikallisesti, ja `check_lesson.py` ajaa layoutin siellä
+(360, 390, 768, 1280 px) itse, kun Docker on käytettävissä; layout-virhe nimeää tehtävän, ratkaisun vaiheen ja elementin;
+`ci_scope.py` ei laske sivua muuttuneeksi, jos sen ainoa ero on `?v=`-tunnisteet.
+Jäljellä osa B (koordinaattorin luvalla, kun FY4:n, FY5:n ja FY7:n kaava-PR:t ovat mainissa): `docs/clipped-formulas.tsv`
+ja `docs/physics-phrases-known.tsv` kurssikohtaisiksi tiedostoiksi (esim. `docs/clipped-formulas/FY4.tsv`), jotta kaksi
+kurssi-PR:ää ei koske samaan tiedostoon. Jaettu muutos: tehdään yksin.
 
 ## 5b. Leikkautuva kaava: tarkistus ja rivijako-carry: tehty (PR #594, opettaja 2026-11-15)
 
@@ -72,6 +74,8 @@ jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md
   katselmoinnit eivät vanhene.
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen ja align-muotoon (opettaja 2026-11-15)
+
+FY4 tehty (PR #637): 584 riviä pois listalta; 89 jää (17 lyhyttä muuttamatonta kaavaa, jotka leikkautuvat vain CI:n selaimessa 4–6 px (fy4-4, fy4-8, fy4-9, fy4-13, fy4-16; listalta poistetaan vain rivi, jonka kaava ei enää ole tekstin sisällä), liian leveät yksittäiset `\dfrac`- ja `\sqrt`-kaavat (fy4-6, fy4-8, fy4-10, fy4-11, fy4-15), paljaiden kertoimien tulot, joita ei saa katkaista (fy4-15), välilyönnittömät `\cdot`-ketjut, joissa rivi voisi katketa vain kertomerkin jälkeen ja katko sen edellä muuttaisi `chain_view`n (fy4-6, fy4-16; ulkoasukatselmointi hylkäsi kertomerkkiin päättyvän rivin), sulkeissa olevat kaavat (fy4-8, fy4-10:n `p_\text{kok}`), lainattu opiskelijan lasku (fy4-7, fy4-9) sekä fy4-14:n kaksi inquiry-kaavaa: niiden rivitys osui riveille, joita aiemmat siirrot koskivat, ja olisi vaatinut tiede- ja pedagogiikkakatselmoinnin). Rivijako mitattiin selaimessa (KaTeX) ja on kaikilla kielillä sama.
 
 FY6 tehty (PR #627): 565 riviä pois listalta; 29 jää (sulkeiden tai lainausmerkkien sisällä olevat kaavat, liian leveät yksittäiset `\dfrac`- ja `\sqrt`-kaavat ja fy6-2:n taulukon mittarin tarkkuusmerkinnät). Rivi alkaa vain relaatiosta, plus- tai miinusmerkistä tai kokonaisten suureiden välistä.
 
