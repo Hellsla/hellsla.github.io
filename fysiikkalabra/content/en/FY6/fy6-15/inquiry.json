@@ -122,7 +122,7 @@
         "hints": [
           "The devices are in parallel. How do the currents of devices in parallel combine in the circuit cable?",
           "The current in the circuit cable is the sum of the currents of the devices, that is, the total power divided by the voltage.",
-          "$I = (2000\\,\\text{W} + 1200\\,\\text{W}) : 230\\,\\text{V}$."
+          "$$\\begin{aligned} I &= (2000\\,\\text{W} + 1200\\,\\text{W}) \\\\ &: 230\\,\\text{V} \\end{aligned}$$."
         ],
         "mistakes": [
           {
@@ -245,7 +245,7 @@
       "tolerance": 0.02,
       "hints": [
         "The current of both devices flows through the extension cord. How large is it?",
-        "$I = (2000\\,\\text{W} + 1400\\,\\text{W}) : 230\\,\\text{V}$. The thermal power produced in the cord depends on the resistance of the cord and the current.",
+        "$$\\begin{aligned} I &= (2000\\,\\text{W} + 1400\\,\\text{W}) \\\\ &: 230\\,\\text{V} \\end{aligned}$$. The thermal power produced in the cord depends on the resistance of the cord and the current.",
         "$P = RI^2 = 0.60\\,\\Omega \\cdot (14.8\\,\\text{A})^2$."
       ],
       "mistakes": [

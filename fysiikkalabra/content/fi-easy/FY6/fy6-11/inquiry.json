@@ -301,7 +301,7 @@
         "hints": [
           "Laske ensin rivin kenttä. Esimerkiksi $F = 200\\,\\mu\\text{N}$ ja $q = 2{,}0\\,\\text{nC}$ antavat $E = 1{,}0 \\cdot 10^{5}\\,\\text{N/C}$.",
           "Muunna etäisyys metreiksi: $2{,}0\\,\\text{cm} = 0{,}020\\,\\text{m}$.",
-          "$Ed = 1{,}0 \\cdot 10^{5}\\,\\text{N/C} \\cdot 0{,}020\\,\\text{m}$. Vertaa tulosta levyjen jännitteeseen."
+          "$$Ed = 1{,}0 \\cdot 10^{5}\\,\\text{N/C} \\cdot 0{,}020\\,\\text{m}$$. Vertaa tulosta levyjen jännitteeseen."
         ],
         "mistakes": [
           {

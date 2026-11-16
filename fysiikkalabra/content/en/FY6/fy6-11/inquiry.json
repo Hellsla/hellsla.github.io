@@ -301,7 +301,7 @@
         "hints": [
           "First calculate the field of a row: for example $F = 200\\,\\mu\\text{N}$ and $q = 2.0\\,\\text{nC}$ give $E = 1.0 \\cdot 10^{5}\\,\\text{N/C}$.",
           "Convert the distance to metres: $2.0\\,\\text{cm} = 0.020\\,\\text{m}$.",
-          "$Ed = 1.0 \\cdot 10^{5}\\,\\text{N/C} \\cdot 0.020\\,\\text{m}$. Compare the result with the voltage of the plates."
+          "$$Ed = 1.0 \\cdot 10^{5}\\,\\text{N/C} \\cdot 0.020\\,\\text{m}$$. Compare the result with the voltage of the plates."
         ],
         "mistakes": [
           {

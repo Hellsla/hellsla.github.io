@@ -286,7 +286,7 @@
       "hints": [
         "Mihin energia muuttuu, kun kenttä tekee työtä ioniin? Kuinka suuri on kentän tekemä työ?",
         "Ionin liike-energia on $\\tfrac{1}{2}mv^2 = eU$. Muunna $1{,}2\\,\\text{kV} = 1200\\,\\text{V}$.",
-        "$v = \\sqrt{\\dfrac{2eU}{m}} = \\sqrt{\\dfrac{2 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1200\\,\\text{V}}{2{,}18 \\cdot 10^{-25}\\,\\text{kg}}}$; muunna lopuksi $1\\,\\text{km/s} = 1000\\,\\text{m/s}$."
+        "$$\\begin{aligned} &v \\\\ &= \\sqrt{\\dfrac{2eU}{m}} \\\\ &= \\sqrt{\\dfrac{2 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1200\\,\\text{V}}{2{,}18 \\cdot 10^{-25}\\,\\text{kg}}} \\end{aligned}$$; muunna lopuksi $1\\,\\text{km/s} = 1000\\,\\text{m/s}$."
       ],
       "mistakes": [
         {
@@ -344,7 +344,7 @@
       "hints": [
         "Kuinka paljon potentiaali muuttuu $2{,}0\\,\\text{cm}$:n matkalla kentän suuntaan?",
         "Homogeenisessa kentässä potentiaaliero on $U = Es$. Muunna $2{,}0\\,\\text{cm} = 0{,}020\\,\\text{m}$.",
-        "$U = 1{,}5 \\cdot 10^{4}\\,\\text{V/m} \\cdot 0{,}020\\,\\text{m}$, ja protoni saa jokaista volttia kohti yhden elektronivoltin."
+        "$$U = 1{,}5 \\cdot 10^{4}\\,\\text{V/m} \\cdot 0{,}020\\,\\text{m}$$, ja protoni saa jokaista volttia kohti yhden elektronivoltin."
       ],
       "mistakes": [
         {

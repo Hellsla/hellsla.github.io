@@ -286,7 +286,7 @@
       "hints": [
         "Into what does the energy change when the field does work on the ion? How great is the work done by the field?",
         "The kinetic energy of the ion is $\\tfrac{1}{2}mv^2 = eU$. Convert $1.2\\,\\text{kV} = 1200\\,\\text{V}$.",
-        "$v = \\sqrt{\\dfrac{2eU}{m}} = \\sqrt{\\dfrac{2 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1200\\,\\text{V}}{2.18 \\cdot 10^{-25}\\,\\text{kg}}}$; finally convert $1\\,\\text{km/s} = 1000\\,\\text{m/s}$."
+        "$$\\begin{aligned} &v \\\\ &= \\sqrt{\\dfrac{2eU}{m}} \\\\ &= \\sqrt{\\dfrac{2 \\cdot 1.602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1200\\,\\text{V}}{2.18 \\cdot 10^{-25}\\,\\text{kg}}} \\end{aligned}$$; finally convert $1\\,\\text{km/s} = 1000\\,\\text{m/s}$."
       ],
       "mistakes": [
         {
@@ -344,7 +344,7 @@
       "hints": [
         "How much does the potential change over a distance of $2.0\\,\\text{cm}$ in the direction of the field?",
         "In a uniform field the potential difference is $U = Es$. Convert $2.0\\,\\text{cm} = 0.020\\,\\text{m}$.",
-        "$U = 1.5 \\cdot 10^{4}\\,\\text{V/m} \\cdot 0.020\\,\\text{m}$, and the proton gets one electronvolt for every volt."
+        "$$U = 1.5 \\cdot 10^{4}\\,\\text{V/m} \\cdot 0.020\\,\\text{m}$$, and the proton gets one electronvolt for every volt."
       ],
       "mistakes": [
         {

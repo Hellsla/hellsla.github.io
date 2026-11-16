@@ -122,7 +122,7 @@
         "hints": [
           "Laitteet ovat rinnan. Miten rinnakkaisten laitteiden virrat yhdistyvät ryhmäjohdossa?",
           "Ryhmäjohdon virta on laitteiden virtojen summa, eli yhteisteho jaettuna jännitteellä.",
-          "$I = (2000\\,\\text{W} + 1200\\,\\text{W}) : 230\\,\\text{V}$."
+          "$$\\begin{aligned} I &= (2000\\,\\text{W} + 1200\\,\\text{W}) \\\\ &: 230\\,\\text{V} \\end{aligned}$$."
         ],
         "mistakes": [
           {
@@ -245,7 +245,7 @@
       "tolerance": 0.02,
       "hints": [
         "Jatkojohdon läpi kulkee molempien laitteiden virta. Kuinka suuri se on?",
-        "$I = (2000\\,\\text{W} + 1400\\,\\text{W}) : 230\\,\\text{V}$. Johdossa kehittyvä lämpöteho riippuu johdon resistanssista ja virrasta.",
+        "$$\\begin{aligned} I &= (2000\\,\\text{W} + 1400\\,\\text{W}) \\\\ &: 230\\,\\text{V} \\end{aligned}$$. Johdossa kehittyvä lämpöteho riippuu johdon resistanssista ja virrasta.",
         "$P = RI^2 = 0{,}60\\,\\Omega \\cdot (14{,}8\\,\\text{A})^2$."
       ],
       "mistakes": [

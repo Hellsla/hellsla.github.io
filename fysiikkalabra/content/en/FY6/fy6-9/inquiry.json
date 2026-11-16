@@ -391,7 +391,7 @@
       "hints": [
         "What rises and drops of potential are there in the loop when the current passes through the battery from the positive terminal to the negative terminal?",
         "Voltage law: $U_\\text{ch} - RI - R_\\text{s} I - E = 0$.",
-        "$I = (14.4\\,\\text{V} - 12.6\\,\\text{V}) : (0.25\\,\\Omega + 0.050\\,\\Omega)$."
+        "$$\\begin{aligned} I &= (14.4\\,\\text{V} - 12.6\\,\\text{V}) \\\\ &: (0.25\\,\\Omega + 0.050\\,\\Omega) \\end{aligned}$$."
       ],
       "mistakes": [
         {

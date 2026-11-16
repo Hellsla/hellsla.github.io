@@ -212,7 +212,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$U_\\text{L} = 12.0\\,\\text{V} - 0.80\\,\\Omega \\cdot 2.5\\,\\text{A} = 10.0\\,\\text{V}$ and $P_\\text{A} = \\dfrac{(10.0\\,\\text{V})^2}{6.0\\,\\Omega} = 16.7\\,\\text{W}$."
+              "detail": "$$\\begin{aligned} U_\\text{L} &= 12.0\\,\\text{V} - 0.80\\,\\Omega \\cdot 2.5\\,\\text{A} \\\\ &= 10.0\\,\\text{V} \\end{aligned}$$ and $P_\\text{A} = \\dfrac{(10.0\\,\\text{V})^2}{6.0\\,\\Omega} = 16.7\\,\\text{W}$."
             },
             {
               "key": "reasonableness",
@@ -355,7 +355,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$qU = 6.0 \\cdot 10^{-13}\\,\\text{C} \\cdot 6.0 \\cdot 10^{4}\\,\\text{V} = 3.6 \\cdot 10^{-8}\\,\\text{J}$ and $v = \\sqrt{\\dfrac{2 \\cdot 3.6 \\cdot 10^{-8}\\,\\text{J}}{4.0 \\cdot 10^{-10}\\,\\text{kg}}}$."
+              "detail": "$$\\begin{aligned} qU &= 6.0 \\cdot 10^{-13}\\,\\text{C} \\cdot 6.0 \\cdot 10^{4}\\,\\text{V} \\\\ &= 3.6 \\cdot 10^{-8}\\,\\text{J} \\end{aligned}$$ and $v = \\sqrt{\\dfrac{2 \\cdot 3.6 \\cdot 10^{-8}\\,\\text{J}}{4.0 \\cdot 10^{-10}\\,\\text{kg}}}$."
             },
             {
               "key": "units_precision",
@@ -501,7 +501,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$E_2 = \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 = 7.99\\,\\text{J}$ and $\\Delta E = 14.85\\,\\text{J} - 7.99\\,\\text{J} = 6.9\\,\\text{J}$."
+              "detail": "$$\\begin{aligned} E_2 &= \\dfrac{1}{2} \\cdot 330 \\cdot 10^{-6}\\,\\text{F} \\cdot (220\\,\\text{V})^2 \\\\ &= 7.99\\,\\text{J} \\end{aligned}$$ and $\\Delta E = 14.85\\,\\text{J} - 7.99\\,\\text{J} = 6.9\\,\\text{J}$."
             },
             {
               "key": "reasonableness",
@@ -529,7 +529,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$\\Delta Q = 330 \\cdot 10^{-6}\\,\\text{F} \\cdot 80\\,\\text{V} = 0.0264\\,\\text{C}$ and $\\Delta t = 1.0 \\cdot 10^{-3}\\,\\text{s}$."
+              "detail": "$$\\begin{aligned} \\Delta Q &= 330 \\cdot 10^{-6}\\,\\text{F} \\cdot 80\\,\\text{V} \\\\ &= 0.0264\\,\\text{C} \\end{aligned}$$ and $\\Delta t = 1.0 \\cdot 10^{-3}\\,\\text{s}$."
             },
             {
               "key": "reasonableness",

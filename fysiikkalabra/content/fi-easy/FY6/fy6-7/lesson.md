@@ -235,7 +235,7 @@ missä $E$ on energia (J tai kWh), $P$ teho (W tai kW) ja $t$ aika (s tai h). Ku
   <rect x="462" y="224" width="88" height="10" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="1.5"/>
   <foreignObject x="426" y="265.5" width="160" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$E = 1\,\text{kWh}$</div></foreignObject>
   <line x1="30" y1="308" x2="570" y2="308" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 5"/>
-  <foreignObject x="40" y="319.5" width="520" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$$\begin{aligned} 1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\ &= 3{,}6\,\text{MJ} \end{aligned}$$</div></foreignObject>
+  <foreignObject x="40" y="319.5" width="520" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$</div></foreignObject>
 </svg>
 
 Sähköteho on $P = UI$. Siksi energian voi laskea myös jännitteestä ja virrasta:

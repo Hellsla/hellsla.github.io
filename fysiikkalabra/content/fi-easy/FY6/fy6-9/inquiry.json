@@ -391,7 +391,7 @@
       "hints": [
         "Mitkä potentiaalin nousut ja laskut silmukassa on, kun virta kulkee akun läpi plusnavalta miinusnavalle?",
         "Jännitelaki: $U_\\text{lat} - RI - R_\\text{s} I - E = 0$.",
-        "$I = (14{,}4\\,\\text{V} - 12{,}6\\,\\text{V}) : (0{,}25\\,\\Omega + 0{,}050\\,\\Omega)$."
+        "$$\\begin{aligned} I &= (14{,}4\\,\\text{V} - 12{,}6\\,\\text{V}) \\\\ &: (0{,}25\\,\\Omega + 0{,}050\\,\\Omega) \\end{aligned}$$."
       ],
       "mistakes": [
         {
