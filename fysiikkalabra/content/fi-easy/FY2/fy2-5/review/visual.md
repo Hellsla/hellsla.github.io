@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 220e08dbe292bd1b
+CONTENT-HASH: bd331ad07f082494
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Delta (source): one sentence in "Kosteus ja polttoaineen laatu" now cites the MAFY value $16{,}2\,\text{MJ/kg}$; LaTeX, decimal comma and unit correct; fluent Finnish. Captures not re-opened.
+- Delta (paragraph breaks only). Opened review/shots/fy2-5-example-390-1.png and -2.png: the split Tunnetut ja kysytty, Tulos and Järkevyys paragraphs read cleanly at 390 px, formulas and units intact, no overflow.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

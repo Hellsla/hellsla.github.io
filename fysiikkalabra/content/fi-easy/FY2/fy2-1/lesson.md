@@ -279,7 +279,13 @@ Skeittari lähtee levosta half-pipen reunalta. Reunalla hänen potentiaalienergi
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Alussa potentiaalienergia on $E_\text{p} = 840\,\text{J}$. Liike-energia on nolla, koska skeittari on levossa. Pohjalla potentiaalienergia on nolla ja liike-energia on $E_\text{k} = 0{,}72\,\text{kJ}$. Kysytään sitä mekaanista energiaa $E_\text{lämpö}$, jonka kitka muuttaa laskun aikana lämpöenergiaksi.
+**Tunnetut ja kysytty.** Alussa potentiaalienergia on $E_\text{p} = 840\,\text{J}$.
+
+Liike-energia on nolla, koska skeittari on levossa.
+
+Pohjalla potentiaalienergia on nolla ja liike-energia on $E_\text{k} = 0{,}72\,\text{kJ}$.
+
+Kysytään sitä mekaanista energiaa $E_\text{lämpö}$, jonka kitka muuttaa laskun aikana lämpöenergiaksi.
 
 <!-- vaihe -->
 

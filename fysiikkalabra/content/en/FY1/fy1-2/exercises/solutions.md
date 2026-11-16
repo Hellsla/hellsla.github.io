@@ -52,7 +52,11 @@
 ## fy1-2-L1-06
 **Find:** which of the given units is a base unit of the SI system.
 **Principle:** The SI system has seven base units: metre, kilogram, second, ampere, kelvin, mole and candela. The base units are agreed in the SI system, and other units are derived from them as products and quotients, for example $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$. A prefix does not make a new unit but forms a part or a multiple of a unit.
-**Model answer:** The kilogram is the SI base unit of mass. The newton is the unit of force, and it is derived from base units as a product and a quotient, $\text{kg}\cdot\text{m/s}^2$, so it is a derived unit. The gram is a thousandth of a kilogram, $1\,\text{g} = 10^{-3}\,\text{kg}$, that is, a decimal part of the kilogram and not a base unit; the prefixes are attached to the gram, so a kilogram is a thousand grams. The litre is not an SI unit, and the SI unit of volume, $\text{m}^3$, is derived from the metre: $\text{m}\cdot\text{m}\cdot\text{m}$.
+**Model answer:** The kilogram is the SI base unit of mass. The newton is the unit of force, and it is derived from base units as a product and a quotient, $\text{kg}\cdot\text{m/s}^2$, so it is a derived unit.
+
+The gram is a thousandth of a kilogram, $1\,\text{g} = 10^{-3}\,\text{kg}$, that is, a decimal part of the kilogram and not a base unit; the prefixes are attached to the gram, so a kilogram is a thousand grams.
+
+The litre is not an SI unit, and the SI unit of volume, $\text{m}^3$, is derived from the metre: $\text{m}\cdot\text{m}\cdot\text{m}$.
 
 ## fy1-2-L1-07
 **Given:** speed $v = 18\,\text{km/h}$
@@ -67,12 +71,18 @@
 ## fy1-2-L1-08
 **Find:** the unit of density when the mass is in kilograms and the volume in cubic metres.
 **Principle:** In the formula $\rho = \dfrac{m}{V}$ the mass is divided by the volume. Units are treated like quantities: the unit of a quantity is obtained by substituting the units of the quantities into the formula. The unit of volume is a product of three lengths, $\text{m}\cdot\text{m}\cdot\text{m} = \text{m}^3$.
-**Model answer:** Substitute the units into the formula: $\dfrac{\text{kg}}{\text{m}^3}$, so the unit of density is $\text{kg/m}^3$. The kilogram is in the numerator because the mass is in the numerator of the formula. The product $\text{kg}\cdot\text{m}^3$ does not come from a division, the inverse $\text{m}^3/\text{kg}$ would describe volume per unit of mass, and the square metre is a unit of area. A unit check can therefore be used to verify that a formula has been written correctly.
+**Model answer:** Substitute the units into the formula: $\dfrac{\text{kg}}{\text{m}^3}$, so the unit of density is $\text{kg/m}^3$. The kilogram is in the numerator because the mass is in the numerator of the formula.
+
+The product $\text{kg}\cdot\text{m}^3$ does not come from a division, the inverse $\text{m}^3/\text{kg}$ would describe volume per unit of mass, and the square metre is a unit of area. A unit check can therefore be used to verify that a formula has been written correctly.
 
 ## fy1-2-L1-09
 **Find:** which of the given expressions can be a speed.
 **Principle:** A speed tells how long a distance is covered in a unit of time, so its unit is a unit of length divided by a unit of time. The unit of an expression is obtained by substituting the units into the expression in the same way as for quantities: units are multiplied and divided like numerical values.
-**Model answer:** The expression $\dfrac{12\,\text{km}}{3.0\,\text{h}}$ is a distance divided by a time, and its unit is $\text{km/h}$, so it can be a speed. The unit of the product is $\text{km}\cdot\text{h}$, so it is not a length divided by a time. The unit of the inverse expression is $\text{h/km}$, that is time per distance, so it is not a speed either. A squared time in the denominator gives the unit $\text{km/h}^2$, which is a unit of the acceleration type. The answer is therefore found from the units alone, and no numerical values need to be calculated.
+**Model answer:** The expression $\dfrac{12\,\text{km}}{3.0\,\text{h}}$ is a distance divided by a time, and its unit is $\text{km/h}$, so it can be a speed.
+
+The unit of the product is $\text{km}\cdot\text{h}$, so it is not a length divided by a time. The unit of the inverse expression is $\text{h/km}$, that is time per distance, so it is not a speed either.
+
+A squared time in the denominator gives the unit $\text{km/h}^2$, which is a unit of the acceleration type. The answer is therefore found from the units alone, and no numerical values need to be calculated.
 
 ## fy1-2-L2-01
 **Given:** clock frequency $f = 3.2\,\text{GHz}$, time $t = 5.0\,\text{ms}$; $1\,\text{GHz} = 10^{9}\,\text{Hz}$ and $1\,\text{Hz} = 1/\text{s}$
@@ -177,11 +187,17 @@
 ## fy1-2-L3-04
 **Given:** $T = k\,L^{a}g^{b}m^{c}$, where $k$ has no unit; $L_1 = 0.250\,\text{m}$, $T_1 = 1.00\,\text{s}$, $L_2 = 1.00\,\text{m}$
 **Find:** the exponents $a$, $b$ and $c$ and the period $T_2$ in seconds
-**Principle:** Both sides of an equation must have the same unit. The units therefore give conditions for the exponents. After this the form of the formula is known, and the dimensionless coefficient $k$ stays the same when the length of the pendulum changes in the same place, because $k$ is a constant of the swinging phenomenon itself and does not depend on the length or the place. A unit analysis does not, however, give the number $k$: it tells only how $T$ depends on the quantities, not the size of the coefficient.
+**Principle:** Both sides of an equation must have the same unit. The units therefore give conditions for the exponents.
+
+After this the form of the formula is known, and the dimensionless coefficient $k$ stays the same when the length of the pendulum changes in the same place, because $k$ is a constant of the swinging phenomenon itself and does not depend on the length or the place.
+
+A unit analysis does not, however, give the number $k$: it tells only how $T$ depends on the quantities, not the size of the coefficient.
 **Formula:** Units: $\text{s} = \text{m}^{a}\cdot\left(\tfrac{\text{m}}{\text{s}^2}\right)^{b}\cdot\text{kg}^{c} = \text{m}^{a+b}\,\text{s}^{-2b}\,\text{kg}^{c}$. The kilogram appears only in the mass, so $c = 0$. The seconds give $-2b = 1$, so $b = -\tfrac{1}{2}$, and the metres $a + b = 0$, so $a = \tfrac{1}{2}$. Thus $T = k\sqrt{\dfrac{L}{g}}$, and since $k$ and $g$ stay the same, $T_2 = T_1\sqrt{\dfrac{L_2}{L_1}}$.
 **Conversions:** Not needed: the lengths are in metres and the time in seconds.
 **Substitution:** $T_2 = 1.00\,\text{s}\cdot\sqrt{\dfrac{1.00\,\text{m}}{0.250\,\text{m}}} = 1.00\,\text{s}\cdot\sqrt{4.00} = 2.00\,\text{s}$
-**Answer:** $a = \tfrac{1}{2}$, $b = -\tfrac{1}{2}$ and $c = 0$; $T_2 = 2.00\,\text{s}$, three significant figures like the measurement. The mass does not affect the period. Units do not give the coefficient: for small swings $T = 2\pi\sqrt{\dfrac{L}{g}}$, in which $2\pi$ is a number without a unit that a unit analysis cannot give. It is not needed in this task, because $k$ cancels from the ratio $T_2/T_1$.
+**Answer:** $a = \tfrac{1}{2}$, $b = -\tfrac{1}{2}$ and $c = 0$; $T_2 = 2.00\,\text{s}$, three significant figures like the measurement. The mass does not affect the period.
+
+Units do not give the coefficient: for small swings $T = 2\pi\sqrt{\dfrac{L}{g}}$, in which $2\pi$ is a number without a unit that a unit analysis cannot give. It is not needed in this task, because $k$ cancels from the ratio $T_2/T_1$.
 **Reasonableness:** The length of the pendulum is four times as great and the period twice as great, because $\sqrt{4} = 2$. The period of a one-metre pendulum is about two seconds, which fits the pendulum of a wall clock.
 
 ## fy1-2-L3-05
@@ -205,13 +221,19 @@
 **Reasonableness:** Light travels about $3\cdot10^{8}\,\text{m}$ in a second and the distance to the Moon is about $4\cdot10^{8}\,\text{m}$, so the travel time is a little over a second. The result agrees.
 
 ## fy1-2-L2-08
-**Given:** BIPM's pages: from 1889 the kilogram was the mass of the international prototype, an object made of platinum-iridium; since the decision of 2018 it is defined by the fixed numerical value of the Planck constant $h$. In the verification of 1989–1991 the median difference between the national prototypes and the international one was about $25\,\mu\text{g}$. In part b) the change $\Delta m = 1\,\text{mg}$ and the mass $m = 1\,\text{kg}$.
+**Given:** BIPM's pages: from 1889 the kilogram was the mass of the international prototype, an object made of platinum-iridium; since the decision of 2018 it is defined by the fixed numerical value of the Planck constant $h$.
+
+In the verification of 1989–1991 the median difference between the national prototypes and the international one was about $25\,\mu\text{g}$. In part b) the change $\Delta m = 1\,\text{mg}$ and the mass $m = 1\,\text{kg}$.
 
 **Find:** a) a comparison of the definitions and the reason for the change; b) the relative change $\dfrac{\Delta m}{m}$ as a percentage and a comparison with the observed difference; c) the benefit of a definition based on a constant of nature; d) whether a measurement is free of error
 
 **Principle:** The definition of a unit says what one kilogram is. A relative change is the change divided by the original value, and it can be calculated only when both are in the same unit.
 
-**Model answer a):** The old kilogram was the mass of one object: a platinum-iridium cylinder kept at BIPM near Paris. National copies were made of it too. In the new definition the Planck constant has been given an exact numerical value, $h = 6.626\,070\,15\cdot10^{-34}\,\text{J}\,\text{s}$, and the kilogram follows from it together with the definitions of the metre and the second. The definition based on an object was given up because the comparisons showed the masses of the national copies drifting away from the mass of the international prototype. No one could know which object was changing, since by definition the international prototype always had a mass of exactly $1\,\text{kg}$.
+**Model answer a):** The old kilogram was the mass of one object: a platinum-iridium cylinder kept at BIPM near Paris. National copies were made of it too.
+
+In the new definition the Planck constant has been given an exact numerical value, $h = 6.626\,070\,15\cdot10^{-34}\,\text{J}\,\text{s}$, and the kilogram follows from it together with the definitions of the metre and the second.
+
+The definition based on an object was given up because the comparisons showed the masses of the national copies drifting away from the mass of the international prototype. No one could know which object was changing, since by definition the international prototype always had a mass of exactly $1\,\text{kg}$.
 
 **Formula:** the relative change $\varepsilon = \dfrac{\Delta m}{m} \cdot 100\,\%$
 
@@ -232,11 +254,19 @@ $$\begin{aligned}
 &= 2.5\cdot10^{-6}\,\%
 \end{aligned}$$
 
-**Model answer b):** A change of one milligram is $0.0001\,\%$, one millionth of the mass. It is $40$ times larger than the observed difference of the prototypes, $25\,\mu\text{g}$, which is only $2.5\cdot10^{-6}\,\%$. Such small differences do not show in everyday measurements, but in the most precise measurements they matter, and they grow the longer the objects keep changing.
+**Model answer b):** A change of one milligram is $0.0001\,\%$, one millionth of the mass. It is $40$ times larger than the observed difference of the prototypes, $25\,\mu\text{g}$, which is only $2.5\cdot10^{-6}\,\%$.
 
-**Model answer c):** A constant of nature is the same everywhere and at all times. It cannot wear, get dirty, be damaged or be lost like an object. When the kilogram is based on the Planck constant, any well enough equipped laboratory can realize the kilogram itself, without comparing its weights with one object kept in France. According to BIPM, the new definition assures the long-term stability of the unit of mass and is of more use to modern science.
+Such small differences do not show in everyday measurements, but in the most precise measurements they matter, and they grow the longer the objects keep changing.
 
-**Model answer d):** No. The definition says exactly what one kilogram is, but every measurement still has an uncertainty. A balance can be read only to a limited resolution, it has been calibrated only to some accuracy, and the measurement is affected by, for example, the temperature, air currents and the choices of the person measuring. A precise definition ensures that different countries measure the same quantity in the same unit. How accurate a measurement is still depends on the instrument and the method. That is why a result is written with only the digits the measurement justifies.
+**Model answer c):** A constant of nature is the same everywhere and at all times. It cannot wear, get dirty, be damaged or be lost like an object.
+
+When the kilogram is based on the Planck constant, any well enough equipped laboratory can realize the kilogram itself, without comparing its weights with one object kept in France. According to BIPM, the new definition assures the long-term stability of the unit of mass and is of more use to modern science.
+
+**Model answer d):** No. The definition says exactly what one kilogram is, but every measurement still has an uncertainty.
+
+A balance can be read only to a limited resolution, it has been calibrated only to some accuracy, and the measurement is affected by, for example, the temperature, air currents and the choices of the person measuring. A precise definition ensures that different countries measure the same quantity in the same unit.
+
+How accurate a measurement is still depends on the instrument and the method. That is why a result is written with only the digits the measurement justifies.
 
 **Answer:** A change of one milligram is $0.0001\,\%$, or $10^{-4}\,\%$, of the mass. The result has one significant figure, because the change $1\,\text{mg}$ is given to one figure.
 

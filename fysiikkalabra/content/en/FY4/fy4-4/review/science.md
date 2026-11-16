@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 2ca590df4c5da7cb
-
-Light delta review (teacher 2026-11-07): the diff against origin/main and what it touches.
+CONTENT-HASH: 3153b143cc15415a
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- None.
 
 ## Checked
-- lesson.md:602 Tulos: recomputed mg = 4708,8 N, a = (5200 − 4708,8)/480 = 1,023 m/s²; 3 s.f. limited by 5,20 kN and 9,81 m/s², 480 kg exact per teacher's rule: correct
-- lesson.md:606 Järkevyys: forgetting weight gives 5200/480 = 10,8 m/s²; at constant velocity T = mg so T/m = g ≈ 9,8 m/s² although a = 0: correct argument that names the mechanism (net force sets a)
-- Ratio T/mg = 1,10, a ≈ 0,1 g check still valid
+batch delta review: the new retrieval question (a lorry at rest at the lights). N = G at rest, exactly one option is correct, the N > G distractor's feedback is right by Newton's second law, and the point that a loaded lorry has a larger G and so a larger N is right. The figure labels "cart A/B" agree with the solutions.

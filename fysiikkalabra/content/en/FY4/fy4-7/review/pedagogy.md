@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fddaf5eacf9edc15
+CONTENT-HASH: cc2ac867e9ff6f7b
 
 ## Blocking
+- none
 
 ## Polish
-- check-1 (inquiry.json): the Finnish says "pallo ammutaan" (a ball shot from a bow); this translation says "arrow", which is physically right. The Finnish wording is the odd one and should be fixed there; the translation was left as is.
+- The new roller-coaster photo sits after the mechanical-energy paragraph; its caption does not say what it shows about energy (top of loop: high Ep). Consider one sentence tying it to the zero level.
 
 ## Checked
-- Read the English as a student would: clear sentences, same task order, hints, feedback, mistakes and self-assessment criteria as the Finnish; sim button names in the text (*Start*, *Speed*) match the sim labels.
-- Hero and the other figures at 360, 768 and 1280 px: legible, no page overflow.
-- Experiment tables show English column names after the fix.
-- Fixed: the experiment tables' column and lock labels (`names`) still said "ramppi" and "kitka" in English; now "ramp" and "friction". Reworded "Practise still" to "Practise some more".
+batch delta review: retrieval task now belongs to the chapter's phenomenon, numbers, options and misconception feedback consistent, distractors plausible, correct option reasoned, no answer disclosed before action; figures and photos judged from the diff.

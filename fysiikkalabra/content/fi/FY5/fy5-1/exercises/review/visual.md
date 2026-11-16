@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 682917e1074659db
-SCOPE: delta added-exercise from 23f25874b515562a base 81db4a6fd727
+CONTENT-HASH: 1af6927da72eb9de
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy5-1-L1-09 solution — the four unit checks are bare lines with colons; could be one short sentence each (carried over from the previous round).
+- [Minor] solutions.md:199 (L3-04 Sijoitus) — only "vaihteella 2" is a display formula while vaihde 1 and 3 stay inline, so the three parallel results look unequal; cosmetic.
 
 ## Checked
-- fy5-1-open-exercises-1280-9 and -10 (task 1-10 with the figure `fy5-1/ruutu`, answer, full solution open at 664 px width). Delta only: L1-10.
-- Figure: grid, bar O to P, horizontal red \overline{F} at P, dashed line of action, 0,10 m scale bar; labels LaTeX, nothing clipped; it gives all values the task needs and does not draw the arm or give the answer.
-- Solution: principle, reading of the figure, formula, conversion, substitution, answer, check in order; units upright with thin spaces, decimal commas, `\cdot`; the chains wrap as aligned rows. The situation precedes the question as its own sentence.
+- Round 3, delta: nothing changed since the version passed in round 2 (same hash); the two re-broken sums of solutions.md:149 (L2-06) were looked at again.
+- Own captures from preview/fy5-1.html?ratkaisut=1, every level and solution opened, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-1: fy5-1-ex-390-1.png, fy5-1-ex-1280-1.png.
+- Both sums break before "=" at 390 px and are one row at 1280 px; the full stop is attached to "0,0580 kg · m."; decimal commas, upright units. Nothing clipped, scrollWidth 390 and 1280.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

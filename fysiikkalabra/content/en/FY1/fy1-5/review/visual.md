@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c4d9c5f389d6c756
+CONTENT-HASH: 5db1d502e139bc7a
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] stage 4 conversion chain with small nested fractions is dense but readable; optional.
 
 ## Checked
-delta review 5d reflow, round 1: opened the 360 px captures inquiry 01-03 (tiled into contact sheets, every capture of this part viewed); equals signs aligned, no row broken inside a number or unit, nothing clipped or scrolling, display formulas read naturally in their sentences.
-
-## Scores
-illustrations 5 · typography 4 · English 4 · accessibility 4
+batch delta review: opened fy1-5-example-390-1 (stages 1-4); paragraph breaks and list markers read well (bold lead-ins, knowns in list or own paragraph, question last), formulas aligned, no clipping or overflow.

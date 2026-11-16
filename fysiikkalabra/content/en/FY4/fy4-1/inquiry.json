@@ -23,24 +23,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Review from lower secondary school",
-      "prompt": "A runner covers $150\\,\\text{m}$ in $20\\,\\text{s}$ at a uniform speed. What is her velocity?",
+      "prompt": "The cyclist's ride from home to the shop and back takes $16\\,\\text{min}$ in all, and the odometer shows $4.0\\,\\text{km}$. What is her average speed, that is, the distance travelled divided by the time?",
       "choices": [
         {
-          "text": "$3000\\,\\text{m/s}$",
-          "feedback": "You multiplied the distance and the time. Velocity tells how much distance is covered in a second, so the distance is divided by the time: $v = \\dfrac{150\\,\\text{m}}{20\\,\\text{s}}$."
-        },
-        {
-          "text": "$7.5\\,\\text{m/s}$",
+          "text": "$15\\,\\text{km/h}$",
           "correct": true,
-          "feedback": "Correct: $v = \\dfrac{150\\,\\text{m}}{20\\,\\text{s}} = 7.5\\,\\text{m/s}$. In this chapter the same idea gets a more exact form: the change in position takes the place of the distance, and the velocity gets a sign."
+          "feedback": "Correct: $16\\,\\text{min} = \\tfrac{16}{60}\\,\\text{h}$, so $v = \\dfrac{s}{t} = \\dfrac{4.0\\,\\text{km}}{\\tfrac{16}{60}\\,\\text{h}} = 15\\,\\text{km/h}$. In this chapter the change in position, the displacement, joins the distance; on this ride it is $0\\,\\text{m}$."
         },
         {
-          "text": "$0.13\\,\\text{m/s}$",
-          "feedback": "You divided the time by the distance. The result $0.13\\,\\text{s/m}$ is seconds per metre, not metres per second. Velocity is distance divided by time."
+          "text": "$7.5\\,\\text{km/h}$",
+          "feedback": "You used only the way there, $2.0\\,\\text{km}$. The $16\\,\\text{min}$ is the time of the whole ride, so the distance is the odometer's whole reading, $4.0\\,\\text{km}$."
         },
         {
-          "text": "$130\\,\\text{m/s}$",
-          "feedback": "You subtracted the time from the distance, but different quantities cannot be subtracted from each other: metres and seconds are not the same unit. Velocity is a ratio $v = \\dfrac{s}{t}$."
+          "text": "$0\\,\\text{km/h}$",
+          "feedback": "You used the app's reading $0\\,\\text{m}$. That is the final position measured from home, not the distance travelled. The cyclist was moving all the time, so her average speed is not zero: it is computed from the distance travelled, $4.0\\,\\text{km}$."
+        },
+        {
+          "text": "$0.25\\,\\text{km/h}$",
+          "feedback": "You divided kilometres by minutes: $\\tfrac{4.0\\,\\text{km}}{16\\,\\text{min}} = 0.25\\,\\text{km/min}$. The unit is kilometres per minute, not per hour. Convert the time to hours first: $16\\,\\text{min} = \\tfrac{16}{60}\\,\\text{h}$."
         }
       ]
     },

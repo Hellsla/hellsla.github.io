@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b2d6a4985ac2c285
+CONTENT-HASH: 97cad8f01ce0cb21
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-7-L2-09 Mallivastaus c) — "vähän lytyssä" is colloquial and obscure for an S2 reader; "litistynyt eli vähän litteämpi" is clearer.
-- [Minor] fy1-7-L2-09 Muunnokset — the conversion is split into two small cards with "Saturnukselle" running between them; one combined block or one card per planet would read calmer.
-- [Minor] fy1-7-L2-10 Mallivastaus c) — "osui kolmen merkitsevän numeron tarkkuudella" could say how far apart the values are (25,0 kg and 25,00 kg).
+- [Minor] Task 7-24 Järkevyys: four one-sentence paragraphs in a row read choppy; join the 270 g and 896 g sentences into one paragraph.
+- [Minor] Planet task Mallivastaus c) and d): many one-sentence paragraphs; grouping by idea (model assumption, rotation, NASA, Earth) would read better. Not blocking.
 
 ## Checked
-- delta, round 1: fy1-7-L2-09 and L2-10. Opened open-exercises-L2-1280 parts 12, 13, 14, 15, 16 (task cards, solution tables, formula cards, answers, Järkevyys).
-- Tables fit their box, $\textsf{l}$ and $\tfrac{\text{kg}}{\textsf{l}}$ render, units upright, decimal comma, no clipping; the tasks give the situation first, the question last.
+- Delta 8c md-paragraphs (lead density Vastaus, copper-aluminium Järkevyys, planet data task c) and d), PhET density task d). Opened fy1-7-open-exercises-L3-1280-5, L3-1280-6, L3-1280-7, L2-1280-14, L2-1280-15, L2-1280-17. Spacing even, formulas, tables and answer boxes intact, nothing clipped.
+- Hash run at start; the content was not edited meanwhile.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

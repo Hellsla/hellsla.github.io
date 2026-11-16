@@ -1,15 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 29114098e00b3554
+CONTENT-HASH: e28e18da5b5c35ee
+ROUND: 3
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] L2-06 Sijoitus: the chain now ends the first row with a trailing minus (86,0 dB −) and the continuation is indented; readable, a leading operator would be more usual.
-- [Minor] sovella section (not part of this change): one chain scrolls 12 px at 360 px.
+- [Minor] exercises.json 342 — at the join of the two inline pieces the relation has its space on one side only ("I0≈ 3,2 · 10^−13 W/m²"); a leading `{}` in the second piece evens it (known).
+- [Minor] solutions.md 39 — "…noin 8000 m², ja" leaves "ja" alone on a line before the box at 390 px; harmless (carried).
 
 ## Checked
-- L2-06 solution open at 360 px (aligned, no clipping); scans at 360/390/1280 of all .eq-chain; changed Vastaus rounding sentences read.
+- Delta, round 3: exercises.json 342 (answer of the "negatiivinen taso" task, now two consecutive inline formulas) and solutions.md 188 (continuation row `&\quad \to 16 m`).
+- Own captures from preview/fy5-15.html?ratkaisut=1, every details open, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-13/: fy5-15-390-I32-0.png, fy5-15-1280-I32-0.png, fy5-15-390-to16m-1.png, fy5-15-1280-to16m-0.png, fy5-15-390-I32-1.png.
+- exercises.json 342: round 2's blocking item is gone. The formula stays in the sentence and the semicolon follows W/m² directly at both widths ("…pienempi, I = 10^−0,5 I0 ≈ 3,2 · 10^−13 W/m²; keskimääräinen kuulija…"); at 390 px the formula fits one line (right edge 340 of 360 px), mantissa and power of ten together.
+- solutions.md 188: at 390 px "1,0 m → 2,0 m → 4,0 m → 8,0 m" and an indented "→ 16 m," under it; at 1280 px the whole chain is one row (round 2's orphan remark is met).
+- scrollWidth equals the viewport at both widths; nothing clipped.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

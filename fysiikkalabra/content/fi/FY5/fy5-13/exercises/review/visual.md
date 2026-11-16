@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1d5f9df3a4fed506
-SCOPE: delta added-exercise from c716085d5bc703dc base 81db4a6fd727
+CONTENT-HASH: b08a3f564c89da53
+ROUND: 3
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy5-13/kuvio-tehtava (shown by task 13-18, already passed with L2-04) — the end label $1{,}20$ and the axis title $x\ (\text{m})$ sit on the tan pulley post, which cuts the "1"; still readable, and the task needs exactly this value, so moving the post or the labels a few pixels would help.
-- [Minor] fy5-13-L1-09 Järkevyys — one block holds a ratio check, an octave remark and the helium-voice explanation; the last part is a good remark but could be its own sentence group after the check. "ei muuta samalla tavalla" is slightly vague ("ei nosta äänen perustaajuutta samalla tavalla").
-- [Minor] fy5-13-L1-09 Vastaus — "vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella" is a teacher-side note; reword to say tables differ slightly.
+- [Minor] solutions.md 19, 79, 165 — the sentence ends in a bare "ja" before the boxed check ("…= 0,660 m, ja" + box); optional "ja tarkistus:" (carried).
 
 ## Checked
-- fy5-13-open-exercises-1280-9 and -10 (task 13-9, solution open), L2-1280-10, -11 and -12 (task 13-18 with `kuvio-tehtava`, solution open), 664 px wide. Delta only: L1-09 and L2-09.
-- Figure: string with four loops, five nodes, ruler $0$–$1{,}20\,\text{m}$ with LaTeX numbers, weight and pulley; gives the length and the loop count, neither the answer nor the wavelength. Nothing runs outside the frame.
-- Solutions: seven-part order; subscripts $f_{1,\text{He}}$, fractions, units upright, `\cdot`, colon for the written divisions, decimal commas, chains as aligned rows; the MAFY look-up (table and section named) is clear. The situation precedes the question in both tasks.
+- Delta, round 3: the packet's diff is empty and the hash is the one passed in round 2.
+- Own captures from preview/fy5-13.html?ratkaisut=1, every details open, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-13/: fy5-13-390-515Hz-0.png (390 px, dpr 2) and fy5-13-1280-515Hz-0.png, opened in sheet-390-spot.png and sheet-1280-spot.png.
+- The lifted Järkevyys check 515 Hz · 0,660 m ≈ 340 m/s is one row inside its box at both widths (right edge 271 of 333 px at 390 px), full stop inside the formula, units upright, decimal comma; scrollWidth equals the viewport.
 
 ## Scores
 illustrations 4 · typography 5 · Finnish 4 · accessibility 4

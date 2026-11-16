@@ -358,7 +358,9 @@ Fit a straight line to the data points, find its equation $T = kt + b$ and use i
 
 <!-- vaihe -->
 
-**Given and find.** The graph has six data points, and the fitted line has been drawn through the middle of the set. Two points far apart are read from the line: $A = (t_1;\ T_1) = (0\,\text{min};\ 20\,{}^\circ\text{C})$ and $B = (t_2;\ T_2) = (5.0\,\text{min};\ 60\,{}^\circ\text{C})$. We need the slope $k$, the constant term $b$ and the time $t$ at which $T = 40\,{}^\circ\text{C}$.
+**Given and find.** The graph has six data points, and the fitted line has been drawn through the middle of the set. Two points far apart are read from the line: $A = (t_1;\ T_1) = (0\,\text{min};\ 20\,{}^\circ\text{C})$ and $B = (t_2;\ T_2) = (5.0\,\text{min};\ 60\,{}^\circ\text{C})$.
+
+We need the slope $k$, the constant term $b$ and the time $t$ at which $T = 40\,{}^\circ\text{C}$.
 
 <!-- vaihe -->
 

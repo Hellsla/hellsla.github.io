@@ -158,7 +158,13 @@ Vedenkeittimen hyötysuhde on $90\,\%$, ja se ottaa sähköverkosta tehon $2{,}0
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Hyötysuhde $\eta = 90\,\%$, otettu teho $P_\text{o} = 2{,}0\,\text{kW}$ ja käyntiaika $t = 3{,}0\,\text{min}$. Kysytään häviöenergiaa $E_\text{h}$.
+**Tunnetut ja kysytty.**
+
+- Hyötysuhde $\eta = 90\,\%$,
+- otettu teho $P_\text{o} = 2{,}0\,\text{kW}$ ja
+- käyntiaika $t = 3{,}0\,\text{min}$.
+
+Kysytään häviöenergiaa $E_\text{h}$.
 
 <!-- vaihe -->
 
@@ -198,7 +204,9 @@ E_\text{h} &= E_\text{o} - E_\text{a} \\
 
 <!-- vaihe -->
 
-**Tulos.** Häviöiksi muuttuu $36\,000\,\text{J} = 36 \cdot 1000\,\text{J} = 36\,\text{kJ}$. Tulos annetaan kahdella merkitsevällä numerolla, koska lähtötiedot $90\,\%$, $2{,}0\,\text{kW}$ ja $3{,}0\,\text{min}$ on annettu kahden numeron tarkkuudella.
+**Tulos.** Häviöiksi muuttuu $36\,000\,\text{J} = 36 \cdot 1000\,\text{J} = 36\,\text{kJ}$.
+
+Tulos annetaan kahdella merkitsevällä numerolla, koska lähtötiedot $90\,\%$, $2{,}0\,\text{kW}$ ja $3{,}0\,\text{min}$ on annettu kahden numeron tarkkuudella.
 
 <!-- vaihe -->
 

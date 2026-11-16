@@ -411,7 +411,12 @@ Vetyatomin halkaisija on noin $1{,}1\cdot10^{-10}\,\text{m}$ ja protonin halkais
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Vetyatomin halkaisija $d_\text{atomi} = 1{,}1\cdot10^{-10}\,\text{m}$ ja protonin halkaisija $d_\text{protoni} = 1{,}7\cdot10^{-15}\,\text{m}$. Kysytään kokojen suhdetta $k$ ja kymmenpotenssien askelten määrää.
+**Tunnetut ja kysytty.**
+
+- Vetyatomin halkaisija $d_\text{atomi} = 1{,}1\cdot10^{-10}\,\text{m}$ ja
+- protonin halkaisija $d_\text{protoni} = 1{,}7\cdot10^{-15}\,\text{m}$.
+
+Kysytään kokojen suhdetta $k$ ja kymmenpotenssien askelten määrää.
 
 <!-- vaihe -->
 

@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 0f05dc9f0c7301b7
+CONTENT-HASH: 78c95cdf7cd99da3
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] fy5-12-L2-10 — the task text opens with a long situation paragraph (about 90 words) before a)–d); acceptable, but the PhET set-up steps could be a short list.
+
 
 ## Checked
-- Rendered preview/fi-easy/fy5-12.html?ratkaisut=1 at 360 and 1280 px with every solution open: DOM checks for red KaTeX, clipped or off-screen formulas, horizontal overflow, literal asterisks, plain quantities outside maths and paragraphs over 110 words (all clean except as listed). Exercise packets carried no capture files; judgement rests on these renders and the packet text.
-- New task fy5-12-L2-10 (Aineisto: link first, a–d, Vastaa laatikkoon) and its solution read in the packet and rendered.
+- Delta review, round 3: solutions.md line 157 (Sijoitus b): the sum `7,9 mm + 8,1 mm + 7,8 mm = 23,8 mm.` as an aligned display block.
+- Opened sheet-390-c.png (fy5-12-ex-390-0.png): the sum on one row, `= 23,8 mm.` indented on the next; nothing clipped.
+- Opened sheet-1280-c.png (fy5-12-ex-1280-0.png): joined to one row; `Niiden keskiarvo on` continues below.
+- Own Playwright captures (deviceScaleFactor 2) of preview/fi-easy/fy5-12.html?ratkaisut=1, every details box opened, at 390 and 1280 px, in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-easy-7/.
+- Page at both widths: scrollWidth = clientWidth, no KaTeX error nodes, no page errors.
+- Punctuation after a display formula sits inside the formula box; no line starts with a bare comma, full stop or dot.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

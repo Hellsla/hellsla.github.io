@@ -279,7 +279,11 @@ A skateboarder starts from rest at the edge of a half-pipe. At the edge her pote
 
 <!-- vaihe -->
 
-**Given and find.** At the start the potential energy is $E_\text{p} = 840\,\text{J}$ and the kinetic energy is zero, because the skateboarder is at rest. At the bottom the potential energy is zero and the kinetic energy is $E_\text{k} = 0.72\,\text{kJ}$. We want the amount of mechanical energy $E_\text{thermal}$ that friction changes into thermal energy during the slide.
+**Given and find.** At the start the potential energy is $E_\text{p} = 840\,\text{J}$ and the kinetic energy is zero, because the skateboarder is at rest.
+
+At the bottom the potential energy is zero and the kinetic energy is $E_\text{k} = 0.72\,\text{kJ}$.
+
+We want the amount of mechanical energy $E_\text{thermal}$ that friction changes into thermal energy during the slide.
 
 <!-- vaihe -->
 

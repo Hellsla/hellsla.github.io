@@ -24,24 +24,24 @@
       "stage": "herata",
       "type": "choice",
       "title": "Kertaa luvusta Paikka, nopeus ja tasainen liike kuvaajina",
-      "prompt": "Kärryn $(t,x)$-kuvaaja on suora, joka kulkee pisteiden $(0\\,\\text{s};\\, 2{,}0\\,\\text{m})$ ja $(4{,}0\\,\\text{s};\\, 14\\,\\text{m})$ kautta. Mikä on kärryn nopeus?",
+      "prompt": "Videolta mitattuna kivi putoaa ensimmäisen $0{,}50\\,\\text{s}$:n aikana $1{,}2\\,\\text{m}$. Kuinka suuri on kiven keskinopeus tällä aikavälillä?",
       "choices": [
         {
-          "text": "$3{,}0\\,\\text{m/s}$",
+          "text": "$2{,}4\\,\\text{m/s}$",
           "correct": true,
-          "feedback": "Oikein: nopeus on suoran kulmakerroin $v = \\dfrac{14\\,\\text{m} - 2{,}0\\,\\text{m}}{4{,}0\\,\\text{s} - 0\\,\\text{s}} = 3{,}0\\,\\text{m/s}$. Tässä luvussa sama ajatus siirtyy nopeuteen: kiihtyvyys on $(t,v)$-kuvaajan kulmakerroin."
+          "feedback": "Oikein: $v_\\text{k} = \\dfrac{\\Delta x}{\\Delta t} = \\dfrac{1{,}2\\,\\text{m}}{0{,}50\\,\\text{s}} = 2{,}4\\,\\text{m/s}$ alaspäin. Koko ensimmäisen sekunnin keskinopeus on jo noin $5\\,\\text{m/s}$, joten nopeus kasvaa. Tässä luvussa nopeuden muutosta kuvaa kiihtyvyys, $(t,v)$-kuvaajan kulmakerroin."
         },
         {
-          "text": "$3{,}5\\,\\text{m/s}$",
-          "feedback": "Jaoit loppupaikan ajalla: $\\dfrac{14\\,\\text{m}}{4{,}0\\,\\text{s}}$. Kärry ei lähde origosta vaan paikasta $2{,}0\\,\\text{m}$, joten nopeus lasketaan paikan muutoksesta $\\Delta x = 14\\,\\text{m} - 2{,}0\\,\\text{m}$."
+          "text": "$0{,}60\\,\\text{m/s}$",
+          "feedback": "Kerroit paikan muutoksen ja ajan: $1{,}2\\,\\text{m} \\cdot 0{,}50\\,\\text{s}$. Tulon yksikkö olisi $\\text{m}\\cdot\\text{s}$, ei $\\text{m/s}$. Keskinopeus on paikan muutos jaettuna ajalla: $v_\\text{k} = \\dfrac{\\Delta x}{\\Delta t}$."
         },
         {
-          "text": "$12\\,\\text{m/s}$",
-          "feedback": "Luku $12\\,\\text{m}$ on paikan muutos $\\Delta x$, ei nopeus. Nopeus saadaan, kun paikan muutos jaetaan siihen kuluneella ajalla $4{,}0\\,\\text{s}$."
+          "text": "$1{,}2\\,\\text{m/s}$",
+          "feedback": "Luku $1{,}2\\,\\text{m}$ on paikan muutos, ei nopeus. Kivi putoaa sen ajassa $0{,}50\\,\\text{s}$, joten nopeus saadaan, kun paikan muutos jaetaan tällä ajalla."
         },
         {
-          "text": "$0{,}33\\,\\text{m/s}$",
-          "feedback": "Jaoit ajan muutoksen paikan muutoksella. Nopeus on paikan muutos jaettuna ajan muutoksella: $v = \\dfrac{\\Delta x}{\\Delta t}$."
+          "text": "$0{,}42\\,\\text{m/s}$",
+          "feedback": "Jaoit ajan paikan muutoksella. Tuloksen yksikkö on $\\text{s/m}$, ei $\\text{m/s}$. Keskinopeus on paikan muutos jaettuna ajan muutoksella: $v_\\text{k} = \\dfrac{\\Delta x}{\\Delta t}$."
         }
       ]
     },

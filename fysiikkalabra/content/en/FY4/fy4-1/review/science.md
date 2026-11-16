@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 7161903ee08adbff
+CONTENT-HASH: 05e43588749f3641
+
 ## Blocking
 
 ## Polish
+- `inquiry.json` retrieval, the 0 km/h feedback: "The cyclist was moving all the time" sits oddly with the hook, where she stops to buy milk. Something like "She travelled 4.0 km" would make the same point without the conflict. This is not an error: the average speed is still distance over total time.
 
 ## Checked
-- Formula table: keskinopeus / average velocity $v_\text{k} = \Delta x/\Delta t = (x_2-x_1)/(t_2-t_1)$ equals MAFY; symbols and units defined right under it.
-- No $v_\text{ka}$/$v_\text{avg}$ left in lesson, inquiry (round-trip feedbacks: $\Delta x = 0$, $v_\text{k} = 0$; $16\,\text{m}/10\,\text{s} = 1{,}6\,\text{m/s}$ keskivauhti) or exit ticket ($200\,\text{m}$, displacement 0, $v_\text{k}=0$); concept card uses $v_\text{k}$.
-- lesson-answers.py unchanged and reproduces the inquiry numbers; fi, fi-easy, en say the same.
+batch delta review: the new retrieval question (cyclist 4.0 km in 16 min). Recomputed 15, 7.5 and 0.25 km/h. Exactly one option is correct, each distractor's feedback names its real mistake, and the question matches the hook (odometer, app, 2.0 km to the shop) and lesson-answers.py.

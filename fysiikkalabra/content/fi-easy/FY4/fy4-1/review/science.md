@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 685033f1f7ab9b40
+CONTENT-HASH: e53dcd34c0df4aa5
+
 ## Blocking
 
 ## Polish
+- None.
 
 ## Checked
-- Formula table: keskinopeus / average velocity $v_\text{k} = \Delta x/\Delta t = (x_2-x_1)/(t_2-t_1)$ equals MAFY; symbols and units defined right under it.
-- No $v_\text{ka}$/$v_\text{avg}$ left in lesson, inquiry (round-trip feedbacks: $\Delta x = 0$, $v_\text{k} = 0$; $16\,\text{m}/10\,\text{s} = 1{,}6\,\text{m/s}$ keskivauhti) or exit ticket ($200\,\text{m}$, displacement 0, $v_\text{k}=0$); concept card uses $v_\text{k}$.
-- lesson-answers.py unchanged and reproduces the inquiry numbers; fi, fi-easy, en say the same.
+batch delta review: Recomputed 4,0 km / (16/60) h = 15 km/h and the distractors 7,5 km/h (one leg 2,0 km, equal legs since the same road) and 0,25 (km/min); the 0 km/h feedback's app reading 0 m is given in the lesson's opening scenario; exactly one correct option; lesson-answers.py keys match.

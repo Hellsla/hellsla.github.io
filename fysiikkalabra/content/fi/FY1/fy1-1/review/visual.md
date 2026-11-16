@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b73fa5e62d69739d
+CONTENT-HASH: 8e706a99fd1c8ce5
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] Stage 1: the bullet with $d_\text{atomi}$ wraps so the formula drops to its own line; readable, may stay.
 
 ## Checked
-delta 5d reflow, round 1: opened contact sheet of all fi/fy1-1 captures at 360 px (captures 01.png); no clipping, equals signs aligned, rows break outside numbers and units.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+- Opened fy1-1-example-390-1 (stages 1–5): paragraph breaks and markers read cleanly, question last, no clipping or overflow at 390 px.

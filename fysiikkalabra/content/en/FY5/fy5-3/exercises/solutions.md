@@ -141,7 +141,7 @@
 **Conversions:** $r = 12\,\text{cm} = 12 \cdot 10\,\text{mm} = 120\,\text{mm}$ and $T = 1.0\,\text{h} = 60 \cdot 60\,\text{s} = 3600\,\text{s}$
 **Substitution:** $v = \dfrac{2\pi \cdot 120\,\text{mm}}{3600\,\text{s}} = \dfrac{754.0\,\text{mm}}{3600\,\text{s}} = 0.2094\,\text{mm/s}$
 **Answer:** $0.21\,\text{mm/s}$, two significant figures like the radius $12\,\text{cm}$ and the period $1.0\,\text{h}$.
-**Reasonableness:** In an hour the tip travels the circumference, about $754\,\text{mm}$. At the constant speed $0.21\,\text{mm/s}$ the distance travelled in an hour is $0.2094\,\text{mm/s} \cdot 3600\,\text{s} = 754\,\text{mm}$, the same as the circumference. The hand moves so slowly that the motion cannot be seen by eye.
+**Reasonableness:** In an hour the tip travels the circumference, about $754\,\text{mm}$. At the constant speed $0.21\,\text{mm/s}$ the distance travelled in an hour is $$\begin{aligned} &0.2094\,\text{mm/s} \cdot 3600\,\text{s} \\ &= 754\,\text{mm} \end{aligned}$$, the same as the circumference. The hand moves so slowly that the motion cannot be seen by eye.
 
 ## fy5-3-L1-09
 **Find:** how the tangential speed $v$ of the child changes when the radius increases from $1.2\,\text{m}$ to $2.4\,\text{m}$ and the frequency of rotation decreases from $16\,\tfrac{1}{\text{min}}$ to $8.0\,\tfrac{1}{\text{min}}$.
@@ -160,7 +160,7 @@ $\dfrac{v_2}{v_1} = \dfrac{2\pi r_2 f_2}{2\pi r_1 f_1}$
 
 $\dfrac{v_2}{v_1} = 2.0 \cdot 0.50$, that is, $\dfrac{v_2}{v_1} = 1.0$
 
-The tangential speed stays the same. Check: at the start $f_1 = \tfrac{16}{60\,\text{s}} \approx 0.267\,\tfrac{1}{\text{s}}$ and $v_1 = 2\pi \cdot 1.2\,\text{m} \cdot 0.267\,\tfrac{1}{\text{s}} \approx 2.0\,\text{m/s}$. At the end $f_2 = \tfrac{8.0}{60\,\text{s}} \approx 0.133\,\tfrac{1}{\text{s}}$ and $v_2 = 2\pi \cdot 2.4\,\text{m} \cdot 0.133\,\tfrac{1}{\text{s}} \approx 2.0\,\text{m/s}$. The increase of the radius alone would double the tangential speed, and the slowing down alone would halve it. The period doubles, but the tangential speed is proportional to the frequency of rotation and not to the period.
+The tangential speed stays the same. Check: at the start $f_1 = \tfrac{16}{60\,\text{s}} \approx 0.267\,\tfrac{1}{\text{s}}$ and $$\begin{aligned} v_1 &= 2\pi \cdot 1.2\,\text{m} \cdot 0.267\,\tfrac{1}{\text{s}} \\ &\approx 2.0\,\text{m/s} \end{aligned}$$. At the end $f_2 = \tfrac{8.0}{60\,\text{s}} \approx 0.133\,\tfrac{1}{\text{s}}$ and $$\begin{aligned} v_2 &= 2\pi \cdot 2.4\,\text{m} \cdot 0.133\,\tfrac{1}{\text{s}} \\ &\approx 2.0\,\text{m/s} \end{aligned}$$. The increase of the radius alone would double the tangential speed, and the slowing down alone would halve it. The period doubles, but the tangential speed is proportional to the frequency of rotation and not to the period.
 
 ## fy5-3-L2-05
 **Given:** times for ten revolutions $t_{10}$: $41.2\,\text{s}$, $40.6\,\text{s}$, $41.8\,\text{s}$, $40.9\,\text{s}$ and $41.5\,\text{s}$; distance of the seat from the axis $r = 2.1\,\text{m}$
@@ -198,7 +198,7 @@ v_{\text{geo}} &= \frac{2\pi \cdot 42.16 \cdot 10^{6}\,\text{m}}{86\,160\,\text{
 \end{aligned}
 ```
 **Answer:** a) The speeds are $7.59\,\text{km/s}$, $3.87\,\text{km/s}$ and, for the geostationary satellite, $3.07\,\text{km/s}$, three significant figures like the values in the table. b) The satellite farther away is slower: the radius of the orbit grows from top to bottom in the table, but the speed decreases. The answer box gets $3.07\,\text{km/s}$.
-**Reasonableness:** The period of the geostationary satellite, $1436\,\text{min} = 23.9\,\text{h}$, is almost a day, as it should be when the satellite stays in place in the sky with the rotation of the Earth. The circumference is $2\pi \cdot 42.16 \cdot 10^{6}\,\text{m} = 2.649 \cdot 10^{8}\,\text{m}$, and $3075\,\text{m/s} \cdot 86\,160\,\text{s} = 2.649 \cdot 10^{8}\,\text{m}$. In the data the circumference grows farther away, but the period grows even more: a revolution in the low orbit is about $15$ times shorter than in the geostationary one, whereas the circumference is only about $6$ times shorter.
+**Reasonableness:** The period of the geostationary satellite, $1436\,\text{min} = 23.9\,\text{h}$, is almost a day, as it should be when the satellite stays in place in the sky with the rotation of the Earth. The circumference is $$\begin{aligned} &2\pi \cdot 42.16 \cdot 10^{6}\,\text{m} \\ &= 2.649 \cdot 10^{8}\,\text{m} \end{aligned}$$, and $$\begin{aligned} &3075\,\text{m/s} \cdot 86\,160\,\text{s} \\ &= 2.649 \cdot 10^{8}\,\text{m} \end{aligned}$$. In the data the circumference grows farther away, but the period grows even more: a revolution in the low orbit is about $15$ times shorter than in the geostationary one, whereas the circumference is only about $6$ times shorter.
 
 ## fy5-3-L2-07
 **Given:** diameter of the tyre $d = 64\,\text{cm}$, rotation frequency $f = 8.0\,\tfrac{1}{\text{s}}$; the result of the student $32\,\text{m/s}$
@@ -242,7 +242,7 @@ The difference and the share of the speed in low orbit:
 \end{aligned}
 ```
 **Answer:** a) The speeds are $463\,\text{m/s}$, $408\,\text{m/s}$ and $213\,\text{m/s}$. b) Kourou gives a speed greater by $250\,\text{m/s}$ than Plesetsk, two significant figures, because the latitude $5.2\,{}^\circ$ is given with two digits. c) The speed from Kourou is about $6.0\,\%$ of the speed in low orbit. The speeds of the places differ because all of them make a revolution in the same time $T$, but a place nearer the pole goes round a smaller circle of latitude and travels a shorter distance in a revolution. The answer box gets $250\,\text{m/s}$.
-**Reasonableness:** At the equator the speed is $\dfrac{2\pi \cdot 6.371 \cdot 10^{6}\,\text{m}}{86\,164\,\text{s}} = 464.6\,\text{m/s}$, and Kourou is close to it, $462.7\,\text{m/s}$. The speed of Plesetsk is $\cos 62.7\,{}^\circ = 0.459$ times that at the equator: $0.459 \cdot 464.6\,\text{m/s} = 213\,\text{m/s}$. At the pole the radius is zero and so is the speed, so the speed decreases as the latitude increases. The extra speed from the rotation is thus only a small part of the speed in low orbit.
+**Reasonableness:** At the equator the speed is $\dfrac{2\pi \cdot 6.371 \cdot 10^{6}\,\text{m}}{86\,164\,\text{s}} = 464.6\,\text{m/s}$, and Kourou is close to it, $462.7\,\text{m/s}$. The speed of Plesetsk is $\cos 62.7\,{}^\circ = 0.459$ times that at the equator: $$0.459 \cdot 464.6\,\text{m/s} = 213\,\text{m/s}$$. At the pole the radius is zero and so is the speed, so the speed decreases as the latitude increases. The extra speed from the rotation is thus only a small part of the speed in low orbit.
 
 ## fy5-3-L3-05
 **Given:** speed $v = 1.2\,\text{m/s}$, start of the groove $r_1 = 25\,\text{mm}$, end of the groove $r_2 = 58\,\text{mm}$, spacing of the turns of the groove $1.6\,\mu\text{m}$

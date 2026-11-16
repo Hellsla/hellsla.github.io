@@ -25,20 +25,20 @@
       "type": "choice",
       "title": "Recall: impulse",
       "optional": true,
-      "prompt": "A baseball catcher catches a ball in two ways: once holding the glove rigidly in place, once pulling the hand back with the ball. Both times the speed of the ball changes from the same value to zero. What does pulling the hand back change?",
+      "prompt": "In a crash the passenger's velocity changes from the same value to zero, with or without a seat belt. Without a belt she stops when she hits the dashboard; with a belt the stretching belt stops her. What does the stretching belt change?",
       "choices": [
         {
-          "text": "The stopping time becomes longer, so the average force becomes smaller.",
+          "text": "The stopping time gets longer, so the average force gets smaller.",
           "correct": true,
-          "feedback": "Correct. In the chapter *Momentum and impulse* you learned that the change in momentum is the impulse $\\overline{F}\\,\\Delta t$. The change is the same both times, so a longer time means a smaller force. The seat belt and the airbag use the same idea."
+          "feedback": "Correct. In the chapter *Momentum and impulse* you learned that the change in momentum is the impulse $\\overline{F}\\,\\Delta t$. The change is the same both times, so a longer time means a smaller force. In this chapter the same idea explains the seat belt and the airbag."
         },
         {
-          "text": "The change in the ball's momentum becomes smaller, so the impulse also becomes smaller.",
-          "feedback": "The ball stops from the same speed both times, so the change in momentum and the impulse are the same. Moving the hand changes only the time in which the change happens, and therefore the force."
+          "text": "The passenger's change in momentum gets smaller, so the impulse gets smaller too.",
+          "feedback": "The passenger stops from the same velocity both times, so the change in momentum and the impulse are the same. The belt only changes the time in which the change happens, and so the force."
         },
         {
-          "text": "The force becomes greater, because the hand acts on the ball for longer.",
-          "feedback": "The impulse $F\\,\\Delta t$ is the same both times. If the time $\\Delta t$ grows, the force $F$ must become smaller so that the product stays the same."
+          "text": "The force gets larger, because the belt acts on the passenger for longer.",
+          "feedback": "The impulse $F\\,\\Delta t$ is the same both times. If the time $\\Delta t$ grows, the force $F$ must get smaller so that the product stays the same."
         }
       ]
     },

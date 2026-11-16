@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 52fe9b124a8c1f53
+CONTENT-HASH: d8e66ca82e009cca
 
 ## Blocking
 - none
@@ -8,7 +8,8 @@ CONTENT-HASH: 52fe9b124a8c1f53
 - none
 
 ## Checked
-- delta review 5d reflow, round 1: opened the 360 px captures (inquiry 01-02, 07, solutions 03-06); nothing clipped or scrolling, rows break at sensible points, equals signs aligned
+- Delta 8c md-paragraphs (light-gate task Periaate in four paragraphs; filter-paper task Periaate). Opened fy1-6-open-exercises-L2-1280-9, L2-1280-10, L2-1280-11, L3-1280-3, L3-1280-4, L3-1280-6, L3-1280-7. Paragraph breaks read clearly, formulas aligned, nothing clipped.
+- Hash run at start; the content was not edited meanwhile.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

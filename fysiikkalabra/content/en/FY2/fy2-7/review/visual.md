@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: f1025028f3c0c408
+CONTENT-HASH: e4bde5c1bc0d9477
 
 ## Blocking
 
 ## Polish
-- [Minor] reflow capture — none worth a change.
+(none)
 
 ## Checked
-batch delta review: reflow captures at 390 px opened (rows legible, nothing clipped, equals signs aligned, punctuation inside the last row, sentences read naturally); teacher-approved figures not re-judged.
+Delta (list of knowns). Opened en fy2-7-example-390-1 and -2: bullets render cleanly, question paragraph last.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

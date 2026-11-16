@@ -1,13 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: bd38d23a9510cd0c
-
+CONTENT-HASH: 41504aa51101b8ee
 ## Blocking
-None.
 
 ## Polish
-None new.
+- "yhden ilmakuution" is not explained for S2 students; write "yhden kuutiometrin ilmaa" and say the mass is the same.
 
 ## Checked
-- Delta: worked example, Järkevyys: (120 : 82)² ≈ 2,14 and 2,14 · 1,02 MW ≈ 2,2 MW; the chain now follows from the 1017 kW it cites, so the student can redo it.
-- Figures approved by the teacher: not judged.
-- Hash the same at start and end.
+batch delta review: changed retrieval prompts, option feedback and answers are clear, consistent with the lesson and correct in numbers; selkeä suomi, terms explained, no answer disclosed before acting.

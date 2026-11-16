@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 5133d82b246d965e
+CONTENT-HASH: eee552233cd72c1e
+
 ## Blocking
 
 ## Polish
-1. kortit/fy4.json and kortit/en/fy4.json (outside the hash): card `fy4-kiihtyvyys` still has $a = \dfrac{\Delta v}{\Delta t}$ and `fy4-keskikiihtyvyys` has no formula; the card change the commit message names is not in the files. Give `fy4-keskikiihtyvyys` the formula $a_\text{k} = \dfrac{\Delta v}{\Delta t}$ and take it off `fy4-kiihtyvyys`.
+- None.
+
 ## Checked
-- Earlier Blocking 1 fixed: the summary now says average acceleration $a_\text{k} = \Delta v/\Delta t$, and $a = a_\text{k}$ when the acceleration is constant, which matches the formula section.
-- Formula section: $a_\text{k}$, $v = v_0 + at$, $x = x_0 + v_0t + \tfrac12at^2$ with names and units are correct and as MAFY; worked example and inquiry (constant $a$) valid; numbers unchanged; fi, fi-easy, en agree.
+batch delta review: Recomputed 1,2 m / 0,50 s = 2,4 m/s (½·9,81·0,50² = 1,23 m, so the data is free fall), first-second mean 4,9 ≈ 5 m/s, distractors 0,60 (m·s) and 0,42 (s/m) with correct unit reasoning; one correct option; lesson.md change is row reflow only.

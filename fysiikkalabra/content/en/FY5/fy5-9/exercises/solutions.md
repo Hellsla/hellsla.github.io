@@ -159,7 +159,7 @@ $$, so $v = \sqrt{400\,\tfrac{1}{\text{s}^2} \cdot 0.00750\,\text{m}^2} = \sqrt{
 **Conversions:** The period is obtained from the time of ten cycles by dividing by ten, for example $4.5\,\text{s} : 10 = 0.45\,\text{s}$. The mass is already in kilograms.
 **Substitution:** $a = \dfrac{0.98\,\text{s}^2}{0.500\,\text{kg}} = 1.96\,\tfrac{\text{s}^2}{\text{kg}}$ and $k = \dfrac{4\pi^2}{1.96\,\text{s}^2/\text{kg}} = 20.14\,\text{N/m}$
 **Answer:** $20\,\text{N/m}$ (intermediate result $20.14\,\text{N/m}$), two significant figures, because the times of ten cycles $t_{10}$, for example $4.5\,\text{s}$, are given with two significant figures. Fitting by eye varies slightly.
-**Reasonableness:** Substitute the result back: with the mass $0.300\,\text{kg}$ the period is $2\pi\sqrt{0.300 : 20.14}\,\text{s} = 0.767\,\text{s}$, so the time of ten cycles would be $7.67\,\text{s}$, as in the table, $7.7\,\text{s}$. About $20\,\text{N/m}$ is a usual spring constant for a school spring.
+**Reasonableness:** Substitute the result back: with the mass $0.300\,\text{kg}$ the period is $$2\pi\sqrt{0.300 : 20.14}\,\text{s} = 0.767\,\text{s}$$, so the time of ten cycles would be $7.67\,\text{s}$, as in the table, $7.7\,\text{s}$. About $20\,\text{N/m}$ is a usual spring constant for a school spring.
 
 ## fy5-9-L2-07
 **Given:** length of the pendulum $l = 1.000\,\text{m}$, $g = 9.81\,\text{m/s}^2$, times of ten cycles $t_{10}$: $20.1\,\text{s}$ ($10.0\,{}^\circ$), $20.2\,\text{s}$ ($20.0\,{}^\circ$), $20.7\,\text{s}$ ($40.0\,{}^\circ$) and $21.5\,\text{s}$ ($60.0\,{}^\circ$); the uncertainty of the timing is about $0.2\,\text{s}$

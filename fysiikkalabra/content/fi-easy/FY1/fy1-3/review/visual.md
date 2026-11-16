@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 6ad9fe3bcd3ac274
+CONTENT-HASH: 78b52b36d1263ae6
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] Worked example stage 5: the first row of the sum of the six times runs to the edge of its box at 390 px (existing mathlayout wrap, not caused by this change).
 
 ## Checked
-- delta review 5d reflow, round 1: opened the 360 px captures (lesson 01, inquiry 02-04, solutions 05-15); nothing clipped or scrolling, rows break at sensible points, equals signs aligned
-
-## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review (md-paragraphs): opened the worked-example captures (example-390-*) of fy1-1…fy1-8 (a sample of the second parts); knowns as bulleted lists, remark and question in their own paragraphs with the question last; no clipping, overflow or red KaTeX; Finnish and units in LaTeX fine.

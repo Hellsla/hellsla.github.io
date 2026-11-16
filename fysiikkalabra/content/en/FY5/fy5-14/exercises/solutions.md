@@ -147,7 +147,7 @@ Statement 5 is true. At the moment of passing, the frequency drops. Behind a car
 **Given:** frequency of the horn at rest $f_0 = 392\,\text{Hz}$, four measured frequencies $431\,\text{Hz}$, $429\,\text{Hz}$, $432\,\text{Hz}$ and $430\,\text{Hz}$, speed of sound $v = 340\,\text{m/s}$
 **Find:** the speed of the car $v_\text{L}$
 **Principle:** The car, that is, the sound source, approaches a listener at rest, so the Doppler formula for a moving source with a minus sign applies. The measurements vary slightly, so we use their mean $f_\text{mean}$. The speed of the source is solved from the formula.
-**Processing the data:** The sum of the four frequencies in the table is $431 + 429 + 432 + 430 = 1722$ hertz, so the mean is $f_\text{mean} = \dfrac{1722\,\text{Hz}}{4} = 430.5\,\text{Hz}$.
+**Processing the data:** The sum of the four frequencies in the table is $$431 + 429 + 432 + 430 = 1722$$ hertz, so the mean is $f_\text{mean} = \dfrac{1722\,\text{Hz}}{4} = 430.5\,\text{Hz}$.
 **Formula:** $f_\text{mean} = f_0 \cdot \dfrac{v}{v - v_\text{L}}$, so $v - v_\text{L} = \dfrac{f_0 v}{f_\text{mean}}$ and $v_\text{L} = v \left(1 - \dfrac{f_0}{f_\text{mean}}\right)$
 **Conversions:** None needed: the frequencies are in hertz, and the unit cancels in their ratio.
 **Substitution:** $v_\text{L} = 340\,\text{m/s} \cdot \left(1 - \dfrac{392\,\text{Hz}}{430.5\,\text{Hz}}\right) = 340\,\text{m/s} \cdot 0.08943 = 30.41\,\text{m/s}$
@@ -215,7 +215,7 @@ $\begin{aligned} v &= 2 \cdot 0.650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254.8\,
 **Conversions:** None are needed: the frequencies are read in hertz.
 **Substitution:** $f_7 = 7 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$
 **Answer:** $1400\,\text{Hz}$, that is $1.40 \cdot 10^{3}\,\text{Hz}$, three significant figures like the fundamental $200\,\text{Hz}$ read from the graph.
-**Reasonableness:** The seventh harmonic lies above the fifth peak $1000\,\text{Hz}$ by two spacings: $1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} = 1400\,\text{Hz}$, since the spacing of the peaks is $200\,\text{Hz}$.
+**Reasonableness:** The seventh harmonic lies above the fifth peak $1000\,\text{Hz}$ by two spacings: $$\begin{aligned} &1000\,\text{Hz} + 2 \cdot 200\,\text{Hz} \\ &= 1400\,\text{Hz} \end{aligned}$$, since the spacing of the peaks is $200\,\text{Hz}$.
 
 ## fy5-14-L2-08
 **Given:** the combined sound of two tuning forks sounding at the same time, in the figure; one fork $523\,\text{Hz}$; wax lowers the frequency of the unknown fork and the beats get faster

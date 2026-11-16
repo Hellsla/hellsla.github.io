@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5bb30f3c070dbfcc
+CONTENT-HASH: 70028b023f1c1c1b
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] fy1-4-L2-09 text — "Ne on keksitty esimerkiksi" can be read as "for example"; write "Ne on keksitty esimerkkiä varten."
-- [Minor] fy1-4-L2-09 data table — the 13-row table is narrow and its caption wraps to five short lines in a half-width box; widen the caption or set it above the table.
-- [Minor] solution Järkevyys — the formula chain sits mid-sentence between "nousee" and "mikä vastaa"; reads correctly.
+(none)
 
 ## Checked
-- delta, round 1: fy1-4-L2-09 only. Opened open-exercises-L2-1280 parts 12, 13, 14 (task card with data table, Vastaus field, whole solution).
-- KaTeX clean, degrees/units upright with thin space, decimal comma, Kaava rows aligned, no clipping; set still reads as one.
+- Delta (md-paragraphs, solutions.md only): opened 1280 px open-solution captures of fy1-4 L1 part 7 (task 4-7 model answer) and L3 part 5 (L3-04/05 area).
+- Each changed Mallivastaus / Vastaus is now several short paragraphs inside the solution card; spacing between paragraphs is even, formulas and the aligned chains unchanged, nothing clipped or overflowing, hierarchy (labelled blocks) intact. Words unchanged, so the Finnish stands as previously passed.
+- Not every changed item had its own capture opened; the change is the same paragraph-break pattern in each.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 5

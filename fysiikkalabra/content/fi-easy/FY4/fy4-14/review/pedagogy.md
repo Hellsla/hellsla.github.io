@@ -1,11 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 2fd86b4d3019398a
-
+CONTENT-HASH: 35b940b761644836
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- The parachute photo caption could say what it shows of the physics (the canopy catches air); fine as is.
 
 ## Checked
-batch delta review: key_concepts judged against NOTES.md §12 and the editorial standard (central concepts, plain 1–2 sentence explanations, natural Finnish, physics unchanged); lesson rewordings, photos and captions, experiment/prompt wording and solution diagrams in this diff read clearly and agree with the tasks they touch.
+batch delta review: changed retrieval prompts, option feedback and answers are clear, consistent with the lesson and correct in numbers; selkeä suomi, terms explained, no answer disclosed before acting.

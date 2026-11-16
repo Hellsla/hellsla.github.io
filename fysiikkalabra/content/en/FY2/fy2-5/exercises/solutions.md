@@ -174,13 +174,21 @@ E &= Hm \\
 &= 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 3000\,\text{kg} \\
 &= 78\,000\,\text{MJ}
 \end{aligned}
-$$. The student’s result $78\,\text{MJ}$ is a thousand times too small. The formula, the heat of combustion of coal and the unit $\text{MJ}$ of the answer were correct. The thousandfold error also shows in an estimate: one kilogram of coal already gives $26\,\text{MJ}$, so three tonnes give much more than $78\,\text{MJ}$.
+$$.
+
+The student’s result $78\,\text{MJ}$ is a thousand times too small. The formula, the heat of combustion of coal and the unit $\text{MJ}$ of the answer were correct.
+
+The thousandfold error also shows in an estimate: one kilogram of coal already gives $26\,\text{MJ}$, so three tonnes give much more than $78\,\text{MJ}$.
 
 ## fy2-5-L2-07
 **Given:** a table $(t, m)$, heat of combustion of the pellets $H = 17\,\tfrac{\text{MJ}}{\text{kg}}$; the burner burns steadily
 **Find:** the power $P$ released in the burning, in kilowatts
 **Principle:** The burner burns steadily, so the mass decreases steadily and the graph $m(t)$ is a straight line; its slope tells the mass burned per minute. The burned mass releases an energy $E = Hm$, and power is energy per unit of time, $P = E : t$ (chapter *Power*).
-**Reading the graph:** When the points $(t, m)$ are plotted, they lie roughly on the same descending line, because the mass decreases by about $0.65\,\text{kg}$ every $10$ minutes (the small scatter of the measured points is part of the measurement). A suitable line is drawn through the points and its slope is read from the ends of the line, which pass through the points $(0\,\text{min}, 12.00\,\text{kg})$ and $(40\,\text{min}, 9.40\,\text{kg})$: $k = \dfrac{9.40\,\text{kg} - 12.00\,\text{kg}}{40\,\text{min} - 0\,\text{min}} = -0.065\,\tfrac{\text{kg}}{\text{min}}$. The minus sign shows that the mass decreases, so the rate at which mass burns is $0.065\,\tfrac{\text{kg}}{\text{min}}$.
+**Reading the graph:** When the points $(t, m)$ are plotted, they lie roughly on the same descending line, because the mass decreases by about $0.65\,\text{kg}$ every $10$ minutes (the small scatter of the measured points is part of the measurement).
+
+A suitable line is drawn through the points and its slope is read from the ends of the line, which pass through the points $(0\,\text{min}, 12.00\,\text{kg})$ and $(40\,\text{min}, 9.40\,\text{kg})$: $k = \dfrac{9.40\,\text{kg} - 12.00\,\text{kg}}{40\,\text{min} - 0\,\text{min}} = -0.065\,\tfrac{\text{kg}}{\text{min}}$.
+
+The minus sign shows that the mass decreases, so the rate at which mass burns is $0.065\,\tfrac{\text{kg}}{\text{min}}$.
 **Formula:** $E = Hm$ and $P = \dfrac{E}{t}$, together $P = H \cdot \dfrac{m}{t}$
 **Conversions:** $1\,\text{min} = 60\,\text{s}$, so $0.065\,\tfrac{\text{kg}}{\text{min}} = 0.065\,\text{kg} : 60\,\text{s}$. The heat of combustion is $17\,\tfrac{\text{MJ}}{\text{kg}} = 17 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}}$, and $1\,\text{W} = 1\,\tfrac{\text{J}}{\text{s}}$.
 **Substitution:** $P = 17 \cdot 10^{6}\,\tfrac{\text{J}}{\text{kg}} \cdot \dfrac{0.065\,\text{kg}}{60\,\text{s}} = 18\,417\,\text{W} = 18.4\,\text{kW}$
@@ -190,11 +198,23 @@ $$. The student’s result $78\,\text{MJ}$ is a thousand times too small. The fo
 ## fy2-5-L3-04
 **Given:** the monthly energies in the table (sum below); pellets $H_\text{p} = 17\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta_\text{p} = 85\,\% = 0.85$; oil $H_\text{oil} = 40.6\,\tfrac{\text{MJ}}{\text{kg}}$, $\eta_\text{oil} = 90\,\% = 0.90$; efficiency with poor adjustment $\eta_\text{p}' = 0.70$
 **Find:** the yearly consumption of pellets $m_\text{p}$ in kilograms; also the useful energy of the year $E_\text{useful}$, the mass of oil $m_\text{oil}$ and the extra consumption of pellets at efficiency $0.70$
-**Principle:** The energy in the table is the useful energy that ends up in the heating. The efficiency is the share of the energy released from the fuel that becomes useful energy, so the energy released is $E_\text{in} = E_\text{useful} : \eta$ and the mass of the fuel follows from the law $E = Hm$. Energy is conserved: what does not end up in the heating is lost in the flue gases and the boiler (chapter *Efficiency*).
+**Principle:** The energy in the table is the useful energy that ends up in the heating. The efficiency is the share of the energy released from the fuel that becomes useful energy, so the energy released is $E_\text{in} = E_\text{useful} : \eta$ and the mass of the fuel follows from the law $E = Hm$.
+
+Energy is conserved: what does not end up in the heating is lost in the flue gases and the boiler (chapter *Efficiency*).
 **Formula:** $E_\text{in} = \dfrac{E_\text{useful}}{\eta}$ and $E_\text{in} = Hm$, so $m = \dfrac{E_\text{useful}}{\eta H}$
 **Conversions:** $1\,\text{kWh} = 3.6\,\text{MJ}$, so $E_\text{useful} = 13\,300 \cdot 3.6\,\text{MJ}$. Efficiencies $85\,\% = 0.85$, $90\,\% = 0.90$ and $70\,\% = 0.70$.
-**Substitution:** Add the months in groups of four: $2100 + 1900 + 1600 + 1100$ that is $6700$, $600 + 250 + 200 + 250$ that is $1300$ and $600 + 1100 + 1600 + 2000$ that is $5300$, so the sum is $6700 + 1300 + 5300 = 13\,300$, so $E_\text{useful} = 13\,300\,\text{kWh} = 13\,300 \cdot 3.6\,\text{MJ} = 47\,880\,\text{MJ}$. With pellets $E_\text{in} = 47\,880\,\text{MJ} : 0.85 = 56\,329\,\text{MJ}$ and $m_\text{p} = 56\,329\,\text{MJ} : 17\,\tfrac{\text{MJ}}{\text{kg}} = 3313\,\text{kg}$. With oil $E_\text{in} = 47\,880\,\text{MJ} : 0.90 = 53\,200\,\text{MJ}$ and $m_\text{oil} = 53\,200\,\text{MJ} : 40.6\,\tfrac{\text{MJ}}{\text{kg}} = 1310\,\text{kg}$. At efficiency $0.70$ the pellets need $47\,880\,\text{MJ} : 0.70 = 68\,400\,\text{MJ}$ and $m_\text{p}' = 68\,400\,\text{MJ} : 17\,\tfrac{\text{MJ}}{\text{kg}} = 4024\,\text{kg}$, so the extra consumption is $4024\,\text{kg} - 3313\,\text{kg} = 710\,\text{kg}$.
-**Answer:** The heating energy of the year is $13\,300\,\text{kWh} = 47\,900\,\text{MJ}$. The pellets used are $3300\,\text{kg}$, about $3.3$ tonnes, two significant figures like the efficiency $85\,\%$ and the heat of combustion $17\,\tfrac{\text{MJ}}{\text{kg}}$. The oil used is $1300\,\text{kg}$, and with poor adjustment about $710\,\text{kg}$ more pellets are used. The mass of pellets is about $2.5$ times the mass of oil, but the ratio of the heats of combustion is $40.6 : 17 = 2.4$. The difference is due to the efficiencies: the efficiency of the oil boiler is higher ($0.90$ instead of $0.85$), so even less oil is needed, and $2.4 \cdot (0.90 : 0.85) = 2.5$. A drop in efficiency increases the consumption, because the same useful energy has to be obtained from a larger energy released; the losses grow.
+**Substitution:** Add the months in groups of four: $2100 + 1900 + 1600 + 1100$ that is $6700$, $600 + 250 + 200 + 250$ that is $1300$ and $600 + 1100 + 1600 + 2000$ that is $5300$, so the sum is $6700 + 1300 + 5300 = 13\,300$, so $E_\text{useful} = 13\,300\,\text{kWh} = 13\,300 \cdot 3.6\,\text{MJ} = 47\,880\,\text{MJ}$.
+
+With pellets $E_\text{in} = 47\,880\,\text{MJ} : 0.85 = 56\,329\,\text{MJ}$ and $m_\text{p} = 56\,329\,\text{MJ} : 17\,\tfrac{\text{MJ}}{\text{kg}} = 3313\,\text{kg}$.
+
+With oil $E_\text{in} = 47\,880\,\text{MJ} : 0.90 = 53\,200\,\text{MJ}$ and $m_\text{oil} = 53\,200\,\text{MJ} : 40.6\,\tfrac{\text{MJ}}{\text{kg}} = 1310\,\text{kg}$.
+
+At efficiency $0.70$ the pellets need $47\,880\,\text{MJ} : 0.70 = 68\,400\,\text{MJ}$ and $m_\text{p}' = 68\,400\,\text{MJ} : 17\,\tfrac{\text{MJ}}{\text{kg}} = 4024\,\text{kg}$, so the extra consumption is $4024\,\text{kg} - 3313\,\text{kg} = 710\,\text{kg}$.
+**Answer:** The heating energy of the year is $13\,300\,\text{kWh} = 47\,900\,\text{MJ}$. The pellets used are $3300\,\text{kg}$, about $3.3$ tonnes, two significant figures like the efficiency $85\,\%$ and the heat of combustion $17\,\tfrac{\text{MJ}}{\text{kg}}$. The oil used is $1300\,\text{kg}$, and with poor adjustment about $710\,\text{kg}$ more pellets are used.
+
+The mass of pellets is about $2.5$ times the mass of oil, but the ratio of the heats of combustion is $40.6 : 17 = 2.4$. The difference is due to the efficiencies: the efficiency of the oil boiler is higher ($0.90$ instead of $0.85$), so even less oil is needed, and $2.4 \cdot (0.90 : 0.85) = 2.5$.
+
+A drop in efficiency increases the consumption, because the same useful energy has to be obtained from a larger energy released; the losses grow.
 **Reasonableness:** A rough estimate: $13\,300\,\text{kWh}$ is about $48\,000\,\text{MJ}$, and pellets give $17\,\text{MJ}$ per kilogram, so without losses $48\,000 : 17 = 2820\,\text{kg}$ would be needed. Because of the losses the amount is larger, $2820\,\text{kg} : 0.85 = 3320\,\text{kg}$, which agrees with the result. Consumption is highest in the winter months, and in summer heating energy is needed only for hot water.
 
 ## fy2-5-L3-05
@@ -205,9 +225,13 @@ $$. The student’s result $78\,\text{MJ}$ is a thousand times too small. The fo
 **Conversions:** Not needed: the energy is in megajoules and the heats of combustion in megajoules per kilogram. The percentages as ratios are $70\,\% = 0.70$, $85\,\% = 0.85$, $90\,\% = 0.90$ and $75\,\% = 0.75$.
 **Substitution:** $m_\text{wood} = \dfrac{36\,000\,\text{MJ}}{0.70 \cdot 15\,\tfrac{\text{MJ}}{\text{kg}}} = 3429\,\text{kg}$, $m_\text{pellet} = \dfrac{36\,000\,\text{MJ}}{0.85 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2491\,\text{kg}$ and $m_\text{oil} = \dfrac{36\,000\,\text{MJ}}{0.90 \cdot 40.6\,\tfrac{\text{MJ}}{\text{kg}}} = 985\,\text{kg}$. The difference is $\Delta m = 3429\,\text{kg} - 2491\,\text{kg} = 938\,\text{kg}$. At efficiency $0.75$ the pellets used are $m_\text{pellet}' = \dfrac{36\,000\,\text{MJ}}{0.75 \cdot 17\,\tfrac{\text{MJ}}{\text{kg}}} = 2824\,\text{kg}$.
 **Answer:** in the answer box, the result of part b), $940\,\text{kg}$.
+
 a) The wood used is $3400\,\text{kg}$, the pellets $2500\,\text{kg}$ and the oil $990\,\text{kg}$.
+
 b) About $940\,\text{kg}$ more wood than pellets is used, two significant figures like the data $36\,000\,\text{MJ}$.
+
 c) The consumption of pellets rises at efficiency $0.75$ to $2800\,\text{kg}$, that is $330\,\text{kg}$ more: when the efficiency drops, part of the energy released goes to losses and more fuel is needed for the same useful energy.
+
 d) The least oil is used, because its heat of combustion is more than twice that of wood and pellets ($40.6 : 15 = 2.7$), while the efficiencies are of the same order of magnitude ($0.90$ and $0.70$); the heat of combustion determines the order of magnitude of the mass.
 **Reasonableness:** An estimate without losses: wood $36\,000 : 15 = 2400\,\text{kg}$ and pellets $36\,000 : 17 = 2120\,\text{kg}$. The efficiencies increase these to $2400 : 0.70 = 3430\,\text{kg}$ and $2120 : 0.85 = 2490\,\text{kg}$, which agrees with the result. The mass for the pellet boiler grows by a factor of $2824\,\text{kg} : 2491\,\text{kg} = 1.13$, and $0.85 : 0.75 = 1.13$, as it should.
 
@@ -215,11 +239,17 @@ d) The least oil is used, because its heat of combustion is more than twice that
 **Find:** the order of the fuels by the energy $E$ released, from smallest to greatest
 **Principle:** The energy released from each fuel is $E = Hm$ when the mass is in kilograms. The order is not the same as the order of the masses or of the heats of combustion, because both affect the energy.
 **Model answer:** First convert the masses to kilograms: $1500\,\text{g} = 1.5\,\text{kg}$ and $0.0040\,\text{t} = 4.0\,\text{kg}$. Then calculate the energies:
+
 Petrol: $E = 43\,\tfrac{\text{MJ}}{\text{kg}} \cdot 1.5\,\text{kg} = 64.5\,\text{MJ}$
 Firewood: $E = 15\,\tfrac{\text{MJ}}{\text{kg}} \cdot 5.0\,\text{kg} = 75\,\text{MJ}$
 Coal: $E = 26\,\tfrac{\text{MJ}}{\text{kg}} \cdot 4.0\,\text{kg} = 104\,\text{MJ}$
 Milled peat: $E = 10\,\tfrac{\text{MJ}}{\text{kg}} \cdot 12\,\text{kg} = 120\,\text{MJ}$
-From smallest to greatest: petrol, firewood, coal, milled peat. By mass the order would be petrol ($1.5\,\text{kg}$), coal ($4.0\,\text{kg}$), firewood ($5.0\,\text{kg}$), milled peat ($12\,\text{kg}$), so firewood and coal swap places: the greater heat of combustion of coal makes up for its smaller mass. Estimate: petrol has more than $40\,\text{MJ}$ per kilogram but only a small amount, so its energy is the smallest, which agrees.
+
+From smallest to greatest: petrol, firewood, coal, milled peat.
+
+By mass the order would be petrol ($1.5\,\text{kg}$), coal ($4.0\,\text{kg}$), firewood ($5.0\,\text{kg}$), milled peat ($12\,\text{kg}$), so firewood and coal swap places: the greater heat of combustion of coal makes up for its smaller mass.
+
+Estimate: petrol has more than $40\,\text{MJ}$ per kilogram but only a small amount, so its energy is the smallest, which agrees.
 
 ## fy2-5-L1-09
 **Given:** mass of ethanol $m = 0.50\,\text{kg}$; heat of combustion from the MAFY table (Polttoaineiden LHV-lämpöarvoja, ethanol) $H = 26.7\,\tfrac{\text{MJ}}{\text{kg}}$

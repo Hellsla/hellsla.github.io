@@ -195,13 +195,21 @@
 **Kaava:** $v = \dfrac{\Delta s}{\Delta t}$; piirroksessa pituus on mitta-arvo kertaa mittakaava
 **Muunnokset:** Ei tarvita nopeuden laskussa. Piirroksessa $\Delta s = 3{,}0 \cdot 1{,}0\,\text{cm} = 3{,}0\,\text{cm}$ ja $\Delta t = 0{,}010 \cdot 10\,\text{cm} = 0{,}10\,\text{cm}$.
 **Sijoitus:** $v = \dfrac{3{,}0\,\text{m}}{0{,}010\,\text{s}} = 300\,\tfrac{\text{m}}{\text{s}}$. Viiva nousee yhdessä kuvausvälissä $3{,}0\,\text{cm}$ ja etenee vaakasuunnassa vain $0{,}10\,\text{cm}$, eli $1{,}0\,\text{mm}$.
-**Vastaus:** $300\,\text{m/s}$, kaksi merkitsevää numeroa kuten paikkojen erotuksessa $3{,}0\,\text{m}$. Viiva nousee $3{,}0\,\text{cm}$ ja etenee $0{,}10\,\text{cm}$, joten se nousee noin $30$ kertaa niin paljon kuin etenee vaakasuunnassa ja näyttää lähes pystysuoralta. Se ei silti ole pystysuora: kuvausvälillä kuluu aina aikaa $\Delta t > 0$, ja luoti on jokaisella hetkellä täsmälleen yhdessä paikassa. Pystysuora viiva vaatisi, että luoti olisi samalla hetkellä kahdessa paikassa eli nopeus olisi ääretön.
+**Vastaus:** $300\,\text{m/s}$, kaksi merkitsevää numeroa kuten paikkojen erotuksessa $3{,}0\,\text{m}$.
+
+Viiva nousee $3{,}0\,\text{cm}$ ja etenee $0{,}10\,\text{cm}$, joten se nousee noin $30$ kertaa niin paljon kuin etenee vaakasuunnassa ja näyttää lähes pystysuoralta.
+
+Se ei silti ole pystysuora: kuvausvälillä kuluu aina aikaa $\Delta t > 0$, ja luoti on jokaisella hetkellä täsmälleen yhdessä paikassa. Pystysuora viiva vaatisi, että luoti olisi samalla hetkellä kahdessa paikassa eli nopeus olisi ääretön.
 **Järkevyys:** Nopeus $300\,\text{m/s}$ on samaa suuruusluokkaa kuin äänen nopeus $343\,\text{m/s}$ ja sopii nopealle luodille. Tarkistus: $300\,\text{m/s} \cdot 0{,}010\,\text{s} = 3{,}0\,\text{m}$, sama kuin taulukossa. Pysähtynyt kappale piirtyisi vaakasuorana viivana, koska $\Delta s = 0$.
 
 ## fy1-5-L2-08
 **Kysytty:** mikä neljästä kuvaajasta esittää kävelijän paikkaa $s$ ajan $t$ funktiona, kun hän seisoo ensin kohdassa $6{,}0\,\text{m}$ ja kävelee sitten tasaisesti vauhdilla $1{,}0\,\text{m/s}$ takaisin lähtöpisteeseen.
 **Periaate:** $(t, s)$-kuvaajan korkeus on paikka ja kulmakerroin $\Delta s : \Delta t$ on nopeus. Kun kappale on paikallaan, $\Delta s = 0$ ja viiva on vaakasuora. Tasaisessa liikkeessä viiva on suora; jos paikka kasvaa, suora nousee, ja jos paikka pienenee, suora laskee. Suoran jyrkkyys kertoo vauhdin eli nopeuden suuruuden. Kun paikka pienenee, kulmakerroin eli nopeus on negatiivinen.
-**Mallivastaus:** Oikea on kuvaaja C. Aluksi paikka on koko ajan $s = 6{,}0\,\text{m}$, joten viiva on vaakasuora tällä korkeudella. Paluumatka $6{,}0\,\text{m}$ kestää $\Delta t = 6{,}0\,\text{m} : 1{,}0\,\text{m/s} = 6{,}0\,\text{s}$, joten kävelijä on lähtöpisteessä hetkellä $4{,}0\,\text{s} + 6{,}0\,\text{s} = 10\,\text{s}$. Paikka pienenee, joten suora laskee, ja sen jyrkkyys vastaa vauhtia $6{,}0\,\text{m} : 6{,}0\,\text{s} = 1{,}0\,\text{m/s}$. Kuvaajassa A suora nousee, eli paikka kasvaisi ja kävelijä menisi poispäin. Kuvaaja B on $(t, v)$-kuvaaja, jossa on nopeus eikä paikka. Kuvaaja D esittää kuljettua matkaa $\Delta s$, joka alkaa nollasta, vaikka kävelijän paikka on alussa $6{,}0\,\text{m}$.
+**Mallivastaus:** Oikea on kuvaaja C. Aluksi paikka on koko ajan $s = 6{,}0\,\text{m}$, joten viiva on vaakasuora tällä korkeudella.
+
+Paluumatka $6{,}0\,\text{m}$ kestää $\Delta t = 6{,}0\,\text{m} : 1{,}0\,\text{m/s} = 6{,}0\,\text{s}$, joten kävelijä on lähtöpisteessä hetkellä $4{,}0\,\text{s} + 6{,}0\,\text{s} = 10\,\text{s}$. Paikka pienenee, joten suora laskee, ja sen jyrkkyys vastaa vauhtia $6{,}0\,\text{m} : 6{,}0\,\text{s} = 1{,}0\,\text{m/s}$.
+
+Kuvaajassa A suora nousee, eli paikka kasvaisi ja kävelijä menisi poispäin. Kuvaaja B on $(t, v)$-kuvaaja, jossa on nopeus eikä paikka. Kuvaaja D esittää kuljettua matkaa $\Delta s$, joka alkaa nollasta, vaikka kävelijän paikka on alussa $6{,}0\,\text{m}$.
 **Kuvaajan lukeminen:** Kuvaajista luetaan, mistä paikasta viiva alkaa hetkellä $t = 0$, onko se aikavälillä $0\text{–}4{,}0\,\text{s}$ vaakasuora ja nouseeko vai laskeeko se sen jälkeen. Lisäksi tarkistetaan pystyakselin suure: kuvaajassa B se on nopeus $v$. Vain kuvaajassa C viiva alkaa kohdasta $6{,}0\,\text{m}$, pysyy siinä hetkeen $4{,}0\,\text{s}$ ja laskee sitten pisteeseen $(10\,\text{s};\ 0\,\text{m})$.
 
 ## fy1-5-L1-09

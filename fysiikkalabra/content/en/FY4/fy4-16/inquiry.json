@@ -25,24 +25,24 @@
       "type": "choice",
       "title": "Review: the work–energy principle",
       "optional": true,
-      "prompt": "A box slides on a horizontal floor and stops. At the start its kinetic energy is $40\\,\\text{J}$. Nobody pushes or pulls it. What happens to the mechanical energy of the box while it slides?",
+      "prompt": "At the foot of the hill a sledge slides on level snow and stops. At the start its kinetic energy is $40\\,\\text{J}$. Nobody pushes or pulls it. What happens to the sledge's mechanical energy while it slides?",
       "choices": [
         {
           "text": "It decreases by $40\\,\\text{J}$, because friction does negative work.",
           "correct": true,
-          "feedback": "Correct. In the chapter *Conservation of mechanical energy and the work–energy principle* you learned that the change in mechanical energy is the work done by forces other than the weight, $\\Delta E_\\text{mech} = W$. The height does not change, so all of the kinetic energy $40\\,\\text{J}$ turns into internal energy. In this chapter the same principle solves the sliding of the sled."
+          "feedback": "Correct. In the chapter *Conservation of mechanical energy and the work–energy principle* you learned that the change in mechanical energy is the work done by forces other than the weight, $\\Delta E_\\text{mech} = W$. The height does not change, so all the kinetic energy, $40\\,\\text{J}$, becomes internal energy. In this chapter the same principle decides how far the sledges slide."
         },
         {
-          "text": "It is conserved, because energy does not disappear anywhere.",
-          "feedback": "The total energy is conserved, but the mechanical energy is not: friction turns it into internal energy of the box and the floor. Mechanical energy is conserved only when forces other than the weight do no work."
+          "text": "It is conserved, because energy never disappears.",
+          "feedback": "Total energy is conserved, but mechanical energy is not: friction turns it into internal energy of the sledge and the snow. Mechanical energy is conserved only when forces other than the weight do no work."
         },
         {
-          "text": "It decreases, because the normal force does negative work and stops the box.",
-          "feedback": "The normal force is perpendicular to the motion, so it does no work. The box is stopped by friction, which points against the motion and does negative work."
+          "text": "It decreases, because the normal force does negative work and stops the sledge.",
+          "feedback": "The normal force is perpendicular to the motion, so it does no work. The sledge is stopped by friction, which points against the motion and does negative work."
         },
         {
-          "text": "It turns into potential energy, because the box stops.",
-          "feedback": "Potential energy changes only when the height changes. The box slides on a horizontal floor, so the kinetic energy does not turn into potential energy but, because of friction, into internal energy."
+          "text": "It turns into potential energy, because the sledge stops.",
+          "feedback": "Potential energy changes only when the height changes. The sledge slides on level snow, so the kinetic energy does not become potential energy but, because of friction, internal energy."
         }
       ]
     },

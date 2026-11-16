@@ -6,11 +6,11 @@ CONTENT-HASH: 9fb56f569a24221e
 
 ## Polish
 - [Minor] L1-06 solution has a 151-word paragraph (untouched; split it when next edited).
-- [Minor] L2-03 eq-chain 460 px against 272 px scrolls at 360 px; known/untouched.
 
 ## Checked
-- own Playwright render of preview/en/fy5-10.html?ratkaisut=1 at 360 and 1280 px, every solution open: automated scan of all 20+ task cards for horizontal overflow, KaTeX errors, literal asterisks, plain quantities, × and ÷, decimal comma, paragraphs over 120 words (none of the Finnish faults except long paragraphs, below); element captures of L3-04 at 360 and 1280 px opened where noted. Opened 10-3-04 at 360 and 1280.
-- English: quotation marks are curly “…”, decimal point in text and maths, units in LaTeX with thin space, `\cdot`, no × or ÷, no literal asterisks; instructions end with the question as its own sentence.
+- Delta, round 3 (English): no content change since the version I passed (hash unchanged, empty diff).
+- Opened fy5-10-ex-10-12-390.png and fy5-10-ex-10-12-1280.png (a full solution, every step open): the substitution block `d = 343 m/s · 4.0 s` | `= 1372 m` | `= 1.372 km` aligned, units upright, answer box and Reasonableness intact; the same run found no visible display formula or eq-chain wider than its box at either width.
+- - Own Playwright captures from the current preview/en pages (?ratkaisut=1, every details box open, hidden feedback and model boxes revealed) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-en-7/; measured in the same run: page scrollWidth equals the viewport, no KaTeX error, no formula past its box.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

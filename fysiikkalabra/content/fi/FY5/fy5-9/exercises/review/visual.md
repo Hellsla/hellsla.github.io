@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5635c992b22793c9
+CONTENT-HASH: 837b4e21b5dfd674
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy5-9-L3-05 Vastaus/Answer — the a), b), c) parts run together in one paragraph; readable at 360 px, but a full stop before each letter is the only separator. Accepted trade-off for answers_shown.py; optional: bold the letters.
+(none)
 
 ## Checked
-- Delta round 1: rendered the solution open at 360 px (?ratkaisut=1), the one-paragraph answer row; scrollWidth 360, no overflow, no clipped formulas, units upright with thin spaces, decimal handling unchanged.
-- Judged the changed paragraph only; no word changed.
+- Delta, round 3: no content change since round 2 (hash unchanged). Looked again at solutions.md:162 (Järkevyys).
+- Opened fy5-9-ex-takaisin-0-390.png and sheet-ex-1280.png (takaisin at 1280): `2π√(0,300 : 20,14) s = 0,767 s,` on one row in its box, the root covers the whole quotient, the unit upright, the comma inside; the sentence continues "joten kymmenen jakson aika olisi". Nothing clipped.
+- Own Playwright captures from the current preview/ pages (?ratkaisut=1, every details box open, hidden feedback/model boxes revealed) at 390 and 1280 px in /tmp/claude-0/-home-user-hellsla-github-io/ec927bcd-bc65-54ed-bfcf-2386619399a5/scratchpad/vis3-fi-7/; measured in the same run: page scrollWidth equals the viewport, no formula past its box.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
