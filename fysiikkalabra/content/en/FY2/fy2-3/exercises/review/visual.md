@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 05fd3289498b07ef
-SCOPE: delta added-exercise from 325eef0773b53418 base 6ecef1197865
+CONTENT-HASH: 6245c1246e99cbb6
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] 3-19 solution — subscript $C_\text{väl}$ is Finnish in an English text, and snt (cent) is unexplained in the solution itself — use $C_\text{margin}$; the task text does gloss snt.
 
 ## Checked
-- Delta review. Opened fy2-3-open-exercises-L2-1280-9, -10, -11: new exercise 3-19 (text, solution, answer, reasonableness). Source link to Yle is visible, underlined, target=_blank rel=noopener, date in words (accessed 16 November 2026); Fingrid link likewise in part c.
-- Hash at start and end: 05fd3289498b07ef.
+- Delta (md-paragraphs): solutions split into short paragraphs. Opened en captures fy2-3-open-exercises-L3-1280-2 (household, Reasonableness), -4 (grid table task), -6 (fridge task), -7 (fridge Answer/Reasonableness) and L2-1280-11, -12 (negative-price task, Answer parts c and d, Reasonableness): each paragraph stands alone, formulas and aligned rows intact, nothing clipped.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

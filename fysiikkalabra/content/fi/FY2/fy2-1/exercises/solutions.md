@@ -38,7 +38,13 @@ $$
 ## fy2-1-L1-04
 **Kysytty:** kussakin tilanteessa energialaji alussa ja hyödyllinen energialaji, joksi energia muuttuu
 **Periaate:** Energialaji kertoo, mihin energia on sitoutunut tai miten se ilmenee. Polttoaineissa energia on kemiallisissa sidoksissa, auringonvalo on säteilyä ja korkealla olevalla vedellä on asemansa vuoksi potentiaalienergiaa. Energia ei synny tyhjästä, joten hyödyllinen energia on aina peräisin alun energialajista, ja jokaisessa muutoksessa osa muuttuu myös lämpöenergiaksi.
-**Mallivastaus:** a) Puun kemiallinen energia muuttuu palamisessa lämpöenergiaksi (ja vähän valoksi), joka lämmittää huonetta. b) Auringon säteilyenergia muuttuu paneelissa sähköenergiaksi; suurin osa siitä muuttuu kuitenkin paneelissa lämpöenergiaksi. c) Patoaltaan veden potentiaalienergia muuttuu virtaavan veden liike-energiaksi, turbiini ja generaattori muuttavat sen sähköenergiaksi, ja vähän muuttuu lämpöenergiaksi. Alun energialajit ovat siis a) kemiallinen energia, b) säteilyenergia ja c) potentiaalienergia, ja hyödylliset energialajit lopussa a) lämpöenergia, b) sähköenergia ja c) sähköenergia.
+**Mallivastaus:** a) Puun kemiallinen energia muuttuu palamisessa lämpöenergiaksi (ja vähän valoksi), joka lämmittää huonetta.
+
+b) Auringon säteilyenergia muuttuu paneelissa sähköenergiaksi; suurin osa siitä muuttuu kuitenkin paneelissa lämpöenergiaksi.
+
+c) Patoaltaan veden potentiaalienergia muuttuu virtaavan veden liike-energiaksi, turbiini ja generaattori muuttavat sen sähköenergiaksi, ja vähän muuttuu lämpöenergiaksi.
+
+Alun energialajit ovat siis a) kemiallinen energia, b) säteilyenergia ja c) potentiaalienergia, ja hyödylliset energialajit lopussa a) lämpöenergia, b) sähköenergia ja c) sähköenergia.
 
 ## fy2-1-L1-05
 **Annettu:** pulkan potentiaalienergia ylhäällä $E_\text{p} = 600\,\text{J}$, kitkan lämpöenergiaksi muuttama energia $E_\text{lämpö} = 90\,\text{J}$, potentiaalienergia mäen alla $0\,\text{J}$
@@ -63,12 +69,22 @@ $$
 ## fy2-1-L1-08
 **Kysytty:** energian muuttuminen ketjuna laturista akkuun ja se, miksi laturi lämpenee
 **Periaate:** Energia ei synny eikä katoa, vaan muuttaa muotoa: $E_\text{alussa} = E_\text{lopussa}$. Jokaisessa muutoksessa osa energiasta muuttuu lämpöenergiaksi, joka siirtyy lämpönä ympäristöön.
-**Mallivastaus:** Pistorasiasta tulee sähköenergiaa. Laturi muuttaa sen puhelimen akulle sopivaksi sähköenergiaksi, ja akussa sähköenergia varastoituu kemialliseksi energiaksi. Ketju on siis sähköenergia → sähköenergia → kemiallinen energia. Muutos ei ole täydellinen: osa pistorasiasta tulevasta sähköenergiasta muuttuu laturissa lämpöenergiaksi, ja siksi laturi lämpenee ja lämpöä siirtyy ympäristöön. Energian säilymislain mukaan pistorasiasta otettu energia on yhtä suuri kuin akkuun varastoitunut kemiallinen energia ja lämpöenergia yhteensä, joten energiaa ei ole kadonnut. Lämpöenergiaa ei kuitenkaan voi enää käyttää puhelimen lataamiseen.
+**Mallivastaus:** Pistorasiasta tulee sähköenergiaa. Laturi muuttaa sen puhelimen akulle sopivaksi sähköenergiaksi, ja akussa sähköenergia varastoituu kemialliseksi energiaksi. Ketju on siis sähköenergia → sähköenergia → kemiallinen energia.
+
+Muutos ei ole täydellinen: osa pistorasiasta tulevasta sähköenergiasta muuttuu laturissa lämpöenergiaksi, ja siksi laturi lämpenee ja lämpöä siirtyy ympäristöön.
+
+Energian säilymislain mukaan pistorasiasta otettu energia on yhtä suuri kuin akkuun varastoitunut kemiallinen energia ja lämpöenergia yhteensä, joten energiaa ei ole kadonnut.
+
+Lämpöenergiaa ei kuitenkaan voi enää käyttää puhelimen lataamiseen.
 
 ## fy2-1-L1-09
 **Kysytty:** mitkä väitteistä pomppivan pallon energiasta ovat tosia ja mitkä epätosia
 **Periaate:** Energiaa ei synny eikä katoa, vaan se muuttaa muotoa: eristetyssä systeemissä $E_\text{alussa} = E_\text{lopussa}$. Summaan kuuluvat kaikki energialajit, myös lämpöenergia. Törmäyksessä ja ilmanvastuksen takia mekaanista energiaa muuttuu lämpöenergiaksi.
-**Mallivastaus:** Väitteet 1, 3 ja 5 ovat tosia. Mekaaninen energia $E_\text{p} + E_\text{k}$ pienenee jokaisessa pompussa, mutta pallon, lattian ja ilman kokonaisenergia pysyy samana. Lopussa pallolla ei ole enää liike-energiaa eikä lattiaa korkeammalta saatua potentiaalienergiaa, ja sama energia on lämpöenergiana pallossa, lattiassa ja ilmassa. Väitteet 2 ja 4 ovat epätosia: energia ei kulu loppuun, ja lämpöenergia on osa kokonaisenergiaa, joten kokonaisenergia ei vähene.
+**Mallivastaus:** Väitteet 1, 3 ja 5 ovat tosia. Mekaaninen energia $E_\text{p} + E_\text{k}$ pienenee jokaisessa pompussa, mutta pallon, lattian ja ilman kokonaisenergia pysyy samana.
+
+Lopussa pallolla ei ole enää liike-energiaa eikä lattiaa korkeammalta saatua potentiaalienergiaa, ja sama energia on lämpöenergiana pallossa, lattiassa ja ilmassa.
+
+Väitteet 2 ja 4 ovat epätosia: energia ei kulu loppuun, ja lämpöenergia on osa kokonaisenergiaa, joten kokonaisenergia ei vähene.
 
 ## fy2-1-L1-10
 **Annettu:** polttoaineen massa $m = 2{,}0\,\text{kg}$ (bensiini); taulukosta (MAFY-taulukko, polttoaineiden lämpöarvot, bensiini) $H = 43{,}4\,\text{MJ/kg}$
@@ -206,7 +222,15 @@ $$.
 ## fy2-1-L3-03
 **Kysytty:** a) energialajit ydinvoimalan ketjun jokaisessa vaiheessa; b) mihin noin kaksi kolmannesta ydinenergiasta menee ja miksi energia ei ole kadonnut
 **Periaate:** Energia muuttaa muotoa ja siirtyy, mutta ei synny eikä katoa: voimalan, jäähdytysveden ja ympäristön muodostamassa systeemissä $E_\text{alussa} = E_\text{lopussa}$. Jokaisessa muutoksessa osa energiasta muuttuu lämpöenergiaksi, joka leviää ympäristöön ja jota on vaikea käyttää hyödyksi.
-**Mallivastaus:** a) Uraanin atomiytimiin sitoutunut ydinenergia vapautuu reaktorissa ja muuttuu veden ja höyryn lämpöenergiaksi. Höyry virtaa turbiiniin ja pyörittää sitä, jolloin energia on liike-energiaa. Generaattori muuttaa turbiinin pyörimisen liike-energian sähköenergiaksi. b) Sähköksi saadaan vain noin kolmannes, koska turbiinista tuleva höyry on vielä lämmintä: siitä siirtyy energiaa lämpönä jäähdytysveteen, joka vie sen mereen. Lisäksi turbiinissa, generaattorissa ja putkissa osa energiasta muuttuu lämpöenergiaksi, joka siirtyy lämpönä ympäristöön. Energia ei ole kadonnut: sähköenergia ja mereen ja ympäristöön siirtynyt lämpöenergia ovat yhteensä yhtä suuret kuin vapautunut ydinenergia. Noin kaksi kolmannesta päätyy siis lämpöenergiaksi, joka on levinnyt laajalle eikä ole enää helposti hyödynnettävissä.
+**Mallivastaus:** a) Uraanin atomiytimiin sitoutunut ydinenergia vapautuu reaktorissa ja muuttuu veden ja höyryn lämpöenergiaksi. Höyry virtaa turbiiniin ja pyörittää sitä, jolloin energia on liike-energiaa. Generaattori muuttaa turbiinin pyörimisen liike-energian sähköenergiaksi.
+
+b) Sähköksi saadaan vain noin kolmannes, koska turbiinista tuleva höyry on vielä lämmintä: siitä siirtyy energiaa lämpönä jäähdytysveteen, joka vie sen mereen.
+
+Lisäksi turbiinissa, generaattorissa ja putkissa osa energiasta muuttuu lämpöenergiaksi, joka siirtyy lämpönä ympäristöön.
+
+Energia ei ole kadonnut: sähköenergia ja mereen ja ympäristöön siirtynyt lämpöenergia ovat yhteensä yhtä suuret kuin vapautunut ydinenergia.
+
+Noin kaksi kolmannesta päätyy siis lämpöenergiaksi, joka on levinnyt laajalle eikä ole enää helposti hyödynnettävissä.
 
 ## fy2-1-L3-04
 **Annettu:** kulutus lähteittäin: bioenergia $380\,\text{PJ}$, öljy $290\,\text{PJ}$, ydinenergia $230\,\text{PJ}$, vesi- ja tuulivoima $120\,\text{PJ}$, kivihiili $100\,\text{PJ}$, maakaasu $80\,\text{PJ}$; asukkaita $N = 5{,}5 \cdot 10^{6}$; $1\,\text{PJ} = 10^{15}\,\text{J}$ ja $1\,\text{GJ} = 10^{9}\,\text{J}$
@@ -222,7 +246,13 @@ E_\text{yht} &= 380\,\text{PJ} + 290\,\text{PJ} \\
 &= 1200\,\text{PJ}
 \end{aligned}
 $$. Fossiilisten summa on $E_\text{fossiilinen} = 290\,\text{PJ} + 100\,\text{PJ} + 80\,\text{PJ} = 470\,\text{PJ}$, joten osuus on $\dfrac{470\,\text{PJ}}{1200\,\text{PJ}} = 0{,}392 = 39{,}2\,\%$. Gigajouleina kokonaiskulutus on $1200\,\text{PJ} = 1200 \cdot 10^{6}\,\text{GJ} = 1{,}2 \cdot 10^{9}\,\text{GJ}$, ja asukasta kohti $E_\text{asukas} = \dfrac{1{,}2 \cdot 10^{9}\,\text{GJ}}{5{,}5 \cdot 10^{6}} = 218\,\text{GJ}$. Kolmannes kokonaiskulutuksesta on $1200\,\text{PJ} : 3 = 400\,\text{PJ}$, joten korvattavaa on $E_\text{korvattu} > 470\,\text{PJ} - 400\,\text{PJ} = 70\,\text{PJ}$.
-**Vastaus:** a) Fossiilisten osuus on noin $39\,\%$. b) Kulutus on noin $2{,}2 \cdot 10^{2}\,\text{GJ}$ eli $220\,\text{GJ}$ asukasta kohti vuodessa (kaksi merkitsevää numeroa kuten asukasluvussa). c) Fossiilista energiaa on korvattava yli $70\,\text{PJ}$ (kaksi merkitsevää numeroa kuten tiedoissa), esimerkiksi $71\,\text{PJ}$, jolloin fossiilisia jää $399\,\text{PJ}$ eli $33{,}25\,\%$ ja osuus on alle kolmanneksen. Kokonaiskulutus voi pysyä samana, koska energiaa ei synny eikä katoa: sama käyttöön tarvittava energia vain tuotetaan toisesta lähteestä, joten korvaava vesi- ja tuulivoima lisää energiaa saman verran kuin fossiilinen vähenee.
+**Vastaus:** a) Fossiilisten osuus on noin $39\,\%$.
+
+b) Kulutus on noin $2{,}2 \cdot 10^{2}\,\text{GJ}$ eli $220\,\text{GJ}$ asukasta kohti vuodessa (kaksi merkitsevää numeroa kuten asukasluvussa).
+
+c) Fossiilista energiaa on korvattava yli $70\,\text{PJ}$ (kaksi merkitsevää numeroa kuten tiedoissa), esimerkiksi $71\,\text{PJ}$, jolloin fossiilisia jää $399\,\text{PJ}$ eli $33{,}25\,\%$ ja osuus on alle kolmanneksen.
+
+Kokonaiskulutus voi pysyä samana, koska energiaa ei synny eikä katoa: sama käyttöön tarvittava energia vain tuotetaan toisesta lähteestä, joten korvaava vesi- ja tuulivoima lisää energiaa saman verran kuin fossiilinen vähenee.
 **Järkevyys:** Osuus on alle $100\,\%$. Takaisinlasku: $$
 \begin{aligned}
 &218\,\text{GJ} \cdot 5{,}5 \cdot 10^{6} \\
@@ -245,5 +275,13 @@ E_\text{lämpö,yht} &= 4{,}20\,\text{MJ} \\
 &= 4{,}86\,\text{MJ}
 \end{aligned}
 $$. Eniten syntyy paneelissa, ja sen osuus on $\dfrac{4{,}20\,\text{MJ}}{4{,}86\,\text{MJ}} = 0{,}864 = 86\,\%$.
-**Vastaus:** a) Lämpöenergiaksi muuttuu yhteensä $4{,}86\,\text{MJ}$ (kolme merkitsevää numeroa kuten taulukossa). b) Eniten lämpöenergiaa syntyy aurinkopaneelissa, noin $86\,\%$ kaikesta. c) Tarkistus: $0{,}14\,\text{MJ} + 4{,}86\,\text{MJ} = 5{,}00\,\text{MJ}$ eli yhtä paljon kuin paneeliin tullut säteilyenergia. Energiaa ei ole kulunut loppuun: se on muuttunut valoksi ja lämpöenergiaksi, joka siirtyy ympäristöön. Valo on vain $2{,}8\,\%$ alkuenergiasta, koska jokaisessa vaiheessa osa muuttuu lämpöenergiaksi, jota ei saa takaisin hyödylliseen muotoon.
+**Vastaus:** a) Lämpöenergiaksi muuttuu yhteensä $4{,}86\,\text{MJ}$ (kolme merkitsevää numeroa kuten taulukossa).
+
+b) Eniten lämpöenergiaa syntyy aurinkopaneelissa, noin $86\,\%$ kaikesta.
+
+c) Tarkistus: $0{,}14\,\text{MJ} + 4{,}86\,\text{MJ} = 5{,}00\,\text{MJ}$ eli yhtä paljon kuin paneeliin tullut säteilyenergia.
+
+Energiaa ei ole kulunut loppuun: se on muuttunut valoksi ja lämpöenergiaksi, joka siirtyy ympäristöön.
+
+Valo on vain $2{,}8\,\%$ alkuenergiasta, koska jokaisessa vaiheessa osa muuttuu lämpöenergiaksi, jota ei saa takaisin hyödylliseen muotoon.
 **Järkevyys:** Kunkin vaiheen ulos-energia on pienempi kuin sen tulo-energia, esimerkiksi $0{,}80 < 5{,}00$ ja $0{,}14 < 0{,}56$, kuten pitääkin. Lampun valoa on $0{,}14\,\text{MJ} : 5{,}00\,\text{MJ} = 0{,}028$ eli $2{,}8\,\%$ paneeliin tulleesta. Aurinkopaneelin suuri lämpöosuus on uskottava, koska suurin osa auringonvalosta ei muutu sähköksi.

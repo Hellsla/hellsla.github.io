@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 5f067aef64c69c4c
+CONTENT-HASH: bd1486ec667e684a
 
 ## Blocking
 
 ## Polish
-- [Minor] reflow-lesson-1: a lone "ja" stands as its own line after a display formula; fold it into the formula's row or the next sentence.
+(none)
 
 ## Checked
-batch delta review: reflow contact sheets at 390 px (rows legible, signs aligned, nothing clipped, sentences read naturally) and the changed-figure captures; no regressions seen.
+Delta (list of knowns). Opened fi-easy fy2-7-example-390-1 and -2: bullet wraps cleanly, layout intact.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

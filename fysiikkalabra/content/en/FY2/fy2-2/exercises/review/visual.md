@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 095d05500287de55
-SCOPE: delta numbers from 4a74fe7df6fd97df base 6ecef1197865
+CONTENT-HASH: 6c4d59375c309c56
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Delta review. Opened fy2-2-open-exercises-L3-1280-5.png: the changed value $\approx 46\,000$ in its display box (and 2-23 below) renders cleanly; consistent with the $49\,000$ above.
-- Hash at start and end: 095d05500287de55.
+- Delta (md-paragraphs). Opened fy2-2-open-exercises-L3-1280-3.png (2-20 Reasonableness now three paragraphs) and L3-1280-5.png (2-22 Answer split in two); L3-1280-2 and -4 for context. Spacing even, maths and open-solution cards intact.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

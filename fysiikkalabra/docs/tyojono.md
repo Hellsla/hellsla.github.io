@@ -186,6 +186,10 @@ järjestyksessä, tiede ja pedagogiikka carry, visual delta). Sääntö on NOTES
 steps") ja `lint_lesson.py` varoittaa (2026-11-16: 512 pitkää kappaletta ja 112 kesken kappaleen olevaa kysyttyä
 muissa luvuissa). Jatko kurssi kerrallaan (`/quality-audit --fix`), kaikki kielet, fy3-13:n mallin mukaan.
 
+FY2 tehty (#651): fy2-1…fy2-8 kolmella kielellä, tiede ja pedagogiikka carry, ulkoasu delta PASS. FY2:n Sovella ja
+esimerkkikoe jäivät: kohteen siirto (`item_status`, `carry-item`) ei tunne luokkaa `md-paragraphs`, joten niiden
+kappalejako vaatisi täydet tiede- ja pedagogiikkakatselmoinnit; ensin jaetun tiedoston muutos `reviews.py`:hin.
+
 Esimerkkien vaiheet (esim. fy3-13, vaihe 1/7 "Tunnetut ja kysytty") ovat yksi tiivis kappale, jossa on luettuja
 pisteitä, huomautus ja kysymys peräkkäin: vaikea lukea. Opettaja: "näissä teksteissä saisi kappalejakoa olla …
 esim. 'Lämpötila'-alkuinen virke voisi olla jo omalla rivillään." Sääntö: yksi asia per kappale; tunnetut (lista tai

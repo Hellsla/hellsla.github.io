@@ -261,7 +261,12 @@ An example family uses $4800\,\text{kWh}$ of electricity a year. The electricity
 
 <!-- vaihe -->
 
-**Given and find.** $E = 4800\,\text{kWh}$ and $e = 490\,\text{g/kWh}$. We want the emission $m$ in tonnes.
+**Given and find.**
+
+- $E = 4800\,\text{kWh}$ and
+- $e = 490\,\text{g/kWh}$.
+
+We want the emission $m$ in tonnes.
 
 <!-- vaihe -->
 

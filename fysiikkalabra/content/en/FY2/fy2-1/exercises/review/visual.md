@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5b31514997a4592b
-SCOPE: delta numbers from 9b0c475077d8b946 base 6ecef1197865
+CONTENT-HASH: d82fee78a025d07e
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none (paragraph breaks only)
 
 ## Checked
-- Delta review. Opened fy2-1-open-exercises-1280-10.png (lesson shots folder; exercise 1-10 solution open): the changed Reasonableness sentence (dry wood, MAFY $16.2\,\text{MJ/kg}$) renders whole; units upright, thin spaces, nothing clipped.
-- Hash at start and end: 5b31514997a4592b.
+- Delta: solutions.md cut into paragraphs and (a)/(b) parts (1-3, 1-4, 1-5, 1-6, 1-8, 2-4, 2-5, 2-7, 2-8, 3-1, 3-3 and the others in the diff).
+- en captures opened (content/en/FY2/fy2-1/review/shots/): open-exercises-1280-3, -5, -6, -7 (1-3 graph solution, 1-4 a/b/c, 1-5, 1-6, 1-7, 1-8 start); open-exercises-L2-1280-5, -8 (1-15 table task and solution, 1-17 lamps); open-exercises-L3-1280-1, -3 (1-19, 1-21 nuclear chain, bounce task).
+- Each part/step is its own paragraph; KaTeX, thin-space units, aligned rows, boxed answers and reasonableness blocks intact; no clipping or empty gaps. Not every changed paragraph was opened (2-4, 2-5 parts between those captures were not individually viewed).
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
