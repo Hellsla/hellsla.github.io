@@ -194,13 +194,7 @@ $$), koska jousen massan osuus pienenee punnuksen kasvaessa. Siksi kulmakerroin 
 **Kaava:** $t = \dfrac{T}{4}$; $h = l(1 - \cos\alpha_0)$ ja $mgh = \dfrac{1}{2}mv^2$, joten $v = \sqrt{2gh}$; harmonisella mallilla $A = l\alpha_0$ ja $v_\text{h} = A\sqrt{\dfrac{g}{l}}$
 **Muunnokset:** Kulma radiaaneina: $\alpha_0 = 10{,}0\,{}^\circ = 10{,}0 \cdot \dfrac{\pi}{180} = 0{,}17453$.
 **Sijoitus:** Kohta a): $T = 2\pi\sqrt{\dfrac{1{,}20\,\text{m}}{9{,}81\,\text{m/s}^2}} = 2{,}198\,\text{s}$, joten $t = \dfrac{2{,}198\,\text{s}}{4} = 0{,}549\,\text{s}$. Kohta b): $h = 1{,}20\,\text{m} \cdot (1 - \cos 10{,}0\,{}^\circ) = 0{,}01823\,\text{m}$ ja $v = \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}01823\,\text{m}} = 0{,}5981\,\text{m/s}$. Kohta c): $A = 1{,}20\,\text{m} \cdot 0{,}17453 = 0{,}2094\,\text{m}$ ja $v_\text{h} = 0{,}2094\,\text{m} \cdot \sqrt{\dfrac{9{,}81}{1{,}20}}\,\dfrac{1}{\text{s}} = 0{,}5988\,\text{m/s}$, joten ero on $\dfrac{0{,}59883 - 0{,}59807}{0{,}59807} \cdot 100\,\% = 0{,}13\,\%$ ja harmoninen malli antaa suuremman nopeuden.
-**Vastaus:** a) $0{,}549\,\text{s}$.
-
-b) $0{,}598\,\text{m/s}$, ja ääriasennon korkeus on noin $1{,}82\,\text{cm}$.
-
-c) $0{,}599\,\text{m/s}$, ja harmoninen malli antaa noin $0{,}13\,\%$ suuremman nopeuden.
-
-Ajassa ja nopeuksissa on kolme merkitsevää numeroa kuten pituudessa $1{,}20\,\text{m}$ ja kulmassa $10{,}0\,{}^\circ$.
+**Vastaus:** a) $0{,}549\,\text{s}$. b) $0{,}598\,\text{m/s}$, ja ääriasennon korkeus on noin $1{,}82\,\text{cm}$. c) $0{,}599\,\text{m/s}$, ja harmoninen malli antaa noin $0{,}13\,\%$ suuremman nopeuden. Ajassa ja nopeuksissa on kolme merkitsevää numeroa kuten pituudessa $1{,}20\,\text{m}$ ja kulmassa $10{,}0\,{}^\circ$.
 **Järkevyys:** Liike-energia massayksikköä kohti on $\tfrac{1}{2}v^2 = 0{,}1788\,\text{J/kg}$ ja potentiaalienergian vähennys $gh = 9{,}81 \cdot 0{,}01823 = 0{,}1788\,\text{J/kg}$, eli energia säilyy. Harmoninen malli antaa tuloksen, joka eroaa vain $0{,}13\,\%$, koska pienellä kulmalla $\sin\alpha$ on lähes sama kuin $\alpha$ radiaaneina. Ero on positiivinen, koska malli käyttää palauttavana voimana arvoa $mg\alpha$, joka on suurempi kuin todellinen $mg\sin\alpha$: malli tekee hieman enemmän työtä, joten nopeus on hieman suurempi ($0{,}5988\,\text{m/s} > 0{,}5981\,\text{m/s}$). Sama suuruusluokka näkyy oppitunnin taulukossa: lähtökulmalla $10\,{}^\circ$ jaksonaika poikkeaa kaavasta vain $0{,}2\,\%$.
 
 ## fy5-9-L2-08
