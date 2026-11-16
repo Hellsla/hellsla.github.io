@@ -1,10 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6a7f08d6c72a452e
+CONTENT-HASH: cd9b243866124293
 
 ## Blocking
 
 ## Polish
-- [Minor] A calculation that fits on one row at 390 px is sometimes still set as two rows (`&a` / `&= b`); acceptable, wide screens join them.
+- [Minor] Worked example stage 6 (fy3-8-example-390-2) — "86,4 mm → 87 mm" breaks across lines at the arrow on 390 px; keep the rounding in one non-wrapping group or write "pyöristyy ylöspäin arvoon 87 mm".
+- [Minor] Stage 6 paragraph is now long (rounding, significant figures, limiting factors); consider splitting the rounding remark and the significant-figure remark into two paragraphs.
+- [Minor] fig-9 particles: the vibration is animated (fig-anim, class fa-vib); the capture is a still, so pause control and reduced-motion behaviour were not judged here (for the shared component).
 
 ## Checked
-- batch delta review: re-broken display formulas judged on the 390 px stage and worked-example captures, 1280 px open-solution and feedback captures and an automatic no-horizontal-overflow check at 360/390/1280 px; punctuation after a display formula sits at the end of the last row (e.g. "= 294,3 N."), equals signs in one column, no row breaks inside a number or unit. Sampled most closely: fy3-1, fy3-6, fy3-9, fy3-11, fy3-14, fy3-15; this lesson's captures were covered by the same pattern.
+- Delta review. Opened fy3-8-fig-9-390 (particles figure with the fa-vib wrappers added): layout, colours (blue cold, red warm), LaTeX labels d0 and d > d0, caption all intact, nothing clipped, no change to geometry or arrows.
+- Opened fy3-8-example-390-2 (stage 5 substitution rows and stages 6-7): new rounding sentences render with upright units, decimal comma, aligned equals signs; no overflow.
+- Rounding convention (an "at least" value rounded up, 86,4 to 87) matches the project rule.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

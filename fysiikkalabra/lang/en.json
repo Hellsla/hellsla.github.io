@@ -412,6 +412,8 @@
     "criteria_all": "Your answer contains all the key points of the model answer.",
     "criteria_missing": "Add these points to your answer and compare again:",
     "zoom_open": "Enlarge the figure",
+    "anim_play": "Play the animation",
+    "anim_pause": "Pause the animation",
     "zoom_close": "Close",
     "zoom_dialog": "Enlarged figure",
     "sim_expand_aria": "Enlarge the simulation",
