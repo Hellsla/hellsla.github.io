@@ -493,6 +493,7 @@ FY9 tehty: FY9-A1…A5 (PR #626, kohdan 18 FY9:n kanssa).
 FY6 tehty: FY6-A1…A5 (PR #627, kohdan 5d FY6:n kanssa): fy6-3-L2-08, fy6-7-L2-09, fy6-15-L2-09, fy6-9-L2-09, fy6-13-L2-09. Opettaja avaa Tukesin kaksi linkkiä (A3, A4) selaimessa ennen yhdistämistä: sivusto ei vastaa automaattisiin hakuihin.
 FY4 tehty: FY4-A1…A5 (PR #625, kohdan 18 FY4:n kanssa): fy4-11-L2-10, fy4-7-L2-10, fy4-9-L2-09, fy4-10-L2-10, fy4-8-L2-10.
 FY3 tehty: FY3-A1…A5 (PR #628, kohdan 5d FY3:n kanssa): fy3-9-L2-10, fy3-8-L2-10, fy3-11-L2-10, fy3-6-L2-10, fy3-7-L2-10.
+Varattu: claude/fy1-aineisto (FY1).
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
