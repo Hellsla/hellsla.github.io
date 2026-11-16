@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 8b6a553933284aed
-SCOPE: delta added-exercise from 0d804621ffb859e2 base 611fb7d5c174
+CONTENT-HASH: 07cb2e86c0676217
+SCOPE: delta reflow from 8b6a553933284aed base b5600a63ddae
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+- [Minor] reflow-exercises-1, fy2-8: the m_1 − m_2 chain takes seven rows (unit factors on their own rows); legible, optional tightening.
 
 ## Checked
-- fy2-8-open-exercises-1280-10: L1-09 Sijoitus, Vastaus and Järkevyys; the earlier hyphen split is gone ("2,6 kertaa suuremman massan"); units upright, nothing clipped.
-- 360 px from the packet's layout check only.
+- Delta: opened reflow-exercises-1.png and reflow-exercises-2.png (390 px, solutions open), every re-broken block and its surrounding sentence.
+- Rows legible, nothing clipped, equals signs in one column, units upright with thin spaces, no red KaTeX source; the round-1 stray punctuation is gone (the student's quoted calculation is inline again, as on main). Figures, simulation and other captures not re-judged (unchanged); 360 px from the packet's check only.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 4 · Finnish 5 · accessibility 4

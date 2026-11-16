@@ -264,5 +264,5 @@ Moni luulee, että suuri teho tarkoittaa suurta energiankulutusta. Teho kertoo v
 ## Tiivistelmä
 - Teho kertoo, kuinka nopeasti energiaa muuntuu tai siirtyy: $P = \tfrac{\Delta E}{\Delta t}$. Yksikkö on watti, $1\,\text{W} = 1\,\text{J/s}$.
 - Tasaisella teholla $E = P\,t$ ja $t = E : P$. Energia–aika-kuvaajassa suoran jyrkkyys on teho.
-- $1\,\text{kWh} = 1000\,\text{W} \cdot 3600\,\text{s} = 3{,}6\,\text{MJ}$. Kilowattitunti on energian yksikkö, ja sähkölasku on energia kWh kertaa yksikköhinta.
+- $$ \begin{aligned} 1\,\text{kWh} &= 1000\,\text{W} \cdot 3600\,\text{s} \\ &= 3{,}6\,\text{MJ} \end{aligned} $$. Kilowattitunti on energian yksikkö, ja sähkölasku on energia kWh kertaa yksikköhinta.
 - Suuri teho lyhyen aikaa ja pieni teho pitkään voivat käyttää yhtä paljon energiaa. Valmiustila kuluttaa energiaa kaiken aikaa.

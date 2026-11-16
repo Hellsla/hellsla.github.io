@@ -146,7 +146,7 @@
         "hints": [
           "Tuotannon on vastattava kulutusta joka hetki. Kaikkien lähteiden tehojen summa on yhtä suuri kuin kulutus.",
           "Muiden lähteiden teho on se osa kulutuksesta, jota ydinvoima ja tuulivoima eivät kata.",
-          "$P_\\text{m} = 13{,}1\\,\\text{GW} - 4{,}3\\,\\text{GW} - 0{,}4\\,\\text{GW}$."
+          "$$\n\\begin{aligned}\nP_\\text{m} &= 13{,}1\\,\\text{GW} - 4{,}3\\,\\text{GW} \\\\\n&- 0{,}4\\,\\text{GW}\n\\end{aligned}\n$$."
         ],
         "mistakes": [
           {
@@ -162,7 +162,7 @@
             "feedback": "Tämä on maanantain luku, jolloin tuuli puhalsi hyvin. Laske samalla tavalla torstain rivin luvuista."
           }
         ],
-        "solution": "**Annettu:** torstain kulutus $P_\\text{kul} = 13{,}1\\,\\text{GW}$, ydinvoiman teho $P_\\text{y} = 4{,}3\\,\\text{GW}$ ja tuulivoiman teho $P_\\text{t} = 0{,}4\\,\\text{GW}$ (taulukosta)\n\n**Kysytty:** muiden tuotantotapojen teho $P_\\text{m}$ gigawatteina\n\n**Periaate:** Sähköä ei voi varastoida verkkoon, joten tuotannon on vastattava kulutusta joka hetki. Kaikkien lähteiden tehojen summa on kulutuksen teho. Ydinvoima ja tuulivoima eivät tuota kaikkea tehoa. Loput on tuotettava muilla tavoilla.\n\n**Kaava:** $P_\\text{kul} = P_\\text{y} + P_\\text{t} + P_\\text{m}$, josta $P_\\text{m} = P_\\text{kul} - P_\\text{y} - P_\\text{t}$\n\n**Muunnokset:** Ei tarvita: kaikki tehot ovat gigawatteina.\n\n**Sijoitus:** $P_\\text{m} = 13{,}1\\,\\text{GW} - 4{,}3\\,\\text{GW} - 0{,}4\\,\\text{GW} = 8{,}4\\,\\text{GW}$\n\n**Vastaus:** $8{,}4\\,\\text{GW}$, yhden desimaalin tarkkuudella kuten taulukon tehot. Erotus on yhtä tarkka kuin luvut, joista se lasketaan.\n\n**Järkevyys:** Tulos on pienempi kuin kulutus, kuten pitääkin. Maanantaina sama lasku antaa vain $11{,}3\\,\\text{GW} - 4{,}3\\,\\text{GW} - 6{,}4\\,\\text{GW} = 0{,}6\\,\\text{GW}$, joten muiden voimaloiden piti torstaina nostaa tehoaan moninkertaiseksi. Syy on se, että tuuli tyyntyi."
+        "solution": "**Annettu:** torstain kulutus $P_\\text{kul} = 13{,}1\\,\\text{GW}$, ydinvoiman teho $P_\\text{y} = 4{,}3\\,\\text{GW}$ ja tuulivoiman teho $P_\\text{t} = 0{,}4\\,\\text{GW}$ (taulukosta)\n\n**Kysytty:** muiden tuotantotapojen teho $P_\\text{m}$ gigawatteina\n\n**Periaate:** Sähköä ei voi varastoida verkkoon, joten tuotannon on vastattava kulutusta joka hetki. Kaikkien lähteiden tehojen summa on kulutuksen teho. Ydinvoima ja tuulivoima eivät tuota kaikkea tehoa. Loput on tuotettava muilla tavoilla.\n\n**Kaava:** $P_\\text{kul} = P_\\text{y} + P_\\text{t} + P_\\text{m}$, josta $$\n\\begin{aligned}\nP_\\text{m} &= P_\\text{kul} \\\\\n&- P_\\text{y} - P_\\text{t}\n\\end{aligned}\n$$\n\n**Muunnokset:** Ei tarvita: kaikki tehot ovat gigawatteina.\n\n**Sijoitus:** $$\n\\begin{aligned}\nP_\\text{m} &= 13{,}1\\,\\text{GW} - 4{,}3\\,\\text{GW} \\\\\n&- 0{,}4\\,\\text{GW} \\\\\n&= 8{,}4\\,\\text{GW}\n\\end{aligned}\n$$\n\n**Vastaus:** $8{,}4\\,\\text{GW}$, yhden desimaalin tarkkuudella kuten taulukon tehot. Erotus on yhtä tarkka kuin luvut, joista se lasketaan.\n\n**Järkevyys:** Tulos on pienempi kuin kulutus, kuten pitääkin. Maanantaina sama lasku antaa vain $$\n\\begin{aligned}\n&11{,}3\\,\\text{GW} - 4{,}3\\,\\text{GW} - 6{,}4\\,\\text{GW} \\\\\n&= 0{,}6\\,\\text{GW}\n\\end{aligned}\n$$, joten muiden voimaloiden piti torstaina nostaa tehoaan moninkertaiseksi. Syy on se, että tuuli tyyntyi."
       }
     },
     {
@@ -212,12 +212,12 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe",
-      "prompt": "Opiskelija laskee voimalan keskitehon, kun vuosienergia on $14\\,\\text{GWh}$. Hän kirjoittaa $P = 14\\,\\text{GWh} \\cdot 8760\\,\\text{h} \\approx 123\\,000\\,\\text{GW}$ ja ihmettelee, että tulos on valtava. Missä on virhe?",
+      "prompt": "Opiskelija laskee voimalan keskitehon, kun vuosienergia on $14\\,\\text{GWh}$. Hän kirjoittaa $$\n\\begin{aligned}\nP &= 14\\,\\text{GWh} \\cdot 8760\\,\\text{h} \\\\\n&\\approx 123\\,000\\,\\text{GW}\n\\end{aligned}\n$$ ja ihmettelee, että tulos on valtava. Missä on virhe?",
       "choices": [
         {
           "text": "Energia kerrottiin ajalla, vaikka keskiteho on $P = E : t \\approx 1{,}6\\,\\text{MW}$.",
           "correct": true,
-          "feedback": "Oikein. Kaava $E = P t$ ratkaistaan tehon suhteen jakamalla ajalla: $P = 14 \\cdot 10^{6}\\,\\text{kWh} : 8760\\,\\text{h} \\approx 1{,}6\\,\\text{MW}$. Virheen olisi voinut huomata yksiköistä. GWh kertaa h ei ole tehon yksikkö. Lisäksi tulos olisi suurempi kuin koko Suomen voimaloiden teho."
+          "feedback": "Oikein. Kaava $E = P t$ ratkaistaan tehon suhteen jakamalla ajalla: $$\n\\begin{aligned}\nP &= 14 \\cdot 10^{6}\\,\\text{kWh} : 8760\\,\\text{h} \\\\\n&\\approx 1{,}6\\,\\text{MW}\n\\end{aligned}\n$$. Virheen olisi voinut huomata yksiköistä. GWh kertaa h ei ole tehon yksikkö. Lisäksi tulos olisi suurempi kuin koko Suomen voimaloiden teho."
         },
         {
           "text": "Vuodessa ei ole $8760\\,\\text{h}$ vaan $365\\,\\text{h}$, joten aika on laskussa väärin.",
@@ -245,7 +245,7 @@
       "tolerance": 0.02,
       "hints": [
         "Teho ja aika tunnetaan, joten energia saadaan kertomalla ne keskenään.",
-        "Muuta teho kilowateiksi: $1600\\,\\text{MW} = 1600 \\cdot 1000\\,\\text{kW}$. Tulo on silloin kilowattitunteina.",
+        "Muuta teho kilowateiksi: $$\n1600\\,\\text{MW} = 1600 \\cdot 1000\\,\\text{kW}\n$$. Tulo on silloin kilowattitunteina.",
         "$E = 1{,}6 \\cdot 10^{6}\\,\\text{kW} \\cdot 8760\\,\\text{h}$, ja lopuksi $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$."
       ],
       "mistakes": [
@@ -258,7 +258,7 @@
           "feedback": "Jaoit tehon ajalla. Energia on teho kerrottuna ajalla: $E = P t$."
         }
       ],
-      "solution": "**Annettu:** teho $P = 1600\\,\\text{MW}$, aika $t = 8760\\,\\text{h}$\n\n**Kysytty:** vuosienergia $E$ teravattitunteina\n\n**Periaate:** Teho on vakio, kun voimala toimii täydellä teholla, joten energia on teho kerrottuna ajalla.\n\n**Kaava:** $E = P t$\n\n**Muunnokset:** $1600\\,\\text{MW} = 1600 \\cdot 1000\\,\\text{kW} = 1{,}6 \\cdot 10^{6}\\,\\text{kW}$ ja lopuksi $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$.\n\n**Sijoitus:** $E = 1{,}6 \\cdot 10^{6}\\,\\text{kW} \\cdot 8760\\,\\text{h} = 14{,}016 \\cdot 10^{9}\\,\\text{kWh} = 14{,}0\\,\\text{TWh}$\n\n**Vastaus:** $14{,}0\\,\\text{TWh}$, kolme merkitsevää numeroa kuten tehossa $1600\\,\\text{MW}$.\n\n**Järkevyys:** Tämä on yläraja. Todellinen tuotanto on pienempi, koska laitos on välillä pois käytöstä. Suomen kokonaistuotanto oli $79{,}9\\,\\text{TWh}$, ja $14{,}0 : 79{,}9 \\approx 18\\,\\%$. Yksi laitos tuottaisi siis enimmillään lähes viidenneksen.",
+      "solution": "**Annettu:** teho $P = 1600\\,\\text{MW}$, aika $t = 8760\\,\\text{h}$\n\n**Kysytty:** vuosienergia $E$ teravattitunteina\n\n**Periaate:** Teho on vakio, kun voimala toimii täydellä teholla, joten energia on teho kerrottuna ajalla.\n\n**Kaava:** $E = P t$\n\n**Muunnokset:** $$\n\\begin{aligned}\n1600\\,\\text{MW} &= 1600 \\cdot 1000\\,\\text{kW} \\\\\n&= 1{,}6 \\cdot 10^{6}\\,\\text{kW}\n\\end{aligned}\n$$ ja lopuksi $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$.\n\n**Sijoitus:** $E = 1{,}6 \\cdot 10^{6}\\,\\text{kW} \\cdot 8760\\,\\text{h} = 14{,}016 \\cdot 10^{9}\\,\\text{kWh} = 14{,}0\\,\\text{TWh}$\n\n**Vastaus:** $14{,}0\\,\\text{TWh}$, kolme merkitsevää numeroa kuten tehossa $1600\\,\\text{MW}$.\n\n**Järkevyys:** Tämä on yläraja. Todellinen tuotanto on pienempi, koska laitos on välillä pois käytöstä. Suomen kokonaistuotanto oli $79{,}9\\,\\text{TWh}$, ja $14{,}0 : 79{,}9 \\approx 18\\,\\%$. Yksi laitos tuottaisi siis enimmillään lähes viidenneksen.",
       "optional": true
     },
     {

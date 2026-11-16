@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: e71fed8737775da9
+CONTENT-HASH: fa419009145ea186
+SCOPE: delta reflow from e71fed8737775da9 base b5600a63ddae
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] 3-9 task — "(mafytaulukot.fi)" is plain text — link it or drop it.
-- [Minor] 3-10 Vastaus — the answer row shows the ratio only; a short sentence in the Vastaus block follows (not visible in the capture), fine.
+- [Minor] reflow-exercises-1, fy2-3: short displays leave a little extra space under the block; optional tightening.
 
 ## Checked
-- Opened fy2-3-open-exercises-1280-9.png and -10.png (3-9 mechanical wording, 3-10 rewritten task with graph, solution rows P_A, P_B and ratio). Aligned chains and the ratio fractions render cleanly; the graph (A and B lines, labelled) supports the task.
-- Delta only; unchanged exercises not re-opened.
+- Delta: opened reflow-exercises-1.png and reflow-exercises-2.png (390 px, solutions open), every re-broken block and its surrounding sentence.
+- Rows legible, nothing clipped, equals signs in one column, units upright with thin spaces, no red KaTeX source; the round-1 stray punctuation is gone (the student's quoted calculation is inline again, as on main). Figures, simulation and other captures not re-judged (unchanged); 360 px from the packet's check only.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations n/a · typography 4 · Finnish 4 · accessibility 4

@@ -434,7 +434,7 @@
 **Muunnokset:** $9{,}0\,\text{ms} = 0{,}0090\,\text{s}$
 **Sijoitus:** $a = \dfrac{5{,}42\,\tfrac{\text{m}}{\text{s}}}{0{,}0090\,\text{s}} \approx 600\,\tfrac{\text{m}}{\text{s}^2}$
 **Vastaus:** Pysähtyminen kestää $9{,}0\,\text{ms}$, ja keskimääräinen kiihtyvyys on noin $600\,\text{m/s}^2$ eli noin $61$ kertaa $g$. Huippuarvo $950\,\text{m/s}^2$ on suurempi, koska kiihtyvyys ei ole vakio: iskun alussa vaahtomuovi on vasta alkanut painua ja lopussa nopeus on jo pieni, joten kiihtyvyys on näinä hetkinä pieni. Keskiarvon on siksi oltava huippuarvoa pienempi.
-**Järkevyys:** Kuvaajan alle jäävä pinta-ala on nopeuden muutos. Kaaren alle jää noin $0{,}64$ kertaa sitä ympäröivän suorakulmion ala: $0{,}64 \cdot 950\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}0090\,\text{s} \approx 5{,}4\,\text{m/s}$, sama kuin a-kohdan nopeus.
+**Järkevyys:** Kuvaajan alle jäävä pinta-ala on nopeuden muutos. Kaaren alle jää noin $0{,}64$ kertaa sitä ympäröivän suorakulmion ala: $0{,}64 \cdot 950\,\tfrac{\text{m}}{\text{s}^2} \cdot 0{,}0090\,\text{s} \approx 5{,}5\,\text{m/s}$, lähes sama kuin a-kohdan nopeus.
 
 ### c)
 **Annettu:** $m = 5{,}0\,\text{kg}$, $a = 600\,\text{m/s}^2$ ylöspäin (b-kohta), $g = 9{,}81\,\text{m/s}^2$

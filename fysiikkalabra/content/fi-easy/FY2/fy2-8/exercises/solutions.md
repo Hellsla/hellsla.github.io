@@ -26,7 +26,9 @@
 **Muunnokset:** Ei tarvita: kilowattitunnit supistuvat ja tulos tulee jo grammoina, kuten vastaus pyydetään.
 **Sijoitus:** $m = 12\,\text{g/kWh} \cdot 18\,\text{kWh} = 216\,\text{g}$
 **Vastaus:** $220\,\text{g}$. Tuloksessa on kaksi merkitsevää numeroa, kuten tiedoissa $12\,\text{g/kWh}$ ja $18\,\text{kWh}$.
-**Järkevyys:** Pyöristetyillä luvuilla $10\,\text{g/kWh} \cdot 20\,\text{kWh} = 200\,\text{g}$. Tämä on lähellä tulosta. Päästö on vain vajaa neljännes kilogrammaa sadalta kilometriltä. Tämä sopii tuulivoiman pieneen päästökertoimeen.
+**Järkevyys:** Pyöristetyillä luvuilla $$
+10\,\text{g/kWh} \cdot 20\,\text{kWh} = 200\,\text{g}
+$$. Tämä on lähellä tulosta. Päästö on vain vajaa neljännes kilogrammaa sadalta kilometriltä. Tämä sopii tuulivoiman pieneen päästökertoimeen.
 
 ## fy2-8-L1-04
 **Annettu:** kattopaneelien päästökerroin $e_1 = 41\,\text{g/kWh}$; maakaasusähkön päästökerroin $e_2 = 490\,\text{g/kWh}$; sama energia $E$
@@ -64,7 +66,18 @@
 **Periaate:** Energian määrä pysyy samana. Vain tuotantotapa vaihtuu. Päästöjen pieneneminen on vanhan ja uuden päästön erotus. Kummankin päästö on kerroin kertaa energia.
 **Kaava:** $m_1 - m_2 = e_1 \cdot E - e_2 \cdot E = (e_1 - e_2) \cdot E$
 **Muunnokset:** Kilowattitunnit supistuvat, joten tulos tulee grammoina. Lopuksi $1\,\text{g} = 10^{-6}\,\text{t}$.
-**Sijoitus:** $m_1 - m_2 = (820\,\text{g/kWh} - 12\,\text{g/kWh}) \cdot 3600\,\text{kWh} = 808\,\text{g/kWh} \cdot 3600\,\text{kWh} = 2\,908\,800\,\text{g} = 2\,908\,800 \cdot 10^{-6}\,\text{t} = 2{,}9088\,\text{t}$
+**Sijoitus:** $$
+\begin{aligned}
+m_1 - m_2 &= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \\
+&\cdot 3600\,\text{kWh} \\
+&= 808\,\text{g/kWh} \\
+&\cdot 3600\,\text{kWh} \\
+&= 2\,908\,800\,\text{g} \\
+&= 2\,908\,800 \\
+&\cdot 10^{-6}\,\text{t} \\
+&= 2{,}9088\,\text{t}
+\end{aligned}
+$$
 **Vastaus:** $2{,}9\,\text{t}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kertoimissa $820\,\text{g/kWh}$ ja $12\,\text{g/kWh}$ (pyöristettyjä mediaaneja; energian $3600\,\text{kWh}$ nollat eivät kerro tarkkuutta).
 **Järkevyys:** Kivihiilellä päästö on $820 \cdot 3600\,\text{g} = 2\,952\,000\,\text{g} = 2\,952\,000 \cdot 10^{-6}\,\text{t} \approx 2{,}95\,\text{t}$ ja tuulella $12 \cdot 3600\,\text{g} = 43\,200\,\text{g} = 43\,200 \cdot 10^{-6}\,\text{t} \approx 0{,}043\,\text{t}$. Tuulella päästö on lähes nolla kivihiileen verrattuna. Säästö on siis lähes koko kivihiilen päästö.
 
@@ -96,7 +109,12 @@
 **Muunnokset:** Ei tarvita: litrat ja megajoulet supistuvat, ja päästö tulee grammoina.
 **Sijoitus:** $m_\text{bensa} = 69\,\text{g/MJ} \cdot 6{,}0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, ja $e = 13\,248\,\text{g} : 18\,\text{kWh} = 736\,\text{g/kWh}$
 **Vastaus:** $740\,\text{g/kWh}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kulutuksessa $6{,}0\,\textsf{l}$ ja $18\,\text{kWh}$.
-**Järkevyys:** Raja on lähellä kivihiilen $820\,\text{g/kWh}$, mutta sen alapuolella. Maakaasusähköllä ($490\,\text{g/kWh}$) ja tuulisähköllä ($12\,\text{g/kWh}$) sähköauton päästö jää selvästi rajan alle. Pyöristettynä $13\,000\,\text{g} : 18\,\text{kWh} \approx 720\,\text{g/kWh}$.
+**Järkevyys:** Raja on lähellä kivihiilen $820\,\text{g/kWh}$, mutta sen alapuolella. Maakaasusähköllä ($490\,\text{g/kWh}$) ja tuulisähköllä ($12\,\text{g/kWh}$) sähköauton päästö jää selvästi rajan alle. Pyöristettynä $$
+\begin{aligned}
+&13\,000\,\text{g} : 18\,\text{kWh} \\
+&\approx 720\,\text{g/kWh}
+\end{aligned}
+$$.
 **Johtopäätös:** Kivihiilisähkön kerroin $820\,\text{g/kWh}$ on vain noin $10\,\%$ suurempi kuin raja $740\,\text{g/kWh}$. Ero on pienempi kuin vertailun epävarmuus. Bensiinille on nimittäin laskettu vain polttaminen, ei esimerkiksi öljyn tuotannon, jalostuksen ja kuljetuksen päästöjä. Kivihiilisähköllä ladatun sähköauton päästövähennys on siis vertailun tarkkuudella pieni tai olematon. Vähäpäästöisellä sähköllä, kuten tuuli- tai vesivoimalla, sähköauto on selvästi parempi.
 
 ## fy2-8-L3-02
@@ -145,7 +163,12 @@
 **Muunnokset:** Ei tarvita: pitoisuus on ppm-yksikössä ja aika vuosina.
 **Sijoitus:** $\Delta c = 414\,\text{ppm} - 380\,\text{ppm} = 34\,\text{ppm}$ ja $\Delta t = 2020\,\text{a} - 2005\,\text{a} = 15\,\text{a}$, joten $k = 34\,\text{ppm} : 15\,\text{a} = 2{,}27\,\text{ppm/a}$
 **Vastaus:** $k \approx 2{,}3\,\text{ppm/a}$. Tuloksessa on kaksi merkitsevää numeroa.
-**Järkevyys:** Vuosien $2005$ ja $2010$ välillä kasvu on $10\,\text{ppm}$ eli $2{,}0\,\text{ppm/a}$. Vuosien $2015$ ja $2020$ välillä kasvu on $13\,\text{ppm}$ eli noin $2{,}6\,\text{ppm/a}$. Keskiarvo $2{,}3\,\text{ppm/a}$ on näiden välissä. Tarkistus: $15\,\text{a} \cdot 2{,}3\,\text{ppm/a} = 34{,}5\,\text{ppm}$, mikä on lähellä muutosta $34\,\text{ppm}$.
+**Järkevyys:** Vuosien $2005$ ja $2010$ välillä kasvu on $10\,\text{ppm}$ eli $2{,}0\,\text{ppm/a}$. Vuosien $2015$ ja $2020$ välillä kasvu on $13\,\text{ppm}$ eli noin $2{,}6\,\text{ppm/a}$. Keskiarvo $2{,}3\,\text{ppm/a}$ on näiden välissä. Tarkistus: $$
+\begin{aligned}
+&15\,\text{a} \cdot 2{,}3\,\text{ppm/a} \\
+&= 34{,}5\,\text{ppm}
+\end{aligned}
+$$, mikä on lähellä muutosta $34\,\text{ppm}$.
 ## fy2-8-L2-06
 **Annettu:** päästöt $\text{Mt}$ vuonna $2010$: $30$, $12$, $10$, $6$ ja $3$; vuonna $2020$: $18$, $10$, $9$, $6$ ja $2$ (esimerkkiaineisto, ei tilasto)
 **Kysytty:** a) kokonaispäästöt $m_{2010}$ ja $m_{2020}$; b) kokonaispäästöjen pieneneminen prosentteina
@@ -161,7 +184,12 @@ b) Muutos on $61\,\text{Mt} - 45\,\text{Mt} = 16\,\text{Mt}$, ja $\dfrac{16}{61}
 ## fy2-8-L2-07
 **Kysytty:** mikä virhe opiskelijan laskussa on.
 **Periaate:** Päästö on päästökerroin kertaa energia, $m = e \cdot E$. Kun kerroin on yksikössä $\text{g/kWh}$ ja energia kilowattitunteina, kilowattitunnit supistuvat ja tulos on grammoina. Tulos muutetaan kilogrammoiksi kertomalla luvulla $0{,}001$.
-**Mallivastaus:** Kertolasku $820 \cdot 2{,}0 = 1640$ on oikein, mutta tulos on grammoina. Opiskelija kirjoitti yksiköksi kilogramman ja unohti muunnoksen. Siksi vastaus on tuhatkertainen. Oikea päästö on $1640\,\text{g} = 1640 \cdot 0{,}001\,\text{kg} = 1{,}64\,\text{kg}$ eli noin $1{,}6\,\text{kg}$. Tulos on järkevä myös arviolla: kaksi kilowattituntia kivihiilellä tuottaa alle kaksi kilogrammaa, ei puolitoista tonnia.
+**Mallivastaus:** Kertolasku $820 \cdot 2{,}0 = 1640$ on oikein, mutta tulos on grammoina. Opiskelija kirjoitti yksiköksi kilogramman ja unohti muunnoksen. Siksi vastaus on tuhatkertainen. Oikea päästö on $$
+\begin{aligned}
+1640\,\text{g} &= 1640 \cdot 0{,}001\,\text{kg} \\
+&= 1{,}64\,\text{kg}
+\end{aligned}
+$$ eli noin $1{,}6\,\text{kg}$. Tulos on järkevä myös arviolla: kaksi kilowattituntia kivihiilellä tuottaa alle kaksi kilogrammaa, ei puolitoista tonnia.
 ## fy2-8-L3-04
 **Annettu:** pitoisuudet $c_{1960} = 317\,\text{ppm}$, $c_{1980} = 339\,\text{ppm}$, $c_{2000} = 370\,\text{ppm}$ ja $c_{2020} = 414\,\text{ppm}$ (lähde: NOAA, Mauna Loan vuosikeskiarvot, pyöristetty)
 **Kysytty:** a) kasvunopeus kullakin $20$ vuoden jaksolla; b) ennuste vuodelle $2040$ viimeisen jakson kasvunopeudella; c) vertailu koko aineiston kasvunopeuteen ja perustelu
@@ -172,7 +200,15 @@ b) Muutos on $61\,\text{Mt} - 45\,\text{Mt} = 16\,\text{Mt}$, ja $\dfrac{16}{61}
 a) $k_{1960-1980} = (339 - 317)\,\text{ppm} : 20\,\text{a} = 22\,\text{ppm} : 20\,\text{a} = 1{,}1\,\text{ppm/a}$
 a) $k_{1980-2000} = (370 - 339)\,\text{ppm} : 20\,\text{a} = 31\,\text{ppm} : 20\,\text{a} \approx 1{,}6\,\text{ppm/a}$
 a) $k_{2000-2020} = (414 - 370)\,\text{ppm} : 20\,\text{a} = 44\,\text{ppm} : 20\,\text{a} = 2{,}2\,\text{ppm/a}$
-b) $c(2040) = 414\,\text{ppm} + 2{,}2\,\text{ppm/a} \cdot 20\,\text{a} = 414\,\text{ppm} + 44\,\text{ppm} = 458\,\text{ppm}$
+b) $$
+\begin{aligned}
+c(2040) &= 414\,\text{ppm} \\
+&+ 2{,}2\,\text{ppm/a} \cdot 20\,\text{a} \\
+&= 414\,\text{ppm} \\
+&+ 44\,\text{ppm} \\
+&= 458\,\text{ppm}
+\end{aligned}
+$$
 c) Koko aineiston kasvunopeus on $k = (414 - 317)\,\text{ppm} : 60\,\text{a} = 97\,\text{ppm} : 60\,\text{a} \approx 1{,}6\,\text{ppm/a}$, ja ennuste on $414\,\text{ppm} + 1{,}6\,\text{ppm/a} \cdot 20\,\text{a} \approx 414\,\text{ppm} + 32\,\text{ppm} = 446\,\text{ppm}$.
 **Vastaus:** b) Ennuste vuodelle $2040$ on noin $458\,\text{ppm}$. Tuloksessa on kolme merkitsevää numeroa. c) Koko aineiston suora antaisi noin $446\,\text{ppm}$ eli $12\,\text{ppm}$ vähemmän.
 **Järkevyys:** Viimeisen jakson muutos $44\,\text{ppm}$ on kaksi kertaa ensimmäisen jakson muutos $22\,\text{ppm}$. Ennuste $458\,\text{ppm}$ on suurempi kuin nykyinen $414\,\text{ppm}$. Näin pitää olla, kun pitoisuus kasvaa.
@@ -188,11 +224,22 @@ a) Kivihiili: $820\,\text{g/kWh} \cdot 40 \cdot 10^6\,\text{kWh} = 32{,}8 \cdot 
 a) Maakaasu: $490 \cdot 30 \cdot 10^6\,\text{g} = 14\,700\,\text{t}$
 a) Biomassa: $230 \cdot 20 \cdot 10^6\,\text{g} = 4600\,\text{t}$
 a) Tuulivoima: $12 \cdot 10 \cdot 10^6\,\text{g} = 120\,\text{t}$
-a) Summa: $32\,800\,\text{t} + 14\,700\,\text{t} + 4600\,\text{t} + 120\,\text{t} = 52\,220\,\text{t}$
+a) Summa: $$
+\begin{aligned}
+&32\,800\,\text{t} + 14\,700\,\text{t} \\
+&+ 4600\,\text{t} + 120\,\text{t} \\
+&= 52\,220\,\text{t}
+\end{aligned}
+$$
 b) Maakaasu $30 + 10 = 40\,\text{GWh}$: $490 \cdot 40 \cdot 10^6\,\text{g} = 19\,600\,\text{t}$
 b) Biomassa: $4600\,\text{t}$
 b) Tuulivoima $10 + 30 = 40\,\text{GWh}$: $12 \cdot 40 \cdot 10^6\,\text{g} = 480\,\text{t}$
-b) Uusi summa: $19\,600\,\text{t} + 4600\,\text{t} + 480\,\text{t} = 24\,680\,\text{t}$
+b) Uusi summa: $$
+\begin{aligned}
+&19\,600\,\text{t} + 4600\,\text{t} + 480\,\text{t} \\
+&= 24\,680\,\text{t}
+\end{aligned}
+$$
 b) Pieneneminen: $52\,220\,\text{t} - 24\,680\,\text{t} = 27\,540\,\text{t}$, ja $\dfrac{27\,540}{52\,220} \cdot 100\,\% = 52{,}7\,\%$
 c) Jos koko kivihiilisähkö korvattaisiin tuulella, uusi summa olisi $14\,700\,\text{t} + 4600\,\text{t} + 12 \cdot 50 \cdot 10^6\,\text{g} = 14\,700\,\text{t} + 4600\,\text{t} + 600\,\text{t} = 19\,900\,\text{t}$, pieneneminen $\dfrac{32\,320}{52\,220} \cdot 100\,\% = 61{,}9\,\%$, ja ero on $61{,}9 - 52{,}7 = 9{,}2$ prosenttiyksikköä.
 **Vastaus:** a) noin $52\,000\,\text{t}$ vuodessa. b) Päästöt pienenevät noin $53\,\%$. Tuloksessa on kaksi merkitsevää numeroa. c) Vähennys on noin $9\,$ prosenttiyksikköä pienempi.
@@ -221,6 +268,13 @@ c) Jos koko kivihiilisähkö korvattaisiin tuulella, uusi summa olisi $14\,700\,
 **Kuvaajan lukeminen:** Kivihiilen pylvään päässä on luku $820$ ja maakaasun pylvään päässä $490$. Akselin yksikkö on $\text{g CO}_2\text{-ekv./kWh}$. Siis $e_\text{kivihiili} = 820\,\tfrac{\text{g}}{\text{kWh}}$ ja $e_\text{kaasu} = 490\,\tfrac{\text{g}}{\text{kWh}}$.
 **Kaava:** $\Delta m = (e_\text{kivihiili} - e_\text{kaasu})E$
 **Muunnokset:** $20{,}0\,\text{MWh} = 20\,000\,\text{kWh}$; lopuksi $1\,\text{t} = 10^{6}\,\text{g}$.
-**Sijoitus:** $\Delta m = (820 - 490)\,\tfrac{\text{g}}{\text{kWh}} \cdot 20\,000\,\text{kWh} = 6{,}6 \cdot 10^{6}\,\text{g} = 6{,}6\,\text{t}$
+**Sijoitus:** $$
+\begin{aligned}
+\Delta m &= (820 - 490)\,\tfrac{\text{g}}{\text{kWh}} \\
+&\cdot 20\,000\,\text{kWh} \\
+&= 6{,}6 \cdot 10^{6}\,\text{g} \\
+&= 6{,}6\,\text{t}
+\end{aligned}
+$$
 **Vastaus:** $\Delta m \approx 6{,}6\,\text{t}$, kaksi merkitsevää numeroa, koska päästökertoimien erotus $330\,\tfrac{\text{g}}{\text{kWh}}$ on kahden luetun luvun erotus.
 **Järkevyys:** Kivihiilellä päästö on $820 \cdot 20\,000\,\text{g} = 16{,}4\,\text{t}$ ja kaasulla $490 \cdot 20\,000\,\text{g} = 9{,}8\,\text{t}$. Erotus $16{,}4\,\text{t} - 9{,}8\,\text{t} = 6{,}6\,\text{t}$ vastaa tulosta. Se on noin $40\,\%$ kivihiilen päästöstä.

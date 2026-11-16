@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5bb4527761a2779c
+CONTENT-HASH: be8b26190b060e32
 
 ## Blocking
 
 ## Polish
-- content/fi/FY4/fy4-3/exercises/solutions.md (L3-05 c) — "kärry vetää köyttä ja oppilasta": the cart pulls the rope, and the massless rope pulls the student. C, so optional. Carried over from round 1.
 
 ## Checked
-- L2-08: the diff only drops the prefix "Esimerkkiarvot:". The masses, the forces F_KH and F_HK and the question are unchanged. The answer F_HK = F_KH still follows from the third law, whatever the masses.
-- L2-09: the added clause "Lue hetket, joilla lukema lähtee nollasta ja palaa nollaan" now rules out the 0,06 → 0,14 s reading, which is the round-1 polish. In figure fy4-3/anturit those moments are T0 = 0,05 s and T1 = 0,15 s, both on grid lines. So 0,10 s (tolerance 0,1) can be read, and the clause does not give the answer away.
-- The diff stays consistent with the solution, which already read the contact time this way. The answer 0.1 s from answers.py and exercises.json is unchanged.
-- No number, symbol or physics changed outside these two sentences.
-- Hash 5bb4527761a2779c at the start and at the end.
+- L3-05 Periaate: "kärry vetää köyttä yhtä suurella voimalla kuin köysi kärryä. Oppilasta ei vedä kärry vaan köysi." This names the third-law pair correctly (cart and rope) and removes the earlier wrong pairing of the cart with the student. It closes the polish item of the previous rounds.
+- L3-05 Vastaus c): the cart pulls the rope backwards with the same $5{,}1\,\text{N}$ although the cart accelerates; the rope pulls the student's hand backwards and the hand pulls the rope forwards with an equal force. Both are correct interaction pairs. With the rope's mass neglected (stated in the task) the two pairs have the same magnitude, so nothing contradicts the sensor reading at the hand.
+- L2-06 Vastaus a): "pieni ilmanvastus on hyvin pieni" became "ilmanvastus on hyvin pieni". The physics is the same and agrees with the task text ("hyvin pieni ilmanvastus").
+- exercises.json: only the marker (esimerkkiaineisto) left the table captions; the task texts still say the tables are example data.
+- No number, symbol or answer changed: L3-05 b) $10{,}2\,\text{N} : 3 = 3{,}4\,\text{N}$ and L2-06 b) $0{,}500\,\text{m/s} \cdot 6{,}0\,\text{s} = 3{,}0\,\text{m}$ recomputed.
+- Hash be8b26190b060e32 at the start and at the end.

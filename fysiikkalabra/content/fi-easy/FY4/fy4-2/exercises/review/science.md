@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 2a10dc3b6c3bbf38
-SCOPE: delta added-exercise from c6b41b885c57e2a9 base 81db4a6fd727
+CONTENT-HASH: f7d8fb2fa02b0994
+Mode: delta
+
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Only change: solutions.md:229 significant-figure reason for L1-09; now correct (24,79 has four figures, answer given with three because tables differ in the fourth figure), same meaning as fi:229.
-- Recomputed: t = √(2h/g) = √(40 m / 24,79 m/s²) = 1,270 s → 1,27 s; exercises.json 1.2703 equals fi and answers.py, tolerance 4 % covers rounding and table values.
-- All 22 tasks: answer, unit, tolerance, figure, data and correct options equal the Finnish set.
-- Hash unchanged at start and end.
+- Hash the same at the start and the end (f7d8fb2fa02b0994).
+- Only change: solutions.md:110, the spelling "kilometreina" → "kilometreinä" in the answer line of the train task; no number, symbol, unit or claim changed.
+- The line's physics still holds: 150 m + 900 m + 112,5 m = 1162,5 m → 1160 m = 1,16 km, three significant figures; the sentence states itself that the final zero of 1160 m is not significant, as the teacher's rule requires when a trailing zero is not meant as significant.
+- The packet gives no SCOPE line for this change, so none is written.

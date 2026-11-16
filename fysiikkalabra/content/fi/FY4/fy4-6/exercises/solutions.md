@@ -318,7 +318,7 @@ a_c &= 9{,}81\,\text{m/s}^2 \\
 s_c &= \frac{493{,}8\,\text{m}^2/\text{s}^2}{2 \cdot 3{,}365\,\text{m/s}^2} = 73{,}4\,\text{m}
 \end{aligned}
 ```
-**Vastaus:** a) $34\,\text{m}$, b) $56\,\text{m}$ ja c) $73\,\text{m}$ (laskettu $73{,}4\,\text{m}$). Kohdan c) tulos pyöristetään kahteen merkitsevää numeroa kuten kitkakertoimessa $0{,}45$ ja kulmassa $6{,}0^\circ$. Auton massaa ei tarvita, koska se supistuu: sekä kitka että painon komponentti ovat verrannollisia massaan, joten hidastuvuus ei riipu siitä.
+**Vastaus:** a) $34\,\text{m}$, b) $56\,\text{m}$ ja c) $73\,\text{m}$ (laskettu $73{,}4\,\text{m}$). Kohdan c) tulos pyöristetään kahteen merkitsevään numeroon kuten kitkakertoimessa $0{,}45$ ja kulmassa $6{,}0^\circ$. Auton massaa ei tarvita, koska se supistuu: sekä kitka että painon komponentti ovat verrannollisia massaan, joten hidastuvuus ei riipu siitä.
 **Järkevyys:** Märällä tiellä matka on $55{,}9 : 33{,}6 = 1{,}66$-kertainen kuivaan verrattuna, ja sama suhde saadaan kitkakertoimista $0{,}75 : 0{,}45 = 1{,}67$. Alamäessä matka on pidempi kuin vaakasuoralla märällä tiellä, $73\,\text{m} > 56\,\text{m}$, koska painon komponentti rinnettä alas pienentää hidastuvuutta. Hidastuvuus $3{,}365\,\text{m/s}^2$ on silti positiivinen, koska $\mu = 0{,}45 > \tan 6{,}0^\circ = 0{,}11$.
 
 ## fy4-6-L3-05

@@ -251,3 +251,46 @@ c) Liikemäärä ennen törmäystä on $0{,}40 \cdot 1{,}50\,\text{kg}\cdot\text
 **Sijoitus:** $m_\text{B} = 0{,}30\,\text{kg} \cdot \left(\dfrac{0{,}60}{0{,}20} - 1\right) = 0{,}60\,\text{kg}$ ja $\Delta E_\text{k} = \tfrac{1}{2} \cdot 0{,}30\,\text{kg} \cdot (0{,}60\,\text{m/s})^2 - \tfrac{1}{2} \cdot 0{,}90\,\text{kg} \cdot (0{,}20\,\text{m/s})^2 = 0{,}054\,\text{J} - 0{,}018\,\text{J} = 0{,}036\,\text{J}$
 **Vastaus:** $0{,}036\,\text{J}$, kaksi merkitsevää numeroa kuten massassa $0{,}30\,\text{kg}$.
 **Järkevyys:** Liike-energiasta $0{,}054\,\text{J}$ muuttuu $0{,}036\,\text{J}$ eli kaksi kolmasosaa, mikä sopii täysin kimmottomaan törmäykseen (yhteen jäävät kappaleet menettävät massojen suhteessa $m_\text{B}/(m_\text{A} + m_\text{B}) = 0{,}60/0{,}90$ liike-energiasta). Energia ei voi kasvaa, ja tulos on positiivinen, kuten pitää.
+
+## fy4-10-L2-10
+**Kysytty:** a) pallojen nopeudet etumerkkeineen ennen törmäystä ja sen jälkeen, b) systeemin kokonaisliikemäärä $p$ ja kokonaisliike-energia $E_\text{k}$ ennen ja jälkeen, c) elastisuuden vaikutus niiden säilymiseen ja d) selitys sille, miksi liikemäärä säilyy, vaikka liike-energia pienenee
+**Periaate:** Valitaan systeemiksi molemmat pallot ja positiiviseksi suunnaksi oikea. Simulaatiossa ei ole kitkaa, ja kun valinta Seinä on pois, radan suunnassa palloihin ei vaikuta ulkoisia voimia. Törmäyksen voimat ovat systeemin sisäisiä voimia, joten kokonaisliikemäärä säilyy. Liike-energia säilyy vain kimmoisassa törmäyksessä. Nopeudet ovat etumerkillisiä: vasemmalle liikkuvan pallon nopeus on negatiivinen.
+**Mallivastaus:** Tulokset riippuvat valitsemistasi massoista ja alkunopeuksista, joten yhtä ainoaa oikeaa lukuarvoa ei ole. Menetelmä on aina sama: lue kummankin pallon massa ja etumerkillinen nopeus taulukosta Lisää tietoja ennen törmäystä ja sen jälkeen, laske liikemäärät ja liike-energiat ja vertaa summia.
+
+Esimerkkiratkaisu simulaation oletusarvoilla (luettu 16.11.2026, simulaation versio 1.1.25). Simulaatiosta on luettu massat, nopeudet ja sen näyttämä liike-energia. Kaikki muu on laskettu niistä.
+
+a) Ennen törmäystä: $m_1 = 0{,}50\,\text{kg}$ ja $v_1 = 1{,}00\,\text{m/s}$ sekä $m_2 = 1{,}50\,\text{kg}$ ja $v_2 = -0{,}50\,\text{m/s}$. Pallo 2 liikkuu vasemmalle, joten sen nopeus on negatiivinen. Kun elastisuus on $100\,\%$, törmäyksen jälkeen $v_1' = -1{,}25\,\text{m/s}$ ja $v_2' = 0{,}25\,\text{m/s}$: kumpikin pallo vaihtaa suuntaa.
+
+b) Kappaleen liikemäärä on $p = mv$ ja liike-energia $E_\text{k} = \tfrac12 mv^2$. Systeemin kokonaisliikemäärä ja kokonaisliike-energia ovat pallojen arvojen summat. Yksiköt ovat $\text{kg}$ ja $\text{m/s}$, joten muunnoksia ei tarvita. Ennen törmäystä:
+
+$$\begin{aligned} p &= m_1 v_1 + m_2 v_2 \\ &= 0{,}50\,\text{kg} \cdot 1{,}00\,\text{m/s} \\ &\quad + 1{,}50\,\text{kg} \cdot (-0{,}50\,\text{m/s}) \\ &= -0{,}25\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+$$\begin{aligned} E_{\text{k},1} &= \tfrac12 m_1 v_1^2 \\ &= \tfrac12 \cdot 0{,}50\,\text{kg} \cdot (1{,}00\,\text{m/s})^2 \\ &= 0{,}25\,\text{J} \\[6pt] E_{\text{k},2} &= \tfrac12 m_2 v_2^2 \\ &= \tfrac12 \cdot 1{,}50\,\text{kg} \cdot (-0{,}50\,\text{m/s})^2 \\ &= 0{,}1875\,\text{J} \\[6pt] E_\text{k} &= E_{\text{k},1} + E_{\text{k},2} \\ &= 0{,}25\,\text{J} + 0{,}1875\,\text{J} \\ &= 0{,}4375\,\text{J} \\ &\approx 0{,}44\,\text{J} \end{aligned}$$
+
+Törmäyksen jälkeen, kun elastisuus on $100\,\%$:
+
+$$\begin{aligned} p' &= m_1 v_1' + m_2 v_2' \\ &= 0{,}50\,\text{kg} \cdot (-1{,}25\,\text{m/s}) \\ &\quad + 1{,}50\,\text{kg} \cdot 0{,}25\,\text{m/s} \\ &= -0{,}25\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+$$\begin{aligned} E_{\text{k},1}' &= \tfrac12 m_1 v_1'^2 \\ &= \tfrac12 \cdot 0{,}50\,\text{kg} \cdot (-1{,}25\,\text{m/s})^2 \\ &= 0{,}3906\,\text{J} \\[6pt] E_{\text{k},2}' &= \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 1{,}50\,\text{kg} \cdot (0{,}25\,\text{m/s})^2 \\ &= 0{,}0469\,\text{J} \\[6pt] E_\text{k}' &= E_{\text{k},1}' + E_{\text{k},2}' \\ &= 0{,}3906\,\text{J} + 0{,}0469\,\text{J} \\ &= 0{,}4375\,\text{J} \\ &\approx 0{,}44\,\text{J} \end{aligned}$$
+
+Liikemäärä ja liike-energia ovat samat ennen ja jälkeen, eli molemmat säilyvät. Simulaatio näyttää liike-energiaksi saman arvon $0{,}44\,\text{J}$ ennen törmäystä ja sen jälkeen. Tulokset ilmoitetaan kahdella desimaalilla, koska simulaatio näyttää arvot kahdella desimaalilla.
+
+c) Kun elastisuus on $50\,\%$, simulaatio näyttää törmäyksen jälkeen nopeudet $v_1' = -0{,}69\,\text{m/s}$ ja $v_2' = 0{,}06\,\text{m/s}$:
+
+$$\begin{aligned} p' &= m_1 v_1' + m_2 v_2' \\ &= 0{,}50\,\text{kg} \cdot (-0{,}69\,\text{m/s}) \\ &\quad + 1{,}50\,\text{kg} \cdot 0{,}06\,\text{m/s} \\ &= -0{,}255\,\text{kg}\cdot\text{m/s} \\ &\approx -0{,}26\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+$$\begin{aligned} E_{\text{k},1}' &= \tfrac12 m_1 v_1'^2 \\ &= \tfrac12 \cdot 0{,}50\,\text{kg} \cdot (-0{,}69\,\text{m/s})^2 \\ &= 0{,}1190\,\text{J} \\[6pt] E_{\text{k},2}' &= \tfrac12 m_2 v_2'^2 \\ &= \tfrac12 \cdot 1{,}50\,\text{kg} \cdot (0{,}06\,\text{m/s})^2 \\ &= 0{,}0027\,\text{J} \\[6pt] E_\text{k}' &= E_{\text{k},1}' + E_{\text{k},2}' \\ &= 0{,}1190\,\text{J} + 0{,}0027\,\text{J} \\ &= 0{,}1217\,\text{J} \\ &\approx 0{,}12\,\text{J} \end{aligned}$$
+
+Kun elastisuus on $0\,\%$, pallot jäävät kiinni toisiinsa ja liikkuvat yhteisellä nopeudella $v' = -0{,}13\,\text{m/s}$. Yhteinen massa on $m_1 + m_2 = 2{,}00\,\text{kg}$:
+
+$$\begin{aligned} p' &= (m_1 + m_2)\,v' \\ &= 2{,}00\,\text{kg} \cdot (-0{,}13\,\text{m/s}) \\ &= -0{,}26\,\text{kg}\cdot\text{m/s} \end{aligned}$$
+
+$$\begin{aligned} E_\text{k}' &= \tfrac12 (m_1 + m_2)\,v'^2 \\ &= \tfrac12 \cdot 2{,}00\,\text{kg} \cdot (-0{,}13\,\text{m/s})^2 \\ &= 0{,}0169\,\text{J} \\ &\approx 0{,}02\,\text{J} \end{aligned}$$
+
+Liikemäärä on kaikissa tapauksissa sama $-0{,}25\,\text{kg}\cdot\text{m/s}$ näytön pyöristyksen tarkkuudella. Arvo $-0{,}26\,\text{kg}\cdot\text{m/s}$ johtuu kahteen desimaaliin pyöristetyistä nopeuksista: tarkka yhteinen nopeus on $-0{,}125\,\text{m/s}$, ja se antaa $2{,}00\,\text{kg} \cdot (-0{,}125\,\text{m/s})$ eli $-0{,}25\,\text{kg}\cdot\text{m/s}$. Liike-energia sen sijaan pienenee: arvosta $0{,}44\,\text{J}$ jää $0{,}12\,\text{J}$, kun elastisuus on $50\,\%$ (noin $72\,\%$ liike-energiasta muuttuu muuksi energiaksi), ja $0{,}02\,\text{J}$, kun elastisuus on $0\,\%$ (noin $96\,\%$). Liikemäärä siis säilyy jokaisella elastisuuden arvolla, mutta liike-energia säilyy vain, kun elastisuus on $100\,\%$, ja mitä pienempi elastisuus on, sitä enemmän liike-energiaa häviää. Elastisuus $100\,\%$ vastaa kimmoisaa törmäystä ja $0\,\%$ täysin kimmotonta törmäystä.
+
+d) Törmäyksen aikana pallot vaikuttavat toisiinsa yhtä suurilla ja vastakkaissuuntaisilla voimilla saman ajan (Newtonin kolmas laki). Siksi pallojen saamat impulssit ja liikemäärien muutokset ovat yhtä suuret ja vastakkaissuuntaiset ja kumoavat toisensa. Esimerkissä pallon 1 liikemäärä muuttuu $-1{,}125\,\text{kg}\cdot\text{m/s}$ ja pallon 2 liikemäärä $+1{,}125\,\text{kg}\cdot\text{m/s}$, kun elastisuus on $100\,\%$. Kokonaisliikemäärä ei voi muuttua, kun radan suunnassa ei vaikuta ulkoista voimaa. Liikemäärä on vektorisuure, joten vastakkaissuuntaiset liikemäärät voivat kumota toisensa.
+
+Liike-energia on skalaarisuure, joka ei ole koskaan negatiivinen, eikä mikään laki vaadi sen säilymistä. Kun törmäys ei ole kimmoisa, sisäiset voimat tekevät työtä, joka muuttaa kappaleiden muotoa pysyvästi ja lämmittää niitä: liike-energiaa muuttuu sisäenergiaksi ja ääneksi. Kokonaisenergia säilyy, mekaaninen energia ei.
+
+Tarkistus ja rajoitukset: täysin kimmottomassa törmäyksessä säilymislaki antaa $v' = \dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$ eli $-0{,}125\,\text{m/s}$, mikä sopii simulaation näyttämään arvoon $-0{,}13\,\text{m/s}$. Simulaatio on malli: pallot ovat ideaalisia, kitkaa ei ole ja arvot näytetään pyöristettyinä. Oikeassa kokeessa kitka ja mittausepävarmuus aiheuttaisivat pieniä poikkeamia.

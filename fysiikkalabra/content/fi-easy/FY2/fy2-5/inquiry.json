@@ -246,7 +246,7 @@
       "prompt": "Opiskelija laskee, kuinka paljon energiaa vapautuu, kun poltetaan $250\\,\\text{g}$ ilmakuivaa polttopuuta ($H = 15\\,\\text{MJ/kg}$):\n\n$$\\begin{aligned} E &= Hm \\\\ &= 15\\,\\text{MJ/kg} \\cdot 250 \\\\ &= 3750\\,\\text{MJ} \\end{aligned}$$\n\nMissä on virhe?",
       "choices": [
         {
-          "text": "Massaa ei ole muutettu kilogrammoiksi: $250\\,\\text{g} = 250 \\cdot (1 : 1000)\\,\\text{kg} = 0{,}250\\,\\text{kg}$, joten $E = 3{,}75\\,\\text{MJ}$.",
+          "text": "Massaa ei ole muutettu kilogrammoiksi: $$\n\\begin{aligned}\n250\\,\\text{g} &= 250 \\cdot (1 : 1000)\\,\\text{kg} \\\\\n&= 0{,}250\\,\\text{kg}\n\\end{aligned}\n$$, joten $E = 3{,}75\\,\\text{MJ}$.",
           "feedback": "Oikein. Lämpöarvo on energia kilogrammaa kohti, joten massa pitää laskea kilogrammoina. Tuloksen olisi voinut huomata vääräksi. Energia $3750\\,\\text{MJ}$ vastaisi $250\\,\\text{kg}$ puuta, ja $250\\,\\text{g}$ on tuhannesosa siitä.",
           "correct": true
         },
@@ -339,7 +339,7 @@
         },
         {
           "text": "Bensiinistä, koska sen lämpöarvo on lähes kolme kertaa puun lämpöarvo.",
-          "feedback": "Lämpöarvo kertoo energian yhtä kilogrammaa kohti. Se ei kerro koko energiaa. Puuta on nelinkertainen massa. Siitä vapautuu $E = Hm = 15\\,\\text{MJ/kg} \\cdot 4{,}0\\,\\text{kg} = 60\\,\\text{MJ}$, enemmän kuin bensiinin $43\\,\\text{MJ}$."
+          "feedback": "Lämpöarvo kertoo energian yhtä kilogrammaa kohti. Se ei kerro koko energiaa. Puuta on nelinkertainen massa. Siitä vapautuu $$\n\\begin{aligned}\nE &= Hm \\\\\n&= 15\\,\\text{MJ/kg} \\cdot 4{,}0\\,\\text{kg} \\\\\n&= 60\\,\\text{MJ}\n\\end{aligned}\n$$, enemmän kuin bensiinin $43\\,\\text{MJ}$."
         },
         {
           "text": "Bensiinistä, koska puusta vapautuu vain $15 : 4{,}0 \\approx 3{,}8\\,\\text{MJ}$.",

@@ -26,7 +26,9 @@
 **Conversions:** Not needed: the kilowatt-hours cancel and the result already comes out in grams, as the answer is asked for.
 **Substitution:** $m = 12\,\text{g/kWh} \cdot 18\,\text{kWh} = 216\,\text{g}$
 **Answer:** $220\,\text{g}$, two significant figures like the data $12\,\text{g/kWh}$ and $18\,\text{kWh}$.
-**Reasonableness:** With rounded numbers $10\,\text{g/kWh} \cdot 20\,\text{kWh} = 200\,\text{g}$, close to the result. The emission is only under a quarter of a kilogram per hundred kilometres, which fits the small emission factor of wind power.
+**Reasonableness:** With rounded numbers $$
+10\,\text{g/kWh} \cdot 20\,\text{kWh} = 200\,\text{g}
+$$, close to the result. The emission is only under a quarter of a kilogram per hundred kilometres, which fits the small emission factor of wind power.
 
 ## fy2-8-L1-04
 **Given:** emission factor of rooftop panels $e_1 = 41\,\text{g/kWh}$; emission factor of natural gas electricity $e_2 = 490\,\text{g/kWh}$; the same energy $E$
@@ -64,7 +66,18 @@
 **Principle:** The amount of energy stays the same, only the way of producing it changes. The decrease in the emission is the difference between the old and the new emission, and each emission is the factor times the energy.
 **Formula:** $m_1 - m_2 = e_1 \cdot E - e_2 \cdot E = (e_1 - e_2) \cdot E$
 **Conversions:** The kilowatt-hours cancel, so the result comes out in grams. Finally $1\,\text{g} = 10^{-6}\,\text{t}$.
-**Substitution:** $m_1 - m_2 = (820\,\text{g/kWh} - 12\,\text{g/kWh}) \cdot 3600\,\text{kWh} = 808\,\text{g/kWh} \cdot 3600\,\text{kWh} = 2\,908\,800\,\text{g} = 2\,908\,800 \cdot 10^{-6}\,\text{t} = 2.9088\,\text{t}$
+**Substitution:** $$
+\begin{aligned}
+m_1 - m_2 &= (820\,\text{g/kWh} - 12\,\text{g/kWh}) \\
+&\cdot 3600\,\text{kWh} \\
+&= 808\,\text{g/kWh} \\
+&\cdot 3600\,\text{kWh} \\
+&= 2\,908\,800\,\text{g} \\
+&= 2\,908\,800 \\
+&\cdot 10^{-6}\,\text{t} \\
+&= 2.9088\,\text{t}
+\end{aligned}
+$$
 **Answer:** $2.9\,\text{t}$, two significant figures like the factors $820\,\text{g/kWh}$ and $12\,\text{g/kWh}$ (rounded medians; the zeros of the energy $3600\,\text{kWh}$ do not show precision).
 **Reasonableness:** With coal the emission is $820 \cdot 3600\,\text{g} = 2\,952\,000\,\text{g} = 2\,952\,000 \cdot 10^{-6}\,\text{t} \approx 2.95\,\text{t}$ and with wind $12 \cdot 3600\,\text{g} = 43\,200\,\text{g} = 43\,200 \cdot 10^{-6}\,\text{t} \approx 0.043\,\text{t}$. With wind the emission is almost zero compared with coal, so the saving is almost the whole emission of coal.
 
@@ -96,7 +109,12 @@
 **Conversions:** Not needed: the litres and megajoules cancel, and the emission comes out in grams.
 **Substitution:** $m_\text{petrol} = 69\,\text{g/MJ} \cdot 6.0\,\textsf{l} \cdot 32\,\text{MJ/}\textsf{l} = 13\,248\,\text{g}$, and $e = 13\,248\,\text{g} : 18\,\text{kWh} = 736\,\text{g/kWh}$
 **Answer:** $740\,\text{g/kWh}$, two significant figures like the consumption $6.0\,\textsf{l}$ and $18\,\text{kWh}$.
-**Reasonableness:** The limit is close to the $820\,\text{g/kWh}$ of coal but below it. With natural gas electricity ($490\,\text{g/kWh}$) and wind electricity ($12\,\text{g/kWh}$) the emission of the electric car stays clearly below the limit. With rounded numbers $13\,000\,\text{g} : 18\,\text{kWh} \approx 720\,\text{g/kWh}$.
+**Reasonableness:** The limit is close to the $820\,\text{g/kWh}$ of coal but below it. With natural gas electricity ($490\,\text{g/kWh}$) and wind electricity ($12\,\text{g/kWh}$) the emission of the electric car stays clearly below the limit. With rounded numbers $$
+\begin{aligned}
+&13\,000\,\text{g} : 18\,\text{kWh} \\
+&\approx 720\,\text{g/kWh}
+\end{aligned}
+$$.
 **Conclusion:** The factor of coal electricity $820\,\text{g/kWh}$ is only about $10\,\%$ larger than the limit $740\,\text{g/kWh}$. The difference is smaller than the uncertainty of the comparison, because for petrol only burning has been counted and not, for example, the emissions from producing, refining and transporting the oil. With coal electricity the emission reduction of an electric car is therefore small or nonexistent, within the accuracy of the comparison. With low-emission electricity, such as wind or hydropower, the electric car is clearly better.
 
 ## fy2-8-L3-02
@@ -145,7 +163,12 @@
 **Conversions:** Not needed: the concentration is in ppm and the time in years.
 **Substitution:** $\Delta c = 414\,\text{ppm} - 380\,\text{ppm} = 34\,\text{ppm}$ and $\Delta t = 2020\,\text{a} - 2005\,\text{a} = 15\,\text{a}$, so $k = 34\,\text{ppm} : 15\,\text{a} = 2.27\,\text{ppm/a}$
 **Answer:** $k \approx 2.3\,\text{ppm/a}$, two significant figures.
-**Reasonableness:** Between $2005$ and $2010$ the growth is $10\,\text{ppm}$, that is, $2.0\,\text{ppm/a}$, and between $2015$ and $2020$ it is $13\,\text{ppm}$, that is, about $2.6\,\text{ppm/a}$, so the average $2.3\,\text{ppm/a}$ lies between these. Check: $15\,\text{a} \cdot 2.3\,\text{ppm/a} = 34.5\,\text{ppm}$, close to the change $34\,\text{ppm}$.
+**Reasonableness:** Between $2005$ and $2010$ the growth is $10\,\text{ppm}$, that is, $2.0\,\text{ppm/a}$, and between $2015$ and $2020$ it is $13\,\text{ppm}$, that is, about $2.6\,\text{ppm/a}$, so the average $2.3\,\text{ppm/a}$ lies between these. Check: $$
+\begin{aligned}
+&15\,\text{a} \cdot 2.3\,\text{ppm/a} \\
+&= 34.5\,\text{ppm}
+\end{aligned}
+$$, close to the change $34\,\text{ppm}$.
 ## fy2-8-L2-06
 **Given:** emissions in $\text{Mt}$ in $2010$: $30$, $12$, $10$, $6$ and $3$; in $2020$: $18$, $10$, $9$, $6$ and $2$ (example data, not statistics)
 **Find:** a) total emissions $m_{2010}$ and $m_{2020}$; b) decrease of the total emissions in per cent
@@ -161,7 +184,12 @@ b) The change is $61\,\text{Mt} - 45\,\text{Mt} = 16\,\text{Mt}$, and $\dfrac{16
 ## fy2-8-L2-07
 **Find:** what the error in the student's calculation is.
 **Principle:** The emission is the emission factor times the energy, $m = e \cdot E$. When the factor is in the unit $\text{g/kWh}$ and the energy in kilowatt-hours, the kilowatt-hours cancel and the result is in grams. The result is converted into kilograms by multiplying by $0.001$.
-**Model answer:** The multiplication $820 \cdot 2.0 = 1640$ is correct, but the result is in grams. The student wrote kilograms as the unit, forgetting the conversion, so the answer is a thousand times too large. The correct emission is $1640\,\text{g} = 1640 \cdot 0.001\,\text{kg} = 1.64\,\text{kg}$, that is, about $1.6\,\text{kg}$. The result is also reasonable by estimation: two kilowatt-hours with coal produce less than two kilograms, not one and a half tonnes.
+**Model answer:** The multiplication $820 \cdot 2.0 = 1640$ is correct, but the result is in grams. The student wrote kilograms as the unit, forgetting the conversion, so the answer is a thousand times too large. The correct emission is $$
+\begin{aligned}
+1640\,\text{g} &= 1640 \cdot 0.001\,\text{kg} \\
+&= 1.64\,\text{kg}
+\end{aligned}
+$$, that is, about $1.6\,\text{kg}$. The result is also reasonable by estimation: two kilowatt-hours with coal produce less than two kilograms, not one and a half tonnes.
 ## fy2-8-L3-04
 **Given:** concentrations $c_{1960} = 317\,\text{ppm}$, $c_{1980} = 339\,\text{ppm}$, $c_{2000} = 370\,\text{ppm}$ and $c_{2020} = 414\,\text{ppm}$ (source: NOAA, Mauna Loa yearly averages, rounded)
 **Find:** a) rate of growth in each $20$-year period; b) prediction for $2040$ with the rate of growth of the last period; c) comparison with the rate of growth of the whole data and justification
@@ -172,7 +200,15 @@ b) The change is $61\,\text{Mt} - 45\,\text{Mt} = 16\,\text{Mt}$, and $\dfrac{16
 a) $k_{1960-1980} = (339 - 317)\,\text{ppm} : 20\,\text{a} = 22\,\text{ppm} : 20\,\text{a} = 1.1\,\text{ppm/a}$
 a) $k_{1980-2000} = (370 - 339)\,\text{ppm} : 20\,\text{a} = 31\,\text{ppm} : 20\,\text{a} \approx 1.6\,\text{ppm/a}$
 a) $k_{2000-2020} = (414 - 370)\,\text{ppm} : 20\,\text{a} = 44\,\text{ppm} : 20\,\text{a} = 2.2\,\text{ppm/a}$
-b) $c(2040) = 414\,\text{ppm} + 2.2\,\text{ppm/a} \cdot 20\,\text{a} = 414\,\text{ppm} + 44\,\text{ppm} = 458\,\text{ppm}$
+b) $$
+\begin{aligned}
+c(2040) &= 414\,\text{ppm} \\
+&+ 2.2\,\text{ppm/a} \cdot 20\,\text{a} \\
+&= 414\,\text{ppm} \\
+&+ 44\,\text{ppm} \\
+&= 458\,\text{ppm}
+\end{aligned}
+$$
 c) The rate of growth of the whole data is $k = (414 - 317)\,\text{ppm} : 60\,\text{a} = 97\,\text{ppm} : 60\,\text{a} \approx 1.6\,\text{ppm/a}$, and the prediction is $414\,\text{ppm} + 1.6\,\text{ppm/a} \cdot 20\,\text{a} \approx 414\,\text{ppm} + 32\,\text{ppm} = 446\,\text{ppm}$.
 **Answer:** b) The prediction for $2040$ is about $458\,\text{ppm}$, three significant figures. c) The line of the whole data would give about $446\,\text{ppm}$, that is, $12\,\text{ppm}$ less.
 **Reasonableness:** The change of the last period $44\,\text{ppm}$ is twice the change of the first period $22\,\text{ppm}$. The prediction $458\,\text{ppm}$ is larger than the present $414\,\text{ppm}$, as it should be for a growing concentration.
@@ -188,11 +224,22 @@ a) Coal: $820\,\text{g/kWh} \cdot 40 \cdot 10^6\,\text{kWh} = 32.8 \cdot 10^9\,\
 a) Natural gas: $490 \cdot 30 \cdot 10^6\,\text{g} = 14\,700\,\text{t}$
 a) Biomass: $230 \cdot 20 \cdot 10^6\,\text{g} = 4600\,\text{t}$
 a) Wind power: $12 \cdot 10 \cdot 10^6\,\text{g} = 120\,\text{t}$
-a) Sum: $32\,800\,\text{t} + 14\,700\,\text{t} + 4600\,\text{t} + 120\,\text{t} = 52\,220\,\text{t}$
+a) Sum: $$
+\begin{aligned}
+&32\,800\,\text{t} + 14\,700\,\text{t} \\
+&+ 4600\,\text{t} + 120\,\text{t} \\
+&= 52\,220\,\text{t}
+\end{aligned}
+$$
 b) Natural gas $30 + 10 = 40\,\text{GWh}$: $490 \cdot 40 \cdot 10^6\,\text{g} = 19\,600\,\text{t}$
 b) Biomass: $4600\,\text{t}$
 b) Wind power $10 + 30 = 40\,\text{GWh}$: $12 \cdot 40 \cdot 10^6\,\text{g} = 480\,\text{t}$
-b) New sum: $19\,600\,\text{t} + 4600\,\text{t} + 480\,\text{t} = 24\,680\,\text{t}$
+b) New sum: $$
+\begin{aligned}
+&19\,600\,\text{t} + 4600\,\text{t} + 480\,\text{t} \\
+&= 24\,680\,\text{t}
+\end{aligned}
+$$
 b) Decrease: $52\,220\,\text{t} - 24\,680\,\text{t} = 27\,540\,\text{t}$, and $\dfrac{27\,540}{52\,220} \cdot 100\,\% = 52.7\,\%$
 c) If all the coal electricity were replaced with wind, the new sum would be $14\,700\,\text{t} + 4600\,\text{t} + 12 \cdot 50 \cdot 10^6\,\text{g} = 14\,700\,\text{t} + 4600\,\text{t} + 600\,\text{t} = 19\,900\,\text{t}$, the decrease $\dfrac{32\,320}{52\,220} \cdot 100\,\% = 61.9\,\%$, and the difference is $61.9 - 52.7 = 9.2$ percentage points.
 **Answer:** a) about $52\,000\,\text{t}$ per year. b) The emissions decrease by about $53\,\%$, two significant figures. c) The reduction is about $9\,$ percentage points smaller.
@@ -221,6 +268,13 @@ c) If all the coal electricity were replaced with wind, the new sum would be $14
 **Reading the graph:** The number $820$ is printed at the end of the coal bar and $490$ at the natural gas bar. The unit on the horizontal axis is $\text{g CO}_2\text{-eq./kWh}$, so $e_\text{coal} = 820\,\tfrac{\text{g}}{\text{kWh}}$ and $e_\text{gas} = 490\,\tfrac{\text{g}}{\text{kWh}}$.
 **Formula:** $\Delta m = (e_\text{coal} - e_\text{gas})E$
 **Conversions:** $20.0\,\text{MWh} = 20\,000\,\text{kWh}$; finally $1\,\text{t} = 10^{6}\,\text{g}$.
-**Substitution:** $\Delta m = (820 - 490)\,\tfrac{\text{g}}{\text{kWh}} \cdot 20\,000\,\text{kWh} = 6.6 \cdot 10^{6}\,\text{g} = 6.6\,\text{t}$
+**Substitution:** $$
+\begin{aligned}
+\Delta m &= (820 - 490)\,\tfrac{\text{g}}{\text{kWh}} \\
+&\cdot 20\,000\,\text{kWh} \\
+&= 6.6 \cdot 10^{6}\,\text{g} \\
+&= 6.6\,\text{t}
+\end{aligned}
+$$
 **Answer:** $\Delta m \approx 6.6\,\text{t}$, two significant figures, because the difference of the emission factors, $330\,\tfrac{\text{g}}{\text{kWh}}$, is a difference of two read values.
 **Reasonableness:** With coal the emission is $820 \cdot 20\,000\,\text{g} = 16.4\,\text{t}$ and with gas $490 \cdot 20\,000\,\text{g} = 9.8\,\text{t}$. The difference $16.4\,\text{t} - 9.8\,\text{t} = 6.6\,\text{t}$ matches the result, and it is about $40\,\%$ of the coal emission.

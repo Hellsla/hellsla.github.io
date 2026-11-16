@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 3a567565910709a1
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the editorial-correction diff since origin/main only)
+CONTENT-HASH: f1100558e9761cec
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- [Minor] reflow capture — none worth a change.
 
 ## Checked
-- Diff of lesson.md, inquiry.json, exit-ticket.json (English), changed passages with surrounding paragraph.
-- Year length sentence ($365$ days, $8760\,\text{h}$, $8784\,\text{h}$) and Result step $1598\,\text{kW} = 1.598\,\text{MW} \approx 1.6\,\text{MW}$: LaTeX, thin spaces, decimal separator correct.
-- No captures opened (diff judged from source).
+batch delta review: reflow captures at 390 px opened (rows legible, nothing clipped, equals signs aligned, punctuation inside the last row, sentences read naturally); teacher-approved figures not re-judged.
