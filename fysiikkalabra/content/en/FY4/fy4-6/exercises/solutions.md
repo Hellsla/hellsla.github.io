@@ -164,7 +164,7 @@ komponentit G
 ```
 **Formula:** $y$: $N - mg\cos\alpha = 0$, so the maximum static friction is $F_\text{max} = \mu_0 mg\cos\alpha$, and it is compared with the component $G_x = mg\sin\alpha$
 **Conversions:** The mass is in kilograms, so no conversions are needed.
-**Substitution:** $$\begin{aligned} &F_\text{max} \\ &= 0.60\cdot 10\,\text{kg}\cdot \\ &9.81\,\text{m/s}^2\cdot\cos 35^\circ \\ &= 48.2\,\text{N} \end{aligned}$$ and $G_x = 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\sin 35^\circ = 56.3\,\text{N}$, so $G_x - F_\text{max} = 8.1\,\text{N}$
+**Substitution:** $F_\text{max} = 0.60\cdot 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\cos 35^\circ = 48.2\,\text{N}$ and $G_x = 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\sin 35^\circ = 56.3\,\text{N}$, so $G_x - F_\text{max} = 8.1\,\text{N}$
 **Answer:** the component exceeds the maximum static friction by $56.3\,\text{N} - 48.2\,\text{N} = 8.1\,\text{N}$, two significant figures like the coefficient of friction $0.60$. The maximum static friction $48\,\text{N}$ is smaller than the component $56\,\text{N}$, so the box does not stay in place but starts to slide. The difference is positive, so the friction is not enough.
 **Reasonableness:** The same conclusion follows from the angle: $\tan 35^\circ = 0.70$ is greater than $\mu_0 = 0.60$, so the plank is steeper than the limiting angle $\tan^{-1} 0.60 \approx 31^\circ$.
 
