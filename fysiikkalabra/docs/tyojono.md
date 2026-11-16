@@ -453,6 +453,8 @@ Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 1–2, 17c PR 1, 17e, 17d PR 1, sitte
 
 ## 18. Oikoluvun korjaukset FY1–FY9 (opettaja 2026-11-15)
 
+Varattu: claude/fy2-oikoluku-aineisto (FY2)
+
 Tehty: FY6 (PR #615). FY3 tehty: claude/oikoluku-fy3 (PR #613). FY7 tehty (PR #617, claude/fy7-oikoluku). P6 (fy7-8:n kaavanimi) ja fy7-8:n simulaation selite (lang/fi.json, lang/fi-easy.json "lämmöksi") tehdään kohdassa 8m.
 
 Ohjeet ja päätökset P1–P9: `docs/audits/2026-11-15-oikoluku.md` kohdat 4–11 ja 13. Kaikki luvut, kurssi kerrallaan,
@@ -475,6 +477,8 @@ FY9 tehty: claude/fy9-oikoluku-aineisto (PR #626); samassa PR:ssä kohdan 19 ain
 FY4 tehty: claude/fy4-oikoluku-aineisto (PR #625); samassa PR:ssä kohdan 19 aineistotehtävät FY4-A1…A5. Lähteestä tarkistamatta: fy4-5 les:316 (YTL) ja fy4-11 les:290 (OTI).
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9 (opettaja 2026-11-16)
+
+Varattu: claude/fy2-oikoluku-aineisto (FY2)
 
 Toimeksianto sanatarkasti: `docs/audits/2026-11-16-aineistotehtavat.md` (viisi tehtävää per kurssi, tunnisteet FY1-A1 …
 FY9-A5, lähdelinkit tarkistetaan, malliratkaisut, kolme kieltä). Tehtävät lisätään nykyiseen tehtävärakenteeseen sopivan
