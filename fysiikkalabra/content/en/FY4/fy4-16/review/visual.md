@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3cc88e83d448f783
+CONTENT-HASH: 157ba72a70aa58b3
 
 ## Blocking
 
 ## Polish
-- [Minor] inquiry.json:266 and :282 (mgh and |ΔE_mech| = 78.0 kg · 9.81 m/s² · 125 m; en-390-24 tiles #2, #3) — the row ends on a hanging `\cdot` and `125 m` stands alone without its operator — start the row with `\cdot 125\,\text{m}` as elsewhere.
-- [Minor] inquiry.json:329 (N = 55.0 kg · (9.81 − 1.20) m/s², tiles #19, #20) — the break falls inside the parentheses; readable, but a break before `\cdot (` would keep the bracket whole where the width allows.
+- [Minor] inquiry.json (tile fy4-16 #18, 390 px) — the row is broken inside a short bracket (`(9,81 / − 1,20) m/s²`) — break before `\cdot` instead so the bracket stays whole.
+- [Minor] inquiry.json (tile #0) — `10,4 + 49,6 = 16,5 / + 43,5` splits a two-term sum at 390 px — keep `= 16,5 + 43,5` on one row.
+- [Minor] inquiry.json:266 and :282 — the two restored inline formulas (`mgh = … · 125 m`, `|ΔE_mek| = …`) stay over-wide on a phone as on main — keep on the clipped-formula list; break before the operator when redone.
 
 ## Checked
-- batch delta review: opened contact sheets en-390-24, en-390-25, en-390-26, en-1280-19 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.
+- delta round 2: opened en-390-02, en-390-03, en-390-04, en-1280-01, en-1280-02, en-1280-03 (all tiles of this part at 390 and 1280 px); no row ends in an operator, every continuation row starts with its operator or relation, chains aligned, nothing new clipped; the restored formula(s) confirmed identical to origin/main (inline, on the known clipped-formula list); hash unchanged from start to end.

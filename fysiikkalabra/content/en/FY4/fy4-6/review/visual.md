@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9f65b2760c3051b5
+CONTENT-HASH: b4f967f485e15a72
 
 ## Blocking
 
 ## Polish
-- [Minor] inquiry.json:479 (N = 20 kg · 9.81 m/s² · cos 20°) — the row ends on a hanging `\cdot` and the next row starts with the number, unlike every other chain, where a continued row starts with the operator — move the `\cdot` to the start of the next row.
+- [Minor] inquiry.json:479 (tile fy4-6 #8, 390 px) — the restored inline `N = 20 kg · 9,81 m/s² · cos 20° ≈ 184 N` is cut at the right edge on a phone exactly as on main (`≈ 184 N` lost) — keep it on the clipped-formula list; when re-broken, break before the operator (`\\ &\quad\cdot\cos 20^\circ`).
+- [Minor] inquiry.json (tile #0, 390 px) — the mean is broken inside the bracket (`(0,347 + 0,357 / + 0,347 + 0,352) : 4`) with the continuation flush left — indent the continuation row with `\quad`.
 
 ## Checked
-- batch delta review: opened contact sheets en-390-07, en-390-08, en-1280-05 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.
+- delta round 2: opened en-390-01, en-1280-01 (all tiles of this part at 390 and 1280 px); no row ends in an operator, every continuation row starts with its operator or relation, chains aligned, nothing new clipped; the restored formula(s) confirmed identical to origin/main (inline, on the known clipped-formula list); hash unchanged from start to end.

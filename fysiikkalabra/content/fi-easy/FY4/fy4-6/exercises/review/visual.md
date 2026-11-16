@@ -1,10 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: eca9e2a3fca85018
+VERDICT: PASS
+CONTENT-HASH: e549dd1ca91e5059
 
 ## Blocking
-- [Major] exercises/solutions.md, Sijoitus with `F_\text{max}` (tile fy4-6 #2, 390 and 1280 px) — the row is broken after a multiplication dot (`10\,\text{kg}\cdot \\ &9{,}81…`): the page shows `F_max = 0,60 · 10 kg·` and under it, flush left, `9,81 m/s² · cos 35° = 48,2 N`, which reads as a separate, false equation; at 1280 px the first row is even indented past the second — break before the operator: `&= 0{,}60\cdot 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &\quad\cdot\cos 35^\circ \\ &= 48{,}2\,\text{N}` (no row may end in `\cdot`).
 
 ## Polish
+- [Minor] exercises/solutions.md (tiles fy4-6 #4–#6, 390 px) — chains break inside the bracket (`(sin 30° / − 0,35 · cos 30°)`) with the continuation flush left under the relation — indent the continuation row with `\quad`.
+- [Minor] exercises/solutions.md, `F_max` row — restored inline as on main, still over-wide on a phone — keep on the clipped-formula list; break before the operator when redone.
 
 ## Checked
-- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.
+- delta round 2: opened fi-easy-390-01, fi-easy-1280-01 (all tiles of this part at 390 and 1280 px); no row ends in an operator, every continuation row starts with its operator or relation, chains aligned, nothing new clipped; the restored formula(s) confirmed identical to origin/main (inline, on the known clipped-formula list); hash unchanged from start to end.

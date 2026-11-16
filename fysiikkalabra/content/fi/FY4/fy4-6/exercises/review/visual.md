@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: f628d4dfd9e1cfaf
+CONTENT-HASH: 8fae826a54e6501a
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] solutions.md Sijoitus (`F_max = 0,60 · 10 kg · 9,81 m/s² · cos 35°`), capture fi-390-07 / fi-1280-05 #2 — the row ends with a dangling `\cdot` and the continuation `9{,}81\,\text{m/s}^2\cdot\cos 35^\circ` starts without an operator, left of the `=` column; at 1280 px the rows are joined into a stepped two-row formula. Every other chain in FY4 starts the row with the operator. Fix: `… \\ &\cdot 9{,}81\,\text{m/s}^2\cdot\cos 35^\circ` (as fy4-7 `E_p`). No new review round needed.
+- [Minor] exercises/solutions.md (tiles fy4-6 #4–#6, 390 px) — chains break inside the bracket (`(sin 30° / − 0,35 · cos 30°)`) with the continuation flush left under the relation — indent the continuation row with `\quad`.
+- [Minor] exercises/solutions.md, `F_max` row — restored inline as on main, still over-wide on a phone — keep on the clipped-formula list; break before the operator when redone.
 
 ## Checked
-- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-07, fi-390-08 and fi-1280-05, fi-1280-06; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
+- delta round 2: opened fi-390-01, fi-1280-01 (all tiles of this part at 390 and 1280 px); no row ends in an operator, every continuation row starts with its operator or relation, chains aligned, nothing new clipped; the restored formula(s) confirmed identical to origin/main (inline, on the known clipped-formula list); hash unchanged from start to end.
