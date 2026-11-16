@@ -268,7 +268,7 @@
         {
           "text": "Taittumislaki koskee kulmien sinejä, ei kulmia: $\\sin\\alpha_2 = \\sin\\alpha_1 : n$, josta $\\alpha_2 = 34{,}5^\\circ$.",
           "correct": true,
-          "feedback": "Oikein. $\\sin\\alpha_2 = \\sin 60{,}0^\\circ : 1{,}5302 = 0{,}5660$, joten $\\alpha_2 = 34{,}5^\\circ$. Kulmien jakaminen taitekertoimella antaa väärän tuloksen, koska sini ei ole verrannollinen kulmaan suurilla kulmilla."
+          "feedback": "Oikein. $$\\begin{aligned} \\sin\\alpha_2 &= \\sin 60{,}0^\\circ : 1{,}5302 \\\\ &= 0{,}5660 \\end{aligned}$$, joten $\\alpha_2 = 34{,}5^\\circ$. Kulmien jakaminen taitekertoimella antaa väärän tuloksen, koska sini ei ole verrannollinen kulmaan suurilla kulmilla."
         },
         {
           "text": "Taitekerroin olisi pitänyt kertoa eikä jakaa, jolloin taitekulmaksi saadaan $91{,}8^\\circ$.",
@@ -293,7 +293,7 @@
       "hints": [
         "Laske ensin kummankin värin taitekulma vedessä. Kumpi taittuu enemmän?",
         "Kun taitekulma $\\beta$ tunnetaan, säde etenee syvyydellä $h$ vaakasuunnassa matkan $x = h \\tan\\beta$.",
-        "$\\beta_\\text{p} = 40{,}57^\\circ$ ja $\\beta_\\text{v} = 40{,}15^\\circ$, joten $\\Delta x = 2{,}00\\,\\text{m} \\cdot (\\tan 40{,}57^\\circ - \\tan 40{,}15^\\circ)$."
+        "$\\beta_\\text{p} = 40{,}57^\\circ$ ja $\\beta_\\text{v} = 40{,}15^\\circ$, joten $$\\begin{aligned} \\Delta x &= 2{,}00\\,\\text{m} \\cdot (\\tan 40{,}57^\\circ \\\\ &- \\tan 40{,}15^\\circ) \\end{aligned}$$."
       ],
       "mistakes": [
         {

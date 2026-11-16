@@ -61,7 +61,7 @@
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{570\,\text{nm}}{4 \cdot 1.47} = 96.94\,\text{nm}$
 **Answer:** $96.9\,\text{nm}$, three significant figures like the refractive index $1.47$ and the wavelength $570\,\text{nm}$.
-**Reasonableness:** Check: the path difference is $2 \cdot 1.47 \cdot 96.94\,\text{nm} = 285\,\text{nm} = \tfrac{1}{2} \cdot 570\,\text{nm}$. The film is thinner than a soap film for the same wavelength ($570\,\text{nm} : (4 \cdot 1.33) = 107\,\text{nm}$), because the refractive index of oil is greater and the wavelength in oil is therefore shorter.
+**Reasonableness:** Check: the path difference is $2 \cdot 1.47 \cdot 96.94\,\text{nm} = 285\,\text{nm} = \tfrac{1}{2} \cdot 570\,\text{nm}$. The film is thinner than a soap film for the same wavelength ($$\begin{aligned} &570\,\text{nm} : (4 \cdot 1.33) \\ &= 107\,\text{nm} \end{aligned}$$), because the refractive index of oil is greater and the wavelength in oil is therefore shorter.
 
 ## fy7-14-L1-08
 **Given:** refractive index of the soap film $n = 1.33$, thickness $d = 300\,\text{nm}$, wavelength in air $\lambda = 532\,\text{nm}$, normal incidence
@@ -105,7 +105,7 @@ The expression $\lambda : (4n)$ is obtained if the shift is forgotten, but it is
 **Conversions:** Not needed: the thickness and the wavelength are both in nanometres.
 **Substitution:** $k = 0$: $\lambda = \dfrac{2 \cdot 1.38 \cdot 110\,\text{nm}}{0.5} = \dfrac{303.6\,\text{nm}}{0.5} = 607.2\,\text{nm}$; for $k = 1$ we get $303.6\,\text{nm} : 1.5 = 202.4\,\text{nm}$, which is ultraviolet.
 **Answer:** $607\,\text{nm}$, three significant figures like the thickness $110\,\text{nm}$ and the refractive index $1.38$.
-**Reasonableness:** For $k = 0$ the coating is a quarter-wave layer: $4 \cdot 1.38 \cdot 110\,\text{nm} = 607.2\,\text{nm}$. The coating is thicker than the $99.6\,\text{nm}$ designed for $550\,\text{nm}$, so it cancels a longer, orange wavelength.
+**Reasonableness:** For $k = 0$ the coating is a quarter-wave layer: $$\begin{aligned} &4 \cdot 1.38 \cdot 110\,\text{nm} \\ &= 607.2\,\text{nm} \end{aligned}$$. The coating is thicker than the $99.6\,\text{nm}$ designed for $550\,\text{nm}$, so it cancels a longer, orange wavelength.
 
 ## fy7-14-L2-03
 **Given:** refractive index of the coating $n = 1.38$, of the glass $1.52$, wavelength $\lambda = 520\,\text{nm}$, normal incidence
@@ -115,7 +115,7 @@ The expression $\lambda : (4n)$ is obtained if the shift is forgotten, but it is
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{3 \cdot 520\,\text{nm}}{4 \cdot 1.38} = \dfrac{1560\,\text{nm}}{5.52} = 282.61\,\text{nm}$
 **Answer:** $283\,\text{nm}$, three significant figures like the refractive index $1.38$ and the wavelength $520\,\text{nm}$.
-**Reasonableness:** The thinnest coating would be $520\,\text{nm} : (4 \cdot 1.38) = 94.2\,\text{nm}$, and the second thinnest is three times that, because the path difference increases by one wavelength, that is, by two half wavelengths. Check: $2 \cdot 1.38 \cdot 282.61\,\text{nm} = 780\,\text{nm} = 1.5 \cdot 520\,\text{nm}$.
+**Reasonableness:** The thinnest coating would be $$\begin{aligned} &520\,\text{nm} : (4 \cdot 1.38) \\ &= 94.2\,\text{nm} \end{aligned}$$, and the second thinnest is three times that, because the path difference increases by one wavelength, that is, by two half wavelengths. Check: $2 \cdot 1.38 \cdot 282.61\,\text{nm} = 780\,\text{nm} = 1.5 \cdot 520\,\text{nm}$.
 
 ## fy7-14-L2-04
 **Given:** refractive index of the layer $n = 2.30$, of the glass $1.52$, wavelength $\lambda = 550\,\text{nm}$, light from air at normal incidence
@@ -157,7 +157,7 @@ The expression $\lambda : (4n)$ is obtained if the shift is forgotten, but it is
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{540\,\text{nm}}{4 \cdot 1.38} = 97.83\,\text{nm}$
 **Answer:** $97.8\,\text{nm}$, three significant figures like the refractive index $1.38$ and the wavelength $540\,\text{nm}$. The coating is designed for the green wavelength $540\,\text{nm}$. The purple colour arises because the reflection is greatest at both ends of the graph: violet ($420\,\text{nm}$) is reflected $1.84\,\%$ and red ($700\,\text{nm}$) $1.64\,\%$, while green is reflected only $1.26\,\%$, that is, violet about $1.5$ times and red about $1.3$ times as much as green. A mixture of red and violet looks purple, whereas green passes through the glass.
-**Reasonableness:** Check: $4 \cdot 1.38 \cdot 97.83\,\text{nm} = 540\,\text{nm}$. The coating is a little thinner than the $99.6\,\text{nm}$ designed for $550\,\text{nm}$, because the wavelength is a little shorter. The coating does not cancel all wavelengths equally well, as stated in the chapter: the reflection at the edges is about $1.3$–$1.5$ times that in the middle, and the smallest reflection $1.26\,\%$ is close to the $1.3\,\%$ mentioned in the chapter.
+**Reasonableness:** Check: $$\begin{aligned} &4 \cdot 1.38 \cdot 97.83\,\text{nm} \\ &= 540\,\text{nm} \end{aligned}$$. The coating is a little thinner than the $99.6\,\text{nm}$ designed for $550\,\text{nm}$, because the wavelength is a little shorter. The coating does not cancel all wavelengths equally well, as stated in the chapter: the reflection at the edges is about $1.3$–$1.5$ times that in the middle, and the smallest reflection $1.26\,\%$ is close to the $1.3\,\%$ mentioned in the chapter.
 
 ## fy7-14-L2-08
 **Given:** refractive index of the coating $1.38$, refractive index of the glass $1.52$, the reflected shares $R$ read from the figure at wavelengths $400$–$700\,\text{nm}$
@@ -178,7 +178,7 @@ The expression $\lambda : (4n)$ is obtained if the shift is forgotten, but it is
 **Conversions:** Not needed: the wavelength and the thickness are both in nanometres.
 **Substitution:** $d = \dfrac{589\,\text{nm}}{1.33} = 442.86\,\text{nm}$
 **Answer:** $443\,\text{nm}$, three significant figures like the refractive index $1.33$ and the wavelength $589\,\text{nm}$.
-**Reasonableness:** The first dark band is at a thickness of $589\,\text{nm} : (2 \cdot 1.33) = 221\,\text{nm}$, and the second is twice that, because between consecutive dark bands the thickness always grows by the same amount, $\lambda : (2n)$. The thickness is less than a micrometre, as is fitting for a thin film.
+**Reasonableness:** The first dark band is at a thickness of $$\begin{aligned} &589\,\text{nm} : (2 \cdot 1.33) \\ &= 221\,\text{nm} \end{aligned}$$, and the second is twice that, because between consecutive dark bands the thickness always grows by the same amount, $\lambda : (2n)$. The thickness is less than a micrometre, as is fitting for a thin film.
 
 ## fy7-14-L3-02
 **Given:** eight surfaces, each of which reflects $1.3\,\%$ of the light arriving at it; the glass does not absorb light, and reflected light does not return to the sensor

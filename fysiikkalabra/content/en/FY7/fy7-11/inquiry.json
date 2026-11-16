@@ -268,7 +268,7 @@
         {
           "text": "The law of refraction concerns the sines of the angles, not the angles: $\\sin\\alpha_2 = \\sin\\alpha_1 : n$, which gives $\\alpha_2 = 34.5^\\circ$.",
           "correct": true,
-          "feedback": "Correct. $\\sin\\alpha_2 = \\sin 60.0^\\circ : 1.5302 = 0.5660$, so $\\alpha_2 = 34.5^\\circ$. Dividing the angle by the refractive index gives a wrong result, because the sine is not proportional to the angle at large angles."
+          "feedback": "Correct. $$\\begin{aligned} \\sin\\alpha_2 &= \\sin 60.0^\\circ : 1.5302 \\\\ &= 0.5660 \\end{aligned}$$, so $\\alpha_2 = 34.5^\\circ$. Dividing the angle by the refractive index gives a wrong result, because the sine is not proportional to the angle at large angles."
         },
         {
           "text": "The refractive index should have been multiplied, not divided, which gives an angle of refraction of $91.8^\\circ$.",
@@ -293,7 +293,7 @@
       "hints": [
         "First calculate the angle of refraction of each colour in water. Which one is refracted more?",
         "Once the angle of refraction $\\beta$ is known, the ray travels a horizontal distance $x = h \\tan\\beta$ at depth $h$.",
-        "$\\beta_\\text{r} = 40.57^\\circ$ and $\\beta_\\text{v} = 40.15^\\circ$, so $\\Delta x = 2.00\\,\\text{m} \\cdot (\\tan 40.57^\\circ - \\tan 40.15^\\circ)$."
+        "$\\beta_\\text{r} = 40.57^\\circ$ and $\\beta_\\text{v} = 40.15^\\circ$, so $$\\begin{aligned} \\Delta x &= 2.00\\,\\text{m} \\cdot (\\tan 40.57^\\circ \\\\ &- \\tan 40.15^\\circ) \\end{aligned}$$."
       ],
       "mistakes": [
         {

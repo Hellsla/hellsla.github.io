@@ -271,6 +271,19 @@
       "answer": 6.0,
       "unit": "Ω",
       "tolerance": 0.05
+    },
+    {
+      "id": "fy7-8-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "text": "Source material: <a href=\"https://www.fingrid.fi/kantaverkko/kehittaminen/suomen-sahkojarjestelma/\" target=\"_blank\" rel=\"noopener\">Fingrid – Suomen sähköjärjestelmä (The power system of Finland; the page is in Finnish)</a> (read 16 November 2026)\n\nWhy is electricity transmitted at a high voltage? Study Fingrid's page, which describes the transmission grid of Finland and its voltage levels.\n\na) Find out from the source material which voltage levels are used in the power lines of the transmission grid (kantaverkko) and how many kilometres of power line there are at each voltage level. Find out also at which voltage levels the distribution networks (jakeluverkot) operate. How many times as large is the highest voltage of the transmission grid as the lowest voltage of the distribution networks?\n\nb) Consider a simplified three-phase transmission in which the transmitted active power is $200\\,\\text{MW}$ and the power factor is $1$. Calculate the current in a phase conductor at the line voltages $110\\,\\text{kV}$ and $400\\,\\text{kV}$. Use the equation $P = \\sqrt{3}\\,UI\\cos\\varphi$.\n\nc) Assume that the resistance of each phase conductor is $4.0\\,\\Omega$ at both voltages. Calculate the power of the transmission losses at both voltages with the equation $P_\\text{h} = 3RI^2$.\n\nd) Compare the results of parts b) and c) and use them to explain why a high transmission voltage reduces the power losses caused by the resistance of the conductors. In addition, assess two simplifications of the model: how do they affect the result?\n\nEnter in the box the power loss of part c) at the line voltage $110\\,\\text{kV}$ in megawatts.",
+      "answer": 13.2231,
+      "unit": "MW",
+      "tolerance": 0.02
     }
   ],
   "level3": [

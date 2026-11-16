@@ -46,7 +46,7 @@
 **Muunnokset:** Niitä ei tarvita. Molemmat kentät ovat mikrotesloina, ja yksikkö supistuu.
 **Sijoitus:** $\theta = \tan^{-1}\dfrac{25\,\mu\text{T}}{14\,\mu\text{T}} = \tan^{-1} 1{,}786 = 60{,}75^\circ$
 **Vastaus:** $61^\circ$ pohjoisesta itään. Vastauksessa on kaksi merkitsevää numeroa, koska kentissä on kaksi.
-**Järkevyys:** Magneetin kenttä on suurempi kuin Maan kenttä. Siksi neulan pitää kääntyä yli $45^\circ$ mutta alle $90^\circ$. Tarkista vielä toiseen suuntaan: $14\,\mu\text{T} \cdot \tan 60{,}75^\circ = 25\,\mu\text{T}$.
+**Järkevyys:** Magneetin kenttä on suurempi kuin Maan kenttä. Siksi neulan pitää kääntyä yli $45^\circ$ mutta alle $90^\circ$. Tarkista vielä toiseen suuntaan: $$\begin{aligned} &14\,\mu\text{T} \cdot \tan 60{,}75^\circ \\ &= 25\,\mu\text{T} \end{aligned}$$.
 
 ## fy7-1-L2-02
 **Annettu:** magnetometrin komponentit $B_x = 12\,\mu\text{T}$, $B_y = -5{,}0\,\mu\text{T}$ ja $B_z = -48\,\mu\text{T}$, kohtisuorassa toisiaan vastaan
@@ -54,7 +54,7 @@
 **Periaate:** Kenttä on komponenttiensa vektorisumma. Kahden kohtisuoran komponentin summa saadaan Pythagoraan lauseella. Kun siihen lisätään vielä kolmas kohtisuora komponentti, sama lause antaa kolmen komponentin neliöiden summan. Etumerkki kertoo vain suunnan, ja neliöinti poistaa sen.
 **Kaava:** $B^2 = B_x^2 + B_y^2 + B_z^2$, josta $B = \sqrt{B_x^2 + B_y^2 + B_z^2}$
 **Muunnokset:** Niitä ei tarvita. Kaikki komponentit ovat mikrotesloina.
-**Sijoitus:** $B^2 = (12\,\mu\text{T})^2 + (-5{,}0\,\mu\text{T})^2 + (-48\,\mu\text{T})^2 = 2473\,(\mu\text{T})^2$, joten $B = \sqrt{2473}\,\mu\text{T} = 49{,}73\,\mu\text{T}$
+**Sijoitus:** $$\begin{aligned} B^2 &= (12\,\mu\text{T})^2 + (-5{,}0\,\mu\text{T})^2 \\ &+ (-48\,\mu\text{T})^2 \\ &= 2473\,(\mu\text{T})^2 \end{aligned}$$, joten $B = \sqrt{2473}\,\mu\text{T} = 49{,}73\,\mu\text{T}$
 **Vastaus:** $50\,\mu\text{T}$. Vastauksessa on kaksi merkitsevää numeroa, koska komponenteissa $12\,\mu\text{T}$ ja $48\,\mu\text{T}$ on kaksi.
 **Järkevyys:** Tulos on suurempi kuin suurin komponentti $48\,\mu\text{T}$. Se on lähellä Suomen arvoa, noin $52\,\mu\text{T}$. Suuri $z$-komponentti sopii siihen, että kenttä osoittaa Suomessa jyrkästi maahan, kun puhelin on vaakasuorassa.
 

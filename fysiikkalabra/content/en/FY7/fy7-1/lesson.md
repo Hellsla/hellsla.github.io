@@ -458,7 +458,7 @@ Many people think that the north end of a compass needle seeks the north pole of
 
 Another mistake is to think that the poles of a magnet can be separated by cutting the magnet in the middle. Two new poles appear at the cut, and each piece becomes a complete dipole. A third mistake is to think that a magnet attracts all metals. An aluminium can or a copper coin does not stick to a magnet, because they are not ferromagnetic.
 
-In calculations the most common mistake is to add perpendicular fields like plain numbers. Fields of $14\,\mu\text{T}$ north and $18\,\mu\text{T}$ east give a total field of $\sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \approx 23\,\mu\text{T}$, not $32\,\mu\text{T}$.
+In calculations the most common mistake is to add perpendicular fields like plain numbers. Fields of $14\,\mu\text{T}$ north and $18\,\mu\text{T}$ east give a total field of $$\begin{aligned} &\sqrt{(14\,\mu\text{T})^2 + (18\,\mu\text{T})^2} \\ &\approx 23\,\mu\text{T} \end{aligned}$$, not $32\,\mu\text{T}$.
 
 ## Summary
 - A magnet always has two poles, a north pole $\text{N}$ and a south pole $\text{S}$: it is a magnetic dipole. Like poles repel and unlike poles attract each other, and a single pole has never been observed.

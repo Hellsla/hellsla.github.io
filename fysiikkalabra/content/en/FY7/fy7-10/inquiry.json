@@ -290,7 +290,7 @@
       "hints": [
         "What does the refractive index tell you about the speed of light in a material?",
         "$n = c : v$, so $v = c : n$.",
-        "$v = 3.00 \\cdot 10^{8}\\,\\text{m/s} : 1.49$."
+        "$$\\begin{aligned} &v \\\\ &= 3.00 \\cdot 10^{8}\\,\\text{m/s} : 1.49 \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -340,7 +340,7 @@
         {
           "text": "The angle of incidence is measured from the normal: $\\alpha_1 = 60^\\circ$, so $\\alpha_2 = 40.6^\\circ$.",
           "correct": true,
-          "feedback": "Correct. $30^\\circ$ is the angle between the ray and the surface, but the law of refraction concerns angles measured from the normal. The angle of incidence is $90^\\circ - 30^\\circ = 60^\\circ$, so $\\sin\\alpha_2 = \\sin 60^\\circ : 1.33 = 0.651$ and $\\alpha_2 = 40.6^\\circ$."
+          "feedback": "Correct. $30^\\circ$ is the angle between the ray and the surface, but the law of refraction concerns angles measured from the normal. The angle of incidence is $90^\\circ - 30^\\circ = 60^\\circ$, so $$\\begin{aligned} \\sin\\alpha_2 &= \\sin 60^\\circ : 1.33 \\\\ &= 0.651 \\end{aligned}$$ and $\\alpha_2 = 40.6^\\circ$."
         },
         {
           "text": "The refractive indices are the wrong way round: $\\sin\\alpha_2 = 1.33 \\cdot \\sin 30^\\circ$.",
@@ -365,7 +365,7 @@
       "hints": [
         "The ray is refracted twice: from water into glass and from glass into air. The surfaces of the glass are parallel, so both surfaces have the same normal. What is the connection between the two angles of the ray in the glass?",
         "In the glass the ray travels straight, so its angle to the normal is the same at both surfaces. Then $n_\\text{water} \\sin\\alpha_1 = n_\\text{glass} \\sin\\alpha_\\text{glass} = n_\\text{air} \\sin\\alpha_3$.",
-        "The refractive index of the glass cancels out: $\\sin\\alpha_3 = 1.33 \\cdot \\sin 30.0^\\circ : 1.00$."
+        "The refractive index of the glass cancels out: $$\\begin{aligned} &\\sin\\alpha_3 \\\\ &= 1.33 \\cdot \\sin 30.0^\\circ : 1.00 \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -423,7 +423,7 @@
       "hints": [
         "Which law connects the angle of incidence, the angle of refraction and the refractive indices?",
         "$n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$, so $n_2 = n_1 \\sin\\alpha_1 : \\sin\\alpha_2$.",
-        "$n_2 = 1.00 \\cdot \\sin 50.0^\\circ : \\sin 31.4^\\circ$."
+        "$$\\begin{aligned} &n_2 \\\\ &= 1.00 \\cdot \\sin 50.0^\\circ : \\sin 31.4^\\circ \\end{aligned}$$."
       ],
       "mistakes": [
         {

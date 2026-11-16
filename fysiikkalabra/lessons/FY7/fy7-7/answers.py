@@ -29,6 +29,7 @@ e_tab = [0.1, 4.3, 7.2, 8.4, 7.3, 4.1, -0.1, -4.2, -7.3, -8.4, -7.2, -4.3, 0.0, 
 a["fy7-7-L2-05"] = max(abs(e) for e in e_tab) / r2                  # c) peak 8,4 V -> U = e0 / √2 = 5,94 V -> 5,9 V
 a["fy7-7-L2-06"] = abs(4.1 * 10.0 / 5.0 - 8.0) / (4.1 * 10.0 / 5.0) * 100  # prediction 8,2 V, measured 8,0 V: deviation 0,2 / 8,2 = 2,44 % -> 2,4 %
 a["fy7-7-L2-07"] = 60 / 230                                         # lamp 60 W on 230 V (already effective): I = P / U = 0,2609 A -> 0,26 A (pupil's 0,37 A is wrong)
+a["fy7-7-L2-08"] = 4 * 0.25e-3 / 0.50 * 1000                         # FY7-A4, PhET Faraday's Law example: |e_ka| = N ΔΦ / Δt = 4 · 0,25 mWb / 0,50 s = 0,0020 V = 2,0 mV (slow push 2,0 s: 0,50 mV)
 # Level 3: reasoning or an unfamiliar context
 a["fy7-7-L3-01"] = 20.0 * math.sin(math.radians(30))                # coil turned 30° from the position of the largest flux: e = e0 sin 30° = 10,0 V
 U3 = 40 / r2                                                        # generator peak 40 V on a 40 Ω resistor: U = 28,28 V

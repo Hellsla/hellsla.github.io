@@ -61,7 +61,7 @@
 **Muunnokset:** Niitä ei tarvita. Aallonpituus ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $d = \dfrac{570\,\text{nm}}{4 \cdot 1{,}47} = 96{,}94\,\text{nm}$
 **Vastaus:** $96{,}9\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}47$ ja aallonpituus $570\,\text{nm}$.
-**Järkevyys:** Tarkistus: matkaero on $2 \cdot 1{,}47 \cdot 96{,}94\,\text{nm} = 285\,\text{nm} = \tfrac{1}{2} \cdot 570\,\text{nm}$. Kalvo on ohuempi kuin saippuakalvo samalle aallonpituudelle ($570\,\text{nm} : (4 \cdot 1{,}33) = 107\,\text{nm}$). Syy on se, että öljyn taitekerroin on suurempi, joten aallonpituus öljyssä on lyhyempi.
+**Järkevyys:** Tarkistus: matkaero on $2 \cdot 1{,}47 \cdot 96{,}94\,\text{nm} = 285\,\text{nm} = \tfrac{1}{2} \cdot 570\,\text{nm}$. Kalvo on ohuempi kuin saippuakalvo samalle aallonpituudelle ($$\begin{aligned} &570\,\text{nm} : (4 \cdot 1{,}33) \\ &= 107\,\text{nm} \end{aligned}$$). Syy on se, että öljyn taitekerroin on suurempi, joten aallonpituus öljyssä on lyhyempi.
 
 ## fy7-14-L1-08
 **Annettu:** saippuakalvon taitekerroin $n = 1{,}33$, paksuus $d = 300\,\text{nm}$, aallonpituus ilmassa $\lambda = 532\,\text{nm}$, kohtisuora tulo
@@ -105,7 +105,7 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Muunnokset:** Niitä ei tarvita. Paksuus ja aallonpituus ovat kumpikin nanometreinä.
 **Sijoitus:** $k = 0$: $\lambda = \dfrac{2 \cdot 1{,}38 \cdot 110\,\text{nm}}{0{,}5} = \dfrac{303{,}6\,\text{nm}}{0{,}5} = 607{,}2\,\text{nm}$; arvolla $k = 1$ saadaan $303{,}6\,\text{nm} : 1{,}5 = 202{,}4\,\text{nm}$, joka on ultraviolettia.
 **Vastaus:** $607\,\text{nm}$, kolme merkitsevää numeroa kuten paksuus $110\,\text{nm}$ ja taitekerroin $1{,}38$.
-**Järkevyys:** Arvolla $k = 0$ pinnoitteen paksuus on neljäsosa aallonpituudesta pinnoitteessa: $4 \cdot 1{,}38 \cdot 110\,\text{nm} = 607{,}2\,\text{nm}$. Pinnoite on paksumpi kuin $550\,\text{nm}$:lle mitoitettu $99{,}6\,\text{nm}$, joten se kumoaa pidemmän, oranssin aallonpituuden.
+**Järkevyys:** Arvolla $k = 0$ pinnoitteen paksuus on neljäsosa aallonpituudesta pinnoitteessa: $$\begin{aligned} &4 \cdot 1{,}38 \cdot 110\,\text{nm} \\ &= 607{,}2\,\text{nm} \end{aligned}$$. Pinnoite on paksumpi kuin $550\,\text{nm}$:lle mitoitettu $99{,}6\,\text{nm}$, joten se kumoaa pidemmän, oranssin aallonpituuden.
 
 ## fy7-14-L2-03
 **Annettu:** pinnoitteen taitekerroin $n = 1{,}38$, lasin taitekerroin $1{,}52$, aallonpituus $\lambda = 520\,\text{nm}$, kohtisuora tulo
@@ -115,7 +115,7 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Muunnokset:** Niitä ei tarvita. Aallonpituus ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $d = \dfrac{3 \cdot 520\,\text{nm}}{4 \cdot 1{,}38} = \dfrac{1560\,\text{nm}}{5{,}52} = 282{,}61\,\text{nm}$
 **Vastaus:** $283\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}38$ ja aallonpituus $520\,\text{nm}$.
-**Järkevyys:** Ohuin pinnoite olisi $520\,\text{nm} : (4 \cdot 1{,}38) = 94{,}2\,\text{nm}$, ja toiseksi ohuin on sen kolminkertainen, koska matkaero kasvaa yhdellä aallonpituudella eli kaksi kertaa puoli aallonpituutta lisää. Tarkistus: $2 \cdot 1{,}38 \cdot 282{,}61\,\text{nm} = 780\,\text{nm} = 1{,}5 \cdot 520\,\text{nm}$.
+**Järkevyys:** Ohuin pinnoite olisi $$\begin{aligned} &520\,\text{nm} : (4 \cdot 1{,}38) \\ &= 94{,}2\,\text{nm} \end{aligned}$$, ja toiseksi ohuin on sen kolminkertainen, koska matkaero kasvaa yhdellä aallonpituudella eli kaksi kertaa puoli aallonpituutta lisää. Tarkistus: $2 \cdot 1{,}38 \cdot 282{,}61\,\text{nm} = 780\,\text{nm} = 1{,}5 \cdot 520\,\text{nm}$.
 
 ## fy7-14-L2-04
 **Annettu:** kerroksen taitekerroin $n = 2{,}30$, lasin taitekerroin $1{,}52$, aallonpituus $\lambda = 550\,\text{nm}$, valo ilmasta kohtisuoraan
@@ -157,7 +157,7 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Muunnokset:** Niitä ei tarvita. Aallonpituus ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $d = \dfrac{540\,\text{nm}}{4 \cdot 1{,}38} = 97{,}83\,\text{nm}$
 **Vastaus:** $97{,}8\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}38$ ja aallonpituus $540\,\text{nm}$. Pinnoite on mitoitettu vihreälle aallonpituudelle $540\,\text{nm}$. Purppura väri syntyy, koska heijastus on suurimmillaan kuvaajan molemmissa päissä. Violettia ($420\,\text{nm}$) heijastuu $1{,}84\,\%$ ja punaista ($700\,\text{nm}$) $1{,}64\,\%$. Vihreää heijastuu vain $1{,}26\,\%$. Violettia heijastuu siis noin $1{,}5$-kertaisesti ja punaista noin $1{,}3$-kertaisesti vihreään verrattuna. Punaisen ja violetin sekoitus näyttää purppuralta, ja vihreä pääsee lasin läpi.
-**Järkevyys:** Tarkistus: $4 \cdot 1{,}38 \cdot 97{,}83\,\text{nm} = 540\,\text{nm}$. Pinnoite on vähän ohuempi kuin luvun $550\,\text{nm}$:lle mitoitettu $99{,}6\,\text{nm}$, koska aallonpituus on vähän lyhyempi. Pinnoite ei kumoa kaikkia aallonpituuksia yhtä hyvin, kuten luvussa todetaan. Reunojen heijastus on noin $1{,}3$–$1{,}5$-kertainen keskiosaan verrattuna. Pienin heijastus $1{,}26\,\%$ vastaa luvussa mainittua noin $1{,}3\,\%$.
+**Järkevyys:** Tarkistus: $$\begin{aligned} &4 \cdot 1{,}38 \cdot 97{,}83\,\text{nm} \\ &= 540\,\text{nm} \end{aligned}$$. Pinnoite on vähän ohuempi kuin luvun $550\,\text{nm}$:lle mitoitettu $99{,}6\,\text{nm}$, koska aallonpituus on vähän lyhyempi. Pinnoite ei kumoa kaikkia aallonpituuksia yhtä hyvin, kuten luvussa todetaan. Reunojen heijastus on noin $1{,}3$–$1{,}5$-kertainen keskiosaan verrattuna. Pienin heijastus $1{,}26\,\%$ vastaa luvussa mainittua noin $1{,}3\,\%$.
 
 ## fy7-14-L2-08
 **Annettu:** pinnoitteen taitekerroin $1{,}38$, lasin taitekerroin $1{,}52$, kuvasta luettavat heijastuvat osuudet $R$ aallonpituuksilla $400$–$700\,\text{nm}$
@@ -178,7 +178,7 @@ Lauseke $\lambda : (4n)$ saadaan, jos siirtymä unohdetaan, mutta se on ensimmä
 **Muunnokset:** Niitä ei tarvita. Aallonpituus ja paksuus ovat kumpikin nanometreinä.
 **Sijoitus:** $d = \dfrac{589\,\text{nm}}{1{,}33} = 442{,}86\,\text{nm}$
 **Vastaus:** $443\,\text{nm}$, kolme merkitsevää numeroa kuten taitekerroin $1{,}33$ ja aallonpituus $589\,\text{nm}$.
-**Järkevyys:** Ensimmäinen tumma raita on paksuudella $589\,\text{nm} : (2 \cdot 1{,}33) = 221\,\text{nm}$, ja toinen on sen kaksinkertainen, koska peräkkäisten tummien raitojen välillä paksuus kasvaa aina saman verran, $\lambda : (2n)$. Paksuus on alle mikrometrin, kuten ohuelle kalvolle sopii.
+**Järkevyys:** Ensimmäinen tumma raita on paksuudella $$\begin{aligned} &589\,\text{nm} : (2 \cdot 1{,}33) \\ &= 221\,\text{nm} \end{aligned}$$, ja toinen on sen kaksinkertainen, koska peräkkäisten tummien raitojen välillä paksuus kasvaa aina saman verran, $\lambda : (2n)$. Paksuus on alle mikrometrin, kuten ohuelle kalvolle sopii.
 
 ## fy7-14-L3-02
 **Annettu:** kahdeksan pintaa, joista kukin heijastaa $1{,}3\,\%$ siihen tulevasta valosta; lasi ei ime valoa, eikä heijastunut valo palaa kennolle

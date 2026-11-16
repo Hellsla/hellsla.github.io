@@ -256,7 +256,7 @@
     "error",
     "concept"
    ],
-   "text": "Opiskelija ratkaisee tehtävän: ”Metallitanko, jonka pituus on $0{,}30\\,\\text{m}$, liikkuu vauhdilla $2{,}0\\,\\text{m/s}$ homogeenisessa magneettikentässä $0{,}50\\,\\text{T}$. Tanko on kohtisuorassa kenttää vastaan mutta liikkuu kentän suuntaisesti.”\n\nHän laskee $e = vBl = 2{,}0\\,\\text{m/s} \\cdot 0{,}50\\,\\text{T} \\cdot 0{,}30\\,\\text{m} = 0{,}30\\,\\text{V}$ ja ilmoittaa, että tangon päiden välille syntyy $0{,}30\\,\\text{V}$:n jännite.\n\nMikä laskussa on virheellistä?",
+   "text": "Opiskelija ratkaisee tehtävän: ”Metallitanko, jonka pituus on $0{,}30\\,\\text{m}$, liikkuu vauhdilla $2{,}0\\,\\text{m/s}$ homogeenisessa magneettikentässä $0{,}50\\,\\text{T}$. Tanko on kohtisuorassa kenttää vastaan mutta liikkuu kentän suuntaisesti.”\n\nHän laskee $$\\begin{aligned} e &= vBl \\\\ &= 2{,}0\\,\\text{m/s} \\cdot 0{,}50\\,\\text{T} \\cdot 0{,}30\\,\\text{m} \\\\ &= 0{,}30\\,\\text{V} \\end{aligned}$$ ja ilmoittaa, että tangon päiden välille syntyy $0{,}30\\,\\text{V}$:n jännite.\n\nMikä laskussa on virheellistä?",
    "answer": "Nopeus on kentän suuntainen, joten magneettinen voima elektroneihin on nolla.",
    "unit": "",
    "tolerance": 0.02,

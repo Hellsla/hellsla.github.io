@@ -189,7 +189,7 @@
         "koe-2"
       ],
       "prompt": "Kirjoita taulukoidesi perusteella: Miten spektrin huipun aallonpituus muuttuu, kun lämpötila kaksinkertaistuu? Mitä huomaat tulosta $\\lambda_\\text{max} T$? Millä aallonpituusalueella huoneenlämpöisen kappaleen huippu on? Miksi kappale ei hehku?",
-      "model": "Lämpötila kaksinkertaistuu $3000\\,\\text{K}$:sta $6000\\,\\text{K}$:iin. Silloin huippu siirtyy $966\\,\\text{nm}$:stä $483\\,\\text{nm}$:iin eli puolittuu. Tulo $\\lambda_\\text{max} T$ on joka rivillä sama, noin $2{,}90 \\cdot 10^{6}\\,\\text{nm} \\cdot \\text{K} = 2{,}90 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$. Siksi huipun aallonpituus on kääntäen verrannollinen absoluuttiseen lämpötilaan. Huoneenlämpöisen kappaleen ($300\\,\\text{K}$) huippu on $9659\\,\\text{nm}$:n eli noin $9{,}7\\,\\mu\\text{m}$:n kohdalla infrapuna-alueella. Näkyvää valoa on alle $0{,}01\\,\\%$. Siksi kappale ei hehku, vaikka se säteilee. Arvot ovat mallin laskemia.",
+      "model": "Lämpötila kaksinkertaistuu $3000\\,\\text{K}$:sta $6000\\,\\text{K}$:iin. Silloin huippu siirtyy $966\\,\\text{nm}$:stä $483\\,\\text{nm}$:iin eli puolittuu. Tulo $\\lambda_\\text{max} T$ on joka rivillä sama, noin $$\\begin{aligned} &2{,}90 \\cdot 10^{6}\\,\\text{nm} \\cdot \\text{K} \\\\ &= 2{,}90 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} \\end{aligned}$$. Siksi huipun aallonpituus on kääntäen verrannollinen absoluuttiseen lämpötilaan. Huoneenlämpöisen kappaleen ($300\\,\\text{K}$) huippu on $9659\\,\\text{nm}$:n eli noin $9{,}7\\,\\mu\\text{m}$:n kohdalla infrapuna-alueella. Näkyvää valoa on alle $0{,}01\\,\\%$. Siksi kappale ei hehku, vaikka se säteilee. Arvot ovat mallin laskemia.",
       "criteria": [
         "Kerroin, että huipun aallonpituus puolittuu, kun absoluuttinen lämpötila kaksinkertaistuu.",
         "Laskin tulon $\\lambda_\\text{max} T$ ja totesin sen samaksi kaikilla riveillä, noin $2{,}9 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K}$.",
@@ -236,7 +236,7 @@
         {
           "text": "Lämpötila on celsiusasteina. Kelvineinä se on $1173\\,\\text{K}$, ja silloin huippu on $2{,}47\\,\\mu\\text{m}$.",
           "correct": true,
-          "feedback": "Oikein. Wienin siirtymälaissa $T$ on absoluuttinen lämpötila: $T = (900 + 273{,}15)\\,\\text{K} = 1173\\,\\text{K}$. Silloin $\\lambda_\\text{max} = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} : 1173\\,\\text{K} = 2{,}47\\,\\mu\\text{m}$. Celsiusasteilla tulos olisi sitä väärempi, mitä kylmempi kappale on."
+          "feedback": "Oikein. Wienin siirtymälaissa $T$ on absoluuttinen lämpötila: $$\\begin{aligned} T &= (900 + 273{,}15)\\,\\text{K} \\\\ &= 1173\\,\\text{K} \\end{aligned}$$. Silloin $$\\begin{aligned} \\lambda_\\text{max} &= 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} \\\\ &: 1173\\,\\text{K} \\\\ &= 2{,}47\\,\\mu\\text{m} \\end{aligned}$$. Celsiusasteilla tulos olisi sitä väärempi, mitä kylmempi kappale on."
         },
         {
           "text": "Kaava on väärin päin. Oikein on $\\lambda_\\text{max} = b T$, ja silloin huippu on $2{,}61\\,\\text{m}$.",
@@ -261,7 +261,7 @@
       "hints": [
         "Mikä laki kertoo spektrin huipun paikan, kun lämpötila tunnetaan? Missä yksikössä lämpötilan on oltava?",
         "Käytä Wienin siirtymälakia $\\lambda_\\text{max} = b : T$. Siinä $T$ on kelvineinä.",
-        "$T = (2430 + 273{,}15)\\,\\text{K} = 2703{,}15\\,\\text{K}$, joten $\\lambda_\\text{max} = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} : 2703{,}15\\,\\text{K}$."
+        "$T = (2430 + 273{,}15)\\,\\text{K} = 2703{,}15\\,\\text{K}$, joten $$\\begin{aligned} \\lambda_\\text{max} &= 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} \\\\ &: 2703{,}15\\,\\text{K} \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -315,7 +315,7 @@
       "hints": [
         "Mikä laki yhdistää spektrin huipun ja lämpötilan? Missä yksikössä se antaa lämpötilan?",
         "Wienin siirtymälaista saat $T = b : \\lambda_\\text{max}$ kelvineinä. Celsiusasteet saat vähentämällä siitä $273{,}15\\,\\text{K}$.",
-        "$T = 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} : (2{,}1 \\cdot 10^{-6}\\,\\text{m}) = 1380\\,\\text{K}$."
+        "$$\\begin{aligned} T &= 2{,}898 \\cdot 10^{-3}\\,\\text{m} \\cdot \\text{K} \\\\ &: (2{,}1 \\cdot 10^{-6}\\,\\text{m}) \\\\ &= 1380\\,\\text{K} \\end{aligned}$$."
       ],
       "mistakes": [
         {

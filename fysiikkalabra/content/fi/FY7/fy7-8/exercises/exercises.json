@@ -271,6 +271,19 @@
       "answer": 6.0,
       "unit": "Ω",
       "tolerance": 0.05
+    },
+    {
+      "id": "fy7-8-L2-10",
+      "level": 2,
+      "kind": [
+        "data",
+        "reasoning",
+        "model"
+      ],
+      "text": "Aineisto: <a href=\"https://www.fingrid.fi/kantaverkko/kehittaminen/suomen-sahkojarjestelma/\" target=\"_blank\" rel=\"noopener\">Fingrid – Suomen sähköjärjestelmä</a> (luettu 16. marraskuuta 2026)\n\nMiksi sähköä siirretään suurella jännitteellä? Tutustu Fingridin sivuun, joka kuvaa Suomen kantaverkon ja sen jännitetasot.\n\na) Selvitä aineistosta, mitä jännitetasoja kantaverkon voimajohdoissa käytetään ja kuinka monta kilometriä kunkin jännitetason voimajohtoa on. Selvitä myös, millä jännitetasoilla jakeluverkot toimivat. Kuinka moninkertainen kantaverkon suurin jännite on jakeluverkkojen pienimpään jännitteeseen verrattuna?\n\nb) Tarkastellaan yksinkertaistettua kolmivaiheista sähkönsiirtoa, jossa siirrettävä pätöteho on $200\\,\\text{MW}$ ja tehokerroin on $1$. Laske vaihejohtimen sähkövirta pääjännitteillä $110\\,\\text{kV}$ ja $400\\,\\text{kV}$. Käytä yhtälöä $P = \\sqrt{3}\\,UI\\cos\\varphi$.\n\nc) Oletetaan, että jokaisen vaihejohtimen resistanssi on kummallakin jännitteellä $4{,}0\\,\\Omega$. Laske siirtohäviöiden teho molemmilla jännitteillä yhtälöllä $P_\\text{h} = 3RI^2$.\n\nd) Vertaile kohtien b) ja c) tuloksia ja selitä niiden avulla, miksi suuri siirtojännite pienentää johtimien resistanssista johtuvia tehohäviöitä. Arvioi lisäksi kahta mallin yksinkertaistusta: miten ne vaikuttavat tulokseen?\n\nVastaa laatikkoon kohdan c) häviöteho pääjännitteellä $110\\,\\text{kV}$ megawatteina.",
+      "answer": 13.2231,
+      "unit": "MW",
+      "tolerance": 0.02
     }
   ],
   "level3": [

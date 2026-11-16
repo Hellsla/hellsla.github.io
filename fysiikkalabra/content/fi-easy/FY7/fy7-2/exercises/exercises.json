@@ -285,6 +285,60 @@
       "unit": "10⁻²⁷ kg",
       "tolerance": 0.04,
       "figure": "fy7-2/r-points"
+    },
+    {
+      "id": "fy7-2-L2-10",
+      "level": 2,
+      "text": "Aineisto: <a href=\"https://www.ilmatieteenlaitos.fi/revontulet-ja-avaruussaa\" target=\"_blank\" rel=\"noopener\">Ilmatieteen laitos – Revontulet ja avaruussää</a> (luettu 16. marraskuuta 2026)\n\nMitä revontulet kertovat Maan magneettikentästä? Avaruussää tarkoittaa Auringon aiheuttamia muutoksia Maan lähiavaruudessa. Sivulla on pylväskaavio \"Magneettinen aktiivisuus kuluneen vuorokauden aikana\". Kaavio näyttää R-luvun. R-luku kertoo, kuinka nopeasti Maan magneettikenttä vaihtelee mittausasemalla. Sivulta avautuu myös <a href=\"https://www.ilmatieteenlaitos.fi/avaruussaatiedotuksen-tulkintaohje\" target=\"_blank\" rel=\"noopener\">Revontuliennusteen tulkintaohje</a>. Se kertoo, miten R-lukua ja sen kahta kynnysarvoa eli raja-arvoa tulkitaan. Aineisto päivittyy koko ajan. Kirjaa siksi havaintosi päivämäärä ja kellonaika. Jos et voi käyttää kaaviota, käytä alla olevaa taulukkoa. Taulukko on keksitty esimerkkiaineisto yhden mittausaseman illasta. Oletetaan, että tämän aseman alempi kynnysarvo on $200$ ja ylempi $400$.\n\na) Kuvaile, miten R-luku vaihtelee valitsemallasi mittausjaksolla. Milloin magneettikenttä vaihteli nopeimmin? Milloin R-luku ylitti kynnysarvot? Tulkintaohjeen mukaan R-luku muuttuu magneettikentän muutosnopeudeksi yksikössä $\\text{nT/s}$, kun se jaetaan luvulla $1350$. Laske jakson suurinta R-lukua vastaava muutosnopeus.\n\nb) Selitä, miten Auringosta saapuvat varatut hiukkaset ja Maan magneettikenttä liittyvät revontulten syntymiseen. Laske selityksen tueksi protonin ympyräradan säde. Protoni liikkuu aurinkotuulen tyypillisellä vauhdilla $4{,}0 \\cdot 10^{5}\\,\\text{m/s}$. Aurinkotuuli on Auringosta tuleva hiukkasvirta. Protoni liikkuu kohtisuorassa magneettikenttää vastaan kohdassa, jossa magneettivuon tiheys on $50\\,\\mu\\text{T}$. Arvo on Maan kentän suuruus maanpinnan lähellä Suomessa. Protonin massa on $1{,}673 \\cdot 10^{-27}\\,\\text{kg}$ ja varaus $1{,}602 \\cdot 10^{-19}\\,\\text{C}$. Vertaa sädettä Maan säteeseen, joka on noin $6370\\,\\text{km}$.\n\nc) Arvioi, mitä R-luvun mittaustuloksista voidaan päätellä revontulten esiintymisestä. Käytä kynnysarvoja ja tulkintaohjetta.\n\nd) Geomagneettinen häiriö tarkoittaa, että Maan magneettikenttä vaihtelee tavallista enemmän. Selitä, miksi voimakas geomagneettinen häiriö ei takaa, että revontulet näkyvät tietyllä havaintopaikalla. Anna vähintään kolme syytä.\n\nVastaa laatikkoon kohdan b) ympyräradan säde. Anna vastaus metreinä.",
+      "kind": [
+        "data",
+        "reasoning",
+        "concept"
+      ],
+      "answer": 84,
+      "unit": "m",
+      "tolerance": 0.02,
+      "data": {
+        "caption": "R-luku yhdellä mittausasemalla (keksitty esimerkkiaineisto, ei mittaustulos)",
+        "columns": [
+          "Kellonaika (h)",
+          "R-luku"
+        ],
+        "rows": [
+          [
+            "18",
+            "40"
+          ],
+          [
+            "19",
+            "90"
+          ],
+          [
+            "20",
+            "260"
+          ],
+          [
+            "21",
+            "540"
+          ],
+          [
+            "22",
+            "810"
+          ],
+          [
+            "23",
+            "620"
+          ],
+          [
+            "0",
+            "310"
+          ],
+          [
+            "1",
+            "120"
+          ]
+        ]
+      }
     }
   ],
   "level3": [

@@ -303,21 +303,21 @@
       "prompt": "Kompassin kohdalla Maan kentän vaakakomponentti on $14\\,\\mu\\text{T}$ pohjoiseen ja magneetin kenttä $18\\,\\mu\\text{T}$ itään. Opiskelija laski kokonaiskentän näin: $B = 14\\,\\mu\\text{T} + 18\\,\\mu\\text{T} = 32\\,\\mu\\text{T}$. Mikä laskussa on vialla?",
       "choices": [
         {
-          "text": "Kohtisuorat kentät lasketaan yhteen vektoreina: $B = \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$.",
+          "text": "Kohtisuorat kentät lasketaan yhteen vektoreina: $$\\begin{aligned} B &= \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\\\ &\\approx 23\\,\\mu\\text{T} \\end{aligned}$$.",
           "correct": true,
           "feedback": "Oikein. Kentät ovat vektoreita, ja ne ovat kohtisuorassa toisiaan vastaan. Siksi ne ovat suorakulmaisen kolmion kateetit. Kokonaiskenttä on hypotenuusa $22{,}8\\,\\mu\\text{T}$, ja se on pienempi kuin kenttien lukuarvojen summa."
         },
         {
           "text": "Kentät pitää vähentää: $B = 18\\,\\mu\\text{T} - 14\\,\\mu\\text{T} = 4\\,\\mu\\text{T}$.",
-          "feedback": "Erotus saadaan vain vastakkaissuuntaisista kentistä. Pohjoiseen ja itään osoittavat kentät ovat kohtisuorassa. Siksi $B = \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$."
+          "feedback": "Erotus saadaan vain vastakkaissuuntaisista kentistä. Pohjoiseen ja itään osoittavat kentät ovat kohtisuorassa. Siksi $$\\begin{aligned} B &= \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\\\ &\\approx 23\\,\\mu\\text{T} \\end{aligned}$$."
         },
         {
           "text": "Kompassi tuntee vain voimakkaamman kentän, joten $B = 18\\,\\mu\\text{T}$.",
-          "feedback": "Neula kääntyy molempien kenttien summan suuntaan. Se ei osoita suoraan itään vaan noin $52^\\circ$ pohjoisesta itään. Kokonaiskenttä on $\\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$."
+          "feedback": "Neula kääntyy molempien kenttien summan suuntaan. Se ei osoita suoraan itään vaan noin $52^\\circ$ pohjoisesta itään. Kokonaiskenttä on $$\\begin{aligned} &\\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\\\ &\\approx 23\\,\\mu\\text{T} \\end{aligned}$$."
         },
         {
           "text": "Laskussa ei ole virhettä, koska molemmat kentät ovat mikrotesloina.",
-          "feedback": "Sama yksikkö ei riitä. Lukuina voi laskea yhteen vain samansuuntaiset kentät. Kohtisuorille kentille $B = \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\approx 23\\,\\mu\\text{T}$."
+          "feedback": "Sama yksikkö ei riitä. Lukuina voi laskea yhteen vain samansuuntaiset kentät. Kohtisuorille kentille $$\\begin{aligned} B &= \\sqrt{(14\\,\\mu\\text{T})^2 + (18\\,\\mu\\text{T})^2} \\\\ &\\approx 23\\,\\mu\\text{T} \\end{aligned}$$."
         }
       ]
     },

@@ -290,7 +290,7 @@
       "hints": [
         "Mitä taitekerroin kertoo valon nopeudesta aineessa?",
         "$n = c : v$, joten $v = c : n$.",
-        "$v = 3{,}00 \\cdot 10^{8}\\,\\text{m/s} : 1{,}49$."
+        "$$\\begin{aligned} &v \\\\ &= 3{,}00 \\cdot 10^{8}\\,\\text{m/s} : 1{,}49 \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -340,7 +340,7 @@
         {
           "text": "Tulokulma mitataan normaalista: $\\alpha_1 = 60^\\circ$, jolloin $\\alpha_2 = 40{,}6^\\circ$.",
           "correct": true,
-          "feedback": "Oikein. $30^\\circ$ on säteen ja pinnan välinen kulma, mutta taittumislaki koskee normaalista mitattuja kulmia. Tulokulma on $90^\\circ - 30^\\circ = 60^\\circ$, joten $\\sin\\alpha_2 = \\sin 60^\\circ : 1{,}33 = 0{,}651$ ja $\\alpha_2 = 40{,}6^\\circ$."
+          "feedback": "Oikein. $30^\\circ$ on säteen ja pinnan välinen kulma, mutta taittumislaki koskee normaalista mitattuja kulmia. Tulokulma on $90^\\circ - 30^\\circ = 60^\\circ$, joten $$\\begin{aligned} \\sin\\alpha_2 &= \\sin 60^\\circ : 1{,}33 \\\\ &= 0{,}651 \\end{aligned}$$ ja $\\alpha_2 = 40{,}6^\\circ$."
         },
         {
           "text": "Taitekertoimet ovat väärin päin: $\\sin\\alpha_2 = 1{,}33 \\cdot \\sin 30^\\circ$.",
@@ -365,7 +365,7 @@
       "hints": [
         "Säde taittuu kahdesti: vedestä lasiin ja lasista ilmaan. Lasin pinnat ovat yhdensuuntaiset, joten molemmilla pinnoilla on sama normaali. Mikä yhteys on lasissa kulkevan säteen kahdella kulmalla?",
         "Lasissa säde kulkee suoraan, joten sen kulma normaaliin on sama kummallakin pinnalla. Silloin $n_\\text{vesi} \\sin\\alpha_1 = n_\\text{lasi} \\sin\\alpha_\\text{lasi} = n_\\text{ilma} \\sin\\alpha_3$.",
-        "Lasin taitekerroin supistuu pois: $\\sin\\alpha_3 = 1{,}33 \\cdot \\sin 30{,}0^\\circ : 1{,}00$."
+        "Lasin taitekerroin supistuu pois: $$\\begin{aligned} &\\sin\\alpha_3 \\\\ &= 1{,}33 \\cdot \\sin 30{,}0^\\circ : 1{,}00 \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -423,7 +423,7 @@
       "hints": [
         "Mikä laki yhdistää tulokulman, taitekulman ja taitekertoimet?",
         "$n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$, josta $n_2 = n_1 \\sin\\alpha_1 : \\sin\\alpha_2$.",
-        "$n_2 = 1{,}00 \\cdot \\sin 50{,}0^\\circ : \\sin 31{,}4^\\circ$."
+        "$$\\begin{aligned} &n_2 \\\\ &= 1{,}00 \\cdot \\sin 50{,}0^\\circ : \\sin 31{,}4^\\circ \\end{aligned}$$."
       ],
       "mistakes": [
         {

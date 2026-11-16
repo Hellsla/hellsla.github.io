@@ -46,7 +46,7 @@
 **Conversions:** Not needed: both fields are in microtesla, and the unit cancels.
 **Substitution:** $\theta = \tan^{-1}\dfrac{25\,\mu\text{T}}{14\,\mu\text{T}} = \tan^{-1} 1.786 = 60.75^\circ$
 **Answer:** $61^\circ$ from north towards east, two significant figures like the fields.
-**Reasonableness:** The field of the magnet is greater than the Earth's field, so the needle must turn more than $45^\circ$ but less than $90^\circ$. A check in the other direction: $14\,\mu\text{T} \cdot \tan 60.75^\circ = 25\,\mu\text{T}$.
+**Reasonableness:** The field of the magnet is greater than the Earth's field, so the needle must turn more than $45^\circ$ but less than $90^\circ$. A check in the other direction: $$\begin{aligned} &14\,\mu\text{T} \cdot \tan 60.75^\circ \\ &= 25\,\mu\text{T} \end{aligned}$$.
 
 ## fy7-1-L2-02
 **Given:** components from the magnetometer $B_x = 12\,\mu\text{T}$, $B_y = -5.0\,\mu\text{T}$ and $B_z = -48\,\mu\text{T}$, perpendicular to each other
@@ -54,7 +54,7 @@
 **Principle:** The field is the vector sum of its components. The sum of two perpendicular components is given by the Pythagorean theorem, and when a third perpendicular component is added, the same theorem gives the sum of the squares of the three components. The sign gives only the direction, and squaring removes it.
 **Formula:** $B^2 = B_x^2 + B_y^2 + B_z^2$, so $B = \sqrt{B_x^2 + B_y^2 + B_z^2}$
 **Conversions:** Not needed: all components are in microtesla.
-**Substitution:** $B^2 = (12\,\mu\text{T})^2 + (-5.0\,\mu\text{T})^2 + (-48\,\mu\text{T})^2 = 2473\,(\mu\text{T})^2$, so $B = \sqrt{2473}\,\mu\text{T} = 49.73\,\mu\text{T}$
+**Substitution:** $$\begin{aligned} B^2 &= (12\,\mu\text{T})^2 + (-5.0\,\mu\text{T})^2 \\ &+ (-48\,\mu\text{T})^2 \\ &= 2473\,(\mu\text{T})^2 \end{aligned}$$, so $B = \sqrt{2473}\,\mu\text{T} = 49.73\,\mu\text{T}$
 **Answer:** $50\,\mu\text{T}$, two significant figures like the components $12\,\mu\text{T}$ and $48\,\mu\text{T}$.
 **Reasonableness:** The result is greater than the greatest component $48\,\mu\text{T}$ and close to the value of about $52\,\mu\text{T}$ for Finland. The large $z$-component fits the fact that in Finland the field points steeply into the ground when the phone is horizontal.
 
