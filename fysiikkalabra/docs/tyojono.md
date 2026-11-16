@@ -73,7 +73,7 @@ jatkavat Supertonic-äänellä. Jaettu muutos (scripts/, readaloud.js, CLAUDE.md
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen ja align-muotoon (opettaja 2026-11-15)
 
-Varattu: claude/fy4-clipped-formulas (FY4)
+FY4 tehty (PR #637): 604 riviä pois listalta; 60 jää (liian leveät yksittäiset `\dfrac`- ja `\sqrt`-kaavat (fy4-6, fy4-8, fy4-10, fy4-11, fy4-15), paljaiden kertoimien tulot, joita ei saa katkaista (fy4-15), välilyönnittömät `\cdot`-ketjut, joiden katko muuttaisi `chain_view`n (fy4-16), sulkeissa olevat kaavat (fy4-8, fy4-10:n `p_\text{kok}`), lainattu opiskelijan lasku (fy4-7, fy4-9) sekä fy4-14:n kaksi inquiry-kaavaa: niiden rivitys osui riveille, joita aiemmat siirrot koskivat, ja olisi vaatinut tiede- ja pedagogiikkakatselmoinnin). Rivijako mitattiin selaimessa (KaTeX) ja on kaikilla kielillä sama.
 
 Varattu: claude/fy8-clipped-formulas (FY8)
 
