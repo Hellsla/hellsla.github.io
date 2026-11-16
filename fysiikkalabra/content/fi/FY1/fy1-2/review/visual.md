@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 275e32c951dc2421
+CONTENT-HASH: e57f5f06a69c3b30
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy1-2 capture 16 — capture shows a sticky header over the box; formula itself unclipped.
+- none
 
 ## Checked
-delta 5d reflow, round 1: opened contact sheet of all fi/fy1-2 captures at 360 px (captures 02,03,04,06,07,16); no clipping, equals signs aligned, rows break outside numbers and units.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+- Opened fy1-2-example-390-1 (stages 1–5): paragraph breaks and markers read cleanly, question last, no clipping or overflow at 390 px.
