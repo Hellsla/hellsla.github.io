@@ -1,16 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: 23ee03a2b7de1454
+VERDICT: PASS
+CONTENT-HASH: 6181ba4bed779eb0
 
 ## Blocking
-- [Major] content/fi/FY7/fy7-5/exercises/solutions.md:201 (fy7-5-L3-05, Kuvaajan lukeminen, the |A_a| block) — the second row "· (½(−0,02) + 0,09 + 0,63 + 1,77 + 1,77 + 0,60 + ½ · 0,03) V" is 475 px wide in a 302 px box at 390 px (452 in 272 at 360 px): it is cut after "1,77 + 1" and four terms, the closing bracket and the unit are out of view unless the row is scrolled; at 1280 px it touches the box edge (580 in 576) — a clipped calculation row is exactly what this work removes (teacher 2026-11-15) — give the sum its own chain without the long bracket, rows starting with +, for example: "Painotettu summa on $$\begin{aligned} S &= \tfrac{1}{2} \cdot (-0{,}02\,\text{V}) + 0{,}09\,\text{V} + 0{,}63\,\text{V} \\ &+ 1{,}77\,\text{V} + 1{,}77\,\text{V} + 0{,}60\,\text{V} \\ &+ \tfrac{1}{2} \cdot 0{,}03\,\text{V} \\ &= 4{,}865\,\text{V} \end{aligned}$$ ja pinta-alan itseisarvo |A_a| = 0,004 s · 4,865 V = 0,01946 V·s." Then check 360 px.
 
 ## Polish
+- [Minor] solutions.md (fy7-5-L2-04, the unchanged chain "|e| = 20 · 0,30 T · 0,050 m · 0,25 m/s") — at 352 px the row is 3 px wider than its box (267 in 264); fits at 360 px and wider; not part of this reflow.
+- [Minor] exercises.json:259 (fy7-5-L2-07) at 1280 px — the gap before "=" between the split inline formulas is a little tighter than after it; readable.
 - [Minor] 5-13 Järkevyys — one-word paragraphs between display blocks (earlier note stands).
 
 ## Checked
-- The content changed during the review (hash 1e0f7f2c… → current; line 201 re-broken): packet regenerated, captures refreshed, review redone on the current hash.
-- Own captures of the opened solutions at 390 px (fy7-5-L1-04, L2-02, L3-03, L2-06, L3-05) and L3-05 at 1280 px, read at full size; review/shots/contact-8.png.
-- Formula overflow measured at 360, 390 and 1280 px: only the block above. The other re-broken checks (0,45 V; 1,0 V; 0,3 T; 12 mV; 1,5 V) and the task text of the error-finding exercise read cleanly.
+- Round 2, delta. Fresh preview/fy7-5.html at this hash, every solution open; own captures of every aligned block and split inline chain of the exercises at 360 and 1280 px (/tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/fi-r2-visual/shots/fy7-5-ex-360-s*.png, fy7-5-ex-1280-s*.png), read at full size.
+- fy7-5-L3-05 Kuvaajan lukeminen: the |A_a| sum is now broken at its plus signs (three rows inside the bracket, then two = rows); it fits its box at 352, 360 and 390 px without scrolling and is two rows plus results at 1280 px. Round 1's Blocking is gone.
+- fy7-5-L2-07 task text: the student's chain is inline again and wraps before each "=" on a phone.
+- The other re-broken checks (L1-04, L2-02, L2-04, L2-06, L2-08, L3-01, L3-03) read correctly, one row at 1280 px.
+- Formula overflow measured in the browser at 352, 360, 390 and 1280 px, everything open. Hash the same at the start and the end.
 
 ## Scores
-illustrations n/a · typography 3 · Finnish 5 · accessibility 3
+illustrations n/a · typography 4 · Finnish 5 · accessibility 4

@@ -1,10 +1,10 @@
-VERDICT: FAIL
-CONTENT-HASH: ca50f9cdba5399f8
+VERDICT: PASS
+CONTENT-HASH: 854e8be06f58e991
 
 ## Blocking
-- [Critical] inquiry.json `simulaatio`, Laskennan selitys (352 and 1280 px) — three definitions are merged into one chain: "B = μ₀NI/(2l) · (k₁ − k₂)k₁ = (x + l/2)/√(…) k₂ = (x − l/2)/√(…)"; $k_1$ and $k_2$ trail the previous rows as factors — the model's formula is stated wrongly and is unreadable as three definitions — restore `\begin{aligned} B &= \frac{\mu_0\, N I}{2 l}\,(k_1 - k_2) \\ k_1 &= \frac{x + \tfrac{l}{2}}{\sqrt{(x + \tfrac{l}{2})^2 + R^2}} \\ k_2 &= \frac{x - \tfrac{l}{2}}{\sqrt{(x - \tfrac{l}{2})^2 + R^2}} \end{aligned}`.
 
 ## Polish
+- [Minor] `mittaus` solution, the unchanged chain "4π · 10⁻⁷ Vs/Am = 1,257 · 10⁻⁶ Vs/Am" — at 352 px its row is 3 px wider than its box (232 in 229); fits at 360 px and wider — not part of this reflow, note for the clipped-formulas work.
 
 ## Checked
-- batch delta review: content changed during the review (commit 7e4ba8466f), so the lesson was redone from a fresh preview/fy7-3.html: every re-broken chain rendered with all boxes open and inspected as crops at 352, 390 and 1280 px (own captures; the repository's captures predate this hash and keep hints and solutions closed at 390 px); nothing clipped; mittaus, epavarmuus and virhe chains read well.
+- batch delta review, round 2: fresh preview/fy7-3.html at this hash, every box, feedback and model answer open; own captures of every aligned block and split inline chain at 360 and 1280 px (/tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/fi-r2-visual/shots/fy7-3-lesson-360-s*.png, fy7-3-lesson-1280-s1.png), formula overflow measured at 352, 360, 390 and 1280 px; Laskennan selitys is three definitions again ($B$, $k_1$, $k_2$) on their own rows; the μ₀ hint (": 320." row), the Δμ₀ block and the student's chain in `virhe` read correctly, joined on one row at 1280 px where they fit; nothing clipped in the changed blocks. Hash the same at the start and the end.
