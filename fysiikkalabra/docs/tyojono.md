@@ -190,6 +190,12 @@ että käsitekorttien alleviivaus ja sirut Tiivistelmän perässä toimivat laat
 
 ## 8c. Kappalejako esimerkkien ja ratkaisujen vaiheisiin (opettaja 2026-11-13)
 
+Pilotti fy3-13 tehty (#643; koordinaattorin välittämänä opettaja hyväksyi 2026-11-16 sekä pilotin, "huomattavasti
+parempi luettavuus", että uuden katselmointiluokan `md-paragraphs`: kappalejako ja listamerkit, sanat samat ja samassa
+järjestyksessä, tiede ja pedagogiikka carry, visual delta). Sääntö on NOTES.md §3:ssa ("Paragraphs in stages and
+steps") ja `lint_lesson.py` varoittaa (2026-11-16: 512 pitkää kappaletta ja 112 kesken kappaleen olevaa kysyttyä
+muissa luvuissa). Jatko kurssi kerrallaan (`/quality-audit --fix`), kaikki kielet, fy3-13:n mallin mukaan.
+
 Esimerkkien vaiheet (esim. fy3-13, vaihe 1/7 "Tunnetut ja kysytty") ovat yksi tiivis kappale, jossa on luettuja
 pisteitä, huomautus ja kysymys peräkkäin: vaikea lukea. Opettaja: "näissä teksteissä saisi kappalejakoa olla …
 esim. 'Lämpötila'-alkuinen virke voisi olla jo omalla rivillään." Sääntö: yksi asia per kappale; tunnetut (lista tai

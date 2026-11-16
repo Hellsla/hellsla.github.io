@@ -227,11 +227,25 @@ Determine absolute zero by extrapolation and estimate the uncertainty of the res
 
 <!-- vaihe -->
 
-**Given and find.** Two points far apart are read from the best-fit line: $(\theta_1, p_1) = (0\,{}^\circ\text{C};\ 101.3\,\text{kPa})$ and $(\theta_2, p_2) = (100\,{}^\circ\text{C};\ 138.0\,\text{kPa})$. The temperature $0\,{}^\circ\text{C}$ is outside the measurement range, so point 1 is read from the extension of the line: it is not a measurement but already a little extrapolation. The limit lines have $p_0 = 100.1\,\text{kPa}$, $k = 0.387\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ and $p_0 = 102.3\,\text{kPa}$, $k = 0.347\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$. You are asked for the temperature at zero pressure $\theta_0$ and its uncertainty $\Delta\theta_0$.
+**Given and find.** Two points far apart are read from the best-fit line:
+
+- $(\theta_1, p_1) = (0\,{}^\circ\text{C};\ 101.3\,\text{kPa})$ and
+- $(\theta_2, p_2) = (100\,{}^\circ\text{C};\ 138.0\,\text{kPa})$.
+
+The temperature $0\,{}^\circ\text{C}$ is outside the measurement range, so point 1 is read from the extension of the line: it is not a measurement but already a little extrapolation.
+
+The limit lines have
+
+- $p_0 = 100.1\,\text{kPa}$, $k = 0.387\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ and
+- $p_0 = 102.3\,\text{kPa}$, $k = 0.347\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$.
+
+You are asked for the temperature at zero pressure $\theta_0$ and its uncertainty $\Delta\theta_0$.
 
 <!-- vaihe -->
 
-**Principle.** The flask is sealed and rigid, so the amount and volume of the gas stay constant, and within the measurement range the pressure is a linear function of temperature, $p = p_0 + k\theta$. So you can extend the line to the point where $p = 0$. The uncertainty comes from the limit lines: they pass through all the uncertainty bars, so they fit the data just as well as the best-fit line, and their zero-pressure points bound the interval where the true absolute zero probably lies.
+**Principle.** The flask is sealed and rigid, so the amount and volume of the gas stay constant, and within the measurement range the pressure is a linear function of temperature, $p = p_0 + k\theta$. So you can extend the line to the point where $p = 0$.
+
+The uncertainty comes from the limit lines: they pass through all the uncertainty bars, so they fit the data just as well as the best-fit line, and their zero-pressure points bound the interval where the true absolute zero probably lies.
 
 <!-- vaihe -->
 
@@ -247,7 +261,9 @@ Determine absolute zero by extrapolation and estimate the uncertainty of the res
 
 <!-- vaihe -->
 
-**Unit conversions.** No conversions are needed: the pressures are in kilopascals, so in the quotient $p_0/k$ the kPa cancels and what is left is the degree Celsius, which is what you are asked for. The temperature difference $100\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 100\,{}^\circ\text{C}$ is the same in kelvins, and the temperature at zero pressure is given in degrees Celsius.
+**Unit conversions.** No conversions are needed: the pressures are in kilopascals, so in the quotient $p_0/k$ the kPa cancels and what is left is the degree Celsius, which is what you are asked for.
+
+The temperature difference $100\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 100\,{}^\circ\text{C}$ is the same in kelvins, and the temperature at zero pressure is given in degrees Celsius.
 
 <!-- vaihe -->
 
@@ -266,11 +282,19 @@ For the limit lines $\theta_{0,\text{max}} = -\tfrac{100.1}{0.387}\,{}^\circ\tex
 
 <!-- vaihe -->
 
-**Result.** Absolute zero is $\theta_0 = -276 \pm 18\,{}^\circ\text{C}$. The uncertainty is given with two significant figures ($18.08 \approx 18$), because the zero points of the limit lines, $-259\,{}^\circ\text{C}$ and $-295\,{}^\circ\text{C}$, are known to three figures and their difference $36\,{}^\circ\text{C}$ to only two. The result is rounded to the same precision, that is, to one degree.
+**Result.** Absolute zero is $\theta_0 = -276 \pm 18\,{}^\circ\text{C}$.
+
+The uncertainty is given with two significant figures ($18.08 \approx 18$), because the zero points of the limit lines, $-259\,{}^\circ\text{C}$ and $-295\,{}^\circ\text{C}$, are known to three figures and their difference $36\,{}^\circ\text{C}$ to only two.
+
+The result is rounded to the same precision, that is, to one degree.
 
 <!-- vaihe -->
 
-**Reasonableness.** The accepted value $-273.15\,{}^\circ\text{C}$ lies in the interval $-294\,{}^\circ\text{C}\ldots -258\,{}^\circ\text{C}$, so the result agrees with it; the deviation is about $3\,{}^\circ\text{C}$ and the uncertainty is $18\,{}^\circ\text{C}$. An estimate in your head: the pressure rises by about $0.37\,\text{kPa}$ per degree, so $101\,\text{kPa}$ runs out after about $101/0.37 \approx 270$ degrees. The uncertainty is large because the measurement was made more than $270\,{}^\circ\text{C}$ away from zero pressure, and the uncertainty of the points, $1\,\text{kPa}$, is about one percent of the reading.
+**Reasonableness.** The accepted value $-273.15\,{}^\circ\text{C}$ lies in the interval $-294\,{}^\circ\text{C}\ldots -258\,{}^\circ\text{C}$, so the result agrees with it; the deviation is about $3\,{}^\circ\text{C}$ and the uncertainty is $18\,{}^\circ\text{C}$.
+
+An estimate in your head: the pressure rises by about $0.37\,\text{kPa}$ per degree, so $101\,\text{kPa}$ runs out after about $101/0.37 \approx 270$ degrees.
+
+The uncertainty is large because the measurement was made more than $270\,{}^\circ\text{C}$ away from zero pressure, and the uncertainty of the points, $1\,\text{kPa}$, is about one percent of the reading.
 
 ## Common misconception
 Many people think that absolute zero has been measured because it is on the graph. Only the seven points in the range 10–$100\,{}^\circ\text{C}$ are measured; the rest is an extension of the line, and the extension is an assumption that the pressure behaves in the same way at colder temperatures. Another mistake is to consider the result a failure if it is not exactly $-273.15\,{}^\circ\text{C}$. The result $-276\,{}^\circ\text{C}$ differs from the accepted value by about 3 degrees when the uncertainty is 18 degrees, so it agrees with the value. A third mistake is to draw a wiggly line through every point: the variation of the points up and down is caused by measurement uncertainty, and the line should be drawn through the middle of the group of points.
