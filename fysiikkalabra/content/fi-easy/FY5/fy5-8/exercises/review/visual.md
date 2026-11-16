@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1ae8685140b955d6
-Mode: delta (new task fy5-8-L2-08), Round: 1
+CONTENT-HASH: 332b2727d76ee4da
 
 ## Blocking
-(none)
 
 ## Polish
-- None.
+- [Minor] fy5-8 Vastaus — "värähtelyyn ja ääneen ja lopulta … sisäenergiaan" has a double "ja" and "lopulta" before "pysähtyvät lopuksi"; e.g. "värähtelyyn ja ääneen sekä lopulta …". Also the known old clipping formulas are not part of this change.
 
 ## Checked
-- Own 390 px render of preview/fi-easy/fy5-8.html after the page scripts ran, task fy5-8-L2-08 with answer feedback and solution opened (scratch script shot_trv5.py): page scrollWidth 390, no element outside the viewport except inside a scroll box, no KaTeX error source, no raw $ left, no JS errors.
-- Opened the task captures in tiles: scenario text, table (caption, header with LaTeX, 5 rows; fits the card, no scroll), choice feedback, full worked solution; units, decimal marks and case endings render correctly. Table cells: decimal comma in fi-easy, point in en (converted correctly at render).
-- Task text and solution read as Selkeä suomi; language matches the reviewed Finnish set.
+- Delta round 1: rendered the page at 360 px with solutions open (?ratkaisut=1); Vastaus row wraps cleanly; the figures.json change is an alt-text key identical to its value (not rendered text) and was not judged.
+- Page scrollWidth 360, no overflow in the changed paragraphs; units and numbers unchanged and typeset upright with thin spaces.
+- Judged the language and typography of the changed sentences only.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

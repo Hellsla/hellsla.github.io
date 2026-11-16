@@ -260,3 +260,54 @@ Kohta c: annos on $\dfrac{3{,}0\,\text{h}}{1{,}59\,\text{h}} = 1{,}89$ eli $190\
 **Sijoitus:** $L_\text{korva} = 105\,\text{dB} - 12\,\text{dB} = 93\,\text{dB}$, $n = \dfrac{93\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{8}{3}$, $t_\text{v} = \dfrac{480\,\text{min}}{2^{8/3}} = \dfrac{480\,\text{min}}{6{,}350} = 75{,}6\,\text{min}$
 **Vastaus:** $76\,\text{min}$. Taso luetaan kuvasta kokonaisena desibelinä ja sääntö on arvio, joten kaksi merkitsevää numeroa riittää.
 **Järkevyys:** Taso korvassa on $8\,\text{dB}$ vertailutason yläpuolella, tasojen $6\,\text{dB}$ ($120\,\text{min}$) ja $9\,\text{dB}$ ($60\,\text{min}$) välissä, joten noin $76\,\text{min}$ on järkevä. Ilman tulppia aika olisi vain $4{,}7\,\text{min}$, joten tulpat pidentävät sitä noin kuusitoistakertaiseksi.
+
+## fy5-16-L2-10
+**Annettu:** tasot $L_1 = 85\,\text{dB}$ ja $L_2 = 94\,\text{dB}$, aika $t_1 = 8\,\text{h}$; b-kohdassa tason muutos $3\,\text{dB}$ tai $10\,\text{dB}$. Aineistosta (Työterveyslaitos, *Melu*, luettu 15. marraskuuta 2026): meluasetuksen alempi toiminta-arvo $80\,\text{dB(A)}$, ylempi toiminta-arvo $85\,\text{dB(A)}$ ja raja-arvo $87\,\text{dB(A)}$ sekä tieto, että melun energia-annos määritetään aina kahdeksan tunnin laskennalliselle työpäivälle. Laskuissa kirjoitetaan lyhyesti dB.
+**Kysytty:** a) miksi asteikko on logaritminen; b) intensiteettien suhde $\dfrac{I_2}{I_1}$, kun taso kasvaa $3\,\text{dB}$ tai $10\,\text{dB}$; c) tasojen vertailu ja aika $t_2$ tunteina tasolla $L_2$; d) arvio väitteestä
+**Periaate:** Intensiteettitaso määritellään intensiteetin logaritmin avulla (luku *Intensiteetti ja desibeliasteikko*), joten tasojen erotuksesta saadaan intensiteettien suhde. Intensiteetti $I$ on teho pinta-alaa kohti, joten ajassa $t$ korvaan tulee pinta-alaa kohti energia $It$. Aineiston mukaan altistus arvioidaan energia-annoksena, joten kaksi altistusta ovat yhtä suuret, kun tulo $It$ on sama.
+**Kaava:** Tason määritelmä on $L = 10\,\text{dB} \cdot \lg \dfrac{I}{I_0}$. Erotuksessa kuulokynnyksen intensiteetti $I_0$ supistuu:
+$$\begin{aligned}
+L_2 - L_1 &= 10\,\text{dB} \cdot \lg \frac{I_2}{I_1} \\
+\frac{I_2}{I_1} &= 10^{\,(L_2 - L_1)/(10\,\text{dB})}
+\end{aligned}$$
+Sama energia-annos: $I_1 t_1 = I_2 t_2$, josta
+$$\begin{aligned}
+t_2 &= t_1 \cdot \frac{I_1}{I_2} \\
+&= \frac{t_1}{10^{\,(L_2 - L_1)/(10\,\text{dB})}}
+\end{aligned}$$
+**Muunnokset:** Ei tarvita: eksponentissa desibelit supistuvat, ja aika saadaan tunteina kuten $t_1$.
+**Sijoitus:**
+Kohta b, kun taso kasvaa $3\,\text{dB}$:
+$$\begin{aligned}
+\frac{I_2}{I_1} &= 10^{\,3\,\text{dB}/(10\,\text{dB})} \\
+&= 10^{\,0{,}3} \\
+&\approx 1{,}995
+\end{aligned}$$
+Kun taso kasvaa $10\,\text{dB}$, suhde on $\dfrac{I_2}{I_1} = 10^{\,1} = 10$.
+Kohta c:
+$$\begin{aligned}
+\frac{I_2}{I_1} &= 10^{\,(94\,\text{dB} - 85\,\text{dB})/(10\,\text{dB})} \\
+&= 10^{\,0{,}9} \\
+&\approx 7{,}943 \\
+t_2 &= \frac{8\,\text{h}}{7{,}943} \\
+&\approx 1{,}007\,\text{h}
+\end{aligned}$$
+**Vastaus:** $t_2 \approx 1{,}0\,\text{h}$ on c-kohdan aika kahdella merkitsevällä numerolla, koska tasot on annettu kokonaisina desibeleinä.
+
+a) Taso ei ole verrannollinen intensiteettiin $I$, vaan sen logaritmiin: yhtä suuri lisäys tasossa vastaa aina yhtä suurta kerrointa intensiteetissä. Siksi kuuloalueen intensiteetit, jotka kasvavat kuulokynnyksestä kipukynnykseen noin $10^{12}$-kertaisiksi, mahtuvat välille $0$–$120\,\text{dB}$.
+
+b) $3\,\text{dB}$:n lisäys noin kaksinkertaistaa intensiteetin (kerroin $2{,}0$), ja $10\,\text{dB}$:n lisäys kymmenkertaistaa sen.
+
+c) Tasolla $85\,\text{dB}$ työnantajan on aineiston mukaan laadittava meluntorjuntaohjelma, kuulonsuojaimia on käytettävä ja alueet, joilla tällaista altistumista voi esiintyä, on merkittävä.
+
+Taulukon kolme arvoa ovat kahdeksan tunnin työpäivän altistustasoja, koska melun energia-annos määritetään aina kahdeksan tunnin työpäivälle. Jos taso $94\,\text{dB}$ kestää koko työpäivän, päivän altistustaso on $94\,\text{dB(A)}$ eli $7\,\text{dB}$ raja-arvon $87\,\text{dB(A)}$ yläpuolella. Raja-arvo arvioidaan kuulonsuojaimen sisäpuolelta, joten suojainten olisi silloin vaimennettava korvaan tulevaa tasoa vähintään $7\,\text{dB}$.
+
+Intensiteetti on tasolla $94\,\text{dB}$ noin $7{,}9$-kertainen, joten sama energia-annos kuin kahdeksassa tunnissa tasolla $85\,\text{dB}$ kertyy jo ajassa $t_2 \approx 1{,}0\,\text{h}$. Jos työpäivän muu melu on vähäistä, tunnin altistus tasolle $94\,\text{dB}$ vastaa siis kahdeksan tunnin altistustasoa $85\,\text{dB(A)}$. Se on ylemmän toiminta-arvon suuruinen, joten suojaimet ovat pakolliset, mutta se jää raja-arvon $87\,\text{dB(A)}$ alapuolelle.
+
+d) Väite ei pidä paikkaansa. Logaritmisella asteikolla $3\,\text{dB}$ kaksinkertaistaa korvaan tulevan energian ja puolittaa ajan, jossa sama annos kertyy, ja $9\,\text{dB}$ lyhentää ajan kahdeksasta tunnista yhteen.
+
+Aineiston kolme viitearvoa mahtuvat $7\,\text{dB}$:n sisään, ja silti ne erottavat toisistaan tiedottamisen, suojainten käyttöpakon ja tason, jota ei saa ylittää.
+
+Väite kuulostaa uskottavalta, koska $3\,\text{dB}$:n muutos kuulostaa korvaan pieneltä. Kuulon rasitus riippuu kuitenkin energiasta eikä siitä, miltä ääni kuulostaa.
+
+**Järkevyys:** Luvun nyrkkisääntö antaa saman: $9\,\text{dB}$ on kolme $3\,\text{dB}$:n askelta, joten aika puolittuu kolmesti, $8\,\text{h} : 2^3 = 1\,\text{h}$. Pieni ero tulokseen $1{,}007\,\text{h}$ johtuu siitä, että $3\,\text{dB}$ vastaa kerrointa $1{,}995$ eikä tasan kahta. Mallin rajat: aika $1{,}0\,\text{h}$ on laskennallinen vertailuarvo eikä turvallinen aika, koska ihmisten kuulo kestää melua eri tavoin. Malli ei myöskään kata iskumelua: aineiston mukaan iskumaisessa melussa yksittäinenkin riittävän kova meluhuippu voi olla kuulolle vaarallinen. Jo $1\,\text{dB}$:n virhe tasossa muuttaa intensiteettiä noin neljänneksen, joten tarkempi tulos ei olisi perusteltu.

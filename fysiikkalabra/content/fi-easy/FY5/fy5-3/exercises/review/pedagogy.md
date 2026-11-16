@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 9da02db2ed677dc7
-SCOPE: delta added-exercise from 3a1529b2bcd56749 base 81db4a6fd727
+CONTENT-HASH: 469d45abefa175d7
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-3-L1-11 solution, Järkevyys: 'noin sata kertaa lentokoneen nopeus' is a loose comparison; drop it or write 'moninkertainen lentokoneen nopeus'.
+- solutions.md fy5-3-L1-11 (Sijoitus): the new aligned chain breaks after "2π · 0,3333 1/s"; fine on a phone, keep.
 
 ## Checked
-- L1-10: figure needed (r_B read from the dimension arrow), A is a harmless extra; answer 2,262 within 2 %.
-- L1-11: MAFY look-up, one formula, unit conversion d to s shown; tolerance 4 % fits table differences.
-- L2-08: same figure, new question (difference of speeds, same f for both points); a real step up from L1-10.
-- Solutions staged, each with a sanity check; fi-easy sentences short.
+- Diff only: caption markers removed, wording of two Periaate/Järkevyys lines, one re-broken chain.
+- L2-08 Periaate "samalla suoralla, joka kulkee keskipisteen kautta" is the correct condition for runners side by side and is clearer S2 Finnish than "samalla säteellä".
+- L1-10 Järkevyys "hölkkävauhtia" (2,3 m/s) fits; the comparison is concrete.
+- Re-broken chain keeps the same numbers, signs and units in the same order.
+- Every step and justification of the solutions is kept; sentences short.

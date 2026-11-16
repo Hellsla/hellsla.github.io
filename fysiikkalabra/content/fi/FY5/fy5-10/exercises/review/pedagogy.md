@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 78caa538200d885a
-SCOPE: delta added-exercise from b59e199ba798ddff base 81db4a6fd727
+CONTENT-HASH: 98bb58d9bd7e5e29
+
 ## Blocking
 (none)
 
 ## Polish
-- exercises.json (L2-08) — "Lue tarvittava arvo kuvasta" tells the student there is one value to read; at level 2 "Lue tarvittavat arvot kuvasta" leaves the choice of what to read to the student (the amplitude is a distractor).
-- solutions.md (L1-10) — the Järkevyys is good; no change needed.
+(none)
 
 ## Checked
-- Text and figure description only (no renders); L1-10: λ = 5120/1000 = 5,12 m, MAFY solids table named in the hint, 4 % tolerance; fits level 1 and adds the lookup skill.
-- L2-08: crests at 0,5; 2,0; 3,5 m give λ = 1,5 m, T = 0,50 s; the snapshot (x-axis) versus the t-graph in L2-01 and L2-06 is a worthwhile distinction, not a repeat.
-- Figure description gives the same data without the answer; λ not marked.
-- inquiry.json not opened (figcat says reuse safe).
+- C rows recomputed: 10,4²/5,0 = 21,6; 15,0²/10,0 = 22,5; 21,1²/20,0 = 22,3; 29,3²/40,0 = 21,5; the old 21,8, 22,2 and 21,4 were wrong and are fixed.
+- Following text still consistent: sum 87,9, mean 22,0, v = 25,7 m/s, λ = 5,1 m.
+- The rows still lead the student to "v² proportional to F"; the pedagogy of the task is unchanged.
+- Caption marker removal harmless; text only (no renders).

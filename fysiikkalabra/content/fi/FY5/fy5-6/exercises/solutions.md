@@ -55,7 +55,7 @@
 **Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, josta $r = \dfrac{\gamma M}{v^2}$ ja $h = r - R$
 **Muunnokset:** $v = 5{,}00\,\text{km/s} = 5000\,\text{m/s}$, $R = 6371\,\text{km} = 6{,}371 \cdot 10^{6}\,\text{m}$
 **Sijoitus:** $\gamma M = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 5{,}97 \cdot 10^{24}\,\text{kg} = 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2$, joten $r = \dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{(5000\,\text{m/s})^2} = 1{,}5938 \cdot 10^{7}\,\text{m}$, joten $h = 1{,}5938 \cdot 10^{7}\,\text{m} - 6{,}371 \cdot 10^{6}\,\text{m} = 9{,}567 \cdot 10^{6}\,\text{m} = 9567\,\text{km}$
-**Vastaus:** $9570\,\text{km}$, kolme merkitsevää numeroa kuten nopeudessa $5{,}00\,\text{km/s}$.
+**Vastaus:** $9{,}57 \cdot 10^{3}\,\text{km}$ eli noin $9570\,\text{km}$, kolme merkitsevää numeroa kuten nopeudessa $5{,}00\,\text{km/s}$.
 **Järkevyys:** Nopeus $5{,}00\,\text{km/s}$ on ISS:n $7{,}66\,\text{km/s}$ ja GPS-satelliitin $3{,}87\,\text{km/s}$ välissä, ja niin on myös radan säde $15\,900\,\text{km}$ ($6790\,\text{km}$ ja $26\,560\,\text{km}$). Tarkistus: $\sqrt{\tfrac{\gamma M}{r}} = \sqrt{\tfrac{3{,}984 \cdot 10^{14}}{1{,}594 \cdot 10^{7}}}\,\text{m/s} \approx 5000\,\text{m/s}$.
 
 ## fy5-6-L2-02
@@ -105,7 +105,7 @@
 **Kaava:** $v = \sqrt{\dfrac{\gamma M}{r}}$, joten $\Delta v = \sqrt{\dfrac{\gamma M}{R + h_2}} - \sqrt{\dfrac{\gamma M}{R + h_1}}$
 **Muunnokset:** $r_1 = 6771\,\text{km} = 6{,}771 \cdot 10^{6}\,\text{m}$, $r_2 = 6769\,\text{km} = 6{,}769 \cdot 10^{6}\,\text{m}$, ja $\gamma M = 3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2$. Kaksi nopeutta on lähes yhtä suuria ja niiden erotus on vain noin yksi metri sekunnissa, joten välituloksia ei pyöristetä ennen vähennystä: nopeudet lasketaan kahden desimaalin tarkkuudella ja vähennetään vasta sitten.
 **Sijoitus:** $v_1 = \sqrt{\dfrac{3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6{,}771 \cdot 10^{6}\,\text{m}}} = 7671{,}03\,\text{m/s}$, $v_2 = \sqrt{\dfrac{3{,}98438 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{6{,}769 \cdot 10^{6}\,\text{m}}} = 7672{,}17\,\text{m/s}$, joten $\Delta v = 7672{,}17\,\text{m/s} - 7671{,}03\,\text{m/s} = 1{,}13\,\text{m/s}$
-**Vastaus:** Ratanopeus kasvaa noin $1{,}13\,\text{m/s}$. Kolme merkitsevää numeroa, koska korkeuksien ero $2\,\text{km}$ on tarkka ja muutos on laskettu välituloksia pyöristämättä.
+**Vastaus:** Ratanopeus kasvaa noin $1{,}13\,\text{m/s}$. Kolme merkitsevää numeroa kuten Maan massassa $5{,}97 \cdot 10^{24}\,\text{kg}$: korkeudet käsitellään tässä mallin tarkkoina arvoina, koska tehtävä ei anna niille mittausepävarmuutta. Kilometrin tarkkuudella mitattujen korkeuksien erotuksessa $2\,\text{km}$ olisi vain yksi merkitsevä numero, ja tulos olisi noin $1\,\text{m/s}$.
 **Järkevyys:** Säde pienenee vain $2\,\text{km}$ eli noin $0{,}03\,\%$, joten nopeuden muutos on pieni: $1{,}13\,\text{m/s}$ on noin $0{,}015\,\%$ nopeudesta $7671\,\text{m/s}$, mikä sopii niin pieneen säteen muutokseen. Etumerkki on positiivinen, vaikka ilma jarruttaa: rata madaltuu, ja alempana gravitaatio vaatii suuremman nopeuden.
 
 ## fy5-6-L3-03
@@ -150,7 +150,7 @@
 **Kaava:** $\dfrac{\gamma M}{r} = \dfrac{4\pi^2 r^2}{T^2}$, josta $\dfrac{r^3}{T^2} = \dfrac{\gamma M}{4\pi^2}$ ja $M = \dfrac{4\pi^2}{\gamma} \cdot \dfrac{r^3}{T^2}$
 **Muunnokset:** $r$ metreiksi: $421{,}7 \cdot 10^{3}\,\text{km} = 4{,}217 \cdot 10^{8}\,\text{m}$, $6{,}711 \cdot 10^{8}\,\text{m}$, $1{,}070 \cdot 10^{9}\,\text{m}$ ja $1{,}883 \cdot 10^{9}\,\text{m}$. $T$ sekunneiksi: $1{,}769 \cdot 86\,400\,\text{s} = 152\,842\,\text{s}$, $3{,}551 \cdot 86\,400\,\text{s} = 306\,806\,\text{s}$, $7{,}155 \cdot 86\,400\,\text{s} = 618\,192\,\text{s}$ ja $16{,}69 \cdot 86\,400\,\text{s} = 1\,442\,016\,\text{s}$.
 **Sijoitus:** Suhteet ovat Iolle $3{,}2102 \cdot 10^{15}\,\text{m}^3/\text{s}^2$, Europalle $3{,}2110 \cdot 10^{15}\,\text{m}^3/\text{s}^2$, Ganymedekselle $3{,}2056 \cdot 10^{15}\,\text{m}^3/\text{s}^2$ ja Callistolle $3{,}2108 \cdot 10^{15}\,\text{m}^3/\text{s}^2$. Ne poikkeavat toisistaan alle $0{,}2\,\%$. Summa on $1{,}2837 \cdot 10^{16}\,\text{m}^3/\text{s}^2$, joten keskiarvo on $3{,}2094 \cdot 10^{15}\,\text{m}^3/\text{s}^2$. Tällöin $4\pi^2 \cdot 3{,}2094 \cdot 10^{15}\,\text{m}^3/\text{s}^2 = 1{,}2670 \cdot 10^{17}\,\text{m}^3/\text{s}^2$, joten $M = \dfrac{1{,}2670 \cdot 10^{17}\,\text{m}^3/\text{s}^2}{6{,}674 \cdot 10^{-11}\,\text{N}\cdot\text{m}^2/\text{kg}^2} = 1{,}898 \cdot 10^{27}\,\text{kg}$
-**Vastaus:** $1{,}90 \cdot 10^{27}\,\text{kg}$, kolme merkitsevää numeroa kuten kiertoajoissa ja ratasäteissä.
+**Vastaus:** $1{,}90 \cdot 10^{27}\,\text{kg}$, kolme merkitsevää numeroa: taulukon arvoissa on neljä, mutta kuiden suhteet eroavat toisistaan jo neljännessä numerossa, joten massan neljäs numero on epävarma.
 **Järkevyys:** Tulos on noin $318$ kertaa Maan massa $5{,}97 \cdot 10^{24}\,\text{kg}$, mikä on Jupiterin tunnettu massa. Myös suhteet sopivat yhteen: Callisto on $1883 : 421{,}7 \approx 4{,}47$ kertaa kauempana kuin Io, ja sen kiertoaika on $4{,}47^{1{,}5} \approx 9{,}4$ kertaa pidempi, mikä vastaa suhdetta $16{,}69 : 1{,}769 \approx 9{,}4$.
 
 ## fy5-6-L2-06
@@ -160,7 +160,7 @@
 **Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$, josta $v = \sqrt{\dfrac{\gamma M}{R + h}}$
 **Muunnokset:** $r = R + h$ on rivien mukaan $6771\,\text{km}$, $7571\,\text{km}$, $25\,471\,\text{km}$ ja $42\,157\,\text{km}$, ja ne muutetaan metreiksi, esimerkiksi $7571\,\text{km} = 7{,}571 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Sijoitus:** $\gamma M = 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2$. Rivien nopeudet ovat A: $7{,}67\,\text{km/s}$, C: $3{,}96\,\text{km/s}$ ja D: $3{,}07\,\text{km/s}$, ja ne täsmäävät taulukon kanssa. Riville B tulee $v = \sqrt{\dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{7{,}571 \cdot 10^{6}\,\text{m}}} = 7254\,\text{m/s} = 7{,}254\,\text{km/s}$, kun taulukossa on $7{,}52\,\text{km/s}$.
-**Vastaus:** satelliitin B nopeus on $7{,}25\,\text{km/s}$, kolme merkitsevää numeroa kuten taulukon nopeuksissa. Taulukossa kaksi numeroa on vaihtanut paikkaa ($7{,}52$ ja $7{,}25$).
+**Vastaus:** satelliitin B nopeus on $7{,}25\,\text{km/s}$, kolme merkitsevää numeroa kuten Maan massassa $5{,}97 \cdot 10^{24}\,\text{kg}$ ja taulukon nopeuksissa. Taulukossa kaksi numeroa on vaihtanut paikkaa ($7{,}52$ ja $7{,}25$).
 **Järkevyys:** Satelliitin B säde on A:n sädettä $7571 : 6771 \approx 1{,}118$ kertaa suurempi, joten nopeus on $\tfrac{7{,}67\,\text{km/s}}{\sqrt{1{,}118}} \approx 7{,}25\,\text{km/s}$. Nopeus pienenee korkeuden kasvaessa, ja B:n oikea arvo sopii A:n ja C:n arvojen väliin.
 
 ## fy5-6-L2-07
@@ -170,7 +170,7 @@
 **Kaava:** a) $F = \gamma \dfrac{Mm}{r^2}$, b) $v = \sqrt{\dfrac{\gamma M}{r}}$, missä $r = R + h$
 **Muunnokset:** $r = 6371\,\text{km} + 800\,\text{km} = 7171\,\text{km} = 7{,}171 \cdot 10^{6}\,\text{m}$; lopuksi $1\,\text{km/s} = 1000\,\text{m/s}$.
 **Sijoitus:** $\gamma M = 3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2$. a) $F_1 = \dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \cdot 500\,\text{kg}}{(7{,}171 \cdot 10^{6}\,\text{m})^2} = 3874\,\text{N}$ ja $F_2 = \dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2 \cdot 2000\,\text{kg}}{(7{,}171 \cdot 10^{6}\,\text{m})^2} = 15\,496\,\text{N}$. b) $v = \sqrt{\dfrac{3{,}984 \cdot 10^{14}\,\text{m}^3/\text{s}^2}{7{,}171 \cdot 10^{6}\,\text{m}}} = 7454\,\text{m/s} = 7{,}454\,\text{km/s}$
-**Vastaus:** raskaamman satelliitin ratanopeus on $7{,}45\,\text{km/s}$, kolme merkitsevää numeroa kuten Maan massassa. Voimat ovat $3870\,\text{N}$ ja $15\,500\,\text{N}$, ja voima on neljä kertaa suurempi raskaammalla. Virhe: oppilas ottaa huomioon vain voiman kasvun mutta ei sitä, että myös kiihdytettävä massa kasvaa nelinkertaiseksi. Kevyen satelliitin ratanopeus on sama $7{,}45\,\text{km/s}$.
+**Vastaus:** raskaamman satelliitin ratanopeus on $7{,}45\,\text{km/s}$, kolme merkitsevää numeroa kuten Maan massassa. Voimat ovat $3{,}87\,\text{kN}$ ja $15{,}5\,\text{kN}$, ja voima on neljä kertaa suurempi raskaammalla. Virhe: oppilas ottaa huomioon vain voiman kasvun mutta ei sitä, että myös kiihdytettävä massa kasvaa nelinkertaiseksi. Kevyen satelliitin ratanopeus on sama $7{,}45\,\text{km/s}$.
 **Järkevyys:** Voima ja ympyräliike täsmäävät: $\tfrac{m v^2}{r} = \tfrac{2000\,\text{kg} \cdot (7454\,\text{m/s})^2}{7{,}171 \cdot 10^{6}\,\text{m}} = 15\,496\,\text{N}$, sama kuin $F_2$. ISS kiertää $400\,\text{km}$:n korkeudella nopeudella $7{,}66\,\text{km/s}$, ja $800\,\text{km}$:n korkeudella nopeuden pitääkin olla hieman pienempi.
 
 ## fy5-6-L3-04
@@ -180,7 +180,7 @@
 **Kaava:** $\dfrac{r^3}{T^2} = \dfrac{\gamma M}{4\pi^2}$, josta $M = \dfrac{4\pi^2}{\gamma} \cdot \dfrac{r^3}{T^2}$
 **Muunnokset:** $r$ metreiksi: $6{,}0 \cdot 10^{9}\,\text{m}$, $1{,}05 \cdot 10^{10}\,\text{m}$, $1{,}70 \cdot 10^{10}\,\text{m}$ ja $2{,}70 \cdot 10^{10}\,\text{m}$. $T$ sekunneiksi: $3{,}29 \cdot 86\,400\,\text{s} = 284\,256\,\text{s}$, $7{,}57 \cdot 86\,400\,\text{s} = 654\,048\,\text{s}$, $7{,}82 \cdot 86\,400\,\text{s} = 675\,648\,\text{s}$ ja $31{,}4 \cdot 86\,400\,\text{s} = 2{,}713 \cdot 10^{6}\,\text{s}$.
 **Sijoitus:** a) Suhteet $\tfrac{r^3}{T^2}$ ovat b: $2{,}67 \cdot 10^{18}\,\text{m}^3/\text{s}^2$, c: $2{,}71 \cdot 10^{18}\,\text{m}^3/\text{s}^2$, d: $1{,}08 \cdot 10^{19}\,\text{m}^3/\text{s}^2$ ja e: $2{,}67 \cdot 10^{18}\,\text{m}^3/\text{s}^2$. Planeetan d suhde on noin nelinkertainen muihin verrattuna. b) Kolmen muun suhteen summa on $8{,}054 \cdot 10^{18}\,\text{m}^3/\text{s}^2$, joten keskiarvo on $2{,}685 \cdot 10^{18}\,\text{m}^3/\text{s}^2$ ja $4\pi^2 \cdot 2{,}685 \cdot 10^{18}\,\text{m}^3/\text{s}^2 = 1{,}0599 \cdot 10^{20}\,\text{m}^3/\text{s}^2$, joten $M = \dfrac{1{,}0599 \cdot 10^{20}\,\text{m}^3/\text{s}^2}{6{,}674 \cdot 10^{-11}\,\text{N}\cdot\text{m}^2/\text{kg}^2} = 1{,}588 \cdot 10^{30}\,\text{kg}$. c) $T_\text{d} = \sqrt{\dfrac{r^3}{2{,}685 \cdot 10^{18}\,\text{m}^3/\text{s}^2}} = \sqrt{\dfrac{4{,}913 \cdot 10^{30}\,\text{m}^3}{2{,}685 \cdot 10^{18}\,\text{m}^3/\text{s}^2}} = 1{,}353 \cdot 10^{6}\,\text{s} = 15{,}7\,\text{d}$
-**Vastaus:** tähden massa on $1{,}59 \cdot 10^{30}\,\text{kg}$, kolme merkitsevää numeroa, koska kiertoajat on annettu kolmella numerolla ja keskiarvo tasaa pienet erot (säde $6{,}0 \cdot 10^{9}\,\text{m}$ on annettu kahdella numerolla, mutta se on pyöristetty tarkasta arvosta). Perustelu: kolmen planeetan suhteet poikkeavat toisistaan alle $2\,\%$, mutta planeetan d suhde on noin nelinkertainen, joten sen kiertoaika ei sovi malliin. Vertailu on perustelu: kun säde kasvaa noin $60\,\%$ planeetasta c planeettaan d, kiertoaika kasvaa vain noin $3\,\%$, vaikka sen pitäisi kasvaa yli kaksinkertaiseksi. Pois jättäminen on perusteltua, koska poikkeama on selvä ja sille on looginen selitys; arvo on tarkistettava mittaamalla uudelleen, ei hylättävä pelkästään siksi, että se poikkeaa. Oikea kiertoaika on noin $15{,}7\,\text{d}$, ja listattu $7{,}82\,\text{d}$ on tästä likimain puolet, koska suhteessa $\tfrac{r^3}{T^2}$ kiertoaika on toisessa potenssissa ja nelinkertainen suhde vastaa puolta kiertoajasta. Selitys: jokaisella kierroksella on tulkittu kaksi kirkkauden heikkenemistä ohitukseksi (esimerkiksi myös hetki, jolloin planeetta kulkee tähden taakse), tai kahden eri planeetan ohitukset on sekoitettu, jolloin havaittu väli on puolet todellisesta kiertoajasta.
+**Vastaus:** tähden massa on $1{,}59 \cdot 10^{30}\,\text{kg}$, kolme merkitsevää numeroa kuten kiertoajoissa ja säteissä $10{,}5 \cdot 10^{9}\,\text{m}$ ja $27{,}0 \cdot 10^{9}\,\text{m}$. Säteessä $6{,}0 \cdot 10^{9}\,\text{m}$ on vain kaksi merkitsevää numeroa, joten planeetan b suhde on epävarmempi, mutta se sopii planeettojen c ja e suhteisiin, joiden keskiarvo antaa yksinään saman tuloksen $1{,}59 \cdot 10^{30}\,\text{kg}$. Perustelu: kolmen planeetan suhteet poikkeavat toisistaan alle $2\,\%$, mutta planeetan d suhde on noin nelinkertainen, joten sen kiertoaika ei sovi malliin. Vertailu on perustelu: kun säde kasvaa noin $60\,\%$ planeetasta c planeettaan d, kiertoaika kasvaa vain noin $3\,\%$, vaikka sen pitäisi kasvaa yli kaksinkertaiseksi. Pois jättäminen on perusteltua, koska poikkeama on selvä ja sille on looginen selitys; arvo on tarkistettava mittaamalla uudelleen, ei hylättävä pelkästään siksi, että se poikkeaa. Oikea kiertoaika on noin $15{,}7\,\text{d}$, ja listattu $7{,}82\,\text{d}$ on tästä likimain puolet, koska suhteessa $\tfrac{r^3}{T^2}$ kiertoaika on toisessa potenssissa ja nelinkertainen suhde vastaa puolta kiertoajasta. Selitys: jokaisella kierroksella on tulkittu kaksi kirkkauden heikkenemistä ohitukseksi (esimerkiksi myös hetki, jolloin planeetta kulkee tähden taakse), tai kahden eri planeetan ohitukset on sekoitettu, jolloin havaittu väli on puolet todellisesta kiertoajasta.
 **Järkevyys:** Tähden massa on $1{,}588 \cdot 10^{30}\,\text{kg} : 1{,}99 \cdot 10^{30}\,\text{kg} \approx 0{,}80$ aurinkomassaa, mikä on tavallisen tähden suuruusluokkaa. Planeetan d korjattu kiertoaika sopii radan paikkaan: se on planeettojen c ($7{,}57\,\text{d}$) ja e ($31{,}4\,\text{d}$) välissä, kuten ratasäde $17{,}0 \cdot 10^{9}\,\text{m}$ on säteiden $10{,}5 \cdot 10^{9}\,\text{m}$ ja $27{,}0 \cdot 10^{9}\,\text{m}$ välissä.
 
 ## fy5-6-L3-05
@@ -228,7 +228,7 @@ Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}
 **Kaava:** $g = \dfrac{\gamma M}{r^2}$
 **Muunnokset:** $r = 1840\,\text{km} = 1840 \cdot 1000\,\text{m} = 1{,}840 \cdot 10^{6}\,\text{m}$
 **Sijoitus:** $\gamma M = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2} \cdot 7{,}346 \cdot 10^{22}\,\text{kg} = 4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2$, joten $g = \dfrac{4{,}9027 \cdot 10^{12}\,\text{m}^3/\text{s}^2}{(1{,}840 \cdot 10^{6}\,\text{m})^2} = 1{,}448\,\text{m/s}^2$
-**Vastaus:** $1{,}45\,\text{m/s}^2$, kolme merkitsevää numeroa kuten säteessä $1840\,\text{km}$. Arvo on MAFY-taulukosta (Aurinkokunta, Kuu); eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
+**Vastaus:** $1{,}45\,\text{m/s}^2$, kolme merkitsevää numeroa: säteessä $1840\,\text{km}$ ja massassa $7{,}346 \cdot 10^{22}\,\text{kg}$ on neljä, mutta eri taulukoiden arvot poikkeavat hieman, joten neljäs numero ei olisi luotettava. Arvo on MAFY-taulukosta (Aurinkokunta, Kuu), ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
 **Järkevyys:** Kuun pinnalla (säde $1737\,\text{km}$) kiihtyvyys on $1{,}62\,\text{m/s}^2$. Rata on hieman kauempana keskipisteestä, ja suhde $\left(\tfrac{1737}{1840}\right)^2 = 0{,}891$ antaa $1{,}62\,\text{m/s}^2 \cdot 0{,}891 = 1{,}44\,\text{m/s}^2$, eli sama pyöristyksen tarkkuudella.
 
 ## fy5-6-L2-08
@@ -241,3 +241,54 @@ Tunneiksi muutettuna $T = \tfrac{2{,}76 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}
 **Sijoitus:** $\dfrac{v_1}{v_2} = \sqrt{\dfrac{5250\,\text{milj. km}}{88\,\text{milj. km}}} = \sqrt{59{,}66} = 7{,}724$
 **Vastaus:** noin $7{,}7$-kertainen, kaksi merkitsevää numeroa, koska etäisyys $88\,\text{milj. km}$ on ilmoitettu vain kahdella (pyöristämätön arvo $7{,}724$). Etäisyys on suurimmillaan noin $60$ kertaa pienin, ja nopeus on neliöjuuren vuoksi vain noin $7{,}7$-kertainen. Komeetan todellinen rata on kuvan mukaan hyvin pitkänomainen ellipsi, joten ympyrämalli ei kuvaa sitä; tehtävä vertaa vain mallin nopeuksia.
 **Järkevyys:** Koska $7{,}7^2 \approx 59$, tulos sopii etäisyyksien suhteeseen $59{,}7$. Nopeus on suurempi lähempänä Aurinkoa, kuten kaavasta $v \propto \tfrac{1}{\sqrt{r}}$ pitääkin.
+
+## fy5-6-L2-09
+**Annettu:** NASAn *Planetary Fact Sheet* -taulukon rivit *Distance from Sun* (keskietäisyys Auringosta eli radan isoakselin puolikas $a$, yksikkö $10^{6}\,\text{km}$) ja *Orbital Period* (kiertoaika $T$ vuorokausina). Kohta a), esimerkki, aineisto luettu 15. marraskuuta 2026. Toinen planeettojen valinta tai myöhempi lukukerta antaa hieman eri luvut, mutta menetelmä on sama.
+
+| Planeetta | $a\,(10^{6}\,\text{km})$ | $T\,(\text{d})$ |
+|---|---|---|
+| Merkurius | $57{,}9$ | $88{,}0$ |
+| Venus | $108{,}2$ | $224{,}7$ |
+| Maa | $149{,}6$ | $365{,}2$ |
+| Mars | $228{,}0$ | $687{,}0$ |
+| Jupiter | $778{,}5$ | $4331$ |
+
+**Kysytty:** a) taulukko viiden planeetan arvoista $a$ ja $T$, b) pisteiden $(a^3, T^2)$ kuvaaja, c) miten aineisto tukee Keplerin kolmatta lakia, d) Marsin kiertoaika $T_\text{Mars}$ vuorokausina Maan ratatiedoista ja vertailu NASAn arvoon
+**Periaate:** Planeettaan vaikuttaa käytännössä vain Auringon gravitaatiovoima, ja se on ympyräliikkeen kokonaisvoima. Tämän luvun ympyräratamallista seuraa, että $T^2$ on suoraan verrannollinen suureeseen $r^3$ ja että verrannollisuuskerroin riippuu vain Auringon massasta $M$, ei planeetasta. Malli siis ennustaa Keplerin kolmannen lain, kun radan säde $r$ on isoakselin puolikas $a$: pisteet $(a^3, T^2)$ ovat samalla suoralla. Suora kulkee origon kautta, koska yhtälössä ei ole vakiotermiä.
+**Kuvaajan lukeminen:** Kohta b): jokaiselle planeetalle lasketaan $a^3$ ja $T^2$, ja pisteet piirretään koordinaatistoon, jossa vaaka-akselilla on $a^3$ ja pystyakselilla $T^2$.
+
+| Planeetta | $a^3\,\left((10^{8}\,\text{km})^3\right)$ | $T^2\,\left((10^{3}\,\text{d})^2\right)$ | $\dfrac{T^2}{a^3}$ |
+|---|---|---|---|
+| Merkurius | $0{,}194$ | $0{,}00774$ | $0{,}0399$ |
+| Venus | $1{,}267$ | $0{,}0505$ | $0{,}0399$ |
+| Maa | $3{,}348$ | $0{,}1334$ | $0{,}0398$ |
+| Mars | $11{,}85$ | $0{,}4720$ | $0{,}0398$ |
+| Jupiter | $471{,}8$ | $18{,}76$ | $0{,}0398$ |
+
+Kohta c): pisteet asettuvat samalle origon kautta kulkevalle suoralle. Jupiterin piste on kaukana ja neljä muuta lähellä origoa, joten sisäplaneetat kannattaa piirtää myös omaan kuvaajaansa. Kulmakerroin luetaan sovitetun suoran kahdesta kaukana toisistaan olevasta pisteestä, esimerkiksi $(100;\ 4{,}0)$ ja $(400;\ 15{,}9)$: $k = \dfrac{15{,}9 - 4{,}0}{400 - 100} \approx 0{,}040$ taulukon yksiköissä. Sama näkyy suhteista $\tfrac{T^2}{a^3}$, jotka eroavat toisistaan alle $0{,}4\,\%$.
+**Kaava:** $\gamma \dfrac{Mm}{r^2} = \dfrac{mv^2}{r}$ ja $v = \dfrac{2\pi r}{T}$, joten $\dfrac{\gamma M}{r} = \dfrac{4\pi^2 r^2}{T^2}$ ja $T^2 = \dfrac{4\pi^2}{\gamma M} r^3$. Kohta d): Maalle ja Marsille kerroin on sama, joten $\dfrac{T_\text{Mars}^2}{T_\text{Maa}^2} = \dfrac{a_\text{Mars}^3}{a_\text{Maa}^3}$, josta $T_\text{Mars} = T_\text{Maa}\left(\dfrac{a_\text{Mars}}{a_\text{Maa}}\right)^{3/2}$
+**Muunnokset:** Kuvaajaa varten $a$ muutetaan yksikköön $10^{8}\,\text{km}$ ja $T$ yksikköön $10^{3}\,\text{d}$, esimerkiksi Maalle $$
+\begin{aligned}
+&149{,}6 \cdot 10^{6}\,\text{km} \\
+&= 1{,}496 \cdot 10^{8}\,\text{km}
+\end{aligned}
+$$ ja $365{,}2\,\text{d} = 0{,}3652 \cdot 10^{3}\,\text{d}$. Kohdassa d) muunnoksia ei tarvita, koska etäisyyksien suhteesta yksikkö supistuu pois ja kiertoaika saadaan vuorokausina.
+**Sijoitus:** $$
+\begin{aligned}
+T_\text{Mars} &= 365{,}2\,\text{d} \\
+&\cdot \left(\dfrac{228{,}0 \cdot 10^{6}\,\text{km}}{149{,}6 \cdot 10^{6}\,\text{km}}\right)^{3/2} \\
+&= 365{,}2\,\text{d} \cdot 1{,}52406^{3/2} \\
+&= 365{,}2\,\text{d} \cdot 1{,}8815 \\
+&= 687{,}12\,\text{d}
+\end{aligned}
+$$
+**Vastaus:** $687{,}1\,\text{d}$, neljä merkitsevää numeroa kuten lähtöarvoissa $365{,}2\,\text{d}$, $228{,}0 \cdot 10^{6}\,\text{km}$ ja $149{,}6 \cdot 10^{6}\,\text{km}$.
+
+Kohta c): aineisto tukee lakia, sillä viiden planeetan pisteet ovat samalla origon kautta kulkevalla suoralla, vaikka $a^3$ kasvaa Merkuriuksesta Jupiteriin yli $2000$-kertaiseksi. Viisi planeettaa ei silti todista lakia yleisesti. NASAn arvoilla suhde $\tfrac{T^2}{a^3}$ pysyy samana noin $0{,}2\,\%$:n tarkkuudella Merkuriuksesta Marsiin ja Jupiteriin, ja viiden planeetan taulukossa suhteet eroavat toisistaan alle $0{,}4\,\%$. Uloimmilla planeetoilla poikkeama on suurempi: Uranuksen suhde on noin $0{,}3\,\%$, Saturnuksen noin $1{,}3\,\%$ ja Neptunuksen noin $2{,}5\,\%$ Maan arvoa pienempi.
+
+Kohta d): NASAn arvo on $687{,}0\,\text{d}$, joten ero on $0{,}1\,\text{d}$ eli noin $0{,}02\,\%$.
+
+Ero selittyy pyöristyksellä: taulukon arvoissa on neljä merkitsevää numeroa, ja jo Marsin etäisyyden viimeisen numeron muutos arvoon $227{,}9 \cdot 10^{6}\,\text{km}$ muuttaisi tuloksen arvoon $686{,}7\,\text{d}$.
+
+Lisäksi laki tässä muodossa olettaa, että planeetan massa on mitätön Auringon massan rinnalla ja että muut planeetat eivät vaikuta. Radan soikeus ei ole syy: Keplerin kolmas laki pätee myös ellipsiradalle, kun säteen paikalla on isoakselin puolikas.
+**Järkevyys:** Mars on noin $1{,}5$ kertaa niin kaukana Auringosta kuin Maa, ja sen kiertoaika $687{,}1\,\text{d} : 365{,}2\,\text{d} \approx 1{,}9$ vuotta on Marsin tunnettu vuoden pituus. Myös kulmakerroin sopii malliin. SI-yksiköissä $k = 0{,}0398 \cdot \dfrac{(8{,}64 \cdot 10^{7}\,\text{s})^2}{(10^{11}\,\text{m})^3} = 2{,}97 \cdot 10^{-19}\,\text{s}^2/\text{m}^3$. Auringon massaksi saadaan $M = \dfrac{4\pi^2}{\gamma k} = 1{,}99 \cdot 10^{30}\,\text{kg}$. Se on Auringon massan taulukkoarvo.

@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a5be97017f850ea1
-SCOPE: delta added-exercise from d0e0aaa9ca173d93 base 81db4a6fd727
+CONTENT-HASH: 9fb56f569a24221e
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-10-L1-10 hint quotes the Finnish table title; fine for a lookup, but add the English gloss (already there) in the solution too.
+- fy5-10 L3-04 solution — the C values (21.6, 22.5, 22.3, 21.5) now follow from the rounded speeds shown on the rows above; a student who squares the unrounded v = 12.0/1.15 gets 21.8 and 22.2. One clause, "from the rounded speeds", prevents a needless doubt.
+- L1-10 (earlier report, still open): the Finnish table title in the hint; the English gloss in the solution would help.
 
 ## Checked
-- L1-10: authentic lookup (solids, iron, 20 C) with a precise hint; v = f lambda, kHz conversion explicit; 5.12 m verified; comparison with air is a good reasonableness step.
-- L2-08: figure is needed (lambda not marked, crests at 0.5, 2.0, 3.5 m on gridlines); description gives the same data without the answer; lambda = 1.5 m, T = 0.50 s verified.
-- L2-08 tests snapshot versus time graph (the L2-06 error theme) from the other side; not a repeat of L2-01.
-- Solutions staged with the principle explained; levels fit.
+- C_1 = 10.4²/5.0 = 21.6, C_3 = 21.1²/20.0 = 22.3, C_4 = 29.3²/40.0 = 21.5 are now arithmetically consistent with the displayed speeds (the old 21.8, 22.2, 21.4 were not); the sum 87.9, mean 22.0, v = 25.7 m/s and λ = 5.1 m are unchanged and correct.
+- The conclusion (ratios approximately equal, v² proportional to F) holds with the new values; the spread is still about 4 %, so "approximately equal" stays fair.
+- The marker "(example data)" removed from captions only; no value changed in exercises.json.
+- Figures yt-kuvaaja and valokuva unchanged: descriptions match, answers not given away.

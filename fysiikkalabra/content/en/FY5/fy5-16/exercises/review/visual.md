@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a65be9056dce17b6
-SCOPE: delta added-exercise from 5575f15b7bd4bcfd base 81db4a6fd727
+CONTENT-HASH: d25467943c300cb9
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] L2-10 one solution paragraph of 123 words; split when convenient.
+- [Minor] L2-05/L2-06 data tables scroll at 360 px (existing).
 
 ## Checked
-- Delta: fy5-16-L1-09 (open-exercises-1280-7, -8) and fy5-16-L2-09 (L2-1280-11, -12): new figure fy5-16/scale-tehtava in English (L (dB) scale, threshold of pain, rock concert, lawn mower, conversation, whisper, red 'risk of hearing damage' bracket from 85 dB), solutions quote the same labels.
+- Round 2: re-rendered preview/en/fy5-16.html?ratkaisut=1 at 360 px, every solution open; paragraph scan of all task cards, overflow, KaTeX errors: the split solutions (L2-10 Given and Reasonableness) now read as short paragraphs, nothing clipped, no new overflow beyond the known clipped formulas. Earlier round-1 captures of the new task stand (text unchanged apart from breaks).
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

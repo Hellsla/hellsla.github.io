@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fb0d0423c711ce05
-SCOPE: delta added-exercise from caaeaa93666bca57 base 81db4a6fd727
+CONTENT-HASH: 16bb16e0f37b499a
 
 ## Blocking
-(none)
+(none; round-1 Major verified fixed)
 
 ## Polish
-- [Minor] fy5-17/a-scan figure — it is invented illustrative data and the y-axis has unlabelled ticks; a small "esimerkkiaineisto / illustrative data" note in the caption or figure would make the status visible to the student (the description already says it).
-- [Minor] fy5-17-L1-09 — the Vihje/Hint tells exactly where in MAFY to look; fine for a lookup task, no change needed.
+- [Minor] fy5-17-L2-10 Kohta a) is one paragraph of about 126 words (just over the 120-word guide); could split at "Vuoden 2026 taulukon otsikossa on tähti".
+- [Minor] Task text part c): "kulkee 100 kilometrin matkan" still writes the unit out; use $100\,\text{km}$.
+- [Minor] Vastaus: "100 km / 11,905 s" uses a slash; the colon form used elsewhere would match.
 
 ## Checked
-- Opened at 1280 px: open-exercises part 9 (L1-09 solution), L2 parts 11 and 12 (L2-09 with the a-scan figure, answer box and complete solution).
-- A-scan: axis title t (µs), ticks every 20 µs with gridlines every 5 µs, echoes A, B, C and the transmitted pulse labelled; C peak sits at 90 µs on the grid, so the reading is possible without the figure giving the answer; nothing clipped.
-- Maths: units upright, µs and ms in LaTeX, chains aligned at =, ±4 % in LaTeX; Finnish/English wording of the tasks clear.
+- Own 360 px (tiles for task, Annettu, kohta a)–d), Järkevyys) and 1280 px render of fy5-17-L2-10 with solution open: kohta d) now four short paragraphs (formula, one station, model limits, accuracy); Vastaus box "Δt ≈ 12 s" with one-line sig-fig note. Fractions legible, no clipping, no overflow.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

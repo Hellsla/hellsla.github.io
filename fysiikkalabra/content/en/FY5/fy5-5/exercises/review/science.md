@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fc3b190ea3328bed
-SCOPE: delta added-exercise from 2dfa5cdb22af192d base 81db4a6fd727
+CONTENT-HASH: 91a009e41daee881
 
 ## Blocking
-(none)
 
 ## Polish
-- solutions.md fy5-5-L1-09 — the reasonableness check uses 9.81 m/s² for the Earth while the figure shows 9.80 m/s²; harmless (ratio 0.38 either way) — optionally use the figure's value.
+- none.
 
 ## Checked
-- fy5-5-L1-09: F = mg = 85 kg · 3.71 m/s² = 315 N → 3.2·10² N (two significant figures from 85 kg); answer 320 within 2 % of 315.
-- fy5-5-L2-09 (reworked, probe at h = R): r = R + h = 2R measured from the centre, g = g0 (R/r)² = 24.8/4 = 6.20 m/s², F = 850 kg · 6.20 m/s² = 5.27 kN. Recomputed independently via M = g0R²/γ and F = γMm/r²: same 5.27 kN; answers.py agrees.
-- The remark that 24.8 m/s² belongs to the equatorial radius is right; inverse-square law and its distance-from-centre condition stated.
-- Figure fy5-5/planeetat: English labels Moon, Mars, Earth, Jupiter and the values 3.71 and 24.8 m/s² match what the solutions quote.
-- Compared with the Finnish set by script: every number, answer, unit, tolerance and figure id identical.
+- "Extension task." is on exactly the ten exercises that carry "Syventävä tehtävä." in the Finnish (checked by script).
+- fy5-5-L2-08 feedback and solution: "A is pulled only by B and B only by A; the forces are equal, A has the larger mass, so it accelerates less". This is right (the third-law pair and a = F/m) and says the same as the Finnish.
+- fy5-5-L2-03 reasonableness: √11.8 = 3.44; 3.4·6378 km = 21 685 km ≈ 21 700 km (corrected from 21 900), which agrees with r = 21 866 km; h = 15 488 km recomputed.
+- fy5-5-L2-06 answer: the result is reliable to 6.7·10⁻¹¹ and 6.72 is kept only for the comparison. That reasoning is right (0.7 % from 6.674).
+- The re-broken substitution and reasonableness rows have the same numbers and units in the same order as before and as the Finnish.
+- Script comparison of fi and en: every number of exercises.json and solutions.md is identical; answers, units and tolerances are identical.
 - Hash unchanged at start and end.

@@ -282,6 +282,8 @@ Etäisyys on kaavassa toisessa potenssissa. Kun etäisyys kaksinkertaistuu, voim
 Kappaleen paino $G = mg$ on Maan kappaleeseen kohdistama gravitaatiovoima. Kun Maan massa on $M$ ja säde $R$, gravitaatiolaki antaa saman voiman, joten $mg = \gamma \tfrac{Mm}{R^2}$. Kappaleen massa $m$ supistuu pois, ja putoamiskiihtyvyydeksi jää $g = \gamma \tfrac{M}{R^2}$. Siksi kaikki kappaleet putoavat Maan pinnalla samalla kiihtyvyydellä, kun ilmanvastus jätetään huomiotta: raskaampaan kappaleeseen vaikuttaa suurempi voima, mutta sitä on myös vaikeampi kiihdyttää.
 
 ### Gravitaatiokentän voimakkuus
+**Syventävä osio.** Gravitaatiokentän voimakkuus ei kuulu tämän kurssin keskeisiin sisältöihin, joten tämä alaluku ja sitä seuraava *Kenttä eri taivaankappaleilla* ovat syventävää sisältöä. Ydinpolulle riittävät Newtonin gravitaatiolaki ja se, että kappaleen paino on Maan pinnalla kappaleeseen vaikuttava gravitaatiovoima.
+
 Maa muuttaa ympäristöään niin, että jokaisessa pisteessä on valmiina tietty veto: siihen tuotuun kappaleeseen vaikuttaa voima $\overline{F} = m\overline{g}$. Tätä kutsutaan Maan **gravitaatiokentäksi**. Kentän voimakkuus etäisyydellä $r$ kappaleen keskipisteestä on
 
 ```latex
@@ -686,5 +688,6 @@ F = \gamma \frac{M m}{r^2}
 - Kaikki kappaleet vetävät toisiaan puoleensa gravitaatiovoimalla $F = \gamma \tfrac{m_1 m_2}{r^2}$, missä $r$ on keskipisteiden välinen etäisyys ja $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$.
 - Kahden kappaleen väliset gravitaatiovoimat ovat yhtä suuret ja vastakkaissuuntaiset; kevyempi kappale kiihtyy enemmän.
 - Kun etäisyys kaksinkertaistuu, voima pienenee neljäsosaan.
-- Gravitaatiokentän voimakkuus $g = \gamma \tfrac{M}{r^2}$ on vapaasti putoavan kappaleen kiihtyvyys, yksikkö $\text{m/s}^2$; kappaleen paino on $G = mg$.
+- Kappaleen paino on Maan pinnalla siihen vaikuttava gravitaatiovoima, $G = mg$.
+- Syventävä: gravitaatiokentän voimakkuus $g = \gamma \tfrac{M}{r^2}$ on vapaasti putoavan kappaleen kiihtyvyys, yksikkö $\text{m/s}^2$.
 - Gravitaatio on aina vetävä ja ulottuu kauas, joten se kokoaa ainetta tähdiksi, planeetoiksi ja galakseiksi.
