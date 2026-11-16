@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0a743d1f79e88e55
-SCOPE: delta added-exercise from 010cc9be0b649006 base 415cbc7c6bc3
+CONTENT-HASH: d9ba28cfd425b32a
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] fy8-9-L2-08 task text — `*Elintarvikkeiden radioaktiiviset aineet*` shows literal asterisks (9-17 capture) — use quotation marks or plain text.
-- [Minor] fy8-9-L2-08 solution Vastaus — ASCII quotes "noin 30 a" render as straight quotes; use ”…”.
-- [Minor] fy8-9-L2-08 — years are plain text in the task (vuonna 1986) but maths in the solution ($1986$); make consistent.
+- [Minor] fy8-9-L2-08 Vastaus — jos ASCII-lainausmerkit ovat yhä ratkaisussa, vaihda ne ”…”-merkkeihin (ei muutu tässä diffissä).
 
 ## Checked
-- Delta: added fy8-9-L2-08 (STUK data task with table). Captures fy8-9-open-exercises-L2-1280-10 (task and table), -11, -12 (all solution blocks).
-- Table fits the card, with caption, header units in LaTeX and no overflow; chain with exponent `40 a:30 a` readable; answer box and Järkevyys clean; Finnish fluent.
+- Delta: exercises.json task text of fy8-9-L2-08; capture fy8-9-open-exercises-L2-1280-10 (task 9-17 with table, answer box and buttons).
+- Round-1 asterisks are gone: the chapter name shows as ”Elintarvikkeiden radioaktiiviset aineet” in curly quotes; layout, table and caption unchanged and unclipped.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 5

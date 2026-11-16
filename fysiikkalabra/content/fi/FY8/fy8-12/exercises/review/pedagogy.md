@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 6048e1bfb9aa68ef
-SCOPE: delta added-exercise from edbc5d57c6709a2b base 415cbc7c6bc3
+CONTENT-HASH: 844ef976147dad75
+SCOPE: delta round 2, fy8-12-L2-08 after fix
 
 ## Blocking
 
@@ -8,15 +8,12 @@ SCOPE: delta added-exercise from edbc5d57c6709a2b base 415cbc7c6bc3
 
 ## Polish
 
-- fy8-12-L2-08 — long for level 2: the stem is a paragraph and c) asks for five things (instrument, distance, background, quantity, radiation type). Cut c) to three requirements or split the stem into two sentences per paragraph.
-- fy8-12-L2-08 b) — 'selitä, miksi toinen ionisoi ja toinen ei' is good; the 10 eV comparison is given in the task, so the lesson need not teach it; keep the 'noin 14 µeV' remark in the answer line.
-- fy8-12-L2-08 d) — three asks in one part (evidence, why a pendant cannot protect, classify); split or drop the classification.
+- The three round-1 length polishes (c five asks, d three asks, stem length) are not addressed in this diff; still optional.
 
 ## Checked
 
-- Link 200; the news item matches the task text (ten products, anti-5G pendant, skin dose limit, sale ban).
-- 14,48 µeV checked; ratios 6,9e5 and 6,9e9 correct; box tolerance accepts 14 and 14,5.
-- a) separates the inferred claim from the authority's finding: observable criterion, assessing source reading.
-- c) is flagged in the solution as a general method, not RIVM's; honest.
-- Intensity versus photon energy answers the lesson's misconception (intensity is not energy per photon).
-- Method: delta, added exercise only.
+- Box answer 14 with tolerance 0.04 accepts 14.48 (exact) and 14.5, so both the rounded two-figure value and the earlier value pass; answers.py comment matches the 2-significant-figure answer.
+- Solution Vastaus/Answer now states two significant figures (matches the 3,5 GHz data) and says the box also accepts 14,5.
+- Comparison ratios split into two displayed lines: clearer, same numbers (6,9e5, 6,9e9).
+- Units J s and 24 h typeset consistently in task and solution; no pedagogical change.
+- Method: delta, diff only.
