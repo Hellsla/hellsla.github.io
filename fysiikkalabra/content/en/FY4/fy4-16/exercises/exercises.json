@@ -30,7 +30,7 @@
     {
       "id": "fy4-16-L1-04",
       "level": 1,
-      "text": "A sled arrives from the foot of a slope onto a horizontal snow field at a speed of $6.0\\,\\text{m/s}$. The coefficient of kinetic friction between the sled and the snow is $0.080$, and air resistance is ignored. How long a distance does the sled slide on the flat before it stops?",
+      "text": "A sled arrives from the foot of a slope onto a horizontal snow field at a speed of $6.0\\,\\text{m/s}$. The coefficient of sliding friction between the sled and the snow is $0.080$, and air resistance is ignored. How long a distance does the sled slide on the flat before it stops?",
       "answer": 22.93578,
       "unit": "m",
       "tolerance": 0.02,
@@ -39,7 +39,7 @@
     {
       "id": "fy4-16-L1-05",
       "level": 1,
-      "text": "A sled slides down a straight slope at a steady speed. The coefficient of kinetic friction between the sled and the snow is $0.15$, and air resistance is ignored. How large is the angle of inclination of the slope?",
+      "text": "A sled slides down a straight slope at a steady speed. The coefficient of sliding friction between the sled and the snow is $0.15$, and air resistance is ignored. How large is the angle of inclination of the slope?",
       "answer": 8.530766,
       "unit": "°",
       "tolerance": 0.02,
@@ -109,7 +109,7 @@
     {
       "id": "fy4-16-L1-08",
       "level": 1,
-      "text": "A student calculates the kinetic friction force on a sled on a straight slope. The mass of the sled with the child is $20.0\\,\\text{kg}$, the angle of inclination of the slope is $30.0\\,{}^\\circ$ and the coefficient of kinetic friction is $0.200$. The sled slides down the slope.\n\nThe student's solution: “The normal force is equal to the weight, $N = mg$, so the friction force is $F_\\mu = \\mu mg = 0.200 \\cdot 20.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 = 39.2\\,\\text{N}$.”\n\nDraw the free-body diagram of the sled and find the error in the student's solution. How large is the kinetic friction force really? The answer box takes the correct kinetic friction force.",
+      "text": "A student calculates the sliding friction force on a sled on a straight slope. The mass of the sled with the child is $20.0\\,\\text{kg}$, the angle of inclination of the slope is $30.0\\,{}^\\circ$ and the coefficient of sliding friction is $0.200$. The sled slides down the slope.\n\nThe student's solution: “The normal force is equal to the weight, $N = mg$, so the friction force is $F_\\mu = \\mu mg = 0.200 \\cdot 20.0\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 = 39.2\\,\\text{N}$.”\n\nDraw the free-body diagram of the sled and find the error in the student's solution. How large is the sliding friction force really? The answer box takes the correct sliding friction force.",
       "kind": [
         "error"
       ],
@@ -133,7 +133,7 @@
       "id": "fy4-16-L2-02",
       "level": 2,
       "core": true,
-      "text": "A sled starts from rest at the top of a straight slope. The slope is $18.0\\,\\text{m}$ long and at an angle of $12.0^\\circ$ to the horizontal, and at the foot of the slope the speed of the sled is $5.10\\,\\text{m/s}$. Air resistance is ignored. How large is the coefficient of kinetic friction between the sled and the snow?",
+      "text": "A sled starts from rest at the top of a straight slope. The slope is $18.0\\,\\text{m}$ long and at an angle of $12.0^\\circ$ to the horizontal, and at the foot of the slope the speed of the sled is $5.10\\,\\text{m/s}$. Air resistance is ignored. How large is the coefficient of sliding friction between the sled and the snow?",
       "answer": 0.137262,
       "unit": "",
       "tolerance": 0.02,
@@ -210,7 +210,7 @@
     {
       "id": "fy4-16-L2-06",
       "level": 2,
-      "text": "A sled slides on horizontal snow without being pushed. The position $x$ of the sled was measured from a video at one-second intervals from the moment it passes a marked point. The table is example data, and air resistance is ignored.\n\nIn uniformly decelerating motion the average speed over a time interval is equal to the speed in the middle of the interval. Calculate the average speed of the sled during the first and the last second, deduce the deceleration of the sled from them and calculate the coefficient of kinetic friction between the sled and the snow.",
+      "text": "A sled slides on horizontal snow without being pushed. The position $x$ of the sled was measured from a video at one-second intervals from the moment it passes a marked point. The table is example data, and air resistance is ignored.\n\nIn uniformly decelerating motion the average speed over a time interval is equal to the speed in the middle of the interval. Calculate the average speed of the sled during the first and the last second, deduce the deceleration of the sled from them and calculate the coefficient of sliding friction between the sled and the snow.",
       "kind": [
         "data",
         "graph"
@@ -256,7 +256,7 @@
     {
       "id": "fy4-16-L2-07",
       "level": 2,
-      "text": "A student determines the coefficient of kinetic friction between a wooden box and a board. She sets the board at an incline, gives the box a push and adjusts the incline until the pushed box keeps sliding at a steady speed. Then she measures the angle of inclination of the board. She repeats the measurement five times. The table is example data.\n\na) Calculate the mean of the angles $\\alpha_{\\text{mean}}$ and use it to calculate the coefficient of kinetic friction.\n\nb) Estimate the range of the coefficient of kinetic friction by calculating the coefficient from the smallest and the largest angle. How large is the variation of the coefficient around the mean?\n\nThe answer box takes the result of part a).",
+      "text": "A student determines the coefficient of sliding friction between a wooden box and a board. She sets the board at an incline, gives the box a push and adjusts the incline until the pushed box keeps sliding at a steady speed. Then she measures the angle of inclination of the board. She repeats the measurement five times. The table is example data.\n\na) Calculate the mean of the angles $\\alpha_{\\text{mean}}$ and use it to calculate the coefficient of sliding friction.\n\nb) Estimate the range of the coefficient of sliding friction by calculating the coefficient from the smallest and the largest angle. How large is the variation of the coefficient around the mean?\n\nThe answer box takes the result of part a).",
       "kind": [
         "experiment",
         "data"
@@ -374,7 +374,7 @@
     {
       "id": "fy4-16-L3-01",
       "level": 3,
-      "text": "The top of a sledding hill is $4.50\\,\\text{m}$ higher than the flat snow field that begins at the foot of the hill. The slope of the hill consists of two straight parts: the upper one is at an angle of $25^\\circ$ and the lower one at $10^\\circ$ to the horizontal.\n\nThe sled starts from rest at the top, and the coefficient of kinetic friction is $0.120$ all the way. Air resistance and the increase of friction in the bends of the slope are ignored.\n\nHow far from the top, measured horizontally, does the sled stop?",
+      "text": "The top of a sledding hill is $4.50\\,\\text{m}$ higher than the flat snow field that begins at the foot of the hill. The slope of the hill consists of two straight parts: the upper one is at an angle of $25^\\circ$ and the lower one at $10^\\circ$ to the horizontal.\n\nThe sled starts from rest at the top, and the coefficient of sliding friction is $0.120$ all the way. Air resistance and the increase of friction in the bends of the slope are ignored.\n\nHow far from the top, measured horizontally, does the sled stop?",
       "answer": 37.5,
       "unit": "m",
       "tolerance": 0.02,

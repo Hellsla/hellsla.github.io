@@ -136,12 +136,12 @@
 ### Weight
 The **weight** $\overline{G}$ of an object is the force with which the Earth pulls the object. It always points straight down, also on a slope, and in a free-body diagram it is drawn from the center of the object. The magnitude of the weight is the product of the mass and the acceleration of free fall, $mg$. Mass describes the inertia of an object, that is how hard it is to change its state of motion, and it is the same everywhere. Weight, on the other hand, depends on the place: on the surface of the Moon $g = 1.62\,\text{m/s}^2$, so the weight of a $60\,\text{kg}$ person there is about $97\,\text{N}$, whereas on Earth it is about $590\,\text{N}$.
 
-### Static friction and kinetic friction
+### Static friction and sliding friction
 When two surfaces touch each other, they resist sliding relative to each other. This force parallel to the surface is **friction** $\overline{F}_\mu$. The surfaces are not perfectly smooth: tiny bumps catch on each other, and there are attractive forces between the particles of the surfaces. The harder the surfaces are pressed against each other, that is the greater the normal force $N$ is, the greater the friction can be.
 
-When a box on a floor is pulled only weakly, it does not move. Then **static friction** acts on it, equal to the pull and in the opposite direction, so the net force is zero. Static friction is therefore not constant but adapts to the situation. It does have an upper limit, though. When the pull exceeds it, the box starts to slide, and the friction changes into **kinetic friction**. Kinetic friction is usually smaller than the greatest static friction, and at ordinary speeds it is approximately constant.
+When a box on a floor is pulled only weakly, it does not move. Then **static friction** acts on it, equal to the pull and in the opposite direction, so the net force is zero. Static friction is therefore not constant but adapts to the situation. It does have an upper limit, though. When the pull exceeds it, the box starts to slide, and the friction changes into **sliding friction**. Sliding friction is usually smaller than the maximum (fully developed) static friction, and at ordinary speeds it is approximately constant.
 
-<svg data-fig="kitka" viewBox="0 0 600 360" role="img" aria-label="Graph to scale: on the horizontal axis the horizontal force F pulling the box in newtons from zero to 80, on the vertical axis the friction force of the floor in newtons from zero to 60. A normal force of 100 newtons presses the box against the floor. At first the friction force grows equal to the pull: a straight line rises from the origin to the point where the pull and the friction are 50 newtons. This is the greatest value of static friction, mu zero times N. There the box starts to move, and the friction force drops along a dashed line to 35 newtons, mu times N, and stays there as the pull grows." style="max-width:100%;font-size:24px">
+<svg data-fig="kitka" viewBox="0 0 600 360" role="img" aria-label="Graph to scale: on the horizontal axis the horizontal force F pulling the box in newtons from zero to 80, on the vertical axis the friction force of the floor in newtons from zero to 60. A normal force of 100 newtons presses the box against the floor. At first the friction force grows equal to the pull: a straight line rises from the origin to the point where the pull and the friction are 50 newtons. This is the maximum static friction, mu zero times N. There the box starts to move, and the friction force drops along a dashed line to 35 newtons, mu times N, and stays there as the pull grows." style="max-width:100%;font-size:24px">
   <line x1="193" y1="300" x2="193" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="294" y1="300" x2="294" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
   <line x1="395" y1="300" x2="395" y2="70" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -184,12 +184,12 @@ When a box on a floor is pulled only weakly, it does not move. Then **static fri
   <polyline points="344.5,166 496,166" fill="none" stroke="#1971c2" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
   <circle cx="344.5" cy="108.5" r="6.5" fill="#c92a2a" stroke="#ffffff" stroke-width="2"/>
   <foreignObject x="107" y="170.5" width="183" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\text{static friction}$</div></foreignObject>
-  <foreignObject x="370" y="124.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{kinetic friction}$</div></foreignObject>
+  <foreignObject x="370" y="124.5" width="195" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#1971c2">$\text{sliding friction}$</div></foreignObject>
   <foreignObject x="279.5" y="71" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$\mu_0 N$</div></foreignObject>
   <foreignObject x="419" y="174.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$\mu N$</div></foreignObject>
 </svg>
 
-In the graph the normal force of the floor is $100\,\text{N}$. Static friction grows with the pull up to $50\,\text{N}$, where the box starts to move. A sliding box is acted on by a kinetic friction of $35\,\text{N}$, even if the pull is increased. This is why a heavy cabinet is hardest to get moving, and once it is moving it goes more easily.
+In the graph the normal force of the floor is $100\,\text{N}$. Static friction grows with the pull up to $50\,\text{N}$, where the box starts to move. A sliding box is acted on by a sliding friction of $35\,\text{N}$, even if the pull is increased. This is why a heavy cabinet is hardest to get moving, and once it is moving it goes more easily.
 
 ### The inclined plane
 On an inclined plane, that is a slope, the weight still points straight down, but the surface is slanted. The normal force is perpendicular to the surface, and the friction is parallel to the surface. For calculation the weight is split into two **components**: the component along the slope tends to take the object down the slope, and the component perpendicular to the surface presses the object against the surface. The components are not new forces. They replace the weight in the calculation, and in a free-body diagram they are drawn as dashed lines.
@@ -242,7 +242,7 @@ On an inclined plane, that is a slope, the weight still points straight down, bu
   <foreignObject x="440" y="208" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\alpha$</div></foreignObject>
 </svg>
 
-The steeper the slope, the greater the component along the slope and the smaller the perpendicular component. When only the weight and the normal force act perpendicular to the surface and the object does not accelerate in that direction, the normal force decreases together with the perpendicular component, and with it the upper limit of static friction. This is why a box starts to slide on a steep slope: the component pulling it down the slope grows greater than the greatest static friction that the surface can exert.
+The steeper the slope, the greater the component along the slope and the smaller the perpendicular component. When only the weight and the normal force act perpendicular to the surface and the object does not accelerate in that direction, the normal force decreases together with the perpendicular component, and with it the upper limit of static friction. This is why a box starts to slide on a steep slope: the component pulling it down the slope grows greater than the maximum static friction that the surface can exert.
 
 ### Friction does not always oppose motion
 Friction opposes the sliding of surfaces **relative to each other**, not necessarily the motion of the object. When a pickup truck starts to move with an acceleration, a box on its bed accelerates along with it. When air drag is ignored, the only horizontal force on the box is the friction of the bed, so it must point forward, in the direction of motion: the bed tends to slide forward from under the box, and static friction prevents this. Likewise, when we walk, the foot pushes the ground backward, and the static friction of the ground pushes the foot forward. On mirror-smooth ice, where there is very little friction, getting started is therefore difficult.
@@ -305,15 +305,15 @@ weight of a body at the Earth's surface :: G = mg
 ```
 where $G$ is the weight (N), $m$ the mass (kg) and $g$ the acceleration of free fall, $9.81\,\text{m/s}^2$ on the surface of the Earth.
 
-Kinetic friction is proportional to the normal force:
+Sliding friction is proportional to the normal force:
 ```kaavat
-kinetic friction :: F_\mu = \mu N
+sliding friction :: F_\mu = \mu N
 ```
-where $F_\mu$ is the magnitude of the kinetic friction (N), $\mu$ the **coefficient of kinetic friction** (no unit) and $N$ the magnitude of the normal force (N). Static friction is at most the product of the normal force and the **coefficient of static friction** $\mu_0$:
+where $F_\mu$ is the magnitude of the sliding friction (N), $\mu$ the **coefficient of sliding friction** (no unit) and $N$ the magnitude of the normal force (N). Static friction is at most the product of the normal force and the **coefficient of static friction** $\mu_0$:
 ```latex
 F_{\mu 0} \le \mu_0 N
 ```
-where $F_{\mu 0}$ is the magnitude of the static friction (N). The static friction is at its greatest just before the object starts to slide. This fully developed static friction is the **limiting static friction**:
+where $F_{\mu 0}$ is the magnitude of the static friction (N). The static friction is at its greatest just before the object starts to slide. This greatest value is the **maximum (fully developed) static friction**, also called the limiting static friction:
 ```kaavat
 limiting static friction :: F_{\mu 0} = \mu_0 N
 ```
@@ -383,10 +383,10 @@ If only the weight and the normal force act perpendicular to the surface and the
 ### Determining the coefficient of friction
 In the diagrams and in the simulation, the static friction acting on an object at rest is denoted $\overline{F}_\mu$; its magnitude is $F_{\mu 0} \le \mu_0 N$, and while sliding $F_\mu = \mu N$.
 
-The coefficient of static friction is obtained from an experiment in which a board is tilted slowly until the object starts to slide. At this limiting angle $\alpha_0$ the static friction is at its greatest, so $\mu_0 = \tan\alpha_0$. The coefficient of kinetic friction is obtained for example by pulling the object on a horizontal table with a spring balance, horizontally and at a constant velocity. Then the pull equals the kinetic friction and the normal force equals the weight, so $\mu = F : mg$. When the measurement is repeated with different masses, the coefficient of friction is the slope of the straight line through the origin fitted to the $(N, F_\mu)$ graph.
+The coefficient of static friction is obtained from an experiment in which a board is tilted slowly until the object starts to slide. At this limiting angle $\alpha_0$ the static friction is at its greatest, so $\mu_0 = \tan\alpha_0$. The coefficient of sliding friction is obtained for example by pulling the object on a horizontal table with a spring balance, horizontally and at a constant velocity. Then the pull equals the sliding friction and the normal force equals the weight, so $\mu = F : mg$. When the measurement is repeated with different masses, the coefficient of friction is the slope of the straight line through the origin fitted to the $(N, F_\mu)$ graph.
 
 ## Worked example
-A moving box of mass $18\,\text{kg}$ slides down a loading ramp. The ramp is at an angle of $25^\circ$ to the horizontal, and the coefficient of kinetic friction between the box and the ramp is $0.30$. How large is the acceleration of the box, and how large is the friction force? Air drag is ignored.
+A moving box of mass $18\,\text{kg}$ slides down a loading ramp. The ramp is at an angle of $25^\circ$ to the horizontal, and the coefficient of sliding friction between the box and the ramp is $0.30$. How large is the acceleration of the box, and how large is the friction force? Air drag is ignored.
 
 <!-- vaihe -->
 
@@ -394,13 +394,13 @@ A moving box of mass $18\,\text{kg}$ slides down a loading ramp. The ramp is at 
 
 <!-- vaihe -->
 
-**Principle.** The box is chosen as the object. The Earth (weight) and the ramp (normal force and kinetic friction) act on it. The box slides down, so the kinetic friction points up the slope. Newton's second law is written along the slope, where the box accelerates, and perpendicular to the surface, where it does not accelerate: $a_y = 0$.
+**Principle.** The box is chosen as the object. The Earth (weight) and the ramp (normal force and sliding friction) act on it. The box slides down, so the sliding friction points up the slope. Newton's second law is written along the slope, where the box accelerates, and perpendicular to the surface, where it does not accelerate: $a_y = 0$.
 
 <!-- vaihe -->
 
 **Free-body diagram.** The box is drawn as a rectangle along the slope, and the forces start from their points of application. The axes are chosen so that $x$ points down the slope, that is in the direction of the acceleration, and $y$ perpendicular to the surface, outward. The weight is split into the components $G_x = mg\sin\alpha$ and $G_y = mg\cos\alpha$, drawn with a dashed line.
 
-<svg data-fig="esimerkki" viewBox="0 0 600 420" role="img" aria-label="Free-body diagram of a box, the box as a rectangle tilted along a 25 degree slope. The weight G from the center straight down. The normal force N from the lower surface perpendicular to the surface, outward. The kinetic friction from the upper corner of the lower surface up the slope, because the box slides down. The components of the weight dashed from the center: G x down the slope and G y perpendicular to the surface, toward it. G x is longer than the friction force. Separately a thin orange acceleration arrow a down the slope. In the corner the axes: x down the slope and y perpendicular to the surface, outward." style="max-width:100%;font-size:24px">
+<svg data-fig="esimerkki" viewBox="0 0 600 420" role="img" aria-label="Free-body diagram of a box, the box as a rectangle tilted along a 25 degree slope. The weight G from the center straight down. The normal force N from the lower surface perpendicular to the surface, outward. The sliding friction from the upper corner of the lower surface up the slope, because the box slides down. The components of the weight dashed from the center: G x down the slope and G y perpendicular to the surface, toward it. G x is longer than the friction force. Separately a thin orange acceleration arrow a down the slope. In the corner the axes: x down the slope and y perpendicular to the surface, outward." style="max-width:100%;font-size:24px">
   <rect x="235" y="132" width="130" height="76" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5" transform="rotate(-25 300 170)"/>
   <line x1="300" y1="170" x2="300" y2="321" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M300,338 L292,320 L308,320 Z" fill="#c92a2a" stroke-linejoin="round"/>
@@ -476,6 +476,6 @@ Many people think that the friction force is always $\mu_0 N$ or $\mu N$ and alw
 ## Summary
 - The magnitude of the weight is $G = mg$, and the weight always points straight down. Mass is the same everywhere, but weight depends on the acceleration of free fall.
 - Friction is parallel to the surface and opposes the sliding of surfaces relative to each other, not always the motion of the object.
-- Static friction adapts to the situation: $F_{\mu 0} \le \mu_0 N$. A sliding object is acted on by kinetic friction $F_\mu = \mu N$, and usually $\mu < \mu_0$.
+- Static friction adapts to the situation: $F_{\mu 0} \le \mu_0 N$. A sliding object is acted on by sliding friction $F_\mu = \mu N$, and usually $\mu < \mu_0$.
 - On a slope the weight is split into the components $G_x = mg\sin\alpha$ and $G_y = mg\cos\alpha$, and the normal force is $N = mg\cos\alpha$, when only the weight and the normal force act perpendicular to the surface and the object does not accelerate in that direction. The components are drawn as dashed lines, and they are not new forces.
 - The coefficient of static friction is obtained from the limiting angle at which the object starts to slide: $\mu_0 = \tan\alpha_0$.

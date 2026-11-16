@@ -374,21 +374,21 @@
       "prompt": "Erään LED-lampun hyötysuhde on $35\\,\\%$. Niin suuri osa lampun ottamasta sähköenergiasta muuttuu valoksi. Mitä tapahtuu lopulle energialle?",
       "choices": [
         {
-          "text": "Se muuttuu lämmöksi lampussa ja ympäristössä. Energiaa ei katoa.",
+          "text": "Se muuttuu lampun ja ympäristön sisäenergiaksi. Energiaa ei katoa.",
           "correct": true,
           "feedback": "Oikein. Energia säilyy aina. Hyötysuhde kertoo vain, kuinka suuri osa energiasta muuttuu haluttuun muotoon. Loput energiasta lämmittää lamppua ja huonetta. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
         },
         {
           "text": "Se häviää kokonaan, koska hyötysuhde on alle $100\\,\\%$ eikä energiaa jää.",
-          "feedback": "Energia ei häviä missään laitteessa. Kun hyötysuhde on alle sata prosenttia, osa energiasta muuttuu muuhun kuin hyötymuotoon. Tässä se muuttuu lämmöksi. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+          "feedback": "Energia ei häviä missään laitteessa. Kun hyötysuhde on alle sata prosenttia, osa energiasta muuttuu muuhun kuin hyötymuotoon. Tässä se muuttuu sisäenergiaksi. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
         },
         {
           "text": "Se varastoituu lampun sisään ja vapautuu, kun lamppu sammutetaan.",
-          "feedback": "Lampussa ei ole energiavarastoa. Energia, joka ei muutu valoksi, muuttuu heti lämmöksi lampussa ja ympäristössä. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+          "feedback": "Lampussa ei ole energiavarastoa. Energia, joka ei muutu valoksi, muuttuu heti lampun ja ympäristön sisäenergiaksi. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
         },
         {
           "text": "Se palaa johtoja pitkin takaisin sähköverkkoon käyttämättömänä.",
-          "feedback": "Lamppu ei syötä energiaa verkkoon. Lampun ottama sähköenergia muuttuu valoksi ja lämmöksi. Valon ja lämmön summa on yhtä suuri kuin otettu energia. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+          "feedback": "Lamppu ei syötä energiaa verkkoon. Lampun ottama sähköenergia muuttuu valoksi ja sisäenergiaksi. Niiden summa on yhtä suuri kuin otettu energia. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
         }
       ]
     },

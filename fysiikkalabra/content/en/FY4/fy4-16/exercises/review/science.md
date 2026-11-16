@@ -1,13 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: b51853db61eb872f
+CONTENT-HASH: ce62540bde4a3a8a
 
 ## Blocking
 None.
 
 ## Polish
-1. solutions.md L3-04 Periaate: "pulkka pysähtyy aidan viereen" (en "next to the fence") contradicts the task: at the maximum length it stops 5,0 m before the fence (20,0 m from the foot). Write "pysähtyy 5,0 m ennen aitaa".
+1. solutions.md:68 (L1-04 Reasonableness) — "$6\,\text{s} : 0.8$" should be "$6\,\text{m/s} : 0.8\,\text{m/s}^2$" (wrong unit on the speed).
+2. solutions.md:310 (L3-04 Principle) — "the sled stops next to the fence exactly at the maximum allowed length" contradicts the task: it stops 5.0 m before the fence (20.0 m from the foot). Write "stops exactly 5.0 m before the fence". This was already noted in the previous review.
 
 ## Checked
-- Every answer recomputed from the task text (own script): L1-01…L1-08, L2-01…L2-09, L3-01…L3-05 agree with exercises.json and answers.py (e.g. L1-08 33,98 N, L2-05 633 N, L2-06 0,0805, L2-07 0,321 and 0,306–0,335, L3-04 16,33 m and 7,67 m/s, L3-05 h = 55,6 m, 2,205 kN, 851 N).
-- Added exercises: models and conditions stated (tan α = μ only for steady sliding after a push; trapezoid distance; constant mean drag), L2-08 uncertainty reasoning (2Δx, overlap does not prove equality, extrapolation) follows the guardrails; exactly one correct option, distractor feedback right.
-- E_k0/E_k in L3-03 and L3-05 use the new index rule correctly; no leftover old symbol; fi, fi-easy and en answers, tolerances and keys identical.
+- One script recomputed all 19 numeric answers from the task text with its own formulas, and they agree with exercises.json and answers.py (for example L2-03 220.5 kJ, L3-02 2.287 m/s, L3-04 16.33 m and 7.67 m/s, L3-05 h = 55.625 m and 2.205 kN, c) 851 N).
+- ex-hissi (figures.py) is consistent: 650 N for 1.0–3.0 s, then 800 N for 6.0–8.67 s, stops the lift exactly. The 0.2 s ramps are centred on the phase limits, so Δt = 2.0 s holds.
+- L3-01: the sled reaches the flat at any split of the 4.5 m height (slope horizontal 9.6–25.5 m < 37.5 m), and both parts have tan α > 0.120.
+- The data sets fit their models: L2-06 has nearly constant deceleration and the sled stops after 5.0 s; L2-08 has h/x ≈ 0.10 in every row; L2-05 has a ≈ 0.40 m/s².
+- L2-08 follows the guardrails: 2Δx overlap, "cannot be shown" is not "equal", and the extrapolation is flagged. L2-07 calls the half-range a scatter estimate, not the uncertainty of the mean.
+- L1-06 and L1-07 each have exactly one correct option, and the distractor feedback is right.
+- The rounding is right: L3-04 is an "at most" value, 16.33 m rounded down to 16 m; L2-06 has two significant figures, limited by 0.46 m.
+- The force diagrams are right: the drag is drawn longer than the weight while slowing, the friction points up the slope or backwards, N = mg cos α, and velocity is not drawn as a force.

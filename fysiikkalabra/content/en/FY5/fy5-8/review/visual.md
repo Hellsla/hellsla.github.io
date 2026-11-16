@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 49bbf47b7fc46ab1
+CONTENT-HASH: 30456eba01b5ee26
 
 ## Blocking
 - none
@@ -8,7 +8,10 @@ CONTENT-HASH: 49bbf47b7fc46ab1
 - none
 
 ## Checked
-- delta (sim.js graph axis name only): opened fy5-8-sim-390.png and fy5-8-sim-1280.png. At 390 px the "x (m)" axis name now stands above the axis end, fully inside the canvas, unclipped, not touching the arrow or gridlines, same size and ink colour as the F_v (N) title. At 1280 px it stays after the arrow tip as before. Rest of the sim layout (picture, readout, controls) unchanged.
+- delta: "kinetic friction" became "sliding friction" in the box task's prompt, rubric and model answer (inquiry.json) and in the alt text of the model figure fy5-8/malli-laatikko. The drawing code itself is unchanged, only its Finnish alt text (liikekitka became liukukitka) and the English translation of it. The English text reads correctly and matches the glossary term.
+- No remaining "kinetic friction" in the English lesson text or inquiry.
+- Opened contact-5.png (layout around the lesson page intact) and fy5-8-fig-23-390.png (neighbouring free-body figure, same style).
+- The model figure's own capture is not in the shot set (it only appears after the "I have drawn" tick); its geometry was not touched, so only the source and alt text were checked.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -23,7 +23,7 @@
 ### c)
 **Given:** $\Delta E_\text{p} = 36\,198.9\,\text{J}$, resistive force $F_\text{r} = 18\,\text{N}$, length of the road $s = 1.20\,\text{km}$, $t = 270\,\text{s}$; speed constant
 **Find:** the average mechanical power $P$ of the cyclist
-**Principle:** By the work–energy principle the work $W$ the muscles do on the pedals covers the increase in potential energy and the energy the resistive forces turn into heat. The kinetic energy does not change, because the speed stays the same. The resistive forces act along the whole road, so their work is calculated with the length of the road, not the height.
+**Principle:** By the work–energy principle the work $W$ the muscles do on the pedals covers the increase in potential energy and the energy the resistive forces turn into internal energy. The kinetic energy does not change, because the speed stays the same. The resistive forces act along the whole road, so their work is calculated with the length of the road, not the height.
 **Formula:** $W = \Delta E_\text{p} + F_\text{r} s$ and $P = \dfrac{W}{t}$, so $P = \dfrac{\Delta E_\text{p} + F_\text{r} s}{t}$
 **Conversions:** $s = 1.20\,\text{km} = 1.20 \cdot 1000\,\text{m} = 1200\,\text{m}$
 **Substitution:** $F_\text{r} s = 18\,\text{N} \cdot 1200\,\text{m} = 21\,600\,\text{J}$ and $P = \dfrac{36\,198.9\,\text{J} + 21\,600\,\text{J}}{270\,\text{s}} = \dfrac{57\,798.9\,\text{J}}{270\,\text{s}} = 214.07\,\text{W}$
@@ -33,7 +33,7 @@
 ### d)
 **Given:** mechanical work $W = 57\,798.9\,\text{J}$ (part c), efficiency of the muscles $\eta = 22\,\% = 0.22$
 **Find:** the energy $E$ used from food in kilojoules
-**Principle:** Efficiency is the useful energy divided by the energy used. The useful part is the work done on the pedals, and the energy used comes from food. The rest becomes heat in the muscles.
+**Principle:** Efficiency is the useful energy divided by the energy used. The useful part is the work done on the pedals, and the energy used comes from food. The rest becomes internal energy in the muscles.
 **Formula:** $\eta = \dfrac{W}{E}$, so $E = \dfrac{W}{\eta}$
 **Conversions:** $22\,\% = 0.22$ and finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $E = \dfrac{57\,798.9\,\text{J}}{0.22} = 262\,722\,\text{J} = 262.7\,\text{kJ}$

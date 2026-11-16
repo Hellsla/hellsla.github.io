@@ -84,7 +84,7 @@ def wax_fbd():
     G = m * g; N = G * math.cos(th); Fmu = mu * N; a = g * (math.sin(th) - mu * math.cos(th))
     f = Fig("fy4-s1-fbd", 400, "Kaksi kuvaa. Vasemmalla tilannekuva: hiihtäjä liukuu suorana seisten lumista rinnettä alas oikealle, ja "
             "sininen nopeusnuoli v osoittaa rinnettä alas. Oikealla hiihtäjän voimakuvio, hiihtäjä suorakulmiona rinteen suuntaisesti "
-            "kallistettuna: paino G keskipisteestä suoraan alas, tukivoima N alapinnasta kohtisuoraan rinteestä ulospäin ja liikekitka "
+            "kallistettuna: paino G keskipisteestä suoraan alas, tukivoima N alapinnasta kohtisuoraan rinteestä ulospäin ja liukukitka "
             "alapinnan ylemmästä kulmasta rinnettä ylös. Painon komponentit katkoviivoin keskipisteestä: G x rinnettä alas ja G y "
             "kohtisuoraan rinnettä kohti; G y on yhtä pitkä kuin tukivoima ja G x pidempi kuin kitka. Erillään oranssi kiihtyvyysnuoli a "
             "rinnettä alas. Akselit: x rinnettä alas ja y kohtisuoraan rinteestä ulos. Rinne on piirretty jyrkemmäksi ja kitka "

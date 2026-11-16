@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 5e55697cffa15f1e
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (22507547242a4988).
+CONTENT-HASH: 12315fb70075c238
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- Round-1 Polish items stand as written there (C, not blocking).
+- A: s5 b model answer, changed sentence: "liike-energiasta katosi kokeessa 2 noin puolet" could read "liike-energiasta muuttui muihin muotoihin noin puolet", since the same answer argues that nothing disappears.
 
 ## Checked
-- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
-- The chart, its aria-label and every other file are unchanged since round 1; the round-1 Checked list holds.
-- Hash taken at the start and the end (5e55697cffa15f1e).
+- solutions.md s5 b, its rubric criterion in tasks.json and unit.md Yleisiä virheitä: kinetic energy becomes internal energy and sound, momentum is not a form of energy; the unit.md sentence now names kinetic energy and agrees with the neighbouring friction bullet. The rubric criterion matches the model answer.
+- No task was added to this unit (item 19 touches other units); `python scripts/practice.py check units/fy9-sailymislait` OK; hash the same at start and end.

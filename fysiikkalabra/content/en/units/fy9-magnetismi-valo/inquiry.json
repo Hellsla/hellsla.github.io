@@ -19,7 +19,7 @@
       "stage": "herata",
       "type": "hook",
       "text": "The ten cottages of an island village get their electricity from the mainland through a submarine cable $1.0\\,\\text{km}$ long. The total resistance of the cable's conductors is $0.50\\,\\Omega$, and at most $40\\,\\text{kW}$ of power is transmitted along the cable from the mainland. In the cottages the voltage is $230\\,\\text{V}$, but the transmission voltage in the cable is $20\\,\\text{kV}$. In the exam a situation like this can be the start of a problem: the numbers are given, but the formula is not.",
-      "question": "How large a current would flow in the cable at each voltage, and what fraction of the power would turn into heat in the cable?"
+      "question": "How large a current would flow in the cable at each voltage, and what fraction of the power would be converted into internal energy of the cable?"
     },
     {
       "id": "lt-1",

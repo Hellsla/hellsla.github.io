@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 0cd5728b8658d7b0
+CONTENT-HASH: 54d3c9decc5534cb
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-- none
+- (none)
 
 ## Polish
-- none
+- (none)
 
 ## Checked
-batch delta review 5d round 2: reflow-1.png reflow-2.png  (360 px, everything open); lifted formulas fully visible, relations aligned, no bracket, quote or case ending left around a lifted formula, no lone punctuation, operators stay with their terms.
+- Hunk: solutions.md, Common mistakes of the hearing-protection task ("the intensity is calculated as inversely proportional to the distance"): now consistent with the $3\,\text{dB}$ per doubling it describes; reads well.
+- Capture opened: `fy9-aallot-stage-exercises-390-31` (the list item wraps cleanly, units rendered in KaTeX, nothing clipped).

@@ -19,7 +19,7 @@
       "stage": "herata",
       "type": "hook",
       "text": "Saaristokylässä on kymmenen mökkiä. Ne saavat sähkönsä mantereelta merikaapelia pitkin. Kaapelin pituus on $1{,}0\\,\\text{km}$. Kaapelin johtimien yhteinen resistanssi on $0{,}50\\,\\Omega$. Kaapelia pitkin siirretään mantereelta enintään $40\\,\\text{kW}$:n teho. Mökeissä jännite on $230\\,\\text{V}$, mutta kaapelissa siirtojännite on $20\\,\\text{kV}$. Kokeessa tällainen tilanne voi olla tehtävän alku: luvut on annettu, mutta kaavaa ei ole annettu.",
-      "question": "Kuinka suuri virta kaapelissa kulkisi kummallakin jännitteellä? Kuinka suuri osa tehosta muuttuisi kaapelissa lämmöksi?"
+      "question": "Kuinka suuri virta kaapelissa kulkisi kummallakin jännitteellä? Kuinka suuri osa tehosta muuttuisi kaapelin sisäenergiaksi?"
     },
     {
       "id": "lt-1",
@@ -205,7 +205,7 @@
       "stage": "sovella",
       "type": "choice",
       "title": "Etsi virhe: voimajohdon häviö",
-      "prompt": "Voimalaitos siirtää tehon $50\\,\\text{MW}$ voimajohtoa pitkin. Jännite on $110\\,\\text{kV}$. Johtimien resistanssi on yhteensä $4{,}0\\,\\Omega$. Opiskelija laski häviötehon eli tehon, joka muuttuu johdossa lämmöksi: ”$P_\\text{h} = \\tfrac{U^2}{R} = \\tfrac{(110\\,000\\,\\text{V})^2}{4{,}0\\,\\Omega} = 3{,}0\\,\\text{GW}$.” Mikä ratkaisussa on väärin?",
+      "prompt": "Voimalaitos siirtää tehon $50\\,\\text{MW}$ voimajohtoa pitkin. Jännite on $110\\,\\text{kV}$. Johtimien resistanssi on yhteensä $4{,}0\\,\\Omega$. Opiskelija laski häviötehon eli tehon, joka muuttuu johdon sisäenergiaksi: ”$P_\\text{h} = \\tfrac{U^2}{R} = \\tfrac{(110\\,000\\,\\text{V})^2}{4{,}0\\,\\Omega} = 3{,}0\\,\\text{GW}$.” Mikä ratkaisussa on väärin?",
       "choices": [
         {
           "text": "Jännite olisi pitänyt ensin muuttaa huippuarvoksi kertomalla se luvulla $\\sqrt{2}$.",

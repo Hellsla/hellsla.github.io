@@ -47,7 +47,7 @@ T &= 280\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\
 \end{aligned}
 $$
 **Vastaus:** $T \approx 1{,}3\,\text{kN}$. Tuloksessa on kaksi merkitsevää numeroa, kuten kulmassa $14^\circ$ ja kitkakertoimessa $0{,}25$.
-**Järkevyys:** Painon luiskan suuntainen komponentti on $665\,\text{N}$, ja kitka on $666\,\text{N}$. Vinssi siis tekee työtä kitkaa vastaan melkein yhtä paljon kuin se nostaa venettä. Veto on noin puolet painosta $2{,}7\,\text{kN}$. Luiska keventää työtä, mutta kitka vie siitä paljon.
+**Järkevyys:** Painon luiskan suuntainen komponentti on $665\,\text{N}$, ja kitka on $666\,\text{N}$. Vinssi siis tekee työtä kitkaa vastaan melkein yhtä paljon kuin se nostaa venettä. Veto on noin puolet painosta $2{,}7\,\text{kN}$. Luiska pienentää tarvittavaa voimaa, ei työtä. Kitka vie tästä hyödystä kuitenkin paljon.
 
 ### c)
 **Annettu:** $m = 280\,\text{kg}$, $\alpha = 14^\circ$, lepokitkakerroin $\mu_0 = 0{,}35$, $g = 9{,}81\,\text{m/s}^2$
@@ -349,7 +349,7 @@ $$, ja jäällä $0{,}1 \cdot 9{,}81\,\text{m/s}^2 \approx 1\,\text{m/s}^2$, kun
 ### a)
 **Annettu:** rajakulmat $22^\circ$, $24^\circ$, $21^\circ$, $23^\circ$ ja $33^\circ$; mittauksessa 5 kirjaa nostettiin nykäisten
 **Kysytty:** lepokitkakerroin $\mu_0$ ja sen epävarmuus
-**Periaate:** Rajakulmalla painon kannen suuntainen komponentti on yhtä suuri kuin lepokitkan suurin arvo. Tukivoima on painon kohtisuora komponentti (luku *Paino, kitka ja kalteva taso*). Mittaus 5 jätetään pois, koska raporttiin on kirjattu karkea virhe eli selvä virhe mittauksen tekemisessä. Nopea nosto painaa kantta hetken puhelinta vasten. Silloin tukivoima ja lepokitkan yläraja kasvavat hetkeksi. Lisäksi kulma luetaan liian myöhään. Siksi $33^\circ$ ei ole liukumisen raja. Tulosta ei poistettaisi pelkästään siksi, että se poikkeaa muista.
+**Periaate:** Rajakulmalla painon kannen suuntainen komponentti on yhtä suuri kuin lähtökitka eli täysin kehittynyt lepokitka. Tukivoima on painon kohtisuora komponentti (luku *Paino, kitka ja kalteva taso*). Mittaus 5 jätetään pois, koska raporttiin on kirjattu karkea virhe eli selvä virhe mittauksen tekemisessä. Nopea nosto painaa kantta hetken puhelinta vasten. Silloin tukivoima ja lepokitkan yläraja kasvavat hetkeksi. Lisäksi kulma luetaan liian myöhään. Siksi $33^\circ$ ei ole liukumisen raja. Tulosta ei poistettaisi pelkästään siksi, että se poikkeaa muista.
 **Kaava:** $mg\sin\alpha_0 = \mu_0 mg\cos\alpha_0$, joten $\mu_0 = \tan\alpha_0$. Rajakulmana käytetään hyväksyttyjen mittausten keskiarvoa $\alpha_\text{ka} = \dfrac{\alpha_1 + \alpha_2 + \alpha_3 + \alpha_4}{4}$, joten $\mu_0 = \tan\alpha_\text{ka}$. Epävarmuus on puolet vaihteluvälistä: $\Delta\mu_0 = \dfrac{\tan\alpha_\text{max} - \tan\alpha_\text{min}}{2}$.
 **Muunnokset:** Ei tarvita. Kulmat ovat asteina, eikä kertoimella ole yksikköä.
 **Sijoitus:** $\alpha_\text{ka} = \dfrac{22^\circ + 24^\circ + 21^\circ + 23^\circ}{4} = 22{,}5^\circ$ ja $\mu_0 = \tan 22{,}5^\circ = 0{,}414$. Hajonnan rajat: $\tan 21^\circ = 0{,}384$ ja $\tan 24^\circ = 0{,}445$
