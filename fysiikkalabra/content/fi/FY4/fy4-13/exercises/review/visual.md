@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7c5b2c273c5f7baf
-SCOPE: delta added-exercise from 6f0e928ad88d259e base 81db4a6fd727
+CONTENT-HASH: adc73b516d98d8e9
 
 ## Blocking
 None.
@@ -9,8 +8,4 @@ None.
 None.
 
 ## Checked
-- Diff read: one answer line rounded to 1,2 kg, no layout change. No capture opened for it.
-- Round 2 value consistent with the stated two significant figures.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-19, fi-390-20 and fi-1280-15; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

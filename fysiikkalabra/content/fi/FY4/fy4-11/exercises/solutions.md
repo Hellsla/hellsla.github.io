@@ -141,7 +141,7 @@ v_0 &= \frac{1250\,\text{kg}\cdot\text{m/s}}{75{,}0\,\text{kg}} \\
 \end{aligned}
 ```
 **Vastaus:** $60\,\text{km/h}$, kaksi merkitsevää numeroa, koska suoran kulmakerroin luetaan kuvaajasta likimääräisesti.
-**Järkevyys:** Tulo $F_\text{ka}\,\Delta t$ on jokaisessa mittauksessa lähes sama: $24{,}8\,\text{kN} \cdot 0{,}050\,\text{s} = 1{,}24\,\text{kN}\cdot\text{s}$ ja $6{,}3\,\text{kN} \cdot 0{,}200\,\text{s} = 1{,}26\,\text{kN}\cdot\text{s}$, kuten pitääkin, kun liikemäärän muutos on vakio. Pisin pysähtymisaika antaa pienimmän voiman, joten aineisto näyttää vyön joustavuuden vaikutuksen.
+**Järkevyys:** Tulo $F_\text{ka}\,\Delta t$ on jokaisessa mittauksessa lähes sama: $$\begin{aligned} &24{,}8\,\text{kN} \cdot 0{,}050\,\text{s} \\ &= 1{,}24\,\text{kN}\cdot\text{s} \end{aligned}$$ ja $$\begin{aligned} &6{,}3\,\text{kN} \cdot 0{,}200\,\text{s} \\ &= 1{,}26\,\text{kN}\cdot\text{s} \end{aligned}$$, kuten pitääkin, kun liikemäärän muutos on vakio. Pisin pysähtymisaika antaa pienimmän voiman, joten aineisto näyttää vyön joustavuuden vaikutuksen.
 
 ## fy4-11-L2-07
 **Annettu:** jarrutusmatka nopeudesta $50\,\text{km/h}$ on $12{,}0\,\text{m}$, kysytään jarrutusmatka nopeudesta $90\,\text{km/h}$; hidastuvuus vakio ja sama molemmissa
@@ -181,7 +181,7 @@ Järkevyys: esimerkiksi $75\,\text{kg}$:n nukelle kokeessa A $\Delta v = 25 : 3{
 **Periaate:** Ensin lasketaan etäisyys $d$ pysähtymismatkan kaavasta. Nopeudella $40\,\text{km/h}$ auto kulkee reaktiomatkan tasaisella nopeudella ja jarruttaa loput matkasta. Jos nopeus lapsen kohdalla on $v$, pysähtyminen vaatisi vielä matkan $\tfrac{v^2}{2a}$, joten koko jarrutusmatka on lapseen asti jarrutettu matka plus tämä.
 **Kaava:** $d = u\,t_\text{r} + \dfrac{u^2}{2a}$, jossa $u = 30\,\text{km/h}$, ja $\dfrac{v_0^2}{2a} = (d - v_0\,t_\text{r}) + \dfrac{v^2}{2a}$, joten $v = \sqrt{v_0^2 - 2a\,(d - v_0\,t_\text{r})}$
 **Muunnokset:** $u = 30\,\text{km/h} \approx 8{,}333\,\text{m/s}$ ja $v_0 = 40\,\text{km/h} \approx 11{,}11\,\text{m/s}$; vastaus kerrotaan lopuksi luvulla $3{,}6$.
-**Sijoitus:** $d = 8{,}333\,\text{m/s} \cdot 1{,}0\,\text{s} + \dfrac{(8{,}333\,\text{m/s})^2}{2 \cdot 9{,}0\,\text{m/s}^2} = 8{,}333\,\text{m} + 3{,}858\,\text{m} = 12{,}19\,\text{m}$; $d - v_0\,t_\text{r} = 12{,}19\,\text{m} - 11{,}11\,\text{m} = 1{,}080\,\text{m}$; $v^2 = (11{,}11\,\text{m/s})^2 - 2 \cdot 9{,}0\,\text{m/s}^2 \cdot 1{,}080\,\text{m} = 104{,}0\,\text{m}^2/\text{s}^2$, joten $v = \sqrt{104{,}0}\,\text{m/s} = 10{,}20\,\text{m/s} = 36{,}7\,\text{km/h}$
+**Sijoitus:** $$\begin{aligned} &d = 8{,}333\,\text{m/s} \cdot 1{,}0\,\text{s} \\ &+ \dfrac{(8{,}333\,\text{m/s})^2}{2 \cdot 9{,}0\,\text{m/s}^2} \\ &= 8{,}333\,\text{m} + 3{,}858\,\text{m} \\ &= 12{,}19\,\text{m} \end{aligned}$$; $d - v_0\,t_\text{r} = 12{,}19\,\text{m} - 11{,}11\,\text{m} = 1{,}080\,\text{m}$; $$\begin{aligned} &v^2 = (11{,}11\,\text{m/s})^2 \\ &- 2 \cdot 9{,}0\,\text{m/s}^2 \cdot 1{,}080\,\text{m} \\ &= 104{,}0\,\text{m}^2/\text{s}^2 \end{aligned}$$, joten $v = \sqrt{104{,}0}\,\text{m/s} = 10{,}20\,\text{m/s} = 36{,}7\,\text{km/h}$
 **Vastaus:** $37\,\text{km/h}$, kaksi merkitsevää numeroa kuten reaktioajassa $1{,}0\,\text{s}$ ja hidastuvuudessa $9{,}0\,\text{m/s}^2$.
 **Järkevyys:** Nopeudella $40\,\text{km/h}$ jo reaktiomatka $11{,}1\,\text{m}$ vie lähes koko $12{,}2\,\text{m}$:n matkan, joten jarrutukseen jää vain noin metri, ja nopeus ehtii pienentyä vain vähän. Siksi auto osuisi lapseen lähes alkuperäisellä nopeudellaan, vaikka nopeus ylittää rajoituksen vain $10\,\text{km/h}$:lla.
 
@@ -201,7 +201,7 @@ Järkevyys: esimerkiksi $75\,\text{kg}$:n nukelle kokeessa A $\Delta v = 25 : 3{
 **Periaate:** Edellä ajava auto alkaa jarruttaa heti ja pysähtyy jarrutusmatkansa päähän. Takana ajava kulkee ensin reaktiomatkan ja sitten pidemmän jarrutusmatkan, koska sen hidastuvuus on pienempi. Edellä ajava liikkuu koko ajan hitaammin kuin takana ajava, joten välimatka pienenee, kunnes takana ajava pysähtyy. Törmäystä ei tapahdu, jos välimatka on vähintään yhtä suuri kuin autojen kulkemien matkojen erotus.
 **Kaava:** $d + \dfrac{v_0^2}{2a_1} = v_0\,t_\text{r} + \dfrac{v_0^2}{2a_2}$, joten $d = v_0\,t_\text{r} + \dfrac{v_0^2}{2a_2} - \dfrac{v_0^2}{2a_1}$
 **Muunnokset:** $80\,\text{km/h} = \dfrac{80 \cdot 1000\,\text{m}}{3600\,\text{s}} \approx 22{,}22\,\text{m/s}$
-**Sijoitus:** $d = 22{,}22\,\text{m/s} \cdot 1{,}0\,\text{s} + \dfrac{(22{,}22\,\text{m/s})^2}{2 \cdot 6{,}0\,\text{m/s}^2} - \dfrac{(22{,}22\,\text{m/s})^2}{2 \cdot 9{,}0\,\text{m/s}^2} = 22{,}22\,\text{m} + 41{,}15\,\text{m} - 27{,}43\,\text{m} = 35{,}94\,\text{m}$
+**Sijoitus:** $$\begin{aligned} &d = 22{,}22\,\text{m/s} \cdot 1{,}0\,\text{s} \\ &+ \dfrac{(22{,}22\,\text{m/s})^2}{2 \cdot 6{,}0\,\text{m/s}^2} \\ &- \dfrac{(22{,}22\,\text{m/s})^2}{2 \cdot 9{,}0\,\text{m/s}^2} \\ &= 22{,}22\,\text{m} + 41{,}15\,\text{m} \\ &- 27{,}43\,\text{m} \\ &= 35{,}94\,\text{m} \end{aligned}$$
 **Vastaus:** $36\,\text{m}$, kaksi merkitsevää numeroa kuten reaktioajassa $1{,}0\,\text{s}$ ja hidastuvuuksissa.
 **Järkevyys:** Jos autojen hidastuvuudet olisivat samat, välimatkaksi riittäisi reaktiomatka $22\,\text{m}$. Kuluneet renkaat lisäävät tarvittavaa väliä noin $14\,\text{m}$. Välimatka $36\,\text{m}$ vastaa noin $1{,}6\,\text{s}$:n ajoaikaa nopeudella $22\,\text{m/s}$.
 
@@ -243,7 +243,7 @@ s_\text{p} &= 22{,}22\,\text{m/s} \cdot 1{,}2\,\text{s} \\
 **Kuvaajan lukeminen:** Välien nopeuden muutokset ovat $1{,}6$; $3{,}3$; $4{,}5$; $3{,}4$; $1{,}5$ ja $0{,}7\,\text{m/s}$. Nopeus muuttuu eniten välillä $40$–$60\,\text{ms}$, jolla se pienenee $4{,}5\,\text{m/s}$. Nuken pysähtymisaika on $120\,\text{ms}$, koska nopeus on silloin nolla.
 **Kaava:** $s = \sum \tfrac{v_\text{alku} + v_\text{loppu}}{2}\,\Delta t$, $F_\text{ka} = \dfrac{m\,\Delta v}{\Delta t}$ ja kullakin välillä $F = \dfrac{m\,\Delta v_\text{väli}}{\Delta t_\text{väli}}$
 **Muunnokset:** $20\,\text{ms} = 0{,}020\,\text{s}$ ja $120\,\text{ms} = 0{,}120\,\text{s}$.
-**Sijoitus:** a) Keskinopeuksien summa on $14{,}2 + 11{,}75 + 7{,}85 + 3{,}9 + 1{,}45 + 0{,}35 = 39{,}5\,\text{m/s}$, joten
+**Sijoitus:** a) Keskinopeuksien summa on $$\begin{aligned} &14{,}2 + 11{,}75 + 7{,}85 \\ &+ 3{,}9 + 1{,}45 + 0{,}35 \\ &= 39{,}5\,\text{m/s} \end{aligned}$$, joten
 ```latex
 \begin{aligned}
 s &= 39{,}5\,\text{m/s} \cdot 0{,}020\,\text{s} \\
@@ -267,7 +267,7 @@ F_\text{max} &= \frac{80{,}0\,\text{kg} \cdot 4{,}5\,\text{m/s}}{0{,}020\,\text{
 ```
 d) Liikemäärän muutos on $m\,\Delta v = 80{,}0\,\text{kg} \cdot 15{,}0\,\text{m/s} = 1200\,\text{kg}\cdot\text{m/s}$ riippumatta siitä, onko nuken suojana vyö ja turvatyyny. Jos nukke pysähtyisi ajassa $0{,}010\,\text{s}$, keskimääräinen voima olisi $F_\text{ka} = \dfrac{1200\,\text{kg}\cdot\text{m/s}}{0{,}010\,\text{s}} = 120\,000\,\text{N}$ eli $120\,\text{kN}$.
 **Vastaus:** c) Suurin voima on $18\,\text{kN}$, kaksi merkitsevää numeroa kuten nopeuden muutoksessa $4{,}5\,\text{m/s}$; massassa $80{,}0\,\text{kg}$ numeroita on enemmän, joten se ei rajoita tarkkuutta. Lisäksi a) pysähtymismatka on $0{,}79\,\text{m}$ ja b) keskimääräinen voima $10\,\text{kN}$. d) Vyö ja turvatyyny pidentävät pysähtymisajan noin arvoon $0{,}12\,\text{s}$, kun taas jäykkään pintaan osuessa aika olisi noin $0{,}010\,\text{s}$, jolloin keskimääräinen voima olisi $120\,\text{kN}$, eli $12$-kertainen. Liikemäärän muutos ja impulssi ovat samat, joten pidempi aika tarkoittaa pienempää voimaa, $F_\text{ka} = \tfrac{m\,\Delta v}{\Delta t}$. Vyö pitää nuken auton mukana ja antaa sen hidastua yhdessä auton kanssa, ja turvatyyny jakaa voiman suurelle alalle; ne toimivat yhdessä, ei toistensa sijasta. Voima vaihtelee törmäyksen aikana, joten suurin voima $18\,\text{kN}$ on keskimääräistä suurempi.
-**Järkevyys:** Nuken paino on $80{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 785\,\text{N}$, joten suurin voima on noin $23$-kertainen ja keskimääräinen voima noin $13$-kertainen painoon verrattuna. Suurin voima on $1{,}8$-kertainen keskimääräiseen nähden. Matka tarkistuu keskinopeudella: koko ajan keskinopeus on noin $0{,}79\,\text{m} : 0{,}120\,\text{s} = 6{,}6\,\text{m/s}$, mikä on alle puolet alkunopeudesta $15{,}0\,\text{m/s}$, koska nopeus on pienentynyt keskivaiheilla nopeammin kuin tasaisessa hidastumisessa.
+**Järkevyys:** Nuken paino on $$\begin{aligned} &80{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &= 785\,\text{N} \end{aligned}$$, joten suurin voima on noin $23$-kertainen ja keskimääräinen voima noin $13$-kertainen painoon verrattuna. Suurin voima on $1{,}8$-kertainen keskimääräiseen nähden. Matka tarkistuu keskinopeudella: koko ajan keskinopeus on noin $0{,}79\,\text{m} : 0{,}120\,\text{s} = 6{,}6\,\text{m/s}$, mikä on alle puolet alkunopeudesta $15{,}0\,\text{m/s}$, koska nopeus on pienentynyt keskivaiheilla nopeammin kuin tasaisessa hidastumisessa.
 
 ## fy4-11-L1-09
 **Annettu:** $v_0 = 80\,\text{km/h}$, lopussa $v = 0$; liukukitkakerroin kumin ja asfaltin välillä MAFY-taulukosta (taulukko *Kitkakertoimia*, kumi–asfaltti, liukukitka): väli $0{,}5$–$0{,}8$, käytetään suurinta arvoa $\mu = 0{,}8$; $g = 9{,}81\,\text{m/s}^2$
@@ -286,7 +286,7 @@ d) Liikemäärän muutos on $m\,\Delta v = 80{,}0\,\text{kg} \cdot 15{,}0\,\text
 **Kuvaajan lukeminen:** Suorakulmion korkeus on $20\,\text{m/s}$ ja leveys $1{,}0\,\text{s}$. Kolmion korkeus on $20\,\text{m/s}$ ja kanta $3{,}5\,\text{s} - 1{,}0\,\text{s} = 2{,}5\,\text{s}$.
 **Kaava:** $s = s_\text{r} + s_\text{j} = v_0 t_\text{r} + \tfrac{1}{2} v_0 t_\text{j}$
 **Muunnokset:** Ei tarvita: suureet ovat SI-yksiköissä.
-**Sijoitus:** $s = 20\,\text{m/s} \cdot 1{,}0\,\text{s} + \tfrac{1}{2} \cdot 20\,\text{m/s} \cdot 2{,}5\,\text{s} = 20\,\text{m} + 25\,\text{m} = 45\,\text{m}$
+**Sijoitus:** $$\begin{aligned} &s = 20\,\text{m/s} \cdot 1{,}0\,\text{s} \\ &+ \tfrac{1}{2} \cdot 20\,\text{m/s} \cdot 2{,}5\,\text{s} \\ &= 20\,\text{m} + 25\,\text{m} \\ &= 45\,\text{m} \end{aligned}$$
 **Vastaus:** $45\,\text{m}$, kaksi merkitsevää numeroa kuvaajasta luettujen arvojen tarkkuudella.
 **Järkevyys:** Nopeus $20\,\text{m/s}$ on $72\,\text{km/h}$, ja pysähtymismatka $45\,\text{m}$ on tyypillinen. Hidastuvuus on kuvaajan kulmakertoimen suuruus $\dfrac{20\,\text{m/s}}{2{,}5\,\text{s}} = 8{,}0\,\text{m/s}^2$, joka sopii kuivalle tielle. Matka on pienempi kuin se, jonka koko ajan $20\,\text{m/s}$ kulkeva auto kulkisi ajassa $3{,}5\,\text{s}$ ($70\,\text{m}$), kuten pitää.
 

@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: 1df22febe8b7cc20
+CONTENT-HASH: e6cc13464cb0b945
 
 ## Blocking
-None.
 
 ## Polish
-[Minor] ruutu-vinot — $\overline{F}_2$-nimiö lähellä nuolenkärkeä; siirrä hieman.
 
 ## Checked
-- fy4-5-open-exercises-L2-1280-12 (fi-easy): figure and solution consistent (kappale); the new direction wording $53^\circ$ from the $x$ axis is clear.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.

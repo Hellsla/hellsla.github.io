@@ -29,7 +29,7 @@ a alas
 ```
 **Kaava:** $mg - T = ma$, joten $T = m(g - a)$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $T = 0{,}60\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 - 2{,}0\,\text{m/s}^2) = 0{,}60\,\text{kg} \cdot 7{,}81\,\text{m/s}^2 = 4{,}686\,\text{N}$
+**Sijoitus:** $$\begin{aligned} &T \\ &= 0{,}60\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 \\ &- 2{,}0\,\text{m/s}^2) \\ &= 0{,}60\,\text{kg} \cdot 7{,}81\,\text{m/s}^2 \\ &= 4{,}686\,\text{N} \end{aligned}$$
 **Vastaus:** $4{,}7\,\text{N}$, kaksi merkitsevää numeroa kuten massassa $0{,}60\,\text{kg}$ ja kiihtyvyydessä $2{,}0\,\text{m/s}^2$.
 **Järkevyys:** Punnuksen paino on $0{,}60\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 5{,}9\,\text{N}$, ja $4{,}7\,\text{N}$ on sitä pienempi, koska punnus kiihtyy alas. Erotus $1{,}2\,\text{N}$ on $ma = 0{,}60\,\text{kg} \cdot 2{,}0\,\text{m/s}^2$.
 
@@ -113,9 +113,9 @@ a ylös
 ```
 **Kaava:** $T_1 - T_2 - m_1 g = m_1 a$ ja $T_2 - m_2 g = m_2 a$, joten yhteenlaskusta $T_1 = (m_1 + m_2)(g + a)$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $T_1 = (50\,\text{kg} + 30\,\text{kg}) \cdot (9{,}81\,\text{m/s}^2 + 1{,}2\,\text{m/s}^2) = 80\,\text{kg} \cdot 11{,}01\,\text{m/s}^2 = 880{,}8\,\text{N}$
+**Sijoitus:** $$\begin{aligned} &T_1 \\ &= (50\,\text{kg} + 30\,\text{kg}) \\ &\cdot (9{,}81\,\text{m/s}^2 \\ &+ 1{,}2\,\text{m/s}^2) \\ &= 80\,\text{kg} \cdot 11{,}01\,\text{m/s}^2 \\ &= 880{,}8\,\text{N} \end{aligned}$$
 **Vastaus:** $880\,\text{N}$, eli $8{,}8 \cdot 10^{2}\,\text{N}$, kaksi merkitsevää numeroa kuten kiihtyvyydessä $1{,}2\,\text{m/s}^2$ ja massassa $30\,\text{kg}$.
-**Järkevyys:** Laatikoiden yhteinen paino on $80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 785\,\text{N}$, ja kiihtyvä nosto vaatii enemmän. Ylimäärä $96\,\text{N}$ on $(m_1 + m_2)\,a = 80\,\text{kg} \cdot 1{,}2\,\text{m/s}^2$. Alemman köyden voima on $T_2 = m_2 (g + a) \approx 330\,\text{N}$, pienempi kuin $T_1$, koska se kantaa vain alemman laatikon.
+**Järkevyys:** Laatikoiden yhteinen paino on $80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 785\,\text{N}$, ja kiihtyvä nosto vaatii enemmän. Ylimäärä $96\,\text{N}$ on $$\begin{aligned} &(m_1 + m_2)\,a \\ &= 80\,\text{kg} \cdot 1{,}2\,\text{m/s}^2 \end{aligned}$$. Alemman köyden voima on $T_2 = m_2 (g + a) \approx 330\,\text{N}$, pienempi kuin $T_1$, koska se kantaa vain alemman laatikon.
 
 ## fy4-13-L2-02
 **Annettu:** $m_1 = 0{,}50\,\text{kg}$ ja $m_2 = 1{,}0\,\text{kg}$ langan päissä, $g = 9{,}81\,\text{m/s}^2$; lanka on kevyt, väkipyörä kevyt ja kitkaton, ilmanvastus jätetään huomiotta
@@ -198,7 +198,7 @@ a alas
 ```
 **Kaava:** $T - m_1 g = m_1 a$ ja $m_2 g - T = m_2 a$, joten $T = \dfrac{2 m_1 m_2}{m_1 + m_2}\cdot g$. Pyörän tasapainosta $F_\text{akseli} - 2T = 0$, joten $F_\text{akseli} = 2T$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $T = \dfrac{2 \cdot 800\,\text{kg} \cdot 1200\,\text{kg}}{800\,\text{kg} + 1200\,\text{kg}} \cdot 9{,}81\,\text{m/s}^2 = 960\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 9418\,\text{N}$ ja $F_\text{akseli} = 2 \cdot 9418\,\text{N} = 18\,835\,\text{N}$
+**Sijoitus:** $$\begin{aligned} &T \\ &= \dfrac{2 \cdot 800\,\text{kg} \cdot 1200\,\text{kg}}{800\,\text{kg} + 1200\,\text{kg}} \\ &\cdot 9{,}81\,\text{m/s}^2 \\ &= 960\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \\ &= 9418\,\text{N} \end{aligned}$$ ja $F_\text{akseli} = 2 \cdot 9418\,\text{N} = 18\,835\,\text{N}$
 **Vastaus:** $19000\,\text{N}$, eli $19\,\text{kN}$, kaksi merkitsevää numeroa, koska massat on annettu sadan kilogramman tarkkuudella.
 **Järkevyys:** Painot ovat $m_1 g \approx 7850\,\text{N}$ ja $m_2 g \approx 11\,770\,\text{N}$, ja $T = 9418\,\text{N}$ on niiden välissä. Akselin voima $18\,835\,\text{N}$ on pienempi kuin painojen summa $19\,620\,\text{N}$, koska vastapaino kiihtyy alas.
 
@@ -306,7 +306,7 @@ a alas
 ```
 **Kaava:** Kärry: $T = m_1 a$. Punnus: $m_2 g - T = m_2 a$, joten tarkistus $T = m_2\,(g - a)$
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $T = 1{,}20\,\text{kg} \cdot 2{,}84\,\text{m/s}^2 = 3{,}408\,\text{N}$. Tarkistus: $T = 0{,}50\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 - 2{,}84\,\text{m/s}^2) = 0{,}50\,\text{kg} \cdot 6{,}97\,\text{m/s}^2 = 3{,}485\,\text{N}$
+**Sijoitus:** $T = 1{,}20\,\text{kg} \cdot 2{,}84\,\text{m/s}^2 = 3{,}408\,\text{N}$. Tarkistus: $$\begin{aligned} &T \\ &= 0{,}50\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 \\ &- 2{,}84\,\text{m/s}^2) \\ &= 0{,}50\,\text{kg} \cdot 6{,}97\,\text{m/s}^2 \\ &= 3{,}485\,\text{N} \end{aligned}$$
 **Vastaus:** $3{,}4\,\text{N}$, kaksi merkitsevää numeroa, koska kaksi yhtälöä antaa $3{,}41\,\text{N}$ ja $3{,}49\,\text{N}$, jotka eroavat noin $2\,\%$, joten vain kaksi ensimmäistä numeroa on luotettavia.
 **Järkevyys:** Kaksi tapaa antaa $3{,}4\,\text{N}$ ja $3{,}5\,\text{N}$, eli ne eroavat noin $2\,\%$, mikä sopii mittauksen tarkkuuteen. Teorian mukaan $a = \dfrac{0{,}50 \cdot 9{,}81}{1{,}70}\,\text{m/s}^2 = 2{,}89\,\text{m/s}^2$, joten mitattu $2{,}84\,\text{m/s}^2$ on hieman pienempi. Jännitysvoima on pienempi kuin punnuksen paino $4{,}9\,\text{N}$, kuten pitääkin.
 
@@ -330,7 +330,7 @@ a alas
 **Muunnokset:** Kaikki suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2}{2{,}0\,\text{kg} + 0{,}50\,\text{kg}} = \dfrac{4{,}905\,\text{N}}{2{,}5\,\text{kg}} = 1{,}962\,\text{m/s}^2$
 **Vastaus:** $2{,}0\,\text{m/s}^2$, kaksi merkitsevää numeroa kuten tiedoissa $2{,}0\,\text{kg}$ ja $0{,}50\,\text{kg}$. Oppilaan tulos oli liian suuri, koska hän jakoi vain kärryn massalla.
-**Järkevyys:** Jännitysvoima $T = m_1 a = 2{,}0\,\text{kg} \cdot 1{,}962\,\text{m/s}^2 = 3{,}92\,\text{N}$ on pienempi kuin punnuksen paino $4{,}9\,\text{N}$, ja erotus $0{,}98\,\text{N}$ on $m_2 a = 0{,}50\,\text{kg} \cdot 1{,}962\,\text{m/s}^2$. Oppilaan arvolla $a = 2{,}45\,\text{m/s}^2$ olisi $T = m_1 a = 4{,}9\,\text{N}$ ja $m_2 g - T \approx 0$, mutta punnuksen liikeyhtälö vaatisi $m_2 a = 1{,}2\,\text{N}$, joten arvo on väärä.
+**Järkevyys:** Jännitysvoima $T = m_1 a = 2{,}0\,\text{kg} \cdot 1{,}962\,\text{m/s}^2 = 3{,}92\,\text{N}$ on pienempi kuin punnuksen paino $4{,}9\,\text{N}$, ja erotus $0{,}98\,\text{N}$ on $$\begin{aligned} &m_2 a \\ &= 0{,}50\,\text{kg} \cdot 1{,}962\,\text{m/s}^2 \end{aligned}$$. Oppilaan arvolla $a = 2{,}45\,\text{m/s}^2$ olisi $T = m_1 a = 4{,}9\,\text{N}$ ja $m_2 g - T \approx 0$, mutta punnuksen liikeyhtälö vaatisi $m_2 a = 1{,}2\,\text{N}$, joten arvo on väärä.
 
 ## fy4-13-L3-04
 **Annettu:** vaunujen massat $m_1 = 24\,\text{t}$, $m_2 = 18\,\text{t}$ ja $m_3 = 12\,\text{t}$; taulukosta nopeus $v = 0$ hetkellä $t = 0$ ja $v = 10{,}02\,\text{m/s}$ hetkellä $t = 20{,}0\,\text{s}$ (esimerkkiaineisto); kytkimen suurin sallittu voima $20\,\text{kN}$; vastusvoimat jätetään huomiotta
@@ -366,7 +366,7 @@ a oikea
 **Sijoitus:** b) $K_{12} = 30\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 15\,000\,\text{N} = 15\,\text{kN}$
 c) Uusi järjestys on $12\,\text{t}$, $18\,\text{t}$, $24\,\text{t}$, ja vaunujen 1 ja 2 välisen kytkimen takana ovat $18\,\text{t}$ ja $24\,\text{t}$, yhteensä $42\,\text{t}$. Silloin $K_{12}' = 42\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 21\,000\,\text{N} = 21\,\text{kN}$
 **Vastaus:** a) $a = 0{,}50\,\text{m/s}^2$. b) $15\,\text{kN}$, kaksi merkitsevää numeroa kuten tiedoissa $18\,\text{t}$ ja $12\,\text{t}$ (vastauslaatikkoon tulee tämä). c) $21\,\text{kN}$, joten kytkin, jonka raja on $20\,\text{kN}$, ei kestä uudessa järjestyksessä. Syy: kytkimen voima kiihdyttää kaikkia sen takana olevia vaunuja, ja raskain vaunu on nyt kytkimen takana.
-**Järkevyys:** Alkuperäisessä järjestyksessä kytkimet ovat $K_{12} = 15\,\text{kN}$ ja $K_{23} = 12\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 6{,}0\,\text{kN}$, ja veturin voima vaunuun 1 on $54\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 27\,\text{kN}$. Voima pienenee veturista taaksepäin, koska jokainen kytkin kiihdyttää yhä vähemmän massaa, ja vaunun 2 yhtälö tarkistuu: $15\,\text{kN} - 6{,}0\,\text{kN} = 9{,}0\,\text{kN} = 18\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2$.
+**Järkevyys:** Alkuperäisessä järjestyksessä kytkimet ovat $K_{12} = 15\,\text{kN}$ ja $K_{23} = 12\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 6{,}0\,\text{kN}$, ja veturin voima vaunuun 1 on $$\begin{aligned} &54\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 \\ &= 27\,\text{kN} \end{aligned}$$. Voima pienenee veturista taaksepäin, koska jokainen kytkin kiihdyttää yhä vähemmän massaa, ja vaunun 2 yhtälö tarkistuu: $$\begin{aligned} &15\,\text{kN} - 6{,}0\,\text{kN} \\ &= 9{,}0\,\text{kN} \\ &= 18\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 \end{aligned}$$.
 
 ## fy4-13-L3-05
 **Annettu:** matka $s = 0{,}80\,\text{m}$ levosta; taulukosta $m_2 = 0{,}100$; $0{,}200$; $0{,}300$ ja $0{,}400\,\text{kg}$ ja ajat $t = 1{,}29$; $0{,}96$; $0{,}80$ ja $0{,}73\,\text{s}$ (esimerkkiaineisto); $g = 9{,}81\,\text{m/s}^2$; kitka jätetään huomiotta, lanka ja väkipyörä ovat kevyet

@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 9e3f1aafd212641a
-SCOPE: delta added-exercise from 6532dd8778633a6f base 7db0992d648a
+CONTENT-HASH: c5b7a9f8a9f126fe
 
 ## Blocking
 None.
@@ -9,8 +8,4 @@ None.
 None.
 
 ## Checked
-- Changed solution text of L2-08 and L2-09 (v_kv symbol, significant-figure reason) read in the diff; layout of the page unchanged. Capture of the changed solutions not separately opened.
-- Round 2: symbol v_kv set consistently in Kysytty, Kaava and Sijoitus; L2-09 justification now says the value is read from the graph.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: re-broken chains in solutions.md/exercises.json (reflow only); opened fi-390-01, fi-390-02 (390 px only); rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.

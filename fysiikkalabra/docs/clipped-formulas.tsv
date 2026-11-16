@@ -1,13 +1,6 @@
 # Formulas that were clipped on a phone (360 or 390 px, solutions open) when check_layout.py learned to see them (teacher 2026-11-15, work queue 5b).
 # page<TAB>formula. A page may keep them until its text changes; any other clipped formula fails the check. Rows are only ever removed
 # (fix the formula and delete its row); written by `check_layout.py --write-known`, never by hand.
-FY4-koe	\tfrac{1}{2} \cdot 1500\,\text{N} \cdot 0{,}0080\,\text{s} = 6{,}0\,\t
-FY4-sovella	0{,}02\,\text{m/s}^2 : 9{,}786\,\text{m/s}^2 \approx 0{,}002
-FY4-sovella	7{,}86\,\text{m/s} : 0{,}12\,\text{s} \approx 66\,\text{m/s}^2
-FY4-sovella	E_\text{k} \approx 13{,}98\,\text{kJ} - 5{,}23\,\text{kJ} \approx 8{,}
-FY4-sovella	F_\text{vast}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}
-FY4-sovella	\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} = \dfrac{(0{,}68
-FY4-sovella	m_\text{B}v_\text{B} + m_\text{A} \cdot 0 = (m_\text{A} + m_\text{B})\
 FY5-koe	331\,\text{m/s} + 8{,}0 \cdot 0{,}6\,\text{m/s} \approx 336\,\text{m/s
 FY5-koe	= 6{,}674 \cdot 10^{-11} \cdot \dfrac{5{,}97 \cdot 10^{24} \cdot 4{,}0
 FY5-koe	F_\text{A} \cdot 1{,}2\,\text{m} = G \cdot 0{,}8\,\text{m} + F_\text{h
@@ -34,11 +27,6 @@ FY7-sovella	2700\,\text{kg/m}^3 \cdot 5{,}0 \cdot 10^{4}\,\text{m} \cdot 150 \cd
 FY7-sovella	= 1{,}8281 \cdot 10^{-26}\,\text{kg} \cdot 7{,}251 \cdot 10^{5}\,\text
 FY7-sovella	= \sqrt{\dfrac{2 \cdot 1{,}602 \cdot 10^{-19}\,\text{C} \cdot 30{,}0 \
 FY7-sovella	m_{10} : m_{11} = 1{,}6627 : 1{,}8281 \approx 0{,}91
-en/FY4-sovella	0.02\,\text{m/s}^2 : 9.786\,\text{m/s}^2 \approx 0.002
-en/FY4-sovella	E_\text{k} \approx 13.98\,\text{kJ} - 5.23\,\text{kJ} \approx 8.74\,\t
-en/FY4-sovella	F_\text{res}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}
-en/FY4-sovella	\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} = \dfrac{(0.684 
-en/FY4-sovella	m_\text{B}v_\text{B} + m_\text{A} \cdot 0 = (m_\text{A} + m_\text{B})\
 en/FY5-sovella	0.028\,\text{s}^2 : 1.984\,\text{s}^2/\text{kg} \approx 0.014\,\text{k
 en/FY5-sovella	1200\,\text{kNm} : 392.4\,\text{m}^2/\text{s}^2 \approx 3.1\,\text{t}
 en/FY5-sovella	188\,000\,\text{Nm} : (9.81\,\text{m/s}^2 \cdot 10\,\text{m}) \approx 
@@ -121,190 +109,30 @@ en/fy3-5	T_2 = T_1 (V_1/V_2)^{\gamma - 1} = 293\,\text{K} \cdot (4/3)^{0.4} \ap
 en/fy3-5	\Delta U = 250\,\text{J} - 90\,\text{J} = 160\,\text{J}
 en/fy3-5	\Delta U = Q + W = 10\,\text{J} + 30\,\text{J} = 40\,\text{J}
 en/fy3-5	\Delta U = Q + W = 250\,\text{J} + 90\,\text{J} = 340\,\text{J}
-en/fy4-1	0.49\,\text{m} + 0.61\,\text{m/s} \cdot 2.0\,\text{s} = 1.71\,\text{m}
-en/fy4-1	14\,\text{m} + (-1.5\,\text{m/s}) \cdot 6.0\,\text{s} = 5.0\,\text{m}
-en/fy4-1	18\,\text{m} + (-3.0\,\text{m/s}) \cdot 5.0\,\text{s} = 3.0\,\text{m}
-en/fy4-1	2.0\,\text{m/s} - (-2.0\,\text{m/s}) = 4.0\,\text{m/s}
-en/fy4-1	20.0\,\text{m} - 1.8\,\text{m/s} \cdot 5.8\,\text{s} = 9.6\,\text{m}
-en/fy4-1	30\,\text{m} + (-3.0\,\text{m/s}) \cdot 10\,\text{s} = 0\,\text{m}
-en/fy4-1	= 24\,\text{m} + 5.0\,\text{m/s} \cdot (10.0\,\text{s} - 7.0\,\text{s}
-en/fy4-1	\Delta x = 12\,\text{m} - 30\,\text{m} = -18\,\text{m}
-en/fy4-1	v = \dfrac{13\,\text{m} - 5.0\,\text{m}}{6.0\,\text{s} - 2.0\,\text{s}
-en/fy4-10	(0.125 + 0.174)\,\text{kg}\cdot\text{m/s} = 0.299\,\text{kg}\cdot\text
-en/fy4-10	(0.60 - 0.20)\,\text{m/s} : 2 = 0.20\,\text{m/s}
-en/fy4-10	(\tfrac12 \cdot 0.20 \cdot 0.10^2 + \tfrac12 \cdot 0.40 \cdot 0.35^2)\
-en/fy4-10	(\tfrac12 \cdot 0.40 \cdot 0.11^2 + \tfrac12 \cdot 0.60 \cdot 0.27^2)\
-en/fy4-10	(\tfrac12 \cdot 0.50 \cdot 0.16^2 + \tfrac12 \cdot 0.30 \cdot 0.74^2)\
-en/fy4-10	(\tfrac12 \cdot 0.50 \cdot 0.25^2 + \tfrac12 \cdot 0.30 \cdot 0.58^2)\
-en/fy4-10	0.0255 : 0.036 \cdot 100\,\% = 70.8\,\%
-en/fy4-10	0.17 \cdot 1.8\,\text{kg}\cdot\text{m/s} = 0.306\,\text{kg}\cdot\text{
-en/fy4-10	0.30 \cdot 40 + 0.60 \cdot (-2.0) = 10.8
-en/fy4-10	0.40 \cdot (-0.12) + 0.60 \cdot 0.48 = 0.240
-en/fy4-10	0.40 \cdot 1.50\,\text{kg}\cdot\text{m/s} = 0.600\,\text{kg}\cdot\text
-en/fy4-10	0.50 \cdot 0.2 + 0.30 \cdot 0.6 = 0.28\,\text{kg}\cdot\text{m/s}
-en/fy4-10	0.50 \cdot 0.8 + 0.30 \cdot (-0.4) = 0.28\,\text{kg}\cdot\text{m/s}
-en/fy4-10	0.50\,\text{kg} \cdot 0.60\,\text{m/s} = 0.30\,\text{kg}\cdot\text{m/s
-en/fy4-10	0.60 \cdot 0.88\,\text{kg}\cdot\text{m/s} = 0.528\,\text{kg}\cdot\text
-en/fy4-10	0.60 \cdot 1.00\,\text{kg}\cdot\text{m/s} = 0.600\,\text{kg}\cdot\text
-en/fy4-10	0.80 \cdot 0.37\,\text{kg}\cdot\text{m/s} = 0.296\,\text{kg}\cdot\text
-en/fy4-10	35 \cdot 0.343\,\text{kg}\cdot\text{m/s} = 12\,\text{kg}\cdot\text{m/s
-en/fy4-10	45\,000\,\text{kg} - 30\,000\,\text{kg} = 15\,000\,\text{kg}
-en/fy4-10	= (0.40 \cdot 0.11 + 0.60 \cdot 0.27)\,\text{kg}\cdot\text{m/s}
 en/fy4-10	= (0.40 \cdot 0.50 + 0.25 \cdot (-0.60))\,\text{kg}\cdot\text{m/s}
 en/fy4-10	= \dfrac{0.16 \cdot 4.0 - 0.16 \cdot (-0.44)}{0.20}\,\text{m/s}
 en/fy4-10	= \dfrac{0.20 \cdot 0.60 - 0.20 \cdot (-0.10)}{0.40}\,\text{m/s}
 en/fy4-10	= \dfrac{0.30 \cdot 0.60 + 0.30 \cdot (-0.20)}{0.60}\,\text{m/s}
 en/fy4-10	= \dfrac{0.60 \cdot 0.50 + 0.20 \cdot (-0.90)}{0.60 + 0.20}\,\text{m/s
 en/fy4-10	= \dfrac{0.60 \cdot 0.80 + 0.20 \cdot (-0.40)}{0.60 + 0.20}\,\text{m/s
-en/fy4-10	= \tfrac12 \cdot 85\,\text{kg} \cdot (6.0\,\text{m/s})^2 - \tfrac12 \c
-en/fy4-10	= \tfrac{1}{2} \cdot 0.30\,\text{kg} \cdot (0.60\,\text{m/s})^2 - \tfr
-en/fy4-10	\Delta p = F\,\Delta t = 3.0\,\text{N} \cdot 0.10\,\text{s} = 0.30\,\t
-en/fy4-10	m_1 v_1 + m_2 v_2 = (m_1 + m_2)\,v'
-en/fy4-10	m_2 = 0.90\,\text{kg} - 0.30\,\text{kg} = 0.60\,\text{kg}
-en/fy4-10	m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}'
-en/fy4-10	v' = \dfrac{0.20 - 0.18}{0.80}\,\text{m/s} = 0.025\,\text{m/s}
 en/fy4-10	v' = \dfrac{0.50 \cdot 0.40 + 0.30 \cdot 0.60}{0.80}\,\text{m/s} \appr
 en/fy4-10	v' = \dfrac{0.60 \cdot 0.80 + 0.20 \cdot 0.40}{0.60 + 0.20}\,\text{m/s
-en/fy4-11	14.2 + 11.75 + 7.85 + 3.9 + 1.45 + 0.35 = 39.5\,\text{m/s}
-en/fy4-11	= (11.11\,\text{m/s})^2 - 2 \cdot 9.0\,\text{m/s}^2 \cdot 1.080\,\text
-en/fy4-11	= (22.22\,\text{m/s})^2 - 2 \cdot 6.0\,\text{m/s}^2 \cdot 22.78\,\text
-en/fy4-11	= 16.67\,\text{m/s} \cdot 1.0\,\text{s} + \dfrac{(16.67\,\text{m/s})^2
-en/fy4-11	= 20\,\text{m/s} \cdot 1.0\,\text{s} + \tfrac{1}{2} \cdot 20\,\text{m/
-en/fy4-11	= 22.22\,\text{m/s} \cdot 1.0\,\text{s} + \dfrac{(22.22\,\text{m/s})^2
-en/fy4-11	= 8.333\,\text{m/s} \cdot 1.0\,\text{s} + \dfrac{(8.333\,\text{m/s})^2
 en/fy4-11	\sqrt{(22.22\,\text{m/s})^2 - 2 \cdot 5.1\,\text{m/s}^2 \cdot (55 - 26
-en/fy4-12	(4.0\,\text{m/s})^2 + 2 \cdot 0.50\,\text{m/s}^2 \cdot (-20\,\text{m})
-en/fy4-12	-8.0\,\text{m} + 5.0\,\text{m/s} \cdot 2.0\,\text{s} = 2.0\,\text{m}
-en/fy4-12	3.0\,\text{m} + 3.48\,\text{m/s} \cdot 7.0\,\text{s} = 27.4\,\text{m}
-en/fy4-12	45.0\,\text{m} - 2.52\,\text{m/s} \cdot 7.0\,\text{s} = 27.4\,\text{m}
-en/fy4-12	7.0\,\text{m/s} \cdot (7.0\,\text{s} - 3.0\,\text{s}) = 28\,\text{m}
-en/fy4-12	= (5.0\,\text{m/s})^2 + 2 \cdot 1.0\,\text{m/s}^2 \cdot (-8.0\,\text{m
-en/fy4-12	= (8.0\,\text{m/s})^2 + 2 \cdot 2.0\,\text{m/s}^2 \cdot 180\,\text{m}
-en/fy4-12	= 20\,\text{m/s} \cdot 6.0\,\text{s} + \tfrac12 \cdot 1.5\,\text{m/s}^
-en/fy4-12	= 36\,\text{m}^2/\text{s}^2 + 2 \cdot 2.0 \cdot 6.0 \cdot 1.5\,\text{m
-en/fy4-12	= \tfrac12 \cdot 0.50\,\text{m/s}^2 \cdot (8.0\,\text{s})^2 + 20\,\tex
-en/fy4-12	\tfrac12 \cdot 2.0\,\text{m/s}^2 \cdot (7.24\,\text{s})^2 = 52.4\,\tex
-en/fy4-12	x = \tfrac12\,a\,t^2 = \tfrac12 \cdot 2.0\,\text{m/s}^2 \cdot (5.0\,\t
-en/fy4-13	(m_1 + m_2)\,a = 80\,\text{kg} \cdot 1.2\,\text{m/s}^2
-en/fy4-13	0.50\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 4.9\,\text{N}
-en/fy4-13	= (50\,\text{kg} + 30\,\text{kg}) \cdot (9.81\,\text{m/s}^2 + 1.2\,\te
-en/fy4-13	= 0.50\,\text{kg} \cdot (9.81\,\text{m/s}^2 - 2.84\,\text{m/s}^2)
-en/fy4-13	= 0.60\,\text{kg} \cdot (9.81\,\text{m/s}^2 - 2.0\,\text{m/s}^2)
-en/fy4-13	= 18\,000\,\text{kg} \cdot 0.50\,\text{m/s}^2
-en/fy4-13	= \dfrac{2 \cdot 800\,\text{kg} \cdot 1200\,\text{kg}}{800\,\text{kg} 
-en/fy4-13	a = \dfrac{(m_2 - m_1)\,g}{m_1 + m_2} = \dfrac{0.40\,\text{kg} \cdot 9
-en/fy4-14	0.0200\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 0.196\,\text{N}
-en/fy4-14	0.270\,\text{kg} \cdot 9.81\,\text{m/s}^2 \approx 2.65\,\text{N}
-en/fy4-14	= 0.0200\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 4.50\,\text{m/s}^2)
-en/fy4-14	= 0.150\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 6.5\,\text{m/s}^2)
-en/fy4-14	= 0.450\,\text{kg}\cdot 9.81\,\text{m/s}^2 + 1.20\,\text{N}
-en/fy4-14	= 70.0\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 6.00\,\text{m/s}^2)
-en/fy4-14	= 75.0\,\text{kg} \cdot (9.81\,\text{m/s}^2 - 1.50\,\text{m/s}^2)
 en/fy4-14	= 75.0\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\sin 30.0^\circ
 en/fy4-14	= 75.0\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\sin 30.0^\circ - 64.0\,
-en/fy4-14	= 82.0\,\text{kg}\cdot(9.81\,\text{m/s}^2 + 17.5\,\text{m/s}^2)
-en/fy4-14	G = mg = 0.270\,\text{kg} \cdot 9.81\,\text{m/s}^2
-en/fy4-15	1.252 \cdot 13^3\,\text{kW} \approx 2750\,\text{kW} = 2.8\,\text{MW}
-en/fy4-15	1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 15\,\text{m} = 150\,\text
-en/fy4-15	1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 24\,\text{m} = 240\,\text
-en/fy4-15	1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 8\,\text{m} = 80\,\text{k
-en/fy4-15	100\,\text{kW} \cdot 1500\,\text{h} = 150\,000\,\text{kWh}
-en/fy4-15	4.35\,\text{MW} \cdot 4320\,\text{h} \approx 18.8\,\text{GWh}
-en/fy4-15	40 + 52 + 62 + 58 + 48 + 40 = 300\,\text{MW}
-en/fy4-15	85 + 120 + 45 + 30 + 28 + 40 = 348\,\text{m}^3\text{/s}
-en/fy4-15	= 0.75 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0.850\,\tfrac{\
-en/fy4-15	= 0.800 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 3.20\,\tfrac{\
-en/fy4-15	= 0.85 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 12\,\tfrac{\tex
-en/fy4-15	= 0.900 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{\t
-en/fy4-15	= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 35.0\,\tfrac{\text{m}^3}{\
 en/fy4-15	= \dfrac{75.0 \cdot 10^{6}}{0.850 \cdot 1000 \cdot 9.81 \cdot 1400}\,\
-en/fy4-15	= \tfrac{1}{2} \cdot 0.45 \cdot 1.29\,\tfrac{\text{kg}}{\text{m}^3} \c
-en/fy4-15	= \tfrac{1}{2} \cdot 1.25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1500\,\
-en/fy4-15	E = 100\,\text{kW} \cdot 24\,\text{h} \approx 2400\,\text{kWh}
 en/fy4-15	P = 0.85 \cdot 1000 \cdot 12 \cdot 9.81 \cdot 8.0\,\text{W}
-en/fy4-15	P = 0.85 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 2.0\,\tfrac{\
 en/fy4-15	P = \tfrac{1}{2}\eta\rho A v = 0.5 \cdot 0.40 \cdot 1.25 \cdot 2827 \c
-en/fy4-16	(2124 - 687)\,\text{N} : 70.0\,\text{kg} \approx 20\,\text{m/s}^2
-en/fy4-16	(800 - 735.75)\,\text{N} : 75.0\,\text{kg} \approx 0.86\,\text{m/s}^2
-en/fy4-16	10.4 + 49.6 = 16.5 + 43.5 = 34.0 + 26.0 = 60.0
-en/fy4-16	17.5\,{}^\circ + 18.0\,{}^\circ + 18.5\,{}^\circ + 17.0\,{}^\circ + 18
 en/fy4-16	75.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 = 735.75\,\text{N}
-en/fy4-16	9.81\cdot 18.0\cdot\sin 12.0^\circ\,\tfrac{\text{m}^2}{\text{s}^2} - \
-en/fy4-16	= 70.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 + \dfrac{87\,500\,\text{J} -
-en/fy4-16	= 78.0\,\text{kg}\cdot 9.81\,\text{m/s}^2 + \dfrac{82\,524\,\text{J} -
 en/fy4-16	= 78.0\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot 125\,\text{m}
 en/fy4-16	= \tfrac12\cdot 80.0\,\text{kg}\cdot\left(52.0^2 - 6.0^2\right)\,\text
-en/fy4-16	F_\mu = \mu mg = 0.200 \cdot 20.0\,\text{kg} \cdot 9.81\,\text{m/s}^2 
-en/fy4-16	N = 55.0\,\text{kg}\cdot(9.81 - 1.20)\,\text{m/s}^2
-en/fy4-16	T = 18.0\,\text{kg}\cdot 8.31\,\text{m/s}^2 \approx 150\,\text{N}
-en/fy4-16	\Delta E_\text{mech} = \left(\tfrac12 mv_2^2 - \tfrac12 mv_1^2\right) 
-en/fy4-16	mgL\sin\alpha - \mu mg\cos\alpha\cdot L = \tfrac12 mv_2^2
-en/fy4-16	mgL\sin\alpha - \mu_1 mg\cos\alpha\cdot L - \mu_2 mgd = 0
-en/fy4-16	mgL\sin\alpha - \mu_1 mg\cos\alpha\cdot L = \tfrac12 mv^2
 en/fy4-16	mgh = 78.0\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot 125\,\text{m}
-en/fy4-2	(2.0\,\text{m/s} + 7.0\,\text{m/s}) : 2 = 4.5\,\text{m/s}
-en/fy4-2	(4.0\,\text{m/s} + 8.72\,\text{m/s}) : 2 \approx 6.36\,\text{m/s}
-en/fy4-2	= (8.00\,\text{m/s})^2 + 2 \cdot 9.81\,\text{m/s}^2 \cdot 6.00\,\text{
-en/fy4-2	= 15.0\,\text{m/s} \cdot 1.529\,\text{s} - \tfrac{1}{2} \cdot 9.81\,\t
-en/fy4-2	= 2.0\,\text{m/s} \cdot 5.0\,\text{s} + \tfrac{1}{2} \cdot 5.0\,\text{
-en/fy4-2	= 20\,\text{m/s} \cdot 4.0\,\text{s} + \tfrac{1}{2} \cdot (-5.0\,\text
-en/fy4-2	= 3.10\,\text{m/s} + 2 \cdot (-4.86\,\text{m/s}^2) \cdot 0.500\,\text{
-en/fy4-2	= \tfrac{1}{2} \cdot 15.0\,\text{m/s} \cdot 20.0\,\text{s} + 15.0\,\te
-en/fy4-2	\sqrt{2 \cdot 1.60\,\text{m} : 9.81\,\text{m/s}^2} \approx 0.57\,\text
-en/fy4-2	\sqrt{2 \cdot 20\,\text{m} : 9.81\,\text{m/s}^2} \approx 2.02\,\text{s
-en/fy4-2	\sqrt{2 \cdot 9.26\,\text{m} : 9.81\,\text{m/s}^2} \approx 1.37\,\text
-en/fy4-2	v = g\,t = 9.81\,\text{m/s}^2 \cdot 2.0\,\text{s} \approx 19.6\,\text{
-en/fy4-2	y = -4.86\,\tfrac{\text{m}}{\text{s}^2} \cdot t^2 + 3.10\,\tfrac{\text
-en/fy4-4	15\,000\,\text{kg} \cdot 1.622\,\text{m/s}^2 \approx 24\,\text{kN}
-en/fy4-4	3.0\,\text{m/s} - 0.75\,\text{m/s}^2 \cdot 4.0\,\text{s} = 0
-en/fy4-4	= 15\,000\,\text{kg} \cdot (1.622\,\text{m/s}^2 + 0.50\,\text{m/s}^2)
-en/fy4-4	= 70\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 0.75\,\text{m/s}^2)
-en/fy4-4	= 820\,\text{kg}\cdot(9.81\,\text{m/s}^2 + 1.20\,\text{m/s}^2)
-en/fy4-4	N = mg = 1.2\,\text{kg}\cdot 9.81\,\text{m/s}^2 \approx 11.8\,\text{N}
-en/fy4-4	T = m(g - a) = 820\,\text{kg}\cdot(9.81\,\text{m/s}^2 - 1.20\,\text{m/
-en/fy4-4	a = \dfrac{F - F_\mu}{m} = \dfrac{5.0\,\text{N} - 3.0\,\text{N}}{1.2\,
-en/fy4-5	881\,\text{N} + 878\,\text{N} + 883\,\text{N} = 2642\,\text{N}
-en/fy4-5	= 0.60\,\text{kg}\cdot 9.81\,\text{m/s}^2 - 2.0\,\text{N}\cdot\sin 30^
-en/fy4-5	= 2.0\,\text{kg}\cdot(9.81\,\text{m/s}^2 + 1.5\,\text{m/s}^2)
-en/fy4-5	N = 12\,\text{kg}\cdot 9.81\,\text{m/s}^2 + 60\,\text{N}\cdot\sin 30^\
-en/fy4-6	24^\circ + 26^\circ + 25^\circ + 27^\circ + 25^\circ = 127^\circ
-en/fy4-6	= (0.347 + 0.357 + 0.347 + 0.352) : 4
 en/fy4-6	= 0.60\cdot 10\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\cos 35^\circ
-en/fy4-6	= 1.62\,\text{m/s}^2\cdot(\sin 30^\circ - 0.342\cdot\cos 30^\circ)
-en/fy4-6	= 9.81\,\text{m/s}^2\cdot(\sin 20^\circ + 0.25\cdot\cos 20^\circ)
-en/fy4-6	= 9.81\,\text{m/s}^2\cdot(\sin 30^\circ - 0.35\cdot\cos 30^\circ)
 en/fy4-6	= \dfrac{150\,\text{N} - 0.30\cdot 40\,\text{kg}\cdot 9.81\,\text{m/s}
-en/fy4-6	F_{\mu\text{D}} = 25\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot \sin 30
 en/fy4-6	N = 20\,\text{kg}\cdot 9.81\,\text{m/s}^2\cdot\cos 20^\circ \approx 18
-en/fy4-6	T - mg\sin 20^\circ - \mu N = 0
-en/fy4-6	T = mg\sin 20^\circ + \mu mg\cos 20^\circ \approx 67\,\text{N} + 46\,\
-en/fy4-7	= 0.057\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 1.80\,\text{m}
-en/fy4-7	= 0.500\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 0.2808\,\text{m}
-en/fy4-7	= 1.20\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot (1.90 - 0.75)\,\text{
-en/fy4-7	= \tfrac{1}{2} \cdot 1.20\,\text{kg} \cdot (10.0\,\text{m/s})^2 + 1.20
-en/fy4-7	E_\text{k} = \tfrac{1}{2} \cdot 1000\,\text{kg} \cdot (10\,\text{m/s})
 en/fy4-7	E_\text{mech} = \tfrac{1}{2}\,mv^2 + mgh = \tfrac{1}{2} \cdot 70\,\tex
-en/fy4-7	h = \tfrac{v}{2} \cdot \tfrac{v}{g} = \tfrac{v^2}{2g} = \tfrac{(10\,\t
 en/fy4-8	1.20 \to 0.77 \to 0.49 \to 0.32 \to 0.20\,\text{m}
-en/fy4-8	= 0.057\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot (1.20 - 0.77)\,\text
-en/fy4-8	= 70\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 6.0\,\text{m}
-en/fy4-8	= 80\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 12.0\,\text{m}
 en/fy4-8	= \sqrt{2 \cdot 9.81\,\text{m/s}^2 \cdot (18.0 - 7.0)\,\text{m}}
-en/fy4-8	= \tfrac12 \cdot 80\,\text{kg} \cdot (16 - 169)\,\text{m}^2/\text{s}^2
-en/fy4-8	E_\text{k} = mgh + 30\,\text{J} = 73.6\,\text{J} + 30\,\text{J} = 103.
-en/fy4-8	F_\text{res}\,h_1 = 200\,\text{N} \cdot 10\,\text{m} = 2.0\,\text{kJ}
-en/fy4-8	W = -F_\mu h = -8.0\,\text{N} \cdot 1.5\,\text{m} = -12\,\text{J}
-en/fy4-8	\sqrt{2 \cdot 9.81 \cdot 1.835}\,\text{m/s} = 6.0\,\text{m/s}
-en/fy4-9	-1.50\,\text{m/s} + 2.88\,\text{m/s} = +1.38\,\text{m/s}
-en/fy4-9	0.16\,\text{kg} \cdot 25\,\text{m/s} = 4.0\,\text{kg}\cdot\text{m/s}
-en/fy4-9	60\,\text{kg} \cdot 2.0\,\text{m/s} = 120\,\text{kg}\cdot\text{m/s}
-en/fy4-9	= 0.60\,\text{kg} \cdot (3.924 + 4.905)\,\text{m/s}
-en/fy4-9	= 5.886\,\text{N} + \dfrac{0.60\,\text{kg} \cdot 4.905\,\text{m/s}}{0.
-en/fy4-9	I = \Delta p = mv - mv_0 = m(v - v_0)
-en/fy4-9	\Delta p = 0.40\,\text{kg} \cdot (-5.0 - 5.0)\,\text{m/s} = -4.0\,\tex
-en/fy4-9	\Delta p = 1.0\,\text{kg} \cdot (-2.00 - 2.00)\,\text{m/s} = -4.00\,\t
-en/fy4-9	\Delta p = m(v - v_0) = 0.40\,\text{kg} \cdot (5.0 - 5.0)\,\text{m/s} 
-en/fy4-9	a\,\Delta t = 3.0\,\text{m/s}^2 \cdot 0.50\,\text{s} = 1.5\,\text{m/s}
 en/fy4-9	p = mv = 1800 \cdot 36 = 64\,800\,\text{kg}\cdot\text{m/s}
 en/fy5-1	0.120\cdot 0.400 + 0.0500\cdot 0.200 = 0.0580\,\text{kg}\cdot\text{m}
 en/fy5-1	0.200\cdot 0.300 + 0.100\cdot 0.100 = 0.0700\,\text{kg}\cdot\text{m}
@@ -442,12 +270,6 @@ en/fy9-voimat	a = 1.175\,\tfrac{1}{\text{kg}} \cdot F - 0.281\,\text{m/s}^2
 en/fy9-ympyraliike	= \dfrac{3.984 \cdot 10^{14}\,\text{N}\cdot\text{m}^2/\text{kg} \cdot 
 en/fy9-ympyraliike	= \sqrt{518.0\,\tfrac{\text{m}^2}{\text{s}^2} - 4 \cdot 9.81\,\tfrac{\
 en/fy9-ympyraliike	= \sqrt{\dfrac{6.674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\
-fi-easy/FY4-sovella	0{,}02\,\text{m/s}^2 : 9{,}786\,\text{m/s}^2 \approx 0{,}002
-fi-easy/FY4-sovella	7{,}86\,\text{m/s} : 0{,}12\,\text{s} \approx 66\,\text{m/s}^2
-fi-easy/FY4-sovella	E_\text{k} \approx 13{,}98\,\text{kJ} - 5{,}23\,\text{kJ} \approx 8{,}
-fi-easy/FY4-sovella	F_\text{vast}\,s = 29\,\text{N} \cdot 180\,\text{m} = 5220\,\text{J}
-fi-easy/FY4-sovella	\mu_\text{A} = \dfrac{g\sin\alpha - a_0}{g\cos\alpha} = \dfrac{(0{,}68
-fi-easy/FY4-sovella	m_\text{B}v_\text{B} + m_\text{A} \cdot 0 = (m_\text{A} + m_\text{B})\
 fi-easy/FY5-sovella	0{,}028\,\text{s}^2 : 1{,}984\,\text{s}^2/\text{kg} \approx 0{,}014\,\
 fi-easy/FY5-sovella	1200\,\text{kNm} : 392{,}4\,\text{m}^2/\text{s}^2 \approx 3{,}1\,\text
 fi-easy/FY5-sovella	188\,000\,\text{Nm} : (9{,}81\,\text{m/s}^2 \cdot 10\,\text{m}) \appro
@@ -500,240 +322,37 @@ fi-easy/fy3-5	T_2 = T_1 (V_1/V_2)^{\gamma - 1} = 293\,\text{K} \cdot (4/3)^{0{,}
 fi-easy/fy3-5	\Delta U = 250\,\text{J} - 90\,\text{J} = 160\,\text{J}
 fi-easy/fy3-5	\Delta U = Q + W = 10\,\text{J} + 30\,\text{J} = 40\,\text{J}
 fi-easy/fy3-5	\Delta U = Q + W = 250\,\text{J} + 90\,\text{J} = 340\,\text{J}
-fi-easy/fy4-1	14\,\text{m} + (-1{,}5\,\text{m/s}) \cdot 6{,}0\,\text{s} = 5{,}0\,\te
-fi-easy/fy4-1	18\,\text{m} + (-3{,}0\,\text{m/s}) \cdot 5{,}0\,\text{s} = 3{,}0\,\te
-fi-easy/fy4-1	1{,}0\,\text{m} + 1{,}5\,\text{m/s} \cdot 5{,}8\,\text{s} = 9{,}7\,\te
-fi-easy/fy4-1	2{,}0\,\text{m/s} - (-2{,}0\,\text{m/s}) = 4{,}0\,\text{m/s}
-fi-easy/fy4-1	30\,\text{m} + (-3{,}0\,\text{m/s}) \cdot 10\,\text{s} = 0\,\text{m}
-fi-easy/fy4-1	4{,}0\,\text{m} + 2{,}0\,\text{m/s} \cdot 10\,\text{s} = 24\,\text{m}
-fi-easy/fy4-1	= 24\,\text{m} + 5{,}0\,\text{m/s} \cdot (10{,}0\,\text{s} - 7{,}0\,\t
-fi-easy/fy4-1	\Delta x = 12\,\text{m} - 30\,\text{m} = -18\,\text{m}
-fi-easy/fy4-1	v = \dfrac{13\,\text{m} - 5{,}0\,\text{m}}{6{,}0\,\text{s} - 2{,}0\,\t
-fi-easy/fy4-10	(0{,}60 - 0{,}20)\,\text{m/s} : 2 = 0{,}20\,\text{m/s}
-fi-easy/fy4-10	(\tfrac12 \cdot 0{,}20 \cdot 0{,}10^2 + \tfrac12 \cdot 0{,}40 \cdot 0{
-fi-easy/fy4-10	(\tfrac12 \cdot 0{,}40 \cdot 0{,}11^2 + \tfrac12 \cdot 0{,}60 \cdot 0{
-fi-easy/fy4-10	(\tfrac12 \cdot 0{,}50 \cdot 0{,}16^2 + \tfrac12 \cdot 0{,}30 \cdot 0{
-fi-easy/fy4-10	(\tfrac12 \cdot 0{,}50 \cdot 0{,}25^2 + \tfrac12 \cdot 0{,}30 \cdot 0{
-fi-easy/fy4-10	0{,}0255 : 0{,}036 \cdot 100\,\% = 70{,}8\,\%
-fi-easy/fy4-10	0{,}30 \cdot 40 + 0{,}60 \cdot (-2{,}0) = 10{,}8
-fi-easy/fy4-10	0{,}40 \cdot (-0{,}12) + 0{,}60 \cdot 0{,}48 = 0{,}240
-fi-easy/fy4-10	0{,}50 \cdot 0{,}2 + 0{,}30 \cdot 0{,}6 = 0{,}28\,\text{kg}\cdot\text{
-fi-easy/fy4-10	0{,}50\,\text{kg} \cdot 0{,}60\,\text{m/s} = 0{,}30\,\text{kg}\cdot\te
-fi-easy/fy4-10	180\,\text{m/s} : 6400 \approx 0{,}028\,\text{m/s}
-fi-easy/fy4-10	35 \cdot 0{,}343\,\text{kg}\cdot\text{m/s} = 12\,\text{kg}\cdot\text{m
-fi-easy/fy4-10	45\,000\,\text{kg} - 30\,000\,\text{kg} = 15\,000\,\text{kg}
-fi-easy/fy4-10	= (0{,}40 \cdot 0{,}11 + 0{,}60 \cdot 0{,}27)\,\text{kg}\cdot\text{m/s
 fi-easy/fy4-10	= (0{,}40 \cdot 0{,}50 + 0{,}25 \cdot (-0{,}60))\,\text{kg}\cdot\text{
 fi-easy/fy4-10	= \dfrac{0{,}16 \cdot 4{,}0 - 0{,}16 \cdot (-0{,}44)}{0{,}20}\,\text{m
 fi-easy/fy4-10	= \dfrac{0{,}20 \cdot 0{,}60 - 0{,}20 \cdot (-0{,}10)}{0{,}40}\,\text{
 fi-easy/fy4-10	= \dfrac{0{,}30 \cdot 0{,}60 + 0{,}30 \cdot (-0{,}20)}{0{,}60}\,\text{
 fi-easy/fy4-10	= \dfrac{0{,}60 \cdot 0{,}50 + 0{,}20 \cdot (-0{,}90)}{0{,}60 + 0{,}20
 fi-easy/fy4-10	= \dfrac{0{,}60 \cdot 0{,}80 + 0{,}20 \cdot (-0{,}40)}{0{,}60 + 0{,}20
-fi-easy/fy4-10	= \tfrac12 \cdot 85\,\text{kg} \cdot (6{,}0\,\text{m/s})^2 - \tfrac12 
-fi-easy/fy4-10	= \tfrac{1}{2} \cdot 0{,}30\,\text{kg} \cdot (0{,}60\,\text{m/s})^2 - 
-fi-easy/fy4-10	\Delta p = F\,\Delta t = 3{,}0\,\text{N} \cdot 0{,}10\,\text{s} = 0{,}
-fi-easy/fy4-10	m_1 v_1 + m_2 v_2 = (m_1 + m_2)\,v'
-fi-easy/fy4-10	m_2 = 0{,}90\,\text{kg} - 0{,}30\,\text{kg} = 0{,}60\,\text{kg}
-fi-easy/fy4-10	m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}'
-fi-easy/fy4-10	m_\text{B}/(m_\text{A} + m_\text{B}) = 0{,}60/0{,}90
-fi-easy/fy4-10	v' = \dfrac{0{,}20 - 0{,}18}{0{,}80}\,\text{m/s} = 0{,}025\,\text{m/s}
 fi-easy/fy4-10	v' = \dfrac{0{,}50 \cdot 0{,}40 + 0{,}30 \cdot 0{,}60}{0{,}80}\,\text{
 fi-easy/fy4-10	v' = \dfrac{0{,}60 \cdot 0{,}80 + 0{,}20 \cdot 0{,}40}{0{,}60 + 0{,}20
-fi-easy/fy4-11	14{,}2 + 11{,}75 + 7{,}85 + 3{,}9 + 1{,}45 + 0{,}35 = 39{,}5\,\text{m/
-fi-easy/fy4-11	24{,}8\,\text{kN} \cdot 0{,}050\,\text{s} = 1{,}24\,\text{kN}\cdot\tex
-fi-easy/fy4-11	6{,}3\,\text{kN} \cdot 0{,}200\,\text{s} = 1{,}26\,\text{kN}\cdot\text
-fi-easy/fy4-11	80{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 785\,\text{N}
-fi-easy/fy4-11	= (11{,}11\,\text{m/s})^2 - 2 \cdot 9{,}0\,\text{m/s}^2 \cdot 1{,}080\
-fi-easy/fy4-11	= (22{,}22\,\text{m/s})^2 - 2 \cdot 6{,}0\,\text{m/s}^2 \cdot 22{,}78\
-fi-easy/fy4-11	= 16{,}67\,\text{m/s} \cdot 1{,}0\,\text{s} + \dfrac{(16{,}67\,\text{m
-fi-easy/fy4-11	= 20\,\text{m/s} \cdot 1{,}0\,\text{s} + \tfrac{1}{2} \cdot 20\,\text{
-fi-easy/fy4-11	= 22{,}22\,\text{m/s} \cdot 1{,}0\,\text{s} + \dfrac{(22{,}22\,\text{m
-fi-easy/fy4-11	= 8{,}333\,\text{m/s} \cdot 1{,}0\,\text{s} + \dfrac{(8{,}333\,\text{m
 fi-easy/fy4-11	\sqrt{(22{,}22\,\text{m/s})^2 - 2 \cdot 5{,}1\,\text{m/s}^2 \cdot (55 
-fi-easy/fy4-12	(4{,}0\,\text{m/s})^2 + 2 \cdot 0{,}50\,\text{m/s}^2 \cdot (-20\,\text
-fi-easy/fy4-12	12\,\text{m} + 4{,}0\,\text{m/s} \cdot 6{,}0\,\text{s} = 36\,\text{m}
-fi-easy/fy4-12	150\,\text{m} + 20\,\text{m/s} \cdot 30\,\text{s} = 750\,\text{m}
-fi-easy/fy4-12	2{,}0\,\text{m/s} + 3{,}0\,\text{m/s} = 5{,}0\,\text{m/s}
-fi-easy/fy4-12	42\,\text{m} - 1{,}0\,\text{m/s} \cdot 9{,}0\,\text{s} = 33\,\text{m}
-fi-easy/fy4-12	60\,\text{m} + 5{,}0\,\text{m/s} \cdot 20\,\text{s} = 160\,\text{m}
-fi-easy/fy4-12	60\,\text{m} - 2{,}5\,\text{m/s} \cdot 10\,\text{s} = 35\,\text{m}
-fi-easy/fy4-12	6{,}0\,\text{m} + 3{,}0\,\text{m/s} \cdot 9{,}0\,\text{s} = 33\,\text{
-fi-easy/fy4-12	70\,\text{m} - 2{,}0\,\text{m/s} \cdot 10\,\text{s} = 50\,\text{m}
-fi-easy/fy4-12	7{,}0\,\text{m/s} \cdot (7{,}0\,\text{s} - 3{,}0\,\text{s}) = 28\,\tex
-fi-easy/fy4-12	= (5{,}0\,\text{m/s})^2 + 2 \cdot 1{,}0\,\text{m/s}^2 \cdot (-8{,}0\,\
-fi-easy/fy4-12	= (8{,}0\,\text{m/s})^2 + 2 \cdot 2{,}0\,\text{m/s}^2 \cdot 180\,\text
-fi-easy/fy4-12	= 20\,\text{m/s} \cdot 6{,}0\,\text{s} + \tfrac12 \cdot 1{,}5\,\text{m
-fi-easy/fy4-12	= 36\,\text{m}^2/\text{s}^2 + 2 \cdot 2{,}0 \cdot 6{,}0 \cdot 1{,}5\,\
-fi-easy/fy4-12	= \tfrac12 \cdot 0{,}50\,\text{m/s}^2 \cdot (8{,}0\,\text{s})^2 + 20\,
-fi-easy/fy4-12	\tfrac12 \cdot 2{,}0\,\text{m/s}^2 \cdot (10\,\text{s})^2 = 100\,\text
-fi-easy/fy4-12	\tfrac12 \cdot 2{,}0\,\text{m/s}^2 \cdot (6{,}0\,\text{s})^2 = 36\,\te
-fi-easy/fy4-12	\tfrac12 \cdot 3{,}0\,\text{m/s}^2 \cdot (8{,}0\,\text{s})^2 = 96\,\te
-fi-easy/fy4-12	x = \tfrac12\,a\,t^2 = \tfrac12 \cdot 2{,}0\,\text{m/s}^2 \cdot (5{,}0
-fi-easy/fy4-13	(m_1 + m_2)\,a = 80\,\text{kg} \cdot 1{,}2\,\text{m/s}^2
-fi-easy/fy4-13	0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 4{,}9\,\text{N}
 fi-easy/fy4-13	0{,}60\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 5{,}9\,\text{N}
-fi-easy/fy4-13	0{,}80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 7{,}8\,\text{N}
 fi-easy/fy4-13	1{,}05\,\text{m/s} \cdot 0{,}857\,\text{s} \approx 0{,}90\,\text{m}
-fi-easy/fy4-13	54\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 27\,\text{kN}
-fi-easy/fy4-13	= (50\,\text{kg} + 30\,\text{kg}) \cdot (9{,}81\,\text{m/s}^2 + 1{,}2\
-fi-easy/fy4-13	= 0{,}50\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 - 2{,}84\,\text{m/s}^2
-fi-easy/fy4-13	= 0{,}60\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 - 2{,}0\,\text{m/s}^2)
-fi-easy/fy4-13	= 18\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2
-fi-easy/fy4-13	= \dfrac{2 \cdot 800\,\text{kg} \cdot 1200\,\text{kg}}{800\,\text{kg} 
-fi-easy/fy4-13	a = \dfrac{(m_2 - m_1)\,g}{m_1 + m_2} = \dfrac{0{,}40\,\text{kg} \cdot
-fi-easy/fy4-13	m_2 a = 0{,}50\,\text{kg} \cdot 1{,}962\,\text{m/s}^2
-fi-easy/fy4-14	0{,}0200\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 0{,}196\,\text{N}
-fi-easy/fy4-14	0{,}150\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}5\,\text{N}
-fi-easy/fy4-14	0{,}270\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 2{,}65\,\text{N}
-fi-easy/fy4-14	8{,}0\,\text{m/s} : 9{,}81\,\text{m/s}^2 = 0{,}82\,\text{s}
-fi-easy/fy4-14	= 0{,}0200\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 4{,}50\,\text{m/s}^2
-fi-easy/fy4-14	= 0{,}150\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 6{,}5\,\text{m/s}^2)
-fi-easy/fy4-14	= 0{,}450\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + 1{,}20\,\text{N}
-fi-easy/fy4-14	= 70{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 6{,}00\,\text{m/s}^2)
-fi-easy/fy4-14	= 75{,}0\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 - 1{,}50\,\text{m/s}^2
 fi-easy/fy4-14	= 75{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\sin 30{,}0^\circ
 fi-easy/fy4-14	= 75{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\sin 30{,}0^\circ - 
-fi-easy/fy4-14	= 82{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 17{,}5\,\text{m/s}^2)
-fi-easy/fy4-14	G = mg = 0{,}270\,\text{kg} \cdot 9{,}81\,\text{m/s}^2
-fi-easy/fy4-15	1000 \cdot 9{,}81 \cdot 85\,\text{J} = 0{,}83\,\text{MJ}
-fi-easy/fy4-15	1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 15\,\text{m} = 150\,\text
-fi-easy/fy4-15	1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 24\,\text{m} = 240\,\text
-fi-easy/fy4-15	1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 8\,\text{m} = 80\,\text{k
-fi-easy/fy4-15	100\,\text{kW} \cdot 1500\,\text{h} = 150\,000\,\text{kWh}
-fi-easy/fy4-15	1{,}036 \cdot 10^{9}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 85{,}
-fi-easy/fy4-15	1{,}25 \cdot 1500 \cdot 8\,\text{kg} = 15\,000\,\text{kg}
-fi-easy/fy4-15	1{,}252 \cdot 13^3\,\text{kW} \approx 2750\,\text{kW} = 2{,}8\,\text{M
-fi-easy/fy4-15	40 + 52 + 62 + 58 + 48 + 40 = 300\,\text{MW}
-fi-easy/fy4-15	4{,}35\,\text{MW} \cdot 4320\,\text{h} \approx 18{,}8\,\text{GWh}
-fi-easy/fy4-15	85 + 120 + 45 + 30 + 28 + 40 = 348\,\text{m}^3\text{/s}
-fi-easy/fy4-15	= 0{,}75 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0{,}850\,\tfr
-fi-easy/fy4-15	= 0{,}800 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 3{,}20\,\tfr
-fi-easy/fy4-15	= 0{,}85 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 12\,\tfrac{\t
-fi-easy/fy4-15	= 0{,}900 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{
-fi-easy/fy4-15	= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 35{,}0\,\tfrac{\text{m}^3}
 fi-easy/fy4-15	= \dfrac{75{,}0 \cdot 10^{6}}{0{,}850 \cdot 1000 \cdot 9{,}81 \cdot 14
-fi-easy/fy4-15	= \tfrac{1}{2} \cdot 0{,}45 \cdot 1{,}29\,\tfrac{\text{kg}}{\text{m}^3
-fi-easy/fy4-15	= \tfrac{1}{2} \cdot 1{,}25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1500\
-fi-easy/fy4-15	E = 100\,\text{kW} \cdot 24\,\text{h} \approx 2400\,\text{kWh}
 fi-easy/fy4-15	P = 0{,}85 \cdot 1000 \cdot 12 \cdot 9{,}81 \cdot 8{,}0\,\text{W}
-fi-easy/fy4-15	P = 0{,}85 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 2{,}0\,\tfr
 fi-easy/fy4-15	P = \tfrac{1}{2}\eta\rho A v = 0{,}5 \cdot 0{,}40 \cdot 1{,}25 \cdot 2
-fi-easy/fy4-16	(2124 - 687)\,\text{N} : 70{,}0\,\text{kg} \approx 20\,\text{m/s}^2
-fi-easy/fy4-16	(800 - 735{,}75)\,\text{N} : 75{,}0\,\text{kg} \approx 0{,}86\,\text{m
-fi-easy/fy4-16	10{,}4 + 49{,}6 = 16{,}5 + 43{,}5 = 34{,}0 + 26{,}0 = 60{,}0
-fi-easy/fy4-16	16{,}33\,\text{m}\cdot\cos 14{,}0\,{}^\circ = 15{,}85\,\text{m}
-fi-easy/fy4-16	17{,}5\,{}^\circ + 18{,}0\,{}^\circ + 18{,}5\,{}^\circ + 17{,}0\,{}^\c
-fi-easy/fy4-16	62{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 608\,\text{N}
-fi-easy/fy4-16	70{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 687\,\text{N}
 fi-easy/fy4-16	75{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 735{,}75\,\text{N}
-fi-easy/fy4-16	9{,}81\cdot 18{,}0\cdot\sin 12{,}0^\circ\,\tfrac{\text{m}^2}{\text{s}^
-fi-easy/fy4-16	= 70{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + \dfrac{87\,500\,\text{
-fi-easy/fy4-16	= 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + \dfrac{82\,524\,\text{
 fi-easy/fy4-16	= 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot 125\,\text{m}
 fi-easy/fy4-16	= \tfrac12\cdot 80{,}0\,\text{kg}\cdot\left(52{,}0^2 - 6{,}0^2\right)\
-fi-easy/fy4-16	F_\mu = \mu mg = 0{,}200 \cdot 20{,}0\,\text{kg} \cdot 9{,}81\,\text{m
-fi-easy/fy4-16	N = 55{,}0\,\text{kg}\cdot(9{,}81 - 1{,}20)\,\text{m/s}^2
-fi-easy/fy4-16	T = 18{,}0\,\text{kg}\cdot 8{,}31\,\text{m/s}^2 \approx 150\,\text{N}
-fi-easy/fy4-16	\Delta E_\text{mek} = \left(\tfrac12 mv_2^2 - \tfrac12 mv_1^2\right) -
-fi-easy/fy4-16	\approx 78{,}0\,\text{kg}\cdot(9{,}81 + 12{,}7)\,\text{m/s}^2
-fi-easy/fy4-16	\sqrt{2\cdot 9{,}81\cdot 3{,}74}\,\text{m/s} \approx 8{,}6\,\text{m/s}
-fi-easy/fy4-16	mgL\sin\alpha - \mu mg\cos\alpha\cdot L = \tfrac12 mv_2^2
-fi-easy/fy4-16	mgL\sin\alpha - \mu_1 mg\cos\alpha\cdot L - \mu_2 mgd = 0
-fi-easy/fy4-16	mgL\sin\alpha - \mu_1 mg\cos\alpha\cdot L = \tfrac12 mv^2
 fi-easy/fy4-16	mgh = 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot 125\,\text{m}
-fi-easy/fy4-2	(2{,}0\,\text{m/s} + 7{,}0\,\text{m/s}) : 2 = 4{,}5\,\text{m/s}
-fi-easy/fy4-2	(4{,}0\,\text{m/s} + 8{,}72\,\text{m/s}) : 2 \approx 6{,}36\,\text{m/s
-fi-easy/fy4-2	0{,}126\,\text{m/s} \cdot 0{,}40\,\text{s} \approx 0{,}05\,\text{m}
-fi-easy/fy4-2	1425\,\text{m} - 262{,}5\,\text{m} = 1162{,}5\,\text{m}
-fi-easy/fy4-2	2{,}42 - 0{,}81 \cdot 4{,}0 \approx -0{,}82\,\text{m/s}
-fi-easy/fy4-2	3{,}10\,\text{m/s} : 9{,}72\,\text{m/s}^2 \approx 0{,}32\,\text{s}
-fi-easy/fy4-2	8{,}00\,\text{m/s} : 9{,}81\,\text{m/s}^2 \approx 0{,}82\,\text{s}
-fi-easy/fy4-2	9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}
-fi-easy/fy4-2	9{,}81\,\text{m/s}^2 \cdot 1{,}50\,\text{s} \approx 14{,}7\,\text{m/s}
-fi-easy/fy4-2	= (8{,}00\,\text{m/s})^2 + 2 \cdot 9{,}81\,\text{m/s}^2 \cdot 6{,}00\,
-fi-easy/fy4-2	= 15{,}0\,\text{m/s} \cdot 1{,}529\,\text{s} - \tfrac{1}{2} \cdot 9{,}
-fi-easy/fy4-2	= 20\,\text{m/s} \cdot 4{,}0\,\text{s} + \tfrac{1}{2} \cdot (-5{,}0\,\
-fi-easy/fy4-2	= 2{,}0\,\text{m/s} \cdot 5{,}0\,\text{s} + \tfrac{1}{2} \cdot 5{,}0\,
-fi-easy/fy4-2	= 3{,}10\,\text{m/s} + 2 \cdot (-4{,}86\,\text{m/s}^2) \cdot 0{,}500\,
-fi-easy/fy4-2	= \tfrac{1}{2} \cdot 15{,}0\,\text{m/s} \cdot 20{,}0\,\text{s} + 15{,}
-fi-easy/fy4-2	\sqrt{2 \cdot 20\,\text{m} : 9{,}81\,\text{m/s}^2} \approx 2{,}02\,\te
-fi-easy/fy4-2	v = g\,t = 9{,}81\,\text{m/s}^2 \cdot 2{,}0\,\text{s} \approx 19{,}6\,
-fi-easy/fy4-2	y = -4{,}86\,\tfrac{\text{m}}{\text{s}^2} \cdot t^2 + 3{,}10\,\tfrac{\
-fi-easy/fy4-3	410\,\text{N} + 40\,\text{N} + 30\,\text{N} = 480\,\text{N}
 fi-easy/fy4-4	0{,}17\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}7\,\text{N}
 fi-easy/fy4-4	0{,}50\,\text{kg} \cdot 2{,}4\,\text{m/s}^2 = 1{,}20\,\text{N}
-fi-easy/fy4-4	1200\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 12\,\text{kN}
-fi-easy/fy4-4	120\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}18\,\text{kN}
-fi-easy/fy4-4	15\,000\,\text{kg} \cdot 1{,}622\,\text{m/s}^2 \approx 24\,\text{kN}
-fi-easy/fy4-4	2{,}01\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 19{,}7\,\text{N}
-fi-easy/fy4-4	3{,}0\,\text{m/s} - 0{,}75\,\text{m/s}^2 \cdot 4{,}0\,\text{s} = 0
-fi-easy/fy4-4	70\,\text{kg}\cdot 10{,}81\,\text{m/s}^2 = 756{,}7\,\text{N}
-fi-easy/fy4-4	820\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 8044{,}2\,\text{N}
-fi-easy/fy4-4	900\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 8{,}8\,\text{kN}
-fi-easy/fy4-4	= 15\,000\,\text{kg} \cdot (1{,}622\,\text{m/s}^2 + 0{,}50\,\text{m/s}
-fi-easy/fy4-4	= 2{,}82\,\text{N} : 2{,}01\,\text{kg}
-fi-easy/fy4-4	= 70\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 0{,}75\,\text{m/s}^2)
-fi-easy/fy4-4	= 820\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 1{,}20\,\text{m/s}^2)
-fi-easy/fy4-4	N = mg = 1{,}2\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 11{,}8\,\t
-fi-easy/fy4-4	T = m(g - a) = 820\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 1{,}20\,\tex
-fi-easy/fy4-4	a = \dfrac{F - F_\mu}{m} = \dfrac{5{,}0\,\text{N} - 3{,}0\,\text{N}}{1
-fi-easy/fy4-5	0{,}039\,\text{N} + 0{,}061\,\text{N} = 0{,}10\,\text{N}
-fi-easy/fy4-5	1{,}19\,\text{m/s}^2\cdot 2{,}0\,\text{s} = 2{,}38\,\text{m/s}
-fi-easy/fy4-5	881\,\text{N} + 878\,\text{N} + 883\,\text{N} = 2642\,\text{N}
-fi-easy/fy4-5	= 0{,}60\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 - 2{,}0\,\text{N}\cdot\s
-fi-easy/fy4-5	= 2{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 1{,}5\,\text{m/s}^2)
-fi-easy/fy4-5	N = 12\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + 60\,\text{N}\cdot\sin 30
-fi-easy/fy4-6	160\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1570\,\text{N}
-fi-easy/fy4-6	24^\circ + 26^\circ + 25^\circ + 27^\circ + 25^\circ = 127^\circ
-fi-easy/fy4-6	= (0{,}347 + 0{,}357 + 0{,}347 + 0{,}352) : 4
 fi-easy/fy4-6	= 0{,}60\cdot 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\cos 35^\cir
-fi-easy/fy4-6	= 1{,}62\,\text{m/s}^2\cdot(\sin 30^\circ - 0{,}342\cdot\cos 30^\circ)
-fi-easy/fy4-6	= 9{,}81\,\text{m/s}^2\cdot(\sin 20^\circ + 0{,}25\cdot\cos 20^\circ)
-fi-easy/fy4-6	= 9{,}81\,\text{m/s}^2\cdot(\sin 30^\circ - 0{,}35\cdot\cos 30^\circ)
 fi-easy/fy4-6	= \dfrac{150\,\text{N} - 0{,}30\cdot 40\,\text{kg}\cdot 9{,}81\,\text{
-fi-easy/fy4-6	F_{\mu\text{D}} = 25\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot \sin 
 fi-easy/fy4-6	N = 20\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\cos 20^\circ \approx 
-fi-easy/fy4-6	T - mg\sin 20^\circ - \mu N = 0
-fi-easy/fy4-6	T = mg\sin 20^\circ + \mu mg\cos 20^\circ \approx 67\,\text{N} + 46\,\
-fi-easy/fy4-7	2{,}5\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 8\,\text{m} = 200\,\text
-fi-easy/fy4-7	= 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}80\,\text{m}
-fi-easy/fy4-7	= 0{,}500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}2808\,\text{
-fi-easy/fy4-7	= 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}90 - 0{,}75)
-fi-easy/fy4-7	= \tfrac{1}{2} \cdot 1{,}20\,\text{kg} \cdot (10{,}0\,\text{m/s})^2 + 
-fi-easy/fy4-7	E_\text{k} = \tfrac{1}{2} \cdot 1000\,\text{kg} \cdot (10\,\text{m/s})
 fi-easy/fy4-7	E_\text{mek} = \tfrac{1}{2}\,mv^2 + mgh = \tfrac{1}{2} \cdot 70\,\text
-fi-easy/fy4-7	h = \tfrac{v}{2} \cdot \tfrac{v}{g} = \tfrac{v^2}{2g} = \tfrac{(10\,\t
 fi-easy/fy4-8	0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 4{,}9\,\text{N}
 fi-easy/fy4-8	1{,}20 \to 0{,}77 \to 0{,}49 \to 0{,}32 \to 0{,}20\,\text{m}
-fi-easy/fy4-8	6000\,\text{N} : 1200\,\text{kg} = 5{,}0\,\text{m/s}^2
-fi-easy/fy4-8	= 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}20 - 0{,}77
-fi-easy/fy4-8	= 80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 12{,}0\,\text{m}
 fi-easy/fy4-8	= \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot (18{,}0 - 7{,}0)\,\text{m}}
-fi-easy/fy4-8	= \tfrac12 \cdot 80\,\text{kg} \cdot (16 - 169)\,\text{m}^2/\text{s}^2
-fi-easy/fy4-8	E_\text{k} = mgh + 30\,\text{J} = 73{,}6\,\text{J} + 30\,\text{J} = 10
-fi-easy/fy4-8	F_\text{vast}\,h_1 = 200\,\text{N} \cdot 10\,\text{m} = 2{,}0\,\text{k
-fi-easy/fy4-8	W = -F_\mu h = -8{,}0\,\text{N} \cdot 1{,}5\,\text{m} = -12\,\text{J}
-fi-easy/fy4-8	\sqrt{2 \cdot 9{,}81 \cdot 1{,}835}\,\text{m/s} = 6{,}0\,\text{m/s}
-fi-easy/fy4-8	\tfrac{1}{2} mv_1^2 + mgh_1 - F_\text{vast} s = mgh_2
-fi-easy/fy4-9	-1{,}50\,\text{m/s} + 2{,}88\,\text{m/s} = +1{,}38\,\text{m/s}
-fi-easy/fy4-9	0{,}046\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 0{,}45\,\text{N}
-fi-easy/fy4-9	0{,}060\,\text{kg} \cdot 14\,\text{m/s} = 0{,}84\,\text{N}\cdot\text{s
-fi-easy/fy4-9	0{,}16\,\text{kg} \cdot 25\,\text{m/s} = 4{,}0\,\text{kg}\cdot\text{m/
-fi-easy/fy4-9	0{,}2\,\text{kg} \cdot 30\,\text{m/s} = 6\,\text{kg}\cdot\text{m/s}
-fi-easy/fy4-9	0{,}3\,\text{kg} \cdot 20\,\text{m/s} = 6\,\text{kg}\cdot\text{m/s}
 fi-easy/fy4-9	0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 4{,}2\,\text{N}
-fi-easy/fy4-9	1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 12\,\text{kN}
-fi-easy/fy4-9	20\,\text{kg} \cdot 1{,}8\,\text{m/s} = 36\,\text{kg}\cdot\text{m/s}
-fi-easy/fy4-9	60\,\text{kg} \cdot 2{,}0\,\text{m/s} = 120\,\text{kg}\cdot\text{m/s}
 fi-easy/fy4-9	6{,}0\,\text{N}\cdot\text{s} : 15\,\text{kg} = 0{,}40\,\text{m/s}
-fi-easy/fy4-9	70\,\text{kg} \cdot 6{,}0\,\text{m/s} = 420\,\text{kg}\cdot\text{m/s}
-fi-easy/fy4-9	= 0{,}60\,\text{kg} \cdot (3{,}924 + 4{,}905)\,\text{m/s}
-fi-easy/fy4-9	= 5{,}886\,\text{N} + \dfrac{0{,}60\,\text{kg} \cdot 4{,}905\,\text{m/
-fi-easy/fy4-9	I = \Delta p = mv - mv_0 = m(v - v_0)
-fi-easy/fy4-9	\Delta p = 0{,}40\,\text{kg} \cdot (-5{,}0 - 5{,}0)\,\text{m/s} = -4{,
-fi-easy/fy4-9	\Delta p = 1{,}0\,\text{kg} \cdot (-2{,}00 - 2{,}00)\,\text{m/s} = -4{
-fi-easy/fy4-9	\Delta p = m(v - v_0) = 0{,}40\,\text{kg} \cdot (5{,}0 - 5{,}0)\,\text
-fi-easy/fy4-9	a\,\Delta t = 3{,}0\,\text{m/s}^2 \cdot 0{,}50\,\text{s} = 1{,}5\,\tex
 fi-easy/fy4-9	p = mv = 1800 \cdot 36 = 64\,800\,\text{kg}\cdot\text{m/s}
 fi-easy/fy5-1	165{,}5\,\text{N}\cdot 0{,}3625\,\text{m} = 60{,}0\,\text{Nm}
 fi-easy/fy5-1	60{,}0\,\text{Nm} : 0{,}600\,\text{m} = 100\,\text{N}
@@ -927,240 +546,37 @@ fy3-5	T_2 = T_1 (V_1/V_2)^{\gamma - 1} = 293\,\text{K} \cdot (4/3)^{0{,}4} \
 fy3-5	\Delta U = 250\,\text{J} - 90\,\text{J} = 160\,\text{J}
 fy3-5	\Delta U = Q + W = 10\,\text{J} + 30\,\text{J} = 40\,\text{J}
 fy3-5	\Delta U = Q + W = 250\,\text{J} + 90\,\text{J} = 340\,\text{J}
-fy4-1	14\,\text{m} + (-1{,}5\,\text{m/s}) \cdot 6{,}0\,\text{s} = 5{,}0\,\te
-fy4-1	18\,\text{m} + (-3{,}0\,\text{m/s}) \cdot 5{,}0\,\text{s} = 3{,}0\,\te
-fy4-1	1{,}0\,\text{m} + 1{,}5\,\text{m/s} \cdot 5{,}8\,\text{s} = 9{,}7\,\te
-fy4-1	2{,}0\,\text{m/s} - (-2{,}0\,\text{m/s}) = 4{,}0\,\text{m/s}
-fy4-1	30\,\text{m} + (-3{,}0\,\text{m/s}) \cdot 10\,\text{s} = 0\,\text{m}
-fy4-1	4{,}0\,\text{m} + 2{,}0\,\text{m/s} \cdot 10\,\text{s} = 24\,\text{m}
-fy4-1	= 24\,\text{m} + 5{,}0\,\text{m/s} \cdot (10{,}0\,\text{s} - 7{,}0\,\t
-fy4-1	\Delta x = 12\,\text{m} - 30\,\text{m} = -18\,\text{m}
-fy4-1	v = \dfrac{13\,\text{m} - 5{,}0\,\text{m}}{6{,}0\,\text{s} - 2{,}0\,\t
-fy4-10	(0{,}60 - 0{,}20)\,\text{m/s} : 2 = 0{,}20\,\text{m/s}
-fy4-10	(\tfrac12 \cdot 0{,}20 \cdot 0{,}10^2 + \tfrac12 \cdot 0{,}40 \cdot 0{
-fy4-10	(\tfrac12 \cdot 0{,}40 \cdot 0{,}11^2 + \tfrac12 \cdot 0{,}60 \cdot 0{
-fy4-10	(\tfrac12 \cdot 0{,}50 \cdot 0{,}16^2 + \tfrac12 \cdot 0{,}30 \cdot 0{
-fy4-10	(\tfrac12 \cdot 0{,}50 \cdot 0{,}25^2 + \tfrac12 \cdot 0{,}30 \cdot 0{
-fy4-10	0{,}0255 : 0{,}036 \cdot 100\,\% = 70{,}8\,\%
-fy4-10	0{,}30 \cdot 40 + 0{,}60 \cdot (-2{,}0) = 10{,}8
-fy4-10	0{,}40 \cdot (-0{,}12) + 0{,}60 \cdot 0{,}48 = 0{,}240
-fy4-10	0{,}50 \cdot 0{,}2 + 0{,}30 \cdot 0{,}6 = 0{,}28\,\text{kg}\cdot\text{
-fy4-10	0{,}50\,\text{kg} \cdot 0{,}60\,\text{m/s} = 0{,}30\,\text{kg}\cdot\te
-fy4-10	180\,\text{m/s} : 6400 \approx 0{,}028\,\text{m/s}
-fy4-10	35 \cdot 0{,}343\,\text{kg}\cdot\text{m/s} = 12\,\text{kg}\cdot\text{m
-fy4-10	45\,000\,\text{kg} - 30\,000\,\text{kg} = 15\,000\,\text{kg}
-fy4-10	= (0{,}40 \cdot 0{,}11 + 0{,}60 \cdot 0{,}27)\,\text{kg}\cdot\text{m/s
 fy4-10	= (0{,}40 \cdot 0{,}50 + 0{,}25 \cdot (-0{,}60))\,\text{kg}\cdot\text{
 fy4-10	= \dfrac{0{,}16 \cdot 4{,}0 - 0{,}16 \cdot (-0{,}44)}{0{,}20}\,\text{m
 fy4-10	= \dfrac{0{,}20 \cdot 0{,}60 - 0{,}20 \cdot (-0{,}10)}{0{,}40}\,\text{
 fy4-10	= \dfrac{0{,}30 \cdot 0{,}60 + 0{,}30 \cdot (-0{,}20)}{0{,}60}\,\text{
 fy4-10	= \dfrac{0{,}60 \cdot 0{,}50 + 0{,}20 \cdot (-0{,}90)}{0{,}60 + 0{,}20
 fy4-10	= \dfrac{0{,}60 \cdot 0{,}80 + 0{,}20 \cdot (-0{,}40)}{0{,}60 + 0{,}20
-fy4-10	= \tfrac12 \cdot 85\,\text{kg} \cdot (6{,}0\,\text{m/s})^2 - \tfrac12 
-fy4-10	= \tfrac{1}{2} \cdot 0{,}30\,\text{kg} \cdot (0{,}60\,\text{m/s})^2 - 
-fy4-10	\Delta p = F\,\Delta t = 3{,}0\,\text{N} \cdot 0{,}10\,\text{s} = 0{,}
-fy4-10	m_1 v_1 + m_2 v_2 = (m_1 + m_2)\,v'
-fy4-10	m_2 = 0{,}90\,\text{kg} - 0{,}30\,\text{kg} = 0{,}60\,\text{kg}
-fy4-10	m_\text{A} v_\text{A} + m_\text{B} v_\text{B} = m_\text{A} v_\text{A}'
-fy4-10	m_\text{B}/(m_\text{A} + m_\text{B}) = 0{,}60/0{,}90
-fy4-10	v' = \dfrac{0{,}20 - 0{,}18}{0{,}80}\,\text{m/s} = 0{,}025\,\text{m/s}
 fy4-10	v' = \dfrac{0{,}50 \cdot 0{,}40 + 0{,}30 \cdot 0{,}60}{0{,}80}\,\text{
 fy4-10	v' = \dfrac{0{,}60 \cdot 0{,}80 + 0{,}20 \cdot 0{,}40}{0{,}60 + 0{,}20
-fy4-11	14{,}2 + 11{,}75 + 7{,}85 + 3{,}9 + 1{,}45 + 0{,}35 = 39{,}5\,\text{m/
-fy4-11	24{,}8\,\text{kN} \cdot 0{,}050\,\text{s} = 1{,}24\,\text{kN}\cdot\tex
-fy4-11	6{,}3\,\text{kN} \cdot 0{,}200\,\text{s} = 1{,}26\,\text{kN}\cdot\text
-fy4-11	80{,}0\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 785\,\text{N}
-fy4-11	= (11{,}11\,\text{m/s})^2 - 2 \cdot 9{,}0\,\text{m/s}^2 \cdot 1{,}080\
-fy4-11	= (22{,}22\,\text{m/s})^2 - 2 \cdot 6{,}0\,\text{m/s}^2 \cdot 22{,}78\
-fy4-11	= 16{,}67\,\text{m/s} \cdot 1{,}0\,\text{s} + \dfrac{(16{,}67\,\text{m
-fy4-11	= 20\,\text{m/s} \cdot 1{,}0\,\text{s} + \tfrac{1}{2} \cdot 20\,\text{
-fy4-11	= 22{,}22\,\text{m/s} \cdot 1{,}0\,\text{s} + \dfrac{(22{,}22\,\text{m
-fy4-11	= 8{,}333\,\text{m/s} \cdot 1{,}0\,\text{s} + \dfrac{(8{,}333\,\text{m
 fy4-11	\sqrt{(22{,}22\,\text{m/s})^2 - 2 \cdot 5{,}1\,\text{m/s}^2 \cdot (55 
-fy4-12	(4{,}0\,\text{m/s})^2 + 2 \cdot 0{,}50\,\text{m/s}^2 \cdot (-20\,\text
-fy4-12	12\,\text{m} + 4{,}0\,\text{m/s} \cdot 6{,}0\,\text{s} = 36\,\text{m}
-fy4-12	150\,\text{m} + 20\,\text{m/s} \cdot 30\,\text{s} = 750\,\text{m}
-fy4-12	2{,}0\,\text{m/s} + 3{,}0\,\text{m/s} = 5{,}0\,\text{m/s}
-fy4-12	42\,\text{m} - 1{,}0\,\text{m/s} \cdot 9{,}0\,\text{s} = 33\,\text{m}
-fy4-12	60\,\text{m} + 5{,}0\,\text{m/s} \cdot 20\,\text{s} = 160\,\text{m}
-fy4-12	60\,\text{m} - 2{,}5\,\text{m/s} \cdot 10\,\text{s} = 35\,\text{m}
-fy4-12	6{,}0\,\text{m} + 3{,}0\,\text{m/s} \cdot 9{,}0\,\text{s} = 33\,\text{
-fy4-12	70\,\text{m} - 2{,}0\,\text{m/s} \cdot 10\,\text{s} = 50\,\text{m}
-fy4-12	7{,}0\,\text{m/s} \cdot (7{,}0\,\text{s} - 3{,}0\,\text{s}) = 28\,\tex
-fy4-12	= (5{,}0\,\text{m/s})^2 + 2 \cdot 1{,}0\,\text{m/s}^2 \cdot (-8{,}0\,\
-fy4-12	= (8{,}0\,\text{m/s})^2 + 2 \cdot 2{,}0\,\text{m/s}^2 \cdot 180\,\text
-fy4-12	= 20\,\text{m/s} \cdot 6{,}0\,\text{s} + \tfrac12 \cdot 1{,}5\,\text{m
-fy4-12	= 36\,\text{m}^2/\text{s}^2 + 2 \cdot 2{,}0 \cdot 6{,}0 \cdot 1{,}5\,\
-fy4-12	= \tfrac12 \cdot 0{,}50\,\text{m/s}^2 \cdot (8{,}0\,\text{s})^2 + 20\,
-fy4-12	\tfrac12 \cdot 2{,}0\,\text{m/s}^2 \cdot (10\,\text{s})^2 = 100\,\text
-fy4-12	\tfrac12 \cdot 2{,}0\,\text{m/s}^2 \cdot (6{,}0\,\text{s})^2 = 36\,\te
-fy4-12	\tfrac12 \cdot 3{,}0\,\text{m/s}^2 \cdot (8{,}0\,\text{s})^2 = 96\,\te
-fy4-12	x = \tfrac12\,a\,t^2 = \tfrac12 \cdot 2{,}0\,\text{m/s}^2 \cdot (5{,}0
-fy4-13	(m_1 + m_2)\,a = 80\,\text{kg} \cdot 1{,}2\,\text{m/s}^2
-fy4-13	0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 4{,}9\,\text{N}
 fy4-13	0{,}60\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 5{,}9\,\text{N}
-fy4-13	0{,}80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 7{,}8\,\text{N}
 fy4-13	1{,}05\,\text{m/s} \cdot 0{,}857\,\text{s} \approx 0{,}90\,\text{m}
-fy4-13	54\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2 = 27\,\text{kN}
-fy4-13	= (50\,\text{kg} + 30\,\text{kg}) \cdot (9{,}81\,\text{m/s}^2 + 1{,}2\
-fy4-13	= 0{,}50\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 - 2{,}84\,\text{m/s}^2
-fy4-13	= 0{,}60\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 - 2{,}0\,\text{m/s}^2)
-fy4-13	= 18\,000\,\text{kg} \cdot 0{,}50\,\text{m/s}^2
-fy4-13	= \dfrac{2 \cdot 800\,\text{kg} \cdot 1200\,\text{kg}}{800\,\text{kg} 
-fy4-13	a = \dfrac{(m_2 - m_1)\,g}{m_1 + m_2} = \dfrac{0{,}40\,\text{kg} \cdot
-fy4-13	m_2 a = 0{,}50\,\text{kg} \cdot 1{,}962\,\text{m/s}^2
-fy4-14	0{,}0200\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 0{,}196\,\text{N}
-fy4-14	0{,}150\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}5\,\text{N}
-fy4-14	0{,}270\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 2{,}65\,\text{N}
-fy4-14	8{,}0\,\text{m/s} : 9{,}81\,\text{m/s}^2 = 0{,}82\,\text{s}
-fy4-14	= 0{,}0200\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 4{,}50\,\text{m/s}^2
-fy4-14	= 0{,}150\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 6{,}5\,\text{m/s}^2)
-fy4-14	= 0{,}450\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + 1{,}20\,\text{N}
-fy4-14	= 70{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 6{,}00\,\text{m/s}^2)
-fy4-14	= 75{,}0\,\text{kg} \cdot (9{,}81\,\text{m/s}^2 - 1{,}50\,\text{m/s}^2
 fy4-14	= 75{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\sin 30{,}0^\circ
 fy4-14	= 75{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\sin 30{,}0^\circ - 
-fy4-14	= 82{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 17{,}5\,\text{m/s}^2)
-fy4-14	G = mg = 0{,}270\,\text{kg} \cdot 9{,}81\,\text{m/s}^2
-fy4-15	1000 \cdot 9{,}81 \cdot 85\,\text{J} = 0{,}83\,\text{MJ}
-fy4-15	1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 15\,\text{m} = 150\,\text
-fy4-15	1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 24\,\text{m} = 240\,\text
-fy4-15	1000\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 8\,\text{m} = 80\,\text{k
-fy4-15	100\,\text{kW} \cdot 1500\,\text{h} = 150\,000\,\text{kWh}
-fy4-15	1{,}036 \cdot 10^{9}\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 85{,}
-fy4-15	1{,}25 \cdot 1500 \cdot 8\,\text{kg} = 15\,000\,\text{kg}
-fy4-15	1{,}252 \cdot 13^3\,\text{kW} \approx 2750\,\text{kW} = 2{,}8\,\text{M
-fy4-15	40 + 52 + 62 + 58 + 48 + 40 = 300\,\text{MW}
-fy4-15	4{,}35\,\text{MW} \cdot 4320\,\text{h} \approx 18{,}8\,\text{GWh}
-fy4-15	85 + 120 + 45 + 30 + 28 + 40 = 348\,\text{m}^3\text{/s}
-fy4-15	= 0{,}75 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 0{,}850\,\tfr
-fy4-15	= 0{,}800 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 3{,}20\,\tfr
-fy4-15	= 0{,}85 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 12\,\tfrac{\t
-fy4-15	= 0{,}900 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 120\,\tfrac{
-fy4-15	= 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 35{,}0\,\tfrac{\text{m}^3}
 fy4-15	= \dfrac{75{,}0 \cdot 10^{6}}{0{,}850 \cdot 1000 \cdot 9{,}81 \cdot 14
-fy4-15	= \tfrac{1}{2} \cdot 0{,}45 \cdot 1{,}29\,\tfrac{\text{kg}}{\text{m}^3
-fy4-15	= \tfrac{1}{2} \cdot 1{,}25\,\tfrac{\text{kg}}{\text{m}^3} \cdot 1500\
-fy4-15	E = 100\,\text{kW} \cdot 24\,\text{h} \approx 2400\,\text{kWh}
 fy4-15	P = 0{,}85 \cdot 1000 \cdot 12 \cdot 9{,}81 \cdot 8{,}0\,\text{W}
-fy4-15	P = 0{,}85 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 2{,}0\,\tfr
 fy4-15	P = \tfrac{1}{2}\eta\rho A v = 0{,}5 \cdot 0{,}40 \cdot 1{,}25 \cdot 2
-fy4-16	(2124 - 687)\,\text{N} : 70{,}0\,\text{kg} \approx 20\,\text{m/s}^2
-fy4-16	(800 - 735{,}75)\,\text{N} : 75{,}0\,\text{kg} \approx 0{,}86\,\text{m
-fy4-16	10{,}4 + 49{,}6 = 16{,}5 + 43{,}5 = 34{,}0 + 26{,}0 = 60{,}0
-fy4-16	16{,}33\,\text{m}\cdot\cos 14{,}0\,{}^\circ = 15{,}85\,\text{m}
-fy4-16	17{,}5\,{}^\circ + 18{,}0\,{}^\circ + 18{,}5\,{}^\circ + 17{,}0\,{}^\c
-fy4-16	62{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 608\,\text{N}
-fy4-16	70{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 687\,\text{N}
 fy4-16	75{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 735{,}75\,\text{N}
-fy4-16	9{,}81\cdot 18{,}0\cdot\sin 12{,}0^\circ\,\tfrac{\text{m}^2}{\text{s}^
-fy4-16	= 70{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + \dfrac{87\,500\,\text{
-fy4-16	= 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + \dfrac{82\,524\,\text{
 fy4-16	= 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot 125\,\text{m}
 fy4-16	= \tfrac12\cdot 80{,}0\,\text{kg}\cdot\left(52{,}0^2 - 6{,}0^2\right)\
-fy4-16	F_\mu = \mu mg = 0{,}200 \cdot 20{,}0\,\text{kg} \cdot 9{,}81\,\text{m
-fy4-16	N = 55{,}0\,\text{kg}\cdot(9{,}81 - 1{,}20)\,\text{m/s}^2
-fy4-16	T = 18{,}0\,\text{kg}\cdot 8{,}31\,\text{m/s}^2 \approx 150\,\text{N}
-fy4-16	\Delta E_\text{mek} = \left(\tfrac12 mv_2^2 - \tfrac12 mv_1^2\right) -
-fy4-16	\approx 78{,}0\,\text{kg}\cdot(9{,}81 + 12{,}7)\,\text{m/s}^2
-fy4-16	\sqrt{2\cdot 9{,}81\cdot 3{,}74}\,\text{m/s} \approx 8{,}6\,\text{m/s}
-fy4-16	mgL\sin\alpha - \mu mg\cos\alpha\cdot L = \tfrac12 mv_2^2
-fy4-16	mgL\sin\alpha - \mu_1 mg\cos\alpha\cdot L - \mu_2 mgd = 0
-fy4-16	mgL\sin\alpha - \mu_1 mg\cos\alpha\cdot L = \tfrac12 mv^2
 fy4-16	mgh = 78{,}0\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot 125\,\text{m}
-fy4-2	(2{,}0\,\text{m/s} + 7{,}0\,\text{m/s}) : 2 = 4{,}5\,\text{m/s}
-fy4-2	(4{,}0\,\text{m/s} + 8{,}72\,\text{m/s}) : 2 \approx 6{,}36\,\text{m/s
-fy4-2	0{,}126\,\text{m/s} \cdot 0{,}40\,\text{s} \approx 0{,}05\,\text{m}
-fy4-2	1425\,\text{m} - 262{,}5\,\text{m} = 1162{,}5\,\text{m}
-fy4-2	2{,}42 - 0{,}81 \cdot 4{,}0 \approx -0{,}82\,\text{m/s}
-fy4-2	3{,}10\,\text{m/s} : 9{,}72\,\text{m/s}^2 \approx 0{,}32\,\text{s}
-fy4-2	8{,}00\,\text{m/s} : 9{,}81\,\text{m/s}^2 \approx 0{,}82\,\text{s}
-fy4-2	9{,}72\,\text{m/s}^2 \cdot 0{,}18\,\text{s} \approx 1{,}8\,\text{m/s}
-fy4-2	9{,}81\,\text{m/s}^2 \cdot 1{,}50\,\text{s} \approx 14{,}7\,\text{m/s}
-fy4-2	= (8{,}00\,\text{m/s})^2 + 2 \cdot 9{,}81\,\text{m/s}^2 \cdot 6{,}00\,
-fy4-2	= 15{,}0\,\text{m/s} \cdot 1{,}529\,\text{s} - \tfrac{1}{2} \cdot 9{,}
-fy4-2	= 20\,\text{m/s} \cdot 4{,}0\,\text{s} + \tfrac{1}{2} \cdot (-5{,}0\,\
-fy4-2	= 2{,}0\,\text{m/s} \cdot 5{,}0\,\text{s} + \tfrac{1}{2} \cdot 5{,}0\,
-fy4-2	= 3{,}10\,\text{m/s} + 2 \cdot (-4{,}86\,\text{m/s}^2) \cdot 0{,}500\,
-fy4-2	= \tfrac{1}{2} \cdot 15{,}0\,\text{m/s} \cdot 20{,}0\,\text{s} + 15{,}
-fy4-2	\sqrt{2 \cdot 20\,\text{m} : 9{,}81\,\text{m/s}^2} \approx 2{,}02\,\te
-fy4-2	v = g\,t = 9{,}81\,\text{m/s}^2 \cdot 2{,}0\,\text{s} \approx 19{,}6\,
-fy4-2	y = -4{,}86\,\tfrac{\text{m}}{\text{s}^2} \cdot t^2 + 3{,}10\,\tfrac{\
-fy4-3	410\,\text{N} + 40\,\text{N} + 30\,\text{N} = 480\,\text{N}
 fy4-4	0{,}17\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}7\,\text{N}
 fy4-4	0{,}50\,\text{kg} \cdot 2{,}4\,\text{m/s}^2 = 1{,}20\,\text{N}
-fy4-4	1200\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 12\,\text{kN}
-fy4-4	120\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}18\,\text{kN}
-fy4-4	15\,000\,\text{kg} \cdot 1{,}622\,\text{m/s}^2 \approx 24\,\text{kN}
-fy4-4	2{,}01\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 19{,}7\,\text{N}
-fy4-4	3{,}0\,\text{m/s} - 0{,}75\,\text{m/s}^2 \cdot 4{,}0\,\text{s} = 0
-fy4-4	70\,\text{kg}\cdot 10{,}81\,\text{m/s}^2 = 756{,}7\,\text{N}
-fy4-4	820\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 8044{,}2\,\text{N}
-fy4-4	900\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 8{,}8\,\text{kN}
-fy4-4	= 15\,000\,\text{kg} \cdot (1{,}622\,\text{m/s}^2 + 0{,}50\,\text{m/s}
-fy4-4	= 2{,}82\,\text{N} : 2{,}01\,\text{kg}
-fy4-4	= 70\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 0{,}75\,\text{m/s}^2)
-fy4-4	= 820\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 1{,}20\,\text{m/s}^2)
-fy4-4	N = mg = 1{,}2\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 11{,}8\,\t
-fy4-4	T = m(g - a) = 820\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 1{,}20\,\tex
-fy4-4	a = \dfrac{F - F_\mu}{m} = \dfrac{5{,}0\,\text{N} - 3{,}0\,\text{N}}{1
-fy4-5	0{,}039\,\text{N} + 0{,}061\,\text{N} = 0{,}10\,\text{N}
-fy4-5	1{,}19\,\text{m/s}^2\cdot 2{,}0\,\text{s} = 2{,}38\,\text{m/s}
-fy4-5	881\,\text{N} + 878\,\text{N} + 883\,\text{N} = 2642\,\text{N}
-fy4-5	= 0{,}60\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 - 2{,}0\,\text{N}\cdot\s
-fy4-5	= 2{,}0\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 1{,}5\,\text{m/s}^2)
-fy4-5	N = 12\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 + 60\,\text{N}\cdot\sin 30
-fy4-6	160\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1570\,\text{N}
-fy4-6	24^\circ + 26^\circ + 25^\circ + 27^\circ + 25^\circ = 127^\circ
-fy4-6	= (0{,}347 + 0{,}357 + 0{,}347 + 0{,}352) : 4
 fy4-6	= 0{,}60\cdot 10\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\cos 35^\cir
-fy4-6	= 1{,}62\,\text{m/s}^2\cdot(\sin 30^\circ - 0{,}342\cdot\cos 30^\circ)
-fy4-6	= 9{,}81\,\text{m/s}^2\cdot(\sin 20^\circ + 0{,}25\cdot\cos 20^\circ)
-fy4-6	= 9{,}81\,\text{m/s}^2\cdot(\sin 30^\circ - 0{,}35\cdot\cos 30^\circ)
 fy4-6	= \dfrac{150\,\text{N} - 0{,}30\cdot 40\,\text{kg}\cdot 9{,}81\,\text{
-fy4-6	F_{\mu\text{D}} = 25\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot \sin 
 fy4-6	N = 20\,\text{kg}\cdot 9{,}81\,\text{m/s}^2\cdot\cos 20^\circ \approx 
-fy4-6	T - mg\sin 20^\circ - \mu N = 0
-fy4-6	T = mg\sin 20^\circ + \mu mg\cos 20^\circ \approx 67\,\text{N} + 46\,\
-fy4-7	2{,}5\,\text{kg} \cdot 10\,\text{m/s}^2 \cdot 8\,\text{m} = 200\,\text
-fy4-7	= 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 1{,}80\,\text{m}
-fy4-7	= 0{,}500\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 0{,}2808\,\text{
-fy4-7	= 1{,}20\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}90 - 0{,}75)
-fy4-7	= \tfrac{1}{2} \cdot 1{,}20\,\text{kg} \cdot (10{,}0\,\text{m/s})^2 + 
-fy4-7	E_\text{k} = \tfrac{1}{2} \cdot 1000\,\text{kg} \cdot (10\,\text{m/s})
 fy4-7	E_\text{mek} = \tfrac{1}{2}\,mv^2 + mgh = \tfrac{1}{2} \cdot 70\,\text
-fy4-7	h = \tfrac{v}{2} \cdot \tfrac{v}{g} = \tfrac{v^2}{2g} = \tfrac{(10\,\t
 fy4-8	0{,}50\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 = 4{,}9\,\text{N}
 fy4-8	1{,}20 \to 0{,}77 \to 0{,}49 \to 0{,}32 \to 0{,}20\,\text{m}
-fy4-8	6000\,\text{N} : 1200\,\text{kg} = 5{,}0\,\text{m/s}^2
-fy4-8	= 0{,}057\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot (1{,}20 - 0{,}77
-fy4-8	= 80\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \cdot 12{,}0\,\text{m}
 fy4-8	= \sqrt{2 \cdot 9{,}81\,\text{m/s}^2 \cdot (18{,}0 - 7{,}0)\,\text{m}}
-fy4-8	= \tfrac12 \cdot 80\,\text{kg} \cdot (16 - 169)\,\text{m}^2/\text{s}^2
-fy4-8	E_\text{k} = mgh + 30\,\text{J} = 73{,}6\,\text{J} + 30\,\text{J} = 10
-fy4-8	F_\text{vast}\,h_1 = 200\,\text{N} \cdot 10\,\text{m} = 2{,}0\,\text{k
-fy4-8	W = -F_\mu h = -8{,}0\,\text{N} \cdot 1{,}5\,\text{m} = -12\,\text{J}
-fy4-8	\sqrt{2 \cdot 9{,}81 \cdot 1{,}835}\,\text{m/s} = 6{,}0\,\text{m/s}
-fy4-8	\tfrac{1}{2} mv_1^2 + mgh_1 - F_\text{vast} s = mgh_2
-fy4-9	-1{,}50\,\text{m/s} + 2{,}88\,\text{m/s} = +1{,}38\,\text{m/s}
-fy4-9	0{,}046\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 0{,}45\,\text{N}
-fy4-9	0{,}060\,\text{kg} \cdot 14\,\text{m/s} = 0{,}84\,\text{N}\cdot\text{s
-fy4-9	0{,}16\,\text{kg} \cdot 25\,\text{m/s} = 4{,}0\,\text{kg}\cdot\text{m/
-fy4-9	0{,}2\,\text{kg} \cdot 30\,\text{m/s} = 6\,\text{kg}\cdot\text{m/s}
-fy4-9	0{,}3\,\text{kg} \cdot 20\,\text{m/s} = 6\,\text{kg}\cdot\text{m/s}
 fy4-9	0{,}43\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 4{,}2\,\text{N}
-fy4-9	1200\,\text{kg} \cdot 9{,}81\,\text{m/s}^2 \approx 12\,\text{kN}
-fy4-9	20\,\text{kg} \cdot 1{,}8\,\text{m/s} = 36\,\text{kg}\cdot\text{m/s}
-fy4-9	60\,\text{kg} \cdot 2{,}0\,\text{m/s} = 120\,\text{kg}\cdot\text{m/s}
 fy4-9	6{,}0\,\text{N}\cdot\text{s} : 15\,\text{kg} = 0{,}40\,\text{m/s}
-fy4-9	70\,\text{kg} \cdot 6{,}0\,\text{m/s} = 420\,\text{kg}\cdot\text{m/s}
-fy4-9	= 0{,}60\,\text{kg} \cdot (3{,}924 + 4{,}905)\,\text{m/s}
-fy4-9	= 5{,}886\,\text{N} + \dfrac{0{,}60\,\text{kg} \cdot 4{,}905\,\text{m/
-fy4-9	I = \Delta p = mv - mv_0 = m(v - v_0)
-fy4-9	\Delta p = 0{,}40\,\text{kg} \cdot (-5{,}0 - 5{,}0)\,\text{m/s} = -4{,
-fy4-9	\Delta p = 1{,}0\,\text{kg} \cdot (-2{,}00 - 2{,}00)\,\text{m/s} = -4{
-fy4-9	\Delta p = m(v - v_0) = 0{,}40\,\text{kg} \cdot (5{,}0 - 5{,}0)\,\text
-fy4-9	a\,\Delta t = 3{,}0\,\text{m/s}^2 \cdot 0{,}50\,\text{s} = 1{,}5\,\tex
 fy4-9	p = mv = 1800 \cdot 36 = 64\,800\,\text{kg}\cdot\text{m/s}
 fy5-1	165{,}5\,\text{N}\cdot 0{,}3625\,\text{m} = 60{,}0\,\text{Nm}
 fy5-1	60{,}0\,\text{Nm} : 0{,}600\,\text{m} = 100\,\text{N}

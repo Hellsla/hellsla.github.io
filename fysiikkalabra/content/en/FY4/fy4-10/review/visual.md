@@ -1,11 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: dd79034ff67ad6df
+CONTENT-HASH: 2791cfae8553e87d
 
 ## Blocking
-(none)
 
 ## Polish
-- [Minor] Caption could say that the other end ball swings out after the impact, to link the photo to the conservation of momentum text; optional.
+- None.
 
 ## Checked
-batch delta review: opened en/fy4-10 captures at 360 and 1280 px and the photo file; photo loads, sits in the theory column (floated right or unfloated by layout rule at 1280, full column at 360), no clipping or overflow from the photo, alt and caption natural English and consistent with the picture, no unit-bearing numbers needing LaTeX, credit line present under the caption.
+- batch delta review: opened contact sheets en-390-12, en-390-13, en-390-14, en-390-15, en-390-16, en-1280-10 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.

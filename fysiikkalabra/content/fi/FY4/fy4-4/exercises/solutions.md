@@ -71,7 +71,7 @@ a 0
 **Muunnokset:** $90\,\text{km/h} = 90 : 3{,}6\,\text{m/s} = 25\,\text{m/s}$
 **Sijoitus:** $\Sigma F = \dfrac{1200\,\text{kg}\cdot(25\,\text{m/s} - 0)}{10\,\text{s}} = 1200\,\text{kg}\cdot 2{,}5\,\text{m/s}^2 = 3000\,\text{N}$
 **Vastaus:** $3000\,\text{N}$ eli $3{,}0\,\text{kN}$ liikkeen suuntaan, kaksi merkitsevää numeroa kuten ajassa $10\,\text{s}$ ja nopeudessa $90\,\text{km/h}$.
-**Järkevyys:** Kiihtyvyys $2{,}5\,\text{m/s}^2$ on tavallisen henkilöauton reipas kiihdytys. Kokonaisvoima on noin neljäsosa auton painosta $1200\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 12\,\text{kN}$, samoin kuin kiihtyvyys on noin neljäsosa putoamiskiihtyvyydestä.
+**Järkevyys:** Kiihtyvyys $2{,}5\,\text{m/s}^2$ on tavallisen henkilöauton reipas kiihdytys. Kokonaisvoima on noin neljäsosa auton painosta $$\begin{aligned} &1200\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &\approx 12\,\text{kN} \end{aligned}$$, samoin kuin kiihtyvyys on noin neljäsosa putoamiskiihtyvyydestä.
 
 ## fy4-4-L2-02
 **Annettu:** $m = 900\,\text{kg}$, kiihtyvyys alaspäin $a = 1{,}5\,\text{m/s}^2$; $g = 9{,}81\,\text{m/s}^2$
@@ -87,7 +87,7 @@ a alas
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $T = 900\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 1{,}5\,\text{m/s}^2) = 900\,\text{kg}\cdot 8{,}31\,\text{m/s}^2 = 7479\,\text{N}$
 **Vastaus:** $7500\,\text{N}$ eli $7{,}5\,\text{kN}$, kaksi merkitsevää numeroa kuten kiihtyvyydessä $1{,}5\,\text{m/s}^2$.
-**Järkevyys:** Hissin paino on $900\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 8{,}8\,\text{kN}$. Köyden voima on sitä $ma = 1{,}35\,\text{kN}$ pienempi, jotta kokonaisvoima osoittaa alas. Hissin lähtiessä alas matkustaja tuntee itsensä hetken kevyemmäksi.
+**Järkevyys:** Hissin paino on $$\begin{aligned} &900\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &\approx 8{,}8\,\text{kN} \end{aligned}$$. Köyden voima on sitä $ma = 1{,}35\,\text{kN}$ pienempi, jotta kokonaisvoima osoittaa alas. Hissin lähtiessä alas matkustaja tuntee itsensä hetken kevyemmäksi.
 
 ## fy4-4-L2-03
 **Annettu:** $m = 120\,\text{kg}$, nopeus alaspäin $v_0 = 2{,}0\,\text{m/s}$, loppunopeus $v = 0$, aika $\Delta t = 2{,}0\,\text{s}$, tasainen hidastuminen; $g = 9{,}81\,\text{m/s}^2$
@@ -104,7 +104,7 @@ v alas
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{2{,}0\,\text{m/s}}{2{,}0\,\text{s}} = 1{,}0\,\text{m/s}^2$ ja $T = 120\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 1{,}0\,\text{m/s}^2) = 120\,\text{kg}\cdot 10{,}81\,\text{m/s}^2 = 1297{,}2\,\text{N}$
 **Vastaus:** $1300\,\text{N}$ eli $1{,}3\,\text{kN}$, kaksi merkitsevää numeroa kuten nopeudessa $2{,}0\,\text{m/s}$ ja ajassa $2{,}0\,\text{s}$.
-**Järkevyys:** Kuorman paino on $120\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 1{,}18\,\text{kN}$. Köyden voima on sitä $ma = 120\,\text{N}$ suurempi, jotta kokonaisvoima osoittaa ylös ja pysäyttää alaspäin liikkuvan kuorman. Jos köysi kannattelisi vain painon, kuorma jatkaisi alas tasaisella nopeudella.
+**Järkevyys:** Kuorman paino on $$\begin{aligned} &120\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &\approx 1{,}18\,\text{kN} \end{aligned}$$. Köyden voima on sitä $ma = 120\,\text{N}$ suurempi, jotta kokonaisvoima osoittaa ylös ja pysäyttää alaspäin liikkuvan kuorman. Jos köysi kannattelisi vain painon, kuorma jatkaisi alas tasaisella nopeudella.
 
 ## fy4-4-L2-04
 **Annettu:** $m = 30\,\text{kg}$, voimat $F_\text{a} = 60\,\text{N}$ ja $F_\text{b} = 45\,\text{N}$ vaakasuoraan vastakkaisiin suuntiin, ei kitkaa
@@ -230,9 +230,9 @@ v alas
 ```
 **Kaava:** $T - mg = ma$, joten $T = m(g + a)$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
-**Sijoitus:** $T = 820\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 + 1{,}20\,\text{m/s}^2) = 820\,\text{kg}\cdot 11{,}01\,\text{m/s}^2 = 9028{,}2\,\text{N}$
+**Sijoitus:** $$\begin{aligned} &T \\ &= 820\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 \\ &+ 1{,}20\,\text{m/s}^2) \\ &= 820\,\text{kg}\cdot 11{,}01\,\text{m/s}^2 \\ &= 9028{,}2\,\text{N} \end{aligned}$$
 **Vastaus:** $9030\,\text{N}$ eli $9{,}03\,\text{kN}$, kolme merkitsevää numeroa kuten kiihtyvyydessä $1{,}20\,\text{m/s}^2$. Opiskelijan virhe oli ottaa kiihtyvyyden suunnaksi liikkeen suunta alas: kiihtyvyys osoittaa ylös, koska elementti hidastuu.
-**Järkevyys:** Paino on $820\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 = 8044{,}2\,\text{N}$. Hidastavaan kiihtyvyyteen tarvitaan lisäksi $820\,\text{kg}\cdot 1{,}20\,\text{m/s}^2 = 984\,\text{N}$, ja summa on $9028{,}2\,\text{N}$. Opiskelijan tulos $7{,}06\,\text{kN}$ olisi painoa pienempi, jolloin elementti kiihtyisi alas eikä hidastuisi.
+**Järkevyys:** Paino on $$\begin{aligned} &820\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &= 8044{,}2\,\text{N} \end{aligned}$$. Hidastavaan kiihtyvyyteen tarvitaan lisäksi $820\,\text{kg}\cdot 1{,}20\,\text{m/s}^2 = 984\,\text{N}$, ja summa on $9028{,}2\,\text{N}$. Opiskelijan tulos $7{,}06\,\text{kN}$ olisi painoa pienempi, jolloin elementti kiihtyisi alas eikä hidastuisi.
 
 ## fy4-4-L3-04
 **Annettu:** taulukon pisteet $(F, a)$ väliltä $F = 2{,}0 \ldots 6{,}0\,\text{N}$; massa vakio, kitkavoima vakio
@@ -243,7 +243,7 @@ v alas
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita.
 **Sijoitus:** $k = \dfrac{2{,}40\,\text{m/s}^2 - 0{,}41\,\text{m/s}^2}{6{,}0\,\text{N} - 2{,}0\,\text{N}} = 0{,}4975\,\tfrac{1}{\text{kg}}$, $m = \dfrac{1}{0{,}4975\,\tfrac{1}{\text{kg}}} = 2{,}01\,\text{kg}$ ja $F_\mu = 2{,}0\,\text{N} - \dfrac{0{,}41\,\text{m/s}^2}{0{,}4975\,\tfrac{1}{\text{kg}}} = 1{,}18\,\text{N}$
 **Vastaus:** $1{,}2\,\text{N}$ ($1{,}18\,\text{N}$ ennen pyöristystä), kaksi merkitsevää numeroa. Kärryn massa on noin $2{,}0\,\text{kg}$. Pisteet eivät ole täsmälleen suoralla mittauksen satunnaisvaihtelun vuoksi, joten tulos on arvio.
-**Järkevyys:** Kun $F = 4{,}0\,\text{N}$, kokonaisvoima on $4{,}0\,\text{N} - 1{,}18\,\text{N} = 2{,}82\,\text{N}$ ja $a = 2{,}82\,\text{N} : 2{,}01\,\text{kg} = 1{,}40\,\text{m/s}^2$, mikä vastaa taulukon arvoa $1{,}42\,\text{m/s}^2$. Kitka on pieni verrattuna painoon $2{,}01\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \approx 19{,}7\,\text{N}$, noin $6\,\%$ siitä, mikä sopii sileälle alustalle.
+**Järkevyys:** Kun $F = 4{,}0\,\text{N}$, kokonaisvoima on $4{,}0\,\text{N} - 1{,}18\,\text{N} = 2{,}82\,\text{N}$ ja $$\begin{aligned} &a = 2{,}82\,\text{N} : 2{,}01\,\text{kg} \\ &= 1{,}40\,\text{m/s}^2 \end{aligned}$$, mikä vastaa taulukon arvoa $1{,}42\,\text{m/s}^2$. Kitka on pieni verrattuna painoon $$\begin{aligned} &2{,}01\,\text{kg}\cdot 9{,}81\,\text{m/s}^2 \\ &\approx 19{,}7\,\text{N} \end{aligned}$$, noin $6\,\%$ siitä, mikä sopii sileälle alustalle.
 
 ## fy4-4-L3-05
 **Annettu:** $m = 70\,\text{kg}$, vaihe 1: $0 \ldots 3{,}0\,\text{s}$, $a_1 = 1{,}0\,\text{m/s}^2$; vaihe 2: $3{,}0 \ldots 9{,}0\,\text{s}$, $a_2 = 0$; vaihe 3: $9{,}0 \ldots 13{,}0\,\text{s}$, tasainen hidastuminen pysähtymiseen; alkunopeus $0$; $g = 9{,}81\,\text{m/s}^2$
@@ -259,9 +259,9 @@ v ylös
 ```
 **Kaava:** $v_{\max} = a_1\Delta t_1$, $a_3 = \dfrac{0 - v_{\max}}{\Delta t_3}$ ja $N - mg = ma_3$, joten $N = m(g + a_3)$
 **Muunnokset:** Suureet ovat SI-yksiköissä, joten muunnoksia ei tarvita. Vaiheen 3 kesto on $\Delta t_3 = 13{,}0\,\text{s} - 9{,}0\,\text{s} = 4{,}0\,\text{s}$.
-**Sijoitus:** $v_{\max} = 1{,}0\,\text{m/s}^2 \cdot 3{,}0\,\text{s} = 3{,}0\,\text{m/s}$ ja $a_3 = \dfrac{0 - 3{,}0\,\text{m/s}}{4{,}0\,\text{s}} = -0{,}75\,\text{m/s}^2$. Tukivoima on $N = 70\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 - 0{,}75\,\text{m/s}^2) = 70\,\text{kg}\cdot 9{,}06\,\text{m/s}^2 = 634{,}2\,\text{N}$
+**Sijoitus:** $v_{\max} = 1{,}0\,\text{m/s}^2 \cdot 3{,}0\,\text{s} = 3{,}0\,\text{m/s}$ ja $a_3 = \dfrac{0 - 3{,}0\,\text{m/s}}{4{,}0\,\text{s}} = -0{,}75\,\text{m/s}^2$. Tukivoima on $$\begin{aligned} &N \\ &= 70\,\text{kg}\cdot(9{,}81\,\text{m/s}^2 \\ &- 0{,}75\,\text{m/s}^2) \\ &= 70\,\text{kg}\cdot 9{,}06\,\text{m/s}^2 \\ &= 634{,}2\,\text{N} \end{aligned}$$
 **Vastaus:** $630\,\text{N}$ ($634\,\text{N}$ ennen pyöristystä), kaksi merkitsevää numeroa kuten massassa $70\,\text{kg}$ ja kiihtyvyydessä. Suurin nopeus on $3{,}0\,\text{m/s}$ ja kiihtyvyys vaiheessa 3 on $0{,}75\,\text{m/s}^2$ alaspäin. Tukivoima on painoa $mg = 686{,}7\,\text{N}$ pienempi, koska kokonaisvoima ja kiihtyvyys osoittavat alas.
-**Järkevyys:** Hissi pysähtyy: $3{,}0\,\text{m/s} - 0{,}75\,\text{m/s}^2 \cdot 4{,}0\,\text{s} = 0$. Tukivoiman ja painon erotus on $686{,}7\,\text{N} - 634{,}2\,\text{N} = 52{,}5\,\text{N} = 70\,\text{kg}\cdot 0{,}75\,\text{m/s}^2$, joten voimat täsmäävät liikeyhtälön kanssa. Vaiheessa 1 tukivoima olisi vastaavasti painoa suurempi, $70\,\text{kg}\cdot 10{,}81\,\text{m/s}^2 = 756{,}7\,\text{N}$, ja tasaisessa vaiheessa 2 yhtä suuri kuin paino.
+**Järkevyys:** Hissi pysähtyy: $$\begin{aligned} &3{,}0\,\text{m/s} \\ &- 0{,}75\,\text{m/s}^2 \cdot 4{,}0\,\text{s} \\ &= 0 \end{aligned}$$. Tukivoiman ja painon erotus on $686{,}7\,\text{N} - 634{,}2\,\text{N} = 52{,}5\,\text{N} = 70\,\text{kg}\cdot 0{,}75\,\text{m/s}^2$, joten voimat täsmäävät liikeyhtälön kanssa. Vaiheessa 1 tukivoima olisi vastaavasti painoa suurempi, $$\begin{aligned} &70\,\text{kg}\cdot 10{,}81\,\text{m/s}^2 \\ &= 756{,}7\,\text{N} \end{aligned}$$, ja tasaisessa vaiheessa 2 yhtä suuri kuin paino.
 
 ## fy4-4-L2-08
 **Kysytty:** onko oppilaan laskussa virhe ja millä rivillä, kun lasketaan vaakasuoraan työnnetyn ostoskärryn kiihtyvyys $a$.
@@ -286,9 +286,9 @@ Kiihtyvyys on $2{,}0\,\text{m/s}^2$ työntövoiman suuntaan, kaksi merkitsevää
 **Periaate:** Voimakuviossa on kaksi voimaa: työntövoima $\overline{F}$ ylös ja paino $\overline{G}$ alas. Newtonin toisen lain mukaan kokonaisvoima on $\Sigma F = ma$. Valitaan ylöspäin positiiviseksi, koska kiihtyvyys osoittaa ylös.
 **Kaava:** $\Sigma F = ma$, joten $F - G = ma$. Painoksi tulee $G = mg$, ja siitä $F = m(g + a)$
 **Muunnokset:** Suureet ovat SI-yksiköissä. Tulos tulee newtoneina, ja $1\,\text{kN} = 1000\,\text{N}$, joten $31\,830\,\text{N} = 31{,}83\,\text{kN}$.
-**Sijoitus:** $F = 15\,000\,\text{kg} \cdot (1{,}622\,\text{m/s}^2 + 0{,}50\,\text{m/s}^2) = 31\,830\,\text{N} = 31{,}83\,\text{kN}$
+**Sijoitus:** $$\begin{aligned} &F \\ &= 15\,000\,\text{kg} \\ &\cdot (1{,}622\,\text{m/s}^2 \\ &+ 0{,}50\,\text{m/s}^2) \\ &= 31\,830\,\text{N} \\ &= 31{,}83\,\text{kN} \end{aligned}$$
 **Vastaus:** $32\,\text{kN}$, kaksi merkitsevää numeroa kuten kiihtyvyydessä $0{,}50\,\text{m/s}^2$. Taulukon arvo $g = 1{,}622\,\text{m/s}^2$ on tarkempi kuin kiihtyvyys; eri taulukoiden arvot poikkeavat hieman, ja vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
-**Järkevyys:** Leijuessa ($a = 0$) työntövoima olisi aluksen paino Kuussa, $15\,000\,\text{kg} \cdot 1{,}622\,\text{m/s}^2 \approx 24\,\text{kN}$. Hidastamiseen tarvitaan sen lisäksi $ma = 7{,}5\,\text{kN}$, ja yhteensä $31{,}8\,\text{kN}$. Työntövoima on painoa suurempi, koska kokonaisvoima osoittaa ylös.
+**Järkevyys:** Leijuessa ($a = 0$) työntövoima olisi aluksen paino Kuussa, $$\begin{aligned} &15\,000\,\text{kg} \cdot 1{,}622\,\text{m/s}^2 \\ &\approx 24\,\text{kN} \end{aligned}$$. Hidastamiseen tarvitaan sen lisäksi $ma = 7{,}5\,\text{kN}$, ja yhteensä $31{,}8\,\text{kN}$. Työntövoima on painoa suurempi, koska kokonaisvoima osoittaa ylös.
 
 ## fy4-4-L1-10
 **Annettu:** kuvaajasta kärryn A suoralla piste, jossa kokonaisvoima $\Sigma F = 3{,}0\,\text{N}$ ja kiihtyvyys $a = 6{,}0\,\text{m/s}^2$

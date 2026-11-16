@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: f60494973a0461fa
+CONTENT-HASH: 83c6271f9835e74e
 
 ## Blocking
-None.
 
 ## Polish
-None.
+- [Minor] exercises.json (tile fy4-4 #5) — the closing `."` of the student's quoted solution stands alone on a line after the formula; move the full stop into the formula's last row.
 
 ## Checked
-- Diff read (carts A for L2-09, a = 4,8 m/s², m = 0,50 kg consistent); the fi-easy figure labels are Finnish ('kärry A/B'). No fi-easy capture of L2-09 opened.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: re-broken calculation chains judged in the contact sheets fi-easy-390-01…27 (all) and fi-easy-1280-03, 05, 06, 10, 18, 19, 20; rows, alignment at the relation, clipping, punctuation and the surrounding sentence checked; hash unchanged from start to end.

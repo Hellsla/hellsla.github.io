@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3e52c2f88e7fa5b2
+CONTENT-HASH: b7e1ec8f7eece8c8
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] None. The two lifted rows (9,72 m/s² · 0,18 s ≈ 1,8 m/s and √(2 · 20 m : 9,81 m/s²) ≈ 2,02 s) sit in a Järkevyys panel as boxed display rows, the sentence continuing after them; not clipped, the trailing full stop is inside the formula.
+- [Minor] exercises.json:92 (en-390-03 tile #4, en-1280-02) — the full stop after the lifted formula is left outside it and starts the next line: “. The depth is …” — put the full stop on the formula's last row (`19.6\,\text{m/s}.`).
+- [Minor] exercises.json:344 (en-390-03 tile #13) — same with the comma: the line after the polynomial starts “, with the upward direction positive.” — put the comma on the last row (`1.20\,\text{m},`).
 
 ## Checked
-- fy4-2-open-exercises-L3-1280-4 (the 9,72 row), fy4-2-open-exercises-1280-10 (the 2,02 row), L3-1280-3 and L2-1280-9/10 for surrounding layout (fi captures; en and fi-easy share the same layout and the same lifted rows, judged from source and the passing 352/360 px checks).
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+- batch delta review: opened contact sheets en-390-02, en-390-03, en-390-04, en-1280-02 (390 px sheets at full height; the 1280 px ones named here) and the diff of the re-broken chains; rows break at relations or operators, equals signs align, nothing clipped, no KaTeX error, surrounding sentences read naturally.

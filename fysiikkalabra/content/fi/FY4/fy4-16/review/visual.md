@@ -1,18 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 51160e871e00687e
+CONTENT-HASH: e287073fd52a77e6
 
 ## Blocking
-None.
 
 ## Polish
-- [Minor] lesson.md, Kitkan työ -kohta — "liukukitkakerroin" and "kitkakerroin" alternate (e.g. "sama kitkakerroin koko matkalla"); acceptable, but one form per paragraph would read more evenly.
+- [Minor] inquiry.json (tile fy4-16 #18, 390 px) — the row is broken inside a short bracket (`(9,81 / − 1,20) m/s²`) — break before `\cdot` instead so the bracket stays whole.
+- [Minor] inquiry.json (tile #0) — `10,4 + 49,6 = 16,5 / + 43,5` splits a two-term sum at 390 px — keep `= 16,5 + 43,5` on one row.
+- [Minor] inquiry.json:266 and :282 — the two restored inline formulas (`mgh = … · 125 m`, `|ΔE_mek| = …`) stay over-wide on a phone as on main — keep on the clipped-formula list; break before the operator when redone.
 
 ## Checked
-- Delta (wording: liikekitka -> liukukitka in lesson.md, inquiry.json and exit-ticket.json; new hook sentence; extended summary bullet; figure aria-labels).
-- Opened contact-1.png, fy4-16-example-390-1.png (worked example, stages 1-3, with the "esimerkki" figure) and fy4-16-fig-9-390.png (the "kolme" figure).
-- Contact sheet 1 also shows the opening picture, the lift graph and the "kitkatyo" figure; they are unchanged and the layout is intact.
-- grep found no remaining "liikekitka" in lesson, inquiry, exit ticket or exercises sources.
-- Not opened separately: the other captures, since the diff changes no drawing, only text and aria-label wording.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+- delta round 2: opened fi-390-02, fi-390-03, fi-390-04, fi-1280-01, fi-1280-02, fi-1280-03 (all tiles of this part at 390 and 1280 px); no row ends in an operator, every continuation row starts with its operator or relation, chains aligned, nothing new clipped; the restored formula(s) confirmed identical to origin/main (inline, on the known clipped-formula list); hash unchanged from start to end.

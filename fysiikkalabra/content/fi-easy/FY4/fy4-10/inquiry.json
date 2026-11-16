@@ -29,11 +29,11 @@
         {
           "text": "$0{,}30\\,\\text{kg}\\cdot\\text{m/s}$",
           "correct": true,
-          "feedback": "Oikein. Liikemäärän muutos on yhtä suuri kuin impulssi: $\\Delta p = F\\,\\Delta t = 3{,}0\\,\\text{N} \\cdot 0{,}10\\,\\text{s} = 0{,}30\\,\\text{N}\\cdot\\text{s}$. Lisäksi $1\\,\\text{N}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\text{m/s}$ (luku *Liikemäärä ja impulssi*)."
+          "feedback": "Oikein. Liikemäärän muutos on yhtä suuri kuin impulssi: $$\\begin{aligned} &\\Delta p = F\\,\\Delta t \\\\ &= 3{,}0\\,\\text{N} \\cdot 0{,}10\\,\\text{s} \\\\ &= 0{,}30\\,\\text{N}\\cdot\\text{s} \\end{aligned}$$. Lisäksi $1\\,\\text{N}\\cdot\\text{s} = 1\\,\\text{kg}\\cdot\\text{m/s}$ (luku *Liikemäärä ja impulssi*)."
         },
         {
           "text": "$30\\,\\text{kg}\\cdot\\text{m/s}$",
-          "feedback": "Laskit osamäärän $F : \\Delta t$. Impulssi on kuitenkin voiman ja ajan tulo: $\\Delta p = F\\,\\Delta t = 3{,}0\\,\\text{N} \\cdot 0{,}10\\,\\text{s} = 0{,}30\\,\\text{kg}\\cdot\\text{m/s}$."
+          "feedback": "Laskit osamäärän $F : \\Delta t$. Impulssi on kuitenkin voiman ja ajan tulo: $$\\begin{aligned} &\\Delta p = F\\,\\Delta t \\\\ &= 3{,}0\\,\\text{N} \\cdot 0{,}10\\,\\text{s} \\\\ &= 0{,}30\\,\\text{kg}\\cdot\\text{m/s} \\end{aligned}$$."
         },
         {
           "text": "Sitä ei voi laskea, koska vaunun massaa ei tunneta.",
@@ -293,7 +293,7 @@
           },
           {
             "text": "Kun vaunu 1 kimpoaa takaisin, kokonaisliikemäärä on pienempi.",
-            "feedback": "Kun vaunu 1 kimpoaa, sen liikemäärä on negatiivinen. Vaunu 2 saa silloin suuremman liikemäärän. Mallin arvoissa $0{,}40 \\cdot (-0{,}12) + 0{,}60 \\cdot 0{,}48 = 0{,}240$, joten kokonaisliikemäärä säilyy."
+            "feedback": "Kun vaunu 1 kimpoaa, sen liikemäärä on negatiivinen. Vaunu 2 saa silloin suuremman liikemäärän. Mallin arvoissa $$\\begin{aligned} &0{,}40 \\cdot (-0{,}12) \\\\ &+ 0{,}60 \\cdot 0{,}48 \\\\ &= 0{,}240 \\end{aligned}$$, joten kokonaisliikemäärä säilyy."
           }
         ]
       }
@@ -412,7 +412,7 @@
         {
           "text": "Vasemmalle liikkuvan vaunun nopeus ja liikemäärä ovat negatiivisia: $0{,}30 \\cdot (-0{,}60)$.",
           "correct": true,
-          "feedback": "Oikein. Kun oikealle on positiivinen suunta, $v' = \\dfrac{0{,}20 - 0{,}18}{0{,}80}\\,\\text{m/s} = 0{,}025\\,\\text{m/s}$ oikealle. Vaunut melkein pysähtyvät, koska niiden liikemäärät ovat lähes yhtä suuret ja vastakkaissuuntaiset. Opiskelijan tulos on suurempi kuin oikealle liikkuvan vaunun alkunopeus $0{,}40\\,\\text{m/s}$. Se on mahdoton, koska vasemmalle liikkuva vaunu jarruttaa oikealle liikkuvaa."
+          "feedback": "Oikein. Kun oikealle on positiivinen suunta, $$\\begin{aligned} &v' = \\dfrac{0{,}20 - 0{,}18}{0{,}80}\\,\\text{m/s} \\\\ &= 0{,}025\\,\\text{m/s} \\end{aligned}$$ oikealle. Vaunut melkein pysähtyvät, koska niiden liikemäärät ovat lähes yhtä suuret ja vastakkaissuuntaiset. Opiskelijan tulos on suurempi kuin oikealle liikkuvan vaunun alkunopeus $0{,}40\\,\\text{m/s}$. Se on mahdoton, koska vasemmalle liikkuva vaunu jarruttaa oikealle liikkuvaa."
         },
         {
           "text": "Vaunut liikkuvat yhdessä, joten nopeus on laskettava liike-energian säilymisestä.",
@@ -435,7 +435,7 @@
       "tolerance": 0.02,
       "hints": [
         "Valitse systeemiksi poika ja vene. Kuinka suuri on systeemin kokonaisliikemäärä ennen hyppyä?",
-        "Ponnistuksessa poika ja vene työntävät toisiaan, joten kyse on räjähdyksestä: $0 = m_\\text{poika} v_\\text{poika} + m_\\text{vene} v_\\text{vene}$.",
+        "Ponnistuksessa poika ja vene työntävät toisiaan, joten kyse on räjähdyksestä: $$\\begin{aligned} &0 = m_\\text{poika} v_\\text{poika} \\\\ &+ m_\\text{vene} v_\\text{vene} \\end{aligned}$$.",
         "Ratkaise $v_\\text{vene} = -\\dfrac{m_\\text{poika} v_\\text{poika}}{m_\\text{vene}}$. Miinusmerkki kertoo, että vene liikkuu vastakkaiseen suuntaan."
       ],
       "mistakes": [
@@ -493,7 +493,7 @@
       "tolerance": 0.02,
       "hints": [
         "Valitse positiiviseksi suunnaksi oikea. Onko vasemmalle liikkuvan vaunun nopeus positiivinen vai negatiivinen?",
-        "Täysin kimmottomassa törmäyksessä $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\\,v'$.",
+        "Täysin kimmottomassa törmäyksessä $$\\begin{aligned} &m_1 v_1 + m_2 v_2 \\\\ &= (m_1 + m_2)\\,v' \\end{aligned}$$.",
         "Liikemäärä ennen on $0{,}60 \\cdot 0{,}50 + 0{,}20 \\cdot (-0{,}90)$ yksikössä $\\text{kg}\\cdot\\text{m/s}$."
       ],
       "mistakes": [
@@ -506,7 +506,7 @@
           "feedback": "Jaoit kokonaisliikemäärän vain raskaamman vaunun massalla. Vaunut liikkuvat kuitenkin yhdessä. Siksi nimittäjässä on molempien vaunujen massa $0{,}80\\,\\text{kg}$."
         }
       ],
-      "solution": "**Annettu:** $m_1 = 0{,}60\\,\\text{kg}$, $v_1 = +0{,}50\\,\\text{m/s}$ (oikealle), $m_2 = 0{,}20\\,\\text{kg}$, $v_2 = -0{,}90\\,\\text{m/s}$ (vasemmalle); vaunut jäävät kiinni toisiinsa\n\n**Kysytty:** yhteinen nopeus $v'$ yksikössä $\\text{m/s}$\n\n**Periaate:** Valitaan systeemiksi molemmat vaunut. Positiivinen suunta on oikealle. Vaakasuoralla radalla paino ja tukivoima kumoavat toisensa. Kitka jätetään huomiotta, joten kokonaisliikemäärä säilyy. Vaunut jäävät kiinni toisiinsa, joten törmäys on täysin kimmoton. Vaunuilla on lopuksi yhteinen nopeus.\n\n**Kaava:** $m_1 v_1 + m_2 v_2 = (m_1 + m_2)\\,v'$, joten $v' = \\dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$\n\n**Muunnokset:** Muunnoksia ei tarvita, koska massat ovat kilogrammoina ja nopeudet yksikössä $\\text{m/s}$.\n\n**Sijoitus:** $v' = \\dfrac{0{,}60 \\cdot 0{,}50 + 0{,}20 \\cdot (-0{,}90)}{0{,}60 + 0{,}20}\\,\\text{m/s} = \\dfrac{0{,}30 - 0{,}18}{0{,}80}\\,\\text{m/s} = 0{,}15\\,\\text{m/s}$\n\n**Vastaus:** $0{,}15\\,\\text{m/s}$ oikealle. Vastauksessa on kaksi merkitsevää numeroa, koska lähtötiedoissa on kaksi.\n\n**Järkevyys:** Nopeus on positiivinen, koska oikealle liikkuvan vaunun liikemäärä $0{,}30\\,\\text{kg}\\cdot\\text{m/s}$ on suurempi kuin vasemmalle liikkuvan $0{,}18\\,\\text{kg}\\cdot\\text{m/s}$. Yhteinen nopeus on pienempi kuin kummankaan vaunun alkunopeus, kuten pitääkin, kun liikemäärät kumoavat toisensa osittain."
+      "solution": "**Annettu:** $m_1 = 0{,}60\\,\\text{kg}$, $v_1 = +0{,}50\\,\\text{m/s}$ (oikealle), $m_2 = 0{,}20\\,\\text{kg}$, $v_2 = -0{,}90\\,\\text{m/s}$ (vasemmalle); vaunut jäävät kiinni toisiinsa\n\n**Kysytty:** yhteinen nopeus $v'$ yksikössä $\\text{m/s}$\n\n**Periaate:** Valitaan systeemiksi molemmat vaunut. Positiivinen suunta on oikealle. Vaakasuoralla radalla paino ja tukivoima kumoavat toisensa. Kitka jätetään huomiotta, joten kokonaisliikemäärä säilyy. Vaunut jäävät kiinni toisiinsa, joten törmäys on täysin kimmoton. Vaunuilla on lopuksi yhteinen nopeus.\n\n**Kaava:** $$\\begin{aligned} &m_1 v_1 + m_2 v_2 \\\\ &= (m_1 + m_2)\\,v' \\end{aligned}$$, joten $v' = \\dfrac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$\n\n**Muunnokset:** Muunnoksia ei tarvita, koska massat ovat kilogrammoina ja nopeudet yksikössä $\\text{m/s}$.\n\n**Sijoitus:** $v' = \\dfrac{0{,}60 \\cdot 0{,}50 + 0{,}20 \\cdot (-0{,}90)}{0{,}60 + 0{,}20}\\,\\text{m/s} = \\dfrac{0{,}30 - 0{,}18}{0{,}80}\\,\\text{m/s} = 0{,}15\\,\\text{m/s}$\n\n**Vastaus:** $0{,}15\\,\\text{m/s}$ oikealle. Vastauksessa on kaksi merkitsevää numeroa, koska lähtötiedoissa on kaksi.\n\n**Järkevyys:** Nopeus on positiivinen, koska oikealle liikkuvan vaunun liikemäärä $0{,}30\\,\\text{kg}\\cdot\\text{m/s}$ on suurempi kuin vasemmalle liikkuvan $0{,}18\\,\\text{kg}\\cdot\\text{m/s}$. Yhteinen nopeus on pienempi kuin kummankaan vaunun alkunopeus, kuten pitääkin, kun liikemäärät kumoavat toisensa osittain."
     },
     {
       "id": "check-3",

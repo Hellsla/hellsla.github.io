@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 8a8e26a7698698b0
+CONTENT-HASH: 9737a4d2c4e62105
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+None.
 
 ## Checked
-- Light delta review: diff read; changed passages opened at 360-390 px (fy4-4-example-390-2 Tulos and Järkevyys): clean, formulas intact, no overflow.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+- batch delta review: re-broken chains in lesson.md/inquiry.json (reflow only); opened fi-390-04, fi-390-05, fi-390-06 and fi-1280-04; rows break at relations/operators, equals signs aligned, nothing clipped, sentence around each lifted formula reads naturally.
