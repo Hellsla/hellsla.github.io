@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 5d46ccf73881879d
+CONTENT-HASH: c7c5f8bd95a111bf
 
 ## Blocking
-None. The fixes read well and are consistent with the lesson symbols.
+- none
 
 ## Polish
-None new (earlier polish unchanged).
+- none
 
 ## Checked
-Opened the changed sentence after W = pΔV and the worked-example formula stage at 390 px: render fine. Language: fi; no clipping in the changed places.
+- delta: two feedback texts of the prediction reworded (sisäenergia, lämpönä); opened fy3-11-open-ennusta-1280-2 and fy3-11-open-tarkista-1280-1 (cards intact, no overflow); new wording read for fluency and units ($1{,}0\,\text{kWh}$ typeset).
+
+## Scores
+illustrations 4 · typography 5 · Finnish 5 · accessibility 5

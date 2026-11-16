@@ -155,8 +155,8 @@ def siirto():
     in each case is written in the current's violet."""
     f = Fig("fy9mv-siirto", 360, "Kaavakuva mittakaavassa: sama 40 kilowatin teho siirretään kaapelilla, jonka resistanssi "
             "on 0,50 ohmia. Ylempi palkki: jännitteellä 230 volttia virta on 174 ampeeria, ja palkin ruskeanpunainen osa, "
-            "kaapelissa lämmöksi muuttuva teho 15 kilowattia, on 38 prosenttia koko palkista. Alempi palkki: "
-            "jännitteellä 20 kilovolttia virta on 2,0 ampeeria, ja lämmöksi muuttuu vain 2,0 wattia, 0,005 prosenttia, "
+            "kaapelin sisäenergiaksi muuttuva teho 15 kilowattia, on 38 prosenttia koko palkista. Alempi palkki: "
+            "jännitteellä 20 kilovolttia virta on 2,0 ampeeria, ja sisäenergiaksi muuttuu vain 2,0 wattia, 0,005 prosenttia, "
             "mikä on palkissa ohuempi kuin viiva.", size=24)
     x0, W, hbar = 24, 552, 46
     f.tex(300, 22, r"P = 40\,\text{kW},\ R = 0{,}50\,\Omega", "middle", INK)
@@ -177,10 +177,10 @@ def siirto():
         if k == 0:
             f.tex(x0 + 12, yb + hbar / 2, r"\text{perille } 25\,\text{kW}", "start", INK, size=24)
             f.tex(x0 + W - 12, yb + hbar / 2, r"15\,\text{kW}", "end", WHITE, size=24)
-            f.tex(x0 + W, yb + hbar + 24, r"\text{lämmöksi } 38\,\%", "end", LOSS, size=24)
+            f.tex(x0 + W, yb + hbar + 24, r"\text{häviö } 38\,\%", "end", LOSS, size=24)
         else:
             f.tex(x0 + 12, yb + hbar / 2, r"\text{perille lähes } 40\,\text{kW}", "start", INK, size=24)
-            f.tex(x0 + W, yb + hbar + 24, r"\text{lämmöksi } 2{,}0\,\text{W} = 0{,}005\,\%", "end", LOSS, size=24)
+            f.tex(x0 + W, yb + hbar + 24, r"\text{häviö } 2{,}0\,\text{W} = 0{,}005\,\%", "end", LOSS, size=24)
     return f.svg()
 
 

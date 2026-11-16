@@ -51,7 +51,7 @@
 ## fy3-3-L1-06
 **Find:** whether the gas in a sealed cylinder is a closed or an open system.
 **Principle:** A system is closed if no matter can leave it and none can enter. Energy can still cross the boundary. The piston is part of the boundary of the system: when it moves, the volume changes, but no matter crosses the boundary.
-**Model answer:** The gas is a closed system, because no matter crosses its boundary, even though energy can be transferred and the volume can change. A system would become open only if matter could get out or in, for example if the cylinder leaked. Heating and compression change the state variables, that is, the temperature, the pressure and the volume, but they do not make the system open. The temperature of a closed system is not constant either.
+**Model answer:** The gas is a closed system, because no matter crosses its boundary, even though energy can be transferred and the volume can change. A system would become open only if matter could get out or in, for example if the cylinder leaked. Heating and compression change the state variables, that is, the temperature, the pressure and the volume, but they do not make the system open. The temperature of a closed system is not necessarily constant either.
 
 ## fy3-3-L1-07
 **Given:** $\theta = -18\,{}^\circ\text{C}$

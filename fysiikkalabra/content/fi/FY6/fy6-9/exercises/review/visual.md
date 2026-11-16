@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: daa0330ac3b9a714
-SCOPE: delta added-exercise from e5c2c0ca37639b87 base 8f23aa7ae3bd
+CONTENT-HASH: a32b15bf322a41fe
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] fy6-9/ex-current2 (task 9-17) — y-axis ticks read "2", "1" but "2,5", "1,5", "0,5"; the x ticks likewise mix "1", "3" with "0,5", "1,5". Use one style (all with the decimal comma, or whole numbers bare is acceptable) .
+- [Minor] L2-06 Sijoitus — the row breaks before `· 1,5 h` although the first row has room at 1280 px, and the second row carries a second `=` step (`= 0,5 V · 3,0 Ah`) after the continued product, so one row holds two kinds of continuation. Optional: put `= 0,5 V · 3,0 Ah` on its own row. It reads correctly as it is.
 
 ## Checked
-- review/shots/fy6-9-open-exercises-L2-1280-9.png and -10.png (stamp hash daa0330ac3b9a714): task 9-17 with graph, answer row and the whole open solution (Annettu to Järkevyys); the set still reads as one.
-- Graph: axes with quantity and unit, gridlines at 0,5 steps, steps drawn as horizontal segments, description gives the same values and not the answer; the solution's chains render as aligned rows, units upright, colon for division.
+- Delta (calculation re-broken into an inline aligned block, same numbers, signs and units). Opened content/fi/FY6/fy6-9/review/shots/fy6-9-open-exercises-L2-1280-7.png: L2-06 Sijoitus W = (4,2 V − 3,7 V) · 2,0 A / · 1,5 h = 0,5 V · 3,0 Ah / = 1,5 Wh, and the Vastaus and Järkevyys blocks below it.
+- Aligned at `=`, unclipped, signs and units upright with thin space; the Vastaus box and Järkevyys blocks survived.
+- No 360/390 px capture shows an opened solution, so phone wrapping rests on the passing check_layout 360 px result in the packet.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

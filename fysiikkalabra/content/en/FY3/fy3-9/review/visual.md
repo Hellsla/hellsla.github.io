@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7dacc875513ffc50
+CONTENT-HASH: d8a19b348ef5b4a9
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-batch delta review: preview/en/fy3-9.html opened in Chromium (Playwright) at 360, 768 and 1280 px; moved BARREL balloon photo captured with its surroundings. New spot after the last Ydinajatus figure row (which ends above it); at 1280 it floats beside the Boyle formula section (p1V1 = p2V2, p = vakio·1/V) without touching the formula boxes. No overlap with any figure, table, formula box or example (measured), stays in the column at 360/768, no horizontal overflow at any width, image loads, caption and credit unchanged; placement reads naturally (gas expanding as outside pressure falls, next to Boyle's law).
+- delta: open-ennusta-1280-1 (Prediction 1 and 2: ml, kPa, N, degrees all typeset, upright, thin space, no line break inside a quantity), open-exit-1280 (exit ticket question and answer chain). Source of inquiry.json, exit-ticket.json and lesson.md scanned: no plain number with unit remains outside aria-labels.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

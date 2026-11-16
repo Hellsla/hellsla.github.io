@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 4a0d8e1f5459c529
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (67d7b7f5a224ebfb).
+CONTENT-HASH: 0b2eec764f9785fd
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none)
+- (none)
 
 ## Checked
-- Opened fy9-aallot-fi-easy-360.png (chart unchanged); the diff is only teacher.md branch-to-row wording, which reads correctly.
+- Hunk: sovella/solutions.md, Yleisiä virheitä, first item ("taso" → "intensiteetti"). The sentence now names the quantity that is wrongly taken as inversely proportional, and it agrees with the next sentence ($3\,\text{dB}$ per doubling). Grammar and reading level fine.
+- Opened `fy9-aallot-stage-exercises-390-31.png`: the list item wraps cleanly, $3\,\text{dB}$ and $15\,\%$ render in KaTeX, nothing clipped; the model answer above it is intact.
+- Page overflow measured at 390 and 1280 px with every box open: 0 px.

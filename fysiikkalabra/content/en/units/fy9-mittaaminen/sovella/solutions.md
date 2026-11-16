@@ -23,7 +23,13 @@
 ### c)
 **Find:** whether the measurements can show that Liisa was faster than Mira
 **Principle:** Two results are shown to differ only if their uncertainty intervals do not overlap. Overlapping intervals do not prove that the results are equal.
-**Model answer:** Mira's mean is $\bar{t} = (13.80 + 14.12 + 13.96)\,\text{s} : 3 = 13.96\,\text{s}$ and the uncertainty $(14.12 - 13.80)\,\text{s} : 2 = 0.16\,\text{s}$, so Mira's time is $(13.96 \pm 0.16)\,\text{s}$ and Liisa's $(13.71 \pm 0.19)\,\text{s}$. Liisa's interval is $13.52$–$13.90\,\text{s}$ and Mira's $13.80$–$14.12\,\text{s}$, so the intervals overlap. The difference $0.25\,\text{s}$ is of the same order of magnitude as the uncertainties. So these measurements cannot show that Liisa was faster, although her mean is smaller. This does not, however, mean that the runners are equally fast: showing a difference would require more precise timing, for example a photo-finish camera.
+**Model answer:** Mira's mean is $$
+\begin{aligned}
+\bar{t} &= (13.80 + 14.12 + 13.96)\,\text{s} \\
+&: 3 \\
+&= 13.96\,\text{s}
+\end{aligned}
+$$ and the uncertainty $(14.12 - 13.80)\,\text{s} : 2 = 0.16\,\text{s}$, so Mira's time is $(13.96 \pm 0.16)\,\text{s}$ and Liisa's $(13.71 \pm 0.19)\,\text{s}$. Liisa's interval is $13.52$–$13.90\,\text{s}$ and Mira's $13.80$–$14.12\,\text{s}$, so the intervals overlap. The difference $0.25\,\text{s}$ is of the same order of magnitude as the uncertainties. So these measurements cannot show that Liisa was faster, although her mean is smaller. This does not, however, mean that the runners are equally fast: showing a difference would require more precise timing, for example a photo-finish camera.
 
 ### d)
 **Find:** the systematic sources of error in hand timing, whether the direction of the error can be concluded for certain and why the mean does not necessarily remove a systematic error
@@ -31,7 +37,12 @@
 **Model answer:** The timekeeper starts the watch only after seeing the flag drop and reacting to it. The watch therefore starts with a delay $\tau_\text{start}$, typically a few tenths of a second. Stopping the watch also has a delay $\tau_\text{stop}$. The timekeeper sees the finish coming, so this delay can be shorter, but the watch may also be stopped slightly too early or too late. The measured time is $t_\text{meas} = t_\text{true} + \tau_\text{stop} - \tau_\text{start}$, where $t_\text{true}$ is the true time. The measured time is thus shorter than the true time if $\tau_\text{start} > \tau_\text{stop}$, and longer if $\tau_\text{stop} > \tau_\text{start}$. The delays are not known from the information in the problem, so the direction cannot be concluded for certain. Most likely the start delay is larger, so the time is slightly too short and the speed in part a too large. The three timekeepers work in the same way, so the average part of the delays is in the same direction for all of them. It is a systematic error, and it remains in the mean as well. The mean usually reduces only the effect of random error, that is, the variation between the watches. The systematic error is removed, for example, by electronic timing that starts itself from the start signal.
 
 ### Hyväksytään myös
-- In part b, the relative uncertainty of the speed as the sum of the relative uncertainties of the time and the distance: $\tfrac{0.19}{13.71} + \tfrac{0.3}{100.0} \approx 0.0169$, so $\Delta v \approx 0.0169 \cdot 7.294\,\text{m/s} \approx 0.12\,\text{m/s}$.
+- In part b, the relative uncertainty of the speed as the sum of the relative uncertainties of the time and the distance: $\tfrac{0.19}{13.71} + \tfrac{0.3}{100.0} \approx 0.0169$, so $$
+\begin{aligned}
+\Delta v &\approx 0.0169 \cdot 7.294\,\text{m/s} \\
+&\approx 0.12\,\text{m/s}
+\end{aligned}
+$$.
 - In part b, the typical $0.2\,\text{s}$ of hand timing as the uncertainty of the time, when the choice is justified. Then $\Delta v \approx 0.1\,\text{m/s}$ and $v = (7.3 \pm 0.1)\,\text{m/s}$ are also accepted.
 - In part d, a mention that a timekeeper $100\,\text{m}$ away who reacts to the sound of a starting pistol would start the watch even later, because sound travels the distance in about $0.3\,\text{s}$.
 - In part d, a justified estimate of the direction of the error, for example that the measured time is probably shorter than the true time, when the answer states that the conclusion rests on an assumption about the sizes of the delays.
@@ -84,12 +95,30 @@
 The uncertainty of the height of the stack is larger than $0.5\,\text{mm}$, because reading the scale is not the only source of uncertainty. The edges of the stack are uneven, so the height depends on where it is measured, and the stack is compressed when the ruler is pressed against it. The scale division only tells the resolution of the ruler, not the uncertainty of the whole measurement.
 
 ### Hyväksytään myös
-- In part c, the density of the whole stack: $\rho = \tfrac{M}{N a b d} = \tfrac{2.49\,\text{kg}}{31.185\,\text{m}^2 \cdot 1.02 \cdot 10^{-4}\,\text{m}} \approx 783\,\text{kg/m}^3$, or $\rho \approx 784\,\text{kg/m}^3$ calculated with the label of the pack, $80\,\text{g/m}^2$.
-- In part a, the thickness in millimetres and the conversion at the end: $d = 51\,\text{mm} : 500 = 0.102\,\text{mm} = 102\,\mu\text{m}$.
+- In part c, the density of the whole stack: $$
+\begin{aligned}
+\rho &= \tfrac{M}{N a b d} \\
+&= \tfrac{2.49\,\text{kg}}{31.185\,\text{m}^2 \cdot 1.02 \cdot 10^{-4}\,\text{m}} \\
+&\approx 783\,\text{kg/m}^3
+\end{aligned}
+$$, or $\rho \approx 784\,\text{kg/m}^3$ calculated with the label of the pack, $80\,\text{g/m}^2$.
+- In part a, the thickness in millimetres and the conversion at the end: $$
+\begin{aligned}
+d &= 51\,\text{mm} : 500 \\
+&= 0.102\,\text{mm} \\
+&= 102\,\mu\text{m}
+\end{aligned}
+$$.
 
 ### Yleisiä virheitä
 - The uncertainty is not divided by the number of sheets, so the thickness of a sheet comes out as $(102 \pm 1000)\,\mu\text{m}$.
-- Millimetres are converted to micrometres in the wrong direction: $51\,\text{mm} : 500 = 0.102\,\text{mm} = 0.000102\,\mu\text{m}$. In a smaller unit the number grows.
+- Millimetres are converted to micrometres in the wrong direction: $$
+\begin{aligned}
+&51\,\text{mm} : 500 \\
+&= 0.102\,\text{mm} \\
+&= 0.000102\,\mu\text{m}
+\end{aligned}
+$$. In a smaller unit the number grows.
 - The area is calculated in millimetres and converted to square metres with the factor $1000$, although $1\,\text{m}^2 = 10^{6}\,\text{mm}^2$.
 - The density is given three or four significant figures, although the height of the stack is known only to two figures.
 
@@ -322,7 +351,12 @@ The uncertainty of the height of the stack is larger than $0.5\,\text{mm}$, beca
 - In part d, $\Delta\rho = 0.01$–$0.02\,\text{g/cm}^3$ obtained from limit lines drawn by eye.
 
 ### Yleisiä virheitä
-- The density is calculated by dividing the mass of some row by the volume, for example $210.3\,\text{g} : 100\,\text{ml} = 2.10\,\text{g/cm}^3$. The mass includes the measuring cylinder.
+- The density is calculated by dividing the mass of some row by the volume, for example $$
+\begin{aligned}
+&210.3\,\text{g} : 100\,\text{ml} \\
+&= 2.10\,\text{g/cm}^3
+\end{aligned}
+$$. The mass includes the measuring cylinder.
 - The line is forced through the origin, so the slope comes out too large and the liquid is identified wrongly.
 - The point of the row $60\,\text{ml}$ is removed without stating a reason, or because of it the points are joined with a broken line.
 - The slope is read from two adjacent measurement points.
@@ -342,12 +376,24 @@ The uncertainty of the height of the stack is larger than $0.5\,\text{mm}$, beca
 ### b)
 **Find:** whether the claim $(765 \pm 0.5)\,\text{g}$ is right, and a better estimate of the mass of the flour
 **Principle:** The resolution is the smallest change shown on the display. It says nothing about systematic error, so the uncertainty can be much larger than the resolution. A known systematic error is corrected.
-**Model answer:** The claim does not hold. Half the resolution, $0.5\,\text{g}$, only tells how precisely the display can be read. According to part a, the scale shows about $2\,\%$ too much, and the repetitions vary by about $1\,\text{g}$. The scale shows $m_\text{reading} = k\,m$ for a mass $m$, where $k$ is the ratio given by the weights, $1020\,\text{g} : 1000\,\text{g} = 1.02$. The corrected mass is therefore $m = \dfrac{m_\text{reading}}{k} = 765\,\text{g} : 1.02 = 750\,\text{g}$. The uncertainty is increased by the variation of the repetitions and by the fact that the correction factor is known only to about a thousandth, which makes less than a gram in the reading $765\,\text{g}$. A better estimate is about $(750 \pm 2)\,\text{g}$. So the friend's result is about $15\,\text{g}$ too large, and its uncertainty is too small.
+**Model answer:** The claim does not hold. Half the resolution, $0.5\,\text{g}$, only tells how precisely the display can be read. According to part a, the scale shows about $2\,\%$ too much, and the repetitions vary by about $1\,\text{g}$. The scale shows $m_\text{reading} = k\,m$ for a mass $m$, where $k$ is the ratio given by the weights, $1020\,\text{g} : 1000\,\text{g} = 1.02$. The corrected mass is therefore $$
+\begin{aligned}
+m &= \dfrac{m_\text{reading}}{k} \\
+&= 765\,\text{g} : 1.02 \\
+&= 750\,\text{g}
+\end{aligned}
+$$. The uncertainty is increased by the variation of the repetitions and by the fact that the correction factor is known only to about a thousandth, which makes less than a gram in the reading $765\,\text{g}$. A better estimate is about $(750 \pm 2)\,\text{g}$. So the friend's result is about $15\,\text{g}$ too large, and its uncertainty is too small.
 
 ### c)
 **Find:** the shape of the graph, what it shows about the kind of error, and why repetition does not help
 **Principle:** If the scale were right, the reading would be the same as the mass of the weight, and the points would be on a line with slope $1$ and constant term $0$. A zero error would show in the constant term and a relative error in the slope.
-**Model answer:** The points are on a straight line through the origin: the reading is directly proportional to the mass of the weight, $m_\text{reading} \propto m_\text{weight}$. The slope $k = \dfrac{\Delta m_\text{reading}}{\Delta m_\text{weight}}$ is read from the fitted line at two points far apart, the points at $100.0\,\text{g}$ and $1000.0\,\text{g}$ (all points are on the line): $k = (1020.3\,\text{g} - 101.7\,\text{g}) : (1000.0\,\text{g} - 100.0\,\text{g}) \approx 1.02$ and not $1$, and the constant term is zero. A constant term of zero tells that the zero point is right, and the slope $1.02$ tells that the scale shows $2\,\%$ too much for every mass. The points of the graph are very precisely on the line, because the random variation, about $1\,\text{g}$, is small.
+**Model answer:** The points are on a straight line through the origin: the reading is directly proportional to the mass of the weight, $m_\text{reading} \propto m_\text{weight}$. The slope $k = \dfrac{\Delta m_\text{reading}}{\Delta m_\text{weight}}$ is read from the fitted line at two points far apart, the points at $100.0\,\text{g}$ and $1000.0\,\text{g}$ (all points are on the line): $$
+\begin{aligned}
+k &= (1020.3\,\text{g} - 101.7\,\text{g}) \\
+&: (1000.0\,\text{g} - 100.0\,\text{g}) \\
+&\approx 1.02
+\end{aligned}
+$$ and not $1$, and the constant term is zero. A constant term of zero tells that the zero point is right, and the slope $1.02$ tells that the scale shows $2\,\%$ too much for every mass. The points of the graph are very precisely on the line, because the random variation, about $1\,\text{g}$, is small.
 
 Repetition reduces the effect of random error in the mean, because readings that are too large and too small partly cancel each other. A systematic error, however, is the same in every weighing, so the mean is just as wrong as a single reading. The error is corrected by dividing the readings by the slope $1.02$ or by calibrating the scale with a weight.
 
@@ -430,7 +476,18 @@ Repetition reduces the effect of random error in the mean, because readings that
 
 **Model answer:** Six points are close to one straight line, so the car moved uniformly and the position is a linear function of time, $x = vt + x_0$. The speed is the slope of the line, $v = \dfrac{x_2 - x_1}{t_2 - t_1}$. The point $t = 1.5\,\text{s}$ is about $0.25\,\text{m}$ above the line, almost at the same position as the point $t = 2.0\,\text{s}$, so it has probably been marked in the wrong frame. The point is checked from the video. If an error is found, it is corrected, or the point is left out and the reason recorded.
 
-The line is not forced through the origin. Two points of it far apart are read, $(0\,\text{s};\ 0.36\,\text{m})$ and $(3.0\,\text{s};\ 1.79\,\text{m})$, so the speed is $v = \dfrac{1.79\,\text{m} - 0.36\,\text{m}}{3.0\,\text{s} - 0\,\text{s}} = 0.477\,\tfrac{\text{m}}{\text{s}}$. The constant term $0.36\,\text{m}$ is the position of the car when the timing began. The steepest and the shallowest line through all the bars give slopes of about $0.492$ and $0.464\,\text{m/s}$, so $\Delta v = (0.492 - 0.464)\,\text{m/s} : 2 = 0.014\,\text{m/s}$.
+The line is not forced through the origin. Two points of it far apart are read, $(0\,\text{s};\ 0.36\,\text{m})$ and $(3.0\,\text{s};\ 1.79\,\text{m})$, so the speed is $$
+\begin{aligned}
+v &= \dfrac{1.79\,\text{m} - 0.36\,\text{m}}{3.0\,\text{s} - 0\,\text{s}} \\
+&= 0.477\,\tfrac{\text{m}}{\text{s}}
+\end{aligned}
+$$. The constant term $0.36\,\text{m}$ is the position of the car when the timing began. The steepest and the shallowest line through all the bars give slopes of about $0.492$ and $0.464\,\text{m/s}$, so $$
+\begin{aligned}
+\Delta v &= (0.492 - 0.464)\,\text{m/s} \\
+&: 2 \\
+&= 0.014\,\text{m/s}
+\end{aligned}
+$$.
 
 The result is $v = (0.477 \pm 0.014)\,\text{m/s}$, when the uncertainty keeps two figures because its first digit is $1$. The result agrees with the report's two-point value $0.42\,\text{m/s}$ only thanks to that value's large uncertainty, but not with the value of the line forced through the origin, $0.63\,\text{m/s}$.
 
@@ -457,11 +514,28 @@ The result is $v = (0.477 \pm 0.014)\,\text{m/s}$, when the uncertainty keeps tw
 ### a)
 **Find:** whether the pressure is inversely proportional to the syringe reading $V$
 **Principle:** If $p$ is inversely proportional to the quantity $V$, the product $pV$ is constant. The claim is tested by calculating the product on different rows and seeing whether it varies randomly or changes systematically in the same direction.
-**Model answer:** On the first row $pV = 189.1\,\text{kPa} \cdot 12\,\text{ml} = 2269\,\text{kPa} \cdot \text{ml}$ and on the last $81.8\,\text{kPa} \cdot 30\,\text{ml} = 2454\,\text{kPa} \cdot \text{ml}$. The products of the rows in between grow steadily row by row, and the total growth is $(2454 - 2269) : 2269 \approx 8\,\%$. The pressures are given to a tenth of a kilopascal, and the product grows in the same direction on every row. A random error would vary haphazardly, so the steady growth of $8\,\%$ is not caused by it. So the claim does not hold for the syringe reading $V$. The growth of the product suggests that the true volume of the air is larger than the reading: part of the air is in the tube and the sensor, and its share is largest when the volume of the syringe is small.
+**Model answer:** On the first row $$
+\begin{aligned}
+pV &= 189.1\,\text{kPa} \cdot 12\,\text{ml} \\
+&= 2269\,\text{kPa} \cdot \text{ml}
+\end{aligned}
+$$ and on the last $$
+\begin{aligned}
+&81.8\,\text{kPa} \cdot 30\,\text{ml} \\
+&= 2454\,\text{kPa} \cdot \text{ml}
+\end{aligned}
+$$. The products of the rows in between grow steadily row by row, and the total growth is $(2454 - 2269) : 2269 \approx 8\,\%$. The pressures are given to a tenth of a kilopascal, and the product grows in the same direction on every row. A random error would vary haphazardly, so the steady growth of $8\,\%$ is not caused by it. So the claim does not hold for the syringe reading $V$. The growth of the product suggests that the true volume of the air is larger than the reading: part of the air is in the tube and the sensor, and its share is largest when the volume of the syringe is small.
 
 ### b)
 **Find:** a graph in which the relationship is linear, and a straight line fitted to it
-**Graph:** The true volume of the air is $V + V_0$. When the temperature and the amount of air stay the same, according to Boyle's law $p(V + V_0) = C$, so $V = C \cdot \tfrac{1}{p} - V_0$. The horizontal axis is therefore given $\tfrac{1}{p}$ and the vertical axis $V$. For example, on the first row $\tfrac{1}{p} = \tfrac{1}{189.1\,\text{kPa}} = \tfrac{1}{0.1891\,\text{MPa}} = 5.29\,\tfrac{1}{\text{MPa}}$ and on the last $12.2\,\tfrac{1}{\text{MPa}}$.
+**Graph:** The true volume of the air is $V + V_0$. When the temperature and the amount of air stay the same, according to Boyle's law $p(V + V_0) = C$, so $V = C \cdot \tfrac{1}{p} - V_0$. The horizontal axis is therefore given $\tfrac{1}{p}$ and the vertical axis $V$. For example, on the first row $$
+\begin{aligned}
+&\tfrac{1}{p} \\
+&= \tfrac{1}{189.1\,\text{kPa}} \\
+&= \tfrac{1}{0.1891\,\text{MPa}} \\
+&= 5.29\,\tfrac{1}{\text{MPa}}
+\end{aligned}
+$$ and on the last $12.2\,\tfrac{1}{\text{MPa}}$.
 
 <svg data-fig="s6-kuvaaja" viewBox="0 0 600 440" role="img" aria-label="Graph: the volume V on the syringe scale in millilitres as a function of the reciprocal of the pressure 1/p in the unit 1/MPa. Ten blue points between 5.3 and 12.2 1/MPa are on one rising straight line. The line is extended as a dashed line to the vertical axis, which it crosses on the negative side at −1.8 ml. The slope is 2.60 MPa · ml. The horizontal axis is drawn at V = 0." style="max-width:100%;font-size:30px">
   <line x1="132" y1="400" x2="132" y2="60" stroke="#e3dccb" stroke-width="1.5" stroke-linecap="butt"/>
@@ -540,10 +614,27 @@ The result is $v = (0.477 \pm 0.014)\,\text{m/s}$, when the uncertainty keeps tw
 **Principle:** The equation of the line is $V = C \cdot \tfrac{1}{p} - V_0$, so the constant term is $-V_0$ and the slope $C = p(V + V_0)$. According to the ideal gas law $p(V + V_0) = nRT$, so the amount of substance is obtained from the slope. In the ideal gas law the temperature is in kelvins.
 **Reading the graph:** The line crosses the vertical axis at $-1.8\,\text{ml}$. Two points of the line far apart are read, $(4.0\,\tfrac{1}{\text{MPa}};\ 8.6\,\text{ml})$ and $(12.0\,\tfrac{1}{\text{MPa}};\ 29.5\,\text{ml})$.
 **Formula:** $V_0 = -b$, $C = \dfrac{\Delta V}{\Delta (1/p)}$ and $C = nRT$, so $n = \dfrac{C}{RT}$
-**Conversions:** $1\,\text{MPa} \cdot \text{ml} = 10^{6}\,\text{Pa} \cdot 10^{-6}\,\text{m}^3 = 1\,\text{Pa} \cdot \text{m}^3 = 1\,\text{J}$ and $T = (22 + 273.15)\,\text{K} = 295.15\,\text{K}$
+**Conversions:** $$
+\begin{aligned}
+&1\,\text{MPa} \cdot \text{ml} \\
+&= 10^{6}\,\text{Pa} \cdot 10^{-6}\,\text{m}^3 \\
+&= 1\,\text{Pa} \cdot \text{m}^3 \\
+&= 1\,\text{J}
+\end{aligned}
+$$ and $T = (22 + 273.15)\,\text{K} = 295.15\,\text{K}$
 **Substitution:** $V_0 = 1.8\,\text{ml}$, $C = \dfrac{29.5\,\text{ml} - 8.6\,\text{ml}}{12.0\,\tfrac{1}{\text{MPa}} - 4.0\,\tfrac{1}{\text{MPa}}} = 2.61\,\text{MPa} \cdot \text{ml} = 2.61\,\text{J}$ and $n = \dfrac{2.61\,\text{J}}{8.314\,\tfrac{\text{J}}{\text{mol} \cdot \text{K}} \cdot 295.15\,\text{K}} = 1.06 \cdot 10^{-3}\,\text{mol}$
 **Answer:** $V_0 \approx 1.8\,\text{ml}$ and $n \approx 1.06 \cdot 10^{-3}\,\text{mol}$. The volume has two significant figures, because it is read from the graph to about $0.1\,\text{ml}$; the amount of substance has three, as the slope does.
-**Reasonableness:** At normal pressure and room temperature a mole of gas takes up about $24\,\text{l}$, so about $26\,\text{ml}$ of air is about $26\,\text{ml} : 24\,000\,\text{ml/mol} \approx 1.1 \cdot 10^{-3}\,\text{mol}$. An air space of a few millilitres in the tube and the sensor is plausible for a short tube. When $V_0$ is added, the product $p(V + V_0)$ is $189.1\,\text{kPa} \cdot 13.8\,\text{ml} = 2610\,\text{kPa} \cdot \text{ml}$ on the first row and $81.8\,\text{kPa} \cdot 31.8\,\text{ml} = 2601\,\text{kPa} \cdot \text{ml}$ on the last, that is, almost constant.
+**Reasonableness:** At normal pressure and room temperature a mole of gas takes up about $24\,\text{l}$, so about $26\,\text{ml}$ of air is about $26\,\text{ml} : 24\,000\,\text{ml/mol} \approx 1.1 \cdot 10^{-3}\,\text{mol}$. An air space of a few millilitres in the tube and the sensor is plausible for a short tube. When $V_0$ is added, the product $p(V + V_0)$ is $$
+\begin{aligned}
+&189.1\,\text{kPa} \cdot 13.8\,\text{ml} \\
+&= 2610\,\text{kPa} \cdot \text{ml}
+\end{aligned}
+$$ on the first row and $$
+\begin{aligned}
+&81.8\,\text{kPa} \cdot 31.8\,\text{ml} \\
+&= 2601\,\text{kPa} \cdot \text{ml}
+\end{aligned}
+$$ on the last, that is, almost constant.
 
 ### d)
 **Find:** the assumptions of the result and their effect
@@ -559,7 +650,12 @@ The result is $v = (0.477 \pm 0.014)\,\text{m/s}$, when the uncertainty keeps tw
 ### Hyväksytään myös
 - In part b, a $(\tfrac{1}{p}, V)$ graph in the unit $\tfrac{1}{\text{kPa}}$, in which case the slope is $2600\,\text{kPa} \cdot \text{ml} = 2.60\,\text{J}$.
 - In parts b and c, a calculator or spreadsheet fit: $C = 2.603\,\text{J}$ and $V_0 = 1.77\,\text{ml}$. The values $V_0 = 1.5$–$2.1\,\text{ml}$ and $n = (1.01$–$1.11) \cdot 10^{-3}\,\text{mol}$ are accepted.
-- In part c, the amount of substance from one row, when $V_0$ has been added: $n = \tfrac{101.2\,\text{kPa} \cdot 25.8\,\text{ml}}{RT} \approx 1.06 \cdot 10^{-3}\,\text{mol}$.
+- In part c, the amount of substance from one row, when $V_0$ has been added: $$
+\begin{aligned}
+n &= \tfrac{101.2\,\text{kPa} \cdot 25.8\,\text{ml}}{RT} \\
+&\approx 1.06 \cdot 10^{-3}\,\text{mol}
+\end{aligned}
+$$.
 
 ### Yleisiä virheitä
 - In part a, $pV$ is said to be "almost constant" without looking at the direction in which the product changes row by row, so the systematic growth goes unnoticed.

@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ae045ef3e021670a
-SCOPE: delta added-exercise from 99bf518cf2d541bd base 8f23aa7ae3bd
+CONTENT-HASH: ac7857fc2f3cb2c0
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-11-L1-09 Periaate — "Jännite on suurin mahdollinen, kun E on yhtä suuri kuin läpilyöntikestävyys" repeats the sentence before it; one of the two is enough.
+- none
 
 ## Checked
-- fy6-11-open-exercises-1280-9.png (L1-09, shown as 11-9: task text, hint, answer box, solution rows, $\dfrac{\text{kV}}{\text{mm}}$ substitution, answer, Järkevyys) and -8 (the neighbouring task, to see the set reads as one). No figure in the task; nothing clipped; units and decimal commas in LaTeX.
+- Delta (calculation chains re-broken into inline aligned blocks, same numbers, signs and units). Opened content/fi-easy/FY6/fy6-11/review/shots/fy6-11-open-exercises-1280-5.png (L1-05 Järkevyys "91 µN : 3,0 nC ≈ 3,0·10⁴ N/C", plus its fraction Sijoitus) and fy6-11-open-exercises-L3-1280-3.png (L3-02 v = √(2 · 8,794·10¹⁴ m/s² · 0,010 m) = 4,19·10⁶ m/s).
+- The root sign spans the whole radicand, `=` rows aligned, nothing clipped, units upright with thin space; the plain-Finnish sentences around are clear.
+- No 360/390 px capture shows an opened solution, so phone wrapping rests on the passing check_layout 360 px result in the packet.
 
 ## Scores
-illustrations n/a (4) · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

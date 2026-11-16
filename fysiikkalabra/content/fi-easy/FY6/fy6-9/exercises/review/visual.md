@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: b6066e2dc31595c5
-SCOPE: delta added-exercise from 47c6ed01597a514a base 8f23aa7ae3bd
+CONTENT-HASH: 3b56acf60ce0f476
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-9-L2-08 text — "varaus-tiedon avulla" reads awkwardly — "varauksen avulla".
+- [Minor] L2-06 Sijoitus — the row breaks before `· 1,5 h` although the first row has room at 1280 px, and the second row carries a second `=` step (`= 0,5 V · 3,0 Ah`) after the continued product. Optional: put `= 0,5 V · 3,0 Ah` on its own row. It reads correctly as it is.
 
 ## Checked
-- fy6-9-open-exercises-L2-1280-9.png and -10.png (fy6-9-L2-08, shown as 9-17): task text, figure ex-current2 (axes with units, steps at 2, 1,5 and 0,5 A, gridlines, no charge given away), solution rows aligned, units upright, answer set apart, Järkevyys.
-- Set still reads as one; nothing clipped.
+- Delta (calculation re-broken into an inline aligned block, same numbers, signs and units). Opened content/fi-easy/FY6/fy6-9/review/shots/fy6-9-open-exercises-L2-1280-7.png: L2-06 Sijoitus W = (4,2 V − 3,7 V) · 2,0 A / · 1,5 h = 0,5 V · 3,0 Ah / = 1,5 Wh, with Vastaus and Järkevyys below.
+- Aligned at `=`, unclipped, units upright with thin space; the Finnish around it is plain and clear.
+- No 360/390 px capture shows an opened solution, so phone wrapping rests on the passing check_layout 360 px result in the packet.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

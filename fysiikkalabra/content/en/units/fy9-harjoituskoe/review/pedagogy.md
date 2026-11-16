@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 2cd498b57a53898c
-Delta review (extra-answers rule, 2026-11-14) of the version passed at 8781f82cc4cc2034.
+CONTENT-HASH: a089217258a4ac7b
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-None.
+- (none)
 
 ## Polish
-- Instruction is correct and unambiguous: with extra answers, count only the allowed number, the lowest-scoring ones. A student may find it harsh; one clause saying why (so the extra answer cannot only help) would be nice, not needed.
+- C solutions.md d) model answer still says "the maximum possible static friction" one line below the corrected "maximum (fully developed) static friction"; the same phrase in both would be tidier.
 
 ## Checked
-- Rule now matches the real exam and is repeated as the practice rule in the next sentence; 'the page does not add up the points for you' prevents hunting for a calculator.
-- Reads fine on phone: one short paragraph under the table.
-- Rest of the page unchanged and not re-judged.
+- solutions.md d) Principle and tasks.json criterion: friction term carried out, sentence still readable, criterion still observable (2 p unchanged).
+- Extension cord parts c and d (tasks.json prompts, solutions.md Find): "converted into internal energy" agrees with the unchanged Principle line; answers 114.0 and 70.4 untouched; the wording reveals nothing.
+- Grep for remaining "into heat" wordings: none in the unit's task set.

@@ -5,7 +5,13 @@
 **Find:** the equations of the decay and the de-excitation, and the wavelength $\lambda$ of the gamma photon
 **Principle:** In beta minus decay a neutron of the nucleus turns into a proton, so the atomic number increases by one and the mass number is conserved. The nucleus emits an electron and an antineutrino. The excited nucleus de-excites by emitting a gamma photon, and neither the atomic number nor the mass number changes (chapter *The atomic nucleus and radioactive decay*). Like light, a gamma photon is a photon whose energy and wavelength are linked (chapter *The photoelectric effect and the photon*).
 **Formula:** ${}^{137}_{55}\text{Cs} \to {}^{137}_{56}\text{Ba}^{\ast} + {}^{0}_{-1}\text{e} + \bar{\nu}$ and ${}^{137}_{56}\text{Ba}^{\ast} \to {}^{137}_{56}\text{Ba} + \gamma$; $E = \dfrac{hc}{\lambda}$, so $\lambda = \dfrac{hc}{E}$
-**Conversions:** $662\,\text{keV} = 662 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} = 1.0605 \cdot 10^{-13}\,\text{J}$ and finally $1\,\text{pm} = 10^{-12}\,\text{m}$
+**Conversions:** $$
+\begin{aligned}
+&662\,\text{keV} \\
+&= 662 \cdot 1000 \cdot 1.602 \cdot 10^{-19}\,\text{J} \\
+&= 1.0605 \cdot 10^{-13}\,\text{J}
+\end{aligned}
+$$ and finally $1\,\text{pm} = 10^{-12}\,\text{m}$
 **Substitution:** $\lambda = \dfrac{6.626 \cdot 10^{-34}\,\text{J}\,\text{s} \cdot 2.998 \cdot 10^{8}\,\text{m/s}}{1.0605 \cdot 10^{-13}\,\text{J}} = 1.873 \cdot 10^{-12}\,\text{m} = 1.873\,\text{pm}$
 **Answer:** The equations are above. The wavelength of the gamma photon is $\lambda \approx 1.87\,\text{pm}$, three significant figures like the energy $662\,\text{keV}$.
 **Reasonableness:** In both equations the mass numbers ($137 = 137 + 0$) and the charge numbers ($55 = 56 - 1$) are conserved. The wavelength is about a hundred times smaller than the diameter of an atom, as it should be for gamma radiation: a photon of visible light is about $2\,\text{eV}$ with a wavelength of about $600\,\text{nm}$, and $662\,000\,\text{eV}$ is about $330\,000$ times as much.
@@ -17,7 +23,9 @@
 **Formula:** $A = A_0 \left(\tfrac{1}{2}\right)^{t/T_{1/2}}$
 **Conversions:** The times are in the same unit, so no conversions are needed.
 **Substitution:** $\dfrac{t}{T_{1/2}} = \dfrac{36\,\text{a}}{30.1\,\text{a}} = 1.196$, so $A = 2400\,\tfrac{\text{Bq}}{\text{kg}} \cdot 0.5^{1.196} = 1047.6\,\tfrac{\text{Bq}}{\text{kg}}$
-**Answer:** $A \approx 1050\,\tfrac{\text{Bq}}{\text{kg}} = 1.05 \cdot 10^{3}\,\tfrac{\text{Bq}}{\text{kg}}$, three significant figures like the half-life.
+**Answer:** $$
+A \approx 1050\,\tfrac{\text{Bq}}{\text{kg}} = 1.05 \cdot 10^{3}\,\tfrac{\text{Bq}}{\text{kg}}
+$$, three significant figures like the half-life.
 **Reasonableness:** A little over one half-life has passed, so the concentration must be a little under half of the original, $1200\,\tfrac{\text{Bq}}{\text{kg}}$. The result is just that.
 
 ### c)
@@ -65,7 +73,13 @@
 **Principle:** Space expands, and distant galaxies recede from us. That is why the wavelength of their light has been stretched, and the redshift $z$ tells by how much. When $z$ is small, the recession speed is $v = cz$. By Hubble's law the speed is directly proportional to the distance (chapter *The evolution of the universe*).
 **Formula:** $z = \dfrac{\lambda - \lambda_0}{\lambda_0}$, $v = cz$ and $v = H_0 d$, so $d = \dfrac{v}{H_0}$
 **Conversions:** The wavelengths are in the same unit, and the speeds are in $\tfrac{\text{km}}{\text{s}}$, so no conversions are needed.
-**Substitution:** $z = \dfrac{671.8\,\text{nm} - 656.3\,\text{nm}}{656.3\,\text{nm}} = \dfrac{15.5\,\text{nm}}{656.3\,\text{nm}} = 0.02362$, $v = 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.02362 = 7080\,\text{km/s}$ and $d = \dfrac{7080\,\text{km/s}}{70\,\tfrac{\text{km/s}}{\text{Mpc}}} = 101.1\,\text{Mpc}$
+**Substitution:** $$
+\begin{aligned}
+z &= \dfrac{671.8\,\text{nm} - 656.3\,\text{nm}}{656.3\,\text{nm}} \\
+&= \dfrac{15.5\,\text{nm}}{656.3\,\text{nm}} \\
+&= 0.02362
+\end{aligned}
+$$, $v = 2.998 \cdot 10^{5}\,\text{km/s} \cdot 0.02362 = 7080\,\text{km/s}$ and $d = \dfrac{7080\,\text{km/s}}{70\,\tfrac{\text{km/s}}{\text{Mpc}}} = 101.1\,\text{Mpc}$
 **Answer:** The galaxy recedes at the speed $v \approx 7080\,\text{km/s}$, three significant figures like the difference of the wavelengths $15.5\,\text{nm}$. It is at a distance of about $1.0 \cdot 10^{2}\,\text{Mpc}$, two significant figures like the Hubble constant.
 **Reasonableness:** The speed is about $2\,\%$ of the speed of light, so $v = cz$ holds. $100\,\text{Mpc}$ is about $330$ million light years, which is beyond the nearby groups of galaxies but still a distance easily observed with a telescope.
 
@@ -93,7 +107,12 @@
 - In part d, the lines are said to be dark because the galaxy is far away or because the redshift darkens them.
 
 ### Hyväksytään myös
-- In part c, the ratio $\lambda = 486.1\,\text{nm} \cdot \dfrac{671.8}{656.3} = 497.6\,\text{nm}$, because $1 + z$ is the ratio of the observed value to the laboratory value.
+- In part c, the ratio $$
+\begin{aligned}
+\lambda &= 486.1\,\text{nm} \cdot \dfrac{671.8}{656.3} \\
+&= 497.6\,\text{nm}
+\end{aligned}
+$$, because $1 + z$ is the ratio of the observed value to the laboratory value.
 
 ## fy9-moderni-s3
 
@@ -231,7 +250,13 @@
 **Reading the graph:** The points $(0;\ -2.24\,\text{V})$ and $(8.0 \cdot 10^{14}\,\text{Hz};\ 1.06\,\text{V})$ are read from the line.
 **Formula:** $k = \dfrac{\Delta U}{\Delta f}$ and $k = \dfrac{h}{e}$, so $h = ek$
 **Conversions:** $1\,\text{C} \cdot 1\,\text{V} \cdot 1\,\text{s} = 1\,\text{J}\,\text{s}$, because $1\,\text{V} = 1\,\tfrac{\text{J}}{\text{C}}$ and $\tfrac{1}{\text{Hz}} = 1\,\text{s}$.
-**Substitution:** $k = \dfrac{1.06\,\text{V} - (-2.24\,\text{V})}{8.0 \cdot 10^{14}\,\text{Hz} - 0} = \dfrac{3.30\,\text{V}}{8.0 \cdot 10^{14}\,\tfrac{1}{\text{s}}} = 4.125 \cdot 10^{-15}\,\text{V}\,\text{s}$, so $h = 1.602 \cdot 10^{-19}\,\text{C} \cdot 4.125 \cdot 10^{-15}\,\text{V}\,\text{s} = 6.608 \cdot 10^{-34}\,\text{J}\,\text{s}$
+**Substitution:** $k = \dfrac{1.06\,\text{V} - (-2.24\,\text{V})}{8.0 \cdot 10^{14}\,\text{Hz} - 0} = \dfrac{3.30\,\text{V}}{8.0 \cdot 10^{14}\,\tfrac{1}{\text{s}}} = 4.125 \cdot 10^{-15}\,\text{V}\,\text{s}$, so $$
+\begin{aligned}
+h &= 1.602 \cdot 10^{-19}\,\text{C} \cdot 4.125 \\
+&\cdot 10^{-15}\,\text{V}\,\text{s} \\
+&= 6.608 \cdot 10^{-34}\,\text{J}\,\text{s}
+\end{aligned}
+$$
 **Answer:** $h \approx 6.61 \cdot 10^{-34}\,\text{J}\,\text{s}$, three significant figures, because the voltages are read from the graph to about a hundredth of a volt. The result is $0.3\,\%$ smaller than the table value $6.626 \cdot 10^{-34}\,\text{J}\,\text{s}$.
 **Reasonableness:** The difference is much smaller than the reading uncertainty, about $1\,\%$, so the measurement supports the model. The slope does not depend on the material of the cathode, so any metal would give the same $h$.
 
@@ -321,7 +346,13 @@
 **Find:** the efficiency $\eta$ and the number of fissions per second $n$
 **Principle:** The efficiency is the ratio of the useful power to the power used (chapter *Energy production and the efficiency of power plants*). The thermal power of the reactor is the energy of one fission times the number of fissions per second (chapter *Fission, fusion and nuclear power*).
 **Formula:** $\eta = \dfrac{P_\text{e}}{P_\text{th}}$ and $P_\text{th} = nE_\text{f}$, so $n = \dfrac{P_\text{th}}{E_\text{f}}$
-**Conversions:** $200\,\text{MeV} = 200 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} = 3.204 \cdot 10^{-11}\,\text{J}$ and $4300\,\text{MW} = 4300 \cdot 10^{6}\,\text{W}$
+**Conversions:** $$
+\begin{aligned}
+&200\,\text{MeV} \\
+&= 200 \cdot 10^{6} \cdot 1.602 \cdot 10^{-19}\,\text{J} \\
+&= 3.204 \cdot 10^{-11}\,\text{J}
+\end{aligned}
+$$ and $4300\,\text{MW} = 4300 \cdot 10^{6}\,\text{W}$
 **Substitution:** $\eta = \dfrac{1600\,\text{MW}}{4300\,\text{MW}} = 0.3721 = 37.21\,\%$ and $n = \dfrac{4300 \cdot 10^{6}\,\tfrac{\text{J}}{\text{s}}}{3.204 \cdot 10^{-11}\,\text{J}} = 1.342 \cdot 10^{20}\,\tfrac{1}{\text{s}}$
 **Answer:** The efficiency is $\eta \approx 37.2\,\%$, and about $1.34 \cdot 10^{20}$ fissions happen in the reactor per second, three significant figures like the powers.
 **Reasonableness:** The efficiency of a thermal power plant with a steam turbine is typically $30$–$40\,\%$. There are enormous numbers of fissions, because one fission releases only about $3 \cdot 10^{-11}\,\text{J}$.
@@ -358,6 +389,72 @@
 
 ### Yleisiä virheitä
 - In part a, the efficiency is calculated the wrong way round, $\tfrac{4300}{1600}$, or the megaelectronvolts are not converted into joules.
-- In part b, $\Delta m$ is taken as the mass, that is it is claimed that all the fuel turns into energy, or $\Delta m$ is calculated from the electrical energy instead of the thermal energy.
+- In part b, $\Delta m$ is taken as the mass, that is it is claimed that all the fuel turns into energy, or $\Delta m$ is calculated from the electrical power instead of the thermal power.
 - In part c, the whole thermal power $4300\,\text{MW}$ or the electric power $1600\,\text{MW}$ is taken as the power going to the seawater.
 - In part d, the efficiency is multiplied by instead of divided by, which gives $6.25$ times too little coal, or the kilograms are not converted into tonnes.
+
+## fy9-moderni-s7
+
+### a)
+**Find:** how the fusion reaction was produced and what the two energies in the source mean
+**Principle:** In fusion light nuclei join into a heavier nucleus, and energy is released. Nuclei are positively charged and repel each other, so they can join only in very hot and dense matter (chapter *Fission, fusion and nuclear power*).
+**Model answer:** According to the source (Yle News 12 Dec 2022, checked 16 Nov 2026) the experiment was done at Lawrence Livermore National Laboratory in California. The beams of huge lasers were focused on one point, where the fuel was. The energy delivered by the lasers heated the fuel so that its nuclei joined into heavier nuclei: helium formed, and energy was released. Of the energies, $3.15\,\text{MJ}$ is the energy released in the fusion reaction. $2.05\,\text{MJ}$ is the energy used in the experiment to start the reaction, that is the energy the lasers delivered to the fuel. According to the article's correction note it does not include the energy used to run the lasers.
+
+### b)
+**Given:** energy released in fusion $E_\text{f} = 3.15\,\text{MJ}$, energy the lasers delivered to the fuel $E_\text{l} = 2.05\,\text{MJ}$ (source, checked 16 Nov 2026)
+**Find:** the ratio $\tfrac{E_\text{f}}{E_\text{l}}$ and the difference $\Delta E$ of the energies, and what they mean
+**Principle:** The ratio tells how many times the delivered energy the released energy is. The difference tells how much more energy was released from the fuel than was delivered to it. Both concern the same system, the fuel.
+**Formula:** $\dfrac{E_\text{f}}{E_\text{l}}$ and $\Delta E = E_\text{f} - E_\text{l}$
+**Conversions:** None are needed, because both energies are in megajoules.
+**Substitution:** $\dfrac{E_\text{f}}{E_\text{l}} = \dfrac{3.15\,\text{MJ}}{2.05\,\text{MJ}} = 1.537$ and $\Delta E = 3.15\,\text{MJ} - 2.05\,\text{MJ} = 1.10\,\text{MJ}$
+**Answer:** The ratio of the energies is about $1.54$ and the difference $1.10\,\text{MJ}$, three significant figures like the energies in the source. So fusion released about one and a half times the energy, $1.10\,\text{MJ}$ more than the lasers delivered to the fuel. The ratio is greater than $1$, and exactly that was the new result of the experiment.
+**Reasonableness:** The difference $1.10\,\text{MJ}$ is about $54\,\%$ of the energy $2.05\,\text{MJ}$, which matches the ratio $1.54$. The ratio has no unit, because the megajoules cancel.
+
+### c)
+**Given:** heat $Q = 3.15\,\text{MJ}$, initial temperature $20\,{}^\circ\text{C}$, final temperature $100\,{}^\circ\text{C}$, specific heat capacity of water $c_\text{v} = 4.19\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}}$
+**Find:** the mass of the water $m$ and whether the article's comparison holds
+**Principle:** When water warms up and its state does not change, the heat it receives is $Q = c_\text{v}m\Delta T$ (chapter *Heating and cooling of matter*). Assume that all the energy goes to the water. Bringing water to the boil means heating it to the boiling point, so vaporisation is not included.
+**Formula:** $Q = c_\text{v}m\Delta T$, so $m = \dfrac{Q}{c_\text{v}\Delta T}$
+**Conversions:** $3.15\,\text{MJ} = 3.15 \cdot 10^{6}\,\text{J}$, $4.19\,\tfrac{\text{kJ}}{\text{kg}\cdot\text{K}} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,{}^\circ\text{C} = 80\,\text{K}$
+**Substitution:** $$
+\begin{aligned}
+m &= \dfrac{3.15 \cdot 10^{6}\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 80\,\text{K}} \\
+&= \dfrac{3.15 \cdot 10^{6}\,\text{J}}{335\,200\,\tfrac{\text{J}}{\text{kg}}} \\
+&= 9.397\,\text{kg}
+\end{aligned}
+$$
+**Answer:** The energy heats about $9.4\,\text{kg}$, that is about $9.4$ litres, of water to the boiling point. The answer is given to two significant figures, because the temperature difference $80\,\text{K}$ has two significant figures. The article's comparison holds: the amount is a few pots, for example three pots of three litres.
+**Reasonableness:** Heating one litre takes $335\,200\,\text{J} \approx 0.34\,\text{MJ}$, so $3.15\,\text{MJ}$ is enough for about nine litres. The energy of the experiment is small on an everyday scale, although the result was scientifically significant.
+
+### d)
+**Find:** why the result does not show that the whole experimental facility produced more energy than it used, and how much electrical energy the released energy would give with the efficiency of a thermal power plant
+**Principle:** An energy balance depends on how the system is bounded (chapter *Thermodynamic system, state variables and temperature*). The efficiency of a device is the ratio of the useful energy to the energy the device takes in (chapter *Efficiency*). A thermal power plant turns only a part of the energy it receives as heat into electricity (chapter *Energy production and the efficiency of power plants*).
+**Model answer:** The comparison $3.15\,\text{MJ} > 2.05\,\text{MJ}$ concerns only the fuel: more energy was released from it than the lasers delivered to it. According to the source, the figure $2.05\,\text{MJ}$ does not include the energy used to run the lasers. When the system is taken to be the whole experimental facility, the energy it takes in is the electrical energy from the grid, $E_\text{g} \approx 300\,\text{MJ}$. Then $$
+\begin{aligned}
+\dfrac{E_\text{f}}{E_\text{g}} &= \dfrac{3.15\,\text{MJ}}{300\,\text{MJ}} \\
+&= 0.0105 \approx 1\,\%
+\end{aligned}
+$$ So fusion released only about a hundredth of the energy the facility took from the grid. Of the energy the lasers took in, only $\dfrac{2.05\,\text{MJ}}{300\,\text{MJ}} \approx 0.7\,\%$ ended up in the fuel. The rest increased the internal energy of the facility and its surroundings. In addition, the released energy was not turned into electricity. If it were captured as heat and a thermal power plant turned a third of it into electricity, the electricity would be about $\tfrac{1}{3} \cdot 3.15\,\text{MJ} = 1.05\,\text{MJ}$. That is about $0.35\,\%$, less than half a per cent, of the energy taken from the grid. So the whole facility used about a hundred times more energy than fusion released. In a power plant the electrical energy obtained from fusion would have to be clearly greater than the electrical energy the facility takes in, and the shots would have to be repeated continuously.
+
+### e)
+**Find:** what should be made more precise in the invented headline and why the result does not violate conservation of energy
+**Principle:** Energy is conserved: it is not created from nothing and it does not disappear (chapter *Forms of energy and conservation of energy*). The energy released in a nuclear reaction corresponds to a decrease in mass, $E = \Delta m c^2$ (chapters *Mass defect and nuclear binding energy* and *Fission, fusion and nuclear power*). When a claim is assessed, one checks which system and which energies it concerns.
+**Model answer:** Three things in the headline need to be made more precise. First, this is not a power plant but a single laboratory experiment. No electricity was produced at all, and according to the source a fusion power plant connected to the grid is still decades away. Second, “more than it uses” holds only for the energy balance of the fuel: $3.15\,\text{MJ}$ was released from the fuel when the lasers delivered $2.05\,\text{MJ}$ to it. The whole facility used many times more energy than fusion released (part d). Third, the word “already” suggests that the production is continuous, although it was a single shot. The article's own correction note is an example of the same kind of precision: the headline and the text were changed on 13 Dec 2022 so that the reader would not think the lasers' energy is included in the figure $2.05\,\text{MJ}$. A more precise headline would be, for example, “In a fusion experiment the fuel released for the first time more energy than the lasers delivered to it”. The result does not violate conservation of energy. The extra $1.10\,\text{MJ}$ does not come from nothing: the nuclei formed in fusion are more tightly bound than the initial nuclei, so the mass of the reaction products is smaller than that of the reactants. The released energy corresponds to the decrease in mass $$
+\begin{aligned}
+\Delta m &= \dfrac{E_\text{f}}{c^2} \\
+&= \dfrac{3.15 \cdot 10^{6}\,\text{J}}{(2.998 \cdot 10^{8}\,\text{m/s})^2} \\
+&\approx 3.5 \cdot 10^{-11}\,\text{kg}
+\end{aligned}
+$$ That is about $35$ nanograms.
+
+### Yleisiä virheitä
+- In part a, the energies are listed, but it is not said which was released in fusion and which was delivered to the fuel.
+- In part b, the ratio is calculated the wrong way round, $\tfrac{2.05}{3.15} \approx 0.651$, and it is still read as $0.65$ times the energy being released.
+- In part c, the megajoules or kilojoules are not converted into joules, or $100\,\text{K}$ or $373\,\text{K}$ is taken as the change in temperature.
+- In part d, it is only stated that the lasers use energy, but the released energy is not compared with the energy taken from the grid.
+- In part e, it is claimed that fusion “creates” energy, or the headline is rejected as completely false without saying what is true in the result of the experiment.
+
+### Hyväksytään myös
+- In part b, the ratio the other way round, $\tfrac{E_\text{l}}{E_\text{f}} \approx 0.651$, when it is interpreted correctly: the energy delivered to the fuel was about $65\,\%$ of the released energy.
+- In part c, the change in temperature directly in degrees Celsius, $\Delta T = 80\,{}^\circ\text{C}$, because a temperature difference is the same in kelvins and in degrees Celsius.
+- In part c, the answer to three significant figures, $9.40\,\text{kg}$, when the temperatures are read as exact values.

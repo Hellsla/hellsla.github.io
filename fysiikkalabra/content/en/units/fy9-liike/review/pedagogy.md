@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 4cde8bd5463d7c4f
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (b242489c281d686d); earlier findings kept unless named fixed.
+CONTENT-HASH: d166f3a07428ebd5
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none new; round-1 findings stand)
+- (none)
 
 ## Checked
-- Sign "constant acceleration, a not known" is translated and the English aria-label reads "Constant acceleration, a not known: average velocity ..."; same as the fi chart (fi 360 px PNG opened: seven rows, nothing clipped).
-- teacher.md "the slope leads downwards (x to v to a) and the area upwards (v to x)" matches the three graph rows.
-- The rest passes through the round-1 report.
+- solutions.md Answer: recomputed 2.40/1.6^2 = 0.9375, 2.40/1.8^2 = 0.741, 2.40/1.4^2 = 1.224; half-range (1.224-0.741)/2 = 0.24; upper limit minus best estimate 1.224-0.9375 = 0.29. The added sentence explains why +-0.3 is given and a student can follow it; agrees with the Reasonableness line (about 25 %).

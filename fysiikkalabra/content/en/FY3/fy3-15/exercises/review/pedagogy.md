@@ -1,12 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6cb77f0ffba0ac40
-
+CONTENT-HASH: c56abff2c3e9e364
 ## Blocking
-None.
-
+(none)
 ## Polish
-None.
-
+(none)
 ## Checked
-- Delta: L2 reasonableness now says district heat is mainly used for heating; more accurate, still clear.
-- Nothing else touched; numbers, answers and solution steps unchanged.
+- Delta: L3-05 d now says the condenser heat cannot "in practice" (käytännössä) be used for electricity; the solution adds that with an ~11 K difference the largest possible efficiency is only a few per cent. Correct (about 11/300) and a fair hedge, replacing an absolute claim.
+- Reasoning in the solution is brief but understandable at this level; the colon plus "but" sentence is slightly run-on (Polish only).
+- Judged from the diff and the previous PASS; captures not opened.

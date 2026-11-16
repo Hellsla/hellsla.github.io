@@ -47,7 +47,7 @@
 **Conversions:** The force is in newtons and the speed in metres per second, so the product comes directly in watts: $1\,\text{N}\cdot\tfrac{\text{m}}{\text{s}} = 1\,\text{W}$.
 **Substitution:** $P = 20\,\text{N} \cdot 3.0\,\tfrac{\text{m}}{\text{s}} = 60\,\text{W}$
 **Answer:** $60\,\text{W}$, two significant figures like the speed $3.0\,\text{m/s}$.
-**Reasonableness:** Check through time: in one second the sled travels $3.0\,\text{m}$, so the work is $20\,\text{N} \cdot 3.0\,\text{m} = 60\,\text{J}$ and the power is $\tfrac{60\,\text{J}}{1\,\text{s}} = 60\,\text{W}$. A power of a few tens of watts is typical for the pulling power at a brisk walking pace.
+**Reasonableness:** Check through time: in one second the sled travels $3.0\,\text{m}$, so the work is $20\,\text{N} \cdot 3.0\,\text{m} = 60\,\text{J}$ and the power is $\tfrac{60\,\text{J}}{1\,\text{s}} = 60\,\text{W}$. A power of a few tens of watts is a typical pulling power when a sled is pulled at $3.0\,\text{m/s}$, about $11\,\text{km/h}$, the pace of a skier.
 
 ## fy3-2-L2-01
 **Given:** work $W = 45\,\text{kJ}$, force $F = 1.5\,\text{kN}$ (in the direction of motion)

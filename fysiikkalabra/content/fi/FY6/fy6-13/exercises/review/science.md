@@ -1,20 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 33d51071fa114751
-SCOPE: delta added-exercise from 6f38db9cc5bb5b1e base 8f23aa7ae3bd
+CONTENT-HASH: a31ce9eef8a09de8
 
 ## Blocking
 
 ## Polish
-- exercises.json (fy6-13-L2-08) — "toisen kondensaattorin" refers to L1-05's capacitor, but the two tasks sit apart and are not linked. A reader of this task alone does not know what the "other" capacitor is. "Erään kondensaattorin" removes the dangling reference; the physics is unaffected.
-- solutions.md (fy6-13-L1-10, Vastaus) — the reason "kaksi merkitsevää numeroa kuten paksuudessa" is right, but the area 250 cm² has three significant figures. Name the limiting data (d = 0,10 mm and ε_r = 2,3) so the reason is exact.
+- solutions.md:120 — L3-03: "$220\,\text{cm}^2$ eli $2{,}2 \cdot 10^{2}\,\text{cm}^2$, kaksi merkitsevää numeroa": under P7 (b) the first form reads as three figures. Give $2{,}2 \cdot 10^{2}\,\text{cm}^2$ alone. The area is a minimum, because d = 0,50 mm is the thinnest safe layer, so rounding 217 up to 220 is the safe direction (P7 c). One clause saying so would help.
+- solutions.md:39 — L1-04: "$2{,}2 \cdot 10^{2}\,\text{pF} = 220\,\text{pF}$": the same issue, so drop "= 220 pF".
+- solutions.md:80 — L2-03: "$1{,}0 \cdot 10^{2}\,\mu\text{F}$ eli $100\,\mu\text{F}$": the same issue, so drop "eli 100 µF".
 
 ## Checked
-- Hash 33d51071fa114751 at start and end; I judged only L1-10 and L2-08 (delta added-exercise).
-- L1-10: C = ε₀ε_r A/d. The film fills the gap, and d = 0,10 mm is far smaller than the side of a 250 cm² plate (about 16 cm), so the brief's conditions for the formula hold.
-- L1-10 recomputed: 8,854·10⁻¹² · 2,3 · 0,025 : 1,0·10⁻⁴ = 5,09 nF, which equals answers.py. Polyethylene ε_r ≈ 2,3 matches the MAFY value; with 2,25 the result is 4,98 nF, which the 5 % tolerance accepts.
-- L1-10 conversions: cm² → m² (·10⁻⁴) and mm → m are right.
-- L2-08: figures.py draws a line from (0; 0) to (120 µC; 8 V), both on grid lines, and the alt text gives the same point. Neither states C or W.
-- L2-08 recomputed: C = 120 µC : 8 V = 15 µF and W = ½CU² = ½ · 15 µF · (7,0 V)² = 367,5 µJ, which equals answers.py. The tolerance of 2 % fits the answer to two significant figures.
-- L2-08 physics: the (Q, U) line through the origin means C is constant, as the brief teaches. The energy follows from ½CU², and the check by ½QU gives the same result. 7,0 V lies inside the drawn range, so no extrapolation is needed.
-- Both solutions are complete: the formula comes before the numbers, the conversions are shown, the rounding is stated (with the precision caveat above), and each has a real check (air capacitor × ε_r; ½QU < QU).
-- Scope: both tasks use only the brief's formulas (capacitance, the plate capacitor, energy), all within FY6's central content *kondensaattori ja kondensaattorin energia*.
+- Hash a31ce9eef8a09de8 at the start and at the end.
+- I recomputed all 19 numeric answers in one script with my own formulas, including both least-squares fits (L2-05: C = 47,2 µF, so 3,40 mJ; L3-04: k = 100,0 V/s, C = 150 µF, 48,6 kW, charge time 18 s). Every one agrees with answers.py and exercises.json.
+- The round-1 blocking item is fixed. L3-01 (:100) now reads $15{,}0\,\mu\text{J}$, three figures as in 120 pF and 500 V.
+- The round-1 polish items are done too. L1-05 reads $3{,}6 \cdot 10^{2}\,\mu\text{J}$, L2-08 $3{,}7 \cdot 10^{2}\,\mu\text{J}$ and L2-01 $3{,}2 \cdot 10^{2}\,\text{V}$ alone. L2-07 names 24 V as the limiting datum, since 220 µF has three figures.
+- P7 (b) elsewhere: 470 µF, 2200 µF, 1000 µF, 250 cm² and 220 pF are never named as limiting. 10 F, 60 MV/m and 2,0 kV count as two figures.
+- P7 (c): the L2-01 maximum, U_max = 16 MV/m · 0,020 mm = 320 V, is exact, so it needs no rounding.
+- Every tolerance lets an answer rounded to the data's figures pass (L3-03: 220 against 217,2 is 1,3 %; L2-05: 3,3–3,5 mJ is inside 4 %).
+- Physics: C = Q/U; the plate-capacitor conditions (thin gap, dielectric filling the gap); U_max = E_max·d; W = ½QU = ½CU². Source connected or disconnected is handled right in L1-07, L3-01 and L3-02. The halving of the energy in L1-09 and L2-07 is stated as the result of the resistive-charging model.
+- L2-06: the voltage rises per second are 3,5 / 2,0 / 1,4 / 0,8 / 0,5 / 0,3 V. Exactly one option is correct, and each distractor's numbers are right. L1-06, L1-07 and L1-09 each have one consistent key.
+- L3-05: ratio 6,89; the scaling ε_r·E_max² is right.
+- Scope: no capacitor connections and no exponential function. Everything stays inside "kondensaattori ja kondensaattorin energia" and "läpilyöntilujuus".

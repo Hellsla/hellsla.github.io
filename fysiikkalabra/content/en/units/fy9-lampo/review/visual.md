@@ -1,12 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a0bc5bed77ef1a44
-Round 2 (fix round after queue 9c round 1), delta against the version round 1 reviewed (71985e313cf3f576).
+CONTENT-HASH: 1ba6c1be5bf94f0c
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none)
+- (none)
 
 ## Checked
-- Opened fy9-lampo-en-360.png (chart unchanged); the diff is only teacher.md branch-to-row wording, which reads correctly.
+- Hunk: solutions.md, Common mistakes, part d ("the energy does not turn into internal energy at all"): matches the model answer of part d, which says the energy turns into internal energy of the engine.
+- Captures opened: `fy9-lampo-stage-exercises-390-44` (part d Principle and model answer, for consistency of the term) and `-390-45` (the changed list item, then Also accepted and the rubric: layout intact).

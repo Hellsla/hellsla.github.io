@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 0a325fe3bad4c4ff
-Delta review (hero figure without calculator, Osa III sentence, 2026-11-14) of the version passed at 33fcccd3aae0531c.
+CONTENT-HASH: d5c67a8d91360d3c
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-(none)
+- (none)
 
 ## Checked
-Opened /tmp/claude-0/-home-user-hellsla-github-io/9c298ed6-bc3b-52ea-b1db-4a4de46d08a1/scratchpad/shots/hero-fi-1280.png (also hero-en-390.png and hero-fi-easy-390.png for the same drawing at phone width). After the calculator removal the desk holds the laptop, the notebook with pencil on the left and the bottle on the right; the freed right-hand desk area reads as plain desk, no odd gap, balance good, laptop stays the focus, nothing else changed or clipped. Alt text (figures.json, aria-label) no longer names the calculator and matches the picture. Changed Osa III sentence ("Aineistoja on myös useimmissa Osan II tehtävissä: viimeaikaisissa kokeissa neljässä tai viidessä seitsemästä."): fluent Finnish, glossary terms consistent, no typography issue.
+- Hunks: inquiry.json Esimerkki 7 (Hyötysuhde): the correct option and three feedback texts; solutions.md c) and d) Periaate. Each sentence carries decision P1 and reads naturally ("muuttuu lampun ja ympäristön sisäenergiaksi", "valoksi ja sisäenergiaksi").
+- Captures opened: `fy9-koe-stage-sovella-390-7.png`, `fy9-koe-stage-sovella-1280-5.png` (the choice card: four options, the changed one wraps in three lines at 390 px), `fy9-koe-stage-exercises-390-4.png`, `-390-5.png` (Periaate c and d).
+- The three changed feedback texts show only after an answer is committed, so no capture shows them: they were judged from the source text (plain prose with one unchanged link each, no formula).
+- The changed places were found in the built `fi` page by their position in each stage; the contact sheets were not used for triage. No figure and no added task in this unit's diff; the rest stands under the previous PASS.

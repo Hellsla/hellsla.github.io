@@ -390,7 +390,9 @@ Massa supistuu, joten suurin vauhti ei riipu auton massasta.
 Newtonin gravitaatiolaki :: F_\text{g} = \gamma\frac{m_1 m_2}{r^2}
 ```
 
-missä $\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}$ on gravitaatiovakio, $F_\text{g}$ gravitaatiovoiman suuruus ($\text{N}$), $m_1$ ja $m_2$ kappaleiden massat ($\text{kg}$) ja $r$ etäisyys keskipisteiden välillä ($\text{m}$). Laki pätee pistemäisille ja pallosymmetrisille kappaleille. Keskuskappaleen, jonka massa on $M$ ($\text{kg}$), gravitaatiokentän voimakkuus $g$ ($\text{N/kg}$ eli $\text{m/s}^2$) on gravitaatiovoima kappaleen massaa kohden; Maan pinnalla se on putoamiskiihtyvyys.
+missä $$
+\gamma = 6{,}674 \cdot 10^{-11}\,\tfrac{\text{N}\cdot\text{m}^2}{\text{kg}^2}
+$$ on gravitaatiovakio, $F_\text{g}$ gravitaatiovoiman suuruus ($\text{N}$), $m_1$ ja $m_2$ kappaleiden massat ($\text{kg}$) ja $r$ etäisyys keskipisteiden välillä ($\text{m}$). Laki pätee pistemäisille ja pallosymmetrisille kappaleille. Keskuskappaleen, jonka massa on $M$ ($\text{kg}$), gravitaatiokentän voimakkuus $g$ ($\text{N/kg}$ eli $\text{m/s}^2$) on gravitaatiovoima kappaleen massaa kohden; Maan pinnalla se on putoamiskiihtyvyys.
 
 ```johda
 Kappale, jonka massa on $m$, on etäisyydellä $r$ keskuskappaleen keskipisteestä, ja keskuskappaleen massa on $M$. Johda gravitaatiokentän voimakkuus $g$ eli putoamiskiihtyvyys tällä etäisyydellä.

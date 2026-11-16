@@ -46,7 +46,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$\\lambda_1 = 1{,}296\\,\\text{m}$, $v = 110{,}0\\,\\text{Hz} \\cdot 1{,}296\\,\\text{m} \\approx 142{,}6\\,\\text{m/s}$ ja $\\lambda_\\text{ilma} = \\dfrac{343\\,\\text{m/s}}{110{,}0\\,\\text{Hz}} \\approx 3{,}12\\,\\text{m}$"
+       "detail": "$\\lambda_1 = 1{,}296\\,\\text{m}$, $$\n\\begin{aligned}\nv &= 110{,}0\\,\\text{Hz} \\cdot 1{,}296\\,\\text{m} \\\\\n&\\approx 142{,}6\\,\\text{m/s}\n\\end{aligned}\n$$ ja $\\lambda_\\text{ilma} = \\dfrac{343\\,\\text{m/s}}{110{,}0\\,\\text{Hz}} \\approx 3{,}12\\,\\text{m}$"
       },
       {
        "key": "units_precision",
@@ -214,7 +214,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$d = \\dfrac{340\\,\\text{m/s} \\cdot 0{,}0120\\,\\text{s}}{2} \\approx 2{,}04\\,\\text{m}$"
+       "detail": "$$\n\\begin{aligned}\nd &= \\dfrac{340\\,\\text{m/s} \\cdot 0{,}0120\\,\\text{s}}{2} \\\\\n&\\approx 2{,}04\\,\\text{m}\n\\end{aligned}\n$$"
       },
       {
        "key": "assumptions",
@@ -247,7 +247,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$f_\\text{s} \\approx 30{,}54\\,\\text{kHz}$ ja $f = 30{,}0\\,\\text{kHz} \\cdot \\dfrac{346\\,\\text{m/s}}{334\\,\\text{m/s}} \\approx 31{,}08\\,\\text{kHz}$"
+       "detail": "$f_\\text{s} \\approx 30{,}54\\,\\text{kHz}$ ja $$\n\\begin{aligned}\nf &= 30{,}0\\,\\text{kHz} \\cdot \\dfrac{346\\,\\text{m/s}}{334\\,\\text{m/s}} \\\\\n&\\approx 31{,}08\\,\\text{kHz}\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
@@ -407,7 +407,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$l = \\dfrac{(2{,}00\\,\\text{s})^2 - 0{,}056\\,\\text{s}^2}{4{,}04\\,\\text{s}^2\\text{/m}} \\approx 0{,}976\\,\\text{m}$"
+       "detail": "$$\n\\begin{aligned}\nl &= \\dfrac{(2{,}00\\,\\text{s})^2 - 0{,}056\\,\\text{s}^2}{4{,}04\\,\\text{s}^2\\text{/m}} \\\\\n&\\approx 0{,}976\\,\\text{m}\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",
@@ -450,7 +450,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$40\\,\\text{m}$:n päässä noin $100\\,\\text{dB}$; $400\\,\\text{m}$:n päässä $106\\,\\text{dB} - 10\\,\\text{dB} \\cdot \\lg 20^2 \\approx 80\\,\\text{dB}$."
+       "detail": "$40\\,\\text{m}$:n päässä noin $100\\,\\text{dB}$; $400\\,\\text{m}$:n päässä $$\n\\begin{aligned}\n&106\\,\\text{dB} - 10\\,\\text{dB} \\cdot \\lg 20^2 \\\\\n&\\approx 80\\,\\text{dB}\n\\end{aligned}\n$$."
       },
       {
        "key": "assumptions",
@@ -506,7 +506,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$n = 5$, joten $t_\\text{sall} = 8\\,\\text{h} : 32 = 0{,}25\\,\\text{h} = 15\\,\\text{min}$"
+       "detail": "$n = 5$, joten $$\n\\begin{aligned}\nt_\\text{sall} &= 8\\,\\text{h} : 32 \\\\\n&= 0{,}25\\,\\text{h} \\\\\n&= 15\\,\\text{min}\n\\end{aligned}\n$$"
       },
       {
        "text": "Selittää, että $15\\,\\text{dB}$ tarkoittaa intensiteettiä $10^{1{,}5} \\approx 32$-kertaisena, joten sama kuulolle haitallinen annos kertyy noin $\\tfrac{1}{32}$-osassa ajasta.",
@@ -708,7 +708,7 @@
       {
        "key": "calculation",
        "points": 2,
-       "detail": "$60\\,\\tfrac{\\text{N}}{\\text{m}} \\cdot x^2 - 706{,}3\\,\\text{N} \\cdot x - 12\\,714\\,\\text{J} = 0$, joten $x \\approx 21{,}6\\,\\text{m}$"
+       "detail": "$$\n\\begin{aligned}\n&60\\,\\tfrac{\\text{N}}{\\text{m}} \\cdot x^2 - 706{,}3\\,\\text{N} \\cdot x \\\\\n&- 12\\,714\\,\\text{J} \\\\\n&= 0\n\\end{aligned}\n$$, joten $x \\approx 21{,}6\\,\\text{m}$"
       },
       {
        "key": "units_precision",
@@ -736,7 +736,7 @@
       {
        "key": "calculation",
        "points": 1,
-       "detail": "$kx \\approx 2590\\,\\text{N}$ ja $a = \\dfrac{2590\\,\\text{N} - 706\\,\\text{N}}{72{,}0\\,\\text{kg}} \\approx 26{,}2\\,\\text{m/s}^2$"
+       "detail": "$kx \\approx 2590\\,\\text{N}$ ja $$\n\\begin{aligned}\na &= \\dfrac{2590\\,\\text{N} - 706\\,\\text{N}}{72{,}0\\,\\text{kg}} \\\\\n&\\approx 26{,}2\\,\\text{m/s}^2\n\\end{aligned}\n$$"
       },
       {
        "key": "units_precision",

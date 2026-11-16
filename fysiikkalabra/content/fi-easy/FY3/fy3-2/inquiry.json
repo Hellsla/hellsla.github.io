@@ -132,7 +132,7 @@
       "id": "simulaatio",
       "stage": "tutki",
       "type": "sim",
-      "text": "Simulaatiossa laatikkoa vedetään vakiovoimalla. Säädä voimaa, matkaa ja aikaa. Paina *Vedä* ja seuraa, miten $(s,F)$-kuvaajan pinta-ala täyttyy. Arvot $W$ ja $P$ ovat simulaation laskemia mallin arvoja. Ne eivät ole mittauksia oikeasta laatikosta.",
+      "text": "Simulaatiossa laatikkoa vedetään vakiovoimalla. Säädä voimaa, matkaa ja aikaa. Paina *Vedä* ja seuraa, miten $(s,F)$-kuvaajan pinta-ala täyttyy. Simulaatio laskee arvot $W$ ja $P$ mallista. Ne eivät ole mittauksia oikeasta laatikosta.",
       "howto": "*Nopeus* muuttaa vain animaation tahtia. Laatikko kulkee matkan $s$ simuloidussa ajassa $t$. Arvot $W$ ja $P$ pysyvät samoina.",
       "model": "Laatikko liikkuu vakiovauhdilla, joten kitkavoima on yhtä suuri kuin vetävä voima. Vetävän voiman tekemä työ kasvattaa laatikon ja lattian sisäenergiaa. Pinnat siis lämpenevät. Simulaatio laskee arvot kaavoista $W = Fs$ ja $P = W/t$. Se näyttää mallin seuraukset eikä mittaa niitä."
     },

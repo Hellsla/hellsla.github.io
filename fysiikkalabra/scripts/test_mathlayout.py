@@ -31,5 +31,11 @@ results = [
           '<span class="mj-wide">$$\\begin{aligned}a &= b = c\\text{;} \\end{aligned}$$</span>'
           '<span class="mj-narrow">$$\\begin{aligned}a &= b \\\\ &\\quad = c\\text{;}\\end{aligned}$$</span>',
           "a hand-split chain: the mark in both the wide and the narrow form"),
+    check(ml.join_wide("\\begin{aligned}\n&380 - 252 \\\\\n&- 88 \\\\\n&\\approx 40\n\\end{aligned}"),
+          "\\begin{aligned}\n&380 - 252 - 88 \\approx 40 \n\\end{aligned}",
+          "wide screen: a side broken at + or - joins, then its relation (work queue 5g)"),
+    check(ml.join_wide("\\begin{aligned}\nN &= a \\cdot b \\\\\n&: c \\\\\n&= d\n\\end{aligned}"),
+          "\\begin{aligned}\nN &= a \\cdot b : c \\\\\n&= d\n\\end{aligned}",
+          "wide screen: a relation row never joins a continuation row (5g; fy2-6 read ': 5000 kWh = 14 016 000 000 kWh')"),
 ]
 sys.exit(0 if all(results) else 1)

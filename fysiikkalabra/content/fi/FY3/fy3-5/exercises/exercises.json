@@ -200,7 +200,7 @@
     {
       "id": "fy3-5-L2-05",
       "level": 2,
-      "text": "Suljetussa sylinterissä oleva kaasu käy läpi neljän vaiheen kierron ja palaa neljännen vaiheen jälkeen täsmälleen alkutilaansa: kaasun määrä, lämpötila ja muut tilanmuuttujat ovat samat kuin alussa.\n\nTaulukossa on esimerkkiaineistona kaasuun siirtynyt lämpömäärä $Q$ ja kaasuun tehty työ $W$ jokaisessa vaiheessa; vaiheen 4 työtä ei tunneta.\n\nKuinka suuri on työ $W$ vaiheessa 4? Anna vastaus etumerkkeineen: negatiivinen $W$ tarkoittaa, että kaasu tekee työtä ympäristöön.",
+      "text": "Syventävä tehtävä. Suljetussa sylinterissä oleva kaasu käy läpi neljän vaiheen kierron ja palaa neljännen vaiheen jälkeen täsmälleen alkutilaansa: kaasun määrä, lämpötila ja muut tilanmuuttujat ovat samat kuin alussa.\n\nTaulukossa on esimerkkiaineistona kaasuun siirtynyt lämpömäärä $Q$ ja kaasuun tehty työ $W$ jokaisessa vaiheessa; vaiheen 4 työtä ei tunneta.\n\nKuinka suuri on työ $W$ vaiheessa 4? Anna vastaus etumerkkeineen: negatiivinen $W$ tarkoittaa, että kaasu tekee työtä ympäristöön.",
       "kind": [
         "data",
         "reasoning"

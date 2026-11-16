@@ -1,5 +1,5 @@
 {
-  "intro": "Kuusi ylioppilaskokeen tyylistä tehtävää kokoaa tunnin asiat: magnetismin, induktion ja valon. Ratkaise tehtävät kuten kokeessa. Nimeä ilmiö ja malli. Perustele, miksi malli sopii tilanteeseen. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
+  "intro": "Seitsemän ylioppilaskokeen tyylistä tehtävää kokoaa tunnin asiat: magnetismin, induktion ja valon. Viimeinen tehtävä on soveltava aineistotehtävä. Sen aineisto on tehtävän linkin takana. Ratkaise tehtävät kuten kokeessa. Nimeä ilmiö ja malli. Perustele, miksi malli sopii tilanteeseen. Ratkaise kysytty suure ennen kuin sijoitat luvut. Arvioi lopuksi, onko tulos järkevä. Avaa mallivastaus ja pisteytys vasta, kun ratkaisusi on valmis.",
   "tasks": [
     {
       "id": "fy9-magnetismi-valo-s1",
@@ -46,7 +46,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$e_0 = 60 \\cdot 0{,}50\\,\\text{T} \\cdot 0{,}060\\,\\text{m}^2 \\cdot 2\\pi \\cdot 50\\,\\text{Hz} \\approx 565\\,\\text{V}$ ja $U \\approx 400\\,\\text{V}$"
+              "detail": "$$\n\\begin{aligned}\ne_0 &= 60 \\cdot 0{,}50\\,\\text{T} \\cdot 0{,}060\\,\\text{m}^2 \\\\\n&\\cdot 2\\pi \\cdot 50\\,\\text{Hz} \\\\\n&\\approx 565\\,\\text{V}\n\\end{aligned}\n$$ ja $U \\approx 400\\,\\text{V}$"
             },
             {
               "key": "units_precision",
@@ -107,7 +107,7 @@
           "id": "c",
           "kind": "calc",
           "points": 4,
-          "text": "Kuinka suuri osa siirrettävästä tehosta muuttuu linjassa lämmöksi? Mitä tapahtuisi, jos sama teho yritettäisiin siirtää samaa linjaa pitkin suoraan generaattorin jännitteellä $400\\,\\text{V}$?",
+          "text": "Kuinka suuri osa siirrettävästä tehosta muuttuu linjassa sisäenergiaksi? Mitä tapahtuisi, jos sama teho yritettäisiin siirtää samaa linjaa pitkin suoraan generaattorin jännitteellä $400\\,\\text{V}$?",
           "answer": {
             "value": 0.225,
             "unit": "%",
@@ -276,7 +276,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$A = 0{,}22\\,\\tfrac{\\text{dB}}{\\text{km}} \\cdot 14{,}0\\,\\text{km} + 0{,}40\\,\\text{dB} = 3{,}48\\,\\text{dB}$ ja $P = 2{,}0\\,\\text{mW} \\cdot 10^{-0{,}348} \\approx 0{,}90\\,\\text{mW}$"
+              "detail": "$$\n\\begin{aligned}\nA &= 0{,}22\\,\\tfrac{\\text{dB}}{\\text{km}} \\cdot 14{,}0\\,\\text{km} \\\\\n&+ 0{,}40\\,\\text{dB} \\\\\n&= 3{,}48\\,\\text{dB}\n\\end{aligned}\n$$ ja $$\n\\begin{aligned}\nP &= 2{,}0\\,\\text{mW} \\cdot 10^{-0{,}348} \\\\\n&\\approx 0{,}90\\,\\text{mW}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -436,7 +436,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$B = \\dfrac{2{,}42\\,\\mu\\text{T} \\cdot \\text{m}}{0{,}50\\,\\text{m}} + 10{,}9\\,\\mu\\text{T} \\approx 4{,}8\\,\\mu\\text{T} + 10{,}9\\,\\mu\\text{T} \\approx 16\\,\\mu\\text{T}$"
+              "detail": "$$\n\\begin{aligned}\nB &= \\dfrac{2{,}42\\,\\mu\\text{T} \\cdot \\text{m}}{0{,}50\\,\\text{m}} + 10{,}9\\,\\mu\\text{T} \\\\\n&\\approx 4{,}8\\,\\mu\\text{T} + 10{,}9\\,\\mu\\text{T} \\\\\n&\\approx 16\\,\\mu\\text{T}\n\\end{aligned}\n$$"
             },
             {
               "key": "assumptions",
@@ -591,7 +591,7 @@
             {
               "key": "calculation",
               "points": 2,
-              "detail": "$d = 1{,}667\\,\\mu\\text{m}$; $\\theta_1 = 18{,}65^\\circ$ ja $\\lambda = 533\\,\\text{nm}$; $\\theta_2 = 39{,}69^\\circ$ ja $\\lambda = \\dfrac{1{,}667\\,\\mu\\text{m} \\cdot 0{,}6386}{2} = 532\\,\\text{nm}$"
+              "detail": "$d = 1{,}667\\,\\mu\\text{m}$; $\\theta_1 = 18{,}65^\\circ$ ja $\\lambda = 533\\,\\text{nm}$; $\\theta_2 = 39{,}69^\\circ$ ja $$\n\\begin{aligned}\n\\lambda &= \\dfrac{1{,}667\\,\\mu\\text{m} \\cdot 0{,}6386}{2} \\\\\n&= 532\\,\\text{nm}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -701,7 +701,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$T = \\dfrac{2\\pi \\cdot 1{,}673 \\cdot 10^{-27}\\,\\text{kg}}{1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1{,}20\\,\\text{T}} \\approx 5{,}47 \\cdot 10^{-8}\\,\\text{s}$"
+              "detail": "$$\n\\begin{aligned}\nT &= \\dfrac{2\\pi \\cdot 1{,}673 \\cdot 10^{-27}\\,\\text{kg}}{1{,}602 \\cdot 10^{-19}\\,\\text{C} \\cdot 1{,}20\\,\\text{T}} \\\\\n&\\approx 5{,}47 \\cdot 10^{-8}\\,\\text{s}\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -738,7 +738,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$E_\\text{k} = 8{,}0 \\cdot 10^6 \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} = 1{,}28 \\cdot 10^{-12}\\,\\text{J}$, $v \\approx 3{,}9 \\cdot 10^7\\,\\text{m/s}$ ja $r \\approx 0{,}34\\,\\text{m}$"
+              "detail": "$$\n\\begin{aligned}\nE_\\text{k} &= 8{,}0 \\cdot 10^6 \\cdot 1{,}602 \\\\\n&\\cdot 10^{-19}\\,\\text{J} \\\\\n&= 1{,}28 \\cdot 10^{-12}\\,\\text{J}\n\\end{aligned}\n$$, $v \\approx 3{,}9 \\cdot 10^7\\,\\text{m/s}$ ja $r \\approx 0{,}34\\,\\text{m}$"
             },
             {
               "key": "units_precision",
@@ -813,7 +813,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$a_\\text{n} = \\dfrac{(3{,}914 \\cdot 10^7\\,\\text{m/s})^2}{0{,}3406\\,\\text{m}} \\approx 4{,}5 \\cdot 10^{15}\\,\\text{m/s}^2$"
+              "detail": "$$\n\\begin{aligned}\na_\\text{n} &= \\dfrac{(3{,}914 \\cdot 10^7\\,\\text{m/s})^2}{0{,}3406\\,\\text{m}} \\\\\n&\\approx 4{,}5 \\cdot 10^{15}\\,\\text{m/s}^2\n\\end{aligned}\n$$"
             },
             {
               "key": "units_precision",
@@ -826,6 +826,173 @@
       "links": {
         "concept": "fy7-2",
         "math": "fy5-4"
+      }
+    },
+    {
+      "id": "fy9-magnetismi-valo-s7",
+      "title": "Kuinka paljon energiaa hiukkaskiihdyttimessä on?",
+      "source": "statistics",
+      "source_note": "CERN, The Large Hadron Collider (https://home.cern/science/accelerators/large-hadron-collider). Tarkistettu 16.11.2026. Sivu on englanninkielinen. Luvut ovat sivun kohdasta Facts and figures.",
+      "skills": [
+        "fy5-3",
+        "fy6-12",
+        "fy4-7",
+        "fy7-2",
+        "fy7-3",
+        "fy6-6"
+      ],
+      "text": "CERN on Euroopan hiukkasfysiikan tutkimuskeskus. Sen LHC (Large Hadron Collider) on maailman suurin hiukkaskiihdytin. LHC:n tunneli on renkaan muotoinen. Tunnelissa kiertää kaksi protonisuihkua vastakkaisiin suuntiin. Suihkut kulkevat lähes täydellisessä tyhjiössä. Mittausasemilla suihkut törmäytetään toisiinsa. Protonit kulkevat suihkussa tiiviinä ryhminä. Ryhmiä kutsutaan kimpuiksi.\n\nAvaa CERNin englanninkielinen sivu [The Large Hadron Collider](https://home.cern/science/accelerators/large-hadron-collider). Etsi sivulta kohta *Facts and figures*. Tarvitset sivun tietoja a- ja e-kohdassa.\n\nAineiston mukaan (tarkistettu 16.11.2026):\n\n- yhden protonin energia on $6{,}8\\,\\text{TeV}$\n- yhdessä protonisuihkussa on noin $2500$ kimppua, ja jokaisessa kimpussa on kiihdytyksen alussa $1{,}6 \\cdot 10^{11}$ protonia\n\nLisäksi tiedetään: $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$ ja valon nopeus tyhjiössä on $c = 2{,}99792458 \\cdot 10^8\\,\\text{m/s}$.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Lue aineistosta LHC:n kehän pituus. Lue myös, kuinka monta kierrosta protonit kiertävät sekunnissa. Laske näistä protonien vauhti ja vertaa sitä valon nopeuteen. Mitä vertailusta voi päätellä ja mitä ei? Ota huomioon, millä tarkkuudella aineiston luvut on annettu.",
+          "answer": {
+            "value": 2.9978,
+            "unit": "· 10⁸ m/s",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "text": "Lukee aineistosta kehän pituuden $26\\,659\\,\\text{m}$ ja kierrosten määrän $11\\,245$ sekunnissa (tarkistettu 16.11.2026). Tunnistaa, että protonit kulkevat sekunnissa kehän pituuden näin monta kertaa.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$v = \\dfrac{s}{t} = \\dfrac{Nl}{t}$: $$\n\\begin{aligned}\nv &= \\dfrac{11\\,245 \\cdot 26\\,659\\,\\text{m}}{1\\,\\text{s}} \\\\\n&\\approx 2{,}9978 \\cdot 10^8\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "$\\dfrac{v}{c} \\approx 0{,}99996$: protonit kulkevat käytännössä valon nopeudella. Ero on pienempi kuin aineiston pyöristettyjen lukujen tarkkuus. Siksi eron suuruutta ei voi päätellä. Protonilla on massa, joten sen vauhti jää kuitenkin alle valon nopeuden."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 2,
+          "text": "Muunna yhden protonin energia $6{,}8\\,\\text{TeV}$ jouleiksi.",
+          "answer": {
+            "value": 1.089,
+            "unit": "· 10⁻⁶ J",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$1\\,\\text{TeV} = 10^{12}\\,\\text{eV}$, joten $$\n\\begin{aligned}\nE_1 &= 6{,}8 \\cdot 10^{12} \\cdot 1{,}602 \\cdot 10^{-19}\\,\\text{J} \\\\\n&\\approx 1{,}089 \\cdot 10^{-6}\\,\\text{J}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$E_1 \\approx 1{,}1 \\cdot 10^{-6}\\,\\text{J}$ kahdella merkitsevällä numerolla, kuten $6{,}8\\,\\text{TeV}$"
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "calc",
+          "points": 3,
+          "text": "Kuinka suuri energia on varastoitunut yhteen protonisuihkuun?",
+          "answer": {
+            "value": 435.7,
+            "unit": "MJ",
+            "tolerance": 0.02
+          },
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "Suihkun energia on protonien energioiden summa: $E = NE_1$, missä $N = 2500 \\cdot 1{,}6 \\cdot 10^{11}$ eli $N = 4{,}0 \\cdot 10^{14}$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nE &= 4{,}0 \\cdot 10^{14} \\cdot 1{,}0894 \\cdot 10^{-6}\\,\\text{J} \\\\\n&\\approx 4{,}357 \\cdot 10^8\\,\\text{J}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "$E \\approx 4{,}4 \\cdot 10^8\\,\\text{J} = 4{,}4 \\cdot 10^2\\,\\text{MJ}$ kahdella merkitsevällä numerolla, kuten $6{,}8\\,\\text{TeV}$ ja $1{,}6 \\cdot 10^{11}$"
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "calc",
+          "points": 3,
+          "text": "Henkilöauton massa on $1500\\,\\text{kg}$ ja nopeus $100\\,\\text{km/h}$. Laske auton liike-energia. Kuinka monen tällaisen auton liike-energiaa yhden protonisuihkun energia vastaa?",
+          "answer": [
+            {
+              "name": "Ek",
+              "value": 0.5787,
+              "unit": "MJ",
+              "tolerance": 0.02
+            },
+            {
+              "name": "n",
+              "value": 753.0,
+              "unit": "",
+              "tolerance": 0.02
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "$E_\\text{k} = \\tfrac12 mv^2$ ja $$\n\\begin{aligned}\n100\\,\\text{km/h} &= \\dfrac{100 \\cdot 1000\\,\\text{m}}{3600\\,\\text{s}} \\\\\n&\\approx 27{,}778\\,\\text{m/s}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$$\n\\begin{aligned}\nE_\\text{k} &= \\tfrac12 \\cdot 1500\\,\\text{kg} \\cdot (27{,}778\\,\\text{m/s})^2 \\\\\n&\\approx 5{,}787 \\cdot 10^5\\,\\text{J} \\\\\n&\\approx 0{,}579\\,\\text{MJ}\n\\end{aligned}\n$$"
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "$\\dfrac{E}{E_\\text{k}} = \\dfrac{4{,}357 \\cdot 10^8\\,\\text{J}}{5{,}787 \\cdot 10^5\\,\\text{J}} \\approx 753$: yhden suihkun energia vastaa noin $750$ auton liike-energiaa."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 4,
+          "text": "LHC:ssä on tuhansia suprajohtavia sähkömagneetteja. Selvitä aineistosta kolme asiaa: mikä tehtävä magneeteilla on, mihin lämpötilaan ne jäähdytetään ja mikä kiihdyttää protonit. Selitä näiden tietojen ja fysiikan avulla, miksi magneettikenttä ei lisää protonien energiaa. Selitä myös, miksi magneettien käämit ovat suprajohtavia.",
+          "criteria": [
+            {
+              "text": "Selittää magneettien tehtävän aineiston avulla: magneettinen voima on kohtisuorassa protonin nopeutta vastaan. Siksi se kaartaa radan ympyrän kaareksi (dipolimagneetit) ja pitää suihkun koossa (kvadrupolimagneetit).",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Perustelee, että nopeutta vastaan kohtisuora voima ei tee työtä. Siksi magneettikenttä ei muuta protonin energiaa. Energia tulee kiihdytysonteloiden sähkökentästä.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Perustelee, että vahva kenttä vaatii hyvin suuren virran. Tavallisessa johtimessa sähköenergiaa muuttuisi sisäenergiaksi teholla $P = RI^2$.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Suprajohteessa ei ole resistanssia, joten suuri virta kulkee ilman häviötehoa. Siksi käämit jäähdytetään aineiston mukaan lämpötilaan $1{,}9\\,\\text{K}$."
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy5-3",
+        "math": "fy4-7",
+        "concept": "fy7-2",
+        "communication": "fy7-3"
       }
     }
   ]

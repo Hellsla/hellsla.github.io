@@ -281,7 +281,7 @@ Moni ajattelee, että hukkalämpö on kadonnutta energiaa. Energia ei kuitenkaan
 
 Jos lämpö siirtyy ympäristöön vain hieman ympäristön lämpötilaa korkeammassa lämpötilassa, siitä on vaikea tuottaa merkittävästi mekaanista työtä tai sähköä. Mitä pienempi lämpötilaero on, sitä pienempi on lämpövoimakoneen suurin mahdollinen hyötysuhde.
 
-Sähkön ja lämmön yhteistuotannossa osa energiasta, joka muuten jäisi hukkalämmöksi, voidaan hyödyntää kaukolämpönä.
+Sähkön ja lämmön yhteistuotannossa osa energiasta, joka muuten siirtyisi hukkalämpönä ympäristöön, voidaan hyödyntää kaukolämpönä.
 
 Toinen virhe on laskea vaiheiden hyötysuhteet yhteen tai ottaa niiden keskiarvo. Kun kolmen vaiheen hyötysuhteet ovat 0,92, 0,46 ja 0,945, ketjun hyötysuhde on niiden tulo 0,40, ei keskiarvo 0,78. Kolmas virhe on pitää yhteistuotannon $88\,\%$:n kokonaishyötysuhdetta merkkinä siitä, että kaikki energia olisi yhtä arvokasta: sähköä voi käyttää kaikkeen, kaukolämpöä pääasiassa lämmitykseen.
 

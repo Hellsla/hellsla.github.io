@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: cb845d98a8762a90
-SCOPE: delta added-exercise from 4161a9356eed0c2b base 8f23aa7ae3bd
-Round 1
-Mode: delta (added exercise fy6-11-L1-09, shown as 11-9)
+CONTENT-HASH: 8b49d2e85f94831f
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- [Minor] fy6-11-L1-09 Given/Answer — the MAFY table name is given in Finnish in plain parentheses in the solution but in italics in the hint; use italics in both, and say once that the table's name is Finnish.
+- none
 
 ## Checked
-- fy6-11-open-exercises-1280-8.png (task 11-9 statement and open hint, flow after 11-8) and -9.png (full solution).
-- Typography: $E = U : d$, fraction, kV/mm units upright with thin space, decimal point in en, chains as aligned rows, answer chip, nothing clipped; no figure in this task.
+- Delta (calculation chains re-broken into inline aligned blocks, same numbers, signs and units). Opened content/en/FY6/fy6-11/review/shots/fy6-11-open-exercises-1280-5.png (L1-05 Reasonableness "91 µN : 3.0 nC ≈ 3.0·10⁴ N/C", plus its fraction Substitution) and fy6-11-open-exercises-L3-1280-3.png (L3-02 v = √(2 · 8.794·10¹⁴ m/s² · 0.010 m) = 4.19·10⁶ m/s).
+- The root sign spans the whole radicand, `=` rows aligned, nothing clipped, units upright with thin space, decimal point correct.
+- No 360/390 px capture shows an opened solution, so phone wrapping rests on the passing check_layout 360 px result in the packet.
 
 ## Scores
-illustrations n/a (4) · typography 5 · English 5 · accessibility 4
+illustrations 5 · typography 5 · English 5 · accessibility 5
