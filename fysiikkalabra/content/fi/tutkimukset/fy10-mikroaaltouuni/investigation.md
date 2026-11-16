@@ -291,7 +291,7 @@ Taajuuden yksikkö on hertsi, $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$. Aaltoliik
 
 Ennen mittaamista päätä ja kirjaa ylös, miten saat juustoon selvästi erottuvat sulaneet kohdat, mitä mittaat ja miten luet uunin taajuuden.
 
-**Turvallisuus.** Noudata sivun alun turvallisuusohjeita (Turvallisuus-lista) koko työn ajan. Uunin käyttö ja alustan poisto kuuluvat opettajalle.
+**Turvallisuus.** Noudata sivun alun Turvallisuus-kohdan ohjeita koko työn ajan. Uunin käyttö ja alustan poisto kuuluvat opettajalle.
 
 **Taajuus.** Lue mikroaaltojen taajuus uunin arvokilvestä ja kirjaa se yksikköineen. Arvokilvessä on yleensä myös sähköverkon taajuus, joka on eri asia kuin mikroaaltojen taajuus. Jos et löydä mikroaaltojen taajuutta, kysy opettajalta: se on uunin käyttöohjeessa. [[apua:fy1-2|Kerrannaisyksiköt]]
 

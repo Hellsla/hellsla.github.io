@@ -20,7 +20,11 @@ Tutkimuksessa *Putoamiskiihtyvyyden määrittäminen heilurin avulla* lasket jak
 
 4. **Pidä mitatut arvot koskemattomina.** Älä muuta mitattuja lukuja. Laskettu suure saa oman sarakkeensa. Jos jätät jonkin pisteen pois sovituksesta, kirjaa piste ja syy, mutta älä poista riviä.
 
-5. **Laske uusi sarake lausekkeella.** Valitse sarakkeen valikosta **Lisää laskettu sarake**, anna sarakkeelle nimi ja yksikkö ja kirjoita lauseke. Lausekkeessa sarakkeen nimi on lainausmerkeissä, ja se kirjoitetaan täsmälleen sellaisena kuin taulukon otsikossa näkyy. Anturin sarakkeet tulevat taulukkoon anturin antamilla nimillä, joten katso nimi otsikosta äläkä oleta sitä. Esimerkiksi jaksonajan neliö on `"T"^2`, neliöjuuri `sqrt("h")` ja etäisyyden neliön käänteisluku `1/"r"^2`. Laskutoimitukset ovat `+ - * / ^`, ja funktion argumentit ovat suluissa. Oma lauseke on Pro-ominaisuus. Ohjelma laskee sarakkeen kaikille riveille ja laskee sen uudelleen, jos korjaat mitattua arvoa. Tarkista yksi rivi laskimella.
+5. **Laske uusi sarake lausekkeella.** Valitse sarakkeen valikosta **Lisää laskettu sarake**, anna sarakkeelle nimi ja yksikkö ja kirjoita lauseke. Lausekkeessa sarakkeen nimi on lainausmerkeissä, ja se kirjoitetaan täsmälleen sellaisena kuin taulukon otsikossa näkyy. Anturin sarakkeet tulevat taulukkoon anturin antamilla nimillä, joten katso nimi otsikosta äläkä oleta sitä.
+
+    Esimerkiksi jaksonajan neliö on `"T"^2`, neliöjuuri `sqrt("h")` ja etäisyyden neliön käänteisluku `1/"r"^2`. Laskutoimitukset ovat `+ - * / ^`, ja funktion argumentit ovat suluissa. Oma lauseke on Pro-ominaisuus.
+
+    Ohjelma laskee sarakkeen kaikille riveille ja laskee sen uudelleen, jos korjaat mitattua arvoa. Tarkista yksi rivi laskimella.
 
     <svg data-fig="sheet" viewBox="0 0 600 372" role="img" aria-label="Kaaviokuva mittausohjelman datataulukosta keksityin esimerkkiarvoin. Ensimmäisen sarakkeen otsikko on l metreinä ja toisen T sekunteina; niissä ovat mitatut arvot. Kolmas sarake on laskettu sarake, jonka otsikko on T toiseen sekunnin neliöinä. Sen yläpuolella näkyy sarakkeen lauseke: T lainausmerkeissä potenssiin kaksi. Kolmannella rivillä laskettu arvo näkyy pyöristämättömänä, 1,6129." style="max-width:100%;font-size:24px">
   <foreignObject x="192.5" y="25.5" width="295" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{laskettu sarake, lauseke:}$</div></foreignObject>

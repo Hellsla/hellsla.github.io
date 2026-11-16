@@ -265,7 +265,7 @@ Mieti ainakin näitä:
 Kirjaa alkuperäiset mittarilukemat taulukkoon heti mittauksen aikana. Laskemasi teho saa oman sarakkeensa mitattujen oikealle puolelle. Kirjaa myös vakioina pitämiesi tekijöiden arvot, esimerkiksi etäisyys ja puhaltimen asetus.
 
 ::: tuki OO
-Voit käyttää esimerkiksi tällaista taulukkoa. Kirjaa jokainen toisto omalle rivilleen ja laske kunkin tekijän arvon tehoista keskiarvo $\bar{P}$ erilliseen taulukkoon, jossa on tekijän arvo, $\bar{P}$ ja sen epävarmuus $\Delta P$.
+Voit käyttää esimerkiksi tällaista taulukkoa. Kirjaa jokainen toisto omalle rivilleen ja laske kunkin tekijän arvon tehoista keskiarvo $\overline{P}$ erilliseen taulukkoon, jossa on tekijän arvo, $\overline{P}$ ja sen epävarmuus $\Delta P$.
 
 | tekijän arvo (yksikkö) | toisto | $U\ (\text{V})$ | $I\ (\text{A})$ | $P = UI\ (\text{W})$ |
 |---|---|---|---|---|
@@ -283,7 +283,7 @@ Muista mittausepävarmuus: kirjaa, kuinka tarkasti luet mittarit ja kuinka paljo
 Laske sähköteho jokaisella tekijän arvolla. Piirrä mittaustuloksista kuvaaja, josta näkyy, miten sähköteho riippuu tutkimastasi tekijästä. Merkitse akseleille suureet ja yksiköt. Piirrä mittauspisteet, älä yhdistä niitä murtoviivalla. Sovita pisteisiin suora tai käyrä vain, jos sille on fysikaaliset perusteet. [[apua:fy1-4|Kuvaajan laatiminen ja tulkinta]]
 
 ::: tuki OO
-Valitse pystyakselille sähköteho $\bar{P}$ ja vaaka-akselille tutkimasi tekijä. Merkitse jokaiseen pisteeseen pystysuora virhejana, jonka pituus kumpaankin suuntaan on tehon epävarmuus $\Delta P$: silloin näet suoraan, ovatko pisteiden väliset erot epävarmuutta suurempia. Lapojen lukumäärällä on vain kokonaislukuarvoja, joten sen kuvaajassa pisteiden välille ei piirretä käyrää. Jos tutkit tuulen nopeutta, voit kokeilla, ovatko pisteet suoralla, kun vaaka-akselille valitaan $v^3$ (katso laajennus). Pisteiden pitäisi osua suoralle vain, jos hyötysuhde ei muutu tuulen nopeuden mukana.
+Valitse pystyakselille sähköteho $\overline{P}$ ja vaaka-akselille tutkimasi tekijä. Merkitse jokaiseen pisteeseen pystysuora virhejana, jonka pituus kumpaankin suuntaan on tehon epävarmuus $\Delta P$: silloin näet suoraan, ovatko pisteiden väliset erot epävarmuutta suurempia. Lapojen lukumäärällä on vain kokonaislukuarvoja, joten sen kuvaajassa pisteiden välille ei piirretä käyrää. Jos tutkit tuulen nopeutta, voit kokeilla, ovatko pisteet suoralla, kun vaaka-akselille valitaan $v^3$ (katso laajennus). Pisteiden pitäisi osua suoralle vain, jos hyötysuhde ei muutu tuulen nopeuden mukana.
 :::
 
 Vastaa:
@@ -377,7 +377,7 @@ Määritä voimalan hyötysuhde epävarmuuksineen ainakin sillä tekijän arvoll
 \end{aligned}
 ```
 
-Koska käytit nopeuksien kuutioiden keskiarvoa, $v$ tarkoittaa tässä lukua $\sqrt[3]{\overline{v^3}}$, missä $\overline{v^3}$ on lukujen $v^3$ keskiarvo. Voit myös arvioida kuutioiden keskiarvon suhteellisen epävarmuuden suoraan ja käyttää sitä termin $3\cdot\dfrac{\Delta v}{v}$ paikalla. Ilman tiheyden epävarmuuden $\Delta\rho$ voit arvioida huoneen lämpötilasta ja ilmanpaineesta: katso tiheys taulukkokirjasta tai laske se näistä, ja arvioi, kuinka paljon se muuttuu, kun lämpötila ja paine vaihtelevat mittaustesi epävarmuuden verran.
+Koska käytit nopeuksien kuutioiden keskiarvoa, $v$ tarkoittaa tässä lukua $\sqrt[3]{\overline{v^3}}$, missä $\overline{v^3}$ on lukujen $v^3$ keskiarvo. Voit myös arvioida kuutioiden keskiarvon suhteellisen epävarmuuden suoraan ja käyttää sitä termin $3\cdot\dfrac{\Delta v}{v}$ paikalla. Myös ilman tiheyden epävarmuuden $\Delta\rho$ voit arvioida. Tiheys riippuu huoneen lämpötilasta ja ilmanpaineesta: katso se taulukkokirjasta tai laske se niiden avulla. Arvioi sitten, kuinka paljon tiheys muuttuu, kun lämpötila ja paine vaihtelevat mittaustesi epävarmuuden verran.
 :::
 
 ## Arvioi omaa työtäsi
