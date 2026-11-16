@@ -1,19 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 3730a3b9fd72307e
+CONTENT-HASH: 1fcd163f97f4b029
 Mode: delta
 Round: 1
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-- [Minor] solutions.md fy3-4-L1-10 Sijoitus — units are stacked fractions ($\tfrac{\text{kg}}{\text{m}^3}$) that render tiny and differ from the slash form ($\text{kg/m}^3$) used in the rest of the set — write $1020\,\text{kg/m}^3 \cdot 9{,}81\,\text{m/s}^2 \cdot 25{,}0\,\text{m}$.
-- [Minor] solutions.md fy3-4-L2-08 Muunnokset — the stacked $\dfrac{\text{Pa/m}}{\text{m/s}^2}$ is hard to read; say "Yksikkö $\text{Pa/m} : \text{m/s}^2$ on $\text{kg/m}^3$".
+- [Minor] Only shared captures examined; no per-exercise check of fy3-4.
 
 ## Checked
-- fy3-4-open-exercises-1280-10 (L1-10: Periaate to Järkevyys; maths, units, aligned Sijoitus rows; top of the task is in part 9, which I did not open — the solution and the answer row carry it).
-- fy3-4-open-exercises-L2-1280-10 and -11 (L2-08: two-liquids graph with axis titles and units, ticks, labelled lines A and B, shared surface pressure, no densities given; solution layout, Kuvaajan lukeminen).
-- Captures are the lesson's review/shots (current for this hash).
+- Delta formulas judged from the same shared rendering in fy3-1 and fy3-8 captures; no fy3-4-specific capture opened.
+- Judged: nothing clipped, equals signs in one column, no break inside a number or unit, joined rows on wide screens, punctuation kept with the display formula.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4
