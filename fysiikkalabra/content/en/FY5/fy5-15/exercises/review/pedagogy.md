@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: fe263fb6e230fa23
+CONTENT-HASH: ab789090f76dd85a
 
 ## Blocking
 (none)
@@ -14,3 +14,4 @@ CONTENT-HASH: fe263fb6e230fa23
 - 55 dB task: range 297–334 m for ±0.5 dB (distance scales as 10^(±0.5/20) = ±5.9 %) is correct, 315 m rounded to 3.2·10² m consistent with it; the safe-side remark is relevant to a noise limit.
 - The aligned row of L_mod split after the minus sign is still readable (same numbers, signs and units in order).
 - Figure kuvaaja-tehtava unchanged: points 80.0, 74.0, 68.0 dB at 2, 4, 8 m, description equals figure, no power or intensity given.
+- Solution paragraphs split into shorter ones: only line breaks changed (word diff empty), no word, number or formula; each step is easier to follow.

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: c06a00dcc4be71b7
+CONTENT-HASH: 0fd9280d139201ab
 
 ## Blocking
 (none)
@@ -18,3 +18,4 @@ CONTENT-HASH: c06a00dcc4be71b7
 - Graph skill is real: convert units, plot (a³, T²), judge a line through the origin, Jupiter's dominance handled (separate inner-planet graph); critical reading ("five planets do not prove it").
 - Level 2 fits (four parts, spreadsheet allowed); answer box takes part d only, tolerance 2 %.
 - Rest of the set (L1 5+, L2 8, L3 5): levels, concept MC with misconception feedback (L1-06, L1-09), error analysis (L2-06, L2-07), figure tasks, unchanged and consistent with the Finnish set.
+- Solution paragraphs split into shorter ones: only line breaks changed (word diff empty), no word, number or formula; each step is easier to follow.

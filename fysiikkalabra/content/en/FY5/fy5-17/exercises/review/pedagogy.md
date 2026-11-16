@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8f16389ec9a01707
+CONTENT-HASH: 002346b367555fd9
 
 ## Blocking
 (none)
@@ -17,3 +17,4 @@ CONTENT-HASH: 8f16389ec9a01707
 - Reasoning: one station gives a circle, two stations two intersections, three decide; depth and constant-speed limits stated: matches the lesson's model and is not over-claimed.
 - Level 2 fits: authentic data lookup, then P/S comparison, a calculation and explanation of the location method; not a repeat of L2-01, L2-04, L2-07 or L2-08 (which use the same difference formula but with given data).
 - Rest of the set (L1 9, L2 9, L3 5) unchanged from the Finnish set that passed.
+- Solution paragraphs split into shorter ones: only line breaks changed (word diff empty), no word, number or formula; each step is easier to follow.

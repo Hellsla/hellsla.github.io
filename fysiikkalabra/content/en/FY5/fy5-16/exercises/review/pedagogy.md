@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 3738e31f67d62cf9
-SCOPE: delta added-exercise from f83ee9d4608dc711 base abdc9e095e4f
+CONTENT-HASH: d25467943c300cb9
 
 ## Blocking
 (none)
@@ -18,3 +17,4 @@ SCOPE: delta added-exercise from f83ee9d4608dc711 base abdc9e095e4f
 - Critical use: the claim "a few dB is not significant" is tested with the student's own calculation and the source's narrow spacing (7 dB spans info, mandatory protection and a limit).
 - Level 2 fits: logarithm to ratios (a chapter skill), one real regulation context, evaluation; no repeat of the lesson's worked example.
 - Solution staged; the principle (energy dose = It) is explained before the formula.
+- Solution paragraphs split into shorter ones: only line breaks changed (word diff empty), no word, number or formula; each step is easier to follow.

@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 97e669270a808dfc
-SCOPE: delta added-exercise from a7e8c805b6c08c2c base b5600a63ddae
+CONTENT-HASH: b8fc622146b746b9
 
 ## Blocking
 (none)
@@ -19,3 +18,4 @@ SCOPE: delta added-exercise from a7e8c805b6c08c2c base b5600a63ddae
 - Reasonableness uses the triangle limit on the path difference, a real physical check.
 - Not a repeat of L1-04 / L2-01 / L2-03 (those give geometry; this one starts from a simulation and the wavelength); kinds data, model, reasoning broaden the mix.
 - Solution staged: principle, formula, conversions (none), substitution, answer with significant figures.
+- Solution paragraphs split into shorter ones: only line breaks changed (word diff empty), no word, number or formula; each step is easier to follow.
