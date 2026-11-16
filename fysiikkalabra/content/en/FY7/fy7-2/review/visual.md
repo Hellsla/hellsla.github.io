@@ -1,19 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: a8e69fdd8f6bec92
+CONTENT-HASH: e4e94f09bf8bc686
 
 ## Blocking
 - none
 
-## Outside this change (queue 5d, not blocking here)
-- [Major, outside this change] en/fy7-2 rows in docs/clipped-formulas.tsv (e.g. the deuteron reasonableness row 3.344 ... : (1.602 ...), the 1.8288 ... 5.919 fraction, the 78.9 % + 10.0 % + 11.1 % sum, the kV conversion) are known clipped on a phone.
-
 ## Polish
-- [Minor] inquiry.json, Esimerkit task "boron ions" solution — numerator of the fraction under the root is split into two rows; reads well in the Finnish 390 px capture (fy7-2-siirto), the continuation row is centred rather than aligned to the first factor.
+- [Minor] inquiry.json:362 — on a phone `B` stands alone on the first row above `= fraction`; correct and readable, the wide fraction leaves no room beside it.
+- [Minor] inquiry.json:362 (untouched) — the numerator under the root still breaks before `· 20 000 V`.
 
 ## Checked
-- Finnish 390 px capture of the boron solution (same structure as en: root numerator in two rows, rows readable, nothing clipped).
-- lesson.md and figures.json changes are reflow/words only; stage captures at 390 px not changed in layout.
-- Hash identical at start and end.
-
-## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+- batch delta review: queue 5d reflow, round 2. Page rebuilt (build.py fy7-2) and every changed formula of inquiry.json captured from preview/en/fy7-2.html at 360, 390 and 1280 px with every box, hint, solution and choice feedback forced open; the 390 and 1280 px sheets were read at full size. Round-1 Critical resolved: the "She writes" block of Example 2 is again three separate equations (qU, v, r), each with its own left side, identical to main; seen at 390 and 1280 px. Measured at all three widths: no formula wider than its box, no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line (the closing full stop or comma is set inside the block). Source compared with main: the same tokens in the same order; every new row starts with a relation, a sign or between whole quantities. Hash identical at the end. Figures were not re-judged.

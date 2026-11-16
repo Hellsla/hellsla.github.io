@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: a7aaa63f2f88419c
+CONTENT-HASH: 639c00a01150b06a
 
 ## Blocking
 - none
@@ -8,7 +8,9 @@ CONTENT-HASH: a7aaa63f2f88419c
 - none
 
 ## Checked
-- Delta: Reasonableness line in fy7-1 exercise solutions (two-row display block). Rendered preview page (fi) with solutions opened at 360, 390 and 1280 px: the display block fits its container (scrollWidth = clientWidth), no page overflow, rows aligned, numbers, signs, units and order unchanged. Screenshot opened for en at 360 px; fi and fi-easy verified by measurement.
+- Delta (reflow): 1-10 Järkevyys (tan check, two rows) and 1-11 Sijoitus (B², three rows on a phone, joined to two at 1280 px).
+- Own captures of the opened solutions from the current preview at 390 px and 1280 px (fy7-1-L2-01, fy7-1-L2-02), read at full size; overflow of every exercise formula measured at 360, 390 and 1280 px: none.
+- Rows start with a relation or a + sign; trailing punctuation sits inside the block; numbers, signs and units unchanged. Hash identical at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5

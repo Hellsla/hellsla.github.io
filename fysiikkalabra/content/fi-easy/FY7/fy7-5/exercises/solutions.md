@@ -36,7 +36,7 @@
 **Muunnokset:** Lähtöarvot ovat SI-yksiköissä, ja $\text{V}\cdot\text{s} = \text{Wb}$. Vastaus muunnetaan milliwebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$.
 **Sijoitus:** $\Delta\Phi = \dfrac{0{,}45\,\text{V} \cdot 0{,}12\,\text{s}}{150} = \dfrac{0{,}054\,\text{V}\cdot\text{s}}{150} = 3{,}6 \cdot 10^{-4}\,\text{Wb} = 0{,}36\,\text{mWb}$
 **Vastaus:** $0{,}36\,\text{mWb}$. Vastauksessa on kaksi merkitsevää numeroa, koska jännitteessä ja ajassa on kaksi.
-**Järkevyys:** Tarkistus: $150 \cdot 3{,}6 \cdot 10^{-4}\,\text{Wb} : 0{,}12\,\text{s} = 0{,}45\,\text{V}$. Oletetaan, että käämin pinta-ala on noin $10\,\text{cm}^2$. Silloin vuo vastaa noin $0{,}4\,\text{T}$:n kenttää käämin sisällä. Se sopii voimakkaalle kestomagneetille.
+**Järkevyys:** Tarkistus: $$\begin{aligned} &150 \cdot 3{,}6 \cdot 10^{-4}\,\text{Wb} : 0{,}12\,\text{s} \\ &= 0{,}45\,\text{V} \end{aligned}$$. Oletetaan, että käämin pinta-ala on noin $10\,\text{cm}^2$. Silloin vuo vastaa noin $0{,}4\,\text{T}$:n kenttää käämin sisällä. Se sopii voimakkaalle kestomagneetille.
 
 ## fy7-5-L1-05
 **Annettu:** induktiojännite $e = 12\,\text{mV}$, tangon kentässä oleva pituus $l = 0{,}30\,\text{m}$, magneettivuon tiheys $B = 0{,}080\,\text{T}$. Nopeus on kohtisuorassa tankoa ja kenttää vastaan.
@@ -67,7 +67,7 @@
 **Muunnokset:** $\Delta\Phi = 4{,}0\,\text{mWb} = 4{,}0 \cdot 10^{-3}\,\text{Wb}$
 **Sijoitus:** $|e| = 50 \cdot \dfrac{4{,}0 \cdot 10^{-3}\,\text{Wb}}{0{,}10\,\text{s}} = 50 \cdot 0{,}040\,\text{V} = 2{,}0\,\text{V}$
 **Vastaus:** $2{,}0\,\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, koska kuvaajasta luetussa vuossa $4{,}0\,\text{mWb}$ on kaksi.
-**Järkevyys:** Nousuvaiheessa jännite on $50 \cdot 4{,}0 \cdot 10^{-3}\,\text{Wb} : 0{,}20\,\text{s} = 1{,}0\,\text{V}$. Se on puolet suurimmasta, koska sama vuon muutos kestää kaksi kertaa kauemmin. Laskuvaiheessa jännitteen merkki on vastakkainen kuin nousuvaiheessa, koska vuo pienenee.
+**Järkevyys:** Nousuvaiheessa jännite on $$\begin{aligned} &50 \cdot 4{,}0 \cdot 10^{-3}\,\text{Wb} : 0{,}20\,\text{s} \\ &= 1{,}0\,\text{V} \end{aligned}$$. Se on puolet suurimmasta, koska sama vuon muutos kestää kaksi kertaa kauemmin. Laskuvaiheessa jännitteen merkki on vastakkainen kuin nousuvaiheessa, koska vuo pienenee.
 
 ## fy7-5-L2-03
 **Annettu:** kiskojen väli eli tangon kentässä oleva pituus $l = 0{,}40\,\text{m}$, vauhti $v = 3{,}0\,\text{m/s}$, magneettivuon tiheys $B = 0{,}50\,\text{T}$, vastus $R = 2{,}0\,\Omega$. Kiskojen ja tangon resistanssi on hyvin pieni.
@@ -129,7 +129,7 @@ $$
 **Muunnokset:** $\Delta t = 40\,\text{ms} = 40 \cdot 0{,}001\,\text{s} = 0{,}040\,\text{s}$. Vastaus muunnetaan milliwebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$.
 **Sijoitus:** $\Phi = \dfrac{0{,}90\,\text{V} \cdot 0{,}040\,\text{s}}{2 \cdot 300} = \dfrac{0{,}036\,\text{V}\cdot\text{s}}{600} = 6{,}0 \cdot 10^{-5}\,\text{Wb} = 0{,}060\,\text{mWb}$
 **Vastaus:** $0{,}060\,\text{mWb}$. Vastauksessa on kaksi merkitsevää numeroa, koska huippuarvossa $0{,}90\,\text{V}$ ja kestossa $40\,\text{ms}$ on kaksi.
-**Järkevyys:** Oletetaan, että käämin poikkipinta-ala on noin $2\,\text{cm}^2 = 2 \cdot 10^{-4}\,\text{m}^2$. Silloin keskimääräinen kenttä kierroksen läpi on $6{,}0 \cdot 10^{-5}\,\text{Wb} : 2 \cdot 10^{-4}\,\text{m}^2 = 0{,}3\,\text{T}$. Se sopii pienelle voimakkaalle magneetille. Kun magneetti lähtee käämistä, syntyy vastakkaismerkkinen pulssi, jonka pinta-ala on yhtä suuri.
+**Järkevyys:** Oletetaan, että käämin poikkipinta-ala on noin $2\,\text{cm}^2 = 2 \cdot 10^{-4}\,\text{m}^2$. Silloin keskimääräinen kenttä kierroksen läpi on $$\begin{aligned} &6{,}0 \cdot 10^{-5}\,\text{Wb} : 2 \cdot 10^{-4}\,\text{m}^2 \\ &= 0{,}3\,\text{T} \end{aligned}$$. Se sopii pienelle voimakkaalle magneetille. Kun magneetti lähtee käämistä, syntyy vastakkaismerkkinen pulssi, jonka pinta-ala on yhtä suuri.
 
 ## fy7-5-L1-06
 **Kysytty:** miksi levossa olevan magneetin ja käämin välille ei synny induktiojännitettä, vaikka vuo on suuri
@@ -176,7 +176,7 @@ $$
 **Muunnokset:** $k = 30\,\tfrac{\text{mV}}{\text{m/s}} = 30 \cdot 0{,}001\,\tfrac{\text{V}}{\text{m/s}} = 0{,}030\,\tfrac{\text{V}}{\text{m/s}}$
 **Sijoitus:** $B = \dfrac{0{,}030\,\text{V}\cdot\text{s/m}}{0{,}20\,\text{m}} = 0{,}15\,\text{T}$
 **Vastaus:** $0{,}15\,\text{T}$. Vastauksessa on kaksi merkitsevää numeroa, koska pituudessa $0{,}20\,\text{m}$ ja kulmakertoimessa on kaksi.
-**Järkevyys:** Tarkistus: $0{,}40\,\text{m/s} \cdot 0{,}15\,\text{T} \cdot 0{,}20\,\text{m} = 12\,\text{mV}$. Se vastaa taulukon arvoa $11{,}9\,\text{mV}$. Laskeminen vain yhdestä pisteestä olisi epävarmempaa kuin suoran sovitus. Yhden pisteen virhe vaikuttaisi tulokseen suoraan.
+**Järkevyys:** Tarkistus: $$\begin{aligned} &0{,}40\,\text{m/s} \cdot 0{,}15\,\text{T} \cdot 0{,}20\,\text{m} \\ &= 12\,\text{mV} \end{aligned}$$. Se vastaa taulukon arvoa $11{,}9\,\text{mV}$. Laskeminen vain yhdestä pisteestä olisi epävarmempaa kuin suoran sovitus. Yhden pisteen virhe vaikuttaisi tulokseen suoraan.
 
 ## fy7-5-L2-07
 **Kysytty:** mikä opiskelijan laskussa on virheellistä
@@ -198,7 +198,7 @@ $$
 **Annettu:** kierrosten lukumäärä $N = 250$; taulukosta $e(t)$ ajanhetkillä $0$–$48\,\text{ms}$ välein $4\,\text{ms}$ (esimerkkiaineisto); ennen pudotusta ja sen jälkeen vuo on nolla; jännite on nolla noin hetkellä $24\,\text{ms}$, kun magneetti on käämin keskellä
 **Kysytty:** a) yhden kierroksen läpi kulkeva suurin magneettivuo $\Phi$ milliwebereinä; b) sama toisesta pulssista ja pulssien erojen selitys
 **Periaate:** Induktiolaista seuraa, että lyhyen aikavälin tulo $e\,\Delta t$ on $-N\Delta\Phi$. Kun nämä tulot lasketaan yhteen koko pulssin yli, summa on jännitekuvaajan $(t, e)$ ja aika-akselin väliin jäävä pinta-ala. Se on $N$ kertaa vuon kokonaismuutos. Ensimmäisen pulssin aikana vuo kasvaa nollasta suurimpaan arvoon. Pulssin lopussa jännite on nolla, koska vuo ei enää muutu.
-**Kuvaajan lukeminen:** Pinta-ala arvioidaan puolisuunnikassäännöllä. Jokaisen $4\,\text{ms}$:n välin pinta-ala on välin päiden jännitteiden keskiarvo kertaa $0{,}004\,\text{s}$. Ensimmäisen pulssin jännitteet ovat $-0{,}02$; $0{,}09$; $0{,}63$; $1{,}77$; $1{,}77$; $0{,}60$ ja $0{,}03\,\text{V}$. Summasta saadaan pinta-alan itseisarvo $|A_\text{a}| = 0{,}004\,\text{s} \cdot (\tfrac{1}{2}(-0{,}02) + 0{,}09 + 0{,}63 + 1{,}77 + 1{,}77 + 0{,}60 + \tfrac{1}{2}\cdot 0{,}03)\,\text{V} = 0{,}004\,\text{s} \cdot 4{,}865\,\text{V} = 0{,}01946\,\text{V}\cdot\text{s}$.
+**Kuvaajan lukeminen:** Pinta-ala arvioidaan puolisuunnikassäännöllä. Jokaisen $4\,\text{ms}$:n välin pinta-ala on välin päiden jännitteiden keskiarvo kertaa $0{,}004\,\text{s}$. Ensimmäisen pulssin jännitteet ovat $-0{,}02$; $0{,}09$; $0{,}63$; $1{,}77$; $1{,}77$; $0{,}60$ ja $0{,}03\,\text{V}$. Summasta saadaan pinta-alan itseisarvo $$\begin{aligned} |A_\text{a}| &= 0{,}004\,\text{s} \cdot (\tfrac{1}{2}(-0{,}02) \\ &+ 0{,}09 + 0{,}63 + 1{,}77 + 1{,}77 \\ &+ 0{,}60 + \tfrac{1}{2}\cdot 0{,}03)\,\text{V} \\ &= 0{,}004\,\text{s} \cdot 4{,}865\,\text{V} \\ &= 0{,}01946\,\text{V}\cdot\text{s} \end{aligned}$$.
 **Kaava:** $|A_\text{a}| = N\Phi$, josta $\Phi = \dfrac{|A_\text{a}|}{N}$
 **Muunnokset:** $1\,\text{ms} = 0{,}001\,\text{s}$. Vastaus muunnetaan milliwebereiksi: $1\,\text{Wb} = 1000\,\text{mWb}$. Lisäksi $\text{V}\cdot\text{s} = \text{Wb}$.
 **Sijoitus:** a) $\Phi = \dfrac{0{,}01946\,\text{V}\cdot\text{s}}{250} = 7{,}78 \cdot 10^{-5}\,\text{Wb} = 0{,}0778\,\text{mWb}$. b) Toisen pulssin ($24$–$48\,\text{ms}$) pinta-ala on samalla tavalla laskien $-0{,}01968\,\text{V}\cdot\text{s}$. Siis $\Phi = 0{,}01968\,\text{V}\cdot\text{s} : 250 = 0{,}0787\,\text{mWb}$.
@@ -251,7 +251,7 @@ Jos kierrosten lukumäärän unohtaa, tilanteiden A ja B jännitteiksi tulee vai
 **Muunnokset:** $|\Delta\Phi| = 8{,}0\,\text{mWb} = 8{,}0 \cdot 10^{-3}\,\text{Wb}$
 **Sijoitus:** $|e_\text{ka}| = 200 \cdot \dfrac{8{,}0 \cdot 10^{-3}\,\text{Wb}}{0{,}40\,\text{s}} = 200 \cdot 0{,}020\,\text{V} = 4{,}0\,\text{V}$
 **Vastaus:** $4{,}0\,\text{V}$. Vastauksessa on kaksi merkitsevää numeroa, koska kuvaajasta luetuissa vuoissa $5{,}0\,\text{mWb}$ ja $-3{,}0\,\text{mWb}$ on kaksi.
-**Järkevyys:** Jos käyttäisi vain loppuarvoa $3{,}0\,\text{mWb}$, tulos olisi $200 \cdot 3{,}0 \cdot 10^{-3}\,\text{Wb} : 0{,}40\,\text{s} = 1{,}5\,\text{V}$. Se on liian pieni, koska vuo kulkee nollan kautta ja muutos on suurempi kuin kumpikaan arvo yksin. Kuvaajan kulmakerroin $$
+**Järkevyys:** Jos käyttäisi vain loppuarvoa $3{,}0\,\text{mWb}$, tulos olisi $$\begin{aligned} &200 \cdot 3{,}0 \cdot 10^{-3}\,\text{Wb} : 0{,}40\,\text{s} \\ &= 1{,}5\,\text{V} \end{aligned}$$. Se on liian pieni, koska vuo kulkee nollan kautta ja muutos on suurempi kuin kumpikaan arvo yksin. Kuvaajan kulmakerroin $$
 \begin{aligned}
 &-8{,}0\,\text{mWb} : 0{,}40\,\text{s} \\
 &= -20\,\tfrac{\text{mWb}}{\text{s}}

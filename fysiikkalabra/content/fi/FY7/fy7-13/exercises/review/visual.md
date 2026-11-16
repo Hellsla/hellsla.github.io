@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: f826e165c39db33b
+CONTENT-HASH: a8484d97e29dde02
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] none.
+- [Minor] solutions.md:163 — the "ja virhe" block still starts with a bare "=" after a word.
+- [Minor] exercises.json:202 (fy7-13-L2-06) at 1280 px — the gap before "=" between the split inline formulas is a little tighter than after it.
 
 ## Checked
-- fy7-13-open-exercises-L2-1280-14 (13-20 Järkevyys: x = 1,00 m / · tan(…) = 10,1 cm, rows aligned, comma sensible), L2-1280-10, -11, -12 (neighbours).
-- Delta (reflow only): changed solutions read in fy7-13-open-exercises captures at 1280 px; the 390 px layout was judged from the source rows (short aligned rows, nothing wider than the 1280 px rows). Layout survived: no overflow, units upright, signs and numbers unchanged. Hash identical at start and end.
+- Round 2, delta. Fresh preview/fy7-13.html at this hash, every solution open; own captures of every aligned block and split inline chain of the exercises at 360 and 1280 px (/tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/fi-r2-visual/shots/fy7-13-ex-360-s*.png, fy7-13-ex-1280-s*.png), read at full size.
+- fy7-13-L2-06 task text: the quoted solution is inline again; no lone ".”" line, the mark stays with "= 562 nm" at both widths. Round 1's first Blocking is gone.
+- fy7-13-L2-06 Sijoitus "ja virhe": "= fraction · 100 %" on one row and "= 5,53 %" on its own row, aligned. Round 1's second Blocking is gone.
+- All 17 aligned blocks (L1-02, L1-04, L1-09, L2-01, L2-03, L2-04, L2-06, L2-08, L2-09, L2-10): relations start their rows, "· tan(sin⁻¹ …)" continuation rows fit at 352 px.
+- Formula overflow measured in the browser at 352, 360, 390 and 1280 px, everything open. Hash the same at the start and the end.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 5
+illustrations 4 · typography 4 · Finnish 4 · accessibility 5

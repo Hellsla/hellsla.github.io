@@ -4,9 +4,9 @@
 **Periaate:** Käämi pyörii tasaisesti homogeenisessa kentässä, joten sen läpi kulkeva vuo vaihtelee sinimuotoisesti ja käämiin syntyy sinimuotoinen vaihtojännite. Sen huippuarvo on $e_0 = NBA \cdot 2\pi f$: jännite on suurin, kun käämin taso on kentän suuntainen ja vuo muuttuu nopeimmin.
 **Kaava:** $e_0 = NBA \cdot 2\pi f$
 **Muunnokset:** Ei tarvita: suureet ovat SI-yksiköissä, ja $\text{T} \cdot \text{m}^2 \cdot \tfrac{1}{\text{s}} = \text{V}$.
-**Sijoitus:** $e_0 = 300 \cdot 0{,}15\,\text{T} \cdot 0{,}0030\,\text{m}^2 \cdot 2\pi \cdot 10\,\tfrac{1}{\text{s}} = 8{,}482\,\text{V}$
+**Sijoitus:** $$\begin{aligned} e_0 &= 300 \cdot 0{,}15\,\text{T} \cdot 0{,}0030\,\text{m}^2 \\ &\cdot 2\pi \cdot 10\,\tfrac{1}{\text{s}} \\ &= 8{,}482\,\text{V} \end{aligned}$$
 **Vastaus:** $8{,}5\,\text{V}$, kaksi merkitsevää numeroa kuten lähtöarvoissa.
-**Järkevyys:** Pyöreillä luvuilla $300 \cdot 0{,}15\,\text{T} \cdot 0{,}003\,\text{m}^2 \approx 0{,}14\,\text{Wb}$, ja kun tämä kerrotaan luvulla $2\pi \cdot 10 \approx 60$, tulos on noin $8\,\text{V}$. Muutaman voltin jännite sopii käsin pyöritettävään opetusgeneraattoriin.
+**Järkevyys:** Pyöreillä luvuilla $$\begin{aligned} &300 \cdot 0{,}15\,\text{T} \cdot 0{,}003\,\text{m}^2 \\ &\approx 0{,}14\,\text{Wb} \end{aligned}$$, ja kun tämä kerrotaan luvulla $2\pi \cdot 10 \approx 60$, tulos on noin $8\,\text{V}$. Muutaman voltin jännite sopii käsin pyöritettävään opetusgeneraattoriin.
 
 ## fy7-7-L1-02
 **Annettu:** jännitteen tehollinen arvo $U = 115\,\text{V}$, taajuus $400\,\text{Hz}$
@@ -79,9 +79,9 @@
 **Periaate:** Käämi pyörii tasaisesti homogeenisessa kentässä, joten siihen syntyy sinimuotoinen vaihtojännite, jonka huippuarvo on $e_0 = NBA \cdot 2\pi f$. Ensin lasketaan käämin pinta-ala ja pyörimistaajuus SI-yksiköissä.
 **Kaava:** $A = ab$ ja $e_0 = NBA \cdot 2\pi f$
 **Muunnokset:** $A = 6{,}0 \cdot 0{,}01\,\text{m} \cdot 8{,}0 \cdot 0{,}01\,\text{m} = 0{,}0048\,\text{m}^2$ ja $f = \dfrac{1200}{60\,\text{s}} = 20\,\text{Hz}$
-**Sijoitus:** $e_0 = 150 \cdot 0{,}25\,\text{T} \cdot 0{,}0048\,\text{m}^2 \cdot 2\pi \cdot 20\,\tfrac{1}{\text{s}} = 22{,}62\,\text{V}$
+**Sijoitus:** $$\begin{aligned} e_0 &= 150 \cdot 0{,}25\,\text{T} \cdot 0{,}0048\,\text{m}^2 \\ &\cdot 2\pi \cdot 20\,\tfrac{1}{\text{s}} \\ &= 22{,}62\,\text{V} \end{aligned}$$
 **Vastaus:** $23\,\text{V}$, kaksi merkitsevää numeroa kuten käämin mitoissa ja magneettivuon tiheydessä.
-**Järkevyys:** Pyöreillä luvuilla $150 \cdot 0{,}25\,\text{T} \cdot 0{,}005\,\text{m}^2 \approx 0{,}19\,\text{Wb}$ ja $2\pi \cdot 20\,\tfrac{1}{\text{s}} \approx 125\,\tfrac{1}{\text{s}}$, joten $e_0 \approx 23\,\text{V}$. Jos pyörimisnopeutta $1200$ olisi käytetty hertseinä, tulos olisi $60$-kertainen.
+**Järkevyys:** Pyöreillä luvuilla $$\begin{aligned} &150 \cdot 0{,}25\,\text{T} \cdot 0{,}005\,\text{m}^2 \\ &\approx 0{,}19\,\text{Wb} \end{aligned}$$ ja $2\pi \cdot 20\,\tfrac{1}{\text{s}} \approx 125\,\tfrac{1}{\text{s}}$, joten $e_0 \approx 23\,\text{V}$. Jos pyörimisnopeutta $1200$ olisi käytetty hertseinä, tulos olisi $60$-kertainen.
 
 ## fy7-7-L2-02
 **Annettu:** kierroksia $N = 200$, pinta-ala $A = 30\,\text{cm}^2$, kuvaajasta luettu huippuarvo ja jaksonaika
@@ -92,7 +92,7 @@
 **Muunnokset:** $T = 40\,\text{ms} = 40 \cdot 0{,}001\,\text{s} = 0{,}040\,\text{s}$ ja $A = 30\,\text{cm}^2 = 30 \cdot 0{,}0001\,\text{m}^2 = 0{,}0030\,\text{m}^2$
 **Sijoitus:** $f = \dfrac{1}{0{,}040\,\text{s}} = 25\,\text{Hz}$ ja $B = \dfrac{12\,\text{V}}{200 \cdot 0{,}0030\,\text{m}^2 \cdot 2\pi \cdot 25\,\tfrac{1}{\text{s}}} = \dfrac{12\,\text{V}}{94{,}25\,\tfrac{\text{m}^2}{\text{s}}} = 0{,}1273\,\text{T}$
 **Vastaus:** $0{,}13\,\text{T}$, kaksi merkitsevää numeroa, koska kuvaajasta luetut arvot $12\,\text{V}$ ja $40\,\text{ms}$ ovat kahden numeron tarkkuudella.
-**Järkevyys:** Kestomagneetin kenttä on tyypillisesti kymmenesosia teslaa, joten $0{,}13\,\text{T}$ on uskottava. Tarkistus: $200 \cdot 0{,}13\,\text{T} \cdot 0{,}0030\,\text{m}^2 \cdot 2\pi \cdot 25\,\tfrac{1}{\text{s}} \approx 12{,}3\,\text{V}$, mikä vastaa kuvaajan huippua.
+**Järkevyys:** Kestomagneetin kenttä on tyypillisesti kymmenesosia teslaa, joten $0{,}13\,\text{T}$ on uskottava. Tarkistus: $$\begin{aligned} &200 \cdot 0{,}13\,\text{T} \cdot 0{,}0030\,\text{m}^2 \cdot 2\pi \\ &\cdot 25\,\tfrac{1}{\text{s}} \\ &\approx 12{,}3\,\text{V} \end{aligned}$$, mikä vastaa kuvaajan huippua.
 
 ## fy7-7-L2-03
 **Annettu:** jännitteen tehollinen arvo $U = 12\,\text{V}$, kierroksia $N = 200$, pinta-ala $A = 0{,}0050\,\text{m}^2$, magneettivuon tiheys $B = 0{,}30\,\text{T}$
@@ -110,7 +110,7 @@
 **Periaate:** Keskimääräinen teho on vuoden aikana tuotettu energia jaettuna vuoden pituudella. Tuulivoimalat tuottavat nimellistehonsa vain kovalla tuulella, joten keskiteho on selvästi nimellistehoa pienempi. Osuus saadaan jakamalla keskiteho nimellisteholla.
 **Kaava:** $P = \dfrac{E}{t}$ ja osuus $= \dfrac{P}{P_\text{n}} \cdot 100\,\%$
 **Muunnokset:** $t = 366 \cdot 24\,\text{h} = 8784\,\text{h}$, $E = 19{,}8\,\text{TWh} = 19{,}8 \cdot 10^{12}\,\text{Wh}$ ja $P_\text{n} = 8358\,\text{MW} = 8358 \cdot 10^{6}\,\text{W}$
-**Sijoitus:** $P = \dfrac{19{,}8 \cdot 10^{12}\,\text{Wh}}{8784\,\text{h}} = 2{,}254 \cdot 10^{9}\,\text{W}$ ja osuus $= \dfrac{2{,}254 \cdot 10^{9}\,\text{W}}{8358 \cdot 10^{6}\,\text{W}} \cdot 100\,\% = 26{,}97\,\%$
+**Sijoitus:** $P = \dfrac{19{,}8 \cdot 10^{12}\,\text{Wh}}{8784\,\text{h}} = 2{,}254 \cdot 10^{9}\,\text{W}$ ja osuus $$\begin{aligned} &= \dfrac{2{,}254 \cdot 10^{9}\,\text{W}}{8358 \cdot 10^{6}\,\text{W}} \cdot 100\,\% \\ &= 26{,}97\,\% \end{aligned}$$
 **Vastaus:** $27\,\%$, kaksi merkitsevää numeroa, koska tuotanto $19{,}8\,\text{TWh}$ on ilmoitettu kolmella numerolla ja tulos on arvio.
 **Järkevyys:** Tuulivoimaloiden keskiteho on tyypillisesti neljännes tai kolmannes nimellistehosta, joten $27\,\%$ on uskottava. Todellinen osuus on hieman suurempi, koska nimellisteho kasvoi vuoden aikana: alkuvuonna voimaloita oli vähemmän kuin vuoden lopussa.
 
@@ -129,9 +129,9 @@
 **Annettu:** pyörimistaajuus $f_1 = 5{,}0\,\text{Hz}$ ja huippuarvo $e_{0,1} = 4{,}1\,\text{V}$; pyörimistaajuus $f_2 = 10{,}0\,\text{Hz}$ ja mitattu huippuarvo $e_{0,2} = 8{,}0\,\text{V}$; $N$, $B$ ja $A$ samat
 **Kysytty:** a) ennustettu huippuarvo taajuudella $f_2$, b) mittauksen poikkeama ennusteesta prosentteina, c) taajuuden muutos ja mittauksen sopivuus
 **Periaate:** Huippuarvo $e_0 = NBA \cdot 2\pi f$ on suoraan verrannollinen pyörimistaajuuteen, kun $N$, $B$ ja $A$ pysyvät samoina. Kaksinkertainen pyörimistaajuus antaa siis kaksinkertaisen huippuarvon. Poikkeama lasketaan ennusteen ja mittauksen erotuksena suhteessa ennusteeseen.
-**Kaava:** $e_{0,2} = e_{0,1} \cdot \dfrac{f_2}{f_1}$ ja poikkeama $= \dfrac{|e_{0,\text{ennuste}} - e_{0,\text{mitattu}}|}{e_{0,\text{ennuste}}} \cdot 100\,\%$
+**Kaava:** $e_{0,2} = e_{0,1} \cdot \dfrac{f_2}{f_1}$ ja poikkeama $$\begin{aligned} &= \dfrac{|e_{0,\text{ennuste}} - e_{0,\text{mitattu}}|}{e_{0,\text{ennuste}}} \\ &\cdot 100\,\% \end{aligned}$$
 **Muunnokset:** Ei tarvita: suhde $f_2 : f_1$ on lukuarvo.
-**Sijoitus:** a) $e_{0,\text{ennuste}} = 4{,}1\,\text{V} \cdot \dfrac{10{,}0\,\text{Hz}}{5{,}0\,\text{Hz}} = 8{,}2\,\text{V}$. b) Poikkeama $= \dfrac{|8{,}2\,\text{V} - 8{,}0\,\text{V}|}{8{,}2\,\text{V}} \cdot 100\,\% = 2{,}44\,\%$
+**Sijoitus:** a) $e_{0,\text{ennuste}} = 4{,}1\,\text{V} \cdot \dfrac{10{,}0\,\text{Hz}}{5{,}0\,\text{Hz}} = 8{,}2\,\text{V}$. b) Poikkeama $$\begin{aligned} &= \dfrac{|8{,}2\,\text{V} - 8{,}0\,\text{V}|}{8{,}2\,\text{V}} \cdot 100\,\% \\ &= 2{,}44\,\% \end{aligned}$$
 **Vastaus:** Poikkeama on $2{,}4\,\%$. c) Jännitteen taajuus on sama kuin pyörimistaajuus, joten sekin kaksinkertaistuu: jaksonaika puolittuu arvosta $200\,\text{ms}$ arvoon $100\,\text{ms}$. Kunkin huippuarvon lukemisen epävarmuus on $\pm 0{,}1\,\text{V}$. Ennuste $2 \cdot 4{,}1\,\text{V}$ kaksinkertaistaa lukeman epävarmuuden ($\pm 0{,}2\,\text{V}$), ja mitatun arvon epävarmuus $\pm 0{,}1\,\text{V}$ lisäksi, joten yhteensä epävarmuus on noin $\pm 0{,}3\,\text{V}$. Erotus $0{,}2\,\text{V}$ on tätä pienempi, joten mittaus ei poikkea ennusteesta enempää kuin lukematarkkuus sallii: eroa verrannollisuudesta ei voida osoittaa, ja mittaus on sopusoinnussa ennusteen kanssa.
 **Järkevyys:** Kaksinkertaisella taajuudella huippuarvo on lähes kaksinkertainen: $8{,}0 : 4{,}1 = 1{,}95$. Jos huippuarvo olisi riippunut taajuudesta jotenkin muuten, esimerkiksi neliöllisesti, tulos olisi ollut noin $16\,\text{V}$.
 
@@ -213,3 +213,17 @@ $T = 0{,}025\,\text{s} = 25\,\text{ms}$
 Kuvaajan B käyrä käy välillä $-7{,}1\,\text{V}$ ja $7{,}1\,\text{V}$, ja se on nolla ja kasvamassa hetkillä $0$, $25\,\text{ms}$, $50\,\text{ms}$ ja niin edelleen: välillä $0$–$100\,\text{ms}$ siinä on neljä täyttä jaksoa. Kuvaajan C jaksonaika on oikea, mutta sen huippuarvo on vain $5{,}0\,\text{V}$: siinä tehollinen arvo on piirretty huippuarvoksi, mikä on luvun yleinen virhe. Kuvaajan D huippuarvo on oikea, mutta sen jaksonaika on $40\,\text{ms}$: siinä taajuuden lukuarvo on luettu jaksonajaksi millisekunteina. Kuvaajassa A on molemmat virheet.
 
 **Kuvaajan lukeminen:** Huippuarvo luetaan käyrän ylimmän kohdan korkeudesta, ja jaksonaika kahden peräkkäisen samaan suuntaan tapahtuvan nollakohdan välistä. Järkevyys: taajuus $40\,\text{Hz}$ tarkoittaa $40$ jaksoa sekunnissa, eli $4$ jaksoa $100\,\text{ms}$:ssa.
+
+## fy7-7-L2-08
+**Annettu:** simulaatio ([PhET – Faraday's Law](https://phet.colorado.edu/en/simulations/faradays-law)), jossa on sauvamagneetti, käämi, lamppu ja jännitemittari ilman lukuarvoja; kohdan c) esimerkissä kierroksia $N = 4$, yhden kierroksen vuon muutos $\Delta\Phi = 0{,}25\,\text{mWb}$ sekä työnnön kestot $\Delta t_1 = 2{,}0\,\text{s}$ ja $\Delta t_2 = 0{,}50\,\text{s}$
+**Kysytty:** a) milloin käämiin indusoituu jännite; b) liikenopeuden ja liikesuunnan vaikutus; c) havaintojen selitys sekä keskimääräisen jännitteen suuruus $|e_\text{ka}|$ millivoltteina kummallakin kestolla; d) vaihtojännitteen synty ja energian muuntuminen generaattorissa
+**Periaate:** Induktiolain mukaan käämiin syntyy jännite vain silloin, kun käämin läpi kulkeva magneettivuo muuttuu (luku *Sähkömagneettinen induktio*). Jännitteen suuruus riippuu vuon muutosnopeudesta ja kierrosten lukumäärästä, ei vuon suuruudesta. Simulaation mittari näyttää vain neulan suunnan ja poikkeaman, joten havainnot ovat laadullisia ja kohdan c) lukuarvot ovat tehtävän oletuksia. Esimerkissä vuon muutos on kummallakin kerralla sama, joten vain muutokseen kuluva aika vaihtuu.
+**Kaava:** $e_\text{ka} = -N\dfrac{\Delta\Phi}{\Delta t}$, josta suuruus on $|e_\text{ka}| = \dfrac{N \cdot |\Delta\Phi|}{\Delta t}$
+**Muunnokset:** $\Delta\Phi = 0{,}25\,\text{mWb} = 0{,}25 \cdot 0{,}001\,\text{Wb} = 0{,}00025\,\text{Wb}$. Tulos muunnetaan millivolteiksi: $1\,\text{V} = 1000\,\text{mV}$.
+**Sijoitus:** Hidas työntö: $|e_\text{ka}| = \dfrac{4 \cdot 0{,}00025\,\text{Wb}}{2{,}0\,\text{s}} = 0{,}00050\,\text{V} = 0{,}50\,\text{mV}$. Nopea työntö: $|e_\text{ka}| = \dfrac{4 \cdot 0{,}00025\,\text{Wb}}{0{,}50\,\text{s}} = 0{,}0020\,\text{V} = 2{,}0\,\text{mV}$
+**Kohta a):** Havainnot ovat opiskelijan omia. Esimerkkihavainnot simulaatiosta 16. marraskuuta 2026: kun magneetti on paikallaan, neula on nollassa ja lamppu on pimeä. Näin on sekä kaukana käämistä että käämin sisällä. Neula poikkeaa ja lamppu syttyy vain silloin, kun magneetti liikkuu käämin suhteen. Jännite indusoituu siis magneetin liikkuessa, ei siksi, että magneetti on lähellä.
+**Kohta b):** Esimerkkihavainnot: hitaassa liikkeessä neula poikkeaa vähän ja lamppu hehkuu himmeästi. Nopeassa liikkeessä poikkeama on suuri ja lamppu kirkas. Kun magneettia tuodaan kohti käämiä, neula kääntyy yhdelle puolelle, ja kun sitä viedään poispäin, neula kääntyy vastakkaiselle puolelle. Lamppu palaa kummassakin tapauksessa. Se, kummalle puolelle neula kääntyy, riippuu magneetin asennosta, joten omassa kokeessa puolet voivat olla toisin päin.
+**Kohta c):** Magneetin kenttä on voimakkain magneetin lähellä. Kun magneetti lähestyy käämiä, käämin läpi kulkeva vuo kasvaa, ja kun magneetti etääntyy, vuo pienenee. Paikallaan olevan magneetin vuo voi olla suuri, mutta se ei muutu: $\Delta\Phi = 0$, joten jännite on nolla. Nopeassa liikkeessä sama vuon muutos tapahtuu lyhyemmässä ajassa, joten muutosnopeus $\Delta\Phi : \Delta t$ ja jännite ovat suuremmat. Esimerkissä aika lyhenee neljäsosaan ja jännite kasvaa nelinkertaiseksi. Vuon kasvaessa $\Delta\Phi$ on positiivinen ja pienetessä negatiivinen, joten induktiolain mukaan jännitteen merkki vaihtuu, kun liikesuunta vaihtuu.
+**Kohta d):** Generaattorissa käämi pyörii magneettikentässä, joten käämin läpi kulkeva vuo $\Phi = BA\cos(2\pi f t)$ muuttuu koko ajan, vaikka kenttä pysyy samana. Vuo kasvaa ja pienenee vuorotellen, kuten simulaatiossa magneettia edestakaisin liikutettaessa. Siksi jännitteen merkki vaihtuu jaksollisesti ja syntyy vaihtojännite $e = e_0 \sin(2\pi f t)$. Nopeampi pyöriminen muuttaa vuota nopeammin ja kasvattaa huippuarvoa $e_0 = NBA \cdot 2\pi f$, kuten nopea magneetin liike simulaatiossa. Kun generaattoriin kytketään kuorma, esimerkiksi lamppu, käämissä kulkee induktiovirta. Magneettikenttä kohdistaa virralliseen käämiin voiman, joka Lenzin lain mukaan vastustaa pyörimistä. Käämin pyörittäjän, esimerkiksi turbiinin, on tehtävä työtä tätä voimaa vastaan. Tämä mekaaninen työ muuntuu sähköenergiaksi, jonka virta siirtää kuormaan. Ilman kuormaa jännite syntyy, mutta virtaa ei kulje eikä sähköenergiaa siirry.
+**Vastaus:** $2{,}0\,\text{mV}$ nopeassa työnnössä ja $0{,}50\,\text{mV}$ hitaassa. Tuloksissa on kaksi merkitsevää numeroa kuten vuon muutoksessa $0{,}25\,\text{mWb}$ ja ajoissa; kierrosten lukumäärä on tarkka arvo.
+**Järkevyys:** Yksiköt sopivat: $1\,\tfrac{\text{Wb}}{\text{s}} = 1\,\text{V}$. Jännitteiden suhde on $2{,}0\,\text{mV} : 0{,}50\,\text{mV} = 4$, sama kuin aikojen suhde $2{,}0\,\text{s} : 0{,}50\,\text{s} = 4$, kuten käänteinen verrannollisuus vaatii. Millivolttien suuruusluokka on uskottava neljän kierroksen käämille. Generaattorin käämissä kierroksia on satoja ja vuo muuttuu kymmeniä kertoja sekunnissa, joten jännite on voltteja tai enemmän.

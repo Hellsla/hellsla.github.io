@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 60023ef97e0f5014
+CONTENT-HASH: 4fd262dbfa71e157
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md, grating reasonableness check — the chain is now three aligned rows (x = 1.00 m / · tan(sin^-1 ...) / = 10.1 cm,) with the comma inside the block and the sentence continuing "and in the figure ..."; at 390 px (checked in a capture of the block) it is readable, nothing clipped, equals sign and continuation aligned. No change needed.
-
-## Outside this change (queue 5d, not blocking here)
-- [Major] en/fy7-13 rows in docs/clipped-formulas.tsv (the d = 1 mm : 600 = ... conversions, 1.667 µm · sin ... = ..., the (561.7 nm − 532.3 nm) fraction) remain clipped on a phone.
+- [Minor] solutions.md:163 — the block after “and error” still starts with a bare `=` (recorded in round 1).
+- [Minor] exercises.json (fy7-13-L2-06 quotation) — the split pieces that begin with `=` lack the relation space on their left (`0.337= 562 nm`).
+- [Minor] at 1280 px the two-row blocks with a left side (`d = 1 · 10⁻³ m : 300` / `= 3.333 · 10⁻⁶ m,`) stay two rows while the checks without one are joined; consistent with the Conversions steps, harmless.
 
 ## Checked
-- 390 px render of the changed reasonableness block; the exercise captures at 1280 are in the fy7-13 lesson shots folder only if present, so the surrounding layout was not re-opened.
-- Hash identical at start and end.
+- Delta (queue 5d reflow), round 2. The packet's inventory has no phone capture of the opened solutions, so own captures were made from preview/en/fy7-13.html (rebuilt with build.py) with every solution open at 360, 390 and 1280 px; the 390 and 1280 px sheets of every solution step and task text the diff touches were read at full size (S-Efy7-13-390-*.png, S-Efy7-13-1280-*.png in the session scratchpad).
+- Measured at all three widths over the whole exercise section: no formula wider than its card or scrolling in its box (so nothing of docs/clipped-formulas.tsv clips on this page in these captures), no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line.
+- Source against main: the same tokens in the same order outside any new exercise; every new row starts with a relation, a sign or between whole quantities; the older aligned blocks are unchanged.
+- 390 px (both sheets) and 1280 px (both sheets): L1-02, L1-04, L2-01, L2-03, L2-04, L2-06 (conversions, substitution, the quotation inline again and closed with `.”` on its text line), L2-08 model answer, L1-09, L2-09 (`x₁ = L tan θ₁` / `= 1.20 m` / `· tan(sin⁻¹ …)` / `= 31.2 cm,`).
+- Hash identical at the end.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 4 · Finnish 5 · accessibility 5

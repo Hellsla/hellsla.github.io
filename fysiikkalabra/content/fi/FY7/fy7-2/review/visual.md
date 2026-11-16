@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: fd4fea8ed3adf8ba
+CONTENT-HASH: b7449d711a6ed4ad
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] inquiry.json siirto solution, Sijoitus — the numerator of the root is split by hand into two rows (2 · 1,602 · 10^-19 C / · 20 000 V); readable and unclipped at 390 px, but the radical becomes tall and the result row starts at the far left; acceptable, a cleaner shared reflow would be nicer.
-- [Minor] docs/clipped-formulas.tsv — fy7-2 keeps formulas that were already clipped before this change (outside this change, work queue 5d; Major outside this change, not blocking): about a dozen Sovella chains and exercise formulas (qB, 1,602 · 10^-19 C …) are still listed.
+- [Minor] `siirto` Sijoitus — the stacked numerator's second row still reads "·20 000 V" with no space after the dot (unchanged from main) — `{} \cdot 20\,000\,\text{V}`.
 
 ## Checked
-- Delta: only inquiry.json re-breaks. Rendered the changed items myself from the built page (preview/fy7-2.html) at 390 px with hints and solutions open; the Sovella "uuteen tilanteeseen" solution: Muunnokset, Sijoitus (v and B rows, ja), Vastaus, Järkevyys all readable, nothing clipped. 
-- Opened the lesson's existing 390 px stage captures (herata, sovella, tarkista) and contact sheet; the stages around the changes keep their layout, no horizontal overflow.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+- batch delta review, round 2: fresh preview/fy7-2.html at this hash, every box, feedback and model answer open; own captures of every aligned block and split inline chain at 360 and 1280 px (/tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/fi-r2-visual/shots/fy7-2-lesson-360-s*.png, fy7-2-lesson-1280-s1.png), formula overflow measured at 352, 360, 390 and 1280 px; `virhe` is three equations again, each with its own left side ($qU$, $v$, $r$), aligned at the equals signs; the feedback's kV chain and the `siirto` B block (B, then two = rows; one row plus result at 1280 px) read correctly; nothing clipped. Hash the same at the start and the end.

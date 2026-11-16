@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 65b3e13314cd7fa1
-SCOPE: delta added-exercise from 816b492b4659d53e base 8f23aa7ae3bd
+CONTENT-HASH: 519bbe919a31ae7b
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] solutions.md:132 — on a phone the continuation rows (`· 1.00 m`, `− ½ · …`) start at the same left edge as the `=` rows, so the hierarchy of the rows is weak; readable, joined to a clear two-column form at 1280 px.
 
 ## Checked
-- fy7-6-open-exercises-L2-1280-11, -12 (en): task 6-17 with the brake-task graph (axis titles with units, six dark markers distinct from the red line through the origin, grid every 0.1 N), answer field, opened solution.
-- fy7-6-open-exercises-L3-1280-9, -10: task L3-06 solution (aligned chains, N·s/m units, reasonableness block); the graph is the same figure.
-- Typography: units upright with thin space, no red KaTeX, no overflow; the set reads as one.
+- Delta (reflow). The packet's inventory has no phone-width capture of the opened exercise solutions, so own captures were made from preview/en/fy7-6.html (built after the content) with every exercise solution open at 390 and 1280 px: every solution step holding a display formula, opened at full size (sheets S6-390-1.png, S6-1280-1.png in the session scratchpad).
+- Measured at both widths: no formula wider than its card, no page overflow, no KaTeX error, no raw LaTeX; no row starts inside a number, a power of ten or a unit.
+- L1-03, L1-04, L2-06, L3-01, L3-03, L3-05: rows start at `=`, `≈`, `·` or `−` between whole quantities; the fraction row of the acceleration fits the phone card.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 5

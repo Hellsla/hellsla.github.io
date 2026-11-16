@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: e4989bd9cca37b33
+CONTENT-HASH: 52a7875c4df574ef
 
 ## Blocking
 - none
 
 ## Polish
-- [Major, outside this change, queue item 5d] formulas listed for en/fy7-8 in docs/clipped-formulas.tsv (5 rows) are known clipped at 360 px; the diff touches none of them.
 - none
 
 ## Checked
-- batch delta review: fig-6-390 (transformer: coils, core, flux, I1/I2 in violet, labels legible) and fig-8-390 (single-line grid diagram, 20 kV / 400 kV / 230 V labels, nothing overlapping); the blank-line and bullet edits cause no layout damage.
+- batch delta review: queue 5d reflow. The standard set has no phone captures of opened states, so every re-broken formula (4 rendered blocks) was captured from the built page (preview/en/fy7-8.html, the build of the shots stamp) at 390 px and 1280 px with every box, hint, solution and choice feedback forced open, and each capture was read; box overflow measured at 360, 375, 390, 412 and 1280 px: none clipped or scrolled. Row starts checked against the 5d rule; wide-screen joining (join_wide) seen at 1280 px. Figures and the formula-name / teacher-figure categories were not re-judged.

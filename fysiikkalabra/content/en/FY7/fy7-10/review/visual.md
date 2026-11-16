@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 8b9f6b26b4a7e733
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 97e61e13c3a3a8ce
 
 ## Blocking
 - none
@@ -9,7 +8,4 @@ Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correct
 - none
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Exception wording now "Tähän on kuitenkin poikkeuksia:" / "Tähän on kuitenkin poikkeuksia." / "There are exceptions, however:", which fits both total internal reflection and Brewster; chapter titles exact.
-- Round-1 blocker fixed: split at "When light arrives perpendicular to glass from air"; the second part (unchanged old text) is about 131 words.
-- Hash identical at start and end of this round.
+- batch delta review: queue 5d reflow. The standard set has no phone captures of opened states, so every re-broken formula (5 rendered blocks) was captured from the built page (preview/en/fy7-10.html, the build of the shots stamp) at 390 px and 1280 px with every box, hint, solution and choice feedback forced open, and each capture was read; box overflow measured at 360, 375, 390, 412 and 1280 px: none clipped or scrolled. Row starts checked against the 5d rule; wide-screen joining (join_wide) seen at 1280 px. Figures and the formula-name / teacher-figure categories were not re-judged.

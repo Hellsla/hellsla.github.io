@@ -45,4 +45,10 @@ sh = 3.0 / 100                                      # read share P_h : P = 3,0 %
 Ph9 = sh * 200e6                                    # P_h = 6,0 MW
 I9 = 200e6 / 200e3                                  # I = P / U = 1000 A
 a["fy7-8-L2-09"] = Ph9 / I9 ** 2                    # R = P_h / I² = 6,0 Ω (= s U² / P)
+# L2-10 (FY7-A1, Fingrid): three-phase model P = √3 U I cos φ with cos φ = 1, P = 200 MW, R = 4,0 Ω per phase conductor
+I110 = 200e6 / (3 ** 0.5 * 110e3)                   # b) I = P / (√3 U) = 1049,7 A at 110 kV
+I400 = 200e6 / (3 ** 0.5 * 400e3)                   # b) I = 288,7 A at 400 kV
+Ph110 = 3 * 4.0 * I110 ** 2                         # c) P_h = 3 R I² = R P² / U² = 13,22 MW at 110 kV (6,6 % of P)
+Ph400 = 3 * 4.0 * I400 ** 2                         # c) 1,000 MW at 400 kV (0,50 % of P); ratio (400 : 110)² = 13,22
+a["fy7-8-L2-10"] = Ph110 / 1e6                      # box: the loss at 110 kV in MW -> 13 MW
 print(json.dumps({k: round(v, 6) for k, v in a.items()}))

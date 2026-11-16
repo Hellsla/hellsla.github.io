@@ -79,6 +79,8 @@ FY9 tehty (PR #611): 1001 riviä pois listalta; 84 jää (16 liian leveää yksi
 
 FY1 tehty (PR #619): 199 riviä pois listalta; 3 jää (fy1-3:n keskiarvon `\dfrac`, jonka osoittajan summa on yksinään ruutua leveämpi).
 
+FY7 tehty (PR #633, kohdan 19 FY7:n kanssa): luvut 1–16 ja esimerkkikoe kolmella kielellä; 439 riviä pois listalta (tarkistettu site/:stä 352, 360 ja 390 px:llä ja CI:ssä); 56 jää (Sovella-sarjan 18 riviä: sarja palautettiin mainin muotoon, koska sen juurikaava `\sqrt{\dfrac{…}{…}}` ei jakaudu riveiksi ilman sisältömuutosta; fy7-2:n leveä `\dfrac`; fy7-14:n kaksi vihjeen kaavaa, jotka CI:n Chromium leikkaa 360 px:llä mutta paikallinen ei edes 352 px:llä; sekä ne en- ja fi-easy-tehtäväsarjojen rivit, joiden sivulla näkyy yhä vanhempi katselmoitu versio, koska niiden tiedekatselmointi oli vanhentunut jo mainissa: en fy7-4, fy7-6, fy7-10, fy7-12, fy7-16, fi-easy fy7-6, fy7-12). Uudet huomiot: tehtävätekstissä (`p.task`) display-kaavan perässä oleva välimerkki ei siirry kaavaan, joten lainauksen tai sulkeiden sisäinen ketju jaetaan relaation kohdalta peräkkäisiksi tekstin sisäisiksi kaavoiksi (`$a = b$ $= c$`, reflow); jo mainissa `aligned`-muotoisia monen yhtälön lohkoja ei saa yhdistää.
+
 FY2 tehty (PR #610): 399 riviä pois listalta (luvut, Sovella ja Esimerkkikoe kolmella kielellä); 53 jää (47 vanhaa inline-kaavaa, jotka CI löysi 360 px:llä, ja kahden tehtävätekstin opiskelijan laskun 6 riviä, koska tehtävätekstissä välimerkki jäisi display-kaavan jälkeen yksin).
 
 FY3 tehty (PR #628): 876 riviä pois listalta; 23 jää (fy3-10:n vihjeen liian leveä `\dfrac`, fy3-4:n sulkeissa oleva kaava, fy3-5:n ja fy3-12:n lainattu opiskelijan lasku, fy3-5:n kolme inquiry-kaavaa, joiden rivitys olisi vaatinut täyden tiedekatselmoinnin, sekä fy3-15:n kertausvalinnan palautteen kaava: `test_inquiry.py` vertaa palautteen alkua lähteeseen eikä tunnista näyttökaavaan siirtyvää välimerkkiä).
@@ -497,6 +499,7 @@ FY4 tehty: FY4-A1…A5 (PR #625, kohdan 18 FY4:n kanssa): fy4-11-L2-10, fy4-7-L2
 FY2 tehty: FY2-A1…A5 (PR #632, kohdan 18 FY2:n kanssa): fy2-8-L2-10 (A1), fy2-7-L2-10 (A2), fy2-8-L3-06 (A3), fy2-3-L2-09 (A4), fy2-8-L2-11 (A5). Electricity Maps korvattu OWID:lla ja Fingridillä (`docs/audits/2026-11-16-fy2-aineistot.md`).
 FY3 tehty: FY3-A1…A5 (PR #628, kohdan 5d FY3:n kanssa): fy3-9-L2-10, fy3-8-L2-10, fy3-11-L2-10, fy3-6-L2-10, fy3-7-L2-10.
 FY1 tehty: FY1-A1…A5 (PR #634, oma PR): fy1-7-L2-09, fy1-4-L2-09, fy1-3-L2-09, fy1-2-L2-08, fy1-7-L2-10. A2:n Ilmatieteen laitoksen avoin rajapinta (opendata.fmi.fi) ei ole ympäristön sallituissa: tehtävä ohjaa hakemaan oman aineiston, ja varalla on merkitty keksitty esimerkkitaulukko.
+FY7 tehty: FY7-A1…A5 (PR #633, kohdan 5d FY7:n kanssa): fy7-8-L2-10 (A1), fy7-9-L2-10 (A2), fy7-9-L2-11 (A3), fy7-7-L2-08 (A4), fy7-2-L2-10 (A5). Lähteet tarkistettu 16.11.; A5:n avaruussäädiagrammi piirretään JavaScriptillä eikä sen arvoja voinut lukea, joten tehtävässä on merkitty esimerkkitaulukko; A1:n aineisto ei kerro, miksi jännitteet ovat korkeita, joten a) kysyy vain sen, mitä sivulla on.
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 

@@ -920,7 +920,7 @@ Hilan valmistaja ilmoittaa yleensä, kuinka monta viivaa hilassa on millimetrin 
 ```latex
 d = \frac{1\,\text{mm}}{N}
 ```
-Esimerkiksi kun millimetrillä on $300$ viivaa, $d = 1\,\text{mm} : 300 = 1 \cdot 10^{-3}\,\text{m} : 300 = 3{,}33 \cdot 10^{-6}\,\text{m}$ eli $3{,}33\,\mu\text{m}$. Mitä tiheämpi hila on, sitä pienempi on $d$ ja sitä suuremmassa kulmassa saman kertaluvun maksimi on.
+Esimerkiksi kun millimetrillä on $300$ viivaa, $$\begin{aligned} d &= 1\,\text{mm} : 300 \\ &= 1 \cdot 10^{-3}\,\text{m} : 300 \\ &= 3{,}33 \cdot 10^{-6}\,\text{m} \end{aligned}$$ eli $3{,}33\,\mu\text{m}$. Mitä tiheämpi hila on, sitä pienempi on $d$ ja sitä suuremmassa kulmassa saman kertaluvun maksimi on.
 
 ### Kuinka monta maksimia syntyy
 Sinin arvo on enintään $1$, joten kertaluvun on täytettävä ehto $k\lambda < d$. Tasarajalla $k\lambda = d$ valo kulkisi hilan pinnan suuntaisesti eikä osuisi varjostimelle. Esimerkiksi kun hilassa on $600$ viivaa millimetrillä ja valon aallonpituus on $650\,\text{nm}$, $d : \lambda = 1{,}667\,\mu\text{m} : 0{,}650\,\mu\text{m} = 2{,}56$. Maksimeja syntyy kertaluvuilla $k = 0, \pm 1, \pm 2$ eli viisi kappaletta.

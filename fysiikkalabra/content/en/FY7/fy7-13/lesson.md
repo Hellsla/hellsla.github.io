@@ -922,7 +922,7 @@ The manufacturer of a grating usually states how many lines the grating has per 
 ```latex
 d = \frac{1\,\text{mm}}{N}
 ```
-For example, when there are $300$ lines per millimetre, $d = 1\,\text{mm} : 300 = 1 \cdot 10^{-3}\,\text{m} : 300 = 3.33 \cdot 10^{-6}\,\text{m}$, that is $3.33\,\mu\text{m}$. The denser the grating, the smaller $d$ is and the larger the angle at which the maximum of the same order lies.
+For example, when there are $300$ lines per millimetre, $$\begin{aligned} d &= 1\,\text{mm} : 300 \\ &= 1 \cdot 10^{-3}\,\text{m} : 300 \\ &= 3.33 \cdot 10^{-6}\,\text{m} \end{aligned}$$, that is $3.33\,\mu\text{m}$. The denser the grating, the smaller $d$ is and the larger the angle at which the maximum of the same order lies.
 
 ### How many maxima form
 The value of a sine is at most $1$, so the order must satisfy the condition $k\lambda < d$. At the limit $k\lambda = d$ the light would travel along the surface of the grating and would not hit the screen. For example, when the grating has $600$ lines per millimetre and the wavelength of the light is $650\,\text{nm}$, $d : \lambda = 1.667\,\mu\text{m} : 0.650\,\mu\text{m} = 2.56$. Maxima form in the orders $k = 0, \pm 1, \pm 2$, that is five of them.

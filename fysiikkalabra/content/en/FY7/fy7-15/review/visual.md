@@ -1,12 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: d08bd86faa0d8205
+CONTENT-HASH: e83e577c133aa895
 
 ## Blocking
 - none
 
 ## Polish
-- [Major, outside this change, queue item 5d] formulas listed for en/fy7-15 in docs/clipped-formulas.tsv (9 rows) are known clipped at 360 px; the diff touches none of them.
-- [Minor] lesson.md worked example: "Extension example." runs on in the same paragraph as the problem text; set it as a bold lead-in or its own line. The example title reads "Polarizers" (example-names) while the text says "polarisers": use one spelling.
+- [Minor] inquiry.json:411 — in the quoted chain the pieces after the first begin with `=` without its left relation space (`· 0.25= 50 W/m²` at 1280 px); readable, `${} = …$` would even it out.
 
 ## Checked
-- batch delta review: fy7-15-theory-1280-3 (Extension bullet, degree signs, summary) and fy7-15-example-390-1 (Extension example, stages, $35^\circ$ upright); the Extension section label reads clearly; graph alt text added in figures.json is a figure approved by the teacher, not re-judged.
+- batch delta review: queue 5d reflow, round 2. Page rebuilt (build.py fy7-15) and every changed formula of inquiry.json captured from preview/en/fy7-15.html at 360, 390 and 1280 px with every box, hint, solution and choice feedback forced open; the 390 and 1280 px sheets were read at full size. The quoted Malus chain is inline, three adjacent formulas that wrap at the relations at 360 and 390 px, quotation marks on the text lines; gradient and I2 blocks are two aligned rows. Measured at all three widths: no formula wider than its box, no page overflow, no KaTeX error, no raw LaTeX, no lone punctuation line (the closing full stop or comma is set inside the block). Source compared with main: the same tokens in the same order; every new row starts with a relation, a sign or between whole quantities. Hash identical at the end. Figures were not re-judged.

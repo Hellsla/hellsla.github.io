@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 54842d33d9ea0258
+CONTENT-HASH: 98fad472744e5c73
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] inquiry.json tarkistus-2 hint and solution — e = vBl is broken by hand into e = ... / · 0,50 m / = 0,50 V; reads correctly with the operator leading the row, but a hand-split chain is against NOTES §1.
-- [Minor] docs/clipped-formulas.tsv — fy7-5 keeps formulas that were already clipped before this change (outside this change, work queue 5d; Major outside this change, not blocking): six formulas (e = vBl chain with the other data, 200 · 0,30 T …) remain in the list.
+
 
 ## Checked
-- Delta: only inquiry.json re-breaks. Rendered the changed items myself from the built page (preview/fy7-5.html) at 390 px with hints and solutions open; the Tarkista "liikkuva tanko" hint 3 and solution Sijoitus: rows aligned, operator leads, readable. 
-- Opened the lesson's existing 390 px stage captures (herata, sovella, tarkista) and contact sheet; the stages around the changes keep their layout, no horizontal overflow.
-
-## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+- batch delta review, round 2: fresh preview/fy7-5.html at this hash, every box, feedback and model answer open; own captures of every aligned block and split inline chain at 360 and 1280 px (/tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/fi-r2-visual/shots/fy7-5-lesson-360-s*.png, fy7-5-lesson-1280-s1.png), formula overflow measured at 352, 360, 390 and 1280 px; `virhe` is the conversion row and the |e| chain again (two equations, aligned); the model answer of `johtopaatos` now wraps before "= −20 mWb" at 360 px and nothing is cut; the feedback's |e| block, the `siirto` hint and `tarkistus-2` rows start with · : or = only; nothing clipped. Hash the same at the start and the end.

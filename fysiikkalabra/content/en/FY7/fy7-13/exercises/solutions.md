@@ -16,7 +16,7 @@
 **Conversions:** $650\,\text{nm} = 650 \cdot 10^{-9}\,\text{m}$ and $2.00\,\mu\text{m} = 2.00 \cdot 10^{-6}\,\text{m}$.
 **Substitution:** $\theta = \sin^{-1}\dfrac{1 \cdot 650 \cdot 10^{-9}\,\text{m}}{2.00 \cdot 10^{-6}\,\text{m}} = \sin^{-1} 0.325 = 18.97^\circ$
 **Answer:** $19.0^\circ$, three significant figures like the grating spacing $2.00\,\mu\text{m}$.
-**Reasonableness:** The wavelength is about a third of the grating spacing, so $\sin\theta$ is about $0.33$ and the angle about $19^\circ$, clearly less than $90^\circ$. Check: $2.00\,\mu\text{m} \cdot \sin 18.97^\circ = 0.650\,\mu\text{m}$.
+**Reasonableness:** The wavelength is about a third of the grating spacing, so $\sin\theta$ is about $0.33$ and the angle about $19^\circ$, clearly less than $90^\circ$. Check: $$\begin{aligned} &2.00\,\mu\text{m} \cdot \sin 18.97^\circ \\ &= 0.650\,\mu\text{m} \end{aligned}$$.
 
 ## fy7-13-L1-03
 **Given:** grating spacing $d = 2.50\,\mu\text{m}$, order $k = 2$, angle of the maximum $\theta = 30.0^\circ$
@@ -36,7 +36,7 @@
 **Conversions:** $x = 30.0\,\text{cm} = 30.0 \cdot 0.01\,\text{m} = 0.300\,\text{m}$.
 **Substitution:** $\theta = \tan^{-1}\dfrac{0.300\,\text{m}}{1.20\,\text{m}} = \tan^{-1} 0.250 = 14.04^\circ$
 **Answer:** $14.0^\circ$, three significant figures like the distances $1.20\,\text{m}$ and $30.0\,\text{cm}$.
-**Reasonableness:** The maximum is a quarter of the distance of the screen to the side, so the angle must be clearly less than $45^\circ$, at which $x$ would equal $L$. Check: $1.20\,\text{m} \cdot \tan 14.04^\circ = 0.300\,\text{m}$.
+**Reasonableness:** The maximum is a quarter of the distance of the screen to the side, so the angle must be clearly less than $45^\circ$, at which $x$ would equal $L$. Check: $$\begin{aligned} &1.20\,\text{m} \cdot \tan 14.04^\circ \\ &= 0.300\,\text{m} \end{aligned}$$.
 
 ## fy7-13-L1-05
 **Given:** wavelength $\lambda = 633\,\text{nm}$, order $k = 1$, angle of the maximum $\theta = 22.0^\circ$
@@ -53,7 +53,7 @@
 **Find:** the number of dots of light that form on the screen
 **Principle:** Each maximum is one dot of light. According to the grating equation $\sin\theta = k\lambda : d$, and since the sine is at most $1$, a maximum forms only for orders for which $k\lambda < d$. On each side of the central maximum there are equally many maxima.
 **Formula:** $d = \dfrac{1\,\text{mm}}{N}$ and $k < \dfrac{d}{\lambda}$; the number of dots is $2k_\text{max} + 1$, where $k_\text{max}$ is the largest whole number that satisfies the condition.
-**Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 600 = 1.667 \cdot 10^{-6}\,\text{m}$ and $450\,\text{nm} = 450 \cdot 10^{-9}\,\text{m}$.
+**Conversions:** $$\begin{aligned} d &= 1 \cdot 10^{-3}\,\text{m} : 600 \\ &= 1.667 \cdot 10^{-6}\,\text{m} \end{aligned}$$ and $450\,\text{nm} = 450 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $\dfrac{d}{\lambda} = \dfrac{1.667 \cdot 10^{-6}\,\text{m}}{450 \cdot 10^{-9}\,\text{m}} = 3.70$, so $k_\text{max} = 3$ and the number of dots is $2 \cdot 3 + 1 = 7$.
 **Answer:** $7$ dots of light: the central maximum and the orders $\pm 1$, $\pm 2$ and $\pm 3$. The answer is a whole number, so no rounding is needed.
 **Reasonableness:** In the third-order maximum $\sin\theta = 3 \cdot 0.450 : 1.667 = 0.81$, that is $\theta = 54^\circ$, which is possible. In the fourth $\sin\theta = 1.08$, which is impossible, so a fourth-order maximum does not form.
@@ -76,14 +76,14 @@
 **Conversions:** $x = 66.8\,\text{cm} : 2 = 33.4\,\text{cm} = 33.4 \cdot 0.01\,\text{m} = 0.334\,\text{m}$, $532\,\text{nm} = 532 \cdot 10^{-9}\,\text{m}$ and $1\,\text{mm} = 1 \cdot 10^{-3}\,\text{m}$.
 **Substitution:** $\theta = \tan^{-1}\dfrac{0.334\,\text{m}}{1.00\,\text{m}} = 18.47^\circ$, $d = \dfrac{532 \cdot 10^{-9}\,\text{m}}{\sin 18.47^\circ} = \dfrac{532 \cdot 10^{-9}\,\text{m}}{0.3168} = 1.679 \cdot 10^{-6}\,\text{m}$ and $N = \dfrac{1 \cdot 10^{-3}\,\text{m}}{1.679 \cdot 10^{-6}\,\text{m}} = 595.5$
 **Answer:** about $596$ lines per millimetre, three significant figures like the distances. The grating is probably the manufacturer's $600$-line-per-millimetre grating, and the difference is due to measurement uncertainty.
-**Reasonableness:** With $600$ lines per millimetre the first maximum of green light is at an angle of $18.6^\circ$, which is close to the obtained $18.5^\circ$. Check: $1.679\,\mu\text{m} \cdot 0.3168 = 0.532\,\mu\text{m}$.
+**Reasonableness:** With $600$ lines per millimetre the first maximum of green light is at an angle of $18.6^\circ$, which is close to the obtained $18.5^\circ$. Check: $$\begin{aligned} &1.679\,\mu\text{m} \cdot 0.3168 \\ &= 0.532\,\mu\text{m} \end{aligned}$$.
 
 ## fy7-13-L2-04
 **Given:** wavelengths $\lambda_\text{v} = 400\,\text{nm}$ (violet edge) and $\lambda_\text{r} = 700\,\text{nm}$ (red edge), line density $N = 300$ lines per millimetre, distance of the screen $L = 1.00\,\text{m}$, order $k = 1$
 **Find:** the width $\Delta x$ of the first-order spectrum on the screen in centimetres
 **Principle:** Each wavelength is deviated to its own angle according to the grating equation, so the spectrum begins at the maximum of violet light and ends at the maximum of red light. Each position comes from a right-angled triangle, and the width is their difference.
 **Formula:** $d = \dfrac{1\,\text{mm}}{N}$, $\theta = \sin^{-1}\dfrac{k\lambda}{d}$, $x = L\tan\theta$ and $\Delta x = x_\text{r} - x_\text{v}$
-**Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 300 = 3.333 \cdot 10^{-6}\,\text{m}$, wavelengths $400 \cdot 10^{-9}\,\text{m}$ and $700 \cdot 10^{-9}\,\text{m}$, finally $1\,\text{m} = 100\,\text{cm}$.
+**Conversions:** $$\begin{aligned} d &= 1 \cdot 10^{-3}\,\text{m} : 300 \\ &= 3.333 \cdot 10^{-6}\,\text{m} \end{aligned}$$, wavelengths $400 \cdot 10^{-9}\,\text{m}$ and $700 \cdot 10^{-9}\,\text{m}$, finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $\theta_\text{v} = \sin^{-1}\dfrac{400 \cdot 10^{-9}\,\text{m}}{3.333 \cdot 10^{-6}\,\text{m}} = \sin^{-1} 0.120 = 6.892^\circ$, $\theta_\text{r} = \sin^{-1} 0.210 = 12.12^\circ$, $x_\text{v} = 1.00\,\text{m} \cdot \tan 6.892^\circ = 0.1209\,\text{m}$, $x_\text{r} = 1.00\,\text{m} \cdot \tan 12.12^\circ = 0.2148\,\text{m}$ and $\Delta x = 0.2148\,\text{m} - 0.1209\,\text{m} = 0.0939\,\text{m} = 9.39\,\text{cm}$
 **Answer:** $9.39\,\text{cm}$, three significant figures like the distance $1.00\,\text{m}$ and the wavelengths.
 **Reasonableness:** At small angles $x$ is approximately proportional to the wavelength, so the width must be a little over $(700 - 400) : 700$, that is $43\,\%$, of the distance $21.5\,\text{cm}$ of the red maximum: $9.39\,\text{cm}$ is $44\,\%$, as it should be.
@@ -159,8 +159,8 @@
 **Find:** a) the error in the student's reasoning, b) the correct wavelength, c) the deviation of the student's result from the correct one in percent
 **Principle:** From the triangle of the screen we get $\tan\theta = x : L$, not $\sin\theta = x : L$. The sine and the tangent are almost equal only for small angles, and here the angle is almost $19^\circ$. The correct wavelength is calculated from the sine of the angle, and the error is the difference between the student's result and the correct one relative to the correct result.
 **Formula:** $d = \dfrac{1\,\text{mm}}{N}$, $\tan\theta = \dfrac{x}{L}$, $\lambda = d\sin\theta$ and error $\dfrac{\lambda_\text{st} - \lambda}{\lambda} \cdot 100\,\%$
-**Conversions:** $x = 33.7\,\text{cm} = 0.337\,\text{m}$ and $d = 1 \cdot 10^{-3}\,\text{m} : 600 = 1.667 \cdot 10^{-6}\,\text{m}$.
-**Substitution:** $\theta = \tan^{-1}\dfrac{0.337\,\text{m}}{1.00\,\text{m}} = 18.62^\circ$, $\lambda = 1.667 \cdot 10^{-6}\,\text{m} \cdot \sin 18.62^\circ = 1.667 \cdot 10^{-6}\,\text{m} \cdot 0.3193 = 5.323 \cdot 10^{-7}\,\text{m} = 532.3\,\text{nm}$ and error $= \dfrac{561.7\,\text{nm} - 532.3\,\text{nm}}{532.3\,\text{nm}} \cdot 100\,\% = 5.53\,\%$
+**Conversions:** $x = 33.7\,\text{cm} = 0.337\,\text{m}$ and $$\begin{aligned} d &= 1 \cdot 10^{-3}\,\text{m} : 600 \\ &= 1.667 \cdot 10^{-6}\,\text{m} \end{aligned}$$.
+**Substitution:** $\theta = \tan^{-1}\dfrac{0.337\,\text{m}}{1.00\,\text{m}} = 18.62^\circ$, $\lambda = 1.667 \cdot 10^{-6}\,\text{m} \cdot \sin 18.62^\circ = 1.667 \cdot 10^{-6}\,\text{m} \cdot 0.3193 = 5.323 \cdot 10^{-7}\,\text{m} = 532.3\,\text{nm}$ and error $$\begin{aligned} &= \dfrac{561.7\,\text{nm} - 532.3\,\text{nm}}{532.3\,\text{nm}} \cdot 100\,\% \\ &= 5.53\,\% \end{aligned}$$
 **Answer:** $5.5\,\%$, two significant figures. The student's error: the student used $\sin\theta \approx x : L$, although the triangle of the screen gives $\tan\theta = x : L$, and the angle is too large for the small-angle approximation. The correct wavelength is $532\,\text{nm}$, and the student's $562\,\text{nm}$ is too large.
 **Reasonableness:** At the angle $18.6^\circ$ the tangent is larger than the sine: $\tan\theta : \sin\theta = 0.337 : 0.3193 = 1.055$, so the student's result is $5.5\,\%$ too large. The correct result $532\,\text{nm}$ matches the stated wavelength of a green laser. The error grows with the angle.
 
@@ -172,7 +172,7 @@
 ## fy7-13-L2-08
 **Find:** how the distance $x$ of the first-order maximum from the central maximum changes when the grating is replaced with a denser one and the screen is moved closer.
 **Principle:** The direction of the maximum is determined by the grating equation $d\sin\theta = k\lambda$, and the angle does not depend on the position of the screen. On the screen the distance of the maximum from the central maximum comes from a right-angled triangle, $x = L\tan\theta$. The change therefore has two opposite effects: the denser grating increases the angle, and the closer screen decreases the distance at the same angle. We calculate $x$ for both situations.
-**Model answer:** In the initial situation the grating constant is $d_1 = 1\,\text{mm} : 100 = 1.00 \cdot 10^{-5}\,\text{m}$.
+**Model answer:** In the initial situation the grating constant is $$\begin{aligned} d_1 &= 1\,\text{mm} : 100 \\ &= 1.00 \cdot 10^{-5}\,\text{m} \end{aligned}$$.
 
 $$\begin{aligned}
 &\sin\theta_1 = \frac{650 \cdot 10^{-9}\,\text{m}}{1.00 \cdot 10^{-5}\,\text{m}} = 0.0650 \\
@@ -181,7 +181,7 @@ $$\begin{aligned}
 &x_1 = 0.130\,\text{m}
 \end{aligned}$$
 
-The result agrees with the given distance $13.0\,\text{cm}$. The grating constant of the new grating is $d_2 = 1\,\text{mm} : 300 = 3.333 \cdot 10^{-6}\,\text{m}$.
+The result agrees with the given distance $13.0\,\text{cm}$. The grating constant of the new grating is $$\begin{aligned} d_2 &= 1\,\text{mm} : 300 \\ &= 3.333 \cdot 10^{-6}\,\text{m} \end{aligned}$$.
 
 $$\begin{aligned}
 &\sin\theta_2 = \frac{650 \cdot 10^{-9}\,\text{m}}{3.333 \cdot 10^{-6}\,\text{m}} = 0.195 \\
@@ -190,7 +190,7 @@ $$\begin{aligned}
 &x_2 = 0.199\,\text{m}
 \end{aligned}$$
 
-The ratio is $x_2 : x_1 = 19.9\,\text{cm} : 13.0\,\text{cm} \approx 1.5$. The distance therefore grows to about $1.5$ times the original, from $13.0\,\text{cm}$ to about $19.9\,\text{cm}$.
+The ratio is $$\begin{aligned} x_2 : x_1 &= 19.9\,\text{cm} : 13.0\,\text{cm} \\ &\approx 1.5 \end{aligned}$$. The distance therefore grows to about $1.5$ times the original, from $13.0\,\text{cm}$ to about $19.9\,\text{cm}$.
 
 For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. The grating constant decreases to a third, which makes the distance about three times as large, and the distance of the screen halves, which halves the distance. Together the factor is $3 : 2 = 1.5$. The exact factor $1.53$ is slightly larger, because at the new angle $11.2^\circ$ the tangent is already clearly larger than the sine. If you took only the grating into account, you would get three times the distance, and from the move of the screen alone a half of it. The denser grating does not bend the light less but more, because when the line density grows, the grating constant decreases.
 
@@ -220,10 +220,10 @@ For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. T
 **Asked:** the angle $\theta$ of the first-order maximum in degrees
 **Principle:** The light hits the grating perpendicularly, so the direction of a maximum follows the grating equation. The grating spacing is first obtained from the line density, and in the first order the path difference of neighbouring slits is one wavelength.
 **Formula:** $d = \dfrac{1\,\text{mm}}{N}$ and $d\sin\theta = k\lambda$, so $\theta = \sin^{-1}\dfrac{k\lambda}{d}$
-**Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 600 = 1.667 \cdot 10^{-6}\,\text{m}$ and $587.56\,\text{nm} = 587.56 \cdot 10^{-9}\,\text{m}$.
+**Conversions:** $$\begin{aligned} d &= 1 \cdot 10^{-3}\,\text{m} : 600 \\ &= 1.667 \cdot 10^{-6}\,\text{m} \end{aligned}$$ and $587.56\,\text{nm} = 587.56 \cdot 10^{-9}\,\text{m}$.
 **Substitution:** $\theta = \sin^{-1}\dfrac{1 \cdot 587.56 \cdot 10^{-9}\,\text{m}}{1.667 \cdot 10^{-6}\,\text{m}} = \sin^{-1} 0.3525 = 20.64^\circ$
 **Answer:** $20.6^\circ$, three significant figures like the line density.
-**Reasonableness:** The sine is below $1$, so the maximum exists, and the angle is moderate. Check: $1.667\,\mu\text{m} \cdot \sin 20.64^\circ = 0.588\,\mu\text{m}$, which is the wavelength of the line.
+**Reasonableness:** The sine is below $1$, so the maximum exists, and the angle is moderate. Check: $$\begin{aligned} &1.667\,\mu\text{m} \cdot \sin 20.64^\circ \\ &= 0.588\,\mu\text{m} \end{aligned}$$, which is the wavelength of the line.
 
 ## fy7-13-L2-09
 **Given:** line density $N = 400$ lines per millimetre, order $k = 2$; from the figure the distance from the grating to the screen $L = 1.20\,\text{m}$ and the position of the second-order maximum $x_2 = 70.0\,\text{cm}$
@@ -234,7 +234,7 @@ For small angles $\tan\theta \approx \sin\theta$, so $x \approx L\lambda : d$. T
 **Conversions:** $d = 1 \cdot 10^{-3}\,\text{m} : 400 = 2.50 \cdot 10^{-6}\,\text{m}$ and $x_2 = 70.0\,\text{cm} = 0.700\,\text{m}$.
 **Substitution:** $\theta_2 = \tan^{-1}\dfrac{0.700\,\text{m}}{1.20\,\text{m}} = 30.26^\circ$ and $\lambda = \dfrac{2.50 \cdot 10^{-6}\,\text{m} \cdot \sin 30.26^\circ}{2} = \dfrac{2.50 \cdot 10^{-6}\,\text{m} \cdot 0.5039}{2} = 6.30 \cdot 10^{-7}\,\text{m} = 630\,\text{nm}$
 **Answer:** $630\,\text{nm}$, three significant figures like the distance $L$ and the line density.
-**Reasonableness:** A wavelength of $630\,\text{nm}$ is red light, which fits a red laser. The first-order maximum would be at $x_1 = L\tan\theta_1 = 1.20\,\text{m} \cdot \tan\bigl(\sin^{-1}\dfrac{630\,\text{nm}}{2.50\,\mu\text{m}}\bigr) = 31.2\,\text{cm}$, which in the figure is closer to the central maximum than the second order.
+**Reasonableness:** A wavelength of $630\,\text{nm}$ is red light, which fits a red laser. The first-order maximum would be at $$\begin{aligned} x_1 &= L\tan\theta_1 \\ &= 1.20\,\text{m} \\ &\cdot \tan\bigl(\sin^{-1}\dfrac{630\,\text{nm}}{2.50\,\mu\text{m}}\bigr) \\ &= 31.2\,\text{cm} \end{aligned}$$, which in the figure is closer to the central maximum than the second order.
 
 ## fy7-13-L2-10
 **Given:** distance from the grating to the screen $L = 1.00\,\text{m}$, first order $k = 1$, wavelength of the red edge $\lambda = 700\,\text{nm}$; from the figure the position of the red edge $x = 17.8\,\text{cm}$

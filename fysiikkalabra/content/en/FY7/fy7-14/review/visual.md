@@ -1,14 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: c31b0e2dcf823b64
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only; round 2 after the fixes to the round-1 findings)
+CONTENT-HASH: 4086dae7d22c2eca
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] lesson.md — the "Wave 2, reflected from the lower surface" paragraph is about 141 words; optionally break before "The ray reflected from the lower surface thus travels".
+- none
 
 ## Checked
-- Source diff since origin/main plus the round-2 diff (scratchpad round2.diff); no screenshots in light mode (parent runs the layout checks).
-- Exit ticket answer now "heijastaa hyvin vähän valoa ja näyttää tummalta tai lähes mustalta" / "reflects very little light and looks dark or almost black", consistent with the theory and summary; optical path difference wording unchanged.
-- Hash identical at start and end of this round.
+- batch delta review: queue 5d reflow. The standard set has no phone captures of opened states, so every re-broken formula (1 rendered blocks) was captured from the built page (preview/en/fy7-14.html, the build of the shots stamp) at 390 px and 1280 px with every box, hint, solution and choice feedback forced open, and each capture was read; box overflow measured at 360, 375, 390, 412 and 1280 px: none clipped or scrolled. Row starts checked against the 5d rule; wide-screen joining (join_wide) seen at 1280 px. Figures and the formula-name / teacher-figure categories were not re-judged.

@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: cbc1dcf4add6c401
-Mode: light (teacher 2026-11-07, "kevyt katselmointi": the FY7 editorial-correction diff since origin/main only)
+CONTENT-HASH: 95d0a676d9ff05f9
 
 ## Blocking
-- none
 
 ## Polish
-- none
+- solutions.md:132 (Kaava row of the deviation, not changed in this round) — the factor $\cdot 100\,\%$ still starts its own row after the fraction; it reads correctly, but one row would match the substitution row below it.
 
 ## Checked
-- L2-07 solution: incandescent lamp named a resistive load before $P = UI$ — correct and matches the lesson's new condition. $I = 60\,\text{W}/230\,\text{V} = 0{,}2609\,\text{A} \to 0{,}26\,\text{A}$ matches answers.py; student's $0{,}37\,\text{A}$ check ($230\cdot0{,}37 = 85\,\text{W}$) right. fi, en, fi-easy agree. Hash identical at start and end.
+- Delta round 2: compared with the version passed in round 1 (commit 1ec494e0df) with the row markup (aligned, row breaks, alignment marks, formula delimiters) stripped: exercises.json and solutions.md are character-identical apart from that markup; no number, sign, unit or word changed. answers.py unchanged.
+- L2-07 task text: the quoted student calculation now reads $I = P : U$ $= 60\,\text{W} : 163\,\text{V}$ $= 0{,}37\,\text{A}$ as three adjacent formulas inside the quotation; same chain, same planted error, $60 : 163 = 0{,}368$.
+- solutions.md:113 (share of nominal power): rows are now "$= \dfrac{2{,}254 \cdot 10^{9}\,\text{W}}{8358 \cdot 10^{6}\,\text{W}} \cdot 100\,\%$" and "$= 26{,}97\,\%$"; the factor $100\,\%$ stays with its fraction. Recomputed: $19{,}8 \cdot 10^{12}\,\text{Wh} : 8784\,\text{h} = 2{,}254 \cdot 10^{9}\,\text{W}$, share $26{,}97\,\%$.
+- solutions.md:134 (deviation): rows "$= \dfrac{|8{,}2\,\text{V} - 8{,}0\,\text{V}|}{8{,}2\,\text{V}} \cdot 100\,\%$" and "$= 2{,}44\,\%$"; recomputed $2{,}44\,\%$. Each row starts with its relation and the chain reads correctly.
+- Hash identical at start and end.

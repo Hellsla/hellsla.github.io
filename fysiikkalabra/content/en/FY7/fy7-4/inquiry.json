@@ -210,7 +210,7 @@
         "koe-2"
       ],
       "prompt": "On the basis of your tables, write how the change in the reading depends on the current and its direction, and how it depends on the angle of the wire. From the numbers of experiment 1, calculate the force that the field exerts on the wire at $6.0\\,\\text{A}$, and determine the magnetic flux density of magnet A when $5.0\\,\\text{cm}$ of wire is in the field.",
-      "model": "Without a current the reading is $245.30\\,\\text{g}$. At $3.0\\,\\text{A}$ the change is $1.22\\,\\text{g}$ and at $6.0\\,\\text{A}$ $2.45\\,\\text{g}$, so the change is proportional to the current; with negative currents the reading falls by the same amount. At $6.0\\,\\text{A}$ the force is $F = \\Delta m \\cdot g = 0.00245\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 = 0.0240\\,\\text{N}$, so $B = F : (I l) = 0.0240\\,\\text{N} : (6.0\\,\\text{A} \\cdot 0.050\\,\\text{m}) = 0.080\\,\\text{T}$. In experiment 2 the change fell to half, $1.22\\,\\text{g}$, at $30^\\circ$ and to zero at $0^\\circ$, so the force is proportional to the sine of the angle: $F = I l B \\sin\\alpha$. The values are calculated by the model; in a real current balance the readings would vary slightly.",
+      "model": "Without a current the reading is $245.30\\,\\text{g}$. At $3.0\\,\\text{A}$ the change is $1.22\\,\\text{g}$ and at $6.0\\,\\text{A}$ $2.45\\,\\text{g}$, so the change is proportional to the current; with negative currents the reading falls by the same amount. At $6.0\\,\\text{A}$ the force is $$\\begin{aligned} F &= \\Delta m \\cdot g \\\\ &= 0.00245\\,\\text{kg} \\cdot 9.81\\,\\text{m/s}^2 \\\\ &= 0.0240\\,\\text{N} \\end{aligned}$$, so $$\\begin{aligned} B &= F : (I l) \\\\ &= 0.0240\\,\\text{N} : (6.0\\,\\text{A} \\cdot 0.050\\,\\text{m}) \\\\ &= 0.080\\,\\text{T} \\end{aligned}$$. In experiment 2 the change fell to half, $1.22\\,\\text{g}$, at $30^\\circ$ and to zero at $0^\\circ$, so the force is proportional to the sine of the angle: $F = I l B \\sin\\alpha$. The values are calculated by the model; in a real current balance the readings would vary slightly.",
       "criteria": [
         "I stated that the change in the reading is proportional to the current and changes sign when the direction of the current reverses.",
         "I calculated the force from the change in the reading with the equation $F = \\Delta m \\cdot g$ and converted grams to kilograms.",
@@ -257,11 +257,11 @@
         {
           "text": "The formula must have $\\sin\\alpha$, because the force is produced by the component of the field perpendicular to the wire. The correct result is $0.15\\,\\text{N}$.",
           "correct": true,
-          "feedback": "Correct. The angle is between the wire and the field, and the component of the field perpendicular to the wire is $B \\sin\\alpha$. Therefore $F = 5.0\\,\\text{A} \\cdot 0.20\\,\\text{m} \\cdot 0.30\\,\\text{T} \\cdot 0.5 = 0.15\\,\\text{N}$. Check with a limiting case: for a wire parallel to the field ($\\alpha = 0^\\circ$) the force must be zero, but the cosine would give the greatest force."
+          "feedback": "Correct. The angle is between the wire and the field, and the component of the field perpendicular to the wire is $B \\sin\\alpha$. Therefore $$\\begin{aligned} F &= 5.0\\,\\text{A} \\cdot 0.20\\,\\text{m} \\cdot 0.30\\,\\text{T} \\cdot 0.5 \\\\ &= 0.15\\,\\text{N} \\end{aligned}$$. Check with a limiting case: for a wire parallel to the field ($\\alpha = 0^\\circ$) the force must be zero, but the cosine would give the greatest force."
         },
         {
           "text": "The length of the wire should have been substituted in centimetres, $20\\,\\text{cm}$.",
-          "feedback": "The length has been correctly converted to metres: $20\\,\\text{cm} = 20 \\cdot 0.01\\,\\text{m} = 0.20\\,\\text{m}$. Since $\\text{T} = \\tfrac{\\text{N}}{\\text{A}\\cdot\\text{m}}$, the result is in newtons only if the length is in metres. The error is in the function of the angle."
+          "feedback": "The length has been correctly converted to metres: $$\\begin{aligned} 20\\,\\text{cm} &= 20 \\cdot 0.01\\,\\text{m} \\\\ &= 0.20\\,\\text{m} \\end{aligned}$$. Since $\\text{T} = \\tfrac{\\text{N}}{\\text{A}\\cdot\\text{m}}$, the result is in newtons only if the length is in metres. The error is in the function of the angle."
         },
         {
           "text": "The angle should not be taken into account at all, because the angle affects only the direction of the force: $F = I l B = 0.30\\,\\text{N}$.",
@@ -340,7 +340,7 @@
       "hints": [
         "Which component of the field produces the force: the one along the wire or the one perpendicular to it?",
         "$F = I l B \\sin\\alpha$, where $\\alpha$ is the angle between the wire and the field.",
-        "$F = 4.0\\,\\text{A} \\cdot 0.50\\,\\text{m} \\cdot 0.20\\,\\text{T} \\cdot \\sin 30^\\circ$."
+        "$$\\begin{aligned} &F \\\\ &= 4.0\\,\\text{A} \\cdot 0.50\\,\\text{m} \\cdot 0.20\\,\\text{T} \\cdot \\sin 30^\\circ \\end{aligned}$$."
       ],
       "mistakes": [
         {
@@ -352,7 +352,7 @@
           "feedback": "This is the force on a perpendicular wire. At $30^\\circ$ the force is $\\sin 30^\\circ = 0.5$ times this."
         }
       ],
-      "solution": "**Given:** $B = 0.20\\,\\text{T}$, $l = 0.50\\,\\text{m}$, $I = 4.0\\,\\text{A}$, angle between the wire and the field $\\alpha = 30^\\circ$\n\n**Find:** force $F$ on the wire in newtons\n\n**Principle:** The field is uniform and the wire straight, so the force is $F = I l B \\sin\\alpha$. The wire is oblique, so only the component of the field perpendicular to the wire, $B \\sin\\alpha$, produces a force.\n\n**Formula:** $F = I l B \\sin\\alpha$\n\n**Conversions:** None needed: the quantities are in SI units, and $\\text{A} \\cdot \\text{m} \\cdot \\text{T} = \\text{N}$.\n\n**Substitution:** $F = 4.0\\,\\text{A} \\cdot 0.50\\,\\text{m} \\cdot 0.20\\,\\text{T} \\cdot \\sin 30^\\circ = 0.40\\,\\text{N} \\cdot 0.5 = 0.20\\,\\text{N}$\n\n**Answer:** $0.20\\,\\text{N}$, two significant figures like the data.\n\n**Reasonableness:** For a perpendicular wire the force would be $0.40\\,\\text{N}$. For an oblique wire it must be smaller, and at $30^\\circ$ it is exactly half, because $\\sin 30^\\circ = 0.5$."
+      "solution": "**Given:** $B = 0.20\\,\\text{T}$, $l = 0.50\\,\\text{m}$, $I = 4.0\\,\\text{A}$, angle between the wire and the field $\\alpha = 30^\\circ$\n\n**Find:** force $F$ on the wire in newtons\n\n**Principle:** The field is uniform and the wire straight, so the force is $F = I l B \\sin\\alpha$. The wire is oblique, so only the component of the field perpendicular to the wire, $B \\sin\\alpha$, produces a force.\n\n**Formula:** $F = I l B \\sin\\alpha$\n\n**Conversions:** None needed: the quantities are in SI units, and $\\text{A} \\cdot \\text{m} \\cdot \\text{T} = \\text{N}$.\n\n**Substitution:** $$\\begin{aligned} &F \\\\ &= 4.0\\,\\text{A} \\cdot 0.50\\,\\text{m} \\cdot 0.20\\,\\text{T} \\cdot \\sin 30^\\circ \\\\ &= 0.40\\,\\text{N} \\cdot 0.5 \\\\ &= 0.20\\,\\text{N} \\end{aligned}$$\n\n**Answer:** $0.20\\,\\text{N}$, two significant figures like the data.\n\n**Reasonableness:** For a perpendicular wire the force would be $0.40\\,\\text{N}$. For an oblique wire it must be smaller, and at $30^\\circ$ it is exactly half, because $\\sin 30^\\circ = 0.5$."
     },
     {
       "id": "tarkistus-3",

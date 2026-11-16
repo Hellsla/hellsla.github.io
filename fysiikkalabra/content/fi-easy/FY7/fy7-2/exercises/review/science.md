@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3c90a5200b5f471b
+CONTENT-HASH: 25293e0855e68dc1
 
 ## Blocking
 
 ## Polish
-- exercises.json:fy7-2-L2-04 — the task asks for the weight but does not give g; the solution uses $9{,}81\,\text{m/s}^2$ (house convention, so not blocking) — add "Käytä $g = 9{,}81\,\text{m/s}^2$." if the S2 reader should not have to assume it.
-- exercises.json:fy7-2-L2-06 — with $d_\text{A} = 19{,}2\,\text{cm}$ for $24{,}0\,\text{u}$, the example data give 25,1 u and 25,9 u, not 25 and 26 (0,5 % off each way). The solution says this is "lähellä kokonaislukuja", which is fair, but $d_\text{B} = 20{,}0$ and $d_\text{C} = 20{,}8\,\text{cm}$ would give clean values.
-- solutions.md:fy7-2-L3-05 — $n = 31{,}9 \approx 32$ crossings is rounded up, so the energy after 32 crossings ($3{,}08 \cdot 10^{-13}\,\text{J}$) slightly exceeds $E_\text{k}$. That is fine for the model, but one clause ("viimeinen ylitys vie protonin ulosvetosäteelle") would say why it rounds up. 16 T = 1,050 µs and 15,96 T = 1,047 µs both fall inside the 3 % tolerance.
+- solutions.md:253 (L2-10 Kohta c) — "Samat hiukkaset synnyttävät revontulia" is a simplification (C), as in the Finnish set: the field on the ground varies because the currents of the upper atmosphere change when particles come down, not literally because of the same particles — "Samaan aikaan yläilmakehään syöksyvät hiukkaset synnyttävät revontulia" would be exact (fi too).
 
 ## Checked
-- One script recomputed all 20 answers from the task text with my own formulas. Every one matches answers.py and exercises.json, and each tolerance covers rounding to the data's figures (L2-09: 3,4 against 3,35 is 1,5 % off, inside 4 %).
-- L3-05 correction: with $r = 0{,}200\,\text{m}$ and $U = 60{,}0\,\text{kV}$ I get $v = 1{,}915 \cdot 10^{7}\,\text{m/s}$, $E_\text{k} = 3{,}07 \cdot 10^{-13}\,\text{J} = 1{,}92\,\text{MeV}$, $qU = 9{,}61 \cdot 10^{-15}\,\text{J}$, 31,9 → 32 crossings, 16 revolutions, $T = 65{,}6\,\text{ns}$, $t = 1{,}05\,\mu\text{s}$, $v/c = 0{,}064$ and the relativistic correction $\tfrac34(v/c)^2 = 0{,}31\,\%$. The data and the answer now carry three significant figures consistently, and B is given in teslas.
-- Directions: L2-05 (positive charge, v to the right, B into the page: the force is up) and L2-08 ($\overline{v} \times \overline{B}$ points right, so the electron's force is left: option C). $F = 2{,}4 \cdot 10^{-16}\,\text{N}$ and $mg = 8{,}9 \cdot 10^{-30}\,\text{N}$.
-- L2-08 options: exactly one is correct. Each wrong figure (along B, as for a positive charge, along v) shows only the error its feedback names. The velocity is drawn as a motion arrow, not as a force.
-- L2-09 figure: the point at $1{,}5 \cdot 10^{6}\,\text{m/s}$ is at 15,7 cm (deuteron). The description does not reveal the mass.
-- L3-04 fit through the origin: $k = 0{,}1182\,\text{cm}^2/\text{V}$ gives 22,8 u. A free fit gives 22,7 u with a small intercept, and the 22–23 u band covers both. The comparison values for Li and K are right, and so is $r(400\,\text{V}) = 6{,}9\,\text{cm}$ for Na-23.
-- L1-08, L2-07 and L3-02: $T = 2\pi m/(qB)$ is derived symbolically, v cancels, and the classical condition is stated in L3-05 c.
-- Scope: everything is inside the FY7 slot (F = qvB, the circular path, the velocity selector, the mass spectrometer, the cyclotron as the particle-accelerator theme), with W = qU and E = U/d from FY6.
-- The notation follows the brief: $F_\text{m}$, $|q|$, the overline vectors and $d = 2r$.
+- Delta round 1: only fy7-2-L2-10 (FY7-A5) judged; hash identical at start and end.
+- Against the Finnish set (passed today) by script: answer 84, unit m, tolerance 0,02, kind, the data table and caption are identical, and every number in the task text and in the solution is the same in both languages.
+- Recomputed from the task text: $r = mv/(|q|B) = 83{,}55\,\text{m} \to 84\,\text{m}$ (two significant figures from 4,0 and 50; inside 2 %), $r/R_\text{M} = 1{,}3 \cdot 10^{-5}$, hundredfold weaker field 8,4 km, $810/1350 = 0{,}60\,\text{nT/s}$, 36 nT in a minute = 0,072 % of 50 000 nT. answers.py agrees.
+- Example table: lower threshold 200 exceeded at 20–0 (five hours), upper 400 at 21–23 (three), maximum 810 at 22. All are called invented.
+- Both source pages fetched with curl 16 Nov 2026 (HTTP 200). Aurora page: chart "Magneettinen aktiivisuus kuluneen vuorokauden aikana", R number against a lower and an upper threshold, "Kynnysarvot ovat asemakohtaisia", link to the guide, review of 16.11. 9.23 (quiet weekend, solar wind strengthening Monday and Tuesday). Guide: R describes the speed of the field's variations; divide by 1350 for nT/s; lower and upper threshold about 50 % for faint and for bright or wide auroras; statistical link, never a certain sign, short crossings without auroras, several consecutive bars a better sign; cloudiness not counted; probability grows northwards; auroral zone a ring round the magnetic pole, Lapland in it; solar wind a particle stream that causes auroras, 300–400 km/s. Every claim attributed to the source is on the pages; the solution marks its own additions (magnetosphere, city lights) as its own.
+- Physics of b) kept in the clearer language: force perpendicular to $\overline{v}$ and $\overline{B}$, no work, no force on motion along the field, helical path along the field line; uniform field over the orbit assumed and said.
+- Scope and notation as in the brief.

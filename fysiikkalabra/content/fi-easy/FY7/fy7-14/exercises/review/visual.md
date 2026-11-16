@@ -1,19 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 7f19929160d7f4d9
+CONTENT-HASH: c6ba68be21278758
 
 ## Blocking
 
-## Outside this change (queue item 5d, not blocking here)
-- [Major] docs/clipped-formulas.tsv lists 8 of this set's solution formulas as clipped at 360 px with the solutions open — old, untouched by this change; fix under queue item 5d.
-
 ## Polish
-- [Minor] 14-20 Vastaus (L3-1280-6) — the c) reasoning sits in one long paragraph after the precision remark (untouched text) — start c) as its own paragraph.
+- [Minor] solutions.md:64 — the bracketed formula's second part starts with a bare relation, so on one line (1280 px) the gap before "=" is narrower than after it. `{}=` evens it.
 
 ## Checked
-- Delta: task 14-22 (fy7-14-L3-05), the marker for example data removed from the task text.
-- fy7-14-open-exercises-L3-1280-6 (14-22 heading row, situation paragraphs and the changed sentence: it reads as a complete sentence, inline maths on one line, no orphaned parenthesis or double space; the end of the 14-20 solution above it intact).
-- fy7-14-open-exercises-L3-1280-7 (parts b and c, the data table with its caption, answer row, opened answer and the start of the solution: inside the card, no overflow or clipping, the layout unchanged).
-- Not opened: other captures (outside the delta).
+- Delta since round 1: solutions.md:64 only. "(570 nm : (4 · 1,33) = 107 nm)" is inline inside its parentheses, split at the relation; at 360 px it wraps before "= 107 nm)", at 390 and 1280 px it is on one line; the brackets stay with the formula, nothing clipped.
+- Own captures of the rebuilt preview (preview/fi-easy, ?ratkaisut=1, everything open): contact sheets of every aligned block of the set at 390 and 1280 px (607,2 nm, 94,2 nm, 540 nm, 221 nm blocks unchanged and intact); line 64 at 360 px.
+- Overflow scan of every formula at 360/390/1280 px: none. No red KaTeX. Hash identical at start and end.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 5 · accessibility 4

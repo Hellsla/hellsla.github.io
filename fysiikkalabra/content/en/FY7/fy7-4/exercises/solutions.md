@@ -13,7 +13,7 @@
 **Find:** force $F$ on the piece of wire in newtons
 **Principle:** The wire is oblique to the field, so only the component of the field perpendicular to the wire, $B \sin\alpha$, produces a force. The field is uniform, so the force is $F = I l B \sin\alpha$.
 **Formula:** $F = I l B \sin\alpha$
-**Conversions:** $l = 15\,\text{cm} = 15 \cdot 0.01\,\text{m} = 0.15\,\text{m}$
+**Conversions:** $$\begin{aligned} l &= 15\,\text{cm} \\ &= 15 \cdot 0.01\,\text{m} \\ &= 0.15\,\text{m} \end{aligned}$$
 **Substitution:** $F = 8.0\,\text{A} \cdot 0.15\,\text{m} \cdot 0.25\,\text{T} \cdot \sin 40^\circ = 0.30\,\text{N} \cdot 0.6428 = 0.1928\,\text{N}$
 **Answer:** $0.19\,\text{N}$, two significant figures like the data.
 **Reasonableness:** For a perpendicular wire the force would be $0.30\,\text{N}$. For an oblique wire it must be smaller, and $\sin 40^\circ \approx 0.64$ reduces it to about two thirds. With the cosine the result would wrongly be $0.23\,\text{N}$.
@@ -26,7 +26,7 @@
 **Conversions:** $l = 6.0\,\text{cm} = 6.0 \cdot 0.01\,\text{m} = 0.060\,\text{m}$ and $F = 27\,\text{mN} = 27 \cdot 0.001\,\text{N} = 0.027\,\text{N}$
 **Substitution:** $B = \dfrac{0.027\,\text{N}}{4.5\,\text{A} \cdot 0.060\,\text{m}} = \dfrac{0.027\,\text{N}}{0.27\,\text{A}\cdot\text{m}} = 0.10\,\text{T}$
 **Answer:** $0.10\,\text{T}$, two significant figures like the data.
-**Reasonableness:** Between the poles of a horseshoe magnet the field is typically from hundredths to tenths of a tesla, so $0.10\,\text{T}$ is plausible. Check: $4.5\,\text{A} \cdot 0.060\,\text{m} \cdot 0.10\,\text{T} = 0.027\,\text{N}$.
+**Reasonableness:** Between the poles of a horseshoe magnet the field is typically from hundredths to tenths of a tesla, so $0.10\,\text{T}$ is plausible. Check: $$\begin{aligned} &4.5\,\text{A} \cdot 0.060\,\text{m} \cdot 0.10\,\text{T} \\ &= 0.027\,\text{N} \end{aligned}$$.
 
 ## fy7-4-L1-04
 **Given:** $l = 100\,\text{m}$, $I = 200\,\text{A}$, the Earth's field $B = 53\,\mu\text{T}$, angle between the wire and the field $\alpha = 74^\circ$
@@ -34,7 +34,7 @@
 **Principle:** Over a region the length of the wire the Earth's magnetic field is practically uniform, so the force is $F = I l B \sin\alpha$. The wire runs north–south as shown by a compass, and the field points towards magnetic north at $74^\circ$ to the horizontal, so the angle between the wire and the field is $74^\circ$.
 **Formula:** $F = I l B \sin\alpha$
 **Conversions:** $B = 53\,\mu\text{T} = 53 \cdot 10^{-6}\,\text{T}$
-**Substitution:** $F = 200\,\text{A} \cdot 100\,\text{m} \cdot 53 \cdot 10^{-6}\,\text{T} \cdot \sin 74^\circ = 1.06\,\text{N} \cdot 0.9613 = 1.0189\,\text{N}$
+**Substitution:** $$\begin{aligned} F &= 200\,\text{A} \cdot 100\,\text{m} \cdot 53 \cdot 10^{-6}\,\text{T} \\ &\cdot \sin 74^\circ \\ &= 1.06\,\text{N} \cdot 0.9613 \\ &= 1.0189\,\text{N} \end{aligned}$$
 **Answer:** $1.0\,\text{N}$, two significant figures like the magnetic flux density $53\,\mu\text{T}$.
 **Reasonableness:** The force is about the weight of a $100\,\text{g}$ object over the whole $100\,\text{m}$, which is negligible compared with the weight of the wire: a power line carrying $200\,\text{A}$ weighs about $1\,\text{kg}$ per metre, so $100\,\text{m}$ of wire weighs about $1000\,\text{N}$. The Earth's field is weak, so the result is as expected.
 
@@ -97,7 +97,7 @@ $$, and $0.094\,\text{N}$ stays below it.
 **Conversions:** $\Delta m = 1.50\,\text{g} = 1.50 \cdot 0.001\,\text{kg} = 0.00150\,\text{kg}$ and $l = 4.0\,\text{cm} = 4.0 \cdot 0.01\,\text{m} = 0.040\,\text{m}$
 **Substitution:** $B = \dfrac{0.00150\,\text{kg} \cdot 9.81\,\text{m/s}^2}{5.0\,\text{A} \cdot 0.040\,\text{m}} = \dfrac{0.014715\,\text{N}}{0.20\,\text{A}\cdot\text{m}} = 0.0736\,\text{T}$
 **Answer:** $0.074\,\text{T}$, two significant figures like the length $4.0\,\text{cm}$.
-**Reasonableness:** The value is typical of a horseshoe magnet, of the order of a tenth of a tesla. Check with another point of the line: at $3.0\,\text{A}$ the line gives $0.90\,\text{g}$, and $0.00090\,\text{kg} \cdot 9.81\,\text{m/s}^2 : (3.0\,\text{A} \cdot 0.040\,\text{m}) = 0.074\,\text{T}$.
+**Reasonableness:** The value is typical of a horseshoe magnet, of the order of a tenth of a tesla. Check with another point of the line: at $3.0\,\text{A}$ the line gives $0.90\,\text{g}$, and $$\begin{aligned} &0.00090\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &: (3.0\,\text{A} \cdot 0.040\,\text{m}) \\ &= 0.074\,\text{T} \end{aligned}$$.
 
 ## fy7-4-L2-03
 **Given:** $B = 0.40\,\text{T}$, $l = 0.50\,\text{m}$, $I = 5.0\,\text{A}$, $F = 0.50\,\text{N}$
@@ -125,7 +125,7 @@ $$, and $0.094\,\text{N}$ stays below it.
 **Principle:** When a current flows in the field, a force $F = I l B$ acts on the wire, and the balance measures it as a change in weight, $F = \Delta m \cdot g$. Each measurement gives its own value of $B$. The results are usually not exactly the same because of measurement uncertainty, so they are averaged.
 **Formula:** $\Delta m \cdot g = I l B$, so $B = \dfrac{\Delta m \cdot g}{I l}$
 **Conversions:** $\Delta m$ from grams to kilograms and $l$ from centimetres to metres: for example $0.35\,\text{g} = 0.35 \cdot 10^{-3}\,\text{kg}$ and $2.0\,\text{cm} = 0.020\,\text{m}$.
-**Substitution:** First row: $B = \dfrac{0.35 \cdot 10^{-3}\,\text{kg} \cdot 9.81\,\text{m/s}^2}{2.0\,\text{A} \cdot 0.020\,\text{m}} = 0.0858\,\text{T}$. The other rows give in the same way $0.0834\,\text{T}$, $0.0871\,\text{T}$, $0.0844\,\text{T}$ and $0.0850\,\text{T}$. The sum is $0.4257\,\text{T}$, so $B_{\text{mean}} = 0.4257\,\text{T} : 5 = 0.08513\,\text{T}$. The spread is $(0.0871\,\text{T} - 0.0834\,\text{T}) : 2 = 0.0018\,\text{T}$.
+**Substitution:** First row: $B = \dfrac{0.35 \cdot 10^{-3}\,\text{kg} \cdot 9.81\,\text{m/s}^2}{2.0\,\text{A} \cdot 0.020\,\text{m}} = 0.0858\,\text{T}$. The other rows give in the same way $0.0834\,\text{T}$, $0.0871\,\text{T}$, $0.0844\,\text{T}$ and $0.0850\,\text{T}$. The sum is $0.4257\,\text{T}$, so $B_{\text{mean}} = 0.4257\,\text{T} : 5 = 0.08513\,\text{T}$. The spread is $$\begin{aligned} &(0.0871\,\text{T} - 0.0834\,\text{T}) : 2 \\ &= 0.0018\,\text{T} \end{aligned}$$.
 **Answer:** $B_{\text{mean}} = 0.085\,\text{T}$, two significant figures like the current and the lengths; the spread is approximately $0.002\,\text{T}$, so the result is $(0.085 \pm 0.002)\,\text{T}$. The spread is a simple estimate of the variation of the measurements, not the uncertainty of the mean.
 **Reasonableness:** The length tripled ($2.0\,\text{cm} \to 6.0\,\text{cm}$) and the change in the reading grew $0.35\,\text{g} \to 1.04\,\text{g}$, that is, about threefold, as the formula $F = I l B$ predicts. The field is typical of a laboratory magnet, about a tenth of a tesla.
 
@@ -155,7 +155,7 @@ $$, and $0.094\,\text{N}$ stays below it.
 **Find:** current $I$ at which the wires go slack
 **Principle:** The wires are slack when their tension is zero. Then only the weight, downwards, and the magnetic force act on the rod. The rod is at rest, so by Newton's first law the forces must cancel: the magnetic force must point upwards and equal the weight. The field is horizontal and the rod is perpendicular to it, so the force $I l B$ is vertical; the direction of the current is chosen so that the force points upwards.
 **Formula:** $I l B = m g$, so $I = \dfrac{m g}{l B}$
-**Conversions:** $m = 12\,\text{g} = 12 \cdot 0.001\,\text{kg} = 0.012\,\text{kg}$ and $l = 20\,\text{cm} = 20 \cdot 0.01\,\text{m} = 0.20\,\text{m}$
+**Conversions:** $m = 12\,\text{g} = 12 \cdot 0.001\,\text{kg} = 0.012\,\text{kg}$ and $$\begin{aligned} l &= 20\,\text{cm} \\ &= 20 \cdot 0.01\,\text{m} \\ &= 0.20\,\text{m} \end{aligned}$$
 **Substitution:** $I = \dfrac{0.012\,\text{kg} \cdot 9.81\,\text{m/s}^2}{0.20\,\text{m} \cdot 0.25\,\text{T}} = \dfrac{0.11772\,\text{N}}{0.050\,\text{T}\cdot\text{m}} = 2.354\,\text{A}$
 **Answer:** $2.4\,\text{A}$, two significant figures like the data.
 **Reasonableness:** A current of a few amperes is enough to support a light rod, which suits a laboratory experiment. If the direction of the current were reversed, the force would point downwards and the wires would tighten: the tension would then be twice the weight.
@@ -197,9 +197,9 @@ $$, and $0.094\,\text{N}$ stays below it.
 **Principle:** The upper wire floats when the forces on it cancel each other: the weight points down, so the force of the field of the lower wire must point up, that is, the wires must repel each other. Repulsion requires currents in opposite directions, because currents in the same direction would attract the wires towards each other. The field of the lower wire is perpendicular to the upper wire, so the force is $F = I l B_1$, where $B_1 = \dfrac{\mu_0 I}{2\pi r}$.
 **Formula:** $I l B_1 = m g$, that is, $\dfrac{\mu_0 I^2 l}{2\pi r} = m g$, so $I = \sqrt{\dfrac{2\pi r m g}{\mu_0 l}}$
 **Conversions:** $m = 3.0\,\text{g} = 0.0030\,\text{kg}$ and $r = 1.0\,\text{cm} = 0.010\,\text{m}$
-**Substitution:** The denominator is $\mu_0 l = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 0.50\,\text{m} = 6.283 \cdot 10^{-7}\,\text{Vs/A}$. The numerator is $2\pi r m g = 2\pi \cdot 0.010\,\text{m} \cdot 0.0030\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 1.849 \cdot 10^{-3}\,\text{N}\cdot\text{m}$. So $I = \sqrt{\dfrac{1.849 \cdot 10^{-3}}{6.283 \cdot 10^{-7}}}\,\text{A} = \sqrt{2943}\,\text{A} = 54.25\,\text{A}$
+**Substitution:** The denominator is $\mu_0 l = 4\pi \cdot 10^{-7}\,\tfrac{\text{Vs}}{\text{Am}} \cdot 0.50\,\text{m} = 6.283 \cdot 10^{-7}\,\text{Vs/A}$. The numerator is $$\begin{aligned} 2\pi r m g &= 2\pi \cdot 0.010\,\text{m} \\ &\cdot 0.0030\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &= 1.849 \cdot 10^{-3}\,\text{N}\cdot\text{m} \end{aligned}$$. So $I = \sqrt{\dfrac{1.849 \cdot 10^{-3}}{6.283 \cdot 10^{-7}}}\,\text{A} = \sqrt{2943}\,\text{A} = 54.25\,\text{A}$
 **Answer:** a) The currents flow in opposite directions, and $I = 54\,\text{A}$, two significant figures like the mass and the distance. b) The floating is stable in the vertical direction: if the upper wire rises, the distance $r$ increases and the force $F \propto 1 : r$ drops below the weight, so the weight pulls the wire back; if it sinks, the distance decreases, the force grows above the weight and pushes the wire back up. Sideways the arrangement is not stable: a wire displaced sideways could turn or tip over, so the result applies only to the vertical direction.
-**Reasonableness:** The field at the upper wire is $B_1 = 1.085 \cdot 10^{-3}\,\text{T}$ and the force is $54.25\,\text{A} \cdot 0.50\,\text{m} \cdot 1.085 \cdot 10^{-3}\,\text{T} = 0.0294\,\text{N}$, which equals the weight $0.0030\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 0.0294\,\text{N}$. A current of over $50\,\text{A}$ heats a thin wire, so it is switched on only for a short time.
+**Reasonableness:** The field at the upper wire is $B_1 = 1.085 \cdot 10^{-3}\,\text{T}$ and the force is $$\begin{aligned} &54.25\,\text{A} \cdot 0.50\,\text{m} \\ &\cdot 1.085 \cdot 10^{-3}\,\text{T} \\ &= 0.0294\,\text{N} \end{aligned}$$, which equals the weight $$\begin{aligned} &0.0030\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &= 0.0294\,\text{N} \end{aligned}$$. A current of over $50\,\text{A}$ heats a thin wire, so it is switched on only for a short time.
 
 ## fy7-4-L2-08
 **Find:** in which direction a copper wire hanging between the poles of a horseshoe magnet swings when the field points from left to right and the current in the wire flows downwards, and which reason explains it.
@@ -214,7 +214,7 @@ Reason: the force is perpendicular to the current and to the field, and the righ
 **Principle:** The field exerts on the wire a force $F = I l B \sin\alpha$. The force is greatest when the wire is perpendicular to the field ($\alpha = 90^\circ$, $\sin 90^\circ = 1$), so then $F_{\max} = I l B$.
 **Reading the graph:** The data points deviate slightly from the curve because of measurement uncertainty, so we read the value from the fitted curve, not from a single point. The curve is at its highest at $\alpha = 90^\circ$ and passes through the grid point ($90^\circ$; $0.45\,\text{N}$). We therefore read $F_{\max} = 0.45\,\text{N}$.
 **Formula:** $F_{\max} = I l B$, so $B = \dfrac{F_{\max}}{I l}$
-**Conversions:** $l = 25\,\text{cm} = 25 \cdot 0.01\,\text{m} = 0.25\,\text{m}$
+**Conversions:** $$\begin{aligned} l &= 25\,\text{cm} \\ &= 25 \cdot 0.01\,\text{m} \\ &= 0.25\,\text{m} \end{aligned}$$
 **Substitution:** $B = \dfrac{0.45\,\text{N}}{6.0\,\text{A} \cdot 0.25\,\text{m}} = \dfrac{0.45\,\text{N}}{1.5\,\text{A}\cdot\text{m}} = 0.30\,\text{T}$
 **Answer:** $0.30\,\text{T}$, two significant figures like the current $6.0\,\text{A}$.
-**Reasonableness:** Check with another point: at $30^\circ$ the curve gives about $0.225\,\text{N}$, and $0.225\,\text{N} : (6.0\,\text{A} \cdot 0.25\,\text{m} \cdot \sin 30^\circ) = 0.30\,\text{T}$. The value is common in the gap of a magnet.
+**Reasonableness:** Check with another point: at $30^\circ$ the curve gives about $0.225\,\text{N}$, and $$\begin{aligned} &0.225\,\text{N} \\ &: (6.0\,\text{A} \cdot 0.25\,\text{m} \cdot \sin 30^\circ) \\ &= 0.30\,\text{T} \end{aligned}$$. The value is common in the gap of a magnet.

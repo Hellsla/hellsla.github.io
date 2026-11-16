@@ -1,16 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 8656191cf65f542d
+CONTENT-HASH: 6138c80b32317a3e
 
 ## Blocking
-- none
 
 ## Polish
-- [Minor] lesson.md, "Miksi punainen on pääsateenkaaren ulkoreunalla" — carried over from the previous round: "voimakkaimmat suunnat kulkevat silmän ohi" reads stiffly and two consecutive sentences start with "Siksi".
+- [Minor] `siirto` hint 3 (390 px) — the row "· (tan 40,57° − tan 40,15°)." ends about 4 px from the box border; complete, no margin to spare.
 
-## Checked (delta)
-- fy7-11-intro-1280: Miksi question, goal list (third goal wraps cleanly) and hero; layout intact, no clipping.
-- fy7-11-open-ennusta-1280: prediction stage unaffected.
-- Text diff of inquiry.json (learn, hook, reflect, explain prompt): fluent Finnish, "pääsateenkaari" used consistently; hero aria-label already mentions the secondary bow.
-
-## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+## Checked
+- batch delta review: content changed during the review (commit 7e4ba8466f), so the lesson was redone from a fresh preview/fy7-11.html: every re-broken chain rendered with all boxes open and inspected as crops at 352, 390 and 1280 px (own captures; the repository's captures predate this hash and keep hints and solutions closed at 390 px); the bracket is no longer broken inside; nothing clipped (settled capture at 352 and 390 px), joined to one row at 1280 px.

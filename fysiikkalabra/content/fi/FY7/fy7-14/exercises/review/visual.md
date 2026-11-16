@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9a26cfef32568a85
+CONTENT-HASH: 41d463c0e7ecca1f
 
 ## Blocking
 
-## Outside this change (queue item 5d, not blocking here)
-- [Major] docs/clipped-formulas.tsv lists 8 of this set's solution formulas as clipped at 360 px with the solutions open — old, untouched by this change; fix under queue item 5d.
-
 ## Polish
-- [Minor] 14-20 Vastaus (L3-1280-6) — the c) reasoning sits in one long paragraph after the precision remark (untouched text) — start c) as its own paragraph.
+
 
 ## Checked
-- Delta: task 14-22 (fy7-14-L3-05), the marker for example data removed from the task text.
-- fy7-14-open-exercises-L3-1280-6 (14-22 heading row, situation paragraphs and the changed sentence: it reads as a complete sentence, inline maths on one line, no orphaned parenthesis or double space; the end of the 14-20 solution above it intact).
-- fy7-14-open-exercises-L3-1280-7 (parts b and c, the data table with its caption, answer row, opened answer and the start of the solution: inside the card, no overflow or clipping, the layout unchanged).
-- Not opened: other captures (outside the delta).
+- Round 2, delta. Fresh preview/fy7-14.html at this hash, every solution open; own captures of every aligned block and split inline chain of the exercises at 360 and 1280 px (/tmp/claude-0/-home-user-hellsla-github-io/97f9a470-9f3f-5d71-b718-20679448b3a1/scratchpad/fi-r2-visual/shots/fy7-14-ex-360-s*.png, fy7-14-ex-1280-s*.png), read at full size.
+- fy7-14-L1-07 Järkevyys: the bracketed check is inline inside its parentheses again, "(570 nm : (4 · 1,33) = 107 nm), koska …", wrapping before "=" on a phone; no lone bracket. Round 1's Blocking is gone.
+- L1-09, L2-02, L2-03, L2-07, L3-01 blocks: two rows on a phone, one row at 1280 px, punctuation inside the last row.
+- Formula overflow measured in the browser at 352, 360, 390 and 1280 px, everything open. Hash the same at the start and the end.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 5 · Finnish 4 · accessibility 5
