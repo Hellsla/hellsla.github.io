@@ -316,7 +316,7 @@ The deck of a steel bridge is $120\,\text{m}$ long. At the location the temperat
 
 <!-- vaihe -->
 
-**Result.** The length of the deck changes by about $86\,\text{mm}$ during the year. The result is given to two significant figures. The limiting data are the coefficient $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ and the difference of whole degrees $\Delta T = 60\,\text{K}$ (both have two figures); the length $120\,\text{m}$ has at least two figures and does not limit the result.
+**Result.** The length of the deck changes by about $86\,\text{mm}$ during the year, so the expansion joint must give at least $87\,\text{mm}$. A minimum value is rounded to the safe side, up: $86.4\,\text{mm}$ → $87\,\text{mm}$. The result is given to two significant figures. The limiting data are the coefficient $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ and the difference of whole degrees $\Delta T = 60\,\text{K}$ (both have two figures); the length $120\,\text{m}$ has at least two figures and does not limit the result.
 
 <!-- vaihe -->
 

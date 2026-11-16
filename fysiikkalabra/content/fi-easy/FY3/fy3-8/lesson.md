@@ -314,7 +314,7 @@ Teräksisen sillan kansi on $120\,\text{m}$ pitkä. Paikkakunnalla lämpötila v
 
 <!-- vaihe -->
 
-**Tulos.** Kannen pituus muuttuu vuoden aikana noin $86\,\text{mm}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla (merkitsevät numerot kertovat, kuinka tarkka luku on). Tulosta rajoittavat kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja kokonaisasteiden erotus $\Delta T = 60\,\text{K}$. Kummassakin on kaksi numeroa. Pituudessa $120\,\text{m}$ on vähintään kaksi numeroa, joten se ei rajoita tulosta.
+**Tulos.** Kannen pituus muuttuu vuoden aikana noin $86\,\text{mm}$. Liikuntasauman on siis annettava periksi vähintään $87\,\text{mm}$. Kun kysytään pienintä riittävää arvoa, luku pyöristetään ylöspäin: $86{,}4\,\text{mm}$ → $87\,\text{mm}$. Silloin sauma riittää varmasti. Tulos ilmoitetaan kahdella merkitsevällä numerolla (merkitsevät numerot kertovat, kuinka tarkka luku on). Tulosta rajoittavat kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja kokonaisasteiden erotus $\Delta T = 60\,\text{K}$. Kummassakin on kaksi numeroa. Pituudessa $120\,\text{m}$ on vähintään kaksi numeroa, joten se ei rajoita tulosta.
 
 <!-- vaihe -->
 

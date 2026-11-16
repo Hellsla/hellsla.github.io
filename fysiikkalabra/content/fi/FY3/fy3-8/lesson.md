@@ -314,7 +314,7 @@ Teräksisen sillan kansi on $120\,\text{m}$ pitkä. Paikkakunnalla lämpötila v
 
 <!-- vaihe -->
 
-**Tulos.** Kannen pituus muuttuu vuoden aikana noin $86\,\text{mm}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla. Rajoittavat tiedot ovat kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja kokonaisasteiden erotus $\Delta T = 60\,\text{K}$ (kumpikin kaksi numeroa); pituus $120\,\text{m}$ on vähintään kahden numeron arvo eikä rajoita.
+**Tulos.** Kannen pituus muuttuu vuoden aikana noin $86\,\text{mm}$, joten liikuntasauman on annettava periksi vähintään $87\,\text{mm}$. Vähimmäisarvo pyöristetään turvalliselle puolelle eli ylöspäin: $86{,}4\,\text{mm}$ → $87\,\text{mm}$. Tulos ilmoitetaan kahdella merkitsevällä numerolla. Rajoittavat tiedot ovat kerroin $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ ja kokonaisasteiden erotus $\Delta T = 60\,\text{K}$ (kumpikin kaksi numeroa); pituus $120\,\text{m}$ on vähintään kahden numeron arvo eikä rajoita.
 
 <!-- vaihe -->
 
