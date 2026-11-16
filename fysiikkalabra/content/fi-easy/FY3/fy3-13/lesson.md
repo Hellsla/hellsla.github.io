@@ -227,11 +227,25 @@ Määritä absoluuttinen nollapiste ekstrapoloimalla ja arvioi tuloksen epävarm
 
 <!-- vaihe -->
 
-**Tunnetut ja kysytty.** Parhaalta suoralta luetaan kaksi pistettä kaukana toisistaan: $(\theta_1, p_1) = (0\,{}^\circ\text{C};\ 101{,}3\,\text{kPa})$ ja $(\theta_2, p_2) = (100\,{}^\circ\text{C};\ 138{,}0\,\text{kPa})$. Lämpötila $0\,{}^\circ\text{C}$ on mittausalueen ulkopuolella. Siksi piste 1 luetaan suoran jatkeelta. Se ei ole mittaus vaan jo vähän ekstrapolointia. Ääriviivoilla on $p_0 = 100{,}1\,\text{kPa}$, $k = 0{,}387\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $p_0 = 102{,}3\,\text{kPa}$, $k = 0{,}347\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$. Kysytään nollapaineen lämpötilaa $\theta_0$ ja sen epävarmuutta $\Delta\theta_0$.
+**Tunnetut ja kysytty.** Parhaalta suoralta luetaan kaksi pistettä kaukana toisistaan:
+
+- $(\theta_1, p_1) = (0\,{}^\circ\text{C};\ 101{,}3\,\text{kPa})$ ja
+- $(\theta_2, p_2) = (100\,{}^\circ\text{C};\ 138{,}0\,\text{kPa})$.
+
+Lämpötila $0\,{}^\circ\text{C}$ on mittausalueen ulkopuolella. Siksi piste 1 luetaan suoran jatkeelta. Se ei ole mittaus vaan jo vähän ekstrapolointia.
+
+Ääriviivoilla on
+
+- $p_0 = 100{,}1\,\text{kPa}$, $k = 0{,}387\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja
+- $p_0 = 102{,}3\,\text{kPa}$, $k = 0{,}347\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$.
+
+Kysytään nollapaineen lämpötilaa $\theta_0$ ja sen epävarmuutta $\Delta\theta_0$.
 
 <!-- vaihe -->
 
-**Periaate.** Pullo on suljettu ja jäykkä. Siksi kaasun ainemäärä ja tilavuus pysyvät vakioina, ja paine on mittausalueella lämpötilan lineaarinen funktio $p = p_0 + k\theta$. Siksi suoraa voi jatkaa kohtaan, jossa $p = 0$. Epävarmuus saadaan ääriviivoista. Ne kulkevat kaikkien epävarmuusjanojen kautta, joten ne sopivat aineistoon yhtä hyvin kuin paras suora. Niiden nollakohdat rajaavat välin, jolla todellinen nollapiste todennäköisesti on.
+**Periaate.** Pullo on suljettu ja jäykkä. Siksi kaasun ainemäärä ja tilavuus pysyvät vakioina, ja paine on mittausalueella lämpötilan lineaarinen funktio $p = p_0 + k\theta$. Siksi suoraa voi jatkaa kohtaan, jossa $p = 0$.
+
+Epävarmuus saadaan ääriviivoista. Ne kulkevat kaikkien epävarmuusjanojen kautta, joten ne sopivat aineistoon yhtä hyvin kuin paras suora. Niiden nollakohdat rajaavat välin, jolla todellinen nollapiste todennäköisesti on.
 
 <!-- vaihe -->
 
@@ -247,7 +261,9 @@ Määritä absoluuttinen nollapiste ekstrapoloimalla ja arvioi tuloksen epävarm
 
 <!-- vaihe -->
 
-**Yksikkömuunnokset.** Muunnoksia ei tarvita. Paineet ovat kilopascaleina, joten osamäärässä $p_0/k$ kPa supistuu. Jäljelle jää celsiusaste, jota kysytään. Lämpötilaero $100\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 100\,{}^\circ\text{C}$ on sama kelvineinä. Nollapaineen lämpötila ilmoitetaan celsiusasteina.
+**Yksikkömuunnokset.** Muunnoksia ei tarvita. Paineet ovat kilopascaleina, joten osamäärässä $p_0/k$ kPa supistuu. Jäljelle jää celsiusaste, jota kysytään.
+
+Lämpötilaero $100\,{}^\circ\text{C} - 0\,{}^\circ\text{C} = 100\,{}^\circ\text{C}$ on sama kelvineinä. Nollapaineen lämpötila ilmoitetaan celsiusasteina.
 
 <!-- vaihe -->
 
@@ -266,11 +282,19 @@ Määritä absoluuttinen nollapiste ekstrapoloimalla ja arvioi tuloksen epävarm
 
 <!-- vaihe -->
 
-**Tulos.** Absoluuttinen nollapiste on $\theta_0 = -276 \pm 18\,{}^\circ\text{C}$. Epävarmuus ilmoitetaan kahdella merkitsevällä numerolla ($18{,}08 \approx 18$). Ääriviivojen nollapisteet $-259\,{}^\circ\text{C}$ ja $-295\,{}^\circ\text{C}$ tunnetaan kolmella numerolla. Niiden erotus $36\,{}^\circ\text{C}$ tunnetaan vain kahdella. Pyöristä tulos samaan tarkkuuteen eli yhden asteen tarkkuuteen.
+**Tulos.** Absoluuttinen nollapiste on $\theta_0 = -276 \pm 18\,{}^\circ\text{C}$.
+
+Epävarmuus ilmoitetaan kahdella merkitsevällä numerolla ($18{,}08 \approx 18$). Ääriviivojen nollapisteet $-259\,{}^\circ\text{C}$ ja $-295\,{}^\circ\text{C}$ tunnetaan kolmella numerolla. Niiden erotus $36\,{}^\circ\text{C}$ tunnetaan vain kahdella.
+
+Pyöristä tulos samaan tarkkuuteen eli yhden asteen tarkkuuteen.
 
 <!-- vaihe -->
 
-**Järkevyys.** Hyväksytty arvo $-273{,}15\,{}^\circ\text{C}$ kuuluu välille $-294\,{}^\circ\text{C}\ldots -258\,{}^\circ\text{C}$. Tulos sopii siis yhteen sen kanssa. Poikkeama on noin $3\,{}^\circ\text{C}$ ja epävarmuus $18\,{}^\circ\text{C}$. Arvio päässä: paine kasvaa noin $0{,}37\,\text{kPa}$ astetta kohti. Siksi $101\,\text{kPa}$ loppuu noin $101/0{,}37 \approx 270$ asteessa. Epävarmuus on suuri, koska mittaus tehtiin yli $270\,{}^\circ\text{C}$:n päässä nollapaineesta. Lisäksi pisteiden epävarmuus $1\,\text{kPa}$ on noin yksi prosentti lukemasta.
+**Järkevyys.** Hyväksytty arvo $-273{,}15\,{}^\circ\text{C}$ kuuluu välille $-294\,{}^\circ\text{C}\ldots -258\,{}^\circ\text{C}$. Tulos sopii siis yhteen sen kanssa. Poikkeama on noin $3\,{}^\circ\text{C}$ ja epävarmuus $18\,{}^\circ\text{C}$.
+
+Arvio päässä: paine kasvaa noin $0{,}37\,\text{kPa}$ astetta kohti. Siksi $101\,\text{kPa}$ loppuu noin $101/0{,}37 \approx 270$ asteessa.
+
+Epävarmuus on suuri, koska mittaus tehtiin yli $270\,{}^\circ\text{C}$:n päässä nollapaineesta. Lisäksi pisteiden epävarmuus $1\,\text{kPa}$ on noin yksi prosentti lukemasta.
 
 ## Yleinen virhekäsitys
 Moni ajattelee, että nollapiste on mitattu, koska se on kuvaajassa. Mitattuja ovat vain seitsemän pistettä välillä 10–$100\,{}^\circ\text{C}$. Loppu on suoran jatketta. Jatke on oletus siitä, että paine käyttäytyy samoin kylmemmässä. Toinen virhe on pitää tulosta epäonnistuneena, jos se ei ole täsmälleen $-273{,}15\,{}^\circ\text{C}$. Tulos $-276\,{}^\circ\text{C}$ poikkeaa hyväksytystä arvosta noin 3 astetta, kun epävarmuus on 18 astetta. Se sopii siis yhteen arvon kanssa. Kolmas virhe on vetää mutkitteleva viiva kaikkien pisteiden kautta. Pisteiden vaihtelu ylös ja alas johtuu mittausepävarmuudesta. Vedä suora pisteiden joukon keskeltä.

@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1e8c103369245378
+CONTENT-HASH: c7e8a3d5b4e72752
 
 ## Blocking
-None.
+- none
 
 ## Polish
-None.
+- [Minor] Exercise 4-22 (open-exercises-L3-1280-4) — the answer-field unit reads "kertaa" on the English page — use "times" (text untouched by this diff).
+- [Minor] Exercise 4-22 solution, Answer step (open-exercises-L3-1280-5) — opens "Times, three significant figures, ..." — better "$n = 1.86$, three significant figures, ...".
 
 ## Checked
-- Own 390 px and 1280 px captures of the built page with every exercise solution open (the packet's shots hold 1280 px only): every display formula in text context (about 10 per set, stitched sheets) and a DOM check of clipping, horizontal overflow and lone punctuation after a display formula in all exercises; plus the packet captures open-exercises-L*-1280.
-- Changed formulas: equals signs in one column, continuation rows start with an operator, wide screens join the rows, no clipping at 390 or 1280 px, no row breaking inside a number or unit; trailing punctuation sits inside the formula in solutions.
-- Hash run at start and end: unchanged.
+- Delta round 1 over solutions.md: reasonableness and principle paragraphs split in L2 (0.50 °C thermometer error), L3-01, L3-02, L3-03, L1-06, L1-07.
+- Opened open-exercises-L3-1280-3, -4, -5 and open-exercises-1280-10: paragraph breaks, the display formula "100·67/273.15 = 24.5 kPa," and answer boxes render cleanly; no clipping, no stray punctuation.
+- Hash re-run at the end with --exercises --lang en: unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

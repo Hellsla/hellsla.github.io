@@ -460,6 +460,14 @@ expect("... but not when a word changes too", not rv._paragraph_pair(_po, _po.re
 expect("... nor a LaTeX \\nu read as a newline", not rv._paragraph_pair(_po, _po.replace("\\\\nu", "\\\\n u")))
 expect("... nor the same text under another key", not rv._paragraph_pair(_po, _po.replace('"text"', '"answer"').replace(". Laske", ".\\n\\nLaske")))
 expect("a paragraphs-only change needs no reviewer", rv.RULES["paragraphs"] == ("none", "none", "none"))
+_mo = ["**Tulos.** On $x = 2\\,\\text{m}$. Koska $a$ ja $b$, kaksi numeroa."]
+expect("a stage cut into paragraphs and a list, word for word the same, is md-paragraphs", rv._md_paragraphs(_mo, ["**Tulos.** On $x = 2\\,\\text{m}$.", "- Koska $a$ ja", "- $b$, kaksi numeroa."]))
+expect("... but not when a word changes", not rv._md_paragraphs(_mo, ["**Tulos.** On $x = 2\\,\\text{m}$.", "Koska $a$ ja $b$, kolme numeroa."]))
+expect("... nor when the order changes", not rv._md_paragraphs(_mo, ["Koska $a$ ja $b$, kaksi numeroa.", "**Tulos.** On $x = 2\\,\\text{m}$."]))
+expect("... nor a heading", not rv._md_paragraphs(["## A B"], ["## A", "B"]))
+expect("... across a stage marker both sides have", rv._md_paragraphs(["A B.", "", "<!-- vaihe -->", "", "C D."], ["A", "", "B.", "", "<!-- vaihe -->", "", "C D."]))
+expect("... but not a stage marker moved", not rv._md_paragraphs(["A B.", "<!-- vaihe -->", "C D."], ["A", "<!-- vaihe -->", "B. C D."]))
+expect("an md-paragraphs change needs only the visual reviewer", rv.RULES["md-paragraphs"] == ("none", "none", "delta"))
 _lo = r"    label('$t\\ (\\text{s})$', CH.x1 + 10, CH.y0 + ts(36), p.RIGHT, ts(12));"
 expect("a LaTeX label moved in a sim's own label() helper is a label nudge", rv._js_label_pair(_lo, _lo.replace("ts(36)", "ts(39)")))
 expect("... but not its size", not rv._js_label_pair(_lo, _lo.replace("ts(12)", "ts(14)")))
