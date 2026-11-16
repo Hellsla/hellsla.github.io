@@ -374,21 +374,21 @@
    "prompt": "Erään LED-lampun hyötysuhde on $35\\,\\%$: niin suuri osa sen ottamasta sähköenergiasta muuttuu valoksi. Mitä tapahtuu lopulle energialle?",
    "choices": [
     {
-     "text": "Se muuttuu lämmöksi lampussa ja ympäristössä; energiaa ei katoa.",
+     "text": "Se muuttuu lampun ja ympäristön sisäenergiaksi; energiaa ei katoa.",
      "correct": true,
      "feedback": "Oikein. Energia säilyy aina. Hyötysuhde kertoo vain, kuinka suuri osa energiasta päätyy haluttuun muotoon; loput lämmittää lamppua ja huonetta. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
     },
     {
      "text": "Se häviää kokonaan, koska hyötysuhde on alle $100\\,\\%$ eikä energiaa jää.",
-     "feedback": "Energia ei häviä missään laitteessa. Hyötysuhde alle sata prosenttia tarkoittaa, että osa energiasta muuttuu muuhun kuin hyötymuotoon, tässä lämmöksi. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+     "feedback": "Energia ei häviä missään laitteessa. Hyötysuhde alle sata prosenttia tarkoittaa, että osa energiasta muuttuu muuhun kuin hyötymuotoon, tässä sisäenergiaksi. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
     },
     {
      "text": "Se varastoituu lampun sisään ja vapautuu, kun lamppu sammutetaan.",
-     "feedback": "Lampussa ei ole energiavarastoa. Se energia, joka ei muutu valoksi, muuttuu saman tien lämmöksi lampussa ja ympäristössä. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+     "feedback": "Lampussa ei ole energiavarastoa. Se energia, joka ei muutu valoksi, muuttuu saman tien lampun ja ympäristön sisäenergiaksi. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
     },
     {
      "text": "Se palaa johtoja pitkin takaisin sähköverkkoon käyttämättömänä.",
-     "feedback": "Lamppu ei syötä energiaa verkkoon. Sen ottama sähköenergia muuttuu valoksi ja lämmöksi, ja niiden summa on yhtä suuri kuin otettu energia. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
+     "feedback": "Lamppu ei syötä energiaa verkkoon. Sen ottama sähköenergia muuttuu valoksi ja sisäenergiaksi, ja niiden summa on yhtä suuri kuin otettu energia. Kertaa luvussa [*Hyötysuhde*](fy2-4.html)."
     }
    ]
   },

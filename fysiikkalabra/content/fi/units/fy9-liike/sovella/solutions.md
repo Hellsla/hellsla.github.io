@@ -370,7 +370,7 @@ $$.
 **Kaava:** $x = \tfrac{1}{2}\,a\,t^2$, joten $a = \dfrac{2x}{t^2}$; ajanoton epävarmuuden ääriarvot ovat $a_\text{min} = \dfrac{2x}{(t + \Delta t)^2}$ ja $a_\text{max} = \dfrac{2x}{(t - \Delta t)^2}$
 **Muunnokset:** Matka on metreinä ja aika sekunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** $a = \dfrac{2 \cdot 1{,}20\,\text{m}}{(1{,}6\,\text{s})^2} = \dfrac{2{,}40\,\text{m}}{2{,}56\,\text{s}^2} = 0{,}9375\,\text{m/s}^2$; ääriarvot $\dfrac{2{,}40\,\text{m}}{(1{,}8\,\text{s})^2} = 0{,}741\,\text{m/s}^2$ ja $\dfrac{2{,}40\,\text{m}}{(1{,}4\,\text{s})^2} = 1{,}224\,\text{m/s}^2$
-**Vastaus:** $a \approx 0{,}94\,\text{m/s}^2$, mutta epävarmuuden takia tulos on välillä $0{,}74$…$1{,}22\,\text{m/s}^2$, eli $a \approx (0{,}9 \pm 0{,}3)\,\text{m/s}^2$. Tulos kannattaa ilmoittaa yhdellä tai kahdella merkitsevällä numerolla, koska epävarmuus on suuri.
+**Vastaus:** $a \approx 0{,}94\,\text{m/s}^2$, mutta epävarmuuden takia tulos on välillä $0{,}74$…$1{,}22\,\text{m/s}^2$, eli $a \approx (0{,}9 \pm 0{,}3)\,\text{m/s}^2$. Vaihteluvälin puolikas on $0{,}24\,\text{m/s}^2$, mutta väli on epäsymmetrinen: yläraja on $0{,}29\,\text{m/s}^2$ parhaan arvion yläpuolella, joten epävarmuus pyöristetään ylöspäin. Tulos kannattaa ilmoittaa yhdellä tai kahdella merkitsevällä numerolla, koska epävarmuus on suuri.
 **Järkevyys:** Ajan suhteellinen epävarmuus on $0{,}2\,\text{s} : 1{,}6\,\text{s} \approx 13\,\%$, ja koska aika on kaavassa toisessa potenssissa, kiihtyvyyden suhteellinen epävarmuus on noin kaksinkertainen, $25\,\%$. Tämä vastaa laskettua vaihteluväliä. Kiihtyvyys alle $1\,\text{m/s}^2$ sopii loivalle radalle.
 
 ### b)

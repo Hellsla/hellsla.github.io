@@ -1,5 +1,5 @@
 {
-  "intro": "Six problems in the style of the Finnish matriculation examination bring together the lesson's energy, power and efficiency. Solve them as in the exam: justify the choice of model, solve for the quantity asked before substituting the numbers and assess whether the result is reasonable. Open the model answer and the scoring guide only when your solution is ready.",
+  "intro": "Seven problems in the style of the Finnish matriculation examination bring together the lesson's energy, power and efficiency. Solve them as in the exam: justify the choice of model, solve for the quantity asked before substituting the numbers and assess whether the result is reasonable. The last problem is an applied source-based task whose source opens from the link in the task. Open the model answer and the scoring guide only when your solution is ready.",
   "tasks": [
     {
       "id": "fy9-energia-s1",
@@ -342,7 +342,7 @@
               "detail": "The temperature at which $E = 12\\,\\text{kWh}$ is read from the line: about $16$–$17\\,{}^\\circ\\text{C}$."
             },
             {
-              "text": "Explains with conservation of energy: the electrical energy of the appliances, the heat of the people and solar radiation become heat indoors, so they make up for part of the heat losses.",
+              "text": "Explains with conservation of energy: the electrical energy of the appliances, the heat of the people and solar radiation increase the internal energy of the house, so they make up for part of the heat losses.",
               "tag": "concept",
               "points": 2
             },
@@ -701,6 +701,159 @@
         "transfer": "fy2-7",
         "concept": "fy2-1",
         "communication": "fy2-7"
+      }
+    },
+    {
+      "id": "fy9-energia-s7",
+      "title": "Why does the range of an electric car shrink in frost?",
+      "source": "statistics",
+      "source_note": "NAF and Motor, El Prix vinter 2026 (https://www.naf.no/elbil/elprix-nytt/elprix-vinter-2026). Checked 16 Nov 2026.",
+      "skills": [
+        "fy2-3",
+        "fy3-12",
+        "fy4-14",
+        "fy6-6",
+        "fy6-8",
+        "fy1-3"
+      ],
+      "text": "On 28 January 2026 the Norwegian Automobile Federation NAF and the magazine Motor ran a winter test in which $24$ electric cars set off with a full battery from Oslo northwards into the mountains. Each car was driven until it could no longer move. Open [the results page of the test](https://www.naf.no/elbil/elprix-nytt/elprix-vinter-2026) and find the chart *Så langt kjørte bilene*. The page is in Norwegian, and you need these words: *rekkevidde* = range, *oppgitt* = stated, *målt* = measured, *avvik* = deviation. The stated range is the manufacturer's WLTP value, which is measured in a laboratory at room temperature.\n\nAccording to the source (checked 16 Nov 2026):\n\n- The temperature fell along the route: in Oslo it was about $-7\\,{}^\\circ\\text{C}$ and at the coldest point, Folldal, $-32\\,{}^\\circ\\text{C}$.\n- The measured range of the cars was on average $38\\,\\%$ shorter than the stated one. In the winter test of 2025 the temperature was between $-6\\,{}^\\circ\\text{C}$ and $+8\\,{}^\\circ\\text{C}$, and the average deviation was $18\\,\\%$.\n- The Hyundai Inster stopped at a point where the temperature was $-16\\,{}^\\circ\\text{C}$. The Lucid Air drove the furthest of the cars.\n- The measured consumption was $21.2\\,\\text{kWh}$ for the Tesla Model Y and $21.6\\,\\text{kWh}$ for the Lucid Air per hundred kilometres.\n\n| Car | Stated (WLTP) | Measured |\n|---|---|---|\n| Hyundai Inster | $360\\,\\text{km}$ | $256\\,\\text{km}$ |\n| Tesla Model Y | $629\\,\\text{km}$ | $359\\,\\text{km}$ |\n| Lucid Air | $960\\,\\text{km}$ | $520\\,\\text{km}$ |\n\nThe internal resistance of a battery is larger when the battery is cold than when it is warm.",
+      "parts": [
+        {
+          "id": "a",
+          "kind": "calc",
+          "points": 3,
+          "text": "Choose three electric cars from the chart of the source or use the cars of the table. Calculate by how many per cent the measured range of each car deviates from the stated one, and tell what the comparison shows.",
+          "criteria": [
+            {
+              "text": "Picks the stated and the measured range of three cars from the source and presents them clearly, for example as a table.",
+              "tag": "transfer",
+              "points": 1
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "The difference is divided by the stated range: $\\dfrac{s_\\text{meas} - s_\\text{stated}}{s_\\text{stated}}$. For the cars of the table the results are about $-29\\,\\%$, $-43\\,\\%$ and $-46\\,\\%$; for other cars the numbers are different."
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "Every car drove a clearly shorter distance in the frost than stated, and the deviation varied from car to car from about $30\\,\\%$ to almost a half."
+            }
+          ]
+        },
+        {
+          "id": "b",
+          "kind": "calc",
+          "points": 4,
+          "text": "The usable battery energy of an electric car is $75\\,\\text{kWh}$, and its range in mild weather is $450\\,\\text{km}$. Calculate the car's average energy consumption per hundred kilometres. Calculate also the consumption in frost, when the range is shorter by the test's average of $38\\,\\%$ and the battery is assumed to give the same energy. Assess how well the assumption holds.",
+          "answer": [
+            {
+              "name": "E100",
+              "value": 16.7,
+              "unit": "kWh/100 km",
+              "tolerance": 0.03
+            },
+            {
+              "name": "E100k",
+              "value": 26.9,
+              "unit": "kWh/100 km",
+              "tolerance": 0.03
+            }
+          ],
+          "criteria": [
+            {
+              "key": "equation",
+              "points": 1,
+              "detail": "The energy is proportional to the distance: $E_{100} = \\dfrac{E\\,s_{100}}{s}$, and in frost the distance is $s_\\text{c} = (1 - 0.38)\\,s$."
+            },
+            {
+              "key": "calculation",
+              "points": 1,
+              "detail": "$E_{100} \\approx 16.7\\,\\text{kWh}$, $s_\\text{c} = 279\\,\\text{km}$ and $E_{100,\\text{c}} \\approx 26.9\\,\\text{kWh}$"
+            },
+            {
+              "key": "units_precision",
+              "points": 1,
+              "detail": "About $17\\,\\text{kWh}$ and $27\\,\\text{kWh}$ per hundred kilometres, two significant figures like the battery energy $75\\,\\text{kWh}$."
+            },
+            {
+              "key": "assumptions",
+              "points": 1,
+              "detail": "A cold battery gives less energy than a warm one, so part of the loss of range comes from the smaller energy and not from a larger consumption: the real consumption grows less than the model gives."
+            }
+          ]
+        },
+        {
+          "id": "c",
+          "kind": "word",
+          "points": 4,
+          "text": "Explain with thermal physics, electricity and mechanics why the energy consumption of an electric car per kilometre grows in frost.",
+          "criteria": [
+            {
+              "text": "Thermal physics: heat is transferred from the cabin and the battery to the surroundings the faster the larger the temperature difference is, so keeping the temperature takes heating power. In an electric car it is taken from the traction battery.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Electricity: gives at least one of these: the heater takes the power $P = UI$ from the battery for the whole drive, or the larger internal resistance of a cold battery increases the power $P = R_\\text{s}I^2$, which becomes internal energy of the battery, and lowers the terminal voltage.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Mechanics: cold air is denser, so the air resistance is larger, and snow, slush and winter tyres increase the rolling resistance. At a steady speed the work $W = Fs$ against the resistive forces grows on every kilometre.",
+              "tag": "concept",
+              "points": 1
+            },
+            {
+              "text": "Brings the explanation together with the conservation of energy: all the energy is taken from the same battery, so the energy that goes to heating and to losses is not available for driving and the range shrinks.",
+              "tag": "communication",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "d",
+          "kind": "word",
+          "points": 2,
+          "text": "According to the test report, the range of the car that drove the furthest fell short of its stated range by the largest percentage. Explain with the help of the source why this does not show that it withstands frost worse than the other cars.",
+          "criteria": [
+            {
+              "text": "Uses the source: the temperature fell along the route from $-7\\,{}^\\circ\\text{C}$ to $-32\\,{}^\\circ\\text{C}$, so the car that drove the furthest drove a large part of its distance on the coldest section and was in the frost the longest, whereas a car with a short range stopped already at the $-16\\,{}^\\circ\\text{C}$ point.",
+              "tag": "experiment",
+              "points": 1
+            },
+            {
+              "key": "conclusion",
+              "points": 1,
+              "detail": "The cars did not drive in the same conditions, so the deviation is not only a property of the car and the cars cannot be ranked by their percentages."
+            }
+          ]
+        },
+        {
+          "id": "e",
+          "kind": "word",
+          "points": 2,
+          "text": "Assess why the range of a particular electric car in all winter conditions cannot be predicted from this one winter test. Name at least three factors that change the consumption. Tell also how the test should be changed to make the result more reliable.",
+          "criteria": [
+            {
+              "key": "error_sources",
+              "points": 1,
+              "detail": "Names at least three factors that vary from one winter, route and driver to another and change the consumption: for example the temperature (in the test of 2025 the deviation was $18\\,\\%$, now $38\\,\\%$), wind, road surface, speed, the climbs of the route, preheating and the heating settings."
+            },
+            {
+              "text": "States that each car was driven only once, so the scatter of the results is not known, and proposes an improvement: the same, controlled conditions for all cars, several temperatures and repeats.",
+              "tag": "experiment",
+              "points": 1
+            }
+          ]
+        }
+      ],
+      "links": {
+        "transfer": "fy6-16",
+        "math": "fy2-3",
+        "concept": "fy6-8",
+        "communication": "fy2-1",
+        "experiment": "fy1-3"
       }
     }
   ]

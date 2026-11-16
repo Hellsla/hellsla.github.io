@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: faa65be0b0d9a1c7
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (68929c569097193a).
+CONTENT-HASH: 77777c714799f4b0
+Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- Round-1 Polish items stand as written there (C, not blocking).
+- (none)
 
 ## Checked
-- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
-- The chart, its aria-label and every other file are unchanged since round 1; the round-1 Checked list holds.
-- Hash taken at the start and the end (faa65be0b0d9a1c7).
+- solutions.md, Yleisiä virheitä (d): the described misconception now reads 'energia ei muutu sisäenergiaksi lainkaan'; it is the opposite of the d) model answer (potential energy becomes the engine's internal energy through engine friction, the cooling system transfers it on as heat). Consistent.
+- No added task (last is s6). practice.py check: OK, 6 tasks, 95 points.

@@ -137,7 +137,7 @@
       "stage": "ennusta",
       "type": "choice",
       "title": "Lähtötaso 6: lepokitka",
-      "prompt": "Kaappia työnnetään vaakasuoraan voimalla $40\\,\\text{N}$, mutta kaappi ei liiku. Lepokitkan suurin mahdollinen arvo on $\\mu_0 N = 90\\,\\text{N}$. Kuinka suuri kitkavoima kaappiin vaikuttaa?",
+      "prompt": "Kaappia työnnetään vaakasuoraan voimalla $40\\,\\text{N}$, mutta kaappi ei liiku. Lähtökitka eli täysin kehittynyt lepokitka on $\\mu_0 N = 90\\,\\text{N}$. Kuinka suuri kitkavoima kaappiin vaikuttaa?",
       "choices": [
         {
           "text": "$90\\,\\text{N}$, koska lepokitka on $\\mu_0 N$.",

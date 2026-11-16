@@ -486,6 +486,7 @@ muuteta. Yksi kurssi = yksi haara ja yksi PR; rinnakkaisuus kuten jonon alussa (
 Päätös (opettaja 2026-11-15): raja-arvotehtävien tarkistus hyväksyy jatkossakin poikkeaman molempiin suuntiin
 (esim. fy6-16 L2-05: 10,4 ja 10,5 kW), eikä yksipuolista tarkistusta tehdä. P7c koskee vain mallivastauksen pyöristystä.
 FY1 tehty: claude/fy1-oikoluku (PR #614).
+FY9 tehty: claude/fy9-oikoluku-aineisto (PR #626); samassa PR:ssä kohdan 19 aineistotehtävät FY9-A1…A5 (fy9-ympyraliike-s7, fy9-magnetismi-valo-s7, fy9-moderni-s7, fy9-energia-s7, fy9-kaasut-s7).
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9 (opettaja 2026-11-16)
 
@@ -496,6 +497,7 @@ ympäristön sallituissa (16.11).
 PR:ien yhdistäminen (opettaja 2026-11-16: "jos saat yhdisteltyä PR niin tee, jos vaarana että homma sotkeutuu älä tee"):
 kohta 19 tehdään samassa PR:ssä saman kurssin vielä aloittamattoman työn kanssa (FY4, FY5, FY9 ja FY2: kohta 18; FY3, FY6
 ja FY7: kohta 5d), ei koskaan jo katselmoitavana olevaan PR:ään; FY1 ja FY8 omana PR:nään kurssin nykyisen PR:n jälkeen.
+FY9 tehty: FY9-A1…A5 (PR #626, kohdan 18 FY9:n kanssa).
 
 ## 13. Englanninkieliset käsitekortit FY6 ja FY8 (opettaja 2026-11-13: tehdään myöhemmin)
 
@@ -575,3 +577,14 @@ Kortteja ei lisätä niihin.
 Opettaja 16.11: "Palaa alkuperäiseen" (tokenit loppumassa). #620 (kaikki roolit Fable, 15.11) on peruttu: agentit ja
 komennot ajetaan taas `/lesson`-komennon mallitaulukon mukaan (Sonnet, tiedekatselmointi Opus), ja Fable vaatii
 opettajan sanan.
+
+## Kirjattu päätös: kevyempi katselmointi, viisi rinnakkain (opettaja 2026-11-16)
+
+Opettaja 16.11 (tokenien säästämiseksi): "jos pyöristyskorjaus niin ei tarvitse täyttä katselmointia", "Rajoitetaan
+rinnakkaisuus viiteen", "Ei uusia täysiä kierroksia hiontahuomioista".
+- Muuttunut luku, kaava, symboli, yksikkö, vastaus, toleranssi tai `answers.py` vaatii tiedekatselmoijalta deltan, ei
+  täyttä katselmointia (`reviews.py` RULES `numbers`, `answers`): se katsoo muuttuneet rivit asiayhteydessään ja
+  tarkistaa niiden laskut. Uusi tehtävä tai uusi sisältö ja simulaation koodi katselmoidaan kuten ennen.
+- Rinnakkain enintään viisi työntekijää (juuren `CLAUDE.md` sääntö 3).
+- Polish-huomioista ei ajeta uutta katselmointikierrosta: ne kirjataan PR:ään, ja vain Blocking- ja Major-huomiot
+  korjataan ja katselmoidaan uudelleen.

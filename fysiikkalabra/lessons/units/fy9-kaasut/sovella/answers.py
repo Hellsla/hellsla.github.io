@@ -46,7 +46,8 @@ eta_kok = (Pe + Ph) / P0
 out.update({"fy9-kaasut-s2-n": round(n2, 1), "fy9-kaasut-s2-a": round(mh2, 2), "fy9-kaasut-s2-b": round(Pe / 1e3, 1),
             "fy9-kaasut-s2-P0": round(P0 / 1e3, 1), "fy9-kaasut-s2-Ehour": round(mh2 * H2 / 1e6, 0),
             "fy9-kaasut-s2-Pw": round(Pw / 1e3, 1), "fy9-kaasut-s2-Ph": round(Ph / 1e3, 1), "fy9-kaasut-s2-c": round(100 * eta_kok, 1),
-            "fy9-kaasut-s2-Celsius-n": round(pg2 * q2 / (R * 25), 0)})
+            "fy9-kaasut-s2-Celsius-n": round(pg2 * q2 / (R * 25), 0),
+            "fy9-kaasut-s2-waste": round((P0 - Pe - Ph) / 1e3, 1)})   # unrounded waste power, kW (the row shows 485 - 175 - 233)
 
 # s3: air in a glass syringe in a water bath at the constant air pressure 101,3 kPa (invented data: V = 37,5 ml at
 # 0 °C, proportional to the kelvin temperature, plus reading noise of about 0,15 ml; figures.py draws the same points)
@@ -103,5 +104,31 @@ out.update({"fy9-kaasut-s6-m": round(mg6, 1), "fy9-kaasut-s6-A": round(A6, 5), "
             "fy9-kaasut-s6-Fp60": round(dp6 * A6, 0), "fy9-kaasut-s6-safe-h": round(dp6 / dp_h, 2),
             "fy9-kaasut-s6-safe-v": round(dp6 / dp_v, 2), "fy9-kaasut-s6-wet": round(dp_v_wet / 1e3, 1),
             "fy9-kaasut-s6-safe-wet": round(dp6 / dp_v_wet, 2)})
+
+# s7 (FY9-A5): where does the energy of a nuclear power plant go? Source: TVO, Olkiluoto 3, "Rakenne ja tekniset
+# tiedot", table "OL3 tekniset tiedot" (https://www.tvo.fi/tuotanto/laitosyksikot/ol3/rakennejateknisettiedot.html),
+# checked 16.11.2026: net electrical power about 1600 MW, reactor thermal power 4300 MW, total efficiency about 37 %,
+# steam temperature 290 °C, sea-water flow 57 m^3/s, yearly electricity about 13 TWh
+P1_7, Ps_7, qV7, th_steam = 4300.0, 1600.0, 57.0, 290.0   # MW, MW, m^3/s, °C (read from the source)
+rho7, c7, th_sea = 1000.0, 4190.0, 10.0                    # kg/m^3 and J/(kg K) (the task's model of sea water), °C
+eta7 = Ps_7 / P1_7                                         # efficiency
+P2_7 = P1_7 - Ps_7                                         # MW, heat power given to the surroundings
+E7_MWh = P2_7 * 24                                         # MWh in one day
+E7_J = P2_7 * 1e6 * 24 * 3600                              # J in one day (Q2 of the solution)
+Es7_MWh = Ps_7 * 24                                        # MWh of electricity in one day (check: the sum is P1 * 24 h)
+dT7 = P2_7 * 1e6 / (c7 * rho7 * qV7)                       # K, warming of the sea water if it takes all of P2
+m7 = rho7 * qV7                                            # kg of sea water per second
+T1_7, T2_7 = th_steam + K, th_sea + K                      # K
+out.update({"fy9-kaasut-s7-a": round(100 * eta7, 2), "fy9-kaasut-s7-b-P2": round(P2_7, 0),
+            "fy9-kaasut-s7-b-Q2": round(E7_MWh / 1e3, 1), "fy9-kaasut-s7-b-Q2J": float("%.4g" % E7_J),
+            "fy9-kaasut-s7-b-share": round(100 * P2_7 / P1_7, 1), "fy9-kaasut-s7-b-Es": round(Es7_MWh / 1e3, 1),
+            "fy9-kaasut-s7-b-sum": round((E7_MWh + Es7_MWh) / 1e3, 1), "fy9-kaasut-s7-b-check": round(P1_7 * 24 / 1e3, 1),
+            "fy9-kaasut-s7-b-year": round(Ps_7 * 8760 / 1e6, 1),
+            "fy9-kaasut-s7-c": round(dT7, 2), "fy9-kaasut-s7-c-m": round(m7, 0), "fy9-kaasut-s7-c-flow": float("%.4g" % (c7 * rho7 * qV7)),
+            "fy9-kaasut-s7-c-out": round(th_sea + dT7, 0),
+            "fy9-kaasut-s7-c-per-kg": round(P2_7 * 1e6 / m7 / 1e3, 1),
+            "fy9-kaasut-s7-c-all": round(P1_7 * 1e6 / (c7 * rho7 * qV7), 1),
+            "fy9-kaasut-s7-d-T1": round(T1_7, 0), "fy9-kaasut-s7-d-T2": round(T2_7, 0), "fy9-kaasut-s7-d-dT": round(T1_7 - T2_7, 0),
+            "fy9-kaasut-s7-d-ratio": round((T1_7 - T2_7) / T1_7, 2)})
 
 print(json.dumps(out))

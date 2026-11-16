@@ -374,7 +374,7 @@ $$
 - In part b all the potential energy is given to the brakes, and the result is about $250\,\text{K}$.
 - In part b the kinetic energy is included, although the speed is constant.
 - In part c it is said that the energy "was used up" or "disappeared", without saying where it was transferred.
-- In part d it is claimed that in engine braking the energy does not turn into heat at all.
+- In part d it is claimed that in engine braking the energy does not turn into internal energy at all.
 
 ### Hyväksytään myös
 - In part a the answer $31.5\,\text{K}$ or $32\,\text{K}$, when justified by rounding.

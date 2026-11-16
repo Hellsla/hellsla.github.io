@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 9723f5bee22920e2
-Round 2 (fix round after queue 9c round 1): delta against the version round 1 reviewed (9d91dfe6c6c1bab9).
+CONTENT-HASH: 84089ae446eb257f
+Round 2: delta against the version round 1 reviewed (fix round 1).
 
 ## Blocking
-(none)
+- (none)
 
 ## Polish
-- C: the 1st-law row still writes W without naming it the work done on the gas; the work row now says "työn suuruus" (magnitude) as the Kaava does, so the pair no longer contradicts the Kaava. "→ 1. pääsääntö, W kaasuun" would make the sign explicit.
-- C: "syvyys nesteessä → p = ρgh" is the hydrostatic part (round 1, stands).
+- (none)
 
 ## Checked
-- Round-1 Blocking fixed (fi: missing constant-pressure condition): row 7 is now "paine vakio, tilavuus muuttuu → työn suuruus, W = pΔV" (en "constant pressure, volume changes → magnitude of the work"), which is exactly the Kaava row (constant pressure, ΔV a magnitude, ΔU = Q + W with W done on the gas; on expansion W = −pΔV).
-- aria-label: "työn suuruus on paine kertaa tilavuuden muutoksen suuruus" states the same physics as the pill.
-- Rendered chart (360 px) shows the new row; other rows unchanged and correct as in round 1.
-- teacher.md: "haara"/"branch" -> "rivi"/"row" only; no formula, number or physics changed.
-- Hash taken at the start and the end (9723f5bee22920e2).
+- s2 c: added sentence "pyöristämättömillä arvoilla se on 77,6 kW" recomputed: 0,64 · 0,25 · 485,1 kW = 77,6 kW; the row above (485 - 175 - 233 = 77 kW) stays right for the rounded terms; 16 % holds for both. New answers.py key `fy9-kaasut-s2-waste` = (P0 - Pe - Ph)/1e3 is the same quantity.
+- s5 common mistakes: "moolimassaksi tulee noin kaksi kolmasosaa oikeasta" is now the right quantity (n becomes 1,5-fold, M = m/n 0,68-fold).
+- s7 e: "noin 21 °C" = 10 °C (given sea temperature) + 11,3 K = 21,3 °C; agrees with c.
+- s7 c text: the derivation is now asked "symbolein" from the heat transferred per unit time (lämpöteho) and the volume flowing per second; the equation criterion (P2 t = c rho V dT) and the solution answer exactly that; dT = 2,7e9 W / (4190 · 1000 · 57 W/K) = 11,31 K, answer value unchanged.
+- `practice.py check` OK (7 tasks, 110 points).
